@@ -1,0 +1,14 @@
+﻿{
+  "introduction": {
+    "introductiondescription": "# Introduction\n You can manage(retrieve, add, update and delete) dashboard views in the Bold BI Cloud using the REST API\n"
+  },
+  "authentication": {
+    "authenticationdescription": "When you sign in to the Bold BI Cloud, an authentication token is provided that should be attached in the request header(Authorization) for all subsequent API calls to authenticate the requests.\n"
+  },
+  "dashbaordviewsdescription": {
+    "dashbaordviewsdescription": "To retrieve, add, update and delete a list of dashboard views in particular dashboard from the Bold BI Cloud, use the corresponding endpoints below.\n"
+  },
+  "tryitnow": {
+    "tryitnowdescription": "Interactive documentation lets you play with our APIs to explore the responses and make the plan accordingly.\n\n   [Try It Now(v4.0)](https://help.boldbi.com/embedded-bi/rest-api-reference/v4.0/try-it-now/)\n\n To know about how it works, please click [here](https://help.boldbi.com/embedded-bi/rest-api-reference/interact-with-rest-api/).\n"
+  }
+}

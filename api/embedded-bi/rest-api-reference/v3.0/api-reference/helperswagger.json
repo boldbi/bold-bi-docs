@@ -1,0 +1,20 @@
+﻿{
+  "introduction": {
+    "introductiondescription": "# Introduction\n You can manage(add and update) schedules in the Bold BI Cloud using the REST API\n"
+  },
+  "authentication": {
+    "authenticationdescription": "When you sign in to the Bold BI Cloud, an authentication token is provided that should be attached in the request header(Authorization) for all subsequent API calls to authenticate the requests.\n"
+  },
+  "groupdescription": {
+    "getgroupsdescription": "To add and delete a list of users in particular group from the Bold BI Cloud, use the corresponding endpoints below.\n"
+  },
+  "userdescription": {
+    "getusersdescription": "To retrieve a list of groups of particular user, add csv users, download csv templates in the Bold BI Cloud, use the corresponding endpoints below.\n"
+  },
+  "itemdescription": {
+    "getitemdescription": "To retrieve a list of items, create, modify, delete and export a particular item in the Bold BI Cloud, use the corresponding endpoints below.\n"
+  },
+  "tryitnow": {
+    "tryitnowdescription": "Interactive documentation lets you play with our APIs to explore the responses and make the plan accordingly.\n\n   [Try It Now(v3.0)](https://help.boldbi.com/embedded-bi/rest-api-reference/v3.0/try-it-now/)\n\n To know about how it works, please click [here](https://help.boldbi.com/embedded-bi/rest-api-reference/interact-with-rest-api/).\n"
+  }
+}

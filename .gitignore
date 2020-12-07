@@ -1,0 +1,30 @@
+.cache/
+.vscode
+.git
+.vs
+.v15
+sitemap-help.xml
+
+# dist
+public/
+documentation/
+
+# packages
+node_modules/
+yarn.lock
+
+# src
+src/pages/
+
+# common
+left-toc.json
+stack.json
+package-lock.json
+
+# static
+static/*
+!static/favicon.ico
+!static/robots.txt
+!static/assets
+!static/404.html
+!static/404
