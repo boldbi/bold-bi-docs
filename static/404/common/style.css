@@ -1,0 +1,105 @@
+@font-face {
+  font-family: 'doc-icons';
+  src:  url('fonts/icomoon.eot?z5gzpr');
+  src:  url('fonts/icomoon.eot?z5gzpr#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?z5gzpr') format('truetype'),
+    url('fonts/icomoon.woff?z5gzpr') format('woff'),
+    url('fonts/icomoon.svg?z5gzpr#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'doc-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-check:before {
+  content: "\e913";
+}
+.icon-burger_menu:before {
+  content: "\e900";
+}
+.icon-down_arrow:before {
+  content: "\e901";
+}
+.icon-page_up:before {
+  content: "\e902";
+}
+.icon-breaking_changes:before {
+  content: "\e903";
+}
+.icon-upgrade:before {
+  content: "\e90a";
+}
+.icon-bug_fixes:before {
+  content: "\e904";
+}
+.icon-close_icon:before {
+  content: "\e905";
+}
+.icon-collapse_icon:before {
+  content: "\e906";
+}
+.icon-edit_icon:before {
+  content: "\e908";
+}
+.icon-expand_icon:before {
+  content: "\e909";
+}
+.icon-features:before {
+  content: "\e90a";
+}
+.icon-group_icon:before {
+  content: "\e90b";
+}
+.icon-home_icon:before {
+  content: "\e90c";
+}
+.icon-new_version:before {
+  content: "\e90d";
+}
+.icon-next_icon:before {
+  content: "\e90e";
+}
+.icon-prev_icon:before {
+  content: "\e90f";
+}
+.icon-search1:before {
+  content: "\e910";
+}
+.icon-ungroup_icon:before {
+  content: "\e912";
+}
+.icon-toc:before {
+  content: "\e920";
+}
+.icon-settings:before {
+  content: "\e921";
+}
+.icon-search:before {
+  content: "\e922";
+}
+.icon-copy-to-clipboard:before {
+  content: "\f800";
+}
+.icon-Up:before {
+    content: "\e907";
+}
+.icon-Down:before {
+    content: "\e914";
+}
+.e-accordion .e-acrdn-item .e-content-hide {
+    display: none;
+}

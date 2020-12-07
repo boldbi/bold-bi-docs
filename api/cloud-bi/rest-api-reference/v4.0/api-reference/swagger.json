@@ -1,0 +1,702 @@
+﻿{
+  "swagger": "2.0",
+  "info": {
+    "title": "API Reference",
+    "version": "4.0",
+    "description": {
+      "$ref": "./helperswagger.json#/introduction/introductiondescription"
+    }
+  },
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "tags": [
+    {
+      "name": "Interact with our REST API",
+      "description": {
+        "$ref": "./helperswagger.json#/tryitnow/tryitnowdescription"
+      }
+    },
+    {
+      "name": "Authentication",
+      "description": {
+        "$ref": "./helperswagger.json#/authentication/authenticationdescription"
+      }
+    },
+    {
+      "name": "Dashboard Views",
+      "description": {
+        "$ref": "./helperswagger.json#/dashbaordviewsdescription/dashbaordviewsdescription"
+      }
+    }
+  ],
+  "paths": {
+    "/api/token": {
+      "post": {
+        "tags": [
+          "Authentication"
+        ],
+        "summary": "Authenticate User",
+        "operationId": "Authentication",
+        "parameters": [
+          {
+            "type": "string",
+            "name": "username",
+            "in": "formData",
+            "required": true,
+            "x-nullable": false,
+            "description": "Email address of the user."
+          },
+          {
+            "type": "string",
+            "name": "password",
+            "in": "formData",
+            "required": true,
+            "x-nullable": false,
+            "description": "Password of the user."
+          },
+          {
+            "type": "string",
+            "name": "grant_type",
+            "in": "formData",
+            "required": true,
+            "x-nullable": false,
+            "description": "The type of credentials authorizing the request for an access token. Valid values: `\"password\"`"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "User Logged In Successfully",
+            "schema": {
+              "$ref": "#/definitions/Response"
+            },
+            "x-nullable": true
+          },
+          "400": {
+            "description": "Email address is empty"
+          },
+          "404": {
+            "description": "User detail not found"
+          },
+          "401": {
+            "description": "Invalid email or password"
+          },
+          "405": {
+            "description": "Request type was not POST"
+          }
+        }
+      }
+    },
+    "/api/v4.0/dashboards/views": {
+      "post": {
+        "tags": [
+          "Dashboard Views"
+        ],
+        "summary": "Add Dashboard View",
+        "description": "Users who have access to the dashboard can save a view to the server by providing proper view details in the request body.",
+        "operationId": "ItemViews_AddItemView",
+        "parameters": [
+          {
+            "name": "apiItemViewsAdd",
+            "in": "body",
+            "required": true,
+            "description": "Details about the dashboard filter to save the view.",
+            "schema": {
+              "$ref": "#/definitions/ApiItemViewsAdd"
+            },
+            "x-nullable": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "x-nullable": false,
+            "description": "View has been added successfully",
+            "schema": {
+              "$ref": "#/definitions/ApiResponse"
+            }
+          },
+          "400": {
+            "description": "The content of the request body is missing or incomplete"
+          },
+          "401": {
+            "description": "Access denied"
+          },
+          "406": {
+            "description": "The content of the request body is invalid"
+          },
+          "409": {
+            "description": "View name already exists"
+          },
+          "417": {
+            "description": "Failed to add view"
+          },
+          "405": {
+            "description": "Request type was not POST"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Dashboard Views"
+        ],
+        "summary": "Edit Dashboard View",
+        "description": "Users who have created a view can edit the view by providing proper view details in the request body.",
+        "operationId": "ItemViews_UpdateItemView",
+        "parameters": [
+          {
+            "name": "apiItemViewsUpdate",
+            "in": "body",
+            "required": true,
+            "description": "Details about the dashboard filter to edit the view.",
+            "schema": {
+              "$ref": "#/definitions/ApiItemViewsUpdate"
+            },
+            "x-nullable": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "x-nullable": false,
+            "description": "View has been updated successfully",
+            "schema": {
+              "$ref": "#/definitions/ApiResponse"
+            }
+          },
+          "400": {
+            "description": "The content of the request body is missing or incomplete"
+          },
+          "401": {
+            "description": "Access denied"
+          },
+          "406": {
+            "description": "The content of the request body is invalid"
+          },
+          "409": {
+            "description": "View name already exists"
+          },
+          "417": {
+            "description": "Failed to edit view"
+          },
+          "405": {
+            "description": "Request type was not PUT"
+          }
+        }
+      }
+    },
+    "/api/v4.0/dashboards/views/{id}": {
+      "delete": {
+        "tags": [
+          "Dashboard Views"
+        ],
+        "summary": "Delete Dashboard View",
+        "description": "Users who have created a view can delete that view on the server by providing a view ID in the parameter.",
+        "operationId": "ItemViews_ItemViewDelete",
+        "parameters": [
+          {
+            "type": "string",
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "description": "View ID",
+            "format": "guid",
+            "x-nullable": false
+          }
+        ],
+        "responses": {
+          "200": {
+            "x-nullable": false,
+            "description": "View has been deleted successfully",
+            "schema": {
+              "$ref": "#/definitions/ApiResponse"
+            }
+          },
+          "400": {
+            "description": "View ID invalid"
+          },
+          "401": {
+            "description": "Access denied"
+          },
+          "417": {
+            "description": "Failed to delete view"
+          },
+          "405": {
+            "description": "Request type was not DELETE"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Dashboard Views"
+        ],
+        "summary": "Get Dashboard View Detail",
+        "description": "Server retrieves the view details for the view ID provided in the ID parameter for the current user.",
+        "operationId": "ItemViews_ItemViewByViewId",
+        "parameters": [
+          {
+            "type": "string",
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "description": "View ID",
+            "format": "guid",
+            "x-nullable": false
+          }
+        ],
+        "responses": {
+          "200": {
+            "x-nullable": false,
+            "description": "View has been retrieved successfully",
+            "schema": {
+              "$ref": "#/definitions/ApiItemViewResponse"
+            }
+          },
+          "400": {
+            "description": "View ID invalid"
+          },
+          "401": {
+            "description": "Access denied"
+          },
+          "404": {
+            "description": "View detail not found"
+          },
+          "417": {
+            "description": "Failed to get view"
+          },
+          "405": {
+            "description": "Request type was not GET"
+          }
+        }
+      }
+    },
+    "/api/v4.0/dashboards/{id}/views": {
+      "get": {
+        "tags": [
+          "Dashboard Views"
+        ],
+        "summary": "Get Dashboard Views",
+        "description": "The server retrieves the views for the dashboard ID provided in the ID parameter for the current user.",
+        "operationId": "ItemViews_ItemViewsByItemId",
+        "parameters": [
+          {
+            "type": "string",
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "description": "Dashboard ID",
+            "format": "guid",
+            "x-nullable": false
+          }
+        ],
+        "responses": {
+          "200": {
+            "x-nullable": false,
+            "description": "Views has been retrieved successfully",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/ApiItemViewResponse"
+              }
+            }
+          },
+          "400": {
+            "description": "Dashboard ID invalid"
+          },
+          "401": {
+            "description": "Access denied"
+          },
+          "204": {
+            "description": "View list was empty"
+          },
+          "417": {
+            "description": "Failed to get views"
+          },
+          "405": {
+            "description": "Request type was not GET"
+          }
+        }
+      }
+    },
+    "/api/v4.0/dashboard/{itemId}/copy": {
+      "post": {
+        "tags": [
+          "Dashboards"
+        ],
+        "summary": "Copy Dashboard",
+        "description": "Users who have access to the dashboard, can copy the dashboard by providing respective dashboard details in the request body.",
+        "operationId": "Dashboards_CopyDashboard",
+        "parameters": [
+          {
+            "type": "string",
+            "name": "itemId",
+            "in": "path",
+            "required": true,
+            "description": "ItemId of the dashboard will be copied.",
+            "format": "guid",
+            "x-nullable": false
+          },
+          {
+            "name": "apiCopyDashboard",
+            "in": "body",
+            "required": true,
+            "description": "Details of the dashboard passed will be copied.",
+            "schema": {
+              "$ref": "#/definitions/ApiCopyDashboardRequestV4"
+            },
+            "x-nullable": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "x-nullable": false,
+            "description": "Dashbord has been copied successfully",
+            "schema": {
+              "$ref": "#/definitions/ApiCopyItemResponse"
+            }
+          },
+          "400": {
+            "description": "The content of the request body is missing or incomplete"
+          },
+          "406": {
+            "description": "The content of the request body is invalid"
+          },
+          "404": {
+            "description": "Item detail not found"
+          },
+          "417": {
+            "description": "Failed to copy the dashboard"
+          },
+          "401": {
+            "description": "Access denied"
+          },
+          "405": {
+            "description": "Request type was not POST"
+          },
+          "403": {
+            "description": "Do not have permission to set dashboard will be copied as public"
+          },
+          "409": {
+            "description": "Dashboard will be copied name already exist"
+          }
+        }
+      }
+    },
+    "/api/v4.0/datasource/{itemId}/copy": {
+      "post": {
+        "tags": [
+          "DataSource"
+        ],
+        "summary": "Copy Data source",
+        "description": "Users who have access to the data source, can copy the data source by providing respective data source details in the request body.",
+        "operationId": "DataSource_CopyDataSource",
+        "parameters": [
+          {
+            "type": "string",
+            "name": "itemId",
+            "in": "path",
+            "required": true,
+            "description": "ItemId of the data source will be copied.",
+            "format": "guid",
+            "x-nullable": false
+          },
+          {
+            "name": "apiCopyDatasource",
+            "in": "body",
+            "required": true,
+            "description": "Details of the data source passed will be copied.",
+            "schema": {
+              "$ref": "#/definitions/ApiCopyDataSourceRequestV4"
+            },
+            "x-nullable": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "x-nullable": false,
+            "description": "Data source has been copied successfully",
+            "schema": {
+              "$ref": "#/definitions/ApiCopyItemResponse"
+            }
+          },
+          "400": {
+            "description": "The content of the request body is missing or incomplete"
+          },
+          "406": {
+            "description": "The content of the request body is invalid"
+          },
+          "404": {
+            "description": "Item detail not found"
+          },
+          "417": {
+            "description": "Failed to copy the data source"
+          },
+          "401": {
+            "description": "Access denied"
+          },
+          "405": {
+            "description": "Request type was not POST"
+          },
+          "409": {
+            "description": "Data source will be copied name already exist"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Response": {
+      "type": "object",
+      "x-typeName": "Response",
+      "additionalProperties": false,
+
+      "properties": {
+        "access_token": {
+          "type": "string",
+          "description": "Authentication token of the user."
+        },
+        "token_type": {
+          "type": "string",
+          "description": "Type of token assigned by the authorization server."
+        },
+        "expires_in": {
+          "type": "string",
+          "description": "The lifetime in seconds of the access token."
+        },
+        "Email": {
+          "type": "string",
+          "description": "Email of the authenticated user."
+        }
+      }
+    },
+    "ApiResponse": {
+      "type": "object",
+      "required": [
+        "ApiStatus",
+        "Status"
+      ],
+      "properties": {
+        "ApiStatus": {
+          "type": "boolean",
+          "description": "Returns the status of the API."
+        },
+        "Data": {
+          "description": "Returns data from the API."
+        },
+        "Status": {
+          "type": "boolean",
+          "description": "Returns status of the API request."
+        },
+        "StatusMessage": {
+          "type": "string",
+          "description": "Returns the status message from the API."
+        },
+        "Message": {
+          "type": "string",
+          "description": "Returns the message from the API."
+        }
+      }
+    },
+    "ApiItemViewsAdd": {
+      "type": "object",
+      "description": "Add dashboard view request details.",
+      "required": [
+        "ViewName",
+        "ItemId",
+        "QueryString",
+        "IsPublic"
+      ],
+      "properties": {
+        "ViewName": {
+          "type": "string",
+          "description": "Specify name of the view."
+        },
+        "ItemId": {
+          "type": "string",
+          "description": "Specify ID of the dashboard.",
+          "format": "guid"
+        },
+        "ChildItemId": {
+          "type": "string",
+          "description": "Specify ID of the child dashboard.",
+          "format": "guid"
+        },
+        "QueryString": {
+          "type": "string",
+          "description": "Specify the filter query."
+        },
+        "IsPublic": {
+          "type": "boolean",
+          "description": "Specify <i>true</i> to set the view as public"
+        }
+      }
+    },
+    "ApiItemViewsUpdate": {
+      "type": "object",
+      "description": "Update dashboard view request details.",
+      "required": [
+        "ViewId",
+        "DashboardId"
+      ],
+      "properties": {
+        "Name": {
+          "type": "string",
+          "description": "Specify name of the view."
+        },
+        "ViewId": {
+          "type": "string",
+          "description": "Specify ID of the dashboard view.",
+          "format": "guid"
+        },
+        "DashboardId": {
+          "type": "string",
+          "description": "Specify ID of the dashboard.",
+          "format": "guid"
+        },
+        "QueryString": {
+          "type": "string",
+          "description": "Specify the filter query."
+        }
+      }
+    },
+    "ApiItemViewResponse": {
+      "type": "object",
+      "description": "Dashboard view response details.",
+      "required": [
+        "CanDelete",
+        "CanEdit",
+        "CanShare",
+        "IsPublic",
+        "ItemId",
+        "UserId",
+        "ViewId"
+      ],
+      "properties": {
+        "CanDelete": {
+          "type": "boolean",
+          "description": "Specifies the delete permission of the view."
+        },
+        "CanEdit": {
+          "type": "boolean",
+          "description": "Specifies the write permission of the view."
+        },
+        "CanShare": {
+          "type": "boolean",
+          "description": "Specifies the share permission of the view."
+        },
+        "IsPublic": {
+          "type": "boolean",
+          "description": "Returns true if the view is public."
+        },
+        "ItemId": {
+          "type": "string",
+          "description": "Specifies the ID of the dashboard.",
+          "format": "guid"
+        },
+        "QueryString": {
+          "type": "string",
+          "description": "Specifies the filter query string."
+        },
+        "UserId": {
+          "type": "integer",
+          "description": "Specifies the ID of the user.",
+          "format": "int32"
+        },
+        "ViewId": {
+          "type": "string",
+          "description": "Specifies the ID of the view.",
+          "format": "guid"
+        },
+        "ViewName": {
+          "type": "string",
+          "description": "Specifies the name of the view."
+        }
+      }
+    },
+    "ApiCopyItemResponse": {
+      "type": "object",
+      "description": "Response details of the copied item.",
+      "required": [
+        "ApiStatus",
+        "Status",
+        "PublishedItemId",
+        "Version"
+      ],
+      "properties": {
+        "ApiStatus": {
+          "type": "boolean",
+          "description": "Returns the status of the API."
+        },
+        "Status": {
+          "type": "boolean",
+          "description": "Returns status of the API request."
+        },
+        "PublishedItemId": {
+          "type": "string",
+          "description": "Returns the published data source item id",
+          "format": "guid"
+        },
+        "Version": {
+          "type": "integer",
+          "description": "Returns the version number of the data source",
+          "format": "int32"
+        },
+        "StatusMessage": {
+          "type": "string",
+          "description": "Returns the status message from the API."
+        }
+      }
+    },
+    "ApiCopyDashboardRequestV4": {
+      "type": "object",
+      "description": "Dashboard details.",
+      "required": [
+        "Name",
+        "CategoryId",
+        "IsPublic",
+        "IsCopyDatasource"
+      ],
+      "properties": {
+        "Name": {
+          "type": "string",
+          "description": "Dashboard name."
+        },
+        "Description": {
+          "type": "string",
+          "description": "Dashboard description."
+        },
+        "CategoryId": {
+          "type": "string",
+          "description": "Category ID.",
+          "format": "guid"
+        },
+        "IsPublic": {
+          "type": "boolean",
+          "description": "Specify <i>true</i> to set the item as a public."
+        },
+        "IsCopyDatasource": {
+          "type": "boolean",
+          "description": "Copy the data source of dashboard based on this value "
+        }
+      }
+    },
+    "ApiCopyDataSourceRequestV4": {
+      "type": "object",
+      "description": "Data Source details.",
+      "required": [
+        "Name"
+      ],
+      "properties": {
+        "Name": {
+          "type": "string",
+          "description": "Data source name."
+        },
+        "Description": {
+          "type": "string",
+          "description": "Data source description."
+        }
+      }
+    }
+  }
+}

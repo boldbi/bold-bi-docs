@@ -1,0 +1,2807 @@
+﻿{
+  "swagger": "2.0",
+  "info": {
+    "title": "API Reference",
+    "version": "2.0",
+    "description": {
+      "$ref": "./helperswagger.json#/introduction/introductiondescription"
+    }
+  },
+  "schemes": [ ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "tags": [
+    {
+      "name": "Interact with our REST API",
+      "description": {
+        "$ref": "./helperswagger.json#/tryitnow/tryitnowdescription"
+      }
+    },
+    {
+      "name": "Authentication",
+      "description": {
+        "$ref": "./helperswagger.json#/authentication/authenticationdescription"
+      }
+    },
+    {
+      "name": "Groups",
+      "description": {
+        "$ref": "./helperswagger.json#/groupdescription/getgroupsdescription"
+      }
+    },
+    {
+      "name": "Items",
+      "description": {
+        "$ref": "./helperswagger.json#/itemdescription/getitemdescription"
+      }
+    },
+    {
+      "name": "Permission",
+      "description": {
+        "$ref": "./helperswagger.json#/permissiondescription/getpermissiondescription"
+      }
+    },
+    {
+      "name": "Users",
+      "description": {
+        "$ref": "./helperswagger.json#/userdescription/getusersdescription"
+      }
+    }
+  ],
+  "paths": {
+    "/api/token": {
+      "post": {
+        "tags": [
+          "Authentication"
+        ],
+        "summary": "Authenticate User",
+        "operationId": "Authentication",
+        "parameters": [
+          {
+            "type": "string",
+            "name": "username",
+            "in": "formData",
+            "required": true,
+            "x-nullable": false,
+            "description": "Email address of the user."
+          },
+          {
+            "type": "string",
+            "name": "password",
+            "in": "formData",
+            "required": true,
+            "x-nullable": false,
+            "description": "Password of the user."
+          },
+          {
+            "type": "string",
+            "name": "grant_type",
+            "in": "formData",
+            "required": true,
+            "x-nullable": false,
+            "description": "The type of credentials authorizing the request for an access token. Valid values: `\"password\"`"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "User Logged In Successfully",
+            "schema": {
+              "$ref": "#/definitions/Response"
+            },
+            "x-nullable": true
+          },
+          "400": {
+            "description": "Email address is empty"
+          },
+          "404": {
+            "description": "User detail not found"
+          },
+          "401": {
+            "description": "Invalid email or password"
+          },
+          "405": {
+            "description": "Request type was not POST"
+          }
+        }
+      }
+    },
+    "/api/v2.0/permissions/users/{id}": {
+      "get": {
+        "tags": [
+          "Permission"
+        ],
+        "summary": "Get User Permission",
+        "description": "With this endpoint administrators can get the list of permissions of a specific user by providing the user ID in the id parameter.",
+        "operationId": "Permission_GetUserPermission",
+        "parameters": [
+          {
+            "type": "integer",
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "description": "User ID.",
+            "format": "int32",
+            "x-nullable": false
+          }
+        ],
+        "responses": {
+          "200": {
+            "x-nullable": true,
+            "description": "List of user permissions retrieved succesfully",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/ApiUserPermissionDetail"
+              }
+            }
+          },
+          "204": {
+            "description": "Permission list is empty"
+          },
+          "401": {
+            "description": "Access denied"
+          },
+          "400": {
+            "description": "User id is invalid"
+          },
+          "404": {
+            "description": "User detail not found"
+          },
+          "405": {
+            "description": "Request type was not GET"
+          }
+        }
+      }
+    },
+    "/api/v2.0/permissions/groups/{id}": {
+      "get": {
+        "tags": [
+          "Permission"
+        ],
+        "summary": "Get Group Permission",
+        "description": "With this endpoint administrators can get the list of permissions of a specific group by providing the group ID in the id parameter.",
+        "operationId": "Permission_GetGroupPermission",
+        "parameters": [
+          {
+            "type": "integer",
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "description": "Group ID.",
+            "format": "int32",
+            "x-nullable": false
+          }
+        ],
+        "responses": {
+          "200": {
+            "x-nullable": true,
+            "description": "List of group permissions retrieved succesfully",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/ApiGroupPermissionDetail"
+              }
+            }
+          },
+          "204": {
+            "description": "Permission list is empty"
+          },
+          "401": {
+            "description": "Access denied"
+          },
+          "404": {
+            "description": "Group detail not found"
+          },
+          "405": {
+            "description": "Request type was not GET"
+          },
+          "406": {
+            "description": "Group id is invalid"
+          }
+        }
+      }
+    },
+    "/api/v2.0/permissions/users": {
+      "post": {
+        "tags": [
+          "Permission"
+        ],
+        "summary": "Add User Permission",
+        "description": "With this endpoint administrators can add new permissions to specific users by providing permission details in the request body.\n\nFor adding specific permissions, we have to give the item ID(Category Id, Schedule Id, Dashboard Id) for the permission entity(SpecificCategory, SpecificSchedule, SpecificDashboard).",
+        "operationId": "Permission_AddUserPermission",
+        "parameters": [
+          {
+            "name": "apiUserPermissionAdd",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/ApiUserPermissionAdd"
+            },
+            "description": "Details about the permissions passed will be added to specified user id.",
+            "x-nullable": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "x-nullable": true,
+            "description": "User permission was created successfully",
+            "schema": {
+              "$ref": "#/definitions/ApiResponse"
+            }
+          },
+          "400": {
+            "description": "The content of the request body is missing or incomplete"
+          },
+          "401": {
+            "description": "Access denied"
+          },
+          "404": {
+            "description": "User detail  not found"
+          },
+          "405": {
+            "description": "Request type was not POST"
+          },
+          "406": {
+            "description": "The content of the request body is invalid"
+          },
+          "417": {
+            "description": "Failed to add user permission"
+          }
+        }
+      }
+    },
+    "/api/v2.0/permissions/groups": {
+      "post": {
+        "tags": [
+          "Permission"
+        ],
+        "summary": "Add Group Permission",
+        "description": "With this endpoint administrators can add new permissions to the specific group by providing permission details in the request body.\n\nFor adding specific permissions we have to give the item ID(Category Id, Schedule Id, Dashboard Id) for the permission entity(SpecificCategory, SpecificSchedule, SpecificDashboard).",
+        "operationId": "Permission_AddGroupPermission",
+        "parameters": [
+          {
+            "name": "apiGroupPermissionAdd",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/ApiGroupPermissionAdd"
+            },
+            "description": "Details about the permissions passed will be added to specified group id.",
+            "x-nullable": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "x-nullable": true,
+            "description": "Group permission was created successfully",
+            "schema": {
+              "$ref": "#/definitions/ApiResponse"
+            }
+          },
+          "400": {
+            "description": "The content of the request body is missing or incomplete"
+          },
+          "401": {
+            "description": "Access denied"
+          },
+          "404": {
+            "description": "Group  detail  not found"
+          },
+          "405": {
+            "description": "Request type was not POST"
+          },
+          "406": {
+            "description": "The content of the request body is invalid"
+          },
+          "409": {
+            "description": "Permission already exists"
+          },
+          "417": {
+            "description": "Failed to add group permission"
+          }
+        }
+      }
+    },
+    "/api/v2.O/permissions/users/{id}": {
+      "delete": {
+        "tags": [
+          "Permission"
+        ],
+        "summary": "Delete User Permission",
+        "description": "With this endpoint administrators can delete the specific user permissions by providing the user permission ID in the id parameter.",
+        "operationId": "Permission_DeleteUserPermission",
+        "parameters": [
+          {
+            "type": "integer",
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "description": "User permission ID.",
+            "format": "int32",
+            "x-nullable": false
+          }
+        ],
+        "responses": {
+          "204": {
+            "x-nullable": true,
+            "description": "User permission deleted",
+            "schema": {
+              "$ref": "#/definitions/ApiResponse"
+            }
+          },
+          "400": {
+            "description": "Permission id is empty"
+          },
+          "401": {
+            "description": "Access denied"
+          },
+          "405": {
+            "description": "Request type was not DELETE"
+          },
+          "417": {
+            "description": "Failed to delete user permission"
+          }
+        }
+      }
+    },
+    "/api/v2.O/permissions/groups/{id}": {
+      "delete": {
+        "tags": [
+          "Permission"
+        ],
+        "summary": "Delete Group Permission",
+        "description": "With this endpoint administrators can delete the specific group permissions by providing group permission ID in the id parameter.",
+        "operationId": "Permission_DeleteGroupPermission",
+        "parameters": [
+          {
+            "type": "integer",
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "description": "Group permission ID.",
+            "format": "int32",
+            "x-nullable": false
+          }
+        ],
+        "responses": {
+          "204": {
+            "x-nullable": true,
+            "description": "Group permission deleted",
+            "schema": {
+              "$ref": "#/definitions/ApiResponse"
+            }
+          },
+          "400": {
+            "description": "Permission id is empty"
+          },
+          "401": {
+            "description": "Access denied"
+          },
+          "405": {
+            "description": "Request type was not DELETE"
+          },
+          "417": {
+            "description": "Failed to delete group permission"
+          }
+        }
+      }
+    },
+    "/api/v2.0/items": {
+      "get": {
+        "tags": [
+          "Items"
+        ],
+        "summary": "Get Items",
+        "description": "Bold BI Cloud retrieves the respective items for the values (category, dashboard, datasource, schedule) provided in query parameter itemType for the current user.",
+        "operationId": "Items_GetItems",
+        "parameters": [
+          {
+            "type": "string",
+            "name": "itemType",
+            "in": "query",
+            "required": true,
+            "description": "Item type. Valid values: `\"Category\"` `\"Dashboard\"` `\"Datasource\"` `\"Schedule\"`",
+            "x-schema": {
+              "$ref": "#/definitions/ItemType"
+            },
+            "x-nullable": false
+          },
+          {
+            "type": "string",
+            "name": "serverPath",
+            "in": "query",
+            "description": "`\"/\"` + `\"Category name\"`",
+            "x-nullable": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "x-nullable": true,
+            "description": "List of items retrieved succesfully",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/ApiItems"
+              }
+            }
+          },
+          "204": {
+            "description": "Item list is empty"
+          },
+          "401": {
+            "description": "Access denied"
+          },
+          "400": {
+            "description": "Invalid item type"
+          },
+          "405": {
+            "description": "Request type was not GET"
+          }
+        }
+      }
+    },
+    "/api/v2.0/items/{id}": {
+      "get": {
+        "tags": [
+          "Items"
+        ],
+        "summary": "Get Item Detail",
+        "description": "Bold BI Cloud retrieves the respective item details for the values (CategoryId, DashboardId, ScheduleId) provided in id parameter for the current user.",
+        "operationId": "Items_GetItemDetail",
+        "parameters": [
+          {
+            "type": "string",
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "description": "Item ID. Valid values: `\"CategoryId\"` `\"DashboardId\"` `\"DatasourceId\"` `\"ScheduleId\"`",
+            "format": "guid",
+            "x-nullable": false
+          }
+        ],
+        "responses": {
+          "200": {
+            "x-nullable": true,
+            "description": "Item detail was retrieved successfully",
+            "schema": {
+              "$ref": "#/definitions/ApiSpecifiedItemDetail"
+            }
+          },
+          "400": {
+            "description": "Item id invalid"
+          },
+          "401": {
+            "description": "Access denied"
+          },
+          "404": {
+            "description": "Item detail not found"
+          },
+          "405": {
+            "description": "Request type was not GET"
+          }
+        }
+      }
+    },
+    "/api/v2.0/dashboards/public": {
+      "get": {
+        "tags": [
+          "Items"
+        ],
+        "summary": "Get Public Items",
+        "description": "Bold BI Cloud retrieves the respective public items for the values (dashboard) provided in query parameter itemType for the current user.",
+        "operationId": "Items_GetPublicItems",
+        "parameters": [
+          {
+            "type": "string",
+            "name": "itemType",
+            "in": "query",
+            "required": true,
+            "description": "Item type. Valid values:  `\"Dashboard\"`",
+            "x-schema": {
+              "$ref": "#/definitions/ItemType"
+            },
+            "x-nullable": false
+          }
+        ],
+        "responses": {
+          "200": {
+            "x-nullable": true,
+            "description": "List of public items retrieved successfully",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/ApiPublicItems"
+              }
+            }
+          },
+          "204": {
+            "description": "Public item list empty"
+          },
+          "400": {
+            "description": "The content of the request body is missing or incomplete"
+          },
+          "401": {
+            "description": "Access denied"
+          },
+          "405": {
+            "description": "Request type was not GET"
+          },
+          "417": {
+            "description": "Failed to get public items"
+          }
+        }
+      }
+    },
+    "/api/v2.0/dashboards/favorite": {
+      "get": {
+        "tags": [
+          "Items"
+        ],
+        "summary": "Get Favorite Dashboards",
+        "description": "Bold BI Cloud retrieves list of favorite dashboards which belogs to the current user.",
+        "operationId": "Items_GetFavoriteItems",
+        "responses": {
+          "200": {
+            "x-nullable": true,
+            "description": "List of favorite items retrieved successfully",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/ApiFavoriteitems"
+              }
+            }
+          },
+          "204": {
+            "description": "Favorite item list empty"
+          },
+          "401": {
+            "description": "Access denied"
+          },
+          "405": {
+            "description": "Request type was not GET"
+          },
+          "417": {
+            "description": "Failed to get favorite items"
+          }
+        }
+      }
+    },
+    "/api/v2.0/dashboards/tabs/{id}": {
+      "get": {
+        "tags": [
+          "Items"
+        ],
+        "summary": "Get Child Dashboards",
+        "operationId": "Items_GetChildDashboards",
+        "parameters": [
+          {
+            "type": "string",
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "description": "Item ID.",
+            "format": "guid",
+            "x-nullable": false
+          }
+        ],
+        "responses": {
+          "200": {
+            "x-nullable": true,
+            "description": "List of child dashboards retrieved successfully",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/ApiChildDashboard"
+              }
+            }
+          },
+          "204": {
+            "description": "child dashboard list empty"
+          },
+          "400": {
+            "description": "The content of the request body is missing or incomplete"
+          },
+          "401": {
+            "description": "Access denied"
+          },
+          "405": {
+            "description": "Request type was not GET"
+          }
+        }
+      }
+    },
+    "/api/v2.0/categories": {
+      "post": {
+        "tags": [
+          "Items"
+        ],
+        "summary": "Add Category",
+        "description": "Users who have a create access for categories, can add a new category by providing respective category details in the request body.",
+        "operationId": "Items_AddCategory",
+        "parameters": [
+          {
+            "name": "apiCategoryAdd",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/ApiCategoryAdd"
+            },
+            "description": "Details about the category passed will be added.",
+            "x-nullable": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "x-nullable": true,
+            "description": "Category was created successfully",
+            "schema": {
+              "$ref": "#/definitions/ApiResponse"
+            }
+          },
+          "400": {
+            "description": "The content of the request body is missing or incomplete"
+          },
+          "401": {
+            "description": "Access denied"
+          },
+          "405": {
+            "description": "Request type was not POST"
+          },
+          "406": {
+            "description": "The content of the request body is invalid"
+          },
+          "409": {
+            "description": "Item name already exists"
+          },
+          "417": {
+            "description": "Failed to add category"
+          }
+        }
+      }
+    },
+    "/api/v2.0/dashboards": {
+      "post": {
+        "tags": [
+          "Items"
+        ],
+        "summary": "Add Dashboard",
+        "description": "Users who have a create access for dashboards, can add a new dashboard by providing respective dashboard details in the request body.",
+        "operationId": "Items_AddDashboard",
+        "parameters": [
+          {
+            "name": "apiDashboardAdd",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/ApiDashboardAdd"
+            },
+            "description": "Details about the dashboard passed will be added.",
+            "x-nullable": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "x-nullable": true,
+            "description": "Dashboard was created successfully",
+            "schema": {
+              "$ref": "#/definitions/ApiItemResponse"
+            }
+          },
+          "400": {
+            "description": "The content of the request body is missing or incomplete"
+          },
+          "401": {
+            "description": "Access denied"
+          },
+          "405": {
+            "description": "Request type was not POST"
+          },
+          "406": {
+            "description": "The content of the request body is invalid"
+          },
+          "409": {
+            "description": "Item name already exists"
+          },
+          "417": {
+            "description": "Failed to add dashboard"
+          }
+        }
+      }
+    },
+    "/api/v2.0/items/is-name-exists": {
+      "post": {
+        "tags": [
+          "Items"
+        ],
+        "summary": "Check Item name existence",
+        "description": "Current user can check whether the item (category, dashboard, datasource, schedule) is alread exists or not by providing itemname (category name, dashboard name, schedule name, datasource name) and itemtype (category, dashboard, datasource, schedule) in the request body.",
+        "operationId": "Items_IsItemNameExists",
+        "parameters": [
+          {
+            "name": "apiValidateItemName",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/ApiValidateItemName"
+            },
+            "description": "Details about the item passed will be checked.",
+            "x-nullable": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "x-nullable": false,
+            "description": "Returns an item existence",
+            "schema": {
+              "type": "boolean"
+            }
+          },
+          "400": {
+            "description": "The content of the request body is missing or incomplete"
+          },
+          "404": {
+            "description": "Item detail not found"
+          },
+          "405": {
+            "description": "Request type was not POST"
+          },
+          "417": {
+            "description": "Failed to validate item name"
+          }
+        }
+      }
+    },
+    "/api/v2.O/categories": {
+      "put": {
+        "tags": [
+          "Items"
+        ],
+        "summary": "Update Category",
+        "description": "Users who have a write access for categories, can update an existing category by providing respective category details in the request body.",
+        "operationId": "Items_UpdateCategory",
+        "parameters": [
+          {
+            "name": "apiCategoryUpdate",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/ApiCategoryUpdate"
+            },
+            "description": "Details about the category passed will be updated to the specified category id.",
+            "x-nullable": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "x-nullable": true,
+            "description": "Category was modified successfully",
+            "schema": {
+              "$ref": "#/definitions/ApiResponse"
+            }
+          },
+          "400": {
+            "description": "The content of the request body is missing or incomplete"
+          },
+          "401": {
+            "description": "Access denied"
+          },
+          "404": {
+            "description": "Item detail not found"
+          },
+          "405": {
+            "description": "Request type was not PUT"
+          },
+          "406": {
+            "description": "The content of the request body is invalid"
+          },
+          "409": {
+            "description": "Item name already exists"
+          },
+          "417": {
+            "description": "Failed to update category"
+          }
+        }
+      }
+    },
+    "/api/v2.O/dashboards": {
+      "put": {
+        "tags": [
+          "Items"
+        ],
+        "summary": "Update Dashboard",
+        "description": "Users who have a write access for dashboards, can update an existing dashboard by providing respective dashboard details in the request body.",
+        "operationId": "Items_UpdateDashboard",
+        "parameters": [
+          {
+            "name": "apiDashboardUpdate",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/ApiDashboardUpdate"
+            },
+            "description": "Details about the dashboard passed will be updated to the specified dashboard id.",
+            "x-nullable": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "x-nullable": true,
+            "description": "Dashboard was modified successfully",
+            "schema": {
+              "$ref": "#/definitions/ApiItemResponse"
+            }
+          },
+          "400": {
+            "description": "The content of the request body is missing or incomplete"
+          },
+          "401": {
+            "description": "Access denied"
+          },
+          "404": {
+            "description": "Item detail not found"
+          },
+          "405": {
+            "description": "Request type was not PUT"
+          },
+          "406": {
+            "description": "The content of the request body is invalid"
+          },
+          "409": {
+            "description": "Item name already exists"
+          },
+          "417": {
+            "description": "Failed to update dashboard"
+          }
+        }
+      }
+    },
+    "/api/v2.O/dashboards/favorite": {
+      "put": {
+        "tags": [
+          "Items"
+        ],
+        "summary": "Update Favorite Dashboard",
+        "description": "Users who have read access for dashboards can update the dashboard as favorite or non-favorite by providing dashboard details in the request body.",
+        "operationId": "Items_UpdateFavoriteItem",
+        "parameters": [
+          {
+            "name": "apiUpdateFavorite",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/ApiUpdateFavorite"
+            },
+            "description": "Favorite value passed will be updated to the specified dashboard id.",
+            "x-nullable": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "x-nullable": true,
+            "description": "Favorite items modified successfully",
+            "schema": {
+              "$ref": "#/definitions/ApiResponse"
+            }
+          },
+          "400": {
+            "description": "The content of the request body is missing or incomplete"
+          },
+          "401": {
+            "description": "Access denied"
+          },
+          "404": {
+            "description": "Item detail not found"
+          },
+          "405": {
+            "description": "Request type was not PUT"
+          },
+          "417": {
+            "description": "Failed to favorite item"
+          }
+        }
+      }
+    },
+    "/api/v2.0/dashboards/export": {
+      "post": {
+        "tags": [
+          "Items"
+        ],
+        "summary": "Export Dashboard",
+        "description": "Users who have read access for dashboards can export the dashboards by providing the dashboard IDs and export type (Excel, PDF, Image) in the request body and get the exported dashboards as an array of bytes in response.\n\nWhen exporting multi-tabbed dashboards by image format, the response bytes have to be saved in ZIP format.",
+        "operationId": "Items_ExportDashboard",
+        "parameters": [
+          {
+            "name": "apiExportDashboard",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/ApiExportDashboard"
+            },
+            "description": "Details about the dashboard passed will be exported.",
+            "x-nullable": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "x-nullable": true,
+            "description": "Dashboards exported successfully",
+            "schema": {
+              "$ref": "#/definitions/ApiExportDashboardResponse"
+            }
+          },
+          "400": {
+            "description": "The content of the request body is missing or incomplete"
+          },
+          "401": {
+            "description": "Access denied"
+          },
+          "404": {
+            "description": "Item detail not found"
+          },
+          "405": {
+            "description": "Request type was not POST"
+          },
+          "406": {
+            "description": "The content of the request body is invalid"
+          },
+          "417": {
+            "description": "Failed to Export item"
+          }
+        }
+      }
+    },
+    "/api/v2.O/items/{id}": {
+      "delete": {
+        "tags": [
+          "Items"
+        ],
+        "summary": "Delete Item",
+        "description": "Users who have delete access for the item (Category, Dashboard, Schedule) can delete the item by providing the item ID (Category Id, Dashboard Id, Schedule Id) in the id parameter.",
+        "operationId": "Items_DeleteItem",
+        "parameters": [
+          {
+            "type": "string",
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "description": "Item ID. Valid values: `\"CategoryId\"` `\"DashboardId\"` `\"DatasourceId\"` `\"ScheduleId\"`",
+            "format": "guid",
+            "x-nullable": false
+          }
+        ],
+        "responses": {
+          "204": {
+            "x-nullable": true,
+            "description": "Item deleted",
+            "schema": {
+              "$ref": "#/definitions/ApiResponse"
+            }
+          },
+          "400": {
+            "description": "Item id invalid"
+          },
+          "401": {
+            "description": "Access denied"
+          },
+          "404": {
+            "description": "Item detail not found"
+          },
+          "405": {
+            "description": "Request type was not DELETE"
+          },
+          "417": {
+            "description": "Failed to delete item"
+          }
+        }
+      }
+    },
+    "/api/v2.0/users": {
+      "post": {
+        "tags": [
+          "Users"
+        ],
+        "summary": "Add User",
+        "operationId": "Users_AddUserV2",
+        "parameters": [
+          {
+            "name": "userDetail",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/ApiUserAdd"
+            },
+            "description": "Detail of the user.",
+            "x-nullable": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "x-nullable": true,
+            "description": "User was created successfully",
+            "schema": {
+              "$ref": "#/definitions/ApiResponse"
+            }
+          },
+          "401": {
+            "description": "Access denied"
+          },
+          "400": {
+            "description": "The content of the request body is missing or incomplete"
+          },
+          "406": {
+            "description": "The content of the request body is invalid"
+          },
+          "409": {
+            "description": "Email address already exists"
+          },
+          "404": {
+            "description": "User detail not found"
+          },
+          "405": {
+            "description": "Request type was not POST"
+          },
+          "417": {
+            "description": "Failed to add user"
+          }
+        }
+      }
+    },
+    "/api/v2.0/users/{user}": {
+      "get": {
+        "tags": [
+          "Users"
+        ],
+        "summary": "Returns user details for a specified user.",
+        "description": "With this endpoint administrators can get the group details of particular users by providing email address or user ID in the path parameter.",
+        "operationId": "Users_GetUserDetailV2",
+        "parameters": [
+          {
+            "type": "string",
+            "name": "user",
+            "in": "path",
+            "required": true,
+            "description": "Email address of the user.",
+            "x-nullable": false
+          }
+        ],
+        "responses": {
+          "200": {
+            "x-nullable": true,
+            "description": "User detail was retrieved successfully",
+            "schema": {
+              "$ref": "#/definitions/ApiUserDetail"
+            }
+          },
+          "401": {
+            "description": "Access denied"
+          },
+          "400": {
+            "description": "The content of the request body is missing or incomplete"
+          },
+          "404": {
+            "description": "User detail not found"
+          },
+          "405": {
+            "description": "Request type was not GET"
+          },
+          "417": {
+            "description": "Failed to retrieve user detail"
+          }
+        }
+      }
+    },
+    "/api/v2.0/csv-users/download-template": {
+      "get": {
+        "tags": [
+          "Users"
+        ],
+        "summary": "Download CSV template",
+        "operationId": "Users_DownloadCsvTemplate",
+        "responses": {
+          "200": {
+            "x-nullable": true,
+            "description": "CSV template was downloaded successfully",
+            "schema": {
+              "$ref": "#/definitions/ApiDownloadCsvTemplate"
+            }
+          },
+          "401": {
+            "description": "Access denied"
+          },
+          "405": {
+            "description": "Request type was not GET"
+          },
+          "417": {
+            "description": "Failed to download CSV template file"
+          }
+        }
+      }
+    },
+    "/api/v2.0/csv-users": {
+      "post": {
+        "tags": [
+          "Users"
+        ],
+        "summary": "Add CSV user",
+        "operationId": "Users_CsvUserImport",
+        "parameters": [
+          {
+            "name": "apiCsvUserImportRequest",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/ApiCsvUserImportRequest"
+            },
+            "description": "Details passed to add the CSV of users.",
+            "x-nullable": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "x-nullable": true,
+            "description": "User(s) added successfully",
+            "schema": {
+              "$ref": "#/definitions/ApiCsvUserImportResponse"
+            }
+          },
+          "401": {
+            "description": "Access denied"
+          },
+          "400": {
+            "description": "The content of the request body is missing or incomplete"
+          },
+          "405": {
+            "description": "Request type was not POST"
+          },
+          "417": {
+            "description": "Failed to add CSV users"
+          }
+        }
+      }
+    },
+    "/api/v2.0/users/{user}/groups": {
+      "get": {
+        "tags": [
+          "Users"
+        ],
+        "summary": "Get group details of particular user",
+        "operationId": "Users_GetGroupsOfUser",
+        "parameters": [
+          {
+            "type": "string",
+            "name": "user",
+            "in": "path",
+            "required": true,
+            "description": "User ID or Email address of the user.",
+            "x-nullable": false
+          }
+        ],
+        "responses": {
+          "200": {
+            "x-nullable": true,
+            "description": "Group details retrieved successfully",
+            "schema": {
+              "$ref": "#/definitions/ApiGroupList"
+            }
+          },
+          "204": {
+            "description": "Group list empty"
+          },
+          "401": {
+            "description": "Access denied"
+          },
+          "404": {
+            "description": "User detail not found"
+          },
+          "405": {
+            "description": "Request type was not GET"
+          },
+          "417": {
+            "description": "Failed to get group details"
+          }
+        }
+      }
+    },
+    "/api/v2.0/groups/{id}/users": {
+      "post": {
+        "tags": [
+          "Groups"
+        ],
+        "summary": "Add user(s) to the particular group",
+        "operationId": "Groups_AddUserToGroup",
+        "parameters": [
+          {
+            "type": "integer",
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "description": "Group ID",
+            "format": "int32",
+            "x-nullable": false
+          },
+          {
+            "name": "apiGroupUsers",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/ApiGroupUsers"
+            },
+            "description": "User(s) added/removed from the group",
+            "x-nullable": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "x-nullable": true,
+            "description": "User(s) added successfully",
+            "schema": {
+              "$ref": "#/definitions/ApiResponse"
+            }
+          },
+          "401": {
+            "description": "Access denied"
+          },
+          "400": {
+            "description": "The content of the request body is missing or incomplete"
+          },
+          "417": {
+            "description": "Failed to add user in to group"
+          },
+          "404": {
+            "description": "Group detail not found"
+          },
+          "412": {
+            "description": "User already exists in group"
+          },
+          "405": {
+            "description": "Request type was not POST"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Groups"
+        ],
+        "summary": "Delete user(s) from the particular group",
+        "operationId": "Groups_DeleteUserFromGroup",
+        "parameters": [
+          {
+            "type": "integer",
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "description": "Group ID",
+            "format": "int32",
+            "x-nullable": false
+          },
+          {
+            "name": "apiGroupUsers",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/ApiGroupUsers"
+            },
+            "description": "User(s) added/removed from the group",
+            "x-nullable": true
+          }
+        ],
+        "responses": {
+          "204": {
+            "x-nullable": true,
+            "description": "User(s) deleted",
+            "schema": {
+              "$ref": "#/definitions/ApiResponse"
+            }
+          },
+          "401": {
+            "description": "Access denied"
+          },
+          "400": {
+            "description": "The content of the request body is missing or incomplete"
+          },
+          "417": {
+            "description": "Failed to delete user from group"
+          },
+          "404": {
+            "description": "Group detail not found"
+          },
+          "412": {
+            "description": "User detail not found"
+          },
+          "405": {
+            "description": "Request type was not DELETE"
+          }
+        }
+      }
+    },
+    "/api/v2.0/groups": {
+      "get": {
+        "tags": [
+          "Groups"
+        ],
+        "summary": "Returns the list of groups",
+        "operationId": "Groups_GetGroupsV2",
+        "responses": {
+          "200": {
+            "x-nullable": true,
+            "description": "List of groups was retrieved successfully",
+            "schema": {
+              "$ref": "#/definitions/ApiGroupListV2"
+            }
+          },
+          "204": {
+            "description": "Group list is empty"
+          },
+          "401": {
+            "description": "Access denied"
+          },
+          "405": {
+            "description": "Request type was not GET"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+      "Response": {
+      "type": "object",
+      "x-typeName": "Response",
+      "additionalProperties": false,
+
+      "properties": {
+        "access_token": {
+          "type": "string",
+          "description": "Authentication token of the user."
+        },
+        "token_type": {
+          "type": "string",
+          "description": "Type of token assigned by the authorization server."
+        },
+        "expires_in": {
+          "type": "string",
+          "description": "The lifetime in seconds of the access token."
+        },
+        "Email": {
+          "type": "string",
+          "description": "Email of the authenticated user."
+        }
+      }
+    },
+    "ApiUserPermissionDetail": {
+      "type": "object",
+      "description": "User permission details.",
+      "additionalProperties": false,
+      "properties": {
+        "PermissionAccess": {
+          "type": "string",
+          "description": "Specify an access type for item. Valid values: `\"Create\"` `\"Read\"` `\"ReadDownload\"` `\"ReadWrite\"` `\"ReadWriteDownload\"` `\"ReadWriteDelete\"` `\"ReadWriteDeleteDownload\"` "
+        },
+        "PermissionEntity": {
+          "type": "string",
+          "description": "Specify an entity of item for permission. Valid values: `\"AllCategories\"` `\"SpecificCategory\"` `\"AllSchedules\"` `\"SpecificSchedule\"` `\"AllDashboards\"` `\"DashboardsInCategory\"` `\"SpecificDashboard\"`"
+        },
+        "UserId": {
+          "type": "integer",
+          "description": "User ID.",
+          "format": "int32"
+        },
+        "ItemName": {
+          "type": "string",
+          "description": "Item name. Valid values: `\"Category name\"` `\"Dashboard name\"` `\"Schedule name\"`"
+        },
+        "PermissionId": {
+          "type": "integer",
+          "description": "Permission ID.",
+          "format": "int32"
+        },
+        "ItemId": {
+          "type": "string",
+          "description": "Item ID. Valid values: `\"CategoryId\"` `\"DashboardId\"` `\"ScheduleId\"`",
+          "format": "guid"
+        }
+      }
+    },
+    "ApiGroupPermissionDetail": {
+      "type": "object",
+      "description": "Group Permission details.",
+      "additionalProperties": false,
+      "properties": {
+        "PermissionAccess": {
+          "type": "string",
+          "description": "Specify an access type for item. Valid values: `\"Create\"` `\"Read\"` `\"ReadDownload\"` `\"ReadWrite\"` `\"ReadWriteDownload\"` `\"ReadWriteDelete\"` `\"ReadWriteDeleteDownload\"` "
+        },
+        "PermissionEntity": {
+          "type": "string",
+          "description": "Specify an entity of item for permission. Valid values: `\"AllCategories\"` `\"SpecificCategory\"` `\"AllSchedules\"` `\"SpecificSchedule\"` `\"AllDashboards\"` `\"DashboardsInCategory\"` `\"SpecificDashboard\"`"
+        },
+        "GroupId": {
+          "type": "integer",
+          "description": "Group ID.",
+          "format": "int32"
+        },
+        "ItemName": {
+          "type": "string",
+          "description": "Item name. Valid values: `\"Category name\"` `\"Dashboard name\"` `\"Schedule name\"`"
+        },
+        "PermissionId": {
+          "type": "integer",
+          "description": "Permission ID.",
+          "format": "int32"
+        },
+        "ItemId": {
+          "type": "string",
+          "description": "Item ID. Valid values: `\"CategoryId\"` `\"DashboardId\"` `\"ScheduleId\"`\"",
+          "format": "guid"
+        }
+      }
+    },
+    "ApiUserPermissionAdd": {
+      "type": "object",
+      "description": "Permission details.",
+      "additionalProperties": false,
+      "required": [
+        "UserId"
+      ],
+      "properties": {
+        "PermissionAccess": {
+          "type": "string",
+          "description": "Specify an access type for item. Valid values: `\"Create\"` `\"Read\"` `\"ReadDownload\"` `\"ReadWrite\"` `\"ReadWriteDownload\"` `\"ReadWriteDelete\"` `\"ReadWriteDeleteDownload\"` "
+        },
+        "UserId": {
+          "type": "integer",
+          "description": "User ID.",
+          "format": "int32"
+        },
+        "PermissionEntity": {
+          "type": "string",
+          "description": "Specify an entity of item for permission. Valid values: `\"AllCategories\"` `\"SpecificCategory\"` `\"AllSchedules\"` `\"SpecificSchedule\"` `\"AllDashboards\"` `\"DashboardsInCategory\"` `\"SpecificDashboard\"`"
+        },
+        "ItemId": {
+          "type": "string",
+          "description": "Specify the item ID while assigning permission to particular item. Valid values: `\"CategoryId\"` `\"DashboardId\"` `\"ScheduleId\"`",
+          "format": "guid"
+        }
+      }
+    },
+    "ApiResponse": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "ApiStatus": {
+          "type": "boolean",
+          "description": "Returns the status of the API."
+        },
+        "Data": {
+          "description": "Returns data from the API."
+        },
+        "Status": {
+          "type": "boolean",
+          "description": "Returns status of the API request."
+        },
+        "StatusMessage": {
+          "type": "string",
+          "description": "Returns the status message from the API."
+        }
+      }
+    },
+    "ApiGroupPermissionAdd": {
+      "type": "object",
+      "description": "Permission details.",
+      "additionalProperties": false,
+      "required": [
+        "GroupId"
+      ],
+      "properties": {
+        "PermissionAccess": {
+          "type": "string",
+          "description": "Specify an access type for item. Valid values: `\"Create\"` `\"Read\"` `\"ReadDownload\"` `\"ReadWrite\"` `\"ReadWriteDownload\"` `\"ReadWriteDelete\"` `\"ReadWriteDeleteDownload\"` "
+        },
+        "GroupId": {
+          "type": "integer",
+          "description": "Group ID.",
+          "format": "int32"
+        },
+        "PermissionEntity": {
+          "type": "string",
+          "description": "Specify an entity of item for permission. Valid values: `\"AllCategories\"` `\"SpecificCategory\"` `\"AllSchedules\"` `\"SpecificSchedule\"` `\"AllDashboards\"` `\"DashboardsInCategory\"` `\"SpecificDashboard\"`"
+        },
+        "ItemId": {
+          "type": "string",
+          "description": "Specify the item ID while assigning permission to particular item. Valid values: `\"CategoryId\"` `\"DashboardId\"` `\"ScheduleId\"`",
+          "format": "guid"
+        }
+      }
+    },
+    "ItemType": {
+      "type": "string",
+      "description": "Item type"
+    },
+    "ApiItems": {
+      "type": "object",
+      "description": "Details of items.",
+      "additionalProperties": false,
+      "properties": {
+        "CanRead": {
+          "type": "boolean",
+          "description": "Specifies the read permission of the item."
+        },
+        "CanWrite": {
+          "type": "boolean",
+          "description": "Specifies the write permission of the item."
+        },
+        "CanDelete": {
+          "type": "boolean",
+          "description": "Specifies the delete permission of the item."
+        },
+        "CanDownload": {
+          "type": "boolean",
+          "description": "Specifies the download permission of the item."
+        },
+        "CanSchedule": {
+          "type": "boolean",
+          "description": "Specifies the schedule permission of the item."
+        },
+        "CanOpen": {
+          "type": "boolean",
+          "description": "Specifies the open permission of the item."
+        },
+        "CanMove": {
+          "type": "boolean",
+          "description": "Specifies the move permission of the item."
+        },
+        "CanCopy": {
+          "type": "boolean",
+          "description": "Specifies the copy permission of the item."
+        },
+        "CanClone": {
+          "type": "boolean",
+          "description": "Specifies the clone permission of the item."
+        },
+        "CanCreateItem": {
+          "type": "boolean",
+          "description": "Specifies the create permission of the item."
+        },
+        "Id": {
+          "type": "string",
+          "description": "Item ID. Valid values: `\"CategoryId\"` `\"DashboardId\"` `\"DatasourceId\"` `\"ScheduleId\"`",
+          "format": "guid"
+        },
+        "ItemType": {
+          "type": "string",
+          "description": "Item type. Valid values: `\"Category\"` `\"Dashboard\"` `\"Datasource\"` `\"Schedule\"`"
+        },
+        "Name": {
+          "type": "string",
+          "description": "Item name. Valid values: `\"Category name\"` `\"Dashboard name\"` `\"Datasource name\"` `\"Schedule name\"`"
+        },
+        "Description": {
+          "type": "string",
+          "description": "Item description."
+        },
+        "ItemLocation": {
+          "type": "string",
+          "description": "Item location."
+        },
+        "CreatedById": {
+          "type": "integer",
+          "description": "Specifies the user ID of the item creator.",
+          "format": "int32"
+        },
+        "CreatedByDisplayName": {
+          "type": "string",
+          "description": "Specifies the display name of the user who created the item."
+        },
+        "ModifiedById": {
+          "type": "integer",
+          "description": "Specifies the user ID of the item modifier.",
+          "format": "int32"
+        },
+        "ModifiedByFullName": {
+          "type": "string",
+          "description": "Specifies the full name of the user who modified the item."
+        },
+        "CategoryId": {
+          "type": "string",
+          "description": "Category ID.",
+          "format": "guid"
+        },
+        "CategoryName": {
+          "type": "string",
+          "description": "Category name."
+        },
+        "CreatedDate": {
+          "type": "string",
+          "description": "Date created of item in string format."
+        },
+        "ModifiedDate": {
+          "type": "string",
+          "description": "Date modified of item in string format."
+        },
+        "ItemModifiedDate": {
+          "type": "string",
+          "description": "Date modified of item in date format.",
+          "format": "date-time"
+        },
+        "ItemCreatedDate": {
+          "type": "string",
+          "description": "Date created of item in date format.",
+          "format": "date-time"
+        },
+        "IsMultiDashboard": {
+          "type": "boolean",
+          "description": "Returns true if the dashboard is multi-dashboard."
+        },
+        "IsFavorite": {
+          "type": "boolean",
+          "description": "Returns true if it is a favorite item."
+        },
+        "IsPublic": {
+          "type": "boolean",
+          "description": "Returns true if the item is public."
+        },
+        "TabDetail": {
+          "type": "array",
+          "description": "Specifies the details of the tab in a multi-tabbed dashboard.",
+          "items": {
+            "$ref": "#/definitions/ApiTabDetail"
+          }
+        }
+      }
+    },
+    "ApiTabDetail": {
+      "type": "object",
+      "description": "Specifies the details of the tab in a multi-tabbed dashboard",
+      "additionalProperties": false,
+      "properties": {
+        "MultiTabDashboardId": {
+          "type": "string",
+          "description": "Specifies the dashboard ID of the multi-tabbed dashboard.",
+          "format": "guid"
+        },
+        "DashboardId": {
+          "type": "string",
+          "description": "Specifies the dashboard ID of the tab.",
+          "format": "guid"
+        },
+        "Name": {
+          "type": "string",
+          "description": "Specifies the name of the tab."
+        },
+        "CreatedDate": {
+          "type": "string",
+          "description": "Date created of item in string format"
+        },
+        "ModifiedDate": {
+          "type": "string",
+          "description": "Date modified of item in string format"
+        }
+      }
+    },
+    "ApiSpecifiedItemDetail": {
+      "type": "object",
+      "description": "Item Details.",
+      "additionalProperties": false,
+      "properties": {
+        "Id": {
+          "type": "string",
+          "description": "Item ID. Valid values: `\"CategoryId\"` `\"DashboardId\"` `\"DatasourceId\"` `\"ScheduleId\"`",
+          "format": "guid"
+        },
+        "ItemType": {
+          "type": "string",
+          "description": "Item type. Valid values: `\"Category\"` `\"Dashboard\"` `\"Datasource\"` `\"Schedule\"`"
+        },
+        "Name": {
+          "type": "string",
+          "description": "Item name. Valid values: `\"Category name\"` `\"Dashboard name\"` `\"Datasource name\"` `\"Schedule name\"`"
+        },
+        "Description": {
+          "type": "string",
+          "description": "Item description."
+        },
+        "CreatedById": {
+          "type": "integer",
+          "description": "Specifies the user ID of the item creator.",
+          "format": "int32"
+        },
+        "CloneOf": {
+          "type": "string",
+          "description": "Item ID from where the item was cloned.",
+          "format": "guid"
+        },
+        "CategoryId": {
+          "type": "string",
+          "description": "Category ID.",
+          "format": "guid"
+        },
+        "CategoryName": {
+          "type": "string",
+          "description": "Category name."
+        },
+        "ItemCreatedDate": {
+          "type": "string",
+          "description": "Date created of item in date format.",
+          "format": "date-time"
+        },
+        "ItemModifiedDate": {
+          "type": "string",
+          "description": "Date modified of item in date format.",
+          "format": "date-time"
+        },
+        "CreatedDate": {
+          "type": "string",
+          "description": "Date created of item in string format."
+        },
+        "ModifiedDate": {
+          "type": "string",
+          "description": "Date modified of item in string format."
+        },
+        "ModifiedById": {
+          "type": "integer",
+          "description": "Specifies the user ID of the item modifier.",
+          "format": "int32"
+        },
+        "Extension": {
+          "type": "string",
+          "description": "Item extension."
+        },
+        "IsPublic": {
+          "type": "boolean",
+          "description": "Returns true if the item is public."
+        },
+        "IsActive": {
+          "type": "boolean",
+          "description": "Returns true if the item is active."
+        }
+      }
+    },
+    "ItemResponse": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "FileContent": {
+          "type": "string",
+          "description": "File content",
+          "format": "byte"
+        },
+        "GroupList": {
+          "type": "array",
+          "description": "Groups list",
+          "items": {
+            "$ref": "#/definitions/GroupResponse"
+          }
+        },
+        "IsFavorite": {
+          "type": "boolean",
+          "description": "Returns true if it is a favorite item."
+        },
+        "IsPublic": {
+          "type": "boolean",
+          "description": "Returns true if it is a public item."
+        },
+        "ItemName": {
+          "type": "string",
+          "description": "Item name."
+        },
+        "ItemsView": {
+          "type": "array",
+          "description": "Items view",
+          "items": {
+            "$ref": "#/definitions/ItemView"
+          }
+        },
+        "ItemType": {
+          "description": "Item type. Valid values: `\"Category\"` `\"Dashboard\"` `\"Schedule\"`",
+          "allOf": [
+            {
+              "$ref": "#/definitions/ItemType"
+            }
+          ]
+        },
+        "ItemViewId": {
+          "type": "string",
+          "description": "Item view id",
+          "format": "guid"
+        },
+        "PublishedItemId": {
+          "type": "string",
+          "description": "Published item id",
+          "format": "guid"
+        },
+        "ResponseContent": {
+          "description": "Response content"
+        },
+        "SystemSettingsResponse": {
+          "description": "System settings response",
+          "allOf": [
+            {
+              "$ref": "#/definitions/SystemSettingsResponse"
+            }
+          ]
+        },
+        "UserDetailResponse": {
+          "$ref": "#/definitions/UserDetailResponse"
+        },
+        "UserList": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/UserDetailResponse"
+          }
+        },
+        "CategoryName": {
+          "type": "string"
+        },
+        "Extension": {
+          "type": "string"
+        },
+        "Version": {
+          "type": "integer",
+          "format": "int32"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "#/definitions/ApiResponse"
+        }
+      ]
+    },
+    "GroupResponse": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "ActiveDirectoryGroupId": {
+          "type": "string",
+          "description": "Returns active directory group id",
+          "format": "guid"
+        },
+        "CanDelete": {
+          "type": "boolean",
+          "description": "Specifies the delete permission of the item"
+        },
+        "Color": {
+          "type": "string",
+          "description": "Group color"
+        },
+        "Description": {
+          "type": "string",
+          "description": "Group description"
+        },
+        "Id": {
+          "type": "integer",
+          "description": "Group Id",
+          "format": "int32"
+        },
+        "IsActiveDirectoryGroup": {
+          "type": "boolean",
+          "description": "Returns true if it is an active directory group"
+        },
+        "Name": {
+          "type": "string",
+          "description": "Group name"
+        },
+        "Users": {
+          "type": "array",
+          "description": "Group users",
+          "items": {
+            "$ref": "#/definitions/UserDetailResponse"
+          }
+        },
+        "UsersCount": {
+          "type": "integer",
+          "description": "Group's users count",
+          "format": "int32"
+        }
+      }
+    },
+    "UserDetailResponse": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Avatar": {
+          "type": "string",
+          "description": "User avatar",
+          "format": "byte"
+        },
+        "ContactNumber": {
+          "type": "string",
+          "description": "Contact number"
+        },
+        "CreatedDate": {
+          "type": "string",
+          "description": "Created date of the user",
+          "format": "date-time"
+        },
+        "DisplayName": {
+          "type": "string",
+          "description": "Display name of the user"
+        },
+        "Email": {
+          "type": "string",
+          "description": "User email address"
+        },
+        "Username": {
+          "type": "string",
+          "description": "Username of the user"
+        },
+        "FirstName": {
+          "type": "string",
+          "description": "First name of the user"
+        },
+        "IsActive": {
+          "type": "boolean",
+          "description": "Returns true if user is active"
+        },
+        "IsAzureADUser": {
+          "type": "boolean",
+          "description": "Returns true if user is azure directory user"
+        },
+        "IsAdmin": {
+          "type": "boolean",
+          "description": "Returns true if user is an admin user"
+        },
+        "LastName": {
+          "type": "string",
+          "description": "Last name of the user"
+        },
+        "ModifiedDate": {
+          "type": "string",
+          "description": "Last modified date of the user",
+          "format": "date-time"
+        },
+        "Status": {
+          "description": "Status of the user",
+          "allOf": [
+            {
+              "$ref": "#/definitions/UserStatus"
+            }
+          ]
+        },
+        "TimeZone": {
+          "type": "string",
+          "description": "Time zone of the user"
+        },
+        "UserDomain": {
+          "type": "string",
+          "description": "Domain of the user"
+        },
+        "UserId": {
+          "type": "integer",
+          "description": "User Id",
+          "format": "int32"
+        },
+        "UserPreferredCulture": {
+          "type": "string",
+          "description": "User preferred culture"
+        },
+        "DirectoryType": {
+          "description": "Directory type of the user",
+          "allOf": [
+            {
+              "$ref": "#/definitions/DirectoryType"
+            }
+          ]
+        }
+      }
+    },
+    "UserStatus": {
+      "type": "string",
+      "description": "",
+      "x-enumNames": [
+        "Active",
+        "InActive"
+      ],
+      "enum": [
+        "Active",
+        "InActive"
+      ]
+    },
+    "DirectoryType": {
+      "type": "string",
+      "description": "",
+      "x-enumNames": [
+        "All",
+        "Local",
+        "AzureAD",
+        "ExternalDatabase"
+      ],
+      "enum": [
+        "All",
+        "Local",
+        "AzureAD",
+        "ExternalDatabase"
+      ]
+    },
+    "ItemView": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "CanDelete": {
+          "type": "boolean",
+          "description": "Specifies the delete permission of the item"
+        },
+        "CanEdit": {
+          "type": "boolean",
+          "description": "Specifies the edit permission of the item"
+        },
+        "CanShare": {
+          "type": "boolean",
+          "description": "Specifies the sharing permission of the item"
+        },
+        "CategoryName": {
+          "type": "string",
+          "description": "Category name"
+        },
+        "IsActive": {
+          "type": "boolean",
+          "description": "Returns true if the item is active"
+        },
+        "IsPublic": {
+          "type": "boolean",
+          "description": "Specify true to set the item as a public"
+        },
+        "ItemId": {
+          "type": "string",
+          "description": "Item id",
+          "format": "guid"
+        },
+        "ItemName": {
+          "type": "string",
+          "description": "Item name"
+        },
+        "PermissionAccessUserId": {
+          "type": "integer",
+          "description": "Permission access user id",
+          "format": "int32"
+        },
+        "QueryString": {
+          "type": "string",
+          "description": "Query string"
+        },
+        "UserId": {
+          "type": "integer",
+          "description": "User id",
+          "format": "int32"
+        },
+        "ViewId": {
+          "type": "string",
+          "description": "View id",
+          "format": "guid"
+        },
+        "ViewName": {
+          "type": "string",
+          "description": "View name"
+        }
+      }
+    },
+    "SystemSettingsResponse": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "DateFormat": {
+          "type": "string",
+          "description": "Date format"
+        },
+        "FavoriteIcon": {
+          "type": "string",
+          "description": "Favorite icon",
+          "format": "byte"
+        },
+        "LogOnLogo": {
+          "type": "string",
+          "description": "Logon logo",
+          "format": "byte"
+        },
+        "MainScreenLogo": {
+          "type": "string",
+          "description": "Mainscreen logo",
+          "format": "byte"
+        },
+        "OrganizationName": {
+          "type": "string"
+        },
+        "TimeZone": {
+          "type": "string"
+        },
+        "WelcomeNoteText": {
+          "type": "string"
+        }
+      }
+    },
+    "ApiPublicItems": {
+      "type": "object",
+      "description": "Details of public items.",
+      "additionalProperties": false,
+      "properties": {
+        "Id": {
+          "type": "string",
+          "description": "Item ID. Valid values: `\"DashboardId\"`",
+          "format": "guid"
+        },
+        "ItemType": {
+          "type": "string",
+          "description": "Item type. Valid values: `\"Dashboard\"`"
+        },
+        "Name": {
+          "type": "string",
+          "description": "Item name. Valid values: `\"Dashboard name\"`"
+        },
+        "Description": {
+          "type": "string",
+          "description": "Item description."
+        },
+        "CategoryId": {
+          "type": "string",
+          "description": "Category ID.",
+          "format": "guid"
+        },
+        "CategoryName": {
+          "type": "string",
+          "description": "Category name."
+        },
+        "CategoryDescription": {
+          "type": "string",
+          "description": "Category discription."
+        },
+        "CreatedById": {
+          "type": "integer",
+          "description": "Specifies the user ID of the item creator.",
+          "format": "int32"
+        },
+        "CreatedByDisplayName": {
+          "type": "string",
+          "description": "Specifies the display name of the user who created the item."
+        },
+        "ModifiedById": {
+          "type": "integer",
+          "description": "Specifies the user ID of the item modifier.",
+          "format": "int32"
+        },
+        "ModifiedByFullName": {
+          "type": "string",
+          "description": "Specifies the full name of the user who modified the item."
+        },
+        "CreatedDate": {
+          "type": "string",
+          "description": "Date created of item in string format."
+        },
+        "ModifiedDate": {
+          "type": "string",
+          "description": "Date modified of item in string format."
+        },
+        "ItemCreatedDate": {
+          "type": "string",
+          "description": "Date created of item in date format.",
+          "format": "date-time"
+        },
+        "ItemModifiedDate": {
+          "type": "string",
+          "description": "Date modified of item in date format.",
+          "format": "date-time"
+        },
+        "IsMultiTabbedDashboard": {
+          "type": "boolean",
+          "description": "Returns true if the dashboard is a multi-tabbed dashboard."
+        },
+        "TabDetail": {
+          "type": "array",
+          "description": "Specifies the details of the tab in a multi-tabbed dashboard.",
+          "items": {
+            "$ref": "#/definitions/ApiTabDetail"
+          }
+        },
+        "IsFavorite": {
+          "type": "boolean",
+          "description": "Returns true if it is a favorite item."
+        }
+      }
+    },
+    "ApiFavoriteitems": {
+      "type": "object",
+      "description": "Details of favorite items.",
+      "additionalProperties": false,
+      "properties": {
+        "DashboardId": {
+          "type": "string",
+          "description": "Dashboard ID.",
+          "format": "guid"
+        },
+        "Name": {
+          "type": "string",
+          "description": "Dashboard name."
+        },
+        "Description": {
+          "type": "string",
+          "description": "Dashboard description."
+        },
+        "CategoryId": {
+          "type": "string",
+          "description": "Category ID.",
+          "format": "guid"
+        },
+        "CategoryName": {
+          "type": "string",
+          "description": "Category name."
+        },
+        "CategoryDescription": {
+          "type": "string",
+          "description": "Category description."
+        },
+        "CreatedById": {
+          "type": "integer",
+          "description": "Specifies the user ID of the item creator.",
+          "format": "int32"
+        },
+        "CreatedByDisplayName": {
+          "type": "string",
+          "description": "Specifies the display name of the user who created the item."
+        },
+        "ModifiedById": {
+          "type": "integer",
+          "description": "Specifies the user ID of the item modifier.",
+          "format": "int32"
+        },
+        "ModifiedByFullName": {
+          "type": "string",
+          "description": "Specifies the full name of the user who modified the item."
+        },
+        "CreatedDate": {
+          "type": "string",
+          "description": "Date created of item in string format."
+        },
+        "ModifiedDate": {
+          "type": "string",
+          "description": "Date modified of item in string format."
+        },
+        "ItemCreatedDate": {
+          "type": "string",
+          "description": "Date created of item in date format.",
+          "format": "date-time"
+        },
+        "ItemModifiedDate": {
+          "type": "string",
+          "description": "Date modified of item in date format.",
+          "format": "date-time"
+        },
+        "IsMultiTabbedDashboard": {
+          "type": "boolean",
+          "description": "Returns true if the dashboard is a multi-tabbed dashboard."
+        },
+        "IsPublic": {
+          "type": "boolean",
+          "description": "Returns true if the item is public."
+        }
+      }
+    },
+    "ApiChildDashboard": {
+      "type": "object",
+      "description": "Child dashboard details of the multi-dashboard",
+      "additionalProperties": false,
+      "properties": {
+        "ParentId": {
+          "type": "string",
+          "description": "Specifies the Item Id of the parent dashboard.",
+          "format": "guid"
+        },
+        "DashboardId": {
+          "type": "string",
+          "description": "Specifies the Item Id of the child dashboard.",
+          "format": "guid"
+        },
+        "Name": {
+          "type": "string",
+          "description": "Specifies the name of the child dashboard."
+        },
+        "TabId": {
+          "type": "string",
+          "description": "Specifies the tab Id of the child dashboard.",
+          "format": "guid"
+        }
+      }
+    },
+    "ApiCategoryAdd": {
+      "type": "object",
+      "description": "Category details.",
+      "additionalProperties": false,
+      "required": [
+        "Name"
+      ],
+      "properties": {
+        "Name": {
+          "type": "string",
+          "description": "Category name."
+        },
+        "Description": {
+          "type": "string",
+          "description": "Category description."
+        }
+      }
+    },
+    "ApiDashboardAdd": {
+      "type": "object",
+      "description": "Dashboard details.",
+      "additionalProperties": false,
+      "required": [
+        "Name",
+        "CategoryId",
+        "IsPublic",
+        "ItemContent"
+      ],
+      "properties": {
+        "Name": {
+          "type": "string",
+          "description": "Dashboard name."
+        },
+        "Description": {
+          "type": "string",
+          "description": "Dashboard description."
+        },
+        "CategoryId": {
+          "type": "string",
+          "description": "Category ID.",
+          "format": "guid"
+        },
+        "IsPublic": {
+          "type": "boolean",
+          "description": "Specify true to set the item as a public."
+        },
+        "ItemContent": {
+          "type": "string",
+          "description": "Provide items in an array of bytes.",
+          "format": "byte"
+        }
+      }
+    },
+    "ApiItemResponse": {
+      "type": "object",
+      "description": "Response details of item.",
+      "additionalProperties": false,
+      "properties": {
+        "ApiStatus": {
+          "type": "boolean",
+          "description": "Returns the status of the API."
+        },
+        "Status": {
+          "type": "boolean",
+          "description": "Returns status of the API request."
+        },
+        "StatusMessage": {
+          "type": "string",
+          "description": "Returns the status message from the API."
+        },
+        "PublishedItemId": {
+          "type": "string",
+          "description": "Returns the ID of the published item.",
+          "format": "guid"
+        },
+        "Version": {
+          "type": "integer",
+          "description": "Returns the version of the published file item.",
+          "format": "int32"
+        }
+      }
+    },
+    "ApiValidateItemName": {
+      "type": "object",
+      "description": "Validation details of the item.",
+      "additionalProperties": false,
+      "required": [
+        "ItemName",
+        "ItemType"
+      ],
+      "properties": {
+        "ItemName": {
+          "type": "string",
+          "description": "Item name. Valid values: `\"dashboard name\"` `\"Datasource name\"` `\"Schedule name\"`"
+        },
+        "CategoryName": {
+          "type": "string",
+          "description": "Category name."
+        },
+        "ItemType": {
+          "type": "string",
+          "description": "Item type. Valid values: `\"Category\"` `\"Dashboard\"` `\"Datasource\"` `\"Schedule\"`"
+        }
+      }
+    },
+    "ApiCategoryUpdate": {
+      "type": "object",
+      "description": "Category details.",
+      "additionalProperties": false,
+      "required": [
+        "CategoryId"
+      ],
+      "properties": {
+        "CategoryId": {
+          "type": "string",
+          "description": "Category ID.",
+          "format": "guid"
+        },
+        "Name": {
+          "type": "string",
+          "description": "Category name."
+        },
+        "Description": {
+          "type": "string",
+          "description": "Category description."
+        }
+      }
+    },
+    "ApiDashboardUpdate": {
+      "type": "object",
+      "description": "Dashboard details.",
+      "additionalProperties": false,
+      "required": [
+        "DashboardId",
+        "IsPublic",
+        "IsDraft"
+      ],
+      "properties": {
+        "DashboardId": {
+          "type": "string",
+          "description": "Dashboard ID.",
+          "format": "guid"
+        },
+        "Name": {
+          "type": "string",
+          "description": "Dashboard name."
+        },
+        "Description": {
+          "type": "string",
+          "description": "Dashboard description."
+        },
+        "CategoryId": {
+          "type": "string",
+          "description": "Category ID.",
+          "format": "guid"
+        },
+        "VersionComment": {
+          "type": "string",
+          "description": "Comments about update."
+        },
+        "IsPublic": {
+          "type": "boolean",
+          "description": "Specify true to set item as public."
+        },
+        "ItemContent": {
+          "type": "string",
+          "description": "Provide items in an array of bytes.",
+          "format": "byte"
+        },
+        "IsDraft": {
+          "type": "boolean",
+          "description": "Returns true if the dashboard is a draft."
+        }
+      }
+    },
+    "ApiUpdateFavorite": {
+      "type": "object",
+      "description": "Details about the favorite item.",
+      "additionalProperties": false,
+      "required": [
+        "DashboardId",
+        "Favorite"
+      ],
+      "properties": {
+        "DashboardId": {
+          "type": "string",
+          "description": "Dashboard ID.",
+          "format": "guid"
+        },
+        "Favorite": {
+          "type": "boolean",
+          "description": "Specify true to set the item as a favorite item."
+        }
+      }
+    },
+    "ApiExportDashboard": {
+      "type": "object",
+      "description": "Details about the dashboard to be exported.",
+      "additionalProperties": false,
+      "required": [
+        "DashboardId",
+        "ExportType"
+      ],
+      "properties": {
+        "DashboardId": {
+          "type": "string",
+          "description": "Dashboard ID.",
+          "format": "guid"
+        },
+        "ServerPath": {
+          "type": "string",
+          "description": "Specifies the relative URL of the dashboard."
+        },
+        "ExportType": {
+          "type": "string",
+          "description": "Export type. Valid values: `\"Excel\"` `\"Pdf\"` `\"Image\"`"
+        }
+      }
+    },
+    "ApiExportDashboardResponse": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "ApiStatus": {
+          "type": "boolean",
+          "description": "Returns the status of the API."
+        },
+        "Status": {
+          "type": "boolean",
+          "description": "Returns status of the API request."
+        },
+        "StatusMessage": {
+          "type": "string",
+          "description": "Returns the status message from the API."
+        },
+        "FileContent": {
+          "type": "string",
+          "description": "Returns the exported dashboard in an array of bytes.",
+          "format": "byte"
+        }
+      }
+    },
+    "ApiUserAdd": {
+      "type": "object",
+      "description": "User detail",
+      "additionalProperties": false,
+      "required": [
+        "Email",
+        "FirstName"
+      ],
+      "properties": {
+        "Email": {
+          "type": "string",
+          "description": "Email address of the user."
+        },
+        "FirstName": {
+          "type": "string",
+          "description": "First name of the user."
+        },
+        "Lastname": {
+          "type": "string",
+          "description": "Last name of the user."
+        }
+      }
+    },
+    "ApiUserDetail": {
+      "type": "object",
+      "description": "Detail of the User",
+      "additionalProperties": false,
+      "required": [
+        "UserId",
+        "IsActive",
+        "UserStatus",
+        "IsAzureAdUser"
+      ],
+      "properties": {
+        "UserId": {
+          "type": "integer",
+          "description": "ID of the user.",
+          "format": "int32"
+        },
+        "Email": {
+          "type": "string",
+          "description": "Email address of the user."
+        },
+        "DisplayName": {
+          "type": "string",
+          "description": "Display name of the user."
+        },
+        "FirstName": {
+          "type": "string",
+          "description": "First name of the user."
+        },
+        "Lastname": {
+          "type": "string",
+          "description": "Last name of the user."
+        },
+        "ContactNumber": {
+          "type": "string",
+          "description": "Phone number of the user."
+        },
+        "IsActive": {
+          "type": "boolean",
+          "description": "Returns true if the user is an active user."
+        },
+        "UserStatus": {
+          "description": "Returns the status of the user.",
+          "allOf": [
+            {
+              "$ref": "#/definitions/UserStatus"
+            }
+          ]
+        },
+        "Username": {
+          "type": "string",
+          "description": "Username of the user."
+        },
+        "IsAzureAdUser": {
+          "type": "boolean",
+          "description": "Returns true if the user is added from Azure Active Directory."
+        },
+        "UserDomain": {
+          "type": "string",
+          "description": "Domain of the Active Directory User"
+        },
+        "Avatar": {
+          "type": "string",
+          "description": "Profile picture of the User",
+          "format": "byte"
+        }
+      }
+    },
+    "ApiDownloadCsvTemplate": {
+      "type": "object",
+      "description": "Contains response of downloaded CSV template file.",
+      "additionalProperties": false,
+      "required": [
+        "ApiStatus",
+        "Status"
+      ],
+      "properties": {
+        "ApiStatus": {
+          "type": "boolean",
+          "description": "Returns the status of the API."
+        },
+        "Status": {
+          "type": "boolean",
+          "description": "Returns status of the API request."
+        },
+        "StatusMessage": {
+          "type": "string",
+          "description": "Returns the status message from the API."
+        },
+        "FileContent": {
+          "type": "string",
+          "description": "Returns CSV file in array of bytes.",
+          "format": "byte"
+        }
+      }
+    },
+    "ApiCsvUserImportRequest": {
+      "type": "object",
+      "description": "Contains CSV user import request.",
+      "additionalProperties": false,
+      "required": [
+        "CsvFileContent"
+      ],
+      "properties": {
+        "CsvFileContent": {
+          "type": "string",
+          "description": "Provides the CSV file in an array of bytes.",
+          "format": "byte"
+        }
+      }
+    },
+    "ApiCsvUserImportResponse": {
+      "type": "object",
+      "description": "Contains response of Csv user import",
+      "additionalProperties": false,
+      "required": [
+        "ApiStatus",
+        "Status"
+      ],
+      "properties": {
+        "ApiStatus": {
+          "type": "boolean",
+          "description": "Returns the status of the API."
+        },
+        "Status": {
+          "type": "boolean",
+          "description": "Returns status of the API request."
+        },
+        "StatusMessage": {
+          "type": "string",
+          "description": "Returns the status message from the API."
+        },
+        "CsvErrorContent": {
+          "type": "string",
+          "description": "Returns CSV file in array of bytes if the importing users find errors.",
+          "format": "byte"
+        }
+      }
+    },
+    "ApiGroupList": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "GroupList": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ApiGroup"
+          }
+        }
+      }
+    },
+    "ApiGroup": {
+      "type": "object",
+      "description": "Group detail",
+      "additionalProperties": false,
+      "required": [
+        "Id",
+        "IsAzureADGroup"
+      ],
+      "properties": {
+        "Id": {
+          "type": "integer",
+          "description": "ID of the group.",
+          "format": "int32"
+        },
+        "Name": {
+          "type": "string",
+          "description": "Name of the group."
+        },
+        "Description": {
+          "type": "string",
+          "description": "Description of the group."
+        },
+        "IsAzureADGroup": {
+          "type": "boolean",
+          "description": "Returns true if the group is added from Azure Active Directory"
+        }
+      }
+    },
+    "ApiGroupUsers": {
+      "type": "object",
+      "description": "User(s) added/removed from the group.",
+      "additionalProperties": false,
+      "properties": {
+        "Id": {
+          "type": "array",
+          "description": "List of user IDs",
+          "items": {
+            "type": "integer",
+            "format": "int32"
+          }
+        }
+      }
+    },
+    "ApiGroupListV2": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "GroupList": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ApiGroupV2"
+          }
+        }
+      }
+    },
+    "ApiGroupV2": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Description": {
+          "type": "string",
+          "description": "Description of the group."
+        },
+        "Id": {
+          "type": "integer",
+          "description": "ID of the group.",
+          "format": "int32"
+        },
+        "IsAzureADGroup": {
+          "type": "boolean",
+          "description": "Returns true if the group is added from Azure Active Directory"
+        },
+        "Name": {
+          "type": "string",
+          "description": "Name of the group."
+        },
+        "UserCount": {
+          "type": "integer",
+          "description": "User(s) count",
+          "format": "int32"
+        }
+      }
+    }
+  },
+  "parameters": { },
+  "responses": { },
+  "securityDefinitions": { }
+}

@@ -1,0 +1,107 @@
+---
+layout: post
+title: API Reference – Methods - JavaScript Embedding | Bold BI
+description: Explore the JavaScript API reference for methods that can be used for embedding in Bold BI deployed in your server.
+platform: bold-bi
+documentation: UG
+---
+
+# Methods
+  
+## create()
+    
+This method will initialize the Dashboard Viewer options and returns the object for rendering the dashboard.
+
+**Example** 
+   
+```js        
+var dashboard = BoldBI.create({
+     serverUrl: "http://localhost:51777/bi/site/site1",
+     dashboardId: "755e99c7-f858-4058-958b-67577b283309",
+     embedContainerId: "dashboard-container",// This should be the container id where you want to embed the dashboard
+     embedType: BoldBI.EmbedType.Component,
+     environment: BoldBI.Environment.Enterprise,
+     height: "800px",
+     width: "1200px",
+     authorizationServer: {
+     url: "http://example.come/authorize/server"
+     },
+     expirationTime: "100000",     
+});   
+```
+
+## loadDashboard()
+    
+This method will render the dashboard based on the dashboard options provided while calling the create method.
+
+**Example** 
+   
+```js      
+var dashboard = BoldBI.create(options);
+dashboard.loadDashboard();   
+```
+
+## destroy()
+    
+This method will destroy the dashboard based on the dashboard object provided while calling the create method.
+
+**Example** 
+   
+```js        
+var dashboard = BoldBI.create(options);
+dashboard.loadDashboard();
+dashboard.destroy();   
+```
+
+## getInstance()
+    
+This method will return the object of the rendered dashboard using the container id assigned to the dashboard options.
+
+**Example** 
+   
+```js
+<div id="container"></div> 
+<script> 
+     var dashboard = BoldBI.create({
+     embedContainerId: "container",       
+     });
+     dashboard.loadDashboard();
+     dashboard.getInstance("container");
+</script> 
+```
+
+## loadDashboardWidget()
+    
+This method will load the widget of current dashboard.
+
+**Example** 
+   
+```js
+var dashboard = BoldBI.create(options);
+dashboard.loadDashboard();
+dashboard.loadDashboardWidget("Sales by country");   
+```
+
+## updateFilters()
+    
+This method will update the filter parameters of current dashboard. [learn more details](/embedded-bi/working-with-dashboards/preview-dashboard/urlparameters/)
+
+**Example** 
+   
+```js
+var dashboard = BoldBI.create(options);
+dashboard.loadDashboard();
+dashboard.updateFilters("Continent=Asia,Africa,Europe");   
+```
+
+## refreshDashboard()
+    
+This method will refresh the current dashboard.
+
+**Example** 
+   
+```js
+var dashboard = BoldBI.create(options);
+dashboard.loadDashboard();
+dashboard.refreshDashboard();   
+```

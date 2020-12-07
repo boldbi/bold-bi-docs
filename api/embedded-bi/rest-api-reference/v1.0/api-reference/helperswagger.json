@@ -1,0 +1,17 @@
+﻿{
+  "introduction": {
+    "introductiondescription": "# Introduction\n You can manage(retrieve, add, update, delete) groups and users in Bold BI Cloud using the REST API. To access the following API's you need Bold BI Cloud version 2.1 and above.\n\n Also we have an API's to manage(retrieve, add, update, delete and export) items and permissions, also can perform special operations of groups and users.\n"
+  },
+  "authentication": {
+    "authenticationdescription": "When you sign in to the Bold BI Cloud, an authentication token is provided that should be attached in the request header(Authorization) for all subsequent API calls to authenticate the requests.\n"
+  },
+  "groupdescription": {
+    "getgroupsdescription": "To retrieve a list of groups, create, modify, and delete a particular group in the Bold BI Cloud, use the corresponding endpoints below.\n"
+  },
+  "userdescription": {
+    "getusersdescription": "To retrieve a list of users, create, modify, and delete a particular user in the Bold BI Cloud, use the corresponding endpoints below.\n"
+  },
+  "tryitnow": {
+    "tryitnowdescription": "Interactive documentation lets you play with our APIs to explore the responses and make the plan accordingly.\n\n   [Try It Now(v1.0)](https://help.boldbi.com/embedded-bi/rest-api-reference/v1.0/try-it-now/)\n\n To know about how it works, please click [here](https://help.boldbi.com/embedded-bi/rest-api-reference/interact-with-rest-api/).\n"
+  }
+}
