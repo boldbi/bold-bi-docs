@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Slack - Cloud BI Connector | Bold BI Documentation
-description: Learn how to create data source by connecting to the Slack data source with Bold BI Dashboard Designer
+title: Slack Data Connector – Cloud BI | Bold BI Documentation
+description: Learn how to connect Slack web service using OAuth authentication with Bold BI Cloud and create data source.
 platform: bold-bi
 documentation: ug
 ---
@@ -23,7 +23,7 @@ To configure the Slack data source, follow the below steps:
 
 > **NOTE:** You can also create a data source from the home page by clicking the **Data Sources** menu from left menu panel and **Create Data Source** from the data sources page.
 
-   ![Choose data source](/static/assets/cloud/working-with-datasource/data-connectors/images/Slack/ChooseDS_Server.png)
+   ![Choose data source from server](/static/assets/cloud/working-with-datasource/data-connectors/images/Slack/ChooseDS_Server.png)
 
 
 ## Create Slack data source

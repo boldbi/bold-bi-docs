@@ -1,6 +1,6 @@
 ---
 layout: post
-title: CallRail – Cloud BI Data Connector | Bold BI Docs
+title: CallRail – Cloud BI Data Connector | Bold BI Documentation
 description: Learn how to connect CallRail data through REST API endpoint with Bold BI Cloud and create data source for dashboard configuration.
 platform: bold-bi
 documentation: ug

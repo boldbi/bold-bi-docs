@@ -49,7 +49,7 @@ documentation: ug
    ![Maximize filter icon](/static/assets/cloud/working-with-dashboards/preview-dashboards/images/maximizefiltericon.png)
 
 
-[Learn how to save your designed dashboard](/cloud-bi/working-with-dashboards/save-dashboard/)
+[Learn how to save your designed dashboard](/cloud-bi/working-with-dashboards/publish-dashboard/)
    
 ## Post your message
    

@@ -310,7 +310,7 @@ This event will be triggered at the beginning of every viewer actions while appl
 <tr>
 <td class="name">eventType</td>
 <td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">Enum</span></td>
-<td class="description">Will holds the current event type that triggered the event</td>
+<td class="description">Will hold the current <a href="/embedded-bi/javascript-based/api-reference/events/#event-types">event type</a> that triggered the event</td>
 </tr>
 <tr>
 <td class="name">source</td>
@@ -341,6 +341,115 @@ var dashboard = BoldBI.create({
 dashboard.loadDashboard();    
 ```
 
+## Event Types
+
+<table class="params">
+<thead>
+<tr>
+<th>Event Types</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">renderLayout</td>
+<td class="description">This event will trigger when the layout of the dashboard started to render.</td>
+</tr>
+<tr>
+<td class="name">renderDashboard</td>
+<td class="description">This event will trigger when the dashboard started to render.</td>
+</tr>
+<tr>
+<td class="name">renderWidget</td>
+<td class="description">This event will trigger when the widget started to render.</td>
+</tr>
+<tr>
+<td class="name">resizeDashboard</td>
+<td class="description">This event will trigger when we invoke the resize dashboard method or when you resize the browser window.</td>
+</tr>
+<tr>
+<td class="name">exportDialogOpen</td>
+<td class="description">This event will trigger when the export dialog box opens, when you click on the export option in the context menu.</td>
+</tr>
+<tr>
+<td class="name">exportDialogClose</td>
+<td class="description">This event will trigger when the export dialog box closes.</td>
+</tr>
+<tr>
+<td class="name">maximizeDialogOpen</td>
+<td class="description">This event will trigger when the Maximize dialog box opens, when you click on the Maximize icon in the widget header.</td>
+</tr>
+<tr>
+<td class="name">maximizeDialogClose</td>
+<td class="description">This event will trigger when the Maximize dialog closes.</td>
+</tr>
+<tr>
+<td class="name">filterOverViewOpen</td>
+<td class="description">This event will trigger when the filter overview drop-down opens.</td>
+</tr>
+<tr>
+<td class="name">filterOverViewClose</td>
+<td class="description">This event will trigger when the filter overview drop-down closes.</td>
+</tr>
+<tr>
+<td class="name">clearFilter</td>
+<td class="description">This event will trigger when you clear the filters in each widget and also from the filter overview drop-down.</td>
+</tr>
+<tr>
+<td class="name">layoutRendered</td>
+<td class="description">This event will trigger after the layout rendering is completed.</td>
+</tr>
+<tr>
+<td class="name">dashboardRendered</td>
+<td class="description">This event will trigger after the dashboard rendering is completed.</td>
+</tr>
+<tr>
+<td class="name">viewDataDialogOpen</td>
+<td class="description">This event will trigger when the ViewData dialog box opens, when you click on the ViewData option in the context menu.</td>
+</tr>
+<tr>
+<td class="name">viewDataDialogClose</td>
+<td class="description">This event will trigger when the ViewData dialog box closes.</td>
+</tr>
+<tr>
+<td class="name">informationOpen</td>
+<td class="description">This event will trigger when the information pop-up opens, when you click on the info icon.</td>
+</tr>
+<tr>
+<td class="name">informationClose</td>
+<td class="description">This event will trigger when the information pop-up closes.</td>
+</tr>
+<tr>
+<td class="name">getLinkDialogOpen</td>
+<td class="description">This event will trigger when the Get Link dialog box opens when you click the Get Link icon option in the context menu present on dashboard header.</td>
+</tr>
+<tr>
+<td class="name">getLinkDialogClose</td>
+<td class="description">This event will trigger when the Get Link dialog box closes.</td>
+</tr>
+<tr>
+<td class="name">Exporting</td>
+<td class="description">This event will trigger when the dashboard exporting gets started.</td>
+</tr>
+<tr>
+<td class="name">exportCompleted</td>
+<td class="description">This event will trigger when the dashboard exporting gets completed.</td>
+</tr>
+<tr>
+<td class="name">clearAllFilter</td>
+<td class="description">This event will trigger when you clear all the filters from the filter overview drop-down.</td>
+</tr>
+<tr>
+<td class="name">clearIndividualFilter</td>
+<td class="description">This event will trigger when you clear all the filters in each widget and also from the filter overview drop-down.</td>
+</tr>
+<tr>
+<td class="name">interactionCompleted</td>
+<td class="description">This event will trigger once the master widget interactions completed.</td>
+</tr>
+</tbody>
+</table>
+
 ## actionComplete
    
 This event will be triggered on completion of the every viewer action which completes.
@@ -357,7 +466,7 @@ This event will be triggered on completion of the every viewer action which comp
 <tr>
 <td class="name">eventType</td>
 <td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">Enum</span></td>
-<td class="description">Will holds the current event type that triggered the event</td>
+<td class="description">Will hold the current [event type](/embedded-bi/javascript-based/api-reference/events/#event-types) that triggered the event</td>
 </tr>
 <tr>
 <td class="name">source</td>

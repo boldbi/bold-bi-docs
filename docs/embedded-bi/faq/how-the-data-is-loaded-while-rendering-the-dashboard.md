@@ -1,7 +1,8 @@
 ---
 layout: post
-title: Dashboard Data Loading Models | Bold BI Documentation
-description: Learn the different modes of data loading - Live and Extract, available with Bold BI while rendering the dashboard.
+title: Dashboard Data Loading Models - Embedded BI | Bold BI Docs
+description: Learn the different modes of data loading - Live and Extract, available with Bold BI Embedded while rendering the dashboard.
+canonical: "/cloud-bi/faq/how-the-data-is-loaded-while-rendering-the-dashboard/"
 platform: bold-bi
 documentation: ug
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Set or remove the default view for the dashboard.
-description: Learn how the default views are managed by administrator and set the dashboard views as default or remove the default views for the dashboard in the Bold BI.
+title: Handling Default Views – Cloud BI | Bold BI Documentation
+description: Learn how to handle default views at administrator level in Bold BI Cloud to let users choose a view as default view.
 platform: bold-bi
 documentation: ug
 ---

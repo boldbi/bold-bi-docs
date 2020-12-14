@@ -164,7 +164,7 @@ The following arguments will be passed by the Dashboard Service when triggering 
 
 ## How to pass the Custom Identity to the viewer Service
 
-1. The custom identity can be passed to the viewer only when the dashboard embedded using the [Dashboard Embedding feature](/embedded-bi/javascript-based/overview/).
+1. The custom identity can be passed to the viewer only when the dashboard embedded using the [Dashboard Embedding feature](/embedded-bi/javascript-based/).
 
 2. The custom identity should be passed through the API [dynamicConnection](/embedded-bi/javascript-based/api-reference/members/#dynamicconnection).
 

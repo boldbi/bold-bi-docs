@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Creating chart widget trendlines | Bold BI Cloud
-description: How to create the chart widgets trend lines and how to customize the chart trend lines using Bold BI Cloud.
+title: Add Trendline in Chart – Cloud BI | Bold BI Documentation
+description: Learn how to add trendlines in chart widget of Bold BI Cloud dashboard and edit related properties like, line type, style, and color.
 platform: bold-bi
 documentation: ug
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Files (JSON, XML, CSV) - Cloud BI Connector | Bold BI Docs
-description: Learn how to create data source by connecting to the Files (JSON, XML, CSV) data source with Bold BI Dashboard Designer
+title: Files Data Connector – Cloud BI | Bold BI Documentation
+description: Learn how to connect files such as, JSON, XML and CSV with Bold BI Cloud and create data source with their data.
 platform: bold-bi
 documentation: ug
 ---

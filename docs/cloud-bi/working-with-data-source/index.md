@@ -38,8 +38,6 @@ You can explore the data source in detail here,
 
 [User Filter](/cloud-bi/working-with-data-source/user-filter/)
 
-[Configure Isolation Code](/cloud-bi/working-with-data-source/configuring-isolation-code/)
-
 [Configure Custom Attribute](/cloud-bi/working-with-data-source/configuring-custom-attribute/)
 
 [Configure Dashboard Parameter](/cloud-bi/working-with-data-source/configuring-dashboard-parameters/)

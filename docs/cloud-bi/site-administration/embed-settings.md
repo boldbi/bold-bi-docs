@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Embed Settings – Cloud BI | Bold BI Documentation
+title: Embed Settings – Site Administration | Bold BI Cloud Docs
 description: Learn how to enable the embed authentication and generate the secret code using the embed settings in the Bold BI Cloud.
 platform: bold-bi
 documentation: ug

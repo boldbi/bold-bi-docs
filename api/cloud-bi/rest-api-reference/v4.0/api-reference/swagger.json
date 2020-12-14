@@ -351,7 +351,7 @@
         "responses": {
           "200": {
             "x-nullable": false,
-            "description": "Dashbord has been copied successfully",
+            "description": "Dashboard has been copied successfully",
             "schema": {
               "$ref": "#/definitions/ApiCopyItemResponse"
             }

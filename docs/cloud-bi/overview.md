@@ -2,6 +2,7 @@
 layout: post
 title: Exploring Cloud BI - An Overview | Bold BI Documentation 
 description: Cloud BI is an online SaaS solution for creating, managing and sharing interactive business dashboards.
+canonical: "/cloud-bi/"
 platform: bold-bi
 documentation: ug
 ---

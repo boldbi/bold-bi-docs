@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Chart widget trendlines | Bold BI Embedded Docs
-description: How to create the chart widgets trend lines and how to customize the chart trend lines using Bold BI Embedded.
+title: Add Trendline in Chart – Embedded BI | Bold BI Documentation
+description: Learn how to add trendlines in chart widget of Bold BI Embedded dashboard and edit related properties like, line type, style, and color.
 canonical: "/cloud-bi/visualizing-data/working-with-widgets/chart-trendlines/"
 platform: bold-bi
 documentation: ug

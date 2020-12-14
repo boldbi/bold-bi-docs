@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Number Card – Embedded BI | Bold BI Documentation
+title: Number Card Visual – Embedded BI | Bold BI Documentation
 description: Learn how to create a Number Card visual in Bold BI Embedded dashboard, configure data fields and other settings.
 canonical: "/cloud-bi/visualizing-data/visualization-widgets/number-card/"
 platform: bold-bi

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: ClubReady - Cloud BI Connector | Bold BI Documentation
-description: Learn how to create data source by connecting to the ClubReady data source with Bold BI Dashboard Designer
+title: ClubReady Data Connector – Cloud BI | Bold BI Documentation
+description: Learn how to connect ClubReady web service using API key and Chain Id with Bold BI Cloud and create data source.
 platform: bold-bi
 documentation: ug
 ---

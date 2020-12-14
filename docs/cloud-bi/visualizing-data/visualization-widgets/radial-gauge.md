@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Radial Gauge – Cloud BI | Bold BI Documentation
+title: Radial Gauge Visual – Cloud BI | Bold BI Documentation
 description: Learn how to create a Radial Gauge visual in Bold BI Cloud dashboard, configure data fields and other settings.
 platform: bold-bi
 control: Radial Gauge

@@ -1,7 +1,8 @@
 ---
 layout: post
-title: Applying Custom List Based Filter in Grid Visual | Bold BI
-description: Learn how to apply filter in Grid visual in Bold BI based on a custom list added as table in SQL Server and custom function used in expression column.
+title: Applying Custom List Based Filter in Grid | Bold BI Embedded
+description: Learn how to apply filter in Grid visual in Bold BI Embedded based on a custom list added as table in SQL Server and custom function used in expression column.
+canonical: "/cloud-bi/faq/how-to-apply-the-filter-for-any-column-value-based-on-the-multiple-words/"
 platform: bold-bi
 documentation: ug
 ---

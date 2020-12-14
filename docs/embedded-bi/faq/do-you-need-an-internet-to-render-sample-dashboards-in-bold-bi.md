@@ -1,7 +1,8 @@
 ---
 layout: post
-title: Running Sample Dashboards with Internet| Bold BI Docs
-description: Sample Dashboards shipped with Bold BI require internet connection to render its data as they are available online.
+title: Running Sample Dashboards with Internet | Bold BI Embedded Docs
+description: Sample Dashboards shipped with Bold BI Embedded require internet connection to render its data as they are available online.
+canonical: "/cloud-bi/faq/do-you-need-an-internet-to-render-sample-dashboards-in-bold-bi/"
 platform: bold-bi
 documentation: ug
 ---

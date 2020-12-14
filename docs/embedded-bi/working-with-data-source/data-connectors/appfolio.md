@@ -1,7 +1,7 @@
 ---
 layout: post
-title: AppFolio - Embedded BI Connector | Bold BI Docs
-description: Learn how to connect AppFolio through REST API endpoint with Bold BI Embedded and create data source for widget configuration.
+title: AppFolio – Embedded BI Connector | Bold BI Documentation
+description: Learn how to connect AppFolio web service through basic http authentication with Bold BI Embedded and create data source.
 canonical: "/cloud-bi/working-with-data-source/data-connectors/appfolio/"
 platform: bold-bi
 documentation: ug

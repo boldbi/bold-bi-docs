@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Save the filters  – Cloud BI | Bold BI Documentation
-description: This section explains how to save the filters applied to the dashboard automatically in the Bold BI.
+title: Auto-Saving Filters in Dashboard – Cloud BI | Bold BI Docs
+description: Learn how to enable/disable auto-saving the filters applied at runtime in a dashboard in Bold BI Cloud.
 platform: bold-bi
 documentation: ug
 ---

@@ -20,7 +20,7 @@ This section covers the mandatory requirements to develop the custom widget.
 <thead>
 <tr>
 <td><b>Development Environment</b></td>
-<td><b> Bold BI Enterprise Edition and any web browser as mentioned in the [link](/embedded-bi/setup/overview/#software-requirements)</b> <br/> </td>
+<td><b> Bold BI Enterprise Edition and any web browser as mentioned in the <a href="/embedded-bi/setup/overview/#software-requirements">link</a></b> <br/> </td>
             
 </tr>
 <tr>

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Measure Formatting – Cloud BI | Bold BI Learning
+title: Measure Formatting – Cloud BI | Bold BI Documentation
 description: Learn how to apply formatting such as decimal places, number type, etc. to the numeric column in Bold BI Cloud dashboard.
 platform: bold-bi
 documentation: ug

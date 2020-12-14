@@ -1,6 +1,6 @@
 ---
 layout: post
-title: An Overview of Cloud BI | Bold BI Documentation 
+title: Exploring Cloud BI - An Overview | Bold BI Learning  
 description: Know about the Cloud BI online SaaS solution and it is used for creating, managing and sharing interactive business dashboards.
 platform: bold-bi
 documentation: ug

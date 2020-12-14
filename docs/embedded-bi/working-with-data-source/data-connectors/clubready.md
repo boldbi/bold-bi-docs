@@ -1,7 +1,7 @@
 ---
 layout: post
-title: ClubReady - Embedded BI Connector | Bold BI Documentation
-description: Learn how to create data source by connecting to the ClubReady data source with Bold BI Embedded designer.
+title: ClubReady Data Connector – Embedded BI | Bold BI Documentation
+description: Learn how to connect ClubReady web service using API key and Chain Id with Bold BI Embedded and create data source.
 canonical: "/cloud-bi/working-with-data-source/data-connectors/clubready/"
 platform: bold-bi
 documentation: ug

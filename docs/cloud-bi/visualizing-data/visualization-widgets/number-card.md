@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Number Card – Cloud BI | Bold BI Documentation
+title: Number Card Visual– Cloud BI | Bold BI Documentation
 description: Learn how to create a Number Card visual in Bold BI Cloud dashboard, configure data fields and other settings.
 platform: bold-bi
 control: Number Card

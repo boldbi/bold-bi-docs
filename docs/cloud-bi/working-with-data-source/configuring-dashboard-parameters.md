@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Configuring Dashboard Parameters – Cloud BI | Bold BI
-description: Learn when and how to create dashboard parameters and use them in custom query editor, stored procedures and expression fields in Bold BI Cloud.
+title: Dashboard Parameters Overview – Cloud BI | Bold BI Docs
+description: Learn about the dashboard parameters feature in Bold BI Cloud and its usage scenarios in custom expressions, stored procedures, custom query, and URL endpoint.
 platform: bold-bi
 documentation: ug
 keywords: Dashboard parameter, dashboard, parameter, Parameters, Dynamic, configure dashboard parameter, query parameter

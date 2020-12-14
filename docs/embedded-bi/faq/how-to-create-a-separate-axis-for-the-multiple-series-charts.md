@@ -1,7 +1,8 @@
 ---
 layout: post
-title: Add a secondary axis in Column chart | Bold BI Docs
-description: Learn how to add a secondary axis in column chart to showcase multiple series in separate axes using Bold BI.
+title: Add a secondary axis in Column chart - Embedded BI | Bold BI Docs
+description: Learn how to add a secondary axis in column chart to showcase multiple series in separate axes using Bold BI Embedded.
+canonical: "/cloud-bi/faq/how-to-create-a-separate-axis-for-the-multiple-series-charts/"
 platform: bold-bi
 documentation: ug
 ---

@@ -23,9 +23,9 @@ The User Filter can be configured in a data source using the **Configure User Fi
 
 To take advantage of the User Filters it is important that you are familiar with the main concepts, Users, Groups, Filters.
 
-**Users** - The users who will be viewing the dashboard and data sources. In Bold BI the users are identified using the email of the user. [Know More](/embedded-bi/managing-resources/manage-users/add-users/)
+**Users** - The users who will be viewing the dashboard and data sources. In Bold BI the users are identified using the email of the user. [Know More](/embedded-bi/managing-resources/manage-users/)
 
-**Groups** -  The users who require same set of permissions can be put together into a group entity. The permissions defined for the group will be inherited by all the users present in the group. [Know More](/embedded-bi/managing-resources/manage-groups/manage-groups)
+**Groups** -  The users who require same set of permissions can be put together into a group entity. The permissions defined for the group will be inherited by all the users present in the group. [Know More](/embedded-bi/managing-resources/manage-groups/)
 
 **Filters** - Filters are the actual restriction that will be applied to the data. In User Filter the filter will be applied using the AND logical operator if more than one filter column is configured (for manual, data source and query modes).
 
@@ -44,11 +44,11 @@ User Filter can be configured in any of the three modes that are available.
 This mode will suit most of the use cases where the applied filter will not be changing dynamically and the data is close to or purely static or the user data is present as a column within the data used for the dashboard (like email / full name). Lets consider our [Hotel Revenue Management Dashboard](https://www.boldbi.com/solutions/hospitality/hotel-revenue-management-dashboard) example here, in this case the data here is mostly static as the hotels are spanning across all the continents and the staff handling the hotel in each continent are restricted to their geography. For this dashboard the Manual mode will be suiting the most. Refer here to know more on [Manual Mode](/embedded-bi/working-with-data-source/user-filter/user-filter-manual/) 
 
 #### Data Source
-This mode is well suited for the cases where the applied filters are more dynamic and the data used in the dashboard does not have any user information in any of its columns. Refer here to know more on [Data Source Mode](/embedded-bi/working-with-data-source/user-filter/user-filter-advanced/) 
+This mode is well suited for the cases where the applied filters are more dynamic and the data used in the dashboard does not have any user information in any of its columns. Refer here to know more on [Data Source Mode](/embedded-bi/working-with-data-source/user-filter/user-filter-advanced-data-source-mode/) 
 
 #### Query
 
-This mode is very similar to the Data Source mode, but this provides a much more advanced or super user control over the data used for the filtering. The user is given the power to write his own custom SQL query to fetch the data so the is provided with the liberty to apply filters or generate a dynamic column. Refer here to know more on [Query Mode](/embedded-bi/working-with-data-source/user-filter/user-filter-advanced/#query-mode) 
+This mode is very similar to the Data Source mode, but this provides a much more advanced or super user control over the data used for the filtering. The user is given the power to write his own custom SQL query to fetch the data so the is provided with the liberty to apply filters or generate a dynamic column. Refer here to know more on [Query Mode](/embedded-bi/working-with-data-source/user-filter/user-filter-advanced-query-mode/) 
 
 > **IMPORTANT:**  Only one mode can be used for a data source. Switching to other mode will reset the already configured settings.
 
