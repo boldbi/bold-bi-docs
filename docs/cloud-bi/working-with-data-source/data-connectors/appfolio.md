@@ -1,7 +1,7 @@
 ---
 layout: post
-title: AppFolio - Cloud BI Connector | Bold BI Documentation
-description: Learn how to connect AppFolio through REST API endpoint with Bold BI Cloud and create data source for widget configuration.
+title: AppFolio – Cloud BI Connector | Bold BI Documentation
+description: Learn how to connect AppFolio web service through basic http authentication with Bold BI Cloud and create data source.
 platform: bold-bi
 documentation: ug
 ---

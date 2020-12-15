@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Chart Axis Grid Lines - Cloud BI | Bold BI Docs
-description: How to create the chart widgets axis grid lines and how to customize the chart axis grid lines using Bold BI Cloud.
+title: Display Gridlines in Chart – Cloud BI | Bold BI Documentation
+description: Learn how to display or hide grid lines of primary/secondary value axis and category axis in chart widget of Bold BI Cloud dashboard.
 platform: bold-bi
 documentation: ug
 ---

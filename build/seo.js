@@ -43,7 +43,7 @@ function validateDescLength(filePath) {
             if (metaJson['title'] === undefined || metaJson['description'] === undefined) {
                 noMetaData = noMetaData + filePath + '\n';
             }
-            if (metaJson['title'] && metaJson['title'].length <= 45 || metaJson['title'].length > 60) {
+            if (metaJson['title'] && metaJson['title'].length < 50 || metaJson['title'].length > 65) {
                 checkedFiles.titles = checkedFiles.titles + filePath + '\n';
             }
             if (metaJson['description'] && (metaJson['description'].length < 100 || metaJson['description'] > 160)) {
@@ -158,7 +158,7 @@ function printError(done) {
     let isValid = true;
     if (checkedFiles.titles.length) {
         isValid = false;
-        console.log('\n******* THE BELOW FILES HAVE INVALID META TITLE LENGTH (EXPECTED : 45 - 60 CHARACTERTS) *******\n');
+        console.log('\n******* THE BELOW FILES HAVE INVALID META TITLE LENGTH (EXPECTED : 50 - 65 CHARACTERTS) *******\n');
         console.log(checkedFiles.titles);
     }
 

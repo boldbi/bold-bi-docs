@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Dashboard parameters - Embedded BI| Bold BI Docs
+title:  Dashboard parameters - Embedded BI| Bold BI Documentation
 description: This section describes different use cases of dashboard parameters in dashboards using the Bold BI Embedded.
 canonical: "/cloud-bi/working-with-data-source/dashboard-parameter/"
 platform: bold-bi

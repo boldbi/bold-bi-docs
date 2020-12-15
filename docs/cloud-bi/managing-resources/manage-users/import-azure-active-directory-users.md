@@ -1,5 +1,5 @@
 ---
-title: User Import from Azure Active Directory – Cloud BI | Bold BI
+title: User Import from Azure Active Directory – Cloud BI | Bold BI Docs
 description: Learn how to import users from Azure Active Directory in Bold BI Cloud. Also know how to modify existing Azure Active Directory connection.
 platform: bold-bi
 documentation: ug

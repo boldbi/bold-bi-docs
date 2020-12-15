@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Gmail - Cloud BI Connector | Bold BI Documentation
-description: Learn how to create data source by connecting to the Gmail Datasource with Bold BI Dashboard Designer.
+title: Gmail Data Connector – Cloud BI | Bold BI Documentation
+description: Learn how to connect your Gmail account data with Bold BI Cloud dashboard editor and create data source. 
 platform: bold-bi
 documentation: ug
 ---

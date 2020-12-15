@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Exploring Embedded BI - An Overview | Bold BI Documentation
+title:  Exploring Embedded BI - An Overview | Bold BI Learning
 description: Embedded BI is an on-premise solution for creating, managing and sharing interactive business dashboards.
 platform: bold-bi
 documentation: ug

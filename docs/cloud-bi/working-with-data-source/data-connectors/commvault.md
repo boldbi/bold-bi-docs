@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Commvault - Cloud BI Connector | Bold BI Documentation
-description: Learn how to create data source by connecting to the Commvault data source with Bold BI Dashboard Designer
+title: Commvault Data Connector – Cloud BI | Bold BI Documentation
+description: Learn how to connect Commvault web service through basic http authentication with Bold BI Cloud and create data source.
 platform: bold-bi
 documentation: ug
 ---

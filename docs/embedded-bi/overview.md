@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  An Overview of Embedded BI | Bold BI Documentation
+title:  Exploring Embedded BI - An Overview | Bold BI Documentation
 description: Study the overview of Embedded BI and know about its two ways of embedding - JavaScript-based embedding and iFrame-based embedding.
+canonical: "/embedded-bi/"
 platform: bold-bi
 documentation: ug
 ---

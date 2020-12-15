@@ -1,7 +1,8 @@
 ---
 layout: post
-title: Registering Bold BI with Azure AD | Bold BI Documentation
-description: Learn how to register Bold BI application with Azure Active Directory for authenticating Bold BI Server through browser.
+title: Registering Bold BI with Azure AD - Embedded BI | Bold BI Docs
+description: Learn how to register Bold BI application with Azure Active Directory for authenticating Bold BI Embedded Server through browser.
+canonical: "/cloud-bi/faq/how-to-register-bold-bi-mobile-application-with-azure-active-directory/"
 platform: bold-bi
 documentation: ug
 ---

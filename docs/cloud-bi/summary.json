@@ -156,7 +156,6 @@
       "Dashboard Parameters": "dashboard-parameter",
       "Configure Dashboard Parameter": "configuring-dashboard-parameters",
       "Configure Custom Attribute": "configuring-custom-attribute",
-      "How JIRA data is Consumed and Stored": "how-jira-data-consumed-and-stored",
       "White List IP addresses of the Bold BI Cloud servers": "white-list-ip-address-bold-bi-cloud",
       "White List IP addresses of the Syncfusion Cloud servers": "white-list-ip-address-syncfusion-cloud"
     },
@@ -332,6 +331,16 @@
     "Responsive Visualizations": {
       "Responsive Design in Bold BI Dashboard": "responsive-design-bold-bi-dashboard",
       "Responsive Design in Bold BI Server": "responsive-design-bold-bi-server"
+    },
+    "FAQ": {
+      "How to register Bold BI web application with Azure Active Directory?": "how-to-register-bold-bi-web-application-with-azure-active-directory",
+      "How to register Bold BI mobile application with Azure Active Directory?": "how-to-register-bold-bi-mobile-application-with-azure-active-directory",
+      "How to apply filter in Grid widget based on your list of keywords?": "how-to-apply-the-filter-for-any-column-value-based-on-the-multiple-words",
+      "How to connect a live file(CSV/JSON/XML/Excel/) in Bold BI Dashboard?": "how-to-connect-a-live-xml-or-json-or-csv-or-excel-file-in-bold-bi-dashboard",
+      "How the data is loaded while rendering the dashboard?": "how-the-data-is-loaded-while-rendering-the-dashboard",
+      "Do you need an internet connection to render sample dashboards in Bold BI?": "do-you-need-an-internet-to-render-sample-dashboards-in-bold-bi",
+      "How to create a separate axis for the multiple series charts?": "how-to-create-a-separate-axis-for-the-multiple-series-charts",
+      "How web-based data source like Jira works with Bold BI?": "how-web-based-data-source-works-with-bold-bi"
     }
   }
 }

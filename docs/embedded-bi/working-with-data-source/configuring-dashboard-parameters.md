@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Configuring Dashboard Parameters – Embedded BI | Bold BI
-description: Learn when and how to create dashboard parameters and use them in custom query editor, stored procedures and expression fields in Bold BI Embedded.
+title: Dashboard Parameters Overview – Embedded BI | Bold BI Docs
+description: Learn about the dashboard parameters feature in Bold BI Embedded and its usage scenarios in custom expressions, stored procedures, custom query, and more.
 canonical: "/cloud-bi/working-with-data-source/configuring-dashboard-parameters/"
 platform: bold-bi
 documentation: ug

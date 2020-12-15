@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Gmail - Embedded BI Connector | Bold BI Documentation
-description: Learn how to create data source by connecting to the Gmail Datasource with Bold BI Embedded designer.
+title: Gmail Data Connector – Embedded BI | Bold BI Documentation
+description: Learn how to connect your Gmail account data with Bold BI Embedded dashboard editor and create data source.
 canonical: "/cloud-bi/working-with-data-source/data-connectors/gmail/"
 platform: bold-bi
 documentation: ug

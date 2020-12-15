@@ -1,6 +1,6 @@
 ---
 layout: post
-title: API Reference – Embed SDK | Bold BI Documentation
+title: API Reference – JavaScript Embedding | Bold BI Documentation
 description: Know about the JavaScript APIs in Embed SDK to pass server URL, dashboard path, authorization server details for embedding dashboard inside your application.
 platform: bold-bi
 documentation: UG

@@ -226,9 +226,9 @@ To pass filters to the `embed_datasource_filter` parameter in the authorization 
 ```
 
 
-* The `Dashboard Parameter` filter must be started with a double ampersand `&&` in the endpoint. Refer to this [link](/embedded-bi/working-with-dashboards/configuring-dashboard-parameters/) for more details.    
+* The `Dashboard Parameter` filter must be started with a double ampersand `&&` in the endpoint. Refer to this [link](/embedded-bi/working-with-data-source/configuring-dashboard-parameters/) for more details.    
 
-* The `URL Parameter` filter must be started with a single ampersand `&` in the endpoint. Refer to this [link](/embedded-bi/visualize-data/urlparameters/) for more details.     
+* The `URL Parameter` filter must be started with a single ampersand `&` in the endpoint. Refer to this [link](/embedded-bi/working-with-dashboards/preview-dashboard/urlparameters/) for more details.     
 
 Refer to the following table for the value of the filter properties based on your filter. 
 

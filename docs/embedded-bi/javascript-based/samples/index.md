@@ -12,6 +12,6 @@ This section explains the available Embed SDK Samples in the release version of 
 
 You can explore the available samples in detail here,
 
-[v3.2.16](/embedded-bi/javascript-based/samples/3.2.16/)
+[v3.2.16](/embedded-bi/javascript-based/samples/v3.2.16/)
 
-[v3.3.40 or later](/embedded-bi/javascript-based/samples/3.3.40-or-later/)
+[v3.3.40 or later](/embedded-bi/javascript-based/samples/v3.3.40-or-later/)

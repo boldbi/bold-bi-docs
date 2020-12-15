@@ -213,8 +213,7 @@
       "Dashboard Parameters": "dashboard-parameter",
       "Configure Dashboard Parameter": "configuring-dashboard-parameters",
       "Configure Custom Attribute": "configuring-custom-attribute",
-      "Configure Isolation code": "configuring-isolation-code",
-      "How JIRA data is Consumed and Stored": "how-jira-data-consumed-and-stored"
+      "Configure Isolation code": "configuring-isolation-code"
     },
     "Visualizing Data": {
       "Visualization Widgets": {
@@ -423,6 +422,7 @@
       "Responsive Design in Bold BI Server": "responsive-design-bold-bi-server"
     },
     "FAQ": {
+      "What are the resources will be generated in the installed machine?": "what-all-are-the-files-and-folders-will-be-generated-in-the-installed-machine",
       "How to change the binding in the Bold BI Embedded?": "how-to-change-binding-in-bold-bi-embedded",
       "Where can I find the error and debug log files?": "where-can-i-find-the-error-and-debug-log-files",
       "How to configure Bold BI Enterprise in Reverse Proxy server?": "how-to-configure-bold-bi-in-reverse-proxy-server",
@@ -449,7 +449,8 @@
       "How to create a separate axis for the multiple series charts?": "how-to-create-a-separate-axis-for-the-multiple-series-charts",
       "How many server deployments supported in a single Bold BI license?": "how-many-server-deployments-supported-in-a-single-bold-bi-license",
       "How to get the dashboard list based on group for the specific user?": "how-to-get-the-dashboard-list-based-on-group-for-the-specific-user",
-      "What is the purpose of the databases used in the Bold BI?": "purpose-of-the-databases-used-in-the-bold-bi.md"
+      "What is the purpose of the databases used in the Bold BI?": "purpose-of-the-databases-used-in-the-bold-bi.md",
+      "How web-based data source works with Bold BI?": "how-web-based-data-source-works-with-bold-bi-embedded.md"
     }
   }
 }

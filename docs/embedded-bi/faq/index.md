@@ -2,6 +2,7 @@
 layout: post
 title: Frequently Asked Questions – Embedded BI | Bold BI Docs
 description: Find the FAQs in Embedded version of Bold BI and answers for each of them with detailed explanation and screenshots.
+canonical: "/cloud-bi/faq/"
 platform: bold-bi
 documentation: ug
 ---
@@ -9,6 +10,8 @@ documentation: ug
 # Frequently Asked Questions
 
 The following are the frequently asked questions in Bold BI Enterprise :
+
+[What are the resources will be generated in the installed machine?](/embedded-bi/faq/what-all-are-the-files-and-folders-will-be-generated-in-the-installed-machine/)
 
 [How to change the binding in Bold BI Embedded?](/embedded-bi/faq/how-to-change-binding-in-bold-bi-embedded/)
 
@@ -56,10 +59,12 @@ The following are the frequently asked questions in Bold BI Enterprise :
 
 [How to change DNS for each site in Bold BI Embedded?](/embedded-bi/faq/how-to-change-dns-for-each-tenant-site/)
 
-[How to create a separate axis for the multiple series charts?](/bold-bi/on-premise/faq/how-to-create-a-separate-axis-for-the-multiple-series-charts/)
+[How to create a separate axis for the multiple series charts?](/embedded-bi/faq/how-to-create-a-separate-axis-for-the-multiple-series-charts/)
 
-[How many server deployments supported in a single Bold BI license?](/bold-bi/on-premise/faq/how-many-server-deployments-supported-in-a-single-bold-bi-license/)
+[How many server deployments supported in a single Bold BI license?](/embedded-bi/faq/how-many-server-deployments-supported-in-a-single-bold-bi-license/)
 
-[How to get the dashboard list based on group for the specific user?](/bold-bi/on-premise/faq/how-to-get-the-dashboard-list-based-on-group-for-the-specific-user/)
+[How to get the dashboard list based on group for the specific user?](/embedded-bi/faq/how-to-get-the-dashboard-list-based-on-group-for-the-specific-user/)
 
 [What is the purpose of the databases used in the Bold BI?](/embedded-bi/faq/purpose-of-the-databases-used-in-the-bold-bi/)
+
+[How web-based data source like Jira works with Bold BI?](/embedded-bi/faq/how-web-based-data-source-works-with-bold-bi-embedded/)

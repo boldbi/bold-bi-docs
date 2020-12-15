@@ -1,5 +1,5 @@
 ---
-title: User Import from Azure AD – Embedded BI | Bold BI
+title: User Import from Azure AD – Embedded BI | Bold BI Documentation
 description: Learn how to import users from Azure Active Directory in Bold BI Embedded. Also know how to modify existing Azure Active Directory connection.
 canonical: "/cloud-bi/managing-resources/manage-users/import-azure-active-directory-users/"
 platform: bold-bi

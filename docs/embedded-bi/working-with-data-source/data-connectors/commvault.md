@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Commvault - Embedded BI Connector | Bold BI Documentation
-description: Learn how to create data source by connecting to the Commvault data source with Bold BI Embedded designer.
+title: Commvault Data Connector – Embedded BI | Bold BI Documentation
+description: Learn how to connect Commvault web service through basic http authentication with Bold BI Embedded and create data source.
 canonical: "/cloud-bi/working-with-data-source/data-connectors/commvault/"
 platform: bold-bi
 documentation: ug

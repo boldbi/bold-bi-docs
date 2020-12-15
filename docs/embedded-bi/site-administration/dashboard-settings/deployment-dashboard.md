@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Manage deployment dashboards in the Bold BI Server.
-description: Learn how to add and remove the dashboards, which is needed to deploy in each site on the Bold BI Server.  
+title: Deploying Dashboards to Production – Embedded BI | Bold BI Docs
+description: Learn how to deploy dashboards from one site to another site with Bold BI Embedded. With this you can deploy any dashboard from testing site to production site.
 platform: bold-bi
 documentation: ug
 ---

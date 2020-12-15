@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Zendesk Support- Embedded BI Connector | Bold BI Docs
-description: Learn how to create a data source by connecting to the Zendesk Support data source with the Bold BI Embedded.
+title: Zendesk Support - Embedded BI Connector | Bold BI Documentation
+description: Learn how to connect Zendesk Support web service through basic http authentication with Bold BI Embedded and create data source.
 canonical: "/cloud-bi/working-with-data-source/data-connectors/zendesk-support/"
 platform: bold-bi
 documentation: ug

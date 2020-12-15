@@ -1,7 +1,8 @@
 ---
 layout: post
-title: Connecting Files Online with Bold BI | Bold BI Documentation
-description: Learn how to connect files such as CSV, JSON, XML and Excel available online with Bold BI dashboard.
+title: Connecting Files Online with Bold BI Embedded | Bold BI Docs
+description: Learn how to connect files such as CSV, JSON, XML and Excel available online with Bold BI Embedded dashboard.
+canonical: "/cloud-bi/faq/how-to-connect-a-live-xml-or-json-or-csv-or-excel-file-in-bold-bi-dashboard/"
 platform: bold-bi
 documentation: ug
 ---

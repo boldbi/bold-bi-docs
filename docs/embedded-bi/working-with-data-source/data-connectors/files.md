@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Files (JSON, XML, CSV) - Embedded BI | Bold BI Docs
-description: Learn how to create data source by connecting to the Files (JSON, XML, CSV) data source with Bold BI Embedded.
+title: Files Data Connector – Embedded BI | Bold BI Documentation
+description: Learn how to connect files such as, JSON, XML and CSV with Bold BI Embedded and create data source with their data.
 canonical: "/cloud-bi/working-with-data-source/data-connectors/files/"
 platform: bold-bi
 documentation: ug
