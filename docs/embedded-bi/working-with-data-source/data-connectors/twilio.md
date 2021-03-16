@@ -31,13 +31,13 @@ Once you click the data source, the NEW DATA SOURCE configuration panel opens.
 1. Enter a name and description (optional) for the data source.
 2. Enter a valid Twilio REST API endpoint in the URL textbox. Refer the [Twilio API documentation](https://www.twilio.com/docs/api) for more details.
 
-    Example: [https://api.twilio.com/2010-04-01/Accounts/&lt;:your_account_sid&gt;/Calls.json](https://api.twilio.com/2010-04-01/Accounts/%3c:your_account_sid%3e/Calls.json)
+    Example: `https://api.twilio.com/2010-04-01/Accounts/<:youraccountsid>/Calls.json`
 
 3. Select **GET** method for the REST API in **Method** combo box.
 4. In **Max Rows**, enter the maximum number of rows to be fetched from the Twilio data source. This value is used to fetch the data from Twilio data source via pagination.
 5. Choose a time interval for **Refresh Settings** using the combo box, to trigger the Rest API request periodically to keep the data in sync with our dashboard.  
 6. Select **JSON** data type in **Data Format** combo box.
-7. Choose **Basic http Authentication** under **Authentication Type** and input a valid **Username** and **Password**. Find the details for providing *Username* and *Password* from [here](/embedded-bi/working-with-data-source/twilio/#how-do-i-get-credentials-for-connecting-twilio-data-source)
+7. Choose **Basic http Authentication** under **Authentication Type** and input a valid **Username** and **Password**. Find the details for providing *Username* and *Password* from [here](/embedded-bi/working-with-data-source/data-connectors/twilio/#how-do-i-get-credentials-for-connecting-twilio-data-source).
 
 You can also edit the connection information set here using the [Edit Connection](/embedded-bi/working-with-data-source/editing-a-data-connection/) option.
 
@@ -76,24 +76,24 @@ Period of time before next refresh call is triggered. This will automatically tr
 
 Replace it in the URL to query a particular payment:
 
-[https://api.twilio.com/2010-04-01/Accounts/&lt;:your_account_sid&gt;/Calls/&lt;:specific_call_id&gt;.json](https://api.twilio.com/2010-04-01/Accounts/%3c:your_account_sid%3e/Calls/%3c:specific_call_id%3e.json)
+`https://api.twilio.com/2010-04-01/Accounts/<:youraccountsid>/Calls/<:specificcallid>.json`
 
 ### Sample queries
 **Fetch Call Details**
 
-[https://api.twilio.com/2010-04-01/Accounts/ACygdygeu62gdhbs/Calls.json](https://api.twilio.com/2010-04-01/Accounts/ACygdygeu62gdhbs/Calls.json)
+`https://api.twilio.com/2010-04-01/Accounts/ACygdygeu62gdhbs/Calls.json`
 
 **Fetch Message Details**
 
-[https://api.twilio.com/2010-04-01/Accounts/ACygdygeu62gdhbs/Messages.json](https://api.twilio.com/2010-04-01/Accounts/ACygdygeu62gdhbs/Messages.json)
+`https://api.twilio.com/2010-04-01/Accounts/ACygdygeu62gdhbs/Messages.json`
 
 **Feedback about specific call**
 
-[https://api.twilio.com/2010-04-01/Accounts/ACygdygeu62gdhbs/Calls/CAdjns42hHVBSJwnIsb/Feedback.json](https://api.twilio.com/2010-04-01/Accounts/ACygdygeu62gdhbs/Calls/CAdjns42hHVBSJwnIsb/Feedback.json)
+`https://api.twilio.com/2010-04-01/Accounts/ACygdygeu62gdhbs/Calls/CAdjns42hHVBSJwnIsb/Feedback.json`
 
 **Media Resource - Fetch media such as image of specific message**
 
-[https://api.twilio.com/2010-04-01/Accounts/ACygdygeu62gdhbs/Messages/MMjhdioneo62jdibJGSUS/Media/MEjhsdjjkds652haHHSIn.json](https://api.twilio.com/2010-04-01/Accounts/ACygdygeu62gdhbs/Messages/MMjhdioneo62jdibJGSUS/Media/MEjhsdjjkds652haHHSIn.json)
+`https://api.twilio.com/2010-04-01/Accounts/ACygdygeu62gdhbs/Messages/MMjhdioneo62jdibJGSUS/Media/MEjhsdjjkds652haHHSIn.json`
 
 ### Preview and data import
 * Click **Preview & Connect** to connect with the configurations set.
@@ -113,7 +113,7 @@ Replace it in the URL to query a particular payment:
 
 [Editing a Data Connection](/embedded-bi/working-with-data-source/editing-a-data-connection/)   
 
-[Dashboard Designer Walkthrough](/embedded-bi/getting-started/bold-bi-walk-through/)
+[Dashboard Designer Walkthrough](/embedded-bi/getting-started/quick-start/)
 
 [Twilio Rate Limits and Message Queues](https://support.twilio.com/hc/en-us/articles/115002943027-Understanding-Twilio-Rate-Limits-and-Message-Queues)
 

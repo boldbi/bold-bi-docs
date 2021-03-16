@@ -111,7 +111,7 @@ Replace it in the URL to query a particular payment:
 
 [Editing a Data Connection](/embedded-bi/working-with-data-source/editing-a-data-connection/)   
 
-[Dashboard Designer Walkthrough](/embedded-bi/getting-started/bold-bi-walk-through/)
+[Dashboard Designer Walkthrough](/embedded-bi/getting-started/quick-start/)
 
 [Chargify API Access Limitations](https://reference.chargify.com/v1/basics/api-access-limitations)
 

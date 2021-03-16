@@ -80,7 +80,7 @@ In 42matters, making requests more than the allowed requests will get an error r
 
 The **&lt;:package_name&gt;** is a publicly available Android app package name. Get the package details from [app market](https://42matters.com/app-market-explorer/android/?view=filter).
 
-Replace it in the below URL, `p=&lt;:package_name&gt; and access_token=&lt;:access_token&gt;`
+Replace it in the below URL, `p=<:package_name> and access_token=<:access_token>`
 
 `https://data.42matters.com/api/v2.0/android/apps/lookup.json?p=<:package_name>&access_token=<:access_token>`
 
@@ -115,6 +115,6 @@ Replace it in the below URL, `p=&lt;:package_name&gt; and access_token=&lt;:acce
 
 [Editing a Data Connection](/embedded-bi/working-with-data-source/editing-a-data-connection/)   
 
-[Dashboard Designer Walkthrough](/embedded-bi/getting-started/bold-bi-walk-through/)
+[Dashboard Designer Walkthrough](/embedded-bi/getting-started/quick-start/)
 
 [42matters Integration](https://www.boldbi.com/integrations/42matters?utm_source=syncfusion&utm_medium=documentation&utm_campaign=boldbi42mattersintegration)

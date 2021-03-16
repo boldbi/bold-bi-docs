@@ -59,4 +59,6 @@ The schema represents the collection list retrieved from the Azure SQL Data Ware
 
 [Editing a Data Connection](/embedded-bi/working-with-data-source/editing-a-data-connection/)   
 
-[Dashboard Designer Walkthrough](/embedded-bi/getting-started/bold-bi-walk-through/)
+[Dashboard Designer Walkthrough](/embedded-bi/getting-started/quick-start/)
+
+[Azure SQL Data Warehouse Integration](https://www.boldbi.com/integrations/azure-sql-data-warehouse)

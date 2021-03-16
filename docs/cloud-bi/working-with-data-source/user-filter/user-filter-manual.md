@@ -9,7 +9,7 @@ documentation: ug
 # Configure User Filter Manual Mode
 Lets consider the [Hotel Revenue Management Dashboard](https://www.boldbi.com/solutions/hospitality/hotel-revenue-management-dashboard) sample here. In this dashboard we will be configuring the user filter so that the staff's and managers will be able to view the data configured for the specific continent.
 
-For this we will starting off by opening the User Filter Dialog by following the steps mentioned in [here](cloud-bi/working-with-data-source/user-filter/user-filter-overview/#configuring-user-filter)
+For this we will starting off by opening the User Filter Dialog by following the steps mentioned in [here](/cloud-bi/working-with-data-source/user-filter/#configuring-user-filter).
 
 In the manual mode UI we will first select the column that will be used as the filter, in this case we will be choosing the **Region** column. A name can also be set for the filter for better understanding by the user when multiple filters are created for the same dashboard.
 

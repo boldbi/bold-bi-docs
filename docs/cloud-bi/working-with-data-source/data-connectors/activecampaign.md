@@ -40,7 +40,7 @@ Once you click the data source, the NEW DATA SOURCE configuration panel opens.
 4. In **Max Rows**, enter the maximum number of rows to be fetched from the ActiveCampaign data source. This value is used to fetch the data from ActiveCampaign data source via pagination.
 5. Choose a time interval for **Refresh Settings** using the combo box, to trigger the Rest API request periodically to keep the data in sync with our dashboard.  
 6. Select **JSON** data type in **Data Format** combo box.
-7. Replace `&lt;:your_app_token&gt;` under Headers with a valid API key.
+7. Replace `<:your_app_token>` under Headers with a valid API key.
 8. Choose **None** under **Authentication** Type, as authentication is done through header.
 
 You can also edit the connection information set here using the [Edit Connection](/cloud-bi/working-with-data-source/editing-a-data-connection/) option.
@@ -117,10 +117,10 @@ ActiveCampaign API has a rate limit of 5 requests per second per account. Contac
 
 [Editing a Data Connection](/cloud-bi/working-with-data-source/editing-a-data-connection/)   
 
-[Dashboard Designer Walkthrough](/cloud-bi/getting-started/bold-bi-walk-through/)
+[Dashboard Designer Walkthrough](/cloud-bi/getting-started/quick-start/)
 
 [ActiveCampaign Getting Started](https://help.activecampaign.com/hc/en-us/articles/207317590-Getting-started-with-the-API)
 
 [ActiveCampaign Rate Limits](https://developers.activecampaign.com/reference#rate-limits)
 
-[ActiveCampaign Integration](https://www.boldbi.com/integrations/activecampaign?utm_source=syncfusion&utm_medium=documentation&utm_campaign=boldbiactivecampaignintegration)
+[ActiveCampaign Integration](https://www.boldbi.com/integrations/activecampaign)

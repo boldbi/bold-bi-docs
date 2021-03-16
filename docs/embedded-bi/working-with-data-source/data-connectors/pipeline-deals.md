@@ -90,7 +90,7 @@ Replace it in the URL to query a particular payment:
 
 [Editing a Data Connection](/embedded-bi/working-with-data-source/editing-a-data-connection/)   
 
-[Dashboard Designer Walkthrough](/embedded-bi/getting-started/bold-bi-walk-through/)
+[Dashboard Designer Walkthrough](/embedded-bi/getting-started/quick-start/)
 
 [PipelineDeals API Rate Limits](https://app.pipelinedeals.com/api/docs/request_response)
 

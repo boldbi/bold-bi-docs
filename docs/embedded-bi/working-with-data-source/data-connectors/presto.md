@@ -62,6 +62,6 @@ The schema represents the collection list that are retrieved from the Presto ser
 
 [Editing a Data Connection](/embedded-bi/working-with-data-source/editing-a-data-connection/)   
 
-[Dashboard Designer Walkthrough](/embedded-bi/getting-started/bold-bi-walk-through/)
+[Dashboard Designer Walkthrough](/embedded-bi/getting-started/quick-start/)
 
 [Presto Integration](https://www.boldbi.com/integrations/presto?utm_source=syncfusion&utm_medium=documentation&utm_campaign=boldbiprestointegration)

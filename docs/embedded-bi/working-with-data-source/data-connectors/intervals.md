@@ -100,7 +100,7 @@ Intervals API requests are limited to 100 requests per minute for a single IP. D
 
 [Editing a Data Connection](/embedded-bi/working-with-data-source/editing-a-data-connection/)   
 
-[Dashboard Designer Walkthrough](/embedded-bi/getting-started/bold-bi-walk-through/)
+[Dashboard Designer Walkthrough](/embedded-bi/getting-started/quick-start/)
 
 [Intervals API Limits](https://www.myintervals.com/api/introduction.php)
 

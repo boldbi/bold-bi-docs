@@ -20,6 +20,7 @@ Initially, any Active Directory users cannot be displayed until searching for th
 
 You can search the Azure Active Directory users with any one of the below properties and choose them to import into the Bold BI. 
 
+* Username
 * Email Address
 * Full name
 
@@ -41,7 +42,7 @@ Bold BI will import the chosen users and a confirmation message will be displaye
 
 ## Duplicate Users
 
-Azure Active Directory users who has the same  email address as that of the Bold BI users(who are already present) will be marked as duplicate users and will not be allowed to import into Bold BI.  
+Azure Active Directory users who has the same username or email address as that of the Bold BI users(who are already present), will be marked as duplicate users and will not be allowed to import into Bold BI.  
 
 ![Duplicated Azure Active Directory Users](/static/assets/embedded/managing-resources/manage-users/images/Duplicated-Azure-Active-Directory-Users.png)
 

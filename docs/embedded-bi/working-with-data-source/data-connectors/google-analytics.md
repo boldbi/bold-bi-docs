@@ -137,7 +137,7 @@ You can edit, delete and re-authorize this account from the **Connected Accounts
 
 [Editing a Data Connection](/embedded-bi/working-with-data-source/editing-a-data-connection/)   
 
-[Dashboard Designer Walkthrough](/embedded-bi/getting-started/bold-bi-walk-through/)
+[Dashboard Designer Walkthrough](/embedded-bi/getting-started/quick-start/)
 
 [Google Analytics Limitations to build query](https://developers.google.com/analytics/devguides/reporting/core/v3/reference#largeDataResults)
 

@@ -16,7 +16,7 @@ This repository contains the source code of the Bold BI [documentation](https://
 Bold BI documentation was built on [Gatsby](https://www.gatsbyjs.org/) application.
 
 ## Node.js Installation
-Make sure to install [Node.js](https://nodejs.org) `v10` series(This version of `nodejs` supports all the `Gatsby` plugin which is used in our application, higher version may not be supported all the plugins.) in your machine and run `node -v` to check whether it is installed properly or not.
+Make sure to install [Node.js](https://nodejs.org/en/blog/release/v10.18.0/) `v10` series(This version of `nodejs` supports all the `Gatsby` plugin which is used in our application, higher version may not be supported all the plugins.) in your machine and run `node -v` to check whether it is installed properly or not.
 
 ## Gulp Installation
 Install `gulp` package with global access and the version should be `v3.9.1` and then run `gulp -v` to check whether it is installed properly or not.

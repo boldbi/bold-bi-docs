@@ -81,6 +81,6 @@ On initial connect MongoDB will extract a maximum of 10,000 records. Configure t
 
 [Editing a Data Connection](/cloud-bi/working-with-data-source/editing-a-data-connection/)   
 
-[Dashboard Designer Walkthrough](/cloud-bi/getting-started/bold-bi-walk-through/)
+[Dashboard Designer Walkthrough](/cloud-bi/getting-started/quick-start/)
 
 [MongoDB Integration](https://www.boldbi.com/integrations/mongodb?utm_source=syncfusion&utm_medium=documentation&utm_campaign=boldbimongodbintegration)

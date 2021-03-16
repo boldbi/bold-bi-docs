@@ -14,7 +14,7 @@ We have created ASP.NET Core sample with Embedded SDK, here we could listing all
 
 ## How to run the sample
 
-1. Please download the ASP.NET Core sample from [here](https://embed-sdk.boldbi.com/getting-started/asp-net-core/sample.zip).  
+1. Please download the ASP.NET Core sample from [here](https://onpremise-demo.boldbi.com/getting-started/asp-net-core/sample.zip).  
 
 2. In ASP.NET Core sample, you can find the EmbedProperties class file in Models folder.
 ![Properties](/static/assets/embedded/javascript/sample/images/core-properties.png)

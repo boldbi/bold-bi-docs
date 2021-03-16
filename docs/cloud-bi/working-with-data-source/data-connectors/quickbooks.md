@@ -129,7 +129,7 @@ You can edit, delete and re-authorize this account from the **Connected Accounts
 
 [Editing a Data Connection](/cloud-bi/working-with-data-source/editing-a-data-connection/)   
 
-[Dashboard Designer Walkthrough](/cloud-bi/getting-started/bold-bi-walk-through/)
+[Dashboard Designer Walkthrough](/cloud-bi/getting-started/quick-start/)
 
 [QuickBooks Integration](https://www.boldbi.com/integrations/quickbooks-online?utm_source=syncfusion&utm_medium=documentation&utm_campaign=boldbiquickbooksonlineintegration)
 

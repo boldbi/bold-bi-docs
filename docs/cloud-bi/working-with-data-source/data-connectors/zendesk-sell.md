@@ -108,7 +108,7 @@ Replace it in the URL to query a particular lead:
 
 [Editing a Data Connection](/cloud-bi/working-with-data-source/editing-a-data-connection/)   
 
-[Dashboard Designer Walkthrough](/cloud-bi/getting-started/bold-bi-walk-through/)
+[Dashboard Designer Walkthrough](/cloud-bi/getting-started/quick-start/)
 
 [Zendesk Sell Rate Limits](https://developers.getbase.com/docs/rest/articles/rate_limits)
 

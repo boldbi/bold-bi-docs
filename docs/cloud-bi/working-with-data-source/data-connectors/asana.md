@@ -47,7 +47,7 @@ After successful authentication, the NEW DATA SOURCE configuration panel opens
 1. Enter a name and description (optional) for the data source.
 2. Enter a valid Asana REST API endpoint in the URL textbox. Refer the [Asana API documentation](https://asana.com/developers/documentation/getting-started/quick-start) for more details.
 
-   Example: [https://app.asana.com/api/1.0/projects](https://app.asana.com/api/1.0/projects)  
+   Example: `https://app.asana.com/api/1.0/projects`
 
 3. Select **GET** method for the REST API in **Method** combo box.
 4. In **Max Rows**, enter the maximum number of rows to be fetched from the Asana data source. This value is used to fetch the data from Asana data source via pagination.
@@ -95,19 +95,19 @@ In addition **Search APIs** are limited to 60 requests per minute.
 
 Replace it in the URL to query a project section:
 
-[https://app.asana.com/api/1.0/projects/850616781135258/sections](https://app.asana.com/api/1.0/projects/850616781135258/sections)
+`https://app.asana.com/api/1.0/projects/850616781135258/sections`
 
 **Projects**
 
-[https://app.asana.com/api/1.0/projects](https://app.asana.com/api/1.0/projects)
+`https://app.asana.com/api/1.0/projects`
 
 **Plans**
 
-[https://app.asana.com/api/1.0/plan](https://app.asana.com/api/1.0/plan)
+`https://app.asana.com/api/1.0/plan`
 
 **Tasks (Search)**
 
-[https://app.asana.com/api/1.0/workspaces/850617776313575/tasks/search](https://app.asana.com/api/1.0/workspaces/850617776313575/tasks/search)
+`https://app.asana.com/api/1.0/workspaces/850617776313575/tasks/search`
 
 ### Preview and data import
 * Click **Preview & Connect** to connect with the configurations set.
@@ -134,10 +134,10 @@ You can edit, delete and re-authorize this account from the **Connected Accounts
 
 [Editing a Data Connection](/cloud-bi/working-with-data-source/editing-a-data-connection/)   
 
-[Dashboard Designer Walkthrough](/cloud-bi/getting-started/bold-bi-walk-through/)
+[Dashboard Designer Walkthrough](/cloud-bi/getting-started/quick-start/)
 
 [Asana API Rate Limits](https://asana.com/developers/documentation/getting-started/rate-limits)
 
-[Asana Integration](https://www.boldbi.com/integrations/asana?utm_source=syncfusion&utm_medium=documentation&utm_campaign=boldbiasanaintegration)
+[Asana Integration](https://www.boldbi.com/integrations/asana)
 
 [Blog Post](https://www.boldbi.com/blog/make-better-decisions-with-an-asana-dashboard)

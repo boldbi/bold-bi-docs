@@ -30,7 +30,7 @@ To configure the ProofHub data source, follow these steps:
 
 Once you click the data source, the NEW DATA SOURCE configuration panel opens. Follow these steps to create the ProofHub data source.
 1. Enter a name and description (optional) for the data source.
-2. Enter a valid ProofHub REST API endpoint in the URL textbox. Refer to the [ProofHub API documentation](https://developers.ProofHub.com/reference) for more details.
+2. Enter a valid ProofHub REST API endpoint in the URL textbox. Refer to the [ProofHub API documentation](https://github.com/ProofHub/api_v3) for more details.
 
       Example: `https://<:company_name>.proofhub.com/api/v3/projects`
 
@@ -64,7 +64,7 @@ Period of time before next refresh call is triggered. This will automatically tr
 </table>
 
 ### Setting up the URL
-1. Replace `&lt;:company_name&gt;` with this base URL.
+1. Replace `<:company_name>` with this base URL.
 
 `https://<:company_name>.proofhub.com/api/v3/projects`
 
@@ -96,6 +96,6 @@ Period of time before next refresh call is triggered. This will automatically tr
 
 [Editing a Data Connection](/cloud-bi/working-with-data-source/editing-a-data-connection/)   
 
-[Dashboard Designer Walkthrough](/cloud-bi/getting-started/bold-bi-walk-through/)
+[Dashboard Designer Walkthrough](/cloud-bi/getting-started/quick-start/)
 
 [ProofHub Integration](https://www.boldbi.com/integrations/ProofHub?utm_source=syncfusion&utm_medium=documentation&utm_campaign=boldbiProofHubintegration)

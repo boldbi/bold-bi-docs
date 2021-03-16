@@ -147,6 +147,8 @@ This allows you to set brief explanation about this grid widget. It is optional.
 
 ### Basic settings
 
+![Basic Settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/column-chart/basic-settings.png)
+
 #### Chart type and axis
 
 Click the `Change` button to open the `Chart Type and Axis Settings` dialog. 
@@ -172,6 +174,14 @@ A Legend is a text used to describe the data plotted. This allows you to toggle 
 #### Show legend
 
 Enabling this option of Custom Legend Text will allow you to define a custom text (through the text area) to display for each legend series (selecting through the combo box) in chart.
+
+### Legend Label Color
+
+This allows you to change the chart legend title and label colors.
+
+![Chart Legend Color Option](/static/assets/cloud/visualizing-data/visualization-widgets/images/column-chart/legend-label-color-option.png)
+
+![Chart Legend Color](/static/assets/cloud/visualizing-data/visualization-widgets/images/column-chart/legend-label-color.png)
 
 ##### Custom legend settings
 
@@ -217,6 +227,14 @@ This allows you to toggle the visibility of value labels.
 
 ![Value labels in chart](/static/assets/cloud/visualizing-data/visualization-widgets/images/column-chart/value-labels.png)
 
+#### Value Label Color
+
+This allows you to customize value label's color.
+
+![Value label Color Option](/static/assets/cloud/visualizing-data/visualization-widgets/images/column-chart/data-label-color-option.png)
+
+![Value label Color](/static/assets/cloud/visualizing-data/visualization-widgets/images/column-chart/data-label-color.png)
+
 #### Value label rotation
 
 This allows you to define the `rotation angle for the value labels` to display.
@@ -243,15 +261,15 @@ To configure the linking to URL or dashboard with the widget using its settings.
 
 This section allows you to customize the axis settings in chart.
 
-![Chart axis properties](/static/assets/cloud/visualizing-data/visualization-widgets/images/column-chart/Axis_Setting_Foreground.png)
+![Chart axis properties](/static/assets/cloud/visualizing-data/visualization-widgets/images/column-chart/axis-settings.png)
 
 #### Title color
 
-This allows you to customize the chart title color.
+This allows you to customize the axis title color.
 
 #### Label color
 
-This allows you to customize the chart label color.
+This allows you to customize the axis label color.
 
 #### Show category axis
 

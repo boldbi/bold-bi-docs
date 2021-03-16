@@ -181,6 +181,18 @@ This property restore the expanded and collapsed state of node even after reload
 
 By default, long texts get trimmed in pivot grid. But if the property `Allow Text Wrap` is enabled, then it displays a wrapped text instead of a trimmed one.
 
+#### Allow Column Resize
+
+You can resize the pivot grid by dragging vertical lines of pivot grid control. This option is not enabled by default.
+
+#### Fit To Content
+The columns in the pivot grid can be made to auto-size based on the length of the content of the column. This option is not enabled by default.
+
+#### Show Values in Row
+By enabling this property, you can visualize the value fields in the row section instead of the column. This option is not enabled by default.
+
+![pivot-grid_prop-basic-nodes](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/pivot-property-values-in-row.png)
+
 ### Group Bar Settings
 
 This section contains all the property related to group bar (i.e., row and column header), which includes show or hide, sorting and filtering properties for group bar.

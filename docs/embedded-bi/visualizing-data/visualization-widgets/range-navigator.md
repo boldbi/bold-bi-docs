@@ -110,6 +110,14 @@ This allows you to set title for this Range Navigator widget.
 
 This allows you to customize Range chart series color.
 
+**Label Color**
+
+This allows you to customize the label color.
+
+![Range Navigator Label Color Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/range-navigator/label-color-option.png)
+
+![Range Navigator Label Color](/static/assets/embedded/visualizing-data/visualization-widgets/images/range-navigator/label-color.png)
+
 **Axis Type Settings**
 
 ![Range Navigator Axis Type Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/range-navigator/navigatorAxis.png)

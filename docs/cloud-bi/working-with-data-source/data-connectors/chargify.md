@@ -110,8 +110,8 @@ Replace it in the URL to query a particular payment:
 
 [Editing a Data Connection](/cloud-bi/working-with-data-source/editing-a-data-connection/)   
 
-[Dashboard Designer Walkthrough](/cloud-bi/getting-started/bold-bi-walk-through/)
+[Dashboard Designer Walkthrough](/cloud-bi/getting-started/quick-start/)
 
 [Chargify API Access Limitations](https://reference.chargify.com/v1/basics/api-access-limitations)
 
-[Chargify Integration](https://www.boldbi.com/integrations/chargify?utm_source=syncfusion&utm_medium=documentation&utm_campaign=boldbichargifyintegration)
+[Chargify Integration](https://www.boldbi.com/integrations/chargify)

@@ -15,6 +15,8 @@ The following are the frequently asked questions in Bold BI Enterprise :
 
 [How to change the binding in Bold BI Embedded?](/embedded-bi/faq/how-to-change-binding-in-bold-bi-embedded/)
 
+[How to change the binding in the Bold BI Embedded version below 4.1.36?](/embedded-bi/faq/how-to-change-binding-in-bold-bi-embedded-below-v4.1.36/)
+
 [How to install PhantomJS WebKit manually in Bold BI server?](/embedded-bi/faq/how-to-install-phantomjs-manually/)
 
 [What are the features needed to be enabled in IIS to run Bold BI Application in *Windows Client OS*?](/embedded-bi/faq/features-needed-to-enable-in-iis-to-run-bold-bi-in-win-client-os/)
@@ -68,3 +70,17 @@ The following are the frequently asked questions in Bold BI Enterprise :
 [What is the purpose of the databases used in the Bold BI?](/embedded-bi/faq/purpose-of-the-databases-used-in-the-bold-bi/)
 
 [How web-based data source like Jira works with Bold BI?](/embedded-bi/faq/how-web-based-data-source-works-with-bold-bi-embedded/)
+
+[How to host Bold BI as website in the IIS Express?](/embedded-bi/faq/how-to-host-bold-bi-as-website-in-iis-express/)
+
+[How to host Bold BI as website in the IIS?](/embedded-bi/faq/how-to-host-bold-bi-as-website-in-iis/)
+
+[When you should choose multi-tenancy and with row-level security](/embedded-bi/faq/when-you-should-choose-multi-tenancy-and-with-row-level-security/)
+
+[How to speed up the data access in SQL Server?](/embedded-bi/faq/how-to-speed-up-the-data-access-in-sql-server/)
+
+[How the interactions can be made between the Bold BI and external application?](/embedded-bi/faq/how-the-interactions-can-be-made-between-the-bold-bi-and-external-application/)
+
+[How to create an ODBC connection to a MySQL database in Windows?](/embedded-bi/faq/how-to-create-an-odbc-connection-to-a-my-sql-database-in-windows/)
+
+[How to enable authorized access to dashboards for users?](/embedded-bi/faq/dashboard-authorized-access/)

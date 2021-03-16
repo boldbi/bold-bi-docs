@@ -30,13 +30,13 @@ Once you click the data source, the NEW DATA SOURCE configuration panel opens.
 1. Enter a name and description (optional) for the data source.
 2. Enter a valid Azure Blob REST API endpoint in the URL textbox. Refer the [Azure Blob API documentation](https://docs.microsoft.com/en-us/rest/api/storageservices/blob-service-rest-api) for more details.
 
-    Example: `[https://&lt;:your_storage_account_name&gt;.blob.core.windows.net/&lt;:your_end_point&gt;](https://%3c:your_storage_account_name%3e.blob.core.windows.net/%3c:your_end_point%3e)`    
+    Example: `https://<:your_storage_account_name>.blob.core.windows.net<:your_end_point>`    
 
 3. Select **GET** method for the REST API in **Method** combo box.
 4. Default value for **x-ms-version** in *Headers* section is **2014-02-14**. Refer other [available versions](https://docs.microsoft.com/en-us/rest/api/storageservices/previous-azure-storage-service-versions#version-2012-02-12-and-later).
 5. Choose a time interval for **Refresh Settings** using the combo box, to trigger the Rest API request periodically to keep the data in sync with our dashboard.  
 6. Choose the data type based on the file extension (JSON / CSV / XML) which you have in REST API endpoint.
-7. Choose **Basic http Authentication** under **Authentication Type** and input a valid [Account Key](/cloud-bi/working-with-data-source/data-connectors/azure-blob/#how-do-i-get-storage-account-key-for-connecting-azure-blob-data-source) 
+7. Choose **Basic http Authentication** under **Authentication Type** and input a valid [Account Key](/cloud-bi/working-with-data-source/data-connectors/azure-blob/#how-do-i-get-storage-account-key-for-connecting-azure-blob-data-source).
 
 You can also edit the connection information set here using the [Edit Connection](/cloud-bi/working-with-data-source/editing-a-data-connection/) option.
 
@@ -63,18 +63,18 @@ Period of time before next refresh call is triggered. This will automatically tr
 </table>
 
 ### Setting up the URL
-1. Replace `&lt;:your_storage_account_name&gt;` in the URL with the account name.
+1. Replace `<:your_storage_account_name>` in the URL with the account name.
 
-    `[https://&lt;:your_storage_account_name&gt;.blob.core.windows.net/](https://%3c:your_storage_account_name%3e.blob.core.windows.net/)`
+   `https://<:your_storage_account_name>.blob.core.windows.net/`
 
 ### Sample queries
 **Data of a specific file from a container**
 
-[https://storageaccount1.blob.core.windows.net/mycontainer/customers.csv](https://storageaccount1.blob.core.windows.net/mycontainer/customers.csv)
+`https://<:your_storage_account_name>.blob.core.windows.net/mycontainer/customers.csv`
 
-[https://storageaccount1.blob.core.windows.net/mycontainer/orders.json](https://storageaccount1.blob.core.windows.net/mycontainer/orders.json)
+`https://<:your_storage_account_name>.blob.core.windows.net/mycontainer/orders.json`
 
-[https://storageaccount1.blob.core.windows.net/mycontainer/salesdata.xml](https://storageaccount1.blob.core.windows.net/mycontainer/salesdata.xml)
+`https://<:your_storage_account_name>.blob.core.windows.net/mycontainer/salesdata.xml`
 
 ### Preview and data import
 * Click **Preview & Connect** to connect with the configurations set.
@@ -92,6 +92,6 @@ Period of time before next refresh call is triggered. This will automatically tr
 
 [Editing a Data Connection](/cloud-bi/working-with-data-source/editing-a-data-connection/)   
 
-[Dashboard Designer Walkthrough](/cloud-bi/getting-started/bold-bi-walk-through/)
+[Dashboard Designer Walkthrough](/cloud-bi/getting-started/quick-start/)
 
-[Azure Blob Integration](https://www.boldbi.com/integrations/azure-blob?utm_source=syncfusion&utm_medium=documentation&utm_campaign=boldbiazureblobintegration)
+[Azure Blob Integration](https://www.boldbi.com/integrations/azure-blob)

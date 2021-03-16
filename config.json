@@ -25,6 +25,7 @@
     "gizmo",
     "freshsales",
     "infusionsoft",
+    "gravity-forms",
     "insightly",
     "kissmetrics",
     "microsoft",
@@ -150,6 +151,7 @@
     "feeds",
     "facebook",
     "ads",
+	"trello",
     "linkedin",
     "youtube",
     "toggl",
@@ -194,6 +196,14 @@
     "gridlines",
     "clubready",
     "commvault",
-    "gmail"
+    "gmail",
+    "deploying",
+    "linux",
+    "prerequisites",
+	"kubernetes",
+    "configuration",
+    "dsn",
+    "centos",
+    "ubuntu"
   ]
 }

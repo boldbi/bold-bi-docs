@@ -81,3 +81,27 @@ Following are the list of few OpenID Connect providers and that explains how to 
 The OpenID Connect support is provided in both the Bold BI sites and User Management Server. This support can be handled for each sites individually in the settings page by disabling the option as in the following screenshot.
 
 ![Enable OpenID Connect support](/static/assets/embedded/site-administration/openid-support/images/EnableOpenId.png)
+
+## Set OpenID Connect as Default Authentication
+
+OpenID Connect can be set as default authentication when [OpenID Connect settings](/embedded-bi/site-administration/sso/openid-support/#steps-to-configure-openid-in-bold-bi) is enabled and saved. Follow these steps:
+
+1. In settings page, click Authentication tab and select General.
+
+2. Enable the **Enable Default Authentication** option and select the **OpenID Connect** in default authentication provider as in the following screenshot.
+
+    ![Enable OpenID Default Authentication](/static/assets/embedded/site-administration/openid-support/images/openid-default-authentication.png)
+
+## Disabling OpenID Connect Settings
+
+When OpenID Connect is set as default authentication and try to disable the [OpenID Connect settings](/embedded-bi/site-administration/sso/openid-support/#steps-to-configure-openid-in-bold-bi) to display the following pop-up. Proceeding by clicking `Yes` will disable the [OpenID Connect default authentication](/embedded-bi/site-administration/sso/openid-support/#set-openid-connect-as-default-authentication).
+
+![Disable Default Authentication](/static/assets/embedded/site-administration/images/disable-default-authentication.png)
+
+<!---
+## Bypassing OpenID Connect Authentication
+
+Use the following custom login URL to login as normal user that is not from OAuth, when [OpenID Connect default authentication](/embedded-bi/site-administration/sso/openid-support/#set-openid-connect-as-default-authentication) is enabled.
+
+>{Bold server URL}/bi/site/{tenant-name}/login?use_default_authentication=false
+-->

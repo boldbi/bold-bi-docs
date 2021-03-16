@@ -35,6 +35,8 @@ Access Mode – Entity – Scope
 * Specific Category – Provides permission to access a specific category with the chosen access mode.
 * All Schedules – Provides permission to access all schedules with the chosen access mode.
 * Specific Schedule – Provides permission to access a specific schedule with the chosen access mode.
+* All Slideshows – Provides permission to access all slideshows with the chosen access mode.
+* Specific Slideshow – Provides permission to access a specific slideshow with the chosen access mode.
 	
 ## Scope
 
@@ -45,8 +47,9 @@ Scopes can be chosen for the below entities only. Other entities do not require 
 * Specific Data Source – A specific data source has to be chosen to provide access to it.
 * Specific Category – A specific category has to be chosen to provide access to it.
 * Specific Schedule – A specific schedule has to be chosen to provide access to it.
+* Specific Slideshow – A specific slideshow has to be chosen to provide access to it.
 
-> **NOTE:**  Create access can only have the scopes, All Dashboards, Dashboards in Category, All Data Sources, All Schedules and All Categories.
+> **NOTE:**  Create access can only have the Scopes, All Dashboards, Dashboards in Category, All Data Sources, All Schedules, All Slideshows, and All Categories.
 
 ## Sharing Permissions - users
 

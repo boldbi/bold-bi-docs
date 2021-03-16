@@ -136,4 +136,4 @@ This allows you to apply the specified radius to the widget corners. Value can b
 
 **Enable Comment**
 
-This allows you to enable/disable comment for dashboard widget. For more details refer [here](/cloud-bi/working-with-widgets/commenting-widget/)
+This allows you to enable/disable comment for dashboard widget. For more details refer [here](/cloud-bi/visualizing-data/working-with-widgets/commenting-widget/)

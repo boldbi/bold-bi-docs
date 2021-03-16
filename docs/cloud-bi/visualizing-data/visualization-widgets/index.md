@@ -28,8 +28,6 @@ You can explore the available widgets in detail here,
 
 [Maps](/cloud-bi/visualizing-data/visualization-widgets/map/)
 
-[Bing Maps](/cloud-bi/visualizing-data/visualization-widgets/bing-maps/)
-
 [Grid](/cloud-bi/visualizing-data/visualization-widgets/grid/)
 
 [Pivot Grid](/cloud-bi/visualizing-data/visualization-widgets/pivot-grid/)

@@ -31,7 +31,7 @@ Once you click the data source, the NEW DATA SOURCE configuration panel opens.
 1. Enter a name and description (optional) for the data source.
 2. Enter a valid SurveyGizmo REST API endpoint in the URL textbox. Refer the [SurveyGizmo API documentation](https://apihelp.surveygizmo.com/help) for more details.
 
-    Example: [http://restapi.surveygizmo.com/v5/&lt;:yourendpoint&gt;?api_token=&lt;:your_api_token&gt;&api_token_secret=&lt;:your_api_secret&gt;](http://restapi.surveygizmo.com/v5/%3c:yourendpoint%3e?api_token=%3c:your_api_token%3e&api_token_secret=%3c:your_api_secret%3e)
+    Example: `http://restapi.surveygizmo.com/v5/<:yourendpoint>?api_token=<:your_api_token>&api_token_secret=<:your_api_secret>`
 
 3. Select **GET** method for the REST API in **Method** combo box.
 4. In **Max Rows**, enter the maximum number of rows to be fetched from the SurveyGizmo data source. This value is used to fetch the data from SurveyGizmo data source via pagination.
@@ -77,7 +77,7 @@ Period of time before next refresh call is triggered. This will automatically tr
 ### Sample queries
 **Surveys**
 
-[http://restapi.surveygizmo.com/v5/survey?api_token=kjUnjee3njnWJOniO&api_token_secret=A9WHOxTYs](http://restapi.surveygizmo.com/v5/survey?api_token=kjUnjee3njnWJOniO&api_token_secret=A9WHOxTYs)
+`http://restapi.surveygizmo.com/v5/survey?api_token=kjUnjee3njnWJOniO&api_token_secret=A9WHOxTYs`
 
 ### Preview and data import
 * Click **Preview & Connect** to connect with the configurations set.
@@ -95,7 +95,7 @@ Period of time before next refresh call is triggered. This will automatically tr
 
 [Editing a Data Connection](/embedded-bi/working-with-data-source/editing-a-data-connection/)   
 
-[Dashboard Designer Walkthrough](/embedded-bi/getting-started/bold-bi-walk-through/)
+[Dashboard Designer Walkthrough](/embedded-bi/getting-started/quick-start/)
 
 [SurveyGizmo API Rate Limits](https://apihelp.surveygizmo.com/help/api-request-limits)
 

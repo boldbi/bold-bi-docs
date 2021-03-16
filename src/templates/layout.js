@@ -58,7 +58,6 @@ export default class LayoutTemplate extends React.Component {
     this.indexPageMapper = toc.indexPageMapper;
     this.search.dataSource = toc.searchData;
     this.pathPrefix = toc.pathPrefix;
-    document.querySelector('.doc-logo-link').href = window.location.origin + this.pathPrefix;
     isMobile = window.matchMedia('(max-width:480px)').matches;
     window.gcseSearch = function () {
       select('#doc-body-cont').classList.add('gcse-search');
@@ -69,6 +68,14 @@ export default class LayoutTemplate extends React.Component {
       }
       //this.renderToc();
       };
+
+      var indexpath = window.location.origin;
+      if (indexpath !== "https://help.boldbi.com") {
+          var noindex = document.createElement('meta');
+          noindex.setAttribute('name', 'robots');
+          noindex.content = 'noindex';
+          document.getElementsByTagName('head')[0].appendChild(noindex);
+      }
     let path = window.location.pathname.split('/')[1];
     this.platformReference.current.updatePlatform(path);
     this.renderToc();
@@ -685,7 +692,7 @@ export default class LayoutTemplate extends React.Component {
     if (!header) {
       mdContentClass += " doc-no-right-toc";
     }
-    var metaRobot = { name: 'robots', content: 'nofollow' }
+      var metaRobot = { name: 'robots', content: 'nofollow' }
     return (
       <Layout>
         <div>
@@ -696,14 +703,14 @@ export default class LayoutTemplate extends React.Component {
              : []}
             <meta name="description" content={postNode.frontmatter.description} />
             <meta name="keywords" content={postNode.frontmatter.keywords} />
-            
             <meta name={metaRobot.name} content={metaRobot.content} />
-          </Helmet>
+                                        
+            </Helmet>
           <div id="doc-body" className={"e-view"}>
             <div hidden id="reports-analytics" data-queue={`Bold BI - Documentation`}></div>
                     <HeaderContainer className="e-view">
                         <SiteHeader ref={this.platformReference} />
-            </HeaderContainer>
+                    </HeaderContainer>
             <div id="doc-body-container" className="e-view">
               <SidebarComponent id="doc-left-sidebar" enableGestures={false} width="265px" type="Over" target="#doc-body-container" ref={Sidebar => this.leftSideBar = Sidebar}>
                 <LeftPane id="doc-left-pane" className="e-view">
@@ -756,7 +763,7 @@ export default class LayoutTemplate extends React.Component {
                     </NavButtons>
                     <div id="doc-footer">
                       <div id="footer-copyright">
-                        <a id="copyright" target="_blank" href="http://www.syncfusion.com/copyright">Copyright © 2001 - <span id="copyright-year"> 2020</span> Syncfusion Inc. All Rights Reserved</a>
+                        <a id="copyright" target="_blank" href="http://www.syncfusion.com/copyright">Copyright © 2001 - <span id="copyright-year"> 2021</span> Syncfusion Inc. All Rights Reserved</a>
                       </div>
                       <div id="footer-powered_by"></div>
                     </div>

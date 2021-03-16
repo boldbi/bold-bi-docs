@@ -9,10 +9,8 @@ documentation: ug
 
 # Exporting Widgets
 
-This section explains how to export widgets in the various formats and know how to maximize its view in the Bold BI Enterprise.
+This section explains how to export widgets in the various formats in the Bold BI Enterprise.
 
 You can explore the widget exporting in detail here,
-
-[Maximizing Widget View](/embedded-bi/working-with-dashboards/preview-dashboard/exporting-reports-from-widgets/maximizing-widget-view/)
 
 [Exporting Options](/embedded-bi/working-with-dashboards/preview-dashboard/exporting-reports-from-widgets/exporting-options/)

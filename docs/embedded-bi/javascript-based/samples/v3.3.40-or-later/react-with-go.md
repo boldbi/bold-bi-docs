@@ -10,11 +10,11 @@ documentation: ug
 
 We have created the React and Go application for achieving this embedding. Here, the React app acts as a client and the Go app acts as a server. Using this environment, we could be able to render the dashboard on it.  
 
-> **NOTE:** The best way to get started would be reading the [Getting Started](/embedded-bi/javascript/getting-started/) section of the documentation to start using first. The [Getting Started](/embedded-bi/javascript/getting-started/) guide gives you enough information that you need to know before working on the sample.      
+> **NOTE:** The best way to get started would be reading the [Getting Started](/embedded-bi/javascript-based/getting-started/) section of the documentation to start using first. The [Getting Started](/embedded-bi/javascript-based/getting-started/) guide gives you enough information that you need to know before working on the sample.      
 
 ## How to run the sample
 
-1. Please download the React with Go Application from [here](https://embed-sdk.boldbi.com/getting-started/react-go-v3.3/sample.zip).    
+1. Please download the React with Go Application from [here](https://onpremise-demo.boldbi.com/getting-started/react-go-v3.3/sample.zip).    
 
 2. Here, the React application act as a client and the Go application act as a server since we need to set the following properties in the `DashboardListing.js` file in the react app as follows.
 ![Embed Properties In App Component](/static/assets/embedded/javascript/sample/images/react-go-props.png)  

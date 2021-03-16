@@ -68,6 +68,28 @@ Widget tooltip after modifying the field name
 You can change the `summary type` of the measure field from the `settings` menu and refer to [this section](/embedded-bi/visualizing-data/working-with-widgets/aggregating-value-columns-based-on-type/) to learn more details on aggregation types.
  ![Change aggregation type](/static/assets/embedded/visualizing-data/working-with-widgets/images/Tooltip11.png)
 
+ ### Changing the first or last value of the dimension field
+
+ You can select `First` or `Last` option from the `settings` menu as follows. This option will be enabled for the dimension or date field.
+
+![First and Last Option](/static/assets/embedded/visualizing-data/working-with-widgets/images/first-last-settings.png)
+
+When the `First` option is selected, the top value of the dimension or date field can be obtained based on the measure column, configured in the `Value(s)` section and displays the tooltip value as shown in the following screenshots.
+
+![First Settings Option](/static/assets/embedded/visualizing-data/working-with-widgets/images/first-settings.png)
+
+![First Settings Option For Widgets](/static/assets/embedded/visualizing-data/working-with-widgets/images/first-settings-widgets.png)
+
+When the `Last` option is selected, the last value of the dimension or date field can be obtained based on the measure column, configured in the `Value(s)` section and displays the tooltip value as shown in the following screenshots.
+
+![Last Settings Option](/static/assets/embedded/visualizing-data/working-with-widgets/images/last-settings.png)
+
+![Last Settings Option For Widgets](/static/assets/embedded/visualizing-data/working-with-widgets/images/last-settings-widget.png)
+
+For date column, `First` or `Last` value will be shown in date time format as shown in the  following screenshot.
+
+![Last Option For Date Column](/static/assets/embedded/visualizing-data/working-with-widgets/images/last-settings-date-column.png)
+
 ### Measure formatting
 
 The measure value can be formatted by clicking the `Format` menu option from the `settings` menu. 

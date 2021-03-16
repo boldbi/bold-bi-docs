@@ -14,7 +14,7 @@ We have created Angular and ASP.NET Core application for achieving this embeddin
 
 ## How to run the sample
 
-1. Please download the Angular App with ASP.NET Core Application from [here](https://embed-sdk.boldbi.com/getting-started/angular/sample.zip).    
+1. Please download the Angular App with ASP.NET Core Application from [here](https://onpremise-demo.boldbi.com/getting-started/angular/sample.zip).    
 
 2. Here, Angular application act as Client and ASP.NET Core application act as Server. Since we need to set the following properties in `app.component.ts` file as below.
 ![AppComponent](/static/assets/embedded/javascript/sample/images/angular-app-comp.png)  

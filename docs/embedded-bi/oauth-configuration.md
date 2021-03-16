@@ -40,7 +40,7 @@ After registering your app, you will receive a client ID and a client secret. Th
 
 You must register a redirect URI to be used for redirecting users to our application. Without setting Redirect URI, the OAuth process will not complete.
 
-Set this redirect URI in your app, http://[host:port]/bi/designer//v1.0/oauth/agent.
+Set this redirect URI in your app, http://[host:port]/bi/designer/v1.0/oauth/agent.
 The *host* and *port* are the corresponding values on which your Bold BI service runs.
 
 
@@ -57,7 +57,7 @@ If you have not configured OAuth for WordPress in Bold BI, follow the below step
     ![wordpress-home](/static/assets/embedded/oauth/images/wordpress-home.png)
 
 4.	Redirect URL for this app should be the Bold BI service. Get the host and port number of the Bold BI Application and replace it in the below URL,
-http://[host:port]/bi/designer//v1.0/oauth/agent   
+http://[host:port]/bi/designer/v1.0/oauth/agent   
 5.	Select the app you want to connect and get its corresponding OAuth information.
     
     ![wordpress-oauth](/static/assets/embedded/oauth/images/wordpress-oauth.png)

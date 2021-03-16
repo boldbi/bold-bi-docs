@@ -9,7 +9,7 @@ keywords: Bold BI,embedding,Dashboard
 
 # Bold BI Embedding SDK
 
-Bold BI Embed SDK allows you to visualize the dashboard that was published in Bold BI server by providing the server URL, dashboard path, and authorization server details inside your application. Refer this link [here](https://embed-sdk.boldbi.com/), for more supported customization in Bold BI Embed SDK.
+Bold BI Embed SDK allows you to visualize the dashboard that was published in Bold BI server by providing the server URL, dashboard path, and authorization server details inside your application. Refer this link [here](https://samples.boldbi.com/embed/), for more supported customization in Bold BI Embed SDK.
 
 **Syntax**
 

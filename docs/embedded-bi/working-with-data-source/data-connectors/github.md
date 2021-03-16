@@ -30,7 +30,7 @@ Once you click the data source, the NEW DATA SOURCE configuration panel opens.
 1. Enter a name and description (optional) for the data source.
 2. Enter a valid GitHub REST API endpoint in the URL textbox. Refer the [GitHub API documentation](https://developer.github.com/v3/) for more details.
 
-    Example: [https://api.github.com/user/repos](https://api.github.com/user/repos)    
+    Example: `https://api.github.com/user/repos`
 
 3. Select **GET** method for the REST API in **Method** combo box.
 4. In **Max Rows**, enter the maximum number of rows to be fetched from the GitHub data source. This value is used to fetch the data from GitHub data source via pagination.
@@ -68,15 +68,15 @@ Period of time before next refresh call is triggered. This will automatically tr
 
 **Repositories**
 
-[https://api.github.com/user/repos](https://api.github.com/user/repos)
+`https://api.github.com/user/repos`
 
 **Issues**
 
-[https://api.github.com/user/issues](https://api.github.com/user/issues)
+`https://api.github.com/user/issues`
 
 **Events**
 
-[https://api.github.com/events](https://api.github.com/events)
+`https://api.github.com/events`
 
 ### Preview and data import
 * Click **Preview & Connect** to connect with the configurations set.
@@ -97,6 +97,6 @@ Period of time before next refresh call is triggered. This will automatically tr
 
 [Editing a Data Connection](/embedded-bi/working-with-data-source/editing-a-data-connection/)   
 
-[Dashboard Designer Walkthrough](/embedded-bi/getting-started/bold-bi-walk-through/)
+[Dashboard Designer Walkthrough](/embedded-bi/getting-started/quick-start/)
 
 [GitHub Integration](https://www.boldbi.com/integrations/github?utm_source=syncfusion&utm_medium=documentation&utm_campaign=boldbigithubintegration)

@@ -8,7 +8,7 @@ documentation: ug
 
 # Managing Dashboard Settings
 
-This section explains how to manage dashboard settings like auto save filter, default views and make dashboard as public in the Bold BI Embedded.
+This section explains how to manage dashboard settings like autosave filter, default views, and theming, and also to make dashboard as public in the Bold BI Embedded.
 
 You can explore the dashboard settings in detail here,
 
@@ -17,3 +17,5 @@ You can explore the dashboard settings in detail here,
 [Auto Save Filter](/embedded-bi/site-administration/dashboard-settings/auto-save-filter/)
 
 [Default Views](/embedded-bi/site-administration/dashboard-settings/default-views/)
+
+[Theming](/embedded-bi/site-administration/dashboard-settings/enable-or-disable-dashboard-theme/)

@@ -46,7 +46,7 @@ After successful authentication, the NEW DATA SOURCE configuration panel opens
 1. Enter a name and description (optional) for the data source.
 2. Enter a valid Google Search Console REST API endpoint in the URL textbox. Refer the [Google Search Console API documentation](https://developers.google.com/webmaster-tools/search-console-api-original/v3/parameters) for more details.
 
-    Example: [https://www.googleapis.com/webmasters/v3/sites](https://www.googleapis.com/webmasters/v3/sites)    
+    Example: `https://www.googleapis.com/webmasters/v3/sites/<:siteUrl>/sitemaps`   
 3. Select **GET** method for the REST API in **Method** combo box.
 4. In **Max Rows**, enter the maximum number of rows to be fetched from the Google Search Console data source. This value is used to fetch the data from Google Search Console data source via pagination.
 5. Choose a time interval for **Refresh Settings** using the combo box, to trigger the Rest API request periodically to keep the data in sync with our dashboard.  
@@ -82,16 +82,16 @@ Period of time before next refresh call is triggered. This will automatically tr
 
 Replace it in the URL to query a particular site details:
 
-[https://www.googleapis.com/webmasters/v3/sites/&lt;:your_site_url&gt;](https://www.googleapis.com/webmasters/v3/sites/%3c:your_site_url%3e)
+`https://www.googleapis.com/webmasters/v3/sites/<:siteUrl>/sitemaps`
 
 ### Sample queries
 **SiteMaps**
 
-[https://www.googleapis.com/webmasters/v3/sites/http://www.samplewebsite.com/sitemaps](https://www.googleapis.com/webmasters/v3/sites/http://www.samplewebsite.com/sitemaps)
+`https://www.googleapis.com/webmasters/v3/sites/<:siteUrl>/sitemaps`
 
 **Retrieve information about specific site map**
 
-[https://www.googleapis.com/webmasters/v3/sites/http://www.samplewebsite.com/sitemaps/http://www.samplewebsite.com/samplefile.xml](https://www.googleapis.com/webmasters/v3/sites/http://www.samplewebsite.com/sitemaps/http://www.samplewebsite.com/samplefile.xml)
+`https://www.googleapis.com/webmasters/v3/sites/<:siteUrl>/sitemaps/<:feedpath>`
 
 ### Preview and data import
 * Click **Preview & Connect** to connect with the configurations set.
@@ -118,7 +118,7 @@ You can edit, delete and re-authorize this account from the **Connected Accounts
 
 [Editing a Data Connection](/embedded-bi/working-with-data-source/editing-a-data-connection/)   
 
-[Dashboard Designer Walkthrough](/embedded-bi/getting-started/bold-bi-walk-through/)
+[Dashboard Designer Walkthrough](/embedded-bi/getting-started/quick-start/)
 
 [Google Search Console Limitations](https://developers.google.com/webmaster-tools/search-console-api-original/v3/limits)
 

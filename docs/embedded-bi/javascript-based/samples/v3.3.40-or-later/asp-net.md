@@ -10,11 +10,11 @@ documentation: ug
 
 We have created an ASP.NET application for achieving this embedding. Here, we could set the server and dashboard details as embed details then the dashboard would be rendered after passing the authorization.    
 
-> **NOTE:** The best way to get started would be reading the [Getting Started](/embedded-bi/javascript/getting-started/) section of the documentation to start using first. The [Getting Started](/embedded-bi/javascript/getting-started/) guide gives you enough information that you need to know before working on the sample.      
+> **NOTE:** The best way to get started would be reading the [Getting Started](/embedded-bi/javascript-based/getting-started/) section of the documentation to start using first. The [Getting Started](/embedded-bi/javascript-based/getting-started/) guide gives you enough information that you need to know before working on the sample.      
 
 ## How to run the sample
 
-1. Please download the ASP.NET App from [here](https://embed-sdk.boldbi.com/getting-started/asp-net-v3.3/sample.zip).    
+1. Please download the ASP.NET App from [here](https://onpremise-demo.boldbi.com/getting-started/asp-net-v3.3/sample.zip).    
 
 2. You need to set your embed property details in the `EmbedProperties.cs` and `Site.Master` as follows.  
 ![Embed Properties](/static/assets/embedded/javascript/sample/images/asp-net-embed.png)

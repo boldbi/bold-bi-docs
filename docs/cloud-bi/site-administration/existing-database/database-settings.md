@@ -29,7 +29,7 @@ To select the database type from which the users to be imported, click on `Datab
  
 For SQL Server Database, fill the form with Server name, Authentication type, Username, Password and Database name.
  
-The connection details can be tested by click on 'Test Connection'
+The connection details can be tested by clicking on the 'Test Connection.'
   
 ![Connect SQL Server Database](/static/assets/cloud/site-administration/images/connect-database-sqlserver-new.png)
  
@@ -37,7 +37,7 @@ The connection details can be tested by click on 'Test Connection'
  
 For PostgreSQL Database, fill the form with Server name, Port, Username, Password and Database name.
  
-The connection details can be tested by click on 'Test Connection'
+The connection details can be tested by clicking on the 'Test Connection.'
  
 ![Connect PostgreSQL Database](/static/assets/cloud/site-administration/images/connect-database-postgresql-new.png)
  

@@ -123,6 +123,6 @@ You can edit, delete and re-authorize this account from the **Connected Accounts
 
 [Editing a Data Connection](/embedded-bi/working-with-data-source/editing-a-data-connection/)   
 
-[Dashboard Designer Walkthrough](/embedded-bi/getting-started/bold-bi-walk-through/)
+[Dashboard Designer Walkthrough](/embedded-bi/getting-started/quick-start/)
 
 [WordPress Integration](https://www.boldbi.com/integrations/wordpress?utm_source=syncfusion&utm_medium=documentation&utm_campaign=boldbiwordpressintegration)

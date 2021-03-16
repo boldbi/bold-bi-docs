@@ -23,7 +23,7 @@ If the subsequent table being dropped, has any of its column as foreign key in a
 
 ![New join editor wizard](/static/assets/embedded/working-with-datasource/images/NewJoinEditorWizardWindow.PNG)
 
-In the above screen shot, the `LeftTable` illustrate the list of table dropped already. The `RightTable` illustrate the table which you have dropped recently and that requires to set up a relation with any of the previously dropped tables. The drop-down list below to that, represent the join condition. You can add multiple join condition for single table relation just by click `Add Field` button.
+In the above screenshot, the `LeftTable` shows the list of tables dropped already. The `RightTable` shows the table, which you have dropped recently, and that requires setting up a relation with any of the previously dropped tables. The following drop-down list represents the join condition. You can add multiple join conditions for a single table relation just by clicking the `Add Field` button.
 
 The join type, compare operator and relational operator to make relationship between the two tables, can be defined through the options available in join editor.
 

@@ -10,11 +10,11 @@ documentation: ug
 
 The Bold BI is an end-to-end solution for creating, managing, and sharing interactive business dashboards. It includes a powerful dashboard server application for easily composing, managing, and sharing the dashboards.
 
-## Prerequisites
+## Prerequisites for Windows
 
-This section explains the system requirements to run Bold BI. 
+This section explains the system requirements to run Bold BI on Windows. 
 
-### Hardware Requirements
+### Hardware requirements
      
 The following hardware requirements are necessary to run the Bold BI solution:
 * **Operating System:**  Windows Client OS 8+ and Windows Server OS 2012 R2+.
@@ -22,13 +22,35 @@ The following hardware requirements are necessary to run the Bold BI solution:
 * **Memory:** 8 GB RAM for 32-bit or 64-bit.
 * **Hard drive:** 1.2 GB of free space (only installation files).
 
-### Software Requirements
+### Software requirements
 
 The following software requirements are necessary to run the Bold BI Embedded edition:
 * **Framework:** [Microsoft .NET Framework 4.5](https://www.microsoft.com/en-in/download/details.aspx?id=30653)
-* **Database:** Microsoft SQL Server 2012+ \| PostgreSQL
+* **Database:** Microsoft SQL Server 2012+ \| PostgreSQL \| MySQL
 * **Web Server:** [Internet Information Services (IIS) 7.0+](https://en.wikipedia.org/wiki/Internet_Information_Services)
-* **Web Browser:** Microsoft Edge , Mozilla Firefox , and Chrome.
+* **Web Browser:** Microsoft Edge, Mozilla Firefox, and Chrome.
+
+## Prerequisites for Linux
+
+This section explains the system requirements to run Bold BI on Linux. 
+
+### Hardware requirements
+     
+The following hardware requirements are necessary to run the Bold BI solution:
+
+* **Operating System:**  Bold BI Linux can run in different Linux distribution. Verified on the following operating systems:
+    * Ubuntu 18.04 LTS
+    * Debian OS
+* **CPU:** 4-core.
+* **Memory:** 16 GB RAM.
+* **Disk Space:** 5 GB or more.
+
+### Software requirements
+
+The following software requirements are necessary to run the Bold BI Embedded edition:
+* **Database:** Microsoft SQL Server 2012+ | PostgreSQL
+* **Web Server:** [Nginx](https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/linux-nginx?view=aspnetcore-3.1#install-nginx)
+* **Web Browser:** Microsoft Edge, Mozilla Firefox, and Chrome.
 
 ## Registration and Download
 
@@ -53,5 +75,5 @@ Follow these steps to install the Bold BI Embedded build:
 
 ## See Also
 
-* [**Installation and Deployment**](/embedded-bi/setup/deploying-in-server/installation-and-deployment/)
+* [**Installation and Deployment**](/embedded-bi/setup/deploying-in-windows/installation-and-deployment/)
 * [**Application Setup**](/embedded-bi/application-startup/)

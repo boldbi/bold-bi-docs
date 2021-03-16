@@ -663,55 +663,6 @@
         }
       }
     },
-    "/api/v2.0/dashboards": {
-      "post": {
-        "tags": [
-          "Items"
-        ],
-        "summary": "Add Dashboard",
-        "description": "Users who have a create access for dashboards, can add a new dashboard by providing respective dashboard details in the request body.",
-        "operationId": "Items_AddDashboard",
-        "parameters": [
-          {
-            "name": "apiDashboardAdd",
-            "in": "body",
-            "required": true,
-            "schema": {
-              "$ref": "#/definitions/ApiDashboardAdd"
-            },
-            "description": "Details about the dashboard passed will be added.",
-            "x-nullable": true
-          }
-        ],
-        "responses": {
-          "200": {
-            "x-nullable": true,
-            "description": "Dashboard was created successfully",
-            "schema": {
-              "$ref": "#/definitions/ApiItemResponse"
-            }
-          },
-          "400": {
-            "description": "The content of the request body is missing or incomplete"
-          },
-          "401": {
-            "description": "Access denied"
-          },
-          "405": {
-            "description": "Request type was not POST"
-          },
-          "406": {
-            "description": "The content of the request body is invalid"
-          },
-          "409": {
-            "description": "Item name already exists"
-          },
-          "417": {
-            "description": "Failed to add dashboard"
-          }
-        }
-      }
-    },
     "/api/v2.0/items/is-name-exists": {
       "post": {
         "tags": [
@@ -803,58 +754,6 @@
           },
           "417": {
             "description": "Failed to update category"
-          }
-        }
-      }
-    },
-    "/api/v2.O/dashboards": {
-      "put": {
-        "tags": [
-          "Items"
-        ],
-        "summary": "Update Dashboard",
-        "description": "Users who have a write access for dashboards, can update an existing dashboard by providing respective dashboard details in the request body.",
-        "operationId": "Items_UpdateDashboard",
-        "parameters": [
-          {
-            "name": "apiDashboardUpdate",
-            "in": "body",
-            "required": true,
-            "schema": {
-              "$ref": "#/definitions/ApiDashboardUpdate"
-            },
-            "description": "Details about the dashboard passed will be updated to the specified dashboard id.",
-            "x-nullable": true
-          }
-        ],
-        "responses": {
-          "200": {
-            "x-nullable": true,
-            "description": "Dashboard was modified successfully",
-            "schema": {
-              "$ref": "#/definitions/ApiItemResponse"
-            }
-          },
-          "400": {
-            "description": "The content of the request body is missing or incomplete"
-          },
-          "401": {
-            "description": "Access denied"
-          },
-          "404": {
-            "description": "Item detail not found"
-          },
-          "405": {
-            "description": "Request type was not PUT"
-          },
-          "406": {
-            "description": "The content of the request body is invalid"
-          },
-          "409": {
-            "description": "Item name already exists"
-          },
-          "417": {
-            "description": "Failed to update dashboard"
           }
         }
       }

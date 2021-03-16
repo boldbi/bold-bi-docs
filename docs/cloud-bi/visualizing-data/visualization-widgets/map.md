@@ -206,6 +206,18 @@ You can choose the map type as choropleth or bubble map.
 
 ![Map](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/choroplethMapType.png)
 
+**Show Label**
+
+This allows you to enable the visibility of `Data Labels`.
+
+![Show Labels](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/show-labels.png)
+
+**Label Color**
+
+This allows you to customize the data labels color.
+
+![Value Labels Color](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/value-label-color.png)
+
 **Shape kind**
 
 You can select any type of shape (country or continent or state) from the shape kind drop-down.

@@ -107,8 +107,8 @@ Replace &lt;:your_domain&gt; with your Freshsales CRM domain.
 
 [Editing a Data Connection](/cloud-bi/working-with-data-source/editing-a-data-connection/)   
 
-[Dashboard Designer Walkthrough](/cloud-bi/getting-started/bold-bi-walk-through/)
+[Dashboard Designer Walkthrough](/cloud-bi/getting-started/quick-start/)
 
 [Freshsales API Limits](https://support.freshsales.io/support/solutions/articles/223406-does-freshsales-have-api-request-limits-for-an-account-)
 
-[Freshsales Integration](https://www.boldbi.com/integrations/freshsales?utm_source=syncfusion&utm_medium=documentation&utm_campaign=boldbifreshsalesintegration)
+[Freshsales Integration](https://www.boldbi.com/integrations/freshsales)

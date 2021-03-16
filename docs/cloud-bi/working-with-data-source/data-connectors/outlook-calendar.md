@@ -34,7 +34,7 @@ Use the following steps to authenticate with Microsoft Outlook calendar web serv
 
 3. Set a name to identify the account and click **Next**. 
 4. You have now successfully authorized your connection. Click **Connect** to continue with the data source connection.
-5. To connect using existing connected account, refer [Connected Accounts](/cloud-bi/working-with-data-source/data-connectors/outlook-calender/#connected-accounts-for-oauth-data-sources).
+5. To connect using existing connected account, refer [Connected Accounts](/cloud-bi/working-with-data-source/data-connectors/outlook-calendar/#connected-accounts-for-oauth-data-sources).
 
 > **NOTE:** To connect to another account click **Connect New Account.**
 
@@ -122,7 +122,7 @@ You can edit, delete and re-authorize this account from the **Connected Accounts
 
 [Editing a Data Connection](/cloud-bi/working-with-data-source/editing-a-data-connection/)   
 
-[Dashboard Designer Walkthrough](/cloud-bi/getting-started/bold-bi-walk-through/)
+[Dashboard Designer Walkthrough](/cloud-bi/getting-started/quick-start/)
 
 [Graph API Throttling Limits](https://docs.microsoft.com/en-us/graph/throttling?toc=.%2Fref%2Ftoc.json&view=graph-rest-1.0)
 

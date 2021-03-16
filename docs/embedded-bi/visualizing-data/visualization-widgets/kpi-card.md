@@ -193,7 +193,7 @@ Allows you provide description about the KPI Card.
 *KPI card with the customized subtitle and description*
 ![KPI card subtitle](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/subtitle.png)
 
-### Color properties
+### Appearance Settings
 
 #### Direction
 
@@ -205,6 +205,18 @@ From the provided color pickers, you can customize the color values for the high
 
 #### Separator color
 Allows you to change the separator color. 
+
+### Auto Font Size
+
+The objective of this option is to make the font size readable in higher resolution. By enabling `Auto Font Size`, the font size will vary based on resultant font size, view port width, and `Scaling Factor` calculation.
+
+![Auto Font Size](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/auto-font-size.png)
+
+The following image depicts the behavior of `Auto Font Size` across different resolution.
+
+![Font size for Page Size 3840 x 2160](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/Auto-font-size-3840x2160.png)
+
+![Font size for Page Size 1366 x 768](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/Auto-font-size-1366x768.png)
 
 ### Title properties
 
@@ -229,6 +241,23 @@ You can customize the font size of the KPI card title.
 Figure: *KPI card with customized title color and font size.*
 ![Font size](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/font-size.png)
 
+### Series Settings
+
+This section will be enabled only if we configure the KPI card with [series section](/embedded-bi/visualizing-data/visualization-widgets/kpi-card/#Series-value).
+
+By default, the card layout is adjusted implicitly, based on the size of the container and the number of cards.
+
+In the following image, `Fixed Rows and Columns` is in disabled state. So, the card is arranged in 7 x 3 to fit the 21 cards without any gaps in the container.
+
+![Default view](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/series-default-layout.png)
+
+By enabling the `Fixed Rows and Columns`, you can define the number of rows and columns and it will be maintained even, if you resize the container.
+
+The following image shows the customized layout of KPI card series.
+
+![Fixed Rows and Columns](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/series-fixed-layout.png)
+
+> **Note** If the resultant value of rows x columns exceeds the total number of cards, the layout will reset to default and the content of card will hide, if you try to fit the more number of cards in a smaller container. You can rectify this either by adjusting the font size of the elements or by increasing the number of rows and columns. 
 
 ### KPI value properties
 

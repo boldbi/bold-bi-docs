@@ -18,10 +18,10 @@ Bold BI Cloud supports the below from the Azure Active Directory
 
 [Import users](/embedded-bi/managing-resources/manage-users/import-azure-active-directory-users/) from the Azure Active Directory.
 
-[Import groups](/embedded-bi/managing-resources/manage-groups/import-azure-active-directory-groups/) from the Active Directory.
+[Import groups](/embedded-bi/managing-resources/manage-groups/import-active-directory-groups/) from the Active Directory.
 
 [Synchronize user details](/embedded-bi/managing-resources/manage-users/synchronize-azure-active-directory-users/) with the Azure Active Directory.
 
-[Synchronize group details and its users](/embedded-bi/managing-resources/manage-groups/synchronize-azure-active-directory-groups/) with the Azure Active Directory.
+[Synchronize group details and its users](/embedded-bi/managing-resources/manage-groups/synchronize-active-directory-groups/) with the Azure Active Directory.
 
-[Schedule the synchronization of user and groups](/embedded-bi/site-administration/active-directory/azure-active-directory-synchronization-schedule/) between the Bold BI Cloud and the Azure Active Directory.
+[Schedule the synchronization of user and groups](/embedded-bi/site-administration/azure-active-directory/azure-active-directory-synchronization-schedule/) between the Bold BI and the Azure Active Directory.

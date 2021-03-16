@@ -466,7 +466,7 @@ This event will be triggered on completion of the every viewer action which comp
 <tr>
 <td class="name">eventType</td>
 <td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">Enum</span></td>
-<td class="description">Will hold the current [event type](/embedded-bi/javascript-based/api-reference/events/#event-types) that triggered the event</td>
+<td class="description">Will hold the current <a href="/embedded-bi/javascript-based/api-reference/events/#event-types">event type</a> that triggered the event</td>
 </tr>
 <tr>
 <td class="name">source</td>

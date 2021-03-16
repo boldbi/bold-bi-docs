@@ -20,13 +20,15 @@ New users can be added to the Bold BI individually or in bulk using CSV import
 
 ### Add individual users
 
-To add new users to the Bold BI, click on `New User` and then `Create User` from the User Management page. 
+To add new users to the Bold BI, click `New User` and then `Add User` from the User Management page. 
 
 The `Add User` dialog will be shown as like in the image below.
 
 ![Add User](/static/assets/embedded/managing-resources/manage-users/images/add-user.png)
 
-Fill the form with Email address, First name and Last name and click on `Add`. 
+Fill the form with email address, username, first name, and last name and click `Add`. 
+
+> **NOTE:** An email address is mandatory only in [Email required](/embedded-bi/site-administration/account-settings/#email-required) mode.
 
 New account will be created for the user and an account activation email will be sent to the email address with activation link to activate the Bold BI account.
 
@@ -34,13 +36,33 @@ The activation link sent to the user will be valid only for 2 days and if the us
 
 The account will be in inactive status till the user activates the account from the activation email.
 
-> **NOTE:**  User emails cannot be updated once created. Please make sure to provide the correct email id before create the user.
+### Add individual users with password
+
+To add users with the password, you have to set the Account Activation Mode to `Automatic` in the `Accounts` settings page.
+
+![Automatic Activation](/static/assets/embedded/managing-resources/manage-users/images/enable-auto-activation.png)
+
+Next, click `New User` and then `Add User` from the User Management page.
+
+The `Add User` dialog box will be shown as like in the following image.
+
+![Add User with password](/static/assets/embedded/managing-resources/manage-users/images/add-user-password.png)
+
+The password must meet the following requirements:
+
+It must contains,
+
+* At least 6 characters
+* 1 uppercase
+* 1 lowercase
+* 1 numeric
+* 1 special character
 
 ### Import users from CSV
 
 To automate the process of adding large number of users to a Bold BI Cloud, you can download the CSV template file and add the users in it and then import the file.
 
-You can navigate to user management page by click `User Management` drop down under the `Admin` menu as below.
+You can navigate to the user management page by clicking the `User Management` dropdown under the `Admin` menu as follows.
 
 ![Import from CSV - Navigation](/static/assets/embedded/managing-resources/manage-users/images/usermanagement.png)
 
@@ -58,8 +80,10 @@ The first row in the CSV template represents the column heading. Bold BI Cloud a
 
 We have the following columns are considered as mandatory in the downloaded CSV file.
 
-* Email address
+* Username
+* Email address (It is mandatory only in [Email required](/embedded-bi/site-administration/account-settings/#email-required) mode.)
 * Full Name
+* Password (It is mandatory only in [Automatic activation](/embedded-bi/site-administration/account-settings/#automatic-activation) mode.)
 
 Follow the below steps to add users using the CSV template
 
@@ -88,9 +112,9 @@ User profile details can be edited from the users edit page as shown in the belo
 
 ![Edit User](/static/assets/embedded/managing-resources/manage-users/images/edit-user.png)
 
-First Name, Last Name, Phone number and the login password for the user can be edited by the user belonging to the 'System Administrator' group.  
+Username, first name, last name, email, phone number and the login password for the user can be edited by the user belonging to the 'System Administrator' group.  
 		
-## Delete users
+## Remove Access
 Users can be deleted from the Bold BI when the user no longer requires the access. Users can be deleted from the user management page or from the edit page.
 
 ### From user management page
@@ -119,7 +143,7 @@ If the user has not received the activation email within 2 days or missed to act
 ## Change Password 
 The administrator can change the user's password from Tenant management site as follows below,
 
-Go to the UMS site by click on the profile as below,
+Go to the UMS site by clicking on the profile as follows.
 
 ![Manage Sites](/static/assets/embedded/managing-resources/manage-users/images/manage-sites-for-the-users.png)
 

@@ -10,4 +10,4 @@ documentation: ug
 
 Cloud BI is a business intelligence tool that is provided to create, manage, and share the interactive business dashboards. This section explains how to start with the Cloud BI application to create a dashboard by connecting data with the features involved in this process. 
 
-[Bold BI Walkthrough](/cloud-bi/getting-started/bold-bi-walk-through/)
+[Bold BI Walkthrough](/cloud-bi/getting-started/quick-start/)

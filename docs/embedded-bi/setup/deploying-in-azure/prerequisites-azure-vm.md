@@ -11,7 +11,7 @@ documentation: ug
 This section explains the requirement to use the Bold BI server on Microsoft Azure portal.
 1. Need the Microsoft Azure subscription. If you don’t have already, you can use the free trial on this [website](https://azure.microsoft.com/en-us/free/).
 
-2. Bold BI Enterprise Edition. Please check the license and download the build by following the steps on this [help link](/embedded-bi/setup/overview/overview/#registration-and-download).
+2. Bold BI Enterprise Edition. Please check the license and download the build by following the steps on this [help link](/embedded-bi/setup/overview/#registration-and-download).
               
 3. Microsoft Remote Desktop installed on your computer. You have to use Remote Desktop to sign in to the VM which has Bold BI Server installed. Remote Desktop is pre-installed on Windows-based operating systems. 
 

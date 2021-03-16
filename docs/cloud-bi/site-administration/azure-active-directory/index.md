@@ -100,6 +100,8 @@ You will need the following Azure Active Directory details to configure Bold BI 
 
 ![Azure Active Directory Settings](/static/assets/cloud/site-administration/images/azure-active-directory-settings.png)
 
+> **NOTE:** Enabling `Import users from groups` setting will import and synchronize users when importing and synchronizing groups with Azure AD. Enable this setting if you need to import users from your Azure AD groups.
+
 * **Tenant Name**: It is the default domain name of your Active Directory. Go to the created `Azure Active Directory` and copy the domain name.
 
     ![Tenant name](/static/assets/cloud/site-administration/images/tenant-name.png)

@@ -148,6 +148,8 @@ This allows you to set brief explanation about this grid widget. It is optional.
 
 ### Basic settings
 
+![Change type and axis settings dialog](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/basic-settings.png)
+
 #### Chart type and axis
 
 Click the `Change` button to open the `Chart Type and Axis Settings` dialog. 
@@ -173,6 +175,14 @@ A Legend is a text used to describe the data plotted. This allows you to toggle 
 #### Show legend
 
 Enabling this option of Custom Legend Text will allow you to define a custom text (through the text area) to display for each legend series (selecting through the combo box) in chart.
+
+#### Legend Label Color
+
+This allows you to change the chart legend title and label colors.
+
+![Chart Legend Color Option](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/legend-label-color-option.png)
+
+![Chart Legend Color](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/legend-label-color.png)
 
 ##### Custom legend settings
 
@@ -218,6 +228,14 @@ This allows you to toggle the visibility of value labels.
 
 ![Value labels in chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/value-labels.png)
 
+#### Value Label Color
+
+This allows you to customize value label's color.
+
+![Value label Color Option](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/data-label-color-option.png)
+
+![Value label Color](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/data-label-color.png)
+
 #### Value label rotation
 
 This allows you to define the `rotation angle for the value labels` to display.
@@ -244,15 +262,15 @@ To configure the linking to URL or dashboard with the widget using its settings.
 
 This section allows you to customize the axis settings in chart.
 
-![Chart axis properties](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/Axis_Setting_Foreground.png)
+![Chart axis properties](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/axis-settings.png)
 
 #### Title color
 
-This allows you to customize the chart title color.
+This allows you to customize the axis title color.
 
 #### Label color
 
-This allows you to customize the chart label color.
+This allows you to customize the axis label color.
 
 #### Show category axis
 
@@ -287,6 +305,18 @@ This option hides the overlapping label in the axis.
 
 ![Hidden label overflow](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/hidden-label.png)
 
+#### Trim Axis Labels
+
+This option allows you to trim axis labels, based on the 'Maximum Label Width' property value.
+
+![Trimmed label](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/trimming-label.png)
+
+#### Maximum Label Width
+
+This option allows you to set maximum width for the axis labels, and also it can be made customizable when the trim axis label option is enabled.
+
+![Maximum label width](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/Maximum-label-width.png)
+
 #### Category axis label rotation
 
 This allows you to define the rotation angle for the category axis labels to display.
@@ -310,6 +340,12 @@ This allows you to enable the visibility of primary value axis title of chart.
 This allows you to edit the primary value axis title. It will reflect in y-axis name of chart.
 
 ![Primary axis title value](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/title-value.png)
+
+#### Axis Format
+
+This option allows you to format primary and secondary axis values from the formatting details provided using 'Format' button. For more details, refer to this[measure format](/embedded-bi/visualizing-data/working-with-widgets/formatting-measure-type-column/).
+
+![Formatting option](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/formatting-button.png)
 
 ##### Axis Type
 

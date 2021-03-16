@@ -47,7 +47,7 @@ documentation: ug
 
 [Editing a Data Connection](/cloud-bi/working-with-data-source/editing-a-data-connection/)   
 
-[Dashboard Designer Walkthrough](/cloud-bi/getting-started/bold-bi-walk-through/)
+[Dashboard Designer Walkthrough](/cloud-bi/getting-started/quick-start/)
 
 [Oracle Integration](https://www.boldbi.com/integrations/oracle?utm_source=syncfusion&utm_medium=documentation&utm_campaign=boldbioracleintegration)
    

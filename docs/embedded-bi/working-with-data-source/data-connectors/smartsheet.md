@@ -48,7 +48,7 @@ After successful authentication, the NEW DATA SOURCE configuration panel opens
 1. Enter a name and description (optional) for the data source.
 2. Enter a valid Smartsheet REST API endpoint in the URL textbox. Refer the [Smartsheet API documentation](https://smartsheet-platform.github.io/api-docs/) for more details.
 
-   Example: [https://api.smartsheet.com/2.0/sheets/&lt;:sheet_id&gt;/](https://api.smartsheet.com/2.0/sheets/%3c:sheet_id%3e/)   
+   Example: `https://api.smartsheet.com/2.0/sheets/<:sheet_id>/`
 
 3. Select **GET** method for the REST API in **Method** combo box.
 4. In **Max Rows**, enter the maximum number of rows to be fetched from the Smartsheet data source. This value is used to fetch the data from Smartsheet data source via pagination.
@@ -88,17 +88,17 @@ Period of time before next refresh call is triggered. This will automatically tr
 
 Replace it in the URL to query a particular sheet:
 
-[https://api.smartsheet.com/2.0/sheets&lt;:sheet_id&gt;/](https://api.smartsheet.com/2.0/sheets/%3c:sheet_id%3e/)
+`https://api.smartsheet.com/2.0/sheets/<:sheet_id>/`
 
 #### Sample queries
 **Reports**
 
-[https://api.smartsheet.com/2.0/reports/Bi9c3AFP5Fx/](https://api.smartsheet.com/2.0/reports/Bi9c3AFP5Fx/)
+`https://api.smartsheet.com/2.0/reports/Bi9c3AFP5Fx/`
 
 
 **Sheet**
 
-[https://api.smartsheet.com/2.0/sheets/1201906853930884/](https://api.smartsheet.com/2.0/sheets/1201906853930884/)
+`https://api.smartsheet.com/2.0/sheets/1201906853930884/`
 
 ### Preview and data import
 * Click **Preview & Connect** to connect with the configurations set.
@@ -125,6 +125,6 @@ You can edit, delete and re-authorize this account from the **Connected Accounts
 
 [Editing a Data Connection](/embedded-bi/working-with-data-source/editing-a-data-connection/)   
 
-[Dashboard Designer Walkthrough](/embedded-bi/getting-started/bold-bi-walk-through/)
+[Dashboard Designer Walkthrough](/embedded-bi/getting-started/quick-start/)
 
 [Smartsheet Integration](https://www.boldbi.com/integrations/smartsheet?utm_source=syncfusion&utm_medium=documentation&utm_campaign=boldbismartsheetintegration)

@@ -22,4 +22,6 @@ You can explore the Site Administration in detail here,
 
 [Active Directory](/embedded-bi/site-administration/active-directory/)
 
+[Azure Active Directory](/embedded-bi/site-administration/azure-active-directory/)
+
 [SSO](/embedded-bi/site-administration/sso/)

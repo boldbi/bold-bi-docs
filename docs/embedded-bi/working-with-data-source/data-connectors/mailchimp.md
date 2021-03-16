@@ -105,7 +105,7 @@ Replace &lt;:us_id&gt; with your Mailchimp domain.
 
 [Editing a Data Connection](/embedded-bi/working-with-data-source/editing-a-data-connection/)   
 
-[Dashboard Designer Walkthrough](/embedded-bi/getting-started/bold-bi-walk-through/)
+[Dashboard Designer Walkthrough](/embedded-bi/getting-started/quick-start/)
 
 [Mailchimp API Best practices](https://developer.mailchimp.com/documentation/mailchimp/guides/mailchimp-api-best-practices/)
 

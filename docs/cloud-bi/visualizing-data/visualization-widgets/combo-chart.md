@@ -509,10 +509,10 @@ This allows you to enable or disable the PDF export option for the Column chart 
 
 **Enable Comments**
 
-This allows you to enable or disable comment for the dashboard widget. For more details refer to [here](/cloud-bi/working-with-widgets/commenting-widget/)
+This allows you to enable or disable comment for the dashboard widget. For more details refer to [here](/cloud-bi/visualizing-data/working-with-widgets/commenting-widget/).
 
 **Allow View Underlying Data**
 
 This allows you to visualize the raw data associated with a widget at runtime. 
 
-To learn more about viewing the underlying widget data, refer to the [view data documentation](/cloud-bi/working-with-widgets/view-data/). 
+To learn more about viewing the underlying widget data, refer to the [view data documentation](/cloud-bi/visualizing-data/working-with-widgets/view-data/). 

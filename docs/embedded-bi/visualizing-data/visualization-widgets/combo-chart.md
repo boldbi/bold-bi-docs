@@ -258,6 +258,18 @@ This allows you to define the rotation angle for the category axis labels to dis
 
 ![Category Axis Label Rotation](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochartCategoryLabelRotation.png)
 
+#### Trim Axis Labels
+
+This option allows you to trim axis labels, based on the 'Maximum Label Width' property value.
+
+![Trimmed label](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/trimming-label.png)
+
+#### Maximum Label Width
+
+This option allows you to set maximum width for the axis labels, and also it can be made customizable when the trim axis label option is enabled.
+
+![Maximum label width](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/Maximum-label-width.png)
+
 **Primary Value Axis**
 
 This allows you to enable the `Primary Value Axis` for chart. You can set interval of primary axis by `Edit Axis Range` button.
@@ -293,6 +305,12 @@ This allows you to enable the visibility of `Secondary Value Axis` title of char
 This allows you to edit the `Secondary Value Axis` title. It will reflect in Secondary y-axis name of chart. 
 
 ![Secondary Axis Title value](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochartSecondaryAxisTitleVa.png)
+
+#### Axis Format
+
+This option allows you to format primary and secondary axis values from the formatting details provided using 'Format' button. For more details, refer to this [measure format](/embedded-bi/visualizing-data/working-with-widgets/formatting-measure-type-column/).
+
+![Formatting option](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/formatting-button.png)
 
 **Grid Lines**
 
@@ -510,10 +528,10 @@ This allows you to enable or disable the PDF export option for the Column chart 
 
 **Enable Comments**
 
-This allows you to enable or disable comment for the dashboard widget. For more details refer to [here](/embedded-bi/working-with-widgets/commenting-widget/)
+This allows you to enable or disable comment for the dashboard widget. For more details refer to [here](/embedded-bi/visualizing-data/working-with-widgets/commenting-widget/).
 
 **Allow View Underlying Data**
 
 This allows you to visualize the raw data associated with a widget at runtime. 
 
-To learn more about viewing the underlying widget data, refer to the [view data documentation](/embedded-bi/working-with-widgets/view-data/). 
+To learn more about viewing the underlying widget data, refer to the [view data documentation](/embedded-bi/visualizing-data/working-with-widgets/view-data/). 

@@ -190,11 +190,27 @@ A Legend is a text used to describe the plotted data. It allows you to toggle th
 
 ![Show Legend](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/Show-Legend.png)
 
+**Legend Label Color**
+
+This allows you to change the chart legend title and label colors.
+
+![Chart Legend Color Option](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/legend-label-color-option.png)
+
+![Chart Legend Color](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/legend-label-color.png)
+
 **Show value label**
 
 Toggles the visibility of value labels.
 
 ![Show Value Label](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/Show-Value-Label.png)
+
+**Value Label Color**
+
+This allows you to customize value label's color.
+
+![Value label Color Option](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/data-label-color-option.png)
+
+![Value label Color](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/data-label-color.png)
 
 **Data label**
 

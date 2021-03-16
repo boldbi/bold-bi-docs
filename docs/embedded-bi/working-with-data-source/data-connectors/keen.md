@@ -30,13 +30,13 @@ Once you click the data source, the NEW DATA SOURCE configuration panel opens.
 1. Enter a name and description (optional) for the data source.
 2. Enter a valid Keen REST API endpoint in the URL textbox. Refer the [Keen API documentation](https://keen.io/docs/api/) for more details.
 
-    Example: [https://api.keen.io/3.0/organizations/&lt;:ORG_ID&gt;/projects/&lt;:PROJECT_ID&gt;](https://api.keen.io/3.0/organizations/%3c;ORG_ID%3e;/projects/%3c;PROJECT_ID%3e;)
+    Example: `https://api.keen.io/3.0/organizations/<:ORG_ID>/projects/<:PROJECT_ID>`
 
 3. Select **GET** method for the REST API in **Method** combo box.
 4. In **Max Rows**, enter the maximum number of rows to be fetched from the Keen data source.
 5. Choose a time interval for **Refresh Settings** using the combo box, to trigger the Rest API request periodically to keep the data in sync with our dashboard.  
 6. Select **JSON** data type in **Data Format** combo box.
-7. Replace `&lt;:project_read_key&gt;` under Headers with a valid API token.
+7. Replace `<:project_read_key>` under Headers with a valid API token.
 8. Choose **None** under **Authentication** Type as authentication is done through header.
 
 You can also edit the connection information set here using the [Edit Connection](/embedded-bi/working-with-data-source/editing-a-data-connection/) option.
@@ -47,7 +47,7 @@ You can also edit the connection information set here using the [Edit Connection
 2. Choose valid Project in *Projects* combo box and go to *ACCESS*.
 3. Find your *ACCESS KEY* under *Access Keys*.
 4. Click *NEW ACCESS KEY*, if you don't have any valid API Key.
-5. Use this *ACCESS KEY* as `&lt;:project_read_key&gt;` in Keen data source in Bold BI Dashboard.
+5. Use this *ACCESS KEY* as `<:project_read_key>` in Keen data source in Bold BI Dashboard.
 
    ![Reveal API Key](/static/assets/embedded/working-with-datasource/data-connectors/images/keen/APIKey.png)
 
@@ -57,7 +57,7 @@ You can also edit the connection information set here using the [Edit Connection
 2. Go to *Organization Key* and find your organization key. 
 3. Use this *Organization Key* as *ORGANIZATION_KEY* in Authorization to query the projects.
 
-   [https://api.keen.io/3.0/organizations/ORG_ID/projects/PROJECT_ID](https://api.keen.io/3.0/organizations/ORG_ID/projects/PROJECT_ID)
+   `https://api.keen.io/3.0/organizations/ORG_ID/projects/PROJECT_ID`
 
    Authorization: ORGANIZATION_KEY
 
@@ -87,13 +87,13 @@ Period of time before next refresh call is triggered. This will automatically tr
 
 **Projects**
 
-[https://api.keen.io/3.0/organizations/ORG_ID/projects](https://api.keen.io/3.0/organizations/ORG_ID/projects)
+`https://api.keen.io/3.0/organizations/ORG_ID/projects`
 
 Authorization: ORGANIZATION_KEY
 
 **Saved queries**
 
-[https://api.keen.io/3.0/projects/PROJECT_ID/queries/saved/QUERY_NAME/result](https://api.keen.io/3.0/projects/PROJECT_ID/queries/saved/QUERY_NAME/result)
+`https://api.keen.io/3.0/projects/PROJECT_ID/queries/saved/QUERY_NAME/result`
 
 Authorization: READ_KEY
 
@@ -113,7 +113,7 @@ Authorization: READ_KEY
 
 [Editing a Data Connection](/embedded-bi/working-with-data-source/editing-a-data-connection/)   
 
-[Dashboard Designer Walkthrough](/embedded-bi/getting-started/bold-bi-walk-through/)
+[Dashboard Designer Walkthrough](/embedded-bi/getting-started/quick-start/)
 
 [Keen API Limits](https://keen.io/docs/api/?shell#limits)
 

@@ -26,7 +26,7 @@ You can install and run the Bold BI server on Microsoft Azure virtual machine by
 
 ![Windows Server](/static/assets/embedded/setup/images/self-vm-windows-server.png)
 
-* Choose the `Windows Server` as a Software plan that meet our [system requirement](/embedded-bi/setup/overview/overview/#hardware-requirements) and then Click `Create`.
+* Choose the `Windows Server` as a Software plan that meet our [system requirement](/embedded-bi/setup/overview/#hardware-requirements) and then Click `Create`.
 
 ![Windows Server Select](/static/assets/embedded/setup/images/self-vm-windows-server-select.png)
 
@@ -100,7 +100,7 @@ Follow the below steps to connect to the virtual machine.
 
 This section explains how to install and run the Bold BI server in VM. 
 
-* Install the Bold BI server on the created VM in Azure portal by this [help link](/embedded-bi/setup/deploying-in-server/installation-and-deployment/). 
+* Install the Bold BI server on the created VM in Azure portal by this [help link](/embedded-bi/setup/deploying-in-windows/installation-and-deployment/). 
 * Launch your application by default or your Desktop shortcut menu item. For example, `Start Bold BI in IIS`
 
 ![Start up](/static/assets/embedded/setup/images/boldbi-startup.png)

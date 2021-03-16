@@ -73,7 +73,8 @@ You can also define parameters with operators to search for one or more values l
 <td> parameter=CONTAINS(value1, value2)</td> 
 </tr>
 </table>
-	
+
+
 ## Date Parameters Support
 
 You can define parameters (date and time typed columns) with date & time functions applied to search for formatted date values like below.

@@ -6,9 +6,9 @@ platform: bold-bi
 documentation: ug
 ---
 
-# Perform varies actions through Widget Menu
+# Perform various actions through Widget Menu
 
-You can perform varies widget actions like `Filtering`, `Linking`, `Drill Down` and `Viewing Underlying Data` without resetting properties or data configuration of widgets each time from Designer. Now, you can configure all required widget action and perform all those actions from widget context menu which will be shown while clicking the respective widget area. 
+You can perform various widget actions like `Filtering`, `Linking`, `Drill Down` and `Viewing Underlying Data` without resetting properties or data configuration of widgets each time from Designer. Now, you can configure all required widget action and perform all those actions from widget context menu which will be shown while clicking the respective widget area. 
 
 ![widget with all option](/static/assets/embedded/visualizing-data/working-with-widgets/images/widget_action_with_all_option.png)
 

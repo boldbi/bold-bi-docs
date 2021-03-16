@@ -10,11 +10,11 @@ documentation: ug
 
 We have created an ASP.NET MVC sample with Embedded SDK, here we could list the dashboards and render the dashboard based on your selection after passing the authorization.
 
-> **NOTE:** The best way to get started would be reading the [Getting Started](/embedded-bi/javascript/getting-started/) section of the documentation to start using first. The [Getting Started](/embedded-bi/javascript/getting-started/) guide gives you enough information that you need to know before working on the sample.    
+> **NOTE:** The best way to get started would be reading the [Getting Started](/embedded-bi/javascript-based/getting-started/) section of the documentation to start using first. The [Getting Started](/embedded-bi/javascript-based/getting-started/) guide gives you enough information that you need to know before working on the sample.    
 
 ## How to run the sample
 
-1. Download the ASP.NET MVC sample from [here](https://embed-sdk.boldbi.com/getting-started/asp-net-mvc-v3.3/sample.zip).  
+1. Download the ASP.NET MVC sample from [here](https://onpremise-demo.boldbi.com/getting-started/asp-net-mvc-v3.3/sample.zip).  
 
 2. In the ASP.NET MVC sample, you could find the EmbedProperties class file in the Models folder.
 ![Embed Properties](/static/assets/embedded/javascript/sample/images/prop-mvc.png)

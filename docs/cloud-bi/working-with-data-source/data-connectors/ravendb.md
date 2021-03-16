@@ -72,6 +72,6 @@ On initial connect RavenDB will extract a maximum of 1000 records. Configure the
 
 [Editing a Data Connection](/cloud-bi/working-with-data-source/editing-a-data-connection/)   
 
-[Dashboard Designer Walkthrough](/cloud-bi/getting-started/bold-bi-walk-through/)
+[Dashboard Designer Walkthrough](/cloud-bi/getting-started/quick-start/)
 
 [RavenDB Integration](https://www.boldbi.com/integrations/ravendb?utm_source=syncfusion&utm_medium=documentation&utm_campaign=boldbiravendbintegration)

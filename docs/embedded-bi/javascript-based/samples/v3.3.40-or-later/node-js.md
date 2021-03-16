@@ -10,11 +10,11 @@ documentation: ug
 
 We have created a simple Node.js sample for achieving this embedding. Here, we could set the sever and dashboard details as the embed details then the dashboard would be rendered after passing the authorization.    
 
-> **NOTE:** The best way to get started would be reading the [Getting Started](/embedded-bi/javascript/getting-started/) section of the documentation to start using first. The [Getting Started](/embedded-bi/javascript/getting-started/) guide gives you enough information that you need to know before working on the sample.      
+> **NOTE:** The best way to get started would be reading the [Getting Started](/embedded-bi/javascript-based/getting-started/) section of the documentation to start using first. The [Getting Started](/embedded-bi/javascript-based/getting-started/) guide gives you enough information that you need to know before working on the sample.      
 
 ## How to run the sample
 
-1. Please download the Node.js App from [here](https://embed-sdk.boldbi.com/getting-started/node-js-v3.3/sample.zip).    
+1. Please download the Node.js App from [here](https://onpremise-demo.boldbi.com/getting-started/node-js-v3.3/sample.zip).    
 
 2. You need to set your embed property details in the `Index.html` and `Embed.js`.  
 ![Embed Properties in Index](/static/assets/embedded/javascript/sample/images/nodejs-index-props.png)

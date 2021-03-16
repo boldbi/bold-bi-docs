@@ -60,27 +60,37 @@ The available Cubes list is shown in treeview for the selected database that are
 Expression designer is used to create a calculated field or column based on the field(s) or column(s) in selected cube(s).
 
    ![Expression Designer](/static/assets/cloud/working-with-datasource/data-connectors/images/ssas/Expression_dialog.png)
- 
-### Numbers functions
-Currently, Syncfusion supports only the number functions in expression designer. So, the measure column list and number functions are only listed in expression window.
-Supported expression list:
 
-1.	ABS
-2.	ACOS
-3.	ASIN 
-4.	ATAN
-5.	COS
-6.	DEGREES
-7.	EXP
-8.	LOG
-9.	PI
-10.	POWER
-11.	RADIANS
-12.	ROUND
-13.	SIGN
-14.	SIN
-15.	SQRT
-16.	TAN
+### Supported expression list
+
+   <table>
+   <tr>
+   <th>Function Type</th>
+   <th>Function Name</th>
+   </tr>
+   <td>Numbers</td>
+   <td>ABS, ACOS, ASIN, ATAN, COS, DEGREES, EXP, LOG, PI, POWER, RADIAN, ROUND, SIGN, SIN, SQRT, TAN</td>
+   <tr>
+   <td>Aggregation</td>
+   <td>AVG, COUNT, COUNTD, MAX, MIN, STDEV, SUM, VAR</td>
+   </tr>
+   <tr>
+   <td>Logical</td>
+   <td>AND, OR, NOT</td>
+   </tr>
+   <tr>
+   <td>Conditional</td>
+   <td>IF, IFNULL, ISNULL, ISNOTNULL</td>
+   </tr>
+   <tr>
+   <td>Date</td>
+   <td>NOW, DATESUB, DATEADD, TODAY</td>
+   </tr>
+   <tr>
+   <td>String</td>
+   <td>CHAR, LEN, LEFT, RIGHT, LTRIM, RTRIM</td>
+   </tr>
+   </table>
 
 ## Query filters or Initial filters 
 Query filters can be used to filter data for the created data source. For example, if you want to create a data source to show share market data only for year 2018, then you can use this filter.
@@ -96,6 +106,6 @@ You can configure filter by dragging the required columns to right side canvas.
 
 [Editing a Data Connection](/cloud-bi/working-with-data-source/editing-a-data-connection/)   
 
-[Dashboard Designer Walkthrough](/cloud-bi/getting-started/bold-bi-walk-through/)
+[Dashboard Designer Walkthrough](/cloud-bi/getting-started/quick-start/)
 
 [Microsoft SQL Server Analysis Services Integration](https://www.boldbi.com/integrations/microsoft-sql-server-analysis-services?utm_source=syncfusion&utm_medium=documentation&utm_campaign=boldbissasintegration)

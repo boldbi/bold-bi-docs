@@ -102,6 +102,6 @@ Period of time before next refresh call is triggered. This will automatically tr
 
 [Editing a Data Connection](/embedded-bi/working-with-data-source/editing-a-data-connection/)   
 
-[Dashboard Designer Walkthrough](/embedded-bi/getting-started/bold-bi-walk-through/)
+[Dashboard Designer Walkthrough](/embedded-bi/getting-started/quick-start/)
 
 [ServiceNow Integration](https://www.boldbi.com/integrations/servicenow?utm_source=syncfusion&utm_medium=documentation&utm_campaign=boldbiservicenowintegration)

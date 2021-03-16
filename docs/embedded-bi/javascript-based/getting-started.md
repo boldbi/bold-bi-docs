@@ -22,7 +22,7 @@ Follow these steps to embed dashboard in your application
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jsrender/1.0.0-beta/jsrender.min.js"></script>
-    <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v3.3.40/embed-js.js"></script>
+    <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v4.1.36/embed-js.js"></script>
 </head>
 ```
 
@@ -148,7 +148,37 @@ You can embed the dashboard using either the dashboard ID or dashboard path like
 
 5. Copy the previous embedSample() function and paste in your page. You need to update your values to the properties.  
 
-> **NOTE:**  embedContainerId should be same as your div element id value  
+> **NOTE:**  The embedContainerId should be the same as your div element id value.
+
+## How to embed the Multi-tabbed dashboard
+
+You can embed the multi-tabbed dashboard by using the dashboard ID or dashboard path which is similar to embedding a regular dashboard. Please refer to the following code sample for embedding a multi-tabbed dashboard
+
+```js
+
+<body onload="embedSample();">
+    <div id="dashboard-container"></div>
+    <script>
+        function embedSample() {
+            var boldbiEmbedInstance = BoldBI.create({
+                serverUrl: "http://localhost:51777/bi/site/site1",
+                dashboardId: "119c6622-62e7-42d2-955a-55c938ab8583",  // Multi-tabbed dashboard id              
+                embedContainerId: "dashboard-container",// This should be the container id where you want to embed the dashboard
+                embedType: BoldBI.EmbedType.Component,
+                environment: BoldBI.Environment.Enterprise,
+                mode: BoldBI.Mode.View,
+                height: "800px",
+                width: "1200px",
+                authorizationServer: {
+                    url: "http://example.com/embeddetail/get"
+                },
+                expirationTime: "100000",
+            });
+            boldbiEmbedInstance.loadDashboard();
+        }
+    </script>
+</body>
+```  
 
 ## How to implement the authorize server with user mail
 

@@ -2,6 +2,22 @@
 <html>
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-233131-36"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'UA-233131-36');
+	</script>
+    <script> 
+        if (location.origin !== "https://help.boldbi.com") {
+            var noindex = document.createElement('meta');
+            noindex.setAttribute('name', 'robots');
+            noindex.content = 'noindex';
+            document.getElementsByTagName('head')[0].appendChild(noindex);
+        }
+    </script>
     <title>REST API v2.0 Reference – Embedded | Bold BI Documentation</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="./common/favicon.ico" />
@@ -18,12 +34,13 @@
 
 <body>
     <div hidden="" id="Bold BI-analytics" data-queue="Bold BI - User Guide"></div>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript>
-        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NB7XZPC" height="0" width="0"
-                style="display:none;visibility:hidden"></iframe>
-    </noscript>
-    <!-- End Google Tag Manager (noscript) -->
+    <!-- Start Alexa Certify Javascript -->
+	<script type="text/javascript">
+        _atrk_opts = { atrk_acct:"vHAUs1FYxz20cv", domain:"boldbi.com",dynamic: true};
+        (function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://certify-js.alexametrics.com/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+        </script>
+        <noscript><img src="https://certify.alexametrics.com/atrk.gif?account=vHAUs1FYxz20cv" style="display:none" height="1" width="1" alt="" /></noscript>
+    <!-- End Alexa Certify Javascript -->
 
     <div class="ej-doc-header">
         <div class="ej-doc-left-side">
@@ -37,12 +54,13 @@
             <a href="https://embed-sdk.boldbi.com/" target="_blank">Demos</a>
             <a href="https://www.boldbi.com/contact" target="_blank">Support</a>
             <a href="https://www.boldbi.com/blog" target="_blank">Blog</a>
+			<a href="https://www.boldbi.com/embedded/get-free-demo" target="_blank" role="button"><div class="header-demo-link">Schedule Free Demo</div></a>
         </div>
     </div>
     <redoc spec-url='swagger.json'></redoc>
     <div id="doc-footer">
         <div id="footer-copyright">
-            <a id="copyright" target="_blank" href="http://www.syncfusion.com/copyright">Copyright © 2001 - <span id="copyright-year"> 2020</span> Syncfusion Inc. All Rights Reserved</a>
+            <a id="copyright" target="_blank" href="http://www.syncfusion.com/copyright">Copyright © 2001 - <span id="copyright-year"> 2021</span> Syncfusion Inc. All Rights Reserved</a>
         </div>
         <div id="footer-powered_by"></div>
     </div>

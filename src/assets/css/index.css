@@ -630,10 +630,9 @@ div#doc-content-search #doc-content-search-icon {
     height: 36px;
     width: 50px;
     top: 11px;
-    right: 44px;
     position: absolute;
     padding-top: 10px;
-    padding-right: 0px;
+    padding-right: 10px;
     border-radius: 0px 4px 4px 0px;
 }
 
@@ -668,7 +667,8 @@ div#doc-mobile-content-search {
 div#doc-content-search {
     width: 260px;
     float: right;
-    margin-right: 25px;
+    margin-left: 10px;
+    margin-right: 17px;
     margin-top: 12px;
     border: 1px solid lightgray;
     background: #FFFFFF;
@@ -873,15 +873,15 @@ div#doc-search-result .search-content-close > span::before {
 .doc-header-links {
 	
   float: right;
-  width: 501px;
   height: 60px;
+  display: flex;
 }
 
 /*CSS for Firefox*/
 
 @-moz-document url-prefix() {
-  .doc-header-links {
-    width: 501px;
+  div#doc-content-search #doc-content-search-icon {
+    padding-top: 8px;
   }
 }
 
@@ -911,6 +911,24 @@ div#doc-search-result .search-content-close > span::before {
 
 .doc-header-link.doc-download-link:hover {
   background-color: #006CE6;
+}
+
+.doc-header-links .header-demo-link {
+    color: #FFFFFF;
+    background-color: #FF4801;
+    height: 36px;
+    width: 260px;
+    text-align: center;
+    margin-top: 12px;
+    padding-top: 5px;
+    font-family: caros,sans-serif;
+    font-size: 17px;
+    letter-spacing: 1px;
+    line-height: 26px;
+    cursor: pointer;
+    text-decoration: none;
+    opacity: 1;
+    border-radius: 4px;
 }
 
 /*Doc Body*/
@@ -1726,10 +1744,11 @@ div.doc-mobile-links .doc-header-platform,
   }
 }
 
-@media screen and (max-width: 765px) {
-  #footer-powered_by, .doc-header-links {
-    display: none;
-  }
+@media screen and (max-width: 768px) {
+    #footer-powered_by, .doc-header-links,
+    #doc-content-search-icon {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 1240px) {
@@ -1739,9 +1758,9 @@ div.doc-mobile-links .doc-header-platform,
 }
 
 @media screen and (max-width: 1240px) {
-  div#doc-right-toc {
-    display: none;
-  }
+    div#doc-right-toc, #doc-content-search-icon {
+        display: none;
+    }
   div#md-content {
     padding-right: 0px;
   }

@@ -39,6 +39,19 @@ You need to follow these steps to get `keys`,
 ## How to enable Bing Maps by configuring the web config file in Enterprise
 To enable the bing maps in your enterprise build, you need to follow these steps.
 
+### Bold BI version 4.1.36 or later
+
+Open the below mentioned file in your enterprise build location,
+[`Installed_Directory` \BoldServices\bi\dataservice\appsettings.json].
+
+Set `widget:bing_map:enable` key value as true and set your Bing Maps Key in `widget:bing_map:api_key` in `appsettings.json`.
+
+![Bing Map Configuration](/static/assets/embedded/visualizing-data/visualization-widgets/images/bing-maps/appsettings-Json.png)
+
+Then, launch your build and you find the bing maps in design panel.
+
+### Bold BI version below 4.1.36
+
 1.  Open the below mentioned file in your enterprise build location,
 [`Installed_Directory`\ Bold BI\Dashboard Designer\Web.config]
 ![web.config file in build](/static/assets/embedded/visualizing-data/visualization-widgets/images/bing-maps/webconfig.png)
@@ -78,7 +91,35 @@ The following steps explains about data configuration of the Bing maps.
 3.	The data tab will be opened with available columns from the connected data source.
 ![Available fields list](/static/assets/embedded/visualizing-data/visualization-widgets/images/bing-maps/available-fields-list.png)
 
-#### Latitude section
+### Location Value
+
+An element can be dragged from measure or dimension section.
+
+![Bind columns for LocationValue](/static/assets/embedded/visualizing-data/visualization-widgets/images/bing-maps/Bind-locationValue.png)
+
+### Location Name
+
+Drag the elements from the `Dimension` to `Location Name` section.
+
+![Add location name field](/static/assets/embedded/visualizing-data/visualization-widgets/images/bing-maps/Add-location-name-field.png)
+
+Bing map will render as follows.
+
+![Bing map - Choropleth map demo](/static/assets/embedded/visualizing-data/visualization-widgets/images/bing-maps/choroplethmap.png)
+
+You can add more than one value to the `Location Name` section. The alert message will be shown to enable the drill-down option.
+
+![Drill confirmation alert](/static/assets/embedded/visualizing-data/visualization-widgets/images/bing-maps/drill-alert.png)
+
+Click `Yes` to enable the option.
+
+NOTE: If you click `No`, a single value will be added to the `Location Name` field(i.e. newly dropped column replace the existing one).
+
+*Figure: Bing-map with drilled view of the selected area.*
+
+![Drilled view](/static/assets/embedded/visualizing-data/visualization-widgets/images/bing-maps/drilled-view.png)
+
+### Latitude Section
 
 Bind column by dragging and dropping the element from sections to `Latitude`.
 
@@ -86,9 +127,8 @@ Bind column by dragging and dropping the element from sections to `Latitude`.
 
 > **NOTE:**  
 * The field added in this section will act as a latitude value. 
-* It is a mandatory section for widget visualization and only one value can be configured. 
 
-#### Longitude section
+### Longitude Section
 
 Drag and drop the elements from sections to `Longitude` section.
 
@@ -96,27 +136,46 @@ Drag and drop the elements from sections to `Longitude` section.
 
 > **NOTE:** 
 * The field added in this section will act as a longitude value. 
-* It is a mandatory section and only one value can be configured
 
 *Image: Bing maps widget after configuring the mandatory fields.*
 
 ![Configured Bing maps](/static/assets/embedded/visualizing-data/visualization-widgets/images/bing-maps/configured-widget.png)
 
-#### Marker Tooltip section
+### Address
+
+Drag and drop the elements from sections to `Address` section. The field added here, will act as a address value.
+
+![Address fields](/static/assets/embedded/visualizing-data/visualization-widgets/images/bing-maps/address-fields.png)
+
+Bing maps widget, after configuring the Address fields.
+
+![Configured Bing maps](/static/assets/embedded/visualizing-data/visualization-widgets/images/bing-maps/configured-address.png)
+
+### Postal Code
+
+Drag and drop the elements from other sections to `Postal Code` section. The field added here, will act as a postal code.
+
+![Postal Code fields](/static/assets/embedded/visualizing-data/visualization-widgets/images/bing-maps/postalcode-fields.png)
+
+Image: Bing maps widget after configuring the Postal Code fields.
+
+![Configured Bing maps](/static/assets/embedded/visualizing-data/visualization-widgets/images/bing-maps/configured-postalCode.png)
+
+### Marker Tooltip section
 Drag and drop the elements from sections to `Marker Tooltip` section. It will define the marker tooltip value in the bing maps. Also, it is an optional section. 
 
 ![Marker Tooltip fields](/static/assets/embedded/visualizing-data/visualization-widgets/images/bing-maps/marker-tooltip.png)
 
-*Image: Bing maps widget after configuring the market tooltip field*
+Image: Bing maps widget after configuring the market tooltip field
 
 ![Marker tooltip customized Bing maps](/static/assets/embedded/visualizing-data/visualization-widgets/images/bing-maps/tooltip-customized-widget.png)
 
-#### Marker Image section
+### Marker Image section
 Drag and drop the elements from sections to `Marker Image` section. It will define the marker in the bing maps. Also, it is an optional section. 
 
 ![Marker Image fields](/static/assets/embedded/visualizing-data/visualization-widgets/images/bing-maps/marker-image-field.png)
 
-*Image: Bing maps widget after configuring the marker Image field*
+Image: Bing maps widget after configuring the marker Image field
 
 ![Marker Image customized Bing maps](/static/assets/embedded/visualizing-data/visualization-widgets/images/bing-maps/marker-image-customization.png)
 
@@ -173,6 +232,28 @@ This allows you to toggle the theme of the bing maps.
 This allow to show the zooming Icons in bing maps.
 
 ![Zooming Icons](/static/assets/embedded/visualizing-data/visualization-widgets/images/bing-maps/zooming-icons.png)
+
+If you perform zoom in or zoom out using icons or mouse in design mode, then the same zoom level will be maintained in the view mode.
+
+Zoom state in design mode.
+
+![Zooming Design](/static/assets/embedded/visualizing-data/visualization-widgets/images/bing-maps/zooming-Design.png)
+
+Zoom state in view mode.
+
+![Zooming View](/static/assets/embedded/visualizing-data/visualization-widgets/images/bing-maps/zooming-view.png)
+
+### Map shape
+This allows you to toggle the map shapes of the Bing Maps.
+
+1. Choropleth
+
+![Choropleth type bing map](/static/assets/embedded/visualizing-data/visualization-widgets/images/bing-maps/choropleth-bing-map.png)
+
+2. Bubble
+
+![Bubble type bing map](/static/assets/embedded/visualizing-data/visualization-widgets/images/bing-maps/bubble-bing-map.png)
+
 
 ### Marker Settings
 
@@ -231,6 +312,24 @@ Drag and drop the required fields to the respective field containers to render t
 After that configurations
 
 ![Bing maps with address information](/static/assets/embedded/visualizing-data/visualization-widgets/images/bing-maps/bing-maps-after-address-configuration.png)
+
+### Filter
+
+![Filter Option](/static/assets/embedded/visualizing-data/visualization-widgets/images/bing-maps/filter-section.png)
+
+#### Act as master widget
+
+This allows you to define the Bing Maps widget as a master widget such that its filter action can be made to listen by other widgets in the dashboard.
+
+#### Ignore filter actions
+
+This allows you to define this Bing Maps widget to ignore responding to the filter actions applied on other widgets in dashboard.
+
+#### Enable hierarchical filtering
+
+Using this option, you can enable or disable hierarchical top N filtering. While applying Top N filter with multiple dimension columns, the data returned can be customized based on whether the filtering need to be done as flat or based on the hierarchy of dimension columns added.
+
+When Hierarchical Filter option is enabled, the Top N will be applied for each individual column separately based on the number set for each column.
 
 ### Container appearance
 

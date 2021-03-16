@@ -36,7 +36,7 @@ Once you click the data source, the NEW DATA SOURCE configuration panel opens.
 4. In **Max Rows**, enter the maximum number of rows to be fetched from the Ask Nicely data source.
 5. Choose a time interval for **Refresh Settings** using the combo box, to trigger the Rest API request periodically to keep the data in sync with our dashboard.  
 6. Select **JSON** data type in **Data Format** combo box.
-7. Replace `&lt;:your_api_key&gt;` at the end of URL with a valid API Key.
+7. Replace `<:your_api_key>` at the end of URL with a valid API Key.
 8. Choose *None* under **Authentication Type** as authentication is done through the URL with API key.
 
 You can also edit the connection information set here using the [Edit Connection](https://help.syncfusion.com/bold-bi/editing-a-data-connection) option.
@@ -44,7 +44,7 @@ You can also edit the connection information set here using the [Edit Connection
 #### How do I get API Key for connecting AskNicely Data source?
 1. Login to your *Ask Nicely* account.
 2. Go to *Setup -> API* and you can find the API Key.
-3. Replace this API Key in `&lt;:your_api_key&gt;` in Ask Nicely data source in Bold BI Dashboard.
+3. Replace this API Key in `<:your_api_key>` in Ask Nicely data source in Bold BI Dashboard.
 
 ![Reveal API Key](/static/assets/embedded/working-with-datasource/data-connectors/images/ask-nicely/APIKey.png)
 
@@ -87,7 +87,7 @@ Period of time before next refresh call is triggered. This will automatically tr
 
 [Editing a Data Connection](/cloud-bi/working-with-data-source/editing-a-data-connection/)   
 
-[Dashboard Designer Walkthrough](/cloud-bi/getting-started/bold-bi-walk-through/)
+[Dashboard Designer Walkthrough](/cloud-bi/getting-started/quick-start/)
 
 [AskNicely Integration](https://www.boldbi.com/integrations/asknicely?utm_source=syncfusion&utm_medium=documentation&utm_campaign=boldbiasknicelyintegration)
 

@@ -98,8 +98,8 @@ Replace it in the URL to query a particular payment:
 
 [Editing a Data Connection](/cloud-bi/working-with-data-source/editing-a-data-connection/)   
 
-[Dashboard Designer Walkthrough](/cloud-bi/getting-started/bold-bi-walk-through/)
+[Dashboard Designer Walkthrough](/cloud-bi/getting-started/quick-start/)
 
 [Copper Rate Limits](https://developer.copper.com/?version=latest#requests)
 
-[Copper Integration](https://www.boldbi.com/integrations/copper?utm_source=syncfusion&utm_medium=documentation&utm_campaign=boldbicopperintegration)
+[Copper Integration](https://www.boldbi.com/integrations/copper)

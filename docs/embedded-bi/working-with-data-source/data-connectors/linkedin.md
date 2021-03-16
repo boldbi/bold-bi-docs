@@ -87,7 +87,7 @@ Period of time before next refresh call is triggered. This will automatically tr
 
 Replace it to the URI.
 
-[https://api.linkedin.com/v1/companies/2414183/updates?format=json](https://api.linkedin.com/v1/companies/2414183/updates?format=json)
+`https://api.linkedin.com/v2/organizations/<:Organization_ID>`
 
 LinkedIn provides two dedicated [test organizations](https://docs.microsoft.com/en-us/linkedin/marketing/integrations/community-management/organizations#test-organizations).
 
@@ -97,11 +97,11 @@ LinkedIn provides two dedicated [test organizations](https://docs.microsoft.com/
 
 **Organization**
 
-[https://api.linkedin.com/v2/organizations/2414183](https://api.linkedin.com/v2/organizations/2414183)
+`https://api.linkedin.com/v2/organizations/2414183`
 
 **Company updates**
 
-[https://api.linkedin.com/v1/companies/2414183/updates?format=json](https://api.linkedin.com/v1/companies/2414183/updates?format=json)
+`https://api.linkedin.com/v1/companies/2414183/updates?format=json`
 
 ### Preview and data import
 * Click **Preview & Connect** to connect with the configurations set.
@@ -129,4 +129,4 @@ You can edit, delete and re-authorize this account from the **Connected Accounts
 
 [Editing a Data Connection](/embedded-bi/working-with-data-source/editing-a-data-connection/)   
 
-[Dashboard Designer Walkthrough](/embedded-bi/getting-started/bold-bi-walk-through/)
+[Dashboard Designer Walkthrough](/embedded-bi/getting-started/quick-start/)

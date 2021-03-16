@@ -229,6 +229,28 @@ var dashboard = BoldBI.create({
 dashboard.loadDashboard();
 ```
 
+## Set a Culture for the Current User in Embedding
+
+You can set a culture for the current user using the API in embedding.
+For example, if you configure the widget to showcase the currency value, it will be displayed with `Auto (English(en-US))` format by default as shown in the following image.
+
+![Default Curreny Culture](/static/assets/embedded/javascript/images/default-curreny-culture.png)
+
+And the values in the widget will be rendered as follows,
+
+![Default Curreny Culture Grid](/static/assets/embedded/javascript/images/default-currency-culture-grid.png)
+
+You can embed the Bold BI dashboards in your web page by following the steps in this [link](/embedded-bi/javascript-based/getting-started/).
+
+After embedding the dashboard, you can change the culture settings on the embedding dashboard instance to get the desired currency format by passing it using the following highlighted API. 
+
+![Culture Settings API](/static/assets/embedded/javascript/images/culture-settings-api.png)
+
+After this, the values in the widget will be displayed as follows within your application.
+
+![Modified Currency Culture](/static/assets/embedded/javascript/images/modified-currency-culture.png)
+
+
 ## dashboardSettings
 
 <h3 class="doc-prop-wrapper" id="dashboardsettingsshowheader" data-Path="dashboardsettingsshowheader-dashboardSettings.showHeader">

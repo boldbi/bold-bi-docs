@@ -75,7 +75,7 @@ documentation: ug
 
 [Editing a Data Connection](/embedded-bi/working-with-data-source/editing-a-data-connection/)   
 
-[Dashboard Designer Walkthrough](/embedded-bi/getting-started/bold-bi-walk-through/)
+[Dashboard Designer Walkthrough](/embedded-bi/getting-started/quick-start/)
 
 [LiveAgent Integration](https://www.boldbi.com/integrations/liveagent?utm_source=syncfusion&utm_medium=documentation&utm_campaign=boldbiliveagentintegration)
 

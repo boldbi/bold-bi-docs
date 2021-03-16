@@ -29,7 +29,7 @@ Once you click the data source, the NEW DATA SOURCE configuration panel opens.
 1. Enter a name and description (optional) for the data source.
 2. Enter a valid Freshservice REST API endpoint in the URL textbox. Refer the [Freshservice API documentation](https://api.freshservice.com/) for more details.
 
-    Example: [https://&lt;:your_domain&gt;.freshservice.com/helpdesk](https://%3c:your_domain%3e.freshservice.com/helpdesk)
+    Example: `https://<:your_domain>.freshservice.com/helpdesk`
 
 3. Select **GET** method for the REST API in **Method** combo box.
 4. In **Max Rows**, enter the maximum number of rows to be fetched from the Freshservice data source. This value is used to fetch the data from Freshservice data source via pagination.
@@ -64,19 +64,19 @@ Period of time before next refresh call is triggered. This will automatically tr
 ### Setting up the URL
 
 1. Login to your Freshservice account. Go to *Get-Started -> Help desk URL*.
-2. Replace the domain name in *&lt;:your_domain&gt;* to query the help desk
+2. Replace the domain name in *<:your_domain>* to query the help desk
 
-[https://your_domain.freshservice.com/helpdesk](https://your_domain.freshservice.com/helpdesk)
+`https://your_domain.freshservice.com/helpdesk`
 
 ### Sample queries
 
 **Changes**
 
-[https://your_domain.freshservice.com/itil/changes.json](https://your_domain.freshservice.com/itil/changes.json)
+`https://your_domain.freshservice.com/itil/changes.json`
 
 **Departments**
 
-[https://your_domain.freshservice.com/itil/departments.json](https://your_domain.freshservice.com/itil/departments.json)
+`https://your_domain.freshservice.com/itil/departments.json`
 
 ### Preview and data import
 * Click **Preview & Connect** to connect with the configurations set.
@@ -95,6 +95,6 @@ Period of time before next refresh call is triggered. This will automatically tr
 
 [Editing a Data Connection](/cloud-bi/working-with-data-source/editing-a-data-connection/)   
 
-[Dashboard Designer Walkthrough](/cloud-bi/getting-started/bold-bi-walk-through/)
+[Dashboard Designer Walkthrough](/cloud-bi/getting-started/quick-start/)
 
-[Freshservice Integration](https://www.boldbi.com/integrations/freshservice?utm_source=syncfusion&utm_medium=documentation&utm_campaign=boldbifreshserviceintegration)
+[Freshservice Integration](https://www.boldbi.com/integrations/freshservice)

@@ -138,6 +138,16 @@ If you disable the Limit Dates option, there is no limit for the date range.
 
 ![disabling date range limit](/static/assets/embedded/visualizing-data/visualization-widgets/images/date-picker/datepicker_limitless.png)
 
+**Fixed Calendar Selection**
+
+If you enable `Range` option, `Fixed Calendar Selection` will be shown.
+
+![Fixed Calendar Selection Property](/static/assets/embedded/visualizing-data/visualization-widgets/images/date-picker/Fixed-Calender-Selection-Property.png)
+
+This allows you to select a date(start or end) without discarding your previous selection.
+
+And you can only select a start date from the left calendar and the end date from the right calendar.
+
 **Filter**
 
 ![filter configuration for date picker](/static/assets/embedded/visualizing-data/visualization-widgets/images/date-picker/filter.png)
@@ -172,7 +182,7 @@ This allows you to apply the specified radius to the widget corners. Value can b
 
 **Enable Comments**
 
-This allows you to enable/disable comment for dashboard widget. For more details refer [here](/embedded-bi/working-with-widgets/commenting-widget/)
+This allows you to enable/disable comment for dashboard widget. For more details refer [here](/embedded-bi/visualizing-data/working-with-widgets/commenting-widget/)
 
 
 

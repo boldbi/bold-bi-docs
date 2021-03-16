@@ -44,8 +44,6 @@ function getTreeData(data, indexPageMapper) {
     searchData = [];
     accData = [];
     routerData = {};
-    keys.unshift('Home Page');
-    data['Home Page'] = '/';
 
     for (let i = 0; i < keys.length; i++) {
         let isCommon = typeof data[keys[i]] === 'string' ? true : false;
@@ -95,6 +93,7 @@ function generateTreeData(data, parentIns, firstLevelKey) {
             let routerPath = `${indexPageMapper[firstLevelKey]}/${obj['routerPath']}`;
             obj.id = `/${routerPath}/`;
             routerData[`/${routerPath}/`] = { title: [firstLevelKey, keys[i]], isCommonSrc: false, isIndexPage: true, platform: firstLevelKey };
+            searchData.push({ title: keys[i], id: `/${routerPath}/`, component: firstLevelKey });
             let previousPathIndex = paths.length - 1;
             routerData[`/${routerPath}/`]['prevPath'] = paths[previousPathIndex];
             if (parentIns) {

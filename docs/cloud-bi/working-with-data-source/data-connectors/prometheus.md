@@ -75,6 +75,6 @@ Period of time before next refresh call is triggered. This will automatically tr
 
 [Editing a Data Connection](/cloud-bi/working-with-data-source/editing-a-data-connection/)   
 
-[Dashboard Designer Walkthrough](/cloud-bi/getting-started/bold-bi-walk-through/)
+[Dashboard Designer Walkthrough](/cloud-bi/getting-started/quick-start/)
 
 [Prometheus Integration](https://www.boldbi.com/integrations/prometheus)

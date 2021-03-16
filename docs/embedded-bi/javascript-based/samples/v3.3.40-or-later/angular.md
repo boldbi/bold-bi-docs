@@ -10,11 +10,11 @@ documentation: ug
 
 We have created the Angular and ASP.NET Core application for achieving this embedding. Here, the Angular app acts as a client and the Core app acts as a server. Using this environment, we could be able to list the dashboards and render them on it.  
 
-> **NOTE:** The best way to get started would be  reading the [Getting Started](/embedded-bi/javascript/getting-started/) section of the documentation to start using first. The [Getting Started](/embedded-bi/javascript/getting-started/) guide gives you enough information that you need to know before working on the sample.      
+> **NOTE:** The best way to get started would be  reading the [Getting Started](/embedded-bi/javascript-based/getting-started/) section of the documentation to start using first. The [Getting Started](/embedded-bi/javascript-based/getting-started/) guide gives you enough information that you need to know before working on the sample.      
 
 ## How to run the sample
 
-1. Please download the Angular App with ASP.NET Core Application from [here](https://embed-sdk.boldbi.com/getting-started/angular-v3.3/sample.zip).    
+1. Please download the Angular App with ASP.NET Core Application from [here](https://onpremise-demo.boldbi.com/getting-started/angular-v3.3/sample.zip).    
 
 2. Here, the Angular application act as a client, and the ASP.NET Core application act as a server since we need to set the following properties in the `app.component.ts` file as follows.
 ![Embed Properties in App Component](/static/assets/embedded/javascript/sample/images/angular-app-comp.png)

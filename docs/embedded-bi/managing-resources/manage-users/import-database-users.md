@@ -34,6 +34,12 @@ Bold BI will import the chosen users and a confirmation message will be displaye
 
 ![Success message after imported the Database users](/static/assets/embedded/managing-resources/manage-users/images/Database-User-imported-new.png)
 
+## Duplicate Users
+
+ Existing database users who has the same username or email address as that of the Bold BI users(who are already present), will be marked as duplicate users and will not be allowed to import into Bold BI.
+
+ ![Display Duplicated Users](/static/assets/embedded/managing-resources/manage-users/images/Duplicated-existing-db-import-users.png)
+
 ## Modify Existing Database Connection
 
 To modify Existing Database configuration settings, click on the `Modify` link as below

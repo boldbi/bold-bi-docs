@@ -31,7 +31,7 @@ Once you click the data source, the NEW DATA SOURCE configuration panel opens.
 1. Enter a name and description (optional) for the data source.
 2. Upload a file based on selected file type data source.
 
-> **NOTE:** You can preview data with file size less than or equal to  `75 megabytes`.
+> **NOTE:** You can preview data with file size less than or equal to  `200 megabytes`.
 
 You can also edit the connection information set here using the [Edit Connection](/embedded-bi/working-with-data-source/editing-a-data-connection/) option.
 
@@ -65,7 +65,7 @@ You can also upload `.txt` or `.tsv` files in this data source. Use <b>Separator
 
 [Editing a Data Connection](/embedded-bi/working-with-data-source/editing-a-data-connection/)   
 
-[Dashboard Designer Walkthrough](/embedded-bi/getting-started/bold-bi-walk-through/)
+[Dashboard Designer Walkthrough](/embedded-bi/getting-started/quick-start/)
 
 [CSV Integration](https://www.boldbi.com/integrations/csv?utm_source=syncfusion&utm_medium=documentation&utm_campaign=boldbicsvintegration)
 
