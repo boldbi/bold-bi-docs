@@ -7,20 +7,21 @@ class MainHeader extends React.Component {
         super();
         this.state = {
             blogPath: "https://www.boldbi.com/blog",
-            demosPath: "https://embed-sdk.boldbi.com/"
+            demosPath: "https://samples.boldbi.com/embed"
         }
     }
     render() {
         return (
             <SiteContainer>
                 <div className="doc-icons icon-burger_menu doc-hamburger-icon"></div>
-                <a className="doc-logo-link"><div className="doc-logo"></div></a>
+                <a className="doc-logo-link" href="https://www.boldbi.com/documentation"><div className="doc-logo"></div></a>
                 <div className="doc-header-platform">Documentation</div>
                 <div className="doc-header-links">
                     <a href={this.state.demosPath} target="_blank"><div className="doc-header-link doc-demos-link">Demos</div></a>
                     <a href="https://www.boldbi.com/contact" target="_blank"><div className="doc-header-link doc-support-link">Support</div></a>
                     <a href={this.state.blogPath} target="_blank"><div className="doc-header-link doc-forum-link">Blog</div></a>
                     <div id="doc-content-search"></div>
+                    <a href="https://www.boldbi.com/embedded/get-free-demo" target="_blank" role="button"><div class="header-demo-link">Schedule Free Demo</div></a>
                 </div>
             </SiteContainer>
         )

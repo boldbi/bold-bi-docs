@@ -179,6 +179,14 @@ A Legend is a text used to describe the data plotted. This allows you to toggle 
 
 Enabling this option of **Custom Legend Text** will allow you to define a custom text (through the text area) to display for each legend series (selecting through the combo box) in chart.
 
+**Legend Label Color**
+
+This allows you to change the chart legend title and label colors.
+
+![Chart Legend Color Option](/static/assets/cloud/visualizing-data/visualization-widgets/images/100-stacked-bar-chart/legend-label-color-option.png)
+
+![Chart Legend Color](/static/assets/cloud/visualizing-data/visualization-widgets/images/100-stacked-bar-chart/legend-label-color.png)
+
 **Custom Legend Settings**
 
 You can customize the legend text through the Custom Legend Settings dialog. This dialog will show the legend text list as labels at left and corresponding text area at right to add the formatted text to display instead. When a column is added into Row section, this dialog will show two options `Individual` and `Group` at top in addition, to toggle between.
@@ -208,6 +216,14 @@ For example, If Display Format is {{ : Row }} ({{ : Value }}), then Legend serie
 This allows you to toggle the visibility of value labels.
 
 ![Show-Value-Labels](/static/assets/cloud/visualizing-data/visualization-widgets/images/100-stacked-bar-chart/Show-Value-Labels.PNG)
+
+**Value Label Color**
+
+This allows you to customize value label's color.
+
+![Value label Color Option](/static/assets/cloud/visualizing-data/visualization-widgets/images/100-stacked-bar-chart/data-label-color-option.png)
+
+![Value label Color](/static/assets/cloud/visualizing-data/visualization-widgets/images/100-stacked-bar-chart/data-label-color.png)
 
 **Value Label Rotation**
  
@@ -288,13 +304,21 @@ This allows you to enable/disable the image export option for this 100% stacked 
 
 **Enable Comments**
 
-This allows you to enable/disable comment for dashboard widget. For more details refer [here](/cloud-bi/visualizing-data/working-with-widgets/commenting-dashboard-and-widget/)
+This allows you to enable/disable comment for dashboard widget. For more details refer [here](/cloud-bi/visualizing-data/working-with-widgets/commenting-widget/)
 
 **Axis**
 
-![Chart axis](/static/assets/cloud/visualizing-data/visualization-widgets/images/100-stacked-bar-chart/chartAxis.PNG)
+![Chart axis](/static/assets/cloud/visualizing-data/visualization-widgets/images/100-stacked-bar-chart/axis-settings.png)
 
 This section allows you to customize the axis settings in chart. 
+
+**Title color**
+
+This allows you to customize the axis title color.
+
+**Label color**
+
+This allows you to customize the axis label color.
 
 **Show Category Axis**
 

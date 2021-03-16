@@ -194,11 +194,27 @@ A legend is text used to describe the plotted data. It allows you to toggle the 
 
 Enabling the **Custom Legend Text** option will allow you to define a custom text (through the text area) to display for each legend series (selecting through the combo box) in the chart.
 
+**Legend Label Color**
+
+This allows you to change the chart legend title and label colors.
+
+![Chart Legend Color Option](/static/assets/embedded/visualizing-data/visualization-widgets/images/pyramid-chart/legend-label-color-option.png)
+
+![Chart Legend Color](/static/assets/embedded/visualizing-data/visualization-widgets/images/pyramid-chart/legend-label-color.png)
+
 **Show value labels**
 
 Toggle the visibility of value labels.
 
 ![Show value labels](/static/assets/embedded/visualizing-data/visualization-widgets/images/pyramid-chart/Show-value-labels.png)
+
+**Value Label Color**
+
+This allows you to customize value label's color.
+
+![Value label Color Option](/static/assets/embedded/visualizing-data/visualization-widgets/images/pyramid-chart/data-label-color-option.png)
+
+![Value label Color](/static/assets/embedded/visualizing-data/visualization-widgets/images/pyramid-chart/data-label-color.png)
 
 **Data label value**
 

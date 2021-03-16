@@ -74,6 +74,7 @@ You can also define parameters with operators to search for one or more values l
 <td> parameter=CONTAINS(value1, value2)</td> 
 </tr>
 </table>
+
 	
 ## Date Parameters Support
 

@@ -3,8 +3,9 @@
     "Overview": "overview",
     "Setup": {
       "Overview": "overview",
-      "Deploying in Server": {
-        "Installation And Deployment": "installation-and-deployment",
+      "Deploying in Windows": {
+        "Prerequisites": "prerequisites-windows",
+        "Installation and Deployment": "installation-and-deployment",
         "Version Upgrade": "upgrade-to-latest",
         "Installing Bold BI over Bold Reports": "install-when-bold-report-exist"
       },
@@ -15,17 +16,33 @@
         "Bold BI in Microsoft Azure Marketplace": "new-azure-vm",
         "Upgrade VM to latest version": "update-azure-vm"
       },
-      "Deploying in AWS ECS": "deploying-aws"
+      "Deploying in Azure App Service": {        
+        "Prerequisites": "prerequisites",
+        "Recommendations": "recommendations",
+        "Using ARM template": "using-arm-template",
+        "Upgrade": "upgrade"
+      },
+      "Deploying in Linux": {
+        "Prerequisites": "prerequisites-linux",
+        "Installation and Deployment": {
+          "Bold BI on Ubuntu": "bold-bi-on-ubuntu",
+          "Bold BI on CentOS": "bold-bi-on-centos"
+        },
+        "Install Optional Libraries": "install-optional-libraries.md",
+        "Upgrading Bold BI Linux Server": "upgrade-to-latest"
+      },
+      "Deploying in Kubernetes": "deploying-in-kubernetes"
     },
     "Application Startup": "application-startup",
     "Getting Started": {
-      "Quick Start": "bold-bi-walk-through.md"
+      "Quick Start": "quick-start.md"
     },
     "JavaScript based": {
       "Getting Started": "getting-started",
       "Designer Embedding": "designer-embedding",
       "Widget Embedding": "widget-embedding",
       "Multiple Dashboard and Widget Embedding": "multiple-dashboard-and-widget-embedding",
+      "Pinboard Embedding": "pinboard-embedding",
       "Authorization Server": "authorize-server",
       "Group Based Authorization": "group-based-authorization",
       "API Reference": {
@@ -119,6 +136,7 @@
         "Google Drive": "google-drive",
         "Google Search Console": "google-search-console",
         "Google Sheets": "google-sheets",
+        "GravityForms": "gravity-forms",
         "Harvest": "harvest",
         "Help Scout": "help-scout",
         "HubSpot": "hubspot",
@@ -150,6 +168,7 @@
         "ODBC": "odbc",
         "Optimizely": "optimizely",
         "Oracle": "oracle",
+        "Oracle BI Reports": "oracle-bi-reports",
         "Pipeline Deals": "pipeline-deals",
         "Pipedrive": "pipedrive",
         "Podio": "podio",
@@ -180,6 +199,7 @@
         "SurveyGizmo": "survey-gizmo",
         "SurveyMonkey": "surveymonkey",
         "Twilio": "twilio",
+		"Trello": "trello",
         "Todoist": "todoist",
         "Toggl": "toggl",
         "WordPress": "wordpress",
@@ -198,6 +218,7 @@
         "Configure Data Filters": "configuring-data-filters",
         "Configure Expression Columns": "configuring-expression-columns"
       },
+      "Connecting to Stored Procedures": "connecting-to-stored-procedures",
       "Editing a Data Source": "editing-a-data-source",
       "Shared Tables": "shared-table",
       "Deleting a Data Source": "deleting-a-data-source",
@@ -256,6 +277,7 @@
       },
       "Working with Widgets": {
         "Filtering": "configuring-widget-filters",
+        "Manual Filtering": "manual-filters",
         "Sorting": "advanced-sorting",
         "Linking": "linking-urls-and-dashboards",
         "Configuring Label Parameters": "configuring-label-parameters",
@@ -281,9 +303,9 @@
       "Publish Dashboard": "publish-dashboard",
       "Data Alerts": "data-alerts",
       "Preview Dashboard": {
+        "Maximizing Widget View": "maximizing-widget-view",
         "Exporting Reports from dashboard": "dashboard-settings",
         "Exporting Reports from Widgets": {
-          "Maximizing Widget View": "maximizing-widget-view",
           "Exporting Options": "exporting-options"
         },
         "Refreshing Dashboard": "refresh-dashboard",
@@ -312,6 +334,7 @@
         "Public Dashboards": "public-dashboards",
         "Default views": "default-views",
         "Auto-save filter": "auto-save-filter",
+        "Theming": "enable-or-disable-dashboard-theme",
         "Deployment dashboards": "deployment-dashboard"
       },
       "Embed Settings": "embed-settings",
@@ -325,6 +348,9 @@
       "Active Directory": {
         "Active Directory Settings": "active-directory",
         "Active Directory Synchronization Schedule": "active-directory-synchronization-schedule"
+      },
+      "Azure Active Directory": {
+        "Azure Active Directory Synchronization Schedule": "azure-active-directory-synchronization-schedule"
       },
       "SSO": {
         "Overview" : "overview",
@@ -386,6 +412,8 @@
       "Manage Groups": {
         "Import Active Directory Groups": "import-active-directory-groups",
         "Synchronize Active Directory Groups": "synchronize-active-directory-groups",
+        "Import Azure Active Directory Groups": "import-azure-active-directory-groups",
+        "Synchronize Azure Active Directory Groups": "synchronize-azure-active-directory-groups",
         "Import OAuth 2.0 Groups": "import-oauth-groups",
         "Import OpenID Connect Groups": "import-openid-groups"
       }
@@ -393,6 +421,8 @@
     "Rebranding": "rebranding",
     "Migration Utility": "migration-utility",
     "Localization": "localization",
+    "User Interface Customization": "user-interface-customization",
+    "Data Security Configuration": "data-security-configuration",
     "Accessing through Mobile App": {
       "Getting Started": "getting-started",
       "Dashboard": "dashboard",
@@ -424,6 +454,7 @@
     "FAQ": {
       "What are the resources will be generated in the installed machine?": "what-all-are-the-files-and-folders-will-be-generated-in-the-installed-machine",
       "How to change the binding in the Bold BI Embedded?": "how-to-change-binding-in-bold-bi-embedded",
+      "How to change the binding in the Bold BI Embedded version below 4.1.36?":"how-to-change-binding-in-bold-bi-embedded-below-v4.1.36",
       "Where can I find the error and debug log files?": "where-can-i-find-the-error-and-debug-log-files",
       "How to configure Bold BI Enterprise in Reverse Proxy server?": "how-to-configure-bold-bi-in-reverse-proxy-server",
       "How to update the database in Bold BI Application?": "how-to-reset-database-for-bold-bi-application",
@@ -450,7 +481,14 @@
       "How many server deployments supported in a single Bold BI license?": "how-many-server-deployments-supported-in-a-single-bold-bi-license",
       "How to get the dashboard list based on group for the specific user?": "how-to-get-the-dashboard-list-based-on-group-for-the-specific-user",
       "What is the purpose of the databases used in the Bold BI?": "purpose-of-the-databases-used-in-the-bold-bi.md",
-      "How web-based data source works with Bold BI?": "how-web-based-data-source-works-with-bold-bi-embedded.md"
+      "How web-based data source works with Bold BI?": "how-web-based-data-source-works-with-bold-bi-embedded.md",
+      "How to host Bold BI as website in the IIS Express?":"how-to-host-bold-bi-as-website-in-iis-express.md",
+      "How to host Bold BI as website in the IIS?":"how-to-host-bold-bi-as-website-in-iis.md",
+	  "When you should choose multi-tenancy and with row-level security": "when-you-should-choose-multi-tenancy-and-with-row-level-security.md",
+	  "How to speed up the data access in SQL Server?": "how-to-speed-up-the-data-access-in-sql-server.md",
+	  "How the interactions can be made between the Bold BI and external application?": "how-the-interactions-can-be-made-between-the-bold-bi-and-external-application.md",
+	  "How to create an ODBC connection to a MySQL database in Windows": "how-to-create-an-odbc-connection-to-a-my-sql-database-in-windows.md",
+	  "How to share the dashboard to any users securely": "dashboard-authorized-access.md"
     }
   }
 }

@@ -91,4 +91,4 @@ Click the `Actions` button in the schedules grid context menu and select `Delete
 ![Delete Schedule](/static/assets/cloud/managing-resources/images/delete-schedule.png)
 
 ## Data Alerts
-Data alert provides the users to track certain conditions and helps responding to a specified recipients via mail when a certain predefined threshold is met. Please find more details on the [Data alerts](/bold-bi/data-alerts).
+Data alert provides the users to track certain conditions and helps responding to a specified recipients via mail when a certain predefined threshold is met. Please find more details on the [Data alerts](/embedded-bi/working-with-dashboards/data-alerts/).

@@ -44,7 +44,7 @@
     font-family: 'Caros',sans-serif;
     font-size: 21px;
     opacity: 1;
-    margin-left: 10px;
+    margin-left: 30px;
     padding-top: 3px;
 }
 
@@ -85,7 +85,25 @@
     background: #006CE6;
 }
 
-@media only screen and (max-width: 750px) {
+.header-demo-link {
+    color: #FFFFFF;
+    background-color: #FF4801;
+    height: 36px;
+    width: 204px;
+    text-align: center;
+    padding-top: 5px;
+    font-family: caros, sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 26px;
+    cursor: pointer;
+    text-decoration: none;
+    opacity: 1;
+    border-radius: 4px;
+}
+
+
+@media only screen and (max-width: 768px) {
     .ej-doc-header .ej-doc-right-side {
       display: none;
     }

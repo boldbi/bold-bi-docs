@@ -2,7 +2,7 @@
   "Cloud BI": {
     "Overview":  "overview",
     "Getting Started": {
-      "Quick Start": "bold-bi-walk-through"
+      "Quick Start": "quick-start"
     },
     "Working with Data Source": {
       "Creating a New Data Source": "creating-a-new-data-source",
@@ -60,6 +60,7 @@
         "Google Drive": "google-drive",
         "Google Search Console": "google-search-console",
         "Google Sheets": "google-sheets",
+        "GravityForms": "gravity-forms",
         "Harvest": "harvest",
         "Help Scout": "help-scout",
         "HubSpot": "hubspot",
@@ -90,6 +91,7 @@
         "OData": "odata",
         "Optimizely": "optimizely",
         "Oracle": "oracle",
+        "Oracle BI Reports": "oracle-bi-reports",
         "Pipeline Deals": "pipeline-deals",
         "Pipedrive": "pipedrive",
         "Podio": "podio",
@@ -120,6 +122,7 @@
         "SurveyGizmo": "survey-gizmo",
         "SurveyMonkey": "surveymonkey",
         "Twilio": "twilio",
+        "Trello": "trello",
         "Todoist": "todoist",
         "Toggl": "toggl",
         "WordPress": "wordpress",
@@ -140,6 +143,7 @@
         "Configure Data Filters": "configuring-data-filters",
         "Configure Expression Columns": "configuring-expression-columns"
       },
+      "Connecting to Stored Procedures": "connecting-to-stored-procedures",
       "Editing a Data Source": "editing-a-data-source",
       "Shared Tables": "shared-table",
       "Deleting a Data Source": "deleting-a-data-source",
@@ -156,8 +160,7 @@
       "Dashboard Parameters": "dashboard-parameter",
       "Configure Dashboard Parameter": "configuring-dashboard-parameters",
       "Configure Custom Attribute": "configuring-custom-attribute",
-      "White List IP addresses of the Bold BI Cloud servers": "white-list-ip-address-bold-bi-cloud",
-      "White List IP addresses of the Syncfusion Cloud servers": "white-list-ip-address-syncfusion-cloud"
+      "White List IP addresses of the Bold BI Cloud servers": "white-list-ip-address-bold-bi-cloud"
     },
     "Visualizing Data": {
       "Visualization Widgets": {
@@ -220,9 +223,9 @@
       "Commenting Dashboard": "commenting-dashboard",
       "Publish Dashboard": "publish-dashboard",
       "Preview Dashboard": {
+        "Maximizing Widget View": "maximizing-widget-view",
         "Exporting Reports from dashboard": "dashboard-settings",
         "Exporting Reports from Widgets": {
-          "Maximizing Widget View": "maximizing-widget-view",
           "Exporting Options": "exporting-options"
         },
         "Refreshing Dashboard": "refresh-dashboard",
@@ -340,7 +343,9 @@
       "How the data is loaded while rendering the dashboard?": "how-the-data-is-loaded-while-rendering-the-dashboard",
       "Do you need an internet connection to render sample dashboards in Bold BI?": "do-you-need-an-internet-to-render-sample-dashboards-in-bold-bi",
       "How to create a separate axis for the multiple series charts?": "how-to-create-a-separate-axis-for-the-multiple-series-charts",
-      "How web-based data source like Jira works with Bold BI?": "how-web-based-data-source-works-with-bold-bi"
+      "How web-based data source like Jira works with Bold BI?": "how-web-based-data-source-works-with-bold-bi",
+	  "How to speed up the data access in SQL Server?":"how-to-speed-up-the-data-access-in-sql-server",
+	  "How to enable authorized access to dashboards for users": "dashboard-authorized-access"
     }
   }
 }

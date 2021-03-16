@@ -112,7 +112,7 @@ Replace it in the URL to query a particular deal:
 
 [Editing a Data Connection](/cloud-bi/working-with-data-source/editing-a-data-connection/)   
 
-[Dashboard Designer Walkthrough](/cloud-bi/getting-started/bold-bi-walk-through/)
+[Dashboard Designer Walkthrough](/cloud-bi/getting-started/quick-start/)
 
 [Pipedrive Requests Limitations](https://pipedrive.readme.io/docs/core-api-concepts-rate-limiting)
 

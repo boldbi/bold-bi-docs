@@ -26,4 +26,4 @@ Follow these steps to upgrade the Bold BI Server VM to the latest source from ol
 
     ![verify the identity of the virtual machine](/static/assets/embedded/setup/images/cert-warning.png)
 
-5. After connected to the virtual machine, follow the steps given [here](/embedded-bi/setup/deploying-in-server/upgrade-to-latest/) to upgrade the Bold BI Server to latest version. 
+5. After connected to the virtual machine, follow the steps given [here](/embedded-bi/setup/deploying-in-windows/upgrade-to-latest/) to upgrade the Bold BI Server to latest version. 

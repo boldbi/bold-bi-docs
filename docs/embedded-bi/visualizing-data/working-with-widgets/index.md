@@ -16,6 +16,8 @@ You can explore the available features in detail here,
 
 [Filtering](/embedded-bi/visualizing-data/working-with-widgets/configuring-widget-filters/)
 
+[Manual Filtering](/embedded-bi/visualizing-data/working-with-widgets/manual-filters/)
+
 [Sorting](/embedded-bi/visualizing-data/working-with-widgets/advanced-sorting/)
 
 [Linking](/embedded-bi/visualizing-data/working-with-widgets/linking-urls-and-dashboards/)
@@ -35,3 +37,9 @@ You can explore the available features in detail here,
 [Viewing underlying data](/embedded-bi/visualizing-data/working-with-widgets/view-data/)
 
 [Forecasting](/embedded-bi/visualizing-data/working-with-widgets/forecasting/)
+
+[Trendlines](/embedded-bi/visualizing-data/working-with-widgets/chart-trendlines/)
+
+[Gridlines](/embedded-bi/visualizing-data/working-with-widgets/chart-gridlines/)
+
+[Widget Actions](/embedded-bi/visualizing-data/working-with-widgets/widget-action/)

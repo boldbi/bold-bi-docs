@@ -165,9 +165,9 @@ Below are the limitations for connecting excel file in Bold BI,
 
 [Editing a Data Connection](/cloud-bi/working-with-data-source/editing-a-data-connection/)   
 
-[Dashboard Designer Walkthrough](/cloud-bi/getting-started/bold-bi-walk-through/)
+[Dashboard Designer Walkthrough](/cloud-bi/getting-started/quick-start/)
 
-[Excel Integration](https://www.boldbi.com/integrations/excel?utm_source=syncfusion&utm_medium=documentation&utm_campaign=boldbiexcelintegration)
+[Excel Integration](https://www.boldbi.com/integrations/excel)
 
 [Tutorial Video](https://www.youtube.com/watch?v=fdDpy05G7Qg)
 

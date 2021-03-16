@@ -42,7 +42,7 @@ Drag and drop the table from table list, and click `Save` button to save the dat
 
 [Editing a Data Connection](/embedded-bi/working-with-data-source/editing-a-data-connection/)   
 
-[Dashboard Designer Walkthrough](/embedded-bi/getting-started/bold-bi-walk-through/)
+[Dashboard Designer Walkthrough](/embedded-bi/getting-started/quick-start/)
 
 [Blog post for Amazon Redshift](https://www.boldbi.com/blog/unlock-actionable-insights-from-amazon-redshift-data)
 

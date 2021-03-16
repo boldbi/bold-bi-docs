@@ -43,5 +43,3 @@ You can explore the data source in detail here,
 [Configure Dashboard Parameter](/cloud-bi/working-with-data-source/configuring-dashboard-parameters/)
 
 [White List IP addresses of the Bold BI Cloud servers](/cloud-bi/working-with-data-source/white-list-ip-address-bold-bi-cloud/)
-
-[White List IP addresses of the Syncfusion Cloud servers](/cloud-bi/working-with-data-source/white-list-ip-address-syncfusion-cloud/)

@@ -123,7 +123,7 @@ You can edit, delete, and re-authorize this account from the **Connected Account
 
 [Editing a Data Connection](/cloud-bi/working-with-data-source/editing-a-data-connection/)   
 
-[Dashboard Designer Walkthrough](/cloud-bi/getting-started/bold-bi-walk-through/)
+[Dashboard Designer Walkthrough](/cloud-bi/getting-started/quick-start/)
 
 [Zoho CRM API Limits](https://www.zoho.com/crm/help/developer/api/api-limits.html)
 

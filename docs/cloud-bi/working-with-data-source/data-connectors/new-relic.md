@@ -42,7 +42,7 @@ You can also edit the connection information set here using the [Edit Connection
 
 #### How do I get API Key for connecting New Relic Data source?
 1. Login to [New Relic](https://login.newrelic.com/login) account. Go to *Account Settings -> API keys*.
-2. Find the *API key* by click *Show key*.
+2. Find the *API key* by clicking the *Show key*.
 3. Use this *API key* as **your_api_key** in New Relic data source in Bold BI Dashboard.
 4. Click *Create REST API Key* if you don't have any valid API Key.
 
@@ -86,6 +86,6 @@ Period of time before next refresh call is triggered. This will automatically tr
 
 [Editing a Data Connection](/cloud-bi/working-with-data-source/editing-a-data-connection/)   
 
-[Dashboard Designer Walkthrough](/cloud-bi/getting-started/bold-bi-walk-through/)
+[Dashboard Designer Walkthrough](/cloud-bi/getting-started/quick-start/)
 
 [New Relic Integration](https://www.boldbi.com/integrations/new-relic?utm_source=syncfusion&utm_medium=documentation&utm_campaign=boldbinewrelicintegration)

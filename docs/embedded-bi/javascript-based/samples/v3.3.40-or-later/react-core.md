@@ -10,11 +10,11 @@ documentation: ug
 
 We have created the React and ASP.NET Core application for achieving this embedding. Here, the React app acts as a client and the Core app acts as a server. Using this environment, we could be able to list the dashboards and render it.  
 
-> **NOTE:** The best way to get started would be reading the [Getting Started](/embedded-bi/javascript/getting-started/) section of the documentation to start using first. The [Getting Started](/embedded-bi/javascript/getting-started/) guide gives you enough information that you need to know before working on the sample.      
+> **NOTE:** The best way to get started would be reading the [Getting Started](/embedded-bi/javascript-based/getting-started/) section of the documentation to start using first. The [Getting Started](/embedded-bi/javascript-based/getting-started/) guide gives you enough information that you need to know before working on the sample.      
 
 ## How to run the sample
 
-1. Please download the React App with ASP.NET Core Application from [here](https://embed-sdk.boldbi.com/getting-started/react-core-v3.3/sample.zip).    
+1. Please download the React App with ASP.NET Core Application from [here](https://onpremise-demo.boldbi.com/getting-started/react-core-v3.3/sample.zip).    
 
 2. Here, the React application act as a client, and the ASP.NET Core application act as a server since we need to set the following properties in the `DashboardListing.js` file as follows.
 ![Embed Properties In App Component](/static/assets/embedded/javascript/sample/images/react-prop.png)  

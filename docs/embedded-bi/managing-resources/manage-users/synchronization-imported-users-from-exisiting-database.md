@@ -29,7 +29,7 @@ Choose the users you want to synchronize and click on `Synchronize` at the top.
 
 ### Synchronization procedure
 
-* Bold BI will synchronize the user details - first name, last name, email address, contact number with the Existing Database.
+* Bold BI will synchronize the user details - username, first name, last name, email address, and contact number with the existing database users.
 
 * Bold BI will delete the user if the user has deleted from the Existing Database. 
 
@@ -39,6 +39,8 @@ After synchronization completes, the number of users modified, deleted, duplicat
 
 ## Duplicate Users
 
- Existing Database users who has the same email address as that of the Bold BI users(who are already present) will be marked as duplicate users and will not be allowed to synchronize with the imported existing database users.
+ Existing database users who has the same username or email address as that of the Bold BI users(who are already present), will be marked as duplicate users and will not be allowed to synchronize with the imported existing database users.
+
+![Display Duplicated Username](/static/assets/embedded/managing-resources/manage-users/images/display-duplicate-usernameof-importdb.png)
 
 ![Display Duplicated users](/static/assets/embedded/managing-resources/manage-users/images/display-duplicate-message-of-importdb.png)

@@ -108,7 +108,7 @@ Replace &lt;:your_domain&gt; with your Freshsales CRM domain.
 
 [Editing a Data Connection](/embedded-bi/working-with-data-source/editing-a-data-connection/)   
 
-[Dashboard Designer Walkthrough](/embedded-bi/getting-started/bold-bi-walk-through/)
+[Dashboard Designer Walkthrough](/embedded-bi/getting-started/quick-start/)
 
 [Freshsales API Limits](https://support.freshsales.io/support/solutions/articles/223406-does-freshsales-have-api-request-limits-for-an-account-)
 

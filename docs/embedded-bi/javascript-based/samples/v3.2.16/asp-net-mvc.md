@@ -14,7 +14,7 @@ We have created ASP.NET MVC sample with Embedded SDK, here we could listing the 
 
 ## How to run the sample
 
-1. Download the ASP.NET MVC sample from [here](https://embed-sdk.boldbi.com/getting-started/asp-net-mvc/sample.zip).  
+1. Download the ASP.NET MVC sample from [here](https://onpremise-demo.boldbi.com/getting-started/asp-net-mvc/sample.zip).  
 
 2. In ASP.NET MVC sample, you could find the EmbedProperties class file in Models folder.
 ![Properties](/static/assets/embedded/javascript/sample/images/mvc-properties.png)

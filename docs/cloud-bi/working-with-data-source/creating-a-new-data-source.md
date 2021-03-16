@@ -13,7 +13,6 @@ This section will explains on how to create a new data source and fetch the data
 
 If you want to connect your database server with Bold BI cloud site, you must [white list](/cloud-bi/working-with-data-source/white-list-ip-address-bold-bi-cloud/) the Bold BI cloud server IP addresses within your Database server if it restricts to access.
 
-If you want to connect your database server with Syncfusion cloud site, you must [white list](/cloud-bi/working-with-data-source/white-list-ip-address-syncfusion-cloud/) the Syncfusion cloud server IP addresses within your Database server if it restricts to access.
 
 ## Creating a New Data Source
 

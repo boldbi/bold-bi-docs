@@ -44,9 +44,9 @@ Use the following steps to authenticate with YouTube web service:
 ### Create YouTube data source
 After successful authentication, the NEW DATA SOURCE configuration panel opens. Follow the below steps to create YouTube data source.
 1. Enter a name and description (optional) for the data source.
-2. Enter a valid YouTube REST API endpoint in the URL textbox. Refer the [YouTube API documentation](https://developers.google.com/YouTube/v3/docs/) for more details.
+2. Enter a valid YouTube REST API endpoint in the URL textbox. Refer the [YouTube API documentation](https://developers.google.com/youtube/v3/docs/) for more details.
 
-    Example: [https://www.googleapis.com/YouTube/v3/channels?part=snippet&mine=true](https://www.googleapis.com/YouTube/v3/channels?part=snippet&mine=true)    
+    Example: 'https://www.googleapis.com/youtube/v3/channels?part=snippet&mine=true'  
 3. Select **GET** method for the REST API in **Method** combo box.
 4. Choose a time interval for **Refresh Settings** using the combo box, to trigger the Rest API request periodically to keep the data in sync with our dashboard.  
 5. Select **JSON** data type in **Data Format** combo box.
@@ -67,17 +67,17 @@ Period of time before next refresh call is triggered. This will automatically tr
 </table>
 
 ### Setting up the URL
-1. For instance, to query about the specific caption details, query the <i>/captions</i> endpoint with required parameters as specified in [YouTube Documentation](https://developers.google.com/YouTube/v3/docs/captions/list).
+1. For instance, to query about the specific caption details, query the <i>/captions</i> endpoint with required parameters as specified in [YouTube Documentation](https://developers.google.com/youtube/v3/docs/captions/list).
 2. From the listed group information, get the particular caption ID.
 
 Replace it in the URL to query a particular calendar details:
 
-[https://www.googleapis.com/YouTube/v3/captions/&lt;:caption_id&gt;](https://www.googleapis.com/YouTube/v3/captions/%3c:caption_id%3e)
+'https://www.googleapis.com/youtube/v3/captions/<:caption_id>'
 
 ### Sample queries
 **Activities**
 
-[https://www.googleapis.com/YouTube/v3/activities](https://www.googleapis.com/YouTube/v3/activities)
+'https://www.googleapis.com/youtube/v3/activities'
 
 ### Preview and data import
 * Click **Preview & Connect** to connect with the configurations set.
@@ -105,6 +105,6 @@ You can edit, delete and re-authorize this account from the **Connected Accounts
 
 [Editing a Data Connection](/embedded-bi/working-with-data-source/editing-a-data-connection/)   
 
-[Dashboard Designer Walkthrough](/embedded-bi/getting-started/bold-bi-walk-through/)
+[Dashboard Designer Walkthrough](/embedded-bi/getting-started/quick-start/)
 
 [YouTube Integration](https://www.boldbi.com/integrations/youtube?utm_source=syncfusion&utm_medium=documentation&utm_campaign=boldbiyoutubeintegration)

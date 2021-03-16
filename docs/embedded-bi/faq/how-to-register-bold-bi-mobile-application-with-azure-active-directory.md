@@ -42,4 +42,4 @@ documentation: ug
 
     > **NOTE:**  The Redirect URI and Home page URL should be the URL of the Bold BI application.
 
-> **NOTE:**  The Azure user and groups can be imported into the Bold BI application. Refer to this following link to [Import Azure Active Directory Users](/embedded-bi/managing-resources/manage-users/import-azure-active-directory-users/) and [Import Azure Active Directory Groups](/embedded-bi/managing-resources/manage-groups/import-azure-active-directory-groups/).
+> **NOTE:**  The Azure user and groups can be imported into the Bold BI application. Refer to this following link to [Import Azure Active Directory Users](/embedded-bi/managing-resources/manage-users/import-active-directory-users/) and [Import Azure Active Directory Groups](/embedded-bi/managing-resources/manage-groups/import-azure-active-directory-groups/).

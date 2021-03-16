@@ -10,11 +10,11 @@ documentation: ug
 
 We have created an ASP.NET Core sample with Embedded SDK. Here, we could list all the dashboards and render the dashboard based on your selection after passing the authorization.
 
-> **NOTE:** The best way to get started would be reading the [Getting Started](/embedded-bi/javascript/getting-started/) section of the documentation to start using first. The [Getting Started](/embedded-bi/javascript/getting-started/) guide gives you enough information that you need to know before working on the sample.  
+> **NOTE:** The best way to get started would be reading the [Getting Started](/embedded-bi/javascript-based/getting-started/) section of the documentation to start using first. The [Getting Started](/embedded-bi/javascript-based/getting-started/) guide gives you enough information that you need to know before working on the sample.  
 
 ## How to run the sample
 
-1. Please download the ASP.NET Core sample from [here](https://embed-sdk.boldbi.com/getting-started/asp-net-core-v3.3/sample.zip).  
+1. Please download the ASP.NET Core sample from [here](https://onpremise-demo.boldbi.com/getting-started/asp-net-core-v3.3/sample.zip).  
 
 2. In the ASP.NET Core sample, you can find the EmbedProperties class file in the Models folder.
 ![Embed Properties](/static/assets/embedded/javascript/sample/images/prop-core.png)

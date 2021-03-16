@@ -157,3 +157,10 @@ Click the `Actions` button in the data sources grid context menu and select `Cop
 ![Copy Data Source](/static/assets/embedded/managing-resources/images/copy-data-source.png)  
 
 > **NOTE:**  The copy option shown only for Live mode connection like SQL and won't shown for Extract mode connection like files, web API, etc.
+
+## Draft Data Sources
+The **Data Source** will be automatically saved as draft when the user did not published the created data source.
+
+You can view the unpublished draft data sources in the data source listing page tagged with `draft` label.
+
+![Draft Data Source](/static/assets/embedded/managing-resources/images/draft-data-source.png)

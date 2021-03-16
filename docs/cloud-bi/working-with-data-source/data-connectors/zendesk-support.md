@@ -69,21 +69,21 @@ Period of time before the next refresh call is triggered. This will automaticall
 
 Replace it in the URL to query particular conversations:
 
-https://yourhostname.zendesk.com/api/v2/users/<:id>.json
+`https://yourhostname.zendesk.com/api/v2/users/<:id>.json`
 
 ### Sample queries
 
 **All Users**
 
-https://yourhostname.zendesk.com/api/v2/users.json
+`https://yourhostname.zendesk.com/api/v2/users.json`
 
 **All Groups**
 
-https://yourhostname.zendesk.com/api/v2/groups.json
+`https://yourhostname.zendesk.com/api/v2/groups.json`
 
 **All Organizations**
 
-https://yourhostname.zendesk.com/api/v2/organizations.json
+`https://yourhostname.zendesk.com/api/v2/organizations.json`
 
 
 ### Preview and data import
@@ -103,4 +103,4 @@ https://yourhostname.zendesk.com/api/v2/organizations.json
 
 [Editing a Data Connection](/cloud-bi/working-with-data-source/editing-a-data-connection/)   
 
-[Dashboard Designer Walkthrough](/cloud-bi/getting-started/bold-bi-walk-through/)
+[Dashboard Designer Walkthrough](/cloud-bi/getting-started/quick-start/)

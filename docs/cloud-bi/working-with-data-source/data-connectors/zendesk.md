@@ -30,7 +30,7 @@ Once you click the data source, the NEW DATA SOURCE configuration panel opens.
 1. Enter a name and description (optional) for the data source.
 2. Enter a valid Zendesk REST API endpoint in the URL textbox. Refer the [Zendesk API documentation](https://developer.zendesk.com/rest_api/docs/zendesk-apis/resources) for more details.
 
-    Example: [https://&lt;:your_domain_name&gt;.zendesk.com/api/v2/&lt;:your_endpoint&gt;](https://%3c:your_domain_name%3e.zendesk.com/api/v2/%3c:your_endpoint%3e)    
+    Example: `https://<:yourdomainname>.zendesk.com/api/v2/<:your_endpoint>`    
 
 3. Select **GET** method for the REST API in **Method** combo box.
 4. In **Max Rows**, enter the maximum number of rows to be fetched from the Zendesk data source. This value is used to fetch the data from Zendesk data source via pagination.
@@ -91,24 +91,24 @@ Period of time before next refresh call is triggered. This will automatically tr
 
 Replace it in the URL to query a particular ticket:
 
-[https://domain_name.zendesk.com/api/v2/tickets/12.json](https://domain_name.zendesk.com/api/v2/tickets/12.json)
+`https://domain_name.zendesk.com/api/v2/tickets/12.json`
 
 ### Sample queries
 **Tickets**
 
-[https://syncdb.zendesk.com/api/v2/tickets.json](https://syncdb.zendesk.com/api/v2/tickets.json)
+`https://syncdb.zendesk.com/api/v2/tickets.json`
 
 **Workspaces**
 
-[https://syncdb.zendesk.com/api/v2/workspaces.json](https://syncdb.zendesk.com/api/v2/workspaces.json)
+`https://syncdb.zendesk.com/api/v2/workspaces.json`
 
 **Groups**
 
-[https://syncdb.zendesk.com/api/v2/groups.json](https://syncdb.zendesk.com/api/v2/groups.json)
+`https://syncdb.zendesk.com/api/v2/groups.json`
 
 **Satisfaction ratings**
 
-[https://syncdb.zendesk.com/api/v2/satisfaction_ratings.json](https://syncdb.zendesk.com/api/v2/satisfaction_ratings.json)
+`https://syncdb.zendesk.com/api/v2/satisfaction_ratings.json`
 
 
 ### Preview and data import
@@ -127,7 +127,7 @@ Replace it in the URL to query a particular ticket:
 
 [Editing a Data Connection](/cloud-bi/working-with-data-source/editing-a-data-connection/)   
 
-[Dashboard Designer Walkthrough](/cloud-bi/getting-started/bold-bi-walk-through/)
+[Dashboard Designer Walkthrough](/cloud-bi/getting-started/quick-start/)
 
 [Zendesk Support API Rate Limits](https://developer.zendesk.com/rest_api/docs/support/introduction#rate-limits)
 

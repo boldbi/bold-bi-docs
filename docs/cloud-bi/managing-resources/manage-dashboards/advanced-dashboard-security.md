@@ -68,7 +68,7 @@ In this case, the dashboard can be embed in the domains which is specified in th
 * The dashboards embedded in the allowed domain can be viewed.
 * The viewing of embed dashboards will be blocked by the browser for the domains which is not mentioned in the `Accept embedding requests from these websites`.
 
-Learn more about the embedding the dashboard with advance dashboard security [here](/cloud-bi/iframe-based/embed-dashboards-with-advanced-security/).  
+Learn more about the embedding the dashboard with advance dashboard security [here](/embedded-bi/iframe-based/embed-dashboards-with-advanced-security/).  
 
 When the dashboard is viewed from the allowed IP address,
 

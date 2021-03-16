@@ -6,7 +6,7 @@ platform: bold-bi
 documentation: ug
 ---
 
-# Steps to embed Enterprise BI in your application
+# Steps to embed the multiple dashboard and widgets in your application
 
 Follow these steps to embed multiple dashboards and widgets in your application.
 
@@ -21,7 +21,7 @@ Follow these steps to embed multiple dashboards and widgets in your application.
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jsrender/1.0.0-beta/jsrender.min.js"></script>
     <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/signalr/jquery.signalr-2.1.0.min.js"></script>
-    <script type="text/javascript" src="http://cdn.boldbi.com/embedded-sdk/v3.3.40/embed-js.js"></script>
+    <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v4.1.36/embed-js.js"></script>
 </head>
 ```
 

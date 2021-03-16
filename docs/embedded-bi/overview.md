@@ -15,6 +15,6 @@ In JavaScript based embedding, you can use our Embed BI JavaScript library that 
 
 In iFrame based embedding, you can embed the dashboards in iFrame using the dashboard url. Here, you need to add some amount of code and effort required to embed. Learn more about iFrame-based embedding [here](/embedded-bi/iframe-based/dashboard-view-mode/).
 
-Refer [this page](/embedded-bi/getting-started/bold-bi-walk-through/) to know how to create a powerful dashboard.
+Refer [this page](/embedded-bi/getting-started/quick-start/) to know how to create a powerful dashboard.
 
 Also, you can embed the dashboard or the dashboard application modules using the [REST APIs](/embedded-bi/rest-api-reference/).

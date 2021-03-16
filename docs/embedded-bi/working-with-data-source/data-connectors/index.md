@@ -38,12 +38,12 @@ The Bold BI supports the following data connection types such that the structure
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/memsql/"> MemSQL</a>
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/sql-data-source/"> Microsoft SQL</a>
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/mysql/"> MySQL</a>
-            <br> <a href="data-connectivity/odbc/"> ODBC</a>
+            <br> <a href="/embedded-bi/working-with-data-source/data-connectors/odbc/"> ODBC</a>
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/oracle/"> Oracle</a>
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/postgresql/"> PostgreSQL</a>
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/presto/"> Presto</a>
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/snowflake/"> Snowflake</a>  
-            <br> <a href="data-connectivity/sqlite/"> SQLite</a>          
+            <br> <a href="/embedded-bi/working-with-data-source/data-connectors/sqlite/"> SQLite</a>          
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/ssas/"> Microsoft SQL Server Analysis Services</a>
         </td>
         <td align="center" rowspan="2"> Sales & CRM
@@ -72,7 +72,7 @@ The Bold BI supports the following data connection types such that the structure
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/excel/"> Excel</a>
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/files/"> JSON</a>
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/files/"> XML</a>
-            <br> <a href="data-connectivity/edi/"> EDI</a>
+            <br> <a href="/embedded-bi/working-with-data-source/data-connectors/edi/"> EDI</a>
         </td>
         <td align="center"> NoSQL
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/mongodb/"> MongoDB</a>
@@ -89,7 +89,7 @@ The Bold BI supports the following data connection types such that the structure
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/box/"> Box</a>
 			<br> <a href="/embedded-bi/working-with-data-source/data-connectors/commvault/"> Commvault</a>
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/dropbox/"> Dropbox</a>
-            <br> <a href="/embedded-bi/working-with-data-source/data-connectors/ms-onedrive/"> Microsoft OneDrive</a>
+            <br> <a href="/embedded-bi/working-with-data-source/data-connectors/ms-one-drive/"> Microsoft OneDrive</a>
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/ms-sharepoint/"> Microsoft SharePoint</a>
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/google-drive/"> Google Drive</a>
 			<br> <a href="/embedded-bi/working-with-data-source/data-connectors/google-sheets/"> Google Sheets</a>
@@ -97,7 +97,7 @@ The Bold BI supports the following data connection types such that the structure
         <td align="center"> Social Media
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/buffer/"> Buffer</a>
 			<br> <a href="/embedded-bi/working-with-data-source/data-connectors/facebook/"> Facebook</a>
-			<br> <a href="/embedded-bi/working-with-data-source/data-connectors/facebooks-ads/"> Facebook Ads</a>
+			<br> <a href="/embedded-bi/working-with-data-source/data-connectors/facebook-ads/"> Facebook Ads</a>
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/linkedin/"> LinkedIn</a>
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/youtube/"> YouTube </a>
         </td>
@@ -109,6 +109,9 @@ The Bold BI supports the following data connection types such that the structure
         </td>
         <td align="center"> Web Management
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/wordpress/"> WordPress</a>
+        </td>
+		<td align="center"> Forms
+            <br> <a href="/embedded-bi/working-with-data-source/data-connectors/gravity-forms/"> GravityForms</a>
         </td>
     </tr>
     <tr>
@@ -150,6 +153,7 @@ The Bold BI supports the following data connection types such that the structure
         <td align="center"> Web Analytics
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/optimizely/"> Optimizely</a>
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/seomonitor/"> SEOmonitor</a>
+            <br> <a href="/embedded-bi/working-with-data-source/data-connectors/oracle-bi-reports/"> Oracle BI Reports</a>
         </td>
 		<td align="center"> Data monitoring
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/prometheus/"> Prometheus</a>
@@ -176,6 +180,7 @@ The Bold BI supports the following data connection types such that the structure
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/smartsheet/"> Smartsheet</a>
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/todoist/"> Todoist</a>
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/toggl/"> Toggl</a>
+			<br> <a href="/embedded-bi/working-with-data-source/data-connectors/trello/"> Trello</a>
         </td>
         <td align="center"> Support
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/callrail/"> CallRail</a>

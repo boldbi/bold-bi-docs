@@ -26,3 +26,6 @@ The following are the frequently asked questions in Bold BI Cloud :
 
 [How web-based data source like Jira works with Bold BI?](/cloud-bi/faq/how-web-based-data-source-works-with-bold-bi/)
 
+[How to speed up the data access in SQL Server?](/cloud-bi/faq/how-to-speed-up-the-data-access-in-sql-server/)
+
+[How to enable authorized access to dashboards for users?](/cloud-bi/faq/dashboard-authorized-access/)

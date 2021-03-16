@@ -21,12 +21,12 @@ You can explore the working with dashboard in detail here,
 
 [Commenting Dashboard](/embedded-bi/working-with-dashboards/commenting-dashboard/)
 
-[Save Dashboard](/embedded-bi/working-with-dashboards/save-dashboard/)
+[Save Dashboard](/embedded-bi/working-with-dashboards/publish-dashboard/)
 
 [Preview Dashboard](/embedded-bi/working-with-dashboards/preview-dashboard/)
 
-[Refreshing Dashboard](/embedded-bi/working-with-dashboards/refresh-dashboard/)
+[Refreshing Dashboard](/embedded-bi/working-with-dashboards/preview-dashboard/refresh-dashboard/)
 
-[Filtering Views using URL Parameters](/embedded-bi/working-with-dashboards/urlparameters/)
+[Filtering Views using URL Parameters](/embedded-bi/working-with-dashboards/preview-dashboard/urlparameters/)
 
 [Share Dashboards](/embedded-bi/working-with-dashboards/share-dashboards/)

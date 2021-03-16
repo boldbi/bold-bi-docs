@@ -39,7 +39,7 @@ The account will be in inactive status till the user activates the account from 
 
 To automate the process of adding large number of users to a Bold BI Cloud, you can download the CSV template file and add the users in it and then import the file.
 
-You can navigate to user management page by click `User Management` drop down under the `Admin` menu as below.
+You can navigate to the user management page by clicking the `User Management` dropdown under the `Admin` menu as follows.
 
 ![Import from CSV - Navigation](/static/assets/cloud/managing-resources/manage-users/images/usermanagement.png)
 
@@ -118,7 +118,7 @@ If the user has not received the activation email within 2 days or missed to act
 ## Change Password 
 The administrator can change the user's password from Tenant management site as follows below,
 
-Go to the UMS site by click on the profile as below,
+Go to the UMS site by clicking on the profile as follows.
 
 ![Manage Sites](/static/assets/cloud/managing-resources/manage-users/images/manage-sites-for-the-users.png)
 

@@ -92,7 +92,7 @@ Replace it in the URL to query a particular payment:
 
 [Editing a Data Connection](/cloud-bi/working-with-data-source/editing-a-data-connection/)   
 
-[Dashboard Designer Walkthrough](/cloud-bi/getting-started/bold-bi-walk-through/)
+[Dashboard Designer Walkthrough](/cloud-bi/getting-started/quick-start/)
 
 [SendGrid API Rate Limits](https://sendgrid.api-docs.io/v3.0/how-to-use-the-sendgrid-v3-api/api-rate-limits)
 

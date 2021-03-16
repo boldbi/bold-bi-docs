@@ -79,6 +79,7 @@ Custom widget can be configured using the following settings. Refer the structur
 }
 
 ```
+> **NOTE:** In the above code, guid must be unique. So, it should be updated whenever a new custom widget template is downloaded. For example **guid**: "74926583-8493-3333-6382-863428678492"
 
 ### Setting name for the widget
 
@@ -224,7 +225,6 @@ Dependency script and CSS files, which have to be referred for the widget, and s
   }
 
 ```
-
 #### Rules
 
 * It is not the mandatory API for the widget.
@@ -234,9 +234,94 @@ Dependency script and CSS files, which have to be referred for the widget, and s
 
 jQuery reference (`jquery-1.10.2.min.js`) will be added as built-in reference for the custom widget, So that you are not allowed to specify the jQuery files in dependencies.
 
+### Specifying data fields
+
+This allows you to specify the data fields with its type for custom widgets. There are three types of data fields are available. It is listed as follows.
+
+### Measure data field
+
+In the measure data field, numeric value column can be configured.
+
+### Dimension data field
+
+In the dimension data field string, boolean and date value column can be configured.
+
+### Dimensionormeasure data field
+
+In the dimensionormeasure data field, we can configure both the measure and dimension value column. In this data field the default summary type for measure value column is none.
+
+```js
+dataFields:[
+{
+"displayName" : "display name of the data field1",
+"valueType" : "type of the data field1, can be measure, dimension or dimensionormeasure",
+"name" :  "name of the data field1",
+"min" : "minimum number of block which has to be dropped for the datafield1",
+"max" : "maximum number of block can be dropped for the datafield2",
+"optional" : "specify whether it is mandatory data field"
+},
+{
+"displayName" : " display name of the data field2",
+"valueType" :" type of the data field2, can be measure, dimension or dimensionormeasure" ,
+"name" : " name of the data field2",
+"min" : "minimum number of block which has to be dropped for the datafield2",
+"max": "maximum number of block can be dropped for the datafield2",
+"optional" : "specify whether it is mandatory data field"
+}
+]
+
+```
+
+### Example 
+
+```js
+
+dataFields:[
+{
+"displayName" : "Value",
+"valueType" : "measure",
+"name" :  "Value",
+"min" : 1,
+"max" : 1,
+"optional" :false
+},
+{
+"displayName" : "Levels",
+"valueType" : "dimension",
+"name" : "Levels",
+"min" : 1,
+"max":4,
+"optional" : false
+}]
+
+```
+
 ## Importing widget in designer
 
-Place the custom widgets folder with in the location `"C:\Bold BI\Dashboard Designer\CustomWidgets"` after installing Bold BI Enterprise build as like in below image to get displayed in the Dashboard Designer after the browser refresh. 
+After installing the Bold BI Enterprise build, you need to place the custom widgets as mentioned in the below location. Once, the browser is refreshed, the widgets will appear in the Dashboard Designer as shown in the below image.
+
+<table>
+    <tr>
+    <th>Environment</th>
+    <th>Location</th>
+  </tr>
+    <tr>
+      <td>
+       Windows
+      </td>
+      <td>
+      Place the Custom widgets in <b>"C:\BoldServices\bi\dataservice"</b> location, if your Bold BI enterprise build is greater than or equal to v4.1.36. Else place it in <b>“C:\Bold BI\Dashboard Designer\CustomWidgets"</b>.
+      </td>
+    </tr>
+    <tr>
+      <td>
+       Linux
+      </td>
+      <td>
+      Place the Custom widgets in <b>“/var/www/boldbi-embedded/boldbi/bi/dataservice/CustomWidgets”</b> location.
+      </td>
+    </tr>
+    </table>
 
 ![Custom_widget category](/static/assets/embedded/visualizing-data/visualization-widgets/images/custom-widget/Customwidget_Import.png)
 
@@ -409,7 +494,7 @@ Custom Widget Template : [Template](https://www.syncfusion.com/downloads/support
 ```
 
 
-* After configuring the widgets, place the custom widget folder into **C:\Bold BI\Dashboard Designer\CustomWidgets**
+* After configuring the widgets, place the custom widget folder as mentioned in the <a href="/embedded-bi/visualizing-data/visualization-widgets/custom-widget/#importing-widget-in-designer">link</a>.
 
 ![Custom_widget category](/static/assets/embedded/visualizing-data/visualization-widgets/images/custom-widget/Customwidget_location.png)
 
@@ -520,6 +605,125 @@ update : function (option) {
 * Sunburst widget will be rendered as follows:
 
 ![Custom_widget category](/static/assets/embedded/visualizing-data/visualization-widgets/images/custom-widget/Customwidget_render.png)
+
+## Configuring custom widget for interaction
+
+The custom widget can take part in the filter interaction like built-in widgets. Use the following API’s to perform the communication between the widgets.
+
+#### Format
+
+```js
+
+var selectedColumnsFilter = [];
+var filterColumn = new ej.dashboard.selectedColumnInfo();
+filterColumn.condition = "condition";
+filterColumn.uniqueColumnName = "unique column name";
+filterColumn.values =["value1", "value2", "value3"…] ;
+selectedColumnsFilter.push(filterColumn);
+ej.dashboard.filterData(this, selectedColumnsFilter); /* selectedColumnsFilter is the list of selected column and its value send from custom widget for interaction. */
+
+```
+
+### Various types of column
+
+* Dimension type column
+
+Values in the dimension column will be a string, date format, or boolean format.
+
+* Measure type column
+
+Values in the measure column will be in number format.
+
+### Dimension type column
+
+Various conditions are available for the dimension column other than the DateTime data type:
+
+* **include**
+* **exclude**
+* **startswith**
+* **endswith**
+* **contains**
+* **notcontains**
+
+#### Example
+
+The following code will filter the dimension value "India" and "China" in the other widgets
+
+```js
+
+var selectedFilterInfos = [];
+var filterinfo = new ej.dashboard.selectedColumnInfo();
+filterinfo.condition = "include";
+filterinfo.values = ["india","china"];
+filterColumn.uniqueColumnName = "unique column name";
+selectedFilterInfos.push(filterinfo);
+ej.dashboard.filterData(that, selectedFilterInfos);
+
+
+```
+
+> **NOTE:**  In the above code sample, pass the unique column name of a particular column from the variable `this.model.boundColumns` to filter the data in the other widgets. In this variable all the bounded or configured data fields will be available with their bounded value column name and unique column name.
+
+Various conditions are available for the dimension column with the DateTime data type:
+
+* **range**
+* **include**
+* **exclude**
+
+The following code is the example to filter the data of the specified date range in the other widgets.
+
+```js
+
+var selectedFilterInfos = [];
+var filterinfo = new ej.dashboard.selectedColumnInfo();
+filterinfo.condition = "range";
+filterinfo.values =["1996", "1998"] ;
+filterinfo.uniqueColumnName = "unique column name";
+selectedFilterInfos.push(filterinfo);
+ej.dashboard.filterData(this, selectedFilterInfos); 
+
+
+```
+
+### Measure type column
+
+To apply the filter based on the measure, the value type should be dimensionormeasure for data field and summary type of the measure should be set as none. Various condition types are available for measure type column as follows:
+
+ * **equals**
+ * **notequals**
+ * **lessthan**
+ * **greaterthan** 
+ * **lessthanorequals**
+ * **greaterthanorequals**
+ * **isbetween**
+ * **isnotbetween** 
+
+The following code is the example to filter the other widgets based on the measure value.
+
+```js
+
+var selectedFilterInfos = [];
+var filterinfo = new ej.dashboard.selectedColumnInfo();
+filterinfo.condition = "greaterthan";
+filterinfo.uniqueColumnName = this.model.boundColumns.Value[0].uniqueColumnName;
+filterinfo.values =[100] ;
+selectedFilterInfos.push(filterinfo);
+ej.dashboard.filterData(this, selectedFilterInfos); 
+
+```
+The following code is the example to filter the value between 10248 and 10251 in the other widgets.
+
+```js
+
+var selectedFilterInfos = [];
+var filterinfo = new ej.dashboard.selectedColumnInfo();
+filterinfo.condition = "isbetween";
+filterinfo.uniqueColumnName = "unique column name";
+filterinfo.values =[10248,10251] ;
+selectedFilterInfos.push(filterinfo);
+ej.dashboard.filterData(this, selectedFilterInfos); 
+
+```
 
 ## Adding C3 chart as a custom widget
 

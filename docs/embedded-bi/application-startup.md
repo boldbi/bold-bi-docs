@@ -6,9 +6,68 @@ platform: bold-bi
 documentation: ug
 ---
 
-# Application Startup for Bold BI Enterprise
+# Application Startup
 
-This topic describes how to startup the Bold BI Enterprise Application. 
+> **NOTE:** If you have already installed Bold Reports in your machine, please go to the [this section](/embedded-bi/application-startup/#activate-bold-bi-license) to activate your Bold BI account.
+
+This topic explains how to activate the account and also how to startup the Bold BI Enterprise Application.
+
+You can activate your account either by using your login credentials or by offline unlock key.
+
+
+## Activate the account using login credentials
+
+You can sign in with your registered email address to activate your subscription.
+
+![Activate the account page](/static/assets/embedded/application-startup/images/application-startup-login.png) 
+
+### Select Login option
+
+From the login window, choose your account type and proceed to login.
+
+* Bold BI Login Credentials
+* Azure AD
+* Syncfusion Login Credentials
+
+![Application startup login form](/static/assets/embedded/application-startup/images/login-option.png)
+
+### Select license
+
+If you are having multiple Bold BI licenses, then you will be getting this screen and select the corresponding license to proceed with application startup. Otherwise, you will be automatically redirected to the application startup screen.
+
+![Select Portal License](/static/assets/embedded/application-startup/images/choose-the-plan.png)
+
+## Offline Installation
+
+> **NOTE:** Offline unlock key available for selected customers only. [Please contact us](https://www.boldbi.com/contact) to get access to offline unlock key.
+
+![Activate the account with Unlock key option](/static/assets/embedded/application-startup/images/application-startup-login-license.png)
+
+If you are installing the Bold BI in firewall restricted environments, you can use offline unlock key to activate the account. Please download your offline unlock key [here](https://www.boldbi.com/account/downloads/embedded).
+
+![Unlock key file page](/static/assets/embedded/application-startup/images/offline-setup-page.png)
+
+Once the unlock key is uploaded, proceed to the next screen for configuring the application.
+
+![Select Unlcok key file ](/static/assets/embedded/application-startup/images/offline-setup.png)
+
+### Possible errors cases and their solution:
+
+| Cases      | Solution                                            |
+|-------------------  |-----------------------------------------------------------  |
+| Invalid File Type | Please ensure to upload the valid unlock key file (lic) downloaded from [here](https://www.boldbi.com/account/downloads/embedded).    
+|  unlock key Expired    | Your unlock key date was expired. Please download the new unlock key file from [here](https://www.boldbi.com/account/downloads/embedded).   |
+
+> **NOTE:** If you are facing any other issues, please contact us from [here](https://www.boldbi.com/contact).
+
+## No Trial / New Account Request
+
+If you do not have an account for Bold BI, you can request a new trial from this [link](https://www.boldbi.com/embedded/pricing).
+
+![Activate the account with No Trail option](/static/assets/embedded/application-startup/images/application-startup-sign-up.png)
+
+
+## Application Startup for Bold BI Enterprise
 
 Application startup screen helps you to configure storage options and admin account setup.
 
@@ -20,9 +79,10 @@ Application startup holds the storage options configuration for below applicatio
 
 * SQL Server, Azure SQL
 * PostgreSQL, Azure-PostgreSQL
+* MySQL (Not applicable for Data Store Configuration) 
 * Amazon Aurora with PostgreSQL compatibility [(Please click here to know how to configure AWS Aurora)](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.CreateInstance.html)
 
-> **NOTE:** To connect with PostgreSQL database you need to install PostgreSQL client library while installing the Bold BI Enterprise edition. Learn more [here](/embedded-bi/setup/installation-and-deployment/#client-libraries).
+> **NOTE:** To connect with PostgreSQL database you need to install PostgreSQL client library while installing the Bold BI Enterprise edition. Learn more [here](/embedded-bi/setup/deploying-in-windows/installation-and-deployment/#client-libraries).
 
 ## Database Configuration for Bold ID
 
@@ -51,11 +111,11 @@ You can connect to the existing server instance with the below options.
 
 ## Storage Configuration for Bold ID
 
-User can select the preferred storage type File Storage or Blob Storage to store the resource in Bold ID.  
+User can select the preferred storage type, either File Storage or Blob Storage to store the resource in Bold ID.
 
 ![Site File Storage](/static/assets/embedded/application-startup/images/file-storage.png)  
 
-N> By default storage type is `File Storage`.
+> **NOTE:**  By default storage type is `File Storage`.
 
 User can select the Blob Storage by giving Azure Blob Credential in the required field  
 
@@ -79,9 +139,15 @@ By default, `System Administrator` group have permission to do the below
 * [Create Slideshows](/embedded-bi/managing-resources/manage-slideshows/)
 * [Create Users](/embedded-bi/managing-resources/manage-users/)
 * [Create Groups](/embedded-bi/managing-resources/manage-groups/)
-* [Manage Permissions for users and groups](/embedded-bi/managing-resources/share-dashboards/manage-permissions/)
+* [Manage Permissions for users and groups](/embedded-bi/working-with-dashboards/share-dashboards/manage-permissions/)
 
-The new user account created is assigned to this group by default. 
+By default, the new user account created is assigned to this group.
+
+## Site Configuration for Bold BI Sites
+
+User can select the preferred Site Name and Site Identifier for the initial site.
+
+![SQL Server Site](/static/assets/embedded/application-startup/images/application-startup-site-configuration.png)
 
 ## Database Configuration for Bold BI
 
@@ -128,17 +194,11 @@ You can find the details on How to configure the Azure Blob [here](https://docs.
 
 `DataStore` is nothing but an intermediate database. Here, imported data from web data sources and statistic files are stored and you can update the data using scheduled refresh option.
 
-This configuration stores the data in offline and helps to access the dashboards quickly. 
+This configuration stores the data in offline and helps to access the dashboards quickly.
 
-This is optional. You can skip this configuration by selecting the option `I will configure the data store later` or you can configure the connection and then proceed with the Next.
+You can configure the database connection for data store and then proceed with the Next.
 
-> **NOTE:**  Later, you can configure the `DataStore` once the application setup gets completed. Learn more [here](/embedded-bi/site-administration/datastore-settings/).
-
-### Skip the Configuration
-
-![Skip DataStore](/static/assets/embedded/application-startup/images/application-startup-datastore.png)
-
-### Configuring the Data Store
+![SQL Server DataStore](/static/assets/embedded/application-startup/images/application-startup-datastore.png)
 
 You can use anyone of the following database to configure the Data Store.
 
@@ -148,8 +208,6 @@ You can connect to the existing server instance with the below options.
 
 * Create new database. 
 * Use an existing database.
-
-![SQL Server DataStore](/static/assets/embedded/application-startup/images/application-sqlserver-startup-datastore.png)
 
 > **NOTE:**  The credentials that is given to connect to the server instance must have permissions to
 * Create Database 
@@ -168,6 +226,40 @@ After proceeding with Next, the application will register and validate the site 
 * Go to Dashboards - where you can create, edit, update the dashboards and so on. 
 
 ![Launch Bold BI Dashboards](/static/assets/embedded/application-startup/images/launch-application.png)
+
+## Activate Bold BI license
+
+You can activate your account either by using your login credentials or by offline unlock key.
+
+Open the Manage License Page - `{domain}/ums/administartion/license-settings`
+
+Then, choose the Bold BI Embedded tab.
+
+![BoldBI Embedded tab](/static/assets/embedded/application-startup/images/boldbi-embedded-tab.png)
+
+### Activate Bold BI license using the login credential
+
+You can sign in with your registered email address to activate your subscription.
+
+![Account activate using login](/static/assets/embedded/application-startup/images/activate-boldbi-account.png)
+
+If you are having multiple Bold BI licenses, then you will be getting this screen and select the corresponding license to activate the Bold BI. Otherwise, your Bold BI license will be automatically activated.
+
+![Choose Bold BI License](/static/assets/embedded/application-startup/images/choose-the-license.png) 
+
+### Upload unlock key
+
+> **NOTE:** Offline unlock key available for selected customers only. Please [contact us](https://www.boldbi.com/contact) to get access to the offline unlock key.
+
+![Unlock Key option](/static/assets/embedded/application-startup/images/upload-unlock-key-option.png) 
+
+Once the unlock key is uploaded, proceed to the `Upload License` button for activating the Bold BI License.
+
+![Updated Bold BI License](/static/assets/embedded/application-startup/images/update-license.png)
+
+### Create site
+
+Please refer to this [Create Site](/embedded-bi/multi-tenancy/create-new-site/) document to create a new Bold BI site.
 
 ## See Also
 

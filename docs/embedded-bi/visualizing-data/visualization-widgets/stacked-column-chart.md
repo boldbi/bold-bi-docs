@@ -184,6 +184,14 @@ A Legend is a text used to describe the data plotted. This allows you to toggle 
 
 Enabling this option of **Custom Legend Text** will allow you to define a custom text (through the text area) to display for each legend series (selecting through the combo box) in chart.
 
+**Legend Label Color**
+
+This allows you to change the chart legend title and label colors.
+
+![Chart Legend Color Option](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-column-chart/legend-label-color-option.png)
+
+![Chart Legend Color](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-column-chart/legend-label-color.png)
+
 **Custom Legend Settings**
 
 You can customize the legend text through the Custom Legend Settings dialog. This dialog will show the legend text list as labels at left and corresponding text area at right to add the formatted text to display instead. When a column is added into Row section, this dialog will show two options `Individual` and `Group` at top in addition, to toggle between.
@@ -213,6 +221,14 @@ For example, If Display Format is {{ : Row }} ({{ : Value }}), then Legend serie
 This allows you to toggle the visibility of value labels.
 
 ![Show Value Labels](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-column-chart/Show-Value-Labels.PNG)
+
+**Value Label Color**
+
+This allows you to customize value label's color.
+
+![Value label Color Option](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-column-chart/data-label-color-option.png)
+
+![Value label Color](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-column-chart/data-label-color.png)
 
 **Value Label Rotation**
  
@@ -296,9 +312,17 @@ This allows you to enable/disable comment for dashboard widget. For more details
 
 **Axis**
 
-![Axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-column-chart/chartAxis.PNG)
+![Axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-column-chart/axis-settings.png)
 
 This section allows you to customize the axis settings in chart. 
+
+**Title color**
+
+This allows you to customize the axis title color.
+
+**Label color**
+
+This allows you to customize the axis label color.
 
 **Show Category Axis**
 
@@ -334,6 +358,18 @@ This option hides the overlapping label in the axis.
 
 ![Label overflow mode hide](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-column-chart/hide-label.PNG)
 
+#### Trim Axis Labels
+
+This option allows you to trim axis labels, based on the 'Maximum Label Width' property value.
+
+![Trimmed label](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-column-chart/trimming-label.png)
+
+#### Maximum Label Width
+
+This option allows you to set maximum width for the axis labels, and also it can be made customizable when the trim axis label option is enabled.
+
+![Maximum label width](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-column-chart/Maximum-label-width.png)
+
 **Category Axis Label Rotation**
 
 This allows you to define the rotation angle for the category axis labels to display.
@@ -357,6 +393,12 @@ This allows you to enable the visibility of `Primary Value Axis` title of chart.
 This allows you to edit the `Primary Value Axis` title. It will reflect in y-axis name of chart. 
 
 ![Primary Value Axis Title](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-column-chart/Primary-Axis-Title.PNG)
+
+#### Axis Format
+
+This option allows you to format primary and secondary axis values from the formatting details provided using 'Format' button. For more details, refer to this [measure format](/embedded-bi/visualizing-data/working-with-widgets/formatting-measure-type-column/).
+
+![Formatting option](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-column-chart/formatting-button.png)
 
 **Axis Range Settings**
 

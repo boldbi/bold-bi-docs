@@ -34,7 +34,7 @@ Once you click the data source, the NEW DATA SOURCE configuration panel opens.
 
 3. Select **GET** method for the REST API in **Method** combo box.
 4. In **Max Rows**, enter the maximum number of rows to be fetched from the GitLab data source. This value is used to fetch the data from GitLab data source via pagination.
-5. Replace **&lt;:your_access_token** under Headers and input a valid **Access Token**.
+5. Replace **&lt;:your_access_token&gt;** under Headers and input a valid **Access Token**.
 6. Choose a time interval for **Refresh Settings** using the combo box, to trigger the Rest API request periodically to keep the data in sync with our dashboard.  
 7. Select **JSON** data type in **Data Format** combo box.
 8. Choose **None** under **Authentication Type**.
@@ -104,6 +104,6 @@ Replace it in the URL to query a particular user's projects:
 
 [Editing a Data Connection](/cloud-bi/working-with-data-source/editing-a-data-connection/)   
 
-[Dashboard Designer Walkthrough](/cloud-bi/getting-started/bold-bi-walk-through/)
+[Dashboard Designer Walkthrough](/cloud-bi/getting-started/quick-start/)
 
 [GitLab Integration](https://www.boldbi.com/integrations/gitlab?utm_source=syncfusion&utm_medium=documentation&utm_campaign=boldbigitlabintegration)

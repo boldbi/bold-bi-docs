@@ -144,27 +144,66 @@ You can enable or disable horizontal grid lines in the grid control. `This optio
 #### Vertical grid lines
 You can enable or disable vertical lines in the grid control. `This option is enabled by default`.
 
-#### Alternative Row color
-This allows you to differentiate alternative rows of the grid by the background color. If you enable this property, alternative rows change its background color by `#F7F7F7`.
+#### Show Border
+This allows you to enable or disable the border of the grid control. This option is enabled by default.
 
-#### Row height
-You can customize the height of the grid rows. The default value is 32 and maximum value is 120.
-![Grid Row Height](/static/assets/cloud/visualizing-data/visualization-widgets/images/grid/grid_row_height.png)
+#### Enable Alternative Row
+This allows you to differentiate alternative rows of the grid by the background color. If you enable this property, alternative rows changes its background color as `#F7F7F7` by default, it can be customized from `Content Settings` section.
 
-### Column Header
-This section allows you to format the grid cells. 
-![Formatting properties](/static/assets/cloud/visualizing-data/visualization-widgets/images/grid/Grid_columnHeader.jpeg)
+![Grid Row Height](/static/assets/cloud/visualizing-data/visualization-widgets/images/grid/grid_alternativerowcolor.png)
+
+### Header Settings
+This section allows you to format the grid header visibility, color, and font-size.
+
+![Grid Row Height](/static/assets/cloud/visualizing-data/visualization-widgets/images/grid/grid_headersettings.png)
 
 #### Show Header
-This allows you to show or hide the grid column header. The header is shown by default.
+This allows you to enable or disable the grid header. This option is enabled by default.
 
-#### Header foreground color
-This allows you to select the color for the header row’s foreground. `The default value is #ffffff`. 
+#### Foreground
+You can customize the header font color. The default color of header font is `#2d3748`.
 
-#### Header background color
-This allows you to select the color for the header row’s background. `The default value is #f67280`. 
+#### Background
+You can customize the header background color. The default color of header background is `#f3f7fa`.
 
-![Header background color](/static/assets/cloud/visualizing-data/visualization-widgets/images/grid/header-background-color.png)
+#### Row Height
+You can customize the height of the grid header. The default value is 42 and maximum value is 120.
+
+#### Auto Font Size
+This property picks auto font-size for grid header when it is enabled, otherwise it allows you to choose fixed font-size from `Font Size` property. This option is enabled by default.
+
+#### Font Size
+You can enable this property by disabling `Auto Font Size`, it allows you to change font-size of grid header. 
+
+![Header background color](/static/assets/cloud/visualizing-data/visualization-widgets/images/grid/grid_headercustomized.png)
+
+### Content Settings
+This section allows you to format the grid row height, color, and font-size.
+
+![Grid Row Height](/static/assets/cloud/visualizing-data/visualization-widgets/images/grid/grid_contentsetting.png)
+
+#### Foreground
+You can customize the row font color. The default color of row font is `#000000`.
+
+#### Background
+You can customize the row background color. The default color of row background is `#ffffff`.
+
+#### Alternative Foreground
+You can customize font color of alternative rows. The default color of alternative row font is `#000000`. This property can be displayed by enabling `Enable Alternative Row`.
+
+#### Alternative Background
+You can customize background color of alternative rows. The default color of alternative row background is `#f7f7f7`. This property can be displayed by enabling `Enable Alternative Row`.
+
+#### Row Height
+You can customize the height of the grid rows. The default value is 32 and maximum value is 120.
+
+#### Auto Font Size
+This property picks auto font-size for grid rows when it is enabled, otherwise it allows you to choose fixed font-size from `Font Size` property. This option is enabled by default.
+
+#### Font Size
+You can enable this property by disabling `Auto Font Size`, it allows you to change font-size of grid rows.
+
+![Header background color](/static/assets/cloud/visualizing-data/visualization-widgets/images/grid/grid_contentcustomized.png)
 
 ### Filter
 
@@ -189,14 +228,13 @@ Using this option, you can enable or disable hierarchical top N filtering. While
 When Hierarchical Filter option is enabled, the Top N will be applied for each individual column separately based on the number set for each column.
 
 ### Column settings
-
-#### Key Performance Indicator (KPI)
+This section allows you to format grid column based on alignment, width, and KPI customization. 
 
 ![Column settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/grid/grid_columnSetting.png)
 
-#### Column Alignment
+#### Column Settings
 
-This allows you to align each column of the grid.
+This allows you to set width and align each column of the grid.
 
 If you click the `Customize` button, the window will render like this. 
 
@@ -206,7 +244,12 @@ If you click the `Customize` button, the window will render like this.
 
 ***Content Align*** - You can align the content of the column by left, right, and center alignment for each column.
 
+***Column Width*** - You can specify the width for a particular column by entering numeric values in the textbox. To set width to default, clear the entered value from the textbox.
+
 You can add `Key Performance Indicator (KPI)` columns to grid control by navigating to KPI Expression window by clicking the Add KPI button from property panel at top.
+
+#### Key Performance Indicator (KPI)
+A Key Performance Indicator changes each column color depending on its relation to a target line value.
 
 #### Creating a KPI Column 
 

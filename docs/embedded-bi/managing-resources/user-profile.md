@@ -22,7 +22,7 @@ You can edit the profile details in Bold BI Cloud account. Click `Bold BI Accoun
 
 ![Cloud Account](/static/assets/embedded/managing-resources/images/syncfusion-cloud-account-button.png)
 
-First name, Last name, Phone number and Profile picture can be changed in the Bold BI cloud profile page.
+Username, first name, last name, phone number and profile picture can be changed in the Bold BI cloud profile page.
 
 ![Edit Profile](/static/assets/embedded/managing-resources/images/edit-user-profile.png)
      

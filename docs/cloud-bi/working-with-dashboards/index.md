@@ -20,12 +20,12 @@ You can explore the working with dashboard in detail here,
 
 [Commenting Dashboard](/cloud-bi/working-with-dashboards/commenting-dashboard/)
 
-[Save Dashboard](/cloud-bi/working-with-dashboards/save-dashboard/)
+[Save Dashboard](/cloud-bi/working-with-dashboards/publish-dashboard/)
 
 [Preview Dashboard](/cloud-bi/working-with-dashboards/preview-dashboard/)
 
-[Refreshing Dashboard](/cloud-bi/working-with-dashboards/refresh-dashboard/)
+[Refreshing Dashboard](/cloud-bi/working-with-dashboards/preview-dashboard/refresh-dashboard/)
 
-[Filtering Views using URL Parameters](/cloud-bi/working-with-dashboards/urlparameters/)
+[Filtering Views using URL Parameters](/cloud-bi/working-with-dashboards/preview-dashboard/urlparameters/)
 
 [Share Dashboards](/cloud-bi/working-with-dashboards/share-dashboards/)

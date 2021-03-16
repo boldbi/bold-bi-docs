@@ -43,6 +43,6 @@ After synchronization completes, the number of users modified, deleted, duplicat
 
 ## Duplicate Users
 
-Azure Active Directory users who has the same email address as that of the Bold BI users(who are already present) will be marked as duplicate users and will not be allowed to synchronize into Active Directory.
+Azure Active Directory users who has the same username or email address as that of the Bold BI users(who are already present) will be marked as duplicate users and will not be allowed to synchronize into Active Directory.
 
 ![Display Duplicated users](/static/assets/embedded/managing-resources/manage-users/images/display-azure-duplicate-message.png)

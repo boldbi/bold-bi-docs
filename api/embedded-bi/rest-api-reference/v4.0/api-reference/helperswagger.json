@@ -8,6 +8,9 @@
   "dashbaordviewsdescription": {
     "dashbaordviewsdescription": "To retrieve, add, update and delete a list of dashboard views in particular dashboard from the Bold BI Cloud, use the corresponding endpoints below.\n"
   },
+  "Attributesdescription": {
+    "Attributesdescription": "To retrieve, add, update and delete the attributes, also to customize a particular dashboard for user, group and site, use the following corresponding endpoints.\n"
+  },
   "tryitnow": {
     "tryitnowdescription": "Interactive documentation lets you play with our APIs to explore the responses and make the plan accordingly.\n\n   [Try It Now(v4.0)](https://help.boldbi.com/embedded-bi/rest-api-reference/v4.0/try-it-now/)\n\n To know about how it works, please click [here](https://help.boldbi.com/embedded-bi/rest-api-reference/interact-with-rest-api/).\n"
   }

@@ -24,24 +24,37 @@ We can generate the locale files in two ways as follow:
 Follow these common steps for both ways:
 
 1. Create a new folder inside the locale folder, which present in the Bold BI application in the following location.
-<table>
-<tr>
-<td>IDP</td>
-<td>C:\Bold BI\IDP\locale</td>
-</tr>
-<tr>
-<td>UMS</td>
-<td>C:\Bold BI\IDP\UMS\locale</td>
-</tr>
-<tr>
-<td>Dashboard Server</td>
-<td>C:\Bold BI\Dashboard Server\locale</td>	
-</tr>
-<tr>
-<td>Dashboard Designer</td>
-<td>C:\Bold BI\Dashboard Designer\locale</td>	
-</tr>
-</table>
+
+    Check the following location for Bold BI version 4.1.36 or later.
+
+    > **NOTE:** By default, the Bold BI is deployed in "C:\BoldServices".
+
+    | Application       	| Location                                                  	|
+    |-------------------	|-----------------------------------------------------------	|
+    | Idp                	| **`{Deployed Location}`**\idp\web\locale                   	|
+    | Ums               	| **`{Deployed Location}`**\idp\ums\locale                  	|
+    | Bi                	| **`{Deployed Location}`**\bi\web\locale                    	|
+    | BiDesigner          | **`{Deployed Location}`**\bi\dataservice\locale            	|
+
+    Check the following location for Bold BI Linux server.
+
+    | Application       	| Location                                                  	|
+    |-------------------	|-----------------------------------------------------------	|
+    | Idp                	| /var/www/boldbi-embedded/boldbi/idp/web/locale             	|
+    | Ums               	| /var/www/boldbi-embedded/boldbi/idp/ums/locale             	|
+    | Bi                	| /var/www/boldbi-embedded/boldbi/bi/web/locale               |
+    | BiDesigner          | /var/www/boldbi-embedded/boldbi/bi/dataservice/locale      	|
+
+    Check the following location for Bold BI version below 4.1.36.
+
+    > **NOTE:** By default, the Bold BI is deployed in "C:\Bold BI".
+
+    | Application       	| Location                                                  	|
+    |-------------------	|-----------------------------------------------------------	|
+    | IDP                	| **`{Deployed Location}`**\IDP\locale                       	|
+    | UMS               	| **`{Deployed Location}`**\IDP\UMS\locale                   	|
+    | Dashboard Server   	| **`{Deployed Location}`**\Dashboard Server\locale          	|
+    | Dashboard Designer  |	**`{Deployed Location}`**\Dashboard Designer\locale         |
 
 2. Mention the folder name in the locale language code, for which language that you want to generate the localization file.
 

@@ -31,7 +31,7 @@ It is an end-to-end solution for creating, managing, and sharing interactive bus
 
 The following links help you to start with Bold BI.
 
-[Getting started](/cloud-bi/getting-started/bold-bi-walk-through/)
+[Getting started](/cloud-bi/getting-started/quick-start/)
 
 [Connecting your data](/cloud-bi/working-with-data-source/data-connectors/)
 

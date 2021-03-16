@@ -140,10 +140,10 @@ Allows you provide description about the Radial Gauge.
 Allows you to switch the widget view from the Half Circle type to Horse Shoe type or Full circular gauge or vice versa. The default type is `Horse Shoe`.
 
 #### Minimum value
-Allows you change the minimum value of the gauge. This option will be in disabled state, when you configure the column to start value in the data configuration panel.
+Allows you to change the minimum value of the gauge. This option will be in a disabled state when you configure the column to start value in the data configuration panel.
 
 #### Maximum value
-Allows you change the maximum value of the gauge. This option will be in disabled state, when you configure the column to end value in the data configuration panel.
+Allows you to change the maximum value of the gauge. This option will be in a disabled state when you configure the column to end value in the data configuration panel.
 
 #### Enable Animation
 You can enable the animation for gauge by setting this property to true. The default value of this property is false.

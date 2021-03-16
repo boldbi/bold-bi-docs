@@ -6,36 +6,39 @@ platform: bold-bi
 documentation: ug
 ---
 
-# How to change the binding in the Bold BI Enterprise?
-Follow the below steps to change the application binding information.
+> This document explains how to change the application binding in IIS for the Bold BI version 4.1.36 or later. Check [this](/embedded-bi/faq/how-to-change-binding-in-bold-bi-embedded-below-v4.1.36/) to change the IIS binding for the Bold BI version below 4.1.36. 
 
-1. Add new binding to Bold BI Enterprise edition on IIS as shown in the image below.
-    **`Example: 172.17.82.1`**
-![IIS Binding](/static/assets/embedded/faq/images/add-binding.png)
+# How to change the binding in the Bold BI Enterprise
+Follow these steps to change the application binding information:
 
-2. Update the new binding values in below configuration files in deployed location.
-    - Update the `InternalAppBIUrl` value in config file in below location,
-    `{Deployed Location}\IDP\App_Data\Configuration\config.xml` 
-    ![IDP Config File](/static/assets/embedded/faq/images/idp-config.png)  
+1. Add a new binding to Bold BI Enterprise edition on IIS as shown in the following image.
+    **`Example: 172.17.99.113`**
+![IIS Binding](/static/assets/embedded/faq/images/add-iis-binding.png)
 
-    - Update the `InternalAppDataServiceUrl`, and `InternalAppIdpUrl` values in the config file in below location  
-    `{Deployed Location}\Dashboard Server\App_Data\Configuration\Config.xml`  
-    ![DS Config File](/static/assets/embedded/faq/images/ds-config.png)  
+2. Update the new binding values in the following configuration files in deployed location.
 
-> **NOTE:**  By default, Bold BI will be deployed on "C:\Bold BI"
+    Update the `Idp`, `Bi`, and `BiDesigner` values in the config file in following location.
+    `{Deployed Location}\app_data\configuration\config.xml` 
+    ![Core Config File](/static/assets/embedded/faq/images/latest-config-file.png)
 
-3. Restart the site in IIS and browse the site with old binding URL.
+    > **NOTE:** By default, Bold BI will be deployed on "C:\BoldServices".
 
-4. Now, navigate to the site settings page of the UMS application using below new binding and update the new binding information as shown in image below.  
-**`http://172.17.82.1/ums/en-us/administration`**  
-![IDP Base URL](/static/assets/embedded/faq/images/idp-base-url.png)  
+3. Update the new binding values in `product.json` file in following location.
+`{Deployed Location}\app_data\configuration\product.json`
+![Product json File](/static/assets/embedded/faq/images/product-json.png)
 
-5. Now, navigate to the site settings of your dashboard server application using below new binding and update the new binding information as shown in image below.  
-**`http://172.17.82.1/bi/en-us/site/site1/administration`**  
-![DS Base URL](/static/assets/embedded/faq/images/ds-base-url.png)
+4. Restart the site in IIS and browse the site with new binding URL.
 
-6. Now, Bold BI site can be browsed using the new binding.
+5. Now, navigate to the site settings page of the UMS application using below new binding and update the new binding information as shown in the following image.  
+**`http://172.17.99.113/ums/administration`**  
+![IDP Base URL](/static/assets/embedded/faq/images/idp-url-binding.png)  
 
-> **IMPORTANT:**  Don’t remove existing bindings. 
+6. Now, navigate to the site settings of your dashboard server application using below new binding and update the new binding information as shown in image below.  
+**`http://172.17.99.113/bi/site/site1/administration`**  
+![DS Base URL](/static/assets/embedded/faq/images/ds-url-binding.png)
 
-> **NOTE:**  If you have DNS means you can add binding for the DNS instead of IP mentioned here.
+7. Now, Bold BI site can be browsed using the new binding.
+
+> **IMPORTANT:** Do not remove the existing bindings. 
+
+> **NOTE:** If you have DNS, you can add binding for the DNS instead of IP mentioned here.

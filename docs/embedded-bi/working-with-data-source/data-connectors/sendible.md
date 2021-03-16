@@ -28,7 +28,7 @@ To configure the Sendible data source, follow these steps:
 ## Create a Sendible data source
 Once you click the data source, the NEW DATA SOURCE configuration panel opens. Follow these steps to create a Sendible data source.
 1. Enter a name and description (optional) for the data source.
-2. Enter a valid Sendible REST API endpoint in the URL textbox. Refer the [Sendible API documentation](https://www.sendible.com/v/1_0_9#/http/getting-started) for more details.
+2. Enter a valid Sendible REST API endpoint in the URL textbox. Refer the 'Sendible API documentation' for more details.
 
     Example: [https://api.sendible.com/api/v2/profile](https://api.sendible.com/api/v2/profile)    
 
@@ -95,6 +95,6 @@ Period of time before next refresh call is triggered. This will automatically tr
 
 [Editing a Data Connection](/embedded-bi/working-with-data-source/editing-a-data-connection/)   
 
-[Dashboard Designer Walkthrough](/embedded-bi/getting-started/bold-bi-walk-through/)
+[Dashboard Designer Walkthrough](/embedded-bi/getting-started/quick-start/)
 
 [Sendible Integration](https://www.boldbi.com/integrations/sendible)

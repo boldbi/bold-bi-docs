@@ -47,7 +47,7 @@ After successful authentication, the NEW DATA SOURCE configuration panel opens
 1. Enter a name and description (optional) for the data source.
 2. Enter a valid FreshBooks REST API endpoint in the URL textbox. Refer the [FreshBooks API documentation](https://www.freshbooks.com/api/start) for more details.
 
-   Example: [https://api.freshbooks.com/accounting/account/&lt;:account_id&gt;/items/items](https://api.freshbooks.com/accounting/account/%3c:account_id%3e/items/items)  
+   Example: `https://api.freshbooks.com/accounting/account/<:account_id>/items/items`
 
 3. Select **GET** method for the REST API in **Method** combo box.
 4. In **Max Rows**, enter the maximum number of rows to be fetched from the FreshBooks data source. This value is used to fetch the data from FreshBooks data source via pagination.
@@ -80,22 +80,22 @@ Period of time before next refresh call is triggered. This will automatically tr
 
 ### Setting up the URL
 **Fetch data about specific account - Sample URL**
-1. Replace the **&lt;:account_id&gt;** in the URL to query the items endpoint.
+1. Replace the **<:account_id>** in the URL to query the items endpoint.
 2. Query the <i>/users/me</i> endpoint.
 3. From the listed information get the account id.
 
 Replace it in the URL to query a particular group:
 
-[https://api.freshbooks.com/accounting/account/&lt;:account_id&gt;/items/items](https://api.freshbooks.com/accounting/account/%3c:account_id%3e/items/items)
+`https://api.freshbooks.com/accounting/account/<:account_id>/items/items`
 
 #### Sample queries
 **Invoices**
 
-[https://api.freshbooks.com/accounting/account/JNRnzL/invoices/invoices](https://api.freshbooks.com/accounting/account/JNRnzL/invoices/invoices)
+`https://api.freshbooks.com/accounting/account/JNRnzL/invoices/invoices`
 
 **Expenses**
 
-[https://api.freshbooks.com/accounting/account/JNRnzL/expenses/expenses](https://api.freshbooks.com/accounting/account/JNRnzL/expenses/expenses)
+`https://api.freshbooks.com/accounting/account/JNRnzL/expenses/expenses`
 
 ### Preview and data import
 * Click **Preview & Connect** to connect with the configurations set.
@@ -124,8 +124,8 @@ You can edit, delete and re-authorize this account from the **Connected Accounts
 
 [Editing a Data Connection](/cloud-bi/working-with-data-source/editing-a-data-connection/)   
 
-[Dashboard Designer Walkthrough](/cloud-bi/getting-started/bold-bi-walk-through/)
+[Dashboard Designer Walkthrough](/cloud-bi/getting-started/quick-start/)
 
 [FreshBooks API Limits](https://www.freshbooks.com/api/limits)
 
-[FreshBooks Integration](https://www.boldbi.com/integrations/freshbooks?utm_source=syncfusion&utm_medium=documentation&utm_campaign=boldbifreshbooksintegration)
+[FreshBooks Integration](https://www.boldbi.com/integrations/freshbooks)

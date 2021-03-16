@@ -107,6 +107,18 @@ The following screenshots shows the various settings menu options based on the t
 You can change the `aggregation type` of the `measure` section from the settings menu as shown in the following screenshot. Refer to [this section](/cloud-bi/visualizing-data/working-with-widgets/aggregating-value-columns-based-on-type/) for more details.
 ![Changing the aggregation type](/static/assets/cloud/visualizing-data/visualization-widgets/images/heat-map/aggregation-type.png)
 
+#### Drill Down
+
+When the second value is added to the x-axis or y-axis section, the alert message will be shown.
+
+![Drill confirmation alert](/static/assets/cloud/visualizing-data/visualization-widgets/images/heat-map/drill-alert.png)
+
+Click `Yes` to enable the option. If you click `No,` then a single value will be added to the respected section( x-axis or y-axis).
+
+*Figure: Heat Map with a drilled view of the selected region.*
+
+![Drilled view](/static/assets/cloud/visualizing-data/visualization-widgets/images/heat-map/drilled-view.png)
+
 #### Filtering data
 
 You can use Filters to change the values by selecting the `Filter` option. For more details, refer to [Measure filter](/cloud-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-measure-column) and [dimension filter](/cloud-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column).
@@ -207,6 +219,13 @@ This allows you to enable the visibility of x-axis labels.
 
 ![Show axis label - Toggled off](/static/assets/cloud/visualizing-data/visualization-widgets/images/heat-map/Show-axis-label.png)
 
+#### Label Color
+This allows you to change the x-axis label color.
+
+![Axis Label color Option](/static/assets/cloud/visualizing-data/visualization-widgets/images/heat-map/x-axis-label-color-option.png)
+
+![Axis Label color](/static/assets/cloud/visualizing-data/visualization-widgets/images/heat-map/x-axis-label-color.png)
+
 #### Show axis title
 This allows you to enable the visibility of x-axis title.
 
@@ -251,6 +270,13 @@ This allows you to change the axis position from bottom to top in the x-axis.
 This allows you to enable the visibility of y-axis labels.
 
 ![axis label](/static/assets/cloud/visualizing-data/visualization-widgets/images/heat-map/axis-label.png)
+
+#### Label Color
+This allows you to change the y-axis label color.
+
+![Axis Label color Option](/static/assets/cloud/visualizing-data/visualization-widgets/images/heat-map/y-axis-label-color-option.png)
+
+![Axis Label color](/static/assets/cloud/visualizing-data/visualization-widgets/images/heat-map/y-axis-label-color.png)
 
 #### Show axis title
 This allows you to enable the visibility of y-axis title.

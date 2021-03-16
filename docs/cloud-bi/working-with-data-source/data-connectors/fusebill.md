@@ -92,8 +92,8 @@ Replace it in the URL to query a particular customer:
 
 [Editing a Data Connection](/cloud-bi/working-with-data-source/editing-a-data-connection/)   
 
-[Dashboard Designer Walkthrough](/cloud-bi/getting-started/bold-bi-walk-through/)
+[Dashboard Designer Walkthrough](/cloud-bi/getting-started/quick-start/)
 
 [Fusebill Rate Limits](https://developer.fusebill.com/reference#section-rate-limits)
 
-[Fusebill Integration](https://www.boldbi.com/integrations/fusebill?utm_source=syncfusion&utm_medium=documentation&utm_campaign=boldbifusebillintegration)
+[Fusebill Integration](https://www.boldbi.com/integrations/fusebill)

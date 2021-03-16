@@ -5,7 +5,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-tagmanager`,
       options: {
-        id: "GTM-K73VBT8"
+          id: "GTM-PXFTV5X"
       }
     },
     {
@@ -61,7 +61,8 @@ module.exports = {
       },
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-sharp`,
-    `gatsby-plugin-client-side-redirect`
+    `gatsby-plugin-client-side-redirect`,
+    `gatsby-plugin-remove-generator`
 	
   ]
 }

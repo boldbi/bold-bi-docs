@@ -95,17 +95,17 @@ You can apply the `Sort` and `Filter` options for the Series field, if required 
 
 **Filtering**: You can use “Filter” option to filter the data by specifying the filter condition. Refer the detailed steps on applying measure filter from this [page](/cloud-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column). 
 
-### Start Value
+### Minimum Value
 
-Drag any field from the Measures section to `Start Value`. If the start value is configured, then this value will be the start range for the gauge widget .
+Drag any field from the Measures section to `Minimum Value`. If the minimum value is configured, then this value will be the start range for the gauge widget .
 
-![Start Value](/static/assets/cloud/visualizing-data/visualization-widgets/images/radial-gauge/Start-Value.png)
+![Minimum Value](/static/assets/cloud/visualizing-data/visualization-widgets/images/radial-gauge/Start-Value.png)
 
-### End Value
+### Maximum Value
 
-Drag any field from the Measures section to `End Value`. If the End value is configured, it will act as the end range for the gauge widget . 
+Drag any field from the Measures section to `Maximum Value`. If the maximum value is configured, it will act as the end range for the gauge widget . 
 
-![End Value](/static/assets/cloud/visualizing-data/visualization-widgets/images/radial-gauge/End-Value.png)
+![Maximum Value](/static/assets/cloud/visualizing-data/visualization-widgets/images/radial-gauge/End-Value.png)
 
 ## How to format the Radial Gauge
 
@@ -138,11 +138,11 @@ Allows you provide description about the Radial Gauge.
 #### Gauge Type
 Allows you to switch the widget view from the Half Circle type to Horse Shoe type or Full circular gauge or vice versa. The default type is `Horse Shoe`.
 
-#### Minimum value
-Allows you change the minimum value of the gauge. This option will be in disabled state, when you configure the column to start value in the data configuration panel.
+#### Minimum Value
+Allows you to change the minimum value of the gauge. This option will be in a disabled state when you configure the column to start value in the data configuration panel.
 
-#### Maximum value
-Allows you change the maximum value of the gauge. This option will be in disabled state, when you configure the column to end value in the data configuration panel.
+#### Maximum Value
+Allows you to change the maximum value of the gauge. This option will be in a disabled state when you configure the column to end value in the data configuration panel.
 
 #### Enable Animation
 You can enable the animation for gauge by setting this property to true. The default value of this property is false.

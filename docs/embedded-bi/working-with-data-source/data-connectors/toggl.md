@@ -31,7 +31,7 @@ Once you click the data source, the NEW DATA SOURCE configuration panel opens.
 1. Enter a name and description (optional) for the data source.
 2. Enter a valid Toggl REST API endpoint in the URL textbox. Refer the [Toggl API documentation](https://github.com/toggl/toggl_api_docs/) for more details.
 
-    Example: [https://www.toggl.com/api/v8/dashboard/&lt;:workspace_id&gt;](https://www.toggl.com/api/v8/dashboard/%3c:workspace_id%3e)    
+    Example: `https://www.toggl.com/api/v8/dashboard/<:workspace_id>`
 
 3. Select **GET** method for the REST API in **Method** combo box.
 4. In **Max Rows**, enter the maximum number of rows to be fetched from the Toggl data source. This value is used to fetch the data from Toggl data source via pagination.
@@ -94,7 +94,7 @@ Period of time before next refresh call is triggered. This will automatically tr
 
 Replace it in the URL to query a particular workspace:
 
-[https://www.toggl.com/api/v8/dashboard/workspaces/&lt;:workspace_id&gt;](https://www.toggl.com/api/v8/dashboard/workspaces/%3c:workspace_id%3e)
+`https://www.toggl.com/api/v8/dashboard/<:workspace_id>`
 
 #### Mandatory Parameters for Reports API
 Below request parameters are mandatory to access the report APIs
@@ -151,7 +151,7 @@ Below request parameters are mandatory to access the report APIs
 
 [Editing a Data Connection](/embedded-bi/working-with-data-source/editing-a-data-connection/)   
 
-[Dashboard Designer Walkthrough](/embedded-bi/getting-started/bold-bi-walk-through/)
+[Dashboard Designer Walkthrough](/embedded-bi/getting-started/quick-start/)
 
 [Rate Limitations for Toggl Reports API](https://github.com/toggl/toggl_api_docs/blob/master/reports.md#rate-limiting)
 

@@ -92,7 +92,7 @@ Initially, it will extract 50000 records; the remaining records will be extracte
 8. Click **Connect** to extract the selected tables and get into the data design view page.  
 ![Extract tables](/static/assets/cloud/working-with-datasource/data-connectors/images/SQLDataSource/Extract-tables.png)
 
-	> **NOTE:**  The extracted table will be stored in the intermediate database in name format `&lt;tableName&gt;_<schemaName>`. For example, in the previous step, the table **Orders** are extracted from schema **dbo** hence, the table name was stored as `Orders_dbo` in intermediate database.
+	> **NOTE:**  The extracted table will be stored in the intermediate database in name format `<tableName>_<schemaName>`. For example, in the previous step, the table **Orders** are extracted from schema **dbo** hence, the table name was stored as `Orders_dbo` in intermediate database.
 
 9. Drag and drop the table from the left panel of data design page.  
 ![Drag and drop the table](/static/assets/cloud/working-with-datasource/data-connectors/images/SQLDataSource/Drag-and-drop-the-table.png)
@@ -245,7 +245,7 @@ For incremental update, users should specify the last modified timestamp column 
 
 [Editing a Data Connection](/cloud-bi/working-with-data-source/editing-a-data-connection/)   
 
-[Dashboard Designer Walkthrough](/cloud-bi/getting-started/bold-bi-walk-through/)
+[Dashboard Designer Walkthrough](/cloud-bi/getting-started/quick-start/)
 
 [Microsoft SQL Server Integration](https://www.boldbi.com/integrations/microsoft-sql-server?utm_source=syncfusion&utm_medium=documentation&utm_campaign=boldbimssqlserverintegration)
 

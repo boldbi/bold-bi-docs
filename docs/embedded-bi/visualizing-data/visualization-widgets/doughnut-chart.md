@@ -192,11 +192,27 @@ A Legend is a text used to describe the plotted data. It allows you to toggle th
 
 Enabling the **Custom Legend Text** option will allow you to define a custom text (through the text area) to display for each legend series (selecting through the combo box) in the chart.
 
+**Legend Label Color**
+
+This allows you to change the chart legend title and label colors.
+
+![Chart Legend Color Option](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/legend-label-color-option.png)
+
+![Chart Legend Color](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/legend-label-color.png)
+
 **Show value labels**
 
 Toggle the visibility of value labels.
 
 ![Show value labels](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/value-labels.png)
+
+**Value Label Color**
+
+This allows you to customize value label's color.
+
+![Value label Color Option](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/data-label-color-option.png)
+
+![Value label Color](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/data-label-color.png)
 
 **Data label**
 
@@ -282,7 +298,7 @@ Enable or disable the image export option for the Doughnut Chart widget. Enablin
 
 **Enable comments**
 
-Enable or disable the comments for the dashboard widget. For more details refer [here](/dashboard-cloud/visualize-data/commenting-dashboard-and-widget)
+Enable or disable the comments for the dashboard widget. For more details refer [here](/embedded-bi/visualizing-data/working-with-widgets/commenting-widget/)
 
 **Series palette**
 

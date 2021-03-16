@@ -92,21 +92,33 @@ Range – A range (two values) can be bounded, if you enable the `Range Selectio
 
 ![Range Slider with Range Pointer](/static/assets/cloud/visualizing-data/visualization-widgets/images/range-slider/range-pointer.png)
 
-**Vertical Orientation**
+**Orientation**
 
-This allows you to toggle the orientation type of `Vertical Orientation`.
+This allows you to toggle the orientation type of `Vertical Orientation` and `Horizontal Orientation`.
 
-Vertical – Enable the `Vertical Orientation` option for vertical orientation.
+![Range Slider Orientation Type](/static/assets/cloud/visualizing-data/visualization-widgets/images/range-slider/orientation-type.png)
+
+Orientation will be set based on the widget resolutions in `Auto` mode.
 
 **Range Slider with Vertical Orientation**
 
 ![Range Slider with Vertical Orientation](/static/assets/cloud/visualizing-data/visualization-widgets/images/range-slider/rangeslider_vertical.png)
 
-Horizontal – Disable the `Vertical Orientation` option for horizontal orientation.
-
 **Range Slider with Horizontal Orientation**
 
 ![Range Slider with Horizontal Orientation](/static/assets/cloud/visualizing-data/visualization-widgets/images/range-slider/range-pointer.png)
+
+**Label Color**
+
+This allows you to customize the label color.
+
+![Range Slider with modified label color](/static/assets/cloud/visualizing-data/visualization-widgets/images/range-slider/label-color.png)
+
+**Slider Color**
+
+This allows you to customize the slider color.
+
+![Range Slider with modified slider color](/static/assets/cloud/visualizing-data/visualization-widgets/images/range-slider/slider-color.png)
 
 **Filter**
 

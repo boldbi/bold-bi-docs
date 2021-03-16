@@ -27,9 +27,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     if (node.internal.type === `MarkdownRemark`) {
         const fileNode = getNode(node.parent);
         const parsedFilePath = path.parse(fileNode.relativePath);
-        if (parsedFilePath.name == "home" && parsedFilePath.dir == "") {
-            slug = '/';
-        } else if (parsedFilePath.name !== "index" && parsedFilePath.dir !== "") {
+        if (parsedFilePath.name !== "index" && parsedFilePath.dir !== "") {
             slug = `/${parsedFilePath.dir}/${parsedFilePath.name}/`;
         } else if (parsedFilePath.dir === "") {
             slug = `/${parsedFilePath.name}/`;

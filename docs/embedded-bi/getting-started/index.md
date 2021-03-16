@@ -10,4 +10,4 @@ documentation: ug
 
 Bold BI Enterprise is a business intelligence tool that is provided to create, manage, and share the interactive business dashboards. This section explains how to start with the Enterprise BI application to create a dashboard by connecting data with the features involved in this process.
 
-[Bold BI Walkthrough](/embedded-bi/getting-started/bold-bi-walk-through/)
+[Bold BI Walkthrough](/embedded-bi/getting-started/quick-start/)

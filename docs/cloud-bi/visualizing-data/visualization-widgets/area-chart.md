@@ -69,15 +69,15 @@ Click the `Settings` option to change required summary type from the available s
 
 ![Settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/area-chart/settings-menu.PNG)
 
-You can `Sort` the data using `Sort` option shown under `Settings` menu list. To sort the measure data, refer [Sort](/dashboard-cloud/visualize-data/advanced-sorting)
+You can `Sort` the data using `Sort` option shown under `Settings` menu list. To sort the measure data, refer [Sort](/cloud-bi/visualizing-data/working-with-widgets/advanced-sorting/).
 
 ![Sort option](/static/assets/cloud/visualizing-data/visualization-widgets/images/area-chart/sort-option.PNG)
 
-You can filter the data to be displayed in chart by using filter. For more details, refer [filter](/dashboard-cloud/visualize-data/configuring-widget-filters).
+You can filter the data to be displayed in chart by using filter. For more details, refer [filter](/cloud-bi/visualizing-data/working-with-widgets/configuring-widget-filters/).
 
 ![Configuring widget filters](/static/assets/cloud/visualizing-data/visualization-widgets/images/area-chart/configuring-filters.PNG)
 
-You can format the data to be displayed in the chart by using format option. For more details, refer [measure format](/dashboard-cloud/visualize-data/formatting-measure-type-column)
+You can format the data to be displayed in the chart by using format option. For more details, refer [measure format](/cloud-bi/visualizing-data/working-with-widgets/formatting-measure-type-column/)
 
 ![Formatting measure type](/static/assets/cloud/visualizing-data/visualization-widgets/images/area-chart/formatting.PNG)
 
@@ -111,11 +111,11 @@ You can change the `Settings`.
 
 ![Settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/area-chart/column-settings.PNG)
 
-You can `Sort` the dimension data using `Sort` option under `Settings` menu list. To apply sorting for the data, refer [Sort](/dashboard-cloud/visualize-data/advanced-sorting#dimension-column).
+You can `Sort` the dimension data using `Sort` option under `Settings` menu list. To apply sorting for the data, refer [Sort](/cloud-bi/visualizing-data/working-with-widgets/advanced-sorting/#dimension-column).
 
 ![Sort the dimension data](/static/assets/cloud/visualizing-data/visualization-widgets/images/area-chart/sortdimension.PNG)
 
-You can apply filters by selecting filters option in settings. For more details, refer [filter](/dashboard-cloud/visualize-data/configuring-widget-filters#configuring-filter-for-dimension-column).	
+You can apply filters by selecting filters option in settings. For more details, refer [filter](/cloud-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column).	
 
 ![Filter for dimension column](/static/assets/cloud/visualizing-data/visualization-widgets/images/area-chart/dimension-filter.PNG)
 
@@ -129,7 +129,7 @@ You can drag and drop the `Dimension` into the `Rows` field.
 
 ![Adding Rows](/static/assets/cloud/visualizing-data/visualization-widgets/images/area-chart/add_row.PNG)
 
-You can apply [filter](/dashboard-cloud/visualize-data/configuring-widget-filters#configuring-filter-for-dimension-column) and [sort](/dashboard-cloud/visualize-data/advanced-sorting#dimension-column) option for the rows field, if required.
+You can apply [filter](/cloud-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column) and [sort](/cloud-bi/visualizing-data/working-with-widgets/advanced-sorting/#dimension-column) option for the rows field, if required.
 
 This will render area chart in series.
 
@@ -183,6 +183,14 @@ A Legend is a text used to describe the data plotted. This allows you to toggle 
 
 Enabling this option of **Custom Legend Text** will allow you to define a custom text (through the text area) to display for each legend series (selecting through the combo box) in chart.
 
+**Legend Label Color**
+
+This allows you to change the chart legend title and label colors.
+
+![Chart Legend Color Option](/static/assets/cloud/visualizing-data/visualization-widgets/images/area-chart/legend-label-color-option.png)
+
+![Chart Legend Color](/static/assets/cloud/visualizing-data/visualization-widgets/images/area-chart/legend-label-color.png)
+
 **Custom Legend Settings**
 
 You can customize the legend text through the Custom Legend Settings dialog. This dialog will show the legend text list as labels at left and corresponding text area at right to add the formatted text to display instead. When a column is added into Row section, this dialog will show two options `Individual` and `Group` at top in addition, to toggle between.
@@ -212,6 +220,14 @@ For example, If Display Format is {{ : Row }} ({{ : Value }}), then Legend serie
 This allows you to toggle the visibility of value labels.
 
 ![Show Value Labels](/static/assets/cloud/visualizing-data/visualization-widgets/images/area-chart/show-labels.PNG)
+
+**Value Label Color**
+
+This allows you to customize value label's color.
+
+![Value label Color Option](/static/assets/cloud/visualizing-data/visualization-widgets/images/area-chart/data-label-color-option.png)
+
+![Value label Color](/static/assets/cloud/visualizing-data/visualization-widgets/images/area-chart/data-label-color.png)
 
 **Value Label Rotation**
  
@@ -257,7 +273,7 @@ When `Hierarchical Filter` option is enabled, the Top N will be applied for each
 
 ![Link](/static/assets/cloud/visualizing-data/visualization-widgets/images/area-chart/linking.PNG)
 
-You can enable linking and configure to navigate to a general URL with or without parameters. For more details, refer [Linking](/dashboard-cloud/visualize-data/linking-urls-and-dashboards). 
+You can enable linking and configure to navigate to a general URL with or without parameters. For more details, refer [Linking](/cloud-bi/visualizing-data/working-with-widgets/linking-urls-and-dashboards/). 
 
 **Container Appearance**
 
@@ -297,13 +313,21 @@ This allows you to enable/disable the image export option for this area chart wi
 
 **Enable Comments**
 
-This allows you to enable/disable comment for dashboard widget. For more details refer [here](/dashboard-cloud/visualize-data/commenting-dashboard-and-widget)
+This allows you to enable/disable comment for dashboard widget. For more details refer [here](/cloud-bi/visualizing-data/working-with-widgets/commenting-widget/)
 
 **Axis**
 
-![Axis](/static/assets/cloud/visualizing-data/visualization-widgets/images/area-chart/chartAxis.PNG)
+![Axis](/static/assets/cloud/visualizing-data/visualization-widgets/images/area-chart/axis-settings.png)
 
 This section allows you to customize the axis settings in chart. 
+
+**Title color**
+
+This allows you to customize the axis title color.
+
+**Label color**
+
+This allows you to customize the axis label color.
 
 **Show Category Axis**
 

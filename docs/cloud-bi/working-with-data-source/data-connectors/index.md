@@ -89,7 +89,7 @@ The Bold BI supports the following data connection types such that the structure
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/box/"> Box</a>
 			<br> <a href="/cloud-bi/working-with-data-source/data-connectors/commvault/"> Commvault</a>
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/dropbox/"> Dropbox</a>
-            <br> <a href="/cloud-bi/working-with-data-source/data-connectors/ms-onedrive/"> Microsoft OneDrive</a>
+            <br> <a href="/cloud-bi/working-with-data-source/data-connectors/ms-one-drive/"> Microsoft OneDrive</a>
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/ms-sharepoint/"> Microsoft SharePoint</a>
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/google-drive/"> Google Drive</a>
 			<br> <a href="/cloud-bi/working-with-data-source/data-connectors/google-sheets/"> Google Sheets</a>
@@ -109,6 +109,9 @@ The Bold BI supports the following data connection types such that the structure
         </td>
         <td align="center">Web Management
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/wordpress/"> WordPress</a>
+        </td>
+		<td align="center"> Forms
+            <br> <a href="/cloud-bi/working-with-data-source/data-connectors/gravity-forms/"> GravityForms</a>
         </td>
     </tr>
     <tr>
@@ -151,6 +154,7 @@ The Bold BI supports the following data connection types such that the structure
         <td align="center">Web Analytics
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/optimizely/"> Optimizely</a>
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/seomonitor/"> SEOmonitor</a>
+            <br> <a href="/cloud-bi/working-with-data-source/data-connectors/oracle-bi-reports/"> Oracle BI Reports</a>
         </td>
 		<td align="center">Data monitoring
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/prometheus/"> Prometheus</a>
@@ -178,6 +182,7 @@ The Bold BI supports the following data connection types such that the structure
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/smartsheet/"> Smartsheet</a>
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/todoist/"> Todoist</a>
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/toggl/"> Toggl</a>
+			<br> <a href="/cloud-bi/working-with-data-source/data-connectors/trello/"> Trello</a>
         </td>
         <td align="center">Support
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/callrail/"> CallRail</a>

@@ -131,6 +131,6 @@ project = weather AND fixVersion = latestReleasedVersion(weather)
 
 [Editing a Data Connection](/cloud-bi/working-with-data-source/editing-a-data-connection/)   
 
-[Dashboard Designer Walkthrough](/cloud-bi/getting-started/bold-bi-walk-through/)
+[Dashboard Designer Walkthrough](/cloud-bi/getting-started/quick-start/)
 
 [Jira Integration](https://www.boldbi.com/integrations/jira?utm_source=syncfusion&utm_medium=documentation&utm_campaign=boldbijiraintegration)

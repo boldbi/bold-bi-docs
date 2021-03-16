@@ -108,7 +108,7 @@ Insightly API requests are limited on the basis of the instance. Not more then 5
 
 [Editing a Data Connection](/cloud-bi/working-with-data-source/editing-a-data-connection/)   
 
-[Dashboard Designer Walkthrough](/cloud-bi/getting-started/bold-bi-walk-through/)
+[Dashboard Designer Walkthrough](/cloud-bi/getting-started/quick-start/)
 
 [Insightly API Limits](https://api.insightly.com/v3.0/Help#!/Overview/Technical_Details)
 

@@ -40,7 +40,7 @@ Once you click the Optimizely data source, the NEW DATA SOURCE configuration p
 4. In **Max Rows**, enter the maximum number of rows to be fetched from the Optimizely data source. This value is used to fetch the data from Optimizely data source via pagination.
 5. Choose a time interval for **Refresh Settings** using the combo box, to trigger the Rest API request periodically to keep the data in sync with our dashboard.  
 6. Select **JSON** data type in **Data Format** combo box.
-7. Replace `&lt;:your_app_token&gt;` under Headers with a valid bearer token.
+7. Replace `<:your_app_token>` under Headers with a valid bearer token.
 8. Choose **None** under **Authentication Type** as authentication is done through header.
 
 You can also edit the connection information set here using the [Edit Connection](/cloud-bi/working-with-data-source/editing-a-data-connection/) option.
@@ -49,7 +49,7 @@ You can also edit the connection information set here using the [Edit Connection
 
 1. Login to [Optimizely](https://app.optimizely.com/signin) with the valid credentials and go to *Profile -> API Access*.
 2. Find your API token here. Click **Generate new token** with an appropriate name, if you don't have an API token yet. 
-3. Replace `&lt;:your_app_token&gt;` with this *Personal access token* for Optimizely data source in Bold BI Dashboard.
+3. Replace `<:your_app_token>` with this *Personal access token* for Optimizely data source in Bold BI Dashboard.
 
 ![Reveal API Token](/static/assets/cloud/working-with-datasource/data-connectors/images/optimizely/APIToken.png)
 
@@ -113,6 +113,6 @@ Replace it in the URL to query a particular experiments:
 
 [Editing a Data Connection](/cloud-bi/working-with-data-source/editing-a-data-connection/)   
 
-[Dashboard Designer Walkthrough](/cloud-bi/getting-started/bold-bi-walk-through/)
+[Dashboard Designer Walkthrough](/cloud-bi/getting-started/quick-start/)
 
 [Optimizely Integration](https://www.boldbi.com/integrations/optimizely?utm_source=syncfusion&utm_medium=documentation&utm_campaign=boldbioptimizelyintegration)

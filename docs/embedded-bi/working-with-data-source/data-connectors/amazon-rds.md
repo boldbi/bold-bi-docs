@@ -117,4 +117,6 @@ The option is available for configuring incremental refresh column (The table mu
 
 [Editing a Data Connection](/embedded-bi/working-with-data-source/editing-a-data-connection/)   
 
-[Dashboard Designer Walkthrough](/embedded-bi/getting-started/bold-bi-walk-through/)
+[Dashboard Designer Walkthrough](/embedded-bi/getting-started/quick-start/)
+
+[Amazon RDS Integration](https://www.boldbi.com/integrations/amazon-rds)
