@@ -19,13 +19,13 @@ This section explains how to perform Single Sign-On (SSO) for users in the Azure
 
 ### Steps to set up Bold BI to perform Single Sign-On 
 
-1. Login with the URL `{Bold BI URL}/ums/administration/saml-settings` using admin credential.
+1. Login in the URL `{Bold BI URL}/ums/administration/sso?view=azure-ad-settings` using the admin credential.
 
-2. Click on `Settings` in the left menu.
+2. Click `Settings` in the left menu.
 
     ![Application Id](/static/assets/embedded/site-administration/images/sso-settings.png)
 
-3.  Click on `SSO` and save the following fields in UMS settings. 
+3.  Click `Authentication` and then go to the `Azure AD` tab and save the following fields in UMS settings. 
 
     ![Azure Active Directory Settings](/static/assets/embedded/site-administration/images/enable-sso.png)  
 

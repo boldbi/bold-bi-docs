@@ -89,9 +89,8 @@ This method will update the filter parameters of current dashboard. [learn more 
 **Example** 
    
 ```js
-var dashboard = BoldBI.create(options);
-dashboard.loadDashboard();
-dashboard.updateFilters("Continent=Asia,Africa,Europe");   
+var instance = BoldBI.getInstance("container"); //container -> embed container id
+instance.updateFilters("Continent=Asia,Africa,Europe");   
 ```
 
 ## refreshDashboard()
@@ -101,7 +100,28 @@ This method will refresh the current dashboard.
 **Example** 
    
 ```js
+var instance = BoldBI.getInstance("container"); //container -> embed container id
+instance.refreshDashboard();   
+```
+
+## loadPinboard()
+    
+This method will render the pinboard based on the provided pinboard name.
+
+**Example** 
+   
+```js      
 var dashboard = BoldBI.create(options);
-dashboard.loadDashboard();
-dashboard.refreshDashboard();   
+dashboard.loadPinboard();   
+```
+
+## addWidgetToPinboard()
+
+This method will add the widgets into the existing pinboard.
+
+**Example**
+
+```js
+var instance = BoldBI.getInstance("container"); //container -> embed container id
+instance.addWidgetToPinboard(dashboardId, widgetId, widgetName);
 ```

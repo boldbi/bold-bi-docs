@@ -29,3 +29,9 @@ You can explore the available samples in detail here,
 [Winforms](/embedded-bi/javascript-based/samples/v3.3.40-or-later/winforms/)
 
 [Node.js](/embedded-bi/javascript-based/samples/v3.3.40-or-later/node-js/)
+
+[VueJS with Go](/embedded-bi/javascript-based/samples/v3.3.40-or-later/vuejs-with-go/)
+
+[VueJS with ASP.NET Core](/embedded-bi/javascript-based/samples/v3.3.40-or-later/vuejs-with-core/)
+
+[Java Servlet](/embedded-bi/javascript-based/samples/v3.3.40-or-later/java-servlet/)

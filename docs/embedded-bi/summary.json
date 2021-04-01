@@ -31,7 +31,8 @@
         "Install Optional Libraries": "install-optional-libraries.md",
         "Upgrading Bold BI Linux Server": "upgrade-to-latest"
       },
-      "Deploying in Kubernetes": "deploying-in-kubernetes"
+      "Deploying in Kubernetes": "deploying-in-kubernetes",
+      "Deploying in Docker": "deploying-in-docker"
     },
     "Application Startup": "application-startup",
     "Getting Started": {
@@ -60,7 +61,10 @@
           "React with ASP.NET Core": "react-core",
           "React with Go": "react-with-go",
           "Winforms": "winforms",
-          "Node.js": "node-js"
+          "Node.js": "node-js",
+          "VueJS with Go": "vuejs-with-go",
+          "VueJS with core": "vuejs-with-core",
+          "Java Servlet": "java-servlet"
         },
         "v3.2.16": {
           "ASP.NET Core": "asp-net-core",
@@ -321,7 +325,13 @@
       }
     },
     "Multi-Tenancy": {
-      "Create A Tenant": "create-new-site"
+      "Create A Tenant": "create-new-site",
+      "Site Administration": {
+        "Rebranding": "rebranding",
+        "Email Settings": "email-settings",
+        "Manage License": "manage-license"
+      },
+      "Manage Admin access": "manage-ums-administrator"
     },
     "OAuth Configuration": "oauth-configuration",
     "Security": "security",
@@ -366,7 +376,8 @@
           "Okta": "okta",
           "OneLogin": "onelogin",
           "Auth0": "auth0"
-        }
+        },
+		"JSON Web Token": "json-web-token"
       }
     },
     "Managing Resources": {

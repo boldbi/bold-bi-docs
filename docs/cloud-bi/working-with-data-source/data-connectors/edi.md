@@ -35,7 +35,7 @@ After clicking the data source, the **NEW DATA SOURCE** configuration panel open
 
    ![EDI Connection](/static/assets/cloud/working-with-datasource/data-connectors/images/Edi/Edi_Connection.png)
 
-> **NOTE:**  You can preview data with file size less than or equal to 75 megabytes. You can also edit the connection information set here using the [Edit Connection](/cloud-bi/working-with-data-source/editing-a-data-connection/) option.
+> **NOTE:**  You can preview data with file size less than or equal to 200 megabytes. You can also edit the connection information set here using the [Edit Connection](/cloud-bi/working-with-data-source/editing-a-data-connection/) option.
 
 ### Preview and data import
 1. Click **Preview and Connect** to connect with the configurations set.

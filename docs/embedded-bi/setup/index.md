@@ -23,3 +23,5 @@ You can explore the prerequisites and deployment in detail here,
 [Deploying in Linux](/embedded-bi/setup/deploying-in-linux/)
 
 [Deploying in Kubernetes](/embedded-bi/setup/deploying-in-kubernetes/)
+
+[Deploying in Docker](/embedded-bi/setup/deploying-in-docker/)

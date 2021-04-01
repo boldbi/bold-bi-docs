@@ -32,7 +32,7 @@ Install `gatsby-cli` package with global access to build and serve the applicati
 **To Run:**
 
   ```cmd
-   npm install gatsby-cli -g
+   npm install gatsby-cli@2 -g
   ```
 
 # Setup the Application for Local Environment
