@@ -18,7 +18,7 @@ class MainHeader extends React.Component {
                 <div className="doc-header-platform">Documentation</div>
                 <div className="doc-header-links">
                     <a href={this.state.demosPath} target="_blank"><div className="doc-header-link doc-demos-link">Demos</div></a>
-                    <a href="https://www.boldbi.com/contact" target="_blank"><div className="doc-header-link doc-support-link">Support</div></a>
+                    <a href="https://www.boldbi.com/support" target="_blank"><div className="doc-header-link doc-support-link">Support</div></a>
                     <a href={this.state.blogPath} target="_blank"><div className="doc-header-link doc-forum-link">Blog</div></a>
                     <div id="doc-content-search"></div>
                     <a href="https://www.boldbi.com/embedded/get-free-demo" target="_blank" role="button"><div class="header-demo-link">Schedule Free Demo</div></a>

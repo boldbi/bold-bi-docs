@@ -115,25 +115,6 @@ If the user has not received the activation email within 2 days or missed to act
 
 ![Activate user account - Resend Activation code](/static/assets/cloud/managing-resources/manage-users/images/activate-user-resend.png)
 
-## Change Password 
-The administrator can change the user's password from Tenant management site as follows below,
-
-Go to the UMS site by clicking on the profile as follows.
-
-![Manage Sites](/static/assets/cloud/managing-resources/manage-users/images/manage-sites-for-the-users.png)
-
-Click the 'Users' option to manage the users.
-
-![Goto users in sites](/static/assets/cloud/managing-resources/manage-users/images/goto-users-in-sites.png)
-
-![Manage Users List](/static/assets/cloud/managing-resources/manage-users/images/manage-users-list.png)
-
-Click the Name of the user to change the password. Click on the update button once the password entered.
-
-![Goto name of the user](/static/assets/cloud/managing-resources/manage-users/images/goto-name-of-the-user.png)
-
-![Change Password](/static/assets/cloud/managing-resources/manage-users/images/change-the-password.png)
-
 ## Manage permissions
 Check the [Manage Permissions](/cloud-bi/working-with-dashboards/share-dashboards/manage-permissions/) section to learn how to manage permissions to an user.
 	

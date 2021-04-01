@@ -231,7 +231,7 @@ After proceeding with Next, the application will register and validate the site 
 
 You can activate your account either by using your login credentials or by offline unlock key.
 
-Open the Manage License Page - `{domain}/ums/administartion/license-settings`
+Open the Manage License Page - `{domain}/ums/administration/license-settings`
 
 Then, choose the Bold BI Embedded tab.
 

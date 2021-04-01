@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Salesforce – Embedded BI Data Connector | Bold BI Learning
-description: Learn how to connect Salesforce using SOAP API through OAuth-based authentication with Bold BI Embedded.
+description: Learn how to connect Salesforce using Rest API through OAuth-based authentication with Bold BI Embedded.
 canonical: "/cloud-bi/working-with-data-source/data-connectors/salesforce/"
 platform: bold-bi
 documentation: ug
 ---
 
 # Connecting Bold BI to Salesforce data source
-Bold BI dashboard designer supports connecting Salesforce web services through SOAP API. 
+Bold BI dashboard designer supports connecting Salesforce web services through Rest API. 
 
 ## Choose Salesforce data source
 To configure the Salesforce data source, follow the below steps:
@@ -48,8 +48,11 @@ After successful authentication, the NEW DATA SOURCE configuration panel opens
 
     Example: `Select IsWon, Name FROM Opportunity LIMIT 5`
 
-3. Choose a time interval for **Refresh Settings** using the combo box, to trigger the Rest API request periodically to keep the data in sync with our dashboard.
-4. By default, 150K records will be fetched. To fetch newly added/modified records, set a refresh time in *Refresh Settings* and enable the **Incremental Refresh**.
+3. Click Custom Url if you want to enter the SOQL query manually. Refer the SOQL Query [documentation](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/using_resources_working_with_searches_and_queries.htm) for more details.
+
+ ![Salesforce Connection](/static/assets/embedded/working-with-datasource/data-connectors/images/Salesforce/salesforce-connection.png)
+
+4. Choose a time interval using **Refresh Settings** button to trigger the Rest API request periodically to keep the data in sync with our dashboard.
 
 You can also edit the connection information set here using the [Edit Connection](/embedded-bi/working-with-data-source/editing-a-data-connection/) option.
 
@@ -61,14 +64,6 @@ Refresh Settings
 </td>
 <td>
 Period of time before next refresh call is triggered. This will automatically trigger a call for the API configured in the data source to keep the data up to date. If you do not want to sync your new data, choose ‘Never’.
-</td>
-</tr>
-<tr>
-<td>
-Incremental Refresh
-</td>
-<td>
-To fetch newly added/modified records, set a refresh time in <i>Refresh Settings</i> and enable the <b>Incremental Refresh</b>.
 </td>
 </tr>
 </table>

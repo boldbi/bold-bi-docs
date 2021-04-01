@@ -41,7 +41,7 @@ The embed URL should be in the below format,
 `{dashboard URL}/{embed parameters}&embed_signature={signature}`
 
 <table>
-<tr><td>Example: http://test.boldbi.com/bi/en-us/site/site1/dashboards/8428c9d9-85db-418c-b877-ea4495dcddd7/Predictive%20Analytics/Personal%20Expense%20Analysis&embed_nonce=3e253410-1a82-4fb3-a337-122a8007dafc&embed_user_email=test@syncfusion.com&embeds=sdwd&embed_dashboard_views_edit=true&embed_dashboard_views=true&embed_dashboard_export=true&embed_dashboard_comments=true&embed_widget_comments=true&embed_dashboard_favorite=true&embed_timestamp=1583928213&embed_expirationtime=100&embed_signature=VYrDMVX4h85PrRBKX9mystRHYkU8z+HVC9bkVMc2qGY='</td></tr>
+<tr><td>Example: http://test.boldbi.com/bi/en-us/site/site1/dashboards/8428c9d9-85db-418c-b877-ea4495dcddd7/Predictive%20Analytics/Personal%20Expense%20Analysis?embed_nonce=3e253410-1a82-4fb3-a337-122a8007dafc&embed_user_email=test@syncfusion.com&embeds=sdwd&embed_dashboard_views_edit=true&embed_dashboard_views=true&embed_dashboard_export=true&embed_dashboard_comments=true&embed_widget_comments=true&embed_dashboard_favorite=true&embed_timestamp=1583928213&embed_expirationtime=100&embed_signature=VYrDMVX4h85PrRBKX9mystRHYkU8z+HVC9bkVMc2qGY='</td></tr>
 </table>
 
 Please find the details of the parameter in the URL as below, 
@@ -175,7 +175,7 @@ In embed URL, you can pass both types of filters(Dashboard Parameter/URL Filter 
 Pass your filters to the `embed_datasource_filter` URL parameter in the embed URL as follows,
 
 <table>
-<tr><td>Example: http://test.boldbi.com/bi/en-us/site/site1/dashboards/8428c9d9-85db-418c-b877-ea4495dcddd7/Predictive%20Analytics/Personal%20Expense%20Analysis&embed_nonce=3e253410-1a82-4fb3-a337-122a8007dafc&embed_user_email=test@syncfusion.com&embeds=sdwd&embed_dashboard_views_edit=true&embed_dashboard_views=true&embed_dashboard_export=true&embed_dashboard_comments=true&embed_widget_comments=true&embed_dashboard_favorite=true&embed_timestamp=1583928213&embed_expirationtime=100&embed_datasource_filter=&&dashboardparameter1=value1&urlparameter1=value1&embed_signature=VYrDMVX4h85PrRBKX9mystRHYkU8z+HVC9bkVMc2qGY=</td></tr>
+<tr><td>Example: http://test.boldbi.com/bi/en-us/site/site1/dashboards/8428c9d9-85db-418c-b877-ea4495dcddd7/Predictive%20Analytics/Personal%20Expense%20Analysis?embed_nonce=3e253410-1a82-4fb3-a337-122a8007dafc&embed_user_email=test@syncfusion.com&embeds=sdwd&embed_dashboard_views_edit=true&embed_dashboard_views=true&embed_dashboard_export=true&embed_dashboard_comments=true&embed_widget_comments=true&embed_dashboard_favorite=true&embed_timestamp=1583928213&embed_expirationtime=100&embed_datasource_filter=&&dashboardparameter1=value1&urlparameter1=value1&embed_signature=VYrDMVX4h85PrRBKX9mystRHYkU8z+HVC9bkVMc2qGY=</td></tr>
 </table>
 
 * The Dashboard Parameter filter must be started with a double ampersand `&&` in the embed URL. Refer to this [link](/embedded-bi/working-with-data-source/configuring-dashboard-parameters/) for more details.    

@@ -1,0 +1,1928 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "title" : "API Reference",
+    "version" : "4.0"
+  },
+  "host" : "onpremise-demo.boldbi.com",
+  "basePath" : "/bi/api/site/site1/",
+  "schemes" : [ ],
+  "consumes" : [ "application/json" ],
+  "produces" : [ "application/json" ],
+  "tags" : [ {
+    "name" : "Authentication"
+  }, {
+    "name" : "Dashboard Views"
+  } ],
+  "securityDefinitions" : {
+    "Bearer" : {
+      "type" : "apiKey",
+      "name" : "Authorization",
+      "in" : "header"
+    }
+  },
+  "security" : [ {
+    "Bearer" : [ ]
+  } ],
+  "paths" : {
+    "/token" : {
+      "post" : {
+        "tags" : [ "Authentication" ],
+        "summary" : "Authenticate User",
+        "operationId" : "Authentication",
+        "consumes" : [ "application/x-www-form-urlencoded" ],
+        "parameters" : [ {
+          "type" : "string",
+          "name" : "grant_type",
+          "in" : "formData",
+          "required" : true,
+          "x-nullable" : false,
+          "description" : "The type of credentials authorizing the request for an access token. (Use \"password\")"
+        }, {
+          "type" : "string",
+          "name" : "username",
+          "in" : "formData",
+          "required" : true,
+          "x-nullable" : false,
+          "description" : "Email address of the user. (Use guest@boldbi.com for this demo API)"
+        }, {
+          "type" : "string",
+          "name" : "password",
+          "in" : "formData",
+          "required" : true,
+          "x-nullable" : false,
+          "description" : "Password of the user. (Use Demo759! for this demo API)"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "User Logged In Successfully",
+            "schema" : {
+              "$ref" : "#/definitions/Response"
+            },
+            "x-nullable" : true
+          },
+          "400" : {
+            "description" : "Email address is empty"
+          },
+          "401" : {
+            "description" : "Invalid email or password"
+          },
+          "404" : {
+            "description" : "User detail not found"
+          },
+          "405" : {
+            "description" : "Request type was not POST"
+          }
+        }
+      }
+    },
+    "/v4.0/dashboards/views" : {
+      "post" : {
+        "tags" : [ "Dashboard Views" ],
+        "summary" : "Add Dashboard View",
+        "description" : "Users who have access to the dashboard can save a view to the server by providing proper view details in the request body.",
+        "operationId" : "ItemViews_AddItemView",
+        "parameters" : [ {
+          "name" : "apiItemViewsAdd",
+          "in" : "body",
+          "required" : true,
+          "description" : "Details about the dashboard filter to save the view.",
+          "schema" : {
+            "$ref" : "#/definitions/ApiItemViewsAdd"
+          },
+          "x-nullable" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "x-nullable" : false,
+            "description" : "View has been added successfully",
+            "schema" : {
+              "$ref" : "#/definitions/ApiResponse"
+            }
+          },
+          "400" : {
+            "description" : "The content of the request body is missing or incomplete"
+          },
+          "401" : {
+            "description" : "Access denied"
+          },
+          "405" : {
+            "description" : "Request type was not POST"
+          },
+          "406" : {
+            "description" : "The content of the request body is invalid"
+          },
+          "409" : {
+            "description" : "View name already exists"
+          },
+          "417" : {
+            "description" : "Failed to add view"
+          }
+        }
+      },
+      "put" : {
+        "tags" : [ "Dashboard Views" ],
+        "summary" : "Edit Dashboard View",
+        "description" : "Users who have created a view can edit the view by providing proper view details in the request body.",
+        "operationId" : "ItemViews_UpdateItemView",
+        "parameters" : [ {
+          "name" : "apiItemViewsUpdate",
+          "in" : "body",
+          "required" : true,
+          "description" : "Details about the dashboard filter to edit the view.",
+          "schema" : {
+            "$ref" : "#/definitions/ApiItemViewsUpdate"
+          },
+          "x-nullable" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "x-nullable" : false,
+            "description" : "View has been updated successfully",
+            "schema" : {
+              "$ref" : "#/definitions/ApiResponse"
+            }
+          },
+          "400" : {
+            "description" : "The content of the request body is missing or incomplete"
+          },
+          "401" : {
+            "description" : "Access denied"
+          },
+          "405" : {
+            "description" : "Request type was not PUT"
+          },
+          "406" : {
+            "description" : "The content of the request body is invalid"
+          },
+          "409" : {
+            "description" : "View name already exists"
+          },
+          "417" : {
+            "description" : "Failed to edit view"
+          }
+        }
+      }
+    },
+    "/v4.0/dashboards/views/{id}" : {
+      "delete" : {
+        "tags" : [ "Dashboard Views" ],
+        "summary" : "Delete Dashboard View",
+        "description" : "Users who have created a view can delete that view on the server by providing a view ID in the parameter.",
+        "operationId" : "ItemViews_ItemViewDelete",
+        "parameters" : [ {
+          "type" : "string",
+          "name" : "id",
+          "in" : "path",
+          "required" : true,
+          "description" : "View ID",
+          "format" : "guid",
+          "x-nullable" : false
+        } ],
+        "responses" : {
+          "204": {
+            "description": "No content"
+          },
+          "400" : {
+            "description" : "View ID invalid"
+          },
+          "401" : {
+            "description" : "Access denied"
+          },
+          "405" : {
+            "description" : "Request type was not DELETE"
+          },
+          "417" : {
+            "description" : "Failed to delete view"
+          }
+        }
+      },
+      "get" : {
+        "tags" : [ "Dashboard Views" ],
+        "summary" : "Get Dashboard View Detail",
+        "description" : "Server retrieves the view details for the view ID provided in the ID parameter for the current user.",
+        "operationId" : "ItemViews_ItemViewByViewId",
+        "parameters" : [ {
+          "type" : "string",
+          "name" : "id",
+          "in" : "path",
+          "required" : true,
+          "description" : "View ID",
+          "format" : "guid",
+          "x-nullable" : false
+        } ],
+        "responses" : {
+          "200" : {
+            "x-nullable" : false,
+            "description" : "View has been retrieved successfully",
+            "schema" : {
+              "$ref" : "#/definitions/ApiItemViewResponse"
+            }
+          },
+          "400" : {
+            "description" : "View ID invalid"
+          },
+          "401" : {
+            "description" : "Access denied"
+          },
+          "404" : {
+            "description" : "View detail not found"
+          },
+          "405" : {
+            "description" : "Request type was not GET"
+          },
+          "417" : {
+            "description" : "Failed to get view"
+          }
+        }
+      }
+    },
+    "/v4.0/dashboards/{id}/views" : {
+      "get" : {
+        "tags" : [ "Dashboard Views" ],
+        "summary" : "Get Dashboard Views",
+        "description" : "The server retrieves the views for the dashboard ID provided in the ID parameter for the current user.",
+        "operationId" : "ItemViews_ItemViewsByItemId",
+        "parameters" : [ {
+          "type" : "string",
+          "name" : "id",
+          "in" : "path",
+          "required" : true,
+          "description" : "Dashboard ID",
+          "format" : "guid",
+          "x-nullable" : false
+        } ],
+        "responses" : {
+          "200" : {
+            "x-nullable" : false,
+            "description" : "Views has been retrieved successfully",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/ApiItemViewResponse"
+              }
+            }
+          },
+          "204" : {
+            "description" : "View list was empty"
+          },
+          "400" : {
+            "description" : "Dashboard ID invalid"
+          },
+          "401" : {
+            "description" : "Access denied"
+          },
+          "405" : {
+            "description" : "Request type was not GET"
+          },
+          "417" : {
+            "description" : "Failed to get views"
+          }
+        }
+      }
+    },
+    "/v4.0/dashboard/{itemId}/copy" : {
+      "post" : {
+        "tags" : [ "Dashboards" ],
+        "summary" : "Copy Dashboard",
+        "description" : "Users who have access to the dashboard, can copy the dashboard by providing respective dashboard details in the request body.",
+        "operationId" : "Dashboards_CopyDashboard",
+        "parameters" : [ {
+          "type" : "string",
+          "name" : "itemId",
+          "in" : "path",
+          "required" : true,
+          "description" : "ItemId of the dashboard will be copied.",
+          "format" : "guid",
+          "x-nullable" : false
+        }, {
+          "name" : "apiCopyDashboard",
+          "in" : "body",
+          "required" : true,
+          "description" : "Details of the dashboard passed will be copied.",
+          "schema" : {
+            "$ref" : "#/definitions/ApiCopyDashboardRequestV4"
+          },
+          "x-nullable" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "x-nullable" : false,
+            "description" : "Dashbord has been copied successfully",
+            "schema" : {
+              "$ref" : "#/definitions/ApiCopyItemResponse"
+            }
+          },
+          "400" : {
+            "description" : "The content of the request body is missing or incomplete"
+          },
+          "401" : {
+            "description" : "Access denied"
+          },
+          "403" : {
+            "description" : "Do not have permission to set dashboard will be copied as public"
+          },
+          "404" : {
+            "description" : "Item detail not found"
+          },
+          "405" : {
+            "description" : "Request type was not POST"
+          },
+          "406" : {
+            "description" : "The content of the request body is invalid"
+          },
+          "409" : {
+            "description" : "Dashboard will be copied name already exist"
+          },
+          "417" : {
+            "description" : "Failed to copy the dashboard"
+          }
+        }
+      }
+    },
+    "/v4.0/datasource/{itemId}/copy" : {
+      "post" : {
+        "tags" : [ "DataSource" ],
+        "summary" : "Copy Data source",
+        "description" : "Users who have access to the data source, can copy the data source by providing respective data source details in the request body.",
+        "operationId" : "DataSource_CopyDataSource",
+        "parameters" : [ {
+          "type" : "string",
+          "name" : "itemId",
+          "in" : "path",
+          "required" : true,
+          "description" : "ItemId of the data source will be copied.",
+          "format" : "guid",
+          "x-nullable" : false
+        }, {
+          "name" : "apiCopyDatasource",
+          "in" : "body",
+          "required" : true,
+          "description" : "Details of the data source passed will be copied.",
+          "schema" : {
+            "$ref" : "#/definitions/ApiCopyDataSourceRequestV4"
+          },
+          "x-nullable" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "x-nullable" : false,
+            "description" : "Data source has been copied successfully",
+            "schema" : {
+              "$ref" : "#/definitions/ApiCopyItemResponse"
+            }
+          },
+          "400" : {
+            "description" : "The content of the request body is missing or incomplete"
+          },
+          "401" : {
+            "description" : "Access denied"
+          },
+          "404" : {
+            "description" : "Item detail not found"
+          },
+          "405" : {
+            "description" : "Request type was not POST"
+          },
+          "406" : {
+            "description" : "The content of the request body is invalid"
+          },
+          "409" : {
+            "description" : "Data source will be copied name already exist"
+          },
+          "417" : {
+            "description" : "Failed to copy the data source"
+          }
+        }
+      }
+    },
+    "/v4.0/users": {
+      "post": {
+        "tags": [
+          "Users"
+        ],
+        "summary": "Add User",
+        "operationId": "Users_AddUserV4",
+        "parameters": [
+          {
+            "name": "userDetail",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/ApiUserAdd"
+            },
+            "description": "Detail of the user",
+            "x-nullable": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "x-nullable": true,
+            "description": "User was created successfully",
+            "schema": {
+              "$ref": "#/definitions/ApiResponse"
+            }
+          },
+          "401": {
+            "description": "Access denied"
+          },
+          "400": {
+            "description": "The content of the request body is missing or incomplete"
+          },
+          "406": {
+            "description": "The content of the request body is invalid"
+          },
+          "409": {
+            "description": "Email address already exists"
+          },
+          "404": {
+            "description": "User detail not found"
+          },
+          "405": {
+            "description": "Request type was not POST"
+          },
+          "417": {
+            "description": "Failed to add user"
+          }
+        }
+      }
+    },
+    "/v4.0/users/{user}": {
+      "put": {
+        "tags": [
+          "Users"
+        ],
+        "summary": "Modifies information about the specified user",
+        "operationId": "Users_EditUser",
+        "parameters": [
+          {
+            "type": "string",
+            "name": "user",
+            "in": "path",
+            "required": true,
+            "description": "Username or email address of the user",
+            "x-nullable": false
+          },
+          {
+            "name": "userDetail",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/ApiUserEdit"
+            },
+            "description": "Detail of the user",
+            "x-nullable": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "x-nullable": true,
+            "description": "User was modified successfully",
+            "schema": {
+              "$ref": "#/definitions/ApiResponse"
+            }
+          },
+          "400": {
+            "description": "The content of the request body is missing or incomplete"
+          },
+          "401": {
+            "description": "Access denied"
+          },
+          "404": {
+            "description": "User detail not found"
+          },
+          "405": {
+            "description": "Request type was not PUT"
+          },
+          "406": {
+            "description": "The content of the request body is invalid"
+          },
+          "417": {
+            "description": "Failed to update user"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Users"
+        ],
+        "summary": "Deletes the specified user",
+        "operationId": "Users_DeleteUser",
+        "parameters": [
+          {
+            "type": "string",
+            "name": "user",
+            "in": "path",
+            "required": true,
+            "description": "Username or email address of the user",
+            "x-nullable": false
+          }
+        ],
+        "responses": {
+          "204": {
+            "x-nullable": true,
+            "description": "User deleted",
+            "schema": {
+              "$ref": "#/definitions/ApiResponse"
+            }
+          },
+          "400": {
+            "description": "Email address is empty"
+          },
+          "401": {
+            "description": "Access denied"
+          },
+          "404": {
+            "description": "User detail not found"
+          },
+          "405": {
+            "description": "Request type was not DELETE"
+          },
+          "417": {
+            "description": "Failed to delete user"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Users"
+        ],
+        "summary": "Returns user details for a specified user",
+        "operationId": "Users_GetUserDetail",
+        "parameters": [
+          {
+            "type": "string",
+            "name": "user",
+            "in": "path",
+            "required": true,
+            "description": "Username or email address of the user",
+            "x-nullable": false
+          }
+        ],
+        "responses": {
+          "200": {
+            "x-nullable": true,
+            "description": "User detail was retrieved successfully",
+            "schema": {
+              "$ref": "#/definitions/ApiUserDetailV4"
+            }
+          },
+          "401": {
+            "description": "Access denied"
+          },
+          "404": {
+            "description": "User detail not found"
+          },
+          "405": {
+            "description": "Request type was not GET"
+          },
+          "417": {
+            "description": "Failed to retrieve user detail"
+          }
+        }
+      }
+    },
+    "/v4.0/settings/site": {
+      "put": {
+        "tags": [
+          "Settings"
+        ],
+        "summary": "Update Site Settings",
+        "description": "Users who have admin of the site, can update the site settings by providing respective site setting details in the request body.",
+        "operationId": "Settings_UpdateSiteSettings",
+        "parameters": [
+          {
+            "name": "apiUpdateSiteSettings",
+            "in": "body",
+            "required": true,
+            "description": "Details of the site settings passed will be updated.",
+            "schema": {
+              "$ref": "#/definitions/ApiUpdateSiteSettingsRequest"
+            },
+            "x-nullable": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "x-nullable": false,
+            "description": "Site settings has been updated successfully",
+            "schema": {
+              "$ref": "#/definitions/ApiUpdateSiteSettingsResponse"
+            }
+          },
+          "400": {
+            "description": "The content of the request body is missing or incomplete"
+          },
+          "401": {
+            "description": "Access denied"
+          },
+          "405": {
+            "description": "Request type was not PUT"
+          },
+          "406": {
+            "description": "The content of the request body is invalid"
+          },
+          "417": {
+            "description": "Failed to update site setting details"
+          }
+        }
+      }
+    },
+    "/v4.0/attribute/user": {
+      "post": {
+        "tags": [
+          "Attributes"
+        ],
+        "summary": "Save user attributes",
+        "description": "This API is used to add the attributes for a particular user.",
+        "operationId": "Attribute_AddUserAttribute",
+        "parameters": [
+          {
+            "name": "attribute",
+            "in": "body",
+            "required": true,
+            "description": "Attribute object, which is sent as request.",
+            "schema": {
+              "$ref": "#/definitions/ApiUserAddAttribute"
+            },
+            "x-nullable": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "x-nullable": false,
+            "description": "Attribute details added successfully",
+            "schema": {
+              "$ref": "#/definitions/ApiResponse"
+            }
+          },
+          "400": {
+            "description": "The content of the request body is missing or incomplete"
+          },
+          "405": {
+            "description": "Request type was not POST"
+          },
+          "406": {
+            "description": "The content of the request body is invalid"
+          },
+          "409": {
+            "description": "Attribute name already exists"
+          },
+          "417": {
+            "description": "Failed to add attribute details"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Attributes"
+        ],
+        "summary": "Update user attributes",
+        "description": "This API is used to update the attributes for a particular user.",
+        "operationId": "Attribute_UpdateUserAttribute",
+        "parameters": [
+          {
+            "name": "attribute",
+            "in": "body",
+            "required": true,
+            "description": "Attribute object, which is sent as request.",
+            "schema": {
+              "$ref": "#/definitions/ApiUserUpdateAttribute"
+            },
+            "x-nullable": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "x-nullable": false,
+            "description": "Attribute details updated successfully",
+            "schema": {
+              "$ref": "#/definitions/ApiResponse"
+            }
+          },
+          "400": {
+            "description": "The content of the request body is missing or incomplete"
+          },
+          "405": {
+            "description": "Request type was not PUT"
+          },
+          "406": {
+            "description": "The content of the request body is invalid"
+          },
+          "409": {
+            "description": "Attribute name already exists"
+          },
+          "417": {
+            "description": "Failed to update attribute details"
+          }
+        }
+      }
+    },
+    "/v4.0/attribute/user/{userId}": {
+      "get": {
+        "tags": [
+          "Attributes"
+        ],
+        "summary": "Get user attributes",
+        "description": "This API is used to get all the saved attributes for a particular user.",
+        "operationId": "Attribute_GetUserCustomAttribute",
+        "parameters": [
+          {
+            "type": "integer",
+            "name": "userId",
+            "in": "path",
+            "required": true,
+            "description": "int data type, which is sent as request.",
+            "format": "int32",
+            "x-nullable": false
+          }
+        ],
+        "responses": {
+          "200": {
+            "x-nullable": false,
+            "description": "Attribute details retrieved successfully",
+            "schema": {
+              "$ref": "#/definitions/ApiResponse"
+            }
+          },
+          "400": {
+            "description": "User ID invalid"
+          },
+          "404": {
+            "description": "Attributes not found"
+          },
+          "405": {
+            "description": "Request type was not GET"
+          },
+          "417": {
+            "description": "Failed to get attribute details"
+          }
+        }
+      }
+    },
+    "/v4.0/attribute/user/{id}": {
+      "delete": {
+        "tags": [
+          "Attributes"
+        ],
+        "summary": "Delete user attributes",
+        "description": "This API is used to delete the attributes for a particular user.",
+        "operationId": "Attribute_DeleteUserAttribute",
+        "parameters": [
+          {
+            "type": "integer",
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "description": "int data type, which is sent as request.",
+            "format": "int32",
+            "x-nullable": false
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "No content"
+          },
+          "400": {
+            "description": "Attribute ID invalid"
+          },
+          "405": {
+            "description": "Request type was not DELETE"
+          },
+          "417": {
+            "description": "Failed to delete attribute details"
+          }
+        }
+      }
+    },
+    "/v4.0/attribute/group": {
+      "post": {
+        "tags": [
+          "Attributes"
+        ],
+        "summary": "Save group attributes",
+        "description": "This API is used to add the attributes for a particular group.",
+        "operationId": "Attribute_AddGroupAttribute",
+        "parameters": [
+          {
+            "name": "attribute",
+            "in": "body",
+            "required": true,
+            "description": "Attribute object, which is sent as request.",
+            "schema": {
+              "$ref": "#/definitions/ApiGroupAddAttribute"
+            },
+            "x-nullable": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "x-nullable": false,
+            "description": "Attribute details added successfully",
+            "schema": {
+              "$ref": "#/definitions/ApiResponse"
+            }
+          },
+          "400": {
+            "description": "The content of the request body is missing or incomplete"
+          },
+          "405": {
+            "description": "Request type was not POST"
+          },
+          "406": {
+            "description": "The content of the request body is invalid"
+          },
+          "409": {
+            "description": "Attribute name already exists"
+          },
+          "417": {
+            "description": "Failed to add attribute details"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Attributes"
+        ],
+        "summary": "Update group attributes",
+        "description": "This API is used to update the attributes for a particular group.",
+        "operationId": "Attribute_UpdateGroupAttribute",
+        "parameters": [
+          {
+            "name": "attribute",
+            "in": "body",
+            "required": true,
+            "description": "Attribute object, which is sent as request.",
+            "schema": {
+              "$ref": "#/definitions/ApiGroupUpdateAttribute"
+            },
+            "x-nullable": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "x-nullable": false,
+            "description": "Attribute details updated successfully",
+            "schema": {
+              "$ref": "#/definitions/ApiResponse"
+            }
+          },
+          "400": {
+            "description": "The content of the request body is missing or incomplete"
+          },
+          "405": {
+            "description": "Request type was not PUT"
+          },
+          "406": {
+            "description": "The content of the request body is invalid"
+          },
+          "409": {
+            "description": "Attribute name already exists"
+          },
+          "417": {
+            "description": "Failed to update attribute details"
+          }
+        }
+      }
+    },
+    "/v4.0/attribute/group/{groupId}": {
+      "get": {
+        "tags": [
+          "Attributes"
+        ],
+        "summary": "Get group attributes",
+        "description": "This API is used to get all the saved attributes for a particular group.",
+        "operationId": "Attribute_GetGroupCustomAttribute",
+        "parameters": [
+          {
+            "type": "integer",
+            "name": "groupId",
+            "in": "path",
+            "required": true,
+            "description": "int data type, which is sent as request.",
+            "format": "int32",
+            "x-nullable": false
+          }
+        ],
+        "responses": {
+          "200": {
+            "x-nullable": false,
+            "description": "Attribute details retrieved successfully",
+            "schema": {
+              "$ref": "#/definitions/ApiResponse"
+            }
+          },
+          "400": {
+            "description": "Group ID invalid"
+          },
+          "404": {
+            "description": "Attributes not found"
+          },
+          "405": {
+            "description": "Request type was not GET"
+          },
+          "417": {
+            "description": "Failed to get attribute details"
+          }
+        }
+      }
+    },
+    "/v4.0/attribute/group/{id}": {
+      "delete": {
+        "tags": [
+          "Attributes"
+        ],
+        "summary": "Delete group attributes",
+        "description": "This API is used to delete the attributes for a particular group.",
+        "operationId": "Attribute_DeleteGroupAttribute",
+        "parameters": [
+          {
+            "type": "integer",
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "description": "int data type, which is sent as request.",
+            "format": "int32",
+            "x-nullable": false
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "No content"
+          },
+          "400": {
+            "description": "Attribute ID invalid"
+          },
+          "405": {
+            "description": "Request type was not DELETE"
+          },
+          "417": {
+            "description": "Failed to delete attribute details"
+          }
+        }
+      }
+    },
+    "/v4.0/attribute/site": {
+      "post": {
+        "tags": [
+          "Attributes"
+        ],
+        "summary": "Save site attributes",
+        "description": "This API is used to add the attributes for a particular site.",
+        "operationId": "Attribute_SaveSiteAttribute",
+        "parameters": [
+          {
+            "name": "attribute",
+            "in": "body",
+            "required": true,
+            "description": "Attribute object, which is sent as request.",
+            "schema": {
+              "$ref": "#/definitions/ApiSiteAddAttribute"
+            },
+            "x-nullable": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "x-nullable": false,
+            "description": "Attribute details added successfully",
+            "schema": {
+              "$ref": "#/definitions/ApiResponse"
+            }
+          },
+          "400": {
+            "description": "The content of the request body is missing or incomplete"
+          },
+          "405": {
+            "description": "Request type was not POST"
+          },
+          "406": {
+            "description": "The content of the request body is invalid"
+          },
+          "409": {
+            "description": "Attribute name already exists"
+          },
+          "417": {
+            "description": "Failed to add attribute details"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Attributes"
+        ],
+        "summary": "Update site attributes",
+        "description": "This API is used to update the attributes for a particular site.",
+        "operationId": "Attribute_UpdateSiteAttributes",
+        "parameters": [
+          {
+            "name": "attribute",
+            "in": "body",
+            "required": true,
+            "description": "Attribute object, which is sent as request.",
+            "schema": {
+              "$ref": "#/definitions/ApiSiteUpdateAttribute"
+            },
+            "x-nullable": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "x-nullable": false,
+            "description": "Attribute details updated successfully",
+            "schema": {
+              "$ref": "#/definitions/ApiResponse"
+            }
+          },
+          "400": {
+            "description": "The content of the request body is missing or incomplete"
+          },
+          "405": {
+            "description": "Request type was not PUT"
+          },
+          "406": {
+            "description": "The content of the request body is invalid"
+          },
+          "409": {
+            "description": "Attribute name already exists"
+          },
+          "417": {
+            "description": "Failed to update attribute details"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Attributes"
+        ],
+        "summary": "Get site attributes",
+        "description": "This API is used to get all the saved attributes for a particular site.",
+        "operationId": "Attribute_GetSiteAttributes",
+        "responses": {
+          "200": {
+            "x-nullable": false,
+            "description": "Attribute details retrieved successfully",
+            "schema": {
+              "$ref": "#/definitions/ApiResponse"
+            }
+          },
+          "404": {
+            "description": "Attributes not found"
+          },
+          "405": {
+            "description": "Request type was not GET"
+          },
+          "417": {
+            "description": "Failed to get attribute details"
+          }
+        }
+      }
+    },
+    "/v4.0/attribute/site/{id}": {
+      "delete": {
+        "tags": [
+          "Attributes"
+        ],
+        "summary": "Delete site attributes",
+        "description": "This API is used to delete the attributes for a particular site.",
+        "operationId": "Attribute_DeleteSiteAttributes",
+        "parameters": [
+          {
+            "type": "integer",
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "description": "int data type, which is sent as request.",
+            "format": "int32",
+            "x-nullable": false
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "No content"
+          },
+          "400": {
+            "description": "Attribute ID invalid"
+          },
+          "405": {
+            "description": "Request type was not DELETE"
+          },
+          "417": {
+            "description": "Failed to delete attribute details"
+          }
+        }
+      }
+    },    
+    "/v4.0/publish/item": {
+      "post": {
+        "tags": [
+          "Publish"
+        ],
+        "summary": "Publish dashboards",
+        "description": "This API is used to publish the dashboard from one site to another site.",
+        "operationId": "Publish_Dashboard",
+        "parameters": [
+          {
+            "type": "string",
+            "name": "ApiPublishItemDetail",
+            "in": "body",
+            "required": true,
+            "description": "Details about the publish dashboard, which is sent as request.",
+            "schema": {
+              "$ref": "#/definitions/ApiPublishItemDetail"
+            },
+            "x-nullable": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "x-nullable": false,
+            "description": "The dashboard is being published to one or more sites",
+            "schema": {
+              "$ref": "#/definitions/ApiResponse"
+            }
+          },
+          "400": {
+            "description": "The content of the request body is missing or empty"
+          },
+          "406": {
+            "description": "The content of the request body is invalid"
+          },
+          "404": {
+            "description": "Site not found"
+          },
+          "401": {
+            "description": "Access denied"
+          },
+          "405": {
+            "description": "Request type was not POST"
+          }
+        }
+      }
+    },
+    "/v4.0/publish/external-sites/add": {
+      "post": {
+        "tags": [
+          "External Sites"
+        ],
+        "summary": "Add External Sites",
+        "description": "This API is used to add the external sites",
+        "operationId": "Add_External_Sites",
+        "parameters": [
+          {
+            "type": "string",
+            "name": "ExternalSites",
+            "in": "body",
+            "required": true,
+            "description": "Details about the add external site, which is sent as request.",
+            "schema": {
+              "$ref": "#/definitions/ExternalSites"
+            },
+            "x-nullable": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "x-nullable": false,
+            "description": "External site is added successfully",
+            "schema": {
+              "$ref": "#/definitions/ApiResponse"
+            }
+          },
+          "400": {
+            "description": "The content of the request body is missing or empty"
+          },
+          "406": {
+            "description": "The content of the request body is invalid"
+          },
+          "405": {
+            "description": "Request type was not POST"
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "Response" : {
+      "type" : "object",
+      "x-typeName" : "Response",
+      "additionalProperties" : false,
+      "properties" : {
+        "access_token" : {
+          "type" : "string",
+          "description" : "Authentication token of the user."
+        },
+        "token_type" : {
+          "type" : "string",
+          "description" : "Type of token assigned by the authorization server."
+        },
+        "expires_in" : {
+          "type" : "string",
+          "description" : "The lifetime in seconds of the access token."
+        },
+        "Email" : {
+          "type" : "string",
+          "description" : "Email of the authenticated user."
+        }
+      }
+    },
+    "ApiResponse" : {
+      "type" : "object",
+      "required" : [ "ApiStatus", "Status" ],
+      "properties" : {
+        "ApiStatus" : {
+          "type" : "boolean",
+          "description" : "Returns the status of the API."
+        },
+        "Data" : {
+          "description" : "Returns data from the API."
+        },
+        "Status" : {
+          "type" : "boolean",
+          "description" : "Returns status of the API request."
+        },
+        "StatusMessage" : {
+          "type" : "string",
+          "description" : "Returns the status message from the API."
+        },
+        "Message" : {
+          "type" : "string",
+          "description" : "Returns the message from the API."
+        }
+      }
+    },
+    "ApiItemViewsAdd" : {
+      "type" : "object",
+      "description" : "Add dashboard view request details.",
+      "required" : [ "ViewName", "ItemId", "QueryString", "IsPublic" ],
+      "properties" : {
+        "ViewName" : {
+          "type" : "string",
+          "description" : "Specify name of the view."
+        },
+        "ItemId" : {
+          "type" : "string",
+          "description" : "Specify ID of the dashboard.",
+          "format" : "guid"
+        },
+        "ChildItemId" : {
+          "type" : "string",
+          "description" : "Specify ID of the child dashboard.",
+          "format" : "guid"
+        },
+        "QueryString" : {
+          "type" : "string",
+          "description" : "Specify the filter query."
+        },
+        "IsPublic" : {
+          "type" : "boolean",
+          "description" : "Specify <i>true</i> to set the view as public"
+        }
+      }
+    },
+    "ApiItemViewsUpdate" : {
+      "type" : "object",
+      "description" : "Update dashboard view request details.",
+      "required" : [ "ViewId", "DashboardId" ],
+      "properties" : {
+        "Name" : {
+          "type" : "string",
+          "description" : "Specify name of the view."
+        },
+        "ViewId" : {
+          "type" : "string",
+          "description" : "Specify ID of the dashboard view.",
+          "format" : "guid"
+        },
+        "DashboardId" : {
+          "type" : "string",
+          "description" : "Specify ID of the dashboard.",
+          "format" : "guid"
+        },
+        "QueryString" : {
+          "type" : "string",
+          "description" : "Specify the filter query."
+        }
+      }
+    },
+    "ApiItemViewResponse" : {
+      "type" : "object",
+      "description" : "Dashboard view response details.",
+      "required" : [ "CanDelete", "CanEdit", "CanShare", "IsPublic", "ItemId", "UserId", "ViewId" ],
+      "properties" : {
+        "CanDelete" : {
+          "type" : "boolean",
+          "description" : "Specifies the delete permission of the view."
+        },
+        "CanEdit" : {
+          "type" : "boolean",
+          "description" : "Specifies the write permission of the view."
+        },
+        "CanShare" : {
+          "type" : "boolean",
+          "description" : "Specifies the share permission of the view."
+        },
+        "IsPublic" : {
+          "type" : "boolean",
+          "description" : "Returns true if the view is public."
+        },
+        "ItemId" : {
+          "type" : "string",
+          "description" : "Specifies the ID of the dashboard.",
+          "format" : "guid"
+        },
+        "QueryString" : {
+          "type" : "string",
+          "description" : "Specifies the filter query string."
+        },
+        "UserId" : {
+          "type" : "integer",
+          "description" : "Specifies the ID of the user.",
+          "format" : "int32"
+        },
+        "ViewId" : {
+          "type" : "string",
+          "description" : "Specifies the ID of the view.",
+          "format" : "guid"
+        },
+        "ViewName" : {
+          "type" : "string",
+          "description" : "Specifies the name of the view."
+        }
+      }
+    },
+    "ApiCopyItemResponse" : {
+      "type" : "object",
+      "description" : "Response details of the copied item.",
+      "required" : [ "ApiStatus", "Status", "PublishedItemId", "Version" ],
+      "properties" : {
+        "ApiStatus" : {
+          "type" : "boolean",
+          "description" : "Returns the status of the API."
+        },
+        "Status" : {
+          "type" : "boolean",
+          "description" : "Returns status of the API request."
+        },
+        "PublishedItemId" : {
+          "type" : "string",
+          "description" : "Returns the published data source item id",
+          "format" : "guid"
+        },
+        "Version" : {
+          "type" : "integer",
+          "description" : "Returns the version number of the data source",
+          "format" : "int32"
+        },
+        "StatusMessage" : {
+          "type" : "string",
+          "description" : "Returns the status message from the API."
+        }
+      }
+    },
+    "ApiCopyDashboardRequestV4" : {
+      "type" : "object",
+      "description" : "Dashboard details.",
+      "required" : [ "Name", "CategoryId", "IsPublic", "IsCopyDatasource" ],
+      "properties" : {
+        "Name" : {
+          "type" : "string",
+          "description" : "Dashboard name."
+        },
+        "Description" : {
+          "type" : "string",
+          "description" : "Dashboard description."
+        },
+        "CategoryId" : {
+          "type" : "string",
+          "description" : "Category ID.",
+          "format" : "guid"
+        },
+        "IsPublic" : {
+          "type" : "boolean",
+          "description" : "Specify <i>true</i> to set the item as a public."
+        },
+        "IsCopyDatasource" : {
+          "type" : "boolean",
+          "description" : "Copy the data source of dashboard based on this value "
+        }
+      }
+    },
+    "ApiCopyDataSourceRequestV4" : {
+      "type" : "object",
+      "description" : "Data Source details.",
+      "required" : [ "Name" ],
+      "properties" : {
+        "Name" : {
+          "type" : "string",
+          "description" : "Data source name."
+        },
+        "Description" : {
+          "type" : "string",
+          "description" : "Data source description."
+        }
+      }
+    },
+    "ApiSiteAddAttribute": {
+      "type": "object",
+      "required": [
+        "Name",
+        "Value"
+      ],
+      "properties": {
+        "Name": {
+          "type": "string",
+          "description": "Attribute Name"
+        },
+        "Value": {
+          "type": "string",
+          "description": "Attribute Value"
+        },
+        "Description": {
+          "type": "string",
+          "description": "Attribute Description"
+        },
+        "CanEncrypt": {
+          "type": "boolean",
+          "description": "Encrypt Attribute Value"
+        }
+      }
+    },
+    "ApiSiteUpdateAttribute": {
+      "type": "object",
+      "required": [
+        "Id",
+        "Name",
+        "Value"
+      ],
+      "properties": {
+        "Id": {
+          "type": "integer",
+          "description": "Attribute Id",
+          "format": "int32"
+        },
+        "Name": {
+          "type": "string",
+          "description": "Attribute Name"
+        },
+        "Value": {
+          "type": "string",
+          "description": "Attribute Value"
+        },
+        "Description": {
+          "type": "string",
+          "description": "Attribute Description"
+        },
+        "CanEncrypt": {
+          "type": "boolean",
+          "description": "Encrypt Attribute Value"
+        }
+      }
+    },
+    "ApiUserAddAttribute": {
+      "type": "object",
+      "required": [
+        "UserId",
+        "Name",
+        "Value"
+      ],
+      "properties": {
+        "Name": {
+          "type": "string",
+          "description": "Attribute Name"
+        },
+        "Value": {
+          "type": "string",
+          "description": "Attribute Value"
+        },
+        "Description": {
+          "type": "string",
+          "description": "Attribute Description"
+        },
+        "CanEncrypt": {
+          "type": "boolean",
+          "description": "Encrypt Attribute Value"
+        },
+        "UserId": {
+          "type": "integer",
+          "description": "User Id",
+          "format": "int32"
+        }
+      }
+    },
+    "ApiGroupAddAttribute": {
+      "type": "object",
+      "required": [
+        "GroupId",
+        "Name",
+        "Value"
+      ],
+      "properties": {
+        "Name": {
+          "type": "string",
+          "description": "Attribute Name"
+        },
+        "Value": {
+          "type": "string",
+          "description": "Attribute Value"
+        },
+        "Description": {
+          "type": "string",
+          "description": "Attribute Description"
+        },
+        "CanEncrypt": {
+          "type": "boolean",
+          "description": "Encrypt Attribute Value"
+        },
+        "GroupId": {
+          "type": "integer",
+          "description": "Group Id",
+          "format": "int32"
+        }
+      }
+    },
+    "ApiUserUpdateAttribute": {
+      "type": "object",
+      "required": [
+        "Id",
+        "UserId",
+        "Name",
+        "Value"
+      ],
+      "properties": {
+        "Id": {
+          "type": "integer",
+          "description": "Attribute Id",
+          "format": "int32"
+        },
+        "Name": {
+          "type": "string",
+          "description": "Attribute Name"
+        },
+        "Value": {
+          "type": "string",
+          "description": "Attribute Value"
+        },
+        "Description": {
+          "type": "string",
+          "description": "Attribute Description"
+        },
+        "CanEncrypt": {
+          "type": "boolean",
+          "description": "Encrypt Attribute Value"
+        },
+        "UserId": {
+          "type": "integer",
+          "description": "User Id",
+          "format": "int32"
+        }
+      }
+    },
+    "ApiGroupUpdateAttribute": {
+      "type": "object",
+      "required": [
+        "Id",
+        "GroupId",
+        "Name",
+        "Value"
+      ],
+      "properties": {
+        "Id": {
+          "type": "integer",
+          "description": "Attribute Id",
+          "format": "int32"
+        },
+        "Name": {
+          "type": "string",
+          "description": "Attribute Name"
+        },
+        "Value": {
+          "type": "string",
+          "description": "Attribute Value"
+        },
+        "Description": {
+          "type": "string",
+          "description": "Attribute Description"
+        },
+        "CanEncrypt": {
+          "type": "boolean",
+          "description": "Encrypt Attribute Value"
+        },
+        "GroupId": {
+          "type": "integer",
+          "description": "Group Id",
+          "format": "int32"
+        }
+      }
+    },
+    "ApiPublishItemDetail": {
+      "type": "object",
+      "required": [
+        "ItemId",
+        "TargetSiteDetails"
+      ],
+      "properties": {
+        "ItemId": {
+          "type": "string",
+          "description": "Item Id",
+          "format": "guid"
+        },
+        "TargetSiteDetails": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/TargetSiteDetails"
+          },
+          "description": "Target Site Details"
+        }
+      }
+    },
+    "TargetSiteDetails": {
+      "type": "object",
+      "required": [
+        "ClientId",
+        "CategoryName",
+        "PublishType"
+      ],
+      "properties": {
+        "ClientId": {
+          "type": "string",
+          "description": "Client Id",
+          "format": "guid"
+        },
+        "SiteIdentifier": {
+          "type": "string",
+          "description": "Site Identifier (Not required for external publish type)"
+        },
+        "CategoryName": {
+          "type": "string",
+          "description": "Category Name"
+        },
+        "Description": {
+          "type": "string",
+          "description": "Description"
+        },
+        "LockDashboard": {
+          "type": "boolean",
+          "description": "Lock Dashboard"
+        },
+        "LockDatasource": {
+          "type": "boolean",
+          "description": "Lock Data source"
+        },
+        "Datasources": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/DataSources"
+          },
+          "description": "Data sources"
+        },
+        "PublishType": {
+          "type": "string",
+          "description": "",
+          "enum": [
+            "Internal",
+            "External"
+          ]
+        }
+      }
+    },
+    "DataSources": {
+      "type": "object",
+      "required": [
+        "Id"
+      ],
+      "properties": {
+        "Id": {
+          "type": "string",
+          "description": "Data source Id"
+        },
+        "IsLocked": {
+          "type": "boolean",
+          "description": "Is Data source Locked"
+        }
+      }
+    },
+    "ExternalSites": {
+      "type": "object",
+      "required": [
+        "Name",
+        "ClientId",
+        "ClientSecret",
+        "SiteURL"
+      ],
+      "properties": {
+        "Name": {
+          "type": "string",
+          "description": "Name"
+        },
+        "ClientId": {
+          "type": "string",
+          "description": "Client Id"
+        },
+        "ClientSecret": {
+          "type": "string",
+          "description": "Client Secret"
+        },
+        "SiteURL": {
+          "type": "string",
+          "description": "Site URL"
+        }
+      }
+    },
+    "ApiUserAdd": {
+      "type": "object",
+      "description": "User detail",
+      "additionalProperties": false,
+      "required": [
+        "Username",
+        "Email",
+        "FirstName"
+      ],
+      "properties": {
+        "Username": {
+          "type": "string",
+          "description": "Username of the user"
+        },
+        "Email": {
+          "type": "string",
+          "description": "Email address of the user.(Email required only in [Email required](https://help.boldbi.com/embedded-bi/site-administration/account-settings/#email-required) mode)"
+        },
+        "FirstName": {
+          "type": "string",
+          "description": "First name of the user"
+        },
+        "Lastname": {
+          "type": "string",
+          "description": "Last name of the user"
+        },
+        "Password": {
+          "type": "string",
+          "description": "Password of the user.(Password accepted only in [Automatic activation](https://help.boldbi.com/embedded-bi/site-administration/account-settings/#automatic-activation) mode)"
+        }
+      }
+    },
+    "ApiUserEdit": {
+      "type": "object",
+      "description": "User detail",
+      "additionalProperties": false,
+      "properties": {
+        "Username": {
+          "type": "string",
+          "description": "Username of the user"
+        },
+        "Email": {
+          "type": "string",
+          "description": "Email address of the user"
+        },
+        "FirstName": {
+          "type": "string",
+          "description": "First name of the user"
+        },
+        "Lastname": {
+          "type": "string",
+          "description": "Last name of the user"
+        },
+        "ContactNumber": {
+          "type": "string",
+          "description": "Phone number of the user"
+        }
+      }
+    },
+    "ApiUserDetailV4": {
+      "type": "object",
+      "description": "Detail of the User",
+      "additionalProperties": false,
+      "properties": {
+        "ContactNumber": {
+          "type": "string",
+          "description": "Phone number of the user"
+        },
+        "DisplayName": {
+          "type": "string",
+          "description": "Display name of the user"
+        },
+        "Email": {
+          "type": "string",
+          "description": "Email address of the user"
+        },
+        "FirstName": {
+          "type": "string",
+          "description": "First name of the user"
+        },
+        "IsActive": {
+          "type": "boolean",
+          "description": "Returns true, if the user is an active user"
+        },
+        "Lastname": {
+          "type": "string",
+          "description": "Last name of the user"
+        },
+        "UserStatus": {
+          "description": "Returns the status of the user",
+          "allOf": [
+            {
+              "$ref": "#/definitions/UserStatus"
+            }
+          ]
+        },
+        "UserId": {
+          "type": "integer",
+          "description": "ID of the user",
+          "format": "int32"
+        },
+        "Username": {
+          "type": "string",
+          "description": "Username of the user"
+        },
+        "DirectoryType": {
+          "$ref": "#/definitions/DirectoryType"
+        },
+        "Avatar": {
+          "type": "string",
+          "description": "Profile picture of the user",
+          "format": "byte"
+        }
+      }
+    },
+    "UserStatus": {
+      "type": "string",
+      "description": "",
+      "x-enumNames": [
+        "Active",
+        "InActive"
+      ],
+      "enum": [
+        "Active",
+        "InActive"
+      ]
+    },
+    "DirectoryType": {
+      "type": "string",
+      "description": "",
+      "x-enumNames": [
+        "All",
+        "Local",
+        "AzureAD",
+        "ExternalDatabase"
+      ],
+      "enum": [
+        "All",
+        "Local",
+        "AzureAD",
+        "ExternalDatabase"
+      ]
+    },
+    "ApiUpdateSiteSettingsRequest": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/SiteSettingsDetails"
+      },
+      "description": "Site settings details."
+    },
+    "SiteSettingsDetails": {
+      "type": "object",
+      "required": [
+        "Key",
+        "Value"
+      ],
+      "properties": {
+        "Key": {
+          "type": "string",
+          "description": "Site settings name. Valid keys: `OrganizationName` `SiteUrl` `LoginScreenLogo` `EmailLogo` `FavIcon` `ShowCopyrightInformation` `ShowPoweredBySyncfusion` `Use24HourFormat` `DisableUserPreference` `DataLanguage` `DateFormat` `TimeZone`."
+        },
+        "Value": {
+          "type": "string",
+          "description": "Site settings value.\n\n Valid values: `OrganizationName` `SiteUrl` `DataLanguage` `TimeZone` should be `string` \n\n `LoginScreenLogo` `EmailLogo` `EmailLogo` `FavIcon` should be `Base64EncodedString` \n\n `ShowCopyrightInformation` `ShowPoweredBySyncfusion` `Use24HourFormat` `DisableUserPreference` should be `true` or `false` \n\n `DateFormat` should be `MM/dd/yyyy` `dd/MM/yyyy` `d MMM, yyyy` `MMM d, yyyy`."
+        },
+        "FileFormat": {
+          "type": "string",
+          "description": "Image format type. It must required when update image in site settings. Valid values: `svg` `png` `jpg` `jpeg`."
+        }
+      }
+    },
+    "ApiUpdateSiteSettingsResponse": {
+      "type": "object",
+      "description": "Response details of the copied item.",
+      "required": [
+        "ApiStatus",
+        "Status"
+      ],
+      "properties": {
+        "ApiStatus": {
+          "type": "boolean",
+          "description": "Returns the status of the API."
+        },
+        "Status": {
+          "type": "boolean",
+          "description": "Returns status of the API request."
+        },
+        "StatusMessage": {
+          "type": "string",
+          "description": "Returns the status message from the API."
+        }
+      }
+    }
+  },
+  "parameters" : { },
+  "responses" : { }
+}

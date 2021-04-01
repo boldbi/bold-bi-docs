@@ -295,4 +295,8 @@ When creating a draft in designer embedding, if you specify either existing data
 
 You can get your Embed Secret key from administrator setting section. Refer this [link](/embedded-bi/site-administration/embed-settings/) for more details.
 
-> **NOTE:**  This setting will be enabled only if you have Embedded BI plan.
+## How to get common Embed Secret key from UMS
+
+If you are using multi-tenant Bold BI server sites and looking for embedding the Designer in your application, then we recommend using the common embed secret instead of the separate embed secret for each site. Refer to this [link](/embedded-bi/site-administration/embed-settings/#get-common-embed-secret-code-from-ums) to get the common embed secret.
+
+> **NOTE:**  This embed setting will be enabled only if you have an Embedded BI plan.

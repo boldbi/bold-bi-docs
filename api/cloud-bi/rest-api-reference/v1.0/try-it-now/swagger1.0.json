@@ -1,0 +1,734 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "title" : "API Reference",
+    "version" : "1.0"
+  },
+  "host" : "onpremise-demo.boldbi.com",
+  "basePath" : "/bi/api/site/site1/",
+  "schemes" : [ ],
+  "consumes" : [ "application/json" ],
+  "produces" : [ "application/json" ],
+  "tags" : [ {
+    "name" : "Authentication"
+  }, {
+    "name" : "Users"
+  }, {
+    "name" : "Groups"
+  } ],
+  "securityDefinitions" : {
+    "Bearer" : {
+      "type" : "apiKey",
+      "name" : "Authorization",
+      "in" : "header"
+    }
+  },
+  "security" : [ {
+    "Bearer" : [ ]
+  } ],
+  "paths" : {
+    "/token" : {
+      "post" : {
+        "tags" : [ "Authentication" ],
+        "summary" : "Authenticate User",
+        "operationId" : "Authentication",
+        "consumes" : [ "application/x-www-form-urlencoded" ],
+        "parameters" : [ {
+          "type" : "string",
+          "name" : "grant_type",
+          "in" : "formData",
+          "required" : true,
+          "x-nullable" : false,
+          "description" : "The type of credentials authorizing the request for an access token. (Use \"password\")"
+        }, {
+          "type" : "string",
+          "name" : "username",
+          "in" : "formData",
+          "required" : true,
+          "x-nullable" : false,
+          "description" : "Email address of the user. (Use guest@boldbi.com for this demo API)"
+        }, {
+          "type" : "string",
+          "name" : "password",
+          "in" : "formData",
+          "required" : true,
+          "x-nullable" : false,
+          "description" : "Password of the user. (Use Demo759! for this demo API)"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "User Logged In Successfully",
+            "schema" : {
+              "$ref" : "#/definitions/Response"
+            },
+            "x-nullable" : true
+          },
+          "400" : {
+            "description" : "Email address is empty"
+          },
+          "401" : {
+            "description" : "Invalid email or password"
+          },
+          "404" : {
+            "description" : "User detail not found"
+          },
+          "405" : {
+            "description" : "Request type was not POST"
+          }
+        }
+      }
+    },
+    "/v1.0/users" : {
+      "post" : {
+        "tags" : [ "Users" ],
+        "summary" : "Add User",
+        "operationId" : "Users_AddUser",
+        "parameters" : [ {
+          "name" : "userDetail",
+          "in" : "body",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/ApiUserAdd"
+          },
+          "description" : "Detail of the user.",
+          "x-nullable" : true
+        } ],
+        "responses" : {
+          "201" : {
+            "x-nullable" : true,
+            "description" : "User was created successfully",
+            "schema" : {
+              "$ref" : "#/definitions/ApiResponse"
+            }
+          },
+          "400" : {
+            "description" : "The content of the request body is missing or incomplete"
+          },
+          "401" : {
+            "description" : "Access denied"
+          },
+          "404" : {
+            "description" : "User detail not found"
+          },
+          "405" : {
+            "description" : "Request type was not POST"
+          },
+          "406" : {
+            "description" : "The content of the request body is invalid"
+          },
+          "409" : {
+            "description" : "Email address already exists"
+          },
+          "417" : {
+            "description" : "Failed to add user"
+          }
+        }
+      },
+      "get" : {
+        "tags" : [ "Users" ],
+        "summary" : "Returns the list of users.",
+        "operationId" : "Users_GetUsers",
+        "responses" : {
+          "200" : {
+            "x-nullable" : true,
+            "description" : "List of users retrieved successfully",
+            "schema" : {
+              "$ref" : "#/definitions/ApiUserList"
+            }
+          },
+          "204" : {
+            "description" : "User list is empty"
+          },
+          "405" : {
+            "description" : "Request type was not GET"
+          }
+        }
+      }
+    },
+    "/v1.0/users/{user}" : {
+      "put" : {
+        "tags" : [ "Users" ],
+        "summary" : "Modifies information about the specified user.",
+        "operationId" : "Users_EditUser",
+        "parameters" : [ {
+          "type" : "string",
+          "name" : "user",
+          "in" : "path",
+          "required" : true,
+          "description" : "Email address of the user.",
+          "x-nullable" : false
+        }, {
+          "name" : "userDetail",
+          "in" : "body",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/ApiUserEdit"
+          },
+          "description" : "Detail of the user.",
+          "x-nullable" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "x-nullable" : true,
+            "description" : "User was modified successfully",
+            "schema" : {
+              "$ref" : "#/definitions/ApiResponse"
+            }
+          },
+          "400" : {
+            "description" : "The content of the request body is missing or incomplete"
+          },
+          "401" : {
+            "description" : "Access denied"
+          },
+          "404" : {
+            "description" : "User detail not found"
+          },
+          "405" : {
+            "description" : "Request type was not PUT"
+          },
+          "406" : {
+            "description" : "The content of the request body is invalid"
+          },
+          "417" : {
+            "description" : "Failed to update user"
+          }
+        }
+      }
+    },
+    "/v1.O/users/{user}" : {
+      "delete" : {
+        "tags" : [ "Users" ],
+        "summary" : "Deletes the specified user.",
+        "operationId" : "Users_DeleteUser",
+        "parameters" : [ {
+          "type" : "string",
+          "name" : "user",
+          "in" : "path",
+          "required" : true,
+          "description" : "Email address of the user.",
+          "x-nullable" : false
+        } ],
+        "responses" : {
+          "204" : {
+            "x-nullable" : true,
+            "description" : "User deleted",
+            "schema" : {
+              "$ref" : "#/definitions/ApiResponse"
+            }
+          },
+          "400" : {
+            "description" : "Email address is empty"
+          },
+          "401" : {
+            "description" : "Access denied"
+          },
+          "404" : {
+            "description" : "User detail not found"
+          },
+          "405" : {
+            "description" : "Request type was not DELETE"
+          },
+          "417" : {
+            "description" : "Failed to delete user"
+          }
+        }
+      },
+      "get" : {
+        "tags" : [ "Users" ],
+        "summary" : "Returns user details for a specified user.",
+        "operationId" : "Users_GetUserDetail",
+        "parameters" : [ {
+          "type" : "string",
+          "name" : "user",
+          "in" : "path",
+          "required" : true,
+          "description" : "Email address of the user.",
+          "x-nullable" : false
+        } ],
+        "responses" : {
+          "200" : {
+            "x-nullable" : true,
+            "description" : "User detail was retrieved successfully",
+            "schema" : {
+              "$ref" : "#/definitions/ApiUser"
+            }
+          },
+          "401" : {
+            "description" : "Access denied"
+          },
+          "404" : {
+            "description" : "User detail not found"
+          },
+          "405" : {
+            "description" : "Request type was not GET"
+          },
+          "417" : {
+            "description" : "Failed to retrieve user detail"
+          }
+        }
+      }
+    },
+    "/v1.0/groups" : {
+      "post" : {
+        "tags" : [ "Groups" ],
+        "summary" : "Add group",
+        "operationId" : "Groups_AddGroup",
+        "parameters" : [ {
+          "name" : "groupDetail",
+          "in" : "body",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/ApiGroupAdd"
+          },
+          "description" : "Detail of the group.",
+          "x-nullable" : true
+        } ],
+        "responses" : {
+          "201" : {
+            "x-nullable" : true,
+            "description" : "Group was created successfully",
+            "schema" : {
+              "$ref" : "#/definitions/ApiResponse"
+            }
+          },
+          "400" : {
+            "description" : "The content of the request body is missing or incomplete"
+          },
+          "401" : {
+            "description" : "Access denied"
+          },
+          "404" : {
+            "description" : "Group detail not found"
+          },
+          "405" : {
+            "description" : "Request type was not POST"
+          },
+          "406" : {
+            "description" : "The content of the request body is invalid"
+          },
+          "409" : {
+            "description" : "Group name already exists"
+          },
+          "417" : {
+            "description" : "Failed to add group"
+          }
+        }
+      },
+      "get" : {
+        "tags" : [ "Groups" ],
+        "summary" : "Returns the list of groups.",
+        "operationId" : "Groups_GetGroups",
+        "responses" : {
+          "200" : {
+            "x-nullable" : true,
+            "description" : " List of groups was retrieved successfully",
+            "schema" : {
+              "$ref" : "#/definitions/ApiGroupList"
+            }
+          },
+          "204" : {
+            "description" : "Group list is empty"
+          },
+          "401" : {
+            "description" : "Access denied"
+          },
+          "405" : {
+            "description" : "Request type was not GET"
+          }
+        }
+      }
+    },
+    "/v1.0/groups/{id}" : {
+      "delete" : {
+        "tags" : [ "Groups" ],
+        "summary" : "Deletes the specified group.",
+        "operationId" : "Groups_DeleteGroup",
+        "parameters" : [ {
+          "type" : "integer",
+          "name" : "id",
+          "in" : "path",
+          "required" : true,
+          "description" : "ID of the group.",
+          "format" : "int32",
+          "x-nullable" : false
+        } ],
+        "responses" : {
+          "204" : {
+            "x-nullable" : true,
+            "description" : "Group was deleted",
+            "schema" : {
+              "$ref" : "#/definitions/ApiResponse"
+            }
+          },
+          "401" : {
+            "description" : "Access denied"
+          },
+          "404" : {
+            "description" : "Group detail not found"
+          },
+          "405" : {
+            "description" : "Request type was not DELETE"
+          },
+          "406" : {
+            "description" : "Invalid Group ID"
+          },
+          "417" : {
+            "description" : "Failed to delete the group"
+          }
+        }
+      },
+      "put" : {
+        "tags" : [ "Groups" ],
+        "summary" : "Modifies information about a specified group.",
+        "operationId" : "Groups_EditGroup",
+        "parameters" : [ {
+          "type" : "integer",
+          "name" : "id",
+          "in" : "path",
+          "required" : true,
+          "description" : "ID of the group.",
+          "format" : "int32",
+          "x-nullable" : false
+        }, {
+          "name" : "groupDetail",
+          "in" : "body",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/ApiGroupEdit"
+          },
+          "description" : "Detail of the group.",
+          "x-nullable" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "x-nullable" : true,
+            "description" : "Group was modified successfully",
+            "schema" : {
+              "$ref" : "#/definitions/ApiResponse"
+            }
+          },
+          "400" : {
+            "description" : "The content of the request body is missing or incomplete"
+          },
+          "401" : {
+            "description" : "Access denied"
+          },
+          "404" : {
+            "description" : "Group detail not found"
+          },
+          "405" : {
+            "description" : "Request type was not PUT"
+          },
+          "406" : {
+            "description" : "The content of the request body is invalid"
+          },
+          "409" : {
+            "description" : "Group name already exists"
+          },
+          "417" : {
+            "description" : "Failed to update group "
+          }
+        }
+      },
+      "get" : {
+        "tags" : [ "Groups" ],
+        "summary" : "Returns group details for a specified group.",
+        "operationId" : "Groups_GetGroupDetail",
+        "parameters" : [ {
+          "type" : "integer",
+          "name" : "id",
+          "in" : "path",
+          "required" : true,
+          "description" : "ID of the group.",
+          "format" : "int32",
+          "x-nullable" : false
+        } ],
+        "responses" : {
+          "200" : {
+            "x-nullable" : true,
+            "description" : "Group detail was retrieved successfully",
+            "schema" : {
+              "$ref" : "#/definitions/ApiGroup"
+            }
+          },
+          "401" : {
+            "description" : "Access denied"
+          },
+          "404" : {
+            "description" : "Group detail not found"
+          },
+          "405" : {
+            "description" : "Request type was not GET"
+          },
+          "417" : {
+            "description" : "Failed to get group detail"
+          }
+        }
+      }
+    },
+    "/v1.0/groups/{id}/users" : {
+      "get" : {
+        "tags" : [ "Groups" ],
+        "summary" : "Returns a list of users for the specified group.",
+        "operationId" : "Groups_GetUsesFromGroup",
+        "parameters" : [ {
+          "type" : "integer",
+          "name" : "id",
+          "in" : "path",
+          "required" : true,
+          "description" : "ID of the group.",
+          "format" : "int32",
+          "x-nullable" : false
+        } ],
+        "responses" : {
+          "200" : {
+            "x-nullable" : true,
+            "description" : " List of group's users was retrieved successfully",
+            "schema" : {
+              "$ref" : "#/definitions/ApiUserList"
+            }
+          },
+          "204" : {
+            "description" : "user list is empty"
+          },
+          "401" : {
+            "description" : "Access denied"
+          },
+          "405" : {
+            "description" : "Request type was not GET"
+          },
+          "406" : {
+            "description" : "Invalid Group ID"
+          },
+          "417" : {
+            "description" : "Failed to retrieve the users of group"
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "Response" : {
+      "type" : "object",
+      "x-typeName" : "Response",
+      "additionalProperties" : false,
+      "properties" : {
+        "access_token" : {
+          "type" : "string",
+          "description" : "Authentication token of the user."
+        },
+        "token_type" : {
+          "type" : "string",
+          "description" : "Type of token assigned by the authorization server."
+        },
+        "expires_in" : {
+          "type" : "string",
+          "description" : "The lifetime in seconds of the access token."
+        },
+        "Email" : {
+          "type" : "string",
+          "description" : "Email of the authenticated user."
+        }
+      }
+    },
+    "ApiUserAdd" : {
+      "type" : "object",
+      "description" : "User detail",
+      "additionalProperties" : false,
+      "required" : [ "Email", "FirstName" ],
+      "properties" : {
+        "Email" : {
+          "type" : "string",
+          "description" : "Email address of the user."
+        },
+        "FirstName" : {
+          "type" : "string",
+          "description" : "First name of the user."
+        },
+        "Lastname" : {
+          "type" : "string",
+          "description" : "Last name of the user."
+        }
+      }
+    },
+    "ApiResponse" : {
+      "type" : "object",
+      "additionalProperties" : false,
+      "properties" : {
+        "ApiStatus" : {
+          "type" : "boolean",
+          "description" : "Returns the status of the API."
+        },
+        "Data" : {
+          "description" : "Returns data from the API."
+        },
+        "Status" : {
+          "type" : "boolean",
+          "description" : "Returns status of the API request."
+        },
+        "StatusMessage" : {
+          "type" : "string",
+          "description" : "Returns the status message from the API."
+        }
+      }
+    },
+    "ApiUserEdit" : {
+      "type" : "object",
+      "description" : "User detail",
+      "additionalProperties" : false,
+      "properties" : {
+        "FirstName" : {
+          "type" : "string",
+          "description" : "First name of the user."
+        },
+        "Lastname" : {
+          "type" : "string",
+          "description" : "Last name of the user."
+        },
+        "ContactNumber" : {
+          "type" : "string",
+          "description" : "Phone number of the user."
+        }
+      }
+    },
+    "ApiUser" : {
+      "type" : "object",
+      "description" : "User detail",
+      "additionalProperties" : false,
+      "properties" : {
+        "ContactNumber" : {
+          "type" : "string",
+          "description" : "Phone number of the user."
+        },
+        "DisplayName" : {
+          "type" : "string",
+          "description" : "Display name of the user."
+        },
+        "Email" : {
+          "type" : "string",
+          "description" : "Email address of the user."
+        },
+        "FirstName" : {
+          "type" : "string",
+          "description" : "First name of the user."
+        },
+        "IsActive" : {
+          "type" : "boolean",
+          "description" : "Returns true if the user is an active user."
+        },
+        "IsAzureAdUser" : {
+          "type" : "boolean",
+          "description" : "Returns true if the user is added from Azure Active Directory."
+        },
+        "Lastname" : {
+          "type" : "string",
+          "description" : "Last name of the user."
+        },
+        "UserId" : {
+          "type" : "integer",
+          "description" : "ID of the user.",
+          "format" : "int32"
+        },
+        "Username" : {
+          "type" : "string",
+          "description" : "Username of the user."
+        },
+        "UserStatus" : {
+          "description" : "Returns the status of the user.",
+          "allOf" : [ {
+            "$ref" : "#/definitions/UserStatus"
+          } ]
+        }
+      }
+    },
+    "UserStatus" : {
+      "type" : "string",
+      "description" : "",
+      "x-enumNames" : [ "Active", "InActive" ],
+      "enum" : [ 0, 1 ]
+    },
+    "ApiUserList" : {
+      "type" : "object",
+      "description" : "List of users",
+      "additionalProperties" : false,
+      "properties" : {
+        "UserList" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/ApiUser"
+          }
+        }
+      }
+    },
+    "ApiGroupAdd" : {
+      "type" : "object",
+      "description" : "Group detail",
+      "additionalProperties" : false,
+      "required" : [ "Name" ],
+      "properties" : {
+        "Name" : {
+          "type" : "string",
+          "description" : "Name of the group."
+        },
+        "Description" : {
+          "type" : "string",
+          "description" : "Description of the group."
+        }
+      }
+    },
+    "ApiGroupEdit" : {
+      "type" : "object",
+      "description" : "Group detail",
+      "additionalProperties" : false,
+      "properties" : {
+        "Name" : {
+          "type" : "string",
+          "description" : "Name of the group."
+        },
+        "Description" : {
+          "type" : "string",
+          "description" : "Description of the group."
+        }
+      }
+    },
+    "ApiGroup" : {
+      "type" : "object",
+      "description" : "Group detail",
+      "additionalProperties" : false,
+      "properties" : {
+        "Id" : {
+          "type" : "integer",
+          "description" : "ID of the group.",
+          "format" : "int32"
+        },
+        "Name" : {
+          "type" : "string",
+          "description" : "Name of the group."
+        },
+        "Description" : {
+          "type" : "string",
+          "description" : "Description of the group."
+        },
+        "IsAzureADGroup" : {
+          "type" : "boolean",
+          "description" : "Returns true if the group is added from Azure Active Directory"
+        }
+      }
+    },
+    "ApiGroupList" : {
+      "type" : "object",
+      "additionalProperties" : false,
+      "properties" : {
+        "GroupList" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/ApiGroup"
+          }
+        }
+      }
+    }
+  },
+  "parameters" : { },
+  "responses" : { }
+}

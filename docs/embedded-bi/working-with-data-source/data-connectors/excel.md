@@ -17,7 +17,7 @@ Bold BI dashboard designer allows you to connect Excel files from both local and
 
 * The first row' values of your worksheet will be considered as column names by default in Bold BI. So, provide a unique and meaningful column name in your spreadsheet that will make it easy to identify your data.
 
-* You can upload a maximum of file size 75 MB.
+* You can upload a maximum of file size 200 MB.
 
 ## Connecting an Excel file from Local Storage
 To connect an Excel file from local storage, follow the below steps:
@@ -129,6 +129,7 @@ Follow the below steps to edit data source connection:
 ![Refresh local excel](/static/assets/embedded/working-with-datasource/data-connectors/images/Excel/refresh-local-excel.png)
              
 2. In the Edit Connection dialog, browse your `Excel file` from local storage, which should be the same source file with updates or a different file name but with the same schema.
+
 ![Edit connection window](/static/assets/embedded/working-with-datasource/data-connectors/images/Excel/edit-connection-window.png)
  
 3. Click **Reconnect** button and now your data gets updated.
