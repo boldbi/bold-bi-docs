@@ -204,6 +204,10 @@
     "configuration",
     "dsn",
     "centos",
-    "ubuntu"
+    "ubuntu",
+    "ums",
+    "vuejs",
+    "java",
+    "servlet"
   ]
 }
