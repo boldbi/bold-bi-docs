@@ -433,8 +433,10 @@ EmbedProperties
 GetToken
 GetDetails
 loadDashboard
+loadPinboard
 getInstance
 loadDashboardWidget
+addWidgetToPinboard
 updateFilters
 refreshDashboard
 dashboardSettings
@@ -444,6 +446,7 @@ iconsinformation
 enableComment
 boolean
 dashboardPath
+pinboardname
 onIconClick
 headertext
 widgetSettings
@@ -789,3 +792,13 @@ dataservice
 appsettings.json
 autosave
 idp
+rebrand
+VueJS
+Servlet
+doPost
+SignatureURL
+Servlets
+Vue
+Vue.js
+idp
+deserialize
