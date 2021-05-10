@@ -43,14 +43,23 @@ Use the following steps to authenticate with Google Analytics web service:
 ### Create Google Analytics data source
 After successful authentication, the NEW DATA SOURCE configuration panel opens. Follow the below steps to create Google Analytics data source.
 1. Enter a name and description (optional) for the data source.
-2. Enter a valid Google Analytics REST API endpoint in the URL textbox. Refer the [Google Analytics API documentation](https://developers.google.com/analytics/devguides/config/mgmt/v3/mgmtReference/) for more details.
+2. Select account, properties, and view value.
+3. You can choose a specific date as a start date and end date respectively by using the date picker controls given. If you choose the launch date option, Google analytics initial launch date will be considered as the start date for the API. Similarly, if no end date option is selected, current date will be passed as the end date to pull data up to date during data source creation and data source refresh.
+4. You can choose multiple metrics and dimensions for which will replace in URL.
 
-    Example: [https://www.googleapis.com/analytics/v3/data/ga?ids=&lt;:id&gt;&start-date=&lt;:startDate&gt;&end-date=&lt;:endDate&gt;&metrics=ga:users,ga:sessions,ga:pageviews&dimensions=ga:month,ga:year&sort=-ga:month](https://www.googleapis.com/analytics/v3/data/ga?ids=%3c:id%3e&start-date=%3c:startDate%3e&end-date=%3c:endDate%3e&metrics=ga:users,ga:sessions,ga:pageviews&dimensions=ga:month,ga:year&sort=-ga:month)    
-3. Select **GET** method for the REST API in **Method** combo box.
-4. In **Page(s)**, enter the maximum number of rows to be fetched from the Google Analytics data source. This value is used to fetch the data from Google Analytics data source via pagination.
-5. Choose a time interval for **Refresh Settings** using the combo box, to trigger the Rest API request periodically to keep the data in sync with our dashboard.  
-6. Select **JSON** data type in **Data Format** combo box.
-7. The authentication type will be set to **Google Analytics** automatically since OAuth is used for authenticating with Google Analytics account.
+> **NOTE:**  Google restricted to connect only up to 7 dimensions in single API call (single data source).
+
+5. Click custom URL if you want to enter URL manually. Refer to the [Google Analytics API documentation](https://developers.google.com/analytics/devguides/config/mgmt/v3/mgmtReference/) for more details.
+
+    Example: [https://www.googleapis.com/analytics/v3/data/ga?ids=<:id>&start-date=<:startDate>&end-date=<:endDate>&metrics=ga:users,ga:sessions,ga:pageviews&dimensions=ga:month,ga:year&sort=-ga:month](https://www.googleapis.com/analytics/v3/data/ga?ids=%3c:id%3e&start-date=%3c:startDate%3e&end-date=%3c:endDate%3e&metrics=ga:users,ga:sessions,ga:pageviews&dimensions=ga:month,ga:year&sort=-ga:month)
+    
+6. Select the **GET** method for the REST API in the **Method** combo box.
+7. In **Page(s)**, enter the maximum number of rows to be fetched from the Google Analytics data source. This value is used to fetch the data from Google Analytics data source via pagination.
+8. Choose a time interval for **Refresh Settings** using the combo box, to trigger the Rest API request periodically to keep the data in sync with our dashboard. 
+9. Select **JSON** data type in the **Data Format** combo box.
+10. The authentication type will be set to **Google Analytics** automatically since OAuth is used for authenticating with the Google Analytics account.
+
+   ![Choose data source from server](/static/assets/cloud/working-with-datasource/data-connectors/images/GoogleAnalytics/Google-Analytics-UI.png)
 
 You can also edit the connection information set here using the [Edit Connection](/cloud-bi/working-with-data-source/editing-a-data-connection/) option.
 
@@ -100,7 +109,7 @@ Period of time before next refresh call is triggered. This will automatically tr
 1. Generate query for Google Analytics using [Query Explorer](https://ga-dev-tools.appspot.com/query-explorer/).
 2. Copy the Query and replace in  URL field of Google Analytics data source in Bold BI dashboards.
 
-   Example: [https://www.googleapis.com/analytics/v3/data/ga?ids=&lt;:id&gt;&start-date=&lt;:startDate&gt;&end-date=&lt;:endDate&gt;&metrics=ga:users,ga:sessions,ga:pageviews&dimensions=ga:month,ga:year&sort=-ga:month](https://www.googleapis.com/analytics/v3/data/ga?ids=%3c:id%3e&start-date=%3c:startDate%3e&end-date=%3c:endDate%3e&metrics=ga:users,ga:sessions,ga:pageviews&dimensions=ga:month,ga:year&sort=-ga:month)  
+   Example: [https://www.googleapis.com/analytics/v3/data/ga?ids=<:id&>&start-date=<:startDate>&end-date=<:endDate>&metrics=ga:users,ga:sessions,ga:pageviews&dimensions=ga:month,ga:year&sort=-ga:month](https://www.googleapis.com/analytics/v3/data/ga?ids=%3c:id%3e&start-date=%3c:startDate%3e&end-date=%3c:endDate%3e&metrics=ga:users,ga:sessions,ga:pageviews&dimensions=ga:month,ga:year&sort=-ga:month)
 
 ### Sample queries
 **Traffic By Channel:**

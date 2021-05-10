@@ -17,7 +17,7 @@ Follow these steps to change the application binding information:
 
 2. Update the new binding values in the following configuration files in deployed location.
 
-    Update the `Idp`, `Bi`, and `BiDesigner` values in the config file in following location.
+    Update the `Idp`, `Bi`, `BiDesigner`, and `Reports` values in the following config file location.
     `{Deployed Location}\app_data\configuration\config.xml` 
     ![Core Config File](/static/assets/embedded/faq/images/latest-config-file.png)
 
@@ -41,4 +41,6 @@ Follow these steps to change the application binding information:
 
 > **IMPORTANT:** Do not remove the existing bindings. 
 
-> **NOTE:** If you have DNS, you can add binding for the DNS instead of IP mentioned here.
+> **NOTE:**
+> * If you have DNS, you can add binding for the DNS instead of IP mentioned here.
+> * IIS Express Development Certificate cannot be used to configure the SSL with the IP address or domain. If it is configured with the IP address or domain, Bold BI application will not work correctly.

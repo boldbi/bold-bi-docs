@@ -80,6 +80,7 @@ The Bold BI supports the following data connection types such that the structure
         </td>
 		<td align="center">Management
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/appfolio/"> AppFolio</a>
+            <br> <a href="/cloud-bi/working-with-data-source/data-connectors/nutshell/"> Nutshell</a>
         </td>
     </tr>
     <tr>

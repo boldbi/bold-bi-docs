@@ -385,6 +385,142 @@
         }
       }
     },
+    "/api/v4.0/dashboards/draft" : {
+      "post": {
+        "tags": [
+          "Draft Dashboards"
+        ],
+        "summary": "Add Draft Dashboard",
+        "description": "Users who have access to create dashboard can add the draft dashboard by providing respective dashboard details in the request body.",
+        "operationId": "Dashboards_AddDraftDashboard",
+        "parameters": [
+          {
+            "type": "string",
+            "name": "name",
+            "in": "body",
+            "required": true,
+            "description": "Draft dashboard detail.",
+            "schema": {
+              "$ref": "#/definitions/AddDraftDashboard"
+            },
+            "x-nullable": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "x-nullable": false,
+            "description": "Draft Dashboard has been added successfully",
+            "schema": {
+              "$ref": "#/definitions/ItemDetail"
+            }
+          },
+          "400": {
+            "description": "The content of the request body is missing or incomplete"
+          },
+          "401": {
+            "description": "Access denied"
+          },
+          "403": {
+            "description": "Access denied for the item"
+          },
+          "405": {
+            "description": "Request type was not POST"
+          },
+          "406": {
+            "description": "The content of the request body is invalid"
+          }
+        }
+      }
+    },
+    "/api/v4.0/dashboards/drafts" : {
+      "get" : {
+        "tags" : [
+          "Draft Dashboards"
+        ],
+        "summary" : "Get Draft Dashboards",
+        "description" : "Users who have created the dashboard can view the draft dashboard lists.",
+        "operationId" : "Items_GetDraftDashboard",
+        "responses" : {
+          "200" : {
+            "type" : "array",
+            "description": "Draft Dashboards has been retrieved successfully",
+            "schema" : {
+              "$ref" : "#/definitions/ApiItemsV4"
+            }
+          },
+          "204" : {
+            "description" : "Items not found"
+          },
+          "401" : {
+            "description" : "Access denied"
+          },
+          "403" : {
+            "description" : "Access denied for the item"
+          },
+          "405" : {
+            "description" : "Request type was not GET"
+          }
+        }
+      }
+    },
+    "/api/v4.0/item/draft/{itemId}": {
+      "put": {
+        "tags": [
+          "Draft Dashboards"
+        ],
+        "summary": "Update Draft Dashboard",
+        "description": "Users who have created the dashboard can update the draft dashboard by providing respective dashboard details in the request body.",
+        "operationId": "Items_UpdateDraftItemDetail",
+        "parameters": [
+          {
+            "type" : "string",
+            "name" : "itemId",
+            "in" : "path",
+            "required" : true,
+            "description" : "ItemId of the draft dashboard.",
+            "format" : "guid",
+            "x-nullable" : false
+          },
+          {
+            "name": "updateDraftItemDetail",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/UpdateDraftItemDetail"
+            },
+            "description": "Details of the draft dashboard item.",
+            "x-nullable": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "x-nullable": true,
+            "description": "Draft item details are updated successfully",
+            "schema": {
+              "$ref": "#/definitions/ApiResponse"
+            }
+          },
+          "400": {
+            "description": "The content of the request body is missing or incomplete"
+          },
+          "401": {
+            "description": "Access denied"
+          },
+          "404": {
+            "description": "Item details not found"
+          },
+          "405": {
+            "description": "Request type was not PUT"
+          },
+          "406": {
+            "description": "The content of the request body is invalid"
+          },
+          "417": {
+            "description": "Failed to update draft item details"
+          }
+        }
+      }
+    },
     "/api/v4.0/datasource/{itemId}/copy": {
       "post": {
         "tags": [
@@ -2224,6 +2360,219 @@
         "SiteURL": {
           "type": "string",
           "description": "Site URL"
+        }
+      }
+    },
+    "AddDraftDashboard": {
+      "type": "object",
+      "description": "Dashboard item detail.",
+      "additionalProperties": false,
+      "properties": {
+        "Name": {
+          "type": "string",
+          "description": "Name of the dashboard."
+        }
+      }
+    },
+    "ItemDetail": {
+      "type": "object",
+      "description": "Dashboard item detail.",
+      "additionalProperties": false,
+      "properties": {
+        "Id": {
+          "type": "string",
+          "description": "Item ID of the dashboard.",
+          "format": "guid"
+        },
+        "Name": {
+          "type": "string",
+          "description": "Name of the dashboard."
+        }
+      }
+    },
+    "ApiItemsV4": {
+      "type": "object",
+      "description": "Draft Dashboard item details.",
+      "properties": {
+        "Id": {
+          "type": "string",
+          "description": "Item ID of the dashboard.",
+          "format": "guid"
+        },
+        "Name": {
+          "type": "string",
+          "description": "Name of the dashboard."
+        },
+        "Description": {
+          "type": "string",
+          "description": "Description of the dashboard."
+        },
+        "ItemType": {
+          "type": "string",
+          "description": "Type of the Item."
+        },
+        "ItemLocation": {
+          "type": "string",
+          "description": "Item location."
+        },
+        "CreatedById": {
+          "type": "integer",
+          "description": "Specifies the user ID of the item creator.",
+          "format": "int32"
+        },
+        "CreatedByDisplayName": {
+          "type": "string",
+          "description": "Specifies the display name of the user who created the item."
+        },
+        "ModifiedById": {
+          "type": "integer",
+          "description": "Specifies the user ID of the item modifier.",
+          "format": "int32"
+        },
+        "ModifiedByFullName": {
+          "type": "string",
+          "description": "Specifies the full name of the user who modified the item."
+        },
+        "CategoryId": {
+          "type": "string",
+          "description": "Category ID.",
+          "format": "guid"
+        },
+        "CategoryName": {
+          "type": "string",
+          "description": "Category name."
+        },
+        "CreatedDate": {
+          "type": "string",
+          "description": "Date created of the item in string format.",
+          "format": "datetime"
+        },
+        "ModifiedDate": {
+          "type": "string",
+          "description": "Date modified of the item in string format.",
+          "format": "datetime"
+        },
+        "ItemModifiedDate": {
+          "type": "string",
+          "description": "Date modified of the item in date format.",
+          "format": "datetime"
+        },
+        "ItemCreatedDate": {
+          "type": "string",
+          "description": "Date created of the item in date format.",
+          "format": "datetime"
+        },
+        "IsMultiDashboard": {
+          "type": "boolean",
+          "description": "Returns true, if the dashboard is multi-dashboard."
+        },
+        "IsFavorite": {
+          "type": "boolean",
+          "description": "Returns true, if it is a favorite item."
+        },
+        "IsPublic": {
+          "type": "boolean",
+          "description": "Returns true, if the item is public."
+        },
+        "IsDraft": {
+          "type": "boolean",
+          "description": "Returns true, if the item is draft."
+        },
+        "CanRead": {
+          "type": "boolean",
+          "description": "Specifies the read permission of the item."
+        },
+        "CanWrite": {
+          "type": "boolean",
+          "description": "Specifies the write permission of the item."
+        },
+        "CanDelete": {
+          "type": "boolean",
+          "description": "Specifies the delete permission of the item."
+        },
+        "CanDownload": {
+          "type": "boolean",
+          "description": "Specifies the download permission of the item."
+        },
+        "CanSchedule": {
+          "type": "boolean",
+          "description": "Specifies the schedule permission of the item."
+        },
+        "CanOpen": {
+          "type": "boolean",
+          "description": "Specifies the open permission of the item."
+        },
+        "CanMove": {
+          "type": "boolean",
+          "description": "Specifies the move permission of the item."
+        },
+        "CanCopy": {
+          "type": "boolean",
+          "description": "Specifies the copy permission of the item."
+        },
+        "CanClone": {
+          "type": "boolean",
+          "description": "Specifies the clone permission of the item."
+        },
+        "CanCreateItem": {
+          "type": "boolean",
+          "description": "Specifies the create permission of the item."
+        },
+        "WidgetInfo": {
+          "type": "string",
+          "description": "Returns WidgetInfo for the specified dashboard."
+        },
+        "TabDetail": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ApiTabDetail"
+          },
+          "description": "Specifies the details of the tab in a multi-tabbed dashboard."
+        }
+      }
+    },
+    "UpdateDraftItemDetail": {
+      "type": "object",
+      "description": "Dashboard item detail.",
+      "additionalProperties": false,
+      "properties": {
+        "ItemName": {
+          "type": "string",
+          "description": "Name of the dashboard."
+        },
+        "Description": {
+          "type": "string",
+          "description": "Description of the dashboard."
+        }
+      }
+    },
+    "ApiTabDetail": {
+      "type": "object",
+      "description": "Multitab dashboard item detail.",
+      "properties": {
+        "MultiTabDashboardId": {
+          "type": "string",
+          "description": "Specifies the dashboard ID of the multi-tabbed dashboard.",
+          "format": "guid"
+        },
+        "DashboardId": {
+          "type": "string",
+          "description": "Specifies the dashboard ID of the tab.",
+          "format": "guid"
+        },
+        "Name": {
+          "type": "string",
+          "description": "Specifies the name of the tab."
+        },
+        "CreatedDate": {
+          "type": "string",
+          "description": "Date created of the item in string format.",
+          "format": "datetime"
+        },
+        "ModifiedDate": {
+          "type": "string",
+          "description": "Date modified of the item in string format.",
+          "format": "datetime"
         }
       }
     }

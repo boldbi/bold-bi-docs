@@ -267,7 +267,7 @@ To set a dashboard parameter within a URL, use the following syntax:
 
 `@<parameter1>=<value1>&&@<parameter2>=<value2>`
 
-<b>For dashboard parameter:<b>
+<b>For dashboard parameter:</b>
 
 `@<parameter>=<@{{:DashboardParameterName}}>`
 
