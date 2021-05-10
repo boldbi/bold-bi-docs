@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Azure DevOps – Cloud BI Data Connector | Bold BI Docs
-description: Learn how to connect Azure DevOps using OAuth-based authentication through REST API endpoint with Bold BI Cloud.
+description: Learn how to connect Azure DevOps projects, test plan and builds using OAuth-based authentication through REST API endpoint with cloud-hosted Bold BI.
 platform: bold-bi
 documentation: ug
 ---

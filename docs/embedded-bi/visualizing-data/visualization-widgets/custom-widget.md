@@ -35,7 +35,7 @@ This section covers the mandatory requirements to develop the custom widget.
 
 ### Step 1: Download the below attached custom widget template for developing.
 
-Custom Widget Template : [Template](https://www.syncfusion.com/downloads/support/directtrac/general/ze/WidgetName-1194581910.zip)
+Custom Widget Template : [Template](https://www.syncfusion.com/downloads/support/directtrac/general/ze/WidgetName736701260.zip)
 
 ### Step 2:  Modify the settings as per the widget requirement. In the below steps we have provided steps to configure the widget through the configuration file(`widgetconfig.json`).
 

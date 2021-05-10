@@ -84,3 +84,5 @@ The following are the frequently asked questions in Bold BI Enterprise :
 [How to create an ODBC connection to a MySQL database in Windows?](/embedded-bi/faq/how-to-create-an-odbc-connection-to-a-my-sql-database-in-windows/)
 
 [How to enable authorized access to dashboards for users?](/embedded-bi/faq/dashboard-authorized-access/)
+
+[How to access nested key-values in Snowflake Data source?](/embedded-bi/faq/accessing-nested-key-values-in-snowflake-data-source/)

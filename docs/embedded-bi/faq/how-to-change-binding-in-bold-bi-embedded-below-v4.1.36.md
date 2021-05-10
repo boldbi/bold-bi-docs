@@ -40,4 +40,6 @@ Follow these steps to change the application binding information:
 
 > **IMPORTANT:** Do not remove the existing bindings. 
 
-> **NOTE:** If you have DNS, you can add binding for the DNS instead of IP mentioned here.
+> **NOTE:**
+> * If you have DNS, you can add binding for the DNS instead of IP mentioned here.
+> * IIS Express Development Certificate cannot be used to configure the SSL with the IP address or domain. If it is configured with the IP address or domain, Bold BI application will not work correctly.

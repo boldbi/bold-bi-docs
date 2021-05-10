@@ -80,6 +80,7 @@ The Bold BI supports the following data connection types such that the structure
         </td>
 		<td align="center"> Management
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/appfolio/"> AppFolio</a>
+            <br> <a href="/embedded-bi/working-with-data-source/data-connectors/nutshell/"> Nutshell</a>
         </td>
     </tr>
     <tr>
@@ -167,6 +168,7 @@ The Bold BI supports the following data connection types such that the structure
         </td>
         <td align="center" rowspan="2"> Project Management
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/asana/"> Asana</a>
+            <br> <a href="/embedded-bi/working-with-data-source/data-connectors/azure-devops/"> Azure Devops</a>
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/github/"> GitHub</a>
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/gitlab/"> Gitlab</a>
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/google-calendar/"> Google Calendar</a>
