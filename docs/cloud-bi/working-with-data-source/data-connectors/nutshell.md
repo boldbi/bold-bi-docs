@@ -113,5 +113,3 @@ This member is mandatory and contain a String, Number, or NULL value.
 [Dashboard Designer Walkthrough](/cloud-bi/getting-started/quick-start/)
 
 [Nutshell API Limits](https://developers.nutshell.com/#rate-limits)
-
-[Nutshell Integration](https://www.boldbi.com/integrations/nutshell)

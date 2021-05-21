@@ -63,4 +63,4 @@ You are also allowed to delete the account anytime in Bold BI. Deleting the acco
 ![Delete account icon](/static/assets/cloud/working-with-datasource/images/deletingconnectedaccounts.png)
 
 ## Post your message
-If you are still not able to find the information that you are looking for in the self-help resources mentioned above then please [contact us](https://www.boldbi.com/contact) and send your requirements.
+If you are still not able to find the information that you are looking for in the self-help resources mentioned above then please [contact us](https://www.boldbi.com/support) and send your requirements.

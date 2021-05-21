@@ -28,4 +28,4 @@ Please follow these steps to update the license manually in `Bold BI Embedded.`
 
 6. Once you logged in successfully, the license will be updated in the application.
 
-If you are still facing this issue, please [contact us](https://www.syncfusion.com/support/directtrac/incidents/newincident) to help you.
+If you are still facing this issue, please [contact us](https://www.boldbi.com/support) to help you.

@@ -339,7 +339,11 @@
     "Security": "security",
     "Admin Utility": {
       "Reset Password": "reset-password",
-      "Reset Application Database": "reset-application-database"
+      "Reset Application Database": "reset-application-database",
+      "v3.3 or older": {
+        "Reset Password for Bold BI version 3.3 or older": "reset-password",
+        "Reset Application Database for Bold BI version 3.3 or older": "reset-application-database"
+      }
     },
     "Site Administration": {
       "Dashboard Settings": {

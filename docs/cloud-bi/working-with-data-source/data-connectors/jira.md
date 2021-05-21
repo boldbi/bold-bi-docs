@@ -91,7 +91,7 @@ Period of time before next refresh call is triggered. This will automatically tr
 1. Replace **&lt;:your_domain&gt;** with your domain name in the URL.
 2. For instance, to get the tasks/issues under specific project, replace your JQL Query in the textarea.
 
-      Sample Domain URL: [https://abcde.atlassian.net](https://abcde.atlassian.net)
+      Sample Domain URL: `https://abcde.atlassian.net`
 
       Sample JQL: `project = weather`
 

@@ -44,4 +44,4 @@ After publishing a dashboard successfully, it will prompt to view the published 
 [Learn how to edit an existing dashboard](/embedded-bi/working-with-dashboards/edit-existing-dashboard/)
 
 ## Post your message
-If you are still not able to find the information that you are looking for the self-help resources mentioned above, then please [contact us](https://www.boldbi.com/contact) and send your requirements.
+If you are still not able to find the information that you are looking for the self-help resources mentioned above, then please [contact us](https://www.boldbi.com/support) and send your requirements.
