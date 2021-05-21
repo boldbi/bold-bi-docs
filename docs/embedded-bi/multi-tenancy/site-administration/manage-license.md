@@ -24,4 +24,4 @@ From the login pop-up, please login with your Bold ID account linked with your B
 
 Once, you logged in successfully, the license will be updated in the application.
 
-If you are facing any issues, please [contact us](https://www.syncfusion.com/support/directtrac/incidents/newincident) to help you.
+If you are facing any issues, please [contact us](https://www.boldbi.com/support) to help you.

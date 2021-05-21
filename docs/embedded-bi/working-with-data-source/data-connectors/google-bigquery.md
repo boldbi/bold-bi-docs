@@ -37,7 +37,27 @@ You can edit or view your OAuth grant limit, redirect URI, scope, authorized dom
 
 `https://console.cloud.google.com/apis/credentials/consent`
 
-   ![Google BigQuery OAuth Consent Screen ](/static/assets/embedded/working-with-datasource/data-connectors/images/GoogleBigQuery/GoogleBQ_OAuthConsentScreen.png)
+Select OAuth Consent screen tab and choose external user type as shown in the following image.
+
+![Set Application Type](/static/assets/embedded/working-with-datasource/data-connectors/images/GoogleBigQuery/GoogleBQ_UserType.png)
+
+Enter the app's name and user's email address, as shown in the following image.
+
+![Set Application Name](/static/assets/embedded/working-with-datasource/data-connectors/images/GoogleBigQuery/GoogleBQ_AppName.png)
+
+Enter the app domain information for registering the application with Bold BI as follows.
+
+![Set Domain Information](/static/assets/embedded/working-with-datasource/data-connectors/images/GoogleBigQuery/GoogleBQ_AppDomain.png)
+
+Set the authorized domain as **boldbi.com** and enter the **User's email address** mail for development contact information as shown in the following image.
+
+![Set Authorized Information](/static/assets/embedded/working-with-datasource/data-connectors/images/GoogleBigQuery/GoogleBQ_AuthorizedDomain.png)
+
+**Add Test Users**
+
+Click **Add Users** and enter the user's email address and click **Save**, as shown in the following image.
+
+![Set Test Users](/static/assets/embedded/working-with-datasource/data-connectors/images/GoogleBigQuery/GoogleBQ_TestUsers.png)
 
 To Create a new Credentials (Client ID, Client Secret), use the following link.
 
@@ -47,7 +67,7 @@ To Create a new Credentials (Client ID, Client Secret), use the following link.
  
 After creating the credentials, open the corresponding credentials and add your Bold BI Enterprises build hosted URL as the following sample URL format.
 
-`http://localhost:63208/bi/designer/v1.0/oauth/agent`
+`http://localhost:<boldbi-running port>/bi/designer/v1.0/oauth/agent`
 
    ![Google BigQuery Credentials Page Open](/static/assets/embedded/working-with-datasource/data-connectors/images/GoogleBigQuery/GoogleBQ_CredentialsPageOpen.png)
    ![Google BigQuery Credentials Page Save](/static/assets/embedded/working-with-datasource/data-connectors/images/GoogleBigQuery/GoogleBQ_CredentialsPageSave.png)

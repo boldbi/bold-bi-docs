@@ -39,7 +39,7 @@ If you are having multiple Bold BI licenses, then you will be getting this scree
 
 ## Offline Installation
 
-> **NOTE:** Offline unlock key available for selected customers only. [Please contact us](https://www.boldbi.com/contact) to get access to offline unlock key.
+> **NOTE:** Offline unlock key available for selected customers only. [Please contact us](https://www.boldbi.com/support) to get access to offline unlock key.
 
 ![Activate the account with Unlock key option](/static/assets/embedded/application-startup/images/application-startup-login-license.png)
 
@@ -58,7 +58,7 @@ Once the unlock key is uploaded, proceed to the next screen for configuring the 
 | Invalid File Type | Please ensure to upload the valid unlock key file (lic) downloaded from [here](https://www.boldbi.com/account/downloads/embedded).    
 |  unlock key Expired    | Your unlock key date was expired. Please download the new unlock key file from [here](https://www.boldbi.com/account/downloads/embedded).   |
 
-> **NOTE:** If you are facing any other issues, please contact us from [here](https://www.boldbi.com/contact).
+> **NOTE:** If you are facing any other issues, please contact us from [here](https://www.boldbi.com/support).
 
 ## No Trial / New Account Request
 
@@ -249,7 +249,7 @@ If you are having multiple Bold BI licenses, then you will be getting this scree
 
 ### Upload unlock key
 
-> **NOTE:** Offline unlock key available for selected customers only. Please [contact us](https://www.boldbi.com/contact) to get access to the offline unlock key.
+> **NOTE:** Offline unlock key available for selected customers only. Please [contact us](https://www.boldbi.com/support) to get access to the offline unlock key.
 
 ![Unlock Key option](/static/assets/embedded/application-startup/images/upload-unlock-key-option.png) 
 

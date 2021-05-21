@@ -31,4 +31,4 @@ documentation: ug
       * 52.234.224.254
       * 52.234.225.60
 
-If you are still facing this issue, please [contact us](https://www.syncfusion.com/support/directtrac/incidents/newincident) to help you.
+If you are still facing this issue, please [contact us](https://www.boldbi.com/support) to help you.

@@ -39,4 +39,4 @@ The following links help you to start with Bold BI.
 [Sharing your dashboards](/cloud-bi/managing-resources/manage-dashboards/share-dashboards/)
 
 ## Post your message
-If you are still not able to find the information are looking for in the self-help resources mentioned previously, then please [contact us](https://www.boldbi.com/contact) and send your questions.
+If you are still not able to find the information are looking for in the self-help resources mentioned previously, then please [contact us](https://www.boldbi.com/support) and send your questions.

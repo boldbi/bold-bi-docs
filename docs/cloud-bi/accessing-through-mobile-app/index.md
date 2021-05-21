@@ -32,4 +32,4 @@ To download the Bold BI Dashboard Mobile App for your device, click the relevant
 [![iOS AppStore](/static/assets/cloud/accessing-through-mobile-app/images/ios-App-Store-Icon.png)](https://apps.apple.com/us/app/bold-bi-dashboard/id1455831143)
 
 ## Create a support incident
-If you are still not able to find the information that you are looking for in the self-help resources mentioned above then please [contact us](https://www.boldbi.com/contact) by creating a support ticket.
+If you are still not able to find the information that you are looking for in the self-help resources mentioned above then please [contact us](https://www.boldbi.com/support) by creating a support ticket.

@@ -55,4 +55,4 @@ To bind data to a widget, minimum of one data source is required.  Follow these 
  [Learn how to delete a data source](/embedded-bi/working-with-data-source/deleting-a-data-source/)
 
 ## Post your message
-If you are still not able to find the information that you are looking for in the self-help resources mentioned above then please [contact us](https://www.boldbi.com/contact) and send your requirements.
+If you are still not able to find the information that you are looking for in the self-help resources mentioned above then please [contact us](https://www.boldbi.com/support) and send your requirements.
