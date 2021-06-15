@@ -122,6 +122,7 @@
         "Facebook": "facebook",
         "Facebook Ads": "facebook-ads",
         "Files (JSON, XML, CSV)": "files",
+		"Fitbit":"fitbit",
         "FreshBooks": "freshbooks",
         "Freshdesk": "freshdesk",
         "Freshsales": "freshsales",
@@ -201,6 +202,7 @@
         "SparkPost": "sparkpost",
         "SQL Data Sources": "sql-data-source",
         "SQLite": "sqlite",
+		"SquareUp":"squareup",
         "Stripe": "stripe",
         "SurveyGizmo": "survey-gizmo",
         "SurveyMonkey": "surveymonkey",
@@ -506,7 +508,8 @@
       "How the interactions can be made between the Bold BI and external application?": "how-the-interactions-can-be-made-between-the-bold-bi-and-external-application.md",
       "How to create an ODBC connection to a MySQL database in Windows": "how-to-create-an-odbc-connection-to-a-my-sql-database-in-windows.md",
       "How to share the dashboard to any users securely": "dashboard-authorized-access.md",
-      "How to access nested key-values in Snowflake Data source": "accessing-nested-key-values-in-snowflake-data-source.md"
+      "How to access nested key-values in Snowflake Data source": "accessing-nested-key-values-in-snowflake-data-source.md",
+	  "How to add a new data connector under Bold BI": "how-to-add-a-new-data-connector-under-bold-bi"
     }
   }
 }

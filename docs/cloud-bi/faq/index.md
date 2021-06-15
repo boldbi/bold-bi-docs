@@ -29,3 +29,5 @@ The following are the frequently asked questions in Bold BI Cloud :
 [How to speed up the data access in SQL Server?](/cloud-bi/faq/how-to-speed-up-the-data-access-in-sql-server/)
 
 [How to enable authorized access to dashboards for users?](/cloud-bi/faq/dashboard-authorized-access/)
+
+[How to add a new data connector under Bold BI?](/cloud-bi/faq/how-to-add-a-new-data-connector-under-bold-bi/)

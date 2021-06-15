@@ -104,6 +104,7 @@ The Bold BI supports the following data connection types such that the structure
         </td>
 		<td align="center">Fitness Management
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/clubready/"> ClubReady</a>
+			<br> <a href="/cloud-bi/working-with-data-source/data-connectors/fitbit/"> Fitbit</a>
         </td>
 		<td align="center">Learning
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/lessonly/"> Lessonly</a>
@@ -142,6 +143,7 @@ The Bold BI supports the following data connection types such that the structure
 			<br> <a href="/cloud-bi/working-with-data-source/data-connectors/quickbooks-payments/"> QuickBooks Payments</a>
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/recurly/"> Recurly</a>
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/stripe/"> Stripe</a>
+			<br> <a href="/cloud-bi/working-with-data-source/data-connectors/squareup/"> SquareUp</a>
 			<br> <a href="/cloud-bi/working-with-data-source/data-connectors/xero/"> Xero</a>
 			<br> <a href="/cloud-bi/working-with-data-source/data-connectors/zoho-invoice/"> Zoho Invoice</a>
         </td>
