@@ -86,3 +86,5 @@ The following are the frequently asked questions in Bold BI Enterprise :
 [How to enable authorized access to dashboards for users?](/embedded-bi/faq/dashboard-authorized-access/)
 
 [How to access nested key-values in Snowflake Data source?](/embedded-bi/faq/accessing-nested-key-values-in-snowflake-data-source/)
+
+[How to add a new data connector under Bold BI?](/embedded-bi/faq/how-to-add-a-new-data-connector-under-bold-bi/)

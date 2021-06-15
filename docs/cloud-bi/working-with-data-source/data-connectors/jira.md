@@ -50,7 +50,26 @@ You can also edit the connection information set here using the [Edit Connection
 3. If you need to add custom fields in JQL filtering, then enable **Include Custom Fields** and provide the custom fields in enabled text box.
 4. In **Max Rows**, enter the maximum number of rows to be fetched from the Jira data source. This value is used to fetch the data from Jira data source via pagination.
 
-> **NOTE:** Custom field ID's must be separated using comma.
+#### How to get the Custom field ID value from Jira?
+1.	In your Jira account, Go to the JQL query search under **Filters -> Advanced Search**.
+
+2.	Type a **Custom field** in the JQL search box and you can view the respective **Custom field ID** in the dropdown as shown in the following image.
+
+   ![CustomFieldDropdown](/static/assets/cloud/working-with-datasource/data-connectors/images/common/CustomFieldDropdown.png)
+ 
+3.	You can add the **Custom field ID** values in the Datasource connection window to retrieve the custom fields data. 
+
+    The syntax for adding Custom Fields,
+
+	  `customfield_<Custom Field ID>`
+
+    Here, the **Epic Link** and **Epic Name** custom fields are added in the following image.
+
+   ![IncludedCustomFields](/static/assets/cloud/working-with-datasource/data-connectors/images/common/IncludedCustomFields.png)
+
+> **NOTE:** 
+> * The Custom field IDs must be separated by using a **comma**.
+> * If you have a Jira Admin account, you can also view the Custom fields ID by the ways mentioned in this [link](https://confluence.atlassian.com/jirakb/how-to-find-id-for-custom-field-s-744522503.html). 
 
 #### Raw Query 
 1. Enter a valid URL in the URL field textbox.

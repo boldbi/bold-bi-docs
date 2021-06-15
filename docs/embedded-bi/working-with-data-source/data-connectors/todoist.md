@@ -46,7 +46,7 @@ After successful authentication, the NEW DATA SOURCE configuration panel opens
 1. Enter a name and description (optional) for the data source.
 2. Enter a valid Todoist Sync API endpoint in the URL textbox. Refer the [Todoist API documentation](https://doist.github.io/todoist-api/sync/v7/) for more details.
 
-    Example: [https://todoist.com/api/v7/sync](https://todoist.com/api/v7/sync)  
+    Example: [https://developer.todoist.com/sync/v8/](https://developer.todoist.com/sync/v8/)  
 
 3. Select **POST** method for the REST API in **Method** combo box.
 4. Select either *Parameter(s)* or *Raw* under **Request Body**. Set `resource_types` as key and one of the Todoist Sync API resource types as its value. `e.g. items, labels, projects, day_orders, collaborators, etc`.   

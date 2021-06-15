@@ -42,6 +42,7 @@
         "Facebook": "facebook",
         "Facebook Ads": "facebook-ads",
         "Files (JSON, XML, CSV)": "files",
+		"Fitbit":"fitbit",
         "Flurry": "flurry",
         "FreshBooks": "freshbooks",
         "Freshdesk": "freshdesk",
@@ -119,6 +120,7 @@
         "SparkPost": "sparkpost",
         "SQL Data Sources": "sql-data-source",
         "SQLite": "sqlite",
+		"SquareUp":"squareup",
         "Stripe": "stripe",
         "SurveyGizmo": "survey-gizmo",
         "SurveyMonkey": "surveymonkey",
@@ -346,7 +348,8 @@
       "How to create a separate axis for the multiple series charts?": "how-to-create-a-separate-axis-for-the-multiple-series-charts",
       "How web-based data source like Jira works with Bold BI?": "how-web-based-data-source-works-with-bold-bi",
 	  "How to speed up the data access in SQL Server?":"how-to-speed-up-the-data-access-in-sql-server",
-	  "How to enable authorized access to dashboards for users": "dashboard-authorized-access"
+	  "How to enable authorized access to dashboards for users": "dashboard-authorized-access",
+	  "How to add a new data connector under Bold BI": "how-to-add-a-new-data-connector-under-bold-bi"
     }
   }
 }

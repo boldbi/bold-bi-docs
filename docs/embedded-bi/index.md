@@ -8,12 +8,15 @@ documentation: ug
 
 # Overview of Embedded BI
 
-Embedded BI is an integration of customized dashboards into your applications. Provided the two ways to embed the dashboards, which are JavaScript-based embedding and iFrame-based embedding. It brings the data visualization more powerful and made it easier to manage. It also allows you to interact with data analysis and more with your insights in your common application. A powerful [Bold BI](/embedded-bi/setup/overview/) tool to create the dashboards. 
+Embedded BI is the integration of customized dashboards into an application, making data visualization more powerful and easier to manage. It allows you to interact with data visualizations and gain business insights from a single application. [Bold BI](/embedded-bi/setup/overview/) is a powerful tool for creating embedded dashboards.
 
-In JavaScript based embedding, you can use our Embed BI JavaScript library that enables you to embed your Bold BI dashboards in your applications, which may be ASP.NET MVC application, ASP.NET Core application, and Angular application. Explained these embedding with samples in this section. Learn more about JavaScript-based embedding [here](/embedded-bi/javascript-based/).  
+Bold BI dashboards can be embedded in two ways: JavaScript-based embedding and iFrame-based embedding. 
 
-In iFrame based embedding, you can embed the dashboards in iFrame using the dashboard url. Here, you need to add some amount of code and effort required to embed. Learn more about iFrame-based embedding [here](/embedded-bi/iframe-based/dashboard-view-mode/).
+In JavaScript-based embedding, you can use our embedded BI JavaScript library to embed your Bold BI dashboards in your application, which may be an ASP.NET MVC application, an ASP.NET Core application, or an Angular application. This embedding is explained by way of the samples in this section. Learn more about JavaScript-based embedding in the article ["Overview of JavaScript-based Embedding SDK."](/embedded-bi/javascript-based/) 
 
-Refer [this page](/embedded-bi/getting-started/quick-start/) to know how to create a powerful dashboard.
+In iFrame-based embedding, you can embed dashboards in iFrame using the dashboard URL. This type of embedding requires some effort, as more code will be required. To learn more about iFrame-based embedding, read the article ["Embed the Dashboard in View Mode."](/embedded-bi/iframe-based/dashboard-view-mode/)
 
-Also, you can embed the dashboard or the dashboard application modules using the [REST APIs](/embedded-bi/rest-api-reference/).
+To learn how to create a powerful dashboard, refer to ["Embedded BI—a Basic Walkthrough."](/embedded-bi/getting-started/quick-start/)
+
+You can also embed a dashboard or dashboard application modules using [REST APIs](/embedded-bi/rest-api-reference/).
+
