@@ -696,7 +696,16 @@ export default class LayoutTemplate extends React.Component {
     return (
       <Layout>
         <div>
-          <Helmet>
+            <Helmet>
+                    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-233131-36"></script>
+                    <script>
+                        {`
+                        window.dataLayer = window.dataLayer || [];
+                        function gtag(){dataLayer.push(arguments); }
+                        gtag('js', new Date());
+                        gtag('config', 'UA-233131-36');
+                       `}
+                    </script>
             <title>{postNode.frontmatter.title}</title>
 			 {postNode.frontmatter.canonical ?
              <link rel="canonical" key={canonicalUrl} href={canonicalUrl} data-react-helmet="true" />
@@ -763,7 +772,7 @@ export default class LayoutTemplate extends React.Component {
                     </NavButtons>
                     <div id="doc-footer">
                       <div id="footer-copyright">
-                        <a id="copyright" target="_blank" href="http://www.syncfusion.com/copyright">Copyright © 2001 - <span id="copyright-year"> 2021</span> Syncfusion Inc. All Rights Reserved</a>
+                        <a id="copyright" target="_blank" href="https://www.boldbi.com/copyright">Copyright © 2001 - <span id="copyright-year"> 2021</span> Syncfusion Inc. All Rights Reserved</a>
                       </div>
                       <div id="footer-powered_by"></div>
                     </div>
