@@ -315,6 +315,7 @@
       "Dashboard": "dashboard",
       "Settings": "settings"
     },
+	"White Labeling": "white-label-boldbi-mobile-app",
     "REST API Reference": {
       "Interact with REST API": "interact-with-rest-api",
       "v1.0": {
