@@ -33,10 +33,10 @@ Once you click the data source, the NEW DATA SOURCE configuration panel opens.
     Example: [https://api.pipelinedeals.com/api/v3/deals.json?api_key=&lt;:your_api_key&gt;](https://api.pipelinedeals.com/api/v3/deals.json?api_key=%3c:your_api_key%3e)    
 
 3. Select **GET** method for the REST API in **Method** combo box.
-4. Choose a time interval for **Refresh Settings** using the combo box, to trigger the Rest API request periodically to keep the data in sync with our dashboard.  
-5. Select **JSON** data type in **Data Format** combo box.
-6. Choose **None** under **Authentication Type**.
-
+4. In **Max Rows**, enter the maximum number of rows to be fetched from the data source. This value is used to fetch the data from the data source via pagination.
+5. Choose a time interval for **Refresh Settings** using the combo box, to trigger the Rest API request periodically to keep the data in sync with our dashboard.  
+6. Select **JSON** data type in **Data Format** combo box.
+7. Choose **None** under **Authentication Type**.
 You can also edit the connection information set here using the [Edit Connection](/cloud-bi/working-with-data-source/editing-a-data-connection/) option.
 
 #### How do I get Account Key for connecting PipelineDeals data source?

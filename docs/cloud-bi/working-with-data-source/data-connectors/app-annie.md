@@ -35,11 +35,10 @@ Once you click the App Annie data source, the NEW DATA SOURCE configuration pa
     Example: [https://api.appannie.com/v1.3/accounts](https://api.appannie.com/v1.3/accounts)
 
 3. Select **GET** method for the REST API in **Method** combo box.
-4. In **Max Rows**, enter the maximum number of rows to be fetched from the App Annie data source. This value is used to fetch the data from App Annie data source via pagination.
-5. Choose a time interval for **Refresh Settings** using the combo box, to trigger the Rest API request periodically to keep the data in sync with our dashboard.  
-6. Select **JSON** data type in **Data Format** combo box.
-7. Replace **&lt;:your_api_token&gt;** under **Headers** with a valid bearer token.
-8. Choose **None** under **Authentication Type** as authentication is done through header.
+4. Choose a time interval for **Refresh Settings** using the combo box, to trigger the Rest API request periodically to keep the data in sync with your dashboard.  
+5. Select **JSON** data type in **Data Format** combo box.
+6. Replace **&lt;:your_api_token&gt;** under **Headers** with a valid bearer token.
+7. Choose **None** under **Authentication Type** as authentication is done through header.
 
 You can also edit the connection information set here using the [Edit Connection](/cloud-bi/working-with-data-source/editing-a-data-connection/) option.
 

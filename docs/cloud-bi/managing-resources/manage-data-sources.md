@@ -73,10 +73,29 @@ This section explains on how to configure the data source refresh setting.
 2. Select the recurrence type, recurrence, start and end dates in the `Refresh Setting` dialog box.
 	* Data refresh can be scheduled hourly, daily, weekly and monthly.
 	* Application Time Zone is displayed below the date picker. Start time of the schedule is converted to client Time Zone and shown in the right side for the user’s convenience, after selecting click on the `Schedule` button.
+	* Data refresh failure notification can be sent to the owner of the data source with the error message and a link to the data source refresh history by enabling the send failure notification to owner option.
+	* Bold BI application deactivates the data refresh, after limited consecutive failures and send the disable notification to the owner by mail.
 
 	![Save Schedule](/static/assets/cloud/managing-resources/images/refresh-setting-schedule-datasource.png)
 
 > **NOTE:**  Only the data source created with extract mode will have this refresh setting option.
+
+## Refresh Data
+Data refresh can be made to run on demand by using the `Refresh Data` option in the data source grid context menu. 
+
+![Refresh data](/static/assets/cloud/managing-resources/images/refresh-data.png)
+
+## Refresh History
+You can see the data refresh history information of corresponding data source in the `Refresh History` option in the data source grid context menu.
+
+![Refresh History](/static/assets/cloud/managing-resources/images/refresh-history.png)
+![Refresh History Info](/static/assets/cloud/managing-resources/images/refresh-history-info.png)
+
+And, also you can see the failure information by clicking the failed link in run history dialog box.
+
+![Refresh Failure Info](/static/assets/cloud/managing-resources/images/refresh-failure-info.png)
+
+> **NOTE:**  Only the data source created with extract mode will have this refresh history option.
 
 ## Share Data sources
 

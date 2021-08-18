@@ -33,11 +33,10 @@ Once you click the data source, the NEW DATA SOURCE configuration panel opens.
     Example: [https://your_asknicely_domain.asknice.ly/datafeed/v1/line?apikey=your_api_key](https://your_asknicely_domain.asknice.ly/datafeed/v1/line?apikey=your_api_key)
 
 3. Select **GET** method for the REST API in **Method** combo box.
-4. In **Max Rows**, enter the maximum number of rows to be fetched from the Ask Nicely data source.
-5. Choose a time interval for **Refresh Settings** using the combo box, to trigger the Rest API request periodically to keep the data in sync with our dashboard.  
-6. Select **JSON** data type in **Data Format** combo box.
-7. Replace `<:your_api_key>` at the end of URL with a valid API Key.
-8. Choose *None* under **Authentication Type** as authentication is done through the URL with API key.
+4. Choose a time interval for **Refresh Settings** using the combo box, to trigger the Rest API request periodically to keep the data in sync with our dashboard.  
+5. Select **JSON** data type in **Data Format** combo box.
+6. Replace `<:your_api_key>` at the end of URL with a valid API Key.
+7. Choose *None* under **Authentication Type** as authentication is done through the URL with API key.
 
 You can also edit the connection information set here using the [Edit Connection](https://help.syncfusion.com/bold-bi/editing-a-data-connection) option.
 

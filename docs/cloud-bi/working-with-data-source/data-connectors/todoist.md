@@ -78,7 +78,7 @@ Period of time before next refresh call is triggered. This will automatically tr
 </table>
 
 ### Sample Queries
-All Sync API requests share the same endpoint URL: https://todoist.com/api/v7/sync. Make a Sync API request with the *resource_types* in **Request Body** to retrieve your user resources.
+All Sync API requests share the same endpoint URL: https://developer.todoist.com/sync/v8/ . Make a Sync API request with the *resource_types* in **Request Body** to retrieve your user resources.
 
 **Retrieve items of Sync API**
 

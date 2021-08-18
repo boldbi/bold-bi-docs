@@ -34,8 +34,12 @@ documentation: ug
   ![URL](/static/assets/embedded/working-with-datasource/data-connectors/images/help-scout/URL_helpscout.png)
 
   Choose an appropriate method for the REST API; it can be either `GET` or `POST` in the type combo box.
+  
+  ![Method Help scout](/static/assets/embedded/working-with-datasource/data-connectors/images/help-scout/help_method.png)
+  
+  In **Max Rows**, enter the maximum number of rows to be fetched. This value is used to fetch the data via pagination.
 
-  ![Method Help scout](/static/assets/embedded/working-with-datasource/data-connectors/images/help-scout/Method_helpscout.png)
+  ![Maxrow Help scout](/static/assets/embedded/working-with-datasource/data-connectors/images/help-scout/Method_helpscout.png)
 
   Add header information by clicking `ADD`, if required.
 

@@ -29,16 +29,14 @@ To configure the Zendesk Sell data source, follow the below steps:
 ## Create Zendesk Sell data source
 Once you click the data source, the NEW DATA SOURCE configuration panel opens. Follow the below steps to create Zendesk Sell data source.
 1. Enter a name and description (optional) for the data source.
-2. Enter a valid Zendesk Sell REST API endpoint in the URL textbox. Refer the [Zendesk Sell API documentation](https://developers.getbase.com/docs/rest/articles/introduction) for more details.
-
-    Example: [https://api.getbase.com/v2/contacts](https://api.getbase.com/v2/contacts)
-
-3. Select **GET** method for the REST API in **Method** combo box.
-4. In **Max Rows**, enter the maximum number of rows to be fetched from the Zendesk Sell data source. This value is used to fetch the data from Zendesk Sell data source via pagination.
-5. Replace your **App Token** in the headers (i.e Bearer <Your App token here>).
-6. Choose a time interval for **Refresh Settings** using the combo box, to trigger the Rest API request periodically to keep the data in sync with our dashboard.  
-7. Select **JSON** data type in **Data Format** combo box.
-8. Set **Authentication type** as *None*.
+2. Click the **API Endpoints** down drop box and choose the required endpoint.
+3. Click **Custom Url** to enter the URL manually. Refer the [Zendesk Sell API documentation](https://developers.getbase.com/docs/rest/articles/introduction) for more details.
+4. Select **GET** method for the REST API in **Method** combo box.
+5. In **Max Rows**, enter the maximum number of rows to be fetched from the Zendesk Sell data source. This value is used to fetch the data from Zendesk Sell data source via pagination.
+6. Replace your **App Token** in the headers (i.e Bearer <Your App token here>).
+7. Choose a time interval for **Refresh Settings** using the combo box, to trigger the Rest API request periodically to keep the data in sync with our dashboard.  
+8. Select **JSON** data type in **Data Format** combo box.
+9. Set **Authentication type** as *None*.
 
    ![Connection window](/static/assets/embedded/working-with-datasource/data-connectors/images/ZendeskSell/Connection_Window.png)
 

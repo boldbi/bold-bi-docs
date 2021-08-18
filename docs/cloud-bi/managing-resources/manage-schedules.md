@@ -8,7 +8,7 @@ documentation: ug
 
 # Manage Schedules in the Bold BI  	
 
-This section explains on how to add, edit, delete schedules and also on how to run the schedules on demand and enable or disable schedules in the Bold BI.
+This section explains how to add, edit, and delete the schedules and also to run the schedules on-demand, enable or disable schedules, and show schedule run history in the Bold BI.
 
 Schedules' page displays the schedules that are accessible by the user depending on the user’s permission.
 
@@ -49,7 +49,7 @@ Schedules can be created only if the user has `Create All Schedules` permission.
 
 * After adding schedule details, click on the `Next` button in schedule dialog. 
 
-* Select the recurrence type, recurrence, start and end dates, export formats and the users to which the exported dashboards have to be emailed in the `Add Schedule` dialog box.
+* Select the recurrence type, recurrence, start and end dates, export formats and the users to which the exported dashboards and failure notification have to be emailed in the `Add Schedule` dialog box.
 	* Dashboards can be scheduled hourly, daily, weekly, monthly and yearly
 	* Dashboards can be exported as image, PDF and Excel
 	* Application Time Zone is displayed below the date picker. Start time of the schedule is converted to client Time Zone and shown in the right side for the user’s convenience 
@@ -70,6 +70,23 @@ Yes, we do support sending schedule emails to distribution list. You can configu
 
 2. We can add the new user with the distribution list email and add the user as a recipient to send the emails to the users in the distribution list.
 
+## Sending Schedule failure notification to the owner and recipients
+Supports sending schedule failure notification to schedule owner and recipients. After schedule export failure, the notification can be sent to the owner and recipients with a failure error message by an email.
+
+![Schedule Failure Notification](/static/assets/cloud/managing-resources/images/failure-notification.png)
+
+And also, Bold BI application deactivates the export schedule after limited consecutive failures and send the disable notification to the owner and recipients.
+
+## Configure Schedule with Export Format
+You can configure the export formats in the schedule.
+
+![Schedule Image Export](/static/assets/cloud/managing-resources/images/export-image.png)
+
+## Configure Schedule with Location Export
+You can export the dashboards to the FTP location by configuring the FTP credentials while scheduling the dashboard export.
+
+![Schedule Location Export](/static/assets/cloud/managing-resources/images/ftp-location.png)
+
 ## Edit Schedules
 Category, dashboard, name, recurrence type, recurrence, start and end dates, export format and the recipients can be changed in the `Edit Schedule` dialog box.
 	
@@ -77,6 +94,16 @@ Category, dashboard, name, recurrence type, recurrence, start and end dates, exp
 Schedules can be made to run on demand by using `Run Now` option in the schedule grid context menu. Dashboard get exported in the format specified and sent to the recipients along with the link the dashboard in the Bold BI through emails.
 
 ![Run Now Schedule](/static/assets/cloud/managing-resources/images/run-now-schedule.png)
+
+## Run History
+You can see the schedule run history information of corresponding schedule in the `Run History` option in the schedule grid context menu.
+
+![Run History](/static/assets/cloud/managing-resources/images/run-history.png)
+![Run History Info](/static/assets/cloud/managing-resources/images/run-history-info.png)
+
+And, also you can see the failure information by clicking the failed link in run history dialog.
+
+![Schedule Failure Info](/static/assets/cloud/managing-resources/images/schedule-failure-info.png)
 
 ## Enable or Disable Schedule
 Schedules can be disabled at any time, which ignores any next occurrences. When enabled, it finds the next occurrence and run accordingly.

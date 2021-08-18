@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Managing Dashboard Settings – Cloud BI | Bold BI Documentation
-description: Learn how to manage dashboard settings such as, public dashboards, auto save filter, and default views in Bold BI Cloud.
+description: Learn how to manage dashboard settings such as, public dashboards, auto save filter, default views, and theming in Bold BI Cloud.
 platform: bold-bi
 documentation: ug
 ---
@@ -17,3 +17,5 @@ You can explore the dashboard settings in detail here,
 [Auto Save Filter](/cloud-bi/site-administration/dashboard-settings/auto-save-filter/)
 
 [Default Views](/cloud-bi/site-administration/dashboard-settings/default-views/)
+
+[Theming](/cloud-bi/site-administration/dashboard-settings/enable-or-disable-dashboard-theme/)

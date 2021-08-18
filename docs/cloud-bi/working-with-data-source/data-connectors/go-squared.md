@@ -33,6 +33,7 @@ Once you click the data source, the NEW DATA SOURCE configuration panel opens.
     Example: [https://api.gosquared.com/now/v3/overview?api_key=&lt;:your_api_key&gt;&site_token=&lt;:your_site_token&gt;](https://api.gosquared.com/now/v3/overview?api_key=%3c:your_api_key%3e&site_token=%3c:your_site_token%3e)    
 
 3. Select **GET** method for the REST API in **Method** combo box.
+4. In **Max Rows**, enter the maximum number of rows to be fetched. This value is used to fetch the data via pagination.
 5. Choose a time interval for **Refresh Settings** using the combo box, to trigger the Rest API request periodically to keep the data in sync with our dashboard.  
 6. Select **JSON** data type in **Data Format** combo box.
 7. Choose **None** under **Authentication Type**.

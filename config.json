@@ -26,7 +26,9 @@
     "freshsales",
     "infusionsoft",
     "gravity-forms",
+	"squareup",
     "insightly",
+	"fitbit",
     "kissmetrics",
     "microsoft",
     "dynamics",
@@ -39,6 +41,7 @@
     "chargebee",
     "zohocrm",
     "chargify",
+    "nutshell",
     "freshbooks",
     "fusebill",
     "quickbooks",
@@ -208,6 +211,8 @@
     "ums",
     "vuejs",
     "java",
-    "servlet"
+    "servlet",
+    "v3.3",
+	"boldbi"
   ]
 }

@@ -33,10 +33,11 @@ Once you click the data source, the NEW DATA SOURCE configuration panel opens.
     Example: [https://secure.fusebill.com/v1/customers/?pageNumber=0&pageSize=20&sortOrder=descending&sortExpression=createdTimestamp](https://secure.fusebill.com/v1/customers/?pageNumber=0&pageSize=20&sortOrder=descending&sortExpression=createdTimestamp)    
 
 3. Select **GET** method for the REST API in **Method** combo box.
-4. Replace **&lt;:your_api_key&gt;** under Headers with a valid **API key**.
-5. Choose a time interval for **Refresh Settings** using the combo box, to trigger the Rest API request periodically to keep the data in sync with our dashboard.  
-6. Select **JSON** data type in **Data Format** combo box.
-7. Choose **None** under **Authentication Type**.
+4. In **Max Rows**, enter the maximum number of rows to be fetched. This value is used to fetch the data via pagination.
+5. Replace **&lt;:your_api_key&gt;** under Headers with a valid **API key**.
+6. Choose a time interval for **Refresh Settings** using the combo box, to trigger the Rest API request periodically to keep the data in sync with our dashboard.  
+7. Select **JSON** data type in **Data Format** combo box.
+8. Choose **None** under **Authentication Type**.
 
 You can also edit the connection information set here using the [Edit Connection](/cloud-bi/working-with-data-source/editing-a-data-connection/) option.
 

@@ -17,7 +17,7 @@ You can explore the data source in detail here,
 
 [Data Connectors](/embedded-bi/working-with-data-source/data-connectors/)
 
-[Query Processing Modes](/embedded-bi/working-with-data-source/classification-of-data-sources-queried-directly-and-in-memory/)
+[Query Processing Modes](/embedded-bi/working-with-data-source/classification-of-data-sources-queried-directly-and-extracted/)
 
 [Transforming Data](/embedded-bi/working-with-data-source/transforming-data/)
 
@@ -46,3 +46,5 @@ You can explore the data source in detail here,
 [Configure Dashboard Parameter](/embedded-bi/working-with-data-source/configuring-dashboard-parameters/)
 
 [Configure Isolation code](/embedded-bi/working-with-data-source/configuring-isolation-code/)
+
+[Bold BI Intermediate Database](/embedded-bi/working-with-data-source/bold-bi-intermediate-database/)

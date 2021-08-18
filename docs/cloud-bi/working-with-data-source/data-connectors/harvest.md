@@ -33,6 +33,7 @@ Once you click the data source, the NEW DATA SOURCE configuration panel opens.
     Example: [https://&lt;:your_sub_domain&gt;.harvestapp.com/projects.json](https://%3c:your_sub_domain%3e.harvestapp.com/projects.json)    
 
 3. Select **GET** method for the REST API in **Method** combo box.
+4. In **Max Rows**, enter the maximum number of rows to be fetched from the harvest data source. This value is used to fetch the data from harvest data source via pagination.
 5. Choose a time interval for **Refresh Settings** using the combo box, to trigger the Rest API request periodically to keep the data in sync with our dashboard.  
 6. Select **JSON** data type in **Data Format** combo box.
 7. Choose one of the **Authentication Type** from the dropdown.

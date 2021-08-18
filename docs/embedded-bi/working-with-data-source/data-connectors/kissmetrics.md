@@ -32,12 +32,12 @@ Once you click the data source, the NEW DATA SOURCE configuration panel opens.
 2. Enter a valid Kissmetrics REST API endpoint in the URL textbox. Refer the [Kissmetrics API documentation](https://developers.kissmetrics.com/reference#overview) for more details.
 
     Example: [https://query.kissmetrics.com/v3/products/222483/reports](https://query.kissmetrics.com/v3/products/222483/reports)
+	
 3. Select **GET** method for the REST API in **Method** combo box.
-4. In **Max Rows**, enter the maximum number of rows to be fetched from the Kissmetrics data source. This value is used to fetch the data from Kissmetrics data source via pagination.
-5. Choose a time interval for **Refresh Settings** using the combo box, to trigger the Rest API request periodically to keep the data in sync with our dashboard.  
-6. Select **JSON** data type in **Data Format** combo box.
-7. Choose **Basic HTTP Authentication** in **Authentication Type** combo box.
-8. Enter the valid credentials associated with your account in **Username & Password** text boxes.
+4. Choose a time interval for **Refresh Settings** using the combo box, to trigger the Rest API request periodically to keep the data in sync with our dashboard.  
+5. Select **JSON** data type in **Data Format** combo box.
+6. Choose **Basic HTTP Authentication** in **Authentication Type** combo box.
+7. Enter the valid credentials associated with your account in **Username & Password** text boxes.
 
 You can also edit the connection information set here using the [Edit Connection](/embedded-bi/working-with-data-source/editing-a-data-connection/) option.
 

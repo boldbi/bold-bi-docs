@@ -16,7 +16,7 @@ You can explore the data source in detail here,
 
 [Data Connectors](/cloud-bi/working-with-data-source/data-connectors/)
 
-[Query Processing Modes](/cloud-bi/working-with-data-source/classification-of-data-sources-queried-directly-and-in-memory/)
+[Query Processing Modes](/cloud-bi/working-with-data-source/classification-of-data-sources-queried-directly-and-extracted/)
 
 [Transforming Data](/cloud-bi/working-with-data-source/transforming-data/)
 

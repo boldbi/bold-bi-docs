@@ -33,11 +33,10 @@ Once you click the data source, the NEW DATA SOURCE configuration panel opens.
     Example: [https://api.sparkpost.com/api/v1/metrics](https://api.sparkpost.com/api/v1/metrics)
 
 3. Select **GET** method for the REST API in **Method** combo box.
-4. In **Max Rows**, enter the maximum number of rows to be fetched from the SparkPost data source.
-5. Choose a time interval for **Refresh Settings** using the combo box, to trigger the Rest API request periodically to keep the data in sync with our dashboard.  
-6. Select **JSON** data type in **Data Format** combo box.
-7. Replace **&lt;your_api_token&gt;** under **Headers** with a valid API token.
-8. Choose *None* under **Authentication Type** as authentication is done through header.
+4. Choose a time interval for **Refresh Settings** using the combo box, to trigger the Rest API request periodically to keep the data in sync with our dashboard.  
+5. Select **JSON** data type in **Data Format** combo box.
+6. Replace **&lt;your_api_token&gt;** under **Headers** with a valid API token.
+7. Choose *None* under **Authentication Type** as authentication is done through header.
 
 You can also edit the connection information set here using the [Edit Connection](/embedded-bi/working-with-data-source/editing-a-data-connection/) option.
 
