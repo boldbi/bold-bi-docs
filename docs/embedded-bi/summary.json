@@ -87,6 +87,8 @@
     },
     "Working with Data Source": {
       "Creating a New Data Source": "creating-a-new-data-source.md",
+	  "Query Processing Modes": "classification-of-data-sources-queried-directly-and-extracted",
+	  "Bold BI Intermediate Database": "bold-bi-intermediate-database",
       "Data Connectors": {
         "42matters": "42matters",
         "ActiveCampaign": "activecampaign",
@@ -219,7 +221,6 @@
         "Zendesk Support": "zendesk-support",
         "Zoho Invoice": "zoho-invoice"
       },
-      "Query Processing Modes": "classification-of-data-sources-queried-directly-and-in-memory",
       "Transforming Data": {
         "Joining Tables": "joining-table",
         "Formatting Columns": "formatting-column",
@@ -270,6 +271,7 @@
         "Pyramid Chart": "pyramid-chart",
         "Funnel Chart": "funnel-chart",
         "Line Chart": "line-chart",
+		"Spline Area Chart": "spline-area-chart",
         "Spline Chart": "spline-chart",
         "Combination Chart": "combo-chart",
         "List Box": "list-box",

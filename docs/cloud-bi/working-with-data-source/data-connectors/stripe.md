@@ -28,15 +28,15 @@ To configure the Stripe data source, follow the below steps:
 ## Create Stripe data source
 Once you click the data source, the NEW DATA SOURCE configuration panel opens. Follow the below steps to create Stripe data source.
 1. Enter a name and description (optional) for the data source.
-2. Enter a valid Stripe REST API endpoint in the URL textbox. Refer the [Stripe API documentation](https://stripe.com/docs/api) for more details.
+2. Click the **API Endpoints** down drop box and choose the required endpoint.
+3. Click **Custom Url** to enter the URL manually. Refer the [Stripe API documentation](https://stripe.com/docs/api) for more details.
+4. Select **GET** method for the REST API in **Method** combo box.
+5. In **Max Rows**, enter the maximum number of rows to be fetched from the Stripe data source. This value is used to fetch the data from Stripe data source via pagination.
+6. Choose a time interval for **Refresh Settings** using the combo box, to trigger the Rest API request periodically to keep the data in sync with our dashboard.  
+7. Select **JSON** data type in **Data Format** combo box.
+8. Choose **Basic http Authentication** under **Authentication Type** and input a valid **Account Key**.
 
-    Example: [https://api.stripe.com/v1/charges](https://api.stripe.com/v1/charges)    
-
-3. Select **GET** method for the REST API in **Method** combo box.
-4. In **Max Rows**, enter the maximum number of rows to be fetched from the Stripe data source. This value is used to fetch the data from Stripe data source via pagination.
-5. Choose a time interval for **Refresh Settings** using the combo box, to trigger the Rest API request periodically to keep the data in sync with our dashboard.  
-6. Select **JSON** data type in **Data Format** combo box.
-7. Choose **Basic http Authentication** under **Authentication Type** and input a valid **Account Key**.
+  ![Data Source Preview](/static/assets/cloud/working-with-datasource/data-connectors/images/Stripe/DataSourceView.png)
 
 You can also edit the connection information set here using the [Edit Connection](/cloud-bi/working-with-data-source/editing-a-data-connection/) option.
 

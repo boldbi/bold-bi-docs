@@ -40,6 +40,8 @@ To enable this connection, follow the given steps:
 
 12. Click **Save** to save the data source.
 
+> **NOTE:** When the configured Google Sheets is deleted or renamed from your account, an extract mode data source refresh will get failed and the configured dashboard will still work with the old data.
+
 ## Related Links
 
 [Data Transformation](/embedded-bi/working-with-data-source/transforming-data/joining-table/)

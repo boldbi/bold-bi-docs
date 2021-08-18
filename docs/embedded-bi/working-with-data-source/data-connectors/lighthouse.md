@@ -34,11 +34,10 @@ Once you click the Lighthouse data source, the NEW DATA SOURCE configuration p
     Example: [https://&lt;:domain&gt;.lighthouseapp.com/projects](https://%3c;:domain%3e.lighthouseapp.com/projects)    
 
 3. Select **GET** method for the REST API in **Method** combo box.
-4. In **Max Rows**, enter the maximum number of rows to be fetched from the Lighthouse data source. This value is used to fetch the data from Lighthouse data source via pagination.
-5. Choose a time interval for **Refresh Settings** using the combo box, to trigger the Rest API request periodically to keep the data in sync with our dashboard.  
-6. Select **JSON** or **XML** data type in **Data Format** combo box.
-7. Replace `<:X-LighthouseToken>` under Headers with a valid **Access Token**.
-8. Choose **None** under **Authentication Type** as authentication is done through header.
+4. Choose a time interval for **Refresh Settings** using the combo box, to trigger the Rest API request periodically to keep the data in sync with our dashboard.  
+5. Select **JSON** or **XML** data type in **Data Format** combo box.
+6. Replace `<:X-LighthouseToken>` under Headers with a valid **Access Token**.
+7. Choose **None** under **Authentication Type** as authentication is done through header.
 
 You can also edit the connection information set here using the [Edit Connection](/embedded-bi/working-with-data-source/editing-a-data-connection/) option.
 

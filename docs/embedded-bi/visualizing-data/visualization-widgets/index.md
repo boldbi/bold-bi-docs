@@ -61,6 +61,8 @@ You can explore the available widgets in detail here,
 
 [Line Chart](/embedded-bi/visualizing-data/visualization-widgets/line-chart/)
 
+[Spline Area Chart](/embedded-bi/visualizing-data/visualization-widgets/spline-area-chart/)
+
 [Spline Chart](/embedded-bi/visualizing-data/visualization-widgets/spline-chart/)
 
 [Combination Chart](/embedded-bi/visualizing-data/visualization-widgets/combo-chart/)

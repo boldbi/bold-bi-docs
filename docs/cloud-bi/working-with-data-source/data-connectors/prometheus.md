@@ -32,11 +32,10 @@ Once you click the data source, the NEW DATA SOURCE configuration panel opens.
     Example: [http://<:your_domain>/api/v1/query?query=up](http://<:your_domain>/api/v1/query?query=up)
 
 3. Select **GET** method for the REST API in **Method** combo box.
-4. In **Max Rows**, enter the maximum number of rows to be fetched from the Prometheus data source. This value is used to fetch the data from the Prometheus data source using the pagination.
-5. Choose a time interval for **Refresh Settings** using the combo box, to trigger the Rest API request periodically to keep the data in sync with our dashboard.  
-6. Select **JSON** data type in **Data Format** combo box.
-7. Replace **&lt;:your_domain&gt;** at the URL with a valid API account domain.
-8. Choose **None** under **Authentication Type** as authentication is done using the header.
+4. Choose a time interval for **Refresh Settings** using the combo box, to trigger the Rest API request periodically to keep the data in sync with our dashboard.  
+5. Select **JSON** data type in **Data Format** combo box.
+6. Replace **&lt;:your_domain&gt;** at the URL with a valid API account domain.
+7. Choose **None** under **Authentication Type** as authentication is done using the header.
 
 ![Data source preview](/static/assets/cloud/working-with-datasource/data-connectors/images/prometheus/DataSourcesView.png)
 

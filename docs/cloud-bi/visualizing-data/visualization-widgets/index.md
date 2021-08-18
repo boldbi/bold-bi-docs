@@ -58,6 +58,8 @@ You can explore the available widgets in detail here,
 
 [Line Chart](/cloud-bi/visualizing-data/visualization-widgets/line-chart/)
 
+[Spline Area Chart](/cloud-bi/visualizing-data/visualization-widgets/spline-area-chart/)
+
 [Spline Chart](/cloud-bi/visualizing-data/visualization-widgets/spline-chart/)
 
 [Combination Chart](/cloud-bi/visualizing-data/visualization-widgets/combo-chart/)

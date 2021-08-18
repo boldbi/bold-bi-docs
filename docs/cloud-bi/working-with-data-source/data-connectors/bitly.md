@@ -43,14 +43,15 @@ Use the following steps to authenticate with Bitly web service:
 ### Create Bitly data source
 After successful authentication, the NEW DATA SOURCE configuration panel opens. Follow the below steps to create Bitly data source.
 1. Enter a name and description (optional) for the data source.
-2. Enter a valid Bitly REST API endpoint in the URL textbox. Refer the [Bitly API documentation](https://dev.bitly.com/v4_documentation.html) for more details.
+2. Click the **API Endpoints** down drop box and choose the required endpoint.
+3. Click the **Custom Url** if you want to enter the URL manually. Refer the [Bitly API documentation](https://dev.bitly.com/v4_documentation.html) for more details.  
+4. Select **GET** method for the REST API in **Method** combo box.
+5. In **Max Rows**, enter the maximum number of rows to be fetched from the Bitly data source. This value is used to fetch the data from Bitly data source via pagination.
+6. Choose a time interval for **Refresh Settings** using the combo box, to trigger the Rest API request periodically to keep the data in sync with our dashboard.  
+7. Select **JSON** data type in **Data Format** combo box.
+8. The authentication type will be set to **Bitly** automatically since OAuth is used for authenticating with Bitly account.
 
-    Example: [https://api-ssl.bitly.com/v4/groups/&lt;:group_guid&gt;/bitlinks](https://api-ssl.bitly.com/v4/groups/%3c:group_guid%3e/bitlinks)    
-3. Select **GET** method for the REST API in **Method** combo box.
-4. In **Max Rows**, enter the maximum number of rows to be fetched from the Bitly data source. This value is used to fetch the data from Bitly data source via pagination.
-5. Choose a time interval for **Refresh Settings** using the combo box, to trigger the Rest API request periodically to keep the data in sync with our dashboard.  
-6. Select **JSON** data type in **Data Format** combo box.
-7. The authentication type will be set to **Bitly** automatically since OAuth is used for authenticating with Bitly account.
+    ![Data source icon](/static/assets/cloud/working-with-datasource/data-connectors/images/bitly/DataSourcesView.png)
 
 You can also edit the connection information set here using the [Edit Connection](/cloud-bi/working-with-data-source/editing-a-data-connection/) option.
 

@@ -33,6 +33,8 @@ documentation: ug
   ![URL](/static/assets/cloud/working-with-datasource/data-connectors/images/live-agent/URL_liveagent.png)
 
   Choose an appropriate method for the REST API; it can be either `GET` or `POST` in the type combo box.
+  
+  In **Max Rows**, enter the maximum number of rows to be fetched. This value is used to fetch the data via pagination.
 
   ![Method Live Agent](/static/assets/cloud/working-with-datasource/data-connectors/images/live-agent/Method_liveagent.png)
 
