@@ -88,3 +88,5 @@ The following are the frequently asked questions in Bold BI Enterprise :
 [How to access nested key-values in Snowflake Data source?](/embedded-bi/faq/accessing-nested-key-values-in-snowflake-data-source/)
 
 [How to add a new data connector under Bold BI?](/embedded-bi/faq/how-to-add-a-new-data-connector-under-bold-bi/)
+
+[How to add threshold to a Chart widget](/embedded-bi/faq/how-to-add-threshold-to-a-chart-widget/)
