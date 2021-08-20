@@ -44,7 +44,7 @@ Use the following steps to authenticate with Todoist web service:
 ### Create Todoist data source
 After successful authentication, the NEW DATA SOURCE configuration panel opens. Follow the below steps to create Todoist data source.
 1. Enter a name and description (optional) for the data source.
-2. Enter a valid Todoist Sync API endpoint in the URL textbox. Refer the [Todoist API documentation](https://doist.github.io/todoist-api/sync/v7/) for more details.
+2. Enter a valid Todoist Sync API endpoint in the URL textbox. Refer the [Todoist API documentation](https://developer.todoist.com/sync/v8/#overview) for more details.
 
     Example: [https://developer.todoist.com/sync/v8/](https://developer.todoist.com/sync/v8/)  
 
@@ -116,8 +116,8 @@ You can edit, delete and re-authorize this account from the **Connected Accounts
 
 [Dashboard Designer Walkthrough](/embedded-bi/getting-started/quick-start/)
 
-[Limit on commands per request](https://doist.github.io/todoist-api/sync/v7/#limits)
+[Limit on commands per request](https://developer.todoist.com/sync/v8/#request-limits)
 
-[Batching Commands](https://doist.github.io/todoist-api/sync/v7/#batching-commands)
+[Batching Commands](https://developer.todoist.com/sync/v8/#batching-commands)
 
 [Todoist Integration](https://www.boldbi.com/integrations/todoist?utm_source=syncfusion&utm_medium=documentation&utm_campaign=boldbitodoistintegration)

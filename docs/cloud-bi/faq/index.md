@@ -31,3 +31,5 @@ The following are the frequently asked questions in Bold BI Cloud :
 [How to enable authorized access to dashboards for users?](/cloud-bi/faq/dashboard-authorized-access/)
 
 [How to add a new data connector under Bold BI?](/cloud-bi/faq/how-to-add-a-new-data-connector-under-bold-bi/)
+
+[How to add threshold to a Chart widget](/cloud-bi/faq/how-to-add-threshold-to-a-chart-widget/)

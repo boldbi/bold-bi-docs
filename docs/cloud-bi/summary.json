@@ -352,7 +352,8 @@
       "How web-based data source like Jira works with Bold BI?": "how-web-based-data-source-works-with-bold-bi",
 	  "How to speed up the data access in SQL Server?":"how-to-speed-up-the-data-access-in-sql-server",
 	  "How to enable authorized access to dashboards for users": "dashboard-authorized-access",
-	  "How to add a new data connector under Bold BI": "how-to-add-a-new-data-connector-under-bold-bi"
+	  "How to add a new data connector under Bold BI": "how-to-add-a-new-data-connector-under-bold-bi",
+	  "How to add threshold to a Chart widget":"how-to-add-threshold-to-a-chart-widget"
     }
   }
 }
