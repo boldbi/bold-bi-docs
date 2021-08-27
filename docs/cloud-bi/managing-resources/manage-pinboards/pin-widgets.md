@@ -33,3 +33,5 @@ This section explains how to pin widgets to Pinboard in the Bold BI solutions.
 * Click `Pin` and it will pin the specific widget to the Pinboard.
 
     ![Pin Widget Save](/static/assets/cloud/managing-resources/manage-pinboards/images/pin-widget-save.png)
+
+    > **NOTE:** Widgets in the Pinboards will have the context of the dashboard including the user filters and dashboard parameters.

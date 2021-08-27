@@ -122,6 +122,8 @@ You can drag the desired stored procedure into the canvas area. Enter the parame
 The Bold BI designer allows you to edit the supplied parameters by using the edit parameters button that is available in the created table.  
 ![Edit stored procedure parameters](/static/assets/embedded/working-with-datasource/data-connectors/images/SQLDataSource/Edit-stored-procedure.png)
 
+>**NOTE:** You can add only one stored procedure per model even if the database contains more than one stored procedure.
+
 ### Connecting to stored procedure in extract mode
 
 To connect the SQL server database in extract mode, refer [Create Microsoft SQL Server data source in extract mode](/embedded-bi/working-with-data-source/data-connectors/sql-data-source/#create-microsoft-sql-server-data-source-in-extract-mode).
