@@ -30,69 +30,67 @@ You can change map type as choropleth or bubble by `Map Type` property.
 
 To plot a map, a minimum requirement of 1 value and 1 shape are needed. Dropping a dimension will display each region split by each of its item.
 
-The following steps explains the data configuration of a map.
+The following steps explain the data configuration of a map:
 
-Click `Data Source` in configuration panel.
+1.  Click the `Data Source` in the configuration panel.
 
 ![Data button](/static/assets/cloud/visualizing-data/visualization-widgets/images/databutton.png)
 
-Click `CREATE NEW` to launch a new connection from the connection-type panel.
+2.  Click the `CREATE NEW` to launch a new connection from the connection-type panel.
 
 ![Data source button](/static/assets/cloud/visualizing-data/visualization-widgets/images/datasourcebutton.png)
 
-In the connection-type panel, click any one (Here `Microsoft SQL` Connection type is selected for demonstration) of the listed connection type buttons shown.
+3.  In the connection-type panel, click any one (Here, the `Microsoft Excel` Connection type is selected for demonstration) of the listed connection type buttons shown.
 
 ![Data source list](/static/assets/cloud/visualizing-data/visualization-widgets/images/datasourcelist.png)
 
-In the `NEW DATA SOURCE` configuration panel, fill the connection type and related details. Click `Connect`.
+4.  In the `NEW DATA SOURCE` configuration panel, fill the connection type and related details. Click the `Connect.`
 
-![Connect button](/static/assets/cloud/visualizing-data/visualization-widgets/images/Connectbutton.png)
+![Connect button](/static/assets/cloud/visualizing-data/visualization-widgets/images/connectbutton.png)
 
-Drag your preferred table or view from the left pane in the data design view and click `Save`.
+5.  Drag your preferred table or view from the left pane in the data design view and click `Save.`
 
 ![Virtual table](/static/assets/cloud/visualizing-data/visualization-widgets/images/virtualtable.png)
 
-Drag the `Map` control icon from the tool box into the design panel. You can find a control in the tool box by searching.
+6.  Drag the `Map` control icon from the toolbox into the design panel. You can find control by searching in the toolbox.
 
-![Adding Bubblemap](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/Adding-Bubblemap.png)
+![Adding Bubblemap](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/drag-drop.png)
 
-Click `Properties` in the configuration panel to open the property pane. Switch to `ASSIGN DATA` tab.
+7.  Click `Properties` in the configuration panel to open the property pane. Switch to the `ASSIGN DATA` tab.
 
-![Designer properties button](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/bubbleMapPropertiesbutton.png)
+![Designer properties button](/static/assets/cloud/visualizing-data/visualization-widgets/images/designerpropertiesbutton.png)
 
- property panel render as follows.
+The property panel renders as follows.
 
 ![Data tab](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/map-type.png)
 
-You can change map type as choropleth or bubble by `Map Type` property.
+click on the `Assign Data.`
 
- click on `Assign Data`.
+![Choropleth map data tab](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/bublemapdatatab.png)
 
-![Choropleth map data tab](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/buublemapdatatab.png)
-
-The data tab will be opened with available measures and dimensions from the connected data source
+The data tab will be opened with available measures and dimensions from the connected data source.
 
 ![Assign data](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/bubblemapassigndata.png)
 
-Bind columns by dragging the element from the `Measures` section to `Location Value`.
+Bind columns by dragging the element from the `Measures` section to `Location Value.`
 
-![Bind columns for Bubblemap](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/Bind-columns-for-Bubblemap.png)
+![Bind columns for Bubblemap](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/values-for-bubblemap.png)
 
-Drag the elements from the `Dimension` section to `Location Name`.
+Drag the elements from the `Dimension` section to the `Location Name.`
 
-![Add location name field](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/Add-location-name-field.png)
+![Add location name field](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/location-name-field.png)
 
 You can use the aggregation function to change the `Location Value` of the column.
 
-![Value](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/bubblemap_value.png)
+![Value](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/bubblemap-value.png)
 
 You can use the `Filter` to filter the data. For more details, refer to this [filter](/cloud-bi/visualizing-data/working-with-widgets/configuring-widget-filters/).
 
-![Filter for Bubblemap](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/Filter-for-Bubblemap.png)
+![Filter for Bubblemap](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/filter-data.png)
 
-You can format the values by selecting the `Format` option. For more details, refer to [measure format](/cloud-bi/visualizing-data/working-with-widgets/formatting-measure-type-column/)
+You can format the values by selecting the `Format` option. For more details, refer to the [measure format](/cloud-bi/visualizing-data/working-with-widgets/formatting-measure-type-column/).
 
-![Format for Bubblemap](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/Format-for-Bubblemap.png)
+![Format for Bubblemap](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/format-data.png)
 
 You can use the `Filter(s)` option to filter the data. For more details, refer to this [filter](/cloud-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column).
 
@@ -106,178 +104,197 @@ You can add more than one value to the `Location Name` field. The alert message 
 
 Here is an illustration,
 
-Choropleth map
+**Choropleth map**
 
 ![Choropleth map demo](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/choroplethmap.png)
 
-Bubble map
+**Bubble map**
 
 ![Bubble map](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/bubblemap.png)
 
-There is a section `Location Tooltip` used to show the values of bound columns while rendering tooltips in a map widget.
+There is a section `Location Tooltip,` which is used to show the values of bound columns while rendering tooltips in a map widget.
 
-![Bubble map Tooltip data](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/bubblemapTooltip.png)
+![Bubble map Tooltip data](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/bubblemap-tooltip.png)
 
 Here, this value comes with a tooltip.
 
-Choropleth map
+**Choropleth map**
 
-![Choropleth map Tooltip data](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/choroplethmapTooltipdata.png)
+![Choropleth map Tooltip data](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/choroplethmap-tooltipdata.png)
 
-Bubble map
+**Bubble map**
 
-![Bubble map Tooltip data](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/bubblemaptooltipdata.png)
+![Bubble map Tooltip data](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/bubble-tooltipdata.png)
 
 You can render markers with `Marker Latitude` and `Marker Longitude` data. 
 
-Bind columns by dragging element from the `Measures` or `Dimension` sections to `Marker Latitude` and `Marker Longitude`. This section allows both `Measures` and `Dimensions`. To render markers, both `Marker Latitude` and `Marker Longitude` sections should have data.
+Bind columns by dragging the element from the `Measures` or `Dimension` sections to `Marker Latitude` and `Marker Longitude.` This section allows both `Measures` and `Dimensions.` To render markers, both `Marker Latitude` and `Marker Longitude` sections should have data.
 
-![Bubble map Latitude data](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/bubblemapLat.png)
+![Bubble map Latitude data](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/bubblemap-lat.png)
 
-![Bubble map Longitude data](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/bubblemapLong.png)
+![Bubble map Longitude data](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/marker-longitude.png)
 
-the map renders as follows.
+The map renders as follows.
 
-Choropleth map
+**Choropleth map**
 
-![Choropleth map Marker data](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/choroplethmapMarker.png)
+![Choropleth map Marker data](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/choroplethmap-marker.png)
 
-Bubble map
+**Bubble map**
 
 ![Bubble map Marker data](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/bubblemapmarker.png)
 
-Marker have individual tooltip. Bind data to a `Marker Tooltip` from the `Measures` or `Dimensions` sections.
+Marker has an individual tooltip. Bind data to a `Marker Tooltip` from the `Measures` or `Dimensions` sections.
 
-![Bubble map Marker tooltip](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/bubblemapMarkerdata.png)
+![Bubble map Marker tooltip](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/bubblemap-markerdata.png)
 
-![Bubble map Marker tooltip](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/bubblemapMarkerdim.png)
+![Bubble map Marker tooltip](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/bubblemap-markerdim.png)
 
-You can use the aggregation function to change the `Marker Tooltip` Which column bounds from `Measures` section.
+You can use the aggregation function to change the `Marker Tooltip` Which column bounds from the `Measures` section.
 
-![Bubble map Marker tooltip Data](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/bubbleMarkertoltipAgg.png)
+![Bubble map Marker tooltip Data](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/bubblemarker-tooltipagg.png)
 
 You can filter the data using the `Filter` option for both `Measure` and `Dimensions` field data. For more details, refer to this [filter](/cloud-bi/visualizing-data/working-with-widgets/configuring-widget-filters/).
 
-![Bubble map Marker tooltip filter](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/bubblemapMarfil.png)
+![Bubble map Marker tooltip filter](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/bubblemap-marfil.png)
 
-![Bubble map Marker tooltip filter](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/bubblemapMarfilter.png)
+![Bubble map Marker tooltip filter](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/bubblemap-marfilter.png)
 
-You can format the values by selecting the `Format` option for `Measure` field data. For more details, refer to [measure format](/cloud-bi/visualizing-data/working-with-widgets/formatting-measure-type-column/)
+You can format the values by selecting the `Format` option for `Measure` field data. For more details, refer to the [measure format](/cloud-bi/visualizing-data/working-with-widgets/formatting-measure-type-column/).
 
-![Bubble map Marker tooltip format](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/bubblemapMarformat.png)
+![Bubble map Marker tooltip format](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/bubblemap-marformat.png)
 
 Here, the marker tooltip shows data while the cursor hovers over the marker.
 
-Choropleth map
+**Choropleth map**
 
-![Choropleth map Marker tooltip data](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/choroplethmapMardata.png)
+![Choropleth map Marker tooltip data](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/choroplethmap-mardata.png)
 
-Bubble map
+**Bubble map**
 
-![Bubble map Marker tooltip data](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/bubblemapMardata.png)
+![Bubble map Marker tooltip data](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/bubblemap-markerdata.png)
 
 ## How to format a map?
 
-You can format the map for better illustration of the view that you require using the settings available in the `Properties` tab.
+You can format the map for a better illustration of the view that you require using the settings available in the `Properties` tab.
 
-**General Settings**
+#### General Settings
 
 ![General settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/bubblemapname.png)
 
-**Name**
+#### Name
 
-This allows you to set a title for the map widget.
+This allows you to set a `title` for the map widget.
 
-**Subtitle**
+#### Subtitle
 
-This allow you to set a subtitle for the map widget.
+This allow you to set a `subtitle` for the map widget.
 
-**Description**
+#### Description
 
 This allows you to set a brief explanation about the map widget.
 
-**Basic settings**
+#### Basic settings
 
-![Basic Settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/Basic-Settings.png)
+![Basic Settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/basicsettings.png)
 
-**Map type**
+#### Map type
 
 You can choose the map type as choropleth or bubble map.
 
-![Map](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/choroplethMapType.png)
+![Map](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/choropleth-maptype.png)
 
-**Show Label**
+### Show legend
 
-This allows you to enable the visibility of `Data Labels`.
+A Legend is a text used to describe the plotted data. It allows you to toggle the visibility of legend in the map.
+
+![Map](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/show-legend.png)
+
+#### Show Label
+
+This allows you to enable the visibility of `Data Labels.`
 
 ![Show Labels](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/show-labels.png)
 
-**Label Color**
+#### Label Color
 
 This allows you to customize the data labels color.
 
+![Value Labels Color](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/value-label-color-option.png)
+
 ![Value Labels Color](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/value-label-color.png)
 
-**Shape kind**
+### Enable Multi Selection
+
+This option will be enabled only after you enable the `Act as Master Widget` option and this allows you to filter the multiple data by enabling the `Enable Multi Selection` option.
+
+#### Shape kind
 
 You can select any type of shape (country or continent or state) from the shape kind drop-down.
 
 ![Choropleth color](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/bubblemapshape.png)
 
-**Shape data**
+#### Shape data
 
-You can choose a map listed in the combo box for the map.
+You can choose a shape for the selected country or continent or state. The combo box data shows based on the selected values in the `shape Kind.`
 
-![Choropleth map field](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/bubblemap_field.png)
+![Choropleth map field](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/bubblemap-field.png)
 
-**Link**
+#### Link
 
-You can enable linking and configure to navigate to a general URL with or without parameters. For more details, refer to [Linking](/cloud-bi/visualizing-data/working-with-widgets/linking-urls-and-dashboards/).
+You can enable linking and configure to navigate to a general URL with or without parameters. For more details, refer to the [Linking](/cloud-bi/visualizing-data/working-with-widgets/linking-urls-and-dashboards/).
 
-![Link](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/bubblemap_link.png)
+![Link](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/bubblemap-link.png)
 
-**Color settings**
+#### Formatting
 
-This section shows up when `Location Value` and `Location Name` field have values.
+This section shows up when the `Location Value` and `Location Name` fields have values.
 
-![Default Color settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/bubblemapColorset.png)
+![Default Color settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/bubblemap-colorset.png)
 
-**Monochromatic**
+#### Monochromatic
 
 You can configure a single color palette whose saturation differs based on the value density.
 
-**Advanced**
+![Monochromatic](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/monochromatic-single-color.png)
 
-This allows you to customize map color with three different types:
+![Default Color settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/monochromatic-color-change.png)
+
+
+#### Advanced Settings
+
+This allows you to customize the map color with three different types:
 gradient, rule, or individual. By default, the window renders with gradient type.
 
-If you enable the option `Advanced`, the color customization window will render as follows.
+If you enable the option `Advanced,` the color customization window will render as follows.
 
-![Advance Color settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/map_advWindow.png)
+![Advance Color settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/map-advance-settings.png)
 
-***Gradient***
+![Advance Color Dialog](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/advance-settings-dialog.png)
 
-You can select based on which field to apply gradient color by `Based On` drop down. You can change the summary type. You can edit the `Low` and the `High` value and their colors. By default, the low value takes the minimum value of the map and the high value takes the maximum value of the map. `Mid` can be enable and can change its value and color can be changed. By default, mid-color is disabled.
+### Gradient
 
-If you click save, the map will renders as follows.
+You can select based on which field to apply gradient color by the `Based On` dropdown. You can change the summary type. You can edit the `Low` and the `High` value and their colors. By default, the low value takes the minimum value of the map and the high value takes the maximum value of the map. `Mid` can be enabled and can change its value and color can be changed. By default, mid-color is disabled.
 
-Choropleth map
+If you click save, the map will render as follows.
+
+**Choropleth map**
 
 ![Choropleth map Gradient Color settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/choroplethmap-gradient.png)
 
-Bubble map
+**Bubble map**
 
 ![Bubble map Gradient Color settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/map-gradient.png)
 
-***Default color***
+### Default color
 
 ![Default Color settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/map-defaultcolor.png)
 
-Default color will apply for conditions not satisfied by advance color customization.
+The default color will apply for the conditions that are not satisfied by the advance color customization.
 
-***Rule***
+### Rule
 
-You can select rule settings by clicking the `Rule` radio button. The color customization window renders as follows.
+You can select the rule settings by clicking the `Rule` radio button. The color customization window renders as follows.
 
 ![Rule Color settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/map-rulesettings.png)
 
@@ -287,55 +304,45 @@ You can choose a series of colors with the `Fill` color picker using multiple co
 
 ![Rule Color changes](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/map-rulechange.png)
 
-If you click save, the map widget renders like this.
+If you click save the map widget will render like this.
 
-Choropleth map
+**Choropleth map**
 
 ![Choropleth map Rule Color Setting changes](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/choroplethmap-rulesetchanges.png)
 
-Bubble map
+**Bubble map**
 
 ![Bubble map Rule Color Setting changes](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/map-rulesetchanges.png)
 
-***Individual***
+### Individual
 
-You can select the rule settings by clicking `Individual` radio button. The color customization window renders like this.
+You can select the rule settings by clicking the `Individual` radio button. The color customization window renders like this.
 
-![Individual settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/map-IndividualSettings.png)
+![Individual settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/map-individual-settings.png)
 
-This type renders with the individual default color for each value of the map. You can change its color with individual color pickers. If you want to reset your changes return to the default color with `Reset`.
+This type renders with the individual default color for each value of the map. You can change its color with individual color pickers. If you want to reset your changes return to the default color with `Reset.`
 
-You can save your changes by clicking `Save`. Now, the map renders with changes.
+You can save your changes by clicking `Save.` Now, the map renders with changes.
 
-Choropleth map
+**Choropleth map**
 
-![Choropleth map Individual settings changes](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/choropleth-mapIndividualsetting.png)
+![Choropleth map Individual settings changes](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/choropleth-map-individualsetting.png)
 
-Bubble map
+**Bubble map**
 
 ![Bubble map Individual settings changes](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/map-individualsetting.png)
 
-**Filter**     
+### Filter    
 
 ![Filter](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/filter.png)
 
-**Filter act as master widget**
+#### Act as Master Widget
 
 This allows you to define the map widget as a master widget such that its filter action can be made to listen by other widgets in the dashboard.
 
-**Ignore filter actions**
+Select a shape to filter interaction, the menu will be shown as follows.
 
-This allows you to set the map widget to ignore the filter actions applied on other widgets in the dashboard.
-
-**Filter Interaction**
-
-By enabling the `Act as Mater Widget` option, map will act as master.
-
-Select shape to filtering interaction, the menu will be shown like this.
-
-![Context Menu](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/filteringMenuMap.png)
-
-Click the `Filtering` option in the menu and interaction of filtering like this.
+![Context Menu](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/filtering-menumap.png)
 
 ![Filter interaction](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/map-filterinteraction.png)
 
@@ -349,48 +356,102 @@ Consider if you clicked one shape in the map widget already, then click another 
 
 ![Slave for Multi Selection](/static/assets/cloud/visualizing-data/visualization-widgets/images/map/map-multiselectfilter.png)
 
-**Container appearance**
+#### Ignore filter actions
 
-![Container appearance properties](/static/assets/cloud/visualizing-data/visualization-widgets/images/ContainerAppearance.png)
+It defines the map widget to ignore the filter actions applied to other widgets in the dashboard.
 
-**Title alignment**
+#### Enable Hierarchical Filter
 
-This allows you to set the alignment of a widget title to either the left, center or right.
+Through this option, you can enable or disable hierarchical the `Top N` filtering. While applying the `Top N` filter with multiple dimension columns, the data returned can be customized based on whether the filtering needs to be done as flat or based on the hierarchy of added dimension columns.
 
-**Title color**
+When the Hierarchical Filter option is enabled, the `Top N` will be applied for each individual column separately based on the number set for each column.
 
-This allows you to apply text color to the widget title.
+### Container Appearance
 
-**Show border**
+![Container Appearance](/static/assets/cloud/visualizing-data/visualization-widgets/images/container-appearance.png)
 
-This allows you to apply a specified radius to the widget corners, if the **Show Border** property is enabled, then the value can be between 0 and 10.
+### Title Alignment
 
-**Corner radius**
+This allows you to handle the alignment of widget title to either **left, center,** or **right**.
 
-This allows you to apply a specified radius to the widget corners. The value can be between 0 and 10.
+### Title Color
 
-**Show maximize**
+This allows you to apply the text `color` to the widget title.
 
-This allows you to enable or disable the maximized mode of the map widget. The visibility of the maximize icon in the widget header will be defined based on this setting. Clicking this icon in viewer will show the maximized view of the map widget.
+### Title Auto Font Size
 
-**CSV export**
+On enabling Auto Font Size, the font size of the title will be adjusted automatically if the resolution of the screen varies.
 
-This allows you to enable or disable the CSV export option for the map widget. Enabling this allows you to export the summarized data of the widget view to CSV format.
+**Font Size**
 
-**Excel export**
+This allows you to apply the specified size of the font to the widget title if the **Title Auto Font Size** is disabled. Value can be between 10 and 44.
 
-This allows you to enable or disable the Excel export option for the map widget. Enabling this allows you to export the summarized data of the widget view to (.xlsx or .xls) format.
+### Subtitle Auto Font Size
 
-**Image export**
+On enabling Auto Font Size, the font size of the subtitle will be adjusted automatically if the resolution of the screen varies.
 
-This allows you to enable or disable the image export option for the map widget. Enabling this allows you to export the view of the widget to image format (.jpg), (.png), or (.bmp) in viewer.
+**Font Size**
 
-**Enable comments**
+This allows you to apply the specified size of the font to the widget title if the **Subtitle Auto Font Size** is disabled. Value can be between 10 and 32.
 
-This allows you to enable or disable comment for the dashboard widget. For more details, refer [here](/cloud-bi/visualizing-data/working-with-widgets/commenting-widget/)
+### Show Border
 
+This allows you to toggle the visibility of `border` surrounding the widget.
 
+### Corner Radius
 
+This allows you to apply the specified `radius` to the widget corners if the **Show Border** is enabled. Value can be between 0 and 10.
 
+### Show Background Image
 
+This allow you to set the **background image** for the map widget.
 
+### Background Color
+
+This allows you to set the **background color** to the map widget.
+
+### Transparency
+
+This property allows you to change the transparency from 0.0 to 1.0.
+
+### Container actions
+
+![Container Actions](/static/assets/cloud/visualizing-data/visualization-widgets/images/container-actions.png)
+
+#### Show Header
+
+This allows you to enable or disable the `widget title` of the map. 
+
+#### Allow Maximize View
+
+This allows you to enable or disable the `maximized mode` of the map widget. The visibility of the maximize icon in the widget header will be defined based on the setting in the viewer.
+
+#### Allow CSV Export
+
+This allows you to enable or disable the `CSV export` option for the map widget. Enabling this allows you to export the summarized data of the widget view to CSV format in the viewer.
+
+#### Allow Excel Export
+
+This allows you to enable or disable the `Excel export` option for the map widget. Enabling this allows you to export the summarized data of the widget view to `(.xlsx or .xls)` format in the viewer.
+
+#### Allow Image Export
+
+This allows you to enable or disable the `Image export` option for the map widget. Enabling this allows you to export the view of the widget to image format `(.jpg), (.png), or (.bmp)` in the viewer.
+
+#### Allow PDF Export
+
+This allows you to enable or disable the `PDF export` option for the map widget. Enabling this allows you to export the view of the widget to pdf format in the viewer.
+
+#### Enable Comments
+
+This allows you to enable or disable `comment` for the dashboard widget. For more details, refer to this [link](/cloud-bi/visualizing-data/working-with-widgets/commenting-widget/).
+
+#### Allow View Underlying Data
+
+This allows you to visualize the raw data associated with a widget at runtime. 
+
+To learn more about viewing the underlying widget data, refer to the [view data documentation](/cloud-bi/visualizing-data/working-with-widgets/view-data/).
+
+#### Pin Widget
+
+This allows you to pin the widget.
