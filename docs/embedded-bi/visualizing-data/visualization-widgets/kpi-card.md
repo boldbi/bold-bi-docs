@@ -19,10 +19,8 @@ The visualization of the KPI card widget is customizable, and you can format the
 ![KPI Card Series view](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/series-view.png)
 
 *KPI card single view:*
-![Single KPI Card](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/single-card.png)
 
-*KPI card single view without actual and target values:*
-![Customized Single KPI Card](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/customized-widget.png)
+![Single KPI Card](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/single-card.png)
 
 ## How to configure data into KPI card 
 
@@ -33,23 +31,29 @@ The visualization of the KPI card widget is customizable, and you can format the
 After creating a data source, follow the given steps to configure the data into the card widget:
 
 1. Drag the `KPI Card` control icon from the tool box into the design panel. You can find the control in the tool box by search.
+
 ![Drag and drop](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/drop-widget.png)
 
 2.	Resize the widget as required. 
+
 ![Resize card](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/resizing-widget.png)
 
 3.	Click the `properties` button as shown in the following image. 
-![Properties click](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/properties-click.png)
+
+![ASSIGN DATA](/static/assets/embedded/visualizing-data/visualization-widgets/images/designerpropertiesbutton.png)
 
 4.	Now, the `properties pane` opens. 
+
 ![Properties pane](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/properties-pane.png)
 
 5.	Click `ASSIGN DATA`. The data pane will be opened with the  list of available `measures` and `dimensions` from the added data sources. 
+
 ![Assign data click](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/assign-data-tab.png)
 
 ### Actual value
 
 Drag the required field into the `Actual Values` section. 
+
 ![Configure actual value](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/configure-actual-value.png)
 
 You can change the `aggregation type`, `filter`, and `format` the data using the options provided in the settings menu. To open the `settings` menu, click the `settings` icon. 
@@ -57,23 +61,29 @@ You can change the `aggregation type`, `filter`, and `format` the data using the
 ![Settings menu](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/settings-menu.png)
 
 Now, the menu will be shown.
+
 ![Settings menu items](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/menu-lists.png)
 
 **Changing the aggregation type**: 
+
 You can change the summary type of the dropped measure field by clicking the summary types listed in the menu. Refer [here](/embedded-bi/visualizing-data/working-with-widgets/aggregating-value-columns-based-on-type/) for more details on aggregation types. 
 
 **Measure filtering**: 
-You can use “Filter” option to filter the data by specifying the filter condition. Refer the detailed steps on applying measure filter from this [page](/embedded-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-measure-column). 
+
+You can use `Filter` option to filter the data by specifying the filter condition. Refer to this [page](/embedded-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-measure-column), for detailed instruction on how to apply the measure filter.
 
 **Measure formatting**
-Select “Format” option to define the display format to the values in the column through Measure Formatting window. To learn about measure formatting refer [here](/embedded-bi/visualizing-data/working-with-widgets/formatting-measure-type-column/). 
+
+Select `Format` option to define the display format for the values in the column using the Measure Formatting window. To learn more about measure formatting, refer to [here](/embedded-bi/visualizing-data/working-with-widgets/formatting-measure-type-column/). 
 
 ### Target value
 
 Drag the required field into the `target value` section.
+
 ![Configure Target](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/configure-target-value.png)
 
 Now the KPI card widget will be rendered. 
+
 ![Card view](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/configured-widget.png)
 
 > **NOTE:**  The measure formatting option is not provided in the Target Value’s settings menu and the measure formatting applied for the actual value will also be applied to the target value. 
@@ -92,17 +102,17 @@ You can filter and sort the records using the settings menu items.
 
 ![Settings options](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/settings-option.png)
 
-**Sorting**: You can customize the sorting behavior of dimension fields in the KPI Card widget. You can order them based on alphabet or value, data source (default), or field. Refer to [here](/embedded-bi/visualizing-data/working-with-widgets/advanced-sorting/) for the detailed steps. 
+**Sorting**: You can customize the `sorting` behavior of dimension fields in the KPI Card widget. You can also order them based on **alphabet** or **value**, **data source (default)**, or **field**. Refer to [here](/embedded-bi/visualizing-data/working-with-widgets/advanced-sorting/), for the detailed steps.
 
  Refer to this page to learn how to apply measure filter. 
 
-**Filtering**: You can use the “Filter” option to filter the data by specifying the filter condition.
+**Filtering**: You can use the `Filter` option to `filter` the data by specifying the filter condition.
 
 Refer to this [page](/embedded-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column) to learn how to apply measure filter. 
 
 ### Sparkline
 
-You can use the Sparkline section to showcase the variation of measurement in the KPI Card widget.
+You can use the `Sparkline` section to showcase the variation of measurement in the KPI Card widget.
 
 ![Configure Sparkline](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/configure-sparkline.png)
 
@@ -110,29 +120,36 @@ You can use the Sparkline section to showcase the variation of measurement in th
 
 ### Image
 
-The `image` section allows you to configure the image data for each KPI card/records. The image data may be the direct URL for the records or contains a part of the URL. 
+The `image` section allows you to configure the image data for each KPI card or records. The image data may be the direct URL for the records or contains a part of the URL. 
 
 #### Direct URL
+
 In the following example, each country flag is displayed in the KPI card by configuring the **Country Image** field. The Country Image column from the data source contains the full URL of the country flag. 
 
 Data screenshot 
+
 ![Example data](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/sample-widget.png)
 
 Follow the given steps to show the country image in the KPI card series:
 
 1. Configure the `Country Image` field into the `Image` section.
+
 ![Configure Image](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/configure-image.png)
 
 2.	Make sure whether the `pattern` text is properly updated in the `Properties` pane image section.
+
 ![Pattern](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/image-pattern.png)
 
 3.	Now, the widget will be rendered with image data.
+
 ![Widget with Image](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/widget-with-image.png)
 
 #### Partial image data 
+
 If your data source contains the partial data of the URL means you need to enter the URL text with the proper patterns. 
 
 For an example, consider the following data source. 
+
 ![Example data](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/sample-for-partial-image.png)
 
 It contains the Players name and part of their image URL in the above columns. 
@@ -144,12 +161,15 @@ The full image URL for `Cristiano Ronaldo` is `https://upload.wikimedia.org/wiki
 For example, if you try to show the goals of each team and configure the player image in the image section, it will show top scorer image off each team as shown in the following screenshot. 
 
 *Configure Image section:*
+
 ![Configure Image](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/configure-image-field.png)
 
 *Ensure pattern*
+
 ![Ensure pattern](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/ensure-pattern.png)
 
 *Series view*
+
 ![Series view](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/image-in-series.png)
 
 > **NOTE:** The image will be hidden automatically if the width of the KPI card is low. An information icon will display the image as highlighted in the following image.
@@ -163,110 +183,230 @@ Like the image option, you can configure the background image of the KPI Card.
 ![Card with background](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/card-with-background.png)
 
 ## How to format KPI card 
+
 You can format the KPI Card for better illustration of the view through the settings available in the Properties tab.
 
 To format the KPI card, follow the given steps:
 
 1.	Drag the KPI card into the canvas and resize it to your required size.
+
 2.	Configure data into the KPI card.
+
 3.	Focus the KPI card and click the settings icon.
+
 ![Settings icon click](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/settings-icon-click.png)
+
 4.	Now, the Properties pane opens. 
+
 ![Opening properties pane](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/open-properties-pane.png)
 
 ### General properties
 
 #### Name 
-This option allows you change the title for the KPI card.
+
+This option allows you to change the `title` for the KPI card.
 
 #### Subtitle
-Allows you provide subtitle for the KPI card.
+
+This option allows you to provide the `subtitle` for the KPI card.
 
 > **NOTE:** Subtitle will be shown only when the series section is configured. 
 
 ##### Description
-Allows you provide description about the KPI Card.
 
-*KPI card with the title.* 
+This option allows you to provide the `description` about the KPI Card.
+
+**Header properties**
+
 ![KPI card title](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/title.png)
 
-*KPI card with the customized subtitle and description*
+**KPI card with the customized title, subtitle and description**
+
 ![KPI card subtitle](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/subtitle.png)
 
-### Appearance Settings
+### Color properties
+
+![Direction](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/color-properties.png)
 
 #### Direction
 
-You can set the value label status to High is Good or Low is Good. The default setting is High is Good. This option is enabled only when you configured the actual value and target value.
+You can set the value label status to `High is Good` or `Low is Good`. The default setting is `High is Good`. This option is enabled only when you configured the actual value and target value.
+
 ![Direction](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/direction.png)
 
 #### Direction colors
-From the provided color pickers, you can customize the color values for the high, medium and low colors. 
+
+You can customize the color values for the `high, medium,` and `low` colors using the provided color pickers.
 
 #### Separator color
-Allows you to change the separator color. 
 
-### Auto Font Size
+Allows you to change the `separator` color. 
 
-The objective of this option is to make the font size readable in higher resolution. By enabling `Auto Font Size`, the font size will vary based on resultant font size, view port width, and `Scaling Factor` calculation.
+## How to apply conditional formatting in KPI card
 
-![Auto Font Size](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/auto-font-size.png)
+By enabling the `advanced settings` in formatting, you can customize the color, styles, and highlighting the data based on the conditional range values
 
-The following image depicts the behavior of `Auto Font Size` across different resolution.
+### How to enable advanced formatting
 
-![Font size for Page Size 3840 x 2160](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/Auto-font-size-3840x2160.png)
+In the properties pane, check the `Advanced Setting` check box, which is located under the `formatting` section.
 
-![Font size for Page Size 1366 x 768](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/Auto-font-size-1366x768.png)
+![Enable advance settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/enable-advance-settings.png)
+
+This will open the `Conditional Formatting` dialog box. 
+
+![Conditional formatting](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/conditional-formatting.png)
+
+#### Properties
+
+You can customize more than one property using the rule based conditional formatting. 
+
+- Title 
+- Background 
+- Sparkline (Applicable only when sparkline is configured)
+- Icon 
+- Icon color
+- KPI Value
+- Image
+- Background image
+
+#### Based on field 
+
+You can choose the field from the Based On section to apply the conditions from the highlighted drop-down. 
+
+![Based on field](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/based-on-field.png)
+
+#### Summary type 
+
+You can select the summary type for the selected measure field. 
+
+![Summary type](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/summary-type.png)
+
+#### Value type
+
+The value type drop-down allows you to choose whether you are going to apply the direct value (specific number like 3 goals, order ID 10248 ) or percentage (values above 30% or 50 %). 
+
+![Value type](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/value-type.png)
+
+#### Condition name
+
+You can give a meaningful name to the applied conditions using the highlighted text box. 
+
+![Condition name](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/condition-name.png)
+
+#### Condition type
+
+Choose the condition for measure field from the highlighted conditions. 
+
+![Condition type](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/condition-type.png)
+
+If you have selected the dimension as a based on field and want to use text condition, the following text-based conditions are available.
+
+![Dimension condition](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/dimension-condition.png)
+
+> **NOTE:** The text-based condition type will be enabled only when the dimension configured in the series field is used as the based on field. 
+
+#### Value
+
+Enter the condition value. 
+
+#### Font style
+
+Allows you to choose the title font style. (Bold, Italic, Underline, and Superscript).
+
+#### Case-sensitivity
+
+For the dimensions, `case-sensitive` option is provided to choose whether the entered value is case-sensitive or not. 
+
+Select the checkbox provided near by the options to customize the properties, and similarly click Font Style icons for applying them, as shown in the following screenshot.
+
+![Select properties](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/customize-properties.png)
+
+Figure: *The KPI card series view with the applied conditional formatting*.
+
+![KPI card after conditional formatting](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/formatted-result.png)
 
 ### Title properties
 
 ![Title properties](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/title-properties.png)
 
 #### Show title
+
 Allows you to choose whether the title needs to be shown or not in the KPI Card. 
 
-The following screenshot shows the KPI card after hiding the title. 
-![Hide title](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/hide-title.png)
+### Show title for series card
 
-#### Title
+The following screenshot shows the `title` for single card. 
+
+![Series Card Customization](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/title-series.png)
+
+### Hide title
+
+It allows you to `hide the title` by unchecking the show title property.
+
+![Hide Title](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/hide-title.png)
+
+#### Show title for single card
+
 You can enter the value for the KPI card title. 
 
 #### Color
+
 Allow you to choose the KPI Card title value color. 
 
 #### Font size
 
 You can customize the font size of the KPI card title. 
 
-Figure: *KPI card with customized title color and font size.*
-![Font size](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/font-size.png)
+![Single Card Title](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/title-single-card-properties.png)
 
-### Series Settings
+Figure: **KPI card with customized title color and font size.**
 
-This section will be enabled only if we configure the KPI card with [series section](/embedded-bi/visualizing-data/visualization-widgets/kpi-card/#Series-value).
+![Single Card Customization](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/title-single-card.png)
 
-By default, the card layout is adjusted implicitly, based on the size of the container and the number of cards.
+### Series settings
 
-In the following image, `Fixed Rows and Columns` is in disabled state. So, the card is arranged in 7 x 3 to fit the 21 cards without any gaps in the container.
+The `Series settings` option enabled only when you configure the **series** in `Assigned Data` tab.
 
-![Default view](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/series-default-layout.png)
+![Series Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/series-settings.png)
 
-By enabling the `Fixed Rows and Columns`, you can define the number of rows and columns and it will be maintained even, if you resize the container.
+### Fixed rows and columns 
 
-The following image shows the customized layout of KPI card series.
+If you enable the Fixed rows and columns, you can customize the rows and columns. The rows and columns are fixed based on the container size and the card size of the KPI card.
 
-![Fixed Rows and Columns](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/series-fixed-layout.png)
+### Row count 
 
-> **Note** If the resultant value of rows x columns exceeds the total number of cards, the layout will reset to default and the content of card will hide, if you try to fit the more number of cards in a smaller container. You can rectify this either by adjusting the font size of the elements or by increasing the number of rows and columns. 
+By enabling `Row Count`, you can set the count of the rows.
+
+### Column count 
+
+By enabling the `Column Count,` you can set the column count.
+
+> **Note**: If the invalid columns and rows are given , the rows and columns reset to its default value. For example : If you given the number of rows as 6 and number of columns as 5 but your data count is only 20 . In this case the rows and columns will reset to its default value.
+
+### Animation settings
+
+![Animation Property](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/animation-property.png)
+
+#### Enable animation
+
+It animates the measure values when you enable the `Enable Animation`.
+
+### Animation duration
+
+Animation duration property specifies how long the animation cycle should last. The time is specified in seconds or milliseconds.
 
 ### KPI value properties
 
+![KPI Values](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/kpi-value-properties.png)
+
 #### Show value
-Allows you to turn on or off the visibility of the KPI value in the KPI card. 
+
+Allows you to turn on or off the visibility of the `KPI value` in the KPI card. 
 
 #### Type
 
 The type drop-down allows you to choose the value which needs to be shown as the KPI value. The available options are: 
+
 1.	Absolute difference. 
 2.	Percent of difference. 
 3.	Percent of target. 
@@ -275,42 +415,57 @@ The type drop-down allows you to choose the value which needs to be shown as the
 6.	Percent of change. 
 
 Figure: *KPI card with different KPI types.*
+
 ![KPI types](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/kpi-value-types.png)
 
 #### Color option
+
 Allows you to customize the KPI value color. 
 
 #### Font Size
+
 Provides the option to change the KPI value font size.
 
 ### Indicator properties
 
+![Indicator Properties](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/indicator-properties.png)
+
 #### Show icon
-Allows you to toggle the visibility of icons for the KPI values. 
+
+Allows you to toggle the visibility of `icons` for the KPI values. 
 
 #### Color option
+
 Provides the option to customize the icon colors. 
 
 **Direction color**: The colors from the direction settings will be applied. 
 
-**Custom color**: From the provided color pickers, you can customize the color values for the High, Medium and low colors. 
+**Custom color**: You can customize the color values for the `High, Medium`, and `low` colors using the provided color pickers.
 
 #### Indicators
+
 You can customize the indicator for the `high, low and neutral` values from the set of different indicators. 
 
 Figure: *Selecting the shape for the indicators.* 
+
 ![Choose indicator](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/choose-indicator.png)
 
-Figure: *After customizing the indicator*
+Figure: **After customizing the indicator**
+
 ![Custom indicator](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/custom-indicator.png)
 
 #### Font size
+
 Provides the option to change the font size of the indicators. 
 
 ### Left value properties
 
+![Left Value Properties](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/left-value-properties.png)
+
 #### Type
-The type drop-down allows you to choose the value which needs to be shown as the left side value. The available options are. 
+
+The type drop-down allows you to choose the value, which needs to be shown as the left side value. The available options are:
+
 1.	Absolute difference. 
 2.	Percent of difference. 
 3.	Percent of target. 
@@ -319,38 +474,57 @@ The type drop-down allows you to choose the value which needs to be shown as the
 6.	Percent of change. 
 
 #### Show value
+
 Allows the options to toggle the visibility of the left value. 
 
 #### Value color option
+
 Provides the option to customize the left value colors. 
 
-**Direction color**: The colors from the direction settings will be applied. 
+####  Direction color 
 
-**Custom color**: From the provided color pickers, you can customize the left value color. 
+The colors from the direction settings will be applied. 
+
+#### Custom color
+
+You can customize the left value color using the provided color pickers.
 
 #### Font size
+
 The option to change the left value font size. 
 
 #### Show caption
+
 Allows you to choose whether to show the caption for the left value or not. 
 
 #### Value
+
 Provides the option to modify the caption for the left value.
 
 #### Caption color option
+
 Provides the option to customize the left value caption colors. 
 
-**Direction color**: The colors from the direction settings will be applied. 
+#### Caption color
 
-**Custom color**: From the provided color pickers, you can customize the left value caption color. 
+From the provided color pickers, you can customize the right value caption color.
 
 #### Caption font size
+
 The option to change the left value caption font size. 
+
+*After customizing the Left Value in KPI card*
+
+![Left Value](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/left-value.png)
 
 ### Right value properties
 
+![Right Value Properties](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/right-value-properties.png)
+
 #### Type
-The type drop-down allows you to choose the value which needs to be shown as the right-side value. The available options are. 
+
+The type drop-down allows you to choose the value which needs to be shown as the `right-side` value. The available options are. 
+
 1.	Absolute difference. 
 2.	Percent of difference. 
 3.	Percent of target. 
@@ -359,40 +533,59 @@ The type drop-down allows you to choose the value which needs to be shown as the
 6.	Percent of change. 
 
 #### Show Value
+
 Allows the options to toggle the visibility of the right value. 
 
 #### Value color option
+
 Provides the option to customize the right value colors. 
 
-**Direction color**: The colors from the direction settings will be applied. 
+#### Direction color
 
-**Custom color**: From the provided color pickers, you can customize the right value color. 
+The colors from the direction settings will be applied. 
+
+#### Custom color
+
+You can customize the right value caption color using the provided color pickers.
 
 #### Font size
+
 The option to change the right value font size. 
 
 #### Show caption
+
 Allows you to choose whether to show the caption for the right value or not. 
 
 #### Value
+
 Provides the option to modify the caption for the right value. 
 
 #### Caption color option
+
 Provides the option to customize the right value caption colors. 
 
-**Direction color**: The colors from the direction settings will be applied. 
+#### Caption color
 
-**Custom color**: From the provided color pickers, you can customize the right value caption color. 
+From the provided color pickers, you can customize the right value caption color.
 
 #### Caption font size
+
 The option to change the right value caption font size. 
+
+*After customizing the Right Value in KPI card*
+
+![Right Value](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/right-value.png)
 
 ### Image properties
 
+![Image Properties](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/image-properties.png)
+
 #### Show image
+
 Provides the option to change the visibility of the image within the KPI Card widget. 
 
 #### Image mode
+
 Allows you to choose the image mode. 
 
 **Default** - Displays the image in its original size.
@@ -406,166 +599,176 @@ Allows you to choose the image mode.
 #### Image
 
 Provides three different options to select the image source: 
-1.	Browse Image: Selects the image from the local disk. 
-2.	Direct URL: Enter the URL of the image source. 
-3.	Pattern: Enter the URL consists of pattern text {0} denoting the fields configured in the image data section. 
+
+1.	Browse Image: Selects the image from the `local` disk. 
+
+2.	Direct URL: Enter the `URL` of the image source. 
+
+3.	Pattern: Enter the URL consists of `pattern text {0}` denoting the fields configured in the image data section. 
+
+**After customizing the Image in KPI card**
+
+![Image Customization](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/image-customization.png)
+
 
 ### Background properties
 
+![Background Properties](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/background-properties.png)
+
 #### Show image
+
 Provides the option to change the visibility of the background image within the KPI Card widget. 
 
-#### Plot area
-Allows you to choose whether the background needs to apply for the whole KPI Card or except the image data. 
-
-You can find the difference from the following images. 
-
-*KPI background* 
-![KPI background](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/kpi-background.png)
-
-*Complete*
-![Complete background](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/complete-background.png)
-
 #### Image mode
-Allows you to choose the image mode from the options Default, Fill, Uniform to fill, and Uniform.
+
+Allows you to choose the image mode from the options `Default, Fill, Uniform to fill, and Uniform`.
 
 #### Image
+
 Provides the following three different options to select the image source. 
-1.	Browse Image: Selects the image from the local disk. 
-2.	Direct URL: Enter the URL of the image source. 
-3.	Pattern: Enter the 
+
+1.	Browse Image: Selects the image from the `local` disk. 
+
+2.	Direct URL: Enter the `URL` of the image source. 
+
+3.	Pattern: Enter the URL which consists of `pattern text {0}` denoting the fields configured in the image data section.
 
 #### Color
+
 Allows you to choose the background color for the KPI Card widget. 
 
 > **NOTE:**  If both the background image and background color are enabled in the widget, then based on the transparency of the background image and the selected image mode, either the background image alone will appear in the widget or both the background color and image will appear in the KPI Card.
 
 #### Transparency 
+
 You can change the transparency of the color.
+
+**After customizing the Image in KPI card**
+
+![Background Customization](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/background-custom-properties.png)
 
 ### Sparkline properties
 
+![Sparkline Properties](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/sparkline-custom-properties.png)
+
 #### Show sparkline
+
 Provides the option to choose whether to show the sparkline in the KPI Card or not. 
 
 #### Color option 
+
 Allows you to customize the sparkline color in the KPI Card. 
 
 #### Opacity
+
 You can change the opacity of the sparkline color. 
 
+![Card with Sparkline](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/card-custom-spark-line.png)
+
+
 ### Link properties
+
 You can enable linking and configure to navigate to a general URL with or without parameters. For more details, refer to [linking URLs](/embedded-bi/visualizing-data/working-with-widgets/linking-urls-and-dashboards/).
 
+![Link Properties](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/link.png)
 
 ### Filter properties
+
 The KPI Card widget can be set to act as a master widget by checking the `Act as Master Widget` check box. Enabling the `Ignore Filter Actions` check box, enable the KPI card widget not to be filtered by any other master widgets during the interaction time in both preview and published modes.
 
 > **NOTE:**  Act as Master Widget check box will be enabled only when the Series section is configured. 
 
-## Container appearance properties
+### KPI Card with fixed target value and actual value
 
-#### Title Alignment
-Allows you handle the alignment of widget title to either left, right, or center.
+You can create fixed target value and actual value in KPI Card using expressions.
 
-#### Title Color
-Allows you apply the text color to the widget title.
+The following steps illustrates how to add the fixed value:
 
-#### Show Border
-Allows you toggle the visibility of border surrounding the widget.
+1. Click the `fx expression` in the **Assign Data**.
 
-#### Corner Radius
-Allows you apply the specified radius to the widget corners if the Show Border property is enabled. Value can be set between 0 and 10.
+![Expression](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/expression.png)
 
-#### Show Maximize
-Allows you to enable or disable the maximized mode of the KPI Card widget. The visibility of the maximize icon in the widget header will be defined based on this setting. Clicking this icon in the viewer will show the maximized view of the KPI Card widget.
+2. Add the name and expression, then click `Save`.
 
-#### CSV Export
-Allows you to enable or disable the CSV export option for the KPI Card widget. Enabling this allows you to export the summarized data of the widget view to CSV format.
+![Expression Value](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/expression-value.png)
 
-#### Excel Export
-This allows you to enable or disable the Excel Export option for the KPI card widget. Enabling this allows you to export the summarized data of the widget view to (.xlsx or .xls) format.
+3. You can view the added value in the measure section in assigned data tab. Drag the added measures in the `Value(s)` section.
 
-#### Image Export
-This allows you to enable or disable the Image Export option for the KPI card widget. Enabling this allows you to export the view of the widget to image format (.jpg), (.png), or (.bmp) in viewer.
+![Added Value](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/add-value.png)
 
-#### PDF Export
-Allows you to enable or disable the Excel Export option for the KPI Card widget. Enabling this allows you to export the summarized data of the widget view to (.xlsx or .xls) format.
+4. Change the aggregation type to Min or Max.
 
-#### Enable Comments
-Allows you to enable or disable a comment for the dashboard widget. For more details refer to [here](/embedded-bi/visualizing-data/working-with-widgets/commenting-widget/).
+**Fixed Value for Number card**
 
-#### View Data
-This allows you to visualize the raw data associated with a widget at runtime.
+![Fixed Value](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/maximum-value.png)
 
-## How to apply conditional formatting in KPI card
+### Container appearance
 
-The color of the various properties in the KPI card can be customized from the corresponding properties section as explained in the formatting section. This will apply the same color for all records when rendered in a series. 
+![Container Appearance](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/container-appearance.png)
 
-In case, if you have the requirement to highlight any data based on some conditions, you might be required to enable the advanced formatting option.
+### Title Auto Font Size
 
-### How to enable advanced formatting
-In the properties pane, check the `Advanced Setting` check box provided under the `formatting` section. 
-![Enable advance settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/enable-advance-settings.png)
+On enabling Auto Font size, the font size of the title will be adjusted automatically if the resolution of the screen varies.
 
-This will open the `Conditional Formatting` dialog. 
-![Conditional formatting](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/conditional-formatting.png)
+**Font Size**
 
-#### Properties
-You can customize more than one property using the rule based conditional formatting. 
-- Title 
-- Background 
-- Sparkline (Applicable only when sparkline is configured)
-- Icon 
-- Icon color
-- KPI Value
-- Image
-- Background image
+This allows you to apply the specified font size to the widget title, if the `Title Auto Font Size` is disabled. The value ranges between 10 and 44.
 
-#### Based on field 
-You can choose the field from the Based On section to apply the conditions from the highlighted drop-down. 
-![Based on field](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/based-on-field.png)
+### Subtitle Auto Font Size
 
-#### Summary type 
-You can select the summary type for the selected measure field. 
-![Summary type](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/summary-type.png)
+On enabling Auto Font size, the font size of the subtitle will be adjusted automatically if the resolution of the screen varies.
 
-#### Value type
-The value type drop-down allows you to choose whether you are going to apply the direct value (specific number like 3 goals, order ID 10248 ) or percentage (values above 30% or 50 %). 
-![Value type](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/value-type.png)
+**Font Size**
 
-#### Condition name
-You can give a meaningful name to the applied conditions using the highlighted text box. 
-![Condition name](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/condition-name.png)
+This allows you to apply the specified font size to the widget title, if the `Subtitle Auto Font Size` is disabled. The value ranges between 10 and 32.
 
-#### Condition type
-Choose the condition for measure field from the highlighted conditions. 
-![Condition type](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/condition-type.png)
+### Show Border
 
-If you have selected the dimension as a based on field and want to use text condition, the following text-based conditions are available.
-![Dimension condition](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/dimension-condition.png)
+This allows you to toggle the visibility of the border that surrounds the widget.
 
-> **NOTE:**  The text-based condition type will be enabled only when the dimension configured in the series field is used as the based on field. 
+### Corner Radius
 
-#### Value
-Enter the condition value. 
+This allows you to apply the specified radius to the widget corners, if the `Show Border` is enabled. The value ranges between 0 and 10.
 
-#### Font style
-Allows you to choose the title font style. (Bold, Italic, Underline, and Superscript).
+### Container actions
 
-#### Case sensitivity
-For the dimensions, case sensitive option is provided to choose whether the entered value is case sensitive or not. 
+![Container Actions](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/container-actions.png)
 
-![Case sensitivity](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/case-sensitivity.png)
+#### Show header
 
-Select the checkbox provided near by the options to customize the properties, similarly click on the font style icons for applying them like shown in the following screenshot. 
-![Select properties](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/customize-properties.png)
+This allows you to enable or disable the widget title of the KPI Card widget. 
 
-Figure: *The conditional formatting window with applied conditions*. 
-![Applying conditional formatting](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/applied-formatting.png)
+#### Allow maximize view
 
-Figure: *The KPI card series view with the applied conditional formatting*. 
-![KPI card after conditional formatting](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/formatted-result.png)
+The visibility of the` maximize icon` in the widget header will be defined based on the settings in the viewer.
+
+#### Allow CSV export
+
+This allows you to enable or disable the `CSV export` option for the KPI Card widget. Enabling this allows you to export the summarized data of the widget view to CSV format in the viewer.
+
+#### Allow Excel export
+
+This allows you to enable or disable the `Excel export` option for the KPI Card widget. Enabling this allows you to export the summarized data of the widget view to `(.xlsx or .xls)` format in the viewer.
+
+#### Allow Image export
+
+This allows you to enable or disable the `image export` option for the KPI Card widget. Enabling this allows you to export the view of the widget to image format `(.jpg), (.png), or (.bmp)` in the viewer.
+
+#### Allow PDF export
+
+This allows you to enable or disable the `PDF export` option for the KPI Card widget. Enabling this allows you to export the view of the widget to pdf format in the viewer.
+
+#### Enable comments
+
+This allows you to enable or disable `comment` for the dashboard widget. For more details, refer to this [link](/embedded-bi/visualizing-data/working-with-widgets/commenting-widget/).
+
+#### Allow view underlying data
+
+This allows you to visualize the raw data associated with a widget at runtime. 
+
+#### Pin widget
+
+This allows you to pin the widget.
 
 ## Related links
 
