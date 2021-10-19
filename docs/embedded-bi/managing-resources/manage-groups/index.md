@@ -47,6 +47,8 @@ Users can be assigned to the selected group there by assigning the permissions o
 
 ![Assign Users](/static/assets/embedded/managing-resources/manage-groups/images/manage-groups-assign-users.png)
 
+![Add Users](/static/assets/embedded/managing-resources/manage-groups/images/manage-groups-add-users.png)
+
 Users can also be removed from the group if the user no longer needs the permissions of the group. Click on `Remove` next to the user in the group edit page to remove the user from the group.
 
 ![Assign Users](/static/assets/embedded/managing-resources/manage-groups/images/manage-groups-remove-users.png)

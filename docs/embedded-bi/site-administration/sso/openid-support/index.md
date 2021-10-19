@@ -62,6 +62,11 @@ The Bold BI application can be configured to support OpenID Connect for Single S
     <td>It is the property name that holds the email address of the user in the deserialized ID token.</td>
     </tr>
 
+    <tr>
+    <td>Logout Endpoint</td>
+    <td>It is an end point that logout the thrid-party provider.</td>
+    </tr>
+
     </table>
 
     ![OpenId settings](/static/assets/embedded/site-administration/openid-support/images/openid-settings.png)
@@ -70,7 +75,7 @@ If we need to import the OpenID Connect groups, we have to configure the group d
 
   ![OpenId Group setting](/static/assets/embedded/site-administration/openid-support/images/OpenId-group-settings.png)
 
-The previous mentioned similar steps are applicable to configure the OpenID support in User Management Server by logging into the URL `{Bold BI URL}/ums/administration/saml-settings` with admin credential.
+The previous mentioned similar steps are applicable to configure the OpenID support in User Management Server by logging into the URL `{Bold BI URL}/ums/administration/sso?view=openid-settings` with admin credential.
 
 Following are the list of few OpenID Connect providers and that explains how to connect with the Bold BI application. 
 

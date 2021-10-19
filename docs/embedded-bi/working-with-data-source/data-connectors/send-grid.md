@@ -40,6 +40,8 @@ Once you click the data source, the NEW DATA SOURCE configuration panel opens.
 7. Select **JSON** data type in **Data Format** combo box.
 8. Choose **None** under **Authentication Type**.
 
+    ![DataSourcesView](/static/assets/embedded/working-with-datasource/data-connectors/images/SendGrid/DataSourcesView.png)
+
 You can also edit the connection information set here using the [Edit Connection](/cloud-bi/working-with-data-source/editing-a-data-connection/) option.
 
 #### How do I get Account Key for connecting SendGrid data source?

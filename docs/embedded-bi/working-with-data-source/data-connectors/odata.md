@@ -40,6 +40,8 @@ Once you click the data source, the NEW DATA SOURCE configuration panel opens.
 7. Choose one of the **Authentication Type** from the dropdown.
 8. To connect based on the chosen Authentication, refer [Supported Authentication Types](/embedded-bi/working-with-data-source/data-connectors/odata/#authentication-for-odata).
 
+    ![DataSourcesView](/static/assets/embedded/working-with-datasource/data-connectors/images/OData/DataSourcesView.png)
+
 You can also edit the connection information set here using the [Edit Connection](/embedded-bi/working-with-data-source/editing-a-data-connection/) option.
 
 ## Fetching table with single entity and multiple entities

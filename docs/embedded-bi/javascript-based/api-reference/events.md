@@ -341,7 +341,7 @@ var dashboard = BoldBI.create({
 dashboard.loadDashboard();    
 ```
 
-## Event Types
+### Event Types
 
 <table class="params">
 <thead>
@@ -395,6 +395,65 @@ dashboard.loadDashboard();
 <td class="name">clearFilter</td>
 <td class="description">This event will trigger when you clear the filters in each widget and also from the filter overview drop-down.</td>
 </tr>
+</tbody>
+</table>
+
+
+## actionComplete
+   
+This event will be triggered when all viewer actions are completed.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">eventType</td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">Enum</span></td>
+<td class="description">Will hold the current <a href="/embedded-bi/javascript-based/api-reference/events/#event-types">event type</a> that triggered the event</td>
+</tr>
+<tr>
+<td class="name">source</td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">object</span></td>
+<td class="description">This will contain the data related to the current event</td>
+</tr>
+<tr>
+<td class="name">Source.element</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Holds the current event site UI element. If there involves no UI element will be returned as null</td>
+</tr>
+<tr>
+<td class="name">Source.data</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Holds the current event data.</td>
+</tr>
+</tbody>
+</table>
+
+**Example** 
+   
+```js
+var dashboard = BoldBI.create({
+     actionComplete: function (args) {
+          // Write a code block to perform an operation on every viewer action which completes 
+     } 
+});
+dashboard.loadDashboard(); 
+```
+### Event Types
+<table class="params">
+<thead>
+<tr>
+<th>Event Types</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
 <tr>
 <td class="name">layoutRendered</td>
 <td class="description">This event will trigger after the layout rendering is completed.</td>
@@ -449,53 +508,6 @@ dashboard.loadDashboard();
 </tr>
 </tbody>
 </table>
-
-## actionComplete
-   
-This event will be triggered on completion of the every viewer action which completes.
-
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">eventType</td>
-<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">Enum</span></td>
-<td class="description">Will hold the current <a href="/embedded-bi/javascript-based/api-reference/events/#event-types">event type</a> that triggered the event</td>
-</tr>
-<tr>
-<td class="name">source</td>
-<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">object</span></td>
-<td class="description">This will contain the data related to the current event</td>
-</tr>
-<tr>
-<td class="name">Source.element</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description">Holds the current event site UI element. If there involves no UI element will be returned as null</td>
-</tr>
-<tr>
-<td class="name">Source.data</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description">Holds the current event data.</td>
-</tr>
-</tbody>
-</table>
-
-**Example** 
-   
-```js
-var dashboard = BoldBI.create({
-     actionComplete: function (args) {
-          // Write a code block to perform an operation on every viewer action which completes 
-     } 
-});
-dashboard.loadDashboard(); 
-```
 
 ## beforeContextMenuRender
     
@@ -552,4 +564,349 @@ var dashboard = BoldBI.create({
      } 
 });
 dashboard.loadDashboard();        
+```
+
+## beforeNavigateUrlLinking
+
+This event will be triggered before the URL linking navigations are called.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">linkInfo</td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">object</span></td>
+<td class="description">Will holds the linking information</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">object</span></td>
+<td class="description">Holds the Dashboard Viewers Object.</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">Enum</span></td>
+<td class="description">Will holds the current event type that triggered the event</td>
+</tr>
+<tr>
+<td class="name">widgetId</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Holds the current widget id information</td>
+</tr>
+<tr>
+<td class="name">widgetName</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Holds the current widget name information</td>
+</tr>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Holds the cancel value of the current operation.</td>
+</tr>
+</tbody>
+</table>
+
+**Example** 
+   
+```js
+var dashboard = BoldBI.create({
+     beforeNavigateUrlLinking: function (args) {
+          // Write a code block to perform an operation before the url linking navigation called. 
+     } 
+});
+dashboard.loadDashboard();
+```
+
+## beforeDatasourceSave
+
+This event will be triggered before the data source save action is called.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">eventType</td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">Enum</span></td>
+<td class="description">Will holds the current event type that triggered the event</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">object</span></td>
+<td class="description">Holds the Dashboard Viewers Object.</td>
+</tr>
+<tr>
+<td class="name">designer</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Holds the information about the dashboard designer .</td>
+</tr>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Holds the cancel value of the current operation.</td>
+</tr>
+</tbody>
+</table>
+
+**Example** 
+   
+```js
+var dashboard = BoldBI.create({
+     beforeDatasourceSave: function (args) {
+          // Write a code block to perform an operation before the data source save action is called 
+     } 
+});
+dashboard.loadDatasource();
+```
+
+## afterDatasourceSave
+
+This event will be triggered after the data source save action is called.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">eventType</td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">Enum</span></td>
+<td class="description">Will holds the current event type that triggered the event</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">object</span></td>
+<td class="description">Holds the Dashboard Viewers Object.</td>
+</tr>
+<tr>
+<td class="name">designer</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Holds the information about the dashboard designer .</td>
+</tr>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Holds the cancel value of the current operation.</td>
+</tr>
+<tr>
+<td class="name">dataSourceId</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Holds the current data source id.</td>
+</tr>
+<tr>
+<td class="name">schema</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Holds the current data source schema information</td>
+</tr>
+<td class="name">status</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Holds the status of the data source save action</td>
+</tr>
+</tbody>
+</table>
+
+**Example** 
+   
+```js
+var dashboard = BoldBI.create({
+     afterDatasourceSave: function (args) {
+          // Write a code block to perform an operation after the data source save action is called
+     } 
+});
+dashboard.loadDatasource();
+```
+
+## onUnpin
+
+This event will be triggered when you unpin the widget from the pinboard.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">args</td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">object</span></td>
+<td class="description">Holds the Dashboard Viewers Object as follows.<br>
+ 1. ServerUrl - Bold BI server URL is passed to render the dashboard. <br>
+ 2. itemId - Unique id of the Bold BI Dashboard. <br>
+ 3. dashboardName - Unique name of the Bold BI Dashboard.
+</td>
+</tr>
+</tbody>
+</table>
+
+**Example** 
+   
+```js
+var dashboard = BoldBI.create({
+     onUnpin: function (args) {
+          // Write a code block to perform an operation click the unpin widget.
+     } 
+});
+dashboard.loadPinboard();
+```
+
+## onDrag
+
+This event will be triggered when you perform the drag widget from the pinboard.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">args</td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">object</span></td>
+<td class="description">Holds the Dashboard Viewers Object as follows. <br>
+ 1. ServerUrl - Bold BI server URL is passed to render the dashboard. <br>
+ 2. itemId - Unique id of the BoldBI Dashboard. <br>
+ 3. dashboardName - Unique name of the BoldBI Dashboard.
+</td>
+</tr>
+</tbody>
+</table>
+
+**Example** 
+   
+```js
+var dashboard = BoldBI.create({
+     onDrag: function (args) {
+          // Write a code block to perform an operation click the unpin widget.
+     } 
+});
+dashboard.loadPinboard();
+```
+
+## onDrop
+
+This event will be triggered when you drop the widget.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">args</td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">object</span></td>
+<td class="description">Holds the Dashboard Viewers Object as follows. <br>
+ 1. ServerUrl - Bold BI server URL is passed to render the dashboard. <br>
+ 2. itemId - Unique id of the BoldBI Dashboard. <br>
+ 3. dashboardName - Unique name of the BoldBI Dashboard.
+</td>
+</tr>
+</tbody>
+</table>
+
+**Example** 
+   
+```js
+var dashboard = BoldBI.create({
+     onDrop: function (args) {
+          // Write a code block to perform an operation click the unpin widget.
+     } 
+});
+dashboard.loadPinboard();
+```
+
+## onLayoutChange
+
+This event will be triggered when you change the layout of the pinboard.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">args</td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">object</span></td>
+<td class="description">Holds the Dashboard Viewers Object like below. <br>
+ 1. ServerUrl - BoldBI server URL passed to render the dashboard. <br>
+ 2. itemId - Unique id of the BoldBI Dashboard. <br>
+ 3. dashboardName - Unique name of the BoldBI Dashboard.
+</td>
+</tr>
+</tbody>
+</table>
+
+**Example** 
+   
+```js
+var dashboard = BoldBI.create({
+     onLayoutChange: function (args) {
+          // Write a code block to perform an operation click the unpin widget.
+     } 
+});
+dashboard.loadPinboard();
+```
+
+## onResize
+
+This event will be triggered when you resize the pinboard.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">args</td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">object</span></td>
+<td class="description">Holds the Dashboard Viewers Object like below. <br>
+ 1. ServerUrl - BoldBI server URL passed to render the dashboard. <br>
+ 2. itemId - Unique id of the BoldBI Dashboard. <br>
+ 3. dashboardName - Unique name of the BoldBI Dashboard.
+</td>
+</tr>
+</tbody>
+</table>
+
+**Example** 
+   
+```js
+var dashboard = BoldBI.create({
+     onResize: function (args) {
+          // Write a code block to perform an operation click the unpin widget.
+     } 
+});
+dashboard.loadPinboard();
 ```

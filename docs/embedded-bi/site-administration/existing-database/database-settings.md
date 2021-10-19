@@ -13,7 +13,7 @@ This section explains how to configure Database Settings with the Bold BI Embedd
 
 ## Get Database Connection Details
 
-To import users into Bold BI Embedded from Existing Database configure the existing database details in database settings page in the administration page of Bold BI. 
+To import users into Bold BI Embedded from an Existing Database, configure the existing database details in database settings page in the User Directories page of Bold BI. 
 
 ![Import Users from Database - Home](/static/assets/embedded/site-administration/images/import-users-home-page-new.png)
 
@@ -30,7 +30,7 @@ To select the database type from which the users to be imported, click on `Datab
  
 For SQL Server Database, fill the form with Server name, Authentication type, Username, Password and Database name.
  
-The connection details can be tested by clicking on the 'Test Connection.'
+The connection details can be tested by clicking the `Test Connection` option.
   
 ![Connect SQL Server Database](/static/assets/embedded/site-administration/images/connect-database-sqlserver-new.png)
  
@@ -38,11 +38,11 @@ The connection details can be tested by clicking on the 'Test Connection.'
  
 For PostgreSQL Database, fill the form with Server name, Port, Username, Password and Database name.
  
-The connection details can be tested by clicking on the 'Test Connection.'
+The connection details can be tested by clicking the `Test Connection` option.
  
 ![Connect PostgreSQL Database](/static/assets/embedded/site-administration/images/connect-database-postgresql-new.png)
  
-Once the connection details are filled, click on 'Next' for getting schema of the provided database connection.
+Once the connection details are filled, click `Next` for getting schema of the provided database connection.
 
 ![Connect Database](/static/assets/embedded/site-administration/images/connect-database-new.png)
 

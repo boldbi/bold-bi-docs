@@ -37,7 +37,7 @@ Once you click the data source, the NEW DATA SOURCE configuration panel opens.
 8. Select **JSON** data type in **Data Format** combo box.
 9. Set **Authentication type** as *None*.
 
-   ![Connection window](/static/assets/cloud/working-with-datasource/data-connectors/images/ZendeskSell/Connection_Window.png)
+   ![DataSourcesView](/static/assets/cloud/working-with-datasource/data-connectors/images/ZendeskSell/DataSourcesView.png)
 
 You can also edit the connection information set here using the [Edit Connection](/cloud-bi/working-with-data-source/editing-a-data-connection/) option.
 

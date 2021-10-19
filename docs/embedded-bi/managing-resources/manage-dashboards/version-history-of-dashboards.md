@@ -17,6 +17,6 @@ For each change in the `.sydx` file, a new version will be created. All versions
 ![Versions](/static/assets/embedded/managing-resources/manage-dashboards/images/versions.png)
 
 ### File logs
-For each change in the Dashboard including changes in the name, description, category and `.sydx` file, Dashboard server logs the changes done in the file logs.
+For each change in the Dashboard, file logs will be added, including changes to the name, description, make public, make private, and security.
 
 ![File logs](/static/assets/embedded/managing-resources/manage-dashboards/images/file-logs.png)

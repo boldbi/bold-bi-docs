@@ -32,6 +32,8 @@ Once you click the data source, the NEW DATA SOURCE configuration panel opens.
 4. In **Max Rows**, enter the maximum number of rows to be fetched from the Azure Tables data source. This value is used to fetch the data from the Azure Tables data source using the pagination.
 5. Choose a time interval for **Refresh Settings** using the combo box, to trigger the Rest API request periodically to keep the data in sync with our dashboard.
 
+    ![DataSourcesView](/static/assets/cloud/working-with-datasource/data-connectors/images/AzureTables/DataSourcesView.png)
+
 You can also edit the connection information set here using the [Edit Connection](/cloud-bi/working-with-data-source/editing-a-data-connection/) option.
 
 #### Additional information

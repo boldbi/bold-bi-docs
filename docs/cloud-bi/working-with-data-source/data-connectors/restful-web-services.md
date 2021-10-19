@@ -34,6 +34,8 @@ After clicking the data source, the NEW DATA SOURCE configuration panel opens.
 7. Choose an **Authentication Type** supported by the data source. Options are *Basic http authentication* and *None*. Learn more about [Authentication Types](/cloud-bi/working-with-data-source/data-connectors/restful-web-services/#authentication-types).
 8. Choose a **Pagination Type** supported by the data source from the combo box. 
       
+	  ![DataSourcesView](/static/assets/cloud/working-with-datasource/data-connectors/images/Web/DataSourcesView.png)
+	  
 Options are [*None*](/cloud-bi/working-with-data-source/data-connectors/restful-web-services/#none), [*Offset*](/cloud-bi/working-with-data-source/data-connectors/restful-web-services/#offset), [*Next Page*](/cloud-bi/working-with-data-source/data-connectors/restful-web-services/#next-page), [*Next Token*](/cloud-bi/working-with-data-source/data-connectors/restful-web-services/#next-token), and [*Next URL*](/cloud-bi/working-with-data-source/data-connectors/restful-web-services/#next-url).
 
 You can also edit the connection information set here using the [Edit Connection](/cloud-bi/working-with-data-source/editing-a-data-connection/) option. 

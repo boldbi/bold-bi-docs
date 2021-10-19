@@ -253,7 +253,7 @@
         "Manage Dashboard Views": "manage-dashboard-views",
         "Manage Multi-Tabbed Dashboards": "manage-multi-tabbed-dashboards",
         "Share Filtered Dashboards without saving as Views": "share-filtered-dashboards-without-save-views",
-        "Move, Copy and Clone Dashboards": "move-copy-and-clone-dashboards",
+        "Move and Copy Dashboards": "move-and-copy-dashboards",
         "Version History of Dashboards": "version-history-of-dashboards",
         "Delete Dashboards": "delete-dashboards",
         "Share Dashboards": "share-dashboards",
@@ -353,7 +353,8 @@
 	  "How to speed up the data access in SQL Server?":"how-to-speed-up-the-data-access-in-sql-server",
 	  "How to enable authorized access to dashboards for users": "dashboard-authorized-access",
 	  "How to add a new data connector under Bold BI": "how-to-add-a-new-data-connector-under-bold-bi",
-	  "How to add threshold to a Chart widget":"how-to-add-threshold-to-a-chart-widget"
+	  "How to add threshold to a Chart widget":"how-to-add-threshold-to-a-chart-widget",
+    "How to use groups in Bold BI?":"how-to-use-groups-in-bold-bi"
     }
   }
 }

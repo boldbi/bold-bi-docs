@@ -44,6 +44,9 @@ To configure the Microsoft SQL Server data source, follow these steps:
 > **NOTE:**  You can also create a data source from the dashboard server page by clicking the **Data Sources** menu from left menu panel and **Create Data Source** from the data sources page.  
 ![Create data source from server](/static/assets/embedded/working-with-datasource/data-connectors/images/SQLDataSource/create-ds-from-server.png)
 
+> **NOTE:**  To connect data source with **SSH**, enable the SSH check box in the **NEW DATA SOURCE** configuration panel and enter the required credentials.
+![Enable SSH](/static/assets/embedded/working-with-datasource/images/enable-ssh.png#max-width=60%)
+ 
 ### Create Microsoft SQL Server data source in live mode
 
 To connect with the SQL server database in [live](/embedded-bi/working-with-data-source/data-connectors/sql-data-source/#live) mode, follow these steps:
@@ -71,9 +74,11 @@ To connect the SQL server database in [extract](/embedded-bi/working-with-data-s
 
 2. Enter the **user name** and **password** to connect to the Microsoft SQL server.  
 
-3. Choose the **Extract** mode radio button to enable extract mode for creating data source. Refer [Extract](/embedded-bi/working-with-data-source/data-connectors/sql-data-source/#extract) mode to learn more. 
-Initially, it will extract 50000 records; the remaining records will be extracted based on the configured refresh settings.  
+3. Choose the **Extract** mode radio button to enable extract mode for creating data source. Refer [Extract](/embedded-bi/working-with-data-source/data-connectors/sql-data-source/#extract) mode to learn more.
 
+> **NOTE:**  Initially, data will be extracted based on the Max Rows selected in order to proceed with data model creation. The remaining records (there is no limit) will be extracted during the next refresh. 
+ ![Max rows option](/static/assets/embedded/working-with-datasource/data-connectors/images/SQLDataSource/maxRowOption.png#max-width=60%)					 
+                  
 4. Select the database name from dropdown text box from which the tables to be extracted.  
 
 5. Choose a relevant time interval from **Refresh Settings** dropdown menu for refreshing the data source periodically. Refer [Refresh Settings](/embedded-bi/working-with-data-source/data-connectors/sql-data-source/#sql-data-source-refresh-settings) to learn more.  
@@ -94,12 +99,35 @@ Initially, it will extract 50000 records; the remaining records will be extracte
 ![Extract tables](/static/assets/embedded/working-with-datasource/data-connectors/images/SQLDataSource/Extract-tables.png)
 
 	> **NOTE:**  The extracted table will be stored in the intermediate database in name format `<tableName>_<schemaName>`. For example, in the previous step, the table **Orders** are extracted from schema **dbo** hence, the table name was stored as `Orders_dbo` in intermediate database.
-
+    
 9. Drag and drop the table from the left panel of data design page.  
 ![Drag and drop the table](/static/assets/embedded/working-with-datasource/data-connectors/images/SQLDataSource/Drag-and-drop-the-table.png)
 
+	> **NOTE:**  MS SQL Server data source supports all uni-code characters and other languages tables in Bold BI v4.2
+	![Supports other language tables and columns](/static/assets/embedded/working-with-datasource/data-connectors/images/SQLDataSource/other-language-support.png)
+
 10. Click **Save** to save the data source with a relevant name.  
 ![Save data source](/static/assets/embedded/working-with-datasource/data-connectors/images/SQLDataSource/Save-data-source.png)
+
+### View table schema support
+
+From the Bold BI 4.2 Enterprise Edition, we are using the GUID as the column name to resolve the large column name issue.
+
+> **NOTE:**  The view table schema is supported only in the Extract Mode.
+
+1.	After connecting the data source in an extract mode, the data design view opens with the design view. Now, you can see the `View Schema` Option in a TreeView.
+![Data design view](/static/assets/embedded/working-with-datasource/data-connectors/images/SQLDataSource/data-design-view-in-extract-mode.png#max-width=100%)
+<br/>
+![View schema option](/static/assets/embedded/working-with-datasource/data-connectors/images/SQLDataSource/view-schema-option-in-treeview.png#max-width=100%)
+
+2.	Click `View Schema,` the dialog will open with the Column name and Description. For the data source created on or after the 4.2 version, the GUID is used as the column name in extract data sources.
+![View schema dialog](/static/assets/embedded/working-with-datasource/data-connectors/images/SQLDataSource/view-schema-dialog.png#max-width=75%)
+
+3.	You can copy the column name and GUID name using the `CTRL+C` by selecting the cell.
+![Copy guid name](/static/assets/embedded/working-with-datasource/data-connectors/images/SQLDataSource/copy-guid-name.png#max-width=75%)
+
+4.	You can use the GUID name in the code view mode.
+![View guid in code view mode](/static/assets/embedded/working-with-datasource/data-connectors/images/SQLDataSource/view-guid-in-code-view-mode.png#max-width=100%)
 
 ## Connecting to stored procedure in SQL Server database
 

@@ -14,9 +14,9 @@ This section briefly explains the steps involved in creating a new site in Bold 
 
 You can create another site in Bold BI Enterprise application by clicking the `Create Site` button in site management module.
 
-![Create Site](/static/assets/embedded/multi-tenancy/images/create-button.png)
+![Create Site](/static/assets/embedded/multi-tenancy/images/create-button.png#max-width=95%)
 
-This step holds the site details such as tenant type, name, and identifier. The site identifier should be unique and it is a part of your site URL.
+This step holds the site details such as tenant type, name, domain, and identifier. The site identifier should be unique and it is a part of your site URL. You can create a site using custom domains too.
 
 Based on branding chosen, following information will be copied to the tenant.
 * Localization
@@ -26,16 +26,16 @@ Based on branding chosen, following information will be copied to the tenant.
 
  Otherwise, default images and values will be used for the tenant branding.
 
-![Site Registration](/static/assets/embedded/multi-tenancy/images/site-creation.png)
+![Site Registration](/static/assets/embedded/multi-tenancy/images/site-creation.png#max-width=45%)
 
 ## Select database 
 
 This step stores the dashboards, users, and their access permissions in SQL Server Database. You can connect to the existing SQL Server instance with the below options:
 
 * By creating new `Bold Bi Site` database.  
-![Select Database](/static/assets/embedded/multi-tenancy/images/select-database.png)
+![Select Database](/static/assets/embedded/multi-tenancy/images/select-database.png#max-width=45%)
 * By choosing one of the database from `Select a Database` drop down for creating Bold BI Server tables in that database.  
-![Select Database ExistingDb](/static/assets/embedded/multi-tenancy/images/select-database-existing.png)
+![Select Database ExistingDb](/static/assets/embedded/multi-tenancy/images/select-database-existing.png#max-width=45%)
 
 > **NOTE:**  The credentials that is given to connect to the SQL Server instance must have permissions to
 * Create Database 
@@ -51,21 +51,21 @@ This step stores the dashboards, users, and their access permissions in SQL Serv
 
 You can pull the data from 120+ connectors and save it offline to access the dashboards quickly. 
 
-![SQL Server DataStore](/static/assets/embedded/multi-tenancy/images/select-datastore.png)
+![SQL Server DataStore](/static/assets/embedded/multi-tenancy/images/select-datastore.png#max-width=45%)
 
 ## Select storage
 
 You need to provide the storage type as either file storage or blob storage, in which Bold BI application will store the resources, contents, and logs. For more information, please refer to this [link](/embedded-bi/faq/what-all-are-the-files-and-folders-will-be-generated-in-the-installed-machine/).
 
-![File storage type](/static/assets/embedded/multi-tenancy/images/select-storage-file.png)
+![File storage type](/static/assets/embedded/multi-tenancy/images/select-storage-file.png#max-width=45%)
 
-![Blob storage type](/static/assets/embedded/multi-tenancy/images/select-storage-blob.png)
+![Blob storage type](/static/assets/embedded/multi-tenancy/images/select-storage-blob.png#max-width=45%)
 
 ## Configure Isolation code and Custom Attribute in site 
 
 You can skip this configuration directly by clicking `Next` button or you can configure the isolation code or custom attribute or can configure both and then proceed with the Next.
 
-![Skip configure Isolation code and Custom Attribute](/static/assets/embedded/multi-tenancy/images/configure-isolation-and-attribute.png)
+![Skip configure Isolation code and Custom Attribute](/static/assets/embedded/multi-tenancy/images/configure-isolation-and-attribute.png#max-width=45%)
 
 ### Isolation code
 
@@ -77,7 +77,7 @@ This can be set by the UMS admin for a site in the site details page. Learn more
 
 Attributes are name-value pairs that are associated with users, groups, and the sites (tenants).
 
-![Configure Custom Attribute](/static/assets/embedded/multi-tenancy/images/custom-attribute.png)
+![Configure Custom Attribute](/static/assets/embedded/multi-tenancy/images/custom-attribute.png#max-width=45%)
 
 Name – Name of the attribute.
 
@@ -102,4 +102,4 @@ The selected users have the following permissions:
 
 After selecting the user, proceed with `Create and launch site`.
 
-![Select Administrator](/static/assets/embedded/multi-tenancy/images/select-administrator.png)
+![Select Administrator](/static/assets/embedded/multi-tenancy/images/select-administrator.png#max-width=45%)

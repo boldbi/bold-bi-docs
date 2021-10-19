@@ -9,9 +9,9 @@ documentation: ug
 # How to reset the database of the Bold BI application?
 Resetting the application database details in the Bold BI application requires updating the application database details in different places. 
 
-1. Updating the database details for Bold BI Server
-2. Updating the database details for Bold BI tenants
-3. Updating the database details for data store in Bold BI (optional)
+1. Updating the database details for Bold BI Server.
+2. Updating the database details for Bold BI tenants.
+3. Updating the database details for data store in Bold BI (optional).
 
 ## Steps to reset the Bold BI application database
 

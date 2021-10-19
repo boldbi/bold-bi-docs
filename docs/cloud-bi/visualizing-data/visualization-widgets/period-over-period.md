@@ -7,6 +7,7 @@ control: Period Over Period
 documentation: ug
 ---
 
+
 # Period Over Period(PoP)
 
 Period over Period support used to compare measure values for one period of time against the results from a previous or subsequent period of time. PoP widget used to choose two different time periods at a time.
@@ -15,67 +16,65 @@ Period over Period support used to compare measure values for one period of time
 
 ## How to configure table data to Period over Period?
 
-Drag and drop the `Period Over Period` from toolbox at left into design canvas and resize it to your required size.
+1.  Drag and drop the `Period Over Period` from the toolbox at left into the design canvas and resize it to your required size.
 
-![dragging period over period into canvas](/static/assets/cloud/visualizing-data/visualization-widgets/images/pop/pop_draganddrop.png)
+![dragging period over period into canvas](/static/assets/cloud/visualizing-data/visualization-widgets/images/pop/pop-draganddrop.png)
 
-Click `Data Source` button in configuration panel.
+2.  Click the `Data Source` button in the configuration panel.
 
 ![data source button](/static/assets/cloud/visualizing-data/visualization-widgets/images/databutton.png)
 
-Click `CREATE NEW` button to launch a new connection from connection type panel.
+3.  Click the `CREATE NEW` button to launch a new connection from the connection type panel.
 
 ![create new button](/static/assets/cloud/visualizing-data/visualization-widgets/images/datasourcebutton.png)
 
-In the connection type panel, click any one (Here `Microsoft SQL` Connection type is selected for demonstration) of the listed connection type button shown.
+4.  In the connection type panel, click any one (Here, the `Microsoft Excel` Connection type is selected for demonstration) of the listed connection type button shown.
 
 ![data source list](/static/assets/cloud/visualizing-data/visualization-widgets/images/datasourcelist.png)
 
-In the `NEW DATA SOURCE` configuration panel, fill the connection type and related details. Click `Connect` button
+5.  In the `NEW DATA SOURCE` configuration panel, fill the connection type and related details. Click the `Connect` button.
 
-![data source page](/static/assets/cloud/visualizing-data/visualization-widgets/images/Connectbutton.png)
+![data source page](/static/assets/cloud/visualizing-data/visualization-widgets/images/connectbutton.png)
 
-Drag your preferred table or view from the left pane from data design view, click `Save` button.
+6.  Drag your preferred table or view from the left pane from the data design view, click the `Save` button.
 
 ![table dragged into table canvas](/static/assets/cloud/visualizing-data/visualization-widgets/images/virtualtable.png)
 
-Click `Properties` button in configuration panel, property pane opens. Now, Switch to `ASSIGN DATA` tab.
+7.  Click the `Properties` button in the configuration panel, property pane opens. Now, switch to the `ASSIGN DATA` tab.
 
 ![highlights widgets configuration button](/static/assets/cloud/visualizing-data/visualization-widgets/images/designerpropertiesbutton.png)
 
-![period over period assign data tab](/static/assets/cloud/visualizing-data/visualization-widgets/images/pop/pop_assigndata.png)
+![period over period assign data tab](/static/assets/cloud/visualizing-data/visualization-widgets/images/pop/pop-assigndata.png)
 
-The data tab will be opened with available measures and dimensions from the connected data source
+8.  The data tab will be opened with available measures and dimensions from the connected data source.
 
 ![assigning fields to period over period](/static/assets/cloud/visualizing-data/visualization-widgets/images/pop/fieldlists.png)
 
-Drag and drop a date field from `Dimensions` into `Columns` section.
+9.  Drag and drop a date field from `Dimensions` into the `Columns` section.
 
 ![dragging fields to configure data for period over period](/static/assets/cloud/visualizing-data/visualization-widgets/images/pop/configure-widget.png)
 
-On binding field to PoP widget, default date ranges calculated based on the bounded field and set as selected filter. 
+### Binding Fields
+On binding field to PoP widget, default date ranges calculated based on the bounded field and set as a selected filter.
 
-![default date range for period over period](/static/assets/cloud/visualizing-data/visualization-widgets/images/pop/pop_defaultdaterange_denote.png)
+![default date range for period over period](/static/assets/cloud/visualizing-data/visualization-widgets/images/pop/pop-defaultdaterange-denote.png)
 
-By default, PoP widget render with some default filter value and which can't be discard. We allow only to reset the filters to default if we made changes. The default date range calculated based on the days pan between min and max dates of the bounded field.
+By default, the PoP widget renders with some default filter value and which can not be discarded. We allow only to reset the filters to default if we made changes. The default date range is calculated based on the days' pan between min and max dates of the bounded field.
 
-![reset and info icon for period over period](/static/assets/cloud/visualizing-data/visualization-widgets/images/pop/pop_infoandclear_icon.png)
+You can select the Relative/Custom date ranges using the `Relative Combobox` or `Calendars.` We can select any date ranges irrespective of the bounded field. That field is used to calculate the default date ranges and filtering purposes.
 
-
-You can select the Relative/Custom date ranges using `Relative Combobox` or `Calendars`. We can select any date ranges irrespective of the bounded field. That field is used to calculated the default date ranges and filtering purpose.
-
-![popup dialog for period over period](/static/assets/cloud/visualizing-data/visualization-widgets/images/pop/pop_popup.png)
+![popup dialog for period over period](/static/assets/cloud/visualizing-data/visualization-widgets/images/pop/pop-popup.png)
 
 
-The following relative items displayed under Date Range:
+The following relative items are displayed under the Date Range:
 
-![date range relative items for period over period](/static/assets/cloud/visualizing-data/visualization-widgets/images/pop/pop_daterange_relativeitems.png)
+![date range relative items for period over period](/static/assets/cloud/visualizing-data/visualization-widgets/images/pop/pop-daterange-relativeitems.png)
 
-The following relative items displayed under Compare To:
+The following relative items are displayed under the Compare To:
 
-![date range relative items for period over period](/static/assets/cloud/visualizing-data/visualization-widgets/images/pop/pop_customrange_relativeitems.png)  
+![date range relative items for period over period](/static/assets/cloud/visualizing-data/visualization-widgets/images/pop/pop-customrange-relativeitems.png)  
 
-In both relative items Combobox, `Custom` will be selected automatically if you choose custom range from calendar or enter custom range manually using `Combobox` input section.
+In both relative items Combobox, the `Custom` will be selected automatically if you choose custom range from calendar or enter custom range manually using the `Combobox` input section.
 
 > **IMPORTANT:**  
 * PoP widget won't act as slave for any widget. 
@@ -88,67 +87,78 @@ In both relative items Combobox, `Custom` will be selected automatically if you 
 
 ## How 'Compare To' relative items range calculated?
 
-`Compare To` relative items value calculated dynamically based on the date range selection from `Date Range`. You can see how it calculated for each relative item:
+`Compare To` relative items value calculated dynamically based on the date range selection from `Date Range.` You can see how it calculated for each relative item:
 
-1. `Previous Period`: It is calculated based on the number of days between the selected dates(start and end) of `Date Range`. For example, consider `Date Range` selected value as `1-Jan-2019 to 10-Jan-2019`. Here, the number of days between the selected dates is 10. So, `Previous Period` value for the selected range is `22-Dec-2018 to 31-Dec-2018`.
+1. `Previous Period`:
+
+It is calculated based on the number of days between the selected dates(start and end) of `Date Range.` For example, consider the `Date Range` selected value as `1-Jan-2019 to 10-Jan-2019.` Here, the number of days between the selected dates is 10. So, the `Previous Period` value for the selected range is `22-Dec-2018 to 31-Dec-2018.`
 
 2. `Previous Year`:
-It is a previous year dates of the selected date values from `Date Range`. For example, consider `Date Range` selected value as `1-Jan-2019 to 10-Jan-2019`. Here, year of start and end date value is 2019. So, `Previous Year` value for the selected range is `1-Jan-2018 to 10-Jan-2018`.
+
+It is a previous year date of the selected date values from the `Date Range.` For example, consider the `Date Range` selected value as `1-Jan-2019 to 10-Jan-2019.` Here, the year of start and end date value is 2019. So, the `Previous Year` value for the selected range is `1-Jan-2018 to 10-Jan-2018.`
 
 
 ## How the PoP filtering works in Slave Widget?
-Comparison types of charts like `Bar`, `Column`, `Stacked Bar`, `Stacked Column`, `100% Stacked Bar`, `100% Stacked Column`, Distribution types of charts `Line`, `Spline`, `Spline Area`, `Area`, `Stacked Area`, `100% Stacked Area`, Proportional types of charts `Pie`, `Doughnut`, `Pyramid`, `Funnel` can be slave widget for `Period Over Period`.
 
-Consider you configured `Column chart`. You can change `Column Chart` as slave for `Period Over Period` widget by using filter interaction window as shown below. 
+Comparison types of charts like `Bar,` `Column,` `Stacked Bar,` `Stacked Column,` `100% Stacked Bar,` and `100% Stacked Column.` Distribution types of charts `Line,` `Spline,` `Spline Area,` `Area,` `Stacked Area,` and `100% Stacked Area.` Proportional types of charts `Pie,` `Doughnut,` `Pyramid,` and `Funnel` can be slave widgets for `Period Over Period.`
 
-![Chart as slave widget in filter configuration](/static/assets/cloud/visualizing-data/visualization-widgets/images/pop/pop_slaveWidget.png)
+Consider you configured `Column chart.` You can change the `Column Chart` as a slave for the `Period Over Period` widget by using the filter interaction window as shown below.
 
- Once you configured, `Chart` color palette will be changed using `PoP` selection colors(blue and green). The red information icon denote that chart virtual column value won't get display in design mode.
+![Chart as slave widget in filter configuration](/static/assets/cloud/visualizing-data/visualization-widgets/images/pop/pop-slavewidget.png)
 
-![chart color palette update for period over period](/static/assets/cloud/visualizing-data/visualization-widgets/images/pop/pop_chartcolors.png)
+Once you configured, the `Chart` color palette will be changed using the `PoP` selection colors(blue and green). The red information icon denotes that the chart virtual column value will not get a display in the design mode.
 
-Similarly, you can see option to customize legend and palette for virtual column which will be displayed in Designer Preview/View Mode.
+![chart color palette update for period over period](/static/assets/cloud/visualizing-data/visualization-widgets/images/pop/pop-chartcolors.png)
 
-![chart custom legend for period over period](/static/assets/cloud/visualizing-data/visualization-widgets/images/pop/pop_customlegend.png) 
+Similarly, you can see an option to customize legend and palette for the virtual column which will be displayed in the Designer Preview/View Mode.
 
-![chart color palette option for period over period](/static/assets/cloud/visualizing-data/visualization-widgets/images/pop/pop_colorpalette.png) 
+![chart custom legend for period over period](/static/assets/cloud/visualizing-data/visualization-widgets/images/pop/pop-customlegend.png) 
 
-![chart color palette option for period over period](/static/assets/cloud/visualizing-data/visualization-widgets/images/pop/pop_colorpalettech.png) 
+![chart color palette option for period over period](/static/assets/cloud/visualizing-data/visualization-widgets/images/pop/pop-colorpalette.png) 
 
-During interaction from PoP widget, chart will display two series. One having values filtered from `Date Range` and another one contains filtered values from `Compare To`.
+![chart color palette option for period over period](/static/assets/cloud/visualizing-data/visualization-widgets/images/pop/pop-colorpalettech.png) 
 
-![period over period workflow](/static/assets/cloud/visualizing-data/visualization-widgets/images/pop/pop_workflow.png) 
+During interaction from the PoP widget, the chart will display two series. One having values filtered from `Date Range` and another one contains filtered values from `Compare To.`
+
+![period over period workflow](/static/assets/cloud/visualizing-data/visualization-widgets/images/pop/pop-workflow.png) 
 
 Please find the response of different type of charts as slave for PoP widgets.
 
 **Bar Chart**
-![Bar chart as slave widget](/static/assets/cloud/visualizing-data/visualization-widgets/images/pop/pop_barSlave.png)
+
+![Bar chart as slave widget](/static/assets/cloud/visualizing-data/visualization-widgets/images/pop/pop-barslave.png)
 
 **Line Chart**
-![Line chart as slave widget](/static/assets/cloud/visualizing-data/visualization-widgets/images/pop/pop_lineChartSlav.png)
+
+![Line chart as slave widget](/static/assets/cloud/visualizing-data/visualization-widgets/images/pop/pop-linechartslav.png)
 
 **Area Chart**
-![Area chart as slave widget](/static/assets/cloud/visualizing-data/visualization-widgets/images/pop/pop_areaSlave.png)
+
+![Area chart as slave widget](/static/assets/cloud/visualizing-data/visualization-widgets/images/pop/pop-areaslave.png)
 
 **Spline Chart**
-![Spline chart as slave widget](/static/assets/cloud/visualizing-data/visualization-widgets/images/pop/pop_splineSlave.png)
+
+![Spline chart as slave widget](/static/assets/cloud/visualizing-data/visualization-widgets/images/pop/pop-splineslave.png)
 
 **Spline Area Chart**
-![Spline Area chart as slave widget](/static/assets/cloud/visualizing-data/visualization-widgets/images/pop/pop_splineAreaSlave.png)
+
+![Spline Area chart as slave widget](/static/assets/cloud/visualizing-data/visualization-widgets/images/pop/pop-splineareaslave.png)
 
 **Stacked column Chart**
-![Stacked chart as slave widget](/static/assets/cloud/visualizing-data/visualization-widgets/images/pop/pop_slaveStacked.png)
+
+![Stacked chart as slave widget](/static/assets/cloud/visualizing-data/visualization-widgets/images/pop/pop-slavestacked.png)
 
 **Percent Stacked bar chart**
-![Percent Stacked bar chart as slave widget](/static/assets/cloud/visualizing-data/visualization-widgets/images/pop/pop_percentChartSlave.png)
 
-Consider you have configured `Proportional Chart` as slave for `Period Over Period` widget. Like column, line charts color palette will not be changed. The Red information icon denote that comparison of period visualization won't be shown in design mode.
+![Percent Stacked bar chart as slave widget](/static/assets/cloud/visualizing-data/visualization-widgets/images/pop/pop-percentchartslave.png)
 
-![Proportion chart update in design mode](/static/assets/cloud/visualizing-data/visualization-widgets/images/pop/pop_proportionalChart.png)
+Consider you have configured the `Proportional Chart` as a slave for the `Period Over Period` widget. Like the column, the line chart's color palette will not be changed. The Red information icon denotes that the comparison of period visualization will not be shown in the design mode.
 
-During interaction of Pop Widget, proportional chart will display two series. One shows values filtered from `Date Range` another one contains filtered values from `Compare To`.
+![Proportion chart update in design mode](/static/assets/cloud/visualizing-data/visualization-widgets/images/pop/pop-proportionalchart.png)
 
-![Proportional chart as slave widget](/static/assets/cloud/visualizing-data/visualization-widgets/images/pop/pop_proportionalChartSlave.png)
+During the interaction of Pop Widget, the proportional chart will display two series. One shows values filtered from `Date Range` another one contains filtered values from `Compare To.`
+
+![Proportional chart as slave widget](/static/assets/cloud/visualizing-data/visualization-widgets/images/pop/pop-proportional.png)
 
 ## How to format Period Over Period?
 
@@ -156,52 +166,80 @@ You can format the Period Over Period for better illustration of the view that y
 
 ### General Settings
 
-![period over period name](/static/assets/cloud/visualizing-data/visualization-widgets/images/pop/pop_generalsettings.png)
+![period over period name](/static/assets/cloud/visualizing-data/visualization-widgets/images/pop/generalsettings.png)
 
 #### Name 
-This option allows you change the title for the Period Over Period.
+This option allows you to change the title for the Period Over Period.
 
 #### Subtitle
-Allows you provide subtitle for Period Over Period.
 
-##### Description
-Allows you provide description about the Period Over Period.
+Allows you to provide subtitle for Period Over Period.
+
+#### Description
+
+Allows you to provide a description about the Period Over Period.
 
 ### Filter
 
-![filter configuration for period over period](/static/assets/cloud/visualizing-data/visualization-widgets/images/pop/pop_filtersettings.png)
+![filter configuration for period over period](/static/assets/cloud/visualizing-data/visualization-widgets/images/pop/filtersettings.png)
 
 ### Act as Master Widget 
 
 This allows you to define this PoP as a master widget such that its filter action can be made to listen by other widgets in the dashboard.
 
 
-### Container Settings
+#### Container Appearance
 
-![container settings for date picker](/static/assets/cloud/visualizing-data/visualization-widgets/images/pop/pop_containerappearance.png)
+![Container Appearance](/static/assets/cloud/visualizing-data/visualization-widgets/images/pop/container-appearance.png)
 
-### Title Alignment
+#### Title Alignment
 
-This allows you to handle the alignment of widget title to either left, center or right.
+This allows you to handle the alignment of widget title to either `left, center, or right.`
 
-### Title Color
+#### Title Color
 
-This allows you to apply text color to the widget title.
+This allows you to apply the text `color` to the widget title.
 
-### Show Border
+#### Title Auto Font Size
 
-This allows you to toggle the visibility of border surrounding the widget.
+On enabling Auto Font Size, the font size of the title will be adjusted automatically if the resolution of the screen varies.
 
-### Corner Radius
+**Font Size**
 
-This allows you to apply the specified radius to the widget corners. Value can be between 0 and 10.
+This allows you to apply the specified size of the font to the widget title if the **Title Auto Font Size** is disabled. Value can be between 10 and 44.
 
-### Enable Comments
+#### Subtitle Auto Font Size
 
-This allows you to enable/disable comment for dashboard widget. For more details refer [here](/cloud-bi/visualizing-data/working-with-widgets/commenting-widget/)
+On enabling Auto Font Size , the font size of the subtitle will be adjusted automatically if the resolution of the screen varies.
 
+**Font Size**
 
+This allows you to apply the specified size of the font to the widget title if the **Subtitle Auto Font Size** is disabled. Value can be between 10 and 32.
 
+#### Show Border
 
+This allows you to toggle the visibility of `border` surrounding the widget.
 
+#### Corner Radius
 
+This allows you to apply the specified `radius` to the widget corners if the **Show Border** is enabled. Value can be between 0 and 10.
+
+#### Background Color
+
+This allows you to set the **background color** to the period over period widget.
+
+#### Transparency
+
+This property allows you to specify the **transparency** for the `background color.`
+
+#### Container actions
+
+![Container Actions](/static/assets/cloud/visualizing-data/visualization-widgets/images/pop/container-actions.png)
+
+#### Show Header
+
+This allows you to enable or disable the `widget title` of the period over period widget. 
+
+#### Enable Comments
+
+This allows you to enable or disable `comment` for the dashboard widget. For more details, refer to this [link](/cloud-bi/visualizing-data/working-with-widgets/commenting-widget/).

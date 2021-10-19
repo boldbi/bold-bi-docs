@@ -37,6 +37,8 @@ Once you click the data source, the NEW DATA SOURCE configuration panel opens.
 5. Select **XML** data type in **Data Format** combo box.
 6. Select **Authentication Type** as **None**.
 
+    ![DataSourcesView](/static/assets/cloud/working-with-datasource/data-connectors/images/RSSFeeds/DataSourcesView.png)
+
 You can also edit the connection information set here using the [Edit Connection](/cloud-bi/working-with-data-source/editing-a-data-connection/) option.
 
 #### Additional information

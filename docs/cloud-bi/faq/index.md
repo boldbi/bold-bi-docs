@@ -33,3 +33,5 @@ The following are the frequently asked questions in Bold BI Cloud :
 [How to add a new data connector under Bold BI?](/cloud-bi/faq/how-to-add-a-new-data-connector-under-bold-bi/)
 
 [How to add threshold to a Chart widget](/cloud-bi/faq/how-to-add-threshold-to-a-chart-widget/)
+
+[How to use groups in Bold BI?](/cloud-bi/faq/how-to-use-groups-in-bold-bi/)

@@ -46,11 +46,11 @@ Follow the below steps to make the Dashboards accessible to anonymous users.
 
 1. Allow the `Mark dashboards as public` in dashboards settings page.
 
-![Click on dashboard-settings-on icon](/static/assets/embedded/site-administration/images/dashboard-settings-on.png)
+   ![Click on dashboard-settings-on icon](/static/assets/embedded/site-administration/images/dashboard-settings-on.png)
 
 2. Click the `Make Public` from the context menu of the respective Dashboard.
 
-![Click on makepublic icon](/static/assets/embedded/site-administration/images/makepublic.png)
+   ![Click on makepublic icon](/static/assets/embedded/site-administration/images/makepublic.png)
 
 3. Click the `Make public` in the confirmation dialog box to mark Dashboards as public.
  

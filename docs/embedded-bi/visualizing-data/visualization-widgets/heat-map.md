@@ -12,13 +12,9 @@ documentation: ug
 
 `Heatmap` allows you to visualize large amounts of data as clustered rectangles with a color scale.
 
-*Figure: Default Heatmap visualization showing city wise stocks count for each ship city*
-
-![Default Heatmap](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/HeatMap.png)
-
 *Figure: Heatmap visualization after various customizations*
 
-![Customized Heatmap](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/Customized-Heatmap.png)
+![Customized Heatmap](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/formattedresult.png)
 
 ## How to configure the data table to Heatmap widget
 
@@ -30,28 +26,33 @@ The following steps explains about data configuration of the Heatmap.
 
 ### Step 1: Add a heatmap widget to the design canvas 
 
-1.	Drag and drop the `Heatmap` control icon from the tool box into design panel. You can find control in tool box by search.
-![Adding Heatmap](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/Adding-Heatmap.png)
+1.   Drag and drop the `Heatmap` control icon from the toolbox into the design panel. You can find control in a toolbox by search.
+
+![Adding Heatmap](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/drop-widget.png)
 
 2.	Resize the widget as required.
-![Resizing Heatmap](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/Resizing-Heatmap.png)
 
-### Step 2: Configuring data into the widget
+![Resizing Heatmap](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/resizing.png)
 
-1.	Click the `Properties` icon in the configuration panel.
-![Properties click](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/Properties-click.png)
+3.	Click the `Properties` icon in the configuration panel.
 
-2.	The properties panel of the widget will be displayed as shown in the following screenshot. Now, switch to the `ASSIGN DATA` tab.
-![Properties pane](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/Properties-pane.png)
+![Properties click](/static/assets/embedded/visualizing-data/visualization-widgets/images/designerpropertiesbutton.png)
 
-3.	The data tab will be opened with available columns from the connected data source.
-![Available fields list](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/Available-fields-list.png)
+4.	The properties panel of the widget will be displayed as shown in the following screenshot. Now, switch to the `ASSIGN DATA` tab.
+
+![Properties pane](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/propertypanel.png)
+
+5.	The data tab will be opened with available columns from the connected data source.
+
+![Available fields list](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/assign-data.png)
+
+### Step 2: Add a measures and dimensions in assign data. 
 
 #### Value section
 
-Bind column by dragging and dropping the element from sections to `values`.
+Bind column by dragging and dropping the element from sections to `values.`
 
-![Value fields](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/Value-fields.png)
+![Value fields](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/field-value.png)
 
 > **NOTE:**  
 * The field added in this section will act as a measure value. 
@@ -61,16 +62,17 @@ Bind column by dragging and dropping the element from sections to `values`.
 
 Drag and drop the elements from sections to `X-Axis` section.
 
-![X Axis fields](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/X-Axis-fields.png)
+![X Axis fields](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/x-field.png)
 
 > **NOTE:** 
 * The field added in this section will act as a dimension value. 
 * It is a mandatory section and only one value can be configured
 
 #### Y-Axis section
+
 Drag and drop the elements from sections to `Y-Axis` section.
 
-![Y-Axis fields](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/Y-Axis-fields.png)
+![Y-Axis fields](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/y-field.png)
 
 > **NOTE:** 
 * The field added in this section will act as a dimension value. 
@@ -78,41 +80,67 @@ Drag and drop the elements from sections to `Y-Axis` section.
 
 *Image: Heatmap widget after configuring the mandatory fields.*
 
-![Configured Heatmap view](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/Configured-Heatmap.png)
+![Configured Heatmap view](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/configure-heatmap.png)
 
 #### Size section
+
 Drag and drop the elements from sections to `size` section. It will define the size of the bubble in the heatmap. Also, it is an optional section. 
 
-![Size fields](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/Size-fields.png)
+![Size fields](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/field-size.png)
 
 *Image: Heatmap widget after configuring the size field*
 
-![Size customized Heatmap](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/Size-customized-Heatmap.png)
+![Size customized Heatmap](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/heatmap-size.png)
 
 #### Tooltip section 
 
-You can configure `tooltip` section to showcase the additional information in the widget’s tooltip without affecting the visualization. Refer to [this section](/embedded-bi/visualizing-data/working-with-widgets/tooltip-customization/) for more details on configuring the tooltip fields. 
+You can configure the `tooltip` section to showcase the additional information in the widget’s tooltip without affecting the visualization. Refer to [this section](/embedded-bi/visualizing-data/working-with-widgets/tooltip-customization/) for more details on configuring the tooltip fields.
 
-### Step 4(Optional): Settings menu options
+### Step 3: Settings menu options
 
-You can `filter`, `format`, and `sort` the data displayed in the widget from the settings menu options.  To open the settings menu, click the `settings` icon. 
+You can `filter,` `format,` and `Rename` the data displayed in the widget from the settings menu options.  To open the settings menu, click the `settings` icon.
 
 The following screenshots shows the various settings menu options based on the type of field configured in the type of section. 
 
-![Settings Menu - Measure fields](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/Measure-fields-Settings.png)
+**Measure field in values**
 
-![Settings Menu - Dimensions](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/Dimensions-Settings.png)
+![Settings Menu - Measure fields](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/measure-field.png)
+
+**Dimension field in value** 
+
+![Settings Menu - Dimensions](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/dimension-field.png)
+
+
+#### Renaming fields
+
+The configured field names can be edited by using the `Rename` option provided in the settings menu.
+
+![Rename ](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/rename.png)
+
 
 #### Changing the aggregation type
 
 You can change the `aggregation type` of the `measure` section from the settings menu as shown in the following screenshot. Refer to [this section](/embedded-bi/visualizing-data/working-with-widgets/aggregating-value-columns-based-on-type/) for more details.
+
 ![Changing the aggregation type](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/aggregation-type.png)
+
+#### Filtering data
+
+You can use Filters to change the values by selecting the `Filter` option. For more details, refer to the [Measure filter](/embedded-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-measure-column) and [dimension filter](/embedded-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column).
+
+![Filtering data](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/data-filter.png)
+
+#### Measure formatting
+
+You can format the elements by selecting the `Format` option. For more details, refer to the [measure format](/embedded-bi/visualizing-data/working-with-widgets/formatting-measure-type-column/).
+
+![Measure formatting](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/data-format.png)
 
 #### Drill Down
 
 When the second value is added to the x-axis or y-axis section, the alert message will be shown.
 
-![Drill confirmation alert](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/drill-alert.png)
+![Drill confirmation alert](/static/assets/embedded/visualizing-data/visualization-widgets/images/drillalert.png)
 
 Click `Yes` to enable the option. If you click `No,` then a single value will be added to the respected section( x-axis or y-axis).
 
@@ -120,84 +148,85 @@ Click `Yes` to enable the option. If you click `No,` then a single value will be
 
 ![Drilled view](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/drilled-view.png)
 
-#### Filtering data
-
-You can use Filters to change the values by selecting the `Filter` option. For more details, refer to [Measure filter](/embedded-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-measure-column) and [dimension filter](/embedded-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column).
-
-![Filtering data](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/Filtering-data.png)
-
-#### Measure formatting
-
-You can format the elements by selecting the `Format` option. For more details, refer to [measure format](/embedded-bi/visualizing-data/working-with-widgets/formatting-measure-type-column/).
-![Measure formatting](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/Measure-formatting.png)
-
-#### Renaming fields
-
-The configured field names can be edited by using the `Rename` option provided in the `settings` menu. 
-
-1. Click the Settings menu icon and select the `Rename` menu option.
-![Click Rename](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/Click-Rename.png)
-
-2. The column name will become editable now. Enter the required text and press `enter` key.
-![Modify field name](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/Modify-field-name.png)
-
-3. Now, the changes will be reflected in the Heatmap widget’s tooltip and in the axes titles.
-![After rename](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/After-rename.png)
-
 ## How to format Heatmap widget
 
 You can format the `Heatmap` for better illustration of the view that you require using the settings available in the `Properties` tab.
 
 ### General settings
 
-![General settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/General-settings.png)
-
 #### Name
+
 This allows you to set `title` for this Heatmap widget.
 
 #### Subtitle
-This allows you to set `subtitle` for this Heatmap widget. It is optional.
+
+This allows you to set `subtitle` for this Heatmap widget. 
 
 #### Description
-This allows you to set brief explanation about this Heatmap widget. It is optional.
+
+This allows you to set brief explanation about this Heatmap widget.
+
+![General settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/general-settings.png)
 
 ### Cell settings
 
-![Cell settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/Cell-settings.png)
+![Cell settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/cellsettings.png)
 
 #### Show label
+
 This allows you to toggle the visibility of value labels.
 
-![Label](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/Label.png)
+![Label](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/show-label.png)
+
+#### Label Color
+
+This allows you to change the color of the label.
+
+![Label Color](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/show-label-color.png)
+
+![Label Color](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/show-label-color-change.png)
 
 #### Cell radius
-This allows you to apply the specified radius to cell corners. Value ranges from 0 to 10. `The Default value is 3`. 
 
-![Cell radius](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/Cell-radius.png)
+This allows you to apply the specified radius to cell corners. The value ranges from 0 to 10. `The Default value is 3.`
+
+![Cell radius](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/cell-radius-settings.png)
+
+![Cell radius](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/cellradius.png)
 
 #### Cell border
-This allows you to toggle the visibility of border surrounding the cell. Value ranges from 0 to 10. `Default value is 1`. 
 
-![Cell border](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/Cell-border.png)
+This allows you to toggle the visibility of the border surrounding the cell. The value ranges from 0 to 10. `Default value is 1.`
+
+![Cell border](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/cellborder-settings.png)
+
+![Cell border](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/cellborder.png)
 
 ### Formatting
 
+You can change the color of the widget.
+
+![Formatting Color](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/formatting-color-settings.png)
+
 #### Monochromatic
+
 This allows you to configure a single-color palette whose saturation will be varied based on the value density.
 
-![Formatting Monochromatic](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/heatmap_formatting_monochromatic.png)
-
 #### Types
-![Color Types](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/heatmap_color_types.png)
+
+![Color Types](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/monochromatic-types.png)
 
 **Across Table**: Monochromatic color applied based on the whole table minimum and maximum data values.
-![Across Table](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/heatmap_across_table.png)
+
+![Across Table](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/across-table.png)
 
 **Column Wise**:Monochromatic color applied based on the individual column wise minimum and maximum data values.
-![Column Wise](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/heatmap_column_wise.png)
+
+![Column Wise](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/column-wise.png)
 
 **Row Wise**: Monochromatic color applied based on the individual row wise minimum and maximum data values.
-![Row Wise](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/heatmap_row_wise.png)
+
+![Row Wise](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/row-wise.png)
 
 #### Advanced setting
 
@@ -205,106 +234,136 @@ Select Advance setting to configure conditions and apply color to the cells base
 
 ### Legend settings
 
-![Legend settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/Legend-settings.png)
+![Legend settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/legendsettings.png)
 
 #### Show legend
+
 This allows you to toggle the visibility of legend in the heatmap. By default, it will be disabled. 
 
-#### Legend position
-This allows you to change the legend position (selecting through the combo box).
+![Legend settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/legendsettings-show.png)
+
+#### Legend Position
+
+This option allows you to place the legend at the position of **Left, Right, Top, and Bottom**.
 
 ### X-axis settings
 
+![X- axis label - Toggled off](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/x-axis-settings.png)
+
 #### Show axis label
+
 This allows you to enable the visibility of x-axis labels.
 
-![Show axis label - Toggled off](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/Show-axis-label.png)
+![Show axis label - Toggled off](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/showaxis-label.png)
 
 #### Label Color
-This allows you to change the x-axis label color.
 
-![Axis Label color Option](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/x-axis-label-color-option.png)
+This allows you to change the x-axis label color.
 
 ![Axis Label color](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/x-axis-label-color.png)
 
+![Axis Label color Option](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/x-label-color-option.png)
+
+
 #### Show axis title
+
 This allows you to enable the visibility of x-axis title.
 
+![Axis title](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/axistitle.png)
+
 #### Axis title
+
 This allows you to edit the x-axis title for the heatmap. It will reflect in the x-axis title of the heatmap.
 
-![Axis title](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/Axis-title.png)
+![Axis title](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/edit-axis-title.png)
 
 #### Label rotation
+
 This allows you to define the rotation angle for x-axis labels to display.
 
-![Label rotation](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/Label-rotation.png)
+![Label rotation](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/label-rotate.png)
 
 #### Label intersect action
-This allows you to handle the display mode of overlapping labels in the x-axis.
 
-![Label intersect action](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/Label-intersect-action.png)
+**None**
 
-##### None
 This option did not trim the end of overlapping label in the axis.
 
-![None](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/None-option.png)
+![None](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/none.png)
 
-##### Trim
+**Trim**
+
 This option trims the end of overlapping label in the axis.
 
-![Trim](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/Trim-option.png)
+![Trim](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/trim.png)
 
 #### Inversed axis
+
 This allows you to change the axis label’s placement order from left to right in the x-axis.
 
-![Inversed axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/Inversed-axis.png)
+![Inversed axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/inversedaxis.png)
 
 #### Opposed axis
+
 This allows you to change the axis position from bottom to top in the x-axis.
 
-![Opposed axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/Opposed-axis.png)
+![Opposed axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/opposedaxis.png)
 
 ### Y-axis settings
 
+![axis label](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/y-settings.png)
+
 #### Show axis label
+
 This allows you to enable the visibility of y-axis labels.
 
-![axis label](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/axis-label.png)
+![axis label](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/y-axis-settings.png)
 
 #### Label Color
+
 This allows you to change the y-axis label color.
 
-![Axis Label color Option](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/y-axis-label-color-option.png)
+![Axis Label color Option](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/y-label-color-option.png)
 
 ![Axis Label color](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/y-axis-label-color.png)
 
 #### Show axis title
+
 This allows you to enable the visibility of y-axis title.
 
 ![axis title](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/y-axis-title.png)
 
 #### Axis title
+
 This allows you to edit the x-axis title for the Heatmap. It will reflect in the y-axis title of the Heatmap.
 
+![axis title](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/y-axis-title-edit.png)
+
 #### Inversed axis
+
 This allows you to change the axis label’s placement order from bottom to top in the y-axis.
 
-![Inversed y-axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/Inversed-y-axis.png)
+![Inversed y-axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/inversed-axis-y.png)
 
 #### Opposed axis
+
 This allows you to change the axis position from left to right in the y-axis.
 
-![Opposed y-axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/Size-customized-Heatmap.png)
+![Opposed y-axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/opposed-axis-y.png)
 
 ### Link
-To configure the linking to URL or dashboard with the widget using its settings. For more details, refer to [Linking](/embedded-bi/visualizing-data/working-with-widgets/linking-urls-and-dashboards/).
+
+To configure the linking to URL or dashboard with the widget using its settings. For more details, refer to the [Linking](/embedded-bi/visualizing-data/working-with-widgets/linking-urls-and-dashboards/).
+
+![Link](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/link.png)
 
 ### Filter 
 
+![Filter](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/filter.png)
+
 #### Act as master widget
 
-This allows you to define the Heatmap widget as a master widget, such that its filter action can be listened by other widgets in the Dashboard.
+This allows you to define the Heatmap widget as a master widget such that its filter action can be listened by other widgets in the Dashboard.
 
 #### Ignore filter actions
 
@@ -316,14 +375,6 @@ Using this option, you can enable or disable the hierarchical Top N filtering. W
 
 When the hierarchical filter option is enabled, the Top N will be applied for each individual column separately based on the number set for each column.
 
-### Container appearance
-
-This section contain the property for pivot grid container's layout.
-
-![Container appearance properties](/static/assets/embedded/visualizing-data/visualization-widgets/images/ContainerAppearance.png)
-
-This allows you to customize the widget container appearance, widget title’s properties and provides options to enable/ disable widget exporting options. For more detailed information, refer to [container appearance properties](/embedded-bi/visualizing-data/working-with-widgets/customizing-container-appearance/).
-
 ## How to apply conditional formatting in Heatmap
 
 In case, if you have the requirement to highlight any data based on some conditions, you might be required to enable the advanced formatting option.
@@ -331,64 +382,78 @@ In case, if you have the requirement to highlight any data based on some conditi
 ### How to enable advanced formatting
 
 1. In the properties pane, under the `Formatting` section, click the `Advanced Setting` radio button.
-![Advanced setting enable](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/Advanced-setting-enable.png)
+
+![Advanced setting enable](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/advanced-settings.png)
 
 2. This will open the `Conditional Formatting` dialog.
-![Conditional formatting dialog](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/Conditional-formatting-dialog.png)
+
+![Conditional formatting dialog](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/conditionalformatting-dialog.png)
 
 3. Select the `mode` and enter the conditions as required and click the `Save` button to apply.
-![Apply conditions](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/Apply-conditions.png)
 
 4. Now, the widget visualization will be updated based on the conditions.
-![Heatmap with conditional formatting](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/Formatted-result.png)
+
+![Heatmap with conditional formatting](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/formattedresult.png)
 
 Refer to the following sections for the detailed steps on using the [`Gradient`](/embedded-bi/visualizing-data/visualization-widgets/heat-map/#gradient) and [`Rule`](/embedded-bi/visualizing-data/visualization-widgets/heat-map/#rule-based-condition-mode) modes. 
 
 ### Gradient mode
+
 You can customize the fill color of the heatmap using the gradient based conditional formatting. This is the default mode. 
 
 #### Based on field
+
 The configured value fields. Based on field cannot be changed in the conditional formatting dialog. 
 
 #### Summary type
+
 The summary type of the configured value field. 
 
 #### Low, mid, and high values
+
 You can define your range by entering the low, mid, and high values. 
 
 > **NOTE:** It is optional, if no value is entered, then the ranges will be auto calculated based on the minimum and maximum values from the data source. 
 
 #### Default color
+
 If the region of Heatmap value is out of the specified range, then the color specified in the default color will be applied.
 
 ### Rule based condition mode
+
 This allows you to customize the fill color of the Heatmap based on one or more numerical / text conditions.
 
-![Rule mode](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/Rule-mode.png)
+![Rule mode](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/rulemode.png)
 
 #### Condition name
+
 You can give a meaningful name to the applied conditions.
 
 #### Condition type
+
 Choose the condition for measure field from the highlighted conditions.
 
-![Condition type](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/Condition-type.png)
+![Condition type](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/conditiontype.png)
 
 #### Value
+
 You can mention the condition value.
 
 #### Fill color
+
 Select the fill color for that condition using the color picker. 
 
 #### Add condition
+
 Click add condition to specify add new condition. 
 
-![Add rules](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/Add-rules.png)
+![Add rules](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/addrules.png)
 
 #### Delete condition
+
 Click the delete button to remove the existing condition. 
 
-![Delete rules](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/Delete-rules.png)
+![Delete rules](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/remove-rules.png)
 
 ## Cohort Visualization
 
@@ -398,9 +463,100 @@ Cohort visualization examines the outcomes of predetermined groups, called cohor
 
 1. Drag and Drop the heatmap widget and bind the measure values in it.
 
-2. Go to `Formatting section` and change the drop down value to `Row Wise`.
+2. Go to the `Formatting section` and change the drop-down value to `Row Wise.`
 
-![Formatting Section](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/formatting_section.png)
+![Formatting Section](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/formatting-section.png)
+
 ![Cohort Visualization](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/cohorot_visulization.png)
 
 Above screenshot shows cohort visualization in heatmap widget.
+
+### Container Appearance
+
+![Container Appearance](/static/assets/embedded/visualizing-data/visualization-widgets/images/container-appearance.png)
+
+### Title Alignment
+
+This allows you to handle the alignment of widget title to either **left, center, or right**.
+
+### Title Color
+
+This allows you to apply the text `color` to the widget title.
+
+### Title Auto Font Size
+
+On enabling Auto Font Size, the font size of the title will be adjusted automatically if the resolution of the screen varies.
+
+**Font Size**
+
+This allows you to apply the specified size of the font to the widget title if the **Title Auto Font Size** is disabled. Value can be between 10 and 44.
+
+### Subtitle Auto Font Size
+
+On enabling Auto Font Size, the font size of the subtitle will be adjusted automatically if the resolution of the screen varies.
+
+**Font Size**
+
+This allows you to apply the specified size of the font to the widget title if the **Subtitle Auto Font Size** is disabled. Value can be between 10 and 32.
+
+### Show Border
+
+This allows you to toggle the visibility of `border` surrounding the widget.
+
+### Corner Radius
+
+This allows you to apply the specified `radius` to the widget corners if the **Show Border** is enabled. Value can be between 0 and 10.
+
+### Show Background Image
+
+This allows you to set the **background image** for the heat map widget.
+
+### Background Color
+
+This allows you to set the **background color** to the heat map widget.
+
+### Transparency
+
+This property allows you to specify the **transparency** for the `background color.`
+
+### Container actions
+
+![Container Actions](/static/assets/embedded/visualizing-data/visualization-widgets/images/container-actions.png)
+
+#### Show Header
+
+This allows you to enable or disable the `widget title` of the heat map. 
+
+#### Allow Maximize View
+
+This allows you to enable or disable the `maximized mode` of the heat map widget. The visibility of the maximize icon in the widget header will be defined based on the setting in the viewer.
+
+#### Allow CSV Export
+
+This allows you to enable or disable the `CSV export` option for the heat map widget. Enabling this allows you to export the summarized data of the widget view to CSV format in the viewer.
+
+#### Allow Excel Export
+
+This allows you to enable or disable the `Excel export` option for the heat map widget. Enabling this allows you to export the summarized data of the widget view to `(.xlsx or .xls)` format in the viewer.
+
+#### Allow Image Export
+
+This allows you to enable or disable the `Image export` option for the heat map widget. Enabling this allows you to export the view of the widget to image format `(.jpg), (.png), or (.bmp)` in the viewer.
+
+#### Allow PDF Export
+
+This allows you to enable or disable the `PDF export` option for the heat map widget. Enabling this allows you to export the view of the widget to pdf format in the viewer.
+
+#### Enable Comments
+
+This allows you to enable or disable `comment` for the dashboard widget. For more details, refer to this [link](/embedded-bi/visualizing-data/working-with-widgets/commenting-widget/).
+
+#### Allow View Underlying Data
+
+This allows you to visualize the raw data associated with a widget at runtime. 
+
+To learn more about viewing the underlying widget data, refer to the [view data documentation](/embedded-bi/visualizing-data/working-with-widgets/view-data/). 
+
+#### Pin Widget
+
+This allows you to pin the widget.

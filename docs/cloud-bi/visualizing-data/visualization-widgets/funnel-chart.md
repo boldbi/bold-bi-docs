@@ -25,7 +25,7 @@ To configure data in the Funnel Chart, follow these steps:
 
 2. Click the **Data Source** icon in the configuration panel.
 
-![Data source button](/static/assets/cloud/visualizing-data/visualization-widgets/images/funnel-chart/funnelchart_databutton.png)
+![Data source button](/static/assets/cloud/visualizing-data/visualization-widgets/images/databutton.png)
 
 3. Click **CREATE NEW** to launch a new connection from the connection-type panel.
 
@@ -37,7 +37,7 @@ To configure data in the Funnel Chart, follow these steps:
 
 5. In the NEW DATA SOURCE configuration panel, choose the file path and click **Preview &Connect**.
 
-![Connect button](/static/assets/cloud/visualizing-data/visualization-widgets/images/Connectbutton.png)
+![Connect button](/static/assets/cloud/visualizing-data/visualization-widgets/images/connectbutton.png)
 
 6. Drag your preferred table or view from the left pane from the data design view and click **Save**.
 
@@ -51,53 +51,77 @@ To configure data in the Funnel Chart, follow these steps:
 
 ![Assign data](/static/assets/cloud/visualizing-data/visualization-widgets/images/funnel-chart/assigndata.png)
 
-The data tab will be opened with the available measures and dimension sections from the connected data source.
+The **ASSIGN DATA** tab will be opened with the available measures and dimension sections from the connected data source.
 
 ![Chart data](/static/assets/cloud/visualizing-data/visualization-widgets/images/funnel-chart/chartdata.png)
 
-**Adding values**
+### Adding value(s)
 
-You can add the required data from the Measures and Dimensions sections to the required field.
+You can add more than one measure section to the Value(s) field by dragging the required measures.
 
-![Add data to value](/static/assets/cloud/visualizing-data/visualization-widgets/images/funnel-chart/Add-data.png)
+![Add data to value](/static/assets/cloud/visualizing-data/visualization-widgets/images/funnel-chart/add-data.png)
 
-You can add more than one measure section to the Values field by dragging the required measures.
+Click **Settings** to change the name by using the `Rename` and required summary type from the available summary types shown in the settings.
 
-![Add more data](/static/assets/cloud/visualizing-data/visualization-widgets/images/funnel-chart/Add-more-data.png)
+![Settings option](/static/assets/cloud/visualizing-data/visualization-widgets/images/funnel-chart/funnelchart-settings.png)
 
-Now, the Funnel Chart will be rendered as follows.
+#### Filtering data
 
-![Configured Funnel chart](/static/assets/cloud/visualizing-data/visualization-widgets/images/funnel-chart/configured-widget.png)
-
-Click **Settings** to change the required summary type from the available summary types shown in the settings.
-
-![Settings option](/static/assets/cloud/visualizing-data/visualization-widgets/images/funnel-chart/funnelchart_settings.png)
-
-You can filter the data displayed in the Funnel Chart by using the Filter option. For more details, refer to [filter](/cloud-bi/visualizing-data/working-with-widgets/configuring-widget-filters/).
+You can filter the data displayed in the Funnel chart by using the Filter option. For more details, refer to the [filter](/cloud-bi/visualizing-data/working-with-widgets/configuring-widget-filters/).
 
 ![Filter option](/static/assets/cloud/visualizing-data/visualization-widgets/images/funnel-chart/filteroption.png)
 
-You can format the data displayed in the chart by using the Format option. For more details, refer to [measure format](/cloud-bi/visualizing-data/working-with-widgets/formatting-measure-type-column/).
+#### Formatting data
+
+You can format the data displayed in the chart by using the Format option. For more details, refer to the [measure format](/cloud-bi/visualizing-data/working-with-widgets/formatting-measure-type-column/).
 
 ![Format option](/static/assets/cloud/visualizing-data/visualization-widgets/images/funnel-chart/formatoption.png)
 
-To remove the added value fields, click **Remove**.
+To remove the added value fields, click the **Remove** option.
 
 ![Remove button](/static/assets/cloud/visualizing-data/visualization-widgets/images/funnel-chart/removebutton.png)
 
-**Adding columns**
+#### Adding columns
 
 Drag data from the Dimension field to the Column(s) field.
 
-![Add data to column](/static/assets/cloud/visualizing-data/visualization-widgets/images/funnel-chart/funnelchart_columnfield.png)
+![Add data to column](/static/assets/cloud/visualizing-data/visualization-widgets/images/funnel-chart/funnelchart-columnfield.png)
 
-The Funnel Chart will be rendered as follows.
+The Funnel chart will be rendered as follows.
 
 ![Funnel chart with dimension field](/static/assets/cloud/visualizing-data/visualization-widgets/images/funnel-chart/funnel-chart.png)
 
-You can add more than one value to the Columns field. The following message will open.
+You can change the Settings.
 
-![Drill alert](/static/assets/cloud/visualizing-data/visualization-widgets/images/funnel-chart/drillalert.png)
+![Column settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/funnel-chart/columnsettings.png)
+
+#### Renaming fields
+
+The configured field names can be edited by using the `Rename` option provided in the settings menu.
+
+#### Sorting data
+
+You can sort the dimension data using the Sort option under the Settings menu list. To apply sorting for the data, refer to the [sort](/cloud-bi/visualizing-data/working-with-widgets/advanced-sorting/#dimension-column).
+
+![Sort option](/static/assets/cloud/visualizing-data/visualization-widgets/images/funnel-chart/sortoption.png)
+
+#### Filtering data 
+
+You can apply a filter by selecting the `Filter(s)` option in settings.
+
+![Filter option](/static/assets/cloud/visualizing-data/visualization-widgets/images/funnel-chart/filtering.png)
+
+> **NOTE:**  By default, the filter will be set for the top 5 records.
+
+You can apply filters by selecting the filter option in settings. For more details, refer to [filters](/cloud-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column).	
+
+Similarly, you can add the Measures and Expression Columns to the Column field.
+
+#### Multi-Level Drill Down
+
+You can add more than one value to the Columns field. The following dialog box will open.
+
+![Drill alert](/static/assets/cloud/visualizing-data/visualization-widgets/images/drillalert.png)
 
 You can enable this option to get further details about the selected chart region. To enable drill down, click **Yes**.
 
@@ -107,35 +131,20 @@ You can enable this option to get further details about the selected chart regio
 
 The drilled-down view of the selected chart region will be as follows.
 
-![Drilled chart](/static/assets/cloud/visualizing-data/visualization-widgets/images/funnel-chart/Drilled-chart.png)
+![Drilled chart](/static/assets/cloud/visualizing-data/visualization-widgets/images/funnel-chart/drilled-chart.png)
 
-You can change the Settings.
 
-![Column settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/funnel-chart/columnsettings.png)
-
-You can sort the dimension data using the Sort option under the Settings menu list. To apply sorting for the data, refer to [sort](/cloud-bi/visualizing-data/working-with-widgets/advanced-sorting/#dimension-column).
-
-![Sort option](/static/assets/cloud/visualizing-data/visualization-widgets/images/funnel-chart/sortoption.png)
-
-You can apply a filter by selecting the filter option in settings.
-
-> **NOTE:**  By default, the filter will be set for the top 5 records.
-
-You can apply filters by selecting the filter option in settings. For more details, refer to [filters](/cloud-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column).	
-
-Similarly, you can add the Measures and Expression Columns to the Column field.
-
-**Adding rows**
+#### Adding rows
 
 You can drag the Dimension into the Rows field.
 
-![Add data to row](/static/assets/cloud/visualizing-data/visualization-widgets/images/funnel-chart/funnelchart_row.png)
+![Add data to row](/static/assets/cloud/visualizing-data/visualization-widgets/images/funnel-chart/funnelchart-row.png)
 
-You can apply [filter](/cloud-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column) and [sort](/cloud-bi/visualizing-data/working-with-widgets/advanced-sorting/#dimension-column) options for the rows field, if required.
+You can apply the [filter](/cloud-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column) and [sort](/cloud-bi/visualizing-data/working-with-widgets/advanced-sorting/#dimension-column) options for the rows field, if required.
 
 This will render a funnel chart in the series.
 
-![Funnel chart](/static/assets/cloud/visualizing-data/visualization-widgets/images/funnel-chart/funnelchart_series.png)
+![Funnel chart](/static/assets/cloud/visualizing-data/visualization-widgets/images/funnel-chart/funnelchart-series.png)
 
 Scroll down to see all charts. 
 
@@ -151,7 +160,7 @@ To configure data in Funnel Chart, follow these steps:
 
 3. Focus the funnel chart and click the Widget Settings icon.
 
-![Widget settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/funnel-chart/Widget-settings.png)
+![Widget settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/funnel-chart/widget-settings.png)
 
 The property window will be opened as follows.
 
@@ -159,43 +168,43 @@ The property window will be opened as follows.
 
 You can see the list of properties available for the widget with default value.
 
-**General settings**
+#### General settings
 
-![Title](/static/assets/cloud/visualizing-data/visualization-widgets/images/funnel-chart/Title.png)
+![Title](/static/assets/cloud/visualizing-data/visualization-widgets/images/funnel-chart/title.png)
 
-**Name**
+#### Name
 
-Allows you to set a title for the Funnel Chart widget.
+Allows you to set a `title` for the Funnel chart widget.
 
-**Subtitle**
+#### Subtitle
 
-Allows you to set a subtitle for the Funnel Chart widget.
+Allows you to set a `subtitle` for the Funnel chart widget.
 
-**Description**
+#### Description
 
-Set a description for the Funnel Chart widget, whose visibility will be denoted by **i** icon, and hovering over it will display the description in a tooltip.
+Set a `description` for the Funnel chart widget, whose visibility will be denoted by **i** icon, and hovering over it will display the description in a tooltip.
 
-**Basic settings**
+#### Basic settings
 
-![Basic settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/funnel-chart/Basic-settings.png)
+![Basic settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/funnel-chart/basic-settings.png)
 
-**Chart type**
+#### Chart type
 
 Switch the widget view from the current chart type to another chart type.
 
-**Enable animation**
+#### Enable animation
 
-Enable the series rendering in animated mode.
+It animates the measure values when you enable the `Enable Animation.`
 
-**Show legend**
+#### Show legend
 
-A Legend is text used to describe the plotted data. It allows you to toggle the visibility of the legend in the chart and change the legend text position (selecting through the combo box).
+A Legend is the text used to describe the plotted data. It allows you to toggle the visibility of the legend in the chart and change the legend text position (selecting through the combo box).
 
-![Show legend](/static/assets/cloud/visualizing-data/visualization-widgets/images/funnel-chart/Show-legend.png)
+![Show legend](/static/assets/cloud/visualizing-data/visualization-widgets/images/funnel-chart/show-legend.png)
 
 Enabling the Custom Legend Text option will allow you to define a custom text (through the text area) to display for each legend series (selecting through the combo box) in the chart.
 
-**Legend Label Color**
+#### Legend Label Color
 
 This allows you to change the chart legend title and label colors.
 
@@ -203,119 +212,247 @@ This allows you to change the chart legend title and label colors.
 
 ![Chart Legend Color](/static/assets/cloud/visualizing-data/visualization-widgets/images/funnel-chart/legend-label-color.png)
 
-**Show value labels**
+#### Customization
+
+You can customize the legend text through the `Custom Legend Settings` dialog. This dialog will show the legend text list as labels at left and corresponding text area at right to add the formatted text to display instead.
+
+![Legend customization](/static/assets/cloud/visualizing-data/visualization-widgets/images/funnel-chart/legendcustomize.png)
+
+![Legend customization Change](/static/assets/cloud/visualizing-data/visualization-widgets/images/funnel-chart/legendcustomize-change.png)
+
+#### Legend Position
+
+A Legend is a text used to describe the data plotted. This option allows you to place the legend at the position of **Left, Right, Top, and Bottom**.
+
+#### Legend Shape
+
+This allows you change the **shape** of the legend.
+
+***Circle***
+
+This option allows you to change the shape of the legend in a `Circle.`
+
+![Show Legend shape](/static/assets/cloud/visualizing-data/visualization-widgets/images/funnel-chart/legend-shape.png)
+
+***Series Type***
+
+This option allows you to change the shape of the legend in `Series.`
+
+![Show Legend shape Series](/static/assets/cloud/visualizing-data/visualization-widgets/images/funnel-chart/legendshape-series.png)
+
+#### Legend Title
+
+This allows you to add the legend title for the chart. It will reflect with the `Show Legend.`
+
+![Show Legend Title](/static/assets/cloud/visualizing-data/visualization-widgets/images/funnel-chart/legendtitle.png)
+
+
+#### Show value labels
 
 Toggle the visibility of value labels.
 
-![Show value labels](/static/assets/cloud/visualizing-data/visualization-widgets/images/funnel-chart/Show-value-labels.png)
+![Show value labels](/static/assets/cloud/visualizing-data/visualization-widgets/images/funnel-chart/show-value-labels.png)
 
-**Value Label Color**
+#### Value Label Color
 
 This allows you to customize value label's color.
 
-![Value label Color Option](/static/assets/cloud/visualizing-data/visualization-widgets/images/funnel-chart/data-label-color-option.png)
-
 ![Value label Color](/static/assets/cloud/visualizing-data/visualization-widgets/images/funnel-chart/data-label-color.png)
 
-**Data label**
+![Value label Color Option](/static/assets/cloud/visualizing-data/visualization-widgets/images/funnel-chart/data-label-color-option.png)
+
+#### Data label
 
 Define the display format as a value, percentage, or both.
 
-**Value**
+#### Category
 
-![Value](/static/assets/cloud/visualizing-data/visualization-widgets/images/funnel-chart/Value.png)
+![Value](/static/assets/cloud/visualizing-data/visualization-widgets/images/funnel-chart/category.png)
 
-**Percentage**
+#### Value
 
-![Percentage](/static/assets/cloud/visualizing-data/visualization-widgets/images/funnel-chart/Percentage.png)
+![Value](/static/assets/cloud/visualizing-data/visualization-widgets/images/funnel-chart/value.png)
 
-**Value and percentage**
+#### Percentage
 
-![Value and percentage](/static/assets/cloud/visualizing-data/visualization-widgets/images/funnel-chart/Value-and-percentage.png)
+![Percentage](/static/assets/cloud/visualizing-data/visualization-widgets/images/funnel-chart/percentage.png)
 
+#### Category and percentage
 
-**Value labels suffix**
+![Value and percentage](/static/assets/cloud/visualizing-data/visualization-widgets/images/funnel-chart/category-and-value.png)
+
+#### Category and percentage
+
+![Value and percentage](/static/assets/cloud/visualizing-data/visualization-widgets/images/funnel-chart/category-and-percentage.png)
+
+#### Value and percentage
+
+![Value and percentage](/static/assets/cloud/visualizing-data/visualization-widgets/images/funnel-chart/value-and-percentage.png)
+
+### All Details
+
+![Value and percentage](/static/assets/cloud/visualizing-data/visualization-widgets/images/funnel-chart/alldetails.png)
+
+### Value labels suffix
 
 Set a suffix for the value labels.
 
-![Value labels suffix](/static/assets/cloud/visualizing-data/visualization-widgets/images/funnel-chart/Value-labels-suffix.png)
+![Value labels suffix](/static/assets/cloud/visualizing-data/visualization-widgets/images/funnel-chart/value-labels-suffix.png)
 
-**Filter**
+#### Link
 
-![Filter](/static/assets/cloud/visualizing-data/visualization-widgets/images/funnel-chart/Filter.png)
+You can enable linking and configure navigating to a general URL with or without parameters. For more details, refer to the [Linking](/cloud-bi/visualizing-data/working-with-widgets/linking-urls-and-dashboards/).
 
-**Act as Master Widget**
+![Link](/static/assets/cloud/visualizing-data/visualization-widgets/images/funnel-chart/link.png)
 
-Define the Funnel Chart widget as a master widget such that its filter action will be shown in other widgets of the dashboard.
+#### Series palette
 
-**Ignore filter actions**
+By toggling the `series palette,` you can able to customize the proportion series segments’ colors.
 
-Define the Funnel Chart widget to ignore the filter actions applied to other widgets in the dashboard.
+![Series palette](/static/assets/cloud/visualizing-data/visualization-widgets/images/funnel-chart/seriespalette.png)
 
-**Hierarchical filter**
+#### Based On
 
-Through this option, you can enable or disable hierarchical Top `N` filtering. While applying Top N filter with multiple dimension columns, the data returned can be customized based on whether the filtering needs to be done as flat or based on the hierarchy of added dimension columns.
+You can choose the field from the Based On section to apply the conditions.
 
-When the Hierarchical Filter option is enabled, the Top N filter will be applied for each individual column separately based on the number set for each column.
+This section shows a palette of colors. By clicking the colored square, the color picker will open. You can choose a color and change the color by changing the corresponding hexadecimal value at the right.
 
-**Link**
+![Series palette](/static/assets/cloud/visualizing-data/visualization-widgets/images/funnel-chart/seriescolorpalette.png)
 
-![Link](/static/assets/cloud/visualizing-data/visualization-widgets/images/funnel-chart/Link.png)
+![Series palette Customization](/static/assets/cloud/visualizing-data/visualization-widgets/images/funnel-chart/color-customization.png)
 
-You can enable linking and configure navigating to a general URL with or without parameters. For more details, refer to [Linking](/cloud-bi/visualizing-data/working-with-widgets/linking-urls-and-dashboards/).
+### Use Default Palette
 
-**Container appearance**
+This option shows when you add more than one measure field to the Value(s).
 
-![Container appearance](/static/assets/cloud/visualizing-data/visualization-widgets/images/funnel-chart/Container-appearance.png)
-
-**Title alignment**
-
-Handle the alignment of the widget title to left, center, or right.
-
-**Title color**
-
-Apply a text color to the widget title.
-
-**Show border**
-
-Toggle the visibility of the border surrounding the widget.
-
-**Corner radius**
-
-Apply a specified radius to widget corners, if the `Show Border` property is enabled. Values can be between 0 and 10.
-
-**Show maximize**
-
-Enable or disable the maximized mode of the Funnel Chart widget. The visibility of the maximize icon in the widget header will be defined based on this setting in the viewer.
-
-**CSV export**
-
-Enable or disable the CSV export option for the Funnel Chart widget. Enabling this allows you to export the summarized data of the widget view to CSV format in the viewer.
-
-**Excel export**
-
-Enable or disable the Excel export option for the Funnel Chart widget. Enabling this allows you to export the summarized data of the widget view to .xlsx or .xls format in the viewer.
-
-**Image export**
-
-Enable or disable the image export option for the Funnel Chart widget. Enabling this allows you to export the view of the widget to image format (.jpg, .png, or .bmp) in the viewer.
-
-**Enable comments**
-
-Enable or disable the comments for the dashboard widget. For more details refer [here](/cloud-bi/visualizing-data/working-with-widgets/commenting-widget/).
-
-**Series palette**
-
-Customize the chart series color through the Series Palette section.
-
-***Use Default Palette***
-
-Toggle the series color between the default palette and a custom palette. By default, the Use Default Palette option is toggled on and the default palette will be applied to proportion series segments.
-
-![Series color palette](/static/assets/cloud/visualizing-data/visualization-widgets/images/funnel-chart/seriescolorpalette.png)
-
-By toggle off the Use Default Palette, you can customize the proportion series segments' colors. This section shows a palette of colors. By clicking the colored square, the color picker will open. You can choose a color and change the series color by changing the corresponding hexadecimal value at the right.
+By toggle off the `Use Default Palette,` you can customize the proportion series segments' colors by clicking the colored squares.
 
 ![Series color palette window](/static/assets/cloud/visualizing-data/visualization-widgets/images/funnel-chart/series-color-palette-window.png)
 
-![Funnel chart Series color palette](/static/assets/cloud/visualizing-data/visualization-widgets/images/funnel-chart/funnelchart_seriescolorpalette.png)
+#### Font Settings
+
+Font Settings section allows you to enable the auto font size property.
+
+![Font Settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/funnel-chart/fontsettings.png)
+
+#### Legend
+
+On enabling Auto Font Size option for Legend , the font size of the legend will be adjusted automatically if the resolution of the screen varies. 
+
+#### Legend Title
+
+On enabling Auto Font Size option for Legend Title, the font size of the legend title will be adjusted automatically if the resolution of the screen varies.
+
+#### Value Label
+
+On enabling Auto Font Size option for Value label, the font size of the Value Label will be adjusted automatically if the resolution of the screen varies.
+
+>**NOTE**:  The Legend Auto Font size, Legend Title Auto Font Size, and Value Label  property  only show when the Show Legend and Show Value Label property is enabled in the basic settings.
+
+#### Filter
+
+![Filter](/static/assets/cloud/visualizing-data/visualization-widgets/images/funnel-chart/filter.png)
+
+#### Act as Master Widget
+
+Define the Funnel chart widget as a `master widget` such that its filter action will be shown in other widgets of the dashboard.
+
+#### Ignore filter actions
+
+Define the Funnel chart widget to ignore the filter actions applied to other widgets in the dashboard.
+
+#### Enable Hierarchical filter
+
+Through this option, you can enable or disable hierarchical `Top N` filtering. While applying the `Top N` filter with multiple dimension columns, the data returned can be customized based on whether the filtering needs to be done as flat or based on the hierarchy of added dimension columns.
+
+When the Hierarchical Filter option is enabled, the `Top N` filter will be applied for each individual column separately based on the number set for each column.
+
+### Container Appearance
+
+![Container Appearance](/static/assets/cloud/visualizing-data/visualization-widgets/images/funnel-chart/container-appearance.png)
+
+### Title Alignment
+
+This allows you to handle the alignment of widget title to either **left, center, or right**.
+
+### Title Color
+
+This allows you to apply the text `color` to the widget title.
+
+### Title Auto Font Size
+
+On enabling Auto Font Size, the font size of the title will be adjusted automatically if the resolution of the screen varies.
+
+**Font Size**
+
+This allows you to apply the specified size of the font to the widget title if the **Title Auto Font Size** is disabled. Value can be between 10 and 44.
+
+### Subtitle Auto Font Size
+
+On enabling Auto Font Size , the font size of the subtitle will be adjusted automatically if the resolution of the screen varies.
+
+**Font Size**
+
+This allows you to apply the specified size of the font to the widget title if the **Subtitle Auto Font Size** is disabled. Value can be between 10 and 32.
+
+### Show Border
+
+This allows you to toggle the visibility of `border` surrounding the widget.
+
+### Corner Radius
+
+This allows you to apply the specified `radius` to the widget corners if the **Show Border** is enabled. Value can be between 0 and 10.
+
+### Show Background Image
+
+This allow you to set the **background image** for the funnel chart widget.
+
+### Background Color
+
+This allows you to set the **background color** to the funnel chart widget.
+
+### Transparency
+
+This property allows you to specify the **transparency** for the `background color.`
+
+### Container actions
+
+![Container Actions](/static/assets/cloud/visualizing-data/visualization-widgets/images/funnel-chart/container-actions.png)
+
+#### Show Header
+
+This allows you to enable or disable the `widget title` of the funnel chart. 
+
+#### Allow Maximize View
+
+This allows you to enable or disable the `maximized mode` of the funnel chart widget. The visibility of the maximize icon in the widget header will be defined based on the setting in the viewer.
+
+#### Allow CSV Export
+
+This allows you to enable or disable the `CSV export` option for the funnel chart widget. Enabling this allows you to export the summarized data of the widget view to CSV format in the viewer.
+
+#### Allow Excel Export
+
+This allows you to enable or disable the `Excel export` option for the funnel chart widget. Enabling this allows you to export the summarized data of the widget view to `(.xlsx or .xls)` format in the viewer.
+
+#### Allow Image Export
+
+This allows you to enable or disable the `Image export` option for the funnel chart widget. Enabling this allows you to export the view of the widget to image format `(.jpg), (.png), or (.bmp)` in the viewer.
+
+#### Allow PDF Export
+
+This allows you to enable or disable the `PDF export` option for the funnel chart widget. Enabling this allows you to export the view of the widget to pdf format in the viewer.
+
+#### Enable Comments
+
+This allows you to enable or disable `comment` for the dashboard widget. For more details, refer to this [link](/cloud-bi/visualizing-data/working-with-widgets/commenting-widget/).
+
+#### Allow View Underlying Data
+
+This allows you to visualize the raw data associated with a widget at runtime. 
+
+To learn more about viewing the underlying widget data, refer to the [view data documentation](/cloud-bi/visualizing-data/working-with-widgets/view-data/). 
+
+#### Pin Widget
+
+This allows you to pin the widget.

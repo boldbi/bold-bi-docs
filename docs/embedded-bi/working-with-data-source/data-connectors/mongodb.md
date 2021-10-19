@@ -33,14 +33,19 @@ Once you click the data source, the NEW DATA SOURCE configuration panel opens.
 4. Choose **Enable SSL**, if the given MongoDB server configured with SSL Encryption.
 
    > **NOTE:**  Enable **Allow Self-Signed Certificates** if the MongoDB server configured to accept self signed certificates.
-
-5. Choose **None** or **SCRAM** authentication in **Authentication Mechanism** combo box.
-6. Enter valid SCRAM credentials in **Username** and **Password** text boxes, if you choose SCRAM *Authentication Mechanism*.
-7. Select the database you want to query in the listed database associated with the given MongoDB Server in **Database** combo box.
+   
+5. Choose the **Enable SSH**, if the given MongoDB server is configured with SSH Port.
+6. Enter a valid SSH credentials in the **SSH Server name**, **SSH Port**, **SSH User name**, and **SSH Password**.
+    ![Choose data source](/static/assets/embedded/working-with-datasource/data-connectors/images/mongodb/SSH_credentials.png)
+7. Choose **None** or **SCRAM** authentication in the **Authentication Mechanism** combo box.
+8. Enter valid SCRAM credentials in the **Username** and **Password** text boxes if you choose SCRAM *Authentication Mechanism*.
+9. Select the database you want to query in the listed database associated with the given MongoDB Server in the **Database** combo box.
 
    > **NOTE:**  If your MongoDB server reside inside a firewall, contact Bold BI support to get the list of IP addresses to be white-listed.
    
-8. Choose a time interval for **Refresh Settings** using the combo box, to trigger a request to MongoDB server periodically to keep the data in sync with our dashboard.  
+10. Choose a time interval for **Refresh Settings** using the combo box, to trigger a request to MongoDB server periodically to keep the data in sync with our dashboard.
+
+   ![Choose data source](/static/assets/embedded/working-with-datasource/data-connectors/images/mongodb/DataSource.png)
 
 You can also edit the connection information set here using the [Edit Connection](/embedded-bi/working-with-data-source/editing-a-data-connection/) option.
 

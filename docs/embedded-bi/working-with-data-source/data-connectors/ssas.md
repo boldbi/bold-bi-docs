@@ -101,6 +101,34 @@ Query filters can be used to filter data for the created data source. For exampl
 You can configure filter by dragging the required columns to right side canvas.
 
    ![Filter DragDrop](/static/assets/embedded/working-with-datasource/data-connectors/images/ssas/Filter_DragDrop.png)
+   
+## Connecting through MDX query
+
+You can connect to the data source of certain data connections through custom MDX Query.
+By default, the data design view opens with the design view. Switch to the code view by enabling the toggle option in the tools pane in the data design view as shown in the following image.
+   
+   ![Code view toggle](/static/assets/embedded/working-with-datasource/data-connectors/images/ssas/code-view-toggle.png)
+   
+This will open the query editor window as follows.
+   
+   ![Query editor window](/static/assets/embedded/working-with-datasource/data-connectors/images/ssas/query-editor-window.png)
+ 
+In the Query Editor Window, you can enter the **MDX** Query which helps to access table schema information. After entering your query, click the `Run` button in the tools pane. 
+   
+   ![MDX query](/static/assets/embedded/working-with-datasource/data-connectors/images/ssas/mdx-query.png)
+ 
+You can also view the data for your query at bottom of the Query Editor by clicking `Update`.
+  
+  ![Preview data](/static/assets/embedded/working-with-datasource/data-connectors/images/ssas/preview-mdx-query-data.png) 
+ 
+> **Notes:**  We have provided the code view mode support in SQL Server Analysis Services using subselects.  <br />
+Subselects have the following Limitation:  <br />
+•	Usage of **“WITH”** and **“DAX”** queries is restricted and will be provided in the future through extract mode.  <br />
+•	The **WHERE** clause does not filter the subspace.  <br />
+•	The **WHERE** clause changes the default member in the sub-cube only.  <br />
+•	The **NON-EMPTY** clause is not allowed in an axis clause; use a filter (MDX) function expression instead.  <br />
+•	The **HAVING** clause is not allowed in an axis clause. Use a filter (MDX) function expression instead.  <br />
+For reference, click this [link.](https://docs.microsoft.com/en-us/analysis-services/multidimensional-models/mdx/subselects-in-queries?view=asallproducts-allversions)
 
 ## Related links
 [Data Transformation](/embedded-bi/working-with-data-source/transforming-data/joining-table/)

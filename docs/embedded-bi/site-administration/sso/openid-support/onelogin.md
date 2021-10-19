@@ -101,6 +101,11 @@ The fields to be saved in the Bold BI to enable the OneLogin for authentication 
 <td>preferred_username</td>
 </tr>
 
+<tr>
+<td>Logout Endpoint</td>
+<td>It is the endpoint in the OneLogin website that signs the user out.</td>
+</tr>
+
 </table>
 
 ## Configure OneLogin Group Import Settings in Bold BI

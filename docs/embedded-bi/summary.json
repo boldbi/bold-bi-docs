@@ -40,10 +40,12 @@
     },
     "JavaScript based": {
       "Getting Started": "getting-started",
+	  "Getting Started with NPM": "getting-started-with-npm",
       "Designer Embedding": "designer-embedding",
       "Widget Embedding": "widget-embedding",
       "Multiple Dashboard and Widget Embedding": "multiple-dashboard-and-widget-embedding",
       "Pinboard Embedding": "pinboard-embedding",
+      "Datasource Embedding": "datasource-embedding",
       "Authorization Server": "authorize-server",
       "Group Based Authorization": "group-based-authorization",
       "API Reference": {
@@ -92,6 +94,7 @@
       "Data Connectors": {
         "42matters": "42matters",
         "ActiveCampaign": "activecampaign",
+		"Amazon Athena": "amazon-athena",
         "Amazon Aurora": "amazon-aurora",
         "Amazon MWS": "amazon-mws",
         "Amazon RDS": "amazon-rds",
@@ -128,6 +131,7 @@
         "FreshBooks": "freshbooks",
         "Freshdesk": "freshdesk",
         "Freshsales": "freshsales",
+		"FreshworkCRM": "freshwork-crm",
         "Freshservice": "freshservice",
         "Fusebill": "fusebill",
         "Flurry": "flurry",
@@ -178,6 +182,7 @@
         "Optimizely": "optimizely",
         "Oracle": "oracle",
         "Oracle BI Reports": "oracle-bi-reports",
+        "Origami": "origami",
         "Pipeline Deals": "pipeline-deals",
         "Pipedrive": "pipedrive",
         "Podio": "podio",
@@ -219,7 +224,8 @@
         "Zendesk Sell": "zendesk-sell",
         "Zendesk Sunshine": "zendesk-sunshine",
         "Zendesk Support": "zendesk-support",
-        "Zoho Invoice": "zoho-invoice"
+        "Zoho Invoice": "zoho-invoice",
+		"Zoho CRM": "zohocrm"
       },
       "Transforming Data": {
         "Joining Tables": "joining-table",
@@ -241,6 +247,7 @@
         "Query": "user-filter-advanced-query-mode"
       },
       "Dashboard Parameters": "dashboard-parameter",
+	    "Data Sampling": "data-sampling",
       "Configure Dashboard Parameter": "configuring-dashboard-parameters",
       "Configure Custom Attribute": "configuring-custom-attribute",
       "Configure Isolation code": "configuring-isolation-code"
@@ -282,7 +289,10 @@
         "Period Over Period": "period-over-period",
         "Image": "image",
         "Text": "text",
-        "Custom Widget": "custom-widget",
+        "Custom Widget": {
+		  "v4.2.68 or later": "v4.2.68-or-later",
+		  "v4.1.36 or below": "v4.1.36-or-below"
+		},
         "Combine Widget ": "combine-widget"
       },
       "Working with Widgets": {
@@ -335,8 +345,18 @@
       "Site Administration": {
         "Rebranding": "rebranding",
         "Email Settings": "email-settings",
+		"Account Settings": "account-settings",
+        "API Keys": "api-keys",
+		"Authentication": {
+          "Default Authentication": "default-authentication",
+          "OAuth 2.0 Support": "oauth-2.0-support",
+          "OpenID Support": "openid-settings",
+          "JSON Web Token": "json-web-token"
+        },
         "Manage License": "manage-license"
       },
+      "Manage Sites": "manage-sites",
+      "Manage Users": "manage-users",
       "Manage Admin access": "manage-ums-administrator"
     },
     "OAuth Configuration": "oauth-configuration",
@@ -355,6 +375,7 @@
         "Default views": "default-views",
         "Auto-save filter": "auto-save-filter",
         "Theming": "enable-or-disable-dashboard-theme",
+        "Usage analytics": "usage-analytics",
         "Deployment dashboards": "deployment-dashboard"
       },
       "Embed Settings": "embed-settings",
@@ -388,7 +409,8 @@
           "Auth0": "auth0"
         },
 		"JSON Web Token": "json-web-token"
-      }
+      },
+      "Usage Analytics Dashboard": "usage-analytics-dashboard"
     },
     "Managing Resources": {
       "Manage Dashboards": {
@@ -398,7 +420,7 @@
         "Manage Dashboard Views": "manage-dashboard-views",
         "Manage Multi-Tabbed Dashboards": "manage-multi-tabbed-dashboards",
         "Share Filtered Dashboards without saving as Views": "share-filtered-dashboards-without-save-views",
-        "Move, Copy and Clone Dashboards": "move-copy-and-clone-dashboards",
+        "Move and Copy Dashboards": "move-and-copy-dashboards",
         "Version History of Dashboards": "version-history-of-dashboards",
         "Delete Dashboards": "delete-dashboards",
         "Share Dashboards": "share-dashboards",
@@ -407,7 +429,6 @@
       },
       "Manage Data Sources": "manage-data-sources",
       "Manage Pinboards": {
-        "Add Pinboards": "add-pinboards",
         "Rename Pinboards": "rename-pinboards",
         "Duplicate Pinboards": "duplicate-pinboards",
         "Delete Pinboards": "delete-pinboards",
@@ -451,6 +472,14 @@
     },
 	"White Labeling": "white-label-boldbi-mobile-app",
     "REST API Reference": {
+      "Site Administration": {
+        "v1.0": {
+          "API Reference": "api-reference?html=true"
+        },
+        "v2.0": {
+          "API Reference": "api-reference?html=true"
+        }
+      },
       "Interact with REST API": "interact-with-rest-api",
       "v1.0": {
         "API Reference": "api-reference?html=true",
@@ -476,9 +505,9 @@
     "FAQ": {
       "What are the resources will be generated in the installed machine?": "what-all-are-the-files-and-folders-will-be-generated-in-the-installed-machine",
       "How to change the binding in the Bold BI Embedded?": "how-to-change-binding-in-bold-bi-embedded",
+      "How to change the binding in the Bold BI Embedded version 4.1.36?": "how-to-change-binding-in-bold-bi-embedded-v4.1.36",
       "How to change the binding in the Bold BI Embedded version below 4.1.36?": "how-to-change-binding-in-bold-bi-embedded-below-v4.1.36",
       "Where can I find the error and debug log files?": "where-can-i-find-the-error-and-debug-log-files",
-      "How to configure Bold BI Enterprise in Reverse Proxy server?": "how-to-configure-bold-bi-in-reverse-proxy-server",
       "How to update the database in Bold BI Application?": "how-to-reset-database-for-bold-bi-application",
       "How to install the PhantomJS manually?": "how-to-install-phantomjs-manually",
       "What are the features needed to be enabled in IIS to run Bold BI Application in Windows Client OS?": "features-needed-to-enable-in-iis-to-run-bold-bi-in-win-client-os",
@@ -499,21 +528,25 @@
       "How to manually update the license in Bold BI Build?": "how-to-manually-update-the-license",
       "How to resolve the issue - License server unreachable?": "how-to-resolve-license-server-unreachable-issue-in-bold-bi",
       "How to change DNS for each site in Bold BI Embedded?": "how-to-change-dns-for-each-tenant-site",
+      "How to change DNS for each site in Bold BI Embedded version 4.1.36 or below?": "how-to-change-dns-for-each-tenant-site-v4.1.36-or-below",
       "How to create a separate axis for the multiple series charts?": "how-to-create-a-separate-axis-for-the-multiple-series-charts",
       "How many server deployments supported in a single Bold BI license?": "how-many-server-deployments-supported-in-a-single-bold-bi-license",
       "How to get the dashboard list based on group for the specific user?": "how-to-get-the-dashboard-list-based-on-group-for-the-specific-user",
       "What is the purpose of the databases used in the Bold BI?": "purpose-of-the-databases-used-in-the-bold-bi.md",
       "How web-based data source works with Bold BI?": "how-web-based-data-source-works-with-bold-bi-embedded.md",
-      "How to host Bold BI as website in the IIS Express?": "how-to-host-bold-bi-as-website-in-iis-express.md",
-      "How to host Bold BI as website in the IIS?": "how-to-host-bold-bi-as-website-in-iis.md",
       "When you should choose multi-tenancy and with row-level security": "when-you-should-choose-multi-tenancy-and-with-row-level-security.md",
       "How to speed up the data access in SQL Server?": "how-to-speed-up-the-data-access-in-sql-server.md",
       "How the interactions can be made between the Bold BI and external application?": "how-the-interactions-can-be-made-between-the-bold-bi-and-external-application.md",
-      "How to create an ODBC connection to a MySQL database in Windows": "how-to-create-an-odbc-connection-to-a-my-sql-database-in-windows.md",
       "How to share the dashboard to any users securely": "dashboard-authorized-access.md",
       "How to access nested key-values in Snowflake Data source": "accessing-nested-key-values-in-snowflake-data-source.md",
 	  "How to add a new data connector under Bold BI": "how-to-add-a-new-data-connector-under-bold-bi",
-	  "How to add threshold to a Chart widget":"how-to-add-threshold-to-a-chart-widget"
+	  "How to add threshold to a Chart widget":"how-to-add-threshold-to-a-chart-widget",
+    "How to use groups in Bold BI?":"how-to-use-groups-in-bold-bi",
+    "How to customize side bar menu based on user permission?":"how-to-customize-side-bar-menu",
+	"How to resolve jQuery conflict in embedding": "how-to-resolve-jquery-conflict-in-embedding",
+  "What are the database permissions required to set up Bold BI Embedded?": "what-are-the-database-permissions-required-to-set-up-bold-bi-embedded.md",
+  "How to restart the Bold BI Embedded application":"how-to-restart-the-bold-bi-embedded-application"
+
     }
   }
 }

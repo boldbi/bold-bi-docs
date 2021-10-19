@@ -10,108 +10,90 @@ documentation: ug
 
 Bold BI Application can be hosted as sub application in IIS by following the below steps.
 
-## Steps to host Bold BI as Sub Application inside IIS
+## Steps to Create Application Pools for Bold BI as Sub Application inside IIS
 
-The following services are needed to sub-host the Bold BI application:
-  
-  * IDP
-  * Dashboard server
-  * Dashboard Designer
+Each application in Bold BI will be run on a different application pool. To create an application pool, follow these steps:
 
-Refer the following table.
-<table>
-<th>Location</th>
-<th>Application</th>
-<th>Under Sub Application</th>
-<tr>
-<td>C:\Bold BI\IDP</td>
-<td>sub-app</td>
-<td>-</td>
-</tr>
-<tr>
-<td>C:\Bold BI\Dashboard Server</td>
-<td>bi</td>
-<td>sub-app</td>
-</tr>
-<tr>
-<td>C:\Bold BI\Dashboard Designer</td>
-<td>designer</td>
-<td>bi</td>
-</tr>
-</table>
+1. Click `Application Pools` and then right-click to select `Add Application Pool`.
 
-1. Right-click the website hosted in IIS and choose `Add Application` as shown in the following image.
+   ![Add Application Pool](/static/assets/embedded/faq/images/add-application-pool.png)
+
+2. Name the application pool and click `OK`.
+
+   ![Add Application Pool](/static/assets/embedded/faq/images/name-application-pool.png)
+
+3. Right-click the newly created application pool and then select `Advanced Settings`.
+
+   ![Application Pool Advanced Settings](/static/assets/embedded/faq/images/application-pool-advanced-settings.png)
+
+4. Need to change the application pool type as `localSystem` as shown in the following image.
+
+   ![Applicaion Pool Local System](/static/assets/embedded/faq/images/application-pool-local-system.png)
+
+You need to repeat the same procedure for creating application pools for the following Bold BI sub-applications:
+
+   * IDP - Web
+   * IDP - API
+   * BI - Web
+   * BI - API
+   * BI - DataService
+   * BI - Jobs
+   * IDP - UMS
+   * IDP - Windows Authentication
+
+## Steps to Create a Bold BI Sub-Applications in IIS
+
+Follow these steps to create a Bold BI sub-applications:
+
+1. Right-click the required application hosted in IIS, under which Bold BI will be running as sub-application, and select `Add Application` as shown in the following image.
 
    ![Add new Application](/static/assets/embedded/faq/images/add-new-application.png)
 
-2. Fill the following details and click `Ok` as shown in the below image.
+2. Fill the following details and click `Ok` as shown in the following image.
 
-   * **Alias name** - Enter the name that you wish to be an alias for the domain.
+   * **Alias name** - Enter the name that you want to use as an alias for the domain.
 
    * **Application pool** - Application Pools are logical groupings of web applications that will execute in a common process.
 
-   * **Physical path** - In the Physical path box, click the browse button to navigate the file system to find the IDP from Bold BI deployed location.  
+   * **Physical path** - In the Physical path box, click `Browse` to navigate the file system to find the IDP - Web from Bold BI deployed location.
 
-    ![Saved new Application](/static/assets/embedded/faq/images/new-application-saved.png)	
+    ![Saved new Application](/static/assets/embedded/faq/images/new-application-saved.png)
 
-> **NOTE:**  `Alias` name should be lowercase.
+> **NOTE:** 
+> * `Alias` name should be in lowercase.
+> * By default, the Bold BI is deployed in "C:\BoldServices" location for Windows.
 
-3. The following folders to be converted as an application:
+3. Repeat the same procedure for sub application of Bold BI given in below table,
 
-   * API
-   * UMS
-   * Windows Authentication
+| Application Name     | Under Sub Application      | Application Pool |           Physical Path                      |
+|-------------------   |-----------------------     |------------------|-------------------------------               |
+| bold                 |	-                        | SubApp-BoldIDWeb     |  **`{Deployed Location}`**\idp\web       |
+| api                  |	bold                     | SubApp-BoldIDApi     | **`{Deployed Location}`**\idp\api        |
+| bi                   |	bold                     | SubApp-BoldBIWeb     | **`{Deployed Location}`**\bi\web         |
+| api                  |  bi                        | SubApp-BoldBIApi     | **`{Deployed Location}`**\bi\api         |
+| designer             |  bi          | SubApp-BoldBIDesigner| **`{Deployed Location}`**\bi\dataservice               |
+| jobs                 |  bi          | SubApp-BoldBIJob     | **`{Deployed Location}`**\bi\jobs                      |
+| ums                  |  bold        | SubApp-BoldUMS       | **`{Deployed Location}`**\idp\ums                      |
+| windowsauthentication|  bold        | SubApp-BoldWinAuth   | **`{Deployed Location}`**\idp\windowsauthentication    |
 
-   Right-click the folder and choose `Convert to Application` as shown in the following image.
+4. Ensure that **BI** application has sub-applications, as shown in the following image.
 
-   ![Convert to Application](/static/assets/embedded/faq/images/convert-to-application.png)
+   ![Application Under BI](/static/assets/embedded/faq/images/application-under-bi.png)
 
-4. Now, add a `Dashboard Server` application inside it as shown in the following image.
-
-   ![Dashboard Server Site](/static/assets/embedded/faq/images/dashboard-server-site.png)
-
-5. The following folders to be converted as an application:
-
-    * API
-    * Jobs
-
-6. Add a `Dashboard Designer` application inside the `bi` application as shown in the following image.
-
-   ![Dashboard Designer Site](/static/assets/embedded/faq/images/designer-site.png)
-
-7. Finally, sub-application structure are created successfully as shown in the following image.  
+5. Finally, sub-application structure is created successfully, as shown in the following image.
 
    ![final-structure](/static/assets/embedded/faq/images/final-sub-application.png)
 
 ## Configure Bold BI to run as the sub-application
 
-Need to change this sub-application URL in the following mentioned file location. 
+1. Need to update the binding values in the following configuration files in deployed location.
 
-<table>
-<th>File Location</th>
-<th>Property</th>
-<th>Values</th>
-<tr>
-<td>C:\Bold BI\IDP\ums\Configuration\bold bi</td>
-<td>InternalAppBIUrl</td>
-<td>{sub application URL}/bi</td>
-</tr>
-<tr>
-<td>C:\Bold BI\Dashboard Server\Configuration</td>
-<td>InternalAppIdpUrl</td>
-<td>{sub application URL}</td>
-</tr>
-<tr>
-<td></td>
-<td>InternalAppDataServiceUrl</td>
-<td>{sub application URL}/bi/designer</td>
-</tr>
-</table>  
+2. Update the `Idp`, `Bi`, `BiDesigner`, and `Reports` values in the following file location.`{Deployed Location}\app_data\configuration\config.xml`.
 
-Refer the following images:
+  ![Config File Change](/static/assets/embedded/faq/images/config-file-change.png)
 
-![idp-config-file](/static/assets/embedded/faq/images/idp-config-file.png)
- 
-![server-config-file](/static/assets/embedded/faq/images/server-config-file.png)
+3. Update the binding values in `product.json` file in following location. `{Deployed Location}\app_data\configuration\product.json`.
+
+  ![product File Change](/static/assets/embedded/faq/images/product-file-change.png)
 
 > **IMPORTANT:**  Restart your site once all the above steps are completed.

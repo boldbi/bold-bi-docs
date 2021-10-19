@@ -9,11 +9,11 @@ documentation: ug
 
 # How to Delete a Pinboard
 
-This section explains on how to delete the Pinboard from Bold BI solutions.
+This section explains how to delete the Pinboard from the Bold BI application.
 
 ### Steps to delete a Pinboard
 
-1. Click on the `Delete` option from the context menu as shown in the following image.
+1. Click `Delete` option from the `gear` icon menu as shown in the following image.
 
     ![Delete Option](/static/assets/embedded/managing-resources/manage-pinboards/images/delete-option.png)
 
@@ -21,4 +21,4 @@ This section explains on how to delete the Pinboard from Bold BI solutions.
 
     ![Applied Default](/static/assets/embedded/managing-resources/manage-pinboards/images/applied-default.png)
 
-   If it is not a default Pinboard, it will load as default Pinboard.
+3. If it is not a default Pinboard, it will load as default Pinboard.

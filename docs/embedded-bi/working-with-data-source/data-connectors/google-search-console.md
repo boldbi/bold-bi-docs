@@ -53,6 +53,8 @@ After successful authentication, the NEW DATA SOURCE configuration panel opens
 6. Select **JSON** data type in **Data Format** combo box.
 7. The authentication type will be set to **Google Search Console** automatically since OAuth is used for authenticating with Google Search Console account.
 
+    ![DataSourcesView](/static/assets/embedded/working-with-datasource/data-connectors/images/GoogleSearchConsole/DataSourcesView.png)
+
 You can also edit the connection information set here using the [Edit Connection](/embedded-bi/working-with-data-source/editing-a-data-connection/) option.
 
 #### Additional information

@@ -41,6 +41,9 @@ https://prestodb.github.io/docs/current/connector
 
 In future, you can edit the connection information using [Edit Connection](/embedded-bi/working-with-data-source/editing-a-data-connection/) option.
 
+> **NOTE:**  To connect data source with **SSH**, enable the SSH check box in the **NEW DATA SOURCE** configuration panel and enter the required credentials.
+![Enable SSH](/static/assets/embedded/working-with-datasource/images/enable-ssh.png#max-width=60%)
+ 
 ### Data Preview
 1. Click **Connect** to connect the Presto server with configured details.
 The schema represents the collection list that are retrieved from the Presto server. This dialog displays a list of schemas in treeview and its corresponding values.

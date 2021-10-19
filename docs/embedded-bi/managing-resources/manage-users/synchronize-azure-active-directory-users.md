@@ -12,7 +12,7 @@ documentation: ug
 This section explains how to synchronize the imported Azure Active Directory users details with the Azure Active Directory.
 
 > **NOTE:**  Before synchronizing the Azure Active Directory users, follow the given steps:
-> 1. Configure [Azure Active Directory Settings](/cloud-bi/site-administration/azure-active-directory/azure-active-directory/).
+> 1. Configure [Azure Active Directory Settings](/embedded-bi/site-administration/azure-active-directory/).
 > 2. Import users from the Azure Active Directory to the Bold BI by referring the following link [Active Directory User Import](/embedded-bi/managing-resources/manage-users/import-azure-active-directory-users/).
 
 You can navigate to the user synchronization page from users page as shown in the below figure.

@@ -35,11 +35,14 @@ Once you click the data source, the NEW DATA SOURCE configuration panel opens.
 
 3. Select **GET** method for the REST API in **Method** combo box.
 4. In **Max Rows**, enter the maximum number of rows to be fetched from the harvest data source. This value is used to fetch the data from harvest data source via pagination.
-5. Choose a time interval for **Refresh Settings** using the combo box, to trigger the Rest API request periodically to keep the data in sync with our dashboard.  
-6. Select **JSON** data type in **Data Format** combo box.
-7. Choose one of the **Authentication Type** from the dropdown.
-8. To connect based on the chosen Authentication, refer [Supported Authentication Types based on version APIs](/embedded-bi/working-with-data-source/data-connectors/harvest/#authentication-for-harvest).
+5. Replace your **Access Token** and **Account Id** in the headers.
+6. Choose a time interval for **Refresh Settings** using the combo box, to trigger the Rest API request periodically to keep the data in sync with our dashboard.  
+7. Select **JSON** data type in **Data Format** combo box.
+8. Choose one of the **Authentication Type** from the dropdown.
+9. To connect based on the chosen Authentication, refer [Supported Authentication Types based on version APIs](/cloud-bi/working-with-data-source/data-connectors/harvest/#authentication-for-harvest).
 
+    ![DataSourcesView](/static/assets/embedded/working-with-datasource/data-connectors/images/Harvest/DataSourcesView.png)
+	
 You can also edit the connection information set here using the [Edit Connection](/embedded-bi/working-with-data-source/editing-a-data-connection/) option.
 
 ### Authentication for Harvest 

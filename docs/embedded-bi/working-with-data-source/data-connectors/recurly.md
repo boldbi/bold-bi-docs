@@ -38,7 +38,8 @@ Once you click the data source, the NEW DATA SOURCE configuration panel opens.
 6. Select **XML** data type in **Data Format** combo box.
 7. Choose *Basic HTTP Authentication* under **Authentication Type**.
 8. Enter a valid **Account Key** to access the endpoints in your account.
-
+ 
+    ![DataSourcesView](/static/assets/embedded/working-with-datasource/data-connectors/images/recurly/DataSourcesView.png)
 
 You can also edit the connection information set here using the [Edit Connection](/embedded-bi/working-with-data-source/editing-a-data-connection/) option.
 

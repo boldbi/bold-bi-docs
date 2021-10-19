@@ -38,6 +38,8 @@ Once you click the data source, the NEW DATA SOURCE configuration panel opens.
 7. Choose **Basic HTTP Authentication** in **Authentication Type** combo box.
 8. Enter a valid credentials of ServiceNow data source in  **Username & password** text boxes to access the endpoint in your account.
 
+    ![DataSourcesView](/static/assets/cloud/working-with-datasource/data-connectors/images/servicenow/DataSourcesView.png)
+
 You can also edit the connection information set here using the [Edit Connection](/cloud-bi/working-with-data-source/editing-a-data-connection/) option.
 
 #### Additional information

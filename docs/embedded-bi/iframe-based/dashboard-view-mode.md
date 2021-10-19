@@ -78,6 +78,62 @@ Using the dashboard security option, you can control which websites, IP addresse
 
 > **NOTE:**  Learn more details about embedding dashboard sample [here](/embedded-bi/iframe-based/sample/dashboard-embedding-sample/).  
 
+## Available parameter
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th> 
+      <th>In Dashboards</th> 
+      <th>In Widgets</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>embed_dashboard_comments</code></td>
+      <td><code>boolean</code></td>
+      <td>Show/hide dashboard comments</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td><code>embed_widget_comments</code></td>
+      <td><code>boolean</code></td>
+      <td>NA</td>
+      <td>Show/hide widget comments</td>
+    </tr>
+    <tr>
+      <td><code>views</code></td>
+      <td><code>boolean</code></td>
+      <td>Show/hide dashboard views</td>
+      <td>NA</td> 
+    </tr>
+    <tr>
+      <td><code>export</code></td>
+      <td><code>boolean</code></td>
+      <td>Show/hide dashboard export option</td>
+      <td>Show/hide widget export option</td> 
+    </tr>
+    <tr>
+      <td><code>hide_header</code></td>
+      <td><code>boolean</code></td>
+      <td>Show/hide dashboard header</td>
+      <td>NA</td> 
+    </tr>
+    <tr>
+      <td><code>hide_tool</code></td>
+      <td><code>string</code></td>
+      <td>Predefined values: tm-Theme,dp-Dashboard Parameter,fo-Filter Overview,fs-FullScreen,rf-Refresh,om-Option Menu</td>
+      <td>NA</td>
+    <tr>
+    <tr>
+      <td><code>hide_widget_tool</code></td>
+      <td><code>string</code></td>
+      <td>NA</td>
+      <td>Predefined values: fr-Filter,fs-FullScreen,om-Option Menu</td>      
+    <tr>
+  </tbody> 
+</table>
+
 ## Embedding dashboard with filter parameter
 You can pass parameters to a dashboard by including them in a dashboard URL in embedding. Passing parameter values within URL will apply filter in the dashboard on initial load itself. You can learn more details [here](/embedded-bi/working-with-dashboards/preview-dashboard/urlparameters/#passing-parameter-with-url).  
 

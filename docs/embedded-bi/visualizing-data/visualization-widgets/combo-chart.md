@@ -12,113 +12,113 @@ documentation: ug
 
 Combination Chart allows you to compare values by combining multiple Cartesian charts (column, bar, stacked column, stacked bar, 100% stacked column, 100% stacked bar, spline, line, area, stacked area, 100% stacked area).
 
-![Combo Chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochart.png)
+![Combo Chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochart-view.png)
 
 ## How to configure table data to combo chart
 
 Combo Chart need a minimum value of 1 value element and 1 column element to showcase. The measure or expression field that you would like to analyze can be dropped into Primary or Secondary Values block. The dimension that you would like to categorize the measure, can be dropped onto Columns block. By default, primary values render with Column chart and secondary values render with line chart.
 
-Follow the below steps to configure data into combo chart:
+The following steps explains to configure data into combo chart:
 
-Click `Data Source` button in configure panel.
+1.  Click the `Data Source` button in the configure panel.
 
 ![Data button](/static/assets/embedded/visualizing-data/visualization-widgets/images/databutton.png)
 
-Click `CREATE NEW` button to launch a new connection from connection type panel.
+2.  Click the `CREATE NEW` button to launch a new connection from the connection type panel.
 
 ![Data source button](/static/assets/embedded/visualizing-data/visualization-widgets/images/datasourcebutton.png)
 
-In the connection type panel, click any one of the listed connection type button shown, here `Microsoft SQL` Connection type is selected for demonstration.
+3.  In the connection type panel, click any one of the listed connection type button shown, here the `Microsoft Excel` Connection type is selected for demonstration.
 
 ![Data source list](/static/assets/embedded/visualizing-data/visualization-widgets/images/datasourcelist.png)
 
-In the `NEW DATA SOURCE` configuration panel, fill the connection type and related details. Click `Connect` button.
+4.  In the `NEW DATA SOURCE` configuration panel, fill the connection type and related details. Click the `Connect` button.
 
-![Connect button](/static/assets/embedded/visualizing-data/visualization-widgets/images/Connectbutton.png)
+![Connect button](/static/assets/embedded/visualizing-data/visualization-widgets/images/connectbutton.png)
 
-Drag your preferred table or view from the left pane from data design view, click `Save` button.
+5.  Drag your preferred table or view from the left pane from the data design view, click the `Save` button.
 
 ![virtualtable](/static/assets/embedded/visualizing-data/visualization-widgets/images/virtualtable.png)
 
-Drag and Drop Combo chart into canvas and resize into required size.
+6.  Drag and drop the combo chart into the canvas and resize it into the required size.
 
-![Combo Chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochartConfigure.png)
+![Combo Chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochart-drop.png)
 
-Click `Properties` button in configuration panel, property panel opens. Now, Switch to `ASSIGN DATA` tab.
+7.  Click the `Properties` button in the configuration panel, property panel opens. Now, switch to the `ASSIGN DATA` tab.
 
-![Designer properties](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochartPropertyPanel.png)
+![Designer properties](/static/assets/embedded/visualizing-data/visualization-widgets/images/designerpropertiesbutton.png)
 
-![Assign data](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochartAssignData.png)
+![Assign data](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/property.png)
 
-The data tab will be opened with available measures and dimensions from the connected data source.
+8.  The data tab will be opened with available measures and dimensions from the connected data source.
 
-![Combo chart data](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochartData.png)
+![Combo chart data](/static/assets/embedded/visualizing-data/visualization-widgets/images/assign-data-section.png)
 
-**Adding Primary and Secondary Values**
+#### Adding Primary and Secondary Values
 
 You can add more than one `measures` into `Primary Y Values` and `Secondary Y Values` field by dragging and dropping the required measure.
 
-![Combo chart Primary data](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochartPrimaryData.png)
+![Combo chart Primary data](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/primaryvalue.png)
 
-![Combo chart Secondary data](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochartSecondaryData.png)
+![Combo chart Secondary data](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/secondaryvalue.png)
 
-Now, you can see combo chart renders as follows,
+Click the `Settings` option to change the name by using the `Rename` option and the required summary type from the available summary types shown in `Settings.`
 
-![Combo chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochartrender.png)
+![Combo-chart Menu Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/settings.png)
 
-Click the `Settings` option to change required summary type from the available summary types shown in `Settings`.
-
-![Combo-chart Menu Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochartMenuSettings.png)
-
-![Combo-chart Secondary Menu Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochartSecondaryMenuSettings.png)
+#### Filtering data
 
 You can filter the data to be displayed in combo chart by using filter. For more details, refer to [filter](/embedded-bi/visualizing-data/working-with-widgets/configuring-widget-filters/)
 
-![Combo-chart Value filter settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochartFilterSettings.png)
+![Combo-chart Value filter settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/filter-option.png)
 
-![Combo-chart Value filter settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochartSecondaryFilterSettings.png)
+#### Formatting data
 
 You can format the data to be displayed in the combo chart by using format option. For more details, refer to [measure format](/embedded-bi/visualizing-data/working-with-widgets/formatting-measure-type-column/)
 
-![Combo-chart Primary value formatting](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochartPrimaryFormattingpng.png)
+![Combo-chart Primary value formatting](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/format-option.png)
 
-![Combo-chart secondary Value formatting](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochartSecondaryFormatting.png)
+#### Removing Fields
 
 To remove the added value fields click highlighted button.
 
-![Combo-chart secondary Value formatting](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochartPrimaryFieldremove.png)
+![Combo-chart secondary Value formatting](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/removebutton.png)
 
-![Combo-chart secondary Value formatting](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochartSecondaryFieldremove.png)
-
-**Adding Columns**
+#### Adding Columns
 
 You can add more than one value to the `Columns` field.
 
-![Combo-chart Column Adding](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochartColumnAdding.png)
+![Combo-chart Column Adding](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/adding-column.png)
 
 You can see Combo chart renders as follows,
 
-![Combo-chart Column data](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochartColumndata.png)
-
-Add more than one value to `Columns` field. The drilled view of the Combo chart region selected.
-
-![Combo-chart Column drilldown data](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/CombochartDrilldown.png)
+![Combo-chart Column data](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochart-view.png)
 
 You can change the `Settings`.
 
-![Combo-chart Column settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochartcolumnsetting.png)
+![Combo-chart Column settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/column-settings.png)
+
+#### Sorting data
 
 You can `Sort` the dimension data using `Sort` option under `Settings` menu list. To apply sorting for the data, refer [Sort](/embedded-bi/visualizing-data/working-with-widgets/advanced-sorting/#dimension-column).
 
-![Combo-chart Column sorting](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochartColumnSorting.png)
+![Combo-chart Column sorting](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/columnsorting.png)
+
+#### Filtering data
 
 You can apply filters by selecting filter in settings. For more details, refer to [filter](/embedded-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column).
 
-![Combo-chart Column Filtering](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochartColumnFiltering.png)
+![Combo-chart Column Filtering](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/columnfilter.png)
 
 To show all records click `Clear`.
 
-![Combo-chart Column Filtering](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochartshowAllRecords.png)
+### Multi-Level Drill Down
+
+Add more than one value to the `Columns` field. The drilled view of the Combo chart region is selected.
+
+![Combo-chart Column drilldown data](/static/assets/embedded/visualizing-data/visualization-widgets/images/drillalert.png)
+
+![Combo-chart Column drilldown data](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/drilldown.png)
 
 ## How to format Combo chart
 
@@ -132,111 +132,184 @@ Follow the below steps to format the combo chart
 
 3. Focus on the combo chart and click on Widget settings.
 
-![Click on Widget Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochartPropertyPanelsetting.png)
+![Click on Widget Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/widgetsettings.png)
 
 You can see property window opened.
 
-![Property panel](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochartProperties.png)
+![Property panel](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/property.png)
 
 You can see the list of properties available for the widget with default value.
 
-**General Settings**
+#### General Settings
+#### Name
 
-Name, Subtitle and Description for combo chart can be given using these properties.
+This allows you to change the `title` for the combo chart widget.
 
-![General settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochartName.png)
+#### Subtitle
 
-**Basic Settings**
+This allows you to add the subtitle for the combo chart widget.
 
-![Basic Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochartBasicSettings.png)
+#### Description
 
-**Chart Type**
+This allows you to add description for the combo chart widget.
 
-This allows you to switch the widget view from current chart type to another convertible chart type. You can also set axis type as secondary or primary.
+![General settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/general-settings.png)
 
-**Enable Animation**
+#### Basic Settings
 
-This allows you to enable the rendering of series in animated mode.
+![Basic Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/basic-settings.png)
 
-**Show Legend**
+#### Chart type and axis
+
+Click the `Change` button to open the `Chart Type and Axis Settings` dialog. 
+
+![Change type and axis settings dialog](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/chart-type-and-axis.png)
+
+**Chart Type**: This allows you to switch the widget view from the current chart type to another convertible chart type.
+
+**Secondary Axis**: By default, the configured field is plotted as the primary axis, if you enable this option, the selected field will be plotted as the secondary axis. 
+
+#### Enable Animation
+
+It animates the measure values when you toggle the `Enable Animation.`
+
+#### Show Legend
 
 A Legend is a text used to describe the data plotted. This allows you to toggle the visibility of legend in chart and also change the legend text position (selecting through combo box).  
 
-![Legend Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochartLegend.png)
+![Legend Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochart-legend.png)
 
 Enabling this option of **Customize Legend Text** will allow you to define a custom text (through the text area) to display for each legend series (selecting through the combo box) in chart.
 
-**Customize**
+#### Customize
 
 You can customize the legend text through the Custom Legend Settings dialog. This dialog will show the legend text list as labels at left and corresponding text area at right to add the formatted text to display instead.
 
-![Legend customization](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochartLegendcustomize.png)
+![Legend customization](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochart-legendcustomize.png)
 
-**Show Value Labels**
+#### Legend Position
+
+A Legend is a text used to describe the data plotted. This option allows you to place the legend at the position of **Left, Right, Top,** and **Bottom**.
+
+#### Legend Shape
+
+This allows you change the **shape** of the legend.
+
+***Circle***
+
+This option allows you to change the shape of the legend in a `Circle.`
+
+![Show Legend shape](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/legend-shape.png)
+
+***Series Type***
+
+This option allows you to change the shape of the legend in `Series.`
+
+![Show Legend shape Series](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/legend-series.png)
+
+#### Legend Title
+
+This allows you to add the legend title for the chart. It will reflect with the `Show Legend.`
+
+![Show Legend Title](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/legend-title.png)
+
+#### Show value labels
 
 This allows you to toggle the visibility of value labels.
 
-![Label Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochartLabel.png)
+![Value labels in chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/value-label.png)
 
-**Value Label Rotation**
- 
-This allows you to define the rotation angle for the value labels to display.
+#### Value Label Customization
 
-![Label Rotation](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochartLabelRotation.png)
+This allows you to customize the visibility of the value labels.
 
-**Value Label Suffix**
+![Value labels customization change](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/color-customize.png)
 
-Allows you to enable the Suffix value text to the value labels. 
+![Value labels customization](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/label-customize.png)
 
-**Suffix Value**
+#### Value Label Color
 
-Allows you to set\edit suffix value to the value labels.
+This allows you to customize value label's color.
 
-![Value Label Suffix](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochartSuffix.png)
+![Value label Color Option](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/data-color.png)
 
-**Show Marker**
+![Value label Color](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/value-color.png)
+
+#### Value label rotation
+
+This allows you to define the `rotation angle for the value labels` to display.
+
+![Rotated labels](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/value-label-rotation.png)
+
+#### Value label suffix
+
+Allows you to enable the Suffix value text to the value labels.
+
+![Labels with suffix](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/suffix-value.png)
+
+### Show Marker
 
 This allows you to toggle the visibility of marker from label to adorn each data point in chart series. Marker supports only for distribution type chart(line, spline, area, stacked area, 100% stacked area).
 
-![Show Marker](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochartMarker.png)
+![Show Marker](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochart-marker.png)
 
-**Show Items With No Data**
+#### Show items with no data
 
-This allows you to show data which column does not have value.
+This allows you to show data, which column does not have value.
 
-![Show Marker](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochartshownodata.png)
+![Empty Mode](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/show-no-data.png)
 
-**Link**
+#### Column Width
 
-![Link](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/Link.png)
+This option allows you to increase or decrease the width of the column by using `Column Width.`
+
+![Column Width Customization](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/column-width-customization.png)
+
+![Column Width](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combo-width.png)
+
+#### Column Spacing
+
+This option allows you to increase or decrease the space between the columns by using the `Column Spacing.`
+
+![Column Spacing Customization](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/column-spacing-customization.png)
+
+![Column Spacing](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/column-spacing.png)
+
+### Enable Smooth Scroll
+
+On enabling this support, the chart scroll bar thumb-size will be calculated based on the total records count. So, you can see the last record by performing a single scroll.
+
+### Link
+
+![Link](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/linking.png)
 
 To configure the linking to URL or dashboard with the widget through its settings. For more details, refer to [Linking](/embedded-bi/visualizing-data/working-with-widgets/linking-urls-and-dashboards/).
 
-**Axis**
+### Axis
 
-![Axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochartAxis.png)
+![Axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochart-axis.png)
 
 This section allow you to customize axis settings in combination chart.
 
-**Show Category Axis**
+### Show Category Axis
 
 This allows to enable the visibility of `Category Axis`.
 
-![Category Axis visibility](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochartCategoryAxisV.png)
+![Category Axis visibility](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochart-categoryaxis.png)
 
-**Show Category AXis Title**
+### Show Category AXis Title
 
 This allows you to enable the visibility of `Category Axis` title.
 
-![Category Axis Title visibility](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochartCategoryAxisTitleV.png)
+![Category Axis Title visibility](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/category-axistitle.png)
 
-**Category Axis Title**
+### Category Axis Title
 
 This allows you to edit the `Category Axis` title for chart. It will reflect in x-axis name of chart.
 
-![Category Axis Title](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochartCategoryAxisTitle.png)
+![Category Axis Title](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/edit-categoryaxis.png)
 
-**Label Overflow Mode**
+### Label Overflow Mode
 
 This allows you to handle the display mode of the overlapping labels in the `Category Axis`. 
 
@@ -244,67 +317,71 @@ This allows you to handle the display mode of the overlapping labels in the `Cat
 
 This option trims the end of overlapping label in the axis.
 
-![Label overflow mode Trim](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochartLabelTrim.png)
+![Label overflow mode Trim](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/trim.png)
 
 ***Hide***
 
 This option hides the overlapping label in the axis. 
 
-![Label overflow mode Hide](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochartLabelHide.png)
+![Label overflow mode Hide](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/hide.png)
 
-**Category Axis Label Rotation**
+### Category Axis Label Rotation
 
 This allows you to define the rotation angle for the category axis labels to display.
 
-![Category Axis Label Rotation](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochartCategoryLabelRotation.png)
+![Category Axis Label Rotation](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/axis-labelrotation.png)
 
 #### Trim Axis Labels
 
 This option allows you to trim axis labels, based on the 'Maximum Label Width' property value.
 
-![Trimmed label](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/trimming-label.png)
+![Trimmed label](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/trimming-label-axis.png)
 
 #### Maximum Label Width
 
 This option allows you to set maximum width for the axis labels, and also it can be made customizable when the trim axis label option is enabled.
 
-![Maximum label width](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/Maximum-label-width.png)
+![Maximum label width](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/maximumlabelwidth.png)
 
-**Primary Value Axis**
+### Primary Value Axis
 
 This allows you to enable the `Primary Value Axis` for chart. You can set interval of primary axis by `Edit Axis Range` button.
 
-![Primary Axis visibility](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochartPrimaryAxisV.png)
+![Primary Axis visibility](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochart-primaryaxis.png)
 
-**Show Primary Value Axis Title**
+### Show Primary Value Axis Title
 
 This allows you to enable the visibility of `Primary Value Axis` title of chart.
 
-![Primary Axis Title visibility](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochartPrimaryAxisTitleV.png)
+![Primary Axis Title visibility](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/primary-value-axis-title.png)
 
-**Primary Axis Title Value**
+### Primary Axis Title Value
 
 This allows you to edit the `Primary Value Axis` title. It will reflect in primary y-axis name of chart. 
 
-![Primary Axis Title value](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochartPrimaryAxisTitleVa.png)
+![Primary Axis Title value](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/edit-primaryaxis-title.png)
 
-**Secondary Value Axis**
+### Secondary Value Axis
 
 This allows you to enable the `Secondary Value Axis` for chart. You can set interval of Secondary axis by `Edit Axis Range` button.
 
-![v Axis visibility](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochartSecondaryAxisV.png)
+![v Axis visibility](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/secondary-axis.png)
 
-**Show Secondary Value Axis Title**
+### Show Secondary Value Axis Title
 
 This allows you to enable the visibility of `Secondary Value Axis` title of chart.
 
-![Secondary Axis Title visibility](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochartSecondaryAxisTitleV.png)
+![Secondary Axis Title visibility](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/secondary-axis-title.png)
 
-**Secondary Axis Title Value**
+### Secondary Axis Title Value
 
 This allows you to edit the `Secondary Value Axis` title. It will reflect in Secondary y-axis name of chart. 
 
-![Secondary Axis Title value](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochartSecondaryAxisTitleVa.png)
+![Secondary Axis Title value](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/secondary-axis-title-edit.png)
+
+#### Axis Range Settings
+
+This allows you to manually set the Minimum, Maximum, and Interval values of primary value axis and secondary value axis through the `Axis Range Settings` dialog.
 
 #### Axis Format
 
@@ -312,31 +389,31 @@ This option allows you to format primary and secondary axis values from the form
 
 ![Formatting option](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/formatting-button.png)
 
-**Grid Lines**
+#### Grid Lines
 
-![Grid Lines](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochartGridLines.png)
+![Grid Lines](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/gridlines.png)
 
-**Primary value Axis**
+#### Primary value Axis
 
 This allows you to enable the `Primary Value Axis` gridlines for the Combination chart
 
-![Primary value Axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochartPrimaryGrid.png)
+![Primary value Axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/primary-grid.png)
 
-**Secondary value Axis**
+#### Secondary value Axis
 
 This allows you to enable the `Secondary Value Axis` gridlines for the Combination chart
 
-![Secondary value Axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochartSecGrid.png)
+![Secondary value Axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/secondary-grid.png)
 
-**Category Axis**
+#### Category Axis
 
 This allows you to enable the `Category Axis` gridlines for the Combination chart.
 
-![Category Axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochartCategoryGrid.png)
+![Category Axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/category-grid.png)
 
-**Trendline**
+#### Trendline
 
-![Trendline](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochartTrendline.png)
+![Trendline](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/trendlinesettings.png)
 
 You can add more than one trendline to Cartesian charts except bar type series(Line, Column, Area, Spline) and stacked type of charts. You can add, edit and delete trendlines.
 
@@ -344,19 +421,19 @@ You can add more than one trendline to Cartesian charts except bar type series(L
 
 To add trendline, click highlighted button
 
-![Trendline Add](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochartTrendlineAdd.png)
+![Trendline Add](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/trendline-add.png)
 
 Now dialog will open as follows
 
-![Trendline Dialog](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochartTrendlineDialog.png)
+![Trendline Dialog](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/trendline-dialog.png)
 
 Click `OK` button to add trendline in combination chart. Now, chart renders as follows.
 
-![Trendline chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochartTrendlinechart.png)
+![Trendline chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/trendline.png)
 
 To edit trendline select the one to be edited and click highlighted button.
 
-![Trendline Edit](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochartTrendlineEdit.png)
+![Trendline Edit](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/trendline-edit.png)
 
 Again trendline dialog window opens, now.
 
@@ -384,31 +461,27 @@ You can change style of trendline by `Line Style` drop down option(Solid, Dot, D
 
 To delete trendline, select the one to be deleted and click highlighted button.
 
-![Trendline Delete](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochartTrendlineDelete.png)
+![Trendline Delete](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/trendline-delete.png)
 
-**Color Settings**
+#### Formatting 
 
-![Color Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochartColorSettings.png)
+![Color Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/formatting.png)
 
 This allows you to customize chart series color. This section renders with each series of default color. You can change its default color by color picker.
 
-![Default Color](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochartDefaultColor.png)
-
 If you apply changes, by clicking the `Apply` button, the chart renders as follows.
 
-![Changed Default Color](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochartDefaultColorChange.png)
+![Default Color](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/format-color.png)
 
-**Advanced Color**
+#### Advanced Color
 
-![Advanced Color Button](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochartAdvColorBtn.png)
+![Advanced Color Button](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/advance-color.png)
 
 This allows you to apply advance color customization to combination chart.
 
 This option is only visible when combination chart have one or more than one series and if only one column or bar type chart, other series are Cartesian charts except bar or column type chart. You can apply advance color customization only to column or bar type chart.
 
 If you enable option of `Advanced Color`, color customization window will render as follows. By disabling this option, color customization removed and default color will applied.
-
-![Color customization Window](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochartAdvanceWindow.png)
 
 This window has three color types. (i) Gradient (ii) Rule (iii) Individual. By default, window renders with gradient type.
 
@@ -420,52 +493,48 @@ You can edit your gradient legend title by `Legend Title` text box.
 
 If you click save button, chart will render as follows
 
-![Gradient](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochartGradient.png)
+![Gradient](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/gradient.png)
 
 ***Rule***
 
 You can select rule settings by clicking `Rule` radio button. Now, color customization window renders as follows
 
-![Rule](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochartRuleDefault.png)
+![Rule](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/rule.png)
 
 You can change based on field and summary type as gradient type. `Value Type` can be change with Value or Percentage. 
 
 You can choose a series color with `Fill` color picker using multiple condition sets such as Greater than, Less than, Equal to, Not Equal to, Between, Not between, Greater than or equal to, Less than or equal to. You can also customize the legend name by providing necessary values inside condition name. You can add multiple conditions.
 
-![Rule Setings](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochartRuleSettings.png)
+![Rule Setings](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/ruleset.png)
 
 If you click save button, now chart widget renders as follows
 
-![Rule Setings changes](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochartRuleSettingsC.png)
+![Rule Setings changes](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/rule-color.png)
 
 
 ***Individual***
 
 You can select rule settings by clicking `Individual` radio button. Now, color customization window renders as follows.
 
-![Individual](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochartIndividual.png)
+![Individual](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/individual.png)
 
 This type renders with Individual default color for each point of series. You can change it's color by Individual color pickers.
 
-![Individual](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochartIndividualsettings.png)
+You can save your changes by clicking the `Save` button. If you want to reset your changes there is an option to render its default color `Reset.`
 
-You can save your changes by clicking `Save` button. If you want to reset your changes there is an option to render its default color `Reset`. Now, chart renders with changes.
+#### Filter
 
-![Individual Setings changes](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochartIndividualsettingsChanges.png)  
+![Filter](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/filter.png)
 
-**Filter**
-
-![Filter](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/Filter.png)
-
-**Act as Master Widget**
+#### Act as Master Widget
 
 This allows you to define this Combination chart widget as a master widget such that its filter action can be made to listen by other widgets in the dashboard.
 
-**Ignore Filter Actions**
+#### Ignore Filter Actions
 
 This allows you to define this Combination chart widget to ignore responding to the filter actions applied on other widgets in dashboard.
 
-**Hierarchical Filter**
+#### Hierarchical Filter
 
 Through this option, you can enable/disable hierarchical top `N` filtering. While applying Top N filter with multiple dimension columns, the data returned can be customized based on whether the filtering need to be done as flat or based on the hierarchy of dimension columns added. 
 
@@ -473,65 +542,82 @@ When `Hierarchical Filter` option is enabled, the Top N will be applied for each
 
 ### Container appearance
 
-![Container appearance](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/Container_Apperence.png)
+![Container appearance](/static/assets/embedded/visualizing-data/visualization-widgets/images/container-appearance.png)
 
-**Title Alignment**
+#### Title Alignment
 
 This allows you to handle the alignment of widget title to the left, center or right.
 
-**Title Color**
+#### Title Color
 
 This allows you to apply text color to the widget title.
 
-**Show Border** 
+### Title Auto Font Size
+
+`On enabling Auto Font Size, the font size of the title will be adjusted automatically based on the screen resolution.
+
+**Font Size**
+
+This allows you to apply the specified size of the font to the widget title if the **Title Auto Font Size** is disabled. Value can be between 10 and 44.
+
+### Subtitle Auto Font Size
+
+`On enabling Auto Font Size , the font size of the subtitle will be adjusted automatically based on the screen resolution.
+
+**Font Size**
+
+This allows you to apply the specified size of the font to the widget title if the **Subtitle Auto Font Size** is disabled. Value can be between 10 and 32.
+
+#### Show Border
 
 This allows you to toggle the visibility of the border surrounding the widget.
 
-**Corner Radius**
+#### Corner Radius
 
 This allows you to apply the specified radius to the widget corners if the **Show Border** is enabled. Value can be between 0 and 10.
 
-**Background Color**
+#### Background Color
 
-This allows you to select the color for the chart background. `The default value is #ffffff`. 
-![Background Color Property](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/container_apperence_bgcolor_change.png)
-
-![Background Color Changed](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/ComboChart_Container_Appearence_bgcolor.png)
+This allows you to select the color for the chart background. `The default value is #ffffff`.
 
 ### Container actions
 
-![Container Actions](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/Container_Actions.png)
+![Container Actions](/static/assets/embedded/visualizing-data/visualization-widgets/images/container-actions.png)
 
-**Show Header**
+#### Show Header
 
 This allows you to enable or disable the widget title of the column chart widget. 
 
-**Allow Maximize View**
+#### Allow Maximize View
 
 This allows you to enable or disable the maximized mode of the Column chart widget. The visibility of the maximize icon in the widget header will be defined based on the setting in the viewer.
 
-**Allow CSV Export**
+#### Allow CSV Export
 
 This allows you to enable or disable the CSV export option for the Column chart widget. Enabling this allows you to export the summarized data of the widget view to CSV format in the viewer.
 
-**Allow Excel Export**
+#### Allow Excel Export
 
 This allows you to enable or disable the Excel export option for the Column chart widget. Enabling this allows you to export the summarized data of the widget view to (.xlsx or .xls) format in the viewer.
 
-**Allow Image Export**
+#### Allow Image Export
 
 This allows you to enable or disable the image export option for the Column chart widget. Enabling this allows you to export the view of the widget to image format (.jpg), (.png), or (.bmp) in the viewer.
 
-**Allow PDF Export**
+#### Allow PDF Export
 
 This allows you to enable or disable the PDF export option for the Column chart widget. Enabling this allows you to export the view of the widget to pdf format in the viewer.
 
-**Enable Comments**
+#### Enable Comments
 
 This allows you to enable or disable comment for the dashboard widget. For more details refer to [here](/embedded-bi/visualizing-data/working-with-widgets/commenting-widget/).
 
-**Allow View Underlying Data**
+#### Allow View Underlying Data
 
 This allows you to visualize the raw data associated with a widget at runtime. 
 
 To learn more about viewing the underlying widget data, refer to the [view data documentation](/embedded-bi/visualizing-data/working-with-widgets/view-data/). 
+
+#### Pin widget
+
+This allows you to pin the widget.

@@ -39,6 +39,8 @@ Once you click the Lighthouse data source, the NEW DATA SOURCE configuration p
 6. Replace `<:X-LighthouseToken>` under Headers with a valid **Access Token**.
 7. Choose **None** under **Authentication Type** as authentication is done through header.
 
+    ![DataSourcesView](/static/assets/embedded/working-with-datasource/data-connectors/images/lighthouse/DataSourcesView.png)
+
 You can also edit the connection information set here using the [Edit Connection](/embedded-bi/working-with-data-source/editing-a-data-connection/) option.
 
 #### How do I get Access Token for connecting Lighthouse data source?

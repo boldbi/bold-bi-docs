@@ -40,6 +40,8 @@ Once you click the App Annie data source, the NEW DATA SOURCE configuration pa
 6. Replace **&lt;:your_api_token&gt;** under **Headers** with a valid bearer token.
 7. Choose **None** under **Authentication Type** as authentication is done through header.
 
+    ![DataSourcesView](/static/assets/cloud/working-with-datasource/data-connectors/images/app-annie/DataSourcesView.png)
+
 You can also edit the connection information set here using the [Edit Connection](/cloud-bi/working-with-data-source/editing-a-data-connection/) option.
 
 #### How do I get Bearer Key for connecting App Annie data source?

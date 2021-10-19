@@ -15,8 +15,6 @@ This section explains how to manage pinboards like add, delete, duplicate pinboa
 
 You can explore the managing pinboards in detail here,
 
-[Add Pinboards](/embedded-bi/managing-resources/manage-pinboards/add-pinboards/)
-
 [Rename Pinboards](/embedded-bi/managing-resources/manage-pinboards/rename-pinboards/)
 
 [Duplicate Pinboards](/embedded-bi/managing-resources/manage-pinboards/duplicate-pinboards/)

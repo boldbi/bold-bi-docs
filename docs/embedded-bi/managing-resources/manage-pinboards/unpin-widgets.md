@@ -9,10 +9,10 @@ documentation: ug
 
 # To Unpin a Specific Widget
 
-This section explains how to unpin Widgets from Pinboard in the Bold BI solutions.
+This section explains how to unpin Widgets from Pinboard in the Bold BI application.
 
 ### Steps to unpin Widget from the Pinboard
 
-Pinned widget can be unpinned from the Pinboard by clicking the unpin icon on the specific widget.
+Pinned widget can be unpinned from the Pinboard by clicking the `delete` icon on the specific widget.
 
 ![Unpin Widget](/static/assets/embedded/managing-resources/manage-pinboards/images/unpin-widget.png)

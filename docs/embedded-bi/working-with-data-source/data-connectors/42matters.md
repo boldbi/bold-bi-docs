@@ -39,6 +39,8 @@ Once you click the data source, the NEW DATA SOURCE configuration panel opens.
 7. Replace **&lt;:access_token&gt;** at the end of the URL with a valid API access token.
 8. Choose **None** under **Authentication Type** as authentication is done through header.
 
+    ![DataSourcesView](/static/assets/embedded/working-with-datasource/data-connectors/images/42matters/DataSourcesView.png)
+
 You can also edit the connection information set here using the [Edit Connection](/embedded-bi/working-with-data-source/editing-a-data-connection/) option.
 
 #### How do I get API Access Token for connecting 42matters data source?

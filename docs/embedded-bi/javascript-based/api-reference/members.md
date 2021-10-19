@@ -23,9 +23,11 @@ documentation: UG
 
 Your Bold BI application URL needs to be assigned to this member.
 
-**Default value** 
+<br>
 
-<li>""</li>
+**Default value** : `empty`
+
+<li>""</li><br>
 
 **Example** 
    
@@ -51,9 +53,11 @@ dashboard.loadDashboard();
 
 The Id of the dashboard, which needs to be embedded in a page from your Bold BI application.
 
-**Default value** 
+<br>
 
-<li>""</li>
+**Default value** : `empty`
+
+<li>""</li><br>
 
 **Example**
    
@@ -79,13 +83,17 @@ dashboard.loadDashboard();
 
 This will hold the dashboard path as category name followed by dashboard name. 
 
+<br>
+
 **Syntax**
 
-<li>/{category-name}/{dashboard-name}</li>
+<li>/{category-name}/{dashboard-name}</li><br>
 
-**Default value** 
+<br>
 
-<li>""</li>
+**Default value** : `empty`
+
+<li>""</li><br>
 
 **Example** 
    
@@ -111,9 +119,11 @@ dashboard.loadDashboard();
 
 The name of the pinboard that needs to be embedded in a page from your Bold BI application.
 
-**Default value** 
+<br>
 
-<li>""</li>
+**Default value** : `empty`
+
+<li>""</li><br>
 
 **Example**
    
@@ -140,9 +150,11 @@ pinboard.loadPinboard();
     
 The Id of a div element in which the dashboard will be initialized and rendered.
 
-**Default value** 
+<br>
 
-<li>""</li>
+**Default value** : `empty`
+
+<li>""</li><br>
 
 **Example** 
    
@@ -172,14 +184,18 @@ The Id of a div element in which the dashboard will be initialized and rendered.
     
 Providing the two types of embedding. One is `component` and the other is `iframe`. In component type, you will use the embedding SDK for rendering the dashboard. In iframe type, you will load the dashboard URL in the iframe and the dashboard will be rendered.
 
+<br>
+
 **Possible values** 
 
 <li>BoldBI.EmbedType.Component</li>
-<li>BoldBI.EmbedType.IFrame</li>
+<li>BoldBI.EmbedType.IFrame</li><br>
+
+<br>
 
 **Default value** 
 
-<li>BoldBI.EmbedType.Component</li>
+<li>BoldBI.EmbedType.Component</li><br>
 
 **Example** 
    
@@ -205,14 +221,18 @@ dashboard.loadDashboard();
     
 Environment refers to the Bold BI application type. Bold BI offers Cloud and Enterprise editions of the dashboard application. You need to assign your application type in this member.
 
+<br>
+
 **Possible values** 
 
 <li>BoldBI.Environment.Cloud</li>
-<li>BoldBI.Environment.Enterprise</li>
+<li>BoldBI.Environment.Enterprise</li><br>
+
+<br>
 
 **Default value** 
 
-<li>BoldBI.Environment.Enterprise</li>
+<li>BoldBI.Environment.Enterprise</li><br>
 
 **Example** 
    
@@ -238,16 +258,20 @@ dashboard.loadDashboard();
     
 Mode refers to the dashboard rendering mode such as `view`, `design`, `connection`, and `datasource`. The default value was view, which is used to render the dashboard for viewing.
 
+<br>
+
 **Possible values** 
 
 <li>BoldBI.Mode.View</li>
 <li>BoldBI.Mode.Design</li>
 <li>BoldBI.Mode.Connection</li>
-<li>BoldBI.Mode.DataSource</li>
+<li>BoldBI.Mode.DataSource</li><br>
+
+<br>
 
 **Default value** 
 
-<li>BoldBI.Mode.View</li>
+<li>BoldBI.Mode.View</li><br>
 
 **Example** 
    
@@ -297,9 +321,11 @@ After this, the values in the widget will be displayed as follows within your ap
     
 Enable or disable the header panel in the Dashboard Viewer.
 
+<br>
+
 **Default value** 
 
-<li>true</li> 
+<li>true</li><br>
 
 **Example** 
    
@@ -327,9 +353,11 @@ dashboard.loadDashboard();
 
 Specifies whether to show or hide the `Export` icon in dashboard banner.
 
+<br>
+
 **Default value** 
 
-<li>true</li> 
+<li>true</li><br>
 
 **Example** 
    
@@ -357,9 +385,11 @@ dashboard.loadDashboard();
     
 Specifies whether to show or hide the `Refresh` icon in dashboard banner.
 
+<br>
+
 **Default value** 
 
-<li>true</li> 
+<li>true</li><br>
 
 **Example** 
    
@@ -387,9 +417,11 @@ dashboard.loadDashboard();
     
 Specifies whether to show or hide the `Option` icon in dashboard banner.
 
+<br>
+
 **Default value** 
 
-<li>true</li> 
+<li>true</li><br>
 
 **Example** 
    
@@ -397,6 +429,134 @@ Specifies whether to show or hide the `Option` icon in dashboard banner.
 var dashboard = BoldBI.create({
      dashboardSettings: {
           showMoreOption: true,
+     }
+});
+dashboard.loadDashboard();
+```
+	
+<h3 class="doc-prop-wrapper" id="dashboardsettingsenabletheme" data-Path="dashboardsettingsenabletheme-dashboardSettings.enabletheme">
+<a href="#dashboardsettingsenabletheme" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+</svg>
+</a><span class='doc-prop-name'>dashboardSettings.enableTheme</span>
+
+<span class="doc-prop-type"> `boolean`
+</span>
+
+</h3>
+
+    
+Specifies whether to show or hide the `Theme` icon in the dashboard banner.
+
+<br>
+
+**Default value** 
+
+<li>true</li><br>
+
+**Example** 
+   
+```js
+var dashboard = BoldBI.create({
+     dashboardSettings: {
+          enableTheme: true,
+     }
+});
+dashboard.loadDashboard();
+```
+	
+<h3 class="doc-prop-wrapper" id="dashboardsettingsenablefilteroverview" data-Path="dashboardsettingsenablefilteroverview-dashboardSettings.enablefilteroverview">
+<a href="#dashboardsettingsenablefilteroverview" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+</svg>
+</a><span class='doc-prop-name'>dashboardSettings.enableFilterOverview</span>
+
+<span class="doc-prop-type"> `boolean`
+</span>
+
+</h3>
+
+    
+Specifies whether to show or hide the `Filter Overview` icon in the dashboard banner.
+
+<br>
+
+**Default value** 
+
+<li>true</li><br> 
+
+**Example** 
+   
+```js
+var dashboard = BoldBI.create({
+     dashboardSettings: {
+          enableFilterOverview: true,
+     }
+});
+dashboard.loadDashboard();
+```
+	
+<h3 class="doc-prop-wrapper" id="dashboardsettingsenablefullscreen" data-Path="dashboardsettingsenablefullscreen-dashboardSettings.enablefullscreen">
+<a href="#dashboardsettingsenablefullscreen" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+</svg>
+</a><span class='doc-prop-name'>dashboardSettings.enableFullScreen</span>
+
+<span class="doc-prop-type"> `boolean`
+</span>
+
+</h3>
+
+    
+Specifies whether to show or hide the `Full Screen` icon in dashboard banner.
+
+<br>
+
+**Default value** 
+
+<li>false</li><br>
+
+**Example** 
+   
+```js
+var dashboard = BoldBI.create({
+     dashboardSettings: {
+          enableFullScreen: true,
+     }
+});
+dashboard.loadDashboard();
+```
+	
+<h3 class="doc-prop-wrapper" id="dashboardsettingsshowdashboardparameter" data-Path="dashboardsettingsshowdashboardparameter-dashboardSettings.showdashboardparameter">
+<a href="#dashboardsettingsshowdashboardparameter" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+</svg>
+</a><span class='doc-prop-name'>dashboardSettings.showDashboardParameter</span>
+
+<span class="doc-prop-type"> `boolean`
+</span>
+
+</h3>
+
+    
+Specifies whether to show or hide the `Dashboard Parameter` icon in dashboard banner.
+
+<br>
+
+**Default value** 
+
+<li>true</li><br>
+
+**Example** 
+   
+```js
+var dashboard = BoldBI.create({
+     dashboardSettings: {
+          showDashboardParameter: true,
      }
 });
 dashboard.loadDashboard();
@@ -418,9 +578,11 @@ dashboard.loadDashboard();
 
 Specifies whether to show or hide the `Export` icon in widget banner.
 
+<br>
+
 **Default value** 
 
-<li>true</li> 
+<li>true</li><br>
 
 **Example** 
    
@@ -448,9 +610,11 @@ dashboard.loadDashboard();
     
 Specifies whether to show or hide the `Option` icon in widget banner.
 
+<br>
+
 **Default value** 
 
-<li>true</li> 
+<li>true</li><br>
 
 **Example** 
    
@@ -478,9 +642,11 @@ dashboard.loadDashboard();
     
 Specifies whether to show or hide the `Clear Filter` icon in widget banner.
 
+<br>
+
 **Default value** 
 
-<li>true</li> 
+<li>true</li><br> 
 
 **Example** 
    
@@ -488,6 +654,38 @@ Specifies whether to show or hide the `Clear Filter` icon in widget banner.
 var dashboard = BoldBI.create({
      widgetSettings: {
           showFilter: true,
+     }
+});
+dashboard.loadDashboard();
+```
+
+<h3 class="doc-prop-wrapper" id="widgetsettingsshowMaximize" data-Path="widgetsettingsshowMaximize-widgetSettings.showMaximize">
+<a href="#widgetsettingsshowMaximize" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+</svg>
+</a><span class='doc-prop-name'>widgetSettings.showMaximize</span>
+
+<span class="doc-prop-type"> `boolean`
+</span>
+
+</h3>
+
+    
+Specifies whether to show or hide the `Maximize` icon in widget banner.
+
+<br>
+
+**Default value** 
+
+<li>true</li><br>
+
+**Example** 
+   
+```js
+var dashboard = BoldBI.create({
+     widgetSettings: {
+          showMaximize: true,
      }
 });
 dashboard.loadDashboard();
@@ -508,9 +706,11 @@ dashboard.loadDashboard();
 
 Specifies the filter that has to be applied to the dashboard.    
 
+<br>
+
 **Default value** 
 
-<li>""</li> 
+<li>""</li><br>
 
 **Example** 
    
@@ -540,9 +740,11 @@ Dashboard server provides dynamic connection string feature to fetch the data fo
     
 Specifies whether to enable or disable the dynamic connection string feature.
 
+<br>
+
 **Default value** 
 
-<li>false</li> 
+<li>false</li><br>
 
 **Example** 
    
@@ -570,9 +772,11 @@ dashboard.loadDashboard();
     
 This property, holds the values that will be passed to the API in dynamic connection string feature so that the user can use this identity in their API for validating and providing the required connection string.
 
-**Default value** 
+<br>
 
-<li>""</li> 
+**Default value** : `empty` 
+
+<li>""</li><br>
 
 **Example** 
    
@@ -603,9 +807,11 @@ dashboard.loadDashboard();
     
 Specifies whether to show or hide the `Excel` export option.
 
+<br>
+
 **Default value** 
 
-<li>true</li> 
+<li>true</li><br>
 
 **Example** 
    
@@ -633,9 +839,11 @@ dashboard.loadDashboard();
     
 Specifies whether to show or hide the `PDF` export option.
 
+<br>
+
 **Default value** 
 
-<li>true</li> 
+<li>true</li><br>
 
 **Example** 
    
@@ -663,9 +871,11 @@ dashboard.loadDashboard();
     
 Specifies whether to show or hide the `Image` export option.
 
+<br>
+
 **Default value** 
 
-<li>true</li> 
+<li>true</li><br> 
 
 **Example** 
    
@@ -673,6 +883,38 @@ Specifies whether to show or hide the `Image` export option.
 var dashboard = BoldBI.create({
      exportSettings: {
           showImage: true,
+     }
+});
+dashboard.loadDashboard();
+```
+	
+<h3 class="doc-prop-wrapper" id="exportsettingsshowcsv" data-Path="exportsettingsshowcsv-exportSettings.showcsv">
+<a href="#exportsettingsshowcsv" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+</svg>
+</a><span class='doc-prop-name'>exportSettings.showCSV</span>
+
+<span class="doc-prop-type"> `boolean`
+</span>
+
+</h3>
+
+    
+Specifies whether to show or hide the `CSV` export option.
+
+<br>
+
+**Default value** 
+
+<li>true</li><br>
+
+**Example** 
+   
+```js
+var dashboard = BoldBI.create({
+     exportSettings: {
+          showCSV: true,
      }
 });
 dashboard.loadDashboard();
@@ -693,9 +935,11 @@ dashboard.loadDashboard();
 
 Set the height of the Dashboard Viewer in % or in pixels.
 
+<br>
+
 **Default value** 
 
-<li>768px</li> 
+<li>768px</li><br>
 
 **Example** 
    
@@ -721,9 +965,11 @@ dashboard.loadDashboard();
     
 Set the width of the Dashboard Viewer in % or in pixels.
 
+<br>
+
 **Default value** 
 
-<li>1024px</li> 
+<li>1024px</li><br>
 
 **Example** 
    
@@ -749,14 +995,16 @@ dashboard.loadDashboard();
     
 Bold BI provides dark theming support for Dashboard Viewer. So, user can choose the desired theming for their choice.
 
+<br>
+
 **Default value** 
 
-<li>BoldBI.Theme.Light</li> 
+<li>BoldBI.Theme.Light</li><br>
 
 **Possible values**
 
 <li>BoldBI.Theme.Light</li> 
-<li>BoldBI.Theme.Dark</li> 
+<li>BoldBI.Theme.Dark</li><br>
 
 **Example** 
    
@@ -785,9 +1033,11 @@ Any application that embeds Bold BI dashboard and widget needs to be authenticat
 
 So this property holds the URL of the embedding application that will implement authorization. Learn more about the authorization server [here](/embedded-bi/javascript-based/authorize-server/).
 
-**Default value** 
+<br>
 
-<li>""</li> 
+**Default value** : `empty`
+
+<li>""</li><br>
 
 **Example** 
    
@@ -815,9 +1065,11 @@ dashboard.loadDashboard();
     
 This property, holds the headers needs to be sent in your application while connecting to the authorization server. 
 
+<br>
+
 **Default value** 
 
-<li>{}</li> 
+<li>{}</li><br>
 
 **Example** 
    
@@ -847,9 +1099,11 @@ dashboard.loadDashboard();
     
 Specifies the access token expiration time of the dashboard in seconds.
 
+<br>
+
 **Default value** 
 
-<li>86400</li> 
+<li>86400</li><br>
 
 **Example** 
    
@@ -879,9 +1133,11 @@ The auto refresh allows you to configure the scheduled refreshing process of the
     
 Specifies whether to enable or disable the `autoRefreshSettings` option.
 
+<br>
+
 **Default value** 
 
-<li>false</li> 
+<li>false</li><br>
 
 **Example** 
    
@@ -910,9 +1166,11 @@ dashboard.loadDashboard();
     
 Specifies the hourly time interval for auto refreshing of data.
 
+<br>
+
 **Default value** 
 
-<li>0</li> 
+<li>0</li><br>
 
 **Example** 
    
@@ -943,9 +1201,11 @@ dashboard.loadDashboard();
     
 Specifies the minute by minute time interval for auto refreshing of data.
 
+<br>
+
 **Default value** 
 
-<li>0</li> 
+<li>0</li><br>
 
 **Example** 
    
@@ -976,9 +1236,11 @@ dashboard.loadDashboard();
     
 Specifies the second by second time interval for auto refreshing of data.
 
+<br>
+
 **Default value** 
 
-<li>0</li> 
+<li>0</li><br>
 
 **Example** 
    
@@ -993,3 +1255,303 @@ var dashboard = BoldBI.create({
 });
 dashboard.loadDashboard();
 ```
+
+## localeSettings
+
+The locale allows you to change the localization of the dashboard. It is used to change the data based on the specified localization.
+
+<h3 class="doc-prop-wrapper" id="localesettingsculture" data-Path="localesettingsculture-localesettings.culture">
+<a href="#localesettingsculture" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+</svg>
+</a><span class='doc-prop-name'>localeSettings.culture</span>
+
+<span class="doc-prop-type"> `string`
+</span>
+
+</h3>
+
+    
+This property holds the values that will be passed to the dashboard in order to change the culture of dashboard.
+
+<br>
+
+**Default value** 
+
+<li>en-US</li><br>
+
+**Example** 
+   
+```js
+var dashboard = BoldBI.create({
+     localeSettings:{
+          culture: "en-US",
+     }
+});
+dashboard.loadDashboard();
+```
+
+## pinboardSettings
+
+<h3 class="doc-prop-wrapper" id="pinboardsettingsenablePinboardHeader" data-Path="pinboardsettingsenablePinboardHeader-pinboardSettings.enablePinboardHeader">
+<a href="#pinboardsettingsenablePinboardHeader" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+</svg>
+</a><span class='doc-prop-name'>pinboardSettings.enablePinboardHeader</span>
+
+<span class="doc-prop-type"> `boolean`
+</span>
+
+</h3>
+
+    
+Enable or disable the header panel in the pinboard.
+
+<br>
+
+**Default value** 
+
+<li>true</li><br>
+
+**Example** 
+   
+```js
+var dashboard = BoldBI.create({
+     pinboardSettings: {
+          enablePinboardHeader: true,
+     }
+});
+dashboard.loadPinboard();
+```
+
+<h3 class="doc-prop-wrapper" id="pinboardsettingsenableUnpinWidget" data-Path="pinboardsettingsenableUnpinWidget-pinboardSettings.enableUnpinWidget">
+<a href="#pinboardsettingsenableUnpinWidget" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+</svg>
+</a><span class='doc-prop-name'>pinboardSettings.enableUnpinWidget</span>
+
+<span class="doc-prop-type"> `boolean`
+</span>
+
+</h3>
+
+    
+Enable or disable the unPin option from the Pinboard.
+
+<br>
+
+**Default value** 
+
+<li>true</li><br>
+
+**Example** 
+   
+```js
+var dashboard = BoldBI.create({
+     pinboardSettings: {
+          enableUnpinWidget: true,
+     }
+});
+dashboard.loadPinboard();
+```
+
+## designCanvasSettings
+
+<h3 class="doc-prop-wrapper" id="designCanvasSettingsmargin" data-Path="designCanvasSettingsMargin-designCanvasSettings.margin">
+<a href="#designCanvasSettingsenableMargin" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+</svg>
+</a><span class='doc-prop-name'>designCanvasSettings.margin</span>
+
+<span class="doc-prop-type"> `integer`
+</span>
+
+</h3>
+
+    
+Customize the dashboard margins with the corresponding integer values.
+
+<br>
+
+**Default value** 
+
+<li>null</li><br>
+
+**Example** 
+   
+```js
+var dashboard = BoldBI.create({
+     designCanvasSettings: {
+          margin: null,
+     }
+});
+dashboard.loadDesigner();
+```
+
+## widgetContainerSettings
+
+<h3 class="doc-prop-wrapper" id="widgetContainerSettingsmargin" data-Path="widgetContainerSettingsMargin-widgetContainerSettings.margin">
+<a href="#widgetContainerSettingsmargin" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+</svg>
+</a><span class='doc-prop-name'>widgetContainerSettings.margin</span>
+
+<span class="doc-prop-type"> `integer`
+</span>
+
+</h3>
+
+    
+Customize the widget margins with the corresponding integer values.
+
+**NOTE:** It is not necessary to specify the px suffix. It support only integer values.
+
+<br>
+
+**Default value** 
+
+<li>null</li><br>
+
+**Example** 
+   
+```js
+var dashboard = BoldBI.create({
+     widgetContainerSettings: {
+          margin: null,
+     }
+});
+dashboard.loadDesigner();
+```
+
+<h3 class="doc-prop-wrapper" id="widgetContainerSettingsboxShadow" data-Path="widgetContainerSettingsboxShadow-widgetContainerSettings.boxShadow">
+<a href="#widgetContainerSettingsboxShadow" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+</svg>
+</a><span class='doc-prop-name'>widgetContainerSettings.boxShadow</span>
+
+<span class="doc-prop-type"> `string`
+</span>
+
+</h3>
+
+    
+Customize the box-shadow of the widgets.
+
+<br>
+
+**Default value** 
+
+<li>null</li><br>
+
+**Example** 
+   
+```js
+var dashboard = BoldBI.create({
+     widgetContainerSettings: {
+          boxShadow: null,
+     }
+});
+dashboard.loadDesigner();
+```
+
+## data sources
+
+<h3 class="doc-prop-wrapper" id="datasources" data-Path="datasources-datasources">
+<a href="#datasources" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+</svg>
+</a><span class='doc-prop-name'>datasources</span>
+
+<span class="doc-prop-type"> `array`
+</span>
+
+</h3>
+
+This property is used to add the multiple data sources in the designer page.
+
+**Example** 
+   
+```js
+var dashboard = BoldBI.create({
+     datasources: [
+          {"id": "348e414b-c8c6-4542-839a-2e12934fe64f", "canDelete" : false},  
+          {"id": "d9a28bba-e6dd-46c9-89d7-810ebb4796b3", "canDelete" : true}
+     ]
+});
+dashboard.loadDesigner();
+```
+
+## preConfiguredWidgets
+
+Predefined or Preconfigured widgets are a list of widgets that appear under ‘Default Widget Panel’ while initializing the dashboard designer itself. For this, you need to create a dashboard called template dashboard and configure the widgets that will be considered as predefined widgets for your designer.
+
+<h3 class="doc-prop-wrapper" id="preConfiguredWidgetsdashboardId" data-Path="preConfiguredWidgetsDashboardId-preConfiguredWidgets.dashboardId">
+<a href="#preConfiguredWidgetsdashboardId" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+</svg>
+</a><span class='doc-prop-name'>preConfiguredWidgets.dashboardId</span>
+
+<span class="doc-prop-type"> `string`
+</span>
+
+</h3>
+
+The preconfigured widgets will be listed from the mentioned dashboard Id within the dashboard designer embedded in your application.
+
+<br>
+
+**Default value** : `empty`
+
+<li>""</li><br>
+
+**Example** 
+   
+```js
+var dashboard = BoldBI.create({
+     preConfiguredWidgets: {
+          dashboardId: "",
+     }
+});
+dashboard.loadDesigner();
+```
+
+<h3 class="doc-prop-wrapper" id="preConfiguredWidgetscategoryName" data-Path="preConfiguredWidgetscategoryName-preConfiguredWidgets.categoryName">
+<a href="#preConfiguredWidgetscategoryName" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+</svg>
+</a><span class='doc-prop-name'>preConfiguredWidgets.categoryName</span>
+
+<span class="doc-prop-type"> `string`
+</span>
+
+</h3>
+
+The name of the category where the widget to be added in designer.
+
+<br>
+
+**Default value** : `empty`
+
+<li>""</li><br>
+
+**Example** 
+   
+```js
+var dashboard = BoldBI.create({
+     preConfiguredWidgets: {
+          categoryName: "",
+     }
+});
+dashboard.loadDesigner();
+```
+
+> **NOTE:** <br> 1. If the `categoryName` already exists, the predefined widgets were added in that category. <br> 2. If the `categoryName` not exists in the panel, the widgets were added by creating a new category with the given name. <br> 3. Otherwise, by default the widgets were added into the `Miscellaneous` category.

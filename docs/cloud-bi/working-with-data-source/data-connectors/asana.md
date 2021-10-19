@@ -55,6 +55,8 @@ After successful authentication, the NEW DATA SOURCE configuration panel opens
 6. Select **JSON** data type in **Data Format** combo box.
 7. The authentication type will be set to **Asana** automatically since OAuth is used for authenticating with Asana account.
 
+    ![DataSourcesView](/static/assets/cloud/working-with-datasource/data-connectors/images/asana/DataSourcesView.png)
+
 You can also edit the connection information set here using the [Edit Connection](/cloud-bi/working-with-data-source/editing-a-data-connection/) option.
 
 #### Additional information

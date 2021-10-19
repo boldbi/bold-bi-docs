@@ -36,6 +36,9 @@ After clicking the data source, the **NEW DATA SOURCE** configuration panel open
 
    ![MariaDB Connection](/static/assets/embedded/working-with-datasource/data-connectors/images/Mariadb/Mariadb_Connection.png)
 
+> **NOTE:**  To connect data source with **SSH**, enable the SSH check box in the **NEW DATA SOURCE** configuration panel and enter the required credentials.
+![Enable SSH](/static/assets/embedded/working-with-datasource/images/enable-ssh.png#max-width=60%)
+ 
 There are two connection types available in a data source:
 
 	* Live mode

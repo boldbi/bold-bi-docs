@@ -39,6 +39,8 @@ Once you click the data source, the NEW DATA SOURCE configuration panel opens.
 7. Replace **&lt;:your_api_token&gt;** under Headers with a valid API token.
 8. Choose **None** under **Authentication Type** as authentication is done through header.
 
+    ![DataSourcesView](/static/assets/cloud/working-with-datasource/data-connectors/images/seomonitor/DataSourcesView.png)
+
 You can also edit the connection information set here using the [Edit Connection](/cloud-bi/working-with-data-source/editing-a-data-connection/) option.
 
 #### How do I get API Token for connecting SEOmonitor data source?

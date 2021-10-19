@@ -48,7 +48,7 @@ The Bold BI supports the following data connection types such that the structure
         <td align="center" rowspan="2">Sales & CRM
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/chart-mogul/"> ChartMogul</a>
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/copper/"> Copper</a>
-            <br> <a href="/cloud-bi/working-with-data-source/data-connectors/freshsales/"> Freshsales</a>
+            <br> <a href="/cloud-bi/working-with-data-source/data-connectors/freshwork-crm/"> Freshwork CRM</a>
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/harvest/"> Harvest</a>
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/infusionsoft/"> Infusionsoft</a>
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/insightly/"> Insightly</a>
@@ -76,11 +76,9 @@ The Bold BI supports the following data connection types such that the structure
         </td>
         <td align="center">NoSQL
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/mongodb/"> MongoDB</a>
-			<br> <a href="/cloud-bi/working-with-data-source/data-connectors/ravendb/"> RavenDB</a>
         </td>
 		<td align="center">Management
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/appfolio/"> AppFolio</a>
-            <br> <a href="/cloud-bi/working-with-data-source/data-connectors/nutshell/"> Nutshell</a>
         </td>
     </tr>
     <tr>
@@ -101,6 +99,7 @@ The Bold BI supports the following data connection types such that the structure
 			<br> <a href="/cloud-bi/working-with-data-source/data-connectors/facebook-ads/"> Facebook Ads</a>
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/linkedin/"> LinkedIn</a>
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/youtube/"> YouTube</a>
+			<br> <a href="/cloud-bi/working-with-data-source/data-connectors/sendible/"> Sendible</a>
         </td>
 		<td align="center">Fitness Management
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/clubready/"> ClubReady</a>
@@ -119,12 +118,9 @@ The Bold BI supports the following data connection types such that the structure
     <tr>
         <td align="center">Marketing
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/ask-nicely/"> Ask Nicely</a>
-			<br> <a href="/cloud-bi/working-with-data-source/data-connectors/amazon-mws/"> Amazon MWS</a>
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/bitly/"> Bitly</a>
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/campaign-monitor/"> Campaign Monitor</a>
-            <br> <a href="/cloud-bi/working-with-data-source/data-connectors/chart-beat/"> Chartbeat</a>
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/go-squared/"> GoSquared</a>
-            <br> <a href="/cloud-bi/working-with-data-source/data-connectors/google-adsense/"> Google AdSense</a>
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/google-analytics/"> Google Analytics</a>
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/google-search-console/"> Google Search Console</a>
 			<br> <a href="/cloud-bi/working-with-data-source/data-connectors/hubspot/"> Hubspot</a>
@@ -135,6 +131,7 @@ The Bold BI supports the following data connection types such that the structure
 			<br> <a href="/cloud-bi/working-with-data-source/data-connectors/google-ads/"> Google Ads</a>
         </td>
         <td align="center">Finance
+		    <br> <a href="/cloud-bi/working-with-data-source/data-connectors/amazon-mws/"> Amazon MWS</a>
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/chargebee/"> Chargebee</a>
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/chargify/"> Chargify</a>
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/freshbooks/"> FreshBooks</a>
@@ -156,11 +153,8 @@ The Bold BI supports the following data connection types such that the structure
         </td>
         <td align="center">Web Analytics
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/optimizely/"> Optimizely</a>
+			<br> <a href="/cloud-bi/working-with-data-source/data-connectors/prometheus/"> Prometheus</a>
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/seomonitor/"> SEOmonitor</a>
-            <br> <a href="/cloud-bi/working-with-data-source/data-connectors/oracle-bi-reports/"> Oracle BI Reports</a>
-        </td>
-		<td align="center">Data monitoring
-            <br> <a href="/cloud-bi/working-with-data-source/data-connectors/prometheus/"> Prometheus</a>
         </td>
     </tr>
     <tr>
@@ -180,6 +174,7 @@ The Bold BI supports the following data connection types such that the structure
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/lighthouse/"> Lighthouse</a>
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/outlook-calendar/"> Microsoft Outlook Calendar</a>
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/new-relic/"> New Relic</a>
+			<br> <a href="/cloud-bi/working-with-data-source/data-connectors/nutshell/"> Nutshell</a>
 			<br> <a href="/cloud-bi/working-with-data-source/data-connectors/proofhub/"> ProofHub</a>
 			<br> <a href="/cloud-bi/working-with-data-source/data-connectors/podio/"> Podio</a>
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/smartsheet/"> Smartsheet</a>
@@ -197,11 +192,11 @@ The Bold BI supports the following data connection types such that the structure
         </td>
         <td align="center">Mobile Analytics
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/42matters/"> 42matters</a>
+        </td>
+		<td align="center">App Analytics
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/app-annie/"> App Annie</a>
         </td>
-		<td align="center">Social Media Management
-			<br> <a href="/cloud-bi/working-with-data-source/data-connectors/sendible/"> Sendible</a>           
-        </td>
+
     </tr>
     <tr>
         <td align="center">Survey
@@ -213,6 +208,7 @@ The Bold BI supports the following data connection types such that the structure
         </td>
         <td align="center">Advertising
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/flurry/"> Flurry</a>
+			<br> <a href="/cloud-bi/working-with-data-source/data-connectors/google-adsense/"> Google AdSense</a>
         </td>
     </tr>
   </tbody>

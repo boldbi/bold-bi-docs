@@ -15,31 +15,6 @@ Data Sources that are accessible by the user depending on the user’s permissio
 
 ![Manage Data Sources](/static/assets/embedded/managing-resources/images/manage-data-sources.png)
 
-<!---
-## Add Data Sources
-Data source can be created only if the user has `Create All Data Sources` permission.
-
-### Steps to add a data source
-
-1. Click on the `Create` button in the menu and select `Data Source` to add a data source.
-
-	![Create Data Source](/static/assets/embedded/managing-resources/images/create-data-source.png)
-	
-2. Fill in the form with name and description of the data source and upload the data source file(`.syds`).
-	
-	![Add Data Source](/static/assets/embedded/managing-resources/images/add-data-source.png)
-
-3. When clicking on `Add`, the data source will be added to the Bold BI.
-
-> **NOTE:**  `Read Write Delete Download` permission for that `Specific Data Source` will be added for the user who created the data source.
-	
-## Update Data Sources
-Name, description and the data source file(`.syds`) can be changed in the update data source dialog box.
-
-![Update Data Source](/static/assets/embedded/managing-resources/images/update-data-source.png)
-
---->
-
 There are two connection type available in Data source
 
 * Live mode
@@ -73,6 +48,7 @@ This section explains on how to configure the data source refresh setting.
 
 2. Select the recurrence type, recurrence, start and end dates in the `Refresh Setting` dialog box.
 	* Data refresh can be scheduled hourly, daily, weekly and monthly.
+	* The minimum data refresh interval time will be 5 minutes.
 	* Application Time Zone is displayed below the date picker. Start time of the schedule is converted to client Time Zone and shown in the right side for the user’s convenience, after selecting click on the `Schedule` button.
 	* Data refresh failure notification can be sent to the owner of the data source with the error message and a link to the data source refresh history by enabling the send failure notification to owner option.
 	* Bold BI application deactivates the data refresh, after limited consecutive failures and send the disable notification to the owner by mail.
@@ -167,6 +143,14 @@ You can preview the data of your data sources.
 Click `Actions` in the data sources grid context menu and select `Preview Data` to preview the data source.
 
 ![preview Data Source](/static/assets/embedded/managing-resources/images/preview-data-source.png)
+
+## Information of Data Source
+
+You can see the information of respective Data Source in dialog box. Click `Actions` in the grid context menu and select `Info`.
+
+![Data Sources Info](/static/assets/embedded/managing-resources/images/datasources-info.png)
+
+![Data Sources Info Popup](/static/assets/embedded/managing-resources/images/datasources-info-popup.png)
 
 ## Copy Data Sources  
 You can copy the data source item only for the data source type in **Live** mode connection.

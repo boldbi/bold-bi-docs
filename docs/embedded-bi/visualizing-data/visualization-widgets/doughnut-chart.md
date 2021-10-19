@@ -10,17 +10,17 @@ documentation: ug
 
 # Doughnut Chart
 
-The Doughnut Chart allows you to showcase proportionality of each item to the total in the form of doughnut-slices. It works best to display data with a small number of categories.
+The Doughnut chart allows you to showcase the proportionality of each item to the total in the form of doughnut-slices. It works best to display data with a small number of categories.
 
-![Doughnut chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/doughnutchart_column.png)
+![Doughnut chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/doughnutchart-column.png)
 
 ## How to configure table data in the Doughnut Chart
 
-The Doughnut Chart needs a minimum of one value element and one column element to showcase. The measure or expression field that you want to analyze can be dropped into the Values block. The dimension for which you want to categorize the measure can be dropped into the Columns block. To categorize based on a series, drop the respective dimension into the Rows block.
+The Doughnut chart needs a minimum of one value element and one column element to showcase. The `measure` or `expression` field that you want to analyze can be dropped into the Values block. The dimension for which you want to categorize the measure can be dropped into the Columns block. To categorize based on a series, drop the respective dimension into the `Rows block.`
 
-To configure data in the Doughnut Chart, follow these steps:
+Follow the below steps to configure the data to the doughnut chart.
 
-1. Drag the Doughnut Chart into the canvas and resize it to your required size.
+1. Drag and drop the Doughnut chart into the canvas and resize it to your required size.
 
 ![Drag and drop](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/add-doughnutchart.png)
 
@@ -28,19 +28,19 @@ To configure data in the Doughnut Chart, follow these steps:
 
 ![Data source button](/static/assets/embedded/visualizing-data/visualization-widgets/images/databutton.png)
 
-3. Click **CREATE NEW** to launch a new connection from the connection-type panel.
+3. Click the **CREATE NEW** button to launch a new connection from the connection type panel.
 
 ![Add data source](/static/assets/embedded/visualizing-data/visualization-widgets/images/datasourcebutton.png)
 
-4. In the connection-type panel, click any one of the listed connection type buttons shown. Here, the Microsoft Excel connection type is selected for demonstration.
+4. In the connection type panel, click any one of the listed connection type buttons shown. Here, the `Microsoft Excel` connection type is selected for demonstration.
 
 ![Data source list](/static/assets/embedded/visualizing-data/visualization-widgets/images/datasourcelist.png)
 
-5. In the NEW DATA SOURCE configuration panel, choose the file path and click **Preview & Connect**.
+5. In the `NEW DATA SOURCE` configuration panel, choose the file path and click the **Preview & Connect** button.
 
 ![Connect button](/static/assets/embedded/visualizing-data/visualization-widgets/images/Connectbutton.png)
 
-6. Drag your preferred table or view from the left pane from the data design view and click **Save**.
+6. Drag your preferred table or view from the left pane from the data design view and click the **Save** button.
 
 ![Virtual table](/static/assets/embedded/visualizing-data/visualization-widgets/images/virtualtable.png)
 
@@ -52,17 +52,17 @@ To configure data in the Doughnut Chart, follow these steps:
 
 ![Assign data](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/assigndata.png)
 
-The data tab will be opened with available measures and dimensions from the connected data source.
+9.  The **ASSIGN DATA** tab will be opened with available measures and dimensions from the connected data source.
 
 ![Chart data](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/chartdata.png)
 
-You can add the required data from Measures and Dimensions sections to the required field.
+10. You can add the required data from Measures and Dimensions sections to the required field.
 
 **Adding values**
 
-You can add more than one measures section to the Values field by dragging the required data.
+You can add more than one measures section to the `Value(s)` field by dragging the required data.
 
-![Add data to value](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/Add-data.png)
+![Add data to value](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/add-data.png)
 
 Now, the doughnut chart will be rendered as follows.
 
@@ -70,29 +70,29 @@ Now, the doughnut chart will be rendered as follows.
 
 Click **Settings** to change the required summary type from the available summary types shown in the settings.
 
-![Settings option](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/doughnutchart_settings.png)
+![Settings option](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/doughnutchart-settings.png)
 
-You can filter the data displayed in the Doughnut Chart by using the Filter option. For more details, refer to [filter](/embedded-bi/visualizing-data/working-with-widgets/configuring-widget-filters/).
+You can filter the data displayed in the Doughnut Chart by using the Filter option. For more details, refer to the [filter](/embedded-bi/visualizing-data/working-with-widgets/configuring-widget-filters/).
 
-![Filter option](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/Filter-option.png)
+![Filter option](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/filter-option.png)
 
-You can format the data displayed in the Doughnut Chart by using the Format option. For more details, refer to [measure format](/embedded-bi/visualizing-data/working-with-widgets/formatting-measure-type-column/)
+You can format the data displayed in the Doughnut Chart by using the Format option. For more details, refer to the [measure format](/embedded-bi/visualizing-data/working-with-widgets/formatting-measure-type-column/)
 
-![Format option](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/Format-option.png)
+![Format option](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/format-option.png)
 
 To remove the added value fields, click **Remove**.
 
-![Remove button](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/Remove-fields.png)
+![Remove button](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/remove-fields.png)
 
 **Adding columns**
 
-You can add data from the Dimension field to the Column(s) field.
+You can add data from the Dimension field to the `Column(s)` field.
 
 ![Add data to column](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/add-column.png)
 
-The Doughnut Chart will be rendered as follows.
+The Doughnut chart will be rendered as follows.
 
-![Doughnut chart with column field](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/doughnutchart_column.png)
+![Doughnut chart with column field](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/doughnutchart-column.png)
 
 Add more than one value to the Columns field. The following alert message will open.
 
@@ -112,11 +112,15 @@ You can change the Settings.
 
 ![Column settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/columnsettings.png)
 
-You can sort the dimension data using the Sort option under the Settings menu list. To apply sorting for data, refer to [Sort](/embedded-bi/visualizing-data/working-with-widgets/advanced-sorting/#dimension-column).
+You can sort the dimension data using the **Sort** option under the Settings menu list. To apply sorting for data, refer to the [Sort](/embedded-bi/visualizing-data/working-with-widgets/advanced-sorting/#dimension-column).
 
 ![Sort option](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/sortoption.png)
 
-You can apply filters by selecting the filter option in settings. For more details, refer to [filter](/embedded-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column).	
+You can apply filters by selecting the `filter` option in settings.
+
+![Sort option](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/filteroption.png)
+
+For more details, refer to the [filter](/embedded-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column).	
 
 > **NOTE:**  By default, the filter will be set for the top 5 records.
 
@@ -124,15 +128,15 @@ Similarly, you can add the Measures and Expression Columns to the Column field.
 
 **Assigning rows**
 
-You can drag the Dimension field into the Rows field.
+You can drag and drop the `Dimension` field into the `Rows` field.
 
-![Add data to row](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/chart_row.png)
+![Add data to row](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/chart-row.png)
 
 You can apply [filter](/embedded-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column) and [sort](/embedded-bi/visualizing-data/working-with-widgets/advanced-sorting/#dimension-column) options for the rows field, if required.
 
-This will render a Doughnut Chart in series.
+This will render a Doughnut chart in a series.
 
-![Doughnut chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/doughnutchart_series.png)
+![Doughnut chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/doughnutchart-series.png)
 
 Scroll down to see all charts.
 
@@ -146,9 +150,9 @@ To configure data in Doughnut Chart, follow these steps:
 
 2. Configure data in the Doughnut Chart.
 
-3. Focus the Doughnut Chart and click the Widget Settings icon.
+3. Focus on the Doughnut chart and click the Widget Settings icon.
 
-![Widget settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/Widget-settings.png)
+![Widget settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/widget-settings.png)
 
 The property window will be opened as follows.
 
@@ -156,43 +160,45 @@ The property window will be opened as follows.
 
 You can see the list of properties available for the widget with default value.
 
-**General Settings**
+### General Settings
 
-![Title](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/Title.png)
+![Title](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/title.png)
 
-**Name**
+#### Name
 
-Allows you to set a title for the Doughnut Chart widget.
+Allows you to set a `title` for the Doughnut chart widget.
 
-**Subtitle**
+#### Subtitle
 
-Allows you to set a subtitle for the Doughnut Chart widget.
+Allows you to set a `subtitle` for the Doughnut chart widget.
 
-**Description**
+#### Description
 
-Set a description for the Doughnut Chart, whose visibility will be denoted by **i** icon, and hovering over it will display the description in a tooltip.
+Set a `description` for the Doughnut chart, whose visibility will be denoted by **i** icon, and hovering over it will display the description in a tooltip.
 
-**Basic settings**
+### Basic settings
 
-![Basic settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/Basic-settings.png)
+![Basic settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/basic-settings.png)
 
-**Chart type**
+#### Chart type
 
 Switch the widget view from the current chart type to another chart type.
 
-**Enable animation**
+![Chart Type](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/chart-type.png)
 
-This allows you to enable the series rendering in animated mode.
+#### Enable animation
 
-**Show legend**
+It animates the measure values when you enable the `Enable Animation.`
+
+#### Show legend
 
 A Legend is a text used to describe the plotted data. It allows you to toggle the visibility of the legend in the chart and change the legend text position (selecting through the combo box).
 
-![Show legend](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/Show-legend.png)
+![Show legend](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/show-legend.png)
 
 Enabling the **Custom Legend Text** option will allow you to define a custom text (through the text area) to display for each legend series (selecting through the combo box) in the chart.
 
-**Legend Label Color**
+#### Legend Label Color
 
 This allows you to change the chart legend title and label colors.
 
@@ -200,13 +206,49 @@ This allows you to change the chart legend title and label colors.
 
 ![Chart Legend Color](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/legend-label-color.png)
 
-**Show value labels**
+#### Customize
+
+You can customize the legend text through the Custom Legend Settings dialog. This dialog will show the legend text list as labels at left and corresponding text area at right to add the formatted text to display instead.
+
+![Legend customization](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/legend-custom.png)
+
+*After customize the legend*
+
+![Legend customization](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/legend.png)
+
+### Legend Position
+
+You can able to change the position for the legend at `Top, Left, Right` and `Bottom.`
+
+#### Legend Shape
+
+This allows you to change the **shape** of the legend.
+
+***Circle***
+
+This option allows you to change the shape of the legend in a `Circle.`
+
+![Show Legend shape](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/doughnutlegend-shape.png)
+
+***Series Type***
+
+This option allows you to change the shape of the legend in `Series.`
+
+![Show Legend shape Series](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/doughnut-legendshape-series.png)
+
+#### Legend Title
+
+This allows you to add the legend title for the chart. It will reflect with the `Show Legend.`
+
+![Show Legend Title](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/doughnut-legendtitle.png)
+
+#### Show value labels
 
 Toggle the visibility of value labels.
 
 ![Show value labels](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/value-labels.png)
 
-**Value Label Color**
+#### Value Label Color
 
 This allows you to customize value label's color.
 
@@ -214,109 +256,176 @@ This allows you to customize value label's color.
 
 ![Value label Color](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/data-label-color.png)
 
-**Data label**
+#### Data label
 
-Define the display format as a value, percentage, or both.
+You can able to define the display format as a `category, value, percentage, category and value, value and percentage, category and percentage, ` or `all details`.
 
-**Value**
+#### Category
 
-![Value](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/Value.png)
+![Category](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/category.png)
 
-**Percentage**
+#### Value
+
+![Value](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/value.png)
+
+#### Percentage
 
 ![Percentage](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/value-labels.png)
 
-**Value and percentage**
+#### Category and Value
 
-![Value and percentage](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/doughnutchart_valueandpercent.png)
+![Category and Value](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/categoryandvalue.png)
 
-**Value labels suffix**
+#### Value and percentage
+
+![Value and percentage](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/doughnutchart-valueandpercent.png)
+
+#### Category and Percentage
+
+![Category and Percentage](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/categoryandpercentage.png)
+
+#### All Details
+
+![All](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/all.png)
+
+#### Value labels suffix
 
 Set a suffix for the value labels.
 
-![Value labels suffix](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/Value-label-suffix.png)
+![Value labels suffix](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/value-label-suffix.png)
 
-**Filter**
+### Filter
 
-![Filter](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/Filter.png)
+![Filter](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/filter.png)
 
-**Act as Master Widget**
+#### Act as Master Widget
 
-Define the Doughnut Chart widget as a master widget such that its filter action will be shown in other widgets of the dashboard.
+It defines the Doughnut chart widget as a master widget such that its filter action will be shown in other widgets of the dashboard.
 
-**Ignore filter actions**
+#### Ignore filter actions
 
-Define the Doughnut Chart widget to ignore the filter actions applied to other widgets in the dashboard.
+It defines the Doughnut chart widget to ignore the filter actions applied to other widgets in the dashboard.
 
-**Hierarchical Filter**
+#### Hierarchical Filter
 
-Through this option, you can enable or disable hierarchical Top `N` filtering. While applying Top N filter with multiple dimension columns, the data returned can be customized based on whether the filtering need to be done as flat or based on the hierarchy of added dimension columns.
+Through this option, you can enable or disable hierarchical `Top N` filtering. While applying the `Top N` filter with multiple dimension columns, the data returned can be customized based on whether the filtering needs to be done as flat or based on the hierarchy of added dimension columns.
 
-When the Hierarchical Filter option is enabled, the Top N will be applied for each individual column separately based on the number set for each column.
+When the Hierarchical Filter option is enabled, the `Top N` will be applied for each individual column separately based on the number set for each column.
 
-**Link**
+### Link
 
-![Link](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/Link.png)
+![Link](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/link.png)
 
-You can enable linking and configure navigating to a general URL with or without parameters. For more details, refer to [Linking](/embedded-bi/visualizing-data/working-with-widgets/linking-urls-and-dashboards/).
+You can enable linking and configure navigating to a general URL with or without parameters. For more details, refer to the [Linking](/embedded-bi/visualizing-data/working-with-widgets/linking-urls-and-dashboards/).
 
-**Container appearance**
+### Series palette
 
-![Container appearance](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/Container-appearance.png)
+By toggling the `series palette,` you can customize the proportion series segments’ colors.
 
-**Title alignment**
+![Series palette](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/seriespalette.png)
 
-Handle the alignment of the widget title to left, center, or right.
+#### Based On
 
-**Title color**
+You can choose the field from the Based On section to apply the conditions.
 
-Apply a text color to the widget title.
+This section shows a palette of colors. By clicking the colored square, the color picker will open. You can choose a color and change the color by changing the corresponding hexadecimal value at the right.
 
-**Show border**
+![Series palette](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/seriescolorpalette.png)
 
-Toggle the visibility of the border surrounding the widget.
+![Series palette Customization](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/color-customization.png)
 
-**Corner radius**
+### Use Default Palette
 
-Apply a specified radius to widget corners, if the **Show Border** property is enabled. Value can be between 0 and 10.
+This option shows when you add more than one measure field to the Value(s).
 
-**Show maximize**
-
-Enable or disable the maximized mode of the doughnut chart widget. The visibility of the maximize icon in the widget header will be defined based on this setting.
-
-**CSV export**
-
-Enable or disable the CSV export option for the Doughnut Chart widget. Enabling this allows you to export the summarized data of the widget view to CSV format in the viewer.
-
-**Excel export**
-
-Enable or disable the Excel export option for the Doughnut Chart widget. Enabling this allows you to export the summarized data of the widget view to .xlsx or .xls format in the viewer.
-
-**Image export**
-
-Enable or disable the image export option for the Doughnut Chart widget. Enabling this allows you to export the view of the widget to image format (.jpg, .png, or .bmp) in the viewer.
-
-**Enable comments**
-
-Enable or disable the comments for the dashboard widget. For more details refer [here](/embedded-bi/visualizing-data/working-with-widgets/commenting-widget/)
-
-**Series palette**
-
-Customize the chart series color through the Series Palette section.
-
-
-**Use default palette**
-
-Toggle the series color between the default palette and a custom palette. By default, the Use Default Palette is toggled on and default palette will be applied to proportion series segments.
-
-![Series color palette](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/seriescolorpalette.png)
-
-By toggle off the Use Default Palette, you can customize the proportion series segments' colors. This section shows a palette of colors. By clicking the colored square, the color picker will open. You can choose a color and change the series color by changing the corresponding hexadecimal value at the right.
+By toggle off the `Use Default Palette,` you can customize the proportion series segments' colors by clicking the colored squares.
 
 ![Series color palette window](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/series-color-palette-window.png)
 
-![Doughnut chart Series color](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/doughnutchart_seriescolorpalette.png)
+### Container Appearance
 
+![Container Appearance](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/container-appearance.png)
 
+### Title Alignment
 
+This allows you to handle the alignment of widget title to either **left, center, or right**.
 
+### Title Color
+
+This allows you to apply the text `color` to the widget title.
+
+### Title Auto Font Size
+
+On enabling Auto Font Size, the font size of the title will be adjusted automatically if the resolution of the screen varies.
+
+**Font Size**
+
+This allows you to apply the specified size of the font to the widget title if the **Title Auto Font Size** is disabled. Value can be between 10 and 44.
+
+### Subtitle Auto Font Size
+
+On enabling Auto Font Size, the font size of the subtitle will be adjusted automatically if the resolution of the screen varies.
+
+**Font Size**
+
+This allows you to apply the specified size of the font to the widget title if the **Subtitle Auto Font Size** is disabled. Value can be between 10 and 32.
+
+### Show Border
+
+This allows you to toggle the visibility of `border` surrounding the widget.
+
+### Corner Radius
+
+This allows you to apply the specified `radius` to the widget corners if the **Show Border** is enabled. Value can be between 0 and 10.
+
+### Show Background Image
+
+This allow you to set the **background image** for the spline area chart widget.
+
+### Background Color
+
+This allows you to set the **background color** to the spline area chart widget.
+
+### Transparency
+
+This property allows you to specifies the **transparency** for the `background color`.
+
+### Container actions
+
+![Container Actions](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/container-actions.png)
+
+#### Show Header
+
+This allows you to enable or disable the `widget title` of the spline area chart. 
+
+#### Allow Maximize View
+
+This allows you to enable or disable the `maximized mode` of the spline area chart widget. The visibility of the maximize icon in the widget header will be defined based on the setting in the viewer.
+
+#### Allow CSV Export
+
+This allows you to enable or disable the `CSV export` option for the spline area chart widget. Enabling this allows you to export the summarized data of the widget view to CSV format in the viewer.
+
+#### Allow Excel Export
+
+This allows you to enable or disable the `Excel export` option for the spline area chart widget. Enabling this allows you to export the summarized data of the widget view to `(.xlsx or .xls)` format in the viewer.
+
+#### Allow Image Export
+
+This allows you to enable or disable the `Image export` option for the spline area chart widget. Enabling this allows you to export the view of the widget to image format `(.jpg), (.png), or (.bmp)` in the viewer.
+
+#### Allow PDF Export
+
+This allows you to enable or disable the `PDF export` option for the spline area chart widget. Enabling this allows you to export the view of the widget to pdf format in the viewer.
+
+#### Enable Comments
+
+This allows you to enable or disable `comment` for the dashboard widget. For more details, refer to this [link](/embedded-bi/visualizing-data/working-with-widgets/commenting-widget/).
+
+#### Allow View Underlying Data
+
+This allows you to visualize the raw data associated with a widget at runtime. 
+
+#### Allow Pin 
+
+This allows you to pin the widget.

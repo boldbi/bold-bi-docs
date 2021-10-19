@@ -38,6 +38,9 @@ Once you click the data source, the NEW DATA SOURCE configuration panel opens.
 6. Choose **Basic HTTP Authentication** in **Authentication Type** combo box.
 7. Enter the valid credentials associated with your account in **Username & Password** text boxes.
 
+    ![DataSourcesView](/static/assets/cloud/working-with-datasource/data-connectors/images/kissmetrics/DataSourcesView.png)
+
+
 You can also edit the connection information set here using the [Edit Connection](/cloud-bi/working-with-data-source/editing-a-data-connection/) option.
 
 #### Additional information

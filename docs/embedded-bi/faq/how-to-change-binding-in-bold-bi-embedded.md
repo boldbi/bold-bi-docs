@@ -6,41 +6,34 @@ platform: bold-bi
 documentation: ug
 ---
 
-> This document explains how to change the application binding in IIS for the Bold BI version 4.1.36 or later. Check [this](/embedded-bi/faq/how-to-change-binding-in-bold-bi-embedded-below-v4.1.36/) to change the IIS binding for the Bold BI version below 4.1.36. 
+> This document explains how to change the application binding in IIS for the Bold BI version above 4.1.36.
+Check [this](/embedded-bi/faq/how-to-change-binding-in-bold-bi-embedded-below-v4.1.36/) to change the IIS binding for the Bold BI version below 4.1.36.
+Check [this](/embedded-bi/faq/how-to-change-binding-in-bold-bi-embedded-v4.1.36/) to change the IIS binding for the Bold BI version 4.1.36.
 
 # How to change the binding in the Bold BI Enterprise
 Follow these steps to change the application binding information:
 
 1. Add a new binding to Bold BI Enterprise edition on IIS as shown in the following image.
-    **`Example: 172.17.99.113`**
+   **`Example: 172.31.176.1`**
 ![IIS Binding](/static/assets/embedded/faq/images/add-iis-binding.png)
 
-2. Update the new binding values in the following configuration files in deployed location.
-
-    Update the `Idp`, `Bi`, `BiDesigner`, and `Reports` values in the following config file location.
-    `{Deployed Location}\app_data\configuration\config.xml` 
-    ![Core Config File](/static/assets/embedded/faq/images/latest-config-file.png)
-
-    > **NOTE:** By default, Bold BI will be deployed on "C:\BoldServices".
-
-3. Update the new binding values in `product.json` file in following location.
-`{Deployed Location}\app_data\configuration\product.json`
-![Product json File](/static/assets/embedded/faq/images/product-json.png)
-
-4. Restart the site in IIS and browse the site with new binding URL.
-
-5. Now, navigate to the site settings page of the UMS application using below new binding and update the new binding information as shown in the following image.  
-**`http://172.17.99.113/ums/administration`**  
+2. Now, navigate to the site settings page of the UMS application using below new binding and update the new binding information as shown in the following image.  
+**`http://172.31.176.1/ums/administration`** 
 ![IDP Base URL](/static/assets/embedded/faq/images/idp-url-binding.png)  
 
-6. Now, navigate to the site settings of your dashboard server application using below new binding and update the new binding information as shown in image below.  
-**`http://172.17.99.113/bi/site/site1/administration`**  
-![DS Base URL](/static/assets/embedded/faq/images/ds-url-binding.png)
+3. Now, navigate to the ums site listing page and edit the site using the following new binding and update the new binding information as shown in the following image.  
+**`http://172.31.176.1/ums/sites`** 
+![UMS site listing](/static/assets/embedded/faq/images/ums-site-listing.png) 
+![DS Base URL](/static/assets/embedded/faq/images/ds-url-binding-in-ums.png)
 
-7. Now, Bold BI site can be browsed using the new binding.
+4. Click `Next` and you need to provide a `Password` of the database, which configured for the respective site.
+![Update Site Details](/static/assets/embedded/faq/images/update-site-details.png)
+
+5. Click `Update`, now your site will be running with updated site URL.
 
 > **IMPORTANT:** Do not remove the existing bindings. 
 
 > **NOTE:**
 > * If you have DNS, you can add binding for the DNS instead of IP mentioned here.
-> * IIS Express Development Certificate cannot be used to configure the SSL with the IP address or domain. If it is configured with the IP address or domain, Bold BI application will not work correctly.
+> * The IIS Express Development Certificate cannot be used to configure the SSL with the IP address or domain. If it is configured with an IP address or domain, Bold BI application will not function properly.
+> * If you have a valid SSL certificate installed on the server machine for the respective domain, you can configure the bindings with "HTTPS" instead of "HTTP" when updating the new binding information.

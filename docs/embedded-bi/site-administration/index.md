@@ -8,7 +8,7 @@ documentation: ug
 
 # Site Administration
 
-This section explains how to configure datastore, email, account activation, and embed settings in the Bold BI Server including the Single Sign-On and Azure Active Directory settings.
+This section explains how to configure datastore, email, account activation, and embed settings in the Bold BI Server including the Single Sign-On, Active Directory, and Azure Active Directory settings.
 
 You can explore the Site Administration in detail here,
 

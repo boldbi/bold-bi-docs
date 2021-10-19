@@ -141,15 +141,15 @@ The below values are necessary to form the signature
 <td rowspan="3">embed_datasource_filter</td>
 <td rowspan="3">No</td>
 <td rowspan="3">The embedded dashboard can be filtered with passed Dashboard Parameter and URL Parameter.</td>
-<td>`If passing Dashboard Parameter - embed_datasource_filter=&&Parameter1=Value1`</td>
+<td>`If you would like to pass Dashboard Parameter - embed_datasource_filter=&&Parameter1=Value1`</td>
 </tr>
 
 <tr>
-<td>`If passing URL Parameter - embed_datasource_filter=&Parameter2=Value2`</td>
+<td>`If you would like to pass URL Parameter - embed_datasource_filter=&Parameter2=Value2`</td>
 </tr>
 
 <tr>
-<td>`If passing both filter - embed_datasource_filter=&&Parameter1=Value1&Parameter2=Value2`</td>
+<td>`If you would like to pass both Dashboard and URL parameter - embed_datasource_filter=&&Parameter1=Value1&Parameter2=Value2`</td>
 </tr>
 
 <tr>
@@ -167,20 +167,6 @@ The below values are necessary to form the signature
 </tr>
 
 </table>
-
-### How to pass the Dashboard Parameter and URL Parameter filters in embed URL
-
-In embed URL, you can pass both types of filters(Dashboard Parameter/URL Filter Parameter) values at the same time.
-
-Pass your filters to the `embed_datasource_filter` URL parameter in the embed URL as follows,
-
-<table>
-<tr><td>Example: http://test.boldbi.com/bi/en-us/site/site1/dashboards/8428c9d9-85db-418c-b877-ea4495dcddd7/Predictive%20Analytics/Personal%20Expense%20Analysis?embed_nonce=3e253410-1a82-4fb3-a337-122a8007dafc&embed_user_email=test@syncfusion.com&embeds=sdwd&embed_dashboard_views_edit=true&embed_dashboard_views=true&embed_dashboard_export=true&embed_dashboard_comments=true&embed_widget_comments=true&embed_dashboard_favorite=true&embed_timestamp=1583928213&embed_expirationtime=100&embed_datasource_filter=&&dashboardparameter1=value1&urlparameter1=value1&embed_signature=VYrDMVX4h85PrRBKX9mystRHYkU8z+HVC9bkVMc2qGY=</td></tr>
-</table>
-
-* The Dashboard Parameter filter must be started with a double ampersand `&&` in the embed URL. Refer to this [link](/embedded-bi/working-with-data-source/configuring-dashboard-parameters/) for more details.    
-
-* The URL filter Parameter must be started with a single ampersand `&` in the embed URL. Refer to this [link](/embedded-bi/working-with-dashboards/preview-dashboard/urlparameters/) for more details.
 
 ### Generating the signature for the embed URL
 
@@ -211,7 +197,96 @@ embed_nonce=55a1c8f4-5015-487d-8463-d3ebeae655fd&embed_user_email=test@syncfusio
 </td></tr>
 </table>
 
-The above formed embed parameter is signed with the secret code generated in the Bold BI server using the HMACSHA256 algorithm and the generated signed key will be appended with the embed URL as embed_signature.
+  To obtain the signature for the embed URL, pass the query parameters as an argument to the below <code>GetSignatureUrl</code> method. It will return the hashed signature, which you must append to the existing query parameters with the query parameter name as <strong>'embed_signature'</strong>.
+
+```js  
+        
+        public string GetSignatureUrl(string queryString)
+        {
+            // Get the embedSecret key from Bold BI.
+            var embedSecret = "8apLLNabQisvriG2W1nOI7XWkl2CsYY";
+            var encoding = new System.Text.UTF8Encoding();
+            var keyBytes = encoding.GetBytes(embedSecret);
+            var messageBytes = encoding.GetBytes(queryString);
+            using (var hmacsha1 = new HMACSHA256(keyBytes))
+            {
+                var hashMessage = hmacsha1.ComputeHash(messageBytes);
+                return Convert.ToBase64String(hashMessage);
+            }
+        }
+```
+> We have provided the code snippet to generate the signature in C#. You can write the equivalent code in your platform language.
+
+## Available parameter
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th> 
+      <th>In Dashboards</th> 
+      <th>In Widgets</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>embed_dashboard_comments</code></td>
+      <td><code>boolean</code></td>
+      <td>Show/hide dashboard comments</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td><code>embed_widget_comments</code></td>
+      <td><code>boolean</code></td>
+      <td>NA</td>
+      <td>Show/hide widget comments</td>
+    </tr>
+    <tr>
+      <td><code>views</code></td>
+      <td><code>boolean</code></td>
+      <td>Show/hide dashboard views</td>
+      <td>NA</td> 
+    </tr>
+    <tr>
+      <td><code>export</code></td>
+      <td><code>boolean</code></td>
+      <td>Show/hide dashboard export option</td>
+      <td>Show/hide widget export option</td> 
+    </tr>
+    <tr>
+      <td><code>hide_header</code></td>
+      <td><code>boolean</code></td>
+      <td>Show/hide dashboard header</td>
+      <td>NA</td> 
+    </tr>
+    <tr>
+      <td><code>hide_tool</code></td>
+      <td><code>string</code></td>
+      <td>Predefined values: tm-Theme,dp-Dashboard Parameter,fo-Filter Overview,fs-FullScreen,rf-Refresh,om-Option Menu</td>
+      <td>NA</td>
+    <tr>
+    <tr>
+      <td><code>hide_widget_tool</code></td>
+      <td><code>string</code></td>
+      <td>NA</td>
+      <td>Predefined values: fr-Filter,fs-FullScreen,om-Option Menu</td>      
+    <tr>
+  </tbody> 
+</table>
+
+### How to pass the dashboard parameter and URL parameter filters in embed URL
+
+In embed URL, you can pass both types of filters(Dashboard Parameter/URL Filter Parameter) values at the same time.
+
+Pass your filters to the `embed_datasource_filter` URL parameter in the embed URL as follows.
+
+<table>
+<tr><td>Example: http://test.boldbi.com/bi/en-us/site/site1/dashboards/8428c9d9-85db-418c-b877-ea4495dcddd7/Predictive%20Analytics/Personal%20Expense%20Analysis?embed_nonce=3e253410-1a82-4fb3-a337-122a8007dafc&embed_user_email=test@syncfusion.com&embeds=sdwd&embed_dashboard_views_edit=true&embed_dashboard_views=true&embed_dashboard_export=true&embed_dashboard_comments=true&embed_widget_comments=true&embed_dashboard_favorite=true&embed_timestamp=1583928213&embed_expirationtime=100&embed_datasource_filter=&&dashboardparameter1=value1&urlparameter1=value1&embed_signature=VYrDMVX4h85PrRBKX9mystRHYkU8z+HVC9bkVMc2qGY=</td></tr>
+</table>
+
+
+* In the embed URL, the dashboard parameter filter must be started with a double ampersand `&&`. For more details, Refer to this [link](/embedded-bi/working-with-data-source/configuring-dashboard-parameters/).    
+
+* In the embed URL, the URL filter parameter must be started with a single ampersand `&`. For more details, refer to this [link](/embedded-bi/working-with-dashboards/preview-dashboard/urlparameters/) .
 
 ## Sample to embed dashboard using SSO authentication
 

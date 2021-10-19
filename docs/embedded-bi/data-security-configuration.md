@@ -71,7 +71,7 @@ If you need an existing embed configuration file, then refer to this `template.j
             Linux
         </td>
         <td>
-            /var/www/boldbi-embedded/boldbi/app_data/idp/content/uploadedfiles
+            /var/www/bold-services/application/app_data/idp/content/uploadedfiles
         </td>
     </tr>
 </table>

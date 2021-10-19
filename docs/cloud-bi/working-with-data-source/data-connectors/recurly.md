@@ -38,6 +38,7 @@ Once you click the data source, the NEW DATA SOURCE configuration panel opens.
 7. Choose *Basic HTTP Authentication* under **Authentication Type**.
 8. Enter a valid **Account Key** to access the endpoints in your account.
 
+    ![DataSourcesView](/static/assets/cloud/working-with-datasource/data-connectors/images/recurly/DataSourcesView.png)
 
 You can also edit the connection information set here using the [Edit Connection](/cloud-bi/working-with-data-source/editing-a-data-connection/) option.
 

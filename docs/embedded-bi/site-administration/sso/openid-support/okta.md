@@ -99,6 +99,11 @@ The fields to be saved in the Bold BI to enable the Okta for authentication is e
 <td>preferred_username</td>
 </tr>
 
+<tr>
+<td>Logout Endpoint</td>
+<td>It is the endpoint in the Okta website that signs the user out.</td>
+</tr>
+
 </table>
 
 ## Configure Okta Group Import Settings in Bold BI

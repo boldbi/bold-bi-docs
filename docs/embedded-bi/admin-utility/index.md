@@ -10,9 +10,15 @@ documentation: ug
 
 This section explains about how to use the admin utility and list of command available in the admin utility.
 
- >**NOTE:** If you installed the Bold BI version 3.3 or older, then Check [this section](/embedded-bi/admin-utility/v3.3-or-older/).
+Please refer to the corresponding operating system documentation for how to use this utility.
 
-## How to use this utility
+* [Windows](/embedded-bi/admin-utility/#windows)
+
+* [Linux](/embedded-bi/admin-utility/#linux)
+
+ >**NOTE:** If you installed the Bold BI version 3.3 or older, then check [this section](/embedded-bi/admin-utility/v3.3-or-older/).
+ 
+## Windows
 
 1. Switch the admin utility location to `{Deployed Location}`\utilities\adminutils. 
 ![folder](/static/assets/embedded/admin-utility/images/folderpath.png)  
@@ -26,6 +32,14 @@ This section explains about how to use the admin utility and list of command ava
 cd C:\BoldServices\utilities\adminutils
 ~~~  
 ![utils-cmd](/static/assets/embedded/admin-utility/images/utilscmd-1.png)
+
+## Linux
+
+1. Change the directory to the admin utility location. For more information, Please refer to the following command.
+~~~
+cd /var/www/bold-services/application/utilities/adminutils/
+~~~  
+![utils-cmd](/static/assets/embedded/admin-utility/images/linux-cd.png)
 
 ## Available Commands
 

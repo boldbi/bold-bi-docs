@@ -9,10 +9,10 @@ documentation: ug
 
 # To Set a default Pinboard
 
-This section explains how to set default Pinboard in the Bold BI solutions.
+This section explains how to set default Pinboard in the Bold BI application.
 
 Default Pinboard will be loaded by default when the user navigates to the Pinboard.
 
-* Click the `Set as default pinboard` option from the context menu.
+* Click the `Set as default pinboard` option from the `gear` icon menu.
 
     ![Default Pinboard Option](/static/assets/embedded/managing-resources/manage-pinboards/images/default-pinboard-option.png)

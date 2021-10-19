@@ -70,7 +70,7 @@
             "description" : "Invalid email or password"
           },
           "404" : {
-            "description" : "User detail not found"
+            "description" : "User detail not found."
           },
           "405" : {
             "description" : "Request type was not POST"
@@ -96,7 +96,7 @@
         "responses" : {
           "201" : {
             "x-nullable" : true,
-            "description" : "User was created successfully",
+            "description" : "The user was created successfully.",
             "schema" : {
               "$ref" : "#/definitions/ApiResponse"
             }
@@ -107,9 +107,6 @@
           "401" : {
             "description" : "Access denied"
           },
-          "404" : {
-            "description" : "User detail not found"
-          },
           "405" : {
             "description" : "Request type was not POST"
           },
@@ -117,7 +114,7 @@
             "description" : "The content of the request body is invalid"
           },
           "409" : {
-            "description" : "Email address already exists"
+            "description" : "Email address already exists."
           },
           "417" : {
             "description" : "Failed to add user"
@@ -126,7 +123,7 @@
       },
       "get" : {
         "tags" : [ "Users" ],
-        "summary" : "Returns the list of users.",
+        "summary" : "Get Users",
         "operationId" : "Users_GetUsers",
         "responses" : {
           "200" : {
@@ -137,10 +134,13 @@
             }
           },
           "204" : {
-            "description" : "User list is empty"
+            "description" : "User list is empty."
           },
-          "405" : {
-            "description" : "Request type was not GET"
+          "401": {
+            "description": "Access denied."
+          },
+          "405": {
+            "description": "Request type was not GET."
           }
         }
       }
@@ -148,7 +148,7 @@
     "/v1.0/users/{user}" : {
       "put" : {
         "tags" : [ "Users" ],
-        "summary" : "Modifies information about the specified user.",
+        "summary" : "Update User",
         "operationId" : "Users_EditUser",
         "parameters" : [ {
           "type" : "string",
@@ -182,7 +182,7 @@
             "description" : "Access denied"
           },
           "404" : {
-            "description" : "User detail not found"
+            "description" : "User detail not found."
           },
           "405" : {
             "description" : "Request type was not PUT"
@@ -194,12 +194,10 @@
             "description" : "Failed to update user"
           }
         }
-      }
-    },
-    "/v1.O/users/{user}" : {
+      },
       "delete" : {
         "tags" : [ "Users" ],
-        "summary" : "Deletes the specified user.",
+        "summary" : "Delete User",
         "operationId" : "Users_DeleteUser",
         "parameters" : [ {
           "type" : "string",
@@ -211,11 +209,7 @@
         } ],
         "responses" : {
           "204" : {
-            "x-nullable" : true,
-            "description" : "User deleted",
-            "schema" : {
-              "$ref" : "#/definitions/ApiResponse"
-            }
+            "description": "No content."
           },
           "400" : {
             "description" : "Email address is empty"
@@ -224,26 +218,26 @@
             "description" : "Access denied"
           },
           "404" : {
-            "description" : "User detail not found"
+            "description" : "User detail not found."
           },
           "405" : {
             "description" : "Request type was not DELETE"
           },
           "417" : {
-            "description" : "Failed to delete user"
+            "description" : "Failed to delete user."
           }
         }
       },
       "get" : {
         "tags" : [ "Users" ],
-        "summary" : "Returns user details for a specified user.",
+        "summary" : "Get a User by Email or Username",
         "operationId" : "Users_GetUserDetail",
         "parameters" : [ {
           "type" : "string",
           "name" : "user",
           "in" : "path",
           "required" : true,
-          "description" : "Email address of the user.",
+          "description" : "Username or email address of the user.",
           "x-nullable" : false
         } ],
         "responses" : {
@@ -258,7 +252,7 @@
             "description" : "Access denied"
           },
           "404" : {
-            "description" : "User detail not found"
+            "description" : "User detail not found."
           },
           "405" : {
             "description" : "Request type was not GET"
@@ -298,9 +292,6 @@
           "401" : {
             "description" : "Access denied"
           },
-          "404" : {
-            "description" : "Group detail not found"
-          },
           "405" : {
             "description" : "Request type was not POST"
           },
@@ -308,7 +299,7 @@
             "description" : "The content of the request body is invalid"
           },
           "409" : {
-            "description" : "Group name already exists"
+            "description" : "Group name already exists."
           },
           "417" : {
             "description" : "Failed to add group"
@@ -317,7 +308,7 @@
       },
       "get" : {
         "tags" : [ "Groups" ],
-        "summary" : "Returns the list of groups.",
+        "summary" : "Get Groups",
         "operationId" : "Groups_GetGroups",
         "responses" : {
           "200" : {
@@ -328,7 +319,7 @@
             }
           },
           "204" : {
-            "description" : "Group list is empty"
+            "description" : "Group list is empty."
           },
           "401" : {
             "description" : "Access denied"
@@ -342,7 +333,7 @@
     "/v1.0/groups/{id}" : {
       "delete" : {
         "tags" : [ "Groups" ],
-        "summary" : "Deletes the specified group.",
+        "summary" : "Delete Group",
         "operationId" : "Groups_DeleteGroup",
         "parameters" : [ {
           "type" : "integer",
@@ -355,17 +346,10 @@
         } ],
         "responses" : {
           "204" : {
-            "x-nullable" : true,
-            "description" : "Group was deleted",
-            "schema" : {
-              "$ref" : "#/definitions/ApiResponse"
-            }
+            "description": "No content."
           },
           "401" : {
             "description" : "Access denied"
-          },
-          "404" : {
-            "description" : "Group detail not found"
           },
           "405" : {
             "description" : "Request type was not DELETE"
@@ -380,7 +364,7 @@
       },
       "put" : {
         "tags" : [ "Groups" ],
-        "summary" : "Modifies information about a specified group.",
+        "summary" : "Update Group",
         "operationId" : "Groups_EditGroup",
         "parameters" : [ {
           "type" : "integer",
@@ -415,7 +399,7 @@
             "description" : "Access denied"
           },
           "404" : {
-            "description" : "Group detail not found"
+            "description" : "Group detail was not found."
           },
           "405" : {
             "description" : "Request type was not PUT"
@@ -424,7 +408,7 @@
             "description" : "The content of the request body is invalid"
           },
           "409" : {
-            "description" : "Group name already exists"
+            "description" : "Group name already exists."
           },
           "417" : {
             "description" : "Failed to update group "
@@ -433,7 +417,7 @@
       },
       "get" : {
         "tags" : [ "Groups" ],
-        "summary" : "Returns group details for a specified group.",
+        "summary" : "Get Group by Id",
         "operationId" : "Groups_GetGroupDetail",
         "parameters" : [ {
           "type" : "integer",
@@ -456,7 +440,7 @@
             "description" : "Access denied"
           },
           "404" : {
-            "description" : "Group detail not found"
+            "description" : "Group detail was not found."
           },
           "405" : {
             "description" : "Request type was not GET"
@@ -470,7 +454,7 @@
     "/v1.0/groups/{id}/users" : {
       "get" : {
         "tags" : [ "Groups" ],
-        "summary" : "Returns a list of users for the specified group.",
+        "summary" : "Get Group Users",
         "operationId" : "Groups_GetUsesFromGroup",
         "parameters" : [ {
           "type" : "integer",
@@ -490,10 +474,13 @@
             }
           },
           "204" : {
-            "description" : "user list is empty"
+            "description" : "User list is empty."
           },
           "401" : {
             "description" : "Access denied"
+          },
+          "404" : {
+            "description" : "Group detail was not found."
           },
           "405" : {
             "description" : "Request type was not GET"
@@ -502,7 +489,7 @@
             "description" : "Invalid Group ID"
           },
           "417" : {
-            "description" : "Failed to retrieve the users of group"
+            "description" : "Failed to retrieve the groups' users."
           }
         }
       }
@@ -536,11 +523,11 @@
       "type" : "object",
       "description" : "User detail",
       "additionalProperties" : false,
-      "required" : [ "Email", "FirstName" ],
+      "required" : [ "Email", "FirstName", "Password" ],
       "properties" : {
         "Email" : {
           "type" : "string",
-          "description" : "Email address of the user."
+          "description": "Email address of the user (Email required only in [Email required](/embedded-bi/site-administration/account-settings/#email-required) mode)."
         },
         "FirstName" : {
           "type" : "string",
@@ -549,6 +536,10 @@
         "Lastname" : {
           "type" : "string",
           "description" : "Last name of the user."
+        },
+        "Password": {
+          "type": "string",
+          "description": "Password of the user (Password accepted only in [Automatic activation](/embedded-bi/site-administration/account-settings/#automatic-activation) mode)."
         }
       }
     },
@@ -615,11 +606,11 @@
         },
         "IsActive" : {
           "type" : "boolean",
-          "description" : "Returns true if the user is an active user."
+          "description" : "Returns true, if the user is an active user."
         },
         "IsAzureAdUser" : {
           "type" : "boolean",
-          "description" : "Returns true if the user is added from Azure Active Directory."
+          "description" : "Returns true, if the user is added from Azure Active Directory."
         },
         "Lastname" : {
           "type" : "string",
@@ -643,10 +634,9 @@
       }
     },
     "UserStatus" : {
-      "type" : "string",
-      "description" : "",
-      "x-enumNames" : [ "Active", "InActive" ],
-      "enum" : [ 0, 1 ]
+      "type": "string",
+      "enum": [ "Active", "InActive" ],
+      "x-enumNames": [ "Active", "InActive" ]
     },
     "ApiUserList" : {
       "type" : "object",
@@ -712,7 +702,7 @@
         },
         "IsAzureADGroup" : {
           "type" : "boolean",
-          "description" : "Returns true if the group is added from Azure Active Directory"
+          "description" : "Returns true, if the group is added from Azure Active Directory"
         }
       }
     },

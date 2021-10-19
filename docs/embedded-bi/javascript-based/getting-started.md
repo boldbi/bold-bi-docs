@@ -16,24 +16,24 @@ Follow these steps to embed dashboard in your application
 
 1. In your .html page, you need to add the following dependent scripts in the head tag of your page.
 
-```js
-<head>  
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700" />
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jsrender/1.0.0-beta/jsrender.min.js"></script>
-    <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v4.1.36/embed-js.js"></script>
-</head>
-```
+    ```js
+    <head>  
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700" />
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jsrender/1.0.0-beta/jsrender.min.js"></script>
+        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v4.2.68/embed-js.js"></script>
+    </head>
+    ```
 
 2. In the body tag, you need to create the div element with your own id name. This element will be used for dashboard embedding.
 
-```js
+    ```js
 
-<body>
-    <div id="dashboard-container"></div>
-</body>
-```
+    <body>
+        <div id="dashboard-container"></div>
+    </body>
+    ```
 
 3. In the body tag, you need to add the function to create BoldBI instance with following properties and call that function in the body using the `onload` attribute as follows. Also, call the `loadDashboard()` function.
 
@@ -180,55 +180,58 @@ You can embed the multi-tabbed dashboard by using the dashboard ID or dashboard 
 </body>
 ```  
 
-## How to implement the authorize server with user mail
+## How to implement the authorize server with user mail or user name
 
 1. You need to implement authorization end point in your application. This will act as the bridge between your application and Bold BI server and also you need to update the secure details like email and group based access. Learn more about authorize server [here](/embedded-bi/javascript-based/authorize-server/).  
 
-2. To create authorization-server action method, copy the following snippet in your controller. You can use currently logged in user email at `user@domain.com`, but this user should have access to the dashboard.   
+2. To create authorization-server action method, copy the following snippet in your controller. You can use currently logged in user email at `user@domain.com` or user name at `username`, but this user should have access to the dashboard.   
 
-```js  
+    ```js  
 
-        [HttpPost]
-        [Route("embeddetail/get")]
-        public string GetEmbedDetails(string embedQuerString, string dashboardServerApiUrl)
-        {
-            // User your user-email as embed_user_email
-            embedQuerString += "&embed_user_email=user@domain.com";
-
-            var embedSignature = "&embed_signature=" + GetSignatureUrl(embedQuerString);
-
-            var embedDetailsUrl = "/embed/authorize?" + embedQuerString + embedSignature;
-
-            using (var client = new HttpClient())
+            [HttpPost]
+            [Route("embeddetail/get")]
+            public string GetEmbedDetails(string embedQuerString, string dashboardServerApiUrl)
             {
-                client.BaseAddress = new Uri(dashboardServerApiUrl);
-                client.DefaultRequestHeaders.Accept.Clear();
+                // Use your user-email as embed_user_email
+                embedQuerString += "&embed_user_email=user@domain.com";
 
-                var result = client.GetAsync(dashboardServerApiUrl + embedDetailsUrl).Result;
-                string resultContent = result.Content.ReadAsStringAsync().Result;
-                return resultContent;
+                // Use your username as embed_user_email
+                //embedQuerString += "&embed_user_email=username";
+
+                var embedSignature = "&embed_signature=" + GetSignatureUrl(embedQuerString);
+
+                var embedDetailsUrl = "/embed/authorize?" + embedQuerString + embedSignature;
+
+                using (var client = new HttpClient())
+                {
+                    client.BaseAddress = new Uri(dashboardServerApiUrl);
+                    client.DefaultRequestHeaders.Accept.Clear();
+
+                    var result = client.GetAsync(dashboardServerApiUrl + embedDetailsUrl).Result;
+                    string resultContent = result.Content.ReadAsStringAsync().Result;
+                    return resultContent;
+                }
             }
-        }
-```
+    ```
 
 3. Add the GetSignatureUrl method, and this method would be called from the previous GetEmbedDetails action. Follow the next section to get EmbedSecret key from Bold BI application.
 
-```js  
-        
-        public string GetSignatureUrl(string queryString)
-        {
-            // Get the embedSecret key from Bold BI.
-            var embedSecret = "8apLLNabQisvriG2W1nOI7XWkl2CsYY";
-            var encoding = new System.Text.UTF8Encoding();
-            var keyBytes = encoding.GetBytes(embedSecret);
-            var messageBytes = encoding.GetBytes(queryString);
-            using (var hmacsha1 = new HMACSHA256(keyBytes))
+    ```js  
+            
+            public string GetSignatureUrl(string queryString)
             {
-                var hashMessage = hmacsha1.ComputeHash(messageBytes);
-                return Convert.ToBase64String(hashMessage);
+                // Get the embedSecret key from Bold BI.
+                var embedSecret = "8apLLNabQisvriG2W1nOI7XWkl2CsYY";
+                var encoding = new System.Text.UTF8Encoding();
+                var keyBytes = encoding.GetBytes(embedSecret);
+                var messageBytes = encoding.GetBytes(queryString);
+                using (var hmacsha1 = new HMACSHA256(keyBytes))
+                {
+                    var hashMessage = hmacsha1.ComputeHash(messageBytes);
+                    return Convert.ToBase64String(hashMessage);
+                }
             }
-        }
-```
+    ```
 
 ## How to pass the Dashboard Parameter and URL Filter Parameter in the authorization end point dynamically
 
@@ -300,4 +303,4 @@ You can get your Embed Secret key from administrator setting section. Refer this
 
 If you are using multi-tenant Bold BI server sites and looking for embedding the Dashboard in your application, then we recommend using the common embed secret instead of the separate embed secret for each site. Refer to this [link](/embedded-bi/site-administration/embed-settings/#get-common-embed-secret-code-from-ums) to get the common embed secret.
 
-> **NOTE:**  This embed setting will be enabled only if you have an Embedded BI plan.
+> **NOTE:**  <br>This embed setting will be enabled only if you have an Embedded BI plan.<br><br>Refer to this [link](/embedded-bi/faq/how-to-resolve-jquery-conflict-in-embedding) to resolve the jQuery conflict problem in embedded.

@@ -8,9 +8,9 @@ documentation: ug
 
 # Azure Active Directory User Import
 
-This section explains how to search and import users from Azure Active Directory into the Bold BI Cloud.
+This section explains how to search and import users from Azure Active Directory into the Bold BI.
 
-> **NOTE:**  Azure Active Directory connection has to be configured in the [Azure Active Directory Settings](/cloud-bi/site-administration/azure-active-directory/) in the `General` page for importing users.
+> **NOTE:**  Azure Active Directory connection has to be configured in the [Azure Active Directory Settings](/embedded-bi/site-administration/azure-active-directory/) in the `General` page for importing users.
 
 Users belonging to the `System Administrator` group only can import Azure Active Directory users into the Bold BI.
 
@@ -34,7 +34,9 @@ Bold BI will list the search results of the users in the grid as shown in the be
 
 ## Import Users
 
-To import the Azure Active Directory users into the Bold BI, you have to choose the users from the list and click on the `Import and Activate` button at the top right corner.
+To import the Azure Active Directory users into the Bold BI, you have to choose the users from the list and click `Import` button at the top right corner.
+
+![Import User from Azure Active Directory](/static/assets/embedded/managing-resources/manage-users/images/import-user-from-azure-active-directory.png)
 
 Bold BI will import the chosen users and a confirmation message will be displayed as shown in the below figure.
 

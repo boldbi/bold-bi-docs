@@ -115,8 +115,13 @@ The fields to be saved in the Bold BI to enable the Amazon Cognito for authentic
 </tr>
 
 <tr>
+<td>Logout Endpoint</td>
+<td>It is the endpoint in the Amazon Cognito website that signs the user out.</td>
+</tr>
+
+<tr>
 <td>Email</td>
-<td>This must be the email of an admin account of Amazon Cognito website.</td>
+<td>This must be the field name, in which email will be present when deserializing the token.</td>
 </tr>
 
 </table>

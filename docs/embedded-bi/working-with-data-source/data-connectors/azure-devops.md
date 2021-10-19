@@ -57,6 +57,8 @@ In Azure DevOps, fetch data using the [**Boards**](/embedded-bi/working-with-dat
 4. In **Max Rows**, enter the maximum number of rows to be fetched from the Azure DevOps data source. This value is used to fetch the data from Azure DevOps data source via pagination.
 5. Choose a time interval for **Refresh Settings** using the combo box to trigger the Rest API request periodically to keep the data in sync with Bold BI dashboard. 
 
+    ![DataSourcesView](/static/assets/embedded/working-with-datasource/data-connectors/images/AzureDevOps/DataSourcesView.png)
+
 #### Fetch data using Raw Query
 
 1. Enter a name and description (optional) for the data source.

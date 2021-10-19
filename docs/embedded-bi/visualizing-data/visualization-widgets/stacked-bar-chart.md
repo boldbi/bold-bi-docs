@@ -10,131 +10,136 @@ documentation: ug
 
 # Stacked Bar Chart
 
-Stacked Bar Chart allows you to compare multiple measures through bars stacked one after the other horizontally.
+Stacked Bar chart allows you to compare the multiple measures through the bars stacked one after the other horizontally.
 
-![Stacked Bar Chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/stackedbarchart.PNG)
+![Stacked Bar Chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/stacked-barchart.png)
 
 ## How to configure the flat table data to stacked bar chart?
 
-Stacked Bar Chart need a minimum of 1 value element and 1 column element to showcase. The measure or expression field that you would like to analyze can be dropped into Y Values block. The dimension that you would like to categorize the measure, can be dropped onto Columns block. If you would like to categorize based on a series, then the respective dimension can be dropped onto Rows block in addition.
+Stacked Bar chart needs a minimum of 1 value element and 1 column element to showcase. The `measure` or `expression` field that you would like to analyze can be dropped into the Value(s) block. The dimension that you would like to categorize the measure can be dropped onto the Columns block. If you would like to categorize based on a series, then the respective dimension can be dropped onto `Rows block` in addition.
 
-Follow the steps to configure data to stacked bar chart.
+The following steps explain to configure data to the stacked bar chart.
 
-Drag and drop the stacked bar chart into canvas and resize it your required size.
+1.  Drag and drop the stacked bar chart into a canvas and resize it your required size.
 
-![Drag and drop the stacked bar chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/add-stackedbarchart.PNG)
+![Drag and drop the stacked bar chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/drop-widget.png)
 
-Click `Data Source` button in configuration panel.
+2.  Click the `Data Source` button in the configuration panel.
 
 ![Data Source](/static/assets/embedded/visualizing-data/visualization-widgets/images/databutton.png)
 
-Click `CREATE NEW` button to launch a new connection from connection type panel.
+3.  Click the `CREATE NEW` button to launch a new connection from the connection type panel.
 
 ![Datasource button](/static/assets/embedded/visualizing-data/visualization-widgets/images/datasourcebutton.png)
 
-In the connection type panel, click any one (Here `Microsoft SQL` Connection type is selected for demonstration) of the listed connection type button shown.
+4.  In the connection type panel, click any one (Here, the `Microsoft Excel` connection type is selected for demonstration) of the listed connection type button shown.
 
 ![Datasource list](/static/assets/embedded/visualizing-data/visualization-widgets/images/datasourcelist.png)
 
-In the `NEW DATA SOURCE` configuration panel, fill the connection type and related details. Click `Connect` button
+5.  In the `NEW DATA SOURCE` configuration panel, fill the connection type and related details. Click the `Connect` button.
 
-![Connect](/static/assets/embedded/visualizing-data/visualization-widgets/images/Connectbutton.png)
+![Connect](/static/assets/embedded/visualizing-data/visualization-widgets/images/connectbutton.png)
 
-Drag your preferred table or view from the left pane from data design view, click `Save` button.
+6.  Drag your preferred table or view from the left pane from the data design view, click the `Save` button.
 
 ![Virtual table](/static/assets/embedded/visualizing-data/visualization-widgets/images/virtualtable.png)
 
-Click `Properties` button in configuration panel, property pane opens. Now, switch to `ASSIGN DATA` tab.
+7.  Click the `Properties` button in the configuration panel, property pane opens. Now, switch to the `ASSIGN DATA` tab.
 
 ![Designer properties button](/static/assets/embedded/visualizing-data/visualization-widgets/images/designerpropertiesbutton.png)
 
-![Stacked bar assign data](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/stackedbarassigndata.PNG)
+![Stacked bar assign data](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/assign-data.png)
 
-The data tab will be opened with available measures and dimensions from the connected data source
+8.  The data tab will be opened with available measures and dimensions from the connected data source.
 
-![Data tab](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/chartdata.png)
+![Data tab](/static/assets/embedded/visualizing-data/visualization-widgets/images/assign-data-section.png)
 
-You can add the required data from `Measures` and `Dimensions` into required field.
+9.  You can add the required data from `Measures` and `Dimensions` into the required field.
 
-**Adding Y Values**
+#### Adding Value(s)
 
-You can add more than one `Measures` into `Y Values` field by drag and drop the required measure.
+You can add more than one `Measures` into the `Value(s)` field by dragging and dropping the required measure.
 
-![Add more than one Measures](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/add-measures.PNG)
+![Add more than one Measures](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/add-measure.png)
 
-Now the stacked bar chart will be rendered like this
+Click the `Settings` option to change the name by using the `Rename` option and the required summary type from the available summary types shown in `Settings.`
 
-![Stacked bar chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/configured-stackedbarchart.PNG)
+![Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/settings.png)
 
-Click the `Settings` option to change required summary type from the available summary types shown in `Settings`.
-
-![Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/Settings.PNG)
-
-You can `Sort` the data using `Sort` option shown under `Settings` menu list. To sort the measure data, refer [Sort](/embedded-bi/visualizing-data/working-with-widgets/advanced-sorting/)
-
-![Sort](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/sorting.PNG)
+#### Filtering data
 
 You can filter the data to be displayed in funnel chart by using filter. For more details, refer [filter](/embedded-bi/visualizing-data/working-with-widgets/configuring-widget-filters/).
 
-![Configuring widget filters](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/widget-filters.PNG)
+![Configuring widget filters](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/filter-option.png)
+
+#### Formatting data
 
 You can format the data to be displayed in the chart by using format option. For more details, refer [measure format](/embedded-bi/visualizing-data/working-with-widgets/formatting-measure-type-column/)
 
-![Formatting measure type column](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/Formatting-measure.PNG)
+![Formatting measure type column](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/format-option.png)
+
+#### Remove Fields
 
 To remove the added value fields click highlighted button.
 
-![Click highlighted button](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/Remove-fields.PNG)
+![Click highlighted button](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/removebutton.png)
 
 You can add more than one column from `Dimensions` field into `Y Values` field.
 
-**Adding Columns**
+#### Adding Columns
 
 You can add more than one value into `Columns` field. If you add more than one column, then drill down option enabled automatically.
 
-![Add more than one value into Columns](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/adding-columns.PNG)
+![Add more than one value into Columns](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/adding-columns.png)
 
 Stacked bar chart will be rendered like this
 
-![Stacked bar chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/stackedbarchart.PNG)
+![Stacked bar chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/stacked-barchart.png)
 
-Add more than one value to `Columns` field, an alert message will be shown. Click `Yes` to enable the option.
-
-> **NOTE:**  If you click `No`, single value will be added to the `Columns` field.
-
-![Drill alert](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/drillalert.PNG)
-
-The drilled view of the chart region selected.
-
-![Drilled view](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/stackedbardrill.PNG)
 
 You can change the `Settings`.
 
-![Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/change-settings.PNG)
+![Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/column-settings.png)
+
+#### Sorting data
 
 You can `Sort` the dimension data using `Sort` option under `Settings` menu list. To apply Sorting for the data, refer [Sort](/embedded-bi/visualizing-data/working-with-widgets/advanced-sorting/).
 
-![Sort](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/sortdimension.PNG)
+![Sort](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/sort-option.png)
 
-You can apply filters by selecting filter in settings. For more details, refer [filter](/embedded-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column).
+#### Filtering data
 
-![Configuring filter for dimension column](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/Configuring-filter.PNG)
+You can apply filters by selecting the `Filter(s)` in settings. For more details, refer to the [filter](/embedded-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column).
+
+![Configuring filter for dimension column](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/filter-option-column.png)
 
 To show all records click on `Show All Records`.
 
 Similarly you can add the `Measures` and `Expression Columns` into column field.
 
-**Adding Rows**
+#### Multi-Level Drill Down
+
+Add more than one value to the `Columns` field, an alert message will be shown. Click `Yes` to enable the option.
+
+> **NOTE:**  If you click `No,` a single value will be added to the `Columns` field.
+
+![Drill alert](/static/assets/embedded/visualizing-data/visualization-widgets/images/drillalert.png)
+
+The drilled view of the chart region is selected.
+
+![Drilled view](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/stackedbardrill.png)
+
+#### Adding Rows
 
 You can drag and drop the `Dimension` into the `Rows` field. 
 
-![Adding Rows](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/chart_row.PNG)
+![Adding Rows](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/chart-row.png)
 
 You can apply [filter](/embedded-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column) and [sort](/embedded-bi/visualizing-data/working-with-widgets/advanced-sorting/#dimension-column) option for the rows field, if required.
 
 This will render stacked bar chart in series.
 
-![Stacked bar chart in series](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/stackedbarchart_series.PNG)
+![Stacked bar chart in series](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/stackedbarchart-series.png)
 
 ## How to format stacked bar chart?
 
@@ -150,199 +155,199 @@ To configure data into stacked bar chart follow the steps
 
 The property window will be opened.
 
-![Property click](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/Property-click.PNG)
+![Property click](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/widget-settings.png)
 
-![Property window](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/Property-window.PNG)
+![Property window](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/property-window.png)
 
 You can see the list of properties available for the widget with default value.
 
-**General Settings**
+#### General Settings
 
-![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/General-Settings.PNG)
+#### Name
 
-**Name**
+This allows you to set `title` for this stacked-column chart widget.
 
-This allows you to change the title for this stacked bar chart widget
+#### Subtitle
 
-**Basic Settings**
+This allows you to set `subtitle` for this stacked-column chart widget.
 
-![Basic Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/Basic-Settings.PNG)
+#### Description
 
-**Chart Type**
+This allows you to set a brief explanation about this stacked-column chart widget.
 
-This allows you to switch the widget view from current chart type to another convertible chart type.  
+![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/general-settings.png)
 
-**Enable Animation**
+#### Basic Settings
 
-This allows you to enable the rendering of series in animated mode.
+![Basic Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/basic-settings.png)
 
-**Show Legend**
+#### Chart type and axis
 
-A Legend is a text used to describe the data plotted. This allows you to toggle the visibility of legend in chart and also change the legend text position (selecting through combo box).  
+Click the `Change` button to open the `Chart Type and Axis Settings` dialog. 
 
-![Show Legend](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/Show-Legend.PNG)
+![Chart type and axis settings dialog](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/chart-type.png)
 
-Enabling this option of **Custom Legend Text** will allow you to define a custom text (through the text area) to display for each legend series (selecting through the combo box) in chart.
+**Chart Type**: This allows you to switch the widget view from current chart type to another convertible chart type.
 
-**Legend Label Color**
+**Secondary Axis**: By default, the configured field is plotted as the primary axis, if you enable this option, the selected field will be plotted as the secondary axis. 
+
+![Secondry axis in chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/secondary-axis.png)
+
+#### Enable Animation
+
+It animates the measure values when you toggle the `Enable Animation.`
+
+#### Show Legend
+
+A Legend is a text used to describe the data plotted. This allows you to toggle the visibility of legend in a chart and also change the legend text position (selecting through combo box).
+
+![Show Legend](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/show-legend.png)
+
+Enabling this option of **Custom Legend Text** will allow you to define a custom text (through the text area) to display for each legend series (selecting through the combo box) in a chart.
+
+#### Legend Label Color
 
 This allows you to change the chart legend title and label colors.
 
 ![Chart Legend Color Option](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/legend-label-color-option.png)
 
-![Chart Legend Color](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/legend-label-color.png)
+![Chart Legend Color](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/legend-color.png)
 
-**Custom Legend Settings**
+#### Customize
 
-You can customize the legend text through the Custom Legend Settings dialog. This dialog will show the legend text list as labels at left and corresponding text area at right to add the formatted text to display instead. When a column is added into Row section, this dialog will show two options `Individual` and `Group` at top in addition, to toggle between.
+You can customize the legend text through the `Custom Legend Settings` dialog. This dialog will show the legend text list as labels at left and corresponding text area at right to add the formatted text to display instead.
 
-***Individual***
+![Legend customization](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/legend-customization.png)
 
-Selecting  Individual option will allow you to define a custom text (through the text area) to display for each legend series in chart with the default format:
+![Legend customization Change](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/legend-customization-change.png)
 
-`{{ : Row }} ({{ : Y Value }})`
+#### Legend Shape
 
-Where, Row represents the value of dimension column added to `Rows section` and Value represents the value of the measure column added to `Y Values section`. 
+This allows you change the **shape** of the legend.
 
-![Custom Legend Settings Window](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/stackedbarchart_customlegendsettingwindow.PNG)
+***Circle***
 
-***Group***
+This option allows you to change the shape of the legend in a `Circle.`
 
-Enabling `Group` option will allow you to set the display format and define a custom text (through the text area) to display for each legend series based on the specified format. 
+![Show Legend shape](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/legend-shape.png)
 
-![Custom Legend Settings group](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/stackedbar_customlegendsettinggroup.PNG)
+***Series Type***
 
-For example, If Display Format is {{ : Row }} ({{ : Value }}), then Legend series will display like 1997(Sum of UnitInStock)
+This option allows you to change the shape of the legend in `Series.`
 
-![Custom Legend Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/stackedbarchart_customlegendsetting.PNG)
+![Show Legend shape Series](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/legend-series.png)
 
-**Show Value Labels**
+#### Legend Title
+
+This allows you to add the legend title for the chart. It will reflect with the `Show Legend.`
+
+![Show Legend Title](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/legend-title.png)
+ 
+#### Show Value Labels
 
 This allows you to toggle the visibility of value labels.
 
-![Show Value Labels](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/Show-Value-Labels.PNG)
+![Show Value Labels](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/show-value-label.png)
 
-**Value Label Color**
+#### Value Label Customization
 
-This allows you to customize values label's color.
+This allows you to customize the visibility of the value labels.
+
+![Value labels customization change](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/show-value-label-customization.png)
+
+![Value labels customization](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/show-value-label-customization-change.png)
+
+#### Value Label Color
+
+This allows you to customize value label's color.
 
 ![Value label Color Option](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/data-label-color-option.png)
 
-![Value label Color](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/data-label-color.png)
+![Value label Color](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/show-value-label-color-change.png)
 
-**Value Label Rotation**
+#### Value Label Rotation
  
 This allows you to define the rotation angle for the value labels to display.
 
-![Value Label Rotation](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/stackedbarchart_showlabelrotation.PNG)
+![Value Label Rotation](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/label-rotation.png)
 
-**Value Label Suffix**
+#### Value Label Suffix
 
 Allows you to enable the Suffix value text to the value labels. 
 
-**Suffix Value**
+#### Suffix Value
 
-Allows you to set\edit suffix value to the value labels. 
+Allows you to set\edit the suffix value to the value labels.
 
-![Suffix Value](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/Suffix-Value.PNG)
+![Suffix Value](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/suffix-value.png)
 
-**Filter**
+#### Show items with no data
 
-![Filter](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/Filter.PNG)
+This allows you to show data, which column does not have value.
 
-**Act as Master Widget**
+![Empty Point Mode Gap](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/chart-gap.png)
 
-This allows you to define this stacked bar chart widget as a master widget such that its filter action can be made to listen by other widgets in the dashboard.
+#### Column Width
 
-**Ignore Filter Actions**
+This option allows you to increase or decrease the width of the column by using `Column Width.`
 
-This allows you to define this stacked bar chart widget to ignore responding to the filter actions applied on other widgets in dashboard.
+![Column Width Customization](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/column-width-customization.png)
 
-**Hierarchical Filter**
+![Column Width](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/column-width.png)
 
-Through this option, you can enable/disable hierarchical top `N` filtering. While applying Top N filter with multiple dimension columns, the data returned can be customized based on whether the filtering need to be done as flat or based on the hierarchy of dimension columns added. 
+#### Column Spacing
 
-When `Hierarchical Filter` option is enabled, the Top N will be applied for each individual column separately based on the number set for each column.
+This option allows you to increase or decrease the space between the columns by using the `Column Spacing.`
 
-**Link**
+![Column Spacing Customization](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/column-spacing-customization.png)
 
-![Link](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/Link.PNG)
+![Column Spacing](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/column-space.png)
 
-To configure the linking to URL or dashboard with the widget through its settings. For more details, refer [Linking](/embedded-bi/visualizing-data/working-with-widgets/linking-urls-and-dashboards/).
+#### Axis Format
 
-**Container Appearance**
+This option allows you to format the primary and secondary axis values from the formatting details provided using the `Format` button. For more details, refer to this [measure format](/embedded-bi/visualizing-data/working-with-widgets/formatting-measure-type-column/).
 
-![Container Appearance](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/Container-Appearance.PNG)
+![Formatting Axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/axis-format.png)
 
-**Title Alignment**
+#### Link
 
-This allows you to handle the alignment of widget title to either left, center or right.
+To configure the linking to URL or dashboard with the widget through its settings. For more details, refer to the [Linking](/embedded-bi/visualizing-data/working-with-widgets/linking-urls-and-dashboards/).
 
-**Title Color**
+![Link](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/linking.png)
 
-This allows you to apply text color to the widget title.
-
-**Show Border**
-
-This allows you to toggle the visibility of border surrounding the widget.
-
-**Corner Radius**
-
-This allows you to apply the specified radius to the widget corners, if the **Show Border** is enabled. Value can be between 0 and 10.
-
-**Show Maximize**
-
-This allows you to enable/disable the maximized mode of this stacked bar chart widget. The visibility of the maximize icon in widget header will be defined based on this setting.
-
-**CSV Export**
-
-This allows you to enable/disable the CSV export option for this stacked bar chart widget. Enabling this allows you to export the summarized data of the widget view to CSV format in viewer.
-
-**Excel Export**
-
-This allows you to enable/disable the Excel export option for this stacked bar chart widget. Enabling this allows you to export the summarized data of the widget view to (.xlsx or .xls) format in viewer.
-
-**Image Export**
-
-This allows you to enable/disable the image export option for this stacked bar chart widget. Enabling this allows you to export the view of the widget to image format (.jpg), (.png), or (.bmp) in viewer.
-
-**Enable Comments**
-
-This allows you to enable/disable comment for dashboard widget. For more details refer [here](/embedded-bi/visualizing-data/working-with-widgets/commenting-widget/)
-
-**Axis**
+#### Axis
 
 ![Axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/axis-settings.png)
 
 This section allows you to customize the axis settings in chart. 
 
-**Title color**
+#### Title color
 
 This allows you to customize the axis title color.
 
-**Label color**
+#### Label color
 
 This allows you to customize the axis label color.
 
-**Show Category Axis**
+#### Show Category Axis
 
 This allows to enable the visibility of `Category Axis`.
 
-![Show Category Axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/Show-Category-Axis.PNG)
+![Show Category Axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/show-category-axis.png)
 
-**Show Category Axis Title**
+#### Show Category Axis Title
 
 This allows you to enable the visibility of `Category Axis` title.
 
-![Show Category Axis Title](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/stackedbarchart_categoryaxistitle.PNG)
+![Show Category Axis Title](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/show-category-axis-title.png)
 
-**Category Axis Title**
+#### Category Axis Title
 
 This allows you to edit the `Category Axis` title for chart. It will reflect in x-axis name of chart.
 
-![Category Axis Title](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/stackedbarchart_editcategoryaxistitle.PNG)
+![Category Axis Title](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/editcategoryaxistitle.png)
 
-**Label overflow mode**
+#### Label overflow mode
 
 This allows you to handle the display mode of the overlapping labels in the `Category Axis`. 
 
@@ -350,98 +355,198 @@ This allows you to handle the display mode of the overlapping labels in the `Cat
 
 This option trims the end of overlapping label in the axis.
 
-![Label overflow mode Trim](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/label-trim.PNG)
+![Label overflow mode Trim](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/trim.png)
 
 ***Hide***
 
 This option hides the overlapping label in the axis. 
 
-![Label overflow mode Hide](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/hide-label.PNG)
+![Label overflow mode Hide](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/hide.png)
 
 #### Trim Axis Labels
 
-This option allows you to trim axis labels, based on the 'Maximum Label Width' property value.
+This option allows you to trim the axis labels based on the `Maximum Label Width` property value.
 
-![Trimmed label](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/trimming-label.png)
+![Trimmed label](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/trimming-axis-labels.png)
 
-#### Maximum Label Width
+#### Label Maximum Width
 
-This option allows you to set maximum width for the axis labels, and also it can be made customizable when the trim axis label option is enabled.
+This option allows you to set a maximum width for the axis labels, and also it can be made customizable when the `trim axis label` option is enabled.
 
-![Maximum label width](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/Maximum-label-width.png)
+![Label maximum width](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/maximum-label-width.png)
 
-**Category Axis Label Rotation**
+#### Category Axis Label Rotation
 
 This allows you to define the rotation angle for the category axis labels to display.
 
-![Category Axis Label Rotation](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/Label-Rotation.PNG)
+![Category Axis Label Rotation](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/axis-label-rotation.png)
 
-**Show Primary Value Axis**
+#### Show Primary Value Axis
 
 This allows you to enable the `Primary Value Axis` for chart. 
 
-![Show Primary Value Axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/Show-Primary-Value-Axis.PNG)
+![Show Primary Value Axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/show-primary-value-axis.png)
 
-**Show Primary Value Axis Title**
+#### Show Primary Value Axis Title
 
 This allows you to enable the visibility of `Primary Value Axis` title of chart.
 
-![Show Primary Value Axis Title](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/stackedbarchart_primaryvalueaxistitle.PNG)
+![Show Primary Value Axis Title](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/show-primary-value-axis-title.png)
 
-**Primary Value Axis Title**
+#### Primary Value Axis Title
 
 This allows you to edit the `Primary Value Axis` title. It will reflect in y-axis name of chart. 
 
-![Primary Value Axis Title](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/Primary-Value-Axis-Title.PNG)
+![Primary Value Axis Title](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/edit-primary-value-axis.png)
 
-#### Axis Format
-
-This option allows you to format primary and secondary axis values from the formatting details provided using 'Format' button. For more details, refer to this [measure format](/embedded-bi/visualizing-data/working-with-widgets/formatting-measure-type-column/).
-
-![Formatting option](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/formatting-button.png)
-
-**Axis Range Settings**
+#### Axis Range Settings
 
 This allows you to manually set the Minimum, Maximum and Interval values of primary value axis through the `Axis Range Settings` dialog.
 
-![Axis Range Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/stackedbarchart_axisrangesettings.png)
+![Axis Range Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/axisrangesettings.png)
 
 It will reflect in the primary value axis of the chart.
 
-![Axis Range Output](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/stackedbarchart_axisrangeoutput.png)
+![Axis Range Output](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/axisrangeoutput.png)
 
-**Grid Lines**
+#### Grid Lines
 
-![Grid Lines](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/chartgridlines.PNG)
+![Grid Lines](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/gridlines.png)
 
-**Primary value Axis**	
+#### Primary value Axis
 
 This allows you to enable the `Primary Value Axis` gridlines for the stacked bar chart.
 
-![Primary value Axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/stackedbarchart_primaryaxis.PNG)
+![Primary value Axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/primaryaxis-gridlines.png)
  
-**Category Axis**	
+#### Category Axis
 
 This allows you to enable the `Category Axis` gridlines for the stacked bar chart.
 
-![Category Axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/stackedbarchart_categoryaxis.PNG)
+![Category Axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/categoryaxis-gridlines.png)
 
-**Series Palette**
+#### Secondary value Axis
 
-This allows you to customize the chart series color through Series Palette section. 
+This allows you to enable the `Secondary value Axis` gridlines for the stacked bar chart.
 
-***Use Default Palette***
+![Secondary value Axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/secondary-gridlines.png)
 
-This allows you to toggle the series color between default palette and custom palette. By default, the property is toggled on and default palette will be applied to series.
+#### Formatting
 
-![Series Palette](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/seriescolorpalette.PNG)
+This allows you to customize the color of the widget.
 
-By toggle off the `Use Default Palette`, you can customize the series colors. This section shows, list of series labels on the left-hand side and corresponding series color on the right-hand side. By clicking on the colored square, color picker will be opened. You can choose a color. And, you can also change the series color by changing the corresponding Hexadecimal value in the right-hand side. 
+![Formatting option](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/formatting-option.png)
 
-![Series Palette Window](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/series-color-palette-window.PNG)
+![Formatting color change](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/formatting-color.png)
 
-![Series color Palette](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/stackedbarchart_seriescolorpalatte.PNG)
+#### Filter
 
+![Filter](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/filter.png)
 
+#### Act as Master Widget
 
+This allows you to define this stacked bar chart widget as a master widget such that its filter action can be made to listen by other widgets in the dashboard.
 
+#### Ignore Filter Actions
+
+This allows you to define this stacked bar chart widget to ignore responding to the filter actions applied on other widgets in dashboard.
+
+#### Hierarchical Filter
+
+Through this option, you can enable/disable the hierarchical top `N` filtering. While applying the Top N filter with multiple dimension columns, the data returned can be customized based on whether the filtering need to be done as flat or based on the hierarchy of dimension columns added.
+
+When the `Hierarchical Filter` option is enabled, the Top N will be applied for each individual column separately based on the number set for each column.
+
+### Container Appearance
+
+This section allows you to customize the `Container Appearance` for the stacked bar chart widget.
+
+![Container Appearance](/static/assets/embedded/visualizing-data/visualization-widgets/images/container-appearance.png)
+
+### Title Alignment
+
+This allows you to handle the alignment of widget title to either **left, center,**  or **right**.
+
+### Title Color
+
+This allows you to apply the text `color` to the widget title.
+
+### Title Auto Font Size
+
+On enabling Auto Font Size, the font size of the title will be adjusted automatically if the resolution of the screen varies.
+
+**Font Size**
+
+This allows you to apply the specified size of the font to the widget title if the **Title Auto Font Size** is disabled. Value can be between 10 and 44.
+
+### Subtitle Auto Font Size
+
+On enabling Auto Font Size, the font size of the subtitle will be adjusted automatically if the resolution of the screen varies.
+
+**Font Size**
+
+This allows you to apply the specified size of the font to the widget title if the **Subtitle Auto Font Size** is disabled. Value can be between 10 and 32.
+
+### Show Border
+
+This allows you to toggle the visibility of `border` surrounding the widget.
+
+### Corner Radius
+
+This allows you to apply the specified `radius` to the widget corners if the **Show Border** is enabled. Value can be between 0 and 10.
+
+### Show Background Image
+
+This allows you to set the **background image** for the stacked bar chart widget.
+
+### Background Color
+
+This allows you to set the **background color** to the stacked bar chart widget.
+
+### Transparency
+
+This property allows you to specify the **transparency** for the `background color.`
+
+### Container actions
+
+This section allows you to customize the `Container actions` for the stacked bar chart widget.
+
+![Container Actions](/static/assets/embedded/visualizing-data/visualization-widgets/images/container-actions.png)
+
+#### Show Header
+
+This allows you to enable or disable the `widget title` of the stacked bar chart. 
+
+#### Allow Maximize View
+
+This allows you to enable or disable the `maximized mode` of the stacked bar chart widget. The visibility of the maximize icon in the widget header will be defined based on the setting in the viewer.
+
+#### Allow CSV Export
+
+This allows you to enable or disable the `CSV export` option for the stacked bar chart widget. Enabling this allows you to export the summarized data of the widget view to CSV format in the viewer.
+
+#### Allow Excel Export
+
+This allows you to enable or disable the `Excel export` option for the stacked bar chart widget. Enabling this allows you to export the summarized data of the widget view to `(.xlsx or .xls)` format in the viewer.
+
+#### Allow Image Export
+
+This allows you to enable or disable the `Image export` option for the stacked bar chart widget. Enabling this allows you to export the view of the widget to image format `(.jpg), (.png), or (.bmp)` in the viewer.
+
+#### Allow PDF Export
+
+This allows you to enable or disable the `PDF export` option for the stacked bar chart widget. Enabling this allows you to export the view of the widget to pdf format in the viewer.
+
+#### Enable Comments
+
+This allows you to enable or disable `comment` for the dashboard widget. For more details, refer to this [link](/embedded-bi/visualizing-data/working-with-widgets/commenting-widget/).
+
+#### Allow View Underlying Data
+
+This allows you to visualize the raw data associated with a widget at runtime. 
+
+To learn more about viewing the underlying widget data, refer to the [view data documentation](/embedded-bi/visualizing-data/working-with-widgets/view-data/). 
+
+#### Pin widget
+
+This allows you to pin the widget.

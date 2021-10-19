@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Zoho CRM – Cloud BI Connector | Bold BI Documentation
-description: Learn how to connect Zoho CRM through OAuth-based authentication with Bold BI Cloud and create data source.
+title: Zoho CRM – Cloud BI Data Connector | Bold BI Documentation
+description: Learn how to connect the Zoho CRM data using the OAuth-based authentication and create a data source in Dashboard Designer with Bold BI Cloud data connector.
 platform: bold-bi
 documentation: ug
 ---
@@ -31,7 +31,7 @@ Use the following steps to authenticate with Zoho CRM web service:
 2. Click **Allow** in the authorization window to accept the scopes requested by Bold BI dashboards.
 
    > **NOTE:**  If the permission is denied, the account will not be accessible from the dashboard.
-   
+
 3. Set a name to identify the account and click **Next**. 
 4. You have now successfully authorized your connection. Click **Connect** to continue with the data source connection.
 5. To connect via already connected account, refer to [Connected Accounts](/cloud-bi/working-with-data-source/data-connectors/zohocrm/#connected-accounts-for-oauth-data-sources).
@@ -43,14 +43,20 @@ Use the following steps to authenticate with Zoho CRM web service:
 ### Create Zoho CRM data source
 After successful authentication, the NEW DATA SOURCE configuration panel opens. Follow the below steps to create Zoho CRM data source:
 1. Enter a name and description (optional) for the data source.
-2. Enter a valid Zoho CRM REST API endpoint in the URL textbox. Refer to the [Zoho CRM API documentation](https://www.zoho.com/crm/help/developer/api/#api-reference) for more details.
+2. Click the **Endpoints** dropdown and choose the required endpoint.
 
-    Example: [https://www.zohoapis.com/crm/v2/&lt;:your_end_point&gt;](https://www.zohoapis.com/crm/v2/%3c:your_end_point%3e)    
-3. Select **GET** method for the REST API in **Method** combo box.
-4. In **Max Rows**, enter the maximum number of rows to be fetched from the Zoho CRM data source. This value is used to fetch the data from Zoho CRM data source via pagination.
-5. Choose a time interval for **Refresh Settings** using the combo box to trigger the Rest API request periodically to keep the data in sync with our dashboard.  
-6. Select **JSON** data type in **Data Format** combo box.
-7. The authentication type will be set to **Zoho CRM** automatically since OAuth is used for authenticating with Zoho CRM account.
+   ![Select module](/static/assets/cloud/working-with-datasource/data-connectors/images/ZohoCRM/Module.png)
+
+3. Click the custom URL if you want to enter the URL manually. Refer to the [Zoho CRM API documentation](https://www.zoho.com/crm/help/developer/api/#api-reference) for more details.
+
+    Example: [https://www.zohoapis.com/crm/v2/<:your_end_point>](https://www.zohoapis.com/crm/v2/%3c:your_end_point%3e)    
+4. Select the **GET** method for the REST API in the **Method** combo box.
+5. In **Max Rows**, enter the maximum number of rows to be fetched from the Zoho CRM data source. This value is used to fetch the data from the Zoho CRM data source via pagination.
+6. Choose a time interval for **Refresh Settings** using the combo box to trigger the Rest API request periodically to keep the data in sync with our dashboard.  
+7. Select the **JSON** data type in the **Data Format** combo box.
+8. The authentication type will be set to **Zoho CRM** automatically since the OAuth is used for authenticating with the Zoho CRM account.
+
+    ![DataSourcesView](/static/assets/cloud/working-with-datasource/data-connectors/images/ZohoCRM/DataSourcesView.png)
 
 You can also edit the connection information set here using the [Edit Connection](/cloud-bi/working-with-data-source/editing-a-data-connection/) option.
 
@@ -83,20 +89,20 @@ Period of time before next refresh call is triggered. This will automatically tr
 
 Replace it in the URL to query a particular role.
 
-[https://www.zohoapis.com/crm/v2/settings/roles/&lt;:role_id&gt;](https://www.zohoapis.com/crm/v2/settings/roles/%3c:role_id%3e)
+[https://www.zohoapis.com/crm/v2/settings/roles/<:role_id>](https://www.zohoapis.com/crm/v2/settings/roles/%3c:role_id%3e)
 
 #### Sample queries
 **Users**
 
-[https://www.zohoapis.com/crm/v2/users](https://www.zohoapis.com/crm/v2/users)
+`https://www.zohoapis.com/crm/v2/users`
 
 **Organizations**
 
-[https://www.zohoapis.com/crm/v2/org](https://www.zohoapis.com/crm/v2/org)
+`https://www.zohoapis.com/crm/v2/org`
 
 **Leads**
 
-[https://www.zohoapis.com/crm/v2/Leads](https://www.zohoapis.com/crm/v2/Leads)
+`https://www.zohoapis.com/crm/v2/Leads`
 
 ### Preview and data import
 * Click **Preview & Connect** to connect with the configurations set.

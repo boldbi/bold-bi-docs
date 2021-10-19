@@ -35,9 +35,13 @@ After clicking the data source, the **NEW DATA SOURCE** configuration panel open
 3. Enter a valid PostgreSql username in the UserName text box. 
 4. Enter a valid PostgreSql password in the Password text box.
 5. Enter a valid PostgreSql database in the Database text box.
-
+6. To connect PostgreSql with SSL connection, enter the connection string **sslmode=Require;TrustServerCertificate=true** in **Additional connection parameters** text box.
+   
    ![PostgreSql Connection](/static/assets/embedded/working-with-datasource/data-connectors/images/Postgresql/Postgresql_Connection.png)
 
+> **NOTE:**  To connect data source with **SSH**, enable the SSH check box in the **NEW DATA SOURCE** configuration panel and enter the required credentials.
+![Enable SSH](/static/assets/embedded/working-with-datasource/images/enable-ssh.png#max-width=60%)
+ 
 There are two connection types available in a data source:
 
 	* Live mode
@@ -71,6 +75,9 @@ In this connection type, a data source is fetched from source periodically. Choo
 
 ![Extract Connection](/static/assets/embedded/working-with-datasource/data-connectors/images/Postgresql/Postgresql_Extract_Connection.png)
 
+> **NOTE:**  Initially, data will be extracted based on the Max Rows selected in order to proceed with data model creation. The remaining records (there is no limit) will be extracted during the next refresh.  <br /> 
+ ![Max rows option](/static/assets/embedded/working-with-datasource/data-connectors/images/Postgresql/maxRowOption.png#max-width=60%)		
+ 
 ### Refresh Settings
 #### Steps to configure the data source refresh settings:
 1. Click Refresh Settings in the configuration panel.

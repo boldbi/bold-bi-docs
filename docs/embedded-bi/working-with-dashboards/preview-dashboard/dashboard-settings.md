@@ -6,7 +6,21 @@ canonical: "/cloud-bi/working-with-dashboards/preview-dashboard/dashboard-settin
 platform: bold-bi
 documentation: ug
 ---
-# Exporting dashboard to Image
+# Allow dashboard exporting options
+
+Dashboard allows you to enable or disable the specific dashboard exporting options in dashboard properties section. By default, all exporting options are enabled.
+
+To disable export option, go to the Properties tab and disable the specific export options under the Allow Exporting section.
+
+![Widget image](/static/assets/embedded/working-with-dashboards/preview-dashboards/images/allow-exporting-option.png)
+
+The selected export options can be seen when previewing or viewing the dashboard.
+
+![Widget image](/static/assets/embedded/working-with-dashboards/preview-dashboards/images/exporting-option-dashboard.png)
+
+> **NOTE:** Exporting options have been provided in the dashboard properties section for Bold BI version 4.2.68 or later.
+
+## Exporting dashboard to Image
 
    Export the current view of the dashboard in the form of image by clicking the `Export to Image` in the drop-down menu at right corner of the title section.
     

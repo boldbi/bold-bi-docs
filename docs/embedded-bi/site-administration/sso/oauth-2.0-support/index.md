@@ -83,19 +83,27 @@ The Bold BI application can be configured to support OAuth 2.0 for Single Sign-O
     </tr>
 
     <tr>
+    <td>Logout Endpoint</td>
+    <td>It is an end point that logout the thrid-party provider.</td>
+    
+    </tr>
+
+    <tr>
     <td>Email</td>
-    <td>This must be the email of an admin account of the providers.</td>
+    <td>This must be the field name in which email will be present when deserializing the token.</td>
     </tr>
 
     </table>
 
     ![OAuth settings](/static/assets/embedded/site-administration/oauth-support/images/OAuth-settings.png)
 
+    ![OAuth user data](/static/assets/embedded/site-administration/oauth-support/images/OAuth-user-data.png)
+    
 If we need to import the OAuth 2.0 groups, we have to configure the group details while saving the OAuth authentication settings.
 
   ![OAuth Group setting](/static/assets/embedded/site-administration/oauth-support/images/OAuth-group-settings.png)
 
-The previous mentioned similar steps are applicable to configure the OAuth 2.0 support in User Management Server by logging into the URL `{Bold BI URL}/ums/administration/saml-settings` with admin credential.
+The previous mentioned similar steps are applicable to configure the OAuth 2.0 support in User Management Server by logging into the URL `{Bold BI URL}/ums/administration/sso?view=oauth-settings` with admin credential.
 
 The following are the list of few OAuth 2.0 providers and that explains how to connect with the Bold BI application. 
 
@@ -111,7 +119,7 @@ The OAuth 2.0 support is provided in both the Bold BI sites and User Management 
 ## Set OAuth 2.0 as Default Authentication
 OAuth 2.0 can be set as default authentication when [OAuth 2.0 settings](/embedded-bi/site-administration/sso/oauth-2.0-support/#steps-to-configure-oauth-20-in-bold-bi) is enabled and saved. Follow these steps:
 
-1. In settings page, click Authentication tab and select General.
+1. In settings page, click **Authentication** tab and select **General**.
 
 2. Enable the **Enable Default Authentication** option and select the **OAuth 2.0** in default authentication provider as in the following screenshot.
 
