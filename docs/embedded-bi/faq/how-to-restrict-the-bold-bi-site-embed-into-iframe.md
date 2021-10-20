@@ -31,12 +31,12 @@ Follow the below step to add the X-Frame-Options in response headers of Bold BI 
 
 Since we have various distributed applications in Bold BI, We have to set the X-Frame-Options response header in the below deployed applications.
 
-> **NOTE:**  By default, the Bold BI is deployed in "C:\BoldBI".
+> **NOTE:** By default, the Bold BI is deployed in  "C:\BoldServices" for Windows.
 
 | Applications       	| File Locations                                                  |
 |-------------------	|-----------------------------------------------------------      |
-| Identity Provider 	| **`{Deployed Location}`**\IDP\Web.config               	      |
-| Identity Provider API	| **`{Deployed Location}`**\IDP\API\Web.config                    |
-| BOLD BI Server  	    | **`{Deployed Location}`**\Dashboard Server\Web.config	          |
-| BOLD BI Server API 	| **`{Deployed Location}`**\Dashboard Server\API\Web.config	      |
-| Designer Service  	| **`{Deployed Location}`**\Dashboard Designer\Web.config 	      |
+| Identity Provider 	| **`{Deployed Location}`**\idp\web\Web.config               	  |
+| Identity Provider API	| **`{Deployed Location}`**\idp\api\Web.config                    |
+| BOLD BI Server  	    | **`{Deployed Location}`**\bi\Web.config	                      |
+| BOLD BI Server API 	| **`{Deployed Location}`**\bi\api\Web.config	                  |
+| Designer Service  	| **`{Deployed Location}`**\bi\dataservice\Web.config 	          |

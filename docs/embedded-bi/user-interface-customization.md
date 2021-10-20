@@ -31,7 +31,7 @@ You can make your own selections, about what you want to see or set preferences 
             </td>
             <td>
                 Check this location for Bold BI version 4.1.36 or later "{application-installed-drive}\BoldServices\app_data\data".<br/>
-                Check this location for Bold BI version below 4.1.36 "{application-installed-drive}\BoldServices\app_data\data".<br/>
+                Check this location for Bold BI version below 4.1.36 "{application-installed-drive}\Bold BI\app_data\data".<br/>
             </td>
         </tr>
         <tr>
@@ -39,7 +39,7 @@ You can make your own selections, about what you want to see or set preferences 
                 Linux
             </td>
             <td>
-                /var/www/boldbi-embedded/boldbi/app_data/data
+                /var/www/bold-services/application/app_data/data
             </td>
         </tr>
     </table>
@@ -120,7 +120,7 @@ You can add new menu items which you want to show in the left side menu with the
 
 ## Sample UI customization
 
-Let us customize the UI of the site `site1` using the profile `profile1` and scheme `scheme1`.
+Let us customize the `site1` using the profile `profile1` and scheme `scheme1`.
 
 ![Sample profile in config](/static/assets/embedded/user-interface-customization/images/sample-example1.png)
 
@@ -132,7 +132,7 @@ Here, we provided different schemes for dashboards, datasources, schedules and s
 
 ![Sample schemes](/static/assets/embedded/user-interface-customization/images/sample-example3.png)
 
-For example, `Open` menu will show in dashboard scheme and hide in slideshow scheme.
+For example, `Open` option will be shown in dashboard context menu and hidden in slideshow context menu.
 
 ![Dashboard scheme](/static/assets/embedded/user-interface-customization/images/dashboard-scheme.png)
 

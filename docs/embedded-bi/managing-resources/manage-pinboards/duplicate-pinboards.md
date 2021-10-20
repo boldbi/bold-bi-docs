@@ -9,11 +9,11 @@ documentation: ug
 
 # Duplicate a Particular Pinboard
 
-This section explains on how to duplicate Pinboard in the Bold BI solutions.
+This section explains how to duplicate Pinboard in the Bold BI application.
 
 ### Steps to duplicate a Pinboard
 
-1. Click the `Duplicate` option from the context menu.
+1. Click the `Duplicate` option from the `gear` icon menu.
 
     ![Duplicate Option](/static/assets/embedded/managing-resources/manage-pinboards/images/duplicate-option.png)
 

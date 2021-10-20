@@ -1,41 +1,93 @@
 ---
 layout: post
-title: Amazon Redshift – Embedded BI Connector | Bold BI Learning
+title: Amazon Redshift – Embedded BI Connector | Bold BI Documentation
 description: Learn how to connect an Amazon Redshift database cluster and read its data into Bold BI Embedded dashboard.
-canonical: "/cloud-bi/working-with-data-source/data-connectors/amazon-redshift/"
 platform: bold-bi
 documentation: ug
+keywords: isolation, isolation code, isolation filter, row level security, row level
 ---
-   
+
 # Connecting Bold BI to Amazon Redshift Database
 
 Using the `Amazon Redshift` connection type, you can connect an Amazon Redshift database.
 
 Click `Data Source` button in the configuration panel to add a new data connection.
 
-![Data source](/static/assets/embedded/working-with-datasource/data-connectors/images/amazon-redshift/datasource.png)
+![Data source Image](/static/assets/embedded/working-with-datasource/data-connectors/images/amazon-redshift/datasource.png#width=352px;height=501.51px)
 
-Click `CREATE NEW` to launch a new connection from the connection type panel. 
+Click `CREATE NEW` to launch a new connection from the connection type panel.
 
-![Data source button](/static/assets/embedded/working-with-datasource/data-connectors/images/amazon-redshift/datasourcebutton.png)
+![Data source Button](/static/assets/embedded/working-with-datasource/data-connectors/images/amazon-redshift/datasourcebutton.png#width=351px;height=504.4px)
 
 Click `Amazon Redshift` connection button in the connection type panel.
 
-![amazonredshift_button](/static/assets/embedded/working-with-datasource/data-connectors/images/amazon-redshift/amazonredshift_button.png)
+![Red shift button](/static/assets/embedded/working-with-datasource/data-connectors/images/amazon-redshift/amazonredshiftbutton.png#width=351px;height=504.06px)
 
 Set the `server Name` and `port number` where the Amazon Redshift service is running.
 
 Enter the `user name` and `password` to connect to the Amazon Redshift.
 
-Enter the database name and click the `Connect` button to connect the Amazon Redshift.
+There are two connection types available in a data source:
 
-![amazonredshift_connectiontype](/static/assets/embedded/working-with-datasource/data-connectors/images/amazon-redshift/amazonredshift_connectiontype.png)
+* Live mode
+* Extract mode
 
+## Live mode connection
+
+In this connection type, a data source is directly fetched from source. Choose the `Live` mode option for this connection.
+
+![Redshift Live mode](/static/assets/embedded/working-with-datasource/data-connectors/images/amazon-redshift/amazonredshiftlivemode.png#width=348px;height=500.95px)
+
+> **NOTE:**  To connect data source with **SSH**, enable the SSH check box in the **NEW DATA SOURCE** configuration panel and enter the required credentials.
+![Enable SSH](/static/assets/embedded/working-with-datasource/images/enable-ssh.png#max-width=40%)
+ 
 The selected database will be opened in the data design view window.
 
-![Data design view ](/static/assets/embedded/working-with-datasource/data-connectors/images/amazon-redshift/data-design-view.png)
+![Data Design view](/static/assets/embedded/working-with-datasource/data-connectors/images/amazon-redshift/datadesignview.png#max-width=100%)
 
 Drag and drop the table from table list, and click `Save` button to save the data source with valid name.
+
+## Extract mode connection
+
+In this connection type, a data source is fetched from source periodically. Choose the `Extract` mode option for this connection.
+
+![Redshift Extract Mode](/static/assets/embedded/working-with-datasource/data-connectors/images/amazon-redshift/amazonredshiftExtractmode.png#width=350px;height=503.92px)
+
+## Refresh Settings
+
+### Steps to configure the data source refresh settings:
+
+1. Click Refresh Settings in the configuration panel.
+
+![Refresh Setting](/static/assets/embedded/working-with-datasource/data-connectors/images/amazon-redshift/amazonredshiftRefreshSetting.png#width=350px;height=503.25px)
+
+2. Select the recurrence type, recurrence start, and end dates in the **Refresh Setting** dialog box.
+
+     * Data refresh can be scheduled hourly, daily, weekly, and monthly.
+     * Application Time Zone is displayed below the date picker. Start time of the schedule is converted to the client Time Zone and shown at the right-side for users convenience. After selecting, click `Schedule`.
+
+![Refresh Setting](/static/assets/embedded/working-with-datasource/data-connectors/images/amazon-redshift/RefreshSetting.png#max-width=100%)
+
+## Preview and data import
+
+1. Click `Connect` to connect the PostgreSql server with configured details.
+
+2. The Choose Table(s) dialog opens. This dialog displays a list of tables and views in treeview. Select the required table(s) or view(s) from treeview to use it in the designer.
+The option is available for configuring incremental refresh column (The table must have a primary key column and date column to configure this option) for the selected items in the right-side panel. If you configure it, then the data source will work on [Incremental update](https://help.boldbi.com/cloud-bi/working-with-data-source/data-connectors/sql-data-source/#incremental-update), otherwise works on [Full load ](https://help.boldbi.com/cloud-bi/working-with-data-source/data-connectors/sql-data-source/#full-load) concept. And finally click `Connect`.
+
+![Preview Extract](/static/assets/embedded/working-with-datasource/data-connectors/images/amazon-redshift/PreviewExtract.png#max-width=100%)
+
+1. Now, the data design view page with the selected table schema opens. Drag the table.
+
+![Query Editor Extract](/static/assets/embedded/working-with-datasource/data-connectors/images/amazon-redshift/QueryEditorExtract.png#max-width=100%)
+
+* You can use the Code View option for passing query to display data.
+
+![Code view mode extract](/static/assets/embedded/working-with-datasource/data-connectors/images/amazon-redshift/CodeViewModeExtract.png#max-width=100%)
+
+Click `Save` to save the data source with a relevant name.
+
+> **NOTE:** In future, you can edit the connection information for both live and extract mode connections using the [Edit Connection](/embedded-bi/working-with-data-source/editing-a-data-connection/) option.
 
 ## Related links
 [Data Transformation](/embedded-bi/working-with-data-source/transforming-data/joining-table/)

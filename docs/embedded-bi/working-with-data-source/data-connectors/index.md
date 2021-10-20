@@ -26,6 +26,7 @@ The Bold BI supports the following data connection types such that the structure
   <tbody>
     <tr>
         <td align="center"> SQL
+		    <br> <a href="/embedded-bi/working-with-data-source/data-connectors/amazon-athena/"> Amazon Athena</a>
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/amazon-aurora/"> Amazon Aurora</a>  
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/amazon-rds/"> Amazon RDS</a>
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/amazon-redshift/"> Amazon Redshift</a>
@@ -49,7 +50,7 @@ The Bold BI supports the following data connection types such that the structure
         <td align="center" rowspan="2"> Sales & CRM
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/chart-mogul/"> ChartMogul</a>
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/copper/"> Copper</a>
-            <br> <a href="/embedded-bi/working-with-data-source/data-connectors/freshsales/"> Freshsales</a>
+            <br> <a href="/embedded-bi/working-with-data-source/data-connectors/freshwork-crm/"> Freshwork CRM</a>
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/harvest/"> Harvest</a>
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/infusionsoft/"> Infusionsoft</a>
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/insightly/"> Insightly</a>
@@ -66,6 +67,7 @@ The Bold BI supports the following data connection types such that the structure
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/zendesk-sell/"> Zendesk Sell</a>
 			<br> <a href="/embedded-bi/working-with-data-source/data-connectors/zendesk-sunshine/"> Zendesk Sunshine</a>
 			<br> <a href="/embedded-bi/working-with-data-source/data-connectors/zendesk-support/"> Zendesk Support</a>
+			<br> <a href="/embedded-bi/working-with-data-source/data-connectors/zohocrm/"> Zoho CRM</a>
         </td>
         <td align="center"> Files
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/files/"> CSV</a>
@@ -80,7 +82,6 @@ The Bold BI supports the following data connection types such that the structure
         </td>
 		<td align="center"> Management
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/appfolio/"> AppFolio</a>
-            <br> <a href="/embedded-bi/working-with-data-source/data-connectors/nutshell/"> Nutshell</a>
         </td>
     </tr>
     <tr>
@@ -100,6 +101,7 @@ The Bold BI supports the following data connection types such that the structure
 			<br> <a href="/embedded-bi/working-with-data-source/data-connectors/facebook/"> Facebook</a>
 			<br> <a href="/embedded-bi/working-with-data-source/data-connectors/facebook-ads/"> Facebook Ads</a>
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/linkedin/"> LinkedIn</a>
+			<br> <a href="/embedded-bi/working-with-data-source/data-connectors/sendible/"> Sendible</a> 
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/youtube/"> YouTube </a>
         </td>
 		<td align="center"> Fitness Management
@@ -119,12 +121,9 @@ The Bold BI supports the following data connection types such that the structure
     <tr>
         <td align="center"> Marketing
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/ask-nicely/"> Ask Nicely</a>
-			<br> <a href="/embedded-bi/working-with-data-source/data-connectors/amazon-mws/"> Amazon MWS</a>
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/bitly/"> Bitly</a>
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/campaign-monitor/"> Campaign Monitor</a>
-            <br> <a href="/embedded-bi/working-with-data-source/data-connectors/chart-beat/"> Chartbeat</a>
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/go-squared/"> GoSquared</a>
-            <br> <a href="/embedded-bi/working-with-data-source/data-connectors/google-adsense/"> Google AdSense</a>
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/google-analytics/"> Google Analytics</a>
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/google-search-console/"> Google Search Console</a>
 			<br> <a href="/embedded-bi/working-with-data-source/data-connectors/hubspot">Hubspot</a>
@@ -134,6 +133,7 @@ The Bold BI supports the following data connection types such that the structure
 			<br> <a href="/embedded-bi/working-with-data-source/data-connectors/google-ads">Google Ads</a>
         </td>
         <td align="center"> Finance
+		    <br> <a href="/embedded-bi/working-with-data-source/data-connectors/amazon-mws/"> Amazon MWS</a>
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/chargebee/"> Chargebee</a>
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/chargify/"> Chargify</a>
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/freshbooks/"> FreshBooks</a>
@@ -143,6 +143,7 @@ The Bold BI supports the following data connection types such that the structure
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/recurly/"> Recurly</a>
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/stripe/"> Stripe</a>
 			<br> <a href="/embedded-bi/working-with-data-source/data-connectors/squareup/"> SquareUp</a>
+			<br> <a href="/embedded-bi/working-with-data-source/data-connectors/xero/"> Xero</a>
 			<br> <a href="/embedded-bi/working-with-data-source/data-connectors/zoho-invoice/"> Zoho Invoice</a>
         </td>
         <td align="center"> REST
@@ -151,15 +152,14 @@ The Bold BI supports the following data connection types such that the structure
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/rss-feeds/"> RSS Feeds</a>
 			<br> <a href="/embedded-bi/working-with-data-source/data-connectors/slack/"> Slack</a>
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/restful-web-services/"> Web</a>
-			<br> <a href="/embedded-bi/working-with-data-source/data-connectors/xero/"> Xero</a>
         </td>
         <td align="center"> Web Analytics
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/optimizely/"> Optimizely</a>
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/seomonitor/"> SEOmonitor</a>
-            <br> <a href="/embedded-bi/working-with-data-source/data-connectors/oracle-bi-reports/"> Oracle BI Reports</a>
+			<br> <a href="/embedded-bi/working-with-data-source/data-connectors/prometheus/"> Prometheus</a>
         </td>
-		<td align="center"> Data monitoring
-            <br> <a href="/embedded-bi/working-with-data-source/data-connectors/prometheus/"> Prometheus</a>
+		<td align="center">Email
+            <br> <a href="/cloud-bi/working-with-data-source/data-connectors/gmail/"> Gmail</a>
         </td>
     </tr>
     <tr>
@@ -179,6 +179,8 @@ The Bold BI supports the following data connection types such that the structure
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/lighthouse/"> Lighthouse</a>
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/outlook-calendar/"> Microsoft Outlook Calendar</a>
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/new-relic/"> New Relic</a>
+			<br> <a href="/embedded-bi/working-with-data-source/data-connectors/nutshell/"> Nutshell</a>
+			<br> <a href="/embedded-bi/working-with-data-source/data-connectors/origami/"> Origami</a>
 			<br> <a href="/embedded-bi/working-with-data-source/data-connectors/proofhub/"> ProofHub</a>
 			<br> <a href="/embedded-bi/working-with-data-source/data-connectors/podio/"> Podio</a>
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/smartsheet/"> Smartsheet</a>
@@ -187,7 +189,6 @@ The Bold BI supports the following data connection types such that the structure
 			<br> <a href="/embedded-bi/working-with-data-source/data-connectors/trello/"> Trello</a>
         </td>
         <td align="center"> Support
-            <br> <a href="/embedded-bi/working-with-data-source/data-connectors/callrail/"> CallRail</a>
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/freshdesk/"> Freshdesk</a>
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/freshservice/"> Freshservice</a>
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/help-scout/"> Help Scout</a>
@@ -196,10 +197,9 @@ The Bold BI supports the following data connection types such that the structure
         </td>
         <td align="center"> Mobile Analytics
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/42matters/"> 42matters</a>
-            <br> <a href="/embedded-bi/working-with-data-source/data-connectors/app-annie/"> App Annie</a>
         </td>
-		<td align="center"> Social Media Management
-			<br> <a href="/embedded-bi/working-with-data-source/data-connectors/sendible/"> Sendible</a>           
+		<td align="center">App Analytics
+            <br> <a href="/cloud-bi/working-with-data-source/data-connectors/app-annie/"> App Annie</a>
         </td>
     </tr>
     <tr>
@@ -211,7 +211,7 @@ The Bold BI supports the following data connection types such that the structure
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/activecampaign/"> Active Campaign</a>
         </td>
         <td align="center"> Advertising
-            <br> <a href="/embedded-bi/working-with-data-source/data-connectors/flurry/"> Flurry</a>
+             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/google-adsense/"> Google AdSense</a>
         </td>
     </tr>
   </tbody>

@@ -8,133 +8,188 @@ control: Combo Box
 documentation: ug
 ---
 
-# Configuring Combo Box
+# Combo Box
 
-Combo Box enables you to filter based on single or multiple items selection in dropdown list. To bind a combo box, a minimum requirement of 1 column is needed. 
+Combo box enables you to filter the items based on single or multiple items selection in the dropdown list. To bind a combo box, a minimum requirement of 1 column is needed.
 
 ![Combobox](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-box/combobox.png)
 
 ## How to configure table data to combo box?
 
-The following procedure illustrates data configuration of Combo Box.
+The following procedure explains the data configuration of the Combo box:
 
-Drag and drop `Combo Box` widget from the tool box into design panel and resize into your required size. You can find widget in tool box by search. 
+1.  Drag and drop the `Combo Box` widget from the tool box into design panel and resize into your required size. You can find the widget in tool box by `search`. 
 
 ![Combobox](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-box/drop-widget.png)
 
-Click `Data Source` button in configuration panel.
+2.  Click the `Data Source` button in the configuration panel.
 
 ![Data button](/static/assets/embedded/visualizing-data/visualization-widgets/images/databutton.png)
 
-Click `CREATE NEW` button to launch a new connection from connection type panel.
+3.  Click the `CREATE NEW` button to launch a new connection from the connection type panel.
 
 ![Data source button](/static/assets/embedded/visualizing-data/visualization-widgets/images/datasourcebutton.png)
 
-In the connection type panel, click any one (Here `Microsoft SQL` Connection type is selected for demonstration) of the listed connection type button shown.
+4.  In the connection type panel, click any one (Here, the `Microsoft Excel` Connection type is selected for demonstration) of the listed connection type button shown.
 
 ![Data source list](/static/assets/embedded/visualizing-data/visualization-widgets/images/datasourcelist.png)
 
-In the `NEW DATA SOURCE` configuration panel, fill the connection type and related details. Click `Connect` button
+5.  In the `NEW DATA SOURCE` configuration panel, fill the connection type and related details. Click the `Preview & Connect` button.
 
-![Connect button](/static/assets/embedded/visualizing-data/visualization-widgets/images/Connectbutton.png)
+![Connect button](/static/assets/embedded/visualizing-data/visualization-widgets/images/connectbutton.png)
 
-Drag your preferred table or view from the left pane from data design view, click `Save` button.
+6.  Drag your preferred table or view from the left pane from the data design view, click the `Save` button.
 
 ![Virtual table](/static/assets/embedded/visualizing-data/visualization-widgets/images/virtualtable.png)
 
-Click `Properties` button in configuration panel, property pane opens. Now, Switch to `ASSIGN DATA` tab.
+7.  Click the `Properties` button in the configuration panel, property pane opens. 
 
 ![Designer properties](/static/assets/embedded/visualizing-data/visualization-widgets/images/designerpropertiesbutton.png)
 
+8.  Now, switch to the `ASSIGN DATA` tab.
+
 ![Data tab](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-box/combodatatab.png)
 
-The data tab will be opened with available measures and dimensions from the connected data source
+9.  The `ASSIGN DATA` tab will be opened with the available measures and dimensions from the connected data source.
 
 ![Assign data](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-box/comboassigndata.png)
 
-Drag and drop a column from `Measures` or `Dimensions` to `Columns` section.
+### Adding Values 
+
+You can add the `Measures` or `Dimensions` to the `Columns` section by dragging and dropping the required column.
 
 ![Configure Combobox](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-box/configure-widget.png)
 
-Define the `Sort` of the dropped column through `Sort` option in the `Settings` drop down menu. For more details refer [Sort](/embedded-bi/visualizing-data/working-with-widgets/advanced-sorting/#dimension-column).
+### Sorting data
+
+Define the `Sort` of the dropped column through the Sort option in the Settings dropdown menu. For more details, refer to the [Sort](/embedded-bi/visualizing-data/working-with-widgets/advanced-sorting/#dimension-column).
 
 ![Sorting](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-box/sorting.png)
 
-Define filter criteria through the `Filter(s)` menu item in the `Settings` drop down menu. For more details, refer [filter](/embedded-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column).
+### Filtering data
+
+Define filter criteria through the `Filter(s)` menu item in the `Settings` drop down menu. For more details, refer to the [filter](/embedded-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column).
 
 ![Filtering](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-box/filtering.png)
-
 
 Clear the filters by selecting the `Show All Records` in the `Settings` dropdown menu.
 
 ## How to format combo box?
 
-You can format the combo box for better illustration of the view that you require, through the settings available in `Properties` tab. This pane can be opened from design view through clicking the `Settings` icon at top right corner of the widget.
+You can format the combo box for a better illustration of the view that you require through the settings available in the `Properties` tab. This pane can be opened from the design view by clicking the `Settings` icon at the top right corner of the widget.
 
-**General Settings**
+### General Settings
 
 ![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-box/general-settings.png)
 
-**Name**
+#### Name
 
-This allows you to set title for this combo box widget.
+This allows you to set the `title` for this combo box widget.
 
-**Basic Settings**
+#### Subtitle
+
+This allows you to set the `subtitle` for this combo box widget.
+
+#### Description
+
+This allows you to set the brief explanation about this combo box widget.
+
+#### Basic Settings
 
 ![Basic Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-box/basic-settings.png)
 
-**Enable Multi-select**
+#### Enable Multi-select
 
-This allows you to define single/multiple item selection in dropdown list.
+`Enable Multi-Select` allows you to select the one or more items in the dropdown list.
 
-**Single Selection**
+#### Single Selection
 
 ![Single Selection](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-box/single-selection.png)
 
-**Multiple Selection**
+#### Multiple Selection
 
-Initially, all items in combo box selected. You can select/ unselect items by checking/unchecking items.
+You can able to select the multiple items in the combo box.
 
-![Multiple Selection](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-box/combobox_multiselect.png)
- 
- ***All*** - This allows you to select or unselect all items in the combo box.
+![Multiple Selection](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-box/combobox-multiselect.png)
 
-**Allow Filter**
+ ***All*** - This allows you to select or unselect all the items in the combo box.
 
-This allows you to enable a filter box for easy filtering of data.
+![Multiple Selection All](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-box/combobox-multiselect-all.png)
 
-**Filter**
+#### Allow Filter
+
+This allows you to enable a `filter` box for easy filtering of data.
+
+#### Filter
 
 ![Filter](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-box/filter.png)
 
-**Act as Master Widget**
+#### Act as Master Widget
 
 This allows you to define this combo box widget as a master widget such that its filter action can be made to listen by other widgets in the dashboard.
 
-**Ignore Filter Actions**
+#### Ignore Filter Actions
 
 This allows you to define this combo box widget to ignore responding to the filter actions applied on other widgets in dashboard.
 
-**Container Appearance**
+#### Enable Hierarchical Filtering
+
+Using this option, you can enable or disable hierarchical top N filtering. While applying the Top N filter with multiple dimension columns, the data returned can be customized based on whether the filtering needs to be done as flat or based on the hierarchy of dimension columns added.
+
+When `Enable Hierarchical Filtering` is enabled, the Top N will be applied for each individual column separately based on the number set for each column.
+
+#### Container Appearance
 
 ![Container Appearance](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-box/container-appearance.png)
 
-**Title Alignment**
+#### Title Alignment
 
-This allows you to handle the alignment of widget title to either left, center or right.
+This allows you to handle the alignment of widget title to either `left, center, or right.`
 
-**Title Color**
+#### Title Color
 
-This allows you to apply text color to the widget title.
+This allows you to apply the text `color` to the widget title.
 
-**Show Border**
+#### Title Auto Font Size
 
-This allows you to toggle the visibility of border surrounding the widget.
+On enabling Auto Font Size, the font size of the title will be adjusted automatically if the resolution of the screen varies.
 
-**Corner Radius**
+**Font Size**
 
-This allows you to apply the specified radius to the widget corners. Value can be between 0 and 10.
+This allows you to apply the specified size of the font to the widget title if the **Title Auto Font Size** is disabled. Value can be between 10 and 44.
 
-**Enable Comment**
+#### Subtitle Auto Font Size
 
-This allows you to enable/disable comment for dashboard widget. For more details refer [here](/embedded-bi/visualizing-data/working-with-widgets/commenting-widget/)
+On enabling Auto Font Size, the font size of the subtitle will be adjusted automatically if the resolution of the screen varies.
+
+**Font Size**
+
+This allows you to apply the specified size of the font to the widget title if the **Subtitle Auto Font Size** is disabled. Value can be between 10 and 32.
+
+#### Show Border
+
+This allows you to toggle the visibility of `border` surrounding the widget.
+
+#### Corner Radius
+
+This allows you to apply the specified `radius` to the widget corners if the **Show Border** is enabled. Value can be between 0 and 10.
+
+#### Background Color
+
+This allows you to set the **background color** to the combo box widget.
+
+#### Transparency
+
+This property allows you to specifies the **transparency** for the `background color`.
+
+#### Container actions
+
+![Container Actions](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-box/container-actions.png)
+
+#### Show Header
+
+This allows you to enable or disable the `widget title` of the combo box widget. 
+
+#### Enable Comments
+
+This allows you to enable or disable `comment` for the dashboard widget. For more details, refer to this [link](/embedded-bi/visualizing-data/working-with-widgets/commenting-widget/).

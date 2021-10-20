@@ -9,7 +9,7 @@ documentation: ug
 
 # Edit Pinboard Layout
 
-This section explains how to edit Pinboard layout in the Bold BI solutions.
+This section explains how to edit Pinboard layout in the Bold BI application.
 
 Pinboard is based on column layout.
 

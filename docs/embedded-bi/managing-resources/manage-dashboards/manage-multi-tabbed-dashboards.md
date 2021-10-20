@@ -25,7 +25,7 @@ To create a multi-tabbed dashboard, the user should have dashboards. Admin user 
 
 ### Steps to create a multi-tabbed dashboard
 
-* Click the `Create` button in the left-side of menu area and choose the `multi-tabbed dashboard` option.
+* Click the `+` icon in the left-side of menu area and choose the `multi-tabbed dashboard` option.
 
     ![Multi-tab sidebar option](/static/assets/embedded/managing-resources/manage-dashboards/images/multi-tab-sidebar-option.png)
 
@@ -99,6 +99,5 @@ User can identify the created multi-tabbed dashboard with `multi-tab` batch icon
     ![Delete multi-tab](/static/assets/embedded/managing-resources/manage-dashboards/images/multi-tab-delete.png)
 
 > **NOTE:**  Limitations of Multi-Tabbed Dashboard
-> * Dashboard and Widget comments are not supported.
 > * Edit, Share, Favorite and Get Link options in the viewer are hidden.
 > * User can't share the dashboard views to others.

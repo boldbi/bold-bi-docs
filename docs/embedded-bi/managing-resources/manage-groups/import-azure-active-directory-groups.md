@@ -33,6 +33,8 @@ Bold BI will list the search results of the groups in the grid as shown in the f
 
 To import the Azure Active Directory groups into the Bold BI, you have to choose the groups from the list and click `Import groups` at the top right corner.
 
+![Import Groups from Azure Active Directory](/static/assets/embedded/managing-resources/manage-groups/images/import-groups-from-azure-active-directory.png)
+
 Bold BI will import the chosen groups and a confirmation message will be displayed as shown in the following image.
 
 ![Success message after imported the Azure Active Directory groups](/static/assets/embedded/managing-resources/manage-groups/images/Azure-Active-Directory-group-import-success-window.png)

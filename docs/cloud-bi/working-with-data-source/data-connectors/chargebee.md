@@ -43,6 +43,8 @@ Once you click the Chargebee data source, the NEW DATA SOURCE configuration pa
 7. Choose **None** under **Authentication Type** as authentication is done through header. 
 8. Enter a valid Chargebee API key under **Account key** textbox.
 
+    ![DataSourcesView](/static/assets/cloud/working-with-datasource/data-connectors/images/chargebee/DataSourcesView.png)
+
 You can also edit the connection information set here using the [Edit Connection](/cloud-bi/working-with-data-source/editing-a-data-connection/) option.
 
 #### How do I get Account Key for connecting Chargebee data source?

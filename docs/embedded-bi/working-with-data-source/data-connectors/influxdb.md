@@ -39,6 +39,9 @@ After clicking the data source, the **NEW DATA SOURCE** configuration panel open
 
    ![InfluxDB Connection](/static/assets/embedded/working-with-datasource/data-connectors/images/Influxdb/Influxdb_Connection.png)
 
+> **NOTE:**  To connect data source with **SSH**, enable the SSH check box in the **NEW DATA SOURCE** configuration panel and enter the required credentials.
+![Enable SSH](/static/assets/embedded/working-with-datasource/images/enable-ssh.png#max-width=60%)
+ 
 ### Data Preview
 1. Click **Connect** to connect the InfluxDB server with configured details. 
 The schema represents the collection list retrieved from the InfluxDB server. This dialog displays a list of schemas in a tree view and their corresponding values. Measurements will be listed as tables.

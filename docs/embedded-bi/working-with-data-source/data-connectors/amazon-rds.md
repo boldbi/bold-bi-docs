@@ -35,6 +35,8 @@ After clicking a data source, the **NEW DATA SOURCE** configuration panel opens.
 5. Enter a valid Amazon RDS password in the **Password** text box.
 6. Enter a valid Amazon RDS Database in the Database text box or select in the combo box.
 
+    ![DataSourcesView](/static/assets/embedded/working-with-datasource/data-connectors/images/amazonrds/DataSourcesView.png)
+
 ### Amazon RDS supported database engine in Bold bi
    * MySQL
    * MariaDB

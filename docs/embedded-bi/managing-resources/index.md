@@ -27,4 +27,4 @@ You can explore the resource management in detail here,
 
 [Manage Groups](/embedded-bi/managing-resources/manage-groups/)
 
-[User Profile](embedded-bi/managing-resources/user-profile/)
+[User Profile](/embedded-bi/managing-resources/user-profile/)

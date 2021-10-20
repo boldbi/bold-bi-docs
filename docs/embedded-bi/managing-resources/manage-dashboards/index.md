@@ -9,7 +9,7 @@ documentation: ug
 
 # Manage Dashboards
 
-This section explains how to create, open, delete, and share a dashboard in the Bold BI Enterprise application. Also, it explains how to manage dashboard views, multi-tabbed dashboard, move, copy, and clone the dashboards.
+This section explains how to create, open, delete, and share a dashboard in the Bold BI Enterprise application. Also, it explains how to manage dashboard views, multi-tabbed dashboards, move and copy dashboards.
 
 You can explore the managing dashboards in detail here,
 
@@ -25,7 +25,7 @@ You can explore the managing dashboards in detail here,
 
 [Share Filtered Dashboards without saving as Views](/embedded-bi/managing-resources/manage-dashboards/share-filtered-dashboards-without-save-views/)
 
-[Move, Copy and Clone Dashboards](/embedded-bi/managing-resources/manage-dashboards/move-copy-and-clone-dashboards/)
+[Move and Copy Dashboards](/embedded-bi/managing-resources/manage-dashboards/move-and-copy-dashboards/)
 
 [Version History of Dashboards](/embedded-bi/managing-resources/manage-dashboards/version-history-of-dashboards/)
 

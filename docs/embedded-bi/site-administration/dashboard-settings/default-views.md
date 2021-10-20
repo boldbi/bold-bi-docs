@@ -15,7 +15,7 @@ The dashboard can have many number of views and if the dashboard has to be rende
 
 The dashboard view can be set as default view in two ways:
 
-1. [While saving the view](/embedded-bi/managing-resources/manage-dashboards/manage-dashboard-views/#steps-to-add-a-dashboard-view) .
+1. [While saving the view](/embedded-bi/managing-resources/manage-dashboards/manage-dashboard-views/#steps-to-add-a-dashboard-view).
 2. [From the views list of the dashboard](/embedded-bi/managing-resources/manage-dashboards/manage-dashboard-views/#set-a-default-view-for-the-dashboard).
 
 The following section explains how the default views are managed by administrator and remove the default views for the dashboard in the Bold BI.

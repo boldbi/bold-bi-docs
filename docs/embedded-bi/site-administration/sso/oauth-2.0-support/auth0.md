@@ -114,8 +114,13 @@ The fields to be saved in the Bold BI to enable the Auth0 for authentication is 
 </tr>
 
 <tr>
+<td>Logout Endpoint</td>
+<td>It is the endpoint in the Auth0 website that signs the user out.</td>
+</tr>
+
+<tr>
 <td>Email</td>
-<td>This must be the email of an admin account of Auth0 website.</td>
+<td>This must be the field name, in which email will be present when deserializing the token.</td>
 </tr>
 
 </table>

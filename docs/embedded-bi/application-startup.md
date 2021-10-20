@@ -56,7 +56,7 @@ Once the unlock key is uploaded, proceed to the next screen for configuring the 
 | Cases      | Solution                                            |
 |-------------------  |-----------------------------------------------------------  |
 | Invalid File Type | Please ensure to upload the valid unlock key file (lic) downloaded from [here](https://www.boldbi.com/account/downloads/embedded).    
-|  unlock key Expired    | Your unlock key date was expired. Please download the new unlock key file from [here](https://www.boldbi.com/account/downloads/embedded).   |
+|  Unlock Key Expired    | Your unlock key date was expired. Please download the new unlock key file from [here](https://www.boldbi.com/account/downloads/embedded).   |
 
 > **NOTE:** If you are facing any other issues, please contact us from [here](https://www.boldbi.com/support).
 
@@ -65,7 +65,6 @@ Once the unlock key is uploaded, proceed to the next screen for configuring the 
 If you do not have an account for Bold BI, you can request a new trial from this [link](https://www.boldbi.com/embedded/pricing).
 
 ![Activate the account with No Trail option](/static/assets/embedded/application-startup/images/application-startup-sign-up.png)
-
 
 ## Application Startup for Bold BI Enterprise
 
@@ -97,15 +96,7 @@ You can connect to the existing server instance with the below options.
 
 ![SQL Server](/static/assets/embedded/application-startup/images/application-startup-step1.png)
 
-> **NOTE:**  The credentials that is given to connect to the server instance must have permissions to
->* Create Database 
->* Create Table
->* Insert
->* Update Table
->* Alter Table
->* Select
->* Drop Table
->* Drop Database
+> **NOTE:** The credentials given to connect to the server instance must have the permissions specified [here](/embedded-bi/faq/what-are-the-database-permissions-required-to-set-up-bold-bi-embedded/).
 
 > **IMPORTANT:**  The Bold BI server will accept all the connections that use Transport Layer Security (TLS 1.1/1.2) encryption and AES Cryptography (128 bits). While configuring the Bold BI Server, choose the `Enable SSL` option to support encrypted data transfer.
 
@@ -162,15 +153,7 @@ You can connect to the existing server instance with the below options.
 
   ![SQL Server Site](/static/assets/embedded/application-startup/images/application-startup-site-registration.png)
 
-> **NOTE:**  The credentials that is given to connect to the server instance must have permissions to
-* Create Database 
-* Create Table
-* Insert
-* Update Table
-* Alter Table
-* Select
-* Drop Table
-* Drop Database  
+> **NOTE:** The credentials given to connect to the server instance must have the permissions specified [here](/embedded-bi/faq/what-are-the-database-permissions-required-to-set-up-bold-bi-embedded/).  
 
 > **IMPORTANT:**  The Bold BI server will accept all the connections that use Transport Layer Security (TLS 1.1/1.2) encryption and AES Cryptography (128 bits). While configuring the Bold BI Dashboard, choose the `Enable SSL` option to support encrypted data transfer.
 
@@ -209,15 +192,7 @@ You can connect to the existing server instance with the below options.
 * Create new database. 
 * Use an existing database.
 
-> **NOTE:**  The credentials that is given to connect to the server instance must have permissions to
-* Create Database 
-* Create Table
-* Insert
-* Update Table
-* Alter Table
-* Select
-* Drop Table
-* Drop Database  
+> **NOTE:** The credentials given to connect to the server instance must have the permissions specified [here](/embedded-bi/faq/what-are-the-database-permissions-required-to-set-up-bold-bi-embedded/).
 
 > **IMPORTANT:**  The Bold BI server will accept all the connections that use Transport Layer Security (TLS 1.1/1.2) encryption and AES Cryptography (128 bits). While configuring the Data store, choose the `Enable SSL` option to support encrypted data transfer.
 

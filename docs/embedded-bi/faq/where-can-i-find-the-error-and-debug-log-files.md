@@ -26,12 +26,12 @@ Admin can download log files from `Get diagnostic logs` in UMS.
 
 You can get the log file manually from the following location for Bold BI version 4.1.36 or later.
 
-> **NOTE:** By default, the Bold BI is deployed in "C:\BoldServices".
+> **NOTE:** By default, the Bold BI is deployed in "C:\BoldServices" for Windows and "/var/www/bold-services/application" for Linux.
 
 | Hosted Environment    | Log location                                              	|
 |-------------------	|-----------------------------------------------------------	|
 | Windows            	| **`{Deployed Location}`**\app_data\logs                       |
-| Linux               	| /var/www/boldbi-embedded/boldbi/app_data/logs                 |
+| Linux               	| **`{Deployed Location}`**/app_data/logs                       |
 
 ### Bold BI version below 4.1.36
 

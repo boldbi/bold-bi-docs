@@ -43,6 +43,8 @@ Once you click the data source, the NEW DATA SOURCE configuration panel opens.
 7. Replace `<:your_app_token>` under Headers with a valid API key.
 8. Choose **None** under **Authentication** Type, as authentication is done through header.
 
+    ![DataSourcesView](/static/assets/cloud/working-with-datasource/data-connectors/images/activecampaign/DataSourcesView.png)
+
 You can also edit the connection information set here using the [Edit Connection](/cloud-bi/working-with-data-source/editing-a-data-connection/) option.
 
 #### How do I get API Key for connecting ActiveCampaign Data source?

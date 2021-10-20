@@ -72,6 +72,7 @@ This section explains on how to configure the data source refresh setting.
 
 2. Select the recurrence type, recurrence, start and end dates in the `Refresh Setting` dialog box.
 	* Data refresh can be scheduled hourly, daily, weekly and monthly.
+	* The minimum data refresh interval time will be 15 minutes.
 	* Application Time Zone is displayed below the date picker. Start time of the schedule is converted to client Time Zone and shown in the right side for the user’s convenience, after selecting click on the `Schedule` button.
 	* Data refresh failure notification can be sent to the owner of the data source with the error message and a link to the data source refresh history by enabling the send failure notification to owner option.
 	* Bold BI application deactivates the data refresh, after limited consecutive failures and send the disable notification to the owner by mail.

@@ -25,42 +25,45 @@ Follow these common steps for both ways:
 
 1. Create a new folder inside the locale folder, which present in the Bold BI application in the following location.
 
-    Check the following location for Bold BI version 4.1.36 or later.
+   Check the following location for Bold BI version 4.1.36 or later.
 
-    > **NOTE:** By default, the Bold BI is deployed in "C:\BoldServices".
+> **NOTE:** By default, the Bold BI is deployed in "C:\BoldServices" location for Windows.
 
-    | Application       	| Location                                                  	|
-    |-------------------	|-----------------------------------------------------------	|
-    | Idp                	| **`{Deployed Location}`**\idp\web\locale                   	|
-    | Ums               	| **`{Deployed Location}`**\idp\ums\locale                  	|
-    | Bi                	| **`{Deployed Location}`**\bi\web\locale                    	|
-    | BiDesigner          | **`{Deployed Location}`**\bi\dataservice\locale            	|
+| Application       	| Location                                                  	|
+|-------------------	|-----------------------------------------------------------	|
+| Idp                	| **`{Deployed Location}`**\idp\web\locale                  |
+| Ums               	| **`{Deployed Location}`**\idp\ums\locale                  	|
+| Bi                	| **`{Deployed Location}`**\bi\web\locale                    	|
+| BiDesigner          | **`{Deployed Location}`**\bi\dataservice\locale            	|
 
-    Check the following location for Bold BI Linux server.
+   Check the following location for Bold BI Linux server.
 
-    | Application       	| Location                                                  	|
-    |-------------------	|-----------------------------------------------------------	|
-    | Idp                	| /var/www/boldbi-embedded/boldbi/idp/web/locale             	|
-    | Ums               	| /var/www/boldbi-embedded/boldbi/idp/ums/locale             	|
-    | Bi                	| /var/www/boldbi-embedded/boldbi/bi/web/locale               |
-    | BiDesigner          | /var/www/boldbi-embedded/boldbi/bi/dataservice/locale      	|
+> **NOTE:** By default, the Bold BI is deployed in "/var/www/bold-services/application" location for Linux.
 
-    Check the following location for Bold BI version below 4.1.36.
+| Application       	| Location                                                  |
+|-------------------	|-----------------------------------------------------------|
+| Idp                	| /var/www/bold-services/application/idp/web/locale      |
+| Ums               	| /var/www/bold-services/application/idp/ums/locale         |
+| Bi                	| /var/www/bold-services/application/bi/web/locale          |
+| BiDesigner          | /var/www/bold-services/application/bi/dataservice/locale |
 
-    > **NOTE:** By default, the Bold BI is deployed in "C:\Bold BI".
 
-    | Application       	| Location                                                  	|
-    |-------------------	|-----------------------------------------------------------	|
-    | IDP                	| **`{Deployed Location}`**\IDP\locale                       	|
-    | UMS               	| **`{Deployed Location}`**\IDP\UMS\locale                   	|
-    | Dashboard Server   	| **`{Deployed Location}`**\Dashboard Server\locale          	|
-    | Dashboard Designer  |	**`{Deployed Location}`**\Dashboard Designer\locale         |
+   Check the following location for Bold BI version below 4.1.36.
+
+   > **NOTE:** By default, the Bold BI is deployed in "C:\Bold BI".
+
+| Application       	| Location                                                  	|
+|-------------------	|-----------------------------------------------------------	|
+| IDP                	| **`{Deployed Location}`**\IDP\locale                     	|
+| UMS               	| **`{Deployed Location}`**\IDP\UMS\locale                   	|
+| Dashboard Server   	| **`{Deployed Location}`**\Dashboard Server\locale        	|
+| Dashboard Designer  |	**`{Deployed Location}`**\Dashboard Designer\locale         |
 
 2. Mention the folder name in the locale language code, for which language that you want to generate the localization file.
 
 3. Here, created folder `fr-fr`, which represents the **French** language code.
 
-  ![new-locale](/static/assets/embedded/localization/images/new-locale-folder.png)
+   ![new-locale](/static/assets/embedded/localization/images/new-locale-folder.png)
 
 ### Manual edit
 
@@ -77,7 +80,7 @@ In this file, there are two variables present as `msgid` and `msgstr`.
 3. Change the locale **Language** code in the top of the `messages.po` file.
 Here, the sample converted locale file will be appeared as follows.
 
-  ![change-message](/static/assets/embedded/localization/images/change-message.png)
+   ![change-message](/static/assets/embedded/localization/images/change-message.png)
 
 ### Auto-generate using any tools
 
@@ -85,23 +88,39 @@ Here, the sample converted locale file will be appeared as follows.
 
 2. Here, browse to select the `default.po` file in locale folder.
 
-  ![upload-default-file](/static/assets/embedded/localization/images/drag-locale-default-file.png)
+   ![upload-default-file](/static/assets/embedded/localization/images/drag-locale-default-file.png)
 
 3. Change the language in `TO` option, to which language that you want to generate the localization file.
 
-  ![matecat-to](/static/assets/embedded/localization/images/matecat-to-option.png)
+   ![matecat-to](/static/assets/embedded/localization/images/matecat-to-option.png)
 
 4. Select `Analyze` option and then click `Translate`.
 
-  ![matecat-analyze](/static/assets/embedded/localization/images/matecat-analyze.png)
+   ![matecat-analyze](/static/assets/embedded/localization/images/matecat-analyze.png)
 
-  ![matecat-translate](/static/assets/embedded/localization/images/matecat-translate.png)
+   ![matecat-translate](/static/assets/embedded/localization/images/matecat-translate.png)
 
 5. Now, top of the page, there is an icon for download, using it to download the file.
 
-  ![download-file](/static/assets/embedded/localization/images/matecat-download.png)
+   ![download-file](/static/assets/embedded/localization/images/matecat-download.png)
 
 6. Change the downloaded file name as `messages.po` and paste it into the newly created localize folder.
+
+> **NOTE:** You should need to run the locale utility for Bold BI version 4.2.68 or later.
+
+## How to generate the locale JS file
+
+1. Download the locale Utility from this [link](http://files2.syncfusion.com/Installs/BoldBILocaleUtility.zip) provided. Once the download is completed, extract the `.Zip` file.
+
+2. Open the `appsettings.json` file in an editor and modify the `boldbi_locale_path` as deployed path of the designer locale files.
+
+  ![locale-utility-appsettings](/static/assets/embedded/localization/images/locale-utility-appsettings.png)
+
+3. Then, run the `BoldBI.Locale.Utility.exe` file.
+
+  ![locale-utility-file](/static/assets/embedded/localization/images/locale-utility-file.png)
+
+4. Once, you have run the utility, a `locale.js` file will be generated in the newly created localize folder path of the designer locale.
 
 ## Where to change the localization in application
 

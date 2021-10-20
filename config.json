@@ -24,10 +24,13 @@
     "survey",
     "gizmo",
     "freshsales",
+	"freshwork",
+	"crm",
     "infusionsoft",
     "gravity-forms",
 	"squareup",
     "insightly",
+    "origami",
 	"fitbit",
     "kissmetrics",
     "microsoft",
@@ -107,6 +110,7 @@
     "2.0",
     "datastore",
     "amazon",
+	"athena",
     "cognito",
     "okta",
     "auth0",
@@ -213,6 +217,9 @@
     "java",
     "servlet",
     "v3.3",
-	"boldbi"
+	"boldbi",
+    "npm",
+    "jquery",
+    "conflict"
   ]
 }

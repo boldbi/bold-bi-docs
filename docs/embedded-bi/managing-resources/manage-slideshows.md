@@ -29,6 +29,10 @@ This section explains on how to add a slideshow in the Bold BI Embedded. Slidesh
 
 	![Create Slideshow](/static/assets/embedded/managing-resources/images/create-slideshow.png)
 
+    Otherwise, Click `Create Slideshow` from slideshows page.
+
+    ![Create Slideshow](/static/assets/embedded/managing-resources/images/slideshow-page-create.png)
+
 2. Fill the form with Name and Duration for slideshow and click on the `Add Dashboards` in the Create Slideshow dialog box.
   
 	![Add Dashboard Button](/static/assets/embedded/managing-resources/images/add-dashboard-button.png)
@@ -111,6 +115,13 @@ The user who created the slideshow and the Administrator can remove the shared s
 
     ![Remove Slideshow Permission](/static/assets/embedded/managing-resources/images/remove-slideshow-permission.png)
 
+## Information of Slideshow
+
+You can see the information of respective Slideshow in dialog box. Click `Actions` in the grid context menu and select `Info`.
+
+![Slideshow Info](/static/assets/embedded/managing-resources/images/slideshow-info.png)
+
+![Slideshow Info Popup](/static/assets/embedded/managing-resources/images/slideshow-info-popup.png)
 ## Link to Slideshows
 
 This section explains on how to get link to the Slideshows in the Bold BI Embedded.
@@ -125,7 +136,7 @@ Follow the below steps to get the link of a slideshow.
 
     ![Get Link Option](/static/assets/embedded/managing-resources/images/getlink-option.png)
 
-2. The `Get Link` dialog will be opened. Click on `Click to Copy` to get the get link.
+2. The `Get Link` dialog will be opened. Click `Copy` icon to get the link.
 
     ![Get Link](/static/assets/embedded/managing-resources/images/slideshow-getlink.png)
 
@@ -135,7 +146,7 @@ This section explains on how to modify existing slideshows in the Bold BI Embedd
 
 ### Steps to update a slideshow
 
-Name, Duration and the Dashboards listed for slideshow can be changed in the Edit Slideshow dialog box.
+Name, Duration and the Dashboards listed for slideshow can be changed by using `Edit` option.
 
 1. Click on the `Edit` option in the context menu of the respective Slideshow.
 
@@ -143,11 +154,11 @@ Name, Duration and the Dashboards listed for slideshow can be changed in the Edi
 
 2. Dashboards for the slideshow can be added or removed.    
 
-    1. To remove the listed dashboards added for the slideshow, click on the icon as shown below,
+    * To remove the listed dashboards added for the slideshow, click icon as shown below,
 
        ![Remove Listed Dashboards](/static/assets/embedded/managing-resources/images/remove-listed-dashboards.png)
 
-    2. To add the Dashboard for the slideshow, click on the `Add Dashboards` in the Edit Slideshow dialog box.
+    * To add the Dashboard for the slideshow, click `Add Dashboards` in the Edit Slideshow dialog box.
 
 	   ![Add Dashboard For Slideshow](/static/assets/embedded/managing-resources/images/add-dashboard-for-slideshow.png)
 

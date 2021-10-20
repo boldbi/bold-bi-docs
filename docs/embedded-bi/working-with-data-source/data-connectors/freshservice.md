@@ -39,6 +39,8 @@ Once you click the data source, the NEW DATA SOURCE configuration panel opens.
 7. Choose **Basic http Authentication** under **Authentication Type** combo box.
 8. Enter a valid **User Name** and **Password** to access the endpoint in your account.
 
+    ![DataSourcesView](/static/assets/embedded/working-with-datasource/data-connectors/images/freshservice/DataSourcesView.png)
+
 You can also edit the connection information set here using the [Edit Connection](/embedded-bi/working-with-data-source/editing-a-data-connection/) option.
 
 #### Additional information

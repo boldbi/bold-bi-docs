@@ -76,4 +76,13 @@ To search the users in a specific group (Eg:TestGroup) of an organization (Eg:Sy
   </table>
 
   This filter will search and list the users in the group named TestGroup of an organization Syncfusion in the domain www.example.com.
+  
+## Set Windows Active Directory as Default Authentication
+Windows active directory can be set as default authentication when [Windows Active Directory](/embedded-bi/site-administration/active-directory/active-directory/#active-directory-settings) is enabled and saved. Follow these steps:
+
+1. In settings page, click **Authentication** tab and select **General**.
+
+2. Enable the **Enable Default Authentication** option and select the **Windows Active Directory** in default authentication provider as shown in the following screenshot.
+
+    ![Enable  Windows Active Directory Default Authentication](/static/assets/embedded/site-administration/images/enable-windows-active-directory.png)
 

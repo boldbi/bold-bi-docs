@@ -26,7 +26,7 @@ Dashboard Views are opened in our embedded Dashboard Viewer itself as Dashboards
 
 ### Steps to add a Dashboard View
 
-1. Filters applied in the dashboards are summarized in the Filter Overview section under `Applied Filters`.
+1. Filters applied in the dashboards are summarized in the `Filter Overview` section under `Applied Filters`.
 
     To save the filters, click on `Save` icon, a popup is opened to type the name for the Dashboard View and submit it.
 

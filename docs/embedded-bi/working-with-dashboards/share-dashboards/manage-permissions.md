@@ -23,6 +23,8 @@ Access Mode – Entity – Scope
 * Read and Write – Provides read and write permission for the chosen entity.
 * Read, Write and Delete – Provides read, write and delete permission for the chosen entity.
 * Create – Provides permission to create the chosen entity.
+* Manage - Provides permission to manage the chosen entity.
+* Create and Manage - Provides permission to create and manage users and groups.
 
 ## Entity
 
@@ -37,7 +39,14 @@ Access Mode – Entity – Scope
 * Specific Schedule – Provides permission to access a specific schedule with the chosen access mode.
 * All Slideshows – Provides permission to access all slideshows with the chosen access mode.
 * Specific Slideshow – Provides permission to access a specific slideshow with the chosen access mode.
-	
+* All Settings – Provides permission to access all settings pages with the Manage access mode.
+* Specific Settings - Provides permission to access specific settings page with the Manage access mode.
+* All Groups - Provides permission to create new groups except for import groups from third parties.
+* Users and Groups - Provides permission to access user and group management with the Create and Manage access mode except for the manage permission page. If you want to access the manage permission page, then you need to provide delegate permission.
+* Specific Group - Provides permission to access specific groups with the Manage access mode except for the manage permission page. If you want to access the manage permission page, then you need to provide delegate permission.
+* All Permissions – Provides permission with the Manage access mode to delegate permission for all the resources in users and groups manage permission page. Only, the permission will available, if the user has a specific group or users and groups permission.
+* Specific Permissions - Provides permission with the Manage access mode to delegate permission for specific resource in users and groups manage permission page. Only the permission will available if the user has a specific group or users and groups permission.
+
 ## Scope
 
 Scopes can be chosen for the below entities only. Other entities do not require to specify the scope.
@@ -48,8 +57,12 @@ Scopes can be chosen for the below entities only. Other entities do not require 
 * Specific Category – A specific category has to be chosen to provide access to it.
 * Specific Schedule – A specific schedule has to be chosen to provide access to it.
 * Specific Slideshow – A specific slideshow has to be chosen to provide access to it.
+* Specific Settings – A specific settings has to be chosen to provide access to it.
+* Specific Group – A specific group has to be chosen to provide access to it.
+* Specific Permissions – A specific resource has to be chosen to delegate the resource permissions.
 
-> **NOTE:**  Create access can only have the Scopes, All Dashboards, Dashboards in Category, All Data Sources, All Schedules, All Slideshows, and All Categories.
+
+> **NOTE:** Create access can only have the Scopes, All Dashboards, Dashboards in Category, All Data Sources, All Schedules, All Slideshows, and All Categories and  All Groups.<br><br>Manage access can only have All Settings, Specific Settings, Specific Group, All Permissions, and Specific Permissions entities.<br><br>Create and Manage access can only have Users and Groups entity. All Settings, Specific Settings, All Groups, Specific Groups, Users and Groups, All Permissions and Specific Permissions can delegated by the system administrator only.
 
 ## Manage Permissions - users
 

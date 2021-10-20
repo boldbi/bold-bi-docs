@@ -34,6 +34,7 @@ After clicking the data source, the **NEW DATA SOURCE** configuration panel open
 3. Enter a valid PostgreSql username in the UserName text box. 
 4. Enter a valid PostgreSql password in the Password text box.
 5. Enter a valid PostgreSql database in the Database text box.
+6. To connect PostgreSql with SSL connection, enter the connection string **sslmode=Require;TrustServerCertificate=true** in **Additional connection parameters** text box.
 
    ![PostgreSql Connection](/static/assets/cloud/working-with-datasource/data-connectors/images/Postgresql/Postgresql_Connection.png)
 

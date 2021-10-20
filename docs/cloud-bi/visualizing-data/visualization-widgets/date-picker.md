@@ -15,41 +15,43 @@ Date Picker enables you to filter based on the single or range of date selection
 
 ## How to configure table data to date picker?
 
-Drag and drop the `Date Picker` from toolbox at left into design canvas and resize it to your required size.
+The following steps explain to configure the table data to date picker:
+
+1.  Drag and drop the `Date Picker` from the toolbox at left into the design canvas and resize it to your required size.
 
 ![dragging date picker into canvas](/static/assets/cloud/visualizing-data/visualization-widgets/images/date-picker/drop-widgets.png)
 
-Click `Data Source` button in configuration panel.
+2.  Click the `Data Source` button in the configuration panel.
 
 ![data source button](/static/assets/cloud/visualizing-data/visualization-widgets/images/databutton.png)
 
-Click `CREATE NEW` button to launch a new connection from connection type panel.
+3.  Click the `CREATE NEW` button to launch a new connection from the connection type panel.
 
 ![create new button](/static/assets/cloud/visualizing-data/visualization-widgets/images/datasourcebutton.png)
 
-In the connection type panel, click any one (Here `Microsoft SQL` Connection type is selected for demonstration) of the listed connection type button shown.
+4.  In the connection type panel, click any one (Here, the `Microsoft Excel` Connection type is selected for demonstration) of the listed connection type button shown.
 
 ![data source list](/static/assets/cloud/visualizing-data/visualization-widgets/images/datasourcelist.png)
 
-In the `NEW DATA SOURCE` configuration panel, fill the connection type and related details. Click `Connect` button
+5.  In the `NEW DATA SOURCE` configuration panel, fill the connection type and related details. Click the `Connect` button.
 
-![data source page](/static/assets/cloud/visualizing-data/visualization-widgets/images/Connectbutton.png)
+![data source page](/static/assets/cloud/visualizing-data/visualization-widgets/images/connectbutton.png)
 
-Drag your preferred table or view from the left pane from data design view, click `Save` button.
+6.  Drag your preferred table or view from the left pane from the data design view, click the `Save` button.
 
 ![table dragged into table canvas](/static/assets/cloud/visualizing-data/visualization-widgets/images/virtualtable.png)
 
-Click `Properties` button in configuration panel, property pane opens. Now, Switch to `ASSIGN DATA` tab.
+7.  Click the `Properties` button in the configuration panel, property pane opens. Now, switch to the `ASSIGN DATA` tab.
 
 ![highlights widgets configuration button](/static/assets/cloud/visualizing-data/visualization-widgets/images/designerpropertiesbutton.png)
 
 ![date picker assign data tab](/static/assets/cloud/visualizing-data/visualization-widgets/images/date-picker/datepickerdatatab.png)
 
-The data tab will be opened with available measures and dimensions from the connected data source
+8.  The data tab will be opened with available measures and dimensions from the connected data source.
 
 ![assigning fields to date picker](/static/assets/cloud/visualizing-data/visualization-widgets/images/date-picker/datepickerassigndata.png)
 
-Drag and drop a date field from `Dimensions` into `Columns` section.
+9.  Drag and drop a date field from `Dimensions` into the `Columns` section.
 
 ![dragging fields to configure data for date picker](/static/assets/cloud/visualizing-data/visualization-widgets/images/date-picker/configure-widget.png)
 
@@ -62,54 +64,66 @@ Switch to the `Properties` pane and set the `Selection Type` as `Range`; Switch 
 
 In the launched `Relative Date Options` window, configure the relative date and click Add. Repeat this process till the required set of relative dates are added.
 
-![relative date options window](/static/assets/cloud/visualizing-data/visualization-widgets/images/date-picker/relativedatefilterwindow_datepicker.png)
+![relative date options window](/static/assets/cloud/visualizing-data/visualization-widgets/images/date-picker/relativedatefilterwindow-datepicker.png)
 
-![relative dates added in window](/static/assets/cloud/visualizing-data/visualization-widgets/images/date-picker/relativedateoptionsadded_datepicker.png)
+![relative dates added in window](/static/assets/cloud/visualizing-data/visualization-widgets/images/date-picker/relativedateoptionsadded-datepicker.png)
 
 You can see the added relative dates in the DatePicker as follows.  
 
-![showcasing relative date options in date picker](/static/assets/cloud/visualizing-data/visualization-widgets/images/date-picker/relativedateoptionsin_datepicker.png)
+![showcasing relative date options in date picker](/static/assets/cloud/visualizing-data/visualization-widgets/images/date-picker/relativedateoptionsin-datepicker.png)
 
 ## How to configure custom relative dates to the DatePicker?
 
 Switch to the  `Properties` pane and set the `Selection Type` as Range, and then switch back to the Data pane; Click the `Settings` icon in the dropped date column and select `Relative Dates...` in the drop-down menu.
 
-![showing relative date options](/static/assets/cloud/visualizing-data/visualization-widgets/images/date-picker/customrelativedatesdatepicker.png)
+![showing relative date options](/static/assets/cloud/visualizing-data/visualization-widgets/images/date-picker/relativedatesdatepicker.png)
 
-In the launched `Relative Date Options` window, select the `Custom` option from drop-down List.
+In the launched `Relative Date Options` window, select the `Custom` option from the drop-down list.
 
-![selecting custom option in relative dates window](/static/assets/cloud/visualizing-data/visualization-widgets/images/date-picker/customoptionin_relativedatefilter_datepicker.png)
+![selecting custom option in relative dates window](/static/assets/cloud/visualizing-data/visualization-widgets/images/date-picker/customoptionin-relativedatefilter-datepicker.png)
 
-Choose the start and end dates you like to set as custom range, set a name for the custom range, and then click `Add`. Repeat this process till the required set of custom 
-relative dates are added.
+Choose the start and end dates you like to set as custom range, set a name for the custom range, and then click `Add.` Repeat this process till the required set of custom relative dates are added.
 
-![setting range for custom option](/static/assets/cloud/visualizing-data/visualization-widgets/images/date-picker/customdatelimits_relativedatefilter_datepicker.png)
 
-![custom date option is added](/static/assets/cloud/visualizing-data/visualization-widgets/images/date-picker/customdateadded_relativedate_datepicker.png)
+![setting range for custom option](/static/assets/cloud/visualizing-data/visualization-widgets/images/date-picker/customdatelimits-relativedatefilter-datepicker.png)
+
+![custom date option is added](/static/assets/cloud/visualizing-data/visualization-widgets/images/date-picker/customdateadded-relativedat-datepicker.png)
 
 You can see the added custom relative dates in the DatePicker as follows.
 
-![custom date option is displayed in date picker](/static/assets/cloud/visualizing-data/visualization-widgets/images/date-picker/customrelativedatefilterdisplayed_datepicker.png)
+![custom date option is displayed in date picker](/static/assets/cloud/visualizing-data/visualization-widgets/images/date-picker/customrelativedatefilterdisplayed-datepicker.png)
 
+### Filtering data
 
+You can filter the data by using the `Filter` option.
+
+![date picker Filter](/static/assets/cloud/visualizing-data/visualization-widgets/images/date-picker/filter-settings.png)
 
 ## How to format date picker?
 
-You can format the Date Picker for better illustration of the view that you require, through the settings available in `Properties` tab.
+You can format the Date Picker for a better illustration of the view that you require through the settings available in the `Properties` tab.
 
-**General Settings**
+### General Settings
 
 ![date picker name](/static/assets/cloud/visualizing-data/visualization-widgets/images/date-picker/general-settings.png)
 
-**Name**
+#### Name
 
-This allows you to set title for this Date Picker widget.
+This allows you to set the `title` for this date picker widget.
 
-**Basic Settings**
+#### Subtitle
+
+This allows you to set the `subtitle` for this date picker widget.
+
+#### Description
+
+This allows you to set the brief explanation about this date picker widget.
+
+#### Basic Settings
 
 ![basic settings of date picker](/static/assets/cloud/visualizing-data/visualization-widgets/images/date-picker/basic-settings.png)
 
-**Range**
+#### Range
 
 This allows you to toggle the selection type of Range.
 
@@ -121,60 +135,104 @@ This allows you to toggle the selection type of Range.
 
 ![range date selection option](/static/assets/cloud/visualizing-data/visualization-widgets/images/date-picker/range-selection.png)
 
-**Highlight Available Dates**
+#### Highlight Available Dates
 
-This allows you to enable the highlighting of available dates in date picker.
+This allows you to enable the highlighting of available dates in the date picker.
 
-![showcasing date picker highlighted date option](/static/assets/cloud/visualizing-data/visualization-widgets/images/date-picker/datepicker_high.png)
+![showcasing date picker highlighted date option](/static/assets/cloud/visualizing-data/visualization-widgets/images/date-picker/datepicker-high.png)
 
-**Limit Dates**
+#### Limit Dates
 
-This allows you to display only the limited dates (dates in the datasource) in date picker, by default option will be enabled. If option is enabled you can select the dates available in the data source.
+This allows you to display only the limited dates (dates in the data source) in date picker, by default option will be enabled. If the option is enabled you can select the dates available in the data source.
 
-![date range limit selection](/static/assets/cloud/visualizing-data/visualization-widgets/images/date-picker/datepicker_limit.png)
+![date range limit selection](/static/assets/cloud/visualizing-data/visualization-widgets/images/date-picker/datepicker-limit.png)
 
 If you disable the Limit Dates option, there is no limit for the date range.
 
-![disabling date range limit](/static/assets/cloud/visualizing-data/visualization-widgets/images/date-picker/datepicker_limitless.png)
+![disabling date range limit](/static/assets/cloud/visualizing-data/visualization-widgets/images/date-picker/datepicker-limitless.png)
 
-**Filter**
+#### Fixed Calendar Selection
+
+If you enable the `Range` option, the `Fixed Calendar Selection` will be shown.
+
+This allows you to select a date(start or end) without discarding your previous selection.
+
+And you can only select a start date from the left calendar and the end date from the right calendar.
+
+#### Show Latest Date 
+
+The **show latest date** property shows the latest date in the datasource when you open the datepicker popup.
+
+#### Filter
 
 ![filter configuration for date picker](/static/assets/cloud/visualizing-data/visualization-widgets/images/date-picker/filter.png)
 
-**Act as Master Widget**
+#### Act as Master Widget
 
 This allows you to define this date picker widget as a master widget such that its filter action can be made to listen by other widgets in the dashboard.
 
-**Ignore Filter Actions**
+#### Ignore Filter Actions
 
 This allows you to define this date picker widget to ignore responding to the filter actions applied on other widgets in dashboard.
 
-**Container Settings**
+#### Enable Hierarchical Filtering
 
-![container settings for date picker](/static/assets/cloud/visualizing-data/visualization-widgets/images/date-picker/container-settings.png)
+Using this option, you can enable or disable the hierarchical top N filtering. While applying the Top N filter with multiple dimension columns, the data returned can be customized based on whether the filtering needs to be done as flat or based on the hierarchy of dimension columns added.
 
-**Title Alignment**
+When the `Enable Hierarchical Filtering` is enabled, the Top N will be applied for each individual column separately based on the number set for each column.
 
-This allows you to handle the alignment of widget title to either left, center or right.
+#### Container Appearance
 
-**Title Color**
+![Container Appearance](/static/assets/cloud/visualizing-data/visualization-widgets/images/date-picker/container-appearance.png)
 
-This allows you to apply text color to the widget title.
+#### Title Alignment
 
-**Show Border**
+This allows you to handle the alignment of widget title to either `left, center, or right.`
 
-This allows you to toggle the visibility of border surrounding the widget.
+#### Title Color
 
-**Corner Radius**
+This allows you to apply the text `color` to the widget title.
 
-This allows you to apply the specified radius to the widget corners. Value can be between 0 and 10.
+#### Title Auto Font Size
 
-**Enable Comments**
+On enabling Auto Font Size, the font size of the title will be adjusted automatically if the resolution of the screen varies.
 
-This allows you to enable/disable comment for dashboard widget. For more details refer [here](/cloud-bi/visualizing-data/working-with-widgets/commenting-widget/)
+**Font Size**
 
+This allows you to apply the specified size of the font to the widget title if the **Title Auto Font Size** is disabled. Value can be between 10 and 44.
 
+#### Subtitle Auto Font Size
 
+On enabling Auto Font Size , the font size of the subtitle will be adjusted automatically if the resolution of the screen varies.
 
+**Font Size**
 
+This allows you to apply the specified size of the font to the widget title if the **Subtitle Auto Font Size** is disabled. Value can be between 10 and 32.
 
+#### Show Border
+
+This allows you to toggle the visibility of `border` surrounding the widget.
+
+#### Corner Radius
+
+This allows you to apply the specified `radius` to the widget corners if the **Show Border** is enabled. Value can be between 0 and 10.
+
+#### Background Color
+
+This allows you to set the **background color** to the date picker widget.
+
+#### Transparency
+
+This property allows you to specify the **transparency** for the `background color.`
+
+#### Container actions
+
+![Container Actions](/static/assets/cloud/visualizing-data/visualization-widgets/images/date-picker/container-actions.png)
+
+#### Show Header
+
+This allows you to enable or disable the `widget title` of the date picker widget. 
+
+#### Enable Comments
+
+This allows you to enable or disable `comment` for the dashboard widget. For more details, refer to this [link](/cloud-bi/visualizing-data/working-with-widgets/commenting-widget/).

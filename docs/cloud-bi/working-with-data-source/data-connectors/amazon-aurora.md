@@ -34,6 +34,8 @@ After clicking a data source, the **NEW DATA SOURCE** configuration panel opens.
 5. Enter a valid Amazon Aurora password in the **Password** text box.
 6. Enter a valid Amazon Aurora Database in the Database text box or select in the combo box.
 
+    ![DataSourcesView](/static/assets/cloud/working-with-datasource/data-connectors/images/amazon-aurora/DataSourcesView.png)
+
 ### Amazon Aurora supported database  engine in Bold bi
    * MySQL
    * PostgreSQL

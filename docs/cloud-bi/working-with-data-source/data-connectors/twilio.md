@@ -38,6 +38,8 @@ Once you click the data source, the NEW DATA SOURCE configuration panel opens.
 6. Select **JSON** data type in **Data Format** combo box.
 7. Choose **Basic http Authentication** under **Authentication Type** and input a valid **Username** and **Password**. Find the details for providing *Username* and *Password* from [here](/cloud-bi/working-with-data-source/data-connectors/twilio/#how-do-i-get-credentials-for-connecting-twilio-data-source).
 
+    ![DataSourcesView](/static/assets/cloud/working-with-datasource/data-connectors/images/Twilio/DataSourcesView.png)
+
 You can also edit the connection information set here using the [Edit Connection](/cloud-bi/working-with-data-source/editing-a-data-connection/) option.
 
 #### How do I get Credentials for connecting Twilio Data source?

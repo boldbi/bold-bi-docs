@@ -35,6 +35,11 @@ After clicking a data source, the **NEW DATA SOURCE** configuration panel opens.
 5. Enter a valid Amazon Aurora password in the **Password** text box.
 6. Enter a valid Amazon Aurora Database in the Database text box or select in the combo box.
 
+    ![DataSourcesView](/static/assets/embedded/working-with-datasource/data-connectors/images/amazon-aurora/DataSourcesView.png)
+
+> **NOTE:**  To connect data source with **SSH**, enable the SSH check box in the **NEW DATA SOURCE** configuration panel and enter the required credentials.
+![Enable SSH](/static/assets/embedded/working-with-datasource/images/enable-ssh.png#max-width=60%)
+ 
 ### Amazon Aurora supported database  engine in Bold bi
    * MySQL
    * PostgreSQL

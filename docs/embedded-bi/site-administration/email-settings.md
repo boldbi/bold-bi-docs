@@ -10,7 +10,7 @@ documentation: ug
 
 This section explains on how to configure the [SMTP](https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol) details in the Bold BI Server to send emails. 
 
-SMTP Email Settings are required to perform the following operations
+SMTP Email Settings are required to perform the following operations.
 
 **Account Activation** --- Sends user account activation email
    

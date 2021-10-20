@@ -12,129 +12,131 @@ documentation: ug
 
 Area Chart allows you to compare values for a set of unordered items across categories through filled curves ordered vertically.
 
-![Area Chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/area-chart.PNG)
+![Area Chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/area-chart.png)
 
 ## How to configure the table data to area chart?
 
 Area Chart need a minimum of 1 value element and 1 column element to showcase. The measure or expression field that you would like to analyze can be dropped into Y Values block. The dimension that you would like to categorize the measure, can be dropped onto Columns block. If you would like to categorize based on a series, then the respective dimension can be dropped onto Rows block in addition. 
 
-Following chart illustrates about how to configure data to area chart
+The following steps explain about how to configure data to area chart:
 
-Drag and drop the area chart widget into canvas and resize into your required size.
+1.  Drag and drop the area chart widget into the canvas and resize it into your required size.
 
-![Configure the table data](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/configure-widget.PNG)
+![Configure the table data](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/configure-widget.png)
 
-Click `Data Source` button in configuration panel.
+2.  Click the `Data Source` button in the configuration panel.
 
 ![Data Source](/static/assets/embedded/visualizing-data/visualization-widgets/images/databutton.png)
 
-Click `CREATE NEW` button to launch a new connection from connection type panel.
+3.  Click the `CREATE NEW` button to launch a new connection from the connection type panel.
 
 ![CREATE NEW](/static/assets/embedded/visualizing-data/visualization-widgets/images/datasourcebutton.png)
 
-In the connection type panel, click any one (Here `Microsoft SQL` Connection type is selected for demonstration) of the listed connection type button shown.
+4.  In the connection type panel, click any one (Here, the `Microsoft SQL` Connection type is selected for demonstration) of the listed connection type button shown.
 
 ![Datasource list](/static/assets/embedded/visualizing-data/visualization-widgets/images/datasourcelist.png)
 
-In the `NEW DATA SOURCE` configuration panel, fill the connection type and related details. Click `Connect` button
+5.  In the `NEW DATA SOURCE` configuration panel, fill the connection type and related details. Click the `Connect` button.
 
-![Connect button](/static/assets/embedded/visualizing-data/visualization-widgets/images/Connectbutton.png)
+![Connect button](/static/assets/embedded/visualizing-data/visualization-widgets/images/connectbutton.png)
 
-Drag your preferred table or view from the left pane from data design view, click `Save` button.
+6.  Drag your preferred table or view from the left pane from the data design view, click the `Save` button.
 
 ![Save](/static/assets/embedded/visualizing-data/visualization-widgets/images/virtualtable.png)
 
-Click `Properties` button in configuration panel, property pane opens. Now, Switch to `ASSIGN DATA` tab.
+7.  Click the `Properties` button in the configuration panel, property pane opens.
 
 ![Properties](/static/assets/embedded/visualizing-data/visualization-widgets/images/designerpropertiesbutton.png)
 
-![ASSIGN DATA](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/areaassigndata.PNG)
+8.  Now, switch to the `ASSIGN DATA` tab.
 
-The data tab will be opened with available measures and dimensions from the connected data source
+![ASSIGN DATA](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/areaassigndata.png)
+
+9.  The data tab will be opened with the available measures and dimensions from the connected data source.
 
 ![Data tab](/static/assets/embedded/visualizing-data/visualization-widgets/images/assign-data-section.png)
 
-You can add the required data from `Measures` and `Dimensions` into required field.
+10.  You can add the required data from `Measures` and `Dimensions` into required field.
 
-**Adding Y Values**
+#### Adding Value(s)
 
 You can add more than one `Measures` into `Y Values` field by drag and drop the required measure.
 
-![Drag and drop the required measure](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/add-measure.PNG)
+![Drag and drop the required measure](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/add-measure.png)
 
-Now the area chart will be rendered like this
+Click the `Settings` option to change required summary type from the available summary types shown in `Settings.`
 
-![Configured Area chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/configured-widget.PNG)
+![Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/settings.png)
 
-Click the `Settings` option to change required summary type from the available summary types shown in `Settings`.
+You can filter the data to be displayed in chart by using filter. For more details, refer to the [filter](/embedded-bi/visualizing-data/working-with-widgets/configuring-widget-filters/).
 
-![Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/settings-menu.PNG)
+![Configuring widget filters](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/filter-option.png)
 
-You can `Sort` the data using `Sort` option shown under `Settings` menu list. To sort the measure data, refer [Sort](/embedded-bi/visualizing-data/working-with-widgets/advanced-sorting/)
+You can format the data to be displayed in the chart by using format option. For more details, refer to the [measure format](/embedded-bi/visualizing-data/working-with-widgets/formatting-measure-type-column/)
 
-![Sort option](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/sort-option.PNG)
-
-You can filter the data to be displayed in chart by using filter. For more details, refer [filter](/embedded-bi/visualizing-data/working-with-widgets/configuring-widget-filters/).
-
-![Configuring widget filters](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/configuring-filters.PNG)
-
-You can format the data to be displayed in the chart by using format option. For more details, refer [measure format](/embedded-bi/visualizing-data/working-with-widgets/formatting-measure-type-column/)
-
-![Formatting measure type](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/formatting.PNG)
+![Formatting measure type](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/format-option.png)
 
 To remove the added value fields click highlighted button.
 
-![click highlighted button](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/remove-fields.PNG)
+![click highlighted button](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/removebutton.png)
 
 You can add more than one column from `Dimensions` field into `Y Values` field.
 
-**Adding Columns**
+#### Adding Columns
 
 You can add more than one value into `Columns` field. 
 
-![Add more than one value](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/add-more-fields.PNG)
+![Add more than one value](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/adding-columns.png)
 
 Area chart will be rendered like this
 
-![Area chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/area-chart.PNG)
+![Area chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/area-chart.png)
 
-Add more than one value to `Columns` field, an alert message will be shown. Click `Yes` to enable the option.
+You can change the `Settings.`
 
-> **NOTE:**  If you click `No`, single value will be added to the `Columns` field.
+![Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/column-settings.png)
 
-![Drillalert](/static/assets/embedded/visualizing-data/visualization-widgets/images/drillalert.PNG)
+#### Renaming fields
 
-The drilled view of the chart region selected.
+The configured field names can be edited by using the `Rename` option provided in the settings menu.
 
-![Drilled view of the chart region](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/areadrill.PNG)
+#### Sorting data
 
-You can change the `Settings`.
+You can `Sort` the dimension data using `Sort` option under `Settings` menu list. To apply sorting for the data, refer to the [Sort](/embedded-bi/visualizing-data/working-with-widgets/advanced-sorting/#dimension-column).
 
-![Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/column-settings.PNG)
+![Sort the dimension data](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/sort-option.png)
 
-You can `Sort` the dimension data using `Sort` option under `Settings` menu list. To apply sorting for the data, refer [Sort](/embedded-bi/visualizing-data/working-with-widgets/advanced-sorting/#dimension-column).
+#### Filtering data
 
-![Sort the dimension data](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/sortdimension.PNG)
+You can apply filters by selecting filters option in settings. For more details, refer to the [filter](/embedded-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column).	
 
-You can apply filters by selecting filters option in settings. For more details, refer [filter](/embedded-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column).	
+![Filter for dimension column](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/filter-option-column.png)
 
-![Filter for dimension column](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/dimension-filter.PNG)
-
-To show all records click on `Show All Records`.
+To show all records click on `Show All Records.`
 
 Similarly you can add the `Measures` and `Expression Columns` into column field.
+Add more than one value to the `Columns` field, an alert message will be shown. Click `Yes` to enable the option.
 
-**Adding Rows**
+> **NOTE:**  If you click `No,` a single value will be added to the `Columns` field.
+
+![Drillalert](/static/assets/embedded/visualizing-data/visualization-widgets/images/drillalert.png)
+
+The drilled view of the chart region is selected.
+
+![Drilled view of the chart region](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/areadrill.png)
+
+
+#### Adding Rows
 
 You can drag and drop the `Dimension` into the `Rows` field.
 
-![Adding Rows](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/add_row.PNG)
+![Adding Rows](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/chart-row.png)
 
 You can apply [filter](/embedded-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column) and [sort](/embedded-bi/visualizing-data/working-with-widgets/advanced-sorting/#dimension-column) option for the rows field, if required.
 
 This will render area chart in series.
 
-![Render area chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/areachart_series.PNG)
+![Render area chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/areachart-series.png)
 
 ## How to format area chart?
 
@@ -148,43 +150,57 @@ Configure the data into area chart.
 
 Focus on the area chart and click on widget settings.
 
-![Widget settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/areawidgetsettings.PNG)
+![Widget settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/areawidgetsettings.png)
 
 The property window will be opened.
 
-![Property window](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/areaproperties.PNG)
+![Property window](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/areaproperties.png)
 
 You can see the list of properties available for the widget with default value.
 
-**General Settings**
+#### General Settings
 
-![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/general-settings.PNG)
+![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/general-settings.png)
 
-**Name**
+#### Name
 
-This allows you to change the title for this area chart widget.
+This allows you to change the `title` for this area chart widget.
 
-**Basic Settings**
+#### Subtitle
 
-![Basic Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/basic-settings.PNG)
+Allows you to provide the `subtitle` for this area chart widget.
 
-**Chart Type**
+#### Description
 
-This allows you to switch the widget view from current chart type to another chart type.
+Allows you to provide the `description` about this area chart widget.
 
-**Enable Animation**
+#### Basic Settings
 
-This allows you to enable the rendering of series in animated mode.
+![Basic Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/basic-settings.png)
 
-**Show Legend**
+#### Chart Type and axis
+
+Click the `Change` button to open the `Chart Type and Axis Settings` dialog. 
+
+![Chart Type](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/name.png)
+
+**Chart Type**: This allows you to switch the widget view from the current chart type to another chart type.
+
+**Secondary Axis**: By default, the configured field is plotted as the primary axis if you enable this option, the selected field will be plotted as the secondary axis.
+
+#### Enable Animation
+
+It animates the measure values when you toggle the `Enable Animation.`
+
+#### Show Legend
 
 A Legend is a text used to describe the data plotted. This allows you to toggle the visibility of legend in chart and also change the legend text position (selecting through combo box).  
 
-![Show Legend](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/show-legend.PNG)
+![Show Legend](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/show-legend.png)
 
 Enabling this option of **Custom Legend Text** will allow you to define a custom text (through the text area) to display for each legend series (selecting through the combo box) in chart.
 
-**Legend Label Color**
+#### Legend Label Color
 
 This allows you to change the chart legend title and label colors.
 
@@ -192,37 +208,61 @@ This allows you to change the chart legend title and label colors.
 
 ![Chart Legend Color](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/legend-label-color.png)
 
-**Custom Legend Settings**
+#### Customize
 
-You can customize the legend text through the Custom Legend Settings dialog. This dialog will show the legend text list as labels at left and corresponding text area at right to add the formatted text to display instead. When a column is added into Row section, this dialog will show two options `Individual` and `Group` at top in addition, to toggle between.
+You can customize the legend text through the `Custom Legend Settings` dialog. This dialog will show the legend text list as labels at left and corresponding text area at right to add the formatted text to display instead.
+
+![Legend customization](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/legendcustomize.png)
+
+![Legend customization Change](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/legendcustomize-change.png)
+
+**Custom Legend Settings when giving Row Section**
+
+You can customize the legend text using the Custom Legend Settings dialog. This dialog will show the legend text list as labels at left and corresponding text area at right to add the formatted text to display instead. When a column is added into Row section, this dialog will show two options `Individual` and `Group` at top in addition, to toggle between.
 
 ***Individual***
 
-Selecting  Individual option will allow you to define a custom text (through the text area) to display for each legend series in chart with the default format:
-
-`{{ : Row }} ({{ : Y Value }})`
-
-Where, Row represents the value of dimension column added to `Rows section` and Value represents the value of the measure column added to `Y Values section`. 
-
-![Custom legend setting window](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/areachart_customlegendsettingwindow.PNG)
+![Legend customization For Row](/static/assets/embedded/visualizing-data/visualization-widgets/images/legendcustomization.png)
 
 ***Group***
 
-Enabling `Group` option will allow you to set the display format and define a custom text (through the text area) to display for each legend series based on the specified format. 
+`{{ : Row }} ({{ : Y Value }})`
 
-![Custom legend setting group](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/customlegendsettinggroup.PNG)
+![Legend customization For Row](/static/assets/embedded/visualizing-data/visualization-widgets/images/legendcustomizationgroup.png)
 
-For example, If Display Format is {{ : Row }} ({{ : Value }}), then Legend series will display like Austria (Sum of Freight)
+#### Legend Position
 
-![Custom legend setting](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/areachart_customlegendsetting.PNG)
+A Legend is a text used to describe the data plotted. This option allows you to place the legend at the position of **Left, Right, Top, and Bottom**.
 
-**Show Value Labels**
+#### Legend Shape
+
+This allows you change the **shape** of the legend.
+
+***Circle***
+
+This option allows you to change the shape of the legend in a `Circle.`
+
+![Show Legend shape](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/legend-shape.png)
+
+***Series Type***
+
+This option allows you to change the shape of the legend in a `Series.`
+
+![Show Legend shape Series](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/legendshape-series.png)
+
+#### Legend Title
+
+This allows you to add the legend title for the chart. It will reflect with the `Show Legend.`
+
+![Show Legend Title](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/legendtitle.png)
+
+#### Show Value Labels
 
 This allows you to toggle the visibility of value labels.
 
-![Show Value Labels](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/show-labels.PNG)
+![Show Value Labels](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/show-labels.png)
 
-**Value Label Color**
+#### Value Label Color
 
 This allows you to customize value label's color.
 
@@ -230,225 +270,321 @@ This allows you to customize value label's color.
 
 ![Value label Color](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/data-label-color.png)
 
-**Value Label Rotation**
+#### Value Label Rotation
  
 This allows you to define the rotation angle for the value labels to display.
 
-![Value Label Rotation](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/areachart_showlabelrotation.PNG)
+![Value Label Rotation](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/areachart-showlabelrotation.png)
 
-**Value Label Suffix**
+#### Value Label Suffix
 
 Allows you to enable the Suffix value text to the value labels. 
 
-**Suffix Value**
+#### Suffix Value
 
 Allows you to set\edit suffix value to the value labels. 
 
-![Suffix Value](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/suffix-value.PNG)
+![Suffix Value](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/suffix-value.png)
 
-**Show Marker**
+#### Show Marker
 
 This allows you to toggle the visibility of marker from label to adorn each data point in chart series.
 
-![Visibility of marker](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/show-marker.PNG)
+![Visibility of marker](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/show-marker.png)
 
-**Filter**
+### Show Items With No Data
 
-![Filter](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/filtering.PNG)
+This allows you to show the data which column does `not` have value.
 
-**Act as Master Widget**
+![Empty Point Mode Gap](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/areachart-gap.png)
 
-This allows you to define this area chart widget as a master widget such that its filter action can be made to listen by other widgets in the dashboard.
+#### Link
 
-**Ignore Filter Actions**
+![Link](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/linking.png)
 
-This allows you to define this area chart widget to ignore responding to the filter actions applied on other widgets in dashboard.
+You can enable linking and configure to navigate to a general URL with or without parameters. For more details, refer to the [Linking](/embedded-bi/visualizing-data/working-with-widgets/linking-urls-and-dashboards/).
 
-**Hierarchical Filter**
-
-Through this option, you can enable/disable hierarchical top `N` filtering. While applying Top N filter with multiple dimension columns, the data returned can be customized based on whether the filtering need to be done as flat or based on the hierarchy of dimension columns added. 
-
-When `Hierarchical Filter` option is enabled, the Top N will be applied for each individual column separately based on the number set for each column.
-
-**Link**
-
-![Link](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/linking.PNG)
-
-You can enable linking and configure to navigate to a general URL with or without parameters. For more details, refer [Linking](/embedded-bi/visualizing-data/working-with-widgets/linking-urls-and-dashboards/). 
-
-**Container Appearance**
-
-![Container Appearance](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/container-appearance.PNG)
-
-**Title Alignment**
-
-This allows you to handle the alignment of widget title to either left, center or right.
-
-**Title Color**
-
-This allows you to apply text color to the widget title.
-
-**Show Border**
-
-This allows you to toggle the visibility of border surrounding the widget.
-
-**Corner Radius**
-
-This allows you to apply the specified radius to the widget corners, if the **Show Border** is enabled. Value can be between 0 and 10.
-
-**Maximized View**
-
-This allows you to enable/disable the maximized mode of this area chart widget. The visibility of the maximize icon in widget header will be defined based on this setting in viewer.
-
-**CSV Export**
-
-This allows you to enable/disable the CSV export option for this area chart widget. Enabling this allows you to export the summarized data of the widget view to CSV format in viewer.
-
-**Excel Export**
-
-This allows you to enable/disable the Excel export option for this area chart widget. Enabling this allows you to export the summarized data of the widget view to (.xlsx or .xls) format in viewer.
-
-**Image Export**
-
-This allows you to enable/disable the image export option for this area chart widget. Enabling this allows you to export the view of the widget to image format (.jpg), (.PNG), or (.bmp) in viewer.
-
-**Enable Comments**
-
-This allows you to enable/disable comment for dashboard widget. For more details refer [here](/embedded-bi/visualizing-data/working-with-widgets/commenting-widget/)
-
-**Axis**
+#### Axis
 
 ![Axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/axis-settings.png)
 
-This section allows you to customize the axis settings in chart. 
+This section allows you to customize the axis settings in a chart.
 
-**Title color**
+#### Title color
 
 This allows you to customize the axis title color.
 
-**Label color**
+#### Label color
 
 This allows you to customize the axis label color.
 
-**Show Category Axis**
+#### Show Category Axis
 
-This allows to enable the visibility of `Category Axis`.
+This allows you to enable the visibility of `Category Axis.`
 
-![Show Category Axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/category-axis.PNG)
+![Show Category Axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/category-axis.png)
 
-**Show Category Axis Title**
+#### Show Category Axis Title
 
 This allows you to enable the visibility of `Category Axis` title.
 
-![Show Category Axis Title](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/areachart_categoryaxistitle.PNG)
+![Show Category Axis Title](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/areachart-categoryaxistitle.png)
 
-**Category Axis Title**
+#### Category Axis Title
 
-This allows you to edit the `Category Axis` title for chart. It will reflect in x-axis name of chart.
+This allows you to edit the `Category Axis` title for the chart. It will reflect in the x-axis name of the chart.
 
-![Category Axis Title](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/areachart_editcategoryaxistitle.PNG)
+![Category Axis Title](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/areachart-editcategoryaxistitle.png)
 
-**Label overflow mode**
+#### Label overflow mode
 
-This allows you to handle the display mode of the overlapping labels in the `Category Axis`. 
+This allows you to handle the display mode of the overlapping labels in the `Category Axis.`
 
 ***Trim***
 
 This option trims the end of overlapping label in the axis.
 
-![Label overflow mode trim](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/category-axis.PNG)
+![Label overflow mode trim](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/category-axis.png)
 
 ***Hide***
 
 This option hides the overlapping label in the axis. 
 
-![Label overflow mode hide](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/hide-overflow.PNG)
+![Label overflow mode hide](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/hide-overflow.png)
 
 #### Trim Axis Labels
 
-This option allows you to trim axis labels, based on the 'Maximum Label Width' property value.
+This option allows you to `trim` the axis labels based on the `Maximum Label Width` property value.
 
 ![Trimmed label](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/trimming-label.png)
 
-#### Maximum Label Width
+#### Label Maximum Width
 
-This option allows you to set maximum width for the axis labels, and also it can be made customizable when the trim axis label option is enabled.
+This option allows you to set a `maximum width` for the axis labels, and also it can be made customizable when the `trim axis label` option is enabled.
 
-![Maximum label width](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/Maximum-label-width.png)
+![Label maximum width](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/maximum-label-width.png)
 
-**Category Axis Label Rotation**
+#### Category Axis Label Rotation
 
 This allows you to define the rotation angle for the category axis labels to display.
 
-![Category Axis Label Rotation](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/label-rotation.PNG)
+![Category Axis Label Rotation](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/label-rotation.png)
 
-**Show Primary Value Axis**
+#### Show Primary Value Axis
 
 This allows you to enable the `Primary Value Axis` for chart. 
 
-![Show Primary Value Axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/primary-axis.PNG)
+![Show Primary Value Axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/primary-axis.png)
 
-**Show Primary Value Axis Title**
+#### Show Primary Value Axis Title
 
-This allows you to enable the visibility of `Primary Value Axis` title of chart.
+This allows you to enable the visibility of the `Primary Value Axis` title of the chart.
 
-![Show Primary Value Axis Title](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/areachart_primaryvalueaxistitle.PNG)
+![Show Primary Value Axis Title](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/areachart-primaryvalueaxistitle.png)
 
-**Primary Value Axis Title**
+#### Primary Value Axis Title
 
 This allows you to edit the `Primary Value Axis` title. It will reflect in y-axis name of chart. 
 
-![Primary Value Axis Title](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/axis-title.PNG)
+![Primary Value Axis Title](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/axis-title.png)
 
-#### Axis Format
+#### Axis Range Settings
 
-This option allows you to format primary and secondary axis values from the formatting details provided using 'Format' button. For more details, refer to this [measure format](/embedded-bi/visualizing-data/working-with-widgets/formatting-measure-type-column/).
+This allows you to manually set the Minimum, Maximum, and Interval values of primary value axis through the Axis Range Settings dialog.
 
-![Formatting option](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/formatting-button.png)
-
-**Axis Range Settings**
-
-This allows you to manually set the Minimum, Maximum and Interval values of primary value axis through the Axis Range Settings dialog.
-
-![Axis Range Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/areachart_axisrangesettings.PNG)
+![Axis Range Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/areachart-axisrangesettings.png)
 
 It will reflect in the primary value axis of the chart.
 
-![Axis Range Settings Output](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/areachart_axisrangeoutput.PNG)
+![Axis Range Settings Output](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/areachart-axisrangeoutput.png)
 
-**Grid Line**
+#### Grid Line
 
-![Grid Line](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/chartgridlines.PNG)
+![Grid Line](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/chartgridlines.png)
 
-**Primary Value Axis**
+#### Primary Value Axis
 
 This allows you to enable the `Primary Value Axis` gridlines for the area chart.
 
-![Primary Value Axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/primary-value-axis.PNG)
+![Primary Value Axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/primary-value-axis.png)
 
-**Category Axis**
+#### Category Axis
 
 This allows you to enable the `Category Axis` gridlines for the area chart.
 
-![Category Axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/enable-category-axis.PNG)
+![Category Axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/enable-category-axis.png)
 
-**Series Palette**
+#### Secondary Value Axis
 
-This allows you to customize the chart series color through Series Palette section. 
+This allows you to enable the `Secondary Value Axis` gridlines for the area chart.
 
-***Use Default Palette***
+![Category Axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/secondaryaxis.png)
 
-This allows you to toggle the series color between default palette and custom palette. By default, the property is toggled on and default palette will be applied to series.
+### Trendline
 
-![Use Default Palette](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/seriescolorpalette.PNG)
+![Trendline](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/trendlinesettings.png)
 
-By toggle off the `Use Default Palette`, you can customize the series colors. This section shows, list of series’ labels on the left-hand side and corresponding series color on the right-hand side. By clicking on the colored square, color picker will be opened. You can choose a color. And, you can also change the series color by changing the corresponding Hexadecimal value in the right-hand side. 
+You can add more than one trendline to Cartesian charts except for bar type series(Line, Column, Area, and Spline) and stacked type of charts. You can `add, edit, and delete` trendlines.
 
-![Series color palette window](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/seriescolorpalettewindow.PNG)
+### Add Trendline and Edit Trendline
 
-![Series color palette](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/areaseriescolor.PNG)
+To `add` the trendline, click the `highlighted button.`
+
+![Trendline Add](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/trendlineadd.png)
+
+Now, the dialog will open as follows.
+
+![Trendline Dialog](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/trendlinedialog.png)
+
+Click the `OK` button to add trendline in a spline area chart. Now, the chart renders as follows.
+
+![Trendline chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/trendline.png)
+
+To `edit` the trendline select the one to be edited and click the `highlighted button.`
+
+![Trendline Edit](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/trendlineedit.png)
+
+Again, the trendline dialog window opens now.
+
+***Legend Text***
+
+You can edit the trendline legend by the `Legend Text` text box. By default, the `Legend Text` renders are based on the Line type and Series name.
+
+***Series***
+
+You can change the series to which series have to show the trendline by `Series` dropdown option. 
+
+***Line Type***
+
+You can select line type by the `Line Type` dropdown option(Linear, Exponential, Logarithmic, Power, and Polynomial).
+
+***Line Color***
+
+You can change the color of the trendline by the `Line Color` color picker.
+
+***Line Style***
+
+You can change the style of the trendline by the `Line Style` drop down option(Solid, Dot, Dash, DotDash, LongDash, and LongDashDotDot).
+
+### Delete Trendline
+
+To `delete` the trendline, select the one to be deleted and click the `highlighted button.`
+
+![Trendline Delete](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/trendlinedelete.png)
 
 
+#### Formatting
 
+This allows you to customize the color for the widget.
 
+![Formatting](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/formatting.png)
 
+![Formatting Otput](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/formatting-output.png)
+
+#### Filter
+
+![Filter](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/filter.png)
+
+#### Act as Master Widget
+
+This allows you to define this area chart widget as a master widget such that its filter action can be made to listen by other widgets in the dashboard.
+
+#### Ignore Filter Actions
+
+This allows you to define this area chart widget to ignore responding to the filter actions applied on other widgets in dashboard.
+
+#### Hierarchical Filter
+
+Through this option, you can enable/disable the hierarchical top `N` filtering. While applying the Top N filter with multiple dimension columns, the data returned can be customized based on whether the filtering need to be done as flat or based on the hierarchy of dimension columns added. 
+
+When the `Hierarchical Filter` option is enabled, the Top N will be applied for each individual column separately based on the number set for each column.
+
+### Container Appearance
+
+![Container Appearance](/static/assets/embedded/visualizing-data/visualization-widgets/images/container-appearance.png)
+
+### Title Alignment
+
+This allows you to handle the alignment of widget title to either **left, center, or right**.
+
+### Title Color
+
+This allows you to apply the text `color` to the widget title.
+
+### Title Auto Font Size
+
+On enabling Auto Font Size, the font size of the title will be adjusted automatically if the resolution of the screen varies.
+
+**Font Size**
+
+This allows you to apply the specified size of the font to the widget title if the **Title Auto Font Size** is disabled. Value can be between 10 and 44.
+
+### Subtitle Auto Font Size
+
+On enabling Auto Font Size, the font size of the subtitle will be adjusted automatically if the resolution of the screen varies.
+
+**Font Size**
+
+This allows you to apply the specified size of the font to the widget title if the **Subtitle Auto Font Size** is disabled. Value can be between 10 and 32.
+
+### Show Border
+
+This allows you to toggle the visibility of `border` surrounding the widget.
+
+### Corner Radius
+
+This allows you to apply the specified `radius` to the widget corners if the **Show Border** is enabled. Value can be between 0 and 10.
+
+### Show Background Image
+
+This allows you to set the **background image** for the spline area chart widget.
+
+### Background Color
+
+This allows you to set the **background color** to the spline area chart widget.
+
+### Transparency
+
+This property allows you to specifies the **transparency** for the `background color.`
+
+### Container actions
+
+![Container Actions](/static/assets/embedded/visualizing-data/visualization-widgets/images/container-actions.png)
+
+#### Show Header
+
+This allows you to enable or disable the `widget title` of the area chart. 
+
+#### Allow Maximize View
+
+This allows you to enable or disable the `maximized mode` of the area chart widget. The visibility of the maximize icon in the widget header will be defined based on the setting in the viewer.
+
+#### Allow CSV Export
+
+This allows you to enable or disable the `CSV export` option for the area chart widget. Enabling this allows you to export the summarized data of the widget view to CSV format in the viewer.
+
+#### Allow Excel Export
+
+This allows you to enable or disable the `Excel export` option for the area chart widget. Enabling this allows you to export the summarized data of the widget view to `(.xlsx or .xls)` format in the viewer.
+
+#### Allow Image Export
+
+This allows you to enable or disable the `Image export` option for the area chart widget. Enabling this allows you to export the view of the widget to image format `(.jpg), (.png), or (.bmp)` in the viewer.
+
+#### Allow PDF Export
+
+This allows you to enable or disable the `PDF export` option for the area chart widget. Enabling this allows you to export the view of the widget to pdf format in the viewer.
+
+#### Enable Comments
+
+This allows you to enable or disable `comment` for the dashboard widget. For more details, refer to the [link](/embedded-bi/visualizing-data/working-with-widgets/commenting-widget/).
+
+#### Allow View Underlying Data
+
+This allows you to visualize the raw data associated with a widget at runtime. 
+
+To learn more about viewing the underlying widget data, refer to the [view data documentation](/embedded-bi/visualizing-data/working-with-widgets/view-data/). 
+
+#### Pin Widget 
+
+This allows you to pin the widget.

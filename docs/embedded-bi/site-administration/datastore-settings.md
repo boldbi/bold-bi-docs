@@ -32,11 +32,11 @@ We can connect to the existing SQL Server instance with the below options
 ![Datastore for existing database](/static/assets/embedded/site-administration/images/datastore-existing-db.png)  
      
 > **NOTE:**  The credentials that is given to connect to the SQL Server instance must have permissions to 
-   * Create Database
-   * Create Table
-   * Insert
-   * Update Table
-   * Alter Table
-   * Select
-   * Drop Table
-   * Drop Database 
+>  * Create Database
+>  * Create Table
+>  * Insert
+>  * Update Table
+>  * Alter Table
+>  * Select
+>  * Drop Table
+>  * Drop Database 

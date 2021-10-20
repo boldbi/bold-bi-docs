@@ -12,11 +12,11 @@ To publish a dashboard to other site(s), follow these steps:
 
 1. Click `Actions` in the dashboard grid context menu and select `Publish` to publish the corresponding dashboard.
 
-![Publish Menu](/static/assets/embedded/managing-resources/manage-dashboards/images/publish-menu.png)
+   ![Publish Menu](/static/assets/embedded/managing-resources/manage-dashboards/images/publish-menu.png)
 	
 2. Select `Internal Site` or `External Site` for publishing dashboard in publish dialog and proceed `Next`.
 
-![Select Site](/static/assets/embedded/managing-resources/manage-dashboards/images/select-site.png)
+   ![Select Site](/static/assets/embedded/managing-resources/manage-dashboards/images/select-site.png)
 
 ## Internal site
 
@@ -24,35 +24,43 @@ You can publish the dashboard to the sites created in the same Bold BI server.
 
 1. Choose the sites in the drop-down that you want to publish the dashboard.
 
-![Select Sites](/static/assets/embedded/managing-resources/manage-dashboards/images/select-sites.png)
+   ![Select Sites](/static/assets/embedded/managing-resources/manage-dashboards/images/select-sites.png)
 
 2. Specify the category name that you want, the dashboard to be published in other sites.
 
-![Publish Category](/static/assets/embedded/managing-resources/manage-dashboards/images/publish-category.png)
+   ![Publish Category](/static/assets/embedded/managing-resources/manage-dashboards/images/publish-category.png)
 
-3. Specify the description for the dashboard, if you need.
+3. Select the check box `Use source dashboard and data source name`, if you want to publish dashboard and data source with source dashboard and data source name in destination sites.
 
-![Publish Dashboard Description](/static/assets/embedded/managing-resources/manage-dashboards/images/publish-description.png)
+   ![Publish dashboard with same name](/static/assets/embedded/managing-resources/manage-dashboards/images/publish-dashboard-with-source-name.png)
 
-4. Select the check box `Lock dashboard editing in published site`, if you do not want the published dashboard to be edited in published sites.
+4. If necessary, provide a description for the dashboard.
 
-![Lockdown Dashboard](/static/assets/embedded/managing-resources/manage-dashboards/images/lockdown-dashboard.png)
+   ![Publish Dashboard Description](/static/assets/embedded/managing-resources/manage-dashboards/images/publish-description.png)
 
-5. Select the check box `Lock data source editing in published site`, if you do not want the published data source to be edited in published sites.
+5. Select the check box `Lock dashboard editing in published site`, if you do not want the published dashboard to be edited in published sites.
 
-![Lockdown Datasource](/static/assets/embedded/managing-resources/manage-dashboards/images/lockdown-datasource.png)
+   ![Lockdown Dashboard](/static/assets/embedded/managing-resources/manage-dashboards/images/lockdown-dashboard.png)
 
-6. You can choose the owner (who has permission to create dashboard, data source and category) of the dashboard in published site using the `Advanced` option. If you do not, it will publish the dashboard with random user (who has permission to create dashboard, data source and category).
+6. Select the check box `Lock data source editing in published site`, if you do not want the published data source to be edited in published sites.
 
-![Select Owner in Advanced](/static/assets/embedded/managing-resources/manage-dashboards/images/advanced-owner.png)
+   ![Lockdown Datasource](/static/assets/embedded/managing-resources/manage-dashboards/images/lockdown-datasource.png)
 
-7. You can individually configure the fields in the `Advanced` window.
+7. Select the check box `Make dashboard as public in published site`, if you want the published dashboard to be public in published sites.
 
-![Advanced Fields](/static/assets/embedded/managing-resources/manage-dashboards/images/advanced-field.png)
+   ![Make Public Dashboard](/static/assets/embedded/managing-resources/manage-dashboards/images/make-public-in-destination-site.png)
 
-8. On submitting the form, the publishing process will be started and you can check the status of the publishing in the **Published Resources** page.
+8. You can choose the owner (who has permission to create dashboard, data source and category) of the dashboard in published site using the `Advanced` option. If you do not, it will publish the dashboard with random user (who has permission to create dashboard, data source and category).
 
-![Submit Publish](/static/assets/embedded/managing-resources/manage-dashboards/images/submit-publish.png)
+   ![Select Owner in Advanced](/static/assets/embedded/managing-resources/manage-dashboards/images/advanced-owner.png)
+
+9. You can individually configure the fields in the `Advanced` window.
+
+   ![Advanced Fields](/static/assets/embedded/managing-resources/manage-dashboards/images/advanced-field.png)
+
+10. By submitting the form, the publishing process will be started and you can check the status of the publishing in the **Published Resources** page.
+
+    ![Submit Publish](/static/assets/embedded/managing-resources/manage-dashboards/images/submit-publish.png)
 
 ## External site
 
@@ -60,7 +68,7 @@ You can publish the dashboard to the sites created in other Bold BI servers.
 
 1. Click on the `+` button to **add external site**.
 
- ![Add External Site](/static/assets/embedded/managing-resources/manage-dashboards/images/add-external-site.png)
+   ![Add External Site](/static/assets/embedded/managing-resources/manage-dashboards/images/add-external-site.png)
  
 2. Fill the following details as shown in the below image.
 

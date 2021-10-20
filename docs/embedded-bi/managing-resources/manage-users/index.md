@@ -8,7 +8,7 @@ documentation: ug
 
 # Manage Users in the Bold BI
 
-This section explains on how to add, edit, activate, deactivate, delete users and also on how to manage the permissions and assign users to groups in the Bold BI Cloud.
+This section explains how to add, edit, activate, deactivate, delete users and also to manage the permissions and assign users to groups in the Bold BI.
 
 Users can only be added/edited/deleted by the users, belonging to the `System Administrator` group.
 
@@ -26,7 +26,7 @@ The `Add User` dialog will be shown as like in the image below.
 
 ![Add User](/static/assets/embedded/managing-resources/manage-users/images/add-user.png)
 
-Fill the form with email address, username, first name, and last name and click `Add`. 
+Fill the form with email address, username, first name, and last name(optional) and click `Add`.  
 
 > **NOTE:** An email address is mandatory only in [Email required](/embedded-bi/site-administration/account-settings/#email-required) mode.
 
@@ -60,7 +60,7 @@ It must contains,
 
 ### Import users from CSV
 
-To automate the process of adding large number of users to a Bold BI Cloud, you can download the CSV template file and add the users in it and then import the file.
+To automate the process of adding large number of users to a Bold BI, you can download the CSV template file and add the users in it and then import the file.
 
 You can navigate to the user management page by clicking the `User Management` dropdown under the `Admin` menu as follows.
 
@@ -70,13 +70,13 @@ You can navigate to the user management page by clicking the `User Management` d
 
 #### Add users from CSV file
 
-In Bold BI, click `Import from csv`.
+In `New User`, click `Import from CSV`.
 
 ![Import from CSV - Goto Import CSV users page](/static/assets/embedded/managing-resources/manage-users/images/goto-import-csv-users.png)
 
 ### CSV file Requirements
 
-The first row in the CSV template represents the column heading. Bold BI Cloud assumes that the data from the second line in the file represents the user.
+The first row in the CSV template represents the column heading. Bold BI assumes that the data from the second line in the file represents the user.
 
 We have the following columns are considered as mandatory in the downloaded CSV file.
 
@@ -103,7 +103,11 @@ Follow the below steps to add users using the CSV template
 
 	![Import from CSV - User detail in grid](/static/assets/embedded/managing-resources/manage-users/images/csv-import-grid.png)
 
-5. After uploaded the users in Bold BI the results are displayed as below.
+5. Click `Import Users` to import users from the CSV file.
+
+	![Import from CSV](/static/assets/embedded/managing-resources/manage-users/images/csv-import-users.png)
+
+6. After uploading the users in Bold BI the results will be displayed as below.
 
     ![Import from CSV - Success Message](/static/assets/embedded/managing-resources/manage-users/images/import-csv-users-confirmation.png)
 	
@@ -114,20 +118,23 @@ User profile details can be edited from the users edit page as shown in the belo
 
 Username, first name, last name, email, phone number and the login password for the user can be edited by the user belonging to the 'System Administrator' group.  
 		
-## Remove Access
-Users can be deleted from the Bold BI when the user no longer requires the access. Users can be deleted from the user management page or from the edit page.
+## Remove User
+Users can be removed from the particular site of Bold BI when the user is no longer required in the site. Users can be removed from the user management page or from the edit user page. Even though user removed from the site, the user will be available in the UMS.
 
 ### From user management page
+Click `Delete` icon to remove the user from the user management page.
 
 ![Delete user from user management page](/static/assets/embedded/managing-resources/manage-users/images/delete-user-1.png)
 
 ### From user edit page
+Click `Remove User` from the menu as shown in the image to remove the user from the user management page.
 
 ![Delete user from user edit page](/static/assets/embedded/managing-resources/manage-users/images/delete-user-2.png)
 
 ## Deactivate users
 Users can be deactivated at any time. Once deactivated, the user cannot log into the Bold BI.
-To deactivate a user, select inactive from the status dropdown in the user edit page.
+
+Click `Deactivate User` from the menu as shown in the image,
 
 ![Deactivate user account](/static/assets/embedded/managing-resources/manage-users/images/deactivate-user.png)
 
@@ -143,36 +150,36 @@ If the user has not received the activation email within 2 days or missed to act
 ## Change Password 
 The administrator can change the user's password from Tenant management site as follows below,
 
-Go to the UMS site by clicking on the profile as follows.
+1. Go to the UMS site by clicking profile as follows.
 
-![Manage Sites](/static/assets/embedded/managing-resources/manage-users/images/manage-sites-for-the-users.png)
+   ![Manage Sites](/static/assets/embedded/managing-resources/manage-users/images/manage-sites-for-the-users.png)
 
-Click the 'Users' option to manage the users.
+2. Click `Users` option to manage the users.
 
-![Goto users in sites](/static/assets/embedded/managing-resources/manage-users/images/goto-users-in-sites.png)
+   ![Goto users in sites](/static/assets/embedded/managing-resources/manage-users/images/goto-users-in-sites.png)
 
-![Manage Users List](/static/assets/embedded/managing-resources/manage-users/images/manage-users-list.png)
+   ![Manage Users List](/static/assets/embedded/managing-resources/manage-users/images/manage-users-list.png)
 
-Click the Name of the user to change the password. Click on the update button once the password entered.
+3. Click Name of the user to change the password. Click update button once the password entered.
 
-![Goto name of the user](/static/assets/embedded/managing-resources/manage-users/images/goto-name-of-the-user.png)
+   ![Goto name of the user](/static/assets/embedded/managing-resources/manage-users/images/goto-name-of-the-user.png)
 
-![Change Password](/static/assets/embedded/managing-resources/manage-users/images/change-the-password.png)
+   ![Change Password](/static/assets/embedded/managing-resources/manage-users/images/change-the-password.png)
 
 ## Manage permissions
 Check the [Manage Permissions](/embedded-bi/working-with-dashboards/share-dashboards/manage-permissions/) section to learn how to manage permissions to an user.
 	
 ## Assign users to group
-Users can be assigned to one or many groups from the user management page.
+* Users can be assigned to one or many groups from the user management page.
 
-![Assign group to selected users](/static/assets/embedded/managing-resources/manage-users/images/assign-group-to-users.png)
+  ![Assign group to selected users](/static/assets/embedded/managing-resources/manage-users/images/assign-group-to-users.png)
 
-Users can be assigned to an existing group.
+* Users can be assigned to an existing group.
 
-![Assign existing group to selected users](/static/assets/embedded/managing-resources/manage-users/images/assign-group-to-users-1.png)
+  ![Assign existing group to selected users](/static/assets/embedded/managing-resources/manage-users/images/assign-group-to-users-1.png)
 
-A new group can also be created at this time and the selected users can be assigned to the new group.
+* A new group can also be created at this time and the selected users can be assigned to the new group.
 
-![Assign new group to selected users](/static/assets/embedded/managing-resources/manage-users/images/assign-group-to-users-2.png)
+  ![Assign new group to selected users](/static/assets/embedded/managing-resources/manage-users/images/assign-group-to-users-2.png)
 
 > **NOTE:**  All the users in the group will have the permissions of assigned group.

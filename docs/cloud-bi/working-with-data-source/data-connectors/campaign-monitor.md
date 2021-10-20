@@ -38,6 +38,8 @@ Once you click the data source, the NEW DATA SOURCE configuration panel opens.
 7. Choose **Basic HTTP Authentication** in **Authentication Type** combo box.
 7. Enter a valid **Account Key** and **Password** to access the endpoint in your account.
 
+    ![DataSourcesView](/static/assets/cloud/working-with-datasource/data-connectors/images/campaign-monitor/DataSourcesView.png)
+
 You can also edit the connection information set here using the [Edit Connection](/cloud-bi/working-with-data-source/editing-a-data-connection/) option.
 
 #### How do I get Account Key for connecting Campaign Monitor Data source?

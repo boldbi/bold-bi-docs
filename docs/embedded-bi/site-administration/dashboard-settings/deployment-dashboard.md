@@ -30,11 +30,15 @@ You can add deployment dashboards by using these steps:
 
     ![Fill the deployment dashboard dialog](/static/assets/embedded/site-administration/images/fill-deployment-dashboard-dialog.png)
 
-5. By checking lock option, you can lock your dashboard and data source, which makes not editable and add the deployment dashboard.
+5. You can publish a dashboard with public accessibility by checking Make Dashboard Public option. This means that anonymous users who have access to the Dashboard link can access it.
+
+    ![Make public the deployment dashboard dialog](/static/assets/embedded/site-administration/images/make-public-deployment-dashboard-dialog.png)
+
+6. By checking lock option, you can lock your dashboard and data source, which makes not editable and add the deployment dashboard.
     
     ![Lock Option in deployment dashboard dialog](/static/assets/embedded/site-administration/images/lock-deployment-dashboard.png)
 
-6. You can see the added deployment dashboards in the gird and success message.
+7. You can see the added deployment dashboards in the gird and success message.
 
     ![deployment dashboards in grid view](/static/assets/embedded/site-administration/images/deployment-dashboards-grid-view.png)
 

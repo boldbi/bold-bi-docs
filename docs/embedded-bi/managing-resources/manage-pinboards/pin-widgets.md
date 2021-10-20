@@ -9,7 +9,7 @@ documentation: ug
 
 # To Pin Widgets from Dashboard
 
-This section explains how to pin widgets to Pinboard in the Bold BI solutions.
+This section explains how to pin widgets to Pinboard in the Bold BI application.
 
 ### Steps to pin Widget to Pinboard
 

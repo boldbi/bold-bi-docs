@@ -39,6 +39,8 @@ Once you click the Mailchimp data source, the NEW DATA SOURCE configuration pa
 7. Choose **Basic HTTP Authentication** in **Authentication type** combo box.
 7. Enter a valid **User Name, API Key** to access the endpoint in your account.
 
+    ![DataSourcesView](/static/assets/cloud/working-with-datasource/data-connectors/images/mailchimp/DataSourcesView.png)
+
 You can also edit the connection information set here using the [Edit Connection](/cloud-bi/working-with-data-source/editing-a-data-connection/) option.
 
 #### How do I get API Key for connecting Mailchimp data source?

@@ -35,6 +35,8 @@ After clicking the data source, the NEW DATA SOURCE configuration panel opens.
 7. Choose an **Authentication Type** supported by the data source. Options are *Basic http authentication* and *None*. Learn more about [Authentication Types](/embedded-bi/working-with-data-source/data-connectors/restful-web-services/#authentication-types).
 8. Choose a **Pagination Type** supported by the data source from the combo box. 
       
+	   ![DataSourcesView](/static/assets/embedded/working-with-datasource/data-connectors/images/Web/DataSourcesView.png)
+	  
 Options are [*None*](/embedded-bi/working-with-data-source/data-connectors/restful-web-services/#none), [*Offset*](/embedded-bi/working-with-data-source/data-connectors/restful-web-services/#offset), [*Next Page*](/embedded-bi/working-with-data-source/data-connectors/restful-web-services/#next-page), [*Next Token*](/embedded-bi/working-with-data-source/data-connectors/restful-web-services/#next-token), and [*Next URL*](/embedded-bi/working-with-data-source/data-connectors/restful-web-services/#next-url).
 
 You can also edit the connection information set here using the [Edit Connection](/embedded-bi/working-with-data-source/editing-a-data-connection/) option. 

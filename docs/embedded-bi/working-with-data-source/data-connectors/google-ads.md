@@ -55,6 +55,8 @@ After the successful authentication, the NEW DATA SOURCE configuration panel o
 6. Select the **JSON** data type in the **Data Format** combo box.
 7. The authentication type will be set to **Google Ads** automatically because OAuth is used for authenticating with the Google Ads account.
 
+    ![DataSourcesView](/static/assets/embedded/working-with-datasource/data-connectors/images/GoogleAds/DataSourcesView.png)
+
 You can also edit the connection information set here using the [Edit Connection](/embedded-bi/working-with-data-source/editing-a-data-connection/) option.
 
 #### Additional information

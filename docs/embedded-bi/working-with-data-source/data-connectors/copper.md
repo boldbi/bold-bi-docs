@@ -29,19 +29,21 @@ To configure the Copper data source, follow the below steps:
 ## Create Copper data source
 Once you click the data source, the NEW DATA SOURCE configuration panel opens. Follow the below steps to create Copper data source.
 1. Enter a name and description (optional) for the data source.
-2. Enter a valid Copper REST API endpoint in the URL textbox. Refer the [Copper API documentation](https://developer.copper.com/?version=latest) for more details.
-
-    Example: [https://api.prosperworks.com/developer_api/v1/leads/search](https://api.prosperworks.com/developer_api/v1/leads/search)
-
-3. Select **POST** method for the REST API in **Method** combo box.
-4. Select either *Parameter(s)* or *Raw* under **Request Body**. Set *page_size* as key and set your page size value.
-5. Set values for **Headers** section like below key-value pairs:
+2. Click the **Api EndPoints** drop-down box and choose the required endpoint.
+3. Click the **Custom Url** if you want to enter the URL manually. Refer the [Copper API documentation](https://developer.copper.com/?version=latest) for more details.
+4. Select **POST** method for the REST API in **Method** combo box.
+5. Select either *Parameter(s)* or *Raw* under **Request Body**. Set *page_size* as key and set your page size value.
+6. Set values for **Headers** section like below key-value pairs:
 
    ![Headers](/static/assets/embedded/working-with-datasource/data-connectors/images/Copper/Headers.png)
+7. In **Max Rows**, enter the maximum number of rows to be fetched from the FreshworkCRM data source. This value is used to fetch the data from FreshworkCRM data source via pagination.
+8. Choose a time interval for **Refresh Settings** using the combo box, to trigger the Rest API request periodically to keep the data in sync with our dashboard.  
+9. Select **JSON** data type in **Data Format** combo box.
+10. Choose **None** under **Authentication Type**.
 
-5. Choose a time interval for **Refresh Settings** using the combo box, to trigger the Rest API request periodically to keep the data in sync with our dashboard.  
-6. Select **JSON** data type in **Data Format** combo box.
-7. Choose **None** under **Authentication Type**.
+   ![Choose data source](/static/assets/embedded/working-with-datasource/data-connectors/images/Copper/DataSource.png)
+
+    ![DataSourcesView](/static/assets/embedded/working-with-datasource/data-connectors/images/Copper/DataSourcesView.png)
 
 You can also edit the connection information set here using the [Edit Connection](/embedded-bi/working-with-data-source/editing-a-data-connection/) option.
 
@@ -58,7 +60,7 @@ You can also edit the connection information set here using the [Edit Connection
 Refresh Settings
 </td>
 <td>
-Period of time before next refresh call is triggered. This will automatically trigger a call for the API configured in the data source to keep the data up to date. If you do not want to sync your new data, choose ‘Never’.
+Period of time before next refresh call is triggered. This will automatically trigger a call for the API configured in the data source to keep the data up to date.
 </td>
 </tr>
 </table>

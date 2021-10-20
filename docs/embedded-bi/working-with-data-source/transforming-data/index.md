@@ -20,3 +20,5 @@ You can explore about transforming data in detail here,
 [Configure Data Filters](/embedded-bi/working-with-data-source/transforming-data/configuring-data-filters/)
 
 [Configure Expression Columns](/embedded-bi/working-with-data-source/transforming-data/configuring-expression-columns/)
+
+[Data Sampling](/embedded-bi/working-with-data-source/transforming-data/data-sampling/)

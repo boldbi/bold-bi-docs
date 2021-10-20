@@ -8,15 +8,15 @@ documentation: ug
 
 # Active Directory Group Import
 
-This section explains how to search and import groups from Active Directory into the Bold BI Server.
+This section explains how to search and import groups from Active Directory into the Bold BI application.
 
 > **NOTE:**  Active Directory connection has to be configured in the [Active Directory Settings](/embedded-bi/site-administration/active-directory/) in the `General` page for importing groups.
 
-Users belonging to the `System Administrator` group only can import Active Directory groups into the Bold BI Server.
+Users belonging to the `System Administrator` group only can import Active Directory groups into the Bold BI application.
 
 ## Search Groups
 
-You can search the Active Directory groups with any one of the below properties and choose them to import into Bold BI Server.
+You can search the Active Directory groups for any one of the following properties and select them to import into the Bold BI application.
 
 * Group name
 * Group description
@@ -29,16 +29,18 @@ Bold BI Server will search the groups within the specified distinguished name gi
 
 ## Import Groups
 
-To import the Active Directory groups into the Bold BI Server, you have to choose the groups from the list and click on the `Import groups` button at the top right corner.
+To import the Active Directory groups into the Bold BI application, you have to choose the groups from the list and click `Import groups` at the top right corner.
+
+![Import Groups from Active Directory](/static/assets/embedded/managing-resources/manage-groups/images/import-groups-from-active-directory.png)
 
 Bold BI Server will import the chosen groups and a confirmation message will be displayed.
 
 ![Success message after imported the Active Directory groups](/static/assets/embedded/managing-resources/manage-groups/images/Active-Directory-group-import-success-window.png)  
 
-The success message box explains the users who all are get imported/not imported into the Bold BI server.
+The success message box explains which users were imported and not imported into the Bold BI application.
 
 ## Duplicate Groups
 
-Active Directory groups who has the same group name as that of the Bold BI Server groups (which are already present) will be marked as duplicate groups and will not be allowed to import into the Bold BI Server.
+Active Directory groups who has the same group name as that of the Bold BI application groups (which are already present) will be marked as duplicate groups and will not be allowed to import into the Bold BI application.
 
 ![Duplicated Active Directory Groups](/static/assets/embedded/managing-resources/manage-groups/images/Active-Directory-Duplicate-group.png)

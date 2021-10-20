@@ -41,16 +41,48 @@ var dashboard = BoldBI.create(options);
 dashboard.loadDashboard();   
 ```
 
-## destroy()
+## loadDashboardWidget()
     
-This method will destroy the dashboard based on the dashboard object provided while calling the create method.
+This method will load the widget of current dashboard.
 
 **Example** 
    
-```js        
+```js
 var dashboard = BoldBI.create(options);
-dashboard.loadDashboard();
-dashboard.destroy();   
+dashboard.loadDashboardWidget("Sales by country");   
+```
+
+## loadDesigner()
+    
+This method will render the dashboard designer based on the dashboard options provided while calling the create method.
+
+**Example** 
+   
+```js      
+var dashboard = BoldBI.create(options);
+dashboard.loadDesigner();
+```
+
+## loadDatasource()
+    
+This method will render the data source based on the data source options provided while calling the create method.
+
+**Example** 
+   
+```js      
+var dashboard = BoldBI.create(options);
+dashboard.loadDatasource();
+```
+
+## loadPinboard()
+    
+This method will render the pinboard based on the provided pinboard name.
+
+**Example** 
+   
+```js      
+var dashboard = BoldBI.create(options);
+dashboard.loadPinboard();   
 ```
 
 ## getInstance()
@@ -70,16 +102,15 @@ This method will return the object of the rendered dashboard using the container
 </script> 
 ```
 
-## loadDashboardWidget()
+## destroy()
     
-This method will load the widget of current dashboard.
+This method will destroy the dashboard based on the dashboard object provided while calling the create method.
 
 **Example** 
    
-```js
-var dashboard = BoldBI.create(options);
-dashboard.loadDashboard();
-dashboard.loadDashboardWidget("Sales by country");   
+```js        
+var instance = BoldBI.getInstance("container"); //container -> embed container id
+instance.destroy();   
 ```
 
 ## updateFilters()
@@ -104,17 +135,6 @@ var instance = BoldBI.getInstance("container"); //container -> embed container i
 instance.refreshDashboard();   
 ```
 
-## loadPinboard()
-    
-This method will render the pinboard based on the provided pinboard name.
-
-**Example** 
-   
-```js      
-var dashboard = BoldBI.create(options);
-dashboard.loadPinboard();   
-```
-
 ## addWidgetToPinboard()
 
 This method will add the widgets into the existing pinboard.
@@ -124,4 +144,37 @@ This method will add the widgets into the existing pinboard.
 ```js
 var instance = BoldBI.getInstance("container"); //container -> embed container id
 instance.addWidgetToPinboard(dashboardId, widgetId, widgetName);
+```
+
+## updateDatasource()
+    
+This method will update the current data source page from the outside page.
+
+**Example** 
+   
+```js
+var instance = BoldBI.getInstance("container"); //container -> embed container id
+instance.updateDatasource();   
+```
+
+## resizeDashboard()
+    
+This method will resize the current dashboard.
+
+**Example** 
+   
+```js
+var instance = BoldBI.getInstance("container"); //container -> embed container id
+instance.resizeDashboard();   
+```
+
+## hidePopup()
+    
+This method will hide the current dashboard waiting pop-up.
+
+**Example** 
+   
+```js
+var instance = BoldBI.getInstance("container"); //container -> embed container id
+instance.hidePopup();
 ```

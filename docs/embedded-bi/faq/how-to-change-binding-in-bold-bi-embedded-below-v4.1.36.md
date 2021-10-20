@@ -6,7 +6,9 @@ platform: bold-bi
 documentation: ug
 ---
 
-> This document explains how to change the application binding in IIS for the Bold BI version below 4.1.36. Check [this](/embedded-bi/faq/how-to-change-binding-in-bold-bi-embedded/) to change the IIS binding for the Bold BI version 4.1.36 or later. 
+> This document explains how to change the application binding in IIS for the Bold BI version below 4.1.36.
+Check [this](/embedded-bi/faq/how-to-change-binding-in-bold-bi-embedded-v4.1.36/) to change the IIS binding for the Bold BI version 4.1.36.
+Check [this](/embedded-bi/faq/how-to-change-binding-in-bold-bi-embedded/) to change the IIS binding for the Bold BI version above 4.1.36.
 
 # How to change the binding in the Bold BI Enterprise
 Follow these steps to change the application binding information:
@@ -32,7 +34,7 @@ Follow these steps to change the application binding information:
 **`http://172.17.82.1/ums/en-us/administration`**  
 ![IDP Base URL](/static/assets/embedded/faq/images/idp-base-url.png)  
 
-5. Now, navigate to the site settings of your dashboard server application using below new binding and update the new binding information as shown in image below.  
+5. Now, navigate to the site settings of your Bold BI application using below new binding and update the new binding information as shown in image below.  
 **`http://172.17.82.1/bi/en-us/site/site1/administration`**  
 ![DS Base URL](/static/assets/embedded/faq/images/ds-base-url.png)
 

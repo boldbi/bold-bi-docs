@@ -54,6 +54,8 @@ After successful authentication, the NEW DATA SOURCE configuration panel opens
 9. Select **JSON** data type in **Data Format** combo box.
 10. The authentication type will be set to **Facebook** automatically since OAuth is used for authenticating with Facebook account.
 
+    ![DataSourcesView](/static/assets/embedded/working-with-datasource/data-connectors/images/facebook/DataSourcesView.png)
+
 You can also edit the connection information set here using the [Edit Connection](/embedded-bi/working-with-data-source/editing-a-data-connection/) option.
 
 #### Additional information

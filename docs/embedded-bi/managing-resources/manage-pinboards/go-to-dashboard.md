@@ -9,7 +9,7 @@ documentation: ug
 
 # Go to Dependent Dashboard Page
 
-This section explains how to navigate the dependent dashboard for specific widget from Pinboard in the Bold BI solutions.
+This section explains how to navigate the dependent dashboard for specific widget from Pinboard in the Bold BI application.
 
 ### Steps to navigate dependent dashboard from the Pinboard
 

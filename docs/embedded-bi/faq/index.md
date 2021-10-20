@@ -9,11 +9,13 @@ documentation: ug
 
 # Frequently Asked Questions
 
-The following are the frequently asked questions in Bold BI Enterprise :
+The following are the frequently asked questions in Bold BI Enterprise:
 
 [What are the resources will be generated in the installed machine?](/embedded-bi/faq/what-all-are-the-files-and-folders-will-be-generated-in-the-installed-machine/)
 
 [How to change the binding in Bold BI Embedded?](/embedded-bi/faq/how-to-change-binding-in-bold-bi-embedded/)
+
+[How to change the binding in the Bold BI Embedded version 4.1.36?](/embedded-bi/faq/how-to-change-binding-in-bold-bi-embedded-v4.1.36/)
 
 [How to change the binding in the Bold BI Embedded version below 4.1.36?](/embedded-bi/faq/how-to-change-binding-in-bold-bi-embedded-below-v4.1.36/)
 
@@ -24,8 +26,6 @@ The following are the frequently asked questions in Bold BI Enterprise :
 [What are the features needed to be enabled in IIS to run Bold BI Application in *Windows Server OS*?](/embedded-bi/faq/features-needed-to-enable-in-iis-to-run-bold-bi-in-win-server-os/)
 
 [Where can i find the error and debug log files?](/embedded-bi/faq/where-can-i-find-the-error-and-debug-log-files/)
-
-[How to configure Bold BI Enterprise Edition in Reverse Proxy server environment?](/embedded-bi/faq/how-to-configure-bold-bi-in-reverse-proxy-server/)
 
 [How to reset the database for Bold BI Enterprise Edition?](/embedded-bi/faq/how-to-reset-database-for-bold-bi-application/)
 
@@ -61,6 +61,8 @@ The following are the frequently asked questions in Bold BI Enterprise :
 
 [How to change DNS for each site in Bold BI Embedded?](/embedded-bi/faq/how-to-change-dns-for-each-tenant-site/)
 
+[How to change DNS for each site in Bold BI Embedded version 4.1.36 or below?](/embedded-bi/faq/how-to-change-dns-for-each-tenant-site-v4.1.36-or-below/)
+
 [How to create a separate axis for the multiple series charts?](/embedded-bi/faq/how-to-create-a-separate-axis-for-the-multiple-series-charts/)
 
 [How many server deployments supported in a single Bold BI license?](/embedded-bi/faq/how-many-server-deployments-supported-in-a-single-bold-bi-license/)
@@ -71,17 +73,11 @@ The following are the frequently asked questions in Bold BI Enterprise :
 
 [How web-based data source like Jira works with Bold BI?](/embedded-bi/faq/how-web-based-data-source-works-with-bold-bi-embedded/)
 
-[How to host Bold BI as website in the IIS Express?](/embedded-bi/faq/how-to-host-bold-bi-as-website-in-iis-express/)
-
-[How to host Bold BI as website in the IIS?](/embedded-bi/faq/how-to-host-bold-bi-as-website-in-iis/)
-
 [When you should choose multi-tenancy and with row-level security](/embedded-bi/faq/when-you-should-choose-multi-tenancy-and-with-row-level-security/)
 
 [How to speed up the data access in SQL Server?](/embedded-bi/faq/how-to-speed-up-the-data-access-in-sql-server/)
 
 [How the interactions can be made between the Bold BI and external application?](/embedded-bi/faq/how-the-interactions-can-be-made-between-the-bold-bi-and-external-application/)
-
-[How to create an ODBC connection to a MySQL database in Windows?](/embedded-bi/faq/how-to-create-an-odbc-connection-to-a-my-sql-database-in-windows/)
 
 [How to enable authorized access to dashboards for users?](/embedded-bi/faq/dashboard-authorized-access/)
 
@@ -90,3 +86,7 @@ The following are the frequently asked questions in Bold BI Enterprise :
 [How to add a new data connector under Bold BI?](/embedded-bi/faq/how-to-add-a-new-data-connector-under-bold-bi/)
 
 [How to add threshold to a Chart widget](/embedded-bi/faq/how-to-add-threshold-to-a-chart-widget/)
+
+[How to use groups in Bold BI?](/embedded-bi/faq/how-to-use-groups-in-bold-bi/)
+
+[How to customize side bar menu based on user permission?](/embedded-bi/faq/how-to-customize-side-bar-menu/)

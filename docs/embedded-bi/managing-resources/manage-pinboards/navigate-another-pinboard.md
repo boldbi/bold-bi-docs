@@ -9,7 +9,7 @@ documentation: ug
 
 # Opening another Pinboard
 
-This section explains how to navigate to another pinboard in the Bold BI solutions.
+This section explains how to navigate to another pinboard in the Bold BI application.
 
 ### Steps to navigate to another pinboard
 

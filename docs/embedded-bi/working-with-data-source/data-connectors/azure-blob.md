@@ -39,6 +39,8 @@ Once you click the data source, the NEW DATA SOURCE configuration panel opens.
 6. Choose the data type based on the file extension (JSON / CSV / XML) which you have in REST API endpoint.
 7. Choose **Basic http Authentication** under **Authentication Type** and input a valid [Account Key](/embedded-bi/working-with-data-source/data-connectors/azure-blob/#how-do-i-get-storage-account-key-for-connecting-azure-blob-data-source). 
 
+    ![DataSourcesView](/static/assets/embedded/working-with-datasource/data-connectors/images/AzureBlob/DataSourcesView.png)
+
 You can also edit the connection information set here using the [Edit Connection](/embedded-bi/working-with-data-source/editing-a-data-connection/) option.
 
 #### How do I get Storage Account Key for connecting Azure Blob data source?

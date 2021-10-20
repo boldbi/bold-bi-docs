@@ -8,97 +8,87 @@ control: Column Chart
 documentation: ug
 ---
 
-# Configuring and Formatting Column Chart
+# Column Chart
 
 `Column chart` allows you to compare values for a set of unordered items across categories through vertical bars ordered horizontally.
 
-![Default Column chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/ColumnChart.png)
+![Default Column chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/column-chart-view.png)
 
 ## How to configure the table data to column chart
 
 `Column chart` need a minimum of one value element and one column element to showcase. The measure column or expression column that you would like to analyze can be dropped into values block. The dimension column that you would like to categorize the measure column can be dropped onto Columns block. If you would like to categorize based on a series column, then the respective dimension column can be dropped onto Rows block in addition. These blocks are composed into Data pane.
 
-> **NOTE:**  Before adding the card widget to the design layout, make sure to create the data source. You can refer to [this section](/embedded-bi/working-with-data-source/creating-a-new-data-source) to learn how to create a new data source.
-
-The following steps explains data configuration of column chart:
-
-### Step 1: Add a column chart widget to the design canvas 
+The following steps explains the data configuration of column chart:
 
 1.	Drag and drop the `column chart control` icon from the tool box into design panel. You can find the control in tool box by search.
+
 ![Adding column chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/drop-widget.png)
 
 2.	Resize the widget as required.
+
 ![Resizing widget in design panel](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/resizing.png)
 
-### Step 2: Configuring data into the widget
+3.  Click the `Data Source` button in the configuration panel.
 
-1.	Click the `Properties icon` in the configuration panel.
-![Click properties icon](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/properties-icon-click.png)
+![Data Source](/static/assets/embedded/visualizing-data/visualization-widgets/images/databutton.png)
 
-2.	The `properties` panel of the widget will be displayed as shown in the following screenshot. Now, switch to the `ASSIGN DATA` tab.
-![Properties pane](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/properties-pane.png)
+4.  Click the `CREATE NEW` button to launch a new connection from the connection type panel.
 
-3.	The data tab will be opened with the available columns from the connected data source.
-![Date pane](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/data-pane.png)
+![CREATE NEW](/static/assets/embedded/visualizing-data/visualization-widgets/images/datasourcebutton.png)
+
+5.  In the connection type panel, click any one (Here, the `Microsoft Excel` Connection type is selected for demonstration) of the listed connection type button.
+
+![Datasource list](/static/assets/embedded/visualizing-data/visualization-widgets/images/datasourcelist.png)
+
+6.  In the `NEW DATA SOURCE` configuration panel, fill the connection type and related details. Click the `Preview & Connect` button.
+
+![Connect button](/static/assets/embedded/visualizing-data/visualization-widgets/images/connectbutton.png)
+
+7.  Drag and drop your preferred table or view from the left pane from the data design view, and click the `Save` button.
+
+![Virtual table](/static/assets/embedded/visualizing-data/visualization-widgets/images/virtualtable.png)
+
+8.	Click the `Properties icon` in the configuration panel.
+
+![Click properties icon](/static/assets/embedded/visualizing-data/visualization-widgets/images/designerpropertiesbutton.png)
+
+9.	The `properties` panel of the widget will be displayed as shown in the following screenshot.
+
+![Properties pane](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/assign-data.png)
+
+10.  Now, switch to the `ASSIGN DATA` tab.
+
+![Properties pane](/static/assets/embedded/visualizing-data/visualization-widgets/images/assign-data-section.png)
+
+11.	The `ASSIGN DATA` tab will be opened with the available columns from the connected data source.
 
 ### Adding fields to Value(s)
 
-Bind column by dragging and dropping the element from sections to `values`.
+Bind column by dragging and dropping the element from the sections to `values.`
 
-![Add value field](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/add-value.png)
+![Add value field](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/add-measure.png)
 
 > **IMPORTANT:**  
 * The field added in this section will act as a measure value. 
-* It is a mandatory section for widget visualization and any number of fields can be configured in this section. 
+* It is a mandatory section for the widget visualization and any number of fields can be configured in this section.
 
-### Adding fields to Column(s)
+### Settings menu options
 
-Drag and drop the elements from sections to columns.
-
-![Add column field](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/add-column.png)
-
-> **IMPORTANT:**  
-* The field added in this section will act as a dimension value. 
-* It is an optional section and adding more than one value will enable drill down.
-
-#### Drill down
-On Adding the second value to the Columns section, the alert message will be shown.
-
-![Drill confirmation alert](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/drill-alert.png)
-
-Click `Yes` to enable the option. If you click `No`, single value will be added to the Columns section.
-
-*Figure: Chart with drilled view of the selected region.*
-
-![Drilled view](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/drilled-view.png)
-
-### Adding fields to Row
-
-Drag and drop the elements from sections to `Row`.
-
-![Add row fields](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/add-row.png)
-
-![Chart view with row configured](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/configured-widget.png)
-
-#### Adding tooltip fields
-
-You can configure `tooltip section` to showcase the additional information in the widget’s tooltip without affecting the visualization. Refer to this section for more details on configuring the [tooltip fields](/embedded-bi/visualizing-data/working-with-widgets/tooltip-customization/).
-
-### Step 3 (Optional): Settings menu options
-
-You can `filter`, `format`, and `sort` the data displayed in the widget from the settings menu options.  To open the `settings menu`, click the `settings icon`. 
+You can `filter` and `format` the data displayed in the widget from the settings menu options. To open the `settings menu,` click the `settings icon.`
 
 The following screenshots shows the various settings menu options based on the type of field configured in the type of section. 
 
-![Numeric field settings menu](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/numeric-menu.png)
+![Numeric field settings menu](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/settings-menu.png)
 
-![Non numeric fields measure settings menu](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/non-numeric-menu.png)
+#### Renaming fields
+
+The configured field names can be edited by using the `Rename` option provided in the settings menu.
 
 #### Changing the aggregation type
 
 You can change the aggregation type of the measure section from the settings menu as shown in the following screenshot. Refer to [this section](/embedded-bi/visualizing-data/working-with-widgets/aggregating-value-columns-based-on-type/) for more details.
 
-![Changing the aggregation](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/aggregation-type.png)
+![Changing the aggregation](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/settings.png)
 
 #### Filtering data
 
@@ -110,23 +100,75 @@ You can use Filters to change the values by selecting the `Filter` option. For m
 
 You can format the elements by selecting the `Format` option. For more details, refer to [measure format](/embedded-bi/visualizing-data/working-with-widgets/formatting-measure-type-column/).
 
-![Formatting option](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/formatting-option.png)
+![Formatting option](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/format-option.png)
 
-#### Sorting
+#### Removing the fields
 
-You can `Sort` the dimension data using `Sort` option under Settings menu list. To apply sorting for the data, refer [Sort](/embedded-bi/visualizing-data/working-with-widgets/advanced-sorting/#dimension-column).
+To remove the added value fields, click the highlighted button.
+
+![Removing  Fields](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/removebutton.png)
+
+### Adding fields to Column(s)
+
+Drag and drop the elements from sections to columns.
+
+![Add column field](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/adding-columns.png)
+
+> **IMPORTANT:**  
+* The field added in this section will act as a dimension value. 
+* It is an optional section and adding more than one value will enable drill down.
+
+#### Settings 
+
+You can change the `Settings.`
+
+![Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/column-settings.png)
 
 #### Renaming fields
 
 The configured field names can be edited by using the `Rename` option provided in the settings menu.
 
-1. Click the Settings menu icon and select the `Rename` menu option.
-![Rename option](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/rename-option.png)
+#### Sorting
 
-2. The column name will become editable now. Enter the required text and press `enter` key.
-![Edit field name](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/edit-field-name.png)
+You can Sort the dimension data using the `Sort` option under the Settings menu list. To apply sorting for the data, refer to the [Sort](/embedded-bi/visualizing-data/working-with-widgets/advanced-sorting/#dimension-column).
 
-Now, the changes will be reflected in the column chart widget’s tooltip, chart legends, and in the axis titles.
+![Sort Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/sort-option.png)
+
+#### Filtering data
+
+You can apply filter by selecting the `Filter(s)` option in the settings. For more details, refer to the [filter](/embedded-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column).
+
+![Configuring filter for dimension column](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/filter-option-column.png)
+
+The chart will be rendered like this,
+
+![Adding column field](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/column-chart.png)
+
+Similarly, you can add the `Measures` and `Expression Columns` into the column field.
+
+#### Drill down
+
+On adding the second value to the Columns section, the alert message will be shown.
+
+![Drill confirmation alert](/static/assets/embedded/visualizing-data/visualization-widgets/images/drillalert.png)
+
+Click `Yes` to enable the option. If you click `No,` a single value will be added to the Columns section.
+
+*Figure: Chart with a drilled view of the selected region.*
+
+![Drilled view](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/drilled-view.png)
+
+### Adding fields to Row
+
+Drag and drop the elements from sections to `Row.`
+
+![Add row fields](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/chart-row.png)
+
+![Chart view with row configured](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/configured-widget.png)
+
+#### Adding tooltip fields
+
+You can configure the `tooltip section` to showcase the additional information in the widget’s tooltip without affecting the visualization. Refer to this section for more details on configuring the [tooltip fields](/embedded-bi/visualizing-data/working-with-widgets/tooltip-customization/).
 
 ## How to format column chart widget
 
@@ -140,15 +182,17 @@ This allows you to set `title` for this column chart widget.
 
 #### Subtitle
 
-This allows you to set `subtitle` for this column chart widget. It is optional.
+This allows you to set `subtitle` for this column chart widget.
 
 #### Description
 
-This allows you to set brief explanation about this grid widget. It is optional.
+This allows you to set `description` for this column chart widget.
+
+![General settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/general-settings.png)
 
 ### Basic settings
 
-![Change type and axis settings dialog](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/basic-settings.png)
+![Basic Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/basic-settings.png)
 
 #### Chart type and axis
 
@@ -164,19 +208,17 @@ Click the `Change` button to open the `Chart Type and Axis Settings` dialog.
 
 #### Enable animation
 
-This allows you to enable the rendering of series in animated mode.
-
-#### Legend
-
-A Legend is a text used to describe the data plotted. This allows you to toggle the visibility of legend in chart and also change the legend text position (selecting through combo box).
-
-![chart legends](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/chart-legends.png)
+It animates the measure values when you toggle the `Enable Animation.`
 
 #### Show legend
 
+A Legend is a text used to describe the data plotted. This allows you to toggle the visibility of legend in chart and also change the legend text position (selecting through combo box).
+
+![chart legends](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/show-legend.png)
+
 Enabling this option of Custom Legend Text will allow you to define a custom text (through the text area) to display for each legend series (selecting through the combo box) in chart.
 
-#### Legend Label Color
+### Legend Label Color
 
 This allows you to change the chart legend title and label colors.
 
@@ -184,49 +226,53 @@ This allows you to change the chart legend title and label colors.
 
 ![Chart Legend Color](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/legend-label-color.png)
 
-##### Custom legend settings
+#### Customize
 
-You can customize the legend text through the `Custom Legend Settings` dialog. This dialog will show the legend text list as labels at left and corresponding text area at right to add the formatted text to display instead. When a column is added to Row section, this dialog will show two options `Individual` and `Group` at top in addition, to toggle between.
+You can customize the legend text through the `Custom Legend Settings` dialog. This dialog will show the legend text list as labels at left and corresponding text area at right to add the formatted text to display instead.
 
-##### Individual
+![Legend customization](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/legendcustomize.png)
 
-Selecting  `Individual` option will allow you to define a custom text (through the text area) to display for each legend series in chart with the default format:
+![Legend customization Change](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/legendcustomize-change.png)
 
-`{{ : Row }} ({{ : Y Value }})`
+#### Legend Position
 
-Where, Row represents the value of dimension column added to `Rows section` and Value represents the value of the measure column added to `Values section`. 
+A Legend is a text used to describe the data plotted. This option allows you to place the legend at the position of **Left, Right, Top,** and **Bottom**.
 
-![Individual legends](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/individual-legends.png)
+#### Legend Shape
 
-##### Group
+This allows you change the **shape** of the legend.
 
-Enabling `Group` option will allow you to set the display format and define a custom text (through the text area) to display for each legend series based on the specified format. 
+***Circle***
 
-![Group legends](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/group-legends.png)
+This option allows you to change the shape of the legend in a `Circle.`
 
-For example, If Display Format is `{{ : Row }} ({{ : Value }})`, then Legend series will display like Austria (Sum of Freight)
+![Show Legend shape](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/legend-shape.png)
 
-![Chart with customized legends](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/legend-customized-widget.png)
+***Series Type***
 
-#### Legend position
+This option allows you to change the shape of the legend in `Series.`
 
-This provides option to select the legend placement. 
+![Show Legend shape Series](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/legend-shape-series.png)
 
 #### Legend Title
 
-Enabling `Show Legend` option will allows you to toggle the visibility of Legend Title.
+This allows you to add the legend title for the chart. It will reflect with the `Show Legend.`
 
-![Legend Title](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/LegendTitle.png)
-
-`legend title` property allows you to edit the legend title for chart.
-
-![Legend Title in chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/ColumnChart_LegendTitle.png)
+![Show Legend Title](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/legend-title.png)
 
 #### Show value labels
 
 This allows you to toggle the visibility of value labels.
 
 ![Value labels in chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/value-labels.png)
+
+#### Value Label Customization
+
+This allows you to customize the visibility of the value labels.
+
+![Value labels customization change](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/value-label-customization.png)
+
+![Value labels customization](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/value-label-change.png)
 
 #### Value Label Color
 
@@ -252,11 +298,35 @@ Allows you to enable the Suffix value text to the value labels.
 
 This allows you to show data, which column does not have value.
 
-![Chart with no data item](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/no-data-item.png)
+![Empty Point Mode Gap](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/chart-gap.png)
+
+#### Column Width
+
+This option allows you to increase or decrease the width of the column by using the `Column Width.`
+
+![Column Width Customization](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/column-width-customization.png)
+
+![Column Width](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/column-width.png)
+
+#### Column Spacing
+
+This option allows you to increase or decrease the space between the columns by using the `Column Spacing.`
+
+![Column Spacing Customization](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/column-spacing-customization.png)
+
+![Column Spacing](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/column-spacing.png)
+
+#### Axis Format
+
+This option allows you to format the primary and secondary axis values from the formatting details provided using the `Format` button. For more details, refer to this [measure format](/embedded-bi/visualizing-data/working-with-widgets/formatting-measure-type-column/).
+
+![Formatting Axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/axis-format.png)
 
 ### Link
 
 To configure the linking to URL or dashboard with the widget using its settings. For more details, refer to [Linking](/embedded-bi/visualizing-data/working-with-widgets/linking-urls-and-dashboards/).
+
+![Link](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/linking.png)
 
 ### Axis settings
 
@@ -293,13 +363,13 @@ This allows you to edit the category axis title for chart. It will reflect in x-
 
 This allows you to handle the display mode of the overlapping labels in the category axis.
 
-##### Trim
+#### Trim
 
 This option trims the end of overlapping label in the axis.
 
 ![Trimmed label overflow](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/trimmed-label.png)
 
-##### Hide
+#### Hide
 
 This option hides the overlapping label in the axis.
 
@@ -307,15 +377,15 @@ This option hides the overlapping label in the axis.
 
 #### Trim Axis Labels
 
-This option allows you to trim axis labels, based on the 'Maximum Label Width' property value.
+This option allows you to trim the axis labels based on the `Maximum Label Width` property value.
 
 ![Trimmed label](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/trimming-label.png)
 
-#### Maximum Label Width
+#### Label Maximum Width
 
-This option allows you to set maximum width for the axis labels, and also it can be made customizable when the trim axis label option is enabled.
+This option allows you to set a maximum width for the axis labels, and also it can be made customizable when the `trim axis label` option is enabled.
 
-![Maximum label width](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/Maximum-label-width.png)
+![Label maximum width](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/maximum-label-width.png)
 
 #### Category axis label rotation
 
@@ -341,27 +411,17 @@ This allows you to edit the primary value axis title. It will reflect in y-axis 
 
 ![Primary axis title value](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/title-value.png)
 
-#### Axis Format
+### Axis Type
 
-This option allows you to format primary and secondary axis values from the formatting details provided using 'Format' button. For more details, refer to this[measure format](/embedded-bi/visualizing-data/working-with-widgets/formatting-measure-type-column/).
+This allows you to change the type of axis in the column chart.
 
-![Formatting option](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/formatting-button.png)
+### Linear
 
-##### Axis Type
+This option allows you to handle the type of axis as linear.
 
-This allows you to customize Axis type as `linear` or `logarithmic`
+### Logarithmic
 
-**Linear**: Linear interpolation is used to determine where a value lies on the axis.
-
-![Linear](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/Axis_Setting_Linear.png)
-
-![Linear Axis Type](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/Axis_Setting_Linear_Chart.png)
-
-**Logarithmic**: Logarithmic axis uses logarithmic scale and it is very useful in visualizing when the data has values with both lower order of magnitude (eg: 10-6) and higher order of magnitude (eg: 106).
-
-![Logarithmic](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/Axis_Setting_Logarithmic.png)
-
-![Logarithmic Axis Type](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/Axis_Setting_Logarithmic_Chart.png)
+This option allows you to handle the logarithmic axis that uses a logarithmic scale and it is very useful in visualizing when the data has values with both lower order of magnitude (Eg: 10-6) and higher-order of magnitude (Eg: 106).
 
 ### Axis range settings
 
@@ -375,133 +435,97 @@ It will reflect in the primary value axis of the chart.
 
 ### Gridlines
 
-![Grid line properties](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/grid-line.png)
+You can toggle the visibility of the each axes gridlines visibility using the property.
 
-You can toggle the visibility of the each axes gridlines visibility using the property and refer to [this page](/embedded-bi/visualizing-data/working-with-widgets/chart-gridlines/) for more details. 
+![Grid line properties](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/chartgridlines.png)
+
+#### Primary Value Axis
+
+This allows you to enable the `Primary Value Axis` gridlines for the column chart.
+
+![Primary Value Axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/primary-gridlines.png)
+
+#### Secondary value Axis
+
+This allows you to enable the `Secondary Value Axis` gridlines for the column chart.
+
+![Secondary value Axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/secondary-gridlines.png)
+
+#### Category Axis
+
+This allows you to enable the `Category Axis` gridlines for the column chart.
+
+![Category Axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/category-gridlines.png)
 
 ### Trendline
-You can add, edit, and delete the trendlines for the chart widget using the `Trendline properties`. Refer to [this page](/embedded-bi/visualizing-data/working-with-widgets/chart-trendlines/) for the detailed steps. 
 
-### Series palette
+You can add more than one trendline to Cartesian charts except for bar type series(Line, Column, Area, Spline) and stacked type of charts. You can **add, edit,** and **delete** trendlines.
 
-This allows you to customize the chart series color through `Series Palette` section.
+![Trendline](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/trendline-settings.png)
 
-> **IMPORTANT:**  Series color palette option will be enabled only when the row field is configured. 
+### Add Trendline and Edit Trendline
 
-#### Use default palette
+To add the trendline, click the highlighted button.
 
-This allows you to toggle the series color between default palette and custom palette. By default, the property is toggled on and default palette will be applied to series.
+![Trendline Add](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/trendline-add.png)
 
-![Default color palette option](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/color-palette.png)
+Now, the dialog will open as follows.
 
-By toggle off the `Use Default Palette`, you can customize the series colors. This section shows the list of series labels on the left-hand side and corresponding series color on the right-hand side. By clicking the colored square, color picker will be opened. You can choose a color. And, you can also change the series color by changing the corresponding Hexadecimal value in the right-hand side.
+![Trendline Dialog](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/trendlinedialog.png)
 
-![customizing the color palette](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/customizing-color.png)
+Click the `OK` button to add trendline in a column chart. Now, the chart renders as follows.
+
+![Trendline chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/trendline.png)
+
+To edit the trendline select the one to be edited and click the highlighted button.
+
+![Trendline Edit](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/trendline-edit.png)
+
+Again, the trendline dialog window opens now.
+
+***Legend Text***
+
+You can edit the trendline legend by the `Legend Text` text box. By default, the `Legend Text` renders are based on the Line type and Series name.
+
+***Series***
+
+You can change the series to which series have to show the trendline by `Series` dropdown option. 
+
+***Line Type***
+
+You can select line type by the `Line Type` dropdown option(Linear, Exponential, Logarithmic, Power, and Polynomial).
+
+***Line Color***
+
+You can change the color of the trendline by the `Line Color` color picker.
+
+***Line Style***
+
+You can change the style of the trendline by the `Line Style` drop down option(Solid, Dot, Dash, DotDash, LongDash, and LongDashDotDot).
+
+### Delete Trendline
+
+To delete the trendline, select the one to be deleted and click the highlighted button.
+
+![Trendline Delete](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/trendline-delete.png)
 
 ### Formatting
 
-> **IMPORTANT:**  `Formatting section` will be enabled when the widget is configured, and it will be hidden if the row field is configured. 
+> **IMPORTANT:** The `Formatting section` will be enabled when the widget is configured, and it will be hidden if the row field is configured.
 
-![Formatting properties](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/formatting.png)
+This allows you to change the `color` for the column chart.
 
-In the `Formatting section`, there will be options to define the color for the each of the configured value fields. 
+![Format Colors](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/formatting-color.png)
 
-You can select the color by clicking the color picker option provided near the field name.  it will open the color picker. 
+It will reflect in the column chart.
 
-![Color picker for fields](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/color-picker.png)
-
-#### After modification 
-
-![Customized colors](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/customized-colors.png)
+![Formating Data Colors](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/formatting-change-color.png)
 
 #### Advance settings
 
+The `Advance setting` option will be enabled when only one column and one row is configured. You can refer more details from [this section](/embedded-bi/visualizing-data/visualization-widgets/column-chart/#how-to-apply-conditional-formatting)
+
 ![Advance color settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/advanced-colors.png)
-
-`Advance setting` option will be enabled when only one column and one row is configured. You can refer more details from [this section](/embedded-bi/visualizing-data/visualization-widgets/column-chart/#how-to-apply-conditional-formatting)
-
-### Filter
-
-#### Act as master widget
-
-This allows you to define this column chart widget as a master widget such that its filter action can be made to listen by other widgets in the dashboard.
-
-#### Ignore filter actions
-
-This allows you to define this column chart widget to ignore responding to the filter actions applied on other widgets in dashboard.
-
-#### Hierarchical filter
-
-Using this option, you can enable or disable hierarchical top N filtering. While applying Top N filter with multiple dimension columns, the data returned can be customized based on whether the filtering need to be done as flat or based on the hierarchy of dimension columns added.
-
-When `Hierarchical Filter option` is enabled, the Top N will be applied for each individual column separately based on the number set for each column.
-
-### Container appearance
-
-This allows you to customize the widget container appearance, widget title’s properties and provides options to enable or disable the widget exporting options. For more detailed information, refer to the  [container appearance properties](/embedded-bi/visualizing-data/working-with-widgets/customizing-container-appearance/). 
-
-![Container appearance](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/Container_Apperence.png)
-
-**Title Alignment**
-
-This allows you to handle the alignment of widget title to the left, center or right.
-
-**Title Color**
-
-This allows you to apply text color to the widget title.
-
-**Show Border** 
-
-This allows you to toggle the visibility of the border surrounding the widget.
-
-**Corner Radius**
-
-This allows you to apply the specified radius to the widget corners if the **Show Border** is enabled. Value can be between 0 and 10.
-
-**Background Color**
-
-This allows you to select the color for the chart background. `The default value is #ffffff`. 
-![Background Color Property](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/container_apperence_bgcolor_change.png)
-
-![Background Color Changed](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/Container_Appearence_bgcolor.png)
-
-### Container actions
-
-![Container Actions](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/Container_Actions.png)
-
-**Show Header**
-
-This allows you to enable or disable the widget title of the column chart widget. 
-
-**Allow Maximize View**
-
-This allows you to enable or disable the maximized mode of the Column chart widget. The visibility of the maximize icon in the widget header will be defined based on the setting in the viewer.
-
-**Allow CSV Export**
-
-This allows you to enable or disable the CSV export option for the Column chart widget. Enabling this allows you to export the summarized data of the widget view to CSV format in the viewer.
-
-**Allow Excel Export**
-
-This allows you to enable or disable the Excel export option for the Column chart widget. Enabling this allows you to export the summarized data of the widget view to (.xlsx or .xls) format in the viewer.
-
-**Allow Image Export**
-
-This allows you to enable or disable the image export option for the Column chart widget. Enabling this allows you to export the view of the widget to image format (.jpg), (.png), or (.bmp) in the viewer.
-
-**Allow PDF Export**
-
-This allows you to enable or disable the `PDF export` option for the Column chart widget. Enabling this allows you to export the view of the widget to pdf format in the viewer.
-
-**Enable Comments**
-
-This allows you to enable or disable comment for the dashboard widget. For more details refer to [here](/embedded-bi/visualizing-data/working-with-widgets/commenting-widget/)
-
-**Allow View Underlying Data**
-
-This allows you to visualize the raw data associated with a widget at runtime. 
-
-To learn more about viewing the underlying widget data, refer to the [view data documentation](/embedded-bi/visualizing-data/working-with-widgets/view-data/).
 
 ## How to apply conditional formatting
 
@@ -510,15 +534,17 @@ Color in column chart widget can be customized using the color settings availabl
 ### How to enable advanced formatting
 
 1. In the `properties` pane, under the `Formatting` section, check the `Advanced Setting` check box.
-![Advance color settings option](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/advance-color.png)
 
 2. This will open the `Conditional Formatting` dialog.
+
 ![Conditional formatting dialog](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/formatting-dialog.png)
 
 3. Select the mode and enter the conditions as required and click the `save` button to apply.
+
 ![Applying the conditions](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/apply-conditions.png)
 
 4. Now, the widget visualization will be updated based on the conditions.
+
 ![After applying conditional formatting](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/formatted-result.png)
 
 Refer to the following sections for the detailed steps on using the [Gradient](/embedded-bi/visualizing-data/visualization-widgets/column-chart/#gradient-mode), [Rule](/embedded-bi/visualizing-data/visualization-widgets/column-chart/#rule-based- condition-mode) and [individual](/embedded-bi/visualizing-data/visualization-widgets/column-chart/#individual-mode) modes. 
@@ -589,13 +615,9 @@ Select the fill color for that condition using the color picker.
 
 Click ` add condition` to specify add new condition. 
 
-![add conditions](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/add-conditions.png)
-
 #### Delete condition
 
 Click the `delete` button to remove the existing condition. 
-
-![delete conditions](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/delete-conditions.png)
 
 ### Individual mode
 
@@ -607,8 +629,134 @@ dialog.
 ![Individual mode](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/individual-mode.png)
 
 #### Color
+
 You can choose the color for the record from the nearby color picker.
 
 #### Reset
 
-To undo all the changes, click `reset`.
+To undo all the changes, click `reset.`
+
+### Font Settings 
+
+Font settings section allows you to enable the auto font size.
+
+### Auto Font Size
+
+On enabling `auto font fize,` the size of the font is adjusted automatically based on the screen resolution.
+
+![Font settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/fontsettings.png)
+
+### Filter
+
+
+This section allows you to handle the `filter` action for the spline area chart widget.
+
+![Filter](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/filter.png)
+
+#### Act as master widget
+
+This allows you to define this column chart widget as a master widget such that its filter action can be made to listen by other widgets in the dashboard.
+
+#### Ignore filter actions
+
+This allows you to define this column chart widget to ignore responding to the filter actions applied on other widgets in the dashboard.
+
+#### Hierarchical filter
+
+Using this option, you can enable or disable the hierarchical top N filtering. While applying the Top N filter with multiple dimension columns, the data returned can be customized based on whether the filtering needs to be done as flat or based on the hierarchy of dimension columns added.
+
+When the `Hierarchical Filter option` is enabled, the Top N will be applied for each individual column separately based on the number set for each column.
+
+### Container Appearance
+
+This sections allows you to customize the `Container Appearance` for the column chart widget.
+
+![Container Appearance](/static/assets/embedded/visualizing-data/visualization-widgets/images/container-appearance.png)
+
+### Title Alignment
+
+This allows you to handle the alignment of widget title to either **left, center,**  or **right**.
+
+### Title Color
+
+This allows you to apply the text `color` to the widget title.
+
+### Title Auto Font Size
+
+`On enabling Auto Font Size, the font size of the title will be adjusted automatically based on the screen resolution.
+
+**Font Size**
+
+This allows you to apply the specified size of the font to the widget title if the **Title Auto Font Size** is disabled. Value can be between 10 and 44.
+
+### Subtitle Auto Font Size
+
+On enabling Auto Font Size, the font size of the subtitle will be adjusted automatically based on the screen resolution.
+
+**Font Size**
+
+This allows you to apply the specified size of the font to the widget title if the **Subtitle Auto Font Size** is disabled. Value can be between 10 and 32.
+
+### Show Border
+
+This allows you to toggle the visibility of **border** surrounding the widget.
+
+### Corner Radius
+
+This allows you to apply the specified **radius** to the widget corners if the **Show Border** is enabled. Value can be between 0 and 10.
+
+### Show Background Image
+
+This allows you to set the **background image** for the column chart widget.
+
+### Background Color
+
+This allows you to set the **background color** to the column chart widget.
+
+### Transparency
+
+This property allows you to specifies the **transparency** for the **background color**.
+
+### Container actions
+
+This Section allows you to customize the **Container actions** for the column chart widget.
+
+![Container Actions](/static/assets/embedded/visualizing-data/visualization-widgets/images/container-actions.png)
+
+#### Show Header
+
+This allows you to enable or disable the **widget title** of the column chart. 
+
+#### Allow Maximize View
+
+This allows you to enable or disable the **maximized mode** of the column chart widget. The visibility of the maximize icon in the widget header will be defined based on the setting in the viewer.
+
+#### Allow CSV Export
+
+This allows you to enable or disable the **CSV export** option for the column chart widget. Enabling this allows you to export the summarized data of the widget view to CSV format in the viewer.
+
+#### Allow Excel Export
+
+This allows you to enable or disable the **Excel export** option for the column chart widget. Enabling this allows you to export the summarized data of the widget view to `(.xlsx or .xls)` format in the viewer.
+
+#### Allow Image Export
+
+This allows you to enable or disable the `Image export` option for the column chart widget. Enabling this allows you to export the view of the widget to image format `(.jpg), (.png), or (.bmp)` in the viewer.
+
+#### Allow PDF Export
+
+This allows you to enable or disable the **PDF export** option for the column chart widget. Enabling this allows you to export the view of the widget to pdf format in the viewer.
+
+#### Enable Comments
+
+This allows you to enable or disable `comment` for the dashboard widget. For more details, refer to this [link](/embedded-bi/visualizing-data/working-with-widgets/commenting-widget/).
+
+#### Allow View Underlying Data
+
+This allows you to visualize the raw data associated with a widget at runtime. 
+
+To learn more about viewing the underlying widget data, refer to the [view data documentation](/embedded-bi/visualizing-data/working-with-widgets/view-data/). 
+
+#### Pin widget
+
+This allows you to pin the widget.

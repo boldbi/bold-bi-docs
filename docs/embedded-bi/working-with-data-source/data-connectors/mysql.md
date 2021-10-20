@@ -38,6 +38,9 @@ After clicking a data source, the NEW DATA SOURCE configuration panel opens. Fol
 
    ![MySQL Connection](/static/assets/embedded/working-with-datasource/data-connectors/images/Mysql/Mysql_Connection.png)
 
+> **NOTE:**  To connect data source with **SSH**, enable the SSH check box in the **NEW DATA SOURCE** configuration panel and enter the required credentials.
+![Enable SSH](/static/assets/embedded/working-with-datasource/images/enable-ssh.png#max-width=60%)
+ 
 There are two connection types available in a data source:
 
 	* Live mode
