@@ -41,6 +41,19 @@ You need to follow these steps to get `keys.`
 
 To enable the bing maps in your enterprise build, you need to follow these steps.
 
+### Bold BI version 4.2.68 or later
+
+Open the mentioned file in your enterprise build location,
+ [`Installed_Directory`\ BoldServices\app_data\configuration\config.xml]
+
+Set `<widget><BingMap><Enable>` key value as true.
+
+![Bing Map Configuration](/static/assets/embedded/visualizing-data/visualization-widgets/images/bing-maps/configxml.png)
+
+Set your Bing Maps Key in `<key>` in `config.xml`
+
+![Bing Map Configuration](/static/assets/embedded/visualizing-data/visualization-widgets/images/bing-maps/configxml-map-Key.png)
+
 ### Bold BI version 4.1.36 or later
 
 Open the below mentioned file in your enterprise build location,
@@ -226,6 +239,10 @@ This allows you to set brief explanation about this Bing maps widget.
 ### Basic Settings
 
 ![Basic Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/bing-maps/basic-settings.png)
+
+#### Show Tooltip
+
+This option allows you to toggle the visibility of tooltip in Bing map.
 
 ### Map theme
 

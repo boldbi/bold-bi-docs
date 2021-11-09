@@ -26,6 +26,7 @@ The Bold BI supports the following data connection types such that the structure
   <tbody>
     <tr>
         <td align="center">SQL
+		    <br> <a href="/cloud-bi/working-with-data-source/data-connectors/amazon-athena/"> Amazon Athena</a>
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/amazon-aurora/"> Amazon Aurora</a>  
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/amazon-rds/"> Amazon RDS</a>
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/amazon-redshift/"> Amazon Redshift</a>
@@ -146,6 +147,7 @@ The Bold BI supports the following data connection types such that the structure
         </td>
         <td align="center">REST
 		    <br> <a href="/cloud-bi/working-with-data-source/data-connectors/azure-search/"> Azure Search</a>
+			<br> <a href="/cloud-bi/working-with-data-source/data-connectors/live-web/"> Live Web</a>
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/odata/"> OData</a>
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/rss-feeds/"> RSS Feeds</a>
 			<br> <a href="/cloud-bi/working-with-data-source/data-connectors/slack/"> Slack</a>
@@ -196,7 +198,6 @@ The Bold BI supports the following data connection types such that the structure
 		<td align="center">App Analytics
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/app-annie/"> App Annie</a>
         </td>
-
     </tr>
     <tr>
         <td align="center">Survey

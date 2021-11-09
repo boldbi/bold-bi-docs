@@ -176,6 +176,10 @@ Set a description for the Pie chart, whose visibility will be denoted by **i** i
 
 ![Basic Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/basic-settings.png)
 
+#### Show Tooltip
+
+This option allows you to toggle the visibility of tooltip in the pie chart.
+
 **Chart type**
 
 Switch the widget view from the current chart type to another chart type.
@@ -185,6 +189,66 @@ Switch the widget view from the current chart type to another chart type.
 ### Enable animation
 
 It animates the measure values when you enable the `Enable Animation.`
+
+### Show value label
+
+It allows you to toggle the visibility of value labels.
+
+![Show Value Label](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/show-value-label.png)
+
+### Value Label Color
+
+This allows you to customize the value label's color.
+
+![Value label Color Option](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/data-label-color-option.png)
+
+![Value label Color](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/data-label-color.png)
+
+### Data label
+
+Defines the display format as a `category, value, percentage, category and value, category and percentage, value and percentage,` or `all details.`
+
+### Category
+
+![Category](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/piechart-category.png)
+
+### Value
+
+![Value](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/piechart-Value.png)
+
+### Percentage
+
+![Percentage](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/show-value-label.png)
+
+### Category and value
+
+![Category and Value](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/piecatergoryandvalue.png)
+
+### Category and percentage
+
+![Category and Percentage](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/piecatergoryandper.png)
+
+### Value and percentage
+
+![Value and Percentage](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/pievalueandper.png)
+
+### All details
+
+![Pie Chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/piechart-alldetails.png)
+
+### Value labels suffix
+
+This allows you to show or hide the suffix value of value labels.
+
+### Suffix Value
+
+This allows you to customize the suffix value of value labels.
+
+![Value Labels Suffix](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/labels-suffix.png)
+
+### Legend Settings
+
+![Legend settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/legend-settings.png)
 
 ### Show legend
 
@@ -234,57 +298,33 @@ This allows you to add the legend title for the chart. It will reflect with the 
 
 ![Show Legend Title](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/pie-legendtitle.png)
 
-### Show value label
+#### Text Overflow
 
-It allows you to toggle the visibility of value labels.
+This option allows you to customize legend text based on the 'Text Width' property value.
 
-![Show Value Label](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/show-value-label.png)
+**None**
 
-### Value Label Color
+This option allows you to render legend items without any wrap and trim.
 
-This allows you to customize value label's color.
+![Legend Overflow None in chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/chart_LegendNone.png)
 
-![Value label Color Option](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/data-label-color-option.png)
+**Trim**
 
-![Value label Color](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/data-label-color.png)
+This option allows you to trim the legend items if its legend exceeds the 'Text Width' value.
 
-### Data label
+![Legend Overflow Trim in chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/chart_Legendtrim.png)
 
-Defines the display format as a `category, value, percentage, category and value, category and percentage, value and percentage,` or `all details`.
+**Wrap**
 
-### Category
+This option allows you to wrap legend items based on the 'Text Width' value.
 
-![Category](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/piechart-category.png)
+![Legend Overflow Wrap in chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/chart_Legendwrap.png)
 
-### Value
+#### Text Width
 
-![Value](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/piechart-Value.png)
+This option allows you to set a maximum width for the Legend Items and it is applicable only if the text-overflow is set to Trim or Wrap.
 
-### Percentage
-
-![Percentage](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/show-value-label.png)
-
-### Category and value
-
-![Category and Value](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/piecatergoryandvalue.png)
-
-### Category and percentage
-
-![Category and Percentage](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/piecatergoryandper.png)
-
-### Value and percentage
-
-![Value and Percentage](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/pievalueandper.png)
-
-### All details
-
-![Pie Chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/piechart-alldetails.png)
-
-### Value labels suffix
-
-Set a `suffix` value for the value labels.
-
-![Value Labels Suffix](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/labels-suffix.png)
+![Legend Text Width in chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/chart_Legendwidth.png)
 
 ### Link
 
@@ -317,6 +357,12 @@ This option shows when you add more than one measure field to the Value(s).
 By toggle off the `Use Default Palette,` you can customize the proportion series segments' colors by clicking the colored squares.
 
 ![Series color palette window](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/series-color-window.png)
+
+### Font settings
+
+This section allows you to customize the font size of the chart elements.
+
+![Font settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/font-settings.png)
 
 ### Filter
 

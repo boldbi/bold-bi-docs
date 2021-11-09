@@ -13,7 +13,7 @@ When connecting the SQL Server Windows Authentication mode in Bold BI, it will t
 ## Why this issue occurred
 `NT AUTHORITY/SYSTEM` is not added in IIS/IIS EXPRESS  to access SQL Server Windows Authentication mode.
  
-### The steps for adding `NT AUTHORITY/SYSTEM` to access SQL Server Windows Authentication mode in IIS/IISEXPRESS
+### The steps for adding `NT AUTHORITY/SYSTEM` to access SQL Server Windows Authentication mode in IIS or IIS EXPRESS
  
 In Microsoft SQL Server Management Studio, do the following in the Server.
  
@@ -25,4 +25,4 @@ In Microsoft SQL Server Management Studio, do the following in the Server.
  
     ![authority-system-add](/static/assets/embedded/faq/images/add-system.png)  
  
-3.  Then click "OK" to add the login `NT AUTHORITY/SYSTEM`. Once it was added, we can able to access Windows authentication mode in Bold BI. 
+3.  Then click "OK" to add the login `NT AUTHORITY/SYSTEM`. Once it was added, we can access Windows authentication mode in Bold BI. 

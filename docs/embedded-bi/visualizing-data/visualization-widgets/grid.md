@@ -124,6 +124,10 @@ This allows you to set a brief explanation about this grid widget.
 
 ![Basic settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/grid-basicsetting.png)
 
+#### Show Tooltip
+
+This option allows you to toggle the visibility of tooltip in a grid.
+
 #### Allow sorting
 
 You can toggle the interactive sorting of columns in grid control using this option. `It is enabled by default.`
@@ -153,6 +157,24 @@ This allows you to enable or disable the border of the grid control. This option
 This allows you to differentiate `alternative rows` of the grid by the background color. If you enable this property, the alternative rows change their background color as `#F7F7F7` by default. It can be customized from the `Content Settings` section.
 
 ![Grid Row Height](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/grid-alternativerowcolor.png)
+
+### Page Settings
+
+![Grid Row Height](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/grid-page-settings.png)
+
+#### Allow Paging
+
+This option allows you to enable the pagination in a Grid. When this option is enabled, the pager is enabled in the footer part and you can see the option to navigate pages like previous, next, and text box for choosing a required page and a total record count of bounded columns result.
+
+![Grid Row Height](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/grid-allowpaging.png)
+
+#### Disable Virtual Loading
+
+Enabling this option will fetch the entire record on initial load and there will not be any waiting indicator is shown on navigating between the pages.
+
+#### Page Size
+
+This option allows you to set a number of records that need to be fetched on the initial load. This also acts as page size for the pagination case.
 
 ### Header Settings
 

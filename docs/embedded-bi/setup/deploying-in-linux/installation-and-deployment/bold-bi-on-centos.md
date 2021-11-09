@@ -32,95 +32,206 @@ documentation: ug
 
 1. Register and download the Bold BI Linux package from [here](/embedded-bi/setup/overview/#registration-and-download).
 
-2. Update the highlighted URLs in the `product.json` file, located in `{extracted location}/boldbi/app_data/configuration/`. 
+2. Download the Bold BI Linux package by running the following command.
 
-    ![Product Json](/static/assets/embedded/setup/images/product-json.png)
+    ~~~shell
+    sudo wget {Bold BI Linux package link}
+    ~~~
 
-   | Application       	| Url                                                         	|
-   |-------------------	|-----------------------------------------------------------	|
-   | Idp 	            | `https://{Domain or IP address of the machine}`               |
-   | Bi  	            | `https://{Domain or IP address of the machine}/bi`            |
-   | BiDesigner  	    | `https://{Domain or IP address of the machine}/bi/designer`  	|
+3. Extract the zip file.
 
-3. Create a `boldbi-embedded` folder in the Linux Server inside the `/var/www/` directory and place the extracted files.
+    ~~~shell
+    sudo unzip {Bold BI Linux package zip file}
+    ~~~ 
 
-    > **NOTE:** Please create the `/var/www` folder, if doesn’t exist.
+4. Change the working directory to `BoldBIEnterpriseEdition-Linux` by running the following command. 
+
+    ~~~shell
+    cd BoldBIEnterpriseEdition-Linux
+    ~~~ 
  
-4. Provide executable permission to dotnet file, located in `/var/www/boldbi-embedded/dotnet/`. 
-
+5. Execute the following command to deploy Bold BI in your Linux machine. 
+ 
     ~~~shell
-    sudo chmod +x /var/www/boldbi-embedded/dotnet/dotnet  
+    sudo bash install-boldbi.sh -i {new} -u {user} -h {host URL} -n {true or false} 
     ~~~
  
-5. Once the libraries are installed, please make the following changes in all service files. 
-    
-    a. Update the user account that manages the service.
-    
-    ![Update User Account](/static/assets/embedded/setup/images/update-user-account.png)
 
-    b. Add the following line `Environment=LD_LIBRARY_PATH=/usr/local/lib`. 
+* **i :** Installation type: Specifies either it is a new or upgrade installation.
 
-    ![Add Environment](/static/assets/embedded/setup/images/environment.png)
+* **u :** Specifies the user or group that manages the service. 
 
-6.	Change the ownership of all directories to user or group.
+* **h :** Domain or IP address of the machine with HTTP protocol. 
 
+* **n :** Setting this to “true” will automatically configure the Bold BI with Nginx front-end server. 
+
+    >**IMPORTANT:** If you have any existing applications running in the Linux machine using Nginx, set “-n” value to false and configure the [Nginx manually](/embedded-bi/setup/deploying-in-linux/installation-and-deployment/bold-bi-on-ubuntu/#manually-configure-nginx)..  
+
+    Example for new installation,
     ~~~shell
-    sudo chown -R {{username or group}} /var/www/boldbi-embedded/   
-    ~~~
+    sudo bash install-boldbi.sh -i new -u www-data -h http://linux.example.com -n true
+    ~~~ 
 
-7.	Copy the service files to `/etc/systemd/system` folder.
+Once the installation completed, open the host URL in the browser and continue the application startup.
 
-8.	Enable all the services by running the following commands. 
+## Manually Configure Nginx
 
-    ~~~shell
-    sudo systemctl enable bold-id-web
-    sudo systemctl enable bold-id-api
-    sudo systemctl enable bold-ums-web
-    sudo systemctl enable bold-bi-web
-    sudo systemctl enable bold-bi-api
-    sudo systemctl enable bold-bi-jobs
-    sudo systemctl enable bold-bi-designer
-    ~~~
+To configure Nginx as a reverse proxy to forward requests to the Bold BI app, modify `/etc/nginx/nginx.conf.` Open it in a text editor, and add the following code.
 
-9.	Start all the services by running the following commands. 
+~~~shell
+#server {
+#listen 80;
+#server_name example.com;
+#return 301 https://example.com$request_uri;
+#}
 
-    ~~~shell
-    sudo systemctl start bold-id-web
-    sudo systemctl start bold-id-api
-    sudo systemctl start bold-ums-web
-    sudo systemctl start bold-bi-web
-    sudo systemctl start bold-bi-api
-    sudo systemctl start bold-bi-jobs
-    sudo systemctl start bold-bi-designer
-    ~~~
+server {
+		listen        80 default_server;
+		
+		#server_name   example.com;
+		
+		#listen 443 ssl;
+		#ssl on;
+		#ssl_certificate /path/to/certificate/file/domain.crt;
+		#ssl_certificate_key /path/to/key/file/domain.key;
+		
+		proxy_read_timeout 300;
+		proxy_connect_timeout 300;
+		proxy_send_timeout 300;
+		send_timeout 300;
+		client_max_body_size 200M;
 
-10.	Run the following commands to check the status of the services.
+	location / { 
+        root               /var/www/bold-services/application/idp/web/wwwroot;
+        proxy_pass         http://localhost:6500/;
+        proxy_http_version 1.1;
+        proxy_set_header   Upgrade $http_upgrade;
+        proxy_set_header   Connection keep-alive;
+        proxy_set_header   Host $host;
+        proxy_cache_bypass $http_upgrade;
+        proxy_set_header   X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header   X-Forwarded-Proto $scheme;
+		fastcgi_buffers    16 16k;
+		fastcgi_buffer_size 32k;
+    }
+	location /api {
+        proxy_pass         http://localhost:6501/api;
+        proxy_http_version 1.1;
+        proxy_set_header   Upgrade $http_upgrade;
+        proxy_set_header   Connection keep-alive;
+        proxy_set_header   Host $host;
+		proxy_cache_bypass $http_upgrade;
+        proxy_set_header   X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header   X-Forwarded-Proto $scheme;
+    }
+	location /ums {
+        root               /var/www/bold-services/application/idp/ums/wwwroot;
+        proxy_pass         http://localhost:6502/ums;
+        proxy_http_version 1.1;
+        proxy_set_header   Upgrade $http_upgrade;
+        proxy_set_header   Connection keep-alive;
+        proxy_set_header   Host $host;
+        proxy_cache_bypass $http_upgrade;
+        proxy_set_header   X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header   X-Forwarded-Proto $scheme;
+    }
+	location /ums/signalr/progresshub { 
+        proxy_pass         http://localhost:6502/ums/signalr/progresshub;
+        proxy_http_version 1.1;
+        proxy_set_header   Upgrade $http_upgrade;
+        proxy_set_header   Connection "upgrade";
+        proxy_set_header   Host $host;
+        proxy_cache_bypass $http_upgrade;
+        proxy_set_header   X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header   X-Forwarded-Proto $scheme;
+    }
+	location /bi { 
+		root               /var/www/bold-services/application/bi/web/wwwroot;
+        proxy_pass         http://localhost:6504/bi;
+        proxy_http_version 1.1;
+        proxy_set_header   Upgrade $http_upgrade;
+        proxy_set_header   Connection keep-alive;
+        proxy_set_header   Host $host;
+        proxy_cache_bypass $http_upgrade;
+        proxy_set_header   X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header   X-Forwarded-Proto $scheme;
+    }
+	location /bi/messageHub { 
+        proxy_pass         http://localhost:6504/bi/messageHub;
+        proxy_http_version 1.1;
+        proxy_set_header   Upgrade $http_upgrade;
+        proxy_set_header   Connection "upgrade";
+        proxy_set_header   Host $host;
+        proxy_cache_bypass $http_upgrade;
+        proxy_set_header   X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header   X-Forwarded-Proto $scheme;
+    }
+	location /bi/api {
+        proxy_pass         http://localhost:6505/bi/api;
+        proxy_http_version 1.1;
+        proxy_set_header   Upgrade $http_upgrade;
+        proxy_set_header   Connection keep-alive;
+        proxy_set_header   Host $host;
+        proxy_cache_bypass $http_upgrade;
+        proxy_set_header   X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header   X-Forwarded-Proto $scheme;
+    }
+	location /bi/jobs {
+        proxy_pass         http://localhost:6506/bi/jobs;
+		proxy_http_version 1.1;
+        proxy_set_header   Upgrade $http_upgrade;
+        proxy_set_header   Connection keep-alive;
+        proxy_set_header   Host $host;
+        proxy_cache_bypass $http_upgrade;
+        proxy_set_header   X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header   X-Forwarded-Proto $scheme;
+    }
+	location /bi/designer {
+        root               /var/www/bold-services/application/bi/designer/wwwroot;
+        proxy_pass         http://localhost:6507;
+        proxy_http_version 1.1;
+        proxy_set_header   Upgrade $http_upgrade;
+        proxy_set_header   Connection keep-alive;
+        proxy_set_header   Host $host;
+        proxy_cache_bypass $http_upgrade;
+        proxy_set_header   X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header   X-Forwarded-Proto $scheme;
+    }
+	location /bi/designer/helper {
+        proxy_pass http://localhost:6507/bi/designer/helper;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection "upgrade";
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+        proxy_set_header   X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header   X-Forwarded-Proto $scheme;
+    }
+}
+~~~
 
-    ~~~shell
-    sudo systemctl status bold-id-web
-    sudo systemctl status bold-id-api
-    sudo systemctl status bold-ums-web
-    sudo systemctl status bold-bi-web
-    sudo systemctl status bold-bi-api
-    sudo systemctl status bold-bi-jobs
-    sudo systemctl status bold-bi-designer
-    ~~~
+Once the Nginx configuration is established, run the `sudo nginx -t` to verify the syntax of the configuration files. If the configuration file test is successful, force the Nginx to pick up the changes by running the `sudo nginx -s reload.`
 
-## Configure Nginx 
- 
-1.	To configure Nginx as a reverse proxy to forward requests to the Bold BI app, copy the Nginx configuration file from `{extracted location}/boldbi-nginx-config to /etc/nginx/conf.d` folder.
+## Configure SSL
+If you have an SSL certificate for your domain and need to configure the site with your SSL certificate, follow these steps or you can skip this:
 
-2.	Rename the Nginx configuration file to `boldbi-nginx-config.conf`.  
+1. Uncomment the following marked lines in the Nginx config file.
 
-3.	Once the Nginx configuration is established, run the `sudo nginx -t` to verify the syntax of the configuration files.  
+    ![ssl configuration uncomment](/static/assets/embedded/setup/images/linux-ssl-configuration-uncomment.png)
 
-4.	If the configuration file test is successful, force the Nginx to pick up the changes by running the `sudo nginx -s reload`. 
+2. Comment the following marked line in the Nginx config file.
 
-5.	If this is the first site you are configuring in the server, then please run the following command to allow `httpd` to make connections to modules.
+    ![ssl configuration comment](/static/assets/embedded/setup/images/linux-ssl-configuration-comment.png)
 
-    ~~~shell
-    sudo setsebool -P httpd_can_network_connect 1   
-    ~~~
+3. Replace the `example.com` with your domain name.
+
+4. Define the path of the SSL certificate: `ssl_certificate /etc/ssl/domain.crt.`
+
+5. Specify the directory where the SSL certificate key is located: `ssl_certificate_key /etc/ssl/domain.key.`
+
+6. Save and run the `sudo nginx -t` to verify the syntax of the configuration file. If the configuration file test is successful, force the Nginx to pick up the changes by running the `sudo nginx -s reload.`
+
+> **NOTE:** If you are configuring the application with SSL, you need to update the URLs in the product.json with `HTTPS` located in the `/var/www/bold-services/application/app_data/configuration.
 
 ## Next steps
 

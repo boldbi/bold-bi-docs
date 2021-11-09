@@ -194,6 +194,10 @@ This allows you to set `description` for this column chart widget.
 
 ![Basic Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/basic-settings.png)
 
+#### Show Tooltip
+
+This option allows you to toggle the visibility of tooltip in chart.
+
 #### Chart type and axis
 
 Click the `Change` button to open the `Chart Type and Axis Settings` dialog. 
@@ -209,6 +213,84 @@ Click the `Change` button to open the `Chart Type and Axis Settings` dialog.
 #### Enable animation
 
 It animates the measure values when you toggle the `Enable Animation.`
+
+#### Show value labels
+
+This allows you to toggle the visibility of value labels.
+
+![Value labels in chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/value-labels.png)
+
+#### Customize
+
+This allows you to customize the toggle visibility of each series in Chart.
+
+![Value labels customization change](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/value-label-customization.png)
+
+![Value labels customization](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/value-label-change.png)
+
+#### Value Label Color
+
+This allows you to customize the value label's color.
+
+![Value label Color Option](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/data-label-color-option.png)
+
+![Value label Color](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/data-label-color.png)
+
+### Value Label Position
+
+This option allows you to customize the value label position in the chart. By default, it is set to ‘Auto,’ so the label position for the column chart will be set to Top.
+
+![Value label position](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/column-valuelabelposition.png)
+
+#### Value label rotation
+
+This allows you to define the `rotation angle for the value labels` to display.
+
+![Rotated labels](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/rotated-labels.png)
+
+#### Value label suffix
+
+This allows you to show or hide the suffix value of value labels.
+
+#### Suffix Value
+
+This allows you to customize the suffix value of value labels.
+
+![Labels with suffix](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/label-with-suffix.png)
+
+#### Show items with no data
+
+This allows you to show data, which column does not have value.
+
+![Empty Point Mode Gap](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/chart-gap.png)
+
+#### Column Width
+
+This option allows you to increase or decrease the width of the column by using the `Column Width.`
+
+![Column Width Customization](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/column-width-customization.png)
+
+![Column Width](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/column-width.png)
+
+#### Column Spacing
+
+This option allows you to increase or decrease the space between the columns by using the `Column Spacing.`
+
+![Column Spacing Customization](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/column-spacing-customization.png)
+
+![Column Spacing](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/column-spacing.png)
+
+#### Enable Smooth Scroll
+
+On enabling this support, the chart scroll bar thumb-size will be calculated based on the total records count. So, you can see the last record by performing a single scroll.
+
+#### Page Size
+
+This option allows you to set number of records needs to be fetched on initial load.
+
+### Legend Settings
+
+![Legend settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/legend-settings.png)
 
 #### Show legend
 
@@ -260,61 +342,37 @@ This allows you to add the legend title for the chart. It will reflect with the 
 
 ![Show Legend Title](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/legend-title.png)
 
-#### Show value labels
+#### Legend Shape
 
-This allows you to toggle the visibility of value labels.
+This option allows you change the **shape** of the legend.
 
-![Value labels in chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/value-labels.png)
+#### Text Overflow
 
-#### Value Label Customization
+This option allows you to customize legend text based on the 'Text Width' property value.
 
-This allows you to customize the visibility of the value labels.
+##### None
 
-![Value labels customization change](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/value-label-customization.png)
+This option allows you to render legend items without any wrap and trim.
 
-![Value labels customization](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/value-label-change.png)
+![Legend Overflow None in chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/ColumnChart_LegendNone.png)
 
-#### Value Label Color
+##### Trim
 
-This allows you to customize value label's color.
+This option allows you to trim the legend items if its legend exceeds the 'Text Width' value.
 
-![Value label Color Option](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/data-label-color-option.png)
+![Legend Overflow Trim in chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/ColumnChart_Legendtrim.png)
 
-![Value label Color](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/data-label-color.png)
+##### Wrap
 
-#### Value label rotation
+This option allows you to wrap legend items based on the 'Text Width' value.
 
-This allows you to define the `rotation angle for the value labels` to display.
+![Legend Overflow Wrap in chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/ColumnChart_Legendwrap.png)
 
-![Rotated labels](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/rotated-labels.png)
+#### Text Width
 
-#### Value label suffix
+This option allows you to set a maximum width for the Legend Items and it is applicable only if text-overflow set to Trim or Wrap.
 
-Allows you to enable the Suffix value text to the value labels.
-
-![Labels with suffix](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/label-with-suffix.png)
-
-#### Show items with no data
-
-This allows you to show data, which column does not have value.
-
-![Empty Point Mode Gap](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/chart-gap.png)
-
-#### Column Width
-
-This option allows you to increase or decrease the width of the column by using the `Column Width.`
-
-![Column Width Customization](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/column-width-customization.png)
-
-![Column Width](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/column-width.png)
-
-#### Column Spacing
-
-This option allows you to increase or decrease the space between the columns by using the `Column Spacing.`
-
-![Column Spacing Customization](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/column-spacing-customization.png)
-
-![Column Spacing](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/column-spacing.png)
+![Legend Text Width in chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/ColumnChart_Legendwidth.png)
 
 #### Axis Format
 
@@ -392,6 +450,14 @@ This option allows you to set a maximum width for the axis labels, and also it c
 This allows you to define the rotation angle for the category axis labels to display.
 
 ![Rotated category axis labels](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/label-rotation.png)
+
+#### Auto Interval and Interval
+
+![Axis interval](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/chart-auto-interval.png)
+
+By default, the 'Auto Interval' property is enabled. The Auto Interval property is used to set auto intervals based on the number of data points for category axis labels. If the user wants to customize the interval, then the user needs to disable the auto interval and set the required interval.
+
+![Axis interval Value](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/chart-interval.png)
 
 #### Primary value axis
 
@@ -635,16 +701,15 @@ You can choose the color for the record from the nearby color picker.
 #### Reset
 
 To undo all the changes, click `reset.`
+### Font settings
 
-### Font Settings 
+This section allows you to customize the font size of chart elements.
 
-Font settings section allows you to enable the auto font size.
+![Font settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/font-settings.png)
 
-### Auto Font Size
+#### Auto font Size and font size
 
-On enabling `auto font fize,` the size of the font is adjusted automatically based on the screen resolution.
-
-![Font settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/fontsettings.png)
+By default, the 'Auto Font Size' property is enabled. the Auto font size property is used to set font size based on dashboard viewing client machine resolution. If the user wants to customize or set fixed font size, then the user needs to disable auto font size and set required font size.
 
 ### Filter
 

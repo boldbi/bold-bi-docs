@@ -172,6 +172,10 @@ This allows you to set brief explanation about this Heatmap widget.
 
 ![Cell settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/cellsettings.png)
 
+#### Show Tooltip
+
+This option allows you to toggle the visibility of tooltip in a heat map.
+
 #### Show label
 
 This allows you to toggle the visibility of value labels.
@@ -297,6 +301,16 @@ This option trims the end of overlapping label in the axis.
 
 ![Trim](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/trim.png)
 
+#### Enable Trim
+
+This option allows you to trim x-axis labels based on the 'Maximum Label Width' property value.
+
+#### Maximum Label Width
+
+This option allows you to set a maximum width for the x-axis labels, and also it can be made customizable when the trim axis label option is enabled.
+
+![Maximum label width](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/maximum-label-width.png)
+
 #### Inversed axis
 
 This allows you to change the axis label’s placement order from left to right in the x-axis.
@@ -308,6 +322,14 @@ This allows you to change the axis label’s placement order from left to right 
 This allows you to change the axis position from bottom to top in the x-axis.
 
 ![Opposed axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/opposedaxis.png)
+
+#### Sorting
+
+This option allows you to perform sorting both x-axis and y-axis at the same time. As we currently plotting data as per the 2D resultant table, you are unable to sort both the X and Y axis at the same time. So, we have provided an option in the property panel to customize the sort setting in Heat Map. By default, `Auto` sorting is selected, and the sort order will be the same as per the 2D resultant table.
+
+X-axis sorting with 'Ascending' value.
+
+![Sorting](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/x-axis-sorting.png)
 
 ### Y-axis settings
 
@@ -339,6 +361,16 @@ This allows you to edit the x-axis title for the Heatmap. It will reflect in the
 
 ![axis title](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/y-axis-title-edit.png)
 
+#### Enable Trim
+
+This option allows you to trim y-axis labels based on the 'Maximum Label Width' property value.
+
+#### Maximum Label Width
+
+This option allows you to set the maximum width for the y-axis labels and also it can be made customizable when the trim axis label option is enabled.
+
+![Maximum label width](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/y-axis-maximum-label-width.png)
+
 #### Inversed axis
 
 This allows you to change the axis label’s placement order from bottom to top in the y-axis.
@@ -350,6 +382,14 @@ This allows you to change the axis label’s placement order from bottom to top 
 This allows you to change the axis position from left to right in the y-axis.
 
 ![Opposed y-axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/opposed-axis-y.png)
+
+#### Sorting
+
+This option allows you to perform sorting on both the x-axis and y-axis at the same time. As you are currently plotting data as per the 2D resultant table, you are unable to sort both the X and Y axis at the same time. So, we have provided an option in the property panel to customize the sort setting in Heat Map. By default, the Auto sorting is selected, and the sort order will be same as per 2D resultant table. 
+
+Y-axis sorting with the 'Descending' value.
+
+![Sorting](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/y-axis-sorting.png)
 
 ### Link
 

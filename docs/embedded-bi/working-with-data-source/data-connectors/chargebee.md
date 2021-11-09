@@ -33,19 +33,16 @@ To configure the Chargebee data source, follow the below steps:
 
 Once you click the Chargebee data source, the NEW DATA SOURCE configuration panel opens. Follow the below steps to create Chargebee data source.
 1. Enter a name and description (optional) for the data source.
-2. Enter your Chargebee hostname.
-3. Click the **Api EndPoints** drop-down box and choose the required endpoint.
-4. Click the **Custom Url** if you want to enter the URL manually. Refer to the [Chargebee API documentation](https://apidocs.chargebee.com/docs/api) for more details.
-5. Select the **GET** method for the REST API in the **Method** combo box.
-6. In **Max Rows**, enter the maximum number of rows to be fetched from the Chargebee data source. This value is used to fetch data from the Chargebee data source via pagination.
-7. Choose a time interval for the **Refresh Settings** using the combo box, to trigger the Rest API request periodically to keep the data in sync with our dashboard. 
-8. Select the **JSON** data type in the **Data Format** combo box.
-9. Choose **None** under the **Authentication Type** as authentication is done through the header. 
-10. Enter a valid Chargebee API key under the **Account key** textbox.
+2. Click the **API Endpoints** down drop box and choose the required endpoint.
+3. Click the **Custom Url** to enter the URL manually. Refer to the [Chargebee API documentation](https://apidocs.chargebee.com/docs/api)  for more details.
+4. Select the **GET** method for the REST API in the **Method** combo box.
+5. In **Max Rows**, enter the maximum number of rows to be fetched from the Chargebee data source. This value is used to fetch the data from the Chargebee data source via pagination.
+6. Choose a time interval for the **Refresh Settings** using the combo box, to trigger the Rest API request periodically to keep the data in sync with our dashboard.  
+7. Select the **JSON** data type in **Data Format** combo box.
+8. Choose the **Basic HTTP Authentication** under the **Authentication Type**. 
+9. Enter a valid Chargebee API key under the **Account key** textbox.
 
    ![Choose data source](/static/assets/embedded/working-with-datasource/data-connectors/images/chargebee/DataSource.png)
-
-    ![DataSourcesView](/static/assets/embedded/working-with-datasource/data-connectors/images/chargebee/DataSourcesView.png)
 
 You can also edit the connection information set here using the [Edit Connection](/embedded-bi/working-with-data-source/editing-a-data-connection/) option.
 

@@ -190,6 +190,10 @@ Set a `description` for the Pyramid chart widget whose visibility will be denote
 
 ![Basic settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/pyramid-chart/basic-settings.png)
 
+#### Show Tooltip
+
+This option allows you to toggle the visibility of tooltip in the pyramid chart.
+
 #### Chart type
 
 Switch the widget view from the current chart type to another chart type.
@@ -200,57 +204,6 @@ Switch the widget view from the current chart type to another chart type.
 
 It animates the measure values when you enable the `Enable Animation.`
 
-#### Show legend
-
-A legend is text used to describe the plotted data. It allows you to toggle the visibility of the legend in chart and change the legend text position (selecting through combo box).
-
-![Show legend](/static/assets/embedded/visualizing-data/visualization-widgets/images/pyramid-chart/show-legend.png)
-
-Enabling the **Custom Legend Text** option will allow you to define a custom text (through the text area) to display for each legend series (selecting through the combo box) in the chart.
-
-#### Legend Label Color
-
-This allows you to change the chart legend title and label colors.
-
-![Chart Legend Color Option](/static/assets/embedded/visualizing-data/visualization-widgets/images/pyramid-chart/legend-label-color-option.png)
-
-![Chart Legend Color](/static/assets/embedded/visualizing-data/visualization-widgets/images/pyramid-chart/legend-label-color.png)
-
-
-#### Customize
-
-You can customize the legend text through the `Custom Legend Settings` dialog. This dialog will show the legend text list as labels at left and corresponding text area at right to add the formatted text to display instead.
-
-![Legend customization](/static/assets/embedded/visualizing-data/visualization-widgets/images/pyramid-chart/legendcustomize.png)
-
-![Legend customization Change](/static/assets/embedded/visualizing-data/visualization-widgets/images/pyramid-chart/legendcustomize-change.png)
-
-#### Legend Position
-
-A Legend is a text used to describe the data plotted. This option allows you to place the legend at the position of **Left, Right, Top, and Bottom**.
-
-#### Legend Shape
-
-This allows you change the **shape** of the legend.
-
-***Circle***
-
-This option allows you to change the shape of the legend in a `Circle.`
-
-![Show Legend shape](/static/assets/embedded/visualizing-data/visualization-widgets/images/pyramid-chart/legend-shape.png)
-
-***Series Type***
-
-This option allows you to change the shape of the legend in `Series.`
-
-![Show Legend shape Series](/static/assets/embedded/visualizing-data/visualization-widgets/images/pyramid-chart/legendshape-series.png)
-
-#### Legend Title
-
-This allows you to add the legend title for the chart. It will reflect with the `Show Legend.`
-
-![Show Legend Title](/static/assets/embedded/visualizing-data/visualization-widgets/images/pyramid-chart/legendtitle.png)
-
 #### Show value labels
 
 Toggle the visibility of value labels.
@@ -259,7 +212,7 @@ Toggle the visibility of value labels.
 
 #### Value Label Color
 
-This allows you to customize value label's color.
+This allows you to customize the value label's color.
 
 ![Value label Color Option](/static/assets/embedded/visualizing-data/visualization-widgets/images/pyramid-chart/data-label-color-option.png)
 
@@ -299,9 +252,95 @@ Defines the display format as a `category, value, percentage, category and value
 
 #### Value labels suffix
 
-Set a suffix for the value labels.
+This allows you to show/hide the suffix value of value labels.
+
+### Suffix Value
+
+This allows you to customize the suffix value of value labels.
 
 ![Value labels suffix](/static/assets/embedded/visualizing-data/visualization-widgets/images/pyramid-chart/labels-suffix.png)
+
+#### Legend Settings
+
+![Legend settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/pyramid-chart/legend-settings.png)
+
+#### Show legend
+
+A legend is text used to describe the plotted data. It allows you to toggle the visibility of the legend in chart and change the legend text position (selecting through combo box).
+
+![Show legend](/static/assets/embedded/visualizing-data/visualization-widgets/images/pyramid-chart/show-legend.png)
+
+Enabling the **Custom Legend Text** option will allow you to define a custom text (through the text area) to display for each legend series (selecting through the combo box) in the chart.
+
+#### Legend Label Color
+
+This allows you to change the chart legend title and label colors.
+
+![Chart Legend Color Option](/static/assets/embedded/visualizing-data/visualization-widgets/images/pyramid-chart/legend-label-color-option.png)
+
+![Chart Legend Color](/static/assets/embedded/visualizing-data/visualization-widgets/images/pyramid-chart/legend-label-color.png)
+
+#### Customize
+
+You can customize the legend text through the `Custom Legend Settings` dialog. This dialog will show the legend text list as labels at left and corresponding text area at right to add the formatted text to display instead.
+
+![Legend customization](/static/assets/embedded/visualizing-data/visualization-widgets/images/pyramid-chart/legendcustomize.png)
+
+![Legend customization Change](/static/assets/embedded/visualizing-data/visualization-widgets/images/pyramid-chart/legendcustomize-change.png)
+
+#### Legend Position
+
+A Legend is a text used to describe the data plotted. This option allows you to place the legend at the position of **Left, Right, Top, and Bottom**.
+
+#### Legend Shape
+
+This allows you change the **shape** of the legend.
+
+***Circle***
+
+This option allows you to change the shape of the legend in a `Circle.`
+
+![Show Legend shape](/static/assets/embedded/visualizing-data/visualization-widgets/images/pyramid-chart/legend-shape.png)
+
+***Series Type***
+
+This option allows you to change the shape of the legend in `Series.`
+
+![Show Legend shape Series](/static/assets/embedded/visualizing-data/visualization-widgets/images/pyramid-chart/legendshape-series.png)
+
+#### Legend Title
+
+This allows you to add the legend title for the chart. It will reflect with the `Show Legend.`
+
+![Show Legend Title](/static/assets/embedded/visualizing-data/visualization-widgets/images/pyramid-chart/legendtitle.png)
+
+### Text Overflow
+
+This option allows you to customize legend text based on the 'Text Width' property value.
+
+**None**
+
+This option allows you to render legend items without any wrap and trim.
+
+![Legend Overflow None in chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/pyramid-chart/chart_LegendNone.png)
+
+**Trim**
+
+This option allows you to trim the legend items if its legend exceeds the 'Text Width' value.
+
+![Legend Overflow Trim in chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/pyramid-chart/chart_Legendtrim.png)
+
+**Wrap**
+
+This option allows you to wrap legend items based on the 'Text Width' value.
+
+![Legend Overflow Wrap in chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/pyramid-chart/chart_Legendwrap.png)
+
+#### Text Width
+
+This option allows you to set a maximum width for the Legend Items and it is applicable only if text-overflow is set to Trim or Wrap.
+
+![Legend Text Width in chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/pyramid-chart/chart_Legendwidth.png)
 
 #### Link
 
@@ -332,6 +371,12 @@ This option shows when you add more than one measure field to the Value(s).
 By toggle off the `Use Default Palette`, you can customize the proportion series segments' colors by clicking the colored squares.
 
 ![Series color palette window](/static/assets/embedded/visualizing-data/visualization-widgets/images/pyramid-chart/series-color-palette-window.png)
+
+### Font settings
+
+This section allows you to customize the font size of the chart elements.
+
+![Font settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/pyramid-chart/font-settings.png)
 
 #### Filter
 

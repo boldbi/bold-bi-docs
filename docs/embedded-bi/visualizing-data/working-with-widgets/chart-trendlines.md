@@ -46,6 +46,10 @@ You can change the series that shows the trendline by Series drop-down option.
 
 You can select line type by Line Type drop-down option (`Linear, Exponential, Logarithmic, Power, and Polynomial`).
 
+### Line Width
+
+You can set the width of the trendline.
+
 ### Line color
 
 You can change color of trendline by `Line Color` color picker.

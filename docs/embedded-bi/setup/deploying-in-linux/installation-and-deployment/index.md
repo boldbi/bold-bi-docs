@@ -10,6 +10,8 @@ documentation: ug
 
 Bold BI Linux can run in Ubuntu and CentOS operating systems.
 
+[Bold BI Version 4.1 or Older](/embedded-bi/setup/deploying-in-linux/installation-and-deployment/v4.1-or-older/)
+
 [Bold BI on Ubuntu](/embedded-bi/setup/deploying-in-linux/installation-and-deployment/bold-bi-on-ubuntu/)
 
 [Bold BI on CentOS](/embedded-bi/setup/deploying-in-linux/installation-and-deployment/bold-bi-on-centos/)

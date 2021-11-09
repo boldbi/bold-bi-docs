@@ -197,6 +197,12 @@ The following screenshot shows the Number Card widget, after modifying the heade
 
 ![Header properties customized](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/header-properties.png)
 
+### Basic Settings
+
+### Show Tooltip
+
+This option allows you to toggle the visibility of tooltip in a card.
+
 ## How to apply conditional formatting in Number card
 
 By enabling the advanced settings in formatting , you can customize the color, styles, and highlighting of the data based on the conditional range values.
@@ -285,6 +291,10 @@ Select the checkbox next to the options to customize the properties, and similar
 ### Horizontal alignment 
 
 This option allows you to place the content of the widget at the position of **Left,Center and Right**.
+
+### Vertical alignment
+
+This option allows you to customize the alignment of the number card vertically. This dropdown option has Top, Center, and Bottom values. By default, the alignment value is set to ‘Center.’
 
 ### Auto font size
 

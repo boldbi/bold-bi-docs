@@ -178,6 +178,10 @@ Allows you to provide the `description` about this area chart widget.
 
 ![Basic Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/basic-settings.png)
 
+#### Show Tooltip
+
+This option allows you to toggle the visibility of tooltip in chart.
+
 #### Chart Type and axis
 
 Click the `Change` button to open the `Chart Type and Axis Settings` dialog. 
@@ -191,6 +195,98 @@ Click the `Change` button to open the `Chart Type and Axis Settings` dialog.
 #### Enable Animation
 
 It animates the measure values when you toggle the `Enable Animation.`
+
+#### Show Value Labels
+
+This allows you to toggle the visibility of value labels.
+
+![Show Value Labels](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/show-labels.png)
+
+#### Customize
+
+This allows you to customize the toggle visibility of each series in Chart.
+
+![Value labels customization change](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/value-label-customization.png)
+
+![Value labels customization](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/value-label-change.png)
+
+#### Value Label Color
+
+This allows you to customize the value label's color.
+
+![Value label Color Option](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/data-label-color-option.png)
+
+![Value label Color](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/data-label-color.png)
+
+#### Value Label Position
+
+This option allows you to customize the value label position in the chart. By default, it is set to ‘Auto,’ so the label position for area chart will be set as Top.
+
+![Value label position](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/valuelabelposition.png)
+
+#### Value Label Rotation
+ 
+This allows you to define the rotation angle for the value labels to display.
+
+![Value Label Rotation](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/areachart-showlabelrotation.png)
+
+#### Value Label Suffix
+
+This allows you to show or hide the suffix value of value labels.
+
+#### Suffix Value
+
+This allows you to customize the suffix value of value labels.
+
+![Suffix Value](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/suffix-value.png)
+
+#### Show Marker
+
+This allows you to toggle the visibility of marker from label to adorn each data point in chart series.
+
+![Visibility of marker](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/show-marker.png)
+
+### Show Items With No Data
+
+This allows you to show the data which column does `not` have value.
+
+![Empty Point Mode Gap](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/areachart-gap.png)
+
+### Empty Point Mode
+
+This allows you to handle the display mode of the data point values is `null or undefined.`
+ 
+![Empty Point Mode Gap](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/areachart-gap.png)
+
+### Gap
+
+This option allows you to show the null or undefined values with gaps.
+
+![Empty Point Mode Gap](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/areachart-gap.png)
+
+### Zero
+
+This option allows you to show the null or undefined values in the zero axis.
+
+![Empty Point Mode Zero](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/areachart-zero.png)
+
+### Average
+
+This option allows you to display the null or undefined values with the average value.
+
+![Empty Point Mode Zero](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/areachart-average.png)
+
+### Enable Smooth Scroll
+
+On enabling this support, the chart scroll bar thumb-size will be calculated based on the total records count. So, you can see the last record by performing a single scroll.
+
+#### Page Size
+
+This option allows you to set number of records needs to be fetched on initial load.
+
+### Legend Settings
+
+![Legend settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/legend-settings.png)
 
 #### Show Legend
 
@@ -256,47 +352,33 @@ This allows you to add the legend title for the chart. It will reflect with the 
 
 ![Show Legend Title](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/legendtitle.png)
 
-#### Show Value Labels
+#### Text Overflow
 
-This allows you to toggle the visibility of value labels.
+This option allows you to customize legend text based on the 'Text Width' property value.
 
-![Show Value Labels](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/show-labels.png)
+##### None
 
-#### Value Label Color
+This option allows you to render legend items without any wrap and trim.
 
-This allows you to customize value label's color.
+![Legend Overflow None in chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/chart_LegendNone.png)
 
-![Value label Color Option](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/data-label-color-option.png)
+##### Trim
 
-![Value label Color](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/data-label-color.png)
+This option allows you to trim the legend items if it's legend exceeds the 'Text Width' value.
 
-#### Value Label Rotation
- 
-This allows you to define the rotation angle for the value labels to display.
+![Legend Overflow Trim in chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/chart_Legendtrim.png)
 
-![Value Label Rotation](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/areachart-showlabelrotation.png)
+##### Wrap
 
-#### Value Label Suffix
+This option allows you to wrap legend items based on 'Text Width' value.
 
-Allows you to enable the Suffix value text to the value labels. 
+![Legend Overflow Wrap in chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/chart_Legendwrap.png)
 
-#### Suffix Value
+#### Text Width
 
-Allows you to set\edit suffix value to the value labels. 
+This option allows you to set maximum width for the Legend Items and it is applicable only if text overflow set as Trim or Wrap.
 
-![Suffix Value](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/suffix-value.png)
-
-#### Show Marker
-
-This allows you to toggle the visibility of marker from label to adorn each data point in chart series.
-
-![Visibility of marker](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/show-marker.png)
-
-### Show Items With No Data
-
-This allows you to show the data which column does `not` have value.
-
-![Empty Point Mode Gap](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/areachart-gap.png)
+![Legend Text Width in chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/chart_Legendwidth.png)
 
 #### Link
 
@@ -369,6 +451,14 @@ This option allows you to set a `maximum width` for the axis labels, and also it
 This allows you to define the rotation angle for the category axis labels to display.
 
 ![Category Axis Label Rotation](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/label-rotation.png)
+
+#### Auto Interval and Interval
+
+![Axis interval](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/chart-auto-interval.png)
+
+By default, the 'Auto Interval' property is enabled. The Auto Interval property is used to set auto intervals based on the number of data points for category axis labels. If a user wants to customize the interval, then the user needs to disable the auto interval and set the required interval.
+
+![Axis interval Value](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/chart-interval.png)
 
 #### Show Primary Value Axis
 
@@ -480,6 +570,16 @@ This allows you to customize the color for the widget.
 ![Formatting](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/formatting.png)
 
 ![Formatting Otput](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/formatting-output.png)
+
+### Font settings
+
+This section allows you to customize font size of chart elements.
+
+![Font settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/area-chart/font-settings.png)
+
+#### Auto font Size and font size
+
+By default, the 'Auto Font Size' property is enabled. Auto font size property is used to set font size based on the dashboard viewing client machine resolution. If the user wants to customize or set fixed font size, then the user needs to disable auto font size and set the required font size.
 
 #### Filter
 

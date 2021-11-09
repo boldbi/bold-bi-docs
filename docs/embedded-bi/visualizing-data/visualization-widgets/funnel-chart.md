@@ -189,6 +189,10 @@ Set a `description` for the Funnel chart widget, whose visibility will be denote
 
 ![Basic settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/funnel-chart/basic-settings.png)
 
+#### Show Tooltip
+
+This option allows you to toggle the visibility of tooltip in a chart.
+
 #### Chart type
 
 Switch the widget view from the current chart type to another chart type.
@@ -196,6 +200,66 @@ Switch the widget view from the current chart type to another chart type.
 #### Enable animation
 
 It animates the measure values when you enable the `Enable Animation.`
+
+#### Show value labels
+
+Toggle the visibility of value labels.
+
+![Show value labels](/static/assets/embedded/visualizing-data/visualization-widgets/images/funnel-chart/show-value-labels.png)
+
+#### Value Label Color
+
+This allows you to customize the value label's color.
+
+![Value label Color](/static/assets/embedded/visualizing-data/visualization-widgets/images/funnel-chart/data-label-color.png)
+
+![Value label Color Option](/static/assets/embedded/visualizing-data/visualization-widgets/images/funnel-chart/data-label-color-option.png)
+
+#### Data label
+
+Define the display format as a value, percentage, or both.
+
+#### Category
+
+![Value](/static/assets/embedded/visualizing-data/visualization-widgets/images/funnel-chart/category.png)
+
+#### Value
+
+![Value](/static/assets/embedded/visualizing-data/visualization-widgets/images/funnel-chart/value.png)
+
+#### Percentage
+
+![Percentage](/static/assets/embedded/visualizing-data/visualization-widgets/images/funnel-chart/percentage.png)
+
+#### Category and percentage
+
+![Value and percentage](/static/assets/embedded/visualizing-data/visualization-widgets/images/funnel-chart/category-and-value.png)
+
+#### Category and percentage
+
+![Value and percentage](/static/assets/embedded/visualizing-data/visualization-widgets/images/funnel-chart/category-and-percentage.png)
+
+#### Value and percentage
+
+![Value and percentage](/static/assets/embedded/visualizing-data/visualization-widgets/images/funnel-chart/value-and-percentage.png)
+
+### All Details
+
+![Value and percentage](/static/assets/embedded/visualizing-data/visualization-widgets/images/funnel-chart/alldetails.png)
+
+### Value labels suffix
+
+This allows you to show or hide the suffix value of value labels.
+
+### Suffix Value
+
+This allows you to customize the suffix value of value labels.
+
+![Value labels suffix](/static/assets/embedded/visualizing-data/visualization-widgets/images/funnel-chart/value-labels-suffix.png)
+
+### Legend Settings
+
+![Legend settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/funnel-chart/legend-settings.png)
 
 #### Show legend
 
@@ -247,57 +311,33 @@ This allows you to add the legend title for the chart. It will reflect with the 
 
 ![Show Legend Title](/static/assets/embedded/visualizing-data/visualization-widgets/images/funnel-chart/legendtitle.png)
 
-#### Show value labels
+#### Text Overflow
 
-Toggle the visibility of value labels.
+This option allows you to customize legend text based on the 'Text Width' property value.
 
-![Show value labels](/static/assets/embedded/visualizing-data/visualization-widgets/images/funnel-chart/show-value-labels.png)
+**None**
 
-#### Value Label Color
+This option allows you to render legend items without any wrap and trim.
 
-This allows you to customize value label's color.
+![Legend Overflow None in chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/funnel-chart/chart_LegendNone.png)
 
-![Value label Color](/static/assets/embedded/visualizing-data/visualization-widgets/images/funnel-chart/data-label-color.png)
+**Trim**
 
-![Value label Color Option](/static/assets/embedded/visualizing-data/visualization-widgets/images/funnel-chart/data-label-color-option.png)
+This option allows you to trim the legend items if its legend exceeds the 'Text Width' value.
 
-#### Data label
+![Legend Overflow Trim in chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/funnel-chart/chart_Legendtrim.png)
 
-Define the display format as a value, percentage, or both.
+**Wrap**
 
-#### Category
+This option allows you to wrap legend items based on 'Text Width' value.
 
-![Value](/static/assets/embedded/visualizing-data/visualization-widgets/images/funnel-chart/category.png)
+![Legend Overflow Wrap in chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/funnel-chart/chart_Legendwrap.png)
 
-#### Value
+#### Text Width
 
-![Value](/static/assets/embedded/visualizing-data/visualization-widgets/images/funnel-chart/value.png)
+This option allows you to set maximum width for the Legend Items and it is applicable only if text overflow set as Trim or Wrap.
 
-#### Percentage
-
-![Percentage](/static/assets/embedded/visualizing-data/visualization-widgets/images/funnel-chart/percentage.png)
-
-#### Category and percentage
-
-![Value and percentage](/static/assets/embedded/visualizing-data/visualization-widgets/images/funnel-chart/category-and-value.png)
-
-#### Category and percentage
-
-![Value and percentage](/static/assets/embedded/visualizing-data/visualization-widgets/images/funnel-chart/category-and-percentage.png)
-
-#### Value and percentage
-
-![Value and percentage](/static/assets/embedded/visualizing-data/visualization-widgets/images/funnel-chart/value-and-percentage.png)
-
-### All Details
-
-![Value and percentage](/static/assets/embedded/visualizing-data/visualization-widgets/images/funnel-chart/alldetails.png)
-
-### Value labels suffix
-
-Set a suffix for the value labels.
-
-![Value labels suffix](/static/assets/embedded/visualizing-data/visualization-widgets/images/funnel-chart/value-labels-suffix.png)
+![Legend Text Width in chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/funnel-chart/chart_Legendwidth.png)
 
 #### Link
 
@@ -328,6 +368,12 @@ This option shows when you add more than one measure field to the Value(s).
 By toggle off the `Use Default Palette,` you can customize the proportion series segments' colors by clicking the colored squares.
 
 ![Series color palette window](/static/assets/embedded/visualizing-data/visualization-widgets/images/funnel-chart/series-color-palette-window.png)
+
+### Font settings
+
+This section allows you to customize font size of chart elements.
+
+![Font settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/funnel-chart/font-settings.png)
 
 #### Filter
 

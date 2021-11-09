@@ -180,6 +180,10 @@ Set a `description` for the Doughnut chart, whose visibility will be denoted by 
 
 ![Basic settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/basic-settings.png)
 
+#### Show Tooltip
+
+This option allows you to toggle the visibility of tooltip in a chart.
+
 #### Chart type
 
 Switch the widget view from the current chart type to another chart type.
@@ -190,58 +194,6 @@ Switch the widget view from the current chart type to another chart type.
 
 It animates the measure values when you enable the `Enable Animation.`
 
-#### Show legend
-
-A Legend is a text used to describe the plotted data. It allows you to toggle the visibility of the legend in the chart and change the legend text position (selecting through the combo box).
-
-![Show legend](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/show-legend.png)
-
-Enabling the **Custom Legend Text** option will allow you to define a custom text (through the text area) to display for each legend series (selecting through the combo box) in the chart.
-
-#### Legend Label Color
-
-This allows you to change the chart legend title and label colors.
-
-![Chart Legend Color Option](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/legend-label-color-option.png)
-
-![Chart Legend Color](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/legend-label-color.png)
-
-#### Customize
-
-You can customize the legend text through the Custom Legend Settings dialog. This dialog will show the legend text list as labels at left and corresponding text area at right to add the formatted text to display instead.
-
-![Legend customization](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/legend-custom.png)
-
-*After customize the legend*
-
-![Legend customization](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/legend.png)
-
-### Legend Position
-
-You can able to change the position for the legend at `Top, Left, Right` and `Bottom.`
-
-#### Legend Shape
-
-This allows you to change the **shape** of the legend.
-
-***Circle***
-
-This option allows you to change the shape of the legend in a `Circle.`
-
-![Show Legend shape](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/doughnutlegend-shape.png)
-
-***Series Type***
-
-This option allows you to change the shape of the legend in `Series.`
-
-![Show Legend shape Series](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/doughnut-legendshape-series.png)
-
-#### Legend Title
-
-This allows you to add the legend title for the chart. It will reflect with the `Show Legend.`
-
-![Show Legend Title](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/doughnut-legendtitle.png)
-
 #### Show value labels
 
 Toggle the visibility of value labels.
@@ -250,7 +202,7 @@ Toggle the visibility of value labels.
 
 #### Value Label Color
 
-This allows you to customize value label's color.
+This allows you to customize the value label's color.
 
 ![Value label Color Option](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/data-label-color-option.png)
 
@@ -258,7 +210,7 @@ This allows you to customize value label's color.
 
 #### Data label
 
-You can able to define the display format as a `category, value, percentage, category and value, value and percentage, category and percentage, ` or `all details`.
+You can define the display format as a `category, value, percentage, category and value, value and percentage, category and percentage, ` or `all details.`
 
 #### Category
 
@@ -290,9 +242,97 @@ You can able to define the display format as a `category, value, percentage, cat
 
 #### Value labels suffix
 
-Set a suffix for the value labels.
+This allows you to show or hide the suffix value of value labels.
+
+### Suffix Value
+
+This allows you to customize the suffix value of value labels.
 
 ![Value labels suffix](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/value-label-suffix.png)
+
+### Legend Settings
+
+![Legend settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/legend-settings.png)
+
+#### Show legend
+
+A Legend is a text used to describe the plotted data. It allows you to toggle the visibility of the legend in the chart and change the legend text position (selecting through the combo box).
+
+![Show legend](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/show-legend.png)
+
+Enabling the **Custom Legend Text** option will allow you to define a custom text (through the text area) to display for each legend series (selecting through the combo box) in the chart.
+
+#### Label Color
+
+This allows you to change the chart legend title and label colors.
+
+![Chart Legend Color Option](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/legend-label-color-option.png)
+
+![Chart Legend Color](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/legend-label-color.png)
+
+#### Customize
+
+You can customize the legend text through the Custom Legend Settings dialog. This dialog will show the legend text list as labels at left and corresponding text area at right to add the formatted text to display instead.
+
+![Legend customization](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/legend-custom.png)
+
+*After customize the legend*
+
+![Legend customization](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/legend.png)
+
+### Position
+
+You can able to change the position for the legend at `Top, Left, Right,` and `Bottom.`
+
+#### Shape
+
+This allows you to change the **shape** of the legend.
+
+***Circle***
+
+This option allows you to change the shape of the legend in a `Circle.`
+
+![Show Legend shape](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/doughnutlegend-shape.png)
+
+***Series Type***
+
+This option allows you to change the shape of the legend in `Series.`
+
+![Show Legend shape Series](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/doughnut-legendshape-series.png)
+
+#### Title
+
+This allows you to add the legend title for the chart. It will reflect with the `Show Legend.`
+
+![Show Legend Title](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/doughnut-legendtitle.png)
+
+#### Text Overflow
+
+This option allows you to customize legend text based on the 'Text Width' property value.
+
+**None**
+
+This option allows you to render legend items without any wrap and trim.
+
+![Legend Overflow None in chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/chart_LegendNone.png)
+
+**Trim**
+
+This option allows you to trim the legend items if its legend exceeds the 'Text Width' value.
+
+![Legend Overflow Trim in chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/chart_Legendtrim.png)
+
+**Wrap**
+
+This option allows you to wrap legend items based on 'Text Width' value.
+
+![Legend Overflow Wrap in chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/chart_Legendwrap.png)
+
+#### Text Width
+
+This option allows you to set maximum width for the Legend Items and it is applicable only if text overflow set as Trim or Wrap.
+
+![Legend Text Width in chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/chart_Legendwidth.png)
 
 ### Filter
 
@@ -323,6 +363,12 @@ You can enable linking and configure navigating to a general URL with or without
 By toggling the `series palette,` you can customize the proportion series segments’ colors.
 
 ![Series palette](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/seriespalette.png)
+
+### Font settings
+
+This section allows you to customize font size of chart elements.
+
+![Font settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/font-settings.png)
 
 #### Based On
 

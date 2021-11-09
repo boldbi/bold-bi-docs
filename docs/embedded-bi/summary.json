@@ -25,10 +25,15 @@
       "Deploying in Linux": {
         "Prerequisites": "prerequisites-linux",
         "Installation and Deployment": {
+		    "v4.1 or Older": {
+			    "Bold BI on Ubuntu": "bold-bi-on-ubuntu",
+			    "Bold BI on CentOS": "bold-bi-on-centos"
+		      },
           "Bold BI on Ubuntu": "bold-bi-on-ubuntu",
           "Bold BI on CentOS": "bold-bi-on-centos"
         },
         "Install Optional Libraries": "install-optional-libraries.md",
+        "Install optional libraries for version 4.1 or older":"install-optional-libraries-for-v4.1-or-older.md",
         "Upgrading Bold BI Linux Server": "upgrade-to-latest"
       },
       "Deploying in Kubernetes": "deploying-in-kubernetes",
@@ -123,6 +128,7 @@
         "Copper": "copper",
         "Dropbox": "dropbox",
         "EDI": "edi",
+		"Elasticsearch": "elastic-search",
         "Excel": "excel",
         "Facebook": "facebook",
         "Facebook Ads": "facebook-ads",
@@ -164,6 +170,7 @@
         "Lighthouse": "lighthouse",
         "LinkedIn": "linkedin",
         "Live Agent": "live-agent",
+		"Live web": "live-web",
         "Mailchimp": "mailchimp",
         "MariaDB": "mariadb",
         "MemSQL": "memsql",
@@ -231,7 +238,8 @@
         "Joining Tables": "joining-table",
         "Formatting Columns": "formatting-column",
         "Configure Data Filters": "configuring-data-filters",
-        "Configure Expression Columns": "configuring-expression-columns"
+        "Configure Expression Columns": "configuring-expression-columns",
+		"Data Sampling": "data-sampling"
       },
       "Connecting to Stored Procedures": "connecting-to-stored-procedures",
       "Editing a Data Source": "editing-a-data-source",
@@ -247,7 +255,6 @@
         "Query": "user-filter-advanced-query-mode"
       },
       "Dashboard Parameters": "dashboard-parameter",
-	    "Data Sampling": "data-sampling",
       "Configure Dashboard Parameter": "configuring-dashboard-parameters",
       "Configure Custom Attribute": "configuring-custom-attribute",
       "Configure Isolation code": "configuring-isolation-code"
@@ -504,6 +511,7 @@
     },
     "FAQ": {
       "What are the resources will be generated in the installed machine?": "what-all-are-the-files-and-folders-will-be-generated-in-the-installed-machine",
+	    "How to change the user after installation of Bold BI on Linux?": "change-the-user-after-installing-bold-bi-on-linux",
       "How to change the binding in the Bold BI Embedded?": "how-to-change-binding-in-bold-bi-embedded",
       "How to change the binding in the Bold BI Embedded version 4.1.36?": "how-to-change-binding-in-bold-bi-embedded-v4.1.36",
       "How to change the binding in the Bold BI Embedded version below 4.1.36?": "how-to-change-binding-in-bold-bi-embedded-below-v4.1.36",
@@ -545,8 +553,12 @@
     "How to customize side bar menu based on user permission?":"how-to-customize-side-bar-menu",
 	"How to resolve jQuery conflict in embedding": "how-to-resolve-jquery-conflict-in-embedding",
   "What are the database permissions required to set up Bold BI Embedded?": "what-are-the-database-permissions-required-to-set-up-bold-bi-embedded.md",
-  "How to restart the Bold BI Embedded application":"how-to-restart-the-bold-bi-embedded-application"
-
+  "How to restart the Bold BI Embedded application":"how-to-restart-the-bold-bi-embedded-application",
+  "How to pass dashboard parameter in iframe embedding a dshboard": "how-to-pass-dashboard-parameter-in-iframe-embedding-a-dashboard",
+	  "How to connect data sources with SSH connection in Bold BI":"how-to-connect-data-sources-with-ssh-connection-in-bold-bi",
+	  "How to enable SSL through connection parameters for PostgreSQL data source":"how-to-enable-ssl-through-connection-parameters-for-postgresql-data-source",
+      "How to transpose the data columns and rows in MS SQL data source":"how-to-transpose-the-data-columns-and-rows-in-sql-data-source",
+      "How to access the custom JSON data using PostgreSQL data source":"how-to-access-the-custom-json-data-using-postgresql-data-source"
     }
   }
 }

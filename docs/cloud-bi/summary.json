@@ -10,6 +10,7 @@
       "Data Connectors": {
         "42matters": "42matters",
         "ActiveCampaign": "activecampaign",
+		"Amazon Athena": "amazon-athena",
         "Amazon Aurora": "amazon-aurora",
         "Amazon MWS": "amazon-mws",
         "Amazon RDS": "amazon-rds",
@@ -78,6 +79,7 @@
         "Lighthouse": "lighthouse",
         "LinkedIn": "linkedin",
         "Live Agent": "live-agent",
+		"Live web": "live-web",
         "Mailchimp": "mailchimp",
         "MariaDB": "mariadb",
         "MemSQL": "memsql",
@@ -354,7 +356,11 @@
 	  "How to enable authorized access to dashboards for users": "dashboard-authorized-access",
 	  "How to add a new data connector under Bold BI": "how-to-add-a-new-data-connector-under-bold-bi",
 	  "How to add threshold to a Chart widget":"how-to-add-threshold-to-a-chart-widget",
-    "How to use groups in Bold BI?":"how-to-use-groups-in-bold-bi"
+      "How to use groups in Bold BI?":"how-to-use-groups-in-bold-bi",
+      "How to pass dashboard parameter in iframe embedding a dshboard": "how-to-pass-dashboard-parameter-in-iframe-embedding-a-dashboard",
+	  "How to enable SSL through connection parameters for PostgreSQL data source":"how-to-enable-ssl-through-connection-parameters-for-postgresql-data-source",
+	  "How to transpose the data columns and rows in MS SQL data source":"how-to-transpose-the-data-columns-and-rows-in-sql-data-source",
+      "How to access the custom JSON data using PostgreSQL data source":"how-to-access-the-custom-json-data-using-postgresql-data-source"
     }
   }
 }
