@@ -152,6 +152,10 @@ This allows you to set brief explanation about this grid widget.
 
 ![Basic Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/basic-settings.png)
 
+#### Show Tooltip
+
+This option allows you to toggle the visibility of tooltip in the tree map.
+
 #### Show legend
 
 This allows you to toggle the visibility of legend.

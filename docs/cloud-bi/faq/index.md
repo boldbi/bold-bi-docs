@@ -35,3 +35,11 @@ The following are the frequently asked questions in Bold BI Cloud :
 [How to add threshold to a Chart widget](/cloud-bi/faq/how-to-add-threshold-to-a-chart-widget/)
 
 [How to use groups in Bold BI?](/cloud-bi/faq/how-to-use-groups-in-bold-bi/)
+
+[How to pass dashboard parameter in iframe embedding a dashboard?](/cloud-bi/faq/how-to-pass-dashboard-parameter-in-iframe-embedding-a-dashboard/)
+
+[How to enable SSL through connection parameters for PostgreSQL data source?](/cloud-bi/faq/how-to-enable-ssl-through-connection-parameters-for-postgresql-data-source/)
+
+[How to transpose the data columns and rows in MS SQL data source?](/cloud-bi/faq/how-to-transpose-the-data-columns-and-rows-in-sql-data-source/)
+
+[How to access the custom JSON data using PostgreSQL data source](/cloud-bi/faq/how-to-access-the-custom-json-data-using-postgresql-data-source/)

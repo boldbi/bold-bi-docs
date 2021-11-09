@@ -93,13 +93,6 @@ In addition **Search APIs** are limited to 60 requests per minute.
 
 #### Sample queries
 
-1. Query the <i>/Projects</i> endpoint.
-2. From the listed information get the id of the specific *Project*.
-
-Replace it in the URL to query a project section:
-
-`https://app.asana.com/api/1.0/projects/850616781135258/sections`
-
 **Projects**
 
 `https://app.asana.com/api/1.0/projects`
@@ -108,9 +101,41 @@ Replace it in the URL to query a project section:
 
 `https://app.asana.com/api/1.0/plan`
 
+**Project Section**
+
+ `https://app.asana.com/api/1.0/projects/<:project_gid>/sections`
+
+  **NOTE:** The project id can be found in the URL of the project in the Asana application. Example: Open the project in the Asana application and find the project id in the address bar like 
+  
+  `https://app.asana.com/0/**1111094557386982**/list`.
+  
+  To fetch specific project data, you need to replace the project id in the API endpoint of data source creation.
+
+  `https://app.asana.com/api/1.0/projects/**1111094557386982**/sections`
+
 **Tasks (Search)**
 
-`https://app.asana.com/api/1.0/workspaces/850617776313575/tasks/search`
+ `https://app.asana.com/api/1.0/workspaces/<:workspace_gid>/tasks/search`
+
+  **NOTE:** The workspace id can be found in the URL of the workspace in the Asana application. Example: Open the workspace in the Asana application and find the workspace id in the address bar like 
+  
+  `https://app.asana.com/0/**850617776313575**/list`.
+  
+  To fetch specific workspace data, you need to replace the workspace id in the API endpoint of data source creation.
+  
+  `https://app.asana.com/api/1.0/workspaces/**850617776313575**/tasks/search`
+
+**Projects from Team**
+
+ `https://app.asana.com/api/1.0/teams/<:team_gid>/projects`
+  
+   **NOTE:** The team id can be found in the URL of the team in the Asana application. Example: Open the team in the Asana application and find the team id in the address bar like 
+   
+   `https://app.asana.com/0/**1200407026130215**/list`.
+  
+   To fetch specific team data, you need to replace the team id in the API endpoint of data source creation.
+
+  `https://app.asana.com/api/1.0/teams/**1200407026130215**/projects`
 
 ### Preview and data import
 * Click **Preview & Connect** to connect with the configurations set.

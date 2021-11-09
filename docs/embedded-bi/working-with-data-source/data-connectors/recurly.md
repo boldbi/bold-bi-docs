@@ -26,18 +26,17 @@ To configure the Recurly data source, follow the below steps:
    ![Choose data source from server](/static/assets/embedded/working-with-datasource/data-connectors/images/recurly/ChooseDS_server.png)
 
 ## Create Recurly data source
+
 Once you click the data source, the NEW DATA SOURCE configuration panel opens. Follow the below steps to create Recurly data source.
 1. Enter a name and description (optional) for the data source.
-2. Enter a valid Recurly REST API endpoint in the URL textbox. Refer the [Recurly API documentation](https://dev.recurly.com/docs/getting-started) for more details.
-
-    Example: [https://&lt;:sub_domain&gt;.recurly.com/v1/charges](https://%3c:sub_domain%3e.Recurly.com/v1/charges)    
-
-3. Select **GET** method for the REST API in **Method** combo box.
-4. In **Max Rows**, enter the maximum number of rows to be fetched from the Recurly data source.
-5. Choose a time interval for **Refresh Settings** using the combo box, to trigger the Rest API request periodically to keep the data in sync with our dashboard.  
-6. Select **XML** data type in **Data Format** combo box.
-7. Choose *Basic HTTP Authentication* under **Authentication Type**.
-8. Enter a valid **Account Key** to access the endpoints in your account.
+2. Click the **API Endpoints** down drop box and choose the required endpoint.
+3. Click the **Custom Url** to enter the URL manually. Refer to the [Recurly API documentation](https://dev.recurly.com/docs/getting-started) for more details.
+4. Select **GET** method for the REST API in **Method** combo box.
+5. In **Max Rows**, enter the maximum number of rows to be fetched from the Recurly data source.
+6. Choose a time interval for the **Refresh Settings** using the combo box, to trigger the Rest API request periodically to keep the data in sync with our dashboard.  
+7. Select the **XML** data type in the **Data Format** combo box.
+8. Choose the *Basic HTTP Authentication* under the **Authentication Type**.
+9. Enter a valid the **Account Key** to access the endpoints in your account.
  
     ![DataSourcesView](/static/assets/embedded/working-with-datasource/data-connectors/images/recurly/DataSourcesView.png)
 

@@ -158,6 +158,10 @@ Allows you provide `description` about the Radial Gauge.
  
 ![Basic settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/radialgaugebasicsettings.png)
 
+#### Show Tooltip
+
+This option allows you to toggle the visibility of tooltip in the radial gauge.
+
 #### Gauge Type
 
 Allows you to switch the widget view from the Half Circle type to Horse Shoe type or Full circular gauge or vice versa. The default type is `Horse Shoe.`
@@ -338,6 +342,12 @@ Allows you to set the end value of the selected range. This option is displayed 
 #### Color
 
 Allows you to set the color of the selected range. This option is displayed only if the Show Range is true.
+
+#### Value Color
+You can customize color for the Actual value displayed in the Radial Gauge by range color or default label color.
+
+#### Label Color
+You can customize color for the Radial Gauge labels with the range color or default color.
 
 ### Link
 

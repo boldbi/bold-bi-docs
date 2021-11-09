@@ -36,8 +36,12 @@ After clicking the data source, the **NEW DATA SOURCE** configuration panel open
 5. Enter a valid PostgreSql database in the Database text box.
 6. To connect PostgreSql with SSL connection, enter the connection string **sslmode=Require;TrustServerCertificate=true** in **Additional connection parameters** text box.
 
-   ![PostgreSql Connection](/static/assets/cloud/working-with-datasource/data-connectors/images/Postgresql/Postgresql_Connection.png)
+   ![PostgreSql Connection](/static/assets/cloud/working-with-datasource/data-connectors/images/Postgresql/Postgresql_Connection.png#max-width=60%)
+   
+   To kill the created sessions, enter the connection string **Maximum Pool Size=1;Connection Idle Lifetime=45;Command Timeout=15** in **Additional connection parameters** text box.
 
+   ![Kill sessions](/static/assets/cloud/working-with-datasource/data-connectors/images/Postgresql/additional-parameters.png#max-width=60%)
+   
 There are two connection types available in a data source:
 
 	* Live mode

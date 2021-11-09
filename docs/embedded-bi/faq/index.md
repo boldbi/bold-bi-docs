@@ -13,6 +13,8 @@ The following are the frequently asked questions in Bold BI Enterprise:
 
 [What are the resources will be generated in the installed machine?](/embedded-bi/faq/what-all-are-the-files-and-folders-will-be-generated-in-the-installed-machine/)
 
+[How to change the user after installation of Bold BI on Linux?](/embedded-bi/faq/change-the-user-after-installing-bold-bi-on-linux/)
+
 [How to change the binding in Bold BI Embedded?](/embedded-bi/faq/how-to-change-binding-in-bold-bi-embedded/)
 
 [How to change the binding in the Bold BI Embedded version 4.1.36?](/embedded-bi/faq/how-to-change-binding-in-bold-bi-embedded-v4.1.36/)
@@ -90,3 +92,13 @@ The following are the frequently asked questions in Bold BI Enterprise:
 [How to use groups in Bold BI?](/embedded-bi/faq/how-to-use-groups-in-bold-bi/)
 
 [How to customize side bar menu based on user permission?](/embedded-bi/faq/how-to-customize-side-bar-menu/)
+
+[How to pass dashboard parameter in iframe embedding a dashboard?](/embedded-bi/faq/how-to-pass-dashboard-parameter-in-iframe-embedding-a-dashboard/)
+
+[How to connect data sources with SSH connection in Bold BI?](/embedded-bi/faq/how-to-connect-data-sources-with-ssh-connection-in-bold-bi/)
+
+[How to enable SSL through connection parameters for PostgreSQL data source?](/embedded-bi/faq/how-to-enable-ssl-through-connection-parameters-for-postgresql-data-source/)
+
+[How to transpose the data columns and rows in MS SQL data source?](/embedded-bi/faq/how-to-transpose-the-data-columns-and-rows-in-sql-data-source/)
+
+[How to access the custom JSON data using PostgreSQL data source?](/embedded-bi/faq/how-to-access-the-custom-json-data-using-postgresql-data-source/)

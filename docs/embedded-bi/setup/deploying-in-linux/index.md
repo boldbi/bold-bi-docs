@@ -15,3 +15,7 @@ This document explains setting up a Bold BI application on an Linux server.
 [Installation and Deployment](/embedded-bi/setup/deploying-in-linux/installation-and-deployment/)
 
 [Install optional libraries](/embedded-bi/setup/deploying-in-linux/install-optional-libraries/)
+
+[Install optional libraries for version 4.1 or older](/embedded-bi/setup/deploying-in-linux/install-optional-libraries-for-v4.1-or-older/)
+
+[Version Upgrade](/embedded-bi/setup/deploying-in-linux/upgrade-to-latest/)

@@ -183,6 +183,10 @@ Allows you to provide the `description` about this spline area chart widget.
 
 ![Basic Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/100-stacked-area-chart/basic-settings.png)
 
+#### Show Tooltip
+
+This option allows you to toggle the visibility of tooltip in a chart.
+
 #### Chart Type and axis
 
 Click the `Change` button to open the `Chart Type and Axis Settings` dialog. 
@@ -196,6 +200,98 @@ Click the `Change` button to open the `Chart Type and Axis Settings` dialog.
 #### Enable Animation
 
 It animates the measure values when you toggle the `Enable Animation.`
+
+#### Show Value Labels
+
+This allows you to toggle the visibility of value labels.
+
+![Show value label](/static/assets/embedded/visualizing-data/visualization-widgets/images/100-stacked-area-chart/show-value-label.png)
+
+#### Customize
+
+This allows you to customize the toggle visibility of each series in a Chart.
+
+![Show value label Customize](/static/assets/embedded/visualizing-data/visualization-widgets/images/100-stacked-area-chart/custom-valuelabel.png)
+
+![Show value label](/static/assets/embedded/visualizing-data/visualization-widgets/images/100-stacked-area-chart/valuelabel.png)
+
+#### Value Label Color
+
+This allows you to customize the value label's color.
+
+![Value label Color Option](/static/assets/embedded/visualizing-data/visualization-widgets/images/100-stacked-area-chart/data-label-color-option.png)
+
+![Value label Color](/static/assets/embedded/visualizing-data/visualization-widgets/images/100-stacked-area-chart/data-label-color.png)
+
+#### Value Label Position
+
+This option allows you to customize the value label position in a chart. By default, it is set to ‘Auto,’ so the label position for the percent stacked area chart will be set as middle.
+
+![Value label position](/static/assets/embedded/visualizing-data/visualization-widgets/images/100-stacked-area-chart/value-labelposition.png)
+
+#### Value Label Rotation
+ 
+This allows you to define the rotation angle for the value labels to display.
+
+![Value label rotation](/static/assets/embedded/visualizing-data/visualization-widgets/images/100-stacked-area-chart/label-rotation.png)
+
+#### Value Label Suffix
+
+This allows you to show or hide the suffix value of value labels.
+
+#### Suffix Value
+
+This allows you to customize the suffix value of value labels.
+
+![Suffix value](/static/assets/embedded/visualizing-data/visualization-widgets/images/100-stacked-area-chart/suffix-value.png)
+
+#### Show Marker
+
+This allows you to toggle the visibility of marker from label to adorn each data point in the chart series.
+
+![Show marker](/static/assets/embedded/visualizing-data/visualization-widgets/images/100-stacked-area-chart/show-marker.png)
+
+### Show Items With No Data
+
+This allows you to show the data which column does `not` have any values.
+
+![Empty Point Mode Gap](/static/assets/embedded/visualizing-data/visualization-widgets/images/100-stacked-area-chart/chart-gap.png)
+
+### Empty Point Mode
+
+This option allows you to handle the display mode of the data point values is `null or undefined.`
+
+![Empty Point Mode Gap](/static/assets/embedded/visualizing-data/visualization-widgets/images/100-stacked-area-chart/chart-gap.png)
+ 
+### Gap
+
+This option allows you to show the null or undefined values with gaps.
+
+![Empty Point Mode Gap](/static/assets/embedded/visualizing-data/visualization-widgets/images/100-stacked-area-chart/chart-gap.png)
+
+### Zero
+
+This option allows you to show the null or undefined values in the zero axis.
+
+![Empty Point Mode Zero](/static/assets/embedded/visualizing-data/visualization-widgets/images/100-stacked-area-chart/chart-zero.png)
+
+### Average
+
+This option allows you to display the null or undefined values with the average value.
+
+![Empty Point Mode Zero](/static/assets/embedded/visualizing-data/visualization-widgets/images/100-stacked-area-chart/chart-average.png)
+
+### Enable Smooth Scroll
+
+On enabling this support, the chart scroll bar thumb-size will be calculated based on the total records count. So, you can see the last record by performing a single scroll.
+
+### Page Size
+
+This option allows you to set a number of records that need to be fetched on initial load.
+
+#### Legend Settings
+
+![Legend settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/100-stacked-area-chart/legend-settings.png)
 
 #### Show Legend
 
@@ -261,55 +357,33 @@ This allows you to add the legend title for the chart. It will reflect with the 
 
 ![Show Legend Title](/static/assets/embedded/visualizing-data/visualization-widgets/images/100-stacked-area-chart/legendtitle.png)
 
-#### Show Value Labels
+#### Text Overflow
 
-This allows you to toggle the visibility of value labels.
+This option allows you to customize the legend text based on the 'Text Width' property value.
 
-![Show value label](/static/assets/embedded/visualizing-data/visualization-widgets/images/100-stacked-area-chart/show-value-label.png)
+***None***
 
-#### Customize
+This option allows you to render the legend items without any wrap and trim.
 
-This allows you to customize the visibility of the Value Labels.
+![Legend Overflow None in chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/100-stacked-area-chart/Chart_LegendNone.png)
 
-![Show value label Customize](/static/assets/embedded/visualizing-data/visualization-widgets/images/100-stacked-area-chart/custom-valuelabel.png)
+***Trim***  
 
-![Show value label](/static/assets/embedded/visualizing-data/visualization-widgets/images/100-stacked-area-chart/valuelabel.png)
+This option allows you to trim the legend items if its legend exceeds the 'Text Width' value.
 
-#### Value Label Color
+![Legend Overflow Trim in chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/100-stacked-area-chart/Chart_Legendtrim.png)
 
-This allows you to customize value label's color.
+***Wrap***
 
-![Value label Color Option](/static/assets/embedded/visualizing-data/visualization-widgets/images/100-stacked-area-chart/data-label-color-option.png)
+This option allows you to wrap the legend items based on 'Text Width' value.
 
-![Value label Color](/static/assets/embedded/visualizing-data/visualization-widgets/images/100-stacked-area-chart/data-label-color.png)
+![Legend Overflow Wrap in chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/100-stacked-area-chart/chart_Legendwrap.png)
 
-#### Value Label Rotation
- 
-This allows you to define the rotation angle for the value labels to display.
+#### Text Width
 
-![Value label rotation](/static/assets/embedded/visualizing-data/visualization-widgets/images/100-stacked-area-chart/label-rotation.png)
+This option allows you to set a maximum width for the Legend Items and it is applicable only if text-overflow set as Trim or Wrap.
 
-#### Value Label Suffix
-
-Allows you to enable the suffix value text to the value labels.
-
-#### Suffix Value
-
-Allows you to set\edit suffix value to the value labels. 
-
-![Suffix value](/static/assets/embedded/visualizing-data/visualization-widgets/images/100-stacked-area-chart/suffix-value.png)
-
-#### Show Marker
-
-This allows you to toggle the visibility of marker from label to adorn each data point in chart series.
-
-![Show marker](/static/assets/embedded/visualizing-data/visualization-widgets/images/100-stacked-area-chart/show-marker.png)
-
-### Show Items With No Data
-
-This allows you to show the data which column does `not` have value.
-
-![Empty Point Mode Gap](/static/assets/embedded/visualizing-data/visualization-widgets/images/100-stacked-area-chart/chart-gap.png)
+![Legend Text Width in chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/100-stacked-area-chart/chart_Legendwidth.png)
 
 #### Link
 
@@ -383,6 +457,14 @@ This allows you to define the rotation angle for the category axis labels to dis
 
 ![Axis label rotation](/static/assets/embedded/visualizing-data/visualization-widgets/images/100-stacked-area-chart/axis-label-rotation.png)
 
+#### Auto Interval and Interval
+
+![Axis interval](/static/assets/embedded/visualizing-data/visualization-widgets/images/100-stacked-area-chart/chart-auto-interval.png)
+
+By default, the 'Auto Interval' property is enabled. Auto Interval property is used to set auto intervals based on the number of data points for category axis labels. If a user wants to customize the interval, then the user needs to disable the auto interval and set the required interval.
+
+![Axis interval Value](/static/assets/embedded/visualizing-data/visualization-widgets/images/100-stacked-area-chart/chart-interval.png)
+
 #### Show Primary Value Axis
 
 This allows you to enable the `Primary Value Axis` for chart. 
@@ -426,6 +508,16 @@ This allows you to enable the `Primary Value Axis` gridlines for the 100% stacke
 This allows you to enable the `Category axis` gridlines for the 100% stacked area chart.
 
 ![Category Axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/100-stacked-area-chart/category-axis.png)
+
+### Font settings
+
+This section allows you to customize font size of chart elements.
+
+![Font settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/100-stacked-area-chart/font-settings.png)
+
+#### Auto font Size and font size
+
+By default, the 'Auto Font Size' property is enabled. Auto font size property used to set font size based on dashboard viewing client machine resolution. If the user wants to customize or set fixed font size, then the user needs to disable the auto font size and set the required font size.
 
 #### Formatting
 

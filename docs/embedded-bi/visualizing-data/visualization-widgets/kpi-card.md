@@ -224,6 +224,12 @@ This option allows you to provide the `description` about the KPI Card.
 
 ![KPI card subtitle](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/subtitle.png)
 
+### Basic Settings
+
+### Show Tooltip
+
+This option allows you to toggle the visibility of tooltip in a card.
+
 ### Color properties
 
 ![Direction](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/color-properties.png)

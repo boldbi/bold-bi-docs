@@ -183,6 +183,10 @@ This allows you to set brief explanation about this pivot-grid widget.
 
 ![Basic Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/basic-settings.png)
 
+#### Show Tooltip
+
+This option allows you to toggle the visibility of tooltip in the pivot grid.
+
 #### Allow Value Sorting
 
 If we click the column header, the value field get sorted as ascending or descending when the property `Allow Value Sorting` is enabled.
@@ -217,6 +221,50 @@ The columns in the pivot grid can be made to auto-size based on the length of th
 It shows the values in rows.
 
 ![pivot-grid_prop-basic-nodes](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/values-rows.png)
+
+#### Hide Empty Headers
+
+This option allows you to hide 'null' or ‘empty’ headers, if it is present in the pivot grid table.
+
+In the following image, the column headers have ‘(Null)’ values in data. 
+
+![pivot-grid empty header cell](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/pivot-null-headers.png)
+
+By enabling this option, the (Null) header column gets hidden.
+
+![Pivot-grid empty header cell hidden](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/pivot-null-headers-hidden.png)
+
+#### Empty Cell Content
+
+This option allows you to set value for the empty cells in the pivot grid.
+
+![Pivot-grid empty cell content value](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/pivot-empty-content-value.png)
+
+### Content Settings
+
+This section allows you to customize the height and width of the pivot grid cells.
+
+![pivot-grid-content-settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/content-settings.png)
+
+#### Row Height
+
+This option allows you to customize the height of content rows in the pivot grid.
+
+#### Content Column Width
+
+This option allows you to customize the width of the content columns.
+
+#### Row Header Width
+
+This option allows you to customize the width of row headers (first column) in the pivot grid.
+
+Pivot grid with default value.
+
+![Pivot content settings default](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/pivot-content-settings-default.png)
+
+Pivot grid with customized value
+
+![Pivot content settings default](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/pivot-content-settings-customize.png)
 
 ### Group Bar Settings
 
@@ -367,6 +415,32 @@ It can be achieved by applying date formatting for configured fields.
 ![Assign Data settings menu](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/pivot-date-hierarchy-field-settings.png)
 
 3. Do the same for remaining fields.
+
+### Font settings
+
+This section allows you to customize the height and width of the pivot grid content.
+
+![Font settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/font-settings.png)
+
+Pivot grid with auto font-size.
+
+![Auto font size](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/auto-font-size.png)
+
+#### Header
+
+***Auto Font Size and Font Size***
+
+By default, the auto font size property is enabled. So, the font size of the headers will be rendered based on the resolution. If this property is unchecked, the font size of the header can be customizable.
+
+![Header Font settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/header-font-size.png)
+
+#### Content
+
+***Auto Font Size and Font Size***
+
+By default, the auto font size property is enabled. So, the font size of the pivot grid content elements will be calculated based on the resolution. If this property is unchecked, the font size can be customizable.
+
+![Content Font settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/content-font-size.png)
 
 ### Link
 

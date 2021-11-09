@@ -199,6 +199,10 @@ This allows you to set a brief explanation about the map widget.
 
 ![Basic Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/map/basicsettings.png)
 
+#### Show Tooltip
+
+This option allows you to toggle the visibility of tooltip in a map.
+
 #### Map type
 
 You can choose the map type as choropleth or bubble map.
@@ -240,6 +244,36 @@ You can select any type of shape (country or continent or state) from the shape 
 You can choose a shape for the selected country or continent or state. The combo box data shows based on the selected values in the `shape Kind.`
 
 ![Choropleth map field](/static/assets/embedded/visualizing-data/visualization-widgets/images/map/bubblemap-field.png)
+
+### Legend Settings
+
+This section allows you to customize the legend in the map.
+
+![Choropleth color](/static/assets/embedded/visualizing-data/visualization-widgets/images/map/legend-settings.png)
+
+#### Show legend
+
+This allows you to toggle the visibility of legend in a map. By default, it will be enabled.
+
+#### Show Title
+
+This option allows you to toggle the visibility of legend title in a map.
+
+![Show Legend Title](/static/assets/embedded/visualizing-data/visualization-widgets/images/map/show-title.png)
+
+![Show Legend Title in Map](/static/assets/embedded/visualizing-data/visualization-widgets/images/map/map-show-title.png)
+
+#### Title
+
+This allows you to edit the legend title of a map.
+
+![Map Legend Title](/static/assets/embedded/visualizing-data/visualization-widgets/images/map/map-customize-legend-title.png)
+
+![Legend Title](/static/assets/embedded/visualizing-data/visualization-widgets/images/map/map-customize-legend.png)
+
+#### Position
+
+This provides the option to select the legend placement in a map.
 
 #### Link
 

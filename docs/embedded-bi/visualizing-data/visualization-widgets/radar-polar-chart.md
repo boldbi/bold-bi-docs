@@ -158,6 +158,10 @@ This allows you to add description for the Radar/Polar chart widget.
 
 ![Basic Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/radar-polar-chart/basic-settings.png)
 
+#### Show Tooltip
+
+This option allows you to toggle the visibility of tooltip in the radar polar chart.
+
 #### Enable Animation
 
 It animates the measure values when you toggle the `Enable Animation.`

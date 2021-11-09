@@ -112,7 +112,7 @@ server {
 		client_max_body_size 200M;
 
 	location / { 
-        root               /var/www/boldbi-embedded/boldbi/idp/web/wwwroot;
+        root               /var/www/bold-services/application/idp/web/wwwroot;
         proxy_pass         http://localhost:6500/;
         proxy_http_version 1.1;
         proxy_set_header   Upgrade $http_upgrade;
@@ -135,7 +135,7 @@ server {
         proxy_set_header   X-Forwarded-Proto $scheme;
     }
 	location /ums {
-        root               /var/www/boldbi-embedded/boldbi/idp/ums/wwwroot;
+        root               /var/www/bold-services/application/idp/ums/wwwroot;
         proxy_pass         http://localhost:6502/ums;
         proxy_http_version 1.1;
         proxy_set_header   Upgrade $http_upgrade;
@@ -156,7 +156,7 @@ server {
         proxy_set_header   X-Forwarded-Proto $scheme;
     }
 	location /bi { 
-		root               /var/www/boldbi-embedded/boldbi/bi/web/wwwroot;
+		root               /var/www/bold-services/application/bi/web/wwwroot;
         proxy_pass         http://localhost:6504/bi;
         proxy_http_version 1.1;
         proxy_set_header   Upgrade $http_upgrade;
@@ -197,7 +197,7 @@ server {
         proxy_set_header   X-Forwarded-Proto $scheme;
     }
 	location /bi/designer {
-        root               /var/www/boldbi-embedded/boldbi/bi/designer/wwwroot;
+        root               /var/www/bold-services/application/bi/designer/wwwroot;
         proxy_pass         http://localhost:6507;
         proxy_http_version 1.1;
         proxy_set_header   Upgrade $http_upgrade;
@@ -241,7 +241,7 @@ If you have an SSL certificate for your domain and need to configure the site wi
 
 6. Save and run the `sudo nginx -t` to verify the syntax of the configuration file. If the configuration file test is successful, force the Nginx to pick up the changes by running the `sudo nginx -s reload.`
 
-> **NOTE:** If you are configuring the application with SSL, you need to update the URLs in the product.json with `HTTPS` located in the `/var/www/boldbi-embedded/boldbi/app_data/configuration.`
+> **NOTE:** If you are configuring the application with SSL, you need to update the URLs in the product.json with `HTTPS` located in the `/var/www/bold-services/application/app_data/configuration.`
 
 ## Next steps
 

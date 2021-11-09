@@ -159,6 +159,10 @@ This allows you to add description for the combo chart widget.
 
 ![Basic Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/basic-settings.png)
 
+#### Show Tooltip
+
+This option allows you to toggle the visibility of tooltip in a combo chart.
+
 #### Chart type and axis
 
 Click the `Change` button to open the `Chart Type and Axis Settings` dialog. 
@@ -219,9 +223,9 @@ This allows you to toggle the visibility of value labels.
 
 ![Value labels in chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/value-label.png)
 
-#### Value Label Customization
+#### Customize
 
-This allows you to customize the visibility of the value labels.
+This allows you to customize the toggle visibility of each series in a chart.
 
 ![Value labels customization change](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/color-customize.png)
 
@@ -229,11 +233,17 @@ This allows you to customize the visibility of the value labels.
 
 #### Value Label Color
 
-This allows you to customize value label's color.
+This allows you to customize the value label's color.
 
 ![Value label Color Option](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/data-color.png)
 
 ![Value label Color](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/value-color.png)
+
+#### Value Label Position
+
+This option allows you to customize the value label position in Cartesian charts. By default, it is set to ‘Auto,’ so the label position will be set based on the chart types (i.e. For stacked series, then position set as Middle and normal series the position set to Top).
+
+![Value label position](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/valuelabelposition.png)
 
 #### Value label rotation
 
@@ -241,9 +251,13 @@ This allows you to define the `rotation angle for the value labels` to display.
 
 ![Rotated labels](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/value-label-rotation.png)
 
-#### Value label suffix
+#### Value Label Suffix
 
-Allows you to enable the Suffix value text to the value labels.
+This allows you to show/hide the suffix value of value labels.
+
+#### Suffix Value
+
+This allows you to customize the suffix value of value labels.
 
 ![Labels with suffix](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/suffix-value.png)
 
@@ -521,6 +535,16 @@ You can select rule settings by clicking `Individual` radio button. Now, color c
 This type renders with Individual default color for each point of series. You can change it's color by Individual color pickers.
 
 You can save your changes by clicking the `Save` button. If you want to reset your changes there is an option to render its default color `Reset.`
+
+### Font settings
+
+This section allows you to customize the font size of combo chart elements.
+
+![Font settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/font-settings.png)
+
+#### Auto font Size and font size
+
+By default, the 'Auto Font Size' property is enabled. Auto font size property used to set font size based on dashboard viewing client machine resolution. If the user wants to customize or set the fixed font size, then the user needs to disable auto font size and set the required font size.
 
 #### Filter
 

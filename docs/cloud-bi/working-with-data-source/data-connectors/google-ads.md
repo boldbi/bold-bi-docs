@@ -45,14 +45,16 @@ Use the following steps to authenticate with the Google Ads web service:
 ### Create Google Ads data source
 After the successful authentication, the NEW DATA SOURCE configuration panel opens. Follow the below steps to create a Google Ads data source.
 1. Enter a name and description (optional) for the data source.
-2. Choose your metrics and dimension or enter valid URL in the custom URL textbox. Refer the [Google Ads API documentation](https://developers.google.com/analytics/devguides/config/mgmt/v3/mgmtReference/) for more details.
+2. Select **account**, **properties**, and **view** value.
+3. You can choose a specific date as a **start date** and **end date** respectively by using the date picker controls. If you choose the launch date option, Google ads initial launch date will be considered as the start date for the API. Similarly, if no end date option is selected, the current date will be passed as the end date to pull data up to date during data source creation and data source refresh.
+4. Choose your **metrics** and **dimension** or enter valid URL in the **custom URL** textbox. Refer to the [Google Ads API documentation](https://developers.google.com/analytics/devguides/config/mgmt/v3/mgmtReference/) for more details.
 
     Example: [https://www.googleapis.com/analytics/v3/data/ga?ids=&lt;:id&gt;&start-date=&lt;:startDate&gt;&end-date=&lt;:endDate&gt;&metrics=ga:users,ga:sessions,ga:pageviews&dimensions=ga:month,ga:year&sort=-ga:month](https://www.googleapis.com/analytics/v3/data/ga?ids=%3c:id%3e&start-date=%3c:startDate%3e&end-date=%3c:endDate%3e&metrics=ga:users,ga:sessions,ga:pageviews&dimensions=ga:month,ga:year&sort=-ga:month)
-3. Select the **GET** method for the REST API in the **Method** combo box.
-4. In-**Page(s)**, enter the maximum number of pages to be fetched from the Google Ads data source. This value is used to fetch the data from Google Ads data source via pagination.
-5. Choose a time interval for **Refresh Settings** using the combo box, to trigger the Rest API request periodically to keep the data in sync with our dashboard.  
-6. Select the **JSON** data type in the **Data Format** combo box.
-7. The authentication type will be set to **Google Ads** automatically because OAuth is used for authenticating with the Google Ads account.
+5. Select the **GET** method for the REST API in the **Method** combo box.
+6. In-**Page(s)**, enter the maximum number of pages to be fetched from the Google Ads data source. This value is used to fetch the data from the Google Ads data source via pagination.
+7. Choose a time interval for the **Refresh Settings** using the combo box, to trigger the Rest API request periodically to keep the data in sync with our dashboard.  
+8. Select the **JSON** data type in the **Data Format** combo box.
+9. The authentication type will be set to **Google Ads** automatically because OAuth is used for authenticating with the Google Ads account.
 
     ![DataSourcesView](/static/assets/cloud/working-with-datasource/data-connectors/images/GoogleAds/DataSourcesView.png)
 

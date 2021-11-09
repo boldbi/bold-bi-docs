@@ -148,6 +148,7 @@ The Bold BI supports the following data connection types such that the structure
         </td>
         <td align="center"> REST
 		    <br> <a href="/embedded-bi/working-with-data-source/data-connectors/azure-search/"> Azure Search</a>
+			<br> <a href="/embedded-bi/working-with-data-source/data-connectors/live-web/"> Live Web</a>
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/odata/"> OData</a>
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/rss-feeds/"> RSS Feeds</a>
 			<br> <a href="/embedded-bi/working-with-data-source/data-connectors/slack/"> Slack</a>
