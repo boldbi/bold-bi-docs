@@ -16,7 +16,7 @@
     "@syncfusion/ej2-react-navigations": "*",
     "@syncfusion/ej2-react-popups": "*",
     "ajv": "6.8.1",
-    "aws-sdk": "2.332.0",
+    "aws-sdk": "2.814.0",
     "babel-plugin-remove-graphql-queries": "2.7.24",
     "babel-plugin-styled-components": "1.7.1",
     "cheerio": "1.0.0-rc.2",
