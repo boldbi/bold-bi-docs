@@ -225,6 +225,16 @@
     "conflict",
 	"ssl",
     "postgresql",
-	"parameters"
+	"parameters",
+	"django",
+	"timezone",
+	"timestamp",
+    "blazor",
+	"with",
+	"javascript",
+	"coldfusion",
+	"php",
+	"wpf",
+	"xamarin"
   ]
 }

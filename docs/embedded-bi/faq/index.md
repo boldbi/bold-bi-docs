@@ -93,7 +93,7 @@ The following are the frequently asked questions in Bold BI Enterprise:
 
 [How to customize side bar menu based on user permission?](/embedded-bi/faq/how-to-customize-side-bar-menu/)
 
-[How to pass dashboard parameter in iframe embedding a dashboard?](/embedded-bi/faq/how-to-pass-dashboard-parameter-in-iframe-embedding-a-dashboard/)
+[How to pass dashboard parameter in iframe while embedding a dashboard?](/embedded-bi/faq/how-to-pass-dashboard-parameter-in-iframe-embedding-a-dashboard/)
 
 [How to connect data sources with SSH connection in Bold BI?](/embedded-bi/faq/how-to-connect-data-sources-with-ssh-connection-in-bold-bi/)
 
@@ -102,3 +102,9 @@ The following are the frequently asked questions in Bold BI Enterprise:
 [How to transpose the data columns and rows in MS SQL data source?](/embedded-bi/faq/how-to-transpose-the-data-columns-and-rows-in-sql-data-source/)
 
 [How to access the custom JSON data using PostgreSQL data source?](/embedded-bi/faq/how-to-access-the-custom-json-data-using-postgresql-data-source/)
+
+[How to convert a timestamp column from one timezone to another in the PostgreSQL data source](/embedded-bi/faq/how-to-convert-timestamp-column-from-one-timezone-to-another-in-the-postgresql-datasource/)
+
+[How to apply Row-level Security in Elastic search data source](/embedded-bi/faq/how-to-apply-row-level-security-in-elastic-search-data-source/)
+
+[How to allow users to create dashboards without modifying the existing data sources?](/embedded-bi/faq//how-to-allow-users-to-create-dashboards-without-modifying-the-existing-data-sources/)
