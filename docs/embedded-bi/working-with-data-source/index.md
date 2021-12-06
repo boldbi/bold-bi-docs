@@ -45,6 +45,8 @@ You can explore the data source in detail here,
 
 [Configure Dashboard Parameter](/embedded-bi/working-with-data-source/configuring-dashboard-parameters/)
 
+[Configure Dashboard Parameter Iterative Mode](/embedded-bi/working-with-data-source/dashboard-parameter-iterative-mode)
+
 [Configure Isolation code](/embedded-bi/working-with-data-source/configuring-isolation-code/)
 
 [Bold BI Intermediate Database](/embedded-bi/working-with-data-source/bold-bi-intermediate-database/)

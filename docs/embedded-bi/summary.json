@@ -32,6 +32,11 @@
           "Bold BI on Ubuntu": "bold-bi-on-ubuntu",
           "Bold BI on CentOS": "bold-bi-on-centos"
         },
+        "Deploy Bold BI Using Apache Server": {
+          "Configure Apache Server In CentOS": "configure-apache-server-in-centos",
+          "Configure Apache Server In Ubuntu": "configure-apache-server-in-ubuntu"
+
+        },
         "Install Optional Libraries": "install-optional-libraries.md",
         "Install optional libraries for version 4.1 or older":"install-optional-libraries-for-v4.1-or-older.md",
         "Upgrading Bold BI Linux Server": "upgrade-to-latest"
@@ -64,13 +69,19 @@
           "ASP.NET MVC": "asp-net-mvc",
           "Angular": "angular",
           "ASP.NET": "asp-net",
+          "Blazor with javascript": "blazor-with-javascript",
+          "Coldfusion": "coldfusion",
+		  "Django": "django",
           "Ruby on Rails": "ruby-on-rails",
           "React with ASP.NET Core": "react-core",
           "React with Go": "react-with-go",
           "Winforms": "winforms",
           "Node.js": "node-js",
+		  "PHP with javascript": "php-with-javascript",
           "VueJS with Go": "vuejs-with-go",
           "VueJS with core": "vuejs-with-core",
+		  "WPF": "wpf",
+		  "Xamarin": "xamarin",
           "Java Servlet": "java-servlet"
         },
         "v3.2.16": {
@@ -256,6 +267,7 @@
       },
       "Dashboard Parameters": "dashboard-parameter",
       "Configure Dashboard Parameter": "configuring-dashboard-parameters",
+	  "Configure Dashboard Parameter Iterative Mode": "dashboard-parameter-iterative-mode",
       "Configure Custom Attribute": "configuring-custom-attribute",
       "Configure Isolation code": "configuring-isolation-code"
     },
@@ -554,11 +566,14 @@
 	"How to resolve jQuery conflict in embedding": "how-to-resolve-jquery-conflict-in-embedding",
   "What are the database permissions required to set up Bold BI Embedded?": "what-are-the-database-permissions-required-to-set-up-bold-bi-embedded.md",
   "How to restart the Bold BI Embedded application":"how-to-restart-the-bold-bi-embedded-application",
-  "How to pass dashboard parameter in iframe embedding a dshboard": "how-to-pass-dashboard-parameter-in-iframe-embedding-a-dashboard",
+  "How to pass dashboard parameter in iframe while embedding a dashboard": "how-to-pass-dashboard-parameter-in-iframe-embedding-a-dashboard",
 	  "How to connect data sources with SSH connection in Bold BI":"how-to-connect-data-sources-with-ssh-connection-in-bold-bi",
 	  "How to enable SSL through connection parameters for PostgreSQL data source":"how-to-enable-ssl-through-connection-parameters-for-postgresql-data-source",
       "How to transpose the data columns and rows in MS SQL data source":"how-to-transpose-the-data-columns-and-rows-in-sql-data-source",
-      "How to access the custom JSON data using PostgreSQL data source":"how-to-access-the-custom-json-data-using-postgresql-data-source"
+      "How to access the custom JSON data using PostgreSQL data source":"how-to-access-the-custom-json-data-using-postgresql-data-source",
+      "How to convert a timestamp column from one timezone to another in the PostgreSQL data source":"how-to-convert-timestamp-column-from-one-timezone-to-another-in-the-postgresql-datasource",
+      "How to apply Row-level Security in Elastic search data source":"how-to-apply-row-level-security-in-elastic-search-data-source",
+      "How to allow users to create dashboards without modifying the existing data sources": "how-to-allow-users-to-create-dashboards-without-modifying-the-existing-data-sources"	  
     }
   }
 }

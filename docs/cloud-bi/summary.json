@@ -164,6 +164,7 @@
       },
       "Dashboard Parameters": "dashboard-parameter",
       "Configure Dashboard Parameter": "configuring-dashboard-parameters",
+	  "Configure Dashboard Parameter Iterative Mode": "dashboard-parameter-iterative-mode",
       "Configure Custom Attribute": "configuring-custom-attribute",
       "White List IP addresses of the Bold BI Cloud servers": "white-list-ip-address-bold-bi-cloud"
     },
@@ -357,10 +358,12 @@
 	  "How to add a new data connector under Bold BI": "how-to-add-a-new-data-connector-under-bold-bi",
 	  "How to add threshold to a Chart widget":"how-to-add-threshold-to-a-chart-widget",
       "How to use groups in Bold BI?":"how-to-use-groups-in-bold-bi",
-      "How to pass dashboard parameter in iframe embedding a dshboard": "how-to-pass-dashboard-parameter-in-iframe-embedding-a-dashboard",
+      "How to pass dashboard parameter in iframe while embedding a dashboard": "how-to-pass-dashboard-parameter-in-iframe-embedding-a-dashboard",
 	  "How to enable SSL through connection parameters for PostgreSQL data source":"how-to-enable-ssl-through-connection-parameters-for-postgresql-data-source",
 	  "How to transpose the data columns and rows in MS SQL data source":"how-to-transpose-the-data-columns-and-rows-in-sql-data-source",
-      "How to access the custom JSON data using PostgreSQL data source":"how-to-access-the-custom-json-data-using-postgresql-data-source"
+      "How to access the custom JSON data using PostgreSQL data source":"how-to-access-the-custom-json-data-using-postgresql-data-source",
+      "How to convert a timestamp column from one timezone to another in the PostgreSQL data source":"how-to-convert-timestamp-column-from-one-timezone-to-another-in-the-postgresql-datasource",
+      "How to allow users to create dashboards without modifying the existing data sources": "how-to-allow-users-to-create-dashboards-without-modifying-the-existing-data-sources"
     }
   }
 }

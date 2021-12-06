@@ -72,6 +72,8 @@ documentation: ug
     sudo bash install-boldbi.sh -i new -u www-data -h http://linux.example.com -n true
     ~~~ 
 
+> **NOTE:** You can also [configure Bold BI with Apache server](/embedded-bi/setup/deploying-in-linux/deploy-bold-bi-using-apache-server/configure-apache-server-in-centos/) in CentOS.
+
 Once the installation completed, open the host URL in the browser and continue the application startup.
 
 ## Manually Configure Nginx

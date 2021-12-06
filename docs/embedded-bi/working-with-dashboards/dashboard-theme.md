@@ -34,7 +34,9 @@ The browser will be remembering the last applied theme and all the dashboards wi
 
 By default, the dashboard theme is enabled in the Bold BI Enterprise edition dashboards. 
 
-However, you can turn off the feature by changing the settings with the following mentioned steps. 
+[This](/embedded-bi/site-administration/dashboard-settings/enable-or-disable-dashboard-theme) document section explains how to enable or disable the dashboard theme option in the Bold BI version 4.1.36 or later. 
+
+However, you can turn off the feature by changing the settings in the Bold BI version below 4.1.36 with the following mentioned steps:
 
 1.	Open the `Web.config` file from the following location. 
 **[Installation Drive]: Bold BI \ Dashboard Designer\Web.config**
@@ -67,7 +69,10 @@ Follow the steps to add a new custom theme in Bold BI Enterprise edition.
 
 1. Navigate to the Bold BI deployment location. 
 
-    `[Installation Drive]:\Bold BI\Dashboard Designer\DashboardThemes`
+    | Bold BI Version       | Location                                                  	|
+    |-------------------	|-----------------------------------------------------------	|
+    | Below 4.1.36          | **`{Deployed Location}`**\Dashboard Designer\DashboardThemes  |
+    | 4.1.36 or above       | **`{Deployed Location}`**\bi\dataservice\dashboardthemes      |
 
 2. By default, light and dark theme files will be available in the location. 
 
