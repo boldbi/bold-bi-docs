@@ -338,7 +338,6 @@
         "x-codegen-request-body-name": "apiItemViewsUpdate"
       }      
     },
-    
     "/v4.0/dashboards/{id}/views": {
       "get": {
         "tags": [

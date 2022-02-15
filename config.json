@@ -117,6 +117,8 @@
     "okta",
     "auth0",
     "onelogin",
+    "keycloak",
+    "redhat",
     "365",
     "oauth",
     "support",
@@ -235,6 +237,11 @@
 	"coldfusion",
 	"php",
 	"wpf",
-	"xamarin"
-  ]
+	"xamarin",
+	"snowflake",
+    "v4.2.68",
+    "offline",
+	"jdbc",
+	"sparksql"
+	]
 }

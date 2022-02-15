@@ -108,3 +108,17 @@ The following are the frequently asked questions in Bold BI Enterprise:
 [How to apply Row-level Security in Elastic search data source](/embedded-bi/faq/how-to-apply-row-level-security-in-elastic-search-data-source/)
 
 [How to allow users to create dashboards without modifying the existing data sources?](/embedded-bi/faq//how-to-allow-users-to-create-dashboards-without-modifying-the-existing-data-sources/)
+
+[How to query Snowflake records using code view mode in Bold BI](/embedded-bi/faq/how-to-query-snowflake-records-using-code-view-mode-in-bold-bi/)
+
+[How to execute R language scripts using MS SQL data source in Bold BI](/embedded-bi/faq/how-to-execute-r-language-scripts-using-ms-sql-datasource-in-bold-bi/)
+
+[How to execute the Microsoft SQL table-valued function in Bold BI](/embedded-bi/faq/how-to-execute-the-ms-sql-table-valued-function-in-bold-bi/)
+
+[How to connect Google Cloud SQL data source with JBDC connection string](/embedded-bi/faq/how-to-connect-google-cloud-sql-data-source-with-jdbc-connection-string/)
+
+[How to connect polymorphic databases in Bold BI](/embedded-bi/faq/how-to-connect-polymorphic-databases-in-bold-bi/)
+
+[How to group the data using Bold BI](/embedded-bi/faq/how-to-group-the-data-using-bold-bi/)
+
+[How to overwrite the existing dashboard](/embedded-bi/faq/how-to-overwrite-the-existing-dashboard/)
