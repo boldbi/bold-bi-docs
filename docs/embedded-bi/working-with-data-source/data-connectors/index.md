@@ -21,6 +21,7 @@ The Bold BI supports the following data connection types such that the structure
       <th scope="col">Data Sources</th>
       <th scope="col">Data Sources</th>
       <th scope="col">Data Sources</th>
+	  <th scope="col">Data Sources</th>
     </tr>
   </thead>
   <tbody>
@@ -43,7 +44,8 @@ The Bold BI supports the following data connection types such that the structure
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/oracle/"> Oracle</a>
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/postgresql/"> PostgreSQL</a>
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/presto/"> Presto</a>
-            <br> <a href="/embedded-bi/working-with-data-source/data-connectors/snowflake/"> Snowflake</a>  
+            <br> <a href="/embedded-bi/working-with-data-source/data-connectors/snowflake/"> Snowflake</a>
+            <br> <a href="/embedded-bi/working-with-data-source/data-connectors/sparksql/"> SparkSQL</a>  			
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/sqlite/"> SQLite</a>          
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/ssas/"> Microsoft SQL Server Analysis Services</a>
         </td>
@@ -111,12 +113,6 @@ The Bold BI supports the following data connection types such that the structure
 		<td align="center"> Learning
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/lessonly/"> Lessonly</a>
         </td>
-        <td align="center"> Web Management
-            <br> <a href="/embedded-bi/working-with-data-source/data-connectors/wordpress/"> WordPress</a>
-        </td>
-		<td align="center"> Forms
-            <br> <a href="/embedded-bi/working-with-data-source/data-connectors/gravity-forms/"> GravityForms</a>
-        </td>
     </tr>
     <tr>
         <td align="center"> Marketing
@@ -159,8 +155,8 @@ The Bold BI supports the following data connection types such that the structure
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/seomonitor/"> SEOmonitor</a>
 			<br> <a href="/embedded-bi/working-with-data-source/data-connectors/prometheus/"> Prometheus</a>
         </td>
-		<td align="center">Email
-            <br> <a href="/cloud-bi/working-with-data-source/data-connectors/gmail/"> Gmail</a>
+		<td align="center"> Web Management
+            <br> <a href="/embedded-bi/working-with-data-source/data-connectors/wordpress/"> WordPress</a>
         </td>
     </tr>
     <tr>
@@ -214,6 +210,14 @@ The Bold BI supports the following data connection types such that the structure
         <td align="center"> Advertising
              <br> <a href="/embedded-bi/working-with-data-source/data-connectors/google-adsense/"> Google AdSense</a>
         </td>
+		<td align="center"> Forms
+            <br> <a href="/embedded-bi/working-with-data-source/data-connectors/gravity-forms/"> GravityForms</a>
+        </td>
+		<tr>
+		<td align="center">Email
+            <br> <a href="/cloud-bi/working-with-data-source/data-connectors/gmail/"> Gmail</a>
+        </td>
+	</tr>
     </tr>
   </tbody>
 </table>

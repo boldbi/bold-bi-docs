@@ -20,7 +20,10 @@
         "Prerequisites": "prerequisites",
         "Recommendations": "recommendations",
         "Using ARM template": "using-arm-template",
-        "Upgrade": "upgrade"
+        "Upgrade":{
+          "Upgrade to latest": "upgrade-to-latest",
+          "Upgrade to v4.1": "upgrade-to-v4.1"
+        }
       },
       "Deploying in Linux": {
         "Prerequisites": "prerequisites-linux",
@@ -44,7 +47,10 @@
       "Deploying in Kubernetes": "deploying-in-kubernetes",
       "Deploying in Docker": "deploying-in-docker"
     },
-    "Application Startup": "application-startup",
+    "Application Startup": {
+	        "Latest": "latest",
+		    "v4.2.68 or earlier": "v4.2.68-or-earlier"
+		      },
     "Getting Started": {
       "Quick Start": "quick-start.md"
     },
@@ -98,8 +104,13 @@
       "Secured Embedding": "embed-dashboards-with-advanced-security",
       "Widget Embedding": "widget-embedding",
       "Sample": {
-        "Dashboard Embedding Sample": "dashboard-embedding-sample",
-        "Datasource Embedding Sample": "datasource-embedding-sample"
+        "Dashboard Embedding": {
+		"ASP.NET MVC":"asp.net-mvc",
+		"Javascript":"javascript"
+		},
+        "Data source Embedding": {
+		"Javascript":"javascript"
+		}
       },
       "Dynamic Connection String": "dynamic-connection-string"
     },
@@ -225,6 +236,7 @@
         "Smartsheet": "smartsheet",
         "Snowflake": "snowflake",
         "SparkPost": "sparkpost",
+		"SparkSQL": "sparksql",
         "SQL Data Sources": "sql-data-source",
         "SQLite": "sqlite",
 		"SquareUp":"squareup",
@@ -425,7 +437,9 @@
         "OpenID Support": {
           "Okta": "okta",
           "OneLogin": "onelogin",
-          "Auth0": "auth0"
+          "Auth0": "auth0",
+          "Keycloak": "keycloak",
+          "RedHat": "redhat"
         },
 		"JSON Web Token": "json-web-token"
       },
@@ -571,9 +585,16 @@
 	  "How to enable SSL through connection parameters for PostgreSQL data source":"how-to-enable-ssl-through-connection-parameters-for-postgresql-data-source",
       "How to transpose the data columns and rows in MS SQL data source":"how-to-transpose-the-data-columns-and-rows-in-sql-data-source",
       "How to access the custom JSON data using PostgreSQL data source":"how-to-access-the-custom-json-data-using-postgresql-data-source",
-      "How to convert a timestamp column from one timezone to another in the PostgreSQL data source":"how-to-convert-timestamp-column-from-one-timezone-to-another-in-the-postgresql-datasource",
+      "How to convert a timestamp column from one timezone to another in the PostgreSQL data source":"how-to-convert-timestamp-column-from-one-timezone-to-another-in-the-postgresql-datasource", 
       "How to apply Row-level Security in Elastic search data source":"how-to-apply-row-level-security-in-elastic-search-data-source",
-      "How to allow users to create dashboards without modifying the existing data sources": "how-to-allow-users-to-create-dashboards-without-modifying-the-existing-data-sources"	  
+	  "How to allow users to create dashboards without modifying the existing data sources": "how-to-allow-users-to-create-dashboards-without-modifying-the-existing-data-sources",
+      "How to query Snowflake records using code view mode in Bold BI":"how-to-query-snowflake-records-using-code-view-mode-in-bold-bi",
+      "How to execute the Microsoft SQL table-valued function in Bold BI": "how-to-execute-the-ms-sql-table-valued-function-in-bold-bi",
+	  "How to connect Google Cloud SQL data source with JBDC connection string": "how-to-connect-google-cloud-sql-data-source-with-jdbc-connection-string",
+      "How to execute R language scripts using MS SQL data source in Bold BI":"how-to-execute-r-language-scripts-using-ms-sql-datasource-in-bold-bi",
+      "How to connect polymorphic databases in Bold BI": "how-to-connect-polymorphic-databases-in-bold-bi",
+      "How to group the data using Bold BI": "how-to-group-the-data-using-bold-bi",
+      "How to overwrite the existing dashboard": "how-to-overwrite-the-existing-dashboard"	  
     }
   }
 }

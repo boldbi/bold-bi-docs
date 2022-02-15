@@ -6,7 +6,7 @@
   },
   "host" : "onpremise-demo.boldbi.com",
   "basePath" : "/bi/api/site/site1/",
-  "schemes" : [ ],
+  "schemes" : [ "https" ],
   "consumes" : [ "application/json" ],
   "produces" : [ "application/json" ],
   "tags" : [ {

@@ -31,12 +31,10 @@ _atrk_opts = { atrk_acct:"vHAUs1FYxz20cv", domain:"boldbi.com",dynamic: true};
 <!-- End Alexa Certify Javascript -->
     <meta charset="UTF-8">
     <title>Working with REST API v4.0 – Cloud Server | Bold BI Documentation</title>
-    <meta name="description"
-          content="Examine the behavior through working out v4.0 APIs on an interactive editor in cloud-hosted Bold BI."
-          charset="UTF-8" />
-    <link rel="shortcut icon" href="./favicon.ico" />
-    <link rel="stylesheet" href="./index.css">
-    <link rel="stylesheet" type="text/css" href="./swagger-ui.css">
+    <meta name="description" content="Examine the behavior through working out v4.0 APIs on an interactive editor in cloud-hosted Bold BI." charset="UTF-8" />
+    <link rel="shortcut icon" href="../../../../common/favicon.ico" />
+    <link rel="stylesheet" href="../../../../common/try-it-now/index.css">
+    <link rel="stylesheet" type="text/css" href="../../../../common/try-it-now/swagger-ui.css">
     <script> 
         if (location.origin !== "https://help.boldbi.com") {
             var noindex = document.createElement('meta');
@@ -84,9 +82,6 @@ _atrk_opts = { atrk_acct:"vHAUs1FYxz20cv", domain:"boldbi.com",dynamic: true};
             margin-left: 10px;
         }
 
-
-
-
         .download-url-wrapper {
             display: none !important;
         }
@@ -110,7 +105,7 @@ _atrk_opts = { atrk_acct:"vHAUs1FYxz20cv", domain:"boldbi.com",dynamic: true};
             <a href="https://samples.boldbi.com/" target="_blank">Demos</a>
             <a href="https://www.boldbi.com/support" target="_blank">Support</a>
             <a href="https://www.boldbi.com/blog" target="_blank">Blog</a>
-			<a href="https://www.boldbi.com/embedded/get-free-demo" target="_blank" role="button"><div class="header-demo-link">Schedule Free Demo</div></a>
+			<a href="https://app.boldid.net/bi/embedded/register?plan=95&evaluation=v2" target="_blank" role="button"><div class="header-demo-link">Start Free Trial</div></a>
         </div>
     </div>
     <div id="swagger-ui"></div>
@@ -120,29 +115,28 @@ _atrk_opts = { atrk_acct:"vHAUs1FYxz20cv", domain:"boldbi.com",dynamic: true};
         </div>
         <div id="footer-powered_by"></div>
     </div>
-    <script src="./swagger-ui-bundle.js"></script>
-    <script src="./swagger-ui-standalone-preset.js"></script>
+    <script src="../../../../common/try-it-now/swagger-ui-bundle.js"></script>
+    <script src="../../../../common/try-it-now/swagger-ui-standalone-preset.js"></script>
     <script>
-          window.onload = function () {
-              // Begin Swagger UI call region
-              const ui = SwaggerUIBundle({
-                  url: "./swagger4.0.json",
-                  dom_id: '#swagger-ui',
-                  deepLinking: true,
-                  presets: [
-                      SwaggerUIBundle.presets.apis,
-                      SwaggerUIStandalonePreset
-                  ],
-                  plugins: [
-                      SwaggerUIBundle.plugins.DownloadUrl
-                  ],
-                  layout: "StandaloneLayout"
-              })
-              // End Swagger UI call region
+        window.onload = function () {
+            // Begin Swagger UI call region
+            const ui = SwaggerUIBundle({
+                url: "./swagger4.0.json",
+                dom_id: '#swagger-ui',
+                deepLinking: true,
+                presets: [
+                    SwaggerUIBundle.presets.apis,
+                    SwaggerUIStandalonePreset
+                ],
+                plugins: [
+                    SwaggerUIBundle.plugins.DownloadUrl
+                ],
+                layout: "StandaloneLayout"
+            })
+            // End Swagger UI call region
 
-              window.ui = ui
-          }
+            window.ui = ui
+        }
     </script>
 </body>
 </html>
-

@@ -329,6 +329,8 @@ databasename
 sslenabled
 OneLogin
 Auth0
+Keycloak
+RH-SSO
 baseUrl
 openid
 preferred_username
@@ -816,6 +818,7 @@ Vue.js
 idp
 deserialize
 v4.1.36
+v4.2.69
 WebJobs
 PowerShell
 boldservices
@@ -940,7 +943,12 @@ ColdFusion
 HtmlString
 Xamarin
 coldfusion
+Snowflake
 DashboardThemes
 dashboardthemes
 phantomjs-2
 linux-x86_64
+embedConfig
+sp_configure
+external_scripts_enabled
+Patient_details_VIEW

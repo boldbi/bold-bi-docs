@@ -47,3 +47,16 @@ The following are the frequently asked questions in Bold BI Cloud :
 [How to convert a timestamp column from one timezone to another in the PostgreSQL data source](/cloud-bi/faq/how-to-convert-timestamp-column-from-one-timezone-to-another-in-the-postgresql-datasource/)
 
 [How to allow users to create dashboards without modifying the existing data sources?](/cloud-bi/faq//how-to-allow-users-to-create-dashboards-without-modifying-the-existing-data-sources/)
+
+[How to query Snowflake records using code view mode in Bold BI](/cloud-bi/faq/how-to-query-snowflake-records-using-code-view-mode-in-bold-bi/)
+
+[How to execute the Microsoft SQL table-valued function in Bold BI](/cloud-bi/faq/how-to-execute-the-ms-sql-table-valued-function-in-bold-bi/)
+
+[How to connect Google Cloud SQL data source with JBDC connection string](/cloud-bi/faq/how-to-connect-google-cloud-sql-data-source-with-jdbc-connection-string/)
+
+[How to connect polymorphic databases in Bold BI](/cloud-bi/faq/how-to-connect-polymorphic-databases-in-bold-bi/)
+
+[How to execute R language scripts using MS SQL data source in Bold BI](/cloud-bi/faq/how-to-execute-r-language-scripts-using-ms-sql-datasource-in-bold-bi/)
+
+[How to group the data using Bold BI](/cloud-bi/faq/how-to-group-the-data-using-bold-bi/)
+

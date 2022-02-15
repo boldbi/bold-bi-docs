@@ -84,6 +84,9 @@ In this connection type, a data source is fetched from source periodically. Choo
 
 ![Extract Connection](/static/assets/embedded/working-with-datasource/data-connectors/images/amazon-aurora/Amazonaurora_Extract_Connection.png)
 
+> **NOTE:**  Initially, data will be extracted based on the Max Rows selected in order to proceed with data model creation. The remaining records (there is no limit) will be extracted during the next refresh.  <br /> 
+  ![Max rows option](/static/assets/embedded/working-with-datasource/data-connectors/images/amazon-aurora/maxRowOption.png#max-width=60%)
+ 
 ### Refresh Settings
 #### Steps to configure the data source refresh settings:
 1. Click Refresh Settings in the configuration panel.

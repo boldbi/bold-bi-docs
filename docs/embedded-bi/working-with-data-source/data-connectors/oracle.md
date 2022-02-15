@@ -36,6 +36,9 @@ documentation: ug
    Select a database from the drop-down list and click the `Connect` button to connect the Oracle.
 
    ![Oracle connect](/static/assets/embedded/working-with-datasource/data-connectors/images/oracle/Oracle-connect.png)
+   
+   > **NOTE:**  Initially, data will be extracted based on the Max Rows selected in order to proceed with data model creation. The remaining records (there is no limit) will be extracted during the next refresh.  <br /> 
+   ![Max rows option](/static/assets/embedded/working-with-datasource/data-connectors/images/oracle/maxRowOption.png#max-width=45%)		
 
    The selected database will be opened in the data design view window.
 

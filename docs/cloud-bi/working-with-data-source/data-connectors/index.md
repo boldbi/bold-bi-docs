@@ -21,6 +21,7 @@ The Bold BI supports the following data connection types such that the structure
       <th scope="col">Data Sources</th>
       <th scope="col">Data Sources</th>
       <th scope="col">Data Sources</th>
+	  <th scope="col">Data Sources</th>
     </tr>
   </thead>
   <tbody>
@@ -109,12 +110,6 @@ The Bold BI supports the following data connection types such that the structure
 		<td align="center">Learning
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/lessonly/"> Lessonly</a>
         </td>
-        <td align="center">Web Management
-            <br> <a href="/cloud-bi/working-with-data-source/data-connectors/wordpress/"> WordPress</a>
-        </td>
-		<td align="center"> Forms
-            <br> <a href="/cloud-bi/working-with-data-source/data-connectors/gravity-forms/"> GravityForms</a>
-        </td>
     </tr>
     <tr>
         <td align="center">Marketing
@@ -157,6 +152,9 @@ The Bold BI supports the following data connection types such that the structure
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/optimizely/"> Optimizely</a>
 			<br> <a href="/cloud-bi/working-with-data-source/data-connectors/prometheus/"> Prometheus</a>
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/seomonitor/"> SEOmonitor</a>
+        </td>
+		<td align="center">Web Management
+            <br> <a href="/cloud-bi/working-with-data-source/data-connectors/wordpress/"> WordPress</a>
         </td>
     </tr>
     <tr>
@@ -210,6 +208,9 @@ The Bold BI supports the following data connection types such that the structure
         <td align="center">Advertising
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/flurry/"> Flurry</a>
 			<br> <a href="/cloud-bi/working-with-data-source/data-connectors/google-adsense/"> Google AdSense</a>
+        </td>
+		<td align="center"> Forms
+            <br> <a href="/cloud-bi/working-with-data-source/data-connectors/gravity-forms/"> GravityForms</a>
         </td>
     </tr>
   </tbody>

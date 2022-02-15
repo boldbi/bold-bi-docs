@@ -1,82 +1,54 @@
 ﻿<!DOCTYPE html>
 <html>
-
-<head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-233131-36"></script>
-	<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'UA-233131-36');
-    </script>
-<!-- Clarity Tracking Code -->
-    <script type="text/javascript">
-        (function (c, l, a, r, i, t, y) {
-            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
-            t = l.createElement(r);
-            t.async = 1;
-            t.src = "https://www.clarity.ms/tag/" + i;
-            y = l.getElementsByTagName(r)[0];
-            y.parentNode.insertBefore(t, y);
-        })(window, document, "clarity", "script", "6cv7fljz34");
-    </script>
- <!-- End Clarity Tracking Code-->
-    <script> 
-        if (location.origin !== "https://help.boldbi.com") {
-            var noindex = document.createElement('meta');
-            noindex.setAttribute('name', 'robots');
-            noindex.content = 'noindex';
-            document.getElementsByTagName('head')[0].appendChild(noindex);
-        }
-    </script>
-    <title>REST API v1.0 Reference – Cloud | Bold BI Documentation</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="./common/favicon.ico" />
-    <meta name="description"
-        content="Explore the REST API v1.0 reference to know about the APIs on authentication, users and groups in cloud-hosted Bold BI."
-        charset="UTF-8" />
-	<meta name="keywords" content="syncfusion, documentation, help, ej, user guide, demo, samples, essential studio" />
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="./common/index.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="./common/index.js"></script>
-</head>
-
-<body>
-    <div hidden="" id="Bold BI-analytics" data-queue="Bold BI - User Guide"></div>
-	<!-- Start Alexa Certify Javascript -->
-	<script type="text/javascript">
-	_atrk_opts = { atrk_acct:"vHAUs1FYxz20cv", domain:"boldbi.com",dynamic: true};
-	(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://certify-js.alexametrics.com/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
-	</script>
-	<noscript><img src="https://certify.alexametrics.com/atrk.gif?account=vHAUs1FYxz20cv" style="display:none" height="1" width="1" alt="" /></noscript>
-	<!-- End Alexa Certify Javascript -->
-
-    <div class="ej-doc-header">
-        <div class="ej-doc-left-side">
-            <a href="https://help.boldbi.com">
-                <div class="ej-doc-syncfusion-logo"></div>
-            </a>
-            <div class="ej-doc-divider"></div>
-            <div class="ej-doc-platform-name">Documentation</div>
-        </div>
-        <div class="ej-doc-right-side">
-            <a href="https://samples.boldbi.com/" target="_blank">Demos</a>
-            <a href="https://www.boldbi.com/support" target="_blank">Support</a>
-            <a href="https://www.boldbi.com/blog" target="_blank">Blog</a>
-			<a href="https://www.boldbi.com/embedded/get-free-demo" target="_blank" role="button"><div class="header-demo-link">Schedule Free Demo</div></a>
-        </div>
-    </div>
-    <redoc spec-url='swagger.json'></redoc>
-    <div id="doc-footer">
-        <div id="footer-copyright">
-            <a id="copyright" target="_blank" href="https://www.boldbi.com/copyright">Copyright © 2001 - <span id="copyright-year"> 2021</span> Syncfusion Inc. All Rights Reserved</a>
-        </div>
-        <div id="footer-powered_by"></div>
-    </div>
-    <script src="./common/redoc.min.js"></script>
-</body>
-
+	<head>
+		<title>REST API v1.0 Reference – Cloud | Bold BI Documentation</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="../../../../common/favicon.ico" />
+		<meta name="description"
+			content="Explore the REST API v1.0 reference to know about the APIs on authentication, users and groups in cloud-hosted Bold BI."
+			charset="UTF-8" />
+		<meta name="keywords" content="syncfusion, documentation, help, ej, user guide, demo, samples, essential studio" />
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:300,400,700" rel="stylesheet">
+        <link rel="stylesheet" href="../../../../common/api-reference/index.css">
+        <link rel="stylesheet" href="../../../../common/api-reference/developerAPI.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="../../../../common/api-reference/index.js"></script>
+        <style>
+            .iJLWmX button:first-child {
+                color: #373844 !important;
+                background: url("../../../../common/api-reference/images/copy.png") no-repeat !important;
+                background-size: 14px !important;
+                width: 17px !important;
+                height: 19px !important;
+                padding: 6px 12px !important;
+            }
+        </style>
+	</head>
+	<body>
+		<div hidden="" id="Bold BI-analytics" data-queue="Bold BI - User Guide"></div>
+		<header class="ej-doc-header">
+			<div class="ej-doc-left-side">
+				<a href="https://help.boldbi.com">
+					<div class="ej-doc-syncfusion-logo"></div>
+				</a>
+				<div class="ej-doc-divider"></div>
+				<div class="ej-doc-platform-name">Documentation</div>
+			</div>
+			<div class="ej-doc-right-side">
+				<a href="https://samples.boldbi.com/" target="_blank">Demos</a>
+				<a href="https://www.boldbi.com/support" target="_blank">Support</a>
+				<a href="https://www.boldbi.com/blog" target="_blank">Blog</a>
+				<a href="https://app.boldid.net/bi/embedded/register?plan=95&evaluation=v2" target="_blank" role="button"><div class="header-demo-link">Start Free Trial</div></a>
+			</div>
+		</header>
+		<redoc spec-url='swagger.json'></redoc>
+		<script src="https://cdn.jsdelivr.net/npm/redoc@2.0.0-rc.53/bundles/redoc.standalone.js"></script>
+        <script>
+            setTimeout(() => {
+                var searchbox = document.querySelectorAll('.search-input')[0];
+                searchbox.placeholder = "Filter by title";
+            }, 1000);
+        </script>
+	</body>
 </html>

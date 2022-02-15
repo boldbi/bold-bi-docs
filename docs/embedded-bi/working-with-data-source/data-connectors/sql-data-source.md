@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Microsoft SQL – Embedded BI Connector | Bold BI Learning
-description: Learn how to connect SQL data sources with Bold BI. Also, know about the full update and incremental update refresh settings in Embedded BI.
+title: Connect Microsoft SQL Server in Embedded BI | Bold BI Docs
+description: Learn how to connect and create data source(s) for the Microsoft SQL Server database with the full and incremental update refresh settings in Embedded Bold BI.
 canonical: "/cloud-bi/working-with-data-source/data-connectors/sql-data-source/"
 platform: bold-bi
 documentation: ug
@@ -225,17 +225,77 @@ After clicking `Execute`, this modification will be reflected in your table.
 
 > **NOTE:**  You can modify the column name in design view itself. Please refer [here](/embedded-bi/working-with-data-source/transforming-data/formatting-column/#renaming-column).
 
+### Configuring Expression Columns
+
+Code view supports `expressions` which is a combination of data columns, operators, and built-in functions.
+
+The following image shows the sample SQL query for using expressions with built-in functions like SUM(), COUNT(), and more in the code view editor. After altering the query, click the `Run` icon to execute the query and click `Update` to fetch the data.
+
+![Expressions in code view](/static/assets/embedded/working-with-datasource/data-connectors/images/SQLDataSource/code-view-expressions.png#max-width=100%)
+
+To know more, refer to this [link.](https://help.boldbi.com/embedded-bi/working-with-data-source/transforming-data/configuring-expression-columns/)
+
 ### Configuring User Filter
 
-Code view supports the `User Filter` which provides row level security for the data used for creating the dashboards. 
+Code view supports the `User filter`, which provides row-level security for the data used for creating dashboards.
 
-To know more, please refer [here](/embedded-bi/working-with-data-source/user-filter/).
+After switching to code view, press the `Shift+2` key to list the available [default parameters.](https://help.boldbi.com/embedded-bi/working-with-data-source/configuring-dashboard-parameters/#default-parameters)
+
+The `Current User Full Name` parameter filters the data based on the full name, and the `Current User Email` parameter filters the data based on the user email.
+
+![Parameters list](/static/assets/embedded/working-with-datasource/data-connectors/images/SQLDataSource/parameters-list.png#max-width=100%)
+
+Here, you need to assign the `Current User Full Name` parameter to the `Name` column, which will fetch the records of the currently logged user based on the full name. After altering the query, click the `Run` icon to execute the query and click `Update` to fetch the filtered data.
+
+![Name parameter](/static/assets/embedded/working-with-datasource/data-connectors/images/SQLDataSource/name-parameter.png#max-width=100%)
+
+You can refer to the [documentation](https://help.boldbi.com/embedded-bi/working-with-dashboards/) to create a dashboard using Bold BI. Once the dashboard is created, you can preview the dashboard by clicking the `Preview` button.
+
+**Dashboard preview for User 1:**
+
+![Dashboard for user1](/static/assets/embedded/working-with-datasource/data-connectors/images/SQLDataSource/userfilter-dashboard1.png#max-width=100%)
+
+**Dashboard preview for User 2:**
+
+![Dashboard for user2](/static/assets/embedded/working-with-datasource/data-connectors/images/SQLDataSource/userfilter-dashboard2.png#max-width=100%)
+
+You can also filter the data based on the users using the `Configure User Filters` icon, as shown in the following image. Refer to this [link](https://help.boldbi.com/embedded-bi/working-with-data-source/user-filter/) to configure the user filters.
+
+![User filters icon](/static/assets/embedded/working-with-datasource/data-connectors/images/SQLDataSource/userfilters-icon.png#max-width=100%)
 
 ### Configuring Dashboard Parameter
 
-Code view supports the `Dashboard Parameter` which allows the user to execute the custom query or stored procedure dynamically based on the parameter while viewing the dashboard.
+Code view supports the `dashboard parameter`, which allows the user to execute the custom query or stored procedure dynamically based on the parameter while viewing the dashboard.
 
-To know more, please refer [here](/embedded-bi/working-with-data-source/configuring-dashboard-parameters/#custom-query).
+To configure the dashboard parameter, refer to the [documentation.](https://help.boldbi.com/embedded-bi/working-with-data-source/configuring-dashboard-parameters/#add-a-dashboard-parameters)
+
+Here, you can find the configured dashboard parameter in the following image.
+
+![Configured dashboard parameters](/static/assets/embedded/working-with-datasource/data-connectors/images/SQLDataSource/configured-dashboard-parameters.png)
+
+Press the `Shift+2` key to list the available parameters. You can use it anywhere in the query editor window.
+
+![Available dashboard parameters](/static/assets/embedded/working-with-datasource/data-connectors/images/SQLDataSource/available-dashboard-parameters.png#max-width=100%)
+
+The following image shows the sample SQL query using the dashboard parameter in the code view editor. Using this query, you can fetch the records based on the configured dashboard parameter value. After altering the query, click the `Run` icon to execute the query and click `Update` to fetch the filtered data.
+
+![Assigning dashboard parameter](/static/assets/embedded/working-with-datasource/data-connectors/images/SQLDataSource/assigning-parameter.png#max-width=100%)
+
+You can use [this documentation](https://help.boldbi.com/embedded-bi/working-with-dashboards/) to create a dashboard using Bold BI. Once the dashboard is created, you can preview the dashboard by clicking the `Preview` button. 
+
+You can also change the parameter value by clicking the `dashboard parameters` icon, as shown in the following image.
+
+![Student details dashboard](/static/assets/embedded/working-with-datasource/data-connectors/images/SQLDataSource/student-details-dashboard.png#max-width=100%)
+
+Here, you can find the `StudentIDParameter` value is changed.
+
+![Change dashboard parameter](/static/assets/embedded/working-with-datasource/data-connectors/images/SQLDataSource/change-parameter.png)
+
+Now, you can view the updated dashboard in the following image.
+
+![Updated Student dashboard](/static/assets/embedded/working-with-datasource/data-connectors/images/SQLDataSource/student-dashboard2.png#max-width=100%)
+
+To know more, please refer to this [link.](/embedded-bi/working-with-data-source/configuring-dashboard-parameters/#custom-query)
 
 ### Sample Query with CUBE and ROLLUP
 
