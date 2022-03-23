@@ -122,3 +122,11 @@ The following are the frequently asked questions in Bold BI Enterprise:
 [How to group the data using Bold BI](/embedded-bi/faq/how-to-group-the-data-using-bold-bi/)
 
 [How to overwrite the existing dashboard](/embedded-bi/faq/how-to-overwrite-the-existing-dashboard/)
+
+[How to pass a parameter to Web API connector when view and embedding a dashboard?](/embedded-bi/faq/how-to-pass-a-parameter-to-web-api-connector-when-view-and-embedding-a-dashboard/)
+
+[How to get offline unlock key?](/embedded-bi/faq//how-to-get-offline-unlock-key/)
+
+[How to update SSL certificate in the Kubernetes secret of Bold BI site](/embedded-bi/faq/how-to-update-ssl-certificate-in-kubernetes-secret-of-bold-bi-site/)
+
+[How to view first seven days of each month in dashboard](/embedded-bi/faq/how-to-view-first-seven-days-of-each-month-in-dashboard)

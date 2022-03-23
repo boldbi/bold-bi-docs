@@ -32,7 +32,13 @@ documentation: ug
     sudo apt-get install libgdiplus
     ~~~
 
-5. Add an `openssl conf` path in the environment, if does not exist.
+5. Install `pv` tool by running below command.
+
+    ~~~shell
+    sudo apt-get install pv
+    ~~~
+	
+6. Add an `openssl conf` path in the environment, if does not exist.
 
 	~~~shell
     export OPENSSL_CONF=/etc/ssl/

@@ -30,7 +30,13 @@ Based on branding chosen, following information will be copied to the tenant.
 
 ## Select database 
 
-This step stores the dashboards, users, and their access permissions in SQL Server Database. You can connect to the existing SQL Server instance with the below options:
+This step helps you in configuring single or individual databases for the Bold BI Server and Data Store.
+
+The dashboards, users, and access rights are all stored in SQL Server Database.
+
+The Data Store database gathers data from over 120 connectors and stores it locally so dashboards can quickly access it.
+
+The following options can be used to connect to an existing SQL Server instance:
 
 * By creating new `Bold Bi Site` database.  
 ![Select Database](/static/assets/embedded/multi-tenancy/images/select-database.png#max-width=45%)
@@ -47,11 +53,25 @@ This step stores the dashboards, users, and their access permissions in SQL Serv
 * Drop Table
 * Drop Database  
 
-## Select data store
+Here, you can select the simple or advanced mode for configuration.
 
-You can pull the data from 120+ connectors and save it offline to access the dashboards quickly. 
+### Simple mode
 
-![SQL Server DataStore](/static/assets/embedded/multi-tenancy/images/select-datastore.png#max-width=45%)
+Configure a single database for Bold BI and Data Store.
+
+The site's details, dashboards, data store, users, and their access permissions are all stored in a single database with this configuration.
+
+![Simple Mode](/static/assets/embedded/multi-tenancy/images/simple-mode.png)
+
+### Advanced mode
+
+Configure individual databases for Bold BI and Data Store.
+
+Dashboards, users, and their access permissions are all stored in the Bold BI database.
+
+The authentication information and data collected from SQL and REST data sources are stored in the Data Store database.
+
+![Advanced Mode](/static/assets/embedded/multi-tenancy/images/advanced-mode.png)
 
 ## Select storage
 

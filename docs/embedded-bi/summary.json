@@ -255,7 +255,8 @@
         "Zendesk Sunshine": "zendesk-sunshine",
         "Zendesk Support": "zendesk-support",
         "Zoho Invoice": "zoho-invoice",
-		"Zoho CRM": "zohocrm"
+		"Zoho CRM": "zohocrm",
+		"Zuora": "zuora"
       },
       "Transforming Data": {
         "Joining Tables": "joining-table",
@@ -588,13 +589,17 @@
       "How to convert a timestamp column from one timezone to another in the PostgreSQL data source":"how-to-convert-timestamp-column-from-one-timezone-to-another-in-the-postgresql-datasource", 
       "How to apply Row-level Security in Elastic search data source":"how-to-apply-row-level-security-in-elastic-search-data-source",
 	  "How to allow users to create dashboards without modifying the existing data sources": "how-to-allow-users-to-create-dashboards-without-modifying-the-existing-data-sources",
-      "How to query Snowflake records using code view mode in Bold BI":"how-to-query-snowflake-records-using-code-view-mode-in-bold-bi",
+      "How to query Snowflake records using code view mode in Bold BI":"how-to-query-snowflake-records-using-code-view-mode-in-bold-bi",	  
       "How to execute the Microsoft SQL table-valued function in Bold BI": "how-to-execute-the-ms-sql-table-valued-function-in-bold-bi",
 	  "How to connect Google Cloud SQL data source with JBDC connection string": "how-to-connect-google-cloud-sql-data-source-with-jdbc-connection-string",
       "How to execute R language scripts using MS SQL data source in Bold BI":"how-to-execute-r-language-scripts-using-ms-sql-datasource-in-bold-bi",
-      "How to connect polymorphic databases in Bold BI": "how-to-connect-polymorphic-databases-in-bold-bi",
+	  "How to connect polymorphic databases in Bold BI": "how-to-connect-polymorphic-databases-in-bold-bi",
       "How to group the data using Bold BI": "how-to-group-the-data-using-bold-bi",
-      "How to overwrite the existing dashboard": "how-to-overwrite-the-existing-dashboard"	  
+      "How to overwrite the existing dashboard": "how-to-overwrite-the-existing-dashboard",
+      "How to pass a parameter to Web API connector when view and embedding a dashboard": "how-to-pass-a-parameter-to-web-api-connector-when-view-and-embedding-a-dashboard",
+	  "How to get offline unlock key?" : "how-to-get-offline-unlock-key",
+	  "How to update SSL certificate in Kubernetes secret of Bold BI site?":"how-to-update-ssl-certificate-in-kubernetes-secret-of-bold-bi-site",
+    "How to view first seven days of each month in dashboard":"how-to-view-first-seven-days-of-each-month-in-dashboard"
     }
   }
 }

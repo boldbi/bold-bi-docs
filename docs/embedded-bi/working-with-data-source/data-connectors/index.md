@@ -184,6 +184,7 @@ The Bold BI supports the following data connection types such that the structure
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/todoist/"> Todoist</a>
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/toggl/"> Toggl</a>
 			<br> <a href="/embedded-bi/working-with-data-source/data-connectors/trello/"> Trello</a>
+			<br> <a href="/cloud-bi/working-with-data-source/data-connectors/zuora/"> Zuora</a>
         </td>
         <td align="center"> Support
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/freshdesk/"> Freshdesk</a>

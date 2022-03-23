@@ -17,16 +17,18 @@ documentation: ug
     ~~~shell
     sudo yum install libgdiplus 
     ~~~ 
+	
+3. Install `pv` tool by running below command.
 
-3. Add an `openssl conf` path in the environment, if does not exist.
+    ~~~shell
+    sudo yum -y install pv
+    ~~~ 
+
+4. Add an `openssl conf` path in the environment, if does not exist.
 
 	~~~shell
     export OPENSSL_CONF=/etc/ssl/
 	~~~
-    
-4. Please follow the steps in [this](https://github.com/dotnet/core/blob/master/Documentation/build-and-install-rhel6-prerequisites.md) documentation until installing the libraries to `/usr/local`.
-
-    ![Install Libraries](/static/assets/embedded/setup/images/install-libraries.png)
 
 ## Configuring the Bold BI application
 

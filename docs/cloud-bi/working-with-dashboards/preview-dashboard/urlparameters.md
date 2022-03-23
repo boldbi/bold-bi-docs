@@ -295,10 +295,4 @@ Here is a dashboard view illustrating the same.
 
 ![Two Different Parameter](/static/assets/cloud/working-with-dashboards/preview-dashboards/images/urlmultipleparameter.png)
 
-> **NOTE:**  Points to be considered
-* The parameter names and values are case-sensitive.
-* The operators and date & time function names are case-insensitive.
-* Characters like comma (,) and ampersand (&) in value should be prefixed and suffixed with tilde (~) symbol to differentiate itself from syntax elements. For example, `CompanyName=Syncfusion Inc~,~ `  
-* Invalid parameter name will get ignored from filter consideration.
-* Invalid parameter value will result in "No data available to display" in widgets. 
-
+> **NOTE:**  Points to be considered,</br> <li> The parameter names and values are case-sensitive.</br><li> The operators and date & time function names are case-insensitive.</br><li> Characters like comma (,) and ampersand (&) in value should be prefixed and suffixed with tilde (~) symbol to differentiate itself from syntax elements. For example, `CompanyName=Syncfusion Inc~,~ ` </br><li> The invalid parameter name will get ignored from filter consideration.</br><li> The invalid parameter value will result in "No data available to display" in widgets. </br><li> Parameters are applicable for both live and extract mode in dynamic data source creation, but extract mode changes will be reflected only when the refresh setting is triggered. 

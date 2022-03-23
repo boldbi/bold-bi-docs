@@ -104,6 +104,7 @@
         "Presto": "presto",
         "Prometheus": "prometheus",
         "ProofHub": "proofhub",
+		"Quickbase": "quickbase",
         "QuickBooks Online": "quickbooks-online",
         "QuickBooks Payments": "quickbooks-payments",
         "Raven DB": "ravendb",
@@ -140,7 +141,8 @@
         "Zendesk Sunshine": "zendesk-sunshine",
         "Zendesk Support": "zendesk-support",
         "Zoho CRM": "zohocrm",
-        "Zoho Invoice": "zoho-invoice"
+        "Zoho Invoice": "zoho-invoice",
+		"Zuora" : "zuora"
       },
       "Transforming Data": {
         "Joining Tables": "joining-table",
@@ -369,7 +371,8 @@
       "How to connect Google Cloud SQL data source with JBDC connection string": "how-to-connect-google-cloud-sql-data-source-with-jdbc-connection-string",
       "How to execute R language scripts using MS SQL data source in Bold BI":"how-to-execute-r-language-scripts-using-ms-sql-datasource-in-bold-bi",
       "How to connect polymorphic databases in Bold BI": "how-to-connect-polymorphic-databases-in-bold-bi",
-      "How to group the data using Bold BI": "how-to-group-the-data-using-bold-bi"
+      "How to group the data using Bold BI": "how-to-group-the-data-using-bold-bi",
+      "How to publish modified data source from one tenant to another": "how-to-publish-modified-data-source-from-one-tenant-to-another"
     }
   }
 }
