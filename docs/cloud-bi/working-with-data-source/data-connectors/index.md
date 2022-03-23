@@ -78,6 +78,7 @@ The Bold BI supports the following data connection types such that the structure
         </td>
         <td align="center">NoSQL
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/mongodb/"> MongoDB</a>
+			<br> <a href="/cloud-bi/working-with-data-source/data-connectors/quickbase/"> Quickbase</a>
         </td>
 		<td align="center">Management
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/appfolio/"> AppFolio</a>
@@ -181,6 +182,7 @@ The Bold BI supports the following data connection types such that the structure
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/todoist/"> Todoist</a>
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/toggl/"> Toggl</a>
 			<br> <a href="/cloud-bi/working-with-data-source/data-connectors/trello/"> Trello</a>
+			<br> <a href="/cloud-bi/working-with-data-source/data-connectors/zuora/"> Zuora</a>
         </td>
         <td align="center">Support
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/callrail/"> CallRail</a>
