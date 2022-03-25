@@ -80,7 +80,7 @@ In this file, there are two variables present as `msgid` and `msgstr`.
 3. Change the locale **Language** code in the top of the `messages.po` file.
 Here, the sample converted locale file will be appeared as follows.
 
-   ![change-message](/static/assets/embedded/localization/images/change-message.png)
+   ![change-message](/static/assets/embedded/localization/images/change-message.png#width=65%)
 
 ### Auto-generate using any tools
 
@@ -136,12 +136,12 @@ Change the localization in site settings page. By default, site language setting
 
 Admin can enforce this language into all the users. If admin enforced this language, then user preference settings is disabled.
 
-  ![site-language-setting](/static/assets/embedded/localization/images/site-language-setting.png)
+  ![site-language-setting](/static/assets/embedded/localization/images/site-language-setting.png#width=65%)
 
 ### User preference settings
 
 User can set the language preference in the profile page. By clicking the `Account` presence on the profile page, it will be redirected to IDP profile page where user can set the own language preference.
 
-  ![profile-site-setting](/static/assets/embedded/localization/images/profile-site-setting.png)
+  ![profile-site-setting](/static/assets/embedded/localization/images/profile-site-setting.png#width=55%)
 
 A user can set any language as preferred language and it will be applied on all the sites, but when the admin disable the user language preference in any site, the user preferred language will be not applied at that site.

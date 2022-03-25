@@ -22,7 +22,7 @@ For any configurations made in the Bold BI, log files are generated in deployed 
 
 Admin can download log files from `Get diagnostic logs` in UMS.
 
-![Download Log Files](/static/assets/embedded/faq/images/download-logs.png)
+![Download Log Files](/static/assets/embedded/faq/images/download-logs.png#width=55%)
 
 You can get the log file manually from the following location for Bold BI version 4.1.36 or later.
 

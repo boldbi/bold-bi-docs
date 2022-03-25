@@ -13,7 +13,7 @@ This section explains how to synchronize the imported existing database users de
 
 You can navigate to the user synchronization page from users page as shown in the below figure.
 
-![Imported Database Users Synchronization Link](/static/assets/embedded/managing-resources/manage-users/images/user-synchronisation-navigation-button-for-importdb.png)
+![Imported Database Users Synchronization Link](/static/assets/embedded/managing-resources/manage-users/images/user-synchronisation-navigation-button-for-importdb.png#width=60%)
 
 ## Synchronize Users
 
@@ -35,7 +35,7 @@ Choose the users you want to synchronize and click on `Synchronize` at the top.
 
 After synchronization completes, the number of users modified, deleted, duplicated will be shown in the success message box as shown in the below figure.
 
-![Synchronization confirmation window](/static/assets/embedded/managing-resources/manage-users/images/Synchronization-Confirmation-window-of-importdb.png)
+![Synchronization confirmation window](/static/assets/embedded/managing-resources/manage-users/images/Synchronization-Confirmation-window-of-importdb.png#width=60%)
 
 ## Duplicate Users
 

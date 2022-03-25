@@ -99,7 +99,7 @@ This section explains what are the [Azure Active Directory](https://azure.micros
 
 You will need the following Azure Active Directory details to configure Bold BI with your Azure Active Directory.
 
-![Azure Active Directory Settings](/static/assets/embedded/site-administration/images/azure-active-directory-settings.png)
+![Azure Active Directory Settings](/static/assets/embedded/site-administration/images/azure-active-directory-settings.png#width=70%)
 
 > **NOTE:** Enabling `Import users from groups` setting, will import and synchronize users, when importing and synchronizing groups with Azure AD. Enable this setting if you need to import users from your Azure AD groups.
 

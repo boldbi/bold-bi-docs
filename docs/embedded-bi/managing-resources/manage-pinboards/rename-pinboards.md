@@ -15,8 +15,8 @@ This section explains how to rename Pinboard in the Bold BI application.
 
 1. Click the `Rename` option from the `gear` icon menu.
 
-    ![Rename Option](/static/assets/embedded/managing-resources/manage-pinboards/images/rename-option.png)
+    ![Rename Option](/static/assets/embedded/managing-resources/manage-pinboards/images/rename-option.png#width=50%)
 
 2. Enter the new name for the Pinboard and save it.
 
-    ![Save Rename](/static/assets/embedded/managing-resources/manage-pinboards/images/save-rename.png)
+    ![Save Rename](/static/assets/embedded/managing-resources/manage-pinboards/images/save-rename.png#width=50%)

@@ -20,23 +20,23 @@ You can add deployment dashboards by using these steps:
 
 2. Click the deployment dashboards tab and you can find the `Add dashboard` button at the right corner.
 
-    ![deployment dashboard page](/static/assets/embedded/site-administration/images/deployment-dashboard-page.png)    
+    ![deployment dashboard page](/static/assets/embedded/site-administration/images/deployment-dashboard-page.png)
 
 3. Click the `Add dashboard` and it opens the dialog box.
 
-    ![deployment dashboard dialog](/static/assets/embedded/site-administration/images/deployment-dashboard-dialog.png)
+    ![deployment dashboard dialog](/static/assets/embedded/site-administration/images/deployment-dashboard-dialog.png#width=60%)
 
 4. You can give category, name, description, and select the dashboard, which you need to deploy to each site as shown in the following image.
 
-    ![Fill the deployment dashboard dialog](/static/assets/embedded/site-administration/images/fill-deployment-dashboard-dialog.png)
+    ![Fill the deployment dashboard dialog](/static/assets/embedded/site-administration/images/fill-deployment-dashboard-dialog.png#width=60%)
 
 5. You can publish a dashboard with public accessibility by checking Make Dashboard Public option. This means that anonymous users who have access to the Dashboard link can access it.
 
-    ![Make public the deployment dashboard dialog](/static/assets/embedded/site-administration/images/make-public-deployment-dashboard-dialog.png)
+    ![Make public the deployment dashboard dialog](/static/assets/embedded/site-administration/images/make-public-deployment-dashboard-dialog.png#width=60%)
 
 6. By checking lock option, you can lock your dashboard and data source, which makes not editable and add the deployment dashboard.
     
-    ![Lock Option in deployment dashboard dialog](/static/assets/embedded/site-administration/images/lock-deployment-dashboard.png)
+    ![Lock Option in deployment dashboard dialog](/static/assets/embedded/site-administration/images/lock-deployment-dashboard.png#width=60%)
 
 7. You can see the added deployment dashboards in the gird and success message.
 
@@ -60,5 +60,5 @@ When you are creating a new site, the deployment dashboards will get added to th
 
 You can see the deployment dashboards in other sites as shown in the following image.
 
-![Deployment dashboards in other sites](/static/assets/embedded/site-administration/images/deployment-dashboard-other-sites.png)
+![Deployment dashboards in other sites](/static/assets/embedded/site-administration/images/deployment-dashboard-other-sites.png#width=60%)
 

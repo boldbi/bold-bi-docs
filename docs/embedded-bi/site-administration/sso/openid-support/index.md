@@ -22,7 +22,7 @@ The Bold BI application can be configured to support OpenID Connect for Single S
 
 2. Click `Settings` in the left side menu.
 
-    ![Settings](/static/assets/embedded/site-administration/openid-support/images/settings.png)
+    ![Settings](/static/assets/embedded/site-administration/openid-support/images/settings.png#width=65%)
 
 3. Click `Authentication` and then `OpenID Connect`
 
@@ -69,7 +69,7 @@ The Bold BI application can be configured to support OpenID Connect for Single S
 
     </table>
 
-    ![OpenId settings](/static/assets/embedded/site-administration/openid-support/images/openid-settings.png)
+    ![OpenId settings](/static/assets/embedded/site-administration/openid-support/images/openid-settings.png#width=55%)
 
 If we need to import the OpenID Connect groups, we have to configure the group details while saving the OpenID authentication settings.
 
@@ -101,12 +101,4 @@ OpenID Connect can be set as default authentication when [OpenID Connect setting
 
 When OpenID Connect is set as default authentication and try to disable the [OpenID Connect settings](/embedded-bi/site-administration/sso/openid-support/#steps-to-configure-openid-in-bold-bi) to display the following pop-up. Proceeding by clicking `Yes` will disable the [OpenID Connect default authentication](/embedded-bi/site-administration/sso/openid-support/#set-openid-connect-as-default-authentication).
 
-![Disable Default Authentication](/static/assets/embedded/site-administration/images/disable-default-authentication.png)
-
-<!---
-## Bypassing OpenID Connect Authentication
-
-Use the following custom login URL to login as normal user that is not from OAuth, when [OpenID Connect default authentication](/embedded-bi/site-administration/sso/openid-support/#set-openid-connect-as-default-authentication) is enabled.
-
->{Bold server URL}/bi/site/{tenant-name}/login?use_default_authentication=false
--->
+![Disable Default Authentication](/static/assets/embedded/site-administration/images/disable-default-authentication.png#width=60%)

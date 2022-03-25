@@ -19,4 +19,4 @@ To change the layout of the Pinboard.
 
 1. Click the `Edit Layout` option from the Pinboard menu and change the layout of the Pinboard from the available layout options as follows,
 
-    ![Edit Layout](/static/assets/embedded/managing-resources/manage-pinboards/images/edit-layout.png)
+    ![Edit Layout](/static/assets/embedded/managing-resources/manage-pinboards/images/edit-layout.png#width=50%)

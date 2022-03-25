@@ -12,7 +12,7 @@ This section explains how to synchronize the imported Active Directory users det
 
 You can navigate to the user synchronization page from users page.
 
-![Active Directory Synchronization Link](/static/assets/embedded/managing-resources/manage-users/images/user-synchronisation-navigation-button.png)
+![Active Directory Synchronization Link](/static/assets/embedded/managing-resources/manage-users/images/user-synchronisation-navigation-button.png#width=60%)
 
 ## Synchronize Users
 
@@ -32,7 +32,7 @@ Choose the users you want to synchronize and click on `Synchronize` at the top.
 
 After synchronization completes, the number of users modified, deleted, duplicated will be shown in the success message box.
 
-![Synchronization confirmation window](/static/assets/embedded/managing-resources/manage-users/images/Synchronization-Confirmation-window.png)
+![Synchronization confirmation window](/static/assets/embedded/managing-resources/manage-users/images/Synchronization-Confirmation-window.png#width=65%)
 
 ## Duplicate Users
 

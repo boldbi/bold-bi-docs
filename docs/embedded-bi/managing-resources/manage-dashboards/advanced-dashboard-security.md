@@ -22,19 +22,19 @@ This section explains how to restrict dashboard access based on IP address and a
 2. Here, you can specify the domains you want to allow the dashboard to be embedded and the device IP address/range of IP 
 addresses you want to allow the dashboard to view.
 
-    ![Get Security Dialog](/static/assets/embedded/managing-resources/manage-dashboards/images/get-security-dialog.png)
+   ![Get Security Dialog](/static/assets/embedded/managing-resources/manage-dashboards/images/get-security-dialog.png#width=55%)
 
 3. Specify the device IP address/range of IP addresses you want to allow the dashboard to access.
 
 4. Specify the domains you want to allow the dashboards to be embedded.
 
-    ![Get Restricted Content](/static/assets/embedded/managing-resources/manage-dashboards/images/get-restricted-content.png)
+    ![Get Restricted Content](/static/assets/embedded/managing-resources/manage-dashboards/images/get-restricted-content.png#width=55%)
 
 ## When to apply these settings
 
 The restriction can be applied in three ways for the dashboards.
 
-![Get Settings Dropdown](/static/assets/embedded/managing-resources/manage-dashboards/images/get-settings-dropdown.png)
+![Get Settings Dropdown](/static/assets/embedded/managing-resources/manage-dashboards/images/get-settings-dropdown.png#width=55%)
 
 ### Always
 

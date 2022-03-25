@@ -15,12 +15,12 @@ You can view the profile and edit the profile details, my permission details and
 ## View Profile
 You can view the profile details in this page.
 
-![View Profile](/static/assets/embedded/managing-resources/images/view-user-profile.png)
+![View Profile](/static/assets/embedded/managing-resources/images/view-user-profile.png#width=55%)
  
 ## Edit Profile
-You can edit the profile details in Bold BI account. Click `Account` in profile page.
+You can edit the profile details in Bold BI account. Click `Edit Account` in profile page.
 
-![Cloud Account](/static/assets/embedded/managing-resources/images/syncfusion-cloud-account-button.png)
+![Cloud Account](/static/assets/embedded/managing-resources/images/syncfusion-cloud-account-button.png#width=55%)
 
 Username, first name, last name, phone number and profile picture can be changed in the Bold BI profile page.
 
@@ -29,7 +29,7 @@ Username, first name, last name, phone number and profile picture can be changed
 ## Change Password
 Password to log in to the Bold BI can be changed in the Bold BI, change password page.
 
-![Change Password](/static/assets/embedded/managing-resources/images/edit-user-profile-password.png)
+![Change Password](/static/assets/embedded/managing-resources/images/edit-user-profile-password.png#width=60%)
 
 > **NOTE:**  Administrator privileged users can change the password from UMS Site. For more details, please visit [here](/embedded-bi/managing-resources/manage-users/#change-password)
 
@@ -38,19 +38,19 @@ If you forgot the password, you can reset the password by following the below st
 
 1. Click Cannot access your account option on the login page.
 
-   ![Cannot access your account](/static/assets/embedded/managing-resources/images/recover-account-option.png)
+   ![Cannot access your account](/static/assets/embedded/managing-resources/images/recover-account-option.png#width=60%)
 
 2. Enter your email to get the reset password link. After enter your email, click `Send recovery link`.
 
-   ![Email Form](/static/assets/embedded/managing-resources/images/recover-option.png)
+   ![Email Form](/static/assets/embedded/managing-resources/images/recover-option.png#width=60%)
 
 3. After the confirmation page, you will receive an email to reset the password.
 
-   ![Email Link](/static/assets/embedded/managing-resources/images/reset-password-mail.png)
+   ![Email Link](/static/assets/embedded/managing-resources/images/reset-password-mail.png#width=60%)
 
 4. You can reset the password by clicking the link in the mail you received.
 
-   ![Reset Password](/static/assets/embedded/managing-resources/images/reset-password-page.png)
+   ![Reset Password](/static/assets/embedded/managing-resources/images/reset-password-page.png#width=60%)
 
    > **NOTE:**  Forgot password option restricted for third party user directories.
    

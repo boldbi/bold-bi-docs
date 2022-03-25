@@ -130,3 +130,5 @@ The following are the frequently asked questions in Bold BI Enterprise:
 [How to update SSL certificate in the Kubernetes secret of Bold BI site](/embedded-bi/faq/how-to-update-ssl-certificate-in-kubernetes-secret-of-bold-bi-site/)
 
 [How to view first seven days of each month in dashboard](/embedded-bi/faq/how-to-view-first-seven-days-of-each-month-in-dashboard)
+
+[How to show a detailed view of a widget in JavaScript](/embedded-bi/faq/how-to-show-a-detailed-view-of-a-widget-in-javascript/)

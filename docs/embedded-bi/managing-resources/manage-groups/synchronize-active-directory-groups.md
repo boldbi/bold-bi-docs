@@ -34,7 +34,7 @@ Choose the groups you want to synchronize and click on `Synchronize` at the top.
 
 After synchronization completes, the number of groups modified, deleted, duplicated will be shown in the success message box.
 
-![Synchronization confirmation window](/static/assets/embedded/managing-resources/manage-groups/images/Synchronize-group-success-window.png)
+![Synchronization confirmation window](/static/assets/embedded/managing-resources/manage-groups/images/Synchronize-group-success-window.png#width=65%)
 
 ## Duplicate Groups
 

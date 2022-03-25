@@ -15,7 +15,7 @@ This section explains how to configure Database Settings with the Bold BI Embedd
 
 To import users into Bold BI Embedded from an Existing Database, configure the existing database details in database settings page in the User Directories page of Bold BI. 
 
-![Import Users from Database - Home](/static/assets/embedded/site-administration/images/import-users-home-page-new.png)
+![Import Users from Database - Home](/static/assets/embedded/site-administration/images/import-users-home-page-new.png#width=60%)
 
 Users can be imported from below types of Databases.
 
@@ -24,7 +24,7 @@ Users can be imported from below types of Databases.
 
 To select the database type from which the users to be imported, click on `Database type` dropdown.
 
-![Select Database Type](/static/assets/embedded/site-administration/images/select-database-type-new.png)
+![Select Database Type](/static/assets/embedded/site-administration/images/select-database-type-new.png#width=60%)
  
 ### SQL Server Database
  
@@ -32,7 +32,7 @@ For SQL Server Database, fill the form with Server name, Authentication type, Us
  
 The connection details can be tested by clicking the `Test Connection` option.
   
-![Connect SQL Server Database](/static/assets/embedded/site-administration/images/connect-database-sqlserver-new.png)
+![Connect SQL Server Database](/static/assets/embedded/site-administration/images/connect-database-sqlserver-new.png#width=60%)
  
 ### PostgreSQL Database
  
@@ -40,7 +40,7 @@ For PostgreSQL Database, fill the form with Server name, Port, Username, Passwor
  
 The connection details can be tested by clicking the `Test Connection` option.
  
-![Connect PostgreSQL Database](/static/assets/embedded/site-administration/images/connect-database-postgresql-new.png)
+![Connect PostgreSQL Database](/static/assets/embedded/site-administration/images/connect-database-postgresql-new.png#width=60%)
  
 Once the connection details are filled, click `Next` for getting schema of the provided database connection.
 
@@ -66,13 +66,13 @@ If the columns are selected from different tables, below scenarios will happen.
 
 * If there is no relationship between tables - Form Join with the selected tables and then click on `Apply`
 
-![Form Table Relation](/static/assets/embedded/site-administration/images/form-relation.png)
+![Form Table Relation](/static/assets/embedded/site-administration/images/form-relation.png#width=60%)
 
 After selection of all columns, click on `Save` to save the database details. Based on this saved details it will pull the users from the configured Database.
 
 ![Saving database details](/static/assets/embedded/site-administration/images/save-database-details.png)
 
 
-![Successful saving](/static/assets/embedded/site-administration/images/database-details-saved.png)
+![Successful saving](/static/assets/embedded/site-administration/images/database-details-saved.png#width=55%)
 
 Also included the `Back` button in the settings page to edit the database details before complete mapping and saving the database configuration.

@@ -21,11 +21,11 @@ The filters applied in the dashboard can be saved automatically and the dashboar
 
 3. Apply any filter and view the dashboard.
 
-    ![Apply filter](/static/assets/embedded/site-administration/images/apply-filter.png)
+    ![Apply filter](/static/assets/embedded/site-administration/images/apply-filter.png#width=65%)
 
 4. Again open the dashboard, the dashboard will be rendered with the last applied filter to the dashboard.
 
-    ![Applied filter](/static/assets/embedded/site-administration/images/applied-filter.png)
+    ![Applied filter](/static/assets/embedded/site-administration/images/applied-filter.png#width=65%)
 
 The auto-save filters can be controlled by both the administrator and the user. The following section explains the same. 
 

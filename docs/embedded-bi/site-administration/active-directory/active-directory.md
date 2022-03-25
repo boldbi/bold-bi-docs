@@ -9,7 +9,7 @@ documentation: ug
 
 This section explains what are the [Active Directory](https://msdn.microsoft.com/en-us/library/windows/desktop/aa746492) details needed and how to configure Active Directory with Bold BI Server.
 
-![Active Directory Settings](/static/assets/embedded/site-administration/images/active-directory-settings.png)
+![Active Directory Settings](/static/assets/embedded/site-administration/images/active-directory-settings.png#width=60%)
 
 You will need the below Active Directory details to configure Bold BI with your Active Directory:
 

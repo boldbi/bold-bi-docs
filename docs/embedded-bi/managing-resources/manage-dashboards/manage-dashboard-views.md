@@ -32,7 +32,7 @@ Dashboard Views are opened in our embedded Dashboard Viewer itself as Dashboards
 
     ![Create Dashboard View](/static/assets/embedded/managing-resources/manage-dashboards/images/Add-Dashboard-View.png)    
     
-    ![Created Dashboard View](/static/assets/embedded/managing-resources/manage-dashboards/images/Added-Dashboard-View.png)
+    ![Created Dashboard View](/static/assets/embedded/managing-resources/manage-dashboards/images/Added-Dashboard-View.png#width=65%)
 
 2. The views can be set as default while saving the views by enabling the `Mark as Default` option in the save view dialog. Learn more about default views [here](/embedded-bi/site-administration/dashboard-settings/default-views/).
 
@@ -58,11 +58,11 @@ Dashboard Views can be shared to the users, who have permission for the `Specifi
 
 2. Type the user or a group name with whom you want to share the `Dashboard View`.
 
-	![Share View Dashboard](/static/assets/embedded/managing-resources/manage-dashboards/images/share-dashbaord-view.png)
+	![Share View Dashboard](/static/assets/embedded/managing-resources/manage-dashboards/images/share-dashbaord-view.png#width=65%)
 
 3. After selecting the users or groups, click `Share`.
 
-	![Add View Permission](/static/assets/embedded/managing-resources/manage-dashboards/images/add-view-permission.png)
+	![Add View Permission](/static/assets/embedded/managing-resources/manage-dashboards/images/add-view-permission.png#width=65%)
 	
 > **NOTE:**  Only the user who created the dashboard view can share the dashboard view with other Bold BI users.
 
@@ -72,11 +72,11 @@ Only the user who created the dashboard view can remove the shared dashboard vie
 
 1. Click the `Manage Access` button to see the users or groups and their permissions.
 
-	![Manage Access View](/static/assets/embedded/managing-resources/manage-dashboards/images/manage-access-view.png)
+	![Manage Access View](/static/assets/embedded/managing-resources/manage-dashboards/images/manage-access-view.png#width=65%)
 
 2. Then remove the permissions using the `Remove` option in the `Actions` column of the each permissions.
 
-    ![Remove View Permission](/static/assets/embedded/managing-resources/manage-dashboards/images/remove-view-permission.png)
+    ![Remove View Permission](/static/assets/embedded/managing-resources/manage-dashboards/images/remove-view-permission.png#width=55%)
 	
 ## Make Public
 
@@ -84,11 +84,11 @@ Dashboard Views can be marked as public to let anyone access it.
 
 Click the `change` button to select the access permission. 
 
-![Make Public Dashboard View](/static/assets/embedded/managing-resources/manage-dashboards/images/change-permission-access.png)
+![Make Public Dashboard View](/static/assets/embedded/managing-resources/manage-dashboards/images/change-permission-access.png#width=65%)
 
 After selecting the access permission click `Change` button.
 
-![Make Public Dashboard View](/static/assets/embedded/managing-resources/manage-dashboards/images/Make-Public-Dashboard-View.png)
+![Make Public Dashboard View](/static/assets/embedded/managing-resources/manage-dashboards/images/Make-Public-Dashboard-View.png#width=65%)
 		
 ## Delete Dashboard Views
 
@@ -102,7 +102,7 @@ The dashboard view can be set as default view in two ways either while saving th
 
 1. Select any view from the list of available dashboard views and click `Set as Default` option.
 
-    ![Set default View](/static/assets/embedded/managing-resources/manage-dashboards/images/set-default-icon.png)
+    ![Set default View](/static/assets/embedded/managing-resources/manage-dashboards/images/set-default-icon.png#width=65%)
 
 2. If the dashboard has no default views yet and if you click the `Set as Default` option, then respective view will be set as default view for the dashboard and success message will be displayed.
 
@@ -110,11 +110,11 @@ The dashboard view can be set as default view in two ways either while saving th
 
 3. If a default view already exists for the dashboard, then confirmation dialog box will be opened and proceed with `Yes`.
 
-    ![Set default View](/static/assets/embedded/managing-resources/manage-dashboards/images/multiple-default.png)
+    ![Set default View](/static/assets/embedded/managing-resources/manage-dashboards/images/multiple-default.png#width=65%)
 
 4. After setting the dashboard view as default for the dashboard, the text `(default)` will be appended with the respective view in the views listing panel.
 
-    ![Set default](/static/assets/embedded/managing-resources/manage-dashboards/images/default-view.png)
+    ![Set default](/static/assets/embedded/managing-resources/manage-dashboards/images/default-view.png#width=65%)
 
 > **NOTE:** To set a dashboard view as default view for the dashboard, the `Default view` option in `Dashboard settings` must be enabled. Learn more about default views [here](/embedded-bi/site-administration/dashboard-settings/default-views).
 
@@ -128,4 +128,4 @@ The default view of the dashboard can be removed to view the dashboard with thei
 
 2. Proceed with `Yes` in the opened dialog box.
 
-    ![Remove default View](/static/assets/embedded/managing-resources/manage-dashboards/images/remove-default.png)
+    ![Remove default View](/static/assets/embedded/managing-resources/manage-dashboards/images/remove-default.png#width=65%)

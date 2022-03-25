@@ -15,10 +15,10 @@ This section explains how to duplicate Pinboard in the Bold BI application.
 
 1. Click the `Duplicate` option from the `gear` icon menu.
 
-    ![Duplicate Option](/static/assets/embedded/managing-resources/manage-pinboards/images/duplicate-option.png)
+    ![Duplicate Option](/static/assets/embedded/managing-resources/manage-pinboards/images/duplicate-option.png#width=50%)
 
 2. Enter the new name and save it.
 
-    ![Save Duplicate](/static/assets/embedded/managing-resources/manage-pinboards/images/save-duplicate.png)
+    ![Save Duplicate](/static/assets/embedded/managing-resources/manage-pinboards/images/save-duplicate.png#width=50%)
 
 3. A duplicated Pinboard has been saved and it will be loaded automatically.

@@ -12,8 +12,8 @@ This section describes how to enable or disable dashboard theme in the dashboard
 
 You can enable or disable dashboard theme in the dashboard settings and based on this, `Theme` option will be available in the dashboard. By default, theme settings will be enabled.
 
-![Theming](/static/assets/embedded/site-administration/images/theming.png)
+![Theming](/static/assets/embedded/site-administration/images/theming.png#width=60%)
 
-![Default Theme](/static/assets/embedded/site-administration/images/light-theming.png)
+![Default Theme](/static/assets/embedded/site-administration/images/light-theming.png#width=50%)
 
-![Dark Theme](/static/assets/embedded/site-administration/images/dark-theming.png)
+![Dark Theme](/static/assets/embedded/site-administration/images/dark-theming.png#width=50%)

@@ -40,16 +40,16 @@ To import the Azure Active Directory users into the Bold BI, you have to choose 
 
 Bold BI will import the chosen users and a confirmation message will be displayed as shown in the below figure.
 
-![Success message after imported the Azure Active Directory users](/static/assets/embedded/managing-resources/manage-users/images/Azure-Active-Directory-User-imported.png)
+![Success message after imported the Azure Active Directory users](/static/assets/embedded/managing-resources/manage-users/images/Azure-Active-Directory-User-imported.png#width=70%)
 
 ## Duplicate Users
 
 Azure Active Directory users who has the same username or email address as that of the Bold BI users(who are already present), will be marked as duplicate users and will not be allowed to import into Bold BI.  
 
-![Duplicated Azure Active Directory Users](/static/assets/embedded/managing-resources/manage-users/images/Duplicated-Azure-Active-Directory-Users.png)
+![Duplicated Azure Active Directory Users](/static/assets/embedded/managing-resources/manage-users/images/Duplicated-Azure-Active-Directory-Users.png#width=55%)
 
 ## Modify Azure Active Directory Connection
 
 To modify Azure Active Directory configuration settings, click on the `Modify` link as below
 
-![Modify Azure Active Directory Configuration](/static/assets/embedded/managing-resources/manage-users/images/Modify-Azure-Active-Directory-Configuration.png)
+![Modify Azure Active Directory Configuration](/static/assets/embedded/managing-resources/manage-users/images/Modify-Azure-Active-Directory-Configuration.png#width=55%)

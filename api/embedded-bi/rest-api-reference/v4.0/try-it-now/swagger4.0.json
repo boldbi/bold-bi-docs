@@ -195,8 +195,8 @@
           "406": {
             "description": "The content of the request body is invalid"
           },
-          "417": {
-            "description": "Failed to update user"
+          "500": {
+            "description": "Failed to update user profile detail."
           }
         }
       },
@@ -682,9 +682,6 @@
           "404": {
             "description": "Group detail was not found."
           },
-          "412": {
-            "description": "User detail not found."
-          },
           "405": {
             "description": "Request type was not DELETE"
           },
@@ -727,7 +724,7 @@
             "description": "Group detail was not found."
           },
           "417": {
-            "description": "Failed to retrieve the groups' users."
+            "description": "Failed to check whether the group is active or not."
           },
           "406": {
             "description": "Invalid Group ID"
@@ -759,7 +756,7 @@
         "responses": {
           "200": {
             "x-nullable": true,
-            "description": "User permission was created successfully.",
+            "description": "User permission has been added successfully",
             "schema": {
               "$ref": "#/definitions/ApiResponse"
             }
@@ -863,7 +860,7 @@
             "description": "Request type was not DELETE"
           },
           "417": {
-            "description": "Failed to delete user permission"
+            "description": "Failed to remove permission."
           }
         }
       }
@@ -1198,7 +1195,7 @@
             }
           },
           "400": {
-            "description": "Item id invalid."
+            "description": "Invalid item ID."
           },
           "401": {
             "description": "Access denied."
@@ -1235,7 +1232,7 @@
             "description": "No content."
           },
           "400": {
-            "description": "Item id invalid."
+            "description": "Item ID is empty."
           },
           "401": {
             "description": "Access denied."
@@ -1245,6 +1242,9 @@
           },
           "405": {
             "description": "Request type was not DELETE."
+          },
+          "412": {
+            "description": "Failed to delete because the category contains dashboards."
           },
           "417": {
             "description": "Failed to delete item."
@@ -1666,7 +1666,7 @@
           "type": "string",
           "name": "name",
           "in": "query",
-          "required": true,
+          "required": false,
           "description": "Draft dashboard detail.",
           "x-nullable": true
         } ],
@@ -2332,6 +2332,48 @@
           },
           "417": {
             "description": "Failed to delete item"
+          }
+        }
+      }
+    },
+    "/v4.0/items/is-name-exists" : {
+      "post" : {
+        "tags" : [ "Items" ],
+        "summary" : "Check Item name existence",
+        "description" : "Current user can check whether the item (category, dashboard, datasource, schedule, slideshow) is already exists or not by providing item name (category name, dashboard name, schedule name, datasource name, slideshow name) and itemtype (Category, Dashboard, Data source, Schedule, Slideshow) in the request body.",
+        "operationId" : "Items_IsItemNameExists",
+        "parameters" : [ {
+          "name" : "apiValidateItemName",
+          "in" : "body",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/ApiValidateItemName"
+          },
+          "description" : "Details about the item passed will be checked.",
+          "x-nullable" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "x-nullable" : false,
+            "description" : "Returns an item existence",
+            "schema" : {
+              "type" : "boolean"
+            }
+          },
+          "400" : {
+            "description" : "The content of the request body is missing or incomplete"
+          },
+          "404" : {
+            "description" : "Category details not found."
+          },
+          "405" : {
+            "description" : "Request type was not POST"
+          },
+          "406" : {
+            "description" : "Invalid item type."
+          },
+          "417" : {
+            "description" : "Failed to validate item name."
           }
         }
       }
@@ -3083,6 +3125,42 @@
           },
           "417": {
             "description": "Failed to delete pinboard item."
+          }
+        }
+      }
+    },
+    "/v4.0/pinboard/is-name-exists" : {
+      "post" : {
+        "tags" : [ "Pinboard" ],
+        "summary" : "Check Pinboard name existence",
+        "description" : "Current user can check whether the pinboard is already exists or not by providing name in the request body.",
+        "operationId" : "Pinboard_IsPinBoardNameExists",
+        "parameters" : [ {
+          "name" : "apiValidatePinboardName",
+          "in" : "body",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/ApiValidatePinboardName"
+          },
+          "description" : "Details about the item passed will be checked.",
+          "x-nullable" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "x-nullable" : false,
+            "description" : "Returns an item existence",
+            "schema" : {
+              "type" : "boolean"
+            }
+          },
+          "400" : {
+            "description" : "The content of the request body is missing or incomplete"
+          },
+          "405" : {
+            "description" : "Request type was not POST"
+          },
+          "500" : {
+            "description" : "Error in database while executing the query."
           }
         }
       }
@@ -4034,6 +4112,39 @@
         }
       }
     },
+    "ApiValidateItemName": {
+      "required": [
+        "ItemName",
+        "ItemType"
+      ],
+      "type": "object",
+      "properties": {
+        "ItemName": {
+          "type": "string",
+          "description": "Item name. Valid values: `\"Category name\"` `\"Dashboard name\"` `\"Data source name\"` `\"Schedule name\"` `\"Slideshow name\"`"
+        },
+        "CategoryName": {
+          "type": "string",
+          "description": "Category name should be provided if the item type is `\"Dashboard\"`"
+        },
+        "ItemType": {
+          "type": "string",
+          "description": "Item type. Valid values: `\"Category\"` `\"Dashboard\"` `\"Datasource\"` `\"Schedule\"` `\"Slideshow\"`"
+        }
+      }
+    },
+    "ApiValidatePinboardName": {
+      "required": [
+        "ItemName"
+      ],
+      "type": "object",
+      "properties": {
+        "ItemName": {
+          "type": "string",
+          "description": "Pinboard name."
+        }
+      }
+    },
     "ApiUserAddAttribute": {
       "type": "object",
       "required": [
@@ -4186,7 +4297,7 @@
           "items": {
             "$ref": "#/definitions/ApiAddPininfo"
           },
-          "description": "Provide the list of Widget IDs, Widget Names, and Dashboard IDs to add the pinboard.",
+          "description": "Provide the list of Widget IDs, Widget Names, and Dashboard IDs to add the pinboard."
         }
       },
       "description": "Add pinboard request details."
@@ -5120,6 +5231,15 @@
           "type": "integer",
           "description": "User ID.",
           "format": "int32"
+        },
+        "GroupId": {
+          "type": "integer",
+          "description": "Group ID.",
+          "format": "int32"
+        },
+        "InheritedFromGroup": {
+          "type": "boolean",
+          "description": "Inherit from group."
         },
         "ItemName": {
           "type": "string",

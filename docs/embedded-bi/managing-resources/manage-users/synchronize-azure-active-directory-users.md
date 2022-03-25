@@ -17,7 +17,7 @@ This section explains how to synchronize the imported Azure Active Directory use
 
 You can navigate to the user synchronization page from users page as shown in the below figure.
 
-![Azure Active Directory Synchronization Link](/static/assets/embedded/managing-resources/manage-users/images/azure-user-synchronisation-navigation-button.png)
+![Azure Active Directory Synchronization Link](/static/assets/embedded/managing-resources/manage-users/images/azure-user-synchronisation-navigation-button.png#width=65%)
 
 ## Synchronize Users
 
@@ -39,10 +39,10 @@ Choose the users you want to synchronize and click on `Synchronize` at the top.
 
 After synchronization completes, the number of users modified, deleted, duplicated will be shown in the success message box as shown in the below figure.
 
-![Synchronization confirmation window](/static/assets/embedded/managing-resources/manage-users/images/Azure-Synchronization-Confirmation-window.png)
+![Synchronization confirmation window](/static/assets/embedded/managing-resources/manage-users/images/Azure-Synchronization-Confirmation-window.png#width=60%)
 
 ## Duplicate Users
 
 Azure Active Directory users who has the same username or email address as that of the Bold BI users(who are already present) will be marked as duplicate users and will not be allowed to synchronize into Active Directory.
 
-![Display Duplicated users](/static/assets/embedded/managing-resources/manage-users/images/display-azure-duplicate-message.png)
+![Display Duplicated users](/static/assets/embedded/managing-resources/manage-users/images/display-azure-duplicate-message.png#width=50%)

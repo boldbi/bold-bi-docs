@@ -37,7 +37,7 @@ To import the Active Directory users into the Bold BI application, you have to c
 
 Bold BI application will import the chosen users and a confirmation message will be displayed.
 
-![Success message after imported the Active Directory users](/static/assets/embedded/managing-resources/manage-users/images/Active-Directory-User-imported.png)
+![Success message after imported the Active Directory users](/static/assets/embedded/managing-resources/manage-users/images/Active-Directory-User-imported.png#width=60%)
 
 > **NOTE:**  Bold BI application will rely on user email for authentication purpose. If imported user doesn't have any email address, then Bold BI server will auto generate the email for that user. Example: if username is `john` and domain name is `example.com`, then user will be imported with auto generated email `john@example.com`
 
@@ -45,7 +45,7 @@ Bold BI application will import the chosen users and a confirmation message will
 
 Active Directory users who has the same username or email address as that of the Bold BI application users (who are already present) will be marked as duplicate users and will not be allowed to import into Bold BI application. 
 
-![Duplicated Active Directory Users](/static/assets/embedded/managing-resources/manage-users/images/Duplicated-Active-Directory-Users.png)
+![Duplicated Active Directory Users](/static/assets/embedded/managing-resources/manage-users/images/Duplicated-Active-Directory-Users.png#width=60%)
 
 ## Modify Active Directory Connection
 

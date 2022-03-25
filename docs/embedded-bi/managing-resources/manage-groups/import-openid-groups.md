@@ -20,7 +20,7 @@ Select the `Import from OpenID` option from `New Group` drop-down list on Groups
 
 To import the OpenID connect groups, you can use the both Dashboard Server and User Management Servers authentication provider. Choose the provider from the drop-down list at the top left corner.
 
-![Select Provider](/static/assets/embedded/managing-resources/manage-groups/images/Openid-select-provider.png)
+![Select Provider](/static/assets/embedded/managing-resources/manage-groups/images/Openid-select-provider.png#width=65%)
 
 Choose the groups from the list and click the `Import groups` at the top right corner.
 
@@ -28,7 +28,7 @@ Choose the groups from the list and click the `Import groups` at the top right c
 
 Bold BI will import the chosen groups and a confirmation message will be displayed as shown in the following figure.
 
-![Success message after imported the OpenId groups](/static/assets/embedded/managing-resources/manage-groups/images/Openid-import-success.png)
+![Success message after imported the OpenId groups](/static/assets/embedded/managing-resources/manage-groups/images/Openid-import-success.png#width=70%)
 
 The success message box explains the groups status, which were imported into the Bold BI. Once you click `OK` or `Close Icon`, list will be reloaded and imported groups will disappear.
 
@@ -36,4 +36,4 @@ The success message box explains the groups status, which were imported into the
 
 If you want to update the OpenID settings, select the `Provider` from drop-down list and click the `Modify`. It will redirect to respective authentication settings page.
 
-![OpenId Authenticate setting page](/static/assets/embedded/managing-resources/manage-groups/images/Openid-group-modify.png)
+![OpenId Authenticate setting page](/static/assets/embedded/managing-resources/manage-groups/images/Openid-group-modify.png#width=65%)

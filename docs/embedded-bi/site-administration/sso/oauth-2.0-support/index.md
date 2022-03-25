@@ -22,11 +22,11 @@ The Bold BI application can be configured to support OAuth 2.0 for Single Sign-O
 
 2. Click `Settings` in the left side menu.
 
-    ![Settings](/static/assets/embedded/site-administration/oauth-support/images/settings.png)
+    ![Settings](/static/assets/embedded/site-administration/oauth-support/images/settings.png#width=65%)
 
 3. Click `Authentication` and then `OAuth 2.0`
 
-    ![Authentication settings](/static/assets/embedded/site-administration/oauth-support/images/authentication-settings.png)
+    ![Authentication settings](/static/assets/embedded/site-administration/oauth-support/images/authentication-settings.png#width=65%)
 
 4. Provide the following details in the `OAuth 2.0` settings of Bold BI application.
 
@@ -95,7 +95,7 @@ The Bold BI application can be configured to support OAuth 2.0 for Single Sign-O
 
     </table>
 
-    ![OAuth settings](/static/assets/embedded/site-administration/oauth-support/images/OAuth-settings.png)
+    ![OAuth settings](/static/assets/embedded/site-administration/oauth-support/images/OAuth-settings.png#width=50%)
 
     ![OAuth user data](/static/assets/embedded/site-administration/oauth-support/images/OAuth-user-data.png)
     
@@ -129,12 +129,4 @@ OAuth 2.0 can be set as default authentication when [OAuth 2.0 settings](/embedd
 
 When OAuth 2.0 is set as default authentication and try to disable the [OAuth 2.0 settings](/embedded-bi/site-administration/sso/oauth-2.0-support/#steps-to-configure-oauth-20-in-bold-bi) will display below pop-up. Proceeding by clicking `Yes` will disable the [OAuth 2.0 default authentication](/embedded-bi/site-administration/sso/oauth-2.0-support/#set-oauth-20-as-default-authentication).
 
-![Disable Default Authentication](/static/assets/embedded/site-administration/images/disable-default-authentication.png)
-
-<!---
-## Bypassing OAuth 2.0 Authentication
-
-Use the following custom login URL to login as normal user that is not from OAuth, when [OAuth 2.0 default authentication](/embedded-bi/site-administration/sso/oauth-2.0-support/#set-oauth-20-as-default-authentication) is enabled.
-
->{Bold server URL}/bi/site/{tenant-name}/login?use_default_authentication=false
--->
+![Disable Default Authentication](/static/assets/embedded/site-administration/images/disable-default-authentication.png#width=60%)

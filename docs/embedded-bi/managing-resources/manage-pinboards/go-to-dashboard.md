@@ -15,4 +15,4 @@ This section explains how to navigate the dependent dashboard for specific widge
 
 Hover the mouse into specific widget, it will show the `Go to Dashboard` icon in top right of the section. By clicking this icon, it will open the respective dashboard in new tab.
 
-![Go to Dashboard](/static/assets/embedded/managing-resources/manage-pinboards/images/navigate-dashboard.png)
+![Go to Dashboard](/static/assets/embedded/managing-resources/manage-pinboards/images/navigate-dashboard.png#width=50%)

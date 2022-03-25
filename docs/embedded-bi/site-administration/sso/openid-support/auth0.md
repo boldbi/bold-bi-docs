@@ -45,7 +45,7 @@ This section explains how to perform Single Sign-On for users in Auth0 with the 
 
 6. This URL must be the redirect URI in the settings of your Bold BI application as in the following screenshot.
 
-    ![Redirect URI](/static/assets/embedded/site-administration/openid-support/images/redirecturi.png)
+    ![Redirect URI](/static/assets/embedded/site-administration/openid-support/images/redirecturi.png#width=55%)
     
 Fill the details and save the changes.
 
@@ -55,7 +55,7 @@ After successful registration in Auth0, save these settings in Bold BI settings 
 
 Configure the settings in Bold BI as in the following snap to enable the authentication using the Auth0.
 
-![Auth0 settings](/static/assets/embedded/site-administration/openid-support/images/auth0-sample-value.png)
+![Auth0 settings](/static/assets/embedded/site-administration/openid-support/images/auth0-sample-value.png#width=55%)
 
 The fields to be saved in the Bold BI to enable the Auth0 for authentication is explained as follows.
 
