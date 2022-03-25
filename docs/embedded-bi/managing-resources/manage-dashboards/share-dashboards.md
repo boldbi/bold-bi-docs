@@ -19,15 +19,15 @@ This section explains on how to share dashboards with the other users in the Bol
 
 2. Click the `Manage Access` button.
     
-	![Manage Access](/static/assets/embedded/managing-resources/manage-dashboards/images/manage-access.png)
+	![Manage Access](/static/assets/embedded/managing-resources/manage-dashboards/images/manage-access.png#width=55%)
 
 3. Select the permission access and the users or groups to share the dashboard.
   
-	![Share Dashboard](/static/assets/embedded/managing-resources/manage-dashboards/images/share-dashboard.png)
+	![Share Dashboard](/static/assets/embedded/managing-resources/manage-dashboards/images/share-dashboard.png#width=55%)
 
 4. After selecting the access and users or groups, click on the `Add` button.
 
-	![Add Permission](/static/assets/embedded/managing-resources/manage-dashboards/images/add-permission.png)
+	![Add Permission](/static/assets/embedded/managing-resources/manage-dashboards/images/add-permission.png#width=55%)
 	
 > **NOTE:**  Only the user who created the dashboard and the Administrator can share the dashboard with other Bold BI users.
 
@@ -35,5 +35,5 @@ This section explains on how to share dashboards with the other users in the Bol
 
 The user who created the dashboard and the Administrator can remove the shared dashboard permissions using the `Remove` option in the `Actions` column of the each permissions.
 
-![Add Permission](/static/assets/embedded/managing-resources/manage-dashboards/images/remove-permission.png)
+![Add Permission](/static/assets/embedded/managing-resources/manage-dashboards/images/remove-permission.png#width=55%)
 	

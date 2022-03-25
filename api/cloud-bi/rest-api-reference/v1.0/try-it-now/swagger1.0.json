@@ -190,8 +190,8 @@
           "406" : {
             "description" : "The content of the request body is invalid"
           },
-          "417" : {
-            "description" : "Failed to update user"
+          "500" : {
+            "description" : "Failed to update user profile detail."
           }
         }
       }

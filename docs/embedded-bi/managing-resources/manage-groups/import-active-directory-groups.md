@@ -35,7 +35,7 @@ To import the Active Directory groups into the Bold BI application, you have to 
 
 Bold BI Server will import the chosen groups and a confirmation message will be displayed.
 
-![Success message after imported the Active Directory groups](/static/assets/embedded/managing-resources/manage-groups/images/Active-Directory-group-import-success-window.png)  
+![Success message after imported the Active Directory groups](/static/assets/embedded/managing-resources/manage-groups/images/Active-Directory-group-import-success-window.png#width=65%)  
 
 The success message box explains which users were imported and not imported into the Bold BI application.
 

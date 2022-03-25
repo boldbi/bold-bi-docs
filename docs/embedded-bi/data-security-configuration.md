@@ -26,21 +26,21 @@ Go to the settings page in ums and click `Embed` for enabling the global embed c
 
 1. Click `Generate Secret` button.
 
-    ![Generate secret code](/static/assets/embedded/data-security-configuration/images/generate-secret-code.png)
+    ![Generate secret code](/static/assets/embedded/data-security-configuration/images/generate-secret-code.png#width=55%)
 
 2. By clicking it, the secret code will be generated. Save the secret key safely, as it cannot be retrieved or restored.                    
 
-    ![Copy secret code](/static/assets/embedded/data-security-configuration/images/copy-secret-code.png)
+    ![Copy secret code](/static/assets/embedded/data-security-configuration/images/copy-secret-code.png#width=55%)
 
 3. Once the secret code is generated, it can be reset by clicking the `Reset Secret` button.
 
-    ![Reset secret code](/static/assets/embedded/data-security-configuration/images/reset-secret-code.png)
+    ![Reset secret code](/static/assets/embedded/data-security-configuration/images/reset-secret-code.png#width=55%)
 
 > **Warning :** Resetting this code will break the previously working embedded dashboards.
 
-You can download the sample template file to generate embed configuration file using the `Download template` option.
+You can download the sample template file to generate embed configuration file using the `Download` button.
 
-![Download template](/static/assets/embedded/data-security-configuration/images/embed-configuration.png)
+![Download template](/static/assets/embedded/data-security-configuration/images/embed-configuration.png#width=55%)
 
 ## How to use embed configuration file
 
@@ -76,7 +76,7 @@ If you need an existing embed configuration file, then refer to this `template.j
     </tr>
 </table>
 
-![Sample embed config](/static/assets/embedded/data-security-configuration/images/sample-embed-config.png)
+![Sample embed config](/static/assets/embedded/data-security-configuration/images/sample-embed-config.png#width=45%)
 
 **IsConfigurationBaseEmbed:**  It is used to enable or disable the configuration based embedding. If it is true, the dashboard uses the attributes and isolation code defined in the embed configuration file. Otherwise, dashboard uses the values from the site's user and group profile pages.
 
@@ -102,18 +102,18 @@ Based on these levels, the embedding profile will be selected and applied to ren
 
 Provides the user's email and the defined embedding profile name. When the mentioned user renders the dashboard, the attributes and isolation code defined in the embedding profiles will be used to render the dashboard.
 
-![Users profile](/static/assets/embedded/data-security-configuration/images/users-profile.png)
+![Users profile](/static/assets/embedded/data-security-configuration/images/users-profile.png#width=45%)
 
 ## Groups Profile
 
 Provides the group name and the defined embedding profile name. When the user from the mentioned group renders the dashboard, the attributes and isolation code defined in the embedding profiles will be used to render the dashboard.
 
-![Groups profile](/static/assets/embedded/data-security-configuration/images/groups-profile.png)
+![Groups profile](/static/assets/embedded/data-security-configuration/images/groups-profile.png#width=45%)
 
 ## Sites Profile
 
 Provides the site name and the defined embedding profile name. When the user from the mentioned site renders the dashboard, the attributes and isolation code defined in the embedding profiles will be used to render the dashboard.
 
-![Sites profile](/static/assets/embedded/data-security-configuration/images/sites-profile.png)
+![Sites profile](/static/assets/embedded/data-security-configuration/images/sites-profile.png#width=45%)
 
 Based on the above hierarchy, it will select the embedding profile and reflect the changes in the dashboard. The priority order will be `Users Profile`, `Groups Profile` and the `Sites profile`.

@@ -70,7 +70,7 @@ You can see the data refresh history information of corresponding data source in
 
 And, also you can see the failure information by clicking the failed link in run history dialog box.
 
-![Refresh Failure Info](/static/assets/embedded/managing-resources/images/refresh-failure-info.png)
+![Refresh Failure Info](/static/assets/embedded/managing-resources/images/refresh-failure-info.png#width=55%)
 
 > **NOTE:**  Only the data source created with extract mode will have this refresh history option.
 
@@ -86,11 +86,11 @@ This section explains on how to share data sources with the other users in the B
 
 2. Select the permission access from the `Select Access` dropdown and type in user or a group name whom you want to share the data source with.
   
-	![Share Data source](/static/assets/embedded/managing-resources/images/share-datasource.png)
+	![Share Data source](/static/assets/embedded/managing-resources/images/share-datasource.png#width=55%)
 
 3. After selecting the permission access and users or groups, click on the `Share` button.
 
-	![Add Data source Permission](/static/assets/embedded/managing-resources/images/add-datasource-permission.png)
+	![Add Data source Permission](/static/assets/embedded/managing-resources/images/add-datasource-permission.png#width=55%)
 	
 > **NOTE:**  Only the user who created the data source and the Administrator can share the data source with other Bold BI users.
 
@@ -100,11 +100,11 @@ The user who created the data source and the Administrator can remove the shared
 
 1. Click the `Manage Access` button to see the users or groups and their permissions.
     
-	![Manage Access Data source](/static/assets/embedded/managing-resources/images/manage-access-datasource.png)
+	![Manage Access Data source](/static/assets/embedded/managing-resources/images/manage-access-datasource.png#width=55%)
 
 2. Then remove the permissions using the `Remove` option in the `Actions` column of the each permissions.
 
-	![Remove Data source Permission](/static/assets/embedded/managing-resources/images/remove-datasource-permission.png)
+	![Remove Data source Permission](/static/assets/embedded/managing-resources/images/remove-datasource-permission.png#width=55%)
 
 <!---
 ## Open with Dashboard Designer
@@ -148,9 +148,9 @@ Click `Actions` in the data sources grid context menu and select `Preview Data` 
 
 You can see the information of respective Data Source in dialog box. Click `Actions` in the grid context menu and select `Info`.
 
-![Data Sources Info](/static/assets/embedded/managing-resources/images/datasources-info.png)
+![Data Sources Info](/static/assets/embedded/managing-resources/images/datasources-info.png#width=65%)
 
-![Data Sources Info Popup](/static/assets/embedded/managing-resources/images/datasources-info-popup.png)
+![Data Sources Info Popup](/static/assets/embedded/managing-resources/images/datasources-info-popup.png#width=55%)
 
 ## Copy Data Sources  
 You can copy the data source item only for the data source type in **Live** mode connection.
@@ -166,4 +166,4 @@ The **Data Source** will be automatically saved as draft when the user did not p
 
 You can view the unpublished draft data sources in the data source listing page tagged with `draft` label.
 
-![Draft Data Source](/static/assets/embedded/managing-resources/images/draft-data-source.png)
+![Draft Data Source](/static/assets/embedded/managing-resources/images/draft-data-source.png#width=55%)

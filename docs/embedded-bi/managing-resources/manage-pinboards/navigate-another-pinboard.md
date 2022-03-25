@@ -15,4 +15,4 @@ This section explains how to navigate to another pinboard in the Bold BI applica
 
 Click the Pinboard name in top left of header section and select the Pinboard, which you want to display.
 
-![navigate pinboard](/static/assets/embedded/managing-resources/manage-pinboards/images/navigate-pinboard.png)
+![navigate pinboard](/static/assets/embedded/managing-resources/manage-pinboards/images/navigate-pinboard.png#width=50%)

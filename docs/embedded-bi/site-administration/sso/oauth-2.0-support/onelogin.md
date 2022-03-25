@@ -53,7 +53,7 @@ This section explains how to perform Single Sign-On for users in OneLogin with B
  
 9. The `Redirect URI` and `Login URL` is found under the `OpenID Connect` settings of your Bold BI application as in the following screenshot.
 
-    ![Redirecturi in setting](/static/assets/embedded/site-administration/oauth-support/images/redirecturi.png)
+    ![Redirecturi in setting](/static/assets/embedded/site-administration/oauth-support/images/redirecturi.png#width=65%)
 
 10. Click `SSO` tab, you will find the `Client ID` and `Client Secret` and use it in the Bold BI application.
 

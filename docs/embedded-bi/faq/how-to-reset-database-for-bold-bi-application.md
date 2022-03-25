@@ -26,7 +26,7 @@ Resetting the application database details in the Bold BI application requires u
 
 4.  Enter the database details and Click the update button.  
 
-    ![edit-site-db](/static/assets/embedded/faq/images/edit-site-db.png)    
+    ![edit-site-db](/static/assets/embedded/faq/images/edit-site-db.png#width=30%)    
 
     > **NOTE:**  You can only update the server name, user name and password in the tenant database details.
 
@@ -34,4 +34,4 @@ Resetting the application database details in the Bold BI application requires u
 
 6.  Once logged into tenant application, you can update the data store settings if you have already configured (this is optional step).
     
-    ![edit-datastore](/static/assets/embedded/faq/images/edit-datastore.png)  
+    ![edit-datastore](/static/assets/embedded/faq/images/edit-datastore.png#width=45%)  

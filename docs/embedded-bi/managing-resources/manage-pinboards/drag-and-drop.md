@@ -15,4 +15,4 @@ This section explains how to drag and drop widgets between columns inside the Pi
 
 Widgets inside the Pinboard can be dragged and dropped between their columns by using the headers.
 
-![Drag And Drop](/static/assets/embedded/managing-resources/manage-pinboards/images/drag-and-drop.png)
+![Drag And Drop](/static/assets/embedded/managing-resources/manage-pinboards/images/drag-and-drop.png#width=50%)

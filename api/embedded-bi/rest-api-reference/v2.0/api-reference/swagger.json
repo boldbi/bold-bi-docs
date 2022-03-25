@@ -921,10 +921,6 @@
             "description": "Invalid group ID.",
             "content": {}
           },
-          "412": {
-            "description": "User detail not found.",
-            "content": {}
-          },
           "417": {
             "description": "Failed to delete user from group.",
             "content": {}
@@ -954,7 +950,7 @@
         },
         "responses": {
           "200": {
-            "description": "User permission was created successfully.",
+            "description": "User permission has been added successfully",
             "content": {
               "application/json": {
                 "schema": {
@@ -1094,7 +1090,7 @@
             "content": {}
           },
           "417": {
-            "description": "Failed to delete user permission.",
+            "description": "Failed to remove permission.",
             "content": {}
           }
         }
@@ -1743,6 +1739,15 @@
             "type": "integer",
             "description": "User ID.",
             "format": "int32"
+          },
+          "GroupId": {
+            "type": "integer",
+            "description": "Group ID.",
+            "format": "int32"
+          },
+          "InheritedFromGroup": {
+            "type": "boolean",
+            "description": "Inherit from group."
           },
           "ItemName": {
             "type": "string",

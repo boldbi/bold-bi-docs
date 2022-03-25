@@ -15,11 +15,9 @@ Bold BI site can be rebranded/white-labeled with the organization name, header l
 
 ![Site Settings General](/static/assets/embedded/images/site-settings-general.png)
 
-![Site Settings Language](/static/assets/embedded/images/site-settings-language.png)
-
 ## General
 
-![General Settings](/static/assets/embedded/images/general-settings.png)
+![General Settings](/static/assets/embedded/images/general-settings.png#width=65%)
 
 ### Organization Name
 Name of the Bold BI site can be changed at any time and this is in the title bar of the browser.
@@ -29,26 +27,26 @@ You can view the site URL in the general section of site settings.
 
 ## Date and Time
 
-![Date and Time Settings](/static/assets/embedded/images/date-and-time-settings.png)
+![Date and Time Settings](/static/assets/embedded/images/date-and-time-settings.png#width=60%)
 
 ### Time zone
 Time zone for the Bold BI site can be changed. Bold BI site sets the Coordinated Universal Time (UTC) as the default time zone. By selecting `Inherit from browser time zone`, Bold BI site will use time zone from browser.
 
-![Time Zone](/static/assets/embedded/images/time-zone.png)
+![Time Zone](/static/assets/embedded/images/time-zone.png#width=50%)
 
 ### Date format
 Date format of the Bold BI site can be changed. The default date format for the Bold BI site will be `MM/DD/YYYY`. By selecting `Inherit from browser locale`, Bold BI site will use date format from browser.
 
-![Date Format](/static/assets/embedded/images/date-format.png)
+![Date Format](/static/assets/embedded/images/date-format.png#width=50%)
 
 ### Time format
 Time format of the Bold BI site can be changed. The default time format for the Bold BI site will be `12 hour`. By selecting `Inherit from browser locale`, Bold BI site will use time format from browser.
 
-![Time format](/static/assets/embedded/images/time-format.png)
+![Time format](/static/assets/embedded/images/time-format.png#width=50%)
 
 ## Language
 
-![Language Settings](/static/assets/embedded/images/language-settings.png)
+![Language Settings](/static/assets/embedded/images/language-settings.png#width=50%)
 
 ### Application language
 
@@ -66,7 +64,7 @@ By enabling `Disable user preference` option, user language preference will be d
 
 ## Branding
 
-![Branding Settings](/static/assets/embedded/images/branding-settings.png)
+![Branding Settings](/static/assets/embedded/images/branding-settings.png#width=55%)
 
 ### Login screen logo
 Login page logo image can be changed and the preferred image size is `200 x 40` pixels. The Bold BI site will have Bold BI login logo as the default login logo.

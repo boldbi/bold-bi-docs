@@ -51,7 +51,7 @@ This section explains how to perform Single Sign-On for users in Okta with the B
 
 6. The `Login redirect URIs`  must be the URI in the settings of your Bold BI application as in the below snap.
 
-    ![Redirect URI](/static/assets/embedded/site-administration/openid-support/images/redirecturi.png)
+    ![Redirect URI](/static/assets/embedded/site-administration/openid-support/images/redirecturi.png#width=55%)
 
 7. In the next page, you will get the `Client ID`  and `Client Secret` at the bottom of the page along with the other details you filled in the previous page.
 
@@ -63,7 +63,7 @@ After successful registration in Okta, save these settings in Bold BI settings p
 
 Configure the settings in Bold BI as in the following screenshot to enable the authentication using Okta.
 
-![Okta settings](/static/assets/embedded/site-administration/openid-support/images/okta-sample-value.png)
+![Okta settings](/static/assets/embedded/site-administration/openid-support/images/okta-sample-value.png#width=50%)
 
 The fields to be saved in the Bold BI to enable the Okta for authentication is explained as follows.
 

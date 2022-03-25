@@ -27,7 +27,7 @@ To create a multi-tabbed dashboard, the user should have dashboards. Admin user 
 
 * Click the `+` icon in the left-side of menu area and choose the `multi-tabbed dashboard` option.
 
-    ![Multi-tab sidebar option](/static/assets/embedded/managing-resources/manage-dashboards/images/multi-tab-sidebar-option.png)
+    ![Multi-tab sidebar option](/static/assets/embedded/managing-resources/manage-dashboards/images/multi-tab-sidebar-option.png#width=50%)
 
 * Fill the form with Name of multi-tab dashboard and select the Category from `Select Category` drop-down.
 

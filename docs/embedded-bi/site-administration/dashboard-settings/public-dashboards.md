@@ -26,19 +26,19 @@ After restricting the `Mark dashboards as public` in dashboards settings page, t
 
 When you click the `Make Public` from the context menu of the respective Dashboards, the following message will be shown to the administrator.
 
-![Click on makepublic icon](/static/assets/embedded/site-administration/images/makepublic-admin.png)
+![Click on makepublic icon](/static/assets/embedded/site-administration/images/makepublic-admin.png#width=50%)
 
 When you click the `Make Public` from the context menu of the respective Dashboards, the following message will be shown to the user.
 
-![Click on makepublic icon](/static/assets/embedded/site-administration/images/makepublic-user.png)
+![Click on makepublic icon](/static/assets/embedded/site-administration/images/makepublic-user.png#width=50%)
 
 After restricting the `Mark dashboards as public`, if you click the `Public Dashboards` tab the following message will be shown to the administrator.
  
-![Click on publicdashboard icon](/static/assets/embedded/site-administration/images/publicdashboard-admin.png)
+![Click on publicdashboard icon](/static/assets/embedded/site-administration/images/publicdashboard-admin.png#width=50%)
 
 After restricting the `Mark dashboards as public`, if you click the `Public Dashboards` tab the following message will be shown to the user.
  
-![Click on publicdashboard icon](/static/assets/embedded/site-administration/images/publicdashboard-user.png)
+![Click on publicdashboard icon](/static/assets/embedded/site-administration/images/publicdashboard-user.png#width=50%)
 
 ### Make public
 
@@ -50,7 +50,7 @@ Follow the below steps to make the Dashboards accessible to anonymous users.
 
 2. Click the `Make Public` from the context menu of the respective Dashboard.
 
-   ![Click on makepublic icon](/static/assets/embedded/site-administration/images/makepublic.png)
+   ![Click on makepublic icon](/static/assets/embedded/site-administration/images/makepublic.png#width=50%)
 
 3. Click the `Make public` in the confirmation dialog box to mark Dashboards as public.
  

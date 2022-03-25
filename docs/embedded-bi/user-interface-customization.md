@@ -62,13 +62,13 @@ CustomUI json file contains the following fields, which is used to customize UI 
 
 You need to provide the site name and matching profile name, which you want to customize UI.
 
-![Sites](/static/assets/embedded/user-interface-customization/images/sites-example.png)
+![Sites](/static/assets/embedded/user-interface-customization/images/sites-example.png#width=40%)
 
 **Profiles**
 
 This section contains list of default left side menu options and custom menus.
 
-![profiles](/static/assets/embedded/user-interface-customization/images/profiles-example.png)
+![profiles](/static/assets/embedded/user-interface-customization/images/profiles-example.png#width=40%)
 
 * **Name:** Provide the name of the profile which will be used to specify the profile in the sites.
 
@@ -88,13 +88,13 @@ You can preview the dashboards on the right side of the dashboard listing by usi
 
 The scheme can be used to show or hide the context menu items in the item listing pages. These options are available in dashboards, slideshows, schedules, and data sources page.
 
-![Schemes](/static/assets/embedded/user-interface-customization/images/schemes.png)
+![Schemes](/static/assets/embedded/user-interface-customization/images/schemes.png#width=30%)
 
 For example, you can show the `Get Link` option in the context menu by setting the `GetLink` property as true, and also the corresponding scheme name needs to be mentioned in the profile.
 
-![Show context menu items](/static/assets/embedded/user-interface-customization/images/context-menu-show.png)
+![Show context menu items](/static/assets/embedded/user-interface-customization/images/context-menu-show.png#width=30%)
 
-![Show context menu items](/static/assets/embedded/user-interface-customization/images/context-menu.png)
+![Show context menu items](/static/assets/embedded/user-interface-customization/images/context-menu.png#width=35%)
 
 **Navigation menu customization**
 
@@ -102,7 +102,7 @@ You can add new menu items which you want to show in the left side menu with the
 
 ![Sample custom menus](/static/assets/embedded/user-interface-customization/images/custom-menu-example1.png)
 
-![Custom menus](/static/assets/embedded/user-interface-customization/images/custom-menu.png)
+![Custom menus](/static/assets/embedded/user-interface-customization/images/custom-menu.png#width=40%)
 
 * **Name:** Specify the name of the scheme. This can be used to specify the scheme in the profiles.
 
@@ -122,7 +122,7 @@ You can add new menu items which you want to show in the left side menu with the
 
 Let us customize the `site1` using the profile `profile1` and scheme `scheme1`.
 
-![Sample profile in config](/static/assets/embedded/user-interface-customization/images/sample-example1.png)
+![Sample profile in config](/static/assets/embedded/user-interface-customization/images/sample-example1.png#width=35%)
 
 Here, changed order of each side menu and applied same page preview support.
 
@@ -130,11 +130,11 @@ Here, changed order of each side menu and applied same page preview support.
 
 Here, we provided different schemes for dashboards, datasources, schedules and slideshows.
 
-![Sample schemes](/static/assets/embedded/user-interface-customization/images/sample-example3.png)
+![Sample schemes](/static/assets/embedded/user-interface-customization/images/sample-example3.png#width=35%)
 
 For example, `Open` option will be shown in dashboard context menu and hidden in slideshow context menu.
 
-![Dashboard scheme](/static/assets/embedded/user-interface-customization/images/dashboard-scheme.png)
+![Dashboard scheme](/static/assets/embedded/user-interface-customization/images/dashboard-scheme.png#width=35%)
 
 ![Slideshow scheme](/static/assets/embedded/user-interface-customization/images/slideshow-scheme.png)
 
@@ -142,4 +142,4 @@ Provided two different custom menu options:
 
 ![Custom menu details](/static/assets/embedded/user-interface-customization/images/custom-menu-example2.png)
 
-![Custom menu samples](/static/assets/embedded/user-interface-customization/images/custom-menu-samples.png)
+![Custom menu samples](/static/assets/embedded/user-interface-customization/images/custom-menu-samples.png#width=40%)

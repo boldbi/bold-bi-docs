@@ -41,7 +41,7 @@ Choose the groups you want to synchronize and click `Synchronize` at the top.
 
 After synchronization is completed, the number of groups modified, deleted, and duplicated will be shown in the success message box as shown in the following image.
 
-![Synchronization confirmation window](/static/assets/embedded/managing-resources/manage-groups/images/Synchronize-azure-group-success-window.png)
+![Synchronization confirmation window](/static/assets/embedded/managing-resources/manage-groups/images/Synchronize-azure-group-success-window.png#width=70%)
 
 ## Duplicate Groups
 

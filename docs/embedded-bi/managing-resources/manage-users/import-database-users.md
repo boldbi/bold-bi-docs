@@ -17,7 +17,7 @@ Users belonging to the `System Administrator` group only can import users from d
 
 To add new users to the Bold BI, click on `New User` and then `Import from Database` from the User Management page.
 
-![Add New Users](/static/assets/embedded/managing-resources/manage-users/images/add-new-users.png)
+![Add New Users](/static/assets/embedded/managing-resources/manage-users/images/add-new-users.png#width=50%)
 
 The link will redirect to another page that will look like below.
 
@@ -32,7 +32,7 @@ After selecting columns the data retrieved from database will be shown in Grid. 
 
 Bold BI will import the chosen users and a confirmation message will be displayed as shown in the below image.
 
-![Success message after imported the Database users](/static/assets/embedded/managing-resources/manage-users/images/Database-User-imported-new.png)
+![Success message after imported the Database users](/static/assets/embedded/managing-resources/manage-users/images/Database-User-imported-new.png#width=60%)
 
 ## Duplicate Users
 

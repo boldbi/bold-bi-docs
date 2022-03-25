@@ -12,6 +12,6 @@ Dashboards can also be deleted from the Dashboard server when they are no longer
 
 Click the `Actions` button in the Dashboards grid context menu and select `Delete` to delete the Dashboard.
 
-![Delete Dashboard](/static/assets/embedded/managing-resources/manage-dashboards/images/delete-dashboard.png)
+![Delete Dashboard](/static/assets/embedded/managing-resources/manage-dashboards/images/delete-dashboard.png#width=60%)
 
 > **NOTE:**  Dashboards cannot be deleted when they are scheduled by an user.

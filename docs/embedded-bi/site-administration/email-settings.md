@@ -62,4 +62,4 @@ We support two type of Authentications,
 </tr>
 </table>	
 	
-![Email Settings](/static/assets/embedded/site-administration/images/email-settings.png)
+![Email Settings](/static/assets/embedded/site-administration/images/email-settings.png#width=45%)

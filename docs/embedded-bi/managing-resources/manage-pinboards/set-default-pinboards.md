@@ -15,4 +15,4 @@ Default Pinboard will be loaded by default when the user navigates to the Pinboa
 
 * Click the `Set as default pinboard` option from the `gear` icon menu.
 
-    ![Default Pinboard Option](/static/assets/embedded/managing-resources/manage-pinboards/images/default-pinboard-option.png)
+    ![Default Pinboard Option](/static/assets/embedded/managing-resources/manage-pinboards/images/default-pinboard-option.png#width=50%)

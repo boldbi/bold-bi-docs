@@ -27,7 +27,7 @@ This section explains on how to add a slideshow in the Bold BI Embedded. Slidesh
 
 1. Click on the `Create` button in the left side menu and select `Slideshow` to add a slideshow.
 
-	![Create Slideshow](/static/assets/embedded/managing-resources/images/create-slideshow.png)
+	![Create Slideshow](/static/assets/embedded/managing-resources/images/create-slideshow.png#width=55%)
 
     Otherwise, Click `Create Slideshow` from slideshows page.
 
@@ -95,11 +95,11 @@ This section explains on how to share slideshows with the other users in the Bol
 
 2. Select the permission access and type in user or a group name whom you want to share the slideshow with.
   
-	![Share Slideshow](/static/assets/embedded/managing-resources/images/share-slideshow.png)
+	![Share Slideshow](/static/assets/embedded/managing-resources/images/share-slideshow.png#width=60%)
 
 3. After selecting the permission access and users or groups, click on the `Share` button.
 
-	![Add Slideshow Permission](/static/assets/embedded/managing-resources/images/add-slideshow-permission.png)
+	![Add Slideshow Permission](/static/assets/embedded/managing-resources/images/add-slideshow-permission.png#width=60%)
 	
 > **NOTE:**  Only the user who created the slideshow and the Administrator can share the slideshow with other Bold BI users.
 
@@ -109,19 +109,19 @@ The user who created the slideshow and the Administrator can remove the shared s
 
 1. Click the `Manage Access` button to see the users or groups and their permissions.
     
-	![Manage Access Slideshow](/static/assets/embedded/managing-resources/images/manage-access-slideshow.png)
+	![Manage Access Slideshow](/static/assets/embedded/managing-resources/images/manage-access-slideshow.png#width=60%)
 
 2. Then remove the permissions using the `Remove` option in the `Actions` column of the each permissions.
 
-    ![Remove Slideshow Permission](/static/assets/embedded/managing-resources/images/remove-slideshow-permission.png)
+    ![Remove Slideshow Permission](/static/assets/embedded/managing-resources/images/remove-slideshow-permission.png#width=45%)
 
 ## Information of Slideshow
 
 You can see the information of respective Slideshow in dialog box. Click `Actions` in the grid context menu and select `Info`.
 
-![Slideshow Info](/static/assets/embedded/managing-resources/images/slideshow-info.png)
+![Slideshow Info](/static/assets/embedded/managing-resources/images/slideshow-info.png#width=60%)
 
-![Slideshow Info Popup](/static/assets/embedded/managing-resources/images/slideshow-info-popup.png)
+![Slideshow Info Popup](/static/assets/embedded/managing-resources/images/slideshow-info-popup.png#width=60%)
 ## Link to Slideshows
 
 This section explains on how to get link to the Slideshows in the Bold BI Embedded.
@@ -134,11 +134,11 @@ Follow the below steps to get the link of a slideshow.
 
 1. Click on the context menu of the respective slideshow and choose `Get Link` option.
 
-    ![Get Link Option](/static/assets/embedded/managing-resources/images/getlink-option.png)
+    ![Get Link Option](/static/assets/embedded/managing-resources/images/getlink-option.png#width=60%)
 
 2. The `Get Link` dialog will be opened. Click `Copy` icon to get the link.
 
-    ![Get Link](/static/assets/embedded/managing-resources/images/slideshow-getlink.png)
+    ![Get Link](/static/assets/embedded/managing-resources/images/slideshow-getlink.png#width=60%)
 
 ## Update Slideshows
 
@@ -150,7 +150,7 @@ Name, Duration and the Dashboards listed for slideshow can be changed by using `
 
 1. Click on the `Edit` option in the context menu of the respective Slideshow.
 
-    ![Update Slideshow Option](/static/assets/embedded/managing-resources/images/update-slideshow-option.png)
+    ![Update Slideshow Option](/static/assets/embedded/managing-resources/images/update-slideshow-option.png#width=60%)
 
 2. Dashboards for the slideshow can be added or removed.    
 

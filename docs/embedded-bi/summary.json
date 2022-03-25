@@ -599,7 +599,8 @@
       "How to pass a parameter to Web API connector when view and embedding a dashboard": "how-to-pass-a-parameter-to-web-api-connector-when-view-and-embedding-a-dashboard",
 	  "How to get offline unlock key?" : "how-to-get-offline-unlock-key",
 	  "How to update SSL certificate in Kubernetes secret of Bold BI site?":"how-to-update-ssl-certificate-in-kubernetes-secret-of-bold-bi-site",
-    "How to view first seven days of each month in dashboard":"how-to-view-first-seven-days-of-each-month-in-dashboard"
+    "How to view first seven days of each month in dashboard":"how-to-view-first-seven-days-of-each-month-in-dashboard",
+    "How to show a detailed view of a widget in JavaScript":"how-to-show-a-detailed-view-of-a-widget-in-javascript"
     }
   }
 }

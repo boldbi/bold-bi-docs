@@ -32,7 +32,7 @@ Schedules can be created only if the user has `Create All Schedules` permission.
 
 * Click on the `+` button in the left side menu and choose `Schedule` under `Create` to add a Schedule.
 
-	![Choose Schedule](/static/assets/embedded/managing-resources/images/choose-schedule.png)
+	![Choose Schedule](/static/assets/embedded/managing-resources/images/choose-schedule.png#width=50%)
 
 * Select the required category from `Category` dropdown. After selecting the category, corresponding dashboards under that selected category will be displayed in the `Dashboard` dropdown,
 
@@ -133,9 +133,9 @@ Schedules can be made to run on demand by using `Run Now` option in the schedule
 
 You can see the information of respective Schedule in dialog box. Click `Actions` in the grid context menu and select `Info`.
 
-![Schedule Info](/static/assets/embedded/managing-resources/images/schedule-info.png)
+![Schedule Info](/static/assets/embedded/managing-resources/images/schedule-info.png#width=65%)
 
-![Schedule Info Popup](/static/assets/embedded/managing-resources/images/schedule-info-popup.png)
+![Schedule Info Popup](/static/assets/embedded/managing-resources/images/schedule-info-popup.png#width=55%)
 
 ## Run History
 You can see the schedule run history information of corresponding schedule in the `Run History` option in the schedule grid context menu.

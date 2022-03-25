@@ -26,7 +26,7 @@ The account will be in inactive status until the user activates the account from
 
 > **NOTE:** By default, the setting will be `Automatic`.
 
-![Accounts Settings](/static/assets/embedded/site-administration/images/account-settings.png)
+![Accounts Settings](/static/assets/embedded/site-administration/images/account-settings.png#width=60%)
 
 ## User Email
 
@@ -44,4 +44,4 @@ When user email setting is set to `Not required` mode, an email address is not m
 
 > **NOTE:** By default, the setting will be `Required`.
 
-![Email Settings](/static/assets/embedded/site-administration/images/email-required-settings.png)
+![Email Settings](/static/assets/embedded/site-administration/images/email-required-settings.png#width=60%)

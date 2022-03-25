@@ -24,7 +24,7 @@ To add new users to the Bold BI, click `New User` and then `Add User` from the U
 
 The `Add User` dialog will be shown as like in the image below.
 
-![Add User](/static/assets/embedded/managing-resources/manage-users/images/add-user.png)
+![Add User](/static/assets/embedded/managing-resources/manage-users/images/add-user.png#width=60%)
 
 Fill the form with email address, username, first name, and last name(optional) and click `Add`.  
 
@@ -46,7 +46,7 @@ Next, click `New User` and then `Add User` from the User Management page.
 
 The `Add User` dialog box will be shown as like in the following image.
 
-![Add User with password](/static/assets/embedded/managing-resources/manage-users/images/add-user-password.png)
+![Add User with password](/static/assets/embedded/managing-resources/manage-users/images/add-user-password.png#width=45%)
 
 The password must meet the following requirements:
 
@@ -64,7 +64,7 @@ To automate the process of adding large number of users to a Bold BI, you can do
 
 You can navigate to the user management page by clicking the `User Management` dropdown under the `Admin` menu as follows.
 
-![Import from CSV - Navigation](/static/assets/embedded/managing-resources/manage-users/images/usermanagement.png)
+![Import from CSV - Navigation](/static/assets/embedded/managing-resources/manage-users/images/usermanagement.png#width=55%)
 
 > **NOTE:**  The section will explain on how to import the users from CSV file which can be downloaded from below location in Bold BI application.
 
@@ -93,11 +93,11 @@ Follow the below steps to add users using the CSV template
 
 2. Add users in the CSV file.
 
-	![Import from CSV - Add users into CSV file](/static/assets/embedded/managing-resources/manage-users/images/csv-import-add-users.png)
+	![Import from CSV - Add users into CSV file](/static/assets/embedded/managing-resources/manage-users/images/csv-import-add-users.png#width=40%)
 
 3. Save the CSV file and upload it.
 
-	![Import from CSV - Upload CSV file](/static/assets/embedded/managing-resources/manage-users/images/csv-import-upload.png)
+	![Import from CSV - Upload CSV file](/static/assets/embedded/managing-resources/manage-users/images/csv-import-upload.png#width=60%)
 
 4. Once the file is uploaded the user details will be shown in the grid as like in the below image.
 
@@ -105,11 +105,11 @@ Follow the below steps to add users using the CSV template
 
 5. Click `Import Users` to import users from the CSV file.
 
-	![Import from CSV](/static/assets/embedded/managing-resources/manage-users/images/csv-import-users.png)
+	![Import from CSV](/static/assets/embedded/managing-resources/manage-users/images/csv-import-users.png#width=60%)
 
 6. After uploading the users in Bold BI the results will be displayed as below.
 
-    ![Import from CSV - Success Message](/static/assets/embedded/managing-resources/manage-users/images/import-csv-users-confirmation.png)
+    ![Import from CSV - Success Message](/static/assets/embedded/managing-resources/manage-users/images/import-csv-users-confirmation.png#width=60%)
 	
 ## Edit users
 User profile details can be edited from the users edit page as shown in the below image.
@@ -122,9 +122,9 @@ Username, first name, last name, email, phone number and the login password for 
 Users can be removed from the particular site of Bold BI when the user is no longer required in the site. Users can be removed from the user management page or from the edit user page. Even though user removed from the site, the user will be available in the UMS.
 
 ### From user management page
-Click `Delete` icon to remove the user from the user management page.
+Click `Remove User` icon to remove the user from the user management page.
 
-![Delete user from user management page](/static/assets/embedded/managing-resources/manage-users/images/delete-user-1.png)
+![Delete user from user management page](/static/assets/embedded/managing-resources/manage-users/images/delete-user-1.png#width=60%)
 
 ### From user edit page
 Click `Remove User` from the menu as shown in the image to remove the user from the user management page.
@@ -152,19 +152,19 @@ The administrator can change the user's password from Tenant management site as 
 
 1. Go to the UMS site by clicking profile as follows.
 
-   ![Manage Sites](/static/assets/embedded/managing-resources/manage-users/images/manage-sites-for-the-users.png)
+   ![Manage Sites](/static/assets/embedded/managing-resources/manage-users/images/manage-sites-for-the-users.png#width=60%)
 
 2. Click `Users` option to manage the users.
 
-   ![Goto users in sites](/static/assets/embedded/managing-resources/manage-users/images/goto-users-in-sites.png)
+   ![Goto users in sites](/static/assets/embedded/managing-resources/manage-users/images/goto-users-in-sites.png#width=40%)
 
    ![Manage Users List](/static/assets/embedded/managing-resources/manage-users/images/manage-users-list.png)
 
 3. Click Name of the user to change the password. Click update button once the password entered.
 
-   ![Goto name of the user](/static/assets/embedded/managing-resources/manage-users/images/goto-name-of-the-user.png)
+   ![Goto name of the user](/static/assets/embedded/managing-resources/manage-users/images/goto-name-of-the-user.png#width=65%)
 
-   ![Change Password](/static/assets/embedded/managing-resources/manage-users/images/change-the-password.png)
+   ![Change Password](/static/assets/embedded/managing-resources/manage-users/images/change-the-password.png#width=65%)
 
 ## Manage permissions
 Check the [Manage Permissions](/embedded-bi/working-with-dashboards/share-dashboards/manage-permissions/) section to learn how to manage permissions to an user.
@@ -176,10 +176,10 @@ Check the [Manage Permissions](/embedded-bi/working-with-dashboards/share-dashbo
 
 * Users can be assigned to an existing group.
 
-  ![Assign existing group to selected users](/static/assets/embedded/managing-resources/manage-users/images/assign-group-to-users-1.png)
+  ![Assign existing group to selected users](/static/assets/embedded/managing-resources/manage-users/images/assign-group-to-users-1.png#width=65%)
 
 * A new group can also be created at this time and the selected users can be assigned to the new group.
 
-  ![Assign new group to selected users](/static/assets/embedded/managing-resources/manage-users/images/assign-group-to-users-2.png)
+  ![Assign new group to selected users](/static/assets/embedded/managing-resources/manage-users/images/assign-group-to-users-2.png#width=65%)
 
 > **NOTE:**  All the users in the group will have the permissions of assigned group.

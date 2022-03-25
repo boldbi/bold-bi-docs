@@ -189,7 +189,7 @@
         "responses" : {
           "200" : {
             "x-nullable" : true,
-            "description" : "User permission was created successfully",
+            "description" : "User permission has been added successfully",
             "schema" : {
               "$ref" : "#/definitions/ApiResponse"
             }
@@ -296,7 +296,7 @@
             "description" : "Request type was not DELETE"
           },
           "417" : {
-            "description" : "Failed to delete user permission"
+            "description" : "Failed to remove permission."
           }
         }
       }
@@ -1162,6 +1162,15 @@
           "type" : "integer",
           "description" : "User ID.",
           "format" : "int32"
+        },
+        "GroupId": {
+          "type": "integer",
+          "description": "Group ID.",
+          "format": "int32"
+        },
+        "InheritedFromGroup": {
+          "type": "boolean",
+          "description": "Inherit from group."
         },
         "ItemName" : {
           "type" : "string",

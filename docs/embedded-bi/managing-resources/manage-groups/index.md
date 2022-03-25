@@ -20,7 +20,7 @@ To add new group to the Bold BI, click on `New Group` in the groups management p
  
 New groups can be added by providing name and description(optional) for the group.
  
-![Add Groups](/static/assets/embedded/managing-resources/manage-groups/images/add-group.png)
+![Add Groups](/static/assets/embedded/managing-resources/manage-groups/images/add-group.png#width=55%)
 
 Fill the form with name and description and click on `Add`. New group will be created and you can [add users](/embedded-bi/managing-resources/manage-groups/#assign-users) or [manage permissions](/embedded-bi/managing-resources/manage-groups/#manage-permissions) for it.
 
