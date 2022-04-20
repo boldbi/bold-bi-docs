@@ -623,6 +623,172 @@ var dashboard = BoldBI.create({
 dashboard.loadDashboard();
 ```
 
+## beforeDashboardMobileMenuOpen
+
+This event will be triggered after a More option icon from the dashboard banner is clicked.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">data</td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">array</span></td>
+<td class="description">Will holds the array of menu list</td>
+</tr>
+</tbody>
+</table>
+
+**Example** 
+
+```js
+var dashboard = BoldBI.create({
+     beforeDashboardMobileMenuOpen: function (args) {
+          // Write a code block to perform an operation before the url linking navigation called. 
+     } 
+});
+dashboard.loadDashboard();
+```
+
+## beforeFilterApply
+
+This event will be triggered before the filter is applied.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">eventType</td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">Enum</span></td>
+<td class="description">Holds the current event type that triggered the event</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">object</span></td>
+<td class="description">Holds the Dashboard Viewers Object.</td>
+</tr>
+<tr>
+<td class="name">source</td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">object</span></td>
+<td class="description">This will contain the data related to the current event</td>
+</tr>
+<tr>
+<td class="name">Source.data</td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">object</span></td>
+<td class="description">Holds the current event data.</td>
+</tr>
+<tr>
+<td class="name">Source.data.widgetName</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Holds the interacted widget name information</td>
+</tr>
+<tr>
+<td class="name">Source.data.widgetProperties</td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">object</span></td>
+<td class="description">Holds the Widget properties of interacted widget.</td>
+</tr>
+<tr>
+<td class="name">source.data.selectedFilterValues</td>
+<td class="type"><span class="param-type">array</span></td>
+<td class="description">Holds the Filter Values of interacted widget.</td>
+</tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Holds the cancel value of the current operation.</td>
+</tr>
+</tbody>
+</table>
+
+**Example** 
+
+```js
+var dashboard = BoldBI.create({
+     beforeFilterApply: function (args) {
+          // Write a code block to perform an operation before the dashboard context menu is rendered 
+     } 
+});
+dashboard.loadDashboard();        
+```
+
+## afterFilterApply
+
+This event will be triggered after the filter is applied.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">eventType</td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">Enum</span></td>
+<td class="description">Will holds the current event type that triggered the event</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">object</span></td>
+<td class="description">Holds the Dashboard Viewers Object.</td>
+</tr>
+<tr>
+<td class="name">source</td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">object</span></td>
+<td class="description">This will contain the data related to the current event</td>
+</tr>
+<tr>
+<td class="name">Source.data</td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">object</span></td>
+<td class="description">Holds the current event data.</td>
+</tr>
+<tr>
+<td class="name">Source.data.widgetName</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Holds the interacted widget name information</td>
+</tr>
+<tr>
+<td class="name">Source.data.widgetProperties</td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">object</span></td>
+<td class="description">Holds the Widget properties of interacted widget.</td>
+</tr>
+<tr>
+<td class="name">source.data.selectedFilterValues</td>
+<td class="type"><span class="param-type">array</span></td>
+<td class="description">Holds the Filter Values of interacted widget.</td>
+</tr>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Holds the cancel value of the current operation.</td>
+</tr>
+</tbody>
+</table>
+
+**Example** 
+
+```js
+var dashboard = BoldBI.create({
+     afterFilterApply: function (args) {
+          // Write a code block to perform an operation before the dashboard context menu is rendered 
+     } 
+});
+dashboard.loadDashboard();        
+```
+
+
 ## beforeDatasourceSave
 
 This event will be triggered before the data source save action is called.

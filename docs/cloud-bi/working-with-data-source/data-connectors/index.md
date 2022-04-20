@@ -50,7 +50,7 @@ The Bold BI supports the following data connection types such that the structure
         <td align="center" rowspan="2">Sales & CRM
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/chart-mogul/"> ChartMogul</a>
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/copper/"> Copper</a>
-            <br> <a href="/cloud-bi/working-with-data-source/data-connectors/freshwork-crm/"> Freshwork CRM</a>
+            <br> <a href="/cloud-bi/working-with-data-source/data-connectors/freshsales/"> Freshsales</a>
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/harvest/"> Harvest</a>
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/infusionsoft/"> Infusionsoft</a>
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/insightly/"> Insightly</a>

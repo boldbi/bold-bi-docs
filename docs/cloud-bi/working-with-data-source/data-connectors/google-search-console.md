@@ -43,7 +43,7 @@ Use the following steps to authenticate with Google Search Console web service:
 ### Create Google Search Console data source
 After successful authentication, the NEW DATA SOURCE configuration panel opens. Follow the below steps to create Google Search Console data source.
 1. Enter a name and description (optional) for the data source.
-2. Enter a valid Google Search Console REST API endpoint in the URL textbox. Refer the [Google Search Console API documentation](https://developers.google.com/webmaster-tools/search-console-api-original/v3/parameters) for more details.
+2. Enter a valid Google Search Console REST API endpoint in the URL textbox. Refer the [Google Search Console API documentation](https://developers.google.com/webmaster-tools/search-console-api/reference/rest/) for more details.
 
     Example: `https://www.googleapis.com/webmasters/v3/sites/<:siteUrl>/sitemaps`  
 3. Select **GET** method for the REST API in **Method** combo box.
@@ -121,6 +121,6 @@ You can edit, delete and re-authorize this account from the **Connected Accounts
 
 [Dashboard Designer Walkthrough](/cloud-bi/getting-started/quick-start/)
 
-[Google Search Console Limitations](https://developers.google.com/webmaster-tools/search-console-api-original/v3/limits)
+[Google Search Console Limitations](https://developers.google.com/webmaster-tools/search-console-api/limits)
 
 [Google Search Console Integration](https://www.boldbi.com/integrations/google-search-console?utm_source=syncfusion&utm_medium=documentation&utm_campaign=boldbigooglesearchconsoleintegration)

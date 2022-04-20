@@ -13,7 +13,7 @@ This section explains how to customize the Bold BI application by changing the o
 
 Bold BI site can be rebranded/white-labeled with the organization name, header logo, favorite icon, email logo, time zone, and date time format.
 
-![Site Settings General](/static/assets/embedded/images/site-settings-general.png)
+![Site Settings General](/static/assets/embedded/images/site-settings-general.png#width=55%)
 
 ## General
 
@@ -27,7 +27,7 @@ You can view the site URL in the general section of site settings.
 
 ## Date and Time
 
-![Date and Time Settings](/static/assets/embedded/images/date-and-time-settings.png#width=60%)
+![Date and Time Settings](/static/assets/embedded/images/date-and-time-settings.png#width=55%)
 
 ### Time zone
 Time zone for the Bold BI site can be changed. Bold BI site sets the Coordinated Universal Time (UTC) as the default time zone. By selecting `Inherit from browser time zone`, Bold BI site will use time zone from browser.
@@ -46,21 +46,29 @@ Time format of the Bold BI site can be changed. The default time format for the 
 
 ## Language
 
-![Language Settings](/static/assets/embedded/images/language-settings.png#width=50%)
+This section explains how to configure the language settings for application language and data language.
+
+![Site Language](/static/assets/embedded/images/site-language.png)
 
 ### Application language
+An option to localize the Bold BI application to any culture. Please click [here](/embedded-bi/localization/) to learn how to add a new localization or edit the existing localization in the Bold BI application.
+This language used in the application user interface, such as menu items, dialog boxes, toolboxes, and so on.
 
-* An option to localize the Bold BI application to any culture. Please click [here](/embedded-bi/localization/) to learn how to add a new localization or edit the existing localization in the Bold BI application.
-
-* You can use `Inherit from global settings` option for inheriting application language configuration from global settings.
+![Application Language](/static/assets/embedded/images/site-application-language.png)
 
 ### Data language
 
 An option to customize the language of date, number, and currency formats of the dashboards in the Bold BI application.
 
+![Data Language](/static/assets/embedded/images/data-language.png)
+
 ### Disable user preference
 
-By enabling `Disable user preference` option, user language preference will be disabled.
+Enabling the `Disable user preference` option restricts the user's language preference in the profile page, so the user's language preference will not be applied to the site.
+
+ ![Disable user Language Preference](/static/assets/embedded/images/disable-user-language.png)
+
+Click [here](/embedded-bi/managing-resources/user-profile/#language-settings) to know more about user language preference.
 
 ## Branding
 
@@ -79,7 +87,11 @@ Favicon for the Bold BI site can be changed and the preferred image size is `40 
 Email logo image can be changed and the preferred image size is `200 x 40` pixels. The Bold BI site will have Bold BI email logo as the default email logo.
 
 ### Powered by Syncfusion
-Option to show/hide `Powered by Syncfusion` in the footer of the Bold BI site. By default, this will be shown.
+You can either change the powered by logo image with the preferred image size of `100 x 25` or disable them by unchecking the option.
+
+![Powered By Logo](/static/assets/embedded/images/powered-by-logo.png)
 
 ### Copyright information
-Allows to show/hide `Copyright Information` in the footer of the Bold BI site. By default, this will be shown.
+You can either change the copyright information with rebranded content or disable them by unchecking the option.
+
+![Copyright Info](/static/assets/embedded/images/copyright-info.png)

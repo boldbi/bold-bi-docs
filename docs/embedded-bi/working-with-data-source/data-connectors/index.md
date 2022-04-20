@@ -70,6 +70,7 @@ The Bold BI supports the following data connection types such that the structure
 			<br> <a href="/embedded-bi/working-with-data-source/data-connectors/zendesk-sunshine/"> Zendesk Sunshine</a>
 			<br> <a href="/embedded-bi/working-with-data-source/data-connectors/zendesk-support/"> Zendesk Support</a>
 			<br> <a href="/embedded-bi/working-with-data-source/data-connectors/zohocrm/"> Zoho CRM</a>
+            <br> <a href="/embedded-bi/working-with-data-source/data-connectors/avochato/"> Avochato</a>
         </td>
         <td align="center"> Files
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/files/"> CSV</a>
@@ -80,6 +81,7 @@ The Bold BI supports the following data connection types such that the structure
         </td>
         <td align="center"> NoSQL
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/mongodb/"> MongoDB</a>
+            <br> <a href="/embedded-bi/working-with-data-source/data-connectors/quickbase/"> Quickbase</a>
 			<br> <a href="/embedded-bi/working-with-data-source/data-connectors/ravendb/"> RavenDB</a>
         </td>
 		<td align="center"> Management
@@ -105,6 +107,7 @@ The Bold BI supports the following data connection types such that the structure
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/linkedin/"> LinkedIn</a>
 			<br> <a href="/embedded-bi/working-with-data-source/data-connectors/sendible/"> Sendible</a> 
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/youtube/"> YouTube </a>
+            <br> <a href="/embedded-bi/working-with-data-source/data-connectors/yelp/"> Yelp </a>
         </td>
 		<td align="center"> Fitness Management
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/clubready/"> ClubReady</a>

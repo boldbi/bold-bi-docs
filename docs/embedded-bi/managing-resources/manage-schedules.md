@@ -117,7 +117,7 @@ You can configure the export formats in the schedule.
 ![Schedule Image Export](/static/assets/embedded/managing-resources/images/export-image.png)
 
 ## Configure Schedule with Location Export
-You can export the dashboards to an FTP location by configuring the FTP credentials while scheduling the dashboard export.
+You can export the dashboards to an FTP, FTPS, or SFTP location by configuring the respective server credentials while scheduling the dashboard export.
 
 ![Schedule Location Export](/static/assets/embedded/managing-resources/images/ftp-location.png)
 

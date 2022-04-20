@@ -20,6 +20,7 @@
         "Prerequisites": "prerequisites",
         "Recommendations": "recommendations",
         "Using ARM template": "using-arm-template",
+        "Install Client libraries":"install-client-libraries",
         "Upgrade":{
           "Upgrade to latest": "upgrade-to-latest",
           "Upgrade to v4.1": "upgrade-to-v4.1"
@@ -103,6 +104,10 @@
       "Dashboard Embedding with Views": "dashboard-embedding-with-views",
       "Secured Embedding": "embed-dashboards-with-advanced-security",
       "Widget Embedding": "widget-embedding",
+	  "Widget embedding using Single Sign-On": "widget-embedding-using-single-sign-on",
+	  "Get Data source URL": "get-datasource-url",
+	  "Datasource Embedding": "datasource-embedding",
+	  "Datasource embedding using Single Sign-On": "datasource-embedding-using-single-sign-on",
       "Sample": {
         "Dashboard Embedding": {
 		"ASP.NET MVC":"asp.net-mvc",
@@ -219,6 +224,7 @@
         "Presto": "presto",
         "Prometheus": "prometheus",
         "ProofHub": "proofhub",
+        "Quickbase": "quickbase",
         "QuickBooks Online": "quickbooks-online",
         "QuickBooks Payments": "quickbooks-payments",
         "Raven DB": "ravendb",
@@ -248,6 +254,7 @@
         "Todoist": "todoist",
         "Toggl": "toggl",
         "WordPress": "wordpress",
+        "Yelp":"yelp",
         "Xero": "xero",
         "Youtube": "youtube",
         "Zendesk": "zendesk",
@@ -256,6 +263,7 @@
         "Zendesk Support": "zendesk-support",
         "Zoho Invoice": "zoho-invoice",
 		"Zoho CRM": "zohocrm",
+    "Avochato":"avochato",
 		"Zuora": "zuora"
       },
       "Transforming Data": {
@@ -410,9 +418,12 @@
         "Usage analytics": "usage-analytics",
         "Deployment dashboards": "deployment-dashboard"
       },
+	  "Email Settings": {
+        "Email Settings Configuration": "email-settings-configuration",
+        "Email Activity Logs": "email-activity-logs"
+      },
       "Embed Settings": "embed-settings",
       "Data Store Settings": "datastore-settings",
-      "Email Settings": "email-settings",
       "Account Settings": "account-settings",
       "Existing Database": {
         "Database Settings": "database-settings",
@@ -425,6 +436,7 @@
       "Azure Active Directory": {
         "Azure Active Directory Synchronization Schedule": "azure-active-directory-synchronization-schedule"
       },
+	  "Notification Settings": "notification-settings",
       "SSO": {
         "Overview" : "overview",
         "Office 365 support": "office-365-support",
@@ -459,7 +471,8 @@
         "Delete Dashboards": "delete-dashboards",
         "Share Dashboards": "share-dashboards",
         "Advanced Dashboard Security": "advanced-dashboard-security",
-        "Publish Dashboards": "publish-dashboards"
+        "Publish Dashboards": "publish-dashboards",
+	    "Unlisted Dashboards": "unlisted-dashboards"
       },
       "Manage Data Sources": "manage-data-sources",
       "Manage Pinboards": {
@@ -494,6 +507,7 @@
         "Import OpenID Connect Groups": "import-openid-groups"
       }
     },
+	"Manage Permissions": "manage-permissions",
     "Rebranding": "rebranding",
     "Migration Utility": "migration-utility",
     "Localization": "localization",
@@ -544,7 +558,8 @@
       "How to change the binding in the Bold BI Embedded version below 4.1.36?": "how-to-change-binding-in-bold-bi-embedded-below-v4.1.36",
       "Where can I find the error and debug log files?": "where-can-i-find-the-error-and-debug-log-files",
       "How to update the database in Bold BI Application?": "how-to-reset-database-for-bold-bi-application",
-      "How to install the PhantomJS manually?": "how-to-install-phantomjs-manually",
+      "How to install the PhantomJS manually in Bold BI version below 5.1.55?": "how-to-install-phantomjs-manually",
+      "How to install the Chromium Package manually in Bold BI version above 4.2.69?": "how-to-install-chromium-packages-manually",
       "What are the features needed to be enabled in IIS to run Bold BI Application in Windows Client OS?": "features-needed-to-enable-in-iis-to-run-bold-bi-in-win-client-os",
       "What are the features needed to be enabled in IIS to run Bold BI Application in Windows Server OS?": "features-needed-to-enable-in-iis-to-run-bold-bi-in-win-server-os",
       "HTTP Error 500.19-Cannot log in locally(0x8007052e)?": "http-error-500-19-can-not-logon-locally",
@@ -589,18 +604,22 @@
       "How to convert a timestamp column from one timezone to another in the PostgreSQL data source":"how-to-convert-timestamp-column-from-one-timezone-to-another-in-the-postgresql-datasource", 
       "How to apply Row-level Security in Elastic search data source":"how-to-apply-row-level-security-in-elastic-search-data-source",
 	  "How to allow users to create dashboards without modifying the existing data sources": "how-to-allow-users-to-create-dashboards-without-modifying-the-existing-data-sources",
-      "How to query Snowflake records using code view mode in Bold BI":"how-to-query-snowflake-records-using-code-view-mode-in-bold-bi",	  
+      "How to query Snowflake records using code view mode in Bold BI":"how-to-query-snowflake-records-using-code-view-mode-in-bold-bi",
       "How to execute the Microsoft SQL table-valued function in Bold BI": "how-to-execute-the-ms-sql-table-valued-function-in-bold-bi",
 	  "How to connect Google Cloud SQL data source with JBDC connection string": "how-to-connect-google-cloud-sql-data-source-with-jdbc-connection-string",
       "How to execute R language scripts using MS SQL data source in Bold BI":"how-to-execute-r-language-scripts-using-ms-sql-datasource-in-bold-bi",
-	  "How to connect polymorphic databases in Bold BI": "how-to-connect-polymorphic-databases-in-bold-bi",
+      "How to connect polymorphic databases in Bold BI": "how-to-connect-polymorphic-databases-in-bold-bi",
       "How to group the data using Bold BI": "how-to-group-the-data-using-bold-bi",
       "How to overwrite the existing dashboard": "how-to-overwrite-the-existing-dashboard",
       "How to pass a parameter to Web API connector when view and embedding a dashboard": "how-to-pass-a-parameter-to-web-api-connector-when-view-and-embedding-a-dashboard",
 	  "How to get offline unlock key?" : "how-to-get-offline-unlock-key",
 	  "How to update SSL certificate in Kubernetes secret of Bold BI site?":"how-to-update-ssl-certificate-in-kubernetes-secret-of-bold-bi-site",
-    "How to view first seven days of each month in dashboard":"how-to-view-first-seven-days-of-each-month-in-dashboard",
-    "How to show a detailed view of a widget in JavaScript":"how-to-show-a-detailed-view-of-a-widget-in-javascript"
+    "How to view first seven days of each month in dashboard":"how-to-view-first-7-days-data-of-each-month-in-dashboard",
+    "How to deploy Bold BI as Offline deployment in Docker" : "how-to-deploy-boldbi-as-offline-deployment-in-docker",
+    "How to configure SSL for Bold BI Enterprise Edition" : "how-to-configure-ssl-for-bold-bi-enterprise-edition",
+    "How to show a detailed view of a widget in JavaScript":"how-to-show-a-detailed-view-of-a-widget-in-javascript",
+    "How to show a detailed view of a widget in JavaScript":"how-to-show-a-detailed-view-of-a-widget-in-javascript",
+    "How to publish modified data source from one tenant to another": "how-to-publish-modified-data-source-from-one-tenant-to-another"
     }
   }
 }

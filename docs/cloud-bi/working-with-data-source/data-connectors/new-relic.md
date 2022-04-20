@@ -27,9 +27,9 @@ To configure the New Relic data source, follow the below steps:
 ## Create New Relic data source
 Once you click the data source, the NEW DATA SOURCE configuration panel opens. Follow the below steps to create New Relic data source.
 1. Enter a name and description (optional) for the data source.
-2. Enter a valid New Relic REST API endpoint in the URL textbox. Refer the [New Relic API documentation](https://docs.newrelic.com/docs/apis) for more details.
+2. Enter a valid New Relic REST API endpoint in the URL textbox. Refer the [New Relic API documentation](https://docs.newrelic.com/docs/apis/rest-api-v2/get-started/introduction-new-relic-rest-api-v2/) for more details.
 
-    Example: [https://api.newrelic.com/v2/applications](https://api.newrelic.com/v2/applications)
+    Example: `https://api.newrelic.com/v2/applications`
 
 3. Select **GET** method for the REST API in **Method** combo box.
 4. Choose a time interval for **Refresh Settings** using the combo box, to trigger the Rest API request periodically to keep the data in sync with our dashboard.  

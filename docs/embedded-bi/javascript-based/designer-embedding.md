@@ -21,7 +21,7 @@ Follow these steps to embed dashboard designer in your application.
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jsrender/1.0.0-beta/jsrender.min.js"></script>
         <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/signalr/jquery.signalr-2.1.0.min.js"></script>
-        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v4.2.68/embed-js.js"></script>
+        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v5.1.55/embed-js.js"></script>
     </head>
     ```
 
@@ -30,7 +30,7 @@ Follow these steps to embed dashboard designer in your application.
     ```js
 
     <body>
-        <div id="dashboard-container"></div>
+        <div id="dashboard_container"></div>
     </body>
     ```
 
@@ -42,13 +42,13 @@ You can edit the dashboard in embedded designer using either dashboard ID or das
 
 ```js
 <body onload="embedSample();">
-    <div id="dashboard-container"></div>
+    <div id="dashboard_container"></div>
     <script>
         function embedSample() {
             var boldbiEmbedInstance = BoldBI.create({
                 serverUrl: "http://localhost:51777/bi/site/site1",
                 dashboardId: "755e99c7-f858-4058-958b-67577b283309",                
-                embedContainerId: "dashboard-container",// This should be the container id where you want to embed the dashboard designer
+                embedContainerId: "dashboard_container",// This should be the container id where you want to embed the dashboard designer
                 embedType: BoldBI.EmbedType.Component,
                 environment: BoldBI.Environment.Enterprise,
                 mode: BoldBI.Mode.Design,
@@ -69,13 +69,13 @@ You can edit the dashboard in embedded designer using either dashboard ID or das
 
 ```js
 <body onload="embedSample();">
-    <div id="dashboard-container"></div>
+    <div id="dashboard_container"></div>
     <script>
         function embedSample() {
             var boldbiEmbedInstance = BoldBI.create({
                 serverUrl: "http://localhost:51777/bi/site/site1",
                 dashboardPath: "/Sales/Sales Analysis Dashboard",
-                embedContainerId: "dashboard-container",// This should be the container id where you want to embed the dashboard designer
+                embedContainerId: "dashboard_container",// This should be the container id where you want to embed the dashboard designer
                 embedType: BoldBI.EmbedType.Component,
                 environment: BoldBI.Environment.Enterprise,
                 mode: BoldBI.Mode.Design,
@@ -98,12 +98,12 @@ If you do not specify none of the dashboard ID or dashboard path, then the serve
 
 ```js
 <body onload="embedSample();">
-    <div id="dashboard-container"></div>
+    <div id="dashboard_container"></div>
     <script>
         function embedSample() {
             var boldbiEmbedInstance = BoldBI.create({
                 serverUrl: "http://localhost:51777/bi/site/site1",
-                embedContainerId: "dashboard-container",// This should be the container id where you want to embed the dashboard designer
+                embedContainerId: "dashboard_container",// This should be the container id where you want to embed the dashboard designer
                 embedType: BoldBI.EmbedType.Component,
                 environment: BoldBI.Environment.Enterprise,
                 mode: BoldBI.Mode.Design,
@@ -128,13 +128,13 @@ When creating a draft in designer embedding, if you specify either existing data
 
 ```js
 <body onload="embedSample();">
-    <div id="dashboard-container"></div>
+    <div id="dashboard_container"></div>
     <script>
         function embedSample() {
             var boldbiEmbedInstance = BoldBI.create({
                 serverUrl: "http://localhost:51777/bi/site/site1",
                 datasourceId: "895e99c7-f858-4058-958b-67577b283345",
-                embedContainerId: "dashboard-container",// This should be the container id where you want to embed the dashboard designer
+                embedContainerId: "dashboard_container",// This should be the container id where you want to embed the dashboard designer
                 embedType: BoldBI.EmbedType.Component,
                 environment: BoldBI.Environment.Enterprise,
                 mode: BoldBI.Mode.Design,
@@ -155,13 +155,13 @@ When creating a draft in designer embedding, if you specify either existing data
 
 ```js
 <body onload="embedSample();">
-    <div id="dashboard-container"></div>
+    <div id="dashboard_container"></div>
     <script>
         function embedSample() {
             var boldbiEmbedInstance = BoldBI.create({
                 serverUrl: "http://localhost:51777/bi/site/site1",
                 datasourceName: "Northwind Datasource",
-                embedContainerId: "dashboard-container",// This should be the container id where you want to embed the dashboard designer
+                embedContainerId: "dashboard_container",// This should be the container id where you want to embed the dashboard designer
                 embedType: BoldBI.EmbedType.Component,
                 environment: BoldBI.Environment.Enterprise,
                 mode: BoldBI.Mode.Design,

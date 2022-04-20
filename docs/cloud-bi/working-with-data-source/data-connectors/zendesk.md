@@ -135,6 +135,6 @@ Replace it in the URL to query a particular ticket:
 
 [Zendesk Rate Limits for Endpoint-specific](https://developer.zendesk.com/rest_api/docs/support/introduction#endpoint-specific-rate-limits)
 
-[Zendesk Integration](https://www.boldbi.com/integrations/zendesk?utm_source=syncfusion&utm_medium=documentation&utm_campaign=boldbizendeskintegration)
+[Zendesk Integration](https://www.boldbi.com/integrations/zendesk-support)
 
 [Blog Post](https://www.boldbi.com/blog/zendesk-dashboard-example-for-monitoring-customer-service-performance-with-bold-bi)

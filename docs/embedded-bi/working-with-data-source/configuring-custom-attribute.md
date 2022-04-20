@@ -44,7 +44,7 @@ This attribute can be set by the UMS admin for a site in the site details page.
 
 Attributes are name-value pairs that are associated with users, groups, and the sites (tenants).
 
-![Custom Attribute Window](/static/assets/embedded/working-with-datasource/custom-attribute/images/add-custom-attribute.png)
+![Custom Attribute Window](/static/assets/embedded/working-with-datasource/custom-attribute/images/add-custom-attribute.png#width=65%)
 
 Name – Name of the attribute.
 
@@ -59,11 +59,11 @@ Encrypt – Store it as encrypted one in database and the value will be shown as
 
 Let us consider for the user **James** has the custom attribute value is configured as **Sectors IN ('Industrial', 'Traffic')** with the attribute name as **Sector**.
 
-![Use custom attribute for user James](/static/assets/embedded/working-with-datasource/custom-attribute/images/custom-attribute-user-James.png)
+![Use custom attribute for user James](/static/assets/embedded/working-with-datasource/custom-attribute/images/custom-attribute-user-James.png#width=50%)
 
 For the user **Christ** , has the custom attribute value is configured as **Sectors IN ('Residential', 'Commercial')** with the attribute name as **Sector**.
 
-![Use custom attribute for user Christ](/static/assets/embedded/working-with-datasource/custom-attribute/images/custom-attribute-user-Christ.png)
+![Use custom attribute for user Christ](/static/assets/embedded/working-with-datasource/custom-attribute/images/custom-attribute-user-Christ.png#width=50%)
 
 ## Uses of custom attribute
 

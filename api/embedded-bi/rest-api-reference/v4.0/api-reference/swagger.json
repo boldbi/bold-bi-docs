@@ -262,6 +262,10 @@
             "description": "Access denied.",
             "content": {}
           },
+          "404" : {
+            "description" : "Item details not found.",
+            "content": {}
+          },
           "405": {
             "description": "Request type was not POST.",
             "content": {}
@@ -316,6 +320,10 @@
           },
           "401": {
             "description": "Access denied.",
+            "content": {}
+          },
+          "404" : {
+            "description" : "Item details not found.",
             "content": {}
           },
           "405": {
@@ -449,7 +457,7 @@
             "content": {}
           },
           "417": {
-            "description": "Failed to get view.",
+            "description": "Failed to get item view.",
             "content": {}
           }
         }
@@ -604,10 +612,6 @@
             "description": "Access denied.",
             "content": {}
           },
-          "403": {
-            "description": "Access denied for the item.",
-            "content": {}
-          },
           "405": {
             "description": "Request type was not GET.",
             "content": {}
@@ -665,7 +669,7 @@
             "content": {}
           },
           "401": {
-            "description": "Access denied.",
+            "description": "Access denied. You do not have permission to copy the dashboard.",
             "content": {}
           },
           "403": {
@@ -784,7 +788,7 @@
             }
           },
           "204": {
-            "description": "Favorite item list empty.",
+            "description": "No favorite items.",
             "content": {}
           },
           "401": {
@@ -951,7 +955,7 @@
             "content": {}
           },
           "401": {
-            "description": "Access denied.",
+            "description": "Access denied for the item.",
             "content": {}
           },
           "404": {
@@ -992,7 +996,7 @@
             "content": {}
           },
           "400": {
-            "description": "Item id invalid.",
+            "description": "Item ID is empty.",
             "content": {}
           },
           "401": {
@@ -2640,6 +2644,91 @@
         "x-codegen-request-body-name": "apiUpdateSiteSettings"
       }
     },
+    "/v4.0/settings/dashboard-settings": {
+      "get": {
+        "tags": [
+          "Settings"
+        ],
+        "summary": "Get Dashboard Settings",
+        "description": "Retrieves the dashboard setting details of the particular site.",
+        "operationId": "Administration_GetDashboardSettings",
+        "responses": {
+          "200": {
+            "description": "Dashboard setting details have been retrieved successfully.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiDashboardSettings"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Access denied.",
+            "content": {}
+          },
+          "405": {
+            "description": "Request type was not GET.",
+            "content": {}
+          },
+          "417": {
+            "description": "Failed to retrieve dashboard settings.",
+            "content": {}
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Settings"
+        ],
+        "summary": "Update Dashboard Settings",
+        "description": "Users who have admin rights permission to dashboard settings can update the dashboard settings.",
+        "operationId": "Administration_UpdateDashboardSettings",
+        "requestBody": {
+          "description": "The details of the dashboard settings that have been passed will be updated.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ApiUpdateDashboardSettings"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Dashboard settings have been updated successfully.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "The content of the request body is missing or incomplete",
+            "content": {}
+          },
+          "401": {
+            "description": "Access denied",
+            "content": {}
+          },
+          "405": {
+            "description": "Request type was not PUT",
+            "content": {}
+          },
+          "417": {
+            "description": "Failed to update site setting details",
+            "content": {}
+          },
+          "500": {
+            "description": "Error in the database while executing the query.",
+            "content": {}
+          }
+        }
+      }
+    },
     "/v4.0/attribute/user": {
       "post": {
         "tags": [
@@ -3468,7 +3557,7 @@
             "content": {}
           },
           "500" : {
-            "description" : "Error in database while executing the query.",
+            "description" : "Error in the database while executing the query.",
             "content": {}
           }
         }
@@ -3568,6 +3657,10 @@
           },
           "406": {
             "description": "The content of the request body is invalid.",
+            "content": {}
+          },
+          "409": {
+            "description": "External site name is duplicated.",
             "content": {}
           }
         },
@@ -4267,6 +4360,10 @@
             "description": "The content of the request body is invalid.",
             "content": {}
           },
+          "409": {
+            "description": "Item name already exists.",
+            "content": {}
+          },
           "412": {
             "description": "FTP details invalid.",
             "content": {}
@@ -4496,12 +4593,20 @@
             "description": "The content of the request body is invalid.",
             "content": {}
           },
+          "409": {
+            "description": "Item name already exists.",
+            "content": {}
+          },
           "412": {
             "description": "FTP details invalid.",
             "content": {}
           },
           "417": {
             "description": "Failed to update schedule.",
+            "content": {}
+          },
+          "500": {
+            "description": "Error in the database while executing the query.",
             "content": {}
           }
         },
@@ -5180,12 +5285,12 @@
           },
           "PublishedItemId": {
             "type": "string",
-            "description": "Returns the published data source item id",
+            "description": "Returns the published item id",
             "format": "guid"
           },
           "Version": {
             "type": "integer",
-            "description": "Returns the version number of the data source",
+            "description": "Returns the version number of the item",
             "format": "int32"
           },
           "StatusMessage": {
@@ -5669,6 +5774,61 @@
           "StatusMessage": {
             "type": "string",
             "description": "Returns the status message from the API."
+          }
+        }
+      },
+      "ApiDashboardSettings": {
+        "type": "object",
+        "properties": {
+          "MakePublicEnabled": {
+            "type": "boolean",
+            "description": "Returns true, if the public dashboard setting is enabled."
+          },
+          "DefaultViewsEnabled": {
+            "type": "boolean",
+            "description": "Returns true, if the default views setting is enabled."
+          },
+          "AutoSaveEnabled": {
+            "type": "boolean",
+            "description": "Returns true, if the autosave filter setting is enabled."
+          },
+          "ThemingEnabled": {
+            "type": "boolean",
+            "description": "Returns true, if the dashboard theming setting is enabled."
+          },
+          "UsageAnaylticsEnabled": {
+            "type": "boolean",
+            "description": "Returns true, if the usage analytics dashboard setting is enabled."
+          }
+        }
+      },
+      "ApiUpdateDashboardSettings": {
+        "type": "object",
+        "properties": {
+          "MakePublicEnabled": {
+            "type": "boolean",
+            "description": "Specify true to enable public dashboard setting.",
+            "nullable": true
+          },
+          "DefaultViewsEnabled": {
+            "type": "boolean",
+            "description": "Specify true to enable default views setting.",
+            "nullable": true
+          },
+          "AutoSaveEnabled": {
+            "type": "boolean",
+            "description": "Specify true to enable autosave filter setting.",
+            "nullable": true
+          },
+          "ThemingEnabled": {
+            "type": "boolean",
+            "description": "Specify true to enable dashboard theming setting.",
+            "nullable": true
+          },
+          "UsageAnaylticsEnabled": {
+            "type": "boolean",
+            "description": "Specify true to enable usage analytics dashboard setting.",
+            "nullable": true
           }
         }
       },

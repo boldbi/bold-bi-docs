@@ -9,18 +9,22 @@ documentation: ug
 
 # What are Shared Tables
 
-Shared tables are used to join multiple extract mode data sources to form a single data source. 
+Shared tables are used to join multiple data sources to form a single data source.
 
-<b>Example:</b> The user can join Salesforce data with Google Analytics by same column field.
+After merging the tables, you can perform operations like join, expressions, and more. To learn more, click this link. [link](/embedded-bi/working-with-data-source/transforming-data/joining-table/#adding-a-join-condition).
 
 ## How does it work?
 
-While creating or editing an extract mode data source, under the tree view area where the schema and the tables are shown, an accordion will be shown with the name <b>Shared Tables</b>. On expanding this accordion the extract mode data sources that are currently shared to the logged in user will be listed. Users can expand the data source and use the table in the data source.
+While creating or editing an data source, under the tree view area where the schema and the tables are shown, an accordion will be shown with the name <b>Shared Tables</b>. On expanding this accordion **Only data sources of same mode** that are currently shared to the logged in user will be listed. Users can expand the data source and use the table in the data source.
 
 The changes made in the original data source from where the table originated will be reflected here. So, if users modify a column, data or drop the table, the current data source will also be affected.
 
-<b>Example:</b>
-1. To integrate two or more extract mode data source, open Shared Tables.
+<b>Example:</b> The user can join Salesforce data with Google Analytics by same column field.
+
+>**Note:** The shared tables feature is available only in the **All Extract** and **Web Live modes**   .
+
+<b>Steps to Join tables:</b>
+1. To integrate two or more data sources, open Shared Tables.
 
    ![Expand SharedTables](/static/assets/embedded/working-with-datasource/images/SharedTables-expand.png)
 
@@ -32,4 +36,5 @@ The changes made in the original data source from where the table originated wil
 
    ![SharedTables](/static/assets/embedded/working-with-datasource/images/SharedTables-result.png)  
 
-> **NOTE:**  After merging the tables, you can perform operations like join, expressions, and so on. To learn more, click [here](/embedded-bi/working-with-data-source/transforming-data/joining-table/#adding-a-join-condition).
+>**Note:** If you connect to WEB API live data source other web API live data sources will be listed in accordion. Similarly, for extract mode data sources all extract mode data sources will be listed.
+

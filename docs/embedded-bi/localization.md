@@ -140,8 +140,8 @@ Admin can enforce this language into all the users. If admin enforced this langu
 
 ### User preference settings
 
-User can set the language preference in the profile page. By clicking the `Account` presence on the profile page, it will be redirected to IDP profile page where user can set the own language preference.
+User can set the language preference in the profile page. By clicking the "Update application language details through your account" link on the [profile page](/embedded-bi/managing-resources/user-profile/#language-settings), it will be redirected to IDP profile page where user can set the own language preference.
 
-  ![profile-site-setting](/static/assets/embedded/localization/images/profile-site-setting.png#width=55%)
+  ![profile-site-setting](/static/assets/embedded/localization/images/profile-site-setting.png)
 
 A user can set any language as preferred language and it will be applied on all the sites, but when the admin disable the user language preference in any site, the user preferred language will be not applied at that site.

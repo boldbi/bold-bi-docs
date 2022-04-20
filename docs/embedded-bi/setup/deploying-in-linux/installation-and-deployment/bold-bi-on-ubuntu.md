@@ -37,7 +37,7 @@ documentation: ug
     ~~~shell
     sudo apt-get install pv
     ~~~
-	
+    
 6. Add an `openssl conf` path in the environment, if does not exist.
 
 	~~~shell
@@ -75,7 +75,7 @@ documentation: ug
 
 * **i :** Installation type - Specifies either it is a new or upgrade installation.
 
-* **u :** Specify the user or group that manages the service. 
+* **u :** Specify the user or group that manages the service. Please ensure that this user exists in your Linux server. 
 
 * **h :** Domain or IP address of the machine with http protocol. 
 

@@ -84,8 +84,7 @@ Harvest requires to include `User-Agent` header in each request with below as va
       - User-Agent : `JohnSmith` (john@abc.com)
       - User-Agent : `DemoApp` (demo@abc.com)
 
-
-> **NOTE:**  Refer Authentication for [v1 APIs](https://help.getharvest.com/api-v1/authentication/authentication/http-basic/) and [v2 APIs](https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/).
+> **NOTE:**  Refer Authentication for [v1 APIs](https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/) and [v2 APIs](https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/).
 
 #### How do I get Domain name for connecting Harvest data source?
 1. Login to [Harvest](https://id.getharvest.com/harvest/sign_in) account. 

@@ -22,4 +22,12 @@ You can explore the iFrame based Embedding in detail here,
 
 [Widget Embedding](/embedded-bi/iframe-based/widget-embedding/)
 
+[Widget embedding using Single Sign-On](/embedded-bi/iframe-based/widget-embedding-using-single-sign-on/)
+
+[Get Data source URL](/embedded-bi/iframe-based/get-datasource-url/)
+
+[Datasource Embedding](/embedded-bi/iframe-based/datasource-embedding/)
+
+[Datasource embedding using Single Sign-On](/embedded-bi/iframe-based/datasource-embedding-using-single-sign-on/)
+
 [Dashboard Embedding Sample](/embedded-bi/iframe-based/sample/dashboard-embedding/)
