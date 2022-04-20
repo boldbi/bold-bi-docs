@@ -24,6 +24,12 @@ documentation: ug
     sudo yum -y install pv
     ~~~ 
 
+3. Install `pv` tool by running below command.
+
+    ~~~shell
+    sudo yum -y install pv
+    ~~~ 
+
 4. Add an `openssl conf` path in the environment, if does not exist.
 
 	~~~shell
@@ -61,7 +67,7 @@ documentation: ug
 
 * **i :** Installation type: Specifies either it is a new or upgrade installation.
 
-* **u :** Specifies the user or group that manages the service. 
+* **u :** Specifies the user or group that manages the service. Please ensure that this user exists in your Linux server. 
 
 * **h :** Domain or IP address of the machine with HTTP protocol. 
 

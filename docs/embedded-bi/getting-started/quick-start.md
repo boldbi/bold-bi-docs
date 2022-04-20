@@ -19,11 +19,11 @@ Click on the below option to create a new dashboard in 'Bold BI'.
 
 You can start creating the dashboard from scratch or from templates as shown below.
 
-![Ways of Creating Dashboards](/static/assets/embedded/getting-started/images/create-dashboard-options.png)
+![Ways of Creating Dashboards](/static/assets/embedded/getting-started/images/create-dashboard-options.png#width=30%)
 
 Open the Dashboard Designer by clicking the `Start from Scratch` option as highlighted below. 
 
-![create dashboard using option in server](/static/assets/embedded/getting-started/images/createdashboard.png)
+![create dashboard using option in server](/static/assets/embedded/getting-started/images/createdashboard.png#width=30%)
 
 Enter the dashboard name and click `Add and Design` to open the Dashboard Designer.
 

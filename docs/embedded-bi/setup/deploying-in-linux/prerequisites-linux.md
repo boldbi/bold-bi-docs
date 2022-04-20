@@ -13,8 +13,8 @@ documentation: ug
 The following hardware requirements are necessary to run the Bold BI solution:
 
 * **Operating System:**  Bold BI Linux can run in different Linux distribution. Verified on the following operating systems:
-    * Ubuntu 18.04 LTS
-    * Debian OS
+    * Ubuntu 
+    * CentOS or RHEL
 * **CPU:** 4-core.
 * **Memory:** 16 GB RAM.
 * **Disk Space:** 5 GB or more.
@@ -23,7 +23,7 @@ The following hardware requirements are necessary to run the Bold BI solution:
 
 The following software requirements are necessary to run the Bold BI Embedded edition:
 * **Database:** Microsoft SQL Server 2012+ | PostgreSQL
-* **Web Server:** [Nginx](https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/linux-nginx?view=aspnetcore-3.1#install-nginx)
+* **Web Server:** [Nginx](https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/linux-nginx?view=aspnetcore-3.1#install-nginx)  or [Apache](https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/linux-apache?view=aspnetcore-3.1)
 * **Web Browser:** Microsoft Edge, Mozilla Firefox, and Chrome.
 
 ## Next step

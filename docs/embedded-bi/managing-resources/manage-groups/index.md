@@ -26,6 +26,7 @@ Fill the form with name and description and click on `Add`. New group will be cr
 
 ## Edit group
 Group Information can be edited from the group's edit page.
+![Edit Group Page](/static/assets/embedded/managing-resources/manage-groups/images/edit-group-img.png)
 
 ![Edit Group](/static/assets/embedded/managing-resources/manage-groups/images/edit-group.png)
 
@@ -54,4 +55,28 @@ Users can also be removed from the group if the user no longer needs the permiss
 ![Assign Users](/static/assets/embedded/managing-resources/manage-groups/images/manage-groups-remove-users.png)
 
 ## Manage permissions
-Check the [Manage Permissions](/embedded-bi/working-with-dashboards/share-dashboards/manage-permissions/) section to learn how to manage permissions to a group.	
+
+`Manage Permissions` page for the group can be accessed from any one of the following pages.
+
+1. Click `Actions` in the group management grid context menu and select the `Manage Permissions` option.
+![Manage Permissions](/static/assets/embedded/images/Manage-permissions-group-context.png)
+
+2. Click the group's name on the group listing page to navigate to the group profile page, and then select the `Manage Permissions` option from the Manage drop-down on the group profile page.
+![Manage Permissions Group Edit](/static/assets/embedded/images/manage-permission-group-edit.png)
+
+You can find the permissions assigned directly to the group in the manage permissions grid.
+
+![Manage Permissions](/static/assets/embedded/images/Manage-permissions-group.png)
+
+Click `Add Permission` to add permissions to the group.
+
+![Add Permission](/static/assets/embedded/working-with-dashboards/share-dashboards/images/add-permission-group.png#width=60%)
+
+### Steps to add permission to the group
+
+1. Select the entity.
+2. Select the scope if the entity is not of the `All Resource` or `All Settings` item type.
+3. Select the access mode.
+4. Click `Add` to add the framed permission to the group.
+
+You can also select multiple scopes and entities to assign multiple permissions. Please visit [Manage Permissions](/embedded-bi/manage-permissions/) for more information on how to add and manage permissions.

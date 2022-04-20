@@ -8,28 +8,155 @@ documentation: ug
 
 # User Profile in the Bold BI
 
-This section explains how to view and edit profile, how to view my permissions in the profile and also how to change password for the user profile in the Bold BI.
+This section explains how to view the profile, edit the profile details, edit the profile settings, set user notification preferences, view my permissions, connect sites, connect accounts, and change the password for the user profile in Bold BI.
 
-You can view the profile and edit the profile details, my permission details and can change the password.
+## Profile details
 
-## View Profile
+You can view the profile, edit the profile details, and change the password.
+
+### View profile
 You can view the profile details in this page.
 
 ![View Profile](/static/assets/embedded/managing-resources/images/view-user-profile.png#width=55%)
  
-## Edit Profile
-You can edit the profile details in Bold BI account. Click `Edit Account` in profile page.
+### Edit profile
+You can edit the profile details in Bold BI account. Click `Edit Account` in profile page, it will be redirected to IDP profile page where you can edit your profile.
 
 ![Cloud Account](/static/assets/embedded/managing-resources/images/syncfusion-cloud-account-button.png#width=55%)
 
 Username, first name, last name, phone number and profile picture can be changed in the Bold BI profile page.
 
 ![Edit Profile](/static/assets/embedded/managing-resources/images/edit-user-profile.png)
+
+## Settings
+The Application language, Data language, Default pinboard, and Autosave filter settings can be edited in Profile settings.
+
+![Profile Settings](/static/assets/embedded/managing-resources/images/profile-settings.png#width=60%)
+
+### Language settings
+This section explains how to configure the language settings for application language and data language.
+
+#### Application language
+This language used in the user interface of an application, such as menu items, dialog boxes, toolboxes, and so on.
+You can update application language preference by clicking "Update application language details through your account". It will be redirected to IDP profile page where user can set your own language preference.
+
+#### Data language
+This language used in date, number, and currency formats.
+You can update data language preference by clicking "Update data language details through your account".
+It will be redirected to IDP profile page where you can set your own language preference.
+
+You can configure the settings as shown in the following images.
+
+![Profile Language Preference](/static/assets/embedded/managing-resources/images/profile-language-preference.png)
+
+![Language Preference](/static/assets/embedded/managing-resources/images/language-preference.png)
+
+> **NOTE:**  NOTE: Make sure the `Disable user language preference` option is disabled in the site settings for applying user preference language on your site. For more details, please visit [here](/embedded-bi/localization/#site-language-settings).
+
+### Default pinboard
+Users can select a default pinboard by selecting one of the added pinboards from the drop-down.
+
+![Default Pinboard](/static/assets/embedded/managing-resources/images/default-pinboard.png)
+
+Default Pinboard will be loaded by default when the user navigates to the Pinboard page. Click [here](/embedded-bi/managing-resources/manage-pinboards/) to know more about pinboards.
+
+### Dashboard settings
+#### AutoSave filter
+The user can control auto-save filters of the dashboards using the Dashboard Settings on this page.
+
+The dashboards will be rendered with the last applied filters by the users.
+![Autosave Filter](/static/assets/embedded/managing-resources/images/auto-save-filter.png)
+
+If the administrator has restricted the AutoSave filter option in site settings, then the user cannot control the action of saving the filters applied to the dashboard.
+![Autosave Filter Disabled](/static/assets/embedded/managing-resources/images/auto-save-filter-disabled.png)
+
+> **NOTE:** If a dashboard has default views, it will not be rendered with the last applied filter in the dashboard. Hence, `Default Views` must be disabled on the Dashboard Settings page of the site settings.
+
+
+## Notifications
+
+The user can configure their own notification preferences, but they can only enable or disable the options that have been enabled in the site notification settings.
+
+![Profile Notifications](/static/assets/embedded/managing-resources/images/user-profile-notifications.png)
+
+There are two different types of notification.
+* Email Notifications
+* System Notifications
+
+### Email notifications
+
+Users will be notified of activities by email based on the settings configured here.
+
+ ![Email notification settings](/static/assets/embedded/managing-resources/images/profile-email-notification.png)
+
+### System notifications
+
+System notifications will notify users of activity on comments based on the settings configured here.
+
+![System notification settings](/static/assets/embedded/managing-resources/images/profile-system-notification.png)
+
+System notifications will appear in the bottom left corner above the user's profile picture, as shown in the following image.
+
+![Notifications section](/static/assets/embedded/managing-resources/images/notifications-icon.png)
+
+Users can navigate to the particular comment by clicking the dashboard name in the notification section. To configure the user notification settings, users can navigate to the profile page by clicking settings.
+
+![Notifications section page](/static/assets/embedded/managing-resources/images/notifications-section.png)
+
+### List of notifications
+
+#### Notify me when someone comments on my dashboard
+Enabling this option will notify you via email or system notification when someone comments on the dashboard you have created.
+
+#### Notify me when someone comments on a dashboard I have access to
+Enabling this option will notify you via email or system notification when someone comments on the dashboard you have access to.
+
+#### Notify me when someone mentions me in a comment
+Enabling this option will notify you via email or system notification when someone mentions your name while commenting on a dashboard.
+
+#### Notify me about comments when I have watch enabled for a dashboard
+Autowatch will be enabled for a comment on dashboards whenever you add comments to a dashboard you created or to which you have access. This setting is useful if you want to receive notifications for specific dashboards rather than all dashboards that you have created or have access to. You can disable the "Notify me when someone comments on a dashboard I have access to" and "Notify me when someone comments on my dashboard" options and watch a specific dashboard comment. 
+
+#### Specific watch
+
+Apart from autowatch on created and accessible items, you can also watch a specific item.
+
+![Specific watch](/static/assets/embedded/site-administration/images/specific-watch.png)
+
+You can toggle between a watch and unwatch for a dashboard comment at any time.
+
+#### Enable data alert and scheduled export email notifications
+Enabling this option will notify you via email for data alert and schedule export.
+
+#### Notify me when my profile is edited
+Enabling this option will notify you via email if your profile is edited.
+
+#### Notify me when a resource is shared with me
+Enabling this option will notify you via email whenever you are granted permissions for resources, users, groups, or settings.
+
+#### User synchronization notification
+Enabling this option will notify you via email about user synchronization schedule.
+
+### Inherit from global settings
+
+If a user wants to inherit the same settings as in the site notification settings, he or she can do so by checking the "Inherit from global settings" option in Email Notifications and System Notifications.
+
+![Inherit from global settings](/static/assets/embedded/managing-resources/images/inherit-notification.png)
+
+### Disabled user notification preference
+If the `Disable User Preference` is enabled in site notification settings, then the user cannot modify the user notification preference settings.
+
+![Disabled in site notification](/static/assets/embedded/managing-resources/images/notification-disabled-in-site.png)
+
      
 ## Change Password
 Password to log in to the Bold BI can be changed in the Bold BI, change password page.
 
-![Change Password](/static/assets/embedded/managing-resources/images/edit-user-profile-password.png#width=60%)
+![Change Password In Profile](/static/assets/embedded/managing-resources/images/change-password-button.png)
+
+Click `Change Password`, it will be redirected to the IDP profile page where you can change your password.
+
+![Change Password](/static/assets/embedded/managing-resources/images/edit-user-profile-password.png)
 
 > **NOTE:**  Administrator privileged users can change the password from UMS Site. For more details, please visit [here](/embedded-bi/managing-resources/manage-users/#change-password)
 

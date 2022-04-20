@@ -48,7 +48,7 @@ After successful authentication, the NEW DATA SOURCE configuration panel opens
 1. Enter a name and description (optional) for the data source.
 2. Enter a valid LinkedIn REST API endpoint in the URL textbox. Refer the [LinkedIn API documentation](https://docs.microsoft.com/en-us/linkedin/) for more details.
 
-   Example: [https://api.linkedin.com/v1/companies/&lt;:id&gt;/updates](https://api.linkedin.com/v1/companies/%3c:id%3e/updates)  
+   Example: `https://api.linkedin.com/v2/<:service>`
 
 3. Select **GET** method for the REST API in **Method** combo box.
 4. In **Max Rows**, enter the maximum number of rows to be fetched from the LinkedIn data source. This value is used to fetch the data from LinkedIn data source via pagination.

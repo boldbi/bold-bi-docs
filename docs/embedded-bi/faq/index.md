@@ -23,6 +23,8 @@ The following are the frequently asked questions in Bold BI Enterprise:
 
 [How to install PhantomJS WebKit manually in Bold BI server?](/embedded-bi/faq/how-to-install-phantomjs-manually/)
 
+[How to install Chromium Packages manually in Bold BI server?](/embedded-bi/faq/how-to-install-chromium-packages-manually/)
+
 [What are the features needed to be enabled in IIS to run Bold BI Application in *Windows Client OS*?](/embedded-bi/faq/features-needed-to-enable-in-iis-to-run-bold-bi-in-win-client-os/)
 
 [What are the features needed to be enabled in IIS to run Bold BI Application in *Windows Server OS*?](/embedded-bi/faq/features-needed-to-enable-in-iis-to-run-bold-bi-in-win-server-os/)
@@ -129,6 +131,13 @@ The following are the frequently asked questions in Bold BI Enterprise:
 
 [How to update SSL certificate in the Kubernetes secret of Bold BI site](/embedded-bi/faq/how-to-update-ssl-certificate-in-kubernetes-secret-of-bold-bi-site/)
 
-[How to view first seven days of each month in dashboard](/embedded-bi/faq/how-to-view-first-seven-days-of-each-month-in-dashboard)
+[How to view first seven days of each month in dashboard](/embedded-bi/faq/how-to-view-first-7-days-data-of-each-month-in-dashboard)
+
+[How to deploy Bold BI as Offline deployment in Docker](/embedded-bi/faq/how-to-deploy-boldbi-as-offline-deployment-in-docker/)
+
+[How to configure SSL for Bold BI Enterprise Edition](/embedded-bi/faq/how-to-configure-ssl-for-bold-bi-enterprise-edition/)
 
 [How to show a detailed view of a widget in JavaScript](/embedded-bi/faq/how-to-show-a-detailed-view-of-a-widget-in-javascript/)
+
+[How to publish modified data source from one tenant to another?](/embedded-bi/faq/how-to-publish-modified-data-source-from-one-tenant-to-another/)
+

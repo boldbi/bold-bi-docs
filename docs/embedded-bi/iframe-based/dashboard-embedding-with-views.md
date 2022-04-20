@@ -15,10 +15,10 @@ A dashboard can be embedded with saved filter views in any application using URL
 ![EmbedViews-ShareIcon](/static/assets/embedded/iFrame-based/images/EmbedViews-ShareIcon.png) 
 
 * Click the `Get Embed Code` link in the share dialog box.
-![EmbedViews-GetEmbedCode](/static/assets/embedded/iFrame-based/images/EmbedViews-GetEmbedCode.png) 
+![EmbedViews-GetEmbedCode](/static/assets/embedded/iFrame-based/images/EmbedViews-GetEmbedCode.png#width=60%) 
 
 * By Default, Dashboard Comments, Widget Comments, Saved Views, and Export options are disabled. You can enable this option by toggle the switch given in embed dialog.
-![EmbedLogin](/static/assets/embedded/iFrame-based/images/EmbedViews-EmbedCodeDialog.png) 
+![EmbedLogin](/static/assets/embedded/iFrame-based/images/EmbedViews-EmbedCodeDialog.png#width=55%) 
 <table>
     <tr>
       <td>
@@ -55,12 +55,12 @@ A dashboard can be embedded with saved filter views in any application using URL
 </table>
 
 * Copy the embed URL by clicking the copy icon from the Embed Code dialog.
-![EmbedViews-EmbedURL](/static/assets/embedded/iFrame-based/images/EmbedViews-EmbedURL.png)
+![EmbedViews-EmbedURL](/static/assets/embedded/iFrame-based/images/EmbedViews-EmbedURL.png#width=55%)
 
 * Embed the copied URL into other web application.
 
 * Run the web application, it will show the login page if the dashboard is not shared as a public dashboard. Click the login button and login with valid user credentials and the dashboard will render automatically.
-![EmbedViews-EmbedLogin](/static/assets/embedded/iFrame-based/images/EmbedViews-EmbedLogin.png)
+![EmbedViews-EmbedLogin](/static/assets/embedded/iFrame-based/images/iframeLoginPage.png#max-width=45%)
 
 For example, below image represents that our dashboard embedded in "http://example.com/" website.
 ![EmbedViews-EmbedSample](/static/assets/embedded/iFrame-based/images/EmbedViews-EmbedSample.png)

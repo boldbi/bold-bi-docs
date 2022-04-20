@@ -22,7 +22,7 @@ Follow these steps to embed pinboard in your application.
         <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jsrender/1.0.0-beta/jsrender.min.js"></script>
         <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/signalr/jquery.signalr-2.1.0.min.js"></script>
-        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v4.2.68/embed-js.js"></script>
+        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v5.1.55/embed-js.js"></script>
     </head>
     ```
 
@@ -31,7 +31,7 @@ Follow these steps to embed pinboard in your application.
     ```js
 
     <body>
-        <div id="pinboard-container"></div>
+        <div id="pinboard_container"></div>
     </body>
     ```
 
@@ -43,13 +43,13 @@ You can embed the pinboard using the pinboard name like in the following samples
 
 ```js
 <body onload="embedSample();">
-    <div id="pinboard-container"></div>
+    <div id="pinboard_container"></div>
     <script>
         function embedSample() {
             var boldbiEmbedInstance = BoldBI.create({
                 serverUrl: "http://localhost:51777/bi/site/site1",
                 pinboardName: "pinboardName",                
-                embedContainerId: "pinboard-container",// This should be the container id where you want to embed the pinboard.
+                embedContainerId: "pinboard_container",// This should be the container id where you want to embed the pinboard.
                 embedType: BoldBI.EmbedType.Component,
                 environment: BoldBI.Environment.Enterprise,
                 height: "800px",

@@ -45,7 +45,7 @@ After successful authentication, the NEW DATA SOURCE configuration panel opens
 1. Enter a name and description (optional) for the data source.
 2. Enter a valid Google AdSense REST API endpoint in the URL textbox. Refer the [Google AdSense API documentation](https://developers.google.com/adsense/management/v1.4/reference/) for more details.
 
-    Example: [https://www.googleapis.com/adsense/v1.4/accounts](https://www.googleapis.com/adsense/v1.4/accounts)    
+    Example: [https://developers.google.com/adsense/host/v4.1/](https://developers.google.com/adsense/host/v4.1/)    
 3. Select **GET** method for the REST API in **Method** combo box.
 4. In **Max Rows**, enter the maximum number of rows to be fetched from the Google AdSense data source. This value is used to fetch the data from Google AdSense data source via pagination.
 5. Choose a time interval for **Refresh Settings** using the combo box, to trigger the Rest API request periodically to keep the data in sync with our dashboard.  
@@ -83,24 +83,24 @@ Period of time before next refresh call is triggered. This will automatically tr
 
 Replace it in the URL to query a particular account details:
 
-[https://www.googleapis.com/adsense/v1.4/accounts/account_Id](https://www.googleapis.com/adsense/v1.4/accounts/account_Id)
+`https://www.googleapis.com/adsense/v1.4/accounts/<:account_Id>`
 
 ### Sample queries
 **List of all accounts**
 
-[https://www.googleapis.com/adsense/v1.4/accounts](https://www.googleapis.com/adsense/v1.4/accounts)
+`https://www.googleapis.com/adsense/v1.4/accounts`
 
 **List all *Ad Clients* in specific account**
 
-[https://www.googleapis.com/adsense/v1.4/accounts/jhgowjHGS83/adclients](https://www.googleapis.com/adsense/v1.4/accounts/jhgowjHGS83/adclients)
+`https://www.googleapis.com/adsense/v1.4/accounts/jhgowjHGS83/adclients`
 
 **List all *Payments* of specific account**
 
-[https://www.googleapis.com/adsense/v1.4/accounts/jhgowjHGS83/payments](https://www.googleapis.com/adsense/v1.4/accounts/jhgowjHGS83/payments)
+`https://www.googleapis.com/adsense/v1.4/accounts/jhgowjHGS83/payments`
 
 **List all *saved reports* in specific account**
 
-[https://www.googleapis.com/adsense/v1.4/accounts/jhgowjHGS83/reports/saved](https://www.googleapis.com/adsense/v1.4/accounts/jhgowjHGS83/reports/saved)
+`https://www.googleapis.com/adsense/v1.4/accounts/jhgowjHGS83/reports/saved`
 
 ### Preview and data import
 * Click **Preview & Connect** to connect with the configurations set.

@@ -156,18 +156,40 @@ The administrator can change the user's password from Tenant management site as 
 
 2. Click `Users` option to manage the users.
 
-   ![Goto users in sites](/static/assets/embedded/managing-resources/manage-users/images/goto-users-in-sites.png#width=40%)
-
    ![Manage Users List](/static/assets/embedded/managing-resources/manage-users/images/manage-users-list.png)
 
 3. Click Name of the user to change the password. Click update button once the password entered.
 
-   ![Goto name of the user](/static/assets/embedded/managing-resources/manage-users/images/goto-name-of-the-user.png#width=65%)
+   ![Goto name of the user](/static/assets/embedded/managing-resources/manage-users/images/goto-name-of-the-user.png)
 
-   ![Change Password](/static/assets/embedded/managing-resources/manage-users/images/change-the-password.png#width=65%)
+   ![Change Password](/static/assets/embedded/managing-resources/manage-users/images/change-the-password.png)
 
 ## Manage permissions
-Check the [Manage Permissions](/embedded-bi/working-with-dashboards/share-dashboards/manage-permissions/) section to learn how to manage permissions to an user.
+
+`Manage Permissions` page for the user can be accessed from any one of the following pages.
+
+1. Click `Actions` in the user management grid context menu and select the `Manage Permissions` option.
+![Manage Permissions](/static/assets/embedded/images/Manage-permissions-user-context.png)
+
+2. Click the user's name on the user listing page to navigate to the user profile page, and then click `Manage Permissions` on the user profile page.
+![Manage Permissions Edit](/static/assets/embedded/images/manage-permission-user-edit.png)
+
+In the manage permissions grid, you can find the permissions assigned directly to the user and the permissions that the user inherited from the groups assigned.
+
+![Manage Permissions](/static/assets/embedded/images/manage-permission-user.png)
+
+Click `Add Permission` to add permissions to the user.
+
+![Add Permission](/static/assets/embedded/working-with-dashboards/share-dashboards/images/add-permission-user.png)
+
+### Steps to add permission to the user
+
+1. Select the entity.
+2. Select the scope if the entity is not of the `All Resource` or `All Settings` item type.
+3. Select the access mode.
+4. Click `Add` to add the framed permission to the user.
+
+You can also select multiple scopes and entities to assign multiple permissions. Please visit [Manage Permissions](/embedded-bi/manage-permissions/) for more information on how to add and manage permissions.
 	
 ## Assign users to group
 * Users can be assigned to one or many groups from the user management page.

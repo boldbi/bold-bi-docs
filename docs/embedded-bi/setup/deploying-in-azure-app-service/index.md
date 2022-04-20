@@ -18,4 +18,6 @@ Here, you can explore the deployment of Enterprise Bold BI in Azure App service 
 
 [Deploy Bold BI Azure web app using the ARM template](/embedded-bi/setup/deploying-in-azure-app-service/using-arm-template/)
 
+[Install Client libraries](/embedded-bi/setup/deploying-in-azure-app-service/install-client-libraries/)
+
 [Upgrade to latest version](/embedded-bi/setup/deploying-in-azure-app-service/upgrade/)

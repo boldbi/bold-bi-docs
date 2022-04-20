@@ -59,5 +59,3 @@ The following are the frequently asked questions in Bold BI Cloud :
 [How to execute R language scripts using MS SQL data source in Bold BI](/cloud-bi/faq/how-to-execute-r-language-scripts-using-ms-sql-datasource-in-bold-bi/)
 
 [How to group the data using Bold BI](/cloud-bi/faq/how-to-group-the-data-using-bold-bi/)
-
-[How to publish modified data source from one tenant to another?](/cloud-bi/faq/how-to-publish-modified-data-source-from-one-tenant-to-another/)

@@ -26,7 +26,7 @@ documentation: ug
 
    `Edit` option will listed in the menu list.
    
-   ![Edit option](/static/assets/embedded/working-with-dashboards/images/editoption.png)
+   ![Edit option](/static/assets/embedded/working-with-dashboards/images/editoption.png#width=60%)
 
    Selected Dashboard will be opened in the designer as shown below
 

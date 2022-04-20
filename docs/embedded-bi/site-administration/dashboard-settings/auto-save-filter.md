@@ -37,8 +37,6 @@ The administrator can control the auto-save filters of the dashboard globally us
 
 ## User control over auto-save filters
 
-The user can control the auto-save filters of the dashboards using the Dashboard Settings in the user profile page. If the administrator has restricted, then the user cannot control the action of saving the filters applied to the dashboard.
-
-![Auto save filter disabled](/static/assets/embedded/site-administration/images/auto-save-disabled.png)
+The user can control the auto-save filters of the dashboards using the Dashboard Settings on the user profile page. If the administrator has restricted the option, then the user cannot control the action of saving the filters applied to the dashboard. For more details, Please visit [here](/embedded-bi/managing-resources/user-profile/#dashboard-settings)
 
 > **NOTE:** If a dashboard has default views, it will not be rendered with the last applied filter in the dashboard. Hence, `Default Views` must be disabled in the Dashboard Settings page.

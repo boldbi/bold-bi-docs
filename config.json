@@ -36,9 +36,11 @@
     "kissmetrics",
 	"quickbase",
 	"zuora",
+    "yelp",
     "microsoft",
     "dynamics",
     "crm",
+    "avochato",
     "pipedrive",
     "salesforce",
     "reports",
@@ -244,6 +246,9 @@
     "v4.2.68",
     "offline",
 	"jdbc",
-	"sparksql"
+	"sparksql",
+	"get",
+	"datasource",
+	"url"
 	]
 }

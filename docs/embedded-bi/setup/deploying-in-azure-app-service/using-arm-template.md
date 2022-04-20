@@ -26,7 +26,7 @@ documentation: ug
 
     ![Choose own template editor](/static/assets/embedded/setup/images/choose-own-template-editor.png)
 
-6. [Click here](https://raw.githubusercontent.com/boldbi/azure-arm-template/master/armtemplates/v4.2.69/BoldBIAppServiceTemplate.json) to download the ARM template file.
+6. [Click here](https://raw.githubusercontent.com/boldbi/azure-arm-template/master/armtemplates/v5.1.55/BoldBIAppServiceTemplate.json) to download the ARM template file.
 
 7. Copy all the contents in the template file and replace them in the **Edit template** window. Then click **save**.
 
@@ -59,5 +59,6 @@ documentation: ug
     [Scale out an app in Azure App Service](https://docs.microsoft.com/en-us/azure/monitoring-and-diagnostics/insights-how-to-scale)
 
 ## Next step
+* [**Install Client libraries**](/embedded-bi/setup/deploying-in-azure-app-service/install-client-libraries/)
 
 * [**Application Startup**](/embedded-bi/application-startup/)

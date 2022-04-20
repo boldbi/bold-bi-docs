@@ -36,3 +36,5 @@ You can explore the managing dashboards in detail here,
 [Advanced Dashboard Security](/embedded-bi/managing-resources/manage-dashboards/advanced-dashboard-security/)
 
 [Publish Dashboards](/embedded-bi/managing-resources/manage-dashboards/publish-dashboards/)
+
+[Unlisted Dashboards](/embedded-bi/managing-resources/manage-dashboards/unlisted-dashboards/)

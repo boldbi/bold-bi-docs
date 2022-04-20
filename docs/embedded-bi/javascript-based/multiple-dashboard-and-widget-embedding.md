@@ -21,7 +21,7 @@ Follow these steps to embed multiple dashboards and widgets in your application.
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jsrender/1.0.0-beta/jsrender.min.js"></script>
         <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/signalr/jquery.signalr-2.1.0.min.js"></script>
-        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v4.2.68/embed-js.js"></script>
+        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v5.1.55/embed-js.js"></script>
     </head>
     ```
 
@@ -29,9 +29,9 @@ Follow these steps to embed multiple dashboards and widgets in your application.
 
     ```js
     <body>
-        <div id="dashboard-container"></div>
-        <div id="widget1-container"></div>
-        <div id="widget2-container"></div>
+        <div id="dashboard_container"></div>
+        <div id="widget1_container"></div>
+        <div id="widget2_container"></div>
     </body>
     ```
 
@@ -39,13 +39,13 @@ Follow these steps to embed multiple dashboards and widgets in your application.
 
 ```js
 <body onload="embedSample();">
-    <div id="dashboard-container"></div>
+    <div id="dashboard_container"></div>
     <script>
         function embedSample() {
             var dashboardInstance = BoldBI.create({
                 serverUrl: "http://localhost:51777/bi/site/site1",
                 dashboardPath: "/Sales/Sales Analysis Dashboard",               
-                embedContainerId: "dashboard-container",
+                embedContainerId: "dashboard_container",
                 embedType: BoldBI.EmbedType.Component,
                 environment: BoldBI.Environment.Enterprise,
                 mode: BoldBI.Mode.View,
@@ -61,7 +61,7 @@ Follow these steps to embed multiple dashboards and widgets in your application.
             var widget1Instance = BoldBI.create({
                 serverUrl: "http://localhost:51777/bi/site/site1",
                 dashboardPath: "/Sales/Sales Analysis Dashboard",               
-                embedContainerId: "widget1-container",
+                embedContainerId: "widget1_container",
                 embedType: BoldBI.EmbedType.Component,
                 environment: BoldBI.Environment.Enterprise,
                 mode: BoldBI.Mode.View,
@@ -77,7 +77,7 @@ Follow these steps to embed multiple dashboards and widgets in your application.
             var widget2Instance = BoldBI.create({
                 serverUrl: "http://localhost:51777/bi/site/site1",
                 dashboardPath: "/Sales/Sales Analysis Dashboard",               
-                embedContainerId: "widget2-container",
+                embedContainerId: "widget2_container",
                 embedType: BoldBI.EmbedType.Component,
                 environment: BoldBI.Environment.Enterprise,
                 mode: BoldBI.Mode.View,
