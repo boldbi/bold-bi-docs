@@ -12,25 +12,31 @@ This section explains how to upgrade Bold BI Linux package from any version to t
 
 1. Register and download the latest Bold BI Linux package from [here](/embedded-bi/setup/overview/#registration-and-download).
 
-2. Download the latest Bold BI Linux package by running the following command.
+2. Install `pv` tool by running the following command.
+
+    ~~~shell
+    sudo yum -y install pv
+    ~~~ 
+
+3. Download the latest Bold BI Linux package by running the following command.
 
     ~~~shell
     sudo wget {Bold BI Linux package link}
     ~~~
 
-3. Extract the zip file.
+4. Extract the zip file.
 
     ~~~shell
     sudo unzip {Bold BI Linux package zip file}
     ~~~ 
 
-4. Change the directory to `BoldBIEnterpriseEdition-Linux` by running the following command. 
+5. Change the directory to `BoldBIEnterpriseEdition-Linux` by running the following command. 
 
     ~~~shell
     cd BoldBIEnterpriseEdition-Linux
     ~~~ 
  
-5. Execute the following command to deploy Bold BI in your Linux machine. 
+6. Execute the following command to deploy Bold BI in your Linux machine. 
  
     ~~~shell
     sudo bash install-boldbi.sh -i {upgrade} -u {user} -h {host URL}
@@ -49,9 +55,9 @@ This section explains how to upgrade Bold BI Linux package from any version to t
     sudo bash install-boldbi.sh -i upgrade -u www-data -h http://linux.example.com
     ~~~ 
 
-6. Refer to this [link](/embedded-bi/setup/deploying-in-linux/install-optional-libraries/) and install the optional client libraries, after the installation completed.
+7. Refer to this [link](/embedded-bi/setup/deploying-in-linux/install-optional-libraries/) and install the optional client libraries, after the installation completed.
 
-7. Now, you can open the host URL in the browser and use the latest features of Bold BI.
+8. Now, you can open the host URL in the browser and use the latest features of Bold BI.
 
 >**NOTE:** Bold BI Linux package backup file will be available in the following location.
 `/var/www/`

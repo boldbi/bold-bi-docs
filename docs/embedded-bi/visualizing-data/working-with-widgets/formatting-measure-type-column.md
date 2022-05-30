@@ -23,6 +23,20 @@ The value display format can be defined by the representation. For example, by s
 
 ![Representation](/static/assets/embedded/visualizing-data/working-with-widgets/images/formattingmeasuretypecolumn_representation.PNG)
 
+**Lakhs and Crores support**
+
+Cultures from countries including India, Pakistan, Bangladesh, and Nepal have Lakhs and Crores support. For example, the value of 1,00,000 is displayed as 1L.
+
+![Lakhs Selection](/static/assets/embedded/visualizing-data/working-with-widgets/images/lakhs-selection.png#max-width=50%)
+
+![Lakhs in widget](/static/assets/embedded/visualizing-data/working-with-widgets/images/lakhs-reflected-in-grid.png#max-width=50%)
+
+When support culture is selected, there will be a checkbox that is needed to enable lakhs and crores along with auto representation. This helps in handling existing value.
+
+![Auto represenation checkbox](/static/assets/embedded/visualizing-data/working-with-widgets/images/lakhsandcrores-auto-representation.png#max-width=50%)
+
+![Auto enable Lakhs and Crores](/static/assets/embedded/visualizing-data/working-with-widgets/images/auto-enable-lakhsandcrores.png#max-width=50%)
+
 **Decimal places**
 
 You can set the decimal places explicitly when the representation is set with options other than `Auto`.

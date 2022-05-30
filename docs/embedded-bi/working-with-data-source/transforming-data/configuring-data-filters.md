@@ -75,13 +75,13 @@ documentation: ug
    
    ![Example date time column](/static/assets/embedded/working-with-datasource/images/examplefordatetimecolumn.png)
 
-   Add more than one condition if you prefer, through clicking the `Add` button.
+   To add more than one condition, click the `Add` button.
 
-   ![Selected filters condition](/static/assets/embedded/working-with-datasource/images/selectedfilterscondition.PNG)
+   ![Selected filters condition](/static/assets/embedded/working-with-datasource/images/selectedfilterscondition.PNG#max-width=100%)
 
-   > **NOTE:**  By default, AND operation will be handled in between two conditions. You cannot change the operation between two conditions.
+   > **NOTE:**  By default, AND operation will be handled in between two conditions. The operator can be changed to OR operation if needed.
 
-   Click `OK` to save the defined data filter conditions.
+   Click `OK` to save defined data filter conditions.
 
    Click `Close` button or the Close icon at top right corner of the window to close the Filters window.
    

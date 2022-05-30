@@ -31,6 +31,14 @@ documentation: ug
    Click `Export`, to display the current view of the widget in the chosen image format with applied settings.
    
    ![Reset](/static/assets/embedded/working-with-dashboards/preview-dashboards/widget-settings/images/WidgetImageReset.png)
+
+   After clicking `Export`, request notification pop-up will be shown as follows.
+   
+   ![Export-message](/static/assets/embedded/working-with-dashboards/preview-dashboards/widget-settings/images/export-msg1.PNG#max-width=95%)
+
+   After dashboard or widgets have been exported, success notification pop-up will be shown with an included link to manually download files.
+ 
+   ![Export-downloaded-file-message](/static/assets/embedded/working-with-dashboards/preview-dashboards/widget-settings/images/exportdownload.PNG#max-width=95%)
    
    Click `Reset` to restore the default values in the pop-up.
    
@@ -61,6 +69,14 @@ documentation: ug
    Click `Export` to display the data in the widget in PDF file format.
    
    ![PDF export](/static/assets/embedded/working-with-dashboards/preview-dashboards/widget-settings/images/widgetPDFExport.png)
+
+   After clicking `Export`, request notification pop-up will be shown as follows.
+   
+   ![Export-message](/static/assets/embedded/working-with-dashboards/preview-dashboards/widget-settings/images/export-msg1.PNG#max-width=95%)
+   
+   After dashboard or widgets have been exported, success notification pop-up will be shown with an included link to manually download files.
+ 
+   ![Export-downloaded-pdf-file-message](/static/assets/embedded/working-with-dashboards/preview-dashboards/widget-settings/images/exportpdfdownload.PNG#max-width=95%)
    
    Click `Reset` to restore the default values in the pop-up.
    
@@ -75,6 +91,14 @@ documentation: ug
    Set the `File Name` and click `Export` to display the data in the widget in CSV file format.
 
    ![CSV Export](/static/assets/embedded/working-with-dashboards/preview-dashboards/widget-settings/images/csvfilename.png)
+
+   After clicking `Export`, request notification pop-up will be shown as follows.
+   
+   ![Export-message](/static/assets/embedded/working-with-dashboards/preview-dashboards/widget-settings/images/export-msg1.PNG#max-width=95%)
+   
+   After dashboard or widgets have been exported, success notification pop-up will be shown with an included link to manually download files.
+
+   ![Export-downloaded-csv-file-message](/static/assets/embedded/working-with-dashboards/preview-dashboards/widget-settings/images/export-csv-download.PNG#max-width=95%)
 
    Click `Reset` to restore the default values in the pop-up.
    
@@ -97,6 +121,14 @@ documentation: ug
    ![Excel export](/static/assets/embedded/working-with-dashboards/preview-dashboards/widget-settings/images/widgetExcelExport.png)
    
    Click `Export` to display the data in the widget in the Excel format.
+
+   After clicking `Export`, request notification pop-up will be shown as follows.
+   
+   ![Export-message](/static/assets/embedded/working-with-dashboards/preview-dashboards/widget-settings/images/export-msg1.PNG#max-width=95%) 
+ 
+   After dashboard or widgets have been exported, success notification pop-up will be shown with an included link to manually download files.
+
+   ![Export-downloaded-excel-file-message](/static/assets/embedded/working-with-dashboards/preview-dashboards/widget-settings/images/export-xlsx-download.PNG#max-width=95%)
    
    ![Excel reset](/static/assets/embedded/working-with-dashboards/preview-dashboards/widget-settings/images/widgetExcelReset.png)
    

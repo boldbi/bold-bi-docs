@@ -25,6 +25,7 @@
     "gizmo",
     "freshsales",
 	"freshwork",
+	"instagram",
 	"crm",
     "infusionsoft",
 	"live-web",
@@ -249,6 +250,8 @@
 	"sparksql",
 	"get",
 	"datasource",
-	"url"
+	"url",
+	"v5",
+	"dmz"
 	]
 }

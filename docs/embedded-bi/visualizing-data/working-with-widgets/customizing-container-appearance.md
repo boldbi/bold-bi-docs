@@ -89,5 +89,35 @@ To learn more about viewing the underlying widget data, refer to [view data docu
 
 ![View data option](/static/assets/embedded/visualizing-data/working-with-widgets/images/ContainerAppearance6.png)
 
+## Widgets No data appearance properties
+The `No Data Appearance` properties section contains the properties for displaying messages when we receive no data from the database in widgets and allows you to customize the no data container alert message, and text color, and provides options to enable/disable the visibility of alert icon.
+
+![No Data Container](/static/assets/embedded/visualizing-data/working-with-widgets/images/nodata-container.png#max-width=76%)
+
+### Hide icon
+This property allows you to toggle the visibility of no data alert icon in the widget.
+
+![Hide icon](/static/assets/embedded/visualizing-data/working-with-widgets/images/nodata-container-hideicon.png#max-width=74%)
+
+### Text
+This property allows you to customize no data alert message for the widget.
+
+![Text](/static/assets/embedded/visualizing-data/working-with-widgets/images/nodata-container-text.png)
+
+### Text Color
+This property allows you to apply Text color to the widget alert message.
+
+![Text color](/static/assets/embedded/visualizing-data/working-with-widgets/images/nodata-container-textcolor.png)
+
+### Show Default image
+This allows you to toggle the visibility of default image to the widget.
+
+![Default image](/static/assets/embedded/visualizing-data/working-with-widgets/images/nodata-container-default-image.png)
+
+### Transparency
+This allows you to apply `transparency` for default image to the widget.
+
+![Transparency](/static/assets/embedded/visualizing-data/working-with-widgets/images/nodata-container-transparency.png)
+
 
 

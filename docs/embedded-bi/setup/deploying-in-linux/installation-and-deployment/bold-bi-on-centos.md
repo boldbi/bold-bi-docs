@@ -17,12 +17,6 @@ documentation: ug
     ~~~shell
     sudo yum install libgdiplus 
     ~~~ 
-	
-3. Install `pv` tool by running below command.
-
-    ~~~shell
-    sudo yum -y install pv
-    ~~~ 
 
 3. Install `pv` tool by running below command.
 

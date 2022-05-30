@@ -104,6 +104,7 @@ The Bold BI supports the following data connection types such that the structure
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/buffer/"> Buffer</a>
 			<br> <a href="/embedded-bi/working-with-data-source/data-connectors/facebook/"> Facebook</a>
 			<br> <a href="/embedded-bi/working-with-data-source/data-connectors/facebook-ads/"> Facebook Ads</a>
+			<br> <a href="/embedded-bi/working-with-data-source/data-connectors/instagram/"> Instagram</a>
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/linkedin/"> LinkedIn</a>
 			<br> <a href="/embedded-bi/working-with-data-source/data-connectors/sendible/"> Sendible</a> 
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/youtube/"> YouTube </a>

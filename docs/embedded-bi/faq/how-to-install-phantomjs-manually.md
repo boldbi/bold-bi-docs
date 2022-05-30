@@ -6,7 +6,7 @@ platform: bold-bi
 documentation: ug
 ---
 
-# How to deploy PhantomJS WebKit manually in Bold BI version below 5.1.55?
+# How to deploy PhantomJS WebKit manually in Bold BI?
 PhantomJS is a headless WebKit 	script able with JavaScript. It is a free software/open source that may contain MIT, BSD, LGPL or GPL, or other similar licenses It contains third-party code. This executable file is necessary to achieve Image and PDF export functionalities in dashboard, widgets and schedules. Without this, the Image and PDF export options in dashboard, widgets and schedules no longer available. It is your decision if you choose to download Phantom JS, but you must accept all of their terms and conditions if you want to use it with Syncfusion’s products.
 
 To download and install the PhantomJS application on your machine, you must accept the terms of the [LICENSE](https://github.com/ariya/phantomjs/blob/master/LICENSE.BSD) and [Third-Party](https://github.com/ariya/phantomjs/blob/master/third-party.txt) documents. Then, you can download PhantomJS for [Windows](http://bitbucket.org/ariya/phantomjs/downloads/phantomjs-2.1.1-windows.zip), [Linux](https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-2.1.1-linux-x86_64.tar.bz2) and [Azure App Service](http://bitbucket.org/ariya/phantomjs/downloads/phantomjs-2.0.0-windows.zip).
@@ -26,4 +26,4 @@ Once the download is completed, extract the zip file and then copy the PhantomJS
 | Below 4.1.36              | **`{Deployed Location}`**\Dashboard Designer              |
 | 4.1.36 or above           | **`{Deployed Location}`**\app_data\bi\dataservice         |
 
-> **NOTE:** If you use Bold BI version above 4.2.69, install [chromium](https://help.boldbi.com/embedded-bi/faq/how-to-install-chromium-packages-manually/) package instead of the PhantomJS.
+> **NOTE:** If you use Bold BI version above 4.2, install [chromium](https://help.boldbi.com/embedded-bi/faq/how-to-install-chromium-packages-manually/) package instead of the PhantomJS.

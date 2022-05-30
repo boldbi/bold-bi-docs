@@ -38,6 +38,12 @@ Min</td><td>
 Returns the lowest value for all members.</td></tr>
 <tr>
 <td>
+<tr>
+<td>
+Median</td><td>
+Returns the Middle value for all members.</td></tr>
+<tr>
+<td>
 Var</td><td>
 Calculates the variance of all members.</td></tr>
 <tr>

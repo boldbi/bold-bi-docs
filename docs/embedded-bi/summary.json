@@ -41,8 +41,11 @@
           "Configure Apache Server In Ubuntu": "configure-apache-server-in-ubuntu"
 
         },
-        "Install Optional Libraries": "install-optional-libraries.md",
-        "Install optional libraries for version 4.1 or older":"install-optional-libraries-for-v4.1-or-older.md",
+        "Install Optional Libraries": {
+		  "v5.1 or Above": "v5.1-or-above",
+		  "v4.2": "v4.2",
+		  "v4.1 or Older": "v4.1-or-older"
+		}, 
         "Upgrading Bold BI Linux Server": "upgrade-to-latest"
       },
       "Deploying in Kubernetes": "deploying-in-kubernetes",
@@ -123,6 +126,10 @@
       "Creating a New Data Source": "creating-a-new-data-source.md",
 	  "Query Processing Modes": "classification-of-data-sources-queried-directly-and-extracted",
 	  "Bold BI Intermediate Database": "bold-bi-intermediate-database",
+	  "Custom Connector": {
+        "Configure Custom Connector": "configure-custom-connector",
+        "Create Custom Connector": "create-custom-connector"
+      },
       "Data Connectors": {
         "42matters": "42matters",
         "ActiveCampaign": "activecampaign",
@@ -190,6 +197,7 @@
         "Infusionsoft": "infusionsoft",
         "Insightly": "insightly",
         "Intervals": "intervals",
+		"Instagram": "instagram",
         "JIRA": "jira",
         "Keen": "keen",
         "Kissmetrics": "kissmetrics",
@@ -329,6 +337,7 @@
         "Period Over Period": "period-over-period",
         "Image": "image",
         "Text": "text",
+         "Tab Widget": "tab-widget",
         "Custom Widget": {
 		  "v4.2.68 or later": "v4.2.68-or-later",
 		  "v4.1.36 or below": "v4.1.36-or-below"
@@ -350,6 +359,8 @@
         "Forecasting": "forecasting",
         "Trendlines": "chart-trendlines",
         "Gridlines": "chart-gridlines",
+        "Custom and Auto Hierarchy": "custom-and-auto-hierarchy",
+        "Custom Date Format": "custom-date-format",
         "Widget Actions": "widget-action"
       }
     },
@@ -614,12 +625,19 @@
       "How to pass a parameter to Web API connector when view and embedding a dashboard": "how-to-pass-a-parameter-to-web-api-connector-when-view-and-embedding-a-dashboard",
 	  "How to get offline unlock key?" : "how-to-get-offline-unlock-key",
 	  "How to update SSL certificate in Kubernetes secret of Bold BI site?":"how-to-update-ssl-certificate-in-kubernetes-secret-of-bold-bi-site",
-    "How to view first seven days of each month in dashboard":"how-to-view-first-7-days-data-of-each-month-in-dashboard",
+    "How to view first 7 days data of each month in dashboard":"how-to-view-first-7-days-data-of-each-month-in-dashboard",
     "How to deploy Bold BI as Offline deployment in Docker" : "how-to-deploy-boldbi-as-offline-deployment-in-docker",
+    "How to use Median aggregation in Bold BI" : "how-to-use-median-aggregation-in-bold-bi",
     "How to configure SSL for Bold BI Enterprise Edition" : "how-to-configure-ssl-for-bold-bi-enterprise-edition",
     "How to show a detailed view of a widget in JavaScript":"how-to-show-a-detailed-view-of-a-widget-in-javascript",
-    "How to show a detailed view of a widget in JavaScript":"how-to-show-a-detailed-view-of-a-widget-in-javascript",
-    "How to publish modified data source from one tenant to another": "how-to-publish-modified-data-source-from-one-tenant-to-another"
+    "How to publish modified data source from one tenant to another": "how-to-publish-modified-data-source-from-one-tenant-to-another",
+    "Working with custom query extract mode in Bold BI":"working-with-custom-query-extract-mode-in-bold-bi", 
+    "How to configure Relative date filter based on minutes":"how-to-configure-relative-date-filter-based-on-minutes",
+	"How to Configure Bold BI with reverse proxy server in the DMZ environment in Windows.":"how-to-configure-the-bold-bi-with-reverse-proxy-server-the-dmz-in-windows",
+	"How to Configure Bold BI with reverse proxy server in the DMZ environment in Linux.":"how-to-configure-the-bold-bi-with-reverse-proxy-server-in-the-dmz-in-linux",
+  "How the dashboard user can modify the input value of a parameter in view mode":"how-the-dashboard-user-can-modify-the-input-value-of-a-parameter-in-view-mode",
+  "How to authenticate Google Analytics for Bold BI":"how-to-authenticate-google-analytics-for-bold-bi",
+  "What will happen during multiple users are editing the same dashboard or data source at the same time":"what-will-happen-during-multiple-users-are-editing-the-same-dashboard-or-data-source-at-the-same-time"
     }
   }
 }
