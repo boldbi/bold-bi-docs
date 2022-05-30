@@ -66,8 +66,13 @@ For the user **Christ** , has the custom attribute value is configured as **Sect
 ![Use custom attribute for user Christ](/static/assets/embedded/working-with-datasource/custom-attribute/images/custom-attribute-user-Christ.png#width=50%)
 
 ## Uses of custom attribute
+The custom attribute can be used in the following areas:
 
-The custom attribute can be used only in the custom query. It can be used in the query by manually providing the required custom attribute name in code view using the syntax.
+1. Custom Query.
+2. Web Connection window.
+
+### 1. Custom Query
+The custom attribute can be used in custom query by manually providing the required custom attribute name in code view using syntax.
 
 Syntax: `${{:AttributeName}}`
 
@@ -83,4 +88,24 @@ For **Christ**, the data is retrieved based on the condition for the column `Sec
 
 ![Sample Dashboard for user Christ](/static/assets/embedded/working-with-datasource/custom-attribute/images/custom-attribute-sample-dashboard-Christ.png)
 
+### 2. Web Connection window
+The custom attribute can be used in web connection window in the following sections:
 
+1. URL.
+2. Header(s).
+3. Parameter(s).
+4. Raw.
+5. User Name.
+6. Password.
+
+Use the following syntax for the custom attribute.
+
+Syntax: `${{:AttributeName}}`
+
+![Use custom attribute in web connection](/static/assets/embedded/working-with-datasource/custom-attribute/images/set-custom-attribute.png#max-width=52%)
+
+![Use custom attribute in web connection](/static/assets/embedded/working-with-datasource/custom-attribute/images/web-connection-custom-attribute.PNG#max-width=52%)
+
+When simple dashboard is created here, data is retrieved based on the condition for column `id` as given in the custom attribute sectors.
+
+![Use custom attribute in widget](/static/assets/embedded/working-with-datasource/custom-attribute/images/widget-custom-attribute.PNG)

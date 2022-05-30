@@ -82,3 +82,5 @@ You can explore the available widgets in detail here,
 [Image](/embedded-bi/visualizing-data/visualization-widgets/image/)
 
 [Text](/embedded-bi/visualizing-data/visualization-widgets/text/)
+
+[Tab Widget](/embedded-bi/visualizing-data/visualization-widgets/tab-widget/)

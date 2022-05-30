@@ -111,4 +111,15 @@ On opening the linked document with the above dimensions, it will open as show i
 
 ![Advanced window](/static/assets/embedded/visualizing-data/working-with-widgets/images/LinkingAdvancedWindow.png)
 
+## Encryption query Parameter
+This property `Encrypt Parameters` allows you to encrypt the filter parameter that will be used in the URL text area under `Link` category in the `Properties` tab of the widget.
 
+To enable this property, select `Encrypt Parameters` checkbox in the following image.
+
+![Advanced window](/static/assets/embedded/visualizing-data/working-with-widgets/images/encryption-parameter.png#max-width=50%)
+
+Preview the dashboard, then click `Link` option from widget. After opening the linked dashboard, it will open as shown in following image.
+
+![Advanced window](/static/assets/embedded/visualizing-data/working-with-widgets/images/linking-encryption.png#max-width=100%)
+
+![Advanced window](/static/assets/embedded/visualizing-data/working-with-widgets/images/encryption-result.png#max-width=100%)

@@ -38,6 +38,10 @@ You can explore the available features in detail here,
 
 [Forecasting](/embedded-bi/visualizing-data/working-with-widgets/forecasting/)
 
+[Custom and Auto Hierarchy](/embedded-bi/visualizing-data/working-with-widgets/custom-and-auto-hierarchy/)
+
+[Custom Date](/embedded-bi/visualizing-data/working-with-widgets/custom-date-format/)
+
 [Trendlines](/embedded-bi/visualizing-data/working-with-widgets/chart-trendlines/)
 
 [Gridlines](/embedded-bi/visualizing-data/working-with-widgets/chart-gridlines/)

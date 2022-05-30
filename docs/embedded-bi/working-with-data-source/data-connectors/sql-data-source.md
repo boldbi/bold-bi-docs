@@ -84,8 +84,10 @@ To connect the SQL server database in [extract](/embedded-bi/working-with-data-s
 5. Choose a relevant time interval from **Refresh Settings** dropdown menu for refreshing the data source periodically. Refer [Refresh Settings](/embedded-bi/working-with-data-source/data-connectors/sql-data-source/#sql-data-source-refresh-settings) to learn more.  
 ![Connect data source in Extract mode](/static/assets/embedded/working-with-datasource/data-connectors/images/SQLDataSource/connect-ds-in-extract.png)
 
-6. Click **Connect**, the Choose Table(s) dialog will open, select the required tables to be extracted from the Microsoft SQL server from the dialog.  
-![Choose Tables](/static/assets/embedded/working-with-datasource/data-connectors/images/SQLDataSource/Choose-Tables.png)
+6. Click **Connect** Extract Data dialog opens. This dialog has two modes of connection either via Table or [Custom query](/embedded-bi/faq/working-with-custom-query-extract-mode-in-bold-bi/).
+    * Under custom query option, write the required query and click **Connect**.
+	* Under the Table option, This dialog displays list of tables and views in treeview. Select the required table(s) or view(s) from treeview to use in the designer.
+![Preview](/static/assets/embedded/working-with-datasource/data-connectors/images/common/Preview_Extract.png#max-width=100%)
 
 7. The incremental refresh settings configuration pane is used to configure the selected table to perform [Full Load](/embedded-bi/working-with-data-source/data-connectors/sql-data-source/#full-load) or [Incremental Update](/embedded-bi/working-with-data-source/data-connectors/sql-data-source/#incremental-update) based on refresh time interval configured in Step 5.  
 

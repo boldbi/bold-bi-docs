@@ -131,7 +131,7 @@ The following are the frequently asked questions in Bold BI Enterprise:
 
 [How to update SSL certificate in the Kubernetes secret of Bold BI site](/embedded-bi/faq/how-to-update-ssl-certificate-in-kubernetes-secret-of-bold-bi-site/)
 
-[How to view first seven days of each month in dashboard](/embedded-bi/faq/how-to-view-first-7-days-data-of-each-month-in-dashboard)
+[How to view first 7 days data of each month in dashboard](/embedded-bi/faq/how-to-view-first-7-days-data-of-each-month-in-dashboard)
 
 [How to deploy Bold BI as Offline deployment in Docker](/embedded-bi/faq/how-to-deploy-boldbi-as-offline-deployment-in-docker/)
 
@@ -139,5 +139,19 @@ The following are the frequently asked questions in Bold BI Enterprise:
 
 [How to show a detailed view of a widget in JavaScript](/embedded-bi/faq/how-to-show-a-detailed-view-of-a-widget-in-javascript/)
 
-[How to publish modified data source from one tenant to another?](/embedded-bi/faq/how-to-publish-modified-data-source-from-one-tenant-to-another/)
+[How to use Median aggregation in Bold BI](/embedded-bi/faq/how-to-use-median-aggregation-in-bold-bi/)
 
+[How to publish modified data source from one tenant to another?](/embedded-bi/faq/how-to-publish-modified-data-source-from-one-tenant-to-another/)
+[Working with custom query extract mode in Bold BI](/embedded-bi/faq/working-with-custom-query-extract-mode-in-bold-bi/)
+
+[How to configure Relative date filter based on minutes](/embedded-bi/faq/how-to-configure-relative-date-filter-based-on-minutes/)
+
+[How to Configure Bold BI with reverse proxy server in DMZ the environment in Windows](/embedded-bi/faq/how-to-configure-the-bold-bi-with-reverse-proxy-server-the-dmz-in-windows/)
+
+[How to Configure Bold BI with reverse proxy server in DMZ the environment in Linux](/embedded-bi/faq/how-to-configure-the-bold-bi-with-reverse-proxy-server-in-the-dmz-in-linux/)
+
+[How the dashboard user can modify the input value of a parameter in view mode](/embedded-bi/faq/how-the-dashboard-user-can-modify-the-input-value-of-a-parameter-in-view-mode)
+
+[How to authenticate Google Analytics for Bold BI](/embedded-bi/faq/how-to-authenticate-google-analytics-for-bold-bi/)
+
+[What will happen during multiple users are editing the same dashboard or data source at the same time](/embedded-bi/faq/what-will-happen-during-multiple-users-are-editing-the-same-dashboard-or-data-source-at-the-same-time)

@@ -42,13 +42,17 @@ To bind data to a widget, minimum of one data source is required.  Follow these 
 
    ![Tree view expand](/static/assets/embedded/working-with-datasource/images/treeviewexpand.png)
 
-7. Click Update button or enable Toggle Option to show the data Preview data. When toggle button is in Disable state, you need click Update button every time for preview data for each and every action.
+7. In data design view, we have `SEARCH` option. You can choose the desired tables/views/stored procedure using the `SEARCH` option as follows.
 
-    ![Tree view expand](/static/assets/embedded/working-with-datasource/images/toggleoption.png)
+   ![Tree view expand](/static/assets/embedded/working-with-datasource/images/tablesearch.png#max-width=98%)
 
-8. Click `Save` button to save the data source with valid name.
+8. Click `Update` or enable `Data Preview` toggle Option to show the preview data. When toggle button is Disabled, click Update icon every time to preview data for each and every action.
 
-   ![Save](/static/assets/embedded/working-with-datasource/images/finishbutton.png)
+    ![Tree view expand](/static/assets/embedded/working-with-datasource/images/previewdata.png#max-width=97%)
+
+9. Click `Save` data source with valid name.
+
+   ![Save](/static/assets/embedded/working-with-datasource/images/datasourcesaveoption.png#max-width=97%)
 
  [Learn how to edit a data source](/embedded-bi/working-with-data-source/editing-a-data-source/)
 
