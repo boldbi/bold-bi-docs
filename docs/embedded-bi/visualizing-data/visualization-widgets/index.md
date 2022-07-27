@@ -53,6 +53,8 @@ You can explore the available widgets in detail here,
 
 [Funnel Chart](/embedded-bi/visualizing-data/visualization-widgets/funnel-chart/)
 
+[Scatter Chart](/embedded-bi/visualizing-data/visualization-widgets/scatter-chart/)
+
 [Area Chart](/embedded-bi/visualizing-data/visualization-widgets/area-chart/)
 
 [Stacked Area Chart](/embedded-bi/visualizing-data/visualization-widgets/stacked-area-chart/)
@@ -68,6 +70,8 @@ You can explore the available widgets in detail here,
 [Combination Chart](/embedded-bi/visualizing-data/visualization-widgets/combo-chart/)
 
 [List Box](/embedded-bi/visualizing-data/visualization-widgets/list-box/)
+
+[Text Filter](/embedded-bi/visualizing-data/visualization-widgets/text-filter/)
 
 [Combo Box](/embedded-bi/visualizing-data/visualization-widgets/combo-box/)
 

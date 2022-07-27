@@ -130,6 +130,10 @@ Adding Multiple data to `Row(s)` with single `Value(s)` and `Column(s)`
 
 You can drag and drop the elements to `Hidden Columns` if required. Based on the hidden column elements, the values will be shown.
 
+### Tooltip section
+
+You can configure the `tooltip` section to showcase the additional information in the widget’s tooltip without affecting the visualization. Refer to [this section](/embedded-bi/visualizing-data/working-with-widgets/tooltip-customization/) for more details on configuring the tooltip fields.
+
 ### Removing Data from Field
 
 To remove the added data from fields click the highlighted cross icon.
@@ -335,6 +339,18 @@ You can edit the field settings.
 ![pivot-grid_prop-edit-noDataItem](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/nodata.png)
 
 In the above image other than Campinas, all other cities have empty data and so it displayed as empty cells. 
+
+### Alignment Settings
+
+This allows you to align Column header, Row header and Values to either left, right, or center.
+
+![pivot-alignment-settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/pivot-alignment-settings.png)
+
+***Row Header*** - You can align row header to either left, center, or right. By default, it will be Left.
+
+***Column Header*** - You can align column header to either left, center, or right. By default, it will be Left.
+
+***Value*** - You can align Value cells to either left, center, or right. By default, it will be Right.
 
 ### Formatting
 

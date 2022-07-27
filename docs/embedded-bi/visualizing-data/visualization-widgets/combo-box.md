@@ -74,6 +74,47 @@ Define filter criteria through the `Filter(s)` menu item in the `Settings` drop 
 
 Clear the filters by selecting the `Show All Records` in the `Settings` dropdown menu.
 
+## How to configure relative dates to Combobox?
+
+Click the `Settings` icon in the dropped date value and select `Relative Dates` in the drop-down menu.
+
+![showing relative dates menu](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-box/combobox-relativedates.png)
+
+In the launched `Relative Date Options` window, configure the relative date and click Add. Repeat this process till the required set of relative dates are added.
+
+![relative date options window](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-box/relativedatefilterwindow-combobox.png)
+
+![relative dates added in window](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-box/relativedateoptionsadded-combobox.png)
+
+You can see the added relative dates in the combo box as follows.  
+
+![showing relative date options in combobox](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-box/relativedateoptions-in-combobox.png)
+
+**Note:** If Multi selection is enabled, then the applied relative dates will be removed.
+
+## How to configure custom relative dates to the Combobox?
+
+Click the `Settings` icon in the dropped date value and select `Relative Dates` in the drop-down menu.
+
+![showing relative dates menu](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-box/combobox-relativedates.png)
+
+In the launched `Relative Date Options` window, select the `Custom` option from the drop-down list.
+
+![selecting custom option in relative dates window](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-box/customoptionin-relativedatefilter-combobox.png)
+
+Choose the start and end dates you like to set as custom range, set a name for the custom range, and then click `Add.` Repeat this process till the required set of custom relative dates are added.
+
+
+![setting range for custom option](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-box/customdatelimits-relativedates-combobox.png)
+
+![custom date option is added](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-box/customdateadded-relativedates-combobox.png)
+
+You can see the added custom relative dates in the combo box as follows.
+
+![custom date option is displayed in combo box](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-box/customrelativedate-combobox.png)
+
+**Note:** If Multi selection is enabled, then the applied relative dates will be removed.
+
 ## How to format combo box?
 
 You can format the combo box for a better illustration of the view that you require through the settings available in the `Properties` tab. This pane can be opened from the design view by clicking the `Settings` icon at the top right corner of the widget.

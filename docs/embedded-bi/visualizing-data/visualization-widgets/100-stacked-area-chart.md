@@ -509,6 +509,42 @@ This allows you to enable the `Category axis` gridlines for the 100% stacked are
 
 ![Category Axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/100-stacked-area-chart/category-axis.png)
 
+### Series Palette
+
+This allows you to apply color for chart series either by using a default palette or a custom color palette. By default, the colors will be applied using the default palette. This series of settings will be visible only if you configured the row section in the chart.
+
+![Series Palette](/static/assets/embedded/visualizing-data/visualization-widgets/images/100-stacked-area-chart/series-palette.png)
+
+#### Use Default Palette
+
+This Option allows you to apply default color for chart series.
+
+By toggle off the `Use Default Palette` option, the `Color Mapping Type` will be shown.
+
+![Color Mapping option](/static/assets/embedded/visualizing-data/visualization-widgets/images/100-stacked-area-chart/color-mapping-type.png)
+
+#### Color Mapping Type
+
+Using the Color Mapping type, you can apply the colors to the series either based on data or index.
+
+![Color Mapping Type option](/static/assets/embedded/visualizing-data/visualization-widgets/images/100-stacked-area-chart/color-mapping-type-options.png)
+
+***Data***
+
+It allows you to apply color for chart series based on data. If you want to apply a specific color to specific data(i.e. Violet color for 2021, Sky Blue color for 2022, and green for 2020), you can use Data based color mapping. By default, the Color Mapping Type will be `Data`.
+
+![Color Mapping Type Data](/static/assets/embedded/visualizing-data/visualization-widgets/images/100-stacked-area-chart/data-type-color.png)
+
+***Index***
+
+It allows you to apply color for chart series based on `Index`. Such that the colors are maintained based on index even if data is changed. It shows only 15 different colors. After that, the color will be repeated from above colors.
+
+For example, If you are displaying the countries based on the increasing order of the case count, then index-based color mapping will be useful to set the colors based on the rank. Say red color to the top, then the red color will be maintained for the country having the largest case count.
+
+![Color Mapping Type Index](/static/assets/embedded/visualizing-data/visualization-widgets/images/100-stacked-area-chart/index-based-color.png)
+
+**Note:** We prefer to use Index based color customization only for minimum data(upto 15 series).
+
 ### Font settings
 
 This section allows you to customize font size of chart elements.

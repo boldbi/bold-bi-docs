@@ -255,6 +255,27 @@ This section allows you to customize the legend in the map.
 
 This allows you to toggle the visibility of legend in a map. By default, it will be enabled.
 
+#### Type
+
+It defines the legend type whether layers or marker. 
+
+* If Location Value and Location Name alone are configured without Marker Latitude and Longitude, the legend type will be Layers by default. In this case, the Type option will not be shown.
+
+![Layers Legend](/static/assets/embedded/visualizing-data/visualization-widgets/images/map/layers-legend.png)
+
+* If Marker Latitude and Longitude alone bounded with advanced customization in the map without Location Name and Value configuration, the type will be Markers by default. In this case, the Type option will not be shown.
+
+![Markers Legend](/static/assets/embedded/visualizing-data/visualization-widgets/images/map/markers-legend.png)
+
+* If both Location Value and Location Name and Marker Latitude and Longitude with advanced customization configured, the Type option will be shown in `Legend Settings section`.In this case, Legend will be shown based on legend type. In below image, the legend will be shown for Layers by default.
+
+![Legend Type](/static/assets/embedded/visualizing-data/visualization-widgets/images/map/map-legend-type.png)
+
+ For type `Markers`, legend will be shown as below.
+
+![Legend Type Marker](/static/assets/embedded/visualizing-data/visualization-widgets/images/map/map-legend-type-marker.png)
+
+
 #### Show Title
 
 This option allows you to toggle the visibility of legend title in a map.

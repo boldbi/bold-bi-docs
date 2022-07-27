@@ -66,6 +66,47 @@ You can use the filters by selecting the `Filter(s)` option. For more details, r
 
 You can clear the filters by selecting the `Show All Records` option.
 
+## How to configure relative dates to list box?
+
+Click the `Settings` icon in the dropped date value and select `Relative Dates` in the drop-down menu.
+
+![showing relative dates menu](/static/assets/embedded/visualizing-data/visualization-widgets/images/list-box/relativedates-listbox.png)
+
+In the launched `Relative Date Options` window, configure the relative date and click Add. Repeat this process till the required set of relative dates are added.
+
+![relative date options window](/static/assets/embedded/visualizing-data/visualization-widgets/images/list-box/relativedatefilterwindow-listbox.png)
+
+![relative dates added in window](/static/assets/embedded/visualizing-data/visualization-widgets/images/list-box/relativedateoptionsadded-listbox.png)
+
+You can see the added relative dates in the list box as follows,
+
+![showing relative date options in listbox](/static/assets/embedded/visualizing-data/visualization-widgets/images/list-box/relativedateoptions-in-listbox.png)
+
+**Note:** If Multi selection is enabled, then the applied relative dates will be removed.
+
+## How to configure custom relative dates to the list box?
+
+Click the `Settings` icon in the dropped date value and select `Relative Dates` in the drop-down menu.
+
+![showing relative dates menu](/static/assets/embedded/visualizing-data/visualization-widgets/images/list-box/relativedates-listbox.png)
+
+In the launched `Relative Date Options` window, select the `Custom` option from the drop-down list.
+
+![selecting custom option in relative dates window](/static/assets/embedded/visualizing-data/visualization-widgets/images/list-box/customoptionin-relativedatefilter-listbox.png)
+
+Choose the start and end dates you like to set as custom range, set a name for the custom range, and then click `Add.` Repeat this process till the required set of custom relative dates are added.
+
+
+![setting range for custom option](/static/assets/embedded/visualizing-data/visualization-widgets/images/list-box/customdatelimits-relativedates-listbox.png)
+
+![custom date option is added](/static/assets/embedded/visualizing-data/visualization-widgets/images/list-box/customdateadded-relativedates-listbox.png)
+
+You can see the added custom relative dates in the list box as follows.
+
+![custom date option is displayed in list box](/static/assets/embedded/visualizing-data/visualization-widgets/images/list-box/customrelativedate-listbox.png)
+
+**Note:** If Multi selection is enabled, then the applied relative dates will be removed.
+
 ## How to format list box?
 
 You can format the List box for a better illustration of the view that you require, through the settings available in the `Properties` tab. This pane can be opened from the design view by clicking the `Settings` icon at the top right corner of the widget.
