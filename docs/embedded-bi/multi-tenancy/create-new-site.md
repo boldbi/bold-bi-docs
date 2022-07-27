@@ -123,3 +123,5 @@ The selected users have the following permissions:
 After selecting the user, proceed with `Create and launch site`.
 
 ![Select Administrator](/static/assets/embedded/multi-tenancy/images/select-administrator.png#max-width=45%)
+
+The selected admin user(s) can access the resources and manage users, groups, and their permissions in the corresponding site alone.

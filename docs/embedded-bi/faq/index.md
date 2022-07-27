@@ -155,3 +155,11 @@ The following are the frequently asked questions in Bold BI Enterprise:
 [How to authenticate Google Analytics for Bold BI](/embedded-bi/faq/how-to-authenticate-google-analytics-for-bold-bi/)
 
 [What will happen during multiple users are editing the same dashboard or data source at the same time](/embedded-bi/faq/what-will-happen-during-multiple-users-are-editing-the-same-dashboard-or-data-source-at-the-same-time)
+
+[How to show Current Date and Time in Widget Title](/embedded-bi/faq/how-to-show-current-date-and-time-in-widget-title)
+
+[How to resolve HTTP error 500.19 - Internal server error](/embedded-bi/faq/how-to-resolve-http-error-500.19-internal-server-error/)
+
+[How to Avoid Deployment Pending Problem after the Site Creation in Bold BI On-premises](/embedded-bi/faq/how-to-avoid-deployment-pending-problem-after-the-site-creation-in-bold-bi-on-premises/)
+
+[How to install Bold BI in Windows server machine without using installer](/embedded-bi/faq/how-to-install-bold-bi-in-windows-server-machine-without-using-installer/)

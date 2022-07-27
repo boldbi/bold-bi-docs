@@ -348,19 +348,19 @@ This option allows you change the **shape** of the legend.
 
 This option allows you to customize legend text based on the 'Text Width' property value.
 
-##### None
+***None***
 
 This option allows you to render legend items without any wrap and trim.
 
 ![Legend Overflow None in chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/bar-chart/barChart_LegendNone.png)
 
-##### Trim
+***Trim***
 
 This option allows you to trim the legend items if its legend exceeds the 'Text Width' value.
 
 ![Legend Overflow Trim in chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/bar-chart/barChart_Legendtrim.png)
 
-##### Wrap
+***Wrap***
 
 This option allows you to wrap legend items based on 'Text Width' value.
 
@@ -691,6 +691,28 @@ Using the `individual` mode, you can specify color for each record.
 
 ![Individual mode](/static/assets/embedded/visualizing-data/visualization-widgets/images/bar-chart/individual-mode.png)
 
+#### Color Mapping Type
+
+Using Color Mapping type, you can apply the colors to the series either based on data or index.
+
+![Color Mapping Type option](/static/assets/embedded/visualizing-data/visualization-widgets/images/bar-chart/column-chart-formatting-color-mapping-type-options.png)
+
+***Data***
+
+It allows you to apply color for chart series based on data. If you want to apply a specific color to specific data, you can use Data based color mapping. By default, the Color Mapping Type will be `Data`.
+
+![Color Mapping Type Data](/static/assets/embedded/visualizing-data/visualization-widgets/images/bar-chart/column-chart-formatting-data-type-color.png)
+
+***Index***
+
+It allows you to apply color for chart series based on `Index`. Such that the colors are maintained based on index even if data is changed. It shows only 15 different colors. After that, the color will be repeated from above colors.
+
+For example, If you are displaying the countries based on the increasing order of the case count, then index-based color mapping will be useful to set the colors based on the rank. Say red color to the top, then the red color will be maintained for the country having the largest case count.
+
+![Color Mapping Type Index](/static/assets/embedded/visualizing-data/visualization-widgets/images/bar-chart/column-chart-formatting-index-based-color.png)
+
+**Note:** We prefer to use Index based color customization only for minimum data(upto 15 series).
+
 #### Color
 
 You can choose the color for the record from the nearby color picker.
@@ -698,6 +720,42 @@ You can choose the color for the record from the nearby color picker.
 #### Reset
 
 To undo all the changes, click `reset`.
+
+### Series Palette
+
+This allows you to apply color for chart series either by using a default palette or a custom color palette. By default, the colors will be applied using the default palette. This series of settings will be visible only if we configured the row section in the chart.
+
+![Series Palette](/static/assets/embedded/visualizing-data/visualization-widgets/images/bar-chart/series-palette.png)
+
+#### Use Default Palette
+
+This Option allows you to apply default color for chart series.
+
+By toggle off the `Use Default Palette` option, the `Color Mapping Type` will be shown.
+
+![Color Mapping option](/static/assets/embedded/visualizing-data/visualization-widgets/images/bar-chart/color-mapping-type.png)
+
+#### Color Mapping Type
+
+Using Color Mapping type, We can apply the colors to the series either based on data or index.
+
+![Color Mapping Type option](/static/assets/embedded/visualizing-data/visualization-widgets/images/bar-chart/color-mapping-type-options.png)
+
+***Data***
+
+It allows you to apply color for chart series based on data. If you want to apply a specific color to specific data(i.e. Violet color for 2021, Sky Blue color for 2022, and green for 2020), you can use Data based color mapping. By default, the Color Mapping Type will be `Data`.
+
+![Color Mapping Type Data](/static/assets/embedded/visualizing-data/visualization-widgets/images/bar-chart/bar-chart-data-type-color.png)
+
+***Index***
+
+It allows you to apply color for chart series based on `Index`. Such that the colors are maintained based on index even if data is changed. It shows only 15 different colors. After that, the color will be repeated from above colors.
+
+For example, If we are displaying the countries based on the increasing order of the case count, then index-based color mapping will be useful to set the colors based on the rank. Say red color to the top, then the red color will be maintained for the country having the largest case count.
+
+![Color Mapping Type Index](/static/assets/embedded/visualizing-data/visualization-widgets/images/bar-chart/bar-chart-index-based-color.png)
+
+**Note:** We prefer to use Index based color customization only for minimum data(upto 15 series).
 
 ### Font settings
 

@@ -362,6 +362,20 @@ The following image shows the Number Card widget after modifying the color and f
 
 ![Show Single title](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/show-single-title.png)
 
+### Text Wrap
+
+This option allows you to wrap Card Title based on ‘Card size ’.This option will be enabled only for single card. It wraps title only, if the space is not enough to show title in single line. 
+
+![Show Text Wrap title](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/show-singlecard-title-text-wrap.png)
+
+If card height is not enough to wrap title further it will trim the title.
+
+![Show Text trim title](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/show-singlecard-title-text-trim.png)
+
+If the title doesn't contains space between words, it will not wrap. 
+
+![Title without space](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/show-singlecard-title-text-without-space.png)
+
 ### Series settings 
 
 Series settings enabled only when you configure the **series** in `Assigned Data` tab.
