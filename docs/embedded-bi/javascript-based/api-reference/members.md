@@ -282,6 +282,161 @@ var dashboard = BoldBI.create({
 dashboard.loadDashboard();
 ```
 
+<h2 class="doc-prop-wrapper" id="height" data-Path="height-height">
+<a href="#height" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+</svg>
+</a><span class='doc-prop-name'>height</span>
+
+<span class="doc-prop-type"> `string`
+</span>
+
+</h2>
+    
+
+Set the height of the Dashboard Viewer in % or in pixels.
+
+<br>
+
+**Default value** 
+
+<li>768px</li><br>
+
+**Example** 
+   
+```js
+var dashboard = BoldBI.create({
+     height:"768px",
+});
+dashboard.loadDashboard();
+```
+
+<h2 class="doc-prop-wrapper" id="width" data-Path="width-width">
+<a href="#width" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+</svg>
+</a><span class='doc-prop-name'>width</span>
+
+<span class="doc-prop-type"> `string`
+</span>
+
+</h2>
+
+    
+Set the width of the Dashboard Viewer in % or in pixels.
+
+<br>
+
+**Default value** 
+
+<li>1024px</li><br>
+
+**Example** 
+   
+```js
+var dashboard = BoldBI.create({
+     width:"1024px",
+});
+dashboard.loadDashboard();
+```
+	
+<h2 class="doc-prop-wrapper" id="theme" data-Path="theme-theme">
+<a href="#theme" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+</svg>
+</a><span class='doc-prop-name'>theme</span>
+
+<span class="doc-prop-type"> `object`
+</span>
+
+</h2>
+
+    
+Bold BI provides dark theming support for Dashboard Viewer. So, user can choose the desired theming for their choice.
+
+<br>
+
+**Default value** 
+
+<li>BoldBI.Theme.Light</li><br>
+
+**Possible values**
+
+<li>BoldBI.Theme.Light</li> 
+<li>BoldBI.Theme.Dark</li><br>
+
+**Example** 
+   
+```js
+var dashboard = BoldBI.create({
+     theme:BoldBI.Theme.Dark,
+});
+dashboard.loadDashboard();
+```
+
+<h2 class="doc-prop-wrapper" id="filterparameters" data-Path="filterparameters-filterParameters">
+<a href="#filterparameters" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+</svg>
+</a><span class='doc-prop-name'>filterParameters</span>
+
+<span class="doc-prop-type"> `string`
+</span>
+
+</h2>
+
+
+Specifies the filter that has to be applied to the dashboard.    
+
+<br>
+
+**Default value** 
+
+<li>""</li><br>
+
+**Example** 
+   
+```js
+var dashboard = BoldBI.create({
+     filterParameters: "Continent=Asia,Africa,Europe"
+});
+dashboard.loadDashboard();
+```
+
+<h2 class="doc-prop-wrapper" id="disableAutoRecover" data-Path="disableAutoRecover-disableAutoRecover">
+<a href="#disableAutoRecover" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+</svg>
+</a><span class='doc-prop-name'>disableAutoRecover</span>
+
+<span class="doc-prop-type"> `boolean`
+</span>
+
+</h2>
+
+    
+Specifies whether to show or hide the `Auto Recover` Popup in the Dashboard Designer.
+
+<br>
+
+**Default value** 
+
+<li>false</li><br> 
+
+**Example** 
+   
+```js
+var dashboard = BoldBI.create({
+     disableAutoRecover: false,
+});
+dashboard.loadDashboard();
+```
+
 ## Set a Culture for the Current User in Embedding
 
 You can set a culture for the current user using the API in embedding.
@@ -573,12 +728,10 @@ dashboard.loadDashboard();
 
 <br>
 
-Specifies whether or not to update the Dashboards' Name in the Header Section.
+Single Tab Dashboard
 
-</a><span class='doc-prop-name'>Dashboard</span>
+Specifies whether or not to update the Dashboards name in the header section.
 
-<span class="doc-prop-type"> `string`
-</span>
 
 **Default value** : `empty` 
 
@@ -595,12 +748,9 @@ var dashboard = BoldBI.create({
 dashboard.loadDashboard();
 ```
 
-Specifies the unique id of the dashboard if it is present within the multi-tab dashboard and mention the Name in which dashboard to be rendered.
+Multi Tab Dashboard
 
-</a><span class='doc-prop-name'>Multi-Tabbed Dashboard</span>
-
-<span class="doc-prop-type"> `array`
-</span>
+Specifies the unique id of the dashboard if it is present within the multi-tab dashboard and mention the name in which dashboard to be rendered.
 
 **Default value** 
 
@@ -620,6 +770,224 @@ var dashboard = BoldBI.create({
 dashboard.loadDashboard();
 ```
 
+
+<h3 class="doc-prop-wrapper" id="dashboardsettingsshowpreviewas" data-Path="dashboardsettingsshowpreviewas-dashboardSettings.showPreviewAs">
+<a href="#dashboardsettingsshowpreviewas" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+</svg>
+</a><span class='doc-prop-name'>dashboardSettings.showPreviewAs</span>
+
+<span class="doc-prop-type"> `boolean`
+</span>
+
+</h3>
+
+Specify whether to show or hide the `PreviewAs` option in the designer preview.
+<br>
+
+**Default value** 
+
+<li>true</li><br>
+
+**Example** 
+
+```js
+var dashboard = BoldBI.create({
+     mode: BoldBI.Mode.Design,
+     dashboardSettings: {
+          showPreviewAs: true //By default, the previewAs button will be shown.
+     }
+});
+dashboard.loadDesigner();
+```
+
+## dashboardSettings.widgetsPanel
+
+<h3 class="doc-prop-wrapper" id="dashboardsettingswidgetspanelhidedefaultwidgets" data-Path="dashboardsettingswidgetspanelhidedefaultwidgets-dashboardSettings.widgetsPanel.hideDefaultWidgets">
+<a href="#dashboardsettingswidgetspanelhidedefaultwidgets" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+</svg>
+</a><span class='doc-prop-name'>dashboardSettings.widgetsPanel.hideDefaultWidgets</span>
+
+<span class="doc-prop-type"> `boolean`
+</span>
+
+</h3>
+
+
+Specify whether to show or hide the `Default Widgets` panel tab in the dashboard designer banner.
+
+<br>
+
+**Default value** 
+
+<li>false</li><br>
+
+**Example** 
+
+```js
+var dashboard = BoldBI.create({
+     mode: BoldBI.Mode.Design,
+     dashboardSettings: {
+          widgetsPanel :{
+            hideDefaultWidgets: false // By default, the Default Widgets will be shown.
+          }
+     }
+});
+dashboard.loadDesigner();
+```
+
+<h3 class="doc-prop-wrapper" id="dashboardsettingswidgetspanelhideexistingwidgets" data-Path="dashboardsettingswidgetspanelhideexistingwidgets-dashboardSettings.widgetsPanel.hideExistingWidgets">
+<a href="#dashboardsettingswidgetspanelhideexistingwidgets" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+</svg>
+</a><span class='doc-prop-name'>dashboardSettings.widgetsPanel.hideExistingWidgets</span>
+
+<span class="doc-prop-type"> `boolean`
+</span>
+
+</h3>
+
+
+Specify whether to show or hide the `Existing Widgets` panel tab in the dashboard designer banner.
+
+<br>
+
+**Default value** 
+
+<li>false</li><br>
+
+**Example** 
+
+```js
+var dashboard = BoldBI.create({
+     mode: BoldBI.Mode.Design,
+     dashboardSettings: {
+          widgetsPanel :{
+            hideExistingWidgets: false // By default, the Existing Widgets will be shown.
+          }
+     }
+});
+dashboard.loadDesigner();
+```
+
+<h3 class="doc-prop-wrapper" id="dashboardsettingswidgetspanelexistingdashboards" data-Path="dashboardsettingswidgetspanelexistingdashboards-dashboardSettings.widgetsPanel.existingDashboards">
+<a href="#dashboardsettingswidgetspanelexistingdashboards" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+</svg>
+</a><span class='doc-prop-name'>dashboardSettings.widgetsPanel.existingDashboards</span>
+
+<span class="doc-prop-type"> `Array`
+</span>
+
+</h3>
+
+The existing dashboard widgets can be added to the existing panel tab in the designer settings.
+<br>
+
+**Default value** : `empty`
+
+<li>[]</li><br>
+
+**Example** 
+
+```js
+var dashboard = BoldBI.create({
+     mode: BoldBI.Mode.Design,
+     dashboardSettings: {
+          widgetsPanel :{
+            existingDashboards: [], //Here you are able to pass the n number of dashboard ids.
+          }
+     }
+});
+dashboard.loadDesigner();
+```
+
+## dashboardSettings.dataSourceConfig
+
+<h3 class="doc-prop-wrapper" id="dashboardsettingsdatasourceconfighidedatasourceconfig" data-Path="dashboardsettingsdatasourceconfighidedatasourceconfig-dashboardSettings.dataSourceConfig.hideDataSourceConfig">
+<a href="#dashboardsettingsdatasourceconfighidedatasourceconfig" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+</svg>
+</a><span class='doc-prop-name'>dashboardSettings.dataSourceConfig.hideDataSourceConfig</span>
+
+<span class="doc-prop-type"> `boolean`
+</span>
+
+</h3>
+
+
+Specify whether to show or hide the `Data source` configuration button in the dashboard designer banner.
+
+<br>
+
+**Default value** 
+
+<li>false</li><br>
+
+**Example** 
+
+```js
+var dashboard = BoldBI.create({
+     mode: BoldBI.Mode.Design,
+     dashboardSettings: {
+          dataSourceConfig :{
+            hideDataSourceConfig: false // By default, the datasource configuration is shown.
+          }
+     }
+});
+dashboard.loadDesigner();
+```
+
+## dashboardSettings.viewDataSettings
+
+<h3 class="doc-prop-wrapper" id="dashboardsettingsviewdatasettingsshowallcolumns" data-Path="dashboardsettingsviewdatasettingsshowallcolumns-dashboardSettings.viewDataSettings.showAllColumns">
+<a href="#dashboardsettingsviewdatasettingsshowallcolumns" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+</svg>
+</a><span class='doc-prop-name'>dashboardSettings.viewDataSettings.showAllColumns</span>
+
+<span class="doc-prop-type"> `boolean`
+</span>
+
+</h3>
+
+
+Specify whether to show or hide the `Show all columns` option in `view underlying data` from widgets, which would be used by both viewer and designer of the dashboard.
+
+<br>
+
+**Default value** 
+
+<li>false</li><br>
+
+**Example** 
+
+```js
+var dashboard = BoldBI.create({
+     mode: BoldBI.Mode.Design,
+     dashboardSettings: {
+          viewDataSettings :{
+            showAllColumns: false,// By default, show all columns is not checked in dashbaord Designer.
+          }
+     }
+});
+dashboard.loadDesigner(); 
+var dashboard = BoldBI.create({
+     dashboardSettings: {
+          viewDataSettings :{
+            showAllColumns: false,//By default, show all columns is not checked in dashbaord Viewer.
+          }
+     }
+});
+dashboard.loadDashboard();
+```
 
 ## widgetSettings
 <h3 class="doc-prop-wrapper" id="widgetsettingsshowexport" data-Path="widgetsettingsshowexport-widgetSettings.showExport">
@@ -718,8 +1086,8 @@ var dashboard = BoldBI.create({
 dashboard.loadDashboard();
 ```
 
-<h3 class="doc-prop-wrapper" id="widgetsettingsshowMaximize" data-Path="widgetsettingsshowMaximize-widgetSettings.showMaximize">
-<a href="#widgetsettingsshowMaximize" aria-hidden="true" class="anchor">
+<h3 class="doc-prop-wrapper" id="widgetsettingsshowmaximize" data-Path="widgetsettingsshowmaximize-widgetSettings.showMaximize">
+<a href="#widgetsettingsshowmaximize" aria-hidden="true" class="anchor">
 <svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
 <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
 </svg>
@@ -746,36 +1114,6 @@ var dashboard = BoldBI.create({
      widgetSettings: {
           showMaximize: true,
      }
-});
-dashboard.loadDashboard();
-```
-	
-<h2 class="doc-prop-wrapper" id="filterparameters" data-Path="filterparameters-filterParameters">
-<a href="#filterparameters" aria-hidden="true" class="anchor">
-<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
-<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
-</svg>
-</a><span class='doc-prop-name'>filterParameters</span>
-
-<span class="doc-prop-type"> `string`
-</span>
-
-</h2>
-
-
-Specifies the filter that has to be applied to the dashboard.    
-
-<br>
-
-**Default value** 
-
-<li>""</li><br>
-
-**Example** 
-   
-```js
-var dashboard = BoldBI.create({
-     filterParameters: "Continent=Asia,Africa,Europe"
 });
 dashboard.loadDashboard();
 ```
@@ -975,101 +1313,6 @@ var dashboard = BoldBI.create({
      exportSettings: {
           showCSV: true,
      }
-});
-dashboard.loadDashboard();
-```
-
-<h1 class="doc-prop-wrapper" id="height" data-Path="height-height">
-<a href="#height" aria-hidden="true" class="anchor">
-<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
-<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
-</svg>
-</a><span class='doc-prop-name'>height</span>
-
-<span class="doc-prop-type"> `string`
-</span>
-
-</h1>
-    
-
-Set the height of the Dashboard Viewer in % or in pixels.
-
-<br>
-
-**Default value** 
-
-<li>768px</li><br>
-
-**Example** 
-   
-```js
-var dashboard = BoldBI.create({
-     height:"768px",
-});
-dashboard.loadDashboard();
-```
-	
-<h1 class="doc-prop-wrapper" id="width" data-Path="width-width">
-<a href="#width" aria-hidden="true" class="anchor">
-<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
-<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
-</svg>
-</a><span class='doc-prop-name'>width</span>
-
-<span class="doc-prop-type"> `string`
-</span>
-
-</h1>
-
-    
-Set the width of the Dashboard Viewer in % or in pixels.
-
-<br>
-
-**Default value** 
-
-<li>1024px</li><br>
-
-**Example** 
-   
-```js
-var dashboard = BoldBI.create({
-     width:"1024px",
-});
-dashboard.loadDashboard();
-```
-	
-<h1 class="doc-prop-wrapper" id="theme" data-Path="theme-theme">
-<a href="#theme" aria-hidden="true" class="anchor">
-<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
-<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
-</svg>
-</a><span class='doc-prop-name'>theme</span>
-
-<span class="doc-prop-type"> `object`
-</span>
-
-</h1>
-
-    
-Bold BI provides dark theming support for Dashboard Viewer. So, user can choose the desired theming for their choice.
-
-<br>
-
-**Default value** 
-
-<li>BoldBI.Theme.Light</li><br>
-
-**Possible values**
-
-<li>BoldBI.Theme.Light</li> 
-<li>BoldBI.Theme.Dark</li><br>
-
-**Example** 
-   
-```js
-var dashboard = BoldBI.create({
-     theme:BoldBI.Theme.Dark,
 });
 dashboard.loadDashboard();
 ```
@@ -1353,8 +1596,8 @@ dashboard.loadDashboard();
 
 ## pinboardSettings
 
-<h3 class="doc-prop-wrapper" id="pinboardsettingsenablePinboardHeader" data-Path="pinboardsettingsenablePinboardHeader-pinboardSettings.enablePinboardHeader">
-<a href="#pinboardsettingsenablePinboardHeader" aria-hidden="true" class="anchor">
+<h3 class="doc-prop-wrapper" id="pinboardsettingsenablepinboardheader" data-Path="pinboardsettingsenablepinboardheader-pinboardSettings.enablePinboardHeader">
+<a href="#pinboardsettingsenablepinboardheader" aria-hidden="true" class="anchor">
 <svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
 <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
 </svg>
@@ -1385,8 +1628,8 @@ var dashboard = BoldBI.create({
 dashboard.loadPinboard();
 ```
 
-<h3 class="doc-prop-wrapper" id="pinboardsettingsenableUnpinWidget" data-Path="pinboardsettingsenableUnpinWidget-pinboardSettings.enableUnpinWidget">
-<a href="#pinboardsettingsenableUnpinWidget" aria-hidden="true" class="anchor">
+<h3 class="doc-prop-wrapper" id="pinboardsettingsenableunpinwidget" data-Path="pinboardsettingsenableunpinwidget-pinboardSettings.enableUnpinWidget">
+<a href="#pinboardsettingsenableunpinwidget" aria-hidden="true" class="anchor">
 <svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
 <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
 </svg>
@@ -1419,8 +1662,8 @@ dashboard.loadPinboard();
 
 ## designCanvasSettings
 
-<h3 class="doc-prop-wrapper" id="designCanvasSettingsmargin" data-Path="designCanvasSettingsMargin-designCanvasSettings.margin">
-<a href="#designCanvasSettingsenableMargin" aria-hidden="true" class="anchor">
+<h3 class="doc-prop-wrapper" id="designcanvassettingsmargin" data-Path="designcanvassettingsmargin-designCanvasSettings.margin">
+<a href="#designcanvassettingsmargin" aria-hidden="true" class="anchor">
 <svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
 <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
 </svg>
@@ -1453,8 +1696,8 @@ dashboard.loadDesigner();
 
 ## widgetContainerSettings
 
-<h3 class="doc-prop-wrapper" id="widgetContainerSettingsmargin" data-Path="widgetContainerSettingsMargin-widgetContainerSettings.margin">
-<a href="#widgetContainerSettingsmargin" aria-hidden="true" class="anchor">
+<h3 class="doc-prop-wrapper" id="widgetcontainersettingsmargin" data-Path="widgetcontainersettingsmargin-widgetContainerSettings.margin">
+<a href="#widgetcontainersettingsmargin" aria-hidden="true" class="anchor">
 <svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
 <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
 </svg>
@@ -1487,8 +1730,8 @@ var dashboard = BoldBI.create({
 dashboard.loadDesigner();
 ```
 
-<h3 class="doc-prop-wrapper" id="widgetContainerSettingsboxShadow" data-Path="widgetContainerSettingsboxShadow-widgetContainerSettings.boxShadow">
-<a href="#widgetContainerSettingsboxShadow" aria-hidden="true" class="anchor">
+<h3 class="doc-prop-wrapper" id="widgetcontainersettingsboxshadow" data-Path="widgetcontainersettingsboxshadow-widgetContainerSettings.boxShadow">
+<a href="#widgetcontainersettingsboxshadow" aria-hidden="true" class="anchor">
 <svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
 <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
 </svg>
@@ -1551,8 +1794,8 @@ dashboard.loadDesigner();
 
 Predefined or Preconfigured widgets are a list of widgets that appear under ‘Default Widget Panel’ while initializing the dashboard designer itself. For this, you need to create a dashboard called template dashboard and configure the widgets that will be considered as predefined widgets for your designer.
 
-<h3 class="doc-prop-wrapper" id="preConfiguredWidgetsdashboardId" data-Path="preConfiguredWidgetsDashboardId-preConfiguredWidgets.dashboardId">
-<a href="#preConfiguredWidgetsdashboardId" aria-hidden="true" class="anchor">
+<h3 class="doc-prop-wrapper" id="preconfiguredwidgetsdashboardid" data-Path="preconfiguredwidgetsdashboardid-preConfiguredWidgets.dashboardId">
+<a href="#preconfiguredwidgetsdashboardid" aria-hidden="true" class="anchor">
 <svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
 <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
 </svg>
@@ -1582,8 +1825,8 @@ var dashboard = BoldBI.create({
 dashboard.loadDesigner();
 ```
 
-<h3 class="doc-prop-wrapper" id="preConfiguredWidgetscategoryName" data-Path="preConfiguredWidgetscategoryName-preConfiguredWidgets.categoryName">
-<a href="#preConfiguredWidgetscategoryName" aria-hidden="true" class="anchor">
+<h3 class="doc-prop-wrapper" id="preconfiguredwidgetscategoryname" data-Path="preconfiguredwidgetscategoryname-preConfiguredWidgets.categoryName">
+<a href="#preconfiguredwidgetscategoryname" aria-hidden="true" class="anchor">
 <svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
 <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
 </svg>
@@ -1611,36 +1854,6 @@ var dashboard = BoldBI.create({
      }
 });
 dashboard.loadDesigner();
-```
-
-<h3 class="doc-prop-wrapper" id="disableAutoRecover" data-Path="disableAutoRecover-disableAutoRecover">
-<a href="#disableAutoRecover" aria-hidden="true" class="anchor">
-<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
-<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
-</svg>
-</a><span class='doc-prop-name'>disableAutoRecover</span>
-
-<span class="doc-prop-type"> `boolean`
-</span>
-
-</h3>
-
-    
-Specifies whether to show or hide the `Auto Recover` Popup in the Dashboard Designer.
-
-<br>
-
-**Default value** 
-
-<li>false</li><br> 
-
-**Example** 
-   
-```js
-var dashboard = BoldBI.create({
-     disableAutoRecover: false,
-});
-dashboard.loadDashboard();
 ```
 
 > **NOTE:** <br> 1. If the `categoryName` already exists, the predefined widgets were added in that category. <br> 2. If the `categoryName` not exists in the panel, the widgets were added by creating a new category with the given name. <br> 3. Otherwise, by default the widgets were added into the `Miscellaneous` category.

@@ -40,6 +40,7 @@ The Bold BI supports the following data connection types such that the structure
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/memsql/"> MemSQL</a>
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/sql-data-source/"> Microsoft SQL</a>
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/mysql/"> MySQL</a>
+			<br> <a href="/embedded-bi/working-with-data-source/data-connectors/clickhouse/"> Clickhouse</a>
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/odbc/"> ODBC</a>
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/oracle/"> Oracle</a>
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/postgresql/"> PostgreSQL</a>
@@ -83,6 +84,7 @@ The Bold BI supports the following data connection types such that the structure
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/mongodb/"> MongoDB</a>
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/quickbase/"> Quickbase</a>
 			<br> <a href="/embedded-bi/working-with-data-source/data-connectors/ravendb/"> RavenDB</a>
+            <br> <a href="/embedded-bi/working-with-data-source/data-connectors/cosmosdb/"> CosmosDB</a>
         </td>
 		<td align="center"> Management
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/appfolio/"> AppFolio</a>
@@ -191,6 +193,7 @@ The Bold BI supports the following data connection types such that the structure
 			<br> <a href="/cloud-bi/working-with-data-source/data-connectors/zuora/"> Zuora</a>
         </td>
         <td align="center"> Support
+            <br> <a href="/embedded-bi/working-with-data-source/data-connectors/bolddesk/"> BoldDesk</a>
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/freshdesk/"> Freshdesk</a>
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/freshservice/"> Freshservice</a>
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/help-scout/"> Help Scout</a>

@@ -23,6 +23,8 @@ You can explore the working with dashboard in detail here,
 
 [Save Dashboard](/embedded-bi/working-with-dashboards/publish-dashboard/)
 
+[Data Cache](/embedded-bi/working-with-dashboards/data-cache/)
+
 [Preview Dashboard](/embedded-bi/working-with-dashboards/preview-dashboard/)
 
 [Refreshing Dashboard](/embedded-bi/working-with-dashboards/preview-dashboard/refresh-dashboard/)

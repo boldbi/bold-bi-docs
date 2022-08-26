@@ -26,6 +26,10 @@ You can explore the Site Administration in detail here,
 
 [Azure Active Directory](/embedded-bi/site-administration/azure-active-directory/)
 
-[Notification Settings](/embedded-bi/site-administration/notification-settings)
+[Notification Settings](/embedded-bi/site-administration/notification-settings/)
+
+[Security](/embedded-bi/security-configuration/cors-settings/)
+
+[Integrations](/embedded-bi/site-administration/integrations/)
 
 [SSO](/embedded-bi/site-administration/sso/)

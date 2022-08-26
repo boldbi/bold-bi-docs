@@ -12,6 +12,8 @@ This section explains about the Subscription and Payment details. Also, it expla
 
 You can explore the site administration in detail here,
 
+[Look and Feel](/cloud-bi/site-administration/look-and-feel-settings/)
+
 [Switch Allow/Restrict Public Dashboards](/cloud-bi/site-administration/dashboard-settings/)
 
 [Azure Active Directory](/cloud-bi/site-administration/azure-active-directory/)

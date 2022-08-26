@@ -150,16 +150,32 @@ The following are the frequently asked questions in Bold BI Enterprise:
 
 [How to Configure Bold BI with reverse proxy server in DMZ the environment in Linux](/embedded-bi/faq/how-to-configure-the-bold-bi-with-reverse-proxy-server-in-the-dmz-in-linux/)
 
-[How the dashboard user can modify the input value of a parameter in view mode](/embedded-bi/faq/how-the-dashboard-user-can-modify-the-input-value-of-a-parameter-in-view-mode)
-
 [How to authenticate Google Analytics for Bold BI](/embedded-bi/faq/how-to-authenticate-google-analytics-for-bold-bi/)
+
+[How the dashboard user can modify the input value of a parameter in view mode](/embedded-bi/faq/how-the-dashboard-user-can-modify-the-input-value-of-a-parameter-in-view-mode)
 
 [What will happen during multiple users are editing the same dashboard or data source at the same time](/embedded-bi/faq/what-will-happen-during-multiple-users-are-editing-the-same-dashboard-or-data-source-at-the-same-time)
 
 [How to show Current Date and Time in Widget Title](/embedded-bi/faq/how-to-show-current-date-and-time-in-widget-title)
 
-[How to resolve HTTP error 500.19 - Internal server error](/embedded-bi/faq/how-to-resolve-http-error-500.19-internal-server-error/)
-
 [How to Avoid Deployment Pending Problem after the Site Creation in Bold BI On-premises](/embedded-bi/faq/how-to-avoid-deployment-pending-problem-after-the-site-creation-in-bold-bi-on-premises/)
 
 [How to install Bold BI in Windows server machine without using installer](/embedded-bi/faq/how-to-install-bold-bi-in-windows-server-machine-without-using-installer/)
+
+[How to split the first part of a name from the name column](/embedded-bi/faq/how-to-split-the-first-part-of-a-name-from-the-name-column/)
+
+[How to render the html data inside the grid cell](/embedded-bi/faq/how-to-render-the-html-data-inside-the-grid-cell/)
+
+[How to pass the dashboard parameter from client-end in Embedded BI](/embedded-bi/faq/how-to-pass-the-dashboard-parameter-from-client-end-in-embedded-bi/)
+
+[How to resolve HTTP error 500.19 - Internal server error](/embedded-bi/faq/how-to-resolve-http-error-500.19-internal-server-error/)
+
+[How to show a specific column based on users](/embedded-bi/faq/how-to-show-a-specific-column-based-on-users/)
+
+[How to show raw data in grid widget](/embedded-bi/faq/how-to-show-raw-data-in-grid-widget/)
+
+[How to configure current and last month in relative date filter](/embedded-bi/faq/how-to-configure-current-and-last-month-in-relative-date-filter/)
+
+[How to join tables based on expression column](/embedded-bi/faq/how-to-join-tables-based-on-expression-columns/)
+
+[How to add custom theme in Docker container application](/embedded-bi/faq/how-to-add-custom-theme-in-docker-container-application/)

@@ -16,13 +16,11 @@ Follow these steps to embed pinboard in your application.
 
     ```js
     <head>  
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700" />
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
         <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jsrender/1.0.0-beta/jsrender.min.js"></script>
-        <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/signalr/jquery.signalr-2.1.0.min.js"></script>
-        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v5.1.55/embed-js.js"></script>
+        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v5.2.48/embed-js.js"></script>
     </head>
     ```
 

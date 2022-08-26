@@ -48,30 +48,43 @@ The following hardware requirements are necessary to run the Bold BI solution:
 ### Software requirements
 
 The following software requirements are necessary to run the Bold BI Embedded edition:
-* **Database:** Microsoft SQL Server 2012+ | PostgreSQL
+* **Database:** Microsoft SQL Server 2012+ | PostgreSQL | MySQL
 * **Web Server:** [Nginx](https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/linux-nginx?view=aspnetcore-3.1#install-nginx)
 * **Web Browser:** Microsoft Edge, Mozilla Firefox, and Chrome.
 
 ## Registration and Download
 
-Follow these steps to install the Bold BI Embedded build: 
-1. Go to [Pricing Page](https://www.boldbi.com/embedded/pricing) to register and download the Bold BI Embedded build.
-![Bold BI pricing page](/static/assets/embedded/setup/embedded-edition-overview-images/bold-bi-pricing-page.png)
- 
-2. Click `Request a Quote` to submit your request to register.
-![Request a Quote](/static/assets/embedded/setup/embedded-edition-overview-images/request-quote.png)
+Follow these steps to install the Bold BI Embedded build:
 
-3. Provide the necessary details and click `Request Quote`.   
-![Bold BI Portal Registration Request](/static/assets/embedded/setup/embedded-edition-overview-images/request-registration-form.png)
- 
-4. Then our sales team will contact you for creating an account and guide you for account activation. Once the account has been activated, you will be redirected to your [downloads](https://www.boldbi.com/account/downloads/embedded) page.
-![Bold BI Download Page](/static/assets/embedded/setup/embedded-edition-overview-images/bold-bi-download-page.png)
- 
-5. Click `Download` to install the Bold BI.
-![Click Bold BI Download](/static/assets/embedded/setup/embedded-edition-overview-images/click-download.png)
+1. Go to [Pricing Page](https://www.boldbi.com/embedded/pricing) to register and download the Bold BI Embedded application.
 
-6. Then, select the file type to download the Bold BI Enterprise Edition.
-![Select file type](/static/assets/embedded/setup/embedded-edition-overview-images/select-type-to-download.png)
+    ![Bold BI pricing page](/static/assets/embedded/setup/embedded-edition-overview-images/bold-bi-pricing-page.png)
+ 
+2. To sign up for a new trial, select `TRY IT FOR FREE`.
+
+    ![Try it for Free](/static/assets/embedded/setup/embedded-edition-overview-images/tryit-for-free.png)
+
+4. Enter your email address on the registration page and select `Download Free Trial`.
+
+    ![Try Bold BI Free](/static/assets/embedded/setup/embedded-edition-overview-images/try-bold-bi-free-page.png)
+
+3. Click the `Verify your email address` link on the email you just received for **Email Verification**.
+
+     ![Email Verification Mail](/static/assets/embedded/setup/embedded-edition-overview-images/email-verification-mail-page.png)
+
+     ![Verify Email Address](/static/assets/embedded/setup/embedded-edition-overview-images/verify-email-address-page.png)
+    
+4. In the **Create Password** Page, enter a new password for your account and click `Continue`.
+
+     ![Create Password](/static/assets/embedded/setup/embedded-edition-overview-images/create-password.png)
+
+5. Enter the required information and select `Proceed to Download`
+
+     ![Proceed to Download](/static/assets/embedded/setup/embedded-edition-overview-images/proceed-to-download-page.png)
+ 
+4. You will now be redirected to the [downloads](https://www.boldbi.com/account/downloads/embedded) page. To download and install the Bold BI from this page, choose the file type and click the`Download` icon.
+
+    ![Bold BI Download Page](/static/assets/embedded/setup/embedded-edition-overview-images/bold-bi-download-page.png)
 
 ## See Also
 

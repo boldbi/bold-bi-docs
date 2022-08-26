@@ -1359,6 +1359,60 @@
         "x-codegen-request-body-name": "apiCopyDatasource"
       }
     },
+    "/v4.0/datasources/connection": {
+      "post": {
+        "tags": [
+          "DataSource"
+        ],
+        "summary": "Create a Live Web API data source",
+        "description": "Create a Live Web API data source.",
+        "operationId": "DataSource_WebAPILive",
+        "requestBody": {
+          "description": "The following documentation explains how a user can create a Live Web data source using the API:",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ApiLiveDataSourceAttribute"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "The Live Web data source data source has been created successfully.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/WebAPItemResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Item name is empty",
+            "content": {}
+          },
+          "401": {
+            "description": " Unauthorized.",
+            "content": {}
+          },
+          "404": {
+            "description": "Requested resource is not found.",
+            "content": {}
+          },
+          "409": {
+            "description": "Item name already exists.",
+            "content": {}
+          },
+          "411": {
+            "description": "Content-length is required.",
+            "content": {}
+          }
+        },
+        "x-codegen-request-body-name": "apiLiveDatasource"
+      }
+    },
     "/v4.0/datasources/{datasourceId}": {
       "get": {
         "tags": [
@@ -1460,6 +1514,83 @@
           }
         }
       }
+    },
+    "v4.0/data-sources/connection": {
+      "post": {
+        "tags": [
+          "DataSource"
+        ],
+        "summary": "Create a MongoDB data source.",
+        "description": "The following documentation explains how a user can create a MongoDB data source using the API:",
+        "operationId": "DataSource_MongoDBDataSource",
+        "parameters": [
+          {
+            "name": "Headerschema",
+            "in": "path",
+            "description": "• Nagivate to any dashboard designer page to get your build access token.<br>• Right-click on your dashboard designer page--->Select view page source and copy the content values of the access token.<br>• Add this token in postman headers with key as Authorization and values as Bearer {Your_token}.",
+            "required": true,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string",
+              "format": "Bearer",
+              "nullable": false
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "Format your MongoDB configuration in the format below to frame an HTTP Body to create a data source.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/mongodbapiresponse"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "DataSource published successfully.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/apimongodbresponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "The content of the request body is missing or incomplete.",
+            "content": {}
+          },
+          "401": {
+            "description": "Access denied.",
+            "content": {}
+          },
+          "404": {
+            "description": "Item details not found.",
+            "content": {}
+          },
+          "405": {
+            "description": "Request type was not POST.",
+            "content": {}
+          },
+          "406": {
+            "description": "The content of the request body is invalid.",
+            "content": {}
+          },
+          "409": {
+            "description": "Item name already exists.",
+            "content": {}
+          },
+          "417": {
+            "description": "Failed to create the DataSource.",
+            "content": {}
+          }
+        },
+        "x-codegen-request-body-name": "apiMongoDBDatasource"
+      }
+            
     },
     "/v4.0/items": {
       "get": {
@@ -2086,6 +2217,60 @@
         }
       }
     },
+    "/v4.0/groups/azure-active-directory/import": {
+      "post": {
+        "tags": [
+          "Groups"
+        ],
+        "summary": "Add Azure AD Groups",
+        "description": "Import the group(s) from Azure Active Directory.",
+        "operationId": "Groups_AddAzureADGroup",
+        "requestBody": {
+          "description": "Name of the group.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ApiAzureADGroup"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Group has been imported successfully.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiAzureGroupImportResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "The content of the request body is missing or incomplete.",
+            "content": {}
+          },
+          "401": {
+            "description": "Access denied.",
+            "content": {}
+          },
+          "405": {
+            "description": "Request type was not POST.",
+            "content": {}
+          },
+          "406": {
+            "description": "The content of the request body is invalid.",
+            "content": {}
+          },
+          "412": {
+            "description": "Azure AD details are not configured.",
+            "content": {}
+          }
+        },
+        "x-codegen-request-body-name": "groupName"
+      }
+    },
     "/v4.0/groups": {
       "post": {
         "tags": [
@@ -2552,7 +2737,7 @@
           "Settings"
         ],
         "summary": "Get Site Settings",
-        "description": "Retrieves the list of site setting details of the particular site.",
+        "description": "Retrieves the list of site setting details of the particular site if the user has admin rights for the site settings.",
         "operationId": "Administration_GetSiteSettings",
         "parameters": [
           {
@@ -2650,7 +2835,7 @@
           "Settings"
         ],
         "summary": "Get Dashboard Settings",
-        "description": "Retrieves the dashboard setting details of the particular site.",
+        "description": "Retrieves the dashboard setting details of the particular site if the user has admin rights for the dashboard settings.",
         "operationId": "Administration_GetDashboardSettings",
         "responses": {
           "200": {
@@ -2724,6 +2909,301 @@
           },
           "500": {
             "description": "Error in the database while executing the query.",
+            "content": {}
+          }
+        }
+      }
+    },
+    "/v4.0/settings/email": {
+      "put": {
+        "tags": [
+          "Settings"
+        ],
+        "summary": "Update Email Settings",
+        "description": "Users who have admin rights permission to email settings can update the email settings.",
+        "operationId": "Administration_UpdateEmailSettings",
+        "requestBody": {
+          "description":"The details of the email settings that have been passed will be updated.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ApiUpdateEmailSettings"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Email settings have been updated successfully.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "The content of the request body is missing or incomplete",
+            "content": {}
+          },
+          "401": {
+            "description": "Access denied",
+            "content": {}
+          },
+          "405": {
+            "description": "Request type was not PUT",
+            "content": {}
+          },
+          "412": {
+            "description": "Email address is invalid (or) Authentication type is invalid",
+            "content": {}
+          },
+          "417": {
+            "description": "Failed to update email settings",
+            "content": {}
+          }
+        }
+      }
+    },
+    "/v4.0/settings/azure-active-directory": {
+      "put": {
+        "tags": [
+          "Settings"
+        ],
+        "summary": "Update Azure AD Settings",
+        "description": "Users who have admin rights permission to user directories can update the Azure AD settings.",
+        "operationId": "Administration_UpdateAzureADSettings",
+        "requestBody": {
+          "description":"The details of the azure active directory settings that have been passed will be updated.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ApiUpdateAzureADSettings"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Azure AD settings have been updated successfully.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "The content of the request body is missing or incomplete",
+            "content": {}
+          },
+          "401": {
+            "description": "Access denied",
+            "content": {}
+          },
+          "405": {
+            "description": "Request type was not PUT",
+            "content": {}
+          },
+          "412": {
+            "description": "Connection details are invalid",
+            "content": {}
+          },
+          "417": {
+            "description": "Failed to update azure ad settings",
+            "content": {}
+          }
+        }
+      }
+    },
+    "/v4.0/settings/schedule-synchronization/azure-active-directory": {
+      "put": {
+        "tags": [
+          "Settings"
+        ],
+        "summary": "Update Azure AD Schedule Synchronization Settings",
+        "description": "Users who have admin rights permission to user directories can update the Azure AD schedule synchronization settings.",
+        "operationId": "Administration_UpdateAzureADScheduleSettings",
+        "requestBody": {
+          "description":"The details of the azure active directory schedule synchronization settings that have been passed will be updated.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ApiUpdateAzureAdScheduleSynchronizationSettings"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Azure AD Schedule Synchronization settings have been updated successfully.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiUpdateAzureAdScheduleSynchronizationSettingsResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "The content of the request body is missing or incomplete",
+            "content": {}
+          },
+          "401": {
+            "description": "Access denied",
+            "content": {}
+          },
+          "405": {
+            "description": "Request type was not PUT",
+            "content": {}
+          },
+          "406": {
+            "description": "Schedule type is invalid (or) Recurrence type is invalid",
+            "content": {}
+          },
+          "412": {
+            "description": "Start time is invalid",
+            "content": {}
+          },
+          "417": {
+            "description": "Failed to update azure ad synchronization schedule settings",
+            "content": {}
+          }
+        }
+      }
+    },
+    "/v4.0/settings/accounts": {
+      "get": {
+        "tags": [
+          "Settings"
+        ],
+        "summary": "Get Account Settings",
+        "description": "Retrieves the account setting details of the particular site if the user has admin rights for the account settings.",
+        "operationId": "Administration_GetAccountSettings",
+        "responses": {
+          "200": {
+            "description": "Account setting details have been retrieved successfully.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiAccountSettings"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Access denied",
+            "content": {}
+          },
+          "405": {
+            "description": "Request type was not GET",
+            "content": {}
+          },
+          "417": {
+            "description": "Failed to retrieve account settings",
+            "content": {}
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Settings"
+        ],
+        "summary": "Update Account Settings",
+        "description": "Users who have admin rights permission to account settings can update the account settings.",
+        "operationId": "Administration_UpdateAccountSettings",
+        "requestBody": {
+          "description": "The details of the account settings that have been passed will be updated.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ApiUpdateAccountSettings"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Account settings have been updated successfully.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "The content of the request body is missing or incomplete",
+            "content": {}
+          },
+          "401": {
+            "description": "Access denied",
+            "content": {}
+          },
+          "405": {
+            "description": "Request type was not PUT",
+            "content": {}
+          },
+          "412": {
+            "description": "Email settings are not configured (or) user email field is set as false for Email activation type"
+          },
+          "417": {
+            "description": "Failed to update account settings"
+          }
+        }
+      }
+    },
+    "/v4.0/settings/security/cors": {
+      "put": {
+        "tags": [
+          "Settings"
+        ],
+        "summary": "Update Cors Settings",
+        "description": "Users who have admin rights permission to security settings can update the cors settings.",
+        "operationId": "Administration_UpdateCorsSettings",
+        "requestBody": {
+          "description":"The details of the cors settings that have been passed will be updated.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ApiUpdateCorsSettings"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Cors settings have been updated successfully.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "The content of the request body is missing or incomplete",
+            "content": {}
+          },
+          "401": {
+            "description": "Access denied",
+            "content": {}
+          },
+          "405": {
+            "description": "Request type was not PUT",
+            "content": {}
+          },
+          "417": {
+            "description": "Failed to update cors settings",
             "content": {}
           }
         }
@@ -5131,6 +5611,110 @@
           }
         }
       },
+      "connectionsdetails": {
+        "type": "object",
+        "properties": {
+          "MethodType": {
+            "type": "string",
+            "description": "Supported <code> GET & POST </code>Method Type. By default it is <code> GET </code>"
+          },
+          "DataFormat": {
+            "type": "string",
+            "description": "<code> CSV, JSON & XML </code> data format has supported."
+          },
+          "Url": {
+            "type": "string",
+            "description": "Specifies the URL for the Web API datasource."
+          },
+          "AuthenticationType": {
+
+            "type": "array",
+
+            "description": "None or Basic HTTP Authenticaiton has supported.",
+
+            "items": {
+
+              "$ref": "#/components/schemas/webapiauthenticationmode"
+
+            }
+          },
+          "Provider": {
+            "type": "string",
+            "description": "Supported value:<code> WEB </code>."
+          },
+          "ProviderType": {
+            "type": "string",
+            "description": "Enter the Data source name to connect.<br><code> WEB </code>."
+          },
+          "Rows": {
+            "type": "integer",
+            "description": "No of rows to fetch from connected server.<br>For optimum performance in live mode Web API, records restricted to <b>5000</b> by default."
+          },
+          "Mode": {
+            "type": "string",
+            "description": "Supported value:<code> WEB </code."
+          },
+          "DataProvider": {
+            "type": "string",
+            "description": "Enter the Data source name to connect <code> WEB </code>."
+          }
+        }
+      },
+      "webapiauthenticationmode": {
+        "Optional": [
+          "None",
+          "Basic authentication"
+        ],
+        "type": "object",
+        "properties": {
+          "Username":{
+            "type": "string",
+            "description": "User name for Basic Authentication."
+          },
+          "Password": {
+            "type": "string",
+            "description": "Password for Basic Authentication."
+          }
+        }
+      },
+      "mongodbapiresponse": {
+        "type": "object",
+        "properties": {
+          "Name": {
+            "type": "string",
+            "description": "Enter the MongoDB data source name.",
+            "format": "string"
+          },
+          "Type": {
+            "type": "string",
+            "description": "MongoDB.",
+            "format": "string"
+          },
+          "Connection": {
+            "type": "array",
+            "description": "Refer to the JSON syntax below to create a MongoDB data source with the default configuration.",
+            "items": {
+              "$ref": "#/components/schemas/connections"
+            }
+          
+          },
+        
+          "RefreshSettings": {
+            "type": "array",
+            "description": "Refer to the JSON syntax below to configure Refresh settings.<div style=margin-left:15px;>NOTE: These settings will not enable data refresh, so these configurations will not work if data refresh is disabled.",
+            "items": {
+              "$ref": "#/components/schemas/refreshSettings"
+            }
+          },
+          "WeeklySchedule": {
+            "type": "array",
+            "description": "Refer to the JSON syntax below for configuring the weekly schedule for data refresh. <br><div style=margin-left:15px;>NOTE: These settings will not enable data refresh, so these configurations will not work if data refresh is disabled.",
+            "items": {
+              "$ref": "#/components/schemas/weeklyschedule"
+            }
+          }   
+          }
+      },
       "Links": {
         "type": "object",
         "properties": {
@@ -5146,6 +5730,156 @@
             "type": "string",
             "description": "Returns method type.<br />Value allowed is <code>GET</code>"
           }
+        }
+      },
+      "refreshSettings": {
+        "type": "object",
+        "properties": {
+          "StartTime  ": {
+            "type": "string",
+            "description": "Start time of the schedule.<br> The format should be ISO 8601 <br> i.e. yyyy-MM-ddTHH:mm:ssZ. E.g. 2022-02-15T06:55:00Z."
+          },
+          "NeverEnd": {
+            "type": "string",
+            "description": "When set to true, it creates a schedule that never ends.<br><div style=margin-left:15px;>NOTE: The NeverEnd is true by default. To set the end time for the schedule, fill the properties of either EndAfterOccurrence or EndDate; otherwise, it remains empty.</strong>"
+          },
+          "EndAfterOccurrence": {
+            "type": "string",
+            "description": "The number of occurrences after which the schedule will be completed.<br>• For Example: If you provide empty 5, the schedule will end after the completion of 5 occurrences."
+          },
+          "EndDate": {
+            "type": "string",
+            "description": "End time after which the schedule should stop. The format should be ISO 8601 i.e. yyyy-MM-ddTHH:mm:ssZ.<br>• For Example: If you provide empty an end date-time, the schedule will end when the end date-time is reached.<br>• E.g. 2022-02-15T06:55:00Z."
+          },
+          "ScheduleType": {
+            "type": "string",
+            "description": "Schedule frequency.<br>• Values allowed are Hourly, Daily, weekly, Monthly.<br><div style=margin-left:15px;>NOTE: If you choose the schedule type as Monthly, provide a value to the MonthlySchedule property, and leave the (HourlySchedule, DailySchedule, WeeklySchedule, and YearlySchedule) properties empty."
+          }
+        }
+      },
+      "weeklyschedule": {
+        "type": "object",
+        "properties": {
+          "RecurrenceWeeks": {
+            "type": "integer",
+            "description": "Enter the Recurrence week By default 1."
+          },
+          "RecurrenceDays": {
+            "type": "string",
+            "description": "Enter the day from the list.<br>(Values allowed are <code>Monday, Tuesday, Wednesday, Thursday, Friday</code>).<br> For Example: Monday."
+          },
+          "IsEnabled": {
+            "type": "boolean",
+            "description": "By default it is true."
+          },
+          "FailureNotificationToOwner": {
+            "type": "boolean",
+            "description": "By default it is true."
+          }
+        }
+      },
+      "connections": {
+        "type": "object",
+        "properties": {
+          "authenticationDatabase": {
+            "type": "string",
+            "description": "Authentication database. By default, it will be admin.",
+            "format": "string"
+          },
+          "authenticationType": {
+            "type": "string",
+            "description": "Authentication type of the MongoDB server. The Available authentication types are None, SCRAM,x.509.<br> Default authentication type is None.",
+            "format": "string"
+          },
+          "database": {
+            "type": "string",
+            "description": "Name of the database to connect in BoldBI.",
+            "format": "string"
+          },
+          "collectionName": {
+            "type": "string",
+            "description": "Collection name to import into the data source.<br> <div style=margin-left:15px;>NOTE: If you want to import multiple collections, provide required collection names separated by a comma.",
+            "format": "string"
+          },
+          "provider": {
+            "type": "string",
+            "description": "Supported value: MongoDB.",
+            "format": "string"
+          },
+          "isSelfSigned": {
+            "type": "boolean",
+            "description": "Whether the MongoDB server uses SSL and the SSL certificate is self-signed.<br> A self-signed certificate is a digital certificate not signed by any publicly trusted Certificate Authority (CA).<br> By default provide the isselfsigned value is true.",
+            "format": "string"
+          },
+          "isSslEnabled": {
+            "type": "boolean",
+            "description": "Whether your MongoDB server is configured with SSL.<br> By default, it is false."
+          },
+          "password": {
+            "type": "string",
+            "description": "MongoDB server password.",
+            "format": "string"
+          },
+          "port": {
+            "type": "integer",
+            "description": "Port number of the MongoDB server. <br> By default, it will be 27017.",
+            "format": "int32"
+          },
+          "refreshInterval": {
+            "type": "string",
+            "description": "Enable refresh settings to update the MongoDB data source periodically. <br> By default, it will be Never.",
+            "format": "string"
+          },
+          "username": {
+            "type": "string",
+            "description": "MongoDB server user name.",
+            "format": "string"
+          },
+          "serverName": {
+            "type": "integer",
+            "description": "MongoDB server name(host name).",
+            "format": "int32"
+          },
+          "IsSshConnection": {
+            "type": "boolean",
+            "description": "SSH or Secure Shell is a network communication protocol that enables two computers to communicate (c.f http or hypertext transfer protocol, which is the protocol used to transfer hypertext such as web pages) and share data.<br> By default provide false."
+          },
+          "SshServerName": {
+            "type": "string",
+            "description": "Name of the SSH server.<br> By default it is empty.",
+            "format": "string"
+          },
+          "SshPort": {
+            "type": "integer",
+            "description": "Port number of SSH server.",
+            "format": "int32"
+          },
+          "SshUsername": {
+            "type": "string",
+            "description": "Username for the SSH server<br> By default it is empty.",
+            "format": "string"
+          },
+          "SshPassword": {
+            "type": "string",
+            "description": "Password for the SSH server.<br> By default it is empty.",
+            "format": "string"
+          },
+          "sslCertificateData": {
+            "type": "integer",
+            "description": "An SSL certificate is a file installed on a website's origin server. It is simply a data file containing the public key, the website owner's identity, and other information. Without an SSL certificate, a website's traffic can not be encrypted with TLS.<br> By default, provide empty.",
+            "format": "int32"
+          },
+          "sslCertificatePassword": {
+            "type": "integer",
+            "description": "SSL certificate password.<br>By default it is empty.",
+            "format": "int32"
+          },
+          "dataprovider": {
+            "type": "string",
+            "description": "Enter the Data source name to connect.<br> MongoDB.",
+            "format": "string"
+          }
+
         }
       },
       "ApiItemViewsAdd": {
@@ -5300,6 +6034,30 @@
         },
         "description": "Response details of the copied item."
       },
+      "apimongodbresponse": {
+        "required": [
+          "ApiStatus",
+          "PublishedItemId",
+          "Status",
+          "Version"
+        ],
+        "type": "object",
+        "properties": {
+          "ApiStatus": {
+            "type": "boolean",
+            "description": "Returns the status of the API."
+          },
+          "Status": {
+            "type": "boolean",
+            "description": "Returns the status of the API request."
+          },
+           "StatusMessage": {
+            "type": "string",
+            "description": "Returns the status message from the API."
+          }
+        },
+        "description": "Response details of the create MongoDB data source."
+      },
       "ApiCopyDashboardRequestV4": {
         "required": [
           "CategoryId",
@@ -5346,6 +6104,73 @@
           "Description": {
             "type": "string",
             "description": "Data source description."
+          }
+        },
+        "description": "Data Source details."
+      },
+      "WebAPItemResponse": {
+        "required": [
+          "ApiStatus",
+          "Data",
+          "Status",
+          "StatusMessage"  
+        ],
+        "type": "object",
+        "properties": {
+          "ApiStatus": {
+            "type": "boolean",
+            "description": "Returns the status of the API."
+          },
+          "Status": {
+            "type": "boolean",
+            "description": "Returns status of the API request."
+          },
+          "Data": {
+            "properties": {
+              "ScheduleId": {
+                "type": "string",
+                "description": "Returns the Schedule ID."
+              },
+              "PublishedId": {
+                "type": "string",
+                "description": "Returns the Published ID."
+              }
+            },
+            "description": "Return the details of ScheduleId and PublishedID."
+          },
+          "StatusMessage": {
+            "type": "string",
+            "description": "Returns the status message from the API."
+          }
+        },
+        "description": "Response details of the Live web datasource item."
+      },
+      "ApiLiveDataSourceAttribute": {
+        "required": [
+          "Name"
+        ],
+        "type": "object",
+        "properties": {
+          "Name": {
+            "type": "string",
+            "description": "Data source name."
+          },
+          "Type": {
+            "type": "string",
+            "description": "Web."
+          },
+          "Connection": {
+
+            "type": "array",
+
+            "description": "From the Bold BI application, get your build token and copy the content values of the access token. Then add the token in the Web request header with the key as Authorization and values.",
+
+            "items": {
+
+              "$ref": "#/components/schemas/connectionsdetails"
+
+            }
+
           }
         },
         "description": "Data Source details."
@@ -5829,6 +6654,225 @@
             "type": "boolean",
             "description": "Specify true to enable usage analytics dashboard setting.",
             "nullable": true
+          }
+        }
+      },
+      "ApiUpdateEmailSettings": {
+        "required": [
+          "SMTPServer",
+          "SMTPPort",
+          "SenderName",
+          "SenderEmailAddress",
+          "AuthenticationType",
+          "EnableSSL"
+        ],
+        "type": "object",
+        "properties": {
+          "SMTPServer": {
+            "type": "string",
+            "description": "Specify the SMTP server name."
+          },
+          "SMTPPort": {
+            "type": "string",
+            "description": "Specify the SMTP port number."
+          },
+          "SenderName": {
+            "type": "string",
+            "description": "Specify the Sender name for the email."
+          },
+          "SenderEmailAddress": {
+            "type": "string",
+            "description": "Specify the Sender email address."
+          },
+          "AuthenticationType": {
+            "type": "string",
+            "description": "Specify the Authentication type of the email.<br />Values allowed are <code>Basic, Anonymous.</code>"
+          },
+          "Username": {
+            "type": "string",
+            "description": "Specify the Username for Basic Authentication type."
+          },
+          "Password": {
+            "type": "string",
+            "description": "Specify the Password for Basic Authentication type."
+          },
+          "EnableSSL": {
+            "type": "boolean",
+            "description": "Specify true to enable SSL to connect with SMTP server.",
+            "nullable": true
+          }
+        }
+      },
+      "ApiUpdateAzureADSettings": {
+        "required": [
+          "TenantId",
+          "ClientId",
+          "ClientSecret"
+        ],
+        "type": "object",
+        "properties": {
+          "TenantId": {
+            "type": "string",
+            "description": "Specify the Tenant name."
+          },
+          "ClientId": {
+            "type": "string",
+            "description": "Specify the Client id."
+          },
+          "ClientSecret": {
+            "type": "string",
+            "description": "Specify the Client secret."
+          },
+          "EnableGroupUserImport": {
+            "type": "boolean",
+            "description": "Specify true to enable import users from the group.\n\n**Note:** By default, the value is true."
+          }
+        }
+      },
+      "ApiUpdateAzureAdScheduleSynchronizationSettings": {
+        "required": [
+          "StartTime",
+          "ScheduleType"
+        ],
+        "type": "object",
+        "properties": {
+          "EnableSchedule": {
+            "type": "boolean",
+            "description": "Specify true to enable Azure AD schedule.\n\n**Note:** By default, the value is true."
+          },
+          "StartTime": {
+            "type": "string",
+            "description": "Specifies the UTC start date-time of schedule.<br />The format should be ISO 8601 i.e. `yyyy-MM-ddTHH:mm:ssZ`."
+          },
+		    "ScheduleType": {
+          "type": "string",
+          "description": "Specifies the schedule type.<br />Values allowed are <code>Daily, Weekly, Monthly, Yearly</code>\n\n**Note:** If you choose the schedule type as `Monthly`, provide a value to the `MonthlySchedule` property, and leave the (DailySchedule, WeeklySchedule and YearlySchedule) properties empty."
+        },
+        "DailySchedule": {
+          "type": "object",
+          "description": "Runs the schedules on a daily basis.",
+          "allOf": [
+            {
+              "$ref": "#/components/schemas/ApiDailySchedule"
+            }
+          ]
+        },
+        "WeeklySchedule": {
+          "type": "object",
+          "description": "Runs the schedule on a weekly basis.",
+          "allOf": [
+            {
+              "$ref": "#/components/schemas/ApiWeeklySchedule"
+            }
+          ]
+        },
+        "MonthlySchedule": {
+          "type": "object",
+          "description": "Runs the schedule on a monthly basis.",
+          "allOf": [
+            {
+              "$ref": "#/components/schemas/ApiMonthlySchedule"
+            }
+          ]
+        },
+        "YearlySchedule": {
+          "type": "object",
+          "description": "Runs the schedules on a yearly basis.",
+          "allOf": [
+            {
+              "$ref": "#/components/schemas/ApiYearlySchedule"
+            }
+          ]
+        }
+       }
+      },
+      "ApiUpdateAzureAdScheduleSynchronizationSettingsResponse": {
+        "type": "object",
+        "properties": {
+          "ScheduleType": {
+            "type": "string",
+            "description": "Returns the schedule type."
+          },
+          "NextScheduleDate": {
+            "type": "string",
+            "description": "Returns the schedule’s next run."
+          },
+          "StatusMessage": {
+            "type": "string",
+            "description": "Returns the status message from the API."
+          }
+        },
+        "description": "Response details of created schedules."
+      },
+      "ApiAccountSettings": {
+        "type": "object",
+        "properties": {
+          "ActivationType": {
+            "type": "string",
+            "description": "Returns activation type.<br />Values allowed are <code>AutomaticActivation, EmailActivation.</code>"
+          },
+          "UserEmailRequired": {
+            "type": "boolean",
+            "description": "Returns true, if a user email address is required while creating new users."
+          }
+        }
+      },
+      "ApiUpdateAccountSettings": {
+        "required": [
+          "ActivationType"
+        ],
+        "type": "object",
+        "properties": {
+          "ActivationType": {
+            "type": "string",
+            "description": "Specifies the activation type.<br />Values allowed are <code>AutomaticActivation, EmailActivation.</code>."
+          },
+          "UserEmailRequired": {
+            "type": "boolean",
+            "description": "Specify true to set the user email address field is required while creating new users in Bold BI server.\n\n**Note:** By default, the value is true."
+          }
+        }
+      },
+      "ApiUpdateCorsSettings":{
+        "type": "object",
+        "properties": {
+          "EnableCors": {
+            "type": "boolean",
+            "description": "Specify true to enable Cors setting.",
+            "nullable": true
+          },
+          "AllowAnyOrigin": {
+            "type": "boolean",
+            "description": "Specify true to allow all origins in Cors setting."
+          },
+          "AllowedOrigins": {
+            "type": "string",
+            "description": "Specified origins will be able to access the resource.\n\n**Note:** Multiple origins are allowed using a comma separator.",
+            "example": "https://www.boldbi.com/,https://onpremise-demo.boldbi.com/"
+          },
+          "AllowCredentials": {
+            "type": "boolean",
+            "description": "Specify true to allow credentials in Cors setting."
+          },
+          "AllowedHeaders": {
+            "type": "string",
+            "description": "Specified HTTP header values will be used when making an actual request.\n\n**Note:** Multiple headers are allowed using comma separator.",
+            "example":"Content-Type,Content-Length"
+          },
+          "AllowedMethods": {
+            "type": "string",
+            "description": "Specified methods will be able to access the resource.<br />Values allowed are <code>GET, HEAD, POST, PUT, DELETE.</code>\n\n**Note:** Multiple headers are allowed using comma separator .",
+            "example":"POST,PUT"
+          },
+          "ExposeHeaders": {
+            "type": "string",
+            "description": "Specify header values are exposed to browser based scripts.\n\n**Note:** Multiple headers are allowed using comma separator .",
+            "example":"Content-Language, Content-Length, Content-Type"
+          },
+          "PreflightMaxAge": {
+            "type": "integer",
+            "format":"int32",
+            "description": "Specifies the maximum time a preflight request's results can be cached."
           }
         }
       },
@@ -6476,6 +7520,65 @@
           }
         },
         "description": "Group detail"
+      },
+      "ApiAzureADGroup": {
+        "required": [
+          "GroupName"
+        ],
+        "type": "object",
+        "properties": {
+          "GroupName": {
+            "type": "array",
+            "description": "List of group names",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "ApiAzureGroupImportResponse": {
+        "type": "object",
+        "properties": {
+          "ApiStatus":{
+            "type": "boolean",
+            "description": "Returns the status of the API."
+          },
+          "ImportStatus": {
+            "type": "array",
+             "description":"Returns Azure AD group import status.",
+            "items": {
+              "$ref": "#/components/schemas/ApiAzureGroupImportStatus"
+            }
+          }
+        }
+      },
+      "ApiAzureGroupImportStatus":
+      {
+        "type": "object",
+        "properties": {
+          "FailedUsers": {
+            "type": "integer",
+            "format":"int32",
+            "description": "Failed users count ."
+          },
+          "GroupName": {
+            "type": "string",
+            "description": "Name of the Azure AD group."
+          },
+          "StatusMessage": {
+            "type": "string",
+            "description": "Status message of the imported group."
+          },
+          "ImportedUsers": {
+            "type": "integer",
+            "format":"int32",
+            "description": "Imported users count ."
+          },
+          "Status": {
+            "type": "boolean",
+            "description": "Status of the group import."
+          }
+        }
       },
       "ApiGroupUsers": {
         "type": "object",
@@ -7539,6 +8642,11 @@
           "ExportType": {
             "type": "string",
             "description": "Export type.<br />Values allowed are <code>Excel, Pdf, Image</code>"
+          },
+          "FilterParameter": {
+            "type": "string",
+            "description": "Specify the filter parameter. \n\n**Note:**  To know more about supported operators and funtions in filter parameter, refer to [this](/embedded-bi/working-with-dashboards/preview-dashboard/urlparameters/).",
+            "example":"Department= Cardiology & Year(Date)=2021"
           }
         },
         "description": "Details about the dashboard to be exported."

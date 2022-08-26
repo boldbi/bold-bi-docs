@@ -79,6 +79,7 @@ The Bold BI supports the following data connection types such that the structure
         <td align="center">NoSQL
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/mongodb/"> MongoDB</a>
 			<br> <a href="/cloud-bi/working-with-data-source/data-connectors/quickbase/"> Quickbase</a>
+            <br> <a href="/cloud-bi/working-with-data-source/data-connectors/cosmosdb/"> CosmosDB</a>
         </td>
 		<td align="center">Management
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/appfolio/"> AppFolio</a>

@@ -383,6 +383,47 @@
         }
       }
     },
+    "/v4.0/groups/azure-active-directory/import": {
+      "post": {
+        "tags": [ "Groups" ],
+        "summary": "Add Azure AD Groups",
+        "description": "Import the group(s) from Azure Active Directory.",
+        "operationId": "Groups_AddAzureADGroup",
+        "parameters": [
+          {
+            "name": "groupName",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/ApiAzureADGroup"
+            },
+            "description": "Name of the group.",
+            "x-nullable": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "x-nullable": true,
+            "description": "Group has been imported successfully.",
+            "schema": {
+              "$ref": "#/definitions/ApiAzureGroupImportResponse"
+            }
+          },
+          "400": {
+            "description": "The content of the request body is missing or incomplete"
+          },
+          "401": {
+            "description": "Access denied"
+          },
+          "405": {
+            "description": "Request type was not POST"
+          },
+          "412": {
+            "description": "Azure AD details are not configured"
+          }
+        }
+      }
+    },
     "/v4.0/groups": {
       "post": {
         "tags": [ "Groups" ],
@@ -3725,7 +3766,7 @@
       "get": {
         "tags": [ "Settings" ],
         "summary": "Get Site Settings",
-        "description": "Retrieves the list of site setting details of the particular site.",
+        "description": "Retrieves the list of site setting details of the particular site if the user has admin rights for the site settings.",
         "operationId": "Administration_GetSiteSettings",
         "parameters": [
           {
@@ -3810,7 +3851,7 @@
       "get": {
         "tags": [ "Settings" ],
         "summary": "Get Dashboard Settings",
-        "description": "Retrieves the dashboard setting details of the particular site.",
+        "description": "Retrieves the dashboard setting details of the particular site if the user has admin rights for the dashboard settings.",
         "operationId": "Administration_GetDashboardSettings",
         "responses": {
           "200": {
@@ -3870,6 +3911,250 @@
           },
           "500": {
             "description": "Error in the database while executing the query."
+          }
+        }
+      }
+    },
+    "/v4.0/settings/email": {
+      "put": {
+        "tags": [ "Settings" ],
+        "summary": "Update Email Settings",
+        "description": "Users who have admin rights permission to email settings can update the email settings.",
+        "operationId": "Administration_UpdateEmailSettings",
+        "parameters": [
+          {
+            "name": "apiEmailSettings",
+            "in": "body",
+            "required": true,
+            "description": "The details of the email settings that have been passed will be updated.",
+            "schema": {
+              "$ref": "#/definitions/ApiUpdateEmailSettings"
+            },
+            "x-nullable": false
+          }
+        ],
+        "responses": {
+          "200": {
+            "x-nullable": false,
+            "description": "Email settings have been updated successfully.",
+            "schema": {
+              "$ref": "#/definitions/ApiResponse"
+            }
+          },
+          "400": {
+            "description": "The content of the request body is missing or incomplete"
+          },
+          "401": {
+            "description": "Access denied"
+          },
+          "405": {
+            "description": "Request type was not PUT"
+          },
+          "412": {
+            "description": "Email address is invalid (or) Authentication type is invalid"
+          },
+          "417": {
+            "description": "Failed to update email settings"
+          }
+        }
+      }
+    },
+    "/v4.0/settings/azure-active-directory": {
+      "put": {
+        "tags": [ "Settings" ],
+        "summary": "Update Azure AD Settings",
+        "description": "Users who have admin rights permission to user directories can update the Azure AD settings.",
+        "operationId": "Administration_UpdateAzureADSettings",
+        "parameters": [
+          {
+            "name": "apiAzureADSettings",
+            "in": "body",
+            "required": true,
+            "description": "The details of the azure active directory settings that have been passed will be updated.",
+            "schema": {
+              "$ref": "#/definitions/ApiUpdateAzureADSettings"
+            },
+            "x-nullable": false
+          }
+        ],
+        "responses": {
+          "200": {
+            "x-nullable": false,
+            "description": "Azure AD settings have been updated successfully.",
+            "schema": {
+              "$ref": "#/definitions/ApiResponse"
+            }
+          },
+          "400": {
+            "description": "The content of the request body is missing or incomplete"
+          },
+          "401": {
+            "description": "Access denied"
+          },
+          "405": {
+            "description": "Request type was not PUT"
+          },
+          "412": {
+            "description": "Connection details are invalid"
+          },
+          "417": {
+            "description": "Failed to update azure ad settings"
+          }
+        }
+      }
+    },
+    "/v4.0/settings/schedule-synchronization/azure-active-directory": {
+      "put": {
+        "tags": [ "Settings" ],
+        "summary": "Update Azure AD Schedule Synchronization Settings",
+        "description": "Users who have admin rights permission to user directories can update the Azure AD schedule synchronization settings.",
+        "operationId": "Administration_UpdateAzureADScheduleSettings",
+        "parameters": [
+          {
+            "name": "apiAzureADSynchronizationSchedule",
+            "in": "body",
+            "required": true,
+            "description": "The details of the azure active directory schedule synchronization settings that have been passed will be updated.",
+            "schema": {
+              "$ref": "#/definitions/ApiUpdateAzureAdScheduleSynchronizationSettings"
+            },
+            "x-nullable": false
+          }
+        ],
+        "responses": {
+          "200": {
+            "x-nullable": false,
+            "description": "Azure AD Schedule Synchronization settings have been updated successfully.",
+            "schema": {
+              "$ref": "#/definitions/ApiUpdateAzureAdScheduleSynchronizationSettingsResponse"
+            }
+          },
+          "400": {
+            "description": "The content of the request body is missing or incomplete"
+          },
+          "401": {
+            "description": "Access denied"
+          },
+          "405": {
+            "description": "Request type was not PUT"
+          },
+          "406": {
+            "description": "Schedule type is invalid (or) Recurrence type is invalid"
+          },
+          "412": {
+            "description": "Start time is invalid"
+          },
+          "417": {
+            "description": "Failed to update azure ad synchronization schedule settings"
+          }
+        }
+      }
+    },
+    "/v4.0/settings/accounts": {
+      "get": {
+        "tags": [ "Settings" ],
+        "summary": "Get Account Settings",
+        "description": "Retrieves the account setting details of the particular site if the user has admin rights for the account settings.",
+        "operationId": "Administration_GetAccountSettings",
+        "responses": {
+          "200": {
+            "x-nullable": false,
+            "description": "Account setting details have been retrieved successfully.",
+            "schema": {
+              "$ref": "#/definitions/ApiAccountSettings"
+            }
+          },
+          "401": {
+            "description": "Access denied"
+          },
+          "405": {
+            "description": "Request type was not GET"
+          },
+          "500": {
+            "description": "Failed to retrieve account settings"
+          }
+        }
+      },
+      "put": {
+        "tags": [ "Settings" ],
+        "summary": "Update Account Settings",
+        "description": "Users who have admin rights permission to account settings can update the account settings.",
+        "operationId": "Administration_UpdateAccountSettings",
+        "parameters": [
+          {
+            "name": "apiAccountSettings",
+            "in": "body",
+            "required": true,
+            "description": "The details of the account settings that have been passed will be updated.",
+            "schema": {
+              "$ref": "#/definitions/ApiUpdateAccountSettings"
+            },
+            "x-nullable": false
+          }
+        ],
+        "responses": {
+          "200": {
+            "x-nullable": false,
+            "description": "Account settings have been updated successfully.",
+            "schema": {
+              "$ref": "#/definitions/ApiResponse"
+            }
+          },
+          "400": {
+            "description": "The content of the request body is missing or incomplete"
+          },
+          "401": {
+            "description": "Access denied"
+          },
+          "405": {
+            "description": "Request type was not PUT"
+          },
+          "412": {
+            "description": "Email settings are not configured (or) user email field is set as false for Email activation type"
+          },
+          "417": {
+            "description": "Failed to update account settings"
+          }
+        }
+      }
+    },
+    "/v4.0/settings/security/cors": {
+      "put": {
+        "tags": [ "Settings" ],
+        "summary": "Update Cors Settings",
+        "description": "Users who have admin rights permission to security settings can update the cors settings.",
+        "operationId": "Administration_UpdateCORSSettings",
+        "parameters": [
+          {
+            "name": "apiCorsSettings",
+            "in": "body",
+            "required": true,
+            "description": "The details of the cors settings that have been passed will be updated.",
+            "schema": {
+              "$ref": "#/definitions/ApiUpdateCorsSettings"
+            },
+            "x-nullable": false
+          }
+        ],
+        "responses": {
+          "200": {
+            "x-nullable": false,
+            "description": "Cors settings have been updated successfully.",
+            "schema": {
+              "$ref": "#/definitions/ApiResponse"
+            }
+          },
+          "400": {
+            "description": "The content of the request body is missing or incomplete"
+          },
+          "401": {
+            "description": "Access denied"
+          },
+          "405": {
+            "description": "Request type was not PUT"
+          },
+          "417": {
+            "description": "Failed to update cors settings"
           }
         }
       }
@@ -4824,6 +5109,225 @@
         }
       }
     },
+    "ApiUpdateEmailSettings": {
+      "required": [
+        "SMTPServer",
+        "SMTPPort",
+        "SenderName",
+        "SenderEmailAddress",
+        "AuthenticationType",
+        "EnableSSL"
+      ],
+      "type": "object",
+      "properties": {
+        "SMTPServer": {
+          "type": "string",
+          "description": "Specify the SMTP server name."
+        },
+        "SMTPPort": {
+          "type": "string",
+          "description": "Specify the SMTP port number."
+        },
+        "SenderName": {
+          "type": "string",
+          "description": "Specify the Sender name for the email."
+        },
+        "SenderEmailAddress": {
+          "type": "string",
+          "description": "Specify the Sender email address."
+        },
+        "AuthenticationType": {
+          "type": "string",
+          "description": "Specify the Authentication type of the email.<br />Values allowed are <code>Basic, Anonymous.</code>"
+        },
+        "Username": {
+          "type": "string",
+          "description": "Specify the Username for Basic Authentication type."
+        },
+        "Password": {
+          "type": "string",
+          "description": "Specify the Password for Basic Authentication type."
+        },
+        "EnableSSL": {
+          "type": "boolean",
+          "description": "Specify true to enable SSL to connect with SMTP server.",
+          "nullable": true
+        }
+      }
+    },
+    "ApiUpdateAzureADSettings": {
+      "required": [
+        "TenantId",
+        "ClientId",
+        "ClientSecret"
+      ],
+      "type": "object",
+      "properties": {
+        "TenantId": {
+          "type": "string",
+          "description": "Specify the Tenant name ."
+        },
+        "ClientId": {
+          "type": "string",
+          "description": "Specify the Client id."
+        },
+        "ClientSecret": {
+          "type": "string",
+          "description": "Specify the Client secret."
+        },
+        "EnableGroupUserImport": {
+          "type": "boolean",
+          "description": "Specify true to enable import users from the group.\n\n**Note:** By default, the value is true."
+        }
+      }
+    },
+    "ApiUpdateAzureAdScheduleSynchronizationSettings": {
+      "required": [
+        "StartTime",
+        "ScheduleType"
+      ],
+      "type": "object",
+      "properties": {
+        "EnableSchedule": {
+          "type": "boolean",
+          "description": "Specify true to enable Azure AD schedule.\n\n**Note:** By default, the value is true."
+        },
+        "StartTime": {
+          "type": "string",
+          "description": "Specifies the UTC start date-time of schedule.<br />The format should be ISO 8601 i.e. `yyyy-MM-ddTHH:mm:ssZ`."
+        },
+      "ScheduleType": {
+        "type": "string",
+        "description": "Specifies the schedule type.<br />Values allowed are <code>Daily, Weekly, Monthly, Yearly</code>\n\n**Note:** If you choose the schedule type as `Monthly`, provide a value to the `MonthlySchedule` property, and leave the (DailySchedule, WeeklySchedule and YearlySchedule) properties empty."
+      },
+      "DailySchedule": {
+        "type": "object",
+        "description": "Runs the schedules on a daily basis. ",
+        "allOf": [
+          {
+            "$ref": "#/definitions/ApiDailySchedule"
+          }
+        ]
+      },
+      "WeeklySchedule": {
+        "type": "object",
+        "description": "Runs the schedule on a weekly basis.",
+        "allOf": [
+          {
+            "$ref": "#/definitions/ApiWeeklySchedule"
+          }
+        ]
+      },
+      "MonthlySchedule": {
+        "type": "object",
+        "description": "Runs the schedule on a monthly basis.",
+        "allOf": [
+          {
+            "$ref": "#/definitions/ApiMonthlySchedule"
+          }
+        ]
+      },
+      "YearlySchedule": {
+        "type": "object",
+        "description": "Runs the schedules on a yearly basis.",
+        "allOf": [
+          {
+            "$ref": "#/definitions/ApiYearlySchedule"
+          }
+        ]
+      }
+     }
+    },
+    "ApiUpdateAzureAdScheduleSynchronizationSettingsResponse": {
+      "type": "object",
+      "properties": {
+        "ScheduleType": {
+          "type": "string",
+          "description": "Returns the schedule type."
+        },
+        "NextScheduleDate": {
+          "type": "string",
+          "description": "Returns the schedule’s next run."
+        },
+        "StatusMessage": {
+          "type": "string",
+          "description": "Returns the status message from the API."
+        }
+      },
+      "description": "Response details of created schedules."
+    },
+    "ApiAccountSettings": {
+      "type": "object",
+      "properties": {
+        "ActivationType": {
+          "type": "string",
+          "description": "Returns activation type. <br />Values allowed are <code>AutomaticActivation, EmailActivation.</code>"
+        },
+        "UserEmailRequired": {
+          "type": "boolean",
+          "description": "Returns true, if a user email address is required while creating new users."
+        }
+      }
+    },
+    "ApiUpdateAccountSettings": {
+      "required": [
+        "ActivationType"
+      ],
+      "type": "object",
+      "properties": {
+        "ActivationType": {
+          "type": "string",
+          "description": "Specifies the activation type.<br />Values allowed are <code>AutomaticActivation, EmailActivation./code>."
+        },
+        "UserEmailRequired": {
+          "type": "boolean",
+          "description": "Specify true to set the user email address field is required while creating new users in Bold BI server.\n\n**Note:** By default, the value is true."
+        }
+      }
+    },
+    "ApiUpdateCorsSettings":{
+      "type": "object",
+      "properties": {
+        "EnableCors": {
+          "type": "boolean",
+          "description": "Specify true to enable Cors setting.",
+          "nullable": true
+        },
+        "AllowAnyOrigin": {
+          "type": "boolean",
+          "description": "Specify true to allow all origins in Cors setting."
+        },
+        "AllowedOrigins": {
+          "type": "string",
+          "description": "Specified origins will be able to access the resource.\n\n**Note:** Multiple origins are allowed using a comma separtor. ",
+          "example": "https://www.boldbi.com/,https://onpremise-demo.boldbi.com/"
+        },
+        "AllowCredentials": {
+          "type": "boolean",
+          "description": "Specify true to allow credentials in Cors setting."
+        },
+        "AllowedHeaders": {
+          "type": "string",
+          "description": "Specified HTTP header values will be used when making an actual request.\n\n**Note:** Multiple headers are allowed using comma separator .",
+          "example":"Content-Type,Content-Length"
+        },
+        "AllowedMethods": {
+          "type": "string",
+          "description": "Specified methods will be able to access the resource.<br />Values allowed are <code>GET, HEAD, POST, PUT, DELETE.</code>\n\n**Note:** Multiple headers are allowed using comma separator .",
+          "example":"POST,PUT"
+        },
+        "ExposeHeaders": {
+          "type": "string",
+          "description": "Specify header values are exposed to browser based scripts.\n\n**Note:** Multiple headers are allowed using comma separator.",
+          "example":"Content-Language, Content-Length, Content-Type"
+        },
+        "PreflightMaxAge": {
+          "type": "integer",
+          "format":"int32",
+          "description": "Specifies the maximum time a preflight request's results can be cached."
+        }
+      }
+    },
     "DraftItemDetail": {
       "type": "object",
       "properties": {
@@ -5269,6 +5773,71 @@
         "Description": {
           "type": "string",
           "description": "Description of the group."
+        }
+      }
+    },
+    "ApiAzureADGroup": {
+      "type": "object",
+      "description": "Group name",
+      "additionalProperties": false,
+      "required": [
+        "GroupName"
+      ],
+      "properties": {
+        "GroupName": {
+          "type": "array",
+          "description": "List of group names",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "ApiAzureGroupImportResponse": {
+      "type": "object",
+      "description": "List of groups",
+      "additionalProperties": false,
+      "properties": {
+        "ApiStatus":{
+          "type": "boolean",
+          "description": "Returns the status of the API."
+        },
+        "ImportStatus": {
+          "type": "array",
+          "description":"Returns Azure AD group import status.",
+          "items": {
+            "$ref": "#/definitions/ApiAzureGroupImportStatus"
+          }
+        }
+      }
+    },
+    "ApiAzureGroupImportStatus":
+    {
+      "type": "object",
+      "description": "Group Import Status",
+      "additionalProperties": false,
+      "properties": {
+        "FailedUsers": {
+          "type": "integer",
+          "format":"int32",
+          "description": "Failed users count ."
+        },
+        "GroupName": {
+          "type": "string",
+          "description": "Name of the Azure AD group."
+        },
+        "StatusMessage": {
+          "type": "string",
+          "description": "Status message of the imported group."
+        },
+        "ImportedUsers": {
+          "type": "integer",
+          "format":"int32",
+          "description": "Imported users count ."
+        },
+        "Status": {
+          "type": "boolean",
+          "description": "Status of the group import."
         }
       }
     },
@@ -6346,6 +6915,11 @@
         "ExportType": {
           "type": "string",
           "description": "Export type. Valid values: `\"Excel\"` `\"Pdf\"` `\"Image\"`"
+        },
+        "FilterParameter": {
+          "type": "string",
+          "description": "Specify the filter parameter. \n\n**Note:**  To know more about supported operators and funtions in filter parameter, refer to [this](/embedded-bi/working-with-dashboards/preview-dashboard/urlparameters/).",
+          "example":"Department= Cardiology & Year(Date)=2021"
         }
       }
     },

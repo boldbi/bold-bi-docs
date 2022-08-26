@@ -10,9 +10,11 @@ documentation: ug
 
 This section explains how to upgrade Bold BI Linux package from any version to the latest version.
 
+> **NOTE:** Upgrading to the latest version does not require a license key. Our services, on the other hand, will retrieve the license in the backend after upgrading to the latest version. 
+
 1. Register and download the latest Bold BI Linux package from [here](/embedded-bi/setup/overview/#registration-and-download).
 
-2. Install `pv` tool by running the following command.
+2. Install the  `pv` tool by running the following command.
 
     ~~~shell
     sudo yum -y install pv

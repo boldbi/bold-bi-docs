@@ -18,12 +18,6 @@ documentation: ug
     sudo yum install libgdiplus 
     ~~~ 
 
-3. Install `pv` tool by running below command.
-
-    ~~~shell
-    sudo yum -y install pv
-    ~~~ 
-
 4. Add an `openssl conf` path in the environment, if does not exist.
 
 	~~~shell

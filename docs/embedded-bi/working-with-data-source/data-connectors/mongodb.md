@@ -80,6 +80,10 @@ On initial connect MongoDB will extract a maximum of 10,000 records. Configure t
 
 * Click **Save** to save the data source with a relevant name.
 
+### Live connection
+* MongoDB connector works on extract mode, so there will be some time needed to extract the data, and it needs to be synchronized periodically. But there is an indirect way to connect MongoDB as a Live connection so you can avoid time taken and Memory usage to create and synchronize the data source. Also, the data will be in your MongoDB, and all query operations will be performed within your MongoDB database.
+* Please follow this [document](https://www.syncfusion.com/kb/11978/mongodb-live-connection-through-mongodb-bi-connector) to connect MongoDB as a Live connection using MySQL connector or through ODBC data source connector.
+
 ## Related links
 [Blog post](https://www.boldbi.com/blog/connect-mongodb-workloads-migrated-to-azure-cosmos-db)
 

@@ -11,7 +11,69 @@ documentation: ug
 Bold BI dashboard designer supports connecting Google BigQuery server using the Live mode.
 
 ## Prerequisites for Embedded BI version
+
 > **NOTE:**  This is only applicable for Embedded BI version and if you are using cloud Bold BI product, simply skip this step.
+
+## Authentication Types:
+
+1. OAuth
+
+2. Service Account
+
+## Connecting with Service Authentication:
+
+**Create a service account:**
+
+1. Go to the Create service account page in the Google Cloud console.
+
+`https://console.cloud.google.com/projectselector2/iam-admin/serviceaccounts`
+
+2. Select your project from the dropdown.
+
+![ServiceAuth](/static/assets/embedded/working-with-datasource/data-connectors/images/GoogleBigQuery/ChooseProject.png)
+
+3. Click Create Service Account
+
+![ServiceAuth](/static/assets/embedded/working-with-datasource/data-connectors/images/GoogleBigQuery/CreateServiceAccount.png)
+
+4. In the Service account name field, enter a name. The Google Cloud console fills in the Service account ID field based on this name.
+
+![ServiceAuth](/static/assets/embedded/working-with-datasource/data-connectors/images/GoogleBigQuery/CreateServiceAccountDialog.png)
+
+5. In the Service account description field, enter a description. For example, Service account for quickstart.
+
+
+6. Click Create and continue.
+
+7. To provide access to your project, grant the following role(s) to your service account: Project > Owner.
+
+![ServiceAuth](/static/assets/embedded/working-with-datasource/data-connectors/images/GoogleBigQuery/GrantRole.png)
+
+8. In the Select a role list, select a role and Click Continue.
+
+For additional roles, click add Add another role and add each additional role.
+
+> **NOTE:**  The Role field affects which resources your service account can access in your project. You can revoke these roles or grant additional roles later. In production environments, do not grant the Owner, Editor, or Viewer roles in production environments. Instead, grant a predefined role or custom role that meets your needs.
+
+8. Click Done to finish creating the service account. Do not close your browser window. You will use it in the next step.
+
+**Create a service account key:**
+
+1. In the Google Cloud console, click the email address for the service account that you created.
+
+2. Click context menu and select Manage Keys.
+
+![ServiceAuth](/static/assets/embedded/working-with-datasource/data-connectors/images/GoogleBigQuery/ManageKeys.png)
+
+3. Click Add key, and then click Create new key.
+
+![ServiceAuth](/static/assets/embedded/working-with-datasource/data-connectors/images/GoogleBigQuery/AddKey.png)
+
+4. Click Create. A JSON key file is downloaded to your computer.
+
+![ServiceAuth](/static/assets/embedded/working-with-datasource/data-connectors/images/GoogleBigQuery/JsonKey.png)
+
+## Connecting with OAuth:
 
 **1. Go to your personal or organization accounts for Google developer console and create a project or application**
 
@@ -89,7 +151,9 @@ Also, configure the client ID and client secret information in **Connectors** se
 Once the pre-requisites done, you are good to go to work with Google BigQuery.
 
 ## Choose a Google BigQuery data source
+
 To configure the Google BigQuery data source, follow these steps: 
+
 1. Click the **Data Sources** button in the configuration panel to add a new data connection.
 
    ![Data source icon](/static/assets/embedded/working-with-datasource/data-connectors/images/common/DataSourcesIcon.png)
@@ -104,7 +168,9 @@ To configure the Google BigQuery data source, follow these steps:
    ![Choose data source server](/static/assets/embedded/working-with-datasource/data-connectors/images/GoogleBigQuery/ChooseDS_server.png)
 
 ## Authentication with Google BigQuery
+
 Use the following steps to authenticate with Google BigQuery server:
+
 1. Click the data source, you will be prompted with a login window. Enter the credentials of your Google BigQuery account to authorize.
 
    ![Google BigQuery Login](/static/assets/embedded/working-with-datasource/data-connectors/images/GoogleBigQuery/GoogleBQ_Login.png)
@@ -124,21 +190,40 @@ Use the following steps to authenticate with Google BigQuery server:
 
 > **NOTE:**  To connect to another account, click **Connect New Account**.
 
-## Connect to Google BigQuery
-### Create a Google BigQuery data source
-After successful authentication, the **NEW DATA SOURCE** configuration panel opens. 
-Follow these steps to create the Google BigQuery data source. 
-1. Enter name and description (optional) for the data source. 
-2. Choose the required projects in **Project** drop-down box.
-3. The authentication type will be sent to Google BigQuery automatically in the **Connected as** text box since OAuth is used for authenticating with the Google BigQuery account.
-4. To connect Google Big Query with particular dataset, enter the property currentdataset={datasetname} or specificdataset={datasetname} in the Additional connection parameters text box.
+## Connect to Google BigQuery 
 
-   ![Google BigQuery Connection](/static/assets/embedded/working-with-datasource/data-connectors/images/GoogleBigQuery/GoogleBQ_Connection.png#max-width=100%)
+### Create a Google BigQuery data source
+
+After successful authentication, the **NEW DATA SOURCE** configuration panel opens. 
+
+Follow these steps to create the Google BigQuery data source. 
+
+Enter the data source's name and description (optional).
+
+Select the Authentication Type.
+
+**For Service Authentication:**
+
+Select the JSON file downloaded from [Connecting with Service Authentication](/embedded-bi/working-with-data-source/data-connectors/google-bigquery/#connecting-with-service-authentication) 
+
+![Google BigQuery Connection](/static/assets/embedded/working-with-datasource/data-connectors/images/GoogleBigQuery/ConnectingServiceAccount.png#max-width=100%)
+
+**For OAuth:**
+
+The authentication type will automatically be sent to the Google BigQuery in the **Connected as** text box since the OAuth is used for authenticating with the Google BigQuery account.
+
+Choose the required projects in the **Project** drop-down box. 
+
+To connect the Google Big Query with a particular dataset, enter the property currentdataset={datasetname} or specificdataset={datasetname} in the Additional connection parameters text box.
+
+   ![Google BigQuery Connection](/static/assets/embedded/working-with-datasource/data-connectors/images/GoogleBigQuery/ConnectingOAuth.png#max-width=100%)
 
 To edit the connection information, use the [Edit Connection](https://help.syncfusion.com/bold-bi/editing-a-data-connection) option.
 
 ### Preview data
+
 1. Click **Connect** to connect the Google BigQuery server with configured details.
+
 The available datasets list is shown in a tree view for the selected projects that are retrieved from the Google BigQuery server.
 
    ![Treev view](/static/assets/embedded/working-with-datasource/data-connectors/images/GoogleBigQuery/GoogleBQ_Treeview.png#max-width=100%)
@@ -158,6 +243,7 @@ If the dataset name is provided in Additional connection parameters text box, on
 3. Click **Save** to save the data source with relevant name.
 
 ## Connected accounts for OAuth data sources
+
 If you have already logged into the account and authenticated with the data source, the account information will be listed here. You can select one of the accounts or connect to a new account by clicking the **Connect New Account** button.
 
    ![OAuth](/static/assets/embedded/working-with-datasource/data-connectors/images/GoogleBigQuery/OAuthDS.png)

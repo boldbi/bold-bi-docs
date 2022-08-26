@@ -157,15 +157,15 @@ The below values are necessary to form the signature
 <tr>
 <td>embed_timestamp</td>
 <td>Yes</td>
-<td>The current time as UNIX time stamp. The embed URL formed is valid for 5 minutes from this embed time stamp.</td>
-<td>1583934776</td>
+<td>The current time as UNIX time stamp. The embed URL formed is valid for 604800 sec(7 days as maximum) from this embed time stamp.</td>
+<td>Example for embed_timestamp is 1583934776.</td>
 </tr>
 
 <tr>
 <td>embed_expirationtime</td>
 <td>No</td>
-<td>Set the duration for the token to be alive. It must be represented in seconds. The default time is 86400 s and the maximum is 604800 s.</td>
-<td>604800</td>
+<td>Set the duration for the token to be alive. It must be represented in seconds. The minimum time is 86400 sec (1 day) and the maximum time is 604800 sec(7 days).</td>
+<td>Example for embed_expirationtime is 604800</td>
 </tr>
 
 </table>
@@ -384,8 +384,8 @@ The following values are necessary to form the signature.
 
 <tr>
 <td>embed_timestamp</td>
-<td>The current time as UNIX time stamp. The embed URL formed is valid for 5 minutes from this embed time stamp.</td>
-<td>1583934776</td>
+<td>The current time as UNIX time stamp. The embed URL formed is valid for 604800 sec(7 days as maximum) from this embed time stamp.</td>
+<td>Example for embed_timestamp is 1583934776.</td>
 </tr>
 </table>
 
