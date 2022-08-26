@@ -90,6 +90,7 @@
         "Microsoft SQL Server Analysis Services": "ssas",
         "Mixpanel": "mix-panel",
         "MongoDB": "mongodb",
+		"CosmosDB": "cosmosdb",
         "MySQL": "mysql",
         "New Relic": "new-relic",
         "Nicereply": "nicereply",
@@ -292,6 +293,10 @@
       }
     },
     "Site Administration": {
+	  "Look and Feel Settings": {
+        "How to create custom application theme": "create-custom-application-theme",
+        "How to create custom dashboard theme": "create-custom-dashboard-theme"
+      },
       "Dashboard Settings": {
         "Public Dashboards": "public-dashboards",
         "Default views": "default-views",

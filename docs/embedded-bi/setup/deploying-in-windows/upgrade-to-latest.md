@@ -12,11 +12,13 @@ This section explains how to upgrade Bold BI Server from any version to the late
 
 Bold BI releases several major versions in a year. Each version includes new features, bug fixes, and other improvements.
 
-Bold BI Enterprise Edition can be upgraded to latest version at any time manually, and there are no automatic updates for Bold BI Server. Before upgrading, you can refer to the features and enhancements from the [Release Notes](https://www.boldbi.com/release-history/enterprise/).
+Bold BI Enterprise Edition can be manually upgraded to the latest version at any time, and there are no automatic updates for Bold BI Server. Before upgrading, you can refer to the features and enhancements from the [Release Notes](https://www.boldbi.com/release-history/enterprise/).
+
+> **NOTE:** Upgrading to the latest version does not require a license key. On the other hand, our services will retrieve the license in the backend after upgrading to the latest version.
 
 ## Upgrading guidelines
 
-Bold BI recommends you to follow below guidelines while upgrading the Bold BI Server from an older version to latest version.
+Bold BI recommends you follow the below guidelines while upgrading the Bold BI Server from an older version to the latest version. 
 
 * Save all the open settings and the unsaved items.
 * Ensure no one is currently working with dashboards.

@@ -202,6 +202,42 @@ var instance = BoldBI.getInstance("container"); //container -> embed container i
 instance.refreshWidgetData(widgetNames, hideLoader, dashboardId); // widgetnames ->Define the name of the widget to be Refresh , hideLoader -> Define whether to show or hide loading indicator while processing , dashboardId -> Define the unique id of the dashboard if it is present within the multitab dashboard.
 ```
 
+## getWidgetInstance()
+
+This method will used to get instance of that specific widget using Id.
+
+**Example**
+
+```js
+var dashboard = BoldBI.create(options);
+var widgetId = "2583540a-f970-41a1-9fc8-31c0581e7aa3"; // For getting widget ID please refer `How to get widget Id`.
+var widgetInstance = dashboard.getWidgetInstance(widgetId);
+```
+
+### setFilterParameters()
+
+This method is used to set the filter parameters to the widget instance. These filter parameters would be applied to the respective widget at the initial rendering.
+
+If that widget acts as a master, the filter will be applied to the slave widgets.
+
+**NOTE:** Currently, we provide support for the text field only.
+
+**Example**
+
+```js
+var widgetId = "2583540a-f970-41a1-9fc8-31c0581e7aa3";
+var filtersValue = ["Average", "Good"]; 
+var widgetInstance = dashboard.getWidgetInstance(widgetId).setFilterParameters(filtersValue);
+```
+
+### How to get widget id.
+
+1. Open the desired dashboard and select the `More` option under the widget you want to set filter value. Then, select the `Get Embed Code` from the drop-down menu.
+![InspectElement](/static/assets/embedded/javascript/images/widget-getembedcode-instance.png)
+
+2. Get the widget Id from the embed code prompt. 
+![InspectElement](/static/assets/embedded/javascript/images/widget-id-embedcode.png) 
+
 ## exportDashboardAsPdf()
 
 This method will export the dashboard as Pdf.
@@ -335,7 +371,7 @@ instance.exportWidgetAsPdf(exportInformation);
 </tr>
 <tr>
 <td><code>dashboardId</code></td>
-<td>Define the unique id of the dashboard if it is present within the multi-tab dashboard, and it is mandatory for a multi-tab dashboard and an empty string for other cases.</td>
+<td>Define the unique id of the dashboard if it is present within the multitab dashboard and the widget id if it is present within the pinboard. It is mandatory for the multitab dashboard, pinboard, and empty string for other cases.</td>
 </tr>
 <tr>
 <td><code>widgetName</code></td>
@@ -378,7 +414,7 @@ instance.exportWidgetAsImage(exportInformation);
 </tr>
 <tr>
 <td><code>dashboardId</code></td>
-<td> Define the unique id of the dashboard if it is present within the multitab dashboard and,it is mandatory for multitab dashboard, pinboard and empty string for other cases.</td>
+<td> Define the unique id of the dashboard if it is present within the multitab dashboard and the widget id if it is present within the pinboard. It is mandatory for the multitab dashboard, pinboard, and empty string for other cases.</td>
 </tr>
 <tr>
 <td><code>widgetName</code></td>
@@ -421,7 +457,7 @@ instance.exportWidgetAsExcel(exportInformation);
 </tr>
 <tr>
 <td><code>dashboardId</code></td>
-<td>Define the unique id of the dashboard if it is present within the multitab dashboard and,it is mandatory for multitab dashboard, pinboard and empty string for other cases.</td>
+<td>Define the unique id of the dashboard if it is present within the multitab dashboard and the widget id if it is present within the pinboard. It is mandatory for the multitab dashboard, pinboard, and empty string for other cases.</td>
 </tr>
 <tr>
 <td><code>widgetName</code></td>
@@ -457,7 +493,7 @@ instance.exportWidgetAsCsv(exportInformation);
 </tr>
 <tr>
 <td><code>dashboardId</code></td>
-<td>Define the unique id of the dashboard if it is present within the multitab dashboard and,it is mandatory for multitab dashboard, pinboard and empty string for other cases.</td>
+<td>Define the unique id of the dashboard if it is present within the multitab dashboard and the widget id if it is present within the pinboard. It is mandatory for the multitab dashboard, pinboard, and empty string for other cases.</td>
 </tr>
 <tr>
 <td><code>widgetName</code></td>
@@ -466,5 +502,124 @@ instance.exportWidgetAsCsv(exportInformation);
 <tr>
 <td><code>fileName</code></td>
 <td>Define the name of the file to be exported, and it is an optional parameter of string type.</td>
+</tr>
+</table>
+
+## createDashboardCategory()
+
+This method will be used Create an new category to server. 
+
+**Example**
+```js
+var instance = BoldBI.getInstance("container"); //container -> embed container id
+instance.createDashboardCategory(categoryName, categoryDescription, callBackFnc, containerId);
+function callBackFnc(args)
+{
+   // The parameter args contains the status whether category is added or not.
+}
+```
+
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tr>
+<td><code>categoryName</code></td>
+<td><code>string</code></td>
+<td>Need to set the name to create a new category in the server.</td>
+</tr>
+<tr>
+<td><code>categoryDescription</code></td>
+<td><code>string</code></td>
+<td>Need to set the description of new category.</td>
+</tr>
+<tr>
+<td><code>callBackFnc</code></td>
+<td><code>string</code></td>
+<td>This method will act as call back function ,it will return the status of whether category is added or not.</td>
+</tr>
+<tr>
+<td><code>containerId</code></td>
+<td><code>string</code></td>
+<td>Need to set embed container id.</td>
+</tr>
+</table>
+
+## getDashboardCategories()
+
+This method will be used to get the dashboard categories from server. 
+
+**Example**
+```js
+var instance = BoldBI.getInstance("container"); //container -> embed container id
+instance.getDashboardCategories(callBackFnc, containerId);
+function callBackFnc(args)
+{
+   // The args parameter contains the list of categories available in the server as an array, which contains CategoryId and CategoryName
+}
+```
+
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tr>
+<td><code>callBackFnc</code></td>
+<td><code>string</code></td>
+<td>This method will act as call back function ,it will get the category list from the server.</td>
+</tr>
+<tr>
+<td><code>containerId</code></td>
+<td><code>string</code></td>
+<td>Need to set the embed container id.</td>
+</tr>
+</table>
+
+## saveDashboard()
+
+This method is used to publish the dashboard to the server with the dashboard name into the desired category and desired dashboard name.
+
+1. To Publish or Save the new dashboard.<br>
+2. To Publish or Save the existing dashboard.<br>
+3. To PublishAs or SaveAs the existing dashboard.
+
+
+**Example**
+```js
+var instance = BoldBI.getInstance("container"); //container -> embed container id
+var publishModel = {category: "Sales",categoryId: "e6ed2f36-7205-423e-81e0-38a8ceb8e68c",description: "Published Using API",,isPublic: true,name: "Publish API_01"}
+instance.saveDashboard(publishModel, containerId);
+```
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tr>
+<td><code>publishModel</code></td>
+<td><code>object</code></td>
+<td>This object contains the following Parameters <br>
+category – Set the name of the category in the dashboard will be published. <br>
+  categoryId – Set the unique id of category in the dashboard will be published, the category Id taken from getDashboardCategories().  <br>
+  description – Set the description in the dashboard will be published. <br>
+  isPublic – Need to set the publish dashboard as public or not.
+  name - Set the Name of the dashboard in the dashboard will be published.
+</td>
+</tr>
+<tr>
+<td><code>containerId</code></td>
+<td><code>string</code></td>
+<td>Set the embed container id.</td>
 </tr>
 </table>

@@ -16,13 +16,11 @@ You can explore the available samples in detail here,
 
 [ASP.NET MVC](/embedded-bi/javascript-based/samples/v3.3.40-or-later/asp-net-mvc/)
 
-[Angular](/embedded-bi/javascript-based/samples/v3.3.40-or-later/angular/)
+[Angular with javascript](/embedded-bi/javascript-based/samples/v3.3.40-or-later/angular-with-javascript/)
 
 [ASP.NET](/embedded-bi/javascript-based/samples/v3.3.40-or-later/asp-net/)
 
 [Blazor with javascript](/embedded-bi/javascript-based/samples/v3.3.40-or-later/blazor-with-javascript/)
-
-[Coldfusion](/embedded-bi/javascript-based/samples/v3.3.40-or-later/coldfusion/)
 
 [Ruby on Rails](/embedded-bi/javascript-based/samples/v3.3.40-or-later/ruby-on-rails/)
 
@@ -40,10 +38,11 @@ You can explore the available samples in detail here,
 
 [VueJS with ASP.NET Core](/embedded-bi/javascript-based/samples/v3.3.40-or-later/vuejs-with-core/)
 
-[Java Servlet](/embedded-bi/javascript-based/samples/v3.3.40-or-later/java-servlet/)
-
-[Django](/embedded-bi/javascript-based/samples/v3.3.40-or-later/django/)
-
 [WPF](/embedded-bi/javascript-based/samples/v3.3.40-or-later/wpf/)
 
 [Xamarin](/embedded-bi/javascript-based/samples/v3.3.40-or-later/xamarin/)
+
+[Flutter](/embedded-bi/javascript-based/samples/v3.3.40-or-later/flutter-with-javascript/)
+
+[Other platform samples](/embedded-bi/javascript-based/samples/v3.3.40-or-later/other-platform-samples/)
+                        

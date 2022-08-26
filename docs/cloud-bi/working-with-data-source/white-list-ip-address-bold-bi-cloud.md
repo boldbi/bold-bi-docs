@@ -10,20 +10,20 @@ documentation: ug
 
 You should White list the following IP addresses of the Bold BI cloud servers and allow the database server to create the Datasource.
 
-`52.234.231.3`
+`34.71.204.150`
 
-`52.234.229.253`
+`34.136.243.157`
 
-`52.234.228.68`
+`34.172.244.28`
 
-`52.234.209.94` 
+`35.238.71.246`
 
-`52.234.228.143`
-
-`52.234.230.214`
-
-`52.234.224.254`
-
-`52.234.225.60`
+`35.184.203.162`
 
  
+
+
+
+
+
+

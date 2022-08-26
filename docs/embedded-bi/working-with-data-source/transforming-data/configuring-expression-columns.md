@@ -284,6 +284,16 @@ documentation: ug
    </tr>
    <tr>
    <td>Aggregation</td>
+   <td>AVGD</td>
+   <td><ul style="list-style-type:none">
+   <b>Syntax:</b></br> AVGD(numeric_expression)</br></br>
+   <b>Description:</b></br> Returns the average of the Distinct values in the given expression.</br></br>
+   <b>Example:</b></br>
+   AVGD([UnitPrice])</ul>
+   </td>
+   </tr>
+   <tr>
+   <td>Aggregation</td>
    <td>COUNT</td>
    <td><ul style="list-style-type:none">
    <b>Syntax:</b></br> COUNT(numeric_expression)</br></br>
@@ -341,6 +351,16 @@ documentation: ug
    <b>Description:</b></br> Returns the sum of values in the given expression.</br></br>
    <b>Example:</b></br>
    SUM([UnitPrice])</ul>
+   </td>
+   </tr>
+   <tr>
+   <td>Aggregation</td>
+   <td>SUMD</td>
+   <td><ul style="list-style-type:none">
+   <b>Syntax:</b></br> SUMD(numeric_expression)</br></br>
+   <b>Description:</b></br> Returns the sum of the Distinct values in the given expression.</br></br>
+   <b>Example:</b></br>
+   SUMD([UnitPrice])</ul>
    </td>
    </tr>
    <tr>
@@ -867,6 +887,415 @@ documentation: ug
    </table>
 
    Once framing an expression, click `Save` in Query Expression window.
+
+## Examples of different data source connection for DATEADD function
+
+<table>
+   <tr>
+   <th>Data Source Connection</th>
+   <th>Date Part</th>
+   <th>Syntax & Examples</th>
+   </tr>
+   <tr>
+   <td rowspan=11>SQL Server</td>  
+   </tr> 
+   <tr>
+   <td rowspan=2>day   
+   </td> 
+   </tr>  
+    <tr>
+   <td>
+   DATEADD(day,1,[ModifiedDate])</br></br>
+   DATEADD(dd,1,[ModifiedDate])</br></br>
+   DATEADD(d,1,[ModifiedDate])
+</td></tr>
+   </tr>
+   <tr>
+   <td rowspan=2>year</td>
+   </tr>
+   <tr>
+   <td>
+   DATEADD(year, 2, '2017/08/25')</br></br>
+   DATEADD(yy,1,[ModifiedDate])</br></br>
+   DATEADD(yyyy,1,[ModifiedDate])</br></br>
+   DATEADD(y,1,[ModifiedDate])
+   </td></tr>  
+   <tr>
+   <td rowspan=2>month</td>
+   </tr>
+   <tr>
+   <td>
+   DATEADD(month,1,[ModifiedDate])</br></br>
+   DATEADD(dd,1,[ModifiedDate])</br></br>
+   DATEADD(d,1,[ModifiedDate])
+</td>
+</tr>
+   <tr>
+   <td rowspan=2>week</td>
+   </tr>
+   <tr>
+   <td>
+   DATEADD(week, 2, '2017/08/25')</br></br>
+   DATEADD(ww,1,[ModifiedDate])</br></br>
+   DATEADD(w,1,[ModifiedDate])
+ <tr>
+   <td rowspan=2>quarter</td>
+   </tr>   
+   <tr>
+   <td>
+   DATEADD(quarter, 1, '2017/08/25')</br></br>
+   DATEADD(qq,1,[ModifiedDate])</br></br>
+   DATEADD(q,1,[ModifiedDate])  
+   </td></tr>
+    <tr>
+   <td rowspan=11>MySQL</td>  
+   </tr> 
+   <tr>
+   <td rowspan=2>day   
+   </td> 
+   </tr>  
+    <tr>
+   <td>
+   DATEADD(day,1,[ModifiedDate])
+</td></tr>
+   </tr>
+   <tr>
+   <td rowspan=2>year</td>
+   </tr>
+   <tr>
+   <td>
+   DATEADD(year,1,[ModifiedDate])
+   </td></tr>  
+   <tr>
+   <td rowspan=2>month</td>
+   </tr>
+   <tr>
+   <td>
+   DATEADD(month,1,[ModifiedDate])
+</td>
+</tr>
+   <tr>
+   <td rowspan=2>week</td>
+   </tr>
+   <tr>
+   <td>
+   DATEADD(week,1,[ModifiedDate])
+ <tr>
+   <td rowspan=2>quarter</td>
+   </tr>   
+   <tr>
+   <td>
+   DATEADD(quarter,1,[ModifiedDate])  
+   </td></tr>
+    <tr>
+   <td rowspan=11>ORACLE</td>  
+   </tr> 
+   <tr>
+   <td rowspan=2>day   
+   </td> 
+   </tr>  
+    <tr>
+   <td>
+   DATEADD(day,1,[ModifiedDate])
+</td></tr>
+   </tr>
+   <tr>
+   <td rowspan=2>year</td>
+   </tr>
+   <tr>
+   <td>
+   DATEADD(year,1,[ModifiedDate])
+   </td></tr>  
+   <tr>
+   <td rowspan=2>month</td>
+   </tr>
+   <tr>
+   <td>
+   DATEADD(month,1,[ModifiedDate])
+</td>
+</tr>
+   <tr>
+   <td rowspan=2>week</td>
+   </tr>
+   <tr>
+   <td>
+   DATEADD(week,1,[ModifiedDate])
+ <tr>
+   <td rowspan=2>quarter</td>
+   </tr>   
+   <tr>
+   <td>
+   DATEADD(quarter,1,[ModifiedDate]) 
+   </td></tr>
+     <tr>
+   <td rowspan=11>SSAS</td>  
+   </tr> 
+   <tr>
+   <td rowspan=2>day   
+   </td> 
+   </tr>  
+    <tr>
+   <td>
+   DATEADD(day,1,[ModifiedDate])
+</td></tr>
+   </tr>
+   <tr>
+   <td rowspan=2>year</td>
+   </tr>
+   <tr>
+   <td>
+   DATEADD(year,1,[ModifiedDate])
+   </td></tr>  
+   <tr>
+   <td rowspan=2>month</td>
+   </tr>
+   <tr>
+   <td>
+   DATEADD(month,1,[ModifiedDate])
+</td>
+</tr>
+   <tr>
+   <td rowspan=2>week</td>
+   </tr>
+   <tr>
+   <td>
+   DATEADD(week,1,[ModifiedDate])
+ <tr>
+   <td rowspan=2>quarter</td>
+   </tr>   
+   <tr>
+   <td>
+   DATEADD(quarter,1,[ModifiedDate]) 
+   </td></tr>
+   <tr>
+   <tr>
+   <td rowspan=11>Snowflake</td>  
+   </tr> 
+   <tr>
+   <td rowspan=2>day   
+   </td> 
+   </tr>  
+    <tr>
+   <td>
+   DATEADD(d,1,[ModifiedDate])</br></br>
+   DATEADD(dd,1,[ModifiedDate])</br></br>
+   DATEADD(days,1,[ModifiedDate])</br></br>
+   DATEADD(dayofmonth,1,[ModifiedDate])
+</td></tr>
+   </tr>
+   <tr>
+   <td rowspan=2>year</td>
+   </tr>
+   <tr>
+   <td>
+   DATEADD(year,1,[ModifiedDate])</br></br>
+   DATEADD('year',1,[ModifiedDate])</br></br>
+   DATEADD('yy',1,[ModifiedDate])</br></br>
+   DATEADD('yyyy',1,[ModifiedDate])</br></br>
+   DATEADD("yy",1,[ModifiedDate])
+   </td></tr>  
+   <tr>
+   <td rowspan=2>month</td>
+   </tr>
+   <tr>
+   <td>
+   DATEADD(months,1,[ModifiedDate])</br></br>
+   DATEADD(mon,1,[ModifiedDate])</br></br>
+   DATEADD(mm,1,[ModifiedDate])</br></br>
+   DATEADD(mon,1,[ModifiedDate])
+</td>
+</tr>
+   <tr>
+   <td rowspan=2>week</td>
+   </tr>
+   <tr>
+   <td>
+   DATEADD(w,1,[ModifiedDate])</br></br>
+   DATEADD(wk,1,[ModifiedDate])</br></br>
+   DATEADD(weekofyear,1,[ModifiedDate])</br></br>
+   DATEADD(wof,1,[ModifiedDate])</br></br>
+   DATEADD(wy,1,[ModifiedDate])
+ <tr>
+   <td rowspan=2>quarter</td>
+   </tr>   
+   <tr>
+   <td>
+   DATEADD(q,1,[ModifiedDate])</br></br>
+   DATEADD(qtr,1,[ModifiedDate])</br></br>
+   DATEADD(qtrs,1,[ModifiedDate])</br></br>
+   DATEADD(quarters,1,[ModifiedDate])
+   </td></tr>
+   <tr>
+   <td rowspan=11>Presto</td>  
+   </tr> 
+   <tr>
+   <td rowspan=2>day   
+   </td> 
+   </tr>  
+    <tr>
+   <td>
+   DATEADD(day,1,[ModifiedDate])
+</td></tr>
+   </tr>
+   <tr>
+   <td rowspan=2>year</td>
+   </tr>
+   <tr>
+   <td>
+   DATEADD(year,1,[ModifiedDate])
+   </td></tr>  
+   <tr>
+   <td rowspan=2>month</td>
+   </tr>
+   <tr>
+   <td>
+   DATEADD(month,1,[ModifiedDate])
+</td>
+</tr>
+   <tr>
+   <td rowspan=2>week</td>
+   </tr>
+   <tr>
+   <td>
+   DATEADD(week,1,[ModifiedDate])
+ <tr>
+   <td rowspan=2>quarter</td>
+   </tr>   
+   <tr>
+   <td>
+   DATEADD(quarter,1,[ModifiedDate]) 
+   </td></tr>
+    <tr>
+   <td rowspan=11>PostgreSQL</td>  
+   </tr> 
+   <tr>
+   <td rowspan=2>day   
+   </td> 
+   </tr>  
+    <tr>
+   <td>
+   DATEADD(day,1,[ModifiedDate])
+</td></tr>
+   </tr>
+   <tr>
+   <td rowspan=2>year</td>
+   </tr>
+   <tr>
+   <td>
+   DATEADD(year,1,[ModifiedDate])
+   </td></tr>  
+   <tr>
+   <td rowspan=2>month</td>
+   </tr>
+   <tr>
+   <td>
+   DATEADD(month,1,[ModifiedDate])
+</td>
+</tr>
+   <tr>
+   <td rowspan=2>week</td>
+   </tr>
+   <tr>
+   <td>
+   DATEADD(week,1,[ModifiedDate])
+ <tr>
+   <td rowspan=2>quarter</td>
+   </tr>   
+   <tr>
+   <td>
+   DATEADD(quarter,1,[ModifiedDate]) 
+   </td></tr>
+   <tr>
+   <td rowspan=11>GoogleBigQuery</td>  
+   </tr> 
+   <tr>
+   <td rowspan=2>day   
+   </td> 
+   </tr>  
+    <tr>
+   <td>
+   DATEADD(day,1,[ModifiedDate])
+</td></tr>
+   </tr>
+   <tr>
+   <td rowspan=2>year</td>
+   </tr>
+   <tr>
+   <td>
+   DATEADD(year,1,[ModifiedDate])
+   </td></tr>  
+   <tr>
+   <td rowspan=2>month</td>
+   </tr>
+   <tr>
+   <td>
+   DATEADD(month,1,[ModifiedDate])
+</td>
+</tr>
+   <tr>
+   <td rowspan=2>week</td>
+   </tr>
+   <tr>
+   <td>
+   DATEADD(week,1,[ModifiedDate])
+ <tr>
+   <td rowspan=2>quarter</td>
+   </tr>   
+   <tr>
+   <td>
+   DATEADD(quarter,1,[ModifiedDate]) 
+   </td></tr>
+    <tr>
+   <td rowspan=11>Elastic Search</td>  
+   </tr> 
+   <tr>
+   <td rowspan=2>day   
+   </td> 
+   </tr>  
+    <tr>
+   <td>
+   DATEADD(days,1,[ModifiedDate])</br></br>
+   DATEADD(dd,1,[ModifiedDate])</br></br>
+   DATEADD(d,1,[ModifiedDate])
+</td></tr>
+   </tr>
+   <tr>
+   <td rowspan=2>year</td>
+   </tr>
+   <tr>
+   <td>
+   DATEADD(years,1,[ModifiedDate])</br></br>
+   DATEADD(yy,1,[ModifiedDate])</br></br>
+   DATEADD(yyyy,1,[ModifiedDate])
+   </td></tr>  
+   <tr>
+   <td rowspan=2>month</td>
+   </tr>
+   <tr>
+   <td>
+   DATEADD(months,1,[ModifiedDate])</br></br>
+   DATEADD(mm,1,[ModifiedDate])</br></br>
+   DATEADD(m,1,[ModifiedDate])
+</td>
+</tr>
+   <tr>
+   <td rowspan=2>week</td>
+   </tr>
+   <tr>
+   <td>
+   DATEADD(weeks,1,[ModifiedDate])</br></br>
+   DATEADD(wk,1,[ModifiedDate])</br></br>
+   DATEADD(ww,1,[ModifiedDate])
+ <tr>
+   <td rowspan=2>quarter</td>
+   </tr>   
+   <tr>
+   <td>
+   DATEADD(quarters,1,[ModifiedDate])</br></br>
+   DATEADD(qq,1,[ModifiedDate])</br></br>
+   DATEADD(q,1,[ModifiedDate])
+   </td></tr>
+   </table>
    
 ## Examples of different data source connection for DATEADD function
 

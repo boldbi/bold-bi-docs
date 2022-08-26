@@ -116,10 +116,39 @@ You can configure the export formats in the schedule.
 
 ![Schedule Image Export](/static/assets/embedded/managing-resources/images/export-image.png)
 
-## Configure Schedule with Location Export
+## Other Destination Schedule Export
+
+### FTP location export
 You can export the dashboards to an FTP, FTPS, or SFTP location by configuring the respective server credentials while scheduling the dashboard export.
 
 ![Schedule Location Export](/static/assets/embedded/managing-resources/images/ftp-location.png)
+
+### Webhook Notification
+You can send a webhook notification for an export schedule or [data alerts](/embedded-bi/working-with-dashboards/data-alerts/). by selecting the created webhook in Other Destinations section.
+
+![Select Webhook](/static/assets/embedded/managing-resources/images/webhook-notification.png)
+
+#### Steps to configure webhook when adding or editing schedules
+
+1. Select previously created webhooks from the Webhook list dropdown.
+
+	![Select Webhook](/static/assets/embedded/managing-resources/images/select-webhook.png)
+
+2. If you haven't created any webhooks, you can create them by clicking the `Create` option. This will open the `Add Webhook` page in a new tab Please visit this [link](/embedded-bi/webhook/) for how to add webhook.
+
+	![Create Webhook](/static/assets/embedded/managing-resources/images/create-webhook.png)
+
+3. After creating the webhook, you need to click the `Refresh` option for the created webhook to appear in the dropdown.
+
+	![Refresh Webhook](/static/assets/embedded/managing-resources/images/refresh-webhook.png)
+
+4. After selecting any of the webhooks, you can see the selected webhook endpoint with request content type details in the info message section.
+
+	![Configuration Message](/static/assets/embedded/managing-resources/images/webhook-configuration-message.png)
+
+5. When running the schedule, Bold BI will call the webhook endpoint you selected with the selected or all payload data. Click [here](/embedded-bi/webhook/webhook-payload/) to learn more about what is the payload data sent to a webhook call.
+
+> **NOTE:**  `Time Driven Dashboard Export` event webhook get listed only for the normal schedule, and `Alert Driven Dashboard Export` event webhook get listed only for data alert schedule.
 
 ## Edit Schedules
 Category, dashboard, name, recurrence type, recurrence, start and end dates, export format and the recipients can be changed in the `Edit Schedule` dialog box.

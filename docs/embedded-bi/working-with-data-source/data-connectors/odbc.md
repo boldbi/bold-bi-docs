@@ -62,6 +62,8 @@ After clicking the data source, the NEW DATA SOURCE configuration panel opens. T
 * Vertica
 * Microsoft Access
 * Elasticsearch
+* FileMaker
+* Firebird
 
 Follow the given steps to create an ODBC data source: 
 1. Enter a name and description (optional) for the data source.

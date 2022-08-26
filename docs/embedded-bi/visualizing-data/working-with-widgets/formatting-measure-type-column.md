@@ -37,6 +37,7 @@ When support culture is selected, there will be a checkbox that is needed to ena
 
 ![Auto enable Lakhs and Crores](/static/assets/embedded/visualizing-data/working-with-widgets/images/auto-enable-lakhsandcrores.png#max-width=50%)
 
+
 **Decimal places**
 
 You can set the decimal places explicitly when the representation is set with options other than `Auto`.

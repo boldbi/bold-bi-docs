@@ -20,38 +20,45 @@ This event will be triggered before the dashboard banner icons were rendered.
 <tr>
 <th>Name</th>
 <th>Type</th>
+<th>Access</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td class="name">type</td>
-<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">Enum</span></td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">enum</span></td>
+<td class="access">get</td>
 <td class="description">Will holds the current event type that triggered the event</td>
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">object</span></td>
-<td class="description">Holds the Dashboard Viewer's Object.</td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type"><a href=/embedded-bi/javascript-based/api-reference/events/#dashboardproperties>object</a></span></td>
+<td class="access">get</td>
+<td class="description">Holds the dashboard viewer's object.</td>
 </tr>
 <tr>
 <td class="name">iconsinformation</td>
 <td class="type"><span class="param-type">array</span></td>
+<td class="access">set</td>
 <td class="description">Holds the information about the list of icons to be rendered in the Dashboard.</td>
 </tr>
 <tr>
 <td class="name">enableComment</td>
 <td class="type"><span class="param-type">boolean</span></td>
+<td class="access">get</td>
 <td class="description">Holds the enableComment value.</td>
 </tr>
 <tr>
 <td class="name">dashboardPath</td>
 <td class="type"><span class="param-type">string</span></td>
+<td class="access">get</td>
 <td class="description">Holds the current dashboard path value.</td>
 </tr>
 <tr>
 <td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
+<td class="access">set</td>
 <td class="description">Holds the cancel value of the current operation.</td>
 </tr>
 </tbody>
@@ -81,48 +88,60 @@ This event will be triggered after an icon from the dashboard banner is clicked.
 <tr>
 <th>Name</th>
 <th>Type</th>
+<th>Access</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td class="name">type</td>
-<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">Enum</span></td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">enum</span></td>
+<td class="access">get</td>
 <td class="description">Will holds the current event type that triggered the event</td>
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">object</span></td>
-<td class="description">Holds the Dashboard Viewer's Object.</td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type"><a href=/embedded-bi/javascript-based/api-reference/events/#dashboardproperties>object</a></span></td>
+<td class="access">get</td>
+<td class="description">Holds the dashboard viewer's object.</td>
 </tr>
 <tr>
 <td class="name">target</td>
 <td class="type"><span class="param-type">array</span></td>
+<td class="access">get</td>
 <td class="description">Contains the parent element of the selected icon..</td>
 </tr>
 <tr>
 <td class="name">name</td>
 <td class="type"><span class="param-type">string</span></td>
+<td class="access">get</td>
 <td class="description">Contains the name of the icon clicked.</td>
 </tr>
 <tr>
 <td class="name">dashboardPath</td>
 <td class="type"><span class="param-type">string</span></td>
+<td class="access">get</td>
 <td class="description">Holds the current dashboard path value.</td>
 </tr>
 <tr>
 <td class="name">headertext</td>
 <td class="type"><span class="param-type">string</span></td>
+<td class="access">get</td>
 <td class="description">Contains the title of the dashboard.</td>
 </tr>
 <tr>
 <td class="name">event</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description">Returns the current click event information.</td>
+<td class="access">get</td>
+<td class="description">Returns the current click event information like below.
+1. currentTarget - It indicates the current DOM element <br>
+2. type - It indicates the click event.<br>
+</td>
 </tr>
 <tr>
 <td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
+<td class="access">set</td>
 <td class="description">Holds the cancel value of the current operation.</td>
 </tr>
 </tbody>
@@ -150,53 +169,66 @@ This event will be triggered before the widget banner icons were rendered.
 <tr>
 <th>Name</th>
 <th>Type</th>
+<th>Access</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td class="name">type</td>
-<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">Enum</span></td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">enum</span></td>
+<td class="access">get</td>
 <td class="description">Will holds the current event type that triggered the event</td>
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">object</span></td>
-<td class="description">Holds the Dashboard Viewer's Object.</td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type"><a href=/embedded-bi/javascript-based/api-reference/events/#dashboardproperties>object</a></span></td>
+<td class="access"> get</td>
+<td class="description">Holds the dashboard viewer's object.</td>
 </tr>
 <tr>
 <td class="name">widgetInformation</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description">Holds the current triggered widget information.</td>
+<td class="access">get</td>
+<td class="description">Holds the current triggered widget information as like below.<br>
+1. fontColor - Color of font in widget.<br>
+2. fontFamily - fontFamily of the text in the widget<br>
+3. type - Indicates the type of the widget like, grid, chart and so on,..</td>
 </tr>
 <tr>
 <td class="name">uniqueId</td>
 <td class="type"><span class="param-type">string</span></td>
+<td class="access">get</td>
 <td class="description">Holds the current widget id.</td>
 </tr>
 <tr>
 <td class="name">iconsinformation</td>
 <td class="type"><span class="param-type">array</span></td>
+<td class="access">set</td>
 <td class="description">Holds the information about the list of icons to be rendered in the dashboard.</td>
 </tr>
 <tr>
 <td class="name">isFilterWidget</td>
 <td class="type"><span class="param-type">boolean</span></td>
+<td class="access">get</td>
 <td class="description">Holds the true, if the current widget is filter.</td>
 </tr>
 <tr>
 <td class="name">dashboardComment</td>
 <td class="type"><span class="param-type">boolean</span></td>
+<td class="access">get</td>
 <td class="description">Holds the dashboardComment value.</td>
 </tr>
 <tr>
 <td class="name">enableComment</td>
 <td class="type"><span class="param-type">boolean</span></td>
+<td class="access">get</td>
 <td class="description">Holds the enableComment value.</td>
 </tr>
 <tr>
 <td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
+<td class="access">set</td>
 <td class="description">Holds the cancel value of the current operation.</td>
 </tr>
 </tbody>
@@ -224,58 +256,71 @@ This event will be triggered after an icon from the widget banner is clicked.
 <tr>
 <th>Name</th>
 <th>Type</th>
+<th>Access</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td class="name">type</td>
-<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">Enum</span></td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">enum</span></td>
+<td class= access>get</td>
 <td class="description">Will holds the current event type that triggered the event</td>
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">object</span></td>
-<td class="description">Holds the Dashboard Viewer's Object.</td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type"><a href=/embedded-bi/javascript-based/api-reference/events/#dashboardproperties>object</a></span></td>
+<td class= access>get</td>
+<td class="description">Holds the dashboard viewer's object.</td>
 </tr>
 <tr>
 <td class="name">target</td>
 <td class="type"><span class="param-type">array</span></td>
-<td class="description">Contains the parent element of the selected icon..</td>
+<td class= access>get</td>
+<td class="description">Contains the parent element of the selected icon.</td>
 </tr>
 <tr>
 <td class="name">name</td>
 <td class="type"><span class="param-type">string</span></td>
+<td class= access>get</td>
 <td class="description">Contains the name of the icon clicked.</td>
 </tr>
 <tr>
 <td class="name">dashboardPath</td>
 <td class="type"><span class="param-type">string</span></td>
+<td class= access>get</td>
 <td class="description">Holds the current dashboard path value.</td>
 </tr>
 <tr>
 <td class="name">headertext</td>
 <td class="type"><span class="param-type">string</span></td>
+<td class= access>get</td>
 <td class="description">Contains the title of the widget.</td>
 </tr>
 <tr>
 <td class="name">event</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description">Returns the current click event information.</td>
+<td class= access>get</td>
+<td class="description">Returns the current click event information as like below.<br>
+1. type - It indicates the type of event, here it is click.<br>
+2. currentTarget - It indicates the current DOM element</td>
 </tr>
 <tr>
 <td class="name">widgetId</td>
 <td class="type"><span class="param-type">string</span></td>
+<td class= access>get</td>
 <td class="description">Holds the id of the widget where the menu icon is clicked.</td>
 </tr>
 <tr>
 <td class="name">dataWidgetId</td>
 <td class="type"><span class="param-type">string</span></td>
+<td class= access>get</td>
 <td class="description">Holds the id of the widget where the menu icon is clicked.</td>
 </tr>
 <tr>
 <td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
+<td class= access>set</td>
 <td class="description">Holds the cancel value of the current operation.</td>
 </tr>
 </tbody>
@@ -294,9 +339,9 @@ var dashboard = BoldBI.create({
 dashboard.loadDashboard();        
 ```
 
-## actionBegin
-   
-This event will be triggered at the beginning of every viewer actions while applying connection, layout and dashboard rendering, popup opening and closing, refreshing, filtering, exporting and more.
+### widgetSettings.beforeWidgetControlMenuOpen
+
+This event will be triggered after any option from the control menu icon is clicked.
 
 <table class="params">
 <thead>
@@ -308,23 +353,147 @@ This event will be triggered at the beginning of every viewer actions while appl
 </thead>
 <tbody>
 <tr>
-<td class="name">eventType</td>
+<td class="name">type</td>
 <td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">Enum</span></td>
+<td class="description">Will holds the current event type that triggered the event</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type"><a href=/embedded-bi/javascript-based/api-reference/events/#dashboardproperties>object</a></span></td>
+<td class="description">Holds the Dashboard Viewer's Object.</td>
+</tr>
+<tr>
+<td class="name">header</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Contains the title of the widget.</td>
+</tr>
+<tr>
+<td class="name">menuItem</td>
+<td class="type"><span class="param-type">array</span></td>
+<td class="description">Contains array value present in the widget control menu.</td>
+</tr>
+<tr>
+<td class="name">widgetId</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Holds the id of the widget where the menu icon is clicked.</td>
+</tr>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span>
+<td class="description">Holds the cancel value of the current operation.</td>
+</tr>
+</tbody>
+</table>
+
+**Example** 
+
+```js
+var dashboard = BoldBI.create({
+     widgetSettings: {
+          beforeWidgetControlMenuOpen: function (args) {
+               // Write a code block to perform an operation after control menu icon from the widget banner is clicked.
+          } 
+     }  
+});
+dashboard.loadDashboard();        
+```
+
+### widgetSettings.onWidgetControlMenuClick
+
+This event will be triggered after any option from control menu icon is clicked.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">type</td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">Enum</span></td>
+<td class="description">Will holds the current event type that triggered the event</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type"><a href=/embedded-bi/javascript-based/api-reference/events/#dashboardproperties>object</a></span></td>
+<td class="description">Holds the Dashboard Viewer's Object.</td>
+</tr>
+<tr>
+<td class="name">header</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Contains the title of the widget.</td>
+</tr>
+<tr>
+<td class="name">menu</td>
+<td class="type"><span class="param-type">array</span></td>
+<td class="description">Contains details of newly added button in widget control menu.</td>
+</tr>
+<tr>
+<td class="name">widgetId</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Holds the id of the widget where the menu icon is clicked.</td>
+</tr>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Holds the cancel value of the current operation.</td>
+</tr>
+</tbody>
+</table>
+
+**Example** 
+
+```js
+var dashboard = BoldBI.create({
+     widgetSettings: {
+          onWidgetControlMenuClick: function (args) {
+               // Write a code block to perform an operation after any option from control menu icon from widget banner is clicked.
+          } 
+     }  
+});
+```
+
+## actionBegin
+   
+This event will be triggered at the beginning of every viewer actions while applying connection, layout and dashboard rendering, popup opening and closing, refreshing, filtering, exporting and more.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Access</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">eventType</td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">enum</span></td>
+<td class="access">get</td>
 <td class="description">Will hold the current <a href="/embedded-bi/javascript-based/api-reference/events/#event-types">event type</a> that triggered the event</td>
 </tr>
 <tr>
 <td class="name">source</td>
 <td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">object</span></td>
-<td class="description">This will contain the data related to the current event</td>
+<td class="access">get</td>
+<td class="description">This will contain the data related to the current event as like below.<br>
+1. data <br>
+2. element</td>
 </tr>
 <tr>
-<td class="name">Source.element</td>
+<td class="name">source.element</td>
 <td class="type"><span class="param-type">object</span></td>
+<td class="access">get</td>
 <td class="description">Holds the current event site UI element. If there involves no UI element will be returned as null</td>
 </tr>
 <tr>
-<td class="name">Source.data</td>
+<td class="name">source.data</td>
 <td class="type"><span class="param-type">object</span></td>
+<td class="access">get</td>
 <td class="description">Holds the current event data.</td>
 </tr>
 </tbody>
@@ -408,28 +577,35 @@ This event will be triggered when all viewer actions are completed.
 <tr>
 <th>Name</th>
 <th>Type</th>
+<th>Access</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td class="name">eventType</td>
-<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">Enum</span></td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">enum</span></td>
+<td class="access">get</td>
 <td class="description">Will hold the current <a href="/embedded-bi/javascript-based/api-reference/events/#event-types">event type</a> that triggered the event</td>
 </tr>
 <tr>
 <td class="name">source</td>
 <td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">object</span></td>
-<td class="description">This will contain the data related to the current event</td>
+<td class="access">get</td>
+<td class="description">This will contain the data related to the current event as below.<br>
+1. element<br>
+2. data</td>
 </tr>
 <tr>
-<td class="name">Source.element</td>
+<td class="name">source.element</td>
 <td class="type"><span class="param-type">object</span></td>
+<td class="access">get</td>
 <td class="description">Holds the current event site UI element. If there involves no UI element will be returned as null</td>
 </tr>
 <tr>
-<td class="name">Source.data</td>
+<td class="name">source.data</td>
 <td class="type"><span class="param-type">object</span></td>
+<td class="access">get</td>
 <td class="description">Holds the current event data.</td>
 </tr>
 </tbody>
@@ -487,7 +663,7 @@ dashboard.loadDashboard();
 <td class="description">This event will trigger when the Get Link dialog box closes.</td>
 </tr>
 <tr>
-<td class="name">Exporting</td>
+<td class="name">exporting</td>
 <td class="description">This event will trigger when the dashboard exporting gets started.</td>
 </tr>
 <tr>
@@ -506,6 +682,14 @@ dashboard.loadDashboard();
 <td class="name">interactionCompleted</td>
 <td class="description">This event will trigger once the master widget interactions completed.</td>
 </tr>
+<tr>
+<td class="name">Save</td>
+<td class="description">This event will trigger once the Publish option is clicked in dashboard designer mode.</td>
+</tr>
+<tr>
+<td class="name">SaveAs</td>
+<td class="description">This event will trigger once the Publish As option is clicked in dashboard designer mode.</td>
+</tr>
 </tbody>
 </table>
 
@@ -518,38 +702,45 @@ This event will be triggered before the dashboard context menu is rendered.
 <tr>
 <th>Name</th>
 <th>Type</th>
+<th>Access</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td class="name">type</td>
-<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">Enum</span></td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">enum</span></td>
+<td class="access">get</td>
 <td class="description">Will holds the current event type that triggered the event</td>
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">object</span></td>
-<td class="description">Holds the Dashboard Viewers Object.</td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type"><a href=/embedded-bi/javascript-based/api-reference/events/#dashboardproperties>object</a></span></td>
+<td class="access">get</td>
+<td class="description">Holds the dashboard viewer's object.</td>
 </tr>
 <tr>
 <td class="name">dashboardPath</td>
 <td class="type"><span class="param-type">string</span></td>
+<td class="access">get</td>
 <td class="description">Holds the current dashboard path value.</td>
 </tr>
 <tr>
 <td class="name">iconsinformation</td>
 <td class="type"><span class="param-type">array</span></td>
+<td class="access">set</td>
 <td class="description">Holds the information about the list of icons to be rendered in the dashboard.</td>
 </tr>
 <tr>
 <td class="name">enableComment</td>
 <td class="type"><span class="param-type">boolean</span></td>
+<td class="access">get</td>
 <td class="description">Holds the enableComment value.</td>
 </tr>
 <tr>
 <td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
+<td class="access">set</td>
 <td class="description">Holds the cancel value of the current operation.</td>
 </tr>
 </tbody>
@@ -575,38 +766,46 @@ This event will be triggered before the URL linking navigations are called.
 <tr>
 <th>Name</th>
 <th>Type</th>
+<th>Access</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">enum</span></td>
+<td class="access">get</td>
+<td class="description">Will holds the current event type that triggered the event</td>
+</tr>
 <td class="name">linkInfo</td>
 <td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">object</span></td>
+<td class="access">set</td>
 <td class="description">Will holds the linking information</td>
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">object</span></td>
-<td class="description">Holds the Dashboard Viewers Object.</td>
-</tr>
-<tr>
-<td class="name">type</td>
-<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">Enum</span></td>
-<td class="description">Will holds the current event type that triggered the event</td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type"><a href=/embedded-bi/javascript-based/api-reference/events/#dashboardproperties>object</a></span></td>
+<td class="access">get</td>
+<td class="description">Holds the dashboard viewer's object.</td>
 </tr>
 <tr>
 <td class="name">widgetId</td>
 <td class="type"><span class="param-type">string</span></td>
+<td class="access">get</td>
 <td class="description">Holds the current widget id information</td>
 </tr>
 <tr>
 <td class="name">widgetName</td>
 <td class="type"><span class="param-type">string</span></td>
+<td class="access">get</td>
 <td class="description">Holds the current widget name information</td>
 </tr>
 <tr>
 <td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
+<td class="access">set</td>
 <td class="description">Holds the cancel value of the current operation.</td>
 </tr>
 </tbody>
@@ -632,6 +831,7 @@ This event will be triggered after a More option icon from the dashboard banner 
 <tr>
 <th>Name</th>
 <th>Type</th>
+<th>Access</th>
 <th>Description</th>
 </tr>
 </thead>
@@ -639,6 +839,7 @@ This event will be triggered after a More option icon from the dashboard banner 
 <tr>
 <td class="name">data</td>
 <td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">array</span></td>
+<td class ="access">get</td>
 <td class="description">Will holds the array of menu list</td>
 </tr>
 </tbody>
@@ -664,47 +865,60 @@ This event will be triggered before the filter is applied.
 <tr>
 <th>Name</th>
 <th>Type</th>
+<th>Access</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td class="name">eventType</td>
-<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">Enum</span></td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">enum</span></td>
+<td class ="access">get</td>
 <td class="description">Holds the current event type that triggered the event</td>
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">object</span></td>
-<td class="description">Holds the Dashboard Viewers Object.</td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type"><a href=/embedded-bi/javascript-based/api-reference/events/#dashboardproperties>object</a></span></td>
+
+<td class ="access">get</td>
+<td class="description">Holds the dashboard viewer's object.</td>
 </tr>
 <tr>
 <td class="name">source</td>
 <td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">object</span></td>
-<td class="description">This will contain the data related to the current event</td>
+<td class ="access">get</td>
+<td class="description">This will contain the data related to the current event as like below.<br>
+1. element -  Which holds the DOM elements.<br>
+2. data</td>
 </tr>
 <tr>
-<td class="name">Source.data</td>
+<td class="name">source.data</td>
 <td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">object</span></td>
+<td class ="access">get</td>
 <td class="description">Holds the current event data.</td>
 </tr>
 <tr>
-<td class="name">Source.data.widgetName</td>
+<td class="name">source.data.widgetName</td>
 <td class="type"><span class="param-type">string</span></td>
+<td class ="access">get</td>
 <td class="description">Holds the interacted widget name information</td>
 </tr>
 <tr>
-<td class="name">Source.data.widgetProperties</td>
+<td class="name">source.data.widgetProperties</td>
 <td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">object</span></td>
-<td class="description">Holds the Widget properties of interacted widget.</td>
+<td class ="access">get</td>
+<td class="description">Holds the Widget properties of interacted widget as like below.<br>
+1. UniqueId - It denotes the interacted widget Id</td>
 </tr>
 <tr>
 <td class="name">source.data.selectedFilterValues</td>
 <td class="type"><span class="param-type">array</span></td>
+<td class ="access">get</td>
 <td class="description">Holds the Filter Values of interacted widget.</td>
 </tr>
 <td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
+<td class ="access">set</td>
 <td class="description">Holds the cancel value of the current operation.</td>
 </tr>
 </tbody>
@@ -730,48 +944,59 @@ This event will be triggered after the filter is applied.
 <tr>
 <th>Name</th>
 <th>Type</th>
+<th>Access</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td class="name">eventType</td>
-<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">Enum</span></td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">enum</span></td>
+<td class="access">get</td>
 <td class="description">Will holds the current event type that triggered the event</td>
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">object</span></td>
-<td class="description">Holds the Dashboard Viewers Object.</td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type"><a href=/embedded-bi/javascript-based/api-reference/events/#dashboardproperties>object</a></span></td>
+<td class="access">get</td>
+<td class="description">Holds the dashboard viewer's object.</td>
 </tr>
 <tr>
 <td class="name">source</td>
 <td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">object</span></td>
-<td class="description">This will contain the data related to the current event</td>
+<td class="access">get</td>
+<td class="description">This will contain the data related to the current event<br>
+1. element - Which holds the DOM element.<br>
+2. data </td>
 </tr>
 <tr>
-<td class="name">Source.data</td>
+<td class="name">source.data</td>
 <td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">object</span></td>
+<td class="access">get</td>
 <td class="description">Holds the current event data.</td>
 </tr>
 <tr>
-<td class="name">Source.data.widgetName</td>
+<td class="name">source.data.widgetName</td>
 <td class="type"><span class="param-type">string</span></td>
+<td class="access">get</td>
 <td class="description">Holds the interacted widget name information</td>
 </tr>
 <tr>
-<td class="name">Source.data.widgetProperties</td>
+<td class="name">source.data.widgetProperties</td>
 <td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">object</span></td>
-<td class="description">Holds the Widget properties of interacted widget.</td>
+<td class="access">get</td>
+<td class="description">Holds the Widget properties of interacted widget as like,UniqueId which represent Widget Id of the interacted widget.</td>
 </tr>
 <tr>
 <td class="name">source.data.selectedFilterValues</td>
 <td class="type"><span class="param-type">array</span></td>
-<td class="description">Holds the Filter Values of interacted widget.</td>
+<td class="access">set</td>
+<td class="description">Holds the filter values of interacted widget and able to modify the filter values here.</td>
 </tr>
 <tr>
 <td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
+<td class="access">set</td>
 <td class="description">Holds the cancel value of the current operation.</td>
 </tr>
 </tbody>
@@ -788,10 +1013,63 @@ var dashboard = BoldBI.create({
 dashboard.loadDashboard();        
 ```
 
+## beforePublishAs
 
-## beforeDatasourceSave
+This event will be triggered in following actions. <br>
 
-This event will be triggered before the data source save action is called.
+1. To `Publish` or `Save` the new dashboard.<br>
+
+2. To `PublishAs` or `SaveAs` the existing dashboards.
+
+ <table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">args.source.data.dashboardId</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Holds the unique GUID for the dashboard.</td>
+</tr>
+<tr>
+<td class="name">args.source.data.dashboardName</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Holds the name of the dashboard.</td>
+</tr>
+<tr>
+<td class="name">args.source.data.dashboardDescription</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Holds the description of the dashboard.</td>
+</tr>
+<tr>
+<td class="name">args.source.data.isPublicDashboard</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Holds the dashboard is public or not.</td>
+</tr>
+</tbody>
+</table>
+
+ **Example** 
+
+```js
+var dashboard = BoldBI.create({
+     mode: BoldBI.Mode.Design,
+     dashboardSettings:
+      { 
+         beforePublishAs :function (args) {
+         } 
+      } 
+});
+dashboard.loadDesigner();        
+```
+
+## ajaxbeforeload
+
+ This event is used to customize headers in the ajax call before sending them to the designer service.
 
 <table class="params">
 <thead>
@@ -803,23 +1081,135 @@ This event will be triggered before the data source save action is called.
 </thead>
 <tbody>
 <tr>
+<td class="name">args.headers</td>
+<td class="type"><span class="param-type">array[]</span></td>
+<td class="description">Able to add new payload header.</td>
+</tr>
+<tr>
+<td class="name">args.serviceAuthorizationToken</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Holds the service AuthorizationToken value </td>
+</tr>
+<tr>
+<td class="name">actionType</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Holds action type of the ajax call.</td>
+</tr>
+</tbody>
+</table>
+
+**Example** 
+
+```js
+var dashboard = BoldBI.create({
+     ajaxbeforeload: function (args) {
+          // Write a code block to add a new payload header. 
+          // var header = { key : 'UserId',Value : '1005'};
+          // args.headers.push(header);
+     } 
+});
+dashboard.loadDashboard();
+```
+
+## beforeDesignerToolbarButtonsRendered
+
+This event will be triggered before the tool bar button is rendered.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">args.toolbarButtons</td>
+<td class="type"><span class="param-type">array[]</span></td>
+<td class="description">Holds the details all the tool bar Buttons <br>
+ args.toolbarButtons.class ->Set the Class name of newly added tool bar button  <br>
+ args.toolbarButtons.elementId ->Set the Id of newly added tool bar button. <br>
+ args.toolbarButtons.label ->Set the Label of newly added tool bar button.
+</td>
+</tr>
+</tbody>
+</table>
+
+**Example For adding new button** 
+
+```js
+var dashboard = BoldBI.create({
+        mode: BoldBI.Mode.Design,
+        dashboardSettings:
+           {    
+                beforeDesignerToolbarButtons :function (args) {
+               // Write a code block to add a button before the dashboard banner icons are rendered.
+               //  args.toolbarButtons.push(
+               //       {
+               //            class:'new-btn-class',
+               //            elementId:'new_id',
+               //            label:'External Button',    
+               //       });
+               } 
+          } 
+});
+dashboard.loadDesigner();  
+```
+
+**Example For removing a button** 
+
+```js
+var dashboard = BoldBI.create({
+      mode: BoldBI.Mode.Design,
+      dashboardSettings:
+       { 
+        beforeDesignerToolbarButtons :function (args) {
+         //  Write a code block to remove an existing button before the dashboard banner icons are rendered. You need to mention the index value to remove the specific button.
+         //  args.toolbarButtons.splice(1); 
+        } 
+       } 
+});
+dashboard.loadDesigner();  
+```
+
+
+## beforeDatasourceSave
+
+This event will be triggered before the data source save action is called.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Access</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
 <td class="name">eventType</td>
-<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">Enum</span></td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">enum</span></td>
+<td class="access">get</td>
 <td class="description">Will holds the current event type that triggered the event</td>
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">object</span></td>
-<td class="description">Holds the Dashboard Viewers Object.</td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type"><a href=/embedded-bi/javascript-based/api-reference/events/#datasourceproperties>object</a></span></td>
+<td class="access">get</td>
+<td class="description">Holds the Data source Viewer's Object.</td>
 </tr>
 <tr>
 <td class="name">designer</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description">Holds the information about the dashboard designer .</td>
+<td class="access">get</td>
+<td class="description">Holds the information about the dashboard designer.</td>
 </tr>
 <tr>
 <td class="name">cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
+<td class="access">set</td>
 <td class="description">Holds the cancel value of the current operation.</td>
 </tr>
 </tbody>
@@ -845,43 +1235,51 @@ This event will be triggered after the data source save action is called.
 <tr>
 <th>Name</th>
 <th>Type</th>
+<th>Access</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td class="name">eventType</td>
-<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">Enum</span></td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">enum</span></td>
+<td class="access">get</td>
 <td class="description">Will holds the current event type that triggered the event</td>
 </tr>
 <tr>
 <td class="name">model</td>
-<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">object</span></td>
-<td class="description">Holds the Dashboard Viewers Object.</td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type"><a href=/embedded-bi/javascript-based/api-reference/events/#datasourceproperties>object</a></span></td>
+<td class="access">get</td>
+<td class="description">Holds the Data source Viewer's Object.</td>
 </tr>
 <tr>
 <td class="name">designer</td>
 <td class="type"><span class="param-type">object</span></td>
+<td class="access">get</td>
 <td class="description">Holds the information about the dashboard designer .</td>
-</tr>
-<tr>
-<td class="name">cancel</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description">Holds the cancel value of the current operation.</td>
 </tr>
 <tr>
 <td class="name">dataSourceId</td>
 <td class="type"><span class="param-type">string</span></td>
+<td class="access">get</td>
 <td class="description">Holds the current data source id.</td>
 </tr>
 <tr>
 <td class="name">schema</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description">Holds the current data source schema information</td>
+<td class="access">get</td>
+<td class="description">Holds the current data source schema information such as data base table name, table Id, and so on.</td>
 </tr>
 <td class="name">status</td>
 <td class="type"><span class="param-type">boolean</span></td>
+<td class="access">get</td>
 <td class="description">Holds the status of the data source save action</td>
+</tr>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="access">set</td>
+<td class="description">Holds the cancel value of the current operation.</td>
 </tr>
 </tbody>
 </table>
@@ -906,6 +1304,7 @@ This event will be triggered when you unpin the widget from the pinboard.
 <tr>
 <th>Name</th>
 <th>Type</th>
+<th>Access</th>
 <th>Description</th>
 </tr>
 </thead>
@@ -913,6 +1312,7 @@ This event will be triggered when you unpin the widget from the pinboard.
 <tr>
 <td class="name">args</td>
 <td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">object</span></td>
+<td class="access">get</td>
 <td class="description">Holds the Dashboard Viewers Object as follows.<br>
  1. ServerUrl - Bold BI server URL is passed to render the dashboard. <br>
  2. itemId - Unique id of the Bold BI Dashboard. <br>
@@ -942,6 +1342,7 @@ This event will be triggered when you perform the drag widget from the pinboard.
 <tr>
 <th>Name</th>
 <th>Type</th>
+<th>Access</th>
 <th>Description</th>
 </tr>
 </thead>
@@ -949,6 +1350,7 @@ This event will be triggered when you perform the drag widget from the pinboard.
 <tr>
 <td class="name">args</td>
 <td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">object</span></td>
+<td class="access">get</td>
 <td class="description">Holds the Dashboard Viewers Object as follows. <br>
  1. ServerUrl - Bold BI server URL is passed to render the dashboard. <br>
  2. itemId - Unique id of the BoldBI Dashboard. <br>
@@ -978,6 +1380,7 @@ This event will be triggered when you drop the widget.
 <tr>
 <th>Name</th>
 <th>Type</th>
+<th>Access</th>
 <th>Description</th>
 </tr>
 </thead>
@@ -985,6 +1388,7 @@ This event will be triggered when you drop the widget.
 <tr>
 <td class="name">args</td>
 <td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">object</span></td>
+<td class="access">get</td>
 <td class="description">Holds the Dashboard Viewers Object as follows. <br>
  1. ServerUrl - Bold BI server URL is passed to render the dashboard. <br>
  2. itemId - Unique id of the BoldBI Dashboard. <br>
@@ -1014,6 +1418,7 @@ This event will be triggered when you change the layout of the pinboard.
 <tr>
 <th>Name</th>
 <th>Type</th>
+<th>Access</th>
 <th>Description</th>
 </tr>
 </thead>
@@ -1021,6 +1426,7 @@ This event will be triggered when you change the layout of the pinboard.
 <tr>
 <td class="name">args</td>
 <td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">object</span></td>
+<td class="access">get</td>
 <td class="description">Holds the Dashboard Viewers Object like below. <br>
  1. ServerUrl - BoldBI server URL passed to render the dashboard. <br>
  2. itemId - Unique id of the BoldBI Dashboard. <br>
@@ -1050,6 +1456,7 @@ This event will be triggered when you resize the pinboard.
 <tr>
 <th>Name</th>
 <th>Type</th>
+<th>Access</th>
 <th>Description</th>
 </tr>
 </thead>
@@ -1057,6 +1464,7 @@ This event will be triggered when you resize the pinboard.
 <tr>
 <td class="name">args</td>
 <td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">object</span></td>
+<td class="access">get</td>
 <td class="description">Holds the Dashboard Viewers Object like below. <br>
  1. ServerUrl - BoldBI server URL passed to render the dashboard. <br>
  2. itemId - Unique id of the BoldBI Dashboard. <br>
@@ -1076,3 +1484,98 @@ var dashboard = BoldBI.create({
 });
 dashboard.loadPinboard();
 ```
+## DashboardProperties
+This section describes the dashboard properties of the viewer object.
+<table>
+     <thead>
+          <tr>
+               <th>Name</th>
+               <th>Type</th>
+               <th>Access</th>
+               <th>Description</th>
+          </tr>
+     </thead>
+     <tbody>
+          <tr>
+               <td class="name">serverUrl</td>
+               <td class="type">string</td>
+               <td class="access">get</td>
+               <td class="description">Hold the Bold BI server URL.</td>
+          </tr>
+           <tr>
+               <td class="name">itemId </td>
+               <td class="type">string</td>
+               <td class="access">get</td>
+               <td class="description">Hold the unique id of the dashboard.</td>
+          </tr>
+          <tr>
+               <td class="name">dashboardDescription  </td>
+               <td class="type">string</td>
+               <td class="access">get</td>
+               <td class="description">Hold the description of dashboard.</td>
+          </tr>
+          <tr>
+               <td class="name">dashboardName  </td>
+               <td class="type">string</td>
+               <td class="access">get</td>
+               <td class="description">Hold the name of the dashboard is rendered.</td>
+          </tr>
+          <tr>
+               <td class="name">environment</td>
+               <td class="type">string</td>
+               <td class="access">get</td>
+               <td class="description">Hold the embedding environment type.</td>
+          </tr>
+          <tr>
+               <td class="name">mode</td>
+               <td class="type">string</td>
+               <td class="access">get</td>
+               <td class="description"> Hold the mode of the dashboard.</td>
+          </tr>
+     </tbody>
+</table>
+
+## DatasourceProperties
+This section describes the data source properties of the viewer object.
+<table>
+     <thead>
+          <tr>
+               <th>Name</th>
+               <th>Type</th>
+               <th>Access</th>
+               <th>Description</th>
+          </tr>
+     </thead>
+     <tbody>
+          <tr>
+               <td class="name">serverUrl</td>
+               <td class="type">string</td>
+               <td class="access">get</td>
+               <td class="description">Hold the Bold BI server URL.</td>
+          </tr>
+           <tr>
+               <td class="name">datasource</td>
+               <td class="type">string</td>
+               <td class="access">get</td>
+               <td class="description">Hold the unique id of the data source.</td>
+          </tr>
+          <tr>
+               <td class="name">datasourceName</td>
+               <td class="type">string</td>
+               <td class="access">get</td>
+               <td class="description"> Hold the data source name.</td>
+          </tr>
+          <tr>
+               <td class="name">environment</td>
+               <td class="type">string</td>
+               <td class="access">get</td>
+               <td class="description">Hold the embedding environment type.</td>
+          </tr>
+          <tr>
+               <td class="name">mode</td>
+               <td class="type">string</td>
+               <td class="access">get</td>
+               <td class="description"> Hold the mode of the data source.</td>
+          </tr>
+     </tbody>
+</table>

@@ -17,7 +17,10 @@ A dashboard can be embedded in the create, edit and view modes in any applicatio
 1. To get the **embed URL**, click the context menu of the respective dashboard and choose the `Get Embed code` option.  
 ![EmbedCodeOption](/static/assets/embedded/iFrame-based/images/embed-option.png#max-width=75%)  
 
-2. By Default, Dashboard Comments, Widget Comments, Saved Views, Export, and SSO options are disabled. You can enable this option by sliding the button given in embed dialog.  
+2. Choose the mode value as `View` for rendering a dashboard in the View mode.
+![ModeOption](/static/assets/embedded/iFrame-based/images/select-mode.png#max-width=45%)
+
+3. By Default, Dashboard Comments, Widget Comments, Saved Views, Export, and SSO options are disabled. Enable this option by sliding the button given in the embed dialog. 
 ![EnableOption](/static/assets/embedded/iFrame-based/images/enable-option.png#max-width=45%)  
 <table>
     <tr>
@@ -65,7 +68,7 @@ A dashboard can be embedded in the create, edit and view modes in any applicatio
 4. Copy the embed URL by clicking the copy icon from the Embed Code dialog.  
 	![CopyEmbedCode](/static/assets/embedded/iFrame-based/images/copy-embedcode.png#max-width=45%)
 
-5. Embed the copied URL into other web application.
+5. Embed the copied URL into other web applications.
 
 6. When you run the web application, it will show the login window or dashboard, based on the type of dashboard. When you click the login button and log in with valid user credentials, the dashboard will render automatically. To avoid login, use single sign-on [method.](/embedded-bi/iframe-based/dashboard-view-mode/#embed-dashboards-using-external-sso-authentication)
 	
@@ -78,47 +81,50 @@ A dashboard can be embedded in the create, edit and view modes in any applicatio
 
 ## Embed Dashboards using external SSO authentication
 
-Bold BI supports embedding the dashboards into other web applications using external Single Sign-On authentication in iframe based embedding. Bold BI application can be configured to support `Windows Active Directory`, `Azure Active Directory`, `OAuth 2.0` and `OpenID Connect` authentications.
+Bold BI supports embedding the dashboards into other web applications using the external Single Sign-On authentication in the iframe based embedding. The Bold BI application can be configured to support the `Windows Active Directory`, `Azure Active Directory`, `OAuth 2.0` and `OpenID Connect` authentications.
+
 
 ### Embed using Windows AD Authentication
-If the dashboard server is deployed into the machine that is already configured with the **Windows Active Directory**, then follow the steps to get the embed code with the `Windows Active Directory SSO` settings. Learn more about configure Window Active Directory settings [here](/embedded-bi/site-administration/active-directory/active-directory).
+The Bold BI application has been configured with the **Windows Active Directory**, the following steps show how to get the embed code with the `Windows Active Directory SSO` settings. Learn more about the configure Window Active Directory settings [here](/embedded-bi/site-administration/active-directory/active-directory).
 
-1. Click the context menu of the respective dashboard and choose the `Get Embed code` option. In the Embed Code dialog box, you can enable `SSO` and select the `Windows Active Directory` option as shown in the following image.
+1. Click the context menu of the respective dashboard and choose the `Get Embed code` option. In the Embed Code dialog box, select mode as `View`.  Enable the `SSO` and select the `Windows Active Directory` option as shown in the following image.
 ![EmbedSSOWindows](/static/assets/embedded/iFrame-based/images/embed-sso-windows.png#max-width=45%)
 
-2. Copy the embed URL by clicking the copy icon from the Embed Code dialog, and then paste it into a web application that has configured the Windows Active Directory.
+2. Copy the embed URL by clicking the copy icon from the Embed Code dialog and paste it into a web application that has configured the Windows Active Directory.
 
-3. Run the web application and get sign-in with windows active directory , now the dashboard would be rendered automatically based on permission given to the windows user.
+3. Run the web application and get sign-in with the windows active directory. Now, the dashboard would be rendered automatically based on the permission given to the windows user.
+
 
 ### Embed using Azure AD Authentication
-If the dashboard server is deployed into the machine that is configured with the **Azure Active Directory**, you can follow the below steps to get the embed code with the `Azure Active Directory SSO` settings. Learn more about configure Azure Active Directory settings [here](/embedded-bi/site-administration/sso/azure-active-directory).
+The Bold BI application has been configured with the **Azure Active Directory**, the following steps show how to get the embed code with the `Azure Active Directory SSO` settings. Learn more about the configure Azure Active Directory settings [here](/embedded-bi/site-administration/sso/azure-active-directory).
 
-1. Click on the context menu of the respective Dashboard and choose `Get Embed code` option. In Embed Code dialog, you could enable `SSO` and select `Azure Active Directory` option as shown below.
+1. Click the context menu of the respective Dashboard and choose `Get Embed code` option. In the Embed Code dialog, select mode as `View`. Enable the `SSO` and select the `Azure Active Directory` as shown in the following image.
 ![EmbedSSOAzure](/static/assets/embedded/iFrame-based/images/embed-sso-azure.png#max-width=45%)
 
-2. Copy the embed URL by clicking the copy icon from the Embed Code dialog and paste the embed URL into an web application which has configured the Azure Active Directory.
+2. Copy the embed URL by clicking the copy icon from the Embed Code dialog and paste it into a web application that has configured the Azure Active Directory.
 
-3. Run the web application and get sign-in with Azure Active Directory and dashboard would be rendered automatically based on permission given to the azure user.
+3. Run the web application and get sign-in with the Azure Active Directory. Now, the dashboard would be rendered automatically based on the permission given to the azure user.
+
 
 ### Embed using OAuth 2.0 Authentication
-The Bold BI application has been configured with **OAuth 2.0** for Single Sign-On (SSO), then follow the steps to get the embed code with `OAuth SSO` settings. Learn more about configure OAuth 2.0 settings [here](/embedded-bi/site-administration/sso/oauth-2.0-support).
+The Bold BI application has been configured with the **OAuth 2.0** , the following steps show how to get the embed code with the `OAuth SSO` settings. Learn more about the configure OAuth 2.0 settings [here](/embedded-bi/site-administration/sso/oauth-2.0-support).
 
-1. Click on the context menu of the respective Dashboard and choose `Get Embed code` option. In Embed Code dialog, you could enable `SSO` and select `OAuth 2.0` option as shown below.
+1. Click the context menu of the respective Dashboard and choose `Get Embed code` option. In Embed Code dialog, select mode as `View`. Enable the `SSO` and select  the `OAuth 2.0` option as shown in the following image.
 ![EmbedSSOOAuth](/static/assets/embedded/iFrame-based/images/embed-sso-oauth.png#max-width=45%)
 
-2. Copy the embed URL by clicking the copy icon from the Embed Code dialog and paste the embed URL into an web application which has configured the OAuth 2.0 authentication.
+2. Copy the embed URL by clicking the copy icon from the Embed Code dialog and paste it into a web application that has configured the OAuth 2.0 authentication.
 
-3. Run the web application and get sign-in with configured OAuth provider and dashboard would be rendered automatically based on permission given to the user.
+3. Run the web application and get sign-in with the configured OAuth provider. Now, the dashboard would be rendered automatically based on the permission given to the OAuth user.
 
 ### Embed using OpenID Connect Authentication
-The Bold BI application has been configured with **OpenID Connect** for Single Sign-On (SSO), then follow the steps to get the embed code with `OpenID SSO` Settings. Learn more about configure OpenID settings [here](/embedded-bi/site-administration/sso/openid-support).
+The Bold BI application has been configured with the **OpenID Connect** , the following steps show how to get the embed code with the `OpenID SSO` Settings. Learn more about the configure OpenID settings [here](/embedded-bi/site-administration/sso/openid-support).
 
-1. Click on the context menu of the respective Dashboard and choose `Get Embed code` option. In Embed Code dialog, you could enable `SSO` and select `OpenID` option as shown below.  
+1. Click the context menu of the respective Dashboard and choose `Get Embed code` option. In Embed Code dialog,s elect mode as `View`. Enable the `SSO` and select the `OpenID` option as shown in the following image.  
 ![EmbedSSOOpenID](/static/assets/embedded/iFrame-based/images/embed-sso-openid.png#max-width=45%)
 
-2. Copy the embed URL by clicking the copy icon from the Embed Code dialog and paste the embed URL into an web application which has configured the OpenID Connect authentication.
+2. Copy the embed URL by clicking the copy icon from the Embed Code dialog and paste it into a web application that has configured the OpenID Connect authentication.
 
-3. Run the web application and get sign-in with configured OpenID, now dashboard will be rendered automatically based on permission given to the user. 
+3. Run the web application and get sign-in with configured OpenID. Now, the dashboard would be rendered automatically based on  the permission given to the OpenID user. 
 
 ## Public embedding
 If you want to embed the dashboard without user authentication, then make the dashboard public and then embed it. The public dashboard will be rendered automatically without credentials. You cannot enable the comments panel for public dashboard embedding. 
@@ -214,17 +220,40 @@ Using the dashboard security option, you can control which websites, IP addresse
     ![EmbedLogin](/static/assets/embedded/iFrame-based/images/iframeLoginPage.png#max-width=45%)  
     ![EmbedCreateDashboard](/static/assets/embedded/iFrame-based/images/embedded-create.png#max-width=85%)  
 
-## How to embed the dashboard in edit mode using the URL
+## Steps to embed dashboard designer using URL
 
-1. In an HTML page, paste the copied embed URL and change the `dashboards` to `dashboard-designer,` as shown in the following highlighted part of the HTML page.
-	![EmbedDashboardDesign](/static/assets/embedded/iFrame-based/images/dashboard-design-embed-code.png#max-width=85%) 
+1.  To get the **embed URL**, click the context menu of the respective dashboard and choose the `Get Embed code` option.
+![EmbedCodeOption](/static/assets/embedded/iFrame-based/images/embed-option.png#max-width=85%) 
 
-2. Embed the above embed URL into any web application.    
+2. Select the mode value as `Edit` for rendering a dashboard to edit or design.
+![ModeOption](/static/assets/embedded/iFrame-based/images/select-mode-design.png#max-width=45%) 
 
-3. Run the web application, it will show the login window or dashboard based on the type of the dashboard. Click the login and enter the valid user credentials and the widget will render automatically.
+3. By default, the SSO options are disabled. Enable this option by sliding the button given in the embed dialog. 
+![EnableOption](/static/assets/embedded/iFrame-based/images/enable-option-design.png#max-width=45%)  
+<table>
+    <tr>
+      <td>
+       SSO
+      </td>
+      <td>
+       The Single Sign-On authentication is enabled to support embedding the dashboard designer into other web applications if the configured authentication is selected as an authentication parameter.
+      </td>
+    </tr>
+</table>  
 
-	![EmbedLogin](/static/assets/embedded/iFrame-based/images/iframeLoginPage.png#max-width=45%) 
-	![EmbedDesignDashboard](/static/assets/embedded/iFrame-based/images/embedded-design.png#max-width=90%) 
+4. Copy the embed URL by clicking the copy icon from the embed code dialog.  
+	![CopyEmbedCodeForDesgin](/static/assets/embedded/iFrame-based/images/copy-embedcode-design.png#max-width=45%)
+
+5. Embed the copied URL into other web applications.
+
+6. When you run the web application, it will show the login window or designer dashboard. When you click the login button and log in with valid user credentials, the dashboard designer will render automatically.
+To avoid login, use the Single Sign-On.
+![EmbedLogin](/static/assets/embedded/iFrame-based/images/iframeLoginPage-design.png#max-width=45%) 
+![EmbedDesignDashboard](/static/assets/embedded/iFrame-based/images/embedded-design.png#max-width=90%) 
+
+
+> **NOTE:** For Single Sign-On click the context menu of the respective dashboard and choose the `Get Embed code` option. In the Embed Code dialog box, select `Edit` as the Mode value. Enable the SSO and the select any one of these:`Windows Active Directory`, `Azure Active Directory`, `OAuth 2.0` and `OpenID Connect` authentications. Similar to the view mode Single Sign-On.
+
 
 ## Embedding dashboard with filter parameter
 You can pass parameters to a dashboard by including them in a dashboard URL in embedding. Passing parameter values within URL will apply filter in the dashboard on initial load itself. You can learn more details [here](/embedded-bi/working-with-dashboards/preview-dashboard/urlparameters/#passing-parameter-with-url).  
