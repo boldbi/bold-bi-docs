@@ -250,6 +250,12 @@ This allows you to toggle the visibility of marker from label to adorn each data
 
 ![Show Marker](/static/assets/embedded/visualizing-data/visualization-widgets/images/line-chart/show-marker.png)
 
+#### Line Width
+
+This allows you to customize the width of the line chart.
+
+![Line Width](/static/assets/embedded/visualizing-data/visualization-widgets/images/line-chart/line-width.png)
+
 ### Show Items With No Data
 
 This allows you to show the data which column does `not` have value.
@@ -692,9 +698,17 @@ On enabling Auto Font Size, the font size of the subtitle will be adjusted autom
 
 This allows you to apply the specified size of the font to the widget title if the **Subtitle Auto Font Size** is disabled. Value can be between 10 and 32.
 
+### Auto Padding
+
+On enabling Auto Padding, the padding of the widget container will be adjusted automatically if the size of the widget varies.
+
+**Padding**
+
+This allows you to customize the padding of the widget container if the **Auto Padding** is disabled. Value can be between 0 and 25.
+
 ### Show Border
 
-This allows you to toggle the visibility of `border` surrounding the widget.
+This allows you to toggle the visibility of the `border` surrounding the widget.
 
 ### Corner Radius
 
@@ -711,6 +725,10 @@ This allows you to set the **background color** to the line chart widget.
 ### Transparency
 
 This property allows you to specifies the **transparency** for the `background color.`
+
+### Show Shadow
+
+This allows you to toggle the visibility of the `shadow` surrounding the widget.
 
 ### Container actions
 

@@ -31,116 +31,146 @@ Follow these steps to embed dashboard widget in your application.
     </body>
     ```
 
-3. In the body tag, you need to add the function to create BoldBI instance with following properties and call that function in the body using the `onload` attribute as follows. Also, call the `loadDashboardWidget("{widget_name}")` function with widget name.
+3. In the body tag, you need to add the function to create a BoldBI instance with the following properties and call that function in the body using the `onload` attribute. Also, call the `loadDashboardWidget("{widget_name/widget_id}")` function with widget details.
 
-You can embed the dashboard widget using either dashboard ID or dashboard path like in below samples.
+    You can embed the dashboard widget using either `widget name` or `widget ID` like in the below samples.
 
-### Embed using dashboard ID
+    ### Embed using widget name
 
-```js
-<body onload="embedSample();">
-    <div id="dashboard_container"></div>
-    <script>
-        function embedSample() {
-            var boldbiEmbedInstance = BoldBI.create({
-                serverUrl: "http://localhost:51777/bi/site/site1",
-                dashboardId: "755e99c7-f858-4058-958b-67577b283309",                
-                embedContainerId: "dashboard_container",// This should be the container id where you want to embed the dashboard designer
-                embedType: BoldBI.EmbedType.Component,
-                environment: BoldBI.Environment.Enterprise,
-                mode: BoldBI.Mode.View,
-                height: "800px",
-                width: "1200px",
-                authorizationServer: {
-                    url: "http://example.com/embeddetail/get"
-                },
-                expirationTime: "100000",
-            });
-            boldbiEmbedInstance.loadDashboardWidget("Sales By Country"); // Pass widget name as argument to loadDashboardWidget function 
-        }
-    </script>
-</body>
-```  
+    ```js
+    <body onload="embedSample();">
+        <div id="dashboard_container"></div>
+        <script>
+            function embedSample() {
+                var boldbiEmbedInstance = BoldBI.create({
+                    serverUrl: "http://localhost:51777/bi/site/site1",
+                    dashboardId: "9a4b8ddb-606f-4acd-8c53-8ccdcaa92a87",
+                    embedContainerId: "dashboard-container",// This should be the container id where you want to embed the dashboard designer
+                    embedType: BoldBI.EmbedType.Component,
+                    environment: BoldBI.Environment.Enterprise,
+                    mode: BoldBI.Mode.View,
+                    height: "800px",
+                    width: "1200px",
+                    authorizationServer: {
+                        url: "http://example.com/embeddetail/get"
+                    },
+                    expirationTime: "100000",
+                });
+                boldbiEmbedInstance.loadDashboardWidget("Sales By Country"); // Pass widget name as argument to loadDashboardWidget function 
+            }
+        </script>
+    </body>
+    ```  
 
-### Embed using dashboard path
+    ### Embed using widget ID
 
-```js
-<body onload="embedSample();">
-    <div id="dashboard_container"></div>
-    <script>
-        function embedSample() {
-            var boldbiEmbedInstance = BoldBI.create({
-                serverUrl: "http://localhost:51777/bi/site/site1",
-                dashboardPath: "/Sales/Sales Analysis Dashboard",
-                embedContainerId: "dashboard-container",// This should be the container id where you want to embed the dashboard designer
-                embedType: BoldBI.EmbedType.Component,
-                environment: BoldBI.Environment.Enterprise,
-                mode: BoldBI.Mode.View,
-                height: "800px",
-                width: "1200px",
-                authorizationServer: {
-                    url: "http://example.com/embeddetail/get"
-                },
-                expirationTime: "100000",
-            });
-            boldbiEmbedInstance.loadDashboardWidget("Sales By Country"); // Pass widget name as argument to loadDashboardWidget function 
-        }
-    </script>
-</body>
-```  
+    ```js
+    <body onload="embedSample();">
+        <div id="dashboard_container"></div>
+        <script>
+            function embedSample() {
+                var boldbiEmbedInstance = BoldBI.create({
+                    serverUrl: "http://localhost:51777/bi/site/site1",
+                    dashboardId: "9a4b8ddb-606f-4acd-8c53-8ccdcaa92a87",
+                    embedContainerId: "dashboard-container",// This should be the container id where you want to embed the dashboard designer
+                    embedType: BoldBI.EmbedType.Component,
+                    environment: BoldBI.Environment.Enterprise,
+                    mode: BoldBI.Mode.View,
+                    height: "800px",
+                    width: "1200px",
+                    authorizationServer: {
+                        url: "http://example.com/embeddetail/get"
+                    },
+                    expirationTime: "100000",
+                });
+                boldbiEmbedInstance.loadDashboardWidget("efbf2999-f7e7-4831-a492-53c4df394af0"); // To get widget id, please refer `How to get Widget ID`
+            }
+        </script>
+    </body>
+    ```  
 
 4. Refer the following table for value of the previous properties based on your application.  
 
-<meta charset="utf-8"/>
-<table>
-  <tbody>
-    <tr>
-        <td align="left">serverUrl</td>
-        <td align="left">Use your Bold BI server url (http://localhost:[portno]/bi/site/site1)</td>
-    </tr>
-    <tr>
-        <td align="left">dashboardId</td>
-        <td align="left">Use item id of the dashboard, which needs to be edited in embedded designer in your application.</td>
-    </tr>
-    <tr>
-        <td align="left">dashboardPath</td>
-        <td align="left">dashboardPath will be like `/{category_name}/{dashboard_name}` Use item id of the dashboard, which needs to be edited in embedded designer in your application.</td>
-    </tr>
-    <tr>
-        <td align="left">embedContainerId</td>
-        <td align="left">Id of the created div element in your body.</td>
-    </tr>
-    <tr>
-        <td align="left">embedType</td>
-        <td align="left">BoldBI.EmbedType.Component</td>
-    </tr>
-    <tr>
-        <td align="left">environment</td>
-        <td align="left">BoldBI.Environment.Cloud or BoldBI.Environment.Enterprise</td>
-    </tr>
-    <tr>
-        <td align="left">height</td>
-        <td align="left">Height of the dashboard designer in your page</td>
-    </tr>
-    <tr>
-        <td align="left">width</td>
-        <td align="left">Width of the dashboard designer in your page</td>
-    </tr>
-    <tr>
-        <td align="left">authorizationServer</td>
-        <td align="left">Use your authorization URL</td>
-    </tr>
-    <tr>
-        <td align="left">expirationTime</td>
-        <td align="left">Token expiration time</td>
-    </tr>
-  </tbody>
-</table>
+    <meta charset="utf-8"/>
+    <table>
+    <tbody>
+        <tr>
+            <td align="left">serverUrl</td>
+            <td align="left">Use your Bold BI server url (http://localhost:[portno]/bi/site/site1)</td>
+        </tr>
+        <tr>
+            <td align="left">dashboardId</td>
+            <td align="left">Use item id of the dashboard, which needs to be edited in embedded designer in your application.</td>
+        </tr>
+        <tr>
+            <td align="left">dashboardPath</td>
+            <td align="left">dashboardPath will be like `/{category_name}/{dashboard_name}` Use item id of the dashboard, which needs to be edited in embedded designer in your application.</td>
+        </tr>
+        <tr>
+            <td align="left">embedContainerId</td>
+            <td align="left">Id of the created div element in your body.</td>
+        </tr>
+        <tr>
+            <td align="left">embedType</td>
+            <td align="left">BoldBI.EmbedType.Component</td>
+        </tr>
+        <tr>
+            <td align="left">environment</td>
+            <td align="left">BoldBI.Environment.Cloud or BoldBI.Environment.Enterprise</td>
+        </tr>
+        <tr>
+            <td align="left">height</td>
+            <td align="left">Height of the dashboard designer in your page</td>
+        </tr>
+        <tr>
+            <td align="left">width</td>
+            <td align="left">Width of the dashboard designer in your page</td>
+        </tr>
+        <tr>
+            <td align="left">authorizationServer</td>
+            <td align="left">Use your authorization URL</td>
+        </tr>
+        <tr>
+            <td align="left">expirationTime</td>
+            <td align="left">Token expiration time</td>
+        </tr>
+    </tbody>
+    </table>
 
 
 5. Copy the previous embedSample() function and paste in your page. You need to update your values to the properties.  
 
 > **NOTE:**  embedContainerId should be same as your div element id value  
+
+## How to get widget ID
+
+1. We have REST API for retrieving all the widgets of the specific dashboard,
+ `https://localhost:[portno]/bi/api/site/site1/v4.0/dashboards/{dashboardId}/widgets`, `dashboardId` which specifies the itemId of the desired dashboard.
+    
+    Please find the below code snippet to call the given API,
+
+    ```js
+        [HttpGet]
+        [Route("GetDashboardWidgets")]
+        public string GetDashboardWidgets()
+        {
+            var token = GetToken();
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri(EmbedProperties.RootUrl);
+                client.DefaultRequestHeaders.Accept.Clear();
+                client.DefaultRequestHeaders.Add("Authorization", token.TokenType + " " + token.AccessToken);
+                var result = client.GetAsync("https://localhost:51777/bi/api/site/site1/v4.0/dashboards/b646b8a1-a4c6-4dee-9877-f9559c82f7fa/widgets").Result;
+                string resultContent = result.Content.ReadAsStringAsync().Result;
+                return resultContent;
+            }
+        }
+    ```
+
+2. Using JSON result, you can get a collection of widgets available in that dashboard with widget ID and widget name as shown below.
+
+    ![InspectElement](/static/assets/embedded/javascript/images/get_widgets_api.png)
+
 
 ## How to implement the authorize server with user mail or user name
 

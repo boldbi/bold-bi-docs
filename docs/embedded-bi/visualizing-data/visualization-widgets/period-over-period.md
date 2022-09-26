@@ -100,9 +100,9 @@ It is a previous year date of the selected date values from the `Date Range.` Fo
 
 ## How the PoP filtering works in Slave Widget?
 
-Comparison types of charts like `Bar,` `Column,` `Stacked Bar,` `Stacked Column,` `100% Stacked Bar,` and `100% Stacked Column.` Distribution types of charts `Line,` `Spline,` `Spline Area,` `Area,` `Stacked Area,` and `100% Stacked Area.` Proportional types of charts `Pie,` `Doughnut,` `Pyramid,` and `Funnel` can be slave widgets for `Period Over Period.`
+Comparison types of charts like `Bar,` `Column,` `Stacked Bar,` `Stacked Column,` `100% Stacked Bar,` and `100% Stacked Column.` Distribution types of charts `Line,` `Spline,` `Spline Area,` `Area,` `Stacked Area,` and `100% Stacked Area.` Proportional types of charts `Pie,` `Doughnut,` `Pyramid,` and `Funnel` and `Grid` can be slave widgets for `Period Over Period.` `KPI Card` can be slave for `Period Over Period` widget when `Actual Value` only configured in card.
 
-Consider you configured `Column chart.` You can change the `Column Chart` as a slave for the `Period Over Period` widget by using the filter interaction window as shown below.
+Consider you configured `Column chart`, `Grid`, `KPICard.` You can change the `Column Chart`, `Grid`, `KPICard` as a slave for the `Period Over Period` widget by using the filter interaction window as shown below.
 
 ![Chart as slave widget in filter configuration](/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/pop-slavewidget.png)
 
@@ -122,7 +122,31 @@ During interaction from the PoP widget, the chart will display two series. One h
 
 ![period over period workflow](/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/pop-workflow.png) 
 
-Please find the response of different type of charts as slave for PoP widgets.
+The `Grid` color palette will be changed using the `PoP` selection colors(blue and green). The red information icon denotes that the chart virtual column value will not get a display in the design mode.
+
+![Grid color palette update for period over period](/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/pop-gridcolors.png)
+
+You can see a category to customize POP settings and palette for the grid which will be displayed in the Designer Preview/View Mode.
+
+![Grid pop settings update for period over period](/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/pop-gridcolorpalette.png)
+
+You can customize each column that is to be displayed in the Designer Preview/View Mode using the `Customize` option. If you click on the `Customize` option, the following window shows:
+
+![Grid pop settings update for period over period](/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/pop-gridcustomize.png)
+
+During interaction from the PoP widget, the grid will display two series for each column which are a slave to the POP. One has values filtered from the `Date Range` while another one contains filtered values from `Compare To.`
+
+![period over period grid workflow](/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/pop-gridworkflow.png)
+
+The `KPI Card` will be shown with the following information. You can visualize its value in Designer Preview/View Mode
+
+![KPI Card info update for period over period](/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/pop-kpicard.png)
+
+During interaction from the PoP widget, the KPI Card will display two series. One has values filtered from `Date Range` which displays as `Actual Value` while another one contains filtered values from `Compare To` which displays as `Target Value.`
+
+![period over period kpicard workflow](/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/pop-kpicardworkflow.png)
+
+Please find the response of different type of charts as slave of PoP widgets.
 
 **Bar Chart**
 
@@ -218,7 +242,7 @@ This allows you to apply the specified size of the font to the widget title if t
 
 #### Show Border
 
-This allows you to toggle the visibility of `border` surrounding the widget.
+This allows you to toggle the visibility of the `border` surrounding the widget.
 
 #### Corner Radius
 
@@ -231,6 +255,10 @@ This allows you to set the **background color** to the period over period widget
 #### Transparency
 
 This property allows you to specify the **transparency** for the `background color.`
+
+#### Show Shadow
+
+This allows you to toggle the visibility of the `shadow` surrounding the widget.
 
 #### Container actions
 

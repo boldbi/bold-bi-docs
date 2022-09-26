@@ -226,6 +226,10 @@ This allows you to set the **background color** to the date picker widget.
 
 This property allows you to specify the **transparency** for the `background color.`
 
+### Show Shadow
+
+This allows you to toggle the visibility of the `shadow` surrounding the widget.
+
 #### Container actions
 
 ![Container Actions](/static/assets/embedded/visualizing-data/visualization-widgets/images/date-picker/container-actions.png)

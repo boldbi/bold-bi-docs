@@ -31,13 +31,12 @@ The Bold BI supports the following data connection types such that the structure
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/amazon-aurora/"> Amazon Aurora</a>  
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/amazon-rds/"> Amazon RDS</a>
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/amazon-redshift/"> Amazon Redshift</a>
-            <br> <a href="/embedded-bi/working-with-data-source/data-connectors/azure-sql-data-warehouse/"> Azure SQL Data Warehouse</a>
+            <br> <a href="/embedded-bi/working-with-data-source/data-connectors/azure-synapse-analytics/"> Azure Synapse Analytics</a>
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/cdata/"> CDATA</a>
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/google-cloud-sql/"> Google Cloud SQL</a>            
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/google-bigquery/"> Google BigQuery</a>
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/influxdb/"> InfluxDB</a>
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/mariadb/"> MariaDB</a>
-            <br> <a href="/embedded-bi/working-with-data-source/data-connectors/memsql/"> MemSQL</a>
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/sql-data-source/"> Microsoft SQL</a>
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/mysql/"> MySQL</a>
 			<br> <a href="/embedded-bi/working-with-data-source/data-connectors/clickhouse/"> Clickhouse</a>
@@ -45,6 +44,7 @@ The Bold BI supports the following data connection types such that the structure
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/oracle/"> Oracle</a>
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/postgresql/"> PostgreSQL</a>
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/presto/"> Presto</a>
+            <br> <a href="/embedded-bi/working-with-data-source/data-connectors/single-store/"> SingleStore</a>
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/snowflake/"> Snowflake</a>
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/sparksql/"> SparkSQL</a>  			
             <br> <a href="/embedded-bi/working-with-data-source/data-connectors/sqlite/"> SQLite</a>          

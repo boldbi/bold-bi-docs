@@ -59,3 +59,9 @@ The following are the frequently asked questions in Bold BI Cloud :
 [How to execute R language scripts using MS SQL data source in Bold BI](/cloud-bi/faq/how-to-execute-r-language-scripts-using-ms-sql-datasource-in-bold-bi/)
 
 [How to group the data using Bold BI](/cloud-bi/faq/how-to-group-the-data-using-bold-bi/)
+
+[Working with custom query extract mode in Bold BI](/cloud-bi/faq/working-with-custom-query-extract-mode-in-bold-bi/)
+
+[How to configure Relative date filter based on minutes](/cloud-bi/faq/how-to-configure-relative-date-filter-based-on-minutes/)
+
+[How to use Median aggregation in Bold BI](/cloud-bi/faq/how-to-use-median-aggregation-in-bold-bi/)

@@ -146,7 +146,7 @@ You can send a webhook notification for an export schedule or [data alerts](/emb
 
 	![Configuration Message](/static/assets/embedded/managing-resources/images/webhook-configuration-message.png)
 
-5. When running the schedule, Bold BI will call the webhook endpoint you selected with the selected or all payload data. Click [here](/embedded-bi/webhook/webhook-payload/) to learn more about what is the payload data sent to a webhook call.
+5. When running the schedule, Bold BI will call the webhook endpoint you selected with the selected or all payload data. Click [here](/embedded-bi/manage-webhooks/webhook-payload/) to learn more about what is the payload data sent to a webhook call.
 
 > **NOTE:**  `Time Driven Dashboard Export` event webhook get listed only for the normal schedule, and `Alert Driven Dashboard Export` event webhook get listed only for data alert schedule.
 

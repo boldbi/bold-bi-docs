@@ -539,9 +539,17 @@ On enabling Auto Font Size, the font size of the subtitle will be adjusted autom
 
 This allows you to apply the specified size of the font to the widget title if the **Subtitle Auto Font Size** is disabled. Value can be between 10 and 32.
 
+### Auto Padding
+
+On enabling Auto Padding, the padding of the widget container will be adjusted automatically if the size of the widget varies.
+
+**Padding**
+
+This allows you to customize the padding of the widget container if the **Auto Padding** is disabled. Value can be between 0 and 25.
+
 ### Show Border
 
-This allows you to toggle the visibility of `border` surrounding the widget.
+This allows you to toggle the visibility of the `border` surrounding the widget.
 
 ### Corner Radius
 
@@ -558,6 +566,10 @@ This allows you to set the **background color** to the heat map widget.
 ### Transparency
 
 This property allows you to specify the **transparency** for the `background color.`
+
+### Show Shadow
+
+This allows you to toggle the visibility of the `shadow` surrounding the widget.
 
 ### Container actions
 

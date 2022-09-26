@@ -390,7 +390,11 @@ dashboard.loadDashboard();
 </h2>
 
 
-Specifies the filter that has to be applied to the dashboard.    
+This member supports filtering the dashboard in the following cases.
+
+1. Filtering with URL Parameter.
+2. Filtering with Dashboard Parameter.
+3. Filtering with Combination of URL Parameter and Dashboard Parameter and vice versa.
 
 <br>
 
@@ -399,13 +403,79 @@ Specifies the filter that has to be applied to the dashboard.
 <li>""</li><br>
 
 **Example** 
-   
+
 ```js
 var dashboard = BoldBI.create({
      filterParameters: "Continent=Asia,Africa,Europe"
 });
 dashboard.loadDashboard();
 ```
+
+<table>
+<thead>
+<tr>
+<th>Cases</th>
+<th>Syntax</th>
+<th>Example</th>
+</tr>
+</thead>
+<tr>
+<td><code>URL Parameter</code></td>
+<td><code>{column_name}={value1},{value2},{value3}</code></td>
+<td><code>
+
+```js
+var dashboard = BoldBI.create({
+     filterParameters: "Continent=Asia,Africa,Europe"
+});
+dashboard.loadDashboard();
+```
+
+</code></td>
+</tr>
+<tr>
+<td><code>Dashboard Parameter</code></td>
+<td><code>{parameter_name}={parameter_value}</code></td>
+<td><code>
+
+```js
+var dashboard = BoldBI.create({
+     filterParameters: "Department_DP=Sales"
+});
+dashboard.loadDashboard();
+```
+
+</code></td>
+</tr>
+<tr>
+<td><code>Combination Of URL Parameter and Dashboard Parameter</code></td>
+<td><code>{column_name}={value1},{value2},{value3}&&{parameter_name}={parameter_value}</code></td>
+<td><code>
+
+```js
+var dashboard = BoldBI.create({
+     filterParameters: "Continent=Asia,Africa,Europe&Department_DP=Sales"
+});
+dashboard.loadDashboard();
+```
+
+</code></td>
+</tr>
+<tr>
+<td><code>Combination Of Dashboard Parameter and URL Parameter</code></td>
+<td><code>{parameter_name}={parameter_value}&{column_name}={value1},{value2},{value3}</code></td>
+<td><code>
+
+```js
+var dashboard = BoldBI.create({
+     filterParameters: "Department_DP=Sales&Continent=Asia,Africa,Europe"
+});
+dashboard.loadDashboard();
+```
+
+</code></td>
+</tr>
+</table>
 
 <h2 class="doc-prop-wrapper" id="disableAutoRecover" data-Path="disableAutoRecover-disableAutoRecover">
 <a href="#disableAutoRecover" aria-hidden="true" class="anchor">

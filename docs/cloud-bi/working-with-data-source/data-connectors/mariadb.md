@@ -85,10 +85,11 @@ In this connection type, a data source is fetched from source periodically. Choo
 
 ### Preview and data import
 1. Click **Connect** to connect the MariaDB server with configured details.
-2. The Choose Table(s) dialog opens. This dialog displays a list of tables and views in treeview. Select the required table(s) or view(s) from treeview to use it in the designer.
+2. The Extract data dialog opens. This dialog has two modes of connection either via Table or [Custom query](/cloud-bi/faq/working-with-custom-query-extract-mode-in-bold-bi/). Under custom query option, write the required query and click **Connect**.
+Under Table option, This dialog displays a list of tables and views in treeview. Select the required table(s) or view(s) from treeview to use in the designer.
 The option is available for configuring incremental refresh column (The table must have a primary key column and date column to configure this option) for the selected items in the right-side panel. If you configure it, then the data source will work on [Incremental update](/cloud-bi/working-with-data-source/data-connectors/sql-data-source/#incremental-update), otherwise it will work on [Full load](/cloud-bi/working-with-data-source/data-connectors/sql-data-source/#full-load) concept. Finally, click **Connect**.
 
-   ![Preview](/static/assets/cloud/working-with-datasource/data-connectors/images/common/Preview_Extract.png)
+   ![Preview](/static/assets/cloud/working-with-datasource/data-connectors/images/common/Preview_Extract.png#max-width=100%)
 
 3. Now, the data design view page with the selected table schema opens. Drag the table.
 

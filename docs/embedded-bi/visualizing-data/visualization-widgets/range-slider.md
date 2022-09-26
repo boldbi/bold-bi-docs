@@ -181,7 +181,7 @@ This allows you to apply the specified size of the font to the widget title if t
 
 #### Show Border
 
-This allows you to toggle the visibility of `border` surrounding the widget.
+This allows you to toggle the visibility of the `border` surrounding the widget.
 
 #### Corner Radius
 
@@ -194,6 +194,10 @@ This allows you to set the **background color** to the range slider widget.
 #### Transparency
 
 This property allows you to specify the **transparency** for the `background color.`
+
+### Show Shadow
+
+This allows you to toggle the visibility of the `shadow` surrounding the widget.
 
 #### Container actions
 
