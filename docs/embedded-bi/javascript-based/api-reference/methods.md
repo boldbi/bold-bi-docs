@@ -115,7 +115,11 @@ instance.destroy();
 
 ## updateFilters()
     
-This method will update the filter parameters of current dashboard. [learn more details](/embedded-bi/working-with-dashboards/preview-dashboard/urlparameters/)
+This method will update the filter parameters of current dashboard by the following cases.
+
+1. Filtering with URL Parameter.
+2. Filtering with Dashboard Parameter.
+3. Filtering with Combination of URL Parameter and Dashboard Parameter and vice-versa.
 
 **Example** 
    
@@ -123,6 +127,65 @@ This method will update the filter parameters of current dashboard. [learn more 
 var instance = BoldBI.getInstance("container"); //container -> embed container id
 instance.updateFilters("Continent=Asia,Africa,Europe");   
 ```
+
+<table>
+<thead>
+<tr>
+<th>Cases</th>
+<th>Syntax</th>
+<th>Example</th>
+</tr>
+</thead>
+<tr>
+<td><code>URL Parameter</code></td>
+<td><code>{column_name}={value1},{value2},{value3}</code></td>
+<td><code>
+
+```js
+var instance = BoldBI.getInstance("container"); //container -> embed container id
+instance.updateFilters("Continent=Asia,Africa,Europe");   
+```
+
+</code></td>
+</tr>
+<tr>
+<td><code>Dashboard Parameter</code></td>
+<td><code>{parameter_name}={parameter_value}</code></td>
+<td><code>
+
+```js
+var instance = BoldBI.getInstance("container"); //container -> embed container id
+instance.updateFilters("Department_DP=Sales");
+```
+
+</code></td>
+</tr>
+<tr>
+<td><code>Combination Of URL Parameter and Dashboard Parameter</code></td>
+<td><code>{column_name}={value1},{value2},{value3}&&{parameter_name}={parameter_value}</code></td>
+<td><code>
+
+```js
+var instance = BoldBI.getInstance("container"); //container -> embed container id
+instance.updateFilters("Continent=Asia,Africa,Europe&Department_DP=Sales");
+```
+
+</code></td>
+</tr>
+<tr>
+<td><code>Combination Of Dashboard Parameter and URL Parameter</code></td>
+<td><code>{parameter_name}={parameter_value}&{column_name}={value1},{value2},{value3}</code></td>
+<td><code>
+
+```js
+var instance = BoldBI.getInstance("container"); //container -> embed container id
+instance.updateFilters("Department_DP=Sales&Continent=Asia,Africa,Europe");
+});
+```
+
+</code></td>
+</tr>
+</table>
 
 ## refreshDashboard()
     
@@ -219,8 +282,9 @@ var widgetInstance = dashboard.getWidgetInstance(widgetId);
 This method is used to set the filter parameters to the widget instance. These filter parameters would be applied to the respective widget at the initial rendering.
 
 If that widget acts as a master, the filter will be applied to the slave widgets.
+To know about widget ID of the specific widget, please refer this [link](/embedded-bi/javascript-based/widget-embedding/#how-to-get-widget-id).
 
-**NOTE:** Currently, we provide support for the text field only.
+**NOTE:** Currently, we have provided support for the text field only.
 
 **Example**
 
@@ -229,14 +293,6 @@ var widgetId = "2583540a-f970-41a1-9fc8-31c0581e7aa3";
 var filtersValue = ["Average", "Good"]; 
 var widgetInstance = dashboard.getWidgetInstance(widgetId).setFilterParameters(filtersValue);
 ```
-
-### How to get widget id.
-
-1. Open the desired dashboard and select the `More` option under the widget you want to set filter value. Then, select the `Get Embed Code` from the drop-down menu.
-![InspectElement](/static/assets/embedded/javascript/images/widget-getembedcode-instance.png)
-
-2. Get the widget Id from the embed code prompt. 
-![InspectElement](/static/assets/embedded/javascript/images/widget-id-embedcode.png) 
 
 ## exportDashboardAsPdf()
 
@@ -587,34 +643,29 @@ function callBackFnc(args)
 
 This method is used to publish the dashboard to the server with the dashboard name into the desired category and desired dashboard name.
 
-1. To Publish or Save the new dashboard.<br>
-2. To Publish or Save the existing dashboard.<br>
-3. To PublishAs or SaveAs the existing dashboard.
-
-
-**Example**
-```js
-var instance = BoldBI.getInstance("container"); //container -> embed container id
-var publishModel = {category: "Sales",categoryId: "e6ed2f36-7205-423e-81e0-38a8ceb8e68c",description: "Published Using API",,isPublic: true,name: "Publish API_01"}
-instance.saveDashboard(publishModel, containerId);
-```
+1. To Publish or Save the new dashboard. <br/>
+2. To Publish or Save the existing dashboard. <br/>
+3. To PublishAs or SaveAs the existing dashboard. <br/>
 <table>
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Type</th>
+<th style="width: 20%;">Parameter</th>
+<th style="width: 20%;">Type</th>
 <th>Description</th>
 </tr>
 </thead>
 <tr>
 <td><code>publishModel</code></td>
 <td><code>object</code></td>
-<td>This object contains the following Parameters <br>
-category – Set the name of the category in the dashboard will be published. <br>
-  categoryId – Set the unique id of category in the dashboard will be published, the category Id taken from getDashboardCategories().  <br>
-  description – Set the description in the dashboard will be published. <br>
-  isPublic – Need to set the publish dashboard as public or not.
-  name - Set the Name of the dashboard in the dashboard will be published.
+<td>This object contains the following Parameters:
+<table style="border:none;">
+<tr><td><b>category</b></td> <td>Set the name of the category in the dashboard will be published.</td></tr> 
+<tr><td><b>categoryId</b></td> <td>Set the unique id of category in the dashboard will be published, the category Id taken from getDashboardCategories().</td></tr>
+<tr><td><b>description</b></td> <td>Set the description in the dashboard will be published.</td></tr>
+<tr><td><b>id</b></td> <td>Save the new dashboard - Dashboard Id value can be empty here. <br/>Save the existing dashboard - Dashboard Id value should be valid. <br/>SaveAs the existing dashboard - Dashboard Id value can be empty here.</td></tr> 
+<tr><td><b>isPublic</b></td> <td>Need to set the publish dashboard as public or not.</td></tr>
+<tr><td><b>name</b></td> <td>Set the Name of the dashboard in the dashboard will be published.</td></tr>
+</table>
 </td>
 </tr>
 <tr>
@@ -622,4 +673,49 @@ category – Set the name of the category in the dashboard will be published. <b
 <td><code>string</code></td>
 <td>Set the embed container id.</td>
 </tr>
-</table>
+</table><br/>
+
+**Example for Save the new dashboard**
+```js
+var instance = BoldBI.getInstance("container"); //container -> embed container id
+// For Save the New Dashboard case, Dashboard Id value is not needed
+var publishModel = {category: "Sales",categoryId: "e6ed2f36-7205-423e-81e0-38a8ceb8e68c",description: "Published Using API",isPublic: false,name: "Publish API_01"}
+instance.saveDashboard(publishModel, containerId);
+```
+
+**Example for Save the existing dashboard**
+```js
+var instance = BoldBI.getInstance("container"); //container -> embed container id
+// For Save the Existing Dashboard case, Dashboard Id value is needed
+var publishModel = {category: "Sales",categoryId: "e6ed2f36-7205-423e-81e0-38a8ceb8e68c",description: "Published Using API",id: '451e17e5-e59f-4090-84a2-cf5537876e59',isPublic: false,name: "Publish API_01"}
+instance.saveDashboard(publishModel, containerId);
+```
+
+**Example for SaveAs the existing dashboard**
+```js
+var instance = BoldBI.getInstance("container"); //container -> embed container id
+// For SaveAs the existing Dashboard case, Dashboard Id value is not needed
+var publishModel = {category: "Sales",categoryId: "e6ed2f36-7205-423e-81e0-38a8ceb8e68c",description: "Published Using API",isPublic: false,name: "Publish API_01"}
+instance.saveDashboard(publishModel, containerId);
+```
+
+## destroyStyles()
+
+This method will remove the styles applied from the dashboard, which instance created using embed container Id.
+
+**Example**
+```js
+var instance = BoldBI.getInstance("container"); //container -> embed container id
+instance.destroyStyles();
+```
+
+## addStyles()
+
+This method will apply or refresh the styles of the dashboard, which instance created using embed container Id.
+
+**Example**
+```js
+var instance = BoldBI.getInstance("container"); //container -> embed container id
+instance.addStyles();
+```
+

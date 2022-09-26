@@ -296,6 +296,61 @@ This allows you to edit the legend title of a map.
 
 This provides the option to select the legend placement in a map.
 
+### Marker Settings
+
+![Marker Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/map/marker-settings.png)
+
+
+#### Marker Based Zoom
+
+If you enable this option, the map will be automatically zoomed in to the marker area. Here in the following map widget, the map has a single marker. It will be useful for the filtering process.
+
+![Map Zoom](/static/assets/embedded/visualizing-data/visualization-widgets/images/map/map-zoomin.png)
+
+By enabling this option, the map will be zoomed in on the area where the marker is placed.
+
+![Map Zoom In](/static/assets/embedded/visualizing-data/visualization-widgets/images/map/marker-zoomedin.png)
+
+#### Marker Shape
+
+This option allows you to customize the marker shape on the map.
+
+![Map Shape Dropdown](/static/assets/embedded/visualizing-data/visualization-widgets/images/map/map-markershape.png)
+
+![Map Shape](/static/assets/embedded/visualizing-data/visualization-widgets/images/map/marker-shape.png)
+
+#### Color
+
+This option allows you to customize the marker color.
+
+#### Width
+
+This option allows you to customize the marker width
+
+#### Height
+
+This option allows you to customize the marker height.
+
+#### Advanced
+
+This option allows you to customize the map marker.
+
+If you enable the `Advanced` option, the color customization window will render as follows:
+
+![Advance Marker settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/map/map-advance-marker-settings.png)
+
+You can change based on the field and summary type.
+
+You can choose a series of colors with the `Color` color picker using multiple condition sets for measure value: greater than, less than, equal to, not equal to, between, not between, greater than or equal to, less than or equal to. For Dimension values: starts with, ends with, contains, not contains, equals, not equals. You can customize the width and height of the marker.
+
+You can customize the shape of the marker with the `Marker Shape` option or you can customize the shape as an image with the `Marker Image` option. You can also customize the legend name by providing the necessary values inside the condition name and you can also add multiple conditions.
+
+![Rule Color changes for marker](/static/assets/embedded/visualizing-data/visualization-widgets/images/map/map-markerrulechange.png)
+
+If you click save, the map widget will render like this:
+
+![Rule Color changes for marker in map](/static/assets/embedded/visualizing-data/visualization-widgets/images/map/map-markerrule.png)
+
 #### Link
 
 You can enable linking and configure to navigate to a general URL with or without parameters. For more details, refer to the [Linking](/embedded-bi/visualizing-data/working-with-widgets/linking-urls-and-dashboards/).
@@ -450,9 +505,17 @@ On enabling Auto Font Size, the font size of the subtitle will be adjusted autom
 
 This allows you to apply the specified size of the font to the widget title if the **Subtitle Auto Font Size** is disabled. Value can be between 10 and 32.
 
+### Auto Padding
+
+On enabling Auto Padding, the padding of the widget container will be adjusted automatically if the size of the widget varies.
+
+**Padding**
+
+This allows you to customize the padding of the widget container if the **Auto Padding** is disabled. Value can be between 0 and 25.
+
 ### Show Border
 
-This allows you to toggle the visibility of `border` surrounding the widget.
+This allows you to toggle the visibility of the `border` surrounding the widget.
 
 ### Corner Radius
 
@@ -469,6 +532,10 @@ This allows you to set the **background color** to the map widget.
 ### Transparency
 
 This property allows you to change the transparency from 0.0 to 1.0.
+
+### Show Shadow
+
+This allows you to toggle the visibility of the `shadow` surrounding the widget.
 
 ### Container actions
 

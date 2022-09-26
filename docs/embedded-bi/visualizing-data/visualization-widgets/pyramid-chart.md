@@ -260,6 +260,30 @@ This allows you to customize the suffix value of value labels.
 
 ![Value labels suffix](/static/assets/embedded/visualizing-data/visualization-widgets/images/pyramid-chart/labels-suffix.png)
 
+### Series Settings
+
+The `Series Settings` option is enabled only when you configure the **series** in the `Assigned Data` tab.
+
+![Series Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/pyramid-chart/series-settings.png)
+
+### Fixed rows and columns 
+
+If you enable the fixed rows and columns, you can customize the rows and columns. The rows and columns are fixed based on the container size and size of the pyramid chart.
+
+![Pyramid Series Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/pyramid-chart/series-settingspyramidchart.png)
+
+### Row count 
+
+By enabling the `Row Count`, you can set the count of the rows.
+
+### Column count 
+
+By enabling the `Column Count,` you can set the column count.
+
+![Pyramid Series Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/pyramid-chart/series-settingsfixed.png)
+
+>**Note**: If the invalid columns and rows are given, the rows and columns reset to their default value. For example: If you are given the number of rows as 6 and the number of columns as 5 but your data count is only 20. In this case, the rows and columns will reset to their default value.
+
 #### Legend Settings
 
 ![Legend settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/pyramid-chart/legend-settings.png)
@@ -424,9 +448,17 @@ On enabling Auto Font Size, the font size of the subtitle will be adjusted autom
 
 This allows you to apply the specified size of the font to the widget title if the **Subtitle Auto Font Size** is disabled. Value can be between 10 and 32.
 
+### Auto Padding
+
+On enabling Auto Padding, the padding of the widget container will be adjusted automatically if the size of the widget varies.
+
+**Padding**
+
+This allows you to customize the padding of the widget container if the **Auto Padding** is disabled. Value can be between 0 and 25.
+
 ### Show Border
 
-This allows you to toggle the visibility of `border` surrounding the widget.
+This allows you to toggle the visibility of the `border` surrounding the widget.
 
 ### Corner Radius
 
@@ -443,6 +475,10 @@ This allows you to set the **background color** to the pyramid chart widget.
 ### Transparency
 
 This property allows you to specifies the **transparency** for the `background color`.
+
+### Show Shadow
+
+This allows you to toggle the visibility of the `shadow` surrounding the widget.
 
 ### Container actions
 

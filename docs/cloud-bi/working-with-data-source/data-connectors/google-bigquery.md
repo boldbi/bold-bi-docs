@@ -49,29 +49,34 @@ Use the following steps to authenticate with Google BigQuery server:
 ### Create a Google BigQuery data source
 After successful authentication, the **NEW DATA SOURCE** configuration panel opens. 
 Follow these steps to create the Google BigQuery data source. 
-1. Enter a name and description (optional) for the data source. 
-2. Choose the required projects in **Project** drop down box.
-3. The authentication type will be set to Google BigQuery automatically in **Connected as** text box since OAuth is used for authenticating with Google BigQuery account.
+1. Enter name and description (optional) for the data source. 
+2. Choose the required projects in **Project** drop-down box.
+3. The authentication type will be sent to Google BigQuery automatically in the **Connected as** text box since OAuth is used for authenticating with the Google BigQuery account.
+4. To connect Google Big Query with particular dataset, enter the property currentdataset={datasetname} or specificdataset={datasetname} in the Additional connection parameters text box.
 
-   ![Google BigQuery Connection](/static/assets/cloud/working-with-datasource/data-connectors/images/GoogleBigQuery/GoogleBQ_Connection.png)
+   ![Google BigQuery Connection](/static/assets/cloud/working-with-datasource/data-connectors/images/GoogleBigQuery/GoogleBQ_Connection.png#max-width=100%)
 
-You can also edit the connection information set here using the [Edit Connection](https://help.syncfusion.com/bold-bi/editing-a-data-connection) option.
+To edit the connection information, use the [Edit Connection](https://help.syncfusion.com/bold-bi/editing-a-data-connection) option.
 
 ### Preview data
-1. Click **Connect** to connect the Google BigQuery server with configured details. 
-The available schemas list is shown in tree view for the selected projects that are retrieved from the Google BigQuery server.
+1. Click **Connect** to connect the Google BigQuery server with configured details.
+The available datasets list is shown in a tree view for the selected projects that are retrieved from the Google BigQuery server.
 
-   ![Treev view](/static/assets/cloud/working-with-datasource/data-connectors/images/GoogleBigQuery/GoogleBQ_Treeview.png)
+   ![Treev view](/static/assets/cloud/working-with-datasource/data-connectors/images/GoogleBigQuery/GoogleBQ_Treeview.png#max-width=100%)
 
-2. In the data design view page, drag and drop the table.
+If the dataset name is provided in Additional connection parameters text box, only the specified dataset will be listed.
 
-   ![Query Editor](/static/assets/cloud/working-with-datasource/data-connectors/images/GoogleBigQuery/GoogleBQ_QueryEditor.png)
+   ![Tree view specific dataset](/static/assets/cloud/working-with-datasource/data-connectors/images/GoogleBigQuery/GoogleBQ_Treeview_specific_dataset.png#max-width=100%)
+
+   2. In the data design view page, drag, and drop the table.
+
+   ![Query Editor](/static/assets/cloud/working-with-datasource/data-connectors/images/GoogleBigQuery/GoogleBQ_QueryEditor.png#max-width=100%)
  
-    You can use the **Code View** options for passing query to display data.
+    You can use **Code View** options for passing query to display data.
 
-   ![Code View](/static/assets/cloud/working-with-datasource/data-connectors/images/GoogleBigQuery/GoogleBQ_CodeView.png) 
+   ![Code view](/static/assets/cloud/working-with-datasource/data-connectors/images/GoogleBigQuery/GoogleBQ_CodeView.png#max-width=100%) 
 
-3. Click **Save** to save the data source with a relevant name.
+3. Click **Save** to save the data source with relevant name.
 
 ## Connected accounts for OAuth data sources
 If you have already logged into the account and authenticated with the data source, the account information will be listed here. You can select one of the accounts or connect to a new account by clicking the **Connect New Account** button.

@@ -179,3 +179,7 @@ The following are the frequently asked questions in Bold BI Enterprise:
 [How to join tables based on expression column](/embedded-bi/faq/how-to-join-tables-based-on-expression-columns/)
 
 [How to add custom theme in Docker container application](/embedded-bi/faq/how-to-add-custom-theme-in-docker-container-application/)
+
+[How to use linking URL and dashboard in iframe embedding](/embedded-bi/faq/how-to-use-linking-url-and-dashboard-in-iframe-embedding/)
+
+[How to secure the dashboard in iframe embedding](/embedded-bi/faq/how-to-secure-the-dashboard-in-iframe-embedding/)

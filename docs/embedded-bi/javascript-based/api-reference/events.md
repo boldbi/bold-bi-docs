@@ -1067,7 +1067,7 @@ var dashboard = BoldBI.create({
 dashboard.loadDesigner();        
 ```
 
-## ajaxbeforeload
+## ajaxBeforeLoad
 
  This event is used to customize headers in the ajax call before sending them to the designer service.
 
@@ -1102,9 +1102,9 @@ dashboard.loadDesigner();
 
 ```js
 var dashboard = BoldBI.create({
-     ajaxbeforeload: function (args) {
+     ajaxBeforeLoad: function (args) {
           // Write a code block to add a new payload header. 
-          // var header = { key : 'UserId',Value : '1005'};
+          // var header = { key : 'UserId',value : '1005'};
           // args.headers.push(header);
      } 
 });

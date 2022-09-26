@@ -70,6 +70,10 @@ Drag and drop element from the `Dimensions` or `Measures` field into the `Argume
 
 ![Range Navigator Argument data](/static/assets/embedded/visualizing-data/visualization-widgets/images/range-navigator/navigator-argdata.png)
 
+`Dimensions` section is available only with date fields and icon in `Argument` section denotes the same.
+
+![Range Navigator Argument Icon Info](/static/assets/embedded/visualizing-data/visualization-widgets/images/range-navigator/navigator-argicon.png)
+
 Click the `Settings` option to change required date format. You can also set the `Relative Date Filter.`
 
 `Settings` icon is not applicable for `Measures` values.
@@ -184,7 +188,7 @@ This allows you to apply the specified size of the font to the widget title if t
 
 #### Show Border
 
-This allows you to toggle the visibility of `border` surrounding the widget.
+This allows you to toggle the visibility of the `border` surrounding the widget.
 
 #### Corner Radius
 
@@ -197,6 +201,10 @@ This allows you to set the **background color** to the range navigator widget.
 #### Transparency
 
 This property allows you to specifies the **transparency** for the `background color.`
+
+### Show Shadow
+
+This allows you to toggle the visibility of the `shadow` surrounding the widget.
 
 #### Container actions
 

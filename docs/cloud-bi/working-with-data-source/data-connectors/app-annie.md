@@ -32,7 +32,7 @@ Once you click the App Annie data source, the NEW DATA SOURCE configuration pa
 1. Enter a name and description (optional) for the data source.
 2. Enter a valid App Annie REST API endpoint in the URL textbox. Refer the [App Annie API documentation](https://support.appannie.com/hc/en-us) for more details.
 
-    Example: [https://api.appannie.com/v1.3/accounts](https://api.appannie.com/v1.3/accounts)
+    Example: `https://api.appannie.com/v1.3/accounts`
 
 3. Select **GET** method for the REST API in **Method** combo box.
 4. Choose a time interval for **Refresh Settings** using the combo box, to trigger the Rest API request periodically to keep the data in sync with your dashboard.  
@@ -46,7 +46,7 @@ You can also edit the connection information set here using the [Edit Connection
 
 #### How do I get Bearer Key for connecting App Annie data source?
 
-1. Login in to App Annie [Dashboard.](https://www.appannie.com/account/login/?_ref=header)
+1. Login in to App Annie [Dashboard.](https://www.data.ai/account/login/?_ref=header)
 2. Select **Account -> API Key** and find the API Key under **'Your API Key'** section.
 
 ![Bearer token](/static/assets/cloud/working-with-datasource/data-connectors/images/app-annie/BearerToken.png)
@@ -76,11 +76,11 @@ Period of time before next refresh call is triggered. This will automatically tr
 
 **Country List**
 
-[https://api.appannie.com/v1.3/meta/countries](https://api.appannie.com/v1.3/meta/countries)
+`https://api.appannie.com/v1.3/meta/countries`
 
 **Shared Products List**
 
-[https://api.appannie.com/v1.3/sharing/products?page_index=0](https://api.appannie.com/v1.3/sharing/products?page_index=0)
+`https://api.appannie.com/v1.3/sharing/products?page_index=0`
 
 ### Preview and data import
 * Click **Preview & Connect** to connect with the configurations set.

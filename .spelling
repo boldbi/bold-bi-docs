@@ -1079,7 +1079,7 @@ dashboardSettings.viewDataSettings
 dashboardSettings.viewDataSettings.showAllColumns 
 beforeDesignerToolbarButtonsRendered 
 args.toolbarButtons 
-ajaxbeforeload 
+ajaxBeforeLoad 
 ajax 
 args.headers 
 args.serviceAuthorizationToken 
@@ -1162,6 +1162,7 @@ darkviolet
 isLocalTheme
 readme
 boldbi-themestudio
+SingleStore
 SQL_Latin1_General_CP1_CI_AS
 utf8mb4_general_ci
 v5.2.48
@@ -1185,3 +1186,10 @@ FilterValues
 pre-flight
 subdomain
 wildcard
+metadata
+column_name
+value3
+parameter_name
+parameter_value
+destroyStyles
+addStyles

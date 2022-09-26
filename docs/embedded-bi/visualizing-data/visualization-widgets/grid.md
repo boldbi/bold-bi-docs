@@ -158,6 +158,52 @@ This allows you to differentiate `alternative rows` of the grid by the backgroun
 
 ![Grid Row Height](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/grid-alternativerowcolor.png)
 
+### Summary Row
+
+This Section allows you to add a summary row at end of the grid container
+
+![Summary Row](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/grid-summary-row.png)
+
+If you enable the `Enable Summary Row` option, following window shows.
+
+![Summary Row window](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/grid-summary-rowwindow.png)
+
+Click on `Add Summary` to add a summary row
+
+![Summary Row Add](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/grid-summary-rowadd.png)
+
+![Summary Row Apply](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/grid-summary-rowapply.png)
+
+You can customize each column in the grid to show a summary row
+
+![Summary Row Customize](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/grid-summary-rowcustomize.png)
+
+***Type***
+
+This option allows you to customize the aggregation type of the summary row.
+
+***Title***
+
+This option allows you to customize the title of the summary row
+
+***Show Value***
+
+This option allows you to customize the visibility of the summary value of a column in the summary row.
+
+***Value Color***
+
+This option allows you to customize the grid summary row font color.
+
+***Format***
+
+![Summary Row Customize](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/grid-summary-rowformat.png)
+
+This option allows you to measure the format of the summary value. For more details, refer to the [measure format](/embedded-bi/visualizing-data/working-with-widgets/formatting-measure-type-column/).
+
+***Delete***
+
+This option allows you to delete the summary row.
+
 ### Page Settings
 
 ![Grid Row Height](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/grid-page-settings.png)
@@ -565,9 +611,17 @@ On enabling Auto Font Size, the font size of the subtitle will be adjusted autom
 
 This allows you to apply the specified size of the font to the widget title if the Subtitle Auto Font Size is disabled. The value can range between 10 and 32.
 
+### Auto Padding
+
+On enabling Auto Padding, the padding of the widget container will be adjusted automatically if the size of the widget varies.
+
+**Padding**
+
+This allows you to customize the padding of the widget container if the **Auto Padding** is disabled. Value can be between 0 and 25.
+
 ### Show Border
 
-This allows you to toggle the visibility of border surrounding the widget.
+This allows you to toggle the visibility of the border surrounding the widget.
 
 ### Corner Radius
 
@@ -576,6 +630,10 @@ This allows you to apply the specified radius to the widget corners if the Show 
 ### Transparency
 
 You can change the transparency from 0 to 1.
+
+### Show Shadow
+
+This allows you to toggle the visibility of the `shadow` surrounding the widget.
 
 ### Container actions
 
