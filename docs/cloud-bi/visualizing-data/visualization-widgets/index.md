@@ -8,7 +8,7 @@ documentation: ug
 
 # Visualization Widgets
 
-This section explains how to configure and format the available widgets in Bold BI and also explains about various properties in each widget.
+This section explains how to configure and format the available widgets in Bold BI Enterprise and also explains about various properties in each widget.
 
 You can explore the available widgets in detail here,
 
@@ -27,6 +27,8 @@ You can explore the available widgets in detail here,
 [Radar Polar Chart](/cloud-bi/visualizing-data/visualization-widgets/radar-polar-chart/)
 
 [Maps](/cloud-bi/visualizing-data/visualization-widgets/map/)
+
+[Bing Maps](/cloud-bi/visualizing-data/visualization-widgets/bing-maps/)
 
 [Grid](/cloud-bi/visualizing-data/visualization-widgets/grid/)
 
@@ -50,6 +52,8 @@ You can explore the available widgets in detail here,
 
 [Funnel Chart](/cloud-bi/visualizing-data/visualization-widgets/funnel-chart/)
 
+[Scatter Chart](/cloud-bi/visualizing-data/visualization-widgets/scatter-chart/)
+
 [Area Chart](/cloud-bi/visualizing-data/visualization-widgets/area-chart/)
 
 [Stacked Area Chart](/cloud-bi/visualizing-data/visualization-widgets/stacked-area-chart/)
@@ -66,6 +70,8 @@ You can explore the available widgets in detail here,
 
 [List Box](/cloud-bi/visualizing-data/visualization-widgets/list-box/)
 
+[Text Filter](/cloud-bi/visualizing-data/visualization-widgets/text-filter/)
+
 [Combo Box](/cloud-bi/visualizing-data/visualization-widgets/combo-box/)
 
 [Range Slider](/cloud-bi/visualizing-data/visualization-widgets/range-slider/)
@@ -79,3 +85,5 @@ You can explore the available widgets in detail here,
 [Image](/cloud-bi/visualizing-data/visualization-widgets/image/)
 
 [Text](/cloud-bi/visualizing-data/visualization-widgets/text/)
+
+[Tab Widget](/cloud-bi/visualizing-data/visualization-widgets/tab-widget/)

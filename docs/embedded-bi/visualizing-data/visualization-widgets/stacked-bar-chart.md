@@ -101,6 +101,12 @@ You can change the `Settings`.
 
 ![Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/column-settings.png)
 
+#### Renaming fields
+
+The configured field names can be edited by using the `Rename` option provided in the settings menu.
+
+![Rename](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/rename.png)
+
 #### Sorting data
 
 You can `Sort` the dimension data using `Sort` option under `Settings` menu list. To apply Sorting for the data, refer [Sort](/embedded-bi/visualizing-data/working-with-widgets/advanced-sorting/).
@@ -163,19 +169,25 @@ You can see the list of properties available for the widget with default value.
 
 #### General Settings
 
+![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/property.png)
+
 #### Name
 
 This allows you to set `title` for this stacked-column chart widget.
+
+![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/title.png)
 
 #### Subtitle
 
 This allows you to set `subtitle` for this stacked-column chart widget.
 
+![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/Subtitle.png)
+
 #### Description
 
 This allows you to set a brief explanation about this stacked-column chart widget.
 
-![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/general-settings.png)
+![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/description.png)
 
 #### Basic Settings
 
@@ -184,6 +196,8 @@ This allows you to set a brief explanation about this stacked-column chart widge
 #### Show Tooltip
 
 This option allows you to toggle the visibility of tooltip in a chart.
+
+![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/tooltip.png)
 
 #### Chart type and axis
 
@@ -207,9 +221,13 @@ This allows you to toggle the visibility of value labels.
 
 ![Show Value Labels](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/show-value-label.png)
 
+If you Disable `Show Value Labels` properties, the dependent properties, which are **color**, **Value label position**, **Value label rotation** and **Value label suffix** will be hidden.
+
+![Show value label](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/show-label.png)
+
 #### Customize
 
-This allows you to customize the toggle visibility of each series in a chart.
+This allows you to customize the toggle visibility of value labels in each series.
 
 ![Value labels customization change](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/show-value-label-customization.png)
 
@@ -245,11 +263,37 @@ This allows you to customize the suffix value of value labels.
 
 ![Suffix Value](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/suffix-value.png)
 
+**Note:** When Increased the height and number of data in chart the value label was hidden. Use label rotation property to visible the label.
+
 #### Show items with no data
 
 This allows you to show data, which column does not have value.
 
 ![Empty Point Mode Gap](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/chart-gap.png)
+
+### Empty Point Mode
+
+This allows you to handle the display mode of the data point values is null or undefined when the **Show Items With No Data** is enabled.
+
+![Empty Point Mode Gap](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/chart-gap.png)
+ 
+### Gap
+
+This option allows you to show the null or undefined values with gaps.
+
+![Empty Point Mode Gap](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/chart-gap.png)
+
+### Zero
+
+This option allows you to show the null or undefined values in the zero axis.
+
+![Empty Point Mode Zero](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/chart-zero.png)
+
+### Average
+
+This option allows you to display the null or undefined values with the average value.
+
+![Empty Point Mode Average](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/chart-average.png)
 
 #### Column Width
 
@@ -353,7 +397,9 @@ This option allows you to set a maximum width for the Legend Items and it is app
 
 ![Legend Text Width in chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/chart_Legendwidth.png)
 
-#### Axis Format
+If you uncheck the `Show Legend` property in the property panel, the dependent properties, which are **Legend color**, **Legend position**, **customization button** and **Legend title** are also hidden.
+
+> **NOTE:** For single series, Legend wont be visible. 
 
 This option allows you to format the primary and secondary axis values from the formatting details provided using the `Format` button. For more details, refer to this [measure format](/embedded-bi/visualizing-data/working-with-widgets/formatting-measure-type-column/).
 
@@ -375,15 +421,23 @@ This section allows you to customize the axis settings in chart.
 
 This allows you to customize the axis title color.
 
+![Title color](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/title-color.png)
+
 #### Label color
 
 This allows you to customize the axis label color.
+
+![Labelcolor](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/label-color.png)
 
 #### Show Category Axis
 
 This allows to enable the visibility of `Category Axis`.
 
 ![Show Category Axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/show-category-axis.png)
+
+If you disable the `Show Category Axis` option, dependencies properties, which are **Show axis title**, **Axis title text**, **Trim overflow mode**, **Trim axis labels**, **Label Rotation** and **Auto Interval** option will be hidden.
+
+![Show value label](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/show-axis.png)
 
 #### Show Category Axis Title
 
@@ -396,6 +450,10 @@ This allows you to enable the visibility of `Category Axis` title.
 This allows you to edit the `Category Axis` title for chart. It will reflect in x-axis name of chart.
 
 ![Category Axis Title](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/editcategoryaxistitle.png)
+
+If we uncheck the `Show Axis Title` property, the Axis title text box property will be hidden.
+
+![Show Category axis title](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/show-axis-title.png)
 
 #### Label overflow mode
 
@@ -417,13 +475,13 @@ This option hides the overlapping label in the axis.
 
 This option allows you to trim the axis labels based on the `Maximum Label Width` property value.
 
-![Trimmed label](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/trimming-axis-labels.png)
-
 #### Label Maximum Width
 
 This option allows you to set a maximum width for the axis labels, and also it can be made customizable when the `trim axis label` option is enabled.
 
 ![Label maximum width](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/maximum-label-width.png)
+
+![Trimmed label](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/trimming-axis-labels.png)
 
 #### Category Axis Label Rotation
 
@@ -445,6 +503,10 @@ This allows you to enable the `Primary Value Axis` for chart.
 
 ![Show Primary Value Axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/show-primary-value-axis.png)
 
+If you disable the `Show Primary Axis` option, dependencies properties, which are **Axis title**, **Axis title text**, **Axis type** and **Axis Format** properties will be hidden.
+
+![Show primary value axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/primary-axis.png)
+
 #### Show Primary Value Axis Title
 
 This allows you to enable the visibility of `Primary Value Axis` title of chart.
@@ -457,6 +519,14 @@ This allows you to edit the `Primary Value Axis` title. It will reflect in y-axi
 
 ![Primary Value Axis Title](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/edit-primary-value-axis.png)
 
+### Inverse Axis
+
+By default, the chart axis showing positive values on the top and negative values at the bottom. But, there are times when we need to inverse the axis and show the negative values on the top and positive values on the bottom. For Example, When we bind the temperature data to the chart and to display the negative values on the top, we can make use of this property.
+
+On enabling this property the chart negative values will display on the top and positive values display on the bottom.
+
+![Inversed axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/inverseaxis.png)
+
 #### Axis Range Settings
 
 This allows you to manually set the Minimum, Maximum and Interval values of primary value axis through the `Axis Range Settings` dialog.
@@ -466,6 +536,12 @@ This allows you to manually set the Minimum, Maximum and Interval values of prim
 It will reflect in the primary value axis of the chart.
 
 ![Axis Range Output](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/axisrangeoutput.png)
+
+#### Axis Format
+
+This option allows you to format the primary and secondary axis values from the formatting details provided using the `Format` button. For more details, refer to this [measure format](/embedded-bi/visualizing-data/working-with-widgets/formatting-measure-type-column/).
+
+![Formatting Axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/axis-format.png)
 
 #### Grid Lines
 
@@ -620,7 +696,6 @@ This allows you to set the **background color** to the stacked bar chart widget.
 This property allows you to specify the **transparency** for the `background color.`
 
 ### Show Shadow
-
 This allows you to toggle the visibility of the `shadow` surrounding the widget.
 
 ### Container actions
@@ -666,3 +741,15 @@ To learn more about viewing the underlying widget data, refer to the [view data 
 #### Pin widget
 
 This allows you to pin the widget.
+
+#### Responsive Behavior
+
+We hide the widget elements based on the size of the widget for better readability.
+
+When the chart has been placed with less than 7 columns chart X-axis labels, X-axis titles will be hidden.
+
+![Widget Element](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/X-axis-label.png)
+
+When the chart has been placed with less than 6 rows, chart Y-axis labels, Y-axis titles and gridlines will be hidden.
+
+![Widget Element](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-bar-chart/Y-axis-label.png)

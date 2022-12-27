@@ -40,7 +40,7 @@ You can explore the data source in detail here,
 
 [Configure Custom Attribute](/cloud-bi/working-with-data-source/configuring-custom-attribute/)
 
-[Configure Dashboard Parameter](/cloud-bi/working-with-data-source/configuring-dashboard-parameters/)
+[Dashboard Parameter](/cloud-bi/working-with-data-source/dashboard-parameter)
 
 [Configure Dashboard Parameter Iterative Mode](/cloud-bi/working-with-data-source/dashboard-parameter-iterative-mode)
 

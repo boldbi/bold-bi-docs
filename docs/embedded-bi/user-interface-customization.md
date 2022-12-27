@@ -14,39 +14,21 @@ You can make your own selections, about what you want to see or set preferences 
 
 ## Configuration for layout customization
 
-1. Open `custom_ui` json file from this location. 
+Steps to open and edit the `custom_ui.json` file to customize the user interface.
 
-    <table>
-        <tr>
-            <td>
-                <span style="font-weight:bold">Hosted Environment</span>
-            </td>
-            <td>
-                <span style="font-weight:bold">Location</span>
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Windows
-            </td>
-            <td>
-                Check this location for Bold BI version 4.1.36 or later "{application-installed-drive}\BoldServices\app_data\data".<br/>
-                Check this location for Bold BI version below 4.1.36 "{application-installed-drive}\Bold BI\app_data\data".<br/>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                Linux
-            </td>
-            <td>
-                /var/www/bold-services/application/app_data/data
-            </td>
-        </tr>
-    </table>
+1. Go to the UMS `Settings` page.
 
-2. Fill the required fields in the same file and save.
+    `Example: http://{yourdomain}/ums/administration`
 
-3. Restart the application, now you can see the changes reflecting in the UI.
+    ![UMS Settings](/static/assets/embedded/faq/images/ums-settings.png)
+
+2. Select the `Configuration` tab from the settings menu and choose `custom_ui.json` on the `Search your files` drop-down.
+
+    ![Custom UI Json](/static/assets/embedded/user-interface-customization/images/custom-ui-json.png)
+
+3. Fill in the required fields in the file and `Save.`
+
+4. Restart the application and access the site. Refer to this [link](/embedded-bi/faq/how-to-restart-the-bold-bi-embedded-application/) to learn how to restart the Bold BI application.
 
 **Custom UI JSON**
 
@@ -58,17 +40,83 @@ CustomUI json file contains the following fields, which is used to customize UI 
 4. Schemes
 5. Custom menus
 
-**Sites**
+### **Sites**
 
 You need to provide the site name and matching profile name, which you want to customize UI.
 
 ![Sites](/static/assets/embedded/user-interface-customization/images/sites-example.png#width=40%)
 
-**Profiles**
+### **Profiles**
 
 This section contains list of default left side menu options and custom menus.
 
 ![profiles](/static/assets/embedded/user-interface-customization/images/profiles-example.png#width=40%)
+
+**Profile syntax**
+
+```json 
+	  "Profiles": [
+		{
+		  "Name": "profile1",
+		  "Dashboards": {
+			"ShowMenu": true,
+			"SamePagePreview": false,
+			"Order": 1,
+			"Scheme": ""
+		  },
+		  "Datasources": {
+			"ShowMenu": true,
+			"Order": 2,
+			"Scheme": ""
+		  },
+		  "Schedules": {
+			"ShowMenu": true,
+			"Order": 3,
+			"Scheme": ""
+		  },
+		  "Slideshows": {
+			"ShowMenu": true,
+			"Order": 4,
+			"Scheme": ""
+		  },
+		  "Pinboards": {
+			"ShowMenu": true,
+			"Order": 5
+		  },
+		  "Publish": {
+			"ShowMenu": true,
+			"Order": 6
+		  },
+		  "Users": {
+			"ShowMenu": true,
+			"Order": 7
+		  },
+		  "Settings": {
+			"ShowMenu": true,
+			"Order": 8
+		  },
+		  "Notifications": {
+			"ShowMenu": true,
+		  },
+          "Profile": { 
+            "ShowMenu": true, 
+            "ShowYourSites": true, 
+            "ShowManageSite": true, 
+            "ShowMyProfile": true, 
+            "ShowLogout": true
+          },
+		  "Help": { 
+			"ShowMenu": true 
+		  },
+		  "CustomMenu": [
+			{
+			  "Name": ""
+			}
+		  ]
+		}
+	  ]
+
+```
 
 * **Name:** Provide the name of the profile which will be used to specify the profile in the sites.
 
@@ -78,13 +126,13 @@ This section contains list of default left side menu options and custom menus.
 
 * **Scheme:** Provide the matching scheme name. The scheme will be used to customize the options in the item listing and the context menu.
 
-**Preview pane**
+### **Preview pane**
 
 You can preview the dashboards on the right side of the dashboard listing by using the `SamePagePreview` property in the configuration file.
 
 ![SamePagePreview](/static/assets/embedded/user-interface-customization/images/samepage-preview.png)
 
-**Schemes**
+### **Schemes**
 
 The scheme can be used to show or hide the context menu items in the item listing pages. These options are available in dashboards, slideshows, schedules, and data sources page.
 
@@ -96,7 +144,7 @@ For example, you can show the `Get Link` option in the context menu by setting t
 
 ![Show context menu items](/static/assets/embedded/user-interface-customization/images/context-menu.png#width=35%)
 
-**Navigation menu customization**
+### **Navigation menu customization**
 
 You can add new menu items which you want to show in the left side menu with the default side menu items.
 

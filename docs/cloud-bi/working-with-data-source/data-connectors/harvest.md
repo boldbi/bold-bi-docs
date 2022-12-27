@@ -58,7 +58,7 @@ Authenticate your Harvest account in one of the below ways:
 
 #### Personal Access Token in Headers
 1. Use Headers for authenticating your account of v2 APIs as like below:
-    - Set your [Personal Access Token](/cloud-bi/working-with-data-source/data-connectors/harvest/#how-do-i-get-personal-access-token-and-account-id-for-connecting-harvest-data-source) as value for `Authorization` in Header.
+   - Set your [Personal Access Token](/cloud-bi/working-with-data-source/data-connectors/harvest/#how-do-i-get-personal-access-token-and-account-id-for-connecting-harvest-data-source) as value for `Authorization` in Header.
    - Set your Account ID for  `Harvest-Account-ID` in Header.
    - Set value for `User-Agent` in Header. Refer [Examples for User-Agent Values](/cloud-bi/working-with-data-source/data-connectors/harvest/#examples-of-user-agent).
 
@@ -92,7 +92,7 @@ Harvest requires to include `User-Agent` header in each request with below as va
 
    ![Domain name](/static/assets/cloud/working-with-datasource/data-connectors/images/Harvest/DomainName.png)
 
-#### How do I get Personal Access Token(PAT) and Account ID for connecting Harvest data source?
+#### How do I get Personal Access Token and Account ID for connecting Harvest data source?
 1. Login to [Harvest Developer](https://id.getharvest.com/developers) page and create Personal Access Token.
 2. Once Personal Access Token was created, you could see Access Token, Account ID and Account name.
 
@@ -115,16 +115,16 @@ Period of time before next refresh call is triggered. This will automatically tr
 1. For instance, to get the expense_category details, query the <i>/expense_categories</i> endpoint.
 2. From the listed information, get the ID of the specific expense_category.
 
-  `https://<:sub_domain_name>.harvestapp.com/v2/expense_categories/<:expense_category_id>`
+   `https://<:sub_domain_name>.harvestapp.com/v2/expense_categories/<:expense_category_id>`
 
 ### Sample queries
 **List of messages for an invoice**
 
-[https://demo.harvestapp.com/v2/invoices/13150403/messages](https://demo.harvestapp.com/v2/invoices/13150403/messages)
+`https://demo.harvestapp.com/v2/invoices/13150403/messages`
 
 **List of Roles**
 
-`https://demo.harvestapp.com/v2/invoices/13150403/messages`
+`https://demo.harvestapp.com/v2/roles`
 
 **List of Tasks**
 

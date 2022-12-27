@@ -86,6 +86,12 @@ You can change the `Settings`.
 
 ![Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/settings.png)
 
+#### Renaming fields
+
+The configured field names can be edited by using the `Rename` option provided in the settings menu.
+
+![Rename](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/rename.png)
+
 #### Sorting data
 
 You can `Sort` the dimension data using `Sort` option under `Settings` menu list. To apply sorting for the data, refer [Sort](/embedded-bi/visualizing-data/working-with-widgets/advanced-sorting/#dimension-column).
@@ -167,19 +173,25 @@ You can see the list of properties available for the widget with default value.
 
 Name, Subtitle and Description for pivot-grid can be given through these properties.
 
+![Pivot grid property Name](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/property.png)
+
 #### Name 
 
 This allows you to set `title` for this pivot-grid widget.
+
+![Pivot grid property Name](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/Name.png)
 
 #### Subtitle
 
 This allows you to set `subtitle` for this pivot-grid widget.
 
+![Pivot grid property Name](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/Subtitle.png)
+
 #### Description
 
 This allows you to set brief explanation about this pivot-grid widget.
 
-![Pivot grid property Name](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/general-settings.png)
+![Pivot grid property Name](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/Description.png)
 
 ### Basic Settings
 
@@ -191,18 +203,23 @@ This allows you to set brief explanation about this pivot-grid widget.
 
 This option allows you to toggle the visibility of tooltip in the pivot grid.
 
+![Pivot grid property Name](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/tooltip.png)
+
 #### Allow Value Sorting
 
 If we click the column header, the value field get sorted as ascending or descending when the property `Allow Value Sorting` is enabled.
 
 ![pivot-grid_prop-basic-sorting](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/value-sorting.png)
 
-
 #### Expand Nodes by Default
 
 Nodes are expanded by default, if this property's checkbox is checked. 
 
 ![pivot-grid_prop-basic-nodes](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/pivot-gridnodes.png)
+
+By enabling `Expand nodes` property, **Save Nodes state** property will be hidden.
+
+![pivot-grid_prop-basic-nodes](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/pivot-node.png)
 
 #### Save Nodes State
 
@@ -212,6 +229,8 @@ This property restore the expanded and collapsed state of node even after reload
 
 By default, long texts get trimmed in pivot grid. But if the property `Allow Text Wrap` is enabled, then it displays a wrapped text instead of a trimmed one.
 
+> **NOTE:** If you enable `Allow Text Wrap` property, `Row Height` property from content settings will be disabled.
+
 #### Allow Column Resize
 
 You can resize the pivot grid by dragging the vertical lines of the pivot grid control.
@@ -219,6 +238,12 @@ You can resize the pivot grid by dragging the vertical lines of the pivot grid c
 #### Fit To Content
 
 The columns in the pivot grid can be made to auto-size based on the length of the content of the column.
+
+> **NOTE:** If you enable this property, **Column Width**, **Header Column Width** will be disabled.
+
+![pivot-grid_prop-basic-nodes](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/fits-content.png)
+
+> **Note**: The `Virtualization` dynamically loads the given data when you scroll down the pivot grid. If any one of these properties **(Fit to content, allow text wrap, and allow column resize)** is enabled then the `virtualization` disables. Also, we do not recommend these properties **(Fit to content, allow text wrap, and allow column resize)** when using a large number of records.
 
 ### Show Values in Rows
 

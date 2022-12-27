@@ -180,6 +180,48 @@ The following are the frequently asked questions in Bold BI Enterprise:
 
 [How to add custom theme in Docker container application](/embedded-bi/faq/how-to-add-custom-theme-in-docker-container-application/)
 
+[Troubleshoot gateways - Bold BI](/embedded-bi/faq/troubleshoot-gateways-boldbi/)
+
 [How to use linking URL and dashboard in iframe embedding](/embedded-bi/faq/how-to-use-linking-url-and-dashboard-in-iframe-embedding/)
 
+[How to add fixed target value in KPI card widget](/embedded-bi/faq/how-to-add-fixed-target-value-in-kpi-card-widget/)
+
 [How to secure the dashboard in iframe embedding](/embedded-bi/faq/how-to-secure-the-dashboard-in-iframe-embedding/)
+
+[How to generate access token to authenticate users](/embedded-bi/faq/how-to-generate-access-token-to-authenticate-user/)
+
+[Where can I find the product version in Bold BI Embed](/embedded-bi/faq/where-can-i-find-the-product-version/)
+
+[How to apply the filter in the grid widget based on the string presented in the string column](/embedded-bi/faq/how-to-apply-the-filter-in-the-grid-widget-based-on-the-string-presented-in-the-string-column/)
+
+[How to resolve no data to be displayed alert](/embedded-bi/faq/how-to-resolve-no-data-to-be-displayed-alert/)
+
+[How to show Timestamp data in widget title](/embedded-bi/faq/how-to-show-timestamp-data-in-widget-title/)
+
+[How to migrate Bold BI from Amazon ECS instance to EKS instance?](/embedded-bi/faq/how-to-migrate-ecs-to-eks-instance/)
+
+[How to create own Publish dialog for designer embedding](/embedded-bi/faq/how-to-create-own-publish-dialog-for-designer-embedding/)
+
+[How to add custom theme into Azure app service deployment location](/embedded-bi/faq/how-to-add-custom-theme-into-azure-app-service-deployment-location/)
+
+[How to get the user specific data using dynamic connection string?](/embedded-bi/faq/how-to-get-user-specific-data-using-dynamic-connection-string.md)
+
+[Can you use the same login credentials for the Bold BI and Bold Reports applications](/embedded-bi/faq/can-you-use-the-same-login-credentials-for-the-bold-bi-and-bold-reports-applications/)
+
+[How to export underlying data of the widget instead of summarized data](/embedded-bi/faq/how-to-export-underlying-data-of-the-widget-instead-of-summarized-data/)
+
+[How to create custom sort order in Bold BI](/embedded-bi/faq/how-to-create-custom-sort-order-in-bold-bi/)
+
+[How to create different If condition-based expressions in Bold BI](/embedded-bi/faq/how-to-create-different-if-condition-based-expressions-in-bold-bi)
+
+[How will the dashboard get affected while CSP enabled](/embedded-bi/faq/how-will-the-dashboard-get-affected-while-csp-enabled/)
+
+[How to install and deploy the Bold BI Enterprise Edition in silent mode](/embedded-bi/faq/how-to-install-and-deploy-the-bold-bi-enterprise-edition-in-silent-mode/)
+
+[How to control the link navigation behavior in the Bold BI Embed version above 5.2.48?](/embedded-bi/faq/how-to-control-link-navigating-behavior/)
+
+[How to use Pivot Tables in Bold BI Using PostgreSQL](/embedded-bi/faq/how-to-use-pivot-tables-in-bold-bi-using-postgresql.md)
+
+[How to hide release alert banner in Bold BI](/embedded-bi/faq/how-to-hide-release-alert-banner-in-bold-bi-application/)
+
+[How to hide sample dashboards option in Bold BI](/embedded-bi/faq/how-to-hide-sample-dashboards-option-in-bold-bi-application/)

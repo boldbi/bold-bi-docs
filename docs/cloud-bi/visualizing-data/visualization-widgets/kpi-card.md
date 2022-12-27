@@ -23,7 +23,7 @@ The visualization of the KPI card widget is customizable, and you can format the
 
 ## How to configure data into KPI card 
 
-> **NOTE:** Before adding the card widget to the design layout, make sure to create the data source. You can refer to [this section](/cloud-bi/working-with-data-source/creating-a-new-data-source/) to learn how to create a new data source. 
+> **NOTE:** Before adding the card widget to the design layout, make sure to create the data source. You can refer to [this section](/embedded-bi/working-with-data-source/creating-a-new-data-source/) to learn how to create a new data source. 
 
 > **IMPORTANT:** To showcase a KPI Card, a minimum requirement of both actual and target values is needed.
 
@@ -65,15 +65,15 @@ Now, the menu will be shown.
 
 **Changing the aggregation type**: 
 
-You can change the summary type of the dropped measure field by clicking the summary types listed in the menu. Refer [here](/cloud-bi/visualizing-data/working-with-widgets/aggregating-value-columns-based-on-type/) for more details on aggregation types. 
+You can change the summary type of the dropped measure field by clicking the summary types listed in the menu. Refer [here](/embedded-bi/visualizing-data/working-with-widgets/aggregating-value-columns-based-on-type/) for more details on aggregation types. 
 
 **Measure filtering**: 
 
-You can use `Filter` option to filter the data by specifying the filter condition. Refer to this [page] (/cloud-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-measure-column) for detailed instruction on how to apply the measure filter.
+You can use `Filter` option to filter the data by specifying the filter condition. Refer to this [page](/embedded-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-measure-column), for detailed instruction on how to apply the measure filter.
 
 **Measure formatting**
 
-Select Format option to define the display format for the values in the column using the Measure Formatting window. To learn more about measure formatting, refer to [here] (/cloud-bi/visualizing-data/working-with-widgets/formatting-measure-type-column/). 
+Select `Format` option to define the display format for the values in the column using the Measure Formatting window. To learn more about measure formatting, refer to [here](/embedded-bi/visualizing-data/working-with-widgets/formatting-measure-type-column/). 
 
 ### Target value
 
@@ -101,13 +101,13 @@ You can filter and sort the records using the settings menu items.
 
 ![Settings options](/static/assets/cloud/visualizing-data/visualization-widgets/images/kpi-card/settings-option.png)
 
-**Sorting**: You can customize the `sorting` behavior of dimension fields in the KPI Card widget. You can also order them based on **alphabet** or **value**, **data source (default)**, or **field**. Refer to [here], for the detailed steps.(/cloud-bi/visualizing-data/working-with-widgets/advanced-sorting/) for the detailed steps. 
+**Sorting**: You can customize the `sorting` behavior of dimension fields in the KPI Card widget. You can also order them based on **alphabet** or **value**, **data source (default)**, or **field**. Refer to [here](/embedded-bi/visualizing-data/working-with-widgets/advanced-sorting/), for the detailed steps.
 
  Refer to this page to learn how to apply measure filter. 
 
 **Filtering**: You can use the `Filter` option to `filter` the data by specifying the filter condition.
 
-Refer to this [page](/cloud-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column) to learn how to apply measure filter. 
+Refer to this [page](/embedded-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column) to learn how to apply measure filter. 
 
 ### Sparkline
 
@@ -211,7 +211,7 @@ This option allows you to provide the `subtitle` for the KPI card.
 
 > **NOTE:** Subtitle will be shown only when the series section is configured. 
 
-#### Description
+##### Description
 
 This option allows you to provide the `description` about the KPI Card.
 
@@ -222,6 +222,14 @@ This option allows you to provide the `description` about the KPI Card.
 **KPI card with the customized title, subtitle and description**
 
 ![KPI card subtitle](/static/assets/cloud/visualizing-data/visualization-widgets/images/kpi-card/subtitle.png)
+
+### Basic Settings
+
+### Show Tooltip
+
+This option allows you to toggle the visibility of tooltip in a card.
+
+![Direction](/static/assets/cloud/visualizing-data/visualization-widgets/images/kpi-card/tooltip.png)
 
 ### Color properties
 
@@ -235,7 +243,7 @@ You can set the value label status to `High is Good` or `Low is Good`. The defau
 
 #### Direction colors
 
-You can customize the color values for the `high, medium`, and `low` colors using the provided color pickers.
+You can customize the color values for the `high`, `medium`, and `low` colors using the provided color pickers.
 
 #### Separator color
 
@@ -243,11 +251,11 @@ Allows you to change the `separator` color.
 
 ## How to apply conditional formatting in KPI card
 
-By enabling the advanced settings in formatting, you can customize the `color, styles`, and `highlighting` the data based on the conditional range values.
+By enabling the `advanced settings` in formatting, you can customize the color, styles, and highlighting the data based on the conditional range values
 
 ### How to enable advanced formatting
 
-In the properties pane, check the `Advanced Setting` check box, which is located under the formatting section.
+In the properties pane, check the `Advanced Setting` check box, which is located under the `formatting` section.
 
 ![Enable advance settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/kpi-card/enable-advance-settings.png)
 
@@ -314,13 +322,13 @@ Allows you to choose the title font style. (Bold, Italic, Underline, and Supersc
 
 #### Case-sensitivity
 
-For the dimensions, `case-sensitive `option is provided to choose whether the entered value is case-sensitive or not.
+For the dimensions, `case-sensitive` option is provided to choose whether the entered value is case-sensitive or not. 
 
-Select the checkbox provided near by the options to customize the properties, and similarly click `Font Style` icons for applying them, as shown in the following screenshot.
+Select the checkbox provided near by the options to customize the properties, and similarly click Font Style icons for applying them, as shown in the following screenshot.
 
 ![Select properties](/static/assets/cloud/visualizing-data/visualization-widgets/images/kpi-card/customize-properties.png)
 
-Figure: **The KPI card series view with the applied conditional formatting**.
+Figure: *The KPI card series view with the applied conditional formatting*.
 
 ![KPI card after conditional formatting](/static/assets/cloud/visualizing-data/visualization-widgets/images/kpi-card/formatted-result.png)
 
@@ -352,19 +360,39 @@ You can enter the value for the KPI card title.
 
 Allow you to choose the KPI Card title value color. 
 
+### Auto Font Size
+
+On enabling this property, the font size of the KPI card title varies based on the screen resolution.
+
+Use Case: 
+
+If we have created a dashboard with KPI card which can be viewed by different clients of different screen resolution and we wants the title to be adjusted with respect to their resolution then we can use this option.
+
+### Auto font size at 3840 x 2160
+
+![Auto Font Size](/static/assets/cloud/visualizing-data/visualization-widgets/images/kpi-card/autofontsize-resolution.png)
+
+### Auto font size at 1366 x 768
+
+![Auto Font Size](/static/assets/cloud/visualizing-data/visualization-widgets/images/kpi-card/autofontsize-diff.png)
+
+### Auto font size at 1920 x 1080
+
+![Auto Font Size](/static/assets/cloud/visualizing-data/visualization-widgets/images/kpi-card/autofontsize.png)
+
 #### Font size
 
-You can customize the font size of the KPI card title. 
+You can customize the font size of the KPI card title by unchecking `Auto Font Size`.
 
 ![Single Card Title](/static/assets/cloud/visualizing-data/visualization-widgets/images/kpi-card/title-single-card-properties.png)
 
-Figure: *KPI card with customized title color and font size.*
+Figure: **KPI card with customized title color and font size.**
 
 ![Single Card Customization](/static/assets/cloud/visualizing-data/visualization-widgets/images/kpi-card/title-single-card.png)
 
 ### Series settings
 
-The `Series settings` option will enable only when you configure the **series** in `Assigned Data` tab.
+The `Series settings` option enabled only when you configure the **series** in `Assigned Data` tab.
 
 ![Series Settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/kpi-card/series-settings.png)
 
@@ -374,11 +402,11 @@ If you enable the Fixed rows and columns, you can customize the rows and columns
 
 ### Row count 
 
-By enabling `Row Count`, you can set the row count.
+By enabling `Row Count`, you can set the count of the rows.
 
 ### Column count 
 
-By enabling the `Column Count,` you can set the column count.
+By enabling the `Column Count`, you can set the column count.
 
 > **Note**: If the invalid columns and rows are given , the rows and columns reset to its default value. For example : If you given the number of rows as 6 and number of columns as 5 but your data count is only 20 . In this case the rows and columns will reset to its default value.
 
@@ -421,9 +449,31 @@ Figure: *KPI card with different KPI types.*
 
 Allows you to customize the KPI value color. 
 
+### Auto Font Size
+
+On enabling this property, the font size of the KPI card title varies based on the screen resolution.
+
+Use Case: 
+
+If we have created a dashboard with KPI card which can be viewed by different clients of different screen resolution and we wants the title to be adjusted with respect to their resolution then we can use this option.
+
+### Auto font size at 3840 x 2160
+
+![Auto Font Size](/static/assets/cloud/visualizing-data/visualization-widgets/images/kpi-card/autofontsize-resolution.png)
+
+### Auto font size at 1366 x 768
+
+![Auto Font Size](/static/assets/cloud/visualizing-data/visualization-widgets/images/kpi-card/autofontsize-diff.png)
+
+### Auto font size at 1920 x 1080
+
+![Auto Font Size](/static/assets/cloud/visualizing-data/visualization-widgets/images/kpi-card/autofontsize.png)
+
 #### Font Size
 
-Provides the option to change the KPI value font size.
+Provides the option to change the KPI value font size by unchecking `Auto Font Size`.
+
+![KPI Customized Font Size](/static/assets/cloud/visualizing-data/visualization-widgets/images/kpi-card/kpi-valuecustomized.png)
 
 ### Indicator properties
 
@@ -439,7 +489,7 @@ Provides the option to customize the icon colors.
 
 **Direction color**: The colors from the direction settings will be applied. 
 
-**Custom color**: You can customize the color values for the `High, Medium,` and `low` colors using the provided color pickers.
+**Custom color**: You can customize the color values for the `High, Medium`, and `low` colors using the provided color pickers.
 
 #### Indicators
 
@@ -449,13 +499,35 @@ Figure: *Selecting the shape for the indicators.*
 
 ![Choose indicator](/static/assets/cloud/visualizing-data/visualization-widgets/images/kpi-card/choose-indicator.png)
 
-Figure: *After customizing the indicator*
+Figure: **After customizing the indicator**
 
 ![Custom indicator](/static/assets/cloud/visualizing-data/visualization-widgets/images/kpi-card/custom-indicator.png)
 
+### Auto Font Size
+
+On enabling this property, the font size of the KPI card title varies based on the screen resolution.
+
+Use Case: 
+
+If we have created a dashboard with KPI card which can be viewed by different clients of different screen resolution and we wants the title to be adjusted with respect to their resolution then we can use this option.
+
+### Auto font size at 3840 x 2160
+
+![Auto Font Size](/static/assets/cloud/visualizing-data/visualization-widgets/images/kpi-card/autofontsize-resolution.png)
+
+### Auto font size at 1366 x 768
+
+![Auto Font Size](/static/assets/cloud/visualizing-data/visualization-widgets/images/kpi-card/autofontsize-diff.png)
+
+### Auto font size at 1920 x 1080
+
+![Auto Font Size](/static/assets/cloud/visualizing-data/visualization-widgets/images/kpi-card/autofontsize.png)
+
 #### Font size
 
-Provides the option to change the font size of the indicators. 
+Provides the option to change the font size of the indicators by unchecking `Auto Font Size`. 
+
+![Indicator font size](/static/assets/cloud/visualizing-data/visualization-widgets/images/kpi-card/indicator-fontsize.png)
 
 ### Left value properties
 
@@ -463,7 +535,7 @@ Provides the option to change the font size of the indicators.
 
 #### Type
 
-The type drop-down allows you to choose the value, which needs to be shown as the `left side` value. The available options are:
+The type drop-down allows you to choose the value, which needs to be shown as the left side value. The available options are:
 
 1.	Absolute difference. 
 2.	Percent of difference. 
@@ -488,9 +560,31 @@ The colors from the direction settings will be applied.
 
 You can customize the left value color using the provided color pickers.
 
+### Auto Font Size
+
+On enabling this property, the font size of the KPI card title varies based on the screen resolution.
+
+Use Case: 
+
+If we have created a dashboard with KPI card which can be viewed by different clients of different screen resolution and we wants the title to be adjusted with respect to their resolution then we can use this option.
+
+### Auto font size at 3840 x 2160
+
+![Auto Font Size](/static/assets/cloud/visualizing-data/visualization-widgets/images/kpi-card/autofontsize-resolution.png)
+
+### Auto font size at 1366 x 768
+
+![Auto Font Size](/static/assets/cloud/visualizing-data/visualization-widgets/images/kpi-card/autofontsize-diff.png)
+
+### Auto font size at 1920 x 1080
+
+![Auto Font Size](/static/assets/cloud/visualizing-data/visualization-widgets/images/kpi-card/autofontsize.png)
+
 #### Font size
 
-The option to change the left value font size. 
+The option to change the left value font size by unchecking `Auto Font Size`. 
+
+![Left Value font size](/static/assets/cloud/visualizing-data/visualization-widgets/images/kpi-card/leftvalue-fontsize.png)
 
 #### Show caption
 
@@ -506,13 +600,35 @@ Provides the option to customize the left value caption colors.
 
 #### Caption color
 
-You can customize the right value caption color using the provided color pickers.
+From the provided color pickers, you can customize the right value caption color.
+
+### Auto Font Size
+
+On enabling this property, the font size of the KPI card title varies based on the screen resolution.
+
+Use Case: 
+
+If we have created a dashboard with KPI card which can be viewed by different clients of different screen resolution and we wants the title to be adjusted with respect to their resolution then we can use this option.
+
+### Auto font size at 3840 x 2160
+
+![Auto Font Size](/static/assets/cloud/visualizing-data/visualization-widgets/images/kpi-card/autofontsize-resolution.png)
+
+### Auto font size at 1366 x 768
+
+![Auto Font Size](/static/assets/cloud/visualizing-data/visualization-widgets/images/kpi-card/autofontsize-diff.png)
+
+### Auto font size at 1920 x 1080
+
+![Auto Font Size](/static/assets/cloud/visualizing-data/visualization-widgets/images/kpi-card/autofontsize.png)
 
 #### Caption font size
 
-The option to change the left value caption font size. 
+The option to change the left value caption font size by unchecking `Auto Font Size`.
 
-**After customizing the Left Value in KPI card**
+![Left caption Properties](/static/assets/cloud/visualizing-data/visualization-widgets/images/kpi-card/left-caption-fontsize.png)
+
+*After customizing the Left Value in KPI card*
 
 ![Left Value](/static/assets/cloud/visualizing-data/visualization-widgets/images/kpi-card/left-value.png)
 
@@ -522,7 +638,7 @@ The option to change the left value caption font size.
 
 #### Type
 
-The type drop-down allows you to choose the value which needs to be shown as the right-side value. The available options are. 
+The type drop-down allows you to choose the value which needs to be shown as the `right-side` value. The available options are. 
 
 1.	Absolute difference. 
 2.	Percent of difference. 
@@ -547,9 +663,31 @@ The colors from the direction settings will be applied.
 
 You can customize the right value caption color using the provided color pickers.
 
+### Auto Font Size
+
+On enabling this property, the font size of the KPI card title varies based on the screen resolution.
+
+Use Case: 
+
+If we have created a dashboard with KPI card which can be viewed by different clients of different screen resolution and we wants the title to be adjusted with respect to their resolution then we can use this option.
+
+### Auto font size at 3840 x 2160
+
+![Auto Font Size](/static/assets/cloud/visualizing-data/visualization-widgets/images/kpi-card/autofontsize-resolution.png)
+
+### Auto font size at 1366 x 768
+
+![Auto Font Size](/static/assets/cloud/visualizing-data/visualization-widgets/images/kpi-card/autofontsize-diff.png)
+
+### Auto font size at 1920 x 1080
+
+![Auto Font Size](/static/assets/cloud/visualizing-data/visualization-widgets/images/kpi-card/autofontsize.png)
+
 #### Font size
 
-The option to change the right value font size. 
+The option to change the right value font size by unchecking `Auto Font Size`.
+
+![Right Value Properties](/static/assets/cloud/visualizing-data/visualization-widgets/images/kpi-card/right-value-fontsize.png)
 
 #### Show caption
 
@@ -567,9 +705,31 @@ Provides the option to customize the right value caption colors.
 
 From the provided color pickers, you can customize the right value caption color.
 
+### Auto Font Size
+
+On enabling this property, the font size of the KPI card title varies based on the screen resolution.
+
+Use Case: 
+
+If we have created a dashboard with KPI card which can be viewed by different clients of different screen resolution and we wants the title to be adjusted with respect to their resolution then we can use this option.
+
+### Auto font size at 3840 x 2160
+
+![Auto Font Size](/static/assets/cloud/visualizing-data/visualization-widgets/images/kpi-card/autofontsize-resolution.png)
+
+### Auto font size at 1366 x 768
+
+![Auto Font Size](/static/assets/cloud/visualizing-data/visualization-widgets/images/kpi-card/autofontsize-diff.png)
+
+### Auto font size at 1920 x 1080
+
+![Auto Font Size](/static/assets/cloud/visualizing-data/visualization-widgets/images/kpi-card/autofontsize.png)
+
 #### Caption font size
 
-The option to change the right value caption font size. 
+The option to change the right value caption font size by unchecking `Auto Font Size`.
+
+![Right caption Properties](/static/assets/cloud/visualizing-data/visualization-widgets/images/kpi-card/right-caption-fontsize.png)
 
 *After customizing the Right Value in KPI card*
 
@@ -599,13 +759,13 @@ Allows you to choose the image mode.
 
 Provides three different options to select the image source: 
 
-1.	Browse Image: Selects the image from the local disk. 
+1.	Browse Image: Selects the image from the `local` disk. 
 
-2.	Direct URL: Enter the URL of the image source. 
+2.	Direct URL: Enter the `URL` of the image source. 
 
-3.	Pattern: Enter the URL consists of pattern text {0} denoting the fields configured in the image data section. 
+3.	Pattern: Enter the URL consists of `pattern text {0}` denoting the fields configured in the image data section. 
 
-*After customizing the Image in KPI card*
+**After customizing the Image in KPI card**
 
 ![Image Customization](/static/assets/cloud/visualizing-data/visualization-widgets/images/kpi-card/image-customization.png)
 
@@ -640,7 +800,7 @@ Allows you to choose the background color for the KPI Card widget.
 
 #### Transparency 
 
-You can change the `transparency` of the color.
+You can change the transparency of the color.
 
 **After customizing the Image in KPI card**
 
@@ -648,7 +808,7 @@ You can change the `transparency` of the color.
 
 ### Sparkline properties
 
-![Sparkline Properties](/static/assets/cloud/visualizing-data/visualization-widgets/images/kpi-card/sparkline-customproperties.png)
+![Sparkline Properties](/static/assets/cloud/visualizing-data/visualization-widgets/images/kpi-card/sparkline-custom-properties.png)
 
 #### Show sparkline
 
@@ -667,7 +827,7 @@ You can change the opacity of the sparkline color.
 
 ### Link properties
 
-You can enable linking and configure to navigate to a general URL with or without parameters. For more details, refer to [linking URLs](/cloud-bi/visualizing-data/working-with-widgets/linking-urls-and-dashboards/).
+You can enable linking and configure to navigate to a general URL with or without parameters. For more details, refer to [linking URLs](/embedded-bi/visualizing-data/working-with-widgets/linking-urls-and-dashboards/).
 
 ![Link Properties](/static/assets/cloud/visualizing-data/visualization-widgets/images/kpi-card/link.png)
 
@@ -723,7 +883,7 @@ This allows you to apply the specified font size to the widget title, if the `Su
 
 ### Show Border
 
-This allows you to toggle the visibility of the `border` that surrounds the widget.
+This allows you to toggle the visibility of the border that surrounds the widget.
 
 ### Corner Radius
 
@@ -733,13 +893,13 @@ This allows you to apply the specified radius to the widget corners, if the `Sho
 
 ![Container Actions](/static/assets/cloud/visualizing-data/visualization-widgets/images/kpi-card/container-actions.png)
 
-#### Show Header
+#### Show header
 
 This allows you to enable or disable the widget title of the KPI Card widget. 
 
 #### Allow maximize view
 
-This allows you to enable or disable the maximized mode of the KPI Card widget. The visibility of the maximize icon in the widget header will be defined based on the setting in the viewer.
+The visibility of the` maximize icon` in the widget header will be defined based on the settings in the viewer.
 
 #### Allow CSV export
 
@@ -751,7 +911,7 @@ This allows you to enable or disable the `Excel export` option for the KPI Card 
 
 #### Allow Image export
 
-This allows you to enable or disable the image export option for the KPI Card widget. Enabling this allows you to export the view of the widget to image format `(.jpg), (.png), or (.bmp)` in the viewer.
+This allows you to enable or disable the `image export` option for the KPI Card widget. Enabling this allows you to export the view of the widget to image format `(.jpg), (.png), or (.bmp)` in the viewer.
 
 #### Allow PDF export
 
@@ -759,7 +919,7 @@ This allows you to enable or disable the `PDF export` option for the KPI Card wi
 
 #### Enable comments
 
-This allows you to enable or disable `comment` for the dashboard widget. For more details, refer to this [link](/cloud-bi/visualizing-data/working-with-widgets/commenting-widget/).
+This allows you to enable or disable `comment` for the dashboard widget. For more details, refer to this [link](/embedded-bi/visualizing-data/working-with-widgets/commenting-widget/).
 
 #### Allow view underlying data
 
@@ -772,3 +932,21 @@ This allows you to pin the widget.
 ## Related links
 
 Blog post - [https://www.boldbi.com/blog/turn-on-insights-using-the-right-card-widget](https://www.boldbi.com/blog/turn-on-insights-using-the-right-card-widget)
+
+#### Responsive Behavior
+
+We hide the widget elements based on the size of the widget for better readability.
+
+Depending on the size of the widget, the card will be displayed either in Default or Horizontal or Vertical Layout.
+
+When the card width is more than '447 px' and its height is less than '296 px', the card will be shown in a horizontal layout.
+
+![Widget Element](/static/assets/cloud/visualizing-data/visualization-widgets/images/kpi-card/value.png)
+
+When the card height is more than '296 px', the card will be shown in a vertical layout.
+
+![Widget Element](/static/assets/cloud/visualizing-data/visualization-widgets/images/kpi-card/card-value.png)
+
+If the size of the card does not have enough space to show all the elements, it will hide the elements with respect to the size based on the following order: Sparkline, Actual, and Target value container. The card title is shown in the image.
+
+![Widget Element](/static/assets/cloud/visualizing-data/visualization-widgets/images/kpi-card/priority.png)

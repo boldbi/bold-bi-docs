@@ -72,7 +72,7 @@ Authenticate your Harvest account in one of the below ways:
    - Pass your `access token` and `account ID` in the query string as like below. 
    - Set value for `User-Agent` in Header. Refer [Examples for User-Agent Values](/embedded-bi/working-with-data-source/data-connectors/harvest/#examples-of-user-agent).
 
-      Examples: `https://api.harvestapp.com/v2/users/me?access_token=<:access_token>&account_id=<:account_id>`
+    Examples: `https://api.harvestapp.com/v2/users/me?access_token=<:access_token>&account_id=<:account_id>`
 
 2. Set **Authentication type** as *None*.
 
@@ -117,7 +117,7 @@ Period of time before next refresh call is triggered. This will automatically tr
 1. For instance, to get the expense_category details, query the <i>/expense_categories</i> endpoint.
 2. From the listed information, get the ID of the specific expense_category.
 
-    `https://<:sub_domain_name>.harvestapp.com/v2/expense_categories/<:expense_category_id>`
+  `https://<:sub_domain_name>.harvestapp.com/v2/expense_categories/<:expense_category_id>`
 
 ### Sample queries
 **List of messages for an invoice**

@@ -54,37 +54,41 @@ Schedules can be created only if the user has `Create All Schedules` permission.
 
 > **NOTE:**  Categories or Dashboards can be changed from schedule dialog box itself.
 
-* After adding schedule details, click on the `Next` button in schedule dialog. 
+* After adding schedule details, click `Next` in the schedule dialog. 
 
 ## Customizing schedule email Content
 	
-* You can customize mail content that needs to be sent during schedule.
+* Customize the mail content that needs to be sent during the schedule.
 
-* Schedule mail content page will have default content as shown in the below image,
+* The schedule mail content page will have default content as shown in the following image.
 
-  ![Default Schedule Mail](/static/assets/embedded/managing-resources/images/default-mail-content.png)
+  ![Default Schedule Mail](/static/assets/embedded/managing-resources/images/default-mail-content.png#width=85%)
 
-* You can customize mail content by using bold, italic, points, numbers, font-size, code, quotation options as shown in below image.
+* Use the default mail subject or customize it using the variables in the drop-down next to the subject field. Once you select a variable from the variables drop-down, the default subject content will get reset.
 
-  ![Customize Mail Content](/static/assets/embedded/managing-resources/images/customize-mail-content.png)
+  ![Customize Mail Subject](/static/assets/embedded/managing-resources/images/customize-mail-subject.png#width=85%)
+
+* Customize the mail body content and enhance it by using bold, italic, points, numbers, font size, code, and quotation options as shown in the following images.
+
+  ![Customize Mail Content](/static/assets/embedded/managing-resources/images/customize-mail-content.png#width=85%)
 
   ![Bold Style and Points](/static/assets/embedded/managing-resources/images/schedule-mail-bold-points.png)
 
-* You can insert images and links if needed,
+* Insert images and links if needed.
 
   ![Insert Image and Links](/static/assets/embedded/managing-resources/images/schedule-insert-image-links.png)
 
-* With the help of `preview` option, we can visualize actual mail format while scheduling and `reset` if need to restore to the default content.
+* With the help of the `preview` option, visualize the actual mail format while scheduling and `reset` if you need to restore to the default content.
 
   ![Preview and Reset](/static/assets/embedded/managing-resources/images/schedule-preview-reset.png)
 
-* After customizing mail content, click `Next` button in schedule dialog.
+* After customizing the mail content, click `Next` in the schedule dialog.
 
-  ![Customize Page Next](/static/assets/embedded/managing-resources/images/schedule-next-btn.png)
+  ![Customize Page Next](/static/assets/embedded/managing-resources/images/schedule-next-btn.png#width=85%)
 
 * Select the recurrence type, recurrence, start and end dates, export formats and the users to which the exported dashboards and failure notification have to be emailed in the `Add Schedule` dialog box.
-	* Dashboards can be scheduled hourly, daily, weekly, monthly and yearly
-	* Dashboards can be exported as image, PDF and Excel
+	* Dashboards can be scheduled hourly, daily, weekly, monthly, and yearly.
+	* Dashboards can be exported as image, PDF, and Excel.
 	* Application Time Zone is displayed below the date picker. Start time of the schedule is converted to client Time Zone and shown in the right side for the user’s convenience 
 	* Exported dashboards can be sent to individual users or groups or to external recipients along with the link the dashboard in the Bold BI through emails.
 	
@@ -124,7 +128,7 @@ You can export the dashboards to an FTP, FTPS, or SFTP location by configuring t
 ![Schedule Location Export](/static/assets/embedded/managing-resources/images/ftp-location.png)
 
 ### Webhook Notification
-You can send a webhook notification for an export schedule or [data alerts](/embedded-bi/working-with-dashboards/data-alerts/). by selecting the created webhook in Other Destinations section.
+You can send a webhook notification for an export schedule or [data alerts](/embedded-bi/working-with-dashboards/data-alerts/) by selecting the created webhook in `Other Destinations` section.
 
 ![Select Webhook](/static/assets/embedded/managing-resources/images/webhook-notification.png)
 

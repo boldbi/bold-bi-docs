@@ -10,7 +10,7 @@ documentation: ug
 
 This section explains how to deploy our Bold BI Enterprise edition and also explains how to install Bold BI when the Bold Reports exists.
 
-You can explore the installation and deployment of Enterprise BI in detail here,
+You can explore the installation and deployment of Enterprise BI in the detail below:
 
 [Prerequisites](/embedded-bi/setup/deploying-in-windows/prerequisites-windows/)
 
@@ -19,3 +19,5 @@ You can explore the installation and deployment of Enterprise BI in detail here,
 [Version Upgrade](/embedded-bi/setup/deploying-in-windows/upgrade-to-latest/)
 
 [Installing Bold BI over Bold Reports](/embedded-bi/setup/deploying-in-windows/install-when-bold-report-exist/)
+
+[Silent Installation](/embedded-bi/setup/deploying-in-windows/silent-installation/)

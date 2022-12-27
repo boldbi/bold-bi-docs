@@ -17,9 +17,9 @@ Combination Chart allows you to compare values by combining multiple Cartesian c
 
 Combo Chart need a minimum value of 1 value element and 1 column element to showcase. The measure or expression field that you would like to analyze can be dropped into Primary or Secondary Values block. The dimension that you would like to categorize the measure, can be dropped onto Columns block. By default, primary values render with Column chart and secondary values render with line chart.
 
-The following steps explains how to configure data into combo chart:
+The following steps explains to configure data into combo chart:
 
-1.  Click the `Data Source` button in the configuration panel.
+1.  Click the `Data Source` button in the configure panel.
 
 ![Data button](/static/assets/cloud/visualizing-data/visualization-widgets/images/databutton.png)
 
@@ -35,11 +35,11 @@ The following steps explains how to configure data into combo chart:
 
 ![Connect button](/static/assets/cloud/visualizing-data/visualization-widgets/images/connectbutton.png)
 
-5.  Drag your preferred table or view from the left pane from the data design view, and click the `Save` button.
+5.  Drag your preferred table or view from the left pane from the data design view, click the `Save` button.
 
 ![virtualtable](/static/assets/cloud/visualizing-data/visualization-widgets/images/virtualtable.png)
 
-6.  Drag and drop the combo chart into canvas and resize into required size.
+6.  Drag and drop the combo chart into the canvas and resize it into the required size.
 
 ![Combo Chart](/static/assets/cloud/visualizing-data/visualization-widgets/images/combo-chart/combochart-drop.png)
 
@@ -61,19 +61,19 @@ You can add more than one `measures` into `Primary Y Values` and `Secondary Y Va
 
 ![Combo chart Secondary data](/static/assets/cloud/visualizing-data/visualization-widgets/images/combo-chart/secondaryvalue.png)
 
-Click the `Settings` option to change the name by using `Rename` option and the required summary type from the available summary types shown in `Settings`.
+Click the `Settings` option to change the name by using the `Rename` option and the required summary type from the available summary types shown in `Settings`.
 
 ![Combo-chart Menu Settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/combo-chart/settings.png)
 
 #### Filtering data
 
-You can filter the data to be displayed in combo chart by using filter. For more details, refer to [filter](/cloud-bi/visualizing-data/working-with-widgets/configuring-widget-filters/)
+You can filter the data to be displayed in combo chart by using filter. For more details, refer to [filter](/embedded-bi/visualizing-data/working-with-widgets/configuring-widget-filters/)
 
 ![Combo-chart Value filter settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/combo-chart/filter-option.png)
 
 #### Formatting data
 
-You can format the data to be displayed in the combo chart by using format option. For more details, refer to [measure format](/cloud-bi/visualizing-data/working-with-widgets/formatting-measure-type-column/)
+You can format the data to be displayed in the combo chart by using format option. For more details, refer to [measure format](/embedded-bi/visualizing-data/working-with-widgets/formatting-measure-type-column/)
 
 ![Combo-chart Primary value formatting](/static/assets/cloud/visualizing-data/visualization-widgets/images/combo-chart/format-option.png)
 
@@ -97,23 +97,29 @@ You can change the `Settings`.
 
 ![Combo-chart Column settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/combo-chart/column-settings.png)
 
+#### Renaming fields
+
+The configured field names can be edited by using the `Rename` option provided in the settings menu.
+
+![Rename](/static/assets/cloud/visualizing-data/visualization-widgets/images/combo-chart/rename.png)
+
 #### Sorting data
 
-You can `Sort` the dimension data using `Sort` option under `Settings` menu list. To apply sorting for the data, refer [Sort](/cloud-bi/visualizing-data/working-with-widgets/advanced-sorting/#dimension-column).
+You can `Sort` the dimension data using `Sort` option under `Settings` menu list. To apply sorting for the data, refer [Sort](/embedded-bi/visualizing-data/working-with-widgets/advanced-sorting/#dimension-column).
 
 ![Combo-chart Column sorting](/static/assets/cloud/visualizing-data/visualization-widgets/images/combo-chart/columnsorting.png)
 
 #### Filtering data
 
-You can apply filters by selecting filter in settings. For more details, refer to [filter](/cloud-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column).
+You can apply filters by selecting filter in settings. For more details, refer to [filter](/embedded-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column).
 
 ![Combo-chart Column Filtering](/static/assets/cloud/visualizing-data/visualization-widgets/images/combo-chart/columnfilter.png)
 
-To show all records click `Clear.`
+To show all records click `Clear`.
 
 ### Multi-Level Drill Down
 
-Add more than one value to `Columns` field. The drilled view of the Combo chart region selected.
+Add more than one value to the `Columns` field. The drilled view of the Combo chart region is selected.
 
 ![Combo-chart Column drilldown data](/static/assets/cloud/visualizing-data/visualization-widgets/images/drillalert.png)
 
@@ -140,23 +146,36 @@ You can see property window opened.
 You can see the list of properties available for the widget with default value.
 
 #### General Settings
+
+![General settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/combo-chart/propertyname.png)
+
 #### Name
 
 This allows you to change the `title` for the combo chart widget.
+
+![General settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/combo-chart/Name.png)
 
 #### Subtitle
 
 This allows you to add the subtitle for the combo chart widget.
 
+![General settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/combo-chart/Subtitle.png)
+
 #### Description
 
 This allows you to add description for the combo chart widget.
 
-![General settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/combo-chart/general-settings.png)
+![General settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/combo-chart/Description.png)
 
 #### Basic Settings
 
 ![Basic Settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/combo-chart/basic-settings.png)
+
+#### Show Tooltip
+
+This option allows you to toggle the visibility of tooltip in a combo chart.
+
+![General settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/combo-chart/tooltip.png)
 
 #### Chart type and axis
 
@@ -164,13 +183,13 @@ Click the `Change` button to open the `Chart Type and Axis Settings` dialog.
 
 ![Change type and axis settings dialog](/static/assets/cloud/visualizing-data/visualization-widgets/images/combo-chart/chart-type-and-axis.png)
 
-**Chart Type**: This allows you to switch the widget view from current chart type to another convertible chart type.
+**Chart Type**: This allows you to switch the widget view from the current chart type to another convertible chart type.
 
 **Secondary Axis**: By default, the configured field is plotted as the primary axis, if you enable this option, the selected field will be plotted as the secondary axis. 
 
 #### Enable Animation
 
-It animates the measure values when you toggle the `Enable Animation.`
+It animates the measure values when you toggle the `Enable Animation`.
 
 #### Show Legend
 
@@ -196,21 +215,71 @@ This allows you change the **shape** of the legend.
 
 ***Circle***
 
-This option allows you to change the shape of the legend in a `Circle.`
+This option allows you to change the shape of the legend in a `Circle`.
 
 ![Show Legend shape](/static/assets/cloud/visualizing-data/visualization-widgets/images/combo-chart/legend-shape.png)
 
 ***Series Type***
 
-This option allows you to change the shape of the legend in `Series.`
+This option allows you to change the shape of the legend in `Series`.
 
 ![Show Legend shape Series](/static/assets/cloud/visualizing-data/visualization-widgets/images/combo-chart/legend-series.png)
 
 #### Legend Title
 
-This allows you to add the legend title for the chart. It will reflect with the `Show Legend.`
+This allows you to add the legend title for the chart. It will reflect with the `Show Legend`.
 
 ![Show Legend Title](/static/assets/cloud/visualizing-data/visualization-widgets/images/combo-chart/legend-title.png)
+
+#### Show value labels
+
+This allows you to toggle the visibility of value labels.
+
+![Value labels in chart](/static/assets/cloud/visualizing-data/visualization-widgets/images/combo-chart/value-label.png)
+
+If you disable `Show Value Labels` properties, the dependent properties, which are **color**, **Value label position**, **Value label rotation** and **Value label suffix** will be hidden.
+
+![Show value label](/static/assets/cloud/visualizing-data/visualization-widgets/images/combo-chart/combochart-value-label.png)
+
+#### Customize
+
+This allows you to customize the toggle visibility of value labels in each series.
+
+![Value labels customization change](/static/assets/cloud/visualizing-data/visualization-widgets/images/combo-chart/color-customize.png)
+
+![Value labels customization](/static/assets/cloud/visualizing-data/visualization-widgets/images/combo-chart/label-customize.png)
+
+#### Value Label Color
+
+This allows you to customize the value label's color.
+
+![Value label Color Option](/static/assets/cloud/visualizing-data/visualization-widgets/images/combo-chart/data-color.png)
+
+![Value label Color](/static/assets/cloud/visualizing-data/visualization-widgets/images/combo-chart/value-color.png)
+
+#### Value Label Position
+
+This option allows you to customize the value label position in Cartesian charts. By default, it is set to ‘Auto,’ so the label position will be set based on the chart types (i.e. For stacked series, then position set as Middle and normal series the position set to Top).
+
+![Value label position](/static/assets/cloud/visualizing-data/visualization-widgets/images/combo-chart/valuelabelposition.png)
+
+#### Value label rotation
+
+This allows you to define the `rotation angle for the value labels` to display.
+
+![Rotated labels](/static/assets/cloud/visualizing-data/visualization-widgets/images/combo-chart/value-label-rotation.png)
+
+#### Value Label Suffix
+
+This allows you to show/hide the suffix value of value labels.
+
+#### Suffix Value
+
+This allows you to customize the suffix value of value labels.
+
+![Labels with suffix](/static/assets/cloud/visualizing-data/visualization-widgets/images/combo-chart/suffix-value.png)
+
+> **NOTE:** When Increased the height and number of data in chart the value label was hidden. Use label rotation property to visible the label.
 
 ### Show Marker
 
@@ -226,7 +295,7 @@ This allows you to show data, which column does not have value.
 
 #### Column Width
 
-This option allows you to increase or decrease the width of the column by using the `Column Width.`
+This option allows you to increase or decrease the width of the column by using `Column Width`.
 
 ![Column Width Customization](/static/assets/cloud/visualizing-data/visualization-widgets/images/combo-chart/column-width-customization.png)
 
@@ -234,7 +303,7 @@ This option allows you to increase or decrease the width of the column by using 
 
 #### Column Spacing
 
-This option allows you to increase or decrease the space between the columns by using the `Column Spacing.`
+This option allows you to increase or decrease the space between the columns by using the `Column Spacing`.
 
 ![Column Spacing Customization](/static/assets/cloud/visualizing-data/visualization-widgets/images/combo-chart/column-spacing-customization.png)
 
@@ -248,13 +317,25 @@ On enabling this support, the chart scroll bar thumb-size will be calculated bas
 
 ![Link](/static/assets/cloud/visualizing-data/visualization-widgets/images/combo-chart/linking.png)
 
-To configure the linking to URL or dashboard with the widget through its settings. For more details, refer to [Linking](/cloud-bi/visualizing-data/working-with-widgets/linking-urls-and-dashboards/).
+To configure the linking to URL or dashboard with the widget through its settings. For more details, refer to [Linking](/embedded-bi/visualizing-data/working-with-widgets/linking-urls-and-dashboards/).
 
 ### Axis
 
 ![Axis](/static/assets/cloud/visualizing-data/visualization-widgets/images/combo-chart/combochart-axis.png)
 
 This section allow you to customize axis settings in combination chart.
+
+#### Title color
+
+This allows you to customize the axis title color.
+
+![Title color](/static/assets/cloud/visualizing-data/visualization-widgets/images/combo-chart/title-color.png)
+
+#### Label color
+
+This allows you to customize the axis label color.
+
+![Label color](/static/assets/cloud/visualizing-data/visualization-widgets/images/combo-chart/label-color.png)
 
 ### Show Category Axis
 
@@ -298,7 +379,7 @@ This allows you to define the rotation angle for the category axis labels to dis
 
 #### Trim Axis Labels
 
-This option allows you to trim axis labels based on the 'Maximum Label Width' property value.
+This option allows you to trim axis labels, based on the 'Maximum Label Width' property value.
 
 ![Trimmed label](/static/assets/cloud/visualizing-data/visualization-widgets/images/combo-chart/trimming-label-axis.png)
 
@@ -350,7 +431,7 @@ This allows you to manually set the Minimum, Maximum, and Interval values of pri
 
 #### Axis Format
 
-This option allows you to format primary and secondary axis values from the formatting details provided using the 'Format' button. For more details, refer to this [measure format](/cloud-bi/visualizing-data/working-with-widgets/formatting-measure-type-column/).
+This option allows you to format primary and secondary axis values from the formatting details provided using 'Format' button. For more details, refer to this [measure format](/embedded-bi/visualizing-data/working-with-widgets/formatting-measure-type-column/).
 
 ![Formatting option](/static/assets/cloud/visualizing-data/visualization-widgets/images/combo-chart/formatting-button.png)
 
@@ -485,17 +566,17 @@ You can select rule settings by clicking `Individual` radio button. Now, color c
 
 This type renders with Individual default color for each point of series. You can change it's color by Individual color pickers.
 
-You can save your changes by clicking the `Save` button. If you want to reset your changes there is an option to render its default color `Reset.`
+You can save your changes by clicking the `Save` button. If you want to reset your changes there is an option to render its default color `Reset`.
 
-### Font Settings 
+### Font settings
 
-Font settings section allows you to enable the auto font size.
+This section allows you to customize the font size of combo chart elements.
 
-### Auto Font Size
+![Font settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/combo-chart/font-settings.png)
 
-On enabling `auto font fize,` the size of the font adjusted automatically based on the screen resolution.
+#### Auto font Size and font size
 
-![Font Settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/combo-chart/fontsettings.png)
+By default, the 'Auto Font Size' property is enabled. Auto font size property used to set font size based on dashboard viewing client machine resolution. If the user wants to customize or set the fixed font size, then the user needs to disable auto font size and set the required font size.
 
 #### Filter
 
@@ -529,7 +610,7 @@ This allows you to apply text color to the widget title.
 
 ### Title Auto Font Size
 
-`On enabling Auto Font Size, the font size of the title will be adjusted automatically based on the screen resolution.
+On enabling Auto Font Size, the font size of the title will be adjusted automatically based on the screen resolution.
 
 **Font Size**
 
@@ -537,11 +618,19 @@ This allows you to apply the specified size of the font to the widget title if t
 
 ### Subtitle Auto Font Size
 
-On enabling Auto Font Size, the font size of the subtitle will be adjusted automatically based on the screen resolution.
+On enabling Auto Font Size , the font size of the subtitle will be adjusted automatically based on the screen resolution.
 
 **Font Size**
 
 This allows you to apply the specified size of the font to the widget title if the **Subtitle Auto Font Size** is disabled. Value can be between 10 and 32.
+
+### Auto Padding
+
+On enabling Auto Padding, the padding of the widget container will be adjusted automatically if the size of the widget varies.
+
+**Padding**
+
+This allows you to customize the padding of the widget container if the **Auto Padding** is disabled. Value can be between 0 and 25.
 
 #### Show Border
 
@@ -553,7 +642,15 @@ This allows you to apply the specified radius to the widget corners if the **Sho
 
 #### Background Color
 
-This allows you to select the color for the chart background.
+This allows you to select the color for the chart background. `The default value is #ffffff`.
+
+#### Transparency
+
+This property allows you to specify the **transparency** for the `background color`.
+
+#### Show Shadow
+
+This allows you to toggle the visibility of the `shadow` surrounding the widget.
 
 ### Container actions
 
@@ -585,13 +682,13 @@ This allows you to enable or disable the PDF export option for the Column chart 
 
 #### Enable Comments
 
-This allows you to enable or disable comment for the dashboard widget. For more details refer to [here](/cloud-bi/visualizing-data/working-with-widgets/commenting-widget/).
+This allows you to enable or disable comment for the dashboard widget. For more details refer to [here](/embedded-bi/visualizing-data/working-with-widgets/commenting-widget/).
 
 #### Allow View Underlying Data
 
 This allows you to visualize the raw data associated with a widget at runtime. 
 
-To learn more about viewing the underlying widget data, refer to the [view data documentation](/cloud-bi/visualizing-data/working-with-widgets/view-data/). 
+To learn more about viewing the underlying widget data, refer to the [view data documentation](/embedded-bi/visualizing-data/working-with-widgets/view-data/). 
 
 #### Pin widget
 

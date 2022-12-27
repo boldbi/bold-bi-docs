@@ -18,10 +18,10 @@ This section explains what are the [Azure Active Directory](https://azure.micros
 
     ![Create new application](/static/assets/embedded/site-administration/images/add-application.png) 
 
-3. Enter the name of the application and choose the following options,
+3. Enter the name of the application and choose the following options.
 
-*  Accounts in any organizational directory (Any Azure AD directory - Multitenant) as `Supported account types`.
-* Web under the `Redirect URI(optional)` section for Bold BI web and Public client/native(mobile & desktop) for Bold BI mobile application. Enter the Redirect URI and then click `Register`.
+    * Accounts in any organizational directory (Any Azure AD directory - Multitenant) as `Supported account types`.
+    * Web under the `Redirect URI(optional)` section for Bold BI web and Public client/native(mobile & desktop) for the Bold BI mobile application. Enter the Redirect URI and then click `Register`.
 
     ![Application type](/static/assets/embedded/site-administration/images/add-application-type.png)
 
@@ -31,7 +31,7 @@ This section explains what are the [Azure Active Directory](https://azure.micros
 
     ![Save homepage](/static/assets/embedded/site-administration/images/azurehomepageurl.png)
 
-5. Select `Certificates & secrets`. By clicking the `New client secret`, you can add the client secret as shown in the following screenshot.
+5. Select `Certificates & secrets` to add client secret by clicking the `New client secret` as in the following screenshot.
 
     ![Secret code](/static/assets/embedded/site-administration/images/certificates.png)
 
@@ -61,37 +61,13 @@ This section explains what are the [Azure Active Directory](https://azure.micros
      <td>3. User <td>Read and write access to user profile</td></td>
      </tr>
       <tr>
-     <td>4. Profile <td>View user's basic profile</td></td>
+     <td>4. OpenId permissions <td>View user's basic profile</td></td>
      </tr>
      </table>
     
     Select the above listed permissions and add it.
 
-7. Go to `API permissions`, click `Add a permission`, and then select the `APIs my organization uses`. Then, click `Azure Active Directory Graph`.
-
-    <table>
-     <tr>
-     <th><b>Application Permissions</b></th>
-     <th></th>
-     </tr>
-     <tr>
-     <td>Directory <td>Read directory data</td></td>
-     </tr>
-     <tr>
-     <th><b>Delegated Permissions</b></th>
-     <th></th>
-     </tr>
-     <tr>
-     <td> 1. Directory <td>Read directory data, Access directory as the signed in user</td></td>
-     </tr>
-     <tr>
-     <td>2. User <td>Sign in and read user profile</td></td>
-     </tr>
-     </table>
-
-     Select the above listed permissions and add it.
-
-8. After adding the permissions, click `Grant admin consent` to grant the admin consent for the same.
+7. After adding the permissions, click `Grant admin consent` to grant the admin consent for the same.
  
     ![Grant admin consent](/static/assets/embedded/site-administration/images/grant-admin-consent.png)
 

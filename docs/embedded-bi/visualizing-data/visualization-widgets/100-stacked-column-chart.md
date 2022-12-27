@@ -104,6 +104,8 @@ You can change the `Settings`.
 
 The configured field names can be edited by using the `Rename` option provided in the settings menu.
 
+![Rename](/static/assets/embedded/visualizing-data/visualization-widgets/images/100-stacked-column-chart/rename.png)
+
 #### Sorting data
 
 You can Sort the dimension data using the `Sort` option under `Settings` menu list. To apply sorting for the data, refer to the [Sort](/cloud-bi/visualizing-data/working-with-widgets/advanced-sorting/#dimension-column).
@@ -166,19 +168,25 @@ You can see the list of properties available for the widget with default value.
 
 #### General Settings
 
-![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/100-stacked-column-chart/general-settings.png)
+![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/100-stacked-column-chart/property.png)
 
 #### Name
 
 This allows you to change the title for this 10% stacked column chart widget
 
+![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/100-stacked-column-chart/Title.png)
+
 #### Subtitle
 
 Allows you to provide the `subtitle` for this 100% Stacked Column chart widget.
 
+![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/100-stacked-column-chart/Subtitle.png)
+
 #### Description
 
 Allows you to provide the `description` for this 100% Stacked Column chart widget.
+
+![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/100-stacked-column-chart/Description.png)
 
 #### Basic Settings
 
@@ -204,6 +212,8 @@ Click the `Change` button to open the `Chart Type` and `Axis Settings` dialog.
 
 This option allows you to toggle the visibility of tooltip in a chart.
 
+![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/100-stacked-column-chart/Showtooltip.png)
+
 ### Show Value in Tooltip
 
 As it is a percentage type, while you hover on the chart, values will be shown with percentages. If you enable this option, the value will be shown in the tooltip.
@@ -218,9 +228,13 @@ This allows you to toggle the visibility of value labels.
 
 ![Show Value Labels](/static/assets/embedded/visualizing-data/visualization-widgets/images/100-stacked-column-chart/show-value-labels.png)
 
+If you Disable `Show Value Labels` properties, the dependent properties, which are **color**, **Value label position**, **Value label rotation** and **Value label suffix** will be hidden.
+
+![Show value label](/static/assets/embedded/visualizing-data/visualization-widgets/images/100-stacked-column-chart/show-label.png)
+
 #### Customize
 
-This allows you to customize the toggle visibility of each series in a chart.
+This allows you to customize the toggle visibility of value labels in each series.
 
 ![Show Value Labels Customization](/static/assets/embedded/visualizing-data/visualization-widgets/images/100-stacked-column-chart/show-value-labels-customization.png)
 
@@ -256,11 +270,37 @@ This allows you to customize the suffix value of value labels.
 
 ![Suffix Value](/static/assets/embedded/visualizing-data/visualization-widgets/images/100-stacked-column-chart/suffix-value.png)
 
+**Note:** When Increased the height and number of data in chart the value label was hidden. Use label rotation property to visible the label.
+
 ### Show Items With No Data
 
 This allows you to show the data which column does `not` have value.
 
 ![Empty Point Mode Gap](/static/assets/embedded/visualizing-data/visualization-widgets/images/100-stacked-column-chart/chart-gap.png)
+
+### Empty Point Mode
+
+This allows you to handle the display mode of the data point values is `null or undefined` when the `Show Items With No Data` is enabled.
+
+![Empty Point Mode Gap](/static/assets/embedded/visualizing-data/visualization-widgets/images/100-stacked-column-chart/chart-gap.png)
+
+### Gap
+
+This option allows you to show the null or undefined values with gaps.
+
+![Empty Point Mode Gap](/static/assets/embedded/visualizing-data/visualization-widgets/images/100-stacked-column-chart/chart-gap.png)
+
+### Zero
+
+This option allows you to show the null or undefined values in the zero axis.
+
+![Empty Point Mode Zero](/static/assets/embedded/visualizing-data/visualization-widgets/images/100-stacked-column-chart/chart-zero.png)
+
+### Average
+
+This option allows you to display the null or undefined values with the average value.
+
+![Empty Point Mode Zero](/static/assets/embedded/visualizing-data/visualization-widgets/images/100-stacked-column-chart/chart-average.png)
 
 #### Column Width
 
@@ -368,6 +408,10 @@ This option allows you to set maximum width for the Legend Items and it is appli
 
 ![Legend Text Width in chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/100-stacked-column-chart/chart_Legendwidth.png)
 
+If you uncheck the `Show Legend` property in the property panel, the dependent properties, which are **Legend color**, **Legend position**, **customization button** and **Legend title** are also hidden.
+
+> **NOTE:** For single series, Legend wont be visible. 
+
 #### Link
 
 ![Link](/static/assets/embedded/visualizing-data/visualization-widgets/images/100-stacked-column-chart/linking.png)
@@ -384,15 +428,23 @@ This section allows you to customize the axis settings in chart.
 
 This allows you to customize the axis title color.
 
+![Title color](/static/assets/embedded/visualizing-data/visualization-widgets/images/100-stacked-column-chart/title-color.png)
+
 #### Label color
 
 This allows you to customize the axis label color.
+
+![label color](/static/assets/embedded/visualizing-data/visualization-widgets/images/100-stacked-column-chart/label-color.png)
 
 #### Show Category Axis
 
 This allows you to enable the visibility of `Category Axis.`
 
 ![Show Category Axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/100-stacked-column-chart/show-category-axis.png)
+
+If you disable the `Show Category Axis` option, dependencies properties **Show axis title**, **Axis title text**, **Trim overflow mode**, **Trim axis labels**, **Label Rotation** and **Auto Interval** option will be hidden.
+
+![Show value label](/static/assets/embedded/visualizing-data/visualization-widgets/images/100-stacked-column-chart/show-axis.png)
 
 #### Show Category Axis Title
 
@@ -442,6 +494,10 @@ This allows you to enable the `Primary Value Axis` for chart.
 
 ![Show Primary Value Axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/100-stacked-column-chart/show-primary-value-axis.png)
 
+If you disable the `Show Primary Axis` option, dependencies properties, which are **Axis title**, **Axis title text**, **Axis type** and **Axis Format** properties will be hidden.
+
+![Show primary value axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/100-stacked-column-chart/primary-axis.png)
+
 #### Show Primary Value Axis Title
 
 This allows you to enable the visibility of the `Primary Value Axis` title of the chart.
@@ -453,6 +509,14 @@ This allows you to enable the visibility of the `Primary Value Axis` title of th
 This allows you to edit the `Primary Value Axis` title. It will reflect in the y-axis name of the chart.
 
 ![Primary Value Axis Title](/static/assets/embedded/visualizing-data/visualization-widgets/images/100-stacked-column-chart/axis-title.png)
+
+### Inverse Axis
+
+By default, the chart axis showing positive values on the top and negative values at the bottom. But, there are times when we need to inverse the axis and show the negative values on the top and positive values on the bottom. For Example, When we bind the temperature data to the chart and to display the negative values on the top, we can make use of this property.
+
+On enabling this property the chart negative values will display on the top and positive values display on the bottom.
+
+![Inversed axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/100-stacked-column-chart/inverseaxis.png)
 
 #### Axis Range Settings
 
@@ -481,6 +545,10 @@ This allows you to enable the `Primary Value Axis` gridlines for the 100% stacke
 ![Primary value Axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/100-stacked-column-chart/primaryaxis.png)
  
 #### Category Axis
+
+If we uncheck the `Show Axis Title` property, the Axis title text box property will be hidden.
+
+![Show Category axis title](/static/assets/embedded/visualizing-data/visualization-widgets/images/100-stacked-column-chart/show-axis-title.png)
 
 This allows you to enable the `Category Axis` gridlines for the 100% stacked column chart.
 
@@ -651,3 +719,15 @@ To learn more about viewing the underlying widget data, refer to the [view data 
 #### Pin Widget
 
 This allows you to pin the widget.
+
+#### Responsive Behavior
+
+We hide the widget elements based on the size of the widget for better readability.
+
+When the chart has been placed with less than 7 columns chart Y-axis labels, Y-axis titles will be hidden.
+
+![Widget Element](/static/assets/embedded/visualizing-data/visualization-widgets/images/100-stacked-column-chart/Y-axis-label.png)
+
+When the chart has been placed with less than 6 rows, chart X-axis labels, X-axis titles and gridlines will be hidden.
+
+![Widget Element](/static/assets/embedded/visualizing-data/visualization-widgets/images/100-stacked-column-chart/X-axis-label.png)

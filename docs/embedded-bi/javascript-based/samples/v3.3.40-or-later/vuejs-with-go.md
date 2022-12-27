@@ -154,9 +154,7 @@ The link has been provided to [download](https://onpremise-demo.boldbi.com/getti
      mounted: function() {
     var scripts = [
       "https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js",
-      "https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js",
-      "https://cdnjs.cloudflare.com/ajax/libs/jsrender/1.0.0-beta/jsrender.min.js",
-      "https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js",
+      "https://cdn.boldbi.com/embedded-sdk/v5.3.53/boldbi-embed.js"
     ];
     scripts.forEach(script => {
       let tag = document.createElement("script");

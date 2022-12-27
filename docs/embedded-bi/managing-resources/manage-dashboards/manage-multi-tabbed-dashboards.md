@@ -41,19 +41,21 @@ To create a multi-tabbed dashboard, the user should have dashboards. Admin user 
 
 * Select the category from `Select Category` drop-down and corresponding dashboards under that selected category will be displayed in the `Select Dashboard` drop-down.
 
-	![Add Category-Dropdown](/static/assets/embedded/managing-resources/manage-dashboards/images/add-category-dropdown.png)
-
 	![Add Dashboards in Category](/static/assets/embedded/managing-resources/manage-dashboards/images/add-dashboard-dropdown.png)
 
 * After selecting the dashboards from Select Dashboard drop-down, `Add` button will enable and Click the `Add` button. 
 
     ![Add Button](/static/assets/embedded/managing-resources/manage-dashboards/images/add-button-multi-tab.png)
 
-* Should add minimum two or more dashboards for creating multi-tabbed dashboard. It will display the added dashboards for multi-tabbed dashboard as follows.
+* Add a minimum of two or more dashboards for creating the multi-tabbed dashboard. It will display the added dashboards for the multi-tabbed dashboard as follows. Edit the tab name of the multi-tabbed dashboards by clicking the edit icon.
     
 	![Display Added Dashboard](/static/assets/embedded/managing-resources/manage-dashboards/images/display-added-dashboard.png)
 
-* After adding dashboards for multi-tabbed dashboard. Click the `Create` button.
+* Edit the tab name and click the tick icon to apply the edited tab name. Use the cancel icon to reset the tab name.
+
+    ![Edit Tab Name](/static/assets/embedded/managing-resources/manage-dashboards/images/edit-tab-name.png)
+
+* After adding dashboards for the multi-tabbed dashboard, click `Create`.
 
     ![Create Button](/static/assets/embedded/managing-resources/manage-dashboards/images/create-button-multi-tab.png)
 
@@ -76,7 +78,14 @@ User can identify the created multi-tabbed dashboard with `multi-tab` batch icon
 
     ![Multi-tab Edit](/static/assets/embedded/managing-resources/manage-dashboards/images/multi-tab-edit.png)
 
-2. Change the Name or Category or Adding / Removing dashboards will enable the `save` button.
+2. Edit any of the listed items.
+    * Name
+    * Category
+    * Tab name
+    * Order of tab
+    * Add or Remove dashboards
+    
+   Once edited, click `Save`.
 
     ![Multi-tab Update](/static/assets/embedded/managing-resources/manage-dashboards/images/multi-tab-update.png)
 

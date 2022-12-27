@@ -60,8 +60,28 @@ The following are the frequently asked questions in Bold BI Cloud :
 
 [How to group the data using Bold BI](/cloud-bi/faq/how-to-group-the-data-using-bold-bi/)
 
+[Troubleshoot gateways - Bold BI](/cloud-bi/faq/troubleshoot-gateways-boldbi/)
+
+[How to join tables based on expression column](/cloud-bi/faq/join-tables-based-on-expression-columns/)
+
+[How to show raw data in grid widget](/cloud-bi-bi/faq/how-to-show-raw-data-in-grid-widget/)
+
 [Working with custom query extract mode in Bold BI](/cloud-bi/faq/working-with-custom-query-extract-mode-in-bold-bi/)
 
 [How to configure Relative date filter based on minutes](/cloud-bi/faq/how-to-configure-relative-date-filter-based-on-minutes/)
 
 [How to use Median aggregation in Bold BI](/cloud-bi/faq/how-to-use-median-aggregation-in-bold-bi/)
+
+[How to generate access token to authenticate users](/cloud-bi/faq/how-to-generate-access-token-to-authenticate-user/)
+
+[How to join tables based on expression column](/cloud-bi/faq/join-tables-based-on-expression-columns/)
+
+[How to create custom sort order in Bold BI](/cloud-bi/faq/how-to-create-custom-sort-order-in-bold-bi/)
+
+[How to show raw data in grid widget](/cloud-bi-bi/faq/how-to-show-raw-data-in-grid-widget/)
+
+[How to create different If condition-based expressions in Bold BI](/cloud-bi/faq/how-to-create-different-if-condition-based-expressions-in-bold-bi)
+
+[How will the dashboard get affected while CSP enabled](/cloud-bi/faq/how-will-the-dashboard-get-affected-while-csp-enabled/)
+
+[Impact of CSP policy on dashboards in Cloud BI](/cloud-bi/faq/how-will-the-dashboard-get-affected-while-csp-enabled/)

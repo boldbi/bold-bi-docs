@@ -20,6 +20,10 @@ You can explore the site administration in detail here,
 
 [Existing Database](/cloud-bi/site-administration/existing-database/)
 
+[Security](/embedded-bi/security-configuration/cors-settings/)
+
+[Integrations](/embedded-bi/site-administration/integrations/)
+
 [Subscription](/cloud-bi/site-administration/subscription/)
 
 [Payments](/cloud-bi/site-administration/payments/)

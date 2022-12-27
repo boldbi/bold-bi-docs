@@ -41,4 +41,3 @@ Any application that embeds Bold BI dashboard and widget needs to be authenticat
 2. Dashboard can be configured to show the user specific information. Bold BI server would validate the user and render the dashboard data based on logged user. The dashboard data would be different from one user to another.
 
 3. The dashboard collaboration and views are supported only for authorized user. Authorized user only can see the comments, apply filtering, and handling the views in the dashboard without the problem.
-

@@ -14,7 +14,7 @@ This section explains how to upgrade Bold BI Linux package from any version to t
 
 1. Register and download the latest Bold BI Linux package from [here](/embedded-bi/setup/overview/#registration-and-download).
 
-2. Install the  `pv` tool by running the following command.
+2. Install the `pv` tool by running the following command.
 
     ~~~shell
     sudo yum -y install pv

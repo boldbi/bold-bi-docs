@@ -134,19 +134,25 @@ You can format the tree map for better illustration of the view that you require
 
 ### General settings
 
+![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/property.png)
+
 #### Name
 
 This allows you to set `title` for this tree map widget.
+
+![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/title.png)
 
 #### Subtitle
 
 This allows you to set `subtitle` for this tree map widget.
 
+![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/Subtitle.png)
+
 #### Description
 
 This allows you to set brief explanation about this grid widget.
 
-![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/general-settings.png)
+![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/Description.png)
 
 ### Basic settings
 
@@ -155,6 +161,8 @@ This allows you to set brief explanation about this grid widget.
 #### Show Tooltip
 
 This option allows you to toggle the visibility of tooltip in the tree map.
+
+![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/tooltip.png)
 
 #### Show legend
 
@@ -396,7 +404,6 @@ This allows you to set the **background color** to the tree map widget.
 This property allows you to specifies the **transparency** for the `background color.`
 
 ### Show Shadow
-
 This allows you to toggle the visibility of  the `shadow` surrounding the widget.
 
 ### Container actions
@@ -440,3 +447,11 @@ To learn more about viewing the underlying widget data, refer to the [view data 
 #### Pin Widget
 
 This allows you to pin the widget.
+
+#### Responsive Behavior
+
+We hide the widget elements based on the size of the widget for better readability.
+
+When the tree map has been placed with less than 7 columns legend will be hidden.
+
+![Widget Element](/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/legend.png).

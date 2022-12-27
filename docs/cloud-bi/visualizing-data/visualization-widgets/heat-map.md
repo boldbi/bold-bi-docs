@@ -17,7 +17,7 @@ documentation: ug
 
 ## How to configure the data table to Heatmap widget
 
-> **NOTE:**  Before adding the Heatmap widget to the design layout, make sure to **create the data source**. You can refer to this [section](/cloud-bi/working-with-data-source/creating-a-new-data-source/) to learn how to create a new data source.
+> **NOTE:**  Before adding the Heatmap widget to the design layout, make sure to **create the data source**. You can refer to this [section](/embedded-bi/working-with-data-source/creating-a-new-data-source/) to learn how to create a new data source.
 
 > **IMPORTANT:**  To showcase a Heatmap, a minimum requirement of `one value` and `two groups` by the field is needed.
 
@@ -49,7 +49,7 @@ The following steps explains about data configuration of the Heatmap.
 
 #### Value section
 
-Bind column by dragging and dropping the element from sections to `values.`
+Bind column by dragging and dropping the element from sections to `values`.
 
 ![Value fields](/static/assets/cloud/visualizing-data/visualization-widgets/images/heat-map/field-value.png)
 
@@ -93,11 +93,11 @@ Drag and drop the elements from sections to `size` section. It will define the s
 
 #### Tooltip section 
 
-You can configure the `tooltip` section to showcase the additional information in the widget’s tooltip without affecting the visualization. Refer to [this section](/cloud-bi/visualizing-data/working-with-widgets/tooltip-customization/) for more details on configuring the tooltip fields.
+You can configure the `tooltip` section to showcase the additional information in the widget’s tooltip without affecting the visualization. Refer to [this section](/embedded-bi/visualizing-data/working-with-widgets/tooltip-customization/) for more details on configuring the tooltip fields.
 
 ### Step 3: Settings menu options
 
-You can `filter,` `format,` and `Rename` the data displayed in the widget from the settings menu options.  To open the settings menu, click the `settings` icon.
+You can `filter`, `format`, and `Rename` the data displayed in the widget from the settings menu options.  To open the settings menu, click the `settings` icon.
 
 The following screenshots shows the various settings menu options based on the type of field configured in the type of section. 
 
@@ -116,22 +116,21 @@ The configured field names can be edited by using the `Rename` option provided i
 
 ![Rename ](/static/assets/cloud/visualizing-data/visualization-widgets/images/heat-map/rename.png)
 
-
 #### Changing the aggregation type
 
-You can change the `aggregation type` of the `measure` section from the settings menu as shown in the following screenshot. Refer to [this section](/cloud-bi/visualizing-data/working-with-widgets/aggregating-value-columns-based-on-type/) for more details.
+You can change the `aggregation type` of the `measure` section from the settings menu as shown in the following screenshot. Refer to [this section](/embedded-bi/visualizing-data/working-with-widgets/aggregating-value-columns-based-on-type/) for more details.
 
 ![Changing the aggregation type](/static/assets/cloud/visualizing-data/visualization-widgets/images/heat-map/aggregation-type.png)
 
 #### Filtering data
 
-You can use Filters to change the values by selecting the `Filter` option. For more details, refer to the [Measure filter](/cloud-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-measure-column) and [dimension filter](/cloud-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column).
+You can use Filters to change the values by selecting the `Filter` option. For more details, refer to the [Measure filter](/embedded-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-measure-column) and [dimension filter](/embedded-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column).
 
 ![Filtering data](/static/assets/cloud/visualizing-data/visualization-widgets/images/heat-map/data-filter.png)
 
 #### Measure formatting
 
-You can format the elements by selecting the `Format` option. For more details, refer to the [measure format](/cloud-bi/visualizing-data/working-with-widgets/formatting-measure-type-column/).
+You can format the elements by selecting the `Format` option. For more details, refer to the [measure format](/embedded-bi/visualizing-data/working-with-widgets/formatting-measure-type-column/).
 
 ![Measure formatting](/static/assets/cloud/visualizing-data/visualization-widgets/images/heat-map/data-format.png)
 
@@ -141,7 +140,7 @@ When the second value is added to the x-axis or y-axis section, the alert messag
 
 ![Drill confirmation alert](/static/assets/cloud/visualizing-data/visualization-widgets/images/drillalert.png)
 
-Click `Yes` to enable the option. If you click `No,` then a single value will be added to the respected section( x-axis or y-axis).
+Click `Yes` to enable the option. If you click `No`, then a single value will be added to the respected section( x-axis or y-axis).
 
 *Figure: Heat Map with a drilled view of the selected region.*
 
@@ -153,23 +152,39 @@ You can format the `Heatmap` for better illustration of the view that you requir
 
 ### General settings
 
+![General settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/heat-map/property.png)
+
 #### Name
 
 This allows you to set `title` for this Heatmap widget.
+
+![General settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/heat-map/Name.png)
 
 #### Subtitle
 
 This allows you to set `subtitle` for this Heatmap widget. 
 
+![General settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/heat-map/Subtitle.png)
+
 #### Description
 
 This allows you to set brief explanation about this Heatmap widget.
 
-![General settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/heat-map/general-settings.png)
+![General settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/heat-map/Description.png)
 
 ### Cell settings
 
 ![Cell settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/heat-map/cellsettings.png)
+
+If we uncheck this property, the **value label color** property will be hidden.
+
+![Cell settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/heat-map/value-label.png)
+
+#### Show Tooltip
+
+This option allows you to toggle the visibility of tooltip in a heat map.
+
+![General settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/heat-map/tooltip.png)
 
 #### Show label
 
@@ -187,7 +202,7 @@ This allows you to change the color of the label.
 
 #### Cell radius
 
-This allows you to apply the specified radius to cell corners. The value ranges from 0 to 10. `The Default value is 3.`
+This allows you to apply the specified radius to cell corners. The value ranges from 0 to 10. `The Default value is 3`.
 
 ![Cell radius](/static/assets/cloud/visualizing-data/visualization-widgets/images/heat-map/cell-radius-settings.png)
 
@@ -195,7 +210,7 @@ This allows you to apply the specified radius to cell corners. The value ranges 
 
 #### Cell border
 
-This allows you to toggle the visibility of border surrounding the cell. Value ranges from 0 to 10. `Default value is 1`.
+This allows you to toggle the visibility of the border surrounding the cell. The value ranges from 0 to 10. `Default value is 1`.
 
 ![Cell border](/static/assets/cloud/visualizing-data/visualization-widgets/images/heat-map/cellborder-settings.png)
 
@@ -229,7 +244,7 @@ This allows you to configure a single-color palette whose saturation will be var
 
 #### Advanced setting
 
-Select Advance setting to configure conditions and apply color to the cells based on that. Click [here](/cloud-bi/visualizing-data/visualization-widgets/heat-map/#how-to-apply-conditional-formatting-in-heatmap)  for more details.
+Select Advance setting to configure conditions and apply color to the cells based on that. Click [here](/embedded-bi/visualizing-data/visualization-widgets/heat-map/#how-to-apply-conditional-formatting-in-heatmap)  for more details.
 
 ### Legend settings
 
@@ -298,15 +313,13 @@ This option trims the end of overlapping label in the axis.
 
 #### Enable Trim
 
-This option allows you to `trim` the axis labels based on the `Maximum Label Width` property value.
+This option allows you to trim x-axis labels based on the 'Maximum Label Width' property value.
 
-![Trimmed label](/static/assets/cloud/visualizing-data/visualization-widgets/images/heat-map/trimming-label.png)
+#### Maximum Label Width
 
-#### Label Maximum Width
+This option allows you to set a maximum width for the x-axis labels, and also it can be made customizable when the trim axis label option is enabled.
 
-This option allows you to set a `maximum width` for the axis labels, and also it can be made customizable when the `Enable Trim` option is enabled.
-
-![Label maximum width](/static/assets/cloud/visualizing-data/visualization-widgets/images/heat-map/maximum-label-width.png)
+![Maximum label width](/static/assets/cloud/visualizing-data/visualization-widgets/images/heat-map/maximum-label-width.png)
 
 #### Inversed axis
 
@@ -319,6 +332,14 @@ This allows you to change the axis label’s placement order from left to right 
 This allows you to change the axis position from bottom to top in the x-axis.
 
 ![Opposed axis](/static/assets/cloud/visualizing-data/visualization-widgets/images/heat-map/opposedaxis.png)
+
+#### Sorting
+
+This option allows you to perform sorting both x-axis and y-axis at the same time. As we currently plotting data as per the 2D resultant table, you are unable to sort both the X and Y axis at the same time. So, we have provided an option in the property panel to customize the sort setting in Heat Map. By default, `Auto` sorting is selected, and the sort order will be the same as per the 2D resultant table.
+
+X-axis sorting with 'Ascending' value.
+
+![Sorting](/static/assets/cloud/visualizing-data/visualization-widgets/images/heat-map/x-axis-sorting.png)
 
 ### Y-axis settings
 
@@ -352,15 +373,13 @@ This allows you to edit the x-axis title for the Heatmap. It will reflect in the
 
 #### Enable Trim
 
-This option allows you to `trim` the axis labels based on the `Maximum Label Width` property value.
+This option allows you to trim y-axis labels based on the 'Maximum Label Width' property value.
 
-![Trimmed label](/static/assets/cloud/visualizing-data/visualization-widgets/images/heat-map/trimming-label-y.png)
+#### Maximum Label Width
 
-#### Label Maximum Width
+This option allows you to set the maximum width for the y-axis labels and also it can be made customizable when the trim axis label option is enabled.
 
-This option allows you to set a `maximum width` for the axis labels, and also it can be made customizable when the `Enable Trim` option is enabled.
-
-![Label maximum width](/static/assets/cloud/visualizing-data/visualization-widgets/images/heat-map/maximum-label-width-y.png)
+![Maximum label width](/static/assets/cloud/visualizing-data/visualization-widgets/images/heat-map/y-axis-maximum-label-width.png)
 
 #### Inversed axis
 
@@ -374,9 +393,17 @@ This allows you to change the axis position from left to right in the y-axis.
 
 ![Opposed y-axis](/static/assets/cloud/visualizing-data/visualization-widgets/images/heat-map/opposed-axis-y.png)
 
+#### Sorting
+
+This option allows you to perform sorting on both the x-axis and y-axis at the same time. As you are currently plotting data as per the 2D resultant table, you are unable to sort both the X and Y axis at the same time. So, we have provided an option in the property panel to customize the sort setting in Heat Map. By default, the Auto sorting is selected, and the sort order will be same as per 2D resultant table. 
+
+Y-axis sorting with the 'Descending' value.
+
+![Sorting](/static/assets/cloud/visualizing-data/visualization-widgets/images/heat-map/y-axis-sorting.png)
+
 ### Link
 
-To configure the linking to URL or dashboard with the widget using its settings. For more details, refer to the [Linking](/cloud-bi/visualizing-data/working-with-widgets/linking-urls-and-dashboards/).
+To configure the linking to URL or dashboard with the widget using its settings. For more details, refer to the [Linking](/embedded-bi/visualizing-data/working-with-widgets/linking-urls-and-dashboards/).
 
 ![Link](/static/assets/cloud/visualizing-data/visualization-widgets/images/heat-map/link.png)
 
@@ -386,7 +413,7 @@ To configure the linking to URL or dashboard with the widget using its settings.
 
 #### Act as master widget
 
-This allows you to define the Heatmap widget as a master widget, such that its filter action can be listened by other widgets in the Dashboard.
+This allows you to define the Heatmap widget as a master widget such that its filter action can be listened by other widgets in the Dashboard.
 
 #### Ignore filter actions
 
@@ -418,11 +445,13 @@ In case, if you have the requirement to highlight any data based on some conditi
 
 ![Heatmap with conditional formatting](/static/assets/cloud/visualizing-data/visualization-widgets/images/heat-map/formattedresult.png)
 
-Refer to the following sections for the detailed steps on using the [`Gradient`](/cloud-bi/visualizing-data/visualization-widgets/heat-map/#gradient) and [`Rule`](/cloud-bi/visualizing-data/visualization-widgets/heat-map/#rule-based-condition-mode) modes. 
+Refer to the following sections for the detailed steps on using the [`Gradient`](/embedded-bi/visualizing-data/visualization-widgets/heat-map/#gradient) and [`Rule`](/embedded-bi/visualizing-data/visualization-widgets/heat-map/#rule-based-condition-mode) modes. 
 
 ### Gradient mode
 
 You can customize the fill color of the heatmap using the gradient based conditional formatting. This is the default mode. 
+
+> **NOTE:** Binding size field in heat map, Gradient mode option will be disabled. 
 
 #### Based on field
 
@@ -486,7 +515,7 @@ Cohort visualization examines the outcomes of predetermined groups, called cohor
 
 1. Drag and Drop the heatmap widget and bind the measure values in it.
 
-2. Go to the `Formatting section` and change the drop-down value to `Row Wise.`
+2. Go to the `Formatting section` and change the drop-down value to `Row Wise`.
 
 ![Formatting Section](/static/assets/cloud/visualizing-data/visualization-widgets/images/heat-map/formatting-section.png)
 
@@ -522,9 +551,17 @@ On enabling Auto Font Size, the font size of the subtitle will be adjusted autom
 
 This allows you to apply the specified size of the font to the widget title if the **Subtitle Auto Font Size** is disabled. Value can be between 10 and 32.
 
+### Auto Padding
+
+On enabling Auto Padding, the padding of the widget container will be adjusted automatically if the size of the widget varies.
+
+**Padding**
+
+This allows you to customize the padding of the widget container if the **Auto Padding** is disabled. Value can be between 0 and 25.
+
 ### Show Border
 
-This allows you to toggle the visibility of `border` surrounding the widget.
+This allows you to toggle the visibility of the `border` surrounding the widget.
 
 ### Corner Radius
 
@@ -540,7 +577,11 @@ This allows you to set the **background color** to the heat map widget.
 
 ### Transparency
 
-This property allows you to specify the **transparency** for the `background color.`
+This property allows you to specify the **transparency** for the `background color`.
+
+### Show Shadow
+
+This allows you to toggle the visibility of the `shadow` surrounding the widget.
 
 ### Container actions
 
@@ -572,14 +613,30 @@ This allows you to enable or disable the `PDF export` option for the heat map wi
 
 #### Enable Comments
 
-This allows you to enable or disable `comment` for the dashboard widget. For more details, refer to this [link](/cloud-bi/visualizing-data/working-with-widgets/commenting-widget/).
+This allows you to enable or disable `comment` for the dashboard widget. For more details, refer to this [link](/embedded-bi/visualizing-data/working-with-widgets/commenting-widget/).
 
 #### Allow View Underlying Data
 
 This allows you to visualize the raw data associated with a widget at runtime. 
 
-To learn more about viewing the underlying widget data, refer to the [view data documentation](/cloud-bi/visualizing-data/working-with-widgets/view-data/). 
+To learn more about viewing the underlying widget data, refer to the [view data documentation](/embedded-bi/visualizing-data/working-with-widgets/view-data/). 
 
 #### Pin Widget
 
 This allows you to pin the widget.
+
+#### Responsive Behavior
+
+We hide the widget elements based on the size of the widget for better readability.
+
+When the Heatmap has been placed with less than 20 columns chart y-axis title and y-axis label will be hidden.
+
+![Widget Element](/static/assets/cloud/visualizing-data/visualization-widgets/images/heat-map/Y-axis.png)
+
+When the Heatmap is placed with less than 7 rows, the x-axis title and x-axis label, the legend will be hidden.
+
+![Widget Element](/static/assets/cloud/visualizing-data/visualization-widgets/images/heat-map/X-axis.png)
+
+When the Heatmap is placed with less than 16 columns and less than 7 rows, the legend will be hidden.
+
+![Widget Element](/static/assets/cloud/visualizing-data/visualization-widgets/images/heat-map/legend.png)

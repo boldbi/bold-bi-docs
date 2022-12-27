@@ -2506,7 +2506,7 @@
         "properties": {
           "ItemName": {
             "type": "string",
-            "description": "Item name.<br />Valid values: <code>dashboard name, Datasource name, Schedule name</code>"
+            "description": "Item name.<br />Valid values: <code>Dashboard name, Datasource name, Schedule name</code>"
           },
           "CategoryName": {
             "type": "string",

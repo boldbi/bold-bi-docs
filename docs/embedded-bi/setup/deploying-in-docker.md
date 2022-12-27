@@ -6,8 +6,31 @@ platform: bold-bi
 documentation: ug
 ---
 
-# Deploying in Docker
+# Bold BI in Docker 
 
-Bold BI can be deployed using docker-compose. Nginx will run in a separate container as reverse proxy to route traffic to other containers. Please follow the below link to deploy Bold BI using the docker-compose deployment.
+Bold BI supports both single-container and multi-container(docker-compose) deployment in Docker. Docker deployment allows you to build, test, and deploy applications quickly.
 
-[Bold BI on Docker](https://github.com/boldbi/boldbi-docker)
+## Deployment Prerequisites
+
+The following hardware and software requirements are necessary to run the Bold BI application on docker container.
+
+### Hardware requirements
+
+* Operating System: You can use the Bold BI Docker on the following operating systems: 
+  * Windows
+  * Ubuntu 20.04 LTS
+  * Cent OS 7
+  * Mac
+* CPU: 4-core.
+* Memory: 16 GB RAM.
+* Disk Space: 8 GB or more.
+
+### Software requirements
+
+* Database: Microsoft SQL Server 2012+ | PostgreSQL | MySQL
+* Application: Docker
+* Web Browser: Microsoft Edge, Mozilla Firefox, and Chrome
+
+## How to deploy Bold BI in Docker
+
+Please follow the [link](https://github.com/boldbi/boldbi-docker) for deploy Bold BI on `Docker` and `Docker-compose` environment.

@@ -85,13 +85,14 @@ Now, the widget is rendered successfully with the default properties and formatt
 
 ![Number card data](/static/assets/cloud/visualizing-data/visualization-widgets/images/number-card/configured-widget.png)
 
-You can change the `aggregation type` of the measure section from the settings menu as shown in the following screenshot. Refer to [this section](/cloud-bi/visualizing-data/working-with-widgets/aggregating-value-columns-based-on-type/) for more details.
+You can change the `aggregation type` of the measure section from the settings menu as shown in the following screenshot. Refer to [this section](/embedded-bi/visualizing-data/working-with-widgets/aggregating-value-columns-based-on-type/) for more details.
 
 ![Change aggregation](/static/assets/cloud/visualizing-data/visualization-widgets/images/number-card/change-aggregation.png)
 
 > **NOTE:**  Refer to the following sections to learn more about how to filter and format data.
-> **NOTE:** [Measure filter](/cloud-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-measure-column) 
-> **NOTE:** [Measure Formatting](/cloud-bi/visualizing-data/working-with-widgets/formatting-measure-type-column/)
+> **NOTE:** [Measure filter](/embedded-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-measure-column) 
+> **NOTE:** [Measure Formatting](/embedded-bi/visualizing-data/working-with-widgets/formatting-measure-type-column/)
+
 
 ### Series number cards
 
@@ -117,7 +118,7 @@ The `Image` section allows you to configure the image data for each number card/
 
 In the following example, each country flag is displayed in the number card by configuring the Country Image field. The Country Image column from the data source contains the full URL of the country flag. 
 
-Data screenshot
+**Data screenshot**
 
 ![Example data](/static/assets/cloud/visualizing-data/visualization-widgets/images/number-card/sample-data-url.png)
 
@@ -135,6 +136,8 @@ Now, the widget will be rendered with image data.
 
 ![Pattern Image](/static/assets/cloud/visualizing-data/visualization-widgets/images/number-card/pattern-image.png)
 
+
+
 #### Partial Image data 
 
 If your data source contains the partial data of the URL, enter the URL text with the proper patterns.
@@ -144,14 +147,14 @@ For example, consider the following data source.
 ![Example data](/static/assets/cloud/visualizing-data/visualization-widgets/images/number-card/sample-image-data.png)
 
 It contains the Players name and part of their image URL in the above columns. 
+
 The full Image URL for `Cristiano Ronaldo` is `https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Cristiano_Ronaldo_2018.jpg/345px-Cristiano_Ronaldo_2018.jpg` and the Player Image Column contains the information `commons/thumb/8/8c/Cristiano_Ronaldo_2018.jpg/345px-Cristiano_Ronaldo_2018.jpg`. So, you should enter the URL as `https://upload.wikimedia.org/wikipedia/{0}`, where the *{0}* indicates the first field in the image section.
 
 > **NOTE:** - You can add any number of fields in the image section and need to append {0}, {1} for the 1st, 2nd fields configured in the image section. 
+
 > **NOTE:** -  If more than one data is available in the record, the first record with the highest measure will be displayed in the Number Card widget.
 
 For example, if you try to show the Goals of each team and configure the player image in the image section. It will show top scorer image of each team as shown in the following screenshot. 
-
-![Series with image](/static/assets/cloud/visualizing-data/visualization-widgets/images/number-card/image-in-series.png)
 
 *Configure Image Section*
 
@@ -164,7 +167,6 @@ For example, if you try to show the Goals of each team and configure the player 
 *Final view* 
 
 ![Series with image](/static/assets/cloud/visualizing-data/visualization-widgets/images/number-card/image-in-series.png)
-
 
 > **NOTE:**  The image will be hidden automatically, if the width of the number card is low. An information icon will display the message as highlighted in the following image.
 
@@ -194,9 +196,17 @@ The following screenshot shows the Number Card widget, after modifying the heade
 
 ![Header properties customized](/static/assets/cloud/visualizing-data/visualization-widgets/images/number-card/header-properties.png)
 
+### Basic Settings
+
+### Show Tooltip
+
+This option allows you to toggle the visibility of tooltip in a card.
+
+![Header properties customized](/static/assets/cloud/visualizing-data/visualization-widgets/images/number-card/tooltip.png)
+
 ## How to apply conditional formatting in Number card
 
-By enabling the advanced settings in formatting , you can customize the **color, styles,** and **highlighting** of the data based on the conditional range values.
+By enabling the advanced settings in formatting , you can customize the color, styles, and highlighting of the data based on the conditional range values.
 
 ### How to enable advanced formatting
 
@@ -255,7 +265,7 @@ The following text-based conditions are available, if you have selected the dime
 
 ![Dimension condition](/static/assets/cloud/visualizing-data/visualization-widgets/images/number-card/dimension-condition.png)
 
-> **NOTE:** The text-based condition type will be enabled only when the dimension configured in the series field is used as the based on field. 
+> **NOTE:**The text-based condition type will be enabled only when the dimension configured in the series field is used as the based on field. 
 
 #### Value
 
@@ -267,9 +277,9 @@ Allows you to choose the title font style. (Bold, Italic, Underline, and Supersc
 
 #### Case sensitivity
 
-For the dimensions, case sensitive option is provided to choose whether the entered value is `case sensitive` or not. 
+For the dimensions, case sensitive option is provided to choose whether the entered value is case sensitive or not. 
 
-Select the checkbox next to the options to customize the properties, and similarly click Font Style icons to apply them, as shown in the following screenshot. 
+Select the checkbox next to the options to customize the properties, and similarly click `Font Style` icons to apply them, as shown in the following screenshot.
 
 ![Select properties](/static/assets/cloud/visualizing-data/visualization-widgets/images/number-card/customize-properties.png)
 
@@ -279,13 +289,17 @@ Select the checkbox next to the options to customize the properties, and similar
 
 ![Appearance Settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/number-card/appearance-settings.png)
 
-### Horizontal alignment
+### Horizontal alignment 
 
 This option allows you to place the content of the widget at the position of **Left,Center and Right**.
 
+### Vertical alignment
+
+This option allows you to customize the alignment of the number card vertically. This dropdown option has Top, Center, and Bottom values. By default, the alignment value is set to ‘Center.’
+
 ### Auto font size
 
-By enabling `Auto Font Size` option, the font size will be adjusted automatically, if the resolution of the screen varies.
+By enabling Auto Font Size option, the font size will be adjusted automatically, if the resolution of the screen varies.
 
 ### Auto font size at 3840 x 2160
 
@@ -325,6 +339,32 @@ The following image shows the Number Card widget, after modifying the color and 
 
 ![Measure hidden](/static/assets/cloud/visualizing-data/visualization-widgets/images/number-card/hidden-measure.png)
 
+### Auto Font Size
+
+On enabling this property, the font size of the number card measure varies based on the screen resolution.
+
+Use Case: 
+
+If we have created a dashboard with a number card that can be viewed by different clients of different screen resolutions, and we want the measure to be adjusted with respect to their resolution, then we can use this option.
+
+### Auto font size at 3840 x 2160
+
+![Auto Font Size](/static/assets/cloud/visualizing-data/visualization-widgets/images/number-card/auto-fontsize-resolution.png)
+
+### Auto font size at 1366 x 768
+
+![Auto Font Size](/static/assets/cloud/visualizing-data/visualization-widgets/images/number-card/auto-fontsize.png)
+
+### Auto font size at 1920 x 1080
+
+![Auto Font Size](/static/assets/cloud/visualizing-data/visualization-widgets/images/number-card/autofontsizediff.png)
+
+#### Font size
+
+You can customize the font size of the number card title by unchecking `Auto Font Size`.
+
+![number Card font size](/static/assets/cloud/visualizing-data/visualization-widgets/images/number-card/single-card-measure-properties.png)
+
 ### Title properties
 
 You can customize the font color and size of the title. You can also enable or disable the title.
@@ -341,14 +381,53 @@ The following image shows the Number Card widget after unchecking the title valu
 
 ### Title for single card
 
-You can change the font color and size of the title. You can also enable or disable the title and edit it.
+You can customize the font color and size of the title. You can also enable or disable the title and you can edit the title.
 
 The following image shows the Number Card widget after modifying the color and font size of the title value.
 
 ![Show Single Card Title](/static/assets/cloud/visualizing-data/visualization-widgets/images/number-card/show-singlecard-titleproperties.png)
 
-
 ![Show Single title](/static/assets/cloud/visualizing-data/visualization-widgets/images/number-card/show-single-title.png)
+
+### Auto Font Size
+
+On enabling this property, the font size of the number card title varies based on the screen resolution.
+
+Use Case: 
+
+If we have created a dashboard with a number card that can be viewed by different clients of different screen resolutions, and we want the title to be adjusted with respect to their resolution, then we can use this option.
+
+### Auto font size at 3840 x 2160
+
+![Auto Font Size](/static/assets/cloud/visualizing-data/visualization-widgets/images/number-card/auto-fontsize-resolution.png)
+
+### Auto font size at 1366 x 768
+
+![Auto Font Size](/static/assets/cloud/visualizing-data/visualization-widgets/images/number-card/auto-fontsize.png)
+
+### Auto font size at 1920 x 1080
+
+![Auto Font Size](/static/assets/cloud/visualizing-data/visualization-widgets/images/number-card/autofontsizediff.png)
+
+#### Font size
+
+You can customize the font size of the number card title by unchecking `Auto Font Size`.
+
+![number Card font size](/static/assets/cloud/visualizing-data/visualization-widgets/images/number-card/single-card-title-fontsize.png)
+
+### Text Wrap
+
+This option allows you to wrap Card Title based on ‘Card size ’.This option will be enabled only for single card. It wraps title only, if the space is not enough to show title in single line. 
+
+![Show Text Wrap title](/static/assets/cloud/visualizing-data/visualization-widgets/images/number-card/show-singlecard-title-text-wrap.png)
+
+If card height is not enough to wrap title further it will trim the title.
+
+![Show Text trim title](/static/assets/cloud/visualizing-data/visualization-widgets/images/number-card/show-singlecard-title-text-trim.png)
+
+If the title doesn't contains space between words, it will not wrap. 
+
+![Title without space](/static/assets/cloud/visualizing-data/visualization-widgets/images/number-card/show-singlecard-title-text-without-space.png)
 
 ### Series settings 
 
@@ -362,11 +441,11 @@ If you enable the Fixed rows and columns, you can customize the rows and columns
 
 ### Row count
 
-By enabling row count, you can set the row count.
+By enabling `row count`, you can set the row count.
 
 ### Column count
 
-By enabling the `Column Count,` you can set the column count.
+By enabling the `Column Count`, you can set the column count.
 
 > **Note**: If the invalid columns and rows are given , the rows and columns reset to its default value. For example : If you given the number of rows as 6 and number of columns as 5 but your data count is only 20 . In this case the rows and columns will reset to its default value.
 
@@ -402,6 +481,8 @@ You can customize the image showcase style through the ode setting.
 
 *Uniform*: The image sizes proportionally (without clipping) to best fit to the widget area.
 
+### Different Modes of Image
+
 ![Image modes](/static/assets/cloud/visualizing-data/visualization-widgets/images/number-card/image-modes.png)
 
 #### Image
@@ -418,11 +499,11 @@ You can enter the direct URL of the image.
 
 ![URL text box](/static/assets/cloud/visualizing-data/visualization-widgets/images/number-card/url-text-box.png)
 
-![Entered URL](/static/assets/cloud/visualizing-data/visualization-widgets/images/number-card/enter-url.png)
-
 ### Pattern
 
 You can use the pattern as explained in the Image data section. 
+
+![Entered URL](/static/assets/cloud/visualizing-data/visualization-widgets/images/number-card/enter-url.png)
 
 ### Background properties
 
@@ -450,7 +531,7 @@ Sparkline in the Number Card widget can be turned off by unchecking the Show Spa
 
 ### Link
 
-You can enable linking and configure to navigate to a general URL with or without parameters. For more details, refer to [linking URLs](/cloud-bi/visualizing-data/working-with-widgets/linking-urls-and-dashboards/).
+You can enable linking and configure it  to navigate to a general URL with or without parameters. For more information, refer [Linking](/embedded-bi/visualizing-data/working-with-widgets/linking-urls-and-dashboards/).
 
 ![Link](/static/assets/cloud/visualizing-data/visualization-widgets/images/number-card/link.png)
 
@@ -466,9 +547,9 @@ The Number Card widget can be set to act as a master widget by selecting the `Ac
 
 You can create fixed measure value in Number Card using expressions.
 
-The following steps illustrates how to add the fixed value :
+The following steps illustrates how to add the fixed value:
 
-1. Click the `Expression` in the Data Source.
+1. Click the `fx expression` in the Data Source.
 
 ![Expression](/static/assets/cloud/visualizing-data/visualization-widgets/images/number-card/expression.png)
 
@@ -540,19 +621,19 @@ This allows you to enable or disable the CSV export option for the number card w
 
 #### Allow Excel export
 
-This allows you to enable or disable the Excel export option for the number card widget widget. Enabling this allows you to export the summarized data of the widget view to (.xlsx or .xls) format in the viewer.
+This allows you to enable or disable the Excel export option for the number card widget. Enabling this allows you to export the summarized data of the widget view to (.xlsx or .xls) format in the viewer.
 
 #### Allow image export
 
-This allows you to enable or disable the image export option for the number card widget widget. Enabling this allows you to export the view of the widget to image format (.jpg), (.png), or (.bmp) in the viewer.
+This allows you to enable or disable the image export option for the number card widget. Enabling this allows you to export the view of the widget to image format (.jpg), (.png), or (.bmp) in the viewer.
 
 #### Allow PDF export
 
-This allows you to enable or disable the PDF export option for the number card widget widget. Enabling this allows you to export the view of the widget to pdf format in the viewer.
+This allows you to enable or disable the PDF export option for the number card widget. Enabling this allows you to export the view of the widget to pdf format in the viewer.
 
 #### Enable comments
 
-This allows you to enable or disable comment for the dashboard widget. For more details, refer to this [link](/cloud-bi/visualizing-data/working-with-widgets/commenting-widget/).
+This allows you to enable or disable comment for the dashboard widget. For more details, refer to this [link](/embedded-bi/visualizing-data/working-with-widgets/commenting-widget/).
 
 #### Allow Viewing of underlying data
 

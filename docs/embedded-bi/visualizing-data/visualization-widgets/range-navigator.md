@@ -100,19 +100,25 @@ You can format the Range Navigator for better illustration of the view that you 
 
 ### General Settings
 
-![Range Navigator Name](/static/assets/embedded/visualizing-data/visualization-widgets/images/range-navigator/general-settings.png)
+![Range Navigator Name](/static/assets/embedded/visualizing-data/visualization-widgets/images/range-navigator/property.png)
 
 #### Name
 
 This allows you to set the `title` for this range navigator widget.
 
+![Range Navigator Name](/static/assets/embedded/visualizing-data/visualization-widgets/images/range-navigator/Name.png)
+
 #### Subtitle
 
 This allows you to set the `subtitle` for this range navigator widget.
 
+![Subtitle](/static/assets/embedded/visualizing-data/visualization-widgets/images/range-navigator/subtitle.png)
+
 #### Description
 
 This allows you to set the brief explanation about this range navigator widget.
+
+![description](/static/assets/embedded/visualizing-data/visualization-widgets/images/range-navigator/Description.png)
 
 ### Color Settings
 

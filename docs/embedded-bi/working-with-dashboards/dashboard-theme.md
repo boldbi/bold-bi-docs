@@ -10,6 +10,8 @@ documentation: ug
 
 The dashboard theme option is now available as a `preview feature` in the Bold BI Enterprise edition.  This feature allows you to apply different theme for the dashboard. Currently we have provided light and dark theme.
 
+**NOTE:** You can achieve customizing themes for the BoldBI application using CSS variables. Refer [this](/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/) section to know more about creating and uploading customized themes in the BoldBI application. In the future, the dashboard theme using JSON property will be deprecated. And instead of JSON property, you can use theme variables for customizing the BoldBI application. Refer to [this](/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/) section that you can find the equivalent theme variable for JSON property.
+
 ## How to switch dashboard themes
 
 By default, the dashboards are rendered in the `light mode` and the theme option is shown in the header panel of the published dashboards as shown in the following image. 

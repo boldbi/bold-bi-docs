@@ -35,11 +35,11 @@ To configure data in the Pie Chart, follow these steps:
 
 ![Data source list](/static/assets/cloud/visualizing-data/visualization-widgets/images/datasourcelist.png)
 
-5.  In the `NEW DATA SOURCE` configuration panel, choose the file path and click `Preview & Connect.`
+5.  In the `NEW DATA SOURCE` configuration panel, choose the file path and click `Preview & Connect`.
 
 ![Connect button](/static/assets/cloud/visualizing-data/visualization-widgets/images/connectbutton.png)
 
-6.  Drag your preferred table or view from the left pane from the data design view and click `Save.`
+6.  Drag your preferred table or view from the left pane from the data design view and click `Save`.
 
 ![Virtual table](/static/assets/cloud/visualizing-data/visualization-widgets/images/virtualtable.png)
 
@@ -71,11 +71,11 @@ Click the `Settings` option to change the required summary type from the availab
 
 ![Pie Chart settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/pie-chart/piechart-settings.png)
 
-You can filter the data displayed in the Pie chart by using the `Filter` option. For more details, refer to the [filter](/cloud-bi/visualizing-data/working-with-widgets/configuring-widget-filters/).
+You can filter the data displayed in the Pie Chart by using the `Filter` option. For more details, refer to the[filter](/embedded-bi/visualizing-data/working-with-widgets/configuring-widget-filters/).
 
 ![Widget filters](/static/assets/cloud/visualizing-data/visualization-widgets/images/pie-chart/widget-filters.png)
 
-You can format the data displayed in the Pie chart by using the `Format` option. For more details, refer to the [measure format](/cloud-bi/visualizing-data/working-with-widgets/formatting-measure-type-column/).
+You can format the data displayed in the Pie Chart by using the `Format` option. For more details, refer to the[measure format](/embedded-bi/visualizing-data/working-with-widgets/formatting-measure-type-column/).
 
 ![Measure format](/static/assets/cloud/visualizing-data/visualization-widgets/images/pie-chart/measure-format.png)
 
@@ -101,7 +101,7 @@ You can enable this option to get further details about the selected chart regio
 
 ![Enable drill](/static/assets/cloud/visualizing-data/visualization-widgets/images/pie-chart/enable-drill.png)
 
-> **NOTE:**  If you click `No,` a single value will be added to the Columns field.
+> **NOTE:**  If you click `No`, a single value will be added to the Columns field.
 
 The drilled view of the selected chart region will be as follows.
 
@@ -111,23 +111,29 @@ You can change the Settings.
 
 ![Pie Chart](/static/assets/cloud/visualizing-data/visualization-widgets/images/pie-chart/columnsettings.png)
 
-You can sort the dimension data using the `Sort` option under the Settings menu list. To apply sorting for data, refer to the [Sort] (/cloud-bi/visualizing-data/working-with-widgets/advanced-sorting/#dimension-column).
+You can sort the dimension data using the `Sort` option under the Settings menu list. To apply sorting for data, refer to the[Sort] (/embedded-bi/visualizing-data/working-with-widgets/advanced-sorting/#dimension-column).
 
 ![Pie Chart dimension](/static/assets/cloud/visualizing-data/visualization-widgets/images/pie-chart/sortoption.png)
 
-You can apply filters by selecting the `Filter(s)` option in settings. For more details, refer to the [filter](/cloud-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column).
+You can apply filters by selecting `Filter(s)` option in settings. For more details, refer to the[filter](/embedded-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column).
 
 > **NOTE:**  By default, the filter will be set for the top 5 records.
 
 Similarly, you can add the Measures and Expressions Columns to the Columns field.
 
+#### Renaming fields
+
+The configured field names can be edited by using the `Rename` option provided in the settings menu.
+
+![Rename](/static/assets/cloud/visualizing-data/visualization-widgets/images/pie-chart/rename.png)
+
 ### Adding rows
 
-You can drag the `Dimension` field into the `Rows field.`
+You can drag the `Dimension` field into the `Rows field`.
 
 ![Pie Chart](/static/assets/cloud/visualizing-data/visualization-widgets/images/pie-chart/chart-row.png)
 
-You can apply the [filter](/cloud-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column) and [sort](/cloud-bi/visualizing-data/working-with-widgets/advanced-sorting/#dimension-column) options for the rows field, if required.
+You can apply the [filter](/embedded-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column) and [sort](/embedded-bi/visualizing-data/working-with-widgets/advanced-sorting/#dimension-column) options for the rows field, if required.
 
 This will render a pie chart in a series.
 
@@ -157,23 +163,35 @@ You can see the list of properties available for the widget with default value.
 
 ### General Settings
 
-![General Settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/pie-chart/general-settings.png)
+![General Settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/pie-chart/property.png)
 
 ### Name
 
 Allows you to set the `title` for the Pie chart widget.
 
+![General Settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/pie-chart/Name.png)
+
 ### Subtitle
 
 Allows you to set the `subtitle` for the Pie chart widget.
+
+![General Settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/pie-chart/Subtitle.png)
 
 ### Description
 
 Set a description for the Pie chart, whose visibility will be denoted by **i** icon, and hovering over it will display the `description` in a tooltip.
 
+![General Settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/pie-chart/Description.png)
+
 ### Basic settings
 
 ![Basic Settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/pie-chart/basic-settings.png)
+
+#### Show Tooltip
+
+This option allows you to toggle the visibility of tooltip in the pie chart.
+
+![General Settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/pie-chart/tooltip.png)
 
 **Chart type**
 
@@ -183,55 +201,7 @@ Switch the widget view from the current chart type to another chart type.
 
 ### Enable animation
 
-It animates the measure values when you enable the `Enable Animation.`
-
-### Show legend
-
-A Legend is a text used to describe the plotted data. It allows you to toggle the visibility of the legend in the chart and change the legend text position (selecting through combo box). Enabling the Custom Legend Text option will allow you to define a custom text (through the text area) to display for each legend series (selecting through the combo box) in the chart.
-
-![Show Legend](/static/assets/cloud/visualizing-data/visualization-widgets/images/pie-chart/show-legend.png)
-
-### Legend Label Color
-
-This allows you to change the chart legend title and label colors.
-
-![Chart Legend Color Option](/static/assets/cloud/visualizing-data/visualization-widgets/images/pie-chart/legend-label-color-option.png)
-
-![Chart Legend Color](/static/assets/cloud/visualizing-data/visualization-widgets/images/pie-chart/legend-label-color.png)
-
-### Legend Customize 
-
-It allows you to customize the legends. When you click the `customize` button, the dialog box will be shown.
-
-![Chart Legend Customize](/static/assets/cloud/visualizing-data/visualization-widgets/images/pie-chart/legend-customize.png)
-
-![Chart Legend Customization](/static/assets/cloud/visualizing-data/visualization-widgets/images/pie-chart/legend-customization.png)
-
-### Legend Position
-
-A Legend is a text used to describe the data plotted. This option allows you to place the legend at the position of **Left, Right, Top, and Bottom**.
-
-#### Legend Shape
-
-This allows you change the **shape** of the legend.
-
-***Circle***
-
-This option allows you to change the shape of the legend in a `Circle.`
-
-![Show Legend shape](/static/assets/cloud/visualizing-data/visualization-widgets/images/pie-chart/pie-legend-shape.png)
-
-***Series Type***
-
-This option allows you to change the shape of the legend in `Series.`
-
-![Show Legend shape Series](/static/assets/cloud/visualizing-data/visualization-widgets/images/pie-chart/pie-legendshape-series.png)
-
-### Legend Title 
-
-This allows you to add the legend title for the chart. It will reflect with the `Show Legend.`
-
-![Show Legend Title](/static/assets/cloud/visualizing-data/visualization-widgets/images/pie-chart/pie-legendtitle.png)
+It animates the measure values when you enable the `Enable Animation`.
 
 ### Show value label
 
@@ -239,9 +209,13 @@ It allows you to toggle the visibility of value labels.
 
 ![Show Value Label](/static/assets/cloud/visualizing-data/visualization-widgets/images/pie-chart/show-value-label.png)
 
+If you Disable `Show Value Labels` properties, the dependent properties, which are **color**, **Value label position**, **Value label rotation** and **Value label suffix** will be hidden.
+
+![Show value label](/static/assets/cloud/visualizing-data/visualization-widgets/images/pie-chart/value-label.png)
+
 ### Value Label Color
 
-This allows you to customize value label's color.
+This allows you to customize the value label's color.
 
 ![Value label Color Option](/static/assets/cloud/visualizing-data/visualization-widgets/images/pie-chart/data-label-color-option.png)
 
@@ -249,7 +223,7 @@ This allows you to customize value label's color.
 
 ### Data label
 
-It defines the display format as a `category, value, percentage, category and value, category and percentage, value and percentage,` or `all details.`
+Defines the display format as a `category, value, percentage, category and value, category and percentage, value and percentage`, or `all details`.
 
 ### Category
 
@@ -281,19 +255,133 @@ It defines the display format as a `category, value, percentage, category and va
 
 ### Value labels suffix
 
-Set a `suffix` value for the value labels.
+This allows you to show or hide the suffix value of value labels.
+
+### Suffix Value
+
+This allows you to customize the suffix value of value labels.
 
 ![Value Labels Suffix](/static/assets/cloud/visualizing-data/visualization-widgets/images/pie-chart/labels-suffix.png)
 
+### Chart Size
+
+This allows you to customize the size of the pie chart. Values can be between 0.1 and 1.
+
+### Series Settings
+
+The `Series Settings` option is enabled only when you configure the **series** in the `Assigned Data` tab.
+
+![Series Settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/pie-chart/series-settings.png)
+
+### Fixed rows and columns 
+
+If you enable the Fixed rows and columns, you can customize the rows and columns. The rows and columns are fixed based on the container size and size of the pie chart.
+
+### Row count 
+
+By enabling the `Row Count`, you can set the count of the rows.
+
+### Column count 
+
+By enabling the `Column Count`, you can set the column count.
+
+![Pie Series Settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/pie-chart/series-settingsfixed.png)
+
+>**Note**: If the invalid columns and rows are given, the rows and columns reset to their default value. For example: If you are given the number of rows as 6 and the number of columns as 5 but your data count is only 20. In this case, the rows and columns will reset to their default value.
+
+### Legend Settings
+
+![Legend settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/pie-chart/legend-settings.png)
+
+### Show legend
+
+A Legend is a text used to describe the plotted data. It allows you to toggle the visibility of the legend in the chart and change the legend text position (selecting through combo box). Enabling the Custom Legend Text option will allow you to define a custom text (through the text area) to display for each legend series (selecting through the combo box) in the chart.
+
+![Show Legend](/static/assets/cloud/visualizing-data/visualization-widgets/images/pie-chart/show-legend.png)
+
+### Legend Label Color
+
+This allows you to change the chart legend title and label colors.
+
+![Chart Legend Color Option](/static/assets/cloud/visualizing-data/visualization-widgets/images/pie-chart/legend-label-color-option.png)
+
+![Chart Legend Color](/static/assets/cloud/visualizing-data/visualization-widgets/images/pie-chart/legend-label-color.png)
+
+### Legend Customize 
+
+It allows you to customize the legends. When you click the `customize` button, the dialog box will be shown.
+
+![Chart Legend Customize](/static/assets/cloud/visualizing-data/visualization-widgets/images/pie-chart/legend-customize.png)
+
+![Chart Legend Customization](/static/assets/cloud/visualizing-data/visualization-widgets/images/pie-chart/legend-customization.png)
+
+### Legend Position
+
+A Legend is a text used to describe the data plotted. This option allows you to place the legend at the position of **Left, Right, Top, and Bottom**.
+
+![Legend position](/static/assets/cloud/visualizing-data/visualization-widgets/images/pie-chart/legent-position.png)
+
+#### Legend Shape
+
+This allows you change the **shape** of the legend.
+
+***Circle***
+
+This option allows you to change the shape of the legend in a `Circle`.
+
+![Show Legend shape](/static/assets/cloud/visualizing-data/visualization-widgets/images/pie-chart/pie-legend-shape.png)
+
+***Series Type***
+
+This option allows you to change the shape of the legend in `Series`.
+
+![Show Legend shape Series](/static/assets/cloud/visualizing-data/visualization-widgets/images/pie-chart/pie-legendshape-series.png)
+
+### Legend Title 
+
+This allows you to add the legend title for the chart. It will reflect with the `Show Legend`.
+
+![Show Legend Title](/static/assets/cloud/visualizing-data/visualization-widgets/images/pie-chart/pie-legendtitle.png)
+
+#### Text Overflow
+
+This option allows you to customize legend text based on the 'Text Width' property value.
+
+**None**
+
+This option allows you to render legend items without any wrap and trim.
+
+![Legend Overflow None in chart](/static/assets/cloud/visualizing-data/visualization-widgets/images/pie-chart/chart_LegendNone.png)
+
+**Trim**
+
+This option allows you to trim the legend items if its legend exceeds the 'Text Width' value.
+
+![Legend Overflow Trim in chart](/static/assets/cloud/visualizing-data/visualization-widgets/images/pie-chart/chart_Legendtrim.png)
+
+**Wrap**
+
+This option allows you to wrap legend items based on the 'Text Width' value.
+
+![Legend Overflow Wrap in chart](/static/assets/cloud/visualizing-data/visualization-widgets/images/pie-chart/chart_Legendwrap.png)
+
+#### Text Width
+
+This option allows you to set a maximum width for the Legend Items and it is applicable only if the text-overflow is set to Trim or Wrap.
+
+![Legend Text Width in chart](/static/assets/cloud/visualizing-data/visualization-widgets/images/pie-chart/chart_Legendwidth.png)
+
+If you uncheck the `Show Legend` property in the property panel, the dependent properties, which are **Legend color**, **Legend position**, **customization button** and **Legend title** are also hidden.
+
 ### Link
 
-You can enable linking and configure navigating to a general URL with or without parameters. For more details, refer to the [Linking](/cloud-bi/visualizing-data/working-with-widgets/linking-urls-and-dashboards/).
+You can enable linking and configure navigating to a general URL with or without parameters. For more details, refer to the[Linking](/embedded-bi/visualizing-data/working-with-widgets/linking-urls-and-dashboards/).
 
 ![Link](/static/assets/cloud/visualizing-data/visualization-widgets/images/pie-chart/linking.png)
 
 ### Series palette
 
-By toggling the `series palette,` you can able to customize the proportion series segments’ colors.
+By toggling the `series palette`, you can able to customize the proportion series segments’ colors.
 
 ![Use Series Palette](/static/assets/cloud/visualizing-data/visualization-widgets/images/pie-chart/seriespallete.png)
 
@@ -303,7 +391,33 @@ You can choose the field from the Based On section to apply the conditions.
 
 This section shows a palette of colors. By clicking the colored square, the color picker will open. You can choose a color and change the color by changing the corresponding hexadecimal value at the right.
 
-![Use Basedon Palette](/static/assets/cloud/visualizing-data/visualization-widgets/images/pie-chart/basedon.png)
+![Individual mode](/static/assets/cloud/visualizing-data/visualization-widgets/images/pie-chart/column-chart-individual-mode.png)
+
+#### Color Mapping Type
+
+Using the Color Mapping type, you can apply the colors to the series either based on data or index.
+
+![Color Mapping Type option](/static/assets/cloud/visualizing-data/visualization-widgets/images/pie-chart/column-chart-formatting-color-mapping-type-options.png)
+
+***Data***
+
+It allows you to apply color for chart series based on data. If you want to apply a specific color to specific data, you can use Data based color mapping. By default, the Color Mapping Type will be `Data`.
+
+![Color Mapping Type Data](/static/assets/cloud/visualizing-data/visualization-widgets/images/pie-chart/column-chart-individual-mode.png)
+
+> **IMPORTANT:**  Only top 100 records will be listed in the 
+dialog. 
+***Index***
+
+It allows you to apply color for chart series based on `Index`. Such that the colors are maintained based on index even if data is changed. It shows only 15 different colors. After that, the color will be repeated from above colors.
+
+For example, If you are displaying the countries based on the increasing order of the case count, then the index-based color mapping will be useful to set the colors based on the rank. Say red color to the top, then the red color will be maintained for the country having the largest case count.
+
+![Color Mapping Type Index](/static/assets/cloud/visualizing-data/visualization-widgets/images/pie-chart/column-chart-formatting-index-based-color.png)
+
+**Note:** We prefer to use Index based color customization only for minimum data(upto 15 series).
+
+![Use Basedon Palette](/static/assets/cloud/visualizing-data/visualization-widgets/images/pie-chart/column-chart-individual-mode.png)
 
 ![Change Series color](/static/assets/cloud/visualizing-data/visualization-widgets/images/pie-chart/series-color-palette-window.png)
 
@@ -313,33 +427,15 @@ This section shows a palette of colors. By clicking the colored square, the colo
 
 This option shows when you add more than one measure field to the Value(s).
 
-By toggle off the `Use Default Palette,` you can customize the proportion series segments' colors by clicking the colored squares.
+By toggle off the `Use Default Palette`, you can customize the proportion series segments colors by clicking the colored squares.
 
 ![Series color palette window](/static/assets/cloud/visualizing-data/visualization-widgets/images/pie-chart/series-color-window.png)
 
-### Font Settings
+### Font settings
 
-Font Settings section allows you to enable auto font size property for value **label, legend,** and **legend title**. 
+This section allows you to customize the font size of the chart elements.
 
-![Font Settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/pie-chart/font-settings.png)
-
-### Value Label
-
-On enabling **Auto Font Size** option for `Value label`, the font size of the Value Label will be adjusted automatically if the resolution of the screen varies.
-
-### Legend 
-
-On enabling **Auto Font Size** option for `Legend,` the font size of the legend will be adjusted automatically if the resolution of the screen varies.
-
-### Legend Title
-
-On enabling **Auto Font Size** option for `Legend Title` , the font size of the legend title will be adjusted automatically if the resolution of the screen varies.
-
-> **NOTE:**  The **Legend Auto Font size**, **Legend Title Auto Font Size**, and **Value Label**  property only shows when the `Show Legend` and `Show Value Label` property is enabled in the basic settings.
-
-*After enabling the show legend and show value label in basic settings*
-
-![Font Settings Legend](/static/assets/cloud/visualizing-data/visualization-widgets/images/pie-chart/font-settings-all.png)
+![Font settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/pie-chart/font-settings.png)
 
 ### Filter
 
@@ -349,11 +445,11 @@ This section allows you to handle the `filter` actions for the pie chart widget.
 
 ### Act as master widget
 
-It defines the Pie chart widget as a `master widget` such that its filter action will be shown in other widgets of the dashboard.
+Define the Pie Chart widget as a `master widget` such that its filter action will be shown in other widgets of the dashboard.
 
 ### Ignore filter actions
 
-It defines the Pie chart widget to ignore the filter actions applied to other widgets in the dashboard.
+Define the Pie chart widget to ignore the filter actions applied to other widgets in the dashboard.
 
 ### Enable Hierarchical Filtering
 
@@ -383,15 +479,23 @@ This allows you to apply the specified size of the font to the widget title if t
 
 ### Subtitle Auto Font Size
 
-On enabling Auto Font Size, the font size of the subtitle will be adjusted automatically if the resolution of the screen varies.
+On enabling Auto Font Size , the font size of the subtitle will be adjusted automatically if the resolution of the screen varies.
 
 **Font Size**
 
 This allows you to apply the specified size of the font to the widget title if the **Subtitle Auto Font Size** is disabled. Value can be between 10 and 32.
 
+### Auto Padding
+
+On enabling Auto Padding, the padding of the widget container will be adjusted automatically if the size of the widget varies.
+
+**Padding**
+
+This allows you to customize the padding of the widget container if the **Auto Padding** is disabled. Value can be between 0 and 25.
+
 ### Show Border
 
-This allows you to toggle the visibility of `border` surrounding the widget.
+This allows you to toggle the visibility of the `border` surrounding the widget.
 
 ### Corner Radius
 
@@ -407,7 +511,11 @@ This allows you to set the **background color** to the pie chart widget.
 
 ### Transparency
 
-This property allows you to specify the **transparency** for the `background color.`
+This property allows you to specify the **transparency** for the `background color`.
+
+### Show Shadow
+
+This allows you to toggle the visibility of the `shadow` surrounding the widget.
 
 ### Container actions
 
@@ -439,13 +547,13 @@ This allows you to enable or disable the `PDF export` option for the pie chart w
 
 #### Enable Comments
 
-This allows you to enable or disable `comment` for the dashboard widget. For more details, refer to this [link](/cloud-bi/visualizing-data/working-with-widgets/commenting-widget/).
+This allows you to enable or disable `comment` for the dashboard widget. For more details, refer to the [link](/embedded-bi/visualizing-data/working-with-widgets/commenting-widget/).
 
 #### Allow View Underlying Data
 
 This allows you to visualize the raw data associated with a widget at runtime. 
 
-To learn more about viewing the underlying widget data, refer to the [view data documentation](/cloud-bi/visualizing-data/working-with-widgets/view-data/). 
+To learn more about viewing the underlying widget data, refer to the [view data documentation](/embedded-bi/visualizing-data/working-with-widgets/view-data/). 
 
 #### Pin Widget
 

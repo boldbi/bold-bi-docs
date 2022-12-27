@@ -70,6 +70,12 @@ You can use the `aggregate function` to change the actual values of the Radial G
 
 ![Settings menu](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/settings.png)
 
+#### Renaming fields
+
+The configured field names can be edited by using the `Rename` option provided in the settings menu.
+
+![Rename](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/rename.png)
+
 #### Filtering data
 
 You can use the `Filter` option to filter the data by specifying the filter condition. For more details, refer to the [filter](https://help.syncfusion.com/dashboard-embedded/visualize-data/configuring-widget-filters).
@@ -140,19 +146,25 @@ To format the Radial Gauge, follow the given steps:
 
 ### General Settings
 
-![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/property-window.png)
+![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/property.png)
 
 #### Name
 
 This option allows you change the `title` for the Radial Gauge.
 
+![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/Name.png)
+
 #### Subtitle
 
 Allows you provide `subtitle` for the Radial Gauge.
 
+![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/subtitle.png)
+
 #### Description
 
 Allows you provide `description` about the Radial Gauge.
+
+![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/Description.png)
 
 ### Basic Settings
  
@@ -162,9 +174,13 @@ Allows you provide `description` about the Radial Gauge.
 
 This option allows you to toggle the visibility of tooltip in the radial gauge.
 
+![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/tooltip.png)
+
 #### Gauge Type
 
 Allows you to switch the widget view from the Half Circle type to Horse Shoe type or Full circular gauge or vice versa. The default type is `Horse Shoe.`
+
+> **Note:** If you change gauge type to `Full circle`, **Color settings** or **Range settings** categories will be hidden. In the `Pointer settings` category, **Value Pointer**, **Target Pointer** and **Target Color** properties will be hidden, and in `Scale settings` category, **Show ticks**, **Show label** and their dependent properties will be hidden. The `Size` option will be shown, which is used to customize the font size of the difference value.
 
 #### Half Circular Gauge
 
@@ -216,6 +232,8 @@ You can apply color for the Actual value displayed in the Radial Gauge. The defa
 ![Actual Value color](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/actualvalue-set-color.png)
 
 ![Actual Value color](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/actualvalue-set-color-set.png)
+
+If you uncheck the `show actual value` property, its dependent property **Value color** will be hidden.
 
 #### Label Color 
 
@@ -291,6 +309,10 @@ Allows you displays the ticks for gauge scales. The default value is `false.` Th
 
 ![Scale Ticks](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/show-ticks.png)
 
+If you check the `Show Ticks` property, **Ticks Position**, **Ticks Height** and **Ticks Width** properties will be shown.
+
+![Scale Ticks](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/tick.png)
+
 #### Ticks Position
 
 You can change the tick’s position either at inside or `outside.` The default value is outside. This option is displayed only when the show ticks’ option is enabled.
@@ -310,6 +332,11 @@ Allows you change the scale width of the gauge. The minimum and maximum values o
 #### Show Scale Label
 
 Allows you display the scale label of the gauge. The default value is `true.`
+
+By enabling this property, the **Scale label position** property will be shown.
+
+![Scale Ticks](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/scale.png)
+
 
 #### Scale Label Position
 
@@ -354,6 +381,44 @@ You can customize color for the Radial Gauge labels with the range color or defa
 You can enable linking and configure to navigate to a general URL with or without parameters. For more details, refer to the [linking URLs](/embedded-bi/visualizing-data/working-with-widgets/linking-urls-and-dashboards/).
 
 ![Link](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/linking.png)
+
+### Font settings
+
+This section allows you to customize the font size of radial gauge elements.
+
+![Font settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/font-settings.png)
+
+#### Auto font Size and font size
+
+By default, the 'Auto Font Size' property is enabled. Auto font size property used to set font size based on dashboard viewing client machine resolution. If the user wants to customize or set the fixed font size, then the user needs to disable auto font size and set the required font size.
+
+### Widget with Auto Font Size
+
+![Auto Font Size](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/auto-font-settings.png)
+
+### Scale Label Font Size
+
+This option allows you to customize font size of scale labels. While `Auto Font Size` option is enabled, font size will be applied based on resolution.
+
+![Customized Scale Label Font Size](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/scale-fontsize.png)
+
+### Actual Value Font Size
+
+This option allows you to customize font size of Actual Value. While `Auto Font Size` option is enabled, font size will be applied based on gauge size.
+
+![Customized Actual Value Font Size](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/actualvaalue-fontsize.png)
+
+### Difference Value Font Size
+
+This option allows you to customize font size of Actual Value. While `Auto Font Size` option is enabled, font size will be applied based on gauge size.
+
+![Customized Difference Value Font Size](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/differencevalue-fontsize.png)
+
+### Series Title Font Size
+
+This option allows you to customize font size of Series Title. While `Auto Font Size` option is enabled, font size will be applied based on resolution.
+
+![Customized Series Title Font Size](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/seriestitle-fontsize.png)
 
 ### Filter
 
@@ -565,3 +630,11 @@ To learn more about viewing the underlying widget data, refer to the [view data 
 #### Pin Widget
 
 This allows you to pin the widget.
+
+#### Responsive Behavior
+
+We hide the widget elements based on the size of the widget for better readability.
+
+When the gauge is placed with below 150 pixels of height and width, labels and ticks will be hidden.
+
+![Widget Element](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/label.png)

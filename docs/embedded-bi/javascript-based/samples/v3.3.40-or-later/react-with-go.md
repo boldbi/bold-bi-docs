@@ -326,5 +326,4 @@ The link has been provided to [download](https://onpremise-demo.boldbi.com/getti
 
  12. This API uses the method `getSignatureUrl()` to generate the algorithm. In the `getEmbedDetails()` API, the `embedQuerString`,`userEmail` and value from the `GetSignatureUrl()` method is appended as query parameters in the URL to get details of particular dashboard.
 
- 13. Run the Go application and run the React application in the visual studio code by the command `npm start` to render the dashboard.
- 
+ 13. Run the `Go` and `React` applications in the visual studio code by the command `npm start` to render the dashboard.

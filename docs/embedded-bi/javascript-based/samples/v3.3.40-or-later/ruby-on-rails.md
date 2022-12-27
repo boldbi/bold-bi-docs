@@ -120,15 +120,12 @@ The link has been provided to [download](https://onpremise-demo.boldbi.com/getti
  4. To create a new application, run the command `rails new myApp --database-postgresql`. Here, `myApp` is the folder name, and `postgresql` is the data base used. Ruby on rails uses `SQLite` as a default database, other than this need to be specified in command.
  5. Change the file directory by the command `cd myApp` and run a command `rails s` to run the application. Open the browser and go to the `localhost://3000`, you are able to view the Ruby on Rails welcome page.
 
- 6. In the `index.html.erb` file, include the mandatory files in the `<head>` tag. In the `<body>` tag, invoke the method `embedSample()` and create a DOM element with id `dashboard` as follows.
+ 6. In the `index.html.erb` file, include the mandatory file in the `<head>` tag. In the `<body>` tag, invoke the method `embedSample()` and create a DOM element with id `dashboard` as follows.
 
      ```js
         <head>
             <title>Demo</title>
-            <%= javascript_include_tag "https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js", "data-turbolinks-track" => true  %>
-            <%= javascript_include_tag "https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js", "data-turbolinks-track" => true  %>
-            <%= javascript_include_tag "https://cdnjs.cloudflare.com/ajax/libs/jsrender/1.0.0-beta/jsrender.min.js", "data-turbolinks-track" => true  %>
-            <%= javascript_include_tag "https://cdn.boldbi.com/embedded-sdk/v5.2.48/embed-js.js", "data-turbolinks-track" => true  %>
+            <%= javascript_include_tag "https://cdn.boldbi.com/embedded-sdk/v5.3.53/boldbi-embed.js", "data-turbolinks-track" => true  %>
         </head>
 
         <body onload="embedSample();">

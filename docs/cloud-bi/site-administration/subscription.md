@@ -10,10 +10,10 @@ documentation: ug
 
 This section explains how to cancel and how to re-activate the subscription for the Bold BI Cloud.
 
-![subscription Page](/static/assets/cloud/site-administration/images/subscription-page.png)
+The plan details of Bold BI Cloud and the subscription information can be viewed through `Subscription and Billing` option in the Profile icon as follows.
 
-The plan details of Bold BI Cloud and the subscription information can be viewed through `Subscription` tab in the settings page.
-
+![Subscription and Billing](/static/assets/cloud/site-administration/images/subscription-and-billing.png)
+![Subscription Page](/static/assets/cloud/site-administration/images/subscription-page.png)
 
 ## Cancel the subscription
 

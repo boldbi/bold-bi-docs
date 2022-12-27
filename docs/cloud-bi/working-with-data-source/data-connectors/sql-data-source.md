@@ -86,8 +86,12 @@ Under Table option, this dialog displays list of tables and views in treeview. S
 
 7. The incremental refresh settings configuration pane is used to configure the selected table to perform [Full Load](/cloud-bi/working-with-data-source/data-connectors/sql-data-source/#full-load) or [Incremental Update](/cloud-bi/working-with-data-source/data-connectors/sql-data-source/#incremental-update) based on refresh time interval configured in Step 5.  
 
-	* To perform [Full Load](/cloud-bi/working-with-data-source/data-connectors/sql-data-source/#full-load) refresh, off the **Incremental Refresh** toggle button for selected table.  
-	* To perform [Incremental Update](/cloud-bi/working-with-data-source/data-connectors/sql-data-source/#incremental-update) refresh, on the**Incremental Refresh** toggle button and select the last modified time column (represent the last modified time of the record, which is used to fetch the record modified recently) from the list of time stamp column loaded in dropdown box for selected table.  
+	* To perform [Full Load](/cloud-bi/working-with-data-source/data-connectors/sql-data-source/#full-load) refresh, off the **Incremental Refresh** toggle button for selected table/view.
+
+	* [Incremental Update](/cloud-bi/working-with-data-source/data-connectors/sql-data-source/#incremental-update) can be performed in both tables and views.  
+	* To perform [Incremental Update](/cloud-bi/working-with-data-source/data-connectors/sql-data-source/#incremental-update) refresh, on the **Incremental Refresh** toggle button and select the last modified time column (represent the last modified time of the record, which is used to fetch the record modified recently) from the list of time stamp column loaded in dropdown box for selected table.   
+      * The table must have a primary key column and date column to configure the incremental refresh option.
+      * The Views must have a date column to configure the incremental refresh option and unique column(s) is optional which is used to update the modified records.
 
 	> **NOTE:**  The **Incremental Refresh** toggle button is enabled only when the selected table contains time stamp column. If it is not enabled, the Bold BI designer will do [Full Load](/cloud-bi/working-with-data-source/data-connectors/sql-data-source/#full-load) refresh by default.  
 	![Incremental Refresh](/static/assets/cloud/working-with-datasource/data-connectors/images/SQLDataSource/Incremental-Refresh.png)
@@ -301,9 +305,333 @@ The refresh settings for SQL data source is available only in extract mode. Ther
 For full load refresh, the Bold BI designer will truncate all records from extracted table present in intermediate database and extract the entire table from original database to intermediate database.
 
 ### Incremental update
-For incremental update, users should specify the last modified timestamp column for tables while creating data source in extract mode. Using that last modified column, the Bold BI designer will extract and load the newly updated data from actual database to intermediate database table.
+**Tables :** For incremental update, users should specify the last modified timestamp column for tables while creating data source in extract mode. Using that last modified column, the Bold BI designer will extract and load the newly updated data from actual database to intermediate database table.
 
 > **NOTE:**  Incremental update process depends on tables primary key and last modified date time column. If any one of the columns is not available on the table, the extracted table will get full load refresh by truncating the existing data and reload all data from the actual database.
+
+**Views :** To perform incremental refresh for views, specify the last modified timestamp column while creating the data source in extract mode. Using that last modified column, the Bold BI designer will extract and load the newly updated data from the actual database to the intermediate database table. 
+ * Include Unique column(s) represents the unique /constraint column(s), which is used to update the modified records already exists in the intermediate database. Enable and select the unique column(s) to update the modified records.
+
+![views](/static/assets/cloud/working-with-datasource/data-connectors/images/SQLDataSource/Incremental-Refresh_views.png)
+
+ > **NOTE:** The Include Unique column(s) toggle button is enabled only when the Incremental Refresh toggle button is in the enabled state. If the Unique column(s) toggle button is not enabled, only the newly added records are fetched rather than the recently modified existing records. 
+
+## Connecting Bold BI to Microsoft SQL Server Data Source via REST API
+
+### Prerequisites 
+
+**Supported Server Versions:** Microsoft SQL Server (2012, 2014, 2016, 2017, and 2019)
+
+Type while creating the data source needs to be sqlserver.
+
+[Rest API - v4.0](https://help.boldbi.com/embedded-bi/rest-api-reference/v4.0/api-reference/)
+
+### Modes
+
+Through the REST API, only the **live mode** data source can be created and edited.
+
+### Parameters for creating Data Source
+
+   <table>
+   <tr>
+   <th>Parameters</th>
+   <th>Details</th>
+   </tr>
+   <tr>
+   <td>Servername</br></br>
+   <b>required</b> </td>
+   <td>`string`</br></br>
+   Server name or Host name of the connection</td>
+   </tr>
+   <tr>
+   <td>IntegratedSecurity</br></br>
+   <b>optional</b> </td>
+   <td>`string`</br></br>
+   This is used to specify Authentication mechanism. Needed to provide true for Windows Authentication, false for Basic Authentication.</br></br>
+   default value is false</td>
+   </tr>
+   <tr>
+   <td>Username</br></br>
+   <b>optional</b>  </td>
+   <td>`string`</br></br>
+   A valid user name. Required if Integrated Security is not provided or is provided as false.</td>
+   </tr>
+   <tr>
+   <td>Password</br></br>
+   <b>optional</b>  </td>
+   <td>`string`</br></br>
+   A valid Password. Required if Integrated Security is not provided or is provided as false.</td>
+   </tr>
+   <tr>
+   <td>Database</br></br>
+   <b>required</b> </td>
+   <td>`string`</br></br>
+   database which needs to be connected</td>
+   </tr>
+   <tr>
+   <td>Schemaname</br></br>
+   <b>required for table mode</b> </td>
+   <td>`string`</br></br>
+   Enter a valid Schemaname</td>
+   </tr>
+   <tr>
+   <td>Tablename</br></br>
+   <b>required for table mode</b> </td>
+   <td>`string`</br></br>
+   Enter a valid Tablename</td>
+   </tr>
+   <tr>
+   <td>Query</br></br>
+   <b>required for code view mode</b> </td>
+   <td>`string`</br></br>
+   Enter a valid Query</td>
+   </tr>
+   <tr>
+   <td>Impersonate</br></br>
+   <b>optional</b> </td>
+   <td>`boolean`</br></br>
+   Enable or disable user impersonation. By default, it is false.</td>
+   </tr>
+   <tr>
+   <td>AdvancedSettings</br></br>
+   <b>optional</b> </td>
+   <td>`string`</br></br>
+   Additional optional connection parameters can be provided. By default, it is empty.</td>
+   </tr>
+   <tr>
+   <td>IsEnableSSL</br></br>
+   <b>optional</b> </td>
+   <td>`boolean`</br></br>
+   Enable or disable SSL. By default, it is false.</td>
+   </tr>
+   <tr>
+   <td>CommandTimeout</br></br>
+   <b>optional</b> </td>
+   <td>`string`</br></br>
+   Enter a valid Timeout for connection. By default, it is 300</td>
+   </tr>
+   <tr>
+   <td>IsSshConnection</br></br>
+   <b>optional</b> </td>
+   <td>`boolean`</br></br>
+   Enable or disable SSH. By default, it is false.</td>
+   </tr>
+   <tr>
+   <td>SshServerName</br></br>
+   <b>optional</b> </td>
+   <td>`string`</br></br>
+   Enter a valid Ssh Server name. By default, it is empty.</td>
+   </tr>
+   <tr>
+   <td>SshPort</br></br>
+   <b>optional</b> </td>
+   <td>`integer`</br></br>
+   Enter a valid Ssh Port number.</td>
+   </tr>
+   <tr>
+   <td>SshUserName</br></br>
+   <b>optional</b> </td>
+   <td>`string`</br></br>
+   Enter a valid Ssh Username. By default, it is empty.</td>
+   </tr>
+   <tr>
+   <td>SshPassword</br></br>
+   <b>optional</b> </td>
+   <td>`string`</br></br>
+   Enter a valid Ssh Password. By default, it is empty.</td>
+   </tr>
+   <tr>
+   <td>Expressions</br></br>
+   <b>optional</b> </br></br>
+   </td>
+   <td>`Array of Objects`</br></br></br></br>
+   </td>
+   </tr>
+   </table>
+
+#### Parameters for adding expressions when creating Data Source
+   
+   <table>
+   <tr>
+   <th>Parameters</th>
+   <th>Details</th>
+   </tr>
+   <tr>
+   <td>Name</br></br>
+   <b>required</b> </br></br>
+   </td>
+   <td>`string`</br></br>
+   Name of the Expression</br></br>
+   </td>
+   </tr>
+   <tr>
+   <td>Expression</br></br></br></br>
+   <b>required</b> </br></br>
+   </td>
+   <td>`string`</br></br>
+   <a href="https://help.boldbi.com/embedded-bi/working-with-data-source/transforming-data/configuring-expression-columns/">
+    <div style="height:100%;width:100%">
+      Expression
+    </div>
+   </a> </br></br>
+   </td>
+   </tr>
+   </table>
+
+### Parameters for editing Data Source
+
+> **NOTE:**  For editing Data Source via API. All the parameters are optional. The parameter which needs to be changed can be provided.
+
+#### Parameters for modifying expressions when editing Data Source
+   
+   <table>
+   <tr>
+   <th>Parameters</th>
+   <th>Details</th>
+   </tr>
+   <tr>
+   <td>Name</br></br>
+   <b>required</b> </br></br>
+   </td>
+   <td>`string`</br></br>
+   Name of the Expression</br></br>
+   </td>
+   </tr>
+   <tr>
+   <td>Expression</br></br></br></br>
+   <b>required</b> </br></br>
+   </td>
+   <td>`string`</br></br>
+   <a href="https://help.boldbi.com/embedded-bi/working-with-data-source/transforming-data/configuring-expression-columns/">
+    <div style="height:100%;width:100%">
+      Expression
+    </div>
+   </a> </br></br>
+   </td>
+   </tr>
+   <tr>
+   <td>Action</br></br></br></br>
+   <b>optional</b> </br></br>
+   </td>
+   <td>`string`</br></br>
+   add/delete/edit</br></br>
+   By default, it is add. </br></br>
+   </td>
+   </tr>
+   <tr>
+   <td>NewName</br></br>
+   <b>optional</b> </br></br>
+   </td>
+   <td>`string`</br></br>
+   For renaming the expression. This is applicable only if the Action is <b>edit</b> </br></br>
+   </td>
+   </tr>
+   </table>
+
+### Connection Sample for Table Mode
+
+#### For creating connection:
+
+``` json
+"Connection": [
+{
+"Servername": "string",
+"IntegratedSecurity": "false",
+"Username": "string",
+"Password": "string",
+"Database": "string",
+"Schemaname": "string",
+"Tablename": "string",
+"Impersonate": "false",
+"AdvancedSettings": "string",
+"IsEnableSSL": false,
+"CommandTimeout": "300",
+"IsSshConnection": "false",
+"SshServerName": "string",
+"SshPort": 0,
+"SshUsername": "string",
+"SshPassword": "string",
+"Expressions" : [{
+"Name": "Expression1",
+"Expression" : "SUM(numeric expression)"
+    },
+    {
+"Name": "Expression2",
+"Expression" :  "UPPER(string expression)"
+}]
+}
+]
+```
+
+#### For editing connection:
+
+``` json
+"Connection": [
+{
+"Servername": "string",
+"IntegratedSecurity": "false",
+"Username": "string",
+"Password": "string",
+"Database": "string",
+"Schemaname": "string",
+"Tablename": "string",
+"Impersonate": "false",
+"AdvancedSettings": "string",
+"IsEnableSSL": false,
+"CommandTimeout": "300",
+"IsSshConnection": "false",
+"SshServerName": "string",
+"SshPort": 0,
+"SshUsername": "string",
+"SshPassword": "string",
+"Expressions" : [{
+"Name": "Expression1",
+"Expression" : "SUM(numeric expression)",
+"NewName" : "Sum",
+"Action": "edit"
+    },
+    {
+"Name": "Expression2",
+"Expression" :  "UPPER(string expression)"
+"Action": "delete"
+}]
+}
+]
+```
+
+> **NOTE:**  Through Rest API, the data source can be created or edited with only one table. If different table is provided in edit data source, the table will be replaced. The widgets will be retained only if the schema is same as the previous table.
+
+### Connection Sample for Code View Mode
+
+``` json
+"Connection": [
+{
+"Servername": "string",
+"IntegratedSecurity": "false",
+"Username": "string",
+"Password": "string",
+"Database": "string",
+"Query": "string",
+"Impersonate": "false",
+"AdvancedSettings": "string",
+"IsEnableSSL": "string",
+"CommandTimeout": "300",
+"IsSshConnection": "false",
+"SshServerName": "string",
+"SshPort": 0,
+"SshUsername": "string",
+"SshPassword": "string",
+"Expressions" : [{
+"Name": "Expression1",
+"Expression" : "SUM(numeric expression)"
+    },
+    {
+"Name": "Expression2",
+"Expression" :  "UPPER(string expression)"
+}]
+}
+]
+```
 
 ## Related Links
 [Data Transformation](/cloud-bi/working-with-data-source/transforming-data/joining-table/)

@@ -33,7 +33,7 @@ If the API is not reachable or if the API returned any errors then the dashboard
 
     ![Dynamic Connection String Configuration](/static/assets/embedded/iFrame-based/images/dynamicconnectionstringconfiguration.png)
 
-4. In the Dynamic Connection Configuration dialog, fill the form for the Web API and click  **Save**. The API will be validated by triggering the API with a Head request. Make sure that the provided API has HTTP HEAD method support. 
+4. In the Dynamic Connection Configuration dialog, by default, **External API** will be selected. Fill the form for the Web API and click **Save**. The API will be validated by triggering the API with a Head request. Make sure that the provided API has HTTP HEAD method support. 
 
 5. At the bottom of the dialog, there is an option pinned to choose the **Configuration Mode** and **User Identity** for the Dynamic Connection Configuration.
 
@@ -62,6 +62,22 @@ If the API is not reachable or if the API returned any errors then the dashboard
     The Identity that should be passed to the Custom Web API, in order to enhance the usage of modified connection string at run time. This can holds the logged in user information as `Email` and `Full Name` 
 
 6. After saving the configuration, complete the data source creation.
+
+## How to use Custom Attribute in Dynamic Connection String
+
+1. At the top of the dialog, there is a radio button to choose the **External API** or **Custom Attribute** for the Dynamic Connection Configuration.
+
+   ![Dynamic Connection String](/static/assets/embedded/iFrame-based/images/customattribute.png)
+
+2. Choose the **Custom Attribute** option for the  Custom Attribute in Dynamic Connection Configuration.
+
+   ![Dynamic Connection String](/static/assets/embedded/iFrame-based/images/customattributeconfiguration.png)
+
+3. Enter the attribute name in the **Custom Attribute** section, which was created on site. Make sure that the [custom attribute](https://help.boldbi.com/cloud-bi/working-with-data-source/configuring-custom-attribute/) was created in **Site Level**.
+
+4. At the bottom of the dialog, there is an option pinned to choose the Configuration Mode. In that, select the **Both** option in Configuration Mode and click **Save**.
+
+5. After saving the configuration, follow the **Uses of custom attribute** in [configuring custom attribute](https://help.boldbi.com/cloud-bi/working-with-data-source/configuring-custom-attribute/#uses-of-custom-attribute) to complete the configuration.
 
 > **NOTE:** The configuration can be modified or removed any time by navigating to Edit Connection dialog for the data source.
 
@@ -101,6 +117,111 @@ The following arguments will be passed by the Dashboard Service when triggering 
    </table>
 
    > **NOTE:** During the validation of head request the above arguments will not be passed to the API.
+
+   **Parameters for the connection string**
+   
+<table>
+   <tr>
+   <td>Data Source</td>
+   <td>Parameters</td>
+   </tr>
+   <tr>
+   <td>Amazon Athena</td>
+   <td>Database,RegionEndpoint,OutputLocation,AwsAccessKeyId,AwsSecretAccessKey</td>
+   </tr>
+   <tr>
+   <td>Amazon Aurora MySQL</td>
+   <td>ServerName,Database,UserName,Password,Port,AdvancedSettings,CommandTimeout</td>
+   </tr>
+   <tr>
+   <td>Amazon Aurora PostgreSQL</td>
+   <td>ServerName,Database,UserName,Password,Port,SslMode,TrustServerCertificate,AdvancedSettings,CommandTimeout</td>
+   </tr>
+   <tr>
+   <td>Amazon RDS MariaDB</td>
+   <td>ServerName,Database,UserName,Password,Port,AdvancedSettings,CommandTimeout</td>
+   </tr>
+   <tr>
+   <td>Amazon RDS MySQL</td>
+   <td>ServerName,Database,UserName,Password,Port,AdvancedSettings,CommandTimeout</td>
+   </tr>
+   <tr>
+   <td>Amazon RDS PostgreSQL</td>
+   <td>ServerName,Database,UserName,Password,Port,SslMode,TrustServerCertificate,AdvancedSettings,CommandTimeout</td>
+   </tr>
+   <tr>
+   <td>Amazon RDS SQL</td>
+   <td>DataSource,InitialCatalog,UserName,Password,IntegratedSecurity,AdvancedSettings,CommandTimeout</td>
+   </tr>
+   <tr>
+   <td>Amazon Redshift</td>
+   <td>ServerName,Database,UserName,Password,Port,SslMode,TrustServerCertificate,AdvancedSettings,CommandTimeout</td>
+   </tr>
+   <tr>
+   <td>Azure Synapse Analytics</td>
+   <td>DataSource,InitialCatalog,UserName,Password,IntegratedSecurity,AdvancedSettings,CommandTimeout</td>
+   </tr>
+   <tr>
+   <td>CDATA with MySQL endpoints</td>
+   <td>ServerName,Database,UserName,Password,Port,AdvancedSettings,CommandTimeout</td>
+   </tr>
+   <tr>
+   <td>ClickHouse</td>
+   <td>ServerName,Database,Port,UserName,Password,AdvancedSettings,CommandTimeout</td>
+   </tr>
+   <tr>
+   <td>Elasticsearch</td>
+   <td>ServerName,Database,Port,UserName,Password,AuthenticationType,AdvancedSettings,ConnectionType</td>
+   </tr>
+   <tr>
+   <td>Google Cloud MySQL</td>
+   <td>ServerName,Database,UserName,Password,Port,AdvancedSettings,CommandTimeout</td>
+   </tr>
+   <tr>
+   <td>Google Cloud PostgreSQL</td>
+   <td>ServerName,Database,UserName,Password,Port,SslMode,TrustServerCertificate,AdvancedSettings,CommandTimeout</td>
+   </tr>
+   <tr>
+   <td>InfluxDB</td>
+   <td>ServerName,Database,UserName,Password,Port,AuthenticationType,AdvancedSettings,CommandTimeout</td>
+   </tr>
+   <tr>
+   <td>MariaDB</td>
+   <td>ServerName,Database,UserName,Password,Port,AdvancedSettings,CommandTimeout</td>
+   </tr>
+   <tr>
+   <td>ODBC</td>
+   <td>ServerName,Port,UserName,PassWord,Database,DsnName,odbctype,Driver,AdvancedSettings,CommandTimeout</td>
+   </tr>
+   <tr>
+   <td>Oracle</td>
+   <td>ServerName,Port,InstanceName,Database,UserName,Password,AdvancedSettings,CommandTimeout</td>
+   </tr>
+   <tr>
+   <td>PostgreSQL</td>
+   <td>ServerName,Database,UserName,Password,Port,SslMode,TrustServerCertificate,AdvancedSettings,CommandTimeout</td>
+   </tr>
+   <tr>
+   <td>Presto</td>
+   <td>ServerName,Port,UserName,Password,Database,CatalogName,AuthenticationType,AdvancedSettings</td>
+   </tr>
+   <tr>
+   <td>SingleStore</td>
+   <td>ServerName,Database,UserName,Password,Port,AdvancedSettings,CommandTimeout</td>
+   </tr>
+   <tr>
+   <td>SnowFlake</td>
+   <td>ServerName,Database,UserName,Password,AdvancedSettings,CommandTimeout</td>
+   </tr>   
+   <tr>
+   <td>SparkSQL</td>
+   <td>ServerName,Port,Database,UserName,Password,AuthenticationType,AdvancedSettings</td>
+   </tr> 
+   <tr>
+   <td>SQL server</td>
+   <td>DataSource,InitialCatalog,UserName,Password,IntegratedSecurity,AdvancedSettings,CommandTimeout</td>
+   </tr>  
+   </table>
 
    **Return Type**
 
@@ -208,3 +329,232 @@ The following arguments will be passed by the Dashboard Service when triggering 
       }
   ```
 
+## Custom Attribute support for Dynamic Connection string
+
+Dynamic Connection String support provides another way to connect the data source using Custom Attributes.
+
+You can edit a data source using the following steps:
+
+1.	Add the custom attribute in the User level or Group level or Site level.
+
+![Custom Attribute Configuration](/static/assets/embedded/iFrame-based/images/custom-attribute-configuration.png)
+
+Enter the data source connection string as JSON format in the Custom Attribute window.
+
+**Dynamic connection string supported Datasources**
+
+<table>
+   <tr>
+   <td>Data Source</td>
+   <td>Connection String</td>
+   </tr>
+   <tr>
+   <td>
+       <li> SQL server
+       <li> Amazon RDS SQL
+       <li> Azure Synapse Analytics       
+   </td>
+            
+   <td>
+     
+      {
+       
+          "DataSource": "",
+          "InitialCatalog": "",
+          "UserName": "",
+          "Password": "",
+          "IntegratedSecurity": "",
+          "AdvancedSettings": "",
+          "CommandTimeout": ""
+      }
+   </td></tr>
+   <tr>
+   <td><li>PostgreSQL
+      <li>Amazon Redshift
+      <li>Amazon RDS PostgreSQL
+      <li>Google Cloud PostgreSQL
+      <li>Amazon Aurora PostgreSQL
+      </td>
+   <td>
+      
+      {
+       
+          "ServerName": "", 
+          "Database": "",
+          "UserName": "",
+          "Password": "",
+          "Port": "",
+          "SslMode": "",
+          "TrustServerCertificate": "",
+          "AdvancedSettings": "",
+          "CommandTimeout": ""     
+      } 
+   </td>
+   </tr>
+   <tr>
+   <td><li>MySQL
+       <li>MariaDB     
+       <li>SingleStore      
+       <li>Amazon RDS MySQL       
+       <li>Amazon RDS MariaDB
+       <li>Google Cloud MySQL
+       <li>Amazon Aurora MySQL
+       <li>CDATA with MySQL endpoints
+	   <li>ClickHouse
+       </td>
+   <td>
+      
+      {
+       
+           "ServerName": "",
+           "Database": "",
+           "UserName": "",
+           "Password": "",
+           "Port": "",
+           "AdvancedSettings": "",
+           "CommandTimeout": ""
+      }
+   </td>
+   </tr>
+   <tr>
+   <td>Oracle</td>
+   <td>
+      
+      {
+       
+           "ServerName": "",
+           "Port": "",
+           "InstanceName": "",
+           "Database": "",
+           "UserName": "",
+           "Password": "",
+           "AdvancedSettings": "",
+           "CommandTimeout": ""
+      }
+   </td>
+   </tr>
+   <tr>
+   <td>InfluxDB</td>
+   <td>
+      
+      {
+       
+           "ServerName": "",
+           "Database": "",
+           "UserName": "",
+           "Password": "",
+           "Port": "",
+           "AuthenticationType": "",
+           "AdvancedSettings": "",
+           "CommandTimeout": ""
+      }
+   </td>
+   </tr>
+   <tr>
+   <td>Amazon Athena</td>
+   <td>
+      
+      {
+       
+           "Database": "",
+           "RegionEndpoint": "",
+           "OutputLocation": "",
+           "AwsAccessKeyId": "",
+           "AwsSecretAccessKey": ""
+      }
+   </td>
+   </tr>
+   <tr>
+   <td>Elasticsearch</td>
+   <td>
+      
+      {
+       
+           "ServerName": "",
+           "Database": "",
+		   "Port": "",
+           "UserName": "",
+           "Password": "",
+		   "AuthenticationType": "",
+           "AdvancedSettings": "",
+           "ConnectionType": ""
+      }
+   </td>
+   </tr>
+   <tr>
+   <td>ODBC</td>
+   <td>
+      
+      {
+       
+           "ServerName": "",
+           "Database": "",
+		   "Port": "",
+           "UserName": "",
+           "PassWord": "",
+		   "DsnName": "",
+		   "odbctype": "",
+		   "Driver": "",
+           "AdvancedSettings": "",
+           "CommandTimeout": ""
+      }
+   </td>
+   </tr>
+   <tr>
+   <td>Presto</td>
+   <td>
+      
+      {
+       
+           "ServerName": "",
+           "Database": "",
+		   "Port": "",
+           "UserName": "",
+           "Password": "",
+		   "AuthenticationType": "",
+           "AdvancedSettings": "",
+           "CatalogName": ""
+      }
+   </td>
+   </tr>
+   <tr>
+   <td>SparkSQL</td>
+   <td>
+      
+      {
+       
+           "ServerName": "",
+           "Database": "",
+		   "Port": "",
+           "UserName": "",
+           "Password": "",
+		   "AuthenticationType": "",
+           "AdvancedSettings": ""
+      }
+   </td>
+   </tr>
+   <tr>
+   <td>SnowFlake</td>
+   <td>
+      
+      {
+       
+           "ServerName": "",
+           "Database": "",
+           "UserName": "",
+           "Password": "",
+           "AdvancedSettings": "",
+           "CommandTimeout": ""
+      }
+   </td>
+   </tr>
+   </table>
+
+2. Open the Dynamic connection string configuration window and then navigate to Custom Attribute option.
+
+3. Enter the valid custom attribute in that window and click Save. 
+
+![Custom Attribute Configuration with Dynamic Connection String](/static/assets/embedded/iFrame-based/images/custom-attribute-configuration-with-dynamic-connection-string.png)
+
+Please refer the below help document for configuration of Custom Attribute click <a href="embedded-bi/working-with-data-source/configuring-custom-attribute/">here.</a> 
+ 

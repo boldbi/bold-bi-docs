@@ -283,6 +283,16 @@ documentation: ug
    </tr>
    <tr>
    <td>Aggregation</td>
+   <td>AVGD</td>
+   <td><ul style="list-style-type:none">
+   <b>Syntax:</b></br> AVGD(numeric_expression)</br></br>
+   <b>Description:</b></br> Returns the average of the Distinct values in the given expression.</br></br>
+   <b>Example:</b></br>
+   AVGD([UnitPrice])</ul>
+   </td>
+   </tr>
+   <tr>
+   <td>Aggregation</td>
    <td>COUNT</td>
    <td><ul style="list-style-type:none">
    <b>Syntax:</b></br> COUNT(numeric_expression)</br></br>
@@ -340,6 +350,16 @@ documentation: ug
    <b>Description:</b></br> Returns the sum of values in the given expression.</br></br>
    <b>Example:</b></br>
    SUM([UnitPrice])</ul>
+   </td>
+   </tr>
+   <tr>
+   <td>Aggregation</td>
+   <td>SUMD</td>
+   <td><ul style="list-style-type:none">
+   <b>Syntax:</b></br> SUMD(numeric_expression)</br></br>
+   <b>Description:</b></br> Returns the sum of the Distinct values in the given expression.</br></br>
+   <b>Example:</b></br>
+   SUMD([UnitPrice])</ul>
    </td>
    </tr>
    <tr>

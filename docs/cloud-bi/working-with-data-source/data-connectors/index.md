@@ -28,7 +28,8 @@ The Bold BI supports the following data connection types such that the structure
     <tr>
         <td align="center">SQL
 		    <br> <a href="/cloud-bi/working-with-data-source/data-connectors/amazon-athena/"> Amazon Athena</a>
-            <br> <a href="/cloud-bi/working-with-data-source/data-connectors/amazon-aurora/"> Amazon Aurora</a>  
+            <br> <a href="/cloud-bi/working-with-data-source/data-connectors/amazon-aurora/"> Amazon Aurora</a>
+            <br> <a href="/cloud-bi/working-with-data-source/data-connectors/aws-opensearch/"> AWS OpenSearch</a>  
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/amazon-rds/"> Amazon RDS</a>
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/amazon-redshift/"> Amazon Redshift</a>
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/azure-synapse-analytics/"> Azure Synapse Analytics</a>
@@ -39,6 +40,7 @@ The Bold BI supports the following data connection types such that the structure
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/mariadb/"> MariaDB</a>
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/sql-data-source/"> Microsoft SQL</a>
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/mysql/"> MySQL</a>
+            <br> <a href="/cloud-bi/working-with-data-source/data-connectors/clickhouse/"> Clickhouse</a>
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/oracle/"> Oracle</a>
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/postgresql/"> PostgreSQL</a>
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/presto/"> Presto</a>
@@ -50,7 +52,7 @@ The Bold BI supports the following data connection types such that the structure
         <td align="center" rowspan="2">Sales & CRM
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/chart-mogul/"> ChartMogul</a>
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/copper/"> Copper</a>
-            <br> <a href="/cloud-bi/working-with-data-source/data-connectors/freshsales/"> Freshsales</a>
+            <br> <a href="/cloud-bi/working-with-data-source/data-connectors/freshworks-crm/"> Freshworks CRM</a>
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/harvest/"> Harvest</a>
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/infusionsoft/"> Infusionsoft</a>
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/insightly/"> Insightly</a>
@@ -80,6 +82,7 @@ The Bold BI supports the following data connection types such that the structure
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/mongodb/"> MongoDB</a>
 			<br> <a href="/cloud-bi/working-with-data-source/data-connectors/quickbase/"> Quickbase</a>
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/cosmosdb/"> CosmosDB</a>
+            <br> <a href="/cloud-bi/working-with-data-source/data-connectors/ravenDB/"> RavenDB</a>
         </td>
 		<td align="center">Management
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/appfolio/"> AppFolio</a>
@@ -110,6 +113,7 @@ The Bold BI supports the following data connection types such that the structure
         </td>
 		<td align="center">Learning
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/lessonly/"> Lessonly</a>
+            <br> <a href="/cloud-bi/working-with-data-source/data-connectors/alma/"> Alma</a>
         </td>
     </tr>
     <tr>
@@ -140,6 +144,8 @@ The Bold BI supports the following data connection types such that the structure
 			<br> <a href="/cloud-bi/working-with-data-source/data-connectors/squareup/"> SquareUp</a>
 			<br> <a href="/cloud-bi/working-with-data-source/data-connectors/xero/"> Xero</a>
 			<br> <a href="/cloud-bi/working-with-data-source/data-connectors/zoho-invoice/"> Zoho Invoice</a>
+            <br> <a href="/cloud-bi/working-with-data-source/data-connectors/zoho-books/"> Zoho Books</a>
+            <br> <a href="/cloud-bi/working-with-data-source/data-connectors/xero-workflowmax/"> Xero WorkflowMax</a>
         </td>
         <td align="center">REST
 		    <br> <a href="/cloud-bi/working-with-data-source/data-connectors/azure-search/"> Azure Search</a>
@@ -147,7 +153,7 @@ The Bold BI supports the following data connection types such that the structure
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/odata/"> OData</a>
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/rss-feeds/"> RSS Feeds</a>
 			<br> <a href="/cloud-bi/working-with-data-source/data-connectors/slack/"> Slack</a>
-            <br> <a href="/cloud-bi/working-with-data-source/data-connectors/restful-web-services/"> Web</a>
+            <br> <a href="/cloud-bi/working-with-data-source/data-connectors/web/"> Web</a>
         </td>
         <td align="center">Web Analytics
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/optimizely/"> Optimizely</a>
@@ -185,6 +191,7 @@ The Bold BI supports the following data connection types such that the structure
 			<br> <a href="/cloud-bi/working-with-data-source/data-connectors/zuora/"> Zuora</a>
         </td>
         <td align="center">Support
+            <br> <a href="/cloud-bi/working-with-data-source/data-connectors/bolddesk/"> BoldDesk</a>
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/callrail/"> CallRail</a>
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/freshdesk/"> Freshdesk</a>
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/freshservice/"> Freshservice</a>
@@ -201,7 +208,7 @@ The Bold BI supports the following data connection types such that the structure
     </tr>
     <tr>
         <td align="center">Survey
-            <br> <a href="/cloud-bi/working-with-data-source/data-connectors/survey-gizmo/"> SurveyGizmo</a>
+            <br> <a href="/cloud-bi/working-with-data-source/data-connectors/alchemer/"> Alchemer</a>
 			<br> <a href="/cloud-bi/working-with-data-source/data-connectors/surveymonkey/"> SurveyMonkey</a>
         </td>
         <td align="center">Digital Marketing

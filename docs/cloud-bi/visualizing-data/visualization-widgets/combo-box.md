@@ -61,17 +61,58 @@ You can add the `Measures` or `Dimensions` to the `Columns` section by dragging 
 
 ### Sorting data
 
-Define the `Sort` of the dropped column through the Sort option in the Settings dropdown menu. For more details, refer to the [Sort](/cloud-bi/visualizing-data/working-with-widgets/advanced-sorting/#dimension-column).
+Define the `Sort` of the dropped column through the Sort option in the Settings dropdown menu. For more details, refer to the [Sort](/embedded-bi/visualizing-data/working-with-widgets/advanced-sorting/#dimension-column).
 
 ![Sorting](/static/assets/cloud/visualizing-data/visualization-widgets/images/combo-box/sorting.png)
 
 ### Filtering data
 
-Define filter criteria through the `Filter(s)` menu item in the `Settings` drop down menu. For more details, refer to the [filter](/cloud-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column).
+Define filter criteria through the `Filter(s)` menu item in the `Settings` drop down menu. For more details, refer to the [filter](/embedded-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column).
 
 ![Filtering](/static/assets/cloud/visualizing-data/visualization-widgets/images/combo-box/filtering.png)
 
 Clear the filters by selecting the `Show All Records` in the `Settings` dropdown menu.
+
+## How to configure relative dates to Combobox?
+
+Click the `Settings` icon in the dropped date value and select `Relative Dates` in the drop-down menu.
+
+![showing relative dates menu](/static/assets/cloud/visualizing-data/visualization-widgets/images/combo-box/combobox-relativedates.png)
+
+In the launched `Relative Date Options` window, configure the relative date and click Add. Repeat this process till the required set of relative dates are added.
+
+![relative date options window](/static/assets/cloud/visualizing-data/visualization-widgets/images/combo-box/relativedatefilterwindow-combobox.png)
+
+![relative dates added in window](/static/assets/cloud/visualizing-data/visualization-widgets/images/combo-box/relativedateoptionsadded-combobox.png)
+
+You can see the added relative dates in the combo box as follows.  
+
+![showing relative date options in combobox](/static/assets/cloud/visualizing-data/visualization-widgets/images/combo-box/relativedateoptions-in-combobox.png)
+
+> **NOTE:** If Multi selection is enabled, then the applied relative dates will be removed.
+
+## How to configure custom relative dates to the Combobox?
+
+Click the `Settings` icon in the dropped date value and select `Relative Dates` in the drop-down menu.
+
+![showing relative dates menu](/static/assets/cloud/visualizing-data/visualization-widgets/images/combo-box/combobox-relativedates.png)
+
+In the launched `Relative Date Options` window, select the `Custom` option from the drop-down list.
+
+![selecting custom option in relative dates window](/static/assets/cloud/visualizing-data/visualization-widgets/images/combo-box/customoptionin-relativedatefilter-combobox.png)
+
+Choose the start and end dates you like to set as custom range, set a name for the custom range, and then click `Add`. Repeat this process till the required set of custom relative dates are added.
+
+
+![setting range for custom option](/static/assets/cloud/visualizing-data/visualization-widgets/images/combo-box/customdatelimits-relativedates-combobox.png)
+
+![custom date option is added](/static/assets/cloud/visualizing-data/visualization-widgets/images/combo-box/customdateadded-relativedates-combobox.png)
+
+You can see the added custom relative dates in the combo box as follows.
+
+![custom date option is displayed in combo box](/static/assets/cloud/visualizing-data/visualization-widgets/images/combo-box/customrelativedate-combobox.png)
+
+> **NOTE:** If Multi selection is enabled, then the applied relative dates will be removed.
 
 ## How to format combo box?
 
@@ -79,19 +120,25 @@ You can format the combo box for a better illustration of the view that you requ
 
 ### General Settings
 
-![General Settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/combo-box/general-settings.png)
+![General Settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/combo-box/property.png)
 
 #### Name
 
 This allows you to set the `title` for this combo box widget.
 
+![General Settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/combo-box/title.png)
+
 #### Subtitle
 
 This allows you to set the `subtitle` for this combo box widget.
 
+![General Settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/combo-box/Subtitle.png)
+
 #### Description
 
 This allows you to set the brief explanation about this combo box widget.
+
+![General Settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/combo-box/Description.png)
 
 #### Basic Settings
 
@@ -143,7 +190,7 @@ When `Enable Hierarchical Filtering` is enabled, the Top N will be applied for e
 
 #### Title Alignment
 
-This allows you to handle the alignment of widget title to either `left, center, or right.`
+This allows you to handle the alignment of widget title to either `left, center, or right`.
 
 #### Title Color
 
@@ -167,7 +214,7 @@ This allows you to apply the specified size of the font to the widget title if t
 
 #### Show Border
 
-This allows you to toggle the visibility of `border` surrounding the widget.
+This allows you to toggle the visibility of the `border` surrounding the widget.
 
 #### Corner Radius
 
@@ -181,6 +228,10 @@ This allows you to set the **background color** to the combo box widget.
 
 This property allows you to specifies the **transparency** for the `background color`.
 
+#### Show Shadow
+
+This allows you to toggle the visibility of `shadow` surrounding the widget.
+
 #### Container actions
 
 ![Container Actions](/static/assets/cloud/visualizing-data/visualization-widgets/images/combo-box/container-actions.png)
@@ -191,4 +242,4 @@ This allows you to enable or disable the `widget title` of the combo box widget.
 
 #### Enable Comments
 
-This allows you to enable or disable `comment` for the dashboard widget. For more details, refer to this [link](/cloud-bi/visualizing-data/working-with-widgets/commenting-widget/).
+This allows you to enable or disable `comment` for the dashboard widget. For more details, refer to this [link](/embedded-bi/visualizing-data/working-with-widgets/commenting-widget/).

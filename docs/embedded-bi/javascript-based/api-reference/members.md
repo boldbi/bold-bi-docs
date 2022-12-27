@@ -477,8 +477,8 @@ dashboard.loadDashboard();
 </tr>
 </table>
 
-<h2 class="doc-prop-wrapper" id="disableAutoRecover" data-Path="disableAutoRecover-disableAutoRecover">
-<a href="#disableAutoRecover" aria-hidden="true" class="anchor">
+<h2 class="doc-prop-wrapper" id="disableautorecover" data-Path="disableautorecover-disableAutoRecover">
+<a href="#disableautorecover" aria-hidden="true" class="anchor">
 <svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
 <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
 </svg>
@@ -503,6 +503,35 @@ Specifies whether to show or hide the `Auto Recover` Popup in the Dashboard Desi
 ```js
 var dashboard = BoldBI.create({
      disableAutoRecover: false,
+});
+dashboard.loadDashboard();
+```
+
+<h2 class="doc-prop-wrapper" id="isbingmaprequired" data-Path="isbingmaprequired-isBingMapRequired">
+<a href="#isbingmaprequired" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+</svg>
+</a><span class='doc-prop-name'>isBingMapRequired</span>
+
+<span class="doc-prop-type"> `boolean`
+</span>
+
+</h2>
+
+Specifies whether the bingMap related files have to download or not.
+
+<br>
+
+**Default value** 
+
+<li>true</li><br> 
+
+**Example** 
+   
+```js
+var dashboard = BoldBI.create({
+     isBingMapRequired: true,
 });
 dashboard.loadDashboard();
 ```
@@ -1761,7 +1790,7 @@ var dashboard = BoldBI.create({
           margin: null,
      }
 });
-dashboard.loadDesigner();
+dashboard.loadDashboard();
 ```
 
 ## widgetContainerSettings
@@ -1797,7 +1826,7 @@ var dashboard = BoldBI.create({
           margin: null,
      }
 });
-dashboard.loadDesigner();
+dashboard.loadDashboard();
 ```
 
 <h3 class="doc-prop-wrapper" id="widgetcontainersettingsboxshadow" data-Path="widgetcontainersettingsboxshadow-widgetContainerSettings.boxShadow">
@@ -1829,7 +1858,7 @@ var dashboard = BoldBI.create({
           boxShadow: null,
      }
 });
-dashboard.loadDesigner();
+dashboard.loadDashboard();
 ```
 
 ## data sources
@@ -1846,15 +1875,18 @@ dashboard.loadDesigner();
 
 </h3>
 
-This property is used to add the multiple data sources in the designer page.
+This property is used to add multiple data sources to the designer page. You can customize the Datasource properties by the following options.
+
+* `canEdit` - specifies whether to enable or disable the edit icon in the Datasource.
+* `canDelete` - specifies whether to enable or disable the delete icon in the Datasource.
 
 **Example** 
-   
+
 ```js
 var dashboard = BoldBI.create({
      datasources: [
-          {"id": "348e414b-c8c6-4542-839a-2e12934fe64f", "canDelete" : false},  
-          {"id": "d9a28bba-e6dd-46c9-89d7-810ebb4796b3", "canDelete" : true}
+          {"id": "348e414b-c8c6-4542-839a-2e12934fe64f", "canEdit": true, "canDelete": false},  
+          {"id": "d9a28bba-e6dd-46c9-89d7-810ebb4796b3", "canEdit": false, "canDelete": true}
      ]
 });
 dashboard.loadDesigner();
@@ -1926,4 +1958,7 @@ var dashboard = BoldBI.create({
 dashboard.loadDesigner();
 ```
 
-> **NOTE:** <br> 1. If the `categoryName` already exists, the predefined widgets were added in that category. <br> 2. If the `categoryName` not exists in the panel, the widgets were added by creating a new category with the given name. <br> 3. Otherwise, by default the widgets were added into the `Miscellaneous` category.
+> **NOTE:**
+1. If the `categoryName` already exists, the predefined widgets were added to that category.
+2. If the `categoryName` not exists in the panel, the widgets were added by creating a new category with the given name.
+3. Otherwise, by default, the widgets were added to the `Miscellaneous` category.

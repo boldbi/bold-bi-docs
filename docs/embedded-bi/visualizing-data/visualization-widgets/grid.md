@@ -106,19 +106,25 @@ You can format the grid for better illustration of the view that you require usi
 
 ### General settings
 
-![General settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/general-settings.png)
+![General settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/property.png)
 
 #### Name 
 
 This allows you to set `title` for this grid widget.
 
+![General settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/name.png)
+
 #### Subtitle
 
 This allow you to set `subtitle` for this grid widget.
 
+![General settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/Subtitle.png)
+
 #### Description
 
 This allows you to set a brief explanation about this grid widget.
+
+![General settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/description.png)
 
 ### Basic settings
 
@@ -128,9 +134,13 @@ This allows you to set a brief explanation about this grid widget.
 
 This option allows you to toggle the visibility of tooltip in a grid.
 
+![Basic settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/tooltip.png)
+
 #### Allow sorting
 
 You can toggle the interactive sorting of columns in grid control using this option. `It is enabled by default.`
+
+![Basic settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/allow-sorting.png)
 
 #### Fit to content
 
@@ -232,6 +242,10 @@ This section allows you to format the grid header visibility, color, and font-si
 
 This allows you to enable or disable the grid header. This option is enabled by default.
 
+If we uncheck `Show Header`, dependent properties will be hidden which are **Foreground color**, **Background color**, **Row height**, **Auto font size**, **padding**.
+
+![Grid Row Height](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/header.png)
+
 #### Foreground
 
 You can customize the header font color. The default color of the header font is `#2d3748.`
@@ -247,6 +261,8 @@ You can customize the height of the grid header by increasing or decreasing the 
 #### Auto Font Size
 
 This property picks auto font-size for grid header when it is enabled, otherwise it allows you to choose fixed font-size from `Font Size` property. This option is enabled by default.
+
+![Auto font size](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/font-size.png)
 
 #### Font Size
 
@@ -342,15 +358,11 @@ Using this option, you can enable or disable hierarchical top N filtering. While
 
 When the Hierarchical Filter option is enabled, the Top N will be applied for each individual column separately based on the number set for each column.
 
-### Column settings
+#### Column Settings
 
 This section allows you to format the grid column based on alignment, width, and KPI customization.
 
 ![Column settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/grid-columnSetting.png)
-
-#### Column Settings
-
-This allows you to set width and align each column of the grid.
 
 If you click the `Customize` button, the window will render like this. 
 

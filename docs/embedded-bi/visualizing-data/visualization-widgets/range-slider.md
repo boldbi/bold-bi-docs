@@ -67,19 +67,25 @@ You can format the Range Slider for better illustration of the view that you req
 
 ### General Settings
 
-![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/range-slider/general-settings.png)
+![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/range-slider/property.png)
 
 #### Name
 
 This allows you to set the `title` for this range slider widget.
 
+![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/range-slider/Name.png)
+
 #### Subtitle
 
 This allows you to set the `subtitle` for this range slider widget.
 
+![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/range-slider/subtitle.png)
+
 #### Description
 
 This allows you to set the brief explanation about this range slider widget.
+
+![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/range-slider/Description.png)
 
 #### Basic Settings
 

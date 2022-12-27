@@ -60,37 +60,13 @@ This section explains what are the [Azure Active Directory](https://azure.micros
      <td>3. User <td>Read and write access to user profile</td></td>
      </tr>
       <tr>
-     <td>4. Profile <td>View user's basic profile</td></td>
+     <td>4. OpenId permissions <td>View user's basic profile</td></td>
      </tr>
      </table>
     
     Select the above listed permissions and add it.
 
-7. Go to `API permissions`, click `Add a permission`, and then select the `APIs my organization uses`. Then click `Azure Active Directory Graph`.
-
-    <table>
-     <tr>
-     <th>Application Permissions</th>
-     <th></th>
-     </tr>
-     <tr>
-     <td>Directory <td>Read directory data</td></td>
-     </tr>
-     <tr>
-     <th><b>Delegated Permissions</b></th>
-     <th></th>
-     </tr>
-     <tr>
-     <td> 1. Directory <td>Read directory data, Access directory as the signed in user</td></td>
-     </tr>
-     <tr>
-     <td>2. User <td>Sign in and read user profile</td></td>
-     </tr>
-     </table>
-
-     Select the above listed permissions and add it.
-
-8. After adding the permissions, click `Grant admin consent` to grant the admin consent for these permission.
+7. After adding the permissions, click `Grant admin consent` to grant the admin consent for these permissions.
  
     ![Grant admin consent](/static/assets/cloud/site-administration/images/grant-admin-consent.png)
 

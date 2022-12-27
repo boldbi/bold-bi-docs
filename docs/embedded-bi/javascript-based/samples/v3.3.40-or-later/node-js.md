@@ -119,13 +119,10 @@ The link has been provided to [download](https://onpremise-demo.boldbi.com/getti
 
 ## Steps to create new Node.js application to embed dashboard
  1. Create a folder in the desired location and open it in the visual studio code. Create a `js` file with the name `embed.js` and `html` file in it.
- 2. In the `html` file, refer to the mandatory files in the `<head>`, the `<body>` tag initializes the `embedSample()` method, the DOM element with the  `dashboard` id is created in the `<div>` tag where the required dashboard will be rendered.
+ 2. In the `html` file, refer to the mandatory file in the `<head>`, the `<body>` tag initializes the `embedSample()` method, the DOM element with the  `dashboard` id is created in the `<div>` tag where the required dashboard will be rendered.
     ```js
     <head>  
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jsrender/1.0.0-beta/jsrender.min.js"></script>
-        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v5.2.48/embed-js.js"></script>
+        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v5.3.53/boldbi-embed.js"></script>
     </head>
     <body onload="embedSample();">
         <div id="dashboard"></div>

@@ -7,7 +7,6 @@ control: Doughnut Chart
 documentation: ug
 ---
 
-
 # Doughnut Chart
 
 The Doughnut chart allows you to showcase the proportionality of each item to the total in the form of doughnut-slices. It works best to display data with a small number of categories.
@@ -16,7 +15,7 @@ The Doughnut chart allows you to showcase the proportionality of each item to th
 
 ## How to configure table data in the Doughnut Chart
 
-The Doughnut chart needs a minimum of one value element and one column element to showcase. The `measure` or `expression` field that you want to analyze can be dropped into the Values block. The dimension for which you want to categorize the measure can be dropped into the Columns block. To categorize based on a series, drop the respective dimension into the `Rows block.`
+The Doughnut chart needs a minimum of one value element and one column element to showcase. The `measure` or `expression` field that you want to analyze can be dropped into the Values block. The dimension for which you want to categorize the measure can be dropped into the Columns block. To categorize based on a series, drop the respective dimension into the `Rows block`.
 
 Follow the below steps to configure the data to the doughnut chart.
 
@@ -72,11 +71,11 @@ Click **Settings** to change the required summary type from the available summar
 
 ![Settings option](/static/assets/cloud/visualizing-data/visualization-widgets/images/doughnut-chart/doughnutchart-settings.png)
 
-You can filter the data displayed in the Doughnut Chart by using the Filter option. For more details, refer to the [filter](/cloud-bi/visualizing-data/working-with-widgets/configuring-widget-filters/).
+You can filter the data displayed in the Doughnut Chart by using the Filter option. For more details, refer to the [filter](/embedded-bi/visualizing-data/working-with-widgets/configuring-widget-filters/).
 
 ![Filter option](/static/assets/cloud/visualizing-data/visualization-widgets/images/doughnut-chart/filter-option.png)
 
-You can format the data displayed in the Doughnut Chart by using the Format option. For more details, refer to the [measure format](/cloud-bi/visualizing-data/working-with-widgets/formatting-measure-type-column/).
+You can format the data displayed in the Doughnut Chart by using the Format option. For more details, refer to the [measure format](/embedded-bi/visualizing-data/working-with-widgets/formatting-measure-type-column/)
 
 ![Format option](/static/assets/cloud/visualizing-data/visualization-widgets/images/doughnut-chart/format-option.png)
 
@@ -112,7 +111,7 @@ You can change the Settings.
 
 ![Column settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/doughnut-chart/columnsettings.png)
 
-You can sort the dimension data using the **Sort** option under the Settings menu list. To apply sorting for data, refer to the [Sort](/cloud-bi/visualizing-data/working-with-widgets/advanced-sorting/#dimension-column).
+You can sort the dimension data using the **Sort** option under the Settings menu list. To apply sorting for data, refer to the [Sort](/embedded-bi/visualizing-data/working-with-widgets/advanced-sorting/#dimension-column).
 
 ![Sort option](/static/assets/cloud/visualizing-data/visualization-widgets/images/doughnut-chart/sortoption.png)
 
@@ -120,11 +119,17 @@ You can apply filters by selecting the `filter` option in settings.
 
 ![Sort option](/static/assets/cloud/visualizing-data/visualization-widgets/images/doughnut-chart/filteroption.png)
 
-For more details, refer to the [filter](/cloud-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column).
+For more details, refer to the [filter](/embedded-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column).	
 
 > **NOTE:**  By default, the filter will be set for the top 5 records.
 
 Similarly, you can add the Measures and Expression Columns to the Column field.
+
+#### Renaming fields
+
+The configured field names can be edited by using the `Rename` option provided in the settings menu.
+
+![Rename](/static/assets/cloud/visualizing-data/visualization-widgets/images/doughnut-chart/rename.png)
 
 **Assigning rows**
 
@@ -132,7 +137,7 @@ You can drag and drop the `Dimension` field into the `Rows` field.
 
 ![Add data to row](/static/assets/cloud/visualizing-data/visualization-widgets/images/doughnut-chart/chart-row.png)
 
-You can apply [filter](/cloud-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column) and [sort](/cloud-bi/visualizing-data/working-with-widgets/advanced-sorting/#dimension-column) options for the rows field, if required.
+You can apply [filter](/embedded-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column) and [sort](/embedded-bi/visualizing-data/working-with-widgets/advanced-sorting/#dimension-column) options for the rows field, if required.
 
 This will render a Doughnut chart in a series.
 
@@ -162,23 +167,35 @@ You can see the list of properties available for the widget with default value.
 
 ### General Settings
 
-![Title](/static/assets/cloud/visualizing-data/visualization-widgets/images/doughnut-chart/title.png)
+![Title](/static/assets/cloud/visualizing-data/visualization-widgets/images/doughnut-chart/property.png)
 
 #### Name
 
 Allows you to set a `title` for the Doughnut chart widget.
 
+![Title](/static/assets/cloud/visualizing-data/visualization-widgets/images/doughnut-chart/Name.png)
+
 #### Subtitle
 
 Allows you to set a `subtitle` for the Doughnut chart widget.
+
+![Title](/static/assets/cloud/visualizing-data/visualization-widgets/images/doughnut-chart/Subtitle.png)
 
 #### Description
 
 Set a `description` for the Doughnut chart, whose visibility will be denoted by **i** icon, and hovering over it will display the description in a tooltip.
 
+![Title](/static/assets/cloud/visualizing-data/visualization-widgets/images/doughnut-chart/Description.png)
+
 ### Basic settings
 
 ![Basic settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/doughnut-chart/basic-settings.png)
+
+#### Show Tooltip
+
+This option allows you to toggle the visibility of tooltip in a chart.
+
+![Title](/static/assets/cloud/visualizing-data/visualization-widgets/images/doughnut-chart/tooltip.png)
 
 #### Chart type
 
@@ -188,60 +205,7 @@ Switch the widget view from the current chart type to another chart type.
 
 #### Enable animation
 
-It animates the measure values when you enable the `Enable Animation.`
-
-#### Show legend
-
-A Legend is a text used to describe the plotted data. It allows you to toggle the visibility of the legend in the chart and change the legend text position (selecting through the combo box).
-
-![Show legend](/static/assets/cloud/visualizing-data/visualization-widgets/images/doughnut-chart/show-legend.png)
-
-Enabling the **Custom Legend Text** option will allow you to define a custom text (through the text area) to display for each legend series (selecting through the combo box) in the chart.
-
-#### Legend Label Color
-
-This allows you to change the chart legend title and label colors.
-
-![Chart Legend Color Option](/static/assets/cloud/visualizing-data/visualization-widgets/images/doughnut-chart/legend-label-color-option.png)
-
-![Chart Legend Color](/static/assets/cloud/visualizing-data/visualization-widgets/images/doughnut-chart/legend-label-color.png)
-
-#### Legend Customization
-
-You can customize the legend text through the Custom Legend Settings dialog. This dialog will show the legend text list as labels at left and corresponding text area at right to add the formatted text to display instead.
-
-![Legend customization](/static/assets/cloud/visualizing-data/visualization-widgets/images/doughnut-chart/legend-custom.png)
-
-*After customize the legend*
-
-![Legend customization](/static/assets/cloud/visualizing-data/visualization-widgets/images/doughnut-chart/legend.png)
-
-
-### Legend Position
-
-You can able to change the position for the legend at `Top, Left, Right` and `Bottom.`
-
-#### Legend Shape
-
-This allows you to change the **shape** of the legend.
-
-***Circle***
-
-This option allows you to change the shape of the legend in a `Circle.`
-
-![Show Legend shape](/static/assets/cloud/visualizing-data/visualization-widgets/images/doughnut-chart/doughnutlegend-shape.png)
-
-***Series Type***
-
-This option allows you to change the shape of the legend in `Series.`
-
-![Show Legend shape Series](/static/assets/cloud/visualizing-data/visualization-widgets/images/doughnut-chart/doughnut-legendshape-series.png)
-
-#### Legend Title
-
-This allows you to add the legend title for the chart. It will reflect with the `Show Legend.`
-
-![Show Legend Title](/static/assets/cloud/visualizing-data/visualization-widgets/images/doughnut-chart/doughnut-legendtitle.png)
+It animates the measure values when you enable the `Enable Animation`.
 
 #### Show value labels
 
@@ -251,7 +215,7 @@ Toggle the visibility of value labels.
 
 #### Value Label Color
 
-This allows you to customize value label's color.
+This allows you to customize the value label's color.
 
 ![Value label Color Option](/static/assets/cloud/visualizing-data/visualization-widgets/images/doughnut-chart/data-label-color-option.png)
 
@@ -259,7 +223,7 @@ This allows you to customize value label's color.
 
 #### Data label
 
-You can able to define the display format as a `category, value, percentage, category and value, value and percentage, category and percentage, ` or `all details`.
+You can define the display format as a `category, value, percentage, category and value, value and percentage, category and percentage, ` or `all details`.
 
 #### Category
 
@@ -291,9 +255,133 @@ You can able to define the display format as a `category, value, percentage, cat
 
 #### Value labels suffix
 
-Set a suffix for the value labels.
+This allows you to show or hide the suffix value of value labels.
+
+### Suffix Value
+
+This allows you to customize the suffix value of value labels.
 
 ![Value labels suffix](/static/assets/cloud/visualizing-data/visualization-widgets/images/doughnut-chart/value-label-suffix.png)
+
+### Chart Size
+
+This allows you to customize the size of the doughnut chart. Values can be between 0.1 and 1.
+
+### Series Settings
+
+The `Series Settings` option is enabled only when you configure the **series** in the `Assigned Data` tab.
+
+![Series Settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/doughnut-chart/series-settings.png)
+
+### Fixed rows and columns 
+
+If you enable the Fixed rows and columns, you can customize the rows and columns. The rows and columns are fixed based on the container size and size of the doughnut chart.
+
+![Doughnut Series Settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/doughnut-chart/series-settingsdoughnutchart.png)
+
+### Row count 
+
+By enabling the `Row Count`, you can set the count of the rows.
+
+### Column count 
+
+By enabling the `Column Count`, you can set the column count.
+
+![Doughnut Series Settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/doughnut-chart/series-settingsfixed.png)
+
+>**Note**: If the invalid columns and rows are given, the rows and columns reset to their default value. For example: If you are given the number of rows as 6 and the number of columns as 5 but your data count is only 20. In this case, the rows and columns will reset to their default value.
+
+### Legend Settings
+
+![Legend settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/doughnut-chart/legend-settings.png)
+
+#### Show legend
+
+A Legend is a text used to describe the plotted data. It allows you to toggle the visibility of the legend in the chart and change the legend text position (selecting through the combo box).
+
+![Show legend](/static/assets/cloud/visualizing-data/visualization-widgets/images/doughnut-chart/show-legend.png)
+
+Enabling the **Custom Legend Text** option will allow you to define a custom text (through the text area) to display for each legend series (selecting through the combo box) in the chart.
+
+#### Label Color
+
+This allows you to change the chart legend title and label colors.
+
+![Chart Legend Color Option](/static/assets/cloud/visualizing-data/visualization-widgets/images/doughnut-chart/legend-label-color-option.png)
+
+![Chart Legend Color](/static/assets/cloud/visualizing-data/visualization-widgets/images/doughnut-chart/legend-label-color.png)
+
+If you Disable `Show Value Labels` properties, the dependent properties, which are **color**, **Value label position**, **Value label rotation** and **Value label suffix** will be hidden.
+
+![Show value label](/static/assets/cloud/visualizing-data/visualization-widgets/images/doughnut-chart/value-label.png)
+
+#### Customize
+
+You can customize the legend text through the Custom Legend Settings dialog. This dialog will show the legend text list as labels at left and corresponding text area at right to add the formatted text to display instead.
+
+![Legend customization](/static/assets/cloud/visualizing-data/visualization-widgets/images/doughnut-chart/legend-custom.png)
+
+*After customize the legend*
+
+![Legend customization](/static/assets/cloud/visualizing-data/visualization-widgets/images/doughnut-chart/legend.png)
+
+### Position
+
+You can able to change the position for the legend at `Top, Left, Right`, and `Bottom`.
+
+![Legend position](/static/assets/cloud/visualizing-data/visualization-widgets/images/doughnut-chart/legend-position.png)
+
+#### Shape
+
+This allows you to change the **shape** of the legend.
+
+***Circle***
+
+This option allows you to change the shape of the legend in a `Circle`.
+
+![Show Legend shape](/static/assets/cloud/visualizing-data/visualization-widgets/images/doughnut-chart/doughnutlegend-shape.png)
+
+***Series Type***
+
+This option allows you to change the shape of the legend in `Series`.
+
+![Show Legend shape Series](/static/assets/cloud/visualizing-data/visualization-widgets/images/doughnut-chart/doughnut-legendshape-series.png)
+
+#### Title
+
+This allows you to add the legend title for the chart. It will reflect with the `Show Legend`.
+
+![Show Legend Title](/static/assets/cloud/visualizing-data/visualization-widgets/images/doughnut-chart/doughnut-legendtitle.png)
+
+#### Text Overflow
+
+This option allows you to customize legend text based on the 'Text Width' property value.
+
+**None**
+
+This option allows you to render legend items without any wrap and trim.
+
+![Legend Overflow None in chart](/static/assets/cloud/visualizing-data/visualization-widgets/images/doughnut-chart/chart_LegendNone.png)
+
+**Trim**
+
+This option allows you to trim the legend items if its legend exceeds the 'Text Width' value.
+
+![Legend Overflow Trim in chart](/static/assets/cloud/visualizing-data/visualization-widgets/images/doughnut-chart/chart_Legendtrim.png)
+
+**Wrap**
+
+This option allows you to wrap legend items based on 'Text Width' value.
+
+![Legend Overflow Wrap in chart](/static/assets/cloud/visualizing-data/visualization-widgets/images/doughnut-chart/chart_Legendwrap.png)
+
+#### Text Width
+
+This option allows you to set maximum width for the Legend Items and it is applicable only if text overflow set as Trim or Wrap.
+
+![Legend Text Width in chart](/static/assets/cloud/visualizing-data/visualization-widgets/images/doughnut-chart/chart_Legendwidth.png)
+
+If you uncheck the `Show Legend` property in the property panel, the dependent properties, which are **Legend color**, **Legend position**, **customization button** and **Legend title** are also hidden.
 
 ### Filter
 
@@ -305,7 +393,7 @@ It defines the Doughnut chart widget as a master widget such that its filter act
 
 #### Ignore filter actions
 
-It defines the Doughnut Chart widget to ignore the filter actions applied to other widgets in the dashboard.
+It defines the Doughnut chart widget to ignore the filter actions applied to other widgets in the dashboard.
 
 #### Hierarchical Filter
 
@@ -317,13 +405,19 @@ When the Hierarchical Filter option is enabled, the `Top N` will be applied for 
 
 ![Link](/static/assets/cloud/visualizing-data/visualization-widgets/images/doughnut-chart/link.png)
 
-You can enable linking and configure navigating to a general URL with or without parameters. For more details, refer to the [Linking](/cloud-bi/visualizing-data/working-with-widgets/linking-urls-and-dashboards/).
+You can enable linking and configure navigating to a general URL with or without parameters. For more details, refer to the [Linking](/embedded-bi/visualizing-data/working-with-widgets/linking-urls-and-dashboards/).
 
 ### Series palette
 
-By toggling the `series palette,` you can customize the proportion series segments’ colors.
+By toggling the `series palette`, you can customize the proportion series segments’ colors.
 
 ![Series palette](/static/assets/cloud/visualizing-data/visualization-widgets/images/doughnut-chart/seriespalette.png)
+
+### Font settings
+
+This section allows you to customize font size of chart elements.
+
+![Font settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/doughnut-chart/font-settings.png)
 
 #### Based On
 
@@ -331,7 +425,35 @@ You can choose the field from the Based On section to apply the conditions.
 
 This section shows a palette of colors. By clicking the colored square, the color picker will open. You can choose a color and change the color by changing the corresponding hexadecimal value at the right.
 
-![Series palette](/static/assets/cloud/visualizing-data/visualization-widgets/images/doughnut-chart/seriescolorpalette.png)
+![Individual mode](/static/assets/cloud/visualizing-data/visualization-widgets/images/doughnut-chart/column-chart-individual-mode.png)
+
+#### Color Mapping Type
+
+Using the Color Mapping type, you can apply the colors to the series either based on data or index.
+
+![Color Mapping Type option](/static/assets/cloud/visualizing-data/visualization-widgets/images/doughnut-chart/column-chart-formatting-color-mapping-type-options.png)
+
+***Data***
+
+It allows you to apply color for chart series based on data. If you want to apply a specific color to specific data, you can use Data based color mapping. By default, the Color Mapping Type will be `Data`.
+
+![Color Mapping Type Data](/static/assets/cloud/visualizing-data/visualization-widgets/images/doughnut-chart/column-chart-individual-mode.png)
+
+> **IMPORTANT:**  Only top 100 records will be listed in the 
+dialog. 
+***Index***
+
+It allows you to apply color for chart series based on `Index`. Such that the colors are maintained based on index even if data is changed. It shows only 15 different colors. After that, the color will be repeated from above colors.
+
+For example, If you are displaying the countries based on the increasing order of the case count, then the index-based color mapping will be useful to set the colors based on the rank. Say red color to the top, then the red color will be maintained for the country having the largest case count.
+
+![Color Mapping Type Index](/static/assets/cloud/visualizing-data/visualization-widgets/images/doughnut-chart/column-chart-formatting-index-based-color.png)
+
+**Note:** We prefer to use Index based color customization only for minimum data(upto 15 series).
+
+![Use Basedon Palette](/static/assets/cloud/visualizing-data/visualization-widgets/images/doughnut-chart/column-chart-individual-mode.png)
+
+![Change Series color](/static/assets/cloud/visualizing-data/visualization-widgets/images/doughnut-chart/seriescolor-palette-window.png)
 
 ![Series palette Customization](/static/assets/cloud/visualizing-data/visualization-widgets/images/doughnut-chart/color-customization.png)
 
@@ -339,29 +461,9 @@ This section shows a palette of colors. By clicking the colored square, the colo
 
 This option shows when you add more than one measure field to the Value(s).
 
-By toggle off the `Use Default Palette,` you can customize the proportion series segments' colors by clicking the colored squares.
+By toggle off the `Use Default Palette`, you can customize the proportion series segments colors by clicking the colored squares.
 
 ![Series color palette window](/static/assets/cloud/visualizing-data/visualization-widgets/images/doughnut-chart/series-color-palette-window.png)
-
-### Font settings
-
-Font Settings section allows you to enable auto font size property.
-
-![Font Settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/doughnut-chart/fontsettings.png)
-
-#### Legend
-
-On enabling Auto Font Size option for Legend, the font size of the legend will be adjusted automatically if the resolution of the screen varies.
-
-#### Legend Title
-
-On enabling Auto Font Size option for Legend Title, the font size of the legend title will be adjusted automatically if the resolution of the screen varies.
-
-#### Value Label
-
-On enabling Auto Font Size option for Value label, the font size of the Value Label will be adjusted automatically if the resolution of the screen varies.
-
->**NOTE:**  The Legend Auto Font size, Legend Title Auto Font Size and Value Label  property  only shows when the Show Legend and Show Value Label property is enabled in the basic settings.
 
 ### Container Appearance
 
@@ -391,9 +493,17 @@ On enabling Auto Font Size, the font size of the subtitle will be adjusted autom
 
 This allows you to apply the specified size of the font to the widget title if the **Subtitle Auto Font Size** is disabled. Value can be between 10 and 32.
 
+### Auto Padding
+
+On enabling Auto Padding, the padding of the widget container will be adjusted automatically if the size of the widget varies.
+
+**Padding**
+
+This allows you to customize the padding of the widget container if the **Auto Padding** is disabled. Value can be between 0 and 25.
+
 ### Show Border
 
-This allows you to toggle the visibility of `border` surrounding the widget.
+This allows you to toggle the visibility of the `border` surrounding the widget.
 
 ### Corner Radius
 
@@ -401,7 +511,7 @@ This allows you to apply the specified `radius` to the widget corners if the **S
 
 ### Show Background Image
 
-This allows you to set the **background image** for the spline area chart widget.
+This allow you to set the **background image** for the spline area chart widget.
 
 ### Background Color
 
@@ -409,7 +519,11 @@ This allows you to set the **background color** to the spline area chart widget.
 
 ### Transparency
 
-This property allows you to specify the **transparency** for the `background color.`
+This property allows you to specifies the **transparency** for the `background color`.
+
+### Show Shadow
+
+This allows you to toggle the visibility of the `shadow` surrounding the widget.
 
 ### Container actions
 
@@ -441,7 +555,7 @@ This allows you to enable or disable the `PDF export` option for the spline area
 
 #### Enable Comments
 
-This allows you to enable or disable `comment` for the dashboard widget. For more details, refer to this [link](/cloud-bi/visualizing-data/working-with-widgets/commenting-widget/).
+This allows you to enable or disable `comment` for the dashboard widget. For more details, refer to this [link](/embedded-bi/visualizing-data/working-with-widgets/commenting-widget/).
 
 #### Allow View Underlying Data
 

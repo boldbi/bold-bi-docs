@@ -21,7 +21,7 @@ documentation: ug
 
 ## How to configure the table data to tree map widget
 
-> **NOTE:**  Before adding the Treemap widget to the design layout, make sure to **create the data source**. You can refer to this [section](/cloud-bi/working-with-data-source/creating-a-new-data-source/) to learn how to create a new data source.
+> **NOTE:**  Before adding the Treemap widget to the design layout, make sure to **create the data source**. You can refer to this [section](/embedded-bi/working-with-data-source/creating-a-new-data-source/) to learn how to create a new data source.
 
 > **IMPORTANT:**  To showcase a tree map, a minimum requirement of one value and one group by field is needed.
 
@@ -29,7 +29,7 @@ The following steps explains data configuration of tree map.
 
 ### Step 1: Add a tree map widget to the design canvas 
 
-1. Drag and drop the Tree Map control icon from the toolbox into the design panel. You can find the control in toolbox by search.
+1.  Drag and drop the Tree Map control icon from the toolbox into the design panel. You can find the control in toolbox by search.
 
 ![Adding a treemap](/static/assets/cloud/visualizing-data/visualization-widgets/images/tree-map/drop-widget.png)
 
@@ -62,7 +62,7 @@ Bind column by dragging and dropping element from sections to `values.`
 * It is a mandatory section and minimum of one value is needed for visualization. 
 * Maximum of two fields can only be added. 
 
-You can `filter,` `format,` and `Rename` the data displayed in the widget from the settings menu options.  To open the `settings menu,` click the `settings icon.`
+You can `filter`, `format`, and `Rename` the data displayed in the widget from the settings menu options.  To open the `settings menu`, click the `settings icon.`
 
 The following screenshots shows the various settings menu options based on the type of field configured in the type of section. 
 
@@ -81,17 +81,17 @@ You can change the aggregation type of the measure section from the settings men
 
 ![Summary type changing](/static/assets/cloud/visualizing-data/visualization-widgets/images/tree-map/summary.png)
 
-Refer to this [ section ](/cloud-bi/visualizing-data/working-with-widgets/aggregating-value-columns-based-on-type/)for more details.
+Refer to this [ section ](/embedded-bi/visualizing-data/working-with-widgets/aggregating-value-columns-based-on-type/)for more details.
 
 #### Filtering data
 
-You can use the `Filters` to change the values by selecting the Filter option. For more details, refer to the [Measure filter](/cloud-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-measure-column) and [dimension filter](/cloud-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column).
+You can use the `Filters` to change the values by selecting the Filter option. For more details, refer to the [Measure filter](/embedded-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-measure-column) and [dimension filter](/embedded-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column).
 
 ![Filter menuitem](/static/assets/cloud/visualizing-data/visualization-widgets/images/tree-map/filter-value.png)
 
 #### Measure formatting
 
-You can format the elements by selecting the `Format` option. For more details, refer to the [measure format](/cloud-bi/visualizing-data/working-with-widgets/formatting-measure-type-column/).
+You can format the elements by selecting the `Format` option. For more details, refer to the [measure format](/embedded-bi/visualizing-data/working-with-widgets/formatting-measure-type-column/).
 
 ![Formatting menu item](/static/assets/cloud/visualizing-data/visualization-widgets/images/tree-map/format-value.png)
 
@@ -119,13 +119,13 @@ The configured field names can be edited by using the `Rename` option provided i
 
 #### Filtering data
 
-You can apply `filter` by selecting the `Filter(s)` option in the settings. For more details, refer to the [filter](/cloud-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column).
+You can apply `filter` by selecting the `Filter(s)` option in the settings. For more details, refer to the [filter](/embedded-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column).
 
 ![Configuring filter for dimension column](/static/assets/cloud/visualizing-data/visualization-widgets/images/tree-map/configuring-filter-column.png)
 
 ### Tooltip section 
 
-You can configure the `tooltip` section to showcase the additional information in the widget’s tooltip without affecting the visualization. Refer to [this section](/cloud-bi/visualizing-data/working-with-widgets/tooltip-customization/) for more details on configuring the tooltip fields. 
+You can configure the `tooltip` section to showcase the additional information in the widget’s tooltip without affecting the visualization. Refer to [this section](/embedded-bi/visualizing-data/working-with-widgets/tooltip-customization/) for more details on configuring the tooltip fields. 
 
 ## How to format tree map widget
 
@@ -133,23 +133,35 @@ You can format the tree map for better illustration of the view that you require
 
 ### General settings
 
+![General Settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/tree-map/property.png)
+
 #### Name
 
 This allows you to set `title` for this tree map widget.
+
+![General Settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/tree-map/title.png)
 
 #### Subtitle
 
 This allows you to set `subtitle` for this tree map widget.
 
+![General Settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/tree-map/Subtitle.png)
+
 #### Description
 
 This allows you to set brief explanation about this grid widget.
 
-![General Settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/tree-map/general-settings.png)
+![General Settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/tree-map/Description.png)
 
 ### Basic settings
 
 ![Basic Settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/tree-map/basic-settings.png)
+
+#### Show Tooltip
+
+This option allows you to toggle the visibility of tooltip in the tree map.
+
+![General Settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/tree-map/tooltip.png)
 
 #### Show legend
 
@@ -181,7 +193,7 @@ In case of hierarchical view, multiple levels will get rendered in the same view
 
 ![Linking](/static/assets/cloud/visualizing-data/visualization-widgets/images/tree-map/link.png)
 
-To configure linking to URL or dashboard with the widget using its settings. For more details, refer to the [Linking](/cloud-bi/visualizing-data/working-with-widgets/linking-urls-and-dashboards/).
+To configure linking to URL or dashboard with the widget using its settings. For more details, refer to the [Linking](/embedded-bi/visualizing-data/working-with-widgets/linking-urls-and-dashboards/).
 
 ### Formatting
 
@@ -197,7 +209,7 @@ This allows you to configure a single-color palette whose saturation will be var
 
 #### Advanced setting
 
-Select Advance setting to configure conditions and apply color to the cells based on that. Click this [link](/cloud-bi/visualizing-data/visualization-widgets/tree-map/#how-to-apply-conditional-formatting-in-tree-map) for more details.
+Select Advance setting to configure conditions and apply color to the cells based on that. Click [here](/embedded-bi/visualizing-data/visualization-widgets/tree-map/#how-to-apply-conditional-formatting-in-tree-map) for more details.
 
 ### Filter
 
@@ -213,7 +225,7 @@ This allows you to define this tree map widget to ignore responding to the filte
 
 #### Enable hierarchical filtering
 
-Using this option, you can enable or disable the hierarchical` top N` filtering. While applying the `top N` filter with multiple dimension columns, the data returned can be customized based on whether the filtering need to be done as flat or based on the hierarchy of dimension columns added.
+Using this option, you can enable or disable the hierarchical` top N` filtering. While applying `top N` filter with multiple dimension columns, the data returned can be customized based on whether the filtering need to be done as flat or based on the hierarchy of dimension columns added.
 
 When the `Hierarchical Filter` option is enabled, the top N will be applied for each individual column separately based on the number set for each column.
 
@@ -239,7 +251,7 @@ In case, if you have the requirement to highlight any data based on some conditi
 
 ![Treemap with conditional formatting](/static/assets/cloud/visualizing-data/visualization-widgets/images/tree-map/formatting-result.png)
 
-Refer to the following sections for the detailed steps on using the [Gradient](/cloud-bi/visualizing-data/visualization-widgets/tree-map/#gradient-mode), [Rule](/cloud-bi/visualizing-data/visualization-widgets/tree-map/#rule-based-condition-mode), and [individual](/cloud-bi/visualizing-data/visualization-widgets/tree-map/#individual-mode) modes. 
+Refer to the following sections for the detailed steps on using the [Gradient](/embedded-bi/visualizing-data/visualization-widgets/tree-map/#gradient-mode), [Rule](/embedded-bi/visualizing-data/visualization-widgets/tree-map/#rule-based-condition-mode), and [individual](/embedded-bi/visualizing-data/visualization-widgets/tree-map/#individual-mode) modes. 
 
 ### Gradient mode
 
@@ -362,9 +374,17 @@ On enabling Auto Font Size, the font size of the subtitle will be adjusted autom
 
 This allows you to apply the specified size of the font to the widget title if the **Subtitle Auto Font Size** is disabled. Value can be between 10 and 32.
 
+### Auto Padding
+
+On enabling Auto Padding, the padding of the widget container will be adjusted automatically if the size of the widget varies.
+
+**Padding**
+
+This allows you to customize the padding of the widget container if the **Auto Padding** is disabled. Value can be between 0 and 25.
+
 ### Show Border
 
-This allows you to toggle the visibility of `border` surrounding the widget.
+This allows you to toggle the visibility of the `border` surrounding the widget.
 
 ### Corner Radius
 
@@ -381,6 +401,9 @@ This allows you to set the **background color** to the tree map widget.
 ### Transparency
 
 This property allows you to specifies the **transparency** for the `background color.`
+
+### Show Shadow
+This allows you to toggle the visibility of  the `shadow` surrounding the widget.
 
 ### Container actions
 
@@ -412,14 +435,22 @@ This allows you to enable or disable the `PDF export` option for the tree map wi
 
 #### Enable Comments
 
-This allows you to enable or disable `comment` for the dashboard widget. For more details, refer to this [link](/cloud-bi/visualizing-data/working-with-widgets/commenting-widget/).
+This allows you to enable or disable `comment` for the dashboard widget. For more details, refer to this [link](/embedded-bi/visualizing-data/working-with-widgets/commenting-widget/).
 
 #### Allow View Underlying Data
 
 This allows you to visualize the raw data associated with a widget at runtime. 
 
-To learn more about viewing the underlying widget data, refer to the [view data documentation](/cloud-bi/visualizing-data/working-with-widgets/view-data/). 
+To learn more about viewing the underlying widget data, refer to the [view data documentation](/embedded-bi/visualizing-data/working-with-widgets/view-data/). 
 
 #### Pin Widget
 
 This allows you to pin the widget.
+
+#### Responsive Behavior
+
+We hide the widget elements based on the size of the widget for better readability.
+
+When the tree map has been placed with less than 7 columns legend will be hidden.
+
+![Widget Element](/static/assets/cloud/visualizing-data/visualization-widgets/images/tree-map/legend.png).

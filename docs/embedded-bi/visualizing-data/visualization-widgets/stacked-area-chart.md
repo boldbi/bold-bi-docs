@@ -98,9 +98,11 @@ You can change the `Settings.`
 
 ![Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-area-chart/column-settings.png)
 
-### Renaming fields
+#### Renaming fields
 
 The configured field names can be edited by using the `Rename` option provided in the settings menu.
+
+![Rename](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-area-chart/rename.png)
 
 ### Sorting data
 
@@ -165,19 +167,25 @@ You can see the list of properties available for the widget with default value.
 
 #### General Settings
 
-![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-area-chart/general-settings.png)
+![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-area-chart/property.png)
 
 #### Name
 
 This allows you to change the `title` for this stacked area chart widget.
 
+![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-area-chart/title.png)
+
 #### Subtitle
 
 Allows you to provide the `subtitle` for this stacked area chart widget.
 
+![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-area-chart/Subtitle.png)
+
 #### Description
 
 Allows you to provide the `description` about this stacked area chart widget.
+
+![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-area-chart/Description.png)
 
 #### Basic Settings
 
@@ -186,6 +194,8 @@ Allows you to provide the `description` about this stacked area chart widget.
 #### Show Tooltip
 
 This option allows you to toggle the visibility of tooltip in a chart.
+
+![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-area-chart/tooltip.png)
 
 #### Chart Type and axis
 
@@ -207,9 +217,13 @@ This allows you to toggle the visibility of value labels.
 
 ![Show Value Labels](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-area-chart/show-value-labels.png)
 
+If you Disable `Show Value Labels` properties, the dependent properties, which are **color**, **Value label position**, **Value label rotation** and **Value label suffix** will be hidden.
+
+![Show value label](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-area-chart/show-label.png)
+
 #### Customize
 
-This allows you to customize the toggle visibility of each series in a chart.
+This allows you to customize the toggle visibility of value labels in each series.
 
 ![Show Value Labels Customize](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-area-chart/show-value-labels-customize.png)
 
@@ -244,6 +258,8 @@ This allows you to show or hide the suffix value of value labels.
 This allows you to customize the suffix value of value labels.
 
 ![Suffix Value](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-area-chart/suffix-value.png)
+
+**Note:** When Increased the height and number of data in chart the value label was hidden. Use label rotation property to visible the label.
 
 ### Show Marker
 
@@ -385,6 +401,9 @@ This option allows you to set a maximum width for the Legend Items and it is app
 
 ![Legend Text Width in chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-area-chart/chart_Legendwidth.png)
 
+If you uncheck the `Show Legend` property in the property panel, the dependent properties, which are **Legend color**, **Legend position**, **customization button** and **Legend title** are also hidden.
+
+> **NOTE:** For single series, Legend wont be visible. 
 ### Link
 
 ![Link](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-area-chart/linking.png)
@@ -401,15 +420,23 @@ This section allows you to customize the axis settings in chart.
 
 This allows you to customize the axis title color.
 
+![Title color](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-area-chart/title-color.png)
+
 ### Label color
 
 This allows you to customize the axis label color.
+
+![Label color](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-area-chart/label-color.png)
 
 ### Show Category Axis
 
 This allows you to enable the visibility of `Category Axis.`
 
 ![Show Category Axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-area-chart/show-category-axis.png)
+
+If you disable the `Show Category Axis` option, dependencies properties, which are **Show axis title**, **Axis title text**, **Trim overflow mode**, **Trim axis labels**, **Label Rotation** and **Auto Interval** option will be hidden.
+
+![Show Category Axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-area-chart/show-axis.png)
 
 ### Show Category Axis Title
 
@@ -422,6 +449,10 @@ This allows you to enable the visibility of `Category Axis` title.
 This allows you to edit the `Category Axis` title for chart. It will reflect in x-axis name of chart.
 
 ![Category Axis Title](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-area-chart/stackedareachart-editcategoryaxistitle.png)
+
+If we uncheck the `Show Axis Title` property, the Axis title text box property will be hidden.
+
+![Show Category axis title](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-area-chart/show-axis-title.png)
 
 ### Label overflow mode
 
@@ -443,13 +474,13 @@ This option hides the overlapping label in the axis.
 
 This option allows you to `trim` the axis labels based on the `Maximum Label Width` property value.
 
-![Trimmed label](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-area-chart/trimming-label.png)
-
 #### Label Maximum Width
 
 This option allows you to set a `maximum width` for the axis labels, and also it can be made customizable when the `trim axis label` option is enabled.
 
 ![Label maximum width](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-area-chart/maximum-label-width.png)
+
+![Trimmed label](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-area-chart/trimming-label.png)
 
 ### Category Axis Label Rotation
 
@@ -471,6 +502,10 @@ This allows you to enable the `Primary Value Axis` for chart.
 
 ![Show Primary Value Axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-area-chart/show-primary-value.png)
 
+If you disable the `Show Primary Axis` option, dependencies properties, which are **Axis title**, **Axis title text**, **Axis type** and **Axis Format** properties will be hidden.
+
+![Show primary value axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-area-chart/primary-axis.png)
+
 #### Show Primary Value Axis Title
 
 This allows you to enable the visibility of `Primary Value Axis` title of chart.
@@ -482,6 +517,14 @@ This allows you to enable the visibility of `Primary Value Axis` title of chart.
 This allows you to edit the `Primary Value Axis` title. It will reflect in y-axis name of chart. 
 
 ![Primary Value Axis Title](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-area-chart/stackedareachart-primaryvalueaxistitle.png)
+
+### Inverse Axis
+
+By default, the chart axis showing positive values on the top and negative values at the bottom. But, there are times when we need to inverse the axis and show the negative values on the top and positive values on the bottom. For Example, When we bind the temperature data to the chart and to display the negative values on the top, we can make use of this property.
+
+On enabling this property the chart negative values will display on the top and positive values display on the bottom.
+
+![Inversed axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-area-chart/inverseaxis.png)
 
 #### Axis Range Settings
 
@@ -646,7 +689,6 @@ This allows you to set the **background color** to the stacked area chart widget
 This property allows you to specify the **transparency** for the `background color.`
 
 ### Show Shadow
-
 This allows you to toggle the visibility of the `shadow` surrounding the widget.
 
 ### Container actions
@@ -690,3 +732,15 @@ To learn more about viewing the underlying widget data, refer to the[view data d
 #### Pin Widget
 
 This allows you to pin the widget.
+
+#### Responsive Behavior
+
+We hide the widget elements based on the size of the widget for better readability.
+
+When the chart has been placed with less than 7 columns chart Y-axis labels, Y-axis titles will be hidden.
+
+![Widget Element](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-area-chart/Y-axis-label.png)
+
+When the chart has been placed with less than 6 rows, chart X-axis labels, X-axis titles and gridlines will be hidden.
+
+![Widget Element](/static/assets/embedded/visualizing-data/visualization-widgets/images/stacked-area-chart/X-axis-label.png)

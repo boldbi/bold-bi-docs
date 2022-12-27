@@ -49,7 +49,18 @@ Once you click the data source, the NEW DATA SOURCE configuration panel opens.
 
 You can also edit the connection information set here using the [Edit Connection](/embedded-bi/working-with-data-source/editing-a-data-connection/) option.
 
-#### Additional information
+### Preview and Data Import
+* Click **Preview & Connect** to connect with the configurations set.
+* The Choose Schema(s) dialog opens. The schema represents the collection list that are retrieved from the MongoDB server.   This dialog displays a list of schemas in treeview and its corresponding values in grid for preview. Select required schema(s) from treeview to use in designer and click **Connect**.
+
+   ![Preview](/static/assets/embedded/working-with-datasource/data-connectors/images/mongodb/MongoDBDS_Preview.png)
+
+* Now, the data design view page with selected table schema opens. Drag and drop the table.
+   ![Query Editor](/static/assets/embedded/working-with-datasource/data-connectors/images/mongodb/MongoDBDS_QueryEditor.png)
+
+* Click **Save** to save the data source with a relevant name.
+
+### Additional Information
 <table width="600">
 <tr>
 <td>
@@ -69,18 +80,148 @@ On initial connect MongoDB will extract a maximum of 10,000 records. Configure t
 </tr>
 </table>
 
-### Preview and data import
-* Click **Preview & Connect** to connect with the configurations set.
-* The Choose Schema(s) dialog opens. The schema represents the collection list that are retrieved from the MongoDB server.   This dialog displays a list of schemas in treeview and its corresponding values in grid for preview. Select required schema(s) from treeview to use in designer and click **Connect**.
+## Connecting Bold BI to MongoDB Data Source via REST API
 
-   ![Preview](/static/assets/embedded/working-with-datasource/data-connectors/images/mongodb/MongoDBDS_Preview.png)
+### Prerequisites 
 
-* Now, the data design view page with selected table schema opens. Drag and drop the table.
-   ![Query Editor](/static/assets/embedded/working-with-datasource/data-connectors/images/mongodb/MongoDBDS_QueryEditor.png)
+Type while creating the data source needs to be MongoDB.
 
-* Click **Save** to save the data source with a relevant name.
+[Rest API - v4.0](https://help.boldbi.com/embedded-bi/rest-api-reference/v4.0/api-reference/)
 
-### Live connection
+### Parameters for creating Data Source
+
+   <table>
+   <tr>
+   <th>Parameters</th>
+   <th>Type</th>
+   <th>Details</th>
+   </tr>
+   <tr>
+   <td>authenticationDatabase</td>
+   <td>string</td>
+   <td>Authentication database. By default, it will be <b>admin.</b></td>
+   </tr>
+    <tr>
+   <td>authenticationType</td>
+   <td>string</td>
+   <td>Authentication type of the MongoDB server. The Available authentication types are <b>None</b>, <b>SCRAM</b>,<b>x.509.</b> Default authentication type is <b>None</b>.</td>
+   </tr>
+    <tr>
+   <td>database</td>
+   <td>string</td>
+   <td>Name of the database to connect in BoldBI.</td>
+   </tr>
+    <tr>
+   <td>collectionName</td>
+   <td>array</td>
+   <td>Collection name to import into the data source.<BR>
+   <b>NOTE:</b> If you want to import multiple collections, provide required collection names in double quotation and separated by a comma.</td>
+   </tr>
+   <tr>
+   <td>provider</td>
+   <td>string</td>
+   <td>Supported value:<b>MongoDB</b>.</td>
+   </tr>
+    <tr>
+   <td>isSelfSigned</td>
+   <td>boolean</td>
+   <td>Whether the MongoDB server uses SSL and the SSL certificate is self-signed. A self-signed certificate is a digital certificate not signed by any publicly trusted Certificate Authority (CA). <BR>By default provide the isselfsigned value is <b>false.</b></td>
+   </tr>
+    <tr>
+   <td>isSslEnabled</td>
+   <td>boolean </td>
+   <td>Whether your MongoDB server is configured with SSL. By default, it is <b>true.</b></td>
+   </tr>
+    <tr>
+   <td>password</td>
+   <td>string</td>
+   <td>MongoDB server password.</td>
+   </tr>
+    <tr>
+   <td>port</td>
+   <td>integer</td>
+   <td>Port number of the MongoDB server. <BR>By default, it will be <b>27017.</b></td>
+   </tr>
+    <tr>
+   <td>username</td>
+   <td>string</td>
+   <td>MongoDB server user name.</td>
+   </tr>
+   <tr>
+   <td>serverName</td>
+   <td>string</td>
+   <td>MongoDB server name(host name).</td>
+   </tr>
+   <tr>
+   <td>IsSshConnection</td>
+   <td>boolean</td>
+   <td>SSH or Secure Shell is a network communication protocol that enables two computers to communicate (c.f http or hypertext transfer protocol, which is the protocol used to transfer hypertext such as web pages) and share data. <BR>By default provide <b>false.</b></td>
+   </tr>  
+   <tr>
+   <td>SshServerName </td>
+   <td>string</td>
+   <td>Name of the SSH server.By default it is empty.</td>
+   </tr>  
+   <tr>
+   <td>SshPort</td>
+   <td>integer</td>
+   <td>Port number of SSH server.</td>
+   </tr>  
+   <tr>
+   <td>SshUsername</td>
+   <td>string</td>
+   <td>Username for the SSH server.</td>
+   </tr>  
+   <tr>
+   <td>SshPassword </td>
+   <td>string</td>
+   <td>Password for the SSH server.</td>
+   </tr> 
+   <td>sslCertificateData </td>
+   <td>string</td>
+   <td>An SSL certificate is a file installed on a website's origin server. It is simply a data file containing the public key, the website owner's identity, and other information. Without an SSL certificate, a website's traffic can not be encrypted with TLS. <BR>By default, provide <b>null.</b></td>
+   </tr> 
+   <td>sslCertificatePassword </td>
+   <td>string</td>
+   <td>SSL certificate password. By default it is empty.</td>
+   </tr> 
+   <td>dataprovider </td>
+   <td>string</td>
+   <td>Supported value:  <b>MongoDB.</b></td>
+   </tr> 
+   </table>
+ 
+
+### Json Template Syntax:
+
+```json
+
+"Connection": {
+"authenticationDatabase": "string",
+"authenticationType": "string",
+"database": "string",
+"collectionName": [
+"string","string","string"
+],
+"provider": "string",
+"isSelfSigned": false,
+"isSslEnabled": true,
+"password": "string",
+"port": 0,
+"username": "string",
+"serverName": "string",
+"IsSshConnection": false,
+"SshServerName": "string",
+"SshPort": 0,
+"SshUsername": "string",
+"SshPassword": "string",
+"sslCertificateData": "string",
+"sslCertificatePassword": "string",
+"dataprovider": "string"
+}
+```
+
+## Live connection
 * MongoDB connector works on extract mode, so there will be some time needed to extract the data, and it needs to be synchronized periodically. But there is an indirect way to connect MongoDB as a Live connection so you can avoid time taken and Memory usage to create and synchronize the data source. Also, the data will be in your MongoDB, and all query operations will be performed within your MongoDB database.
 * Please follow this [document](https://www.syncfusion.com/kb/11978/mongodb-live-connection-through-mongodb-bi-connector) to connect MongoDB as a Live connection using MySQL connector or through ODBC data source connector.
 

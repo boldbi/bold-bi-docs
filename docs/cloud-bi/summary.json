@@ -9,10 +9,12 @@
 	  "Query Processing Modes": "classification-of-data-sources-queried-directly-and-extracted",
       "Data Connectors": {
         "42matters": "42matters",
+        "Alma":"alma",
         "ActiveCampaign": "activecampaign",
 		"Amazon Athena": "amazon-athena",
         "Amazon Aurora": "amazon-aurora",
         "Amazon MWS": "amazon-mws",
+        "AWS OpenSearch": "aws-opensearch",
         "Amazon RDS": "amazon-rds",
         "Amazon Redshift": "amazon-redshift",
         "Asana": "asana",
@@ -25,12 +27,15 @@
         "Azure Tables": "azure-tables",
         "Azure Search": "azure-search",
         "Bitly": "bitly",
-        "Box": "box",       
+        "BoldDesk": "bolddesk",
+        "Box": "box",
         "Nutshell": "nutshell",
         "CallRail": "callrail",
         "Campaign Monitor": "campaign-monitor",
         "CDATA": "cdata",
+        "Clickhouse":"clickhouse",
         "Chargebee": "chargebee",
+		"Clickhouse":"clickhouse",
         "Chargify": "chargify",
         "Chart Beat": "chart-beat",
         "Commvault": "commvault",
@@ -39,6 +44,7 @@
         "Copper": "copper",
         "Dropbox": "dropbox",
         "EDI": "edi",
+        "Elasticsearch": "elastic-search",
         "Excel": "excel",
         "Facebook": "facebook",
         "Facebook Ads": "facebook-ads",
@@ -47,11 +53,11 @@
         "Flurry": "flurry",
         "FreshBooks": "freshbooks",
         "Freshdesk": "freshdesk",
-        "Freshsales": "freshsales",
+        "Freshworks CRM": "freshworks-crm",
         "Freshservice": "freshservice",
         "Fusebill": "fusebill",
         "Gitlab": "gitlab",
-        "GitHub": "github",        
+        "GitHub": "github",       
         "GoSquared": "go-squared",
         "Google Ads": "google-ads",
         "Google AdSense": "google-adsense",
@@ -108,7 +114,7 @@
         "Raven DB": "ravendb",
         "RSS Feeds": "rss-feeds",
         "Recurly": "recurly",
-        "RESTful Web Services": "restful-web-services",
+        "Web": "Web",
         "Salesforce": "salesforce",
         "Salesforce Reports": "salesforce-reports",
         "SendGrid": "send-grid",
@@ -125,7 +131,7 @@
         "SQLite": "sqlite",
 		"SquareUp":"squareup",
         "Stripe": "stripe",
-        "SurveyGizmo": "survey-gizmo",
+        "Alchemer": "alchemer",
         "SurveyMonkey": "surveymonkey",
         "Twilio": "twilio",
         "Trello": "trello",
@@ -134,6 +140,7 @@
         "WordPress": "wordpress",
         "Wistia": "wistia",
         "Xero": "xero",
+        "Xero WorkflowMax": "xero-workflowmax",
         "Youtube": "youtube",
         "Zendesk": "zendesk",
         "Zendesk Sell": "zendesk-sell",
@@ -141,6 +148,7 @@
         "Zendesk Support": "zendesk-support",
         "Zoho CRM": "zohocrm",
         "Zoho Invoice": "zoho-invoice",
+        "Zoho Books": "zoho-books",
 		"Zuora" : "zuora"
       },
       "Transforming Data": {
@@ -163,8 +171,13 @@
         "Data Source": "user-filter-advanced-data-source-mode",
         "Query": "user-filter-advanced-query-mode"
       },
-      "Dashboard Parameters": "dashboard-parameter",
-      "Configure Dashboard Parameter": "configuring-dashboard-parameters",
+      "Dashboard Parameter":{
+        "Configure Dashboard Parameter":"configuring-dashboard-parameters",
+        "Uses Of Dashboard Parameter":"uses-of-dashboard-parameters",
+        "Uses Of Dashboard Parameter On Other Data Source":"uses-of-dashboard-parameters-on-other-data-source",
+        "Change Dashboard Parameter Value Dynamically":"change-the-dashboard-parameter-value-dynamically",
+        "Change Dashboard Parameter Value In URL":"change-the-dashboard-parameter-value-in-url"
+      },
 	  "Configure Dashboard Parameter Iterative Mode": "dashboard-parameter-iterative-mode",
       "Configure Custom Attribute": "configuring-custom-attribute",
       "White List IP addresses of the Bold BI Cloud servers": "white-list-ip-address-bold-bi-cloud"
@@ -182,6 +195,7 @@
         "100% Stacked Area Chart": "100-stacked-area-chart",
         "Radar Polar Chart": "radar-polar-chart",
         "Maps": "map",
+        "Bing Map": "bing-maps",
         "Grid": "grid",
         "Pivot Grid": "pivot-grid",
         "Tree Map": "tree-map",
@@ -196,6 +210,7 @@
         "Line Chart": "line-chart",
 		"Spline Area Chart": "spline-area-chart",
         "Spline Chart": "spline-chart",
+        "Scatter Chart": "scatter-chart",
         "Combination Chart": "combo-chart",
         "List Box": "list-box",
         "Combo Box": "combo-box",
@@ -205,6 +220,8 @@
         "Period Over Period": "period-over-period",
         "Image": "image",
         "Text": "text",
+        "Text Filter": "text-filter",
+        "Tab Widget": "tab-widget",
         "Combine Widget ": "combine-widget"
       },
       "Working with Widgets": {
@@ -293,7 +310,10 @@
     "Site Administration": {
 	  "Look and Feel Settings": {
         "How to create custom application theme": "create-custom-application-theme",
-        "How to create custom dashboard theme": "create-custom-dashboard-theme"
+        "How to create custom dashboard theme": "create-custom-dashboard-theme",
+        "custom theme viewer": {
+          "Migrate JSON property to Theme variable":"migrate-json-property-to-theme-variable"
+        }
       },
       "Dashboard Settings": {
         "Public Dashboards": "public-dashboards",
@@ -309,6 +329,10 @@
       "Azure Active Directory": {
         "Azure Active Directory Synchronization Schedule": "azure-active-directory-synchronization-schedule"
       },
+	  "Integrations": {
+        "Webhook Listing": "webhook-listing",
+        "Failure Logs": "failure-logs"
+      },
       "Login Disclaimer": "login-disclaimer",
       "Subscription": "subscription",
       "Payments": {
@@ -320,6 +344,14 @@
       "Custom Domains": "custom-domains"
     },
     "Migration Utility": "migration-utility",
+	"Manage Webhooks": {
+      "Payload": "webhook-payload"
+    },
+	"Security Configuration": {
+      "CORS Settings": "cors-settings",
+      "Content Security Policy Settings": "content-security-policy",
+      "X-Frame-Options Configuration": "x-frame-options"
+    },
     "Accessing through Mobile App": {
       "Getting Started": "getting-started",
       "Dashboard": "dashboard",
@@ -375,9 +407,16 @@
       "How to execute R language scripts using MS SQL data source in Bold BI":"how-to-execute-r-language-scripts-using-ms-sql-datasource-in-bold-bi",
       "How to connect polymorphic databases in Bold BI": "how-to-connect-polymorphic-databases-in-bold-bi",
       "How to group the data using Bold BI": "how-to-group-the-data-using-bold-bi",
+      "Troubleshoot gateways - Bold BI": "troubleshoot-gateways-boldbi",
+	  "How to join tables based on expression columns":"how-to-join-tables-based-on-expression-columns",
+	  "How to show raw data in grid widget":"how-to-show-raw-data-in-grid-widget",
     "Working with custom query extract mode in Bold BI":"working-with-custom-query-extract-mode-in-bold-bi",
     "How to configure Relative date filter based on minutes":"how-to-configure-relative-date-filter-based-on-minutes",
-    "How to use Median aggregation in Bold BI" : "how-to-use-median-aggregation-in-bold-bi"
-    }
+    "How to use Median aggregation in Bold BI" : "how-to-use-median-aggregation-in-bold-bi",
+    "How to generate access token to authenticate users":"how-to-generate-access-token-to-authenticate-user",
+    "How to create custom sort order in Bold BI":"how-to-create-custom-sort-order-in-bold-bi",    
+    "How to create different If condition-based expressions in Bold BI":"how-to-create-different-if-condition-based-expressions-in-bold-bi",
+    "Impact of CSP policy on dashboards in Cloud BI": "how-will-the-dashboard-get-affected-while-csp-enabled"
   }
+}
 }
