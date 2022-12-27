@@ -106,19 +106,25 @@ You can format the Date Picker for a better illustration of the view that you re
 
 ### General Settings
 
-![date picker name](/static/assets/embedded/visualizing-data/visualization-widgets/images/date-picker/general-settings.png)
+![date picker name](/static/assets/embedded/visualizing-data/visualization-widgets/images/date-picker/property.png)
 
 #### Name
 
 This allows you to set the `title` for this date picker widget.
 
+![date picker name](/static/assets/embedded/visualizing-data/visualization-widgets/images/date-picker/Title.png)
+
 #### Subtitle
 
 This allows you to set the `subtitle` for this date picker widget.
 
+![date picker name](/static/assets/embedded/visualizing-data/visualization-widgets/images/date-picker/Subtitle.png)
+
 #### Description
 
 This allows you to set the brief explanation about this date picker widget.
+
+![date picker name](/static/assets/embedded/visualizing-data/visualization-widgets/images/date-picker/Description.png)
 
 #### Basic Settings
 

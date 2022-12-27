@@ -141,13 +141,11 @@ You can see the information of respective Data Source in dialog box. Click `Acti
 ![Data Sources Info Popup](/static/assets/embedded/managing-resources/images/datasources-info-popup.png#width=55%)
 
 ## Copy Data Sources  
-You can copy the data source item only for the data source type in **Live** mode connection.
+Copy the data source item for the data sources of the type **Live** and **Extract** mode connection.
 
 Click the `Actions` button in the data sources grid context menu and select `Copy Data Source` to copy the data source.  
 
 ![Copy Data Source](/static/assets/embedded/managing-resources/images/copy-data-source.png#width=55%)  
-
-> **NOTE:**  The copy option shown only for Live mode connection like SQL and won't shown for Extract mode connection like files, web API, etc.
 
 ## Draft Data Sources
 The **Data Source** will be automatically saved as draft when the user did not published the created data source.

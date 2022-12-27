@@ -159,6 +159,69 @@ var dashboard = BoldBI.create({
 });
 dashboard.loadDashboard();        
 ```
+
+### onInteraction
+
+`dashboardSettings.onInteraction`
+
+This event will be triggered once the master widget applying and clearing filters are completed.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Access</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">eventType</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="access">get</td>
+<td class="description">Will holds the current event type that triggered the event.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type"><a href=/embedded-bi/javascript-based/api-reference/events/#dashboardproperties>object</a></span></td>
+<td class="access">get</td>
+<td class="description">Holds the dashboard viewer's object.</td>
+</tr>
+<tr>
+<td class="name">source.data</td>
+<td class="type"><span class="param-type">object</a></span></td>
+<td class="access">get</td>
+<td class="description">Holds the master widget and its filter values details.</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="access">get</td>
+<td class="description">Holds the parent event type of the current event.</td>
+</tr>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="access">set</td>
+<td class="description">Holds the cancel value of the current operation.</td>
+</tr>
+</tbody>
+</table>
+
+**Example** 
+   
+```js
+var dashboard = BoldBI.create({
+     dashboardSettings: {
+          onInteraction: function (args) {
+               // Write a code block to operate after a master widget interaction is completed.
+          } 
+     }  
+});
+dashboard.loadDashboard();        
+```
+
 ## widgetSettings
 ### widgetSettings.beforeIconRender
     
@@ -562,7 +625,23 @@ dashboard.loadDashboard();
 </tr>
 <tr>
 <td class="name">clearFilter</td>
-<td class="description">This event will trigger when you clear the filters in each widget and also from the filter overview drop-down.</td>
+<td class="description">This event will trigger when you clear the individual filter in the filter overview.</td>
+</tr>
+<tr>
+<td class="name">clearAllFilter</td>
+<td class="description">This event will trigger when you clear all the filters in the filter overview drop-down.</td>
+</tr>
+<tr>
+<td class="name">clearWidgetFilter</td>
+<td class="description">This event will trigger when you clear the filter in the widget.</td>
+</tr>
+<tr>
+<td class="name">exporting</td>
+<td class="description">This event will trigger when the dashboard exporting gets started.</td>
+</tr>
+<tr>
+<td class="name">datasourceConfiguration</td>
+<td class="description">This event will trigger when the datasource icon is clicked.</td>
 </tr>
 </tbody>
 </table>
@@ -621,6 +700,7 @@ var dashboard = BoldBI.create({
 });
 dashboard.loadDashboard(); 
 ```
+
 ### Event Types
 <table class="params">
 <thead>
@@ -647,22 +727,6 @@ dashboard.loadDashboard();
 <td class="description">This event will trigger when the ViewData dialog box closes.</td>
 </tr>
 <tr>
-<td class="name">informationOpen</td>
-<td class="description">This event will trigger when the information pop-up opens, when you click on the info icon.</td>
-</tr>
-<tr>
-<td class="name">informationClose</td>
-<td class="description">This event will trigger when the information pop-up closes.</td>
-</tr>
-<tr>
-<td class="name">getLinkDialogOpen</td>
-<td class="description">This event will trigger when the Get Link dialog box opens when you click the Get Link icon option in the context menu present on dashboard header.</td>
-</tr>
-<tr>
-<td class="name">getLinkDialogClose</td>
-<td class="description">This event will trigger when the Get Link dialog box closes.</td>
-</tr>
-<tr>
 <td class="name">exporting</td>
 <td class="description">This event will trigger when the dashboard exporting gets started.</td>
 </tr>
@@ -671,16 +735,12 @@ dashboard.loadDashboard();
 <td class="description">This event will trigger when the dashboard exporting gets completed.</td>
 </tr>
 <tr>
-<td class="name">clearAllFilter</td>
-<td class="description">This event will trigger when you clear all the filters from the filter overview drop-down.</td>
+<td class="name">clearFilter</td>
+<td class="description">This event will trigger when you clear the individual filter in the filter overview and gets completed.</td>
 </tr>
 <tr>
-<td class="name">clearIndividualFilter</td>
-<td class="description">This event will trigger when you clear all the filters in each widget and also from the filter overview drop-down.</td>
-</tr>
-<tr>
-<td class="name">interactionCompleted</td>
-<td class="description">This event will trigger once the master widget interactions completed.</td>
+<td class="name">clearWidgetFilter</td>
+<td class="description">This event will trigger when you clear the filter in the widget and gets completed.</td>
 </tr>
 <tr>
 <td class="name">Save</td>
@@ -824,7 +884,7 @@ dashboard.loadDashboard();
 
 ## beforeDashboardMobileMenuOpen
 
-This event will be triggered after a More option icon from the dashboard banner is clicked.
+This event will be triggered after more options icon from the dashboard banner is clicked in the mobile view.
 
 <table class="params">
 <thead>
@@ -837,7 +897,7 @@ This event will be triggered after a More option icon from the dashboard banner 
 </thead>
 <tbody>
 <tr>
-<td class="name">data</td>
+<td class="name">menuItems</td>
 <td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">array</span></td>
 <td class ="access">get</td>
 <td class="description">Will holds the array of menu list</td>
@@ -850,7 +910,7 @@ This event will be triggered after a More option icon from the dashboard banner 
 ```js
 var dashboard = BoldBI.create({
      beforeDashboardMobileMenuOpen: function (args) {
-          // Write a code block to perform an operation before the url linking navigation called. 
+          // Write a code block to operate after more option from the dashboard banner is clicked in the mobile view.
      } 
 });
 dashboard.loadDashboard();
@@ -929,7 +989,7 @@ This event will be triggered before the filter is applied.
 ```js
 var dashboard = BoldBI.create({
      beforeFilterApply: function (args) {
-          // Write a code block to perform an operation before the dashboard context menu is rendered 
+          // Write a code block to operate before the filter is applied. 
      } 
 });
 dashboard.loadDashboard();        
@@ -1007,7 +1067,7 @@ This event will be triggered after the filter is applied.
 ```js
 var dashboard = BoldBI.create({
      afterFilterApply: function (args) {
-          // Write a code block to perform an operation before the dashboard context menu is rendered 
+          // Write a code block to operate after the filter is applied.
      } 
 });
 dashboard.loadDashboard();        
@@ -1018,7 +1078,6 @@ dashboard.loadDashboard();
 This event will be triggered in following actions. <br>
 
 1. To `Publish` or `Save` the new dashboard.<br>
-
 2. To `PublishAs` or `SaveAs` the existing dashboards.
 
  <table class="params">
@@ -1060,7 +1119,9 @@ var dashboard = BoldBI.create({
      mode: BoldBI.Mode.Design,
      dashboardSettings:
       { 
-         beforePublishAs :function (args) {
+         beforePublishAs: function (args) {
+               //Write a code block to perform an operation before publish the dashboard.
+              //Write a code block to perform an operation before publish the dashboard.
          } 
       } 
 });
@@ -1104,7 +1165,7 @@ dashboard.loadDesigner();
 var dashboard = BoldBI.create({
      ajaxBeforeLoad: function (args) {
           // Write a code block to add a new payload header. 
-          // var header = { key : 'UserId',value : '1005'};
+          // var header = { Key : 'UserId', Value : '1005'};
           // args.headers.push(header);
      } 
 });
@@ -1113,24 +1174,26 @@ dashboard.loadDashboard();
 
 ## beforeDesignerToolbarButtonsRendered
 
-This event will be triggered before the tool bar button is rendered.
+This event will be triggered before the tool bar buttons are rendered.
 
 <table class="params">
 <thead>
 <tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
+<th style="width:20%;">Name</th>
+<th style="width:20%;">Type</th>
+<th style="width:60%;">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td class="name">args.toolbarButtons</td>
 <td class="type"><span class="param-type">array[]</span></td>
-<td class="description">Holds the details all the tool bar Buttons <br>
- args.toolbarButtons.class ->Set the Class name of newly added tool bar button  <br>
- args.toolbarButtons.elementId ->Set the Id of newly added tool bar button. <br>
- args.toolbarButtons.label ->Set the Label of newly added tool bar button.
+<td class="description">Holds the details all the tool bar Buttons. <br>
+<table>
+    <tr><td>args.toolbarButtons.class</td><td>Set the Class name of newly adding tool bar button</td></tr>
+    <tr><td>args.toolbarButtons.elementId</td><td>Set the Id of newly adding tool bar button.</td></tr>
+    <tr><td>args.toolbarButtons.label</td><td>Set the Label of newly adding tool bar button.</td></tr>
+</table>
 </td>
 </tr>
 </tbody>
@@ -1140,19 +1203,17 @@ This event will be triggered before the tool bar button is rendered.
 
 ```js
 var dashboard = BoldBI.create({
-        mode: BoldBI.Mode.Design,
-        dashboardSettings:
-           {    
-                beforeDesignerToolbarButtons :function (args) {
-               // Write a code block to add a button before the dashboard banner icons are rendered.
-               //  args.toolbarButtons.push(
-               //       {
-               //            class:'new-btn-class',
-               //            elementId:'new_id',
-               //            label:'External Button',    
-               //       });
-               } 
-          } 
+     mode: BoldBI.Mode.Design,
+     dashboardSettings: {    
+          beforeDesignerToolbarButtons: function (args) {
+               // Write a code block to add an external button before the dashboard banner buttons are rendered.
+               // args.toolbarButtons.push({
+               //   class:'new-btn-class',
+               //   elementId:'new-button-id',
+               //   label:'External Button',    
+               // });
+          }
+     } 
 });
 dashboard.loadDesigner();  
 ```
@@ -1161,18 +1222,360 @@ dashboard.loadDesigner();
 
 ```js
 var dashboard = BoldBI.create({
-      mode: BoldBI.Mode.Design,
-      dashboardSettings:
-       { 
-        beforeDesignerToolbarButtons :function (args) {
-         //  Write a code block to remove an existing button before the dashboard banner icons are rendered. You need to mention the index value to remove the specific button.
-         //  args.toolbarButtons.splice(1); 
-        } 
-       } 
+     mode: BoldBI.Mode.Design,
+     dashboardSettings: {
+          beforeDesignerToolbarButtons: function (args) {
+               //  Write a code block to remove an existing button before the dashboard banner buttons are rendered.
+               // args.toolbarButtons.forEach(function (button, index, object) {
+               //   if (button.label == "Preview") {
+               //      object.splice(index, 1);
+               //   }
+               // });
+          }
+     }
 });
 dashboard.loadDesigner();  
 ```
 
+## beforeDesignerToolbarIconsRendered
+
+This event will be triggered before the designer toolbar icons were rendered. You can add or remove icons in the toolbar by this event.
+
+<table class="params">
+<thead>
+<tr>
+<th style="width: 20%;">Name</th>
+<th style="width: 20%;">Type</th>
+<th style="width: 60%;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">args.toolbarIcons</td>
+<td class="type"><span class="param-type">array[]</span></td>
+<td class="description">Holds the details of the designer toolbar Icons.<br>
+     <table>
+     <tr><td>args.toolbarIcons.class</td><td>Set the Class name of newly adding icon.</td></tr>
+     <tr><td>args.toolbarIcons.elementId</td><td>Set the id of newly adding icon.</td></tr>
+     <tr><td>args.toolbarIcons.enableSeperator</td><td>Set <code>true</code> if the seperator needed for the adding icon, otherwise set <code>false</code>.<br>Note: It will not shows at the last positioned icon even if it is enabled.</td></tr>
+     <tr><td>args.toolbarIcons.iconType</td><td>Set the icon type either <code>default</code> which represents BoldBI font icon or <code>custom</code> which represents custom or external font icon.</td></tr>
+     <tr><td>args.toolbarIcons.iconTooltip</td><td>Set the tool-tip of newly adding icon.</td></tr>
+     <tr><td>args.toolbarIcons.label</td><td>Set the icon name of newly adding icon.</td></tr>
+     </table>
+</td>
+</tr>
+</tbody>
+</table>
+
+**Example for adding new icon in designer toolbar** 
+
+```js
+var dashboard = BoldBI.create({
+     mode: BoldBI.Mode.Design,
+     dashboardSettings: {
+          beforeDesignerToolbarIconsRendered: function (args) {
+               // Write a code block to add an external icon other than boldbi before the designer toolbar icons were rendered.
+               // args.toolbarIcons.push({
+               //   class:'fa fa-comments',
+               //   iconType:'custom',
+               //   iconTooltip:'Comment',
+               //   label:'Comment'
+               // });   
+          }
+     }
+});
+dashboard.loadDesigner();  
+```
+
+**Example for removing a icon from designer toolbar** 
+
+```js
+var dashboard = BoldBI.create({
+     mode: BoldBI.Mode.Design,
+     dashboardSettings: {
+          beforeDesignerToolbarIconsRendered: function (args) {
+               //  Write a code block to remove an existing icon before the designer toolbar icons are rendered.
+               // args.toolbarIcons.forEach(function (icon, index, object) {
+               //   if (icon.label == "Undo") {
+               //      object.splice(index, 1);
+               //   }
+               // });
+          }
+     }       
+});
+dashboard.loadDesigner();  
+```
+
+## beforeDatasourceToolbarButtonsRendered
+
+This event will be triggered before the datasource toolbar buttons were rendered. You can add or remove button in the toolbar by this event.
+
+<table class="params">
+<thead>
+<tr>
+<th style="width: 20%;">Name</th>
+<th style="width: 20%;">Type</th>
+<th style="width: 60%;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">args.toolbarButtons</td>
+<td class="type"><span class="param-type">array[]</span></td>
+<td class="description">Holds the details of datasource toolbar Buttons. <br>
+     <table>
+     <tr><td>args.toolbarButtons.class</td><td>Set the Class name of newly toolbar button.</td></tr>
+     <tr><td>args.toolbarButtons.elementId</td><td>Set the Id of newly adding button.</td></tr>
+     <tr><td>args.toolbarButtons.isActionBtn</td><td>Set <true>true</code> if the newly adding button wants to be in the group of the action buttons like Save, Cancel and Continue To Dashboard. Default value is false, since new button would be added at end of icon section.</td></tr>
+     <tr><td>args.toolbarButtons.label</td><td>Set the Label of newly adding button.</td></tr>
+     </table>
+</td>
+</tr>
+</tbody>
+</table>
+
+**Example for adding new button in datasource toolbar** 
+
+```js
+var dashboard = BoldBI.create({
+     mode: BoldBI.Mode.Datasource,
+     dashboardSettings: {
+          beforeDatasourceToolbarButtonsRendered: function (args) {
+               // Write a code block to add a new button before the datasource toolbar buttons were rendered.
+               // args.toolbarButtons.push({
+               //   class:'new-button-class',
+               //   elementId:'new-button-id',
+               //   isActionBtn:true,
+               //   label:'External button'
+               // });
+          }
+     }
+});
+dashboard.loadDatasource();  
+```
+
+**Example for removing a button from the datasource page** 
+
+```js
+var dashboard = BoldBI.create({
+     mode: BoldBI.Mode.Datasource,
+     dashboardSettings: {
+          beforeDatasourceToolbarButtonsRendered: function (args) {
+               //  Write a code block to remove an existing button before the datasource tool toolbar buttons were rendered.
+               // args.toolbarButtons.forEach(function (button, index, object) {
+               //   if (button.label == "Cancel") {
+               //      object.splice(index, 1);
+               //   }
+               // });
+          }
+     }
+});
+dashboard.loadDatasource();  
+```
+
+## beforeDatasourceToolbarIconsRendered
+
+This event will be triggered before the datasource toolbar icons were rendered. You can add or remove icon in the toolbar by this event.
+
+<table class="params">
+<thead>
+<tr>
+<th style="width: 20%;">Name</th>
+<th style="width: 20%;">Type</th>
+<th style="width: 60%;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">args.toolbarIcons</td>
+<td class="type"><span class="param-type">array[]</span></td>
+<td class="description">Holds the details of the datasource toolbar Icons. <br>
+     <table>
+     <tr><td> args.toolbarIcons.class</td><td>Set the Class name of newly adding icon.</td></tr>
+     <tr><td>args.toolbarIcons.elementId</td><td>Set the Id of newly adding icon.</td></tr>
+     <tr><td>args.toolbarIcons.enableSeperator</td><td>Set <code>true</code> if the separator needed for the adding icon, otherwise set <code>false</code>.</td></tr>
+     <tr><td>args.toolbarIcons.iconType</td><td>Set the icon type either <code>default</code> for BoldBI font icon or <code>custom</code> for custom or external font icon.</td></tr>
+     <tr><td>args.toolbarIcons.iconTooltip</td><td>Set the tool-tip of newly adding toolbar icon.</td></tr>
+     <tr><td>args.toolbarIcons.label</td><td>Set the icon name of newly adding icon.</td></tr>
+     </table>
+</td>
+</tr>
+</tbody>
+</table>
+
+**Example for adding new icon in datasource toolbar** 
+
+```js
+var dashboard = BoldBI.create({
+     mode: BoldBI.Mode.Datasource,
+     dashboardSettings: {
+          beforeDatasourceToolbarIconsRendered: function (args) {
+               // Write a code block to add an external icon other than Bold BI before the data source toolbar icons are rendered.
+               // args.toolbarIcons.push({
+               //   class:'fa fa-comments',
+               //   iconType:'custom',
+               //   iconTooltip:'Comment',
+               //   label:'Comment'
+               // });
+          }
+     }
+});
+dashboard.loadDatasource();  
+```
+
+**Example for removing a icon from the datasource toolbar** 
+
+```js
+var dashboard = BoldBI.create({
+     mode: BoldBI.Mode.Datasource,
+     dashboardSettings: {
+          beforeDatasourceToolbarIconsRendered: function (args) {
+               //  Write a code block to remove an existing button before the datasource toolbar icons were rendered.
+               // args.toolbarIcons.forEach(function (icon, index, object) {
+               //   if (icon.label == "Run") {
+               //      object.splice(index, 1);
+               //   }
+               // });
+          }
+     }
+});
+dashboard.loadDatasource();  
+```
+
+## beforeWidgetItemsListed
+
+This event will be triggered before the widget item panel is rendered. You can able to remove specific group or specific widget item in the item panel by the event.
+
+>**Note**: This event will be triggered again if the preConfiguredWidgets API enabled.
+
+<table class="params">
+<thead>
+<tr>
+<th style="width: 20%;">Name</th>
+<th style="width: 20%;">Type</th>
+<th style="width: 60%;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">args.widgetInfo</td>
+<td class="type"><span class="param-type">array[]</span></td>
+<td class="description">Holds the details of the widget groups like GroupName and GroupId.
+</td>
+</tr>
+<tr>
+<td class="name">args.widgetInfo.Items</td>
+<td class="type"><span class="param-type">array[]</span></td>
+<td class="description">Holds the details of the widget items like id, tooltip, widgetDisplayName and so on.
+</td>
+</tr>
+</tbody>
+</table>
+
+**Example for removing a existing group** 
+
+```js
+var dashboard = BoldBI.create({
+     mode: BoldBI.Mode.Design,
+     widgetSettings: { 
+          beforeWidgetItemsListed: function (args) {
+               // Write a code block to remove an 'Comparison' group before the widget panel is rendered.
+               // args.widgetInfo.forEach(function (group, index, object) {
+               //   if (group.GroupName == "Comparison") {
+               //        object.splice(index, 1);
+               //    }
+               // });
+          }
+     }
+});
+dashboard.loadDesigner();  
+```
+
+**Example for removing a existing widget from specific group** 
+
+```js
+var dashboard = BoldBI.create({
+     mode: BoldBI.Mode.Design,
+     widgetSettings: { 
+          beforeWidgetItemsListed: function (args) {
+               //  Write a code block to remove an 'Bar' widget before the widget panel is rendered.
+               // args.widgetInfo.forEach(function (group, gIndex, gObject) {
+               //   if (group.GroupName == "Comparison") {
+               //        group.Items.forEach(function (item, iIndex, iObject) {
+               //             if (item.widgetDisplayName == "Bar") {
+               //                  iObject.splice(iIndex, 1);
+               //             }
+               //        });
+               //   }
+               // });
+     }
+});
+dashboard.loadDesigner();  
+```
+
+## toolbarClick
+
+This event will be triggered when the designer toolbar icon/button is clicked.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Access</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">click</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="access">get</td>
+<td class="description">Holds the name of the icon/button clicked.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type"><a href=/embedded-bi/javascript-based/api-reference/events/#dashboardproperties>object</a></span></td>
+<td class="access">get</td>
+<td class="description">Holds the dashboard designer's object.</td>
+</tr>
+<tr>
+<td class="name">target</td>
+<td class="type"><span class="param-type">array</span></td>
+<td class="access">get</td>
+<td class="description">Contains the parent element of the selected icon/button.</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">enum</span></td>
+<td class="access">get</td>
+<td class="description">Holds the current event type.</td>
+</tr>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="access">set</td>
+<td class="description">Holds the cancel value of the current operation.</td>
+</tr>
+</tbody>
+</table>
+
+**Example** 
+   
+```js
+var dashboard = BoldBI.create({
+     mode: BoldBI.Mode.Design,
+     dashboardSettings: {
+          toolbarClick: function (args) {
+               // if (args.click == "Copy")
+                    // Write a code block to perform an operation when the Copy icon from designer toolbar is clicked.
+               // if (args.click == "Preview")
+                    // Write a code block to perform an operation when the Preview button from designer toolbar is clicked.
+          }   
+     }
+});
+dashboard.loadDesigner();        
+```
 
 ## beforeDatasourceSave
 
@@ -1365,7 +1768,7 @@ This event will be triggered when you perform the drag widget from the pinboard.
 ```js
 var dashboard = BoldBI.create({
      onDrag: function (args) {
-          // Write a code block to perform an operation click the unpin widget.
+          // Write a code block to operate when you drag the widget from the pinboard.
      } 
 });
 dashboard.loadPinboard();
@@ -1403,7 +1806,7 @@ This event will be triggered when you drop the widget.
 ```js
 var dashboard = BoldBI.create({
      onDrop: function (args) {
-          // Write a code block to perform an operation click the unpin widget.
+          // Write a code block to operate when you drop the widget in the pinboard.
      } 
 });
 dashboard.loadPinboard();
@@ -1441,7 +1844,7 @@ This event will be triggered when you change the layout of the pinboard.
 ```js
 var dashboard = BoldBI.create({
      onLayoutChange: function (args) {
-          // Write a code block to perform an operation click the unpin widget.
+          // Write a code block to operate when you change the layout of the pinboard.
      } 
 });
 dashboard.loadPinboard();
@@ -1479,11 +1882,12 @@ This event will be triggered when you resize the pinboard.
 ```js
 var dashboard = BoldBI.create({
      onResize: function (args) {
-          // Write a code block to perform an operation click the unpin widget.
+          // Write a code block to operate when you resize the pinboard.
      } 
 });
 dashboard.loadPinboard();
 ```
+
 ## DashboardProperties
 This section describes the dashboard properties of the viewer object.
 <table>

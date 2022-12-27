@@ -1,4 +1,4 @@
-﻿{
+{
   "openapi": "3.0.1",
   "info": {
     "title": "API Reference",
@@ -1018,6 +1018,58 @@
         }
       }
     },
+    "/v4.0/dashboards/{dashboardId}/widgets": {
+      "get": {
+        "tags": [
+          "Dashboard"
+        ],
+        "summary": "Get Widgets of Dashboard",
+        "description": "Users who created the dashboard can view their widgets details.",
+        "operationId": "Dashboards_GetWidgets",
+        "parameters": [
+          {
+            "name": "dashboardId",
+            "in": "path",
+            "description": "ID of the dashboard to get widget list.",
+            "required": true,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string",
+              "format": "guid",
+              "nullable": false
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "List of widgets was retrieved successfully.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ApiGetWidget"
+                  }
+                }
+              }
+            }
+          },
+          "204": {
+            "description": "Widget list is empty.",
+            "content": {}
+          },
+          "401": {
+            "description": "Access denied.",
+            "content": {}
+          },
+          "405": {
+            "description": "Request type was not GET.",
+            "content": {}
+          }
+        }    
+      }  
+    },
     "/v4.0/dashboards/drafts": {
       "post": {
         "tags": [
@@ -1280,6 +1332,108 @@
             "content": {}
           }
         }
+      },
+      "post": {
+        "tags": [
+          "DataSource"
+        ],
+        "summary": "Create Data Source",
+        "description": "Create a data source.",
+        "operationId": "DataSource_CreateDataSource",
+        "requestBody": {
+          "description": "The following documentation explains how a user can create a data source using the API",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ApiDataSourceAttribute"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "The data source has been created successfully.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/WebAPItemResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Item name is empty",
+            "content": {}
+          },
+          "401": {
+            "description": " Unauthorized.",
+            "content": {}
+          },
+          "404": {
+            "description": "Requested resource is not found.",
+            "content": {}
+          },
+          "409": {
+            "description": "Item name already exists.",
+            "content": {}
+          },
+          "411": {
+            "description": "Content-length is required.",
+            "content": {}
+          }
+        },
+        "x-codegen-request-body-name": "apiDataSourceConnectionAdd"
+      },
+      "put": {
+        "tags": [ "DataSource" ],
+        "summary": "Update Data Source",
+        "description": "Updates an existing data source in a particular site. \n\n Note: Update data source API is only applicable for a live SQL data source.",
+        "operationId": "DataSource_UpdateDataSource",
+        "requestBody": {
+          "description": "Details about the data source passed will be updated.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ApiUpdateDataSourceAttribute"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "The data source has been updated successfully.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/WebAPItemResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Item name is empty",
+            "content": {}
+          },
+          "401": {
+            "description": " Unauthorized.",
+            "content": {}
+          },
+          "404": {
+            "description": "Requested resource is not found.",
+            "content": {}
+          },
+          "409": {
+            "description": "Item name already exists.",
+            "content": {}
+          },
+          "411": {
+            "description": "Content-length is required.",
+            "content": {}
+          }
+        },
+        "x-codegen-request-body-name": "apiUpdateDataSourceV4"
       }
     },
     "/v4.0/datasources/{itemId}/copy": {
@@ -1357,60 +1511,6 @@
           }
         },
         "x-codegen-request-body-name": "apiCopyDatasource"
-      }
-    },
-    "/v4.0/datasources/connection": {
-      "post": {
-        "tags": [
-          "DataSource"
-        ],
-        "summary": "Create a Live Web API data source",
-        "description": "Create a Live Web API data source.",
-        "operationId": "DataSource_WebAPILive",
-        "requestBody": {
-          "description": "The following documentation explains how a user can create a Live Web data source using the API:",
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/ApiLiveDataSourceAttribute"
-              }
-            }
-          },
-          "required": true
-        },
-        "responses": {
-          "200": {
-            "description": "The Live Web data source data source has been created successfully.",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/WebAPItemResponse"
-                }
-              }
-            }
-          },
-          "400": {
-            "description": "Item name is empty",
-            "content": {}
-          },
-          "401": {
-            "description": " Unauthorized.",
-            "content": {}
-          },
-          "404": {
-            "description": "Requested resource is not found.",
-            "content": {}
-          },
-          "409": {
-            "description": "Item name already exists.",
-            "content": {}
-          },
-          "411": {
-            "description": "Content-length is required.",
-            "content": {}
-          }
-        },
-        "x-codegen-request-body-name": "apiLiveDatasource"
       }
     },
     "/v4.0/datasources/{datasourceId}": {
@@ -1514,83 +1614,6 @@
           }
         }
       }
-    },
-    "v4.0/data-sources/connection": {
-      "post": {
-        "tags": [
-          "DataSource"
-        ],
-        "summary": "Create a MongoDB data source.",
-        "description": "The following documentation explains how a user can create a MongoDB data source using the API:",
-        "operationId": "DataSource_MongoDBDataSource",
-        "parameters": [
-          {
-            "name": "Headerschema",
-            "in": "path",
-            "description": "• Nagivate to any dashboard designer page to get your build access token.<br>• Right-click on your dashboard designer page--->Select view page source and copy the content values of the access token.<br>• Add this token in postman headers with key as Authorization and values as Bearer {Your_token}.",
-            "required": true,
-            "style": "simple",
-            "explode": false,
-            "schema": {
-              "type": "string",
-              "format": "Bearer",
-              "nullable": false
-            }
-          }
-        ],
-        "requestBody": {
-          "description": "Format your MongoDB configuration in the format below to frame an HTTP Body to create a data source.",
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/mongodbapiresponse"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "DataSource published successfully.",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/apimongodbresponse"
-                }
-              }
-            }
-          },
-          "400": {
-            "description": "The content of the request body is missing or incomplete.",
-            "content": {}
-          },
-          "401": {
-            "description": "Access denied.",
-            "content": {}
-          },
-          "404": {
-            "description": "Item details not found.",
-            "content": {}
-          },
-          "405": {
-            "description": "Request type was not POST.",
-            "content": {}
-          },
-          "406": {
-            "description": "The content of the request body is invalid.",
-            "content": {}
-          },
-          "409": {
-            "description": "Item name already exists.",
-            "content": {}
-          },
-          "417": {
-            "description": "Failed to create the DataSource.",
-            "content": {}
-          }
-        },
-        "x-codegen-request-body-name": "apiMongoDBDatasource"
-      }
-            
     },
     "/v4.0/items": {
       "get": {
@@ -2217,60 +2240,6 @@
         }
       }
     },
-    "/v4.0/groups/azure-active-directory/import": {
-      "post": {
-        "tags": [
-          "Groups"
-        ],
-        "summary": "Add Azure AD Groups",
-        "description": "Import the group(s) from Azure Active Directory.",
-        "operationId": "Groups_AddAzureADGroup",
-        "requestBody": {
-          "description": "Name of the group.",
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/ApiAzureADGroup"
-              }
-            }
-          },
-          "required": true
-        },
-        "responses": {
-          "200": {
-            "description": "Group has been imported successfully.",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ApiAzureGroupImportResponse"
-                }
-              }
-            }
-          },
-          "400": {
-            "description": "The content of the request body is missing or incomplete.",
-            "content": {}
-          },
-          "401": {
-            "description": "Access denied.",
-            "content": {}
-          },
-          "405": {
-            "description": "Request type was not POST.",
-            "content": {}
-          },
-          "406": {
-            "description": "The content of the request body is invalid.",
-            "content": {}
-          },
-          "412": {
-            "description": "Azure AD details are not configured.",
-            "content": {}
-          }
-        },
-        "x-codegen-request-body-name": "groupName"
-      }
-    },
     "/v4.0/groups": {
       "post": {
         "tags": [
@@ -2532,6 +2501,60 @@
             "content": {}
           }
         }
+      }
+    },
+    "/v4.0/groups/azure-active-directory/import": {
+      "post": {
+        "tags": [
+          "Groups"
+        ],
+        "summary": "Add Azure AD Groups",
+        "description": "Import the group(s) from Azure Active Directory.",
+        "operationId": "Groups_AddAzureADGroup",
+        "requestBody": {
+          "description": "Name of the group.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ApiAzureADGroup"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Group has been imported successfully.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiAzureGroupImportResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "The content of the request body is missing or incomplete.",
+            "content": {}
+          },
+          "401": {
+            "description": "Access denied.",
+            "content": {}
+          },
+          "405": {
+            "description": "Request type was not POST.",
+            "content": {}
+          },
+          "406": {
+            "description": "The content of the request body is invalid.",
+            "content": {}
+          },
+          "412": {
+            "description": "Azure AD details are not configured.",
+            "content": {}
+          }
+        },
+        "x-codegen-request-body-name": "groupName"
       }
     },
     "/v4.0/groups/{id}/users": {
@@ -3209,6 +3232,40 @@
         }
       }
     },
+    "/v4.0/settings/embed-secret/generate": {
+      "post": {
+        "tags": [
+          "Settings"
+        ],
+        "summary": "Generate Embed Secret",
+        "description": "Generate the embed secret of the particular site if the user has admin rights for the site settings.",
+        "operationId": "Administration_GenerateEmbedSecret",
+        "responses": {
+          "200": {
+            "description": "Embed Secret has been generated successfully.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiEmbedSecretSettings"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Access denied.",
+            "content": {}
+          },
+          "405": {
+            "description": "Request type was not POST.",
+            "content": {}
+          },
+          "417": {
+            "description": "Failed to retrieve embed secret.",
+            "content": {}
+          }
+        }
+      }
+    },
     "/v4.0/attribute/user": {
       "post": {
         "tags": [
@@ -3790,7 +3847,7 @@
         }
       }
     },
-    "/api/pinboard": {
+    "/pinboard": {
       "post": {
         "tags": [
           "Pinboard"
@@ -3844,7 +3901,7 @@
         "x-codegen-request-body-name": "apiPinboardAdd"
       }
     },
-    "/api/pinboard/copy": {
+    "/pinboard/copy": {
       "post": {
         "tags": [
           "Pinboard"
@@ -3898,7 +3955,7 @@
         "x-codegen-request-body-name": "apiPinboardCopy"
       }
     },
-    "/api/pinboard/{name}": {
+    "/pinboard/{name}": {
       "get": {
         "tags": [
           "Pinboard"
@@ -3952,6 +4009,68 @@
             "content": {}
           }
         }
+      },
+      "put": {
+        "tags": [ "Pinboard" ],
+        "summary": "Update Pinboard",
+        "description": "Updates an existing pinboard in a particular site.",
+        "operationId": "Pinboard_UpdateEmbedPinBoard",
+        "parameters": [
+          {
+            "name": "pinboard",
+            "in": "path",
+            "description": "Pinboard name",
+            "required": true,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string", 
+              "nullable": false
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "Details about the pinboard passed will be updated.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ApiUpdateEmbedPinboard"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Pinboard Updated successfully.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "The content of the request body is missing or incomplete"
+          },
+          "401": {
+            "description": "Access denied for the item."
+          },
+          "404": {
+            "description": "Item not found"
+          },
+          "405": {
+            "description": "Request type was not PUT."
+          },
+          "412": {
+            "description": "Pinboard is not available as default page."
+          },
+          "417": {
+            "description": "Failed to update pinboard details."
+          }
+        },
+        "x-codegen-request-body-name": "apiEmbedPinbaord"
       },
       "delete": {
         "tags": [
@@ -4751,7 +4870,7 @@
           {
             "name": "categoryId",
             "in": "path",
-            "description": "Caegory ID",
+            "description": "Category ID",
             "required": true,
             "style": "simple",
             "explode": false,
@@ -5610,111 +5729,7 @@
             }
           }
         }
-      },
-      "connectionsdetails": {
-        "type": "object",
-        "properties": {
-          "MethodType": {
-            "type": "string",
-            "description": "Supported <code> GET & POST </code>Method Type. By default it is <code> GET </code>"
-          },
-          "DataFormat": {
-            "type": "string",
-            "description": "<code> CSV, JSON & XML </code> data format has supported."
-          },
-          "Url": {
-            "type": "string",
-            "description": "Specifies the URL for the Web API datasource."
-          },
-          "AuthenticationType": {
-
-            "type": "array",
-
-            "description": "None or Basic HTTP Authenticaiton has supported.",
-
-            "items": {
-
-              "$ref": "#/components/schemas/webapiauthenticationmode"
-
-            }
-          },
-          "Provider": {
-            "type": "string",
-            "description": "Supported value:<code> WEB </code>."
-          },
-          "ProviderType": {
-            "type": "string",
-            "description": "Enter the Data source name to connect.<br><code> WEB </code>."
-          },
-          "Rows": {
-            "type": "integer",
-            "description": "No of rows to fetch from connected server.<br>For optimum performance in live mode Web API, records restricted to <b>5000</b> by default."
-          },
-          "Mode": {
-            "type": "string",
-            "description": "Supported value:<code> WEB </code."
-          },
-          "DataProvider": {
-            "type": "string",
-            "description": "Enter the Data source name to connect <code> WEB </code>."
-          }
-        }
-      },
-      "webapiauthenticationmode": {
-        "Optional": [
-          "None",
-          "Basic authentication"
-        ],
-        "type": "object",
-        "properties": {
-          "Username":{
-            "type": "string",
-            "description": "User name for Basic Authentication."
-          },
-          "Password": {
-            "type": "string",
-            "description": "Password for Basic Authentication."
-          }
-        }
-      },
-      "mongodbapiresponse": {
-        "type": "object",
-        "properties": {
-          "Name": {
-            "type": "string",
-            "description": "Enter the MongoDB data source name.",
-            "format": "string"
-          },
-          "Type": {
-            "type": "string",
-            "description": "MongoDB.",
-            "format": "string"
-          },
-          "Connection": {
-            "type": "array",
-            "description": "Refer to the JSON syntax below to create a MongoDB data source with the default configuration.",
-            "items": {
-              "$ref": "#/components/schemas/connections"
-            }
-          
-          },
-        
-          "RefreshSettings": {
-            "type": "array",
-            "description": "Refer to the JSON syntax below to configure Refresh settings.<div style=margin-left:15px;>NOTE: These settings will not enable data refresh, so these configurations will not work if data refresh is disabled.",
-            "items": {
-              "$ref": "#/components/schemas/refreshSettings"
-            }
-          },
-          "WeeklySchedule": {
-            "type": "array",
-            "description": "Refer to the JSON syntax below for configuring the weekly schedule for data refresh. <br><div style=margin-left:15px;>NOTE: These settings will not enable data refresh, so these configurations will not work if data refresh is disabled.",
-            "items": {
-              "$ref": "#/components/schemas/weeklyschedule"
-            }
-          }   
-          }
-      },
+      },         
       "Links": {
         "type": "object",
         "properties": {
@@ -5730,156 +5745,6 @@
             "type": "string",
             "description": "Returns method type.<br />Value allowed is <code>GET</code>"
           }
-        }
-      },
-      "refreshSettings": {
-        "type": "object",
-        "properties": {
-          "StartTime  ": {
-            "type": "string",
-            "description": "Start time of the schedule.<br> The format should be ISO 8601 <br> i.e. yyyy-MM-ddTHH:mm:ssZ. E.g. 2022-02-15T06:55:00Z."
-          },
-          "NeverEnd": {
-            "type": "string",
-            "description": "When set to true, it creates a schedule that never ends.<br><div style=margin-left:15px;>NOTE: The NeverEnd is true by default. To set the end time for the schedule, fill the properties of either EndAfterOccurrence or EndDate; otherwise, it remains empty.</strong>"
-          },
-          "EndAfterOccurrence": {
-            "type": "string",
-            "description": "The number of occurrences after which the schedule will be completed.<br>• For Example: If you provide empty 5, the schedule will end after the completion of 5 occurrences."
-          },
-          "EndDate": {
-            "type": "string",
-            "description": "End time after which the schedule should stop. The format should be ISO 8601 i.e. yyyy-MM-ddTHH:mm:ssZ.<br>• For Example: If you provide empty an end date-time, the schedule will end when the end date-time is reached.<br>• E.g. 2022-02-15T06:55:00Z."
-          },
-          "ScheduleType": {
-            "type": "string",
-            "description": "Schedule frequency.<br>• Values allowed are Hourly, Daily, weekly, Monthly.<br><div style=margin-left:15px;>NOTE: If you choose the schedule type as Monthly, provide a value to the MonthlySchedule property, and leave the (HourlySchedule, DailySchedule, WeeklySchedule, and YearlySchedule) properties empty."
-          }
-        }
-      },
-      "weeklyschedule": {
-        "type": "object",
-        "properties": {
-          "RecurrenceWeeks": {
-            "type": "integer",
-            "description": "Enter the Recurrence week By default 1."
-          },
-          "RecurrenceDays": {
-            "type": "string",
-            "description": "Enter the day from the list.<br>(Values allowed are <code>Monday, Tuesday, Wednesday, Thursday, Friday</code>).<br> For Example: Monday."
-          },
-          "IsEnabled": {
-            "type": "boolean",
-            "description": "By default it is true."
-          },
-          "FailureNotificationToOwner": {
-            "type": "boolean",
-            "description": "By default it is true."
-          }
-        }
-      },
-      "connections": {
-        "type": "object",
-        "properties": {
-          "authenticationDatabase": {
-            "type": "string",
-            "description": "Authentication database. By default, it will be admin.",
-            "format": "string"
-          },
-          "authenticationType": {
-            "type": "string",
-            "description": "Authentication type of the MongoDB server. The Available authentication types are None, SCRAM,x.509.<br> Default authentication type is None.",
-            "format": "string"
-          },
-          "database": {
-            "type": "string",
-            "description": "Name of the database to connect in BoldBI.",
-            "format": "string"
-          },
-          "collectionName": {
-            "type": "string",
-            "description": "Collection name to import into the data source.<br> <div style=margin-left:15px;>NOTE: If you want to import multiple collections, provide required collection names separated by a comma.",
-            "format": "string"
-          },
-          "provider": {
-            "type": "string",
-            "description": "Supported value: MongoDB.",
-            "format": "string"
-          },
-          "isSelfSigned": {
-            "type": "boolean",
-            "description": "Whether the MongoDB server uses SSL and the SSL certificate is self-signed.<br> A self-signed certificate is a digital certificate not signed by any publicly trusted Certificate Authority (CA).<br> By default provide the isselfsigned value is true.",
-            "format": "string"
-          },
-          "isSslEnabled": {
-            "type": "boolean",
-            "description": "Whether your MongoDB server is configured with SSL.<br> By default, it is false."
-          },
-          "password": {
-            "type": "string",
-            "description": "MongoDB server password.",
-            "format": "string"
-          },
-          "port": {
-            "type": "integer",
-            "description": "Port number of the MongoDB server. <br> By default, it will be 27017.",
-            "format": "int32"
-          },
-          "refreshInterval": {
-            "type": "string",
-            "description": "Enable refresh settings to update the MongoDB data source periodically. <br> By default, it will be Never.",
-            "format": "string"
-          },
-          "username": {
-            "type": "string",
-            "description": "MongoDB server user name.",
-            "format": "string"
-          },
-          "serverName": {
-            "type": "integer",
-            "description": "MongoDB server name(host name).",
-            "format": "int32"
-          },
-          "IsSshConnection": {
-            "type": "boolean",
-            "description": "SSH or Secure Shell is a network communication protocol that enables two computers to communicate (c.f http or hypertext transfer protocol, which is the protocol used to transfer hypertext such as web pages) and share data.<br> By default provide false."
-          },
-          "SshServerName": {
-            "type": "string",
-            "description": "Name of the SSH server.<br> By default it is empty.",
-            "format": "string"
-          },
-          "SshPort": {
-            "type": "integer",
-            "description": "Port number of SSH server.",
-            "format": "int32"
-          },
-          "SshUsername": {
-            "type": "string",
-            "description": "Username for the SSH server<br> By default it is empty.",
-            "format": "string"
-          },
-          "SshPassword": {
-            "type": "string",
-            "description": "Password for the SSH server.<br> By default it is empty.",
-            "format": "string"
-          },
-          "sslCertificateData": {
-            "type": "integer",
-            "description": "An SSL certificate is a file installed on a website's origin server. It is simply a data file containing the public key, the website owner's identity, and other information. Without an SSL certificate, a website's traffic can not be encrypted with TLS.<br> By default, provide empty.",
-            "format": "int32"
-          },
-          "sslCertificatePassword": {
-            "type": "integer",
-            "description": "SSL certificate password.<br>By default it is empty.",
-            "format": "int32"
-          },
-          "dataprovider": {
-            "type": "string",
-            "description": "Enter the Data source name to connect.<br> MongoDB.",
-            "format": "string"
-          }
-
         }
       },
       "ApiItemViewsAdd": {
@@ -6034,30 +5899,6 @@
         },
         "description": "Response details of the copied item."
       },
-      "apimongodbresponse": {
-        "required": [
-          "ApiStatus",
-          "PublishedItemId",
-          "Status",
-          "Version"
-        ],
-        "type": "object",
-        "properties": {
-          "ApiStatus": {
-            "type": "boolean",
-            "description": "Returns the status of the API."
-          },
-          "Status": {
-            "type": "boolean",
-            "description": "Returns the status of the API request."
-          },
-           "StatusMessage": {
-            "type": "string",
-            "description": "Returns the status message from the API."
-          }
-        },
-        "description": "Response details of the create MongoDB data source."
-      },
       "ApiCopyDashboardRequestV4": {
         "required": [
           "CategoryId",
@@ -6143,9 +5984,10 @@
             "description": "Returns the status message from the API."
           }
         },
-        "description": "Response details of the Live web datasource item."
+        "description": "Response details of the datasource item."
       },
-      "ApiLiveDataSourceAttribute": {
+
+      "ApiDataSourceAttribute": {
         "required": [
           "Name"
         ],
@@ -6157,20 +5999,103 @@
           },
           "Type": {
             "type": "string",
-            "description": "Web."
+            "description": "Data source type allowed values are <code>Web Live</code>, <code>MongoDB</code>, <code>amazonathena</code>, <code>amazonauroramysql</code>, <code>amazonaurorapostgresql</code>, <code>amazonrdsmysql</code>, <code>amazonrdsmariadb</code>, <code>amazonrdsamazonauroramysql</code>, <code>amazonrdsamazonaurorapostgresql</code>, <code>amazonrdspostgresql</code>, <code>amazonrdssqlserver</code>, <code>amazonrdsoracle</code>, <code>awsopensearch</code>, <code>redshift</code>, <code>azuresynapseanalytics</code>, <code>cdata</code>, <code>clickhouse</code>, <code>elasticsearch</code>, <code>googlecloudmysql</code>, <code>googlecloudpostgresql</code>, <code>influxdb</code>, <code>mariadb</code>, <code>ssas</code>, <code>mysql</code>, <code>oracle</code>, <code>postgresql</code>, <code>presto</code>, <code>singlestore</code>, <code>sqlserver</code>, <code>snowflake</code>, <code>sparksql</code>, <code>odbc</code>."
+          },
+          "Description":{
+            "type": "string",
+            "description": "Description of data source."
           },
           "Connection": {
 
             "type": "array",
 
-            "description": "From the Bold BI application, get your build token and copy the content values of the access token. Then add the token in the Web request header with the key as Authorization and values.",
+            "description": "You need to send the connection object for each data source based on its type. Please refer its relative documentation for the connection details as follows [Web Live](/embedded-bi/working-with-data-source/data-connectors/live-web/#connecting-bold-bi-to-web-live-data-source-via-rest-api), [MongoDB](/embedded-bi/working-with-data-source/data-connectors/mongodb/#connecting-bold-bi-to-mongodb-data-source-via-rest-api), [amazonathena](/embedded-bi/working-with-data-source/data-connectors/amazon-athena/#connecting-bold-bi-to-amazon-athena-data-source-via-rest-api), [amazonauroramysql](/embedded-bi/working-with-data-source/data-connectors/amazon-aurora/#connecting-bold-bi-to-amazon-aurora-data-source-via-rest-api), [amazonaurorapostgresql](/embedded-bi/working-with-data-source/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsmysql](/embedded-bi/working-with-data-source/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsmariadb](/embedded-bi/working-with-data-source/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsamazonauroramysql](/embedded-bi/working-with-data-source/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsamazonaurorapostgresql](/embedded-bi/working-with-data-source/data-connectors/amazon-aurora/#connecting-bold-bi-to-amazon-aurora-data-source-via-rest-api), [amazonrdspostgresql](/embedded-bi/working-with-data-source/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdssqlserver](/embedded-bi/working-with-data-source/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsoracle](/embedded-bi/working-with-data-source/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [awsopensearch](/embedded-bi/working-with-data-source/data-connectors/aws-opensearch/#connecting-bold-bi-to-aws-open-search-data-source-via-rest-api), [redshift](/embedded-bi/working-with-data-source/data-connectors/amazon-redshift/#connecting-bold-bi-to-amazon-redshift-data-source-via-rest-api), [azuresynapseanalytics](/embedded-bi/working-with-data-source/data-connectors/azure-synapse-analytics/#connecting-bold-bi-to-azure-synapse-analytics-data-source-via-rest-api), [cdata](/embedded-bi/working-with-data-source/data-connectors/cdata/#connecting-bold-bi-to-cdata-data-source-via-rest-api), [clickhouse](/embedded-bi/working-with-data-source/data-connectors/clickhouse/#connecting-bold-bi-to-clickhouse-data-source-via-rest-api), [elasticsearch](/embedded-bi/working-with-data-source/data-connectors/elastic-search/#connecting-bold-bi-to-elastic-search-data-source-via-rest-api), [googlecloudmysql](/embedded-bi/working-with-data-source/data-connectors/google-cloud-sql/#connecting-bold-bi-to-google-cloud-sql-data-source-via-rest-api), [googlecloudpostgresql](/embedded-bi/working-with-data-source/data-connectors/google-cloud-sql/#connecting-bold-bi-to-google-cloud-sql-data-source-via-rest-api), [influxdb](/embedded-bi/working-with-data-source/data-connectors/influxdb/#connecting-bold-bi-to-influxdb-data-source-via-rest-api), [mariadb](/embedded-bi/working-with-data-source/data-connectors/mariadb/#connecting-bold-bi-to-mariadb-data-source-via-rest-api), [ssas](/embedded-bi/working-with-data-source/data-connectors/ssas/#connecting-bold-bi-to-microsoft-sql-server-analysis-servicesssas-via-rest-api), [mysql](/embedded-bi/working-with-data-source/data-connectors/mysql/#connecting-bold-bi-to-mysql-data-source-via-rest-api), [oracle](/embedded-bi/working-with-data-source/data-connectors/oracle/#connecting-bold-bi-to-oracle-data-source-via-rest-api), [postgresql](/embedded-bi/working-with-data-source/data-connectors/postgresql/#connecting-bold-bi-to-postgresql-data-source-via-rest-api), [presto](/embedded-bi/working-with-data-source/data-connectors/presto/#connecting-bold-bi-to-presto-data-source-via-rest-api), [singlestore](/embedded-bi/working-with-data-source/data-connectors/single-store/#connecting-bold-bi-to-singlestore-data-source-via-rest-api), [sqlserver](/embedded-bi/working-with-data-source/data-connectors/sql-data-source/#connecting-bold-bi-to-microsoft-sql-server-data-source-via-rest-api), [snowflake](/embedded-bi/working-with-data-source/data-connectors/snowflake/#connecting-bold-bi-to-snowflake-data-source-via-rest-api), [sparksql](/embedded-bi/working-with-data-source/data-connectors/sparksql/#connecting-bold-bi-to-sparksql-data-source-via-rest-api), [odbc](/embedded-bi/working-with-data-source/data-connectors/odbc/#connecting-bold-bi-to-odbc-data-source-via-rest-api).",
 
             "items": {
-
-              "$ref": "#/components/schemas/connectionsdetails"
-
+              "type": "object"
             }
-
+          },
+          "RefreshSettings": {
+            "properties": {
+              "StartTime": {
+                "type": "string",
+                "description": "Start time of the schedule.<br> The format should be ISO 8601 <br> i.e. yyyy-MM-ddTHH:mm:ssZ. E.g. 2022-02-15T06:55:00Z."
+              },
+              "NeverEnd": {
+                "type": "boolean",
+                "description": "When set to true, it creates a schedule that never ends.<br><div style=margin-left:15px;>NOTE: The NeverEnd is true by default. To set the end time for the schedule, fill the properties of either EndAfterOccurrence or EndDate; otherwise, it remains empty.</strong>"
+              },
+              "EndAfterOccurrence": {
+                "type": "integer",
+                "description": "The number of occurrences after which the schedule will be completed.<br>• For Example: If you provide empty 5, the schedule will end after the completion of 5 occurrences."
+              },
+              "EndTime": {
+                "type": "string",
+                "description": "End time after which the schedule should stop. The format should be ISO 8601 i.e. yyyy-MM-ddTHH:mm:ssZ.<br>• For Example: If you provide empty an end date-time, the schedule will end when the end date-time is reached.<br>• E.g. 2022-02-15T06:55:00Z."
+              },
+              "ScheduleType": {
+                "type": "string",
+                "description": "Schedule frequency.<br>• Values allowed Weekly only."
+              },
+              "WeeklySchedule": {
+                "properties": {
+                  "RecurrenceWeeks": {
+                    "type": "integer",
+                    "description": "Enter the Recurrence week By default 1."
+                  },
+                  "RecurrenceDays": {
+                    "type": "array",
+                    "description": "Enter the day from the list.<br>(Values allowed are <code>Monday, Tuesday, Wednesday, Thursday, Friday</code>).<br> For Example: Monday.",
+                    "items":{"type":"string"}
+                  },
+                  "IsEnabled": {
+                    "type": "boolean",
+                    "description": "By default it is true."
+                  },
+                  "FailureNotificationToOwner": {
+                    "type": "boolean",
+                    "description": "By default it is true."
+                  }
+               }
+            }
+            },
+            "description": "Refer to the JSON syntax below to configure Refresh settings.\n\n Note: Refresh settings is only applicable for the web extract type data source. It will not work for live connection mode data sources."
+          }
+        },
+        "description": "Data Source details."
+      },
+      "ApiUpdateDataSourceAttribute": {
+        "required": [
+          "Name",
+          "DataSourceId"
+        ],
+        "type": "object",
+        "properties": {
+          "Name": {
+            "type": "string",
+            "description": "Data source name."
+          },
+          "Type": {
+            "type": "string",
+            "description": "Data source type allowed values are <code>amazonathena</code>, <code>amazonauroramysql</code>, <code>amazonaurorapostgresql</code>, <code>amazonrdsmysql</code>, <code>amazonrdsmariadb</code>, <code>amazonrdsamazonauroramysql</code>, <code>amazonrdsamazonaurorapostgresql</code>, <code>amazonrdspostgresql</code>, <code>amazonrdssqlserver</code>, <code>amazonrdsoracle</code>, <code>awsopensearch</code>, <code>redshift</code>, <code>azuresynapseanalytics</code>, <code>cdata</code>, <code>clickhouse</code>, <code>elasticsearch</code>, <code>googlecloudmysql</code>, <code>googlecloudpostgresql</code>, <code>influxdb</code>, <code>mariadb</code>, <code>ssas</code>, <code>mysql</code>, <code>oracle</code>, <code>postgresql</code>, <code>presto</code>, <code>singlestore</code>, <code>sqlserver</code>, <code>snowflake</code>, <code>sparksql</code>, <code>odbc</code>."
+          },
+          "DataSourceId":{
+            "type": "string",
+            "description": "Data source ID"
+          },
+          "Description":{
+            "type": "string",
+            "description": "Description of data source."
+          },
+          "Connection": {
+  
+            "type": "array",
+  
+            "description": "You need to send the connection object for each data source based on its type. Please refer its relative documentation for the connection details as follows [amazonathena](/embedded-bi/working-with-data-source/data-connectors/amazon-athena/#connecting-bold-bi-to-amazon-athena-data-source-via-rest-api), [amazonauroramysql](/embedded-bi/working-with-data-source/data-connectors/amazon-aurora/#connecting-bold-bi-to-amazon-aurora-data-source-via-rest-api), [amazonaurorapostgresql](/embedded-bi/working-with-data-source/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsmysql](/embedded-bi/working-with-data-source/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsmariadb](/embedded-bi/working-with-data-source/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsamazonauroramysql](/embedded-bi/working-with-data-source/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsamazonaurorapostgresql](/embedded-bi/working-with-data-source/data-connectors/amazon-aurora/#connecting-bold-bi-to-amazon-aurora-data-source-via-rest-api), [amazonrdspostgresql](/embedded-bi/working-with-data-source/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdssqlserver](/embedded-bi/working-with-data-source/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsoracle](/embedded-bi/working-with-data-source/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [awsopensearch](/embedded-bi/working-with-data-source/data-connectors/aws-opensearch/#connecting-bold-bi-to-aws-open-search-data-source-via-rest-api), [redshift](/embedded-bi/working-with-data-source/data-connectors/amazon-redshift/#connecting-bold-bi-to-amazon-redshift-data-source-via-rest-api), [azuresynapseanalytics](/embedded-bi/working-with-data-source/data-connectors/azure-synapse-analytics/#connecting-bold-bi-to-azure-synapse-analytics-data-source-via-rest-api), [cdata](/embedded-bi/working-with-data-source/data-connectors/cdata/#connecting-bold-bi-to-cdata-data-source-via-rest-api), [clickhouse](/embedded-bi/working-with-data-source/data-connectors/clickhouse/#connecting-bold-bi-to-clickhouse-data-source-via-rest-api), [elasticsearch](/embedded-bi/working-with-data-source/data-connectors/elastic-search/#connecting-bold-bi-to-elastic-search-data-source-via-rest-api), [googlecloudmysql](/embedded-bi/working-with-data-source/data-connectors/google-cloud-sql/#connecting-bold-bi-to-google-cloud-sql-data-source-via-rest-api), [googlecloudpostgresql](/embedded-bi/working-with-data-source/data-connectors/google-cloud-sql/#connecting-bold-bi-to-google-cloud-sql-data-source-via-rest-api), [influxdb](/embedded-bi/working-with-data-source/data-connectors/influxdb/#connecting-bold-bi-to-influxdb-data-source-via-rest-api), [mariadb](/embedded-bi/working-with-data-source/data-connectors/mariadb/#connecting-bold-bi-to-mariadb-data-source-via-rest-api), [ssas](/embedded-bi/working-with-data-source/data-connectors/ssas/#connecting-bold-bi-to-microsoft-sql-server-analysis-servicesssas-via-rest-api), [mysql](/embedded-bi/working-with-data-source/data-connectors/mysql/#connecting-bold-bi-to-mysql-data-source-via-rest-api), [oracle](/embedded-bi/working-with-data-source/data-connectors/oracle/#connecting-bold-bi-to-oracle-data-source-via-rest-api), [postgresql](/embedded-bi/working-with-data-source/data-connectors/postgresql/#connecting-bold-bi-to-postgresql-data-source-via-rest-api), [presto](/embedded-bi/working-with-data-source/data-connectors/presto/#connecting-bold-bi-to-presto-data-source-via-rest-api), [singlestore](/embedded-bi/working-with-data-source/data-connectors/single-store/#connecting-bold-bi-to-singlestore-data-source-via-rest-api), [sqlserver](/embedded-bi/working-with-data-source/data-connectors/sql-data-source/#connecting-bold-bi-to-microsoft-sql-server-data-source-via-rest-api), [snowflake](/embedded-bi/working-with-data-source/data-connectors/snowflake/#connecting-bold-bi-to-snowflake-data-source-via-rest-api), [sparksql](/embedded-bi/working-with-data-source/data-connectors/sparksql/#connecting-bold-bi-to-sparksql-data-source-via-rest-api), [odbc](/embedded-bi/working-with-data-source/data-connectors/odbc/#connecting-bold-bi-to-odbc-data-source-via-rest-api).",
+  
+            "items": {
+              "type": "object"
+            }
           }
         },
         "description": "Data Source details."
@@ -6602,6 +6527,31 @@
           }
         }
       },
+      "ApiEmbedSecretSettings": {
+        "type": "object",
+        "required": [
+          "ApiStatus",
+          "Status"
+        ],
+        "properties": {
+          "ApiStatus": {
+            "type": "boolean",
+            "description": "Returns the status of the API"
+          },
+          "Data": {
+            "type": "string",
+            "description": "Returns the generated embed secret key."
+          },
+          "Status": {
+            "type": "boolean",
+            "description": "Returns the status of the API request."
+          },
+          "StatusMessage": {
+            "type": "string",
+            "description": "Returns the status message from the API."
+          }
+        }
+      },
       "ApiDashboardSettings": {
         "type": "object",
         "properties": {
@@ -6901,6 +6851,26 @@
           }
         },
         "description": "Add pinboard request details."
+      },
+      "ApiUpdateEmbedPinboard": {
+        "type": "object",
+        "required": [
+          "Pininfo"
+        ],
+        "properties": {
+          "SetDefault": {
+            "type": "boolean",
+            "description": "Specify whether the pinboard should be set as default or removed from default.\n\n Note: If your pinboard is not a default pinboard, use null or true instead of false."
+          },
+          "Pininfo": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ApiAddPininfo"
+            },
+            "description": "Provide the list of Widget IDs, Widget Names, and Dashboard IDs to update the pinboard."
+          }
+        },
+        "description": "Update pinboard request details."
       },
       "ApiAddPininfo": {
         "required": [
@@ -7928,6 +7898,10 @@
             "description": "Schedule export location information.",
             "$ref": "#/components/schemas/ScheduleExportLocation"
           },
+          "Email": {
+            "description": "Schedule mail information.",
+            "$ref": "#/components/schemas/ApiScheduleEmail"
+          },
           "HourlySchedule": {
             "type": "object",
             "description": "Runs the schedules on an hourly basis.",
@@ -8020,6 +7994,20 @@
           }
         },
         "description": "Schedule export location information."
+      },
+      "ApiScheduleEmail": {
+        "type": "object",
+        "properties": {
+          "Subject": {
+            "type": "string",
+            "description": "Specifies Schedule Email subject."
+          },
+          "Body": {
+            "type": "string",
+            "description": "Specifies Schedule Email body."
+          }
+        },
+        "description": "Schedule mail information."
       },
       "ScheduleExportLocationResponse": {
         "type": "object",
@@ -8393,6 +8381,10 @@
             "description": "Schedule export location information.",
             "$ref": "#/components/schemas/ScheduleExportLocation"
           },
+          "Email": {
+            "description": "Schedule mail information.",
+            "$ref": "#/components/schemas/ApiScheduleEmail"
+          },
           "HourlySchedule": {
             "type": "object",
             "description": "Runs the schedules on an hourly basis.",
@@ -8645,7 +8637,7 @@
           },
           "FilterParameter": {
             "type": "string",
-            "description": "Specify the filter parameter. \n\n**Note:**  To know more about supported operators and funtions in filter parameter, refer to [this](/embedded-bi/working-with-dashboards/preview-dashboard/urlparameters/).",
+            "description": "Specify the filter parameter. \n\n**Note:**  To know more about supported operators and funtions in filter parameter, refer to [this](/embedded-bi/working-with-dashboards/preview-dashboard/urlparameters/#supported-operators/).",
             "example":"Department= Cardiology & Year(Date)=2021"
           }
         },
@@ -8671,6 +8663,102 @@
             "type": "string",
             "description": "Returns the exported dashboard in an array of bytes.",
             "format": "byte"
+          }
+        }
+      },
+      "ApiGetWidget": {
+        "type": "object",
+        "properties": {
+          "Id": {
+            "type": "string",
+            "description": "Widget ID.",
+            "format": "guid"
+          },
+          "Name": {
+            "type": "string",
+            "description": "Widget name."
+          },
+          "ItemType": {
+            "type": "string",
+            "description": "Item type.<br />Value allowed is <code>Widget</code>"
+          },
+          "CreatedByDisplayName": {
+            "type": "string",
+            "description": "Specifies the display name of the widget creator."
+          },
+          "CreatedById": {
+            "type": "integer",
+            "description": "Specifies the user ID of the widget creator.",
+            "format": "int32"
+          },
+          "CreatedDate": {
+            "type": "string",
+            "description": "Date created of widget in string format."
+          },
+          "ModifiedByFullName": {
+            "type": "string",
+            "description": "Specifies the full name of the widget modifier."
+          },
+          "ModifiedById": {
+            "type": "integer",
+            "description": "Specifies the user ID of the widget modifier.",
+            "format": "int32"
+          },
+          "ModifiedDate": {
+            "type": "string",
+            "description": "Date modified of widget in string format."
+          },
+          "WidgetInfo": {
+            "properties": {
+              "Id": {
+                "type": "string",
+                "description": "Specifies the widget ID.",
+                "format": "guid"
+              },
+              "Name": {
+                "type": "string",
+                "description": "Specifies the widget name."
+              },
+              "DisplayName": {
+                "type": "string",
+                "description": "Specifies the display name of the widget."
+              },
+              "Type": {
+                "type": "string",
+                "description": "Specifies the type of the widget."
+              },
+              "SubType": {
+                "type": "string",
+                "description": "Specifies the sub-type of the widget."
+              }
+            },
+            "description": "Return the details of widget Id, Name, DisplayName, Type and SubType."
+          }
+        }
+      },
+      "ApiWidgetInfo": {
+        "type": "object",
+        "properties": {
+          "Id": {
+            "type": "string",
+            "description": "Specifies the widget ID.",
+            "format": "guid"
+          },
+          "Name": {
+            "type": "string",
+            "description": "Specifies the widget name."
+          },
+          "DisplayName": {
+            "type": "string",
+            "description": "Specifies the display name of the widget."
+          },
+          "Type": {
+            "type": "string",
+            "description": "Specifies the type of the widget."
+          },
+          "SubType": {
+            "type": "string",
+            "description": "Specifies the sub-type of the widget."
           }
         }
       },

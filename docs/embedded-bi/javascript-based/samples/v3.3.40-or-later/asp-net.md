@@ -182,13 +182,9 @@ A link has been provided to [download](https://onpremise-demo.boldbi.com/getting
 
     In this API, the `embedQuerString`,`userEmail` and the value from the `GetSignatureUrl()`  method are appended as query parameters in the URL to get details of a particular dashboard from the server.
 
- 7. In the `Site.Master`, refer to the following files, which are mandatory to render the dashboard.
+ 7. In the `Site.Master`, refer to the following file, which is mandatory to render the dashboard.
     ```js
-    <link rel="stylesheet" href="~/Content/Site.css" />
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jsrender/1.0.0-beta/jsrender.min.js"></script>
-    <script src="https://cdn.boldbi.com/embedded-sdk/v5.2.48/embed-js.js"></script>
+    <script src="https://cdn.boldbi.com/embedded-sdk/v5.3.53/boldbi-embed.js"></script>
     ```
  8. In the `<body>` section, initialize the method as `Init()` and remove the existing header container. In the `<script>`tag, implement its functionality as follows.
  

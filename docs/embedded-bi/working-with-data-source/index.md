@@ -43,7 +43,7 @@ You can explore the data source in detail here,
 
 [Configure Custom Attribute](/embedded-bi/working-with-data-source/configuring-custom-attribute/)
 
-[Configure Dashboard Parameter](/embedded-bi/working-with-data-source/configuring-dashboard-parameters/)
+[Dashboard Parameter](/embedded-bi/working-with-data-source/dashboard-parameter)
 
 [Configure Dashboard Parameter Iterative Mode](/embedded-bi/working-with-data-source/dashboard-parameter-iterative-mode)
 

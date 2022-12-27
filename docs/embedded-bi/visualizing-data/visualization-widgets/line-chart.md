@@ -104,6 +104,8 @@ You can change the `Settings.`
 
 The configured field names can be edited by using the `Rename` option provided in the settings menu.
 
+![Rename](/static/assets/embedded/visualizing-data/visualization-widgets/images/line-chart/rename.png)
+
 #### Sorting data
 
 You can Sort the dimension data using the Sort option under the Settings menu list. To apply sorting for the data, refer to the [Sort](/embedded-bi/visualizing-data/working-with-widgets/advanced-sorting/#dimension-column).
@@ -164,19 +166,25 @@ The property window will be opened
 
 #### General Settings
 
-![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/line-chart/general-settings.png)
+![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/line-chart/property.png)
 
 #### Name
 
 This allows you to change the `title` for this line chart widget.
 
+![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/line-chart/title.png)
+
 #### Subtitle
 
 Allows you to provide the `subtitle` for this spline area chart widget.
 
+![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/line-chart/Subtitle.png)
+
 #### Description
 
 Allows you to provide the `description` about this spline area chart widget.
+
+![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/line-chart/Description.png)
 
 #### Basic Settings
 
@@ -185,6 +193,8 @@ Allows you to provide the `description` about this spline area chart widget.
 #### Show Tooltip
 
 This option allows you to toggle the visibility of tooltip in a chart.
+
+![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/line-chart/tooltip.png)
 
 #### Chart Type and axis
 
@@ -205,6 +215,10 @@ It animates the measure values when you enable the `Enable Animation.`
 This allows you to toggle the visibility of value labels.
 
 ![Show Value Labels](/static/assets/embedded/visualizing-data/visualization-widgets/images/line-chart/show-value-labels.png)
+
+If you Disable `Show Value Label`s properties, the dependent properties, which are **color**, **Value label position**, **Value label rotation** and **Value label suffix** will be hidden.
+
+![Show value label](/static/assets/embedded/visualizing-data/visualization-widgets/images/line-chart/show-label.png)
 
 #### Customize
 
@@ -243,6 +257,8 @@ This allows you to show or hide the suffix value of value labels.
 This allows you to customize the suffix value of value labels.
 
 ![Value Label Suffix](/static/assets/embedded/visualizing-data/visualization-widgets/images/line-chart/label-suffix.png)
+
+**Note:** When Increased the height and number of data in chart the value label was hidden. Use label rotation property to visible the label.
 
 #### Show Marker
 
@@ -305,6 +321,8 @@ A Legend is a text used to describe the data plotted. This allows you to toggle 
 ![Show Legend](/static/assets/embedded/visualizing-data/visualization-widgets/images/line-chart/show-legend.png)
 
 Enabling this option of **Custom Legend Text** will allow you to define a custom text (through the text area) to display for each legend series (selecting through the combo box) in chart.
+
+> **NOTE:** single series is available in chart, legend doesn’t visible. 
 
 **Legend Label Color**
 
@@ -394,6 +412,8 @@ This option allows you to set a maximum width for the Legend Items and it is app
 
 ![Legend Text Width in chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/line-chart/chart_Legendwidth.png)
 
+If you uncheck the `Show Legend` property in the property panel, the dependent properties, which are **Legend color**, **Legend position**, **customization button** and **Legend title** are also hidden.
+
 #### Link
 
 ![Link](/static/assets/embedded/visualizing-data/visualization-widgets/images/line-chart/link.png)
@@ -420,6 +440,10 @@ This allows you to enable the visibility of `Category Axis.`
 
 ![Show Category Axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/line-chart/show-category-axis.png)
 
+If you disable the `Show Category Axis` option, dependencies properties, which are **Show axis title**, **Axis title text**, **Trim overflow mode**, **Trim axis labels**, **Label Rotation** and **Auto Interval** option will be hidden.
+
+![Show value label](/static/assets/embedded/visualizing-data/visualization-widgets/images/line-chart/show-axis.png)
+
 #### Show Category Axis Title
 
 This allows you to enable the visibility of `Category Axis` title.
@@ -431,6 +455,10 @@ This allows you to enable the visibility of `Category Axis` title.
 This allows you to edit the `Category Axis` title for the chart. It will reflect in the x-axis name of the chart.
 
 ![Category Axis Title](/static/assets/embedded/visualizing-data/visualization-widgets/images/line-chart/linechart-editcategoryaxistitle.png)
+
+If we uncheck the `Show Axis Title` property, the Axis title text box property will be hidden.
+
+![Show Category axis title](/static/assets/embedded/visualizing-data/visualization-widgets/images/line-chart/show-axis-title-prop.png)
 
 #### Label overflow mode
 
@@ -452,13 +480,13 @@ This option hides the overlapping label in the axis.
 
 This option allows you to `trim` the axis labels based on the `Maximum Label Width` property value.
 
-![Trimmed label](/static/assets/embedded/visualizing-data/visualization-widgets/images/line-chart/trimming-label.png)
-
 #### Label Maximum Width
 
 This option allows you to set a `maximum width` for the axis labels, and also it can be made customizable when the `trim axis label` option is enabled.
 
 ![Label maximum width](/static/assets/embedded/visualizing-data/visualization-widgets/images/line-chart/maximum-label-width.png)
+
+![Trimmed label](/static/assets/embedded/visualizing-data/visualization-widgets/images/line-chart/trimming-label.png)
 
 #### Category Axis Label Rotation
 
@@ -480,6 +508,10 @@ This allows you to enable the `Primary Value Axis` for chart.
 
 ![Show Primary Value Axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/line-chart/show-primary-value.png)
 
+If you disable the `Show Primary Axis` option, dependencies properties, which are **Axis title**, **Axis title text**, **Axis type** and **Axis Format** properties will be hidden.
+
+![Show primary value axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/line-chart/primary-axis.png)
+
 #### Show Primary Value Axis Title
 
 This allows you to enable the visibility of the `Primary Value Axis` title of chart.
@@ -491,6 +523,14 @@ This allows you to enable the visibility of the `Primary Value Axis` title of ch
 This allows you to edit the `Primary Value Axis` title. It will reflect in the y-axis name of a chart.
 
 ![Primary Value Axis Title](/static/assets/embedded/visualizing-data/visualization-widgets/images/line-chart/primary-value-axis-title.png)
+
+### Inverse Axis
+
+By default, the chart axis showing positive values on the top and negative values at the bottom. But, there are times when we need to inverse the axis and show the negative values on the top and positive values on the bottom. For Example, When we bind the temperature data to the chart and to display the negative values on the top, we can make use of this property.
+
+On enabling this property the chart negative values will display on the top and positive values display on the bottom.
+
+![Inversed axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/line-chart/inverseaxis.png)
 
 #### Axis Range Settings
 
@@ -770,3 +810,14 @@ This allows you to visualize the raw data associated with a widget at runtime.
 
 This allows you to pin the widget.
 
+#### Responsive Behavior
+
+We hide the widget elements based on the size of the widget for better readability.
+
+When the chart has been placed with less than 7 columns chart Y-axis labels, Y-axis titles will be hidden.
+
+![Widget Element](/static/assets/embedded/visualizing-data/visualization-widgets/images/line-chart/Y-axis-label.png)
+
+When the chart has been placed with less than 6 rows, chart X-axis labels, X-axis titles and gridlines will be hidden.
+
+![Widget Element](/static/assets/embedded/visualizing-data/visualization-widgets/images/line-chart/X-axis-label.png)

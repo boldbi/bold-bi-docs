@@ -96,6 +96,8 @@ You can add one value into the `Column` field. It can be either `Dimension` or `
 
 The configured field names can be edited by using the `Rename` option provided in the settings menu.
 
+![Rename](/static/assets/embedded/visualizing-data/visualization-widgets/images/radar-polar-chart/rename.png)
+
 #### Sorting data 
 
 You can `Sort` the dimension data using `Sort` option under `Settings` menu list. To apply sorting for the data, refer [Sort](/embedded-bi/visualizing-data/working-with-widgets/advanced-sorting/#dimension-column).
@@ -161,6 +163,8 @@ This allows you to add description for the Radar/Polar chart widget.
 #### Show Tooltip
 
 This option allows you to toggle the visibility of tooltip in the radar polar chart.
+
+![Basic Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/radar-polar-chart/tooltip.png)
 
 #### Enable Animation
 
@@ -305,6 +309,12 @@ This allows you to define the Radar/Polar chart widget as a master widget so tha
 
 This allows you to define Radar/Polar chart widget to ignore responding to the filter actions applied by other widgets in the dashboard.
 
+#### Hierarchical filter
+
+Using this option, you can enable or disable the hierarchical top N filtering. While applying the Top N filter with multiple dimension columns, the data returned can be customized based on whether the filtering needs to be done as flat or based on the hierarchy of dimension columns added.
+
+When the `Hierarchical Filter option` is enabled, the `Top N` will be applied for each individual column separately based on the number set for each column.
+
 #### Link
 
 ![Link](/static/assets/embedded/visualizing-data/visualization-widgets/images/radar-polar-chart/linking.png)
@@ -417,3 +427,11 @@ To learn more about viewing the underlying widget data, refer to the [view data 
 #### Pin widget
 
 This allows you to pin the widget.
+
+#### Responsive Behavior
+
+We hide the widget elements based on the size of the widget for better readability.
+
+When the chart has been placed with less than 6 row and less than 7 columns axis labels, legends will be hidden.
+
+![Widget Element](/static/assets/embedded/visualizing-data/visualization-widgets/images/radar-polar-chart/label.png)

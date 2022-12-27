@@ -15,7 +15,7 @@ Pivot grid allows you to display summarized data in cross tabular format i.e., i
 
 ## How to configure table data to pivot grid?
 
-> **NOTE:** Before adding the Pivot grid widget to the design layout, make sure to create the data source. You can refer to [this section](/cloud-bi/working-with-data-source/creating-a-new-data-source/) to learn how to create a new data source. 
+> **NOTE:** Before adding the Pivot grid widget to the design layout, make sure to create the data source. You can refer to [this section](/embedded-bi/working-with-data-source/creating-a-new-data-source/) to learn how to create a new data source. 
 
 Pivot grid need a minimum of 1 value , 1 row and 1 column element to showcase proper pivot table details. The measure or expression field that you would like to analyze can be dropped into `Value(s)` field. The dimension that you would like to categorize the measure based on row and column can be dropped in `Row(s)` and `Column(s)` field.
 
@@ -29,11 +29,11 @@ The following steps explain how to configure the data to a Pivot grid:
 
 ![configurationPanel_propertyIcon](/static/assets/cloud/visualizing-data/visualization-widgets/images/designerpropertiesbutton.png)
 
-3.  In the property pane, switch to the `ASSIGN DATA` tab from the `PROPERTIES,` to assign data to the pivot grid data fields.
+3.  In the property pane, switch to the `ASSIGN DATA` tab from the `PROPERTIES`, to assign data to the pivot grid data fields.
 
 ![pivot-grid_properties](/static/assets/cloud/visualizing-data/visualization-widgets/images/pivot-grid/properties.png)
 
-4.  The `ASSIGN DATA` tab will be opened with available measures and dimensions from the connected data source. Also it contains `Value(s),` `Row(s),` and `Column(s)` field as mentioned earlier.
+4.  The `ASSIGN DATA` tab will be opened with available measures and dimensions from the connected data source. Also it contains `Value(s)`, `Row(s)`, and `Column(s)` field as mentioned earlier.
 
 ![pivot-grid_assignData](/static/assets/cloud/visualizing-data/visualization-widgets/images/pivot-grid/assign-data.png)
 
@@ -54,19 +54,19 @@ Pivot grid will be rendered like this, if more than one data bind to `Value(s)`
 
 If more than one data is added to `Value(s)` field and then grid column is separated based on the number of data attached to `Value(s)` field, as shown in above image.
 
-Click the `Settings` option to change the name by using the `Rename` option and the required summary type from the available summary types shown in `Settings.`
+Click the `Settings` option to change the name by using the `Rename` option and the required summary type from the available summary types shown in `Settings`.
 
 ![pivot-grid_valueSettingIcon](/static/assets/cloud/visualizing-data/visualization-widgets/images/pivot-grid/settings-value.png)
 
 #### Filtering data 
 
-You can filter the data to be displayed in pivot grid by using filter. For more details, refer [filter](/cloud-bi/visualizing-data/working-with-widgets/configuring-widget-filters/).
+You can filter the data to be displayed in pivot grid by using filter. For more details, refer [filter](/embedded-bi/visualizing-data/working-with-widgets/configuring-widget-filters/).
 
 ![pivot-grid_valueSettingFilter](/static/assets/cloud/visualizing-data/visualization-widgets/images/pivot-grid/pivot-gridfilter.png)
 
 #### Formatting data
 
-You can format the data to be displayed in the pivot grid by using format option. For more details, refer [measure format](/cloud-bi/visualizing-data/working-with-widgets/formatting-measure-type-column/)
+You can format the data to be displayed in the pivot grid by using format option. For more details, refer [measure format](/embedded-bi/visualizing-data/working-with-widgets/formatting-measure-type-column/)
 
 ![pivot-grid_valueSettingFormat](/static/assets/cloud/visualizing-data/visualization-widgets/images/pivot-grid/pivot-gridformat.png)
 
@@ -85,15 +85,21 @@ You can change the `Settings`.
 
 ![Settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/pivot-grid/settings.png)
 
+#### Renaming fields
+
+The configured field names can be edited by using the `Rename` option provided in the settings menu.
+
+![Rename](/static/assets/cloud/visualizing-data/visualization-widgets/images/pivot-grid/rename.png)
+
 #### Sorting data
 
-You can `Sort` the dimension data using `Sort` option under `Settings` menu list. To apply sorting for the data, refer [Sort](/cloud-bi/visualizing-data/working-with-widgets/advanced-sorting/#dimension-column).
+You can `Sort` the dimension data using `Sort` option under `Settings` menu list. To apply sorting for the data, refer [Sort](/embedded-bi/visualizing-data/working-with-widgets/advanced-sorting/#dimension-column).
 
 ![Sort Settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/pivot-grid/sortdimension.png)
 
 #### Filtering data
 
-You can apply filters by selecting filter in settings. For more details, refer [filter](/cloud-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column).
+You can apply filters by selecting the filter in settings. For more details, refer to the [filter](/embedded-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column).
 
 ![Configuring widget filters](/static/assets/cloud/visualizing-data/visualization-widgets/images/pivot-grid/configuring-widget-filters.png)
 
@@ -106,7 +112,7 @@ You can drag and drop the `Measure` or `Dimension` into the `Row(s)` field.
 
 ![pivot-grid_rowData](/static/assets/cloud/visualizing-data/visualization-widgets/images/pivot-grid/rowdata.png)
 
-You can apply [filter](/cloud-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column) and [sort](/cloud-bi/visualizing-data/working-with-widgets/advanced-sorting/#dimension-column) option for the rows field, if required.
+You can apply [filter](/embedded-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column) and [sort](/embedded-bi/visualizing-data/working-with-widgets/advanced-sorting/#dimension-column) option for the rows field, if required.
 
 #### Adding Multiple Column(s)
 
@@ -128,6 +134,10 @@ Adding Multiple data to `Row(s)` with single `Value(s)` and `Column(s)`
 #### Hidden column section
 
 You can drag and drop the elements to `Hidden Columns` if required. Based on the hidden column elements, the values will be shown.
+
+### Tooltip section
+
+You can configure the `tooltip` section to showcase the additional information in the widget’s tooltip without affecting the visualization. Refer to [this section](/embedded-bi/visualizing-data/working-with-widgets/tooltip-customization/) for more details on configuring the tooltip fields.
 
 ### Removing Data from Field
 
@@ -162,20 +172,25 @@ You can see the list of properties available for the widget with default value.
 
 Name, Subtitle and Description for pivot-grid can be given through these properties.
 
+![Pivot grid property Name](/static/assets/cloud/visualizing-data/visualization-widgets/images/pivot-grid/property.png)
+
 #### Name 
 
 This allows you to set `title` for this pivot-grid widget.
+
+![Pivot grid property Name](/static/assets/cloud/visualizing-data/visualization-widgets/images/pivot-grid/Name.png)
 
 #### Subtitle
 
 This allows you to set `subtitle` for this pivot-grid widget.
 
+![Pivot grid property Name](/static/assets/cloud/visualizing-data/visualization-widgets/images/pivot-grid/Subtitle.png)
+
 #### Description
 
 This allows you to set brief explanation about this pivot-grid widget.
 
-![Pivot grid property Name](/static/assets/cloud/visualizing-data/visualization-widgets/images/pivot-grid/general-settings.png)
-
+![Pivot grid property Name](/static/assets/cloud/visualizing-data/visualization-widgets/images/pivot-grid/Description.png)
 
 ### Basic Settings
 
@@ -183,11 +198,18 @@ This allows you to set brief explanation about this pivot-grid widget.
 
 ![Basic Settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/pivot-grid/basic-settings.png)
 
+#### Show Tooltip
+
+This option allows you to toggle the visibility of tooltip in the pivot grid.
+
+![Pivot grid property Name](/static/assets/cloud/visualizing-data/visualization-widgets/images/pivot-grid/tooltip.png)
+
 #### Allow Value Sorting
 
 If we click the column header, the value field get sorted as ascending or descending when the property `Allow Value Sorting` is enabled.
 
 ![pivot-grid_prop-basic-sorting](/static/assets/cloud/visualizing-data/visualization-widgets/images/pivot-grid/value-sorting.png)
+
 
 #### Expand Nodes by Default
 
@@ -195,21 +217,23 @@ Nodes are expanded by default, if this property's checkbox is checked.
 
 ![pivot-grid_prop-basic-nodes](/static/assets/cloud/visualizing-data/visualization-widgets/images/pivot-grid/pivot-gridnodes.png)
 
+By enabling `Expand nodes` property, **Save Nodes state** property will be hidden.
+
+![pivot-grid_prop-basic-nodes](/static/assets/cloud/visualizing-data/visualization-widgets/images/pivot-grid/pivot-node.png)
+
 #### Save Nodes State
 
 This property restore the expanded and collapsed state of node even after reloading the dashboard.
 
 #### Allow Text Wrap
 
-Allow Text wrap allows you to wrap the long words onto the next line.
+By default, long texts get trimmed in pivot grid. But if the property `Allow Text Wrap` is enabled, then it displays a wrapped text instead of a trimmed one.
 
-![pivot-grid_prop-basic-nodes](/static/assets/cloud/visualizing-data/visualization-widgets/images/pivot-grid/allow-text-wrap.png)
+> **NOTE:** If you enable `Allow Text Wrap` property, `Row Height` property from content settings will be disabled.
 
 #### Allow Column Resize
 
-You can shrink or enlarge the columns by dragging the vertical lines.
-
-![pivot-grid_prop-basic-nodes](/static/assets/cloud/visualizing-data/visualization-widgets/images/pivot-grid/column-resize.png)
+You can resize the pivot grid by dragging the vertical lines of the pivot grid control.
 
 #### Fit To Content
 
@@ -219,41 +243,57 @@ The columns in the pivot grid can be made to auto-size based on the length of th
 
 > **Note**: The `Virtualization` dynamically loads the given data when you scroll down the pivot grid. If any one of these properties **(Fit to content, allow text wrap, and allow column resize)** is enabled then the `virtualization` disables. Also, we do not recommend these properties **(Fit to content, allow text wrap, and allow column resize)** when using a large number of records.
 
+> **NOTE:** If you enable this property, **Column Width**, **Header Column Width** will be disabled.
+
 ### Show Values in Rows
 
 It shows the values in rows.
 
 ![pivot-grid_prop-basic-nodes](/static/assets/cloud/visualizing-data/visualization-widgets/images/pivot-grid/values-rows.png)
 
-#### Content Settings
- 
-Content settings allows you to adjust the **row height, column width,** and **header column width** for better visibility.
+#### Hide Empty Headers
 
-![Content Settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/pivot-grid/content-settings.png)
+This option allows you to hide 'null' or ‘empty’ headers, if it is present in the pivot grid table.
+
+In the following image, the column headers have ‘(Null)’ values in data. 
+
+![pivot-grid empty header cell](/static/assets/cloud/visualizing-data/visualization-widgets/images/pivot-grid/pivot-null-headers.png)
+
+By enabling this option, the (Null) header column gets hidden.
+
+![Pivot-grid empty header cell hidden](/static/assets/cloud/visualizing-data/visualization-widgets/images/pivot-grid/pivot-null-headers-hidden.png)
+
+#### Empty Cell Content
+
+This option allows you to set value for the empty cells in the pivot grid.
+
+![Pivot-grid empty cell content value](/static/assets/cloud/visualizing-data/visualization-widgets/images/pivot-grid/pivot-empty-content-value.png)
+
+### Content Settings
+
+This section allows you to customize the height and width of the pivot grid cells.
+
+![pivot-grid-content-settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/pivot-grid/content-settings.png)
 
 #### Row Height
 
-You can customize the height of the grid rows. The value can range between 25 and 120.
+This option allows you to customize the height of content rows in the pivot grid.
 
-![Row Height](/static/assets/cloud/visualizing-data/visualization-widgets/images/pivot-grid/row-height.png)
+#### Content Column Width
 
-![Row Height](/static/assets/cloud/visualizing-data/visualization-widgets/images/pivot-grid/row-settings.png)
+This option allows you to customize the width of the content columns.
 
-#### Column Width 
+#### Row Header Width
 
-You can customize the column width by increasing or decreasing the values from 110 to 300.
+This option allows you to customize the width of row headers (first column) in the pivot grid.
 
-![Column Width](/static/assets/cloud/visualizing-data/visualization-widgets/images/pivot-grid/column-width.png)
+Pivot grid with default value.
 
-![Column Width](/static/assets/cloud/visualizing-data/visualization-widgets/images/pivot-grid/column-width-settings.png)
+![Pivot content settings default](/static/assets/cloud/visualizing-data/visualization-widgets/images/pivot-grid/pivot-content-settings-default.png)
 
-#### Header Column Width
+Pivot grid with customized value
 
-You can customize the column width for header by increasing or decreasing the values from 250 to 500.
-
-![Header width](/static/assets/cloud/visualizing-data/visualization-widgets/images/pivot-grid/header-set.png)
-
-![Header Column width](/static/assets/cloud/visualizing-data/visualization-widgets/images/pivot-grid/header-column-settings.png)
+![Pivot content settings default](/static/assets/cloud/visualizing-data/visualization-widgets/images/pivot-grid/pivot-content-settings-customize.png)
 
 ### Group Bar Settings
 
@@ -297,7 +337,6 @@ This property allows user to show or hide column's grand total. The column's gra
 
 ![pivot-grid_prop-grand-column](/static/assets/cloud/visualizing-data/visualization-widgets/images/pivot-grid/prop-grand-column.png)
 
-
 #### Show Row Sub Totals
 
 This property allows user to show or hide row's sub total. The below image is an example for disabled sub total for row.
@@ -325,6 +364,18 @@ You can edit the field settings.
 ![pivot-grid_prop-edit-noDataItem](/static/assets/cloud/visualizing-data/visualization-widgets/images/pivot-grid/nodata.png)
 
 In the above image other than Campinas, all other cities have empty data and so it displayed as empty cells. 
+
+### Alignment Settings
+
+This allows you to align Column header, Row header and Values to either left, right, or center.
+
+![pivot-alignment-settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/pivot-grid/pivot-alignment-settings.png)
+
+***Row Header*** - You can align row header to either left, center, or right. By default, it will be Left.
+
+***Column Header*** - You can align column header to either left, center, or right. By default, it will be Left.
+
+***Value*** - You can align Value cells to either left, center, or right. By default, it will be Right.
 
 ### Formatting
 
@@ -364,7 +415,7 @@ Select value as display type to get the column values represented as it is.
 
 #### Advance setting
 
-Select Advance setting to configure conditions and apply color to the cells based on that. Click [here](/cloud-bi/visualizing-data/visualization-widgets/grid/#how-to-apply-conditional-formatting-in-grid) for more details. 
+Select Advance setting to configure conditions and apply color to the cells based on that. Click [here](/embedded-bi/visualizing-data/visualization-widgets/grid/#how-to-apply-conditional-formatting-in-grid) for more details.  
 
 ![Advanced settings  widget](/static/assets/cloud/visualizing-data/visualization-widgets/images/pivot-grid/advanced-settings-widget.png)
 
@@ -406,26 +457,37 @@ It can be achieved by applying date formatting for configured fields.
 
 3. Do the same for remaining fields.
 
+### Font settings
+
+This section allows you to customize the height and width of the pivot grid content.
+
+![Font settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/pivot-grid/font-settings.png)
+
+Pivot grid with auto font-size.
+
+![Auto font size](/static/assets/cloud/visualizing-data/visualization-widgets/images/pivot-grid/auto-font-size.png)
+
+#### Header
+
+***Auto Font Size and Font Size***
+
+By default, the auto font size property is enabled. So, the font size of the headers will be rendered based on the resolution. If this property is unchecked, the font size of the header can be customizable.
+
+![Header Font settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/pivot-grid/header-font-size.png)
+
+#### Content
+
+***Auto Font Size and Font Size***
+
+By default, the auto font size property is enabled. So, the font size of the pivot grid content elements will be calculated based on the resolution. If this property is unchecked, the font size can be customizable.
+
+![Content Font settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/pivot-grid/content-font-size.png)
+
 ### Link
 
-To configure the linking to URL or dashboard with the widget through its settings. For more details, refer to [Linking](/cloud-bi/visualizing-data/working-with-widgets/linking-urls-and-dashboards/).
+To configure the linking to URL or dashboard with the widget through its settings. For more details, refer to [Linking](/embedded-bi/visualizing-data/working-with-widgets/linking-urls-and-dashboards/).
 
 ![pivot-grid_prop-link](/static/assets/cloud/visualizing-data/visualization-widgets/images/pivot-grid/linking.png)
-
-### Font Settings 
-
-Font settings section allows you to enable the auto font size.
-
-### Auto Font Size
-
-On enabling `auto font size,` the size of the font adjusted automatically based on the screen resolution.
-
-#### Font Size
-
-You can enable this property by disabling `Auto Font Size,` which allows you to change the font size.
-
-![Fontsettings](/static/assets/cloud/visualizing-data/visualization-widgets/images/pivot-grid/fontsettings.png)
-
 
 ### Filter
 
@@ -467,7 +529,7 @@ In case, if you have the requirement to highlight any data based on some conditi
 
 ![Widget after applying  conditions](/static/assets/cloud/visualizing-data/visualization-widgets/images/pivot-grid/applied-conditions.png)
 
-Refer to the following sections for the detailed steps on using the [Gradient](/cloud-bi/visualizing-data/visualization-widgets/pivot-grid/#gradient-mode) and [Rule](/cloud-bi/visualizing-data/visualization-widgets/pivot-grid/#rule-based-condition-mode) modes. 
+Refer to the following sections for the detailed steps on using the [Gradient](/embedded-bi/visualizing-data/visualization-widgets/pivot-grid/#gradient-mode) and [Rule](/embedded-bi/visualizing-data/visualization-widgets/pivot-grid/#rule-based-condition-mode) modes. 
 
 #### Gradient mode
 
@@ -559,9 +621,17 @@ On enabling Auto Font Size, the font size of the subtitle will be adjusted autom
 
 This allows you to apply the specified size of the font to the widget title if the `Subtitle Auto Font Size` is disabled. The value can range between 10 and 32.
 
+### Auto Padding
+
+On enabling Auto Padding, the padding of the widget container will be adjusted automatically if the size of the widget varies.
+
+**Padding**
+
+This allows you to customize the padding of the widget container if the **Auto Padding** is disabled. Value can be between 0 and 25.
+
 ### Show Border
 
-This allows you to toggle the visibility of border surrounding the widget.
+This allows you to toggle the visibility of the border surrounding the widget.
 
 ### Corner Radius
 
@@ -570,6 +640,10 @@ This allows you to apply the specified radius to the widget corners if the `Show
 ### Transparency
 
 You can change the transparency from 0 to 1.
+
+### Show Shadow
+
+This allows you to toggle the visibility of the `shadow` surrounding the widget.
 
 ### Container actions
 
@@ -601,7 +675,7 @@ This allows you to enable or disable the PDF export option for the pivot grid. E
 
 #### Enable comments
 
-This allows you to enable or disable comment for the dashboard widget. For more details, refer to this [link](/cloud-bi/visualizing-data/working-with-widgets/commenting-widget/).
+This allows you to enable or disable comment for the dashboard widget. For more details, refer to this [link](/embedded-bi/visualizing-data/working-with-widgets/commenting-widget/).
 
 #### Allow Viewing of underlying data
 

@@ -165,6 +165,18 @@ Using the dashboard security option, you can control which websites, IP addresse
       <td>Show/hide widget comments</td>
     </tr>
     <tr>
+      <td><code>embed_dashboard_views_edit</code></td>
+      <td><code>boolean</code></td>
+      <td>Enable/Disable the Save and Save As view option in the filter overview dropdown.</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td><code>embed_dashboard_favorite</code></td>
+      <td><code>boolean</code></td>
+      <td>Enable/Disable the favorite icon in the dashboard toolbar.</td>
+      <td>NA</td>
+    </tr>
+    <tr>
       <td><code>views</code></td>
       <td><code>boolean</code></td>
       <td>Show/hide dashboard views</td>
@@ -185,29 +197,81 @@ Using the dashboard security option, you can control which websites, IP addresse
     <tr>
       <td><code>hide_tool</code></td>
       <td><code>string</code></td>
-      <td>Predefined values: tm-Theme,dp-Dashboard Parameter,fo-Filter Overview,fs-FullScreen,rf-Refresh,om-Option Menu</td>
+      <td>Show/hide the dashboard options with Predefined values:<br>tm-Theme,<br>dp-Dashboard Parameter,<br>fo-Filter Overview,<br>fs-FullScreen,<br>rf-Refresh,<br>om-Option Menu<br><br><code>Example</code>:<br>&hide_tool=tm,fo,fs,dp,rf,om</td>
       <td>NA</td>
-    <tr>
+    </tr>
     <tr>
       <td><code>hide_widget_tool</code></td>
       <td><code>string</code></td>
       <td>NA</td>
-      <td>Predefined values: fr-Filter,fs-FullScreen,om-Option Menu</td>      
-    <tr>
+      <td>Show/hide the widget options with Predefined values:<br>fr-Filter,<br>fs-FullScreen,<br>om-Option Menu<br><br><code>Example</code>:<br>&hide_widget_tool=fr,fs,om</td>      
+    </tr>
     <tr>
       <td><code>hassso</code></td>
       <td><code>boolean</code></td>
       <td>Enable/Disable SSO Authentication</td>
       <td>Enable/Disable SSO Authentication</td>      
-    <tr>
+    </tr>
     <tr>
       <td><code>externallogin</code></td>
       <td><code>string</code></td>
-      <td>Predefined values: windowsad, azuread, oauth, openid</td>
-      <td>Predefined values: windowsad, azuread, oauth, openid</td>       
+      <td>Predefined values:<br>windowsad,<br>azuread,<br>oauth,<br>openid</td>
+      <td>Predefined values:<br>windowsad,<br>azuread,<br>oauth,<br>openid</td>       
+    </tr>
+    </tr>
+     <tr>
+      <td><code>embed_theme</code></td>
+      <td><code>string</code></td>
+      <td>Dashboard theme(custom) which will be applied for entire dashboard.</td>
+      <td>Dashboard theme(custom) which will be applied for all widgets.</td>
+    </tr>
     <tr>
+      <td><code>embed_datasource_filter</code></td>
+      <td><code>object</code></td>
+      <td>The embedded dashboard can be filtered with passed Dashboard Parameter and URL Parameter.
+      <br /><br />
+      <code>Example</code>:
+      <br />
+      &embed_datasource_filter=&&dashboardparametername=parametervalue&urlparametername=parametervalue.
+      </td>
+      <td>The embedded dashboard can be filtered with passed Dashboard Parameter and URL Parameter.
+      <br /><br />
+      <code>Example</code>:
+      <br />
+      &embed_datasource_filter=&&dashboardparametername=parametervalue&urlparametername=parametervalue.
+      </td>
+    </tr>
   </tbody> 
 </table>
+
+### How to pass the Dashboard Parameter and URL Parameter filters in iFrame URL
+
+In iFrame URL, you can pass separate and both types of filters(Dashboard Parameter/URL Parameter) values at the same time.
+
+Pass your filters to the `embed_datasource_filter` parameter in the iFrame URL as like below.
+
+**Example for passing Dashboard Parameter in iFrame URL**
+
+```js
+<iframe src='http://test.boldbi.com/bi/en-us/site/site1/dashboards/8428c9d9-85db-418c-b877-ea4495dcddd7/Predictive%20Analytics/Personal%20Expense%20Analysis?isembed=true&embed_datasource_filter=&&dashboardparametername=parametervalue' id='dashboard-frame' width='100%' height='600px' allowfullscreen frameborder='0'></iframe>
+```
+
+**Example for passing URL Parameter in iFrame URL**
+
+```js
+<iframe src='http://test.boldbi.com/bi/en-us/site/site1/dashboards/8428c9d9-85db-418c-b877-ea4495dcddd7/Predictive%20Analytics/Personal%20Expense%20Analysis?isembed=true&embed_datasource_filter=&urlparametername=parametervalue' id='dashboard-frame' width='100%' height='600px' allowfullscreen frameborder='0'></iframe>
+```
+
+**Example for passing both Dashboard and URL Parameters in iFrame URL**
+
+```js
+<iframe src='http://test.boldbi.com/bi/en-us/site/site1/dashboards/8428c9d9-85db-418c-b877-ea4495dcddd7/Predictive%20Analytics/Personal%20Expense%20Analysis?isembed=true&embed_datasource_filter=&&dashboardparametername=parametervalue&urlparametername=parametervalue' id='dashboard-frame' width='100%' height='600px' allowfullscreen frameborder='0'></iframe>
+```
+
+* In the iframe URL, the dashboard parameter filter must be started with a double ampersand `&&`. For more details, refer to this [link](/embedded-bi/working-with-data-source/configuring-dashboard-parameters/).    
+
+* In the iframe URL, the URL filter parameter must be started with a single ampersand `&`. For more details, refer to this [link](/embedded-bi/working-with-dashboards/preview-dashboard/urlparameters/).
+
 
 ## How to embed the dashboard in create mode using the URL
 

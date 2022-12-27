@@ -14,13 +14,18 @@ To publish a dashboard to other site(s), follow these steps:
 
    ![Publish Menu](/static/assets/embedded/managing-resources/manage-dashboards/images/publish-menu.png)
 	
-2. Select `Internal Site` or `External Site` for publishing dashboard in publish dialog and proceed `Next`.
+2. For the master site, the dialog will be shown as follows with the `Internal Site` and `External Site` options.
+   Select the `Internal Site` or `External Site` for publishing dashboard in publish dialog and proceed to `Next`.
 
    ![Select Site](/static/assets/embedded/managing-resources/manage-dashboards/images/select-site.png#width=55%)
 
+   For non-master sites, [external site publish](/embedded-bi/managing-resources/manage-dashboards/publish-dashboards/#external-site) dialog will be shown directly. Also, publish the dashboard to the internal sites using the external site publish option for the non-master sites.
+
+   > **NOTE:** Master site is the first created site during startup in Bold BI, and all other sites are considered non-master sites.
+
 ## Internal site
 
-You can publish the dashboard to the sites created in the same Bold BI server.
+Publish the dashboard to the sites created in the same Bold BI server.
 
 1. Choose the sites in the drop-down that you want to publish the dashboard.
 
@@ -64,26 +69,28 @@ You can publish the dashboard to the sites created in the same Bold BI server.
 
 ## External site
 
-You can publish the dashboard to the sites created in other Bold BI servers.
+Publish the dashboard to the sites created in other Bold BI servers and to the internal sites created in the same Bold BI server for the non-master sites using the external site publish option.
 
-1. Click on the `+` button to **add external site**.
+1. Click on `+` to **add external site**.
 
    ![Add External Site](/static/assets/embedded/managing-resources/manage-dashboards/images/add-external-site.png#width=55%)
  
-2. Fill the following details as shown in the below image.
+2. Fill in the following details as shown in the following image.
 
-  * **Name** - Enter the name that you want for external site.
-  * **Client ID** - Enter the Client Id of the site. 
-  * **Client Secret** - Enter the Client Secret of the site.
-  * **Site URL** - Enter the URL of the site.
+   * **Name** - Enter the name that you want for external site.
+   * **Client ID** - Enter the Client Id of the site. 
+   * **Client Secret** - Enter the Client Secret of the site.
+   * **Site URL** - Enter the URL of the site.
+
+   You can add both internal and external site's client ID and client secret here.
 
   ![External Dialog](/static/assets/embedded/managing-resources/manage-dashboards/images/external-site-dialog.png#width=55%)
 
-  For Bold BI Enterprise server, you can get the site's Client Id and Client Secret values from the site details page. 
-
+  For the Bold BI Enterprise server, get the site's Client Id and Client Secret values from the [site details page](/embedded-bi/multi-tenancy/manage-sites/#general). 
+  
   ![General Details](/static/assets/embedded/managing-resources/manage-dashboards/images/general-details.png)
 
-3. After the external site was added, choose the external site in the drop-down and you can follow the same steps mentioned in the internal site for publishing the dashboard.
+3. After the external site is added, choose the external site in the drop-down and follow the same steps mentioned in the internal site for publishing the dashboard.
   
 > **NOTE:**  The dashboards or the data sources cannot be locked while publishing to the external sites. So, the `Lock dashboard editing in published site` and `Lock data source editing in published site` check box options will not be shown for `External Site`.
 

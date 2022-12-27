@@ -126,6 +126,12 @@ For more details, refer to the [filter](/embedded-bi/visualizing-data/working-wi
 
 Similarly, you can add the Measures and Expression Columns to the Column field.
 
+#### Renaming fields
+
+The configured field names can be edited by using the `Rename` option provided in the settings menu.
+
+![Rename](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/rename.png)
+
 **Assigning rows**
 
 You can drag and drop the `Dimension` field into the `Rows` field.
@@ -162,19 +168,25 @@ You can see the list of properties available for the widget with default value.
 
 ### General Settings
 
-![Title](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/title.png)
+![Title](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/property.png)
 
 #### Name
 
 Allows you to set a `title` for the Doughnut chart widget.
 
+![Title](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/Name.png)
+
 #### Subtitle
 
 Allows you to set a `subtitle` for the Doughnut chart widget.
 
+![Title](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/Subtitle.png)
+
 #### Description
 
 Set a `description` for the Doughnut chart, whose visibility will be denoted by **i** icon, and hovering over it will display the description in a tooltip.
+
+![Title](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/Description.png)
 
 ### Basic settings
 
@@ -183,6 +195,8 @@ Set a `description` for the Doughnut chart, whose visibility will be denoted by 
 #### Show Tooltip
 
 This option allows you to toggle the visibility of tooltip in a chart.
+
+![Title](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/tooltip.png)
 
 #### Chart type
 
@@ -199,6 +213,10 @@ It animates the measure values when you enable the `Enable Animation.`
 Toggle the visibility of value labels.
 
 ![Show value labels](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/value-labels.png)
+
+If you disable `Show Value Labels` properties, the dependent properties, which are **color**, **Value label position**, **Value label rotation** and **Value label suffix** will be hidden.
+
+![Show value label](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/value-label.png)
 
 #### Value Label Color
 
@@ -312,6 +330,8 @@ You can customize the legend text through the Custom Legend Settings dialog. Thi
 
 You can able to change the position for the legend at `Top, Left, Right,` and `Bottom.`
 
+![Legend position](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/legend-position.png)
+
 #### Shape
 
 This allows you to change the **shape** of the legend.
@@ -362,6 +382,8 @@ This option allows you to set maximum width for the Legend Items and it is appli
 
 ![Legend Text Width in chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/chart_Legendwidth.png)
 
+If you uncheck the `Show Legend` property in the property panel, the dependent properties **Legend color**, **Legend position**, **customization button** and **Legend title** are also hidden.
+
 ### Filter
 
 ![Filter](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/filter.png)
@@ -400,11 +422,35 @@ This section allows you to customize font size of chart elements.
 
 #### Based On
 
-You can choose the field from the Based On section to apply the conditions.
+![Individual mode](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/column-chart-individual-mode.png)
 
-This section shows a palette of colors. By clicking the colored square, the color picker will open. You can choose a color and change the color by changing the corresponding hexadecimal value at the right.
+#### Color Mapping Type
 
-![Series palette](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/seriescolorpalette.png)
+Using the Color Mapping type, you can apply the colors to the series either based on data or index.
+
+![Color Mapping Type option](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/column-chart-formatting-color-mapping-type-options.png)
+
+***Data***
+
+It allows you to apply color for chart series based on data. If you want to apply a specific color to specific data, you can use Data based color mapping. By default, the Color Mapping Type will be `Data`.
+
+![Color Mapping Type Data](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/column-chart-individual-mode.png)
+
+> **IMPORTANT:**  Only top 100 records will be listed in the 
+dialog. 
+***Index***
+
+It allows you to apply color for chart series based on `Index`. Such that the colors are maintained based on index even if data is changed. It shows only 15 different colors. After that, the color will be repeated from above colors.
+
+For example, If you are displaying the countries based on the increasing order of the case count, then the index-based color mapping will be useful to set the colors based on the rank. Say red color to the top, then the red color will be maintained for the country having the largest case count.
+
+![Color Mapping Type Index](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/column-chart-formatting-index-based-color.png)
+
+**Note:** We prefer to use Index based color customization only for minimum data(upto 15 series).
+
+![Use Basedon Palette](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/column-chart-individual-mode.png)
+
+![Change Series color](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/seriescolor-palette-window.png)
 
 ![Series palette Customization](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/color-customization.png)
 

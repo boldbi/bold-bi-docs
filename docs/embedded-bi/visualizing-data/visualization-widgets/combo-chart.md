@@ -98,6 +98,12 @@ You can change the `Settings`.
 
 ![Combo-chart Column settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/column-settings.png)
 
+#### Renaming fields
+
+The configured field names can be edited by using the `Rename` option provided in the settings menu.
+
+![Rename](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/rename.png)
+
 #### Sorting data
 
 You can `Sort` the dimension data using `Sort` option under `Settings` menu list. To apply sorting for the data, refer [Sort](/embedded-bi/visualizing-data/working-with-widgets/advanced-sorting/#dimension-column).
@@ -141,19 +147,26 @@ You can see property window opened.
 You can see the list of properties available for the widget with default value.
 
 #### General Settings
+
+![General settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/propertyname.png)
+
 #### Name
 
 This allows you to change the `title` for the combo chart widget.
+
+![General settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/Name.png)
 
 #### Subtitle
 
 This allows you to add the subtitle for the combo chart widget.
 
+![General settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/Subtitle.png)
+
 #### Description
 
 This allows you to add description for the combo chart widget.
 
-![General settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/general-settings.png)
+![General settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/Description.png)
 
 #### Basic Settings
 
@@ -162,6 +175,8 @@ This allows you to add description for the combo chart widget.
 #### Show Tooltip
 
 This option allows you to toggle the visibility of tooltip in a combo chart.
+
+![General settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/tooltip.png)
 
 #### Chart type and axis
 
@@ -223,9 +238,13 @@ This allows you to toggle the visibility of value labels.
 
 ![Value labels in chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/value-label.png)
 
+If you disable `Show Value Labels` properties, the dependent properties, which are **color**, **Value label position**, **Value label rotation** and **Value label suffix** will be hidden.
+
+![Show value label](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochart-value-label.png)
+
 #### Customize
 
-This allows you to customize the toggle visibility of each series in a chart.
+This allows you to customize the toggle visibility of value labels in each series.
 
 ![Value labels customization change](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/color-customize.png)
 
@@ -261,6 +280,8 @@ This allows you to customize the suffix value of value labels.
 
 ![Labels with suffix](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/suffix-value.png)
 
+**Note:** When Increased the height and number of data in chart the value label was hidden. Use label rotation property to visible the label.
+
 ### Show Marker
 
 This allows you to toggle the visibility of marker from label to adorn each data point in chart series. Marker supports only for distribution type chart(line, spline, area, stacked area, 100% stacked area).
@@ -293,6 +314,8 @@ This option allows you to increase or decrease the space between the columns by 
 
 On enabling this support, the chart scroll bar thumb-size will be calculated based on the total records count. So, you can see the last record by performing a single scroll.
 
+> **Note** If you uncheck `Show Legend` property in property panel, the dependent properties **Legend color**, **Legend position**, **customization button**, **Legend title** are also be hidden.
+
 ### Link
 
 ![Link](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/linking.png)
@@ -304,6 +327,18 @@ To configure the linking to URL or dashboard with the widget through its setting
 ![Axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochart-axis.png)
 
 This section allow you to customize axis settings in combination chart.
+
+#### Title color
+
+This allows you to customize the axis title color.
+
+![Title color](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/title-color.png)
+
+#### Label color
+
+This allows you to customize the axis label color.
+
+![Label color](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/label-color.png)
 
 ### Show Category Axis
 

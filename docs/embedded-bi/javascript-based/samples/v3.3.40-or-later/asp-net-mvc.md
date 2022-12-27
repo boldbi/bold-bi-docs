@@ -248,14 +248,10 @@ We have provided link to [download](https://onpremise-demo.boldbi.com/getting-st
        }
     ```
     
- 8. The following scripts and style sheets are mandatorily required to render the dashboard. Set `Layout = null` in the top and replace the following code in your `\Views\Home\Index.cshtml` page of `<head>` tag.
+ 8. The following scripts are mandatorily required to render the dashboard. Set `Layout = null` in the top and replace the following code in your `\Views\Home\Index.cshtml` page of `<head>` tag.
  ![Index.cshml location](/static/assets/embedded/javascript/sample/images/ViewFolderLocationMvc.png#max-width=30%)
     ```js 
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-        <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jsrender/1.0.0-beta/jsrender.min.js"></script>
-        <script type="text/javascript" src="http://cdn.boldbi.com/embedded-sdk/v5.2.48/embed-js.js"></script>
+        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v5.3.53/boldbi-embed.js"></script>
         <script type="text/javascript" src="~/Scripts/Index.js"></script>
     ```
     

@@ -33,7 +33,7 @@ The activation link sent to the user will be valid only for 2 days and if the us
 
 The account will be in inactive status till the user activates the account from the activation email.
 
-> **NOTE:**  User emails cannot be updated once created. Please make sure to provide the correct email id before create the user.
+> **NOTE:** User emails cannot be updated once created. Please make sure to provide the correct email id before creating the user. Users created with passwords in the Bold BI application will be considered local users.
 
 ### Import users from CSV
 
@@ -43,7 +43,7 @@ You can navigate to the user management page by clicking the `User Management` d
 
 ![Import from CSV - Navigation](/static/assets/cloud/managing-resources/manage-users/images/usermanagement.png)
 
-> **NOTE:**  The section will explain on how to import the users from CSV file which can be downloaded from below location in Bold BI application.
+> **NOTE:** The section will explain how to import the users from a CSV file, which can be downloaded from the following location in the Bold BI application. Users created with passwords in the Bold BI application will be considered local users.
 
 #### Add users from CSV file
 

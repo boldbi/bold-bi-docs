@@ -181,19 +181,25 @@ You can format the map for a better illustration of the view that you require us
 
 #### General Settings
 
-![General settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/map/bubblemapname.png)
+![General settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/map/property.png)
 
 #### Name
 
 This allows you to set a `title` for the map widget.
 
+![General settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/map/Title.png)
+
 #### Subtitle
 
 This allow you to set a `subtitle` for the map widget.
 
+![General settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/map/Subtitle.png)
+
 #### Description
 
 This allows you to set a brief explanation about the map widget.
+
+![General settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/map/Description.png)
 
 #### Basic settings
 
@@ -203,11 +209,17 @@ This allows you to set a brief explanation about the map widget.
 
 This option allows you to toggle the visibility of tooltip in a map.
 
+![General settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/map/tooltip.png)
+
 #### Map type
 
 You can choose the map type as choropleth or bubble map.
 
 ![Map](/static/assets/embedded/visualizing-data/visualization-widgets/images/map/choropleth-maptype.png)
+
+By setting the map type as `Bubble`, the show value label property will be hidden.
+
+![Map](/static/assets/embedded/visualizing-data/visualization-widgets/images/map/type-change.png)
 
 ### Show legend
 
@@ -232,6 +244,8 @@ This allows you to customize the data labels color.
 ### Enable Multi Selection
 
 This option will be enabled only after you enable the `Act as Master Widget` option and this allows you to filter the multiple data by enabling the `Enable Multi Selection` option.
+
+![Enable multi selection](/static/assets/embedded/visualizing-data/visualization-widgets/images/map/multi-selection.png)
 
 #### Shape kind
 
@@ -296,7 +310,13 @@ This allows you to edit the legend title of a map.
 
 This provides the option to select the legend placement in a map.
 
+![Legend position](/static/assets/embedded/visualizing-data/visualization-widgets/images/map/legend-top.png)
+
+![Legend position](/static/assets/embedded/visualizing-data/visualization-widgets/images/map/legend-bottom.png)
+
 ### Marker Settings
+
+If you bind the Marker latitude and Marker Longitude fields, the Marker settings category will be visible.
 
 ![Marker Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/map/marker-settings.png)
 
@@ -578,3 +598,11 @@ To learn more about viewing the underlying widget data, refer to the [view data 
 #### Pin Widget
 
 This allows you to pin the widget.
+
+#### Responsive Behavior
+
+We hide the widget elements based on the size of the widget for better readability.
+
+When the map has been placed with less than 7 rows map legend will be hidden.
+
+![Widget Element](/static/assets/embedded/visualizing-data/visualization-widgets/images/map/legend.png)

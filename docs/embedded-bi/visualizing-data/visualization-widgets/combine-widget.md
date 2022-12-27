@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Combine Widget – Embedded BI Visual | Bold BI Documentation
+title: Combine Widget – Embedded BI Visual | Bold BI Documentation.
 description: Learn how to use a combine widget to group a set of visuals in the dashboard for unique identity in Bold BI.
 canonical: "/cloud-bi/visualizing-data/visualization-widgets/combine-widget/"
 platform: bold-bi

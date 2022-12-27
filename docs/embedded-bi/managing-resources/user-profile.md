@@ -190,6 +190,40 @@ Users can view their access permission list for each resources like Dashboards, 
 You can manage the external OAuth accounts that you have granted access for in Bold BI. Please find more details on the [Connected accounts](/cloud-bi/working-with-data-source/working-with-connected-accounts/).
 
 ## Connected sites
-You can view the list of external published sites.
+
+Add, edit, delete, and view the list of external sites on the connected sites page.
 
 ![Connected sites](/static/assets/embedded/managing-resources/images/connected-sites.png)
+
+## Add External BI Sites
+
+Add a site created in Bold BI servers as an external site on the `Connected Sites` page.
+
+![Add New Site](/static/assets/embedded/managing-resources/images/add-new-site.png)
+
+To add an external BI site, click `Add new site`, fill in the following details as shown in the following image, then click `Save`.
+
+* Name - Enter the name that you want for external site.
+* Client ID - Enter the Client Id of the site.
+* Client Secret - Enter the Client Secret of the site.
+* Site URL - Enter the URL of the site.
+
+![Add External sites](/static/assets/embedded/managing-resources/images/add-external-bi-site.png)
+
+## Edit External Site
+
+To edit an external site, click `Actions` and then select `Edit` from the site listing grid.
+![Edit External sites](/static/assets/embedded/managing-resources/images/edit-external-site.png)
+
+Edit the site details, then click `Save`. You need to re-enter the site's `Client Secret` to edit the connected site.
+![Edit External site Dialog](/static/assets/embedded/managing-resources/images/edit-external-site-dialog.png)
+
+## Delete External Site
+
+To delete an external site, click `Actions`, select `Delete` from the site listing grid, then click `Yes` in the `Delete Connected Site` dialog.
+
+![Delete External sites](/static/assets/embedded/managing-resources/images/delete-external-site.png)
+
+![Delete External sites Dialog](/static/assets/embedded/managing-resources/images/delete-external-site-dialog.png)
+
+

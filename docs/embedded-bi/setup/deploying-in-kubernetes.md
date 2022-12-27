@@ -34,15 +34,23 @@ The following table shows the Bold BI deployments and its usage:
 | id-web-deployment | Acts as an Identity Provider for the Bold BI and Bold Reports applications.|
 | id-ums-deployment | Provides a user interface for managing users, tenants, and rebranding applications. |
 
-## How was high availability achieved in Bold BI using Kubernetes?
+## How to achieve high availability in Bold BI using Kubernetes?
 
 1. **Containerized Architecture** – Bold BI runs as a multi-instance containerized application. So, if any of the instances is crashing then the entire application won’t be down. If one instance is down, then the request is automatically redirected to the next instance. 
 2. **Load Balancing** – Network traffic is shared equally across available pods. 
 3. **Auto Scaling** – HPA(Horizontal Pod Scaling) is enabled by default in Bold BI, so based on traffic the pods are scaled up/down automatically. So, we are always getting the same response time even if the load increases/decreases rapidly. 
 4. **Auto Healing** – Kubernetes closely monitors the pods health status and restarts the pods automatically when there is a crash or problem. 
 
+## Deployment Prerequisites
+
+The following requirements are necessary to run the Bold BI solution.
+
+* Kubernetes cluster
+* File storage
+* Microsoft SQL Server 2012+ | PostgreSQL | MySQL
+* Load balancer: [Nginx](https://docs.nginx.com/nginx-ingress-controller/installation/installation-with-manifests/) or [Istio](https://istio.io/latest/docs/setup/getting-started/)
+* Web Browser: Microsoft Edge, Mozilla Firefox, and Chrome.
+
 ## How to deploy Bold BI in Kubernetes
 
-You can follow the link below for Bold BI Kubernetes deployment in a specific cloud environment.
-
-[Bold BI on Kubernetes](https://github.com/boldbi/boldbi-kubernetes)
+You can follow the [link](https://github.com/boldbi/boldbi-kubernetes) for Bold BI `Kubernetes` deployment in a specific cloud environment.

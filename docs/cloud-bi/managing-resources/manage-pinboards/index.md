@@ -14,8 +14,6 @@ This section explains how to manage pinboards like add, delete, duplicate pinboa
 
 You can explore the managing pinboards in detail here,
 
-[Add Pinboards](/cloud-bi/managing-resources/manage-pinboards/add-pinboards/)
-
 [Rename Pinboards](/cloud-bi/managing-resources/manage-pinboards/rename-pinboards/)
 
 [Duplicate Pinboards](/cloud-bi/managing-resources/manage-pinboards/duplicate-pinboards/)

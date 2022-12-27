@@ -58,7 +58,7 @@ The following steps explain to configure the table data to date picker:
 
 ## How to configure relative dates to DatePicker?
 
-Switch to the `Properties` pane and set the `Selection Type` as `Range`; Switch back to the `Data` pane; Click the `Settings` icon in the dropped date column and select `Relative Dates...` in the drop-down menu.
+Switch to the `Properties` pane and set the `Selection Type` as `Range`; Switch back to the `Data` pane; Click the `Settings` icon in the dropped date column and select `Relative Dates..`. in the drop-down menu.
 
 ![showing relative dates menu](/static/assets/cloud/visualizing-data/visualization-widgets/images/date-picker/relativedatesdatepicker.png)
 
@@ -74,7 +74,7 @@ You can see the added relative dates in the DatePicker as follows.
 
 ## How to configure custom relative dates to the DatePicker?
 
-Switch to the  `Properties` pane and set the `Selection Type` as Range, and then switch back to the Data pane; Click the `Settings` icon in the dropped date column and select `Relative Dates...` in the drop-down menu.
+Switch to the  `Properties` pane and set the `Selection Type` as Range, and then switch back to the Data pane; Click the `Settings` icon in the dropped date column and select `Relative Dates..`. in the drop-down menu.
 
 ![showing relative date options](/static/assets/cloud/visualizing-data/visualization-widgets/images/date-picker/relativedatesdatepicker.png)
 
@@ -82,7 +82,7 @@ In the launched `Relative Date Options` window, select the `Custom` option from 
 
 ![selecting custom option in relative dates window](/static/assets/cloud/visualizing-data/visualization-widgets/images/date-picker/customoptionin-relativedatefilter-datepicker.png)
 
-Choose the start and end dates you like to set as custom range, set a name for the custom range, and then click `Add.` Repeat this process till the required set of custom relative dates are added.
+Choose the start and end dates you like to set as custom range, set a name for the custom range, and then click `Add`. Repeat this process till the required set of custom relative dates are added.
 
 
 ![setting range for custom option](/static/assets/cloud/visualizing-data/visualization-widgets/images/date-picker/customdatelimits-relativedatefilter-datepicker.png)
@@ -105,19 +105,25 @@ You can format the Date Picker for a better illustration of the view that you re
 
 ### General Settings
 
-![date picker name](/static/assets/cloud/visualizing-data/visualization-widgets/images/date-picker/general-settings.png)
+![date picker name](/static/assets/cloud/visualizing-data/visualization-widgets/images/date-picker/property.png)
 
 #### Name
 
 This allows you to set the `title` for this date picker widget.
 
+![date picker name](/static/assets/cloud/visualizing-data/visualization-widgets/images/date-picker/Title.png)
+
 #### Subtitle
 
 This allows you to set the `subtitle` for this date picker widget.
 
+![date picker name](/static/assets/cloud/visualizing-data/visualization-widgets/images/date-picker/Subtitle.png)
+
 #### Description
 
 This allows you to set the brief explanation about this date picker widget.
+
+![date picker name](/static/assets/cloud/visualizing-data/visualization-widgets/images/date-picker/Description.png)
 
 #### Basic Settings
 
@@ -187,7 +193,7 @@ When the `Enable Hierarchical Filtering` is enabled, the Top N will be applied f
 
 #### Title Alignment
 
-This allows you to handle the alignment of widget title to either `left, center, or right.`
+This allows you to handle the alignment of widget title to either `left, center, or right`.
 
 #### Title Color
 
@@ -223,7 +229,11 @@ This allows you to set the **background color** to the date picker widget.
 
 #### Transparency
 
-This property allows you to specify the **transparency** for the `background color.`
+This property allows you to specify the **transparency** for the `background color`.
+
+### Show Shadow
+
+This allows you to toggle the visibility of the `shadow` surrounding the widget.
 
 #### Container actions
 
@@ -235,4 +245,4 @@ This allows you to enable or disable the `widget title` of the date picker widge
 
 #### Enable Comments
 
-This allows you to enable or disable `comment` for the dashboard widget. For more details, refer to this [link](/cloud-bi/visualizing-data/working-with-widgets/commenting-widget/).
+This allows you to enable or disable `comment` for the dashboard widget. For more details, refer to this [link](/embedded-bi/visualizing-data/working-with-widgets/commenting-widget/).

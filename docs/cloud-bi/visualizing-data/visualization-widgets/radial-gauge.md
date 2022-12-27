@@ -35,15 +35,15 @@ Follow these steps to configure data to the Radial Gauge:
 
 ![Excel connection type](/static/assets/cloud/visualizing-data/visualization-widgets/images/datasourcelist.png)
 
-5.  In the `NEW DATA SOURCE` configuration panel, enter the name and choose the file path, and then click `Preview & Connect.`
+5.  In the `NEW DATA SOURCE` configuration panel, enter the name and choose the file path, and then click `Preview & Connect`.
 
 ![Select file path](/static/assets/cloud/visualizing-data/visualization-widgets/images/connectbutton.png)
 
-6.  Select the required tables from the `Choose Table(s)` dialog and click `Connect.`
+6.  Select the required tables from the `Choose Table(s)` dialog and click `Connect`.
 
 ![Connect tables](/static/assets/cloud/visualizing-data/visualization-widgets/images/radial-gauge/choose-tables.png)
 
-7.  Drag your preferred table or view from the left pane in the data design view and click `Save.` 
+7.  Drag your preferred table or view from the left pane in the data design view and click `Save`.
 
 ![Virtual tables](/static/assets/cloud/visualizing-data/visualization-widgets/images/virtualtable.png)
 
@@ -59,7 +59,7 @@ Follow these steps to configure data to the Radial Gauge:
 
 ### Actual Value
 
-Bind column by dragging any field from any section to `Actual Value.`
+Bind column by dragging any field from any section to `Actual Value`.
 
 ![Actual Value](/static/assets/cloud/visualizing-data/visualization-widgets/images/radial-gauge/actualvalue.png)
 
@@ -69,9 +69,15 @@ You can use the `aggregate function` to change the actual values of the Radial G
 
 ![Settings menu](/static/assets/cloud/visualizing-data/visualization-widgets/images/radial-gauge/settings.png)
 
+#### Renaming fields
+
+The configured field names can be edited by using the `Rename` option provided in the settings menu.
+
+![Rename](/static/assets/cloud/visualizing-data/visualization-widgets/images/radial-gauge/rename.png)
+
 #### Filtering data
 
-You can use the `Filter` option to filter the data by specifying the filter condition. For more details, refer to the [filter](https://help.syncfusion.com/dashboard-cloud/visualize-data/configuring-widget-filters).
+You can use the `Filter` option to filter the data by specifying the filter condition. For more details, refer to the [filter](https://help.syncfusion.com/dashboard-embedded/visualize-data/configuring-widget-filters).
 
 ![Measure filter](/static/assets/cloud/visualizing-data/visualization-widgets/images/radial-gauge/filter-option.png)
 
@@ -81,17 +87,17 @@ You can format the data to be displayed in the gauge by using the `Format` optio
 
 ![Measure format](/static/assets/cloud/visualizing-data/visualization-widgets/images/radial-gauge/format-option.png)
 
-> **NOTE:**  Refer to this [link](/cloud-bi/visualizing-data/working-with-widgets/formatting-measure-type-column/) for more details on Measure formatting.
+> **NOTE:**  Refer to this [link](/embedded-bi/visualizing-data/working-with-widgets/formatting-measure-type-column/) for more details on Measure formatting.
 
 ### Target Value
 
-Similarly, drag any field from any section to `Target Value.`
+Similarly, drag any field from any section to `Target Value`.
 
 ![Target value](/static/assets/cloud/visualizing-data/visualization-widgets/images/radial-gauge/targetvalue.png)
 
 ### Series
 
-Drag any field from the Dimensions section to `Series.`
+Drag any field from the Dimensions section to `Series`.
 
 ![Series configuration](/static/assets/cloud/visualizing-data/visualization-widgets/images/radial-gauge/seriesconfiguration.png)
 
@@ -103,13 +109,13 @@ You can apply the `Sort` and `Filter` options for the Series field, if required 
 
 ![Settings menu options](/static/assets/cloud/visualizing-data/visualization-widgets/images/radial-gauge/sorting-settings.png)
 
-**Sorting**: You can customize the sorting behavior of dimension fields in the Radial Gauge widget. You can order them based on alphabet or value, data source (default), or field. Refer to this [link](/cloud-bi/visualizing-data/working-with-widgets/advanced-sorting/) for the detailed steps.
+**Sorting**: You can customize the sorting behavior of dimension fields in the Radial Gauge widget. You can order them based on alphabet or value, data source (default), or field. Refer to this [link](/embedded-bi/visualizing-data/working-with-widgets/advanced-sorting/) for the detailed steps.
 
-**Filtering**: You can use “Filter” option to filter the data by specifying the filter condition. Refer the detailed steps on applying measure filter from this [page](/cloud-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column). 
+**Filtering**: You can use the “Filter” option to filter the data by specifying the filter condition. Refer to the detailed steps on applying measure filter from this [page](/embedded-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column).
 
 ### Minimum Value
 
-Drag any field from the Measures section to `Minimum Value.` If the minimum value is configured, then this value will be the start range for the gauge widget.
+Drag any field from the Measures section to `Minimum Value`. If the minimum value is configured, then this value will be the start range for the gauge widget.
 
 ![Minimum Value](/static/assets/cloud/visualizing-data/visualization-widgets/images/radial-gauge/minimumvalue.png)
 
@@ -117,7 +123,7 @@ Drag any field from the Measures section to `Minimum Value.` If the minimum valu
 
 ### Maximum Value
 
-Drag any field from the Measures section to `Maximum Value.` If the maximum value is configured, it will act as the end range for the gauge widget.
+Drag any field from the Measures section to `Maximum Value`. If the maximum value is configured, it will act as the end range for the gauge widget.
 
 ![Maximum Value](/static/assets/cloud/visualizing-data/visualization-widgets/images/radial-gauge/maximumvalue.png)
 
@@ -139,27 +145,41 @@ To format the Radial Gauge, follow the given steps:
 
 ### General Settings
 
-![General Settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/radial-gauge/property-window.png)
+![General Settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/radial-gauge/property.png)
 
 #### Name
 
 This option allows you change the `title` for the Radial Gauge.
 
+![General Settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/radial-gauge/Name.png)
+
 #### Subtitle
 
 Allows you provide `subtitle` for the Radial Gauge.
+
+![General Settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/radial-gauge/subtitle.png)
 
 #### Description
 
 Allows you provide `description` about the Radial Gauge.
 
+![General Settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/radial-gauge/Description.png)
+
 ### Basic Settings
  
 ![Basic settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/radial-gauge/radialgaugebasicsettings.png)
 
+#### Show Tooltip
+
+This option allows you to toggle the visibility of tooltip in the radial gauge.
+
+![General Settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/radial-gauge/tooltip.png)
+
 #### Gauge Type
 
-Allows you to switch the widget view from the Half Circle type to Horse Shoe type or Full circular gauge or vice versa. The default type is `Horse Shoe.`
+Allows you to switch the widget view from the Half Circle type to Horse Shoe type or Full circular gauge or vice versa. The default type is `Horse Shoe`.
+
+> **Note:** If you change gauge type to `Full circle`, **Color settings** or **Range settings** categories will be hidden. In the `Pointer settings` category, **Value Pointer**, **Target Pointer** and **Target Color** properties will be hidden, and in `Scale settings` category, **Show ticks**, **Show label** and their dependent properties will be hidden. The `Size` option will be shown, which is used to customize the font size of the difference value.
 
 #### Half Circular Gauge
 
@@ -206,15 +226,17 @@ Allows you to hide or show the actual value in gauge by disabling or enabling th
 
 #### Value Color 
 
-You can apply color for the Actual value displayed in the Radial Gauge. The default value is `#666666.`
+You can apply color for the Actual value displayed in the Radial Gauge. The default value is `#666666`.
 
 ![Actual Value color](/static/assets/cloud/visualizing-data/visualization-widgets/images/radial-gauge/actualvalue-set-color.png)
 
 ![Actual Value color](/static/assets/cloud/visualizing-data/visualization-widgets/images/radial-gauge/actualvalue-set-color-set.png)
 
+If you uncheck the `show actual value` property, its dependent property **Value color** will be hidden.
+
 #### Label Color 
 
-You can apply color for the Radial Gauge labels. The default value is `#000000.`
+You can apply color for the Radial Gauge labels. The default value is `#000000`.
 
 ![Actual Label color](/static/assets/cloud/visualizing-data/visualization-widgets/images/radial-gauge/actualvalue-set-color-label.png)
 
@@ -228,7 +250,7 @@ When you bind both actual and target values in gauge, this option will be shown.
 
 #### Title Color
 
-The Radial Gauge title color can be customized. The default value is `#000000.` This option will be disabled if the series is not configured in the Radial Gauge.
+The Radial Gauge title color can be customized. The default value is #000000. This option will be disabled if the series is not configured in the Radial Gauge.
 
 ### Color Settings
 
@@ -244,47 +266,13 @@ From the provided color pickers, you can customize the color values for the **Hi
 
 ![Pointer settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/radial-gauge/pointersettings.png)
 
-#### Value Pointer
-
-You can set the actual value pointer type to any of the following three types and the default value of this property is Range Pointer.
-
-- Range Pointer
-- Needle Pointer
-- Range with Needle
-
-#### Range Pointer
-
-The range pointer is used to display the actual value by coloring the region up to the actual value in Radial Gauge.
-
-**Range Pointer Color**
-
-You can apply color for the Range Pointer. The default value is `#77A7FB`. This option will be disabled, if the Value Pointer is set to Needle Pointer.
-
-**Target Pointer**
-
-You can change the pointer as **line, triangle** and **inverted triangle**.
-
-**Target Color**
-
-You can change the color for the `target pointer.`
-
-**Range Pointer Customization**
-
-![Range Pointer](/static/assets/cloud/visualizing-data/visualization-widgets/images/radial-gauge/range-pointer.png)
-
-#### Needle Pointer
-
-The Needle Pointer is used to display the actual value by using the needle.
-
-![Needle Pointer](/static/assets/cloud/visualizing-data/visualization-widgets/images/radial-gauge/needle-settnings.png)
-
 **Needle Pointer Color**
 
 You can change the color of the needle pointer.
 
 **Needle Pointer Height**
 
-You can increase or decrease the height of the needle by changing the `Needle pointer height.`
+You can increase or decrease the height of the needle by changing the `Needle pointer height`.
 
 **Target Pointer**
 
@@ -292,7 +280,7 @@ You can change the pointer as **line, triangle** and **inverted triangle**.
 
 **Target Color**
 
-You can change the color for the `target pointer.`
+You change change the color for the `target pointer`.
 
 **Needle Pointer Customization**
 
@@ -312,37 +300,45 @@ This is used to display the actual value by coloring the region and set the need
 
 #### Scale Color
 
-Allows you to set the color of the scale. The default value is `#e0e0e0.`
+Allows you to set the color of the scale. The default value is `#e0e0e0`.
 
 #### Show Ticks
 
-Allows you to display the ticks for gauge scales. The default value is `false.` The interval between ticks will be auto-calculated.
+Allows you displays the ticks for gauge scales. The default value is `false`. The interval between ticks will be auto-calculated.
 
 ![Scale Ticks](/static/assets/cloud/visualizing-data/visualization-widgets/images/radial-gauge/show-ticks.png)
 
+If you check the `Show Ticks` property, **Ticks Position**, **Ticks Height**, and **Ticks Width** properties will be shown.
+
+![Scale Ticks](/static/assets/cloud/visualizing-data/visualization-widgets/images/radial-gauge/tick.png)
+
 #### Ticks Position
 
-You can change the tick’s position either at inside or `outside.` The default value is outside. This option is displayed only when the show ticks’ option is enabled.
+You can change the tick’s position either at inside or `outside`. The default value is outside. This option is displayed only when the show ticks’ option is enabled.
 
 #### Ticks Height
 
-Allows you to change the tick’s height. The minimum and maximum value of ticks’ height is 1 and 10 respectively and the default value is `5.` This option is displayed only when the Show Ticks option is enabled.
+Allows you to change the tick’s height. The minimum and maximum value of ticks’ height is 1 and 10 respectively and the default value is `5`. This option is displayed only when the Show Ticks option is enabled.
 
 #### Ticks Width
 
-Allows you to change the tick’s width of the gauge. The minimum and maximum value of ticks’ width is 1 and 5 respectively and the default value is `1.` This option is displayed only when the Show Ticks option is enabled.
+Allows you to change the tick’s width of the gauge. The minimum and maximum value of ticks’ width is 1 and 5 respectively and the default value is `1`. This option is displayed only when the Show Ticks option is enabled.
 
 #### Scale Width
 
-Allows you to change the scale width of the gauge. The minimum and maximum values of the gauge is 1 and 60 respectively and the default value is `40.`
+Allows you change the scale width of the gauge. The minimum and maximum values of gauge is 1 and 60 respectively and the default value is `40`.
 
 #### Show Scale Label
 
-Allows you to display the scale label of the gauge. The default value is `true.`
+Allows you display the scale label of the gauge. The default value is `true`.
+
+By enabling this property, the **Scale label position** property will be shown.
+
+![Scale Ticks](/static/assets/cloud/visualizing-data/visualization-widgets/images/radial-gauge/scale.png)
 
 #### Scale Label Position
 
-Allows you to change the scale label position. The default value is `outside.` This option will be disabled, if the gauge type is half-circle and the Show Ticks is false.
+Allows you change the scale label position. The default value is `outside`. This option will be disabled, if the gauge type is half circle and the Show Ticks is false.
 
 ### Range Settings
 
@@ -350,7 +346,7 @@ Allows you to change the scale label position. The default value is `outside.` T
 
 #### Show Range
 
-You can enable or disable this option to display the scale with three different ranges. The default value is `false.`
+You can enable or disable this option to display the scale with three different ranges. The default value is `false`.
 
 > **NOTE:**  If you enable Show Range, the needle pointer will be set as a fixed pointer and the range pointer option will not be displayed in the property panel.
 
@@ -373,18 +369,54 @@ Allows you to set the end value of the selected range. This option is displayed 
 Allows you to set the color of the selected range. This option is displayed only if the Show Range is true.
 
 #### Value Color
+You can customize color for the Actual value displayed in the Radial Gauge by range color or default label color.
 
-You can change the value color as `default color` or `range color.`
-
-#### Label color
-
-You can change the label color as `default color` or `range color.`
+#### Label Color
+You can customize color for the Radial Gauge labels with the range color or default color.
 
 ### Link
 
-You can enable linking and configure to navigate to a general URL with or without parameters. For more details, refer to the [linking URLs](/cloud-bi/visualizing-data/working-with-widgets/linking-urls-and-dashboards/).
+You can enable linking and configure to navigate to a general URL with or without parameters. For more details, refer to the [linking URLs](/embedded-bi/visualizing-data/working-with-widgets/linking-urls-and-dashboards/).
 
 ![Link](/static/assets/cloud/visualizing-data/visualization-widgets/images/radial-gauge/linking.png)
+
+### Font settings
+
+This section allows you to customize the font size of radial gauge elements.
+
+![Font settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/radial-gauge/font-settings.png)
+
+#### Auto font Size and font size
+
+By default, the 'Auto Font Size' property is enabled. Auto font size property used to set font size based on dashboard viewing client machine resolution. If the user wants to customize or set the fixed font size, then the user needs to disable auto font size and set the required font size.
+
+### Widget with Auto Font Size
+
+![Auto Font Size](/static/assets/cloud/visualizing-data/visualization-widgets/images/radial-gauge/auto-font-settings.png)
+
+### Scale Label Font Size
+
+This option allows you to customize font size of scale labels. While `Auto Font Size` option is enabled, font size will be applied based on resolution.
+
+![Customized Scale Label Font Size](/static/assets/cloud/visualizing-data/visualization-widgets/images/radial-gauge/scale-fontsize.png)
+
+### Actual Value Font Size
+
+This option allows you to customize font size of Actual Value. While `Auto Font Size` option is enabled, font size will be applied based on gauge size.
+
+![Customized Actual Value Font Size](/static/assets/cloud/visualizing-data/visualization-widgets/images/radial-gauge/actualvaalue-fontsize.png)
+
+### Difference Value Font Size
+
+This option allows you to customize font size of Actual Value. While `Auto Font Size` option is enabled, font size will be applied based on gauge size.
+
+![Customized Difference Value Font Size](/static/assets/cloud/visualizing-data/visualization-widgets/images/radial-gauge/differencevalue-fontsize.png)
+
+### Series Title Font Size
+
+This option allows you to customize font size of Series Title. While `Auto Font Size` option is enabled, font size will be applied based on resolution.
+
+![Customized Series Title Font Size](/static/assets/cloud/visualizing-data/visualization-widgets/images/radial-gauge/seriestitle-fontsize.png)
 
 ### Filter
 
@@ -401,6 +433,7 @@ The Radial Gauge widget can be set to act as a master widget by checking the `Ac
 > The Act as Master Widget option will be enabled only when the Series section is configured.
 
 ## How to apply advanced conditional formatting
+
 The color of various properties in the Radial gauge can be customized from the corresponding properties section as explained in the formatting section. This will apply the same color for all records. 
 
 In case, if you have the requirement to highlight any data based on some conditions, you might be required to enable the advanced formatting option. 
@@ -431,7 +464,7 @@ From the Conditional Formatting dialog, you can choose the `based-on field` and 
 
 ![Based on field](/static/assets/cloud/visualizing-data/visualization-widgets/images/radial-gauge/based-on-field.png)
 
-> **NOTE:**  Any field from the configured data source can be selected as the `Based-on field.`
+> **NOTE:**  Any field from the configured data source can be selected as the `Based-on field`.
 
 #### Rule based 
 
@@ -522,9 +555,17 @@ On enabling Auto Font Size, the font size of the subtitle will be adjusted autom
 
 This allows you to apply the specified size of the font to the widget title if the **Subtitle Auto Font Size** is disabled. Value can be between 10 and 32.
 
+### Auto Padding
+
+On enabling Auto Padding, the padding of the widget container will be adjusted automatically if the size of the widget varies.
+
+**Padding**
+
+This allows you to customize the padding of the widget container if the **Auto Padding** is disabled. Value can be between 0 and 25.
+
 ### Show Border
 
-This allows you to toggle the visibility of `border` surrounding the widget.
+This allows you to toggle the visibility of the `border` surrounding the widget.
 
 ### Corner Radius
 
@@ -540,7 +581,11 @@ This allows you to set the **background color** to the radial gauge  widget.
 
 ### Transparency
 
-This property allows you to specify the **transparency** for the `background color.`
+This property allows you to specifies the **transparency** for the `background color`.
+
+### Show Shadow
+
+This allows you to toggle the visibility of the `shadow` surrounding the widget.
 
 ### Container actions
 
@@ -572,15 +617,22 @@ This allows you to enable or disable the `PDF export` option for the radial gaug
 
 #### Enable Comments
 
-This allows you to enable or disable `comment` for the dashboard widget. For more details, refer to this [link](/cloud-bi/visualizing-data/working-with-widgets/commenting-widget/).
+This allows you to enable or disable `comment` for the dashboard widget. For more details, refer to this [link](/embedded-bi/visualizing-data/working-with-widgets/commenting-widget/).
 
 #### Allow View Underlying Data
 
 This allows you to visualize the raw data associated with a widget at runtime. 
 
-To learn more about viewing the underlying widget data, refer to the [view data documentation](/cloud-bi/visualizing-data/working-with-widgets/view-data/). 
+To learn more about viewing the underlying widget data, refer to the [view data documentation](/embedded-bi/visualizing-data/working-with-widgets/view-data/). 
 
 #### Pin Widget
 
 This allows you to pin the widget.
 
+#### Responsive Behavior
+
+We hide the widget elements based on the size of the widget for better readability.
+
+When the gauge is placed with below 150 pixels of height and width, labels and ticks will be hidden.
+
+![Widget Element](/static/assets/cloud/visualizing-data/visualization-widgets/images/radial-gauge/label.png)

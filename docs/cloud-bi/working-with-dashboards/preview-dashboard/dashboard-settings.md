@@ -39,31 +39,67 @@ documentation: ug
 
    You can obtain the data showcased in the dashboard by exporting it as PDF format. This can be achieved by clicking the `Export to PDF` in the drop-down menu at right corner of the title section.
    
-   ![Export to PDF](/static/assets/cloud/working-with-dashboards/preview-dashboards/images/ExporttoPDF.png)
+   ![Export to PDF](/static/assets/cloud/working-with-dashboards/preview-dashboards/images/ExporttoPDF.png#max-width=70%)
    
    By clicking the `Export to PDF`, the pop-up will be shown as follows.
    
-   ![Export PDF popup](/static/assets/cloud/working-with-dashboards/preview-dashboards/images/ExportPDFpopup.png)
-   
+   ![Export PDF popup ](/static/assets/cloud/working-with-dashboards/preview-dashboards/images/dashboardPDFExportDialog.png#max-width=70%)
+
    Set the `File Name` field with preferred value to replace the default one.
    
-   ![Export PDF rename](/static/assets/cloud/working-with-dashboards/preview-dashboards/images/ExportPDFRename.png)
+   ![Export PDF File Name](/static/assets/cloud/working-with-dashboards/preview-dashboards/images/dashboardPDFExportFileName.png#max-width=70%)
    
+   When the `include filter information` is switched on, the dashboard exported PDF file will contain the applied filter information.
+
+   ![Export PDF Filter Information](/static/assets/cloud/working-with-dashboards/preview-dashboards/images/dashboardPDFExportFilterToggle.png#max-width=70%)
+
+   ### Export all widgets on a single page as a PDF
+   
+   The `Dashboard` option is selected by default. All the widgets in the dashboard will be exported as a one-page PDF file.
+   
+   ![Export PDF in Dashboard option](/static/assets/cloud/working-with-dashboards/preview-dashboards/images/dashboardPDFExportDashboardOption.png#max-width=70%)
+
+   ### Export all widgets on a separate page as a PDF
+
+   By choosing the `Widgets` option, the user can export all the widgets present in the dashboard on an individual page as a PDF.
+
+   ![Export PDF in Widget Option](/static/assets/cloud/working-with-dashboards/preview-dashboards/images/dashboardPDFExportWidgetOption.png#max-width=70%)
+
+   An exported PDF file will look like the one below.
+
+   ![Exported PDF file](/static/assets/cloud/working-with-dashboards/preview-dashboards/images/dashboardPDFExport.png)
+
+   >**NOTE:** If the dashboard has Grid and Card (with series) type widgets. It will export all the records in those widgets.
+
+   ![Series type Widget PDF file](/static/assets/cloud/working-with-dashboards/preview-dashboards/images/dashboardPDFExportSeriesWidget.png)
+
+   ### Export the user-selected widgets as PDFs
+
+   By choosing the widget option, the Dropdown will be displayed on the right side of the popup.
+
+   ![Dropdown Option](/static/assets/cloud/working-with-dashboards/preview-dashboards/images/dashboardPDFExportWidgetOptionAll.png#max-width=70%)
+
+   By clicking the dropdown, all widgets in the dashboard will be displayed[excluding Filter Widgets]. Users can choose the widgets required and click on Export to Export selected widgets in the PDF.
+
+   ![Widget list dropdown](/static/assets/cloud/working-with-dashboards/preview-dashboards/images/dashboardPDFExportWidgetListbox.png#max-width=70%)
+
+   Exported PDF will be downloaded with each widget on an individual Page.
+
    Set the preferred `Page Size` of the PDF File.
    
-   ![Export PDF page](/static/assets/cloud/working-with-dashboards/preview-dashboards/images/ExportPDFpage.png)
+   ![Export PDF Page Size](/static/assets/cloud/working-with-dashboards/preview-dashboards/images/dashboardPDFExportPageSize.png#max-width=70%)
    
    Choose the `Orientation` of the page as either Portrait or Landscape mode.
    
-   ![Export PDF orientation](/static/assets/cloud/working-with-dashboards/preview-dashboards/images/ExportPDFOrientation.png)
+   ![Export PDF Orientation](/static/assets/cloud/working-with-dashboards/preview-dashboards/images/dashboardPDFExportOrientation.png#max-width=70%)
    
    By clicking the `Export`, the data in the dashboard will get displayed in the PDF file format.
    
-   ![PDF export](/static/assets/cloud/working-with-dashboards/preview-dashboards/images/PDFExport.png)
+   ![Export PDF Export](/static/assets/cloud/working-with-dashboards/preview-dashboards/images/dashboardPDFExportButton.png#max-width=70%)
    
    By clicking the `Reset`, the default values get restored in the pop-up.
    
-   ![PDF reset](/static/assets/cloud/working-with-dashboards/preview-dashboards/images/PDFReset.png) 
+   ![Export PDF Reset](/static/assets/cloud/working-with-dashboards/preview-dashboards/images/dashboardPDFExportReset.png#max-width=70%) 
    
 ## Exporting dashboard to Excel
 

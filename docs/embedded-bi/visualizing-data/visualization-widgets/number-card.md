@@ -203,6 +203,8 @@ The following screenshot shows the Number Card widget, after modifying the heade
 
 This option allows you to toggle the visibility of tooltip in a card.
 
+![Header properties customized](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/tooltip.png)
+
 ## How to apply conditional formatting in Number card
 
 By enabling the advanced settings in formatting , you can customize the color, styles, and highlighting of the data based on the conditional range values.
@@ -338,6 +340,32 @@ The following image shows the Number Card widget, after modifying the color and 
 
 ![Measure hidden](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/hidden-measure.png)
 
+### Auto Font Size
+
+On enabling this property, the font size of the number card measure varies based on the screen resolution.
+
+Use Case: 
+
+If we have created a dashboard with number card which can be viewed by different clients of different screen resolution and we wants the measure value to be adjusted with respect to their resolution then we can use this option.
+
+### Auto font size at 3840 x 2160
+
+![Auto Font Size](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/auto-fontsize.png)
+
+### Auto font size at 1366 x 768
+
+![Auto Font Size](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/auto-fontsize-diff.png)
+
+### Auto font size at 1920 x 1080
+
+![Auto Font Size](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/auto-fontsize-resolution.png)
+
+#### Font size
+
+You can customize the font size of the number card title by unchecking `Auto Font Size`.
+
+![number Card font size](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/single-card-measure-properties.png)
+
 ### Title properties
 
 You can customize the font color and size of the title. You can also enable or disable the title.
@@ -375,6 +403,32 @@ If card height is not enough to wrap title further it will trim the title.
 If the title doesn't contains space between words, it will not wrap. 
 
 ![Title without space](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/show-singlecard-title-text-without-space.png)
+
+### Auto Font Size
+
+On enabling this property, the font size of the number card title varies based on the screen resolution.
+
+Use Case: 
+
+If we have created a dashboard with a number card that can be viewed by different clients of different screen resolutions, and we want the title value to be adjusted with respect to their resolution, then we can use this option.
+
+### Auto font size at 3840 x 2160
+
+![Auto Font Size](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/auto-fontsize-resolution.png)
+
+### Auto font size at 1366 x 768
+
+![Auto Font Size](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/autofontsize-diff.png)
+
+### Auto font size at 1920 x 1080
+
+![Auto Font Size](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/auto-fontsize.png)
+
+#### Font size
+
+You can customize the font size of the number card title by unchecking `Auto Font Size`.
+
+![number Card font size](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/single-card-title-fontsize.png)
 
 ### Series settings 
 

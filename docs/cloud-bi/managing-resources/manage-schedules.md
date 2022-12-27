@@ -47,11 +47,41 @@ Schedules can be created only if the user has `Create All Schedules` permission.
 
 > **NOTE:**  Categories or Dashboards can be changed from schedule dialog box itself.
 
-* After adding schedule details, click on the `Next` button in schedule dialog. 
+* After adding schedule details, click `Next` in the schedule dialog.
+
+## Customizing schedule email Content
+	
+* Customize the mail content that needs to be sent during the schedule.
+
+* The schedule mail content page will have default content as shown in the following image.
+
+  ![Default Schedule Mail](/static/assets/cloud/managing-resources/images/default-mail-content.png#width=85%)
+
+* Use the default mail subject or customize it using the variables available in the drop-down next to the subject field. Once you select a variable from the variables drop-down, the default subject content will get reset.
+
+  ![Customize Mail Subject](/static/assets/cloud/managing-resources/images/customize-mail-subject.png#width=85%)
+
+* Customize the mail body content and enhance it by using bold, italic, points, numbers, font size, code, and quotation options as shown in the following images.
+
+  ![Customize Mail Content](/static/assets/cloud/managing-resources/images/customize-mail-content.png#width=85%)
+
+  ![Bold Style and Points](/static/assets/cloud/managing-resources/images/schedule-mail-bold-points.png)
+
+* Insert images and links if needed.
+
+  ![Insert Image and Links](/static/assets/cloud/managing-resources/images/schedule-insert-image-links.png)
+
+* With the help of the `preview` option,visualize the actual mail format while scheduling and `reset` if you need to restore to the default content.
+
+  ![Preview and Reset](/static/assets/cloud/managing-resources/images/schedule-preview-reset.png)
+
+* After customizing the mail content, click `Next` in the schedule dialog.
+
+  ![Customize Page Next](/static/assets/cloud/managing-resources/images/schedule-next-btn.png) 
 
 * Select the recurrence type, recurrence, start and end dates, export formats and the users to which the exported dashboards and failure notification have to be emailed in the `Add Schedule` dialog box.
-	* Dashboards can be scheduled hourly, daily, weekly, monthly and yearly
-	* Dashboards can be exported as image, PDF and Excel
+	* Dashboards can be scheduled hourly, daily, weekly, monthly, and yearly.
+	* Dashboards can be exported as image, PDF, and Excel.
 	* Application Time Zone is displayed below the date picker. Start time of the schedule is converted to client Time Zone and shown in the right side for the user’s convenience 
 	* Exported dashboards can be sent to individual users or groups or to external recipients along with the link the dashboard in the Bold BI through emails.
 	
@@ -82,10 +112,37 @@ You can configure the export formats in the schedule.
 
 ![Schedule Image Export](/static/assets/cloud/managing-resources/images/export-image.png)
 
-## Configure Schedule with Location Export
+## Other Destination Schedule Export
 You can export the dashboards to the FTP location by configuring the FTP credentials while scheduling the dashboard export.
 
 ![Schedule Location Export](/static/assets/cloud/managing-resources/images/ftp-location.png)
+
+### Webhook Notification
+You can send a webhook notification for an export schedule or data alert by selecting the created webhook in `Other Destinations` section.
+
+![Select Webhook](/static/assets/cloud/managing-resources/images/webhook-notification.png)
+
+#### Steps to configure webhook when adding or editing schedules
+
+1. Select previously created webhooks from the Webhook list dropdown.
+
+	![Select Webhook](/static/assets/cloud/managing-resources/images/select-webhook.png)
+
+2. If you haven't created any webhooks, you can create them by clicking the `Create` option. This will open the `Add Webhook` page in a new tab Please visit [Manage Webhook](/embedded-bi/webhook/) for how to add webhook.
+
+	![Create Webhook](/static/assets/cloud/managing-resources/images/create-webhook.png)
+
+3. After creating the webhook, you need to click the `Refresh` option for the created webhook to appear in the dropdown.
+
+	![Refresh Webhook](/static/assets/cloud/managing-resources/images/refresh-webhook.png)
+
+4. After selecting any of the webhooks, you can see the selected webhook endpoint with request content type details in the info message section.
+
+	![Configuration Message](/static/assets/cloud/managing-resources/images/webhook-configuration-message.png)
+
+5. When running the schedule, Bold BI will call the webhook endpoint you selected with the selected or all payload data. Click [here](/cloud-bi/webhook/webhook-payload/) to learn more about what is the payload data sent to a webhook call.
+
+> **NOTE:**  Time Driven Dashboard Export event webhook get listed only for the normal schedule, and Alert Driven Dashboard Export event webhook get listed only for data alert schedule.
 
 ## Edit Schedules
 Category, dashboard, name, recurrence type, recurrence, start and end dates, export format and the recipients can be changed in the `Edit Schedule` dialog box.

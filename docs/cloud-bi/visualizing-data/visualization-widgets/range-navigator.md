@@ -55,13 +55,13 @@ The following procedure explains data configuration of Range Navigator:
 
 ### Adding value
 
-Bind column through drag and drop element from the `Measures` section to `Value.`
+Bind column through drag and drop element from the `Measures` section to `Value`.
 
 ![Range Navigator Value data](/static/assets/cloud/visualizing-data/visualization-widgets/images/range-navigator/navigator-valuedata.png)
 
-You can add more than one `Measures` into `Value.`
+You can add more than one `Measures` into `Value`.
 
-Click the `Settings` option to change required summary type from the available summary types shown in `Settings.`
+Click the `Settings` option to change required summary type from the available summary types shown in `Settings`.
 
 ![Range Navigator Summary type](/static/assets/cloud/visualizing-data/visualization-widgets/images/range-navigator/navigator-sumtype.png)
 
@@ -69,7 +69,11 @@ Drag and drop element from the `Dimensions` or `Measures` field into the `Argume
 
 ![Range Navigator Argument data](/static/assets/cloud/visualizing-data/visualization-widgets/images/range-navigator/navigator-argdata.png)
 
-Click the `Settings` option to change required date format. You can also set the `Relative Date Filter.`
+`Dimensions` section is available only with date fields and icon in `Argument` section denotes the same.
+
+![Range Navigator Argument Icon Info](/static/assets/cloud/visualizing-data/visualization-widgets/images/range-navigator/navigator-argicon.png)
+
+Click the `Settings` option to change required date format. You can also set the `Relative Date Filter`.
 
 `Settings` icon is not applicable for `Measures` values.
 
@@ -95,19 +99,25 @@ You can format the Range Navigator for better illustration of the view that you 
 
 ### General Settings
 
-![Range Navigator Name](/static/assets/cloud/visualizing-data/visualization-widgets/images/range-navigator/general-settings.png)
+![Range Navigator Name](/static/assets/cloud/visualizing-data/visualization-widgets/images/range-navigator/property.png)
 
 #### Name
 
 This allows you to set the `title` for this range navigator widget.
 
+![Range Navigator Name](/static/assets/cloud/visualizing-data/visualization-widgets/images/range-navigator/Name.png)
+
 #### Subtitle
 
 This allows you to set the `subtitle` for this range navigator widget.
 
+![Subtitle](/static/assets/cloud/visualizing-data/visualization-widgets/images/range-navigator/subtitle.png)
+
 #### Description
 
 This allows you to set the brief explanation about this range navigator widget.
+
+![description](/static/assets/cloud/visualizing-data/visualization-widgets/images/range-navigator/Description.png)
 
 ### Color Settings
 
@@ -159,7 +169,7 @@ When `Hierarchical Filter` option is enabled, the Top N will be applied for each
 
 #### Title Alignment
 
-This allows you to handle the alignment of widget title to either `left, center, or right.`
+This allows you to handle the alignment of widget title to either `left, center, or right`.
 
 #### Title Color
 
@@ -183,7 +193,7 @@ This allows you to apply the specified size of the font to the widget title if t
 
 #### Show Border
 
-This allows you to toggle the visibility of `border` surrounding the widget.
+This allows you to toggle the visibility of the `border` surrounding the widget.
 
 #### Corner Radius
 
@@ -195,7 +205,11 @@ This allows you to set the **background color** to the range navigator widget.
 
 #### Transparency
 
-This property allows you to specifies the **transparency** for the `background color.`
+This property allows you to specifies the **transparency** for the `background color`.
+
+### Show Shadow
+
+This allows you to toggle the visibility of the `shadow` surrounding the widget.
 
 #### Container actions
 
@@ -207,4 +221,4 @@ This allows you to enable or disable the `widget title` of the range navigator w
 
 #### Enable Comments
 
-This allows you to enable or disable `comment` for the dashboard widget. For more details, refer to this [link](/cloud-bi/visualizing-data/working-with-widgets/commenting-widget/).
+This allows you to enable or disable `comment` for the dashboard widget. For more details, refer to this [link](/embedded-bi/visualizing-data/working-with-widgets/commenting-widget/).

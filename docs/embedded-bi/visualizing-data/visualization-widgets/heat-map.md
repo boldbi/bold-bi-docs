@@ -117,7 +117,6 @@ The configured field names can be edited by using the `Rename` option provided i
 
 ![Rename ](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/rename.png)
 
-
 #### Changing the aggregation type
 
 You can change the `aggregation type` of the `measure` section from the settings menu as shown in the following screenshot. Refer to [this section](/embedded-bi/visualizing-data/working-with-widgets/aggregating-value-columns-based-on-type/) for more details.
@@ -154,27 +153,39 @@ You can format the `Heatmap` for better illustration of the view that you requir
 
 ### General settings
 
+![General settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/property.png)
+
 #### Name
 
 This allows you to set `title` for this Heatmap widget.
+
+![General settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/Name.png)
 
 #### Subtitle
 
 This allows you to set `subtitle` for this Heatmap widget. 
 
+![General settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/Subtitle.png)
+
 #### Description
 
 This allows you to set brief explanation about this Heatmap widget.
 
-![General settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/general-settings.png)
+![General settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/Description.png)
 
 ### Cell settings
 
 ![Cell settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/cellsettings.png)
 
+If we uncheck this property, the value label color property will be hidden.
+
+![Cell settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/value-label.png)
+
 #### Show Tooltip
 
 This option allows you to toggle the visibility of tooltip in a heat map.
+
+![General settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/tooltip.png)
 
 #### Show label
 
@@ -441,6 +452,8 @@ Refer to the following sections for the detailed steps on using the [`Gradient`]
 
 You can customize the fill color of the heatmap using the gradient based conditional formatting. This is the default mode. 
 
+> **NOTE:** Binding size field in heat map, Gradient mode option will be disabled. 
+
 #### Based on field
 
 The configured value fields. Based on field cannot be changed in the conditional formatting dialog. 
@@ -612,3 +625,19 @@ To learn more about viewing the underlying widget data, refer to the [view data 
 #### Pin Widget
 
 This allows you to pin the widget.
+
+#### Responsive Behavior
+
+We hide the widget elements based on the size of the widget for better readability.
+
+When the Heatmap has been placed with less than 20 columns chart y-axis title and y-axis label will be hidden.
+
+![Widget Element](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/Y-axis.png)
+
+When the Heatmap is placed with less than 7 rows, the x-axis title and x-axis label, the legend will be hidden.
+
+![Widget Element](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/X-axis.png)
+
+When the Heatmap is placed with less than 16 columns and less than 7 rows, the legend will be hidden.
+
+![Widget Element](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/legend.png)

@@ -26,9 +26,9 @@ The `Add User` dialog will be shown as like in the image below.
 
 ![Add User](/static/assets/embedded/managing-resources/manage-users/images/add-user.png#width=60%)
 
-Fill the form with email address, username, first name, and last name(optional) and click `Add`.  
+Fill the form with the email address, username, first name, and last name(optional) then click `Add`.
 
-> **NOTE:** An email address is mandatory only in [Email required](/embedded-bi/site-administration/account-settings/#email-required) mode.
+> **NOTE:** An email address is mandatory only in the [Email required](/embedded-bi/site-administration/account-settings/#email-required) mode.  Users created with passwords in the Bold BI application will be considered local users.
 
 New account will be created for the user and an account activation email will be sent to the email address with activation link to activate the Bold BI account.
 
@@ -58,6 +58,18 @@ It must contains,
 * 1 numeric
 * 1 special character
 
+### Add existing UMS user
+
+Add the existing UMS user to the site using the `Add User` dialog.
+
+If you enter the email address of the user who is already present in UMS, the remaining fields will be auto-filled and disabled as follows.
+
+Verify the user information and click `Add`.
+
+![User from UMS](/static/assets/embedded/managing-resources/manage-users/images/add-user-from-ums.png#width=50%)
+
+To know how to add user in UMS refer [here](/embedded-bi/multi-tenancy/manage-users/#add-new-users)
+
 ### Import users from CSV
 
 To automate the process of adding large number of users to a Bold BI, you can download the CSV template file and add the users in it and then import the file.
@@ -66,7 +78,7 @@ You can navigate to the user management page by clicking the `User Management` d
 
 ![Import from CSV - Navigation](/static/assets/embedded/managing-resources/manage-users/images/usermanagement.png#width=55%)
 
-> **NOTE:**  The section will explain on how to import the users from CSV file which can be downloaded from below location in Bold BI application.
+> **NOTE:**  The section will explain how to import the users from a CSV file, which can be downloaded from the following location in the Bold BI application. Users created with passwords in the Bold BI application will be considered local users.
 
 #### Add users from CSV file
 

@@ -43,7 +43,18 @@ Once you click the data source, the NEW DATA SOURCE configuration panel opens.
 
 You can also edit the connection information set here using the [Edit Connection](/cloud-bi/working-with-data-source/editing-a-data-connection/) option.
 
-#### Additional information
+### Preview and Data Import
+* Click **Preview & Connect** to connect with the configurations set.
+* The Choose Schema(s) dialog opens. The schema represents the collection list that are retrieved from the MongoDB server.   This dialog displays a list of schemas in treeview and its corresponding values in grid for preview. Select required schema(s) from treeview to use in designer and click **Connect**.
+
+   ![Preview](/static/assets/cloud/working-with-datasource/data-connectors/images/mongodb/MongoDBDS_Preview.png)
+
+* Now, the data design view page with selected table schema opens. Drag and drop the table.
+   ![Query Editor](/static/assets/cloud/working-with-datasource/data-connectors/images/mongodb/MongoDBDS_QueryEditor.png)
+
+* Click **Save** to save the data source with a relevant name.
+
+### Additional Information
 <table width="600">
 <tr>
 <td>
@@ -62,17 +73,6 @@ On initial connect MongoDB will extract a maximum of 10,000 records. Configure t
 </td>
 </tr>
 </table>
-
-### Preview and data import
-* Click **Preview & Connect** to connect with the configurations set.
-* The Choose Schema(s) dialog opens. The schema represents the collection list that are retrieved from the MongoDB server.   This dialog displays a list of schemas in treeview and its corresponding values in grid for preview. Select required schema(s) from treeview to use in designer and click **Connect**.
-
-   ![Preview](/static/assets/cloud/working-with-datasource/data-connectors/images/mongodb/MongoDBDS_Preview.png)
-
-* Now, the data design view page with selected table schema opens. Drag and drop the table.
-   ![Query Editor](/static/assets/cloud/working-with-datasource/data-connectors/images/mongodb/MongoDBDS_QueryEditor.png)
-
-* Click **Save** to save the data source with a relevant name.
 
 ## Related links
 [Blog post](https://www.boldbi.com/blog/connect-mongodb-workloads-migrated-to-azure-cosmos-db)

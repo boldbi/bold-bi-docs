@@ -116,16 +116,13 @@ The link has been provided to [download](https://onpremise-demo.boldbi.com/getti
 
 ## Steps to create new VueJs with ASP.NET Core application to embed dashboard
  1. Install the `nodeJS`, using the command prompt and type `vue create my-app` in desired location to create angular application. Here, `my-app` is the name of the folder for your application. To run the `vue` application, change the project folder `cd my-app`.
- 2. Open the `App.vue` page and refer to the mandatory cdn file in `<head>` tag using `mounted` function as follows.
+ 2. Open the `App.vue` page and refer to the mandatory cdn files in `<head>` tag using `mounted` function as follows.
 
      ```js
     mounted: function() {
     var scripts = [
       "https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js",
-      "https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js",
-      "https://cdnjs.cloudflare.com/ajax/libs/jsrender/1.0.0-beta/jsrender.min.js",
-      "https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js",
-      "https://cdn.boldbi.com/embedded-sdk/v5.2.48/embed-js.js",
+      "https://cdn.boldbi.com/embedded-sdk/v5.3.53/boldbi-embed.js",
     ];
     scripts.forEach(script => {
       let tag = document.createElement("script");
@@ -230,4 +227,4 @@ The link has been provided to [download](https://onpremise-demo.boldbi.com/getti
         }
      ``` 
 
- 11. Then run the ASP.NET core application. And VueJs by the `npm run serve` command to render the dashboard.
+ 11. Then, run the ASP.NET core application. And VueJs by the `npm run serve` command to render the dashboard.

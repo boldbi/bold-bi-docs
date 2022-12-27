@@ -42,6 +42,12 @@ You can overlap the widget inside the combine widget. Just drag one widget over 
 
 ![overlapping of widgets](/static/assets/cloud/visualizing-data/visualization-widgets/images/combine-widgets/combine_widgets_overlapping.png)
 
+## How to format combine widget
+
+You can format the combine widget for better illustration of the view that you require using settings available in the Properties tab.
+
+## Basic settings
+
 Ordering of widget allows you to make the widget move back and forth. 
 
 The property panel of the combine widget shows the list of widgets, which is dragged into it.
@@ -57,6 +63,62 @@ The combo box widget, which is seen above other widgets is at the bottom of the 
 Now, the combo box widget is at the bottom of the combine widget and cannot be seen and it is at the top of the list as shown in the following image.
 
 ![combo box with lowest z-index](/static/assets/cloud/visualizing-data/visualization-widgets/images/combine-widgets/combine_widgets_less_z-index.png)
+
+## Container Appearance
+
+This section customize `Container Appearance` for combine widget.
+
+![combo box with lowest z-index](/static/assets/cloud/visualizing-data/visualization-widgets/images/combine-widgets/combinewidgetcontainerappearence.png#max-width=54%)
+
+### Show Border
+
+This toggles the visibility of **border** surrounding the widget.
+
+### Corner Radius
+
+This apply specified **radius** to the widget corners if **Show Border** is enabled. Value can be between 0 and 10.
+
+### Show Background Image
+
+This allows set **background image** for the combine widget.
+
+### Background Color
+
+This allows you to set **background color** to the combine widget.
+
+### Transparency
+
+This property specify **transparency** for `background color`.
+
+### Show shadow
+
+This property give **shadow** around the combine widget.
+
+## Container actions
+
+This section customize **Container actions** for combine widget.
+
+![combo box with lowest z-index](/static/assets/cloud/visualizing-data/visualization-widgets/images/combine-widgets/combinewidgetcontaineraction.png#max-width=54%)
+
+### Allow Maximize View
+
+This enables or disables **maximized mode** of the combine widget. The visibility of the maximize icon in the widget header will be defined based on the setting of the viewer.
+
+### Allow Image Export
+
+This enables or disables `Image export` option for the combine widget. Enabling this allows you to export view of the widget to image format `(.jpg), (.png), or (.bmp)` in the viewer.
+
+### Allow pdf Export
+
+This enables or disables the `PDF export` option for the combine widget. Enabling this export view of widget to pdf format in the viewer.
+
+### Enable Comments
+
+This enables or disables `comment` for dashboard widget. For more details, refer to [link](/embedded-bi/visualizing-data/working-with-widgets/commenting-widget/).
+
+### Pin widget
+
+This allows you pin the widget.
 
 ## Export
 

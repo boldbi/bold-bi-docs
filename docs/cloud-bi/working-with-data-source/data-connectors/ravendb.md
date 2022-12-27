@@ -26,13 +26,17 @@ To configure the RavenDB data source, follow these steps:
 ## Create RavenDB data source
 Once you click the data source, the NEW DATA SOURCE configuration panel opens. Follow these steps to create a RavenDB data source.
 1. Enter a name and description (optional) for the data source.
-2. Enter a valid URL in the `RavenDB ServiceBase URL` text box.
+2. Enter a valid URL in the **Server URL** text box.
 3. Select the database in the listed database associated with the given RavenDB Server in **Database** combo box.
-4. Enter the valid query in **RQL Query** text box.
+4. Enter the valid query in **RQL Query** text box. To know more about RQL Query follow the link `https://ravendb.net/docs/article-page/5.4/csharp/indexes/querying/what-is-rql`.
 5. In **Max Rows**, enter the maximum number of rows to be fetched from the RavenDB data source. This value is used to fetch the data from the RavenDB data source using the pagination.
 6. Choose a time interval for **Refresh Settings** using the combo box, to trigger a request to RavenDB server periodically to keep the data in sync with our dashboard.
 7. Choose **Enable SSL**, if the given RavenDB server configured with SSL Encryption.
+8. Upload the PFX certificate file through **Client Certificate**. Please refer to the RavenDB documentation for how to create a certificate from RavenDB studio. To generate and upload the certificate follow this link `https://ravendb.net/docs/article-page/4.2/csharp/server/security/authentication/certificate-management`.
+9. Enter your certificate passpharse in **Password** text box.
+![Choose data source from server](/static/assets/cloud/working-with-datasource/data-connectors/images/RavenDB/Choose_client_password.png)
 
+   ![Choose data source from server](/static/assets/cloud/working-with-datasource/data-connectors/images/RavenDB/Choose_client_password.png)
 You can also edit the connection information set using the [Edit Connection](/cloud-bi/working-with-data-source/editing-a-data-connection/) option.
 
 #### Additional information

@@ -13,14 +13,13 @@ Image allows you to display a both static and dynamic image within defined mode 
 
 ![Image Widget](/static/assets/cloud/visualizing-data/visualization-widgets/images/image/image-widget.png)
 
-You may add the image of supported formats including, BMP, JPG, JPEG, GIF, EMF, JFIF, JPE, PNG, RLE, TIF, TIFF, WMF, DIB, and ICO from your local machine or column binding to the image widget.
+You may add image of supported formats including, BMP, JPG, JPEG, GIF, EMF, JFIF, JPE, PNG, RLE, TIF, TIFF, WMF, DIB, and ICO from your local machine or column binding to the image widget.
 
 The following steps represents to add Image to dashboard:
 
 1.  Drag and drop the image widget into the Canvas.
 
 ![Image](/static/assets/cloud/visualizing-data/visualization-widgets/images/image/drop-widget.png)
-
 
 2.  Click the `Data Source` button in the configuration panel.
 
@@ -54,7 +53,7 @@ The following steps represents to add Image to dashboard:
 
 You may browse the image or bind a datasource column that contains the image URL. 
 
-You may assign a data by clicking the **Assign Data** tab. 
+You may assign a data by clicking the **Assign Data** button. 
 
 ![Assign Data](/static/assets/cloud/visualizing-data/visualization-widgets/images/image/assign-data.png)
 
@@ -62,7 +61,7 @@ Drag and drop image column from the `dimension` section to `Column` section.
 
 ![Configure widget](/static/assets/cloud/visualizing-data/visualization-widgets/images/image/configure-widget.png)
 
-You can `format` the image for better illustration of the view that you require, through the settings available in the `Properties` pane.
+You can format the image for better illustration of the view that you require, through the settings available in Properties pane.
 
 ### Name
 
@@ -76,7 +75,7 @@ This allows you to set the `title` for this Image widget.
 
 ### Mode
 
-You can customize the image showcase style through the `Mode` settings in the Design Tools pane or properties pane.
+You can customize the image showcase style through the `Mode` setting in the Design Tools pane or properties pane.
 
 #### Default
 
@@ -92,7 +91,7 @@ The image will be filled in the available space.
 
 #### Uniform to Fill
 
-The image will be uniformly occupying the space but gets clipped, if it is larger than control.
+The image will be uniformly occupying the space but gets clipped, if it is larger than control
 
 ![Uniform to Fill](/static/assets/cloud/visualizing-data/visualization-widgets/images/image/uniform-to-fill.png)
 
@@ -128,13 +127,13 @@ Parameterized URL images can be bind through this option and we can also able to
 
 ![Parameterized URL](/static/assets/cloud/visualizing-data/visualization-widgets/images/image/parameterized-url.png)
 
-*Forming URL through placeholder*
+*Forming URI through placeholder*
 
 EX: http://flagpedia.net/data/flags/normal/{0}.png
 
 ![Placeholder](/static/assets/cloud/visualizing-data/visualization-widgets/images/image/bind-to-check-placeholder.png)
 
-![placeholder Image](/static/assets/cloud/visualizing-data/visualization-widgets/images/image/placeholder.png)
+![placeholder](/static/assets/cloud/visualizing-data/visualization-widgets/images/image/placeholder.png)
 
 ### Filter Settings
 
@@ -148,4 +147,4 @@ You can ignore the filter actions by enabling the IgnoreFilterActions property. 
 
 ![Link](/static/assets/cloud/visualizing-data/visualization-widgets/images/image/link.png)
 
-To configure the linking to URL or dashboard with the widget using its settings. For more details, refer to the [Linking](/cloud-bi/visualizing-data/working-with-widgets/linking-urls-and-dashboards/).
+To configure the linking to URL or dashboard with the widget using its settings. For more details, refer to the [Linking](/embedded-bi/visualizing-data/working-with-widgets/linking-urls-and-dashboards/).

@@ -184,15 +184,11 @@ A link has been provided to [download](https://onpremise-demo.boldbi.com/getting
     }
     ```
 
- 8. The following scripts and style sheets are mandatory to render the dashboard. Set the `Layout = null` at the top and replace the following code in your `\Views\Home\Index.cshtml` page of the `<head>` tag.
+ 8. The following script is mandatory to render the dashboard. Set the `Layout = null` at the top and replace the following code in your `\Views\Home\Index.cshtml` page of the `<head>` tag.
  ![Index.cshml location](/static/assets/embedded/javascript/sample/images/ViewFolderLocationMvc.png#max-width=30%)
 
     ```js 
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jsrender/1.0.0-beta/jsrender.min.js"></script>
-    <script type="text/javascript" src="http://cdn.boldbi.com/embedded-sdk/v5.2.48/embed-js.js"></script>
+    <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v5.3.53/boldbi-embed.js"></script>
     ```
 
  9. In the `<body>` section, initialize a method as `Init()` which can be implemented in the `Index.js` file. Inside the `<body>` section include the `<div id="panel">` to display list of dashboard and the `<div id="viewer-section">` with a `<div id="dashboard">` inside it. This container can be used to render dashboard.

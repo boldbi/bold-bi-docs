@@ -66,19 +66,25 @@ You can format the Range Slider for better illustration of the view that you req
 
 ### General Settings
 
-![General Settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/range-slider/general-settings.png)
+![General Settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/range-slider/property.png)
 
 #### Name
 
 This allows you to set the `title` for this range slider widget.
 
+![General Settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/range-slider/Name.png)
+
 #### Subtitle
 
 This allows you to set the `subtitle` for this range slider widget.
 
+![General Settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/range-slider/subtitle.png)
+
 #### Description
 
 This allows you to set the brief explanation about this range slider widget.
+
+![General Settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/range-slider/Description.png)
 
 #### Basic Settings
 
@@ -86,7 +92,7 @@ This allows you to set the brief explanation about this range slider widget.
 
 #### Range Selection
 
-This allows you to toggle the selection type of `Range Selection.`
+This allows you to toggle the selection type of `Range Selection`.
 
 Single – Single value can be bounded, if you disable the `Range Selection` option.
 
@@ -102,7 +108,7 @@ Range – A range (two values) can be bounded, if you enable the `Range Selectio
 
 #### Orientation
 
-This allows you to toggle the orientation type of `Vertical Orientation` and `Horizontal Orientation.`
+This allows you to toggle the orientation type of `Vertical Orientation` and `Horizontal Orientation`.
 
 ![Range Slider Orientation Type](/static/assets/cloud/visualizing-data/visualization-widgets/images/range-slider/orientation-type.png)
 
@@ -156,7 +162,7 @@ When the `Enable Hierarchical Filtering` is enabled, the Top N will be applied f
 
 #### Title Alignment
 
-This allows you to handle the alignment of widget title to either `left, center, or right.`
+This allows you to handle the alignment of widget title to either `left, center, or right`.
 
 #### Title Color
 
@@ -180,7 +186,7 @@ This allows you to apply the specified size of the font to the widget title if t
 
 #### Show Border
 
-This allows you to toggle the visibility of `border` surrounding the widget.
+This allows you to toggle the visibility of the `border` surrounding the widget.
 
 #### Corner Radius
 
@@ -192,7 +198,11 @@ This allows you to set the **background color** to the range slider widget.
 
 #### Transparency
 
-This property allows you to specify the **transparency** for the `background color.`
+This property allows you to specify the **transparency** for the `background color`.
+
+### Show Shadow
+
+This allows you to toggle the visibility of the `shadow` surrounding the widget.
 
 #### Container actions
 
@@ -204,4 +214,4 @@ This allows you to enable or disable the `widget title` of the range slider widg
 
 #### Enable Comments
 
-This allows you to enable or disable `comment` for the dashboard widget. For more details, refer to this [link](/cloud-bi/visualizing-data/working-with-widgets/commenting-widget/).
+This allows you to enable or disable `comment` for the dashboard widget. For more details, refer to this [link](/embedded-bi/visualizing-data/working-with-widgets/commenting-widget/).

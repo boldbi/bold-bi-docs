@@ -122,6 +122,12 @@ You can apply filters by selecting `Filter(s)` option in settings. For more deta
 
 Similarly, you can add the Measures and Expressions Columns to the Columns field.
 
+#### Renaming fields
+
+The configured field names can be edited by using the `Rename` option provided in the settings menu.
+
+![Rename](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/rename.png)
+
 ### Adding rows
 
 You can drag the `Dimension` field into the `Rows field.`
@@ -158,19 +164,25 @@ You can see the list of properties available for the widget with default value.
 
 ### General Settings
 
-![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/general-settings.png)
+![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/property.png)
 
 ### Name
 
 Allows you to set the `title` for the Pie chart widget.
 
+![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/Name.png)
+
 ### Subtitle
 
 Allows you to set the `subtitle` for the Pie chart widget.
 
+![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/Subtitle.png)
+
 ### Description
 
 Set a description for the Pie chart, whose visibility will be denoted by **i** icon, and hovering over it will display the `description` in a tooltip.
+
+![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/Description.png)
 
 ### Basic settings
 
@@ -179,6 +191,8 @@ Set a description for the Pie chart, whose visibility will be denoted by **i** i
 #### Show Tooltip
 
 This option allows you to toggle the visibility of tooltip in the pie chart.
+
+![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/tooltip.png)
 
 **Chart type**
 
@@ -196,6 +210,9 @@ It allows you to toggle the visibility of value labels.
 
 ![Show Value Label](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/show-value-label.png)
 
+If you disable `Show Value Labels` properties, the dependent properties, which are **color**, **Value label position**, **Value label rotation** and **Value label suffix** will be hidden..
+
+![Show value label](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/value-label.png)
 ### Value Label Color
 
 This allows you to customize the value label's color.
@@ -302,6 +319,8 @@ It allows you to customize the legends. When you click the `customize` button, t
 
 A Legend is a text used to describe the data plotted. This option allows you to place the legend at the position of **Left, Right, Top, and Bottom**.
 
+![Legend position](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/legent-position.png)
+
 #### Legend Shape
 
 This allows you change the **shape** of the legend.
@@ -352,6 +371,8 @@ This option allows you to set a maximum width for the Legend Items and it is app
 
 ![Legend Text Width in chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/chart_Legendwidth.png)
 
+If you uncheck the `Show Legend` property in the property panel, the dependent properties **Legend color**, **Legend position**, **customization button** and **Legend title** are also hidden.
+
 ### Link
 
 You can enable linking and configure navigating to a general URL with or without parameters. For more details, refer to the[Linking](/embedded-bi/visualizing-data/working-with-widgets/linking-urls-and-dashboards/).
@@ -370,7 +391,33 @@ You can choose the field from the Based On section to apply the conditions.
 
 This section shows a palette of colors. By clicking the colored square, the color picker will open. You can choose a color and change the color by changing the corresponding hexadecimal value at the right.
 
-![Use Basedon Palette](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/basedon.png)
+![Individual mode](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/column-chart-individual-mode.png)
+
+#### Color Mapping Type
+
+Using the Color Mapping type, you can apply the colors to the series either based on data or index.
+
+![Color Mapping Type option](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/column-chart-formatting-color-mapping-type-options.png)
+
+***Data***
+
+It allows you to apply color for chart series based on data. If you want to apply a specific color to specific data, you can use Data based color mapping. By default, the Color Mapping Type will be `Data`.
+
+![Color Mapping Type Data](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/column-chart-individual-mode.png)
+
+> **IMPORTANT:**  Only top 100 records will be listed in the 
+dialog. 
+***Index***
+
+It allows you to apply color for chart series based on `Index`. Such that the colors are maintained based on index even if data is changed. It shows only 15 different colors. After that, the color will be repeated from above colors.
+
+For example, If you are displaying the countries based on the increasing order of the case count, then the index-based color mapping will be useful to set the colors based on the rank. Say red color to the top, then the red color will be maintained for the country having the largest case count.
+
+![Color Mapping Type Index](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/column-chart-formatting-index-based-color.png)
+
+**Note:** We prefer to use Index based color customization only for minimum data(upto 15 series).
+
+![Use Basedon Palette](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/column-chart-individual-mode.png)
 
 ![Change Series color](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/series-color-palette-window.png)
 

@@ -113,19 +113,25 @@ You can format the List box for a better illustration of the view that you requi
 
 ### General Settings
 
-![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/list-box/general-settings.png)
+![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/list-box/property.png)
 
 #### Name
 
 This allows you to set the `title` for the list box widget.
 
+![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/list-box/title.png)
+
 #### Subtitle
 
 This allows you to set the `subtitle` for the list box widget.
 
+![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/list-box/subtitle.png)
+
 #### Description
 
 This allows you to set the brief explanation about the list box widget.
+
+![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/list-box/Description.png)
 
 #### Basic Settings
 

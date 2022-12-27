@@ -230,6 +230,8 @@ This option allows you to provide the `description` about the KPI Card.
 
 This option allows you to toggle the visibility of tooltip in a card.
 
+![Direction](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/tooltip.png)
+
 ### Color properties
 
 ![Direction](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/color-properties.png)
@@ -359,9 +361,29 @@ You can enter the value for the KPI card title.
 
 Allow you to choose the KPI Card title value color. 
 
+### Auto Font Size
+
+On enabling this property, the font size of the KPI card title varies based on the screen resolution.
+
+Use Case: 
+
+If we have created a dashboard with KPI card which can be viewed by different clients of different screen resolution and we wants the title to be adjusted with respect to their resolution then we can use this option.
+
+### Auto font size at 3840 x 2160
+
+![Auto Font Size](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/autofontsize-resolution.png)
+
+### Auto font size at 1366 x 768
+
+![Auto Font Size](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/autofontsize-diff.png)
+
+### Auto font size at 1920 x 1080
+
+![Auto Font Size](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/autofontsize.png)
+
 #### Font size
 
-You can customize the font size of the KPI card title. 
+You can customize the font size of the KPI card title by unchecking `Auto Font Size`.
 
 ![Single Card Title](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/title-single-card-properties.png)
 
@@ -428,9 +450,31 @@ Figure: *KPI card with different KPI types.*
 
 Allows you to customize the KPI value color. 
 
+### Auto Font Size
+
+On enabling this property, the font size of the KPI card title varies based on the screen resolution.
+
+Use Case: 
+
+If we have created a dashboard with KPI card which can be viewed by different clients of different screen resolution and we wants the title to be adjusted with respect to their resolution then we can use this option.
+
+### Auto font size at 3840 x 2160
+
+![Auto Font Size](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/autofontsize-resolution.png)
+
+### Auto font size at 1366 x 768
+
+![Auto Font Size](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/autofontsize-diff.png)
+
+### Auto font size at 1920 x 1080
+
+![Auto Font Size](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/autofontsize.png)
+
 #### Font Size
 
-Provides the option to change the KPI value font size.
+Provides the option to change the KPI value font size by unchecking `Auto Font Size`.
+
+![KPI Customized Font Size](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/kpi-valuecustomized.png)
 
 ### Indicator properties
 
@@ -460,9 +504,31 @@ Figure: **After customizing the indicator**
 
 ![Custom indicator](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/custom-indicator.png)
 
+### Auto Font Size
+
+On enabling this property, the font size of the KPI card title varies based on the screen resolution.
+
+Use Case: 
+
+If we have created a dashboard with KPI card which can be viewed by different clients of different screen resolution and we wants the title to be adjusted with respect to their resolution then we can use this option.
+
+### Auto font size at 3840 x 2160
+
+![Auto Font Size](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/autofontsize-resolution.png)
+
+### Auto font size at 1366 x 768
+
+![Auto Font Size](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/autofontsize-diff.png)
+
+### Auto font size at 1920 x 1080
+
+![Auto Font Size](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/autofontsize.png)
+
 #### Font size
 
-Provides the option to change the font size of the indicators. 
+Provides the option to change the font size of the indicators by unchecking `Auto Font Size`. 
+
+![Indicator font size](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/indicator-fontsize.png)
 
 ### Left value properties
 
@@ -495,9 +561,31 @@ The colors from the direction settings will be applied.
 
 You can customize the left value color using the provided color pickers.
 
+### Auto Font Size
+
+On enabling this property, the font size of the KPI card title varies based on the screen resolution.
+
+Use Case: 
+
+If we have created a dashboard with KPI card which can be viewed by different clients of different screen resolution and we wants the title to be adjusted with respect to their resolution then we can use this option.
+
+### Auto font size at 3840 x 2160
+
+![Auto Font Size](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/autofontsize-resolution.png)
+
+### Auto font size at 1366 x 768
+
+![Auto Font Size](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/autofontsize-diff.png)
+
+### Auto font size at 1920 x 1080
+
+![Auto Font Size](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/autofontsize.png)
+
 #### Font size
 
-The option to change the left value font size. 
+The option to change the left value font size by unchecking `Auto Font Size`. 
+
+![Left Value font size](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/leftvalue-fontsize.png)
 
 #### Show caption
 
@@ -515,9 +603,31 @@ Provides the option to customize the left value caption colors.
 
 From the provided color pickers, you can customize the right value caption color.
 
+### Auto Font Size
+
+On enabling this property, the font size of the KPI card title varies based on the screen resolution.
+
+Use Case: 
+
+If we have created a dashboard with KPI card which can be viewed by different clients of different screen resolution and we wants the title to be adjusted with respect to their resolution then we can use this option.
+
+### Auto font size at 3840 x 2160
+
+![Auto Font Size](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/autofontsize-resolution.png)
+
+### Auto font size at 1366 x 768
+
+![Auto Font Size](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/autofontsize-diff.png)
+
+### Auto font size at 1920 x 1080
+
+![Auto Font Size](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/autofontsize.png)
+
 #### Caption font size
 
-The option to change the left value caption font size. 
+The option to change the left value caption font size by unchecking `Auto Font Size`.
+
+![Left caption Properties](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/left-caption-fontsize.png)
 
 *After customizing the Left Value in KPI card*
 
@@ -554,9 +664,31 @@ The colors from the direction settings will be applied.
 
 You can customize the right value caption color using the provided color pickers.
 
+### Auto Font Size
+
+On enabling this property, the font size of the KPI card title varies based on the screen resolution.
+
+Use Case: 
+
+If we have created a dashboard with KPI card which can be viewed by different clients of different screen resolution and we wants the title to be adjusted with respect to their resolution then we can use this option.
+
+### Auto font size at 3840 x 2160
+
+![Auto Font Size](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/autofontsize-resolution.png)
+
+### Auto font size at 1366 x 768
+
+![Auto Font Size](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/autofontsize-diff.png)
+
+### Auto font size at 1920 x 1080
+
+![Auto Font Size](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/autofontsize.png)
+
 #### Font size
 
-The option to change the right value font size. 
+The option to change the right value font size by unchecking `Auto Font Size`.
+
+![Right Value Properties](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/right-value-fontsize.png)
 
 #### Show caption
 
@@ -574,9 +706,31 @@ Provides the option to customize the right value caption colors.
 
 From the provided color pickers, you can customize the right value caption color.
 
+### Auto Font Size
+
+On enabling this property, the font size of the KPI card title varies based on the screen resolution.
+
+Use Case: 
+
+If we have created a dashboard with KPI card which can be viewed by different clients of different screen resolution and we wants the title to be adjusted with respect to their resolution then we can use this option.
+
+### Auto font size at 3840 x 2160
+
+![Auto Font Size](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/autofontsize-resolution.png)
+
+### Auto font size at 1366 x 768
+
+![Auto Font Size](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/autofontsize-diff.png)
+
+### Auto font size at 1920 x 1080
+
+![Auto Font Size](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/autofontsize.png)
+
 #### Caption font size
 
-The option to change the right value caption font size. 
+The option to change the right value caption font size by unchecking `Auto Font Size`.
+
+![Right caption Properties](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/right-caption-fontsize.png)
 
 *After customizing the Right Value in KPI card*
 
@@ -779,3 +933,21 @@ This allows you to pin the widget.
 ## Related links
 
 Blog post - [https://www.boldbi.com/blog/turn-on-insights-using-the-right-card-widget](https://www.boldbi.com/blog/turn-on-insights-using-the-right-card-widget)
+
+#### Responsive Behavior
+
+We hide the widget elements based on the size of the widget for better readability.
+
+Depending on the size of the widget, the card will be displayed either in Default or Horizontal or Vertical Layout.
+
+When the card width is more than '447 px' and its height is less than '296 px', the card will be shown in a horizontal layout.
+
+![Widget Element](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/value.png)
+
+When the card height is more than '296 px', the card will be shown in a vertical layout.
+
+![Widget Element](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/card-value.png)
+
+If the size of the card does not have enough space to show all the elements, it will hide the elements with respect to the size based on the following order: Sparkline, Actual and Target value container. The card title is shown in the image.
+
+![Widget Element](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/priority.png)

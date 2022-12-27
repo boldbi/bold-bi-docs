@@ -11,26 +11,38 @@ documentation: ug
 
 You can view the data bound to the widget by enabling the View data option under the Container Appearance section in the property panel.
 
-![view data option](/static/assets/embedded/visualizing-data/working-with-widgets/images/viewdataoptionindesigner.png#max-width=68%)
+![View data option](/static/assets/embedded/visualizing-data/working-with-widgets/images/viewdataoptionindesigner.png)
 
 The selected widget will get a new menu for view data along with the export menu as shown in the following image.
 
-![view data menu](/static/assets/embedded/visualizing-data/working-with-widgets/images/viewdataoptionincontrolmenu.png#max-width=40%)
+![View data menu](/static/assets/embedded/visualizing-data/working-with-widgets/images/viewdataoptionincontrolmenu.png)
 
 ## View data
 
-By default, the columns that are configured to the selected widget will be displayed.
+By default, the column values which is configured with the widget are displayed in view data. The **select column** button can be seen on the top right of the dialog.
 
-![view data wigdet columns](/static/assets/embedded/visualizing-data/working-with-widgets/images/viewdatadefaultcolumns.png#max-width=85%)
+![View data widget column](/static/assets/embedded/visualizing-data/working-with-widgets/images/viewdatadefaultcolumns.png)
 
-You can enable the **Show all columns** option to view all the columns of that particular data source, which is configured to the widget.
+When we click the **Select Column** button, a list box containing the list of the columns in the data source that is configured in widgets will be displayed.
 
-![view data all columns](/static/assets/embedded/visualizing-data/working-with-widgets/images/viewdataallcolumns.png#max-width=85%)
+![Select column list box](/static/assets/embedded/visualizing-data/working-with-widgets/images/viewdataSelectColumnListBox.png)
 
-You can also export the viewed data to a CSV file or an Excel file by clicking the highlighted option in the right-top corner of the window.
-
-![view data export](/static/assets/embedded/visualizing-data/working-with-widgets/images/viewdataexportmenu.png#max-width=85%)
-
-You can see fetched records count out of total records on the right side of the window.
+We can select one or more specific columns in the list box, then click the **Apply** button.
  
- ![total records count in viewunderlying data](/static/assets/embedded/visualizing-data/working-with-widgets/images/viewdatacountmessage.png#max-width=85%)
+ ![Select specific column in listbox ](/static/assets/embedded/visualizing-data/working-with-widgets/images/viewdataSelectSpecificColumn.png#max-width=50%)
+
+The values of the selected columns will be shown in the view data grid once you click the **Apply** button.
+
+![Selected columns](/static/assets/embedded/visualizing-data/working-with-widgets/images/viewdataSelectedColumns.png)
+
+By checking the **Select All** field, we can display all column values in the data source.
+
+![Select all columns](/static/assets/embedded/visualizing-data/working-with-widgets/images/viewdataSelectAllColumn.png#max-width=50%)
+
+We can also export the selected/all column(s) value into CSV or excel file by clicking the **Export** options.
+
+![View data export](/static/assets/embedded/visualizing-data/working-with-widgets/images/viewdataexportmenu.png)
+
+You will be able to see the fetched records count out of the total records on the popup, as shown.
+
+![Total records count in view underlying data](/static/assets/embedded/visualizing-data/working-with-widgets/images/viewdatacountmessage.png)

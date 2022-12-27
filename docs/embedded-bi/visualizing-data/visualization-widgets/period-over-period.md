@@ -134,18 +134,6 @@ You can customize each column that is to be displayed in the Designer Preview/Vi
 
 ![Grid pop settings update for period over period](/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/pop-gridcustomize.png)
 
-During interaction from the PoP widget, the grid will display two series for each column which are a slave to the POP. One has values filtered from the `Date Range` while another one contains filtered values from `Compare To.`
-
-![period over period grid workflow](/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/pop-gridworkflow.png)
-
-The `KPI Card` will be shown with the following information. You can visualize its value in Designer Preview/View Mode
-
-![KPI Card info update for period over period](/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/pop-kpicard.png)
-
-During interaction from the PoP widget, the KPI Card will display two series. One has values filtered from `Date Range` which displays as `Actual Value` while another one contains filtered values from `Compare To` which displays as `Target Value.`
-
-![period over period kpicard workflow](/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/pop-kpicardworkflow.png)
-
 Please find the response of different type of charts as slave of PoP widgets.
 
 **Bar Chart**
@@ -178,11 +166,29 @@ Please find the response of different type of charts as slave of PoP widgets.
 
 Consider you have configured the `Proportional Chart` as a slave for the `Period Over Period` widget. Like the column, the line chart's color palette will not be changed. The Red information icon denotes that the comparison of period visualization will not be shown in the design mode.
 
+**KPI card**
+
+The `KPI Card` will be shown with the following information. You can visualize its value in Designer Preview/View Mode
+
+![KPI Card info update for period over period](/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/pop-kpicard.png)
+
+During interaction from the PoP widget, the KPI Card will display two series. One has values filtered from `Date Range` which displays as `Actual Value` while another one contains filtered values from `Compare To` which displays as `Target Value.`
+
+![period over period kpicard workflow](/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/pop-kpicardworkflow.png)
+
+**Proportion chart**
+
 ![Proportion chart update in design mode](/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/pop-proportionalchart.png)
 
 During the interaction of Pop Widget, the proportional chart will display two series. One shows values filtered from `Date Range` another one contains filtered values from `Compare To.`
 
 ![Proportional chart as slave widget](/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/pop-proportional.png)
+
+**Grid**
+
+During interaction with the PoP widget, the grid will display two series for each column which are a slave to the POP. One has values filtered from the `Date Range` while another one contains filtered values from `Compare To.`
+
+![period over period grid workflow](/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/pop-gridworkflow.png)
 
 ## How to format Period Over Period?
 
@@ -190,18 +196,25 @@ You can format the Period Over Period for better illustration of the view that y
 
 ### General Settings
 
-![period over period name](/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/generalsettings.png)
+![period over period name](/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/property.png)
 
 #### Name 
+
 This option allows you to change the title for the Period Over Period.
+
+![period over period name](/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/Name.png)
 
 #### Subtitle
 
 Allows you to provide subtitle for Period Over Period.
 
+![period over period name](/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/subtitle.png)
+
 #### Description
 
 Allows you to provide a description about the Period Over Period.
+
+![period over period name](/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/Description.png)
 
 ### Filter
 

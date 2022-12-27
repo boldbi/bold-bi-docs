@@ -46,6 +46,267 @@ documentation: ug
 
    Drag and drop the table from table list, and click `Save` button to save the data source with valid name.
 
+## Connecting Bold BI to Oracle Data Source via REST API
+
+### Prerequisites 
+
+Type while creating the data source needs to be oracle.
+
+[Rest API - v4.0](https://help.boldbi.com/embedded-bi/rest-api-reference/v4.0/api-reference/)
+
+### Modes
+
+Through the REST API, only the **live mode** data source can be created and edited.
+
+### Parameters for creating Data Source
+
+   <table>
+   <tr>
+   <th>Parameters</th>
+   <th>Details</th>
+   </tr>
+   <tr>
+   <td>Servername</br></br>
+   <b>required</b> </td>
+   <td>`string`</br></br>
+   Server name or Host name of the connection</td>
+   </tr>
+   <tr>
+   <td>Port</br></br>
+   <b>required</b> </td>
+   <td>`string`</br></br>
+   Port number used to connect to oracle</br></br>
+   </td>
+   </tr>
+   <tr>
+   <td>InstanceName</br></br>
+   <b>required</b> </td>
+   <td>`string`</br></br>
+   InstanceName or service name of the connection</br></br>
+   </td>
+   </tr>
+   <tr>
+   <td>Username</br></br>
+   <b>required</b>  </td>
+   <td>`string`</br></br>
+   A valid username for the connection</td>
+   </tr>
+   <tr>
+   <td>Password</br></br>
+   <b>required</b>  </td>
+   <td>`string`</br></br>
+   A valid Password for the connection</td>
+   </tr>
+   <tr>
+   <td>Database</br></br>
+   <b>required</b> </td>
+   <td>`string`</br></br>
+   database which needs to be connected</td>
+   </tr>
+   <tr>
+   <td>Schemaname</br></br>
+   <b>required for table mode</b> </td>
+   <td>`string`</br></br>
+   Enter a valid Schemaname</td>
+   </tr>
+   <tr>
+   <td>Tablename</br></br>
+   <b>required for table mode</b> </td>
+   <td>`string`</br></br>
+   Enter a valid Tablename</td>
+   </tr>
+   <tr>
+   <td>Query</br></br>
+   <b>required for code view mode</b> </td>
+   <td>`string`</br></br>
+   Enter a valid Query</td>
+   </tr>
+   <tr>
+   <td>AdvancedSettings</br></br>
+   <b>optional</b> </td>
+   <td>`string`</br></br>
+   Additional optional connection parameters can be provided. By default, it is empty.</td>
+   </tr>
+   <tr>
+   <td>CommandTimeout</br></br>
+   <b>optional</b> </td>
+   <td>`string`</br></br>
+   Enter a valid Timeout for connection. By default, it is 300</td>
+   </tr>
+   <tr>
+   <td>Expressions</br></br>
+   <b>optional</b> </br></br>
+   </td>
+   <td>`Array of Objects`</br></br></br></br>
+   </td>
+   </tr>
+   </table>
+
+#### Parameters for adding expressions when creating Data Source
+   
+   <table>
+   <tr>
+   <th>Parameters</th>
+   <th>Details</th>
+   </tr>
+   <tr>
+   <td>Name</br></br>
+   <b>required</b> </br></br>
+   </td>
+   <td>`string`</br></br>
+   Name of the Expression</br></br>
+   </td>
+   </tr>
+   <tr>
+   <td>Expression</br></br></br></br>
+   <b>required</b> </br></br>
+   </td>
+   <td>`string`</br></br>
+   <a href="https://help.boldbi.com/embedded-bi/working-with-data-source/transforming-data/configuring-expression-columns/">
+    <div style="height:100%;width:100%">
+      Expression
+    </div>
+   </a> </br></br>
+   </td>
+   </tr>
+   </table>
+
+### Parameters for editing Data Source
+
+> **NOTE:**  For editing Data Source via API. All the parameters are optional. The parameter which needs to be changed can be provided.
+
+#### Parameters for modifying expressions when editing Data Source
+   
+   <table>
+   <tr>
+   <th>Parameters</th>
+   <th>Details</th>
+   </tr>
+   <tr>
+   <td>Name</br></br>
+   <b>required</b> </br></br>
+   </td>
+   <td>`string`</br></br>
+   Name of the Expression</br></br>
+   </td>
+   </tr>
+   <tr>
+   <td>Expression</br></br></br></br>
+   <b>required</b> </br></br>
+   </td>
+   <td>`string`</br></br>
+   <a href="https://help.boldbi.com/embedded-bi/working-with-data-source/transforming-data/configuring-expression-columns/">
+    <div style="height:100%;width:100%">
+      Expression
+    </div>
+   </a> </br></br>
+   </td>
+   </tr>
+   <tr>
+   <td>Action</br></br></br></br>
+   <b>optional</b> </br></br>
+   </td>
+   <td>`string`</br></br>
+   add/delete/edit</br></br>
+   By default, it is add. </br></br>
+   </td>
+   </tr>
+   <tr>
+   <td>NewName</br></br>
+   <b>optional</b> </br></br>
+   </td>
+   <td>`string`</br></br>
+   For renaming the expression. This is applicable only if the Action is <b>edit</b> </br></br>
+   </td>
+   </tr>
+   </table>
+
+### Connection Sample for Table Mode
+
+#### For creating connection:
+
+``` json
+"Connection": [
+{
+"Servername": "string",
+"Port": "string",
+"InstanceName": "string",
+"Username": "string",
+"Password": "string",
+"Database": "string",
+"Schemaname": "string",
+"Tablename": "string",
+"AdvancedSettings": "string",
+"CommandTimeout": "string",
+"Expressions" : [{
+"Name": "Expression1",
+"Expression" : "SUM(numeric expression)"
+    },
+    {
+"Name": "Expression2",
+"Expression" :  "UPPER(string expression)"
+}]
+}
+]
+```
+
+#### For editing connection:
+
+``` json
+"Connection": [
+{
+"Servername": "string",
+"Port": "string",
+"InstanceName": "string",
+"Username": "string",
+"Password": "string",
+"Database": "string",
+"Schemaname": "string",
+"Tablename": "string",
+"AdvancedSettings": "string",
+"CommandTimeout": "string",
+"Expressions" : [{
+"Name": "Expression1",
+"Expression" : "SUM(numeric expression)",
+"NewName" : "Sum",
+"Action": "edit"
+    },
+    {
+"Name": "Expression2",
+"Expression" :  "UPPER(string expression)"
+"Action": "delete"
+}]
+}
+]
+```
+
+> **NOTE:**  Through Rest API, the data source can be created or edited with only one table. If different table is provided in edit data source, the table will be replaced. The widgets will be retained only if the schema is same as the previous table.
+
+### Connection Sample for Code View Mode
+
+``` json
+"Connection": [
+{
+"Servername": "string",
+"Port": "string",
+"InstanceName": "string",
+"Username": "string",
+"Password": "string",
+"Database": "string",
+"Query": "string",
+"AdvancedSettings": "string",
+"CommandTimeout": "string",
+"Expressions" : [{
+"Name": "Expression1",
+"Expression" : "SUM(numeric expression)"
+    },
+    {
+"Name": "Expression2",
+"Expression" :  "UPPER(string expression)"
+}]
+}
+]
+```
 ## Related links
 [Data Transformation](/embedded-bi/working-with-data-source/transforming-data/joining-table/)
 

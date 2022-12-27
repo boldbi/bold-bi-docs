@@ -122,6 +122,12 @@ An element can be dragged from the measure or dimension section.
 
 ![Bind columns for LocationValue](/static/assets/embedded/visualizing-data/visualization-widgets/images/bing-maps/location-value.png)
 
+#### Renaming fields
+
+The configured field names can be edited by using the `Rename` option provided in the settings menu.
+
+![Rename](/static/assets/embedded/visualizing-data/visualization-widgets/images/bing-maps/rename.png)
+
 ### Location Name
 
 Drag the elements from the `Dimension` to `Location Name` section.
@@ -222,19 +228,25 @@ You can format the `Bing maps` for better illustration of the view that you requ
 
 ### General settings
 
-![General settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/bing-maps/general-settings.png)
+![General settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/bing-maps/property.png)
 
 #### Name
 
 This allows you to set `title` for this Bing maps widget.
 
+![General settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/bing-maps/Name.png)
+
 #### Subtitle
 
 This allows you to set `subtitle` for this Bing maps widget.
 
+![General settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/bing-maps/Subtitle.png)
+
 #### Description
 
 This allows you to set brief explanation about this Bing maps widget.
+
+![General settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/bing-maps/Description.png)
 
 ### Basic Settings
 
@@ -243,6 +255,8 @@ This allows you to set brief explanation about this Bing maps widget.
 #### Show Tooltip
 
 This option allows you to toggle the visibility of tooltip in Bing map.
+
+![General settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/bing-maps/tooltip.png)
 
 ### Map theme
 
@@ -418,6 +432,8 @@ This allows to change the marker size of the bing maps.
 ![Shape Size](/static/assets/embedded/visualizing-data/visualization-widgets/images/bing-maps/shape-size-option.png)
 
 ![Shape Size](/static/assets/embedded/visualizing-data/visualization-widgets/images/bing-maps/shape-size.png)
+
+> **Note:** Marker Settings will be visible only by configuring either latitude and longitude or Address and postal code.
 
 ### Advanced Settings
 

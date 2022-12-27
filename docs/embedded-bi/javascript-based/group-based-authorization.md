@@ -45,72 +45,71 @@ Let us see the configuring settings for OAuth 2.0 and OpenID import, importing t
 
 5. Now, you need to configure your authorization server to use the group-based authorization by adding the marked parameters in the embedQuery. 
 
-<meta charset="utf-8"/>
-<table>
-  <thead>
+    <meta charset="utf-8"/>
+    <table>
+    <thead>
     <tr>
     <th scope="col">Parameter</th>
     <th scope="col">Description</th>
     </tr>
-  </thead>
-  <tbody>
+    </thead>
+    <tbody>
     <tr>
-        <td align="left">embed_group_access</td>
-        <td align="left">This parameter needs to set as true to enable the group-based authorization.</td>
+    <td align="left">embed_group_access</td>
+    <td align="left">This parameter needs to set as true to enable the group-based authorization.</td>
     </tr>
     <tr>
-        <td align="left">embed_auth_provider</td>
-        <td align="left">This parameter value indicates, which auth provider you are using in embedding.
-           <br>Example: `embed_auth_provider=GlobalOAuth`<br>
-           <br>Following the values for different auth providers.
-           <br>TenantOAuth – Set this, if you have configured OAuth in tenant level
-           <br>TenantOpenID – Set this, if you have configured OpenID in tenant level
-           <br>GlobalOAuth – Set this, if you have configured OAuth in global level
-           <br>GlobalOpenID – Set this, if you have configured OpenID in global level
-           <br>WindowsAD – Set this, if you have configured WindowsAD
-           <br>AzureAD – Set this, if you have configured AzureAD
-           <br>None – Set this, if you haven’t using any auth providers
-        </td>
+    <td align="left">embed_auth_provider</td>
+    <td align="left">This parameter value indicates, which auth provider you are using in embedding.
+    <br>Example: `embed_auth_provider=GlobalOAuth`<br>
+    <br>Following the values for different auth providers.
+    <br>TenantOAuth – Set this, if you have configured OAuth in tenant level
+    <br>TenantOpenID – Set this, if you have configured OpenID in tenant level
+    <br>GlobalOAuth – Set this, if you have configured OAuth in global level
+    <br>GlobalOpenID – Set this, if you have configured OpenID in global level
+    <br>WindowsAD – Set this, if you have configured WindowsAD
+    <br>AzureAD – Set this, if you have configured AzureAD
+    <br>None – Set this, if you haven’t using any auth providers
+    </td>
     </tr>
     <tr>
-        <td align="left">embed_user_id</td>
-        <td align="left">Need to set your user id, which used in your provider for this user</td>
+    <td align="left">embed_user_id</td>
+    <td align="left">Need to set your user id, which used in your provider for this user</td>
     </tr>
     <tr>
-        <td align="left">embed_user_email</td>
-        <td align="left">Need to set your user mail, which used in your provider for this user</td>
+    <td align="left">embed_user_email</td>
+    <td align="left">Need to set your user mail, which used in your provider for this user</td>
     </tr>
-  </tbody>
-</table>
+    </tbody>
+    </table>
 
-> **NOTE:**  The previous UserID and UserEmail would be act as password for user of each provider in Bold BI. 
+    > **NOTE:**  The previous UserID and UserEmail would be act as password for user of each provider in Bold BI. 
 
-**Example:** `&embed_group_access=true&embed_auth_provider=GlobalOAuth&embed_user_id=1212121212&embed_user_email=user@domain.com`   
+    **Example:** `&embed_group_access=true&embed_auth_provider=GlobalOAuth&embed_user_id=1212121212&embed_user_email=user@domain.com`   
 
-![Group Based Authorization](/static/assets/embedded/javascript/images/group-based-auth.png)  
+    ![Group Based Authorization](/static/assets/embedded/javascript/images/group-based-auth.png)  
 
-> **NOTE:**  Use your UserID and UserEmail as followed in authorization server.
+    > **NOTE:**  Use your UserID and UserEmail as followed in authorization server.
 
-<meta charset="utf-8"/>
-<table>
-  <tbody>
+    <meta charset="utf-8"/>
+    <table>
+    <tbody>
     <tr>
-        <td align="left">Amazon Cognito</td>
-        <td align="left">Set the user email as embed_user_id and embed_user_email</td>
+    <td align="left">Amazon Cognito</td>
+    <td align="left">Set the user email as embed_user_id and embed_user_email</td>
     </tr>
     <tr>
-        <td align="left">Auth0</td>
-        <td align="left" rowspan="3"><br>- Set the user id as embed_user_id <br>- Set the user email as embed_user_email</td>
+    <td align="left">Auth0</td>
+    <td align="left" rowspan="3"><br>- Set the user id as embed_user_id <br>- Set the user email as embed_user_email</td>
     </tr>
     <tr>
-        <td align="left">Okta</td>
+    <td align="left">Okta</td>
     </tr>
     <tr>
-        <td align="left">OneLogin</td>
+    <td align="left">OneLogin</td>
     </tr>
-  </tbody>
-</table>
-
+    </tbody>
+    </table>
 
 ### Sample links
 The sample applications for ASP.NET Core, ASP.NET MVC, and Angular. You can get download from the following links and update your group access, auth provider, user id, and user email in the authorization server code block.

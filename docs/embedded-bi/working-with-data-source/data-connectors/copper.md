@@ -36,7 +36,7 @@ Once you click the data source, the NEW DATA SOURCE configuration panel opens.
 6. Set values for **Headers** section like below key-value pairs:
 
    ![Headers](/static/assets/embedded/working-with-datasource/data-connectors/images/Copper/Headers.png)
-7. In **Max Rows**, enter the maximum number of rows to be fetched from the FreshworkCRM data source. This value is used to fetch the data from FreshworkCRM data source via pagination.
+7. In **Max Rows**, enter the maximum number of rows to be fetched from the Freshworks CRM data source. This value is used to fetch the data from Freshworks CRM data source via pagination.
 8. Choose a time interval for **Refresh Settings** using the combo box, to trigger the Rest API request periodically to keep the data in sync with our dashboard.  
 9. Select **JSON** data type in **Data Format** combo box.
 10. Choose **None** under **Authentication Type**.

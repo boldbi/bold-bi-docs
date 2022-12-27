@@ -121,19 +121,25 @@ You can format the combo box for a better illustration of the view that you requ
 
 ### General Settings
 
-![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-box/general-settings.png)
+![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-box/property.png)
 
 #### Name
 
 This allows you to set the `title` for this combo box widget.
 
+![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-box/title.png)
+
 #### Subtitle
 
 This allows you to set the `subtitle` for this combo box widget.
 
+![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-box/Subtitle.png)
+
 #### Description
 
 This allows you to set the brief explanation about this combo box widget.
+
+![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-box/Description.png)
 
 #### Basic Settings
 

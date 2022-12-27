@@ -1,16 +1,16 @@
 ---
 layout: post
 title:  Admin Privileges in User Management Server | Bold BI Docs
-description: Learn the admin privileges such as, configuring email settings, embed settings, account settings, custom rebranding, API keys information and license update in the user management server.
+description: Learn the admin privileges such as, configuring email settings, embed settings, account settings, custom rebranding, API keys information, license update, and manage localization in the user management server.
 platform: bold-bi
 documentation: ug
 ---
 
 # Site Administration
 
-This section explains how to configure email, embed settings, account settings, custom rebranding, API keys information and license update in the User Management Server.
+This section explains how to configure email, embed settings, account settings, custom rebranding, API keys information, license update, and manage localization in the User Management Server.
 
-You can explore the Site Administration in detail here,
+You can explore the Site Administration in the details below:
 
 [Rebranding](/embedded-bi/multi-tenancy/site-administration/rebranding/)
 
@@ -25,3 +25,5 @@ You can explore the Site Administration in detail here,
 [Authentication](/embedded-bi/multi-tenancy/site-administration/authentication/)
 
 [Manage License](/embedded-bi/multi-tenancy/site-administration/manage-license/)
+
+[Manage Localization](/embedded-bi/multi-tenancy/site-administration/manage-localization/)

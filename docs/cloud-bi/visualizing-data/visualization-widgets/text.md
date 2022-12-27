@@ -25,6 +25,8 @@ Drag and drop the `Text` control icon from the toolbox to the design panel. You 
 
 ![properties](/static/assets/cloud/visualizing-data/visualization-widgets/images/text/propertiesbutton.png)
 
+### Container Appearance
+
 ### Show Background Image
 
 This option allows you to enable the image for the background.
@@ -56,7 +58,6 @@ You can customize the image showcase style through the `Image Fit` settings in t
 #### Default
 
 The image will be displayed in its original size.
-
 ![Background Image Default](/static/assets/cloud/visualizing-data/visualization-widgets/images/text/textimage-url.png)
 
 ### Fill
@@ -101,15 +102,15 @@ Click the `tick` icon to save the `Text.`
 
 ### Toolbar Classification
 
-Toolbar contains the property which used in `Text.` Based on the size of text editor, the toolbar mode can be classified as `floating` and `inline toolbar.`
+Toolbar contains the property which used in `Text`. Based on the size of text editor, toolbar mode can be classified as `floating` and `inline toolbar`. 
 
-### Inline Toolbar
+**Inline Toolbar**
 
 `Text` editor contains an inline toolbar by default because of its smaller size. The inline toolbar can be enabled by selecting the text content. This mode is active when the text editor does not have enough space to enable a floating toolbar.
 
 ![text_inline](/static/assets/cloud/visualizing-data/visualization-widgets/images/text/text-inline.png)
 
-### Floating Toolbar
+**Floating Toolbar**
 
 It can be enabled by increasing widget size to the required size based on the resolution. This mode is active when the text editor has enough space to display a floating toolbar.
 
@@ -125,20 +126,20 @@ Text editors have support to format the font, paragraph, and other functionaliti
 You can format the text by applying font style, family, and color. The available font formats are bold, italic, underline, strikethrough, font size, font color, highlight color, superscript, and subscript.
 
 
-![text-fontFormatting](/static/assets/cloud/visualizing-data/visualization-widgets/images/text/text-fontformatting.png)
+![text_fontFormatting](/static/assets/cloud/visualizing-data/visualization-widgets/images/text/text-fontformatting.png)
 
 
-***Bold***: It allows you to Bold the text.  
+***Bold*** - It allows you to Bold the text.   
 
-***Italic***: It allows you to Italicize the text. 
+***Italic*** -  It allows you to Italicize the text.    
 
-***Underline***: It allows you to underline the text.  
+***Underline*** - It allows you to underline the text.  
 
-***Strikethrough***: It allows you to strikeout the text.  
+***Strikethrough*** - It allows you to strikeout the text.   
 
 ***Font Family*** - `Roboto` is the default font family, it allows to change the font family of selected text. Available font families are `Roboto, Segoe UI, Arial, Georgia, Impact, Tahoma, Times New Roman, Verdana`.   
 
-***Font Size*** - Size of the selected text can be modified as pixels(px). Available font size are 8, 9, 10, 11, 12, 14, 16, 18, 20, 22, 24, 26, 28, 36 and 48px.    
+***Font Size*** - Size of the selected text can be modified as pixels(px). Available font size are 8, 9, 10, 11, 12, 14, 16, 18, 20, 22, 24, 26, 28, 36 and 48px.  
 
 ***Font Color*** - Color of the font can be change using this item.  
 
@@ -150,7 +151,7 @@ You can format the text by applying font style, family, and color. The available
 
 ### Paragraph Formatting
 
-You can format the paragraph in the text widget. The available paragraph formats are paragraph formats, alignments, numbered, and bulleted list.
+You can format the paragraph in the text widget. The available paragraph formats are paragraph formats, alignments, numbered and bulleted list. 
 
 ![text_paraFormatting](/static/assets/cloud/visualizing-data/visualization-widgets/images/text/text-paraformatting.png)
 
@@ -198,17 +199,17 @@ Quick toolbar is opened by clicking the table. It has different sets of commands
 
 ![text_tableProp](/static/assets/cloud/visualizing-data/visualization-widgets/images/text/text-tableprop.png)
 
-***Table Header*** - This command is available with a quick toolbar option through which the header row can be added or removed from the inserted table.
+***Table Header*** - This command is available with quick toolbar option through which the header row can be added or removed from the inserted table.  
 
 ***Table Rows and Columns*** - Additional row/column in table can be added before/after selected row/column element or delete unwanted row/column.  
 
 ***Background Color*** - The background color can be set for each table cell.   
 
-***Table Remove*** - Using the delete item in the quick toolbar, users can delete the entire table.
+***Table Remove*** - Using the delete item in the quick toolbar, users can delete the entire table.   
 
 ***Alignments*** - Used to align the cell content as left, right, center and justify.   
 
-***Table Cell Vertical Align*** - Cell can be aligned vertically in top, middle and bottom.    
+***Table Cell Vertical Align*** - Cell can be aligned vertically in top, middle and bottom.     
 
 ***Styles*** - It has two properties, `Dashed Borders` used to style table border as dashed and `Alternate Rows` used to highlight a selected row.
 
@@ -220,13 +221,13 @@ The insert link dialog has the following options,
 
 ***Web Address*** - Type or paste the destination for the link you are creating.  
 
-***Display Text*** - Type or edit the required text that you want to display text for the link.  
+***Display Text*** - Type or edit the required text that you want to display text for the link.   
 
 ***Tooltip*** - To display additional helpful information when you place the pointer on the hyperlink, type the required text in the “Tooltip” field.   
 
 ***Open Link in New Window*** - Specify whether the given link will be open in the new window or not.
 
-![text-linkDialog](/static/assets/cloud/visualizing-data/visualization-widgets/images/text/text-linkdialog.png)
+![text_linkDialog](/static/assets/cloud/visualizing-data/visualization-widgets/images/text/text-linkdialog.png)
 
 **Quick Toolbar**
 
@@ -238,8 +239,8 @@ The quick toolbar for the link has the following options,
 
 ***Open*** - The given link page, will be open in new window.   
 
-***Edit Link*** - Used to edit the link in the Rich Text Editor content.   
-
+***Edit Link*** - Used to edit the link in the Rich Text Editor content.  
+  
 ***Remove Link*** - Used to remove link from the content of Rich Text Editor.
 
 ### Code View
@@ -256,7 +257,6 @@ Clicking the `preview` icon will switch to the editor view.
 
 The code view allows you to pass `<iframe>` tag to embed external web page as below,
 
-
 ![text-iframeCode](/static/assets/cloud/visualizing-data/visualization-widgets/images/text/text-framecode.png)
 
 ![text-iframePreview](/static/assets/cloud/visualizing-data/visualization-widgets/images/text/iframepreview.png)
@@ -272,3 +272,4 @@ To undo and redo operations, do one of the following:
     ![text_undoRedo](/static/assets/cloud/visualizing-data/visualization-widgets/images/text/text-undoredo.png)
 
 * Press the `Ctrl + Z/Ctrl + Y` combination on the keyboard.
+

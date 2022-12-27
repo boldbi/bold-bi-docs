@@ -15,7 +15,7 @@ documentation: ug
 
 ## How to configure the table data to Grid
 
-> **NOTE:**  Before adding the Grid widget to the design layout, make sure to **create the data source**. You can refer to this [section](/cloud-bi/working-with-data-source/creating-a-new-data-source/) to learn how to create a new data source.
+> **NOTE:**  Before adding the Grid widget to the design layout, make sure to **create the data source**. You can refer to this [section](/embedded-bi/working-with-data-source/creating-a-new-data-source/) to learn how to create a new data source.
 
 To construct a grid, a minimum requirement of one column is needed. You can visualize both measure, calculated measure, and dimension column data in the grid control. You can also add a column that is hidden from the view by adding the column to the hidden columns section. The data of these columns will be hidden from the view but can be used for filtering other widgets in the dashboard.
 
@@ -55,9 +55,9 @@ Bind column by dragging and dropping element from `Measures` or `Dimension` sect
 
 ![After adding column](/static/assets/cloud/visualizing-data/visualization-widgets/images/grid/configured-widgets.png)
 
-> **NOTE:**  * 1000 records are displayed by default for the optimized Grid rendering performance (100 records in mobile view) and then additional rows will be scrolled virtually on-demand.
+> **NOTE:**  1000 records are displayed by default for the optimized Grid rendering performance (100 records in mobile view) and then additional rows will be scrolled virtually on-demand.
 
-> **NOTE:**  * If any of the Grid columns have conditional formatting, bar template, or KPI applied only 100 records will be fetched by default and then scrolled on-demand.
+> **NOTE:**  If any of the Grid columns have conditional formatting, bar template, or KPI applied only 100 records will be fetched by default and then scrolled on-demand.
 
 #### Hidden column section
 
@@ -67,7 +67,7 @@ You can drag and drop the elements to `Hidden Columns` if required. Based on the
 
 ### Step 3(Optional): Settings menu options
 
-You can `Rename,` `filter,` `format,` and `sort` the data displayed in the widget from the settings menu options.  To open the `settings menu,` click the `settings icon.`
+You can `Rename`, `filter`, `format`, and `sort` the data displayed in the widget from the settings menu options.  To open the `settings menu`, click the `settings icon`.
 
 ![Settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/grid/settings-click.png)
 
@@ -79,19 +79,19 @@ The configured field names can be edited by using the `Rename` option provided i
 
 #### Changing the aggregation type
 
-You can change the aggregation type of the measure section from the settings menu as shown in the following screenshot. Refer to [this section](/cloud-bi/visualizing-data/working-with-widgets/aggregating-value-columns-based-on-type/) for more details.
+You can change the aggregation type of the measure section from the settings menu as shown in the following screenshot. Refer to [this section](/embedded-bi/visualizing-data/working-with-widgets/aggregating-value-columns-based-on-type/) for more details.
 
 ![Aggregation type](/static/assets/cloud/visualizing-data/visualization-widgets/images/grid/aggregation-type.png)
 
 #### Filtering data
 
-You can use the filters to change the values by selecting the `Filter` option. For more details, refer to the [Measure filter](/cloud-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-measure-column) and [dimension filter](/cloud-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column).
+You can use the filters to change the values by selecting the `Filter` option. For more details, refer to the [Measure filter](/embedded-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-measure-column) and [dimension filter](/embedded-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column).
 
 ![Filter option](/static/assets/cloud/visualizing-data/visualization-widgets/images/grid/filter-option.png)
 
 #### Measure formatting
 
-You can format the elements by selecting the Format option. For more details, refer to the [measure format](/cloud-bi/visualizing-data/working-with-widgets/formatting-measure-type-column/).
+You can format the elements by selecting the `Format` option. For more details, refer to the [measure format](/embedded-bi/visualizing-data/working-with-widgets/formatting-measure-type-column/).
 
 ![Measure format option](/static/assets/cloud/visualizing-data/visualization-widgets/images/grid/measure-format.png)
 
@@ -105,31 +105,45 @@ You can format the grid for better illustration of the view that you require usi
 
 ### General settings
 
-![General settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/grid/general-settings.png)
+![General settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/grid/property.png)
 
 #### Name 
 
 This allows you to set `title` for this grid widget.
 
+![General settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/grid/name.png)
+
 #### Subtitle
 
 This allow you to set `subtitle` for this grid widget.
+
+![General settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/grid/Subtitle.png)
 
 #### Description
 
 This allows you to set a brief explanation about this grid widget.
 
+![General settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/grid/description.png)
+
 ### Basic settings
 
 ![Basic settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/grid/grid-basicsetting.png)
 
+#### Show Tooltip
+
+This option allows you to toggle the visibility of tooltip in a grid.
+
+![Basic settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/grid/tooltip.png)
+
 #### Allow sorting
 
-You can toggle the interactive sorting of columns in grid control using this option. `It is enabled by default.`
+You can toggle the interactive sorting of columns in grid control using this option. `It is enabled by default`.
+
+![Basic settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/grid/allow-sorting.png)
 
 #### Fit to content
 
-The columns in the grid can be made to auto size based on the length of the content of the column. `This option is not enabled by default`.
+The columns in the grid can be made to auto-size based on the length of the content of the column. `This option is not enabled by default`.
 
 #### Allow Text Wrap
 
@@ -137,11 +151,11 @@ This allows you to wrapping whole the text if text length is high.
 
 #### Horizontal grid lines
 
-You can enable or disable horizontal grid lines in the grid control. `This option is enabled by default.`
+You can enable or disable horizontal grid lines in the grid control. `This option is enabled by default`.
 
 #### Vertical grid lines
 
-You can enable or disable vertical lines in the grid control. `This option is enabled by default.`
+You can enable or disable vertical lines in the grid control. `This option is enabled by default`.
 
 #### Show Border
 
@@ -149,38 +163,73 @@ This allows you to enable or disable the border of the grid control. This option
 
 #### Enable Alternative Row
 
-This allows you to differentiate alternative rows of the grid by the background color. If you enable this property, alternative rows change their background color as `#F7F7F7` by default, it can be customized from the `Content Settings` section.
+This allows you to differentiate `alternative rows` of the grid by the background color. If you enable this property, the alternative rows change their background color as `#F7F7F7` by default. It can be customized from the `Content Settings` section.
 
 ![Grid Row Height](/static/assets/cloud/visualizing-data/visualization-widgets/images/grid/grid-alternativerowcolor.png)
 
-#### Page settings
+### Summary Row
 
-In the Grid widget, we used to display 100 records on the initial grid rendering and load another set of records on scrolling for better performance. Now, with the help of Page settings, you can customize the number of records to be fetched on initial rendering and perform scrolling based on the Page Size count.
+This Section allows you to add a summary row at end of the grid container
 
-![Page Settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/grid/pagesettings.png)
+![Summary Row](/static/assets/cloud/visualizing-data/visualization-widgets/images/grid/grid-summary-row.png)
 
-#### Page Size
+If you enable the `Enable Summary Row` option, following window shows.
 
-By default, the Page Size value will be set as 100. You can customize the page size value based on requirements. For example, the data configured to the Grid has 2000 records and we set the page size as 50. On initial rendering, the grid loaded with 50 records then on scrolling, and another 50 records will be fetched and loaded into the grid.
+![Summary Row window](/static/assets/cloud/visualizing-data/visualization-widgets/images/grid/grid-summary-rowwindow.png)
 
-![Page Settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/grid/page.png)
+Click on `Add Summary` to add a summary row
 
-**Page size for first 15 records**
+![Summary Row Add](/static/assets/cloud/visualizing-data/visualization-widgets/images/grid/grid-summary-rowadd.png)
 
-![Page Settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/grid/pagesizerec.png)
+![Summary Row Apply](/static/assets/cloud/visualizing-data/visualization-widgets/images/grid/grid-summary-rowapply.png)
 
-**Fetching of another 15 records**
+You can customize each column in the grid to show a summary row
 
-![Page Settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/grid/pagesettings-customize.png)
+![Summary Row Customize](/static/assets/cloud/visualizing-data/visualization-widgets/images/grid/grid-summary-rowcustomize.png)
+
+***Type***
+
+This option allows you to customize the aggregation type of the summary row.
+
+***Title***
+
+This option allows you to customize the title of the summary row
+
+***Show Value***
+
+This option allows you to customize the visibility of the summary value of a column in the summary row.
+
+***Value Color***
+
+This option allows you to customize the grid summary row font color.
+
+***Format***
+
+![Summary Row Customize](/static/assets/cloud/visualizing-data/visualization-widgets/images/grid/grid-summary-rowformat.png)
+
+This option allows you to measure the format of the summary value. For more details, refer to the [measure format](/embedded-bi/visualizing-data/working-with-widgets/formatting-measure-type-column/).
+
+***Delete***
+
+This option allows you to delete the summary row.
+
+### Page Settings
+
+![Grid Row Height](/static/assets/cloud/visualizing-data/visualization-widgets/images/grid/grid-page-settings.png)
 
 #### Allow Paging
 
-On enabling paging, the Grid will be displayed in the paged view. The number of pages and the Number of data to be displayed on a single page is determined by the `Page size count` and `Total record count.` For example, if we set the page size as 100 and the grid has 2000 records then on initial rendering, the grid loaded with 100 records on its first page and the Total number of pages will be 20. On navigating to the next page, the other 100 records will be fetched and displayed on the next page. If we navigate to some random page, say the 10th page for example then we fetch the data corresponding to the 10th page based on the index.
+This option allows you to enable the pagination in a Grid. When this option is enabled, the pager is enabled in the footer part and you can see the option to navigate pages like previous, next, and text box for choosing a required page and a total record count of bounded columns result.
 
-**Allow Paging**
+![Grid Row Height](/static/assets/cloud/visualizing-data/visualization-widgets/images/grid/grid-allowpaging.png)
 
-![Allow Page Settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/grid/pagesettings-allow.png)
+#### Disable Virtual Loading
 
+Enabling this option will fetch the entire record on initial load and there will not be any waiting indicator is shown on navigating between the pages.
+
+#### Page Size
+
+This option allows you to set a number of records that need to be fetched on the initial load. This also acts as page size for the pagination case.
 
 ### Header Settings
 
@@ -192,33 +241,37 @@ This section allows you to format the grid header visibility, color, and font-si
 
 This allows you to enable or disable the grid header. This option is enabled by default.
 
+If we uncheck `Show Header`, dependent properties will be hidden which are Foreground color, Background color, Row height, Auto font size, padding.
+
+![Grid Row Height](/static/assets/cloud/visualizing-data/visualization-widgets/images/grid/header.png)
+
 #### Foreground
 
-You can customize the header font color. The default color of the header font is `#2d3748.`
+You can customize the header font color. The default color of the header font is `#2d3748`.
 
 #### Background
 
-You can customize the header background color. The default color of the header background is `#f3f7fa.`
+You can customize the header background color. The default color of the header background is `#f3f7fa`.
 
 #### Row Height
 
-You can customize the height of the grid header by increasing or decreasing the values. The default value is 42 and the maximum value is 120.
+You can customize the height of the grid header by increasing or decreasing the values. 
 
 #### Auto Font Size
 
 This property picks auto font-size for grid header when it is enabled, otherwise it allows you to choose fixed font-size from `Font Size` property. This option is enabled by default.
 
+![Auto font size](/static/assets/cloud/visualizing-data/visualization-widgets/images/grid/font-size.png)
+
 #### Font Size
 
-You can enable this property by disabling `Auto Font Size,` which allows you to change the font size of the grid header.
+You can enable this property by disabling `Auto Font Size`, which allows you to change the font size of the grid header.
 
 #### Padding
 
-You can increase or decrease the space between the border and the header by adjusting the `padding` option.
+You can increase or decrease the space between the border and the header by adjusting the `padding` option. The value can range between 1 and 20.
 
 ![Header  Customization](/static/assets/cloud/visualizing-data/visualization-widgets/images/grid/grid-padding-change.png)
-
-**After customizing the header settings**
 
 ![Header change Customization](/static/assets/cloud/visualizing-data/visualization-widgets/images/grid/grid-padding-change-value.png)
 
@@ -227,22 +280,21 @@ You can increase or decrease the space between the border and the header by adju
 This section allows you to format the grid row height, color, and font-size.
 
 ![Grid Row Height](/static/assets/cloud/visualizing-data/visualization-widgets/images/grid/grid-contentsetting.png)
-
 #### Foreground
 
-You can customize the font color. The default color of the font is `#000000.`
+You can customize the font color. The default color of the font is `#000000`.
 
 #### Background
 
-You can customize the background color. The default color of the background is `#ffffff.`
+You can customize the background color. The default color of the background is `#ffffff`.
 
 #### Alternative Foreground
 
-You can customize the font color of alternative rows. The default color of the alternative font is `#000000.` This property can be displayed by enabling the `Enable Alternative Row.`
+You can customize the font color of alternative rows. The default color of the alternative font is `#000000`. This property can be displayed by enabling the `Enable Alternative Row`.
 
 #### Alternative Background
 
-You can customize the background color of alternative rows. The default color of the alternative background is `#f7f7f7.` This property can be displayed by enabling the `Enable Alternative Row.`
+You can customize the background color of alternative rows. The default color of the alternative background is `#f7f7f7`. This property can be displayed by enabling the `Enable Alternative Row`.
 
 #### Row Height
 
@@ -254,15 +306,15 @@ This property picks auto font-size for grid rows when it is enabled, otherwise, 
 
 #### Font Size
 
-You can enable this property by disabling `Auto Font Size,` which allows you to change the font size of grid content.
+You can enable this property by disabling `Auto Font Size`, which allows you to change the font size of grid content.
 
 #### Padding
 
 You can increase or decrease the space between the border and the header by adjusting the `padding` option.
 
-![Content  Customization](/static/assets/cloud/visualizing-data/visualization-widgets/images/grid/grid-content-change.png)
-
 **After customizing the content settings**
+
+![Content  Customization](/static/assets/cloud/visualizing-data/visualization-widgets/images/grid/grid-content-change.png)
 
 ![Content Customization color](/static/assets/cloud/visualizing-data/visualization-widgets/images/grid/grid-contentcustomized.png)
 
@@ -289,7 +341,7 @@ For Dimensional Fields
 * `[text]` - It perform contains operation
 * `[text]*` - It performs start with operation
 * `*[text]` - It performs ends with operation
-* `[text1],[text2]` - search multiple text by using `,`
+* `[text1],[text2]` - search multiple text by using ``,
 
 #### Act as master widget
 
@@ -305,15 +357,11 @@ Using this option, you can enable or disable hierarchical top N filtering. While
 
 When the Hierarchical Filter option is enabled, the Top N will be applied for each individual column separately based on the number set for each column.
 
-### Column settings
+#### Column Settings
 
 This section allows you to format the grid column based on alignment, width, and KPI customization.
 
 ![Column settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/grid/grid-columnSetting.png)
-
-#### Column Settings
-
-This allows you to set width and align each column of the grid.
 
 If you click the `Customize` button, the window will render like this. 
 
@@ -439,7 +487,7 @@ Click the `OK` button to apply the changes to the grid.
 
 #### Advance setting
 
-Select Advance setting to configure conditions and apply color to the cells based on that. Click [here](/cloud-bi/visualizing-data/visualization-widgets/grid/#how-to-apply-conditional-formatting-in-grid) for more details.
+Select Advance setting to configure conditions and apply color to the cells based on that. Click [here](/embedded-bi/visualizing-data/visualization-widgets/grid/#how-to-apply-conditional-formatting-in-grid) for more details. 
 
 ![Advance settings](/static/assets/cloud/visualizing-data/visualization-widgets/images/grid/advance-settings.png)
 
@@ -449,7 +497,7 @@ Select Advance setting to configure conditions and apply color to the cells base
 
 ![Linking](/static/assets/cloud/visualizing-data/visualization-widgets/images/grid/linking.png)
 
-To configure the linking to URL or dashboard with the widget using its settings. For more details, refer to the [Linking](/cloud-bi/visualizing-data/working-with-widgets/linking-urls-and-dashboards/).
+To configure the linking to URL or dashboard with the widget using its settings. For more details, refer to the [Linking](/embedded-bi/visualizing-data/working-with-widgets/linking-urls-and-dashboards/).
 
 ## How to apply conditional formatting in grid
 
@@ -541,7 +589,7 @@ Select the checkbox provided near the options to customize the properties, simil
 
 ![Icons](/static/assets/cloud/visualizing-data/visualization-widgets/images/grid/icons.png)
 
-*Figure: Grid widget with the applied customization*
+*Figure: Grid widget the applied customization*
 
 ![Grid with conditional formatting](/static/assets/cloud/visualizing-data/visualization-widgets/images/grid/formatted-result.png)
 
@@ -564,7 +612,7 @@ On enabling Auto Font Size, the font size of the title will be adjusted automati
 
 **Font Size**
 
-This allows you to apply the specified font size to the widget title if the `Title Auto Font Size` is disabled. The value can range between 10 and 44.
+This allows you to apply the specified font size to the widget title if the Title Auto Font Size is disabled. The value can range between 10 and 44.
 
 ### Subtitle Auto Font Size
 
@@ -572,19 +620,31 @@ On enabling Auto Font Size, the font size of the subtitle will be adjusted autom
 
 **Font Size**
 
-This allows you to apply the specified size of the font to the widget title if the `Subtitle Auto Font Size` is disabled. The value can range between 10 and 32.
+This allows you to apply the specified size of the font to the widget title if the Subtitle Auto Font Size is disabled. The value can range between 10 and 32.
+
+### Auto Padding
+
+On enabling Auto Padding, the padding of the widget container will be adjusted automatically if the size of the widget varies.
+
+**Padding**
+
+This allows you to customize the padding of the widget container if the **Auto Padding** is disabled. Value can be between 0 and 25.
 
 ### Show Border
 
-This allows you to toggle the visibility of border surrounding the widget.
+This allows you to toggle the visibility of the border surrounding the widget.
 
 ### Corner Radius
 
-This allows you to apply the specified radius to the widget corners if the `Show Border` is enabled. The value can range between 0 and 10.
+This allows you to apply the specified radius to the widget corners if the Show Border is enabled. The value can range between 0 and 10.
 
 ### Transparency
 
 You can change the transparency from 0 to 1.
+
+### Show Shadow
+
+This allows you to toggle the visibility of the `shadow` surrounding the widget.
 
 ### Container actions
 
@@ -616,7 +676,7 @@ This allows you to enable or disable the PDF export option for the Grid. Enablin
 
 #### Enable comments
 
-This allows you to enable or disable comment for the dashboard widget. For more details, refer to this [link](/cloud-bi/visualizing-data/working-with-widgets/commenting-widget/).
+This allows you to enable or disable comment for the dashboard widget. For more details, refer to this [link](/embedded-bi/visualizing-data/working-with-widgets/commenting-widget/).
 
 #### Allow Viewing of underlying data
 

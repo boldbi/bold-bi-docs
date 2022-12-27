@@ -142,16 +142,7 @@ The link has been provided to [download](https://onpremise-demo.boldbi.com/getti
         }
      ```
 
- 4. In the `Index.html` file, refer to the following cdn files in the `<head>` tag,
-
-     ```js
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jsrender/1.0.0-beta/jsrender.min.js"></script>
-        <link rel="stylesheet" href="./assets/css/site.css"/>
-     ```
-
- 5. The `componentDidMount()` method contact the server to get the token and with this token, particular dashboard details is collected and passed to the `renderDashboard()` method to render it.
+ 4. The `componentDidMount()` method contact the server to get the token and with this token, particular dashboard details is collected and passed to the `renderDashboard()` method to render it.
 
      ```js
         componentDidMount() {
@@ -192,7 +183,7 @@ The link has been provided to [download](https://onpremise-demo.boldbi.com/getti
         }  
      ```
 
- 6. In the `renderDashboard()`, use the following code to render the dashboard.
+ 5. In the `renderDashboard()`, use the following code to render the dashboard.
   
      ```js
         renderDashboard(data) {
@@ -216,14 +207,14 @@ The link has been provided to [download](https://onpremise-demo.boldbi.com/getti
         }
      ```
 
- 7. Run the command `npm install`. Once completed, run the command `npm i @boldbi/boldbi-embedded-sdk`. Once completed, import the`@boldbi/boldbi-embedded-sdk` in the `DashboardListing.js`.
- 8. To create the ASP.NET core Web application, start Visual Studio and click `Create new project.`
+ 6. Run the command `npm install`. Once completed, run the command `npm i @boldbi/boldbi-embedded-sdk`. Once completed, import the`@boldbi/boldbi-embedded-sdk` in the `DashboardListing.js`.
+ 7. To create the ASP.NET core Web application, start Visual Studio and click `Create new project.`
    ![SelectProject](/static/assets/embedded/javascript/sample/images/ProjectFramework.png)
    ![SelectFrameworkVersion](/static/assets/embedded/javascript/sample/images/framework_version.png)
- 9. Change the project name as you want, then click `Create`.
- 10. Select the Web Application (Model-View-Controller) template, then click `Create`.
- 11. In ASP.NET core, create the model classes `EmbedProperties.cs` and `DataClass.cs`. 
- 12. Under the model folder, create the `EmbedProperties.cs` class to define the mandatory properties as follows
+ 8. Change the project name as you want, then click `Create`.
+ 9. Select the Web Application (Model-View-Controller) template, then click `Create`.
+ 10. In ASP.NET core, create the model classes `EmbedProperties.cs` and `DataClass.cs`. 
+ 11. Under the model folder, create the `EmbedProperties.cs` class to define the mandatory properties as follows
 
      ```js
         public class EmbedProperties
@@ -243,7 +234,7 @@ The link has been provided to [download](https://onpremise-demo.boldbi.com/getti
 
      ```
 
- 13. In the `DataClass.cs`  class, define the following properties. These properties are used to get the dashboard list from the server.
+ 12. In the `DataClass.cs`  class, define the following properties. These properties are used to get the dashboard list from the server.
 
      ```js
         [DataContract]
@@ -291,7 +282,7 @@ The link has been provided to [download](https://onpremise-demo.boldbi.com/getti
      ```
     
     
- 14. In the `Controllers\HomeController.cs`, define the `GetDashboard()` method to get the list of dashboards from the server. It uses the method `GetToken()` which helps to get the token from the server.
+ 13. In the `Controllers\HomeController.cs`, define the `GetDashboard()` method to get the list of dashboards from the server. It uses the method `GetToken()` which helps to get the token from the server.
  Add a default view as `Index.cshtml`
 
      ```js
@@ -337,7 +328,7 @@ The link has been provided to [download](https://onpremise-demo.boldbi.com/getti
         }
      ``` 
 
- 15. To get particular dashboard details, define an API `GetDetails()` which uses the method `GetSignatureUrl()` to generate the algorithm. In this API, the `embedQuerString`,`userEmail` and the value from the  `GetSignatureUrl()` method are appended as query parameters in the URL to get details of a particular dashboard. With these details, the `renderDashboard()` method is called in the react application.
+ 14. To get particular dashboard details, define an API `GetDetails()` which uses the method `GetSignatureUrl()` to generate the algorithm. In this API, the `embedQuerString`,`userEmail` and the value from the  `GetSignatureUrl()` method are appended as query parameters in the URL to get details of a particular dashboard. With these details, the `renderDashboard()` method is called in the react application.
 
      ```js
         [HttpPost]
@@ -378,4 +369,4 @@ The link has been provided to [download](https://onpremise-demo.boldbi.com/getti
         }
      ```
 
- 16. Run the ASP.NET core application, then run the React application in the visual studio code by the command `npm start`.
+ 15. Run the ASP.NET core application, then run the React application in the visual studio code by the command `npm start`.
