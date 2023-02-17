@@ -83,6 +83,8 @@ Replace it in the URL to query a particular project:
 
 [https://api.wistia.com/v1/projects/&lt;:project_hash_id&gt;.json](https://api.wistia.com/v1/projects/%3c:project_hash_id%3e.json)
 
+For more information on the API endpoints available for this data source, refer to their official [API Documentation](https://wistia.com/support/developers/data-api)
+
 ### Sample queries
 **Specific Project**
 

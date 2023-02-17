@@ -80,6 +80,8 @@ Replace it in the URL to query a particular deal:
 
 `https://api.pipedrive.com/v1/deals/<:id>`   
 
+For more information on the API endpoints available for this data source, refer to their official [API Documentation]( https://pipedrive.readme.io/docs)
+
 ### Sample queries
 **All Activities**
 

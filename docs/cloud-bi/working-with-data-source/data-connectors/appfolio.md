@@ -83,6 +83,8 @@ Period of time before the next refresh call is triggered. This will automaticall
 
 * Set `paginate_results=true` in query and set the required range.
 
+For more information on the API endpoints available for this data source, refer to their official [API Documentation](https://help.appfolio.com/s/article/Requesting-Data-from-AppFolio-Data-API-V1)
+
 ### Sample queries
 
 **Aged Payables Summary**

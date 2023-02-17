@@ -72,6 +72,8 @@ Replace it in the URL to query a particular conversations:
 
 `https://api.surveymonkey.com/v3/surveys/<:surveyid>/details`
 
+For more information on the API endpoints available for this data source, refer to their official [API Documentation](https://developer.surveymonkey.com/api/v3/)
+
 ### Sample queries
 **Survey Categories**
 
@@ -98,3 +100,5 @@ https://api.surveymonkey.com/v3/survey_templates
 [Editing a Data Connection](/cloud-bi/working-with-data-source/editing-a-data-connection/)   
 
 [Dashboard Designer Walkthrough](/cloud-bi/getting-started/quick-start/)
+
+[Unleash Actionable Insights from Embedded SurveyMonkey Analytics](https://www.boldbi.com/blog/unleash-actionable-insights-from-embedded-surveymonkey-analytics)

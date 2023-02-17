@@ -8,13 +8,13 @@ documentation: ug
 
 # Bold BI Dashboards Embedding in ASP.NET MVC Sample with Embedded SDK
 
-We have provided link to [download](https://onpremise-demo.boldbi.com/getting-started/asp-net-mvc-v3.3/sample.zip) the sample application, which demonstrates the dashboard rendering with list of dashboards available in your Bold BI server and followed by steps to create new embedding application in `ASP.NET MVC `on your own.
+A GitHub link has been provided to [get](https://github.com/boldbi/aspnet-mvc-sample) the sample application, which demonstrates dashboard rendering with a list of dashboards available in your Bold BI server and is followed by steps to create a new embedding application in the `ASP.NET MVC `on your own.
 
 > **NOTE:** The best way to get started would be reading the [Getting Started](/embedded-bi/javascript-based/getting-started/) section of the documentation to start using first. The `Getting Started` guide gives you enough information that you need to know before working on the sample. 
 
 ## How to run the sample
 
-1. Please [download](https://onpremise-demo.boldbi.com/getting-started/asp-net-mvc-v3.3/sample.zip) the ASP.NET MVC sample.  
+1. Please [get](https://github.com/boldbi/aspnet-mvc-sample) the ASP.NET MVC sample.  
 
 2. In the ASP.NET MVC sample, you could find the `EmbedProperties` class file in the Models folder.
 ![Embed Properties](/static/assets/embedded/javascript/sample/images/prop-mvc.png#max-width=75%)
@@ -72,6 +72,8 @@ We have provided link to [download](https://onpremise-demo.boldbi.com/getting-st
         dashboard.loadDesigner();
        };
      ```
+
+> **NOTE:** To mitigate issues related to NuGet packages, run the following command in package manager console `Update-Package Microsoft.CodeDom.Providers.DotNetCompilerPlatform -r`.
 
     <meta charset="utf-8"/>
     <table>

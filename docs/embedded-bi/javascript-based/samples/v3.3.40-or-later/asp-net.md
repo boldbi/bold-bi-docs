@@ -8,13 +8,13 @@ documentation: ug
 
 # Bold BI Dashboards embedding in ASP.NET Web Forms using Embedded SDK
 
-A link has been provided to [download](https://onpremise-demo.boldbi.com/getting-started/asp-net-v3.3/sample.zip) the sample application, which demonstrates the dashboard rendering with the list of dashboards available in your Bold BI server and followed by steps to create new embedding application in the `ASP.NET Web Forms` on your own.    
+A GitHub link has been provided to [get](https://github.com/boldbi/aspnet-web-forms-sample) the sample application, which demonstrates dashboard rendering with a list of dashboards available in your Bold BI server and is followed by steps to create a new embedding application in the `ASP.NET Web Forms` on your own.
 
 > **NOTE:** The best way to get started would be reading the [Getting Started](/embedded-bi/javascript-based/getting-started/) section of the documentation to start using first. The `Getting Started` guide gives you enough information that you need to know before working on the sample.  
 
 ## How to run the sample
 
-1. Please [download](https://onpremise-demo.boldbi.com/getting-started/asp-net-v3.3/sample.zip) the ASP.NET Web Forms sample.    
+1. Please [get](https://github.com/boldbi/aspnet-web-forms-sample) the ASP.NET Web Forms sample.    
 
 2. You need to set your embed property details in the `EmbedProperties.cs` and `Site.Master` as follows.  
 ![Embed Properties](/static/assets/embedded/javascript/sample/images/asp-net-embed.png)

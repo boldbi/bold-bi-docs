@@ -85,6 +85,8 @@ Replace it in the URL to query a particular experiments:
 
 [https://api.optimizely.com/v2/projects/15269830028/experiments/](https://api.optimizely.com/v2/projects/15269830028/experiments/)
 
+For more information on the API endpoints available for this data source, refer to their official [API Documentation](https://developers.optimizely.com/classic/rest/v1/)
+
 ### Sample queries
 
 **Projects**

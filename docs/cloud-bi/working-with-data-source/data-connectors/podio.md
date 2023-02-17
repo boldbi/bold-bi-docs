@@ -71,6 +71,8 @@ Replace it in the URL to query a particular notification:
 
 `https://api.podio.com//notification/<:notification_id>`
 
+For more information on the API endpoints available for this data source, refer to their official [API Documentation](https://developers.podio.com/doc)
+
 ### Sample queries
 **Get Conversations**
 

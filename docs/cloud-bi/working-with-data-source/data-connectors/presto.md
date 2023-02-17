@@ -268,7 +268,7 @@ Type while creating the data source needs to be presto.
 #### For creating connection:
 
 ``` json
-"Connection": [
+"Connection":
 {
 "Servername": "string",
 "Port": "string",
@@ -295,13 +295,12 @@ Type while creating the data source needs to be presto.
 "Expression" :  "UPPER(string expression)"
 }]
 }
-]
 ```
 
 #### For editing connection:
 
 ``` json
-"Connection": [
+"Connection":
 {
 "Servername": "string",
 "Port": "string",
@@ -331,7 +330,6 @@ Type while creating the data source needs to be presto.
 "Action": "delete"
 }]
 }
-]
 ```
 
 > **NOTE:**  Through Rest API, the data source can be created or edited with only one table. If different table is provided in edit data source, the table will be replaced. The widgets will be retained only if the schema is same as the previous table.
@@ -339,7 +337,7 @@ Type while creating the data source needs to be presto.
 ### Connection Sample for Code View Mode
 
 ``` json
-"Connection": [
+"Connection":
 {
 "Servername": "string",
 "Port": "string",
@@ -365,7 +363,6 @@ Type while creating the data source needs to be presto.
 "Expression" :  "UPPER(string expression)"
 }]
 }
-]
 ```
 
 ## Related links

@@ -73,6 +73,8 @@ Replace it in the URL to query a particular payment:
 
 [https://&lt;:account_name&gt;.chargify.com/&lt;:end_point&gt;](https://%3c:account_name%3e.chargify.com/%3c:end_point%3e)
 
+For more information on the API endpoints available for this data source, refer to their official [API Documentation](https://reference.chargify.com/)
+
 ### Sample queries
 **Subscriptions**
 

@@ -94,6 +94,8 @@ Replace it in the URL to query a particular ticket:
 
 `[https://domain_name.zendesk.com/api/v2/tickets/12.json`
 
+For more information on the API endpoints available for this data source, refer to their official [API Documentation](https://developer.zendesk.com/rest_api/docs/zendesk-apis/resources)
+
 ### Sample queries
 **Tickets**
 

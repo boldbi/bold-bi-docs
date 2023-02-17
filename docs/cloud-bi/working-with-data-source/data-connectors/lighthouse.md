@@ -91,6 +91,8 @@ Replace it in the URL to query a tickets:
 
 [https://my-sample-domain.lighthouseapp.com/projects/140556/tickets](https://my-sample-domain.lighthouseapp.com/projects/140556/tickets)
 
+For more information on the API endpoints available for this data source, refer to their official [API Documentation](http://help.lighthouseapp.com/kb/api/api-basics)
+
 ### Sample queries
 
 **Milestones**

@@ -235,3 +235,5 @@ Type while creating the data source needs to be MongoDB.
 [Dashboard Designer Walkthrough](/embedded-bi/getting-started/quick-start/)
 
 [MongoDB Integration](https://www.boldbi.com/integrations/mongodb?utm_source=syncfusion&utm_medium=documentation&utm_campaign=boldbimongodbintegration)
+
+[How to connect MongoDB by direct query mode in Bold BI](https://www.boldbi.com/kb/faq/how-to-connect-mongodb-by-direct-query-mode-in-bold-bi)

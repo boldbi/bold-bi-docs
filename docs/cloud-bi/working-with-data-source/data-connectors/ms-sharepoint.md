@@ -51,6 +51,8 @@ After successful authentication, File Explorer panel opens. Follow the below ste
 
 You can also edit the connection information set here using the [Edit Connection](/cloud-bi/working-with-data-source/editing-a-data-connection/) option.
 
+For more information on the API endpoints available for this data source, refer to their official [Microsoft SharePoint API documentation](https://docs.microsoft.com/en-us/graph/auth-register-app-v2)
+
 #### Additional information
 <table width="600">
 <tr>

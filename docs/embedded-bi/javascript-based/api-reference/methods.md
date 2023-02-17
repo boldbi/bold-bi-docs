@@ -333,6 +333,8 @@ instance.getWidgetInstance(widgetId2).setFilterParameters(filtersValue2);
 instance.updateWidgetFilters("container"); //container -> embed container id
 ```
 
+>**Note:** Apply widget filters on both initial rendering and on-demand in the dashboard using a Web application. To know more details, please refer to [here](/embedded-bi/faq/how-to-apply-widget-filters-using-both-initialrendering-and-ondemand-in-embedding/).
+
 ## exportDashboardAsPdf()
 
 This method will export the dashboard as Pdf.

@@ -73,6 +73,8 @@ Replace it in the URL to query a particular conversations:
 
 https://api.lessonly.com/api/v1/users/<:user_id>
 
+For more information on the API endpoints available for this data source, refer to their official [API Documentation](https://docs.lessonly.com/)
+
 ### Sample queries
 
 **All User**

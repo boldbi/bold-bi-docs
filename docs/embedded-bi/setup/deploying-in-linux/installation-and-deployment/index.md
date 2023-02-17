@@ -15,3 +15,5 @@ Bold BI Linux can run in Ubuntu and CentOS operating systems.
 [Bold BI on Ubuntu](/embedded-bi/setup/deploying-in-linux/installation-and-deployment/bold-bi-on-ubuntu/)
 
 [Bold BI on CentOS](/embedded-bi/setup/deploying-in-linux/installation-and-deployment/bold-bi-on-centos/)
+
+[Auto Deployment](/embedded-bi/setup/deploying-in-linux/installation-and-deployment/auto-deployment/)

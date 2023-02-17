@@ -60,6 +60,9 @@ Period of time before the next refresh call is triggered. This will automaticall
 Replace it in the URL to query particular activity:
 
 `https://api.fitbit.com/1/activities/<:activity-id>.json`
+
+For more information on the API endpoints available for this data source, refer to their official [API Documentation]( https://dev.fitbit.com/build/reference/web-api/explore/#/)
+
 ### Sample queries
 
 **All Activities**

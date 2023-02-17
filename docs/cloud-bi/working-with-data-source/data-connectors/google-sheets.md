@@ -41,6 +41,8 @@ To enable this connection, follow the given steps:
 
 > **NOTE:** When the configured Google Sheets is deleted or renamed from your account, an extract mode data source refresh will get failed and the configured dashboard will still work with the old data.
 
+For more information on the API endpoints available for this data source, refer to their official [API Documentation](https://developers.google.com/identity/protocols/OAuth2)
+
 ## Related Links
 
 [Data Transformation](/cloud-bi/working-with-data-source/transforming-data/joining-table/)
@@ -50,3 +52,7 @@ To enable this connection, follow the given steps:
 [Dashboard Designer Walkthrough](/cloud-bi/getting-started/quick-start/)
 
 [Google Sheets Integration](https://www.boldbi.com/integrations/google-sheets?utm_source=syncfusion&utm_medium=documentation&utm_campaign=boldbigoolglesheetsintegration)
+
+[How to set up OAuth 2.0 authorization to access Google applications in Bold BI](https://www.boldbi.com/kb/security/how-to-set-up-oauth2-authorization-to-access-google-applications)
+
+[Create and Embed Dashboards with Google Sheets Data](https://www.boldbi.com/blog/create-and-embed-dashboard-with-google-sheets-data)

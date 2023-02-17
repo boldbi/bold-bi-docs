@@ -338,3 +338,131 @@ You can get your Embed Secret key from administrator setting section. Refer this
 If you are using multi-tenant Bold BI server sites and looking for embedding the Dashboard in your application, then we recommend using the common embed secret instead of the separate embed secret for each site. Refer to this [link](/embedded-bi/site-administration/embed-settings/#get-common-embed-secret-code-from-ums) to get the common embed secret.
 
 > **NOTE:**  <br>This embed setting will be enabled only if you have an Embedded BI plan.<br><br>Refer to this [link](/embedded-bi/faq/how-to-resolve-jquery-conflict-in-embedding) to resolve the jQuery conflict problem in embedded.
+
+## How to use Server URL for embedding the Bold BI in different scenarios
+
+Get the Server URL of the respective Bold BI tenant from the following UMS sites management page.
+
+>**Note:** Site Management page is accessible only for the OnPremise or Enterprise deployment.
+To open UMS page, open the OnPremise dashboard listing page, select the user profile in the side menu, then click the `Manage sites (Admin access)` option as follows.
+
+![GotoUMSPage](/static/assets/embedded/javascript/images/goto_ums_page.png)
+
+![GetServerURL](/static/assets/embedded/javascript/images/get-server-url.png)
+
+Refer to the following table for using the server URL in different scenarios to embed the Bold BI.
+
+ServerUrl - Combination of the `rootURL` and `siteIdentifier`.
+
+<meta charset="utf-8"/>
+<table>
+<tbody>
+<tr>
+<th style="width:20%;" align="left">Scenarios</th>
+<th style="width:40%;" align="left">URL from UMS page</th>
+<th style="width:40%;" align="left">Example Code</th>
+</tr>
+<tr>
+<td align="left">By default, Multi-tenancy <strong>enabled</strong> case</td>
+<td>http://example.boldbi.com/bi/site/site1</td>
+<td align="left">
+
+```js
+ var boldbiEmbedInstance = BoldBI.create({
+    serverUrl: "http://example.boldbi.com/bi" + "/" + "site/site1",
+ });
+ boldbiEmbedInstance.loadDashboard();
+```
+<code>rootURL</code> - "http://example.boldbi.com/bi"<br>
+<code>siteIdentifier</code> - "site/site1"
+
+</td>
+</tr>
+<tr>
+<td align="left">Multi-tenancy <strong>disabled</strong> case</td>
+<td>http://example.boldbi.com/bi</td>
+<td align="left">
+
+```js
+ var boldbiEmbedInstance = BoldBI.create({
+    serverUrl: "http://example.boldbi.com/bi",
+ });
+ boldbiEmbedInstance.loadDashboard();
+```
+<code>rootURL</code> - "http://example.boldbi.com/bi"<br>
+
+</td>
+</tr>
+<tr>
+<tr>
+<td align="left">Hosted as <strong>one</strong> level sub application with Multi-tenancy <strong>enabled</strong> case</td>
+<td>http://example.boldbi.com/bold/bi/site/site1</td>
+<td align="left">
+
+```js
+ var boldbiEmbedInstance = BoldBI.create({
+    serverUrl: "http://example.boldbi.com/bold/bi" + "/" + "site/site1",
+ });
+ boldbiEmbedInstance.loadDashboard();
+```
+<code>rootURL</code> - "http://example.boldbi.com/bold/bi"<br>
+<code>Main application</code> - "http://example.boldbi.com/"<br>
+<code>Sub application</code> - "bold/bi"<br>
+<code>siteIdentifier</code> - "site/site1"
+
+</td>
+</tr>
+<tr>
+<td align="left">Hosted as <strong>one</strong> level sub application with Multi-tenancy <strong>disabled</strong> case</td>
+<td>http://example.boldbi.com/bold/bi</td>
+<td align="left">
+
+```js
+ var boldbiEmbedInstance = BoldBI.create({
+    serverUrl: "http://example.boldbi.com/bold/bi",
+ });
+ boldbiEmbedInstance.loadDashboard();
+```
+<code>rootURL</code> - "http://example.boldbi.com/bold/bi"<br>
+<code>Main application</code> - "http://example.boldbi.com/"<br>
+<code>Sub application</code> - "bold/bi"
+
+</td>
+</tr>
+<tr>
+<td align="left">Hosted as <strong>two</strong> level sub application with Multi-tenancy <strong>enabled</strong> case</td>
+<td>http://example.boldbi.com/bold/test/bi/site/site1</td>
+<td align="left">
+
+```js
+ var boldbiEmbedInstance = BoldBI.create({
+    serverUrl: "http://example.boldbi.com/bold/test/bi" + "/" + "site/site1",
+ });
+ boldbiEmbedInstance.loadDashboard();
+```
+<code>rootURL</code> - "http://example.boldbi.com/bold/test/bi"<br>
+<code>Main application</code> - "http://example.boldbi.com/"<br>
+<code>Sub applications</code> - "bold/test/bi"<br>
+<code>siteIdentifier</code> - "site/site1"
+
+</td>
+</tr>
+<tr>
+<td align="left">Hosted as <strong>two</strong> level sub application with Multi-tenancy <strong>disabled</strong> case</td>
+<td>http://example.boldbi.com/bold/test/bi</td>
+<td align="left">
+
+```js
+ var boldbiEmbedInstance = BoldBI.create({
+    serverUrl: "http://example.boldbi.com/bold/test/bi",
+ });
+ boldbiEmbedInstance.loadDashboard();
+```
+<code>rootURL</code> - "http://example.boldbi.com/bold/test/bi"<br>
+<code>Main application</code> - "http://example.boldbi.com/"<br>
+<code>Sub applications</code> - "bold/test/bi"
+
+</td>
+</tr>
+</tbody>
+</table>

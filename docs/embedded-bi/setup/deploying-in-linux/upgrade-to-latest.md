@@ -41,7 +41,7 @@ This section explains how to upgrade Bold BI Linux package from any version to t
 6. Execute the following command to deploy Bold BI in your Linux machine. 
  
     ~~~shell
-    sudo bash install-boldbi.sh -i {upgrade} -u {user} -h {host URL}
+    sudo bash install-boldbi.sh -i {upgrade}
     ~~~
  
 
@@ -54,7 +54,7 @@ This section explains how to upgrade Bold BI Linux package from any version to t
     Example for upgrading the installation,
 
     ~~~shell
-    sudo bash install-boldbi.sh -i upgrade -u www-data -h http://linux.example.com
+    sudo bash install-boldbi.sh -i upgrade
     ~~~ 
 
 7. Refer to this [link](/embedded-bi/setup/deploying-in-linux/install-optional-libraries/) and install the optional client libraries, after the installation completed.

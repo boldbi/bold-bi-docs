@@ -84,6 +84,8 @@ Replace it in the URL to query a particular site:
 
 [https://public-api.wordpress.com/rest/v1.2/sites/&lt;:site_id&gt;](https://public-api.wordpress.com/rest/v1.2/sites/%3c:site_id%3e)
 
+For more information on the API endpoints available for this data source, refer to their official [API Documentation]( https://developer.wordpress.com/docs/api/)
+
 ### Sample queries
 **Insights**
 

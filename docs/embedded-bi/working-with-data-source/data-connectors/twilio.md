@@ -80,6 +80,8 @@ Replace it in the URL to query a particular payment:
 
 `https://api.twilio.com/2010-04-01/Accounts/<:youraccountsid>/Calls/<:specificcallid>.json`
 
+For more information on the API endpoints available for this data source, refer to their official [API Documentation](https://www.twilio.com/docs/api)
+
 ### Sample queries
 **Fetch Call Details**
 

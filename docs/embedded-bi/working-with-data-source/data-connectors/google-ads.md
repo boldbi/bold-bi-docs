@@ -104,6 +104,8 @@ Period before the next refresh call is triggered. This will automatically trigge
 
 > **NOTE:**  If you have any modification in the prepared URL, Select the Custom URL check box and edit the URL. You can use the Google query explorer tool to prepare the URL **Query Explorer** .
 
+For more information on the API endpoints available for this data source, refer to their official [API Documentation]( https://developers.google.com/analytics/devguides/reporting/core/v3/)
+
 ### Preview and data import
 * Click **Preview & Connect** to connect with the configurations set.
 * The Choose Schema(s) dialog opens. The schema represents the key fields of the JSON data retrieved from the Google Ads Rest API request. This dialog displays a list of schemas in treeview and its corresponding values in the grid for preview. Select required schema(s) from treeview to use in designer and click **Connect**.
@@ -134,3 +136,5 @@ You can edit, delete and re-authorize this account from the **Connected Accounts
 [Google Ads Limitations to build query](https://developers.google.com/analytics/devguides/reporting/core/v3/reference#largeDataResults)
 
 [Google Ads Integration](https://www.boldbi.com/integrations/google-ads?utm_source=syncfusion&utm_medium=documentation&utm_campaign=boldbigoogleadsintegration)
+
+[Monitoring Ad Performance in a Google Ads Dashboard](https://www.boldbi.com/blog/monitoring-ad-performance-in-a-google-ads-dashboard)

@@ -63,6 +63,8 @@ Replace it in the URL to query a particular conversations:
 
 [https://myaccount.freshdesk.com/api/v2/tickets/&lt;ticket_id&gt;/conversations](https://myaccount.freshdesk.com/api/v2/tickets/%3cticket-id%3e/conversations)
 
+For more information on the API endpoints available for this data source, refer to their official [API Documentation](https://developers.freshdesk.com/api/)
+
 ### Sample queries
 
 **Contacts**

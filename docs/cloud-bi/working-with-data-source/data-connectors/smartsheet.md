@@ -91,6 +91,8 @@ Replace it in the URL to query a particular sheet:
 
 `https://api.smartsheet.com/2.0/sheets/<:sheet_id>/`
 
+For more information on the API endpoints available for this data source, refer to their official [API documentation](https://smartsheet-platform.github.io/api-docs/)
+
 #### Sample queries
 **Reports**
 

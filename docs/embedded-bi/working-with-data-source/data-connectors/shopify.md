@@ -73,6 +73,8 @@ Replace it in the URL to query a particular conversations:
 
 https://<yourstore.myshopify.com>/admin/api/2020-04/customers/<:customer_id>.json
 
+For more information on the API endpoints available for this data source, refer to their official [API Documentation](https://shopify.dev/docs/admin-api/rest/reference)
+
 ### Sample queries
 
 **All Customers**

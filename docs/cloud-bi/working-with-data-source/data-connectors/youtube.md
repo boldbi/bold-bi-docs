@@ -75,6 +75,8 @@ Replace it in the URL to query a particular calendar details:
 
 `https://www.googleapis.com/youtube/v3/captions/<:caption_id>`
 
+For more information on the API endpoints available for this data source, refer to their official [API Documentation](https://developers.google.com/youtube/v3/docs/)
+
 ### Sample queries
 **Activities**
 
@@ -109,3 +111,5 @@ You can edit, delete and re-authorize this account from the **Connected Accounts
 [Dashboard Designer Walkthrough](/cloud-bi/getting-started/quick-start/)
 
 [YouTube Integration](https://www.boldbi.com/integrations/youtube?utm_source=syncfusion&utm_medium=documentation&utm_campaign=boldbiyoutubeintegration)
+
+[How to set up OAuth 2.0 authorization to access Google applications in Bold BI](https://www.boldbi.com/kb/security/how-to-set-up-oauth2-authorization-to-access-google-applications)

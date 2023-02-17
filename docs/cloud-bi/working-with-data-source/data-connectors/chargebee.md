@@ -80,6 +80,8 @@ Replace *&lt;:site&gt;* with your Chargebee site name.
 
 [https://&lt;:site&gt;.chargebee.com/api/v2/subscriptions](https://%3c:site%3e.chargebee.com/api/v2/subscriptions)
 
+For more information on the API endpoints available for this data source, refer to their official [API Documentation](https://apidocs.chargebee.com/docs/api)
+
 ### Sample queries
 
 **Customers**

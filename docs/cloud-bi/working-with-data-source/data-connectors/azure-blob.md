@@ -69,6 +69,8 @@ Period of time before next refresh call is triggered. This will automatically tr
 
    `https://<:your_storage_account_name>.blob.core.windows.net/`
 
+For more information on the API endpoints available for this data source, refer to their official [API Documentation](https://docs.microsoft.com/en-us/rest/api/storageservices/blob-service-rest-api)
+
 ### Sample queries
 **Data of a specific file from a container**
 

@@ -63,6 +63,9 @@ Period of time before the next refresh call is triggered. This will automaticall
 Replace it in the URL to query particular payment:
 
 `https://connect.squareup.com/v2/payments/<:payment_id>`
+
+For more information on the API endpoints available for this data source, refer to their official [API Documentation](https://developer.squareup.com/reference/square)
+
 ### Sample queries
 
 **All Payments**

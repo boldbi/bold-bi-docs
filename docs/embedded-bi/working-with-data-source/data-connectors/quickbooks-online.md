@@ -96,6 +96,8 @@ Replace it in the URL to query a particular account:
 
    `https://quickbooks.api.intuit.com/v3/company/<:realmID>/query?query= select * from bill`
 
+For more information on the API endpoints available for this data source, refer to their official [API Documentation]( https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/account)
+
 ### Sample queries
 **Query an account**
 

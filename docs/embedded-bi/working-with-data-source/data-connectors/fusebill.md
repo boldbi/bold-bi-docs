@@ -71,6 +71,8 @@ Replace it in the URL to query a particular customer:
 
 [https://secure.fusebill.com/v1/customers/&lt;:customer_id&gt;](https://secure.fusebill.com/v1/customers/%3c:customer_id%3e)
 
+For more information on the API endpoints available for this data source, refer to their official [API Documentation](https://developer.fusebill.com/reference)
+
 ### Sample queries
 **Specific Customer Email Preferences**
 

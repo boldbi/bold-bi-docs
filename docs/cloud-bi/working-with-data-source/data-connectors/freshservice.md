@@ -70,6 +70,8 @@ Period of time before next refresh call is triggered. This will automatically tr
 
 `https://your_domain.freshservice.com/helpdesk`
 
+For more information on the API endpoints available for this data source, refer to their official [API Documentation](https://api.freshservice.com/)
+
 ### Sample queries
 
 **Changes**

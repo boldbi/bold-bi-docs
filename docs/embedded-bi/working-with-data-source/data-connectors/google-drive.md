@@ -52,6 +52,8 @@ To enable this connection, follow the given steps:
 
 13. Click `Save` to save the data source.
 
+For more information on the API endpoints available for this data source, refer to their official [API Documentation](https://developers.google.com/identity/protocols/OAuth2)
+
 ## Related Links
 [Data Transformation](/embedded-bi/working-with-data-source/transforming-data/joining-table/)
 
@@ -61,8 +63,9 @@ To enable this connection, follow the given steps:
 
 [Google Drive Integration](https://www.boldbi.com/integrations/google-drive?utm_source=syncfusion&utm_medium=documentation&utm_campaign=boldbigoolgledriveintegration)
 
+[How to set up OAuth 2.0 authorization to access Google applications in Bold BI](https://www.boldbi.com/kb/security/how-to-set-up-oauth2-authorization-to-access-google-applications)
 
-
+[Create and Embed Dashboards with Data Stored in Google Drive](https://www.boldbi.com/blog/create-and-embed-dashboard-with-google-drive-data)
 
 
 

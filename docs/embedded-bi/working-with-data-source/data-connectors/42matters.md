@@ -86,6 +86,8 @@ Replace it in the below URL, `p=<:package_name> and access_token=<:access_token>
 
 `https://data.42matters.com/api/v2.0/android/apps/lookup.json?p=<:package_name>&access_token=<:access_token>`
 
+For more information on the API endpoints available for this data source, refer to their official [API Documentation]( https://42matters.com/docs/overview)
+
 ### Sample queries 
 
 **Reviews** 

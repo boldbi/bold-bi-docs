@@ -72,6 +72,8 @@ Replace it in the URL to query a particular conversations:
 
 `https://<:yoursubdomain.zendesk.com>/api/sunshine/jobs/<:job_id>`
 
+For more information on the API endpoints available for this data source, refer to their official [API Documentation](https://developer.zendesk.com/rest_api/docs/sunshine/introduction)
+
 ### Sample queries
 
 **All Users**

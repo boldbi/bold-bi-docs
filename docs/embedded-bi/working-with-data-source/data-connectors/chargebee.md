@@ -95,6 +95,8 @@ Replace *&lt;:site&gt;* with your Chargebee site name.
 
 [https://your-site-82112337-test.chargebee.com/api/v2/subscriptions](https://your-site-82112337-test.chargebee.com/api/v2/subscriptions)
 
+For more information on the API endpoints available for this data source, refer to their official [API Documentation](https://apidocs.chargebee.com/docs/api)
+
 ### Preview and data import
 * Click **Preview & Connect** to connect with the configurations set.
 * The Choose Schema(s) dialog opens. The schema represents the key fields of JSON data retrieved from ActiveCampaign Rest API request. This dialog displays a list of schemas in treeview and its corresponding values in grid for preview. Select required schema(s) from treeview to use in designer and click **Connect**.

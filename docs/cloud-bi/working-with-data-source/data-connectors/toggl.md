@@ -98,6 +98,8 @@ Replace it in the URL to query a particular workspace:
 
 `https://www.toggl.com/api/v8/dashboard/<:workspace_id>`
 
+For more information on the API endpoints available for this data source, refer to their official [API Documentation](https://github.com/toggl/toggl_api_docs/)
+
 #### Mandatory Parameters for Reports API
 Below request parameters are mandatory to access the report APIs
 1. *user_agent* - The name of your application or your email address.

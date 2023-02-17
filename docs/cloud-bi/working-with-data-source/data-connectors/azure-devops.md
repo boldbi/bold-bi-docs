@@ -103,6 +103,8 @@ Period of time before next refresh call is triggered. This will automatically tr
 
 3. Replace **&lt;:Account&gt;** in the URL with the account name from the above step.
 
+For more information on the API endpoints available for this data source, refer to their official [API Documentation](https://docs.microsoft.com/en-us/azure/devops/integrate/previous-apis/overview?view=tfs-2018#full-list-of-rest-apis)
+
 ### Sample queries
 **Projects**
 

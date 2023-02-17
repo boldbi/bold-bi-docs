@@ -111,3 +111,5 @@ You can edit, delete and re-authorize this account from the **Connected Accounts
 [Salesforce Integration](https://www.boldbi.com/integrations/salesforce?utm_source=syncfusion&utm_medium=documentation&utm_campaign=boldbisalesforceintegration)
 
 [Blog Post](https://www.boldbi.com/blog/measuring-email-campaign-performance-with-mailchimp-and-salesforce-crm-data-using-bold-bi)
+
+[How to configure connected app in Salesforce](https://www.boldbi.com/kb/security/how-to-configure-connected-app-in-salesforce)

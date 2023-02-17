@@ -91,7 +91,7 @@ The option is available for configuring incremental refresh column for the selec
       * The table must have a primary key column and date column to configure the incremental refresh option.
       * The Views must have a date column to configure the incremental refresh option and unique column(s) is optional which is used to update the modified records.
 
-      If you configure it, then the data source will work on [Incremental update](/cloud-bi/working-with-data-source/data-connectors/sql-data-source/#incremental-update), otherwise it will work on [Full load](/cloud-bi/working-with-data-source/data-connectors/sql-data-source/#full-load) concept. Finally, click **Connect**.
+   If you configured it, then the data source will work on [Incremental update](/cloud-bi/working-with-data-source/data-connectors/sql-data-source/#incremental-update), otherwise works on [Full load](/cloud-bi/working-with-data-source/data-connectors/sql-data-source/#full-load) concept. And finally click **Connect**.
 
    ![Preview](/static/assets/cloud/working-with-datasource/data-connectors/images/common/Preview_Extract.png#max-width=100%)
 
@@ -310,7 +310,7 @@ Through the REST API, only the **live mode** data source can be created and edit
 #### For creating connection:
 
 ``` json
-"Connection": [
+"Connection":
 {
 "Servername": "string",
 "Port": "string",
@@ -335,13 +335,12 @@ Through the REST API, only the **live mode** data source can be created and edit
 "Expression" :  "UPPER(string expression)"
 }]
 }
-]
 ```
 
 #### For editing connection:
 
 ``` json
-"Connection": [
+"Connection":
 {
 "Servername": "string",
 "Port": "string",
@@ -369,7 +368,6 @@ Through the REST API, only the **live mode** data source can be created and edit
 "Action": "delete"
 }]
 }
-]
 ```
 
 > **NOTE:**  Through Rest API, the data source can be created or edited with only one table. If different table is provided in edit data source, the table will be replaced. The widgets will be retained only if the schema is same as the previous table.
@@ -377,16 +375,21 @@ Through the REST API, only the **live mode** data source can be created and edit
 ### Connection Sample for Code View Mode
 
 ``` json
-"Connection": [
+"Connection":
 {
-"RegionEndpoint": "string",
-"AwsAccessKeyId": "string",
-"AwsSecretAccessKey": "string",
-"OutputLocation": "string",
+"Servername": "string",
+"Port": "string",
+"Username": "string",
+"Password": "string",
 "Database": "string",
-"Schemaname": "string",
-"Tablename": "string",
+"Query": "string",
 "AdvancedSettings": "string",
+"CommandTimeout": "string",
+"IsSshConnection": "false",
+"SshServerName": "string",
+"SshPort": 0,
+"SshUsername": "string",
+"SshPassword": "string",
 "Expressions" : [{
 "Name": "Expression1",
 "Expression" : "SUM(numeric expression)"
@@ -396,7 +399,6 @@ Through the REST API, only the **live mode** data source can be created and edit
 "Expression" :  "UPPER(string expression)"
 }]
 }
-]
 ```
 
 ## Related links

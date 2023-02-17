@@ -276,7 +276,7 @@ Type while creating the data source needs to be ssas.
 #### For creating connection:
 
 ``` json
-"Connection": [
+"Connection":
 {
 "Servername": "string",
 "IntegratedSecurity": "false",
@@ -297,13 +297,12 @@ Type while creating the data source needs to be ssas.
 "Expression" :  "UPPER(string expression)"
 }]
 }
-]
 ```
 
 #### For editing connection:
 
 ``` json
-"Connection": [
+"Connection":
 {
 "Servername": "string",
 "IntegratedSecurity": "false",
@@ -327,13 +326,12 @@ Type while creating the data source needs to be ssas.
 "Action": "delete"
 }]
 }
-]
 ```
 
 ### Connection Sample for Code View Mode
 
 ``` json
-"Connection": [
+"Connection":
 {
 "Servername": "string",
 "IntegratedSecurity": "false",
@@ -353,7 +351,6 @@ Type while creating the data source needs to be ssas.
 "Expression" :  "UPPER(string expression)"
 }]
 }
-]
 ```
 
 ## Related links

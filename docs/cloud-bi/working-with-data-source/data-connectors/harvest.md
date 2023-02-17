@@ -117,6 +117,8 @@ Period of time before next refresh call is triggered. This will automatically tr
 
    `https://<:sub_domain_name>.harvestapp.com/v2/expense_categories/<:expense_category_id>`
 
+For more information on the API endpoints available for this data source, refer to their official [API Documentation](https://help.getharvest.com/api-v2/)
+
 ### Sample queries
 **List of messages for an invoice**
 
