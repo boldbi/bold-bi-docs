@@ -86,6 +86,8 @@ Replace it in the URL to query a particular calendar details:
 
 [https://www.googleapis.com/calendar/v3/calendars/&lt;:calendarId&gt;](https://www.googleapis.com/calendar/v3/calendars/%3c:calendarId%3e)
 
+For more information on the API endpoints available for this data source, refer to their official [API Documentation](https://developers.google.com/calendar/v3/reference/)
+
 ### Sample queries
 **CalendarList**
 
@@ -129,3 +131,5 @@ You can edit, delete and re-authorize this account from the **Connected Accounts
 [Google Calendar Limitations on batch request](https://developers.google.com/calendar/batch)
 
 [Google Calendar Integration](https://www.boldbi.com/integrations/google-calendar?utm_source=syncfusion&utm_medium=documentation&utm_campaign=boldbigoolglecalendarintegration)
+
+[How to set up OAuth 2.0 authorization to access Google applications in Bold BI](https://www.boldbi.com/kb/security/how-to-set-up-oauth2-authorization-to-access-google-applications)

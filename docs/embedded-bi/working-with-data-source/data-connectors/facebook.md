@@ -77,6 +77,8 @@ Period of time before next refresh call is triggered. This will automatically tr
 
    `https://graph.facebook.com/v6.0/page-id/insights?metric=page_impressions_unique&period=day&access_token=<ACCESS_TOKEN>`
 
+For more information on the API endpoints available for this data source, refer to their official [API Documentation](https://developers.facebook.com/docs/graph-api/reference/)
+
 ### Sample queries
 **Feeds**
 

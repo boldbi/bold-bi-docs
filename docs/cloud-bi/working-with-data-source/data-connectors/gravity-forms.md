@@ -65,6 +65,8 @@ Replace it in the URL to query particular form:
 
 `https://<:yoursite.gravityforms.com>/wp-json/gf/v2/forms/<:formId>`
 
+For more information on the API endpoints available for this data source, refer to their official [API Documentation](https://docs.gravityforms.com/rest-api-v2/#api-documentation)
+
 ### Sample endpoints
 
 **All Entries**

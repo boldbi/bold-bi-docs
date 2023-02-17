@@ -80,6 +80,8 @@ Period of time before next refresh call is triggered. This will automatically tr
 
 `https://api.xero.com/api.xro/2.0/Accounts/<:accountid>`
 
+For more information on the API endpoints available for this data source, refer to their official [API Documentation](https://developer.xero.com/documentation/api/api-overview)
+
 ### Sample queries
 **All Accounts**
 
@@ -117,3 +119,5 @@ You can edit, delete, and re-authorize this account from the **Connected Account
 [Editing a Data Connection](/cloud-bi/working-with-data-source/editing-a-data-connection/)   
 
 [Dashboard Designer Walkthrough](/cloud-bi/getting-started/quick-start/)
+
+[Unleash Financial Insights with Xero Data](https://www.boldbi.com/blog/unleash-financial-insights-with-xero-data)

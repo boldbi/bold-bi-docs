@@ -281,6 +281,10 @@
 	"v5.2.48",
 	"c3",
     "eks",
-	"csp"
+	"csp",
+	"initialrendering",
+	"ondemand",
+    "b2c",
+    "2fa"
 	]
 }

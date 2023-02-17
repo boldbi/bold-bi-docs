@@ -73,6 +73,8 @@ Replace it in the URL to query a particular reports:
 
 [https://query.kissmetrics.com/v3/products/222483/reports](https://query.kissmetrics.com/v3/products/222483/reports)
 
+For more information on the API endpoints available for this data source, refer to their official [API Documentation](https://developers.kissmetrics.com/reference#overview)
+
 ### Sample queries
 
 **Properties**

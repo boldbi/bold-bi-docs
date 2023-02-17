@@ -98,6 +98,8 @@ Replace it in the URL to query a particular calendar details:
 
 [https://www.googleapis.com/calendar/v3/calendars/hdbj27bdnsHBJ/events](https://www.googleapis.com/calendar/v3/calendars/hdbj27bdnsHBJ/events)
 
+For more information on the API endpoints available for this data source, refer to their official [API Documentation](https://developers.google.com/calendar/v3/reference/)
+
 ### Preview and data import
 * Click **Preview & Connect** to connect with the configurations set.
 * The Choose Schema(s) dialog opens. The schema represents the key fields of JSON data retrieved from Google Calendar Rest API request. This dialog displays a list of schemas in treeview and its corresponding values in grid for preview. Select required schema(s) from treeview to use in designer and click **Connect**.
@@ -128,3 +130,5 @@ You can edit, delete and re-authorize this account from the **Connected Accounts
 [Google Calendar Limitations on batch request](https://developers.google.com/calendar/batch)
 
 [Google Calendar Integration](https://www.boldbi.com/integrations/google-calendar?utm_source=syncfusion&utm_medium=documentation&utm_campaign=boldbigoolglecalendarintegration)
+
+[How to set up OAuth 2.0 authorization to access Google applications in Bold BI](https://www.boldbi.com/kb/security/how-to-set-up-oauth2-authorization-to-access-google-applications)

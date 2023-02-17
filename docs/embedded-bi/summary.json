@@ -5,6 +5,7 @@
       "Overview": "overview",
       "Deploying in Windows": {
         "Prerequisites": "prerequisites-windows",
+	"Recommended System Configuration": "recommended-system-configuration",
         "Installation and Deployment": "installation-and-deployment",
         "Version Upgrade": "upgrade-to-latest",
         "Installing Bold BI over Bold Reports": "install-when-bold-report-exist",
@@ -35,7 +36,8 @@
             "Bold BI on CentOS": "bold-bi-on-centos"
           },
           "Bold BI on Ubuntu": "bold-bi-on-ubuntu",
-          "Bold BI on CentOS": "bold-bi-on-centos"
+          "Bold BI on CentOS": "bold-bi-on-centos",
+          "Auto Deployment": "auto-deployment"
         },
         "Deploy Bold BI Using Apache Server": {
           "Configure Apache Server In CentOS": "configure-apache-server-in-centos",
@@ -426,7 +428,8 @@
           "Default Authentication": "default-authentication",
           "OAuth 2.0 Support": "oauth-2.0-support",
           "OpenID Support": "openid-settings",
-          "JSON Web Token": "json-web-token"
+          "JSON Web Token": "json-web-token",
+          "Azure AD B2C": "azure-b2c-settings"
         },
         "Look and Feel Settings": {
           "Font": "font",	
@@ -443,13 +446,16 @@
       },
       "Manage Sites": "manage-sites",
       "Manage Users": "manage-users",
-      "Manage Admin access": "manage-ums-administrator"
+      "Manage Admin access": "manage-ums-administrator",
+      "Two Factor Authentication": "two-factor-authentication"
     },
     "OAuth Configuration": "oauth-configuration",
     "Security": "security",
+    "Profile": "profile",
     "Admin Utility": {
       "Reset Password": "reset-password",
       "Reset Application Database": "reset-application-database",
+      "Reset 2FA": "reset-2fa",
       "v3.3 or older": {
         "Reset Password for Bold BI version 3.3 or older": "reset-password",
         "Reset Application Database for Bold BI version 3.3 or older": "reset-application-database"
@@ -729,7 +735,9 @@
   "How to control the link navigation behavior in the Bold BI Embed version above 5.2.48?":"how-to-control-link-navigating-behavior",
   "How to use Pivot Tables in Bold BI Using PostgreSQL":"how-to-use-pivot-tables-in-bold-bi-using-postgresql",
   "How to hide release alert banner in Bold BI":"how-to-hide-release-alert-banner-in-bold-bi-application",
-  "How to hide sample dashboards option in Bold BI":"how-to-hide-sample-dashboards-option-in-bold-bi-application"
+  "How to hide sample dashboards option in Bold BI":"how-to-hide-sample-dashboards-option-in-bold-bi-application",
+  "How to deploy a Bold BI with N windows server using load balancer":"how-to-deploy-bold-bi-using-load-balancer-with-n-windows-servers",
+  "How to apply widget filters using both initial rendering and on-demand in embedding": "how-to-apply-widget-filters-using-both-initialrendering-and-ondemand-in-embedding"
     }
   }
 }

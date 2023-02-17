@@ -82,6 +82,8 @@ Replace it in the URL to query particular invoice:
 
 `https://invoice.zoho.com/api/v3/invoices/<:invoice_id>`
 
+For more information on the API endpoints available for this data source, refer to their official [API Documentation](https://www.zoho.com/invoice/api/v3/#introduction)
+
 ### Sample queries
 
 **All Invoices**

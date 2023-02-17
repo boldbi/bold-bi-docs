@@ -91,6 +91,8 @@ ActiveCampaign API has a rate limit of 5 requests per second per account. Contac
 
 [https://&lt;your-account&gt;.api-us1.com/api/3/&lt;:resource&gt;](https://%3cyour-account%3e.api-us1.com/api/3/%3c:resource%3e)
 
+For more information on the API endpoints available for this data source, refer to their official [API Documentation](https://developers.activecampaign.com/reference)
+
 ### Sample queries
 
 **Campaigns**

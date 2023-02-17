@@ -91,6 +91,8 @@ Replace it in the URL to query a particular role.
 
 [https://www.zohoapis.com/crm/v2/settings/roles/<:role_id>](https://www.zohoapis.com/crm/v2/settings/roles/%3c:role_id%3e)
 
+For more information on the API endpoints available for this data source, refer to their official [API Documentation](https://www.zoho.com/crm/help/api/v2/#api-reference)
+
 #### Sample queries
 **Users**
 

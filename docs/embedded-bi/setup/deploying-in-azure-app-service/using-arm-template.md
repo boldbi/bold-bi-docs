@@ -26,7 +26,7 @@ documentation: ug
 
     ![Choose own template editor](/static/assets/embedded/setup/images/choose-own-template-editor.png)
 
-6. [Click here](https://raw.githubusercontent.com/boldbi/azure-arm-template/master/armtemplates/v5.2.48/BoldBIAppServiceTemplate.json) to download the ARM template file.
+6. [Click here](https://raw.githubusercontent.com/boldbi/azure-arm-template/master/armtemplates/v5.3.83/BoldBIAppServiceTemplate.json) to download the ARM template file.
 
 7. Copy all the contents in the template file and replace them in the **Edit template** window. Then click **save**.
 

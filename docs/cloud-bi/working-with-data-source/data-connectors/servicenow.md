@@ -73,6 +73,8 @@ Period of time before next refresh call is triggered. This will automatically tr
 
 [https://your-servicenow-domain.service-now.com/api/sn_sc/servicecatalog/catalogs](https://your-servicenow-domain.service-now.com/api/sn_sc/servicecatalog/catalogs)
 
+For more information on the API endpoints available for this data source, refer to their official [API Documentation](https://developer.servicenow.com/app.do#!/rest_api_doc)
+
 ### Sample queries
 
 **Problems**

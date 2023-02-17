@@ -51,6 +51,8 @@ After successful authentication, the NEW DATA SOURCE configuration panel opens
 
 You can also edit the connection information set here using the [Edit Connection](/embedded-bi/working-with-data-source/editing-a-data-connection/) option.
 
+For more information on the API endpoints available for this data source, refer to their official [Salesforce-reports API documentation](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_defining_remote_access_applications.htm) 
+
 #### Additional information
 <table width="600">
 <tr>

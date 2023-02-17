@@ -331,7 +331,7 @@ Type while creating the data source needs to be influxdb.
 #### For creating connection:
 
 ``` json
-"Connection": [
+"Connection":
 {
 "Servername": "string",
 "Port": "string",
@@ -357,13 +357,12 @@ Type while creating the data source needs to be influxdb.
 "Expression" :  "UPPER(string expression)"
 }]
 }
-]
 ```
 
 #### For editing connection:
 
 ``` json
-"Connection": [
+"Connection":
 {
 "Servername": "string",
 "Port": "string",
@@ -392,13 +391,12 @@ Type while creating the data source needs to be influxdb.
 "Action": "delete"
 }]
 }
-]
 ```
 
 ### Connection Sample for Code View Mode
 
 ``` json
-"Connection": [
+"Connection":
 {
 "Servername": "string",
 "Port": "string",
@@ -423,7 +421,6 @@ Type while creating the data source needs to be influxdb.
 "Expression" :  "UPPER(string expression)"
 }]
 }
-]
 ```
 
 ## Related links

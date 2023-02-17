@@ -84,6 +84,8 @@ Replace it in the URL to query a particular opportunity:
 
 [https://api.infusionsoft.com/crm/rest/v1/opportunities/&lt;:opportunity_id&gt;](https://api.infusionsoft.com/crm/rest/v1/opportunities/%3c:opportunity_id%3e)
 
+For more information on the API endpoints available for this data source, refer to their official [API Documentation](https://developer.infusionsoft.com/docs/rest/)
+
 ### Sample queries
 **Campaigns**
 

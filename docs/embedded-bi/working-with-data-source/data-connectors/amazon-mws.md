@@ -90,6 +90,8 @@ Period of time before next refresh call is triggered. This will automatically tr
 
 3. You can prepare a custom URL using the [Amazon Scratchpad] [https://docs.developer.amazonservices.com/en_UK/scratchpad/Scratchpad_Using.html](https://docs.developer.amazonservices.com/en_UK/scratchpad/Scratchpad_Using.html)
 
+For more information on the API endpoints available for this data source, refer to their official [API Documentation]( http://docs.developer.amazonservices.com/en_US/dev_guide/index.html)
+
 ### Preview and data import
 * Click **Preview & Connect** to connect with the configurations set.
 * The Choose Schema(s) dialog opens. The schema represents the key fields of JSON data retrieved from the Amazon MWS Rest API request. This dialog displays a list of schemas in the treeview and its corresponding values in the grid for preview. Select required schema(s) from the treeview to use in designer and click **Connect**.

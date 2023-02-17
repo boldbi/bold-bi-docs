@@ -67,6 +67,8 @@ Replace it in the URL to query a particular payment:
 
 [https://api.sendgrid.com/v3/suppression/blocks/&lt;:email_id&gt;](https://api.sendgrid.com/v3/suppression/blocks/%3c:email_id%3e)
 
+For more information on the API endpoints available for this data source, refer to their official [API Documentation]( https://sendgrid.com/docs/API_Reference/api_getting_started.html)
+
 ### Sample queries
 **List all Categories**
 

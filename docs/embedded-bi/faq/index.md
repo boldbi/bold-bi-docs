@@ -225,3 +225,7 @@ The following are the frequently asked questions in Bold BI Enterprise:
 [How to hide release alert banner in Bold BI](/embedded-bi/faq/how-to-hide-release-alert-banner-in-bold-bi-application/)
 
 [How to hide sample dashboards option in Bold BI](/embedded-bi/faq/how-to-hide-sample-dashboards-option-in-bold-bi-application/)
+
+[How to deploy a Bold BI with N windows servers using load balancer](/embedded-bi/faq/how-to-deploy-bold-bi-using-load-balancer-with-n-windows-servers/)
+
+[How to apply widget filters using both initial rendering and on-demand in embedding](/embedded-bi/faq/how-to-apply-widget-filters-using-both-initialrendering-and-ondemand-in-embedding/)

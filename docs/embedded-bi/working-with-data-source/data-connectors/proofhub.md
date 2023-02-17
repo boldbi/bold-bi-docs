@@ -69,6 +69,8 @@ Period of time before next refresh call is triggered. This will automatically tr
 
 `https://<:company_name>.proofhub.com/api/v3/projects`
 
+For more information on the API endpoints available for this data source, refer to their official [API Documentation](https://github.com/ProofHub/api_v3)
+
 ### Sample queries
 
 **categories**

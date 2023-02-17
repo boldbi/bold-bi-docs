@@ -1693,6 +1693,41 @@ var dashboard = BoldBI.create({
 dashboard.loadDashboard();
 ```
 
+<h3 class="doc-prop-wrapper" id="localesettingsapplocale" data-Path="localesettingsapplocale-localesettings.applocale">
+<a href="#localesettingsapplocale" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+</svg>
+</a><span class='doc-prop-name'>localeSettings.appLocale</span>
+
+<span class="doc-prop-type"> `string`
+</span>
+
+</h3>
+
+    
+This property holds the values that will be passed to the dashboard in order to change the language of dashboard. This can also be done in dashboard designer, data source, widget.
+
+<br>
+
+**Default value** 
+
+<li>en-US</li><br>
+
+Before setting the language to the dashboard in embedding level, you should have or generate respective language localization file in your Bold BI Server installed location. Please refer  [here](https://help.boldbi.com/embedded-bi/localization/latest/#add-a-new-localization) to generate new locale file. Then, you can able to change the language by using the `appLocale` API in embedding level.
+
+**Example** 
+> **Note** For setting fr-FR language in embedding, I have generated respective locale file in the Bold BI Server installed location.
+```js
+var dashboard = BoldBI.create({
+     localeSettings:{
+          appLocale: "fr-FR",
+     }
+});
+dashboard.loadDashboard();
+```
+
+
 ## pinboardSettings
 
 <h3 class="doc-prop-wrapper" id="pinboardsettingsenablepinboardheader" data-Path="pinboardsettingsenablepinboardheader-pinboardSettings.enablePinboardHeader">
@@ -1959,6 +1994,6 @@ dashboard.loadDesigner();
 ```
 
 > **NOTE:**
-1. If the `categoryName` already exists, the predefined widgets were added to that category.
-2. If the `categoryName` not exists in the panel, the widgets were added by creating a new category with the given name.
-3. Otherwise, by default, the widgets were added to the `Miscellaneous` category.
+> 1. If the `categoryName` already exists, the predefined widgets were added to that category.
+> 2. If the `categoryName` not exists in the panel, the widgets were added by creating a new category with the given name.
+> 3. Otherwise, by default, the widgets were added to the `Miscellaneous` category.

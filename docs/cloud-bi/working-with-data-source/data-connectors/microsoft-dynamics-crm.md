@@ -92,6 +92,12 @@ Replace it in the URL,
 
 [https://sampleorg.crm.dynamics.com/api/data/v9.0/teams](https://sampleorg.crm.dynamics.com/api/data/v9.0/teams)
 
+For more information on the API endpoints available for this data source, refer to their official:
+  
+  Microsoft dynamic sales [API Documentation]( https://docs.microsoft.com/en-us/dynamics365/customer-engagement/web-api/about?view=dynamics-ce-odata-9)
+
+  Microsoft dynamic service [API Documentation](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/web-api/about?view=dynamics-ce-odata-9)
+
 #### Sample queries
 **Teams**
 

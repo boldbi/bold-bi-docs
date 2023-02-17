@@ -133,3 +133,5 @@ You can edit, delete and re-authorize this account from the **Connected Accounts
 [Google Ads Limitations to build query](https://developers.google.com/analytics/devguides/reporting/core/v3/reference#largeDataResults)
 
 [Google Ads Integration](https://www.boldbi.com/integrations/google-ads?utm_source=syncfusion&utm_medium=documentation&utm_campaign=boldbigoogleadsintegration)
+
+[Monitoring Ad Performance in a Google Ads Dashboard](https://www.boldbi.com/blog/monitoring-ad-performance-in-a-google-ads-dashboard)

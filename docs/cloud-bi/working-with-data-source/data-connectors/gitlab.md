@@ -81,6 +81,8 @@ Replace it in the URL to query a particular user's projects:
 
 [https://&lt;:your_gitlab_domain&gt;.com/api/v4/users/&lt;:user_id&gt;/projects](https://%3c:your_gitlab_domain%3e.com/api/v4/users/%3c:user_id%3e/projects)
 
+For more information on the API endpoints available for this data source, refer to their official [API Documentation]( https://docs.gitlab.com/ee/api/)
+
 ### Sample queries
 **List all Pipelines of specific Project**
 

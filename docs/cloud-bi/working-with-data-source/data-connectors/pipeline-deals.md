@@ -67,6 +67,8 @@ Replace it in the URL to query a particular payment:
 
 [https://api.pipelinedeals.com/api/v3/deals/&lt;:deal_id&gt;.json?api_key=iurhuashi65wGF](https://api.pipelinedeals.com/api/v3/deals/%3c:deal_id%3e.json?api_key=iurhuashi65wGF) 
 
+For more information on the API endpoints available for this data source, refer to their official [API Documentation](https://app.pipelinedeals.com/api/docs)
+
 ### Sample queries
 **List of Calendar Events**
 

@@ -14,6 +14,8 @@ You can explore the installation and deployment of Enterprise BI in the detail b
 
 [Prerequisites](/embedded-bi/setup/deploying-in-windows/prerequisites-windows/)
 
+[Recommended System Configuration](/embedded-bi/setup/deploying-in-windows/recommended-system-configuration/)
+
 [Installation and Deployment](/embedded-bi/setup/deploying-in-windows/installation-and-deployment/)
 
 [Version Upgrade](/embedded-bi/setup/deploying-in-windows/upgrade-to-latest/)

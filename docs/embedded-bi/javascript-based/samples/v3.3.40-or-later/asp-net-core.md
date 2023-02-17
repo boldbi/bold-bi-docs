@@ -8,13 +8,13 @@ documentation: ug
 
 # Bold BI Dashboards Embedding in ASP.NET Core Sample with Embedded SDK
 
-A link has been provided to [download](https://onpremise-demo.boldbi.com/getting-started/asp-net-core-v3.3/sample.zip) the sample application, which demonstrates the dashboard rendering with the list of dashboards available in your Bold BI server and followed by steps to create new embedding application in the `ASP.NET Core` on your own.
+A GitHub link has been provided to [get](https://github.com/boldbi/aspnet-core-sample) he sample application, which demonstrates dashboard rendering with a list of dashboards available in your Bold BI server and is followed by steps to create a new embedding application in the `ASP.NET Core` on your own.
 
 > **NOTE:** The best way to get started would be reading the [Getting Started](/embedded-bi/javascript-based/getting-started/) section of the documentation to start using first. The `Getting Started` guide gives you enough information that you need to know before working on the sample.  
 
 ## How to run the sample
 
-1. Please [download](https://onpremise-demo.boldbi.com/getting-started/asp-net-core-v3.3/sample.zip) the ASP.NET Core sample.  
+1. Please [get](https://github.com/boldbi/aspnet-core-sample) the ASP.NET Core sample.  
 
 2. In the ASP.NET Core sample, you can find the `EmbedProperties` class file in the Models folder.
 ![Embed Properties](/static/assets/embedded/javascript/sample/images/prop-core.png)

@@ -43,13 +43,8 @@ dashboard.loadDashboard();
     
 **Requires**
      
-* module:`jquery-1.10.2.min.js`
-  
-* module:`jquery.easing.1.3.min.js` 
 
-* module:`jsrender.1.0.5.min.js` 
-
-* module:`embed-js.min.js`
+* module:`boldbi-embed.js`
 
 In this section, public API's details with code snippets are mentioned.
 

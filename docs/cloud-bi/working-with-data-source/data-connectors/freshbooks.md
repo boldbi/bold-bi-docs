@@ -88,6 +88,8 @@ Replace it in the URL to query a particular group:
 
 `https://api.freshbooks.com/accounting/account/<:account_id>/items/items`
 
+For more information on the API endpoints available for this data source, refer to their official [API Documentation](https://www.freshbooks.com/api/start)
+
 #### Sample queries
 **Invoices**
 

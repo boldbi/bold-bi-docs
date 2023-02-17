@@ -70,6 +70,8 @@ Replace it in the URL to query particular conversations:
 
 `https://api.hubapi.com/crm/v3/objects/deals/<:dealId>?hapikey=<:yourhapikey>`
 
+For more information on the API endpoints available for this data source, refer to their official [API Documentation]( https://developers.hubspot.com/docs)
+
 ### Sample queries
 
 **All Companies**

@@ -556,5 +556,5 @@ Enter the data source connection string as JSON format in the Custom Attribute w
 
 ![Custom Attribute Configuration with Dynamic Connection String](/static/assets/embedded/iFrame-based/images/custom-attribute-configuration-with-dynamic-connection-string.png)
 
-Please refer the below help document for configuration of Custom Attribute click <a href="embedded-bi/working-with-data-source/configuring-custom-attribute/">here.</a> 
+Please refer the below help document for configuration of Custom Attribute click [here](https://help.boldbi.com/embedded-bi/working-with-data-source/configuring-custom-attribute/).
  

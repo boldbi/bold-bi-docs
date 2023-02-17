@@ -75,6 +75,8 @@ Period of time before next refresh call is triggered. This will automatically tr
 
 > **NOTE:**  Add additional parameters in URL based on endpoint to summarize data based on date (e.g.start/from, to). Refer [GoSquared Documentation](https://www.gosquared.com/docs/api/).
 
+For more information on the API endpoints available for this data source, refer to their official [API Documentation]( https://www.gosquared.com/docs/api/)
+
 ### Sample queries
 **List of currently running Campaigns**
 

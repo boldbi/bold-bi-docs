@@ -85,6 +85,8 @@ Replace it in the URL to query a particular account details:
 
 `https://www.googleapis.com/adsense/v1.4/accounts/<:account_Id>`
 
+For more information on the API endpoints available for this data source, refer to their official [API Documentation](https://developers.google.com/adsense/management/v1.4/reference/)
+
 ### Sample queries
 **List of all accounts**
 
@@ -136,3 +138,5 @@ You can edit, delete and re-authorize this account from the **Connected Accounts
 [Google AdSense Report Limits](https://developers.google.com/adsense/management/appendix/limits#report)
 
 [Google AdSense Integration](https://www.boldbi.com/integrations/google-adsense?utm_source=syncfusion&utm_medium=documentation&utm_campaign=boldbigoogleadsenseintegration)
+
+[How to set up OAuth 2.0 authorization to access Google applications in Bold BI](https://www.boldbi.com/kb/security/how-to-set-up-oauth2-authorization-to-access-google-applications)

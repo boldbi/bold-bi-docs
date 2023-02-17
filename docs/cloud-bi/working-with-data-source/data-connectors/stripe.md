@@ -76,6 +76,8 @@ Replace it in the URL to query a particular payment:
 
 [https://api.stripe.com/v1/payment_intents/&lt;:payment_intents_id&gt;](https://api.stripe.com/v1/payment_intents/%3c:payment_intents_id%3e)
 
+For more information on the API endpoints available for this data source, refer to their official [API Documentation](https://stripe.com/docs/api)
+
 ### Sample queries
 **Charges**
 

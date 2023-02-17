@@ -561,7 +561,7 @@ Through the REST API, only the **live mode** data source can be created and edit
 #### For creating connection:
 
 ``` json
-"Connection": [
+"Connection":
 {
 "Servername": "string",
 "IntegratedSecurity": "false",
@@ -588,13 +588,12 @@ Through the REST API, only the **live mode** data source can be created and edit
 "Expression" :  "UPPER(string expression)"
 }]
 }
-]
 ```
 
 #### For editing connection:
 
 ``` json
-"Connection": [
+"Connection":
 {
 "Servername": "string",
 "IntegratedSecurity": "false",
@@ -624,7 +623,6 @@ Through the REST API, only the **live mode** data source can be created and edit
 "Action": "delete"
 }]
 }
-]
 ```
 
 > **NOTE:**  Through Rest API, the data source can be created or edited with only one table. If different table is provided in edit data source, the table will be replaced. The widgets will be retained only if the schema is same as the previous table.
@@ -632,7 +630,7 @@ Through the REST API, only the **live mode** data source can be created and edit
 ### Connection Sample for Code View Mode
 
 ``` json
-"Connection": [
+"Connection":
 {
 "Servername": "string",
 "IntegratedSecurity": "false",
@@ -658,7 +656,6 @@ Through the REST API, only the **live mode** data source can be created and edit
 "Expression" :  "UPPER(string expression)"
 }]
 }
-]
 ```
 
 ## Related Links
@@ -671,3 +668,5 @@ Through the REST API, only the **live mode** data source can be created and edit
 [Microsoft SQL Server Integration](https://www.boldbi.com/integrations/microsoft-sql-server?utm_source=syncfusion&utm_medium=documentation&utm_campaign=boldbimssqlserverintegration)
 
 [Blog Post](https://www.boldbi.com/blog/sales-dashboard-example-with-microsoft-sql-server-database-using-bold-bi)
+
+[How to connect SQL Server with different port number in a dashboard](https://www.boldbi.com/kb/faq/how-to-connect-sql-server-with-different-port-number-in-a-dashboard)

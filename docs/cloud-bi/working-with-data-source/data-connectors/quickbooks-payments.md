@@ -90,6 +90,8 @@ Replace it in the URL to query a particular account:
 
    `https://api.intuit.com/quickbooks/v4/customers/<:id>/bank-accounts/<:bankaccount_id>`
 
+For more information on the API endpoints available for this data source, refer to their official [API Documentation](https://developer.intuit.com/app/developer/qbpayments/docs/api/resources/all-entities/bankaccounts)
+
 ### Sample queries
 **Get all bank accounts associated with a customer**
 

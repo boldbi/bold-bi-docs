@@ -117,6 +117,8 @@ Period of time before next refresh call is triggered. This will automatically tr
 
       Sample JQL: `project = weather`
 
+For more information on the API endpoints available for this data source, refer to their official [API Documentation](https://developer.atlassian.com/docs/)
+
 ### Sample JQL queries
 
 **List tasks based on status modified**

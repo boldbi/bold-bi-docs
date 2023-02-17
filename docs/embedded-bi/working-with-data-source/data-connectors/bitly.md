@@ -86,6 +86,8 @@ Replace it in the URL to query a particular group:
 
 [https://api-ssl.bitly.com/v4/groups/&lt;:group_guid&gt;/bitlinks](https://api-ssl.bitly.com/v4/groups/%3c:group_guid%3e/bitlinks)
 
+For more information on the API endpoints available for this data source, refer to their official [API Documentation](https://dev.bitly.com/v4_documentation.html)
+
 ### Sample queries
 **Bitlinks**
 

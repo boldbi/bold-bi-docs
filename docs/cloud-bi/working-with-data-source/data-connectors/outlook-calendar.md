@@ -86,6 +86,8 @@ Replace it in the URL to query *Events* of particular calendar object:
 
 [https://graph.microsoft.com/v1.0/me/calendars/calendar_id/events](https://graph.microsoft.com/v1.0/me/calendars/calendar_id/events)
 
+For more information on the API endpoints available for this data source, refer to their official [API Documentation](https://developer.microsoft.com/en-us/graph/docs/api-reference/v1.0/resources/event)
+
 ### Sample queries
 **List Calendar Groups**
 

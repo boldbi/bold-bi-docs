@@ -65,6 +65,8 @@ Replace it in the URL to query a particular conversations:
 
 `http://<yourhostname>/SearchSvc/CVWebService.svc/Schedules?clientId=<:client_id>`
 
+For more information on the API endpoints available for this data source, refer to their official [API Documentation](https://documentation.commvault.com/commvault/v11/article?p=45540.htm)
+
 ### Sample queries
 
 **All Clients**

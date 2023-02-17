@@ -64,6 +64,8 @@ Replace it in the URL to query particular member:
 
 `https://api.trello.com/1/members/<:id>?key=<:yourapikey>&token=<:yourapitoken>`
 
+For more information on the API endpoints available for this data source, refer to their official [API Documentation](https://developer.atlassian.com/cloud/trello/guides/rest-api/api-introduction/)
+
 ### Sample Endpoint
 
 **All Emoji**

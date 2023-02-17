@@ -86,6 +86,8 @@ Replace it in the URL to query a particular site details:
 
 `https://www.googleapis.com/webmasters/v3/sites/<:siteUrl>/sitemaps`
 
+For more information on the API endpoints available for this data source, refer to their official [API Documentation](https://developers.google.com/webmaster-tools/search-console-api-original/v3/parameters)
+
 ### Sample queries
 **SiteMaps**
 
@@ -125,3 +127,5 @@ You can edit, delete and re-authorize this account from the **Connected Accounts
 [Google Search Console Limitations](https://developers.google.com/webmaster-tools/search-console-api-original/v3/limits)
 
 [Google Search Console Integration](https://www.boldbi.com/integrations/google-search-console?utm_source=syncfusion&utm_medium=documentation&utm_campaign=boldbigooglesearchconsoleintegration)
+
+[How to set up OAuth 2.0 authorization to access Google applications in Bold BI](https://www.boldbi.com/kb/security/how-to-set-up-oauth2-authorization-to-access-google-applications)

@@ -94,6 +94,8 @@ LinkedIn provides two dedicated [test organizations](https://docs.microsoft.com/
 
 [https://www.linkedin.com/company/devtestco](https://www.linkedin.com/company/devtestco)
 
+For more information on the API endpoints available for this data source, refer to their official [API Documentation](https://docs.microsoft.com/en-us/linkedin/)
+
 #### Sample queries
 
 **Organization**
