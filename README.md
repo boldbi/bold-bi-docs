@@ -1,38 +1,44 @@
-
 # Bold BI Documentation
 
-This repository contains the source code of the Bold BI [documentation](https://help.boldbi.com/).
+This repository contains the source code of the Bold BI documentation.
+
+* [Production Site](https://help.boldbi.com/)
+* [Development Site](https://staginghelp.boldbi.com/)
 
 # Table of Contents
 
 * [Prerequisites](#prerequisites)
 * [Setup the Application for Local Environment](#setup-the-application-for-local-environment)
-* [Generate Assets for Production Environment](#generate-assest-for-production-environment)
+* [CI Validations](#ci-validations)
 * [File Structure](#file-structure)
-* [Markdown Guidelines](#markdown-guidelines)
+* [Important Markdown Guidelines](#important-markdown-guidelines)
+* [General Markdown Syntax Reference](#general-markdown-syntax-reference)
 
 # Prerequisites
 
 Bold BI documentation was built on [Gatsby](https://www.gatsbyjs.org/) application.
 
 ## Node.js Installation
-Make sure to install [Node.js](https://nodejs.org/en/blog/release/v10.18.0/) `v10` series(This version of `nodejs` supports all the `Gatsby` plugin which is used in our application, higher version may not be supported all the plugins.) in your machine and run `node -v` to check whether it is installed properly or not.
+Make sure to install [Node.js](https://nodejs.org/en/blog/release/v16.17.0/) `v16` series(This version of `nodejs` supports all the `Gatsby` plugin which is used in our application, higher version may not be supported all the plugins.) in your machine and run `node -v` to check whether it is installed properly or not.
 
 ## Gulp Installation
-Install `gulp` package with global access and the version should be `v3.9.1` and then run `gulp -v` to check whether it is installed properly or not.
+Install `gulp` package with global access and the version should be `v4.0.2` and then run `gulp -v` to check whether it is installed properly or not.
 
 **To Run:**
 
   ```cmd
-   npm install  gulp@3.9.1 -g
+   npm install  gulp@4.0.2 -g
   ```
+## Python Installation
+Download and install [`python`](https://www.python.org/downloads/windows/) package.
+
 ## Gatsby Installation
 Install `gatsby-cli` package with global access to build and serve the application.
 
 **To Run:**
 
   ```cmd
-   npm install gatsby-cli@2 -g
+   npm install gatsby-cli@4.24.0 -g
   ```
 
 # Setup the Application for Local Environment
@@ -63,23 +69,41 @@ Run the below command to serve the application. After running the command, Navig
   ```cmd
     gulp serve
   ```
+# CI Validations
+Once we done the setup for local environment, we can follow the below commands to check the validations. Also, explained the solutions for the commonly raised validation errors.
 
-# Generate Assets for Production Environment
-
-Run the below command to generate publish assets and it will be generated in `public` folder. We can use this to launch the help documentation site.
+* Run the below command to test typo error.
 
 **To Run:**
 
   ```cmd
-    gulp production-build
+    gulp typo
+  ```
+  **Note:** This task will throw an error on using custom words like `dll, localhost`. For that, we need to include these words (need to have valid reason for using these custom names) in `spelling` file.
+
+* Run the below command to test file name validation.
+
+**To Run:**
+
+  ```cmd
+    gulp file-validation
+  ```
+  **Note:** This task will throw error on using custom file names. For that, we need to include these names(need to have valid reason for using these custom names) in `customNames` array in `config.json` file.
+
+* Run the below command to test seo validation.
+
+**To Run:**
+
+  ```cmd
+    gulp seo-validation
   ```
 
-To host the application other than root, we can pass the `--prefix-paths`. If this flag is not passed, Gatsby will ignore your `pathPrefix` and build the site as if hosted from the root domain.
+* Run the below command to test all the typo error, seo validation and file name validation.
 
 **To Run:**
 
   ```cmd
-    gulp production-build --prefix-paths
+    gulp test
   ```
 
 # File Structure
@@ -92,13 +116,13 @@ Refer the below document folder structure,
     --> docs (1)
         --> cloud-bi (2)
             --> getting-started 
-                --> bold-bi-walk-through.md
+                --> quick-start.md
                 --> index.md
             --> index.md (4)
             --> summary.json (5)
         --> embedded-bi (3)
             --> getting-started 
-                --> bold-bi-walk-through.md
+                --> quick-start.md
                 --> index.md
             --> index.md (4)
             --> summary.json (5)
@@ -124,14 +148,35 @@ Image should be placed in this location `\static\assets\`. Same document folder 
 
 Swagger files should be placed in **api** folder and its respective index files should be placed in respective platform folders. Refer the *rest-api-reference* folder in `\api\cloud-bi\rest-api-reference` and `\docs\cloud-bi\rest-api-reference`.
 
+# Important Markdown Guidelines
+
+## File naming Convention:
+* All files should have `.md` extension.
+* Phrase title and description in a way that users can determine what questions the text will answer, and material that will be addressed, without reading the content. This eases the time spent looking for answers, and improvises search/scanning, and possibly **SEO**.
+
+> For example, at the top section of each MD file,
+
+> **title:** Dashboard Migration Utility - Embedded | Bold BI Learning
+
+> **description:** Learn how to migrate the classic platform dashboards and data sources into Bold BI Embedded supported formats using migration utility.
+
+## Canonical Path update for duplicated files
+
+* For duplicated files, we should add `canonical` path (original file path). 
+
+For example, `Migration Utility` support presents in both Cloud and Embedded BI Platform. So we need to add the `migration-utility` file in both platform folders(\docs\cloud-bi\migration-utility & \docs\embedded-bi\migration-utility). In this file, same details will be given. So need to add original file path in canonical tag like below in duplicated file.
+
+> **canonical:** "/cloud-bi/migration-utility/"
+
 ## Notes and Important Style
 
 To add the notes and important type of predefined blockquote use the below syntax,
 
 **Syntax** : `> **NOTE:** [Content]` and `> **IMPORTANT:** [Content]`
 
-# Markdown Guidelines
+## See Also
+[General Guidelines](/documentation-guidelines.md)
+
+# General Markdown Syntax Reference
 
 * Refer [General Markdown Syntax](https://kramdown.gettalong.org/syntax.html) here.
-
-
