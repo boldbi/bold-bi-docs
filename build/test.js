@@ -4,6 +4,7 @@ var glob = require('glob');
 var fs = require('fs');
 var shelljs = require('shelljs');
 var runSequence = require('run-sequence');
+var filevalidation=require('./file-validation.js');
 var branchName = process.env.gitlabTargetBranch;
 
 gulp.task('md-lint', function (done) {
@@ -23,7 +24,7 @@ gulp.task('md-lint', function (done) {
     });
 });
 
-gulp.task('typo', function () {
+gulp.task('typo', done => {
     // copy/paste .spelling file in .bin location
     fs.writeFileSync('./node_modules/.bin/.spelling', fs.readFileSync('./.spelling', 'utf8'));
     // goto .bin location
@@ -36,6 +37,7 @@ gulp.task('typo', function () {
     if (output.code !== 0) {
         process.exit(1);
     }
+    done();
 });
 
 gulp.task('js-lint', function () {
@@ -52,7 +54,7 @@ gulp.task('html-lint', function () {
         .pipe(htmllint({ failOnError: true }));
 });
 
-gulp.task('md-file-validation', ['toc'], function () {
+gulp.task('md-file-validation', gulp.series('toc'), function () {
     let routerData = require('./../left-toc.json').routerData;
     let routerKeys = Object.keys(routerData);
     let missedFiles = [];
@@ -99,14 +101,10 @@ gulp.task('platform-order-validation', (done) => {
     done();
 });
 
-gulp.task('ci-test', (done) => {
-    runSequence('platform-order-validation', 'redirect-validation', 'test', done);
-});
+gulp.task('test', gulp.series('typo', 'file-validation','seo-validation','js-lint', 'html-lint', function(done){
+    done();
+}));
 
-gulp.task('test', function (callback) {
-    runSequence('typo',
-        'file-validation',
-        'seo-validation',
-        ['js-lint', 'html-lint'],
-        callback);
-});
+gulp.task('ci-test', gulp.series('platform-order-validation', 'redirect-validation', 'test',function(done) {
+    done();
+}));

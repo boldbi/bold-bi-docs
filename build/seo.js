@@ -82,15 +82,15 @@ function validateDescLength(filePath) {
                 imgAltText = imgAltText + img[2] + ' ---> ' + filePath + '\n';
             }
             if (img[2] != undefined) {
-                img[2]
-                let imgFile = '.' + img[2];
+                let imgPath = img[2].split('#')[0];
+                let imgFile = '.' + imgPath;
                 if (existsSync(imgFile)) {
                     mdImage[imgFile] = true;
                     if ((statSync(imgFile).size) / 1024 > IMAGE_SIZE) {
-                        imgLargeSize = imgLargeSize + img[2] + ' ---> ' + filePath + '\n';
+                        imgLargeSize = imgLargeSize + imgPath + ' ---> ' + filePath + '\n';
                     }
                 } else {
-                    imgNotAvail = imgNotAvail + img[2] + ' ---> ' + filePath + '\n';
+                    imgNotAvail = imgNotAvail + imgPath + ' ---> ' + filePath + '\n';
                 }
 
             }
