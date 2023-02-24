@@ -1,0 +1,14 @@
+﻿{
+  "authentication": {
+    "getauthenticationdescription": "When you sign in to our application, an authentication token is provided that should be attached in the request header(Authorization) for all subsequent API calls to authenticate the requests."
+  },
+  "startup": {
+    "getstartupdescription": "Configure the Bold BI or Bold Reports application for the first time. To activate Bold BI or Bold Reports, you need an offline unlock key, and that can be obtained [here](https://www.boldbi.com/account/downloads/embedded). If you don't have access to the offline key, please create a support ticket [here](https://support.boldbi.com/create)."
+  },
+  "tenants": {
+    "gettenantsdescription": "To create, view, update, delete, and list the Bold BI/Bold Reports tenants, use the following corresponding end points."
+  },
+  "users": {
+    "getusersdescription": "To update the user password and get the list of users in the Site Administration, use the following corresponding end points."
+  }
+}
