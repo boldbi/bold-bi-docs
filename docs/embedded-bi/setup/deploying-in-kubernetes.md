@@ -46,6 +46,10 @@ The following table shows the Bold BI deployments and its usage:
 The following requirements are necessary to run the Bold BI solution.
 
 * Kubernetes cluster
+  * Node: 2
+  * CPU: 2-core.
+  * Memory: 8 GB RAM.
+  * Disk Space: 8 GB or more.
 * File storage
 * Microsoft SQL Server 2012+ | PostgreSQL | MySQL
 * Load balancer: [Nginx](https://docs.nginx.com/nginx-ingress-controller/installation/installation-with-manifests/) or [Istio](https://istio.io/latest/docs/setup/getting-started/)

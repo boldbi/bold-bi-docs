@@ -150,7 +150,7 @@ To remove the added data from fields click the highlighted cross icon.
 
 ### Data Limit
 
- * For now, the pivot grid has a limitation of data up to 10K records.
+ * For now, the pivot grid has a limitation of data up to 50K records.
 
 ## How to format pivot grid?
 

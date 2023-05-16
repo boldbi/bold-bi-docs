@@ -31,11 +31,11 @@ This section helps you to define your production system configuration based on u
  </td>
  <td>
 
-RAM - 64 GB
+RAM - 32 GB
 
-Core – 16 vCPU's  
+Core – 8 vCPU's  
 
-Disk Size – 1280 GB SSD
+Disk Size – 127 GB SSD
  </td>
  </tr>  
  <tr>
@@ -47,11 +47,11 @@ Disk Size – 1280 GB SSD
  </td>
  <td>
 
-RAM - 96 GB
+RAM - 64 GB
 
-Core – 24 vCPU's  
+Core – 16 vCPU's  
 
-Disk Size – 1600 GB SSD
+Disk Size – 127 GB SSD
  </td>
  </tr>  
  

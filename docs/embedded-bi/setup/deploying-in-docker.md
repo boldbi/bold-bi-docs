@@ -21,8 +21,8 @@ The following hardware and software requirements are necessary to run the Bold B
   * Ubuntu 20.04 LTS
   * Cent OS 7
   * Mac
-* CPU: 4-core.
-* Memory: 16 GB RAM.
+* CPU: 2-core.
+* Memory: 4 GB RAM.
 * Disk Space: 8 GB or more.
 
 ### Software requirements
@@ -34,3 +34,53 @@ The following hardware and software requirements are necessary to run the Bold B
 ## How to deploy Bold BI in Docker
 
 Please follow the [link](https://github.com/boldbi/boldbi-docker) for deploy Bold BI on `Docker` and `Docker-compose` environment.
+
+## Recommended System Configuration
+ 
+This section helps you to define your production system configuration based on users count and data size.
+ 
+ <table>
+ <tr>
+ <td>
+ <b>Concurrent Users</b>
+ </td>
+ <td>
+ <b>Data Size</b>
+ </td>
+ <td>
+ <b>System  Configuration</b>
+ </td>
+ </tr>
+ <tr>
+ <td>
+ Up to 1000 users
+ </td>
+ <td>
+ Up to 20 million records
+ </td>
+ <td>
+
+RAM - 64 GB
+
+Core - 16 vCPU's  
+
+Disk Size - 1024 GB SSD
+ </td>
+ </tr>  
+ <tr>
+ <td>
+ Up to 2000 users
+ </td>
+ <td>
+ Up to 20 million records
+ </td>
+ <td>
+
+RAM - 192 GB
+
+Core - 24 vCPU's  
+
+Disk Size - 1024 GB SSD
+ </td>
+ </tr>  
+ 

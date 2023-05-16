@@ -109,7 +109,6 @@ The Bold BI supports the following data connection types such that the structure
         </td>
 		<td align="center">Fitness Management
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/clubready/"> ClubReady</a>
-			<br> <a href="/cloud-bi/working-with-data-source/data-connectors/fitbit/"> Fitbit</a>
         </td>
 		<td align="center">Learning
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/lessonly/"> Lessonly</a>
@@ -130,6 +129,7 @@ The Bold BI supports the following data connection types such that the structure
 			<br> <a href="/cloud-bi/working-with-data-source/data-connectors/shopify/"> Shopify</a>
             <br> <a href="/cloud-bi/working-with-data-source/data-connectors/wistia/"> Wistia</a>
 			<br> <a href="/cloud-bi/working-with-data-source/data-connectors/google-ads/"> Google Ads</a>
+            <br> <a href="/cloud-bi/working-with-data-source/data-connectors/gohighlevel/"> GoHighLevel</a>
         </td>
         <td align="center">Finance
 		    <br> <a href="/cloud-bi/working-with-data-source/data-connectors/amazon-mws/"> Amazon MWS</a>

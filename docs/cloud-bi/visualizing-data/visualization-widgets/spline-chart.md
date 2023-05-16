@@ -265,12 +265,6 @@ This allows you to toggle the visibility of marker from the label to adorn each 
 
 ![Show Marker](/static/assets/cloud/visualizing-data/visualization-widgets/images/spline-chart/show-marker.png)
 
-#### Line Width
-
-This allows you to customize the width of the spline chart.
-
-![Line Width](/static/assets/cloud/visualizing-data/visualization-widgets/images/spline-chart/line-width.png)
-
 ### Show Items With No Data
 
 This allows you to show the data which column does `not` have value.
@@ -307,6 +301,36 @@ This option allows you to display the null or undefined values with the average 
 #### Page Size
 
 This option allows you to set a number of records need to be fetched on the initial load.
+
+#### Line Style
+
+Click `Customize` to open the `Custom Line Style Settings ` dialog.
+
+![Line Style](/static/assets/cloud/visualizing-data/visualization-widgets/images/spline-chart/linestyle-property.png)
+
+Now, the dialog will open as follows.
+
+![Line Style Settings Dialog](/static/assets/cloud/visualizing-data/visualization-widgets/images/spline-chart/custom-linestyle-settings-dialog.png)
+
+***Series***
+
+The default option applies to all the series in the spline chart. If you want to customize individual series, select that series by the `Series` drop-down option.
+
+***Line Style***
+
+![Line Style Type](/static/assets/cloud/visualizing-data/visualization-widgets/images/spline-chart/linestyle-type.png)
+
+To change the Line Style of the selected Series, choose the available styles such as Solid, Dot, Dash, DotDash, LongDash, and LongDashDotDot from the `Line Style` drop-down option.
+
+***Line Width***
+
+Use the Line Width option to adjust the line width for the selected series.
+
+Click `OK` to add a custom line style settings in a spline chart. Now, the chart renders as follows.
+
+![Custom Line Style Chart](/static/assets/cloud/visualizing-data/visualization-widgets/images/spline-chart/custom-linstyle-splineseries.png)
+
+> **Note:** The Line Style property is only visible if you have Line or Spline chart.
 
 ### Legend Settings
 

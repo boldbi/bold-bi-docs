@@ -12,11 +12,11 @@ Follow these steps to embed pinboard in your application.
 
 ## How to use Bold BI wrapper inside your html page
 
-1. In your `.html` page, you need to add the following Embed SDK URL in the head tag of your page.
+1. In your .html page, you need to add the following Embed SDK URL in the head tag of your page.
 
     ```js
     <head> 
-        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v5.3.53/boldbi-embed.js"></script>
+        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v6.4.6/boldbi-embed.js"></script>
     </head>
     ```
 
@@ -108,6 +108,7 @@ Follow these steps to embed pinboard in your application.
 
 > **NOTE:**  For Bold BI **v5.2.48** or lower version, you must have add the following dependent scripts and also refer the below **Embed SDK URL** of respective Bold BI version.<br />
 `https://cdn.boldbi.com/embedded-sdk/v5.2.48/embed-js.js`
+
 <meta charset="utf-8"/>
 <table>
 <thead>
@@ -139,7 +140,19 @@ Follow these steps to embed pinboard in your application.
 ```js
 <head> 
     <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v5.3.53/boldbi-embed.js"></script>
-    </head>
+</head>
+```
+
+</code></td>
+</tr>
+<tr>            
+<td><code>v6.4.6(latest)</code></td>            
+<td><code>
+
+ ```js
+<head> 
+    <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v6.4.6/boldbi-embed.js"></script>
+</head>
 ```
 
 </code></td>
@@ -153,7 +166,7 @@ Follow these steps to embed pinboard in your application.
 
 2. To create an authorization-server action method, copy the following sample in your controller. You can use the currently logged-in user email at `user@domain.com` or user name at `username`, but this user should have write access to the pinboard. 
 
-    ```js
+    ```js  
     [HttpPost]
     [Route("embeddetail/get")]
     public string GetEmbedDetails(string embedQuerString, string dashboardServerApiUrl)
@@ -186,7 +199,7 @@ Follow these steps to embed pinboard in your application.
 
 3. Add the GetSignatureUrl method, and this method would be called from the previous GetEmbedDetails action. Follow the next section to get the EmbedSecret key from Bold BI application.
 
-    ```js
+    ```js  
     public string GetSignatureUrl(string queryString)
     {
         // Get the embedSecret key from Bold BI.
@@ -208,7 +221,7 @@ In the authorization endpoint, you can pass both types of filters(Dashboard Para
 
 To pass filters to the `embed_datasource_filter` parameter in the authorization endpoint, refer to the following sample in C#(It differs based on your platform language). Here, we have to set both types of filters to the `embed_datasource_filter` property in the endpoint.
 
-```js
+```js  
 [HttpPost]
 [Route("embeddetail/get")]
 public string GetEmbedDetails(string embedQuerString, string dashboardServerApiUrl)
@@ -226,12 +239,12 @@ public string GetEmbedDetails(string embedQuerString, string dashboardServerApiU
 
     using (var client = new HttpClient())
     {
-    client.BaseAddress = new Uri(dashboardServerApiUrl);
-    client.DefaultRequestHeaders.Accept.Clear();
+        client.BaseAddress = new Uri(dashboardServerApiUrl);
+        client.DefaultRequestHeaders.Accept.Clear();
 
-    var result = client.GetAsync(dashboardServerApiUrl + embedDetailsUrl).Result;
-    string resultContent = result.Content.ReadAsStringAsync().Result;
-    return resultContent;
+        var result = client.GetAsync(dashboardServerApiUrl + embedDetailsUrl).Result;
+        string resultContent = result.Content.ReadAsStringAsync().Result;
+        return resultContent;
     }
 }
 ```
@@ -264,7 +277,7 @@ Refer to the following table for the value of the filter properties based on you
 </tbody>
 </table>
 
-> **NOTE:**  
+> **NOTE:** 
 >* Filter value should be enclosed with the square and curly brackets as mentioned above.<br />
 >* Filter value should be applied in all widgets of a pinboard, and it does not affect the particular widget.
 

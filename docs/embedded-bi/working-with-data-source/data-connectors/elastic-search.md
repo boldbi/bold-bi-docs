@@ -380,6 +380,7 @@ Through the REST API, only the **live mode** data source can be created and edit
 "Expression" :  "UPPER(string expression)"
 }]
 }
+
 ```
 
 #### For editing connection:
@@ -413,6 +414,7 @@ Through the REST API, only the **live mode** data source can be created and edit
 "Action": "delete"
 }]
 }
+
 ```
 
 ## Related links

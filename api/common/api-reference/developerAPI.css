@@ -590,9 +590,11 @@ body {
     opacity: 1;
 }
 
-.jAudhj{
-    color : #283A5F !important;
-}
-.dONVW {
+.jAudhj, .ehRoAS, .kMugIr, .dONVW, .bcRvbG blockquote, .ciuLQT button, .cpKEfw blockquote {
     color: #283A5F !important;
+}
+
+div#operation\/client_authentication .sc-iCfLBT .sc-hKwCoD .sc-gjNGvZ, div#operation\/application_startup .sc-iCfLBT .sc-hKwCoD .sc-gjNGvZ
+{
+	display: none !important;
 }

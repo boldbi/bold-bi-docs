@@ -15,13 +15,13 @@ Please refer to your operating system’s documentation for resetting the Two-Fa
 [Linux](/embedded-bi/admin-utility/reset-2fa/#linux)
 
 ## Windows
-
+   
 1. Open the command prompt and change the directory to the admin utility location.  
 ~~~
 cd C:\BoldServices\utilities\adminutils
 ~~~
 ![command](/static/assets/embedded/admin-utility/images/reset2fa-path.png)
-
+ 
 2. After changing the directory, please run the following command to reset the Two Factor Authentication.  
 ~~~
 Syncfusion.Server.Commands.Utility.exe reset2fa -u 'user email or username here'
@@ -31,13 +31,13 @@ Syncfusion.Server.Commands.Utility.exe reset2fa -u 'user email or username here'
 3. Once the Two-Factor Authentication has been reset successfully, the user can log in without Two Factor Authentication.
 
 ## Linux
-
+  
 1. Change the directory to the admin utility location.  
 ~~~
 cd /var/www/bold-services/application/utilities/adminutils/
 ~~~
 ![command linux](/static/assets/embedded/admin-utility/images/reset2fa-linux.png)
-
+ 
 2. After changing the directory, please run the following command to reset the Two-Factor Authentication.
 ~~~
 ../../../dotnet/dotnet Syncfusion.Server.Commands.Utility.dll reset2fa -u 'user email or username here'

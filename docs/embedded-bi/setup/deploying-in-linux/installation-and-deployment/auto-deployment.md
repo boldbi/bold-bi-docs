@@ -97,34 +97,29 @@ documentation: ug
 
 2. Download the Bold BI Linux package by running the following command.
 
-    ~~~shell
+    ~~~cmd
     sudo wget {Bold BI Linux package link}
     ~~~
 
 3. Extract the zip file.
 
-    ~~~shell
+    ~~~cmd
     sudo unzip {Bold BI Linux package zip file}
     ~~~ 
 
 4. Change the directory to the `BoldBIEnterpriseEdition-Linux` by running the following command. 
 
-    ~~~shell
+    ~~~cmd
     cd BoldBIEnterpriseEdition-Linux
     ~~~ 
 
-5. Execute the following command to deploy Bold BI in your Linux machine with and without branding.
+5. Execute the following command to deploy Bold BI in your Linux machine.
 
-   <b>with branding deployment</b>
  
-    ~~~shell
+    ~~~cmd
     sudo bash install-boldbi.sh -i {new} -u {user} -h {host URL} -n {true} -license {License Key} -databasetype {databasetype} -databasehost {Database server name} -databaseport {database port} -maintaindb {default database} -databaseuser {database username} -databasepwd {database password} -databasename {database name} -email {email address} -emailpwd {Password} -mainlogo {main logo} -loginlogo {login logo} -emaillogo {email logo} -favicon {header logo} -footerlogo {footer logo} -sitename {site name} -siteidentifier {site identifier}
     ~~~
 
-    <b>without branding deployment</b>
-    ~~~shell
-    sudo bash install-boldbi.sh -i {new} -u {user} -h {host URL} -n {true or false} -license {License Key} -databasetype {databasetype} -databasehost {Database server name} -databaseport {database port} -maintaindb {default database} -databaseuser {database username} -databasepwd {database password} -databasename {database name} -email {email address} -emailpwd {Password}
-    ~~~
 
 ### Environment Variable and It's Usage
 
@@ -161,7 +156,7 @@ The following variable is necessary to configure a startup application on the ba
        Yes 
       </td>
       <td>
-        Specify the user or group that manages the service. Please ensure that this user exists in your Linux server.
+        Installation type - Specifies either it is a new or upgrade installation.
       </td>
     </tr>
     <tr>
@@ -326,7 +321,7 @@ The following variable is necessary to configure a startup application on the ba
        <b>footerlogo</b>
       </td>
       <td>
-       No
+       Yes
       </td>
       <td>
       If you want to upload the custom image as a logo of the site, you can use these variables. If this environment variable is not present, Bold BI will use its default logo.<br /><br /> Type : URL <br /> <br /> Example : https://cdn.boldbi.com/wp/pages/boldbi-header-menu-logo.svg <br /> <br /> Format : png, svg, jpg, jpeg <br /> <br /> <b>Note:</b> Enter the image URL for all the variables. If the value is given to any of the variables, you must consider other variables also a required field.
@@ -337,7 +332,7 @@ The following variable is necessary to configure a startup application on the ba
        <b>sitename</b> 
       </td>
       <td>
-       No
+       Yes
       </td>
       <td>
       If you want to customize the site name, enter the site name as a value. The default site name is <b> Bold BI Enterprise Dashboards</b>
@@ -348,7 +343,7 @@ The following variable is necessary to configure a startup application on the ba
        <b>siteidentifier</b> 
       </td>
       <td>
-       No
+       Yes
       </td>
       <td>
       If you want to customize the identifier name, enter the identifier name as a value. The default identifier name is <b>site1</b>
@@ -358,6 +353,6 @@ The following variable is necessary to configure a startup application on the ba
 
 Example for silent installation,
 
-~~~shell 
+~~~cmd 
 sudo bash install-boldbi.sh -i new -u root -h http://linux.example.com -n true -license Bold_BI_license_key -databasetype postgresql localhost -maintaindb defaultdb -databaseuser doadmin -databasepwd boldbi@123 -databasename testing -databaseport 25060 -email admin@boldbi.com -emailpwd Admin@123 -mainlogo https://cdn.boldbi.com/wp/pages/boldbi-header-menu-logo.svg -loginlogo https://cdn.boldbi.com/wp/pages/boldbi-header-menu-logo.svg -emaillogo https://cdn.boldbi.com/wp/pages/boldbi-header-menu-logo.svg -favicon https://cdn.boldbi.com/wp/pages/boldbi-header-menu-logo.svg -footerlogo https://cdn.boldbi.com/wp/pages/boldbi-header-menu-logo.svg -sitename Autodeployment -siteidentifier Branding
 ~~~

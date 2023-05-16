@@ -8,15 +8,15 @@ documentation: ug
 
 # Bold BI Dashboards embedding in React with Go using Embedded SDK
 
-The link has been provided to [download](https://onpremise-demo.boldbi.com/getting-started/react-go-v3.3/samples.zip) he sample application, which demonstrates the dashboard rendering with the list of dashboards available in your Bold BI server and followed by steps to create a new embedding application in the `React` with `Go` on your own. 
+A GitHub link has been provided to [get](https://github.com/boldbi/react-with-go-sample) the sample application, which demonstrates the rendering of dashboard available in your Bold BI server and followed by steps to create a new embedding application in the `React` with `Go` on your own. 
 
 > **NOTE:** The best way to get started would be reading the [Getting Started](/embedded-bi/javascript-based/getting-started/) section of the documentation to start using first. The `Getting Started` guide gives you enough information that you need to know before working on the sample. 
 ## How to run the sample
 
-1. Please [download](https://onpremise-demo.boldbi.com/getting-started/react-go-v3.3/samples.zip) the React with Go Application.    
+1. Please [get](https://github.com/boldbi/react-with-go-sample) the React with Go Application.    
 
 2. Here, the React application act as a client and the Go application act as a server since we need to set the following properties in the `DashboardListing.js` file in the react app as follows.
-![Embed Properties In App Component](/static/assets/embedded/javascript/sample/images/react-go-props.png)  
+    ![Embed Properties In App Component](/static/assets/embedded/javascript/sample/images/react-go-props.png)  
     <meta charset="utf-8"/>
     <table>
       <tbody>
@@ -44,10 +44,10 @@ The link has been provided to [download](https://onpremise-demo.boldbi.com/getti
     </table>
 
 3. You could get the item id of the dashboard from the BI server. Please refer to this [link](/embedded-bi/working-with-dashboards/share-dashboards/get-dashboard-link/#get-link) and the following screenshot.  
-![Get Dashboard Id](/static/assets/embedded/javascript/sample/images/get-dashboard-id.png#max-width=55%)
+    ![Get Dashboard Id](/static/assets/embedded/javascript/sample/images/get-dashboard-id.png#max-width=55%)
 
 4. In the `main.go` of the Go application, you need to set the UserEmail and EmbedSecret properties.
-![Embed Properties](/static/assets/embedded/javascript/sample/images/react-go-main.png)
+    ![Embed Properties](/static/assets/embedded/javascript/sample/images/react-go-main.png)
 
     <meta charset="utf-8"/>
     <table>
@@ -68,28 +68,24 @@ The link has been provided to [download](https://onpremise-demo.boldbi.com/getti
 6. The dashboard can be rendered in design mode or created with the following changes in the `renderDashboard()` method.
 
     ```js
-    renderDashboard() {
-          this.dashboard= BoldBI.create({
-            serverUrl: rootUrl + siteIdentifier,
-            dashboardId: dashboardId,//Provide the item id to render it in the design mode and create a dashboard to remove this property.
-            embedContainerId: "dashboard",
-            embedType: BoldBI.EmbedType.Component,
-            environment: environment,
-            mode:BoldBI.Mode.Design,
-            width:"100%",
-            height: window.innerHeight + 'px',
-            expirationTime:100000,
-            authorizationServer: {
-                url:authorizationUrl
-            }
+      renderDashboard() {
+        this.dashboard= BoldBI.create({
+          serverUrl: rootUrl + siteIdentifier,
+          dashboardId: dashboardId, //Provide the item id to render it in the design mode and create a dashboard to remove this property.
+          embedContainerId: "dashboard",
+          embedType: BoldBI.EmbedType.Component,
+          environment: BoldBI.Environment.Enterprise, // If Cloud, you should use BoldBI.Environment.Cloud
+          mode: BoldBI.Mode.Design,
+          width:"100%",
+          height: window.innerHeight + 'px',
+          expirationTime:100000,
+          authorizationServer: {
+            url:authorizationUrl
+          }
         });
-
-        console.log(this.dashboard);
-        this.dashboard.loadDesigner();     
-          
-        }
+        this.dashboard.loadDesigner();
+      }
     ```
-
     <meta charset="utf-8"/>
     <table>
     <tbody>
@@ -123,19 +119,23 @@ The link has been provided to [download](https://onpremise-demo.boldbi.com/getti
 ## How this sample works
 
 1. Based on the `dashboardId` provided in the `DashboardListing.js`, you will authorize the server by calling the `GetEmbedDetails` function using the `AuthorizeURL(http://localhost:8086/getDetails)` with the provided `EmbedProperties` values.  
-![Get Embed Details](/static/assets/embedded/javascript/sample/images/react-go-authorize.png)
+    ![Get Embed Details](/static/assets/embedded/javascript/sample/images/react-go-authorize.png)
 
 2. In the above authorization, the `SignatureUrl` has been generated with the provided `Embed Secret key` and validated the embed details in Bold BI. Once details are validated, the dashboard starts to render.  
-![Get Signature Url](/static/assets/embedded/javascript/sample/images/react-go-signature.png)
+    ![Get Signature Url](/static/assets/embedded/javascript/sample/images/react-go-signature.png)
 
 3. In the `DashboardListing.js`, change the dashboard Id of the respective dashboard as you wish to embed. 
-![Set Dashboard Id](/static/assets/embedded/javascript/sample/images/react-go-dashboard.png)  
+    ![Set Dashboard Id](/static/assets/embedded/javascript/sample/images/react-go-dashboard.png)  
 
 ## Steps to create new React with Go application to embed dashboard
  1. Install the `nodeJS` in application using [link](https://nodejs.org/en/download/).
+
  2. Create a react application using the command `npx create-react-app my-app `. Here `my-app` is the application folder name.
+
  3. Change the directory by running the command `cd my-app`.
+
  4. Create the folder `DashboardListing`. Under this folder, create the javascript files `DashboardListing.js`.
+
  5. In the `DashboardListing.js` file, include the mandatory files and create a DOM element with the id `dashboard` to render dashboard in this container. In the `componentDidMount()`, invoke the `renderDashboard()` method as follows.
 
      ```js
@@ -146,7 +146,7 @@ The link has been provided to [download](https://onpremise-demo.boldbi.com/getti
 
       const authorizationUrl = "http://localhost:8086/getDetails"
 
-      const environment = "onpremise";
+      const environment = "enterprise";
 
       const dashboardId = "Enter dashboard id here";
       var BoldBiObj;
@@ -164,29 +164,16 @@ The link has been provided to [download](https://onpremise-demo.boldbi.com/getti
             dashboardId: dashboardId,
             embedContainerId: "dashboard",
             embedType: BoldBI.EmbedType.Component,
-            environment: environment,
+            environment: BoldBI.Environment.Enterprise, // If Cloud, you should use BoldBI.Environment.Cloud
+            mode: BoldBI.Mode.View,
             width:"100%",
             height: window.innerHeight + 'px',
             expirationTime:100000,
             authorizationServer: {
                 url:authorizationUrl
-            },
-            autoRefreshSettings: {
-                enabled: true,
-                hourlySchedule: {
-                    hours: 0,
-                    minutes: 1,
-                    seconds: 0
-                }
-
-            },
-            actionBegin:"emdbedDashboardActionBegin",
-            actionComplete:"emdbedDashboardActionComplete"
+            }
         });
-
-        console.log(this.dashboard);
-        this.dashboard.loadDashboard();     
-          
+        this.dashboard.loadDashboard();
         }
 
         render() {
@@ -210,7 +197,7 @@ The link has been provided to [download](https://onpremise-demo.boldbi.com/getti
  6. Run the command `npm install`.Once completed, run the command `npm i @boldbi/boldbi-embedded-sdk`. Once completed, import `@boldbi/boldbi-embedded-sdk` in the `DashboardListing.js`.
 
  7. Install the `Go` application with the [link](https://go.dev/dl/). Install the visual studio code extension as follows.
- ![go_install](/static/assets/embedded/javascript/sample/images/go_install.png)
+    ![go_install](/static/assets/embedded/javascript/sample/images/go_install.png)
 
  8. Create a folder in the desired location, and open it in the visual studio code. Create a file `main.go` and `launch.json`and include the following code.
 

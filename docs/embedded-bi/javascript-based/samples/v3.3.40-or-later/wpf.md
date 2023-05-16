@@ -8,13 +8,13 @@ documentation: ug
 
 # Embedding Bold BI Dashboards in WPF using the Embedded SDK
 
-The link has been provided to [download](https://onpremise-demo.boldbi.com/getting-started/wpf/sample.zip) the sample application, which demonstrates the dashboard rendering with the list of dashboards available in your Bold BI server and followed by steps to create a new embedding application in the `WPF` on your own.  
+A GitHub link has been provided to [get](https://github.com/boldbi/wpf-sample) the sample application, which demonstrates the rendering of dashboard available in your Bold BI server and followed by steps to create a new embedding application in the `WPF` on your own.  
 
 > **NOTE:** Reading the [Getting Started](/embedded-bi/javascript-based/getting-started/) section of the documentation is the best way to get started. The `Getting Started` guide gives you enough information that you need to know before working on the sample. 
 
 ## Sample to embed dashboard
 
- 1. Please [download](https://onpremise-demo.boldbi.com/getting-started/wpf/sample.zip) the WPF Forms sample .    
+ 1. Please [get](https://github.com/boldbi/wpf-sample) the WPF Forms sample .    
 
  2. You need to set the following properties in the `EmbedProperties.cs` file as follows.  
     ![Embed Properties](/static/assets/embedded/javascript/sample/images/wpf-props.png#max-width=80%)
@@ -59,9 +59,9 @@ The link has been provided to [download](https://onpremise-demo.boldbi.com/getti
             <!DOCTYPE html>
         <html><head><meta http-equiv='X-UA-Compatible' content='IE=Edge' />
         <script src='https://cdn.polyfill.io/v2/polyfill.min.js'></script>
-        <script type='text/javascript' src='https://cdn.boldbi.com/embedded-sdk/v5.3.53/boldbi-embed.js'></script>" +
+        <script type='text/javascript' src='https://cdn.boldbi.com/embedded-sdk/v6.4.6/boldbi-embed.js'></script>" +
         "<script type='text/javascript'>$(document).ready(function() " +
-        "{this.dashboard = BoldBI.create({ serverUrl:'" + EmbedProperties.RootUrl + EmbedProperties.SiteIdentifier + "', dashboardId:'" + EmbedProperties.DashboardId + "',embedContainerId: 'dashboard',embedType:'" + EmbedProperties.EmbedType + "',environment:'" + EmbedProperties.Environment + "',mode:BoldBI.Mode.Design,width: window.innerWidth - 20 + 'px',height: window.innerHeight - 20 + 'px',expirationTime: 100000,authorizationServer:{url: '', data:" + resultContent + "},dashboardSettings:{showExport: false,showRefresh: false,showMoreOption: false}});console.log(this.dashboard);this.dashboard.loadDesigner();});</script>" +
+        "{this.dashboard = BoldBI.create({ serverUrl:'" + EmbedProperties.RootUrl + EmbedProperties.SiteIdentifier + "', dashboardId:'" + EmbedProperties.DashboardId + "',embedContainerId: 'dashboard',embedType:'" + BoldBI.EmbedType.Component + "',environment:'" + BoldBI.Environment.Enterprise, /* If Cloud, you should use BoldBI.Environment.Cloud */ + "'mode: '" + BoldBI.Mode.Design + "',width: window.innerWidth - 20 + 'px',height: window.innerHeight - 20 + 'px',expirationTime: 100000,authorizationServer:{url: '', data:" + resultContent + "}});this.dashboard.loadDesigner();});</script>" +
         "</head>" +
         "<body><div id ='viewer-section'>" +
         "<div id ='dashboard'></div></div>" +
@@ -130,8 +130,10 @@ The link has been provided to [download](https://onpremise-demo.boldbi.com/getti
 
 ## Steps to create new WPF Core application to embed dashboard
  1. Open visual studio and search WPF in the search template as follows.
-  ![Create_WPF](/static/assets/embedded/javascript/sample/images/wpf_create.png#max-width=80%)
+    ![Create_WPF](/static/assets/embedded/javascript/sample/images/wpf_create.png#max-width=80%)
+
  2. Choose like the above highlighted one, then click `Next`.
+
  3. Change the project name as you want, then click `Create`.
 
  4. Create the model class `EmbedProperties.cs` and define properties as follows.
@@ -208,9 +210,9 @@ The link has been provided to [download](https://onpremise-demo.boldbi.com/getti
                 <!DOCTYPE html>
         <html><head><meta http-equiv='X-UA-Compatible' content='IE=Edge' />
         <script src='https://cdn.polyfill.io/v2/polyfill.min.js'></script>
-        <script type='text/javascript' src='https://cdn.boldbi.com/embedded-sdk/v5.3.53/boldbi-embed.js'></script>" +
+        <script type='text/javascript' src='https://cdn.boldbi.com/embedded-sdk/v6.4.6/boldbi-embed.js'></script>" +
         "<script type='text/javascript'>$(document).ready(function() " +
-        "{this.dashboard = BoldBI.create({ serverUrl:'" + EmbedProperties.RootUrl + EmbedProperties.SiteIdentifier + "', dashboardId:'" + EmbedProperties.DashboardId + "',embedContainerId: 'dashboard',embedType:'" + EmbedProperties.EmbedType + "',environment:'" + EmbedProperties.Environment + "',width: window.innerWidth - 20 + 'px',height: window.innerHeight - 20 + 'px',expirationTime: 100000,authorizationServer:{url: '', data:" + resultContent + "},dashboardSettings:{showExport: false,showRefresh: false,showMoreOption: false}});console.log(this.dashboard);this.dashboard.loadDashboard();});</script>" +
+        "{this.dashboard = BoldBI.create({ serverUrl:'" + EmbedProperties.RootUrl + EmbedProperties.SiteIdentifier + "', dashboardId:'" + EmbedProperties.DashboardId + "',embedContainerId: 'dashboard',embedType:'" + BoldBI.EmbedType.Component + "',environment:'" + BoldBI.Environment.Enterprise, /* If Cloud, you should use BoldBI.Environment.Cloud */ + "'mode: '" + BoldBI.Mode.View + "',width: window.innerWidth - 20 + 'px',height: window.innerHeight - 20 + 'px',expirationTime: 100000,authorizationServer:{url: '', data:" + resultContent + "}});this.dashboard.loadDashboard();});</script>" +
         "</head>" +
         "<body><div id ='viewer-section'>" +
         "<div id ='dashboard'></div></div>" +

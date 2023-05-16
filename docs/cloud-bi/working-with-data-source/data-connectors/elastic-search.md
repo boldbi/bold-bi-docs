@@ -380,7 +380,9 @@ Through the REST API, only the **live mode** data source can be created and edit
 "Expression" :  "UPPER(string expression)"
 }]
 }
+
 ```
+
 #### For editing connection:
 
 ``` json
@@ -412,8 +414,8 @@ Through the REST API, only the **live mode** data source can be created and edit
 "Action": "delete"
 }]
 }
-```
 
+```
 ## Related links
 [Data Transformation](/cloud-bi/working-with-data-source/transforming-data/joining-table/)
 

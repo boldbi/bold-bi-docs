@@ -353,6 +353,7 @@ Type while creating the data source needs to be influxdb.
 "Expression" :  "UPPER(string expression)"
 }]
 }
+
 ```
 
 #### For editing connection:
@@ -387,6 +388,7 @@ Type while creating the data source needs to be influxdb.
 "Action": "delete"
 }]
 }
+
 ```
 
 ### Connection Sample for Code View Mode
@@ -417,6 +419,7 @@ Type while creating the data source needs to be influxdb.
 "Expression" :  "UPPER(string expression)"
 }]
 }
+
 ```
 
 ## Related links

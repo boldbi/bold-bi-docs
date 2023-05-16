@@ -147,6 +147,9 @@ schemas
 treeview
 textbox
 BigQuery
+GoHighLevel
+HelpScout
+Campagins
 OAuth
 pre-requisites
 Analytics
@@ -1355,3 +1358,16 @@ signupsignin1
 B2C_1_
 qrcode
 subquery
+currenttable
+tablename
+specifictable
+table1
+table2
+id_web_container
+id_web_deployment
+v6.1.8
+v6.2.7
+v6.3.3
+v6.4.6
+bbix
+checkboxes

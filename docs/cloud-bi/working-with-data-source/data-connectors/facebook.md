@@ -112,3 +112,5 @@ You can edit, delete and re-authorize this account from the **Connected Accounts
 [Dashboard Designer Walkthrough](/cloud-bi/getting-started/quick-start/)
 
 [Facebook Integration](https://www.boldbi.com/integrations/facebook)
+
+[Connecting to Facebook from Syncfusion Dashboard](https://www.syncfusion.com/kb/8010/connecting-to-twitter-and-facebook-from-syncfusion-dashboard)

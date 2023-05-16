@@ -198,6 +198,8 @@
     "proofhub",
     "zoho",
     "invoice",
+    "gohighlevel",
+    "help-scout",
     "mws",
     "cdata",
     "edi",
@@ -273,6 +275,7 @@
 	"platform",
 	"webhook",
     "webhooks",
+    "web",
     "cors",
    "v5.2.48",
 	"c3",
@@ -282,9 +285,9 @@
 	"c3",
     "eks",
 	"csp",
-	"initialrendering",
-	"ondemand",
     "b2c",
-    "2fa"
+    "2fa",
+	"initialrendering",
+	"ondemand"
 	]
 }

@@ -75,3 +75,49 @@ For example, `https://onpremise-demo.boldbi.com/bi/api/site/site1/token`
   </tr>
 </table>
 
+## Site Administration REST API References
+
+Using the Site Administration REST API, you can manage and change resources in your site programmatically using HTTP. The API gives you simple access to the functionality behind the resources on your site. You can use this access to create your own custom applications or to script interactions with your site.
+
+For our application, the API path will be `https://{Domain}/api/{ApiEndpoint}`
+
+For example, `https://onpremise-demo.boldbi.com/api/token`
+
+### API Versions 
+
+<table>
+<tr>
+    <td>
+       <span style="font-weight:bold">API References</span>
+    </td>
+    <td>
+        <span style="font-weight:bold">Try It Now</span>
+    </td>
+    <td>
+        <span style="font-weight:bold">Description</span>
+     </td>
+  </tr>
+  <tr>
+    <td>
+        <a href="https://help.boldbi.com/embedded-bi/rest-api-reference/site-administration/v1.0/api-reference/">Rest API-v1.0</a>
+    </td>
+    <td>
+        <a href="https://help.boldbi.com/embedded-bi/rest-api-reference/site-administration/v1.0/try-it-now/">Try It Now-v1.0</a>
+    </td>
+    <td>
+        Configure application startup and create a tenant in your Bold BI or Bold Reports applications.
+     </td>
+  </tr>
+  <tr>
+    <td>
+        <a href="https://help.boldbi.com/embedded-bi/rest-api-reference/site-administration/v2.0/api-reference/">Rest API-v2.0</a>
+    </td>
+    <td>
+        <a href="https://help.boldbi.com/embedded-bi/rest-api-reference/site-administration/v2.0/try-it-now/">Try It Now-v2.0</a>
+    </td>
+    <td>
+        Manage your sites and users in your Bold BI or Bold Reports applications.
+     </td>
+  </tr>
+</table>
+

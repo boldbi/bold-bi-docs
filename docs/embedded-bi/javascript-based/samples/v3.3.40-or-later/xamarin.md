@@ -8,13 +8,13 @@ documentation: ug
 
 # Embedding Bold BI Dashboards in Xamarin using the Embedded SDK
 
-The link has been provided to [download](https://onpremise-demo.boldbi.com/getting-started/xamarin/sample.zip) t the sample application, which demonstrates the dashboard rendering with the list of dashboards available in your Bold BI server and followed by steps to create a new embedding application in the `Xamarin` on your own.  
+A GitHub link has been provided to [get](https://github.com/boldbi/xamarin-sample) t the sample application, which demonstrates the dashboard rendering with the list of dashboards available in your Bold BI server and followed by steps to create a new embedding application in the `Xamarin` on your own.  
 
 > **NOTE:** Reading the [Getting Started](/embedded-bi/javascript-based/getting-started/) section of the documentation is the best way to get started. The `Getting Started` guide gives you enough information that you need to know before working on the sample. 
 
 ## How to run the sample
 
- 1. Please [download](https://onpremise-demo.boldbi.com/getting-started/xamarin/sample.zip) the Xamarin Forms sample.    
+ 1. Please [get](https://github.com/boldbi/xamarin-sample) the Xamarin Forms sample.    
 
  2. You need to set the following properties in the `EmbedProperties.cs` file as follows. 
         ![Embed Properties](/static/assets/embedded/javascript/sample/images/xamarin-props.png#max-width=60%)
@@ -50,31 +50,24 @@ The link has been provided to [download](https://onpremise-demo.boldbi.com/getti
 
      ```js
         $(document).ready(function() {
-                                    this.dashboard = BoldBI.create({ 
-                                        serverUrl:""" + EmbedProperties.RootUrl + "/" + EmbedProperties.SiteIdentifier + "\","
-                                        + "dashboardId: \"" + EmbedProperties.DashboardId + "\","
-                                        + "embedContainerId: \"dashboard\","
-                                        + "embedType: \"" + EmbedProperties.EmbedType + "\","
-                                        + "environment: \"" + EmbedProperties.Environment + "\","
-                                        +"mode:\"BoldBI.Mode.Design\","
-                                        + "width: \"100%\","
-                                        + "height: \"100%\","
-                                        + @"expirationTime: 100000,
-                                        authorizationServer:
-                                        {
-                                            url: """","
-                                            + "data: " + embedAuthorizeDetails
-                                    + @"},
-                                    dashboardSettings:
-                                    {
-                                        showExport: false,
-                                        showRefresh: false,
-                                        showMoreOption: false
-                                    }
-                                });
-                                console.log(this.dashboard);
-                                this.dashboard.loadDesigner();
-                            });
+            this.dashboard = BoldBI.create({ 
+                serverUrl:""" + EmbedProperties.RootUrl + "/" + EmbedProperties.SiteIdentifier + "\","
+                + "dashboardId: \"" + EmbedProperties.DashboardId + "\","
+                + "embedContainerId: \"dashboard\","
+                + "embedType: \"" + BoldBI.EmbedType.Component + "\","
+                + "environment: \"" + BoldBI.Environment.Enterprise, /* If Cloud, you should use BoldBI.Environment.Cloud */ + "\","
+                + "mode: \"" + BoldBI.Mode.Design + "\","
+                + "width: \"100%\","
+                + "height: \"100%\","
+                + @"expirationTime: 100000,
+                authorizationServer:
+                {
+                    url: """","
+                    + "data: " + embedAuthorizeDetails
+                + @"},
+            });
+            this.dashboard.loadDesigner();
+        });
      ```
 
     <meta charset="utf-8"/>
@@ -132,10 +125,10 @@ The link has been provided to [download](https://onpremise-demo.boldbi.com/getti
 
 ## Steps to create new Xamarin application to embed dashboard
  1. Open visual studio, search for `Xamarin`, and click on `Mobile App(Xamarin.Forms)` like in the following image.
-  ![Embed Properties](/static/assets/embedded/javascript/sample/images/xamarin_create.png#max-width=80%)
+    ![Embed Properties](/static/assets/embedded/javascript/sample/images/xamarin_create.png#max-width=80%)
 
  2. Then, click `Next`, select the blank project as follows, and click `Create`.
-   ![Embed Properties](/static/assets/embedded/javascript/sample/images/xamarin_empty_project.png#max-width=60%)
+    ![Embed Properties](/static/assets/embedded/javascript/sample/images/xamarin_empty_project.png#max-width=60%)
 
  3. Create `EmbedProperties.cs` class to define the mandatory properties as follows.
 
@@ -161,7 +154,7 @@ The link has been provided to [download](https://onpremise-demo.boldbi.com/getti
 
      ```
 
- 4. Create a script folder and include the latest wrapper [file](https://cdn.boldbi.com/embedded-sdk/v5.3.53/boldbi-embed.js).
+ 4. Create a script folder and include the latest wrapper [file](https://cdn.boldbi.com/embedded-sdk/v6.4.6/boldbi-embed.js).
 
  5. Open the `MainPage.xaml.cs` file, initialize the method `GetHtmlString()` where you need to declare the html contents with scripts to render the dashboard as follows.
 
@@ -190,8 +183,9 @@ The link has been provided to [download](https://onpremise-demo.boldbi.com/getti
                                     serverUrl:""" + EmbedProperties.RootUrl + "/" + EmbedProperties.SiteIdentifier + "\","
                                     + "dashboardId: \"" + EmbedProperties.DashboardId + "\","
                                     + "embedContainerId: \"dashboard\","
-                                    + "embedType: \"" + EmbedProperties.EmbedType + "\","
-                                    + "environment: \"" + EmbedProperties.Environment + "\","
+                                    + "embedType: \"" + BoldBI.EmbedType.Component + "\","
+                                    + "environment: \"" + BoldBI.Environment.Enterprise, /* If Cloud, you should use BoldBI.Environment.Cloud */  + "\","
+                                    + "mode: \"" + BoldBI.Mode.View + "\","
                                     + "width: \"100%\","
                                     + "height: \"100%\","
                                     + @"expirationTime: 100000,
@@ -200,16 +194,9 @@ The link has been provided to [download](https://onpremise-demo.boldbi.com/getti
                                         url: """","
                                         + "data: " + embedAuthorizeDetails
                                 + @"},
-                                dashboardSettings:
-                                {
-                                    showExport: false,
-                                    showRefresh: false,
-                                    showMoreOption: false
-                                }
+                                });
+                                this.dashboard.loadDashboard();
                             });
-                            console.log(this.dashboard);
-                            this.dashboard.loadDashboard();
-                        });
                         </script>
                     </head>
                     <body style=""background-color: white;height:100%;width:100%"">
@@ -224,7 +211,8 @@ The link has been provided to [download](https://onpremise-demo.boldbi.com/getti
      ```
 
  6. The `GetEmbedDetails()` uses a method `GetSignatureUrl()` to generate the algorithm.
- In this method, the `embedQuerString`, `userEmail`, and the value from the `GetSignatureUrl()` method are appended as query parameters in the URL to get details of a particular dashboard.
+ 
+    In this method, the `embedQuerString`, `userEmail`, and the value from the `GetSignatureUrl()` method are appended as query parameters in the URL to get details of a particular dashboard.
 
      ```js
      public string GetEmbedDetails()

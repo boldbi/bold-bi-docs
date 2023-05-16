@@ -53,22 +53,22 @@ The sample has been provided in following sections for `Blazor Server` and `Blaz
 
      ```js
      $(document).ready(function () {
-            this.dashboard = BoldBI.create({
-                serverUrl: rootUrl + "/" + siteIdentifier,
-                dashboardId: dashboardId,
-                embedContainerId: "dashboard",
-                embedType: BoldBI.EmbedType.Component,
-                environment: BoldBI.Environment.Enterprise,
-                mode: BoldBI.Mode.Design,
-                width: window.innerWidth + "px",
-                height: window.innerHeight + "px",
-                expirationTime: 100000,
-                authorizationServer: {
-                    url: authorizationServerUrl
-                }
-            });
-            this.dashboard.loadDesigner();
+        this.dashboard = BoldBI.create({
+            serverUrl: rootUrl + "/" + siteIdentifier,
+            dashboardId: dashboardId,
+            embedContainerId: "dashboard",
+            embedType: BoldBI.EmbedType.Component,
+            environment: BoldBI.Environment.Enterprise, // If Cloud, you should use BoldBI.Environment.Cloud
+            mode: BoldBI.Mode.Design,
+            width: window.innerWidth + "px",
+            height: window.innerHeight + "px",
+            expirationTime: 100000,
+            authorizationServer: {
+                url: authorizationServerUrl
+            }
         });
+        this.dashboard.loadDesigner();
+    });
      ```
 
     <table>
@@ -114,9 +114,12 @@ The sample has been provided in following sections for `Blazor Server` and `Blaz
 ## Steps to create new Blazor Server Application to embed dashboard
 
  1. Start Visual Studio and click `Create a new project.`
+
  2. Choose `Blazor Server Application` (.NET Framework), then click `Next`.
-   ![SelectProject](/static/assets/embedded/javascript/sample/images/blazor_server_create.png)
+    ![SelectProject](/static/assets/embedded/javascript/sample/images/blazor_server_create.png)
+
  3. Change the project name as you want, then click `Create`. 
+
  4. Create the model classes `EmbedProperties.cs` and `EmbedClass.cs` to define the mandatory properties as follows.
 
      ```js
@@ -152,7 +155,7 @@ The sample has been provided in following sections for `Blazor Server` and `Blaz
  5. The following script is mandatory to render the dashboard. Set the `Layout = null` at the top and replace the following code in your `\Pages\_Host.cshtml` page of the `<head>` tag.
 
      ```js 
-        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v5.3.53/boldbi-embed.js"></script>
+    <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v6.4.6/boldbi-embed.js"></script>
     ```
     
  6. Inside the `<body>` tag, create the DOM element with the id `dashboard` and implement a function to render the dashboard.
@@ -171,7 +174,8 @@ The sample has been provided in following sections for `Blazor Server` and `Blaz
                 dashboardId: dashboardId,//Please provide the required dashboard Id.
                 embedContainerId: "dashboard",
                 embedType: BoldBI.EmbedType.Component,
-                environment: environment=="enterprise"? BoldBI.Environment.Enterprise:BoldBI.Environment.Cloud,
+                environment: BoldBI.Environment.Enterprise, // If Cloud, you should use BoldBI.Environment.Cloud
+                mode: BoldBI.Mode.View,
                 width: window.innerWidth + "px",
                 height: window.innerHeight + "px",
                 expirationTime: 100000,
@@ -229,7 +233,7 @@ The sample has been provided in following sections for `Blazor Server` and `Blaz
 
  ## How to run the Blazor WebAssembly sample
 
- 1. Please [download](https://onpremise-demo.boldbi.com/getting-started/blazor/blazorwebassembly.zip) the Blazor WebAssembly sample.    
+ 1. Please [get](https://github.com/boldbi/blazor-webassembly-sample) the Blazor WebAssembly sample.    
 
  2. You need to set the following properties in the `index.html` and `EmbedProperties.cs` file as follows.  
     ![Hostdetails](/static/assets/embedded/javascript/sample/images/hostdetails-blazor.png#max-width=50%)
@@ -270,22 +274,22 @@ The sample has been provided in following sections for `Blazor Server` and `Blaz
 
     ```js
      $(document).ready(function () {
-            this.dashboard = BoldBI.create({
-                serverUrl: rootUrl + "/" + siteIdentifier,
-                dashboardId: dashboardId,
-                embedContainerId: "dashboard",
-                embedType: BoldBI.EmbedType.Component,
-                environment: BoldBI.Environment.Enterprise,
-                mode: BoldBI.Mode.Design,
-                width: window.innerWidth + "px",
-                height: window.innerHeight + "px",
-                expirationTime: 100000,
-                authorizationServer: {
-                    url: authorizationServerUrl
-                }
-            });
-            this.dashboard.loadDesigner();
+        this.dashboard = BoldBI.create({
+            serverUrl: rootUrl + "/" + siteIdentifier,
+            dashboardId: dashboardId,
+            embedContainerId: "dashboard",
+            embedType: BoldBI.EmbedType.Component,
+            environment: BoldBI.Environment.Enterprise, // If Cloud, you should use BoldBI.Environment.Cloud
+            mode: BoldBI.Mode.Design,
+            width: window.innerWidth + "px",
+            height: window.innerHeight + "px",
+            expirationTime: 100000,
+            authorizationServer: {
+                url: authorizationServerUrl
+            }
         });
+        this.dashboard.loadDesigner();
+    });
     ```
     
     <meta charset="utf-8"/>
@@ -330,9 +334,11 @@ The sample has been provided in following sections for `Blazor Server` and `Blaz
 ## Steps to create new Blazor WebAssembly application to embed dashboard
 
  1. Start Visual Studio and click `Create a new project`.
+
  2. Choose `Blazor WebAssembly` (.NET Framework), then click `Next`.
-   ![SelectProject](/static/assets/embedded/javascript/sample/images/blazor_webassembly_create.png#max-width=75%)
-   ![Blazor web hosted](/static/assets/embedded/javascript/sample/images/blazor_webassembly.png#max-width=60%)
+    ![SelectProject](/static/assets/embedded/javascript/sample/images/blazor_webassembly_create.png#max-width=75%)
+    ![Blazor web hosted](/static/assets/embedded/javascript/sample/images/blazor_webassembly.png#max-width=60%)
+    
  3. Change the project name as you want, then click `Create`. 
 
  4. In the `Shared Project`, create the model classes `EmbedProperties.cs` and `EmbedClass.cs` to define the mandatory properties as follows.
@@ -357,7 +363,7 @@ The sample has been provided in following sections for `Blazor Server` and `Blaz
  5. In the `Client project`, the following scripts and style sheets are mandatory to render the dashboard. Replace the following code in your `\wwwroot\index.html` page of the `<head>` tag.
 
      ```js 
-        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v5.3.53/boldbi-embed.js"></script>
+    <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v6.4.6/boldbi-embed.js"></script>
     ```
 
  6. Inside the `<body>` tag, create the DOM element with the id `dashboard` and implement a function to render the dashboard.
@@ -369,11 +375,12 @@ The sample has been provided in following sections for `Blazor Server` and `Blaz
         var dashboardId = "c0281c29-7232-4320-bbbf-dc4e9ad540bf";
         function renderDashboard() {
             this.dashboard = BoldBI.create({
-                serverUrl: rootUrl + "/" + siteIdentifier,//Dashboard Server BI URL (ex: http://localhost:5000/bi, http://dashboard.syncfusion.com/bi)
-                dashboardId: dashboardId,//Provide the dashboard id of the dashboard you want to embed here.
+                serverUrl: rootUrl + "/" + siteIdentifier, //Dashboard Server BI URL (ex: http://localhost:5000/bi, http://dashboard.syncfusion.com/bi)
+                dashboardId: dashboardId, //Provide the dashboard id of the dashboard you want to embed here.
                 embedContainerId: "dashboard",
                 embedType: BoldBI.EmbedType.Component,
-                environment: BoldBI.Environment.Enterprise,
+                environment: BoldBI.Environment.Enterprise, // If Cloud, you should use BoldBI.Environment.Cloud
+                mode: BoldBI.Mode.View,
                 width: window.innerWidth-300 + "px",
                 height: window.innerHeight-100 + "px",
                 expirationTime: 100000,

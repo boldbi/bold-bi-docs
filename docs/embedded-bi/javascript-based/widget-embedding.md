@@ -16,7 +16,7 @@ Follow these steps to embed dashboard widget in your application.
 
     ```js
     <head> 
-        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v5.3.53/boldbi-embed.js"></script>
+        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v6.4.6/boldbi-embed.js"></script>
     </head>
     ```
 
@@ -134,13 +134,13 @@ Follow these steps to embed dashboard widget in your application.
     </tbody>
     </table>
 
-
 5. Copy the previous embedSample() function and paste in your page. You need to update your values to the properties.  
 
 > **NOTE:**  embedContainerId should be same as your div element id value.
 
 > **NOTE:**  For Bold BI **v5.2.48** or lower version, you must have add the following dependent scripts and also refer the below **Embed SDK URL** of respective Bold BI version.<br />
 `https://cdn.boldbi.com/embedded-sdk/v5.2.48/embed-js.js`
+
 <meta charset="utf-8"/>
 <table>
 <thead>
@@ -169,9 +169,21 @@ Follow these steps to embed dashboard widget in your application.
 <td><code>v5.3.53</code></td>            
 <td><code>
 
- ```js
+```js
 <head> 
     <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v5.3.53/boldbi-embed.js"></script>
+</head>
+```
+
+</code></td>
+</tr>
+<tr>            
+<td><code>v6.4.6(latest)</code></td>            
+<td><code>
+
+ ```js
+<head> 
+    <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v6.4.6/boldbi-embed.js"></script>
 </head>
 ```
 
@@ -182,11 +194,10 @@ Follow these steps to embed dashboard widget in your application.
 
 ## How to get widget ID
 
-1. We have REST API for retrieving all the widgets of the specific dashboard,
- `https://localhost:[portno]/bi/api/site/site1/v4.0/dashboards/{dashboardId}/widgets`, `dashboardId` which specifies the itemId of the desired dashboard.
-    
-    Please find the below code snippet to call the given API,
+1. We have REST API for retrieving all the widgets of the specific dashboard, `https://localhost:[portno]/bi/api/site/site1/v4.0/dashboards/{dashboardId}/widgets`, `dashboardId` which specifies the itemId of the desired dashboard.
 
+    Please find the below code snippet to call the given API,
+    
     ```js
     [HttpGet]
     [Route("GetDashboardWidgets")]
@@ -216,11 +227,11 @@ Follow these steps to embed dashboard widget in your application.
 
 2. To create authorization-server action method, copy the following snippet in your controller. You can use currently logged in user email at `user@domain.com` or user name at `username`, but this user should have access to the dashboard.   
 
-    ```js
+    ```js  
     [HttpPost]
     [Route("embeddetail/get")]
     public string GetEmbedDetails(string embedQuerString, string dashboardServerApiUrl)
-    {
+    {   
         // Use the user-email as embed_user_email
         embedQuerString += "&embed_user_email=user@domain.com";
 
@@ -249,7 +260,7 @@ Follow these steps to embed dashboard widget in your application.
 
 3. Add the GetSignatureUrl method, and this method would be called from the previous GetEmbedDetails action. Follow the next section to get EmbedSecret key from Bold BI application.
 
-    ```js
+    ```js  
     public string GetSignatureUrl(string queryString)
     {
         // Get the embedSecret key from Bold BI.
@@ -289,12 +300,12 @@ public string GetEmbedDetails(string embedQuerString, string dashboardServerApiU
 
     using (var client = new HttpClient())
     {
-    client.BaseAddress = new Uri(dashboardServerApiUrl);
-    client.DefaultRequestHeaders.Accept.Clear();
+        client.BaseAddress = new Uri(dashboardServerApiUrl);
+        client.DefaultRequestHeaders.Accept.Clear();
 
-    var result = client.GetAsync(dashboardServerApiUrl + embedDetailsUrl).Result;
-    string resultContent = result.Content.ReadAsStringAsync().Result;
-    return resultContent;
+        var result = client.GetAsync(dashboardServerApiUrl + embedDetailsUrl).Result;
+        string resultContent = result.Content.ReadAsStringAsync().Result;
+        return resultContent;
     }
 }
 ```

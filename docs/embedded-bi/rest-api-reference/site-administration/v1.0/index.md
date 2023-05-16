@@ -12,3 +12,5 @@ documentation: ug
 This section explains how to configure the application startup and create a tenant in your Bold BI or Bold Reports applications.
 
 [Rest API - v1.0](https://help.boldbi.com/embedded-bi/rest-api-reference/site-administration/v1.0/api-reference/)
+
+[Try It Now - v1.0](https://help.boldbi.com/embedded-bi/rest-api-reference/site-administration/v1.0/try-it-now/)

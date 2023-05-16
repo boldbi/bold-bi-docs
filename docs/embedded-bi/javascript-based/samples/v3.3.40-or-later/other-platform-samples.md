@@ -19,7 +19,7 @@ The samples have been created in other platforms to embed the Bold BI Dashboard.
 
 ## ColdFusion sample to embed dashboard
 
- 1. Please [download](https://onpremise-demo.boldbi.com/getting-started/coldfusion/sample.zip) the BoldBI ColdFusion Embed sample from the attached file.    
+ 1. Please [get](https://github.com/boldbi/coldfusion-sample) the BoldBI ColdFusion Embed sample from the attached file.    
 
  2. You need to set the following properties in the `BoldBIEmbed.html` and `embedDetails.cfc` file as follows.
 
@@ -55,21 +55,22 @@ The samples have been created in other platforms to embed the Bold BI Dashboard.
 
 ### How this sample works
  1. Based on the `dashboardId` provided in the `BoldBIEmbed.html`,authorize the server URL by calling the GetEmbedDetails function as follows.
-  ![embed details](/static/assets/embedded/javascript/sample/images/embeddetailsColdfusion.png#max-width=80%)
+    ![embed details](/static/assets/embedded/javascript/sample/images/embeddetailsColdfusion.png#max-width=80%)
 
  2. In the above authorization, generate the `SignatureUrl` with the provided `EmbedSecret key` and validate the embed details in Bold BI. Once details are validated, the dashboard starts to render.
 
  3. In the `BoldBIEmbed.html`, change the dashboard Id of the respective dashboard as you wish to embed.
-  ![Embed Properties](/static/assets/embedded/javascript/sample/images/coldfusion-props.png#max-width=80%)
+    ![Embed Properties](/static/assets/embedded/javascript/sample/images/coldfusion-props.png#max-width=80%)
 
 
 ## Java Servlet sample to embed dashboard
 
- 1. Please [download](https://onpremise-demo.boldbi.com/getting-started/java-v4.1/sample.zip) the Java Servlet project from this link.    
+ 1. Please [get](https://github.com/boldbi/java-servlet-sample) the Java Servlet project from this link.    
 
  2. You need to set your embed property details in the `index.jsp` and `BoldBI.java.`
-  ![Embed Properties in Index](/static/assets/embedded/javascript/sample/images/java-index-props.png)
-  ![Embed Properties in API](/static/assets/embedded/javascript/sample/images/java-boldbi-props.png)  
+    ![Embed Properties in Index](/static/assets/embedded/javascript/sample/images/java-index-props.png)
+    ![Embed Properties in API](/static/assets/embedded/javascript/sample/images/java-boldbi-props.png)  
+    
     <meta charset="utf-8"/>
     <table>
     <tbody>
@@ -108,19 +109,19 @@ The samples have been created in other platforms to embed the Bold BI Dashboard.
 ### How this sample works
 
  1. Based on the `dashboardId` provided in the `index.jsp`, authorize the server by calling the `doPost` function using the `AuthorizeURL(http://localhost:8080/BoldBIEmbed/BoldBI.do)` with the provided EmbedProperties values. 
- ![Get Embed Details](/static/assets/embedded/javascript/sample/images/java-authorize.png)
+    ![Get Embed Details](/static/assets/embedded/javascript/sample/images/java-authorize.png)
 
  2. In the above authorization, generate the SignatureURL with the provided EmbedSecret key and embed details, which can be validated in the Bold BI Server API, and returns the token. Based on the returned token, the dashboard will be started to render in the `index.jsp`.
 
  3. In the `index.jsp`, change the dashboard Id of the respective dashboard based on your requirement.
- ![Set Dashboard Id](/static/assets/embedded/javascript/sample/images/java-dashboard.png)  
+    ![Set Dashboard Id](/static/assets/embedded/javascript/sample/images/java-dashboard.png)  
 
 ## Django sample to embed the dashboard
 
- 1. Please [download](https://onpremise-demo.boldbi.com/getting-started/django/sample.zip) the Django sample from the attached file.    
+ 1. Please [get](https://github.com/boldbi/django-sample) the Django sample from the attached file.    
 
  2. You need to set the following properties in the `models.py` file as follows. 
-  ![Embed Properties](/static/assets/embedded/javascript/sample/images/django-props.png#max-width=75%)
+    ![Embed Properties](/static/assets/embedded/javascript/sample/images/django-props.png#max-width=75%)
 
     <meta charset="utf-8"/>
     <table>
@@ -155,25 +156,28 @@ The samples have been created in other platforms to embed the Bold BI Dashboard.
 ### How this sample works
 
  1. Based on the provided embed details with the dashboard, authorize the server URL by calling the get embed details function `(views.py/get_embed_details)` call with the provided `EmbedProperties` values
- Learn more about authorize server [here](/embedded-bi/javascript-based/authorize-server/)
-  ![Authorize Server URL](/static/assets/embedded/javascript/sample/images/django-api.png)
-  ![Get Embed Details](/static/assets/embedded/javascript/sample/images/django-authorize.png)
+ 
+    Learn more about authorize server [here](/embedded-bi/javascript-based/authorize-server/)
 
- > **NOTE:** Remove the CSRF Token from the headers, if your application does not have CSRF middleware `(django.middleware.csrf.CsrfViewMiddleware)`.
- ![CSRF Token](/static/assets/embedded/javascript/sample/images/django_csrf_token.png)
+    ![Authorize Server URL](/static/assets/embedded/javascript/sample/images/django-api.png)
+    ![Get Embed Details](/static/assets/embedded/javascript/sample/images/django-authorize.png)
+
+    > **NOTE:** Remove the CSRF Token from the headers, if your application does not have CSRF middleware `(django.middleware.csrf.CsrfViewMiddleware)`.
+ 
+    ![CSRF Token](/static/assets/embedded/javascript/sample/images/django_csrf_token.png)
 
  2. In the above authorization, generate the SignatureUrl using the provided EmbedSecret key and validate embed details in Bold BI. Once details are validated, the dashboard starts to render.
 
  3. In the `models.py`, change the dashboard Id of the respective dashboard that you want to embed.
- ![Set Dashboard Id](/static/assets/embedded/javascript/sample/images/django-props.png)
+    ![Set Dashboard Id](/static/assets/embedded/javascript/sample/images/django-props.png)
 
 ## Ionic sample to embed dashboard
  
- 1. Please [download](https://onpremise-demo.boldbi.com/getting-started/ionic/sample.zip) the Ionic project.
+ 1. Please [get](https://github.com/boldbi/ionic-with-aspnet-core-sample) the Ionic project.
 
  2. You need to set the following properties in the `home.service.ts` and the dashboard id in the `home.page.ts` files as follow.
-  ![Ionic_properties](/static/assets/embedded/javascript/sample/images/ionic-properties.png#max-width=75%)
-  ![Ionic_renderdashboard](/static/assets/embedded/javascript/sample/images/ionic-renderdashboard.png#max-width=75%)
+    ![Ionic_properties](/static/assets/embedded/javascript/sample/images/ionic-properties.png#max-width=75%)
+    ![Ionic_renderdashboard](/static/assets/embedded/javascript/sample/images/ionic-renderdashboard.png#max-width=75%)
   
     <meta charset="utf-8"/>
     <table>

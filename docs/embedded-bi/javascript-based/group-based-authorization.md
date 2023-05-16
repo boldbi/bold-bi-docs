@@ -83,13 +83,13 @@ Let us see the configuring settings for OAuth 2.0 and OpenID import, importing t
     </tbody>
     </table>
 
-    > **NOTE:**  The previous UserID and UserEmail would be act as password for user of each provider in Bold BI. 
+    > **NOTE:** The previous UserID and UserEmail would be act as password for user of each provider in Bold BI. 
 
     **Example:** `&embed_group_access=true&embed_auth_provider=GlobalOAuth&embed_user_id=1212121212&embed_user_email=user@domain.com`   
 
     ![Group Based Authorization](/static/assets/embedded/javascript/images/group-based-auth.png)  
 
-    > **NOTE:**  Use your UserID and UserEmail as followed in authorization server.
+    > **NOTE:** Use your UserID and UserEmail as followed in authorization server.
 
     <meta charset="utf-8"/>
     <table>

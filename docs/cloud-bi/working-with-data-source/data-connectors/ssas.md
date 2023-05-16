@@ -297,6 +297,7 @@ Type while creating the data source needs to be ssas.
 "Expression" :  "UPPER(string expression)"
 }]
 }
+
 ```
 
 #### For editing connection:
@@ -326,6 +327,7 @@ Type while creating the data source needs to be ssas.
 "Action": "delete"
 }]
 }
+
 ```
 
 ### Connection Sample for Code View Mode
@@ -351,6 +353,7 @@ Type while creating the data source needs to be ssas.
 "Expression" :  "UPPER(string expression)"
 }]
 }
+
 ```
 
 ## Related links

@@ -633,14 +633,14 @@ You can also view the data for your query at bottom of the Query Editor by click
    </tr>
    </table>
  
-> **NOTE:**  We have provided the code view mode support in SQL Server Analysis Services using subselects. <br />
- Subselects have the following Limitation:  <br />
- •	Usage of **“WITH”** and **“DAX”** queries is restricted and will be provided in the future through extract mode.  <br />
- •	The **WHERE** clause does not filter the subspace.  <br />
- •	The **WHERE** clause changes the default member in the sub-cube only.  <br />
- •	The **NON-EMPTY** clause is not allowed in an axis clause; use a filter (MDX) function expression instead.  <br />
- •	The **HAVING** clause is not allowed in an axis clause. Use a filter (MDX) function expression instead.  <br />
- For reference, click this [link.](https://docs.microsoft.com/en-us/analysis-services/multidimensional-models/mdx/subselects-in-queries?view=asallproducts-allversions)
+> **Notes:**  We have provided the code view mode support in SQL Server Analysis Services using subselects.  <br />
+Subselects have the following Limitation:  <br />
+•	Usage of **“WITH”** and **“DAX”** queries is restricted and will be provided in the future through extract mode.  <br />
+•	The **WHERE** clause does not filter the subspace.  <br />
+•	The **WHERE** clause changes the default member in the sub-cube only.  <br />
+•	The **NON-EMPTY** clause is not allowed in an axis clause; use a filter (MDX) function expression instead.  <br />
+•	The **HAVING** clause is not allowed in an axis clause. Use a filter (MDX) function expression instead.  <br />
+For reference, click this [link.](https://docs.microsoft.com/en-us/analysis-services/multidimensional-models/mdx/subselects-in-queries?view=asallproducts-allversions)
 
 ## Connecting Bold BI to Microsoft SQL Server Analysis Services(SSAS) via REST API
 
@@ -838,6 +838,7 @@ Type while creating the data source needs to be ssas.
 "Expression" :  "UPPER(string expression)"
 }]
 }
+
 ```
 
 #### For editing connection:
@@ -867,6 +868,7 @@ Type while creating the data source needs to be ssas.
 "Action": "delete"
 }]
 }
+
 ```
 
 ### Connection Sample for Code View Mode
@@ -892,6 +894,7 @@ Type while creating the data source needs to be ssas.
 "Expression" :  "UPPER(string expression)"
 }]
 }
+
 ```
 
 ## Related links

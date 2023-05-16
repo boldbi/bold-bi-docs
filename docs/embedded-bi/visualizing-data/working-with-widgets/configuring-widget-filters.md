@@ -17,9 +17,13 @@ documentation: ug
 
    By clicking the `Edit…` menu item, the measure filter dialog will open as follows.
 
-   ![configuring filter for measure colum](/static/assets/embedded/visualizing-data/working-with-widgets/images/configuringfilterformeasurecolumn_measurefilter.PNG)
+   ![configuring filter for measure colum](/static/assets/embedded/visualizing-data/working-with-widgets/images/configuringfilterformeasurecolumn_measurefilter.PNG#max-width=43%)
 
-   ![showcasing measure filter window](/static/assets/embedded/visualizing-data/working-with-widgets/images/measurefilterwindow.PNG)
+   ![showcasing measure filter window](/static/assets/embedded/visualizing-data/working-with-widgets/images/measurefilterwindow.PNG#max-width=62%)
+
+   Configure the required aggregation from the dropdown to filter the widget based on the selected aggregation type. The dropped column aggregation type will be selected and listed in the dropdown by default.
+
+   > **NOTE:** To perform [Raw data filtering](/embedded-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#raw-data-filter) in the widget, select the aggregation type as NONE from the dropdown.
 
    Configure the compare operator and the value to be compared against the selected column values. Click `Apply` to apply the filter settings to the widget. Now, the applied settings are saved, and these settings will be retained on reopening this dialog.
 
@@ -27,12 +31,23 @@ documentation: ug
 
    > **NOTE:**  `Reset` will be in enabled state only when the filter is applied already. `Apply` will be in enabled state only when there are pending changes in the dialog to save.
 
-   ![resetting measure column filter](/static/assets/embedded/visualizing-data/working-with-widgets/images/configuringfilterformeasurecolumn_reseticon.PNG)
+   ![resetting measure column filter](/static/assets/embedded/visualizing-data/working-with-widgets/images/configuringfilterformeasurecolumn_reseticon.PNG#max-width=62%)
 
    To clear the filter applied to the measure column, click `Clear` in the settings drop-down menu. This menu item will be in enabled state only when the filter is configured already to that column.
 
    ![option to clear to measure filter](/static/assets/embedded/visualizing-data/working-with-widgets/images/configuringfilterformeasurecolumn_clearfilter.PNG)
 
+### Raw Data Filter
+   The `None` aggregation type should be used in Filtering the widget to display the resultant value in raw data format. Once you configure the None type along with the required compare operator and value to be compared against the selected column, click `Apply` to apply the filter settings to the widget.
+
+   The widget data will now be displayed with filtered Values based on non summarized data.
+
+   ![Choose measure filter option](/static/assets/embedded/visualizing-data/working-with-widgets/images/MeasureFilterOption.png#max-width=55%)
+
+   ![Set Raw data filter](/static/assets/embedded/visualizing-data/working-with-widgets/images/MeasureFilterAggregation.png#max-width=62%)
+
+   The result will be shown in the following image.
+   ![Raw data filter result](/static/assets/embedded/visualizing-data/working-with-widgets/images/MeasureFilterAggregationResult.png)
 
 ## Configuring filter for dimension column
 

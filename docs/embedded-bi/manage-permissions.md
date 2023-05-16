@@ -161,6 +161,11 @@ Scope selection is only available for `Specific Resources` and `Specific Setting
 <td>Create and Manage</td>
 <td>Provides permission to create and manage the users and groups entity</td>
 </tr>
+
+<tr>
+<td>Download</td>
+<td>Provides download permission for the chosen entity.</td>
+</tr>
 </table>
 
 ## Add permissions

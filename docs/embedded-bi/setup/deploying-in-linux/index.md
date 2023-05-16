@@ -12,6 +12,8 @@ This document explains setting up a Bold BI application on an Linux server.
 
 [Prerequisites](/embedded-bi/setup/deploying-in-linux/prerequisites-linux/)
 
+[Recommended System Configuration](/embedded-bi/setup/deploying-in-linux/recommended-system-configuration/)
+
 [Installation and Deployment](/embedded-bi/setup/deploying-in-linux/installation-and-deployment/)
 
 [Deploy Bold BI Using Apache Server](/embedded-bi/setup/deploying-in-linux/deploy-bold-bi-using-apache-server/)

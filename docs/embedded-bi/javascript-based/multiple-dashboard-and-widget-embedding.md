@@ -16,7 +16,7 @@ Follow these steps to embed multiple dashboards and widgets in your application.
 
     ```js
     <head>  
-        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v5.3.53/boldbi-embed.js"></script>
+        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v6.4.6/boldbi-embed.js"></script>
     </head>
     ```
 
@@ -32,7 +32,7 @@ Follow these steps to embed multiple dashboards and widgets in your application.
 
 3. In the body tag, you need to add the function to create BoldBI instance with following properties and call that function in the body using the `onload` attribute as follows. Also, call the `loadDashboard()` function for every dashboard and widget.
 
-    ```js   
+    ```js
     <body onload="embedSample();">
         <div id="dashboard_container"></div>
         <script>
@@ -137,10 +137,63 @@ Follow these steps to embed multiple dashboards and widgets in your application.
     </tbody>
     </table>
 
-
 5. Copy the previous embedSample() function and paste in your page. You need to update your values to the properties.  
 
-> **NOTE:**  embedContainerId should be same as your div element id value  
+> **NOTE:**  embedContainerId should be same as your div element id value.
+
+> **NOTE:**  For Bold BI **v5.2.48** or lower version, you must have add the following dependent scripts and also refer the below **Embed SDK URL** of respective Bold BI version.<br />
+`https://cdn.boldbi.com/embedded-sdk/v5.2.48/embed-js.js`
+
+<meta charset="utf-8"/>
+<table>
+<thead>
+<tr>
+<th style="width:20%;"><code>Bold BI Version</th>
+<th style="width:80%;"><code>Dependent Scripts</code></th>
+</tr></thead>
+<tbody>        
+<tr>            
+<td><code>v5.2.48 or Lower</code></td>            
+<td><code>
+
+```js
+<head>  
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jsrender/1.0.0-beta/jsrender.min.js"></script>
+    <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v5.2.48/embed-js.js"></script>
+</head>
+```  
+
+</code></td>
+</tr>
+<tr>            
+<td><code>v5.3.53</code></td>            
+<td><code>
+
+```js
+<head> 
+    <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v5.3.53/boldbi-embed.js"></script>
+</head>
+```
+
+</code></td>
+</tr>
+<tr>            
+<td><code>v6.4.6(latest)</code></td>            
+<td><code>
+
+ ```js
+<head> 
+    <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v6.4.6/boldbi-embed.js"></script>
+</head>
+```
+
+</code></td>
+</tr>
+</tbody>
+</table>
 
 ## How to implement the authorize server with user mail or user name
 

@@ -8,13 +8,13 @@ documentation: ug
 
 # Embedding Bold BI Dashboards in PHP using the Embedded SDK
 
-The link has been provided to [download](https://onpremise-demo.boldbi.com/getting-started/php/sample.zip)The link has been provided to `PHP` on your own. 
+A GitHub link has been provided to [get](https://github.com/boldbi/php-sample) the sample application, which demonstrates the rendering of dashboard available in your Bold BI server and followed by steps to create a new embedding application in the `PHP` on your own.
 
 > **NOTE:** Reading the [Getting Started](/embedded-bi/javascript-based/getting-started/) section of the documentation is the best way to get started. The `Getting Started` guide gives you enough information that you need to know before working on the sample. 
 
 ## How to run the sample
 
-1. Please [download](https://onpremise-demo.boldbi.com/getting-started/php/sample.zip) the PHP Core sample.    
+1. Please [get](https://github.com/boldbi/php-sample) the PHP sample.    
 
 2. In the `Index.php`, set your server details to the EmbedProperties as follows.
     ![Embed Properties](/static/assets/embedded/javascript/sample/images/php-props.png#max-width=95%)
@@ -43,9 +43,9 @@ The link has been provided to [download](https://onpremise-demo.boldbi.com/getti
 3. In the `AuthorizeServer.php`, set the UserEmail and Embed Secret key, which has been used to create an embed signature to authorize the server from the PHP sample. Learn more about authorized server [here](https://help.syncfusion.com/bold-bi/embedded-bi/javascript/authorize-server).
 
     ![Authorize Server](/static/assets/embedded/javascript/sample/images/authorize-server-php.png#max-width=80%)
-  <meta charset="utf-8"/>
-   <table>
-   <tbody>
+    <meta charset="utf-8"/>
+    <table>
+    <tbody>
     <tr>
         <td align="left">UserEmail</td>
         <td align="left">UserEmail of the Admin in your Bold BI, which would be used to get the dashboards list</td>
@@ -54,8 +54,8 @@ The link has been provided to [download](https://onpremise-demo.boldbi.com/getti
         <td align="left">EmbedSecret</td>
         <td align="left">You could get your EmbedSecret key from Embed tab by enabling Enable embed authentication in <a href='https://help.boldbi.com/embedded-bi/site-administration/embed-settings/'>Administration page </a></td>
     </tr>
-   </tbody>
-  </table>
+    </tbody>
+    </table>
 
 4. Run your PHP sample.
 
@@ -65,11 +65,11 @@ The link has been provided to [download](https://onpremise-demo.boldbi.com/getti
         function embedSample() {
             var dashboardemb = BoldBI.create({
                 serverUrl: '<?php echo $serverUrl;?>',
-                dashboardId: '<?php echo $dashboardId;?>',//Provide the item id to render it in the design mode and create a dashboard to remove this property.
+                dashboardId: '<?php echo $dashboardId;?>', //Provide the item id to render it in the design mode and create a dashboard to remove this property.
                 embedContainerId: "dashboard",
                 embedType: BoldBI.EmbedType.Component,
-                environment: BoldBI.Environment.Enterprise,
-                mode:BoldBI.Mode.Design
+                environment: BoldBI.Environment.Enterprise, // If Cloud, you should use BoldBI.Environment.Cloud
+                mode: BoldBI.Mode.Design,
                 height: "700px",
                 width: "1500px",
                 authorizationServer: {
@@ -113,8 +113,10 @@ The link has been provided to [download](https://onpremise-demo.boldbi.com/getti
 
 ## How this sample works
  1. When you embed a dashboard to render, you will authorize the server URL by calling the `GetEmbedDetails` function by API call with provided `EmbedProperties` values. 
-   ![Getdetails](/static/assets/embedded/javascript/sample/images/embeddetails-php.png#max-width=80%)
+    ![Getdetails](/static/assets/embedded/javascript/sample/images/embeddetails-php.png#max-width=80%)
+
  2. In the above authorization, the `SignatureUrl` has been generated with the provided `EmbedSecret` key and validated the embed details in Bold BI. Then only the embedded widget will be rendered in the `Index.php`.
+
  3. In the `Index.php` change the dashboard Id as you wish to embed. 
     ![Embed Properties](/static/assets/embedded/javascript/sample/images/php-props.png#max-width=95%)
     
@@ -122,6 +124,7 @@ The link has been provided to [download](https://onpremise-demo.boldbi.com/getti
  1. Install the `PHP Intelephense` and `PHP Server` in the visual studio code.
     ![PHP intelephence](/static/assets/embedded/javascript/sample/images/php_install.png#max-width=60%)
     ![PHP Server](/static/assets/embedded/javascript/sample/images/php_server.png#max-width=60%)
+ 
  2. [Download](https://windows.php.net/download/) the PHP from the following official website. And include the path in the system environment variable.
 
  3. In the desired location, create a folder for this project and open it in the visual studio code.
@@ -139,8 +142,7 @@ The link has been provided to [download](https://onpremise-demo.boldbi.com/getti
 
  5. Refer to the mandatory cdn file in the `<head>` tag as follows.
      ```js
-        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v5.3.53/boldbi-embed.js"></script>
-        </head>
+    <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v6.4.6/boldbi-embed.js"></script>
      ```
 
  6. In the `<body>` tag, create the DOM element with the id `dashboard` and initialize the `embedSample()` method, which is implemented in `<script>` tag as follows.
@@ -151,17 +153,18 @@ The link has been provided to [download](https://onpremise-demo.boldbi.com/getti
         <script>
             function embedSample() {
                 var dashboardemb = BoldBI.create({
-                    serverUrl: '<?php echo $serverUrl;?>',//Dashboard Server BI URL (ex: http://localhost:5000/bi/site/site1, http://demo.boldbi.com/bi/site/site1)
-                    dashboardId: '<?php echo $dashboardId;?>',//Dashboard id of the dashboard you want to embed here.
+                    serverUrl: '<?php echo $serverUrl;?>', //Dashboard Server BI URL (ex: http://localhost:5000/bi/site/site1, http://demo.boldbi.com/bi/site/site1)
+                    dashboardId: '<?php echo $dashboardId;?>', //Dashboard id of the dashboard you want to embed here.
                     embedContainerId: "dashboard",
                     embedType: BoldBI.EmbedType.Component,
-                    environment: BoldBI.Environment.Enterprise,//Your Bold BI application environment.
+                    environment: BoldBI.Environment.Enterprise, // If Cloud, you should use BoldBI.Environment.Cloud
+                    mode: BoldBI.Mode.View,
                     height: "700px",
                     width: "1500px",
                     authorizationServer: {
-                        url: '<?php echo $authorizeServerUrl;?>'//URL from which particular dashboard details is obtained from server.
+                        url: '<?php echo $authorizeServerUrl;?>' //URL from which particular dashboard details is obtained from server.
                     },
-                    expirationTime: "100000",//Set the duration for the token to be alive.
+                    expirationTime: "100000", //Set the duration for the token to be alive.
                 });
                 dashboardemb.loadDashboard();
             }
@@ -225,4 +228,4 @@ The link has been provided to [download](https://onpremise-demo.boldbi.com/getti
  8. To get particular dashboard details, implement the `GetDetails()`, which uses the `GetSignatureUrl()` method to generate the algorithm. In this API, the `embedQuerString`,`userEmail` and value from the  `GetSignatureUrl()` method is appended as query parameters in the URL to get details of particular dashboard.
 
  9. Now, right-click and choose the `PHP Server: Server project`.
- ![Authorize Server](/static/assets/embedded/javascript/sample/images/php_run.png#max-width=30%)
+    ![Authorize Server](/static/assets/embedded/javascript/sample/images/php_run.png#max-width=30%)

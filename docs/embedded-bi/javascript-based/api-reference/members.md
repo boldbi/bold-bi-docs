@@ -1058,7 +1058,7 @@ dashboard.loadDesigner();
 </h3>
 
 
-Specify whether to show or hide the `Show all columns` option in `view underlying data` from widgets, which would be used by both viewer and designer of the dashboard.
+Specify whether to show all the columns in the `View Underlying Data` of the selected widgets or to show only the columns of data used in the selected widget. This member would be used by both viewer and designer of the dashboard.
 
 <br>
 

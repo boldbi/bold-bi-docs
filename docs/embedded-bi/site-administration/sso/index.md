@@ -21,5 +21,3 @@ You can explore the Single Sign-On in detail here,
 [OAuth 2.0 Support](/embedded-bi/site-administration/sso/oauth-2.0-support/)
 
 [OpenID Support](/embedded-bi/site-administration/sso/openid-support/)
-
-[JSON Web Token Support](/embedded-bi/site-administration/sso/json-web-token/)

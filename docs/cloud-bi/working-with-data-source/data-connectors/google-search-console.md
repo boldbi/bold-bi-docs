@@ -85,7 +85,7 @@ Replace it in the URL to query a particular site details:
 
 `https://www.googleapis.com/webmasters/v3/sites/<:siteUrl>/sitemaps`
 
-For more information on the API endpoints available for this data source, refer to their official [API Documentation](https://developers.google.com/webmaster-tools/search-console-api-original/v3/parameters)
+For more information on the API endpoints available for this data source, refer to their official [API Documentation](https://developers.google.com/webmaster-tools/v1/api_reference_index)
 
 ### Sample queries
 **SiteMaps**

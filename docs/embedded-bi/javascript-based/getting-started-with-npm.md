@@ -28,7 +28,7 @@ Follow these steps to embed dashboard in your application:
 
 ## How to use Bold BI Embedded SDK NPM package into application
 
-1. Import the `@boldbi/boldbi-embedded-sdk` package into the application where you want to embed the Bold BI Dashboard, as shown in the following command. You should use `BoldBI` named importing with braces because it is an ECMAScript 6 structure and also a non-default export.
+1. Import the `@boldbi/boldbi-embedded-sdk` package into the application where you want to embed the Bold BI Dashboard, as shown in the following command. You should use `BoldBI` named importing with braces because it is an ECMAScript six structure and also a non-default export.
 
     ```js
     import {BoldBI} from '@boldbi/boldbi-embedded-sdk';
@@ -51,25 +51,25 @@ Follow these steps to embed dashboard in your application:
 	### Embed using the dashboard ID
 
 	```js
-    <script>
-    function embedSample() {
-        var boldbiEmbedInstance = BoldBI.create({
-            serverUrl: "http://localhost:51777/bi/site/site1",
-            dashboardId: "755e99c7-f858-4058-958b-67577b283309",                
-            embedContainerId: "dashboard_container",// This should be the container id where you want to embed the dashboard
-            embedType: BoldBI.EmbedType.Component,
-            environment: BoldBI.Environment.Enterprise,
-            mode: BoldBI.Mode.View,
-            height: "800px",
-            width: "1200px",
-            authorizationServer: {
-                url: "http://example.com/embeddetail/get"
-            },
-            expirationTime: "100000",
-        });
-        boldbiEmbedInstance.loadDashboard();
-    }
-    </script>
+		<script>
+        function embedSample() {
+            var boldbiEmbedInstance = BoldBI.create({
+                serverUrl: "http://localhost:51777/bi/site/site1",
+                dashboardId: "755e99c7-f858-4058-958b-67577b283309",                
+                embedContainerId: "dashboard_container",// This should be the container id where you want to embed the dashboard
+                embedType: BoldBI.EmbedType.Component,
+                environment: BoldBI.Environment.Enterprise,
+                mode: BoldBI.Mode.View,
+                height: "800px",
+                width: "1200px",
+                authorizationServer: {
+                    url: "http://example.com/embeddetail/get"
+                },
+                expirationTime: "100000",
+            });
+            boldbiEmbedInstance.loadDashboard();
+        }
+		</script>
 	```  
 
 	### Embed using the dashboard path
@@ -107,7 +107,7 @@ Follow these steps to embed dashboard in your application:
     </tr>
     <tr>
     <td align="left">dashboardId</td>
-    <td align="left">Use item id of the dashboard, which need to be embed in your application.</td>
+    <td align="left">Use the item id of the dashboard, which needs to be embedded in your application.</td>
     </tr>
     <tr>
     <td align="left">dashboardPath</td>
@@ -161,7 +161,7 @@ environment - It should be `{BoldBI.Environment.Cloud}`.
     function embedBoldBICloudDashboard() {
         var boldbiEmbedInstance = BoldBI.create({
             serverUrl: "https://example.boldbi.com/bi",
-            dashboardId: "755e99c7-f858-4058-958b-67577b283309",             
+            dashboardId:    "755e99c7-f858-4058-958b-67577b283309",             
             embedContainerId: "dashboard_container",// This should be the container id where you want to embed the dashboard
             embedType: BoldBI.EmbedType.Component,
             environment: BoldBI.Environment.Cloud,
@@ -173,7 +173,7 @@ environment - It should be `{BoldBI.Environment.Cloud}`.
             },
             expirationTime: "100000",
         });
-        boldbiEmbedInstance.loadDashboard();
+    boldbiEmbedInstance.loadDashboard();
     }
 </script>
 ```  
@@ -242,7 +242,7 @@ You can embed the multi-tabbed dashboard with the dashboard ID and dashboard pat
 
 3. Add the `GetSignatureUrl` method, which will be called from the previous GetEmbedDetails action. To obtain the EmbedSecret key from Bold BI application, proceed to the next section.
 
-	```js    
+	```js  
     public string GetSignatureUrl(string queryString)
     {
         // Get the embedSecret key from Bold BI application.
@@ -252,8 +252,8 @@ You can embed the multi-tabbed dashboard with the dashboard ID and dashboard pat
         var messageBytes = encoding.GetBytes(queryString);
         using (var hmacsha1 = new HMACSHA256(keyBytes))
         {
-            var hashMessage = hmacsha1.ComputeHash(messageBytes);
-            return Convert.ToBase64String(hashMessage);
+        var hashMessage = hmacsha1.ComputeHash(messageBytes);
+        return Convert.ToBase64String(hashMessage);
         }
     }
 	```

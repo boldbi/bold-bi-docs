@@ -24,8 +24,7 @@ You have to use the following `jQuery.noConflict` function in your embed applica
         }); 
     </script> 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jsrender/1.0.0-beta/jsrender.min.js"></script> 
-    <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v4.1.36/embed-js.js"></script> 
-    
+    <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v4.1.36/embed-js.js"></script>    
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> <!--3.6.0 version of jQuery -->
     <script type="text/javascript"> bb$.easing = $.easing = jQuery.easing </script>
 </head>

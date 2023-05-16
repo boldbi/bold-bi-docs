@@ -36,6 +36,9 @@ After clicking the data source, the **NEW DATA SOURCE** configuration panel open
 
    ![MariaDB Connection](/static/assets/embedded/working-with-datasource/data-connectors/images/Mariadb/Mariadb_Connection.png)
 
+To connect MariaDB with a particular table, enter the property currenttable={tablename} or specifictable={tablename} in the Additional connection parameters text box. The tables can be separated by comma {table1,table2} to connect with multiple tables.
+   ![MariaDB Connection Specific Table](/static/assets/embedded/working-with-datasource/data-connectors/images/Mariadb/MariaDBConnectionwithAdditionalParameter.png)
+
 > **NOTE:**  To connect data source with **SSH**, enable the SSH check box in the **NEW DATA SOURCE** configuration panel and enter the required credentials.
 ![Enable SSH](/static/assets/embedded/working-with-datasource/images/enable-ssh.png#max-width=60%)
  
@@ -55,6 +58,9 @@ In this connection type, a data source is directly fetched from source. Choose t
 The schema represents the collection list retrieved from the MariaDB server. This dialog displays a list of schemas in treeview and their corresponding values.
 
    ![Treeview schema](/static/assets/embedded/working-with-datasource/data-connectors/images/common/Treeview_schema.png)
+
+If the table name is provided in the Additional connection parameters text box, only the specified table will be listed.
+  ![Treeview specific table](/static/assets/embedded/working-with-datasource/data-connectors/images/common/Treeview_schema_specific_table.png)
 
 2. Now, the data design view page with the selected table schema opens. Drag the table.
 
@@ -99,6 +105,9 @@ In this connection type, a data source is fetched from source periodically. Choo
        If you configured it, then the data source will work on [Incremental update](/embedded-bi/working-with-data-source/data-connectors/sql-data-source/#incremental-update), otherwise works on [Full load](/embedded-bi/working-with-data-source/data-connectors/sql-data-source/#full-load) concept. And finally click **Connect**.
 
    ![Preview](/static/assets/embedded/working-with-datasource/data-connectors/images/common/Preview_Extract.png#max-width=100%)
+
+If the table name is provided in the Additional connection parameters text box, only the specified table will be listed for selection.    
+   ![Preview_specific_table](/static/assets/embedded/working-with-datasource/data-connectors/images/common/Preview_Extract_specific_table.png#max-width=100%)
 
 3. Now, the data design view page with the selected table schema opens. Drag the table.
 
@@ -340,6 +349,7 @@ Through the REST API, only the **live mode** data source can be created and edit
 "Expression" :  "UPPER(string expression)"
 }]
 }
+
 ```
 
 #### For editing connection:
@@ -373,6 +383,7 @@ Through the REST API, only the **live mode** data source can be created and edit
 "Action": "delete"
 }]
 }
+
 ```
 
 > **NOTE:**  Through Rest API, the data source can be created or edited with only one table. If different table is provided in edit data source, the table will be replaced. The widgets will be retained only if the schema is same as the previous table.
@@ -404,6 +415,7 @@ Through the REST API, only the **live mode** data source can be created and edit
 "Expression" :  "UPPER(string expression)"
 }]
 }
+
 ```
 
 ## Related links

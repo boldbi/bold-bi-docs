@@ -8,17 +8,17 @@ documentation: ug
 
 # Bold BI Dashboards embedding in Node.js using Embedded SDK
 
-The link has been provided to [download](https://onpremise-demo.boldbi.com/getting-started/node-js-v3.3/sample.zip) the sample application, which demonstrates the dashboard rendering with the list of dashboards available in your Bold BI server and followed by steps to create a new embedding application in the `Node.js` on your own.   
+A GitHub link has been provided to [get](https://github.com/boldbi/nodejs-sample) the sample application, which demonstrates the rendering of dashboard available in your Bold BI server and followed by steps to create a new embedding application in the `Node.js` on your own.   
 
 > **NOTE:** The best way to get started would be reading the [Getting Started](/embedded-bi/javascript-based/getting-started/) section of the documentation to start using first. The `Getting Started` guide gives you enough information that you need to know before working on the sample.
 ## How to run the sample
- 1. Please [download](https://onpremise-demo.boldbi.com/getting-started/node-js-v3.3/sample.zip) the Node.js Application.    
+ 1. Please [get](https://github.com/boldbi/nodejs-sample) the Node.js Application.    
 
  2. You need to set your embed properties details in the `index.html` and `Embed.js`.  
- ![Embed Properties in Index](/static/assets/embedded/javascript/sample/images/nodejs-index-props.png)
- ![Embed Properties in Embed](/static/assets/embedded/javascript/sample/images/nodejs-embed-props.png)
+    ![Embed Properties in Index](/static/assets/embedded/javascript/sample/images/nodejs-index-props.png)
+    ![Embed Properties in Embed](/static/assets/embedded/javascript/sample/images/nodejs-embed-props.png)
 
-     <meta charset="utf-8"/>
+    <meta charset="utf-8"/>
     <table>
     <tbody>
     <tr>
@@ -53,30 +53,30 @@ The link has been provided to [download](https://onpremise-demo.boldbi.com/getti
     </table>
 
  3. Get the item id of the dashboard from the BI server. Please refer to this [link](/embedded-bi/working-with-dashboards/share-dashboards/get-dashboard-link/#get-link) and the following screenshot. 
-   ![Get Dashboard Id](/static/assets/embedded/javascript/sample/images/get-dashboard-id.png#max-width=55%)
+    ![Get Dashboard Id](/static/assets/embedded/javascript/sample/images/get-dashboard-id.png#max-width=55%)
 
  4. Run your Node.js sample.
 
  5. The dashboard can be rendered in design mode or created with the following changes in the `embedSample()` method.
 
      ```js
-     function embedSample() {
-                var boldbiEmbedInstance = BoldBI.create({
-                    serverUrl: rootUrl + siteIdentifier,
-                    dashboardId: dashboardId,//Provide item id to render it in design mode,to create dashboard remove this property                
-                    embedContainerId: "dashboard",// This should be the container id where you want to embed the dashboard
-                    embedType: BoldBI.EmbedType.Component,
-                    environment: environment,
-                    mode: BoldBI.Mode.Design,
-                    height: "800px",
-                    width: "1200px",
-                    authorizationServer: {
-                        url: "http://localhost:8080/embeddetail/get"
-                    },
-                    expirationTime: "100000",
-                });
-                boldbiEmbedInstance.loadDesigner();
-            }
+        function embedSample() {
+            var boldbiEmbedInstance = BoldBI.create({
+                serverUrl: rootUrl + siteIdentifier,
+                dashboardId: dashboardId,//Provide item id to render it in design mode,to create dashboard remove this property                
+                embedContainerId: "dashboard",// This should be the container id where you want to embed the dashboard
+                embedType: BoldBI.EmbedType.Component,
+                environment: BoldBI.Environment.Enterprise, // If Cloud, you should use BoldBI.Environment.Cloud
+                mode: BoldBI.Mode.Design,
+                height: "800px",
+                width: "1200px",
+                authorizationServer: {
+                    url: "http://localhost:8080/embeddetail/get"
+                },
+                expirationTime: "100000",
+            });
+            boldbiEmbedInstance.loadDesigner();
+        }
      ```
 
     <meta charset="utf-8"/>
@@ -111,22 +111,26 @@ The link has been provided to [download](https://onpremise-demo.boldbi.com/getti
 
 ## How this sample works
  1. Based on the `dashboardId` provided in the `index.html` file, authorize the server URL by calling the `GetEmbedDetails` API(http://localhost:8080/embeddetail/get) call with the provided `EmbedProperties` values.
-  ![Get Embed Details](/static/assets/embedded/javascript/sample/images/nodejs-authorize.png)
+    ![Get Embed Details](/static/assets/embedded/javascript/sample/images/nodejs-authorize.png)
+ 
  2. In the above authorization, generate the `SignatureUrl` with the provided `EmbedSecret key` and validate embed details in Bold BI. Once the details are validated, the dashboard starts to render in `index.html`.
 
  3. In the `Index.html`, change the dashboard Id of the respective dashboard as you wish to embed.
-  ![Set Dashboard Id](/static/assets/embedded/javascript/sample/images/nodejs-dashboard.png)
+    ![Set Dashboard Id](/static/assets/embedded/javascript/sample/images/nodejs-dashboard.png)
 
 ## Steps to create new Node.js application to embed dashboard
  1. Create a folder in the desired location and open it in the visual studio code. Create a `js` file with the name `embed.js` and `html` file in it.
+ 
  2. In the `html` file, refer to the mandatory file in the `<head>`, the `<body>` tag initializes the `embedSample()` method, the DOM element with the  `dashboard` id is created in the `<div>` tag where the required dashboard will be rendered.
     ```js
     <head>  
-        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v5.3.53/boldbi-embed.js"></script>
+        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v6.4.6/boldbi-embed.js"></script>
     </head>
     <body onload="embedSample();">
         <div id="dashboard"></div>
+    </body>
     ```
+    
  3. In the `<script>` tag, define the required properties as follows.
 
      ```js
@@ -143,17 +147,17 @@ The link has been provided to [download](https://onpremise-demo.boldbi.com/getti
             function embedSample() {
                 var boldbiEmbedInstance = BoldBI.create({
                     serverUrl: rootUrl + siteIdentifier,//Dashboard Server BI URL (ex: http://localhost:5000/bi/site/site1, http://dashboard.syncfusion.com/bi/site/site1)
-                    dashboardId: dashboardId,//Item id of the dashboard in BI server.                
-                    embedContainerId: "dashboard",// This should be the container id where you want to embed the dashboard.
+                    dashboardId: dashboardId, //Item id of the dashboard in BI server.                
+                    embedContainerId: "dashboard", // This should be the container id where you want to embed the dashboard.
                     embedType: BoldBI.EmbedType.Component,
-                    environment: environment,
+                    environment: BoldBI.Environment.Enterprise, // If Cloud, you should use BoldBI.Environment.Cloud
                     mode: BoldBI.Mode.View,
                     height: "800px",
                     width: "1200px",
                     authorizationServer: {
-                        url: "http://localhost:8080/embeddetail/get"//Url of the GetDetails(API) in this application.
+                        url: "http://localhost:8080/embeddetail/get" //Url of the GetDetails(API) in this application.
                     },
-                    expirationTime: "100000",//Set the duration for the token to be alive.
+                    expirationTime: "100000", //Set the duration for the token to be alive.
                 });
                 boldbiEmbedInstance.loadDashboard();
             }

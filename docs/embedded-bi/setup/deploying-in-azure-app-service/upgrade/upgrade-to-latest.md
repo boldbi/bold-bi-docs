@@ -43,7 +43,7 @@ Follow these steps to upgrade the Bold BI Azure App service to the latest versio
 
     **Repository** - [URL](https://github.com/boldbi/azure-arm-template.git)
 
-    **Branch** - v5.2.48
+    **Branch** - latest
 
     **Repository Type** - Public
 

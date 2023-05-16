@@ -26,26 +26,27 @@ To configure the Twilio data source, follow the below steps:
 
 
 ## Create Twilio data source
-Once you click the data source, the NEW DATA SOURCE configuration panel opens. Follow the below steps to create Twilio data source.
+After you click the data source, the NEW DATA SOURCE configuration panel opens. Follow the given steps to create a Twilio data source.
 1. Enter a name and description (optional) for the data source.
-2. Enter a valid Twilio REST API endpoint in the URL textbox. Refer the [Twilio API documentation](https://www.twilio.com/docs/api) for more details.
+2. Click the **Resources** dropdown box and choose the required endpoint.
+3. Click the **Custom Url** to enter the URL manually. Refer to the [Twilio API documentation](https://www.twilio.com/docs/api) for more details.
 
-    Example: `https://api.twilio.com/2010-04-01/Accounts/<:youraccountsid>/Calls.json`
+   Example: `https://api.twilio.com/2010-04-01/Accounts/<:youraccountsid>/Calls.json`
 
-3. Select **GET** method for the REST API in **Method** combo box.
-4. In **Max Rows**, enter the maximum number of rows to be fetched from the Twilio data source. This value is used to fetch the data from Twilio data source via pagination.
-5. Choose a time interval for **Refresh Settings** using the combo box, to trigger the Rest API request periodically to keep the data in sync with our dashboard.  
-6. Select **JSON** data type in **Data Format** combo box.
-7. Choose **Basic http Authentication** under **Authentication Type** and input a valid **Username** and **Password**. Find the details for providing *Username* and *Password* from [here](/cloud-bi/working-with-data-source/data-connectors/twilio/#how-do-i-get-credentials-for-connecting-twilio-data-source).
+4. Select the **GET** method for the REST API in **Method** combo box.
+5. In **Max Rows**, enter the maximum number of rows to be fetched from the Twilio data source. This value is used to fetch the data from the Twilio data source via pagination.
+6. Choose a time interval for **Refresh Settings** using the combo box, to trigger the Rest API request periodically to keep the data in sync with our dashboard.  
+7. Select **JSON** data type in **Data Format** combo box.
+8. Choose **Basic http Authentication** under **Authentication Type** and input a valid **Account SID** and **Auth Token**. Find the details for providing *Account SID* and *Auth Token* from [here](/cloud-bi/working-with-data-source/data-connectors/twilio/#how-to-get-credentials-for-connecting-the-twilio-data-source).
 
     ![DataSourcesView](/static/assets/cloud/working-with-datasource/data-connectors/images/Twilio/DataSourcesView.png)
 
 You can also edit the connection information set here using the [Edit Connection](/cloud-bi/working-with-data-source/editing-a-data-connection/) option.
 
-#### How do I get Credentials for connecting Twilio Data source?
-1. Login to [Twilio](https://www.twilio.com/login) account. 
-2. Go to *Console Dashboard -> Settings -> API Credentials*. 
-2. Use this *Account SID* as **Username** and *Auth Token* as **Password** in Twilio data source in Bold BI Dashboard.
+#### How to get Credentials for connecting the Twilio Data source
+1. Login to [Twilio](https://www.twilio.com/login) account.
+2. Go to *Console Dashboard > Settings > API Credentials*.
+2. Use this *Account SID* and *Auth Token* in Twilio data source in Bold BI Dashboard.
 
    ![Reveal API Key](/static/assets/cloud/working-with-datasource/data-connectors/images/Twilio/Credentials.png)
 

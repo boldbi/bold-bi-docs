@@ -291,6 +291,7 @@ Type while creating the data source needs to be sparksql.
 "Expression" :  "UPPER(string expression)"
 }]
 }
+
 ```
 
 #### For editing connection:
@@ -325,6 +326,7 @@ Type while creating the data source needs to be sparksql.
 "Action": "delete"
 }]
 }
+
 ```
 
 > **NOTE:**  Through Rest API, the data source can be created or edited with only one table. If different table is provided in edit data source, the table will be replaced. The widgets will be retained only if the schema is same as the previous table.
@@ -357,6 +359,7 @@ Type while creating the data source needs to be sparksql.
 "Expression" :  "UPPER(string expression)"
 }]
 }
+
 ```
 
 ## Related links

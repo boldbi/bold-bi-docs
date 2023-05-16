@@ -45,3 +45,4 @@ cd /var/www/bold-services/application/utilities/adminutils/
 ![reset-command](/static/assets/embedded/admin-utility/images/linux-resetcmd.png) 
 
 3. Once the password has been reset successfully, the user can log in with the updated password.
+

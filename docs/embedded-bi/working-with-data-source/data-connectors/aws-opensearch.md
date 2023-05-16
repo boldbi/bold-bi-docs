@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to create a AWS OpenSearch data source | Bold BI Docs
+title: AWS OpenSearch data source for Embedded BI  | Bold BI Docs
 description: Learn how to create and connect AWS OpenSearch data source in the dashboard widget for your Amazon OpenSearch data using SQL live query in Bold BI application.
 canonical: "/embedded-bi/working-with-data-source/data-connectors/aws-opensearch/"
 platform: bold-bi
@@ -299,6 +299,7 @@ Through the REST API, only the **live mode** data source can be created and edit
 "Expression" :  "UPPER(string expression)"
 }]
 }
+
 ```
 
 #### For editing connection:
@@ -325,6 +326,7 @@ Through the REST API, only the **live mode** data source can be created and edit
 "Action": "delete"
 }]
 }
+
 ```
 
 ## Related links
