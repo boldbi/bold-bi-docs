@@ -16,10 +16,10 @@ A GitHub link has been provided to [get](https://github.com/boldbi/angular-with-
  1. Please [get](https://github.com/boldbi/angular-with-aspnet-core-sample) the Angular Application with the ASP.NET Core Application sample.    
 
  2. Here, the Angular application acts as a client, and the ASP.NET Core application acts as a server since you need to set the following properties in the `app.component.ts` file.
- ![Embed Properties in App Component](/static/assets/embedded/javascript/sample/images/angular-app-comp.png)
+    ![Embed Properties in App Component](/static/assets/embedded/javascript/sample/images/angular-app-comp.png)
 
  3. In the `EmbedProperties.cs` of the ASP.NET Core application, you need to set the `RootUrl`, `SiteIdentifier`, `UserEmail`, and `EmbedSecret` properties.
-  ![Embed Properties in App Component](/static/assets/embedded/javascript/sample/images/asp-net-backend-prop.png)
+    ![Embed Properties in App Component](/static/assets/embedded/javascript/sample/images/asp-net-backend-prop.png)
 
     <meta charset="utf-8"/>
         <table>
@@ -62,7 +62,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/angular-with-
             dashboardId: dashboard.Id, //Provide item id here to render dashboard in design mode, to create dashboard ignore this property
             embedContainerId: "dashboard",
             embedType: BoldBI.EmbedType.Component,
-            environment: this._appComponent.environment=="enterprise"? BoldBI.Environment.Enterprise:BoldBI.Environment.Cloud,
+            environment: BoldBI.Environment.Enterprise, // If Cloud, you should use BoldBI.Environment.Cloud
             mode: BoldBI.Mode.Design,
             width:"100%",
             height:"100%",
@@ -71,8 +71,6 @@ A GitHub link has been provided to [get](https://github.com/boldbi/angular-with-
                 url:this._appComponent.apiHost + this._appComponent.authorizationUrl
             }
         });
-
-        console.log(this.dashboard);
         this.dashboard.loadDesigner();        
       } 
      ```     
@@ -109,24 +107,25 @@ A GitHub link has been provided to [get](https://github.com/boldbi/angular-with-
 
 ## How this sample works
  1. Based on the properties set on the `app.component.ts` file, the `GetDashboards()` method would be called from the `ngOnInit()` in the `dashboard-listing.component.ts`.  
- ![Get Dashboards](/static/assets/embedded/javascript/sample/images/angular-get-dashboards.png)  
+    ![Get Dashboards](/static/assets/embedded/javascript/sample/images/angular-get-dashboards.png)  
 
  2. Above the `GetDashboards()` method would call the `GetDashboards` action in the `HomeController` of the ASP.NET Core Application. Then, it would generate a user token and get the dashboard list.  
- ![Get Dashboards Controller](/static/assets/embedded/javascript/sample/images/angular-home-controller.png)  
+    ![Get Dashboards Controller](/static/assets/embedded/javascript/sample/images/angular-home-controller.png)  
 
  3. In the `dashboard-listing.component.html` file, a page is designed to list the dashboards on the left side and render the dashboard. The retrieved dashboard list has been sent to the `dashboardsList` property.  
- ![Dashboard Listing](/static/assets/embedded/javascript/sample/images/angular-dash-listing.png)  
+    ![Dashboard Listing](/static/assets/embedded/javascript/sample/images/angular-dash-listing.png)  
 
  4. By default, the first dashboard is rendered from the list using the `renderDashboard()` method in the `dashboards-listing.component.ts` file. This render method implemented with the Bold BI SDK component code.  
- ![Dashboard Rendering](/static/assets/embedded/javascript/sample/images/angular-dash-render.png) 
+    ![Dashboard Rendering](/static/assets/embedded/javascript/sample/images/angular-dash-render.png) 
 
  5. Before rendering, the `authorizationUrl` is called, which redirects to the `GetDetails` action in the `HomeController`, which generates the `EmbedSignature` using the embed secret provided in the `EmbedProperties.cs` of the ASP.NET Core application.  
- ![Get Embed Details](/static/assets/embedded/javascript/sample/images/angular-get-details.png)  
+    ![Get Embed Details](/static/assets/embedded/javascript/sample/images/angular-get-details.png)  
 
  6. These details will be sent to the Bold BI server and validated there. Once details are validated, the dashboard starts to render. 
 
 ## Steps to create new Angular application to embed dashboard
  1. Install the `nodeJs` application. Use the command prompt and type `ng new my-app` in desired location to create an angular application. Here `my-app` is the name of the folder for your application.
+
  2. Open the created folder in the visual studio code, and create a `dashboard-listing` folder with a `dashboard-listing-component.cshtml` and `dashboard-listing-component.ts` files in it. In the`app.component.ts` file, define the mandatory properties and invoke the `ngOnInit()` which is implemented in `dashboard-listing-component.ts` method as follows.
 
     ```js
@@ -159,6 +158,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/angular-with-
     ```
 
  3. In the `dashboard-listing-component.cshtml` file, create the DOM element to render the dashboard and  its list as follows.
+
      ```js 
         <div id="container">
             <div class="header-section">
@@ -177,8 +177,8 @@ A GitHub link has been provided to [get](https://github.com/boldbi/angular-with-
 
  4. In `Index.html` file, refer to the following cdn files in the `<head>` tag,
      ```js
-        <link rel="stylesheet" href="./assets/css/site.css"/>
-        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v5.3.53/boldbi-embed.js"></script>
+    <link rel="stylesheet" href="./assets/css/site.css"/>
+    <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v6.4.6/boldbi-embed.js"></script>
      ```
     
  5. In the `dashboard-listing-component.ts`, you need to implement the `ngOnInit()` and `renderDashboard()` methods.
@@ -254,34 +254,23 @@ A GitHub link has been provided to [get](https://github.com/boldbi/angular-with-
  8. In the `renderDashboard()` method, an instance is created to render a dashboard using the `loadDashboard()` method as follows.
 
      ```js
-      renderDashboard(dataObj) {
-        this.dashboard= BoldBI.create({
-            serverUrl: this._appComponent.baseUrl,
-            dashboardId:"efbf2999-f7e7-4831-a492-53c4df394af0",
-            embedContainerId: "dashboard",
-            embedType: BoldBI.EmbedType.Component,
-            environment: this._appComponent.environment=="enterprise"? BoldBI.Environment.Enterprise:BoldBI.Environment.Cloud,
-            width:"100%",
-            height:"100%",
-            expirationTime:100000,
-            authorizationServer: {
-                url :'',
-                data : dataObj
-            },
-            autoRefreshSettings: {
-                enabled: true,
-                hourlySchedule: {
-                    hours: 0,
-                    minutes: 10,
-                    seconds: 0
+        renderDashboard(dataObj) {
+            this.dashboard= BoldBI.create({
+                serverUrl: this._appComponent.baseUrl,
+                dashboardId:"efbf2999-f7e7-4831-a492-53c4df394af0",
+                embedContainerId: "dashboard",
+                embedType: BoldBI.EmbedType.Component,
+                environment: BoldBI.Environment.Enterprise, // If Cloud, you should use BoldBI.Environment.Cloud
+                mode: BoldBI.Mode.View,
+                width:"100%",
+                height:"100%",
+                expirationTime:100000,
+                authorizationServer: {
+                    url :'',
+                    data : dataObj
                 }
-            },
-            actionBegin:"emdbedDashboardActionBegin",
-            actionComplete:"emdbedDashboardActionComplete"
-        });
-
-        console.log(this.dashboard);
-        this.dashboard.loadDashboard();        
+            });
+            this.dashboard.loadDashboard();        
         } 
      ```
 
@@ -387,9 +376,10 @@ A GitHub link has been provided to [get](https://github.com/boldbi/angular-with-
      ```
     
  17. In the`HomeController.cs` define the `GetDashboard()` method to get the list of dashboards from the serve. It uses the `GetToken()` method, which helps to get the token from the server.
- Add a default view as `Index.cshtml`.
+    
+        Add a default view as `Index.cshtml`.
 
-     ```js
+        ```js
         public IActionResult Index()
         {
                 return View();
@@ -479,22 +469,20 @@ A GitHub link has been provided to [get](https://github.com/boldbi/angular-with-
 
      ```js
         renderDashboard(dashboard: Item) {
-        this.dashboard= BoldBI.create({
-            serverUrl: this._appComponent.baseUrl,
-            dashboardId: dashboard.Id,
-            embedContainerId: "dashboard",
-            embedType: BoldBI.EmbedType.Component,
-            environment: this._appComponent.environment=="enterprise"? BoldBI.Environment.Enterprise:BoldBI.Environment.Cloud,
-            width:"100%",
-            height:"100%",
-            expirationTime:100000,
-            authorizationServer: {
-                url:this._appComponent.apiHost + this._appComponent.authorizationUrl
-            }
-        });
-
-        console.log(this.dashboard);
-        this.dashboard.loadDashboard();        
+            this.dashboard= BoldBI.create({
+                serverUrl: this._appComponent.baseUrl,
+                dashboardId: dashboard.Id,
+                embedContainerId: "dashboard",
+                embedType: BoldBI.EmbedType.Component,
+                environment: BoldBI.Environment.Enterprise, // If Cloud, you should use BoldBI.Environment.Cloud
+                width:"100%",
+                height:"100%",
+                expirationTime:100000,
+                authorizationServer: {
+                    url:this._appComponent.apiHost + this._appComponent.authorizationUrl
+                }
+            });
+            this.dashboard.loadDashboard();        
         } 
      ```
 

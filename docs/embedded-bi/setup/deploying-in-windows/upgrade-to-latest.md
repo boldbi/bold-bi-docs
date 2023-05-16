@@ -75,19 +75,17 @@ Then, click `Next` to upgrade the Bold BI Enterprise using the existing server h
 
 ![Installation Location, IIS Port and Site Name](/static/assets/embedded/setup/images/installation-IIS-disabled.png)
 
-### PhantomJS
+## Chromium Packages
 
-> **IMPORTANT:** PhantomJS is a headless WebKit scriptable with JavaScript. This is a free software/open source, and it may contain MIT, BSD, LGPL, or GPL, or other similar licenses that contain third-party code. This executable file is necessary to achieve Image and PDF export functionalities in the Dashboard and widgets. Without this file, the image and PDF export options in the Dashboard and widgets will no longer be available. If you choose to download PhantomJS, must accept all terms and conditions to use it with Syncfusion products.
+> **IMPORTANT:** Chromium packages are necessary to achieve image and PDF export functionalities in dashboards, widgets, and schedules from Bold BI. Without these packages, the image and PDF export options in dashboard, widgets, and schedules will no longer be available.
 
-Read and accept the license and third-party terms and conditions by checking the option `LICENSE` and `Third-party` to install PhantomJS and click `Next`.
+![Installation PhantomJS](/static/assets/embedded/setup/images/installation-chromium-packages.png)  
 
-![Installation PhantomJS](/static/assets/embedded/setup/images/installation-phantomjs.png)  
-
-> **NOTE:**  If you have any problem with internet connection or do not have internet connection, unselect the PhantomJS download option and continue to install. To manually install the PhantomJS, please refer [this](/embedded-bi/faq/how-to-install-phantomjs-manually/).
+> **NOTE:** If you have any problem with internet connection or do not have internet connection, unselect the Chromium Packages download option and continue to install. To manually install the Chromium Packages, refer to [this](https://help.boldbi.com/embedded-bi/faq/how-to-install-chromium-packages-manually/).
 
 ### Client libraries
 
-> **IMPORTANT:** Bold BI Enterprise edition uses client libraries such as Oracle, PostgreSQL, MySQL, and MongoDB to connect with their respective SQL database variants. Check license of each library to give consent for installation. Selected client libraries alone will be shipped into the product.
+> **IMPORTANT:** Bold BI Enterprise Edition uses client libraries such as Oracle, PostgreSQL, MySQL, Snowflake, MongoDB, InfluxDB, Amazon Athena, Google BigQuery, and ClickHouse  to connect with their respective SQL database variants. Check license of each library to give consent for installation. The selected client libraries alone will be shipped into the product.
 
 ![Installation Client Libraries](/static/assets/embedded/setup/images/installation-clientlibraries.png)
 

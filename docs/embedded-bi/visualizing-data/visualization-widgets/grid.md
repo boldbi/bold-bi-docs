@@ -170,7 +170,7 @@ This allows you to differentiate `alternative rows` of the grid by the backgroun
 
 ### Summary Row
 
-This Section allows you to add a summary row at end of the grid container
+This Section allows you to add a summary row at end of the grid container.
 
 ![Summary Row](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/grid-summary-row.png)
 
@@ -181,12 +181,6 @@ If you enable the `Enable Summary Row` option, following window shows.
 Click on `Add Summary` to add a summary row
 
 ![Summary Row Add](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/grid-summary-rowadd.png)
-
-![Summary Row Apply](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/grid-summary-rowapply.png)
-
-You can customize each column in the grid to show a summary row
-
-![Summary Row Customize](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/grid-summary-rowcustomize.png)
 
 ***Type***
 
@@ -200,9 +194,15 @@ This option allows you to customize the title of the summary row
 
 This option allows you to customize the visibility of the summary value of a column in the summary row.
 
+***Title Color***
+
+This option allows you to customize the grid summary row title color.
+
 ***Value Color***
 
-This option allows you to customize the grid summary row font color.
+This option allows you to customize the grid summary row value color.
+
+![Summary Row Value Color](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/value_color.png)
 
 ***Format***
 
@@ -213,6 +213,56 @@ This option allows you to measure the format of the summary value. For more deta
 ***Delete***
 
 This option allows you to delete the summary row.
+
+We can configure summary rows for each column by clicking on the respective column.
+
+![Summary Row Customize](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/grid-summary-rowcustomize.png)
+
+After configuring the summary rows and customizing the properties, click the update button. We can then see the summary rows added at the bottom of the grid, as shown in the image below.
+
+![Summary Row Apply](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/grid-summary-rowapply.png)
+
+#### Background
+
+You can customize the summary row background color by using this property. The default color of the summary row background is same as grid header color, which is `#f3f7fa`.
+
+![Summary Row Background Color](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/background.png)
+
+#### Auto Height
+
+This property picks auto height for grid summary row when it is enabled, otherwise it allows you to choose fixed height from `Height` property. This option is enabled by default.
+
+#### Height
+
+You can enable this property by disabling `Auto Height`, You can use the `Height` property to view the entire summary row when creating more than one Summary row. You can customize the height of the grid summary row by increasing or decreasing the values. The minimum value of this property is 10.
+
+![Summary Row Height](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/summaryrow_height.png)
+
+#### Auto Padding
+
+This property picks auto padding for grid summary row when it is enabled, The default value of this auto padding is 15. This option is enabled by default.
+
+#### Padding
+
+You can enable this property by disabling `Auto Padding`, You can increase or decrease the space between top and bottom of the border by adjusting the `padding` option.
+
+![Summary Row Padding](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/summaryrow_padding.png)
+
+#### Auto Font Size
+
+This property picks auto font-size for grid summary row title and value when it is enabled, The default value of this auto font-size is 12. This option is enabled by default.
+
+#### Font Size
+
+You can enable this property by disabling `Auto Font Size`, Which allows you to adjust the font size of the grid summary row title and value.
+
+![Summary Row Font Size](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/summaryrow_fontsize.png)
+
+#### Customize
+
+You can edit the existing summary row configuration by using this `Customize` button. Upon clicking the `Customize` button, The summary row dialog will appear displaying the current configuration, as shown in the image below.
+
+![Summary Row Customize](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/grid-summary-row-Customize.png)
 
 ### Page Settings
 

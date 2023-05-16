@@ -30,6 +30,7 @@
       },
       "Deploying in Linux": {
         "Prerequisites": "prerequisites-linux",
+        "Recommended System Configuration": "recommended-system-configuration",
         "Installation and Deployment": {
           "v4.1 or Older": {
             "Bold BI on Ubuntu": "bold-bi-on-ubuntu",
@@ -82,20 +83,20 @@
         "v3.3.40 or later": {
           "ASP.NET Core": "asp-net-core",
           "ASP.NET MVC": "asp-net-mvc",
-          "Angular with javascript": "angular-with-javascript",
+          "Angular with JavaScript": "angular-with-javascript",
           "ASP.NET": "asp-net",
-          "Blazor with javascript": "blazor-with-javascript",
+          "Blazor with JavaScript": "blazor-with-javascript",
           "Ruby on Rails": "ruby-on-rails",
           "React with ASP.NET Core": "react-core",
           "React with Go": "react-with-go",
           "Winforms": "winforms",
           "Node.js": "node-js",
-          "PHP with javascript": "php-with-javascript",
+          "PHP with JavaScript": "php-with-javascript",
           "VueJS with Go": "vuejs-with-go",
-          "VueJS with core": "vuejs-with-core",
+          "VueJS with ASP.NET Core": "vuejs-with-core",
           "WPF": "wpf",
           "Xamarin": "xamarin",
-		      "Flutter with javascript":"flutter-with-javascript",
+		      "Flutter with JavaScript":"flutter-with-javascript",
 		      "Other platform samples":"other-platform-samples"
         },
         "v3.2.16": {
@@ -130,6 +131,10 @@
       "Creating a New Data Source": "creating-a-new-data-source.md",
       "Query Processing Modes": "classification-of-data-sources-queried-directly-and-extracted",
       "Bold BI Intermediate Database": "bold-bi-intermediate-database",
+       "Connection Settings":{
+        "Enable Disable Connections":"enable-disable-connections.md",
+        "Oauth Configuratioin":"oauth-configuration.md"
+      },
       "Custom Connector": {
         "Configure Custom Connector": "configure-custom-connector",
         "Create Custom Connector": "create-custom-connector"
@@ -185,6 +190,7 @@
         "Gitlab": "gitlab",
         "GitHub": "github",
         "Gmail": "gmail",
+        "GoHighLevel": "gohighlevel",
         "GoSquared": "go-squared",
         "Google Ads": "google-ads",
         "Google AdSense": "google-adsense",
@@ -230,7 +236,6 @@
         "ODBC": "odbc",
         "Optimizely": "optimizely",
         "Oracle": "oracle",
-        "Oracle BI Reports": "oracle-bi-reports",
         "Origami": "origami",
         "Pipeline Deals": "pipeline-deals",
         "Pipedrive": "pipedrive",
@@ -515,8 +520,7 @@
           "Auth0": "auth0",
           "Keycloak": "keycloak",
           "RedHat": "redhat"
-        },
-        "JSON Web Token": "json-web-token"
+        }
       },
       "Usage Analytics Dashboard": "usage-analytics-dashboard"
     },
@@ -533,7 +537,6 @@
         "Delete Dashboards": "delete-dashboards",
         "Share Dashboards": "share-dashboards",
         "Advanced Dashboard Security": "advanced-dashboard-security",
-        "Publish Dashboards": "publish-dashboards",
         "Unlisted Dashboards": "unlisted-dashboards"
       },
       "Manage Data Sources": "manage-data-sources",
@@ -569,6 +572,14 @@
         "Import OpenID Connect Groups": "import-openid-groups"
       }
     },
+    "Resource Migration": {
+      "Migrate Dashboards Online" : "migrate-dashboards-online",
+      "Migrate Data Sources Online": "migrate-data-sources-online",
+      "Migrate Dashboards Offline": {
+        "Download Dashboards" : "download-dashboards",
+        "Upload Dashboards": "upload-dashboards"
+      }
+    },
     "Manage Permissions": "manage-permissions",
     "Rebranding": "rebranding",
     "Migration Utility": "migration-utility",
@@ -596,10 +607,12 @@
     "REST API Reference": {
       "Site Administration": {
         "v1.0": {
-          "API Reference": "api-reference?html=true"
+          "API Reference": "api-reference?html=true",
+		  "Try it now": "try-it-now?html=true"
         },
         "v2.0": {
-          "API Reference": "api-reference?html=true"
+          "API Reference": "api-reference?html=true",
+		  "Try it now": "try-it-now?html=true"
         }
       },
       "Interact with REST API": "interact-with-rest-api",

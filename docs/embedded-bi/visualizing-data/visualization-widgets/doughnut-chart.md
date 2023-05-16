@@ -132,6 +132,68 @@ The configured field names can be edited by using the `Rename` option provided i
 
 ![Rename](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/rename.png)
 
+## Hidden Column
+
+Hidden columns are useful in cases where we don't want the fields to take part in the visualization, but only to be used for [linking](#linking), [filtering](#filtering) and [view data](#view-data).  
+
+![Hidden column](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/assign-data.png)
+
+We can configure both measure and dimension fields into the hidden column. For measure we will be having all the settings we have for the measure fields expect formatting and filtering. 
+
+![Measure](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/measure.png)
+
+In the case of dimension fields we will having the following options only. In Date fields we will having all available types except sorting, relative date filter, settings and filters.
+
+![Dimension](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/dimension.png)
+
+![Date field](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/date.png)
+
+#### Linking
+
+The primary use case of the hidden columns is linking. On configuring hidden columns, we can see below that the fields configured in hidden columns are listed in the linking section.  On configuring the column in linking we can pass the corresponding column value in linking parameter.
+
+**Measure Based Example:** If we wish to pass the number of Matches played as an URL parameter but do not want it to influence the visualization, we can configure the Matches in the hidden columns and incorporate them into the link.
+
+![Linking](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/link-measure.png)
+
+**Dimension Based Example:** If we wish to pass the number of Team Name played as an URL parameter but do not want it to influence the visualization, we can configure  the Team Name in the hidden columns and incorporate them into the link.
+
+![Linking](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/link-dimension.png)
+
+#### Filtering
+
+You can use hidden columns to filter data in the visualizations. Configure hidden columns and click the below filter icon.
+
+![Filtering](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/filtericon.png)
+
+Click the Custom button highlighted in the filter configuration dialog image below. It will list all the fields configured in the widget. Keep the field configured in the hidden column and remove the other fields, then click the Update button.
+
+![Filtering](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/custom.png)
+
+Now, we can see in the below image, the data is filtered based on the hidden column field instead of the actual column that we bound in the widget.
+
+![Filtering](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/hidden-column-filter.png)
+
+For more details about filtering the widget data, refer to the [Filter Configuration documentation](/embedded-bi/working-with-dashboards/configuring-dashboard-filters/)
+
+#### View Data
+
+You can view the data in the hidden columns in the underlying data view. This is useful for checking the data in more detail and can help you to identify any issues with the data.
+ 
+![View data](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/viewdata.png)
+
+> **NOTE:** We don't recommend to configure lower hierarchy data in hidden columns as we can see in the info icon in `Hidden Column` section denotes the same. 
+
+![Hidden Column ](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/info-icon.png)
+
+The below chart displays the goals by each team without hidden columns.
+
+![Before](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/before.png)
+
+If we configure lower hierarchy data(Player Name) in hidden columns compared to column and Row filed data, the data configured in the widgets gets duplicate, This affects the chart visualization as we can see in the below image.
+
+![After](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/after.png)
+
 **Assigning rows**
 
 You can drag and drop the `Dimension` field into the `Rows` field.

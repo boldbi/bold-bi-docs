@@ -8,13 +8,13 @@ documentation: ug
 
 # Bold BI Dashboards embedding in Windows Forms using Embedded SDK
 
-The link has been provided to [download](https://onpremise-demo.boldbi.com/getting-started/windows-forms-v3.3/sample.zip) the sample application, which demonstrates the dashboard rendering with the list of dashboards available in your Bold BI server and followed by steps to create a new embedding application in the `Windows Forms` on your own. 
+A GitHub link has been provided to [get](https://github.com/boldbi/winforms-sample) the sample application, which demonstrates the rendering of dashboard available in your Bold BI server and followed by steps to create a new embedding application in the `Windows Forms` on your own. 
 
 > **NOTE:** The best way to get started would be reading the [Getting Started](/embedded-bi/javascript-based/getting-started/) section of the documentation to start using first. The `Getting Started` guide gives you enough information that you need to know before working on the sample.  
 
 ## How to run the sample
 
- 1. Please [download](https://onpremise-demo.boldbi.com/getting-started/windows-forms-v3.3/sample.zip) the Windows Forms sample.    
+ 1. Please [get](https://github.com/boldbi/winforms-sample) the Windows Forms sample.    
 
  2. You need to set your embed property details in the `EmbedProperties.cs. `
      ![Embed Properties](/static/assets/embedded/javascript/sample/images/winforms-props.png)
@@ -50,7 +50,7 @@ The link has been provided to [download](https://onpremise-demo.boldbi.com/getti
     </table>
 
  3. Get the item id of the dashboard from the BI server. Please refer to this [link](/embedded-bi/working-with-dashboards/share-dashboards/get-dashboard-link/#get-link) and the following screenshot.  
- ![Get Dashboard Id](/static/assets/embedded/javascript/sample/images/get-dashboard-id.png#max-width=55%)
+    ![Get Dashboard Id](/static/assets/embedded/javascript/sample/images/get-dashboard-id.png#max-width=55%)
 
  4. Then, run your Windows Forms sample.
 
@@ -58,7 +58,7 @@ The link has been provided to [download](https://onpremise-demo.boldbi.com/getti
 
      ```js
      var htmlString = new StringBuilder();
-                htmlString.Append("<!DOCTYPE html><html><head><link rel='stylesheet' href='" + System.AppDomain.CurrentDomain.BaseDirectory.Replace("bin\\x64\\Debug\\", "") + "content\\chromium.css'/><script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script><script src='https://cdn.polyfill.io/v2/polyfill.min.js'></script><script type='text/javascript' src='" + System.AppDomain.CurrentDomain.BaseDirectory.Replace("bin\\x64\\Debug\\", "") + "scripts\\EmbedBiWrapper.js'></script></script><script type='text/javascript'>$(document).ready(function() {this.dashboard = BoldBI.create({ serverUrl:'" + EmbedProperties.RootUrl + EmbedProperties.SiteIdentifier + "', dashboardId:'" + EmbedProperties.DashboardId + "',embedContainerId: 'dashboard',embedType:'" + EmbedProperties.EmbedType + "',environment:'" + EmbedProperties.Environment + "',width: window.innerWidth - 20 + 'px',height: window.innerHeight - 20 + 'px',expirationTime: 100000,authorizationServer:{url: '', data:" + resultContent + "},dashboardSettings:{showExport: false,showRefresh: false,showMoreOption: false}});console.log(this.dashboard);this.dashboard.loadDashboard();});</script></head><body style='background-color: white'><div id ='viewer-section' style='background-color: white'><div id ='dashboard'></div></div></body></html>");
+    htmlString.Append("<!DOCTYPE html><html><head><link rel='stylesheet' href='" + System.AppDomain.CurrentDomain.BaseDirectory.Replace("bin\\x64\\Debug\\", "") + "content\\chromium.css'/><script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script><script src='https://cdn.polyfill.io/v2/polyfill.min.js'></script><script type='text/javascript' src='" + System.AppDomain.CurrentDomain.BaseDirectory.Replace("bin\\x64\\Debug\\", "") + "scripts\\EmbedBiWrapper.js'></script></script><script type='text/javascript'>$(document).ready(function() {this.dashboard = BoldBI.create({ serverUrl:'" + EmbedProperties.RootUrl + EmbedProperties.SiteIdentifier + "', dashboardId:'" + EmbedProperties.DashboardId + "',embedContainerId: 'dashboard',embedType:'" + BoldBI.EmbedType.Component + "',environment:'" + BoldBI.Environment.Enterprise, /* If Cloud, you should use BoldBI.Environment.Cloud */ + "'mode: '" + BoldBI.Mode.View + "',width: window.innerWidth - 20 + 'px',height: window.innerHeight - 20 + 'px',expirationTime: 100000,authorizationServer:{url: '', data:" + resultContent + "}});this.dashboard.loadDashboard();});</script></head><body style='background-color: white'><div id ='viewer-section' style='background-color: white'><div id ='dashboard'></div></div></body></html>");
      ```
 
     <meta charset="utf-8"/>
@@ -94,23 +94,26 @@ The link has been provided to [download](https://onpremise-demo.boldbi.com/getti
 ## How this sample works
 
  1. Based on the dashboard provided in the embed properties, you will authorize the server URL by calling the `GetEmbedDetails` function.
- Learn more about the authorize server [here](/embedded-bi/javascript-based/authorize-server/)
- ![Get Embed Details](/static/assets/embedded/javascript/sample/images/winforms-authorize.png)
+    
+    Learn more about the authorize server [here](/embedded-bi/javascript-based/authorize-server/)
+    ![Get Embed Details](/static/assets/embedded/javascript/sample/images/winforms-authorize.png)
 
  2. In the above authorization, the `SignatureUrl` has been generated with the provided `EmbedSecret key` and validated the embed details in Bold BI. Once details are validated, the dashboard starts to render.
 
  3. In the `EmbedProperties.cs`, change the dashboard Id of the respective dashboard as you wish to embed.
- ![Set Dashboard Id](/static/assets/embedded/javascript/sample/images/winforms-dashboard.png)
+    ![Set Dashboard Id](/static/assets/embedded/javascript/sample/images/winforms-dashboard.png)
 
 
 ## Steps to create new Windows Forms application to embed dashboard
  1. Start Visual Studio and click `Create a new project`.
 
  2. Choose Windows Forms Application (.NET Framework), then click `Next`.
-   ![SelectProject](/static/assets/embedded/javascript/sample/images/winforms_create_project.png#max-width=85%)
+    ![SelectProject](/static/assets/embedded/javascript/sample/images/winforms_create_project.png#max-width=85%)
+
  3. Change the project name as you want, then click `Create`.
 
  4. Create a script folder in the project and add the latest `EmbedWrapper.js` in it.
+ 
  5. Create the model class `EmbedProperties.cs` in the project, include a code as follows.
 
      ```js
@@ -166,7 +169,7 @@ The link has been provided to [download](https://onpremise-demo.boldbi.com/getti
                 string resultContent = result.Content.ReadAsStringAsync().Result;
                 //webBrowser1.ObjectForScripting = this;
                 var htmlString = new StringBuilder();
-                htmlString.Append("<!DOCTYPE html><html><head><link rel='stylesheet' href='" + System.AppDomain.CurrentDomain.BaseDirectory.Replace("bin\\x64\\Debug\\", "") + "content\\chromium.css'/><script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script><script src='https://cdn.polyfill.io/v2/polyfill.min.js'></script><script type='text/javascript' src='" + System.AppDomain.CurrentDomain.BaseDirectory.Replace("bin\\x64\\Debug\\", "") + "scripts\\EmbedBiWrapper.js'></script></script><script type='text/javascript'>$(document).ready(function() {this.dashboard = BoldBI.create({ serverUrl:'" + EmbedProperties.RootUrl + EmbedProperties.SiteIdentifier + "', dashboardId:'" + EmbedProperties.DashboardId + "',embedContainerId: 'dashboard',embedType:'" + EmbedProperties.EmbedType + "',environment:'" + EmbedProperties.Environment + "',width: window.innerWidth - 20 + 'px',height: window.innerHeight - 20 + 'px',expirationTime: 100000,authorizationServer:{url: '', data:" + resultContent + "},dashboardSettings:{showExport: false,showRefresh: false,showMoreOption: false}});console.log(this.dashboard);this.dashboard.loadDashboard();});</script></head><body style='background-color: white'><div id ='viewer-section' style='background-color: white'><div id ='dashboard'></div></div></body></html>");
+                htmlString.Append("<!DOCTYPE html><html><head><link rel='stylesheet' href='" + System.AppDomain.CurrentDomain.BaseDirectory.Replace("bin\\x64\\Debug\\", "") + "content\\chromium.css'/><script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script><script src='https://cdn.polyfill.io/v2/polyfill.min.js'></script><script type='text/javascript' src='" + System.AppDomain.CurrentDomain.BaseDirectory.Replace("bin\\x64\\Debug\\", "") + "scripts\\EmbedBiWrapper.js'></script></script><script type='text/javascript'>$(document).ready(function() {this.dashboard = BoldBI.create({ serverUrl:'" + EmbedProperties.RootUrl + EmbedProperties.SiteIdentifier + "', dashboardId:'" + EmbedProperties.DashboardId + "',embedContainerId: 'dashboard',embedType:'" + BoldBI.EmbedType.Component + "',environment:'" + BoldBI.Environment.Enterprise, /* If Cloud, you should use BoldBI.Environment.Cloud */ + "'mode: '" + BoldBI.Mode.View + "',width: window.innerWidth - 20 + 'px',height: window.innerHeight - 20 + 'px',expirationTime: 100000,authorizationServer:{url: '', data:" + resultContent + "}});this.dashboard.loadDashboard();});</script></head><body style='background-color: white'><div id ='viewer-section' style='background-color: white'><div id ='dashboard'></div></div></body></html>");
                 string filePath = AppDomain.CurrentDomain.BaseDirectory + "EmbedWrapper.html";
                 if (File.Exists(filePath))
                 {

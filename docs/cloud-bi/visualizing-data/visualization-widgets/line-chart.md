@@ -266,12 +266,6 @@ This allows you to toggle the visibility of marker from label to adorn each data
 
 ![Show Marker](/static/assets/cloud/visualizing-data/visualization-widgets/images/line-chart/show-marker.png)
 
-#### Line Width
-
-This allows you to customize the width of the line chart.
-
-![Line Width](/static/assets/cloud/visualizing-data/visualization-widgets/images/line-chart/line-width.png)
-
 ### Show Items With No Data
 
 This allows you to show the data which column does `not` have value.
@@ -309,6 +303,36 @@ On enabling this support, the chart scroll bar thumb-size will be calculated bas
 **Page Size**
 
 This option allows you to set number of records needs to be fetched on initial load.
+
+#### Line Style
+
+Click `Customize` to open the `Custom Line Style Settings ` dialog.
+
+![Line Style](/static/assets/cloud/visualizing-data/visualization-widgets/images/line-chart/linestyle-property.png)
+
+Now, the dialog will open as follows.
+
+![Line Style Settings Dialog](/static/assets/cloud/visualizing-data/visualization-widgets/images/line-chart/custom-linestyle-settings-dialog.png)
+
+***Series***
+
+The default option applies to all the series in the line chart. If you want to customize individual series, select that series by the `Series` drop-down option.
+
+***Line Style***
+
+![Line Style Type](/static/assets/cloud/visualizing-data/visualization-widgets/images/line-chart/linestyle-type.png)
+
+To change the Line Style of the selected Series, choose the available styles such as Solid, Dot, Dash, DotDash, LongDash, and LongDashDotDot from the `Line Style` drop-down option.
+
+***Line Width***
+
+Use the Line Width option to adjust the line width for the selected series.
+
+Click `OK` to add a custom line style settings in a line chart. Now, the chart renders as follows.
+
+![Custom Line Style Chart](/static/assets/cloud/visualizing-data/visualization-widgets/images/line-chart/custom-linestyle-series.png)
+
+> **Note:** The Line Style property is only visible if you have Line or Spline chart.
 
 ### Legend Settings
 

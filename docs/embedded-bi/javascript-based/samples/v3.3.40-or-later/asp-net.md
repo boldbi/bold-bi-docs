@@ -17,9 +17,9 @@ A GitHub link has been provided to [get](https://github.com/boldbi/aspnet-web-fo
 1. Please [get](https://github.com/boldbi/aspnet-web-forms-sample) the ASP.NET Web Forms sample.    
 
 2. You need to set your embed property details in the `EmbedProperties.cs` and `Site.Master` as follows.  
-![Embed Properties](/static/assets/embedded/javascript/sample/images/asp-net-embed.png)
-![Embed Properties in Site](/static/assets/embedded/javascript/sample/images/asp-net-site.png)
- <meta charset="utf-8"/>
+    ![Embed Properties](/static/assets/embedded/javascript/sample/images/asp-net-embed.png)
+    ![Embed Properties in Site](/static/assets/embedded/javascript/sample/images/asp-net-site.png)
+    <meta charset="utf-8"/>
     <table>
     <tbody>
         <tr>
@@ -49,28 +49,27 @@ A GitHub link has been provided to [get](https://github.com/boldbi/aspnet-web-fo
     </tbody>
     </table>
 
-
 3. Run your ASP.NET Web Forms sample.
 
 4. The dashboard can be rendered in design mode or created with the following changes in the `Init()` method.
+    
     ```js
     <script type="text/javascript">
         var dashboardId = "db8d3eb2-a608-4ffd-9aad-cd51278e1531";
         function Init() {
             this.dashboard = BoldBI.create({
                 serverUrl: "http://localhost:12345/bi/site/site1",
-                dashboardId: dashboardId,//Provide item id to render it in design mode,to create dashboard remove this property
+                dashboardId: dashboardId, //Provide item id to render it in design mode,to create dashboard remove this property
                 embedContainerId: "dashboard",
                 embedType: BoldBI.EmbedType.Component,
-                environment: "enterprise",
-                mode:BoldBI.Mode.Design
+                environment: BoldBI.Environment.Enterprise, // If Cloud, you should use BoldBI.Environment.Cloud
+                mode: BoldBI.Mode.Design,
                 width: "100%",
                 height: "100%",
                 expirationTime: 100000,
                 authorizationServer: {
                     url: "Default.aspx/GetEmbedDetails"
                 }
-                
             });
             this.dashboard.loadDesigner();
         }
@@ -110,22 +109,26 @@ A GitHub link has been provided to [get](https://github.com/boldbi/aspnet-web-fo
 ## How this sample works
 
  1. Based on the provided embed details with the dashboard, authorize the server URL by calling the `GetEmbedDetails` function, `(Default.aspx/GetEmbedDetails)`call, and the provided `EmbedProperties` values.
- Learn more about authorize server [here](/embedded-bi/javascript-based/authorize-server/)
- ![Authorize Server URL](/static/assets/embedded/javascript/sample/images/asp-net-api.png)
- ![Get Embed Details](/static/assets/embedded/javascript/sample/images/asp-net-authorize.png)
+ 
+    Learn more about authorize server [here](/embedded-bi/javascript-based/authorize-server/)
+    ![Authorize Server URL](/static/assets/embedded/javascript/sample/images/asp-net-api.png)
+    ![Get Embed Details](/static/assets/embedded/javascript/sample/images/asp-net-authorize.png)
 
  2. In the above authorization, the `SignatureUrl` is generated with the provided `EmbedSecret key` and validated embed details in Bold BI. Once details are validated, the dashboard starts to render.
 
  3. In the `Site.Master`, change the dashboard Id of the respective dashboard as you wish to embed.
- ![Set Dashboard Id](/static/assets/embedded/javascript/sample/images/asp-net-dashboard.png)
+    ![Set Dashboard Id](/static/assets/embedded/javascript/sample/images/asp-net-dashboard.png)
 
 ## Steps to create new ASP.NET Web Forms application to embed dashboard
  1. Start Visual Studio and click `Create a new project`.
+
  2. Choose ASP.NET Web Application (.NET Framework), then click `Next.`
-   ![SelectProject](/static/assets/embedded/javascript/sample/images/MVC_framework.png)
+    ![SelectProject](/static/assets/embedded/javascript/sample/images/MVC_framework.png)
+
  3. Change the project name as you want, then click `Create`.
+
  4. Choose Web Forms and Web API, then click `OK`.
- ![SelectProject](/static/assets/embedded/javascript/sample/images/asp_net_create_project.png)
+    ![SelectProject](/static/assets/embedded/javascript/sample/images/asp_net_create_project.png)
 
  5. Under the model folder, create the `EmbedProperties.cs` class to define the mandatory properties as follows.
 
@@ -140,6 +143,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/aspnet-web-fo
     }
 
     ```
+
  6. Open the `Default.aspx.cs` implement an API `GetEmbedDetails()`, which invokes the `GetSignatureUrl()` method as follows.
 
      ```js
@@ -184,8 +188,9 @@ A GitHub link has been provided to [get](https://github.com/boldbi/aspnet-web-fo
 
  7. In the `Site.Master`, refer to the following file, which is mandatory to render the dashboard.
     ```js
-    <script src="https://cdn.boldbi.com/embedded-sdk/v5.3.53/boldbi-embed.js"></script>
+    <script src="https://cdn.boldbi.com/embedded-sdk/v6.4.6/boldbi-embed.js"></script>
     ```
+    
  8. In the `<body>` section, initialize the method as `Init()` and remove the existing header container. In the `<script>`tag, implement its functionality as follows.
  
      ```js
@@ -193,18 +198,18 @@ A GitHub link has been provided to [get](https://github.com/boldbi/aspnet-web-fo
             var dashboardId = "db8d3eb2-a608-4ffd-9aad-cd51278e1531";
             function Init() {
                 this.dashboard = BoldBI.create({
-                    serverUrl: "http://localhost:12345/bi/site/site1",//Dashboard Server BI URL (ex: http://localhost:5000/bi/site/site1, http://demo.boldbi.com/bi/site/site1)
-                    dashboardId: dashboardId,//Dashboard id of the dashboard you want to embed here.
-                    embedContainerId: "dashboard",//DOM id where the dashboard will be rendered, here it is dashboard.
+                    serverUrl: "http://localhost:12345/bi/site/site1", //Dashboard Server BI URL (ex: http://localhost:5000/bi/site/site1, http://demo.boldbi.com/bi/site/site1)
+                    dashboardId: dashboardId, //Dashboard id of the dashboard you want to embed here.
+                    embedContainerId: "dashboard", //DOM id where the dashboard will be rendered, here it is dashboard.
                     embedType: BoldBI.EmbedType.Component,
-                    environment: "enterprise",//Your Bold BI application environment. (If Cloud, you should use cloud, if  Enterprise, you should use enterprise)
+                    environment: BoldBI.Environment.Enterprise, // If Cloud, you should use BoldBI.Environment.Cloud
+                    mode: BoldBI.Mode.View,
                     width: "100%",
                     height: "100%",
-                    expirationTime: 100000,//Set the duration for the token to be alive.
+                    expirationTime: 100000, //Set the duration for the token to be alive.
                     authorizationServer: {
-                        url: "Default.aspx/GetEmbedDetails"//URL from which particular dashboard details is obtained from server.
+                        url: "Default.aspx/GetEmbedDetails" //URL from which particular dashboard details is obtained from server.
                     }
-                    
                 });
                 this.dashboard.loadDashboard();
             }

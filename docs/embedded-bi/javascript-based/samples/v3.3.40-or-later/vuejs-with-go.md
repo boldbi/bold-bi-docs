@@ -8,16 +8,16 @@ documentation: ug
 
 # Building dashboard app in VueJs with Go using Embedded SDK
 
-The link has been provided to [download](https://onpremise-demo.boldbi.com/getting-started/vuejs-go-v4.1/sample.zip) the sample application, which demonstrates the dashboard rendering with the list of dashboards available in your Bold BI server and followed by steps to create a new embedding application in the `VueJs` with `Go` on your own. 
+A GitHub link has been provided to [get](https://github.com/boldbi/vue-with-go-sample) the sample application, which demonstrates the rendering of dashboard available in your Bold BI server and followed by steps to create a new embedding application in the `VueJs` with `Go` on your own. 
 
 > **NOTE:** The best way to get started would be reading the [Getting Started](/embedded-bi/javascript-based/getting-started/) section of the documentation. The `Getting Started` guide gives you enough information that you need to know before working on the sample.  
 
 ## How to run the sample
 
- 1. Please [download](https://onpremise-demo.boldbi.com/getting-started/vuejs-go-v4.1/sample.zip) the VueJS with Go Application.    
+ 1. Please [get](https://github.com/boldbi/vue-with-go-sample) the VueJS with Go Application.    
 
  2. Here, the VueJS application act as a client, and the Go application act as a server since you need to set the following properties in the `App.vue` file in the VueJS app as follows.
- ![Embed Properties in VueJS](/static/assets/embedded/javascript/sample/images/vuejs-go-props.png)  
+    ![Embed Properties in VueJS](/static/assets/embedded/javascript/sample/images/vuejs-go-props.png)  
 
     <meta charset="utf-8"/>
     <table>
@@ -46,10 +46,10 @@ The link has been provided to [download](https://onpremise-demo.boldbi.com/getti
     </table>
 
  3. Get the item id of the dashboard from the BI server. Please refer to this [link](/embedded-bi/working-with-dashboards/share-dashboards/get-dashboard-link/#get-link) and the following screenshot.  
-  ![Get Dashboard Id](/static/assets/embedded/javascript/sample/images/get-dashboard-id.png#max-width=55%)
+    ![Get Dashboard Id](/static/assets/embedded/javascript/sample/images/get-dashboard-id.png#max-width=55%)
 
  4. In the`main.go` of the Go application, you need to set the UserEmail and EmbedSecret properties. 
-  ![Embed Properties in GO](/static/assets/embedded/javascript/sample/images/react-go-main.png)
+    ![Embed Properties in GO](/static/assets/embedded/javascript/sample/images/react-go-main.png)
 
     <meta charset="utf-8"/>
     <table>
@@ -71,33 +71,20 @@ The link has been provided to [download](https://onpremise-demo.boldbi.com/getti
 
     ```js
     let dashboard = BoldBI.create({
-                      serverUrl: rootUrl + siteIdentifier,
-                      dashboardId: dashboardId,//Provide item id to render it in design mode,to create dashboard remove this property
-                      embedContainerId: "dashboard",
-                      embedType: BoldBI.EmbedType.Component,
-                      environment: environment == "onpremise" ? BoldBI.Environment.Enterprise : BoldBI.Environment.Cloud,
-                      mode:BoldBI.Mode.Design,
-                      width: "100%",
-                      height: window.innerHeight + "px",
-                      expirationTime: 100000,
-                      authorizationServer: {
-                          url: authorizationUrl
-                      },
-                      dynamicConnection: {
-                          isEnabled: false,
-                          identity: "",
-                      },
-                      autoRefreshSettings: {
-                          enabled: true,
-                          hourlySchedule: {
-                              hours: 0,
-                              minutes: 1,
-                              seconds: 0
-                          }
-                      }
-                  });
-                  dashboard.loadDesigner(); 
-                  console.log(dashboard);
+      serverUrl: rootUrl + siteIdentifier,
+      dashboardId: dashboardId,//Provide item id to render it in design mode,to create dashboard remove this property
+      embedContainerId: "dashboard",
+      embedType: BoldBI.EmbedType.Component,
+      environment: BoldBI.Environment.Enterprise, // If Cloud, you should use BoldBI.Environment.Cloud
+      mode: BoldBI.Mode.Design,
+      width: "100%",
+      height: window.innerHeight + "px",
+      expirationTime: 100000,
+      authorizationServer: {
+        url: authorizationUrl
+      }
+    });
+    dashboard.loadDesigner(); 
     ```
 
     <meta charset="utf-8"/>
@@ -133,20 +120,22 @@ The link has been provided to [download](https://onpremise-demo.boldbi.com/getti
 ## How this sample works
 
  1. Based on the `dashboard` provided in the `App.vue`, you will authorize the server by calling the GetEmbedDetails function using the `AuthorizeURL(http://localhost:8086/getDetails)` with the provided `EmbedProperties` values. 
- ![Get Embed Details](/static/assets/embedded/javascript/sample/images/react-go-authorize.png)
+    ![Get Embed Details](/static/assets/embedded/javascript/sample/images/react-go-authorize.png)
 
  2. In the above authorization, the `SignatureURL` has been generated with the provided `EmbedSecret key` and embed details which can be validated in the Bold BI Server API and returns the token. Based on the returned token, the dashboard will start to render. 
- ![Get Signature Url](/static/assets/embedded/javascript/sample/images/react-go-signature.png)
+    ![Get Signature Url](/static/assets/embedded/javascript/sample/images/react-go-signature.png)
 
  3. In the `App.vue`, change the dashboard Id of the respective dashboard based on your requirement.  
- ![Set Dashboard Id](/static/assets/embedded/javascript/sample/images/vuejs-go-dashboard.png)  
+    ![Set Dashboard Id](/static/assets/embedded/javascript/sample/images/vuejs-go-dashboard.png)  
 
  ## Steps to create new VueJs with Go application to embed dashboard
 
  1. Create the Vue application by running the command `vue create my-app`. Here `my-app` is the folder name of the Vue application.
+
  2. Open the created folder in the visual studio code, and change the directory by running the command `cd my-app.`
+
  3. Download the VueJs with Go sample and open the VueJS in the visual studio code using the `EmbedBIWrapper.js` file and import it in the `App.vue` as follows.
- ![WrapperFileInclusion](/static/assets/embedded/javascript/sample/images/vue_wrapper_inclusion.png)
+    ![WrapperFileInclusion](/static/assets/embedded/javascript/sample/images/vue_wrapper_inclusion.png)
    
  4. In the `App.vue` file, create a DOM element with the id `dashboard` including the mandatory cdn files and properties to render the dashboard.
 
@@ -154,7 +143,7 @@ The link has been provided to [download](https://onpremise-demo.boldbi.com/getti
      mounted: function() {
     var scripts = [
       "https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js",
-      "https://cdn.boldbi.com/embedded-sdk/v5.3.53/boldbi-embed.js"
+      "https://cdn.boldbi.com/embedded-sdk/v6.4.6/boldbi-embed.js"
     ];
     scripts.forEach(script => {
       let tag = document.createElement("script");
@@ -176,38 +165,25 @@ The link has been provided to [download](https://onpremise-demo.boldbi.com/getti
     let authorizationUrl = "http://localhost:8086/getDetails";
 
     let dashboard = BoldBI.create({
-                    serverUrl: rootUrl + siteIdentifier,
-                    dashboardId: dashboardId,
-                    embedContainerId: "dashboard",
-                    embedType: BoldBI.EmbedType.Component,
-                    environment: environment == "onpremise" ? BoldBI.Environment.Enterprise : BoldBI.Environment.Cloud,
-                    width: "100%",
-                    height: window.innerHeight + "px",
-                    expirationTime: 100000,
-                    authorizationServer: {
-                        url: authorizationUrl
-                    },
-                    dynamicConnection: {
-                        isEnabled: false,
-                        identity: "",
-                    },
-                    autoRefreshSettings: {
-                        enabled: true,
-                        hourlySchedule: {
-                            hours: 0,
-                            minutes: 1,
-                            seconds: 0
-                        }
-                    }
-                });
-                dashboard.loadDashboard(); 
-                console.log(dashboard);
+      serverUrl: rootUrl + siteIdentifier,
+      dashboardId: dashboardId,
+      embedContainerId: "dashboard",
+      embedType: BoldBI.EmbedType.Component,
+      environment: BoldBI.Environment.Enterprise, // If Cloud, you should use BoldBI.Environment.Cloud
+      mode: BoldBI.Mode.View,
+      width: "100%",
+      height: window.innerHeight + "px",
+      expirationTime: 100000,
+      authorizationServer: {
+        url: authorizationUrl
+      }
+    });
+    dashboard.loadDashboard(); 
     }
-
     ```
   
  5. Install the `Go` with the [link](https://go.dev/dl/). Install the visual studio code extension as follows.
- ![go_install](/static/assets/embedded/javascript/sample/images/go_install.png)
+    ![go_install](/static/assets/embedded/javascript/sample/images/go_install.png)
 
  6. Create a folder in the desired location and open it in the visual studio code. Create a file `main.go` and `launch.json`, include the following code.
 

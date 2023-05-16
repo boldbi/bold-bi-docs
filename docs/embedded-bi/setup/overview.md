@@ -56,33 +56,33 @@ The following software requirements are necessary to run the Bold BI Embedded ed
 
 Follow these steps to install the Bold BI Embedded build:
 
-1. Go to [Pricing Page](https://www.boldbi.com/embedded/pricing) to register and download the Bold BI Embedded application.
+1. Go to [Pricing Page](https://www.boldbi.com/pricing) to register and download the Bold BI Embedded application.
 
     ![Bold BI pricing page](/static/assets/embedded/setup/embedded-edition-overview-images/bold-bi-pricing-page.png)
  
-2. To sign up for a new trial, select `TRY IT FOR FREE`.
+2. To sign up for a new trial, select `TRY FOR FREE`.
 
-    ![Try it for Free](/static/assets/embedded/setup/embedded-edition-overview-images/tryit-for-free.png)
+    ![Try it for Free](/static/assets/embedded/setup/embedded-edition-overview-images/try-for-free.png)
 
-4. Enter your email address on the registration page and select `Download Free Trial`.
+3. Enter your email address on the registration page and select `Download Free Trial`.
 
     ![Try Bold BI Free](/static/assets/embedded/setup/embedded-edition-overview-images/try-bold-bi-free-page.png)
 
-3. Click the `Verify your email address` link on the email you just received for **Email Verification**.
+4. Click the `Verify your email address` link on the email you just received for **Email Verification**.
 
      ![Email Verification Mail](/static/assets/embedded/setup/embedded-edition-overview-images/email-verification-mail-page.png)
 
      ![Verify Email Address](/static/assets/embedded/setup/embedded-edition-overview-images/verify-email-address-page.png)
     
-4. In the **Create Password** Page, enter a new password for your account and click `Continue`.
+5. In the **Create Password** Page, enter a new password for your account and click `Continue`.
 
      ![Create Password](/static/assets/embedded/setup/embedded-edition-overview-images/create-password.png)
 
-5. Enter the required information and select `Proceed to Download`
+6. Enter the required information and select `Proceed to Download`
 
      ![Proceed to Download](/static/assets/embedded/setup/embedded-edition-overview-images/proceed-to-download-page.png)
  
-4. You will now be redirected to the [downloads](https://www.boldbi.com/account/downloads/embedded) page. To download and install the Bold BI from this page, choose the file type and click the`Download` icon.
+7. You will now be redirected to the [downloads](https://www.boldbi.com/account) page. To download and install the Bold BI from this page, choose the file type and click the`Download` icon.
 
     ![Bold BI Download Page](/static/assets/embedded/setup/embedded-edition-overview-images/bold-bi-download-page.png)
 

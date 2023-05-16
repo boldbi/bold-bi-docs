@@ -8,19 +8,19 @@ documentation: ug
 
 # Bold BI Dashboards embedding in React with ASP.NET Core using Embedded SDK
 
-The link has been provided to [download](https://onpremise-demo.boldbi.com/getting-started/react-core-v3.3/sample.zip) the sample application, which demonstrates the dashboard rendering in your Bold BI server and followed by steps to create a new embedding application in `React` with `ASP.NET Core` on your own.  
+A GitHub link has been provided to [get](https://github.com/boldbi/react-with-aspnet-core-sample) the sample application, which demonstrates the dashboard rendering in your Bold BI server and followed by steps to create a new embedding application in `React` with `ASP.NET Core` on your own.  
 
 > **NOTE:** The best way to get started would be reading the [Getting Started](/embedded-bi/javascript-based/getting-started/) section of the documentation to start using first. The `Getting Started` guide gives you enough information that you need to know before working on the sample.      
 
 ## How to run the sample
 
-1. Please [download](https://onpremise-demo.boldbi.com/getting-started/react-core-v3.3/sample.zip) the React Application with ASP.NET Core Application.    
+1. Please [get](https://github.com/boldbi/react-with-aspnet-core-sample) the React Application with ASP.NET Core Application.    
 
 2. Here, the React application act as a client, and the ASP.NET Core application act as a server since you need to set the following properties in the `DashboardListing.js` file as follows.
-![Embed Properties In App Component](/static/assets/embedded/javascript/sample/images/react-prop.png)
+    ![Embed Properties In App Component](/static/assets/embedded/javascript/sample/images/react-prop.png)
 
 3. In the `EmbedProperties.cs` of the ASP.NET Core application, you need to set the `RootUrl`, `SiteIdentifier`, `UserEmail`, and `EmbedSecret` properties.
-  ![Embed Properties in App Component](/static/assets/embedded/javascript/sample/images/asp-net-backend-prop.png)
+    ![Embed Properties in App Component](/static/assets/embedded/javascript/sample/images/asp-net-backend-prop.png)
   
 4. Then, run your ASP.NET Core application and as well as the React App.  
 
@@ -28,24 +28,21 @@ The link has been provided to [download](https://onpremise-demo.boldbi.com/getti
 
      ```js
         renderDashboard(data) {
-        this.dashboard= BoldBI.create({
-        serverUrl: rootUrl + siteIdentifier,
-        dashboardId: data.Id,//Provide item id to render it in design mode,to create dashboard remove this property
-        embedContainerId: "dashboard",
-        embedType: BoldBI.EmbedType.Component,
-        environment: environment,
-        mode:BioldBI.Mode.Design,
-        width:"100%",
-        height: window.innerHeight + 'px',
-        expirationTime:100000,
-        authorizationServer: {
-            url:apiHost + authorizationUrl
-        }
-        });
-
-        console.log(this.dashboard);
-        this.dashboard.loadDesigner();     
-        
+            this.dashboard= BoldBI.create({
+                serverUrl: rootUrl + siteIdentifier,
+                dashboardId: data.Id, //Provide item id to render it in design mode,to create dashboard remove this property
+                embedContainerId: "dashboard",
+                embedType: BoldBI.EmbedType.Component,
+                environment: BoldBI.Environment.Enterprise, // If Cloud, you should use BoldBI.Environment.Cloud
+                mode: BoldBI.Mode.Design,
+                width: "100%",
+                height: window.innerHeight + 'px',
+                expirationTime: 100000,
+                authorizationServer: {
+                    url: apiHost + authorizationUrl
+                }
+            });
+            this.dashboard.loadDesigner();
         }
      ```
 
@@ -81,23 +78,24 @@ The link has been provided to [download](https://onpremise-demo.boldbi.com/getti
 
 ## How this sample works
  1. Based on the properties set on the `DashboardListing.js` file, you will call the `GetDashboards` Server API from the `componentDidMount()` function.    
- ![Embed Properties](/static/assets/embedded/javascript/sample/images/react-get-dashboards.png#max-width=65%)  
+    ![Embed Properties](/static/assets/embedded/javascript/sample/images/react-get-dashboards.png#max-width=65%)  
 
  2. To contact the `GetDashboards` Server API, generate a user token by using the user email and password, then get the dashboard list.    
 
  3. In the `DashboardListing.js` file, a page has been designed to list dashboards on the left side and render the dashboard. The retrieved dashboard list has been set to the `items` using the `setState()` property.  
- ![Dashboard Listing](/static/assets/embedded/javascript/sample/images/react-dash-listing.png)   
+    ![Dashboard Listing](/static/assets/embedded/javascript/sample/images/react-dash-listing.png)   
 
  4. By default, the first dashboard has been rendered from the list using the `renderDashboard()` method in the `DashboardListing.js` file. This render method is implemented with the Bold BI SDK component code.    
- ![Render Dashboard](/static/assets/embedded/javascript/sample/images/react-dash-render.png#max-width=65%)  
+    ![Render Dashboard](/static/assets/embedded/javascript/sample/images/react-dash-render.png#max-width=65%)  
 
  5. Before rendering, call the `authorizationUrl`, which redirects to the `GetDetails` action in the `HomeController`, which generates the `EmbedSignature` using the embed secret provided in the `EmbedProperties.cs` of the ASP.NET Core application.    
- ![Get Embed Details](/static/assets/embedded/javascript/sample/images/angular-get-details.png)  
+    ![Get Embed Details](/static/assets/embedded/javascript/sample/images/angular-get-details.png)  
 
  6. These details will be sent to the Bold BI server and get validated there. Once the details are validated, the dashboard starts to render.  
 
 ## Steps to create new React with ASP.NET Core application to embed dashboard
  1. Install the `nodeJS` using the command prompt and type `npx create-react-app my-app` in desired location to create an angular application. Here, `my-app` is the name of the folder for your application.
+
  2. Open the created folder in the visual studio code. Under the `src,` create a `DashboardListing` folder with `DashboardListing.js`.In the `DashboardListing.js` file define the mandatory properties and implement the methods `renderDashboard()` to render dashboard, `render()` to create the DOM elements and `componentDidMount()` to contact server as follows.
  
      ```js
@@ -187,33 +185,36 @@ The link has been provided to [download](https://onpremise-demo.boldbi.com/getti
   
      ```js
         renderDashboard(data) {
-        this.dashboard= BoldBI.create({
-        serverUrl: rootUrl + siteIdentifier,//Dashboard Server BI URL (ex: http://localhost:5000/bi/site/site1, http://demo.boldbi.com/bi/site/site1)
-        dashboardId: data.Id,//Dashboard id of the dashboard you want to embed here.
-        embedContainerId: "dashboard",//DOM id where the dashboard will be rendered.
-        embedType: BoldBI.EmbedType.Component,
-        environment: environment,//Your Bold BI application environment. (If Cloud, you should use cloud, if  Enterprise, you should use enterprise)
-        width:"100%",
-        height: window.innerHeight + 'px',
-        expirationTime:100000,//Set the duration for the token to be alive.
-        authorizationServer: {
-            url:apiHost + authorizationUrl//URL from which particular dashboard details is obtained from server.
-        }
-        });
-
-        console.log(this.dashboard);
-        this.dashboard.loadDashboard();     
-        
+            this.dashboard= BoldBI.create({
+                serverUrl: rootUrl + siteIdentifier, //Dashboard Server BI URL (ex: http://localhost:5000/bi/site/site1, http://demo.boldbi.com/bi/site/site1)
+                dashboardId: data.Id, //Dashboard id of the dashboard you want to embed here.
+                embedContainerId: "dashboard", //DOM id where the dashboard will be rendered.
+                embedType: BoldBI.EmbedType.Component,
+                environment: BoldBI.Environment.Enterprise, // If Cloud, you should use BoldBI.Environment.Cloud
+                mode: BoldBI.Mode.View,
+                width: "100%",
+                height: window.innerHeight + 'px',
+                expirationTime: 100000, //Set the duration for the token to be alive.
+                authorizationServer: {
+                    url:apiHost + authorizationUrl //URL from which particular dashboard details is obtained from server.
+                }
+            });
+            this.dashboard.loadDashboard();
         }
      ```
 
  6. Run the command `npm install`. Once completed, run the command `npm i @boldbi/boldbi-embedded-sdk`. Once completed, import the`@boldbi/boldbi-embedded-sdk` in the `DashboardListing.js`.
+
  7. To create the ASP.NET core Web application, start Visual Studio and click `Create new project.`
-   ![SelectProject](/static/assets/embedded/javascript/sample/images/ProjectFramework.png)
-   ![SelectFrameworkVersion](/static/assets/embedded/javascript/sample/images/framework_version.png)
+    ![SelectProject](/static/assets/embedded/javascript/sample/images/ProjectFramework.png)
+    ![SelectFrameworkVersion](/static/assets/embedded/javascript/sample/images/framework_version.png)
+
  8. Change the project name as you want, then click `Create`.
+
  9. Select the Web Application (Model-View-Controller) template, then click `Create`.
- 10. In ASP.NET core, create the model classes `EmbedProperties.cs` and `DataClass.cs`. 
+
+ 10. In ASP.NET core, create the model classes `EmbedProperties.cs` and `DataClass.cs`.
+
  11. Under the model folder, create the `EmbedProperties.cs` class to define the mandatory properties as follows
 
      ```js
@@ -283,7 +284,8 @@ The link has been provided to [download](https://onpremise-demo.boldbi.com/getti
     
     
  13. In the `Controllers\HomeController.cs`, define the `GetDashboard()` method to get the list of dashboards from the server. It uses the method `GetToken()` which helps to get the token from the server.
- Add a default view as `Index.cshtml`
+        
+        Add a default view as `Index.cshtml`
 
      ```js
         public IActionResult Index()

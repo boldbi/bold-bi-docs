@@ -16,11 +16,11 @@ You can explore the available samples in detail here,
 
 [ASP.NET MVC](/embedded-bi/javascript-based/samples/v3.3.40-or-later/asp-net-mvc/)
 
-[Angular with javascript](/embedded-bi/javascript-based/samples/v3.3.40-or-later/angular-with-javascript/)
+[Angular with JavaScript](/embedded-bi/javascript-based/samples/v3.3.40-or-later/angular-with-javascript/)
 
 [ASP.NET](/embedded-bi/javascript-based/samples/v3.3.40-or-later/asp-net/)
 
-[Blazor with javascript](/embedded-bi/javascript-based/samples/v3.3.40-or-later/blazor-with-javascript/)
+[Blazor with JavaScript](/embedded-bi/javascript-based/samples/v3.3.40-or-later/blazor-with-javascript/)
 
 [Ruby on Rails](/embedded-bi/javascript-based/samples/v3.3.40-or-later/ruby-on-rails/)
 
@@ -32,7 +32,7 @@ You can explore the available samples in detail here,
 
 [Node.js](/embedded-bi/javascript-based/samples/v3.3.40-or-later/node-js/)
 
-[PHP with javascript](/embedded-bi/javascript-based/samples/v3.3.40-or-later/php-with-javascript/)
+[PHP with JavaScript](/embedded-bi/javascript-based/samples/v3.3.40-or-later/php-with-javascript/)
 
 [VueJS with Go](/embedded-bi/javascript-based/samples/v3.3.40-or-later/vuejs-with-go/)
 
@@ -42,7 +42,7 @@ You can explore the available samples in detail here,
 
 [Xamarin](/embedded-bi/javascript-based/samples/v3.3.40-or-later/xamarin/)
 
-[Flutter](/embedded-bi/javascript-based/samples/v3.3.40-or-later/flutter-with-javascript/)
+[Flutter with JavaScript](/embedded-bi/javascript-based/samples/v3.3.40-or-later/flutter-with-javascript/)
 
 [Other platform samples](/embedded-bi/javascript-based/samples/v3.3.40-or-later/other-platform-samples/)
                         

@@ -8,19 +8,19 @@ documentation: ug
 
 # Embedding Bold BI Dashboards in Flutter using the Embedded SDK
 
-The link has been provided to [download](https://onpremise-demo.boldbi.com/getting-started/flutter/sample.zip) the sample application, which demonstrates the dashboard rendering in your Bold BI server and followed by steps to create a new embedding application in the `Flutter` on your own.
+A GitHub link has been provided to [get](https://github.com/boldbi/flutter-sample) the sample application, which demonstrates the rendering of dashboard in your Bold BI server and followed by steps to create a new embedding application in the `Flutter` on your own.
 
 > **NOTE:** Reading the [Getting Started](/embedded-bi/javascript-based/getting-started/) section of the documentation is the best way to get started. The `Getting Started` guide gives you enough information that you need to know before working on the sample. 
 
 ## How to run the sample
- 1. Please [download](https://onpremise-demo.boldbi.com/getting-started/flutter/sample.zip) the Flutter sample from provided link.    
+ 1. Please [get](https://github.com/boldbi/flutter-sample) the Flutter sample from provided link.    
 
  2. In the `index.html`, set your server details to the `EmbedProperties` as follows.  
     ![Embed Properties](/static/assets/embedded/javascript/sample/images/flutter_EmbedProperties.png#max-width=75%)
 
     <meta charset="utf-8"/>
- <table>
-  <tbody>
+    <table>
+    <tbody>
     <tr>
         <td align="left">RootUrl</td>
         <td align="left">Dashboard Server BI URL (ex: http://localhost:5000/bi, http://demo.boldbi.com/bi)</td>
@@ -45,8 +45,8 @@ The link has been provided to [download](https://onpremise-demo.boldbi.com/getti
         <td align="left">EmbedSecret</td>
         <td align="left">You could get your EmbedSecret key from Embed tab by enabling Enable embed authentication in <a href='https://help.boldbi.com/embedded-bi/site-administration/embed-settings/'>Administration page.</a> </td>
     </tr>
-  </tbody>
- </table>
+    </tbody>
+    </table>
 
  3. Run your Flutter sample.
 
@@ -54,25 +54,23 @@ The link has been provided to [download](https://onpremise-demo.boldbi.com/getti
 
      ```js
      function renderDashboard(dashboardId) {
-     var dashboard = BoldBI.create({
-        serverUrl: RootUrl + "/" + SiteIdentifier,
-        dashboardId: dashboardId,//Provide item id to render it in design mode,to create dashboard remove this property 
-        embedContainerId: "dashboard",
-        embedType: BoldBI.EmbedType.Component,
-        environment: Environment == "enterprise" ? BoldBI.Environment.Enterprise : BoldBI.Environment.Cloud,
-        width: (window.innerWidth - 30)+"px",
-        height: (window.innerHeight - 39)+"px",
-        mode: BoldBI.Mode.Design,
-        expirationTime: 100000,
-        authorizationServer: {
-            url: "",
-            data:data
-        }        
-         
-      });
-
-      dashboard.loadDesigner();
-      };
+        var dashboard = BoldBI.create({
+            serverUrl: RootUrl + "/" + SiteIdentifier,
+            dashboardId: dashboardId,//Provide item id to render it in design mode,to create dashboard remove this property 
+            embedContainerId: "dashboard",
+            embedType: BoldBI.EmbedType.Component,
+            environment: BoldBI.Environment.Enterprise, // If Cloud, you should use BoldBI.Environment.Cloud
+            width: (window.innerWidth - 30)+"px",
+            height: (window.innerHeight - 39)+"px",
+            mode: BoldBI.Mode.Design,
+            expirationTime: 100000,
+            authorizationServer: {
+                url: "",
+                data:data
+            }        
+        });
+        dashboard.loadDesigner();
+     };
      ```
 
     <meta charset="utf-8"/>
@@ -110,13 +108,14 @@ The link has been provided to [download](https://onpremise-demo.boldbi.com/getti
  1. Based on the `EmbedProperties` provided in the `index.html`, authorize the server URL by calling the `GetEmbedDetails()` function.
 
  2. In the above authorization, generate the `SignatureUrl` with the provided `EmbedSecret` key and validate the embed details in Bold BI. Once details are validated, the dashboard starts to render.
- ![Get Dashboards](/static/assets/embedded/javascript/sample/images/flutter-get-details.png)
+    ![Get Dashboards](/static/assets/embedded/javascript/sample/images/flutter-get-details.png)
 
  3. Change the dashboard Id of the respective dashboard as you wish to embed.
 
 ## Steps to create new flutter application to embed dashboard
  1. Install the `Flutter` in the visual studio code.
     ![flutter install](/static/assets/embedded/javascript/sample/images/flutter_install.png#max-width=60%)
+    
  2. Download the android studio from the following official [website](https://developer.android.com/studio),download the flutter SDK from the following official [website](https://docs.flutter.dev/get-started/install/windows), and include the paths in the system environment variable.
 
  3. In the desired location, create a folder for this project and open it in the visual studio code.
@@ -126,10 +125,10 @@ The link has been provided to [download](https://onpremise-demo.boldbi.com/getti
  5. Include the following mandatory files in the `index.html` of the `<head>` tag as follows.
 
      ```js
-        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v5.3.53/boldbi-embed.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/hmac-sha256.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/enc-base64.min.js"></script>
+    <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v6.4.6/boldbi-embed.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/hmac-sha256.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/enc-base64.min.js"></script>
      ```
 
  6. In the `<body>` tag, invoke the `Init()` method, create the DOM element with id `dashboard` as follows.
@@ -213,22 +212,20 @@ The link has been provided to [download](https://onpremise-demo.boldbi.com/getti
      ```js
         function renderDashboard(dashboardId) {
         var dashboard = BoldBI.create({
-            serverUrl: RootUrl + "/" + SiteIdentifier,//Dashboard Server BI URL (ex: http://localhost:5000/bi/site/site1, http://demo.boldbi.com/bi/site/site1)
+            serverUrl: RootUrl + "/" + SiteIdentifier, //Dashboard Server BI URL (ex: http://localhost:5000/bi/site/site1, http://demo.boldbi.com/bi/site/site1)
             dashboardId: dashboardId, //Dashboard id of the dashboard you want to embed here.
-            embedContainerId: "dashboard",//DOM id where the dashboard will be rendered.
+            embedContainerId: "dashboard", //DOM id where the dashboard will be rendered.
             embedType: BoldBI.EmbedType.Component,
-            environment: Environment == "enterprise" ? BoldBI.Environment.Enterprise : BoldBI.Environment.Cloud,
+            environment: BoldBI.Environment.Enterprise, // If Cloud, you should use BoldBI.Environment.Cloud
             width: (window.innerWidth - 30)+"px",
             height: (window.innerHeight - 39)+"px",
-            mode: BoldBI.Mode.View,//Rendering mode of dashboard it can be Design and View for dashboard
-            expirationTime: 100000,//Set the duration for the token to be alive.
+            mode: BoldBI.Mode.View, //Rendering mode of dashboard it can be Design and View for dashboard
+            expirationTime: 100000, //Set the duration for the token to be alive.
             authorizationServer: {
                 url: "",
                 data:data
-            }        
-            
+            }
         });
-
         dashboard.loadDashboard();
         };
      ```

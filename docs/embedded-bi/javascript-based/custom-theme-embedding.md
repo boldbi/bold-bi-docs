@@ -57,9 +57,9 @@ Follow the steps to apply the custom theme to the dashboard in embedding.
 
 1. In your .html page, you need to add the following dependent script in the head tag of your page.
 
-     ```js
+    ```js
     <head>
-        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v5.3.53/boldbi-embed.js"></script>
+        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v6.4.6/boldbi-embed.js"></script>
     </head>
      ```
 
@@ -154,7 +154,7 @@ Here the dashboard is rendered in dark theme as given in `appearance` option and
 
      ```js
     <head>  
-        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v5.3.53/boldbi-embed.js"></script>
+        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v6.4.6/boldbi-embed.js"></script>
     </head>
      ```     
 
@@ -164,16 +164,16 @@ Here the dashboard is rendered in dark theme as given in `appearance` option and
     <body onload="embedSample()">
         <div id="dashboard_container"></div>
         <script>
-            function embedSample() {
-                var boldbiEmbedInstance = BoldBI.create({
-                    dashboardSettings: {
-                        themeSettings : {
-                            isLocalTheme : true, //The default value is false.
-                        }
+        function embedSample() {
+            var boldbiEmbedInstance = BoldBI.create({
+                dashboardSettings: {
+                    themeSettings: {
+                        isLocalTheme : true, //The default value is false.
                     }
-                });
-                boldbiEmbedInstance.loadDashboard();
-            }
+                }
+            });
+            boldbiEmbedInstance.loadDashboard();
+        }
         </script>
     </body>
      ``` 

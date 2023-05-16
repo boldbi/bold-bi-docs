@@ -18,7 +18,7 @@ Follow these steps to embed dashboard in your application
 
     ```js
     <head>  
-        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v5.3.53/boldbi-embed.js"></script>
+        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v6.4.6/boldbi-embed.js"></script>
     </head>
     ```
 
@@ -142,6 +142,7 @@ Follow these steps to embed dashboard in your application
 
 > **NOTE:**  For Bold BI **v5.2.48** or lower version, you must have add the following dependent scripts and also refer the below **Embed SDK URL** of respective Bold BI version.<br />
 `https://cdn.boldbi.com/embedded-sdk/v5.2.48/embed-js.js`
+
 <meta charset="utf-8"/>
 <table>
 <thead>
@@ -178,6 +179,18 @@ Follow these steps to embed dashboard in your application
 
 </code></td>
 </tr>
+<tr>            
+<td><code>v6.4.6(latest)</code></td>            
+<td><code>
+
+ ```js
+<head> 
+    <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v6.4.6/boldbi-embed.js"></script>
+</head>
+```
+
+</code></td>
+</tr>
 </tbody>
 </table>
 
@@ -186,6 +199,7 @@ Follow these steps to embed dashboard in your application
 You can embed the multi-tabbed dashboard by using the dashboard ID or dashboard path which is similar to embedding a regular dashboard. Please refer to the following code sample for embedding a multi-tabbed dashboard
 
 ```js
+
 <body onload="embedSample();">
     <div id="dashboard_container"></div>
     <script>
@@ -344,6 +358,7 @@ If you are using multi-tenant Bold BI server sites and looking for embedding the
 Get the Server URL of the respective Bold BI tenant from the following UMS sites management page.
 
 >**Note:** Site Management page is accessible only for the OnPremise or Enterprise deployment.
+
 To open UMS page, open the OnPremise dashboard listing page, select the user profile in the side menu, then click the `Manage sites (Admin access)` option as follows.
 
 ![GotoUMSPage](/static/assets/embedded/javascript/images/goto_ums_page.png)

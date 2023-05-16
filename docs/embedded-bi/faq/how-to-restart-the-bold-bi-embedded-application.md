@@ -58,30 +58,30 @@ sudo systemctl restart bold-bi-designer - BI designer service
 
 1. Please run the following command to restart all the Bold BI Embedded services.   
 ~~~
-kubectl rollout deploy -n {namespace}
+kubectl rollout restart deploy -n {namespace}
 ~~~
 
 2. Please run the following command to restart the specific service in Bold BI Embedded.  
 ~~~
-kubectl rollout deploy/id-web-deployment -n {namespace} - IDP Web service 
+kubectl rollout restart deploy/id-web-deployment -n {namespace} - IDP Web service 
 ~~~
 ~~~ 
-kubectl rollout deploy/id-api-deployment -n {namespace} - IDP API service  
+kubectl rollout restart deploy/id-api-deployment -n {namespace} - IDP API service  
 ~~~
 ~~~ 
-kubectl rollout deploy/id-ums-deployment -n {namespace} - UMS Web service 
+kubectl rollout restart deploy/id-ums-deployment -n {namespace} - UMS Web service 
 ~~~
 ~~~ 
-kubectl rollout deploy/bi-web-deployment -n {namespace} - BI Web service   
+kubectl rollout restart deploy/bi-web-deployment -n {namespace} - BI Web service   
 ~~~
 ~~~ 
-kubectl rollout deploy/bi-api-deployment -n {namespace} - BI API service  
+kubectl rollout restart deploy/bi-api-deployment -n {namespace} - BI API service  
 ~~~
 ~~~  
-kubectl rollout deploy/bi-jobs-deployment -n {namespace} - BI Web job service
+kubectl rollout restart deploy/bi-jobs-deployment -n {namespace} - BI Web job service
 ~~~
 ~~~ 
-kubectl rollout deploy/bi-dataservice-deployment -n {namespace} - BI designer service      
+kubectl rollout restart deploy/bi-dataservice-deployment -n {namespace} - BI designer service      
 ~~~
 
 

@@ -216,6 +216,8 @@ The following are the frequently asked questions in Bold BI Enterprise:
 
 [How will the dashboard get affected while CSP enabled](/embedded-bi/faq/how-will-the-dashboard-get-affected-while-csp-enabled/)
 
+[How to control the link navigation behavior in the Bold BI Embed version above 5.2.48?](/embedded-bi/faq/how-to-control-link-navigating-behavior/)
+
 [How to install and deploy the Bold BI Enterprise Edition in silent mode](/embedded-bi/faq/how-to-install-and-deploy-the-bold-bi-enterprise-edition-in-silent-mode/)
 
 [How to control the link navigation behavior in the Bold BI Embed version above 5.2.48?](/embedded-bi/faq/how-to-control-link-navigating-behavior/)

@@ -2,8 +2,8 @@
   "openapi": "3.0.1",
   "info": {
     "title": "API Reference",
-    "description": {
-      "$ref": "./../../../../common/site-administration/api-reference/introduction.md"
+	 "description": {
+      "$ref": "./../../../../common/site-administration/api-reference/introduction1.0.md"
     },
     "version": "1.0"
   },
@@ -12,22 +12,27 @@
       "url": "https://{yourdomain}/api"
     }
   ],
+  "security": [
+    {
+      "Bearer <Token>": []
+    }
+  ],
   "tags": [
     {
       "name": "Authentication",
-      "description": {
+	  "description": {
         "$ref": "./../../../../common/site-administration/api-reference/helperswagger.json#/authentication/getauthenticationdescription"
       }
     },
     {
       "name": "Application Startup",
-      "description": {
+	  "description": {
         "$ref": "./../../../../common/site-administration/api-reference/helperswagger.json#/startup/getstartupdescription"
       }
     },
     {
       "name": "Tenants",
-      "description": {
+	  "description": {
         "$ref": "./../../../../common/site-administration/api-reference/helperswagger.json#/tenants/gettenantsdescription"
       }
     }
@@ -39,6 +44,7 @@
           "Authentication"
         ],
         "summary": "Authenticate Client",
+		"description" : "To call the token API, you will need to make a POST request to the API endpoint, typically in the format of `https://your-domain/api/token`. \n You will need to include the following parameters in the body of the request:\n\n - grant_type: client_credentials \n\n - client_id: your client ID \n\n - client_secret: your client secret\n\n You will also need to include the appropriate headers for the API, such as\n\n Content-Type: `application/x-www-form-urlencoded`.",
         "operationId": "client_authentication",
         "requestBody": {
           "content": {
@@ -53,8 +59,12 @@
         "responses": {
           "200": {
             "description": "Successfully retrived access token.",
-            "schema": {
-              "$ref": "#/components/schemas/Response"
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Response"
+                }
+              }
             },
             "x-nullable": true
           },
@@ -76,10 +86,9 @@
           "Application Startup"
         ],
         "summary": "Application Startup",
-        "description": "Configure the application startup for Bold BI/Bold Reports application.",
+        "description": "Configure the Bold BI or Bold Reports application using the REST API.",
         "operationId": "application_startup",
         "requestBody": {
-          "description": "configuration request data.",
           "content": {
             "application/json": {
               "schema": {
@@ -133,7 +142,6 @@
         "description": "Create a new Bold BI / Bold Reports tenant.",
         "operationId": "create_tenant",
         "requestBody": {
-          "description": "Add tenant request body.",
           "content": {
             "application/json": {
               "schema": {
@@ -219,10 +227,6 @@
         "x-typeName": "Response"
       },
       "ApiResponse": {
-        "required": [
-          "ApiStatus",
-          "Status"
-        ],
         "type": "object",
         "properties": {
           "ApiStatus": {
@@ -312,11 +316,11 @@
           "IsNewDatabase": {
             "type": "boolean",
             "default": "false",
-            "description": "Decides the data store database is new or existing."
+            "description": "Determines whether to create a new database or connect to an existing database specified by the <code>DatabaseName</code> parameter."
           },
           "MaintenanceDataBase": {
             "type": "string",
-            "description": "Maintenance dataBase of the database server."
+            "description": "Maintenance database of the database server."
           },
           "EmailDomain": {
             "type": "string",
@@ -344,15 +348,15 @@
           "IsTenantIsolationCodeEnabled": {
             "type": "boolean",
             "default": "false",
-            "description": "Enable or disable the Isolation Code."
+            "description": "Enable or disable the Isolation Code. <br/><blockquote>Applicable to create <code>BoldBIOnPremise</code> tenants only.</blockquote>"
           },
           "TenantIsolationCode": {
             "type": "string",
-            "description": "Isolation code."
+            "description": "Isolation code. <br/><blockquote>Applicable to create <code>BoldBIOnPremise</code> tenants only.</blockquote>"
           },
           "CustomAttribute": {
             "type": "array",
-            "description": "Custom site attributes.",
+            "description": "Custom site attributes. <br/><blockquote>Applicable to create <code>BoldBIOnPremise</code> tenants only.</blockquote>",
             "items": {
             "$ref": "#/components/schemas/CustomAttribute"
           }
@@ -390,7 +394,7 @@
           "IsNewDatabase": {
             "type": "boolean",
             "default": "false",
-            "description": "Determines whether the <code>DatabaseName</code> is new or existing."
+            "description": "Determines whether to create a new database or connect to an existing database specified by the <code>DatabaseName</code> parameter."
           },
           "MaintenanceDatabase": {
             "type": "string",
@@ -403,7 +407,18 @@
           "ServerType": {
             "description": "Database type of the server.",
             "$ref": "#/components/schemas/DatabaseType"
-          }
+          },
+		   "SslEnabled":
+		  {
+			  "type": "boolean",
+			  "default": "false",
+            "description": "Determines whether the encrypted connection to the database server is required. "
+		  },
+		   "AdditionalParameters": 
+		  {
+			"type": "string",
+            "description": "Additional parameters for connecting to the database server."
+		  }
         }
       },
       "Database": {
@@ -436,7 +451,7 @@
           "IsNewDatabase": {
             "type": "boolean",
             "default": "false",
-            "description": "Determines whether the <code>DatabaseName</code> is new or existing."
+            "description": "Determines whether to create a new database or connect to an existing database specified by the <code>DatabaseName</code> parameter."
           },
           "MaintenanceDatabase": {
             "type": "string",
@@ -449,7 +464,18 @@
           "ServerType": {
             "description": "Database type of the server.",
             "$ref": "#/components/schemas/DatabaseType"
-          }
+          },
+		   "SslEnabled":
+		  {
+			  "type": "boolean",
+			  "default": "false",
+            "description": "Determines whether the encrypted connection to the database server is required."
+		  },
+		   "AdditionalParameters": 
+		  {
+			"type": "string",
+            "description": "Additional parameters for connecting to the database server."
+		  }
         }
       },
       "UmsConfiguration": {
@@ -474,7 +500,7 @@
           },
           "Unlockkey": {
             "type": "string",
-            "description": "Unlockkey of the bold licese."
+            "description": "Unlock key for the Bold BI/Reports application."
           }
         }
       },
@@ -517,10 +543,11 @@
         }
       },
       "StorageType": {
-        "type": "string",
+		  "description": "0 - FileStorage, 1 - AzureBlob",
+        "type": "enum",
         "enum": [
-          "FileStorage",
-          "AzureBlob"
+          0,
+          1
         ],
         "x-enumNames": [
           "FileStorage",
@@ -528,11 +555,12 @@
         ]
       },
       "DatabaseType": {
-        "type": "string",
+		   "description": "0 - MSSQL, 1 - MySQL,2-PostgreSQL",
+        "type": "enum",
         "enum": [
-          "MSSQL",
-          "MySQL",
-          "PostgreSQL"
+          0,
+          1,
+          2
         ],
         "x-enumNames": [
           "MSSQL",
@@ -541,10 +569,11 @@
         ]
       },
       "TenantType": {
-        "type": "string",
+		  "description": "3 - BoldBIOnPremise, 4 - BoldReportsOnPremise",
+        "type": "enum",
         "enum": [
-          "BoldBIOnPremise",
-          "BoldReportsOnPremise"
+          3,
+          4
         ],
         "x-enumNames": [
           "BoldBIOnPremise",
@@ -607,7 +636,7 @@
           },
           "UseSiteIdentifier": {
             "type": "boolean",
-            "description": "Decides to Use Site Identifier or not."
+            "description": "Decides whether we need to use or ignore the site identifier. If the site identifier is ignored, unique domain should be used for each site."
           },
           "TenantType": {
             "description": "Tenant type of the site.",
@@ -619,21 +648,21 @@
           },
           "CustomAttribute": {
             "type": "array",
-            "description": "Custom site attributes.",
+            "description": "Custom site attributes. <br/><blockquote>Applicable to create <code>BoldBIOnPremise</code> tenants only.</blockquote>",
             "items": {
             "$ref": "#/components/schemas/CustomAttribute"
           }
           },
           "TenantIsolation": {
-            "description": "Tenant isolation code.",
+            "description": "Tenant isolation code. <br/><blockquote>Applicable to create <code>BoldBIOnPremise</code> tenants only.</blockquote>",
             "$ref": "#/components/schemas/TenantIsolation"
           }
         }
       },
       "TenantIsolation": {
         "type": "object",
+		"description": "Tenant isolation code. <br/><blockquote>Applicable to create <code>BoldBIOnPremise</code> tenants only.</blockquote>",
         "additionalProperties": false,
-        "description": "Tenant isolation code.",
         "properties": {
           "IsEnabled": {
             "type": "boolean",
@@ -705,6 +734,14 @@
           }
         }
       }
-    }
+    },
+   "securitySchemes": {
+      "Bearer <Token>": {
+        "type": "http",
+        "description": "JWT token Authentication",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      }
+    },
   }
 }

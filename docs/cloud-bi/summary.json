@@ -49,7 +49,6 @@
         "Facebook": "facebook",
         "Facebook Ads": "facebook-ads",
         "Files (JSON, XML, CSV)": "files",
-		"Fitbit":"fitbit",
         "Flurry": "flurry",
         "FreshBooks": "freshbooks",
         "Freshdesk": "freshdesk",
@@ -57,7 +56,8 @@
         "Freshservice": "freshservice",
         "Fusebill": "fusebill",
         "Gitlab": "gitlab",
-        "GitHub": "github",       
+        "GitHub": "github", 
+        "GoHighLevel": "gohighlevel",      
         "GoSquared": "go-squared",
         "Google Ads": "google-ads",
         "Google AdSense": "google-adsense",
@@ -100,7 +100,6 @@
         "OData": "odata",
         "Optimizely": "optimizely",
         "Oracle": "oracle",
-        "Oracle BI Reports": "oracle-bi-reports",
         "Pipeline Deals": "pipeline-deals",
         "Pipedrive": "pipedrive",
         "Podio": "podio",
@@ -114,7 +113,7 @@
         "Raven DB": "ravendb",
         "RSS Feeds": "rss-feeds",
         "Recurly": "recurly",
-        "Web": "Web",
+        "Web": "web",
         "Salesforce": "salesforce",
         "Salesforce Reports": "salesforce-reports",
         "SendGrid": "send-grid",
@@ -306,6 +305,10 @@
         "Import Azure Active Directory Groups": "import-azure-active-directory-groups",
         "Synchronize Azure Active Directory Groups": "synchronize-azure-active-directory-groups"
       }
+    },
+    "Migrate Dashboards Offline":{
+      "Download Dashboards": "download-dashboards",
+      "Upload Dashboards": "upload-dashboards"
     },
     "Site Administration": {
 	  "Look and Feel Settings": {

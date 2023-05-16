@@ -14,31 +14,6 @@ Data Sources that are accessible by the user depending on the user’s permissio
 
 ![Manage Data Sources](/static/assets/cloud/managing-resources/images/manage-data-sources.png)
 
-<!---
-## Add Data Sources
-Data source can be created only if the user has `Create All Data Sources` permission.
-
-### Steps to add a data source
-
-1. Click on the `Create` button in the menu and select `Data Source` to add a data source.
-
-	![Create Data Source](/static/assets/cloud/managing-resources/images/create-data-source.png)
-	
-2. Fill in the form with name and description of the data source and upload the data source file(`.syds`).
-	
-	![Add Data Source](/static/assets/cloud/managing-resources/images/add-data-source.png)
-
-3. When clicking on `Add`, the data source will be added to the Bold BI.
-
-> **NOTE:**  `Read Write Delete Download` permission for that `Specific Data Source` will be added for the user who created the data source.
-	
-## Update Data Sources
-Name, description and the data source file(`.syds`) can be changed in the update data source dialog box.
-
-![Update Data Source](/static/assets/cloud/managing-resources/images/update-data-source.png)
-
---->
-
 There are two connection type available in Data source
 
 * Live mode
@@ -48,7 +23,7 @@ There are two connection type available in Data source
 
 In this connection type data source directly fetched from source, examples like MySQL, Oracle, etc.
 
-![Live Connection](/static/assets/cloud/managing-resources/images/live-connection-datasource.png)
+![Live Connection](/static/assets/cloud/managing-resources/images/live-connection-datasource.png#width=55%)
 
 ## Extract mode connection 
 
@@ -56,7 +31,7 @@ In this connection type data source fetched from source periodically, examples l
 
 User can see the data source refresh status and occupied data rows count in this page.
 
-![Extract Connection](/static/assets/cloud/managing-resources/images/extract-connection-datasource.png)
+![Extract Connection](/static/assets/cloud/managing-resources/images/extract-connection-datasource.png#width=55%)
 
 Check [connectivity section](/cloud-bi/working-with-data-source/data-connectors/) for more details.
 
@@ -68,7 +43,7 @@ This section explains on how to configure the data source refresh setting.
 
 1. Click the `Actions` button in the Data sources grid context menu and select `Refresh Setting` option.
 
-    ![Refresh Setting](/static/assets/cloud/managing-resources/images/refresh-setting-context-datasource.png)
+    ![Refresh Setting](/static/assets/cloud/managing-resources/images/refresh-setting-context-datasource.png#width=55%)
 
 2. Select the recurrence type, recurrence, start and end dates in the `Refresh Setting` dialog box.
 	* Data refresh can be scheduled hourly, daily, weekly and monthly.
@@ -84,17 +59,17 @@ This section explains on how to configure the data source refresh setting.
 ## Refresh Data
 Data refresh can be made to run on demand by using the `Refresh Data` option in the data source grid context menu. 
 
-![Refresh data](/static/assets/cloud/managing-resources/images/refresh-data.png)
+![Refresh data](/static/assets/cloud/managing-resources/images/refresh-data.png#width=55%)
 
 ## Refresh History
 You can see the data refresh history information of corresponding data source in the `Refresh History` option in the data source grid context menu.
 
-![Refresh History](/static/assets/cloud/managing-resources/images/refresh-history.png)
+![Refresh History](/static/assets/cloud/managing-resources/images/refresh-history.png#width=60%)
 ![Refresh History Info](/static/assets/cloud/managing-resources/images/refresh-history-info.png)
 
 And, also you can see the failure information by clicking the failed link in run history dialog box.
 
-![Refresh Failure Info](/static/assets/cloud/managing-resources/images/refresh-failure-info.png)
+![Refresh Failure Info](/static/assets/cloud/managing-resources/images/refresh-failure-info.png#width=55%)
 
 > **NOTE:**  Only the data source created with extract mode will have this refresh history option.
 
@@ -106,15 +81,15 @@ This section explains on how to share data sources with the other users in the B
 
 1. Click the `Actions` button in the Data sources grid context menu and select `Sharing Permissions` option.
 
-	![Manage Permission](/static/assets/cloud/managing-resources/images/manage-permission-context-datasource.png)
+	![Manage Permission](/static/assets/cloud/managing-resources/images/manage-permission-context-datasource.png#width=55%)
 
 2. Select the permission access from the `Select Access` dropdown and type in user or a group name whom you want to share the data source with.
   
-	![Share Data source](/static/assets/cloud/managing-resources/images/share-datasource.png)
+	![Share Data source](/static/assets/cloud/managing-resources/images/share-datasource.png#width=55%)
 
 3. After selecting the permission access and users or groups, click on the `Share` button.
 
-	![Add Data source Permission](/static/assets/cloud/managing-resources/images/add-datasource-permission.png)
+	![Add Data source Permission](/static/assets/cloud/managing-resources/images/add-datasource-permission.png#width=55%)
 	
 > **NOTE:**  Only the user who created the data source and the Administrator can share the data source with other Bold BI users.
 
@@ -124,30 +99,11 @@ The user who created the data source and the Administrator can remove the shared
 
 1. Click the `Manage Access` button to see the users or groups and their permissions.
     
-	![Manage Access Data source](/static/assets/cloud/managing-resources/images/manage-access-datasource.png)
+	![Manage Access Data source](/static/assets/cloud/managing-resources/images/manage-access-datasource.png#width=55%)
 
 2. Then remove the permissions using the `Remove` option in the `Actions` column of the each permissions.
 
-	![Remove Data source Permission](/static/assets/cloud/managing-resources/images/remove-datasource-permission.png)
-
-<!---
-## Open with Dashboard Designer
-
-Data Sources can be launched directly in the Dashboard Designer from the Bold BI. 
-
-Click the `Actions` button in the Data Sources grid context menu and select `Open with Dashboard Designer` to open the Data Source in the Dashboard Designer if it is already installed in the client machine.
-
-![open with  Dashboard Designer](/static/assets/cloud/managing-resources/images/open-with-data-source.png)
-
-If Dashboard Designer is not already installed in the client machine, then Dashboard Designer will be downloaded in the client machine for the user to install.
-
-## Download Data Sources
-
-Click the `Actions` button in the data sources grid context menu and select `Download` to download the data source in `.syds` format.
-
-![Download Data Source](/static/assets/cloud/managing-resources/images/download-data-source.png)
-
---->
+	![Remove Data source Permission](/static/assets/cloud/managing-resources/images/remove-datasource-permission.png#width=55%)
 
 ## Version History
 
@@ -158,7 +114,7 @@ Data Sources can also be deleted from the Bold BI when they are no longer requir
 
 Click the `Actions` button in the data sources grid context menu and select `Delete` to delete the data source.
 
-![Delete Data Source](/static/assets/cloud/managing-resources/images/delete-data-source.png)  
+![Delete Data Source](/static/assets/cloud/managing-resources/images/delete-data-source.png#width=55%)
 
 ## Preview Data Sources
 
@@ -166,13 +122,13 @@ You can preview the data of your data sources.
 
 Click `Actions` in the data sources grid context menu and select `Preview Data` to preview the data source.
 
-![preview Data Source](/static/assets/cloud/managing-resources/images/preview-data-source.png)
+![preview Data Source](/static/assets/cloud/managing-resources/images/preview-data-source.png#width=55%)
 
 ## Copy Data Sources  
 You can copy the data source item only for the data source type in **Live** mode connection.
 
 Click the `Actions` button in the data sources grid context menu and select `Copy Data Source` to copy the data source.  
 
-![Copy Data Source](/static/assets/cloud/managing-resources/images/copy-data-source.png)  
+![Copy Data Source](/static/assets/cloud/managing-resources/images/copy-data-source.png#width=55%)  
 
 > **NOTE:**  The copy option shown only for Live mode connection like SQL and won't shown for Extract mode connection like files, web API, etc.

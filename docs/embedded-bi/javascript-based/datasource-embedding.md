@@ -16,7 +16,7 @@ Follow these steps to embed data source in your application.
 
     ```js
     <head>
-        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v5.3.53/boldbi-embed.js"></script>
+        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v6.4.6/boldbi-embed.js"></script>
     </head>
     ```
 
@@ -168,6 +168,7 @@ Follow these steps to embed data source in your application.
 
 > **NOTE:**  For Bold BI **v5.2.48** or lower version, you must have add the following dependent scripts and also refer the below **Embed SDK URL** of respective Bold BI version.<br />
 `https://cdn.boldbi.com/embedded-sdk/v5.2.48/embed-js.js`
+
 <meta charset="utf-8"/>
 <table>
 <thead>
@@ -196,9 +197,21 @@ Follow these steps to embed data source in your application.
 <td><code>v5.3.53</code></td>            
 <td><code>
 
- ```js
+```js
 <head> 
     <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v5.3.53/boldbi-embed.js"></script>
+</head>
+```
+
+</code></td>
+</tr>
+<tr>            
+<td><code>v6.4.6(latest)</code></td>            
+<td><code>
+
+ ```js
+<head> 
+    <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v6.4.6/boldbi-embed.js"></script>
 </head>
 ```
 
@@ -211,9 +224,9 @@ Follow these steps to embed data source in your application.
 
 1. You need to implement authorization end point in your application. This will act as the bridge between your application and Bold BI server and also you need to update the secure details like email and group based access. Learn more about authorize server [here](/embedded-bi/javascript-based/authorize-server/).  
 
-2. To create authorization-server action method, copy the following snippet in your controller. You can use currently logged in user email at `user@domain.com` or user name at `username`, but this user must have access to the dashboard.
+2. To create authorization-server action method, copy the following snippet in your controller. You can use currently logged in user email at `user@domain.com` or user name at `username`, but this user must have access to the dashboard.   
 
-    ```js
+    ```js  
     [HttpPost]
     [Route("embeddetail/get")]
     public string GetEmbedDetails(string embedQuerString, string dashboardServerApiUrl)

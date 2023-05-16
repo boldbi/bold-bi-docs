@@ -15,8 +15,8 @@ The following hardware requirements are necessary to run the Bold BI solution:
 * **Operating System:**  Bold BI Linux can run in different Linux distribution. Verified on the following operating systems:
     * Ubuntu 
     * CentOS or RHEL
-* **CPU:** 4-core.
-* **Memory:** 16 GB RAM.
+* **CPU:** 2-core.
+* **Memory:** 4 GB RAM.
 * **Disk Space:** 5 GB or more.
 
 ## Software requirements

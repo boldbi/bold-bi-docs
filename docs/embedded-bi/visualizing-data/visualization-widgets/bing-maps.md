@@ -150,6 +150,66 @@ NOTE: If you click `No`, a single value will be added to the `Location Name` fie
 
 ![Drilled view](/static/assets/embedded/visualizing-data/visualization-widgets/images/bing-maps/drilled-view.png)
 
+## Hidden Column
+
+Hidden columns are useful in cases where we don't want the fields to take part in the visualization, but only to be used for [linking](#linking), [filtering](#filtering) and [view data](#view-data). 
+
+![Hidden column](/static/assets/embedded/visualizing-data/visualization-widgets/images/bing-maps/assigndata.png)
+
+We can configure both measure and dimension fields into the hidden column. For measure we will be having all the settings we have for the measure fields expect formatting and filtering. 
+
+![measure](/static/assets/embedded/visualizing-data/visualization-widgets/images/bing-maps/measure.png)
+
+In the case of dimension fields we will having the following options only.
+
+![Dimension](/static/assets/embedded/visualizing-data/visualization-widgets/images/bing-maps/dimension.png)
+
+#### Linking
+
+The primary use case of the hidden columns is linking. On configuring hidden columns, we can see below that the fields configured in hidden columns are listed in the linking section.  On configuring the column in linking we can pass the corresponding column value in linking parameter.
+
+**Measure Based Example:** If we wish to pass the number of UnitsInStock as an URL parameter but do not want it to influence the visualization, we can configure the UnitsInStock in the hidden columns and incorporate them into the link.
+
+![Linking](/static/assets/embedded/visualizing-data/visualization-widgets/images/bing-maps/link-measure.png)
+
+**Dimension Based Example:** If we wish to pass the region as an URL parameter but do not want it to influence the visualization, we can configure the region in the hidden columns and incorporate them into the link.
+
+![Linking](/static/assets/embedded/visualizing-data/visualization-widgets/images/bing-maps/link-dimension.png)
+
+#### Filtering
+
+You can use hidden columns to filter data in the visualizations. Configure hidden columns and click the below filter icon.
+
+![Filtering](/static/assets/embedded/visualizing-data/visualization-widgets/images/bing-maps/filtericon.png)
+
+Click the Custom button highlighted in the filter configuration dialog image below. It will list all the fields configured in the widget. Keep the field configured in the hidden column and remove the other fields, then click the Update button.
+
+![Filtering](/static/assets/embedded/visualizing-data/visualization-widgets/images/bing-maps/custom.png)
+
+Now, we can see in the below image, the data is filtered based on the hidden column field instead of the actual column that we bound in the widget. 
+
+![Filtering](/static/assets/embedded/visualizing-data/visualization-widgets/images/bing-maps/hidden-column-filter.png)
+
+For more details about filtering the widget data, refer to the [Filter Configuration documentation](/embedded-bi/working-with-dashboards/configuring-dashboard-filters/)
+
+#### View Data
+
+You can view the data in the hidden columns in the underlying data view. This is useful for checking the data in more detail and can help you to identify any issues with the data.
+
+![View data](/static/assets/embedded/visualizing-data/visualization-widgets/images/bing-maps/viewdata.png)
+
+> **NOTE:** We don't recommend to configure lower hierarchy data in hidden columns as we can see in the info icon in `Hidden Column` section denotes the same. 
+
+![Hidden Column ](/static/assets/embedded/visualizing-data/visualization-widgets/images/bing-maps/info-icon.png)
+
+The below map displays the unit price by ship country without hidden columns.
+
+![Before](/static/assets/embedded/visualizing-data/visualization-widgets/images/bing-maps/before.png)
+
+If we configure lower hierarchy data (Ship City) in hidden columns, the data configured in the widgets gets duplicated, and incorrect data is displayed in the tooltip, as we can see in the image below.
+
+![After](/static/assets/embedded/visualizing-data/visualization-widgets/images/bing-maps/after.png)
+
 ### Latitude Section
 
 Bind column by dragging and dropping the element from sections to `Latitude`.

@@ -17,11 +17,11 @@ A GitHub link has been provided to [get](https://github.com/boldbi/aspnet-mvc-sa
 1. Please [get](https://github.com/boldbi/aspnet-mvc-sample) the ASP.NET MVC sample.  
 
 2. In the ASP.NET MVC sample, you could find the `EmbedProperties` class file in the Models folder.
-![Embed Properties](/static/assets/embedded/javascript/sample/images/prop-mvc.png#max-width=75%)
+    ![Embed Properties](/static/assets/embedded/javascript/sample/images/prop-mvc.png#max-width=75%)
 
-   <meta charset="utf-8"/>
-   <table>
-  <tbody>
+    <meta charset="utf-8"/>
+    <table>
+    <tbody>
     <tr>
         <td align="left">RootUrl</td>
         <td align="left">Dashboard Server BI URL (ex: http://localhost:5000/bi, http://demo.boldbi.com/bi)</td>
@@ -46,34 +46,33 @@ A GitHub link has been provided to [get](https://github.com/boldbi/aspnet-mvc-sa
         <td align="left">EmbedSecret</td>
         <td align="left">You could get your EmbedSecret key from Embed tab by enabling Enable embed authentication in <a href='https://help.boldbi.com/embedded-bi/site-administration/embed-settings/'>Administration page</a></td>
     </tr>
-   </tbody>
-   </table>
+    </tbody>
+    </table>
 
 3. Then, run your ASP.NET MVC sample.
 
 4. Dashboard can be rendered in design mode or create with below changes in `renderDashboard()` method,
      ```js
-       function renderDashboard(dashboardId) {
-        var dashboard = BoldBI.create({
-        serverUrl: "http://localhost:5000/bi/site/site1",
-        dashboardId: dashboardId,//Provide item id to render it in design mode,to create dashboard remove this property   
-        embedContainerId: "dashboard",
-        embedType: BoldBI.EmbedType.Component,
-        environment: "enterprise",
-        width: "100%",
-        height: "100%",
-        mode: BoldBI.Mode.Design,
-        expirationTime: 100000,
-        authorizationServer: {
-            url: "/GetDetails"
-        }
-       });
-
-        dashboard.loadDesigner();
-       };
+        function renderDashboard(dashboardId) {
+            var dashboard = BoldBI.create({
+                serverUrl: "http://localhost:5000/bi/site/site1",
+                dashboardId: dashboardId,//Provide item id to render it in design mode,to create dashboard remove this property   
+                embedContainerId: "dashboard",
+                embedType: BoldBI.EmbedType.Component,
+                environment: BoldBI.Environment.Enterprise, // If Cloud, you should use BoldBI.Environment.Cloud
+                width: "100%",
+                height: "100%",
+                mode: BoldBI.Mode.Design,
+                expirationTime: 100000,
+                authorizationServer: {
+                    url: "/GetDetails"
+                }
+            });
+            dashboard.loadDesigner();
+        };
      ```
 
-> **NOTE:** To mitigate issues related to NuGet packages, run the following command in package manager console `Update-Package Microsoft.CodeDom.Providers.DotNetCompilerPlatform -r`.
+    > **NOTE:** To mitigate issues related to NuGet packages, run the following command in package manager console `Update-Package Microsoft.CodeDom.Providers.DotNetCompilerPlatform -r`.
 
     <meta charset="utf-8"/>
     <table>
@@ -109,21 +108,24 @@ A GitHub link has been provided to [get](https://github.com/boldbi/aspnet-mvc-sa
  1. Based on the values provided in the `EmbedProperties.cs`, we would get the user token and validate it, and then we could get the dashboards list from the server.
 
  2. In `HomeController.cs`, we have added the `GetToken()` method and `GetDashboards()` action, which has been called when initializing the DOM in `Index.html`.
- ![Get Dashboards](/static/assets/embedded/javascript/sample/images/mvc-home-getdashboard.png)
+    ![Get Dashboards](/static/assets/embedded/javascript/sample/images/mvc-home-getdashboard.png)
 
  3. When you are selecting the dashboard to render, we would authorize the server URL by calling the `GetEmbedDetails` action with the provided `EmbedProperties` values.
- ![Get Embed Details](/static/assets/embedded/javascript/sample/images/mvc-home-getdetails.png)
+    ![Get Embed Details](/static/assets/embedded/javascript/sample/images/mvc-home-getdetails.png)
 
  4. In the above authorization, we have generated the `SignatureUrl` with the provided `EmbedSecret key` and validate embed details in Bold BI. Then only, the dashboard would be rendered in the viewer-section of `Index.cshtml`.
 
 ## Steps to create new ASP.NET MVC application to embed dashboard
 
  1. Start Visual Studio and click `Create` new project.
+
  2. Choose ASP.NET Web Application (.NET Framework), and then click Next.
-   ![SelectProject](/static/assets/embedded/javascript/sample/images/MVC_framework.png)
+    ![SelectProject](/static/assets/embedded/javascript/sample/images/MVC_framework.png)
+
  3. Change the project name as you want, and then click Create.
+
  4. Choose MVC and Web API, and then click OK.
-   ![SelectProject](/static/assets/embedded/javascript/sample/images/MVC_WebAPI.png#max-width=68%)
+    ![SelectProject](/static/assets/embedded/javascript/sample/images/MVC_WebAPI.png#max-width=68%)
 
  5. Under model folder create `EmbedProperties.cs`  class to define the mandatory properties like below,
 
@@ -142,7 +144,6 @@ A GitHub link has been provided to [get](https://github.com/boldbi/aspnet-mvc-sa
 
         public static string EmbedSecret = "";//You could get your EmbedSecret key from Embed tab by enabling `Enable embed authentication` in Administration page(https://help.boldbi.com/embedded-bi/site-administration/embed-settings/).
       }
-
      ```
 
  6. Create model class as `DataClass.cs` to define below properties. These properties are used to get dashboard list from server.
@@ -193,6 +194,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/aspnet-mvc-sa
      ```
 
  7. Create model class as `ApiResponse.cs`, to define the API response properties like below,
+    
     ```js
         [Serializable]
         [DataContract]
@@ -251,28 +253,29 @@ A GitHub link has been provided to [get](https://github.com/boldbi/aspnet-mvc-sa
     ```
     
  8. The following scripts are mandatorily required to render the dashboard. Set `Layout = null` in the top and replace the following code in your `\Views\Home\Index.cshtml` page of `<head>` tag.
- ![Index.cshml location](/static/assets/embedded/javascript/sample/images/ViewFolderLocationMvc.png#max-width=30%)
+    ![Index.cshml location](/static/assets/embedded/javascript/sample/images/ViewFolderLocationMvc.png#max-width=30%)
+    
     ```js 
-        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v5.3.53/boldbi-embed.js"></script>
-        <script type="text/javascript" src="~/Scripts/Index.js"></script>
+    <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v6.4.6/boldbi-embed.js"></script>
+    <script type="text/javascript" src="~/Scripts/Index.js"></script>
     ```
     
  9. In `<body>` section initialize a method as `Init()` which can be implemented in `Index.js` file. Inside `<body>` section include`<div id="panel">` to display list of dashboard and `<div id="viewer-section">` with a `<div id="dashboard">` inside it. This container can be used to render dashboard.
 
     ```js
-        <body onload="Init()">
-            <div id="container">
-                <div class="header-section">
-                    <div id="grid-title">All Dashboard</div>
-                </div>
-                <div id="panel"></div>
+    <body onload="Init()">
+        <div id="container">
+            <div class="header-section">
+                <div id="grid-title">All Dashboard</div>
             </div>
+            <div id="panel"></div>
+        </div>
         
-            <div id="viewer-section">
-                <div id="dashboard"></div>
-            </div>
-        </body>
-    ``` 
+        <div id="viewer-section">
+            <div id="dashboard"></div>
+        </div>
+    </body>
+    ```
 
  10. In `Controllers\HomeController.cs` define a `GetDashboard()` method to get list of dashboards from serve. It uses a method `GetToken()` which helps to get the token from server. Add a default view as `Index.cshtml`
 
@@ -355,7 +358,8 @@ A GitHub link has been provided to [get](https://github.com/boldbi/aspnet-mvc-sa
      ```
 
  12. Create a `Index.js` file under `Script` folder. Define `Init()` function which uses `Ajax` call. Once `Ajax` call is succeeded  `ListDashboards()` method will be invoked to list dashboards and render the dashboard.
-  ![Index.cshtml location ](/static/assets/embedded/javascript/sample/images/jsFolder_MVC.png#max-width=30%)
+ 
+        ![Index.cshtml location ](/static/assets/embedded/javascript/sample/images/jsFolder_MVC.png#max-width=30%)
 
      ```js
         function Init() {
@@ -402,23 +406,21 @@ A GitHub link has been provided to [get](https://github.com/boldbi/aspnet-mvc-sa
  14. In `renderDashboard()` method we create a instance `dashboard` and call a method `loadDashboard()` to render dashboard.
 
      ```js
-            function renderDashboard(dashboardId) {
+        function renderDashboard(dashboardId) {
             var dashboard = BoldBI.create({
-                serverUrl: "http://localhost:5000/bi/site/site1",//Dashboard Server BI URL (ex: http://localhost:5000/bi/site/site1, http://demo.boldbi.com/bi/site/site1)
-                dashboardId: dashboardId,//Provide the dashboard id of the dashboard you want to embed here.   
-                embedContainerId: "dashboard",//DOM id where the dashboard will be rendered, here it is dashboard.
+                serverUrl: "http://localhost:5000/bi/site/site1", //Dashboard Server BI URL (ex: http://localhost:5000/bi/site/site1, http://demo.boldbi.com/bi/site/site1)
+                dashboardId: dashboardId, //Provide the dashboard id of the dashboard you want to embed here.   
+                embedContainerId: "dashboard", //DOM id where the dashboard will be rendered, here it is dashboard.
                 embedType: BoldBI.EmbedType.Component,
-                environment: "enterprise",
+                environment: BoldBI.Environment.Enterprise, // If Cloud, you should use BoldBI.Environment.Cloud
                 width: "100%",
                 height: "100%",
-                mode: BoldBI.Mode.View,//Rendering mode of dashboard it can be Design and View for dashboard.
-                expirationTime: 100000,//Set the duration for the token to be alive.
+                mode: BoldBI.Mode.View, //Rendering mode of dashboard it can be Design and View for dashboard.
+                expirationTime: 100000, //Set the duration for the token to be alive.
                 authorizationServer: {
-                    url: "/GetDetails"//URL from which particular dashboard details is obtained from server.
-                }
-                
+                    url: "/GetDetails" //URL from which particular dashboard details is obtained from server.
+                }      
             });
-
             dashboard.loadDashboard();
-            };
+        };
      ```

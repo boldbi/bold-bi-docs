@@ -16,7 +16,7 @@ Follow these steps to embed dashboard designer in your application.
 
     ```js
     <head>
-        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v5.3.53/boldbi-embed.js"></script>
+        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v6.4.6/boldbi-embed.js"></script>
     </head>
     ```
 
@@ -232,9 +232,9 @@ Follow these steps to embed dashboard designer in your application.
 
 > **NOTE:**  embedContainerId should be same as your div element id value.
 
-> **NOTE:**  embedContainerId should be same as your div element id value.
 > **NOTE:**  For Bold BI **v5.2.48** or lower version, you must have add the following dependent scripts and also refer the below **Embed SDK URL** of respective Bold BI version.<br />
 `https://cdn.boldbi.com/embedded-sdk/v5.2.48/embed-js.js`
+
 <meta charset="utf-8"/>
 <table>
 <thead>
@@ -266,6 +266,18 @@ Follow these steps to embed dashboard designer in your application.
 ```js
 <head> 
     <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v5.3.53/boldbi-embed.js"></script>
+</head>
+```
+
+</code></td>
+</tr>
+<tr>            
+<td><code>v6.4.6(latest)</code></td>            
+<td><code>
+
+ ```js
+<head> 
+    <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v6.4.6/boldbi-embed.js"></script>
 </head>
 ```
 
@@ -313,7 +325,7 @@ Follow these steps to embed dashboard designer in your application.
 
 3. Add the GetSignatureUrl method, and this method would be called from the previous GetEmbedDetails action. Follow the next section to get EmbedSecret key from Bold BI application.
 
-    ```js      
+    ```js  
     public string GetSignatureUrl(string queryString)
     {
         // Get the embedSecret key from Bold BI.
