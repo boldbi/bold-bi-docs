@@ -19,7 +19,7 @@ This repository contains the source code of the Bold BI documentation.
 Bold BI documentation was built on [Gatsby](https://www.gatsbyjs.org/) application.
 
 ## Node.js Installation
-Make sure to install [Node.js](https://nodejs.org/en/blog/release/v16.17.0/) `v16` series(This version of `nodejs` supports all the `Gatsby` plugin which is used in our application, higher version may not be supported all the plugins.) in your machine and run `node -v` to check whether it is installed properly or not.
+Make sure to install [Node.js](https://nodejs.org/en/blog/release/v18.16.0/) `v18` series(This version of `nodejs` supports all the `Gatsby` plugin which is used in our application, higher version may not be supported all the plugins.) in your machine and run `node -v` to check whether it is installed properly or not.
 
 ## Gulp Installation
 Install `gulp` package with global access and the version should be `v4.0.2` and then run `gulp -v` to check whether it is installed properly or not.
@@ -38,7 +38,7 @@ Install `gatsby-cli` package with global access to build and serve the applicati
 **To Run:**
 
   ```cmd
-   npm install gatsby-cli@4.24.0 -g
+   npm install gatsby-cli@5.11.0 -g
   ```
 
 # Setup the Application for Local Environment
@@ -114,13 +114,6 @@ Refer the below document folder structure,
 
 ```cmd
     --> docs (1)
-        --> cloud-bi (2)
-            --> getting-started 
-                --> quick-start.md
-                --> index.md
-            --> index.md (4)
-            --> summary.json (5)
-        --> embedded-bi (3)
             --> getting-started 
                 --> quick-start.md
                 --> index.md
@@ -131,13 +124,9 @@ Refer the below document folder structure,
 
 (1) ---> Document `.md` files should be placed in **docs** folder.
 
-(2) ---> Bold BI Cloud related files should be placed in **cloud-bi** folder.
+(2) ---> Each parent folder should have `index.md` file that explains about the overview of child nodes.
 
-(3) ---> Bold BI Embedded related files should be placed in **embedded-bi** folder.
-
-(4) ---> Each parent folder should have `index.md` file that explains about the overview of child nodes.
-
-(5) ---> `summary.json` file holds the title of each files presents in the parent folder like `cloud-bi` and `embedded-bi`. This will helps to show the titles in left pane of the documentation site. So, add the titles here with respect to each platform.
+(3) ---> `summary.json` file holds the title of each files presents in the parent folder. This will helps to show the titles in left pane of the documentation site. So, add the titles here with respect to each platform.
 
 ## Image Location
 
@@ -146,7 +135,7 @@ Image should be placed in this location `\static\assets\`. Same document folder 
 
 ## Swagger File Structure
 
-Swagger files should be placed in **api** folder and its respective index files should be placed in respective platform folders. Refer the *rest-api-reference* folder in `\api\cloud-bi\rest-api-reference` and `\docs\cloud-bi\rest-api-reference`.
+Swagger files should be placed in **api** folder and its respective index files should be placed in respective platform folders. Refer the *rest-api-reference* folder in `\api\server-api-reference\`.
 
 # Important Markdown Guidelines
 
@@ -179,4 +168,4 @@ To add the notes and important type of predefined blockquote use the below synta
 
 # General Markdown Syntax Reference
 
-* Refer [General Markdown Syntax](https://kramdown.gettalong.org/syntax.html) here.
+* Refer [General Markdown Syntax](https://kramdown.gettalong.org/syntax.html) here. 
