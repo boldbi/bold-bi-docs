@@ -5,20 +5,23 @@ var { platformOrder } = require('./config.js');
 const path = require('path');
 const config = JSON.parse(fs.readFileSync(path.resolve('./config.json'), 'utf8'));
 var argv = require('yargs').argv;
+var pathNames=['overview','deploying-bold-bi','application-startup',
+'getting-started','embedding-options',
+'working-with-data-source','visualizing-data',
+'working-with-dashboards','security-configuration','site-administration','managing-resources', 'resource-migration',
+'manage-webhooks','localization','rebranding',
+'multi-tenancy','responsive-layout','mobile-app','server-api-reference','utilities','faq'];
 const isHtml = 'html';
 function generateToc() {
-    let Files = glob.sync('./docs/**/summary.json');
+    let Files = glob.sync('./docs/summary.json');
     let fileContent = {};
     indexPageMapper = {};
-    Files.forEach((content) => {
-        let jsonObj = JSON.parse(fs.readFileSync(content, 'utf8'));
-        let keys = Object.keys(jsonObj);
-        let pathName = content.split('/')[content.split('/').length - 2];
-        if (pathName !== 'docs' && keys.length === 1) {
-            indexPageMapper[keys[0]] = pathName;
+    let jsonObj = JSON.parse(fs.readFileSync('./docs/summary.json', 'utf8'));
+    let keys = Object.keys(jsonObj);
+        for(let i=0;i<=keys.length;i++){
+            indexPageMapper[keys[i]] = pathNames[i];
         }
         fileContent = Object.assign(jsonObj, fileContent);
-    });
     let allTreeData = getTreeData(fileContent, indexPageMapper);
     let stringified = JSON.stringify(allTreeData, null, 4);
     fs.writeFileSync('./left-toc.json', stringified, 'utf8');
@@ -48,7 +51,7 @@ function getTreeData(data, indexPageMapper) {
     for (let i = 0; i < keys.length; i++) {
         let isCommon = typeof data[keys[i]] === 'string' ? true : false;
         if (isCommon) {
-            accData.push({ header: `<div class='acc-path' data='${data[keys[i]] == '/' ? `/` : `/${removeMisc(data[keys[i]])}/`}'>${keys[i]}</div>` });
+            accData.push({ header: `<div class='acc-path' data='${data[keys[i]] == '/' ? `/` : `/${removeMisc(data[keys[i]])}/`}'>${keys[i]}</div>` });  
             paths.push(data[keys[i]] == '/' ? '/' : `/${removeMisc(data[keys[i]])}/`)
             routerData[data[keys[i]] == '/' ? '/' : `/${removeMisc(data[keys[i]])}/`] = { title: [keys[i]], isCommonSrc: true, isIndexPage: false, isDemo: Boolean(getQueryValue(isHtml, data[keys[i]])) };
             setPreviousPath(paths, data[keys[i]] == '/' ? '/' : `/${removeMisc(data[keys[i]])}/`)
@@ -96,6 +99,7 @@ function generateTreeData(data, parentIns, firstLevelKey) {
             searchData.push({ title: keys[i], id: `/${routerPath}/`, component: firstLevelKey });
             let previousPathIndex = paths.length - 1;
             routerData[`/${routerPath}/`]['prevPath'] = paths[previousPathIndex];
+          
             if (parentIns) {
                 if (parentIns['child']) {
                     parentIns['child'].push(obj);
@@ -120,12 +124,12 @@ function generateTreeData(data, parentIns, firstLevelKey) {
             searchData.push({ title: keys[i], id: `/${routerPath}/`, component: firstLevelKey });
             if (parentIns) {
                 if (parentIns['child']) {
-                    parentIns['child'].push(obj);
+                    parentIns['child'].push(obj);                   
                 } else {
                     parentIns['child'] = [obj];
                 }
             } else {
-                tree.push(obj);
+                tree.push(obj);                
             }
         }
     }
