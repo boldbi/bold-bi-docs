@@ -40,7 +40,9 @@ export default class LayoutTemplate extends React.Component {
   accordionInstance;
   search;
   feedBackDialog;
+  path1;
   emailCheckBox;
+  temp;
   leftSideBar;
   rightSideBar;
     pathPrefix;
@@ -68,7 +70,6 @@ export default class LayoutTemplate extends React.Component {
       }
       //this.renderToc();
       };
-
       var indexpath = window.location.origin;
       if (indexpath !== "https://help.boldbi.com") {
           var noindex = document.createElement('meta');
@@ -87,9 +88,7 @@ export default class LayoutTemplate extends React.Component {
     this.renderBreadCrumb();
     this.selectedToc();
     this.configureHamburger();
-    this.configureRightSideBar();
-      
-        
+    this.configureRightSideBar();        
     this.configureMobileSearch();
     select('.doc-toc-search-icon').addEventListener('click', () => {
       let leftTocSearch = select('#auto-complete');
@@ -238,7 +237,7 @@ export default class LayoutTemplate extends React.Component {
     let secondTitle = breadCrumbData.title[1];
       let breadCrumbElem = document.getElementById('doc-bread-crumb');
       let nextIconHtml = '<span style="padding:0 5px"> ></span> ';
-      let breadCrumInnerHtml = `${secondTitle ? `<a class="doc-bread-nav" href="${this.pathPrefix ? `${this.pathPrefix}>` : '/'}${this.indexPageMapper[firstTitle] + '/overview'}/">${firstTitle}</a> ${nextIconHtml}${secondTitle}` : firstTitle}`;
+      let breadCrumInnerHtml = `${secondTitle ? `<a class="doc-bread-nav" href="${this.pathPrefix ? `${this.pathPrefix}>` : '/'}${this.indexPageMapper[firstTitle]}/">${firstTitle}</a> ${nextIconHtml}${secondTitle}` : firstTitle}`;
     breadCrumbElem.innerHTML = breadCrumInnerHtml;
   }
 
@@ -250,6 +249,8 @@ export default class LayoutTemplate extends React.Component {
         nodeSelected: this.nodeSelected.bind(this)
       }, ele);
     }
+    // let path=e.element.querySelector('.acc-path').getAttribute("data");
+    // this.navToPath(path);
   }
 
   accClick(e) {
@@ -257,12 +258,18 @@ export default class LayoutTemplate extends React.Component {
       let isCommon = accordionItem && accordionItem.classList.contains('e-select') ? false : true;
       let path = accordionItem ? accordionItem.querySelector('.acc-path').getAttribute("data") : "";
       let hrefPath = document.body.getAttribute('headerPathReference');
+      let tocnodes = document.getElementById('toc');
       if (!isNullOrUndefined(hrefPath)) {
           window.location.href = window.location.href.split('#')[0] + hrefPath;
           document.body.removeAttribute('headerPathReference');
       }
       if(!isNullOrUndefined(document.querySelector('.e-toc-active'))) {
         this.selectedToc(); 
+        if((!isNullOrUndefined(tocnodes.querySelector("[data='" + e.originalEvent.srcElement.getAttribute("data") + "']")))||(isNullOrUndefined(e.originalEvent.srcElement.getAttribute("data"))&&isNullOrUndefined(tocnodes.querySelector("[data-uid='" + e.originalEvent.srcElement.getAttribute("data") + "']"))&&!e.originalEvent.srcElement.classList.contains("e-fullrow")&&!e.originalEvent.srcElement.classList.contains('interaction')))
+       {
+        this.navToPath(path);
+        }  
+              
       }     
       if (isCommon) {
       this.navToPath(path);
@@ -270,7 +277,9 @@ export default class LayoutTemplate extends React.Component {
   }
 
     selectedToc() {
+      
     let path = this.getPathName();
+    
     if(window.location.hash !== "")
     {
       path = path + window.location.hash + '/'; 
@@ -280,6 +289,10 @@ export default class LayoutTemplate extends React.Component {
     let selectAcrdn = toc.querySelector(`[data='${path}']`);
     if (selectAcrdn) {
       closest(selectAcrdn, '.e-acrdn-item').classList.add('e-toc-active');
+      //if((!isNullOrUndefined(tocnodes.querySelector("[data='" + e.originalEvent.srcElement.getAttribute("data") + "']")))||(isNullOrUndefined(e.originalEvent.srcElement.getAttribute("data"))&&isNullOrUndefined(tocnodes.querySelector("[data-uid='" + e.originalEvent.srcElement.getAttribute("data") + "']"))&&!e.originalEvent.srcElement.classList.contains("e-fullrow")&&!e.originalEvent.srcElement.classList.contains('interaction')))
+       // {
+           this.navToPath(path);
+       // }     
     } else if (selectTree) {
       let previousSelection = toc.querySelectorAll('.e-toc-active');
       for(var element of previousSelection) {
@@ -772,7 +785,7 @@ export default class LayoutTemplate extends React.Component {
                     </NavButtons>
                     <div id="doc-footer">
                       <div id="footer-copyright">
-                        <a id="copyright" target="_blank" href="https://www.boldbi.com/copyright">Copyright © 2001 - <span id="copyright-year"> 2021</span> Syncfusion Inc. All Rights Reserved</a>
+                        <a id="copyright" target="_blank" href="https://www.boldbi.com/copyright">Copyright © 2001 - <span id="copyright-year"> 2023</span> Syncfusion Inc. All Rights Reserved</a>
                       </div>
                       <div id="footer-powered_by"></div>
                     </div>
