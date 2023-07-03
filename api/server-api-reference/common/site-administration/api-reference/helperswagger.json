@@ -1,0 +1,17 @@
+﻿{
+  "authentication": {
+    "getauthenticationdescription": "Bold BI API uses OAuth 2.0 authentication based on client credentials. To make an API request, you need to generate an access token using the client ID and secret. For subsequent API requests, this access token should be sent in the Authorization header. This access token is valid for 60 minutes from the time it is received.\n\n For information on how to retrieve the client ID and secret for the REST API, please refer to [this](https://help.boldbi.com/embedded-bi/multi-tenancy/site-administration/api-keys/) documentation."
+  },
+  "startup": {
+    "getstartupdescription": "The Bold BI or Bold Reports application can be configured for the first time using this API.\n\nYou will need an offline unlock key, which can be found [here](https://www.boldbi.com/account/downloads/embedded) , to activate Bold BI or Bold Reports.\nPlease open a support ticket [here](https://support.boldbi.com/create) if you don't have access to the offline key."
+  },
+  "tenants": {
+    "gettenantsdescription": "Creating tenants for Bold BI/Bold Reports using an API can be a powerful and efficient way to manage and organize your data. The request body should be in JSON format, and you can provide the tenant information in JSON format. Include the necessary headers for the API request, such as the Content-Type and Accept headers. To create the Bold BI/Bold Reports tenants, use the following corresponding endpoints."
+  },
+  "users": {
+    "getusersdescription": "Creating, listing, viewing, and deleting users for Bold BI/Bold Reports using an API can be a powerful and efficient way to manage and organize your data. The request body should be in JSON format, and you can provide the user information in JSON format. Include the necessary headers for the API request, such as the Content-Type and Accept headers. To create, view, update, delete, and list the Bold BI/Bold Reports users, use the following corresponding endpoints."
+  },
+  "administration": {
+    "getadministartiondescription": "Configuring and viewing the administration settings using Rest API in User Management Server. The request body should be in JSON format and include the necessary headers for the API request, such as the Content-Type, Authorization, and Accept headers. Use the following endpoints to manage administration settings in User Management Server."
+  }
+}

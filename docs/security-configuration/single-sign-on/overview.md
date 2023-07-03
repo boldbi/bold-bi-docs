@@ -1,0 +1,21 @@
+---
+layout: post
+title: Single Sign-On Authentication – Overview | Bold BI Docs
+description: Learn the benefits of Single Sign-On (SSO) authentication, and how to enable SSO for OAuth 2.0 and OpenID Connect identity providers with Bold BI.
+platform: bold-bi
+documentation: ug
+lang: en
+---
+
+# What is Single sign-on
+Single sign-on (SSO) is an authentication method that enables users to securely authenticate with multiple applications and websites by using just one set of credentials. This prevents the need for the user to log in separately into the different applications. With one security token (a username and password pair), you can enable and disable user access to multiple systems, apps, and other resources. It has overthrown the traditional login process. It reduces the time-consuming process to login to each application with different passwords.
+
+## Supported SSO in Bold BI
+Bold BI has SSO support for the following login providers:
+* [Configure SSO with ADFS](/security-configuration/single-sign-on/azure-active-directory/)
+
+* [Configure SSO with OAuth 2.0](/security-configuration/single-sign-on/oauth-2.0-support/)
+
+* [Configure SSO with OpenID Connect](/security-configuration/single-sign-on/openid-support/)
+
+> **NOTE:** This feature is available in Bold BI Embedded Analytics but not in Cloud Analytics Server.
