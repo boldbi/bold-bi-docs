@@ -1,10 +1,10 @@
 var gulp = require('gulp');
 var shelljs = require('shelljs');
 var { generateToc } = require('./toc.js');
-var glob = require('glob');
 var sitevariables = require('./site-variables.js');
+var glob = require('glob');
 
-gulp.task('clean', done=> {
+gulp.task('clean', done =>{
     let staticFiles = glob.sync('./static/*', {
         ignore: ['./static/favicon.ico', './static/robots.txt', './static/assets', './static/404', './static/404.html']
     });
@@ -15,11 +15,11 @@ gulp.task('clean', done=> {
     done();
 });
 
-gulp.task('copy', done=> {
+gulp.task('copy', done => {
     shelljs.mkdir('-p', './src/pages');
     shelljs.cp('-r', './docs/*', './src/pages');
     shelljs.cp('-r', './api/*', './static');
-    shelljs.cp('-r', `./node_modules/gatsby-remark-image-attributes/package.json`, './node_modules/gatsby-remark-image-attributes/dist');
+    shelljs.cp('-r', `./node_modules/gatsby-remark-extract-image-attributes/package.json`, './node_modules/gatsby-remark-extract-image-attributes/dist');
     done();
 });
 
@@ -33,4 +33,4 @@ gulp.task('postinstall', done => {
     done();
 });
 
-gulp.task('build', gulp.series('clean', 'copy', 'toc', 'site-variables'));
+gulp.task('build',gulp.series('clean', 'copy', 'toc', 'site-variables'));

@@ -54,7 +54,7 @@ gulp.task('html-lint', function () {
         .pipe(htmllint({ failOnError: true }));
 });
 
-gulp.task('md-file-validation', gulp.series('toc'), function () {
+gulp.task('md-file-validation',gulp.series('toc'), function () {
     let routerData = require('./../left-toc.json').routerData;
     let routerKeys = Object.keys(routerData);
     let missedFiles = [];
@@ -108,3 +108,4 @@ gulp.task('test', gulp.series('typo', 'file-validation','seo-validation','js-lin
 gulp.task('ci-test', gulp.series('platform-order-validation', 'redirect-validation', 'test',function(done) {
     done();
 }));
+
