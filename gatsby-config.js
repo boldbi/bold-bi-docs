@@ -5,7 +5,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-tagmanager`,
       options: {
-          id: "GTM-PXFTV5X"
+        id: "GTM-PXFTV5X"
       }
     },
     {
@@ -33,6 +33,12 @@ module.exports = {
             }
           },
           {
+            resolve: `gatsby-remark-extract-image-attributes`,
+            options: {
+              stripMdAttributes: true
+            }
+          },
+          {
             resolve: "gatsby-remark-external-links",
             options: {
               target: "_target",
@@ -51,14 +57,14 @@ module.exports = {
       options: {
         color: '#2973b7'
       }
+    },
+    `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-react-helmet-canonical-urls`,
+      options: {
+        siteUrl: `https://help.boldbi.com`,
       },
-      `gatsby-plugin-react-helmet`,
-      {
-          resolve: `gatsby-plugin-react-helmet-canonical-urls`,
-          options: {
-              siteUrl: `https://help.boldbi.com`,
-          },
-      },
+    },
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-client-side-redirect`,
