@@ -274,6 +274,79 @@ Here is a dashboard view illustrating the use of parameter with measure paramete
 
 ![URLFilter Dimension Value](/static/assets/working-with-dashboards/preview-dashboards/images/urldimension.png)
 
+## Special Characters Support
+
+You can also pass parameter values with special characters to filter. To use a value with special character you can pass the value inside the square braces like given below:
+
+`http://<servername>/<culturename>/dashboards/<dashboardid>/<category>/<dashboardname>?DimensionTypeParameter=[value"!@"]`
+
+<table style="margin-right: 100%; width: 30%;">
+<tr><td><b>Special Characters</b></td></tr>
+<tr><td>!</td></tr>
+<tr><td>%</td></tr>
+<tr><td>@</td></tr>
+<tr><td>$</td></tr>
+<tr><td>^</td></tr>
+<tr><td>*</td></tr>
+<tr><td>(</td></tr>
+<tr><td>)</td></tr>
+<tr><td>-</td></tr>
+<tr><td>_</td></tr>
+<tr><td>+</td></tr>
+<tr><td>[</td></tr>
+<tr><td>]</td></tr>
+<tr><td>:</td></tr>
+<tr><td>;</td></tr>
+<tr><td>"</td></tr>
+<tr><td>/</td></tr>
+<tr><td>\</td></tr>
+<tr><td>?</td></tr>
+<tr><td>``</td></tr>
+<tr><td>.</td></tr>
+<tr><td>></td></tr>
+<tr><td><</td></tr>
+</table>
+
+Here is a dashboard view illustrating the use of parameter with special characters.
+
+![Special Characters](/static/assets/working-with-dashboards/preview-dashboards/images/Special_char.png)
+
+## Passing Keywords with URL
+
+The following keywords are used for our internal purposes. If you have any of these keywords as column names, you can specify them inside square brackets as shown below:
+
+`http://<servername>/<culturename>/dashboards/<dashboardid>/<category>/<dashboardname>?[Keywords]=value`
+
+<table style="margin-right: 100%; width: 30%;">
+<tr><td><b>Keywords</b></td></tr>
+<tr><td>Id</td></tr>
+<tr><td>Comment</td></tr>
+<tr><td>tab</td></tr>
+<tr><td>showmydashboards</td></tr>
+<tr><td>viewid</td></tr>
+<tr><td>ismultitab</td></tr>
+<tr><td>bi_theme</td></tr>
+<tr><td>multitabid</td></tr>
+<tr><td>hide_header</td></tr>
+<tr><td>Hide_tool</td></tr>
+<tr><td>hide_widget_tool</td></tr>
+<tr><td>isembed</td></tr>
+<tr><td>views</td></tr>
+<tr><td>export</td></tr>
+<tr><td>dashboard_comments</td></tr>
+<tr><td>widget_comment</td></tr>
+<tr><td>embed_dashboard_views_edit</td></tr>
+<tr><td>embed_dashboard_favorite</td></tr>
+<tr><td>embed_dashboard_toolbar</td></tr>
+<tr><td>embed_expirationtime</td></tr>
+<tr><td>embed_nonce</td></tr>
+<tr><td>embed_user_token</td></tr>
+</table>
+
+Here is a dashboard view illustrating the use of parameter with the mentioned keywords.
+
+![Keywords](/static/assets/working-with-dashboards/preview-dashboards/images/Keywords.png)
+
 ## Passing Parameters with dataSource
 
 You can pass parameter value along with datasource name to specifically filter the same. For that purpose you can pass the Url like given below.

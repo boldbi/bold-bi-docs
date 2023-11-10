@@ -5,7 +5,7 @@ description: Learn how to customize tooltip with different columns for different
 canonical: "/visualizing-data/working-with-widgets/tooltip-customization/"
 platform: bold-bi
 documentation: ug
-lang: en
+
 ---
 
 # Tooltip customization in the widgets

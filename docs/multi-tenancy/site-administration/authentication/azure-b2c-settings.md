@@ -9,7 +9,7 @@ documentation: ug
 # Azure Active Directory B2C
 
 This section explains steps to configure Azure AD B2C Single Sign-On (SSO) in the Bold BI application.
-Before integrating Azure AD B2C with Bold BI, ensure the [Configure Azure AD B2C tenant in Azure portal](/embedded-bi/multi-tenancy/site-administration/authentication/azure-b2c-settings/#configure-azure-ad-b2c-tenant-in-azure-portal) is done.
+Before integrating Azure AD B2C with Bold BI, ensure the [Configure Azure AD B2C tenant in Azure portal](/multi-tenancy/site-administration/authentication/azure-b2c-settings/#configure-azure-ad-b2c-tenant-in-azure-portal) is done.
  
 
 ## Configure Azure AD B2C in User Management Server
@@ -63,7 +63,7 @@ Before integrating Azure AD B2C with Bold BI, ensure the [Configure Azure AD B2C
 
 ## Set Azure AD B2C as default authentication
 
-Azure AD B2C can be set as default authentication when the [Azure AD B2C settings](/embedded-bi/multi-tenancy/site-administration/authentication/azure-b2c-settings/#configure-azure-ad-b2c-in-user-management-server) is enabled.
+Azure AD B2C can be set as default authentication when the [Azure AD B2C settings](/multi-tenancy/site-administration/authentication/azure-b2c-settings/#configure-azure-ad-b2c-in-user-management-server) is enabled.
 
 Follow these steps to configure the default authentication.
 
@@ -75,7 +75,7 @@ Follow these steps to configure the default authentication.
 
 ## Disabling Azure AD B2C connect settings
 
-Disabling the Enable Default Authentication option and then clicking `Save` will disable the [Azure AD B2C default authentication](/embedded-bi/multi-tenancy/site-administration/authentication/azure-b2c-settings/#set-azure-ad-b2c-as-default-authentication).  
+Disabling the Enable Default Authentication option and then clicking `Save` will disable the [Azure AD B2C default authentication](/multi-tenancy/site-administration/authentication/azure-b2c-settings/#set-azure-ad-b2c-as-default-authentication).  
 
 ![Disable Default Authentication](/static/assets/multi-tenancy/images/disable-azure-ad-b2c-settings.png)
 

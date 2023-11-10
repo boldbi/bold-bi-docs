@@ -4,7 +4,6 @@ title: Deployment on Linux Servers  | Bold BI Documentation
 description: Learn more about the prerequisites and deploying Bold BI application in Linux with Nginx and Kubernetes cluster.
 platform: bold-bi
 documentation: ug
-lang: en
 ---
 
 # Deploying in Linux

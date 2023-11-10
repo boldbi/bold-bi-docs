@@ -5,7 +5,7 @@ description: Learn how to enable commenting in a dashboard to collaborate with y
 canonical: "/working-with-dashboards/commenting-dashboard/"
 platform: bold-bi
 documentation: ug
-lang: en
+
 ---
 
 # Collaborate with your team by enabling comments in dashboard

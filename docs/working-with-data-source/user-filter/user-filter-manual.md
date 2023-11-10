@@ -5,11 +5,11 @@ description: Learn how to create the user filter through manual mode configurati
 canonical: "/working-with-data-source/user-filter/user-filter-manual/"
 platform: bold-bi
 documentation: ug
-lang: en
+
 ---
 
 # Configure User Filter Manual Mode
-Lets consider the [Hotel Revenue Management Dashboard](https://www.boldbi.com/solutions/hospitality/hotel-revenue-management-dashboard) sample here. In this dashboard we will be configuring the user filter so that the staff's and managers will be able to view the data configured for the specific continent.
+Lets consider the <a href="https://www.boldbi.com/dashboard-examples/hospitality/hotel-revenue-management-dashboard" target="_blank">Hotel Revenue Management Dashboard</a> sample here. In this dashboard we will be configuring the user filter so that the staff's and managers will be able to view the data configured for the specific continent.
 
 For this we will starting off by opening the User Filter Dialog by following the steps mentioned in [here](/working-with-data-source/user-filter/#configuring-user-filter)
 

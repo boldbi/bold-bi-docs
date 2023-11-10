@@ -2,7 +2,7 @@
 layout: post
 title: Elastic Search data source for Cloud BI | Cloud Bold BI Docs 
 description: Learn how to connect Elastic search data source, and create a data source for widget configuration for your elastic search data using Bold BI Cloud application.
-canonical: "/working-with-data-source/data-connectors/Elastic-Search/"
+canonical: "/working-with-data-source/data-connectors/elastic-search/"
 platform: bold-bi
 documentation: ug
 ---

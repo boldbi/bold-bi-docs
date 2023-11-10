@@ -1,5 +1,5 @@
 ﻿{
   "tryitnow": {
-    "tryitnowdescription": "Interactive documentation lets you play with our APIs to explore the responses and make the plan accordingly.\n\n[Try It Now(v3.0)](/embedded-bi/rest-api-reference/v3.0/try-it-now/)\n\nTo know about how it works, please click [here](/embedded-bi/rest-api-reference/interact-with-rest-api/)."
+    "tryitnowdescription": "Interactive documentation lets you play with our APIs to explore the responses and make the plan accordingly.\n\n[Try It Now(v3.0)](/embedded-bi/rest-api-reference/v3.0/try-it-now/)\n\nTo know about how it works, please click [here](/server-api-reference/interact-with-rest-api/)."
   }
 }

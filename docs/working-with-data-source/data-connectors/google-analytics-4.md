@@ -49,7 +49,7 @@ After successful authentication, the NEW DATA SOURCE configuration panel opens
 5. Click Custom URL to enter the URL and Raw Body manually. Refer to the [Google Analytics 4 API documentation](https://developers.google.com/analytics/devguides/config/admin/v1/rest/v1beta/accountSummaries))) for more details.
     URL Example:[https://analyticsdata.googleapis.com/v1beta/<GA4_PropertyID>:runReport](https://analyticsdata.googleapis.com/v1beta/<GA4_PropertyID>:runReport)
 
-    Raw Body Example: [{"dateRanges":[{"startDate":"2020-11-04","endDate":"2023-05-03"}],"dimensions":[{"name":"deviceCategory"}],"metrics":[{"name":"sessions"}]}]
+    Raw Body Example: `[{"dateRanges":[{"startDate":"2020-11-04","endDate":"2023-05-03"}],"dimensions":[{"name":"deviceCategory"}],"metrics":[{"name":"sessions"}]}]`
     
 6. By default, **PUT** method for the REST API in the **Method** combo box.
 7. In **Page(s)**, enter the maximum number of rows fetched from the Google Analytics 4 data source. This value is used to fetch the data from the Google Analytics 4 data source via pagination.
@@ -108,7 +108,7 @@ Period before the next refresh call is triggered. This will automatically trigge
      URL Example:[https://analyticsdata.googleapis.com/v1beta/<GA4_PropertyID>:runReport](https://analyticsdata.googleapis.com/v1beta/<GA4_PropertyID>:runReport)
 2. Generate Raw Body for Google Analytics 4 by selecting the required start date, end date, Metrics, and Dimensions from the Bold BI.
 
-   Example: [{"dateRanges":[{"startDate":"<:startDate>","endDate":"<:endDate>"}],"dimensions":[{"name":"<:dimensions>"}],"metrics":[{"name":"<:metrics>"}]}]({"dateRanges":[{"startDate":"2020-11-04","endDate":"2023-05-03"}],"dimensions":[{"name":"eventName"}],"metrics":[{"name":"eventCount"}]})  
+   Example: [{"dateRanges":[{"startDate":"<:startDate>","endDate":"<:endDate>"}],"dimensions":[{"name":"<:dimensions>"}],"metrics":[{"name":"<:metrics>"}]}]`({"dateRanges":[{"startDate":"2020-11-04","endDate":"2023-05-03"}],"dimensions":[{"name":"eventName"}],"metrics":[{"name":"eventCount"}]})`  
 
 For more information on the API endpoints available for this data source, refer to their official [API Documentation](https://developers.google.com/analytics/devguides/reporting/data/v1/rest/v1beta/properties)
 

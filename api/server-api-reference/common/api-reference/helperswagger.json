@@ -38,6 +38,12 @@
   "dashboarddescription": {
     "getdashboarddescription": "To copy, retrieve, and export dashboards in the Bold BI Embed, use the corresponding endpoints below."
   },
+  "downloaddashboarddescription": {
+    "getdownloaddashboarddescription": "To download dashboards in the Bold BI Embed, use the corresponding endpoints below."
+  },
+  "uploaddashboarddescription": {
+    "getuploaddashboarddescription": "To upload dashboards in the Bold BI Embed, use the corresponding endpoints below."
+  },
   "datasourcedescription": {
     "getdatasourcedescription": "To retrieve a list of data sources, and copy a particular data source in the Bold BI Embed, use the corresponding endpoints below."
   },
@@ -46,5 +52,8 @@
   },
   "itemdescription": {
     "getitemdescription": "To retrieve a list of items, retrieve, delete a particular item, and check a particular item name in the Bold BI Embed, use the corresponding endpoints below."
-  }
+  },
+  "userprofiledescription":{
+    "getuserprofiledescription": "Use the following endpoints to retrieve a list of user permissions and user notification settings in the Bold BI Embed."
+ }
 }

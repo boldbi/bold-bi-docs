@@ -11,7 +11,7 @@ documentation: ug
 
 This section explains how to schedule the synchronization of users and groups from the Azure Active Directory with the users and groups in the Bold BI.
 
-> **NOTE:** This feature is available in Bold BI Embedded Analytics but not in Cloud Analytics Server. Before scheduling the synchronization of Azure Active Directory users and groups, follow these steps:
+> **NOTE:** Before scheduling the synchronization of the Azure Active Directory users and groups, follow these steps:
 > 1. Configure [Azure Active Directory Settings](/site-administration/user-directory-settings/azure-active-directory/).
 > 2. To synchronize Azure Active Directory users, you should import users from the Azure Active Directory to the Bold BI by referring the following link [Azure Active Directory User Import](/managing-resources/manage-users/import-azure-active-directory-users/).
 > 3. To synchronize Azure Active Directory groups, you should import groups from the Azure Active Directory to the Bold BI by referring the following link [Azure Active Directory Group Import](/managing-resources/manage-groups/import-azure-active-directory-groups/).

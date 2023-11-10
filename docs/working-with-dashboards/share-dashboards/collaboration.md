@@ -5,7 +5,7 @@ description: Learn how to collaborate with other users in Bold BI Embedded by co
 canonical: "/working-with-dashboards/share-dashboards/collaboration/"
 platform: bold-bi
 documentation: ug
-lang: en
+
 ---
 
 # Collaboration in the Bold BI
@@ -96,4 +96,4 @@ Learn more about the notification [here](/working-with-dashboards/share-dashboar
 > **NOTE:**  An email setting is not necessary for collaboration. If email settings are not configured, then email notification will not be sent.
 
 ## Related links
-Blog Post - <a href="https://www.boldbi.com/blog/collaborate-with-business-dashboards-online-using-bold-bi" target="_blank">https://www.boldbi.com/blog/collaborate-with-business-dashboards-online-using-bold-bi</a>
+Blog Post - <a href="https://www.boldbi.com/blog/collaborate-with-business-dashboards-online-using-bold-bi" target="_blank">Collaborate with Business Dashboards Online Using Bold BI</a>

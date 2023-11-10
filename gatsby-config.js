@@ -15,6 +15,12 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-plugin-html-attributes',
+      options: {
+        lang: 'en-US'
+      }
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/pages`,
@@ -42,7 +48,7 @@ module.exports = {
             resolve: "gatsby-remark-external-links",
             options: {
               target: "_target",
-              rel: "nofollow"
+              rel: "follow"
             }
           },
           'gatsby-remark-copy-linked-files',

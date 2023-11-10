@@ -4,7 +4,7 @@ title: Changing DNS for your sites – Embedded | Bold BI Docs
 description: Learn how to change DNS binding for each site registered with Bold BI application that are used for embedded scenarios.
 platform: bold-bi
 documentation: ug
-lang: en
+
 ---
 
 > This document explains how to change a DNS for each site in the Bold BI version above 4.1.36. Check [this](/faq/how-to-change-dns-for-each-tenant-site-v4.1.36-or-below/) to change a DNS for each site in the Bold BI version 4.1.36 or below.

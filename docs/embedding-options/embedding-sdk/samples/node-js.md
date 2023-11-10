@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  Embedded SDK v3.3.40 Node.js Sample | Bold BI Docs
-description: Explore the JavaScript-based embedding with Node.js runtime environment supported since v3.3.40 of Bold BI.
+title: Embedding Analytics Dashboard with Node.js | Bold BI Docs
+description: Learn how to embed an analytics dashboard with a Node.js application using Bold BI Embed SDK and try it yourself.
 platform: bold-bi
 documentation: ug
-lang: en
+
 ---
 
 # Bold BI Dashboards embedding in Node.js using Embedded SDK
@@ -19,7 +19,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/nodejs-sample
  * [Visual Studio Code](https://code.visualstudio.com/download)
  * [Python 3.8](https://www.python.org/downloads/release/python-383/)
 
-> **NOTE:** Node.js v12.13 to v18.16 are supported
+> **NOTE:** Node.js v12.13 to v18.18 are supported
 
 ## How to run the sample
 
@@ -156,7 +156,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/nodejs-sample
 
     ```js
     <head>  
-        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v6.7.11/boldbi-embed.js"></script>
+        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v6.16.12/boldbi-embed.js"></script>
     </head>
     <body onload="embedSample();">
         <div id="dashboard"></div>

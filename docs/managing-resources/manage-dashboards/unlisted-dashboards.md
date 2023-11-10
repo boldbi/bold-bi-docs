@@ -11,8 +11,6 @@ documentation: ug
 
 Unlisted dashboards will not be listed to any users other than the owner, but users with the dashboard link can access the dashboards directly with their permission.
 
-> **NOTE:** Support for unlisted dashboards is not available in Cloud Analytics Server and it is available in Bold BI Embedded Analytics.
-
 This section explains how to unlist the dashboard from listing.
 
 ### Steps to unlist a dashboard

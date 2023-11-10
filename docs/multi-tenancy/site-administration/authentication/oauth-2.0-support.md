@@ -99,7 +99,7 @@ The following list of OAuth 2.0 providers explains how to connect with the User 
 * [OneLogin](/security-configuration/single-sign-on/oauth-2.0-support/onelogin/)
 
 ## Set OAuth 2.0 as default authentication
-OAuth 2.0 can be set as default authentication when [OAuth 2.0 settings](/multi-tenancy/site-administration/authentication/oauth-2.0-support/#steps-to-configure-oauth-20-in-user-management-server) is enabled.
+OAuth 2.0 can be set as default authentication when [OAuth 2.0 settings](/multi-tenancy/site-administration/authentication/oauth-2.0-support/#steps-to-configure-oauth-2.0-in-user-management-server) is enabled.
 
 Follow these steps to configure default authentication:
 
@@ -111,6 +111,6 @@ Follow these steps to configure default authentication:
 
 ## Disabling OAuth 2.0 settings
 
-Disable the **Enable Default Authentication** option and then clicking `Save` will disable the [OAuth 2.0 default authentication](/multi-tenancy/site-administration/authentication/oauth-2.0-support/#set-oauth-20-as-default-authentication).
+Disable the **Enable Default Authentication** option and then clicking `Save` will disable the [OAuth 2.0 default authentication](/multi-tenancy/site-administration/authentication/oauth-2.0-support/#set-oauth-2.0-as-default-authentication).
 
 ![Disable Default Authentication](/static/assets/multi-tenancy/images/oauth-default-authentication.png)

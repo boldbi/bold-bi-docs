@@ -4,7 +4,7 @@ title:  JavaScript Embedding with Embed SDK | Bold BI Docs
 description: Study the overview of JavaScript-based embedding with Bold BI Embedded SDK. This embedding reduces the amount of code and effort needed to embed the dashboards.
 platform: bold-bi
 documentation: ug
-lang: en
+
 ---
 
 # Overview of JavaScript based with Embedded SDK

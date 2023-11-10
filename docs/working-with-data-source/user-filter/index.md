@@ -5,11 +5,11 @@ description: Learn how to create the user filter to impose row-level security to
 canonical: "/working-with-data-source/user-filter/"
 platform: bold-bi
 documentation: ug
-lang: en
+
 ---
 
 # Getting Started With User Filter
-The user filter provides row level security for the data used for creating the dashboards. So that we can restrict the data that will be visible to each user. Lets consider the [Hotel Revenue Management Dashboard](https://www.boldbi.com/solutions/hospitality/hotel-revenue-management-dashboard). In the dashboard we can restrict the revenue data for the hotels in different geographical area so that the managers and the staffs will be able to see only the data of the region that they are handling.
+The user filter provides row level security for the data used for creating the dashboards. So that we can restrict the data that will be visible to each user. Lets consider the <a href="https://www.boldbi.com/dashboard-examples/hospitality/hotel-revenue-management-dashboard" target="_blank">Hotel Revenue Management Dashboard</a>. In the dashboard we can restrict the revenue data for the hotels in different geographical area so that the managers and the staffs will be able to see only the data of the region that they are handling.
 
 
 > **NOTE:**  The User filter will be applied to the result set of the Data Source and cannot be used for changing the connection string. You can use [Dynamic Connection String](/embedding-options/iframe-embedding/dynamic-connection-string/) Feature for this requirement.
@@ -42,7 +42,7 @@ User Filter can be configured in any of the three modes that are available.
 ![User Filter Modes](/static/assets/working-with-datasource/user-filter/images/user-filter-dlg-modes.png)
 
 #### Manual
-This mode will suit most of the use cases where the applied filter will not be changing dynamically and the data is close to or purely static or the user data is present as a column within the data used for the dashboard (like email / full name). Lets consider our [Hotel Revenue Management Dashboard](https://www.boldbi.com/solutions/hospitality/hotel-revenue-management-dashboard) example here, in this case the data here is mostly static as the hotels are spanning across all the continents and the staff handling the hotel in each continent are restricted to their geography. For this dashboard the Manual mode will be suiting the most. Refer here to know more on [Manual Mode](/working-with-data-source/user-filter/user-filter-manual/) 
+This mode will suit most of the use cases where the applied filter will not be changing dynamically and the data is close to or purely static or the user data is present as a column within the data used for the dashboard (like email / full name). Lets consider our <a href="https://www.boldbi.com/dashboard-examples/hospitality/hotel-revenue-management-dashboard" target="_blank">Hotel Revenue Management Dashboard</a> example here, in this case the data here is mostly static as the hotels are spanning across all the continents and the staff handling the hotel in each continent are restricted to their geography. For this dashboard the Manual mode will be suiting the most. Refer here to know more on [Manual Mode](/working-with-data-source/user-filter/user-filter-manual/) 
 
 #### Data Source
 This mode is well suited for the cases where the applied filters are more dynamic and the data used in the dashboard does not have any user information in any of its columns. Refer here to know more on [Data Source Mode](/working-with-data-source/user-filter/user-filter-advanced-data-source-mode/) 
@@ -72,6 +72,6 @@ You can use the **Preview as** drop down to choose the user or group you want to
 
 ![User Based Filter Preview](/static/assets/working-with-datasource/user-filter/images/user-filter-preview-banner.png)
 
-Let us consider our [Hotel Revenue Management Dashboard](https://www.boldbi.com/solutions/hospitality/hotel-revenue-management-dashboard) example here, since we have applied the user filter based on the groups we can choose a group name in the **Preview as** drop down to see how the users who belong to the group will be seeing in the dashboard.
+Let us consider our <a href="https://www.boldbi.com/dashboard-examples/hospitality/hotel-revenue-management-dashboard" target="_blank">Hotel Revenue Management Dashboard</a> example here, since we have applied the user filter based on the groups we can choose a group name in the **Preview as** drop down to see how the users who belong to the group will be seeing in the dashboard.
 
 ![User Based Filter Preview](/static/assets/working-with-datasource/user-filter/images/user-filter-preview-sample-banner.png)

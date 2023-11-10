@@ -29,3 +29,6 @@ Bold BI application allows you to use Median aggregation by following these step
 
 6. Now you can able to view the median result of the measure column.
 	![View Median result](/static/assets/faq/images/median-result.png)
+
+## Limitations
+We cannot use median function with expressions created using multiple columns. It is supported for expressions created from single column.

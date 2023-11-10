@@ -125,7 +125,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/flutter-sampl
  5. Include the following mandatory files in the `index.html` of the `<head>` tag as follows.
 
      ```js
-    <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v6.7.11/boldbi-embed.js"></script>
+    <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v6.16.12/boldbi-embed.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/hmac-sha256.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/enc-base64.min.js"></script>

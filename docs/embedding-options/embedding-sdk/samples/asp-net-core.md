@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  Embed SDK v3.3.40 ASP.NET Core Framework Sample | Bold BI
-description: Explore the JavaScript-based sample embedded in ASP.NET Core application supported since v3.3.40 of Bold BI.
+title: Embedding Analytics with ASP.NET Core | Bold BI Docs
+description: Learn how to embed an analytics dashboard with an ASP.NET Core application using Bold BI Embed SDK and try it yourself.
 platform: bold-bi
 documentation: ug
-lang: en
+
 ---
 
 # Bold BI Dashboards Embedding in ASP.NET Core Sample with Embedded SDK
@@ -205,7 +205,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/aspnet-core-s
      ![Index.cshml Image](/static/assets/javascript/sample/images/CoreViewFolderProperties.png)
 
      ```js 
-       <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v6.7.11/boldbi-embed.js"></script>
+       <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v6.16.12/boldbi-embed.js"></script>
        <script type="text/javascript" src="~/js/Index.js"></script>
        <script type="text/javascript">
           var rootUrl = "@GlobalAppSettings.EmbedDetails.ServerUrl";

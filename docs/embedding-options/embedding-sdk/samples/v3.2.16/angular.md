@@ -4,7 +4,7 @@ title:  Embed SDK with ASP.NET Core and Angular | Bold BI Learning
 description: Find Angular with ASP.NET Core sample for embedding Bold BI. List the dashboard and render in app with Angular app as client and Core app as server. 
 platform: bold-bi
 documentation: ug
-lang: en
+
 ---
 
 # Bold BI Dashboards embedding in Angular with ASP.NET Core using Embedded SDK

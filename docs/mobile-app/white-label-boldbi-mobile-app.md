@@ -4,7 +4,7 @@ title: White Labeling Mobile App – Embedded Analytics | Bold BI Docs
 description:  This page discusses about creating a white label Bold BI mobile app, publishing it in Play Store and App Store and view your on-premises hosted site through it.
 platform: bold-bi
 documentation: UG
-lang: en
+
 ---
 
 # White labeling the Bold BI Mobile App

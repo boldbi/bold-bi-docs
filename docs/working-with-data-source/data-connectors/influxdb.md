@@ -112,7 +112,7 @@ You can filter data based on year, month, week, day, and hour for time column on
 
    ![InfluxDB WidgetLevelFiltering](/static/assets/working-with-datasource/data-connectors/images/Influxdb/Influxdb_WidgetLevelFiltering.png)
  
-[Relative date filtering](/cloud-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-date-column)
+[Relative date filtering](/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-date-column)
 
 > **NOTE:**  You cannot filter measure columns in the widget level filtering. 
 

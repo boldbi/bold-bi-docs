@@ -10,13 +10,11 @@ documentation: ug
 
 The usage analytics dashboard is predefined and enables you to monitor dashboard activity to better understand how users are interacting with dashboards.
 
-> **NOTE:** This feature is available in Bold BI Embedded Analytics but not in Cloud Analytics Server.
-
 The usage analytics dashboards are listed in the `Usage Analytics` category on the dashboard listing page.
 
 ![Usage Analytics Dashboard](/static/assets/site-administration/images/usage-analytics-dashboard.png#width=60%)
 
-You can show or hide the usage analytics category in the dashboard listing page based on [Usage analytics](/site-administration/dashboard-settings/usage-analytics) option in the dashboard settings page.
+You can show or hide the usage analytics category in the dashboard listing page based on [Usage analytics](/site-administration/dashboard-settings/usage-analytics/) option in the dashboard settings page.
 
 > **NOTE:**  The `Usage Analytics` option is available only to admin users, and usage analytics dashboards are read-only.
 

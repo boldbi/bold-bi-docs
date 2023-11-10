@@ -6,7 +6,7 @@ canonical: "/visualizing-data/visualization-widgets/tree-map/"
 platform: bold-bi
 control: Tree Map
 documentation: ug
-lang: en
+
 ---
 
 # Configuring and Formatting Tree Map

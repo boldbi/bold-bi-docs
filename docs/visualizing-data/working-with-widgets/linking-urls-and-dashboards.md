@@ -5,7 +5,7 @@ description: Learn how to link dashboard and URL to a widget and show it as dril
 canonical: "/visualizing-data/working-with-widgets/linking-urls-and-dashboards/"
 platform: bold-bi
 documentation: ug
-lang: en
+
 ---
 
 # Linking URLs in dashboards
@@ -64,6 +64,25 @@ Click Add button shown as below to add the field.
 Now, the field will be added with URL.
 
 ![Field added](/static/assets/visualizing-data/working-with-widgets/images/Linking10.PNG)
+
+## Dashboard Parameter support in URL Linking
+URL Linking allows you to use both the [Dashboard Parameter](/working-with-data-source/dashboard-parameter/configuring-dashboard-parameters/) and [Default Parameter](/working-with-data-source/dashboard-parameter/change-the-dashboard-parameter-value-in-url/#default-parameters). Create a dynamic link based on current domain, dashboard, and category by referring info icon placed at the right side of the URL text box.
+
+**Syntax** : `@{{:CURRENT.SITEURL}}/dashboards?dashboardName={dashboard_name}&categoryName={category_name}`
+
+  - `@{{:CURRENT.SITEURL}}` - This `Default parameter` will automatically populate the URL of the current site.
+  - `{dashboard_name}` - Specify the name of the dashboard you want to link.
+  - `{category_name}` - Specify the name of the category under which the dashboard has been published.
+
+For Example, the dynamic URL can be created as `@{{:CURRENT.SITEURL}}/dashboards?dashboardName=Sales Analysis Dashboard&categoryName=Sales`.
+
+Refer the URL info as shown in following image.
+
+![Dynamic URL](/static/assets/visualizing-data/working-with-widgets/images/LinkingURLInfo.png)
+
+As per the above syntax, create the dynamic Linking URL by using the `Default parameter` and `Dashboard Parameter` as shown in the following image.
+
+![Dashboard Parameter](/static/assets/visualizing-data/working-with-widgets/images/LinkingParametersInURL.png)
 
 ## Advanced Url Linking
 

@@ -24,7 +24,7 @@ Bold BI recommends you follow the below guidelines while upgrading the Bold BI S
 * Ensure no one is currently working with dashboards.
 * Inform about the maintenance time to the users.
 * For databases, make sure you have a valid network connection to the database while upgrading to the new version. 
-* The upgrade requires the intermediate database as mandatory, make sure that the database is configured before upgrading. You can refer how to [configure intermediate database](/site-administration/datastore-settings/).
+* The upgrade requires the intermediate database as mandatory, make sure that the database is configured before upgrading. You can refer how to [configure intermediate database](/site-administration/data-process-settings/datastore-settings/).
 
 ## Backup the existing data
 Before upgrading the Bold BI to latest version, make sure to take the backup of all the files and folders from below location.

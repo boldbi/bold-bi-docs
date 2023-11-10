@@ -4,7 +4,7 @@ title: Single Sign-On with Office 365 Users and Groups | Bold BI
 description: Learn how to configure user directory with Office 365 AD for SSO authentication to share dashboards and email reports with them.
 platform: bold-bi
 documentation: ug
-lang: en
+
 ---
 
 # Office 365 support for authentication

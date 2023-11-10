@@ -2,7 +2,7 @@
 layout: post
 title: Managing Users Permissions in Embedded BI | Bold BI Docs
 description: Learn how to manage the permissions of the users and groups with needed scope to the corresponding entities in Bold BI Embedded.
-canonical: "/working-with-dashboards/share-dashboards/manage-permissions/"
+canonical: "/managing-resources/manage-permissions/"
 platform: bold-bi
 documentation: ug
 ---
@@ -13,9 +13,7 @@ This section explains the access modes, entities, scopes, and how to add permiss
 
 All permissions can be managed by the users belonging to the `System administrator` group or users assigned with the permission entity of `All Permissions`. Also, specific permissions of the resource such as category, dashboards, data sources, schedules, and slideshows can be managed by the users assigned with permission entity of `Specific Permissions` of the corresponding resources.
 
-> **NOTE:** Manage permissions is not available in Cloud Analytics Server and it is available in Bold BI Embedded Analytics.
-
-Permission can be directly added to both users and groups via [Add Permission](/working-with-dashboards/share-dashboards/manage-permissions/#add-permissions) dialog.
+Permission can be directly added to both users and groups via [Add Permission](/managing-resources/manage-permissions/#add-permissions) dialog.
 
 ![Add Permission Dialog](/static/assets/images/add-permission-dialog.png)
 

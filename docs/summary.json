@@ -37,7 +37,8 @@
 				},
 				"Bold BI on Ubuntu": "bold-bi-on-ubuntu",
 				"Bold BI on CentOS": "bold-bi-on-centos",
-				"Auto Deployment": "auto-deployment"
+				"Auto Deployment": "auto-deployment",
+				"Bold BI over Bold Reports": "bold-bi-over-bold-reports"
 			},
 			"Deploy Bold BI Using Apache Server": {
 				"Configure Apache Server In CentOS": "configure-apache-server-in-centos",
@@ -79,26 +80,29 @@
 			"Samples": {
 				"ASP.NET Core": "asp-net-core",
 				"ASP.NET MVC": "asp-net-mvc",
-				"Angular with JavaScript": "angular-with-javascript",
+				"Angular with ASP.NET Core": "angular-with-core",
 				"ASP.NET": "asp-net",
-				"Blazor Web Assembly": "blazor-web-assembly",
-				"Blazor with JavaScript": "blazor-with-javascript",
-				"Ruby on Rails": "ruby-on-rails",
 				"React with ASP.NET Core": "react-core",
+				"React with Node.js": "react-with-node-js",
 				"React with Go": "react-with-go",
-				"Winforms": "winforms",
 				"Node.js": "node-js",
-				"PHP with JavaScript": "php-with-javascript",
+				"Blazor WebAssembly": "blazor-web-assembly",
+				"Blazor with JavaScript": "blazor-with-javascript",
+				"ASP.NET WebForms": "asp-net-web-forms",
+				"VueJS with ASP.NET Core": "vuejs-with-core",
 				"VueJS with Go": "vuejs-with-go",
-				"VueJS with core": "vuejs-with-core",
+				"VueJS with Node.js":"vuejs-with-node-js",
+				"PHP with JavaScript": "php-with-javascript",
+				"Java Servlet": "java-servlet",
+				"Django": "django",
+				"WinForms": "winforms",
+				"Ruby on Rails": "ruby-on-rails",
 				"WPF": "wpf",
 				"Xamarin": "xamarin",
 				"Flutter with JavaScript":"flutter-with-javascript",
 				"ColdFusion": "cold-fusion",
-				"Django": "django",
 				"Ionic with ASP.NET Core": "ionic-with-core",
-				"Java Servlet": "java-servlet",
-				"React with Node.js": "react-with-node-js",
+				"Spring Boot":"spring-boot",
 				"v3.2.16": {
 					"ASP.NET Core": "asp-net-core",
 					"ASP.NET MVC": "asp-net-mvc",
@@ -108,10 +112,11 @@
 		},
 		"iFrame Embedding": {
 			"Embedding a Dashboard": "embedding-a-dashboard",
-			"Embedding a Dashboard with SSO": "embedding-a-dashboard-with-sso",
+			"Embed Dashboards with SSO using Token": "embed-dashboards-with-sso-using-token",
+			"Embedding a Dashboard with external SSO":"dashboard-embedding-with-external-sso",
 			"Embedding a Dashboard with Views": "embedding-a-dashboard-with-views",
 			"Embedding a widget": "embedding-a-widget",
-			"Embedding a widget with SSO": "widget-embedding-using-single-sign-on",
+			"Embed Widgets with SSO using Token": "embed-widgets-with-sso-using-token",
 			"Secured Embedding": "secured-embedding",			
 			"Get Data source URL": "get-datasource-url",
 			"Datasource Embedding": "datasource-embedding",
@@ -154,6 +159,7 @@
 			"App Annie": "app-annie",
 			"Appfolio": "appfolio",
 			"Ask Nicely": "ask-nicely",
+			"Azure Data Explorer": "azure-data-explorer",
 			"Azure Synapse Analytics": "azure-synapse-analytics",
 			"Azure DevOps": "azure-devops",
 			"Azure Blob": "azure-blob",
@@ -219,7 +225,7 @@
 			"Lessonly": "lessonly",
 			"Lighthouse": "lighthouse",
 			"LinkedIn": "linkedin",
-			"Live Agent": "live-agent",
+			"LiveAgent": "live-agent",
 			"Live web": "live-web",
 			"Mailchimp": "mailchimp",
 			"MariaDB": "mariadb",
@@ -252,6 +258,7 @@
 			"Raven DB": "ravendb",
 			"RSS Feeds": "rss-feeds",
 			"Recurly": "recurly",
+			"Rockset": "rockset",
 			"Web": "web",
 			"Salesforce": "salesforce",
 			"Salesforce Reports": "salesforce-reports",
@@ -272,11 +279,13 @@
 			"Stripe": "stripe",
 			"Alchemer": "alchemer",
 			"SurveyMonkey": "surveymonkey",
+			"TDengine": "tdengine",
 			"Twilio": "twilio",
 			"Trello": "trello",
 			"Todoist": "todoist",
 			"Toggl": "toggl",
 			"WordPress": "wordpress",
+			"Wistia": "wistia",
 			"YouScan":"youscan",
 			"Yelp": "yelp",
 			"Xero": "xero",
@@ -290,7 +299,8 @@
 			"Zoho CRM": "zohocrm",
 			"Zoho Books": "zoho-books",
 			"Avochato": "avochato",
-			"Zuora": "zuora"
+			"Zuora": "zuora",
+			"Parquet":"parquet"
 		},
 		"Transforming Data": {
 			"Joining Tables": "joining-table",
@@ -323,7 +333,8 @@
 		"Configure Dashboard Parameter Iterative Mode": "dashboard-parameter-iterative-mode",
 		"Configure Custom Attribute": "configuring-custom-attribute",
 		"Configure Isolation code": "configuring-isolation-code",
-		"White List IP addresses of the Bold BI Cloud servers": "white-list-ip-address-bold-bi-cloud"
+		"White List IP addresses of the Bold BI Cloud servers": "white-list-ip-address-bold-bi-cloud",
+		"Append Data from File":"append-data-source"
 	},
 	"Visualizing Data": {
 		"Visualization Widgets": {
@@ -408,6 +419,7 @@
 		"Commenting Dashboard": "commenting-dashboard",
 		"Data Alerts": "data-alerts",
 		"Data Cache": "data-cache",
+		"Publish Dashboard":"publish-dashboard",
 		"Preview Dashboard": {
 			"Maximizing Widget View": "maximizing-widget-view",
 			"Exporting Reports from dashboard": "dashboard-settings",
@@ -472,7 +484,8 @@
           "Theming": "enable-or-disable-dashboard-theme",
           "Usage analytics": "usage-analytics",
           "Deployment dashboards": "deployment-dashboard",
-          "Get Embed Code" : "show-or-hide-get-embed-code-option"
+          "Get Embed Code" : "show-or-hide-get-embed-code-option",
+		  "Lock Resource Synchronization" : "lock-resource-synchronization"
         },
 		"Embed Settings": "embed-settings",
         "Email Settings": {
@@ -502,6 +515,7 @@
 			  }
 		},
         "Notification Settings": "notification-settings",
+		"Site Credentials": "site-credentials",
         "Integrations": {
           "Webhook Listing": "webhook-listing",
           "Failure Logs": "failure-logs"
@@ -511,17 +525,7 @@
 			"Error Codes":"error-codes"
 		},
 		"Subscription":"subscription",
-        "Usage Analytics Dashboard": "usage-analytics-dashboard",
-		"API Reference": {
-			"v1.0": {
-			  "API Reference": "api-reference?html=true",
-			  "Try it now": "try-it-now?html=true"
-			},
-			"v2.0": {
-			  "API Reference": "api-reference?html=true",
-			  "Try it now": "try-it-now?html=true"
-			}
-		}
+        "Usage Analytics Dashboard": "usage-analytics-dashboard"
     },  
     "Managing Resources": {
         "Manage Dashboards": {
@@ -535,7 +539,9 @@
           "Version History of Dashboards": "version-history-of-dashboards",
           "Delete Dashboards": "delete-dashboards",
           "Share Dashboards": "share-dashboards",
+		  "Publish Dashboards":"publish-dashboards",
           "Advanced Dashboard Security": "advanced-dashboard-security",
+		  "Enable Tab Security": "enable-tab-security",
           "Unlisted Dashboards": "unlisted-dashboards"
         },
         "Manage Data Sources": "manage-data-sources",
@@ -561,6 +567,7 @@
           "Synchronize Active Directory Users": "synchronize-active-directory-users",
           "Import Azure Active Directory Users": "import-azure-active-directory-users",
           "Synchronize Azure Active Directory Users": "synchronize-azure-active-directory-users",
+		  "Bulk Import Result": "bulk-import-result",
 		  "Profile": "profile"
         },
         "Manage Groups": {
@@ -623,7 +630,17 @@
 		"Manage Sites": "manage-sites",
 		"Manage Users": "manage-users",
 		"Manage Admin access": "manage-ums-administrator",
-		"Two Factor Authentication": "two-factor-authentication"
+		"Two Factor Authentication": "two-factor-authentication",
+		"API Reference": {
+			"v1.0": {
+			  "API Reference": "api-reference?html=true",
+			  "Try it now": "try-it-now?html=true"
+			},
+			"v2.0": {
+			  "API Reference": "api-reference?html=true",
+			  "Try it now": "try-it-now?html=true"
+			}
+		}
 	},
     "Responsive Layout": {
         "Responsive Design in Bold BI Dashboard": "responsive-design-bold-bi-dashboard",
@@ -650,6 +667,10 @@
               "Try it now": "try-it-now?html=true"
             },
             "v4.0": {
+              "API Reference": "api-reference?html=true",
+              "Try it now": "try-it-now?html=true"
+            },
+            "v5.0": {
               "API Reference": "api-reference?html=true",
               "Try it now": "try-it-now?html=true"
             }
@@ -714,7 +735,8 @@
         "How to restart the Bold BI Embedded application": "how-to-restart-the-bold-bi-embedded-application",
         "How to pass dashboard parameter in iframe while embedding a dashboard": "how-to-pass-dashboard-parameter-in-iframe-embedding-a-dashboard",
         "How to connect data sources with SSH connection in Bold BI": "how-to-connect-data-sources-with-ssh-connection-in-bold-bi",
-        "How to enable SSL through connection parameters for PostgreSQL data source": "how-to-enable-ssl-through-connection-parameters-for-postgresql-data-source",
+	"How to enable threshold through code view mode data source": "how-to-enable-threshold-through-code-view-mode-data-source",
+	"How to enable SSL through connection parameters for PostgreSQL data source": "how-to-enable-ssl-through-connection-parameters-for-postgresql-data-source",
         "How to transpose the data columns and rows in MS SQL data source": "how-to-transpose-the-data-columns-and-rows-in-sql-data-source",
         "How to access the custom JSON data using PostgreSQL data source": "how-to-access-the-custom-json-data-using-postgresql-data-source",
         "How to convert a timestamp column from one timezone to another in the PostgreSQL data source": "how-to-convert-timestamp-column-from-one-timezone-to-another-in-the-postgresql-datasource",
@@ -760,6 +782,7 @@
     "How to add fixed target value in KPI card widget":"how-to-add-fixed-target-value-in-kpi-card-widget",
     "How to secure the dashboard in iframe embedding":"how-to-secure-the-dashboard-in-iframe-embedding",
     "How to generate access token to authenticate users":"how-to-generate-access-token-to-authenticate-user",
+    "What are the various types of data filtering in an embedded dashboard":"what-are-the-various-types-of-data-filtering-in-an-embedded-dashboard",
     "Where can I find the product version in Bold BI Embed":"where-can-i-find-the-product-version",
     "How to apply the filter in the grid widget based on the string presented in the string column":"how-to-apply-the-filter-in-the-grid-widget-based-on-the-string-presented-in-the-string-column",
     "How to resolve no data to be displayed alert":"how-to-resolve-no-data-to-be-displayed-alert",  

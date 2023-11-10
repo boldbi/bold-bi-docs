@@ -6,7 +6,7 @@ canonical: "/working-with-data-source/configuring-custom-attribute/"
 platform: bold-bi
 documentation: ug
 keywords: Custom attribute, attribute, configure custom attribute
-lang: en
+
 ---
 
 # Configuring Custom Attribute

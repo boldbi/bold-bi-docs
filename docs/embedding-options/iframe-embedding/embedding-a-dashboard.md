@@ -21,110 +21,62 @@ A dashboard can be embedded in the create, edit and view modes in any applicatio
 ![ModeOption](/static/assets/iFrame-based/images/select-mode.png#max-width=45%)
 
 3. By Default, Dashboard Comments, Widget Comments, Saved Views, Export, and SSO options are disabled. Enable this option by sliding the button given in the embed dialog. 
-![EnableOption](/static/assets/iFrame-based/images/enable-option.png#max-width=45%)  
-<table>
-    <tr>
-      <td>
-       Dashboard Comments
-      </td>
-      <td>
-       Dashboard comment panel would be shown in embedded view if enabled this parameter.
-      </td>
-    </tr>
-    <tr>
-      <td>
-       Widget Comments
-      </td>
-      <td>
-       Widget comment panel would be shown in embedded view if enabled this parameter.
-      </td>
-    </tr>
-    <tr>
-      <td>
-       Saved Views
-      </td>
-      <td>
-       Dashboard views panel would be shown in embedded view if enabled this parameter.
-      </td>
-    </tr>
-    <tr>
-      <td>
-       Export
-      </td>
-      <td>
-       Dashboard/Widget exporting options would be shown in embedded view if enabled this parameter.
-      </td>
-    </tr>
-    <tr>
-      <td>
-       SSO
-      </td>
-      <td>
-       Single Sign-On authentication is enabled for embedded view if configured authentication is selected as an authentication parameter.
-      </td>
-    </tr>
-</table>  
+	
+    ![EnableOption](/static/assets/iFrame-based/images/enable-option.png#max-width=45%)  
+	<table>
+	    <tr>
+	      <td>
+	       Dashboard Comments
+	      </td>
+	      <td>
+	       Dashboard comment panel would be shown in embedded view if enabled this parameter.
+	      </td>
+	    </tr>
+	    <tr>
+	      <td>
+	       Widget Comments
+	      </td>
+	      <td>
+	       Widget comment panel would be shown in embedded view if enabled this parameter.
+	      </td>
+	    </tr>
+	    <tr>
+	      <td>
+	       Saved Views
+	      </td>
+	      <td>
+	       Dashboard views panel would be shown in embedded view if enabled this parameter.
+	      </td>
+	    </tr>
+	    <tr>
+	      <td>
+	       Export
+	      </td>
+	      <td>
+	       Dashboard/Widget exporting options would be shown in embedded view if enabled this parameter.
+	      </td>
+	    </tr>
+	    <tr>
+	      <td>
+	       SSO
+	      </td>
+	      <td>
+	       Single Sign-On authentication is enabled for embedded view if configured authentication is selected as an authentication parameter.
+	      </td>
+	    </tr>
+	</table>  
 
 4. Copy the embed URL by clicking the copy icon from the Embed Code dialog.  
 	![CopyEmbedCode](/static/assets/iFrame-based/images/copy-embedcode.png#max-width=45%)
 
 5. Embed the copied URL into other web applications.
 
-6. When you run the web application, it will show the login window or dashboard, based on the type of dashboard. When you click the login button and log in with valid user credentials, the dashboard will render automatically. To avoid login, use single sign-on [method.](/embedding-options/iframe-embedding/embedding-a-dashboard/#embed-dashboards-using-external-sso-authentication)
+6. When you run the web application, it will show the login window or dashboard based on the type of dashboard. When you click **login** and you log in with valid user credentials, the dashboard will render automatically. To avoid login, use [single sign-on](/embedding-options/iframe-embedding/dashboard-embedding-with-external-sso/).
 	
 	![EmbedLogin](/static/assets/iFrame-based/images/iframeLoginPage.png#max-width=45%) 
 	![EmbedViewDashboard](/static/assets/iFrame-based/images/embed-dashboard-view.png#max-width=85%)   
 
 > **NOTE:**  In the case of SSO enabled parameters, a login prompt will appear if you haven't logged in and selected SSO authentication; if you have already logged in, the dashboard will be rendered based on the permission granted to the user to that dashboard. 
-
-
-
-## Embed Dashboards using external SSO authentication
-
-Bold BI supports embedding the dashboards into other web applications using the external Single Sign-On authentication in the iframe based embedding. The Bold BI application can be configured to support the `Windows Active Directory`, `Azure Active Directory`, `OAuth 2.0` and `OpenID Connect` authentications.
-
-
-### Embed using Windows AD Authentication
-The Bold BI application has been configured with the **Windows Active Directory**, the following steps show how to get the embed code with the `Windows Active Directory SSO` settings. Learn more about the configure Window Active Directory settings [here](/site-administration/user-directory-settings/active-directory/active-directory).
-
-1. Click the context menu of the respective dashboard and choose the `Get Embed code` option. In the Embed Code dialog box, select mode as `View`.  Enable the `SSO` and select the `Windows Active Directory` option as shown in the following image.
-![EmbedSSOWindows](/static/assets/iFrame-based/images/embed-sso-windows.png#max-width=45%)
-
-2. Copy the embed URL by clicking the copy icon from the Embed Code dialog and paste it into a web application that has configured the Windows Active Directory.
-
-3. Run the web application and get sign-in with the windows active directory. Now, the dashboard would be rendered automatically based on the permission given to the windows user.
-
-
-### Embed using Azure AD Authentication
-The Bold BI application has been configured with the **Azure Active Directory**, the following steps show how to get the embed code with the `Azure Active Directory SSO` settings. Learn more about the configure Azure Active Directory settings [here](/security-configuration/single-sign-on/azure-active-directory).
-
-1. Click the context menu of the respective Dashboard and choose `Get Embed code` option. In the Embed Code dialog, select mode as `View`. Enable the `SSO` and select the `Azure Active Directory` as shown in the following image.
-![EmbedSSOAzure](/static/assets/iFrame-based/images/embed-sso-azure.png#max-width=45%)
-
-2. Copy the embed URL by clicking the copy icon from the Embed Code dialog and paste it into a web application that has configured the Azure Active Directory.
-
-3. Run the web application and get sign-in with the Azure Active Directory. Now, the dashboard would be rendered automatically based on the permission given to the azure user.
-
-
-### Embed using OAuth 2.0 Authentication
-The Bold BI application has been configured with the **OAuth 2.0** , the following steps show how to get the embed code with the `OAuth SSO` settings. Learn more about the configure OAuth 2.0 settings [here](/security-configuration/single-sign-on/oauth-2.0-support).
-
-1. Click the context menu of the respective Dashboard and choose `Get Embed code` option. In Embed Code dialog, select mode as `View`. Enable the `SSO` and select  the `OAuth 2.0` option as shown in the following image.
-![EmbedSSOOAuth](/static/assets/iFrame-based/images/embed-sso-oauth.png#max-width=45%)
-
-2. Copy the embed URL by clicking the copy icon from the Embed Code dialog and paste it into a web application that has configured the OAuth 2.0 authentication.
-
-3. Run the web application and get sign-in with the configured OAuth provider. Now, the dashboard would be rendered automatically based on the permission given to the OAuth user.
-
-### Embed using OpenID Connect Authentication
-The Bold BI application has been configured with the **OpenID Connect** , the following steps show how to get the embed code with the `OpenID SSO` Settings. Learn more about the configure OpenID settings [here](/security-configuration/single-sign-on/openid-support).
-
-1. Click the context menu of the respective Dashboard and choose `Get Embed code` option. In Embed Code dialog,s elect mode as `View`. Enable the `SSO` and select the `OpenID` option as shown in the following image.  
-![EmbedSSOOpenID](/static/assets/iFrame-based/images/embed-sso-openid.png#max-width=45%)
-
-2. Copy the embed URL by clicking the copy icon from the Embed Code dialog and paste it into a web application that has configured the OpenID Connect authentication.
-
-3. Run the web application and get sign-in with configured OpenID. Now, the dashboard would be rendered automatically based on  the permission given to the OpenID user. 
 
 ## Public embedding
 If you want to embed the dashboard without user authentication, then make the dashboard public and then embed it. The public dashboard will be rendered automatically without credentials. You cannot enable the comments panel for public dashboard embedding. 

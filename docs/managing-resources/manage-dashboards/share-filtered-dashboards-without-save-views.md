@@ -5,7 +5,7 @@ description: Learn how to share the current dashboard filtered view without savi
 canonical: "/managing-resources/manage-dashboards/share-filtered-dashboards-without-save-views/" 
 platform: bold-bi
 documentation: ug
-lang: en
+
 ---
 
 # Share filtered dashboards without saving as views

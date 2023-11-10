@@ -5,7 +5,7 @@ description: Learn how to aggregate a value column based on an aggregation type 
 canonical: "/visualizing-data/working-with-widgets/aggregating-value-columns-based-on-type/"
 platform: bold-bi
 documentation: ug
-lang: en
+
 ---
 
 # Aggregating Value Columns Based on Type

@@ -110,4 +110,4 @@ Replace it in the URL to query particular activity:
 
 [Editing a Data Connection](/working-with-data-source/editing-a-data-connection/)   
 
-[Dashboard Designer Walkthrough](/getting-started/bold-bi-walk-through/)
+[Dashboard Designer Walkthrough](/getting-started/creating-dashboard/)

@@ -16,7 +16,7 @@ Resetting the application database details in the Bold BI application requires u
 ## Steps to reset the Bold BI application database
 
 1.	Follow the steps in below link to reset the database of the Bold BI server.  
-    * [**Update Application Database**](/admin-utility/reset-application-database/)
+    * [**Update Application Database**](/utilities/bold-bi-command-line-tools/reset-application-database/)
 
 2.	Once the database has been updated successfully, then restart the application in IIS and login to site management portal using the link `{host:port}/ums/sites`
 

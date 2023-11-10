@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  Embedded SDK v3.3.40 WinForms Sample | Bold BI Docs
-description: Explore the JavaScript-based embedding with Windows Forms sample application supported since v3.3.40 of Bold BI.
+title: Embedding Analytics with .NET WinForms | Bold BI Docs
+description: Learn how to embed an analytics dashboard with .NET Win Forms application using Bold BI Embed SDK and try it yourself.
 platform: bold-bi
 documentation: ug
-lang: en
+
 ---
 
 # Bold BI Dashboards embedding in Windows Forms using Embedded SDK

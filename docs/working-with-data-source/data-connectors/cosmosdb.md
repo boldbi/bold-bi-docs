@@ -96,6 +96,6 @@ On initial connect Cosmos DB will extract a maximum of 10,000 records. Configure
 
 [Editing a Data Connection](/working-with-data-source/editing-a-data-connection/)   
 
-[Dashboard Designer Walkthrough](/embedded-bi/getting-started/quick-start/)
+[Dashboard Designer Walkthrough](/getting-started/creating-dashboard/)
 
 [MongoDB Integration](https://www.boldbi.com/integrations/mongodb?utm_source=syncfusion&utm_medium=documentation&utm_campaign=boldbimongodbintegration)

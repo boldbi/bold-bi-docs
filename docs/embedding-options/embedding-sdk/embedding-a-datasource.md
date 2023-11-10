@@ -16,7 +16,7 @@ Follow these steps to embed data source in your application.
 
     ```js
     <head>
-        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v6.7.11/boldbi-embed.js"></script>
+        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v6.16.12/boldbi-embed.js"></script>
     </head>
     ```
 
@@ -206,12 +206,12 @@ Follow these steps to embed data source in your application.
 </code></td>
 </tr>
 <tr>            
-<td><code>v6.7.11(latest)</code></td>            
+<td><code>v6.16.12(latest)</code></td>            
 <td><code>
 
  ```js
 <head> 
-    <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v6.7.11/boldbi-embed.js"></script>
+    <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v6.16.12/boldbi-embed.js"></script>
 </head>
 ```
 </code></td>
@@ -282,4 +282,4 @@ You can get your Embed Secret key from administrator setting section. Refer to t
 
 If you are using multi-tenant Bold BI server sites and want to embed the designer in your application, then we recommend using the common embed secret instead of the separate embed secret for each site. Refer to this [link](/site-administration/embed-settings/#get-common-embed-secret-code-from-ums) to get the common embed secret.
 
-> **NOTE:**  <br>This embed setting will be enabled only if you have an Embedded BI plan. <br><br>Refer to this [link](/faq/how-to-resolve-jquery-conflict-in-embedding) to resolve the jQuery conflict problem in embedded.
+> **NOTE:**  <br>This embed setting will be enabled only if you have an Embedded BI plan. <br><br>Refer to this [link](/faq/how-to-resolve-jquery-conflict-in-embedding/) to resolve the jQuery conflict problem in embedded.

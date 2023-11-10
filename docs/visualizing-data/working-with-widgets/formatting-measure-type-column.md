@@ -5,7 +5,7 @@ description: Learn how to apply formatting such as decimal places, number type, 
 canonical: "/visualizing-data/working-with-widgets/formatting-measure-type-column/"
 platform: bold-bi
 documentation: ug
-lang: en
+
 ---
 
 # Formatting Measure Type Column

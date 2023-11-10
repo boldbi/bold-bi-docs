@@ -32,4 +32,4 @@ You can edit a data source using the following steps:
  [Learn how to rename a data source](/working-with-data-source/renaming-a-data-source/)
 
 ## Post your message
-If you are still not able to find the information that you are looking for in the self-help resources mentioned above then please [contact us](https://www.boldbi.com/support) and send your requirements.
+If you are still not able to find the information that you are looking for in the self-help resources mentioned above then please <a href="https://www.boldbi.com/support" target="_blank">contact us</a> and send your requirements.

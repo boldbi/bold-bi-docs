@@ -6,7 +6,7 @@ canonical: "/visualizing-data/visualization-widgets/list-box/"
 platform: bold-bi
 control: List Box
 documentation: ug
-lang: en
+
 ---
 
 # List Box

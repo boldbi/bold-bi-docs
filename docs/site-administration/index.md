@@ -4,7 +4,7 @@ title:  Site Administration – Embedded BI | Bold BI Documentation
 description: Learn how to configure data store, email, embed settings, SSO and custom identity provider for users and groups in Bold BI deployed in your server.
 platform: bold-bi
 documentation: ug
-lang: en
+
 ---
 
 # Site Administration
@@ -39,8 +39,8 @@ You can explore the Site Administration in detail here,
 
 [Notification Settings](/site-administration/notification-settings/)
 
+[Site Credentials](/site-administration/site-credentials/)
+
 [Security](/security-configuration/cors-settings/)
 
 [Integrations](/site-administration/integrations/)
-
-[API Reference](/site-administration/api-reference/)

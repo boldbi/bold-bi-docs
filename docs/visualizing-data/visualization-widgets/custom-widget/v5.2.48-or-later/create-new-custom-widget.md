@@ -627,8 +627,8 @@ The variables used in the code sample above are explained below:
 
  To import the custom widget in the Bold Bi designer, you should pack the widget in the *.bicw format. Follow the steps below to convert the custom widget to the *.bicw file
 
-   * Run the custom widget utility by following the steps mentioned in the [link](/embedded-bi/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/create-new-custom-widget/#converting-the-widget-to-a-bicw-file)  
-  * Now run the [pack command](/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/create-new-custom-widget/#format-2) to convert  the widget to *.bicw file 
+   * Run the custom widget utility by following the steps mentioned in the [link](#converting-the-widget-to-a-bicw-file)  
+  * Now run the [pack command](#format) to convert  the widget to *.bicw file 
 
 ### Format
 

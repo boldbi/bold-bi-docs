@@ -186,6 +186,6 @@ You can edit, delete and re-authorize this account from the **Connected Accounts
 
 [Asana API Rate Limits](https://asana.com/developers/documentation/getting-started/rate-limits)
 
-[Asana Integration](https://www.boldbi.com/integrations/asana)
+<a href="https://www.boldbi.com/integrations/asana" target="_blank">Asana Integration</a>
 
-[Blog Post](https://www.boldbi.com/blog/make-better-decisions-with-an-asana-dashboard)
+<a href="https://www.boldbi.com/blog/make-better-decisions-with-an-asana-dashboard" target="_blank">Blog Post</a>

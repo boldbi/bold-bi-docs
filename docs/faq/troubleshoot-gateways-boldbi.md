@@ -40,8 +40,8 @@ To resolve this issue, please add Warehouse=WarehouseName in the Additional conn
 This error occurs if the required client dll is not installed in Bold BI. Please download the client libraries based on your environment using the following help links.
 
 * [Installing client libraries in azure app service](/deploying-bold-bi/deploying-in-azure-app-service/install-client-libraries/)
-* [Installing client libraries in linux](/deploying-bold-bi/deploying-in-linux/install-optional-libraries-for-v4.1-or-older/)
-* [Installing client libraries in windows](/deploying-bold-bi/deploying-in-windows/installation-and-deployment/%23client-libraries)
+* [Installing client libraries in linux](/deploying-bold-bi/deploying-in-linux/install-optional-libraries/v4.1-or-older/)
+* [Installing client libraries in windows](/deploying-bold-bi/deploying-in-windows/installation-and-deployment/#client-libraries)
 
 ## Error: Login failed for user - SQL Server Windows authentication
 

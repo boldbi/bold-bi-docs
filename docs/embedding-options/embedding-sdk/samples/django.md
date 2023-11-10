@@ -45,7 +45,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/django-sample
     </tbody>
     </table>
 
- 3. You can get your Embed Secret key from the administrator setting section. Please refer to this [link](/embedded-bi/site-administration/embed-settings/) for more details.
+ 3. You can get your Embed Secret key from the administrator setting section. Please refer to this [link](/site-administration/embed-settings/) for more details.
 
  4. Run your Django application.
 

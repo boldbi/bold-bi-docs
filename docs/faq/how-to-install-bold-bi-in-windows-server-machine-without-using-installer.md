@@ -13,7 +13,7 @@ documentation: ug
 
 1. [Software and Hardware requirements](/deploying-bold-bi/deploying-in-windows/prerequisites-windows/#software-requirements)  
 
-2. [Features needed to be enabled in IIS](/faq/features-needed-to-enable-in-iis-to-run-bold-bi-in-win-server-os/ )
+2. [Features needed to be enabled in IIS](/faq/features-needed-to-enable-in-iis-to-run-bold-bi-in-win-server-os/)
 
 3. [.Net Windows Hosting Bundle](https://download.visualstudio.microsoft.com/download/pr/ff658e5a-c017-4a63-9ffe-e53865963848/15875eef1f0b8e25974846e4a4518135/dotnet-hosting-3.1.3-win.exe
 )

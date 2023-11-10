@@ -256,7 +256,7 @@ Google BigQuery is a data warehouse and only supports live connection in Bold BI
 
 [Editing a Data Connection](/working-with-data-source/editing-a-data-connection/)   
 
-[Dashboard Designer Walkthrough](/cloud-bi/getting-started/bold-bi-walk-through/)
+[Dashboard Designer Walkthrough](/getting-started/creating-dashboard/)
 
 [Google BigQuery Limitations to build query](https://cloud.google.com/bigquery/quotas)
 

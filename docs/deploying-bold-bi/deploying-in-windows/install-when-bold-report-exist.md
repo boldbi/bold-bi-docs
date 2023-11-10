@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Installing Bold BI Over Bold Reports | Bold BI Documentation
-description: Read this guide to know how to install Bold BI on top when Bold Reports installed already in that server.
+title: Installing Bold BI Over Bold Reports on Windows | Bold BI Docs
+description:  Learn how to install Bold BI on top when Bold Reports is installed already on the Windows environment.
 platform: bold-bi
 documentation: ug
 ---
@@ -28,7 +28,7 @@ Agree the License Agreement of Bold BI Enterprise Edition and click `Next`, then
 
 If you select `No` to  proceed the installation without common login, then Bold BI will be hosted as `New Site` in IIS/IIS Express with its own Bold ID.
 
-You can continue your Bold BI installation from portal license selection by following steps from [here](/deploying-bold-bi/deploying-in-windows/installation-and-deployment/#select-portal-license).  
+You can continue your Bold BI installation from portal license selection by following steps from [here](/deploying-bold-bi/deploying-in-windows/install-when-bold-report-exist/#select-portal-license).  
 
 ## Proceed installation with common login
 

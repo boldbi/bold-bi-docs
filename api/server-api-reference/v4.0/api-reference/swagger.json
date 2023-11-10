@@ -265,8 +265,8 @@
             "description": "Access denied.",
             "content": {}
           },
-          "404" : {
-            "description" : "Item details not found.",
+          "404": {
+            "description": "Item details not found.",
             "content": {}
           },
           "405": {
@@ -325,8 +325,8 @@
             "description": "Access denied.",
             "content": {}
           },
-          "404" : {
-            "description" : "Item details not found.",
+          "404": {
+            "description": "Item details not found.",
             "content": {}
           },
           "405": {
@@ -347,7 +347,7 @@
           }
         },
         "x-codegen-request-body-name": "apiItemViewsUpdate"
-      }      
+      }
     },
     "/v4.0/dashboards/{id}/views": {
       "get": {
@@ -766,6 +766,53 @@
             "content": {}
           }
         }
+      },
+      "put": {
+        "tags" : [
+            "Dashboard"
+        ],
+        "summary" : "Update Public Dashboard",
+        "description": "Users who have access to the dashboard and the dashboards settings can update the dashboard as public.",
+        "operationId": "Dashboards_UpdatePublicDashboard",
+        "requestBody": {
+            "description": "Public value passed will be updated to the specified dashboard.",
+            "content": {
+                "application/json": {
+                    "schema": {
+                        "$ref": "#/components/schemas/ApiUpdateDashboardPublicV4"
+                    }
+                }
+            },
+            "required": true
+        },
+        "responses": {
+            "200": {
+                "description": "Dashboard marked public successfully.",
+                "content": {
+                    "application/json": {
+                        "schema": {
+                            "$ref": "#/components/schemas/ApiResponse"
+                        }
+                    }
+                }
+            },
+            "400": {
+                "description" : "The content of the request body is missing or incomplete.",
+                "content": {}
+            },
+            "401": {
+                "description": "Access denied",
+                "content": {}
+            },
+            "412" : {
+                "description": "Mark as public has been restricted.",
+                "content": {}
+            },
+            "417": {
+                "description": "Failed to mark dashboard as public.",
+                "content": {}
+            }
+        }
       }
     },
     "/v4.0/dashboards/favorite": {
@@ -1070,8 +1117,8 @@
             "description": "Request type was not GET.",
             "content": {}
           }
-        }    
-      }  
+        }
+      }
     },
     "/v4.0/dashboards/download/job": {
       "post": {
@@ -1121,7 +1168,7 @@
           }
         },
         "x-codegen-request-body-name": "apiDownloadDashboard"
-      }    
+      }
     },
     "/v4.0/dashboards/download/job/{jobId}": {
       "get": {
@@ -1216,7 +1263,7 @@
           }
         },
         "x-codegen-request-body-name": "apiGetMetaInfo"
-      }    
+      }
     },
     "/v4.0/dashboards/upload": {
       "post": {
@@ -1262,7 +1309,7 @@
           }
         },
         "x-codegen-request-body-name": "apiUploadDashboard"
-      }    
+      }
     },
     "/v4.0/dashboards/upload/job/{jobId}": {
       "get": {
@@ -1629,7 +1676,9 @@
         "x-codegen-request-body-name": "apiDataSourceConnectionAdd"
       },
       "put": {
-        "tags": [ "DataSource" ],
+        "tags": [
+          "DataSource"
+        ],
         "summary": "Update Data Source",
         "description": "Updates an existing data source in a particular site. \n\n Note: Update data source API is only applicable for a live SQL data source.",
         "operationId": "DataSource_UpdateDataSource",
@@ -2031,13 +2080,13 @@
       }
     },
     "/v4.0/items/is-name-exists": {
-      "post" : {
+      "post": {
         "tags": [
           "Items"
         ],
-        "summary" : "Check Item name existence",
-        "description" : "Current user can check whether the item (category, dashboard, data source, schedule, slideshow) is already exists or not by providing item name (category name, dashboard name, data source name, schedule name, slideshow name) and itemtype (Category, Dashboard, Data source, Schedule, Slideshow) in the request body.",
-        "operationId" : "Items_IsItemNameExists",
+        "summary": "Check Item name existence",
+        "description": "Current user can check whether the item (category, dashboard, data source, schedule, slideshow) is already exists or not by providing item name (category name, dashboard name, data source name, schedule name, slideshow name) and itemtype (Category, Dashboard, Data source, Schedule, Slideshow) in the request body.",
+        "operationId": "Items_IsItemNameExists",
         "requestBody": {
           "description": "Details about the item passed will be checked.",
           "content": {
@@ -2060,24 +2109,24 @@
               }
             }
           },
-          "400" : {
-            "description" : "The content of the request body is missing or incomplete",
+          "400": {
+            "description": "The content of the request body is missing or incomplete",
             "content": {}
           },
-          "404" : {
-            "description" : "Category details not found.",
+          "404": {
+            "description": "Category details not found.",
             "content": {}
           },
-          "405" : {
-            "description" : "Request type was not POST",
+          "405": {
+            "description": "Request type was not POST",
             "content": {}
           },
-          "406" : {
-            "description" : "Invalid item type.",
+          "406": {
+            "description": "Invalid item type.",
             "content": {}
           },
-          "417" : {
-            "description" : "Failed to validate item name.",
+          "417": {
+            "description": "Failed to validate item name.",
             "content": {}
           }
         }
@@ -3189,7 +3238,7 @@
         "description": "Users who have admin rights permission to email settings can update the email settings.\n\n<B> **NOTE:** </B> This API is not available in Bold BI Cloud Analytics Server.",
         "operationId": "Administration_UpdateEmailSettings",
         "requestBody": {
-          "description":"The details of the email settings that have been passed will be updated.",
+          "description": "The details of the email settings that have been passed will be updated.",
           "content": {
             "application/json": {
               "schema": {
@@ -3242,7 +3291,7 @@
         "description": "Users who have admin rights permission to user directories can update the Azure AD settings.",
         "operationId": "Administration_UpdateAzureADSettings",
         "requestBody": {
-          "description":"The details of the azure active directory settings that have been passed will be updated.",
+          "description": "The details of the azure active directory settings that have been passed will be updated.",
           "content": {
             "application/json": {
               "schema": {
@@ -3295,7 +3344,7 @@
         "description": "Users who have admin rights permission to user directories can update the Azure AD schedule synchronization settings.",
         "operationId": "Administration_UpdateAzureADScheduleSettings",
         "requestBody": {
-          "description":"The details of the azure active directory schedule synchronization settings that have been passed will be updated.",
+          "description": "The details of the azure active directory schedule synchronization settings that have been passed will be updated.",
           "content": {
             "application/json": {
               "schema": {
@@ -3435,7 +3484,7 @@
         "description": "Users who have admin rights permission to security settings can update the cors settings.",
         "operationId": "Administration_UpdateCorsSettings",
         "requestBody": {
-          "description":"The details of the cors settings that have been passed will be updated.",
+          "description": "The details of the cors settings that have been passed will be updated.",
           "content": {
             "application/json": {
               "schema": {
@@ -4254,7 +4303,9 @@
         }
       },
       "put": {
-        "tags": [ "Pinboard" ],
+        "tags": [
+          "Pinboard"
+        ],
         "summary": "Update Pinboard",
         "description": "Updates an existing pinboard in a particular site.",
         "operationId": "Pinboard_UpdateEmbedPinBoard",
@@ -4267,7 +4318,7 @@
             "style": "simple",
             "explode": false,
             "schema": {
-              "type": "string", 
+              "type": "string",
               "nullable": false
             }
           }
@@ -4361,13 +4412,13 @@
       }
     },
     "/v4.0/pinboard/is-name-exists": {
-      "post" : {
+      "post": {
         "tags": [
           "Pinboard"
         ],
-        "summary" : "Check Pinboard name existence",
-        "description" : "Current user can check whether the pinboard is already exists or not by providing name in the request body.",
-        "operationId" : "Pinboard_IsPinBoardNameExists",
+        "summary": "Check Pinboard name existence",
+        "description": "Current user can check whether the pinboard is already exists or not by providing name in the request body.",
+        "operationId": "Pinboard_IsPinBoardNameExists",
         "requestBody": {
           "description": "Details about the item passed will be checked.",
           "content": {
@@ -4390,16 +4441,16 @@
               }
             }
           },
-          "400" : {
-            "description" : "The content of the request body is missing or incomplete",
+          "400": {
+            "description": "The content of the request body is missing or incomplete",
             "content": {}
           },
-          "405" : {
-            "description" : "Request type was not POST",
+          "405": {
+            "description": "Request type was not POST",
             "content": {}
           },
-          "500" : {
-            "description" : "Error in the database while executing the query.",
+          "500": {
+            "description": "Error in the database while executing the query.",
             "content": {}
           }
         }
@@ -4457,6 +4508,36 @@
           }
         },
         "x-codegen-request-body-name": "ApiPublishItemDetail"
+      }
+    },
+    "/v4.0/publish/items": {
+      "get": {
+        "tags": [
+          "Publish to another site"
+        ],
+        "summary": "Get Published Items",
+        "description": "Get Published Items details.",
+        "operationId": "Publish_GetPublishedItemsDetails",
+        "responses": {
+          "200": {
+            "description": "Published Items details have been retrieved successfully.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PublishedItemsResponse"
+                }
+              }
+            }
+          },
+          "204": {
+            "description": "No content.",
+            "content": {}
+          },
+          "405": {
+            "description": "Request type is not GET.",
+            "content": {}
+          }
+        }
       }
     },
     "/v4.0/publish/external-sites/add": {
@@ -5920,7 +6001,7 @@
         },
         "x-typeName": "Response"
       },
-      "ApiResponse": {
+       "ApiResponse": {
         "required": [
           "ApiStatus",
           "Status"
@@ -5972,7 +6053,7 @@
             }
           }
         }
-      },         
+      },
       "Links": {
         "type": "object",
         "properties": {
@@ -6197,7 +6278,7 @@
           "ApiStatus",
           "Data",
           "Status",
-          "StatusMessage"  
+          "StatusMessage"
         ],
         "type": "object",
         "properties": {
@@ -6229,7 +6310,6 @@
         },
         "description": "Response details of the datasource item."
       },
-
       "ApiDataSourceAttribute": {
         "required": [
           "Name"
@@ -6242,16 +6322,15 @@
           },
           "Type": {
             "type": "string",
-            "description": "Data source type allowed values are <code>Web Live</code>, <code>MongoDB</code>, <code>amazonathena</code>, <code>amazonauroramysql</code>, <code>amazonaurorapostgresql</code>, <code>amazonrdsmysql</code>, <code>amazonrdsmariadb</code>, <code>amazonrdsamazonauroramysql</code>, <code>amazonrdsamazonaurorapostgresql</code>, <code>amazonrdspostgresql</code>, <code>amazonrdssqlserver</code>, <code>amazonrdsoracle</code>, <code>awsopensearch</code>, <code>redshift</code>, <code>azuresynapseanalytics</code>, <code>cdata</code>, <code>clickhouse</code>, <code>elasticsearch</code>, <code>googlecloudmysql</code>, <code>googlecloudpostgresql</code>, <code>influxdb</code>, <code>mariadb</code>, <code>ssas</code>, <code>mysql</code>, <code>oracle</code>, <code>postgresql</code>, <code>presto</code>, <code>singlestore</code>, <code>sqlserver</code>, <code>snowflake</code>, <code>sparksql</code>, <code>odbc</code>."
+            "description": "Data source type allowed values are <code>Web Live</code>, <code>MongoDB</code>, <code>amazonathena</code>, <code>amazonauroramysql</code>, <code>amazonaurorapostgresql</code>, <code>amazonrdsmysql</code>, <code>amazonrdsmariadb</code>, <code>amazonrdsamazonauroramysql</code>, <code>amazonrdsamazonaurorapostgresql</code>, <code>amazonrdspostgresql</code>, <code>amazonrdssqlserver</code>, <code>amazonrdsoracle</code>, <code>awsopensearch</code>, <code>redshift</code>, <code>azuresynapseanalytics</code>, <code>cdata</code>, <code>clickhouse</code>, <code>elasticsearch</code>, <code>googlecloudmysql</code>, <code>googlecloudpostgresql</code>, <code>influxdb</code>, <code>mariadb</code>, <code>ssas</code>, <code>mysql</code>, <code>oracle</code>, <code>postgresql</code>, <code>presto</code>, <code>singlestore</code>, <code>sqlserver</code>, <code>snowflake</code>, <code>sparksql</code>, <code>odbc</code>, <code>rockset</code>."
           },
-          "Description":{
+          "Description": {
             "type": "string",
             "description": "Description of data source."
           },
           "Connection": {
-
             "type": "object",
-            "description": "You need to send the connection object for each data source based on its type. Please refer its relative documentation for the connection details as follows [Web Live](/working-with-data-source/data-connectors/live-web/#connecting-bold-bi-to-web-live-data-source-via-rest-api), [MongoDB](/working-with-data-source/data-connectors/mongodb/#connecting-bold-bi-to-mongodb-data-source-via-rest-api), [amazonathena](/working-with-data-source/data-connectors/amazon-athena/#connecting-bold-bi-to-amazon-athena-data-source-via-rest-api), [amazonauroramysql](/working-with-data-source/data-connectors/amazon-aurora/#connecting-bold-bi-to-amazon-aurora-data-source-via-rest-api), [amazonaurorapostgresql](/working-with-data-source/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsmysql](/working-with-data-source/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsmariadb](/working-with-data-source/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsamazonauroramysql](/working-with-data-source/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsamazonaurorapostgresql](/working-with-data-source/data-connectors/amazon-aurora/#connecting-bold-bi-to-amazon-aurora-data-source-via-rest-api), [amazonrdspostgresql](/working-with-data-source/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdssqlserver](/working-with-data-source/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsoracle](/working-with-data-source/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [awsopensearch](/working-with-data-source/data-connectors/aws-opensearch/#connecting-bold-bi-to-aws-open-search-data-source-via-rest-api), [redshift](/working-with-data-source/data-connectors/amazon-redshift/#connecting-bold-bi-to-amazon-redshift-data-source-via-rest-api), [azuresynapseanalytics](/working-with-data-source/data-connectors/azure-synapse-analytics/#connecting-bold-bi-to-azure-synapse-analytics-data-source-via-rest-api), [cdata](/working-with-data-source/data-connectors/cdata/#connecting-bold-bi-to-cdata-data-source-via-rest-api), [clickhouse](/working-with-data-source/data-connectors/clickhouse/#connecting-bold-bi-to-clickhouse-data-source-via-rest-api), [elasticsearch](/working-with-data-source/data-connectors/elastic-search/#connecting-bold-bi-to-elastic-search-data-source-via-rest-api), [googlecloudmysql](/working-with-data-source/data-connectors/google-cloud-sql/#connecting-bold-bi-to-google-cloud-sql-data-source-via-rest-api), [googlecloudpostgresql](/working-with-data-source/data-connectors/google-cloud-sql/#connecting-bold-bi-to-google-cloud-sql-data-source-via-rest-api), [influxdb](/working-with-data-source/data-connectors/influxdb/#connecting-bold-bi-to-influxdb-data-source-via-rest-api), [mariadb](/working-with-data-source/data-connectors/mariadb/#connecting-bold-bi-to-mariadb-data-source-via-rest-api), [ssas](/working-with-data-source/data-connectors/ssas/#connecting-bold-bi-to-microsoft-sql-server-analysis-servicesssas-via-rest-api), [mysql](/working-with-data-source/data-connectors/mysql/#connecting-bold-bi-to-mysql-data-source-via-rest-api), [oracle](/working-with-data-source/data-connectors/oracle/#connecting-bold-bi-to-oracle-data-source-via-rest-api), [postgresql](/working-with-data-source/data-connectors/postgresql/#connecting-bold-bi-to-postgresql-data-source-via-rest-api), [presto](/working-with-data-source/data-connectors/presto/#connecting-bold-bi-to-presto-data-source-via-rest-api), [singlestore](/working-with-data-source/data-connectors/single-store/#connecting-bold-bi-to-singlestore-data-source-via-rest-api), [sqlserver](/working-with-data-source/data-connectors/sql-data-source/#connecting-bold-bi-to-microsoft-sql-server-data-source-via-rest-api), [snowflake](/working-with-data-source/data-connectors/snowflake/#connecting-bold-bi-to-snowflake-data-source-via-rest-api), [sparksql](/working-with-data-source/data-connectors/sparksql/#connecting-bold-bi-to-sparksql-data-source-via-rest-api), [odbc](/working-with-data-source/data-connectors/odbc/#connecting-bold-bi-to-odbc-data-source-via-rest-api)."
+            "description": "You need to send the connection object for each data source based on its type. Please refer its relative documentation for the connection details as follows [Web Live](/working-with-data-source/data-connectors/live-web/#connecting-bold-bi-to-web-live-data-source-via-rest-api), [MongoDB](/working-with-data-source/data-connectors/mongodb/#connecting-bold-bi-to-mongodb-data-source-via-rest-api), [amazonathena](/working-with-data-source/data-connectors/amazon-athena/#connecting-bold-bi-to-amazon-athena-data-source-via-rest-api), [amazonauroramysql](/working-with-data-source/data-connectors/amazon-aurora/#connecting-bold-bi-to-amazon-aurora-data-source-via-rest-api), [amazonaurorapostgresql](/working-with-data-source/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsmysql](/working-with-data-source/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsmariadb](/working-with-data-source/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsamazonauroramysql](/working-with-data-source/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsamazonaurorapostgresql](/working-with-data-source/data-connectors/amazon-aurora/#connecting-bold-bi-to-amazon-aurora-data-source-via-rest-api), [amazonrdspostgresql](/working-with-data-source/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdssqlserver](/working-with-data-source/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsoracle](/working-with-data-source/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [awsopensearch](/working-with-data-source/data-connectors/aws-opensearch/#connecting-bold-bi-to-aws-open-search-data-source-via-rest-api), [redshift](/working-with-data-source/data-connectors/amazon-redshift/#connecting-bold-bi-to-amazon-redshift-data-source-via-rest-api), [azuresynapseanalytics](/working-with-data-source/data-connectors/azure-synapse-analytics/#connecting-bold-bi-to-azure-synapse-analytics-data-source-via-rest-api), [cdata](/working-with-data-source/data-connectors/cdata/#connecting-bold-bi-to-cdata-data-source-via-rest-api), [clickhouse](/working-with-data-source/data-connectors/clickhouse/#connecting-bold-bi-to-clickhouse-data-source-via-rest-api), [elasticsearch](/working-with-data-source/data-connectors/elastic-search/#connecting-bold-bi-to-elastic-search-data-source-via-rest-api), [googlecloudmysql](/working-with-data-source/data-connectors/google-cloud-sql/#connecting-bold-bi-to-google-cloud-sql-data-source-via-rest-api), [googlecloudpostgresql](/working-with-data-source/data-connectors/google-cloud-sql/#connecting-bold-bi-to-google-cloud-sql-data-source-via-rest-api), [influxdb](/working-with-data-source/data-connectors/influxdb/#connecting-bold-bi-to-influxdb-data-source-via-rest-api), [mariadb](/working-with-data-source/data-connectors/mariadb/#connecting-bold-bi-to-mariadb-data-source-via-rest-api), [ssas](/working-with-data-source/data-connectors/ssas/#connecting-bold-bi-to-microsoft-sql-server-analysis-servicesssas-via-rest-api), [mysql](/working-with-data-source/data-connectors/mysql/#connecting-bold-bi-to-mysql-data-source-via-rest-api), [oracle](/working-with-data-source/data-connectors/oracle/#connecting-bold-bi-to-oracle-data-source-via-rest-api), [postgresql](/working-with-data-source/data-connectors/postgresql/#connecting-bold-bi-to-postgresql-data-source-via-rest-api), [presto](/working-with-data-source/data-connectors/presto/#connecting-bold-bi-to-presto-data-source-via-rest-api), [singlestore](/working-with-data-source/data-connectors/single-store/#connecting-bold-bi-to-singlestore-data-source-via-rest-api), [sqlserver](/working-with-data-source/data-connectors/sql-data-source/#connecting-bold-bi-to-microsoft-sql-server-data-source-via-rest-api), [snowflake](/working-with-data-source/data-connectors/snowflake/#connecting-bold-bi-to-snowflake-data-source-via-rest-api), [sparksql](/working-with-data-source/data-connectors/sparksql/#connecting-bold-bi-to-sparksql-data-source-via-rest-api), [odbc](/working-with-data-source/data-connectors/odbc/#connecting-bold-bi-to-odbc-data-source-via-rest-api), [rockset](/working-with-data-source/data-connectors/rockset/#connecting-bold-bi-to-rockset-data-source-via-rest-api)."
           },
           "RefreshSettings": {
             "properties": {
@@ -6284,7 +6363,9 @@
                   "RecurrenceDays": {
                     "type": "array",
                     "description": "Enter the day from the list.<br>(Values allowed are <code>Monday, Tuesday, Wednesday, Thursday, Friday</code>).<br> For Example: Monday.",
-                    "items":{"type":"string"}
+                    "items": {
+                      "type": "string"
+                    }
                   },
                   "IsEnabled": {
                     "type": "boolean",
@@ -6294,8 +6375,8 @@
                     "type": "boolean",
                     "description": "By default it is true."
                   }
-               }
-            }
+                }
+              }
             },
             "description": "Refer to the JSON syntax below to configure Refresh settings.\n\n Note: Refresh settings is only applicable for the web extract type data source. It will not work for live connection mode data sources."
           }
@@ -6315,21 +6396,19 @@
           },
           "Type": {
             "type": "string",
-            "description": "Data source type allowed values are <code>amazonathena</code>, <code>amazonauroramysql</code>, <code>amazonaurorapostgresql</code>, <code>amazonrdsmysql</code>, <code>amazonrdsmariadb</code>, <code>amazonrdsamazonauroramysql</code>, <code>amazonrdsamazonaurorapostgresql</code>, <code>amazonrdspostgresql</code>, <code>amazonrdssqlserver</code>, <code>amazonrdsoracle</code>, <code>awsopensearch</code>, <code>redshift</code>, <code>azuresynapseanalytics</code>, <code>cdata</code>, <code>clickhouse</code>, <code>elasticsearch</code>, <code>googlecloudmysql</code>, <code>googlecloudpostgresql</code>, <code>influxdb</code>, <code>mariadb</code>, <code>ssas</code>, <code>mysql</code>, <code>oracle</code>, <code>postgresql</code>, <code>presto</code>, <code>singlestore</code>, <code>sqlserver</code>, <code>snowflake</code>, <code>sparksql</code>, <code>odbc</code>."
+            "description": "Data source type allowed values are <code>amazonathena</code>, <code>amazonauroramysql</code>, <code>amazonaurorapostgresql</code>, <code>amazonrdsmysql</code>, <code>amazonrdsmariadb</code>, <code>amazonrdsamazonauroramysql</code>, <code>amazonrdsamazonaurorapostgresql</code>, <code>amazonrdspostgresql</code>, <code>amazonrdssqlserver</code>, <code>amazonrdsoracle</code>, <code>awsopensearch</code>, <code>redshift</code>, <code>azuresynapseanalytics</code>, <code>cdata</code>, <code>clickhouse</code>, <code>elasticsearch</code>, <code>googlecloudmysql</code>, <code>googlecloudpostgresql</code>, <code>influxdb</code>, <code>mariadb</code>, <code>ssas</code>, <code>mysql</code>, <code>oracle</code>, <code>postgresql</code>, <code>presto</code>, <code>singlestore</code>, <code>sqlserver</code>, <code>snowflake</code>, <code>sparksql</code>, <code>odbc</code>, <code>rockset</code>."
           },
-          "DataSourceId":{
+          "DataSourceId": {
             "type": "string",
             "description": "Data source ID"
           },
-          "Description":{
+          "Description": {
             "type": "string",
             "description": "Description of data source."
           },
           "Connection": {
-  
             "type": "object",
-  
-            "description": "You need to send the connection object for each data source based on its type. Please refer its relative documentation for the connection details as follows [amazonathena](/working-with-data-source/data-connectors/amazon-athena/#connecting-bold-bi-to-amazon-athena-data-source-via-rest-api), [amazonauroramysql](/working-with-data-source/data-connectors/amazon-aurora/#connecting-bold-bi-to-amazon-aurora-data-source-via-rest-api), [amazonaurorapostgresql](/working-with-data-source/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsmysql](/working-with-data-source/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsmariadb](/working-with-data-source/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsamazonauroramysql](/working-with-data-source/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsamazonaurorapostgresql](/working-with-data-source/data-connectors/amazon-aurora/#connecting-bold-bi-to-amazon-aurora-data-source-via-rest-api), [amazonrdspostgresql](/working-with-data-source/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdssqlserver](/working-with-data-source/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsoracle](/working-with-data-source/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [awsopensearch](/working-with-data-source/data-connectors/aws-opensearch/#connecting-bold-bi-to-aws-open-search-data-source-via-rest-api), [redshift](/working-with-data-source/data-connectors/amazon-redshift/#connecting-bold-bi-to-amazon-redshift-data-source-via-rest-api), [azuresynapseanalytics](/working-with-data-source/data-connectors/azure-synapse-analytics/#connecting-bold-bi-to-azure-synapse-analytics-data-source-via-rest-api), [cdata](/working-with-data-source/data-connectors/cdata/#connecting-bold-bi-to-cdata-data-source-via-rest-api), [clickhouse](/working-with-data-source/data-connectors/clickhouse/#connecting-bold-bi-to-clickhouse-data-source-via-rest-api), [elasticsearch](/working-with-data-source/data-connectors/elastic-search/#connecting-bold-bi-to-elastic-search-data-source-via-rest-api), [googlecloudmysql](/working-with-data-source/data-connectors/google-cloud-sql/#connecting-bold-bi-to-google-cloud-sql-data-source-via-rest-api), [googlecloudpostgresql](/working-with-data-source/data-connectors/google-cloud-sql/#connecting-bold-bi-to-google-cloud-sql-data-source-via-rest-api), [influxdb](/working-with-data-source/data-connectors/influxdb/#connecting-bold-bi-to-influxdb-data-source-via-rest-api), [mariadb](/working-with-data-source/data-connectors/mariadb/#connecting-bold-bi-to-mariadb-data-source-via-rest-api), [ssas](/working-with-data-source/data-connectors/ssas/#connecting-bold-bi-to-microsoft-sql-server-analysis-servicesssas-via-rest-api), [mysql](/working-with-data-source/data-connectors/mysql/#connecting-bold-bi-to-mysql-data-source-via-rest-api), [oracle](/working-with-data-source/data-connectors/oracle/#connecting-bold-bi-to-oracle-data-source-via-rest-api), [postgresql](/working-with-data-source/data-connectors/postgresql/#connecting-bold-bi-to-postgresql-data-source-via-rest-api), [presto](/working-with-data-source/data-connectors/presto/#connecting-bold-bi-to-presto-data-source-via-rest-api), [singlestore](/working-with-data-source/data-connectors/single-store/#connecting-bold-bi-to-singlestore-data-source-via-rest-api), [sqlserver](/working-with-data-source/data-connectors/sql-data-source/#connecting-bold-bi-to-microsoft-sql-server-data-source-via-rest-api), [snowflake](/working-with-data-source/data-connectors/snowflake/#connecting-bold-bi-to-snowflake-data-source-via-rest-api), [sparksql](/working-with-data-source/data-connectors/sparksql/#connecting-bold-bi-to-sparksql-data-source-via-rest-api), [odbc](/working-with-data-source/data-connectors/odbc/#connecting-bold-bi-to-odbc-data-source-via-rest-api)."
+            "description": "You need to send the connection object for each data source based on its type. Please refer its relative documentation for the connection details as follows [amazonathena](/working-with-data-source/data-connectors/amazon-athena/#connecting-bold-bi-to-amazon-athena-data-source-via-rest-api), [amazonauroramysql](/working-with-data-source/data-connectors/amazon-aurora/#connecting-bold-bi-to-amazon-aurora-data-source-via-rest-api), [amazonaurorapostgresql](/working-with-data-source/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsmysql](/working-with-data-source/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsmariadb](/working-with-data-source/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsamazonauroramysql](/working-with-data-source/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsamazonaurorapostgresql](/working-with-data-source/data-connectors/amazon-aurora/#connecting-bold-bi-to-amazon-aurora-data-source-via-rest-api), [amazonrdspostgresql](/working-with-data-source/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdssqlserver](/working-with-data-source/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsoracle](/working-with-data-source/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [awsopensearch](/working-with-data-source/data-connectors/aws-opensearch/#connecting-bold-bi-to-aws-open-search-data-source-via-rest-api), [redshift](/working-with-data-source/data-connectors/amazon-redshift/#connecting-bold-bi-to-amazon-redshift-data-source-via-rest-api), [azuresynapseanalytics](/working-with-data-source/data-connectors/azure-synapse-analytics/#connecting-bold-bi-to-azure-synapse-analytics-data-source-via-rest-api), [cdata](/working-with-data-source/data-connectors/cdata/#connecting-bold-bi-to-cdata-data-source-via-rest-api), [clickhouse](/working-with-data-source/data-connectors/clickhouse/#connecting-bold-bi-to-clickhouse-data-source-via-rest-api), [elasticsearch](/working-with-data-source/data-connectors/elastic-search/#connecting-bold-bi-to-elastic-search-data-source-via-rest-api), [googlecloudmysql](/working-with-data-source/data-connectors/google-cloud-sql/#connecting-bold-bi-to-google-cloud-sql-data-source-via-rest-api), [googlecloudpostgresql](/working-with-data-source/data-connectors/google-cloud-sql/#connecting-bold-bi-to-google-cloud-sql-data-source-via-rest-api), [influxdb](/working-with-data-source/data-connectors/influxdb/#connecting-bold-bi-to-influxdb-data-source-via-rest-api), [mariadb](/working-with-data-source/data-connectors/mariadb/#connecting-bold-bi-to-mariadb-data-source-via-rest-api), [ssas](/working-with-data-source/data-connectors/ssas/#connecting-bold-bi-to-microsoft-sql-server-analysis-servicesssas-via-rest-api), [mysql](/working-with-data-source/data-connectors/mysql/#connecting-bold-bi-to-mysql-data-source-via-rest-api), [oracle](/working-with-data-source/data-connectors/oracle/#connecting-bold-bi-to-oracle-data-source-via-rest-api), [postgresql](/working-with-data-source/data-connectors/postgresql/#connecting-bold-bi-to-postgresql-data-source-via-rest-api), [presto](/working-with-data-source/data-connectors/presto/#connecting-bold-bi-to-presto-data-source-via-rest-api), [singlestore](/working-with-data-source/data-connectors/single-store/#connecting-bold-bi-to-singlestore-data-source-via-rest-api), [sqlserver](/working-with-data-source/data-connectors/sql-data-source/#connecting-bold-bi-to-microsoft-sql-server-data-source-via-rest-api), [snowflake](/working-with-data-source/data-connectors/snowflake/#connecting-bold-bi-to-snowflake-data-source-via-rest-api), [sparksql](/working-with-data-source/data-connectors/sparksql/#connecting-bold-bi-to-sparksql-data-source-via-rest-api), [odbc](/working-with-data-source/data-connectors/odbc/#connecting-bold-bi-to-odbc-data-source-via-rest-api), [rockset](/working-with-data-source/data-connectors/rockset/#connecting-bold-bi-to-rockset-data-source-via-rest-api)."
           }
         },
         "description": "Data Source details."
@@ -6395,7 +6474,7 @@
           "ItemName",
           "ItemType"
         ],
-        "type" : "object",
+        "type": "object",
         "properties": {
           "ItemName": {
             "type": "string",
@@ -6670,8 +6749,14 @@
       },
       "UserStatus": {
         "type": "string",
-        "enum": [ "Active", "InActive" ],
-        "x-enumNames": [ "Active", "InActive" ]
+        "enum": [
+          "Active",
+          "InActive"
+        ],
+        "x-enumNames": [
+          "Active",
+          "InActive"
+        ]
       },
       "DirectoryType": {
         "type": "string",
@@ -6688,7 +6773,7 @@
           "ExternalDatabase"
         ]
       },
-      "ApiSiteSettingList": {
+        "ApiSiteSettingList": {
         "type": "array",
         "description": "Site settings details.",
         "items": {
@@ -6928,47 +7013,47 @@
             "type": "string",
             "description": "Specifies the UTC start date-time of schedule.<br />The format should be ISO 8601 i.e. `yyyy-MM-ddTHH:mm:ssZ`."
           },
-		    "ScheduleType": {
-          "type": "string",
-          "description": "Specifies the schedule type.<br />Values allowed are <code>Daily, Weekly, Monthly, Yearly</code>\n\n**Note:** If you choose the schedule type as `Monthly`, provide a value to the `MonthlySchedule` property, and leave the (DailySchedule, WeeklySchedule and YearlySchedule) properties empty."
-        },
-        "DailySchedule": {
-          "type": "object",
-          "description": "Runs the schedules on a daily basis.",
-          "allOf": [
-            {
-              "$ref": "#/components/schemas/ApiDailySchedule"
-            }
-          ]
-        },
-        "WeeklySchedule": {
-          "type": "object",
-          "description": "Runs the schedule on a weekly basis.",
-          "allOf": [
-            {
-              "$ref": "#/components/schemas/ApiWeeklySchedule"
-            }
-          ]
-        },
-        "MonthlySchedule": {
-          "type": "object",
-          "description": "Runs the schedule on a monthly basis.",
-          "allOf": [
-            {
-              "$ref": "#/components/schemas/ApiMonthlySchedule"
-            }
-          ]
-        },
-        "YearlySchedule": {
-          "type": "object",
-          "description": "Runs the schedules on a yearly basis.",
-          "allOf": [
-            {
-              "$ref": "#/components/schemas/ApiYearlySchedule"
-            }
-          ]
+          "ScheduleType": {
+            "type": "string",
+            "description": "Specifies the schedule type.<br />Values allowed are <code>Daily, Weekly, Monthly, Yearly</code>\n\n**Note:** If you choose the schedule type as `Monthly`, provide a value to the `MonthlySchedule` property, and leave the (DailySchedule, WeeklySchedule and YearlySchedule) properties empty."
+          },
+          "DailySchedule": {
+            "type": "object",
+            "description": "Runs the schedules on a daily basis.",
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/ApiDailySchedule"
+              }
+            ]
+          },
+          "WeeklySchedule": {
+            "type": "object",
+            "description": "Runs the schedule on a weekly basis.",
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/ApiWeeklySchedule"
+              }
+            ]
+          },
+          "MonthlySchedule": {
+            "type": "object",
+            "description": "Runs the schedule on a monthly basis.",
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/ApiMonthlySchedule"
+              }
+            ]
+          },
+          "YearlySchedule": {
+            "type": "object",
+            "description": "Runs the schedules on a yearly basis.",
+            "allOf": [
+              {
+                "$ref": "#/components/schemas/ApiYearlySchedule"
+              }
+            ]
+          }
         }
-       }
       },
       "ApiUpdateAzureAdScheduleSynchronizationSettingsResponse": {
         "type": "object",
@@ -7017,7 +7102,7 @@
           }
         }
       },
-      "ApiUpdateCorsSettings":{
+      "ApiUpdateCorsSettings": {
         "type": "object",
         "properties": {
           "EnableCors": {
@@ -7041,21 +7126,21 @@
           "AllowedHeaders": {
             "type": "string",
             "description": "Specified HTTP header values will be used when making an actual request.\n\n**Note:** Multiple headers are allowed using comma separator.",
-            "example":"Content-Type,Content-Length"
+            "example": "Content-Type,Content-Length"
           },
           "AllowedMethods": {
             "type": "string",
             "description": "Specified methods will be able to access the resource.<br />Values allowed are <code>GET, HEAD, POST, PUT, DELETE.</code>\n\n**Note:** Multiple headers are allowed using comma separator .",
-            "example":"POST,PUT"
+            "example": "POST,PUT"
           },
           "ExposeHeaders": {
             "type": "string",
             "description": "Specify header values are exposed to browser based scripts.\n\n**Note:** Multiple headers are allowed using comma separator .",
-            "example":"Content-Language, Content-Length, Content-Type"
+            "example": "Content-Language, Content-Length, Content-Type"
           },
           "PreflightMaxAge": {
             "type": "integer",
-            "format":"int32",
+            "format": "int32",
             "description": "Specifies the maximum time a preflight request's results can be cached."
           }
         }
@@ -7502,6 +7587,38 @@
         },
         "description": "List of users"
       },
+      "ApiFailedUsers": {
+        "type": "object",
+        "properties": {
+          "UserName": {
+            "type": "string",
+            "description": "Username of the user."
+          },
+          "DisplayName": {
+            "type": "string",
+            "description": "Display name of the user."
+          },
+          "Email": {
+            "type": "string",
+            "description": "Email address of the user."
+          },
+          "FirstName": {
+            "type": "string",
+            "description": "First name of the user."
+          },
+          "LastName": {
+            "type": "string",
+            "description": "Last name of the user."
+          },
+          "Message": {
+            "type": "array",
+            "description": "List of error messages",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
       "ApiUserV3": {
         "type": "object",
         "properties": {
@@ -7586,7 +7703,7 @@
         },
         "description": "Group detail"
       },
-      "ApiDownloadCsvTemplate": {
+       "ApiDownloadCsvTemplate": {
         "required": [
           "ApiStatus",
           "Status"
@@ -7657,23 +7774,6 @@
         },
         "description": "Contains response of Csv user import"
       },
-      "ApiGroupAdd": {
-        "required": [
-          "Name"
-        ],
-        "type": "object",
-        "properties": {
-          "Name": {
-            "type": "string",
-            "description": "Name of the group."
-          },
-          "Description": {
-            "type": "string",
-            "description": "Description of the group."
-          }
-        },
-        "description": "Group detail"
-      },
       "ApiGroupListV3": {
         "type": "object",
         "properties": {
@@ -7710,93 +7810,6 @@
             "format": "int32"
           }
         }
-      },
-      "ApiGroupEdit": {
-        "type": "object",
-        "properties": {
-          "Name": {
-            "type": "string",
-            "description": "Name of the group."
-          },
-          "Description": {
-            "type": "string",
-            "description": "Description of the group."
-          }
-        },
-        "description": "Group detail"
-      },
-      "ApiAzureADGroup": {
-        "required": [
-          "GroupName"
-        ],
-        "type": "object",
-        "properties": {
-          "GroupName": {
-            "type": "array",
-            "description": "List of group names",
-            "items": {
-              "type": "string"
-            }
-          }
-        }
-      },
-      "ApiAzureGroupImportResponse": {
-        "type": "object",
-        "properties": {
-          "ApiStatus":{
-            "type": "boolean",
-            "description": "Returns the status of the API."
-          },
-          "ImportStatus": {
-            "type": "array",
-             "description":"Returns Azure AD group import status.",
-            "items": {
-              "$ref": "#/components/schemas/ApiAzureGroupImportStatus"
-            }
-          }
-        }
-      },
-      "ApiAzureGroupImportStatus":
-      {
-        "type": "object",
-        "properties": {
-          "FailedUsers": {
-            "type": "integer",
-            "format":"int32",
-            "description": "Failed users count ."
-          },
-          "GroupName": {
-            "type": "string",
-            "description": "Name of the Azure AD group."
-          },
-          "StatusMessage": {
-            "type": "string",
-            "description": "Status message of the imported group."
-          },
-          "ImportedUsers": {
-            "type": "integer",
-            "format":"int32",
-            "description": "Imported users count ."
-          },
-          "Status": {
-            "type": "boolean",
-            "description": "Status of the group import."
-          }
-        }
-      },
-      "ApiGroupUsers": {
-        "type": "object",
-        "properties": {
-          "Id": {
-            "type": "array",
-            "description": "List of user IDs",
-            "items": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        },
-        "description": "User(s) added/removed from the group."
       },
       "ApiUserList": {
         "type": "object",
@@ -7899,7 +7912,7 @@
           }
         },
         "description": "User permission details."
-      },
+      }, 
       "ApiGroupPermissionDetail": {
         "type": "object",
         "properties": {
@@ -8754,6 +8767,25 @@
         },
         "description": "Details of public items."
       },
+      "ApiUpdateDashboardPublicV4": {
+        "type" : "object",
+        "properties": {
+            "DashboardId": {
+                "type" : "string",
+                "description" : "Specifies the dashboard ID.",
+                "format": "guid"
+            },
+            "Public": {
+                "type" : "boolean",
+                "description" : "Specify true to update the dashboard as public."
+            },
+            "Unlisted": {
+                "type": "boolean",
+                "description" : "Specify true to update the dashboard as unlisted."
+            }
+        },
+        "description" : "Details of the public or private dashboards item."
+      },
       "ApiFavoriteitems": {
         "type": "object",
         "properties": {
@@ -8893,9 +8925,9 @@
           }
         }
       },
-      "ApiDownloadFailedResponse":{
+      "ApiDownloadFailedResponse": {
         "type": "object",
-        "properties":{
+        "properties": {
           "DashboardId": {
             "type": "string",
             "description": "Dashboard ID.",
@@ -8947,7 +8979,7 @@
           "Status": {
             "type": "boolean",
             "description": "Returns status of the API request."
-          }      
+          }
         }
       },
       "ApiGetMetaInfo": {
@@ -8999,29 +9031,29 @@
               "Name": {
                 "type": "string",
                 "description": "Data source name."
-                },
-                "Description": {
-                  "type": "string",
-                  "description": "Data source description."
-                },
-                "Type": {
-                  "type": "string",
-                  "description": "Data source type."
-                },
-                "Id": {
-                  "type": "string",
-                  "description": "Data source ID.",
-                  "format": "guid"
-                },
-                "Connector": {
-                  "type": "string",
-                  "description": "Connector information"
-                },
-                "Connection": {
-                  "type": "object",
-                  "description": "Connection object for the data source."
-                }
-              }	   
+              },
+              "Description": {
+                "type": "string",
+                "description": "Data source description."
+              },
+              "Type": {
+                "type": "string",
+                "description": "Data source type."
+              },
+              "Id": {
+                "type": "string",
+                "description": "Data source ID.",
+                "format": "guid"
+              },
+              "Connector": {
+                "type": "string",
+                "description": "Connector information"
+              },
+              "Connection": {
+                "type": "object",
+                "description": "Connection object for the data source."
+              }
+            }
           }
         },
         "description": "Details about the data sources."
@@ -9043,7 +9075,7 @@
           "Status": {
             "type": "boolean",
             "description": "Returns status of the API request."
-          }      
+          }
         },
         "description": "Meta info details."
       },
@@ -9074,7 +9106,7 @@
             "description": "Meta information of the item content.",
             "items": {
               "$ref": "#/components/schemas/ApiMetaInfo"
-            }      
+            }
           }
         },
         "description": "Details about the dashboard for upload."
@@ -9118,7 +9150,7 @@
           "Status": {
             "type": "boolean",
             "description": "Returns status of the API request."
-          }      
+          }
         },
         "description": "Upload dashboard job status details."
       },
@@ -9145,7 +9177,7 @@
           "FilterParameter": {
             "type": "string",
             "description": "Specify the filter parameter. \n\n**Note:**  To know more about supported operators and funtions in filter parameter, refer to [this](/embedded-bi/working-with-dashboards/preview-dashboard/urlparameters/#supported-operators/).",
-            "example":"Department= Cardiology & Year(Date)=2021"
+            "example": "Department= Cardiology & Year(Date)=2021"
           }
         },
         "description": "Details about the dashboard to be exported."
@@ -10049,6 +10081,206 @@
             "nullable": false
           }
         }
+      },
+      "ApiGroupAdd": {
+        "required": [
+          "Name"
+        ],
+        "type": "object",
+        "properties": {
+          "Name": {
+            "type": "string",
+            "description": "Name of the group."
+          },
+          "Description": {
+            "type": "string",
+            "description": "Description of the group."
+          }
+        },
+        "description": "Group detail"
+      },
+      "ApiGroupEdit": {
+        "type": "object",
+        "properties": {
+          "Name": {
+            "type": "string",
+            "description": "Name of the group."
+          },
+          "Description": {
+            "type": "string",
+            "description": "Description of the group."
+          }
+        },
+        "description": "Group detail"
+      },
+      "ApiAzureADGroup": {
+        "required": [
+          "GroupName"
+        ],
+        "type": "object",
+        "properties": {
+          "GroupName": {
+            "type": "array",
+            "description": "List of group names",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "ApiAzureGroupImportResponse": {
+        "type": "object",
+        "properties": {
+          "ApiStatus": {
+            "type": "boolean",
+            "description": "Returns the status of the API."
+          },
+          "ImportStatus": {
+            "type": "array",
+            "description": "Returns Azure AD group import status.",
+            "items": {
+              "$ref": "#/components/schemas/ApiAzureGroupImportStatus"
+            }
+          }
+        }
+      },
+      "ApiAzureGroupImportStatus": {
+        "type": "object",
+        "properties": {
+          "FailedUsers": {
+            "type": "integer",
+            "format": "int32",
+            "description": "Failed users count ."
+          },
+          "GroupName": {
+            "type": "string",
+            "description": "Name of the Azure AD group."
+          },
+          "StatusMessage": {
+            "type": "string",
+            "description": "Status message of the imported group."
+          },
+          "ImportedUsers": {
+            "type": "integer",
+            "format": "int32",
+            "description": "Imported users count ."
+          },
+          "Status": {
+            "type": "boolean",
+            "description": "Status of the group import."
+          }
+        }
+      },
+      "ApiGroupUsers": {
+        "type": "object",
+        "properties": {
+          "Id": {
+            "type": "array",
+            "description": "List of user IDs",
+            "items": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        },
+        "description": "User(s) added/removed from the group."
+      },
+      "PublishedItemsResponse": {
+        "type": "object",
+        "properties": {
+          "PublishId": {
+            "type": "string",
+            "description": "Published Item ID.",
+            "format": "guid"
+          },
+          "ItemId": {
+            "type": "string",
+            "description": "Specifies the ID of the dashboard.",
+            "format": "guid"
+          },
+          "ItemName": {
+            "type": "string",
+            "description": "Name of the dashboard."
+          },
+          "CategoryName": {
+            "type": "string",
+            "description": "Category name."
+          },
+          "ItemType": {
+            "type": "string",
+            "description": "Item type."
+          },
+          "SiteDetails": {
+            "type": "array",
+            "description": "Site details list.",
+            "items": {
+              "$ref": "#/components/schemas/SiteDetails"
+            }
+          }
+        },
+        "description": "Published Items details."
+      },
+      "SiteDetails": {
+        "type": "object",
+        "properties": {
+          "PublishedItemName": {
+            "type": "string",
+            "description": "Returns destination site item name."
+          },
+          "PublishedItemDescription": {
+            "type": "string",
+            "description": "Returns destination site item description."
+          },
+          "PublishedItemCategoryName": {
+            "type": "string",
+            "description": "Returns destination site item category name."
+          },
+          "PublishedItemId": {
+            "type": "string",
+            "description": "Returns destination site item ID.",
+            "format": "guid"
+          },
+          "TenantId": {
+            "type": "string",
+            "description": "Tenant ID.",
+            "format": "guid"
+          },
+          "TenantName": {
+            "type": "string",
+            "description": "Tenant Name."
+          },
+          "TenantURL": {
+            "type": "string",
+            "description": "Tenant URL."
+          },
+          "IsLocked": {
+            "type": "boolean",
+            "description": "Is published item Locked."
+          },
+          "PublishedById": {
+            "type": "integer",
+            "description": "User ID who published the item."
+          },
+          "PublishedOn": {
+            "type": "string",
+            "description": "Date published of the item in string format.",
+            "format": "datetime"
+          },
+          "LastSynchronizedOn": {
+            "type": "string",
+            "description": "Date of last sychronization in string format.",
+            "format": "datetime"
+          },
+          "LastSynchronizedById": {
+            "type": "integer",
+            "description": "User ID who sychronized at last."
+          },
+          "LastSynchronizedStatus": {
+            "type": "string",
+            "description": "Last Synchronization status."
+          }
+        },
+        "description": "Published items site details."
       }
     },
     "securitySchemes": {

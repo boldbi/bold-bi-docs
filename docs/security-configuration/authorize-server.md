@@ -4,7 +4,7 @@ title:  Authorization in Embed Application | Bold BI Documentation
 description: Know about the authorization server in embedding application to authenticate with Bold BI server through sending user email, group details and embed signature.
 platform: bold-bi
 documentation: ug
-lang: en
+
 ---
 
 # What is Authorization Server

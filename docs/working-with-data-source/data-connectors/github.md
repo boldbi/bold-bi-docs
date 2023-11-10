@@ -99,4 +99,4 @@ Period of time before next refresh call is triggered. This will automatically tr
 
 [Dashboard Designer Walkthrough](/getting-started/creating-dashboard/)
 
-[GitHub Integration](https://www.boldbi.com/integrations/github?utm_source=syncfusion&utm_medium=documentation&utm_campaign=boldbigithubintegration)
+<a href="https://www.boldbi.com/integrations/github?utm_source=syncfusion&utm_medium=documentation&utm_campaign=boldbigithubintegration" target="_blank">GitHub Integration</a>

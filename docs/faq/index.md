@@ -99,6 +99,8 @@ The following are the frequently asked questions in Bold BI Enterprise:
 
 [How to connect data sources with SSH connection in Bold BI?](/faq/how-to-connect-data-sources-with-ssh-connection-in-bold-bi/)
 
+[How to enable threshold through code view mode data source](/faq/how-to-enable-threshold-through-code-view-mode-data-source/)
+
 [How to enable SSL through connection parameters for PostgreSQL data source?](/faq/how-to-enable-ssl-through-connection-parameters-for-postgresql-data-source/)
 
 [How to transpose the data columns and rows in MS SQL data source?](/faq/how-to-transpose-the-data-columns-and-rows-in-sql-data-source/)
@@ -131,7 +133,7 @@ The following are the frequently asked questions in Bold BI Enterprise:
 
 [How to update SSL certificate in the Kubernetes secret of Bold BI site](/faq/how-to-update-ssl-certificate-in-kubernetes-secret-of-bold-bi-site/)
 
-[How to view first 7 days data of each month in dashboard](/faq/how-to-view-first-7-days-data-of-each-month-in-dashboard)
+[How to view first 7 days data of each month in dashboard](/faq/how-to-view-first-7-days-data-of-each-month-in-dashboard/)
 
 [How to deploy Bold BI as Offline deployment in Docker](/faq/how-to-deploy-boldbi-as-offline-deployment-in-docker/)
 
@@ -152,11 +154,11 @@ The following are the frequently asked questions in Bold BI Enterprise:
 
 [How to authenticate Google Analytics for Bold BI](/faq/how-to-authenticate-google-analytics-for-bold-bi/)
 
-[How the dashboard user can modify the input value of a parameter in view mode](/faq/how-the-dashboard-user-can-modify-the-input-value-of-a-parameter-in-view-mode)
+[How the dashboard user can modify the input value of a parameter in view mode](/faq/how-the-dashboard-user-can-modify-the-input-value-of-a-parameter-in-view-mode/)
 
-[What will happen during multiple users are editing the same dashboard or data source at the same time](/faq/what-will-happen-during-multiple-users-are-editing-the-same-dashboard-or-data-source-at-the-same-time)
+[What will happen during multiple users are editing the same dashboard or data source at the same time](/faq/what-will-happen-during-multiple-users-are-editing-the-same-dashboard-or-data-source-at-the-same-time/)
 
-[How to show Current Date and Time in Widget Title](/faq/how-to-show-current-date-and-time-in-widget-title)
+[How to show Current Date and Time in Widget Title](/faq/how-to-show-current-date-and-time-in-widget-title/)
 
 [How to Avoid Deployment Pending Problem after the Site Creation in Bold BI On-premises](/faq/how-to-avoid-deployment-pending-problem-after-the-site-creation-in-bold-bi-on-premises/)
 
@@ -190,6 +192,8 @@ The following are the frequently asked questions in Bold BI Enterprise:
 
 [How to generate access token to authenticate users](/faq/how-to-generate-access-token-to-authenticate-user/)
 
+[What are the various types of data filtering in an embedded dashboard](/faq/what-are-the-various-types-of-data-filtering-in-an-embedded-dashboard/)
+
 [Where can I find the product version in Bold BI Embed](/faq/where-can-i-find-the-product-version/)
 
 [How to apply the filter in the grid widget based on the string presented in the string column](/faq/how-to-apply-the-filter-in-the-grid-widget-based-on-the-string-presented-in-the-string-column/)
@@ -212,15 +216,13 @@ The following are the frequently asked questions in Bold BI Enterprise:
 
 [How to create custom sort order in Bold BI](/faq/how-to-create-custom-sort-order-in-bold-bi/)
 
-[How to create different If condition-based expressions in Bold BI](/faq/how-to-create-different-if-condition-based-expressions-in-bold-bi)
+[How to create different If condition-based expressions in Bold BI](/faq/how-to-create-different-if-condition-based-expressions-in-bold-bi/)
 
 [How will the dashboard get affected while CSP enabled](/faq/how-will-the-dashboard-get-affected-while-csp-enabled/)
 
 [How to control the link navigation behavior in the Bold BI Embed version above 5.2.48?](/faq/how-to-control-link-navigating-behavior/)
 
 [How to install and deploy the Bold BI Enterprise Edition in silent mode](/faq/how-to-install-and-deploy-the-bold-bi-enterprise-edition-in-silent-mode/)
-
-[How to control the link navigation behavior in the Bold BI Embed version above 5.2.48?](/faq/how-to-control-link-navigating-behavior/)
 
 [How to use Pivot Tables in Bold BI Using PostgreSQL](/faq/how-to-use-pivot-tables-in-bold-bi-using-postgresql/)
 
@@ -233,5 +235,3 @@ The following are the frequently asked questions in Bold BI Enterprise:
 [How to apply widget filters using both initial rendering and on-demand in embedding](/faq/how-to-apply-widget-filters-using-both-initialrendering-and-ondemand-in-embedding/)
 
 [How to restart the bold bi embedded application](/faq/how-to-restart-the-bold-bi-embedded-application/)
-
-[How to apply widget filters using both initial rendering and on-demand in embedding](/faq/how-to-apply-widget-filters-using-both-initialrendering-and-ondemand-in-embedding/)

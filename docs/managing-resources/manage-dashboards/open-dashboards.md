@@ -19,4 +19,8 @@ Click on the Dashboard Name in the list to open it.
 
 ![Manage Dashboards](/static/assets/managing-resources/manage-dashboards/images/manage-Dashboards.png#width=65%)
 
+You can also open the dashboard by clicking `Open In New Tab` icon in the dashboard list as shown in the image below.
+
+![Open Dashboards](/static/assets/managing-resources/manage-dashboards/images/open-Dashboard-Icon.png#width=65%)
+
 Dashboards are opened in our embedded Dashboard Viewer and Dashboards can also be exported in image format.

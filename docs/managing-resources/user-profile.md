@@ -10,8 +10,6 @@ documentation: ug
 
 This section explains how to view the profile, edit the profile details, edit the profile settings, set user notification preferences, view my permissions, connect sites, connect accounts, and change the password for the user profile in Bold BI.
 
-> **NOTE:** User profile support is not available in Cloud Analytics Server and it is available in Bold BI Embedded Analytics.
-
 ## Profile details
 
 You can view the profile, edit the profile details, and change the password.
@@ -53,7 +51,7 @@ You can configure the settings as shown in the following images.
 
 ![Language Preference](/static/assets/managing-resources/images/language-preference.png)
 
-> **NOTE:**  NOTE: Make sure the `Disable user language preference` option is disabled in the site settings for applying user preference language on your site. For more details, please visit [here](/localization/#site-language-settings).
+> **NOTE:**  NOTE: Make sure the `Disable user language preference` option is disabled in the site settings for applying user preference language on your site. For more details, please visit [here](/localization/latest/#site-language-settings).
 
 ### Default pinboard
 Users can select a default pinboard by selecting one of the added pinboards from the drop-down.
@@ -97,7 +95,7 @@ System notifications will notify users of activity on comments based on the sett
 
 ![System notification settings](/static/assets/managing-resources/images/profile-system-notification.png)
 
-System notifications will appear in the bottom left corner above the user's profile picture, as shown in the following image.
+System notifications will appear in the top right corner near the user's profile picture, as shown in the following image.
 
 ![Notifications section](/static/assets/managing-resources/images/notifications-icon.png)
 

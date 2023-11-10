@@ -4,7 +4,7 @@ title:  Adding OAuth Connection for Application Access | Bold BI
 description: Learn how to add OAuth connection for required data connectors for application access in Bold BI Embedded.
 platform: bold-bi
 documentation: ug
-lang: en
+
 ---
 
 # Configuring OAuth Data Connectors

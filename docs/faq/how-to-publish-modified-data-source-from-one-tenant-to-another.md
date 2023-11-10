@@ -4,7 +4,7 @@ title: How to publish modified data source between tenants |Bold BI Docs
 description: This section describes how to publish the modified data sources from one tenant in to different tenant in your on-premise application using Bold BI software.
 platform: bold-bi
 documentation: ug
-lang: en
+
 ---
 
 # How to publish modified data sources from one tenant to another
@@ -73,7 +73,7 @@ Find the list of connections with the connection string details as follows,
             {
                "ServerName": "",
                "Database": "",
-			   "Port": "",
+               "Port": "",
                "UserName": "",
                "Password": "",
                "AdvancedSettings": "",
@@ -89,10 +89,10 @@ Find the list of connections with the connection string details as follows,
             {
                "ServerName": "",
                "Database": "",
-			   "Port": "",
+               "Port": "",
                "UserName": "",
                "Password": "",
-			   "AuthenticationType": "",
+               "AuthenticationType": "",
                "AdvancedSettings": "",
                "ConnectionType": ""
             }
@@ -146,12 +146,12 @@ Find the list of connections with the connection string details as follows,
             {
                "ServerName": "",
                "Database": "",
-			   "Port": "",
+               "Port": "",
                "UserName": "",
                "PassWord": "",
-			   "DsnName": "",
-			   "odbctype": "",
-			   "Driver": "",
+               "DsnName": "",
+               "odbctype": "",
+               "Driver": "",
                "AdvancedSettings": "",
                "CommandTimeout": ""
             }
@@ -165,10 +165,10 @@ Find the list of connections with the connection string details as follows,
             {
                "ServerName": "",
                "Database": "",
-			   "Port": "",
+               "Port": "",
                "UserName": "",
                "Password": "",
-			   "AuthenticationType": "",
+               "AuthenticationType": "",
                "AdvancedSettings": "",
                "CatalogName": ""
             }
@@ -199,10 +199,10 @@ Find the list of connections with the connection string details as follows,
             {
                "ServerName": "",
                "Database": "",
-			   "Port": "",
+               "Port": "",
                "UserName": "",
                "Password": "",
-			   "AuthenticationType": "",
+               "AuthenticationType": "",
                "AdvancedSettings": ""
             }
    </td></tr>

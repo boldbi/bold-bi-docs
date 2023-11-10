@@ -10,6 +10,7 @@ var apiLinkRegex = /\[[^\]]+\]\([^\)]+\)/g;
 var apiTypeRegex = /`[^\`]+`/g;
 var apiAndRegex = /&#124;/g;
 var apiSpanRegex = /<span class='doc-prop-name'>/;
+const redirects = require("./redirects.json")
 //let releaseNotes = [/#(.*) Bug Fixes/, /#(.*) New Features/, /#(.*) Breaking Changes/, /#(.*) Upgrade/];
 
 exports.onCreateWebpackConfig = ({ actions, stage }) => {
@@ -45,7 +46,10 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 
 exports.createPages = ({ graphql, actions }) => {
     const { createPage } = actions
-
+    const { createRedirect } = actions
+   
+        //const { createPage } = actions
+  
     return new Promise((resolve, reject) => {
         const layout = path.resolve('./src/templates/layout.js')
         resolve(
@@ -96,6 +100,14 @@ exports.createPages = ({ graphql, actions }) => {
                 })
             })
         )
+        redirects.forEach(redirect =>
+            createRedirect({
+              fromPath: redirect.fromPath,
+              toPath: redirect.toPath,
+              redirectInBrowser: true,
+              isPermanent: true,
+            })
+          )
     })
 }
 

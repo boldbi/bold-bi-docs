@@ -43,7 +43,7 @@ Go to the Change Password tab under the Security section and update the password
 
 ### Two Factor Authentication
 
-Please refer to this  [link](/embedded-bi/multi-tenancy/two-factor-authentication/#two-factor-authentication) to learn about the 2FA implementation in Bold BI.
+Please refer to this  [link](/multi-tenancy/two-factor-authentication/#two-factor-authentication) to learn about the 2FA implementation in Bold BI.
 
 #### Enable Two Factor Authentication
 

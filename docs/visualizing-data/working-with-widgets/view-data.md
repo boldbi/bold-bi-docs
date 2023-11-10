@@ -46,3 +46,12 @@ We can also export the selected/all column(s) value into CSV or excel file by cl
 You will be able to see the fetched records count out of the total records on the popup, as shown.
 
 ![Total records count in view underlying data](/static/assets/visualizing-data/working-with-widgets/images/viewdatacountmessage.png)
+
+## View Data Customization
+The `View Data Actions` section in the property panel provides options to enable or disable the exporting and column selection features inside the view data dialog using the `Allow Exporting` and `Allow Column Selection` settings. By default, both options are enabled.
+
+When `Allow Exporting` and `Allow Column Selection` are disabled, the `Export` and `Select Column` options in the View underlying data will be hidden, as shown below.
+
+![View data actions](/static/assets/visualizing-data/working-with-widgets/images/viewdataaction.png)
+
+![View data actions Result](/static/assets/visualizing-data/working-with-widgets/images/viewdataactionresult.png)

@@ -94,4 +94,4 @@ You can edit, delete and re-authorize this account from the **Connected Accounts
 
 [Dashboard Designer Walkthrough](/getting-started/creating-dashboard/)
 
-[Box Integration](https://www.boldbi.com/integrations/box)
+<a href="https://www.boldbi.com/integrations/box" target="_blank">Box Integration</a>

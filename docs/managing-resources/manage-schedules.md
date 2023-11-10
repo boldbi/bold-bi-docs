@@ -5,7 +5,7 @@ description: Learn how to create, edit, enable/disable, delete schedules and sen
 canonical: "/managing-resources/manage-schedules/"
 platform: bold-bi
 documentation: ug
-lang: en
+
 ---
 
 # Manage Schedules in the Bold BI  	
@@ -89,7 +89,7 @@ Schedules can be created only if the user has `Create All Schedules` permission.
 
 * Select the recurrence type, recurrence, start and end dates, export formats and the users to which the exported dashboards and failure notification have to be emailed in the `Add Schedule` dialog box.
 	* Dashboards can be scheduled hourly, daily, weekly, monthly, and yearly.
-	* Dashboards can be exported as image, PDF, and Excel.
+	* Dashboards can be exported as image, PDF, CSV and Excel.
 	* Application Time Zone is displayed below the date picker. Start time of the schedule is converted to client Time Zone and shown in the right side for the user’s convenience 
 	* Exported dashboards can be sent to individual users or groups or to external recipients along with the link the dashboard in the Bold BI through emails.
 	
@@ -139,7 +139,7 @@ You can send a webhook notification for an export schedule or [data alerts](/wor
 
 	![Select Webhook](/static/assets/managing-resources/images/select-webhook.png)
 
-2. If you haven't created any webhooks, you can create them by clicking the `Create` option. This will open the `Add Webhook` page in a new tab Please visit this [link](/embedded-bi/webhook/) for how to add webhook.
+2. If you haven't created any webhooks, you can create them by clicking the `Create` option. This will open the `Add Webhook` page in a new tab Please visit this [link](/manage-webhooks/) for how to add webhook.
 
 	![Create Webhook](/static/assets/managing-resources/images/create-webhook.png)
 

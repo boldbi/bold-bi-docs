@@ -4,7 +4,7 @@ title: Menu Actions in Visuals – Embedded BI | Bold BI Docs
 description: Learn about the menu actions to perform filtering, drill down, linking and view underlying data in Bold BI.
 platform: bold-bi
 documentation: ug
-lang: en
+
 ---
 
 # Perform various actions through Widget Menu

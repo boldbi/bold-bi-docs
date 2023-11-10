@@ -5,7 +5,7 @@ description: Learn how to join multiple data sources in extract mode to achieve 
 canonical: "/working-with-data-source/shared-table/"
 platform: bold-bi
 documentation: ug
-lang: en
+
 ---
 
 # What are Shared Tables

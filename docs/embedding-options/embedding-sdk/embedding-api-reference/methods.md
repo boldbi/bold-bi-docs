@@ -85,6 +85,26 @@ var dashboard = BoldBI.create(options);
 dashboard.loadPinboard();   
 ```
 
+## loadMultipleWidgets()
+
+This method will load multiple widgets of the current dashboard by a single instance call.
+
+**Example** 
+   
+```js
+<div id="widget1"></div> 
+<div id="widget2"></div> 
+<div id="widget3"></div>     
+var dashboard = BoldBI.create({
+   dashboardId: "5cb065f7-dabb-4b0c-9b45-c60a5730e963",
+   widgetList: [{widgetName: "Medal details by Country", containerId: "widget1" },
+   {widgetName: "Total Medals by Country", containerId: "widget2" },
+   {widgetName: "Country", containerId: "widget3" }],
+  });
+dashboard.loadMultipleWidgets();
+```
+>**Note:** To embed the required widgets, create a container in the client application where widgets will be rendered.
+
 ## getInstance()
     
 This method will return the object of the rendered dashboard using the container id assigned to the dashboard options.
@@ -1318,5 +1338,386 @@ function callBackFnc(args) {
 <td><code>callBackFnc</code></td>
 <td>string</td>
 <td>Denotes the callback method name that must be defined. It will return the updated comments in the widget as arguments.</td>
+</tr>
+</table>
+
+## hideWaitingIndicator()
+
+This method will be used to eliminate the waiting Indicator in dashboard embedding.
+
+**Example**
+
+```js
+var dashboard = BoldBI.create({
+   actionComplete: function (args) {
+      if (args.eventType === "renderLayout") {
+         var instance = BoldBI.getInstance("container");//container -> embed container id
+         instance.hideWaitingIndicator();
+      }
+   },
+});
+dashboard.loadDashboard();
+```
+
+>**Note:** We have provided the hideWaitingIndicator method support to the dashboard and Multi-tab dashboard embedding.
+
+## saveFilterView()
+This method will save the filter view to the dashboard.
+
+**Example for saving view to the normal dashboard**
+
+```js
+var instance = BoldBI.getInstance("dashboard"); // embedContainerID -> 'dashboard'
+var viewParameters = { 
+   ViewName: "Filter View", // view name
+   ItemId: instance.embedOptions.dashboardId, // Get the dashboard ID from the embedOptions 
+   QueryString: 'filterQuery=[{"ucn":"Column1","cn":"ProductName","rn":"ComboBox2","ir":false,"ims":false,"fi":"92884626db4ffba31a49504a4864e4","ipw":false,"dimfi":{"c":"Include","t":["Product A"]}}]' // Get the filter query string from the arguments of 'saveFilterClick' event. For know more about the event, refer saveFilterClick
+};
+instance.saveFilterView(viewParameters, "callBackFunc");
+
+function callBackFunc(view, status) {
+   var viewName = view.ViewName; // Get the view name of the saved view
+   var viewId = view.ViewId; // Get the view id of the saved view
+   var itemId = view.ItemId; // Get the item id of the saved view
+   var statusMessage = status; // Get the status message of the saved view
+
+   /* Add custom functionalities with the above response for further actions */
+}
+```
+
+**Example for saving view to the multitab dashboard**
+
+```js
+var instance = BoldBI.getInstance("dashboard"); // embedContainerID -> 'dashboard'
+var viewParameters = { 
+   ViewName: "Filter View", // view name
+   ItemId: instance.embedOptions.dashboardId, // Get the dashboard ID from the embedOptions 
+   QueryString: 'filterQuery=[{"ucn":"Column1","cn":"ProductName","rn":"ComboBox2","ir":false,"ims":false,"fi":"92884626db4ffba31a49504a4864e4","ipw":false,"dimfi":{"c":"Include","t":["Product A"]}}]', // Get the filter query string from the arguments of 'saveFilterClick' event. For know more about the event, refer saveFilterClick
+   ChildItemId: instance._getActiveChildDashboardId() // Get the active-tabbed child dashboard id from BoldBI instance
+};
+instance.saveFilterView(viewParameters, "callBackFunc");
+
+function callBackFunc(view, status) {
+   var viewName = view.ViewName; // Get the view name of the saved view
+   var viewId = view.ViewId; // Get the view id of the saved view
+   var itemId = view.ItemId; // Get the item id of the saved view
+   var statusMessage = status; // Get the status message of the saved view
+
+   /* Add custom functionalities with the above response for further actions */
+}
+```
+
+<table>
+<tr>
+<th style="width: 20%;">Parameter</td>
+<th style="width: 20%;">Type</th>
+<th style="width: 60%;">Description</td>
+</tr>
+<tr>
+<td><code>viewParameters</code></td>
+<td><code>object</code></td>
+<td>The object contains the following parameters.<br>
+   <table>
+   <tr>
+   <th>Parameter</td>
+   <th>Type</th>
+   <th>Description</td>
+   </tr>
+   <tr>
+   <td>ViewName</td>
+   <td><code>string</code></td>
+   <td>Defines the name of the view.</td>
+   </tr>
+   <tr>
+   <td>ItemId</td>
+   <td><code>string</code></td>
+   <td>Defines the unique ID of the dashboard.</td>
+   </tr>
+   <tr>
+   <td>QueryString</td>
+   <td><code>string</code></td>
+   <td>Defines the filter query associated with the view.</td>
+   </tr>
+   <tr>
+   <td>ChildItemId</td>
+   <td><code>string</code></td>
+   <td>Defines the unique dashboard ID of the active-tabbed child dashboard. It should only be defined when saving multitab dashboard views. In other cases, it should be empty.</td>
+   </tr>
+   </table>
+</td>
+</tr>
+<tr>
+<td><code>callBackFnc</code></td>
+<td><code>string</code></td>
+<td>Denotes the callback method name that must be defined. It will return the saved view details in the dashboard as arguments.</td>
+</tr>
+</table>
+
+## saveAsFilterView()
+This method will clone the existing filter view in the dashboard, saving it with a new name.
+
+**Example for cloning an existing view of the normal dashboard**
+
+```js
+var instance = BoldBI.getInstance("dashboard"); // embedContainerID -> 'dashboard'
+var viewParameters = { 
+   ViewName: "Filter View", // view name
+   ItemId: instance.embedOptions.dashboardId, // Get the dashboard ID from the embedOptions 
+   QueryString: 'filterQuery=[{"ucn":"Column1","cn":"ProductName","rn":"ComboBox2","ir":false,"ims":false,"fi":"92884626db4ffba31a49504a4864e4","ipw":false,"dimfi":{"c":"Include","t":["Product A"]}}]' // Get the filter query string from the arguments of 'saveFilterClick' event. For know more about the event, refer saveFilterClick
+};
+instance.saveAsFilterView(viewParameters, "callBackFunc");
+
+function callBackFunc(view, status) {
+   var viewName = view.ViewName; // Get the view name of the saved view
+   var viewId = view.ViewId; // Get the view id of the saved view
+   var itemId = view.ItemId; // Get the item id of the saved view
+   var statusMessage = status; // Get the status message of the saved view
+
+   /* Add custom functionalities with the above response for further actions */
+}
+```
+
+**Example for cloning an existing view of the multitab dashboard**
+
+```js
+var instance = BoldBI.getInstance("dashboard"); // embedContainerID -> 'dashboard'
+var viewParameters = { 
+   ViewName: "Filter View", // view name
+   ItemId: instance.embedOptions.dashboardId, // Get the dashboard ID from the embedOptions 
+   QueryString: 'filterQuery=[{"ucn":"Column1","cn":"ProductName","rn":"ComboBox2","ir":false,"ims":false,"fi":"92884626db4ffba31a49504a4864e4","ipw":false,"dimfi":{"c":"Include","t":["Product A"]}}]', // Get the filter query string from the arguments of 'saveAsFilterClick' event. For know more about the event, refer saveAsFilterClick
+   ChildItemId: instance._getActiveChildDashboardId() // Get the active-tabbed child dashboard id from BoldBI instance
+};
+instance.saveAsFilterView(viewParameters, "callBackFunc");
+
+function callBackFunc(view, status) {
+   var viewName = view.ViewName; // Get the view name of the saved view
+   var viewId = view.ViewId; // Get the view id of the saved view
+   var itemId = view.ItemId; // Get the item id of the saved view
+   var statusMessage = status; // Get the status message of the saved view
+
+   /* Add custom functionalities with the above response for further actions */
+}
+```
+
+<table>
+<tr>
+<th style="width: 20%;">Parameter</td>
+<th style="width: 20%;">Type</th>
+<th style="width: 60%;">Description</td>
+</tr>
+<tr>
+<td><code>viewParameters</code></td>
+<td><code>object</code></td>
+<td>The object contains the following parameters.<br>
+   <table>
+   <tr>
+   <th>Parameter</td>
+   <th>Type</th>
+   <th>Description</td>
+   </tr>
+   <tr>
+   <td>ViewName</td>
+   <td><code>string</code></td>
+   <td>Defines the name of the view.</td>
+   </tr>
+   <tr>
+   <td>ItemId</td>
+   <td><code>string</code></td>
+   <td>Defines the unique ID of the dashboard.</td>
+   </tr>
+   <tr>
+   <td>QueryString</td>
+   <td><code>string</code></td>
+   <td>Defines the filter query associated with the view.</td>
+   </tr>
+   <tr>
+   <td>ChildItemId</td>
+   <td><code>string</code></td>
+   <td>Defines the unique ID of the active-tabbed child dashboard. It should only be defined when saving views in multitab dashboard. In other cases, it should be empty.</td>
+   </tr>
+   </table>
+</td>
+</tr>
+<tr>
+<td><code>callBackFnc</code></td>
+<td><code>string</code></td>
+<td>Denotes the callback method name that must be defined. It will return the cloned view details in the dashboard as arguments.</td>
+</tr>
+</table>
+
+## updateFilterView()
+This method will update the existing filter view to the dashboard.
+
+**Example**
+
+```js
+var instance = BoldBI.getInstance("dashboard"); // embedContainerID -> 'dashboard'
+var viewParameters = { 
+   ViewId: "78ed603f-7834-4fc7-b611-3fe7ffdea399", // Get the view id from the arguments of 'saveFilterClick' event while updating the view. For know more about the event, refer saveFilterClick
+   DashboardId: instance.embedOptions.dashboardId, // Get the dashboard ID from the embedOptions 
+   QueryString: 'filterQuery=[{"ucn":"Column1","cn":"ProductName","rn":"ComboBox2","ir":false,"ims":false,"fi":"92884626db4ffba31a49504a4864e4","ipw":false,"dimfi":{"c":"Include","t":["Product A"]}}]', // Get the filter query string from the arguments of 'saveFilterClick' event. For know more about the event, refer saveFilterClick
+};
+instance.updateFilterView(viewParameters, "callBackFunc");
+
+function callBackFunc(view, status) {
+   var viewId = view.ViewId; // Get the view id of the saved view
+   var statusMessage = status; // Get the status message of the saved view
+
+   /* Add custom functionalities with the above response for further actions */
+}
+```
+
+<table>
+<tr>
+<th style="width: 20%;">Parameter</td>
+<th style="width: 20%;">Type</th>
+<th style="width: 60%;">Description</td>
+</tr>
+<tr>
+<td><code>viewParameters</code></td>
+<td><code>object</code></td>
+<td>The object contains the following parameters.<br>
+   <table>
+   <tr>
+   <th>Parameter</td>
+   <th>Type</th>
+   <th>Description</td>
+   </tr>
+   <tr>
+   <td>ViewId</td>
+   <td><code>string</code></td>
+   <td>Defines the unique ID of the view.</td>
+   </tr>
+   <tr>
+   <td>ItemId</td>
+   <td><code>string</code></td>
+   <td>gDefines the unique ID of the dashboard, and for multitab dashboards, it must define the active-tabbed child dashboard ID.</td>
+   </tr>
+   <tr>
+   <td>QueryString</td>
+   <td><code>string</code></td>
+   <td>Defines the filter query associated with the view.</td>
+   </tr>
+   </table>
+</td>
+</tr>
+<tr>
+<td><code>callBackFnc</code></td>
+<td><code>string</code></td>
+<td>Denotes the callback method name that must be defined. It will return the updated view details in the dashboard as arguments.</td>
+</tr>
+</table>
+
+## getViewsByDashboardId()
+This method will retrieve the filter view items of a specific dashboard.
+
+**Example**
+
+```js
+var instance = BoldBI.getInstance("dashboard"); // embedContainerId -> 'dashboard'
+var itemId= "2db7d4eb-017d-4a3e-b567-d88cd8600d89"; // for multitab dashboard, need to set the active-tabbed child dashboard id.
+instance.getViewsByDashboardId(itemId, "callBackFunc");
+
+function callBackFunc(views) {
+   var view = {};
+   if(views != undefined) {
+      views.forEach(data => {
+         view["ItemId"] = data.ItemId, // Get dashboard id of the view
+         view["ViewId"] = data.ViewId, // Get view id of the view
+         view["ViewName"] = data.ViewName, // Get view name of the view
+         view["QueryString"] = data.QueryString // Get query string of the view
+      });
+
+      /* Add custom functionalities with the above view details for further actions */
+   }
+}
+```
+
+<table>
+<tr>
+<th style="width: 20%;">Parameter</td>
+<th style="width: 20%;">Type</th>
+<th style="width: 60%;">Description</td>
+</tr>
+<tr>
+<td><code>itemId</code></td>
+<td><code>string</code></td>
+<td>Defines the unique ID of the dashboard and for multitab dashboards, it must defines the active-tabbed child dashboard id.</td>
+</tr>
+<tr>
+<td><code>callBackFnc</code></td>
+<td><code>string</code></td>
+<td>Denotes the callback method name that must be defined. It will return the dashboard views details as arguments.</td>
+</tr>
+</table>
+
+## getViewByViewId()
+This method will retrieves the information of a specific filter view.
+
+**Example**
+
+```js
+var instance = BoldBI.getInstance("dashboard"); //embedContainerId -> 'dashboard'
+var viewId= "2182319f-2bb3-49ae-b05c-2bec3f03fd1f"; // Get the view id from the getViewsByDashboardId() API. For know more above the API, refer getViewsByDashboard().
+instance.getViewByViewId(viewId, "callBackFunc");
+
+function callBackFunc(view) {
+   var itemId = view.ItemId; // Get dashboard id of the view
+   var viewId = view.ViewId; // Get view id of the view
+   var viewName = view.ViewName; // Get view name of the view
+   var queryString = view.QueryString; // Get query string of the view
+
+   /* Add custom functionalities with the above view details for further actions */
+}
+```
+
+<table>
+<tr>
+<th style="width: 20%;">Parameter</td>
+<th style="width: 20%;">Type</th>
+<th style="width: 60%;">Description</td>
+</tr>
+<tr>
+<td><code>viewId</code></td>
+<td><code>string</code></td>
+<td>Defines the unique ID of the view.</td>
+</tr>
+<tr>
+<td><code>callBackFnc</code></td>
+<td><code>string</code></td>
+<td>Denotes the callback method name that must be defined. It will return the view details of the view as arguments.</td>
+</tr>
+</table>
+
+## deleteFilterView()
+This method will remove the filter view from the dashboard.
+
+**Example**
+
+```js
+var instance = BoldBI.getInstance("dashboard"); //embedContainerId -> 'dashboard'
+var viewId= "2182319f-2bb3-49ae-b05c-2bec3f03fd1f"; // Get the view id from the getViewsByDashboardId() API. For know more above the API, refer getViewsByDashboard().
+instance.deleteFilterView(viewId, "callBackFunc");
+
+function callBackFunc(viewId) {
+   /* Add custom functionalities with the viewId for further actions */
+}
+```
+
+<table>
+<tr>
+<th style="width: 20%;">Parameter</td>
+<th style="width: 20%;">Type</th>
+<th style="width: 60%;">Description</td>
+</tr>
+<tr>
+<td><code>viewId</code></td>
+<td><code>string</code></td>
+<td>Defines the unique ID of the view.</td>
+</tr>
+<tr>
+<td><code>callBackFnc</code></td>
+<td><code>string</code></td>
+<td>Denotes the callback method name that must be defined. It will return the view id of the view as arguments.</td>
 </tr>
 </table>

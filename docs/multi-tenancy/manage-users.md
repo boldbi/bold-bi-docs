@@ -117,7 +117,7 @@ Please refer to [this](#password-requirement) section for password requirement.
 ![Change Password](/static/assets/multi-tenancy/images/change-password.png#max-width=95%)
 
 ## Two Factor Authentication
-The user can enable [2FA](/embedded-bi/profile/#two-factor-authentication) for their account. If the user loses the recovery code or authenticator application, the admin can disable the 2FA or regenerate a new set of codes for the user. This can be done by using the Two-Factor Authentication tab in the `security` section.
+The user can enable [2FA](/managing-resources/manage-users/profile/#two-factor-authentication) for their account. If the user loses the recovery code or authenticator application, the admin can disable the 2FA or regenerate a new set of codes for the user. This can be done by using the Two-Factor Authentication tab in the `security` section.
 
 ### Regenerate Recovery code for user
 To regenerate the recovery code for the user, view the user detail and click `Regenerate Recovery Code` in the Two Factor Authentication tab.

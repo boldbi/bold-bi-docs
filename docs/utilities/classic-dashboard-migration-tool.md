@@ -11,7 +11,7 @@ documentation: ug
 
 This section explains about, how to migrate the **Syncfusion Dashboard Platform Dashboards/Datasources** into the `Bold BI` site by using Dashboard Migration Utility.
 
-> **NOTE:** The Dashboard Migration utility can only be used for migrating the dashboards from the Syncfusion Dashboard Server to the Bold BI server. This utility cannot be used for migrating the dashboards from the Bold BI instance to another. For this, you can make use of **Publish** Module. Refer to this [section](https://help.boldbi.com/managing-resources/manage-dashboards/publish-dashboards/) to publish the dashboard from one Bold BI instance to another. It is not applicable to use for migrate the dashboards from Syncfusion Dashboard Server to the Bold BI Cloud Analytics Server.
+> **NOTE:** The Dashboard Migration utility can only be used for migrating the dashboards from the Syncfusion Dashboard Server to the Bold BI server. This utility cannot be used for migrating the dashboards from the Bold BI instance to another. For this, you can make use of **Publish** Module. Refer to this [section](https://help.boldbi.com/working-with-dashboards/publish-dashboard/) to publish the dashboard from one Bold BI instance to another. It is not applicable to use for migrate the dashboards from Syncfusion Dashboard Server to the Bold BI Cloud Analytics Server.
 
 ## Instruction to use the Migration Utility
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Embedded SDK v3.3.40 PHP with javascript Sample | Bold BI Docs
-description: Explore the JavaScript-based embedding with PHP sample,which has been supported by Bold BI since v3.3.40.
+title: Embedding Analytics with PHP and JavaScript | Bold BI Docs
+description: Learn how to embed an analytics dashboard with ASP.NET Core and JavaScript application using Bold BI Embed SDK and try it yourself.
 platform: bold-bi
 documentation: ug
 ---
@@ -142,7 +142,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/php-sample) t
 
  5. Refer to the mandatory cdn file in the `<head>` tag as follows.
      ```js
-    <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v6.7.11/boldbi-embed.js"></script>
+    <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v6.16.12/boldbi-embed.js"></script>
      ```
 
  6. In the `<body>` tag, create the DOM element with the id `dashboard` and initialize the `embedSample()` method, which is implemented in `<script>` tag as follows.

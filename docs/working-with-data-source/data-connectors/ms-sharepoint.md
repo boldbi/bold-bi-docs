@@ -94,4 +94,4 @@ You can edit, delete and re-authorize this account from the **Connected Accounts
 
 [Dashboard Designer Walkthrough](/getting-started/creating-dashboard/)
 
-[Microsoft SharePoint Integration](https://www.boldbi.com/integrations/microsoft-sharepoint?utm_source=syncfusion&utm_medium=documentation&utm_campaign=boldbimssharepointintegration)
+<a href="https://www.boldbi.com/integrations/microsoft-sharepoint?utm_source=syncfusion&utm_medium=documentation&utm_campaign=boldbimssharepointintegration" target="_blank">Microsoft SharePoint Integration</a>

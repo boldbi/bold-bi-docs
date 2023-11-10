@@ -12,7 +12,7 @@ The dashboard parameters can be used in the expression, stored procedures and cu
 
 ## Expression
 
-Select the parameter from the `Column Settings` or use the following syntax to create a [expression](/transforming-data/configuring-expression-columns.md) with dashboard parameter.
+Select the parameter from the `Column Settings` or use the following syntax to create a [expression](/working-with-data-source/transforming-data/configuring-expression-columns/) with dashboard parameter.
 
  Syntax: `@{{:ParameterName}}`
 
@@ -22,11 +22,11 @@ Select the parameter from the `Column Settings` or use the following syntax to c
 
 ![Use dashboard parameter in expression column](/static/assets/working-with-datasource/dashboard-parameter/images/dashboard-parameter-in-expression.png)
 
-> **NOTE:** Those parameters, which are created using the [list mode](/working-with-data-source/configuring-dashboard-parameters/#list-mode), will not be used in expression.
+> **NOTE:** Those parameters, which are created using the [list mode](/working-with-data-source/dashboard-parameter/configuring-dashboard-parameters/#list-mode), will not be used in expression.
 
 ## Stored Procedure
 
-Choose the parameter option from the [stored procedure](/connecting-to-stored-procedures.md) parameter window. Available parameter will be listed in value drop-down box.
+Choose the parameter option from the [stored procedure](/working-with-data-source/connecting-to-stored-procedures/) parameter window. Available parameter will be listed in value drop-down box.
 
 ![Use dashboard parameter in stored procedure](/static/assets/working-with-datasource/dashboard-parameter/images/dashboard-parameter-in-SP.png)
 
@@ -34,9 +34,13 @@ You can use the range type parameters as follows.
 
 ![Range type parameter in stored procedure](/static/assets/working-with-datasource/dashboard-parameter/images/dashboard-parameter-SP-range.png)
 
+## Data Filter
+
+You can use parameters in the `Data filter` to filter records. To configure the `Data filter`, refer to the [configuring data filters](/working-with-data-source/transforming-data/configuring-data-filters/#parameters) section.
+
 ## Custom Query
 
-Type `@` to list the available parameters. You can use it anywhere in query editor window.
+Type `@` to list the available parameters. You can use it anywhere in the query editor window.
 
 Another way is, user can manually type the required parameter in code view using the syntax.
 

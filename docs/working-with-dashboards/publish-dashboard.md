@@ -11,8 +11,6 @@ documentation: ug
 
 A new dashboard or an existing dashboard can be published with same or different `Name` in the site. While publishing the dashboard, you can also add the `Description` for the dashboard, if required.
 
-> **Note:** This feature is available in Bold BI Embedded Analytics but not in Cloud Analytics Server.
-
 Publishing operation can be handled using the option in the tools pane of the design view items such as, `Publish` and `Publish As`
 
 ![Publish dashboard icon](/static/assets/working-with-dashboards/images/publishdashboard_icon.png)

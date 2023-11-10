@@ -10,7 +10,7 @@ documentation: ug
 
 ## Passing Dashboard Parameter With iframe
 
-1. Refer to this [document](/embedding-options/iframe-embedding/embedding-a-dashboard/#steps-to-embed-dashboard-using-url) to get the iframe code that can be used to embed the Bold BI dashboard on your web page.
+1. Refer to this [document](/embedding-options/iframe-embedding/embedding-a-dashboard/#steps-to-embed-dashboard-designer-using-url) to get the iframe code that can be used to embed the Bold BI dashboard on your web page.
 
 2. The dashboard parameters have two modes. One mode is Literal and another mode is List.
 

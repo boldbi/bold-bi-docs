@@ -27,6 +27,29 @@ To configure the Smartsheet data source, follow the below steps:
 
    ![Choose data source](/static/assets/working-with-datasource/data-connectors/images/smartsheet/ChooseDS_server.png)
 
+## How to Obtain the Smartsheet Client ID and Client Secret
+> **Note:** Smartsheet OAuth credentials are required for the Bold BI Embedded Analytics but not needed in Cloud Analytics Server.
+
+1. Go to the [Smartsheet home page](https://www.smartsheet.com/) and log in to your account.
+2. Click the User icon and select **Developer Tools** from the menu.
+ ![Developertools](/static/assets/working-with-datasource/data-connectors/images/smartsheet/Developertools.png)
+
+3. Provide the necessary details and click **Save** to create your **Developer profile**.
+ ![Developerprofile](/static/assets/working-with-datasource/data-connectors/images/smartsheet/developerprofile.png)
+
+4. On the Developer Tools menu, click the **Create New App** button to create a new app.
+ ![Createapp](/static/assets/working-with-datasource/data-connectors/images/smartsheet/Createapp.png)
+
+5. Enter the required details and the **App redirect URL**, then click the **Save** button.
+   ![saveapp](/static/assets/working-with-datasource/data-connectors/images/smartsheet/saveapp.png)
+
+>**NOTE**: The Bold BI redirect URL should be added in the proper format. Please refer to this URL structure, https://hostname/bi/designer/v1.0/oauth/agent.
+
+6. The **Client ID and Client Secret** for your app will be displayed once the app is created.
+   ![Appcredientals](/static/assets/working-with-datasource/data-connectors/images/smartsheet/Appcredientals.png)
+
+>**NOTE**: Save the client ID and client secret in Bold BI by following the [OAuth Configuration](/site-administration/data-connector-settings/oauth-configuration/) guide for more details.
+
 ## Authentication with Smartsheet
 Use the following steps to authenticate with Smartsheet web service.
 

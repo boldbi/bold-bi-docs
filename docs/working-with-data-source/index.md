@@ -5,7 +5,7 @@ description: Learn how to work with a data source like connecting to data, creat
 canonical: "/working-with-data-source/"
 platform: bold-bi
 documentation: ug
-lang: en
+
 ---
 
 # Working with Data Source
@@ -38,18 +38,20 @@ You can explore the data source in detail here,
 
 [Working With Connected Accounts](/working-with-data-source/working-with-connected-accounts/)
 
-[Dynamic Connection String](/working-with-data-source/dynamic-connection-string/)
+[Dynamic Connection String](/embedding-options/iframe-embedding/dynamic-connection-string/)
 
 [User Filter](/working-with-data-source/user-filter/)
 
 [Configure Custom Attribute](/working-with-data-source/configuring-custom-attribute/)
 
-[Dashboard Parameter](/working-with-data-source/dashboard-parameter)
+[Dashboard Parameter](/working-with-data-source/dashboard-parameter/)
 
-[Configure Dashboard Parameter Iterative Mode](/working-with-data-source/dashboard-parameter-iterative-mode)
+[Configure Dashboard Parameter Iterative Mode](/working-with-data-source/dashboard-parameter-iterative-mode/)
 
 [Configure Isolation code](/working-with-data-source/configuring-isolation-code/)
 
 [Bold BI Intermediate Database](/working-with-data-source/bold-bi-intermediate-database/)
 
 [White List IP addresses of the Bold BI Cloud servers](/working-with-data-source/white-list-ip-address-bold-bi-cloud/)
+
+[Bold BI Append Data Source](/working-with-data-source/append-data-source/)

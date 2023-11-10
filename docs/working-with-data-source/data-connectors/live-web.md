@@ -51,10 +51,10 @@ After clicking the data source, the **NEW DATA SOURCE** configuration panel open
 1. Enter a name and description (optional) for the data source.
 2. Enter a valid REST API endpoint in the URL text box.
 3. Choose one of the **Method Type** from the combo box for the provided REST API. Options are *GET* and *POST*.
-4. If required by the REST API, provide key value pairs in **Headers**. To get details about headers, refer to [Query Parameters](/working-with-data-source/data-connectors/restful-web-services/#query-parameters).
+4. If required by the REST API, provide key value pairs in **Headers**. To get details about headers, refer to [Query Parameters](/working-with-data-source/data-connectors/web/#query-parameters).
 5. Choose a time interval for **Refresh Settings** using the combo box to trigger the Rest API request periodically to keep the data in sync with our dashboard.  
 6. Choose a **Data Format** from the combo box based on the response of your provided REST API. Options are *JSON, CSV, and XML*.
-7. Choose an **Authentication Type** supported by the data source. Options are *Basic http authentication* and *None*. Learn more about [Authentication Types](/working-with-data-source/data-connectors/restful-web-services/#authentication-types).
+7. Choose an **Authentication Type** supported by the data source. Options are *Basic http authentication* and *None*. Learn more about [Authentication Types](/working-with-data-source/data-connectors/web/#authentication-types).
 8. Choose a **Pagination Type** supported by the data source from the combo box.
 
    ![Data source preview](/static/assets/working-with-datasource/data-connectors/images/LiveWeb/DataSourcesView.png)
@@ -457,7 +457,7 @@ Follow these steps to use the feature.
 1.	Connect the REST API to the live web data source.
 `https://services.odata.org/V4/OData/OData.svc/Products`
    ![Data preview](/static/assets/working-with-datasource/data-connectors/images/LiveWeb/web1.png)
-2. Once you have connected the data source, create the StartDate and EndDate under the [Literal Mode](/working-with-data-source/configuring-dashboard-parameters/) dashboard parameters.
+2. Once you have connected the data source, create the StartDate and EndDate under the [Literal Mode](/working-with-data-source/dashboard-parameter/configuring-dashboard-parameters/) dashboard parameters.
    ![Data preview](/static/assets/working-with-datasource/data-connectors/images/LiveWeb/web2.png)
 3. Save the data source. Then, click the edit data source to reconnect the dashboard parameter URL as given and save the changes.
    Example:`http://services.odata.org/V4/OData/OData.svc/Products?%24filter=ReleaseDate%20gt%20@{{:LiteralDS.StartDate}}T00:00:00Z%20and%20ReleaseDate%20lt%20@{{:LiteralDS.EndDate}}T00:00:00Z`

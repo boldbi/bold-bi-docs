@@ -5,7 +5,7 @@ description: Learn how to enable the embed authentication and generate the secre
 canonical: "/site-administration/embed-settings/"
 platform: bold-bi
 documentation: ug
-lang: en
+
 ---
 
 # Embed Settings to generate Embed Secret key

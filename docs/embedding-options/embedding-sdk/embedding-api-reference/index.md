@@ -5,7 +5,7 @@ description: Know about the JavaScript APIs in Embed SDK to pass server URL, das
 platform: bold-bi
 documentation: UG
 keywords: Bold BI,embedding,Dashboard
-lang: en
+
 ---
 
 # Bold BI Embedding SDK

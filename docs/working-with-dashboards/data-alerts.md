@@ -10,8 +10,6 @@ documentation: ug
 
 Data alert provides the users to track certain conditions and respond it to a specified recipients via mail when a certain predefined threshold is met.
 
-> **Note:** This feature is available in Bold BI Embedded Analytics but not in Cloud Analytics Server.
-
 ## Add a Data Alert
 Follow these steps to create the new data alert with the desired dashboard.
 
@@ -157,7 +155,7 @@ Dashboards can be scheduled on `hourly, daily, weekly, monthly and yearly`.
 
 #### Choose Subscribers
 
-Dashboards can be exported as Image, PDF and Excel. Exported dashboards can be sent to individual users or groups or to external recipients.
+Dashboards can be exported as Image, PDF, CSV, and Excel. Exported dashboards can be sent to individual users or groups or to external recipients.
 
 ![schedule-mail](/static/assets/visualizing-data/working-with-widgets/images/recipients.png)
 

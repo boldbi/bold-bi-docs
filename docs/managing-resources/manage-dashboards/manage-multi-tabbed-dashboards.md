@@ -5,7 +5,7 @@ description: Learn how to create two or more dashboards in the same page, open, 
 canonical: "/managing-resources/manage-dashboards/manage-multi-tabbed-dashboards/" 
 platform: bold-bi
 documentation: ug
-lang: en
+
 ---
 
 # Multi-Tabbed Dashboards
@@ -22,7 +22,7 @@ Multi-tabbed dashboard feature enables the user to render two or more dashboards
 
 ## Create a Multi-Tabbed Dashboard
 
-To create a multi-tabbed dashboard, the user should have dashboards. Admin user can use any dashboards for creating a multi-tab dashboard but other users can use only their own dashboards for creating a multi-tab dashboard.
+To create a multi-tabbed dashboard, the user should have dashboards. Admin user can use any dashboards for creating a multi-tab dashboard but other users can use only their own dashboards or shared dashboards with write permission for creating a multi-tab dashboard.
 
 ### Steps to create a multi-tabbed dashboard
 

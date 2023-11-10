@@ -27,25 +27,23 @@ A maximum of 1000 users will be searched and pulled from Active Directory in a s
 
 Bold BI application will search the users within the specified distinguished name given in the Active Directory settings page and list the search results in the grid.
 
-![Import Users from Active Directory Server](/static/assets/managing-resources/manage-users/images/Search-Active-Directory-User.png)
+![Import Users from Active Directory Server](/static/assets/managing-resources/manage-users/images/search-active-directory-user-import.png)
 
 ## Import Users
 
-To import the Active Directory users into the Bold BI application, you have to choose the users from the list and click `Import` button at the top right corner.
+To import the Active Directory users into the Bold BI application, you have to choose the users from the list and click the `Import Selected Users` button to import selected users or click the `Import All Users` button to import all users.
 
-![Import User from Active Directory](/static/assets/managing-resources/manage-users/images/import-user-from-active-directory.png)
+![Import User from Active Directory](/static/assets/managing-resources/manage-users/images/import-user-from-window-ad.png)
 
-Bold BI application will import the chosen users and a confirmation message will be displayed.
+Bold BI will import the chosen users in the background as a job and a confirmation dialog will be displayed as shown in the following figure.
 
-![Success message after imported the Active Directory users](/static/assets/managing-resources/manage-users/images/Active-Directory-User-imported.png#width=60%)
+![Confirmation dialog after import users started](/static/assets/managing-resources/manage-users/images/confirmation-dialogue-on-import-click.png#width=70%)
 
-> **NOTE:**  Bold BI application will rely on user email for authentication purpose. If imported user doesn't have any email address, then Bold BI server will auto generate the email for that user. Example: if username is `john` and domain name is `example.com`, then user will be imported with auto generated email `john@example.com`
+You can view the status of the current import by clicking the `View Status` button in the above confirmation dialog and you will be navigated to the below bulk import job details page where you can view the details of the current import job. Please learn more about the Bulk Import Result page [here](/managing-resources/manage-users/bulk-import-result/).
 
-## Duplicate Users
+![Bulk user import job details page](/static/assets/managing-resources/manage-users/images/import-job-details-page.png#width=70%)
 
-Active Directory users who has the same username or email address as that of the Bold BI application users (who are already present) will be marked as duplicate users and will not be allowed to import into Bold BI application. 
-
-![Duplicated Active Directory Users](/static/assets/managing-resources/manage-users/images/Duplicated-Active-Directory-Users.png#width=60%)
+> **NOTE:**  Bold BI application will rely on user email for authentication purpose. If the imported user doesn't have an email address, then the Bold BI server will auto-generate the email for that user. Example: if the username is `john` and domain name is `example.com`, then the user will be imported with auto-generated email `john@example.com`
 
 ## Modify Active Directory Connection
 

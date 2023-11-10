@@ -4,7 +4,6 @@ title: Bold BI Auto Deployment on Linux Environment | Bold BI Docs
 description: Read here to learn about how to auto deploy a Bold BI in Linux by activating licensing and configuring startup from the browser and customize the branding.
 platform: bold-bi
 documentation: ug
-lang: en
 ---
 
 # Auto deploy Bold BI in Linux
@@ -304,13 +303,13 @@ The following variable is necessary to configure a startup application on the ba
     </tr> 
     <tr>
       <td>
-       <b>emailpwd</b> 
+       <b>usesiteidentifier</b> 
       </td>
       <td>
        Yes
       </td>
       <td>
-      It should meet our password requirements.
+      The variable is optional, and the default value is TRUE. By default, all sites in Bold BI require a site identifier, which differentiates sites on the same domain. That is https://example.com/bi/site/ You can ignore the site identifier by setting the value as FALSE. If the site identifier is disabled, each site requires a unique domain.
       </td>
     </tr> 
     <tr>

@@ -5,7 +5,7 @@ description: Learn how to create dashboard filters to configure master-listener 
 canonical: "/working-with-dashboards/configuring-dashboard-filters/"
 platform: bold-bi
 documentation: ug
-lang: en
+
 ---
 
 # Configuring Dashboard Filters

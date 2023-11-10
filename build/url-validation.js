@@ -4,37 +4,41 @@ var request = require('request-promise');
 var fs = require('fs');
 let routerData;
 const path = require('path');
+var validUrl = require('valid-url');
 var log = require('single-line-log').stdout;
 var httpBrokenUrl = [];
 var internalBrokenUrl = [];
 var fileNotAvail = [];
+var { generateToc } = require('./toc.js');
+var urlfilepath = './urlfile';
+var toc ='./build.js';
+var urls =fs.readFileSync(urlfilepath,'utf8');
 
-gulp.task('url', async function (done) {
+gulp.task('url-validation', async function (done) {
+    generateToc();
     routerData = require('./../left-toc.json').routerData;
     var fileNames = glob.sync('./docs/**/*.md');
     for (var k = 0; k < fileNames.length; k++) {
         await brokenURL(fileNames[k]);
+        done();
     }
     printError(done);
 });
-
-gulp.task('url-validation',gulp.series('url','toc'));
 
 async function brokenURL(filePath) {
     var content = fs.readFileSync(filePath, 'utf8');
     var urlPattern = /\[(.*?)\]\((.*?)\)/g; // regex pattern to parse the url [alt-text](url location)
     while ((url = urlPattern.exec(content)) !== null) {
         if (url[2] !== undefined) {
-            if (url[2].indexOf('http') > -1) {
+            if ((url[2].indexOf('http') > -1) && !(url[2].indexOf('/<:') > -1) &&  ! urls.indexOf(url[2])) {
                 await validateUrl(url[2], filePath);
             }
-            else if (!(url[2].indexOf('/static') > -1) && !(url[2].indexOf('{{site.') > -1)) {
+            else if (!(url[2].indexOf('/static') > -1) && !(url[2].indexOf('{{site.') > -1)&& !(url[2].indexOf('http') > -1) && !(urls.indexOf(url[2])>-1)) {
                 url = url[2].indexOf('/') === 0 ? url[2] : path.join(filePath, url[2]).substring(4).replace(/\\/g, '/');
                 if ((url.indexOf('#') > -1)) {
                     validateHeadings(url);
                 }
                 else if (!routerData[url]) {
-                    print(url);
                     internalBrokenUrl = internalBrokenUrl + url + ' ---> ' + filePath + '\n';
                 }
             }
@@ -48,11 +52,17 @@ function validateHeadings(url) {
         url = url.replace(/#aspnet/g, '#asp.net');
     }
     var heading = url.split('#')[1].replace(/-/g, ' ').replace(/\//g, '');
-    var basePath = url.includes('.md') ? url.split('#')[0].substring(0, (url.split('#')[0]).length - 1) :'./docs' + url.split('#')[0].substring(0, (url.split('#')[0]).length - 1) + '.md';
+    var basePath = url.includes('.md') ? url.split('#')[0].substring(0, (url.split('#')[0]).length - 1) :'./docs' + url.split('#')[0].substring(0, (url.split('#')[0]).length - 1);
     try {
+        if(fs.existsSync(basePath) && fs.lstatSync(basePath).isDirectory()){
+            basePath= basePath+'/index.md';
+        }else{
+            basePath = basePath.includes('.md')?'./docs' + url.split('#')[0].substring(0, (url.split('#')[0]).length - 1):basePath+".md";
+        }
         var content = fs.readFileSync(basePath, 'utf8');
     }
-    catch{
+    catch(e){
+          console.log(e);
         if (content === undefined) {
             fileNotAvail = fileNotAvail + url + ' ---> ' + basePath + '\n';
             internalBrokenUrl = internalBrokenUrl + url + ' ---> ' + basePath + '\n';
@@ -60,18 +70,20 @@ function validateHeadings(url) {
         }
     }
     var regexPattern = [`<a\\s+(?:[^>]*?\\s+)?href="#${heading}`, '^# ' + heading, '^## ' + heading, '^### ' + heading, '^#### ' + heading, '^##### ' + heading, '^###### ' + heading];
-    for (var i = 0; i < regexPattern.length; i++) {
+    for (var i = 0; i < regexPattern.length; i++) {  
         if (((regexString = new RegExp(regexPattern[i], 'mi').exec(content)) !== null)) {
             return;
         }
     }
+
     internalBrokenUrl = internalBrokenUrl + url + ' ---> ' + basePath + '\n';
 }
 
 async function validateUrl(url, filePath) {
     try {
         print(url);
-        await request.get(url, { resolveWithFullResponse: true });
+        if (!validUrl.isUri(url))
+            httpBrokenUrl = httpBrokenUrl + url + ' ---> ' + filePath + '\n';
     } catch (e) {
         httpBrokenUrl = httpBrokenUrl + url + ' ---> ' + filePath + '\n';
     }

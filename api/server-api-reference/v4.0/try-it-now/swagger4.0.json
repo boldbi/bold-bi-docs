@@ -77,7 +77,9 @@
     },
     "/v4.0/users": {
       "post": {
-        "tags": [ "Users" ],
+        "tags": [
+          "Users"
+        ],
         "summary": "Add User",
         "description": "Adds the new user.",
         "operationId": "Users_AddUser",
@@ -122,7 +124,9 @@
         }
       },
       "get": {
-        "tags": [ "Users" ],
+        "tags": [
+          "Users"
+        ],
         "summary": "Get Users",
         "description": "Retrieves the list of user details.",
         "operationId": "Users_GetUsers",
@@ -148,7 +152,9 @@
     },
     "/v4.0/users/{user}": {
       "put": {
-        "tags": [ "Users" ],
+        "tags": [
+          "Users"
+        ],
         "summary": "Update User",
         "description": "Updates the particular user detail.",
         "operationId": "Users_EditUser",
@@ -201,7 +207,9 @@
         }
       },
       "delete": {
-        "tags": [ "Users" ],
+        "tags": [
+          "Users"
+        ],
         "summary": "Delete User",
         "description": "Deletes the particular user.",
         "operationId": "Users_DeleteUser",
@@ -237,7 +245,9 @@
         }
       },
       "get": {
-        "tags": [ "Users" ],
+        "tags": [
+          "Users"
+        ],
         "summary": "Get a User by Email or Username",
         "description": "Retrieves the particular user detail.",
         "operationId": "Users_GetUserDetail",
@@ -276,7 +286,9 @@
     },
     "/v4.0/users/{user}/groups": {
       "get": {
-        "tags": [ "Users" ],
+        "tags": [
+          "Users"
+        ],
         "summary": "Get User Groups",
         "description": "Retrieves the list of group details of the particular user.",
         "operationId": "Users_GetGroupsOfUser",
@@ -318,7 +330,9 @@
     },
     "/v4.0/csv-users/download-template": {
       "get": {
-        "tags": [ "Users" ],
+        "tags": [
+          "Users"
+        ],
         "summary": "Download CSV Template",
         "description": "Download the CSV template to import the CSV users.",
         "operationId": "Users_DownloadCsvTemplate",
@@ -344,7 +358,9 @@
     },
     "/v4.0/csv-users": {
       "post": {
-        "tags": [ "Users" ],
+        "tags": [
+          "Users"
+        ],
         "summary": "Add CSV User",
         "description": "Add the list of users using the CSV file.",
         "operationId": "Users_CsvUserImport",
@@ -385,7 +401,9 @@
     },
     "/v4.0/groups": {
       "post": {
-        "tags": [ "Groups" ],
+        "tags": [
+          "Groups"
+        ],
         "summary": "Add Group",
         "description": "Adds the new group to group the users.",
         "operationId": "Groups_AddGroup",
@@ -428,9 +446,11 @@
             "description": "Failed to add group"
           }
         }
-      },
+      }, 
       "get": {
-        "tags": [ "Groups" ],
+        "tags": [
+          "Groups"
+        ],
         "summary": "Get Groups",
         "description": "Retrieves the list of group details.",
         "operationId": "Groups_GetGroups",
@@ -456,7 +476,9 @@
     },
     "/v4.0/groups/{id}": {
       "delete": {
-        "tags": [ "Groups" ],
+        "tags": [
+          "Groups"
+        ],
         "summary": "Delete Group",
         "description": "Deletes the particular group.",
         "operationId": "Groups_DeleteGroup",
@@ -490,7 +512,9 @@
         }
       },
       "put": {
-        "tags": [ "Groups" ],
+        "tags": [
+          "Groups"
+        ],
         "summary": "Update Group",
         "description": "Updates the particular group detail.",
         "operationId": "Groups_EditGroup",
@@ -547,7 +571,9 @@
         }
       },
       "get": {
-        "tags": [ "Groups" ],
+        "tags": [
+          "Groups"
+        ],
         "summary": "Get Group by Id",
         "description": "Retrieves the particular group detail.",
         "operationId": "Groups_GetGroupDetail",
@@ -587,7 +613,9 @@
     },
     "/v4.0/groups/azure-active-directory/import": {
       "post": {
-        "tags": [ "Groups" ],
+        "tags": [
+          "Groups"
+        ],
         "summary": "Add Azure AD Groups",
         "description": "Import the group(s) from Azure Active Directory.",
         "operationId": "Groups_AddAzureADGroup",
@@ -628,7 +656,9 @@
     },
     "/v4.0/groups/{id}/users": {
       "post": {
-        "tags": [ "Groups" ],
+        "tags": [
+          "Groups"
+        ],
         "summary": "Add User(s) to Group",
         "description": "Adds the list of users to the particular group.",
         "operationId": "Groups_AddUserToGroup",
@@ -682,7 +712,9 @@
         }
       },
       "delete": {
-        "tags": [ "Groups" ],
+        "tags": [
+          "Groups"
+        ],
         "summary": "Delete Group User",
         "description": "Deletes the list of users from the particular group.",
         "operationId": "Groups_DeleteUserFromGroup",
@@ -732,7 +764,9 @@
         }
       },
       "get": {
-        "tags": [ "Groups" ],
+        "tags": [
+          "Groups"
+        ],
         "summary": "Get Group Users",
         "description": "Retrieves the list of user details of the particular group.",
         "operationId": "Groups_GetUsersFromGroup",
@@ -778,7 +812,9 @@
     },
     "/v4.0/permissions/users": {
       "post": {
-        "tags": [ "Permission" ],
+        "tags": [
+          "Permission"
+        ],
         "summary": "Add User Permission",
         "description": "Administrators can add a new permission to the specific user by providing permission details.<br /><br />To add a specific permission, you must provide the item ID (Category Id, Schedule Id, and Dashboard Id) for the permission entity (SpecificCategory, SpecificSchedule, and SpecificDashboard).",
         "operationId": "Permission_AddUserPermission",
@@ -828,7 +864,9 @@
     },
     "/v4.0/permissions/users/{id}": {
       "get": {
-        "tags": [ "Permission" ],
+        "tags": [
+          "Permission"
+        ],
         "summary": "Get User Permissions",
         "description": "Administrators can get the list of permissions of the specific user.",
         "operationId": "Permission_GetUserPermission",
@@ -872,7 +910,9 @@
         }
       },
       "delete": {
-        "tags": [ "Permission" ],
+        "tags": [
+          "Permission"
+        ],
         "summary": "Delete User Permission",
         "description": "Administrators can delete the specific user's permission.",
         "operationId": "Permission_DeleteUserPermission",
@@ -908,7 +948,9 @@
     },
     "/v4.0/permissions/groups": {
       "post": {
-        "tags": [ "Permission" ],
+        "tags": [
+          "Permission"
+        ],
         "summary": "Add Group Permission",
         "description": "Administrators can add a new permission to the specific group by providing permission details.<br /><br />To add a specific permission, you must provide the item ID (Category Id, Schedule Id, and Dashboard Id) for the permission entity (SpecificCategory, SpecificSchedule, and SpecificDashboard).",
         "operationId": "Permission_AddGroupPermission",
@@ -958,7 +1000,9 @@
     },
     "/v4.0/permissions/groups/{id}": {
       "get": {
-        "tags": [ "Permission" ],
+        "tags": [
+          "Permission"
+        ],
         "summary": "Get Group Permissions",
         "description": "Administrators can get the list of permissions of the specific group.",
         "operationId": "Permission_GetGroupPermission",
@@ -1002,7 +1046,9 @@
         }
       },
       "delete": {
-        "tags": [ "Permission" ],
+        "tags": [
+          "Permission"
+        ],
         "summary": "Delete Group Permission",
         "description": "Administrators can delete the specific group permission.",
         "operationId": "Permission_DeleteGroupPermission",
@@ -1038,7 +1084,9 @@
     },
     "/v4.0/categories": {
       "post": {
-        "tags": [ "Category" ],
+        "tags": [
+          "Category"
+        ],
         "summary": "Add Category",
         "description": "Users who have a create access for categories, can add a new category.",
         "operationId": "Category_AddCategory",
@@ -1089,8 +1137,7 @@
         "summary": "Get Categories",
         "description": "Users who have created the categories can view the category lists.",
         "operationId": "Category_GetCategories",
-        "parameters" : 
-        [ 
+        "parameters": [
           {
             "name": "page",
             "in": "query",
@@ -1137,33 +1184,35 @@
             "example": "  + "
           }
         ],
-        "responses" : {
-          "200" : {
-            "type" : "array",
+        "responses": {
+          "200": {
+            "type": "array",
             "description": "The list of categories was retrieved successfully.",
-            "schema" : {
-              "$ref" : "#/definitions/PaginatedApiResponse"
+            "schema": {
+              "$ref": "#/definitions/PaginatedApiResponse"
             }
           },
-          "204" : {
-            "description" : "Items not found"
+          "204": {
+            "description": "Items not found"
           },
           "400": {
             "description": "Page does not exists."
           },
-          "401" : {
-            "description" : "Access denied"
+          "401": {
+            "description": "Access denied"
           },
-          "403" : {
-            "description" : "Access denied for the item"
+          "403": {
+            "description": "Access denied for the item"
           },
-          "405" : {
-            "description" : "Request type was not GET"
+          "405": {
+            "description": "Request type was not GET"
           }
         }
       },
       "put": {
-        "tags": [ "Category" ],
+        "tags": [
+          "Category"
+        ],
         "summary": "Update Category",
         "description": "Users who have write access for categories can update an existing category.",
         "operationId": "Category_UpdateCategory",
@@ -1213,7 +1262,9 @@
     },
     "/v4.0/categories/{categoryId}": {
       "get": {
-        "tags": [ "Category" ],
+        "tags": [
+          "Category"
+        ],
         "summary": "Get Category by Id",
         "description": "Users who created the category can view the category details.",
         "operationId": "Category_GetCategory",
@@ -1256,7 +1307,6 @@
         "summary": "Delete Category",
         "description": "Users who have delete access to the item type category can delete the item by providing the Category Id.",
         "operationId": "Category_DeleteCategory",
-
         "parameters": [
           {
             "type": "string",
@@ -1293,14 +1343,15 @@
         }
       }
     },
-    "/v4.0/dashboards" : {
-      "get" : {
-        "tags" : [ "Dashboard" ],
+    "/v4.0/dashboards": {
+      "get": {
+        "tags": [
+          "Dashboard"
+        ],
         "summary": "Get Dashboards",
         "description": "Users who have created the dashboards can view the dashboard lists.",
         "operationId": "Dashboards_GetDashboards",
-        "parameters" : 
-        [ 
+        "parameters": [
           {
             "type": "string",
             "name": "serverPath",
@@ -1363,25 +1414,25 @@
             }
           }
         ],
-        "responses" : {
-          "200" : {
-            "type" : "array",
+        "responses": {
+          "200": {
+            "type": "array",
             "description": "List of dashboards was retrieved successfully.",
-            "schema" : {
-              "$ref" : "#/definitions/PaginatedApiResponse"
+            "schema": {
+              "$ref": "#/definitions/PaginatedApiResponse"
             }
           },
-          "204" : {
-            "description" : "Items not found"
+          "204": {
+            "description": "Items not found"
           },
           "400": {
             "description": "Page does not exists."
           },
-          "401" : {
-            "description" : "Access denied"
+          "401": {
+            "description": "Access denied"
           },
-          "405" : {
-            "description" : "Request type was not GET"
+          "405": {
+            "description": "Request type was not GET"
           }
         }
       }
@@ -1467,67 +1518,74 @@
       }
     },
     "/v4.0/dashboards/{itemId}/copy": {
-      "post" : {
-        "tags" : [ "Dashboard" ],
+      "post": {
+        "tags": [
+          "Dashboard"
+        ],
         "summary": "Copy Dashboard",
         "description": "Users who have create access to the dashboard, can copy the dashboard.",
         "operationId": "Dashboards_CopyDashboard",
-        "parameters" : [ {
-          "type" : "string",
-          "name" : "itemId",
-          "in" : "path",
-          "required" : true,
-          "description" : "ItemId of the dashboard will be copied.",
-          "format" : "guid",
-          "x-nullable" : false
-        }, {
-          "name" : "apiCopyDashboard",
-          "in" : "body",
-          "required" : true,
-          "description" : "Details of the dashboard passed will be copied.",
-          "schema" : {
-            "$ref" : "#/definitions/ApiCopyDashboardRequestV4"
+        "parameters": [
+          {
+            "type": "string",
+            "name": "itemId",
+            "in": "path",
+            "required": true,
+            "description": "ItemId of the dashboard will be copied.",
+            "format": "guid",
+            "x-nullable": false
           },
-          "x-nullable" : true
-        } ],
-        "responses" : {
-          "200" : {
-            "x-nullable" : false,
+          {
+            "name": "apiCopyDashboard",
+            "in": "body",
+            "required": true,
+            "description": "Details of the dashboard passed will be copied.",
+            "schema": {
+              "$ref": "#/definitions/ApiCopyDashboardRequestV4"
+            },
+            "x-nullable": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "x-nullable": false,
             "description": "The dashboard has been copied successfully.",
-            "schema" : {
-              "$ref" : "#/definitions/ApiCopyItemResponse"
+            "schema": {
+              "$ref": "#/definitions/ApiCopyItemResponse"
             }
           },
-          "400" : {
-            "description" : "The content of the request body is missing or incomplete"
+          "400": {
+            "description": "The content of the request body is missing or incomplete"
           },
-          "401" : {
-            "description" : "Access denied. You do not have permission to copy the dashboard."
+          "401": {
+            "description": "Access denied. You do not have permission to copy the dashboard."
           },
-          "403" : {
-            "description" : "Mark as public has been restricted."
+          "403": {
+            "description": "Mark as public has been restricted."
           },
-          "404" : {
-            "description" : "Item details not found."
+          "404": {
+            "description": "Item details not found."
           },
-          "405" : {
-            "description" : "Request type was not POST"
+          "405": {
+            "description": "Request type was not POST"
           },
-          "406" : {
-            "description" : "The content of the request body is invalid"
+          "406": {
+            "description": "The content of the request body is invalid"
           },
-          "409" : {
-            "description" : "Item name already exists."
+          "409": {
+            "description": "Item name already exists."
           },
-          "417" : {
-            "description" : "Failed to copy the dashboard"
+          "417": {
+            "description": "Failed to copy the dashboard"
           }
         }
       }
     },
     "/v4.0/dashboards/public": {
       "get": {
-        "tags": [ "Dashboard" ],
+        "tags": [
+          "Dashboard"
+        ],
         "summary": "Get Public Dashboards",
         "description": "Retrieves the list of public dashboards for the current user.",
         "operationId": "Dashboards_GetPublicItems",
@@ -1571,11 +1629,57 @@
             "description": "Failed to get public items"
           }
         }
+      },
+      "put": {
+        "tags" : [
+            "Dashboard"
+        ],
+        "summary" : "Update Public Dashboard",
+        "description": "Users who have access to the dashboard and the dashboards settings can update the dashboard as public.",
+        "operationId": "Dashboards_UpdatePublicDashboard",
+        "parameters":[
+          {
+            "name": "ApiUpdateDashboardPublicV4",
+            "in": "body",
+            "required": true,
+            "description": "Public value passed will be updated to the specified dashboard.",
+            "schema": {
+              "$ref": "#/definitions/ApiUpdateDashboardPublicV4"
+            },
+            "x-nullable": true
+          }
+        ],
+        "responses": {
+            "200": {
+                "description": "Dashboard marked public successfully.",
+                "schema": {
+                    "$ref": "#/definitions/ApiResponse"
+                 }
+            },
+            "400": {
+                "description" : "The content of the request body is missing or incomplete.",
+                "content": {}
+            },
+            "401": {
+                "description": "Access denied",
+                "content": {}
+            },
+            "412" : {
+                "description": "Mark as public has been restricted.",
+                "content": {}
+            },
+            "417": {
+                "description": "Failed to mark dashboard as public.",
+                "content": {}
+            }
+        }
       }
     },
     "/v4.0/dashboards/favorite": {
       "get": {
-        "tags": [ "Dashboard" ],
+        "tags": [
+          "Dashboard"
+        ],
         "summary": "Get Favorite Dashboards",
         "description": "Retrieves a list of favorite dashboards for the current user.",
         "operationId": "Dashboards_GetFavoriteItems",
@@ -1605,7 +1709,9 @@
         }
       },
       "put": {
-        "tags": [ "Dashboard" ],
+        "tags": [
+          "Dashboard"
+        ],
         "summary": "Update Favorite Dashboard",
         "description": "Users who have read access to the dashboard can update the dashboard as favorite or non-favorite.",
         "operationId": "Dashboards_UpdateFavoriteItem",
@@ -1649,7 +1755,9 @@
     },
     "/v4.0/dashboards/export": {
       "post": {
-        "tags": [ "Dashboard" ],
+        "tags": [
+          "Dashboard"
+        ],
         "summary": "Export Dashboard",
         "description": "Users who have read access to the dashboard can export the dashboard to the export types (Excel, PDF, and Image) and get the exported dashboard as an array of bytes in response.<br /><br />When exporting multi-tabbed dashboard in image format, the response bytes must be saved in ZIP format.",
         "operationId": "Dashboards_ExportDashboard",
@@ -1694,103 +1802,114 @@
         }
       }
     },
-    "/v4.0/dashboards/drafts" : {
-      "post" : {
-        "tags" : [ "Draft Dashboard" ],
+    "/v4.0/dashboards/drafts": {
+      "post": {
+        "tags": [
+          "Draft Dashboard"
+        ],
         "summary": "Add Draft Dashboard",
         "description": "Users who have access to create a dashboard can add the draft dashboard.",
         "operationId": "Dashboards_AddDraftDashboard",
-        "parameters" : [ {
-          "type": "string",
-          "name": "name",
-          "in": "query",
-          "required": false,
-          "description": "Draft dashboard detail.",
-          "x-nullable": true
-        } ],
-        "responses" : {
-          "200" : {
-            "x-nullable" : false,
+        "parameters": [
+          {
+            "type": "string",
+            "name": "name",
+            "in": "query",
+            "required": false,
+            "description": "Draft dashboard detail.",
+            "x-nullable": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "x-nullable": false,
             "description": "Draft Dashboard has been created successfully.",
-            "schema" : {
-              "$ref" : "#/definitions/DraftItemDetail"
+            "schema": {
+              "$ref": "#/definitions/DraftItemDetail"
             }
           },
-          "400" : {
-            "description" : "The content of the request body is missing or incomplete"
+          "400": {
+            "description": "The content of the request body is missing or incomplete"
           },
-          "401" : {
-            "description" : "Access denied"
+          "401": {
+            "description": "Access denied"
           },
-          "403" : {
-            "description" : "Access denied for the item"
+          "403": {
+            "description": "Access denied for the item"
           },
-          "405" : {
-            "description" : "Request type was not POST"
+          "405": {
+            "description": "Request type was not POST"
           },
-          "406" : {
-            "description" : "The content of the request body is invalid"
+          "406": {
+            "description": "The content of the request body is invalid"
           },
           "409": {
             "description": "Item name already exists."
           }
         }
       },
-      "get" : {
-        "tags" : [ "Draft Dashboard" ],
+      "get": {
+        "tags": [
+          "Draft Dashboard"
+        ],
         "summary": "Get Draft Dashboards",
         "description": "Users who have created the draft dashboard can view the draft dashboard lists.",
         "operationId": "Dashboards_GetDraftDashboard",
-        "responses" : {
-          "200" : {
+        "responses": {
+          "200": {
             "x-nullable": true,
             "description": "List of draft dashboards has been retrieved successfully.",
             "schema": {
               "type": "array",
               "items": {
-                "$ref" : "#/definitions/ApiItemsV4"
+                "$ref": "#/definitions/ApiItemsV4"
               }
             }
           },
-          "204" : {
-            "description" : "Items not found"
+          "204": {
+            "description": "Items not found"
           },
-          "401" : {
-            "description" : "Access denied"
+          "401": {
+            "description": "Access denied"
           },
-          "403" : {
-            "description" : "Access denied for the item"
+          "403": {
+            "description": "Access denied for the item"
           },
-          "405" : {
-            "description" : "Request type was not GET"
+          "405": {
+            "description": "Request type was not GET"
           }
         }
       }
     },
     "/v4.0/dashboards/drafts/{itemId}": {
       "put": {
-        "tags": [ "Draft Dashboard" ],
+        "tags": [
+          "Draft Dashboard"
+        ],
         "summary": "Update Draft Dashboard",
         "description": "Users who have created the draft dashboard can update dashboard details.",
         "operationId": "Items_UpdateDraftItemDetail",
-        "parameters": [ {
-          "type" : "string",
-          "name" : "itemId",
-          "in" : "path",
-          "required" : true,
-          "description" : "ItemId of the draft dashboard.",
-          "format" : "guid",
-          "x-nullable" : false
-        }, {
-          "name": "updateDraftItemDetail",
-          "in": "body",
-          "required": true,
-          "schema": {
-            "$ref": "#/definitions/UpdateDraftItemDetail"
+        "parameters": [
+          {
+            "type": "string",
+            "name": "itemId",
+            "in": "path",
+            "required": true,
+            "description": "ItemId of the draft dashboard.",
+            "format": "guid",
+            "x-nullable": false
           },
-          "description": "Details of the draft dashboard item.",
-          "x-nullable": true
-        } ],
+          {
+            "name": "updateDraftItemDetail",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/UpdateDraftItemDetail"
+            },
+            "description": "Details of the draft dashboard item.",
+            "x-nullable": true
+          }
+        ],
         "responses": {
           "200": {
             "x-nullable": true,
@@ -1823,239 +1942,263 @@
         }
       }
     },
-    "/v4.0/dashboards/views" : {
-      "post" : {
-        "tags" : [ "Dashboard Views" ],
+    "/v4.0/dashboards/views": {
+      "post": {
+        "tags": [
+          "Dashboard Views"
+        ],
         "summary": "Add Dashboard View",
         "description": "Users who have access to the dashboard can save a view by providing proper dashboard filter details.",
         "operationId": "ItemViews_AddItemView",
-        "parameters" : [ {
-          "name" : "apiItemViewsAdd",
-          "in" : "body",
-          "required" : true,
-          "description" : "Details about the dashboard filter to save the view.",
-          "schema" : {
-            "$ref" : "#/definitions/ApiItemViewsAdd"
-          },
-          "x-nullable" : true
-        } ],
-        "responses" : {
-          "200" : {
-            "x-nullable" : false,
-            "description" : "A view has been created successfully.",
-            "schema" : {
-              "$ref" : "#/definitions/ApiResponse"
+        "parameters": [
+          {
+            "name": "apiItemViewsAdd",
+            "in": "body",
+            "required": true,
+            "description": "Details about the dashboard filter to save the view.",
+            "schema": {
+              "$ref": "#/definitions/ApiItemViewsAdd"
+            },
+            "x-nullable": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "x-nullable": false,
+            "description": "A view has been created successfully.",
+            "schema": {
+              "$ref": "#/definitions/ApiResponse"
             }
           },
-          "400" : {
-            "description" : "The content of the request body is missing or incomplete"
+          "400": {
+            "description": "The content of the request body is missing or incomplete"
           },
-          "401" : {
-            "description" : "Access denied"
+          "401": {
+            "description": "Access denied"
           },
-          "404" : {
-            "description" : "Item details not found."
+          "404": {
+            "description": "Item details not found."
           },
-          "405" : {
-            "description" : "Request type was not POST"
+          "405": {
+            "description": "Request type was not POST"
           },
-          "406" : {
-            "description" : "The content of the request body is invalid"
+          "406": {
+            "description": "The content of the request body is invalid"
           },
-          "409" : {
-            "description" : "View name already exists"
+          "409": {
+            "description": "View name already exists"
           },
-          "417" : {
-            "description" : "Failed to add view"
+          "417": {
+            "description": "Failed to add view"
           }
         }
       },
-      "put" : {
-        "tags" : [ "Dashboard Views" ],
+      "put": {
+        "tags": [
+          "Dashboard Views"
+        ],
         "summary": "Edit Dashboard View",
         "description": "Users who have created a view can edit the view by providing proper dashboard filter details.",
         "operationId": "ItemViews_UpdateItemView",
-        "parameters" : [ {
-          "name" : "apiItemViewsUpdate",
-          "in" : "body",
-          "required" : true,
-          "description" : "Details about the dashboard filter to edit the view.",
-          "schema" : {
-            "$ref" : "#/definitions/ApiItemViewsUpdate"
-          },
-          "x-nullable" : true
-        } ],
-        "responses" : {
-          "200" : {
-            "x-nullable" : false,
-            "description" : "A view has been updated successfully.",
-            "schema" : {
-              "$ref" : "#/definitions/ApiResponse"
+        "parameters": [
+          {
+            "name": "apiItemViewsUpdate",
+            "in": "body",
+            "required": true,
+            "description": "Details about the dashboard filter to edit the view.",
+            "schema": {
+              "$ref": "#/definitions/ApiItemViewsUpdate"
+            },
+            "x-nullable": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "x-nullable": false,
+            "description": "A view has been updated successfully.",
+            "schema": {
+              "$ref": "#/definitions/ApiResponse"
             }
           },
-          "400" : {
-            "description" : "The content of the request body is missing or incomplete"
+          "400": {
+            "description": "The content of the request body is missing or incomplete"
           },
-          "401" : {
-            "description" : "Access denied"
+          "401": {
+            "description": "Access denied"
           },
-          "404" : {
-            "description" : "Item details not found."
+          "404": {
+            "description": "Item details not found."
           },
-          "405" : {
-            "description" : "Request type was not PUT"
+          "405": {
+            "description": "Request type was not PUT"
           },
-          "406" : {
-            "description" : "The content of the request body is invalid"
+          "406": {
+            "description": "The content of the request body is invalid"
           },
-          "409" : {
-            "description" : "View name already exists"
+          "409": {
+            "description": "View name already exists"
           },
-          "417" : {
-            "description" : "Failed to edit view"
+          "417": {
+            "description": "Failed to edit view"
           }
         }
       }
     },
-    "/v4.0/dashboards/views/{id}" : {
-      "delete" : {
-        "tags" : [ "Dashboard Views" ],
+    "/v4.0/dashboards/views/{id}": {
+      "delete": {
+        "tags": [
+          "Dashboard Views"
+        ],
         "summary": "Delete Dashboard View",
         "description": "Users who have created a view can delete them.",
         "operationId": "ItemViews_ItemViewDelete",
-        "parameters" : [ {
-          "type" : "string",
-          "name" : "id",
-          "in" : "path",
-          "required" : true,
-          "description" : "View ID",
-          "format" : "guid",
-          "x-nullable" : false
-        } ],
-        "responses" : {
+        "parameters": [
+          {
+            "type": "string",
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "description": "View ID",
+            "format": "guid",
+            "x-nullable": false
+          }
+        ],
+        "responses": {
           "204": {
             "description": "No content"
           },
-          "400" : {
-            "description" : "View ID invalid"
+          "400": {
+            "description": "View ID invalid"
           },
-          "401" : {
-            "description" : "Access denied"
+          "401": {
+            "description": "Access denied"
           },
           "404": {
             "description": "Itemview is not active."
           },
-          "405" : {
-            "description" : "Request type was not DELETE"
+          "405": {
+            "description": "Request type was not DELETE"
           },
-          "417" : {
-            "description" : "Failed to delete view"
+          "417": {
+            "description": "Failed to delete view"
           }
         }
       },
-      "get" : {
-        "tags" : [ "Dashboard Views" ],
+      "get": {
+        "tags": [
+          "Dashboard Views"
+        ],
         "summary": "Get Dashboard View by Id",
         "description": "Retrieves the view detail for the current user.",
         "operationId": "ItemViews_ItemViewByViewId",
-        "parameters" : [ {
-          "type" : "string",
-          "name" : "id",
-          "in" : "path",
-          "required" : true,
-          "description" : "View ID",
-          "format" : "guid",
-          "x-nullable" : false
-        } ],
-        "responses" : {
-          "200" : {
-            "x-nullable" : false,
-            "description" : "A view has been retrieved successfully.",
-            "schema" : {
-              "$ref" : "#/definitions/ApiItemViewResponse"
+        "parameters": [
+          {
+            "type": "string",
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "description": "View ID",
+            "format": "guid",
+            "x-nullable": false
+          }
+        ],
+        "responses": {
+          "200": {
+            "x-nullable": false,
+            "description": "A view has been retrieved successfully.",
+            "schema": {
+              "$ref": "#/definitions/ApiItemViewResponse"
             }
           },
-          "400" : {
-            "description" : "View ID invalid"
+          "400": {
+            "description": "View ID invalid"
           },
-          "401" : {
-            "description" : "Access denied"
+          "401": {
+            "description": "Access denied"
           },
-          "404" : {
-            "description" : "View detail not found"
+          "404": {
+            "description": "View detail not found"
           },
-          "405" : {
-            "description" : "Request type was not GET"
+          "405": {
+            "description": "Request type was not GET"
           },
-          "417" : {
-            "description" : "Failed to get item view."
+          "417": {
+            "description": "Failed to get item view."
           }
         }
       }
     },
-    "/v4.0/dashboards/{id}/views" : {
-      "get" : {
-        "tags" : [ "Dashboard Views" ],
+    "/v4.0/dashboards/{id}/views": {
+      "get": {
+        "tags": [
+          "Dashboard Views"
+        ],
         "summary": "Get Dashboard Views",
         "description": "Retrieves the list of views of the particular dashboard for the current user.",
         "operationId": "ItemViews_ItemViewsByItemId",
-        "parameters" : [ {
-          "type" : "string",
-          "name" : "id",
-          "in" : "path",
-          "required" : true,
-          "description" : "Dashboard ID",
-          "format" : "guid",
-          "x-nullable" : false
-        } ],
-        "responses" : {
-          "200" : {
-            "x-nullable" : false,
-            "description" : "Views have been retrieved successfully.",
-            "schema" : {
-              "type" : "array",
-              "items" : {
-                "$ref" : "#/definitions/ApiItemViewResponse"
+        "parameters": [
+          {
+            "type": "string",
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "description": "Dashboard ID",
+            "format": "guid",
+            "x-nullable": false
+          }
+        ],
+        "responses": {
+          "200": {
+            "x-nullable": false,
+            "description": "Views have been retrieved successfully.",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/ApiItemViewResponse"
               }
             }
           },
-          "204" : {
-            "description" : "View list was empty"
+          "204": {
+            "description": "View list was empty"
           },
-          "400" : {
-            "description" : "Dashboard ID invalid"
+          "400": {
+            "description": "Dashboard ID invalid"
           },
-          "401" : {
-            "description" : "Access denied"
+          "401": {
+            "description": "Access denied"
           },
-          "405" : {
-            "description" : "Request type was not GET"
+          "405": {
+            "description": "Request type was not GET"
           },
-          "417" : {
-            "description" : "Failed to get views"
+          "417": {
+            "description": "Failed to get views"
           }
         }
       }
     },
     "/v4.0/dashboards/download/job": {
       "post": {
-        "tags" : [ "Dashboard" ],
+        "tags": [
+          "Dashboard"
+        ],
         "summary": "Prepare Dashboard For Download",
         "description": "Initiates the download of the dashboard for users with read and download access.",
         "operationId": "Dashboards_DownloadDashboard",
-        "parameters" : [ {
-          "name" : "apiDownloadDashboard",
-          "in" : "body",
-          "required" : true,
-          "description" : "Details of the dashboard passed will be downloaded.",
-          "schema" : {
-            "$ref" : "#/definitions/ApiDownloadDashboard"
-          },
-          "x-nullable" : true
-        } ],
+        "parameters": [
+          {
+            "name": "apiDownloadDashboard",
+            "in": "body",
+            "required": true,
+            "description": "Details of the dashboard passed will be downloaded.",
+            "schema": {
+              "$ref": "#/definitions/ApiDownloadDashboard"
+            },
+            "x-nullable": true
+          }
+        ],
         "responses": {
           "200": {
-            "x-nullable" : false,
+            "x-nullable": false,
             "description": "Download job has been initiated for the given dashboards.",
             "schema": {
               "$ref": "#/definitions/ApiResponse"
@@ -2079,23 +2222,25 @@
           }
         },
         "x-codegen-request-body-name": "apiDownloadDashboard"
-      }    
+      }
     },
     "/v4.0/dashboards/download/job/{jobId}": {
       "get": {
-        "tags" : [ "Dashboard" ],
+        "tags": [
+          "Dashboard"
+        ],
         "summary": "Download Dashboard",
         "description": "Download the content of a dashboard file.",
         "operationId": "Dashboard_DownloadDashboardFile",
         "parameters": [
           {
-            "type" : "string",
-            "name" : "jobId",
-            "in" : "path",
-            "required" : true,
+            "type": "string",
+            "name": "jobId",
+            "in": "path",
+            "required": true,
             "description": "Download Job ID",
             "format": "int32",
-            "x-nullable" : false
+            "x-nullable": false
           }
         ],
         "responses": {
@@ -2122,20 +2267,24 @@
     },
     "/v4.0/dashboards/upload/meta": {
       "post": {
-        "tags" : [ "Dashboard" ],
+        "tags": [
+          "Dashboard"
+        ],
         "summary": "Get Meta Info For Dashboard",
-        "description":  "Retrieve meta information for the downloaded dashboard files.",
+        "description": "Retrieve meta information for the downloaded dashboard files.",
         "operationId": "Dashboards_GetMetaInfo",
-        "parameters" : [ {
-          "name" : "apiGetMetaInfo",
-          "in" : "body",
-          "required" : true,
-          "description" : "Dashboard Information",
-          "schema": {
-            "$ref": "#/definitions/ApiGetMetaInfo"
-          },
-          "x-nullable" : true
-        } ],
+        "parameters": [
+          {
+            "name": "apiGetMetaInfo",
+            "in": "body",
+            "required": true,
+            "description": "Dashboard Information",
+            "schema": {
+              "$ref": "#/definitions/ApiGetMetaInfo"
+            },
+            "x-nullable": true
+          }
+        ],
         "responses": {
           "200": {
             "description": "Metadata for the given dashboard file has been retrieved successfully.",
@@ -2157,24 +2306,28 @@
           }
         },
         "x-codegen-request-body-name": "apiGetMetaInfo"
-      }    
+      }
     },
     "/v4.0/dashboards/upload": {
       "post": {
-        "tags" : [ "Dashboard" ],
+        "tags": [
+          "Dashboard"
+        ],
         "summary": "Upload Dashboard",
         "description": "Users who have created access to the dashboard can upload the dashboard.",
         "operationId": "Dashboards_UploadDashboard",
-        "parameters" : [ {
-          "name" : "apiUploadDashboard",
-          "in" : "body",
-          "required" : true,
-          "description" : "The downloaded dashboard file content and meta information.",
-          "schema": {
-            "$ref": "#/definitions/ApiUploadDashboard"
-          },
-          "x-nullable" : true
-        } ],
+        "parameters": [
+          {
+            "name": "apiUploadDashboard",
+            "in": "body",
+            "required": true,
+            "description": "The downloaded dashboard file content and meta information.",
+            "schema": {
+              "$ref": "#/definitions/ApiUploadDashboard"
+            },
+            "x-nullable": true
+          }
+        ],
         "responses": {
           "200": {
             "description": "Dashboard upload started.",
@@ -2196,7 +2349,7 @@
           }
         },
         "x-codegen-request-body-name": "apiUploadDashboard"
-      }    
+      }
     },
     "/v4.0/dashboards/upload/job/{jobId}": {
       "get": {
@@ -2213,7 +2366,7 @@
             "description": "Upload Job ID",
             "required": true,
             "format": "int32",
-            "x-nullable" : false
+            "x-nullable": false
           }
         ],
         "responses": {
@@ -2238,14 +2391,15 @@
         }
       }
     },
-    "/v4.0/datasources" : {
-      "get" : {
-        "tags" : [ "DataSource" ],
+    "/v4.0/datasources": {
+      "get": {
+        "tags": [
+          "DataSource"
+        ],
         "summary": "Get Datasources",
         "description": "Users who have created the data source can view the data source lists.",
         "operationId": "DataSource_GetDataSources",
-        "parameters" : 
-        [ 
+        "parameters": [
           {
             "name": "page",
             "in": "query",
@@ -2292,28 +2446,28 @@
             "example": "  + "
           }
         ],
-        "responses" : {
-          "200" : {
-            "type" : "array",
+        "responses": {
+          "200": {
+            "type": "array",
             "description": "List of datasources has been retrieved successfully.",
-            "schema" : {
-              "$ref" : "#/definitions/PaginatedApiResponse"
+            "schema": {
+              "$ref": "#/definitions/PaginatedApiResponse"
             }
           },
-          "204" : {
-            "description" : "Items not found"
+          "204": {
+            "description": "Items not found"
           },
           "400": {
             "description": "Page does not exists."
           },
-          "401" : {
-            "description" : "Access denied"
+          "401": {
+            "description": "Access denied"
           },
-          "403" : {
-            "description" : "Access denied for the item"
+          "403": {
+            "description": "Access denied for the item"
           },
-          "405" : {
-            "description" : "Request type was not GET"
+          "405": {
+            "description": "Request type was not GET"
           }
         }
       },
@@ -2370,7 +2524,9 @@
         }
       },
       "put": {
-        "tags": [ "DataSource" ],
+        "tags": [
+          "DataSource"
+        ],
         "summary": "Update Data Source",
         "description": "Updates an existing data source in a particular site. \n\n Note: Update data source API is only applicable for a live SQL data source.",
         "operationId": "DataSource_UpdateDataSource",
@@ -2422,7 +2578,9 @@
     },
     "/v4.0/datasources/{datasourceId}": {
       "get": {
-        "tags": [ "DataSource" ],
+        "tags": [
+          "DataSource"
+        ],
         "summary": "Get Datasource by Id",
         "description": "Users who have created the data source can view the data source details.",
         "operationId": "DataSource_GetDataSource",
@@ -2499,64 +2657,71 @@
       }
     },
     "/v4.0/datasources/{itemId}/copy": {
-      "post" : {
-        "tags" : [ "DataSource" ],
+      "post": {
+        "tags": [
+          "DataSource"
+        ],
         "summary": "Copy Datasource",
         "description": "Users who have create access to the data source, can copy the data source.",
         "operationId": "DataSource_CopyDataSource",
-        "parameters" : [ {
-          "type" : "string",
-          "name" : "itemId",
-          "in" : "path",
-          "required" : true,
-          "description" : "ItemId of the data source will be copied.",
-          "format" : "guid",
-          "x-nullable" : false
-        }, {
-          "name" : "apiCopyDatasource",
-          "in" : "body",
-          "required" : true,
-          "description" : "Details of the passed data source will be copied.",
-          "schema" : {
-            "$ref" : "#/definitions/ApiCopyDataSourceRequestV4"
+        "parameters": [
+          {
+            "type": "string",
+            "name": "itemId",
+            "in": "path",
+            "required": true,
+            "description": "ItemId of the data source will be copied.",
+            "format": "guid",
+            "x-nullable": false
           },
-          "x-nullable" : true
-        } ],
-        "responses" : {
-          "200" : {
-            "x-nullable" : false,
-            "description" : "The datasource has been copied successfully.",
-            "schema" : {
-              "$ref" : "#/definitions/ApiCopyItemResponse"
+          {
+            "name": "apiCopyDatasource",
+            "in": "body",
+            "required": true,
+            "description": "Details of the passed data source will be copied.",
+            "schema": {
+              "$ref": "#/definitions/ApiCopyDataSourceRequestV4"
+            },
+            "x-nullable": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "x-nullable": false,
+            "description": "The datasource has been copied successfully.",
+            "schema": {
+              "$ref": "#/definitions/ApiCopyItemResponse"
             }
           },
-          "400" : {
-            "description" : "The content of the request body is missing or incomplete"
+          "400": {
+            "description": "The content of the request body is missing or incomplete"
           },
-          "401" : {
-            "description" : "Access denied"
+          "401": {
+            "description": "Access denied"
           },
-          "404" : {
-            "description" : "Item details not found."
+          "404": {
+            "description": "Item details not found."
           },
-          "405" : {
-            "description" : "Request type was not POST"
+          "405": {
+            "description": "Request type was not POST"
           },
-          "406" : {
-            "description" : "The content of the request body is invalid"
+          "406": {
+            "description": "The content of the request body is invalid"
           },
-          "409" : {
+          "409": {
             "description": "Data source name already exist"
           },
-          "417" : {
-            "description" : "Failed to copy the data source"
+          "417": {
+            "description": "Failed to copy the data source"
           }
         }
       }
     },
     "/v4.0/items": {
       "get": {
-        "tags": [ "Items" ],
+        "tags": [
+          "Items"
+        ],
         "summary": "Get Items",
         "description": "Retrieves the respective list of items for the item types (Category, Dashboard, Datasource, and Schedule) for the current user.",
         "operationId": "Items_GetItems",
@@ -2608,7 +2773,9 @@
     },
     "/v4.0/items/{id}": {
       "get": {
-        "tags": [ "Items" ],
+        "tags": [
+          "Items"
+        ],
         "summary": "Get Item by Id",
         "description": "Retrieves the respective item detail for the current users’ item types (Category, Dashboard, Datasource, and Schedule).",
         "operationId": "Items_GetItemDetail",
@@ -2646,7 +2813,9 @@
         }
       },
       "delete": {
-        "tags": [ "Items" ],
+        "tags": [
+          "Items"
+        ],
         "summary": "Delete Item",
         "description": "Users who have delete access to the item types Category, Dashboard, Datasource, and Schedule can delete the item by providing the item ID (Category Id, Dashboard Id, Datasource Id, and Schedule Id).",
         "operationId": "Items_DeleteItem",
@@ -2683,51 +2852,57 @@
         }
       }
     },
-    "/v4.0/items/is-name-exists" : {
-      "post" : {
-        "tags" : [ "Items" ],
-        "summary" : "Check Item name existence",
-        "description" : "Current user can check whether the item (category, dashboard, datasource, schedule, slideshow) is already exists or not by providing item name (category name, dashboard name, schedule name, datasource name, slideshow name) and itemtype (Category, Dashboard, Data source, Schedule, Slideshow) in the request body.",
-        "operationId" : "Items_IsItemNameExists",
-        "parameters" : [ {
-          "name" : "apiValidateItemName",
-          "in" : "body",
-          "required" : true,
-          "schema" : {
-            "$ref" : "#/definitions/ApiValidateItemName"
-          },
-          "description" : "Details about the item passed will be checked.",
-          "x-nullable" : true
-        } ],
-        "responses" : {
-          "200" : {
-            "x-nullable" : false,
-            "description" : "Returns an item existence",
-            "schema" : {
-              "type" : "boolean"
+    "/v4.0/items/is-name-exists": {
+      "post": {
+        "tags": [
+          "Items"
+        ],
+        "summary": "Check Item name existence",
+        "description": "Current user can check whether the item (category, dashboard, datasource, schedule, slideshow) is already exists or not by providing item name (category name, dashboard name, schedule name, datasource name, slideshow name) and itemtype (Category, Dashboard, Data source, Schedule, Slideshow) in the request body.",
+        "operationId": "Items_IsItemNameExists",
+        "parameters": [
+          {
+            "name": "apiValidateItemName",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/ApiValidateItemName"
+            },
+            "description": "Details about the item passed will be checked.",
+            "x-nullable": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "x-nullable": false,
+            "description": "Returns an item existence",
+            "schema": {
+              "type": "boolean"
             }
           },
-          "400" : {
-            "description" : "The content of the request body is missing or incomplete"
+          "400": {
+            "description": "The content of the request body is missing or incomplete"
           },
-          "404" : {
-            "description" : "Category details not found."
+          "404": {
+            "description": "Category details not found."
           },
-          "405" : {
-            "description" : "Request type was not POST"
+          "405": {
+            "description": "Request type was not POST"
           },
-          "406" : {
-            "description" : "Invalid item type."
+          "406": {
+            "description": "Invalid item type."
           },
-          "417" : {
-            "description" : "Failed to validate item name."
+          "417": {
+            "description": "Failed to validate item name."
           }
         }
       }
     },
     "/v4.0/slideshows": {
       "post": {
-        "tags": [ "Slideshow" ],
+        "tags": [
+          "Slideshow"
+        ],
         "summary": "Add Slideshow",
         "description": "Users who have create access to the slideshow can add a new slideshow.",
         "operationId": "SlideShow_AddSlideshow",
@@ -2772,12 +2947,13 @@
         }
       },
       "get": {
-        "tags": [ "Slideshow" ],
+        "tags": [
+          "Slideshow"
+        ],
         "summary": "Get Slideshows",
         "description": "Retrieves the list of slideshow details.",
         "operationId": "SlideShow_GetSlideshows",
-        "parameters" : 
-        [ 
+        "parameters": [
           {
             "name": "page",
             "in": "query",
@@ -2852,7 +3028,9 @@
     },
     "/v4.0/slideshows/{slideshowId}": {
       "delete": {
-        "tags": [ "Slideshow" ],
+        "tags": [
+          "Slideshow"
+        ],
         "summary": "Delete Slideshow",
         "description": "Users can delete the specific slideshow.",
         "operationId": "SlideShow_DeleteSlideshow",
@@ -2889,7 +3067,9 @@
         }
       },
       "put": {
-        "tags": [ "Slideshow" ],
+        "tags": [
+          "Slideshow"
+        ],
         "summary": "Update Slideshow",
         "description": "Users who have write access to the slideshow can update the slideshow detail.",
         "operationId": "SlideShow_EditSlideshow",
@@ -2943,7 +3123,9 @@
         }
       },
       "get": {
-        "tags": [ "Slideshow" ],
+        "tags": [
+          "Slideshow"
+        ],
         "summary": "Get Slideshow by Id",
         "description": "Users who have read access to the slideshow can get slideshow detail.",
         "operationId": "SlideShow_GetSlideshowDetail",
@@ -2989,7 +3171,9 @@
     },
     "/v4.0/dashboards/schedules": {
       "post": {
-        "tags": [ "Schedule" ],
+        "tags": [
+          "Schedule"
+        ],
         "summary": "Add Dashboard Schedule",
         "description": "Users who have create access to the schedule can add new dashboard schedule.",
         "operationId": "Dashboards_AddSchedule",
@@ -3037,12 +3221,13 @@
         }
       },
       "get": {
-        "tags": [ "Schedule" ],
+        "tags": [
+          "Schedule"
+        ],
         "summary": "Get Dashboard Schedules",
         "description": "Users who have read access to the schedule can get the list of dashboard schedules.",
         "operationId": "Dashboards_GetScheduleItems",
-        "parameters" : 
-        [ 
+        "parameters": [
           {
             "name": "page",
             "in": "query",
@@ -3120,7 +3305,9 @@
     },
     "/v4.0/dashboards/schedules/{scheduleId}": {
       "put": {
-        "tags": [ "Schedule" ],
+        "tags": [
+          "Schedule"
+        ],
         "summary": "Update Dashboard Schedule",
         "description": "Users who have write access for schedule can update an existing dashboard schedule.",
         "operationId": "Dashboards_UpdateSchedule",
@@ -3183,7 +3370,9 @@
         }
       },
       "get": {
-        "tags": [ "Schedule" ],
+        "tags": [
+          "Schedule"
+        ],
         "summary": "Get Dashboard Schedule by Id",
         "description": "Users who have read access to the schedule can get the particular dashboard schedule.",
         "operationId": "Dashboards_GetSchedule",
@@ -3229,7 +3418,9 @@
     },
     "/v4.0/schedules/{scheduleId}/run": {
       "get": {
-        "tags": [ "Schedule" ],
+        "tags": [
+          "Schedule"
+        ],
         "summary": "Run Schedule",
         "description": "Users who have read access for schedule can run the particular schedule.",
         "operationId": "Scheduler_RunSchedule",
@@ -3275,7 +3466,9 @@
     },
     "/v4.0/schedules/{scheduleId}": {
       "delete": {
-        "tags": [ "Schedule" ],
+        "tags": [
+          "Schedule"
+        ],
         "summary": "Delete Schedule",
         "description": "Users who have delete access to the item type schedule can delete the particular dashboards schedule by providing the Schedule Id.",
         "operationId": "Scheduler_DeleteSchedule",
@@ -3314,7 +3507,9 @@
     },
     "/pinboard": {
       "post": {
-        "tags": [ "Pinboard" ],
+        "tags": [
+          "Pinboard"
+        ],
         "summary": "Add Pinboard",
         "description": "Adds the new pinboard into a particular site.",
         "operationId": "Pinboard_AddEmbedPinBoard",
@@ -3361,7 +3556,9 @@
     },
     "/pinboard/copy": {
       "post": {
-        "tags": [ "Pinboard" ],
+        "tags": [
+          "Pinboard"
+        ],
         "summary": "Copy Pinboard",
         "description": "Copies the pinboard in the particular site.",
         "operationId": "Pinboard_CopyEmbedPinBoard",
@@ -3408,7 +3605,9 @@
     },
     "/pinboard/{name}": {
       "get": {
-        "tags": [ "Pinboard" ],
+        "tags": [
+          "Pinboard"
+        ],
         "summary": "Get Pinboard by Name",
         "description": "Users who have create access for dashboard can retrieve pinboard item.",
         "operationId": "Dashboards_GetEmbedPinBoard",
@@ -3452,7 +3651,9 @@
         }
       },
       "put": {
-        "tags": [ "Pinboard" ],
+        "tags": [
+          "Pinboard"
+        ],
         "summary": "Update Pinboard",
         "description": "Updates an existing pinboard in a particular site.",
         "operationId": "Pinboard_UpdateEmbedPinBoard",
@@ -3503,9 +3704,11 @@
             "description": "Failed to update pinboard details."
           }
         }
-      },     
+      },
       "delete": {
-        "tags": [ "Pinboard" ],
+        "tags": [
+          "Pinboard"
+        ],
         "summary": "Delete Pinboard",
         "description": "Users who have created a pinboard can delete that pinboard.",
         "operationId": "Pinboard_RemoveEmbedPinBoard",
@@ -3538,45 +3741,51 @@
         }
       }
     },
-    "/v4.0/pinboard/is-name-exists" : {
-      "post" : {
-        "tags" : [ "Pinboard" ],
-        "summary" : "Check Pinboard name existence",
-        "description" : "Current user can check whether the pinboard is already exists or not by providing name in the request body.",
-        "operationId" : "Pinboard_IsPinBoardNameExists",
-        "parameters" : [ {
-          "name" : "apiValidatePinboardName",
-          "in" : "body",
-          "required" : true,
-          "schema" : {
-            "$ref" : "#/definitions/ApiValidatePinboardName"
-          },
-          "description" : "Details about the item passed will be checked.",
-          "x-nullable" : true
-        } ],
-        "responses" : {
-          "200" : {
-            "x-nullable" : false,
-            "description" : "Returns an item existence",
-            "schema" : {
-              "type" : "boolean"
+    "/v4.0/pinboard/is-name-exists": {
+      "post": {
+        "tags": [
+          "Pinboard"
+        ],
+        "summary": "Check Pinboard name existence",
+        "description": "Current user can check whether the pinboard is already exists or not by providing name in the request body.",
+        "operationId": "Pinboard_IsPinBoardNameExists",
+        "parameters": [
+          {
+            "name": "apiValidatePinboardName",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/ApiValidatePinboardName"
+            },
+            "description": "Details about the item passed will be checked.",
+            "x-nullable": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "x-nullable": false,
+            "description": "Returns an item existence",
+            "schema": {
+              "type": "boolean"
             }
           },
-          "400" : {
-            "description" : "The content of the request body is missing or incomplete"
+          "400": {
+            "description": "The content of the request body is missing or incomplete"
           },
-          "405" : {
-            "description" : "Request type was not POST"
+          "405": {
+            "description": "Request type was not POST"
           },
-          "500" : {
-            "description" : "Error in the database while executing the query."
+          "500": {
+            "description": "Error in the database while executing the query."
           }
         }
       }
     },
     "/v4.0/publish/item": {
       "post": {
-        "tags": [ "Publish to another site" ],
+        "tags": [
+          "Publish to another site"
+        ],
         "summary": "Publish Dashboard",
         "description": "Publish the dashboard from one site to other site(s).\n\n<B> **NOTE:** </B> This API is not available in Bold BI Cloud Analytics Server.",
         "operationId": "Publish_Dashboard",
@@ -3619,9 +3828,36 @@
         }
       }
     },
+    "/v4.0/publish/items":{
+      "get": {
+        "tags": [
+          "Publish to another site"
+        ],
+        "summary": "Get Published Items",
+        "description": "Get Published Items details.",
+        "operationId": "Publish_GetPublishedItemsDetails",
+        "responses": {
+          "200": {
+            "x-nullable": true,
+            "description": "Published Items details have been retrieved successfully.",
+            "schema": {
+              "$ref": "#/definitions/PublishedItemsResponse"
+            }
+          },
+          "204": {
+            "description": "No content.."
+          },
+          "405": {
+            "description": "Request type is not GET."
+          }
+        }
+      }
+    },
     "/v4.0/attribute/user": {
       "post": {
-        "tags": [ "Attributes" ],
+        "tags": [
+          "Attributes"
+        ],
         "summary": "Add User Attribute",
         "description": "Adds the attribute for a particular user.",
         "operationId": "Attribute_AddUserAttribute",
@@ -3663,7 +3899,9 @@
         }
       },
       "put": {
-        "tags": [ "Attributes" ],
+        "tags": [
+          "Attributes"
+        ],
         "summary": "Update User Attribute",
         "description": "Updates the specific attribute of a particular user.",
         "operationId": "Attribute_UpdateUserAttribute",
@@ -3707,7 +3945,9 @@
     },
     "/v4.0/attribute/user/{id}": {
       "get": {
-        "tags": [ "Attributes" ],
+        "tags": [
+          "Attributes"
+        ],
         "summary": "Get User Attributes",
         "description": "Retrieves the list of attributes of the particular user.",
         "operationId": "Attribute_GetUserCustomAttribute",
@@ -3745,7 +3985,9 @@
         }
       },
       "delete": {
-        "tags": [ "Attributes" ],
+        "tags": [
+          "Attributes"
+        ],
         "summary": "Delete User Attribute",
         "description": "Deletes the attribute of the particular user.",
         "operationId": "Attribute_DeleteUserAttribute",
@@ -3778,7 +4020,9 @@
     },
     "/v4.0/attribute/group": {
       "post": {
-        "tags": [ "Attributes" ],
+        "tags": [
+          "Attributes"
+        ],
         "summary": "Add Group Attribute",
         "description": "Adds the attribute for a particular group.",
         "operationId": "Attribute_AddGroupAttribute",
@@ -3820,7 +4064,9 @@
         }
       },
       "put": {
-        "tags": [ "Attributes" ],
+        "tags": [
+          "Attributes"
+        ],
         "summary": "Update Group Attribute",
         "description": "Updates the specific attribute of a particular group.",
         "operationId": "Attribute_UpdateGroupAttribute",
@@ -3864,7 +4110,9 @@
     },
     "/v4.0/attribute/group/{id}": {
       "get": {
-        "tags": [ "Attributes" ],
+        "tags": [
+          "Attributes"
+        ],
         "summary": "Get Group Attributes",
         "description": "Retrieves the list of attributes of the particular group.",
         "operationId": "Attribute_GetGroupCustomAttribute",
@@ -3902,7 +4150,9 @@
         }
       },
       "delete": {
-        "tags": [ "Attributes" ],
+        "tags": [
+          "Attributes"
+        ],
         "summary": "Delete Group Attribute",
         "description": "Deletes the attribute of the particular group.",
         "operationId": "Attribute_DeleteGroupAttribute",
@@ -3935,7 +4185,9 @@
     },
     "/v4.0/attribute/site": {
       "post": {
-        "tags": [ "Attributes" ],
+        "tags": [
+          "Attributes"
+        ],
         "summary": "Add Site Attribute",
         "description": "Adds the attribute for a particular site.",
         "operationId": "Attribute_SaveSiteAttribute",
@@ -3977,7 +4229,9 @@
         }
       },
       "put": {
-        "tags": [ "Attributes" ],
+        "tags": [
+          "Attributes"
+        ],
         "summary": "Update Site Attribute",
         "description": "Updates the specific attribute of a particular site.",
         "operationId": "Attribute_UpdateSiteAttributes",
@@ -4019,7 +4273,9 @@
         }
       },
       "get": {
-        "tags": [ "Attributes" ],
+        "tags": [
+          "Attributes"
+        ],
         "summary": "Get Site Attributes",
         "description": "Retrieves the list of attributes of the particular site.",
         "operationId": "Attribute_GetSiteAttributes",
@@ -4045,7 +4301,9 @@
     },
     "/v4.0/attribute/site/{id}": {
       "delete": {
-        "tags": [ "Attributes" ],
+        "tags": [
+          "Attributes"
+        ],
         "summary": "Delete Site Attribute",
         "description": "Deletes the attribute of the particular site.",
         "operationId": "Attribute_DeleteSiteAttributes",
@@ -4078,7 +4336,9 @@
     },
     "/v4.0/publish/external-sites/add": {
       "post": {
-        "tags": [ "Publish to another site" ],
+        "tags": [
+          "Publish to another site"
+        ],
         "summary": "Add External Site",
         "description": "Adds the external site details.\n\n<B> **NOTE:** </B> This API is not available in Bold BI Cloud Analytics Server.",
         "operationId": "Add_External_Sites",
@@ -4120,7 +4380,9 @@
     },
     "/v4.0/settings/site": {
       "get": {
-        "tags": [ "Settings" ],
+        "tags": [
+          "Settings"
+        ],
         "summary": "Get Site Settings",
         "description": "Retrieves the list of site setting details of the particular site if the user has admin rights for the site settings.",
         "operationId": "Administration_GetSiteSettings",
@@ -4158,7 +4420,9 @@
         }
       },
       "put": {
-        "tags": [ "Settings" ],
+        "tags": [
+          "Settings"
+        ],
         "summary": "Update Site Settings",
         "description": "Users who have admin rights to the site can update the site settings.",
         "operationId": "Administration_UpdateSiteSettings",
@@ -4205,7 +4469,9 @@
     },
     "/v4.0/settings/dashboard-settings": {
       "get": {
-        "tags": [ "Settings" ],
+        "tags": [
+          "Settings"
+        ],
         "summary": "Get Dashboard Settings",
         "description": "Retrieves the dashboard setting details of the particular site if the user has admin rights for the dashboard settings.",
         "operationId": "Administration_GetDashboardSettings",
@@ -4229,7 +4495,9 @@
         }
       },
       "put": {
-        "tags": [ "Settings" ],
+        "tags": [
+          "Settings"
+        ],
         "summary": "Update Dashboard Settings",
         "description": "Users who have admin rights permission to dashboard settings can update the dashboard settings.",
         "operationId": "Administration_UpdateDashboardSettings",
@@ -4273,7 +4541,9 @@
     },
     "/v4.0/settings/email": {
       "put": {
-        "tags": [ "Settings" ],
+        "tags": [
+          "Settings"
+        ],
         "summary": "Update Email Settings",
         "description": "Users who have admin rights permission to email settings can update the email settings.\n\n<B> **NOTE:** </B> This API is not available in Bold BI Cloud Analytics Server.",
         "operationId": "Administration_UpdateEmailSettings",
@@ -4317,7 +4587,9 @@
     },
     "/v4.0/settings/azure-active-directory": {
       "put": {
-        "tags": [ "Settings" ],
+        "tags": [
+          "Settings"
+        ],
         "summary": "Update Azure AD Settings",
         "description": "Users who have admin rights permission to user directories can update the Azure AD settings.",
         "operationId": "Administration_UpdateAzureADSettings",
@@ -4361,7 +4633,9 @@
     },
     "/v4.0/settings/schedule-synchronization/azure-active-directory": {
       "put": {
-        "tags": [ "Settings" ],
+        "tags": [
+          "Settings"
+        ],
         "summary": "Update Azure AD Schedule Synchronization Settings",
         "description": "Users who have admin rights permission to user directories can update the Azure AD schedule synchronization settings.",
         "operationId": "Administration_UpdateAzureADScheduleSettings",
@@ -4408,7 +4682,9 @@
     },
     "/v4.0/settings/accounts": {
       "get": {
-        "tags": [ "Settings" ],
+        "tags": [
+          "Settings"
+        ],
         "summary": "Get Account Settings",
         "description": "Retrieves the account setting details of the particular site if the user has admin rights for the account settings.\n\n<B> **NOTE:** </B> This API is not available in Bold BI Cloud Analytics Server.",
         "operationId": "Administration_GetAccountSettings",
@@ -4432,7 +4708,9 @@
         }
       },
       "put": {
-        "tags": [ "Settings" ],
+        "tags": [
+          "Settings"
+        ],
         "summary": "Update Account Settings",
         "description": "Users who have admin rights permission to account settings can update the account settings.",
         "operationId": "Administration_UpdateAccountSettings",
@@ -4476,7 +4754,9 @@
     },
     "/v4.0/settings/security/cors": {
       "put": {
-        "tags": [ "Settings" ],
+        "tags": [
+          "Settings"
+        ],
         "summary": "Update Cors Settings",
         "description": "Users who have admin rights permission to security settings can update the cors settings.",
         "operationId": "Administration_UpdateCORSSettings",
@@ -4540,28 +4820,31 @@
         }
       }
     },
-    "ApiResponse" : {
-      "type" : "object",
-      "required" : [ "ApiStatus", "Status" ],
-      "properties" : {
-        "ApiStatus" : {
-          "type" : "boolean",
-          "description" : "Returns the status of the API."
+    "ApiResponse": {
+      "type": "object",
+      "required": [
+        "ApiStatus",
+        "Status"
+      ],
+      "properties": {
+        "ApiStatus": {
+          "type": "boolean",
+          "description": "Returns the status of the API."
         },
-        "Data" : {
-          "description" : "Returns data from the API."
+        "Data": {
+          "description": "Returns data from the API."
         },
-        "Status" : {
-          "type" : "boolean",
-          "description" : "Returns status of the API request."
+        "Status": {
+          "type": "boolean",
+          "description": "Returns status of the API request."
         },
-        "StatusMessage" : {
-          "type" : "string",
-          "description" : "Returns the status message from the API."
+        "StatusMessage": {
+          "type": "string",
+          "description": "Returns the status message from the API."
         },
-        "Message" : {
-          "type" : "string",
-          "description" : "Returns the message from the API."
+        "Message": {
+          "type": "string",
+          "description": "Returns the message from the API."
         }
       }
     },
@@ -4606,184 +4889,214 @@
         }
       }
     },
-    "ApiItemViewsAdd" : {
-      "type" : "object",
-      "description" : "Add dashboard view request details.",
-      "required" : [ "ViewName", "ItemId", "QueryString", "IsPublic" ],
-      "properties" : {
-        "ViewName" : {
-          "type" : "string",
-          "description" : "Specify name of the view."
+    "ApiItemViewsAdd": {
+      "type": "object",
+      "description": "Add dashboard view request details.",
+      "required": [
+        "ViewName",
+        "ItemId",
+        "QueryString",
+        "IsPublic"
+      ],
+      "properties": {
+        "ViewName": {
+          "type": "string",
+          "description": "Specify name of the view."
         },
-        "ItemId" : {
-          "type" : "string",
-          "description" : "Specify ID of the dashboard.",
-          "format" : "guid"
+        "ItemId": {
+          "type": "string",
+          "description": "Specify ID of the dashboard.",
+          "format": "guid"
         },
-        "ChildItemId" : {
-          "type" : "string",
-          "description" : "Specify ID of the child dashboard.",
-          "format" : "guid"
+        "ChildItemId": {
+          "type": "string",
+          "description": "Specify ID of the child dashboard.",
+          "format": "guid"
         },
-        "QueryString" : {
-          "type" : "string",
-          "description" : "Specify the filter query.",
+        "QueryString": {
+          "type": "string",
+          "description": "Specify the filter query.",
           "example": "Year(OrderDate)=1996"
         },
-        "IsPublic" : {
-          "type" : "boolean",
-          "description" : "Specify <i>true</i> to set the view as public"
+        "IsPublic": {
+          "type": "boolean",
+          "description": "Specify <i>true</i> to set the view as public"
         }
       }
     },
-    "ApiItemViewsUpdate" : {
-      "type" : "object",
-      "description" : "Update dashboard view request details.",
-      "required" : [ "ViewId", "DashboardId" ],
-      "properties" : {
-        "Name" : {
-          "type" : "string",
-          "description" : "Specify name of the view."
+    "ApiItemViewsUpdate": {
+      "type": "object",
+      "description": "Update dashboard view request details.",
+      "required": [
+        "ViewId",
+        "DashboardId"
+      ],
+      "properties": {
+        "Name": {
+          "type": "string",
+          "description": "Specify name of the view."
         },
-        "ViewId" : {
-          "type" : "string",
-          "description" : "Specify ID of the dashboard view.",
-          "format" : "guid"
+        "ViewId": {
+          "type": "string",
+          "description": "Specify ID of the dashboard view.",
+          "format": "guid"
         },
-        "DashboardId" : {
-          "type" : "string",
-          "description" : "Specify ID of the dashboard.",
-          "format" : "guid"
+        "DashboardId": {
+          "type": "string",
+          "description": "Specify ID of the dashboard.",
+          "format": "guid"
         },
-        "QueryString" : {
-          "type" : "string",
-          "description" : "Specify the filter query.",
+        "QueryString": {
+          "type": "string",
+          "description": "Specify the filter query.",
           "example": "Year(OrderDate)=1996"
         }
       }
     },
-    "ApiItemViewResponse" : {
-      "type" : "object",
-      "description" : "Dashboard view response details.",
-      "required" : [ "CanDelete", "CanEdit", "CanShare", "IsPublic", "ItemId", "UserId", "ViewId" ],
-      "properties" : {
-        "CanDelete" : {
-          "type" : "boolean",
-          "description" : "Specifies the delete permission of the view."
+    "ApiItemViewResponse": {
+      "type": "object",
+      "description": "Dashboard view response details.",
+      "required": [
+        "CanDelete",
+        "CanEdit",
+        "CanShare",
+        "IsPublic",
+        "ItemId",
+        "UserId",
+        "ViewId"
+      ],
+      "properties": {
+        "CanDelete": {
+          "type": "boolean",
+          "description": "Specifies the delete permission of the view."
         },
-        "CanEdit" : {
-          "type" : "boolean",
-          "description" : "Specifies the write permission of the view."
+        "CanEdit": {
+          "type": "boolean",
+          "description": "Specifies the write permission of the view."
         },
-        "CanShare" : {
-          "type" : "boolean",
-          "description" : "Specifies the share permission of the view."
+        "CanShare": {
+          "type": "boolean",
+          "description": "Specifies the share permission of the view."
         },
-        "IsPublic" : {
-          "type" : "boolean",
-          "description" : "Returns true, if the view is public."
+        "IsPublic": {
+          "type": "boolean",
+          "description": "Returns true, if the view is public."
         },
-        "ItemId" : {
-          "type" : "string",
-          "description" : "Specifies the ID of the dashboard.",
-          "format" : "guid"
+        "ItemId": {
+          "type": "string",
+          "description": "Specifies the ID of the dashboard.",
+          "format": "guid"
         },
-        "QueryString" : {
-          "type" : "string",
-          "description" : "Specifies the filter query string."
+        "QueryString": {
+          "type": "string",
+          "description": "Specifies the filter query string."
         },
-        "UserId" : {
-          "type" : "integer",
-          "description" : "Specifies the ID of the user.",
-          "format" : "int32"
+        "UserId": {
+          "type": "integer",
+          "description": "Specifies the ID of the user.",
+          "format": "int32"
         },
-        "ViewId" : {
-          "type" : "string",
-          "description" : "Specifies the ID of the view.",
-          "format" : "guid"
+        "ViewId": {
+          "type": "string",
+          "description": "Specifies the ID of the view.",
+          "format": "guid"
         },
-        "ViewName" : {
-          "type" : "string",
-          "description" : "Specifies the name of the view."
+        "ViewName": {
+          "type": "string",
+          "description": "Specifies the name of the view."
         }
       }
     },
-    "ApiCopyItemResponse" : {
-      "type" : "object",
-      "description" : "Response details of the copied item.",
-      "required" : [ "ApiStatus", "Status", "PublishedItemId", "Version" ],
-      "properties" : {
-        "ApiStatus" : {
-          "type" : "boolean",
-          "description" : "Returns the status of the API."
+    "ApiCopyItemResponse": {
+      "type": "object",
+      "description": "Response details of the copied item.",
+      "required": [
+        "ApiStatus",
+        "Status",
+        "PublishedItemId",
+        "Version"
+      ],
+      "properties": {
+        "ApiStatus": {
+          "type": "boolean",
+          "description": "Returns the status of the API."
         },
-        "Status" : {
-          "type" : "boolean",
-          "description" : "Returns status of the API request."
+        "Status": {
+          "type": "boolean",
+          "description": "Returns status of the API request."
         },
-        "PublishedItemId" : {
-          "type" : "string",
-          "description" : "Returns the published item id",
-          "format" : "guid"
+        "PublishedItemId": {
+          "type": "string",
+          "description": "Returns the published item id",
+          "format": "guid"
         },
-        "Version" : {
-          "type" : "integer",
-          "description" : "Returns the version number of the item",
-          "format" : "int32"
+        "Version": {
+          "type": "integer",
+          "description": "Returns the version number of the item",
+          "format": "int32"
         },
-        "StatusMessage" : {
-          "type" : "string",
-          "description" : "Returns the status message from the API."
+        "StatusMessage": {
+          "type": "string",
+          "description": "Returns the status message from the API."
         }
       }
     },
-    "ApiCopyDashboardRequestV4" : {
-      "type" : "object",
-      "description" : "Dashboard details.",
-      "required" : [ "Name", "CategoryId", "IsPublic", "IsCopyDatasource" ],
-      "properties" : {
-        "Name" : {
-          "type" : "string",
-          "description" : "Dashboard name."
+    "ApiCopyDashboardRequestV4": {
+      "type": "object",
+      "description": "Dashboard details.",
+      "required": [
+        "Name",
+        "CategoryId",
+        "IsPublic",
+        "IsCopyDatasource"
+      ],
+      "properties": {
+        "Name": {
+          "type": "string",
+          "description": "Dashboard name."
         },
-        "Description" : {
-          "type" : "string",
-          "description" : "Dashboard description."
+        "Description": {
+          "type": "string",
+          "description": "Dashboard description."
         },
-        "CategoryId" : {
-          "type" : "string",
-          "description" : "Category ID.",
-          "format" : "guid"
+        "CategoryId": {
+          "type": "string",
+          "description": "Category ID.",
+          "format": "guid"
         },
-        "IsPublic" : {
-          "type" : "boolean",
-          "description" : "Specify <i>true</i> to set the item as a public."
+        "IsPublic": {
+          "type": "boolean",
+          "description": "Specify <i>true</i> to set the item as a public."
         },
-        "IsCopyDatasource" : {
-          "type" : "boolean",
-          "description" : "Copy the data source of dashboard based on this value "
+        "IsCopyDatasource": {
+          "type": "boolean",
+          "description": "Copy the data source of dashboard based on this value "
         }
       }
     },
-    "ApiCopyDataSourceRequestV4" : {
-      "type" : "object",
-      "description" : "Data Source details.",
-      "required" : [ "Name" ],
-      "properties" : {
-        "Name" : {
-          "type" : "string",
-          "description" : "Data source name."
+    "ApiCopyDataSourceRequestV4": {
+      "type": "object",
+      "description": "Data Source details.",
+      "required": [
+        "Name"
+      ],
+      "properties": {
+        "Name": {
+          "type": "string",
+          "description": "Data source name."
         },
-        "Description" : {
-          "type" : "string",
-          "description" : "Data source description."
+        "Description": {
+          "type": "string",
+          "description": "Data source description."
         }
       }
     },
     "ApiDownloadDashboard": {
       "type": "object",
       "description": "Details about the dashboard to download.",
-      "required": [ "DashboardId" ],
+      "required": [
+        "DashboardId"
+      ],
       "properties": {
         "DashboardId": {
           "type": "array",
@@ -4822,10 +5135,13 @@
         }
       }
     },
-    "ApiDownloadFailedResponse":{
-      "required": [ "DashboardId", "ProgressJson" ],
+    "ApiDownloadFailedResponse": {
+      "required": [
+        "DashboardId",
+        "ProgressJson"
+      ],
       "type": "object",
-      "properties":{
+      "properties": {
         "DashboardId": {
           "type": "string",
           "description": "Dashboard ID.",
@@ -4843,7 +5159,11 @@
     },
     "ApiDownloadDashboardResponse": {
       "type": "object",
-      "required" : [ "ApiStatus", "Data", "Status" ],
+      "required": [
+        "ApiStatus",
+        "Data",
+        "Status"
+      ],
       "properties": {
         "ApiStatus": {
           "type": "boolean",
@@ -4871,7 +5191,7 @@
               "items": {
                 "$ref": "#/definitions/ApiDownloadFailedResponse"
               }
-            } 
+            }
           },
           "description": "Download job process response."
         },
@@ -4882,7 +5202,10 @@
       }
     },
     "ApiGetMetaInfo": {
-      "required": [ "FileContent", "FileExtension" ],
+      "required": [
+        "FileContent",
+        "FileExtension"
+      ],
       "type": "object",
       "properties": {
         "FileContent": {
@@ -4928,36 +5251,40 @@
             "Name": {
               "type": "string",
               "description": "Data source name."
-              },
-              "Description": {
-                "type": "string",
-                "description": "Data source description."
-              },
-              "Type": {
-                "type": "string",
-                "description": "Data source type."
-              },
-              "Id": {
-                "type": "string",
-                "description": "Data source ID.",
-                "format": "guid"
-              },
-              "Connector": {
-                "type": "string",
-                "description": "Connector information"
-              },
-              "Connection": {
-                "type": "object",
-                "description": "Connection object for the data source."
-              }
+            },
+            "Description": {
+              "type": "string",
+              "description": "Data source description."
+            },
+            "Type": {
+              "type": "string",
+              "description": "Data source type."
+            },
+            "Id": {
+              "type": "string",
+              "description": "Data source ID.",
+              "format": "guid"
+            },
+            "Connector": {
+              "type": "string",
+              "description": "Connector information"
+            },
+            "Connection": {
+              "type": "object",
+              "description": "Connection object for the data source."
+            }
           },
-          "description": "Details about the data sources."  
+          "description": "Details about the data sources."
         }
       }
     },
     "ApiGetMetaInfoResponse": {
       "type": "object",
-      "required" : [ "ApiStatus", "Data", "Status" ],
+      "required": [
+        "ApiStatus",
+        "Data",
+        "Status"
+      ],
       "properties": {
         "ApiStatus": {
           "type": "boolean",
@@ -4977,13 +5304,16 @@
         "StatusMessage": {
           "type": "string",
           "description": "Returns the status message from the API."
-        }    
+        }
       }
     },
     "ApiUploadDashboard": {
       "type": "object",
       "description": "Details about the dashboard for upload.",
-      "required": [ "ItemContent", "ItemExtension" ],
+      "required": [
+        "ItemContent",
+        "ItemExtension"
+      ],
       "properties": {
         "ItemContent": {
           "pattern": "^(?:[A-Za-z0-9+/]{4})*(?:[A-Za-z0-9+/]{2}==|[A-Za-z0-9+/]{3}=)?$",
@@ -5005,7 +5335,7 @@
           "description": "Meta information of the item content.",
           "items": {
             "$ref": "#/definitions/ApiMetaInfo"
-          }      
+          }
         }
       }
     },
@@ -5033,7 +5363,11 @@
     },
     "ApiUploadStatusResponse": {
       "type": "object",
-      "required" : [ "ApiStatus", "Data", "Status" ],
+      "required": [
+        "ApiStatus",
+        "Data",
+        "Status"
+      ],
       "description": "Upload dashboard job status details.",
       "properties": {
         "ApiStatus": {
@@ -5050,7 +5384,7 @@
         "Status": {
           "type": "boolean",
           "description": "Returns status of the API request."
-        }      
+        }
       }
     },
     "WebAPItemResponse": {
@@ -5058,7 +5392,7 @@
         "ApiStatus",
         "Data",
         "Status",
-        "StatusMessage"  
+        "StatusMessage"
       ],
       "type": "object",
       "properties": {
@@ -5104,7 +5438,7 @@
           "type": "string",
           "description": "Data source type allowed values are <code>Web Live</code>, <code>MongoDB</code>, <code>amazonathena</code>, <code>amazonauroramysql</code>, <code>amazonaurorapostgresql</code>, <code>amazonrdsmysql</code>, <code>amazonrdsmariadb</code>, <code>amazonrdsamazonauroramysql</code>, <code>amazonrdsamazonaurorapostgresql</code>, <code>amazonrdspostgresql</code>, <code>amazonrdssqlserver</code>, <code>amazonrdsoracle</code>, <code>awsopensearch</code>, <code>redshift</code>, <code>azuresynapseanalytics</code>, <code>cdata</code>, <code>clickhouse</code>, <code>elasticsearch</code>, <code>googlecloudmysql</code>, <code>googlecloudpostgresql</code>, <code>influxdb</code>, <code>mariadb</code>, <code>ssas</code>, <code>mysql</code>, <code>oracle</code>, <code>postgresql</code>, <code>presto</code>, <code>singlestore</code>, <code>sqlserver</code>, <code>snowflake</code>, <code>sparksql</code>, <code>odbc</code>."
         },
-        "Description":{
+        "Description": {
           "type": "string",
           "description": "Description of data source."
         },
@@ -5143,7 +5477,9 @@
                 "RecurrenceDays": {
                   "type": "array",
                   "description": "Enter the day from the list.<br>(Values allowed are <code>Monday, Tuesday, Wednesday, Thursday, Friday</code>).<br> For Example: Monday.",
-                  "items":{"type":"string"}
+                  "items": {
+                    "type": "string"
+                  }
                 },
                 "IsEnabled": {
                   "type": "boolean",
@@ -5153,7 +5489,7 @@
                   "type": "boolean",
                   "description": "By default it is true."
                 }
-             }
+              }
             }
           },
           "description": "Refer to the JSON syntax below to configure Refresh settings.\n\n Note: Refresh settings is only applicable for the web extract type data source. It will not work for live connection mode data sources."
@@ -5176,18 +5512,16 @@
           "type": "string",
           "description": "Data source type allowed values are <code>amazonathena</code>, <code>amazonauroramysql</code>, <code>amazonaurorapostgresql</code>, <code>amazonrdsmysql</code>, <code>amazonrdsmariadb</code>, <code>amazonrdsamazonauroramysql</code>, <code>amazonrdsamazonaurorapostgresql</code>, <code>amazonrdspostgresql</code>, <code>amazonrdssqlserver</code>, <code>amazonrdsoracle</code>, <code>awsopensearch</code>, <code>redshift</code>, <code>azuresynapseanalytics</code>, <code>cdata</code>, <code>clickhouse</code>, <code>elasticsearch</code>, <code>googlecloudmysql</code>, <code>googlecloudpostgresql</code>, <code>influxdb</code>, <code>mariadb</code>, <code>ssas</code>, <code>mysql</code>, <code>oracle</code>, <code>postgresql</code>, <code>presto</code>, <code>singlestore</code>, <code>sqlserver</code>, <code>snowflake</code>, <code>sparksql</code>, <code>odbc</code>."
         },
-        "DataSourceId":{
+        "DataSourceId": {
           "type": "string",
           "description": "Data source ID."
         },
-        "Description":{
+        "Description": {
           "type": "string",
           "description": "Description of data source."
         },
         "Connection": {
-
           "type": "object",
-
           "description": "You need to send the connection object for each data source based on its type. Please refer its relative documentation for the connection details as follows [amazonathena](/working-with-data-source/data-connectors/amazon-athena/#connecting-bold-bi-to-amazon-athena-data-source-via-rest-api), [amazonauroramysql](/working-with-data-source/data-connectors/amazon-aurora/#connecting-bold-bi-to-amazon-aurora-data-source-via-rest-api), [amazonaurorapostgresql](/working-with-data-source/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsmysql](/working-with-data-source/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsmariadb](/working-with-data-source/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsamazonauroramysql](/working-with-data-source/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsamazonaurorapostgresql](/working-with-data-source/data-connectors/amazon-aurora/#connecting-bold-bi-to-amazon-aurora-data-source-via-rest-api), [amazonrdspostgresql](/working-with-data-source/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdssqlserver](/working-with-data-source/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsoracle](/working-with-data-source/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [awsopensearch](/working-with-data-source/data-connectors/aws-opensearch/#connecting-bold-bi-to-aws-open-search-data-source-via-rest-api), [redshift](/working-with-data-source/data-connectors/amazon-redshift/#connecting-bold-bi-to-amazon-redshift-data-source-via-rest-api), [azuresynapseanalytics](/working-with-data-source/data-connectors/azure-synapse-analytics/#connecting-bold-bi-to-azure-synapse-analytics-data-source-via-rest-api), [cdata](/working-with-data-source/data-connectors/cdata/#connecting-bold-bi-to-cdata-data-source-via-rest-api), [clickhouse](/working-with-data-source/data-connectors/clickhouse/#connecting-bold-bi-to-clickhouse-data-source-via-rest-api), [elasticsearch](/working-with-data-source/data-connectors/elastic-search/#connecting-bold-bi-to-elastic-search-data-source-via-rest-api), [googlecloudmysql](/working-with-data-source/data-connectors/google-cloud-sql/#connecting-bold-bi-to-google-cloud-sql-data-source-via-rest-api), [googlecloudpostgresql](/working-with-data-source/data-connectors/google-cloud-sql/#connecting-bold-bi-to-google-cloud-sql-data-source-via-rest-api), [influxdb](/working-with-data-source/data-connectors/influxdb/#connecting-bold-bi-to-influxdb-data-source-via-rest-api), [mariadb](/working-with-data-source/data-connectors/mariadb/#connecting-bold-bi-to-mariadb-data-source-via-rest-api), [ssas](/working-with-data-source/data-connectors/ssas/#connecting-bold-bi-to-microsoft-sql-server-analysis-servicesssas-via-rest-api), [mysql](/working-with-data-source/data-connectors/mysql/#connecting-bold-bi-to-mysql-data-source-via-rest-api), [oracle](/working-with-data-source/data-connectors/oracle/#connecting-bold-bi-to-oracle-data-source-via-rest-api), [postgresql](/working-with-data-source/data-connectors/postgresql/#connecting-bold-bi-to-postgresql-data-source-via-rest-api), [presto](/working-with-data-source/data-connectors/presto/#connecting-bold-bi-to-presto-data-source-via-rest-api), [singlestore](/working-with-data-source/data-connectors/single-store/#connecting-bold-bi-to-singlestore-data-source-via-rest-api), [sqlserver](/working-with-data-source/data-connectors/sql-data-source/#connecting-bold-bi-to-microsoft-sql-server-data-source-via-rest-api), [snowflake](/working-with-data-source/data-connectors/snowflake/#connecting-bold-bi-to-snowflake-data-source-via-rest-api), [sparksql](/working-with-data-source/data-connectors/sparksql/#connecting-bold-bi-to-sparksql-data-source-via-rest-api), [odbc](/working-with-data-source/data-connectors/odbc/#connecting-bold-bi-to-odbc-data-source-via-rest-api)."
         }
       },
@@ -5761,8 +6095,14 @@
     },
     "UserStatus": {
       "type": "string",
-      "enum": [ "Active", "InActive" ],
-      "x-enumNames": [ "Active", "InActive" ]
+      "enum": [
+        "Active",
+        "InActive"
+      ],
+      "x-enumNames": [
+        "Active",
+        "InActive"
+      ]
     },
     "DirectoryType": {
       "type": "string",
@@ -5985,47 +6325,47 @@
           "type": "string",
           "description": "Specifies the UTC start date-time of schedule.<br />The format should be ISO 8601 i.e. `yyyy-MM-ddTHH:mm:ssZ`."
         },
-      "ScheduleType": {
-        "type": "string",
-        "description": "Specifies the schedule type.<br />Values allowed are <code>Daily, Weekly, Monthly, Yearly</code>\n\n**Note:** If you choose the schedule type as `Monthly`, provide a value to the `MonthlySchedule` property, and leave the (DailySchedule, WeeklySchedule and YearlySchedule) properties empty."
-      },
-      "DailySchedule": {
-        "type": "object",
-        "description": "Runs the schedules on a daily basis. ",
-        "allOf": [
-          {
-            "$ref": "#/definitions/ApiDailySchedule"
-          }
-        ]
-      },
-      "WeeklySchedule": {
-        "type": "object",
-        "description": "Runs the schedule on a weekly basis.",
-        "allOf": [
-          {
-            "$ref": "#/definitions/ApiWeeklySchedule"
-          }
-        ]
-      },
-      "MonthlySchedule": {
-        "type": "object",
-        "description": "Runs the schedule on a monthly basis.",
-        "allOf": [
-          {
-            "$ref": "#/definitions/ApiMonthlySchedule"
-          }
-        ]
-      },
-      "YearlySchedule": {
-        "type": "object",
-        "description": "Runs the schedules on a yearly basis.",
-        "allOf": [
-          {
-            "$ref": "#/definitions/ApiYearlySchedule"
-          }
-        ]
+        "ScheduleType": {
+          "type": "string",
+          "description": "Specifies the schedule type.<br />Values allowed are <code>Daily, Weekly, Monthly, Yearly</code>\n\n**Note:** If you choose the schedule type as `Monthly`, provide a value to the `MonthlySchedule` property, and leave the (DailySchedule, WeeklySchedule and YearlySchedule) properties empty."
+        },
+        "DailySchedule": {
+          "type": "object",
+          "description": "Runs the schedules on a daily basis. ",
+          "allOf": [
+            {
+              "$ref": "#/definitions/ApiDailySchedule"
+            }
+          ]
+        },
+        "WeeklySchedule": {
+          "type": "object",
+          "description": "Runs the schedule on a weekly basis.",
+          "allOf": [
+            {
+              "$ref": "#/definitions/ApiWeeklySchedule"
+            }
+          ]
+        },
+        "MonthlySchedule": {
+          "type": "object",
+          "description": "Runs the schedule on a monthly basis.",
+          "allOf": [
+            {
+              "$ref": "#/definitions/ApiMonthlySchedule"
+            }
+          ]
+        },
+        "YearlySchedule": {
+          "type": "object",
+          "description": "Runs the schedules on a yearly basis.",
+          "allOf": [
+            {
+              "$ref": "#/definitions/ApiYearlySchedule"
+            }
+          ]
+        }
       }
-     }
     },
     "ApiUpdateAzureAdScheduleSynchronizationSettingsResponse": {
       "type": "object",
@@ -6074,7 +6414,7 @@
         }
       }
     },
-    "ApiUpdateCorsSettings":{
+    "ApiUpdateCorsSettings": {
       "type": "object",
       "properties": {
         "EnableCors": {
@@ -6098,21 +6438,21 @@
         "AllowedHeaders": {
           "type": "string",
           "description": "Specified HTTP header values will be used when making an actual request.\n\n**Note:** Multiple headers are allowed using comma separator .",
-          "example":"Content-Type,Content-Length"
+          "example": "Content-Type,Content-Length"
         },
         "AllowedMethods": {
           "type": "string",
           "description": "Specified methods will be able to access the resource.<br />Values allowed are <code>GET, HEAD, POST, PUT, DELETE.</code>\n\n**Note:** Multiple headers are allowed using comma separator .",
-          "example":"POST,PUT"
+          "example": "POST,PUT"
         },
         "ExposeHeaders": {
           "type": "string",
           "description": "Specify header values are exposed to browser based scripts.\n\n**Note:** Multiple headers are allowed using comma separator.",
-          "example":"Content-Language, Content-Length, Content-Type"
+          "example": "Content-Language, Content-Length, Content-Type"
         },
         "PreflightMaxAge": {
           "type": "integer",
-          "format":"int32",
+          "format": "int32",
           "description": "Specifies the maximum time a preflight request's results can be cached."
         }
       }
@@ -6493,24 +6833,6 @@
         }
       }
     },
-    "ApiGroupAdd": {
-      "type": "object",
-      "description": "Group detail",
-      "additionalProperties": false,
-      "required": [
-        "Name"
-      ],
-      "properties": {
-        "Name": {
-          "type": "string",
-          "description": "Name of the group."
-        },
-        "Description": {
-          "type": "string",
-          "description": "Description of the group."
-        }
-      }
-    },
     "ApiGroupListV3": {
       "type": "object",
       "additionalProperties": false,
@@ -6547,101 +6869,6 @@
           "type": "integer",
           "description": "User(s) count",
           "format": "int32"
-        }
-      }
-    },
-    "ApiGroupEdit": {
-      "type": "object",
-      "description": "Group detail",
-      "additionalProperties": false,
-      "properties": {
-        "Name": {
-          "type": "string",
-          "description": "Name of the group."
-        },
-        "Description": {
-          "type": "string",
-          "description": "Description of the group."
-        }
-      }
-    },
-    "ApiAzureADGroup": {
-      "type": "object",
-      "description": "Group name",
-      "additionalProperties": false,
-      "required": [
-        "GroupName"
-      ],
-      "properties": {
-        "GroupName": {
-          "type": "array",
-          "description": "List of group names",
-          "items": {
-            "type": "string"
-          }
-        }
-      }
-    },
-    "ApiAzureGroupImportResponse": {
-      "type": "object",
-      "description": "List of groups",
-      "additionalProperties": false,
-      "properties": {
-        "ApiStatus":{
-          "type": "boolean",
-          "description": "Returns the status of the API."
-        },
-        "ImportStatus": {
-          "type": "array",
-          "description":"Returns Azure AD group import status.",
-          "items": {
-            "$ref": "#/definitions/ApiAzureGroupImportStatus"
-          }
-        }
-      }
-    },
-    "ApiAzureGroupImportStatus":
-    {
-      "type": "object",
-      "description": "Group Import Status",
-      "additionalProperties": false,
-      "properties": {
-        "FailedUsers": {
-          "type": "integer",
-          "format":"int32",
-          "description": "Failed users count ."
-        },
-        "GroupName": {
-          "type": "string",
-          "description": "Name of the Azure AD group."
-        },
-        "StatusMessage": {
-          "type": "string",
-          "description": "Status message of the imported group."
-        },
-        "ImportedUsers": {
-          "type": "integer",
-          "format":"int32",
-          "description": "Imported users count ."
-        },
-        "Status": {
-          "type": "boolean",
-          "description": "Status of the group import."
-        }
-      }
-    },
-    "ApiGroupUsers": {
-      "type": "object",
-      "description": "User(s) added/removed from the group.",
-      "additionalProperties": false,
-      "properties": {
-        "Id": {
-          "type": "array",
-          "description": "List of user IDs",
-          "items": {
-            "type": "integer",
-            "format": "int32"
-          }
         }
       }
     },
@@ -7608,6 +7835,25 @@
         }
       }
     },
+    "ApiUpdateDashboardPublicV4": {
+      "type" : "object",
+      "properties": {
+          "DashboardId": {
+              "type" : "string",
+              "description" : "Specifies the dashboard ID.",
+              "format": "guid"
+          },
+          "Public": {
+              "type" : "boolean",
+              "description" : "Specify true to update the dashboard as public."
+          },
+          "Unlisted": {
+              "type": "boolean",
+              "description" : "Specify true to update the dashboard as unlisted."
+          }
+      },
+      "description" : "Details of the public or private dashboards item."
+    },
     "ApiFavoriteitems": {
       "type": "object",
       "description": "Details of favorite items.",
@@ -7730,7 +7976,7 @@
         "FilterParameter": {
           "type": "string",
           "description": "Specify the filter parameter. \n\n**Note:**  To know more about supported operators and funtions in filter parameter, refer to [this](/embedded-bi/working-with-dashboards/preview-dashboard/urlparameters/#supported-operators/).",
-          "example":"Department= Cardiology & Year(Date)=2021"
+          "example": "Department= Cardiology & Year(Date)=2021"
         }
       }
     },
@@ -8495,8 +8741,219 @@
           "$ref": "#/definitions/ScheduleExportLocationResponse"
         }
       }
+    },
+    "ApiGroupUsers": {
+      "type": "object",
+      "description": "User(s) added/removed from the group.",
+      "additionalProperties": false,
+      "properties": {
+        "Id": {
+          "type": "array",
+          "description": "List of user IDs",
+          "items": {
+            "type": "integer",
+            "format": "int32"
+          }
+        }
+      }
+    },
+    "ApiAzureADGroup": {
+      "type": "object",
+      "description": "Group name",
+      "additionalProperties": false,
+      "required": [
+        "GroupName"
+      ],
+      "properties": {
+        "GroupName": {
+          "type": "array",
+          "description": "List of group names",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "ApiAzureGroupImportResponse": {
+      "type": "object",
+      "description": "List of groups",
+      "additionalProperties": false,
+      "properties": {
+        "ApiStatus": {
+          "type": "boolean",
+          "description": "Returns the status of the API."
+        },
+        "ImportStatus": {
+          "type": "array",
+          "description": "Returns Azure AD group import status.",
+          "items": {
+            "$ref": "#/definitions/ApiAzureGroupImportStatus"
+          }
+        }
+      }
+    },
+    "ApiAzureGroupImportStatus": {
+      "type": "object",
+      "description": "Group Import Status",
+      "additionalProperties": false,
+      "properties": {
+        "FailedUsers": {
+          "type": "integer",
+          "format": "int32",
+          "description": "Failed users count ."
+        },
+        "GroupName": {
+          "type": "string",
+          "description": "Name of the Azure AD group."
+        },
+        "StatusMessage": {
+          "type": "string",
+          "description": "Status message of the imported group."
+        },
+        "ImportedUsers": {
+          "type": "integer",
+          "format": "int32",
+          "description": "Imported users count ."
+        },
+        "Status": {
+          "type": "boolean",
+          "description": "Status of the group import."
+        }
+      }
+    },
+    "ApiGroupEdit": {
+      "type": "object",
+      "description": "Group detail",
+      "additionalProperties": false,
+      "properties": {
+        "Name": {
+          "type": "string",
+          "description": "Name of the group."
+        },
+        "Description": {
+          "type": "string",
+          "description": "Description of the group."
+        }
+      }
+    },
+    "ApiGroupAdd": {
+      "type": "object",
+      "description": "Group detail",
+      "additionalProperties": false,
+      "required": [
+        "Name"
+      ],
+      "properties": {
+        "Name": {
+          "type": "string",
+          "description": "Name of the group."
+        },
+        "Description": {
+          "type": "string",
+          "description": "Description of the group."
+        }
+      }
+    },
+    "PublishedItemsResponse": {
+      "type": "object",
+      "description": "Published Items details.",
+      "additionalProperties": false,
+      "properties": {
+        "PublishId": {
+          "type": "string",
+          "description": "Published Item ID.",
+          "format": "guid"
+        },
+        "ItemId": {
+          "type": "string",
+          "description": "Specifies the ID of the dashboard.",
+          "format": "guid"
+        },
+        "ItemName": {
+          "type": "string",
+          "description": "Name of the dashboard."
+        },
+        "CategoryName": {
+          "type": "string",
+          "description": "Category name."
+        },
+        "ItemType": {
+          "type": "string",
+          "description": "Item type."
+        },
+        "SiteDetails": {
+          "type": "array",
+          "description": "Site details list.",
+          "items": {
+            "$ref": "#/definitions/SiteDetails"
+          }
+        }
+      }
+    },
+    "SiteDetails": {
+      "type": "object",
+      "description": "Published items site details.",
+      "additionalProperties": false,
+      "properties": {
+        "PublishedItemName": {
+          "type": "string",
+          "description": "Returns destination site item name."
+        },
+        "PublishedItemDescription": {
+          "type": "string",
+          "description": "Returns destination site item description."
+        },
+        "PublishedItemCategoryName": {
+          "type": "string",
+          "description": "Returns destination site item category name."
+        },
+        "PublishedItemId": {
+          "type": "string",
+          "description": "Returns destination site item ID.",
+          "format": "guid"
+        },
+        "TenantId": {
+          "type": "string",
+          "description": "Tenant ID.",
+          "format": "guid"
+        },
+        "TenantName": {
+          "type": "string",
+          "description": "Tenant Name."
+        },
+        "TenantURL": {
+          "type": "string",
+          "description": "Tenant URL."
+        },
+        "IsLocked": {
+          "type": "boolean",
+          "description": "Is published item Locked."
+        },
+        "PublishedById": {
+          "type": "integer",
+          "description": "User ID who published the item."
+        },
+        "PublishedOn": {
+          "type": "string",
+          "description": "Date published of the item in string format.",
+          "format": "datetime"
+        },
+        "LastSynchronizedOn": {
+          "type": "string",
+          "description": "Date of last sychronization in string format.",
+          "format": "datetime"
+        },
+        "LastSynchronizedById": {
+          "type": "integer",
+          "description": "User ID who sychronized at last."
+        },
+        "LastSynchronizedStatus": {
+          "type": "string",
+          "description": "Last Synchronization status."
+        }
+      }
     }
   },
-  "parameters" : { },
-  "responses" : { }
+  "parameters": {},
+  "responses": {}
 }

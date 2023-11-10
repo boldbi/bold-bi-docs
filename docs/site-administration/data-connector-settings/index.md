@@ -12,6 +12,6 @@ This section explains how to configure the user account authorization in the Bol
 
 You can explore the authorization configurations in detail here,
 
-[OAuth Configuration](/data-connector-settings/oauth-configuration/)
+[OAuth Configuration](/site-administration/data-connector-settings/oauth-configuration/)
 
 > **NOTE:** This feature is available in Bold BI Embedded Analytics but not in Cloud Analytics Server.

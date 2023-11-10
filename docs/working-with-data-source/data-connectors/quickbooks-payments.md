@@ -34,7 +34,7 @@ Use the following steps to authenticate with QuickBooks Payments web service:
  
 4. You have now successfully authorized your connection. Click **Connect** to continue with the data source connection.
  
-5. To connect through already connected account, refer to the [Connected Accounts](#connected-accounts-for-oauth-data-sources). 
+5. To connect through already connected account, refer to the [Connected Accounts](#connected-accounts-for-the-oauth-data-sources). 
 > **NOTE:** To connect another account, click **Connect New Account.**
 
 

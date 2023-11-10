@@ -27,7 +27,7 @@ To configure the Azure Tables data source, follow these steps:
 ## Create Azure Tables data source
 Once you click the data source, the NEW DATA SOURCE configuration panel opens. Follow these steps to create an Azure Tables data source.
 1. Enter a name and description (optional) for the data source.
-2. Enter a valid **Storage Account Name** and **Storage Account Access Key**. To know more about the [Access Keys](/working-with-data-source/data-connectors/azure-tables/#how-do-i-get-storage-account-name-and-storage-account-access-key-for-connecting-azure-tables-data-source), refer to the [Azure Tables API documentation](https://docs.microsoft.com/en-us/rest/api/storageservices/querying-tables-and-entities).
+2. Enter a valid **Storage Account Name** and **Storage Account Access Key**. To know more about the [Access Keys](#how-do-i-get-the-storage-account-name-and-storage-account-access-key-for-connecting-azure-tables-data-source), refer to the [Azure Tables API documentation](https://docs.microsoft.com/en-us/rest/api/storageservices/querying-tables-and-entities).
 3. Select a table from the **Tables** dropdown.
 4. In **Max Rows**, enter the maximum number of rows to be fetched from the Azure Tables data source. This value is used to fetch the data from the Azure Tables data source using the pagination.
 5. Choose a time interval for **Refresh Settings** using the combo box, to trigger the Rest API request periodically to keep the data in sync with our dashboard.
@@ -48,7 +48,7 @@ Period of time before next refresh call is triggered. This will automatically tr
 </tr>
 </table>
 
-#### How do I get the Storage Account Name and Storage Account Access Key for connecting Azure Tables data source?
+#### How do I get the Storage Account Name and Storage Account Access Key for connecting Azure Tables data source
 1. In the [Azure Portal](https://portal.azure.com/), click *Storage accounts* and select the storage account.
 2. Go to *Settings -> Access keys* and get the access keys.
 

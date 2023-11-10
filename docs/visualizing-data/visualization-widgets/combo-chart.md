@@ -6,7 +6,7 @@ canonical: "/visualizing-data/visualization-widgets/combo-chart/"
 platform: bold-bi
 control: Combo Chart
 documentation: ug
-lang: en
+
 ---
 
 # Configuring and Formatting Combo Chart
@@ -262,6 +262,17 @@ A Legend is a text used to describe the data plotted. This allows you to toggle 
 ![Legend Settings](/static/assets/visualizing-data/visualization-widgets/images/combo-chart/combochart-legend.png)
 
 Enabling this option of **Customize Legend Text** will allow you to define a custom text (through the text area) to display for each legend series (selecting through the combo box) in chart.
+
+#### Legend Interactivity
+
+The chart `legend interactivity` option allows you to control the behavior of the chart legends. This provides an option to make chart legends non-clickable, which can be especially useful in scenarios where you do not want users to hide or show series data by clicking on the legend. This might also be useful when displaying critical pieces of data that should always be present for accuracy and context purposes.
+
+Disabling the Interactivity feature in the Legend Settings category does not allow you to click on the legends.
+
+![Legend Interactivity Disable](/static/assets/visualizing-data/visualization-widgets/images/combo-chart/legend-interactivity-disable.png)
+Enabling the Interactivity feature in the Legend Settings category allows you to click on the legends
+
+![Legend Interactivity Enable](/static/assets/visualizing-data/visualization-widgets/images/combo-chart/legend-interactivity-enable.png)
 
 #### Customize
 

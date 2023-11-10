@@ -12,7 +12,7 @@ In Javascript-based embedding, there are methods for creating categories, gettin
 Publish or Save dialog has been created and used in dashboard designer embedding. Follow the given steps to apply in your environment.
 
 ## Steps to follow for customizing the publish dialog in designer embedding
-1. Please [download](https://onpremise-demo.boldbi.com/getting-started/asp-core-publishas/sample.zip) the ASP.NET Core Sample.
+1. Please [download](https://github.com/boldbi/samples/tree/master/Scenario%20Based%20Samples/Custom%20Publish%20Dialog%20in%20Designer%20Embedding) the ASP.NET Core Sample.
 
 2. Provide your embed properties details in the `EmbedProperties.cs` file, then run your application.
 
@@ -56,7 +56,7 @@ Publish or Save dialog has been created and used in dashboard designer embedding
 
     ![ClickPublishDropdown](/static/assets/faq/images/click_publish_dropdown.png)
 
- 5. To get the categories information such as category name and category id, the `getDashboardCategories()` method has been called as follows. For more information, see [getDashboardCategories()](/embedding-sdk/embedding-api-reference/methods/#getdashboardcategories).
+ 5. To get the categories information such as category name and category id, the `getDashboardCategories()` method has been called as follows. For more information, see [getDashboardCategories()](/embedding-options/embedding-sdk/embedding-api-reference/methods/#getdashboardcategories).
 
     ![CreatePublishPanel](/static/assets/faq/images/call_get_dashboard_category.png)
 
@@ -70,13 +70,13 @@ Publish or Save dialog has been created and used in dashboard designer embedding
 
      ![CreateNewpopup](/static/assets/faq/images/click_add_button.png)
          
-8. Get the inputs of the `category Name` and `Description` from creating category dialog and creating a new category using the `createDashboardCategory()` method available in Bold BI. For more information, see [createDashboardCategory()](/embedding-sdk/embedding-api-reference/methods/#createdashboardcategory).
+8. Get the inputs of the `category Name` and `Description` from creating category dialog and creating a new category using the `createDashboardCategory()` method available in Bold BI. For more information, see [createDashboardCategory()](/embedding-options/embedding-sdk/embedding-api-reference/methods/#createdashboardcategory).
 
     ![ClickSaveCategory](/static/assets/faq/images/save_new_category.png)
 
     ![SaveNewCategory](/static/assets/faq/images/popup_add_category.png)
 
-9. For saving or publishing the dashboard with given details, call the `saveDashboard()` method by passing the `dashboardName`, `categoryId`, `categoryName`, and `description` as parameters as follows. For more information, see [saveDashboard()](/embedding-sdk/embedding-api-reference/methods/#savedashboard).
+9. For saving or publishing the dashboard with given details, call the `saveDashboard()` method by passing the `dashboardName`, `categoryId`, `categoryName`, and `description` as parameters as follows. For more information, see [saveDashboard()](/embedding-options/embedding-sdk/embedding-api-reference/methods/#savedashboard).
 
     ![SaveDashboard](/static/assets/faq/images/popup_publish_button.png)
 

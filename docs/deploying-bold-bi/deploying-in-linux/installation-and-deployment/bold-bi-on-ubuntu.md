@@ -233,21 +233,22 @@ Once the Nginx configuration is established, run the `sudo nginx -t` to verify t
 ## Configure SSL
 If you have an SSL certificate for your domain and need to configure the site with your SSL certificate, follow these steps or you can skip this.
 
-1. Uncomment the following marked lines in the Nginx config file.
+1. Navigate to `/etc/nginx/sites-available/`. Open the `boldbi-nginx-config` file in a text editor.
+2. Uncomment the following marked lines in the Nginx config file.
 
     ![ssl configuration uncomment](/static/assets/installation-and-deployment/images/linux-ssl-configuration-uncomment.png)
 
-2. Comment the following marked line in the Nginx config file.
+3. Comment the following marked line in the Nginx config file.
 
     ![ssl configuration comment](/static/assets/installation-and-deployment/images/linux-ssl-configuration-comment.png)
 
-3. Replace the `example.com` with your domain name.
+4. Replace the `example.com` with your domain name.
 
-4. Define the path of the SSL certificate: `ssl_certificate /etc/ssl/domain.crt`.
+5. Define the path of the SSL certificate: `ssl_certificate /etc/ssl/domain.crt`.
 
-5. Specify the directory where the SSL certificate key is located: `ssl_certificate_key /etc/ssl/domain.key`.
+6. Specify the directory where the SSL certificate key is located: `ssl_certificate_key /etc/ssl/domain.key`.
 
-6. Save and run the `sudo nginx -t` to verify the syntax of the configuration file. If the configuration file test is successful, force the Nginx to pick up the changes by running the `sudo nginx -s reload.`
+7. Save and run the `sudo nginx -t` to verify the syntax of the configuration file. If the configuration file test is successful, force the Nginx to pick up the changes by running the `sudo nginx -s reload.`
 
 > **NOTE:** If you are configuring the application with SSL, you need to update the URLs in the product.json with `HTTPS` located in the `/var/www/bold-services/application/app_data/configuration.`
 

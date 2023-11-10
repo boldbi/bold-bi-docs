@@ -8,9 +8,9 @@ documentation: ug
 
 # How to pass a parameter to Web API connector when view and embedding a dashboard
 
-You can pass the [Dashboard parameter](/working-with-data-source/configuring-dashboard-parameters/) value to the value of [Web API](/working-with-data-source/data-connectors/restful-web-services/) URL parameter/POST Parameters/Headers. Please follow these steps:
+You can pass the [Dashboard parameter](/working-with-data-source/dashboard-parameter/configuring-dashboard-parameters/) value to the value of [Web API](/working-with-data-source/data-connectors/web/) URL parameter/POST Parameters/Headers. Please follow these steps:
 
-1. First of all, create the Dashboard parameter by following the steps mentioned in this [section](/working-with-data-source/configuring-dashboard-parameters/).
+1. First of all, create the Dashboard parameter by following the steps mentioned in this [section](/working-with-data-source/dashboard-parameter/configuring-dashboard-parameters/).
 
    ![Dashboard Parameter to pass in Web API](/static/assets/faq/images/parameter-to-pass-web-api.png)
 

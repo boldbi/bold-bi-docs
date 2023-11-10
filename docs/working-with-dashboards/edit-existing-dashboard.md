@@ -20,13 +20,13 @@ documentation: ug
    
    Select a dashboard from the left panel to edit in the designer.
 
-   Click the highlighted icon like below
-
-   ![Menu icon](/static/assets/working-with-dashboards/images/menuicon.png)
-
-   `Edit` option will listed in the menu list.
+   Click the `Edit` option from the context menu.
    
    ![Edit option](/static/assets/working-with-dashboards/images/editoption.png#width=60%)
+
+   Also, you can click edit icon from the dashboard listing.
+
+   ![Edit dashboard icon](/static/assets/working-with-dashboards/images/editdashboardicon.png#width=60%)
 
    Selected Dashboard will be opened in the designer as shown below
 

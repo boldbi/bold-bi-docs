@@ -41,7 +41,7 @@ This allows you to apply the specified radius to the widget corners. `Value can 
 
 ## Show maximize
 
-This allows you to enable or disable the [maximized mode](/working-with-dashboards/preview-dashboard/exporting-reports-from-widgets/maximizing-widget-view/) of the widget. The visibility of the maximize icon in widget header will be defined based on this setting. 
+This allows you to enable or disable the [maximized mode](/working-with-dashboards/preview-dashboard/maximizing-widget-view/) of the widget. The visibility of the maximize icon in widget header will be defined based on this setting. 
 
 Clicking this icon in viewer will show the maximized view of the widget.
 ![Maximize icon](/static/assets/visualizing-data/working-with-widgets/images/ContainerAppearance5.png)

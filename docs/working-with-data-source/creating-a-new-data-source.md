@@ -5,7 +5,7 @@ description: Learn how to create a new data source in Bold BI Embedded applicati
 canonical: "/working-with-data-source/creating-a-new-data-source/"
 platform: bold-bi
 documentation: ug
-lang: en
+
 ---
 # Working with Data Source
 

@@ -23,7 +23,7 @@ To publish a dashboard to other site(s), follow these steps:
 
    For non-master sites, [external site publish](/resource-migration/migrate-dashboards-online/#external-site) dialog will be shown directly. Also, publish the dashboard to the internal sites using the external site publish option for the non-master sites.
 
-   > **NOTE:** Master site is the first created site during startup in Bold BI, and all other sites are considered non-master sites. Publish dashboard support is not available in Cloud Analytics Server.
+   > **NOTE:** The master site is the first site created during startup in Bold BI, and later you can set any other sites as the master site.
 
 ## Internal site
 
@@ -145,3 +145,17 @@ Click `Actions` in the grid context menu and select `Lock Edit` to lock the edit
 Click `Actions` in the grid context menu and select `Unlock Edit` to unlock the edit support for the published dashboard.
 
 ![Unlock Edit Action](/static/assets/resource-migration/migrate-dashboards-online/images/publish-unlockedit.png)
+
+### Disable Synchronization of publish dashboard
+
+The synchronization of published dashboards from the source site can be disabled by enabling the `Lock Resource Synchronization` in the dashboard settings in target site.
+
+Learn how to disable synchronization for the published dashboard [here](/site-administration/dashboard-settings/lock-resource-synchronization/).
+
+Once these settings are enabled in the target site, synchronization of the published dashboard from the source site gets failed. Show the failed status in the grid.
+
+![Failed-status-grid](/static/assets/resource-migration/migrate-dashboards-online/images/grid-failed-status.png)
+
+The failure reason will be displayed as `Resource synchronization is locked in target site` when clicking on the `Failed` status from the publish history dialog.
+
+![Failure-info](/static/assets/resource-migration/migrate-dashboards-online/images/failure-info-history.png)

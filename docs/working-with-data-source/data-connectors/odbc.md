@@ -66,6 +66,7 @@ After clicking the data source, the NEW DATA SOURCE configuration panel opens. T
 * Elasticsearch
 * FileMaker
 * Firebird
+* Azure Databricks (Supported only in DSN Connection Type)
 
 Follow the given steps to create an ODBC data source: 
 1. Enter a name and description (optional) for the data source.
@@ -145,6 +146,8 @@ Type while creating the data source needs to be ODBC.
 
 ### Parameters for creating Data Source
 
+> **NOTE:** The ability to provide join support is available only during the creation of a new data source. Join in edit connection mode is not supported.
+
    <table>
    <tr>
    <th>Parameters</th>
@@ -153,74 +156,127 @@ Type while creating the data source needs to be ODBC.
    <tr>
    <td>Driver</br></br>
    <b>optional</b> </td>
-   <td>`string`</br></br>
+  <td><code>string</code></br></br>
    ODBC Driver Name. Required for Driver Mode</td>
    </tr>
    <tr>
    <td>DsnName</br></br>
    <b>required</b> </td>
-   <td>`string`</br></br>
+  <td><code>string</code></br></br>
    ODBC DSN Name. Required for DSN Mode.</td>
    </tr>
    <tr>
    <td>Servername</br></br>
    <b>optional</b> </td>
-   <td>`string`</br></br>
+  <td><code>string</code></br></br>
    Servername of the connection. Required for Driver Mode.</td>
    </tr>
    <tr>
    <td>Port</br></br>
    <b>optional</b> </td>
-   <td>`string`</br></br>
+  <td><code>string</code></br></br>
    Port number of the connection. Required for Driver Mode.</br></br>
    </td>
    </tr>
    <tr>
    <td>Username</br></br>
    <b>required</b>  </td>
-   <td>`string`</br></br>
+  <td><code>string</code></br></br>
    A valid username for the connection</td>
    </tr>
    <tr>
    <td>Password</br></br>
    <b>required</b>  </td>
-   <td>`string`</br></br>
+  <td><code>string</code></br></br>
    A valid Password for the connection</td>
    </tr>
    <tr>
    <td>Database</br></br>
    <b>optional</b> </td>
-   <td>`string`</br></br>
+  <td><code>string</code></br></br>
    database which needs to be connected. Required for Driver Mode.</td>
    </tr>
    <tr>
    <td>Schemaname</br></br>
    <b>required for table mode</b> </td>
-   <td>`string`</br></br>
+  <td><code>string</code></br></br>
    Enter a valid Schemaname</td>
    </tr>
    <tr>
    <td>Tablename</br></br>
    <b>required for table mode</b> </td>
-   <td>`string`</br></br>
+  <td><code>string</code></br></br>
    Enter a valid Tablename</td>
+   </tr>
+   <td>JoinType</br></br>
+   <b>Required For Join Info </b> </td>
+  <td><code>string</code></br></br>
+   Enter a valid JoinType For Example (Inner,Outer)</td>
+   </tr>
+   <tr>
+   <td>LeftTable</br></br>
+   <b>Required For Join Info </b> </td>
+  <td><code>string</code></br></br>
+   Enter a valid Left Table name </td>
+   </tr>
+   <tr>
+   <td>RightTable</br></br>
+   <b>Required For Join Info</b> </td>
+  <td><code>string</code></br></br>
+   Enter a valid Right Table name </td>
+   </tr>
+   <tr>
+   <td>LeftField</br></br>
+   <b>Required For Join Info</b> </td>
+  <td><code>string</code></br></br>
+   Enter a valid Left Table Column Name  </td>
+   </tr>
+   <tr>
+   <td>RightField</br></br>
+   <b>Required For Join Info</b> </td>
+  <td><code>string</code></br></br>
+   Enter a valid Right Table Column Name  </td>
+   </tr>
+   <tr>
+   <td>Condition</br></br>
+   <b>Required For Join Info</b> </td>
+  <td><code>string</code></br></br>
+   Enter a valid Condition For Example (AND,OR)  </td>
+   </tr>
+   <tr>
+   <td>LeftField</br></br>
+   <b>Required For Join Info</b> </td>
+  <td><code>string</code></br></br>
+   Enter a valid Left Table Column Name  </td>
+   </tr>
+   <tr>
+   <td>Operator</br></br>
+   <b>Required For Join Info</b> </td>
+  <td><code>string</code></br></br>
+   Enter a Valid Operator For Example (=,>=)  </td>
+   </tr>
+   <tr>
+   <td>Value</br></br>
+   <b>Optional For only Join Info  </b> </td>
+  <td><code>string</code></br></br>
+   Specifically choose the column values. </td>
    </tr>
    <tr>
    <td>Query</br></br>
    <b>required for code view mode</b> </td>
-   <td>`string`</br></br>
+  <td><code>string</code></br></br>
    Enter a valid Query</td>
    </tr>
    <tr>
    <td>AdvancedSettings</br></br>
    <b>optional</b> </td>
-   <td>`string`</br></br>
+  <td><code>string</code></br></br>
    Additional optional connection parameters can be provided. By default, it is empty.</td>
    </tr>
    <tr>
    <td>CommandTimeout</br></br>
    <b>optional</b> </td>
-   <td>`string`</br></br>
+  <td><code>string</code></br></br>
    Enter a valid Timeout for connection. By default, it is 300</td>
    </tr>
    <tr>
@@ -243,7 +299,7 @@ Type while creating the data source needs to be ODBC.
    <td>Name</br></br>
    <b>required</b> </br></br>
    </td>
-   <td>`string`</br></br>
+  <td><code>string</code></br></br>
    Name of the Expression</br></br>
    </td>
    </tr>
@@ -251,7 +307,7 @@ Type while creating the data source needs to be ODBC.
    <td>Expression</br></br></br></br>
    <b>required</b> </br></br>
    </td>
-   <td>`string`</br></br>
+  <td><code>string</code></br></br>
    <a href="/working-with-data-source/transforming-data/configuring-expression-columns/">
     <div style="height:100%;width:100%">
       Expression
@@ -276,7 +332,7 @@ Type while creating the data source needs to be ODBC.
    <td>Name</br></br>
    <b>required</b> </br></br>
    </td>
-   <td>`string`</br></br>
+  <td><code>string</code></br></br>
    Name of the Expression</br></br>
    </td>
    </tr>
@@ -284,7 +340,7 @@ Type while creating the data source needs to be ODBC.
    <td>Expression</br></br></br></br>
    <b>required</b> </br></br>
    </td>
-   <td>`string`</br></br>
+  <td><code>string</code></br></br>
    <a href="/working-with-data-source/transforming-data/configuring-expression-columns/">
     <div style="height:100%;width:100%">
       Expression
@@ -296,7 +352,7 @@ Type while creating the data source needs to be ODBC.
    <td>Action</br></br></br></br>
    <b>optional</b> </br></br>
    </td>
-   <td>`string`</br></br>
+  <td><code>string</code></br></br>
    add/delete/edit</br></br>
    By default, it is add. </br></br>
    </td>
@@ -305,7 +361,7 @@ Type while creating the data source needs to be ODBC.
    <td>NewName</br></br>
    <b>optional</b> </br></br>
    </td>
-   <td>`string`</br></br>
+  <td><code>string</code></br></br>
    For renaming the expression. This is applicable only if the Action is <b>edit</b> </br></br>
    </td>
    </tr>
@@ -316,7 +372,7 @@ Type while creating the data source needs to be ODBC.
 #### For creating connection using Driver:
 
 ``` json
-"Connection": [
+"Connection":
 {
 "Driver": "string",
 "Servername": "string",
@@ -337,13 +393,13 @@ Type while creating the data source needs to be ODBC.
 "Expression" :  "UPPER(string expression)"
 }]
 }
-]
+
 ```
 
 #### For creating connection using DSN:
 
 ``` json
-"Connection": [
+"Connection":
 {
 "DsnName": "string",
 "Username": "string",
@@ -362,13 +418,69 @@ Type while creating the data source needs to be ODBC.
 "Expression" :  "UPPER(string expression)"
 }]
 }
-]
+
+```
+
+#### For creating connection with multiple tables :
+
+``` json
+"Connection":
+{
+"DsnName": "string",
+"Username": "string",
+"Password": "string",
+"Database": "string",
+"Tables": [
+            {
+                "Tablename": "string",
+                "Schemaname": "string"
+            },
+            {
+                "Tablename": "string",
+                "Schemaname": "string"
+            }
+        ],
+"JoinInfo": [
+            {
+                "JoinType": "string",
+                "LeftTable": "string",
+                "RightTable": "string",
+                "JoinFieldInfos": [
+                    {
+                        "Condition": "string",
+                        "LeftField": "string",
+                        "Operator": "string",
+                        "RightField": "string",
+                        "Value": "string"
+                    },
+                    {
+                        "Condition": "string",
+                        "LeftField": "string",
+                        "Operator": "string",
+                        "RightField": "string",
+                        "Value": "string"
+                    }
+                ]
+            }
+        ],
+"AdvancedSettings": "string",
+"CommandTimeout": "string",
+"Expressions" : [{
+"Name": "Expression1",
+"Expression" : "SUM(numeric expression)"
+    },
+    {
+"Name": "Expression2",
+"Expression" :  "UPPER(string expression)"
+}]
+}
+
 ```
 
 #### For editing connection:
 
 ``` json
-"Connection": [
+"Connection":
 {
 "Driver": "string",
 "Servername": "string",
@@ -392,7 +504,7 @@ Type while creating the data source needs to be ODBC.
 "Action": "delete"
 }]
 }
-]
+
 ```
 
 > **NOTE:**  Through Rest API, the data source can be created or edited with only one table. If different table is provided in edit data source, the table will be replaced. The widgets will be retained only if the schema is same as the previous table.
@@ -400,7 +512,7 @@ Type while creating the data source needs to be ODBC.
 ### Connection Sample for Code View Mode
 
 ``` json
-"Connection": [
+"Connection":
 {
 "Driver": "string",
 "Servername": "string",
@@ -420,7 +532,7 @@ Type while creating the data source needs to be ODBC.
 "Expression" :  "UPPER(string expression)"
 }]
 }
-]
+
 ```
 
 ## Related links

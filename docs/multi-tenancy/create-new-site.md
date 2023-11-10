@@ -4,7 +4,7 @@ title: Multitenancy – Adding a new tenant – Embedded BI | Bold BI
 description: Learn how to add another site as part of multi-tenancy and configure separate database and data store with Bold BI Embedded.
 platform: bold-bi
 documentation: ug
-lang: en
+
 ---
 
 # Creating a New Site in Bold BI Enterprise Edition
@@ -119,7 +119,7 @@ The selected users have the following permissions:
 * [Create Slideshows](/managing-resources/manage-slideshows/)
 * [Create Users](/managing-resources/manage-users/)
 * [Create Groups](/managing-resources/manage-groups/)
-* [Manage Permissions for users and groups](/working-with-dashboards/share-dashboards/manage-permissions/)
+* [Manage Permissions for users and groups](/managing-resources/manage-permissions/)
 
 After selecting the user, proceed with `Create and launch site`.
 

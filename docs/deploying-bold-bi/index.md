@@ -4,7 +4,6 @@ title:  Prerequisites and Deployment of Embedded BI | Bold BI Docs
 description: Explore the prerequisites for installing Bold BI in your server and about its deployment in Windows Server, Azure, Linux, and Kubernetes.
 platform: bold-bi
 documentation: ug
-lang: en
 ---
 
 # Prerequisites and Deployment of Embedded BI

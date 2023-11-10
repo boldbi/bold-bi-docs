@@ -5,7 +5,7 @@ description: Learn how to delete an unwanted or inappropriate data source associ
 canonical: "/working-with-data-source/deleting-a-data-source/"
 platform: bold-bi
 documentation: ug
-lang: en
+
 ---
 
 # Deleting a Data Source

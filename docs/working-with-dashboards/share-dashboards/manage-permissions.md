@@ -2,7 +2,7 @@
 layout: post
 title: Managing Dashboards Permissions in Embedded BI | Bold BI Docs
 description: Learn how to manage the permissions for dashboards assigned to the users and groups with needed scope to the corresponding entities in Bold BI Embedded.
-canonical: "/working-with-dashboards/share-dashboards/manage-permissions/"
+canonical: "/managing-resources/manage-permissions/"
 platform: bold-bi
 documentation: ug
 ---

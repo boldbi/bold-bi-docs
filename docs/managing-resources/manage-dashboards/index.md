@@ -5,7 +5,7 @@ description: Learn how to open, add, mark favorite, manage views, multi-tabbed d
 canonical: "/managing-resources/manage-dashboards/"
 platform: bold-bi
 documentation: ug
-lang: en
+
 ---
 
 # Manage Dashboards
@@ -35,5 +35,7 @@ You can explore the managing dashboards in detail here,
 [Share Dashboards](/managing-resources/manage-dashboards/share-dashboards/)
 
 [Advanced Dashboard Security](/managing-resources/manage-dashboards/advanced-dashboard-security/)
+
+[Enable Tab Security](/managing-resources/manage-dashboards/enable-tab-security/)
 
 [Unlisted Dashboards](/managing-resources/manage-dashboards/unlisted-dashboards/)

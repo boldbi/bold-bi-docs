@@ -4,7 +4,7 @@ title: Prerequisites - Bold BI on Windows | Bold BI Documentation
 description: Learn about the prerequisites for deploying and running Bold BI server application in Windows client and server machines.
 platform: bold-bi
 documentation: ug
-lang: en
+
 ---
 
 # Prerequisites

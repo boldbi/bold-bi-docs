@@ -243,4 +243,60 @@ Auto mapping of data sources can save you a lot of time and effort by eliminatin
 
    ![Configured dashboards](/static/assets/resource-migration/migrate-dashboards-offline/images/auto-map-configured-dashboard-list.png)
 
- > **NOTE:** For this functionality to work, make sure that the dashboards are downloaded again and the BoldBI version should be (>6.7).
+ > **NOTE:** For this functionality to work, make sure that the dashboards are downloaded again, and the BoldBI version should be (>6.7).
+
+ ### Bulk category update
+
+This feature enables you to update categories for selected dashboards seamlessly as well as perform bulk deletion.
+
+**How to use bulk category update in BoldBI:**
+
+1. Select the uploaded dashboards as follows,
+
+   To select uploaded dashboards, you have two options:
+
+    * You can choose all the dashboards by clicking the `Select All` check box.
+
+      ![Bulk category select all](/static/assets/resource-migration/migrate-dashboards-offline/images/bulk-select-all.png)
+
+    * Alternatively, you can individually select one or multiple dashboards using the check boxes within each dashboard list tile.
+
+      ![Bulk category multiple select](/static/assets/resource-migration/migrate-dashboards-offline/images/bulk-multiple-select.png)
+
+2. You can change the categories of the selected dashboards.
+
+   Uploaded dashboards may have either common or different categories:
+
+    * If they have the same category, the bulk category UI dropdown will be updated automatically.
+
+      ![Bulk category same category](/static/assets/resource-migration/migrate-dashboards-offline/images/bulk-same-category.png)
+
+    * If they have different categories, the bulk category UI dropdown will display the count of distinct categories.
+
+      ![Bulk category different category](/static/assets/resource-migration/migrate-dashboards-offline/images/bulk-different-category.png)
+
+   Next, you can choose the desired category from the provided category dropdown in the bulk category UI.
+
+   ![Bulk category select](/static/assets/resource-migration/migrate-dashboards-offline/images/bulk-category-select.png)
+
+3. Performing bulk deletion of dashboards as follows,
+
+   There is an `Delete dashboards` option to delete the selected dashboards all at once.
+
+   ![Bulk category delete option](/static/assets/resource-migration/migrate-dashboards-offline/images/bulk-delete-option.png)
+
+   After clicking the `Delete dashboards` option an interaction dialog will open and click the `Yes, Delete` button.
+
+   ![Bulk category delete popup](/static/assets/resource-migration/migrate-dashboards-offline/images/bulk-delete-popup.png)
+
+   Now you can see the selected dashboards have been deleted.
+
+   ![Bulk category deleted view](/static/assets/resource-migration/migrate-dashboards-offline/images/bulk-deleted-view.png)
+
+4. Performing remove selection of dashboards as follows,
+
+   To remove the selection you have the dedicated `Remove selection` option, or you may manually unselect the dashboards or you can do a select all and then unselect all by again clicking the `Select all` check box.
+
+   ![Bulk category remove selection](/static/assets/resource-migration/migrate-dashboards-offline/images/bulk-remove-selection.png)
+	
+ > **NOTE:** This functionality will only work on BoldBI version (6.13 or higher).

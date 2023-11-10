@@ -5,7 +5,7 @@ description: Learn how to copy a published dashboard URL in Bold BI Embedded fro
 canonical: "/working-with-dashboards/share-dashboards/get-dashboard-link/"
 platform: bold-bi
 documentation: ug
-lang: en
+
 ---
 
 # Get Dashboard Link

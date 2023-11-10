@@ -5,7 +5,7 @@ description: Explore the v4.0 REST APIs on authentication, dashboards, dashboard
 canonical: "/server-api-reference/v4.0/"
 platform: bold-bi
 documentation: ug
-lang: en
+
 ---
 
 # REST API v4.0

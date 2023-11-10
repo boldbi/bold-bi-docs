@@ -5,7 +5,7 @@ description: Learn how to apply filter over data bounded to a specific widget ba
 canonical: "/visualizing-data/working-with-widgets/configuring-widget-filters/"
 platform: bold-bi
 documentation: ug
-lang: en
+
 ---
 
 # Configuring Widget Filters
@@ -24,7 +24,7 @@ lang: en
 
    Configure the required aggregation from the dropdown to filter the widget based on the selected aggregation type. The dropped column aggregation type will be selected and listed in the dropdown by default.
 
-   > **NOTE:** To perform [Raw data filtering](/embedded-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#raw-data-filter) in the widget, select the aggregation type as NONE from the dropdown.
+   > **NOTE:** To perform [Raw data filtering](/visualizing-data/working-with-widgets/configuring-widget-filters/#raw-data-filter) in the widget, select the aggregation type as NONE from the dropdown.
 
    Configure the compare operator and the value to be compared against the selected column values. Click `Apply` to apply the filter settings to the widget. Now, the applied settings are saved, and these settings will be retained on reopening this dialog.
 

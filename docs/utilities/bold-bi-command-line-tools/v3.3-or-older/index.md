@@ -28,5 +28,5 @@ cd C:\Bold BI\Utilities\AdminUtils
 ## Available commands
 
 Please find the list of commands available in admin utility currently.  
-* [**Reset Password**](/admin-utility/v3.3-or-older/reset-password/)
-* [**Update Application Database**](/admin-utility/v3.3-or-older/reset-application-database/)
+* [**Reset Password**](/utilities/bold-bi-command-line-tools/v3.3-or-older/reset-password/)
+* [**Update Application Database**](/utilities/bold-bi-command-line-tools/v3.3-or-older/reset-application-database/)

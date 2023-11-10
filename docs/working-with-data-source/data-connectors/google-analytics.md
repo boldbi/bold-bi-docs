@@ -154,6 +154,6 @@ You can edit, delete and re-authorize this account from the **Connected Accounts
 
 [Google Analytics Limitations to build query](https://developers.google.com/analytics/devguides/reporting/core/v3/reference#largeDataResults)
 
-[Google Analytics Integration](https://www.boldbi.com/integrations/google-analytics?utm_source=syncfusion&utm_medium=documentation&utm_campaign=boldbigoolgleanalyticsintegration)
+<a href="https://www.boldbi.com/integrations/google-analytics?utm_source=syncfusion&utm_medium=documentation&utm_campaign=boldbigoolgleanalyticsintegration" target="_blank">Google Analytics Integration</a>
 
 <a href="https://www.boldbi.com/kb/security/how-to-set-up-oauth2-authorization-to-access-google-applications" target="_blank">How to set up OAuth 2.0 authorization to access Google applications in Bold BI</a>

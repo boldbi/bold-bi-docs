@@ -4,7 +4,7 @@ title: Install Bold BI Enterprise Edition in Silent Mode | Bold BI Docs
 description: Read this documentation to learn how to install the Bold BI Enterprise Edition in silent mode into another installer and embed the dashboards in an application.
 platform: bold-bi
 documentation: ug
-lang: en
+
 ---
 
 # Install the Bold BI Enterprise Edition in silent mode

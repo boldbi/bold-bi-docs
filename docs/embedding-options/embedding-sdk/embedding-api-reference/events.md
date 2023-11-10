@@ -4,7 +4,7 @@ title: API Reference – Events - JavaScript Embedding | Bold BI Docs
 description: Explore the JavaScript API reference for events that can be used for embedding in Bold BI deployed in your server.
 platform: bold-bi
 documentation: UG
-lang: en
+
 ---
 
 # Events
@@ -222,6 +222,284 @@ var dashboard = BoldBI.create({
 });
 dashboard.loadDashboard();        
 ```
+
+### saveFilterClick
+
+`dashboardSettings.saveFilterClick`
+
+This event will be triggered when the save icon in the filter overview panel is clicked.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">enum</span></td>
+<td class="access">get</td>
+<td class="description">Will hold the current event type that triggered the event</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type"><a href=/embedding-options/embedding-sdk/embedding-api-reference/events/#dashboardproperties>object</a></span></td>
+<td class="access">get</td>
+<td class="description">Holds the dashboard viewer's object.</td>
+</tr>
+<tr>
+<td class="name">data</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="access">get</td>
+<td class="description">Holds the current event data.</td>
+</tr>
+<tr>
+<td class="name">viewId</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="access">get</td>
+<td class="description">Holds the Id of the view if the view has already been saved.</td>
+</tr>
+<tr>
+<td class="name">viewName</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="access">get</td>
+<td class="description">Holds the name of the view if the view has already been saved.</td>
+</tr>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="access">set</td>
+<td class="description">Holds the cancel value of the current operation.</td>
+</tr>
+</tbody>
+</table>
+
+**Example for saving a new view** 
+   
+```js
+var dashboard = BoldBI.create({
+    dashboardSettings: {
+        saveFilterClick: function(args) {
+            // embedContainerID -> 'dashboard'
+            var instance = BoldBI.getInstance('dashboard');
+
+            // Get the dashboard ID from the embedOptions.
+            var itemId = instance.embedOptions.dashboardId;
+
+            // Get the encrypted filter querystring from the event arguments.
+            var queryString = args.data.encryptedData;
+
+            // Determine the active-tabbed child dashboard ID if it is a multi-tab dashboard.
+            var childItemId = instance.isMultiTab ? instance._getActiveChildDashboardId() : '';
+
+            /* Add custom functionality for saving the view into the dashboard */
+
+            // Call the API method ('saveFilterView') to save the view and specify a callback function ('callBackFunction') to handle the response and perform further actions.
+            instance.saveFilterView({
+                'ViewName': 'Filter View name',
+                'ItemId': itemId,
+                'QueryString': queryString,
+                'ChildItemId': childItemId
+            }, 'callBackFunction');
+        }
+    }
+});
+dashboard.loadDashboard();
+```
+
+**Example for updating the existing view** 
+   
+```js
+var dashboard = BoldBI.create({
+     dashboardSettings: {
+          saveFilterClick: function(args) {
+               // embedContainerID -> 'dashboard'
+               var instance = BoldBI.getInstance('dashboard');
+
+               // Get the view ID from the event arguments.
+               var viewId = args.viewId;
+
+               // Determine the active-tabbed child dashboard ID if it is a multi-tab dashboard.
+               var dashboardId = instance.isMultiTab ? instance._getActiveChildDashboardId() : instance.embedOptions.dashboardId;
+
+               // Get the encrypted filter querystring from the event arguments
+               var queryString = args.data.encryptedData;
+
+               /* Add custom functionality for updating the view in the dashboard */
+
+               // Call the API method ('updateFilterView') to update the view and specify a callback function ('callBackFunction') to handle the response and perform further actions.
+               instance.updateFilterView({
+                    'ViewId': viewId,
+                    'DashboardId': dashboardId,
+                    'QueryString': queryString
+               }, 'callBackFunction');
+          }
+     }
+});
+dashboard.loadDashboard();        
+```
+
+### saveAsFilterClick
+
+`dashboardSettings.saveAsFilterClick`
+
+This event will be triggered when the save as icon in the filter overview panel is clicked.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">enum</span></td>
+<td class="access">get</td>
+<td class="description">Will holds the current event type that triggered the event</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type"><a href=/embedding-options/embedding-sdk/embedding-api-reference/events/#dashboardproperties>object</a></span></td>
+<td class="access">get</td>
+<td class="description">Holds the dashboard viewer's object.</td>
+</tr>
+<tr>
+<td class="name">data</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="access">get</td>
+<td class="description">Holds the current event data.</td>
+</tr>
+<tr>
+<td class="name">viewId</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="access">get</td>
+<td class="description">Holds the Id of the view.</td>
+</tr>
+<tr>
+<td class="name">viewName</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="access">get</td>
+<td class="description">Holds the name of the view.</td>
+</tr>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="access">set</td>
+<td class="description">Holds the cancel value of the current operation.</td>
+</tr>
+</tbody>
+</table>
+
+**Example** 
+   
+```js
+var dashboard = BoldBI.create({
+    dashboardSettings: {
+        saveAsFilterClick: function(args) {
+            // embedContainerID -> 'dashboard'
+            var instance = BoldBI.getInstance('dashboard');
+
+            // Get the dashboard ID from the embedOptions
+            var itemId = instance.embedOptions.dashboardId;
+
+            // Get the encrypted filter querystring from the event arguments
+            var queryString = args.data.encryptedData;
+
+            // Determine the active-tabbed child dashboard ID if it's a multi-tab dashboard
+            var childItemId = instance.isMultiTab ? instance._getActiveChildDashboardId() : '';
+
+            /* Add custom functionality for cloning the view into the dashboard */
+
+            // Call the API method ('saveFilterView') to save as the view and specify a callback function ('callBackFunction') to handle the response and perform further actions.
+            instance.saveAsFilterView({
+                'ViewName': 'Filter View name',
+                'ItemId': itemId,
+                'QueryString': queryString,
+                'ChildItemId': childItemId
+            }, 'callBackFunction');
+        }
+    }
+});
+dashboard.loadDashboard();
+```
+
+### viewSavedFiltersClick
+
+`dashboardSettings.viewSavedFiltersClick`
+
+This event will be triggered when the view saved filters icon in filter overview panel is clicked.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">enum</span></td>
+<td class="access">get</td>
+<td class="description">Will holds the current event type that triggered the event</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type"><a href=/embedding-options/embedding-sdk/embedding-api-reference/events/#dashboardproperties>object</a></span></td>
+<td class="access">get</td>
+<td class="description">Holds the dashboard viewer's object.</td>
+</tr>
+<tr>
+<td class="name">data</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="access">get</td>
+<td class="description">Holds the current event data.</td>
+</tr>
+<tr>
+<td class="name">target</td>
+<td class="type"><span class="param-type">array</span></td>
+<td class="access">get</td>
+<td class="description">Holds the target of the current element in html.</td>
+</tr>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="access">set</td>
+<td class="description">Holds the cancel value of the current operation.</td>
+</tr>
+</tbody>
+</table>
+
+**Example** 
+   
+```js
+var dashboard = BoldBI.create({
+     dashboardSettings: {
+          viewSavedFiltersClick: function(args) {
+               // embedContainerID -> 'dashboard'
+               var instance = BoldBI.getInstance('dashboard');
+
+               // Determine the active-tabbed child dashboard ID if it's a multi-tab dashboard
+               // Get the dashboard id from the embed options
+               var dashboardId = instance.isMultiTab ? instance._getActiveChildDashboardId() : instance.embedOptions.dashboardId;
+
+               /* Add custom functionality for getting views from the dashboard */
+
+               // Call the API method ('getViewsByDashboardId') for getting the views and specify a callback function ('callBackFunction') to handle the response and perform further actions.
+               instance.getViewsByDashboardId(dashboardId, 'callBackFunction');
+          }
+     }
+});
+dashboard.loadDashboard();        
+```
+
 
 ## widgetSettings
 ### widgetSettings.beforeIconRender
@@ -516,6 +794,7 @@ var dashboard = BoldBI.create({
           onWidgetControlMenuClick: function (args) {
                // Write a code block to perform an operation after any option from control menu icon from widget banner is clicked.
           } 
+          dashboard.loadDashboard();
      }  
 });
 ```
@@ -1359,7 +1638,7 @@ dashboard.loadDatasource();
 
 ```js
 var dashboard = BoldBI.create({
-     mode: BoldBI.Mode.Datasource,
+     mode: BoldBI.Mode.Connection,
      dashboardSettings: {
           beforeDatasourceToolbarButtonsRendered: function (args) {
                //  Write a code block to remove an existing button before the datasource tool toolbar buttons were rendered.
@@ -1623,6 +1902,7 @@ This event will be triggered before the data source save action is called.
    
 ```js
 var dashboard = BoldBI.create({
+     mode: BoldBI.Mode.Datasource,
      beforeDatasourceSave: function (args) {
           // Write a code block to perform an operation before the data source save action is called 
      } 
@@ -1692,6 +1972,7 @@ This event will be triggered after the data source save action is called.
    
 ```js
 var dashboard = BoldBI.create({
+     mode: BoldBI.Mode.Datasource,
      afterDatasourceSave: function (args) {
           // Write a code block to perform an operation after the data source save action is called
      } 
@@ -1887,6 +2168,49 @@ var dashboard = BoldBI.create({
      } 
 });
 dashboard.loadPinboard();
+```
+
+## onError
+
+This event is used to catch the errors that may occur while embedding.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Access</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">args</td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">object</span></td>
+<td class="access">get</td>
+<td class="description">Holds the args Object like below. <br>
+ 1. args.errorStatus - Its boolean value if there is an error value is true. <br>
+ 2. args.StatusMessage - Holds the error details <br>
+ 3. args.StatusCode - Holds the status Code of the error.
+</td>
+</tr>
+</tbody>
+</table>
+
+**Example: Try to embed the designer in view mode.** 
+   
+```js
+var dashboard = BoldBI.create({
+     dashboardId: "5cb065f7-dabb-4b0c-9b45-c60a5730e963",
+     mode: BoldBI.Mode.view,
+     onError: function (args) {
+          // Expected Error details.
+          //args.errorStatus will contains true value.
+          //args.StatusMessage will contains "Error : Inavlid Embed Mode".
+          //args.StatusCode will contains 500 as statusCode     
+     } 
+});
+dashboard.loadDashboard();
 ```
 
 ## DashboardProperties

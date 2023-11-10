@@ -16,7 +16,7 @@ This topic explains how to activate the account and also how to startup the Bold
 
 Bold BI application can be activated either by using your login credentials or by offline unlock key.
 
-> **NOTE:** If you have already installed Bold Reports in your machine, please go to the [this section](/application-startup/#activate-bold-bi-license) to activate your Bold BI license.
+> **NOTE:** If you have already installed Bold Reports in your machine, please go to the [this section](#activate-bold-bi-license) to activate your Bold BI license.
 
 ## Using Login Credentials
 
@@ -87,7 +87,7 @@ While creating this new user account, a new group called `System Administrator` 
 * [Create Slideshows](/managing-resources/manage-slideshows/)
 * [Create Users](/managing-resources/manage-users/)
 * [Create Groups](/managing-resources/manage-groups/)
-* [Manage Permissions for users and groups](/working-with-dashboards/share-dashboards/manage-permissions/)
+* [Manage Permissions for users and groups](/managing-resources/manage-permissions/)
 
 By default, the new user account created is assigned to this group.
 

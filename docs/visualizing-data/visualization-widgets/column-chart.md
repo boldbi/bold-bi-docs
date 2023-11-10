@@ -6,7 +6,7 @@ canonical: "/visualizing-data/visualization-widgets/column-chart/"
 platform: bold-bi
 control: Column Chart
 documentation: ug
-lang: en
+
 ---
 
 # Column Chart
@@ -406,6 +406,17 @@ A Legend is a text used to describe the data plotted. This allows you to toggle 
 
 Enabling this option of Custom Legend Text will allow you to define a custom text (through the text area) to display for each legend series (selecting through the combo box) in chart.
 
+#### Legend Interactivity
+
+The chart `legend interactivity` option allows you to control the behavior of the chart legends. This provides an option to make chart legends non-clickable, which can be especially useful in scenarios where you do not want users to hide or show series data by clicking on the legend. This might also be useful when displaying critical pieces of data that should always be present for accuracy and context purposes.
+
+Disabling the Interactivity feature in the Legend Settings category does not allow you to click on the legends.
+
+![Legend Interactivity Disable](/static/assets/visualizing-data/visualization-widgets/images/column-chart/legend-interactivity-disable.png)
+Enabling the Interactivity feature in the Legend Settings category allows you to click on the legends
+
+![Legend Interactivity Enable](/static/assets/visualizing-data/visualization-widgets/images/column-chart/legend-interactivity-enable.png)
+
 ### Legend Label Color
 
 This allows you to change the chart legend title and label colors.
@@ -456,25 +467,33 @@ This option allows you to customize legend text based on the 'Text Width' proper
 
 This option allows you to render legend items without any wrap and trim.
 
-![Legend Overflow None in chart](/static/assets/visualizing-data/visualization-widgets/images/column-chart/ColumnChart_LegendNone.png)
+![Legend Overflow None Option in chart](/static/assets/visualizing-data/visualization-widgets/images/column-chart/legend-text-overflow-none-option.png)
+
+![Legend Overflow None in chart](/static/assets/visualizing-data/visualization-widgets/images/column-chart/legend-text-overflow-none.png)
 
 ***Trim***
 
 This option allows you to trim the legend items if its legend exceeds the 'Text Width' value.
 
-![Legend Overflow Trim in chart](/static/assets/visualizing-data/visualization-widgets/images/column-chart/ColumnChart_Legendtrim.png)
+![Legend Overflow Trim Option in chart](/static/assets/visualizing-data/visualization-widgets/images/column-chart/legend-text-overflow-trim-option.png)
+
+![Legend Overflow Trim in chart](/static/assets/visualizing-data/visualization-widgets/images/column-chart/legend-text-overflow-trim.png)
 
 ***Wrap***
 
 This option allows you to wrap legend items based on the 'Text Width' value.
 
-![Legend Overflow Wrap in chart](/static/assets/visualizing-data/visualization-widgets/images/column-chart/ColumnChart_Legendwrap.png)
+![Legend Overflow Wrap Option in chart](/static/assets/visualizing-data/visualization-widgets/images/column-chart/legend-text-overflow-wrap-option.png)
+
+![Legend Overflow Wrap in chart](/static/assets/visualizing-data/visualization-widgets/images/column-chart/legend-text-overflow-wrap.png)
 
 #### Text Width
 
-This option allows you to set a maximum width for the Legend Items and it is applicable only if text-overflow set to Trim or Wrap.
+This option allows you to set the maximum width for the Legend Items and it is applicable only if text-overflow is set as Trim or Wrap.
 
-![Legend Text Width in chart](/static/assets/visualizing-data/visualization-widgets/images/column-chart/ColumnChart_Legendwidth.png)
+![Legend Text Width Option in chart](/static/assets/visualizing-data/visualization-widgets/images/column-chart/legend-text-overflow-width-option.png)
+
+![Legend Text Width in chart](/static/assets/visualizing-data/visualization-widgets/images/column-chart/legend-text-overflow-width.png)
 
 If you uncheck the `Show Legend` property in the property panel, the dependent properties, which are **Legend color**, **Legend position**, **customization button** and **Legend title** are also hidden.
 
@@ -751,7 +770,7 @@ Color in column chart widget can be customized using the color settings availabl
 
 ![After applying conditional formatting](/static/assets/visualizing-data/visualization-widgets/images/column-chart/formatted-result.png)
 
-Refer to the following sections for the detailed steps on using the [Gradient](/visualizing-data/visualization-widgets/column-chart/#gradient-mode), [Rule](/visualizing-data/visualization-widgets/column-chart/#rule-based- condition-mode) and [individual](/visualizing-data/visualization-widgets/column-chart/#individual-mode.png) modes. 
+Refer to the following sections for the detailed steps on using the [Gradient](/visualizing-data/visualization-widgets/column-chart/#gradient-mode), [Rule](/visualizing-data/visualization-widgets/column-chart/#rule-based-condition-mode) and [individual](/visualizing-data/visualization-widgets/column-chart/#individual-mode) modes. 
 
 #### Gradient mode
 

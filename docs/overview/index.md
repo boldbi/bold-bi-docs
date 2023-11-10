@@ -5,7 +5,7 @@ description: Study the overview of Bold BI and know about its two ways of embedd
 canonical: "/overview/"
 platform: bold-bi
 documentation: ug
-lang: en
+
 ---
 
 # Overview of Bold BI

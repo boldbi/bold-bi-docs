@@ -129,4 +129,4 @@ You can edit, delete and re-authorize this account from the **Connected Accounts
 
 [Dashboard Designer Walkthrough](/getting-started/creating-dashboard/)
 
-[Infusionsoft Integration](https://www.boldbi.com/integrations/infusionsoft?utm_source=syncfusion&utm_medium=documentation&utm_campaign=boldbiinfusionsoftintegration)
+<a href="https://www.boldbi.com/integrations/infusionsoft?utm_source=syncfusion&utm_medium=documentation&utm_campaign=boldbiinfusionsoftintegration" target="_blank">Infusionsoft Integration</a>

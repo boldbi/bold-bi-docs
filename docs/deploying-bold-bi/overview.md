@@ -4,7 +4,6 @@ title:  Exploring Embedded BI - An Overview | Bold BI Learning
 description: Embedded BI is an on-premise solution for creating, managing and sharing interactive business dashboards.
 platform: bold-bi
 documentation: ug
-lang: en
 ---
 
 # Overview and system requirements for Bold BI
@@ -90,4 +89,4 @@ Follow these steps to install the Bold BI Embedded build:
 ## See Also
 
 * [**Installation and Deployment**](/deploying-bold-bi/deploying-in-windows/installation-and-deployment/)
-* [**Application Setup**](/deploying-bold-bi/application-startup/)
+* [**Application Setup**](/application-startup/)

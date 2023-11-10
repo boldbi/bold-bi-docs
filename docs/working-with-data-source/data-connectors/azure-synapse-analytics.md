@@ -63,6 +63,8 @@ Type while creating the data source needs to be azuresynapseanalytics.
 
 ### Parameters for creating Data Source
 
+> **NOTE:** The ability to provide join support is available only during the creation of a new data source. Join in edit connection mode is not supported.
+
    <table>
    <tr>
    <th>Parameters</th>
@@ -71,49 +73,102 @@ Type while creating the data source needs to be azuresynapseanalytics.
    <tr>
    <td>Servername</br></br>
    <b>required</b> </td>
-   <td>`string`</br></br>
+  <td><code>string</code></br></br>
    Server name or Host name of the connection</td>
    </tr>
    <tr>
    <td>Username</br></br>
    <b>required</b>  </td>
-   <td>`string`</br></br>
+  <td><code>string</code></br></br>
    A valid Username.</td>
    </tr>
    <tr>
    <td>Password</br></br>
    <b>required</b>  </td>
-   <td>`string`</br></br>
+  <td><code>string</code></br></br>
    A valid Password.</td>
    </tr>
    <tr>
    <td>Database</br></br>
    <b>required</b> </td>
-   <td>`string`</br></br>
+  <td><code>string</code></br></br>
    database which needs to be connected</td>
    </tr>
    <tr>
    <td>Schemaname</br></br>
    <b>required for table mode</b> </td>
-   <td>`string`</br></br>
+  <td><code>string</code></br></br>
    Enter a valid Schemaname</td>
    </tr>
    <tr>
    <td>Tablename</br></br>
    <b>required for table mode</b> </td>
-   <td>`string`</br></br>
+  <td><code>string</code></br></br>
    Enter a valid Tablename</td>
+   </tr>
+   <td>JoinType</br></br>
+   <b>Required For Join Info </b> </td>
+  <td><code>string</code></br></br>
+   Enter a valid JoinType For Example (Inner,Outer)</td>
+   </tr>
+   <tr>
+   <td>LeftTable</br></br>
+   <b>Required For Join Info </b> </td>
+  <td><code>string</code></br></br>
+   Enter a valid Left Table name </td>
+   </tr>
+   <tr>
+   <td>RightTable</br></br>
+   <b>Required For Join Info</b> </td>
+  <td><code>string</code></br></br>
+   Enter a valid Right Table name </td>
+   </tr>
+   <tr>
+   <td>LeftField</br></br>
+   <b>Required For Join Info</b> </td>
+  <td><code>string</code></br></br>
+   Enter a valid Left Table Column Name  </td>
+   </tr>
+   <tr>
+   <td>RightField</br></br>
+   <b>Required For Join Info</b> </td>
+  <td><code>string</code></br></br>
+   Enter a valid Right Table Column Name  </td>
+   </tr>
+   <tr>
+   <td>Condition</br></br>
+   <b>Required For Join Info</b> </td>
+  <td><code>string</code></br></br>
+   Enter a valid Condition For Example (AND,OR)  </td>
+   </tr>
+   <tr>
+   <td>LeftField</br></br>
+   <b>Required For Join Info</b> </td>
+  <td><code>string</code></br></br>
+   Enter a valid Left Table Column Name  </td>
+   </tr>
+   <tr>
+   <td>Operator</br></br>
+   <b>Required For Join Info</b> </td>
+  <td><code>string</code></br></br>
+   Enter a Valid Operator For Example (=,>=)  </td>
+   </tr>
+   <tr>
+   <td>Value</br></br>
+   <b>Optional For only Join Info  </b> </td>
+  <td><code>string</code></br></br>
+   Specifically choose the column values. </td>
    </tr>
    <tr>
    <td>Query</br></br>
    <b>required for code view mode</b> </td>
-   <td>`string`</br></br>
+  <td><code>string</code></br></br>
    Enter a valid Query</td>
    </tr>
    <tr>
    <td>AdvancedSettings</br></br>
    <b>optional</b> </td>
-   <td>`string`</br></br>
+  <td><code>string</code></br></br>
    Additional optional connection parameters can be provided. By default, it is empty.</td>
    </tr>
    <tr>
@@ -125,7 +180,7 @@ Type while creating the data source needs to be azuresynapseanalytics.
    <tr>
    <td>CommandTimeout</br></br>
    <b>optional</b> </td>
-   <td>`string`</br></br>
+  <td><code>string</code></br></br>
    Enter a valid Timeout for connection. By default, it is 300</td>
    </tr>
    <tr>
@@ -148,7 +203,7 @@ Type while creating the data source needs to be azuresynapseanalytics.
    <td>Name</br></br>
    <b>required</b> </br></br>
    </td>
-   <td>`string`</br></br>
+  <td><code>string</code></br></br>
    Name of the Expression</br></br>
    </td>
    </tr>
@@ -156,7 +211,7 @@ Type while creating the data source needs to be azuresynapseanalytics.
    <td>Expression</br></br></br></br>
    <b>required</b> </br></br>
    </td>
-   <td>`string`</br></br>
+  <td><code>string</code></br></br>
    <a href="/working-with-data-source/transforming-data/configuring-expression-columns/">
     <div style="height:100%;width:100%">
       Expression
@@ -181,7 +236,7 @@ Type while creating the data source needs to be azuresynapseanalytics.
    <td>Name</br></br>
    <b>required</b> </br></br>
    </td>
-   <td>`string`</br></br>
+  <td><code>string</code></br></br>
    Name of the Expression</br></br>
    </td>
    </tr>
@@ -189,7 +244,7 @@ Type while creating the data source needs to be azuresynapseanalytics.
    <td>Expression</br></br></br></br>
    <b>required</b> </br></br>
    </td>
-   <td>`string`</br></br>
+  <td><code>string</code></br></br>
    <a href="/working-with-data-source/transforming-data/configuring-expression-columns/">
     <div style="height:100%;width:100%">
       Expression
@@ -201,7 +256,7 @@ Type while creating the data source needs to be azuresynapseanalytics.
    <td>Action</br></br></br></br>
    <b>optional</b> </br></br>
    </td>
-   <td>`string`</br></br>
+  <td><code>string</code></br></br>
    add/delete/edit</br></br>
    By default, it is add </br></br>
    </td>
@@ -210,7 +265,7 @@ Type while creating the data source needs to be azuresynapseanalytics.
    <td>NewName</br></br>
    <b>optional</b> </br></br>
    </td>
-   <td>`string`</br></br>
+  <td><code>string</code></br></br>
    For renaming the expression. This is applicable only if the Action is <b>edit</b> </br></br>
    </td>
    </tr>
@@ -229,6 +284,64 @@ Type while creating the data source needs to be azuresynapseanalytics.
 "Database": "string",
 "Schemaname": "string",
 "Tablename": "string",
+"AdvancedSettings": "string",
+"IsEnableSSL": false,
+"CommandTimeout": "string",
+"Expressions" : [{
+"Name": "Expression1",
+"Expression" : "SUM(numeric expression)"
+    },
+    {
+"Name": "Expression2",
+"Expression" :  "UPPER(string expression)"
+}]
+}
+
+```
+
+#### For creating connection with multiple tables :
+
+``` json
+"Connection":
+{
+"Servername": "string",
+"Port": "string",
+"Username": "string",
+"Password": "string",
+"Database": "string",
+"Tables": [
+            {
+                "Tablename": "string",
+                "Schemaname": "string"
+            },
+            {
+                "Tablename": "string",
+                "Schemaname": "string"
+            }
+        ],
+"JoinInfo": [
+            {
+                "JoinType": "string",
+                "LeftTable": "string",
+                "RightTable": "string",
+                "JoinFieldInfos": [
+                    {
+                        "Condition": "string",
+                        "LeftField": "string",
+                        "Operator": "string",
+                        "RightField": "string",
+                        "Value": "string"
+                    },
+                    {
+                        "Condition": "string",
+                        "LeftField": "string",
+                        "Operator": "string",
+                        "RightField": "string",
+                        "Value": "string"
+                    }
+                ]
+            }
+        ],
 "AdvancedSettings": "string",
 "IsEnableSSL": false,
 "CommandTimeout": "string",

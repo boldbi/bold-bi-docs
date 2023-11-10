@@ -304,6 +304,17 @@ A Legend is a text used to describe the data plotted. This allows you to toggle 
 
 ![chart legends](/static/assets/visualizing-data/visualization-widgets/images/scatter-chart/show-legend.png)
 
+#### Legend Interactivity
+
+The chart `legend interactivity` option allows you to control the behavior of the chart legends. This provides an option to make chart legends non-clickable, which can be especially useful in scenarios where you do not want users to hide or show series data by clicking on the legend. This might also be useful when displaying critical pieces of data that should always be present for accuracy and context purposes.
+
+Disabling the Interactivity feature in the Legend Settings category does not allow you to click on the legends.
+
+![Legend Interactivity Disable](/static/assets/visualizing-data/visualization-widgets/images/scatter-chart/legend-interactivity-disable.png)
+Enabling the Interactivity feature in the Legend Settings category allows you to click on the legends
+
+![Legend Interactivity Enable](/static/assets/visualizing-data/visualization-widgets/images/scatter-chart/legend-interactivity-enable.png)
+
 #### Legend Position
 
 A Legend is a text used to describe the data plotted. This option allows you to place the legend at the position of **Left, Right, Top,** and **Bottom**.
@@ -391,6 +402,28 @@ This allows you to edit the primary axis title. It will reflect in y-axis name o
 This option allows you to format primary axis values from the formatting details provided using 'Axis Format' button. For more details, refer to this [measure format](/visualizing-data/working-with-widgets/formatting-measure-type-column/).
 
 ![Formatting axis](/static/assets/visualizing-data/visualization-widgets/images/scatter-chart/primary-axis-format.png)
+
+### Axis Range Settings
+
+By default, the chart control automatically determines the minimum, maximum, and interval values for the axis based on the data configuration. 
+
+![Axis Range Customization](/static/assets/visualizing-data/visualization-widgets/images/scatter-chart/default.png)
+
+The axis range property allows you to manually set the **Minimum**, **Maximum**, and **Interval** values of the primary axis through the `Axis Range Settings` dialog.
+
+![Axis Range Customization](/static/assets/visualizing-data/visualization-widgets/images/scatter-chart/primaryaxis_propertypanel.png)
+
+![Axis Range Customization](/static/assets/visualizing-data/visualization-widgets/images/scatter-chart/popup.png)
+
+**For Example :** This property will customize the scatter chart primary axis range value. We set the primary axis range minimum as 0, maximum as 300, and interval as 50.
+
+![Axis Range Customization](/static/assets/visualizing-data/visualization-widgets/images/scatter-chart/editpopup.png)
+
+It will be reflected in the y-axis of the scatter chart.
+
+![Axis Range Customization](/static/assets/visualizing-data/visualization-widgets/images/scatter-chart/final.png).
+
+**Note:** This property will be hidden while the `Show Y-Axis` property is disabled.
 
 #### Opposed Axis
 

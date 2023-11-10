@@ -23,12 +23,12 @@ This section explains how to create a webhook in the Bold BI Embedded.
 2. Provide the required webhook details on the `Add Webhook page`.
 
    * Provide a suitable `Name` for the webhook and `Description`.
-   * Select the event to trigger the webhook. For more details click [here](/webhook/#events).
+   * Select the event to trigger the webhook. For more details click [here](#events).
    * Select the content type in the format in which you want to send the data.
    * Enter the webhook endpoints where the webhook data will be received.
-   * Enable authentication to verify the webhook sent by the Bold BI. This is optional. For more details click [here](/webhook/#webhook-authentication).
-   * Enable singing to verify the integrity of the payload at the receiver end. This is optional. For more details click [here](/webhook/#webhook-signing).
-   * Select the payload of a event to send in webhook data. For more details click [here](/webhook/#payload).
+   * Enable authentication to verify the webhook sent by the Bold BI. This is optional. For more details click [here](#webhook-authentication).
+   * Enable singing to verify the integrity of the payload at the receiver end. This is optional. For more details click [here](#webhook-signing).
+   * Select the payload of a event to send in webhook data. For more details click [here](#payload).
 
 	![Webhook Details Page](/static/assets/webhook/images/webhook-details-page.png)
 

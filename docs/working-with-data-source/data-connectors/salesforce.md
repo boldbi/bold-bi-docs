@@ -108,8 +108,8 @@ You can edit, delete and re-authorize this account from the **Connected Accounts
 
 [Dashboard Designer Walkthrough](/getting-started/creating-dashboard/)
 
-[Salesforce Integration](https://www.boldbi.com/integrations/salesforce?utm_source=syncfusion&utm_medium=documentation&utm_campaign=boldbisalesforceintegration)
+[]<a href="https://www.boldbi.com/integrations/salesforce?utm_source=syncfusion&utm_medium=documentation&utm_campaign=boldbisalesforceintegration" target="_blank">Salesforce Integration</a>
 
-[Blog Post](https://www.boldbi.com/blog/measuring-email-campaign-performance-with-mailchimp-and-salesforce-crm-data-using-bold-bi)
+<a href="https://www.boldbi.com/blog/measuring-email-campaign-performance-with-mailchimp-and-salesforce-crm-data-using-bold-bi" target="_blank"> Blog Post</a>
 
-[How to configure connected app in Salesforce](https://www.boldbi.com/kb/security/how-to-configure-connected-app-in-salesforce)
+<a href="https://www.boldbi.com/kb/security/how-to-configure-connected-app-in-salesforce" target="_blank">How to configure connected app in Salesforce</a>

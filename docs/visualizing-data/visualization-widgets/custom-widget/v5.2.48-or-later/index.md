@@ -10,7 +10,7 @@ documentation: ug
 
 This section explains about how to add the user defined widgets in the dashboard in the release version of 5.2.48 or later
 
-[Custom Widget Creation](/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later//create-new-custom-widget/)
+[Custom Widget Creation](/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/create-new-custom-widget/)
 
 [Edit Custom Widget](/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/editing-existing-custom-widget/)
 

@@ -6,7 +6,7 @@ canonical: "/visualizing-data/visualization-widgets/radial-gauge/"
 platform: bold-bi
 control: Radial Gauge
 documentation: ug
-lang: en
+
 ---
 
 # Configuring Radial Gauge

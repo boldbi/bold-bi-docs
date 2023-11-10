@@ -23,3 +23,5 @@ You can explore the dashboard settings in detail here,
 [Usage Analytics](/site-administration/dashboard-settings/usage-analytics/)
 
 [Deployment Dashboards](/site-administration/dashboard-settings/deployment-dashboard/)
+
+[Lock Resource Synchronization](/site-administration/dashboard-settings/lock-resource-synchronization/)

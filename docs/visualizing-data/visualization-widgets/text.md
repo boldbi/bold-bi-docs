@@ -26,6 +26,17 @@ Drag and drop the `Text` control icon from the toolbox to the design panel. You 
 
 ![properties](/static/assets/visualizing-data/visualization-widgets/images/text/propertiesbutton.png)
 
+### Container Padding
+
+This allows you to customize the padding of the widget container. The default value of the padding is 16.
+
+![Padding](/static/assets/visualizing-data/visualization-widgets/images/text/propertypanel.png)
+
+If we set padding as 0, The RTE widget will be render like below
+
+![Padding](/static/assets/visualizing-data/visualization-widgets/images/text/rtewidget.png)
+
+
 ### Container Appearance
 
 ### Show Background Image

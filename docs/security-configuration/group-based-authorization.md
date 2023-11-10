@@ -80,6 +80,10 @@ Let us see the configuring settings for OAuth 2.0 and OpenID import, importing t
     <td align="left">embed_user_email</td>
     <td align="left">Need to set your user mail, which used in your provider for this user</td>
     </tr>
+    <tr>
+    <td align="left">embed_user_import</td>
+    <td align="left">The default value is false, and the parameter is optional. This parameter needs to be set as true to enable the auto import of the user into Bold BI from an external group.</td>
+    </tr>
     </tbody>
     </table>
 
@@ -111,8 +115,18 @@ Let us see the configuring settings for OAuth 2.0 and OpenID import, importing t
     </tbody>
     </table>
 
+### Enabling user import with group-based authorization
+
+In an embedding authorization action method, you can set the `embed_user_import` attribute to true if you want to import the user from the external group while accessing the resource by group-based authorization.
+
+**Example:** `&embed_group_access=true&embed_auth_provider=GlobalOAuth&embed_user_id=1212121212&embed_user_email=user@domain.com&embed_user_import=true` 
+
+![Group Based Authorization](/static/assets/javascript/images/User_import_group-based-auth.png)
+
+> **NOTE:** Currently, the user auto-import support is provided only for `Amazon Cognito` and `Azure AD `configurations.
+
 ### Sample links
 The sample applications for ASP.NET Core, ASP.NET MVC, and Angular. You can get download from the following links and update your group access, auth provider, user id, and user email in the authorization server code block.
-* [ASP.NET Core](/embedding-sdk/samples/asp-net-core/)
-* [ASP.NET MVC](/embedding-sdk/samples/asp-net-mvc/)
-* [Angular with ASP.NET Core](/embedding-sdk/samples/angular/)
+* [ASP.NET Core](/embedding-options/embedding-sdk/samples/asp-net-core/)
+* [ASP.NET MVC](/embedding-options/embedding-sdk/samples/asp-net-mvc/)
+* [Angular with ASP.NET Core](/embedding-options/embedding-sdk/samples/v3.2.16/angular/)

@@ -4,7 +4,6 @@ title: API Reference – Members - JavaScript Embedding | Bold BI
 description: Explore the JavaScript API reference for members that can be used for embedding in Bold BI deployed in your server.
 platform: bold-bi
 documentation: UG
-lang: en
 ---
 
 # Members
@@ -505,7 +504,7 @@ Specifies whether to show or hide the `Auto Recover` Popup in the Dashboard Desi
 var dashboard = BoldBI.create({
      disableAutoRecover: false,
 });
-dashboard.loadDashboard();
+dashboard.loadDesigner();
 ```
 
 <h2 class="doc-prop-wrapper" id="isbingmaprequired" data-Path="isbingmaprequired-isBingMapRequired">
@@ -522,20 +521,63 @@ dashboard.loadDashboard();
 
 Specifies whether the bingMap related files have to download or not.
 
+**NOTE:** You should set it as true if your dashboard contains a bingMap widget.
+
 <br>
 
 **Default value** 
 
-<li>true</li><br> 
+<li>false</li><br> 
 
 **Example** 
    
 ```js
 var dashboard = BoldBI.create({
-     isBingMapRequired: true,
+     isBingMapRequired: false,
 });
 dashboard.loadDashboard();
 ```
+
+<h2 class="doc-prop-wrapper" id="widgetlist" data-Path="widgetlist-widgetList">
+<a href="#widgetlist" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+</svg>
+</a><span class='doc-prop-name'>widgetList</span>
+
+<span class="doc-prop-type"> `Array`
+</span>
+
+</h2>
+	
+
+This member will help to load the specific widgets of the single dashboard by a single instance call.
+
+<br>
+
+
+<br>
+
+**Default value** : `empty`
+
+<li>[]</li><br>
+
+**Example** 
+   
+```js  
+<div id="widget1"></div> 
+<div id="widget2"></div> 
+<div id="widget3"></div> 
+<script>  
+var dashboard = BoldBI.create({
+      dashboardId: "5cb065f7-dabb-4b0c-9b45-c60a5730e963",
+      widgetList: [{widgetName: "Medal details by Country", containerId: "widget1" },
+                  {widgetName: "Total Medals by Country", containerId: "widget2" },
+                  {widgetName: "Country", containerId: "widget3" }],
+     });
+dashboard.loadMultipleWidgets();
+</script>
+```	
 
 ## Set a Culture for the Current User in Embedding
 
@@ -708,14 +750,14 @@ Specifies whether to show or hide the `Theme` icon in the dashboard banner.
 
 **Default value** 
 
-<li>true</li><br>
+<li>false</li><br>
 
 **Example** 
    
 ```js
 var dashboard = BoldBI.create({
      dashboardSettings: {
-          enableTheme: true,
+          enableTheme: false,
      }
 });
 dashboard.loadDashboard();
@@ -902,6 +944,38 @@ var dashboard = BoldBI.create({
 dashboard.loadDesigner();
 ```
 
+<h3 class="doc-prop-wrapper" id="dashboardsettingsfontfamily" data-Path="dashboardsettingsfontfamily-dashboardSettings.fontFamily">
+<a href="#dashboardsettingsfontfamily" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+</svg>
+</a><span class='doc-prop-name'>dashboardSettings.fontFamily</span>
+
+<span class="doc-prop-type"> `string`
+</span>
+
+</h3>
+
+The Fontfamily member allows you to customize the font of the Bold BI embedded modules like the viewer, designer, data source, and pinboard embedding.
+<br>
+
+**Default value** : `empty` 
+
+<li>""</li><br>
+
+> **NOTE:** Before you customize the font in embedding, you must upload the font file to the Bold BI Server. Please refer to this [link](/multi-tenancy/site-administration/look-and-feel-settings/font/) for more details about uploading the font family file. In embedding, set the name you provided for the font name while uploading the font file to the server.
+
+**Example** 
+
+```js
+var dashboard = BoldBI.create({
+     dashboardSettings: {
+          fontFamily : "Patrick-hand"
+     }
+});
+dashboard.loadDashboard();
+```
+
 ## dashboardSettings.widgetsPanel
 
 <h3 class="doc-prop-wrapper" id="dashboardsettingswidgetspanelhidedefaultwidgets" data-Path="dashboardsettingswidgetspanelhidedefaultwidgets-dashboardSettings.widgetsPanel.hideDefaultWidgets">
@@ -1082,6 +1156,174 @@ var dashboard = BoldBI.create({
      dashboardSettings: {
           viewDataSettings :{
             showAllColumns: false,//By default, show all columns is not checked in dashbaord Viewer.
+          }
+     }
+});
+dashboard.loadDashboard();
+```
+
+## dashboardSettings.filterOverviewSettings
+
+<h3 class="doc-prop-wrapper" id="dashboardsettingsfilteroverviewsettingsshowsaveicon" data-Path="dashboardsettingsfilteroverviewsettingsshowsaveicon-dashboardSettings.filterOverviewSettings.showSaveIcon">
+<a href="#dashboardsettingsfilteroverviewsettingsshowsaveicon" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+</svg>
+</a><span class='doc-prop-name'>dashboardSettings.filterOverviewSettings.showSaveIcon</span>
+
+<span class="doc-prop-type"> `boolean`
+</span>
+
+</h3>
+
+Specify whether to show or hide the Save option in `filter overview` in the dashboard banner.
+
+<br>
+
+**Default value** 
+
+<li>false</li><br>
+
+**Example** 
+```js
+var dashboard = BoldBI.create({
+     mode: BoldBI.Mode.View,
+     dashboardSettings: {
+          filterOverviewSettings :{
+            showSaveIcon: true,// To enable save option in filter overview
+          }
+     }
+});
+dashboard.loadDashboard();
+```
+
+<h3 class="doc-prop-wrapper" id="dashboardsettingsfilteroverviewsettingsshowsaveasicon" data-Path="dashboardsettingsfilteroverviewsettingsshowsaveasicon-dashboardSettings.filterOverviewSettings.showSaveAsIcon">
+<a href="#dashboardsettingsfilteroverviewsettingsshowsaveasicon" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+</svg>
+</a><span class='doc-prop-name'>dashboardSettings.filterOverviewSettings.showSaveAsIcon</span>
+
+<span class="doc-prop-type"> `boolean`
+</span>
+
+</h3>
+
+Specify whether to show or hide the Save As option in `filter overview` in the dashboard banner.
+
+<br>
+
+**Default value** 
+
+<li>false</li><br>
+
+**Example** 
+```js
+var dashboard = BoldBI.create({
+     mode: BoldBI.Mode.View,
+     dashboardSettings: {
+          filterOverviewSettings :{
+            showSaveAsIcon: true,// To enable save as option in filter overview
+          }
+     }
+});
+dashboard.loadDashboard();
+```
+
+<h3 class="doc-prop-wrapper" id="dashboardsettingsfilteroverviewsettingsshowviewsavedfiltericon" data-Path="dashboardsettingsfilteroverviewsettingsshowviewsavedfiltericon-dashboardSettings.filterOverviewSettings.showViewSavedFilterIcon">
+<a href="#dashboardsettingsfilteroverviewsettingsshowviewsavedfiltericon" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+</svg>
+</a><span class='doc-prop-name'>dashboardSettings.filterOverviewSettings.showViewSavedFilterIcon</span>
+
+<span class="doc-prop-type"> `boolean`
+</span>
+
+</h3>
+
+Specify whether to show or hide the View Saved Filter option in `filter overview` in the dashboard banner.
+
+<br>
+
+**Default value** 
+
+<li>false</li><br>
+
+**Example** 
+```js
+var dashboard = BoldBI.create({
+     mode: BoldBI.Mode.View,
+     dashboardSettings: {
+          filterOverviewSettings :{
+            showViewSavedFilterIcon: true,// To enable view saved filters option in filter overview
+          }
+     }
+});
+dashboard.loadDashboard();
+```
+
+<h3 class="doc-prop-wrapper" id="dashboardsettingsfilteroverviewsettingsviewid" data-Path="dashboardsettingsfilteroverviewsettingsviewid-dashboardSettings.filterOverviewSettings.viewId">
+<a href="#dashboardsettingsfilteroverviewsettingsviewid" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+</svg>
+</a><span class='doc-prop-name'>dashboardSettings.filterOverviewSettings.viewId</span>
+
+<span class="doc-prop-type"> `string`
+</span>
+
+</h3>
+
+Specify the ID of the view that has been saved on the dashboard.
+
+<br>
+
+**Default value** 
+
+<li>""</li><br>
+
+**Example** 
+```js
+var dashboard = BoldBI.create({
+     mode: BoldBI.Mode.View,
+     dashboardSettings: {
+          filterOverviewSettings :{
+            viewId: '0732e6c9-f7d6-469a-85e0-a7a4b22dbb2a' // View ID
+          }
+     }
+});
+dashboard.loadDashboard();
+```
+
+<h3 class="doc-prop-wrapper" id="dashboardsettingsfilteroverviewsettingsviewname" data-Path="dashboardsettingsfilteroverviewsettingsviewname-dashboardSettings.filterOverviewSettings.viewName">
+<a href="#dashboardsettingsfilteroverviewsettingsviewname" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+</svg>
+</a><span class='doc-prop-name'>dashboardSettings.filterOverviewSettings.viewName</span>
+
+<span class="doc-prop-type"> `string`
+</span>
+
+</h3>
+
+Specify the name of the view that has been saved on the dashboard.
+
+<br>
+
+**Default value** 
+
+<li>""</li><br>
+
+**Example** 
+
+```js
+var dashboard = BoldBI.create({
+     mode: BoldBI.Mode.View,
+     dashboardSettings: {
+          filterOverviewSettings :{
+            viewName: 'Filter View' // View name
           }
      }
 });
@@ -1464,7 +1706,7 @@ dashboard.loadDashboard();
 </h3>
 
     
-This property, holds the headers needs to be sent in your application while connecting to the authorization server. 
+The `authorizationServer.headers` parameter, which is optional, is used to transmit any custom data or header values needed to be delivered to your embedding application's `AuthorizationServer`. As a result, you may find this value in the headers of the Authorization Server API. Refer to that Knowledge Base article [here](https://support.boldbi.com/kb/article/12507/how-to-pass-custom-data-to-authorization-server).
 
 <br>
 

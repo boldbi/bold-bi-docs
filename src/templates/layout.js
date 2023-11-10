@@ -705,7 +705,7 @@ export default class LayoutTemplate extends React.Component {
     if (!header) {
       mdContentClass += " doc-no-right-toc";
     }
-      var metaRobot = { name: 'robots', content: 'nofollow' }
+      var metaRobot = { name: 'robots', content: 'follow' }
     return (
       <Layout>
         <div>

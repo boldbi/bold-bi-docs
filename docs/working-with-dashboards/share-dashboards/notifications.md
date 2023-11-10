@@ -5,7 +5,7 @@ description: Learn how to configure notifications to notify the users of comment
 canonical: "/working-with-dashboards/share-dashboards/notifications/"
 platform: bold-bi
 documentation: ug
-lang: en
+
 ---
 
 # Notifications for comments on the dashboards and widgets

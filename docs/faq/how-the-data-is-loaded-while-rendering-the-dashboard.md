@@ -5,7 +5,7 @@ description: Learn the different modes of data loading - Live and Extract, avail
 canonical: "/faq/how-the-data-is-loaded-while-rendering-the-dashboard/"
 platform: bold-bi
 documentation: ug
-lang: en
+
 ---
 # How the data is loaded while rendering the dashboard?
 In this post, we will discuss about how the data is loaded in your dashboard.

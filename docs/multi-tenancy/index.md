@@ -4,7 +4,7 @@ title: Multitenancy – Embedded BI | Bold BI Documentation
 description: Explore the multi-tenant support in Bold BI Enterprise that lets you deploy multiple tenants in same machine isolated from each other.
 platform: bold-bi
 documentation: ug
-lang: en
+
 ---
 
 # Overview 	
@@ -55,7 +55,7 @@ You can learn more about adding a new user to tenant [here](/managing-resources/
 
 You can share the dashboard to user in same tenant or other tenant by two options:
 1.	Within same tenant, you can share the dashboard to other user in same tenant by granting read permission to the particular dashboard. You can learn more about
-[Manage Permissions](/working-with-dashboards/share-dashboards/manage-permissions/) here. 
+[Manage Permissions](/managing-resources/manage-permissions/) here. 
 
 2.	If you want to share the dashboard between other tenant by making the dashboard as public and share the dashboard link URL to users of other tenant. You can learn more about [Share Dashboard](/working-with-dashboards/share-dashboards/public-dashboards/) here.
  

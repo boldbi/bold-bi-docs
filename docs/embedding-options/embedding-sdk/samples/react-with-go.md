@@ -1,10 +1,9 @@
 ---
 layout: post
-title:  Embedded SDK v3.3.40 React with Go Sample | Bold BI Docs
-description: Explore the React JS-based embedding with sample application in Go supported since v3.3.40 of Bold BI.
+title: Embedding Analytics with React and Go | Bold BI Docs
+description: Learn how to embed an analytics dashboard with a React and Go application using Bold BI Embed SDK and try it yourself.
 platform: bold-bi
 documentation: ug
-lang: en
 ---
 
 # Bold BI Dashboards embedding in React with Go using Embedded SDK
@@ -12,245 +11,215 @@ lang: en
 A GitHub link has been provided to [get](https://github.com/boldbi/react-with-go-sample) the sample application, which demonstrates the rendering of dashboard available in your Bold BI server and followed by steps to create a new embedding application in the `React` with `Go` on your own. 
 
 > **NOTE:** The best way to get started would be reading the [Getting Started](/getting-started/embedding-in-your-application/) section of the documentation to start using first. The `Getting Started` guide gives you enough information that you need to know before working on the sample. 
+
+## Requirements/Prerequisites
+
+* [Go installer](https://go.dev/dl/)
+* [Visual Studio Code](https://code.visualstudio.com/download)
+* [Node.js](https://nodejs.org/en/)
+
+> **NOTE:** Node.js v14.16 to v18.18 are supported.
+
 ## How to run the sample
 
-1. Please [get](https://github.com/boldbi/react-with-go-sample) the React with Go Application.   
+1. Please get the [React with Go](https://github.com/boldbi/react-with-go-sample) Application.   
 
-2. Here, the React application act as a client and the Go application act as a server since we need to set the following properties in the `DashboardListing.js` file in the react app as follows.
-	![Embed Properties In App Component](/static/assets/javascript/sample/images/react-go-props.png)  
-    <meta charset="utf-8"/>
-    <table>
-      <tbody>
-        <tr>
-            <td align="left">siteIdentifier</td>
-            <td align="left">For Bold BI Enterprise edition, it should be like <code>site/site1</code>. For Bold BI Cloud, it should be empty string.</td>
-        </tr>
-        <tr>
-            <td align="left">rootUrl</td>
-            <td align="left">Dashboard Server BI URL (ex: http://localhost:5000/bi, http://demo.boldbi.com/bi)</td>
-        </tr>
-        <tr>
-            <td align="left">authorizationUrl</td>
-            <td align="left">Url of the GetDetails action in the Go application(http://localhost:8086/getDetails). Learn more about authorize server <a href='/security-configuration/authorize-server/'>here.</a></td>
-        </tr>
-        <tr>
-            <td align="left">environment</td>
-            <td align="left">Your Bold BI application environment. (If Cloud, you should use </code>cloud</code>, if  Enterprise, you should use <code>enterprise</code>)</td>
-        </tr>
-        <tr>
-            <td align="left">DashboardId</td>
-            <td align="left">Set the item id of the dashboard to embed from BI server. </td>
-        </tr>
-      </tbody>
-    </table>
+2. Please ensure you have enabled embed authentication on the `embed settings` page. If it is not enabled, please refer to the following image or detailed [instructions](https://help.boldbi.com/site-administration/embed-settings/#get-embed-secret-code) to enable it.
 
-3. You could get the item id of the dashboard from the BI server. Please refer to this [link](/working-with-dashboards/share-dashboards/get-dashboard-link/#get-link) and the following screenshot.  
-    ![Get Dashboard Id](/static/assets/javascript/sample/images/get-dashboard-id.png#max-width=55%)
+   ![Embed Settings](/static/assets/javascript/sample/images/embed-settings.png)
 
-4. In the `main.go` of the Go application, you need to set the UserEmail and EmbedSecret properties.
-    ![Embed Properties](/static/assets/javascript/sample/images/react-go-main.png)
+3. To download the `embedConfig.json` file, please follow this [link](https://help.boldbi.com/site-administration/embed-settings/#get-embed-configuration-file) for reference. Additionally, refer to the following image for visual guidance.
+    
+   ![EmbedSettings image](/static/assets/javascript/sample/images/embed-settings-download.png) 
+   ![EmbedConfig Properties](/static/assets/javascript/sample/images/prop-core.png)
 
-    <meta charset="utf-8"/>
-    <table>
-      <tbody>
-        <tr>
-            <td align="left">UserEmail</td>
-            <td align="left">UserEmail of the Admin in your Bold BI, which would be used to get the dashboard details from BI server</td>
-        </tr>
-        <tr>
-            <td align="left">EmbedSecret</td>
-            <td align="left">You could get your EmbedSecret key from Embed tab by enabling <code>Enable embed authentication</code> in <a href='/site-administration/embed-settings/'> Administration page</a> </td>
-        </tr>
-      </tbody>
-    </table>
+4. Copy the downloaded `embedConfig.json` file and paste it into the designated [location](https://github.com/boldbi/react-with-go-sample/tree/master/Go) within the application. Please ensure you have placed it in the application as shown in the following image.
 
-5. Then, run your Go application and as well as the React Application.
+    ![EmbedConfig Location Image](/static/assets/javascript/sample/images/react-go-embedconfig.png)
 
-6. The dashboard can be rendered in design mode or created with the following changes in the `renderDashboard()` method.
-
-    ```js
-    renderDashboard() {
-        this.dashboard= BoldBI.create({
-          serverUrl: rootUrl + siteIdentifier,
-          dashboardId: dashboardId, //Provide the item id to render it in the design mode and create a dashboard to remove this property.
-          embedContainerId: "dashboard",
-          embedType: BoldBI.EmbedType.Component,
-          environment: BoldBI.Environment.Enterprise, // If Cloud, you should use BoldBI.Environment.Cloud
-          mode: BoldBI.Mode.Design,
-          width:"100%",
-          height: window.innerHeight + 'px',
-          expirationTime:100000,
-          authorizationServer: {
-            url:authorizationUrl
-          }
-        });
-        this.dashboard.loadDesigner();
-      }
-    ```
     <meta charset="utf-8"/>
     <table>
     <tbody>
     <tr>
-    <td align="left">serverUrl</td>
-    <td align="left">Dashboard Server BI URL (ex: http://localhost:5000/bi/site/site1, http://dashboard.syncfusion.com/bi/site/site1)</td>
+    <td align="left">ServerUrl</td> 
+    <td align="left">Dashboard Server BI URL (ex: http://localhost:5000/bi, http://demo.boldbi.com/bi)</td>
     </tr>
     <tr>
-    <td align="left">dashboardId</td>
-    <td align="left">Provide the dashboard id of the dashboard you want to embed in view or edit mode. Ignore this property to create new dashboard.</td>
+    <td align="left">SiteIdentifier</td>
+    <td align="left">For Bold BI Enterprise edition, it should be like <code>site/site1</code>. For Bold BI Cloud, it should be empty string.</td>
     </tr>
     <tr>
-    <td align="left">embedContainerId</td>
-    <td align="left">Container Id in which dashboard renders.It should not contain hypen.</td>
+    <td align="left">Environment</td>
+    <td align="left">Your Bold BI application environment. (If it is cloud analytics server, use <code>BoldBI.Environment.Cloud</code>; if it is your own server, use <code>BoldBI.Environment.Enterprise</code>).</td>
     </tr>
     <tr>
-    <td align="left">mode</td>
-    <td align="left">In which mode you want to render dashboard. It can either be 'View' or 'Design' mode. </td>
+    <td align="left">DashboardId</td>
+    <td align="left">Item id of the dashboard to be embedded in your application.</td>
     </tr>
     <tr>
-    <td align="left">expirationTime</td>
-    <td align="left">Set the duration for the token to be alive.</td>
+    <td align="left">EmbedSecret</td>
+    <td align="left">Get your EmbedSecret key from the Embed tab by enabling the <code>Enable embed authentication</code> in the <a href='/site-administration/embed-settings/'>Administration page</a></td>
     </tr>
     <tr>
-    <td align="left">authorizationServer</td>
-    <td align="left">Url of the 'GetDetails' action in the application.</td>
+    <td align="left">UserEmail</td>
+    <td align="left">UserEmail of the Admin in your Bold BI, which would be used to get the dashboard</td>
+    </tr>
+    <tr>
+    <td align="left">ExpirationTime</td>
+    <td align="left">Token expiration time. (In the EmbedConfig.json file, the default token expiration time is 10000 seconds).</td>
     </tr>
     </tbody>
     </table>
 
+
+5. Open the `Go` sample in Visual Studio Code.
+
+6. Run the back-end `Go` sample using the following command `go run main.go`.
+
+7. Open the `React` sample in a new window of Visual Studio Code.
+
+8. To install all dependent packages, use the following command `npm install`.
+
+9. Run your `React` sample using the following command `npm start`.
+
+10. The dashboard can be editable in design mode and create a new dashboard with the following changes in the `renderDashboard()` method.
+
+     <meta charset="utf-8"/>
+     <table>
+     <tbody>
+     <td align="left">mode</td>
+     <td align="left">In which mode do you want to render the dashboard? It can either be <code>BoldBI.Mode.View</code> or <code>BoldBI.Mode.Design</code> mode.         </td>
+     </tr>
+     <tr>
+     <td align="left">authorizationServer</td>
+     <td align="left">Url of the <code>authorizationServerAPI</code> action in the application.</td>
+     </tr>
+      <tr>
+      <td align="left">RenderDesigner</td>
+      <td align="left">loadDesigner()</td>
+        </tr>
+     </tbody>
+     </table>
+
+     ```js
+           renderDashboard(data) {
+                 this.dashboard= BoldBI.create({
+                 serverUrl: data.ServerUrl+"/" + data.SiteIdentifier,
+                 dashboardId: data.DashboardId,
+                 embedContainerId: "dashboard",
+                 embedType: data.EmbedType,
+                 environment: data.Environment,
+                 mode:BoldBI.Mode.View,
+                 width:"100%",
+                 height: window.innerHeight + 'px',
+                 expirationTime:100000,
+                 authorizationServer: {
+                     url: authorizationUrl
+                 }
+             });
+ 
+             this.dashboard.loadDashboard();                     
+         }
+ 
+      ```
+
 ## How this sample works
 
-1. Based on the `dashboardId` provided in the `DashboardListing.js`, you will authorize the server by calling the `GetEmbedDetails` function using the `AuthorizeURL(http://localhost:8086/getDetails)` with the provided `EmbedProperties` values. 
-    ![Get Embed Details](/static/assets/javascript/sample/images/react-go-authorize.png)
+1. When the `componentDidMount` function is triggered in a front end React application, it invokes the `/getServerDetails` endpoint. This endpoint fetches data from the `embedConfig.json` file. If the JSON file cannot be found, an error message will be shown.
 
-2. In the above authorization, the `SignatureUrl` has been generated with the provided `Embed Secret key` and validated the embed details in Bold BI. Once details are validated, the dashboard starts to render.  
-    ![Get Signature Url](/static/assets/javascript/sample/images/react-go-signature.png)
+   ![GetServerDetails](/static/assets/javascript/sample/images/react-go-getdetails.png)
 
-3. In the `DashboardListing.js`, change the dashboard Id of the respective dashboard as you wish to embed. 
-    ![Set Dashboard Id](/static/assets/javascript/sample/images/react-go-dashboard.png)  
+2. The dashboard will be rendered using the data obtained from the `/getserverdetails` endpoint.
+ 
+   ![Render Dashboard](/static/assets/javascript/sample/images/react-go-renderDashboard.png)
+
+3. Before rendering, the `authorizationUrl` is called, which redirects to the `AuthorizationServer` action, which generates the `EmbedSignature` using the embed secret from the `embedConfig.json`.
+    ![Authorization Server](/static/assets/javascript/sample/images/react-go-authorizeserver.png)  
+  
+4. These details will be sent to the Bold BI server and get validated there. Once the details are validated, the dashboard starts to render.
 
 ## Steps to create new React with Go application to embed dashboard
- 1. Install the `nodeJS` in application using [link](https://nodejs.org/en/download/).
+1. Create a folder in the desired location and open it in the **Visual Studio Code**. 
 
- 2. Create a react application using the command `npx create-react-app my-app `. Here `my-app` is the application folder name.
+2. Open the terminal in **Visual Studio Code.** Please refer to the following image.
+ 
+    ![Terminal Image](/static/assets/javascript/sample/images/react-go-terminal.png)
 
- 3. Change the directory by running the command `cd my-app`.
+3. Please ensure that you have enabled embed authentication on the `embed settings` page. If it is not currently enabled, please refer to the following image or detailed [instructions](https://help.boldbi.com/site-administration/embed-settings/#get-embed-secret-code) to enable it.
 
- 4. Create the folder `DashboardListing`. Under this folder, create the javascript files `DashboardListing.js`.
+    ![Embed Settings](/static/assets/javascript/sample/images/embed-settings.png)
 
- 5. In the `DashboardListing.js` file, include the mandatory files and create a DOM element with the id `dashboard` to render dashboard in this container. In the `componentDidMount()`, invoke the `renderDashboard()` method as follows.
+4. To download the `embedConfig.json` file, please follow this [link](https://help.boldbi.com/site-administration/embed-settings/#get-embed-configuration-file) for reference. Additionally, you can refer to the following image for visual guidance.
 
-     ```js
+    ![EmbedSettings image](/static/assets/javascript/sample/images/embed-settings-download.png)
 
-      const siteIdentifier = "site/site1";
+    ![EmbedConfig Properties](/static/assets/javascript/sample/images/prop-core.png)
 
-      const rootUrl = "http://localhost:51789/bi/";
+5. Copy the downloaded `embedConfig.json` file and paste it into the designated [location](https://github.com/boldbi/react-with-go-sample/tree/master/Go) within the application. Please ensure you have placed it in the application as shown in the following image.
 
-      const authorizationUrl = "http://localhost:8086/getDetails"
+    ![EmbedConfig Location Image](/static/assets/javascript/sample/images/react-go-embed-setting.png)
 
-      const environment = "enterprise";
+6. Create a new file named `main.go`. Then, incorporate the given code to acquire data from `embedConfig.json`.
 
-      const dashboardId = "Enter dashboard id here";
-      var BoldBiObj;
+    ```js
+    package main
+    import (
+      "crypto/hmac"
+      "crypto/sha256"
+      "encoding/base64"
+      "encoding/json"
+      "io/ioutil"
+      "log"
+      "net/http"
+      "strconv"
+      "strings"
+      "time"
+      "fmt"
+    )
 
-      class DashboardListing extends React.Component {
-        constructor(props){
-            super(props);
-            this.state = {toke: undefined, items: []};
-            this.BoldBiObj = new BoldBI();
-        };
+    type EmbedConfig struct {
+      DashboardId    string `json:"DashboardId"`
+      ServerUrl      string `json:"ServerUrl"`
+      UserEmail      string `json:"UserEmail"`
+      EmbedSecret    string `json:"EmbedSecret"`
+      EmbedType      string `json:"EmbedType"`
+      Environment    string `json:"Environment"`
+      ExpirationTime string `json:"ExpirationTime"`
+      SiteIdentifier string `json:"SiteIdentifier"`
+    }
 
-        renderDashboard() {
-          this.dashboard= BoldBI.create({
-            serverUrl: rootUrl + siteIdentifier,
-            dashboardId: dashboardId,
-            embedContainerId: "dashboard",
-            embedType: BoldBI.EmbedType.Component,
-            environment: BoldBI.Environment.Enterprise, // If Cloud, you should use BoldBI.Environment.Cloud
-            mode: BoldBI.Mode.View,
-            width:"100%",
-            height: window.innerHeight + 'px',
-            expirationTime:100000,
-            authorizationServer: {
-                url:authorizationUrl
-            }
-        });
-        this.dashboard.loadDashboard(); 
-        }
+    // Create an instance of EmbedConfig struct
+    var config EmbedConfig
 
-        render() {
-          return (
-            <div id="DashboardListing">
-                <div id="viewer-section">
-                  <div id="dashboard"></div>
-                </div>
-            </div>
-          );
-        }
+    func main() {
+      fmt.Println("Go server is running on port 8086")
+      http.HandleFunc("/authorizationServer", authorizationServer)
+      http.HandleFunc("/getServerDetails", getServerDetails)
+      log.Fatal(http.ListenAndServe(":8086", nil))	
 
-        componentDidMount() {
-          this.renderDashboard();
-        }  
+    }
+
+    func getServerDetails(w http.ResponseWriter, r *http.Request) {
+      w.Header().Set("Context-Type", "application/x-www-form-urlencoded")
+      w.Header().Set("Access-Control-Allow-Origin", "*")
+      w.Header().Set("Access-Control-Allow-Methods", "GET")
+      w.Header().Set("Access-Control-Allow-Headers", "Content-Type")
+
+      data, err := ioutil.ReadFile("embedConfig.json")
+      if err != nil {
+        log.Fatal("Error: embedConfig.json file not found.")
       }
-      export default DashboardListing;
 
-     ```
+      err = json.Unmarshal(data, &config)
+      response, err := json.Marshal(config)
+      w.Write(response)
+    }
+    ```  
 
- 6. Run the command `npm install`.Once completed, run the command `npm i @boldbi/boldbi-embedded-sdk`. Once completed, import `@boldbi/boldbi-embedded-sdk` in the `DashboardListing.js`.
+7. In `main.go`, include the following code and create a function called `authorizationServer()` that utilizes the `GetSignatureUrl()` method for generating the algorithm. Within this function, append the `embedQuerString`, `userEmail`, and the value obtained from the `GetSignatureUrl()` method as query parameters in the URL to get details of a specific dashboard.
 
- 7. Install the `Go` application with the [link](https://go.dev/dl/). Install the visual studio code extension as follows.
-    ![go_install](/static/assets/javascript/sample/images/go_install.png)
-
- 8. Create a folder in the desired location, and open it in the visual studio code. Create a file `main.go` and `launch.json`and include the following code.
-
-     ```js
-      {
-        // Use IntelliSense to learn about possible attributes.
-        // Hover to view descriptions of existing attributes.
-        // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-        "version": "0.2.0",
-        "configurations": [
-            {
-                "name": "Launch",
-                "type": "go",
-                "request": "launch",
-                "mode": "debug",
-                "program": "${workspaceRoot}",
-                "env": {"FLASH_PORT": 8086},
-                "args": [],
-                "showLog": true
-            }
-        ]
-      }
-     ```
-
- 9. In the `main.go` file, include the following code to contact the BOLD BI server.
-
-      ```js
-        package main
-
-        import (
-          "crypto/hmac"
-          "crypto/sha256"
-          "encoding/base64"
-          "encoding/json"
-          "io/ioutil"
-          "log"
-          "net/http"
-          "strings"
-        )
-
-        //Set EmbedSecret key from Bold BI Server. Please refer this link(https://help.syncfusion.com/bold-bi/on-premise/site-settings/embed-settings)
-        var embedSecret = "enter embed secret here"
-
-        //Enter your BoldBI Server credentials.
-        var userMail = "enter user email here"
-
-        func main() {
-          http.HandleFunc("/getDetails", getEmbedDetails)
-          log.Fatal(http.ListenAndServe(":8086", nil))
-        }
-
-        func getEmbedDetails(w http.ResponseWriter, r *http.Request) {
+    ```js
+     func authorizationServer(w http.ResponseWriter, r *http.Request) {
           w.Header().Set("Context-Type", "application/x-www-form-urlencoded")
           w.Header().Set("Access-Control-Allow-Origin", "*")
           w.Header().Set("Access-Control-Allow-Methods", "POST")
@@ -265,31 +234,27 @@ A GitHub link has been provided to [get](https://github.com/boldbi/react-with-go
             } else {
               serverAPIUrl := queryString.(map[string]interface{})["dashboardServerApiUrl"].(string)
               embedQueryString := queryString.(map[string]interface{})["embedQuerString"].(string)
-              embedQueryString += "&embed_user_email=" + userMail
+              embedQueryString += "&embed_user_email=" + config.UserEmail
+              timeStamp := time.Now().Unix()
+              embedQueryString += "&embed_server_timestamp=" + strconv.FormatInt(timeStamp, 10)
               signatureString, err := getSignatureUrl(embedQueryString)
-              if err != nil {
-                log.Println(err)
-              }
               embedDetails := "/embed/authorize?" + embedQueryString + "&embed_signature=" + signatureString
               query := serverAPIUrl + embedDetails
-              log.Println(query)
               result, err := http.Get(query)
               if err != nil {
                 log.Println(err)
               }
-              log.Println(result)
               response, err := ioutil.ReadAll(result.Body)
               if err != nil {
                 log.Fatalln(err)
               }
               w.Write(response)
             }
-            //w.Write(result.Body)
           }
         }
 
         func getSignatureUrl(queryData string) (string, error) {
-          encoding := ([]byte(embedSecret))
+          encoding := ([]byte(config.EmbedSecret))
           messageBytes := ([]byte(queryData))
           hmacsha1 := hmac.New(sha256.New, encoding)
           hmacsha1.Write(messageBytes)
@@ -306,12 +271,182 @@ A GitHub link has been provided to [get](https://github.com/boldbi/react-with-go
           }
           return iface, nil
         }
+
+     ```
+
+8. Create another file named `launch.json` and include the following code.
+    ```js
+    {
+      // Use IntelliSense to learn about possible attributes.
+      // Hover to view descriptions of existing attributes.
+      // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+      "version": "0.2.0",
+      "configurations": [
+          {
+              "name": "Launch",
+              "type": "go",
+              "request": "launch",
+              "mode": "debug",
+              "program": "${workspaceRoot}",
+              "env": {"FLASH_PORT": 8086},
+              "args": [],
+              "showLog": true
+          }
+        ]
+    }
+    ```
+
+9. Create a folder in the desired location and open it in the **Visual Studio Code**. 
+
+10. To create a new react project as front-end, we need to run this command in the terminal and navigate to the directory.
+    ```js
+      npx create-react-app .
+    ```
+
+11. Open the `src` folder. Within the `src` folder, create a new folder named `DashboardListing`. Inside the `DashboardListing` folder, create a file named `DashboardListing.js`. In the `DashboardListing.js` file, define the mandatory properties and implement the methods `renderDashboard()` to render the dashboard, `render()` to create the DOM elements, and `componentDidMount()` to contact the server as follows:
+
+     ```js
+
+      import React from 'react';
+      import '../index';
+      import { BoldBI } from '@boldbi/boldbi-embedded-sdk';
+
+      //Url of the authorizationserver action in the Go application(http://localhost:8086/authorizationserver). 
+      const authorizationUrl = "http://localhost:8086/authorizationServer";
+
+      var BoldBiObj;
+
+      class DashboardListing extends React.Component {
+        constructor(props) {
+          super(props);
+          this.state = { toke: undefined, items: [] };
+          this.BoldBiObj = new BoldBI();
+        };
+      }
+      export default DashboardListing;
+
+     ```
+12. Inside the `DashboardListing.js` file, add the following code to render the dashboard.
+    ```js
+      renderDashboard(embedConfig) {
+          this.dashboard = BoldBI.create({
+            serverUrl: embedConfig.ServerUrl + "/" + embedConfig.SiteIdentifier,
+            dashboardId: embedConfig.DashboardId,
+            embedContainerId: "dashboard",
+            embedType: embedConfig.EmbedType,
+            environment: embedConfig.Environment,
+            width: "100%",
+            height: window.innerHeight + 'px',
+            expirationTime: 100000,
+            authorizationServer: {
+              url: authorizationUrl
+            }
+          });
+          this.dashboard.loadDashboard();
+        }
+    ```
+13. Inside the `DashboardListing.js` file, add the following code: Create a DOM element with the ID `dashboard`. This element will be used in the `renderDashboard()` method to render the dashboard within it.
+    ```js
+     render() {
+          return (
+            <div id="DashboardListing">
+              <div id="viewer-section">
+                <div id="dashboard"></div>
+              </div>
+            </div>
+          );
+        }
+    ```
+
+14. Inside the `DashboardListing.js` file, add the following code: The `componentDidMount()` method contacts the server to get the token, and with this token, particular dashboard details are collected and passed to the `renderDashboard()` method to render it.
+
+    ![Dashboard](/static/assets/javascript/sample/images/react-go-dashboardListing.png)
+    ```js
+       async componentDidMount() {
+          try {
+            const response = await fetch('http://localhost:8086/getServerDetails');
+            const data = await response.json();
+            this.setState({ embedConfig: data });
+            const embedConfig = this.state.embedConfig;
+            this.renderDashboard(embedConfig);
+          } catch (error) {
+            console.log("Error: embedConfig.json file not found.");
+            this.setState({ toke: "error", items: "error" });
+          }
+        }
+    ```
+15. Open the `App.js` folder and replace the following code: The following code imports the necessary modules, defines the `App` component, renders the `DashboardListing` component, and exports it for use in other files.
+
+    ```js
+      import React from 'react';
+      import './App.css';
+      import DashboardListing from './DashboardListing/DashboardListing';
+
+      class App extends React.Component {
+        render() {
+          return (
+            <div>
+            <DashboardListing/>
+            </div>
+          );
+        }
+      }
+      export default App;
+    ```
+16.  Open the `Index.js` file and replace the following code: These lines of code import the necessary modules `React` and `ReactDOM`, import the `App` component, and use `ReactDOM.render` to render the App component into the specified HTML element.
+      
+      ```js
+      import React from 'react';
+      import ReactDOM from 'react-dom';
+      import App from './App';
+
+      ReactDOM.render(<App />, document.getElementById('root'));
+      ```
+17. Replace the following code in `package.json`. Installing the `packages` listed in the following dependencies section is essential.
+   
+      ```js
+        {
+        "name": "react-sample",
+        "version": "0.1.0",
+        "private": true,
+        "dependencies": {
+          "@boldbi/boldbi-embedded-sdk": "6.11.10",
+          "@testing-library/jest-dom": "^5.17.0",
+          "@testing-library/react": "^13.4.0",
+          "@testing-library/user-event": "^13.5.0",
+          "axios": "^0.19.2",
+          "jquery": "^3.5.1",
+          "react": "^18.2.0",
+          "react-dom": "^18.2.0",
+          "react-scripts": "5.0.1"
+        },
+        "scripts": {
+          "start": "react-scripts start",
+          "build": "react-scripts build",
+          "test": "react-scripts test",
+          "eject": "react-scripts eject"
+        },
+        "eslintConfig": {
+          "extends": [
+            "react-app",
+            "react-app/jest"
+          ]
+        },
+        "browserslist": {
+          "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+          ],
+          "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+          ]
+        }
+      }
       ```
 
- 10. Initialize the variables `embedSecret` and `userMail` for authorization purpose.
+ 18. Then, run the `Go` application with the `go run main.go` command.
 
- 11. Initialize the API `/getDetails` to get the particular dashboard details from the server.
-
- 12. This API uses the method `getSignatureUrl()` to generate the algorithm. In the `getEmbedDetails()` API, the `embedQuerString`,`userEmail` and value from the `GetSignatureUrl()` method is appended as query parameters in the URL to get details of particular dashboard.
-
- 13. Run the `Go` and `React` applications in the visual studio code by the command `npm start` to render the dashboard.
+ 19. Open the `React` application and use this command to install dependent dependencies: `npm install` and run the sample with the `npm start` command to render the dashboard.

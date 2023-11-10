@@ -4,7 +4,7 @@ title: Overview - Admin Utility | Bold BI Embedded Learning
 description: This section explains an overview of the admin utility, list of available commands, and how to use those commands in the admin utility. 
 platform: bold-bi
 documentation: ug
-lang: en
+
 ---
 
 # Admin Utility

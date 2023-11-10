@@ -4,7 +4,7 @@ title: Excel – Cloud BI Data Connector | Bold BI Documentation
 description: Learn how to connect Excel file data with Bold BI Cloud and create data source for dashboard configuration.
 platform: bold-bi
 documentation: ug
-lang: en
+
 
 ---
 
@@ -153,7 +153,7 @@ Follow the below steps to refresh the data:
 
 > **NOTE:**  In cloud storage, you may either replace the latest file with one of the same name or edit your existing file and save it with the modified content before refresh triggered. If schema changed in uploaded file, then data will be lost in your dashboard.
 
-> **NOTE:**  You can also schedule refresh for already created data source. Click [here](/cloud-bi/managing-resources/manage-data-sources/#refresh-setting) to know more. 
+> **NOTE:**  You can also schedule refresh for already created data source. Click [here](/managing-resources/manage-data-sources/#refresh-setting) to know more. 
 
 ## Limitations
 Below are the limitations for connecting excel file in Bold BI,
@@ -173,8 +173,6 @@ Below are the limitations for connecting excel file in Bold BI,
 <a href="https://www.boldbi.com/integrations/excel" target="_blank">Excel Integration</a>
 
 [Tutorial Video](https://www.youtube.com/watch?v=fdDpy05G7Qg)
-
-[Blog Post](https://www.boldbi.com/blog/creating-custom-dashboards-with-excel-metrics-and-kpis)
 
 <a href="https://www.boldbi.com/blog/creating-custom-dashboards-with-excel-metrics-and-kpis" target="_blank">Blog Post</a>
 

@@ -9,8 +9,6 @@ documentation: ug
 
 This section describes how to show or hide the Get Embed Code option for dashboards and widgets in the dashboard settings on the administration page.
 
-> **NOTE:** This feature is available in Bold BI Embedded Analytics but not in Cloud Analytics Server.
-
 ## Get Embed Code for Dashboards
 
 1. By default, the `show Get Embed Code for dashboards` option is enabled on the dashboard settings page.

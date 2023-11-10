@@ -15,7 +15,7 @@ The samples have been created in other platforms to embed the Bold BI Dashboard.
  * Django
  * Ionic
 
-> **NOTE:** The best way to get started would be reading the [Getting Started](embedding-options/getting-started/embedding-in-your-application/) section of the documentation.  The `Getting Started` guide gives you enough information that you need to know before working on the sample.      
+> **NOTE:** The best way to get started would be reading the [Getting Started](/getting-started/embedding-in-your-application/) section of the documentation.  The `Getting Started` guide gives you enough information that you need to know before working on the sample.      
 
 ## ColdFusion sample to embed dashboard
 
@@ -49,7 +49,7 @@ The samples have been created in other platforms to embed the Bold BI Dashboard.
     </table>
 
 
- 3. You can get your Embed Secret key from the administrator setting section. Please refer to this [link](/embedded-bi/site-administration/embed-settings/) for more details.
+ 3. You can get your Embed Secret key from the administrator setting section. Please refer to this [link](/site-administration/embed-settings/) for more details.
 
  4. Run your ColdFusion application.
 
@@ -102,7 +102,7 @@ The samples have been created in other platforms to embed the Bold BI Dashboard.
     </table>
 
 
- 3. You can get your Embed Secret key from the administrator setting section. Please refer to this [link](/embedded-bi/site-administration/embed-settings/) for more details.    
+ 3. You can get your Embed Secret key from the administrator setting section. Please refer to this [link](/site-administration/embed-settings/) for more details.    
 
  4. Run your Java Servlet project.
 
@@ -149,7 +149,7 @@ The samples have been created in other platforms to embed the Bold BI Dashboard.
     </tbody>
     </table>
 
- 3. You can get your Embed Secret key from the administrator setting section. Please refer to this [link](/embedded-bi/site-administration/embed-settings/)for more details.
+ 3. You can get your Embed Secret key from the administrator setting section. Please refer to this [link](/site-administration/embed-settings/)for more details.
 
  4. Run your Django application.
 
@@ -213,7 +213,7 @@ The samples have been created in other platforms to embed the Bold BI Dashboard.
     </tbody>
     </table>
 
- 3. You can get your Embed Secret key from the administrator setting section. Please refer to this [link](/embedded-bi/site-administration/embed-settings/) for more details.
+ 3. You can get your Embed Secret key from the administrator setting section. Please refer to this [link](/site-administration/embed-settings/) for more details.
 
  4. Run your Ionic application.
 

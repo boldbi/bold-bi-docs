@@ -15,7 +15,7 @@ In Javascript based embedding, we have added support for applying filters in spe
 
 ## Steps to follow for applying filters into widgets,
 
-1. Please [download](https://onpremise-demo.boldbi.com/getting-started/asp-core-filter/sample.zip) the ASP.NET Core sample for a better understanding of the widget filtering support.
+1. Please [download](https://github.com/boldbi/samples/tree/master/Scenario%20Based%20Samples/Widget%20Filtering%20Sample) the ASP.NET Core sample for a better understanding of the widget filtering support.
 
 2. In the Bold BI Server, load the `Agent Activity Dashboard` from Sample Dashboards.
 
@@ -67,7 +67,7 @@ In Javascript based embedding, we have added support for applying filters in spe
 
 ## How the sample works
 
-1. Before rendering the dashboard, we retrieved the widget collection details of that dashboard using REST API in the GetWidgets() method in this application. Please check this [link](/embedded-bi/rest-api-reference/v4.0/api-reference/#operation/Dashboards_GetWidgets) for more details.
+1. Before rendering the dashboard, we retrieved the widget collection details of that dashboard using REST API in the GetWidgets() method in this application. Please check this [link](/server-api-reference/v4.0/api-reference/#operation/Dashboards_GetWidgets) for more details.
 
 2. We could get the widget details by conditioning with specific widget names (`Avg. Resolution Time by Event` and `Date`) from the widget collections as below.
 
@@ -87,7 +87,7 @@ In Javascript based embedding, we have added support for applying filters in spe
     }
     ```
 
-3. For `initial rendering`, we could pass the specific widget id in [getWidgetInstance()](/embedding-sdk/embedding-api-reference/methods/#getwidgetinstance) to get the widget instance and respective filterValues in [setFilterParameters()](/embedding-sdk/embedding-api-reference/methods/#setfilterparameters) to filter the widgets with the filterValues in renderDashboard().
+3. For `initial rendering`, we could pass the specific widget id in [getWidgetInstance()](/embedding-options/embedding-sdk/embedding-api-reference/methods/#getwidgetinstance) to get the widget instance and respective filterValues in [setFilterParameters()](/embedding-options/embedding-sdk/embedding-api-reference/methods/#setfilterparameters) to filter the widgets with the filterValues in renderDashboard().
 
 4. The default string values `Agent_1`, `Agent_5`, `Agent_7`, and default date range of `1/1/2022`, `6/30/2022` are filtered in the `Avg. Resolution Time by Agent` and `Date` widgets, respectively.
    ```js
@@ -115,7 +115,7 @@ In Javascript based embedding, we have added support for applying filters in spe
 
     ![InitialRendering](/static/assets/faq/images/initial_action_widgetfilter.png)
 
-5. For the `on-demand` case, we could pass the specific widget id in [getWidgetInstance()](/embedding-sdk/embedding-api-reference/methods/#getwidgetinstance) to get the widget instance and pass the respective filter values in [setFilterParameters()](/embedding-sdk/embedding-api-reference/methods/#setfilterparameters) to set the filter values in the widget instance. Then call the `updateWidgetFilters()` method to reflect the applied filter values into the dashboard using the dashboard instance.
+5. For the `on-demand` case, we could pass the specific widget id in [getWidgetInstance()](/embedding-options/embedding-sdk/embedding-api-reference/methods/#getwidgetinstance) to get the widget instance and pass the respective filter values in [setFilterParameters()](/embedding-options/embedding-sdk/embedding-api-reference/methods/#setfilterparameters) to set the filter values in the widget instance. Then call the `updateWidgetFilters()` method to reflect the applied filter values into the dashboard using the dashboard instance.
 
 6. By clicking the `Apply Dimension Filters` button, the on-demand new filter values `Agent_4`, `Agent_6`, and `Agent_8` are applied to `Avg. Resolution Time by Agent` widget. The below ondemandDimensionFilters() method will be triggered for applying dimension filters.
 

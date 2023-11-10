@@ -4,7 +4,7 @@ title: Joining Data Tables – Embedded BI | Bold BI Documentation
 description: Learn how to join multiple tables based on one or more conditions while creating a data source in Bold BI Embedded.
 platform: bold-bi
 documentation: ug
-lang: en
+
 ---
 
 # Joining Tables

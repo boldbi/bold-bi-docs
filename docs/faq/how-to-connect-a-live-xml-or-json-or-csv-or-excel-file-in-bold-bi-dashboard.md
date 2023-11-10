@@ -37,7 +37,7 @@ Bold BI dashboard designer supports to connect live file(CSV/JSON/XML/Excel) usi
 
 ## Steps to connect live file(CSV/JSON/XML) through Restful Web services 
 
-1. If the live data is in CSV/JSON/XML format in your REST API, then connect the API in designer using [**Web API**](/working-with-data-source/data-connectors/restful-web-services/) connection type.
+1. If the live data is in CSV/JSON/XML format in your REST API, then connect the API in designer using [**Web API**](/working-with-data-source/data-connectors/web/) connection type.
 
 2. In the Data Format combo box select the format (CSV, JSON, XML) based on the response of your provided API.
    

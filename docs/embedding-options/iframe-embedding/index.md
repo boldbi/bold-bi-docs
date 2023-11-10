@@ -4,7 +4,7 @@ title: iFrame based Embedding – Embedded BI | Bold BI Documentation
 description: Learn how to embed dashboard with SSO, views, widget through iFrame-based embedding in Bold BI deployed in your server.
 platform: bold-bi
 documentation: ug
-lang: en
+
 ---
 
 # iFrame based Embedding
@@ -15,7 +15,9 @@ You can explore the iFrame based Embedding in detail here,
 
 [Dashboard Embedding](/embedding-options/iframe-embedding/embedding-a-dashboard/)
 
-[Dashboard embedding using Single Sign-On](/embedding-options/iframe-embedding/embedding-a-dashboard-with-sso/)
+[Embed Dashboards with SSO using Token](/embedding-options/iframe-embedding/embed-dashboards-with-sso-using-token/)
+
+[Dashboard Embedding using external Single Sign-On](/embedding-options/iframe-embedding/dashboard-embedding-with-external-sso/)
 
 [Dashboard Embedding with Views](/embedding-options/iframe-embedding/embedding-a-dashboard-with-views/)
 
@@ -23,7 +25,7 @@ You can explore the iFrame based Embedding in detail here,
 
 [Widget Embedding](/embedding-options/iframe-embedding/embedding-a-widget/)
 
-[Widget embedding using Single Sign-On](/embedding-options/iframe-embedding/widget-embedding-using-single-sign-on/)
+[Embed Widgets with SSO using Token](/embedding-options/iframe-embedding/embed-widgets-with-sso-using-token/)
 
 [Get Data source URL](/embedding-options/iframe-embedding/get-datasource-url/)
 

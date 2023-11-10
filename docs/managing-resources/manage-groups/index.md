@@ -37,7 +37,11 @@ Groups can be deleted if it is no longer needed. You cannot delete the `System A
 
 ### From group management page
 
+Clicking `Delete` from the context menu will delete a single group.
 ![Delete group from group management page](/static/assets/managing-resources/manage-groups/images/delete-group-1.png)
+
+Also, you have the option to remove multiple groups by marking the checkboxes next to the groups you wish to delete and then select "Delete Groups" in the group list.
+![Delete multiple group from group management page](/static/assets/managing-resources/manage-groups/images/delete-multiple-group.png)
 
 ### From group edit page
 

@@ -18,7 +18,7 @@ Follow the given steps to assign permissions to the group:
 
 1. Create a [Group](/managing-resources/manage-groups/#add-new-group) for users who require the same set of permissions.
 
-2. Provide [Permissions](/working-with-dashboards/share-dashboards/manage-permissions/#manage-permissions---groups) to group.
+2. Provide [Permissions](/managing-resources/manage-permissions/#manage-permissions---groups) to group.
 
 ## Use Groups for assinging Custom Attributes to multiple users
 

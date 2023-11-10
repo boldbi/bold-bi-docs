@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Embedded SDK v3.3.40 Blazor WebAssembly Sample | Bold BI Docs
-description: Explore the JavaScript-based embedding with Blazor WebAssembly sample application, which has been supported by Bold BI since v3.3.40.
+title: Embedding Analytics with Blazor Web Assembly | Bold BI Docs
+description: Learn how to embed an analytics dashboard with a Blazor web assembly using Bold BI Embed SDK and try it yourself.
 platform: bold-bi
 documentation: ug
 ---
@@ -191,13 +191,12 @@ The sample has been provided in the following sections for the `Blazor WebAssemb
 9. In the `Client project`, the following scripts and style sheets are mandatory to render the dashboard. Include the following code in your `\wwwroot\index.html` page of the `<head>` tag.
 
     ```js 
-    <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v6.7.11/boldbi-embed.js"></script>
+    <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v6.16.12/boldbi-embed.js"></script>
     ```
 
 10. Inside the `<body>` tag, include the following code. Create the DOM element with the id `dashboard` and implement a function to render the dashboard.
 
     ```js
-        <body>
         <script>
         var data;
         var authorizationServerUrl = "api/EmbedData/AuthorizationServer";
@@ -230,7 +229,6 @@ The sample has been provided in the following sections for the `Blazor WebAssemb
             this.dashboard.loadDashboard();
         }
         </script>
-        </body>
     ```
 
  11. Open the `Index.razor` file within the `Client project` and implement the code as follows to invoke the `renderDashboard()` method.

@@ -6,7 +6,7 @@ canonical: "/visualizing-data/visualization-widgets/range-slider/"
 platform: bold-bi
 control: Range Slider
 documentation: ug
-lang: en
+
 ---
 
 # Range Slider
@@ -139,6 +139,14 @@ This allows you to customize the slider color.
 ![Range Slider with modified slider color](/static/assets/visualizing-data/visualization-widgets/images/range-slider/slider-color-option.png)
 
 ![Range Slider with modified slider color](/static/assets/visualizing-data/visualization-widgets/images/range-slider/slider-color.png)
+
+#### Slider Interval
+
+This allows you to modify the incremental step of the slider. When the slider is adjusted, it shifts based on the new interval of the slider.
+
+![Range Slider with modified slider interval](/static/assets/visualizing-data/visualization-widgets/images/range-slider/slider-interval-option.png)
+
+![Range Slider with modified slider interval](/static/assets/visualizing-data/visualization-widgets/images/range-slider/slider-interval.png)
 
 #### Filter
 

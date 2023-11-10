@@ -105,4 +105,4 @@ For more information on the API endpoints available for this data source, refer 
 
 [Dashboard Designer Walkthrough](/getting-started/creating-dashboard/)
 
-[Stripe Integration](https://www.boldbi.com/integrations/stripe?utm_source=syncfusion&utm_medium=documentation&utm_campaign=boldbistripeintegration)
+<a href="https://www.boldbi.com/integrations/stripe?utm_source=syncfusion&utm_medium=documentation&utm_campaign=boldbistripeintegration" target="_blank">Stripe Integration</a>

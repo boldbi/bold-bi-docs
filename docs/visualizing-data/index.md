@@ -5,7 +5,7 @@ description: Learn how to visualize data through widgets of Bold BI deployed in 
 canonical: "/visualizing-data/"
 platform: bold-bi
 documentation: ug
-lang: en
+
 ---
 
 # Visualizing Widgets

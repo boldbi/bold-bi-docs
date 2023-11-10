@@ -5,7 +5,7 @@ description: Learn how to manage site resources such as, dashboards, data source
 canonical: "/managing-resources/"
 platform: bold-bi
 documentation: ug
-lang: en
+
 ---
 
 # Managing Resources

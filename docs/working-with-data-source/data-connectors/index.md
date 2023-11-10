@@ -4,7 +4,7 @@ title: Data Connectors – Cloud BI | Bold BI Documentation
 description: Find the list of data connectors supported in Bold BI Cloud. It includes files, databases, web-based data sources and more.
 platform: bold-bi
 documentation: ug
-lang: en
+
 ---
 
 # Data Connection Types
@@ -33,6 +33,7 @@ The Bold BI supports the following data connection types such that the structure
             <br> <a href="/working-with-data-source/data-connectors/aws-opensearch/"> AWS OpenSearch</a>  
             <br> <a href="/working-with-data-source/data-connectors/amazon-rds/"> Amazon RDS</a>
             <br> <a href="/working-with-data-source/data-connectors/amazon-redshift/"> Amazon Redshift</a>
+            <br> <a href="/working-with-data-source/data-connectors/azure-data-explorer/"> Azure Data Explorer</a>
             <br> <a href="/working-with-data-source/data-connectors/azure-synapse-analytics/"> Azure Synapse Analytics</a>
             <br> <a href="/working-with-data-source/data-connectors/cdata/"> CDATA</a>
             <br> <a href="/working-with-data-source/data-connectors/google-cloud-sql/"> Google Cloud SQL</a>
@@ -45,10 +46,11 @@ The Bold BI supports the following data connection types such that the structure
             <br> <a href="/working-with-data-source/data-connectors/oracle/"> Oracle</a>
             <br> <a href="/working-with-data-source/data-connectors/postgresql/"> PostgreSQL</a>
             <br> <a href="/working-with-data-source/data-connectors/presto/"> Presto</a>
+			<br> <a href="/working-with-data-source/data-connectors/rockset/"> Rockset</a>
             <br> <a href="/working-with-data-source/data-connectors/single-store/"> SingleStore</a>
             <br> <a href="/working-with-data-source/data-connectors/snowflake/"> Snowflake</a>
             <br> <a href="/working-with-data-source/data-connectors/sqlite/"> SQLite</a>  
-            <br> <a href="/working-with-data-source/data-connectors/ssas/"> Microsoft SQL Server Analysis Services</a>
+            <br> <a href="/working-with-data-source/data-connectors/ssas/"> Microsoft SQL Server Analysis Services</a>	
         </td>
         <td align="center" rowspan="2">Sales & CRM
             <br> <a href="/working-with-data-source/data-connectors/chart-mogul/"> ChartMogul</a>
@@ -78,6 +80,7 @@ The Bold BI supports the following data connection types such that the structure
             <br> <a href="/working-with-data-source/data-connectors/files/"> JSON</a>
             <br> <a href="/working-with-data-source/data-connectors/files/"> XML</a>
             <br> <a href="/working-with-data-source/data-connectors/edi/"> EDI</a>
+            <br> <a href="/working-with-data-source/data-connectors/parquet/"> Parquet</a>
         </td>
         <td align="center">NoSQL
             <br> <a href="/working-with-data-source/data-connectors/mongodb/"> MongoDB</a>
@@ -146,6 +149,7 @@ The Bold BI supports the following data connection types such that the structure
             <br> <a href="/working-with-data-source/data-connectors/recurly/"> Recurly</a>
             <br> <a href="/working-with-data-source/data-connectors/stripe/"> Stripe</a>
 			<br> <a href="/working-with-data-source/data-connectors/squareup/"> SquareUp</a>
+			<br> <a href="/working-with-data-source/data-connectors/tdengine/"> TDengine</a>
 			<br> <a href="/working-with-data-source/data-connectors/xero/"> Xero</a>
 			<br> <a href="/working-with-data-source/data-connectors/zoho-invoice/"> Zoho Invoice</a>
             <br> <a href="/working-with-data-source/data-connectors/zoho-books/"> Zoho Books</a>

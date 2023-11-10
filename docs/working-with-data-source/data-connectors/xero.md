@@ -120,4 +120,4 @@ You can edit, delete, and re-authorize this account from the **Connected Account
 
 [Dashboard Designer Walkthrough](/getting-started/creating-dashboard/)
 
-[Unleash Financial Insights with Xero Data](https://www.boldbi.com/blog/unleash-financial-insights-with-xero-data)
+<a href="https://www.boldbi.com/blog/unleash-financial-insights-with-xero-data" target="_blank">Unleash Financial Insights with Xero Data</a>

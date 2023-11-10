@@ -52,7 +52,7 @@ After successful authentication, the NEW DATA SOURCE configuration panel opens
 1. Enter a name and description (optional) for the data source.
 2. Enter a valid Microsoft Dynamics CRM REST API endpoint in the URL textbox. Refer the [Microsoft Dynamics CRM API documentation](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/web-api/about?view=dynamics-ce-odata-9) for more details.
 
-   Example: [https://&lt;:your_organization_url&gt;/api/data/v9.0/reports](https://%3c::your_organization_url%3e/api/data/v9.0/reports)  
+   Example:<span style="color:#FF4801">https://&lt;:your_organization_url&gt;/api/data/v9.0/reports</span>  
 
 3. Select **GET** method for the REST API in **Method** combo box.
 4. In **Max Rows**, enter the maximum number of rows to be fetched from the Microsoft Dynamics CRM data source. This value is used to fetch the data from Microsoft Dynamics CRM data source via pagination.
@@ -133,7 +133,7 @@ You can edit, delete and re-authorize this account from the **Connected Accounts
 
 ## Related links
 
-[Blog Post](https://www.boldbi.com/blog/getting-insights-from-dynamics-365-sales-data)
+<a href="https://www.boldbi.com/blog/getting-insights-from-dynamics-365-sales-data" target="_blank">Blog Post</a>
 
 [Data Transformation](/working-with-data-source/transforming-data/joining-table/)
 
@@ -143,4 +143,4 @@ You can edit, delete and re-authorize this account from the **Connected Accounts
 
 [Microsoft Dynamics CRM API Limits](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/api-limits)
 
-[Microsoft Dynamics CRM Integration](https://www.boldbi.com/integrations/microsoft-dynamics-crm-sales?utm_source=syncfusion&utm_medium=documentation&utm_campaign=boldbimicrosoftdynamicscrmsalesintegration)
+<a href="https://www.boldbi.com/integrations/microsoft-dynamics-crm-sales?utm_source=syncfusion&utm_medium=documentation&utm_campaign=boldbimicrosoftdynamicscrmsalesintegration" target="_blank">Microsoft Dynamics CRM Integration</a>

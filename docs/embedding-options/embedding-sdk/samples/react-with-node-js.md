@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Bold BI embedding in React with Node.js using SDK | Bold BI Docs
-description: Explore the steps for React JS based dashboard embedding with a sample application in NodeJS using Bold BI embedded SDK which is supported since v3.3.40
+title: Embedding Analytics with React and Node.js | Bold BI Docs
+description: Learn how to embed an analytics dashboard with a Node.js and React application using Bold BI Embed SDK and try it yourself.
 platform: bold-bi
 documentation: ug
 ---
@@ -17,7 +17,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/react-with-no
  * [Node.js](https://nodejs.org/en/)
  * [Visual Studio Code](https://code.visualstudio.com/download)
 
- > **NOTE:** Node.js v14.16 to v18.16 are supported.
+ > **NOTE:** Node.js v14.16 to v18.18 are supported.
 
  ## How to run the sample
 

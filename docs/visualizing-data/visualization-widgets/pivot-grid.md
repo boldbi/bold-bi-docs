@@ -6,7 +6,7 @@ canonical: "/visualizing-data/visualization-widgets/pivot-grid/"
 platform: bold-bi
 control: Pivot Grid
 documentation: ug
-lang: en
+
 ---
 
 # Configuring Pivot Grid
@@ -59,6 +59,36 @@ If more than one data is added to `Value(s)` field and then grid column is separ
 Click the `Settings` option to change the name by using the `Rename` option and the required summary type from the available summary types shown in `Settings.`
 
 ![pivot-grid_valueSettingIcon](/static/assets/visualizing-data/visualization-widgets/images/pivot-grid/settings-value.png)
+
+### Show Value As Percentage
+
+Depending on the Summary Type, You can convert the individual values to percentage based on the grand total using the `Show Value As` option.
+
+![pivot-grid_showValueAs](/static/assets/visualizing-data/visualization-widgets/images/pivot-grid/show-value-as.png)
+
+***No Calculation***
+
+The `No Calculation` option is used to retrieve the actual value.
+
+***Percentage Of Grand Total***
+
+To change the `Show Value As` type to `Percent Of Grand Total`, it converts the individual value to a percentage based on the row and column grand total.
+
+![pivot-grid_grandTotalPercentage](/static/assets/visualizing-data/visualization-widgets/images/pivot-grid/grand-total-percentage.png)
+
+***Percentage Of Row Total***
+
+To change the `Show Value As` type to `Percent Of Row Total`, it converts the individual value to a percentage based on the row grand total.
+
+![pivot-grid_rowTotal](/static/assets/visualizing-data/visualization-widgets/images/pivot-grid/row-total.png)
+
+***Percentage Of Column Total***
+
+To change the `Show Value As` type to `Percent Of Column Total`, it converts the individual value to a percentage based on the column grand total.
+
+![pivot-grid_colunTotal](/static/assets/visualizing-data/visualization-widgets/images/pivot-grid/column-total.png)
+
+> **NOTE:** Aggregated expressions and the Average summary types are not applicable for the `Show Value As` option.
 
 #### Filtering data 
 
@@ -332,11 +362,27 @@ This property allows user to show or hide row's grand total. The row's grand tot
 
 ![pivot-grid_prop-grand-row](/static/assets/visualizing-data/visualization-widgets/images/pivot-grid/grand-total-row.png)
 
+#### Show Row Grand Totals Text
+
+This property allows users to modify the text for row grand totals. The default text displayed for row grand totals is the `Grand Total`. When you change the text value in the row grand totals text box, the changes will be reflected in the row grand totals, as shown in the following image.
+
+![pivot-grid_prop-grand-row-text](/static/assets/visualizing-data/visualization-widgets/images/pivot-grid/grand-total-row-text.png)
+
+> **NOTE:** The row grand totals text box is set to `Auto` by default, which utilizes the localized `Grand Total` text from the locale file for display. This allows us to modify the row grand totals text in multiple pivot grids simultaneously using localized text and [localization](/localization/).
+
 #### Show Column Grand Totals
 
 This property allows user to show or hide column's grand total. The column's grand total in the below image will be disabled if this property is unchecked.
 
 ![pivot-grid_prop-grand-column](/static/assets/visualizing-data/visualization-widgets/images/pivot-grid/prop-grand-column.png)
+
+#### Show Column Grand Totals Text
+
+This property allows users to modify the text for column grand totals. The default text displayed for column grand totals is `Grand Total`. When you change the text value in the column grand total text box, the changes will be reflected in the column grand total, as shown in the following image
+
+![pivot-grid_prop-grand-column-text](/static/assets/visualizing-data/visualization-widgets/images/pivot-grid/grand-total-column-text.png)
+
+> **NOTE:** The column grand totals text box is set to `Auto` by default, which utilizes the localized `Grand Total` text from the locale file for display. This allows us to modify the column grand totals text in multiple pivot grids simultaneously using localized text and [localization](/localization/).
 
 #### Show Row Sub Totals
 
@@ -688,4 +734,4 @@ This allows you to pin the widget.
 
 ## Related links
 
-Blog Post – <a href="https://www.boldbi.com/blog/7-unique-features-of-pivot-table" target="_blank">https://www.boldbi.com/blog/7-unique-features-of-pivot-table</a>
+Blog Post – <a href="https://www.boldbi.com/blog/7-unique-features-of-pivot-table" target="_blank">7 Unique Features of Pivot Table</a>

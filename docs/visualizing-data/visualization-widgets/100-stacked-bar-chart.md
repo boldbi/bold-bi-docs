@@ -70,13 +70,13 @@ Click the `Settings` option to change the required summary type from the availab
 
 #### Filtering data
 
-You can filter the data to be displayed in the chart by using the filter option. For more details, refer to the [filter](/cloud-bi/visualizing-data/working-with-widgets/configuring-widget-filters/).
+You can filter the data to be displayed in the chart by using the filter option. For more details, refer to the [filter](/visualizing-data/working-with-widgets/configuring-widget-filters/).
 
 ![Widget filters](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-bar-chart/filter-option.png)
 
 #### Formatting data
 
-You can format the data to be displayed in the chart by using the format option. For more details, refer to the [measure format](/cloud-bi/visualizing-data/working-with-widgets/formatting-measure-type-column/).
+You can format the data to be displayed in the chart by using the format option. For more details, refer to the [measure format](/visualizing-data/working-with-widgets/formatting-measure-type-column/).
 
 ![Formatting measure type](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-bar-chart/format-option.png)
 To remove the added value fields click highlighted button.
@@ -396,6 +396,17 @@ A legend is a text used to describe the data plotted. This allows you to toggle 
 
 Enabling this option of **Custom Legend Text** will allow you to define a custom text (through the text area) to display for each legend series (selecting through the combo box) in a chart.
 
+#### Legend Interactivity
+
+The chart `legend interactivity` option allows you to control the behavior of the chart legends. This provides an option to make chart legends non-clickable, which can be especially useful in scenarios where you do not want users to hide or show series data by clicking on the legend. This might also be useful when displaying critical pieces of data that should always be present for accuracy and context purposes.
+
+Disabling the Interactivity feature in the Legend Settings category does not allow you to click on the legends.
+
+![Legend Interactivity Disable](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-bar-chart/legend-interactivity-disable.png)
+Enabling the Interactivity feature in the Legend Settings category allows you to click on the legends
+
+![Legend Interactivity Enable](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-bar-chart/legend-interactivity-enable.png)
+
 #### Legend Label Color
 
 This allows you to change the chart legend title and label colors.
@@ -446,25 +457,33 @@ This option allows you to customize the legend text based on the 'Text Width' pr
 
 This option allows you to render the legend items without any wrap and trim.
 
-![Legend Overflow None in chart](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-bar-chart/chart_LegendNone.png)
+![Legend Overflow None Option in chart](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-bar-chart/legend-text-overflow-none-option.png)
+
+![Legend Overflow None in chart](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-bar-chart/legend-text-overflow-none.png)
 
 ***Trim***
 
 This option allows you to trim the legend items if its legend exceeds the 'Text Width' value.
 
-![Legend Overflow Trim in chart](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-bar-chart/chart_Legendtrim.png)
+![Legend Overflow Trim Option in chart](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-bar-chart/legend-text-overflow-trim-option.png)
+
+![Legend Overflow Trim in chart](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-bar-chart/legend-text-overflow-trim.png)
 
 ***Wrap***
 
 This option allows you to wrap the legend items based on 'Text Width' value.
 
-![Legend Overflow Wrap in chart](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-bar-chart/chart_Legendwrap.png)
+![Legend Overflow Wrap Option in chart](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-bar-chart/legend-text-overflow-wrap-option.png)
+
+![Legend Overflow Wrap in chart](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-bar-chart/legend-text-overflow-wrap.png)
 
 #### Text Width
 
-This option allows you to set a maximum width for the Legend Items and it is applicable only if text-overflow set as Trim or Wrap.
+This option allows you to set the maximum width for the Legend Items and it is applicable only if text-overflow is set as Trim or Wrap.
 
-![Legend Text Width in chart](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-bar-chart/chart_Legendwidth.png)
+![Legend Text Width Option in chart](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-bar-chart/legend-text-overflow-width-option.png)
+
+![Legend Text Width in chart](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-bar-chart/legend-text-overflow-width.png)
 
 If you uncheck the `Show Legend` property in the property panel, the dependent properties, which are **Legend color**, **Legend position**, **customization button** and **Legend title** are also hidden.
 
@@ -474,7 +493,7 @@ If you uncheck the `Show Legend` property in the property panel, the dependent p
 
 ![Link](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-bar-chart/linking.png)
 
-You can enable linking and configure to navigate to a general URL with or without parameters. For more details, refer to the [Linking](/cloud-bi/visualizing-data/working-with-widgets/linking-urls-and-dashboards/).
+You can enable linking and configure to navigate to a general URL with or without parameters. For more details, refer to the [Linking](/visualizing-data/working-with-widgets/linking-urls-and-dashboards/).
 
 #### Axis
 

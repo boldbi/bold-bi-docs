@@ -11,10 +11,10 @@ This section explains how to configure Active Directory and Azure Active Directo
 
 You can explore the user directory settings in detail here,
 
-[Active Directory](/site-administration/user-directory-settings/active-directory)
+[Active Directory](/site-administration/user-directory-settings/active-directory/)
 
 [Azure Active Directory](/site-administration/user-directory-settings/azure-active-directory/)
 
 [Existing Database](/site-administration/user-directory-settings/existing-database/)
 
-> **NOTE:** This feature is available in Bold BI Embedded Analytics but not in Cloud Analytics Server.
+> **NOTE:** Active Directory settings is available in the Bold BI Embedded Analytics but not in Cloud Analytics Server.

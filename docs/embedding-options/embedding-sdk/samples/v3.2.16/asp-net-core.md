@@ -4,7 +4,7 @@ title:  Embed SDK ASP.NET Core Application | Bold BI Documentation
 description: Find ASP.NET Core sample for embedding Bold BI. List all the dashboards and render the dashboard based on your selection after passing the authorization.
 platform: bold-bi
 documentation: ug
-lang: en
+
 ---
 
 # Bold BI Dashboards Embedding in ASP.NET Core Sample with Embedded SDK

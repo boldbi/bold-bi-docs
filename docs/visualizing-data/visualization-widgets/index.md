@@ -5,7 +5,7 @@ description: Explore different widgets available in dashboard and know how to co
 canonical: "/visualizing-data/visualization-widgets/"
 platform: bold-bi
 documentation: ug
-lang: en
+
 ---
 
 # Visualization Widgets

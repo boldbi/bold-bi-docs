@@ -26,6 +26,22 @@ To configure the Wistia data source, follow the below steps:
 
    ![Choose data source from server](/static/assets/working-with-datasource/data-connectors/images/Wistia/ChooseDS_Server.png)
 
+## How to Obtain the Wistia Client ID and Client Secret
+1. Log in to your Wistia account [Wistia login](https://auth.wistia.com/session/new).
+2. Go to **Account** > **Settings**.
+    ![account](/static/assets/working-with-datasource/data-connectors/images/Wistia/account.png)
+3. Click the **OAuth Applications** tab in the sidebar.
+    ![OauthApp](/static/assets/working-with-datasource/data-connectors/images/Wistia/OauthApp.png)
+4. Click **New Application**.
+    ![new_app](/static/assets/working-with-datasource/data-connectors/images/Wistia/new_app.png)
+5. On the New Application menu, enter the required information, including the **Name**, **Description**, and **Callback URL**.
+6. Insert the following URLs in the **Callback URL** field, replace {{HOST_URL}} with your base URL. The Bold BI redirect URL should be added in the proper format required. Refer to this URL structure, `https://<yourdomain>/bi/designer/v1.0/oauth/agent`.
+7. Enable the required scopes and then click on the **Save** button.
+    ![Oauth](/static/assets/working-with-datasource/data-connectors/images/Wistia/Oauth.png)
+8. Once the app is created, click on the created app to find the **Client ID** and **Client Secret** displayed.
+    ![client_ID](/static/assets/working-with-datasource/data-connectors/images/Wistia/client_ID.png)
+
+> **NOTE:** Save the Client ID and Client secret in Bold BI by following the [OAuth Configuration](/site-administration/data-connector-settings/oauth-configuration/).
 ## Authentication with Wistia
 Use the following steps to authenticate with Wistia web service:
 

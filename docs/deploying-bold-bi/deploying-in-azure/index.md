@@ -4,7 +4,6 @@ title: Deployment of Bold BI in Azure VM | Bold BI Documentation
 description: Learn how to deploy Bold BI in Azure VM, recommended VM configuration and deploy from VM image in Azure Marketplace.
 platform: bold-bi
 documentation: ug
-lang: en
 ---
 
 # Deploying in Azure

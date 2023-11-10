@@ -5,7 +5,7 @@ description: Learn how to create user filter in Bold BI Embedded through mapping
 canonical: "/working-with-data-source/user-filter/user-filter-advanced-query-mode/"
 platform: bold-bi
 documentation: ug
-lang: en
+
 ---
 
 # User Filter - Query Mode

@@ -4,7 +4,7 @@ title:  Embed SDK with ASP.NET MVC | Bold BI Documentation
 description: Find ASP.NET MVC sample for embedding Bold BI. List all the dashboards and render the dashboard based on your selection after passing the authorization.
 platform: bold-bi
 documentation: ug
-lang: en
+
 ---
 
 # Bold BI Dashboards Embedding in ASP.NET MVC Sample with Embedded SDK

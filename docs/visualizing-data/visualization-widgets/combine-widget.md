@@ -5,7 +5,7 @@ description: Learn how to use a combine widget to group a set of visuals in the 
 canonical: "/visualizing-data/visualization-widgets/combine-widget/"
 platform: bold-bi
 documentation: ug
-lang: en
+
 ---
 # How to configure combine widget 
 

@@ -270,6 +270,17 @@ A Legend is a text used to describe the data plotted. This allows you to toggle 
 
 ![Show Legend](/static/assets/visualizing-data/visualization-widgets/images/radar-polar-chart/show-legend.png)
 
+#### Legend Interactivity
+
+The chart `legend interactivity` option allows you to control the behavior of the chart legends. This provides an option to make chart legends non-clickable, which can be especially useful in scenarios where you do not want users to hide or show series data by clicking on the legend. This might also be useful when displaying critical pieces of data that should always be present for accuracy and context purposes.
+
+Disabling the Interactivity feature in the Legend Settings category does not allow you to click on the legends.
+
+![Legend Interactivity Disable](/static/assets/visualizing-data/visualization-widgets/images/radar-polar-chart/legend-interactivity-disable.png)
+Enabling the Interactivity feature in the Legend Settings category allows you to click on the legends
+
+![Legend Interactivity Enable](/static/assets/visualizing-data/visualization-widgets/images/radar-polar-chart/legend-interactivity-enable.png)
+
 #### Legend Position
 
 This allows you to change the legend text position by selecting through combo box. By default the legend position is bottom.

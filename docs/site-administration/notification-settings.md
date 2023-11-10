@@ -13,8 +13,6 @@ This section explains how to configure notification settings to notify users of 
 
 Notifications can be set up by the `System Administrator` in the notification settings page and by users on the user profile page.
 
-> **NOTE:** This settings option is available in Bold BI Embedded Analytics but not in Cloud Analytics Server.
-
 ## Site notifications settings
 
 Admin can manage application notification preferences by enabling or disabling email and system notifications in site notification settings.
@@ -39,7 +37,7 @@ System notifications will notify users of activity on comments based on the sett
 
 ![Admin system notification settings](/static/assets/site-administration/images/admin-system-notifications.png)
 
-System notifications will appear in the bottom left corner above the user's profile picture, as shown in the following image.
+System notifications will appear at the top right corner near to the user's profile picture, as shown in the following image.
 
 ![Notifications section](/static/assets/site-administration/images/notifications-icon.png)
 

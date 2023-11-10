@@ -118,11 +118,15 @@ Follow the below steps to add users using the CSV template
 5. Click `Import Users` to import users from the CSV file.
 
 	![Import from CSV](/static/assets/managing-resources/manage-users/images/csv-import-users.png#width=60%)
+    
+Bold BI will import the chosen users in the background as a job and a confirmation dialog will be displayed as shown in the following figure.
 
-6. After uploading the users in Bold BI the results will be displayed as below.
+  ![Confirmation dialog after import users started](/static/assets/managing-resources/manage-users/images/confirmation-dialogue-on-import-click.png#width=70%)
 
-    ![Import from CSV - Success Message](/static/assets/managing-resources/manage-users/images/import-csv-users-confirmation.png#width=60%)
-	
+  You can view the status of the current import by clicking the View Status button in the above confirmation dialog and you will be navigated to the below bulk import job details page where you can view the details of the current import job. Please learn more about the Bulk Import Result page [here](/managing-resources/manage-users/bulk-import-result/).
+
+  ![Bulk user import job details page](/static/assets/managing-resources/manage-users/images/import-job-details-page.png#width=70%)
+
 ## Edit users
 User profile details can be edited from the users edit page as shown in the below image.
 

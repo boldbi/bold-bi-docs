@@ -13,7 +13,7 @@ You can provide access to the specific users to create their dashboards without 
 
 Please follow these steps:
 
-1. First of all, provide permission to the [user](/working-with-dashboards/share-dashboards/manage-permissions/#manage-permissions---users) with the required entity and access mode. To create a dashboard, you need to provide the `Create` permission for the user.
+1. First of all, provide permission to the [user](/managing-resources/manage-permissions/#manage-permissions---users) with the required entity and access mode. To create a dashboard, you need to provide the `Create` permission for the user.
 
 **Entity**: `All Dashboard`
 

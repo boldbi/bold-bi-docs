@@ -39,7 +39,7 @@ The default CORS policy is used until you enable and customize the CORS settings
 
 ### Steps to enable CORS
 
-1. Go to the administration page in the Bold BI site and click the `Security` tab. Here you can configure CORS settings headers under the `CORS` section.
+1. Go to the administration page in the Bold BI site and click the `CORS Policy` tab. Here you can configure CORS settings headers.
 
     ![CORS settings](/static/assets/security-configuration/images/cors-settings.png#width=45%)
 

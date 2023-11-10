@@ -4,7 +4,7 @@ title:  Responsive Design – Overview - Embedded BI | Bold BI Docs
 description: Know how Bold BI Embedded site supports responsiveness for different layouts in desktop, mobile and tablet devices.
 platform: bold-bi
 documentation: ug
-lang: en
+
 ---
 
 # Responsive behavior in Bold BI

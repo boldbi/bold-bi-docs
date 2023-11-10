@@ -4,7 +4,7 @@ title: White labeling Site and Domain | Bold BI Documentation
 description: Learn how to white label Bold BI site and setup your custom vanity URL with SSL in cloud-hosted Bold BI.
 platform: bold-bi
 documentation: ug
-lang: en
+
 ---
 
 # Rebranding and Custom Vanity Domains

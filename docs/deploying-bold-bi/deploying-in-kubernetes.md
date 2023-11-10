@@ -4,7 +4,6 @@ title: Deployment on Kubernetes Cluster | Bold BI Documentation
 description: Learn how to deploy Bold BI on Kubernetes. You can create Kubernetes cluster on either cloud or on-premise infrastructure.
 platform: bold-bi
 documentation: ug
-lang: en
 ---
 
 # Bold BI in Kubernetes

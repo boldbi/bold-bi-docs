@@ -5,6 +5,7 @@ var fs = require('fs');
 var shelljs = require('shelljs');
 var runSequence = require('run-sequence');
 var filevalidation=require('./file-validation.js');
+var urlvalidation = require('./url-validation.js');
 var branchName = process.env.gitlabTargetBranch;
 
 gulp.task('md-lint', function (done) {
@@ -101,7 +102,7 @@ gulp.task('platform-order-validation', (done) => {
     done();
 });
 
-gulp.task('test', gulp.series('typo', 'file-validation','seo-validation','js-lint', 'html-lint', function(done){
+gulp.task('test', gulp.series('typo', 'file-validation','seo-validation','js-lint', 'html-lint','url-validation', function(done){
     done();
 }));
 

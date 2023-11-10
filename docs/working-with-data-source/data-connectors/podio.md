@@ -31,7 +31,7 @@ Use the following steps to authenticate with Podio web service:
 > **NOTE:**  If the permission is denied, the account will not be accessible from the dashboard.
 3. Set a name to identify the account and click **Next**. 
 4. You have now successfully authorized your connection. Click **Connect** to continue with the data source connection.
-5. To connect via already connected account, refer to the [Connected Accounts](/working-with-data-source/data-connectors/podio/#connected-accounts-for-oauth-data-sources).
+5. To connect via already connected account, refer to the [Connected Accounts](#connected-accounts-for-the-oauth-data-sources).
 
      > **NOTE:**  To connect with a new account click **Connect New Account**.
 

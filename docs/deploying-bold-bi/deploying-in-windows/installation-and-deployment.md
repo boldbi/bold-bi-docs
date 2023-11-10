@@ -4,7 +4,6 @@ title: Installation and Deployment – Embedded BI | Bold BI Learning
 description: Read this guide on installation and deployment of Bold BI Embedded in your own servers or private cloud. 
 platform: bold-bi
 documentation: ug
-lang: en
 ---
 
 # Installation and Deployment 

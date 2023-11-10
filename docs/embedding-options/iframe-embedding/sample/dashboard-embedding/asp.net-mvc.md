@@ -7,52 +7,55 @@ documentation: ug
 ---
 
 # Dashboard Embedding in ASP.NET MVC Sample
-This section explains how to embed the Bold BI dashboard into an ASP.NET MVC sample application by providing the dashboard URL.
+This section explains how to embed the Bold BI dashboard into an ASP.NET MVC sample application by providing the dashboard URL. In this sample, we have rendered the dashboard embedding using Single Sign On(SSO) with Token-based authentication.
+
+![DashboardView](/static/assets/iFrame-based/sample/images/dashboard-views.png)
 
 ## Prerequisites
-You need to follow these steps before running the given sample:  
-*	Download the sample from [here](https://onpremise-demo.boldbi.com/getting-started/iframe/asp-net-mvc/sample.zip).
-*   For the Cloud, You should have an existing Bold BI Cloud application.  
-*	For On-Premise, You should have any of the following environment:
-     * Install the latest Bold BI Enterprise build.
-     * You should have Bold BI deployed on a Linux server.
-     * You should have Bold BI running on Kubernetes.
-     * You should have Bold BI running on Docker.   
-
+* [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/)
+* [.NET Framework 4.8](https://dotnet.microsoft.com/en-us/download/dotnet-framework)
+  
 ## How to run the sample
 
-1. You need to set the following properties in `EmbedProperties.cs` file as follows.  
-    ![Embed Properties](/static/assets/iFrame-based/sample/images/EmbedProperties_MVC.png#max-width=100%)
+1. You need to set the following properties in the `EmbedProperties.cs` file as follows.
+
+    ![Embed Properties](/static/assets/iFrame-based/sample/images/EmbedProperties.png#max-width=100%)
 
     <meta charset="utf-8"/>
     <table>
     <tbody>
         <tr>
-            <td align="left">RootUrl</td>
-            <td align="left">Dashboard Server BI URL (ex: http://localhost:5000/bi, http://dashboard.syncfusion.com/bi)</td>
-        </tr>
-        <tr>
-            <td align="left">SiteIdentifier</td>
-            <td align="left">For Bold BI Enterprise edition, it should be like <code>site/site1</code>. For Bold BI Cloud, it should be empty string.</td>
-        </tr>
-        <tr>
             <td align="left">UserEmail</td>
-            <td align="left">UserEmail of the Admin in your Bold BI, which will be used to get the dashboards list.</td>
+            <td align="left">UserEmail of the Admin in your Bold BI, which will be used to get the dashboard.</td>
         </tr>
         <tr>
         <td align="left">EmbedSecret</td>
-            <td align="left">You can get your EmbedSecret key from embed tab by enabling <code>Enable embed authentication</code> in Administration page as mentioned in next step. </td>
-        </tr>    
+            <td align="left">Get your EmbedSecret key from embed tab by enabling <code>Enable embed authentication</code> in the <a href='https://help.boldbi.com/embedded-bi/site-administration/embed-settings/'>Administration page</a>. </td>
+        </tr>  
+        <tr>
+        <td align="left">DashboardUrl</td>
+            <td align=left">Get the <a href='https://help.boldbi.com/working-with-dashboards/share-dashboards/get-dashboard-link/#get-link'>dashboard URL</a> of the dashboard in your Bold BI.</td>
+        </tr> 
     </tbody>
-    </table>
+    </table>   
 
+2. Once you configured the above embed properties and then run your MVC application.
 
-2. You can get your Embed Secret key from the administrator setting section. Please refer to this [link](/site-administration/embed-settings/), for more details.  
+    ![DashboardView](/static/assets/iFrame-based/sample/images/dashboard-views.png)
 
-3. In the `Index.cshtml` file, set the URL of the dashboard in the variable  `dashboardUrl` that you want to render.
-    ![Index.cshtml](/static/assets/iFrame-based/sample/images/index_MVC.png#max-width=100%)    
+## How this sample works
 
-4. To get the dashboard URL, click on the `Dashboard name` in the dashboard list page. The dashboard will open in a new window when you click it. In that window, you can get the dashboard URL by copying the link up to the question mark, as shown in the following image.
-    ![DashboardUrl](/static/assets/iFrame-based/sample/images/dashboardUrl.png#max-width=85%)
+1. Based on the `DashboardUrl` and other values set in the `EmbedProperties.cs` file, the dashboard would be rendered in the iframe using SSO with token-based authentication.
 
-5. Then, run your MVC application.
+    ![Embed Properties](/static/assets/iFrame-based/sample/images/EmbedProperties.png#max-width=100%)
+
+2. Embed parameters and the Embed Secret Key are mandatory parameters used for generating the `Embed Signature`. The `embed signature` is a hashed value generated for authentication in an embed request to the Bold BI server. It is obtained by using the `SignURL` method with `embedParameters` and `embedSecretKey`, and appended to the iframe URL as the 'embed_signature' query parameter.
+
+    ![Signature](/static/assets/iFrame-based/sample/images/signaturemethod-homecontroller.png)
+
+3. In `index.cshtml`, `embedSignature` and `dashboardUrl` are retrieved from `HomeController.cs` and `EmbedProperties.cs`. The iframe URL is formed by appending the embed signature and parameters to the dashboard URL, and it is used to render the dashboard within an `<iframe>` element.
+
+    ![Index Html](/static/assets/iFrame-based/sample/images/index-html.png)
+
+> **NOTE:** You can customize the optional parameters in the `HomeController.cs` file
+

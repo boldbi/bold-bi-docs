@@ -5,7 +5,7 @@ description: Learn how to add trendlines in chart widget of Bold BI Embedded das
 canonical: "/visualizing-data/working-with-widgets/chart-trendlines/"
 platform: bold-bi
 documentation: ug
-lang: en
+
 ---
 
 # Trendlines

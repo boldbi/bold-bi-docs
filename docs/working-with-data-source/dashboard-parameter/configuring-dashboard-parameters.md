@@ -38,7 +38,7 @@ Select the String or Number Type and enter the Current Value as shown in the fol
 
 ![Dashboard Parameter String](/static/assets/working-with-datasource/dashboard-parameter/images/dashboard-parameter-literal-string.png)
 
-Select the Date type and also select the date in the date picker for date type parameter.
+Select the Date type and also select the date and time in the date time picker for the date type parameter. The selected date and time values will be filtered based on the selected `Date Format`.
 
 ![Dashboard Parameter Date](/static/assets/working-with-datasource/dashboard-parameter/images/dashboard-parameter-literal-date.png)
 

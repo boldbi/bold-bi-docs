@@ -68,7 +68,7 @@ You can generate the localization file for the application in two ways as follow
 2. Auto-generate using online tools
 
 > **NOTE:**<br>
-•	After generating the `messages.po` file for `bi-dataservice` you need to run the locale utility. Refer to this [link](/localization/latest/#how-to-generate-the-locale-js-file-for-bi-dataservice) to generate the locale js file.<br>
+•	After generating the `messages.po` file for `bi-dataservice` you need to run the locale utility. Refer to this [link](#how-to-generate-the-locale-js-file-for-bi-dataservice) to generate the locale js file.<br>
 •	Restart the site to apply the generated language for the application.
 
 ### Manual edit

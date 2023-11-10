@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Embedded SDK v3.3.40 Xamarin Sample | Bold BI Docs
-description: Explore the JavaScript-based embedding with Xamarin sample application,which has been supported by Bold BI since v3.3.40.
+title: Embedding Analytics Dashboard with Xamarin | Bold BI Docs
+description: Learn how to embed an analytics dashboard with Xamarin application using Bold BI Embed SDK and try it yourself.
 platform: bold-bi
 documentation: ug
 ---
@@ -154,7 +154,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/xamarin-sampl
 
      ```
 
- 4. Create a script folder and include the latest wrapper [file](https://cdn.boldbi.com/embedded-sdk/v6.7.11/boldbi-embed.js).
+ 4. Create a script folder and include the latest wrapper [file](https://cdn.boldbi.com/embedded-sdk/v6.16.12/boldbi-embed.js).
 
  5. Open the `MainPage.xaml.cs` file, initialize the method `GetHtmlString()` where you need to declare the html contents with scripts to render the dashboard as follows.
 

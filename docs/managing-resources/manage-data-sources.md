@@ -93,6 +93,8 @@ You can view the dashboard(s) created with the corresponding data source using t
 
 ![View Linked Dashboards Listing](/static/assets/managing-resources/images/view-linked-dashboards-listing.png)
 
+> **NOTE:** All the dashboards associated with the data source will be updated whenever the data source is updated.
+
 ## Share Data sources
 
 This section explains on how to share data sources with the other users in the Bold BI.

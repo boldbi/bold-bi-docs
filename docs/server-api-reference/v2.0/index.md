@@ -5,7 +5,7 @@ description: Explore the REST API v2.0 reference to know about the APIs on authe
 canonical: "/server-api-reference/v2.0/"
 platform: bold-bi
 documentation: ug
-lang: en
+
 ---
 
 # REST API v2.0

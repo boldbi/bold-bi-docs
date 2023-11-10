@@ -6,7 +6,7 @@ canonical: "/visualizing-data/visualization-widgets/map/"
 platform: bold-bi
 control: Map
 documentation: ug
-lang: en
+
 ---
 #  Configuring and Formatting a Map
 
@@ -147,6 +147,18 @@ The map renders as follows.
 ![Bubble map Marker data](/static/assets/visualizing-data/visualization-widgets/images/map/bubblemapmarker.png)
 
 Marker has an individual tooltip. Bind data to a `Marker Tooltip` from the `Measures` or `Dimensions` sections.
+
+## Marker Size
+
+If you wish to modify the size of the marker according to the data, then you can configure that data in the `Marker Size` section. You can only configure the measured field for Marker Size.
+
+![Map Marker Size Container](/static/assets/visualizing-data/visualization-widgets/images/map/markersize.png)
+
+After configuring the marker size field, the map renders as follows.
+
+![Map with Marker Size](/static/assets/visualizing-data/visualization-widgets/images/map/mapwithmarkersize.png)
+
+> **Note:** After configuring the marker size, the width and height of marker settings under the property panel will be disabled automatically.
 
 ![Bubble map Marker tooltip](/static/assets/visualizing-data/visualization-widgets/images/map/bubblemap-markerdata.png)
 
@@ -320,6 +332,97 @@ You can choose a shape for the selected country or continent or state. The combo
 
 ![Choropleth map field](/static/assets/visualizing-data/visualization-widgets/images/map/bubblemap-field.png)
 
+### How to add new shape files
+
+If you want to load new map shape files into the map, for example, if you wish to load the India shape file with district split-ups instead of states, follow these steps:
+
+1. Download the India map shape file with district split-ups from any open-source website.
+
+2. Convert the downloaded shape files to `GeoJSON` format using any open-source tool.
+
+3. Extract the downloaded shape file folder and rename to `customindia.js`. Ensure that the file name is in lowercase and spaces are replaced with underscores (e.g., `south_africa.js`).
+
+    ![Rename shapefile](/static/assets/visualizing-data/visualization-widgets/images/map/shapefile-name.png)
+
+4. Open the `customindia.js` file and add the following text at the beginning: `ejdashboard.Customindia =` and then save the file.
+
+    ![shapefile Text](/static/assets/visualizing-data/visualization-widgets/images/map/shapefilename-text.png)
+
+5. Copy this `customindia.js` file and paste it into the `app_data/bi/shapefiles` path.
+
+    ![new shape file added](/static/assets/visualizing-data/visualization-widgets/images/map/newshapeadded.png)
+
+6. Next, add the customized shape name to the `shapefile.json` file. The `text` is only for display purposes, and the `value` should be similar to the shape file text (e.g., the value should be `Customindia` if we use the `ejdashboard.Customindia` as the starting text).
+
+7. The shape file name should be added based on the shape kind. For example, since India is a country, the shape name should be added to the country collections in the JSON file.
+
+    ![Json shape file name](/static/assets/visualizing-data/visualization-widgets/images/map/newshapeaddedjson.png)
+
+8. Reload the dashboard page and go to the property panel. Now, you should see the customized shape name that we added in the `shapefile.json` in the shape data dropdown. 
+    If you don't add the shape name to the `shapefile.json` file, the shape name will not be listed in the `shape data` dropdown.
+
+    ![Rename shape file](/static/assets/visualizing-data/visualization-widgets/images/map/dropdown.png)
+
+9. Click on the shape name, the customized shape will be rendered in the map widget based on the data configuration.
+
+    ![Json shape file name](/static/assets/visualizing-data/visualization-widgets/images/map/customindia.png)
+
+### Drill down configuration
+
+By default, the state shapes in India are divided into districts. However, if you prefer to drill the state shapes with city divisions instead of districts(e.g., If you want to drill the shape of `Tamil Nadu` with city divisions instead of districts), follow these steps.
+
+1. Download the `Tamil Nadu` shape file with the city division from any open-source website.
+
+2. Convert the downloaded shape files to the `GeoJSON` format using any open-source tool.
+
+3. Extract it and rename the file to `customindia_tamil_nadu.js`. Ensure that the file name is in lowercase and spaces are replaced with underscores (e.g., `south_africa.js`). 
+
+    ![Json shape file name](/static/assets/visualizing-data/visualization-widgets/images/map/rename.png)
+
+4. Open this file and add the following text at the beginning: `ejdashboard.Customindia_Tamil_Nadu =` and then save the file.
+
+    ![Json shape file name](/static/assets/visualizing-data/visualization-widgets/images/map/new-tamil.png)
+
+5. Include this file name into `India.js` for drill down. Open that file and search for `Tamil Nadu`. Then, go to the end of that line and change this text: `"shapeName":"Customindia_Tamil_Nadu"` instead of `"shapeName":"India_Tamil_Nadu"`.
+
+    ![Json shape file name](/static/assets/visualizing-data/visualization-widgets/images/map/worldmapcountry.png)
+
+6. Save this file. Then copy this file and paste it into the `app_data/bi/shapefiles` path.
+
+    ![Json shape file name](/static/assets/visualizing-data/visualization-widgets/images/map/finalpath.png)
+
+7. Please reload the dashboard page and drill the India shape in the world map, Then drill the `Tamil Nadu` shape in India, The `Tamil Nadu` shape will be displayed with city divisions instead of districts.
+
+    ![drilldown shape file](/static/assets/visualizing-data/visualization-widgets/images/map/tamil-drill.png)
+
+8. To load only the `Tamil Nadu` state with city divisions, you need to include the shape file name in the `shapefile.json` file. Add the shape file name to the state collections in the JSON file, as `Tamil Nadu` is a state.
+
+    ![Json shape file name](/static/assets/visualizing-data/visualization-widgets/images/map/tamil-dropdown.png)
+
+9. After adding the shape file name, reload the dashboard page and go to the property panel. Change the shape kind based on the shape name you added in the `shapefile.json` file. Now, the customized shape name should be visible in the `shape data` dropdown. If the shape name is not added to the `shapefile.json` file, it will not appear in the shape data dropdown.
+
+    ![Rename shape file](/static/assets/visualizing-data/visualization-widgets/images/map/tamil-drop.png)
+
+10. Once you see the customized shape name in the dropdown, click on it, and the customized shape will be rendered on the map widget based on the data configuration.
+
+    ![drilldown shape file](/static/assets/visualizing-data/visualization-widgets/images/map/drilldown.png)
+
+### How to add customized shape in world map country
+
+If you want to view the customized India shape while drilling India on the world map, follow these steps:
+
+1. You should have customized the India shape files.
+
+2. Open the `world_map_country.js` file and search for India.
+
+3. Change the shape name to `Customindia`.
+
+    ![worldmap shape file](/static/assets/visualizing-data/visualization-widgets/images/map/worldmapshapename.png)
+
+4. Save it and refresh the dashboard. Configure the drill down with any data. Click the India shape on the world map, and the customized shape will be rendered.
+
+    ![worldmap file](/static/assets/visualizing-data/visualization-widgets/images/map/worldmap.png)
+
 ### Legend Settings
 
 This section allows you to customize the legend in the map.
@@ -406,13 +509,15 @@ This option allows you to customize the marker color.
 
 #### Width
 
-This option allows you to customize the marker width
+This option allows you to customize the marker width. When configuring data into `Marker size`, this property will be disabled.
 
 #### Height
 
-This option allows you to customize the marker height.
+This option allows you to customize the marker height. When configuring data into `Marker size`, this property will be disabled.
 
 #### Advanced
+
+### Rule
 
 This option allows you to customize the map marker.
 
@@ -431,6 +536,18 @@ You can customize the shape of the marker with the `Marker Shape` option or you 
 If you click save, the map widget will render like this:
 
 ![Rule Color changes for marker in map](/static/assets/visualizing-data/visualization-widgets/images/map/map-markerrule.png)
+
+### Individual
+
+This option allows you to customize the map marker color individually based on the selected column values.
+
+For example, if you have three types of signal strength options in your data and you want to display marker colors based on the three types. You can select the `Signal Strength` column in the based selection and then assign a color for each type of signal strength option.
+
+![Individual Marker settings](/static/assets/visualizing-data/visualization-widgets/images/map/map-individualcolor-settings.png)
+
+Now, the map marker color renders with these changes.
+
+![Individual Marker Color](/static/assets/visualizing-data/visualization-widgets/images/map/mapmarker-individualcolor.png)
 
 #### Link
 

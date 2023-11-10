@@ -4,7 +4,7 @@ title: Configure Security Settings in Embedded BI | Bold BI Docs
 description: Learn about how to configure security-related settings like CORS(Cross-Origin-Resource-Sharing) and Known Domain List in Bold BI embedded application.
 platform: bold-bi
 documentation: ug
-lang: en
+
 ---
 
 # Security Settings

@@ -4,7 +4,7 @@ title: Connect Microsoft SQL Server in Cloud BI | Bold BI Docs
 description: Learn how to connect and create data source(s) for the Microsoft SQL Server database with the full and incremental update refresh settings in Bold BI Cloud based Web designer.
 platform: bold-bi
 documentation: ug
-lang: en
+
 ---
 
 # Connecting Bold BI to Microsoft SQL Server Data Source
@@ -243,7 +243,7 @@ To know more, refer to this [link.](/working-with-data-source/transforming-data/
 
 Code view supports the `User filter`, which provides row-level security for the data used for creating dashboards.
 
-After switching to code view, press the `Shift+2` key to list the available [default parameters.](/working-with-data-source/configuring-dashboard-parameters/#default-parameters)
+After switching to code view, press the `Shift+2` key to list the available [default parameters.](/working-with-data-source/dashboard-parameter/change-the-dashboard-parameter-value-in-url/#default-parameters)
 
 The `Current User Full Name` parameter filters the data based on the full name, and the `Current User Email` parameter filters the data based on the user email.
 
@@ -253,7 +253,7 @@ Here, you need to assign the `Current User Full Name` parameter to the `Name` co
 
 ![Name parameter](/static/assets/working-with-datasource/data-connectors/images/SQLDataSource/name-parameter.png#max-width=100%)
 
-You can refer to the [documentation](https://help.boldbi.com/cloud-bi/working-with-dashboards/) to create a dashboard using Bold BI. Once the dashboard is created, you can preview the dashboard by clicking the `Preview` button.
+You can refer to the <a href="https://help.boldbi.com/cloud-bi/working-with-dashboards/" target="_blank">documentation</a> to create a dashboard using Bold BI. Once the dashboard is created, you can preview the dashboard by clicking the `Preview` button.
 
 **Dashboard preview for User 1:**
 
@@ -271,7 +271,7 @@ You can also filter the data based on the users using the `Configure User Filter
 
 Code view supports the `dashboard parameter`, which allows the user to execute the custom query or stored procedure dynamically based on the parameter while viewing the dashboard.
 
-To configure the dashboard parameter, refer to the [documentation.](/working-with-data-source/configuring-dashboard-parameters/#add-a-dashboard-parameters)
+To configure the dashboard parameter, refer to the [documentation.](/working-with-data-source/dashboard-parameter/configuring-dashboard-parameters/#add-a-dashboard-parameters)
 
 Here, you can find the configured dashboard parameter in the following image.
 
@@ -299,7 +299,7 @@ Now, you can view the updated dashboard in the following image.
 
 ![Updated Student dashboard](/static/assets/working-with-datasource/data-connectors/images/SQLDataSource/student-dashboard2.png#max-width=100%)
 
-To know more, please refer to this [link.](/working-with-data-source/configuring-dashboard-parameters/#custom-query)
+To know more, please refer to this [link.](/working-with-data-source/dashboard-parameter/uses-of-dashboard-parameters/#custom-query)
 
 ### Sample Query with CUBE and ROLLUP
 
@@ -387,13 +387,15 @@ Additionally, data refresh can be used to update the data in a single data sourc
 
 Type while creating the data source needs to be sqlserver.
 
-[Rest API - v4.0](https://help.boldbi.com/embedded-bi/rest-api-reference/v4.0/api-reference/)
+<a href="https://help.boldbi.com/embedded-bi/rest-api-reference/v4.0/api-reference/" target="_blank">Rest API - v4.0</a>
 
 ### Modes
 
 Through the REST API, only the **live mode** data source can be created and edited.
 
 ### Parameters for creating Data Source
+
+> **NOTE:** The ability to provide join support is available only during the creation of a new data source. Join in edit connection mode is not supported.
 
    <table>
    <tr>
@@ -403,50 +405,103 @@ Through the REST API, only the **live mode** data source can be created and edit
    <tr>
    <td>Servername</br></br>
    <b>required</b> </td>
-   <td>`string`</br></br>
+  <td><code>string</code></br></br>
    Server name or Host name of the connection</td>
    </tr>
    <tr>
    <td>IntegratedSecurity</br></br>
    <b>optional</b> </td>
-   <td>`string`</br></br>
+  <td><code>string</code></br></br>
    This is used to specify Authentication mechanism. Needed to provide true for Windows Authentication, false for Basic Authentication.</br></br>
    default value is false</td>
    </tr>
    <tr>
    <td>Username</br></br>
    <b>optional</b>  </td>
-   <td>`string`</br></br>
+  <td><code>string</code></br></br>
    A valid user name. Required if Integrated Security is not provided or is provided as false.</td>
    </tr>
    <tr>
    <td>Password</br></br>
    <b>optional</b>  </td>
-   <td>`string`</br></br>
+  <td><code>string</code></br></br>
    A valid Password. Required if Integrated Security is not provided or is provided as false.</td>
    </tr>
    <tr>
    <td>Database</br></br>
    <b>required</b> </td>
-   <td>`string`</br></br>
+  <td><code>string</code></br></br>
    database which needs to be connected</td>
    </tr>
    <tr>
    <td>Schemaname</br></br>
    <b>required for table mode</b> </td>
-   <td>`string`</br></br>
+  <td><code>string</code></br></br>
    Enter a valid Schemaname</td>
    </tr>
    <tr>
    <td>Tablename</br></br>
    <b>required for table mode</b> </td>
-   <td>`string`</br></br>
+  <td><code>string</code></br></br>
    Enter a valid Tablename</td>
+   </tr>
+   <td>JoinType</br></br>
+   <b>Required For Join Info </b> </td>
+  <td><code>string</code></br></br>
+   Enter a valid JoinType For Example (Inner,Outer)</td>
+   </tr>
+   <tr>
+   <td>LeftTable</br></br>
+   <b>Required For Join Info </b> </td>
+  <td><code>string</code></br></br>
+   Enter a valid Left Table name </td>
+   </tr>
+   <tr>
+   <td>RightTable</br></br>
+   <b>Required For Join Info</b> </td>
+  <td><code>string</code></br></br>
+   Enter a valid Right Table name </td>
+   </tr>
+   <tr>
+   <td>LeftField</br></br>
+   <b>Required For Join Info</b> </td>
+  <td><code>string</code></br></br>
+   Enter a valid Left Table Column Name  </td>
+   </tr>
+   <tr>
+   <td>RightField</br></br>
+   <b>Required For Join Info</b> </td>
+  <td><code>string</code></br></br>
+   Enter a valid Right Table Column Name  </td>
+   </tr>
+   <tr>
+   <td>Condition</br></br>
+   <b>Required For Join Info</b> </td>
+  <td><code>string</code></br></br>
+   Enter a valid Condition For Example (AND,OR)  </td>
+   </tr>
+   <tr>
+   <td>LeftField</br></br>
+   <b>Required For Join Info</b> </td>
+  <td><code>string</code></br></br>
+   Enter a valid Left Table Column Name  </td>
+   </tr>
+   <tr>
+   <td>Operator</br></br>
+   <b>Required For Join Info</b> </td>
+  <td><code>string</code></br></br>
+   Enter a Valid Operator For Example (=,>=)  </td>
+   </tr>
+   <tr>
+   <td>Value</br></br>
+   <b>Optional For only Join Info  </b> </td>
+  <td><code>string</code></br></br>
+   Specifically choose the column values. </td>
    </tr>
    <tr>
    <td>Query</br></br>
    <b>required for code view mode</b> </td>
-   <td>`string`</br></br>
+  <td><code>string</code></br></br>
    Enter a valid Query</td>
    </tr>
    <tr>
@@ -458,7 +513,7 @@ Through the REST API, only the **live mode** data source can be created and edit
    <tr>
    <td>AdvancedSettings</br></br>
    <b>optional</b> </td>
-   <td>`string`</br></br>
+  <td><code>string</code></br></br>
    Additional optional connection parameters can be provided. By default, it is empty.</td>
    </tr>
    <tr>
@@ -470,7 +525,7 @@ Through the REST API, only the **live mode** data source can be created and edit
    <tr>
    <td>CommandTimeout</br></br>
    <b>optional</b> </td>
-   <td>`string`</br></br>
+  <td><code>string</code></br></br>
    Enter a valid Timeout for connection. By default, it is 300</td>
    </tr>
    <tr>
@@ -482,7 +537,7 @@ Through the REST API, only the **live mode** data source can be created and edit
    <tr>
    <td>SshServerName</br></br>
    <b>optional</b> </td>
-   <td>`string`</br></br>
+  <td><code>string</code></br></br>
    Enter a valid Ssh Server name. By default, it is empty.</td>
    </tr>
    <tr>
@@ -494,13 +549,13 @@ Through the REST API, only the **live mode** data source can be created and edit
    <tr>
    <td>SshUserName</br></br>
    <b>optional</b> </td>
-   <td>`string`</br></br>
+  <td><code>string</code></br></br>
    Enter a valid Ssh Username. By default, it is empty.</td>
    </tr>
    <tr>
    <td>SshPassword</br></br>
    <b>optional</b> </td>
-   <td>`string`</br></br>
+  <td><code>string</code></br></br>
    Enter a valid Ssh Password. By default, it is empty.</td>
    </tr>
    <tr>
@@ -523,7 +578,7 @@ Through the REST API, only the **live mode** data source can be created and edit
    <td>Name</br></br>
    <b>required</b> </br></br>
    </td>
-   <td>`string`</br></br>
+  <td><code>string</code></br></br>
    Name of the Expression</br></br>
    </td>
    </tr>
@@ -531,7 +586,7 @@ Through the REST API, only the **live mode** data source can be created and edit
    <td>Expression</br></br></br></br>
    <b>required</b> </br></br>
    </td>
-   <td>`string`</br></br>
+  <td><code>string</code></br></br>
    <a href="/working-with-data-source/transforming-data/configuring-expression-columns/">
     <div style="height:100%;width:100%">
       Expression
@@ -556,7 +611,7 @@ Through the REST API, only the **live mode** data source can be created and edit
    <td>Name</br></br>
    <b>required</b> </br></br>
    </td>
-   <td>`string`</br></br>
+  <td><code>string</code></br></br>
    Name of the Expression</br></br>
    </td>
    </tr>
@@ -564,7 +619,7 @@ Through the REST API, only the **live mode** data source can be created and edit
    <td>Expression</br></br></br></br>
    <b>required</b> </br></br>
    </td>
-   <td>`string`</br></br>
+  <td><code>string</code></br></br>
    <a href="/working-with-data-source/transforming-data/configuring-expression-columns/">
     <div style="height:100%;width:100%">
       Expression
@@ -576,7 +631,7 @@ Through the REST API, only the **live mode** data source can be created and edit
    <td>Action</br></br></br></br>
    <b>optional</b> </br></br>
    </td>
-   <td>`string`</br></br>
+  <td><code>string</code></br></br>
    add/delete/edit</br></br>
    By default, it is add. </br></br>
    </td>
@@ -585,7 +640,7 @@ Through the REST API, only the **live mode** data source can be created and edit
    <td>NewName</br></br>
    <b>optional</b> </br></br>
    </td>
-   <td>`string`</br></br>
+  <td><code>string</code></br></br>
    For renaming the expression. This is applicable only if the Action is <b>edit</b> </br></br>
    </td>
    </tr>
@@ -609,6 +664,70 @@ Through the REST API, only the **live mode** data source can be created and edit
 "AdvancedSettings": "string",
 "IsEnableSSL": false,
 "CommandTimeout": "300",
+"IsSshConnection": "false",
+"SshServerName": "string",
+"SshPort": 0,
+"SshUsername": "string",
+"SshPassword": "string",
+"Expressions" : [{
+"Name": "Expression1",
+"Expression" : "SUM(numeric expression)"
+    },
+    {
+"Name": "Expression2",
+"Expression" :  "UPPER(string expression)"
+}]
+}
+
+```
+
+#### For creating connection with multiple tables :
+
+``` json
+"Connection":
+{
+"Servername": "string",
+"Port": "string",
+"Username": "string",
+"Password": "string",
+"Database": "string",
+"Tables": [
+            {
+                "Tablename": "string",
+                "Schemaname": "string"
+            },
+            {
+                "Tablename": "string",
+                "Schemaname": "string"
+            }
+        ],
+"JoinInfo": [
+            {
+                "JoinType": "string",
+                "LeftTable": "string",
+                "RightTable": "string",
+                "JoinFieldInfos": [
+                    {
+                        "Condition": "string",
+                        "LeftField": "string",
+                        "Operator": "string",
+                        "RightField": "string",
+                        "Value": "string"
+                    },
+                    {
+                        "Condition": "string",
+                        "LeftField": "string",
+                        "Operator": "string",
+                        "RightField": "string",
+                        "Value": "string"
+                    }
+                ]
+            }
+        ],
+"Impersonate": "false",
+"AdvancedSettings": "string",
+"IsEnableSSL": false,
+"CommandTimeout": "string",
 "IsSshConnection": "false",
 "SshServerName": "string",
 "SshPort": 0,
@@ -702,8 +821,8 @@ Through the REST API, only the **live mode** data source can be created and edit
 
 [Dashboard Designer Walkthrough](/getting-started/creating-dashboard/)
 
-[Microsoft SQL Server Integration](https://www.boldbi.com/integrations/microsoft-sql-server?utm_source=syncfusion&utm_medium=documentation&utm_campaign=boldbimssqlserverintegration)
+<a href="https://www.boldbi.com/integrations/microsoft-sql-server?utm_source=syncfusion&utm_medium=documentation&utm_campaign=boldbimssqlserverintegration" target="_blank">Microsoft SQL Server Integration</a>
 
-[Blog Post](https://www.boldbi.com/blog/sales-dashboard-example-with-microsoft-sql-server-database-using-bold-bi)
+<a href="https://www.boldbi.com/blog/sales-dashboard-example-with-microsoft-sql-server-database-using-bold-bi" target="_blank">Blog Post</a>
 
-[How to connect SQL Server with different port number in a dashboard](https://www.boldbi.com/kb/faq/how-to-connect-sql-server-with-different-port-number-in-a-dashboard)
+<a href="https://www.boldbi.com/kb/faq/how-to-connect-sql-server-with-different-port-number-in-a-dashboard" target="_blank">How to connect SQL Server with different port number in a dashboard</a>

@@ -43,7 +43,7 @@ You can also edit the connection information set here using the [Edit Connection
 #### JQL
 1. Enter your domain name in the **Domain URL** textbox.
 
-   Example: [https://&lt;:your_domain&gt;.atlassian.net](https://%3c:your_domain%3e.atlassian.net)
+   Example: <span style="color:#FF4801"> https://&lt;:your_domain&gt;.atlassian.net</span>
 
 2. Enter a valid JQL Query in **JQL** field.
 
@@ -103,7 +103,7 @@ Example: To fetch the value of the **project -> name** field, add `project` to t
 #### Raw Query 
 1. Enter a valid URL in the URL field textbox.
 
-   Example: [https://&lt;:your_domain&gt;.atlassian.net/rest/api/2/project](https://%3c:your_domain%3e.atlassian.net/rest/api/2/project)
+   Example:<span style="color:#FF4801">https://&lt;:your_domain&gt;.atlassian.net/rest/api/2/project</span>
 
 2. Select **GET** method for the REST API in **Method** combo box.
 
@@ -175,7 +175,7 @@ project = weather AND fixVersion = latestReleasedVersion(weather)
 * Click **Save** to save the data source with a relevant name.
 
 ## Related links
-[Blog Post](https://www.boldbi.com/blog/jira-dashboard-example-with-bold-bi)
+<a href="https://www.boldbi.com/blog/jira-dashboard-example-with-bold-bi" target="_blank">Blog Post</a>
 
 [Data Transformation](/working-with-data-source/transforming-data/joining-table/)
 
@@ -183,4 +183,4 @@ project = weather AND fixVersion = latestReleasedVersion(weather)
 
 [Dashboard Designer Walkthrough](/getting-started/creating-dashboard/)
 
-[Jira Integration](https://www.boldbi.com/integrations/jira?utm_source=syncfusion&utm_medium=documentation&utm_campaign=boldbijiraintegration)
+<a href="https://www.boldbi.com/integrations/jira?utm_source=syncfusion&utm_medium=documentation&utm_campaign=boldbijiraintegration" target="_blank">Jira Integration</a>

@@ -1,4 +1,4 @@
-node('EssentialStudio')
+node('BoldBI')
 {
  timestamps {
      timeout(time: 7200000, unit: 'MILLISECONDS') {
@@ -6,7 +6,7 @@ node('EssentialStudio')
         try {        
             stage 'Import'
                 println("Reports Platform Document Validation");
-			    git url: 'https://gitlab.syncfusion.com/data-science/bold-bi-shared-groovy.git', branch: 'master', credentialsId: env.JENKINS_CREDENTIAL_ID
+			    git url: 'https://github.com/bold-bi/bold-bi-shared-groovy.git', branch: 'master', credentialsId: env.GithubCredentialID
 			    shared = load 'src/shared.groovy'    
 
             stage 'Checkout' 
@@ -19,6 +19,27 @@ node('EssentialStudio')
                     status='Checkout-Failed'
 					currentBuild.result = 'FAILURE'
                 }
+		if(currentBuild.result != 'FAILURE') {		   
+			stage('Install Software') {
+				try
+				{
+					nodejs(nodeJSInstallationName: 'nodejs-16.17.0') {
+					    bat 'npm config ls'
+					}
+
+					env.PATH = "C:\\tools\\jenkins.plugins.nodejs.tools.NodeJSInstallation\\nodejs-16.17.0;${env.PATH}"
+					bat 'npm -v'
+					bat 'npm install gulp -g'
+                    bat 'powershell.exe -ExecutionPolicy ByPass -File ./Install.ps1'
+                    env.PATH = "C:\\Software\\Python\\Python.exe;${env.PATH}"
+				}
+				 catch(Exception e)
+				 {
+				    echo "Exception in software installation stage \r\n"+e
+					currentBuild.result = 'FAILURE'
+				 }
+			}
+		}
 				
 		    	if(currentBuild.result != 'FAILURE') {
                     stage 'Install'

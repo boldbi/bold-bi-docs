@@ -26,7 +26,7 @@ Follow these steps to create IF and THEN expression column:
 
     ![SalesOrderDetail table](/static/assets/faq/images/SalesOrderDetail-table.PNG)
 
-3.	For Example, consider above customer’s table that contains a field named `OrderQty`. In column, you want to denote whether the `OrderQty` is high when it is more than 15. Now, You need to create an [expression](/working-with-data-source/transforming-data/configuring-expression-columns) by using the IF and THEN syntax.               
+3.	For Example, consider above customer’s table that contains a field named `OrderQty`. In column, you want to denote whether the `OrderQty` is high when it is more than 15. Now, You need to create an [expression](/working-with-data-source/transforming-data/configuring-expression-columns/) by using the IF and THEN syntax.               
 
     **Sample Expression:** `IF([OrderQty]>15, 'High', 'Low')`
     

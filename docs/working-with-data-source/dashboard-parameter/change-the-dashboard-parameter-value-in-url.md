@@ -56,7 +56,7 @@ To set a dashboard parameter within a URL, use the following syntax:
 
 •	NOTIN
 
-`IN` and `NOTIN` operators are supported for [URL Filter](../../working-with-dashboards/preview-dashboard/urlparameters.md) in dashboard parameter.
+`IN` and `NOTIN` operators are supported for [URL Filter](/working-with-dashboards/preview-dashboard/urlparameters/) in dashboard parameter.
 
 > **NOTE:**  Parameter name is case sensitive.
 ### Supported Data types
@@ -85,18 +85,43 @@ Using the dashboard parameter syntax, you can pass the dashboard parameter value
 
 Default parameters enhances to filter the data based on the current user. It can be passed in custom query and web URL. Currently, the default parameter is supported with,
 
-•   Full name
-
-•   Email
-
-For the current user, use the following syntax to filter the data based on full name.
-
-Syntax: `@{{:CURRENTUSER.FULLNAME}}`
-
-For the current user, use the following syntax to filter the data based on email.
-
-Syntax: `@{{:CURRENTUSER.EMAIL}}`
-
+<meta charset="utf-8"/>
+<table>
+    <tbody>
+        <tr>
+            <td align="center"><b>Name</b></td>
+            <td align="center"><b>Syntax</b></td>
+        </tr>
+        <tr>
+            <td align="left">Full Name</td>
+            <td align="left">For the current user, use the following syntax to filter the data based on full name.<br><br>@{{:CURRENTUSER.FULLNAME}}
+            <br><br></td>
+        </tr>
+        <tr>
+            <td align="left">Email</td>
+            <td align="left">For the current user, use the following syntax to filter the data based on email.<br><br>@{{:CURRENTUSER.EMAIL}}
+            <br><br></td>
+        </tr>
+        <tr>
+            <td align="left">Site URL</td>
+            <td align="left">Use the following Syntax to filter the data based on the site URL.
+            <br><br>@{{:CURRENTUSER.SITEURL}}
+            <br><br></td>
+        </tr>
+        <tr>
+            <td align="left">Browser Culture</td>
+            <td align="left">Use the following Syntax to filter the data based on the browser culture.
+            <br><br>@{{:CURRENTUSER.BROWSERCULTURE}}
+            <br><br></td>
+        </tr>
+        <tr>
+            <td align="left">Site Identifier</td>
+            <td align="left">Use the following Syntax to filter the data based on the site identifier. Site Identifier is not applicable for cloud environment.
+            <br><br>@{{:CURRENTUSER.SITEIDENTIFIER}}
+            <br><br></td>
+        </tr>
+    </tbody>
+</table>
 
 ### Default parameter in custom query
 

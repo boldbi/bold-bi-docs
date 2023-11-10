@@ -5,7 +5,7 @@ description: Learn how to share dashboards with your team and collaborate with t
 canonical: "/working-with-dashboards/share-dashboards/"
 platform: bold-bi
 documentation: ug
-lang: en
+
 ---
 
 # Share Dashboards
@@ -16,7 +16,7 @@ There are different ways, you can share your dashboard with the users in your Bo
 
 * [Get links to Dashboards](/working-with-dashboards/share-dashboards/get-dashboard-link/)
 
-* [Manage access permissions for your dashboard](/working-with-dashboards/share-dashboards/manage-permissions/)
+* [Manage access permissions for your dashboard](/managing-resources/manage-permissions/)
 
 * [Share to anonymous users](/working-with-dashboards/share-dashboards/public-dashboards/)
 
@@ -26,7 +26,7 @@ There are different ways, you can share your dashboard with the users in your Bo
 
 * [Notifications](/working-with-dashboards/share-dashboards/notifications/)
 
-Continue learning on how to manage [data sources](/managing-resources/manage-data-sources/), [schedules](/managing-resources/manage-schedules/), [users](/managing-resources/manage-users/), [groups](/managing-resources/manage-groups/), [administer the site](/site-administration/) and [connect with the Bold BI site programmatically](/rest-api-reference/).
+Continue learning on how to manage [data sources](/managing-resources/manage-data-sources/), [schedules](/managing-resources/manage-schedules/), [users](/managing-resources/manage-users/), [groups](/managing-resources/manage-groups/), [administer the site](/site-administration/) and [connect with the Bold BI site programmatically](/server-api-reference/).
 
 ## Create a support incident
 

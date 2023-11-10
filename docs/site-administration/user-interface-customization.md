@@ -4,7 +4,7 @@ title: User Interface Customization – Embedded BI | Bold BI Docs
 description: Learn how to customize Bold BI application user interface in terms of adding custom menus, menu items listing, showing preview, etc. with a configuration file.
 platform: bold-bi
 documentation: ug
-lang: en
+
 ---
 
 # User Interface Customization in Bold BI Embedded Analytics

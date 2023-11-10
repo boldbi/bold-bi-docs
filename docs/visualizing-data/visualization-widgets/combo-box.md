@@ -6,7 +6,7 @@ canonical: "/visualizing-data/visualization-widgets/combo-box/"
 platform: bold-bi
 control: Combo Box
 documentation: ug
-lang: en
+
 ---
 
 # Combo Box
@@ -167,6 +167,26 @@ You can able to select the multiple items in the combo box.
 #### Allow Filter
 
 This allows you to enable a `filter` box for easy filtering of data.
+
+#### Place Holder
+
+The `PlaceHolder` property of a combo box provides context about the user's selection. The placeholder text in the Place Holder text box and combo box is set to `All` by default.
+
+![Filter](/static/assets/visualizing-data/visualization-widgets/images/combo-box/combox-placeholder.png)
+
+#### Customizing Text for Multiple Combo Boxes Simultaneously
+
+If you have multiple combo boxes in your dashboard and you want to customize the placeholder text for all of them at once, [localize](/localization/) the `defaultplaceHolderText` property in the locale file. This property allows you to set a default placeholder text for all combo boxes in your dashboard.
+
+![Filter](/static/assets/visualizing-data/visualization-widgets/images/combo-box/multi-combox-placeholder-before.png)
+![Filter](/static/assets/visualizing-data/visualization-widgets/images/combo-box/multi-combox-placeholder-locale-customize.png)
+![Filter](/static/assets/visualizing-data/visualization-widgets/images/combo-box/multi-combox-placeholder-after.png)
+
+#### Customizing Text for a Particular Combo Box
+
+This property can be customized to suit the needs of your dashboard. For example, if you have a combo box for selecting a country, the placeholder text could be 'Select your country.' This gives you clear instructions on what action you need to take.
+
+![Filter](/static/assets/visualizing-data/visualization-widgets/images/combo-box/combox-placeholder-customize.png)
 
 #### Filter
 

@@ -26,19 +26,18 @@ The link will redirect to another page that will look like below.
 
 ## Select Users and Import
 
-After selecting columns the data retrieved from database will be shown in Grid. Select the users to be imported and click on `Import Users` to import the users.
+After selecting columns the data retrieved from the database will be shown in the Grid. Select the users to be imported and click on `Import Selected Users` to import the selected users or you can import all the users by clicking on the `Import All Users` button.
 
-![Import Selected Users](/static/assets/managing-resources/manage-users/images/import-users-grid-selection-new.png)
+![Import Database Users](/static/assets/managing-resources/manage-users/images/import-from-database-users.png)
 
-Bold BI will import the chosen users and a confirmation message will be displayed as shown in the below image.
 
-![Success message after imported the Database users](/static/assets/managing-resources/manage-users/images/Database-User-imported-new.png#width=60%)
+Bold BI will import the chosen users in the background as a job and a confirmation dialog will be displayed as shown in the following figure.
 
-## Duplicate Users
+![Confirmation dialog after import users started](/static/assets/managing-resources/manage-users/images/confirmation-dialogue-on-import-click.png#width=70%)
 
- Existing database users who has the same username or email address as that of the Bold BI users(who are already present), will be marked as duplicate users and will not be allowed to import into Bold BI.
+You can view the status of the current import by clicking on the `View Status` button in the above confirmation dialog and you will be navigated to the below bulk import job details page where you can view the details of the current import job. Please learn more about the Bulk Import Result page [here](/managing-resources/manage-users/bulk-import-result/).
 
- ![Display Duplicated Users](/static/assets/managing-resources/manage-users/images/Duplicated-existing-db-import-users.png)
+![Bulk user import job details page](/static/assets/managing-resources/manage-users/images/import-job-details-page.png#width=70%)
 
 ## Modify Existing Database Connection
 

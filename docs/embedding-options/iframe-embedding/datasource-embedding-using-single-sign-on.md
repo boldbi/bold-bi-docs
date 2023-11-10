@@ -4,7 +4,7 @@ title: Data source iframe Embedding Using SSO | Bold BI Docs
 description: Learn how to embed a data source in different modes using iFrame with Single Sign-on authentication. Also, find a sample to download.
 platform: bold-bi
 documentation: ug
-lang: en
+
 ---
 
 # Embed data source using SSO in Bold BI

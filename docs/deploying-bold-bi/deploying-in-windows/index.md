@@ -4,7 +4,6 @@ title: Deployment of Bold BI in Windows | Bold BI Learning
 description: Learn how to deploy Bold BI in Windows instance and also find how it can be installed on top of Bold Reports if installed already.
 platform: bold-bi
 documentation: ug
-lang: en
 ---
 
 # Deploying in Windows

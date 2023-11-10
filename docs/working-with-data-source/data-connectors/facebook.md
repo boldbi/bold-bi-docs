@@ -39,11 +39,13 @@ To configure the Facebook data source, follow the below steps:
     ![CreateApp](/static/assets/working-with-datasource/data-connectors/images/facebook/create_next.png)
 5. Fill in the **App Name** and click **Create app**.
     ![AppName](/static/assets/working-with-datasource/data-connectors/images/facebook/app_name.png)
-6. Once the app is created, navigate to the **Settings** tab on the left-hand side in the app dashboard, and go to the **Basic** section.
+6. Once the app is created, on the left-hand side of the app dashboard, click on the **Facebook Login** button. Then, navigate to the **settings** section.
+7. Insert the following URLs in the **Valid OAuth Redirect URIs**, replace {{HOST_URL}} with your base URL. The Bold BI redirect URL should be added in the proper format required. Please refer to this URL structure, `https://<:yourdomain>/bi/designer/v1.0/oauth/agent`.
+    ![Redirect](/static/assets/working-with-datasource/data-connectors/images/facebook/Redirect.png)
+8. Navigate to the **Settings** tab on the left-hand side in the app dashboard and go to the **Basic** section.
     ![AppDashboard](/static/assets/working-with-datasource/data-connectors/images/facebook/basic.png)
-7. The **App ID** and **App Secret**s are displayed at the top of the "Basic" section. This is your **client ID** and **client secret** respectively.
+9. The **App ID** and **App Secret**s are displayed at the top of the "Basic" section. This is your **client ID** and **client secret** respectively.
     ![AppId](/static/assets/working-with-datasource/data-connectors/images/facebook/app_Id.png)
-
 > **NOTE:** Save the client ID and client secret in Bold BI by following the [OAuth Configuration](/site-administration/data-connector-settings/oauth-configuration/) guide for more details.
 
 ## Authentication with Facebook

@@ -137,7 +137,29 @@ The selected export options can be seen when previewing or viewing the dashboard
    ![Excel reset](/static/assets/working-with-dashboards/preview-dashboards/images/Excelreset.png)
    
    Click `Reset` to restore the default values in the pop-up.
+
+## Exporting dashboard to CSV
+
+   You can obtain the aggregated data showcased in the dashboard by exporting it as CSV format. This can be achieved by clicking the `Export to CSV` in the drop-down menu at the right corner of the title section.
+    
+   ![Export to Csv](/static/assets/working-with-dashboards/preview-dashboards/images/ExportToCsv.png)
    
+   By clicking the `Export to CSV`, the pop-up will be shown as follows:
+   
+   ![CSV Popup](/static/assets/working-with-dashboards/preview-dashboards/images/CsvExportPopup.png)  
+   
+   Set the `File Name` field with preferred value to replace the default one.
+   
+   ![CSV export](/static/assets/working-with-dashboards/preview-dashboards/images/CsvExport.png)
+   
+   Click `Export` to display the data in the dashboard in the chosen csv format
+   
+   ![CSV reset](/static/assets/working-with-dashboards/preview-dashboards/images/CsvReset.png)
+   
+   Click `Reset` to restore the default File name values in the pop-up.
+
+   >**NOTE:** When initiating a CSV export, a dashboard with a single widget will directly produce the data in CSV format. In contrast, dashboards with multiple widgets will generate a zip file, encompassing CSV files tailored to each widget item.
+
 ## Updating dashboard
 
    You can update the dashboard manually by clicking the `Update Dashboard` at right corner of the title section.

@@ -5,7 +5,7 @@ description: Learn how to work with dashboards in using templates, dashboard fil
 canonical: "/working-with-dashboards/"
 platform: bold-bi
 documentation: ug
-lang: en
+
 ---
 
 # Working with Dashboard

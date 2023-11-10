@@ -4,7 +4,7 @@ title: Dashboard Templates – Embedded BI | Bold BI Documentation
 description: Learn how to create dashboard from pre-defined dashboard templates by just connecting your data in Bold BI Embedded.
 platform: bold-bi
 documentation: ug
-lang: en
+
 ---
 # Bold BI sample dashboard templates 
 
@@ -99,7 +99,7 @@ Look at <a href="https://www.boldbi.com/blog/jira-dashboard-example-with-bold-bi
 
 ## ServiceNow Dashboard
 
-<a href="https://www.boldbi.com/blog/build-a-servicenow-incident-management-monitoring-dashboard-in-a-minute" target="_blank">This</a blog is used to monitor the incident details over a period and provides accurate information regarding the average resolution time for an incident and status of incidents based on the category and priority.
+<a href="https://www.boldbi.com/blog/build-a-servicenow-incident-management-monitoring-dashboard-in-a-minute" target="_blank">This</a> blog is used to monitor the incident details over a period and provides accurate information regarding the average resolution time for an incident and status of incidents based on the category and priority.
 
 ![ServiceNow Dashboard](/static/assets/working-with-dashboards/images/servicenow-dashboard.png)
 

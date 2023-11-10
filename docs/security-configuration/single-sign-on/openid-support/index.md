@@ -4,7 +4,7 @@ title: Single Sign-On with OpenID Connect | Bold BI Embedded
 description: Learn how to configure Bold BI Embedded with OpenID based identity provider for Single Sign-on authentication using OpenID Connect.
 platform: bold-bi
 documentation: ug
-lang: en
+
 ---
 
 # OpenID Connect support

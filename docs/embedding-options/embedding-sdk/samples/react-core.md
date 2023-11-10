@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  Embed SDK v3.3.40 React with ASP.NET Core Sample | Bold BI
-description: Explore the React JS-based sample embedded in ASP.NET Core application supported since v3.3.40 of Bold BI.
+title: Embedding Analytics with ASP.NET Core and React | Bold BI Docs
+description: Learn how to embed an analytics dashboard with an ASP.NET Core and React application using Bold BI Embed SDK and try it yourself.
 platform: bold-bi
 documentation: ug
-lang: en
+
 ---
 
 # Bold BI Dashboards embedding in React with ASP.NET Core using Embedded SDK
@@ -19,7 +19,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/react-with-as
  * [Node.js](https://nodejs.org/en/)
  * [Visual Studio Code](https://code.visualstudio.com/download)
 
-> **NOTE:** Node.js v14.16 to v18.16 are supported
+> **NOTE:** Node.js v14.16 to v18.18 are supported
 
 ## How to run the sample
 

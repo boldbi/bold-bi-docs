@@ -5,7 +5,7 @@ description: Learn how to forecast the future data when visualizing your data in
 canonical: "/visualizing-data/working-with-widgets/forecasting/"
 platform: bold-bi
 documentation: ug
-lang: en
+
 ---
 
 # Forecast in Dashboard

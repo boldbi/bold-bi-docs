@@ -36,7 +36,7 @@ Once you click the data source, the NEW DATA SOURCE configuration panel opens.
 5. Choose a time interval for **Refresh Settings** using the combo box, to trigger the Rest API request periodically to keep the data in sync with our dashboard.
 6. Select **JSON** data type in **Data Format** combo box.
 7. Choose **Basic http Authentication** under **Authentication Type** combo box.
-8. Enter a valid **User Name** and **Password** to access the endpoint in your account.
+8. Enter a valid **API Key** to access the endpoint in your account. To obtain an API key in Freshservice , refer the [Freshservice API documentation](https://support.freshservice.com/en/support/solutions/articles/50000000306-where-do-i-find-my-api-key-) for more details.
 
     ![DataSourcesView](/static/assets/working-with-datasource/data-connectors/images/freshservice/DataSourcesView.png)
 

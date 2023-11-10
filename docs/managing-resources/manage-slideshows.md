@@ -5,7 +5,7 @@ description: Learn how to manage slideshows in Bold BI Embedded. Slideshow is pr
 canonical: "/managing-resources/manage-slideshows/"
 platform: bold-bi
 documentation: ug
-lang: en
+
 ---
 
 # Slideshows - Present dashboards in slides

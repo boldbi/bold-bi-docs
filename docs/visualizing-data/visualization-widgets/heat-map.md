@@ -6,7 +6,7 @@ canonical: "/visualizing-data/visualization-widgets/heat-map/"
 platform: bold-bi
 control: HeatMap
 documentation: ug
-lang: en
+
 ---
 
 # Configuring and Formatting Heatmap

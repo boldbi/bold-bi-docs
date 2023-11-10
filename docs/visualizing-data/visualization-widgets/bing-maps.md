@@ -252,6 +252,18 @@ Image: Bing maps widget after configuring the Postal Code fields.
 
 ![Configured Bing maps](/static/assets/visualizing-data/visualization-widgets/images/bing-maps/configured-postal-code.png)
 
+### Marker Size
+
+If you wish to modify the size of the marker according to the data, then you can configure that data in the `Marker Size` section. You can only configure the measured field for Marker Size.
+
+![BingMap Marker Size Container](/static/assets/visualizing-data/visualization-widgets/images/bing-maps/bingmap-markersize.png)
+
+After configuring the marker size field, the Bing map renders as follows.
+
+![Map with Marker Size](/static/assets/visualizing-data/visualization-widgets/images/bing-maps/bingmap-withsize.png)
+
+> **Note:** After configuring the marker size, the size of marker settings under the property panel will be disabled automatically.
+
 ### Marker Tooltip section
 
 Drag and drop the elements from sections to the `Marker Tooltip` section. It will define the marker tooltip value in the bing maps. Also, it is an optional section.
@@ -487,7 +499,7 @@ This allows to change the marker color of the bing maps.
 
 ### Size 
 
-This allows to change the marker size of the bing maps.
+This allows to change the marker size of the bing maps. When configuring data into `Marker Size`, this property will be disabled.
 
 ![Shape Size](/static/assets/visualizing-data/visualization-widgets/images/bing-maps/shape-size-option.png)
 
@@ -497,6 +509,7 @@ This allows to change the marker size of the bing maps.
 
 ### Advanced Settings
 
+### Rule
 Markers can be customized based on the conditions and the fields by enabling the advance settings check box.
 
 1.  Based on the measure field.
@@ -506,6 +519,18 @@ Markers can be customized based on the conditions and the fields by enabling the
 2.  Based on the dimension field.
 
 ![Marker Customization Based on dimension field](/static/assets/visualizing-data/visualization-widgets/images/bing-maps/marker-measure-field.png)
+
+### Individual
+
+This option allows you to customize the map marker color individually based on the selected column values.
+
+For example, if you have three types of signal strength options in your data and you want to display marker colors based on the three types. You can select the `Signal Strength` column in the based selection and then assign a color for each type of signal strength option.
+
+![Individual Marker settings](/static/assets/visualizing-data/visualization-widgets/images/bing-maps/map-individualcolor-settings.png)
+
+Now, the map marker color renders with these changes.
+
+![Individual Marker Color](/static/assets/visualizing-data/visualization-widgets/images/bing-maps/bingmap-individualcolor.png)
 
 #### Link
 

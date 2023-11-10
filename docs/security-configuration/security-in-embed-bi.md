@@ -40,14 +40,33 @@ Authorization includes:
 -	What users are allowed to create new schedules or manage existing schedules.
 -	What users are allowed to perform admin roles on Bold BI for creating tenant, adding the users, and configuring the server settings.
 
-## Data security
-Bold BI provides support to control which users can see the dashboards and data sources. For data sources that are connected to live databases, you can also control the users based on their permissions. There are read, write, create, and delete permissions that can be assigned to users and groups. Without the read permission, no user could see your data source and dashboards.
+## User Access Control
+Bold BI provides a comprehensive range of features to protect your data and dashboards against unauthorized access. Our platform allows you to control user access to both dashboards and data sources, providing various permission levels to manage data access.
 
-### Within the tenant
-Bold BI server provides the flexible permission system. Using this, you can control the access to dashboard and data source. 
+<table>
+<tr>
+<th style="width: 50%;">Within the tenant</th>
+<th style="width: 50%;">Between the tenants</th>
+</tr>
+<tr>
+<td>Bold BI server provides a flexible permission system. Using this, you can control access to the dashboard and data source.</td>
+<td>Every tenant user can only log in to their tenant and access the resource. Each tenant has been deployed with its database and resource, which ensures that one tenant's data is not shared with other tenants. Also, users belonging to one tenant can only see the users who belong to the same tenant and share a dashboard with that tenant's users. Users must have permission to view and access the dashboard and resources created by another user on the same tenant.</td>
+</tr>
+</table>
 
-### Between the tenants
-Every tenant user can only login to their tenant and access the resource. Each tenant has been deployed with its own database and resource, which ensures that one tenant data is not shared with other tenant. Also, users belong to one tenant can only see the users belong to the same tenant and share a dashboard to that tenant users. Users must have permissions to view and access the dashboard and resources created by another user on same tenant.
+### Object Level Security
+In BoldBI, you can control users based on their permission. There are read, write, create, and delete permissions that can be assigned to users and groups. Without the read permission, no user could see your dashboards.
+
+Object Level Security allows administrators to control access to different dashboards within the BoldBI server for various users and groups. This includes the ability to share dashboards at both individual user and group levels with options to manage access rights for all users and define whether users can edit the dashboard.
+
+>**Note**: For more details about sharing the dashboard with the other users, please refer to the [link](https://help.boldbi.com/managing-resources/manage-dashboards/share-dashboards/).
+
+### Data Level Security
+In BoldBI, you can control users based on their permission for data sources connected to live databases. There are read, write, create, and delete permissions that can be assigned to users and groups. Without the read permission, no user could see your datasources.
+
+Data Level Security enables the enforcement of different levels of data visibility. By sharing a single dashboard with multiple users, each user can access only the data relevant to their specific requirements. This approach not only reduces development efforts but also enhances security measures.
+
+>**Note:** Row Level security grants the user and group permission to show only specific rows in the data. For more information, please refer to the [link](https://help.boldbi.com/faq/how-to-apply-row-level-security-in-elastic-search-data-source/).
 
 ## Application security
 Every Bold BI product installation will generate unique private keys in customer machine. These private keys will be used to encrypt and store the sensitive data such as password and database details.

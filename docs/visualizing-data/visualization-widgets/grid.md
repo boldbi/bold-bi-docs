@@ -6,7 +6,7 @@ canonical: "/visualizing-data/visualization-widgets/grid/"
 platform: bold-bi
 control: Grid
 documentation: ug
-lang: en
+
 ---
 
 # Configuring and Formatting Grid

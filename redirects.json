@@ -220,11 +220,19 @@
       "toPath": "/embedding-options/embedding-sdk/embedding-a-widget/"
     },
     {
-      "fromPath": "/embedded-bi/javascript-based/embedding-multiple-dashboards-and-widget-embedding/",
+      "fromPath":"/embedded-bi/",
+      "toPath":"https://help.boldbi.com/"
+    },
+    {
+      "fromPath":"/cloud-bi/",
+      "toPath":"https://help.boldbi.com/"
+    },
+    {
+      "fromPath": "/embedded-bi/javascript-based/multiple-dashboard-and-widget-embedding/",
       "toPath": "/embedding-options/embedding-sdk/embedding-multiple-dashboards-and-widgets/"
     },
     {
-      "fromPath": "/embedded-bi/javascript-based/embedding-pinboard/",
+      "fromPath": "/embedded-bi/javascript-based/pinboard-embedding/",
       "toPath": "/embedding-options/embedding-sdk/embedding-pinboard/"
     },
     {
@@ -264,76 +272,96 @@
       "toPath": "/embedding-options/embedding-sdk/samples/"
     },
     {
-      "fromPath": "/embedded-bi/javascript-based/samples/v3.3.40-or-later/",
-      "toPath": "/embedding-options/embedding-sdk/samples/v3.3.40-or-later/"
+      "fromPath": "/embedded-bi/javascript-based/samples/",
+      "toPath": "/embedding-options/embedding-sdk/samples/"
     },
     {
-      "fromPath": "/embedded-bi/javascript-based/samples/v3.3.40-or-later/asp-net-core/",
-      "toPath": "/embedding-options/embedding-sdk/samples/v3.3.40-or-later/asp-net-core/"
+      "fromPath": "/embedded-bi/javascript-based/samples/asp-net-core/",
+      "toPath": "/embedding-options/embedding-sdk/samples/asp-net-core/"
     },
     {
-      "fromPath": "/embedded-bi/javascript-based/samples/v3.3.40-or-later/asp-net-mvc/",
-      "toPath": "/embedding-options/embedding-sdk/samples/v3.3.40-or-later/asp-net-mvc/"
+      "fromPath": "/embedded-bi/javascript-based/samples/asp-net-mvc/",
+      "toPath": "/embedding-options/embedding-sdk/samples/asp-net-mvc/"
     },
     {
-      "fromPath": "/embedded-bi/javascript-based/samples/v3.3.40-or-later/angular-with-javascript/",
-      "toPath": "/embedding-options/embedding-sdk/samples/v3.3.40-or-later/angular-with-javascript/"
+      "fromPath": "/embedded-bi/javascript-based/samples/angular-with-javascript/",
+      "toPath": "/embedding-options/embedding-sdk/samples/angular-with-javascript/"
     },
     {
-      "fromPath": "/embedded-bi/javascript-based/samples/v3.3.40-or-later/asp-net/",
-      "toPath": "/embedding-options/embedding-sdk/samples/v3.3.40-or-later/asp-net/"
+      "fromPath": "/embedded-bi/javascript-based/samples/asp-net/",
+      "toPath": "/embedding-options/embedding-sdk/samples/asp-net/"
     },
     {
-      "fromPath": "/embedded-bi/javascript-based/samples/v3.3.40-or-later/blazor-with-javascript/",
-      "toPath": "/embedding-options/embedding-sdk/samples/v3.3.40-or-later/blazor-with-javascript/"
+      "fromPath": "/embedded-bi/javascript-based/samples/asp-net/",
+      "toPath": "/embedding-options/embedding-sdk/samples/asp-net/"
     },
     {
-      "fromPath": "/embedded-bi/javascript-based/samples/v3.3.40-or-later/ruby-on-rails/",
-      "toPath": "/embedding-options/embedding-sdk/samples/v3.3.40-or-later/ruby-on-rails/"
+      "fromPath": "/embedded-bi/javascript-based/samples/blazor-with-javascript/",
+      "toPath": "/embedding-options/embedding-sdk/samples/blazor-with-javascript/"
     },
     {
-      "fromPath": "/embedded-bi/javascript-based/samples/v3.3.40-or-later/react-core/",
-      "toPath": "/embedding-options/embedding-sdk/samples/v3.3.40-or-later/react-core/"
+      "fromPath": "/embedded-bi/javascript-based/samples/ruby-on-rails/",
+      "toPath": "/embedding-options/embedding-sdk/samples/ruby-on-rails/"
     },
     {
-      "fromPath": "/embedded-bi/javascript-based/samples/v3.3.40-or-later/react-with-go/",
-      "toPath": "/embedding-options/embedding-sdk/samples/v3.3.40-or-later/react-with-go/"
+      "fromPath": "/embedded-bi/javascript-based/samples/react-core/",
+      "toPath": "/embedding-options/embedding-sdk/samples/react-core/"
     },
     {
-      "fromPath": "/embedded-bi/javascript-based/samples/v3.3.40-or-later/winforms/",
-      "toPath": "/embedding-options/embedding-sdk/samples/v3.3.40-or-later/winforms/"
+      "fromPath": "/embedded-bi/javascript-based/samples/react-with-go/",
+      "toPath": "/embedding-options/embedding-sdk/samples/react-with-go/"
     },
     {
-      "fromPath": "/embedded-bi/javascript-based/samples/v3.3.40-or-later/node-js/",
-      "toPath": "/embedding-options/embedding-sdk/samples/v3.3.40-or-later/node-js/"
+      "fromPath": "/embedded-bi/javascript-based/samples/winforms/",
+      "toPath": "/embedding-options/embedding-sdk/samples/winforms/"
     },
     {
-      "fromPath": "/embedded-bi/javascript-based/samples/v3.3.40-or-later/php-with-javascript/",
-      "toPath": "/embedding-options/embedding-sdk/samples/v3.3.40-or-later/php-with-javascript/"
+      "fromPath": "/embedded-bi/javascript-based/samples/node-js/",
+      "toPath": "/embedding-options/embedding-sdk/samples/node-js/"
     },
     {
-      "fromPath": "/embedded-bi/javascript-based/samples/v3.3.40-or-later/vuejs-with-go/",
-      "toPath": "/embedding-options/embedding-sdk/samples/v3.3.40-or-later/vuejs-with-go/"
+      "fromPath": "/embedded-bi/javascript-based/samples/php-with-javascript/",
+      "toPath": "/embedding-options/embedding-sdk/samples/php-with-javascript/"
     },
     {
-      "fromPath": "/embedded-bi/javascript-based/samples/v3.3.40-or-later/vuejs-with-core/",
-      "toPath": "/embedding-options/embedding-sdk/samples/v3.3.40-or-later/vuejs-with-core/"
+      "fromPath": "/embedded-bi/javascript-based/samples/vuejs-with-go/",
+      "toPath": "/embedding-options/embedding-sdk/samples/vuejs-with-go/"
     },
     {
-      "fromPath": "/embedded-bi/javascript-based/samples/v3.3.40-or-later/wpf/",
-      "toPath": "/embedding-options/embedding-sdk/samples/v3.3.40-or-later/wpf/"
+      "fromPath": "/embedded-bi/javascript-based/samples/vuejs-with-core/",
+      "toPath": "/embedding-options/embedding-sdk/samples/vuejs-with-core/"
     },
     {
-      "fromPath": "/embedded-bi/javascript-based/samples/v3.3.40-or-later/xamarin/",
-      "toPath": "/embedding-options/embedding-sdk/samples/v3.3.40-or-later/xamarin/"
+      "fromPath": "/embedded-bi/javascript-based/samples/wpf/",
+      "toPath": "/embedding-options/embedding-sdk/samples/wpf/"
     },
     {
-      "fromPath": "/embedded-bi/javascript-based/samples/v3.3.40-or-later/flutter-with-javascript/",
-      "toPath": "/embedding-options/embedding-sdk/samples/v3.3.40-or-later/flutter-with-javascript/"
+      "fromPath": "/embedded-bi/javascript-based/samples/xamarin/",
+      "toPath": "/embedding-options/embedding-sdk/samples/xamarin/"
     },
     {
-      "fromPath": "/embedded-bi/javascript-based/samples/v3.3.40-or-later/other-platform-samples/",
-      "toPath": "/embedding-options/embedding-sdk/samples/v3.3.40-or-later/other-platform-samples/"
+      "fromPath": "/embedded-bi/javascript-based/samples/flutter-with-javascript/",
+      "toPath": "/embedding-options/embedding-sdk/samples/flutter-with-javascript/"
+    },
+    {
+      "fromPath": "/embedded-bi/javascript-based/samples/other-platform-samples/",
+      "toPath": "/embedding-options/embedding-sdk/samples/other-platform-samples/"
+    },
+    {
+      "fromPath":"/embedded-bi/javascript-based/samples/cold-fusion/",
+      "toPath":"/embedding-options/embedding-sdk/samples/cold-fusion/"
+    },
+    {
+      "fromPath":"/embedded-bi/javascript-based/samples/django/",
+      "toPath":"/embedding-options/embedding-sdk/samples/django/"
+    },
+    {
+      "fromPath":"/embedded-bi/javascript-based/samples/ionic-with-core/",
+      "toPath":"/embedding-options/embedding-sdk/samples/ionic-with-core/"
+    },
+    {
+      "fromPath":"/embedded-bi/javascript-based/samples/java-servlet/",
+      "toPath":"/embedding-options/embedding-sdk/samples/java-servlet/"
     },
     {
       "fromPath": "/embedded-bi/javascript-based/samples/v3.2.16/",
@@ -418,6 +446,14 @@
     {
       "fromPath": "/embedded-bi/iframe-based/dynamic-connection-string/",
       "toPath": "/embedding-options/iframe-embedding/dynamic-connection-string/"
+    },
+    {
+      "fromPath":"/embedded-bi/iframe-based/dashboard-embedding-with-views/",
+      "toPath":"/embedding-options/iframe-embedding/embedding-a-dashboard-with-views/"
+    },
+    {
+      "fromPath":"/embedded-bi/iframe-based/dashboard-view-mode/",
+      "toPath":"/embedding-options/iframe-embedding/embedding-a-dashboard/"
     },
     {
       "fromPath": "/embedded-bi/working-with-data-source/",
@@ -1600,40 +1636,40 @@
       "toPath": "/multi-tenancy/site-administration/authentication/azure-b2c-settings/"
     },
     {
-      "fromPath": "/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/",
-      "toPath": "/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/"
+      "fromPath": "/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/",
+      "toPath": "/multi-tenancy/site-administration/look-and-feel-settings/"
     },
     {
-      "fromPath": "/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/font/",
-      "toPath": "/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/font/"
+      "fromPath": "/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/font/",
+      "toPath": "/multi-tenancy/site-administration/look-and-feel-settings/font/"
     },
     {
-      "fromPath": "/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/",
-      "toPath": "/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/"
+      "fromPath": "/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/",
+      "toPath": "/multi-tenancy/site-administration/look-and-feel-settings/theme/"
     },
     {
-      "fromPath": "/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/create-custom-application-theme/",
-      "toPath": "/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/create-custom-application-theme/"
+      "fromPath": "/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/create-custom-application-theme/",
+      "toPath": "/multi-tenancy/site-administration/look-and-feel-settings/theme/create-custom-application-theme/"
     },
     {
-      "fromPath": "/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/create-custom-dashboard-theme/",
-      "toPath": "/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/create-custom-dashboard-theme/"
+      "fromPath": "/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/create-custom-dashboard-theme/",
+      "toPath": "/multi-tenancy/site-administration/look-and-feel-settings/theme/create-custom-dashboard-theme/"
     },
     {
-      "fromPath": "/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/",
-      "toPath": "/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/"
+      "fromPath": "/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/",
+      "toPath": "/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/"
     },
     {
-      "fromPath": "/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/",
-      "toPath": "/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/"
+      "fromPath": "/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/",
+      "toPath": "/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/"
     },
     {
       "fromPath": "/embedded-bi/multi-tenancy/site-administration/manage-license/",
       "toPath": "/multi-tenancy/site-administration/manage-license/"
     },
     {
-      "fromPath": "/embedded-bi/multi-tenancy/site-administration/manage-fromPathalization/",
-      "toPath": "/multi-tenancy/site-administration/manage-fromPathalization/"
+      "fromPath": "/embedded-bi/multi-tenancy/site-administration/manage-localization/",
+      "toPath": "/multi-tenancy/site-administration/manage-localization/"
     },
     {
       "fromPath": "/embedded-bi/multi-tenancy/manage-sites/",
@@ -2068,16 +2104,16 @@
       "toPath": "/utilities/classic-dashboard-migration-tool/"
     },
     {
-      "fromPath": "/embedded-bi/fromPathalization/",
-      "toPath": "/fromPathalization/"
+      "fromPath": "/embedded-bi/localization/",
+      "toPath": "/localization/"
     },
     {
-      "fromPath": "/embedded-bi/fromPathalization/latest/",
-      "toPath": "/fromPathalization/latest/"
+      "fromPath": "/embedded-bi/localization/latest/",
+      "toPath": "/localization/latest/"
     },
     {
-      "fromPath": "/embedded-bi/fromPathalization/v4.2.69-or-earlier/",
-      "toPath": "/fromPathalization/v4.2.69-or-earlier/"
+      "fromPath": "/embedded-bi/localization/v4.2.69-or-earlier/",
+      "toPath": "/localization/v4.2.69-or-earlier/"
     },
     {
       "fromPath": "/embedded-bi/user-interface-customization/",
@@ -2148,6 +2184,10 @@
       "toPath": "/server-api-reference/"
     },
     {
+      "fromPath":"/faq/how-many-server-deployments-supported-in-a-single-bold-bi-license/",
+      "toPath":"https://support.boldbi.com/kb/article/874/how-many-server-deployments-are-supported-by-a-single-bold-bi-license"
+    },
+    {
       "fromPath": "/embedded-bi/rest-api-reference/site-administration/",
       "toPath": "/site-administration/api-reference/"
     },
@@ -2173,6 +2213,54 @@
     },
     {
       "fromPath": "/embedded-bi/rest-api-reference/site-administration/v2.0/try-it-now/",
+      "toPath": "/site-administration/api-reference/v2.0/try-it-now/"
+    },
+	  {
+      "fromPath": "/multi-tenacy/site-administration/api-reference/",
+      "toPath": "/site-administration/api-reference/"
+    },
+    {
+      "fromPath": "/multi-tenancy/site-administration/api-reference/v1.0/",
+      "toPath": "/site-administration/api-reference/v1.0/"
+    },
+    {
+      "fromPath": "/multi-tenancy/site-administration/api-reference/v1.0/api-reference/",
+      "toPath": "/site-administration/api-reference/v1.0/api-reference/"
+    },
+    {
+      "fromPath": "/multi-tenancy/site-administration/api-reference/v1.0/try-it-now/",
+      "toPath": "/site-administration/api-reference/v1.0/try-it-now/"
+    },
+    {
+      "fromPath": "/multi-tenancy/site-administration/api-reference/v2.0/",
+      "toPath": "/site-administration/api-reference/v2.0/"
+    },
+    {
+      "fromPath": "/multi-tenancy/site-administration/api-reference/v2.0/api-reference/",
+      "toPath": "/site-administration/api-reference/v2.0/api-reference/"
+    },
+    {
+      "fromPath": "/multi-tenancy/site-administration/api-reference/v2.0/try-it-now/",
+      "toPath": "/site-administration/api-reference/v2.0/try-it-now/"
+    },
+    {
+      "fromPath": "/multi-tenacy/api-reference/",
+      "toPath": "/site-administration/api-reference/"
+    },
+    {
+      "fromPath": "/multi-tenancy/api-reference/v1.0/api-reference/",
+      "toPath": "/site-administration/api-reference/v1.0/api-reference/"
+    },
+    {
+      "fromPath": "/multi-tenancy/api-reference/v1.0/try-it-now/",
+      "toPath": "/site-administration/api-reference/v1.0/try-it-now/"
+    },
+    {
+      "fromPath": "/multi-tenancy/api-reference/v2.0/api-reference/",
+      "toPath": "/site-administration/api-reference/v2.0/api-reference/"
+    },
+    {
+      "fromPath": "/multi-tenancy/api-reference/v2.0/try-it-now/",
       "toPath": "/site-administration/api-reference/v2.0/try-it-now/"
     },
     {
@@ -2708,7 +2796,7 @@
       "toPath": "/getting-started/"
     },
     {
-      "fromPath": "/cloud-bi/getting-started/creating-dashboard/",
+      "fromPath": "/cloud-bi/getting-started/quick-start/",
       "toPath": "/getting-started/creating-dashboard/"
     },
     {
@@ -3713,6 +3801,10 @@
     },
     {
       "fromPath": "/cloud-bi/security/",
+      "toPath": "/security-configuration/security-in-cloud-bi/"
+    },
+    {
+      "fromPath": "/cloud-bi/security-configuration/",
       "toPath": "/security-configuration/"
     },
     {
@@ -4362,20 +4454,21 @@
 {"fromPath":"/cloud-bi/faq/how-to-use-groups-in-bold-bi/#use-groups-for-assinging-custom-attributes-to-multiple-users","toPath:":"/faq/how-to-use-groups-in-bold-bi/#use-groups-for-assinging-custom-attributes-to-multiple-users"},
 {"fromPath":"/cloud-bi/faq/how-to-use-median-aggregation-in-bold-bi/#steps-to-use-the-median-aggregation-in-bold-bi","toPath:":"/faq/how-to-use-median-aggregation-in-bold-bi/#steps-to-use-the-median-aggregation-in-bold-bi"},
 {"fromPath":"/cloud-bi/faq/working-with-custom-query-extract-mode-in-bold-bi/#how-to-connect-custom-query-in-extract-mode:","toPath:":"/faq/working-with-custom-query-extract-mode-in-bold-bi/#how-to-connect-custom-query-in-extract-mode:"},
-{"fromPath":"/cloud-bi/getting-started/creating-dashboard/#opening-dashboard-designer","toPath:":"/getting-started/creating-dashboard/#opening-dashboard-designer"},
-{"fromPath":"/cloud-bi/getting-started/creating-dashboard/#scrollable-dashboard","toPath:":"/getting-started/creating-dashboard/#scrollable-dashboard"},
-{"fromPath":"/cloud-bi/getting-started/creating-dashboard/#connecting-to-data","toPath:":"/getting-started/creating-dashboard/#connecting-to-data"},
-{"fromPath":"/cloud-bi/getting-started/creating-dashboard/#setting-up-connection","toPath:":"/getting-started/creating-dashboard/#setting-up-connection"},
-{"fromPath":"/cloud-bi/getting-started/creating-dashboard/#configuring-tables-and-views","toPath:":"/getting-started/creating-dashboard/#configuring-tables-and-views"},
-{"fromPath":"/cloud-bi/getting-started/creating-dashboard/#transforming-data","toPath:":"/getting-started/creating-dashboard/#transforming-data"},
-{"fromPath":"/cloud-bi/getting-started/creating-dashboard/#creating-dashboard","toPath:":"/getting-started/creating-dashboard/#creating-dashboard"},
-{"fromPath":"/cloud-bi/getting-started/creating-dashboard/#adding-a-widget-to-design-view","toPath:":"/getting-started/creating-dashboard/#adding-a-widget-to-design-view"},
-{"fromPath":"/cloud-bi/getting-started/creating-dashboard/#assigning-data-to-widget","toPath:":"/getting-started/creating-dashboard/#assigning-data-to-widget"},
-{"fromPath":"/cloud-bi/getting-started/creating-dashboard/#measure-filter","toPath:":"/getting-started/creating-dashboard/#measure-filter"},
-{"fromPath":"/cloud-bi/getting-started/creating-dashboard/#dimension-filter","toPath:":"/getting-started/creating-dashboard/#dimension-filter"},
-{"fromPath":"/cloud-bi/getting-started/creating-dashboard/#dimension-sorting","toPath:":"/getting-started/creating-dashboard/#dimension-sorting"},
-{"fromPath":"/cloud-bi/getting-started/creating-dashboard/#configuring-properties-to-widget","toPath:":"/getting-started/creating-dashboard/#configuring-properties-to-widget"},
-{"fromPath":"/cloud-bi/getting-started/creating-dashboard/#related-links","toPath:":"/getting-started/creating-dashboard/#related-links"},
+{"fromPath":"/cloud-bi/getting-started/quick-start/#opening-dashboard-designer","toPath:":"/getting-started/creating-dashboard/#opening-dashboard-designer"},
+{"fromPath":"/cloud-bi/getting-started/quick-start/#scrollable-dashboard","toPath:":"/getting-started/creating-dashboard/#scrollable-dashboard"},
+{"fromPath":"/cloud-bi/getting-started/quick-start/#connecting-to-data","toPath:":"/getting-started/creating-dashboard/#connecting-to-data"},
+{"fromPath":"/cloud-bi/getting-started/quick-start/#setting-up-connection","toPath:":"/getting-started/creating-dashboard/#setting-up-connection"},
+{"fromPath":"/cloud-bi/getting-started/quick-start/#configuring-tables-and-views","toPath:":"/getting-started/creating-dashboard/#configuring-tables-and-views"},
+{"fromPath":"/cloud-bi/getting-started/quick-start/#transforming-data","toPath:":"/getting-started/creating-dashboard/#transforming-data"},
+{"fromPath":"/cloud-bi/getting-started/quick-start/#creating-dashboard","toPath:":"/getting-started/creating-dashboard/#creating-dashboard"},
+{"fromPath":"/cloud-bi/getting-started/quick-start/#adding-a-widget-to-design-view","toPath:":"/getting-started/creating-dashboard/#adding-a-widget-to-design-view"},
+{"fromPath":"/cloud-bi/getting-started/quick-start/#assigning-data-to-widget","toPath:":"/getting-started/creating-dashboard/#assigning-data-to-widget"},
+{"fromPath":"/cloud-bi/getting-started/quick-start/#measure-filter","toPath:":"/getting-started/creating-dashboard/#measure-filter"},
+{"fromPath":"/cloud-bi/getting-started/quick-start/#dimension-filter","toPath:":"/getting-started/creating-dashboard/#dimension-filter"},
+{"fromPath":"/cloud-bi/getting-started/quick-start/#dimension-sorting","toPath:":"/getting-started/creating-dashboard/#dimension-sorting"},
+{"fromPath":"/cloud-bi/getting-started/quick-start/#configuring-properties-to-widget","toPath:":"/getting-started/creating-dashboard/#configuring-properties-to-widget"},
+{"fromPath":"/cloud-bi/getting-started/quick-start/#related-links","toPath:":"/getting-started/creating-dashboard/#related-links"},
+{"fromPath":"/cloud-bi/getting-started/bold-bi-walk-through","toPath":"/getting-started/quick-dashboard/#embedded-bi--a-basic-walkthrough"},
 {"fromPath":"/cloud-bi/managing-resources/manage-data-sources/#live-mode-connection","toPath:":"/managing-resources/manage-data-sources/#live-mode-connection"},
 {"fromPath":"/cloud-bi/managing-resources/manage-data-sources/#extract-mode-connection","toPath:":"/managing-resources/manage-data-sources/#extract-mode-connection"},
 {"fromPath":"/cloud-bi/managing-resources/manage-data-sources/#refresh-setting","toPath:":"/managing-resources/manage-data-sources/#refresh-setting"},
@@ -4575,9 +4668,9 @@
 {"fromPath":"/embedded-bi/faq/how-to-change-dns-for-each-tenant-site/#steps-to-change-dns-for-each-site","toPath:":"/faq/how-to-change-dns-for-each-tenant-site/#steps-to-change-dns-for-each-site"},
 {"fromPath":"/embedded-bi/faq/how-to-configure-relative-date-filter-based-on-minutes/#how-to-configure-relative-date-filter-based-on-minutes","toPath:":"/faq/how-to-configure-relative-date-filter-based-on-minutes/#how-to-configure-relative-date-filter-based-on-minutes"},
 {"fromPath":"/embedded-bi/faq/how-to-configure-the-bold-bi-with-reverse-proxy-server-in-the-dmz-in-linux/#prerequisites","toPath:":"/faq/how-to-configure-the-bold-bi-with-reverse-proxy-server-in-the-dmz-in-linux/#prerequisites"},
-{"fromPath":"/embedded-bi/faq/how-to-configure-the-bold-bi-with-reverse-proxy-server-in-the-dmz-in-linux/#follow-the-given-steps-to-configure-the-bold-bi-with-a-reverse-proxy-server-in-the-dmz-on-a-linux-server.","toPath:":"/faq/how-to-configure-the-bold-bi-with-reverse-proxy-server-in-the-dmz-in-linux/#follow-the-given-steps-to-configure-the-bold-bi-with-a-reverse-proxy-server-in-the-dmz-on-a-linux-server."},
+{"fromPath":"/embedded-bi/faq/how-to-configure-the-bold-bi-with-reverse-proxy-server-in-the-dmz-in-linux/#follow-the-given-steps-to-configure-the-bold-bi-with-a-reverse-proxy-server-in-the-dmz-on-a-linux-server","toPath:":"/faq/how-to-configure-the-bold-bi-with-reverse-proxy-server-in-the-dmz-in-linux/#follow-the-given-steps-to-configure-the-bold-bi-with-a-reverse-proxy-server-in-the-dmz-on-a-linux-server"},
 {"fromPath":"/embedded-bi/faq/how-to-configure-the-bold-bi-with-reverse-proxy-server-the-dmz-in-windows/#prerequisites","toPath:":"/faq/how-to-configure-the-bold-bi-with-reverse-proxy-server-the-dmz-in-windows/#prerequisites"},
-{"fromPath":"/embedded-bi/faq/how-to-configure-the-bold-bi-with-reverse-proxy-server-the-dmz-in-windows/#follow-the-given-steps-to-configure-the-bold-bi-with-a-reverse-proxy-server-in-the-dmz-in-the-windows-server.","toPath:":"/faq/how-to-configure-the-bold-bi-with-reverse-proxy-server-the-dmz-in-windows/#follow-the-given-steps-to-configure-the-bold-bi-with-a-reverse-proxy-server-in-the-dmz-in-the-windows-server."},
+{"fromPath":"/embedded-bi/faq/how-to-configure-the-bold-bi-with-reverse-proxy-server-the-dmz-in-windows/#follow-the-given-steps-to-configure-the-bold-bi-with-a-reverse-proxy-server-in-the-dmz-in-the-windows-server","toPath:":"/faq/how-to-configure-the-bold-bi-with-reverse-proxy-server-the-dmz-in-windows/#follow-the-given-steps-to-configure-the-bold-bi-with-a-reverse-proxy-server-in-the-dmz-in-the-windows-server"},
 {"fromPath":"/embedded-bi/faq/how-to-connect-a-live-xml-or-json-or-csv-or-excel-file-in-bold-bi-dashboard/#steps-to-connect-a-live-filecsv/json/xml/excel-using-web-services","toPath:":"/faq/how-to-connect-a-live-xml-or-json-or-csv-or-excel-file-in-bold-bi-dashboard/#steps-to-connect-a-live-filecsv/json/xml/excel-using-web-services"},
 {"fromPath":"/embedded-bi/faq/how-to-connect-a-live-xml-or-json-or-csv-or-excel-file-in-bold-bi-dashboard/#steps-to-connect-live-filecsv/json/xml-through-restful-web-services","toPath:":"/faq/how-to-connect-a-live-xml-or-json-or-csv-or-excel-file-in-bold-bi-dashboard/#steps-to-connect-live-filecsv/json/xml-through-restful-web-services"},
 {"fromPath":"/embedded-bi/faq/how-to-connect-data-sources-with-ssh-connection-in-bold-bi/#supported-data-sources-in-bold-bi-with-ssh-connection","toPath:":"/faq/how-to-connect-data-sources-with-ssh-connection-in-bold-bi/#supported-data-sources-in-bold-bi-with-ssh-connection"},
@@ -4621,7 +4714,7 @@
 {"fromPath":"/embedded-bi/faq/how-to-host-bold-bi-application-as-a-sub-application-in-iis/#steps-to-create-a-bold-bi-sub-applications-in-iis","toPath:":"/faq/how-to-host-bold-bi-application-as-a-sub-application-in-iis/#steps-to-create-a-bold-bi-sub-applications-in-iis"},
 {"fromPath":"/embedded-bi/faq/how-to-host-bold-bi-application-as-a-sub-application-in-iis/#configure-bold-bi-to-run-as-the-sub-application","toPath:":"/faq/how-to-host-bold-bi-application-as-a-sub-application-in-iis/#configure-bold-bi-to-run-as-the-sub-application"},
 {"fromPath":"/embedded-bi/faq/how-to-install-bold-bi-in-windows-server-machine-without-using-installer/#prerequisites","toPath:":"/faq/how-to-install-bold-bi-in-windows-server-machine-without-using-installer/#prerequisites"},
-{"fromPath":"/embedded-bi/faq/how-to-install-bold-bi-in-windows-server-machine-without-using-installer/#follow-the-below-steps-to-deploy-bold-bi-on-a-windows-server-machine-without-using-the-installer.","toPath:":"/faq/how-to-install-bold-bi-in-windows-server-machine-without-using-installer/#follow-the-below-steps-to-deploy-bold-bi-on-a-windows-server-machine-without-using-the-installer."},
+{"fromPath":"/embedded-bi/faq/how-to-install-bold-bi-in-windows-server-machine-without-using-installer/#follow-the-below-steps-to-deploy-bold-bi-on-a-windows-server-machine-without-using-the-installer","toPath:":"/faq/how-to-install-bold-bi-in-windows-server-machine-without-using-installer/#follow-the-below-steps-to-deploy-bold-bi-on-a-windows-server-machine-without-using-the-installer"},
 {"fromPath":"/embedded-bi/faq/how-to-pass-dashboard-parameter-in-iframe-embedding-a-dashboard/#passing-dashboard-parameter-with-iframe","toPath:":"/faq/how-to-pass-dashboard-parameter-in-iframe-embedding-a-dashboard/#passing-dashboard-parameter-with-iframe"},
 {"fromPath":"/embedded-bi/faq/how-to-pass-dashboard-parameter-in-iframe-embedding-a-dashboard/#literal-mode","toPath:":"/faq/how-to-pass-dashboard-parameter-in-iframe-embedding-a-dashboard/#literal-mode"},
 {"fromPath":"/embedded-bi/faq/how-to-pass-dashboard-parameter-in-iframe-embedding-a-dashboard/#list-mode","toPath:":"/faq/how-to-pass-dashboard-parameter-in-iframe-embedding-a-dashboard/#list-mode"},
@@ -4759,7 +4852,7 @@
 {"fromPath":"/embedded-bi/javascript-based/custom-theme-embedding/#how-to-apply-custom-theme-using-application-option","toPath:":"/embedding-opions/embedding-sdk/custom-theme-embedding/#how-to-apply-custom-theme-using-application-option"},
 {"fromPath":"/embedded-bi/javascript-based/custom-theme-embedding/#how-to-apply-custom-theme-using-dashboard-option","toPath:":"/embedding-opions/embedding-sdk/custom-theme-embedding/#how-to-apply-custom-theme-using-dashboard-option"},
 {"fromPath":"/embedded-bi/javascript-based/custom-theme-embedding/#how-to-refer-the-custom-theme-file-as-external-in-your-embedded-application","toPath:":"/embedding-opions/embedding-sdk/custom-theme-embedding/#how-to-refer-the-custom-theme-file-as-external-in-your-embedded-application"},
-{"fromPath":"/embedded-bi/javascript-based/custom-theme-embedding/#how-to-refer-the-custom-theme-file-as-external.","toPath:":"/embedding-opions/embedding-sdk/custom-theme-embedding/#how-to-refer-the-custom-theme-file-as-external."},
+{"fromPath":"/embedded-bi/javascript-based/custom-theme-embedding/#how-to-refer-the-custom-theme-file-as-external","toPath:":"/embedding-opions/embedding-sdk/custom-theme-embedding/#how-to-refer-the-custom-theme-file-as-external"},
 {"fromPath":"/embedded-bi/javascript-based/datasource-embedding/#how-to-use-boldbi-wrapper-inside-your-html-page","toPath:":"/embedding-opions/embedding-sdk/embedding-a-datasource/#how-to-use-boldbi-wrapper-inside-your-html-page"},
 {"fromPath":"/embedded-bi/javascript-based/datasource-embedding/#embed-using-data-source-id","toPath:":"/embedding-opions/embedding-sdk/embedding-a-datasource/#embed-using-data-source-id"},
 {"fromPath":"/embedded-bi/javascript-based/datasource-embedding/#embed-using-data-source-name","toPath:":"/embedding-opions/embedding-sdk/embedding-a-datasource/#embed-using-data-source-name"},
@@ -4797,7 +4890,7 @@
 {"fromPath":"/embedded-bi/javascript-based/getting-started/#how-to-get-common-embed-secret-key-from-ums","toPath:":"/getting-started/embedding-in-your-application/#how-to-get-common-embed-secret-key-from-ums"},
 {"fromPath":"/embedded-bi/javascript-based/getting-started/#how-to-use-server-url-for-embedding-the-bold-bi-in-different-scenarios","toPath:":"/getting-started/embedding-in-your-application/#how-to-use-server-url-for-embedding-the-bold-bi-in-different-scenarios"},
 {"fromPath":"/embedded-bi/javascript-based/group-based-authorization/#why-group-based-authorization","toPath:":"/security-configuration/group-based-authorization/#why-group-based-authorization"},
-{"fromPath":"/embedded-bi/javascript-based/group-based-authorization/#how-to-embed-with-group-based-authorization.","toPath:":"/security-configuration/group-based-authorization/#how-to-embed-with-group-based-authorization."},
+{"fromPath":"/embedded-bi/javascript-based/group-based-authorization/#how-to-embed-with-group-based-authorization","toPath:":"/security-configuration/group-based-authorization/#how-to-embed-with-group-based-authorization"},
 {"fromPath":"/embedded-bi/javascript-based/group-based-authorization/#sample-links","toPath:":"/security-configuration/group-based-authorization/#sample-links"},
 {"fromPath":"/embedded-bi/javascript-based/embedding-multiple-dashboards-and-widget-embedding/#how-to-use-boldbi-wrapper-inside-your-html-page","toPath:":"/embedding-opions/embedding-sdk/embedding-multiple-dashboards-and-widget-embedding/#how-to-use-boldbi-wrapper-inside-your-html-page"},
 {"fromPath":"/embedded-bi/javascript-based/embedding-multiple-dashboards-and-widget-embedding/#how-to-implement-the-authorize-server-with-user-mail-or-user-name","toPath:":"/embedding-opions/embedding-sdk/embedding-multiple-dashboards-and-widget-embedding/#how-to-implement-the-authorize-server-with-user-mail-or-user-name"},
@@ -5175,7 +5268,7 @@
 {"fromPath":"/cloud-bi/managing-resources/manage-dashboards/publish-dashboards/#remove-publish-dashboard","toPath:":"/managing-resources/manage-dashboards/publish-dashboards/#remove-publish-dashboard"},
 {"fromPath":"/cloud-bi/managing-resources/manage-dashboards/share-dashboards/#steps-to-share-a-dashboard","toPath:":"/managing-resources/manage-dashboards/share-dashboards/#steps-to-share-a-dashboard"},
 {"fromPath":"/cloud-bi/managing-resources/manage-dashboards/share-dashboards/#remove-permission","toPath:":"/managing-resources/manage-dashboards/share-dashboards/#remove-permission"},
-{"fromPath":"/cloud-bi/managing-resources/manage-dashboards/share-filtered-dashboards-without-save-views/#steps-to-be-followed-for-sharing-the-filtered-dashboard-without-saving-it-as-view.","toPath:":"/managing-resources/manage-dashboards/share-filtered-dashboards-without-save-views/#steps-to-be-followed-for-sharing-the-filtered-dashboard-without-saving-it-as-view."},
+{"fromPath":"/cloud-bi/managing-resources/manage-dashboards/share-filtered-dashboards-without-save-views/#steps-to-be-followed-for-sharing-the-filtered-dashboard-without-saving-it-as-view","toPath:":"/managing-resources/manage-dashboards/share-filtered-dashboards-without-save-views/#steps-to-be-followed-for-sharing-the-filtered-dashboard-without-saving-it-as-view"},
 {"fromPath":"/cloud-bi/managing-resources/manage-dashboards/version-history-of-dashboards/#versions","toPath:":"/managing-resources/manage-dashboards/version-history-of-dashboards/#versions"},
 {"fromPath":"/cloud-bi/managing-resources/manage-dashboards/version-history-of-dashboards/#file-logs","toPath:":"/managing-resources/manage-dashboards/version-history-of-dashboards/#file-logs"},
 {"fromPath":"/cloud-bi/managing-resources/manage-groups/import-azure-active-directory-groups/#search-groups","toPath:":"/managing-resources/manage-groups/import-azure-active-directory-groups/#search-groups"},
@@ -5247,10 +5340,10 @@
 {"fromPath":"/cloud-bi/site-administration/integrations/failure-logs/#webhook-retry","toPath:":"/site-administration/integrations/failure-logs/#webhook-retry"},
 {"fromPath":"/cloud-bi/site-administration/integrations/failure-logs/#automatic-webhook-deactivation","toPath:":"/site-administration/integrations/failure-logs/#automatic-webhook-deactivation"},
 {"fromPath":"/cloud-bi/site-administration/integrations/failure-logs/#webhook-failure-logs","toPath:":"/site-administration/integrations/failure-logs/#webhook-failure-logs"},
-{"fromPath":"/cloud-bi/site-administration/look-and-feel-settings/create-custom-application-theme/#**points-to-be-noted-while-editing-and-uploading-custom-theme-file.**","toPath:":"/site-administration/look-and-feel-settings-in-cloud-bi/create-custom-application-theme/#**points-to-be-noted-while-editing-and-uploading-custom-theme-file.**"},
+{"fromPath":"/cloud-bi/site-administration/look-and-feel-settings/create-custom-application-theme/#points-to-be-noted-while-editing-and-uploading-custom-theme-file","toPath:":"/site-administration/look-and-feel-settings-in-cloud-bi/create-custom-application-theme/#points-to-be-noted-while-editing-and-uploading-custom-theme-file"},
 {"fromPath":"/cloud-bi/site-administration/look-and-feel-settings/create-custom-application-theme/#assign-color-code-to-variables-in-template-file","toPath:":"/site-administration/look-and-feel-settings-in-cloud-bi/create-custom-application-theme/#assign-color-code-to-variables-in-template-file"},
-{"fromPath":"/cloud-bi/site-administration/look-and-feel-settings/create-custom-application-theme/#**simple-customization**","toPath:":"/site-administration/look-and-feel-settings-in-cloud-bi/create-custom-application-theme/#**simple-customization**"},
-{"fromPath":"/cloud-bi/site-administration/look-and-feel-settings/create-custom-application-theme/#**advanced-customization**","toPath:":"/site-administration/look-and-feel-settings-in-cloud-bi/create-custom-application-theme/#**advanced-customization**"},
+{"fromPath":"/cloud-bi/site-administration/look-and-feel-settings/create-custom-application-theme/#simple-customization","toPath:":"/site-administration/look-and-feel-settings-in-cloud-bi/create-custom-application-theme/#simple-customization"},
+{"fromPath":"/cloud-bi/site-administration/look-and-feel-settings/create-custom-application-theme/#advanced-customization","toPath:":"/site-administration/look-and-feel-settings-in-cloud-bi/create-custom-application-theme/#advanced-customization"},
 {"fromPath":"/cloud-bi/site-administration/look-and-feel-settings/#switch-application-theme-mode","toPath:":"/site-administration/look-and-feel-settings-in-cloud-bi/#switch-application-theme-mode"},
 {"fromPath":"/cloud-bi/site-administration/look-and-feel-settings/#custom-theme","toPath:":"/site-administration/look-and-feel-settings-in-cloud-bi/#custom-theme"},
 {"fromPath":"/cloud-bi/site-administration/look-and-feel-settings/#dashboard-theme","toPath:":"/site-administration/look-and-feel-settings-in-cloud-bi/#dashboard-theme"},
@@ -6396,7 +6489,7 @@
 {"fromPath":"/cloud-bi/visualizing-data/visualization-widgets/grid/#pin-widget","toPath:":"/visualizing-data/visualization-widgets/grid/#pin-widget"},
 {"fromPath":"/cloud-bi/visualizing-data/visualization-widgets/heat-map/#how-to-configure-the-data-table-to-heatmap-widget","toPath:":"/visualizing-data/visualization-widgets/heat-map/#how-to-configure-the-data-table-to-heatmap-widget"},
 {"fromPath":"/cloud-bi/visualizing-data/visualization-widgets/heat-map/#step-1-add-a-heatmap-widget-to-the-design-canvas","toPath:":"/visualizing-data/visualization-widgets/heat-map/#step-1-add-a-heatmap-widget-to-the-design-canvas"},
-{"fromPath":"/cloud-bi/visualizing-data/visualization-widgets/heat-map/#step-2-add-a-measures-and-dimensions-in-assign-data.","toPath:":"/visualizing-data/visualization-widgets/heat-map/#step-2-add-a-measures-and-dimensions-in-assign-data."},
+{"fromPath":"/cloud-bi/visualizing-data/visualization-widgets/heat-map/#step-2-add-a-measures-and-dimensions-in-assign-data","toPath:":"/visualizing-data/visualization-widgets/heat-map/#step-2-add-a-measures-and-dimensions-in-assign-data"},
 {"fromPath":"/cloud-bi/visualizing-data/visualization-widgets/heat-map/#value-section","toPath:":"/visualizing-data/visualization-widgets/heat-map/#value-section"},
 {"fromPath":"/cloud-bi/visualizing-data/visualization-widgets/heat-map/#x-axis-section","toPath:":"/visualizing-data/visualization-widgets/heat-map/#x-axis-section"},
 {"fromPath":"/cloud-bi/visualizing-data/visualization-widgets/heat-map/#y-axis-section","toPath:":"/visualizing-data/visualization-widgets/heat-map/#y-axis-section"},
@@ -7771,7 +7864,7 @@
 {"fromPath":"/cloud-bi/visualizing-data/visualization-widgets/stacked-area-chart/#axis-range-settings","toPath:":"/visualizing-data/visualization-widgets/stacked-area-chart/#axis-range-settings"},
 {"fromPath":"/cloud-bi/visualizing-data/visualization-widgets/stacked-area-chart/#grid-line","toPath:":"/visualizing-data/visualization-widgets/stacked-area-chart/#grid-line"},
 {"fromPath":"/cloud-bi/visualizing-data/visualization-widgets/stacked-area-chart/#primary-value-axis","toPath:":"/visualizing-data/visualization-widgets/stacked-area-chart/#primary-value-axis"},
-{"fromPath":"/cloud-bi/visualizing-data/visualization-widgets/stacked-area-chart/#category-axis**","toPath:":"/visualizing-data/visualization-widgets/stacked-area-chart/#category-axis**"},
+{"fromPath":"/cloud-bi/visualizing-data/visualization-widgets/stacked-area-chart/#category-axis","toPath:":"/visualizing-data/visualization-widgets/stacked-area-chart/#category-axis"},
 {"fromPath":"/cloud-bi/visualizing-data/visualization-widgets/stacked-area-chart/#secondary-value-axis","toPath:":"/visualizing-data/visualization-widgets/stacked-area-chart/#secondary-value-axis"},
 {"fromPath":"/cloud-bi/visualizing-data/visualization-widgets/stacked-area-chart/#formatting","toPath:":"/visualizing-data/visualization-widgets/stacked-area-chart/#formatting"},
 {"fromPath":"/cloud-bi/visualizing-data/visualization-widgets/stacked-area-chart/#series-palette","toPath:":"/visualizing-data/visualization-widgets/stacked-area-chart/#series-palette"},
@@ -8344,7 +8437,7 @@
 {"fromPath":"/cloud-bi/working-with-data-source/data-connectors/amazon-aurora/#extract-mode-connection","toPath:":"/working-with-data-source/data-connectors/amazon-aurora/#extract-mode-connection"},
 {"fromPath":"/cloud-bi/working-with-data-source/data-connectors/amazon-aurora/#refresh-settings","toPath:":"/working-with-data-source/data-connectors/amazon-aurora/#refresh-settings"},
 {"fromPath":"/cloud-bi/working-with-data-source/data-connectors/amazon-aurora/#steps-to-configure-the-data-source-refresh-settings:","toPath:":"/working-with-data-source/data-connectors/amazon-aurora/#steps-to-configure-the-data-source-refresh-settings:"},
-{"fromPath":"/cloud-bi/working-with-data-source/data-connectors/amazon-aurora/#preview-and-import-data.","toPath:":"/working-with-data-source/data-connectors/amazon-aurora/#preview-and-import-data."},
+{"fromPath":"/cloud-bi/working-with-data-source/data-connectors/amazon-aurora/#preview-and-import-data","toPath:":"/working-with-data-source/data-connectors/amazon-aurora/#preview-and-import-data"},
 {"fromPath":"/cloud-bi/working-with-data-source/data-connectors/amazon-aurora/#connecting-bold-bi-to-amazon-aurora-data-source-via-rest-api","toPath:":"/working-with-data-source/data-connectors/amazon-aurora/#connecting-bold-bi-to-amazon-aurora-data-source-via-rest-api"},
 {"fromPath":"/cloud-bi/working-with-data-source/data-connectors/amazon-aurora/#prerequisites","toPath:":"/working-with-data-source/data-connectors/amazon-aurora/#prerequisites"},
 {"fromPath":"/cloud-bi/working-with-data-source/data-connectors/amazon-aurora/#modes","toPath:":"/working-with-data-source/data-connectors/amazon-aurora/#modes"},
@@ -8415,7 +8508,7 @@
 {"fromPath":"/cloud-bi/working-with-data-source/data-connectors/appfolio/#create-appfolio-data-source","toPath:":"/working-with-data-source/data-connectors/appfolio/#create-appfolio-data-source"},
 {"fromPath":"/cloud-bi/working-with-data-source/data-connectors/appfolio/#how-do-i-get-client-id-and-client-secret-for-connecting-appfolio-data-source","toPath:":"/working-with-data-source/data-connectors/appfolio/#how-do-i-get-client-id-and-client-secret-for-connecting-appfolio-data-source"},
 {"fromPath":"/cloud-bi/working-with-data-source/data-connectors/appfolio/#additional-information","toPath:":"/working-with-data-source/data-connectors/appfolio/#additional-information"},
-{"fromPath":"/cloud-bi/working-with-data-source/data-connectors/appfolio/#setting-up-the-url-for-pagination.","toPath:":"/working-with-data-source/data-connectors/appfolio/#setting-up-the-url-for-pagination."},
+{"fromPath":"/cloud-bi/working-with-data-source/data-connectors/appfolio/#setting-up-the-url-for-pagination","toPath:":"/working-with-data-source/data-connectors/appfolio/#setting-up-the-url-for-pagination"},
 {"fromPath":"/cloud-bi/working-with-data-source/data-connectors/appfolio/#sample-queries","toPath:":"/working-with-data-source/data-connectors/appfolio/#sample-queries"},
 {"fromPath":"/cloud-bi/working-with-data-source/data-connectors/appfolio/#preview-and-data-import","toPath:":"/working-with-data-source/data-connectors/appfolio/#preview-and-data-import"},
 {"fromPath":"/cloud-bi/working-with-data-source/data-connectors/appfolio/#related-links","toPath:":"/working-with-data-source/data-connectors/appfolio/#related-links"},
@@ -9101,8 +9194,8 @@
 {"fromPath":"/cloud-bi/working-with-data-source/data-connectors/odata/#to-fetch-single-entity","toPath:":"/working-with-data-source/data-connectors/odata/#to-fetch-single-entity"},
 {"fromPath":"/cloud-bi/working-with-data-source/data-connectors/odata/#to-fetch-multiple-entities","toPath:":"/working-with-data-source/data-connectors/odata/#to-fetch-multiple-entities"},
 {"fromPath":"/cloud-bi/working-with-data-source/data-connectors/odata/#authentication-for-odata","toPath:":"/working-with-data-source/data-connectors/odata/#authentication-for-odata"},
-{"fromPath":"/cloud-bi/working-with-data-source/data-connectors/odata/#*none*","toPath:":"/working-with-data-source/data-connectors/odata/#*none*"},
-{"fromPath":"/cloud-bi/working-with-data-source/data-connectors/odata/#*basic-http-authentication*","toPath:":"/working-with-data-source/data-connectors/odata/#*basic-http-authentication*"},
+{"fromPath":"/cloud-bi/working-with-data-source/data-connectors/odata/#none","toPath:":"/working-with-data-source/data-connectors/odata/#none"},
+{"fromPath":"/cloud-bi/working-with-data-source/data-connectors/odata/#basic-http-authentication","toPath:":"/working-with-data-source/data-connectors/odata/#basic-http-authentication"},
 {"fromPath":"/cloud-bi/working-with-data-source/data-connectors/odata/#additional-information","toPath:":"/working-with-data-source/data-connectors/odata/#additional-information"},
 {"fromPath":"/cloud-bi/working-with-data-source/data-connectors/odata/#sample-queries","toPath:":"/working-with-data-source/data-connectors/odata/#sample-queries"},
 {"fromPath":"/cloud-bi/working-with-data-source/data-connectors/odata/#preview-and-data-import","toPath:":"/working-with-data-source/data-connectors/odata/#preview-and-data-import"},
@@ -9809,7 +9902,7 @@
 {"fromPath":"/embedded-bi/managing-resources/manage-dashboards/publish-dashboards/#remove-publish-dashboard","toPath:":"/managing-resources/manage-dashboards/publish-dashboards/#remove-publish-dashboard"},
 {"fromPath":"/embedded-bi/managing-resources/manage-dashboards/share-dashboards/#steps-to-share-a-dashboard","toPath:":"/managing-resources/manage-dashboards/share-dashboards/#steps-to-share-a-dashboard"},
 {"fromPath":"/embedded-bi/managing-resources/manage-dashboards/share-dashboards/#remove-permission","toPath:":"/managing-resources/manage-dashboards/share-dashboards/#remove-permission"},
-{"fromPath":"/embedded-bi/managing-resources/manage-dashboards/share-filtered-dashboards-without-save-views/#steps-to-be-followed-for-sharing-the-filtered-dashboard-without-saving-it-as-view.","toPath:":"/managing-resources/manage-dashboards/share-filtered-dashboards-without-save-views/#steps-to-be-followed-for-sharing-the-filtered-dashboard-without-saving-it-as-view."},
+{"fromPath":"/embedded-bi/managing-resources/manage-dashboards/share-filtered-dashboards-without-save-views/#steps-to-be-followed-for-sharing-the-filtered-dashboard-without-saving-it-as-view","toPath:":"/managing-resources/manage-dashboards/share-filtered-dashboards-without-save-views/#steps-to-be-followed-for-sharing-the-filtered-dashboard-without-saving-it-as-view"},
 {"fromPath":"/embedded-bi/managing-resources/manage-dashboards/unlisted-dashboards/#steps-to-unlist-a-dashboard","toPath:":"/managing-resources/manage-dashboards/unlisted-dashboards/#steps-to-unlist-a-dashboard"},
 {"fromPath":"/embedded-bi/managing-resources/manage-dashboards/unlisted-dashboards/#remove-the-dashboard-from-the-unlisted-list","toPath:":"/managing-resources/manage-dashboards/unlisted-dashboards/#remove-the-dashboard-from-the-unlisted-list"},
 {"fromPath":"/embedded-bi/managing-resources/manage-dashboards/version-history-of-dashboards/#versions","toPath:":"/managing-resources/manage-dashboards/version-history-of-dashboards/#versions"},
@@ -11206,7 +11299,7 @@
 {"fromPath":"/embedded-bi/visualizing-data/visualization-widgets/grid/#pin-widget","toPath:":"/visualizing-data/visualization-widgets/grid/#pin-widget"},
 {"fromPath":"/embedded-bi/visualizing-data/visualization-widgets/heat-map/#how-to-configure-the-data-table-to-heatmap-widget","toPath:":"/visualizing-data/visualization-widgets/heat-map/#how-to-configure-the-data-table-to-heatmap-widget"},
 {"fromPath":"/embedded-bi/visualizing-data/visualization-widgets/heat-map/#step-1-add-a-heatmap-widget-to-the-design-canvas","toPath:":"/visualizing-data/visualization-widgets/heat-map/#step-1-add-a-heatmap-widget-to-the-design-canvas"},
-{"fromPath":"/embedded-bi/visualizing-data/visualization-widgets/heat-map/#step-2-add-a-measures-and-dimensions-in-assign-data.","toPath:":"/visualizing-data/visualization-widgets/heat-map/#step-2-add-a-measures-and-dimensions-in-assign-data."},
+{"fromPath":"/embedded-bi/visualizing-data/visualization-widgets/heat-map/#step-2-add-a-measures-and-dimensions-in-assign-data","toPath:":"/visualizing-data/visualization-widgets/heat-map/#step-2-add-a-measures-and-dimensions-in-assign-data"},
 {"fromPath":"/embedded-bi/visualizing-data/visualization-widgets/heat-map/#value-section","toPath:":"/visualizing-data/visualization-widgets/heat-map/#value-section"},
 {"fromPath":"/embedded-bi/visualizing-data/visualization-widgets/heat-map/#hidden-column","toPath:":"/visualizing-data/visualization-widgets/heat-map/#hidden-column"},
 {"fromPath":"/embedded-bi/visualizing-data/visualization-widgets/heat-map/#linking","toPath:":"/visualizing-data/visualization-widgets/heat-map/#linking"},
@@ -12628,7 +12721,7 @@
 {"fromPath":"/embedded-bi/visualizing-data/visualization-widgets/stacked-area-chart/#axis-range-settings","toPath:":"/visualizing-data/visualization-widgets/stacked-area-chart/#axis-range-settings"},
 {"fromPath":"/embedded-bi/visualizing-data/visualization-widgets/stacked-area-chart/#grid-line","toPath:":"/visualizing-data/visualization-widgets/stacked-area-chart/#grid-line"},
 {"fromPath":"/embedded-bi/visualizing-data/visualization-widgets/stacked-area-chart/#primary-value-axis","toPath:":"/visualizing-data/visualization-widgets/stacked-area-chart/#primary-value-axis"},
-{"fromPath":"/embedded-bi/visualizing-data/visualization-widgets/stacked-area-chart/#category-axis**","toPath:":"/visualizing-data/visualization-widgets/stacked-area-chart/#category-axis**"},
+{"fromPath":"/embedded-bi/visualizing-data/visualization-widgets/stacked-area-chart/#category-axis","toPath:":"/visualizing-data/visualization-widgets/stacked-area-chart/#category-axis"},
 {"fromPath":"/embedded-bi/visualizing-data/visualization-widgets/stacked-area-chart/#secondary-value-axis","toPath:":"/visualizing-data/visualization-widgets/stacked-area-chart/#secondary-value-axis"},
 {"fromPath":"/embedded-bi/visualizing-data/visualization-widgets/stacked-area-chart/#formatting","toPath:":"/visualizing-data/visualization-widgets/stacked-area-chart/#formatting"},
 {"fromPath":"/embedded-bi/visualizing-data/visualization-widgets/stacked-area-chart/#series-palette","toPath:":"/visualizing-data/visualization-widgets/stacked-area-chart/#series-palette"},
@@ -13231,7 +13324,7 @@
 {"fromPath":"/embedded-bi/working-with-data-source/data-connectors/amazon-aurora/#extract-mode-connection","toPath:":"/working-with-data-source/data-connectors/amazon-aurora/#extract-mode-connection"},
 {"fromPath":"/embedded-bi/working-with-data-source/data-connectors/amazon-aurora/#refresh-settings","toPath:":"/working-with-data-source/data-connectors/amazon-aurora/#refresh-settings"},
 {"fromPath":"/embedded-bi/working-with-data-source/data-connectors/amazon-aurora/#steps-to-configure-the-data-source-refresh-settings:","toPath:":"/working-with-data-source/data-connectors/amazon-aurora/#steps-to-configure-the-data-source-refresh-settings:"},
-{"fromPath":"/embedded-bi/working-with-data-source/data-connectors/amazon-aurora/#preview-and-import-data.","toPath:":"/working-with-data-source/data-connectors/amazon-aurora/#preview-and-import-data."},
+{"fromPath":"/embedded-bi/working-with-data-source/data-connectors/amazon-aurora/#preview-and-import-data","toPath:":"/working-with-data-source/data-connectors/amazon-aurora/#preview-and-import-data"},
 {"fromPath":"/embedded-bi/working-with-data-source/data-connectors/amazon-aurora/#connecting-bold-bi-to-amazon-aurora-data-source-via-rest-api","toPath:":"/working-with-data-source/data-connectors/amazon-aurora/#connecting-bold-bi-to-amazon-aurora-data-source-via-rest-api"},
 {"fromPath":"/embedded-bi/working-with-data-source/data-connectors/amazon-aurora/#prerequisites","toPath:":"/working-with-data-source/data-connectors/amazon-aurora/#prerequisites"},
 {"fromPath":"/embedded-bi/working-with-data-source/data-connectors/amazon-aurora/#modes","toPath:":"/working-with-data-source/data-connectors/amazon-aurora/#modes"},
@@ -13302,7 +13395,7 @@
 {"fromPath":"/embedded-bi/working-with-data-source/data-connectors/appfolio/#create-appfolio-data-source","toPath:":"/working-with-data-source/data-connectors/appfolio/#create-appfolio-data-source"},
 {"fromPath":"/embedded-bi/working-with-data-source/data-connectors/appfolio/#how-do-i-get-client-id-and-client-secret-for-connecting-appfolio-data-source","toPath:":"/working-with-data-source/data-connectors/appfolio/#how-do-i-get-client-id-and-client-secret-for-connecting-appfolio-data-source"},
 {"fromPath":"/embedded-bi/working-with-data-source/data-connectors/appfolio/#additional-information","toPath:":"/working-with-data-source/data-connectors/appfolio/#additional-information"},
-{"fromPath":"/embedded-bi/working-with-data-source/data-connectors/appfolio/#setting-up-the-url-for-pagination.","toPath:":"/working-with-data-source/data-connectors/appfolio/#setting-up-the-url-for-pagination."},
+{"fromPath":"/embedded-bi/working-with-data-source/data-connectors/appfolio/#setting-up-the-url-for-pagination","toPath:":"/working-with-data-source/data-connectors/appfolio/#setting-up-the-url-for-pagination"},
 {"fromPath":"/embedded-bi/working-with-data-source/data-connectors/appfolio/#sample-queries","toPath:":"/working-with-data-source/data-connectors/appfolio/#sample-queries"},
 {"fromPath":"/embedded-bi/working-with-data-source/data-connectors/appfolio/#preview-and-data-import","toPath:":"/working-with-data-source/data-connectors/appfolio/#preview-and-data-import"},
 {"fromPath":"/embedded-bi/working-with-data-source/data-connectors/appfolio/#related-links","toPath:":"/working-with-data-source/data-connectors/appfolio/#related-links"},
@@ -13671,7 +13764,7 @@
 {"fromPath":"/embedded-bi/working-with-data-source/data-connectors/gohighlevel/#sample-queries","toPath:":"/working-with-data-source/data-connectors/gohighlevel/#sample-queries"},
 {"fromPath":"/embedded-bi/working-with-data-source/data-connectors/gohighlevel/#preview-and-data-import","toPath:":"/working-with-data-source/data-connectors/gohighlevel/#preview-and-data-import"},
 {"fromPath":"/embedded-bi/working-with-data-source/data-connectors/gohighlevel/#connected-accounts-for-oauth-data-sources","toPath:":"/working-with-data-source/data-connectors/gohighlevel/#connected-accounts-for-oauth-data-sources"},
-{"fromPath":"/embedded-bi/working-with-data-source/data-connectors/gohighlevel/#steps-to-generate-client-id-and-secret.","toPath:":"/working-with-data-source/data-connectors/gohighlevel/#steps-to-generate-client-id-and-secret."},
+{"fromPath":"/embedded-bi/working-with-data-source/data-connectors/gohighlevel/#steps-to-generate-client-id-and-secret","toPath:":"/working-with-data-source/data-connectors/gohighlevel/#steps-to-generate-client-id-and-secret"},
 {"fromPath":"/embedded-bi/working-with-data-source/data-connectors/gohighlevel/#related-links","toPath:":"/working-with-data-source/data-connectors/gohighlevel/#related-links"},
 {"fromPath":"/embedded-bi/working-with-data-source/data-connectors/google-ads/#choose-google-ads-data-source","toPath:":"/working-with-data-source/data-connectors/google-ads/#choose-google-ads-data-source"},
 {"fromPath":"/embedded-bi/working-with-data-source/data-connectors/google-ads/#authentication-with-google-ads","toPath:":"/working-with-data-source/data-connectors/google-ads/#authentication-with-google-ads"},
@@ -14040,8 +14133,8 @@
 {"fromPath":"/embedded-bi/working-with-data-source/data-connectors/odata/#to-fetch-single-entity","toPath:":"/working-with-data-source/data-connectors/odata/#to-fetch-single-entity"},
 {"fromPath":"/embedded-bi/working-with-data-source/data-connectors/odata/#to-fetch-multiple-entities","toPath:":"/working-with-data-source/data-connectors/odata/#to-fetch-multiple-entities"},
 {"fromPath":"/embedded-bi/working-with-data-source/data-connectors/odata/#authentication-for-odata","toPath:":"/working-with-data-source/data-connectors/odata/#authentication-for-odata"},
-{"fromPath":"/embedded-bi/working-with-data-source/data-connectors/odata/#*none*","toPath:":"/working-with-data-source/data-connectors/odata/#*none*"},
-{"fromPath":"/embedded-bi/working-with-data-source/data-connectors/odata/#*basic-http-authentication*","toPath:":"/working-with-data-source/data-connectors/odata/#*basic-http-authentication*"},
+{"fromPath":"/embedded-bi/working-with-data-source/data-connectors/odata/#none","toPath:":"/working-with-data-source/data-connectors/odata/#none"},
+{"fromPath":"/embedded-bi/working-with-data-source/data-connectors/odata/#basic-http-authentication","toPath:":"/working-with-data-source/data-connectors/odata/#basic-http-authentication"},
 {"fromPath":"/embedded-bi/working-with-data-source/data-connectors/odata/#additional-information","toPath:":"/working-with-data-source/data-connectors/odata/#additional-information"},
 {"fromPath":"/embedded-bi/working-with-data-source/data-connectors/odata/#sample-queries","toPath:":"/working-with-data-source/data-connectors/odata/#sample-queries"},
 {"fromPath":"/embedded-bi/working-with-data-source/data-connectors/odata/#preview-and-data-import","toPath:":"/working-with-data-source/data-connectors/odata/#preview-and-data-import"},
@@ -14094,7 +14187,7 @@
 {"fromPath":"/embedded-bi/working-with-data-source/data-connectors/oracle/#related-links","toPath:":"/working-with-data-source/data-connectors/oracle/#related-links"},
 {"fromPath":"/embedded-bi/working-with-data-source/data-connectors/origami/#choose-origami-data-source","toPath:":"/working-with-data-source/data-connectors/origami/#choose-origami-data-source"},
 {"fromPath":"/embedded-bi/working-with-data-source/data-connectors/origami/#create-origami-data-source","toPath:":"/working-with-data-source/data-connectors/origami/#create-origami-data-source"},
-{"fromPath":"/embedded-bi/working-with-data-source/data-connectors/origami/#how-do-i-get-*entity_data_name*-for-connecting-origami-data-source","toPath:":"/working-with-data-source/data-connectors/origami/#how-do-i-get-*entity_data_name*-for-connecting-origami-data-source"},
+{"fromPath":"/embedded-bi/working-with-data-source/data-connectors/origami/#how-do-i-get-entity_data_name-for-connecting-origami-data-source","toPath:":"/working-with-data-source/data-connectors/origami/#how-do-i-get-entity_data_name-for-connecting-origami-data-source"},
 {"fromPath":"/embedded-bi/working-with-data-source/data-connectors/origami/#additional-information","toPath:":"/working-with-data-source/data-connectors/origami/#additional-information"},
 {"fromPath":"/embedded-bi/working-with-data-source/data-connectors/origami/#setting-up-the-url","toPath:":"/working-with-data-source/data-connectors/origami/#setting-up-the-url"},
 {"fromPath":"/embedded-bi/working-with-data-source/data-connectors/origami/#sample-queries","toPath:":"/working-with-data-source/data-connectors/origami/#sample-queries"},
@@ -14746,67 +14839,128 @@
 {"fromPath":"/embedded-bi/javascript-based/samples/v3.2.16/asp-net-mvc/#how-to-run-the-sample","toPath:":"/embedding-opions/embedding-sdk/samples/v3.2.16/asp-net-mvc/#how-to-run-the-sample"},
 {"fromPath":"/embedded-bi/javascript-based/samples/v3.2.16/asp-net-mvc/#how-this-sample-works","toPath:":"/embedding-opions/embedding-sdk/samples/v3.2.16/asp-net-mvc/#how-this-sample-works"},
 {"fromPath":"/embedded-bi/javascript-based/samples/v3.2.16/#available-samples","toPath:":"/embedding-opions/embedding-sdk/samples/v3.2.16/#available-samples"},
-{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/angular-with-javascript/#how-to-run-the-sample","toPath:":"/embedding-opions/embedding-sdk/samples/v3.3.40-or-later/angular-with-javascript/#how-to-run-the-sample"},
-{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/angular-with-javascript/#how-this-sample-works","toPath:":"/embedding-opions/embedding-sdk/samples/v3.3.40-or-later/angular-with-javascript/#how-this-sample-works"},
-{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/angular-with-javascript/#steps-to-create-new-angular-application-to-embed-dashboard","toPath:":"/embedding-opions/embedding-sdk/samples/v3.3.40-or-later/angular-with-javascript/#steps-to-create-new-angular-application-to-embed-dashboard"},
-{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/asp-net-core/#how-to-run-the-sample","toPath:":"/embedding-opions/embedding-sdk/samples/v3.3.40-or-later/asp-net-core/#how-to-run-the-sample"},
-{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/asp-net-core/#how-this-sample-works","toPath:":"/embedding-opions/embedding-sdk/samples/v3.3.40-or-later/asp-net-core/#how-this-sample-works"},
-{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/asp-net-core/#steps-to-create-asp.net-core-application-to-embed-dashboard","toPath:":"/embedding-opions/embedding-sdk/samples/v3.3.40-or-later/asp-net-core/#steps-to-create-asp.net-core-application-to-embed-dashboard"},
-{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/asp-net-mvc/#how-to-run-the-sample","toPath:":"/embedding-opions/embedding-sdk/samples/v3.3.40-or-later/asp-net-mvc/#how-to-run-the-sample"},
-{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/asp-net-mvc/#how-this-sample-works","toPath:":"/embedding-opions/embedding-sdk/samples/v3.3.40-or-later/asp-net-mvc/#how-this-sample-works"},
-{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/asp-net-mvc/#steps-to-create-new-asp.net-mvc-application-to-embed-dashboard","toPath:":"/embedding-opions/embedding-sdk/samples/v3.3.40-or-later/asp-net-mvc/#steps-to-create-new-asp.net-mvc-application-to-embed-dashboard"},
-{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/asp-net/#how-to-run-the-sample","toPath:":"/embedding-opions/embedding-sdk/samples/v3.3.40-or-later/asp-net/#how-to-run-the-sample"},
-{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/asp-net/#how-this-sample-works","toPath:":"/embedding-opions/embedding-sdk/samples/v3.3.40-or-later/asp-net/#how-this-sample-works"},
-{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/asp-net/#steps-to-create-new-asp.net-web-forms-application-to-embed-dashboard","toPath:":"/embedding-opions/embedding-sdk/samples/v3.3.40-or-later/asp-net/#steps-to-create-new-asp.net-web-forms-application-to-embed-dashboard"},
-{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/blazor-with-javascript/#how-to-run-blazor-server-sample","toPath:":"/embedding-opions/embedding-sdk/samples/v3.3.40-or-later/blazor-with-javascript/#how-to-run-blazor-server-sample"},
-{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/blazor-with-javascript/#how-blazor-server-sample-works","toPath:":"/embedding-opions/embedding-sdk/samples/v3.3.40-or-later/blazor-with-javascript/#how-blazor-server-sample-works"},
-{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/blazor-with-javascript/#steps-to-create-new-blazor-server-application-to-embed-dashboard","toPath:":"/embedding-opions/embedding-sdk/samples/v3.3.40-or-later/blazor-with-javascript/#steps-to-create-new-blazor-server-application-to-embed-dashboard"},
-{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/blazor-with-javascript/#how-to-run-the-blazor-webassembly-sample","toPath:":"/embedding-opions/embedding-sdk/samples/v3.3.40-or-later/blazor-with-javascript/#how-to-run-the-blazor-webassembly-sample"},
-{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/blazor-with-javascript/#how-the-blazor-webassembly-sample-works","toPath:":"/embedding-opions/embedding-sdk/samples/v3.3.40-or-later/blazor-with-javascript/#how-the-blazor-webassembly-sample-works"},
-{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/blazor-with-javascript/#steps-to-create-new-blazor-webassembly-application-to-embed-dashboard","toPath:":"/embedding-opions/embedding-sdk/samples/v3.3.40-or-later/blazor-with-javascript/#steps-to-create-new-blazor-webassembly-application-to-embed-dashboard"},
-{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/flutter-with-javascript/#how-to-run-the-sample","toPath:":"/embedding-opions/embedding-sdk/samples/v3.3.40-or-later/flutter-with-javascript/#how-to-run-the-sample"},
-{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/flutter-with-javascript/#how-this-sample-works","toPath:":"/embedding-opions/embedding-sdk/samples/v3.3.40-or-later/flutter-with-javascript/#how-this-sample-works"},
-{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/flutter-with-javascript/#steps-to-create-new-flutter-application-to-embed-dashboard","toPath:":"/embedding-opions/embedding-sdk/samples/v3.3.40-or-later/flutter-with-javascript/#steps-to-create-new-flutter-application-to-embed-dashboard"},
-{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/node-js/#how-to-run-the-sample","toPath:":"/embedding-opions/embedding-sdk/samples/v3.3.40-or-later/node-js/#how-to-run-the-sample"},
-{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/node-js/#how-this-sample-works","toPath:":"/embedding-opions/embedding-sdk/samples/v3.3.40-or-later/node-js/#how-this-sample-works"},
-{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/node-js/#steps-to-create-new-node.js-application-to-embed-dashboard","toPath:":"/embedding-opions/embedding-sdk/samples/v3.3.40-or-later/node-js/#steps-to-create-new-node.js-application-to-embed-dashboard"},
-{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/other-platform-samples/#coldfusion-sample-to-embed-dashboard","toPath:":"/embedding-opions/embedding-sdk/samples/v3.3.40-or-later/other-platform-samples/#coldfusion-sample-to-embed-dashboard"},
-{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/other-platform-samples/#how-this-sample-works","toPath:":"/embedding-opions/embedding-sdk/samples/v3.3.40-or-later/other-platform-samples/#how-this-sample-works"},
-{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/other-platform-samples/#java-servlet-sample-to-embed-dashboard","toPath:":"/embedding-opions/embedding-sdk/samples/v3.3.40-or-later/other-platform-samples/#java-servlet-sample-to-embed-dashboard"},
-{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/other-platform-samples/#how-this-sample-works","toPath:":"/embedding-opions/embedding-sdk/samples/v3.3.40-or-later/other-platform-samples/#how-this-sample-works"},
-{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/other-platform-samples/#django-sample-to-embed-the-dashboard","toPath:":"/embedding-opions/embedding-sdk/samples/v3.3.40-or-later/other-platform-samples/#django-sample-to-embed-the-dashboard"},
-{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/other-platform-samples/#how-this-sample-works","toPath:":"/embedding-opions/embedding-sdk/samples/v3.3.40-or-later/other-platform-samples/#how-this-sample-works"},
-{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/other-platform-samples/#ionic-sample-to-embed-dashboard","toPath:":"/embedding-opions/embedding-sdk/samples/v3.3.40-or-later/other-platform-samples/#ionic-sample-to-embed-dashboard"},
-{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/other-platform-samples/#how-this-sample-works","toPath:":"/embedding-opions/embedding-sdk/samples/v3.3.40-or-later/other-platform-samples/#how-this-sample-works"},
-{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/php-with-javascript/#how-to-run-the-sample","toPath:":"/embedding-opions/embedding-sdk/samples/v3.3.40-or-later/php-with-javascript/#how-to-run-the-sample"},
-{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/php-with-javascript/#how-this-sample-works","toPath:":"/embedding-opions/embedding-sdk/samples/v3.3.40-or-later/php-with-javascript/#how-this-sample-works"},
-{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/php-with-javascript/#steps-to-create-new-php-application-to-embed-dashboard","toPath:":"/embedding-opions/embedding-sdk/samples/v3.3.40-or-later/php-with-javascript/#steps-to-create-new-php-application-to-embed-dashboard"},
-{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/react-core/#how-to-run-the-sample","toPath:":"/embedding-opions/embedding-sdk/samples/v3.3.40-or-later/react-core/#how-to-run-the-sample"},
-{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/react-core/#how-this-sample-works","toPath:":"/embedding-opions/embedding-sdk/samples/v3.3.40-or-later/react-core/#how-this-sample-works"},
-{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/react-core/#steps-to-create-new-react-with-asp.net-core-application-to-embed-dashboard","toPath:":"/embedding-opions/embedding-sdk/samples/v3.3.40-or-later/react-core/#steps-to-create-new-react-with-asp.net-core-application-to-embed-dashboard"},
-{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/react-with-go/#how-to-run-the-sample","toPath:":"/embedding-opions/embedding-sdk/samples/v3.3.40-or-later/react-with-go/#how-to-run-the-sample"},
-{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/react-with-go/#how-this-sample-works","toPath:":"/embedding-opions/embedding-sdk/samples/v3.3.40-or-later/react-with-go/#how-this-sample-works"},
-{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/react-with-go/#steps-to-create-new-react-with-go-application-to-embed-dashboard","toPath:":"/embedding-opions/embedding-sdk/samples/v3.3.40-or-later/react-with-go/#steps-to-create-new-react-with-go-application-to-embed-dashboard"},
-{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/ruby-on-rails/#how-to-run-the-sample","toPath:":"/embedding-opions/embedding-sdk/samples/v3.3.40-or-later/ruby-on-rails/#how-to-run-the-sample"},
-{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/ruby-on-rails/#how-this-sample-works","toPath:":"/embedding-opions/embedding-sdk/samples/v3.3.40-or-later/ruby-on-rails/#how-this-sample-works"},
-{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/ruby-on-rails/#steps-to-create-new-ruby-on-rails-application-to-embed-dashboard","toPath:":"/embedding-opions/embedding-sdk/samples/v3.3.40-or-later/ruby-on-rails/#steps-to-create-new-ruby-on-rails-application-to-embed-dashboard"},
-{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/vuejs-with-core/#how-to-run-the-sample","toPath:":"/embedding-opions/embedding-sdk/samples/v3.3.40-or-later/vuejs-with-core/#how-to-run-the-sample"},
-{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/vuejs-with-core/#how-this-sample-works","toPath:":"/embedding-opions/embedding-sdk/samples/v3.3.40-or-later/vuejs-with-core/#how-this-sample-works"},
-{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/vuejs-with-core/#steps-to-create-new-vuejs-with-asp.net-core-application-to-embed-dashboard","toPath:":"/embedding-opions/embedding-sdk/samples/v3.3.40-or-later/vuejs-with-core/#steps-to-create-new-vuejs-with-asp.net-core-application-to-embed-dashboard"},
-{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/vuejs-with-go/#how-to-run-the-sample","toPath:":"/embedding-opions/embedding-sdk/samples/v3.3.40-or-later/vuejs-with-go/#how-to-run-the-sample"},
-{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/vuejs-with-go/#how-this-sample-works","toPath:":"/embedding-opions/embedding-sdk/samples/v3.3.40-or-later/vuejs-with-go/#how-this-sample-works"},
-{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/vuejs-with-go/#steps-to-create-new-vuejs-with-go-application-to-embed-dashboard","toPath:":"/embedding-opions/embedding-sdk/samples/v3.3.40-or-later/vuejs-with-go/#steps-to-create-new-vuejs-with-go-application-to-embed-dashboard"},
-{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/winforms/#how-to-run-the-sample","toPath:":"/embedding-opions/embedding-sdk/samples/v3.3.40-or-later/winforms/#how-to-run-the-sample"},
-{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/winforms/#how-this-sample-works","toPath:":"/embedding-opions/embedding-sdk/samples/v3.3.40-or-later/winforms/#how-this-sample-works"},
-{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/winforms/#steps-to-create-new-windows-forms-application-to-embed-dashboard","toPath:":"/embedding-opions/embedding-sdk/samples/v3.3.40-or-later/winforms/#steps-to-create-new-windows-forms-application-to-embed-dashboard"},
-{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/wpf/#sample-to-embed-dashboard","toPath:":"/embedding-opions/embedding-sdk/samples/v3.3.40-or-later/wpf/#sample-to-embed-dashboard"},
-{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/wpf/#get-dashboard-id","toPath:":"/embedding-opions/embedding-sdk/samples/v3.3.40-or-later/wpf/#get-dashboard-id"},
-{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/wpf/#how-this-sample-works","toPath:":"/embedding-opions/embedding-sdk/samples/v3.3.40-or-later/wpf/#how-this-sample-works"},
-{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/wpf/#steps-to-create-new-wpf-core-application-to-embed-dashboard","toPath:":"/embedding-opions/embedding-sdk/samples/v3.3.40-or-later/wpf/#steps-to-create-new-wpf-core-application-to-embed-dashboard"},
-{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/xamarin/#how-to-run-the-sample","toPath:":"/embedding-opions/embedding-sdk/samples/v3.3.40-or-later/xamarin/#how-to-run-the-sample"},
-{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/xamarin/#get-dashboard-id","toPath:":"/embedding-opions/embedding-sdk/samples/v3.3.40-or-later/xamarin/#get-dashboard-id"},
-{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/xamarin/#how-this-sample-works","toPath:":"/embedding-opions/embedding-sdk/samples/v3.3.40-or-later/xamarin/#how-this-sample-works"},
-{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/xamarin/#steps-to-create-new-xamarin-application-to-embed-dashboard","toPath:":"/embedding-opions/embedding-sdk/samples/v3.3.40-or-later/xamarin/#steps-to-create-new-xamarin-application-to-embed-dashboard"},
+{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/angular-with-javascript/#how-to-run-the-sample","toPath:":"/embedding-opions/embedding-sdk/samples/angular-with-javascript/#how-to-run-the-sample"},
+{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/angular-with-javascript/#how-this-sample-works","toPath:":"/embedding-opions/embedding-sdk/samples/angular-with-javascript/#how-this-sample-works"},
+{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/angular-with-javascript/#steps-to-create-new-angular-application-to-embed-dashboard","toPath:":"/embedding-opions/embedding-sdk/samples/angular-with-javascript/#steps-to-create-new-angular-application-to-embed-dashboard"},
+{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/asp-net-core/#how-to-run-the-sample","toPath:":"/embedding-opions/embedding-sdk/samples/asp-net-core/#how-to-run-the-sample"},
+{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/asp-net-core/#how-this-sample-works","toPath:":"/embedding-opions/embedding-sdk/samples/asp-net-core/#how-this-sample-works"},
+{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/asp-net-core/#steps-to-create-asp.net-core-application-to-embed-dashboard","toPath:":"/embedding-opions/embedding-sdk/samples/asp-net-core/#steps-to-create-asp.net-core-application-to-embed-dashboard"},
+{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/asp-net-mvc/#how-to-run-the-sample","toPath:":"/embedding-opions/embedding-sdk/samples/asp-net-mvc/#how-to-run-the-sample"},
+{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/asp-net-mvc/#how-this-sample-works","toPath:":"/embedding-opions/embedding-sdk/samples/asp-net-mvc/#how-this-sample-works"},
+{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/asp-net-mvc/#steps-to-create-new-asp.net-mvc-application-to-embed-dashboard","toPath:":"/embedding-opions/embedding-sdk/samples/asp-net-mvc/#steps-to-create-new-asp.net-mvc-application-to-embed-dashboard"},
+{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/asp-net/#how-to-run-the-sample","toPath:":"/embedding-opions/embedding-sdk/samples/asp-net/#how-to-run-the-sample"},
+{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/asp-net/#how-this-sample-works","toPath:":"/embedding-opions/embedding-sdk/samples/asp-net/#how-this-sample-works"},
+{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/asp-net/#steps-to-create-new-asp.net-web-forms-application-to-embed-dashboard","toPath:":"/embedding-opions/embedding-sdk/samples/asp-net/#steps-to-create-new-asp.net-web-forms-application-to-embed-dashboard"},
+{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/blazor-with-javascript/#how-to-run-blazor-server-sample","toPath:":"/embedding-opions/embedding-sdk/samples/blazor-with-javascript/#how-to-run-blazor-server-sample"},
+{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/blazor-with-javascript/#how-blazor-server-sample-works","toPath:":"/embedding-opions/embedding-sdk/samples/blazor-with-javascript/#how-blazor-server-sample-works"},
+{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/blazor-with-javascript/#steps-to-create-new-blazor-server-application-to-embed-dashboard","toPath:":"/embedding-opions/embedding-sdk/samples/blazor-with-javascript/#steps-to-create-new-blazor-server-application-to-embed-dashboard"},
+{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/blazor-with-javascript/#how-to-run-the-blazor-webassembly-sample","toPath:":"/embedding-opions/embedding-sdk/samples/blazor-with-javascript/#how-to-run-the-blazor-webassembly-sample"},
+{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/blazor-with-javascript/#how-the-blazor-webassembly-sample-works","toPath:":"/embedding-opions/embedding-sdk/samples/blazor-with-javascript/#how-the-blazor-webassembly-sample-works"},
+{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/blazor-with-javascript/#steps-to-create-new-blazor-webassembly-application-to-embed-dashboard","toPath:":"/embedding-opions/embedding-sdk/samples/blazor-with-javascript/#steps-to-create-new-blazor-webassembly-application-to-embed-dashboard"},
+{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/flutter-with-javascript/#how-to-run-the-sample","toPath:":"/embedding-opions/embedding-sdk/samples/flutter-with-javascript/#how-to-run-the-sample"},
+{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/flutter-with-javascript/#how-this-sample-works","toPath:":"/embedding-opions/embedding-sdk/samples/flutter-with-javascript/#how-this-sample-works"},
+{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/flutter-with-javascript/#steps-to-create-new-flutter-application-to-embed-dashboard","toPath:":"/embedding-opions/embedding-sdk/samples/flutter-with-javascript/#steps-to-create-new-flutter-application-to-embed-dashboard"},
+{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/node-js/#how-to-run-the-sample","toPath:":"/embedding-opions/embedding-sdk/samples/node-js/#how-to-run-the-sample"},
+{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/node-js/#how-this-sample-works","toPath:":"/embedding-opions/embedding-sdk/samples/node-js/#how-this-sample-works"},
+{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/node-js/#steps-to-create-new-node.js-application-to-embed-dashboard","toPath:":"/embedding-opions/embedding-sdk/samples/node-js/#steps-to-create-new-node.js-application-to-embed-dashboard"},
+{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/other-platform-samples/#coldfusion-sample-to-embed-dashboard","toPath:":"/embedding-opions/embedding-sdk/samples/other-platform-samples/#coldfusion-sample-to-embed-dashboard"},
+{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/other-platform-samples/#how-this-sample-works","toPath:":"/embedding-opions/embedding-sdk/samples/other-platform-samples/#how-this-sample-works"},
+{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/other-platform-samples/#java-servlet-sample-to-embed-dashboard","toPath:":"/embedding-opions/embedding-sdk/samples/other-platform-samples/#java-servlet-sample-to-embed-dashboard"},
+{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/other-platform-samples/#how-this-sample-works","toPath:":"/embedding-opions/embedding-sdk/samples/other-platform-samples/#how-this-sample-works"},
+{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/other-platform-samples/#django-sample-to-embed-the-dashboard","toPath:":"/embedding-opions/embedding-sdk/samples/other-platform-samples/#django-sample-to-embed-the-dashboard"},
+{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/other-platform-samples/#how-this-sample-works","toPath:":"/embedding-opions/embedding-sdk/samples/other-platform-samples/#how-this-sample-works"},
+{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/other-platform-samples/#ionic-sample-to-embed-dashboard","toPath:":"/embedding-opions/embedding-sdk/samples/other-platform-samples/#ionic-sample-to-embed-dashboard"},
+{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/other-platform-samples/#how-this-sample-works","toPath:":"/embedding-opions/embedding-sdk/samples/other-platform-samples/#how-this-sample-works"},
+{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/php-with-javascript/#how-to-run-the-sample","toPath:":"/embedding-opions/embedding-sdk/samples/php-with-javascript/#how-to-run-the-sample"},
+{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/php-with-javascript/#how-this-sample-works","toPath:":"/embedding-opions/embedding-sdk/samples/php-with-javascript/#how-this-sample-works"},
+{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/php-with-javascript/#steps-to-create-new-php-application-to-embed-dashboard","toPath:":"/embedding-opions/embedding-sdk/samples/php-with-javascript/#steps-to-create-new-php-application-to-embed-dashboard"},
+{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/react-core/#how-to-run-the-sample","toPath:":"/embedding-opions/embedding-sdk/samples/react-core/#how-to-run-the-sample"},
+{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/react-core/#how-this-sample-works","toPath:":"/embedding-opions/embedding-sdk/samples/react-core/#how-this-sample-works"},
+{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/react-core/#steps-to-create-new-react-with-asp.net-core-application-to-embed-dashboard","toPath:":"/embedding-opions/embedding-sdk/samples/react-core/#steps-to-create-new-react-with-asp.net-core-application-to-embed-dashboard"},
+{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/react-with-go/#how-to-run-the-sample","toPath:":"/embedding-opions/embedding-sdk/samples/react-with-go/#how-to-run-the-sample"},
+{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/react-with-go/#how-this-sample-works","toPath:":"/embedding-opions/embedding-sdk/samples/react-with-go/#how-this-sample-works"},
+{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/react-with-go/#steps-to-create-new-react-with-go-application-to-embed-dashboard","toPath:":"/embedding-opions/embedding-sdk/samples/react-with-go/#steps-to-create-new-react-with-go-application-to-embed-dashboard"},
+{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/ruby-on-rails/#how-to-run-the-sample","toPath:":"/embedding-opions/embedding-sdk/samples/ruby-on-rails/#how-to-run-the-sample"},
+{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/ruby-on-rails/#how-this-sample-works","toPath:":"/embedding-opions/embedding-sdk/samples/ruby-on-rails/#how-this-sample-works"},
+{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/ruby-on-rails/#steps-to-create-new-ruby-on-rails-application-to-embed-dashboard","toPath:":"/embedding-opions/embedding-sdk/samples/ruby-on-rails/#steps-to-create-new-ruby-on-rails-application-to-embed-dashboard"},
+{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/vuejs-with-core/#how-to-run-the-sample","toPath:":"/embedding-opions/embedding-sdk/samples/vuejs-with-core/#how-to-run-the-sample"},
+{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/vuejs-with-core/#how-this-sample-works","toPath:":"/embedding-opions/embedding-sdk/samples/vuejs-with-core/#how-this-sample-works"},
+{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/vuejs-with-core/#steps-to-create-new-vuejs-with-asp.net-core-application-to-embed-dashboard","toPath:":"/embedding-opions/embedding-sdk/samples/vuejs-with-core/#steps-to-create-new-vuejs-with-asp.net-core-application-to-embed-dashboard"},
+{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/vuejs-with-go/#how-to-run-the-sample","toPath:":"/embedding-opions/embedding-sdk/samples/vuejs-with-go/#how-to-run-the-sample"},
+{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/vuejs-with-go/#how-this-sample-works","toPath:":"/embedding-opions/embedding-sdk/samples/vuejs-with-go/#how-this-sample-works"},
+{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/vuejs-with-go/#steps-to-create-new-vuejs-with-go-application-to-embed-dashboard","toPath:":"/embedding-opions/embedding-sdk/samples/vuejs-with-go/#steps-to-create-new-vuejs-with-go-application-to-embed-dashboard"},
+{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/winforms/#how-to-run-the-sample","toPath:":"/embedding-opions/embedding-sdk/samples/winforms/#how-to-run-the-sample"},
+{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/winforms/#how-this-sample-works","toPath:":"/embedding-opions/embedding-sdk/samples/winforms/#how-this-sample-works"},
+{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/winforms/#steps-to-create-new-windows-forms-application-to-embed-dashboard","toPath:":"/embedding-opions/embedding-sdk/samples/winforms/#steps-to-create-new-windows-forms-application-to-embed-dashboard"},
+{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/wpf/#sample-to-embed-dashboard","toPath:":"/embedding-opions/embedding-sdk/samples/wpf/#sample-to-embed-dashboard"},
+{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/wpf/#get-dashboard-id","toPath:":"/embedding-opions/embedding-sdk/samples/wpf/#get-dashboard-id"},
+{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/wpf/#how-this-sample-works","toPath:":"/embedding-opions/embedding-sdk/samples/wpf/#how-this-sample-works"},
+{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/wpf/#steps-to-create-new-wpf-core-application-to-embed-dashboard","toPath:":"/embedding-opions/embedding-sdk/samples/wpf/#steps-to-create-new-wpf-core-application-to-embed-dashboard"},
+{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/xamarin/#how-to-run-the-sample","toPath:":"/embedding-opions/embedding-sdk/samples/xamarin/#how-to-run-the-sample"},
+{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/xamarin/#get-dashboard-id","toPath:":"/embedding-opions/embedding-sdk/samples/xamarin/#get-dashboard-id"},
+{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/xamarin/#how-this-sample-works","toPath:":"/embedding-opions/embedding-sdk/samples/xamarin/#how-this-sample-works"},
+{"fromPath":"/embedded-bi/javascript-based/samples/v3.3.40-or-later/xamarin/#steps-to-create-new-xamarin-application-to-embed-dashboard","toPath:":"/embedding-opions/embedding-sdk/samples/xamarin/#steps-to-create-new-xamarin-application-to-embed-dashboard"},
+{"fromPath":"/embedded-bi/javascript-based/samples/angular-with-javascript/#how-to-run-the-sample","toPath:":"/embedding-opions/embedding-sdk/samples/angular-with-javascript/#how-to-run-the-sample"},
+{"fromPath":"/embedded-bi/javascript-based/samples/angular-with-javascript/#how-this-sample-works","toPath:":"/embedding-opions/embedding-sdk/samples/angular-with-javascript/#how-this-sample-works"},
+{"fromPath":"/embedded-bi/javascript-based/samples/angular-with-javascript/#steps-to-create-new-angular-application-to-embed-dashboard","toPath:":"/embedding-opions/embedding-sdk/samples/angular-with-javascript/#steps-to-create-new-angular-application-to-embed-dashboard"},
+{"fromPath":"/embedded-bi/javascript-based/samples/asp-net-core/#how-to-run-the-sample","toPath:":"/embedding-opions/embedding-sdk/samples/asp-net-core/#how-to-run-the-sample"},
+{"fromPath":"/embedded-bi/javascript-based/samples/asp-net-core/#how-this-sample-works","toPath:":"/embedding-opions/embedding-sdk/samples/asp-net-core/#how-this-sample-works"},
+{"fromPath":"/embedded-bi/javascript-based/samples/asp-net-core/#steps-to-create-asp.net-core-application-to-embed-dashboard","toPath:":"/embedding-opions/embedding-sdk/samples/asp-net-core/#steps-to-create-asp.net-core-application-to-embed-dashboard"},
+{"fromPath":"/embedded-bi/javascript-based/samples/asp-net-mvc/#how-to-run-the-sample","toPath:":"/embedding-opions/embedding-sdk/samples/asp-net-mvc/#how-to-run-the-sample"},
+{"fromPath":"/embedded-bi/javascript-based/samples/asp-net-mvc/#how-this-sample-works","toPath:":"/embedding-opions/embedding-sdk/samples/asp-net-mvc/#how-this-sample-works"},
+{"fromPath":"/embedded-bi/javascript-based/samples/asp-net-mvc/#steps-to-create-new-asp.net-mvc-application-to-embed-dashboard","toPath:":"/embedding-opions/embedding-sdk/samples/asp-net-mvc/#steps-to-create-new-asp.net-mvc-application-to-embed-dashboard"},
+{"fromPath":"/embedded-bi/javascript-based/samples/asp-net/#how-to-run-the-sample","toPath:":"/embedding-opions/embedding-sdk/samples/asp-net/#how-to-run-the-sample"},
+{"fromPath":"/embedded-bi/javascript-based/samples/asp-net/#how-this-sample-works","toPath:":"/embedding-opions/embedding-sdk/samples/asp-net/#how-this-sample-works"},
+{"fromPath":"/embedded-bi/javascript-based/samples/asp-net/#steps-to-create-new-asp.net-web-forms-application-to-embed-dashboard","toPath:":"/embedding-opions/embedding-sdk/samples/asp-net/#steps-to-create-new-asp.net-web-forms-application-to-embed-dashboard"},
+{"fromPath":"/embedded-bi/javascript-based/samples/blazor-with-javascript/#how-to-run-blazor-server-sample","toPath:":"/embedding-opions/embedding-sdk/samples/blazor-with-javascript/#how-to-run-blazor-server-sample"},
+{"fromPath":"/embedded-bi/javascript-based/samples/blazor-with-javascript/#how-blazor-server-sample-works","toPath:":"/embedding-opions/embedding-sdk/samples/blazor-with-javascript/#how-blazor-server-sample-works"},
+{"fromPath":"/embedded-bi/javascript-based/samples/blazor-with-javascript/#steps-to-create-new-blazor-server-application-to-embed-dashboard","toPath:":"/embedding-opions/embedding-sdk/samples/blazor-with-javascript/#steps-to-create-new-blazor-server-application-to-embed-dashboard"},
+{"fromPath":"/embedded-bi/javascript-based/samples/blazor-with-javascript/#how-to-run-the-blazor-webassembly-sample","toPath:":"/embedding-opions/embedding-sdk/samples/blazor-with-javascript/#how-to-run-the-blazor-webassembly-sample"},
+{"fromPath":"/embedded-bi/javascript-based/samples/blazor-with-javascript/#how-the-blazor-webassembly-sample-works","toPath:":"/embedding-opions/embedding-sdk/samples/blazor-with-javascript/#how-the-blazor-webassembly-sample-works"},
+{"fromPath":"/embedded-bi/javascript-based/samples/blazor-with-javascript/#steps-to-create-new-blazor-webassembly-application-to-embed-dashboard","toPath:":"/embedding-opions/embedding-sdk/samples/blazor-with-javascript/#steps-to-create-new-blazor-webassembly-application-to-embed-dashboard"},
+{"fromPath":"/embedded-bi/javascript-based/samples/flutter-with-javascript/#how-to-run-the-sample","toPath:":"/embedding-opions/embedding-sdk/samples/flutter-with-javascript/#how-to-run-the-sample"},
+{"fromPath":"/embedded-bi/javascript-based/samples/flutter-with-javascript/#how-this-sample-works","toPath:":"/embedding-opions/embedding-sdk/samples/flutter-with-javascript/#how-this-sample-works"},
+{"fromPath":"/embedded-bi/javascript-based/samples/flutter-with-javascript/#steps-to-create-new-flutter-application-to-embed-dashboard","toPath:":"/embedding-opions/embedding-sdk/samples/flutter-with-javascript/#steps-to-create-new-flutter-application-to-embed-dashboard"},
+{"fromPath":"/embedded-bi/javascript-based/samples/node-js/#how-to-run-the-sample","toPath:":"/embedding-opions/embedding-sdk/samples/node-js/#how-to-run-the-sample"},
+{"fromPath":"/embedded-bi/javascript-based/samples/node-js/#how-this-sample-works","toPath:":"/embedding-opions/embedding-sdk/samples/node-js/#how-this-sample-works"},
+{"fromPath":"/embedded-bi/javascript-based/samples/node-js/#steps-to-create-new-node.js-application-to-embed-dashboard","toPath:":"/embedding-opions/embedding-sdk/samples/node-js/#steps-to-create-new-node.js-application-to-embed-dashboard"},
+{"fromPath":"/embedded-bi/javascript-based/samples/other-platform-samples/#coldfusion-sample-to-embed-dashboard","toPath:":"/embedding-opions/embedding-sdk/samples/other-platform-samples/#coldfusion-sample-to-embed-dashboard"},
+{"fromPath":"/embedded-bi/javascript-based/samples/other-platform-samples/#how-this-sample-works","toPath:":"/embedding-opions/embedding-sdk/samples/other-platform-samples/#how-this-sample-works"},
+{"fromPath":"/embedded-bi/javascript-based/samples/other-platform-samples/#java-servlet-sample-to-embed-dashboard","toPath:":"/embedding-opions/embedding-sdk/samples/other-platform-samples/#java-servlet-sample-to-embed-dashboard"},
+{"fromPath":"/embedded-bi/javascript-based/samples/other-platform-samples/#how-this-sample-works","toPath:":"/embedding-opions/embedding-sdk/samples/other-platform-samples/#how-this-sample-works"},
+{"fromPath":"/embedded-bi/javascript-based/samples/other-platform-samples/#django-sample-to-embed-the-dashboard","toPath:":"/embedding-opions/embedding-sdk/samples/other-platform-samples/#django-sample-to-embed-the-dashboard"},
+{"fromPath":"/embedded-bi/javascript-based/samples/other-platform-samples/#how-this-sample-works","toPath:":"/embedding-opions/embedding-sdk/samples/other-platform-samples/#how-this-sample-works"},
+{"fromPath":"/embedded-bi/javascript-based/samples/other-platform-samples/#ionic-sample-to-embed-dashboard","toPath:":"/embedding-opions/embedding-sdk/samples/other-platform-samples/#ionic-sample-to-embed-dashboard"},
+{"fromPath":"/embedded-bi/javascript-based/samples/other-platform-samples/#how-this-sample-works","toPath:":"/embedding-opions/embedding-sdk/samples/other-platform-samples/#how-this-sample-works"},
+{"fromPath":"/embedded-bi/javascript-based/samples/php-with-javascript/#how-to-run-the-sample","toPath:":"/embedding-opions/embedding-sdk/samples/php-with-javascript/#how-to-run-the-sample"},
+{"fromPath":"/embedded-bi/javascript-based/samples/php-with-javascript/#how-this-sample-works","toPath:":"/embedding-opions/embedding-sdk/samples/php-with-javascript/#how-this-sample-works"},
+{"fromPath":"/embedded-bi/javascript-based/samples/php-with-javascript/#steps-to-create-new-php-application-to-embed-dashboard","toPath:":"/embedding-opions/embedding-sdk/samples/php-with-javascript/#steps-to-create-new-php-application-to-embed-dashboard"},
+{"fromPath":"/embedded-bi/javascript-based/samples/react-core/#how-to-run-the-sample","toPath:":"/embedding-opions/embedding-sdk/samples/react-core/#how-to-run-the-sample"},
+{"fromPath":"/embedded-bi/javascript-based/samples/react-core/#how-this-sample-works","toPath:":"/embedding-opions/embedding-sdk/samples/react-core/#how-this-sample-works"},
+{"fromPath":"/embedded-bi/javascript-based/samples/react-core/#steps-to-create-new-react-with-asp.net-core-application-to-embed-dashboard","toPath:":"/embedding-opions/embedding-sdk/samples/react-core/#steps-to-create-new-react-with-asp.net-core-application-to-embed-dashboard"},
+{"fromPath":"/embedded-bi/javascript-based/samples/react-with-go/#how-to-run-the-sample","toPath:":"/embedding-opions/embedding-sdk/samples/react-with-go/#how-to-run-the-sample"},
+{"fromPath":"/embedded-bi/javascript-based/samples/react-with-go/#how-this-sample-works","toPath:":"/embedding-opions/embedding-sdk/samples/react-with-go/#how-this-sample-works"},
+{"fromPath":"/embedded-bi/javascript-based/samples/react-with-go/#steps-to-create-new-react-with-go-application-to-embed-dashboard","toPath:":"/embedding-opions/embedding-sdk/samples/react-with-go/#steps-to-create-new-react-with-go-application-to-embed-dashboard"},
+{"fromPath":"/embedded-bi/javascript-based/samples/ruby-on-rails/#how-to-run-the-sample","toPath:":"/embedding-opions/embedding-sdk/samples/ruby-on-rails/#how-to-run-the-sample"},
+{"fromPath":"/embedded-bi/javascript-based/samples/ruby-on-rails/#how-this-sample-works","toPath:":"/embedding-opions/embedding-sdk/samples/ruby-on-rails/#how-this-sample-works"},
+{"fromPath":"/embedded-bi/javascript-based/samples/ruby-on-rails/#steps-to-create-new-ruby-on-rails-application-to-embed-dashboard","toPath:":"/embedding-opions/embedding-sdk/samples/ruby-on-rails/#steps-to-create-new-ruby-on-rails-application-to-embed-dashboard"},
+{"fromPath":"/embedded-bi/javascript-based/samples/vuejs-with-core/#how-to-run-the-sample","toPath:":"/embedding-opions/embedding-sdk/samples/vuejs-with-core/#how-to-run-the-sample"},
+{"fromPath":"/embedded-bi/javascript-based/samples/vuejs-with-core/#how-this-sample-works","toPath:":"/embedding-opions/embedding-sdk/samples/vuejs-with-core/#how-this-sample-works"},
+{"fromPath":"/embedded-bi/javascript-based/samples/vuejs-with-core/#steps-to-create-new-vuejs-with-asp.net-core-application-to-embed-dashboard","toPath:":"/embedding-opions/embedding-sdk/samples/vuejs-with-core/#steps-to-create-new-vuejs-with-asp.net-core-application-to-embed-dashboard"},
+{"fromPath":"/embedded-bi/javascript-based/samples/vuejs-with-go/#how-to-run-the-sample","toPath:":"/embedding-opions/embedding-sdk/samples/vuejs-with-go/#how-to-run-the-sample"},
+{"fromPath":"/embedded-bi/javascript-based/samples/vuejs-with-go/#how-this-sample-works","toPath:":"/embedding-opions/embedding-sdk/samples/vuejs-with-go/#how-this-sample-works"},
+{"fromPath":"/embedded-bi/javascript-based/samples/vuejs-with-go/#steps-to-create-new-vuejs-with-go-application-to-embed-dashboard","toPath:":"/embedding-opions/embedding-sdk/samples/vuejs-with-go/#steps-to-create-new-vuejs-with-go-application-to-embed-dashboard"},
+{"fromPath":"/embedded-bi/javascript-based/samples/winforms/#how-to-run-the-sample","toPath:":"/embedding-opions/embedding-sdk/samples/winforms/#how-to-run-the-sample"},
+{"fromPath":"/embedded-bi/javascript-based/samples/winforms/#how-this-sample-works","toPath:":"/embedding-opions/embedding-sdk/samples/winforms/#how-this-sample-works"},
+{"fromPath":"/embedded-bi/javascript-based/samples/winforms/#steps-to-create-new-windows-forms-application-to-embed-dashboard","toPath:":"/embedding-opions/embedding-sdk/samples/winforms/#steps-to-create-new-windows-forms-application-to-embed-dashboard"},
+{"fromPath":"/embedded-bi/javascript-based/samples/wpf/#sample-to-embed-dashboard","toPath:":"/embedding-opions/embedding-sdk/samples/wpf/#sample-to-embed-dashboard"},
+{"fromPath":"/embedded-bi/javascript-based/samples/wpf/#get-dashboard-id","toPath:":"/embedding-opions/embedding-sdk/samples/wpf/#get-dashboard-id"},
+{"fromPath":"/embedded-bi/javascript-based/samples/wpf/#how-this-sample-works","toPath:":"/embedding-opions/embedding-sdk/samples/wpf/#how-this-sample-works"},
+{"fromPath":"/embedded-bi/javascript-based/samples/wpf/#steps-to-create-new-wpf-core-application-to-embed-dashboard","toPath:":"/embedding-opions/embedding-sdk/samples/wpf/#steps-to-create-new-wpf-core-application-to-embed-dashboard"},
+{"fromPath":"/embedded-bi/javascript-based/samples/xamarin/#how-to-run-the-sample","toPath:":"/embedding-opions/embedding-sdk/samples/xamarin/#how-to-run-the-sample"},
+{"fromPath":"/embedded-bi/javascript-based/samples/xamarin/#get-dashboard-id","toPath:":"/embedding-opions/embedding-sdk/samples/xamarin/#get-dashboard-id"},
+{"fromPath":"/embedded-bi/javascript-based/samples/xamarin/#how-this-sample-works","toPath:":"/embedding-opions/embedding-sdk/samples/xamarin/#how-this-sample-works"},
+{"fromPath":"/embedded-bi/javascript-based/samples/xamarin/#steps-to-create-new-xamarin-application-to-embed-dashboard","toPath:":"/embedding-opions/embedding-sdk/samples/xamarin/#steps-to-create-new-xamarin-application-to-embed-dashboard"},
 {"fromPath":"/embedded-bi/multi-tenancy/site-administration/authentication/azure-b2c-settings/#configure-azure-ad-b2c-in-user-management-server","toPath:":"/multi-tenancy/site-administration/authentication/azure-b2c-settings/#configure-azure-ad-b2c-in-user-management-server"},
 {"fromPath":"/embedded-bi/multi-tenancy/site-administration/authentication/azure-b2c-settings/#where-to-get-azure-ad-b2c-settings","toPath:":"/multi-tenancy/site-administration/authentication/azure-b2c-settings/#where-to-get-azure-ad-b2c-settings"},
 {"fromPath":"/embedded-bi/multi-tenancy/site-administration/authentication/azure-b2c-settings/#set-azure-ad-b2c-as-default-authentication","toPath:":"/multi-tenancy/site-administration/authentication/azure-b2c-settings/#set-azure-ad-b2c-as-default-authentication"},
@@ -14831,7 +14985,7 @@
 {"fromPath":"/embedded-bi/multi-tenancy/site-administration/authentication/openid-settings/#steps-to-configure-openid-in-user-management-server","toPath:":"/multi-tenancy/site-administration/authentication/openid-settings/#steps-to-configure-openid-in-user-management-server"},
 {"fromPath":"/embedded-bi/multi-tenancy/site-administration/authentication/openid-settings/#set-openid-connect-as-default-authentication","toPath:":"/multi-tenancy/site-administration/authentication/openid-settings/#set-openid-connect-as-default-authentication"},
 {"fromPath":"/embedded-bi/multi-tenancy/site-administration/authentication/openid-settings/#disabling-openid-connect-settings","toPath:":"/multi-tenancy/site-administration/authentication/openid-settings/#disabling-openid-connect-settings"},
-{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/font/#add-font","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-analytics/font/#add-font"},
+{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/font/#add-font","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings/font/#add-font"},
 {"fromPath":"/embedded-bi/setup/deploying-in-linux/deploy-bold-bi-using-apache-server/configure-apache-server-in-centos/#manually-configure-apache","toPath:":"/deploying-bold-bi/deploying-in-linux/deploy-bold-bi-using-apache-server/configure-apache-server-in-centos/#manually-configure-apache"},
 {"fromPath":"/embedded-bi/setup/deploying-in-linux/deploy-bold-bi-using-apache-server/configure-apache-server-in-centos/#configure-ssl-in-apache-server","toPath:":"/deploying-bold-bi/deploying-in-linux/deploy-bold-bi-using-apache-server/configure-apache-server-in-centos/#configure-ssl-in-apache-server"},
 {"fromPath":"/embedded-bi/setup/deploying-in-linux/deploy-bold-bi-using-apache-server/configure-apache-server-in-centos/#next-steps","toPath:":"/deploying-bold-bi/deploying-in-linux/deploy-bold-bi-using-apache-server/configure-apache-server-in-centos/#next-steps"},
@@ -14957,8 +15111,8 @@
 {"fromPath":"/embedded-bi/visualizing-data/visualization-widgets/custom-widget/v4.1.36-or-below/#rendering-widget-through-the-source-file","toPath:":"/visualizing-data/visualization-widgets/custom-widget/v4.1.36-or-below/#rendering-widget-through-the-source-file"},
 {"fromPath":"/embedded-bi/visualizing-data/visualization-widgets/custom-widget/v4.1.36-or-below/#samples","toPath:":"/visualizing-data/visualization-widgets/custom-widget/v4.1.36-or-below/#samples"},
 {"fromPath":"/embedded-bi/visualizing-data/visualization-widgets/custom-widget/v4.1.36-or-below/#adding-syncfusion-ejsunburstchart-as-custom-widget","toPath:":"/visualizing-data/visualization-widgets/custom-widget/v4.1.36-or-below/#adding-syncfusion-ejsunburstchart-as-custom-widget"},
-{"fromPath":"/embedded-bi/visualizing-data/visualization-widgets/custom-widget/v4.1.36-or-below/#step-1-download-the-below-attached-custom-widget-template-for-developing.","toPath:":"/visualizing-data/visualization-widgets/custom-widget/v4.1.36-or-below/#step-1-download-the-below-attached-custom-widget-template-for-developing."},
-{"fromPath":"/embedded-bi/visualizing-data/visualization-widgets/custom-widget/v4.1.36-or-below/#step-2-configure-the-widget-through-the-`widgetconfig.json`-file.","toPath:":"/visualizing-data/visualization-widgets/custom-widget/v4.1.36-or-below/#step-2-configure-the-widget-through-the-`widgetconfig.json`-file."},
+{"fromPath":"/embedded-bi/visualizing-data/visualization-widgets/custom-widget/v4.1.36-or-below/#step-1-download-the-below-attached-custom-widget-template-for-developing","toPath:":"/visualizing-data/visualization-widgets/custom-widget/v4.1.36-or-below/#step-1-download-the-below-attached-custom-widget-template-for-developing"},
+{"fromPath":"/embedded-bi/visualizing-data/visualization-widgets/custom-widget/v4.1.36-or-below/#step-2-configure-the-widget-through-the-`widgetconfig.json`-file","toPath:":"/visualizing-data/visualization-widgets/custom-widget/v4.1.36-or-below/#step-2-configure-the-widget-through-the-`widgetconfig.json`-file"},
 {"fromPath":"/embedded-bi/visualizing-data/visualization-widgets/custom-widget/v4.1.36-or-below/#configuring-custom-widget-for-interaction","toPath:":"/visualizing-data/visualization-widgets/custom-widget/v4.1.36-or-below/#configuring-custom-widget-for-interaction"},
 {"fromPath":"/embedded-bi/visualizing-data/visualization-widgets/custom-widget/v4.1.36-or-below/#format","toPath:":"/visualizing-data/visualization-widgets/custom-widget/v4.1.36-or-below/#format"},
 {"fromPath":"/embedded-bi/visualizing-data/visualization-widgets/custom-widget/v4.1.36-or-below/#various-types-of-column","toPath:":"/visualizing-data/visualization-widgets/custom-widget/v4.1.36-or-below/#various-types-of-column"},
@@ -15007,8 +15161,8 @@
 {"fromPath":"/embedded-bi/visualizing-data/visualization-widgets/custom-widget/v4.2.68-or-later/#rendering-widget-through-the-source-file","toPath:":"/visualizing-data/visualization-widgets/custom-widget/v4.2.68-or-later/#rendering-widget-through-the-source-file"},
 {"fromPath":"/embedded-bi/visualizing-data/visualization-widgets/custom-widget/v4.2.68-or-later/#samples","toPath:":"/visualizing-data/visualization-widgets/custom-widget/v4.2.68-or-later/#samples"},
 {"fromPath":"/embedded-bi/visualizing-data/visualization-widgets/custom-widget/v4.2.68-or-later/#adding-syncfusion-ejsunburstchart-as-custom-widget","toPath:":"/visualizing-data/visualization-widgets/custom-widget/v4.2.68-or-later/#adding-syncfusion-ejsunburstchart-as-custom-widget"},
-{"fromPath":"/embedded-bi/visualizing-data/visualization-widgets/custom-widget/v4.2.68-or-later/#step-1-download-the-below-attached-custom-widget-template-for-developing.","toPath:":"/visualizing-data/visualization-widgets/custom-widget/v4.2.68-or-later/#step-1-download-the-below-attached-custom-widget-template-for-developing."},
-{"fromPath":"/embedded-bi/visualizing-data/visualization-widgets/custom-widget/v4.2.68-or-later/#step-2-configure-the-widget-through-the-`widgetconfig.json`-file.","toPath:":"/visualizing-data/visualization-widgets/custom-widget/v4.2.68-or-later/#step-2-configure-the-widget-through-the-`widgetconfig.json`-file."},
+{"fromPath":"/embedded-bi/visualizing-data/visualization-widgets/custom-widget/v4.2.68-or-later/#step-1-download-the-below-attached-custom-widget-template-for-developing","toPath:":"/visualizing-data/visualization-widgets/custom-widget/v4.2.68-or-later/#step-1-download-the-below-attached-custom-widget-template-for-developing"},
+{"fromPath":"/embedded-bi/visualizing-data/visualization-widgets/custom-widget/v4.2.68-or-later/#step-2-configure-the-widget-through-the-`widgetconfig.json`-file","toPath:":"/visualizing-data/visualization-widgets/custom-widget/v4.2.68-or-later/#step-2-configure-the-widget-through-the-`widgetconfig.json`-file"},
 {"fromPath":"/embedded-bi/visualizing-data/visualization-widgets/custom-widget/v4.2.68-or-later/#configuring-custom-widget-for-interaction","toPath:":"/visualizing-data/visualization-widgets/custom-widget/v4.2.68-or-later/#configuring-custom-widget-for-interaction"},
 {"fromPath":"/embedded-bi/visualizing-data/visualization-widgets/custom-widget/v4.2.68-or-later/#format","toPath:":"/visualizing-data/visualization-widgets/custom-widget/v4.2.68-or-later/#format"},
 {"fromPath":"/embedded-bi/visualizing-data/visualization-widgets/custom-widget/v4.2.68-or-later/#various-types-of-column","toPath:":"/visualizing-data/visualization-widgets/custom-widget/v4.2.68-or-later/#various-types-of-column"},
@@ -15020,18 +15174,18 @@
 {"fromPath":"/embedded-bi/working-with-dashboards/preview-dashboard/exporting-reports-from-widgets/exporting-options/#exporting-widget-to-pdf","toPath:":"/working-with-dashboards/preview-dashboard/exporting-reports-from-widgets/exporting-options/#exporting-widget-to-pdf"},
 {"fromPath":"/embedded-bi/working-with-dashboards/preview-dashboard/exporting-reports-from-widgets/exporting-options/#exporting-widget-to-csv","toPath:":"/working-with-dashboards/preview-dashboard/exporting-reports-from-widgets/exporting-options/#exporting-widget-to-csv"},
 {"fromPath":"/embedded-bi/working-with-dashboards/preview-dashboard/exporting-reports-from-widgets/exporting-options/#exporting-widget-to-excel","toPath:":"/working-with-dashboards/preview-dashboard/exporting-reports-from-widgets/exporting-options/#exporting-widget-to-excel"},
-{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/create-custom-application-theme/#**points-to-be-noted-while-editing-and-uploading-custom-theme-file.**","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/create-custom-application-theme/#**points-to-be-noted-while-editing-and-uploading-custom-theme-file.**"},
-{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/create-custom-application-theme/#assign-color-code-to-variables-in-template-file","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/create-custom-application-theme/#assign-color-code-to-variables-in-template-file"},
-{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/create-custom-application-theme/#**simple-customization**","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/create-custom-application-theme/#**simple-customization**"},
-{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/create-custom-application-theme/#branding-color","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/create-custom-application-theme/#branding-color"},
-{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/create-custom-application-theme/#typography","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/create-custom-application-theme/#typography"},
-{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/create-custom-application-theme/#**advanced-customization**","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/create-custom-application-theme/#**advanced-customization**"},
-{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/create-custom-application-theme/#state-background","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/create-custom-application-theme/#state-background"},
-{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/create-custom-application-theme/#buttons-customization","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/create-custom-application-theme/#buttons-customization"},
-{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/#switch-application-theme-mode","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/#switch-application-theme-mode"},
-{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/#custom-theme","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/#custom-theme"},
-{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/#dashboard-theme","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/#dashboard-theme"},
-{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/#**please-find-the-links-below-to-learn-more-about-custom-themes.**","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/#**please-find-the-links-below-to-learn-more-about-custom-themes.**"},
+{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/create-custom-application-theme/#points-to-be-noted-while-editing-and-uploading-custom-theme-file","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings/theme/create-custom-application-theme/#points-to-be-noted-while-editing-and-uploading-custom-theme-file"},
+{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/create-custom-application-theme/#assign-color-code-to-variables-in-template-file","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings/theme/create-custom-application-theme/#assign-color-code-to-variables-in-template-file"},
+{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/create-custom-application-theme/#simple-customization","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings/theme/create-custom-application-theme/#simple-customization"},
+{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/create-custom-application-theme/#branding-color","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings/theme/create-custom-application-theme/#branding-color"},
+{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/create-custom-application-theme/#typography","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings/theme/create-custom-application-theme/#typography"},
+{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/create-custom-application-theme/#advanced-customization","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings/theme/create-custom-application-theme/#advanced-customization"},
+{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/create-custom-application-theme/#state-background","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings/theme/create-custom-application-theme/#state-background"},
+{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/create-custom-application-theme/#buttons-customization","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings/theme/create-custom-application-theme/#buttons-customization"},
+{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/#switch-application-theme-mode","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings/theme/#switch-application-theme-mode"},
+{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/#custom-theme","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings/theme/#custom-theme"},
+{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/#dashboard-theme","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings/theme/#dashboard-theme"},
+{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/#please-find-the-links-below-to-learn-more-about-custom-themes","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings/theme/#please-find-the-links-below-to-learn-more-about-custom-themes"},
 {"fromPath":"/embedded-bi/setup/deploying-in-linux/installation-and-deployment/v4.1-or-older/bold-bi-on-centos/#deployment-prerequisites","toPath:":"/deploying-bold-bi/deploying-in-linux/installation-and-deployment/v4.1-or-older/bold-bi-on-centos/#deployment-prerequisites"},
 {"fromPath":"/embedded-bi/setup/deploying-in-linux/installation-and-deployment/v4.1-or-older/bold-bi-on-centos/#configuring-the-bold-bi-application","toPath:":"/deploying-bold-bi/deploying-in-linux/installation-and-deployment/v4.1-or-older/bold-bi-on-centos/#configuring-the-bold-bi-application"},
 {"fromPath":"/embedded-bi/setup/deploying-in-linux/installation-and-deployment/v4.1-or-older/bold-bi-on-centos/#configure-nginx","toPath:":"/deploying-bold-bi/deploying-in-linux/installation-and-deployment/v4.1-or-older/bold-bi-on-centos/#configure-nginx"},
@@ -15059,7 +15213,7 @@
 {"fromPath":"/embedded-bi/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/create-new-custom-widget/#example","toPath:":"/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/create-new-custom-widget/#example"},
 {"fromPath":"/embedded-bi/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/create-new-custom-widget/#measure-type-column","toPath:":"/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/create-new-custom-widget/#measure-type-column"},
 {"fromPath":"/embedded-bi/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/create-new-custom-widget/#example","toPath:":"/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/create-new-custom-widget/#example"},
-{"fromPath":"/embedded-bi/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/create-new-custom-widget/#converting-the-widget-to-a-*.bicw-file","toPath:":"/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/create-new-custom-widget/#converting-the-widget-to-a-*.bicw-file"},
+{"fromPath":"/embedded-bi/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/create-new-custom-widget/#converting-the-widget-to-a-*.bicw-file","toPath:":"/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/create-new-custom-widget/#converting-the-widget-to-a-bicw-file"},
 {"fromPath":"/embedded-bi/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/create-new-custom-widget/#format","toPath:":"/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/create-new-custom-widget/#format"},
 {"fromPath":"/embedded-bi/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/create-new-custom-widget/#publish-custom-widget","toPath:":"/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/create-new-custom-widget/#publish-custom-widget"},
 {"fromPath":"/embedded-bi/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/debugging-custom-widget/#create-a-custom-widget","toPath:":"/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/debugging-custom-widget/#create-a-custom-widget"},
@@ -15070,66 +15224,240 @@
 {"fromPath":"/embedded-bi/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/editing-existing-custom-widget/#steps-to-unpack-the-custom-widget","toPath:":"/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/editing-existing-custom-widget/#steps-to-unpack-the-custom-widget"},
 {"fromPath":"/embedded-bi/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/editing-existing-custom-widget/#modify-the-custom-widget-and-convert-it-to-*.bicw-file","toPath:":"/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/editing-existing-custom-widget/#modify-the-custom-widget-and-convert-it-to-*.bicw-file"},
 {"fromPath":"/embedded-bi/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/editing-existing-custom-widget/#upload-the-edited-widget-in-the-widget-settings","toPath:":"/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/editing-existing-custom-widget/#upload-the-edited-widget-in-the-widget-settings"},
-{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/#how-to-apply-theme-in-application","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/#how-to-apply-theme-in-application"},
-{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/#global-theme-settings","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/#global-theme-settings"},
-{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/#site-theme-settings","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/#site-theme-settings"},
-{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/#limitations","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/#limitations"},
-{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/#how-to-create-custom-theme-using-css3-variable","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/#how-to-create-custom-theme-using-css3-variable"},
-{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/#designer-font","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/#designer-font"},
-{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/#dashboard-banner","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/#dashboard-banner"},
-{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/#data-color-palette","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/#data-color-palette"},
-{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/#dashboard-widgets","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/#dashboard-widgets"},
-{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/#widget-common-level-properties","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/#widget-common-level-properties"},
-{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/#widget-specific-level-properties","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/#widget-specific-level-properties"},
-{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/#chart-variables","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/#chart-variables"},
-{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/#map-variables","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/#map-variables"},
-{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/#tree-map-variables","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/#tree-map-variables"},
-{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/#heat-map-variables","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/#heat-map-variables"},
-{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/#grid-variables","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/#grid-variables"},
-{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/#pivot-grid-variables","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/#pivot-grid-variables"},
-{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/#list-box-variables","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/#list-box-variables"},
-{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/#combo-box-variables","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/#combo-box-variables"},
-{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/#date-picker-variables","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/#date-picker-variables"},
-{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/#kpi-card-variables","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/#kpi-card-variables"},
-{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/#number-card-variables","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/#number-card-variables"},
-{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/#range-slider-variables","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/#range-slider-variables"},
-{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/#range-navigator-variables","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/#range-navigator-variables"},
-{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/#circular-gauge-variables","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/#circular-gauge-variables"},
-{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/#radar-polar-variables","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/#radar-polar-variables"},
-{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/#combo-chart-variables","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/#combo-chart-variables"},
-{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/#period-over-period-variables","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/#period-over-period-variables"},
-{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/#tab-widget-variables","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/#tab-widget-variables"},
-{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/#text-filter-variables","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/#text-filter-variables"},
-{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/#scatter-widget-variables","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/#scatter-widget-variables"},
-{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/#rte-widget-variables","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/#rte-widget-variables"},
-{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/#filter-overview-variables","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/#filter-overview-variables"},
-{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/#dashboard-menu-variables","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/#dashboard-menu-variables"},
-{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/#dashboard-tooltip-variables","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/#dashboard-tooltip-variables"},
-{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/#dashboard-error-dialog-variables","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/#dashboard-error-dialog-variables"},
-{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#dashboard-banner","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#dashboard-banner"},
-{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#data-color-palette","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#data-color-palette"},
-{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#dashboard-widgets","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#dashboard-widgets"},
-{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#widget-common-level-properties","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#widget-common-level-properties"},
-{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#widget-specific-level-properties","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#widget-specific-level-properties"},
-{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#chart-widget","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#chart-widget"},
-{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#map-widget","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#map-widget"},
-{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#tree-map-widget","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#tree-map-widget"},
-{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#heatmap-widget","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#heatmap-widget"},
-{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#grid-widget","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#grid-widget"},
-{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#pivot-grid-widget","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#pivot-grid-widget"},
-{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#list-box-widget","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#list-box-widget"},
-{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#combobox-widget","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#combobox-widget"},
-{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#date-picker-widget","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#date-picker-widget"},
-{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#kpi-card-widget","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#kpi-card-widget"},
-{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#number-card-widget","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#number-card-widget"},
-{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#range-slider-widget","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#range-slider-widget"},
-{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#range-navigator-widget","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#range-navigator-widget"},
-{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#circular-gauge-widget","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#circular-gauge-widget"},
-{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#radar-polar-widget","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#radar-polar-widget"},
-{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#combo-chart-widget","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#combo-chart-widget"},
-{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#period-over-period-widget","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#period-over-period-widget"},
-{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#tab-widget","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#tab-widget"},
-{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#rte-widget","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#rte-widget"},
-{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#scatter-widget","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#scatter-widget"},
-{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#text-filter-widget","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings-in-embedded-bi/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#text-filter-widget"}
-  ]
+{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/#how-to-apply-theme-in-application","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/#how-to-apply-theme-in-application"},
+{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/#global-theme-settings","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/#global-theme-settings"},
+{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/#site-theme-settings","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/#site-theme-settings"},
+{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/#limitations","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/#limitations"},
+{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/#how-to-create-custom-theme-using-css3-variable","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/#how-to-create-custom-theme-using-css3-variable"},
+{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/#designer-font","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/#designer-font"},
+{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/#dashboard-banner","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/#dashboard-banner"},
+{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/#data-color-palette","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/#data-color-palette"},
+{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/#dashboard-widgets","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/#dashboard-widgets"},
+{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/#widget-common-level-properties","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/#widget-common-level-properties"},
+{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/#widget-specific-level-properties","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/#widget-specific-level-properties"},
+{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/#chart-variables","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/#chart-variables"},
+{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/#map-variables","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/#map-variables"},
+{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/#tree-map-variables","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/#tree-map-variables"},
+{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/#heat-map-variables","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/#heat-map-variables"},
+{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/#grid-variables","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/#grid-variables"},
+{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/#pivot-grid-variables","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/#pivot-grid-variables"},
+{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/#list-box-variables","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/#list-box-variables"},
+{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/#combo-box-variables","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/#combo-box-variables"},
+{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/#date-picker-variables","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/#date-picker-variables"},
+{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/#kpi-card-variables","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/#kpi-card-variables"},
+{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/#number-card-variables","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/#number-card-variables"},
+{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/#range-slider-variables","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/#range-slider-variables"},
+{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/#range-navigator-variables","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/#range-navigator-variables"},
+{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/#circular-gauge-variables","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/#circular-gauge-variables"},
+{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/#radar-polar-variables","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/#radar-polar-variables"},
+{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/#combo-chart-variables","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/#combo-chart-variables"},
+{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/#period-over-period-variables","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/#period-over-period-variables"},
+{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/#tab-widget-variables","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/#tab-widget-variables"},
+{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/#text-filter-variables","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/#text-filter-variables"},
+{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/#scatter-widget-variables","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/#scatter-widget-variables"},
+{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/#rte-widget-variables","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/#rte-widget-variables"},
+{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/#filter-overview-variables","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/#filter-overview-variables"},
+{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/#dashboard-menu-variables","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/#dashboard-menu-variables"},
+{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/#dashboard-tooltip-variables","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/#dashboard-tooltip-variables"},
+{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/#dashboard-error-dialog-variables","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/#dashboard-error-dialog-variables"},
+{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#dashboard-banner","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#dashboard-banner"},
+{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#data-color-palette","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#data-color-palette"},
+{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#dashboard-widgets","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#dashboard-widgets"},
+{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#widget-common-level-properties","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#widget-common-level-properties"},
+{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#widget-specific-level-properties","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#widget-specific-level-properties"},
+{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#chart-widget","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#chart-widget"},
+{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#map-widget","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#map-widget"},
+{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#tree-map-widget","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#tree-map-widget"},
+{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#heatmap-widget","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#heatmap-widget"},
+{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#grid-widget","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#grid-widget"},
+{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#pivot-grid-widget","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#pivot-grid-widget"},
+{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#list-box-widget","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#list-box-widget"},
+{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#combobox-widget","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#combobox-widget"},
+{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#date-picker-widget","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#date-picker-widget"},
+{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#kpi-card-widget","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#kpi-card-widget"},
+{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#number-card-widget","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#number-card-widget"},
+{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#range-slider-widget","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#range-slider-widget"},
+{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#range-navigator-widget","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#range-navigator-widget"},
+{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#circular-gauge-widget","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#circular-gauge-widget"},
+{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#radar-polar-widget","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#radar-polar-widget"},
+{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#combo-chart-widget","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#combo-chart-widget"},
+{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#period-over-period-widget","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#period-over-period-widget"},
+{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#tab-widget","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#tab-widget"},
+{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#rte-widget","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#rte-widget"},
+{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#scatter-widget","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#scatter-widget"},
+{"fromPath":"/embedded-bi/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#text-filter-widget","toPath:":"/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/#text-filter-widget"},
+{
+  "fromPath":"/embedded-bi/resource-migration/migrate-dashboards-online/#publish-dashboards-online-in-the-bold-bi-application",
+  "toPath":"/resource-migration/migrate-dashboards-online/#publish-dashboards-online-in-the-bold-bi-application"
+  },
+  {
+  "fromPath":"/embedded-bi/resource-migration/migrate-dashboards-online/",
+  "toPath":"/resource-migration/migrate-dashboards-online/"
+  },{
+  "fromPath":"/embedded-bi/resource-migration/migrate-dashboards-online/#internal-site",
+  "toPath":"/resource-migration/migrate-dashboards-online/#internal-site"
+  },{
+  "fromPath":"/embedded-bi/resource-migration/migrate-dashboards-online/#external-site",
+  "toPath":"/resource-migration/migrate-dashboards-online/#external-site"
+  },{
+  "fromPath":"/embedded-bi/resource-migration/migrate-dashboards-online/#manage-published-dashboards",
+  "toPath":"/resource-migration/migrate-dashboards-online/#manage-published-dashboards"
+  },{
+  "fromPath":"/embedded-bi/resource-migration/migrate-dashboards-online/#synchronize-dashboard",
+  "toPath":"/resource-migration/migrate-dashboards-online/#synchronize-dashboard"
+  },{
+  "fromPath":"/embedded-bi/resource-migration/migrate-dashboards-online/#information-of-published-dashboard",
+  "toPath":"/resource-migration/migrate-dashboards-online/#information-of-published-dashboard"
+  },{
+  "fromPath":"/embedded-bi/resource-migration/migrate-dashboards-online/#publish-history",
+  "toPath":"/resource-migration/migrate-dashboards-online/#publish-history"
+  },{
+  "fromPath":"/embedded-bi/resource-migration/migrate-dashboards-online/#remove-publish-dashboard",
+  "toPath":"/resource-migration/migrate-dashboards-online/#remove-publish-dashboard"
+  },{
+  "fromPath":"/embedded-bi/resource-migration/migrate-dashboards-online/#lock-and-unlock-publish-dashboard",
+  "toPath":"/resource-migration/migrate-dashboards-online/#lock-and-unlock-publish-dashboard"
+  },{
+  "fromPath":"/embedded-bi/resource-migration/migrate-dashboards-online/#disable-synchronization-of-publish-dashboard",
+  "toPath":"/resource-migration/migrate-dashboards-online/#disable-synchronization-of-publish-dashboard"
+  },{
+  "fromPath":"/embedded-bi/resource-migration/migrate-data-sources-online/",
+  "toPath":"/resource-migration/migrate-data-sources-online/"
+  },{
+  "fromPath":"/embedded-bi/resource-migration/migrate-data-sources-online/#internal-site",
+  "toPath":"/resource-migration/migrate-data-sources-online/#internal-site"
+  },{
+  "fromPath":"/embedded-bi/resource-migration/migrate-data-sources-online/#external-site",
+  "toPath":"/resource-migration/migrate-data-sources-online/#external-site"
+  },{
+  "fromPath":"/embedded-bi/resource-migration/migrate-data-sources-online/#manage-published-data-sources",
+  "toPath":"/resource-migration/migrate-data-sources-online/#manage-published-data-sources"
+  },{
+  "fromPath":"/embedded-bi/resource-migration/migrate-data-sources-online/#synchronize-data-source",
+  "toPath":"/resource-migration/migrate-data-sources-online/#synchronize-data-source"
+  },{
+  "fromPath":"/embedded-bi/resource-migration/migrate-data-sources-online/#information-of-published-data-source",
+  "toPath":"/resource-migration/migrate-data-sources-online/#information-of-published-data-source"
+  },{
+  "fromPath":"/embedded-bi/resource-migration/migrate-data-sources-online/#publish-history",
+  "toPath":"/resource-migration/migrate-data-sources-online/#publish-history"
+  },
+  {
+  "fromPath":"/embedded-bi/resource-migration/migrate-data-sources-online/#remove-publish-data-source",
+  "toPath":"/resource-migration/migrate-data-sources-online/#remove-publish-data-source"
+  },{
+  "fromPath":"/embedded-bi/resource-migration/migrate-data-sources-online/#lock-and-unlock-data-source",
+  "toPath":"/resource-migration/migrate-data-sources-online/#lock-and-unlock-data-source"
+  },
+  {
+  "fromPath":"/embedded-bi/resource-migration/migrate-data-sources-online/#disable-synchronization-of-publish-data-source",
+  "toPath":"/resource-migration/migrate-data-sources-online/#disable-synchronization-of-publish-data-source"
+  },
+  {
+  "fromPath":"/embedded-bi/resource-migration/migrate-dashboards-offline/",
+  "toPath":"/resource-migration/migrate-dashboards-offline/"
+  },
+  {
+    "fromPath":"/embedded-bi/resource-migration/",
+    "toPath":"/resource-migration/"
+  },
+  {
+  "fromPath":"/embedded-bi/resource-migration/migrate-dashboards-offline/download-dashboards/",
+  "toPath":"/resource-migration/migrate-dashboards-offline/download-dashboards/"
+  },
+  {
+  "fromPath":"/embedded-bi/resource-migration/migrate-dashboards-offline/download-dashboards/#prepare-dashboards-for-download",
+  "toPath":"/resource-migration/migrate-dashboards-offline/download-dashboards/#prepare-dashboards-for-download"
+  },
+  {
+  "fromPath":"/embedded-bi/resource-migration/migrate-dashboards-offline/download-dashboards/#download-the-dashboard-file-from-offline-page",
+  "toPath":"/resource-migration/migrate-dashboards-offline/download-dashboards/#download-the-dashboard-file-from-offline-page"
+  },
+  {
+  "fromPath":"/embedded-bi/resource-migration/migrate-dashboards-offline/download-dashboards/#download-the-dashboard-file",
+  "toPath":"/resource-migration/migrate-dashboards-offline/download-dashboards/#download-the-dashboard-file"
+  },
+  {
+  "fromPath":"/embedded-bi/resource-migration/migrate-dashboards-offline/download-dashboards/#check-the-status-of-the-downloaded-dashboards",
+  "toPath":"/resource-migration/migrate-dashboards-offline/download-dashboards/#check-the-status-of-the-downloaded-dashboards"
+  },
+  {
+  "fromPath":"/embedded-bi/resource-migration/migrate-dashboards-offline/download-dashboards/#download-permissions",
+  "toPath":"/resource-migration/migrate-dashboards-offline/download-dashboards/#download-permissions"
+  },
+  {
+  "fromPath":"/embedded-bi/resource-migration/migrate-dashboards-offline/download-dashboards/#granting-download-permission-from-the-dashboard-listing-page",
+  "toPath":"/resource-migration/migrate-dashboards-offline/download-dashboards/#granting-download-permission-from-the-dashboard-listing-page"
+  },
+  {
+  "fromPath":"/embedded-bi/resource-migration/migrate-dashboards-offline/download-dashboards/#granting-download-permission-from-the-users-or-groups-manage-permission-page",
+  "toPath":"/resource-migration/migrate-dashboards-offline/download-dashboards/#granting-download-permission-from-the-users-or-groups-manage-permission-page"
+  },
+  {
+  "fromPath":"/embedded-bi/resource-migration/migrate-dashboards-offline/download-dashboards/#limitations-of-oauth-data-sources",
+  "toPath":"/resource-migration/migrate-dashboards-offline/download-dashboards/#limitations-of-oauth-data-sources"
+  },
+  {
+  "fromPath":"/embedded-bi/resource-migration/migrate-dashboards-offline/download-dashboards/#limitations-of-google-bigquery",
+  "toPath":"/resource-migration/migrate-dashboards-offline/download-dashboards/#limitations-of-google-bigquery"
+  },
+  {
+  "fromPath":"/embedded-bi/resource-migration/migrate-dashboards-offline/download-dashboards/#access-token-validation-for-dashboard-upload-in-google-bigquery",
+  "toPath":"/resource-migration/migrate-dashboards-offline/download-dashboards/#access-token-validation-for-dashboard-upload-in-google-bigquery"
+  },
+  {
+  "fromPath":"/embedded-bi/resource-migration/migrate-dashboards-offline/download-dashboards/#authorization-requirement-for-uploading-google-bigquery-dashboard-to-other-sites",
+  "toPath":"/resource-migration/migrate-dashboards-offline/download-dashboards/#authorization-requirement-for-uploading-google-bigquery-dashboard-to-other-sites"
+  },
+  {
+  "fromPath":"/embedded-bi/resource-migration/migrate-dashboards-offline/download-dashboards/#limitations-of-changing-sql-data-sources-mode-during-dashboard-upload",
+  "toPath":"/resource-migration/migrate-dashboards-offline/download-dashboards/#limitations-of-changing-sql-data-sources-mode-during-dashboard-upload"
+  },
+  {
+  "fromPath":"/embedded-bi/resource-migration/migrate-dashboards-offline/download-dashboards/#inability-to-upload-dashboard-in-sqlite-extract-mode",
+  "toPath":"/resource-migration/migrate-dashboards-offline/download-dashboards/#inability-to-upload-dashboard-in-sqlite-extract-mode"
+  },
+  {
+  "fromPath":"/embedded-bi/resource-migration/migrate-dashboards-offline/upload-dashboards/",
+  "toPath":"/resource-migration/migrate-dashboards-offline/upload-dashboards/"
+  },
+  {
+  "fromPath":"/embedded-bi/resource-migration/migrate-dashboards-offline/upload-dashboards/#upload-dashboards-in-the-bold-bi-application",
+  "toPath":"/resource-migration/migrate-dashboards-offline/upload-dashboards/#upload-dashboards-in-the-bold-bi-application"
+  },
+  {"fromPath":"/embedded-bi/resource-migration/migrate-dashboards-offline/upload-dashboards/#prepare-dashboards-for-uploading",
+  "toPath":"/resource-migration/migrate-dashboards-offline/upload-dashboards/#prepare-dashboards-for-uploading"},
+  {"fromPath":"/embedded-bi/resource-migration/migrate-dashboards-offline/upload-dashboards/#updating-the-dashboard-files-for-uploading",
+  "toPath":"/resource-migration/migrate-dashboards-offline/upload-dashboards/#updating-the-dashboard-files-for-uploading"},
+  {"fromPath":"/embedded-bi/resource-migration/migrate-dashboards-offline/upload-dashboards/#updating-the-dashboard-information",
+  "toPath":"/resource-migration/migrate-dashboards-offline/upload-dashboards/#updating-the-dashboard-information"},
+  {"fromPath":"/embedded-bi/resource-migration/migrate-dashboards-offline/upload-dashboards/#updating-the-data-source-information",
+  "toPath":"/resource-migration/migrate-dashboards-offline/upload-dashboards/#updating-the-data-source-information"},
+  {"fromPath":"/embedded-bi/resource-migration/migrate-dashboards-offline/upload-dashboards/#configure-the-data-source",
+  "toPath":"/resource-migration/migrate-dashboards-offline/upload-dashboards/#configure-the-data-source"},
+  {"fromPath":"/embedded-bi/resource-migration/migrate-dashboards-offline/upload-dashboards/#map-to-an-existing-data-source",
+  "toPath":"/resource-migration/migrate-dashboards-offline/upload-dashboards/#map-to-an-existing-data-source"},
+  {"fromPath":"/embedded-bi/resource-migration/migrate-dashboards-offline/upload-dashboards/#user-interface-indications",
+  "toPath":"/resource-migration/migrate-dashboards-offline/upload-dashboards/#user-interface-indications"},
+  {"fromPath":"/embedded-bi/resource-migration/migrate-dashboards-offline/upload-dashboards/#working-with-upload-drafts",
+  "toPath":"/resource-migration/migrate-dashboards-offline/upload-dashboards/#working-with-upload-drafts"},
+  {"fromPath":"/embedded-bi/resource-migration/migrate-dashboards-offline/upload-dashboards/#uploading-the-dashboards",
+  "toPath":"/resource-migration/migrate-dashboards-offline/upload-dashboards/#uploading-the-dashboards"
+  },
+  {"fromPath":"/embedded-bi/resource-migration/migrate-dashboards-offline/upload-dashboards/#configure-the-web-data-source",
+  "toPath":"/resource-migration/migrate-dashboards-offline/upload-dashboards/#configure-the-web-data-source"
+  },
+  {"fromPath":"/embedded-bi/resource-migration/migrate-dashboards-offline/upload-dashboards/#configure-the-file-type-data-source",
+  "toPath":"/resource-migration/migrate-dashboards-offline/upload-dashboards/#configure-the-file-type-data-source"
+  },
+  {"fromPath":"/embedded-bi/resource-migration/migrate-dashboards-offline/upload-dashboards/#configure-web-data-source-with-oauth2-authentication",
+  "toPath":"/resource-migration/migrate-dashboards-offline/upload-dashboards/#configure-web-data-source-with-oauth2-authentication"
+  },
+  {
+  "fromPath":"/embedded-bi/resource-migration/migrate-dashboards-offline/upload-dashboards/#configure-the-drive-data-source",
+  "toPath":"/resource-migration/migrate-dashboards-offline/upload-dashboards/#configure-the-drive-data-source"
+  },
+  {"fromPath":"/embedded-bi/resource-migration/migrate-dashboards-offline/upload-dashboards/#auto-map-data-source",
+  "toPath":"/resource-migration/migrate-dashboards-offline/upload-dashboards/#auto-map-data-source"
+  }
+]

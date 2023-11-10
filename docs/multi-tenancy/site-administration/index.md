@@ -14,7 +14,7 @@ You can explore the Site Administration in the details below:
 
 [Rebranding](/multi-tenancy/site-administration/rebranding/)
 
-[Embed Settings](/embedded-bi/site-administration/embed-settings/)
+[Embed Settings](/site-administration/embed-settings/)
 
 [Email Settings](/multi-tenancy/site-administration/email-settings/)
 
@@ -29,3 +29,5 @@ You can explore the Site Administration in the details below:
 [Manage Localization](/multi-tenancy/site-administration/manage-localization/)
 
 [Azure Active Directory B2C](/multi-tenancy/site-administration/authentication/azure-b2c-settings/)
+
+[API Reference](/multi-tenancy/api-reference/)

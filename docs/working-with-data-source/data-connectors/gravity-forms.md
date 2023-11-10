@@ -93,4 +93,4 @@ For more information on the API endpoints available for this data source, refer 
 
 [Editing a Data Connection](/working-with-data-source/editing-a-data-connection/)   
 
-[Dashboard Designer Walkthrough](/cloud-bi/getting-started/bold-bi-walk-through/)
+[Dashboard Designer Walkthrough](/getting-started/creating-dashboard/)

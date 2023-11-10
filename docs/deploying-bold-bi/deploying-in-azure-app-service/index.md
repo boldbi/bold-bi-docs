@@ -4,7 +4,6 @@ title: Deploying Bold BI in Azure App Service | Bold BI Docs
 description: Learn how to deploy Bold BI application in Azure App service and know its prerequisites, recommended specifications, and upgrading to the latest version.
 platform: bold-bi
 documentation: ug
-lang: en
 ---
 
 # Deploying Bold BI Application in Azure App Service

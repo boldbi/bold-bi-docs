@@ -6,7 +6,7 @@ canonical: "/visualizing-data/visualization-widgets/number-card/"
 platform: bold-bi
 control: Number Card
 documentation: ug
-lang: en
+
 ---
 
 # Configuring and formatting Number card with Bold BI
@@ -647,4 +647,4 @@ This allows you to pin the widget.
 
 ## Related links
 
-Blog post - <a href="https://www.boldbi.com/blog/turn-on-insights-using-the-right-card-widget" target="_blank">https://www.boldbi.com/blog/turn-on-insights-using-the-right-card-widget</a>
+Blog post - <a href="https://www.boldbi.com/blog/turn-on-insights-using-the-right-card-widget" target="_blank">Turn on Insights Using the Right Card Widget</a>

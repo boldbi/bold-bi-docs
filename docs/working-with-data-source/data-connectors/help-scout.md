@@ -28,7 +28,7 @@ To configure the HelpScout data source, follow the below steps:
   ![Choose data source from server](/static/assets/working-with-datasource/data-connectors/images/help-scout/ChooseDS.png)
 
 ## Authentication with Help Scout
-For the BoldBI enterprise version, the site admin should get the [OAuth credentials(Client ID and Client secret)](#steps-to-generate-client-id-and-secret) from Help Scout and [set up OAuth](/working-with-data-source/connection-settings/oauth-configuration/) for the HelpScout connector in BoldBI.
+For the BoldBI enterprise version, the site admin should get the [OAuth credentials(Client ID and Client secret)](#steps-to-generate-client-id-and-secret) from Help Scout and [set up OAuth](/site-administration/data-connector-settings/oauth-configuration/) for the HelpScout connector in BoldBI.
 
 Use the following steps to authenticate with the Help Scout web service:
 
@@ -37,7 +37,7 @@ Use the following steps to authenticate with the Help Scout web service:
    > **NOTE:**  If the permission is denied, the account will not be accessible from the dashboard.
 3. Set a name to identify the account and click **Next**. 
 4. You have now successfully authorized your connection. Click **Connect** to continue with the data source connection.
-5. To connect using the already connected account, refer to the [Connected Accounts](/cloud-bi/working-with-data-source/data-connectors/help-scout/#connected-accounts-for-oauth-data-sources).
+5. To connect using the already connected account, refer to the [Connected Accounts](/working-with-data-source/data-connectors/help-scout/#connected-accounts-for-oauth-data-sources).
    > **NOTE:**  To connect with a new account click **Connect New Account**.
 ## Create a Help Scout data source
 Once you click the data source, the NEW DATA SOURCE configuration panel opens. Follow these steps to create a Help Scout data source.
@@ -53,7 +53,7 @@ Once you click the data source, the NEW DATA SOURCE configuration panel opens. F
 
     ![Data source preview](/static/assets/working-with-datasource/data-connectors/images/help-scout/connect.png)
 
-You can also edit the connection information set using the [Edit Connection](/cloud-bi/working-with-data-source/editing-a-data-connection/) option.
+You can also edit the connection information set using the [Edit Connection](/working-with-data-source/editing-a-data-connection/) option.
 
 #### Additional information
 <table width="600">
@@ -109,7 +109,7 @@ If you have already logged into the account and authenticated with a web data so
 
    ![OAuth](/static/assets/working-with-datasource/data-connectors/images/help-scout/authenticate.png)
 
-You can edit, delete, and re-authorize this account from the [Connected Accounts](https://help.boldbi.com/cloud-bi/working-with-data-source/working-with-connected-accounts/) page.
+You can edit, delete, and re-authorize this account from the [Connected Accounts](https://help.boldbi.com/working-with-data-source/working-with-connected-accounts/) page.
 
    ![Manage Accounts](/static/assets/working-with-datasource/data-connectors/images/help-scout/ManageDS.png)
 
@@ -129,10 +129,10 @@ You can edit, delete, and re-authorize this account from the [Connected Accounts
 ![Data source preview](/static/assets/working-with-datasource/data-connectors/images/help-scout/appcredentials.png)
 
 ## Related Links
-[Data Transformation](/cloud-bi/working-with-data-source/transforming-data/joining-table/)
+[Data Transformation](/working-with-data-source/transforming-data/joining-table/)
 
-[Editing a Data Connection](/cloud-bi/working-with-data-source/editing-a-data-connection/)   
+[Editing a Data Connection](/working-with-data-source/editing-a-data-connection/)   
 
-[Dashboard Designer Walkthrough](/cloud-bi/getting-started/quick-start/)
+[Dashboard Designer Walkthrough](/getting-started/creating-dashboard/)
 
 [Help Scout Integration](https://www.boldbi.com/integrations/help-scout?utm_source=syncfusion&utm_medium=documentation&utm_campaign=boldbihelpscoutintegration)

@@ -5,7 +5,7 @@ description: Learn how to create the user filter in Bold BI Embedded through map
 canonical: "/working-with-data-source/user-filter/user-filter-advanced-data-source-mode/"
 platform: bold-bi
 documentation: ug
-lang: en
+
 ---
 
 # User Filter Modes
@@ -17,7 +17,7 @@ There are two kinds of modes present in User Filter.
 
 ## Configure Data Source Mode
 
-Lets consider our [Hotel Revenue Management Dashboard](https://www.boldbi.com/solutions/hospitality/hotel-revenue-management-dashboard), if the staffs or managers handling each region is more dynamic that the managers will be shuffled every 3 months, then the manual mode filter will require updating the user filter settings every 3 months. This will lead to errors if an update is not done on the right time.
+Lets consider our <a href="https://www.boldbi.com/dashboard-examples/hospitality/hotel-revenue-management-dashboard" target="_blank">Hotel Revenue Management Dashboard</a>, if the staffs or managers handling each region is more dynamic that the managers will be shuffled every 3 months, then the manual mode filter will require updating the user filter settings every 3 months. This will lead to errors if an update is not done on the right time.
 
 This can be overcome by using the Data Source mode. In this mode we can have a mapping data source that will hold the details of the user along with the region that they server. So, when the region the manager or the staff is service is changed only the mapping data source data needs to be updated and the dashboard will be reflected with the changes automatically.
 

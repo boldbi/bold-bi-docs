@@ -5,7 +5,7 @@ description: Learn how to sort the widget-bounded data based on a field and visu
 canonical: "/visualizing-data/working-with-widgets/advanced-sorting/"
 platform: bold-bi
 documentation: ug
-lang: en
+
 ---
 
 # Sorting

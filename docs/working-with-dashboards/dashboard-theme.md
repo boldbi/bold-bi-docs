@@ -4,7 +4,7 @@ title: Color Themes for Dashboards – Embedded BI | Bold BI Docs
 description: Learn about the built-in color themes available in Bold BI Embedded. Also, know how to create a custom theme and apply to the dashboard.
 platform: bold-bi
 documentation: ug
-lang: en
+
 ---
 
 # Dashboard Themes in Bold BI Enterprise edition
@@ -37,7 +37,7 @@ The browser will be remembering the last applied theme and all the dashboards wi
 
 By default, the dashboard theme is enabled in the Bold BI Enterprise edition dashboards. 
 
-[This](/site-administration/dashboard-settings/enable-or-disable-dashboard-theme) document section explains how to enable or disable the dashboard theme option in the Bold BI version 4.1.36 or later. 
+[This](/site-administration/dashboard-settings/enable-or-disable-dashboard-theme/) document section explains how to enable or disable the dashboard theme option in the Bold BI version 4.1.36 or later. 
 
 However, you can turn off the feature by changing the settings in the Bold BI version below 4.1.36 with the following mentioned steps:
 

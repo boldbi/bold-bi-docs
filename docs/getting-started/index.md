@@ -4,7 +4,7 @@ title: Getting Started with Bold BI | Bold BI Documentation
 description: Explore the useful links to get started with Bold BI deployed in your server. Create powerful dashboards that suit your business needs.
 platform: bold-bi
 documentation: ug
-lang: en
+
 ---
 
 # Getting Started

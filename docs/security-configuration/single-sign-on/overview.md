@@ -4,7 +4,7 @@ title: Single Sign-On Authentication – Overview | Bold BI Docs
 description: Learn the benefits of Single Sign-On (SSO) authentication, and how to enable SSO for OAuth 2.0 and OpenID Connect identity providers with Bold BI.
 platform: bold-bi
 documentation: ug
-lang: en
+
 ---
 
 # What is Single sign-on

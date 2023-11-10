@@ -131,3 +131,17 @@ Click `Actions` in the grid context menu and select `Lock Edit` to lock the edit
 Click `Actions` in the grid context menu and select `Unlock Edit` to unlock the edit support for the published data sources.
 
 ![Unlock Edit Action](/static/assets/resource-migration/migrate-data-sources-online/images/publish-datasource-unlockedit.png)
+
+### Disable Synchronization of publish data source
+
+The synchronization of published data sources from source site can be disabled by enabling `Lock Resource Synchronization` in the dashboard settings in target site.
+
+Learn how to disable synchronization for the published data sources [here](/site-administration/dashboard-settings/lock-resource-synchronization/).
+
+Once these settings enabled in target site, synchronization of the published data sources from source site gets failed. Show the failed status in the grid.
+
+![Failed-status-grid](/static/assets/resource-migration/migrate-data-sources-online/images/datasource-failed-status.png)
+
+The failure reason will be displayed as `Resource synchronization is locked in target site` when click on `Failed` status from the publish history dialog.
+
+![Failure-info](/static/assets/resource-migration/migrate-data-sources-online/images/failure-info-history.png)

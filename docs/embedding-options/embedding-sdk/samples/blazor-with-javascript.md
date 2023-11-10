@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Embedded SDK v3.3.40 Blazor with javascript Sample | Bold BI Docs
-description: Explore the JavaScript-based embedding with Blazor sample application, which has been supported by Bold BI since v3.3.40.
+title: Embedding Analytics with Blazor and JavaScript | Bold BI Docs
+description: Learn how to embed an analytics dashboard with Blazor and JavaScript application using Bold BI Embed SDK and try it yourself.
 platform: bold-bi
 documentation: ug
 ---
@@ -198,7 +198,7 @@ The sample has been provided in the following sections for `Blazor Server`, whic
      ```js 
        <div id="dashboard"></div>
        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-       <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v6.7.11/boldbi-embed.js"></script>
+       <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v6.16.12/boldbi-embed.js"></script>
        <script type="text/javascript">
              var rootUrl = "@GlobalAppSettings.EmbedDetails.ServerUrl";
              var siteIdentifier = "@GlobalAppSettings.EmbedDetails.SiteIdentifier";

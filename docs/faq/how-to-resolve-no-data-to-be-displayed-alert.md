@@ -53,7 +53,7 @@ To overcome the issue, Ensure that the filtered value matches the current dashbo
 
 The [User Filter](/working-with-data-source/user-filter/) provides row level security for the data used for creating the dashboards. So that we can restrict the data that will be visible to each user. 
 
-Lets consider the [Hotel Revenue Management Dashboard](https://www.boldbi.com/solutions/hospitality/hotel-revenue-management-dashboard). In the dashboard we can restrict the revenue data for the hotels in different geographical area so that the managers and the staffs will be able to see only the data of the region that they are handling.
+Lets consider the [Hotel Revenue Management Dashboard](https://www.boldbi.com/dashboard-examples/hospitality/hotel-revenue-management-dashboard). In the dashboard we can restrict the revenue data for the hotels in different geographical area so that the managers and the staffs will be able to see only the data of the region that they are handling.
 
 So, while applying the user filter, please make sure you have applied the filters properly for all the required users.
 

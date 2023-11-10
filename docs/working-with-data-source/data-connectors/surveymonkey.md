@@ -4,7 +4,7 @@ title: SurveyMonkey - Cloud BI Connector | Bold BI Documentation
 description: Learn how to connect SurveyMonkey web service through REST API endpoint with cloud-hosted Bold BI and create data source for widget configuration.
 platform: bold-bi
 documentation: ug
-lang: en
+
 ---
 
 # Connecting Bold BI to SurveyMonkey data source
@@ -27,6 +27,30 @@ To configure the SurveyMonkey data source, follow the below steps:
 
    ![Choose data source from server](/static/assets/working-with-datasource/data-connectors/images/SurveyMonkey/ChooseDS_Server.png)
 
+
+## How to Obtain the Surveymonkey Client ID and Client Secret
+> **Note:** SurveyMonkey OAuth credentials are required for the Bold BI Embedded Analytics but not needed in the Cloud Analytics Server.
+
+1. Log in to [developer.surveymonkey.com](https://developer.surveymonkey.com/).
+2. Click the **Create New App** button.
+   ![create new app](/static/assets/working-with-datasource/data-connectors/images/SurveyMonkey/createnewapp.png)
+
+3. Enter the required details and click the **Create App** button.
+   ![app details](/static/assets/working-with-datasource/data-connectors/images/SurveyMonkey/appdetails.png)
+
+4. Now, go to the **SETTINGS** window, enter the **OAuth Redirect URL**, then click the Submit Changes button.
+
+   ![settings window](/static/assets/working-with-datasource/data-connectors/images/SurveyMonkey/settingswindow.png)
+
+>**NOTE**: The Bold BI redirect URL should be added in the proper format. Please refer to this URL structure, https://hostname/bi/designer/v1.0/oauth/agent.
+
+5. Scroll down and select the scopes based on your requirements, and click the **Update Scopes** button.
+   ![update scopes](/static/assets/working-with-datasource/data-connectors/images/SurveyMonkey/scopes.png)
+
+6. You will find the **Client Id and Client Secret** in the **Credentials** section of the **SETTINGS** window.
+   ![create new app](/static/assets/working-with-datasource/data-connectors/images/SurveyMonkey/credentials.png)
+
+>**NOTE**: Save the client ID and client secret in Bold BI by following the [OAuth Configuration](/site-administration/data-connector-settings/oauth-configuration/) guide for more details.
 
 ## Create SurveyMonkey data source
 Once you click the data source, the NEW DATA SOURCE configuration panel opens. Follow the below steps to create SurveyMonkey data source.
@@ -102,4 +126,4 @@ https://api.surveymonkey.com/v3/survey_templates
 
 [Dashboard Designer Walkthrough](/getting-started/creating-dashboard/)
 
-[Unleash Actionable Insights from Embedded SurveyMonkey Analytics](https://www.boldbi.com/blog/unleash-actionable-insights-from-embedded-surveymonkey-analytics)
+<a href="https://www.boldbi.com/blog/unleash-actionable-insights-from-embedded-surveymonkey-analytics" target="_blank">Unleash Actionable Insights from Embedded SurveyMonkey Analytics</a>

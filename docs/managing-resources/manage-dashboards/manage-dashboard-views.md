@@ -5,7 +5,7 @@ description: Learn how to open, add, update, share, delete dashboard views and m
 canonical: "/managing-resources/manage-dashboards/manage-dashboard-views/" 
 platform: bold-bi
 documentation: ug
-lang: en
+
 ---
 
 # Manage Dashboard Views
@@ -117,7 +117,7 @@ The dashboard view can be set as default view in two ways either while saving th
 
     ![Set default](/static/assets/managing-resources/manage-dashboards/images/default-view.png#width=65%)
 
-> **NOTE:** To set a dashboard view as default view for the dashboard, the `Default view` option in `Dashboard settings` must be enabled. Learn more about default views [here](/site-administration/dashboard-settings/default-views).
+> **NOTE:** To set a dashboard view as default view for the dashboard, the `Default view` option in `Dashboard settings` must be enabled. Learn more about default views [here](/site-administration/dashboard-settings/default-views/).
 
 ## Remove a default view for the dashboard
 

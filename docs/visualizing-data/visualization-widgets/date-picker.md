@@ -6,7 +6,7 @@ canonical: "/visualizing-data/visualization-widgets/date-picker/"
 platform: bold-bi
 control: Date Picker
 documentation: ug
-lang: en
+
 ---
 
 # Date Picker

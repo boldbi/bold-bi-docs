@@ -4,7 +4,7 @@ title:  Embedding Analytics Using SDK – Getting Started | Bold BI
 description: Get started with JavaScript-based analytics embedding by knowing how to use Bold BI inside your html page, implement authorize server and get embed secret key.
 platform: bold-bi
 documentation: ug
-lang: en
+
 ---
 
 # Steps to embed Bold BI in your application
@@ -19,7 +19,7 @@ Follow these steps to embed dashboard in your application
 
     ```js
     <head>  
-        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v6.7.11/boldbi-embed.js"></script>
+        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v6.16.12/boldbi-embed.js"></script>
     </head>
     ```
 
@@ -35,7 +35,7 @@ Follow these steps to embed dashboard in your application
 
     You can embed the dashboard using either the dashboard ID or dashboard path like in below samples.
 
-    ### Embed using dashboard ID
+### Embed using dashboard ID
 
     ```js
     <body onload="embedSample();">
@@ -62,7 +62,7 @@ Follow these steps to embed dashboard in your application
     </body>
     ```  
 
-    ### Embed using dashboard path
+### Embed using dashboard path
 
     ```js
     <body onload="embedSample();">
@@ -181,12 +181,12 @@ Follow these steps to embed dashboard in your application
 </code></td>
 </tr>
 <tr>            
-<td><code>v6.7.11(latest)</code></td>            
+<td><code>v6.16.12(latest)</code></td>            
 <td><code>
 
 ```js
 <head> 
-    <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v6.7.11/boldbi-embed.js"></script>
+    <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v6.16.12/boldbi-embed.js"></script>
 </head>
 ```
 
@@ -314,7 +314,7 @@ public string GetEmbedDetails(string embedQuerString, string dashboardServerApiU
 }
 ```
 
-* The `Dashboard Parameter` filter must be started with a double ampersand `&&` in the endpoint. Refer to this [link](/working-with-data-source/configuring-dashboard-parameters/) for more details.   
+* The `Dashboard Parameter` filter must be started with a double ampersand `&&` in the endpoint. Refer to this [link](/working-with-data-source/dashboard-parameter/configuring-dashboard-parameters/) for more details.   
 
 * The `URL Parameter` filter must be started with a single ampersand `&` in the endpoint. Refer to this [link](/working-with-dashboards/preview-dashboard/urlparameters/) for more details.     
 
@@ -389,7 +389,7 @@ ServerUrl - Combination of the `rootURL` and `siteIdentifier`.
  });
  boldbiEmbedInstance.loadDashboard();
 ```
-<code>rootURL</code> - "https://example.boldbi.com/bi"<br>
+<code>rootURL</code> - https://example.boldbi.com/bi <br>
 <code>siteIdentifier</code> - "site/site1"
 
 </td>
@@ -405,7 +405,7 @@ ServerUrl - Combination of the `rootURL` and `siteIdentifier`.
  });
  boldbiEmbedInstance.loadDashboard();
 ```
-<code>rootURL</code> - "https://example.boldbi.com/bi"<br>
+<code>rootURL</code> - https://example.boldbi.com/bi  <br>
 
 </td>
 </tr>
@@ -421,8 +421,8 @@ ServerUrl - Combination of the `rootURL` and `siteIdentifier`.
  });
  boldbiEmbedInstance.loadDashboard();
 ```
-<code>rootURL</code> - "https://example.boldbi.com/bold/bi"<br>
-<code>Main application</code> - "https://example.boldbi.com/"<br>
+<code>rootURL</code> - https://example.boldbi.com/bi <br>
+<code>Main application</code> - https://example.boldbi.com/ <br>
 <code>Sub application</code> - "bold/bi"<br>
 <code>siteIdentifier</code> - "site/site1"
 
@@ -439,8 +439,8 @@ ServerUrl - Combination of the `rootURL` and `siteIdentifier`.
  });
  boldbiEmbedInstance.loadDashboard();
 ```
-<code>rootURL</code> - "https://example.boldbi.com/bold/bi"<br>
-<code>Main application</code> - "https://example.boldbi.com/"<br>
+<code>rootURL</code> - https://example.boldbi.com/bi  <br>
+<code>Main application</code> - https://example.boldbi.com/" <br>
 <code>Sub application</code> - "bold/bi"
 
 </td>
@@ -456,8 +456,8 @@ ServerUrl - Combination of the `rootURL` and `siteIdentifier`.
  });
  boldbiEmbedInstance.loadDashboard();
 ```
-<code>rootURL</code> - "https://example.boldbi.com/bold/test/bi"<br>
-<code>Main application</code> - "https://example.boldbi.com/"<br>
+<code>rootURL</code> - https://example.boldbi.com/bold/test/bi <br>
+<code>Main application</code> -"https://example.boldbi.com/" <br>
 <code>Sub applications</code> - "bold/test/bi"<br>
 <code>siteIdentifier</code> - "site/site1"
 
@@ -474,8 +474,8 @@ ServerUrl - Combination of the `rootURL` and `siteIdentifier`.
  });
  boldbiEmbedInstance.loadDashboard();
 ```
-<code>rootURL</code> - "https://example.boldbi.com/bold/test/bi"<br>
-<code>Main application</code> - "https://example.boldbi.com/"<br>
+<code>rootURL</code> -  https://example.boldbi.com/bold/test/bi <br>
+<code>Main application</code> - https://example.boldbi.com/  <br>
 <code>Sub applications</code> - "bold/test/bi"
 
 </td>

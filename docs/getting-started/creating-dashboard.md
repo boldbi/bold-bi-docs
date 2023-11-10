@@ -38,7 +38,7 @@ Bold BI dashboard default canvas size is `48 columns x 24 rows`. Now we can add 
 
 ![scrollable info](/static/assets/getting-started/images/scrollableInfo.png)
 
-To add new rows, increase the row count and then, click **Done** as shown in the following image.
+To add new rows, increase the row count and then, click **Done**. When attempting to add 40 or more rows additionally, it could potentially impact the dashboard's performance. In such cases, an alert message will be displayed, as mentioned in the image below.
 
 ![add rows](/static/assets/getting-started/images/update_rows.png)
 

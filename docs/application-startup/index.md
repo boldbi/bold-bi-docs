@@ -4,7 +4,6 @@ title: Embedded Bold BI Application Startup | Bold BI Docs
 description: Learn how to activate the Embedded Bold BI license and configure the Bold BI embedded application based on its version, login, and administration of Bold BI.
 platform: bold-bi
 documentation: ug
-lang: en
 ---
 
 # Application Startup
