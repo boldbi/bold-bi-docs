@@ -8,9 +8,9 @@ documentation: ug
 
 # Look and Feel
 
-This section explains how to customize font, application theme, and dashboard theme in the Bold BI application.
+This section explains how to customize the font, application theme, and dashboard theme in the Bold BI application.
 
-Here, you can explore the details.
+Here, you can explore the details:
 
 [Font](/multi-tenancy/site-administration/look-and-feel-settings/font/)
 

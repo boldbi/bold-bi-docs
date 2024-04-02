@@ -4,23 +4,22 @@ title:  Embed SDK ASP.NET Core Application | Bold BI Documentation
 description: Find ASP.NET Core sample for embedding Bold BI. List all the dashboards and render the dashboard based on your selection after passing the authorization.
 platform: bold-bi
 documentation: ug
-
 ---
 
 # Bold BI Dashboards Embedding in ASP.NET Core Sample with Embedded SDK
 
-We have created ASP.NET Core sample with Embedded SDK, here we could listing all the dashboards and render the dashboard based on your selection after passing the authorization.
+We have created an ASP.NET Core sample using the Embedded SDK. Here, we can list all the dashboards and render the selected dashboard after passing the authorization.
 
-> **NOTE:**  The best way to get started would be to read the [Getting Started](/getting-started/embedding-in-your-application/) section of the documentation to start using first. The [Getting Started](/getting-started/embedding-in-your-application/) guide gives just enough information that you need to know before working on the sample.  
+> **NOTE:**  The best way to get started would be to read the [Getting Started](/getting-started/embedding-in-your-application/) section of the documentation first. The [Getting Started](/getting-started/embedding-in-your-application/) guide provides just enough information that you need to know before working on the sample.
 
 ## How to run the sample
 
-1. Please download the ASP.NET Core sample from <a href="https://onpremise-demo.boldbi.com/getting-started/asp-net-core/sample.zip" target="_blank">here</a>.  
+1. Please download the ASP.NET Core sample from [here](https://github.com/boldbi/samples/tree/master/v3.2.16/asp-net-core).  
 
-2. In ASP.NET Core sample, you can find the EmbedProperties class file in Models folder.
+2. In the ASP.NET Core sample, you can find the EmbedProperties class file in the Models folder.
 ![Properties](/static/assets/javascript/sample/images/core-properties.png)
 
-3. In `EmbedProperties.cs`, you need to set the following properties.  
+3. In `EmbedProperties.cs`, you need to set the following properties. 
 
 <meta charset="utf-8"/>
 <table>
@@ -53,19 +52,19 @@ We have created ASP.NET Core sample with Embedded SDK, here we could listing all
 </table>
 
 
-4. You could get your Embed Secret key from administrator setting section. Please refer this [link](/site-administration/embed-settings/) for more details.  
+4. You can obtain your Embed Secret key from the administrator settings section. Please refer to this [link](/site-administration/embed-settings/) for more details.  
 
-5. Then run your ASP.NET Core sample.
+5. Then, run your ASP.NET Core sample.
 
 ## How this sample works
 
-1. Based on the values provided in the `EmbedProperties.cs`, we would get the user token and validate it, then could get the dashboards list from server.
+1. Based on the values provided in the `EmbedProperties.cs`, we would obtain the user token and validate it. Afterward, we could retrieve the list of dashboards from the server.
 
-2. In `HomeController.cs`, we have added GetToken() method and GetDashboards() action, which has been called when initializing the DOM in `Index.html`.
+2. In the `HomeController.cs` file, we have added the GetToken() method and the GetDashboards() action, which are called when initializing the DOM in `Index.html`.
 ![Initializing the DOM in Core](/static/assets/javascript/sample/images/core-home-getdashboard.png)
 
-3. When you selecting the dashboard to render, we would authorize the server url by calling the GetEmbedDetails action with provided EmbedProperties values.
+3. When you are selecting the dashboard to render, we will authorize the server URL by calling the GetEmbedDetails action with the provided EmbedProperties values.
 ![Server Authorization in Core](/static/assets/javascript/sample/images/core-home-getdetails.png)
 
-4. In above authorization, we have generated SignatureUrl with provided EmbedSecret key and validate embed details in Bold BI. Then only dashboard would be rendered in viewer-section of `index.cshtml`.
+4. In the above authorization, we have generated a SignatureUrl using the provided EmbedSecret key and validated the embed details in Bold BI. Only then will the dashboard be rendered in the viewer section of `index.cshtml`.
 

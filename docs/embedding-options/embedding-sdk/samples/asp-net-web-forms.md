@@ -8,9 +8,9 @@ documentation: ug
 
 # Bold BI Dashboards embedding in ASP.NET Web Forms using Embedded SDK
 
-A GitHub link has been provided to [get](https://github.com/boldbi/aspnet-web-forms-sample) the sample application, which demonstrates the dashboard rendering with the list of dashboards available in your Bold BI server and followed by steps to create new embedding application in the `ASP.NET Web Forms` on your own.    
+A GitHub link has been provided to [get](https://github.com/boldbi/aspnet-web-forms-sample) the sample application, which demonstrates the rendering of the dashboard with a list of available dashboards on your Bold BI server. This is followed by steps to create a new embedding application in `ASP.NET Web Forms` on your own.    
 
-> **NOTE:** The best way to get started would be reading the [Getting Started](/getting-started/embedding-in-your-application/) section of the documentation to start using first. The `Getting Started` guide gives you enough information that you need to know before working on the sample.  
+> **NOTE:** The best way to get started would be to read the [Getting Started](/getting-started/embedding-in-your-application/) section of the documentation first. The `Getting Started` guide provides you with enough information that you need to know before working on the sample. 
 
  ## Prerequisites
 
@@ -21,16 +21,16 @@ A GitHub link has been provided to [get](https://github.com/boldbi/aspnet-web-fo
 
 1. Please get the [ASP.NET Web Forms](https://github.com/boldbi/aspnet-web-forms-sample) sample from GitHub.
 
-2. Please ensure you have enabled embed authentication on the `embed settings` page. If it is not enabled, refer to the following image or detailed [instructions](https://help.boldbi.com/site-administration/embed-settings/#get-embed-secret-code) to enable it.
+2. Please ensure that you have enabled embed authentication on the `embed settings` page. If it is not enabled, please refer to the following image or detailed [instructions](/site-administration/embed-settings/#get-embed-secret-code) to enable it.
 
     ![Embed Settings](/static/assets/javascript/sample/images/embed-settings.png)
 
-3. To download the `embedConfig.json` file, please follow this [link](https://help.boldbi.com/site-administration/embed-settings/#get-embed-configuration-file) for reference. Additionally, you can refer to the following image for visual guidance.
+3. To download the `embedConfig.json` file, please follow this [link](/site-administration/embed-settings/#get-embed-configuration-file) for reference. Furthermore, you may refer to the accompanying image for visual guidance.
 
    ![EmbedSettings image](/static/assets/javascript/sample/images/embed-settings-download.png)
    ![EmbedConfig Properties](/static/assets/javascript/sample/images/prop-core.png)
  
-4. Copy the downloaded `embedConfig.json` file and paste it into the designated [location](https://github.com/boldbi/aspnet-web-forms-sample/tree/master/BoldBIEmbedSample) within the application. Please ensure you have placed it in the application, as shown in the following image.
+4. Please copy the downloaded `embedConfig.json` file and paste it into the designated [location](https://github.com/boldbi/aspnet-web-forms-sample/tree/master/BoldBIEmbedSample) within the application. Please make sure that you have placed it in the application, as shown in the following image.
 
    ![EmbedConfig image](/static/assets/javascript/sample/images/asp-net-webforms-embed-config.png)
 
@@ -72,7 +72,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/aspnet-web-fo
 
    > **NOTE:** If you are facing an error related to the `bin\roslyn\csc.ex`, it indicates that performing a `clean build` and `rebuild` is necessary.
 
- 6.	The dashboard can be edited in the design mode, and create a new dashboard with the following changes in the `Init()` method.
+ 6.	The dashboard can be edited in design mode and a new dashboard can be created with the following changes in the `Init()` method.
      
        <meta charset="utf-8"/>
        <table>
@@ -124,43 +124,43 @@ A GitHub link has been provided to [get](https://github.com/boldbi/aspnet-web-fo
 
     ![Parsing embed Config](/static/assets/javascript/sample/images/asp-net-webforms-parse-json.png)
 
- 2. The `Init()` function renders the dashboard using the retrieved data from the `embedConfig.json`.
+ 2. The `Init()` function renders the dashboard by using the data retrieved from the `embedConfig.json` file.
 
     ![Dashboard rendering](/static/assets/javascript/sample/images/asp-net-webforms-renderdashboard.png)
 
- 3. Before rendering, the `authorizationUrl` is called, which redirects to the `AuthorizationServer` action in the `Default.aspx`, which generates the `EmbedSignature` using the embed secret from the `embedConfig.json`.
+ 3. Before rendering, the `authorizationUrl` is called, which redirects to the `AuthorizationServer` action in the `Default.aspx` page. This action generates the `EmbedSignature` using the embed secret from the `embedConfig.json` file.
         
     ![Authorize Server URL](/static/assets/javascript/sample/images/asp-net-webforms-authorize.png)
 
- 4. These details will be sent to the Bold BI server and validated there. Once details are validated, the dashboard starts to render.
+ 4. These details will be sent to the Bold BI server and validated there. Once the details are validated, the dashboard will start to render.
 
 ## Steps to create new ASP.NET Web Forms application to embed dashboard
 
  1. Start Visual Studio and click `Create a new project`.
 
- 2. Choose ASP.NET Web Application (.NET Framework), then click `Next.`
+ 2. Choose the ASP.NET Web Application (.NET Framework), and then click `Next.`
 
     ![SelectProject](/static/assets/javascript/sample/images/MVC_framework.png)
 
- 3. Change the project name as you want, then click `Create`.
+ 3. Change the project name as you desire, and then click on `Create`.
 
- 4. Choose Web Forms and Web API, then click `Create`.
+ 4. Choose Web Forms and Web API, and then click `Create`.
 
     ![SelectProject](/static/assets/javascript/sample/images/asp_net_create_project.png)
 
- 5. Please ensure you have enabled embed authentication on the `embed settings` page. If it is not currently enabled, please refer to the following image or detailed [instructions](https://help.boldbi.com/site-administration/embed-settings/#get-embed-secret-code) to enable it.
+ 5. Please ensure that you have enabled embed authentication on the `embed settings` page. If it is not currently enabled, please refer to the following image or detailed [instructions](/site-administration/embed-settings/#get-embed-secret-code) to enable it.
     ![Embed Settings](/static/assets/javascript/sample/images/embed-settings.png)
 
- 6. To download the `embedConfig.json` file, follow this [link](https://help.boldbi.com/site-administration/embed-settings/#get-embed-configuration-file) for reference. Additionally, you can refer to the following image for visual guidance.
+ 6. To download the `embedConfig.json`, please follow this [link](/site-administration/embed-settings/#get-embed-configuration-file) for reference. Furthermore, you can refer to the accompanying image for visual guidance.
    
     ![EmbedSettings image](/static/assets/javascript/sample/images/embed-settings-download.png)
     ![SelectProject](/static/assets/javascript/sample/images/prop-core.png)
 
- 7. Copy the downloaded `embedConfig.json` file and paste it into the designated [location](https://github.com/boldbi/aspnet-web-forms-sample/tree/master/BoldBIEmbedSample) within the application. Please ensure you have placed it in the application, as shown in the following image.
+ 7. Please copy the downloaded `embedConfig.json` file and paste it into the designated [location](https://github.com/boldbi/aspnet-web-forms-sample/tree/master/BoldBIEmbedSample) within the application. Please make sure that you have correctly placed it in the application, as demonstrated in the image below.
 
     ![EmbedConfig image](/static/assets/javascript/sample/images/asp-net-webforms-embed-config.png)
 
- 8. Create the `EmbedClass.cs` class within the models folder. This class should define certain properties used to retrieve dashboard details from the server. Ensure the `System.Runtime.Serialization` and `System` namespaces are included in the `EmbedClass.cs` model file.
+ 8. Create the `EmbedClass.cs` class within the models folder. This class should define specific properties that are used to retrieve dashboard details from the server. Make sure to include the `System.Runtime.Serialization` and `System` namespaces in the `EmbedClass.cs` model file.
 
     ```js
     public class EmbedClass
@@ -189,7 +189,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/aspnet-web-fo
     }
     ```
 
- 9. Create a new model class called `GlobalAppSettings.cs` to define the following properties. These properties will maintain the `embedConfig.json` file object within the `GlobalAppSettings`.
+ 9. Please create a new model class called `GlobalAppSettings.cs` to define the following properties. These properties will store the `embedConfig.json` file object within the `GlobalAppSettings`.
 
      ```js
      public class GlobalAppSettings
@@ -198,7 +198,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/aspnet-web-fo
      }
      ```
 
- 10. Open the `Default.aspx` file and replace the following code in the `<asp:Content>`section. This container can be used to render the dashboard.
+ 10. Please open the `Default.aspx` file and replace the code in the `<asp:Content>` section with the following. This container is used to render the dashboard.
 
      ```js
      <div id="viewer-section">
@@ -207,7 +207,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/aspnet-web-fo
      ```
     
  
- 11. In `Default.aspx.cs`, to get particular dashboard details, define an API `AuthorizationServer()`, which uses the `GetSignatureUrl()` method to generate the algorithm. In this API, the `embedQuerString`,`userEmail`, and the value from the `GetSignatureUrl()` method are appended as the query parameters in the URL to get details of the particular dashboard
+ 11. In `Default.aspx.cs`, to retrieve specific dashboard details, you need to define an API called `AuthorizationServer()`. This API utilizes the `GetSignatureUrl()` method to generate the algorithm. Within this API, the `embedQueryString`, `userEmail`, and the value obtained from the `GetSignatureUrl()` method are appended as query parameters in the URL, enabling the retrieval of the desired dashboard details.
 
      ```js
         [WebMethod()]
@@ -250,7 +250,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/aspnet-web-fo
         }
      ```
 
- 12. The following script is mandatory to render the dashboard. Insert the given code into the `Site.Master` page within the `<head>` section.
+ 12. The following script is necessary to display the dashboard. Insert the provided code into the `Site.Master` page within the `<head>` section.
 
      ```js
         <script src="https://cdn.boldbi.com/embedded-sdk/latest/boldbi-embed.js"></script>
@@ -281,7 +281,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/aspnet-web-fo
      ```
      > **NOTE:** Change `<your project name>` to the name of your project.
     
- 13. In the `<body>` section, include the following, which is used to initialize the method `Init()`.
+ 13. In the `<body>` section, include the following code, which is used to initialize the method `Init()`.
      
      ```js
      <body onload="Init()">
@@ -294,7 +294,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/aspnet-web-fo
      </body>
      ```
 
- 14. Open the `Global.asax.cs` file and include the following code sample.
+ 14. Open the `Global.asax.cs` file and include the code sample provided below.
 
      ```js
         RouteConfig.RegisterRoutes(RouteTable.Routes);
@@ -303,7 +303,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/aspnet-web-fo
         GlobalAppSettings.EmbedDetails = JsonConvert.DeserializeObject<EmbedDetails>(jsonString);
      ```
      
- 15. Rewrite the following code in the `RouteConfig.cs` file located in the `App_Start` folder:
+ 15. Please rewrite the code in the `RouteConfig.cs` file, which is located in the `App_Start` folder.
      
      ```js
       var settings = new FriendlyUrlSettings();
@@ -311,4 +311,4 @@ A GitHub link has been provided to [get](https://github.com/boldbi/aspnet-web-fo
       routes.EnableFriendlyUrls(settings);
      ```
 
- 16. Run your `ASP.NET Web Forms` sample in **Visual Studio**.
+ 16. Please run your `ASP.NET Web Forms` sample in **Visual Studio**.

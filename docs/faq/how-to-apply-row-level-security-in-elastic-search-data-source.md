@@ -13,7 +13,7 @@ Bold BI application allows you to apply row-level security using user filters in
 
 ## Row-level security in Elastic search data source
 
-1.	Refer to the [Connecting Bold BI to Elastic search data source](/working-with-data-source/data-connectors/elastic-search/#connecting-bold-bi-to-elastic-search-data-source) to successfully connect to it.
+1.	Refer to the [Connecting Bold BI to Elastic search data source](/working-with-data-sources/data-connectors/elastic-search/#connecting-bold-bi-to-elastic-search-data-source) to successfully connect to it.
 
 2.	Drag and drop the required table in the data design view page in Bold BI as shown in the following image.             
 

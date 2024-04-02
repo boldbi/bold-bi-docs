@@ -14,12 +14,12 @@ This section explains how to share the current dashboard filtered view without s
 
 ## Steps to be followed for sharing the filtered dashboard without saving it as view.
 
-1. Open any dashboard and apply filters. The filters are written into browser history and you can navigate back and forth to apply or remove them.
+1. Open any dashboard and apply filters. The filters are written into browser history, and you can navigate back and forth to apply or remove them.
 
-2. To share the current state of the dashboard, click on the `Get Link` option like below.
+2. To share the current state of the dashboard, click on the `Get Link` option as shown below.
 
       ![get-link-icon](/static/assets/managing-resources/manage-dashboards/images/get-link-icon.png#width=50%)
 
-3. Get the URL of the dashboard from this dialog box. You can share the dashboard in its current state by copying the URL of the dashboard.     
+3. Get the URL of the dashboard from this dialog box. You can share the dashboard in its current state by copying the URL.  
     
       ![get-link-copy](/static/assets/managing-resources/manage-dashboards/images/get-link-copy.png#width=40%)

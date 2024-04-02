@@ -13,3 +13,5 @@ https://onpremise-demo.boldbi.com/getting-started/asp-net-v3.3/sample.zip
 /site-administration/api-reference/v2.0/api-reference/
 /server-api-reference/v5.0/api-reference
 /server-api-reference/v5.0/try-it-now
+/server-api-reference/v5.0/api-reference/#operation/Administration_UpdateOAuthSettings
+/server-api-reference/v5.0/api-reference/#operation/Administration_UpdateOpenIDSettings

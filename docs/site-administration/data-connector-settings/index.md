@@ -8,10 +8,10 @@ documentation: ug
 
 # Managing Dashboard Settings
 
-This section explains how to configure the user account authorization in the Bold BI data source.
+This section explains how to configure user account authorization in the Bold BI data source.
 
-You can explore the authorization configurations in detail here,
+You can explore the authorization configurations in detail here:
 
 [OAuth Configuration](/site-administration/data-connector-settings/oauth-configuration/)
 
-> **NOTE:** This feature is available in Bold BI Embedded Analytics but not in Cloud Analytics Server.
+> **NOTE:** This feature is available in On-Premises Deployment but not in Syncfusion Managed Cloud Server.

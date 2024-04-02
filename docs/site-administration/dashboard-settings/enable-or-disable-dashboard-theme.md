@@ -8,9 +8,9 @@ documentation: ug
 
 # Using dashboard themes
 
-This section describes how to enable or disable dashboard theme in the dashboard settings.
+This section explains how to enable or disable the dashboard theme in the dashboard settings.
 
-You can enable or disable dashboard theme in the dashboard settings and based on this, `Theme` option will be available in the dashboard. By default, theme settings will be enabled.
+You can enable or disable the dashboard theme in the settings, which will determine whether the `Theme` option is available in the dashboard. By default, theme settings will be enabled.
 
 ![Theming](/static/assets/site-administration/images/theming.png#width=60%)
 

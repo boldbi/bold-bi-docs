@@ -9,7 +9,7 @@ documentation: ug
 
 # Schedule dashboards in the Bold BI
 
-Dashboards can be configured to run at scheduled times, be exported as images, and then mailed to the users in the dashboard server. 
+Dashboards can be configured to run at scheduled times, be exported as images, and then sent to the users on the dashboard server via email.
 
 
 (scheduling is discussed further in the [Manage Schedules section](/managing-resources/manage-schedules/))

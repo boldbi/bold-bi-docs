@@ -51,7 +51,7 @@ To overcome the issue, Ensure that the filtered value matches the current dashbo
 
 ## User Restrictions:
 
-The [User Filter](/working-with-data-source/user-filter/) provides row level security for the data used for creating the dashboards. So that we can restrict the data that will be visible to each user. 
+The [User Filter](/working-with-data-sources/user-filter/) provides row level security for the data used for creating the dashboards. So that we can restrict the data that will be visible to each user. 
 
 Lets consider the [Hotel Revenue Management Dashboard](https://www.boldbi.com/dashboard-examples/hospitality/hotel-revenue-management-dashboard). In the dashboard we can restrict the revenue data for the hotels in different geographical area so that the managers and the staffs will be able to see only the data of the region that they are handling.
 
@@ -59,7 +59,7 @@ So, while applying the user filter, please make sure you have applied the filter
 
 ## Isolation code in site level:
 
-[Isolation code](/working-with-data-source/configuring-isolation-code/) feature is to configure a row-level security for site level to apply all dashboards on the site. Here, you can set the filter value in a specific column of data source. The `User Management Server` admin can apply the isolation code from site settings of the UMS site details page. The dashboard will be filtered based on the applied isolation code. If the column in the code doesn't match in data source level, then `no data will be displayed` in widgets.
+[Isolation code](/working-with-data-sources/configuring-isolation-code/) feature is to configure a row-level security for site level to apply all dashboards on the site. Here, you can set the filter value in a specific column of data source. The `User Management Server` admin can apply the isolation code from site settings of the UMS site details page. The dashboard will be filtered based on the applied isolation code. If the column in the code doesn't match in data source level, then `no data will be displayed` in widgets.
 
 `Isolation code` will be applied as follows.
 

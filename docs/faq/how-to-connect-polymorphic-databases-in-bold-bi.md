@@ -34,14 +34,14 @@ Database Engines
 </th>
 <tr>
 <td rowspan="2">AWS</td>
-<td><a href="/working-with-data-source/data-connectors/amazon-aurora/">Amazon Aurora</td>
+<td><a href="/working-with-data-sources/data-connectors/amazon-aurora/">Amazon Aurora</td>
 <td id="alignList">
 •	MySQL <br />
 •	PostgreSQL
 </td>
 </tr>
 <tr>
-<td><a href="/working-with-data-source/data-connectors/amazon-rds/">Amazon RDS</td>
+<td><a href="/working-with-data-sources/data-connectors/amazon-rds/">Amazon RDS</td>
 <td id="alignList">
 •	Amazon Aurora MySQL <br />
 •	Amazon Aurora PostgreSQL <br />
@@ -54,7 +54,7 @@ Database Engines
 </tr>
 <tr>
 <td>Google</td>
-<td><a href="/working-with-data-source/data-connectors/google-cloud-sql/">Google Cloud SQL</td>
+<td><a href="/working-with-data-sources/data-connectors/google-cloud-sql/">Google Cloud SQL</td>
 <td id="alignList">
 •	MySQL <br />
 •	PostgreSQL
@@ -64,7 +64,7 @@ Database Engines
 
 ## Connecting polymorphic databases in Bold BI using Google Cloud SQL
 
-1.	Connect your [Google Cloud SQL](/working-with-data-source/data-connectors/google-cloud-sql/) data source with MySQL database engine as follows.
+1.	Connect your [Google Cloud SQL](/working-with-data-sources/data-connectors/google-cloud-sql/) data source with MySQL database engine as follows.
    
 	![Google Cloud SQL](/static/assets/faq/images/cloud-mysql.png#max-width=60%)
 	
@@ -86,8 +86,8 @@ Database Engines
 
 ### Related links
 
-[Editing a Data Connection](/working-with-data-source/editing-a-data-connection/)
+[Editing a Data Connection](/working-with-data-sources/editing-a-data-connection/)
 
-[Data Transformation](/working-with-data-source/transforming-data/)
+[Data Transformation](/working-with-data-sources/data-modeling/)
 
 [Dashboard Designer Walk Through](/getting-started/creating-dashboard/)

@@ -90,7 +90,7 @@ The data type of each column will be represented nearby as follows.
 
 ![representing the datatype of each column](/static/assets/getting-started/images/datatypeicon.png)
 
-Add more than one table, if you prefer, by following the same drag and drop operation. This is subjected to [joining](/working-with-data-source/transforming-data/joining-table/) of tables.
+Add more than one table, if you prefer, by following the same drag and drop operation. This is subjected to [joining](/working-with-data-sources/data-modeling/joining-table/) of tables.
 
 ## Transforming data
 
@@ -108,13 +108,13 @@ To change the column type, click the `Settings` icon of the respective column an
 
 ![changing data type of column](/static/assets/getting-started/images/changecolumntype.png)
 
-For supported column types and their equivalent convertible types, refer to [formatting columns](/working-with-data-source/transforming-data/formatting-column/).
+For supported column types and their equivalent convertible types, refer to [formatting columns](/working-with-data-sources/data-modeling/formatting-column/).
 
-Add the required [expression columns](/working-with-data-source/transforming-data/configuring-expression-columns/), by creating it using built-in functions and existing columns by clicking the option in the tools pane in data design view highlighted below.
+Add the required [expression columns](/working-with-data-sources/data-modeling/configuring-expression-columns/), by creating it using built-in functions and existing columns by clicking the option in the tools pane in data design view highlighted below.
 
 ![option for opening expression dialog](/static/assets/getting-started/images/expressiondialog.png)
 
-Filter the data that is not required in the dashboard using the [data filters](/working-with-data-source/transforming-data/configuring-data-filters/) option in the tools pane in data design view as highlighted in the following screenshot.
+Filter the data that is not required in the dashboard using the [data filters](/working-with-data-sources/data-modeling/configuring-data-filters/) option in the tools pane in data design view as highlighted in the following screenshot.
 
 ![option for opening the filter dialog](/static/assets/getting-started/images/addfilters.png)
 

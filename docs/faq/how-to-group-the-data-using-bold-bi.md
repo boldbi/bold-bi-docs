@@ -13,7 +13,7 @@ You can apply grouping based on specific fields either in the code view mode or 
 
 ## Grouping data using the code view mode
 
-1.	Refer to the [Connecting Bold BI to SQL data source](/working-with-data-source/data-connectors/sql-data-source/#connecting-bold-bi-to-microsoft-sql-server-data-source) to successfully connect to it.
+1.	Refer to the [Connecting Bold BI to SQL data source](/working-with-data-sources/data-connectors/sql-data-source/#connecting-bold-bi-to-microsoft-sql-server-data-source) to successfully connect to it.
 
 2.	Drag and drop the table from the table schema in the data design view page. Switch to the code view by enabling the toggle option in the tools pane, as shown in the following image.
 
@@ -64,7 +64,7 @@ You can apply grouping based on specific fields either in the code view mode or 
           FROM [dbo].[Patient_details_db] AS [Patient_details_db]
           GROUP BY PatientID,Date
 
-2.	You can access the view by [Connecting Bold BI to the SQL data source.](/working-with-data-source/data-connectors/sql-data-source/#connecting-bold-bi-to-microsoft-sql-server-data-source) After connecting to the data source, drag and drop the view from the views schema in the data design view page.
+2.	You can access the view by [Connecting Bold BI to the SQL data source.](/working-with-data-sources/data-connectors/sql-data-source/#connecting-bold-bi-to-microsoft-sql-server-data-source) After connecting to the data source, drag and drop the view from the views schema in the data design view page.
     
     ![Drag view](/static/assets/faq/images/drag-views.png#max-width=100%)
 	

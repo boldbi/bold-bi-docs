@@ -19,7 +19,7 @@ Follow these steps to embed dashboard in your application
 
     ```js
     <head>  
-        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v6.16.12/boldbi-embed.js"></script>
+        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v7.6.12/boldbi-embed.js"></script>
     </head>
     ```
 
@@ -31,13 +31,15 @@ Follow these steps to embed dashboard in your application
     </body>
     ```
 
+    >**NOTE:** If you use hyphens in ID, your code may become more prone to errors and be harder to read while using Jquery. Instead, use underscores or camelCase if you are in control of the ID.
+
 3. In the body tag, you need to add the function to create BoldBI instance with following properties and call that function in the body using the `onload` attribute as follows. Also, call the `loadDashboard()` function.
 
     You can embed the dashboard using either the dashboard ID or dashboard path like in below samples.
 
 ### Embed using dashboard ID
 
-    ```js
+   ```js
     <body onload="embedSample();">
         <div id="dashboard_container"></div>
         <script>
@@ -47,7 +49,6 @@ Follow these steps to embed dashboard in your application
                     dashboardId: "755e99c7-f858-4058-958b-67577b283309",                
                     embedContainerId: "dashboard_container",// This should be the container id where you want to embed the dashboard
                     embedType: BoldBI.EmbedType.Component,
-                    environment: BoldBI.Environment.Enterprise,
                     mode: BoldBI.Mode.View,
                     height: "800px",
                     width: "1200px",
@@ -60,11 +61,13 @@ Follow these steps to embed dashboard in your application
             }
         </script>
     </body>
-    ```  
+ ```  
+
+> **NOTE:** By default, `BoldBI.Environment.Enterprise` is used for the Environment API member. For Cloud sites, you must set the Environment member value to `BoldBI.Environment.Cloud`.
 
 ### Embed using dashboard path
 
-    ```js
+   ```js
     <body onload="embedSample();">
         <div id="dashboard_container"></div>
         <script>
@@ -74,7 +77,6 @@ Follow these steps to embed dashboard in your application
                     dashboardPath: "/Sales/Sales Analysis Dashboard",
                     embedContainerId: "dashboard_container",// This should be the container id where you want to embed the dashboard
                     embedType: BoldBI.EmbedType.Component,
-                    environment: BoldBI.Environment.Enterprise,
                     mode: BoldBI.Mode.View,
                     height: "800px",
                     width: "1200px",
@@ -87,7 +89,7 @@ Follow these steps to embed dashboard in your application
             }
         </script>
     </body>
-    ```  
+  ```  
 
 4. Refer the following table for value of the previous properties based on your application.  
 
@@ -113,10 +115,6 @@ Follow these steps to embed dashboard in your application
     <tr>
     <td align="left">embedType</td>
     <td align="left">BoldBI.EmbedType.Component</td>
-    </tr>
-    <tr>
-    <td align="left">environment</td>
-    <td align="left">BoldBI.Environment.Cloud or BoldBI.Environment.Enterprise</td>
     </tr>
     <tr>
     <td align="left">height</td>
@@ -181,12 +179,12 @@ Follow these steps to embed dashboard in your application
 </code></td>
 </tr>
 <tr>            
-<td><code>v6.16.12(latest)</code></td>            
+<td><code>v7.6.12(latest)</code></td>            
 <td><code>
 
 ```js
 <head> 
-    <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v6.16.12/boldbi-embed.js"></script>
+    <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v7.6.12/boldbi-embed.js"></script>
 </head>
 ```
 
@@ -210,7 +208,6 @@ You can embed the multi-tabbed dashboard by using the dashboard ID or dashboard 
                 dashboardId: "119c6622-62e7-42d2-955a-55c938ab8583",  // Multi-tabbed dashboard id              
                 embedContainerId: "dashboard_container",// This should be the container id where you want to embed the dashboard
                 embedType: BoldBI.EmbedType.Component,
-                environment: BoldBI.Environment.Enterprise,
                 mode: BoldBI.Mode.View,
                 height: "800px",
                 width: "1200px",
@@ -314,7 +311,7 @@ public string GetEmbedDetails(string embedQuerString, string dashboardServerApiU
 }
 ```
 
-* The `Dashboard Parameter` filter must be started with a double ampersand `&&` in the endpoint. Refer to this [link](/working-with-data-source/dashboard-parameter/configuring-dashboard-parameters/) for more details.   
+* The `Dashboard Parameter` filter must be started with a double ampersand `&&` in the endpoint. Refer to this [link](/working-with-data-sources/dashboard-parameter/configuring-dashboard-parameters/) for more details.   
 
 * The `URL Parameter` filter must be started with a single ampersand `&` in the endpoint. Refer to this [link](/working-with-dashboards/preview-dashboard/urlparameters/) for more details.     
 
@@ -351,8 +348,6 @@ You can get your Embed Secret key from administrator setting section. Refer this
 ## How to get common Embed Secret key from UMS
 
 If you are using multi-tenant Bold BI server sites and looking for embedding the Dashboard in your application, then we recommend using the common embed secret instead of the separate embed secret for each site. Refer to this [link](/site-administration/embed-settings/#get-common-embed-secret-code-from-ums) to get the common embed secret.
-
-> **NOTE:**  <br>This embed setting will be enabled only if you have an Embedded BI plan.<br><br>Refer to this [link](/faq/how-to-resolve-jquery-conflict-in-embedding/) to resolve the jQuery conflict problem in embedded.
 
 ## How to use Server URL for embedding the Bold BI in different scenarios
 

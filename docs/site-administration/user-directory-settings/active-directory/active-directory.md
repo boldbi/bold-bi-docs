@@ -7,13 +7,13 @@ documentation: ug
 
 # Active Directory Settings
 
-This section explains what are the [Active Directory](https://msdn.microsoft.com/en-us/library/windows/desktop/aa746492) details needed and how to configure Active Directory with Bold BI Server.
+This section explains the [Active Directory](https://msdn.microsoft.com/en-us/library/windows/desktop/aa746492) details needed and how to configure Active Directory with Bold BI Server.
 
 ![Active Directory Settings](/static/assets/site-administration/images/active-directory-settings.png#width=60%)
 
-> **NOTE:** This feature is available in Bold BI Embedded Analytics but not in Cloud Analytics Server.
+> **NOTE:** This feature is available in On-Premises Deployment but not in Syncfusion Managed Cloud Server.
 
-You will need the below Active Directory details to configure Bold BI with your Active Directory:
+You will need the following Active Directory details to configure Bold BI with your Active Directory:
 
 * Username and Password - username and password of the user present in the Active Directory domain.
 
@@ -21,24 +21,24 @@ You will need the below Active Directory details to configure Bold BI with your 
 
 * Distinguished Name - FQDN of the Active Directory.   
 
-* Enable/Disable SSL connection to Active Directory - Enable this checkbox, if your Windows Server needs SSL connection to connect.  
+* Enable/Disable SSL connection to Active Directory - Enable this checkbox if your Windows Server needs an SSL connection to connect.
 
-* Port Number - Default port for Non-SSL connections is 389 and for SSL connections is 636
+* Port Number - Default port for Non-SSL connections is 389 and for SSL connections is 636.
 
 ## How to find FQDN
-Follow the below steps to find out the Distinguished Name of your Active Directory.  
+Follow the steps below to find out the Distinguished Name of your Active Directory.
 
-1. Go to Run(Win + R) and type `sysdm.cpl` in a machine which is connected to the Active Directory or in the Windows Server where you have Active Directory Domain Services enabled  
+1. Go to Run(Win + R) and type `sysdm.cpl` in a machine which is connected to the Active Directory or in the Windows Server where you have Active Directory Domain Services enabled. 
 ![Run sysdm.cpl](/static/assets/site-administration/images/active-directory-settings-fqdn-1.png)
 
-2. The `System Properties` dialog will be opened and you can find the Distinguished Name labeled as `Domain`     
+2. The `System Properties` dialog will be opened and you can find the Distinguished Name labeled as `Domain`.    
 ![Distinguished Name - Domain](/static/assets/site-administration/images/active-directory-settings-fqdn-2.png)
     
 You can search either all the users in the domain or users in the specific group that belongs to an organization in the specific domain.
 
 For example, if your Domain is www.example.com, then to search all the users of the domain you have to type in as `dc=www,dc=example,dc=com`.
 
-To search the users in a specific group (Eg:TestGroup) of an organization (Eg:Syncfusion) in the domain www.example.com, you can type in as `CN=TestGroup,OU=Syncfusion,DC=www,DC=example,DC=com`
+To search the users in a specific group (Eg:TestGroup) of an organization (Eg:Syncfusion) in the domain www.example.com, you can type in as `CN=TestGroup,OU=Syncfusion,DC=www,DC=example,DC=com`.
 
  The following table lists the attribute types.
 

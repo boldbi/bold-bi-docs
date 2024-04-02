@@ -21,7 +21,7 @@ This section explains how to enable tab-level security, which restricts tab visi
 
     ![Tab Security Menu](/static/assets/managing-resources/manage-dashboards/images/tab-security-menu.png)
 
-3.  Now `Enable` the enable tab-level security checkbox and click `Save`.
+3.  Now, `Enable` the tab-level security checkbox and click `Save`.
 
     ![Get Security Dialog](/static/assets/managing-resources/manage-dashboards/images/enable-tab-security.png)
 

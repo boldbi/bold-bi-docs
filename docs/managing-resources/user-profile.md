@@ -24,7 +24,7 @@ You can edit the profile details in Bold BI account. Click `Edit Account` in pro
 
 ![Cloud Account](/static/assets/managing-resources/images/syncfusion-cloud-account-button.png#width=55%)
 
-Username, first name, last name, phone number and profile picture can be changed in the Bold BI profile page.
+Username, first name, last name, phone number, and profile picture can be changed on the Bold BI profile page.
 
 ![Edit Profile](/static/assets/managing-resources/images/edit-user-profile.png)
 
@@ -34,16 +34,16 @@ The Application language, Data language, Default pinboard, and Autosave filter s
 ![Profile Settings](/static/assets/managing-resources/images/profile-settings.png#width=60%)
 
 ### Language settings
-This section explains how to configure the language settings for application language and data language.
+This section explains how to configure the language settings for the application language and data language.
 
 #### Application language
-This language used in the user interface of an application, such as menu items, dialog boxes, toolboxes, and so on.
-You can update application language preference by clicking "Update application language details through your account". It will be redirected to IDP profile page where user can set your own language preference.
+This language is used in the user interface of an application, such as menu items, dialog boxes, toolboxes, and so on. 
+You can update the application language preference by clicking `Update application language details through your account`. It will redirect you to the IDP profile page where you can set your own language preference.
 
 #### Data language
-This language used in date, number, and currency formats.
-You can update data language preference by clicking "Update data language details through your account".
-It will be redirected to IDP profile page where you can set your own language preference.
+This language is used in date, number, and currency formats. 
+You can update the data language preference by clicking `Update data language details through your account`. 
+It will redirect you to the IDP profile page where you can set your own language preference.
 
 You can configure the settings as shown in the following images.
 
@@ -51,14 +51,14 @@ You can configure the settings as shown in the following images.
 
 ![Language Preference](/static/assets/managing-resources/images/language-preference.png)
 
-> **NOTE:**  NOTE: Make sure the `Disable user language preference` option is disabled in the site settings for applying user preference language on your site. For more details, please visit [here](/localization/latest/#site-language-settings).
+> **NOTE:**  Make sure the `Disable user language preference` option is disabled in the site settings to apply the user preference language on your site. For more details, please visit [here](/localization/latest/#site-language-settings).
 
 ### Default pinboard
-Users can select a default pinboard by selecting one of the added pinboards from the drop-down.
+Users can select a default pinboard by choosing one of the added pinboards from the drop-down.
 
 ![Default Pinboard](/static/assets/managing-resources/images/default-pinboard.png)
 
-Default Pinboard will be loaded by default when the user navigates to the Pinboard page. Click [here](/managing-resources/manage-pinboards/) to know more about pinboards.
+The default pinboard will be loaded when the user navigates to the Pinboard page. Click [here](/managing-resources/manage-pinboards/) to learn more about pinboards.
 
 ### Dashboard settings
 #### AutoSave filter
@@ -79,7 +79,7 @@ The user can configure their own notification preferences, but they can only ena
 
 ![Profile Notifications](/static/assets/managing-resources/images/user-profile-notifications.png)
 
-There are two different types of notification.
+There are two different types of notifications:
 * Email Notifications
 * System Notifications
 
@@ -115,7 +115,7 @@ Enabling this option will notify you via email or system notification when someo
 Enabling this option will notify you via email or system notification when someone mentions your name while commenting on a dashboard.
 
 #### Notify me about comments when I have watch enabled for a dashboard
-Autowatch will be enabled for a comment on dashboards whenever you add comments to a dashboard you created or to which you have access. This setting is useful if you want to receive notifications for specific dashboards rather than all dashboards that you have created or have access to. You can disable the "Notify me when someone comments on a dashboard I have access to" and "Notify me when someone comments on my dashboard" options and watch a specific dashboard comment. 
+Autowatch will be enabled for a comment on dashboards whenever you add comments to a dashboard you created or to which you have access. This setting is useful if you want to receive notifications for specific dashboards rather than all dashboards that you have created or have access to. You can disable the “Notify me when someone comments on a dashboard I have access to” and “Notify me when someone comments on my dashboard” options and watch a specific dashboard comment.
 
 #### Specific watch
 
@@ -123,7 +123,7 @@ Apart from autowatch on created and accessible items, you can also watch a speci
 
 ![Specific watch](/static/assets/site-administration/images/specific-watch.png)
 
-You can toggle between a watch and unwatch for a dashboard comment at any time.
+You can toggle between watch and unwatch for a dashboard comment at any time.
 
 #### Enable data alert and scheduled export email notifications
 Enabling this option will notify you via email for data alert and schedule export.
@@ -144,54 +144,54 @@ If a user wants to inherit the same settings as in the site notification setting
 ![Inherit from global settings](/static/assets/managing-resources/images/inherit-notification.png)
 
 ### Disabled user notification preference
-If the `Disable User Preference` is enabled in site notification settings, then the user cannot modify the user notification preference settings.
+If the `Disable User Preference` is enabled in site notification settings, the user cannot modify the user notification preference settings.
 
 ![Disabled in site notification](/static/assets/managing-resources/images/notification-disabled-in-site.png)
 
      
 ## Change Password
-Password to log in to the Bold BI can be changed in the Bold BI, change password page.
+The password to log in to Bold BI can be changed on the Bold BI change password page.
 
 ![Change Password In Profile](/static/assets/managing-resources/images/change-password-button.png)
 
-Click `Change Password`, it will be redirected to the IDP profile page where you can change your password.
+Clicking on `Change Password` will redirect you to the IDP profile page where you can change your password.
 
 ![Change Password](/static/assets/managing-resources/images/edit-user-profile-password.png)
 
-> **NOTE:**  Administrator privileged users can change the password from UMS Site. For more details, please visit [here](/managing-resources/manage-users/#change-password)
+> **NOTE:**  Administrator privileged users can change the password from the UMS Site. For more details, please visit [here](/managing-resources/manage-users/#change-password)
 
 ## Forgot Password
-If you forgot the password, you can reset the password by following the below steps.
+If you forgot your password, you can reset it by following the steps below:
 
-1. Click Cannot access your account option on the login page.
+1. Click on the cannot access your account option on the login page.
 
    ![Cannot access your account](/static/assets/managing-resources/images/recover-account-option.png#width=60%)
 
-2. Enter your email to get the reset password link. After enter your email, click `Send recovery link`.
+2. Enter your email to receive the reset password link. After entering your email, click on `Send recovery link`.
 
    ![Email Form](/static/assets/managing-resources/images/recover-option.png#width=60%)
 
-3. After the confirmation page, you will receive an email to reset the password.
+3. After the confirmation page, you will receive an email to reset your password.
 
    ![Email Link](/static/assets/managing-resources/images/reset-password-mail.png#width=60%)
 
-4. You can reset the password by clicking the link in the mail you received.
+4. You can reset your password by clicking on the link in the email you received.
 
    ![Reset Password](/static/assets/managing-resources/images/reset-password-page.png#width=60%)
 
-   > **NOTE:**  Forgot password option restricted for third party user directories.
+   > **NOTE:**  The forgot password option is restricted for third-party user directories.
    
 ## My Permissions
-Users can view their access permission list for each resources like Dashboards, Data Sources, Widgets and Schedules in the Bold BI.
+Users can view their access permission list for each resource such as Dashboards, Data Sources, Widgets, and Schedules in Bold BI.
 
 ![My Permissions](/static/assets/managing-resources/images/my-permission.png)
 
 ## Connected Accounts
-You can manage the external OAuth accounts that you have granted access for in Bold BI. Please find more details on the [Connected accounts](/working-with-data-source/working-with-connected-accounts/).
+You can manage the external OAuth accounts that you have granted access to in Bold BI. Please find more details on the [Connected accounts](/working-with-data-sources/working-with-connected-accounts/) page.
 
 ## Connected sites
 
-Add, edit, delete, and view the list of external sites on the connected sites page.
+You can add, edit, delete, and view the list of external sites on the connected sites page.
 
 ![Connected sites](/static/assets/managing-resources/images/connected-sites.png)
 
@@ -201,7 +201,7 @@ Add a site created in Bold BI servers as an external site on the `Connected Site
 
 ![Add New Site](/static/assets/managing-resources/images/add-new-site.png)
 
-To add an external BI site, click `Add new site`, fill in the following details as shown in the following image, then click `Save`.
+To add an external BI site, click on `Add new site`, fill in the required details as shown in the image, then click `Save`.
 
 * Name - Enter the name that you want for external site.
 * Client ID - Enter the Client Id of the site.
@@ -212,15 +212,15 @@ To add an external BI site, click `Add new site`, fill in the following details 
 
 ## Edit External Site
 
-To edit an external site, click `Actions` and then select `Edit` from the site listing grid.
+To edit an external site, click on `Actions` and then select `Edit` from the site listing grid. 
 ![Edit External sites](/static/assets/managing-resources/images/edit-external-site.png)
 
-Edit the site details, then click `Save`. You need to re-enter the site's `Client Secret` to edit the connected site.
+Edit the site details, then click `Save`. You will need to re-enter the site’s `Client Secret` to edit the connected site.
 ![Edit External site Dialog](/static/assets/managing-resources/images/edit-external-site-dialog.png)
 
 ## Delete External Site
 
-To delete an external site, click `Actions`, select `Delete` from the site listing grid, then click `Yes` in the `Delete Connected Site` dialog.
+To delete an external site, click on `Actions`, select `Delete` from the site listing grid, then click `Yes` in the `Delete Connected` Site dialog.
 
 ![Delete External sites](/static/assets/managing-resources/images/delete-external-site.png)
 

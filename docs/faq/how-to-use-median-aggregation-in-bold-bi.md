@@ -11,7 +11,7 @@ Bold BI application allows you to use Median aggregation by following these step
 
 ## Steps to use the Median aggregation in Bold BI
 
-1. Refer to [Connecting to a data source](/working-with-data-source/creating-a-new-data-source/) for successful connection.
+1. Refer to [Connecting to a data source](/working-with-data-sources/creating-a-new-data-source/) for successful connection.
 
 2. Drag and drop the table and click `Save` to save the data source as shown in the below image.
 

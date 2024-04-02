@@ -8,7 +8,7 @@ documentation: ug
 
 # Reset Password
 
-Please refer to your operating system’s documentation for how to reset the current password of any user using their email address or username.
+Please refer to the documentation of your operating system for instructions on how to reset the current password for any user using their email address or username.
 
 [Windows](/utilities/bold-bi-command-line-tools/reset-password/#windows)
 
@@ -16,19 +16,19 @@ Please refer to your operating system’s documentation for how to reset the cur
 
 ## Windows
    
-1. Open the command prompt and change the directory to the admin utility location.  
+1. Open the command prompt and navigate to the admin utility location. 
 ~~~
 cd C:\BoldServices\utilities\adminutils
 ~~~
 ![command](/static/assets/admin-utility/images/cmdforutils-1.png)
  
-2. After changing the directory, please run the following command to reset the password.  
+2. After changing the directory, please run the following command to reset the password:  
 ~~~
 Syncfusion.Server.Commands.Utility.exe reset -u 'user email or username here' -p 'new password here'
 ~~~  
 ![reset-command](/static/assets/admin-utility/images/resetcmd-1.png) 
 
-3. Once, the password has been reset successfully, the user can log in with the updated password.
+3. Once the password has been successfully reset, the user can log in with the updated password.
 
 ## Linux
   
@@ -38,7 +38,7 @@ cd /var/www/bold-services/application/utilities/adminutils/
 ~~~
 ![command](/static/assets/admin-utility/images/linux-cd.png)
  
-2. After changing the directory, please run the following command to reset the password.  
+2. After changing the directory, please run the following command to reset the password:
 ~~~
 ../../../dotnet/dotnet Syncfusion.Server.Commands.Utility.dll reset -u 'user email or username here' -p 'new password here'
 ~~~  

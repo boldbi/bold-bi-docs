@@ -8,9 +8,9 @@ documentation: ug
 
 # Bold BI Dashboards embedding in React with Go using Embedded SDK
 
-A GitHub link has been provided to [get](https://github.com/boldbi/react-with-go-sample) the sample application, which demonstrates the rendering of dashboard available in your Bold BI server and followed by steps to create a new embedding application in the `React` with `Go` on your own. 
+A GitHub link has been provided to [get](https://github.com/boldbi/react-with-go-sample) the sample application, which demonstrates the rendering of a dashboard available on your Bold BI server. This is followed by a series of steps to create a new embedding application in `React` with `Go` on your own.
 
-> **NOTE:** The best way to get started would be reading the [Getting Started](/getting-started/embedding-in-your-application/) section of the documentation to start using first. The `Getting Started` guide gives you enough information that you need to know before working on the sample. 
+> **NOTE:** The best way to get started would be to read the [Getting Started](/getting-started/embedding-in-your-application/) section of the documentation first. The `Getting Started` guide provides you with enough information that you need to know before working on the sample. 
 
 ## Requirements/Prerequisites
 
@@ -18,22 +18,22 @@ A GitHub link has been provided to [get](https://github.com/boldbi/react-with-go
 * [Visual Studio Code](https://code.visualstudio.com/download)
 * [Node.js](https://nodejs.org/en/)
 
-> **NOTE:** Node.js v14.16 to v18.18 are supported.
+> **NOTE:** Node.js versions 14.16 through 18.18 are supported.
 
 ## How to run the sample
 
 1. Please get the [React with Go](https://github.com/boldbi/react-with-go-sample) Application.   
 
-2. Please ensure you have enabled embed authentication on the `embed settings` page. If it is not enabled, please refer to the following image or detailed [instructions](https://help.boldbi.com/site-administration/embed-settings/#get-embed-secret-code) to enable it.
+2. Please ensure that you have enabled embed authentication on the `embed settings` page. If it is not enabled, please refer to the following image or detailed [instructions](/site-administration/embed-settings/#get-embed-secret-code) to enable it.
 
    ![Embed Settings](/static/assets/javascript/sample/images/embed-settings.png)
 
-3. To download the `embedConfig.json` file, please follow this [link](https://help.boldbi.com/site-administration/embed-settings/#get-embed-configuration-file) for reference. Additionally, refer to the following image for visual guidance.
+3. To download the `embedConfig.json` file, please follow this [link](/site-administration/embed-settings/#get-embed-configuration-file) for reference. Additionally, refer to the following image for visual guidance.
     
    ![EmbedSettings image](/static/assets/javascript/sample/images/embed-settings-download.png) 
    ![EmbedConfig Properties](/static/assets/javascript/sample/images/prop-core.png)
 
-4. Copy the downloaded `embedConfig.json` file and paste it into the designated [location](https://github.com/boldbi/react-with-go-sample/tree/master/Go) within the application. Please ensure you have placed it in the application as shown in the following image.
+4. Please copy the downloaded `embedConfig.json` file and paste it into the designated [location](https://github.com/boldbi/react-with-go-sample/tree/master/Go) within the application. Please make sure you have placed it in the application as shown in the following image.
 
     ![EmbedConfig Location Image](/static/assets/javascript/sample/images/react-go-embedconfig.png)
 
@@ -74,15 +74,15 @@ A GitHub link has been provided to [get](https://github.com/boldbi/react-with-go
 
 5. Open the `Go` sample in Visual Studio Code.
 
-6. Run the back-end `Go` sample using the following command `go run main.go`.
+6. To run the back-end `Go` sample, use the following command `go run main.go`.
 
 7. Open the `React` sample in a new window of Visual Studio Code.
 
-8. To install all dependent packages, use the following command `npm install`.
+8. To install all the necessary packages, use the command `npm install`.
 
-9. Run your `React` sample using the following command `npm start`.
+9. Please run your `React` sample using the command `npm start`.
 
-10. The dashboard can be editable in design mode and create a new dashboard with the following changes in the `renderDashboard()` method.
+10. The dashboard can be edited in design mode and a new dashboard can be created with the following changes in the `renderDashboard()` method.
 
      <meta charset="utf-8"/>
      <table>
@@ -123,9 +123,16 @@ A GitHub link has been provided to [get](https://github.com/boldbi/react-with-go
  
       ```
 
+> **NOTE:** If you are using a React version lower than v18.0, you can update the `index.js` file by adding the following line. Make sure to replace the existing `createRoot` line with the following line.
+
+  ```js
+   import ReactDOM from 'react-dom';
+   ReactDOM.render(<App />, document.getElementById('root'));
+  ```
+
 ## How this sample works
 
-1. When the `componentDidMount` function is triggered in a front end React application, it invokes the `/getServerDetails` endpoint. This endpoint fetches data from the `embedConfig.json` file. If the JSON file cannot be found, an error message will be shown.
+1. When the `componentDidMount` function is triggered in a front-end React application, it invokes the `/getServerDetails` endpoint. This endpoint fetches data from the `embedConfig.json` file. If the JSON file cannot be found, an error message will be shown.
 
    ![GetServerDetails](/static/assets/javascript/sample/images/react-go-getdetails.png)
 
@@ -133,33 +140,33 @@ A GitHub link has been provided to [get](https://github.com/boldbi/react-with-go
  
    ![Render Dashboard](/static/assets/javascript/sample/images/react-go-renderDashboard.png)
 
-3. Before rendering, the `authorizationUrl` is called, which redirects to the `AuthorizationServer` action, which generates the `EmbedSignature` using the embed secret from the `embedConfig.json`.
+3. Before rendering, the `authorizationUrl` is called, which redirects to the `AuthorizationServer` action. This action generates the `EmbedSignature` using the embed secret from the `embedConfig.json`.
     ![Authorization Server](/static/assets/javascript/sample/images/react-go-authorizeserver.png)  
   
-4. These details will be sent to the Bold BI server and get validated there. Once the details are validated, the dashboard starts to render.
+4. These details will be sent to the Bold BI server and will be validated there. After the details are validated, the dashboard starts to render.
 
 ## Steps to create new React with Go application to embed dashboard
-1. Create a folder in the desired location and open it in the **Visual Studio Code**. 
+1. Please create a folder in the desired location and open it in **Visual Studio Code**. 
 
 2. Open the terminal in **Visual Studio Code.** Please refer to the following image.
  
     ![Terminal Image](/static/assets/javascript/sample/images/react-go-terminal.png)
 
-3. Please ensure that you have enabled embed authentication on the `embed settings` page. If it is not currently enabled, please refer to the following image or detailed [instructions](https://help.boldbi.com/site-administration/embed-settings/#get-embed-secret-code) to enable it.
+3. Please make sure that you have enabled embed authentication on the `embed settings` page. If it is currently not enabled, please refer to the following image or detailed [instructions](/site-administration/embed-settings/#get-embed-secret-code) to enable it.
 
     ![Embed Settings](/static/assets/javascript/sample/images/embed-settings.png)
 
-4. To download the `embedConfig.json` file, please follow this [link](https://help.boldbi.com/site-administration/embed-settings/#get-embed-configuration-file) for reference. Additionally, you can refer to the following image for visual guidance.
+4. To download the `embedConfig.json` file, please follow this [link](/site-administration/embed-settings/#get-embed-configuration-file) for reference. Moreover, you can refer to the accompanying image for visual guidance.
 
     ![EmbedSettings image](/static/assets/javascript/sample/images/embed-settings-download.png)
 
     ![EmbedConfig Properties](/static/assets/javascript/sample/images/prop-core.png)
 
-5. Copy the downloaded `embedConfig.json` file and paste it into the designated [location](https://github.com/boldbi/react-with-go-sample/tree/master/Go) within the application. Please ensure you have placed it in the application as shown in the following image.
+5. Please copy the downloaded `embedConfig.json` file and paste it into the designated [location](https://github.com/boldbi/react-with-go-sample/tree/master/Go) within the application. Please make sure you have placed it in the application as shown in the following image.
 
     ![EmbedConfig Location Image](/static/assets/javascript/sample/images/react-go-embed-setting.png)
 
-6. Create a new file named `main.go`. Then, incorporate the given code to acquire data from `embedConfig.json`.
+6. Create a new file called `main.go`. Next, include the provided code to retrieve data from `embedConfig.json`.
 
     ```js
     package main
@@ -216,7 +223,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/react-with-go
     }
     ```  
 
-7. In `main.go`, include the following code and create a function called `authorizationServer()` that utilizes the `GetSignatureUrl()` method for generating the algorithm. Within this function, append the `embedQuerString`, `userEmail`, and the value obtained from the `GetSignatureUrl()` method as query parameters in the URL to get details of a specific dashboard.
+7. In `main.go`, include the following code and create a function called `authorizationServer()` that utilizes the `GetSignatureUrl()` method to generate the algorithm. Within this function, append the `embedQueryString`, `userEmail`, and the value obtained from the `GetSignatureUrl()` method as query parameters in the URL to retrieve details of a specific dashboard.
 
     ```js
      func authorizationServer(w http.ResponseWriter, r *http.Request) {
@@ -274,7 +281,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/react-with-go
 
      ```
 
-8. Create another file named `launch.json` and include the following code.
+8. Please create another file called `launch.json` and include the code provided below.
     ```js
     {
       // Use IntelliSense to learn about possible attributes.
@@ -296,9 +303,9 @@ A GitHub link has been provided to [get](https://github.com/boldbi/react-with-go
     }
     ```
 
-9. Create a folder in the desired location and open it in the **Visual Studio Code**. 
+9. Create a folder in the desired location and open it in **Visual Studio Code**. 
 
-10. To create a new react project as front-end, we need to run this command in the terminal and navigate to the directory.
+10. To create a new React project as the front-end, we need to run this command in the terminal and navigate to the directory.
     ```js
       npx create-react-app .
     ```
@@ -326,7 +333,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/react-with-go
       export default DashboardListing;
 
      ```
-12. Inside the `DashboardListing.js` file, add the following code to render the dashboard.
+12. Inside the `DashboardListing.js` file, add the code below to render the dashboard.
     ```js
       renderDashboard(embedConfig) {
           this.dashboard = BoldBI.create({
@@ -358,7 +365,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/react-with-go
         }
     ```
 
-14. Inside the `DashboardListing.js` file, add the following code: The `componentDidMount()` method contacts the server to get the token, and with this token, particular dashboard details are collected and passed to the `renderDashboard()` method to render it.
+14. Inside the `DashboardListing.js` file, add the following code: The `componentDidMount()` method contacts the server to retrieve the token. With this token, specific dashboard details are collected and passed to the `renderDashboard()` method for rendering.
 
     ![Dashboard](/static/assets/javascript/sample/images/react-go-dashboardListing.png)
     ```js
@@ -375,7 +382,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/react-with-go
           }
         }
     ```
-15. Open the `App.js` folder and replace the following code: The following code imports the necessary modules, defines the `App` component, renders the `DashboardListing` component, and exports it for use in other files.
+15. Open the `App.js` folder and replace the following code: The code imports the necessary modules, defines the `App` component, renders the `DashboardListing` component, and exports it for use in other files.
 
     ```js
       import React from 'react';
@@ -393,7 +400,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/react-with-go
       }
       export default App;
     ```
-16.  Open the `Index.js` file and replace the following code: These lines of code import the necessary modules `React` and `ReactDOM`, import the `App` component, and use `ReactDOM.render` to render the App component into the specified HTML element.
+16.  Open the `Index.js` file and replace the following code: These lines of code import the necessary modules `React` and `ReactDOM`.They also import the `App` component and use `ReactDOM.render` to render the App component into the specified HTML element.
       
       ```js
       import React from 'react';
@@ -402,7 +409,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/react-with-go
 
       ReactDOM.render(<App />, document.getElementById('root'));
       ```
-17. Replace the following code in `package.json`. Installing the `packages` listed in the following dependencies section is essential.
+17. Please replace the code in `package.json` with the `packages` listed in the following dependencies section. Installing these packages is essential.
    
       ```js
         {
@@ -447,6 +454,6 @@ A GitHub link has been provided to [get](https://github.com/boldbi/react-with-go
       }
       ```
 
- 18. Then, run the `Go` application with the `go run main.go` command.
+ 18. Next, execute the `Go` application by running the command `go main.go`.
 
- 19. Open the `React` application and use this command to install dependent dependencies: `npm install` and run the sample with the `npm start` command to render the dashboard.
+ 19. To begin, open the `React` application and install the required dependencies using the command `npm install`. After installation, run the sample by executing the command `npm run serve` to render the dashboard.

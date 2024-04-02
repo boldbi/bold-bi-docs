@@ -11,7 +11,7 @@ documentation: ug
 
 Here we create a C3 Chart using the D3 Library.
 
- > **NOTE:** The C3 Chart is open-source and it is under MIT license. This feature is available in Bold BI Embedded Analytics but not in Cloud Analytics Server.
+ > **NOTE:** The C3 Chart is open-source and it is under MIT license. This feature is available in On-Premises Deployment but not in Syncfusion Managed Cloud Server.
 
 Follow these steps to add the third-party widget(C3 Chart) as a custom widget for the dashboard:
 

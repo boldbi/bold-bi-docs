@@ -17,7 +17,7 @@ documentation: ug
 
 ## How to configure the table data to Grid
 
-> **NOTE:**  Before adding the Grid widget to the design layout, make sure to **create the data source**. You can refer to this [section](/working-with-data-source/creating-a-new-data-source/) to learn how to create a new data source.
+> **NOTE:**  Before adding the Grid widget to the design layout, make sure to **create the data source**. You can refer to this [section](/working-with-data-sources/creating-a-new-data-source/) to learn how to create a new data source.
 
 To construct a grid, a minimum requirement of one column is needed. You can visualize both measure, calculated measure, and dimension column data in the grid control. You can also add a column that is hidden from the view by adding the column to the hidden columns section. The data of these columns will be hidden from the view but can be used for filtering other widgets in the dashboard.
 
@@ -146,10 +146,6 @@ You can toggle the interactive sorting of columns in grid control using this opt
 #### Fit to content
 
 The columns in the grid can be made to auto-size based on the length of the content of the column. `This option is not enabled by default.`
-
-#### Allow Text Wrap
-
-This allows you to wrapping whole the text if text length is high.
 
 #### Horizontal grid lines
 
@@ -293,9 +289,19 @@ This section allows you to format the grid header visibility, color, and font-si
 
 This allows you to enable or disable the grid header. This option is enabled by default.
 
-If we uncheck `Show Header`, dependent properties will be hidden which are **Foreground color**, **Background color**, **Row height**, **Auto font size**, **padding**.
+If we uncheck the `Show Header`, dependent properties will be hidden which are the **Allow Text Wrap**, **Foreground color**, **Background color**, **Row height**, **Auto font size**, **padding**.
 
 ![Grid Row Height](/static/assets/visualizing-data/visualization-widgets/images/grid/header.png)
+
+#### Allow Text Wrap
+
+This allows you to wrap the header text, if the text length is high.
+
+![Grid Header Allow Text Wrap Option](/static/assets/visualizing-data/visualization-widgets/images/grid/header-allow-text-wrap-option.png)
+
+![Grid Header Allow Text Wrap](/static/assets/visualizing-data/visualization-widgets/images/grid/header-wrapped-text.png)
+
+> **NOTE:** If you enable `Allow Text Wrap` property, `Row Height` property from header settings will be disabled.
 
 #### Foreground
 
@@ -335,6 +341,16 @@ This section allows you to format the grid row height, color, and font-size.
 #### Foreground
 
 You can customize the font color. The default color of the font is `#000000.`
+
+#### Allow Text Wrap
+
+This allows you to wrap the content text, if the text length is high.
+
+![Grid Content Allow Text Wrap Option](/static/assets/visualizing-data/visualization-widgets/images/grid/content-allow-text-wrap-option.png)
+
+![Grid Content Allow Text Wrap](/static/assets/visualizing-data/visualization-widgets/images/grid/content-wrapped-text.png)
+
+> **NOTE:** If you enable `Allow Text Wrap` property, `Row Height` property from content settings will be disabled.
 
 #### Background
 

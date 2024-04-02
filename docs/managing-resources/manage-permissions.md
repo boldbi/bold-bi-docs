@@ -11,13 +11,13 @@ documentation: ug
 
 This section explains the access modes, entities, scopes, and how to add permissions in Bold BI.
 
-All permissions can be managed by the users belonging to the `System administrator` group or users assigned with the permission entity of `All Permissions`. Also, specific permissions of the resource such as category, dashboards, data sources, schedules, and slideshows can be managed by the users assigned with permission entity of `Specific Permissions` of the corresponding resources.
+All permissions can be managed by users belonging to the `System administrator` group or users assigned the permission entity of `All Permissions`. Additionally, specific permissions for resources such as categories, dashboards, data sources, schedules, and slideshows can be managed by users assigned the permission entity of `Specific Permissions` for the corresponding resources.
 
-Permission can be directly added to both users and groups via [Add Permission](/managing-resources/manage-permissions/#add-permissions) dialog.
+Permissions can be directly added to both users and groups via the [Add Permission](/managing-resources/manage-permissions/#add-permissions) dialog.
 
 ![Add Permission Dialog](/static/assets/images/add-permission-dialog.png)
 
-Permissions are classified in the following structure.
+Permissions are classified in the following structure:
 	
 * Entity – Scope – Access Mode
 
@@ -169,7 +169,7 @@ Scope selection is only available for `Specific Resources` and `Specific Setting
 </table>
 
 ## Add permissions
-The add permission section is divided into four sections.
+The Add Permission section is divided into four sections:
 1. All Resources
 2. Specific Resources
 3. All Settings
@@ -189,20 +189,20 @@ To assign multiple permissions for specific resources, select multiple scopes, o
 
 ### All settings
 
-Multiple entities and access modes cannot be selected in all settings.
-You can assign `Create` permission for All Groups, `Manage` permission for All Permissions or All Settings, and `Create and Manage` permission for User and Groups.
+Multiple entities and access modes cannot be selected in all settings. 
+You can assign `Create` permission for All Groups, `Manage` permission for All Permissions or All Settings, and `Create and Manage` permission for Users and Groups.
 ![All Settings](/static/assets/images/add-permission-all-settings.png)
 
 ### Specific settings
 
-To assign multiple permissions, select multiple scopes, one entity, and one access mode.
+To assign multiple permissions, select multiple scopes, one entity, and one access mode for specific settings.
 ![Specific Settings](/static/assets/images/add-permission-specific-settings.png)
 
 ## Manage permissions - Users
 
-Please visit [Manage user permissions](/managing-resources/manage-users/#manage-permissions) for more information on how to add and manage permissions to an user.
+Please visit [Manage user permissions](/managing-resources/manage-users/#manage-permissions) for more information on how to add and manage permissions for a user.
 
 ## Manage permissions - Groups
 
-Please visit [Manage group permissions](/managing-resources/manage-groups/#manage-permissions) for more information on how to add and manage permissions to a group.
+Please visit [Manage group permissions](/managing-resources/manage-groups/#manage-permissions) for more information on how to add and manage permissions for a group.
 

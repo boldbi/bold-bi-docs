@@ -41,6 +41,38 @@ You need to follow these steps to get `keys.`
 
 To enable the bing maps in your enterprise build, you need to follow these steps.
 
+### Bold BI version 6.19.14 or later
+
+Go to the UMS Configuration Settings page and choose `config.json` in the Search your files drop-down, using this URL `{domain_name}/ums/administration/config-editor`.
+
+![Configuration Settings](/static/assets/faq/images/configuration-settings-page.png)
+
+Set the `Widget:BingMap:Enable` key value as true.
+
+![Bing Map Configuration](/static/assets/visualizing-data/visualization-widgets/images/bing-maps/configjson.png)
+
+Set your Bing Maps Key in `key` in `config.json`.
+
+![Bing Map Configuration](/static/assets/visualizing-data/visualization-widgets/images/bing-maps/configjson-map-key.png)
+
+After completing the above changes, restart the site by using this [link](https://help.boldbi.com/faq/how-to-restart-the-bold-bi-embedded-application/).
+
+### Bold BI version 5.1.55 or later
+
+Go to the UMS Configuration Settings page and choose `config.xml` in the Search your files drop-down, using this URL `{domain_name}/ums/administration/config-editor`.
+
+ ![Configuration Settings](/static/assets/faq/images/configurationxml-page.png)
+
+Set the `<widget><BingMap><Enable>` key value as true.
+
+![Bing Map Configuration](/static/assets/visualizing-data/visualization-widgets/images/bing-maps/configxmlsettings.png)
+
+Set your Bing Maps Key in `<key>` in `config.xml`.
+
+![Bing Map Configuration](/static/assets/visualizing-data/visualization-widgets/images/bing-maps/configxmlsettings-map-key.png)
+
+After completing the above changes, restart the site by using this [link](https://help.boldbi.com/faq/how-to-restart-the-bold-bi-embedded-application/).
+
 ### Bold BI version 4.2.68 or later
 
 Open the mentioned file in your enterprise build location,
@@ -86,7 +118,7 @@ Then, launch your build and you can find the bing maps in the design panel.
 
 ## How to configure the data table to Bing Maps widget
 
-> **NOTE:**  Before adding the Bing maps widget to the design layout, make sure to **create the data source**. You can refer to this [section](/working-with-data-source/creating-a-new-data-source/) to learn how to create a new data source.
+> **NOTE:**  Before adding the Bing maps widget to the design layout, make sure to **create the data source**. You can refer to this [section](/working-with-data-sources/creating-a-new-data-source/) to learn how to create a new data source.
 
 > **IMPORTANT:**  To showcase a Bing maps, a minimum requirement of `one latitude` and `one longitude` fields are needed.
 

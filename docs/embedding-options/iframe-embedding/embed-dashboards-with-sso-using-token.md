@@ -8,7 +8,7 @@ documentation: ug
 
 # Embed Dashboard with SSO using Token
 
-Bold BI supports embedding the dashboard with iFrame based Single Sign-On(SSO) using token based authentication.
+Bold BI supports embedding the dashboard with iFrame-based Single Sign-On (SSO) using token-based authentication.
 
 ## Create the embed URL to View Dashboard
 
@@ -16,7 +16,7 @@ The embed URL should be in the following format.
 
 `{dashboard URL}/{embed parameters}&embed_signature={signature}`
 
-Please find the details of the parameter in the URL as follows. 
+Please find the details of the parameter in the URL as follows:
 
 <table>
 <tr>
@@ -187,13 +187,13 @@ Please get the [Embed Dashboard with SSO using Token](https://github.com/boldbi/
 
 ## Generating the embed signature for the embed URL
 
-<strong>Embed parameters</strong> and the [Embed Secret Key](https://help.boldbi.com/site-administration/embed-settings/#get-embed-secret-code) are mandatory parameters used for generating the <strong>Embed Signature</strong>
+<strong>Embed parameters</strong> and the [Embed Secret Key](/site-administration/embed-settings/#get-embed-secret-code) are mandatory parameters used for generating the <strong>Embed Signature</strong>
 
 > We have provided the code sample to generate the signature in C#. You can write the equivalent code in your platform language.
       
   ```js
       var embedParameters = "embed_nonce=55a1c8f4-5015-487d-8463-d3ebeae655fd&embed_user_email=admin@domain.com";
-      var embedSecretKey = "7tFaq2zidmxJN8Pid6IUAiGFqAUwMfK"; //https://help.boldbi.com/site-administration/embed-settings/#get-embed-secret-code
+      var embedSecretKey = "7tFaq2zidmxJN8Pid6IUAiGFqAUwMfK"; ///site-administration/embed-settings/#get-embed-secret-code
 
       public string GetSignatureUrl(string embedParameters, string embedSecretKey)
       {
@@ -209,7 +209,7 @@ Please get the [Embed Dashboard with SSO using Token](https://github.com/boldbi/
       }
  ```
 
-  `Embed Signature` refers to a hashed value that is generated for authentication purposes in an embed request sent to the Bold BI server. To obtain the `embedSignature`, the embedParameters(contains `dashboardid`, `user email` and `other parameters`) and embedSecretKey are passed as arguments to the `GetSignatureUrl` method. This method generates the hashed signature using the HMACSHA256 algorithm, which should be appended to the existing iframe URL as a query parameter named <strong>‘embed_signature’</strong>.
+  `Embed Signature` refers to a hashed value that is generated for authentication purposes in an embed request sent to the Bold BI server. To obtain the `embedSignature`, the embedParameters (contains `dashboardid`, `user email` and `other parameters`) and embedSecretKey are passed as arguments to the `GetSignatureUrl` method. This method generates the hashed signature using the HMACSHA256 algorithm, which should be appended to the existing iframe URL as a query parameter named <strong>‘embed_signature’</strong>.
 
 ## Create the embed URL to Edit Dashboard 
 
@@ -375,7 +375,7 @@ The `embed_expirationtime` is used to set the expiration time of the iframe sign
 
 ## How to pass the dashboard parameter and URL parameter filters in embed URL
 
-In embed URL, you can pass both types of filters (Dashboard Parameter/URL Filter Parameter) values at the same time.
+In the embed URL, you can simultaneously pass values for both types of filters (Dashboard Parameter/URL Filter Parameter).
 
 Pass your filters to the `embed_datasource_filter=&&dashboardparameter1=value1&urlparameter1=value1` URL parameter in the embed URL as follows.
 
@@ -384,6 +384,6 @@ Pass your filters to the `embed_datasource_filter=&&dashboardparameter1=value1&u
 </table>
 
 
-* In the embed URL, the dashboard parameter filter must be started with a double ampersand `&&`. For more details, Refer to this [link](/working-with-data-source/dashboard-parameter/configuring-dashboard-parameters/).
+* In the embed URL, the dashboard parameter filter must be started with a double ampersand `&&`. For more details, Refer to this [link](/working-with-data-sources/dashboard-parameter/configuring-dashboard-parameters/).
 
 * In the embed URL, the URL filter parameter must be started with a single ampersand `&`. For more details, refer to this [link](/working-with-dashboards/preview-dashboard/urlparameters/).

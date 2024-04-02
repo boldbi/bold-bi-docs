@@ -8,31 +8,31 @@ documentation: ug
 
 # Bold BI Dashboards embedding in Vue.js with ASP.NET core using Embedded SDK
 
-A GitHub link has been provided to [get](https://github.com/boldbi/vue-with-aspnet-core-sample) the sample application, which demonstrates the rendering of the dashboard available in your Bold BI server and followed by steps to create a new embedding application in the `Vue.js` with `ASP.NET Core` on your own. 
+A GitHub link has been provided to [get](https://github.com/boldbi/vue-with-aspnet-core-sample) the sample application, which demonstrates the rendering of the dashboard available on your Bold BI server. This is followed by steps to create a new embedding application in `Vue.js` with `ASP.NET Core` on your own. 
 
-> **NOTE:** The best way to get started would be to read the [Getting Started](/getting-started/embedding-in-your-application/) section of the documentation. The `Getting Started` guide gives you enough information that you need to know before working on the sample. 
+> **NOTE:** The recommended starting point is to read the [Getting Started](/getting-started/embedding-in-your-application/) section of the documentation. The `Getting Started` guide provides all the necessary information you need to know before working on the sample.
 
 ## Requirements/Prerequisites
 
  * [Visual Studio Code](https://code.visualstudio.com/download)
  * [Node.js](https://nodejs.org/en/)
 
- > **NOTE:** Node.js v12.13 to v18.18 are supported.
+ > **NOTE:** Node.js versions 12.13 to 18.18 are supported.
 
 ## How to run the sample
 
- 1. Please get the [Vue.js with ASP.NET core](https://github.com/boldbi/vue-with-aspnet-core-sample/) sample from GitHub.       
+ 1. Please retrieve the [Vue.js with ASP.NET core](https://github.com/boldbi/vue-with-aspnet-core-sample/) sample from GitHub.       
 
- 2. Please ensure you have enabled embed authentication on the `embed settings` page. If it is not currently enabled, please refer to the following image or detailed [instructions](https://help.boldbi.com/site-administration/embed-settings/#get-embed-secret-code) to enable it.
+ 2. Please ensure that you have enabled embed authentication on the `embed settings` page. If it is not currently enabled, please refer to the following image or detailed [instructions](/site-administration/embed-settings/#get-embed-secret-code) to enable it.
 
     ![Embed Settings](/static/assets/javascript/sample/images/embed-settings.png)
 
- 3. To download the `embedConfig.json` file, please follow this [link](https://help.boldbi.com/site-administration/embed-settings/#get-embed-configuration-file) for reference. Additionally, you can refer to the following image for visual guidance.
+ 3. To download the `embedConfig.json` file, please follow this [link](/site-administration/embed-settings/#get-embed-configuration-file) for reference. Furthermore, you can refer to the accompanying image for visual guidance.
      
     ![EmbedSettings image](/static/assets/javascript/sample/images/embed-settings-download.png) 
     ![EmbedConfig Properties](/static/assets/javascript/sample/images/prop-core.png)
 
-  4. Copy the downloaded `embedConfig.json` file and paste it into the designated [location](https://github.com/boldbi/vue-with-aspnet-core-sample/tree/master/BoldBI.Embed.Sample/BoldBI.Embed.Sample) within the application. Please ensure you have placed it in the application as shown in the following image.
+  4. Please copy the downloaded `embedConfig.json` file and paste it into the designated [location](https://github.com/boldbi/vue-with-aspnet-core-sample/tree/master/BoldBI.Embed.Sample/BoldBI.Embed.Sample) within the application. Please make sure that you have placed it in the application exactly as shown in the image below.
 
      ![EmbedConfig Location Image](/static/assets/javascript/sample/images/vuejs-core-embedconfig.png)
 
@@ -70,17 +70,17 @@ A GitHub link has been provided to [get](https://github.com/boldbi/vue-with-aspn
       </tbody>
       </table>
 
- 5. Open your `ASP.NET Core` sample in **Visual Studio Code.**
+ 5. Please open your `ASP.NET Core` sample in **Visual Studio Code.**
     
- 6. Run the back-end `ASP.NET Core` sample using the following command `dotnet run`.
+ 6. To run the back-end `ASP.NET Core` sample, use the following command: `dotnet run`.
 
- 7. Open the `Vue` sample in a new window of **Visual Studio Code.**
+ 7. Please open the `Vue` sample in a new window of **Visual Studio Code.**
 
- 8. To install all dependent packages, use the following command `npm install.`
+ 8. To install all dependent packages, use the following command: `npm install.`.
 
- 9. Run your `Vue` sample using the following command `npm run serve`.
+ 9. To run your `Vue` sample, use the following command: `npm run serve`.
 
- 10. The dashboard can be editable in design mode and create a new dashboard with the following changes in the `renderDashboard()` method.
+ 10. The dashboard can be edited in design mode. Please create a new dashboard with the following changes in the `renderDashboard()` method.
 
      <meta charset="utf-8"/>
      <table>
@@ -123,50 +123,50 @@ A GitHub link has been provided to [get](https://github.com/boldbi/vue-with-aspn
       
 ## How this sample works
 
- 1. The application checks if `embedConfig.json` is available; if so, it `deserializes` and stores the content in `EmbedDetails`. Otherwise, it throws an error.
+ 1. The application checks if `embedConfig.json` is available; if it is, it `deserializes` and stores the content in `EmbedDetails`. Otherwise, it throws an error.
 
     ![embedconfig](/static/assets/javascript/sample/images/vuejs-core-embedconfigerror.png)
  
- 2. The dashboard will be rendered using the data obtained by using the `/getserverdetails` endpoint, which retrieves data from the `asp.net core` front-end.
+ 2. The dashboard will be rendered using the data obtained by utilizing the `/getserverdetails` endpoint, which retrieves data from the `asp.net core` front-end.
 
     ![Get server details](/static/assets/javascript/sample/images/vuejs-core-getseverdetails.png)
  
- 3. Before rendering, the `authorizationUrl` is called, which redirects to the `AuthorizationServer` action in the `Default.aspx`, which generates the `EmbedSignature` using the embed secret from the `embedConfig.json`.
+ 3. Before rendering, the `authorizationUrl` is called, which redirects to the `AuthorizationServer` action in `Default.aspx`. This action generates the `EmbedSignature` using the embed secret from `embedConfig.json`.
         
      ![Authorize Server URL](/static/assets/javascript/sample/images/vuejs-core-authentication.png)
     
- 4. These details will be sent to the Bold BI server and validated there. Once details are validated, the dashboard starts to render.
+ 4. These details will be sent to the Bold BI server and validated there. Once the details are validated, the dashboard starts to render.
 
 ## Steps to create new Vue.js with ASP.NET Core application to embed dashboard
 
- 1. Create a folder in the desired location and open it in the **Visual Studio Code**. 
+ 1. Please create a folder in the desired location and open it in **Visual Studio Code**. 
 
- 2. Open the terminal in **Visual Studio Code.** Please refer to the following image.
+ 2. Open the terminal in **Visual Studio Code.** Please refer to the image below.
  
      ![Terminal Image](/static/assets/javascript/sample/images/vuejs-core-terminal.png)
 
- 3. To create a new project, we need to run this command in the terminal and navigate to the directory.
+ 3. To create a new project, we need to run this command in the terminal and then navigate to the directory.
      ```js
          dotnet new webapi -n asp-net
      ```
 
- 4. Please ensure that you have enabled embed authentication on the `embed settings` page. If it is not currently enabled, please refer to the following image or detailed [instructions](https://help.boldbi.com/site-administration/embed-settings/#get-embed-secret-code) to enable it.
+ 4. Please ensure that you have enabled embed authentication on the `embed settings` page. If it is not currently enabled, please refer to the following image or detailed [instructions](/site-administration/embed-settings/#get-embed-secret-code) to enable it.
 
     ![Embed Settings](/static/assets/javascript/sample/images/embed-settings.png)
 
- 5. To download the `embedConfig.json` file, please follow this [link](https://help.boldbi.com/site-administration/embed-settings/#get-embed-configuration-file) for reference. Additionally, you can refer to the following image for visual guidance.
+ 5. To download the `embedConfig.json` file, please follow this [link](/site-administration/embed-settings/#get-embed-configuration-file) for reference. Additionally, you can refer to the image below for visual guidance.
 
     ![EmbedSettings image](/static/assets/javascript/sample/images/embed-settings-download.png)
 
     ![EmbedConfig Properties](/static/assets/javascript/sample/images/prop-core.png)
 
- 6. Copy the downloaded `embedConfig.json` file and paste it into the designated [location](https://github.com/boldbi/vue-with-aspnet-core-sample/tree/master/BoldBI.Embed.Sample/BoldBI.Embed.Sample) within the application. Please ensure you have placed it in the application as shown in the following image.
+ 6. Please copy the downloaded `embedConfig.json` file and paste it into the designated [location](https://github.com/boldbi/vue-with-aspnet-core-sample/tree/master/BoldBI.Embed.Sample/BoldBI.Embed.Sample) within the application. Please make sure that you have placed it in the application exactly as shown in the following image.
 
     ![EmbedConfig Location Image](/static/assets/javascript/sample/images/vuejs-core-embedconfig.png)
 
- 7. Create a new folder called `Models`. Create a model class as `DataClass.cs` to define the following properties. These properties are used to get the dashboard list from the server.
+ 7. Create a new folder named `Models`. Create a model class named `DataClass.cs` to define the following properties. These properties are used for retrieving the dashboard list from the server.
 
-    Execute the following commands in the terminal to add the necessary references to the project: `dotnet add package Newtonsoft.Json` and `dotnet add package System.Runtime.Serialization.Primitives`. Ensure the `System.Runtime.Serialization` and `Newtonsoft.Json` namespaces in the `DataClass.cs` model file.
+    To add the necessary references to the project, execute the following commands in the terminal: `dotnet add package Newtonsoft.Json` and `dotnet add package System.Runtime.Serialization.Primitives`. Make sure to include the `System.Runtime.Serialization` and `Newtonsoft.Json` namespaces in the `DataClass.cs` model file.
 
     ```js
     [DataContract]
@@ -229,7 +229,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/vue-with-aspn
     }
     ```
 
- 8. Create another model class as `GlobalAppSettings.cs` to define the following properties. These properties maintain the `embedConfig.json` file object within the `GlobalAppSettings`.
+ 8. Create another model class called `GlobalAppSettings.cs` to define the following properties. These properties will maintain the `embedConfig.json` file object within the `GlobalAppSettings`.
 
     ```js 
     public class GlobalAppSettings
@@ -238,7 +238,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/vue-with-aspn
     }
     ```
 
- 9. Create a class `BoldBIEmbedController.cs` in the `Controllers` folder. To get particular dashboard details, define an API `AuthorizationServer()` using the `GetSignatureUrl()` method to generate the algorithm. In this API, the `embedQuerString`,`userEmail`, and the value from the `GetSignatureUrl()` method are appended as the query parameters in the URL to authorization server of particular dashboard. Include the `Newtonsoft.Json`, `System.Security.Cryptography`, `System.Net.Http` and `Microsoft.AspNetCore.Mvc` namespaces.
+ 9. Please create a class called `BoldBIEmbedController.cs` in the `Controllers` folder. To retrieve specific dashboard details, define an API called `AuthorizationServer()` that utilizes the `GetSignatureUrl()` method to generate the algorithm. In this API, append the `embedQueryString`, `userEmail`, and the value from the `GetSignatureUrl()` method as query parameters in the URL to the authorization server of the particular dashboard. Make sure to include the following namespaces: `Newtonsoft.Json`, `System.Security.Cryptography`, `System.Net.Http`, and `Microsoft.AspNetCore.Mvc`.
 
     ```js
     [ApiController]
@@ -309,7 +309,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/vue-with-aspn
     }
     ```
 
- 10. Open the `Program.cs` file and add the following code sample before `app.UseHttpsRedirection()`.
+ 10. Open the `Program.cs` file and insert the following code snippet before `app.UseHttpsRedirection()`.
 
      ```js
      app.UseCors(corsPolicyBuilder => corsPolicyBuilder
@@ -323,16 +323,16 @@ A GitHub link has been provided to [get](https://github.com/boldbi/vue-with-aspn
        pattern: "{controller=BoldBIEmbed}/{action=Get}/{id?}");
      ```
 
- 11. Create another folder in the desired location and open it in the **Visual Studio Code.**
+ 11. To create another folder in the desired location and open it in **Visual Studio Code.**
  
- 12. To create a new Vue.js project, we need to run this command in the terminal and select the second option.
+ 12. To create a new Vue.js project, we need to execute this command in the terminal and choose the second option.
      
      ```js
           vue create vue
      ```
      ![Defualt preset](/static/assets/javascript/sample/images/vuejs-core-preset.png)
      
- 13. Open the `App.vue` and replace the following code.
+ 13. Please open the `App.vue` file and replace the existing code with the following.
 
      ```js
      <template>
@@ -394,9 +394,9 @@ A GitHub link has been provided to [get](https://github.com/boldbi/vue-with-aspn
      </script>
      ```
 
-     > **NOTE:** Open the `launchSettings.json` file, `applicationUrl` is copied and pasted in `apiHost`.
+     > **NOTE:** Open the `launchSettings.json` file, copy the `applicationUrl`, and paste it in the `apiHost`.
 
- 14. Open the `package.json` and replace code in the file.
+ 14. Please open the `package.json` file and replace the code within it.
 
      ```js
      {
@@ -447,6 +447,6 @@ A GitHub link has been provided to [get](https://github.com/boldbi/vue-with-aspn
      }
      ```
 
- 15. Then, run the ASP.NET core application by `dotnet run` command.
+ 15. Then, run the ASP.NET Core application using the `dotnet run` command.
  
- 16. Open the `vue` and use this command to install dependent dependencies `npm install` and run the sample by the `npm run serve` command to render the dashboard.
+ 16. Open the `vue` and use this command to install dependencies `npm install` and run the sample by using the `npm run serve` command to render the dashboard.

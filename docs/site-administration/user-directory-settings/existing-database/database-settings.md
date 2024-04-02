@@ -13,22 +13,22 @@ This section explains how to configure Database Settings with the Bold BI Embedd
 
 ## Get Database Connection Details
 
-To import users into Bold BI Embedded from an Existing Database, configure the existing database details in database settings page in the User Directories page of Bold BI. 
+To import users into Bold BI Embedded from an Existing Database, configure the existing database details on the database settings page in the User Directories section of Bold BI.
 
 ![Import Users from Database - Home](/static/assets/site-administration/images/import-users-home-page-new.png#width=60%)
 
-Users can be imported from below types of Databases.
+Users can be imported from the following types of Databases:
 
 1. SQL Server
 2. PostgreSQL
 
-To select the database type from which the users to be imported, click on `Database type` dropdown.
+To select the type of database from which the users will be imported, click on the `Database type` dropdown.
 
 ![Select Database Type](/static/assets/site-administration/images/select-database-type-new.png#width=60%)
  
 ### SQL Server Database
  
-For SQL Server Database, fill the form with Server name, Authentication type, Username, Password and Database name.
+For SQL Server Database, complete the form with the Server name, Authentication type, Username, Password, and Database name.
  
 The connection details can be tested by clicking the `Test Connection` option.
   
@@ -36,43 +36,43 @@ The connection details can be tested by clicking the `Test Connection` option.
  
 ### PostgreSQL Database
  
-For PostgreSQL Database, fill the form with Server name, Port, Username, Password and Database name.
+For PostgreSQL Database, complete the form with the Server name, Port, Username, Password, and Database name.
  
 The connection details can be tested by clicking the `Test Connection` option.
  
 ![Connect PostgreSQL Database](/static/assets/site-administration/images/connect-database-postgresql-new.png#width=60%)
  
-Once the connection details are filled, click `Next` for getting schema of the provided database connection.
+Once the connection details are filled, click `Next` to retrieve the schema of the provided database connection.
 
 ![Connect Database](/static/assets/site-administration/images/connect-database-new.png)
 
 ## Map Database Columns
 
-The page will look like below once the database has been connected.
+The page will appear as shown below once the database has been connected.
 
 ![Select Column](/static/assets/site-administration/images/database-select-columns-new.png)
 
-Select the matched columns from the database schema for Username, First name, Email address, Last name(Optional) and IsActive (Optional) fields.
+Select the corresponding columns from the database schema for Username, First name, Email address, Last name (Optional), and IsActive (Optional) fields.
 
 ![Match Database Column](/static/assets/site-administration/images/match-database-columns-new.png)
 
-If the columns are selected from different tables, below scenarios will happen.
+If the columns are selected from different tables, the following scenarios will occur:
 
-* If the tables have single relationship - The join will be made with the particular relationship.
+* If the tables have a single relationship - A join will be made with that specific relationship.
 
-* If the tables have multiple relationships - The relationship can be selected from the list of relationships and then click on `Apply`
+* If the tables have multiple relationships - The relationship can be selected from the list of relationships and then click on `Apply`.
 
 ![Select Table Relation](/static/assets/site-administration/images/select-relation.png)
 
-* If there is no relationship between tables - Form Join with the selected tables and then click on `Apply`
+* If there is no relationship between tables - Form a join with the selected tables and then click on `Apply`.
 
 ![Form Table Relation](/static/assets/site-administration/images/form-relation.png#width=60%)
 
-After selection of all columns, click on `Save` to save the database details. Based on this saved details it will pull the users from the configured Database.
+After selecting all columns, click on `Save` to retain the database details. Based on these saved details, users will be pulled from the configured Database.
 
 ![Saving database details](/static/assets/site-administration/images/save-database-details.png)
 
 
 ![Successful saving](/static/assets/site-administration/images/database-details-saved.png#width=55%)
 
-Also included the `Back` button in the settings page to edit the database details before complete mapping and saving the database configuration.
+Additionally, include a `Back` button on the settings page to edit the database details before completing mapping and saving the database configuration.

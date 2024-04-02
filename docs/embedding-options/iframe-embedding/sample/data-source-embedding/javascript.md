@@ -7,7 +7,7 @@ documentation: ug
 ---
 
 # Data Source view
-This section explains how to embed the Bold BI data source into the sample application by integrating the item listing and designing modules.  
+This section explains how to integrate the Bold BI data source into the sample application by embedding the item listing and designing modules. 
 
 ![DatasourceListingSample](/static/assets/iFrame-based/sample/images/Datasource_Iframe_js.png)
 
@@ -16,22 +16,22 @@ This section explains how to embed the Bold BI data source into the sample appli
  * [Node.js](https://nodejs.org/en/)
  * [Visual Studio Code](https://code.visualstudio.com/download)
 
- > **NOTE:** Node.js v14.16 to v18.18 are supported.
+ > **NOTE:** Node.js versions 14.16 to 18.18 are supported.
 
 ## How to run the sample
 
-* Please get the [Iframe DataSource embedding Javascript](https://github.com/boldbi/iframe-datasource-javascript-sample) sample from GitHub.
+* Please retrieve the sample of the [Iframe DataSource embedding Javascript](https://github.com/boldbi/iframe-datasource-javascript-sample) from GitHub.
 
-* Please ensure that you have enabled embed authentication on the `embed settings` page. If it is not currently enabled, please refer to the following image or detailed [instructions](https://help.boldbi.com/site-administration/embed-settings/#get-embed-secret-code) to enable it.
+* Please make sure that you have enabled embed authentication on the `embed settings` settings page. If it is not currently enabled, please refer to the following image or detailed [instructions](http/site-administration/embed-settings/#get-embed-secret-code) to enable it.
 
     ![Embed Settings](/static/assets/javascript/sample/images/embed-settings.png)
 
-* To download the `embedConfig.json` file, please follow this [link](https://help.boldbi.com/site-administration/embed-settings/#get-embed-configuration-file) for reference. Additionally, refer to the following image for visual guidance.
+* To download the `embedConfig.json` file, please click on the following [link](/site-administration/embed-settings/#get-embed-configuration-file). Additionally, you can refer to the image below for visual guidance.
 
     ![Embed Settings Download](/static/assets/javascript/sample/images/embed-settings-download.png)
     ![EmbedConfig Properties](/static/assets/javascript/sample/images/prop-core.png)
 
-* Copy the downloaded `embedConfig.json` file and paste it into the designated [location](https://github.com/boldbi/iframe-datasource-javascript-sample/tree/master) within the application. Please ensure that you have placed it in the application as shown in the following image.
+* Please copy the downloaded `embedConfig.json` file and paste it into the designated [location](https://github.com/boldbi/iframe-datasource-javascript-sample/tree/master) within the application. Make sure that you have placed it in the application as shown in the following image.
   
     ![EmbedConfig image](/static/assets/iFrame-based/sample/images/Datasource_Iframe_js_EmbedConfig.png)
 
@@ -68,40 +68,40 @@ This section explains how to embed the Bold BI data source into the sample appli
     </tr>
     </tbody>
     </table>
- * Open the terminal in Visual Studio code and and run this command to install the `http-server` package,  which enables the sample to run a local HTTP server.
+ * Open the terminal in Visual Studio Code and run this command to install the `http-server` package. This package enables the sample to run a local HTTP server.
      ```bash
         npm install -g http-server
      ```
- * Run this command to initiate the HTTP server on a specific port(eg. `http-server -p 8000`)
+ * To initiate the HTTP server on a specific port (for example, `http-server -p 8000`), run this command.
    
      ```bash
         http-server -p <port number>
       ```
-     > **NOTE:** Replace `<port number>` with the desired port number
+     > **NOTE:** Please replace `<port number>` with the desired port number.
 
- * Once the server runs, open your web browser and navigate to the `DatasourceListing.html` file(eg. `http://localhost:8000/DatasourceListing.html`).
+ * Once the server is running, open your web browser and go to the `DatasourceListing.html` file (for example, `http://localhost:8000/DatasourceListing.html`).
 
     ![DatasourceListingSample](/static/assets/iFrame-based/sample/images/Datasource_Iframe_js.png)
   
 ## How the Sample works
 
-* Utilizing the `XMLHttpRequest` built-in browser object, retrieve data from the `embedConfig.json` file within the `DatasourceListing.html`. If the `embedConfig.json` file is not found, the `showError()` function will throw an error
+* Using the built-in browser object `XMLHttpRequest` retrieve data from the `embedConfig.json` file within the `DatasourceListing.html`. If the `embedConfig.json` file is not found, the `showError()` function will throw an error.
 
 	![Datasource_iframe_js_embedconfigScript](/static/assets/iFrame-based/sample/images/Datasource_Iframe_js_embdConfigScript.png)
 
-* The `getToken()` function generates an authorization token using the user's email and embed secret key from the `apiRequest object`. The obtained token is stored in the `accessToken` variable.
+* The `getToken()` function generates an authorization token by utilizing the user's email and embedded secret key from the `apiRequest object`. he resulting token is then stored in the `accessToken` variable.
   
   	![Datasource_iframe_js_gettoken](/static/assets/iFrame-based/sample/images/Datasource_Iframe_js_gettoken.png)
 
-* The `showDatasourceListing()` function makes a GET request to the `dashboardServerApiUrl/v2.0/items?ItemType=4` endpoint with the `accessToken` as the authorization header. The `accessToken` is obtained from the `getToken()` function. The obtained data is stored in the `datasource` variable.
+* The `showDatasourceListing()` function sends a GET request to the `dashboardServerApiUrl/v2.0/items?ItemType=4` endpoint, including the `accessToken` as the authorization header. The `accessToken` is obtained from the `getToken()` function. The received data is then stored in the `datasource` variable.
   
   	![Datasource_iframe_js_DatasourceListing](/static/assets/iFrame-based/sample/images/Datasource_Iframe_js_DatasourceListing.png)
   
-* If the `datasource` variable is not empty, a div element is created for each datasource item and added to the panel element. This will make the datasource list visible. 
+* If the `datasource` variable is not empty, a div element is created for each item in the datasource and added to the panel element. This action will result in the datasource list becoming visible.
    
    ### Creating a new Data Source
 
-   * When the create button is clicked on the data source page, the `openDesignerForCreate()` function is activated. This function sets up the environment for creating a data source by removing existing content. Subsequently, it generates an embedded view using an `<iframe>` element, which directs to the data source designer page.
+   * When the create button is clicked on the data source page, the `openDesignerForCreate()` function is activated. This function sets up the environment for creating a data source by removing existing content. Subsequently, it generates an embedded view using an `<iframe>`element, which directs to the data source designer page.
 
 	 	![Datasource_create_button](/static/assets/iFrame-based/sample/images/Datasource_create_button.png)
 	        
@@ -109,6 +109,6 @@ This section explains how to embed the Bold BI data source into the sample appli
  
    ###  Editing an existing Data Source
   
-   * The `openDesignerForEdit()` method is invoked when we click any data source in the data source listing container. It retrieves the item ID and data source name from the properties of the clicked item and uses them to open the data source designer page for editing within the "datasource" element. 
+   * The `openDesignerForEdit()` method is called when we click on any data source in the data source listing contain-er. It retrieves the ID and name of the clicked item from its properties and utilizes them to open the data source designer page for editing within the "datasource" element.
 
      	![Datasource_iframe_js_edit](/static/assets/iFrame-based/sample/images/Datasource_Iframe_js_edit.png)

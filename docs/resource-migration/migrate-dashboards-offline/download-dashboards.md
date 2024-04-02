@@ -8,7 +8,7 @@ documentation: ug
 
 # Download dashboards in the Bold BI application
 
-In Bold BI, it's possible to download dashboards from tenants deployed on your server. Here is a step-by-step guide on how to download dashboards from sites in Bold BI:
+It is possible to download dashboards from tenants deployed on your server. Here is a step-by-step guide on how to download dashboards from sites in Bold BI:
 
 ## Prepare dashboards for download
 
@@ -87,7 +87,7 @@ You can grant download permission to users in two ways: either from the `Dashboa
 
 	![Share Permission](/static/assets/resource-migration/migrate-dashboards-offline/images/share-permission.png)
 
-2. Select the download permission access and search for the users or groups in the search box and click the `Share` button to provide the download permission for that dashboard.
+2. Select the download permission access and search for the users or groups in the search box, then click the `Share` button to provide the download permission for that dashboard.
 
 	![Add Permission](/static/assets/resource-migration/migrate-dashboards-offline/images/add-permission.png#width=55%)
 	
@@ -108,11 +108,11 @@ You can grant download permission to users in two ways: either from the `Dashboa
 
    ![Add Permission](/static/assets/resource-migration/migrate-dashboards-offline/images/add-download-permission.png)
 
-As we previously outlined the steps for granting download permissions to a user, you can follow a similar process for a group. Navigate to the group listing page, select `Manage Permissions` for the desired group, and add the download permission.
+As previously outlined, the steps for granting download permissions to a user can be followed for a group as well. Navigate to the group listing page, select `Manage Permissions` for the desired group, and add the download permission.
 
 ## Limitations of OAuth Data Sources
 
-* As of now, dashboards that are created with data sources that have OAuth cannot be uploaded successfully. Below is the list of data sources with OAuth that cannot be uploaded.<Br>
+* Dashboards created with data sources that have OAuth cannot be uploaded successfully at this time. The following is a list of data sources with OAuth that cannot be uploaded.<Br>
 
       1.Asana
       2.AzureDevOps
@@ -164,15 +164,15 @@ As we previously outlined the steps for granting download permissions to a user,
 
 * ### Access Token Validation for Dashboard Upload in Google BigQuery
 
-   * When uploading a dashboard to Google BigQuery, it is important to validate the access token's active status before proceeding with the upload. By ensuring that the access token is active, you can successfully upload the dashboard.
+   * When uploading a dashboard to Google BigQuery, validating the access token's active status is important before uploading. You can successfully upload the dashboard by ensuring the access token is active.
 
-   * Remember to regularly monitor the access token's validity and generate new tokens as needed to maintain a smooth uploading experience.
+   * Regularly monitor the access token's validity and generate new tokens to maintain a smooth uploading experience.
 
 *  ### Authorization Requirement for Uploading Google BigQuery Dashboard to Other Sites
 
    * When uploading a Google BigQuery dashboard to other sites, it is essential to ensure that the respective sites have authorized access to the Google BigQuery data source.
 
-   * This [authorization process](/working-with-data-source/data-connectors/google-bigquery/#Choose-a-Google-BigQuery-data-source) guarantees secure and authorized sharing of data between Google BigQuery and external sites.
+   * This [authorization process](/working-with-data-sources/data-connectors/google-bigquery/#Choose-a-Google-BigQuery-data-source) guarantees secure and authorized sharing of data between Google BigQuery and external sites.
 
 ##  Limitations of Changing SQL Data Sources Mode During Dashboard Upload
 

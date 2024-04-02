@@ -224,4 +224,4 @@ The samples have been created in other platforms to embed the Bold BI Dashboard.
 
  2. The SignatureUrl will be generated with the provided EmbedSecret key and validate the embed details in Bold BI. Once details are validated, the dashboard starts to render using the `renderDashboard()` method available in the `home.page.ts`.
 
- 3. In the `home.page.ts`, change the dashboard Id of the respective dashboard as you wish to embed.
+ 3. In the `home.page.ts` file, change the dashboard Id of the respective dashboard as you wish to embed.

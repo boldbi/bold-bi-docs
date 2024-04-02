@@ -8,9 +8,9 @@ documentation: ug
 
 # Bold BI Dashboards embedding in ASP.NET Web Forms using Embedded SDK
 
-A GitHub link has been provided to [get](https://github.com/boldbi/aspnet-web-forms-sample) the sample application, which demonstrates the dashboard rendering with the list of dashboards available in your Bold BI server and followed by steps to create new embedding application in the `ASP.NET Web Forms` on your own. 
+A GitHub link has been provided to [get](https://github.com/boldbi/aspnet-web-forms-sample) the sample application, which demonstrates the rendering of the dashboard and provides a list of available dashboards on your Bold BI server. It is followed by steps to create a new embedding application in `ASP.NET Web Forms`. 
 
-> **NOTE:** The best way to get started would be reading the [Getting Started](/getting-started/embedding-in-your-application/) section of the documentation to start using first. The `Getting Started` guide gives you enough information that you need to know before working on the sample.  
+> **NOTE:** It is recommended to read the [Getting Started](/getting-started/embedding-in-your-application/) section of the documentation before getting started. The `Getting Started` guide provides comprehensive information that you need to know before working with the sample.  
 
 ## How to run the sample
 
@@ -50,7 +50,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/aspnet-web-fo
        </tbody>
        </table>
 
-3. Run your ASP.NET Web Forms sample.
+3. Please run your ASP.NET Web Forms sample
 4. The dashboard can be rendered in design mode or created with the following changes in the `Init()` method.
 
     ```js
@@ -108,26 +108,26 @@ A GitHub link has been provided to [get](https://github.com/boldbi/aspnet-web-fo
 
 ## How this sample works
 
-1. Based on the provided embed details with the dashboard, authorize the server URL by calling the `GetEmbedDetails` function, `(Default.aspx/GetEmbedDetails)`call, and the provided `EmbedProperties` values. Learn more about authorize server [here](/security-configuration/authorize-server/)
+1. Based on the embedded details provided with the dashboard, authorize the server URL by calling the `GetEmbedDetails` function `(Default.aspx/GetEmbedDetails)` and passing the provided `EmbedProperties` values. Learn more about authorizing the server [here](/security-configuration/authorize-server/)
 
     ![Authorize Server URL](/static/assets/javascript/sample/images/asp-net-api-v1.png)
     ![Get Embed Details](/static/assets/javascript/sample/images/asp-net-authorize-v1.png)
 
 2. In the above authorization, the `SignatureUrl` is generated with the provided `EmbedSecret key` and validated embed details in Bold BI. Once details are validated, the dashboard starts to render.
 
-3. In the `Site.Master`, change the dashboard Id of the respective dashboard as you wish to embed.
+3. In the `Site.Master`change the dashboard Id of the respective dashboard as desired for embedding.
 
     ![Set Dashboard Id](/static/assets/javascript/sample/images/asp-net-dashboard-v1.png)
 
 ## Steps to create new ASP.NET Web Forms application to embed dashboard
 
-1. Start Visual Studio and click `Create a new project`.
-2. Choose ASP.NET Web Application (.NET Framework), then click `Next`.
+1. To begin, open Visual Studio and select `Create a new project`.
+2. Next, select ASP.NET Web Application (.NET Framework) and click on `Next`.
     ![SelectProject](/static/assets/javascript/sample/images/MVC_framework.png)
-3. Change the project name as you want, then click `Create`.
-4. Choose Web Forms and Web API, then click `OK`.
+3. Please feel free to change the project name as you wish, and then click on `Create`.
+4. Next, select Web Forms and Web API, and click `OK`.
     ![SelectProject](/static/assets/javascript/sample/images/asp_net_create_project.png)
-5. Under the model folder, create the `EmbedProperties.cs` class to define the mandatory properties as follows.
+5. Please create the `EmbedProperties.cs` class under the model folder to define the mandatory properties as follows.
 
     ```js
     public class EmbedProperties
@@ -139,7 +139,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/aspnet-web-fo
         public static string EmbedSecret = "";
     }        
     ```
-6. Open the `Default.aspx.cs` implement an API `GetEmbedDetails()`, which invokes the `GetSignatureUrl()` method as follows.
+6. Open the `Default.aspx.cs` and implement an API called `GetEmbedDetails()`. This API should invoke the `GetSignatureUrl()`method in the following manner.
     ```js
     [WebMethod()]
         public static void GetEmbedDetails(string embedQuerString, string dashboardServerApiUrl)
@@ -180,13 +180,13 @@ A GitHub link has been provided to [get](https://github.com/boldbi/aspnet-web-fo
             }
         }        
     ```
-    In this API, the `embedQuerString`,`userEmail` and the value from the `GetSignatureUrl()` method are appended as query parameters in the URL to get details of a particular dashboard from the server.
+    In this API, the `embedQuerString`,`userEmail` and the value from the `GetSignatureUrl()` method are appended as query parameters in the URL to retrieve details of a specific dashboard from the server.
 
-7. In the `Site.Master`, refer to the following file, which is mandatory to render the dashboard.
+7. In the `Site.Master`, please refer to the following file, as it is necessary for rendering the dashboard.
     ```js
     <script src="https://cdn.boldbi.com/embedded-sdk/v6.8.9/boldbi-embed.js"></script> 
     ```
-8. In the `<body>` section, initialize the method as `Init()` and remove the existing header container. In the `<script>`tag, implement its functionality as follows.
+8. In the `<body>` section, initialize the method as `Init()` and remove the existing header container. Implement its functionality in the `<script>`tag, implement its functionality as follows.
     ```js
     <script type="text/javascript">
         var dashboardId = "db8d3eb2-a608-4ffd-9aad-cd51278e1531";

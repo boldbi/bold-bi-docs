@@ -17,7 +17,7 @@ Pivot grid allows you to display summarized data in cross tabular format i.e., i
 
 ## How to configure table data to pivot grid?
 
-> **NOTE:** Before adding the Pivot grid widget to the design layout, make sure to create the data source. You can refer to [this section](/working-with-data-source/creating-a-new-data-source/) to learn how to create a new data source. 
+> **NOTE:** Before adding the Pivot grid widget to the design layout, make sure to create the data source. You can refer to [this section](/working-with-data-sources/creating-a-new-data-source/) to learn how to create a new data source. 
 
 Pivot grid need a minimum of 1 value , 1 row and 1 column element to showcase proper pivot table details. The measure or expression field that you would like to analyze can be dropped into `Value(s)` field. The dimension that you would like to categorize the measure based on row and column can be dropped in `Row(s)` and `Column(s)` field.
 

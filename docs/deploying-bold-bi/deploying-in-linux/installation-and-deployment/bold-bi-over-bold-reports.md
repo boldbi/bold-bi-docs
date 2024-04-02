@@ -6,29 +6,29 @@ platform: bold-bi
 documentation: ug
 ---
 
-# Install Bold BI when Bold Reports exists
+# Install Bold BI when Bold Reports already exists
 
-1. Register and download the Bold BI Linux package from [here](/deploying-bold-bi/overview/#registration-and-download).
+1. Register and download the Bold BI Linux package from this [link](https://www.boldbi.com/account/).
 
-2. Download the Bold BI Linux package by running the following command.
+2. Download the Bold BI Linux package by executing the following command:
 
     ~~~shell
     sudo wget {Bold BI Linux package link}
     ~~~
 
-3. Extract the zip file.
+3. Extract the zip file by executing the following command:
 
     ~~~shell
     sudo unzip {Bold BI Linux package zip file}
     ~~~ 
 
-4. Change the directory to `BoldBIEnterpriseEdition-Linux` by running the following command. 
+4. Change the directory to `BoldBIEnterpriseEdition-Linux` by executing the following command: 
 
     ~~~shell
     cd BoldBIEnterpriseEdition-Linux
     ~~~ 
  
-5. Execute the following command to deploy Bold BI in your Linux machine. 
+5. Deploy Bold BI on your Linux machine by executing the following command:
  
     ~~~shell
     sudo bash install-boldbi.sh -i {new} -u {user} -h {host URL} -n {true} 
@@ -36,29 +36,28 @@ documentation: ug
 
 * **i :** Installation type - Specifies it is a new installation.
 
-* **u :** Specify the user or group that manages the service which is used for the Bold Reports application.
+* **u :** Specify the user or group that manages the service used for the Bold Reports application.
 
 * **h :** Same Domain or IP address of the machine with http protocol used for Bold Reports application. 
 
-* **n :** Setting this to “true” will automatically configure the Bold BI with the Nginx front-end server. 
+* **n :** Setting this to “true” will automatically configure Bold BI with the Nginx front-end server. 
 
-    Example for new installation,
+    Example for new installation:
     ~~~shell
     sudo bash install-boldbi.sh -i new -u www-data -h http://linux.example.com -n true
     ~~~ 
 
-    > Note: Here, pass the same host URL which you used to deploy Bold Reports.
+    > Note: Use the same host URL that you used to deploy Bold Reports.
 
-6.	After executing the above installation command, give `yes` and Press `enter`.
+6.	After executing the above installation command, give `yes` and press `enter`.
      ![confirmation](/static/assets/installation-and-deployment/images/bold-reports-confirm.png)
 
-7. Now, Bold BI is installed on the same machine as Bold reports.
+7. Bold BI is now installed on the same machine as Bold Reports.
 
-8. Follow [this](/application-startup/latest/#activate-bold-bi-license) document to activate the Bold BI license and create a site for the Bold BI application.
+8. Refer to [this](/application-startup/latest/#activate-bold-bi-license) document to activate the Bold BI license and create a site for the Bold BI application.
 
-   > **Note:** If you are facing any issues in site creation, restart all services using the following command.
+   > **Note:** If you encounter any issues during site creation, restart all services using the following command:
    
    ~~~sh
    sudo systemctl restart bold-*
    ~~~
-   

@@ -12,13 +12,13 @@ documentation: ug
 
 1. Install [Nginx](https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-centos-8).
 
-2. Install the `GDIPlus` package using the following command.
+2. Install the `GDIPlus` package using the following command:
 
     ~~~shell
     sudo yum install libgdiplus 
     ~~~ 
 
-3. Add an `openssl conf` path in the environment, if does not exist.
+3. Add an `openssl conf` path in the environment, if does not exist:
 
 	~~~shell
     export OPENSSL_CONF=/etc/ssl/
@@ -28,7 +28,7 @@ documentation: ug
 
 1. Register and download the Bold BI Linux package from this [link](/deploying-bold-bi/overview/#registration-and-download).
 
-2. Update the highlighted URLs in the `product.json` file, located in `{extracted location}/boldbi/app_data/configuration/.` 
+2. Update the highlighted URLs in the `product.json` file, located in `{extracted location}/boldbi/app_data/configuration/`. 
 
     ![Product Json](/static/assets/installation-and-deployment/images/product-json.png)
 
@@ -42,7 +42,7 @@ documentation: ug
 
     > **NOTE:** Please create the `/var/www` folder, if doesn’t exist.
  
-4. Provide executable permission to dotnet file, located in `/var/www/boldbi-embedded/dotnet/.` 
+4. Provide executable permission to dotnet file, located in `/var/www/boldbi-embedded/dotnet/`:
 
     ~~~shell
     sudo chmod +x /var/www/boldbi-embedded/dotnet/dotnet  
@@ -54,11 +54,11 @@ documentation: ug
     
     ![Update User Account](/static/assets/installation-and-deployment/images/update-user-account.png)
 
-    b. Add the following line `Environment=LD_LIBRARY_PATH=/usr/local/lib.` 
+    b. Add the following line: `Environment=LD_LIBRARY_PATH=/usr/local/lib`. 
 
     ![Add Environment](/static/assets/installation-and-deployment/images/environment.png)
 
-6. Change the ownership of all directories to user or group.
+6. Change the ownership of all directories to user or group:
 
     ~~~shell
     sudo chown -R {{username or group}} /var/www/boldbi-embedded/   
@@ -106,7 +106,7 @@ documentation: ug
  
 1.	 To configure Nginx as a reverse proxy to forward requests to the Bold BI app, copy the Nginx configuration file from the `{extracted location}/boldbi-nginx-config to /etc/nginx/conf.d` folder.
 
-2.	Rename the Nginx configuration file to `boldbi-nginx-config.conf.`  
+2.	Rename the Nginx configuration file to `boldbi-nginx-config.conf`.  
 
 3.	Once the Nginx configuration is established, run the `sudo nginx -t` to verify the syntax of the configuration files.  
 

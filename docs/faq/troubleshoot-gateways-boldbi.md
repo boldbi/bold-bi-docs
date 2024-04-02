@@ -56,11 +56,11 @@ Please follow the instructions [here](/faq/how-to-resolve-login-failed-for-user-
 ![Error image Couldn't connect to server](/static/assets/faq/images/error-couldnot-connect-to-server.png)
 
 The following factors led to this type of error:<br/>
-1. If any the IP addresses specified at [Bold BI Cloud IP addresses](/working-with-data-source/white-list-ip-address-bold-bi-cloud/) weren't whitelisted.
+1. If any the IP addresses specified at [Bold BI Cloud IP addresses](/working-with-data-sources/white-list-ip-address-bold-bi-cloud/) weren't whitelisted.
 2. If pooling was not defined when a data source was created in Bold BI.
 
 **Solution**<br>
-This problem can be fixed by including the pooling value in additional connection parameter when creating the data source. **Additional connection parameters: Pooling=True; Connection Reset=false** and whitelisting the IP addresses mentioned in [Bold BI Cloud IP addresses](/working-with-data-source/white-list-ip-address-bold-bi-cloud/) 
+This problem can be fixed by including the pooling value in additional connection parameter when creating the data source. **Additional connection parameters: Pooling=True; Connection Reset=false** and whitelisting the IP addresses mentioned in [Bold BI Cloud IP addresses](/working-with-data-sources/white-list-ip-address-bold-bi-cloud/) 
 <br/>Please refer to the following image<br/>
 
 ![Solution image Couldn't connect to server](/static/assets/faq/images/solution-couldnot-connect-to-server.png)
@@ -123,7 +123,7 @@ Use the following commands to verify and change the settings.<br/>
 This error occurs when Bold BI connects to a MySQL server over SSL without adding the SSL specification.<br/>
 
 **Solution**<br/>
-1. Check if the IP addresses mentioned in the provided link [Bold BI Cloud IP addresses](/working-with-data-source/white-list-ip-address-bold-bi-cloud/) are whitelisted.
+1. Check if the IP addresses mentioned in the provided link [Bold BI Cloud IP addresses](/working-with-data-sources/white-list-ip-address-bold-bi-cloud/) are whitelisted.
 2. Verify whether the person who logs in can access the MySQL server.
 3. This issue can be resolved by including **SslMode=Required** in an additional connection parameter.
 ![Solution image unable to connect MySQL in SSL mode](/static/assets/faq/images/solution-mysql-ssl.png)

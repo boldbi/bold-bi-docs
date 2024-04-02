@@ -9,7 +9,7 @@ documentation: ug
 
 # How to add threshold to a Chart widget 
 
-You can show the threshold line in the chart widget using both the [Expressions](/working-with-data-source/transforming-data/configuring-expression-columns/) field and [Dashboard Parameter](/working-with-data-source/dashboard-parameter/configuring-dashboard-parameters/) support of the Bold BI application. 
+You can show the threshold line in the chart widget using both the [Expressions](/working-with-data-sources/data-modeling/configuring-expression-columns/) field and [Dashboard Parameter](/working-with-data-sources/dashboard-parameter/configuring-dashboard-parameters/) support of the Bold BI application. 
 
 * `Expression field`: You can use this option to show a static threshold value for all users.
 * `Dashboard Parameter`: You can use this option to select the dynamic threshold value. You can use this along with the user-based filter to show the threshold value based on the user currently viewing the dashboard.
@@ -18,12 +18,12 @@ Please follow these steps:
 
 1. Create a Dashboard parameter of `Numeric` type and it can be either a constant value or data from any table. Refer to these sections:
 
-   * [Literal Mode](/working-with-data-source/dashboard-parameter/configuring-dashboard-parameters/#literal-mode): To create a constant value dashboard parameter.
-   * [List Data Source Type](/working-with-data-source/dashboard-parameter/configuring-dashboard-parameters/#list-data-source-type): To get a Maximum value of the required column using the `Custom Query` dashboard parameter.
+   * [Literal Mode](/working-with-data-sources/dashboard-parameter/configuring-dashboard-parameters/#literal-mode): To create a constant value dashboard parameter.
+   * [List Data Source Type](/working-with-data-sources/dashboard-parameter/configuring-dashboard-parameters/#list-data-source-type): To get a Maximum value of the required column using the `Custom Query` dashboard parameter.
 
-   >**NOTE:** You can [change this parameter](/working-with-data-source/dashboard-parameter/change-the-dashboard-parameter-value-dynamically/) value while viewing the dashboard.
+   >**NOTE:** You can [change this parameter](/working-with-data-sources/dashboard-parameter/change-the-dashboard-parameter-value-dynamically/) value while viewing the dashboard.
 
-2. Create an [Expression column](/working-with-data-source/dashboard-parameter/uses-of-dashboard-parameters/#expression) using the dashboard parameter along with the `Max` function.
+2. Create an [Expression column](/working-with-data-sources/dashboard-parameter/uses-of-dashboard-parameters/#expression) using the dashboard parameter along with the `Max` function.
 
    `Syntax: MAX(Parameter)`
 

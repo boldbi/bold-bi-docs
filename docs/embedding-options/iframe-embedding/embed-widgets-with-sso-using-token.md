@@ -8,7 +8,7 @@ documentation: ug
 
 # Embed Widget with SSO using Token
 
-Bold BI supports embedding the widgets with iFrame based Single Sign-On(SSO) using token based authentication.
+Bold BI supports embedding widgets with iFrame-based Single Sign-On (SSO) using token-based authentication.
 
 ## How to get the Embed Widget Url
 
@@ -24,7 +24,7 @@ The embed URL should be in the following format.
 
 `{dashboard URL}/{embed parameters}&embed_signature={signature}`
 
-Please find the details of the parameter in the URL as follows. 
+Please find the details of the parameter in the URL below. 
 
 <table>
 <tr>
@@ -94,7 +94,7 @@ The following embed URL is the formation of the <strong>dashboard URL</strong>, 
 
 </table>
 
-> **NOTE:** The generated Iframe signature URL is valid for an indefinite amount of time because the embed_timestamp and embed_expirationtime parameters are optional parameters. If you want to set the default 6 days validity period for the generated iframe URL, use the embed_timestamp.
+> **NOTE:** The generated iframe signature URL is valid indefinitely because the embed_timestamp and embed_expirationtime parameters are optional. If you want to set the default validity period of 6 days for the generated iframe URL, use the embed_timestamp.
 
 ### Optional Embed Parameters
 
@@ -168,13 +168,13 @@ Please get the [Embed Widget with SSO using Token](https://github.com/boldbi/ifr
 
 ## Generating the embed signature for the embed URL
 
-<strong>Embed parameters</strong> and the [Embed Secret Key](https://help.boldbi.com/site-administration/embed-settings/#get-embed-secret-code) are mandatory parameters used for generating the <strong>Embed Signature</strong>
+<strong>Embed parameters</strong> and the [Embed Secret Key](/site-administration/embed-settings/#get-embed-secret-code) are mandatory parameters used for generating the <strong>Embed Signature</strong>
 
-> We have provided the code sample to generate the signature in C#. You can write the equivalent code in your platform language.
+> We have provided a code sample for generating the signature in C#. You can write the equivalent code in your platform's language.
       
   ```js
       var embedParameters = "embed_nonce=55a1c8f4-5015-487d-8463-d3ebeae655fd&embed_user_email=admin@domain.com";
-      var embedSecretKey = "7tFaq2zidmxJN8Pid6IUAiGFqAUwMfK"; //https://help.boldbi.com/site-administration/embed-settings/#get-embed-secret-code
+      var embedSecretKey = "7tFaq2zidmxJN8Pid6IUAiGFqAUwMfK"; //site-administration/embed-settings/#get-embed-secret-code
 
       public string GetSignatureUrl(string embedParameters, string embedSecretKey)
       {
@@ -190,4 +190,4 @@ Please get the [Embed Widget with SSO using Token](https://github.com/boldbi/ifr
       }
  ```
 
-  `Embed Signature` refers to a hashed value that is generated for authentication purposes in an embed request sent to the Bold BI server. To obtain the `embedSignature`, the embedParameters(contains `dashboardid`, `widgetid`, `user email` and `other parameters`) and embedSecretKey are passed as arguments to the `GetSignatureUrl` method. This method generates the hashed signature using the HMACSHA256 algorithm, which should be appended to the existing iframe URL as a query parameter named <strong>‘embed_signature’</strong>.
+  The term `Embed Signature` refers to a hashed value that is generated for authentication purposes in an embed request sent to the Bold BI server. To obtain the  `embedSignature`, the embedParameters(contains `dashboardid`, `widgetid`, `user email` and `other parameters`) and embedSecretKey are passed as arguments to the `GetSignatureUrl` method. This method generates the hashed signature using the HMACSHA256 algorithm, which should be appended to the existing iframe URL as a query parameter named <strong>‘embed_signature’</strong>.

@@ -10,11 +10,11 @@ documentation: ug
 
 This section explains how to synchronize the imported Active Directory group and its users with the Active Directory.
 
-You can navigate to the group synchronization page from groups page.
+You can navigate to the group synchronization page from the groups page.
 
 ![Active Directory Synchronization Link](/static/assets/managing-resources/manage-groups/images/Group-Synchronization-navigation.png)
 
-> **NOTE:** This feature is available in Bold BI Embedded Analytics but not in Cloud Analytics Server.
+> **NOTE:** This feature is available in On-Premises Deployment but not in Syncfusion Managed Cloud Server.
 
 ## Synchronize Groups
 
@@ -28,11 +28,11 @@ Choose the groups you want to synchronize and click on `Synchronize` at the top.
 
 ### Synchronization Procedure
 
-* Bold BI Server will update the users in the group, group's name and description from the Active Directory Server.
+* Bold BI Server will update the users in the group, the group’s name, and description from the Active Directory Server.
 
 * Bold BI Server will delete the groups if the group has been deleted from the Active Directory Server.
 
-* Bold BI Server will delete the user from Server group, if the user has been deleted from Active Directory Server group. Bold BI Server will add the user into Server, if a new user is added into the Active Directory group. If the new user is not present in the Bold BI Server,then a new user account will be created in the Bold BI Server and will be added into the group. 
+* Bold BI Server will delete the user from the Server group if the user has been deleted from the Active Directory Server group. Bold BI Server will add the user into the Server if a new user is added to the Active Directory group. If the new user is not present in the Bold BI Server, then a new user account will be created in the Bold BI Server and added to the group. 
 
 After synchronization completes, the number of groups modified, deleted, duplicated will be shown in the success message box.
 
@@ -40,6 +40,6 @@ After synchronization completes, the number of groups modified, deleted, duplica
 
 ## Duplicate Groups
 
-Active Directory groups who has the same group name as that of the Bold BI Server groups (which are already present) will be marked as duplicate groups and will not be allowed to synchronize with Active Directory.
+Active Directory groups that have the same group name as those of the Bold BI Server groups (which are already present) will be marked as duplicate groups and will not be allowed to synchronize with Active Directory.
 
 ![Display Duplicated groups](/static/assets/managing-resources/manage-groups/images/highlight-duplicate-group.png)

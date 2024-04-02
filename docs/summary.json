@@ -1,5 +1,7 @@
 {
-	"Overview": "overview",
+	"Overview": {
+		"On-Premises vs. Managed Cloud" : "on-premises-vs-managed-cloud"
+	},
 	"Deploying Bold BI": {
 		"Overview": "overview",
 		"Deploying in Windows": {
@@ -16,6 +18,11 @@
 			"Self-deploy a Bold BI Server on Microsoft Azure": "self-deploy-azure-vm",
 			"Bold BI in Microsoft Azure Marketplace": "new-azure-vm",
 			"Upgrade VM to latest version": "update-azure-vm"
+		},
+		"Deploying in AWS": {
+			"Prerequisites": "prerequisites-aws-vm",
+			"Self-deploy a Bold BI Server on AWS VM": "deploy-aws-vm",
+			"Upgrade VM to latest version": "update-aws-vm"
 		},
 		"Deploying in Azure App Service": {
 			"Prerequisites": "prerequisites",
@@ -37,6 +44,8 @@
 				},
 				"Bold BI on Ubuntu": "bold-bi-on-ubuntu",
 				"Bold BI on CentOS": "bold-bi-on-centos",
+				"Bold BI on Oracle": "bold-bi-on-oracle",
+				"Bold BI on RHEL": "bold-bi-on-redhat",
 				"Auto Deployment": "auto-deployment",
 				"Bold BI over Bold Reports": "bold-bi-over-bold-reports"
 			},
@@ -52,8 +61,16 @@
 			},
 			"Upgrading Bold BI Linux Server": "upgrade-to-latest"
 		},
-		"Deploying in Kubernetes": "deploying-in-kubernetes",
-		"Deploying in Docker": "deploying-in-docker"
+		"Deploying in Kubernetes": {
+			"Prerequisites": "prerequisites-kubernetes",
+			"Recommended System Configuration": "recommended-system-configuration",
+			"Bold BI on Kubernetes": "bold-bi-on-kubernetes"
+		},	
+		"Deploying in Docker": {
+			"Prerequisites": "deployment-prerequisites",
+			"Recommended System Configuration": "recommended-system-configuration",
+			"Bold BI on Docker": "bold-bi-on-docker"
+		}
 	},
 	"Application Startup": {
 		"Latest": "latest",
@@ -72,6 +89,7 @@
 			"Embedding multiple dashboards and widgets": "embedding-multiple-dashboards-and-widgets",
 			"Embedding Pinboard": "embedding-pinboard",
 			"Custom Theme Embedding": "custom-theme-embedding",
+			"Embedding Multitab Dashboard Programmatically": "embedding-multitab-dashboard-programmatically",
 			"Embedding API Reference": {
 				"Members": "members.md",
 				"Methods": "methods.md",
@@ -134,8 +152,28 @@
 		},
 		"Embedding using NPM Package": "embedding-using-npm-package"
 	},
-	"Working with Data Source": {
+	"Working with Data Sources": {
+		"Data Modeling": {
+			"Joining Tables": "joining-table",
+			"Formatting Columns": "formatting-column",
+			"Configure Data Filters": "configuring-data-filters",
+			"Configuring Expression Columns": {
+				"Number Expressions": "number-expressions",
+				"Aggregation Expressions": "aggregation-expressions",
+				"Logical Expressions": "logical-expressions",
+				"Conditional Expressions": "conditional-expressions",
+				"String Expressions": "string-expressions",
+				"Date Expressions": "date-expressions",
+				"Row Expressions": "row-expressions"
+			},
+			"Data Sampling": "data-sampling",
+			"Configuring Replace Value":{
+				"Replace value support in Datasource level": "datasource-level-support",
+                 "Replace value support in Column level": "column-level-support"
+		      }
+		},
 		"Creating a New Data Source": "creating-a-new-data-source.md",
+		"How Bold BI handles queries from multiple widgets in a dashboard": "how-boldbi-handles-queries-from-multiple-widgets-in-a-dashboard.md",
 		"Query Processing Modes": "classification-of-data-sources-queried-directly-and-extracted",
 		"Bold BI Intermediate Database": "bold-bi-intermediate-database",
 		"Connection Settings":{
@@ -302,13 +340,6 @@
 			"Zuora": "zuora",
 			"Parquet":"parquet"
 		},
-		"Transforming Data": {
-			"Joining Tables": "joining-table",
-			"Formatting Columns": "formatting-column",
-			"Configure Data Filters": "configuring-data-filters",
-			"Configure Expression Columns": "configuring-expression-columns",
-			"Data Sampling": "data-sampling"
-		},
 		"Connecting to Stored Procedures": "connecting-to-stored-procedures",
 		"Editing a Data Source": "editing-a-data-source",
 		"Shared Tables": "shared-table",
@@ -323,6 +354,45 @@
 			"Data Source": "user-filter-advanced-data-source-mode",
 			"Query": "user-filter-advanced-query-mode"
 		},
+		
+		"Working with Bold ETL":{
+		"Working with Projects": "working-with-projects",
+		"Scheduling ETL Jobs": "schedule",
+		"Data Store": "data-store",
+		"Transformation and Preview": "transformation-preview",
+		"Data Connectors": 
+		{
+			"Facebook Ads": "facebook-ads",
+			"FileSystem": "file-system",
+			"GitHub": "github",
+			"Google Analytics": "google-analytics",
+			"Google Sheets": "google-sheets",			
+			"Matomo": "head-less",
+			"HubSpot": "hubspot",			
+			"Jira": "jira",
+			"MongoDB": "mongodb",
+			"Mux": "multiplexer",
+			"MySQL": "mysql",
+			"Notion": "notion",
+			"OpenAPI": "open-api",
+			"Oracle": "oracle",
+			"Personio": "person",
+			"Pipedrive": "pipedrive",
+			"PostgreSQL": "postgresql",
+			"Salesforce": "salesforce",
+			"Slack": "slack",
+			"MSSQL": "sql",
+			"Web": "web",			
+			"Stripe": "strip",
+			"Strapi": "web-analytics",
+			"Workable": "workable",
+			"Zendesk Chart": "zendesk-chart",
+			"Zendesk Support": "zendesk-support",
+			"Zendesk Talk": "zendesk-talk"
+			
+		}
+		}		
+		,
 		"Dashboard Parameter": {
 			"Configure Dashboard Parameter": "configuring-dashboard-parameters",
 			"Uses Of Dashboard Parameter": "uses-of-dashboard-parameters",
@@ -376,6 +446,7 @@
 			"Image": "image",
 			"Text": "text",
 			"Tab Widget": "tab-widget",
+			"Q&A Widget": "qna-widget",
 			"Custom Widget": {
 				"v5.2.48 or later": {
 					"Custom Widget Creation": "create-new-custom-widget",
@@ -408,7 +479,8 @@
 			"Custom and Auto Hierarchy": "custom-and-auto-hierarchy",
 			"Custom Date Format": "custom-date-format",
 			"Widget Actions": "widget-action"
-		}
+		},
+		"Widget Capabilities": "widget-capabilities"
 	},
 	"Working with Dashboards": {
 		"Dashboard Templates": "dashboards-templates",
@@ -427,7 +499,8 @@
 				"Exporting Options": "exporting-options"
 			},
 			"Refreshing Dashboard": "refresh-dashboard",
-			"Filtering Views using URL Parameters": "urlparameters"
+			"Filtering Views using URL Parameters": "urlparameters",
+			"Customize Export in server level": "custom-export"
 		},
 		"Share Dashboards": {
 			"Get Link to Dashboards": "get-dashboard-link",
@@ -468,6 +541,8 @@
         "Data Security Configuration":"data-security-configuration"
 	},
     "Site Administration": {
+		"Site Settings": "site-settings",
+		"Custom Domain in Cloud Analytics Server":"custom-domain-in-cloud-bi",
 		"Look and Feel Settings In Cloud BI": {
 			"How to create custom application theme": "create-custom-application-theme",
 			"How to create custom dashboard theme": "create-custom-dashboard-theme",
@@ -489,7 +564,10 @@
         },
 		"Embed Settings": "embed-settings",
         "Email Settings": {
-          "Email Settings Configuration": "email-settings-configuration",
+          "Configuration": {
+			  "SMTP": "smtp-account",
+			  "Microsoft Office 365": "office-365-account"
+		  },
           "Email Activity Logs": "email-activity-logs"
         },
         "Account Settings": "account-settings",
@@ -595,11 +673,7 @@
         "Latest": "latest",
         "v4.2.69 or earlier": "v4.2.69-or-earlier"
     },
-    "Rebranding":{
-        "Custom Domains":"custom-domains",
-        "Rebranding In Cloud BI":"rebranding-in-cloud-bi",
-        "Rebranding In Embed BI":"rebranding-in-embed-bi"
-    },
+	"White Labeling In Bold BI": "white-labeling-in-bold-bi",
     "Multi-Tenancy": {
 		"Create A Tenant": "create-new-site",
 		"Site Administration": {
@@ -639,7 +713,8 @@
 			"v2.0": {
 			  "API Reference": "api-reference?html=true",
 			  "Try it now": "try-it-now?html=true"
-			}
+			},
+			"Interact with REST API":"interact-with-rest-api"
 		}
 	},
     "Responsive Layout": {
@@ -685,7 +760,11 @@
 				"Reset Application Database for Bold BI version 3.3 or older": "reset-application-database"
 			  }
 		},
-		"Classic Dashboard Migration Tool": "classic-dashboard-migration-tool"
+		"Classic Dashboard Migration Tool": "classic-dashboard-migration-tool",
+		"Fine-tuning Utility": {
+			"OpenAI": "openai",
+			"Azure OpenAI": "azure-openai"
+		}
 	},
     "FAQ": {
         "What are the resources will be generated in the installed machine?": "what-all-are-the-files-and-folders-will-be-generated-in-the-installed-machine",
@@ -803,7 +882,12 @@
   	"How to hide sample dashboards option in Bold BI":"how-to-hide-sample-dashboards-option-in-bold-bi-application",
   	"How to deploy a Bold BI with N windows server using load balancer":"how-to-deploy-bold-bi-using-load-balancer-with-n-windows-servers",
   	"How to apply widget filters using both initial rendering and on-demand in embedding": "how-to-apply-widget-filters-using-both-initialrendering-and-ondemand-in-embedding",
-  	"How to create a custom Google App and generate a Client ID and Secret":"how-to-create-a-custom-google-app-and-generate-a-client-id-and-secret"
+  	"How to create a custom Google App and generate a Client ID and Secret":"how-to-create-a-custom-google-app-and-generate-a-client-id-and-secret",
+	"How to change schema while upload the dashboard via API": "how-to-change-schema-while-upload-dashboard-via-api",
+	"How to register an Azure app with mail-sending API permissions and restrict its access to specific mailboxes?":"how-to-register-an-azure-app-with-mail-sending-permissions",
+	"What are the different request object properties of Group Imports Setting for each OAuth and OpenID Provider Type":"what-are-the-different-request-object-properties-of-group-imports-setting-for-each-oauth-and-openid-provider-type",
+	"What are the ways to securely access data behind firewall in Bold BI": "ways-to-securely-access-data-behind-firewall-in-bold-bi",
+	"How to integrate Bold BI dashboards with Git":"how-to-integrate-bold-bi-dashboards-with-git",
+	"Customizing the Start Day of the Week in Bold BI":"customizing-the-start-day-of-the-week-in-bold-bi"
     }
-	
 }

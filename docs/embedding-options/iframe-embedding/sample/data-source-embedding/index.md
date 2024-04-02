@@ -8,6 +8,6 @@ documentation: ug
 
 # Bold BI Enterprise Application Embedding data source Sample
 
-This section explains how to embed the Bold BI data source into a sample application by integrating designing modules.
+This section explains how to integrate and design modules to embed the Bold BI data source into a sample application.
  
 [ Javascript](/embedding-options/iframe-embedding/sample/data-source-embedding/javascript/)

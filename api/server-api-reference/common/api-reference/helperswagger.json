@@ -33,7 +33,7 @@
     "getpinboarddescription": "To retrieve, create, copy, and delete a particular pinboard in the Bold BI Embed, use the corresponding endpoints below."
   },
   "publishdescription": {
-    "getpublishdescription": "To publish a particular dashboard from one site to other site(s) in the Bold BI Embed, use the corresponding endpoints below.>Note: This support is not available in Cloud Analytics Server"
+    "getpublishdescription": "To publish a particular dashboard from one site to other site(s) in the Bold BI Embed, use the corresponding endpoints below.>Note: This support is not available in Syncfusion Managed Cloud Server"
   },
   "dashboarddescription": {
     "getdashboarddescription": "To copy, retrieve, and export dashboards in the Bold BI Embed, use the corresponding endpoints below."
@@ -55,5 +55,13 @@
   },
   "userprofiledescription":{
     "getuserprofiledescription": "Use the following endpoints to retrieve a list of user permissions and user notification settings in the Bold BI Embed."
- }
+  },
+  "activitylogsdescription":
+  {
+    "getactivitylogsdescription":"Use the following corresponding endpoints to retrieve a list of activities performed in the Bold BI."
+  },
+  "webhooksdescription": 
+  {
+    "getwebhooksdescription": "To retrieve a list of webhooks, and delete a particular webhook in Bold BI, use the following corresponding endpoints." 
+  }
 }

@@ -16,4 +16,4 @@ This section explains about how to add the user defined widgets in the dashboard
 
 [v5.2.48 or later](/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/)
 
-> **NOTE:** Custom widget folder placement has been changed in the v5.2.48 build. Also provided an utility to migrate the custom widget created in lower version of v4.2.68 to support in it, as we have made some API changes in it. This feature is available in Bold BI Embedded Analytics but not in Cloud Analytics Server.
+> **NOTE:** Custom widget folder placement has been changed in the v5.2.48 build. Also provided an utility to migrate the custom widget created in lower version of v4.2.68 to support in it, as we have made some API changes in it. This feature is available in On-Premises Deployment but not in Syncfusion Managed Cloud Server.

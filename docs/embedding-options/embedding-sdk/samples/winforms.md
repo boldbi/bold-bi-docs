@@ -4,20 +4,19 @@ title: Embedding Analytics with .NET WinForms | Bold BI Docs
 description: Learn how to embed an analytics dashboard with .NET Win Forms application using Bold BI Embed SDK and try it yourself.
 platform: bold-bi
 documentation: ug
-
 ---
 
 # Bold BI Dashboards embedding in Windows Forms using Embedded SDK
 
-A GitHub link has been provided to [get](https://github.com/boldbi/winforms-sample) the sample application, which demonstrates the rendering of dashboard available in your Bold BI server and followed by steps to create a new embedding application in the `Windows Forms` on your own. 
+A GitHub link has been provided to [get](https://github.com/boldbi/winforms-sample) the sample application, which demonstrates the rendering of dashboard available in your Bold BI server and followed by steps to create a new embedding application in the `Windows Forms` on your own.
 
-> **NOTE:** The best way to get started would be reading the [Getting Started](/getting-started/embedding-in-your-application/) section of the documentation to start using first. The `Getting Started` guide gives you enough information that you need to know before working on the sample.  
+> **NOTE:** The best way to get started would be to read the [Getting Started](/getting-started/embedding-in-your-application/) section of the documentation first. The `Getting Started` guide provides you with enough information that you need to know before working on the sample. 
 
 ## How to run the sample
 
  1. Please [get](https://github.com/boldbi/winforms-sample) the Windows Forms sample.    
 
- 2. You need to set your embed property details in the `EmbedProperties.cs. `
+ 2. You need to specify the details of your embed property in the `EmbedProperties.cs` file.
      ![Embed Properties](/static/assets/javascript/sample/images/winforms-props.png)
 
     <meta charset="utf-8"/>
@@ -50,12 +49,12 @@ A GitHub link has been provided to [get](https://github.com/boldbi/winforms-samp
     </tbody>
     </table>
 
- 3. Get the item id of the dashboard from the BI server. Please refer to this [link](/working-with-dashboards/share-dashboards/get-dashboard-link/#get-link) and the following screenshot.  
+ 3. Please obtain the item ID of the dashboard from the BI server. For reference, please consult this [link](/working-with-dashboards/share-dashboards/get-dashboard-link/#get-link) and refer to the screenshot provided below. 
     ![Get Dashboard Id](/static/assets/javascript/sample/images/get-dashboard-id.png#max-width=55%)
 
  4. Then, run your Windows Forms sample.
 
- 5. The dashboard can be rendered in design mode or created with the following changes.
+ 5. The dashboard can be rendered in design mode or created with the aforementioned changes.
 
      ```js
      var htmlString = new StringBuilder();
@@ -94,28 +93,27 @@ A GitHub link has been provided to [get](https://github.com/boldbi/winforms-samp
 
 ## How this sample works
 
- 1. Based on the dashboard provided in the embed properties, you will authorize the server URL by calling the `GetEmbedDetails` function.
-
-    Learn more about the authorize server [here](/security-configuration/authorize-server/)
+ 1. Based on the dashboard provided in the embed properties, you will authorize the server URL by calling the `GetEmbedDetails` function. function. Learn more about the authorize server [here](/security-configuration/authorize-server/)
     ![Get Embed Details](/static/assets/javascript/sample/images/winforms-authorize.png)
 
- 2. In the above authorization, the `SignatureUrl` has been generated with the provided `EmbedSecret key` and validated the embed details in Bold BI. Once details are validated, the dashboard starts to render.
+ 2. In the authorization mentioned above, the `SignatureUrl` has been generated using the provided `EmbedSecret key` and the embed details have been validated in Bold BI. Once the details are validated, the dashboard begins to render.
 
  3. In the `EmbedProperties.cs`, change the dashboard Id of the respective dashboard as you wish to embed.
     ![Set Dashboard Id](/static/assets/javascript/sample/images/winforms-dashboard.png)
 
 
 ## Steps to create new Windows Forms application to embed dashboard
- 1. Start Visual Studio and click `Create a new project`.
+ 1. Start Visual Studio and click on `Create a new project`.
 
  2. Choose Windows Forms Application (.NET Framework), then click `Next`.
-   ![SelectProject](/static/assets/javascript/sample/images/winforms_create_project.png#max-width=85%)
+
+    ![SelectProject](/static/assets/javascript/sample/images/winforms_create_project.png#max-width=85%)
 
  3. Change the project name as you want, then click `Create`.
 
  4. Create a script folder in the project and add the latest `EmbedWrapper.js` in it.
 
- 5. Create the model class `EmbedProperties.cs` in the project, include a code as follows.
+ 5. Create the model class `EmbedProperties.cs` within the project, and include the following code.
 
      ```js
         internal class EmbedProperties
@@ -199,8 +197,8 @@ A GitHub link has been provided to [get](https://github.com/boldbi/winforms-samp
         }
      ```
 
- 7. In the above authorization, the `SignatureUrl` has been generated with the provided `EmbedSecret` key and validated the embed details in Bold BI. Once details are validated, the dashboard starts to render.
+ 7. In the above authorization, the `SignatureUrl` has been generated with the provided `EmbedSecret` key and the embed details have been validated in Bold BI. Once the details are validated, the dashboard will start rendering.
 
- 8. In the `EmbedProperties.cs`, change the dashboard Id of the respective dashboard as you wish to embed.
+ 8. In the `EmbedProperties.cs` file, you can change the dashboard Id of the respective dashboard as desired for embedding.
 
- 9. In the `htmlString` variable, append the mandatory script files and a function that creates an instance to call the `LoadDashboard()` and render the dashboard.
+ 9. In the `htmlString` variable, please append the mandatory script files and a function that creates an instance to call the `LoadDashboard()` and render the dashboard.

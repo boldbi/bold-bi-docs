@@ -10,9 +10,9 @@ documentation: ug
 
 # Share Dashboards
 
-Share dashboards with your colleagues to transform visualizations into great results using our secured Bold BI with flexible permission system.
+Share dashboards with your colleagues to enhance visualizations and achieve great results using our secure Bold BI platform with a flexible permission system.
 
-There are different ways, you can share your dashboard with the users in your Bold BI site.
+There are various methods available for sharing your dashboard with users on your Bold BI site:
 
 * [Get links to Dashboards](/working-with-dashboards/share-dashboards/get-dashboard-link/)
 
@@ -26,8 +26,8 @@ There are different ways, you can share your dashboard with the users in your Bo
 
 * [Notifications](/working-with-dashboards/share-dashboards/notifications/)
 
-Continue learning on how to manage [data sources](/managing-resources/manage-data-sources/), [schedules](/managing-resources/manage-schedules/), [users](/managing-resources/manage-users/), [groups](/managing-resources/manage-groups/), [administer the site](/site-administration/) and [connect with the Bold BI site programmatically](/server-api-reference/).
+Continue learning how to manage [data sources](/managing-resources/manage-data-sources/), [schedules](/managing-resources/manage-schedules/), [users](/managing-resources/manage-users/), [groups](/managing-resources/manage-groups/), [administer the site](/site-administration/) and [connect with the Bold BI site programmatically](/server-api-reference/).
 
 ## Create a support incident
 
-If you are still not able to find the information that you are looking for in the self-help resources mentioned above then please <a href="https://www.boldbi.com/support" target="_blank">contact us</a> by creating a support ticket.
+If you are still unable to find the information you are looking for in the self-help resources mentioned above, please <a href="https://www.boldbi.com/support" target="_blank">contact us</a> by creating a support ticket.

@@ -8,10 +8,10 @@ documentation: ug
 
 # Bold BI Enterprise Application Embedding Sample
 
-This section explains the sample to embed the dashboard and data source of the Bold BI application into your application by integrating the Item Listing, Designing, and Viewing modules.  
+This section explains how to embed the dashboard and data source of the Bold BI application into your application by integrating the Item Listing, Designing, and Viewing modules. 
 
 1. **Dashboard Embedding Sample**  
-This sample implements the view and design(create and edit) options to the dashboard with the existing dashboards listed on the page. Learn more about the embedding dashboard sample [here](/embedding-options/iframe-embedding/sample/dashboard-embedding/).
+This sample implements the view and design options (create and edit) to the dashboard, along with the existing dashboards listed on the page. You can learn more about the embedding dashboard sample [here](/embedding-options/iframe-embedding/sample/dashboard-embedding/).
 
 2. **Data Source Embedding Sample**  
-This sample implements the design(create and edit) option to the data source with the existing data sources listing in the page. Learn more about the embedding data source sample [here](/embedding-options/iframe-embedding/sample/data-source-embedding/).
+This sample implements the design option to create and edit the data source, along with the existing data sources listed on the page. You can learn more about embedding data source sample [here](/embedding-options/iframe-embedding/sample/data-source-embedding/).

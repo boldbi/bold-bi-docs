@@ -10,15 +10,15 @@ documentation: ug
 
 Follow these steps to upgrade the Bold BI Azure App service to the latest version:
 
-> **NOTE:** Upgrading to the latest version does not require a license key. On the other hand, our services will retrieve the license in the backend after upgrading to the latest version.
+> **NOTE:** Upgrading to the latest version does not require a license key. However, our services will retrieve the license in the backend after upgrading to the latest version.
 
-1. Log in to [Azure Portal](https://portal.azure.com) and select the Bold BI Azure App Service in Microsoft Azure Services.
+1. Log in to the [Azure Portal](https://portal.azure.com) and select the Bold BI Azure App Service in Microsoft Azure Services.
 
-2. Choose **Advanced Tools** in the left panel of the Bold BI Azure App service and then click **Go**. It will open the **KUDU console**.
+2. Choose **Advanced Tools** in the left panel of the Bold BI Azure App service and then click **Go**. This will open the **KUDU console**.
 
      ![Kudu Console options](/static/assets/installation-and-deployment/images/kudu-console-tool.png)
 
-3. In **KUDU console**, click **Debug Console** and choose **PowerShell**.
+3. In the **KUDU console**, click **Debug Console** and choose **PowerShell**.
 
      ![Kudu Console poweshell options](/static/assets/installation-and-deployment/images/powershell-option.png)
 
@@ -30,7 +30,7 @@ Follow these steps to upgrade the Bold BI Azure App service to the latest versio
 
     ![Stop Bold BI Azure App Service](/static/assets/installation-and-deployment/images/stopappservice.png)
 
-6. Go to the deployment center and click **Disconnect**. Now, the deployment option will open.
+6. Go to the deployment center and click **Disconnect**. This will open the deployment option.
 
     ![Choose Source](/static/assets/installation-and-deployment/images/arm-upgrade-disconnect-existing-v4-1-36.png)
 
@@ -39,7 +39,7 @@ Follow these steps to upgrade the Bold BI Azure App service to the latest versio
     ![External Repository](/static/assets/installation-and-deployment/images/arm-upgrade-select-external.png)
 
 
-8. Now, in the **External Git**, fill out the following information:
+8. In the **External Git**, fill out the following information:
 
     **Repository** - [URL](https://github.com/boldbi/azure-arm-template.git)
 
@@ -61,11 +61,11 @@ Follow these steps to upgrade the Bold BI Azure App service to the latest versio
 
     ![Deployment confirmation](/static/assets/installation-and-deployment/images/redeployment-confirmation-upgrade.png)
 
-11. Synchronization progress is shown in the deployment options blade.
+11. The synchronization progress will be shown in the deployment options blade.
 
     ![Synchronization Status](/static/assets/installation-and-deployment/images/arm-upgrade-sync-request-status.png)
 
-12. Please wait until synchronization is completed.
+12. Please wait until the synchronization is completed.
 
     ![Synchronization Success](/static/assets/installation-and-deployment/images/arm-upgrade-sync-request-success.png)
 

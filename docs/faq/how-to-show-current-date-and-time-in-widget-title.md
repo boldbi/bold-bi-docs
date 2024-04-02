@@ -8,7 +8,7 @@ documentation: ug
 
 # How to show Current Date and Time in Widget Title
 
-You can show the **current date and time** in widget’s title using [Expression](/working-with-data-source/transforming-data/configuring-expression-columns/) and [Label Parameter](/visualizing-data/working-with-widgets/configuring-label-parameters/) supported by Bold BI application.
+You can show the **current date and time** in widget’s title using [Expression](/working-with-data-sources/data-modeling/configuring-expression-columns/) and [Label Parameter](/visualizing-data/working-with-widgets/configuring-label-parameters/) supported by Bold BI application.
 
 Follow these steps to achieve this requirement:
 

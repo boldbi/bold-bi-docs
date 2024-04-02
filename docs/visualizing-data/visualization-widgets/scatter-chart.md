@@ -373,6 +373,26 @@ This option allows you to format category axis values from the formatting detail
 
 ![Formatting axis](/static/assets/visualizing-data/visualization-widgets/images/scatter-chart/category-axis-format.png)
 
+### Axis Range Settings
+
+By default, the chart control automatically determines the minimum, maximum, and interval values for the axis based on the data configuration. This Option is only enable when we configure measure field data into the `X-Axis` section. 
+
+![Axis Range Customization](/static/assets/visualizing-data/visualization-widgets/images/scatter-chart/x-axisdefault.png)
+
+The axis range property allows you to manually set the **Minimum**, **Maximum**, and **Interval** values of the X axis through the `Axis Range Settings` dialog.
+
+![Axis Range Customization](/static/assets/visualizing-data/visualization-widgets/images/scatter-chart/propertypanel.png)
+
+**For Example :** This property will customize the scatter chart X-axis range value. We set the X-axis range minimum as 10, maximum as 30, and interval as 5.
+
+![Axis Range Customization](/static/assets/visualizing-data/visualization-widgets/images/scatter-chart/x-axiseditpopup.png)
+
+It will be reflected in the X-axis of the scatter chart.
+
+![Axis Range Customization](/static/assets/visualizing-data/visualization-widgets/images/scatter-chart/x-axisfinal.png)
+
+**Note:** This property will be hidden while the `Show X-Axis` property is disabled or configure dimension field in the `X-axis` section.
+
 ### Y-Axis Settings
 
 This section allows you to customize the x-axis settings in scatter chart.
@@ -424,6 +444,63 @@ It will be reflected in the y-axis of the scatter chart.
 ![Axis Range Customization](/static/assets/visualizing-data/visualization-widgets/images/scatter-chart/final.png).
 
 **Note:** This property will be hidden while the `Show Y-Axis` property is disabled.
+
+### Parameter Support in Axis range:
+
+This allows you to dynamically set the Minimum, Maximum, and Interval values of the primary value axis through the `Axis Range Settings` dialog by using the dashboard parameter values. Only number-type Dashboard parameter values are allowed in the axis range properties. You can create multiple types of dashboard parameters.
+
+1. Single parameter value.
+2. Range parameter value.
+3. Data source field based parameter values.
+
+For more details about dashboard parameter, refer to the [Dashboard parameter documentation](/working-with-data-sources/dashboard-parameter/configuring-dashboard-parameters/).
+
+### Single Parameter Value:
+
+A single value is stored in this type of parameter.
+
+1. Create a dashboard parameter in number type like below.
+
+![Axis Range Settings Output](/static/assets/visualizing-data/visualization-widgets/images/scatter-chart/parameter.png)
+
+Click the axis range settings dialog and enter `@` in the textbox. Select the parameter value(Numeric parameter values only allowed in the **minimum**, **maximum and interval**).
+
+![Axis Range Settings Output](/static/assets/visualizing-data/visualization-widgets/images/scatter-chart/minparam.png)
+
+Now the parameter value is reflected in the chart axis.
+
+![Axis Range Settings Output](/static/assets/visualizing-data/visualization-widgets/images/scatter-chart/singleyaxis.png)
+
+
+### Range Parameter Value:
+
+If you wish to set the same ranges in multiple cases, create the range type parameter value. This type of parameter has the start and end values.
+
+1. Create a parameter in range type.
+
+![Axis Range Settings Output](/static/assets/visualizing-data/visualization-widgets/images/scatter-chart/rangeparameter.png)
+
+2. Click the axis range settings dialog and enter `@` in any textbox(**minimum**, **maximum**, and **interval**). The range parameter is split into start and end parameters. First textbox value is stored in the start parameter, and the second textbox value is stored in the end parameter. Select the parameter value (Number type parameter values only allowed).
+
+![Axis Range Settings Output](/static/assets/visualizing-data/visualization-widgets/images/scatter-chart/rangeaxis.png)
+
+3. The parameter value is reflected in the chart axis.
+
+![Axis Range Settings Output](/static/assets/visualizing-data/visualization-widgets/images/scatter-chart/rangeyaxis.png)
+
+### Data Source Field Based Parameter Value:
+
+1. Create a parameter in the data source type. In this, choose any field. The value is based on the selected field value.
+
+![Axis Range Settings Output](/static/assets/visualizing-data/visualization-widgets/images/scatter-chart/datasource.png)
+
+2. Click the axis range settings dialog and enter `@` in any textbox(**minimum**, **maximum and interval**). Select the parameter value.
+
+![Axis Range Settings Output](/static/assets/visualizing-data/visualization-widgets/images/scatter-chart/datasourceaxis.png)
+
+3. The parameter value is reflected in the chart axis.
+
+![Axis Range Settings Output](/static/assets/visualizing-data/visualization-widgets/images/scatter-chart/datasourceyaxis.png)
 
 #### Opposed Axis
 

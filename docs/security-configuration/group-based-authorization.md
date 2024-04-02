@@ -7,23 +7,23 @@ documentation: ug
 ---
 
 # Overview
-Bold BI embedding supports group-based authorization for OAuth 2.0 and OpenID providers. Using this support, you can configure and import your OAuth or OpenID groups into Bold BI server without users of the group. But every user from the group can access the dashboard from Bold BI.  
+Bold BI embedding supports group-based authorization for OAuth 2.0 and OpenID providers. With this support, you can configure and import your OAuth or OpenID groups into the Bold BI server without importing the users of the group. However, every user from the group can access the Bold BI dashboard.  
 
 ## Why group-based authorization
-Group-based authorization is most helpful, who feels and need not import and maintain their users information into other application due to security and redundancy.  
+Group based authorization is most helpful for those who do not want to import and manage their users' information in other applications due to security and redundancy concerns. 
 
-While importing the group, users of that group has not imported into Bold BI server. Based on the group permission, users of group can access and embed the dashboards of Bold BI. As always, you can maintain your users in your provider and getting secured.   
+When importing a group, the users of that group are not imported into the Bold BI server. Based on the group permissions, users of the group can access and embed the dashboards of Bold BI. You can continue to maintain your users in your provider and keep them secure.    
 
 ## How to embed with group-based authorization.  
-The best way to get started would be to read the following section of the documentation first, which gives enough information that you need to know before stepping into Bold BI embedding with group-based authorization.  
+To get started, it is recommended to first read the following section of the documentation, which provides enough information that you need to know before using Bold BI embedding with group-based authorization. 
 * [Getting Started](/getting-started/embedding-in-your-application/)
 * [Authorization Server](/security-configuration/authorize-server/)
 
-Let us see the configuring settings for OAuth 2.0 and OpenID import, importing the group and providing access to that group.
+Let's take a look at the configuration settings for OAuth 2.0 and OpenID import, importing the group, and granting access to that group.
 
-1. For OAuth 2.0 connect support, you would need to configure the OAuth 2.0 in Bold BI server, follow these steps in the link.
+1. To have support for OAuth 2.0 connect, you will need to configure OAuth 2.0 in the Bold BI server. Please follow the steps provided in the link.
 
-    The following are the list of few OAuth 2.0 providers and that explains how to connect with the Bold BI application.
+    The following is a list of a few OAuth 2.0 providers, and it explains how to connect with the Bold BI application.
 
     * [Amazon Cognito](/security-configuration/single-sign-on/oauth-2.0-support/amazon-cognito/)
     * [Auth0](/security-configuration/single-sign-on/oauth-2.0-support/auth0/)
@@ -32,18 +32,18 @@ Let us see the configuring settings for OAuth 2.0 and OpenID import, importing t
 
 2. For OpenID connect support, you would need to configure the OpenID in Bold BI server, follow these steps in the link.
 
-   The following are the list of few OpenID connect providers and that explains how to connect with the Bold BI application.
+   The following is a list of a few OAuth 2.0 providers, and it explains how to connect with the Bold BI application.
     * [Auth0](/security-configuration/single-sign-on/openid-support/auth0/)
     * [Okta](/security-configuration/single-sign-on/openid-support/okta/)
     * [OneLogin](/security-configuration/single-sign-on/openid-support/onelogin/)
 
-3. After configuring you providers, you need to import you group into Bold BI server, follow these respective link to import the groups.
+3. After configuring your providers, you need to import your group into the Bold BI server. Follow these respective links to import the groups.
     * [Import OAuth 2.0 Group](/managing-resources/manage-groups/import-oauth-groups/)
     * [Import OpenID Connect Group](/managing-resources/manage-groups/import-openid-groups/)
 
-4. Then, you need to provide access to your imported group. Follow these steps in the link, which permission helps to your users to access and embed the dashboard.  
+4. Then, you need to provide access to your imported group. Follow these steps in the link, which will help your users to access and embed the dashboard. 
 
-5. Now, you need to configure your authorization server to use the group-based authorization by adding the marked parameters in the embedQuery. 
+5. Now, you need to configure your authorization server to use group-based authorization by adding the marked parameters in the embedQuery.
 
     <meta charset="utf-8"/>
     <table>
@@ -87,13 +87,13 @@ Let us see the configuring settings for OAuth 2.0 and OpenID import, importing t
     </tbody>
     </table>
 
-    > **NOTE:** The previous UserID and UserEmail would be act as password for user of each provider in Bold BI. 
+    > **NOTE:** The previous UserID and UserEmail would act as the password for users of each provider in Bold BI.
 
     **Example:** `&embed_group_access=true&embed_auth_provider=GlobalOAuth&embed_user_id=1212121212&embed_user_email=user@domain.com`   
 
     ![Group Based Authorization](/static/assets/javascript/images/group-based-auth.png)  
 
-    > **NOTE:** Use your UserID and UserEmail as followed in authorization server.
+    > **NOTE:** Please use your UserID and UserEmail as follows in the authorization server.
 
     <meta charset="utf-8"/>
     <table>
@@ -117,16 +117,16 @@ Let us see the configuring settings for OAuth 2.0 and OpenID import, importing t
 
 ### Enabling user import with group-based authorization
 
-In an embedding authorization action method, you can set the `embed_user_import` attribute to true if you want to import the user from the external group while accessing the resource by group-based authorization.
+In an embedding authorization action method, you can set the `embed_user_import` attribute to true if you want to import the user from the external group while accessing the resource through group-based authorization.
 
 **Example:** `&embed_group_access=true&embed_auth_provider=GlobalOAuth&embed_user_id=1212121212&embed_user_email=user@domain.com&embed_user_import=true` 
 
 ![Group Based Authorization](/static/assets/javascript/images/User_import_group-based-auth.png)
 
-> **NOTE:** Currently, the user auto-import support is provided only for `Amazon Cognito` and `Azure AD `configurations.
+> **NOTE:** Currently, the user auto-import support is only provided for `Amazon Cognito` and `Azure AD` configurations.
 
 ### Sample links
-The sample applications for ASP.NET Core, ASP.NET MVC, and Angular. You can get download from the following links and update your group access, auth provider, user id, and user email in the authorization server code block.
+The sample applications for ASP.NET Core, ASP.NET MVC, and Angular can be downloaded from the following links. Once downloaded, you can update your group access, authentication provider, user id, and user email in the authorization server code block.
 * [ASP.NET Core](/embedding-options/embedding-sdk/samples/asp-net-core/)
 * [ASP.NET MVC](/embedding-options/embedding-sdk/samples/asp-net-mvc/)
 * [Angular with ASP.NET Core](/embedding-options/embedding-sdk/samples/v3.2.16/angular/)

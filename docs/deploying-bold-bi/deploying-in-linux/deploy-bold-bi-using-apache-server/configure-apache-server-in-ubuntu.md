@@ -7,33 +7,33 @@ documentation: ug
 
 # Deploy Bold BI on Ubuntu Using Apache Server
 
- Execute the following command to deploy Bold BI with apache server in your Linux machine: 
+To deploy Bold BI with Apache server on your Linux machine, execute the following command:
  
  ~~~shell
   sudo bash install-boldbi.sh -i {new} -u {user} -h {host URL} -s apache 
  ~~~ 
 
-* **i:** Installation type: Specifies either it is a new or upgrade installation.
+* **i:** Installation type: Specifies whether it is a new or upgrade installation.
 
 * **u:** Specify the user or group that manages the service. 
 
 * **h:** Domain or IP address of the machine with HTTP protocol. 
 
-* **s:** setting this to “apache” will automatically configure the Bold BI with the apache server.
+* **s:** Setting this to “apache” will automatically configure Bold BI with the Apache server.
 
-	>**IMPORTANT:** If you have any existing applications running in that Linux machine using Apache, set “-n” value to false and configure the [Apache manually](/deploying-bold-bi/deploying-in-linux/deploy-bold-bi-using-apache-server/configure-apache-server-in-ubuntu/#manually-configure-apache).  
+	>**IMPORTANT:** If there are any existing applications running on the Linux machine using Apache, set the “-n” value to false and configure [Apache manually](/deploying-bold-bi/deploying-in-linux/deploy-bold-bi-using-apache-server/configure-apache-server-in-ubuntu/#manually-configure-apache).  
 
-    Example for new installation,
+    Example for new installation:
 	
     ~~~shell
      sudo bash install-boldbi.sh -i new -u www-data -h http://linux.example.com -s apache
     ~~~ 
 
-Once the installation is completed, open the host URL in the browser and continue the application startup.
+Once the installation is completed, open the host URL in the browser and continue with the application startup.
 
 ## Manually Configure Apache
 
-To configure Apache as a reverse proxy to forward requests to the Bold BI app, modify `/etc/apache/sites-available/000-default.conf.` Open it in a text editor and add the following code.
+To configure Apache as a reverse proxy to forward requests to the Bold BI app, modify the `/etc/apache/sites-available/000-default.conf` file. Open it in a text editor and add the following code.
 
 ~~~shell
 <VirtualHost *:80>
@@ -148,29 +148,27 @@ To configure Apache as a reverse proxy to forward requests to the Bold BI app, m
 
 ~~~
 
-Once the Apache configuration is established, run the `sudo apache2ctl configtest` to verify the syntax of the configuration files. If the configuration file test is successful, force the Apache to pick up the changes by running the `sudo systemctl restart apache2.`
+Once the Apache configuration is established, run `sudo apache2ctl configtest` to verify the syntax of the configuration files. If the configuration file test is successful, force Apache to pick up the changes by running `sudo systemctl restart apache2`.
 
 ## Configure SSL for Apache server 
 
-If you have an SSL certificate for your domain and need to configure the site with your SSL certificate, follow these steps or you can skip this.
+If you have an SSL certificate for your domain and need to configure the site with it, follow these steps or you can skip this:
 
-1. Uncomment the following marked lines in the Apache config file.
+1. Uncomment the marked lines in the Apache config file.
    
     ![Before SSL Configure In Apache Server](/static/assets/installation-and-deployment/images/before-ssl-configure-for-apache-server.png)
 
-2. Replace the localhost with your domain.
+2. Replace "localhost" with your domain.
 
-3. Define the path of the SSL certificate:   
-   `ssl_certificate /etc/ssl/domain.crt.`
+3. Define the path of the SSL certificate: `ssl_certificate /etc/ssl/domain.crt`.
 
-4. Specify the directory where the SSL certificate key is located:
-    `ssl_certificate_key /etc/ssl/domain.key.`
+4. Specify the directory where the SSL certificate key is located: `ssl_certificate_key /etc/ssl/domain.key`.
 	
 	![After SSL Configure In Apache Server](/static/assets/installation-and-deployment/images/after-ssl-configure-for-apache-server.png)
     
-5. Save and run the sudo apache2ctl configtest to verify the syntax of the configuration file. If the configuration file test is successful, force the Apache to pick up the changes by running the sudo apache2ctl restart.
+5. Save the changes and run `sudo apache2ctl configtest` to verify the syntax of the configuration file. If the configuration file test is successful, force Apache to pick up the changes by running `sudo apache2ctl restart`.
 
-> **NOTE:** If you are configuring the application with SSL, you need to update the URL’s in the product.json file with `HTTPS` located in the `/var/www/boldbi-embedded/boldbi/app_data/configuration.`
+> **NOTE:** If you are configuring the application with SSL, you need to update the URLs in the product.json file with `HTTPS`, located in `/var/www/boldbi-embedded/boldbi/app_data/configuration.`
 
 ## Next steps
 

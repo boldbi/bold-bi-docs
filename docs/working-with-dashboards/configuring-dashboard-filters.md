@@ -10,9 +10,9 @@ documentation: ug
 
 # Configuring Dashboard Filters
 
-Dashboard filters allow you to control the interdependency of widgets in a dashboard with respect to dynamic user interactions. 
+Dashboard filters allow you to control the interdependency of widgets in a dashboard with regard to dynamic user interactions.
 
-You can configure the dashboard filters through the `Filter Configuration` window that is launched by selecting the `Filter` menu in the tool bar.
+You can configure the dashboard filters through the `Filter Configuration` window, which is accessed by selecting the `Filter` menu in the toolbar.
 
 ![Select Filter](/static/assets/working-with-dashboards/images/select-filter.png)
 
@@ -20,52 +20,56 @@ You can configure the dashboard filters through the `Filter Configuration` windo
 
 **Master widgets**
 
-In this window, the master widgets section holds the names of widgets whose `Act as Master Widget` property setting is enabled. If the widget is added under this section, it is subjected to have its filter effect on user interaction. The remaining widgets that are not under the master widget section are marked as listeners through the listener widgets section.
+In the Filter Configuration window, the master widgets section contains the names of widgets whose `Act as Master Widget` property is enabled. Widgets added under this section will have a filter effect on user interaction. Any widgets not in the master widget section are designated as listeners in the listener widgets section.
 
-You can also add a widget into this section explicitly by clicking the highlighted icon.
+You can explicitly add a widget to the master widgets section by clicking the highlighted icon.
 
 ![Adding widgets](/static/assets/working-with-dashboards/images/adding-widgets.png)
 
-Selecting a widget show its associated filter profiles and listener widgets in respective sections; they are customized.
+When selecting a widget, its associated filter profiles and listener widgets are displayed in their respective sections for customization.
 
-You can remove the selected widget from the master widgets section through the `Remove` in its header.
+To remove a selected widget from the master widgets section, use the `Remove` option in its header.
 
-> **NOTE:**  Filter type widgets will get added automatically for user convenience, by default. You can remove it, if not required.
+> **NOTE:**  Filter type widgets are automatically added for user convenience by default, but can be removed if not needed.
 
 **Filter profiles**
  
-The filter profiles section holds a default profile generated automatically for the widget that is added in the master widgets section. This profile holds the detail about the filter criteria and listener widgets to be affected based on that criteria.
+The filter profiles section contains a default profile that is automatically generated for the widget added in the master widgets section. This profile includes details about the filter criteria and listener widgets affected based on that criteria.
 
 Filter criteria can be set through the bottom pane configuration.
 
 ![Filter Criteria](/static/assets/working-with-dashboards/images/filter-criteria.png)
 
-This pane holds the detail about mapping of a column in the current data source with the column in target data source, which is same by default, based on which the user interaction filtering works. You can also customize this default filter criteria by switching to `Custom` option, such as add, edit, and remove.
+This pane provides information about mapping a column in the current data source with the column in the target data source. By default, they are the same, and user interaction filtering is based on this. The default filter criteria can be customized by switching to the `Custom` option, where you can add, edit, and remove criteria.
 
 ![Custom option](/static/assets/working-with-dashboards/images/Custom-option.png)
 
-You can modify the default profile setting or remove the same or add a new profile through respective options in its header.
+To modify the default profile settings, remove it, or add a new profile, use the respective options in the header.
 
-You can rename the profile by double-clicking it.
+Profiles can be renamed by double-clicking them.
 
 ![Rename profile](/static/assets/working-with-dashboards/images/Rename-profile.png)
 
-> **NOTE:**  If you define more than one filter profile for a master widget, it gets the interaction effect, i.e., all those filter profiles that match filter criteria will be filtered.
+> **NOTE:**  If more than one filter profile is defined for a master widget, they will all have an interaction effect – all profiles that match the filter criteria will be applied.
 
 **Listener widgets**
 
-Listener Widgets section holds the name list of widgets other than the master widget. Select the check box that besides to the respective widget name to map it to the respective master widget under the specified filter profile. To respond to user interaction in master widget, deselect the one that you do not want to respond to.
+The Listener Widgets section contains a list of widget names other than the master widget. To map a widget to its corresponding master widget under a specified filter profile, select the checkbox next to the widget name. To disable a widget from responding to user interaction in the master widget, deselect the checkbox.
+
+The `Check All` option next to the `Listener Widgets` label allows for customizing the selection of listener widgets by selecting or deselecting all widget names using this checkbox.
 
 ![Listener widget](/static/assets/working-with-dashboards/images/Listener-widget.png)
 
-For example, Consider `Chart_1 widget` is marked as a listener widget to the `Grid_1 and ComboBox_1 widgets`, `Grid_1 widget` is marked as listener widget to the `ComboBox_1 widget`.
+![Listener widget](/static/assets/working-with-dashboards/images/Listener-widget-few-selection.png)
+
+For example, consider that the `Chart_1 widget` is designated as a listener widget for the `Grid_1 and ComboBox_1 widgets`, and the `Grid_1 widget` is designated as a listener widget for the `ComboBox_1 widget`.
 
 ![Example for listener widget](/static/assets/working-with-dashboards/images/example-for-listener-widget.png)
 
-While applying the filter in the grid widget, the chart widget will be filtered. Now, the chart widget contains the information about the selected ship name in the grid.
+When applying a filter in the grid widget, the chart widget will also be filtered. The chart widget will then display information about the selected ship name in the grid.
 
 ![Filtered result for Grid](/static/assets/working-with-dashboards/images/Filtered-result-for-Grid.png)
 
-On selecting the data in the combo box, the chart widget and grid widget show the particular detail.
+Upon selecting data in the combo box, both the chart widget and grid widget will display the specific details.
 
 ![Filtered result for Combo box](/static/assets/working-with-dashboards/images/Filtered-result-for-Combo-box.png)

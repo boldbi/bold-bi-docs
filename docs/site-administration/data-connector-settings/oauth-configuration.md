@@ -9,12 +9,12 @@ documentation: ug
 
 # Configuring OAuth Data Connectors
 
-OAuth is an open standard for access delegation, commonly used as a way for Internet users to grant websites or applications access to their information on other websites but without giving them the passwords. Most of the service connectors require OAuth to connect, to ensure that a client application is authorized to access the data.
+OAuth is an open standard for access delegation, commonly used as a way for Internet users to grant websites or applications access to their information on other websites but without giving them the passwords. Most service connectors require OAuth to connect, to ensure that a client application is authorized to access the data.
 
-> **NOTE:** This feature is available in Bold BI Embedded Analytics but not in Cloud Analytics Server.
+> **NOTE:** This feature is available in On-Premises Deployment but not in Syncfusion Managed Cloud Server.
 
-To configure OAuth for data sources in Bold BI, follow the below steps: 
-1.	Click **Settings** icon on the left pane.
+To configure OAuth for data sources in Bold BI, follow the steps below:
+1.	Click the **Settings** icon on the left pane.
 2.	Select the **Connectors** tab. This tab lists all the available data sources in Bold BI.
     
     ![service-connectors](/static/assets/oauth/images/service-connectors.png)
@@ -25,23 +25,23 @@ To configure OAuth for data sources in Bold BI, follow the below steps:
     
     ![configure-oauth](/static/assets/oauth/images/configure-oauth.png)
 
-6.	Choose a connector and input its corresponding *Client ID* and *Client Secret* and click **OK**. You can modify these values whenever required.
+6.	Choose a connector and input its corresponding *Client ID* and *Client Secret*, then click **OK**. You can modify these values whenever required.
 7.	Click **Save**. If you proceed without saving the configuration, you will not be able to connect to the data source.
     
     ![save-success](/static/assets/oauth/images/save-success.png)
 
 ### How to get Client ID and Client Secret
 
-If you do not have an existing app with the service provider, you must register a new app with the service.
-Depending on the service provider, the process of registering an app varies. So, we suggest you go through the developer documentation of the corresponding service provider beforehand.
+If you do not have an existing app with the service provider, you must register a new app with the service. 
+Depending on the service provider, the process of registering an app varies. We suggest you go through the developer documentation of the corresponding service provider beforehand.
 
-In Bold BI, each of the OAuth connectors contains a **Help link** to guide you to the developer documentation for the service provider. 
+In Bold BI, each OAuth connector contains a **Help link** to guide you to the developer documentation for the service provider.
 
 After registering your app, you will receive a client ID and a client secret. The client ID is considered public information and is used to build login URLs. The client secret must be kept confidential.
 
 ### Redirect URIs
 
-You must register a redirect URI to be used for redirecting users to our application. Without setting Redirect URI, the OAuth process will not complete.
+You must register a redirect URI to be used for redirecting users to our application. Without setting a Redirect URI, the OAuth process will not complete.
 
 Set this redirect URI in your app, http://[host:port]/bi/designer/v1.0/oauth/agent.
 The *host* and *port* are the corresponding values on which your Bold BI service runs.
@@ -49,7 +49,7 @@ The *host* and *port* are the corresponding values on which your Bold BI service
 
 ## Steps to configure OAuth for WordPress
 
-If you have not configured OAuth for WordPress in Bold BI, follow the below steps and then proceed to connect to this data source.
+If you have not configured OAuth for WordPress in Bold BI, follow the steps below and then proceed to connect to this data source.
 1.	Enable the WordPress service.
 2.	You will need a developer account of the respective data source to generate Client ID and Client Secret. Use the Help link on the data source to navigate to the service provider’s developer/documentation site. For WordPress, https://developer.wordpress.com/docs/api/
     
@@ -59,13 +59,12 @@ If you have not configured OAuth for WordPress in Bold BI, follow the below step
     
     ![wordpress-home](/static/assets/oauth/images/wordpress-home.png)
 
-4.	Redirect URL for this app should be the Bold BI service. Get the host and port number of the Bold BI Application and replace it in the below URL,
-http://[host:port]/bi/designer/v1.0/oauth/agent   
+4.	The Redirect URL for this app should be the Bold BI service. Get the host and port number of the Bold BI Application and replace it in the following URL: http://[host:port]/bi/designer/v1.0/oauth/agent   
 5.	Select the app you want to connect and get its corresponding OAuth information.
     
     ![wordpress-oauth](/static/assets/oauth/images/wordpress-oauth.png)
 
-6.	Use this Client ID and Client Secret in Bold BI. Click the Configure button and input these values and click *OK*.
-7.	Click *Save* to update the settings. On confirmation, refresh the designer page and connect to WordPress data source.
+6.	Use this Client ID and Client Secret in Bold BI. Click the Configure button and input these values, then click *OK*.
+7.	Click Save to update the settings. Upon confirmation, refresh the designer page and connect to the WordPress data source.
 
 > **NOTE:**  Only one Client ID and Client Secret can be maintained for a data source. Click **Reset Configuration** to delete the entry.

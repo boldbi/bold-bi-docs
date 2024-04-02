@@ -8,7 +8,7 @@ documentation: ug
 
 # Recommended System Configuration
  
-This section helps you to define your production system configuration based on users count and data size.
+This section assists you in determining the optimal configuration for your production system, based on the number of users and the size of the data.
  
  <table>
  <tr>

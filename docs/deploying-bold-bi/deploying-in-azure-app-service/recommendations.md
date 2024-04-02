@@ -8,13 +8,13 @@ documentation: ug
 
 # Recommended Azure App service configuration to use Bold BI on Microsoft Azure App service
 
-This section will explain the recommended Azure App service configuration to install the Bold BI application. For a complete list of Azure App service plans, refer to this [Windows Azure App service plans](https://azure.microsoft.com/en-in/pricing/details/app-service/windows).
+This section will explain the recommended Azure App service configuration for installing the Bold BI application. For a complete list of Azure App service plans, refer to the [Windows Azure App service plans](https://azure.microsoft.com/en-in/pricing/details/app-service/windows).
 
-You have to choose the correct Azure App service configuration to better experience with Bold BI.
+To have a better experience with Bold BI, you need to choose the correct Azure App service configuration.
 
 ## Azure App service plans for test, development, and production environments
 
- The Basic service plan can be used for the test or development environment. Also, you can use the same basic service plan for production environment, if your app receive only low or medium level traffic.
+For test and development environments, the Basic service plan can be used. You can also use the same basic service plan for the production environment if your app receives low or medium-level traffic.
 
 ## Recommended specifications for test and development environments
 
@@ -44,9 +44,9 @@ You have to choose the correct Azure App service configuration to better experie
  </tr>
  </table>
 
- > **NOTE:**  Also, you can use the above-recommended configuration Azure App service plan for the low traffic production servers.
+ > **NOTE:**  You can also use the above-recommended configuration Azure App service plan for low traffic production servers.
 
-The Premium service plan can be used in the high traffic and large data processing production environment. For more information about the Premium service plan, refer to this [App service plans](https://azure.microsoft.com/en-in/pricing/details/app-service/windows/).
+For high traffic and large data processing production environments, the Premium service plan is recommended. For more information about the Premium service plan, refer to the [App service plans](https://azure.microsoft.com/en-in/pricing/details/app-service/windows/).
 
 ## Recommended specifications for production environment
 
@@ -61,7 +61,7 @@ The Premium service plan can be used in the high traffic and large data processi
  </tr>
  <tr>
  <td> App Service Plan </td>
- <td> P3v2 </td>
+ <td> P3V2, P3V3 </td>
  </tr>
  <tr>
  <td> CPU </td>
@@ -76,3 +76,56 @@ The Premium service plan can be used in the high traffic and large data processi
  <td> 50 GB or larger volume for Bold BI server storage </td>
  </tr>
  </table>
+
+ ## Recommended system configuration based on the concurrent users
+
+ This section helps you define your production system configuration based on the number of concurrent users and the size of data.
+
+ <table>
+ <tr>
+ <td>
+ <b>Concurrent Users</b>
+ </td>
+ <td>
+ <b>Data Size</b>
+ </td>
+ <td>
+ <b>Azure App Service Plan</b>
+ </td>
+ </tr>
+ <tr>
+ <td>
+ Up to 150 users
+ </td>
+ <td>
+ Up to 20 million records
+ </td>
+ <td>
+
+ Instance count - 1
+
+ Plan - P2V3
+
+ RAM - 16 GB
+
+ Core - 4 vCPU's
+ </td>
+ </tr>
+ <tr>
+ <td>
+ Up to 350 users
+ </td>
+ <td>
+ Up to 20 million records
+ </td>
+ <td>
+
+ Instance count - 1
+
+ Plan - P3V3
+
+ RAM - 32 GB
+
+ Core - 8 vCPU's
+ </td>
+ </tr> 

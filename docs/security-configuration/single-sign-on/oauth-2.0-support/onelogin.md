@@ -8,15 +8,15 @@ documentation: ug
 
 # OneLogin support for SSO authentication
 
-Bold BI application supports adding users through the OneLogin provider. By importing them, you can share the dashboards and email exported dashboards with them.
+The Bold BI application supports adding users through the OneLogin provider. By importing them, you can share the dashboards and email exported dashboards with them.
 
 > **NOTE:** This feature is available in Bold BI Embedded Analytics but not in Cloud Analytics Server.
 
 ## How to register the Bold BI application in OneLogin
 
-This section explains how to perform Single Sign-On for users in OneLogin with Bold BI application.
+This section explains how to perform Single Sign-On for users in OneLogin with the Bold BI application.
 
-> **NOTE:**  This configuration has to be done in OneLogin website.
+> **NOTE:**  This configuration needs to be done on the OneLogin website.
 
 #### Prerequisites
 
@@ -25,43 +25,43 @@ This section explains how to perform Single Sign-On for users in OneLogin with B
 
 ### Steps to register the Bold BI application
 
-1. Login to the OneLogin website with the admin account.
+1. Please log in to the OneLogin website using the admin account.
 
 2. Click on `Applications` in the header menu.
 
     ![Application page](/static/assets/site-administration/oauth-support/images/oneloginadmin.png)
 
-3. Click on `Add App` button.
+3. Click on the `Add App` button.
 
     ![Add Application page](/static/assets/site-administration/oauth-support/images/oneloginaddapp.png)
 
-4. Type the word `OpenId Connect`or `oidc` in the search box and click on the result.
+4. Type the words `OpenId Connect` or `oidc` in the search box, and then click on the result.
 
     ![Openidconnect](/static/assets/site-administration/oauth-support/images/openidconnect.png)
 
-5. Type the application name and click on `Add App`
+5. Please enter the application name and then click on `Add App.`
 
-6. Save the application name in the `Display Name`
+6. Save the application name in the `Display Name.`
 
     ![Applicationname](/static/assets/site-administration/oauth-support/images/oneloginname.png)
 
-7. If you want to use the Bold BI mobile application, follow the above steps and finally click `SSO` and change the `Application Type` as `Native`. If not, proceed further as it is.
+7. If you wish to use the Bold BI mobile application, please follow the steps outlined above. Finally, click on `SSO` and update the `Application Type` to `Native`. If not, you may proceed as it is.
 
     ![Mobile type](/static/assets/site-administration/oauth-support/images/mobile-onelogin.png)
 
-8. Click the `Configuration` tab and save the `Redirect URI's` and `Login Url`. For Bold BI mobile application, use the `Mobile App Redirect URI` and use the `Redirect URI` for the web application.
+8. Click the `Configuration` tab and save the `Redirect URIs` and `Login URL`. For the Bold BI mobile application, use the `Mobile App Redirect URI` and use the `Redirect URI` for the web application.
 
     ![Redirect URI](/static/assets/site-administration/oauth-support/images/oneloginredirect.png)
  
-9. The `Redirect URI` and `Login URL` is found under the `OpenID Connect` settings of your Bold BI application as in the following screenshot.
+9. The `Redirect URI` and `Login URL` are found under the `OpenID Connect` settings of your Bold BI application, as shown in the following screenshot.
 
     ![Redirecturi in setting](/static/assets/site-administration/oauth-support/images/redirecturi.png#width=65%)
 
-10. Click `SSO` tab, you will find the `Client ID` and `Client Secret` and use it in the Bold BI application.
+10. Click on the `SSO` tab and you will find the `Client ID` and `Client Secret`. Use these in the Bold BI application.
 
     ![OneLoginClient details](/static/assets/site-administration/oauth-support/images/oneloginclient.png)
 
-After successful registration in OneLogin, save these settings in Bold BI settings page to enable this authentication.
+After successfully registering in OneLogin, save these settings on the Bold BI settings page to enable this authentication.
 
 ## Enable OneLogin support for authentication in Bold BI
 
@@ -69,7 +69,7 @@ Configure the settings in Bold BI as in the following snap to enable the authent
 
 ![OneLogin settings](/static/assets/site-administration/oauth-support/images/onelogin-sample-value.png)
 
-The fields to be saved in the Bold BI to enable the OneLogin for authentication is explained as below.
+The fields that need to be saved in Bold BI in order to enable OneLogin for authentication are explained as follows.
 
 <table>
 
@@ -137,13 +137,13 @@ The fields to be saved in the Bold BI to enable the OneLogin for authentication 
 
 ## Configure OneLogin Group Import Settings in Bold BI
 
-Configure group import setting in Bold BI using OneLogin as shown in the below image.
+Configure the group import setting in Bold BI using OneLogin, as shown in the image below.
 
 ![OneLogin Group](/static/assets/site-administration/oauth-support/images/OneLogin-group.png)
 
-For generating the API client credentials follow below link,
+To generate the API client credentials, please follow the link below,
 https://developers.onelogin.com/api-docs/1/getting-started/working-with-api-credentials 
 
-We use client Id and client Secret from API client credentials to get token for accessing the groups API. We need `Region` from API Domain for accessing OneLogin APIs. Please refer below image for region,
+We use the client ID and client secret from the API client credentials to obtain a token for accessing the groups API. In order to access OneLogin APIs, we require the `Region` from the API Domain. Please refer to the image below for the region,
 
 ![OneLogin Region](/static/assets/site-administration/oauth-support/images/OneLogin-region.png)

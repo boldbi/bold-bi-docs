@@ -19,7 +19,7 @@ Please refer to your hosting environment’s documentation for how to restart th
 1. Open the IIS Manager and use the site’s dropdown to find the Bold BI Embedded app. 
 ![IIS Manager](/static/assets/faq/images/iis-manager-site.png)
 
-2. In Manage Websites in the IIS Manager, you can restart the application.
+2. In Manage Websites in the IIS Manager, you can stop and start the application.
 ![IIS Manager](/static/assets/faq/images/iis-manager-restart.png)  
 
 > **NOTE:** If the Bold BI Embedded and Bold Reports enterprise apps are installed with a common login, the site name will be `BoldAppsEnterpriseEdition`.

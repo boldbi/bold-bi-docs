@@ -8,14 +8,14 @@ documentation: ug
 
 # Custom theme
 
-Custom theme allows you to customize the appearance of the Bold BI embedded dashboard. Using the custom theme option, the dashboard can be customized with a variety of themes that are available on the Bold BI server.
+The custom theme feature enables you to personalize the appearance of the Bold BI embedded dashboard. By selecting the custom theme option, you can modify the dashboard using different themes that are accessible on the Bold BI server.
 
-> **NOTE:** To set custom theme, you should upload the custom theme files in Bold BI Server, please go through this [link](/site-administration/look-and-feel-settings-in-embedded-analytics/#custom-theme) for more details about uploading custom theme files.
+> **NOTE:** In order to set a custom theme, you should upload the custom theme files in Bold BI Server. Please refer to this [link](/site-administration/look-and-feel-settings-in-embedded-analytics/#custom-theme) for more information on how to upload custom theme files.
 
-* `appearance`   - This member used to set the custom theme in the embedded dashboard.
-* `application`  - This member used to set the custom theme for button, menu, popup areas as branding color.
-* `dashboard`    - This member used to set custom theme in dashboard with combination of `appearance` and `application` members.
-* `isLocalTheme` - This member needs to be set as `true` while you directly refer the theme file in your embedding application.
+* `appearance`   - This member used to configure the custom theme in the embedded dashboard.
+* `application`  - This member used to set the custom theme for buttons, menus, and popup areas as the branding color.
+* `dashboard`    - This member used to set a custom theme in the dashboard by combining the `appearance` and `application` members.
+* `isLocalTheme` - This member needs to be set as true when directly referring to the theme file in your embedding application.
 
 <table class="params">
 <thead>
@@ -51,7 +51,7 @@ Custom theme allows you to customize the appearance of the Bold BI embedded dash
 
 ## How to apply custom theme in Bold BI embedded application
 
-Follow the steps to apply the custom theme to the dashboard in embedding.
+Please follow the steps to apply the custom theme to the embedded dashboard.
 
 ## How to use Bold BI wrapper inside your html page
 
@@ -59,11 +59,11 @@ Follow the steps to apply the custom theme to the dashboard in embedding.
 
     ```js
     <head>
-        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v6.16.12/boldbi-embed.js"></script>
+        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v7.6.12/boldbi-embed.js"></script>
     </head>
      ```
 
-2. In the body tag, you need to create the div element with your own id name. This element will be used for dashboard embedding.
+2. In the body tag, you need to create the div element with your own id name. This element will be used for embedding the dashboard.
 
      ```js
     <body>
@@ -71,7 +71,9 @@ Follow the steps to apply the custom theme to the dashboard in embedding.
     </body>
      ```
 
-3. In the body tag, you need to add the function to create BoldBI instance with following properties and call that function in the body using the `onload` attribute as follows. Also, call the `loadDashboard()` function.
+    >**NOTE:** If you use hyphens in ID, your code may become more prone to errors and be harder to read while using Jquery. Instead, use underscores or camelCase if you are in control of the ID.
+
+3. In the body tag, you need to add the function to create a BoldBI instance with the following properties, and call that function in the body using the `onload` attribute as follows. Also, call the `loadDashboard()` function.
 
     ### How to apply custom theme using appearance option 
 
@@ -97,7 +99,7 @@ Follow the steps to apply the custom theme to the dashboard in embedding.
 
     ### How to apply custom theme using application option
 
-    When you set custom theme for `application` option, you have to set custom theme for `appearance` option too. otherwise `light` theme would be applied for `appearance` option.
+    When you choose a custom theme for the `application`, you must also select a custom theme for the `appearance` option. Otherwise, the default `light` will be applied to the `appearance` option.
 
     ```js
     <body onload="embedSample()">
@@ -121,7 +123,7 @@ Follow the steps to apply the custom theme to the dashboard in embedding.
 
     ### How to apply custom theme using dashboard option
 
-    When you set custom theme for `dashboard` option, you need not to set custom theme value for `appearance` and `application` options.
+    When you choose a custom theme for the `dashboard` option, there is no need to set a custom theme value for the `appearance` and `application` options.
 
     ```js
     <body onload="embedSample()">
@@ -142,23 +144,23 @@ Follow the steps to apply the custom theme to the dashboard in embedding.
     </body>
     ``` 
 
-Here the dashboard is rendered in dark theme as given in `appearance` option and application buttons, loading indicator are applied with darkviolet theme as specified in `application` option.
+The dashboard is rendered in the dark theme as specified in the `appearance` option, and the application buttons and loading indicator are applied with the darkviolet theme as specified in the `application` option.
 ![EmbedSSOOAuth](/static/assets/javascript/images/dark-violet-application.png#max-width=85%)
 ![EmbedSSOOAuth](/static/assets/javascript/images/dark-theme.png#max-width=85%)
 ![EmbedSSOOAuth](/static/assets/javascript/images/dark-violet-button.png#max-width=85%)
 
 ## How to refer the custom theme file as external in your embedded application
 
-1. In your .html page of your application, you need to add `boldbi.theme.definition.min.css` as custom theme file and following dependent script in the head tag of your page.
- For demonstration we have set `dark` theme as custom theme.
+1. In the .html page of your application, you need to add the `boldbi.theme.definition.min.css` as a custom theme file and the following dependent script in the head tag of your page.
+ To demonstrate, we have set the `dark` theme as a custom theme.
 
      ```js
     <head>  
-        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v6.16.12/boldbi-embed.js"></script>
+        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v7.6.12/boldbi-embed.js"></script>
     </head>
      ```     
 
-2. Need to set `isLocalTheme` option as `true` while referring the custom theme file as external.
+2. The `isLocalTheme` option should be set to `true` when referencing the custom theme file as an external file.
 
      ```js
     <body onload="embedSample()">
@@ -180,4 +182,4 @@ Here the dashboard is rendered in dark theme as given in `appearance` option and
 
 ### How to refer the custom theme file as external.
 
-A custom theme sample is provided. From this [sample](https://github.com/boldbi/boldbi-themestudio), you can generate the custom theme file({src directory}/boldbi-themestudio/themes) by following the steps in [readme page](https://github.com/boldbi/boldbi-themestudio#readme).
+A sample of a custom theme is provided. From this [sample](https://github.com/boldbi/boldbi-themestudio), you can generate the custom theme file ({src directory}/boldbi-themestudio/themes) by following the steps on the [readme page](https://github.com/boldbi/boldbi-themestudio#readme).

@@ -11,7 +11,7 @@ documentation: ug
 
 When the Bold BI is upgraded from the lower version to v5.2.48 or later, custom widgets available in the Bold BI build will be upgraded automatically. To upgrade the custom widgets(created in the version lower than 5.2) which is placed manually in the below mentioned location after the v5.2.48 migration run the custom widget upgrader utility mentioned below:
 
-> **NOTE:** This feature is available in Bold BI Embedded Analytics but not in Cloud Analytics Server.
+> **NOTE:** This feature is available in On-Premises Deployment but not in Syncfusion Managed Cloud Server.
 
 * Place the Custom Widgets as mentioned in the <a href="/visualizing-data/visualization-widgets/custom-widget/v4.2.68-or-later/#importing-widget-in-designer">link</a>.
 

@@ -31,6 +31,7 @@ _atrk_opts = { atrk_acct:"vHAUs1FYxz20cv", domain:"boldbi.com",dynamic: true};
 <!-- End Alexa Certify Javascript -->
     <meta charset="UTF-8">
     <title>Working with REST API v1.0 – Embedded Server | Bold BI Docs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
           content="Examine the behavior through working out v1.0 APIs on an interactive editor in Bold BI deployed in your server."
           charset="UTF-8" />
@@ -91,6 +92,9 @@ _atrk_opts = { atrk_acct:"vHAUs1FYxz20cv", domain:"boldbi.com",dynamic: true};
         .swagger-ui .info hgroup.main a {
             display: none !important;
         }
+        .page-heading{
+            display: none;
+        }
     </style>
 </head>
 
@@ -107,9 +111,10 @@ _atrk_opts = { atrk_acct:"vHAUs1FYxz20cv", domain:"boldbi.com",dynamic: true};
             <a href="https://embed-sdk.boldbi.com/" target="_blank">Demos</a>
             <a href="https://www.boldbi.com/support" target="_blank">Support</a>
             <a href="https://www.boldbi.com/blog" target="_blank">Blog</a>
-			<a href="https://app.boldid.net/bi/embedded/register?plan=95&evaluation=v2" target="_blank" role="button"><div class="header-demo-link">Start Free Trial</div></a>
+			<a href="https://app.boldid.net/bi/embedded/register?plan=146&evaluation=v2&leadsource=www.boldbi.com&gclid=&referrerroriginurl=https://www.boldbi.com/page-sitemap1.xml&secondaryreferraloriginurl=https://help.boldbi.com/&host=server&quantity=1&_gl=1*1fncaio*_gcl_au*MjA5NDgyNDY2OS4xNjg5NjU4OTEx*_ga*NDcwNjgzMjYxLjE2ODk1NjkyMjk.*_ga_SRXJZD7EME*MTY5MDI3NDMwNy40MC4xLjE2OTAyNzg3ODEuMC4wLjA." target="_blank" role="button"><div class="header-demo-link">Start Free Trial</div></a>
         </div>
     </div>
+    <h1 class="page-heading">Rest API Reference version 1.0</h1>
     <div id="swagger-ui"></div>
     <div id="doc-footer">
         <div id="footer-copyright">
@@ -138,6 +143,9 @@ _atrk_opts = { atrk_acct:"vHAUs1FYxz20cv", domain:"boldbi.com",dynamic: true};
             // End Swagger UI call region
 
             window.ui = ui
+            var currentYear = new Date().getFullYear();
+            // Update the span with the current year
+            document.getElementById('copyright-year').innerText = currentYear;
         }
     </script>
 </body>

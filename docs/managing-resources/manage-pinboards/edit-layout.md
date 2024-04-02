@@ -9,14 +9,14 @@ documentation: ug
 
 # Edit Pinboard Layout
 
-This section explains how to edit Pinboard layout in the Bold BI application.
+This section explains how to edit the Pinboard layout in the Bold BI application.
 
-Pinboard is based on column layout.
+The Pinboard is based on a column layout.
 
 ### Steps to edit layout in Pinboard
 
 To change the layout of the Pinboard.
 
-1. Click the `Edit Layout` option from the Pinboard menu and change the layout of the Pinboard from the available layout options as follows,
+1. Click on the `Edit Layout` option in the Pinboard menu, and then select a new layout from the available options to change the layout of the Pinboard.
 
     ![Edit Layout](/static/assets/managing-resources/manage-pinboards/images/edit-layout.png#width=50%)

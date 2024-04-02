@@ -8,15 +8,15 @@ documentation: ug
 
 # Embedding Bold BI Dashboards in Xamarin using the Embedded SDK
 
-A GitHub link has been provided to [get](https://github.com/boldbi/xamarin-sample) t the sample application, which demonstrates the dashboard rendering with the list of dashboards available in your Bold BI server and followed by steps to create a new embedding application in the `Xamarin` on your own.  
+A GitHub link has been provided to [get](https://github.com/boldbi/xamarin-sample) the sample application, which demonstrates the rendering of the dashboard with the list of available dashboards on your Bold BI server. The steps to create a new embedding application in `Xamarin` on your own.  
 
-> **NOTE:** Reading the [Getting Started](/getting-started/embedding-in-your-application/) section of the documentation is the best way to get started. The `Getting Started` guide gives you enough information that you need to know before working on the sample. 
+> **NOTE:** Reading the [Getting Started](/getting-started/embedding-in-your-application/) section of the documentation is the best way to begin. The `Getting Started` guide provides you with the necessary information that you need to know before working on the sample.
 
 ## How to run the sample
 
  1. Please [get](https://github.com/boldbi/xamarin-sample) the Xamarin Forms sample.    
 
- 2. You need to set the following properties in the `EmbedProperties.cs` file as follows. 
+ 2. You need to set the following properties in the `EmbedProperties.cs` file as follows.
         ![Embed Properties](/static/assets/javascript/sample/images/xamarin-props.png#max-width=60%)
     <meta charset="utf-8"/>
     <table>
@@ -39,7 +39,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/xamarin-sampl
         </tr>
         <tr>
         <td align="left">EmbedSecret</td>
-            <td align="left">ou can get your EmbedSecret key from embed tab by enabling<code> Enable embedauthentication</code> in <a href='https://help.boldbi.com/embedded-bi/site-administration/embed-settings/'>Administration page</a>.</td>
+            <td align="left">ou can get your EmbedSecret key from embed tab by enabling<code> Enable embedauthentication</code> in <a href='/site-administration/embed-settings/'>Administration page</a>.</td>
         </tr>    
     </tbody>
     </table>
@@ -102,35 +102,35 @@ A GitHub link has been provided to [get](https://github.com/boldbi/xamarin-sampl
 
 ## Get dashboard ID
 
- Get the item id of the dashboard from the BI server. Please refer to this [link](/working-with-dashboards/share-dashboards/get-dashboard-link/#get-link) and the following screenshot.
+ Please obtain the item ID of the dashboard from the BI server. Kindly refer to this [link](/working-with-dashboards/share-dashboards/get-dashboard-link/#get-link) and the accompanying screenshot.
 
  ![Get dashboard ID](/static/assets/javascript/sample/images/get-dashboard-id.png#max-width=55%)
 
- After changing the above details in the sample, run the Xamarin forms and the dashboard will be rendered.
+ After changing the details mentioned above in the sample, run the Xamarin forms, and the dashboard will be rendered.
 
 ## How this sample works
- 1. Use `WebView` to render the BoldBI Dashboard in the Xamarin forms application.
+ 1. Use the `WebView` component to render the BoldBI Dashboard in the Xamarin Forms application.
 
- 2. Since you are using `WebView`, you have to generate the html file to append to `WebView`.
+ 2. Since you are using `WebView`, you need to generate the HTML file to append to `WebView`.
 
- 3. Authorize the application by calling the `GetEmbedDetail` method as follows.
+ 3. Authorize the application by calling the `GetEmbedDetail` method in the following manner.
 
     ![Get Embed Details](/static/assets/javascript/sample/images/xamarin-authorize.png#max-width=100%)
 
- 4. In the above authorization, the `SignatureUrl` is generated with the provided `EmbedSecret key`. Using the signature, you will validate the details and BoldBI will return the token. You will pass the token with the `HtmlString` as follows.
+ 4. In the previous authorization, the `SignatureUrl` is generated using the provided `EmbedSecret key`. With the signature, you can verify the details and BoldBI will return the token. To pass the token, use the `HtmlString` as shown below.
     ![Htmlstring](/static/assets/javascript/sample/images/xamarin-htmlstring.png#max-width=80%)
 
- 5. In the `EmbedProperties.cs`, change the `dashboard Id` of the respective dashboard as you wish to embed.
+ 5. In the `EmbedProperties.cs` file, change the `dashboard Id` of the desired dashboard as you wish to embed.
     ![Set Dashboard Id](/static/assets/javascript/sample/images/xamarin-props.png#max-width=60%)
 
 ## Steps to create new Xamarin application to embed dashboard
- 1. Open visual studio, search for `Xamarin`, and click on `Mobile App(Xamarin.Forms)` like in the following image.
+ 1. Open Visual Studio, search for `Xamarin`, and click on `Mobile App(Xamarin.Forms)` as shown in the following image.
     ![Embed Properties](/static/assets/javascript/sample/images/xamarin_create.png#max-width=80%)
 
- 2. Then, click `Next`, select the blank project as follows, and click `Create`.
+ 2. Then, click `Next`, select the blank project as shown, and click `Create`.
     ![Embed Properties](/static/assets/javascript/sample/images/xamarin_empty_project.png#max-width=60%)
 
- 3. Create `EmbedProperties.cs` class to define the mandatory properties as follows.
+ 3. Create the `EmbedProperties.cs` class to define the mandatory properties as follows.
 
      ```js
         public class EmbedProperties
@@ -147,16 +147,16 @@ A GitHub link has been provided to [get](https://github.com/boldbi/xamarin-sampl
 
             public static string UserPassword = "";//Password of the Admin in Bold BI, which would be used to get the dashboards
 
-            public static string EmbedSecret = "";//You could get your EmbedSecret key from Embed tab by enabling <code>Enable embed authentication</code> in Administration page.(https://help.boldbi.com/embedded-bi/site-administration/embed-settings/)
+            public static string EmbedSecret = "";//You could get your EmbedSecret key from Embed tab by enabling <code>Enable embed authentication</code> in Administration page.(/site-administration/embed-settings/)
 
             public static string DashboardId = "";//Provide the dashboard id of the dashboard you want to embed here.
         }
 
      ```
 
- 4. Create a script folder and include the latest wrapper [file](https://cdn.boldbi.com/embedded-sdk/v6.16.12/boldbi-embed.js).
+ 4. Please create a folder for the script and include the most recent wrapper [file](https://cdn.boldbi.com/embedded-sdk/v7.6.12/boldbi-embed.js).
 
- 5. Open the `MainPage.xaml.cs` file, initialize the method `GetHtmlString()` where you need to declare the html contents with scripts to render the dashboard as follows.
+ 5. Please open the `MainPage.xaml.cs` file and initialize the `GetHtmlString()` method. In this method, you should declare the HTML contents along with the necessary scripts to render the dashboard.
 
      ```js
       public MainPage()
@@ -210,9 +210,9 @@ A GitHub link has been provided to [get](https://github.com/boldbi/xamarin-sampl
         }
      ```
 
- 6. The `GetEmbedDetails()` uses a method `GetSignatureUrl()` to generate the algorithm.
+ 6. The `GetEmbedDetails()` function utilizes the `GetSignatureUrl()` method to generate the algorithm.
 
-    In this method, the `embedQuerString`, `userEmail`, and the value from the `GetSignatureUrl()` method are appended as query parameters in the URL to get details of a particular dashboard.
+    In this method, the `embedQueryString`, `userEmail`, and the value from the `GetSignatureUrl()` method are appended as query parameters in the URL to obtain details of a specific dashboard.
 
      ```js
      public string GetEmbedDetails()
@@ -251,4 +251,4 @@ A GitHub link has been provided to [get](https://github.com/boldbi/xamarin-sampl
         }
      ```
 
- 7. Then, run the Xamarin application to render the dashboard.
+ 7. Then, run the Xamarin application in order to render the dashboard.

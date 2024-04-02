@@ -9,13 +9,15 @@ documentation: ug
 
 # Site Administration
 
-This section explains how to configure datastore, email, account activation, and embed settings in the Bold BI Server including the Single Sign-On, Active Directory, and Azure Active Directory settings.
+This section explains how to configure datastore, email, account activation, and embed settings in the Bold BI Server, including the Single Sign-On, Active Directory, and Azure Active Directory settings.
 
-You can explore the Site Administration in detail here,
+You can explore the Site Administration in detail here:
+
+[Site Settings](/site-administration/site-settings/)
+
+[Custom Domain in Cloud Analytics Server](/site-administration/custom-domain-in-cloud-bi/)
 
 [UI Customization](/site-administration/user-interface-customization/)
-
-[Site Settings](/rebranding/)
 
 [Look and Feel Settings in Cloud Analytics Server](/site-administration/look-and-feel-settings-in-cloud-bi/)
 

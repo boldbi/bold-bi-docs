@@ -9,7 +9,7 @@ documentation: ug
 
 # Share Dashboards
 
-This section explains on how to share dashboards with the other users in the Bold BI. 
+This section explains how to share dashboards with other users in Bold BI. 
 
 ### Steps to share a Dashboard
 
@@ -29,7 +29,7 @@ This section explains on how to share dashboards with the other users in the Bol
 
 ### Remove Permission
 
-The user who created the dashboard and the Administrator can remove the shared dashboard permissions using the `Remove` option in the `Actions` column of the each permissions.
+The user who created the dashboard and the Administrator can remove the shared dashboard permissions using the `Remove` option in the `Actions` column of each permission.
 
 1. Click the `Manage Access` button.
     

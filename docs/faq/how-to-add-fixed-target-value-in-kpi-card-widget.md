@@ -8,7 +8,7 @@ documentation: ug
 
 # How to add fixed target value in KPI card widget
 
-We can add a fixed target value in the KPI card widget using the [Expression](/working-with-data-source/transforming-data/configuring-expression-columns/) and **Max** function.
+We can add a fixed target value in the KPI card widget using the [Expression](/working-with-data-sources/data-modeling/configuring-expression-columns/) and **Max** function.
 
 Follow these steps to achieve this requirement.
 

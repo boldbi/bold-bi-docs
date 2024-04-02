@@ -4,14 +4,13 @@ title: Embedding Analytics with ASP.NET MVC | Bold BI Docs
 description: Learn how to embed an analytics dashboard with an ASP.NET MVC application using Bold BI Embed SDK and try it yourself.
 platform: bold-bi
 documentation: ug
-
 ---
 
 # Bold BI Dashboards Embedding in ASP.NET MVC Sample with Embedded SDK
 
-A GitHub link has been provided to [get](https://github.com/boldbi/aspnet-mvc-sample) the sample application, which demonstrates dashboard rendering with a list of dashboards available in your Bold BI server and is followed by steps to create a new embedding application in the `ASP.NET MVC `on your own.
+A GitHub link has been provided to [get](https://github.com/boldbi/aspnet-mvc-sample) obtain the sample application. This application demonstrates dashboard rendering with a list of dashboards available in your Bold BI server. It is then followed by steps to create a new embedding application in `ASP.NET MVC `on your own.
 
-> **NOTE:** The best way to get started would be reading the [Getting Started](/getting-started/embedding-in-your-application/) section of the documentation to start using first. The `Getting Started` guide gives you enough information that you need to know before working on the sample.
+> **NOTE:** The best way to get started would be to read the [Getting Started](/getting-started/embedding-in-your-application/) section of the documentation first. The `Getting Started` guide provides you with enough information that you need to know before working on the sample. 
 
 ## Prerequisites
 
@@ -22,17 +21,17 @@ A GitHub link has been provided to [get](https://github.com/boldbi/aspnet-mvc-sa
 
 1. Please [get](https://github.com/boldbi/aspnet-mvc-sample) the ASP.NET MVC sample from GitHub.
 
-2. Please ensure you have enabled embed authentication on the `embed settings` page. If it is not currently enabled, please refer to the following image or detailed <a href="https://help.boldbi.com/site-administration/embed-settings/#get-embed-secret-code" target="_blank">instructions</a>  to enable it.
+2. Please make sure that you have enabled embed authentication on the `embed settings` settings page. If it is not currently enabled, please refer to the provided image or detailed [instructions](/site-administration/embed-settings/#get-embed-secret-code) to enable it, using a concise number of words.
    ![Embed Settings](/static/assets/javascript/sample/images/embed-settings.png)
 
-3. To download the `embedConfig.json` file, please follow this <a href="https://help.boldbi.com/site-administration/embed-settings/#get-embed-configuration-file" target="_blank">link</a>  for reference. Additionally, you can refer to the following image for visual guidance.
+3. To download the `embedConfig.json` file, please click on the following [link](/site-administration/embed-settings/#get-embed-configuration-file) for reference. Additionally, you can refer to the image below for visual guidance.
   
    ![EmbedSettings image](/static/assets/javascript/sample/images/embed-settings-download.png)
    ![EmbedConfig Properties](/static/assets/javascript/sample/images/prop-core.png)
  
-4. Copy the downloaded `embedConfig.json` file and paste it into the designated [location](https://github.com/boldbi/aspnet-mvc-sample/tree/master/BoldBI.Embed.Sample) within the application. Please ensure you have placed it in the application, as shown in the following image.
+4. Please copy the downloaded `embedConfig.json` file and paste it into the designated [location](https://github.com/boldbi/aspnet-mvc-sample/tree/master/BoldBI.Embed.Sample) within the application. Make sure you have placed it in the application, as shown in the image below.
 
-   ![EmbedConfig image](/static/assets/javascript/sample/images/mvc-embed-config.png)
+   ![EmbedConfig image](/static/assets/javascript/sample/images/embed-config.png)
 
       <meta charset="utf-8"/>
        <table>
@@ -51,7 +50,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/aspnet-mvc-sa
        </tr>
        <tr>
           <td align="left">EmbedSecret</td>
-          <td align="left">Get your EmbedSecret key from the Embed tab by enabling the <code>Enable embed authentication</code> in the <a href='https://help.boldbi.com/embedded-bi/site-administration/embed-settings/'>Administration page</a> </td>
+          <td align="left">Get your EmbedSecret key from the Embed tab by enabling the <code>Enable embed authentication</code> in the <a href='/site-administration/embed-settings/'>Administration page</a> </td>
        </tr>
        <tr>
           <td align="left">Environment</td>
@@ -68,11 +67,11 @@ A GitHub link has been provided to [get](https://github.com/boldbi/aspnet-mvc-sa
        </tbody>
       </table>
 
-5. Run your `ASP.NET MVC` sample in Visual Studio.
+5. Please run your `ASP.NET MVC` sample in Visual Studio.
 
-> **NOTE:** If you are facing an error related to `bin\roslyn\csc.ex`, it indicates that performing a `clean build` and `rebuild` is necessary.
+> **NOTE:** If you encounter an error with `bin\roslyn\csc.ex`, it means that you need to perform a clean `clean build` and `rebuild`.
 
-6.	The dashboard can be edited in the design mode, and create a new dashboard with the following changes in the `renderDashboard()` method.
+6.	The dashboard can be edited in the design mode and create a new dashboard with the following changes in the `renderDashboard()` method.
      
        <meta charset="utf-8"/>
        <table>
@@ -112,45 +111,45 @@ A GitHub link has been provided to [get](https://github.com/boldbi/aspnet-mvc-sa
         };
      ```
 
-> **NOTE:** We represent the dashboard embedding by default without the dashboard listing sidebar. You must navigate to the `dashboardlisting` URL (such as https://localhost:44382/home/dashboardlisting) to enable the dashboard list.
+> **NOTE:** By default, we display the dashboard embedding without the dashboard listing sidebar. To access the dashboard list, you need to navigate to the `dashboardlisting` URL (e.g., https://localhost:44382/home/dashboardlisting).
 
  ## How this sample works
 
- 1. Based on the values in the `embedConfig.json`, you'll get the user token and validate it, then you can get the dashboard list from the server.
+ 1. Based on the values in the `embedConfig.json` file, you will retrieve the user token and validate it. After that, you can obtain the dashboard list from the server.
 
- 2. In `HomeController.cs`, we have added the `GetToken()` method and `GetDashboards()` action, which has been called when initializing the DOM in `Index.html`.
+ 2. In `HomeController.cs`file, we have added the `GetToken()` method and `GetDashboards()` action, which are called when initializing the DOM in `Index.html`.
     ![Get Dashboards](/static/assets/javascript/sample/images/mvc-home-getdashboard.png)
 
- 3. When selecting the dashboard to render, authorize the server URL by calling the `AuthorizationServer` action with the provided `embedConfig.json` values.
+ 3. When choosing the dashboard to display, authorize the server URL by making a call to the `AuthorizationServer` action using the values provided in the `embedConfig.json` file.
     ![Authorization Server](/static/assets/javascript/sample/images/mvc-home-getdetails.png)
 
- 4. In the above authorization, we have generated the `SignatureUrl` with the provided `EmbedSecret key` and validate embed details in Bold BI. Then only, the dashboard would be rendered in the viewer-section of `Index.cshtml`.
+ 4. In the above authorization, we generated the `SignatureUrl` using the provided `EmbedSecret key` and validated the embed details in Bold BI. Only then, the dashboard will be rendered in the viewer section of `Index.cshtml`.
 
 ## Steps to create new ASP.NET MVC application to embed dashboard
 
- 1. Start Visual Studio and click `Create` new project.
+ 1. To begin, open Visual Studio and select `Create` new project.
 
- 2. Choose ASP.NET Web Application (.NET Framework), and then click Next.
+ 2. Next, choose ASP.NET Web Application (.NET Framework) and click Next.
     ![SelectProject](/static/assets/javascript/sample/images/MVC_framework.png)
 
- 3. Change the project name as you want, and then click Create.
+ 3. Please feel free to change the project name as desired, and then click on the Create button.
 
- 4. Choose MVC and Web API, and then click OK.
+ 4. Please select MVC and Web API, and then click OK.
     ![SelectProject](/static/assets/javascript/sample/images/MVC_WebAPI.png#max-width=68%)
 
- 5. Please ensure you have enabled embed authentication on the `embed settings` page. If it is not currently enabled, please refer to the following image or detailed <a href="https://help.boldbi.com/site-administration/embed-settings/#get-embed-secret-code" target="_blank">instructions</a> to enable it.
+ 5. Please make sure that you have enabled embed authentication on the embed `embed settings` page. If it is not currently enabled, please refer to the following image or detailed [instructions](/site-administration/embed-settings/#get-embed-secret-code) to enable it.
     ![Embed Settings](/static/assets/javascript/sample/images/embed-settings.png)
 
- 6. To download the `embedConfig.json` file, please follow this <a href="https://help.boldbi.com/site-administration/embed-settings/#get-embed-configuration-file" target="_blank">link</a> for reference. Additionally, you can refer to the following image for visual guidance.
+ 6. To download the `embedConfig.json` file, please click on the following [link](/site-administration/embed-settings/#get-embed-configuration-file) for reference. Additionally, you can refer to the accompanying image for visual guidance.
    
     ![EmbedSettings image](/static/assets/javascript/sample/images/embed-settings-download.png)
     ![SelectProject](/static/assets/javascript/sample/images/prop-core.png)
 
- 7. Copy the downloaded `embedConfig.json` file and paste it into the designated [location](https://github.com/boldbi/aspnet-mvc-sample/tree/master/BoldBI.Embed.Sample) within the application. Please ensure you have placed it in the application, as shown in the following image.
+ 7. Please copy the downloaded `embedConfig.json` file and paste it into the designated [location](https://github.com/boldbi/aspnet-mvc-sample/tree/master/BoldBI.Embed.Sample) within the application. Please make sure you have placed it in the application, as shown in the image below.
 
-    ![EmbedConfig image](/static/assets/javascript/sample/images/mvc-embed-config.png)
+    ![EmbedConfig image](/static/assets/javascript/sample/images/embed-config.png)
 
- 8. Create a model class called `ApiResponse.cs`, to define the API response properties like below. Ensure the `System.Runtime.Serialization` and `System` namespaces are in the `ApiResponse.cs` model file.
+ 8. Create a model class called `ApiResponse.cs` to define the properties of the API response, as shown below. Make sure to include the `System.Runtime.Serialization` and `System` namespaces in the `ApiResponse.cs` model file.
     
     ```js
         [Serializable]
@@ -209,7 +208,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/aspnet-mvc-sa
        }
     ```
 
- 9. Create another model class as `DataClass.cs` to define the following properties. These properties are used to get the dashboard details from the server. Ensure the `System.Runtime.Serialization` namespace in the `DataClass.cs` model file.
+ 9. Please create another model class named `DataClass.cs` to define the following properties. These properties will be used to retrieve the dashboard details from the server. Please make sure to include the `System.Runtime.Serialization` namespace in the `DataClass.cs` model file.
 
     ```js
         [DataContract]
@@ -240,7 +239,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/aspnet-mvc-sa
 
     ```
 
- 10. Create another model class as `GlobalAppSettings.cs` to define the following properties. These properties maintain the `embedConfig.json` file object within the `GlobalAppSettings`. Ensure the `static BoldBI.Embed.Sample.Models.DataClass` namespace in the `GlobalAppSettings.cs` model file.
+ 10. Please create another model class called `GlobalAppSettings.cs`. This class will define the following properties that will maintain the `embedConfig.json` file object within the `GlobalAppSettings`. Make sure to include the static `static BoldBI.Embed.Sample.Models.DataClass` namespace in the `GlobalAppSettings.cs` model file.
 
      ```js
         public class GlobalAppSettings
@@ -249,12 +248,12 @@ A GitHub link has been provided to [get](https://github.com/boldbi/aspnet-mvc-sa
         }
      ```
 
- 11. The following script is mandatory to render the dashboard. Set the `Layout = null` at the top and replace the following code in your `\Views\Home\Index.cshtml` page of the `<head>` tag. Ensure the `Models` folder is added in the namespaces.
+ 11. The following script is necessary to display the dashboard. Set the `Layout = null` at the top and replace the code below in the  `<head>` tag of your `\Views\Home\Index.cshtml` page. Make sure the Models folder is included in the namespaces.
   
      ![Index.cshml location](/static/assets/javascript/sample/images/ViewFolderLocationMvc.png#max-width=30%)
 
      ```js 
-         <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v6.16.12/boldbi-embed.js"></script>
+         <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v7.6.12/boldbi-embed.js"></script>
          <link rel="stylesheet" href="~/Content/Site.css" />
          <script type="text/javascript" src="~/Scripts/Embed/Index.js"></script>
          <script type="text/javascript">
@@ -267,7 +266,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/aspnet-mvc-sa
          </script>
      ```
 
- 12. In the `<body>` section, include the `<div id="viewer-section">` with a `<div id="dashboard">` inside it. This container can be used to render the dashboard.
+ 12. In the `<body>` section, include the `<div id="viewer-section">` with a `<div id="dashboard">` inside it. This container can be used to display the dashboard.
 
       ```js
           <body onload="renderDashboard(dashboardId)">
@@ -277,7 +276,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/aspnet-mvc-sa
           </body>
       ``` 
 
- 13. In the `Controllers\HomeController.cs` to get particular dashboard details, define an API `AuthorizationServer()`, which uses the `GetSignatureUrl()` method to generate the algorithm. In this API, the `embedQuerString`,`userEmail` and the value from the `GetSignatureUrl()` method are appended as the query parameters in the URL to get details of the particular dashboard. Include the `Newtonsoft.Json` and `System.Security.Cryptography` namespaces.
+ 13. To obtain specific dashboard details in the `Controllers\HomeController.cs`, an API `AuthorizationServer()` needs to be defined. This API will utilize the `GetSignatureUrl()` method to generate the algorithm. The `embedQuerString`,`userEmail` and the value from the `GetSignatureUrl()` method should be added as query parameters in the URL to fetch the desired dashboard details. Please make sure to include the `Newtonsoft.Json` and `System.Security.Cryptography` namespaces.
 
         ```js
             public ActionResult Index()
@@ -343,7 +342,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/aspnet-mvc-sa
         };
      ```
 
- 15. Open the `Global.asax.cs` file and include the following code sample.
+ 15. Please open the `Global.asax.cs` file and add the following code sample.
            
       ```js   
           string basePath = AppDomain.CurrentDomain.BaseDirectory;
@@ -351,4 +350,4 @@ A GitHub link has been provided to [get](https://github.com/boldbi/aspnet-mvc-sa
           GlobalAppSettings.EmbedDetails = JsonConvert.DeserializeObject<EmbedDetails>(jsonString);
       ```
 
- 16. Run your `ASP.NET MVC` sample in Visual Studio.
+ 16. Please run your ASP.NET MVC sample in Visual Studio.

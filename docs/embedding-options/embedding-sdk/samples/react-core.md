@@ -4,14 +4,13 @@ title: Embedding Analytics with ASP.NET Core and React | Bold BI Docs
 description: Learn how to embed an analytics dashboard with an ASP.NET Core and React application using Bold BI Embed SDK and try it yourself.
 platform: bold-bi
 documentation: ug
-
 ---
 
 # Bold BI Dashboards embedding in React with ASP.NET Core using Embedded SDK
 
-A GitHub link has been provided to [get](https://github.com/boldbi/react-with-aspnet-core-sample) the sample application, which demonstrates the dashboard rendering in your Bold BI server and followed by steps to create a new embedding application in `React` with `ASP.NET Core` on your own.  
+A GitHub link has been provided to [get](https://github.com/boldbi/react-with-aspnet-core-sample) the sample application that demonstrates the rendering of the dashboard on your Bold BI server. This will be followed by steps to create a new embedding application in `React` with `ASP.NET Core` on your own.
 
-> **NOTE:** The best way to get started would be reading the [Getting Started](/getting-started/embedding-in-your-application/) section of the documentation to start using first. The `Getting Started` guide gives you enough information that you need to know before working on the sample.      
+> **NOTE:** The best way to get started would be by reading the [Getting Started](/getting-started/embedding-in-your-application/) section of the documentation first. The `Getting Started` guide provides all the necessary information you need to know before working on the sample.      
 
 ## Prerequisites
 
@@ -19,24 +18,24 @@ A GitHub link has been provided to [get](https://github.com/boldbi/react-with-as
  * [Node.js](https://nodejs.org/en/)
  * [Visual Studio Code](https://code.visualstudio.com/download)
 
-> **NOTE:** Node.js v14.16 to v18.18 are supported
+> **NOTE:** Node.js versions 14.16 to 18.18 are supported.
 
 ## How to run the sample
 
 1. Please [get](https://github.com/boldbi/react-with-aspnet-core-sample/tree/master/React-with-ASP.NETCore) the React with ASP.NET Core sample from GitHub.  
 
-2. Please ensure you have enabled embed authentication on the `embed settings` page. If it is not currently enabled, please refer to the following image or detailed <a href="https://help.boldbi.com/site-administration/embed-settings/#get-embed-secret-code" target="_blank">instructions</a> to enable it.
+2. Please ensure that you have enabled embed authentication on the `embed settings` page. If it is not currently enabled, please refer to the provided image or detailed [instructions](/site-administration/embed-settings/#get-embed-secret-code) to enable it.
   
    ![Embed Settings](/static/assets/javascript/sample/images/embed-settings.png)
 
-3. To download the `embedConfig.json` file, please follow this <a href="https://help.boldbi.com/site-administration/embed-settings/#get-embed-configuration-file" target="_blank">link</a> for reference. Additionally, you can refer to the following image for visual guidance.
+3. To download the `embedConfig.json` file, please follow this [link](/site-administration/embed-settings/#get-embed-configuration-file) as a reference. Additionally, you can consult the following image for visual guidance.
 
     ![EmbedSettings image](/static/assets/javascript/sample/images/embed-settings-download.png)
     ![EmbedConfig Properties](/static/assets/javascript/sample/images/prop-core.png)
  
-4. Copy the downloaded `embedConfig.json` file and paste it into the designated [location](https://github.com/boldbi/react-with-aspnet-core-sample/tree/master/React-with-ASP.NETCore) within the application. Please ensure you have placed it in the application, as shown in the following image.
+4. Please copy the downloaded `embedConfig.json` file and paste it into the designated [location](https://github.com/boldbi/react-with-aspnet-core-sample/tree/master/React-with-ASP.NETCore) within the application. Make sure you have placed it in the application as shown in the following image.
    
-   ![EmbedConfig image](/static/assets/javascript/sample/images/react-embed-config.png)
+   ![EmbedConfig image](/static/assets/javascript/sample/images/react-core-embed-config.png)
 
     <meta charset="utf-8"/>
        <table>
@@ -55,7 +54,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/react-with-as
        </tr>
        <tr>
           <td align="left">EmbedSecret</td>
-          <td align="left">Get your EmbedSecret key from the Embed tab by enabling the <code>Enable embed authentication</code> in the <a href='https://help.boldbi.com/embedded-bi/site-administration/embed-settings/'>Administration page</a> </td>
+          <td align="left">Get your EmbedSecret key from the Embed tab by enabling the <code>Enable embed authentication</code> in the <a href='/site-administration/embed-settings/'>Administration page</a> </td>
        </tr>
        <tr>
           <td align="left">Environment</td>
@@ -72,13 +71,13 @@ A GitHub link has been provided to [get](https://github.com/boldbi/react-with-as
        </tbody>
     </table>
 
-5. Open your React with ASP.NET Core project in `Visual Studio Code` and install all dependent packages, using the following command `npm install`.
+5. Open your React with ASP.NET Core project in `Visual Studio Code` and install all dependent packages by using the following command `npm install`.
 
 6. Execute the command `dotnet restore` to restore the necessary packages. Once the packages have been restored, use the `dotnet build` command to build the project.
 
-6. Run your React with ASP.NET Core sample with the command `dotnet run` in Visual Studio Code.
+6. Run your React with ASP.NET Core sample by using the command `dotnet run` in Visual Studio Code.
 
-7. The dashboard can be editable in design mode and create a new dashboard with the following changes in the `renderDashboard()` method.
+7. The dashboard can be edited in design mode and a new dashboard can be created with the following changes in the `renderDashboard()` method.
 
     <meta charset="utf-8"/>
     <table>
@@ -121,44 +120,51 @@ A GitHub link has been provided to [get](https://github.com/boldbi/react-with-as
 
      ```
 
-> **NOTE:** If you are facing issues with the validity of the ASP.NET Core developer certificate, you can try the following commands to resolve it: `dotnet dev-certs https --clean`, `dotnet dev-certs https` and `dotnet dev-certs https --trust`.
+> **NOTE:** 
+> 1. If you are experiencing issues with the validity of the ASP.NET Core developer certificate, you can try the following commands to resolve it: `dotnet dev-certs https --clean`, `dotnet dev-certs https` and `dotnet dev-certs https --trust`.
+> 2. If you are using a React version lower than v18.0, you can update the `index.js` file by adding the following line. Make sure to replace the existing `createRoot` line with the following line.</br>
+
+  ```js
+   import ReactDOM from 'react-dom';
+   ReactDOM.render(<App />, document.getElementById('root'));
+  ```
 
 ## How this sample works
- 1. Based on the configured embedConfig values in the `DashboardListing.js` file, the `renderDashboard` method will be invoked from the `componentDidMount()` function.
+ 1. The `renderDashboard` method will be invoked from the `componentDidMount()` function based on the configured embedConfig values in the `DashboardListing.js` file.
     ![render dashboard](/static/assets/javascript/sample/images/react-dash-render.png)
 
- 2. Before rendering, call the `authorizationUrl`, which redirects to the `AuthorizationServer` action in the `BoldBIEmbedController`, which generates the `EmbedSignature` using the embed secret provided in the `embedConfig.json` of the ASP.NET Core application.    
+ 2. Before rendering, call the `authorizationUrl`, which redirects to the `AuthorizationServer` action in the `BoldBIEmbedController`. This action generates the `EmbedSignature` using the embed secret provided in the `embedConfig.json` of the ASP.NET Core application.    
     ![Get Embed Details](/static/assets/javascript/sample/images/angular-get-details.png)  
 
- 3. These details will be sent to the Bold BI server and get validated there. Once the details are validated, the dashboard starts to render.  
+ 3. These details will be sent to the Bold BI server and will be validated there. Once the details are validated, the dashboard will start to render.  
 
 ## Steps to create new React with ASP.NET Core application to embed dashboard
 
- 1. Create a folder in the desired location and open it in the Visual Studio Code. 
+ 1. Create a folder in the desired location and open it in Visual Studio Code.
 
- 2. Open the terminal in the Visual Studio Code. Please refer to the following image.
+ 2. Open the terminal in Visual Studio Code. Please refer to the image below.
     ![Terminal Image](/static/assets/javascript/sample/images/react-terminal-image.png)
     
- 3. To create a new project, run this command in the terminal.
+ 3. To create a new project, you should run this command in the terminal.
 
     ```js
          dotnet new react
     ```
 
- 4. Please ensure you have enabled embed authentication on the `embed settings` page. If it is not currently enabled, please refer to the following image or detailed <a href="https://help.boldbi.com/site-administration/embed-settings/#get-embed-secret-code" target="_blank">instructions</a> to enable it.
+ 4. Please ensure that you have enabled embed authentication on the `embed settings` page. If it is not currently enabled, please refer to the following image or detailed [instructions](/site-administration/embed-settings/#get-embed-secret-code) to enable it.
     ![Embed Settings](/static/assets/javascript/sample/images/embed-settings.png)
 
- 5. To download the `embedConfig.json` file, please follow this <a href="https://help.boldbi.com/site-administration/embed-settings/#get-embed-configuration-file" target="_blank">link</a> for reference. Additionally, you can refer to the following image for visual guidance.
+ 5. To download the `embedConfig.json` file, please click on the following [link](/site-administration/embed-settings/#get-embed-configuration-file) for reference. Furthermore, you can consult the accompanying image for visual assistance.
      ![EmbedSettings image](/static/assets/javascript/sample/images/embed-settings-download.png)
      ![EmbedConfig Properties](/static/assets/javascript/sample/images/prop-core.png)
 
- 6. Copy the downloaded `embedConfig.json` file and paste it into the designated [location](https://github.com/boldbi/react-with-aspnet-core-sample/tree/master/React-with-ASP.NETCore) within the application. Please ensure you have placed it in the application, as shown in the following image.
+ 6. Copy the downloaded `embedConfig.json` file and paste it into the designated [location](https://github.com/boldbi/react-with-aspnet-core-sample/tree/master/React-with-ASP.NETCore) within the application. Make sure you have placed it correctly in the application, as shown in the following image.
  
-      ![EmbedConfig image](/static/assets/javascript/sample/images/react-embed-config.png)
+      ![EmbedConfig image](/static/assets/javascript/sample/images/react-core-embed-config.png)
 
- 7. Create a new folder called `Models`. Create a model class as `DataClass.cs` to define the following properties. These properties are used to get the dashboard details from the server. 
+ 7. Please create a new folder named `Models`. Inside this folder, create a model class called `DataClass.cs` to define the following properties. These properties are used to retrieve the dashboard details from the server.
 
-    Execute the following commands in the terminal to add the necessary references to the project: `dotnet add package Newtonsoft.Json` and `dotnet add package System.Runtime.Serialization.Primitives`. Ensure the `System.Runtime.Serialization` and `Newtonsoft.Json` namespaces in the `DataClass.cs` model file.
+    To add the necessary references to the project, execute the following commands in the terminal: `dotnet add package Newtonsoft.Json` and `dotnet add package System.Runtime.Serialization.Primitives`. Make sure to include the `System.Runtime.Serialization` and `Newtonsoft.Json` namespaces in the `DataClass.cs` model file.
 
       ```js
            [DataContract]
@@ -189,7 +195,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/react-with-as
   
       ```
 
- 8. Create another model class as `GlobalAppSettings.cs` to define the following properties. These properties maintain the `embedConfig.json` file object within the `GlobalAppSettings`.
+ 8. Create another model class, `GlobalAppSettings.cs` to define the following properties. These properties maintain the object of the `embedConfig.json` file within the `GlobalAppSettings`.
 
        ```js 
            public class GlobalAppSettings
@@ -198,11 +204,11 @@ A GitHub link has been provided to [get](https://github.com/boldbi/react-with-as
            }
        ```
 
- 9. Create a new controller as `BoldBIEmbedController.cs`. In the `Controllers\BoldBIEmbedController.cs`, To get particular dashboard details, define an API `AuthorizationServer()` which uses the method `GetSignatureUrl()` to generate the algorithm. In this API, the `embedQuerString`, `userEmail` and the value from the  `GetSignatureUrl()` method are appended as query parameters in the URL to get details of a particular dashboard. With these details, the `renderDashboard()` method is called in the React application.
+ 9. Create a new controller named `BoldBIEmbedController.cs`. Inside the `Controllers\BoldBIEmbedController.cs` file, define an API called  `AuthorizationServer()` to retrieve specific dashboard details. This API should use the `GetSignatureUrl()` method to generate the algorithm. Append the `embedQuerString`, `userEmail` and the value obtained from the `GetSignatureUrl()` method as query parameters in the URL to retrieve the details of a particular dashboard. Finally, call the `renderDashboard()` method in the React application using these details.
 
     Ensure the `System.Security.Cryptography` and `Microsoft.AspNetCore.Mvc` namespaces in the `BoldBIEmbedController.cs`.
 
-     ![EmbedConfig image](/static/assets/javascript/sample/images/react-home-controller-img.png)
+     ![EmbedConfig image](/static/assets/javascript/sample/images/home-controller-img.png)
 
        ```js
             [ApiController]
@@ -261,7 +267,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/react-with-as
             }
      ```
 
-10. Open the `Program.cs` file. These lines of code configure a permissive `CORS` policy allowing requests from any origin, HTTP method, and headers. It's crucial to consider security implications and adapt the policy to meet application requirements. Ensure the `Newtonsoft.Json` namespaces in the `Program.cs`
+10. Open the `Program.cs` file. These lines of code configure a permissive `CORS` policy that allows requests from any origin, HTTP method, and headers. It is crucial to consider the security implications and adapt the policy to meet the application requirements. Make sure to ensure the `Newtonsoft.Json` namespaces in the `Program.cs` files.
 
       ```js
            app.UseCors(corsPolicyBuilder => corsPolicyBuilder
@@ -271,7 +277,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/react-with-as
            GlobalAppSettings.EmbedDetails = JsonConvert.DeserializeObject<EmbedDetails>(jsonString);
       ```
 
-11. Create a new file and name it `package.json`. It is essential to install the packages listed in the dependencies section below.
+11. Create a new file and name it `package.json`. It is essential to install the packages that are listed in the dependencies section below.
 
       ```js
         {
@@ -319,9 +325,9 @@ A GitHub link has been provided to [get](https://github.com/boldbi/react-with-as
         } 
      ```
 
- > **NOTE:** Open the `launchSettings.json` file, `applicationUrl` is copied and pasted in `apiHost`. 
+ > **NOTE:** Open the `launchSettings.json` file and copy the `applicationUrl`. Paste it in the `apiHost`. 
 
-13. In `DashboardListing.js` file inside, include this method. In the `renderDashboard()`, use the following code to render the dashboard.
+13. In `DashboardListing.js` file, include this method. Inside the `renderDashboard()` method, use the following code to render the dashboard.
   
     ![DashboardListing Image](/static/assets/javascript/sample/images/react-renderdashboard.png)
 
@@ -347,7 +353,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/react-with-as
         }
      ```
     
- 14. In `DashboardListing.js` file inside, include this method. Create a DOM element with the Id `dashboard`, which will be utilized in the`renderDashboard()` method to render the dashboard in it.
+ 14. In `DashboardListing.js` file, include this method. Create a DOM element with the ID `dashboard`. which will be utilized in the `renderDashboard()` method to render the dashboard within it.
 
      ```js
         render() {
@@ -359,7 +365,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/react-with-as
         }
      ```
 
- 15.  In `DashboardListing.js` file inside, include this method. The `componentDidMount()` method contact the server to get the token and with this token, particular dashboard details is collected and passed to the `renderDashboard()` method to render it.
+ 15.  In `DashboardListing.js` file, include this method. The `componentDidMount()` method contacts the server to retrieve the token. With this token, specific dashboard details are collected and passed to the `renderDashboard()` method for rendering.
 
        ![DashboardListing Image](/static/assets/javascript/sample/images/react-component.png)
 
@@ -385,7 +391,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/react-with-as
 
       ```
 
-16. Open the `App.js` folder, replace the below code. The below code imports the necessary modules, defines the `App` component, renders the `DashboardListing` component, and exports it for use in other files.
+16. Open the `App.js`, replace the code below. This code imports the necessary modules, defines the `App` component, renders the `DashboardListing` component, and exports it for use in other files.
         
       ```js
             import React from 'react';
@@ -405,7 +411,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/react-with-as
         
       ```
 
-17. Open the `Index.js` file, replace the below code. These lines of code import the necessary modules `React` and `ReactDOM`, import the `App` component, and use `ReactDOM.render` to render the App component into the specified HTML element.
+17. Open the `Index.js` file and replace the code below. These lines of code import the necessary modules `React` and `ReactDOM`.  import the `App` component, and use `ReactDOM.render` to render the App component into the specified HTML element.
             
       ```js
             import React from 'react';
@@ -419,4 +425,4 @@ A GitHub link has been provided to [get](https://github.com/boldbi/react-with-as
 
 19. Run the React sample with Core sample, use the following command `dotnet run` in visual Studio Code.
 
-> **NOTE:** If you are facing issues with the validity of the ASP.NET Core developer certificate, you can try the following commands to resolve it: `dotnet dev-certs https --clean`, `dotnet dev-certs https` and `dotnet dev-certs https --trust`.
+> **NOTE:** If you encounter any issues with the validity of the ASP.NET Core developer certificate, you can try resolving it by using the following commands: `dotnet dev-certs https --clean`, `dotnet dev-certs https` and `dotnet dev-certs https --trust`.

@@ -13,7 +13,7 @@ Bold BI application allows you to access the custom JSON data using PostgreSQL d
 
 ## Steps to access custom JSON data in Bold BI
 
-1.	Refer to the [Connecting Bold BI to PostgreSQL data source documentation](/working-with-data-source/data-connectors/postgresql/#connecting-bold-bi-to-postgresql-data-source) to successfully connect it.
+1.	Refer to the [Connecting Bold BI to PostgreSQL data source documentation](/working-with-data-sources/data-connectors/postgresql/#connecting-bold-bi-to-postgresql-data-source) to successfully connect it.
 
 2.	Drag and drop the table which has the JSONB data type in Bold BI as shown in the following image.
 
@@ -26,7 +26,7 @@ Bold BI application allows you to access the custom JSON data using PostgreSQL d
 	![Save option](/static/assets/faq/images/save-option.png)
 	 
     >**Note:** You can also create expressions in the data source page itself: <br />
-    [Configuring Expression Columns](/working-with-data-source/transforming-data/configuring-expression-columns/)
+    [Configuring Expression Columns](/working-with-data-sources/data-modeling/configuring-expression-columns/)
 
 4.	Drag and drop the `Grid` widget and click on the `Assign data` section to start creating expressions.
 

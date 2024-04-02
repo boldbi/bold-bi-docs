@@ -11,8 +11,6 @@ keywords: manual filters, widget filtering, filtering visuals
 
 Starting from Bold BI [`v3.3.88`](https://www.boldbi.com/release-history/enterprise/3-3#3-3-88) you can filter the data bind to the widget by using any of the fields present in the data source. You can use single or multiple fields to filter the widget data. 
 
-> **Note:** This feature is available in Bold BI Embedded Analytics but not in Cloud Analytics Server.
-
 **Example:**
 
 Here the chart widget shows Product Category with high sales. Using manual filters we can show the data of specific country, in this case we will be showing the data of `Germany` using the `Country` field.

@@ -13,7 +13,7 @@ Bold BI allows you to query the records using the Code view mode in the Snowflak
 
 ## Querying Snowflake records using the code view mode
 
-1.	Refer to the [Connecting Bold BI to Snowflake data source](/working-with-data-source/data-connectors/snowflake/#connecting-bold-bi-to-snowflake-data-source) to successfully connect to it.
+1.	Refer to the [Connecting Bold BI to Snowflake data source](/working-with-data-sources/data-connectors/snowflake/#connecting-bold-bi-to-snowflake-data-source) to successfully connect to it.
 
 2.  Drag and drop the table from the table schema in the data design view page. Switch to the code view by enabling the toggle option in the tools pane as shown in the following image.
     

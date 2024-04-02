@@ -13,7 +13,8 @@ $(window).on('load', function() {
                 $(node.children)[0].innerHTML = $(node.children).html() + '&nbsp<span style="font-weight: 400;">' + responseContent + '</span>';
             }
         });
-        $(".api-content" ).append("<div id='doc-footer'><div id='footer-copyright'><a id='copyright' target='_blank' href='https://www.boldbi.com/copyright'>Copyright © 2001 - <span id='copyright-year'> 2023</span> Syncfusion Inc. All Rights Reserved</a></div><div id='footer-powered_by'></div></div>");
+        var currentyear = new Date().getFullYear();
+        $(".api-content" ).append("<div id='doc-footer'><div id='footer-copyright'><a id='copyright' target='_blank' href='https://www.boldbi.com/copyright'>Copyright © 2001 - <span id='copyright-year'>"+ currentyear+"</span> Syncfusion Inc. All Rights Reserved</a></div><div id='footer-powered_by'></div></div>");
     }, 2000);
 });
 

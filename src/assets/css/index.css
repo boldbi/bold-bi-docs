@@ -640,10 +640,6 @@ div#doc-mobile-content-search #doc-content-search-icon:hover {
     background-color: #0d98ff;
 }
 
-div#doc-content-search #doc-content-search-icon:hover {
-
-}
-
 div#doc-search-result .gsc-results-close-btn.gsc-results-close-btn-visible:focus,
 div#doc-content-search button.gsc-search-button.gsc-search-button-v2:focus {
   outline-color: transparent;
@@ -1158,6 +1154,7 @@ div#doc-body-cont {
   width: auto;
   padding: 0px;
   overflow: hidden;
+  width: -webkit-fill-available;	
 }
 
 #md-cnt a.anchor {
@@ -2144,4 +2141,78 @@ kbd {
   background: #EFEFEF;
   padding: 5px;
   border-radius: 3px;
+}
+
+table#widget-capabilities-table, table#on-premises-vs-cloud-table {
+  text-align: center;
+  border-collapse: separate !important;
+  border-spacing: 0 !important;
+  border: 1px solid;
+  padding: 0px !important;
+}
+
+table#widget-capabilities-table>thead:first-child {
+  background: #eff3f9 !important;
+  color: #000;
+  position: sticky;
+  top: 0;
+}
+
+table#widget-capabilities-table>thead:first-child th {
+  border-top: 1.8px solid #c4bdbd !important;
+  border-bottom: 1.5px solid #c4bdbd !important;
+}
+
+table#widget-capabilities-table>thead:first-child>tr>th:first-child {
+  width: 170px !important;
+}
+
+table#widget-capabilities-table>thead:not(:first-child) {
+  color: #000;
+  font-size: 16px !important;
+}
+
+table#widget-capabilities-table>tbody>tr>td:first-child {
+  background: #eff3f9;
+  color: #000 !important;
+  font-weight: 600;
+  text-align: left !important;
+}
+
+table#widget-capabilities-table>tbody>tr:hover td {
+  background: yellow !important;
+}
+
+table#on-premises-vs-cloud-table>thead:first-child {
+  background:#167F92;
+  color: #fff;
+  position: sticky;
+  top: -1px;
+}
+
+table#on-premises-vs-cloud-table>tbody>tr>td:first-child{
+  color:#000;
+  font-weight:600;
+  text-align:left;
+  font-size:15px !important;
+}
+
+table#on-premises-vs-cloud-table>thead:first-child>tr>th {
+  font-size: 16px !important;
+}
+
+table#on-premises-vs-cloud-table>thead:first-child>tr>th:first-child{
+  text-align: left !important;
+}
+
+table#on-premises-vs-cloud-table>tbody>tr:nth-child(odd)>td {
+  background: #EAF3F3 !important;
+}
+
+table#on-premises-vs-cloud-table>tbody>tr:hover td, table#on-premises-vs-cloud-table>tbody>tr:hover a {
+  background: #10a6c2 !important;
+  color: #fff !important;
+}
+.e-accordion .e-acrdn-item .e-acrdn-header{
+  padding: 0px 34px 0px 12px !important;
 }

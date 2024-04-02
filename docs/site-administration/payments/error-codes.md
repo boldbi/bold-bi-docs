@@ -7,7 +7,7 @@ documentation: ug
 ---
 # Payment Decline Codes
 
-This section will explain the error code details for payment failure with next step to resolve the payment failure.
+This section will explain the error code details for payment failure, along with the next steps to resolve the issue.
 
 <table>
 <tr>

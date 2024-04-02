@@ -8,15 +8,15 @@ documentation: ug
 
 # Okta support for SSO authentication
 
-Bold BI application supports adding users using the Okta provider. By importing them, you can share the dashboards and email exported dashboards with them.
+The Bold BI application supports the addition of users using the Okta provider. By importing them, you can share the dashboards and email exported dashboards with these users.
 
-> **NOTE:** This feature is available in Bold BI Embedded Analytics but not in Cloud Analytics Server.
+> **NOTE:** This feature is available in Bold BI Embedded Analytics, but it is not available in Cloud Analytics Server.
 
 ## How to register the Bold BI application in Okta
 
-This section explains how to perform Single Sign-On for users in Okta with Bold BI application.
+This section explains how to perform Single Sign-On for users in Okta with the Bold BI application.
 
-> **NOTE:**  This configuration has to be done in Okta website.
+> **NOTE:**  This configuration needs to be done on the Okta website.
 
 #### Prerequisites
 
@@ -25,23 +25,23 @@ This section explains how to perform Single Sign-On for users in Okta with Bold 
 
 ### Steps to register the Bold BI application
 
-1. Login to the Okta website with an admin account.
+1. Login to the Okta website using an admin account.
 
     ![Admin page](/static/assets/site-administration/oauth-support/images/adminlogin.png)
 
-2. Click `Applications` in the header menu.
+2. Please click on the `Applications` option in the header menu.
 
     ![Application page](/static/assets/site-administration/oauth-support/images/application.png)
 
-3. Click `Add Application` button.
+3. Click the `Add Application` button.
 
     ![Add Application](/static/assets/site-administration/oauth-support/images/addapp.png)
 
-4. Click `web` and proceed with `Next`.
+4. Click on `web` and proceed to the `Next` step.
 
     ![Application type](/static/assets/site-administration/oauth-support/images/createweb.png)
 
-5. Fill in the following application details in the next page and click `Done`.
+5. Please fill in the following application details on the next page and click `Done`.
 
 	*  Name
 	*  Login Redirect URIs
@@ -49,23 +49,23 @@ This section explains how to perform Single Sign-On for users in Okta with Bold 
 
     ![Application details](/static/assets/site-administration/oauth-support/images/appdetails.png)
 
-6. The `Login redirect URIs` must be the URI in the settings of your Bold BI application as in the following snap.
+6. The `Login redirect URIs` should be the URI in the settings of your Bold BI application, as shown in the following snapshot.
 
     ![Redirect URI](/static/assets/site-administration/oauth-support/images/redirecturi.png)
 
-7. In the next page, you will get the `Client ID` and `Client Secret` at the bottom of the page along with the other details you filled in the previous page.
+7. On the next page, you will find the `Client ID` and `Client Secret` at the bottom, along with the other details you provided on the previous page.
 
     ![Client details](/static/assets/site-administration/oauth-support/images/clientdetails.png)
 
-After successful registration in Okta, save these settings in Bold BI settings page to enable this authentication.
+After successfully registering in Okta, save these settings on the Bold BI settings page to enable this authentication.
 
 ## Enable Okta support for authentication in Bold BI
 
-Configure the settings in Bold BI as in the following snap to enable the authentication using Okta.
+Configure the settings in Bold BI, as shown in the following screenshot, to enable authentication using Okta.
 
 ![Okta settings](/static/assets/site-administration/oauth-support/images/Okta-sample-value.png)
 
-The fields to be saved in the Bold BI to enable the Okta for authentication is explained as follows.
+The fields that need to be saved in Bold BI to enable Okta for authentication are explained as follows.
 
 <table>
 
@@ -133,9 +133,9 @@ The fields to be saved in the Bold BI to enable the Okta for authentication is e
 
 ## Configure Okta Group Import Settings in Bold BI
 
-Configure group import setting in Bold BI using Okta as shown in the below image.
+Configure the group import setting in Bold BI using Okta, as shown in the image below.
 
 ![Okta Group](/static/assets/site-administration/oauth-support/images/Okta-group.png)
 
-Generate an API token by following the below link,
+To generate an API token, please click on the link below,
 https://developer.okta.com/docs/guides/create-an-api-token/create-the-token

@@ -22,7 +22,7 @@ Webhook failure logs contain details about failed webhook attempts. If a webhook
 	
 ![Webhook Failure Logs](/static/assets/site-administration/images/webhook-failure-logs.png#width=60%)
 
-You can view webhook failure logs for a specific event and date by following the steps:
+To view webhook failure logs for a specific event and date, follow these steps:
 
 1. Open the dropdown highlighted below and select any of the events you want. By default, all webhook event failure logs will be shown.
 
@@ -36,7 +36,7 @@ You can view webhook failure logs for a specific event and date by following the
 
     ![Webhook Failure Logs Apply](/static/assets/site-administration/images/webhook-failure-logs-apply.png#width=50%)
 
-4. If you want, you can choose a predefined date ranger in the date range dialog box.
+4. If you want, you can choose a predefined date range in the date range dialog box.
 
     ![Webhook Failure Logs PreSet Range](/static/assets/site-administration/images/webhook-failure-logs-preset-range.png#width=50%)
 

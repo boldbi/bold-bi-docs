@@ -7,7 +7,7 @@ documentation: ug
 ---
 
 # Dashboard Embedding in ASP.NET MVC Sample
-This section explains how to embed the Bold BI dashboard into an ASP.NET MVC sample application by providing the dashboard URL. In this sample, we have rendered the dashboard embedding using Single Sign On(SSO) with Token-based authentication.
+This section explains how to embed the Bold BI dashboard into an ASP.NET MVC sample application by providing the dashboard URL. In this sample, we have rendered the dashboard embedding using Single Sign On (SSO) with Token-based authentication. The explanation is concise.
 
 ![DashboardView](/static/assets/iFrame-based/sample/images/dashboard-views.png)
 
@@ -17,7 +17,9 @@ This section explains how to embed the Bold BI dashboard into an ASP.NET MVC sam
   
 ## How to run the sample
 
-1. You need to set the following properties in the `EmbedProperties.cs` file as follows.
+1. Please retrieve the sample of the [Iframe Dashboard embedding ASP.NET MVC](https://github.com/boldbi/iframe-dashboard-asp-net-mvc-sample) from GitHub.
+
+2. You are required to set the following properties in the `EmbedProperties.cs` file as follows.
 
     ![Embed Properties](/static/assets/iFrame-based/sample/images/EmbedProperties.png#max-width=100%)
 
@@ -39,23 +41,23 @@ This section explains how to embed the Bold BI dashboard into an ASP.NET MVC sam
     </tbody>
     </table>   
 
-2. Once you configured the above embed properties and then run your MVC application.
+3. Once you have configured the above embed properties, you can proceed to run your MVC application.
 
     ![DashboardView](/static/assets/iFrame-based/sample/images/dashboard-views.png)
 
 ## How this sample works
 
-1. Based on the `DashboardUrl` and other values set in the `EmbedProperties.cs` file, the dashboard would be rendered in the iframe using SSO with token-based authentication.
+1. The dashboard will be rendered in the iframe using SSO with token based authentication, based on the `DashboardUrl` and other values set in the `EmbedProperties.cs` file.
 
     ![Embed Properties](/static/assets/iFrame-based/sample/images/EmbedProperties.png#max-width=100%)
 
-2. Embed parameters and the Embed Secret Key are mandatory parameters used for generating the `Embed Signature`. The `embed signature` is a hashed value generated for authentication in an embed request to the Bold BI server. It is obtained by using the `SignURL` method with `embedParameters` and `embedSecretKey`, and appended to the iframe URL as the 'embed_signature' query parameter.
+2. The Embed parameters and the Embed Secret Key are mandatory parameters used to generate the `Embed Signature`. The `embed signature` files a hashed value generated for authentication in an embed request to the Bold BI server. It is obtained by using the `SignURL` method with the `embedParameters` and `embedSecretKey`, and it is then appended to the iframe URL as the `embed_signature` query parameter.
 
     ![Signature](/static/assets/iFrame-based/sample/images/signaturemethod-homecontroller.png)
 
-3. In `index.cshtml`, `embedSignature` and `dashboardUrl` are retrieved from `HomeController.cs` and `EmbedProperties.cs`. The iframe URL is formed by appending the embed signature and parameters to the dashboard URL, and it is used to render the dashboard within an `<iframe>` element.
+3. In `index.cshtml`, the variables `embedSignature` and `dashboardUrl` are retrieved from `HomeController.cs` and `EmbedProperties.cs` respectively. The iframe URL is formed by appending the embed signature and parameters to the dashboard URL. This URL is then used to render the dashboard within an `<iframe>` element.
 
     ![Index Html](/static/assets/iFrame-based/sample/images/index-html.png)
 
-> **NOTE:** You can customize the optional parameters in the `HomeController.cs` file
+> **NOTE:** You have the ability to customize the optional parameters within the `HomeController.cs` file.
 

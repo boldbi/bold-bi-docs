@@ -8,25 +8,25 @@ documentation: ug
 
 # Application Startup
 
-> **NOTE:** To configure the Bold BI v4.2.68 or earlier versions, please refer [here](/application-startup/v4.2.68-or-earlier/).
+> **NOTE:** To configure Bold BI v4.2.68 or earlier versions, please refer [here](/application-startup/v4.2.68-or-earlier/).
 
 ## License Activation
 
-This topic explains how to activate the account and also how to startup the Bold BI Enterprise Application.
+This topic explains how to activate the account and also how to start up the Bold BI Enterprise Application.
 
-Bold BI application can be activated either by using your login credentials or by offline unlock key.
+The Bold BI application can be activated either by using your login credentials or an offline unlock key.
 
-> **NOTE:** If you have already installed Bold Reports in your machine, please go to the [this section](#activate-bold-bi-license) to activate your Bold BI license.
+> **NOTE:** If you have already installed Bold Reports on your machine, please go to [this section](#activate-bold-bi-license) to activate your Bold BI license.
 
 ## Using Login Credentials
 
-You can sign in with your registered email address to activate your subscription.
+To activate your subscription, you can sign in using your registered email address.
 
 ![Activate the account page](/static/assets/application-startup/images/application-startup-login.png) 
 
 ### Select login option
 
-From the login window, choose your account type and proceed to login.
+From the login window, select your account type and proceed to login.
 
 * Bold BI Login Credentials
 * Azure AD
@@ -36,21 +36,21 @@ From the login window, choose your account type and proceed to login.
 
 ### Select license
 
-If you are having multiple Bold BI licenses, then you will be getting this screen. To proceed with application startup, select the corresponding license. Otherwise, you will be automatically redirected to the application startup screen.
+If you have multiple Bold BI licenses, then you will see this screen. To proceed with the application startup, select the corresponding license. Otherwise, you will be automatically redirected to the application startup screen.
 
 ![Select Portal License](/static/assets/application-startup/images/choose-the-plan.png)
 
 ## Offline Installation
 
-> **NOTE:** Offline unlock key is only available for selected customers. [Please contact us](https://www.boldbi.com/support) to get access to offline unlock key.
+> **NOTE:** The offline unlock key will be available for download on your account page under the Active subscription section, by default.
 
 ![Activate the account with Unlock key option](/static/assets/application-startup/images/application-startup-login-license.png)
 
-If you are installing the Bold BI in firewall restricted environments, you can use offline unlock key to activate the account. Please download your offline unlock key [here](https://www.boldbi.com/account/downloads/embedded).
+If you are installing Bold BI in firewall-restricted environments, you can use an offline unlock key to activate the account.
 
 ![Unlock key file page](/static/assets/application-startup/images/offline-setup-page.png)
 
-Once the unlock key is uploaded, proceed to the next screen for configuring the application.
+Once the unlock key has been uploaded, proceed to the next screen to configure the application.
 
 ![Select Unlcok key file ](/static/assets/application-startup/images/offline-setup.png)
 
@@ -58,28 +58,28 @@ Once the unlock key is uploaded, proceed to the next screen for configuring the 
 
 | Cases      | Solution                                            |
 |-------------------  |-----------------------------------------------------------  |
-| Invalid File Type | Please upload the valid unlock key file (lic) downloaded from [here](https://www.boldbi.com/account/downloads/embedded).    
-|  Unlock Key Expired    | Your unlock key date was expired. Please download the new unlock key file from [here](https://www.boldbi.com/account/downloads/embedded).   |
+| Invalid File Type | Please upload a valid unlock key file (lic).    
+|  Unlock Key Expired    | Your unlock key date was expired. Please download the new unlock key file and upload.   |
 
-> **NOTE:** If you are facing any other issues, please contact us from [here](https://www.boldbi.com/support).
+> **NOTE:** If you are facing any other issues, please contact us [here](https://www.boldbi.com/support).
 
 ## No Trial or New Account Request
 
-If you do not have an account for Bold BI, you can request a new trial from this [link](https://www.boldbi.com/embedded/pricing).
+If you do not have a Bold BI account, you can request a new trial by clicking on this [link](https://www.boldbi.com/pricing).
 
 ![Activate the account with No Trail option](/static/assets/application-startup/images/application-startup-sign-up.png)
 
 ## Application Startup for Bold BI Enterprise
 
-Application startup screen helps you to configure admin account setup, database configuration, and storage configuration.
+The application startup screen helps you configure the admin account setup, database configuration, and storage configuration.
 
 ## System Administrator Account
 
-A new user should be created to access the Bold BI sites and dashboards with the details mentioned in the following image.
+A new user should be created in order to access the Bold BI sites and dashboards, using the details mentioned in the following image.
 
 ![Admin User Registration](/static/assets/application-startup/images/application-startup-admin.png)
 
-While creating this new user account, a new group called `System Administrator`  will be created, and this group will have following permissions:
+While creating this new user account, a new group called `System Administrator` will be created, and this group will have the following permissions.
 
 * [Create Dashboards](/managing-resources/manage-dashboards/open-dashboards/)
 * [Create Data Sources](/managing-resources/manage-data-sources/)
@@ -89,52 +89,52 @@ While creating this new user account, a new group called `System Administrator` 
 * [Create Groups](/managing-resources/manage-groups/)
 * [Manage Permissions for users and groups](/managing-resources/manage-permissions/)
 
-By default, the new user account created is assigned to this group.
+By default, the newly created user account is assigned to this group.
 
 ## Database Configuration
 
-This configuration helps you to configure single or individual databases for Bold ID, Bold BI, and Data Store configuration.
+This configuration helps you configure single or individual databases for Bold ID, Bold BI, and Data Store configuration.
 
-`Bold ID` database stores the user identities, site details, and their access information.
+The `Bold ID` database stores user identities, site details, and access information.
 
-`Bold BI` database stores the dashboards, users, and their access permissions.
+The `Bold BI` database stores the dashboards, users, and their access permissions.
 
-The term `DataStore` refers to an intermediate database. Here, imported data from web data sources and statistic files are stored, and you can update the data using the scheduled refresh option. This database holds the data offline and helps you to access the dashboards quickly.
+The term `DataStore` refers to an intermediate database. Here, imported data from web data sources and statistic files is stored, and you can update the data using the scheduled refresh option. This database holds the data offline and helps you access the dashboards quickly.
 
 [Click here to see the available database options](/application-startup/latest/#database-options)
 
-You can connect to an existing server instance using the following options:
+To connect to an existing server instance, you have the following options:
 
 * Create a new database.
 * Use an existing database.
 
 ![SQL Server](/static/assets/application-startup/images/application-startup-step1.png)
 
-> **NOTE:** The credentials used to connect to the server instance must have the permissions specified [here](/faq/what-are-the-database-permissions-required-to-set-up-bold-bi-embedded/).
+> **NOTE:** The credentials used to connect to the server instance must have the permissions that are specified [here](/faq/what-are-the-database-permissions-required-to-set-up-bold-bi-embedded/).
 
-> **IMPORTANT:**  The Bold BI server will accept all the connections that use Transport Layer Security (TLS 1.1/1.2) encryption and AES Cryptography (128 bits). To support encrypted data transfer, select the `Enable SSL` option When configuring the Bold BI Server.
+> **IMPORTANT:**  The Bold BI server will accept all connections that use Transport Layer Security (TLS 1.1/1.2) encryption and AES Cryptography (128 bits). To support encrypted data transfer, select the `Enable SSL` option when configuring the Bold BI Server.
 
-Here, user can select simple or advanced mode for configuration.
+Here, the user can select either the simple or advanced mode for configuration.
 
 ### Simple mode
 
-Configure a single database for Bold ID, Bold BI, and Data Store.
+Please configure a single database for Bold ID, Bold BI, and Data Store.
 
-This configuration stores the user identities, sites details, dashboards, datastore, users and their access permissions in a single database.
+This configuration will store the user identities, site details, dashboards, data store, and users along with their access permissions in a single database.
 
-In Simple mode by default, the sites will be deployed in the local file system.
+By default, in Simple mode, the sites will be deployed in the local file system.
 
 ![Simple Mode](/static/assets/application-startup/images/simple-mode.png)
 
 ### Advanced mode
 
-Configure individual databases for Bold ID, Bold BI, and Data Store and choose between local file system and Azure Blob Storage for Bold ID and Bold BI.
+Please configure individual databases for Bold ID, Bold BI, and Data Store. You can choose between the local file system and Azure Blob Storage for Bold ID and Bold BI.
 
-Bold ID database stores user identities and sites details.
+The Bold ID database stores user identities and site details.
 
-Bold BI database stores dashboards, users, and their access permissions.
+The Bold BI database stores dashboards, users, and their access permissions.
 
-The Data Store database stores the authentication information and data extracted from REST data sources.
+The Data Store database stores authentication information and data extracted from REST data sources.
 
 ![Advanced Mode](/static/assets/application-startup/images/advanced-mode.png)
 
@@ -144,13 +144,13 @@ In advanced mode, the user can select the preferred storage type, either File St
 
 ![Site File Storage](/static/assets/application-startup/images/file-storage.png)  
 
-> **NOTE:** By default storage type is `File Storage`.
+> **NOTE:** The default storage type is `File Storage`.
 
-User can select the Blob Storage by giving Azure Blob Credential in the required field.  
+The user can select the Blob Storage by providing the Azure Blob Credential in the required field.  
 
 ![Site Blob Storage](/static/assets/application-startup/images/blob-storage.png)  
 
-You can find the details how to configure the Azure Blob [here](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal).
+You can find the details on how to configure the Azure Blob [here](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal).
 
 ## Database Options
 
@@ -160,9 +160,9 @@ You can find the details how to configure the Azure Blob [here](https://docs.mic
 * Amazon Aurora with PostgreSQL compatibility [(Please click here to know how to configure AWS Aurora)](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.CreateInstance.html)
 
 #### Supported Collation
-Collation in a database server specifies how the data is sorted and compared in a database. The Bold BI application will perform the sorting in the general collation. The sorting results might not be accurate if the database server uses any other user-specified rules or languages.
+Collation in a database server specifies how the data is sorted and compared in a database. The Bold BI application will perform the sorting using the general collation. The sorting results might not be accurate if the database server uses any other user specified rules or languages.
 
-The Bold BI application requires the following collations depending on the type of database server.
+The Bold BI application requires specific collations based on the type of database server.
 
 | Database       | Collation                                            |
 |-------------------  |-----------------------------------------------------------  |
@@ -172,9 +172,9 @@ The Bold BI application requires the following collations depending on the type 
 
 
 
-> **NOTE:** To connect to a PostgreSQL database, you need to install PostgreSQL client library while installing the Bold BI Enterprise edition. Learn more [here](/deploying-bold-bi/deploying-in-windows/installation-and-deployment/#client-libraries).
+> **NOTE:** To connect to a PostgreSQL database, you need to install the PostgreSQL client library while installing the Bold BI Enterprise edition. Learn more [here](/deploying-bold-bi/deploying-in-windows/installation-and-deployment/#client-libraries).
 
-After clicking Next, the application will register and validate the site information. Once the process is completed, you can able to
+After clicking Next, the application will register and validate the site information. Once the process is completed, you will be able to:
 * Manage sites – where you can manage the permissions for the sites you have created. 
 * Go to Dashboards - where you can create, edit, update the dashboards and so on. 
 
@@ -182,38 +182,34 @@ After clicking Next, the application will register and validate the site informa
 
 ## Activate Bold BI license
 
-You can activate your account either by using your login credentials or by offline unlock key.
+You can activate your account by using either your login credentials or an offline unlock key.
 
 Open the Manage License Page - `{domain}/ums/administration/license-settings`
 
-Then, choose the Embedded BI tab.
+Next, select the Embedded BI tab.
 
 ![BoldBI Embedded tab](/static/assets/application-startup/images/boldbi-embedded-tab.png)
 
 ### Activate Bold BI license using the login credential
 
-You can sign in with your registered email address to activate your subscription.
+To activate your subscription, you may sign in using your registered email address.
 
 ![Account activate using login](/static/assets/application-startup/images/activate-boldbi-account.png)
 
-If you are having multiple Bold BI licenses, then you will be getting this screen and select the corresponding license to activate the Bold BI. Otherwise, your Bold BI license will be automatically activated.
+If you have multiple Bold BI licenses, you will see this screen and can select the corresponding license to activate Bold BI. Otherwise, your Bold BI license will be automatically activated.
 
 ![Choose Bold BI License](/static/assets/application-startup/images/choose-the-license.png) 
 
 ### Upload unlock key
 
-> **NOTE:** Offline unlock key is only available for selected customers. Please contact us(https://www.boldbi.com/support) to get access to the offline unlock key.
+> **NOTE:** The offline unlock key will be available for download on your account page under the Active subscription section, by default.
 
 ![Unlock Key option](/static/assets/application-startup/images/upload-unlock-key-option.png) 
 
-Once the unlock key is uploaded, click `Upload License` for activating the Bold BI License.
+Once the unlock key has been uploaded, click on `Upload License` to activate the Bold BI License.
 
 ![Updated Bold BI License](/static/assets/application-startup/images/update-license.png)
 
 ### Create site
 
-Please refer to this [Create Site](/multi-tenancy/create-new-site/) document to create a new Bold BI site.
-
-## See Also
-
-* [**Create another site in multi-tenant application**](/multi-tenancy/create-new-site/)
+Please refer to this [Create Site](/multi-tenancy/create-new-site/) document to create more sites/tenants.

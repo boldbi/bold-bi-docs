@@ -8,16 +8,16 @@ documentation: ug
 
 Migrating a data source online refers to the process of publishing a data source in the Bold BI application to multiple tenants, either on the same server or on different instances. By doing so, you can easily share data sources across multiple sites.
 
-> **Note:** This feature is available in Bold BI Embedded Analytics but not in Bold BI Cloud Analytics Server.
+> **Note:** This feature is available in On-Premises Deployment, but not in Syncfusion Managed Cloud Server.
 
 # Migrate Data Sources Online
-To migrate a data source to other site(s), follow these steps:
+To migrate a data source online, follow these steps:
 
-1. Click `Actions` in the data source grid context menu and select `Publish` to publish the corresponding data source.
+1. Click on `Actions` in the data source grid context menu and select `Publish` to publish the corresponding data source.
 
    ![Publish Menu](/static/assets/resource-migration/migrate-data-sources-online/images/publish-datasource.png#width=55%)
 	
-2. Select `Internal Site` or `External Site` for publishing data source in publish dialog box and proceed to Next.
+2. Select `Internal Site` or `External Site` for publishing the data source in the publish dialog box, and then proceed to the next step.
 
    ![Select Site](/static/assets/resource-migration/migrate-data-sources-online/images/select-site.png#width=55%)
 
@@ -25,23 +25,23 @@ To migrate a data source to other site(s), follow these steps:
 
 You can publish the data source to the sites created in the same Bold BI server.
 
-1. Choose the sites in the drop-down that you want to publish the data source.
+1. Choose the site from the drop-down menu where you want to publish the data source.
 
    ![Select Sites](/static/assets/resource-migration/migrate-data-sources-online/images/select-sites.png#width=55%)
 
-2. Select the check box `Use original data source and linked data source name`, if you want to publish data source and linked data source with source data source name in destination sites.
+2. Select the check box for `Use original data source and linked data source name` if you want to publish the data source and linked data source with the original name in the destination sites.
 
    ![Publish Data Source with same name](/static/assets/resource-migration/migrate-data-sources-online/images/publish-datasource-with-source-name.png#width=55%)
 
-3. If necessary, provide a description of the data source.
+3. If necessary, provide a description for the data source.
 
    ![Publish Data Source Description](/static/assets/resource-migration/migrate-data-sources-online/images/publish-datasource-description.png#width=55%)
 
-4. Select the check box `Lock data source editing in the published site`, if you do not want the published data source to be edited in the published sites.
+4. Select the check box for `Lock data source editing in the published site` if you do not want the published data source to be edited in the published sites.
 
    ![Lockdown Data Source](/static/assets/resource-migration/migrate-data-sources-online/images/lockdown-datasource.png#width=55%)
 
-5. Select the check box `Lock linked data source editing in the published site`, if you do not want the published linked data source to be edited in the published sites.
+5. Select the check box for `Lock linked data source editing in the published site` if you do not want the published linked data source to be edited in the published sites.
 
    ![Lockdown Linked Data Source](/static/assets/resource-migration/migrate-data-sources-online/images/lockdown-linked-datasource.png#width=55%)
 
@@ -53,19 +53,19 @@ You can publish the data source to the sites created in the same Bold BI server.
 
    ![Advanced Fields](/static/assets/resource-migration/migrate-data-sources-online/images/advanced-field.png#width=55%)
 
-8. By submitting the form, the publishing process will be started and you can check the status of the publishing in the **Published Resources** page.
+8. By submitting the form, the publishing process will be started, and you can check the status of the publishing on the **Published Resources** page.
 
     ![Submit Publish](/static/assets/resource-migration/migrate-data-sources-online/images/submit-publish.png#width=55%)
 
 ## External site
 
-You can publish the data source to the sites created in other Bold BI servers.
+You can publish the data source to sites created on other Bold BI servers.
 
 1. Click `+` button to **add external site**.
 
    ![Add External Site](/static/assets/resource-migration/migrate-data-sources-online/images/add-external-site.png#width=55%)
  
-2. Fill in the following details as shown in the following image:
+2. Fill in the following details as shown in the image:
 
   * **Name** - Enter the name that you want for external site.
   * **Client ID** - Enter the Client Id of the site. 
@@ -74,13 +74,13 @@ You can publish the data source to the sites created in other Bold BI servers.
 
   ![External Dialog](/static/assets/resource-migration/migrate-data-sources-online/images/external-site-dialog.png#width=55%)
 
-  For the Bold BI Enterprise server, you can get the site's Client Id and Client Secret values from the site details page. 
+  For the Bold BI Enterprise server, you can obtain the site's Client Id and Client Secret values from the site details page.
 
   ![General Details](/static/assets/resource-migration/migrate-dashboards-online/images/general-details.png)
 
-3. After the external site is added, choose the external site in the drop-down and you can follow the same steps mentioned in the internal site for publishing the data source.
+3. After adding the external site, choose it from the drop-down menu, and follow the same steps mentioned for publishing the data source in the internal site.
   
-> **NOTE:** The data sources cannot be locked while publishing to external sites. So, the `Lock data source editing in the published site` and `Lock linked data source editing in the published site` check box options will not be shown for `External Site`.
+> **NOTE:** Data sources cannot be locked when publishing to external sites, so the options to `Lock data source editing in the published` site and `Lock linked data source editing in the published site` will not be available for External Sites.
 
 ## Manage published data sources
 
@@ -90,7 +90,7 @@ You can view the status of the published data sources on the **Published Resourc
 
 ### Synchronize data source
 
-When you make some changes in an original data source, you can move those changes to the published site using the synchronize published resource option.
+When you make changes in an original data source, you can move those changes to the published site using the synchronize published resource option.
 
 ![Publish Synchronize](/static/assets/resource-migration/migrate-data-sources-online/images/publish-synchronize.png)
 
@@ -104,7 +104,7 @@ You can see the publishing information of the respective data source in the dial
 
 ### Publish history
 
-You can see the published history of corresponding data source. Click `Actions` in the grid context menu and select `Publish History`.
+You can see the published history of the corresponding data source. Click `Actions` in the grid context menu and select `Publish History`.
 
 ![Publish History Action](/static/assets/resource-migration/migrate-data-sources-online/images/publish-history.png)
 
@@ -112,7 +112,7 @@ You can see the published history of corresponding data source. Click `Actions` 
 
 ### Remove publish data source
 
-Published data sources can also be removed from the Bold BI when they are no longer required.
+Published data sources can also be removed from Bold BI when they are no longer required.
 
 Click `Actions` in the grid context menu and select `Remove` to remove the published data sources from the list.
 
@@ -134,14 +134,14 @@ Click `Actions` in the grid context menu and select `Unlock Edit` to unlock the 
 
 ### Disable Synchronization of publish data source
 
-The synchronization of published data sources from source site can be disabled by enabling `Lock Resource Synchronization` in the dashboard settings in target site.
+The synchronization of published data sources from the source site can be disabled by enabling `Lock Resource Synchronization` in the dashboard settings in the target site.
 
 Learn how to disable synchronization for the published data sources [here](/site-administration/dashboard-settings/lock-resource-synchronization/).
 
-Once these settings enabled in target site, synchronization of the published data sources from source site gets failed. Show the failed status in the grid.
+Once these settings are enabled in the target site, synchronization of the published data sources from the source site will fail. Show the failed status in the grid.
 
 ![Failed-status-grid](/static/assets/resource-migration/migrate-data-sources-online/images/datasource-failed-status.png)
 
-The failure reason will be displayed as `Resource synchronization is locked in target site` when click on `Failed` status from the publish history dialog.
+The failure reason will be displayed as `Resource synchronization is locked in the target site` when clicking on the `Failed` status from the publish history dialog.
 
 ![Failure-info](/static/assets/resource-migration/migrate-data-sources-online/images/failure-info-history.png)

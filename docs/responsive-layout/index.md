@@ -9,9 +9,9 @@ documentation: ug
 
 # Responsive behavior in Bold BI
 
-Generally, a responsive design in a website allows the user to have a great experience irrespective of size of the devices to view the site.
+Generally, a responsive design on a website allows users to have a great experience regardless of the size of the device used to view the site.
 
-Our `Bold BI` site also supports the responsiveness for different layouts in different devices.
+Our `Bold BI` site also supports responsiveness for different layouts on various devices.
 
 Bold BI allows you to view the dashboard in three kinds of layouts,
 
@@ -19,6 +19,6 @@ Bold BI allows you to view the dashboard in three kinds of layouts,
 * Mobile
 * Tablet
 
-We can see the responsive visualizations of Bold BI Dashboard [here](/responsive-layout/responsive-design-bold-bi-dashboard/).
+You can see the responsive visualizations of the Bold BI Dashboard [here](/responsive-layout/responsive-design-bold-bi-dashboard/).
 
-Also, we can see the responsive visualizations of Bold BI Server [here](/responsive-layout/responsive-design-bold-bi-server/).
+Additionally, you can see the responsive visualizations of the Bold BI Server [here](/responsive-layout/responsive-design-bold-bi-server/).

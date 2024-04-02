@@ -8,83 +8,72 @@ documentation: ug
 
 # Install Bold BI when Bold Reports exists
 
-This section explains how to install and deploy the Bold BI Enterprise Edition when Bold Reports already installed in the same machine. 
+This section explains how to install and deploy Bold BI Enterprise Edition when Bold Reports is already installed on the same machine.
 
 ## Installation
 
-This topic explains the steps required to install the Bold BI Enterprise:
+This topic explains the steps required to install Bold BI Enterprise:
 
-Run the Bold BI Enterprise Installer and sign-in with your registered e-mail address to unlock the setup.
+1. Run the Bold BI Enterprise Installer. 
+    
+    ![Installer Prompt](/static/assets/installation-and-deployment/images/boldbi-enterprise-installer.png)
 
-![installation with registered e-mail](/static/assets/installation-and-deployment/images/installation-sign-in.png)
+2. You can check the License Agreement of the Bold BI Enterprise edition by clicking the `License Terms and Conditions` and clicking `Next`.
+    
+    ![Installation Prompt](/static/assets/installation-and-deployment/images/installation-prompt.png) 
 
-Agree the License Agreement of Bold BI Enterprise Edition and click `Next`, then prompt will appear to proceed whether you are going to use the existing or new Bold ID for Bold BI Enterprise Edition.
+3. Then a prompt will appear to proceed whether you are going to use the existing Bold ID for Bold BI Enterprise Edition.
+    
+    ![Bold ID prompt](/static/assets/installation-and-deployment/images/boldid-prompt.png)
+    
+    If you select `No` to proceed the installation without common login, then Bold BI Enterprise installation will be cancelled.
+    
+    ![Cancel prompt](/static/assets/installation-and-deployment/images/canceled-prompt.png)
+    
+    If you select `Yes` to proceed with the installation using a common login for both Bold Reports and Bold BI products, the installer will automatically detect the existing Bold BI hosting details and display them in the following web hosting type. It cannot be modified, so simply verify the details and click `Next`.
+    
+    ![Installation IIS](/static/assets/installation-and-deployment/images/installation-IIS.png)
+    
+    > **NOTE:** Bold BI will be installed as a sub-application within the existing Bold Report Site, which is hosted on IIS. The following changes were made on IIS/IIS Express after using the common Bold ID. Normally, Bold Reports is hosted with the site name as `BoldReports_EnterpriseReporting` in IIS, but after using the common login (Bold ID), the site name has been changed to `BoldAppsEnterpriseEdition`. Additionally, Bold BI will be hosted as a sub-app called `bi` under the `BoldAppsEnterpriseEdition` site.
+    
+    ![IIS for both Reports and Dashboard](/static/assets/installation-and-deployment/images/iis-reports-bi.png) 
+    
+    > **NOTE:** Bold ID is the common identity provider application in our Bold products that can be used to Single Sign-On (SSO) to both Bold Reports and Bold BI.
 
-> **NOTE:**  Bold ID is the common identity provider application in our Bold products that can be used to Single Sign-On (SSO) to both Bold Reports and Bold BI.  
+4. Then `Deploy Chromium packages` prompt will open. Chromium packages are necessary to enable image and PDF export functionalities in dashboards, widgets, and schedules from Bold BI. Without these packages, the image and PDF export options will be disabled. Agree to `Download Chromium Packages` and click `Next`.
+    
+    ![Installation Chromium Packages](/static/assets/installation-and-deployment/images/installation-chromium-packages.png)
+   
+    > **NOTE:** If you encounter any issues with your internet connection or lack one, deselect the Chromium Packages download option and proceed with the installation. For manual installation of the Chromium Packages, refer to [this guide](/faq/how-to-install-chromium-packages-manually/).
 
-![Bold ID prompt](/static/assets/installation-and-deployment/images/boldid-prompt.png)
+5. Then, Client libraries prompt will open. Read and accept the license to ship the selected client libraries and click INSTALL.
+   
+    ![Installation ClientLibraries](/static/assets/installation-and-deployment/images/installation-clientlibraries.png)
+   
+    > **IMPORTANT:** Bold BI Enterprise edition uses client libraries such as Oracle, PostgreSQL, MySQL, and MongoDB to connect with their respective SQL database variants. Check the license of each library to give consent for installation. Only the selected client libraries installed.
 
-## Proceed installation without Common Login
+6. Once the installation is complete, you can launch the application by clicking `Launch Application` and set up your Bold BI site.
+    
+    ![Launch Application](/static/assets/installation-and-deployment/images/launch-application.png)
 
-If you select `No` to  proceed the installation without common login, then Bold BI will be hosted as `New Site` in IIS/IIS Express with its own Bold ID.
+7. It will open in your browser. Login with your username and password which is already registered on Bold Reports.
+   
+    ![Login Page](/static/assets/installation-and-deployment/images/login-page.png)
 
-You can continue your Bold BI installation from portal license selection by following steps from [here](/deploying-bold-bi/deploying-in-windows/install-when-bold-report-exist/#select-portal-license).  
+8. After logging in, this page will open. Click on your profile and select `Manage sites (Admin access)`.
+   
+    ![Manage sites (Admin access)](/static/assets/installation-and-deployment/images/ums-report.png)
 
-## Proceed installation with common login
+9. After that, the following page will open. Go to `Settings > Manage License > Embedded BI`. Then click `Login to activate account` to register on the site.
+    
+    ![Login to activate account](/static/assets/installation-and-deployment/images/ums-server.png)
 
-If you select `Yes` to proceed the installation with common login for both Bold Reports and Bold BI products, then installation will host the Bold BI as one of sub application inside the existing Bold Report Site hosted on IIS/IIS Express for common login to work.
+10. After logging in, your subscription details will be displayed. Now you are ready to use Bold BI Application.
+    
+    ![Subcription Details](/static/assets/installation-and-deployment/images/subscription-details.png)
 
-### Select portal license
+11. You have to manually create the site for Bold BI from the site management page by opening the URL as follows:
 
-On the next installation wizard, choose your portal license. This step can be skipped if you have only one portal license.
+    `http://{hostname}/ums/sites?action=create-new-site`
 
-![portal selection](/static/assets/installation-and-deployment/images/portal-plans-selection.png)
-
-After selecting the portal license, click the Next button.
-
-### Hosting type
-
-Installer will automatically detect the existing Bold Report hosting details and show in any one of the following web hosting types:
-
-1. IIS Express
-2. IIS.
-
-> **IMPORTANT:**  In common login case, `you have to proceed with existing values`, because modifying the existing hosting details during the common login setup will stop the application from working.
-
-![Installation Location, IIS Port and Site Name](/static/assets/installation-and-deployment/images/installation-IIS.png)
-
-### PhantomJS
-
-> **IMPORTANT:** PhantomJS is a headless WebKit scriptable with JavaScript. This is a free software/open source, and it may contain MIT, BSD, LGPL, or GPL, or other similar licenses that contain third-party code. This executable file is necessary to achieve Image and PDF export functionalities in the Dashboard and widgets. Without this file, the image and PDF export options in the Dashboard and widgets will no longer be available. If you choose to download PhantomJS, must accept all terms and conditions to use it with Syncfusion products.
-
-Read and accept the license and third-party terms and conditions through checking the option `LICENSE` and `Third-party` for install PhantomJS and click `Next`.
-
-![Installation PhantomJS](/static/assets/installation-and-deployment/images/installation-phantomjs.png)  
-
-> **NOTE:** If you have any problem with internet connection or do not have internet connection, unselect the PhantomJS download option and continue to install. To manually install the PhantomJS, please refer [this](/faq/how-to-install-phantomjs-manually/).
-
-### Client Libraries
-
-> **IMPORTANT:** Bold BI Enterprise edition uses client libraries such as Oracle, PostgreSQL, MySQL, and MongoDB to connect with their respective SQL database variants. Check license of each library to give consent for installation. Selected client libraries alone will be shipped into the product.
-
-![Installation ClientLibraries](/static/assets/installation-and-deployment/images/installation-clientlibraries.png)
-
-Read and accept the license to ship selected client libraries and click INSTALL.
-
-After installation process is completed, you can launch the application by clicking `Launch Application` and setup the your Bold BI site.
-
-### Registering Bold BI site
-
-You cannot setup the Bold BI application directly by clicking `Launch Application` when common login selected. You have to manually create the site for Bold BI from site management page by opening URL as follows.
-
-`http://{hostname}/ums/sites?action=create-new-site` 
-
-Please setup the Bold BI site by following the steps given [here](/multi-tenancy/create-new-site/).
-
-### Application structure when common login selected
-
-The following changes were made on IIS/IIS Express after proceeding with common Bold ID.  
-
-Normally, Bold Reports hosted with the site name as `BoldReportsOnPremiseEdition` in IIS, but after proceeded with common login (Bold ID), the site name has been renamed as `BoldAppsEnterpriseEdition` and also Bold BI will be hosted as sub-app as `bi` under the `BoldAppsEnterpriseEdition` as follows.
-
-![IIS for both Reports and Dashboard](/static/assets/installation-and-deployment/images/iis-reports-bi.png)  
+    Please set up the Bold BI site by following the steps given [here](/multi-tenancy/create-new-site/).

@@ -10,9 +10,9 @@ documentation: ug
 
 # Working with Dashboard
 
-This section explains how to create, edit, save, share, and preview dashboard in the Bold BI Cloud with the additional features involved in it.
+This section explains how to create, edit, save, share, and preview a dashboard in the Bold BI Cloud, along with the additional features involved in it.
 
-You can explore the working with dashboard in detail here,
+You can explore working with the dashboard in detail here:
 
 [Import Widgets](/working-with-dashboards/import-widgets/)
 

@@ -8,15 +8,15 @@ documentation: ug
 
 # Bold BI Dashboards embedding in Django using Embedded SDK
 
-A GitHub link has been provided to [get](https://github.com/boldbi/django-sample) the sample application, which demonstrates the rendering of dashboard available in your Bold BI server and followed by steps to create a new embedding application in the `Django` on your own. 
+A GitHub link has been provided to [get](https://github.com/boldbi/django-sample) the sample application, which demonstrates the rendering of the dashboard available on your Bold BI server. This is followed by steps to create a new embedding application in `Django` on your own.
 
-> **NOTE:** The best way to get started would be reading the [Getting Started](/getting-started/embedding-in-your-application/) section of the documentation.  The `Getting Started` guide gives you enough information that you need to know before working on the sample.      
+> **NOTE:** The best way to get started would be to read the [Getting Started](/getting-started/embedding-in-your-application/) section of the documentation. The `Getting Started` guide provides you with enough information that you need to know before working on the sample.     
 
 ## How to run the sample
 
  1. Please [get](https://github.com/boldbi/django-sample) the Django sample from the attached file.
 
- 2. You need to set the following properties in the `models.py` file as follows. 
+ 2. You need to set the following properties in the `models.py` file as follows.
     ![Embed Properties](/static/assets/javascript/sample/images/django-props.png#max-width=75%)
 
     <meta charset="utf-8"/>
@@ -45,24 +45,24 @@ A GitHub link has been provided to [get](https://github.com/boldbi/django-sample
     </tbody>
     </table>
 
- 3. You can get your Embed Secret key from the administrator setting section. Please refer to this [link](/site-administration/embed-settings/) for more details.
+ 3. You can obtain your Embed Secret key from the administrator setting section. Please refer to this [link](/site-administration/embed-settings/) for further details.
 
- 4. Run your Django application.
+ 4. Please run your Django application.
 
 ## How this sample works
 
- 1. Based on the provided embed details with the dashboard, authorize the server URL by calling the get embed details function `(views.py/get_embed_details)` call with the provided `EmbedProperties` values
+ 1. To authorize the server URL, use the provided embed details from the dashboard and call the `get_embed_details` function `(views.py/get_embed_details)` with the provided values of `EmbedProperties`.
  
-    Learn more about authorize server [here](/security-configuration/authorize-server/)
+    Learn more about authorize server [here](/security-configuration/authorize-server/).
     
     ![Authorize Server URL](/static/assets/javascript/sample/images/django-api.png)
     ![Get Embed Details](/static/assets/javascript/sample/images/django-authorize.png)
 
-    > **NOTE:** Remove the CSRF Token from the headers, if your application does not have CSRF middleware `(django.middleware.csrf.CsrfViewMiddleware)`.
+    > **NOTE:** Remove the CSRF Token from the headers if your application does not have the CSRF middleware `(django.middleware.csrf.CsrfViewMiddleware)`.
     
     ![CSRF Token](/static/assets/javascript/sample/images/django_csrf_token.png)
 
- 2. In the above authorization, generate the SignatureUrl using the provided EmbedSecret key and validate embed details in Bold BI. Once details are validated, the dashboard starts to render.
+ 2. In the authorization mentioned above, generate the SignatureUrl using the provided EmbedSecret key and validate the embed details in Bold BI. Once the details are validated, the dashboard starts to render.
 
- 3. In the `models.py`, change the dashboard Id of the respective dashboard that you want to embed.
+ 3. In the `models.py`, change the dashboard ID of the respective dashboard that you want to embed.
     ![Set Dashboard Id](/static/assets/javascript/sample/images/django-props.png)

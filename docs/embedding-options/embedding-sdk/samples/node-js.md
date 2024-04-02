@@ -4,14 +4,13 @@ title: Embedding Analytics Dashboard with Node.js | Bold BI Docs
 description: Learn how to embed an analytics dashboard with a Node.js application using Bold BI Embed SDK and try it yourself.
 platform: bold-bi
 documentation: ug
-
 ---
 
 # Bold BI Dashboards embedding in Node.js using Embedded SDK
 
-A GitHub link has been provided to [get](https://github.com/boldbi/nodejs-sample) the sample application, which demonstrates the rendering of dashboard available in your Bold BI server and followed by steps to create a new embedding application in the `Node.js` on your own.   
+A GitHub link has been provided to [get](https://github.com/boldbi/nodejs-sample) the sample application, which demonstrates the rendering of the dashboard available on your Bold BI server. This is followed by steps to create a new embedding application in `Node.js` on your own.   
 
-> **NOTE:** The best way to get started would be reading the [Getting Started](/getting-started/embedding-in-your-application/) section of the documentation to start using first. The `Getting Started` guide gives you enough information that you need to know before working on the sample.
+> **NOTE:** The best way to get started would be to read the [Getting Started](/getting-started/embedding-in-your-application/) section of the documentation first. The `Getting Started` guide provides you with enough information that you need to know before working on the sample.
 
 ## Prerequisites
 
@@ -25,16 +24,15 @@ A GitHub link has been provided to [get](https://github.com/boldbi/nodejs-sample
 
  1. Please [get](https://github.com/boldbi/nodejs-sample) the Node.js sample from GitHub.
 
- 2. Please ensure you have enabled embed authentication on the `embed settings` page. If it is not currently enabled, please refer to the following image or detailed <a href="https://help.boldbi.com/site-administration/embed-settings/#get-embed-secret-code" target="_blank">instructions</a>  to enable it.
-
+ 2. Please ensure that you have enabled embed authentication on the `embed settings` page. If it is not currently enabled, please refer to the following image or detailed [instructions](/site-administration/embed-settings/#get-embed-secret-code) to enable it.
     ![Embed Settings](/static/assets/javascript/sample/images/embed-settings.png)
 
- 3. To download the `embedConfig.json` file, please follow this <a href="https://help.boldbi.com/site-administration/embed-settings/#get-embed-configuration-file" target="_blank">link</a> for reference. Additionally, you can refer to the following image for visual guidance.
+ 3. To download the `embedConfig.json` file, please follow this [link](/site-administration/embed-settings/#get-embed-configuration-file) for reference. Furthermore, you can refer to the accompanying image for visual guidance.
      
     ![EmbedSettings image](/static/assets/javascript/sample/images/embed-settings-download.png) 
     ![EmbedConfig Properties](/static/assets/javascript/sample/images/prop-core.png)
  
- 4. Copy the downloaded `embedConfig.json` file and paste it into the designated [location](https://github.com/boldbi/nodejs-sample) within the application. Please ensure you have placed it in the application, as shown in the following image.
+ 4. Please copy the downloaded `embedConfig.json` file and paste it into the designated [location](https://github.com/boldbi/nodejs-sample) within the application. Make sure to place it in the application as shown in the following image.
 
     ![EmbedConfig Location Image](/static/assets/javascript/sample/images/nodejs-embedconfig-location.png)
 
@@ -59,7 +57,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/nodejs-sample
     </tr>
     <tr>
     <td align="left">EmbedSecret</td>
-    <td align="left">Get your EmbedSecret key from the Embed tab by enabling the <code>Enable embed authentication</code> in the <a href='https://help.boldbi.com/embedded-bi/site-administration/embed-settings/'>Administration page</a></td>
+    <td align="left">Get your EmbedSecret key from the Embed tab by enabling the <code>Enable embed authentication</code> in the <a href='/site-administration/embed-settings/'>Administration page</a></td>
     </tr>
     <tr>
     <td align="left">UserEmail</td>
@@ -72,19 +70,19 @@ A GitHub link has been provided to [get](https://github.com/boldbi/nodejs-sample
     </tbody>
     </table>
 
- 5. To install all dependent packages, use the following command.
+ 5. To install all the necessary packages, please use the following command.
 
      ```js
           npm install
      ```
 
- 6. To run the samples, use the following command
+ 6. To run the samples, please use the following command.
 
      ```js
           node embed.js
      ```
 
-7.	The dashboard can be edited in the design mode and able to create a new dashboard with the following changes in the `embedSample()` method.
+7.	The dashboard can be edited in design mode and can create a new dashboard with the following changes in the `embedSample()` method.
 
     <meta charset="utf-8"/>
     <table>
@@ -126,44 +124,44 @@ A GitHub link has been provided to [get](https://github.com/boldbi/nodejs-sample
      ```
 
 ## How this sample works
- 1. Based on the `dashboardId` from the `embedConfig.json` file, authorize the server URL by calling the `GetEmbedDetails` API(http://localhost:8080/embeddetail/get) call with the provided `embedConfig` values.
+ 1. To authorize the server URL, call the `GetEmbedDetails` API (http://localhost:8080/embeddetail/get) with the provided `embedConfig` values, based on the `dashboardId` from the `embedConfig.json` file.
     ![Get Embed Config Details](/static/assets/javascript/sample/images/nodejs-authorize.png)
 
- 2. In the above authorization, generate the `SignatureUrl` with the provided `EmbedSecret key` and validate embed details in Bold BI. Once the details are validated, the dashboard starts to render in `index.html`.
+ 2. In the previous authorization, generate the `SignatureUrl` using the provided `EmbedSecret key` and validate the embed details in Bold BI. Once the details are validated, the dashboard will start to render in `index.html`.
 
 ## Steps to create new Node.js application to embed dashboard
 
- 1. Create a folder in the desired location and open it in the Visual Studio Code. 
+ 1. Create a folder in the desired location and open it in Visual Studio Code.
 
  2. Open the terminal in Visual Studio Code. Please refer to the following image.
     ![Terminal Image](/static/assets/javascript/sample/images/node-terminal-image.png)
 
- 3. Please ensure that you have enabled embed authentication on the `embed settings` page. If it is not currently enabled, please refer to the following image or detailed <a href="https://help.boldbi.com/site-administration/embed-settings/#get-embed-secret-code" target="_blank">instructions</a> to enable it.
+ 3. Please ensure that you have enabled embed authentication on the `embed settings` page. If it is not currently enabled, please refer to the following image or detailed <a href="/site-administration/embed-settings/#get-embed-secret-code" target="_blank">instructions</a> to enable it.
     ![Embed Settings](/static/assets/javascript/sample/images/embed-settings.png)
 
- 4. To download the `embedConfig.json` file, please follow this <a href="https://help.boldbi.com/site-administration/embed-settings/#get-embed-configuration-file" target="_blank">link</a> for reference. Additionally, you can refer to the following image for visual guidance.
+ 4. To download the `embedConfig.json` file, please follow this <a href="/site-administration/embed-settings/#get-embed-configuration-file" target="_blank">link</a> for reference. Additionally, you can refer to the following image for visual guidance.
 
     ![EmbedSettings image](/static/assets/javascript/sample/images/embed-settings-download.png)
     ![EmbedConfig Properties](/static/assets/javascript/sample/images/prop-core.png)
 
- 5. Copy the downloaded `embedConfig.json` file and paste it into the designated [location](https://github.com/boldbi/nodejs-sample) within the application. Please ensure that you have placed it in the application as shown in the following image.
+ 5. Please copy the downloaded `embedConfig.json` file and paste it into the designated [location](https://github.com/boldbi/nodejs-sample) within the application. Make sure you have placed it in the application exactly as shown in the following image.
 
     ![EmbedConfig image](/static/assets/javascript/sample/images/node-embed-settings-image.png)
 
- 6. Create a `js` file with the name `embed.js` and an `html` file with the name `index.html`.
+ 6. Create a `JavaScript` file named `embed.js` and an `html` file named `index.html`.
 
- 7. In the `index.html` file, refer to the mandatory file in the <head> tag. The <body> tag initializes the `embedSample()` method, and the DOM element with the  `dashboard` id is created in the `<div>` tag where the required dashboard will be rendered.
+ 7. In the `index.html` file, refer to the mandatory file in the <head> tag. The <body> tag initializes the `embedSample()` method, and the DOM element with the `dashboard` id is created in the `<div>` tag where the required dashboard will be rendered.
 
     ```js
     <head>  
-        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v6.16.12/boldbi-embed.js"></script>
+        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v7.6.12/boldbi-embed.js"></script>
     </head>
     <body onload="embedSample();">
         <div id="dashboard"></div>
     </body>
     ```
     
- 8. In the `<script>` tag, define the required properties as follows.
+ 8. In the `<script>` tag, define the required properties as follows:
 
      ```js
      
@@ -205,7 +203,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/nodejs-sample
         </script>
      ```
 
- 9. In the `javascript` file, create an API `/embeddetail/get`  which uses the `GetSignatureUrl()` method to generate the algorithm. In this API, the `embedQuerString`,`userEmail` and the value from the  `GetSignatureUrl()` method are appended as query parameters in the URL to get details of a particular dashboard.
+ 9. In the `javascript` file, create an API `/embeddetail/get`  that utilizes the `GetSignatureUrl()` method to generate the algorithm. In this API, append the `embedQuerString`,`userEmail` and the value from the  `GetSignatureUrl()` method as query parameters in the URL to retrieve details of a specific dashboard.
 
      ```js 
            var express = require('express');
@@ -301,13 +299,14 @@ A GitHub link has been provided to [get](https://github.com/boldbi/nodejs-sample
           
      ```
 
-11. Run the following commands in the terminal: `npm install`, `npm install express`, `npm install cors` and `npm install utf8-bytes`.
+11. Please run the following commands in the terminal: `npm install`, `npm install express`, `npm install cors` and `npm install utf8-bytes`.
 
-12. To run the sample, execute following command.
+12. To run the sample, execute the following command.
 
       ```js
 
          node embed.js
       ```
 
-13.	Once you execute the above command, the sample will be hosted at http://localhost:8080/.
+13.	Once you execute the command above, the sample will be hosted at http://localhost:8080/.
+ 

@@ -8,14 +8,14 @@ documentation: ug
 ---
 
 # Move and Copy Dashboards
-Dashboards can be moved or copied from one category to another category.
+Dashboards can be moved or copied from one category to another.
 
 ### Move Dashboards
-Moves the Dashboard from one to another category.
+Moves the Dashboard from one category to another.
 
 ![Move Dashboards](/static/assets/managing-resources/manage-dashboards/images/move-dashboard.png#width=55%)
 
 ### Copy Dashboards
-Copies the Dashboard from one to another category.
+Copies the Dashboard from one category to another.
 
 ![Copy Dashboards](/static/assets/managing-resources/manage-dashboards/images/copy-dashboard.png#width=55%)

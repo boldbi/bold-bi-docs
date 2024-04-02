@@ -8,31 +8,31 @@ documentation: ug
 
 # Bold BI Dashboards embedding in Vue.js with Node.js using Embedded SDK
 
-A GitHub link has been provided to [get](https://github.com/boldbi/vue-with-nodejs-sample) the sample application, which demonstrates the rendering of the dashboard available on your Bold BI server. This is followed by steps to create a new embedding application in `Vue.js` with `Node.js` on your own. 
+A GitHub link has been provided to [get](https://github.com/boldbi/vue-with-nodejs-sample) the sample application, which showcases the rendering of the dashboard that is accessible on your Bold BI server. Following this, there are instructions on how to create a new embedding application in `Vue.js` with `Node.js` on your own.
 
-> **NOTE:** The best way to get started would be to read the [Getting Started](/getting-started/embedding-in-your-application/) section of the documentation. The `Getting Started` guide provides enough information to know before working on the sample.
+> **NOTE:** The best way to get started is by reading the [Getting Started](/getting-started/embedding-in-your-application/) section of the documentation. The `Getting Started` guide provides enough information to know before working on the sample.
 
 ## Requirements/Prerequisites
 
  * [Visual Studio Code](https://code.visualstudio.com/download)
  * [Node.js](https://nodejs.org/en/)
 
- > **NOTE:** Node.js v12.13 to v18.18 are supported.
+ > **NOTE:** Node.js versions 12.13 to 18.18 are supported.
 
 ## How to run the sample
 
- 1. Please get the [Vue.js with Node.js](https://github.com/boldbi/vue-with-nodejs-sample) sample from GitHub.       
+ 1. Please obtain the sample for [Vue.js with Node.js](https://github.com/boldbi/vue-with-nodejs-sample) from GitHub.       
 
- 2. Please ensure you have enabled embed authentication on the `embed settings` page. If it's not, please follow the [instructions](https://help.boldbi.com/site-administration/embed-settings/#get-embed-secret-code) provided or refer to the image below to enable it.
+ 2. Please ensure that you have enabled embed authentication on the `embed settings` page. If it is not enabled, please follow the provided [instructions](/site-administration/embed-settings/#get-embed-secret-code) or refer to the image below for guidance on how to enable it.
 
     ![Embed Settings](/static/assets/javascript/sample/images/embed-settings.png)
 
- 3. Please use this [link](https://help.boldbi.com/site-administration/embed-settings/#get-embed-configuration-file) as a reference to download the `embedConfig.json` file. Additionally, you can refer to the following image for visual guidance.
+ 3. Please use this [link](/site-administration/embed-settings/#get-embed-configuration-file) as a reference to download the `embedConfig.json` file. Additionally, you can refer to the following image for visual guidance.
      
     ![EmbedSettings image](/static/assets/javascript/sample/images/embed-settings-download.png) 
     ![EmbedConfig Properties](/static/assets/javascript/sample/images/prop-core.png)
 
-  4. Please copy the downloaded `embedConfig.json` file and paste it into the designated [location](https://github.com/boldbi/vue-with-nodejs-sample/tree/master/Nodejs) within the application. Please ensure you have placed it in the application as shown in the following image.
+  4. Please copy the downloaded `embedConfig.json` file and paste it into the designated [location](https://github.com/boldbi/vue-with-nodejs-sample/tree/master/Nodejs) within the application. Please ensure that you have placed it in the application as shown in the following image.
 
      ![EmbedConfig Location Image](/static/assets/javascript/sample/images/vue-node-embedconfig.png)
 
@@ -72,17 +72,17 @@ A GitHub link has been provided to [get](https://github.com/boldbi/vue-with-node
 
  5. Open your `Nodejs` sample in **Visual Studio Code.**
     
- 6. To install all dependent packages, use the following command `npm install.`
+ 6. To install all dependencies, use the command `npm install.`
  
- 7. Run the back-end `Nodejs` sample using the following command `node embed.js`.
+ 7. Please run the back-end `Nodejs` sample by using the command `node embed.js`.
 
  8. Open the `vue` sample in a new window of **Visual Studio Code.**
 
- 9. To install all dependent packages, use the following command `npm install.`
+ 9. To install all dependent packages, use the following command: `npm install.`
 
- 10. Run your `vue` sample using the following command `npm run serve`.
+ 10. Please run your `vue` sample using the following command: `npm run serve`.
 
- 11. The dashboard can be editable in design mode and create a new dashboard with the following changes in the `renderDashboard()` method.
+ 11. The dashboard can be edited in design mode and a new dashboard can be created with the following changes in the `renderDashboard()` method.
 
      <meta charset="utf-8"/>
      <table>
@@ -122,35 +122,35 @@ A GitHub link has been provided to [get](https://github.com/boldbi/vue-with-node
       ```
 ## How this sample works
  
- 1. The dashboard will be rendered using data fetched from the `embedconfig.json` file through the `/getdetails` endpoint in back-end `Nodejs`.
+ 1. The dashboard will be rendered using data fetched from the `embedconfig.json` file through the `/getdetails` endpoint in the back-end `Node.js`.
     ![embedconfig](/static/assets/javascript/sample/images/vue-node-getdetails.png)
 
- 2. Before rendering, the `authorizationUrl` is invoked, redirecting to the `AuthorizationServer` action within `embed.js`. This generates the `EmbedSignature` using the embed secret from the `embedConfig.json`.
+ 2. Before rendering, the `authorizationUrl` is invoked, redirecting to the `AuthorizationServer` action within `embed.js`. This action generates the `EmbedSignature` using the embed secret from the `embedConfig.json`.
     ![Authorization server](/static/assets/javascript/sample/images/vue-node-authorization.png)
 
- 3. These details will be sent to the Bold BI server for validation. Once the details are validated, the dashboard begins to render.
+ 3. These details will be sent to the Bold BI server for validation. Once the details have been validated, the dashboard will begin to render.
 
 ## Steps to create new Vue.js with Node.js application to embed dashboard
 
- 1. Create a folder in the desired location and open it in the **Visual Studio Code**. 
+ 1. Create a folder in the desired location and open it in **Visual Studio Code**. 
 
- 2. Open the terminal in Visual Studio Code. Please refer to the following image.
+ 2. Open the terminal in Visual Studio Code. Please refer to the image below.
     ![Terminal Image](/static/assets/javascript/sample/images/vue-node-terminal.png)
 
- 3. Please ensure you have enabled embed authentication on the `embed settings` page. If it's not, please follow the [instructions](https://help.boldbi.com/site-administration/embed-settings/#get-embed-secret-code) provided or refer to the image below to enable it.
-    
+ 3. Please ensure that you have enabled embed authentication on the `embed settings` page. If it is not enabled, please follow the provided [instructions](/site-administration/embed-settings/#get-embed-secret-code) or refer to the image below to enable it.
+
     ![Embed Settings](/static/assets/javascript/sample/images/embed-settings.png)
 
- 4. Please use this [link](https://help.boldbi.com/site-administration/embed-settings/#get-embed-configuration-file) as a reference to download the `embedConfig.json` file. Additionally, you can refer to the following image for visual guidance
+ 4. Please use this [link](/site-administration/embed-settings/#get-embed-configuration-file) as a reference for downloading the `embedConfig.json` file. Additionally, you can refer to the following image for visual guidance.
 
     ![EmbedSettings image](/static/assets/javascript/sample/images/embed-settings-download.png)
     ![EmbedConfig Properties](/static/assets/javascript/sample/images/prop-core.png)
 
- 5. Please copy the downloaded `embedConfig.json` file and paste it into the designated [location](https://github.com/boldbi/vue-with-nodejs-sample/tree/master/Nodejs) within the application. Please ensure you have placed it in the application as shown in the following image.
+ 5. Please copy the downloaded `embedConfig.json` file and paste it into the designated [location](https://github.com/boldbi/vue-with-nodejs-sample/tree/master/Nodejs) within the application. Please ensure that you have placed it in the application as shown in the following image.
 
     ![EmbedConfig image](/static/assets/javascript/sample/images/node-embed-settings-image.png)
 
- 6. Create a JS file named `embed.js` and create an API called `/authorizationserver/get` that utilizes the `GetSignatureUrl()` method to generate the algorithm. Within this API, append the `embedQuerString`, `userEmail`, and the value obtained from the `GetSignatureUrl()` method as query parameters in the URL to retrieve details of a specific dashboard.
+ 6. Create a JavaScript file named `embed.js` and create an API called `/authorizationserver/get` that uses the `GetSignatureUrl()` method to generate the algorithm. Within this API, append the `embedQueryString`, `userEmail`, and the value obtained from the `GetSignatureUrl()` method as query parameters in the URL to retrieve details of a specific dashboard.
 
     ```js
         var fs = require("fs");
@@ -223,7 +223,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/vue-with-node
     ```
     > **NOTE:** You can change the port number in embed.js according to your preferences. However, if you change the port number of the API host, you must also update the port number in the `App.vue` file.
 
- 7. Create a new file and name it `package.json`. Installing the `packages` listed in the following dependencies section is essential.
+ 7. Please create a new file and name it `package.json`. It is essential to install the `packages` listed in the following dependencies section.
     
     ```js
     {
@@ -245,7 +245,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/vue-with-node
     }
 
     ```
- 8. Create another folder in the desired location and open it in the **Visual Studio Code.**
+ 8. Create another folder in the desired location and open it in **Visual Studio Code.**
 
  9. To create a new Vue.js project, we need to run this command in the terminal and select the second option.
      
@@ -254,14 +254,14 @@ A GitHub link has been provided to [get](https://github.com/boldbi/vue-with-node
      ```
      ![Defualt preset](/static/assets/javascript/sample/images/vuejs-core-preset.png)
 
- 10. Open the `App.vue` and replace the following code.
+ 10. Open the `App.vue` file and replace the code below.
 
      ```js
         <template>
             <div id="app" ref="app">
                 <div id="dashboard" ref="dashboard">
                 <div id="errorModal" class="modal" v-show="showErrorModal">
-                    <p class="error-message">{{ errorMessage }} Please use this <a href="https://help.boldbi.com/site-administration/embed-settings/" target="_blank">link</a> to obtain the Json file from the Bold BI server.</p>
+                    <p class="error-message">{{ errorMessage }} Please use this <a href="/site-administration/embed-settings/" target="_blank">link</a> to obtain the Json file from the Bold BI server.</p>
                 </div>
                 </div>
             </div>
@@ -332,9 +332,9 @@ A GitHub link has been provided to [get](https://github.com/boldbi/vue-with-node
             }
             </style>
      ```
-     > **NOTE:** Ensure that you update the port number in the `apiHost` within the `App.vue` file if you have changed the port number of the API host in `embed.js`.
- 
- 11. Open the `package.json` and replace code in the file.
+     > **NOTE:** Please make sure to update the port number in the `apiHost` variable in the `App.vue` file if you have made any changes to the port number of the API host in `embed.js`.
+
+ 11. Open the `package.json` file and replace the code within it.
 
      ```js
         {
@@ -383,8 +383,8 @@ A GitHub link has been provided to [get](https://github.com/boldbi/vue-with-node
             ]
         }
      ```
- 12. Open `Nodejs` and execute the command `npm install` to install the necessary dependencies and run the sample using the `node embed.js` command.
+ 12. Open `Node.js` and execute the command `npm install` to install the necessary dependencies. Then, run the sample using the command `node embed.js`.
  
- 13. Open the `vue` and execute the command `npm install` to install necessary dependencies and run the sample using the `npm run serve` command to render the dashboard.
+ 13. Open `vue` and execute the command `npm install` to install the necessary dependencies. Then, run the sample by using the `npm run serve` command to render the dashboard.
  
- 14. Once you execute the above command, the sample will be hosted at `http://localhost:8081/`.
+ 14. Once you execute the command above, the sample will be hosted at `http://localhost:8081/`.

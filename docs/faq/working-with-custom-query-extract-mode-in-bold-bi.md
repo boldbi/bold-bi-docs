@@ -32,7 +32,7 @@ Steps on how to connect the data source using custom query mode:
 
 5. Select the database name from dropdown text box from which the tables are to be extracted.
 
-6. Choose relevant time interval from Refresh Settings dropdown menu. For refreshing the data source periodically, refer [Refresh Settings](/working-with-data-source/data-connectors/sql-data-source/#sql-data-source-refresh-settings) to learn more.
+6. Choose relevant time interval from Refresh Settings dropdown menu. For refreshing the data source periodically, refer [Refresh Settings](/working-with-data-sources/data-connectors/sql-data-source/#sql-data-source-refresh-settings) to learn more.
 
 ![Custom Query Extract](/static/assets/faq/images/custom-query-new-datasource-dialog.png#max-width=100%)
 

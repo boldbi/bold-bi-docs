@@ -8,7 +8,7 @@ documentation: ug
 
 # How to apply the filter in the grid widget based on the string presented in the string column
 
-Show the filtered string values in the Gid widget using the [Expression](/working-with-data-source/transforming-data/configuring-expression-columns/) column.
+Show the filtered string values in the Gid widget using the [Expression](/working-with-data-sources/data-modeling/configuring-expression-columns/) column.
 
 Follow these steps to achieve this requirement:
 

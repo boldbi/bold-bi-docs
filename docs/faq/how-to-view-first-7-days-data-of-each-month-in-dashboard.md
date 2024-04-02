@@ -7,7 +7,7 @@ documentation: ug
 ---
 # How to view first 7 days data of each month in dashboard
 
-You can achieve the requirement to view the first 7 days of each month in dashboard by using this [expression](/working-with-data-source/transforming-data/configuring-expression-columns/) field.
+You can achieve the requirement to view the first 7 days of each month in dashboard by using this [expression](/working-with-data-sources/data-modeling/configuring-expression-columns/) field.
 
 Please follow the given steps to achieve this requirement:
 1. After creating the required data source, you need to create an expression column with the corresponding date column.

@@ -9,13 +9,13 @@ documentation: ug
 
 # Office 365 support for authentication
 
-Bold BI Cloud supports adding Office 365 users and groups along with your users and groups, so that you can share dashboards and email reports with them. 
+Bold BI Cloud supports the addition of Office 365 users and groups, along with your own users and groups. This allows you to share dashboards and email reports with them.
 
-Bold BI Cloud supports to import Azure Active Directory users and let them Single Sign-On (federated identity) using their credentials into the Bold BI Cloud. As Office 365 uses the cloud-based user authentication service Azure Active Directory to manage users, Bold BI Cloud in turn supports the Office 365 users and groups to be imported and sign in into it.
+Bold BI Cloud supports importing Azure Active Directory users and allowing them to use their credentials for Single Sign-On (federated identity) into the Bold BI Cloud. Since Office 365 utilizes Azure Active Directory for user management, Bold BI Cloud also supports the import and sign-in of Office 365 users and groups.
 
-> **NOTE:** This feature is available in Bold BI Embedded Analytics but not in Cloud Analytics Server.
+> **NOTE:** This feature is available in Bold BI Embedded Analytics, but not in Cloud Analytics Server.
 
-Bold BI Cloud supports the below from the Azure Active Directory
+Bold BI Cloud supports the following features from the Azure Active Directory.
 
 [Setup Azure Active Directory](/security-configuration/single-sign-on/azure-active-directory/) settings with the Bold BI Cloud.
 

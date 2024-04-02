@@ -10,7 +10,7 @@ documentation: ug
 
 This section explains how to configure Default Authentication, Azure AD, OAuth 2.0, OpenID, and JWT SSO in User Management Server.
 
-Here, you can explore the Authentication in detail.
+Here, you can explore authentication in detail.
 
 [Default Authentication](/multi-tenancy/site-administration/authentication/default-authentication/)
 

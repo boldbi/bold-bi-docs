@@ -705,6 +705,7 @@ export default class LayoutTemplate extends React.Component {
     if (!header) {
       mdContentClass += " doc-no-right-toc";
     }
+    const currentYear = new Date().getFullYear();
       var metaRobot = { name: 'robots', content: 'follow' }
     return (
       <Layout>
@@ -785,7 +786,7 @@ export default class LayoutTemplate extends React.Component {
                     </NavButtons>
                     <div id="doc-footer">
                       <div id="footer-copyright">
-                        <a id="copyright" target="_blank" href="https://www.boldbi.com/copyright">Copyright © 2001 - <span id="copyright-year"> 2023</span> Syncfusion Inc. All Rights Reserved</a>
+                        <a id="copyright" target="_blank" href="https://www.boldbi.com/copyright">Copyright © 2001 - <span id="copyright-year"> {currentYear}</span> Syncfusion Inc. All Rights Reserved</a>
                       </div>
                       <div id="footer-powered_by"></div>
                     </div>

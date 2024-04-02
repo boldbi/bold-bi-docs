@@ -90,6 +90,8 @@
     "iis",
     "sample",
     "dashboards",
+    "multitab",
+    "programmatically",
     "bold",
     "bi",
     "internet",
@@ -297,6 +299,9 @@
     "embeddding",
     "sdk",
     "iFrame-based",
+	"openai",
+	"fine",
+	"tuning",
 "combine-ds-and-isolation-code",
 "Alchemer",
 "AmazonMWS",
@@ -391,6 +396,18 @@
 "ZohoCRM",
 "Zohoinvoice",
 "Zuora",
-"Parquet"
+"Parquet",
+"smtp",
+"qna",
+"widget",
+"etl",
+"OpenAPI",
+"Matomo",
+"Mux",
+"FULL_TABLE",
+"Personio",
+"Strapi",
+"strip",
+"head-less"
 ]
 }

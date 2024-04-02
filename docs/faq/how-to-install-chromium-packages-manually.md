@@ -21,5 +21,6 @@ If you installed the build offline or skipped the packages during the build inst
 After copying the chromium packages into the above table's specified directory, you must restart the designer service. Please refer to this [link](/faq/how-to-restart-the-bold-bi-embedded-application/) for more information.
 
 > **NOTE:**
-> * The above-highlighted location doesn't exist. Please create them manually and move the downloaded packages.
-> * If you are using Bold BI version **below 5.1** or the **Azure App Service Environment**, install [phantomjs](/faq/how-to-install-phantomjs-manually/) instead of chromium package.
+> * The above-highlighted locations don't exist. Please create them manually and move the downloaded packages.
+> * If you are using Bold BI version **below 5.1**, install [phantomjs](/faq/how-to-install-phantomjs-manually/) instead of chromium package.
+> * The Chromium packages do not support Azure App Service Environment and Linux ARMx64. So, image and PDF exporting is not supported for those environments.

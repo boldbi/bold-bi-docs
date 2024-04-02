@@ -89,3 +89,5 @@ You can explore the available widgets in detail here,
 [Text](/visualizing-data/visualization-widgets/text/)
 
 [Tab Widget](/visualizing-data/visualization-widgets/tab-widget/)
+
+[Q&A widget](/visualizing-data/visualization-widgets/qna-widget/)

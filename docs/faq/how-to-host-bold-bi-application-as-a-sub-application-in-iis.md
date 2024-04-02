@@ -88,12 +88,14 @@ Follow these steps to create a Bold BI sub-applications:
 
 1. Need to update the binding values in the following configuration files in deployed location.
 
-2. Update the `Idp`, `Bi`, `BiDesigner`, and `Reports` values in the following file location.`{Deployed Location}\app_data\configuration\config.xml`.
+2. Update the `Idp`, `Bi`, `BiDesigner`, and `Reports` values in the following file location.`{Deployed Location}\app_data\configuration\config.json`.
 
-  ![Config File Change](/static/assets/faq/images/config-file-change.png)
+   >**Note:** From version 6.19.14, use the config.json and the config.xml for versions prior to this.
+
+   ![Config File Change](/static/assets/faq/images/config-file-change.png)
 
 3. Update the binding values in `product.json` file in following location. `{Deployed Location}\app_data\configuration\product.json`.
 
-  ![product File Change](/static/assets/faq/images/product-file-change.png#width=65%)
+   ![product File Change](/static/assets/faq/images/product-file-change.png#width=65%)
 
 > **IMPORTANT:**  Restart your site once all the above steps are completed.

@@ -4,12 +4,11 @@ title:  Embed SDK Samples | Bold BI Embedded Documentation
 description: Explore the available Bold BI Embedded SDK Sample in the release version of `3.2.16` and `3.3.40` or later.
 platform: bold-bi
 documentation: ug
-
 ---
 
 # Embedded SDK Samples
 
-This section explains the available Embed SDK Samples applications for ASP.NET MVC, ASP.NET Core, Angular and more in the release version of 3.3.40 or later.
+This section explains the available Embed SDK Samples applications for ASP.NET MVC, ASP.NET Core, Angular, and more in the release version of 3.3.40 or later.
 
 You can explore the available samples in detail here,
 
@@ -63,4 +62,4 @@ You can explore the available samples in detail here,
 
 [Spring Boot](/embedding-options/embedding-sdk/samples/spring-boot/)
 
-> **NOTE:** If you're looking for a Bold BI version 3.2.16 supporting samples, please click [here](/embedding-options/embedding-sdk/samples/v3.2.16/).
+> **NOTE:** If you are seeking a Bold BI version 3.2.16 with supporting samples, please click [here](/embedding-options/embedding-sdk/samples/v3.2.16/).

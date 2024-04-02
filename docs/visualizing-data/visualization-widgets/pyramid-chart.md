@@ -402,6 +402,16 @@ A Legend is a text used to describe the data plotted. This option allows you to 
 
 ![Legend position](/static/assets/visualizing-data/visualization-widgets/images/pyramid-chart/legend-position.png)
 
+#### Legend Item as Dropdown
+
+Legends can be displayed as a dropdown menu when the legend position is set to "dropdown." When you hover over a chart, a legend icon appears. Clicking on this icon will bring up a legend dropdown. This feature allows you to toggle the visibility of the legend in the chart.
+
+This option will hide the legends in the chart area, resulting in increased chart space and enhanced visibility.
+ 
+The chart legend dropdown option can be used to simplify viewing complex charts with multiple data sources. For example, if you have a chart displaying sales data for the different years, you can use the legend dropdown to deselect all other years and focus only on a specific year.
+
+![Legend item as dropdown](/static/assets/visualizing-data/visualization-widgets/images/pyramid-chart/legend-as-dropdown.png)
+
 #### Legend Shape
 
 This allows you change the **shape** of the legend.

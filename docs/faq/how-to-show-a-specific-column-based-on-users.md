@@ -11,7 +11,7 @@ You can use the user level attribute feature to show a specific column based on 
 
 Please follow the steps to show a specific column based on users:
 
-1. First, you need to [create custom attribute](/working-with-data-source/configuring-custom-attribute/#custom-attribute-hierarchy) for user-level as follows.
+1. First, you need to [create custom attribute](/working-with-data-sources/configuring-custom-attribute/#custom-attribute-hierarchy) for user-level as follows.
 
      ![hide attribute for first user](/static/assets/faq/images/show-attribute-for-first-user.png)
 
@@ -21,7 +21,7 @@ Please follow the steps to show a specific column based on users:
 
     ![hide expression](/static/assets/faq/images/show-query.png)
 
-3. Then, you need to [configure](/working-with-data-source/transforming-data/configuring-expression-columns/#configuring-expression-column-in-widgets) this new column to your grid widget. Click the preview option and when switching the user in preview mode, the column value is updated based on the user level custom attribute.
+3. Then, you need to [configure](/working-with-data-sources/data-modeling/configuring-expression-columns/#configuring-expression-column-in-widgets) this new column to your grid widget. Click the preview option and when switching the user in preview mode, the column value is updated based on the user level custom attribute.
 
     ![hide output for first user](/static/assets/faq/images/show-output-for-first-user.png)
 

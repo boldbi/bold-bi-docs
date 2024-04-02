@@ -7,27 +7,27 @@ platform: bold-bi
 documentation: ug
 ---
 # Bold BI widgets import feature
-Widgets import feature allows you to import the configured widgets from existing dashboards in a new dashboard. While drilling into those dashboards that you have read-write permission, you will get all the widgets of the dashboard, and you can drag that widgets to the current dashboard.
+The Widgets import feature allows you to import configured widgets from existing dashboards into a new dashboard. When drilling into dashboards where you have read-write permission, you will have access to all the widgets on the dashboard, which you can then drag into the current dashboard.
 
-Follow the below steps to reuse the widgets.
+Follow the steps below to reuse the widgets:
 
-1. Click the `Existing` tab in the widgets toolbox panel to view all dashboards that you have read-write permission.
+1. Click on the `Existing` tab in the widgets toolbox panel to see all the dashboards where you have read-write permission.
 
     ![Existing tab](/static/assets/working-with-dashboards/images/default-and-existing.png)
  
-    Now, the existing panel with dashboards will be displayed.
+    The existing panel with dashboards will now be displayed.
 
     ![Existing dashboard list](/static/assets/working-with-dashboards/images/existing-dashboard-list.png)  
 
-2. Click the dashboard, all the widgets of the dashboard will be displayed.
+2. Click on a dashboard to display all the widgets on that dashboard.
 
     ![Widgets list](/static/assets/working-with-dashboards/images/widget-list.png)
 
-3. You can drag the widgets from different dashboards to the current dashboard.
+3. You can drag widgets from different dashboards to the current dashboard.
 
     ![Imported widgets](/static/assets/working-with-dashboards/images/import-widget.png)
 
-    > **NOTE:**  The imported widgets are then independent and will not be affected when the original widgets are changed but it only shares the same data source.
+    > **NOTE:**  The imported widgets are independent and will not be affected when the original widgets are changed, but they will share the same data source.
 
 
 

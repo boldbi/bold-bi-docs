@@ -16,22 +16,22 @@ This section explains how to embed the Bold BI dashboard into the sample applica
 
 * [Node.js](https://nodejs.org/en/)
 * [Visual Studio Code](https://code.visualstudio.com/download)
-> **NOTE:** Node.js v14.16 to v18.18 are supported.
+> **NOTE:** Node.js versions 14.16 to 18.18 are supported.
 
 ## How to run the sample
 
-* Please get the [Iframe Dashboard embedding Javascript](https://github.com/boldbi/iframe-dashboard-javascript-sample) sample from GitHub.
-* Please ensure that you have enabled embed authentication on the `embed settings` page. If it is not currently enabled, please refer to the following image or detailed [instructions](https://help.boldbi.com/site-administration/embed-settings/#get-embed-secret-code) to enable it.
+* Please retrieve the sample of the [Iframe Dashboard embedding Javascript](https://github.com/boldbi/iframe-dashboard-javascript-sample) from GitHub.
+* Please ensure that you have enabled embed authentication on the `embed settings` page. If it is not currently enabled, please refer to the following image or detailed [instructions](/site-administration/embed-settings/#get-embed-secret-code) to enable it. 
 
     ![Embed Settings](/static/assets/javascript/sample/images/embed-settings.png)
 
-* To download the `embedConfig.json` file, please follow this [link](https://help.boldbi.com/site-administration/embed-settings/#get-embed-configuration-file) for reference. Additionally, refer to the following image for visual guidance.
+* To download the `embedConfig.json` file, please use the provided [link](/site-administration/embed-settings/#get-embed-configuration-file) as a reference. Additionally, you can refer to the accompanying image for visual guidance.
 
     ![Embed Settings Download](/static/assets/javascript/sample/images/embed-settings-download.png)
 
     ![EmbedConfig Properties](/static/assets/javascript/sample/images/prop-core.png)
 
-* Copy the downloaded `embedConfig.json` file and paste it into the designated [location](https://github.com/boldbi/iframe-dashboard-javascript-sample) within the application. Please ensure that you have placed it in the application as shown in the following image.  
+* Please copy the downloaded `embedConfig.json` file and paste it into the designated [location](https://github.com/boldbi/iframe-dashboard-javascript-sample) within the application. Make sure you have placed it in the application exactly as shown in the following image.
 
     ![EmbedConfig image](/static/assets/iFrame-based/sample/images/dashboard-iframe.png)
 
@@ -68,44 +68,44 @@ This section explains how to embed the Bold BI dashboard into the sample applica
     </tr>
     </tbody>
     </table>
-* Open the terminal in Visual Studio code and run this command to install the `http-server` package, which enables the sample to run a local HTTP server.
+* Please open the terminal in Visual Studio code and run the following command to install the `http-server` package. This package allows the sample to run on a local HTTP server.
     ```bash
         npm install -g http-server
     ```
-* Run this command to initiate the HTTP server on a specific port(eg. `http-server -p 5555`)
+* Please execute this command to start the HTTP server on a designated port (eg. `http-server -p 5555`).
     ```bash
         http-server -p <port number>
     ```
-    > **NOTE:** Replace `<port number>` with the desired port number
-* Once the server runs, open your web browser and navigate to the `DashboardListing.html` file(eg. `http://localhost:5555/DashboardListing.html`).
+    > **NOTE:** Replace `<port number>` with the desired port number.
+* After the server is running, open your web browser and go to the `DashboardListing.html` file, for example, `http://localhost:5555/DashboardListing.html`.
 
     ![DashboardListingSample](/static/assets/iFrame-based/sample/images/dashboard-sample.png)
 
 ## How the Sample works
 
-* Making a request to retrieve the embed details of the `embedConfig.json` file by using the `fetch()` function in `Properties.js`. If the `embedConfig.json` file cannot be found, the `showErrorPopup()` function will throw an error.
+* To retrieve the embed details of the `embedConfig.json` file, a request is made using the `fetch()` function in `Properties.js`. If the `embedConfig.json` file cannot be found, the `showErrorPopup()` function will throw an error.
 
     ![Dashboard_iframe_js_embedconfigScript](/static/assets/iFrame-based/sample/images/dashboard-embedconfigfetch.png)
 
-* The `getToken()` function generates a user authorization token using the user's email and embedded secret key from the `apiRequest` object in `Properties.js`. This token will be used for listing, rendering, and designing the dashboard. The obtained token is stored in the `accessToken` variable.
+* The `getToken()` function generates an authorization token for the user using their email and the embedded secret key from the `apiRequest` object in `Properties.js`. This token will be utilized for listing, rendering, and designing the dashboard. The obtained token is stored in the `accessToken` variable.
 
     ![Dashboard_iframe_js_gettoken](/static/assets/iFrame-based/sample/images/dashboard-gettoken.png)
 
-* The `showDashboardListing()` function in `DashboardListing.js` makes a GET request to the `dashboardServerApiUrl +"/v2.0/items?ItemType=dashboard"` endpoint with the `accessToken` as the authorization header. The `accessToken` is obtained from the `getToken()` function. 
+* The `showDashboardListing()` function in `DashboardListing.js` sends a GET request to the `dashboardServerApiUrl +"/v2.0/items?ItemType=dashboard"` endpoint with the `accessToken` as the authorization header. The `accessToken` is obtained from the `getToken()` function. 
 
     ![Dashboard_iframe_js_DashboardListing](/static/assets/iFrame-based/sample/images/dashboard-listing.png)  
 
-* Dashboards List retrieved from sever, then we would create the items based on the list.
+* The dashboards list is retrieved from the server, and then we create the items based on the list.
 
 ###  Viewing an existing Dashboard
 
-* The `renderDashboard()` method in `DashboardListing.js` is invoked to render the dashboard. It passes the dashboard ID, dashboard name, and category name in the embed URL. We obtain the required value from the attribute when the user clicks on the dashboard and create the embed URL using this value. We then append this code into the application.
+* The `renderDashboard()` method in `DashboardListing.js` is called to display the dashboard. It includes the dashboard ID, name, and category in the embedded URL. We retrieve the necessary value from the attribute when the user clicks on the dashboard and construct the embedded URL using this value. We subsequently append this code to the application.
 
     ![Dashboard_iframe_js_view](/static/assets/iFrame-based/sample/images/dashboard-view-code.png)
 
 ### Creating a new Dashboard
 
-* When the `Create` button is clicked on the dashboard page, the `openDesignerForCreate()` function in `DashboardListing.js` is activated. This function sets up the environment for creating a dashboard by removing existing content. Subsequently, it generates an embedded view using an `<iframe>` element that directs to the dashboard designer page.
+* When the `Create` button is clicked on the dashboard page, the `openDesignerForCreate()` function in `DashboardListing.js` is triggered. This function prepares the environment for creating a dashboard by removing any existing content. Afterwards, it generates an embedded view using an `<iframe>` element that redirects to the dashboard designer page.
 
 	![Dashboard_create_button](/static/assets/iFrame-based/sample/images/dashboard-create-page.png)
 
@@ -113,7 +113,7 @@ This section explains how to embed the Bold BI dashboard into the sample applica
 
 ###  Editing an existing Dashboard
 
-* The `openDesignerForEdit()` method in `DashboardListing.js` is invoked when you click any dashboard in the dashboard listing container and then click the `Edit` button. It retrieves the item ID, dashboard name, and category from the properties of the clicked item and uses them to open the dashboard designer page for editing within the "dashboard" element.
+* The `openDesignerForEdit()` method in `DashboardListing.js` is invoked when you click on any dashboard in the dashboard listing container and then click the `Edit` button. It retrieves the item ID, dashboard name, and category from the properties of the clicked item and uses them to open the dashboard designer page for editing within the "dashboard" element.
 
     ![Dashboard_iframe_js_edit](/static/assets/iFrame-based/sample/images/dashboard-edit-page.png)
 

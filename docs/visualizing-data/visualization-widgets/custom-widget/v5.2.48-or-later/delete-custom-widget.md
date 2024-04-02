@@ -21,4 +21,4 @@ documentation: ug
 
   ![Delete Icon](/static/assets/visualizing-data/visualization-widgets/images/custom-widget/delete-icon.png)
 
- > **NOTE:** The custom widget will be deleted only within the particular tenant alone. This feature is available in Bold BI Embedded Analytics but not in Cloud Analytics Server.
+ > **NOTE:** The custom widget will be deleted only within the particular tenant alone. This feature is available in On-Premises Deployment but not in Syncfusion Managed Cloud Server.

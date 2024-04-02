@@ -2,7 +2,7 @@
 layout: post
 title: Adding a Tab Widget in Embedded Dashboard | Bold BI Docs
 description: Learn about the Tab widget and know how to create, add, and configure data & other settings for the Tab widget while preparing a dashboard in Bold BI.
-canonical: "/working-with-dashboards/tab-widget/"
+canonical: "/visualizing-data/visualization-widgets/tab-widget/"
 platform: bold-bi
 documentation: ug
 ---

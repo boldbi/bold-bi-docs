@@ -20,13 +20,13 @@ The IF function allows you to make logical comparisons between a value and what 
 
 Follow these steps to create IF and THEN expression column:
 
-1.	Refer to this help document to successfully create a new [data source](/working-with-data-source/creating-a-new-data-source/) by connecting to your database.
+1.	Refer to this help document to successfully create a new [data source](/working-with-data-sources/creating-a-new-data-source/) by connecting to your database.
 
 2.	Consider you have the following data from the sample table named `SalesOrderDetail` in the data source as shown in the following screenshot.
 
     ![SalesOrderDetail table](/static/assets/faq/images/SalesOrderDetail-table.PNG)
 
-3.	For Example, consider above customer’s table that contains a field named `OrderQty`. In column, you want to denote whether the `OrderQty` is high when it is more than 15. Now, You need to create an [expression](/working-with-data-source/transforming-data/configuring-expression-columns/) by using the IF and THEN syntax.               
+3.	For Example, consider above customer’s table that contains a field named `OrderQty`. In column, you want to denote whether the `OrderQty` is high when it is more than 15. Now, You need to create an [expression](/working-with-data-sources/data-modeling/configuring-expression-columns/) by using the IF and THEN syntax.               
 
     **Sample Expression:** `IF([OrderQty]>15, 'High', 'Low')`
     

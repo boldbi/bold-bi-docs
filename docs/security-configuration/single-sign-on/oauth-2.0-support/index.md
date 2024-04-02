@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Single Sign-On with OAuth 2.0 Identities | Bold BI Embedded
-description: Learn how to configure Bold BI Embedded with OAuth 2.0 identity provider for Single Sign-on authentication using OAuth 2.0.
+description: Enable seamless and straightforward authentication within the Bold BI application by configuring OAuth 2.0 through both the intuitive application user interface (UI) and the powerful REST API.
 platform: bold-bi
 documentation: ug
 
@@ -9,19 +9,19 @@ documentation: ug
 
 # OAuth 2.0 support in Bold BI application 
 
-The Bold BI application can be configured to support OAuth 2.0 for Single Sign-On (SSO), so that the users can log in directly to Bold BI application after authenticating using the OAuth 2.0.
+The Bold BI application can be configured to support OAuth 2.0 for Single Sign-On (SSO). This allows users to log in directly to the Bold BI application after authenticating using OAuth 2.0.
 
 ## Prerequisites
 
-1. An account with an OAuth 2.0 provider.
+1. A user account with an OAuth 2.0 provider.
 
-2. Register the Bold BI application in the OAuth 2.0 provider.
+2. Register the Bold BI application with the OAuth 2.0 provider.
 
 ## Steps to configure OAuth 2.0 in Bold BI
 
-1. Login to the Bold BI with the admin credential.
+1. Please login to Bold BI using the admin credentials.
 
-2. Click `Settings` in the left side menu.
+2. Click on `Settings` in the left side menu.
 
     ![Settings](/static/assets/site-administration/oauth-support/images/settings.png#width=65%)
 
@@ -29,7 +29,7 @@ The Bold BI application can be configured to support OAuth 2.0 for Single Sign-O
 
     ![Authentication settings](/static/assets/site-administration/oauth-support/images/authentication-settings.png#width=65%)
 
-4. Provide the following details in the `OAuth 2.0` settings of Bold BI application.
+4. Please provide the following details in the `OAuth 2.0` settings of the Bold BI application.
 
     <table>
 
@@ -100,34 +100,40 @@ The Bold BI application can be configured to support OAuth 2.0 for Single Sign-O
 
     ![OAuth user data](/static/assets/site-administration/oauth-support/images/OAuth-user-data.png)
     
-If we need to import the OAuth 2.0 groups, we have to configure the group details while saving the OAuth authentication settings.
+If we need to import the OAuth 2.0 groups, we have to configure the group details when saving the OAuth authentication settings.
 
   ![OAuth Group setting](/static/assets/site-administration/oauth-support/images/OAuth-group-settings.png)
 
-The previous mentioned similar steps are applicable to configure the OAuth 2.0 support in User Management Server by logging into the URL `{Bold BI URL}/ums/administration/sso?view=oauth-settings` with admin credential.
+The previously mentioned similar steps are applicable to configure OAuth 2.0 support in the User Management Server by logging into the URL `{Bold BI URL}/ums/administration/sso?view=oauth-settings` with admin credentials.
 
-The following are the list of few OAuth 2.0 providers and that explains how to connect with the Bold BI application. 
+The following is a list of a few OAuth 2.0 providers and an explanation of how to connect with the Bold BI application. 
 
 * [Amazon Cognito](/security-configuration/single-sign-on/oauth-2.0-support/amazon-cognito/)
 * [Auth0](/security-configuration/single-sign-on/oauth-2.0-support/auth0/)
 * [Okta](/security-configuration/single-sign-on/oauth-2.0-support/okta/)
 * [OneLogin](/security-configuration/single-sign-on/oauth-2.0-support/onelogin/)
 
-The OAuth 2.0 support is provided in both the Bold BI sites and User Management Server. This support can be handled for each sites individually in the settings page by disabling the option as in the following screenshot.
+OAuth 2.0 support is provided in both the Bold BI sites and User Management Server. This support can be handled for each site individually on the settings page by disabling the option, as shown in the following screenshot.
 
 ![Enable OAuth support](/static/assets/site-administration/oauth-support/images/EnableOAuth.png)
 
 ## Set OAuth 2.0 as Default Authentication
-OAuth 2.0 can be set as default authentication when [OAuth 2.0 settings](/security-configuration/single-sign-on/oauth-2.0-support/#steps-to-configure-oauth-2.0-in-bold-bi) is enabled and saved. Follow these steps:
+To set OAuth 2.0 as the default authentication, enable and save the [OAuth 2.0 settings](/security-configuration/single-sign-on/oauth-2.0-support/#steps-to-configure-oauth-2.0-in-bold-bi) Follow these steps:
 
-1. In settings page, click **Authentication** tab and select **General**.
+1. On the settings page, click the **Authentication** tab and select **General**.
 
-2. Enable the **Enable Default Authentication** option and select the **OAuth 2.0** in default authentication provider as in the following screenshot.
+2. Enable the **Enable Default Authentication** option and select **OAuth 2.0** as the default authentication provider, as shown in the following screenshot.
 
     ![Enable OAuth Default Authentication](/static/assets/site-administration/oauth-support/images/oauth-default-authentication.png)
 
 ## Disabling OAuth 2.0 Settings
 
-When OAuth 2.0 is set as default authentication and try to disable the [OAuth 2.0 settings](/security-configuration/single-sign-on/oauth-2.0-support/#steps-to-configure-oauth-2.0-in-bold-bi) will display below pop-up. Proceeding by clicking `Yes` will disable the [OAuth 2.0 default authentication](/security-configuration/single-sign-on/oauth-2.0-support/#set-oauth-2.0-as-default-authentication).
+When OAuth 2.0 is set as the default authentication, trying to disable the [OAuth 2.0 settings](/security-configuration/single-sign-on/oauth-2.0-support/#steps-to-configure-oauth-2.0-in-bold-bi) will display the following pop-up. Proceeding by clicking `Yes` will disable the [OAuth 2.0 default authentication](/security-configuration/single-sign-on/oauth-2.0-support/#set-oauth-2.0-as-default-authentication).
 
 ![Disable Default Authentication](/static/assets/site-administration/images/disable-default-authentication.png#width=60%)
+
+## Configure OAuth 2.0 authentication using REST API
+
+Configure the OAuth 2.0 settings using the REST API by referencing the [REST API](/server-api-reference/v5.0/api-reference/#operation/Administration_UpdateOAuthSettings) document. 
+ 
+While configuring OAuth settings, you can also configure the group import settings to import the OAuth groups. You can include the group settings details based on the provider type to configure the group import settings. Please refer to this [FAQ](/faq/what-are-the-different-request-object-properties-of-group-imports-setting-for-each-oauth-and-openid-provider-type/) document to learn about the different group import settings details based on the provider.

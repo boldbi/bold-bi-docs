@@ -8,15 +8,15 @@ documentation: ug
 
 # Embedding Bold BI Dashboards in PHP using the Embedded SDK
 
-A GitHub link has been provided to [get](https://github.com/boldbi/php-sample) the sample application, which demonstrates the rendering of dashboard available in your Bold BI server and followed by steps to create a new embedding application in the `PHP` on your own.
+A GitHub link has been provided to [get](https://github.com/boldbi/php-sample) get the sample application, which demonstrates the rendering of the dashboard available on your Bold BI server. After that, there are steps to create a new embedding application in `PHP` on your own.
 
-> **NOTE:** Reading the [Getting Started](/getting-started/embedding-in-your-application/) section of the documentation is the best way to get started. The `Getting Started` guide gives you enough information that you need to know before working on the sample. 
+> **NOTE:** Reading the [Getting Started](/getting-started/embedding-in-your-application/) section of the documentation is the best way to begin. The `Getting Started` guide provides you with enough information that you need to know before working on the sample.
 
 ## How to run the sample
 
 1. Please [get](https://github.com/boldbi/php-sample) the PHP sample.    
 
-2. In the `Index.php`, set your server details to the EmbedProperties as follows.
+2. In the `Index.php`, set your server details in the EmbedProperties as follows.
     ![Embed Properties](/static/assets/javascript/sample/images/php-props.png#max-width=95%)
         
     <meta charset="utf-8"/>
@@ -40,7 +40,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/php-sample) t
     </tbody>
     </table>
 
-3. In the `AuthorizeServer.php`, set the UserEmail and Embed Secret key, which has been used to create an embed signature to authorize the server from the PHP sample. Learn more about authorized server [here](/security-configuration/authorize-server/).
+3. In the `AuthorizeServer.php` set the UserEmail and Embed Secret key. These keys are used to create an embed signature and authorize the server in the PHP sample. You can learn more about authorized servers [here](/security-configuration/authorize-server/).
 
     ![Authorize Server](/static/assets/javascript/sample/images/authorize-server-php.png#max-width=80%)
     <meta charset="utf-8"/>
@@ -57,7 +57,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/php-sample) t
     </tbody>
     </table>
 
-4. Run your PHP sample.
+4. Please run the PHP sample.
 
 5. The dashboard can be rendered in design mode or created with the following changes in the `embedSample()` method.
 
@@ -112,24 +112,24 @@ A GitHub link has been provided to [get](https://github.com/boldbi/php-sample) t
     </table>
 
 ## How this sample works
- 1. When you embed a dashboard to render, you will authorize the server URL by calling the `GetEmbedDetails` function by API call with provided `EmbedProperties` values. 
+ 1. When embedding a dashboard for rendering, you need to authorize the server URL by making an API call to the `GetEmbedDetails` function with the provided `EmbedProperties` values.
     ![Getdetails](/static/assets/javascript/sample/images/embeddetails-php.png#max-width=80%)
 
- 2. In the above authorization, the `SignatureUrl` has been generated with the provided `EmbedSecret` key and validated the embed details in Bold BI. Then only the embedded widget will be rendered in the `Index.php`.
+ 2. In the above authorization, the `SignatureUrl` has been generated using the provided `EmbedSecret` key and has validated the embed details in Bold BI. Only then will the embedded widget be rendered in the `Index.php`.
 
- 3. In the `Index.php` change the dashboard Id as you wish to embed. 
+ 3. In the `Index.php`, change the dashboard Id as you desire to embed.
     ![Embed Properties](/static/assets/javascript/sample/images/php-props.png#max-width=95%)
     
 ## Steps to create new PHP application to embed dashboard
- 1. Install the `PHP Intelephense` and `PHP Server` in the visual studio code.
+ 1. To install the `PHP Intelephense` and `PHP Server` extensions in Visual Studio Code.
     ![PHP intelephence](/static/assets/javascript/sample/images/php_install.png#max-width=60%)
     ![PHP Server](/static/assets/javascript/sample/images/php_server.png#max-width=60%)
 
- 2. [Download](https://windows.php.net/download/) the PHP from the following official website. And include the path in the system environment variable.
+ 2. [Download](https://windows.php.net/download/) the PHP from the official website mentioned below and include the path in the system environment variable.
 
- 3. In the desired location, create a folder for this project and open it in the visual studio code.
+ 3. In the desired location, create a folder for this project and open it in Visual Studio Code.
 
- 4. Create an `index.php` file inside the folder, and define variables as follows.
+ 4. Create an `index.php` file inside the folder and define variables as follows.
 
      ```js
      <?php
@@ -140,12 +140,12 @@ A GitHub link has been provided to [get](https://github.com/boldbi/php-sample) t
     ?>
      ```
 
- 5. Refer to the mandatory cdn file in the `<head>` tag as follows.
+ 5. Refer to the mandatory CDN file in the `<head>` tag as follows.
      ```js
-    <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v6.16.12/boldbi-embed.js"></script>
+    <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v7.6.12/boldbi-embed.js"></script>
      ```
 
- 6. In the `<body>` tag, create the DOM element with the id `dashboard` and initialize the `embedSample()` method, which is implemented in `<script>` tag as follows.
+ 6. In the `<body>` tag, create the DOM element with the id `dashboard` and initialize the `embedSample()` method. The `embedSample()` method is implemented in the `<script>` tag as follows.
 
      ```js
         <div id="dashboard">
@@ -171,7 +171,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/php-sample) t
         </script>
      ```
     
- 7. Create a file `authorizeserver.php` inside a folder `rest`, and define the variables `secretCode` and `userEmail` for authorization purposes.
+ 7. Create a file named `authorizeserver.php` inside a folder called `rest`, and define the variables `secretCode` and `userEmail` for authorization purposes.
 
      ```js
             $secretCode = "";// Use your SecretCode here.
@@ -225,7 +225,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/php-sample) t
             }
      ```
 
- 8. To get particular dashboard details, implement the `GetDetails()`, which uses the `GetSignatureUrl()` method to generate the algorithm. In this API, the `embedQuerString`,`userEmail` and value from the  `GetSignatureUrl()` method is appended as query parameters in the URL to get details of particular dashboard.
+ 8. To obtain specific dashboard details, you should implement the `GetDetails()` function, which utilizes the `GetSignatureUrl()` method to generate the algorithm. In this API, the `embedQuerString`,`userEmail`, and the value from the `GetSignatureUrl()` method are appended as query parameters in the URL to retrieve the details of a specific dashboard.
 
- 9. Now, right-click and choose the `PHP Server: Server project`.
+ 9. Now, right-click and select the `PHP Server: Server project`.
     ![Authorize Server](/static/assets/javascript/sample/images/php_run.png#max-width=30%)

@@ -8,7 +8,7 @@ documentation: ug
 
 # Reset Application Database
 
-Please refer your operating system’s documentation for how to reset the database of the Bold BI application.
+Please refer to your operating system's documentation for instructions on how to reset the database of the Bold BI application.
 
 [Windows](/utilities/bold-bi-command-line-tools/reset-application-database/#windows)
 
@@ -26,19 +26,19 @@ cd C:\BoldServices\utilities\adminutils
 ~~~  
 ![command](/static/assets/admin-utility/images/utilscmd-1.png)  
  
-2. After changing the directory, run the following command to reset the database.  
+2. After changing the directory, run the following command to reset the database: 
 ~~~
 Syncfusion.Server.Commands.Utility.exe dbconfig -servername "localhost" -databasename "BoldBIMasterDatabase" -u "Admin" -p "Admin@12345" -iswindowsauthentication false -sslenabled false -port "5432" -additionalparameters "Pooling=True"   
 ~~~  
 > **IMPORTANT:**  command details:  
-servername – SQL server hostname/IP  
-databasename – SQL database name  
-u – SQL server username  
-p – SQL server password  
-port - Port number required for PostgreSQL and MySQL  
-iswindowsauthentication – Is windows authentication required (Required for MSSQL only)  
-sslenabled – Is encrypted connection required (this is optional)  
-additionalparameters - Additional parameters required for database connection (this is optional)   
+> servername – SQL server hostname/IP  
+> databasename – SQL database name  
+> u – SQL server username  
+> p – SQL server password  
+> port - Port number required for PostgreSQL and MySQL  
+> iswindowsauthentication – Is windows authentication required (Required for MSSQL only)  
+> sslenabled – Is encrypted connection required (this is optional)  
+> additionalparameters - Additional parameters required for database connection (this is optional)   
   
 ![reset-command](/static/assets/admin-utility/images/reset-con-string-2.png)  
 
@@ -52,19 +52,19 @@ cd /var/www/bold-services/application/utilities/adminutils/
 ~~~   
 ![command](/static/assets/admin-utility/images/linux-cd.png)
  
-2. After changing the directory, run the following command to reset the database.  
+2. After changing the directory, run the following command to reset the database:
 ~~~
 ../../../dotnet/dotnet Syncfusion.Server.Commands.Utility.dll dbconfig -servername "localhost" -databasename "BoldBIMasterDatabase" -u "Admin" -p "Admin@12345" -iswindowsauthentication false -sslenabled false -port "5432" -additionalparameters "Pooling=True"   
 ~~~  
 > **IMPORTANT:**  command details:  
-servername – SQL server hostname/IP  
-databasename – SQL database name  
-u – SQL server username  
-p – SQL server password  
-port - Port number required for PostgreSQL and MySQL  
-iswindowsauthentication – Is windows authentication required (Required for MSSQL only)  
-sslenabled – Is encrypted connection required (this is optional)  
-additionalparameters - Additional parameters required for database connection (this is optional)  
+> servername – SQL server hostname/IP  
+> databasename – SQL database name  
+> u – SQL server username  
+> p – SQL server password  
+> port - Port number required for PostgreSQL and MySQL  
+> iswindowsauthentication – Is windows authentication required (Required for MSSQL only)  
+> sslenabled – Is encrypted connection required (this is optional)  
+> additionalparameters - Additional parameters required for database connection (this is optional)  
   
 ![reset-command](/static/assets/admin-utility/images/linux-reset-con-string.png)  
 
@@ -82,12 +82,12 @@ docker exec -it <Container ID or Container name>
 cd /application/utilities/adminutils/
 ~~~   
 ![Path-command](/static/assets/admin-utility/images/path-command.png)
-2. After changing the directory, run the following command to reset the database.  
+2. After changing the directory, run the following command to reset the database: 
 ~~~
 dotnet Syncfusion.Server.Commands.Utility.dll dbconfig -servername "localhost" -databasename "BoldBIMasterDatabase" -u "Admin" -p "Admin@12345" -iswindowsauthentication false -sslenabled false -port "5432" -additionalparameters "Pooling=True"   
 ~~~  
 ![Database-reset](/static/assets/admin-utility/images/database-reset.png)
-3. Once, the database has been updated successfully, then restart the application by using below command
+3. Once the database has been updated successfully, then restart the application by using the below command:
 
 ~~~
 docker restart <container ID or container name>
@@ -102,24 +102,24 @@ docker exec -it <Container ID or Container name>
 cd /application/utilities/adminutils/
 ~~~   
 ![Path-command](/static/assets/admin-utility/images/path-command.png)
-2. After changing the directory, run the following command to reset the database.  
+2. After changing the directory, run the following command to reset the database:
 ~~~
 dotnet Syncfusion.Server.Commands.Utility.dll dbconfig -servername "localhost" -databasename "BoldBIMasterDatabase" -u "Admin" -p "Admin@12345" -iswindowsauthentication false -sslenabled false -port "5432" -additionalparameters "Pooling=True"   
 ~~~  
 
 > **IMPORTANT:**  command details:  
-servername – SQL server hostname/IP  
-databasename – SQL database name  
-u – SQL server username  
-p – SQL server password  
-port - Port number required for PostgreSQL and MySQL  
-iswindowsauthentication – Is windows authentication required (Required for MSSQL only)  
-sslenabled – Is encrypted connection required (this is optional)  
-additionalparameters - Additional parameters required for database connection (this is optional)  
+> servername – SQL server hostname/IP  
+> databasename – SQL database name  
+> u – SQL server username  
+> p – SQL server password  
+> port - Port number required for PostgreSQL and MySQL  
+> iswindowsauthentication – Is windows authentication required (Required for MSSQL only)  
+> sslenabled – Is encrypted connection required (this is optional)  
+> additionalparameters - Additional parameters required for database connection (this is optional)  
 
 ![Database-reset](/static/assets/admin-utility/images/database-reset.png)
 
-3. Once, the database has been updated successfully, then restart all containers by using the below command.
+3. Once the database has been updated successfully, then restart all containers by using the below command:
 
 ~~~
 docker ps 
@@ -142,24 +142,24 @@ cd /application/utilities/adminutils/
 ~~~   
 ![Path-command](/static/assets/admin-utility/images/path-command.png)
 
-2. After changing the directory, run the following command to reset the database.  
+2. After changing the directory, run the following command to reset the database:  
 ~~~
 dotnet Syncfusion.Server.Commands.Utility.dll dbconfig -servername "localhost" -databasename "BoldBIMasterDatabase" -u "Admin" -p "Admin@12345" -iswindowsauthentication false -sslenabled false -port "5432" -additionalparameters "Pooling=True"   
 ~~~  
 
 > **IMPORTANT:**  command details:  
-servername – SQL server hostname/IP  
-databasename – SQL database name  
-u – SQL server username  
-p – SQL server password  
-port - Port number required for PostgreSQL and MySQL  
-iswindowsauthentication – Is windows authentication required (Required for MSSQL only)  
-sslenabled – Is encrypted connection required (this is optional)  
-additionalparameters - Additional parameters required for database connection (this is optional)
+> servername – SQL server hostname/IP  
+> databasename – SQL database name  
+> u – SQL server username  
+> p – SQL server password  
+> port - Port number required for PostgreSQL and MySQL  
+> iswindowsauthentication – Is windows authentication required (Required for MSSQL only)  
+> sslenabled – Is encrypted connection required (this is optional)  
+> additionalparameters - Additional parameters required for database connection (this is optional)
 
 ![Database-reset](/static/assets/admin-utility/images/database-reset.png)
 
-3. Once the database has been updated successfully, restart the application using the below command.
+3. Once the database has been updated successfully, restart the application using the below command:
 
 ~~~
 kubectl rollout restart deploy -n <namespace>

@@ -17,7 +17,7 @@ documentation: ug
 
   * [Upload the edited widget in the widget settings](/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/editing-existing-custom-widget/#upload-the-edited-widget-in-the-widget-settings)
     
-> **NOTE:** This feature is available in Bold BI Embedded Analytics but not in Cloud Analytics Server.
+> **NOTE:** This feature is available in On-Premises Deployment but not in Syncfusion Managed Cloud Server.
 
 ## Unpack the custom widget 
   

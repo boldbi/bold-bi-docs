@@ -8,9 +8,9 @@ documentation: ug
 
 # Embedding Bold BI Dashboards in Blazor using the Embedded SDK
 
-The sample has been provided in the following sections for the `Blazor WebAssembly`, which demonstrates the dashboard rendering available in your Bold BI server and is followed by steps to create a new embedding application in the `Blazor WebAssembly` on your own.
+The sample has been provided in the following sections for `Blazor WebAssembly`, which demonstrates the dashboard rendering available on your Bold BI server. It is followed by steps to create a new embedding application in `Blazor WebAssembly` on your own.
 
-> **NOTE:** Reading the [Getting Started](/getting-started/embedding-in-your-application/) section of the documentation is the best way to get started. The `Getting Started` guide gives you enough information that you need to know before working on the sample.
+> **NOTE:** Reading the [Getting Started](/getting-started/embedding-in-your-application/) section of the documentation is the best way to begin. The `Getting Started` guide provides you with sufficient information that you need to know before working on the sample.
 
 ## Prerequisites
 
@@ -21,14 +21,14 @@ The sample has been provided in the following sections for the `Blazor WebAssemb
 
 1. Please [get](https://github.com/boldbi/blazor-webassembly-sample) the Blazor WebAssembly sample from GitHub. 
 
-2. Please ensure you have enabled embed authentication on the `embed settings` page. If it is not currently enabled, please refer to the following image or detailed [instructions](https://help.boldbi.com/site-administration/embed-settings/#get-embed-secret-code) to enable it.
+2. Please make sure that you have enabled embed authentication on the `embed settings` page. If it is not currently enabled, please refer to the following image or detailed [instructions](/site-administration/embed-settings/#get-embed-secret-code) to enable it.
    ![Embed Settings](/static/assets/javascript/sample/images/embed-settings.png)
 
-3. To download the `embedConfig.json` file, please follow this [link](https://help.boldbi.com/site-administration/embed-settings/#get-embed-configuration-file) for reference. Additionally, you can refer to the following image for visual guidance.
+3. To download the `embedConfig.json` file, please follow this [link](/site-administration/embed-settings/#get-embed-configuration-file) for reference. Furthermore, you can refer to the image below for visual guidance.
    ![EmbedSettings image](/static/assets/javascript/sample/images/embed-settings-download.png)
    ![EmbedConfig Properties](/static/assets/javascript/sample/images/prop-core.png)
 
-4. Copy the downloaded `embedConfig.json` file and paste it into the `Server folder` [location](https://github.com/boldbi/blazor-webassembly-sample/tree/master/BlazorWebAssembly/Server) within the application. Please ensure you have placed it in the application, as shown in the following image.
+4. Please copy the downloaded `embedConfig.json` file and paste it into the `Server folder` [location](https://github.com/boldbi/blazor-webassembly-sample/tree/master/BlazorWebAssembly/Server) within the application. Please ensure you have placed it in the application, as shown in the following image. 
 
    ![EmbedConfig image](/static/assets/javascript/sample/images/blazor-webassembly-embed-config.png)
 
@@ -66,13 +66,13 @@ The sample has been provided in the following sections for the `Blazor WebAssemb
        </tbody>
        </table>
 
-5. Open your [project](https://github.com/boldbi/blazor-webassembly-sample/tree/master/BlazorWebAssembly) in `Visual Studio Code`.
+5. Please open your [project](https://github.com/boldbi/blazor-webassembly-sample/tree/master/BlazorWebAssembly) in `Visual Studio Code`.
 
-6. Open the `terminal` and navigate to the `Server` project directory using the `cd command`(e.g., `cd C:\BlazorProject\Server`).
+6. Then, open the `terminal` and navigate to the `Server` project directory by using `cd command` (e.g., `cd C:\BlazorProject\Server`).
 
-7. To run the application, use the command `dotnet watch run` in the terminal of Visual Studio Code.
+7. To run the application, use the command `dotnet watch run` in the Visual Studio Code terminal.
 
-8. The dashboard can be editable in design mode and create a new dashboard with the following changes in the `renderDashboard()` method.
+8. You can edit the dashboard in design mode and create a new dashboard with the following changes in the `renderDashboard()` method.
 
     <meta charset="utf-8"/>
     <table>
@@ -117,38 +117,38 @@ The sample has been provided in the following sections for the `Blazor WebAssemb
  1. Based on the dashboard provided in the `index.html`, authorize the server URL by calling the `AuthorizationServer` function as follows.
     ![Authorization Server](/static/assets/javascript/sample/images/blazor-authorize.png#max-width=95%)
 
- 2. In the above authorization, generate the `SignatureUrl` with the provided `EmbedSecret key` and validate the authorization in Bold BI. Once authorization is validated, the dashboard starts to render.
+ 2. In the above authorization, generate the `SignatureUrl` using the provided `EmbedSecret key` and validate the authorization in Bold BI. Once the authorization is validated, the dashboard will begin to render.
 
- 3. In `embedConfig.json`, change the dashboard ID of the respective dashboard as you wish to embed.
+ 3. In the `embedConfig.json` file, modify the dashboard ID of the respective dashboard as desired for embedding.
     ![EmbedProperties](/static/assets/javascript/sample/images/prop-core.png#max-width=70%)
 
 ## Steps to create new Blazor WebAssembly application to embed dashboard
 
- 1. Create a folder in the desired location and open it in the Visual Studio Code. 
+ 1. Please create a folder in the desired location and open it in Visual Studio Code.
 
  2. Open the terminal in the Visual Studio Code. Please refer to the following image.
     ![Terminal Image](/static/assets/javascript/sample/images/blazor-webassembly-terminal-img.png)
     
- 3. To create a new project, we need to run this command in the terminal.
+ 3. In order to create a new project, we must execute the following command in the terminal.
 
     ```js
          dotnet new blazorwasm --hosted
     ```
 
- 4. Please ensure you have enabled embed authentication on the `embed settings` page. If it is not currently enabled, please refer to the following image or detailed [instructions](https://help.boldbi.com/site-administration/embed-settings/#get-embed-secret-code) to enable it.
+ 4. Please make sure that you have enabled embed authentication on the `embed settings` page. If it is not currently enabled, please refer to the image or detailed [instructions](/site-administration/embed-settings/#get-embed-secret-code) provided.
     ![Embed Settings](/static/assets/javascript/sample/images/embed-settings.png)
 
- 5. To download the `embedConfig.json` file, please follow this [link](https://help.boldbi.com/site-administration/embed-settings/#get-embed-configuration-file) for reference. Additionally, you can refer to the following image for visual guidance.
+ 5. To download the `embedConfig.json` file, please click on the following [link](/site-administration/embed-settings/#get-embed-configuration-file) for reference. Furthermore, you can use the image below for visual guidance.
     ![EmbedSettings image](/static/assets/javascript/sample/images/embed-settings-download.png)
     ![EmbedConfig Properties](/static/assets/javascript/sample/images/prop-core.png)
 
- 6. Copy the downloaded `embedConfig.json` file and paste it into the `Server folder` [location](https://github.com/boldbi/blazor-webassembly-sample/tree/master/BlazorWebAssembly/Server) within the application. Please ensure you have placed it in the application, as shown in the following image.
+ 6. Please copy the downloaded `embedConfig.json` file and paste it into the `Server folder` [location](https://github.com/boldbi/blazor-webassembly-sample/tree/master/BlazorWebAssembly/Server) within the application. Please make sure that you have placed it in the application, as shown in the following image.
 
     ![EmbedConfig image](/static/assets/javascript/sample/images/blazor-webassembly-embed-config.png)
 
- 7. In the `Shared project`, create a new folder called `Models`. Create a model class as `DataClass.cs` to define the following properties. These properties are used to get the dashboard details from the server. 
+ 7. In the `Shared project`, create a new folder called `Models`. Create a model class as `DataClass.cs` to define the following properties. These properties are used to retrieve the dashboard details from the server.
 
-    Open the terminal and navigate to the `Shared project` directory using the cd command(e.g., `cd C:\BlazorProject\Shared`). Execute the following commands in the terminal to add the necessary references to the project: `dotnet add package Newtonsoft.Json` and `dotnet add package System.Runtime.Serialization.Primitives`. Ensure the `System.Runtime.Serialization` and `Newtonsoft.Json` namespaces are in the `DataClass.cs` model file.
+    Open the terminal and navigate to the `Shared project` directory using the cd command(e.g., `cd C:\BlazorProject\Shared`). Execute the following commands in the terminal to add the necessary references to the project: `dotnet add package Newtonsoft.Json` and `dotnet add package System.Runtime.Serialization.Primitives`. Make sure to include `System.Runtime.Serialization` and `Newtonsoft.Json` namespaces are in the `DataClass.cs` model file.
 
     ```js
     [DataContract]
@@ -179,7 +179,7 @@ The sample has been provided in the following sections for the `Blazor WebAssemb
 
     ```
 
- 8. In the `Shared Project`, create another model class as `GlobalAppSettings.cs` to define the following properties. These properties maintain the `embedConfig.json` file object within the `GlobalAppSettings`.
+ 8. In the `Shared Project`, create another model class called `GlobalAppSettings.cs` to define the following properties. These properties will store the `embedConfig.json` file object within the `GlobalAppSettings`.
 
     ```js 
     public class GlobalAppSettings
@@ -191,10 +191,10 @@ The sample has been provided in the following sections for the `Blazor WebAssemb
 9. In the `Client project`, the following scripts and style sheets are mandatory to render the dashboard. Include the following code in your `\wwwroot\index.html` page of the `<head>` tag.
 
     ```js 
-    <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v6.16.12/boldbi-embed.js"></script>
+    <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v7.6.12/boldbi-embed.js"></script>
     ```
 
-10. Inside the `<body>` tag, include the following code. Create the DOM element with the id `dashboard` and implement a function to render the dashboard.
+10. Inside the `<body>` tag, create the DOM element with the id `dashboard` and implement a function to render the dashboard.
 
     ```js
         <script>
@@ -231,7 +231,7 @@ The sample has been provided in the following sections for the `Blazor WebAssemb
         </script>
     ```
 
- 11. Open the `Index.razor` file within the `Client project` and implement the code as follows to invoke the `renderDashboard()` method.
+ 11. Open the `Index.razor` file in the `Client project` and implement the code as shown to invoke the `renderDashboard()` method.
 
      ```js
         @page "/"
@@ -248,7 +248,7 @@ The sample has been provided in the following sections for the `Blazor WebAssemb
         }
      ```
 
- 12. Open the `MainLayout.razor` file within the `Client project` and replace the following code.
+ 12. Open the `MainLayout.razor` file in the `Client project` and replace the code mentioned below.
 
      ```js
           @inherits LayoutComponentBase
@@ -261,9 +261,9 @@ The sample has been provided in the following sections for the `Blazor WebAssemb
           </div>
      ```
 
- 13. In the `Server project`, under the controller folder, create the controller `EmbedDataController.cs`. To get particular dashboard details, define an API `AuthorizationServer()` using the `GetSignatureUrl()` method to generate the algorithm. In this API, the `embedQuerString`,`userEmail` and the value from the `GetSignatureUrl()` method are appended as the query parameters in the URL to the authorization server of the particular dashboard.
+ 13. In the `Server project`, create the `EmbedDataController.cs` controller under the controller folder. To obtain specific dashboard details, define an API called `AuthorizationServer()` which utilizes the `GetSignatureUrl()` method to generate the algorithm. In this API, append the `embedQueryString`, `userEmail`, and the value from the `GetSignatureUrl()` method as query parameters in the URL to the authorization server of the specific dashboard.
 
-     Open the terminal and navigate to the `Server project` directory using the cd command (e.g., `cd C:\BlazorProject\Server`). Execute the following commands in the terminal to add the necessary reference to the project: `dotnet add package Newtonsoft.Json`. Include the `Newtonsoft.Json`, `System.Security.Cryptography`, `System.Net.Http`, `Microsoft.AspNetCore.Mvc` and `Models` folder namespaces.
+     Open the terminal and navigate to the `Server project` directory using the cd command (e.g., `cd C:\BlazorProject\Server`). Execute the following commands in the terminal to add the necessary reference to the project: `dotnet add package Newtonsoft.Json`. Include the namespaces for the `Newtonsoft.Json`, `System.Security.Cryptography`, `System.Net.Http`, `Microsoft.AspNetCore.Mvc`, and `Models` folders.
 
      ```js
         [Route("api/[controller]")]
@@ -318,4 +318,4 @@ The sample has been provided in the following sections for the `Blazor WebAssemb
         }
      ```
 
- 14. Navigate to the `Server project` directory using the cd command (e.g., `cd C:\BlazorProject\Server`). Run your `Blazor WebAssembly` sample with the command `dotnet watch run` in Visual Studio Code.
+ 14. Navigate to the `Server project` directory using the cd command, such as `cd C:\BlazorProject\Server`. Run your `Blazor WebAssembly` sample with the command `dotnet watch run` in Visual Studio Code.

@@ -8,40 +8,40 @@ documentation: ug
 
 # How to create custom application theme
 
-Once you have extracted the template file downloaded from the link in the `Manage Application Theme` dialog, you can manually edit the css variables and assign color codes in the template file to customize the theme.
+Once you have extracted the template file downloaded from the link in the `Manage Application Theme` dialog, you can manually edit the CSS variables and assign color codes in the template file to customize the theme.
 
 **Let's learn some basics on CSS3 variable and color code assignments.**
 
 CSS3 variable syntax: `name:value;`
 
-Here `name` represents the variable name and it should starts with two dashes `(--)`. For example, `--primary-branding-color`.
+Here, the `name` represents the variable name and it should start with two dashes `(--)`. For example, `--primary-branding-color`.
 
-The value represents the hexadecimal representation of the color code that you want to assign to this variable. For example, `#ffffff`. You can either assign hex color code or use the already defined CSS3 variable name like below.
+The value represents the hexadecimal representation of the color code that you want to assign to this variable. For example, `#ffffff`. You can either assign a hex color code or use the already defined CSS3 variable name like below.
 
 ![CSS3 variable](/static/assets/site-administration/images/css-variable.png)
 
 ### **Points to be noted while editing and uploading custom theme file.**
 
-* To avoid errors in color assignment, please check this [online color picker tool](https://www.google.com/search?si=AC1wQDAoyjQYg3jwXlqSN_ppczo9wBVbeISr-8vCGaPybowwliJXfryD9GkUWlNo3uTq29yH5Z2Khp5AXSpKSRTZXtkDq1HDAQ%3D%3D&hl=en-IN&kgs=4b27e3cf717a5fe4&shndl=21&source=sh/x/fbx/1&entrypoint=sh/x/fbx&fbxst=CgkKByM2ZTZhNjA) to get the hex value for the color you wish to use in template file.
+* To avoid errors in color assignment, please use this [online color picker tool](https://www.google.com/search?si=AC1wQDAoyjQYg3jwXlqSN_ppczo9wBVbeISr-8vCGaPybowwliJXfryD9GkUWlNo3uTq29yH5Z2Khp5AXSpKSRTZXtkDq1HDAQ%3D%3D&hl=en-IN&kgs=4b27e3cf717a5fe4&shndl=21&source=sh/x/fbx/1&entrypoint=sh/x/fbx&fbxst=CgkKByM2ZTZhNjA) to get the hex value for the color you want to use in the template file.
 
-* Make sure that you use appropriate color codes that will be suitable for the mode you prefer to customize. For example, use **light based colors** in **dark mode** and **dark based colors** in **light mode**, so that the visibility will be clear.
+* Make sure to use appropriate color codes that are suitable for the mode you are customizing. For example, use **light based colors** in **dark mode** and **dark based colors** in **light mode** to ensure clear visibility.
 
-* A custom theme can only be created for either the dark or light mode. A single custom theme will not work for both. Please choose a custom theme based on your current application mode. To reset the custom theme, please select the default value.
+* A custom theme can only be created for either the dark or light mode, not both. Please select a custom theme based on your current application mode. To reset the custom theme, choose the default value.
 
-* Once a theme is uploaded, you can't change the color codes in the already uploaded theme file with the same name or by deleting theme file. You need to re-upload a new file with changes for further customization.
+* Once a theme is uploaded, you cannot change the color codes in the already uploaded theme file by deleting it. You must re-upload a new file with changes for further customization.
 
-* Before uploading the custom theme file, please ensure your custom theme file is valid by uploading it into this [online validation helper](https://jigsaw.w3.org/css-validator/#validate_by_upload).
+* Before uploading the custom theme file, make sure it is valid by using this [online validation helper](https://jigsaw.w3.org/css-validator/#validate_by_upload).
 
 ## Assign color code to variables in template file
 
 ### **Simple Customization**
 
-You can customize the **branding color**, **primary text**, **secondary text**, **active text**, and **hyperlink colors** by changing color codes for the below mentioned variables. These minimal changes will be enough to customize all components and elements.
+You can customize the **branding color**, **primary text**, **secondary text**, **active text**, and **hyperlink colors** by changing the color codes for the variables mentioned below. These minimal changes will be enough to customize all components and elements.
 
 <a>Branding Color</a>
 
-You can customize the **branding color** by changing the `--primary-branding-color` variable.
-This will reflect in the areas and components shown in the below image.
+Customize the **branding color** by changing the `--primary-branding-color` variable.
+This will affect the areas and components shown in the image below.
 
 <table>
     <tr>
@@ -57,7 +57,7 @@ This will reflect in the areas and components shown in the below image.
 
 <a>Typography</a>
 
-You can customize **primary text**, **secondary text**, **hover text**, **active text**, and **hyperlink color** over the entire application by changing the color codes on the below variables.
+Customize **primary text**, **secondary text**, **hover text**, **active text**, and **hyperlink color** throughout the application by changing the color codes for the variables provided.
 
 <table>
 <tr>
@@ -83,7 +83,7 @@ You can also customize the **active** and **hover state colors**, the **primary 
 
 <a>State background</a>
 
-You can customize **hover background** and **active background** color over the entire application by changing the color codes on the below variables.
+You can customize the **hover background** and **active background** colors across the entire application by changing the color codes in the variables below.
 
 <table>
     <tr>
@@ -161,7 +161,7 @@ You can customize the **primary button**, **secondary button**, and **link butto
 
 <a>Navigation menu customization</a>
 
-You can customize **normal background**, **hover background**, **active background**, **primary text**, and **hyperlink color** for the main navigation menu by changing the color codes on the below variables.
+You can customize the **normal background**, **hover background**, **active background**, **primary text**, and **hyperlink color** for the main navigation menu by changing the color codes in the variables below.
 
 <table>
     <tr>
@@ -188,7 +188,7 @@ You can customize **normal background**, **hover background**, **active backgrou
     </tr>
 </table>
 
-Once you customize the template file with advanced customization it will look like the image shown below.
+Once you customize the template file with advanced customization, it will look like the image shown below.
 
 ![Customized template file](/static/assets/site-administration/images/customize-template-file.png)
 

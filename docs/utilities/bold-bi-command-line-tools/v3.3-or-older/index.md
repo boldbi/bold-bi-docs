@@ -19,7 +19,7 @@ This section explains how to use the admin utility and list of command available
 2. Open the command prompt.  
 ![cmd-window](/static/assets/admin-utility/images/cmdpmpt.png)  
 
-3. Change the command prompt directory to the admin utility location. For more information, Please refer the following command.   
+3. Change the command prompt directory to the admin utility location. For more information, please refer to the following command:   
 ~~~
 cd C:\Bold BI\Utilities\AdminUtils
 ~~~  
@@ -27,6 +27,6 @@ cd C:\Bold BI\Utilities\AdminUtils
 
 ## Available commands
 
-Please find the list of commands available in admin utility currently.  
+Please find the list of commands available in the admin utility currently. 
 * [**Reset Password**](/utilities/bold-bi-command-line-tools/v3.3-or-older/reset-password/)
 * [**Update Application Database**](/utilities/bold-bi-command-line-tools/v3.3-or-older/reset-application-database/)

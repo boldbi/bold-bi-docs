@@ -9,10 +9,10 @@ documentation: ug
 
 This section explains how to configure Active Directory with the Bold BI server and how to schedule the synchronization of users and groups from the Active Directory.
 
-You can explore the Active Directory in detail here,
+You can explore the Active Directory settings in detail here:
 
 [Active Directory Settings](/site-administration/user-directory-settings/active-directory/active-directory/)
 
 [Active Directory Synchronization Schedule](/site-administration/user-directory-settings/active-directory/active-directory-synchronization-schedule/)
 
-> **NOTE:** This feature is available in Bold BI Embedded Analytics but not in Cloud Analytics Server.
+> **NOTE:** This feature is available in On-Premises Deployment but not in Syncfusion Managed Cloud Server.
