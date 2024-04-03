@@ -8,17 +8,17 @@ documentation: UG
 
 # Configure Data Cache Settings
 
-This section explains on how to configure the Data cache settings to improve dashboard performance by caching widget data during the interactions in a dashboard in the Bold BI.
+This section explains how to configure the Data cache settings to improve dashboard performance by caching widget data during interactions in a Bold BI dashboard.
 
-The Data Cache allows you to improve the dashboard performance by caching the result of each widget and keeping the cached data in a dashboard for a particular amount of time. 
+The Data Cache feature allows you to enhance dashboard performance by caching the result of each widget and storing the cached data in a dashboard for a specified amount of time.
 
-> **NOTE:** This feature is available in Bold BI Embedded Analytics but not in Cloud Analytics Server.
+> **NOTE:** This feature is available in On-Premises Deployment but not in Syncfusion Managed Cloud Server.
 
 ## Mode selection
 The mode should be either `in-memory` or `redis`. The widget data will be cached based on the selected mode.
 
 ### Cache configuration
-1. Go to the `Data Process` settings on the server page and select the `Data Cache Configuration` tab.
+1. Navigate to the `Data Process` settings on the server page and select the `Data Cache Configuration` tab.
 
     The Data cache can be achieved through two modes:
     1. In-Memory
@@ -26,7 +26,7 @@ The mode should be either `in-memory` or `redis`. The widget data will be cached
 
     **In-Memory**
 
-    The `In-Memory` is the default cache memory for dashboards. It stores the data in the internal cache storage. You should configure the `CacheMode` property for the `in-memory` mode selection.
+    The `In-Memory` cache is the default cache memory for dashboards. It stores the data in the internal cache storage. You should configure the `CacheMode` property for the `in-memory` mode selection.
     
     **Redis**
 
@@ -46,6 +46,6 @@ The mode should be either `in-memory` or `redis`. The widget data will be cached
 
     ![Clear datacache](/static/assets/site-administration/images/clear_cache.png#max-width=70%)
 
->**NOTE:** `Clear cache` option is visible only when the cache is present.
+>**NOTE:** The `Clear cache` option is visible only when the cache is present.
 
 Please find more details about [Data cache](/working-with-dashboards/data-cache/).

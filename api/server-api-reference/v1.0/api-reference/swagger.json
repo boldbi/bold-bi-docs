@@ -80,10 +80,6 @@
             "description": "Email address is empty.",
             "content": {}
           },
-          "401": {
-            "description": "Invalid email or password.",
-            "content": {}
-          },
           "404": {
             "description": "User detail not found.",
             "content": {}
@@ -756,7 +752,7 @@
           },
           "Password": {
             "type": "string",
-            "description": "Password of the user (Password accepted only in [Automatic activation](/embedded-bi/site-administration/account-settings/#automatic-activation) mode).\n\n<B> **NOTE:** </B> If you are using a Cloud Analytics Server, then the password field is not required to be used."
+            "description": "Password of the user (Password accepted only in [Automatic activation](/embedded-bi/site-administration/account-settings/#automatic-activation) mode).\n\n<B> **NOTE:** </B> If you are using a Syncfusion Managed Cloud Server, then the password field is not required to be used."
           }
         },
         "description": "User detail"

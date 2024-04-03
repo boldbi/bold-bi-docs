@@ -25,7 +25,7 @@ The visualization of the KPI card widget is customizable, and you can format the
 
 ## How to configure data into KPI card 
 
-> **NOTE:** Before adding the card widget to the design layout, make sure to create the data source. You can refer to [this section](/working-with-data-source/creating-a-new-data-source/) to learn how to create a new data source. 
+> **NOTE:** Before adding the card widget to the design layout, make sure to create the data source. You can refer to [this section](/working-with-data-sources/creating-a-new-data-source/) to learn how to create a new data source. 
 
 > **IMPORTANT:** To showcase a KPI Card, a minimum requirement of both actual and target values is needed.
 
@@ -227,11 +227,15 @@ This option allows you to provide the `description` about the KPI Card.
 
 ### Basic Settings
 
+### Tooltip Settings
+
+![Tooltip settings](/static/assets/visualizing-data/visualization-widgets/images/kpi-card/Tooltip-Settings.png)
+
 ### Show Tooltip
 
 This option allows you to toggle the visibility of tooltip in a card.
 
-![Direction](/static/assets/visualizing-data/visualization-widgets/images/kpi-card/tooltip.png)
+![Direction](/static/assets/visualizing-data/visualization-widgets/images/kpi-card/kpi-tooltip.png)
 
 ### Color properties
 

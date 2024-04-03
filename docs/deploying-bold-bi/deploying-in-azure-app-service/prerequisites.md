@@ -6,14 +6,15 @@ platform: bold-bi
 documentation: ug
 ---
 
-# Prerequisites to use Bold BI on Microsoft Azure App service
+# Prerequisites for using Bold BI on Microsoft Azure App Service
 
-This section explains the requirement to use the Bold BI on Microsoft Azure App service.
-1. Need the Microsoft Azure subscription. If you do not have already, you can use the free trial on this [website](https://azure.microsoft.com/en-us/free/).
+This section explains the requirements for using Bold BI on Microsoft Azure App Service.
+1. You need a Microsoft Azure subscription. If you don't have one already, you can use the free trial available on this [website](https://azure.microsoft.com/en-us/free/).
 
-2. Bold BI Enterprise Edition license.
+2. You need a Bold BI Enterprise Edition license.
 
-3. Supported databases to configure Bold BI application.
+3. You need to have one of the following supported databases configured for the Bold BI application:
     
     * Microsoft SQL Server 2012+
     * PostgreSQL
+    * MySQL

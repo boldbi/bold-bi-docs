@@ -19,7 +19,7 @@ documentation: ug
 
 ## How to configure the data table to Heatmap widget
 
-> **NOTE:**  Before adding the Heatmap widget to the design layout, make sure to **create the data source**. You can refer to this [section](/working-with-data-source/creating-a-new-data-source/) to learn how to create a new data source.
+> **NOTE:**  Before adding the Heatmap widget to the design layout, make sure to **create the data source**. You can refer to this [section](/working-with-data-sources/creating-a-new-data-source/) to learn how to create a new data source.
 
 > **IMPORTANT:**  To showcase a Heatmap, a minimum requirement of `one value` and `two groups` by the field is needed.
 

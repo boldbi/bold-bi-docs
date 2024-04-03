@@ -1,8 +1,0 @@
-﻿{
-  "userdescription": {
-    "getusersdescription": "To retrieve a list of users, create, modify, and delete a particular user in the Bold BI Embed, use the corresponding endpoints below."
-  },
-  "tryitnow": {
-    "tryitnowdescription": "Interactive documentation lets you play with our APIs to explore the responses and make the plan accordingly.\n\n[Try It Now(v1.0)](/embedded-bi/rest-api-reference/v1.0/try-it-now/)\n\nTo know about how it works, please click [here](/embedded-bi/rest-api-reference/interact-with-rest-api/).\n"
-  }
-}

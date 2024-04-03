@@ -28,4 +28,4 @@ Follow the given steps to assign custom attribute to the group:
 
 1. Create a [Group](/managing-resources/manage-groups/#add-new-group) with users who will be using the same types of custom attributes.
 
-2. Create [Group Level Attribute](/working-with-data-source/configuring-custom-attribute/#group-level-attribute).
+2. Create [Group Level Attribute](/working-with-data-sources/configuring-custom-attribute/#group-level-attribute).

@@ -300,6 +300,12 @@ A Legend is a text used to describe the plotted data. It allows you to toggle th
 
 ![Map](/static/assets/visualizing-data/visualization-widgets/images/map/show-legend.png)
 
+#### Enable Zooming
+
+This allows you to toggle the visibility of zooming buttons.
+
+![Map](/static/assets/visualizing-data/visualization-widgets/images/map/enableZooming-enable-option.png)
+
 #### Show Label
 
 This allows you to enable the visibility of `Data Labels.`
@@ -640,6 +646,22 @@ You can save your changes by clicking `Save.` Now, the map renders with changes.
 **Bubble map**
 
 ![Bubble map Individual settings changes](/static/assets/visualizing-data/visualization-widgets/images/map/map-individualsetting.png)
+
+### Font settings
+ 
+This section allows you to customize the font size of map elements.
+ 
+![Font settings](/static/assets/visualizing-data/visualization-widgets/images/map/font-settings.png)
+ 
+#### Auto Font Size and Font Size
+ 
+By default, the 'Auto Font Size' property is enabled. The Auto Font Size property is used to set Font Size based on dashboard viewing client machine resolution.
+
+![Font settings](/static/assets/visualizing-data/visualization-widgets/images/map/map-auto-font-settings.png)
+
+If the user wants to customize or set a Fixed Font Size, the user needs to disable Auto Font Size and set the required Font Size. In the image below, I have set different font sizes for Legend, Legend Title, and Value Label.
+
+![Font settings](/static/assets/visualizing-data/visualization-widgets/images/map/map-customize-font-settings.png)
 
 ### Filter    
 

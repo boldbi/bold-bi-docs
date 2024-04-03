@@ -13,7 +13,7 @@ Bold BI dashboard designer supports to connect live file(CSV/JSON/XML/Excel) usi
 
 ## Steps to connect a live file(CSV/JSON/XML/Excel) using Web Services 
 
-1. Connect your [Google Drive](/working-with-data-source/data-connectors/google-drive/) or [Dropbox](/working-with-data-source/data-connectors/dropbox/) or [Microsoft OneDrive](/working-with-data-source/data-connectors/ms-one-drive/) or [Microsoft SharePoint](/working-with-data-source/data-connectors/ms-sharepoint/) account in which you are having your live file(CSV/JSON/XML/Excel).
+1. Connect your [Google Drive](/working-with-data-sources/data-connectors/google-drive/) or [Dropbox](/working-with-data-sources/data-connectors/dropbox/) or [Microsoft OneDrive](/working-with-data-sources/data-connectors/ms-one-drive/) or [Microsoft SharePoint](/working-with-data-sources/data-connectors/ms-sharepoint/) account in which you are having your live file(CSV/JSON/XML/Excel).
 
 2. Once connected the account, select the account name and click Connect button.
 
@@ -37,7 +37,7 @@ Bold BI dashboard designer supports to connect live file(CSV/JSON/XML/Excel) usi
 
 ## Steps to connect live file(CSV/JSON/XML) through Restful Web services 
 
-1. If the live data is in CSV/JSON/XML format in your REST API, then connect the API in designer using [**Web API**](/working-with-data-source/data-connectors/web/) connection type.
+1. If the live data is in CSV/JSON/XML format in your REST API, then connect the API in designer using [**Web API**](/working-with-data-sources/data-connectors/web/) connection type.
 
 2. In the Data Format combo box select the format (CSV, JSON, XML) based on the response of your provided API.
    

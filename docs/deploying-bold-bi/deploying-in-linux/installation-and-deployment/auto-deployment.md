@@ -8,7 +8,7 @@ documentation: ug
 
 # Auto deploy Bold BI in Linux
  
- This section helps you to deploy Bold BI in Linux without manually activating licensing and configuring startup from the browser. This also helps us to customize the branding using environment variables.
+This section provides instructions for deploying Bold BI in Linux without manually activating licensing and configuring startup from the browser. It also allows for customizing the branding using environment variables.
 
 ## Deployment prerequisites
 
@@ -60,7 +60,9 @@ documentation: ug
       </td>
       <td>
       Install <b>GDIPlus</b> package using the following command. </br> </br>
-      <b>sudo yum install libgdiplus</b>
+      <b>sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm</br>
+      sudo yum install epel-release </br>
+      sudo yum install libgdiplus</b>
       </td>
     </tr>
     <tr>
@@ -81,6 +83,46 @@ documentation: ug
        5.
       </td>
       <td>
+      Install the <b>Python3</b> for ETL service by running the following command:</br> </br>
+      <b>Ubuntu Version:22.04 :</b> sudo apt-get install -y python3 </br></br>
+      <b>Ubuntu Version:20.04 :</b> sudo apt update && sudo apt install wget software-properties-common && sudo add-apt-repository ppa:deadsnakes/ppa && sudo apt update && sudo apt install python3.9
+      </td>
+      <td>
+      Install the <b>Python3</b> for ETL service by running the following command:</br> </br>
+      <b>sudo dnf groupinstall 'development tools' && sudo dnf install wget openssl-devel bzip2-devel libffi-devel && sudo curl https://www.python.org/ftp/python/3.9.2/Python-3.9.2.tgz -O && sudo tar -xvf Python-3.9.2.tgz && cd Python-3.9.2 && sudo ./configure --enable-optimizations && sudo make install</b>
+      </td>
+    </tr> 
+    <tr>
+      <td>
+      6.
+      </td>
+      <td>
+      Install <b>python pip</b> by running the below command:</br> </br>
+      <b>sudo apt-get install python3-pip</b>
+      </td>
+      <td>
+      Install <b>python pip</b> by running the below command:</br> </br>
+      <b>sudo yum -y install python3-pip</b>
+      </td>
+    </tr> 
+    <tr>
+      <td>
+       7.
+      </td>
+      <td>
+      Install pip dependency package for ETL service by running the following command: </br> </br>
+      <b>sudo pip install duckdb===0.9.2 dlt===0.4.2 pymysql pyodbc pg8000 poetry pandas===2.0.0 "dlt[parquet]" "dlt[filesystem]"</b>
+      </td>
+      <td>
+      Install pip dependency package for ETL service by running the following command: </br> </br>
+      <b>python3.9 -m pip install duckdb===0.9.2 dlt===0.4.2 pymysql pyodbc pg8000 poetry pandas===2.0.0 "dlt[parquet]" "dlt[filesystem]"</b>
+      </td>
+    </tr> 
+    <tr>
+      <td>
+       8.
+      </td>
+      <td>
       Add an <b>openssl conf</b> path in the environment, if does not exist. </br> </br>
       <b>export OPENSSL_CONF=/etc/ssl/</b>
       </td>
@@ -93,29 +135,28 @@ documentation: ug
 
 ## Configuring the Bold BI application
 
-1. Register and download the Bold BI Linux package from [here](/deploying-bold-bi/overview/#registration-and-download).
+1. Register and download the Bold BI Linux package from the provided [here](https://www.boldbi.com/account).
 
-2. Download the Bold BI Linux package by running the following command.
+2. Download the Bold BI Linux package by running the command:
 
     ~~~cmd
     sudo wget {Bold BI Linux package link}
     ~~~
 
-3. Extract the zip file.
+3. Extract the zip file by running the command:
 
     ~~~cmd
     sudo unzip {Bold BI Linux package zip file}
     ~~~ 
 
-4. Change the directory to the `BoldBIEnterpriseEdition-Linux` by running the following command. 
+4. Change the directory to the `BoldBIEnterpriseEdition-Linux` by running the command:
 
     ~~~cmd
     cd BoldBIEnterpriseEdition-Linux
     ~~~ 
 
-5. Execute the following command to deploy Bold BI in your Linux machine.
+5. Execute the following command to deploy Bold BI in your Linux machine:
 
- 
     ~~~cmd
     sudo bash install-boldbi.sh -i {new} -u {user} -h {host URL} -n {true} -license {License Key} -databasetype {databasetype} -databasehost {Database server name} -databaseport {database port} -maintaindb {default database} -databaseuser {database username} -databasepwd {database password} -databasename {database name} -email {email address} -emailpwd {Password} -mainlogo {main logo} -loginlogo {login logo} -emaillogo {email logo} -favicon {header logo} -footerlogo {footer logo} -sitename {site name} -siteidentifier {site identifier}
     ~~~
@@ -131,7 +172,7 @@ The following variable is necessary to configure a startup application on the ba
        <b>Name</b>
       </td>
       <td>
-       <b>Requried</b>
+       <b>Required</b>
       </td>
       <td>
        <b>Description</b>
@@ -145,7 +186,7 @@ The following variable is necessary to configure a startup application on the ba
        Yes
       </td>
       <td>
-      Installation type - Specifies either it is a new or upgrade installation.
+      Installation type - Specifies whether it is a new or upgrade installation.
       </td>
     </tr>
     <tr>
@@ -156,7 +197,7 @@ The following variable is necessary to configure a startup application on the ba
        Yes 
       </td>
       <td>
-        Installation type - Specifies either it is a new or upgrade installation.
+        Installation type - Specifies whether it is a new or upgrade installation.
       </td>
     </tr>
     <tr>
@@ -167,7 +208,7 @@ The following variable is necessary to configure a startup application on the ba
       Yes
       </td>
       <td>
-      Domain or IP address of the machine with http protocol.
+      Domain or IP address of the machine with HTTP protocol.
       </td>
     </tr>
     <tr>
@@ -178,7 +219,7 @@ The following variable is necessary to configure a startup application on the ba
       Yes
       </td>
       <td>
-      Setting this to “true” will automatically configure the Bold BI with Nginx front-end server.
+      Setting this to “true” will automatically configure Bold BI with Nginx front-end server.
       </td>
     </tr> 
     <tr>
@@ -200,7 +241,7 @@ The following variable is necessary to configure a startup application on the ba
        Yes
       </td>
       <td>
-      Type of database server can be used for configuring the Bold BI.</br>
+      Type of database server to be used for configuring the Bold BI.</br>
       The following DB types are accepted:</br>
      1. mssql – Microsoft SQL Server/Azure SQL Database </br>
      2. postgresql – PostgreSQL Server</br>
@@ -306,7 +347,7 @@ The following variable is necessary to configure a startup application on the ba
        <b>usesiteidentifier</b> 
       </td>
       <td>
-       Yes
+       No
       </td>
       <td>
       The variable is optional, and the default value is TRUE. By default, all sites in Bold BI require a site identifier, which differentiates sites on the same domain. That is https://example.com/bi/site/ You can ignore the site identifier by setting the value as FALSE. If the site identifier is disabled, each site requires a unique domain.
@@ -351,8 +392,8 @@ The following variable is necessary to configure a startup application on the ba
     </tr> 
     </table>
 
-Example for silent installation,
+Example for silent installation:
 
 ~~~cmd 
-sudo bash install-boldbi.sh -i new -u root -h http://linux.example.com -n true -license Bold_BI_license_key -databasetype postgresql localhost -maintaindb defaultdb -databaseuser doadmin -databasepwd boldbi@123 -databasename testing -databaseport 25060 -email admin@boldbi.com -emailpwd Admin@123 -mainlogo https://cdn.boldbi.com/wp/pages/boldbi-header-menu-logo.svg -loginlogo https://cdn.boldbi.com/wp/pages/boldbi-header-menu-logo.svg -emaillogo https://cdn.boldbi.com/wp/pages/boldbi-header-menu-logo.svg -favicon https://cdn.boldbi.com/wp/pages/boldbi-header-menu-logo.svg -footerlogo https://cdn.boldbi.com/wp/pages/boldbi-header-menu-logo.svg -sitename Autodeployment -siteidentifier Branding
+sudo bash install-boldbi.sh -i new -u root -h http://linux.example.com -n true -license Bold_BI_license_key -databasetype postgresql -databasehost localhost -maintaindb defaultdb -databaseuser doadmin -databasepwd boldbi@123 -databasename testing -databaseport 25060 -email admin@boldbi.com -emailpwd Admin@123 -mainlogo https://cdn.boldbi.com/wp/pages/boldbi-header-menu-logo.svg -loginlogo https://cdn.boldbi.com/wp/pages/boldbi-header-menu-logo.svg -emaillogo https://cdn.boldbi.com/wp/pages/boldbi-header-menu-logo.svg -favicon https://cdn.boldbi.com/wp/pages/boldbi-header-menu-logo.svg -footerlogo https://cdn.boldbi.com/wp/pages/boldbi-header-menu-logo.svg -sitename Autodeployment -siteidentifier Branding
 ~~~

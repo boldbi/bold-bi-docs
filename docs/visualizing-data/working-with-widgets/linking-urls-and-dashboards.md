@@ -66,7 +66,7 @@ Now, the field will be added with URL.
 ![Field added](/static/assets/visualizing-data/working-with-widgets/images/Linking10.PNG)
 
 ## Dashboard Parameter support in URL Linking
-URL Linking allows you to use both the [Dashboard Parameter](/working-with-data-source/dashboard-parameter/configuring-dashboard-parameters/) and [Default Parameter](/working-with-data-source/dashboard-parameter/change-the-dashboard-parameter-value-in-url/#default-parameters). Create a dynamic link based on current domain, dashboard, and category by referring info icon placed at the right side of the URL text box.
+URL Linking allows you to use both the [Dashboard Parameter](/working-with-data-sources/dashboard-parameter/configuring-dashboard-parameters/) and [Default Parameter](/working-with-data-sources/dashboard-parameter/change-the-dashboard-parameter-value-in-url/#default-parameters). Create a dynamic link based on current domain, dashboard, and category by referring info icon placed at the right side of the URL text box.
 
 **Syntax** : `@{{:CURRENT.SITEURL}}/dashboards?dashboardName={dashboard_name}&categoryName={category_name}`
 

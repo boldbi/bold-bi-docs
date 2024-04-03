@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bold BI Embedding in Java with Spring Boot | Bold BI Docs
+title: Bold BI Embedding in Java with Spring Boot using SDK| Bold BI
 description: Learn how to embed an analytics dashboard with Spring Boot application using Bold BI Embed SDK and try it yourself.
 platform: bold-bi
 documentation: ug
@@ -8,9 +8,9 @@ documentation: ug
 
 # Bold BI Dashboards Embedding in Java using Spring Boot Sample with Embedded SDK
 
-A GitHub link has been provided to [get](https://github.com/boldbi/spring-boot-sample) the sample application, which demonstrates the dashboard rendering available in your Bold BI server and is followed by steps to create new embedding application in the `Spring Boot` on your own.
+A GitHub link has been provided to [get](https://github.com/boldbi/spring-boot-sample) the sample application, which demonstrates the dashboard rendering functionality available in your Bold BI server. This is followed by steps to create a new embedding application using `Spring Boot` on your own.
 
-> **NOTE:** The best way to get started would be read the [Getting Started](/getting-started/embedding-in-your-application/) section of the documentation to start using first. The `Getting Started` guide gives you enough information to know before working on the sample.
+> **NOTE:** The best way to get started would be to read the [Getting Started](/getting-started/embedding-in-your-application/) section of the documentation first. The `Getting Started` guide provides enough information for you to know before working on the sample.
 
  ## Prerequisites
 
@@ -22,18 +22,18 @@ A GitHub link has been provided to [get](https://github.com/boldbi/spring-boot-s
 
 ## How to run the sample
 
-1. Please get the [Spring Boot](https://github.com/boldbi/spring-boot-sample) sample from GitHub.
+1. Please obtain the [Spring Boot](https://github.com/boldbi/spring-boot-sample) sample from GitHub.
 
-2. Please ensure you have enabled embed authentication on the `embed settings` page. If it is not enabled, please refer to the following image or detailed [instructions](https://help.boldbi.com/site-administration/embed-settings/#get-embed-secret-code) to enable it.
+2. Please make sure that you have enabled embed authentication on the `embed settings` page. If it is not enabled, please refer to the following image or the detailed [instructions](/site-administration/embed-settings/#get-embed-secret-code) to enable it.
 
     ![Embed Settings](/static/assets/javascript/sample/images/embed-settings.png)
 
- 3. To download the `embedConfig.json` file, please follow this [link](https://help.boldbi.com/site-administration/embed-settings/#get-embed-configuration-file) for reference. Additionally, you can refer to the following image for visual guidance.
+ 3. To download the `embedConfig.json` file, please follow this [link](/site-administration/embed-settings/#get-embed-configuration-file) for reference. Moreover, you can refer to the accompanying image for visual guidance.
      
     ![EmbedSettings image](/static/assets/javascript/sample/images/embed-settings-download.png) 
     ![EmbedConfig Properties](/static/assets/javascript/sample/images/prop-core.png)
  
- 4. Copy the downloaded `embedConfig.json` file and paste it into the designated [location](https://github.com/boldbi/spring-boot-sample/tree/master/src/main/resources) within the application. Please ensure you have placed it in the application as, shown in the following image.
+ 4. Please copy the downloaded `embedConfig.json` file and paste it into the designated [location](https://github.com/boldbi/spring-boot-sample/tree/master/src/main/resources) within the application. Please make sure that you have placed it in the application as shown in the following image.
 
     ![EmbedConfig](/static/assets/javascript/sample/images/springboot-embedconfig.png)
 
@@ -71,9 +71,9 @@ A GitHub link has been provided to [get](https://github.com/boldbi/spring-boot-s
     </tbody>
     </table>
 
- 5. Run the sample using **Spring Boot Dashboard** in the Activity Bar on the side.
+ 5. To run the sample, use the **Spring Boot Dashboard** in the Activity Bar on the side.
 
- 6. The dashboard can be editable in design mode and create a new dashboard with the following changes in the `renderDashboard()` method.
+ 6. The dashboard can be edited in design mode and a new dashboard can be created with the following changes in the `renderDashboard()` method.
 
     <meta charset="utf-8"/>
     <table>
@@ -113,12 +113,12 @@ A GitHub link has been provided to [get](https://github.com/boldbi/spring-boot-s
 
 ## How this sample works
 
- 1. The`renderEmbedConfig()` function is called to send a GET request to the `/getEmbedConfig` API and get JSON data. It then calls the `renderDashboard(data)` to render the dashboard if `embedConfig.json` is provided. If not, it displays an error message.
+ 1. The `renderEmbedConfig()` function is called to send a GET request to the `/getEmbedConfig` API and retrieve JSON data. Afterwards, it calls the `renderDashboard(data)` function to render the dashboard if `embedConfig.json` is provided. If not, it displays an error message.
 
     ![spring-boot-renderEmbedConfig](/static/assets/javascript/sample/images/spring-boot-renderEmbedConfig.png)
 
 
- 2. The `/getEmbedConfig` endpoint is handled by the `getEmbedConfig()` method in the `HomeController` class. It reads the contents of the `embedConfig.json` file and returns an EmbedProperties object.
+ 2. The `/getEmbedConfig` endpoint is handled by the `getEmbedConfig()` method in the `HomeController` class. This method reads the contents of the `embedConfig.json` file and returns an EmbedProperties object.
 
     ![spring-boot-getEmbedConfig](/static/assets/javascript/sample/images/spring-boot-getEmbedConfig.png)
 
@@ -126,33 +126,33 @@ A GitHub link has been provided to [get](https://github.com/boldbi/spring-boot-s
 
     ![spring-boot-renderDashboard](/static/assets/javascript/sample/images/spring-boot-renderDashboard.png)
 
- 4. Before rendering, the `authorizationUrl` is called, which redirects to the `authorizationServer` action in the `HomeController`, which generates the `EmbedSignature` using the embed secret from the `embedConfig.json`.
+ 4. Before rendering, the `authorizationUrl` is called. This `authorizationUrl` redirects to the `authorizationServer` action in the `HomeController`. The `HomeController` then generates the `EmbedSignature` using the embed secret from the `embedConfig.json` file.
 
     ![spring-boot-authorizationserver](/static/assets/javascript/sample/images/spring-boot-authorizationServer.png)
 
- 5. These details will be sent to the Bold BI server and validated there. Once details are validated, the dashboard starts to render.
+ 5. These details will be sent to the Bold BI server and validated there. Once the details are validated, the dashboard starts to render.
 
 
 ## Steps to create Spring Boot application to embed dashboard
 
- 1. Create a new spring boot sample by using this [link](https://code.visualstudio.com/docs/java/java-spring-boot#_create-the-project)
+ 1. Please create a new Spring Boot sample by using this [link](https://code.visualstudio.com/docs/java/java-spring-boot#_create-the-project)
 
- 2. After you create the sample, open the sample in your VS code.
+ 2. After creating the sample, open it in your VS code.
 
- 3. Please ensure you have enabled embed authentication on the `embed settings` page. If it is not enabled, please refer to the following image or detailed [instructions](https://help.boldbi.com/site-administration/embed-settings/#get-embed-secret-code) to enable it.
+ 3. Please make sure that you have enabled embed authentication on the `embed settings` page. If it is not enabled, please refer to the following image or detailed [instructions](/site-administration/embed-settings/#get-embed-secret-code) to enable it.
 
     ![Embed Settings](/static/assets/javascript/sample/images/embed-settings.png)
 
- 4. To download the `embedConfig.json` file, please follow this [link](https://help.boldbi.com/site-administration/embed-settings/#get-embed-configuration-file) for reference. Additionally, you can refer to the following image for visual guidance.
+ 4. To download the `embedConfig.json` file, please follow this [link](/site-administration/embed-settings/#get-embed-configuration-file) for reference. Furthermore, you can refer to the accompanying image for visual guidance.
      
     ![EmbedSettings image](/static/assets/javascript/sample/images/embed-settings-download.png) 
     ![EmbedConfig Properties](/static/assets/javascript/sample/images/prop-core.png)
  
- 5. Copy the downloaded `embedConfig.json` file and paste it into the designated [location](https://github.com/boldbi/spring-boot-sample/tree/master/src/main/resources) within the application. Please ensure you have placed it in the application as shown in the following image.
+ 5. Please copy the downloaded `embedConfig.json` file and paste it into the designated [location](https://github.com/boldbi/spring-boot-sample/tree/master/src/main/resources) within the application. Make sure you have placed it in the application exactly as shown in the following image.
 
     ![EmbedConfig](/static/assets/javascript/sample/images/springboot-embedconfig.png)
 
- 6. Create a new class called `EmbedProperties.java` in `src\main\java\com\example\demo` folder to define the following properties. The `embedConfig.json` file's  data is stored in these properties.
+ 6. Create a new class called `EmbedProperties.java` in the `src\main\java\com\example\demo` folder to define the following properties. These properties store the data from the `embedConfig.json` file.
 
     ```js
     import com.google.gson.annotations.SerializedName;
@@ -234,7 +234,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/spring-boot-s
 
     ```
 
- 7. Create a new model class called `EmbedClass.java` in `src\main\java\com\example\demo`, to define the following properties, The dashboard details are obtained from the server using these properties.
+ 7. Create a new model class called `EmbedClass.java` in `src\main\java\com\example\demo` to define the following properties. The dashboard details are obtained from the server using these properties.
     ```js
     public class EmbedClass {
 
@@ -255,7 +255,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/spring-boot-s
     }
     ```
 
- 8. Create a file called `index.html` in `src\main\resources\static` folder and add the following code in the `<head>` section.
+ 8. Create a file named `index.html` in the `src\main\resources\static` folder and include the following code in the `<head>` section.
 
     ```js
     <head> 
@@ -275,7 +275,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/spring-boot-s
     </body>
     ``` 
 
- 10. Add the following in the `<sricpt>` section in the `index.html` file to render the dashboard.
+ 10. Add the following code in the `<script>` section of the `index.html` file to render the dashboard.
 
         ```js
         <script>
@@ -328,7 +328,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/spring-boot-s
       </dependency>
      ```
     
- 12. Create a `HomeController.java` file in `src\main\java\com\example\demo`  to get particular dashboard details, define an API `authorizationServer()`, which uses the `GetSignatureUrl()` method to generate the algorithm. In this API, the `embedQuerString`, `userEmail`, and the value from the `GetSignatureUrl()` method are appended as the query parameters in the URL to get details of the particular dashboard.
+ 12. Create a `HomeController.java` file in `src\main\java\com\example\demo` in order to obtain specific dashboard details. Define an API `authorizationServer()` that utilizes the `GetSignatureUrl()` method to generate the algorithm. In this API, append the `embedQueryString`, `userEmail`, and the value from the `GetSignatureUrl()` method as query parameters in the URL to retrieve the details of the specific dashboard.
 
      ```js
       @RestController
@@ -374,7 +374,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/spring-boot-s
 
      ```
  
- 13. Include these import statements to `HomeConrtoller.java`.
+ 13. Include these import statements in `HomeController.java`.
 
      ```js
         import java.io.IOException;
@@ -397,4 +397,4 @@ A GitHub link has been provided to [get](https://github.com/boldbi/spring-boot-s
 
  14. Now, you can run the sample using the **Spring Boot Dashboard** in the Activity Bar on the side.
  
- 15. You can access your application by opening a web browser and navigating to the this URL (http://localhost:8080).
+ 15. You can access your application by opening a web browser and navigating to this URL (http://localhost:8080).

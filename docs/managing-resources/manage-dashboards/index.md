@@ -10,9 +10,9 @@ documentation: ug
 
 # Manage Dashboards
 
-This section explains how to create, open, delete, and share a dashboard in the Bold BI Enterprise application. Also, it explains how to manage dashboard views, multi-tabbed dashboards, move and copy dashboards.
+This section explains how to create, open, delete, and share a dashboard in the Bold BI Enterprise application. It also explains how to manage dashboard views, multi-tabbed dashboards, and how to move and copy dashboards.
 
-You can explore the managing dashboards in detail here,
+You can explore the management of dashboards in detail here:
 
 [Open Dashboards](/managing-resources/manage-dashboards/open-dashboards/)
 

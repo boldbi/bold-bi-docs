@@ -146,6 +146,18 @@
             "description": {
                 "$ref": "./../../common/api-reference/helperswagger.json#/userprofiledescription/getuserprofiledescription"
             }
+        },
+        {
+            "name": "Audit Logs",
+            "description":{
+                "$ref": "./../../common/api-reference/helperswagger.json#/activitylogsdescription/getactivitylogsdescription"
+            }
+        },
+        {
+            "name": "Webhooks",
+            "description":{
+                "$ref":"./../../common/api-reference/helperswagger.json#/webhooksdescription/getwebhooksdescription"
+            }
         }
     ],
     "paths": {
@@ -180,10 +192,6 @@
                     },
                     "400": {
                         "description": "Email address is empty.",
-                        "content": {}
-                    },
-                    "401": {
-                        "description": "Invalid email or password.",
                         "content": {}
                     },
                     "404": {
@@ -228,10 +236,6 @@
                     },
                     "400": {
                         "description": "Email address is empty.",
-                        "content": {}
-                    },
-                    "401": {
-                        "description": "Invalid email or embed secret.",
                         "content": {}
                     },
                     "404": {
@@ -850,7 +854,7 @@
                 "tags": [
                     "Groups"
                 ],
-                "summary": "Add Group",
+                "summary": "Add Groups",
                 "description": "Adds the new group to group the users.",
                 "operationId": "Groups_AddGroup",
                 "requestBody": {
@@ -1276,10 +1280,6 @@
                         "description": "Request type was not POST.",
                         "content": {}
                     },
-                    "412": {
-                        "description": "User already exists in group.",
-                        "content": {}
-                    },
                     "417": {
                         "description": "Failed to add user in to group.",
                         "content": {}
@@ -1680,9 +1680,12 @@
               "description": "Details about the permissions passed will be added to specified group id.",
               "content": {
                 "application/json": {
-                  "schema": {
-                    "$ref": "#/components/schemas/ApiGroupPermissionAdd"
-                  }
+                    "schema": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/ApiGroupPermissionAdd"
+                        }
+                    }
                 }
               },
               "required": true
@@ -1693,7 +1696,7 @@
                 "content": {
                   "application/json": {
                     "schema": {
-                      "$ref": "#/components/schemas/ApiResponse"
+                      "$ref": "#/components/schemas/BulkGroupPermission"
                     }
                   }
                 }
@@ -4019,6 +4022,60 @@
                 "x-codegen-request-body-name": "apiCopyDatasource"
             }
         },
+        "/v5.0/datasources/{datasourceID}/user-filter":{
+            "put": {
+                "tags": [
+                    "DataSource"
+                ],
+                "summary": "Create User Filter",
+                "description": "Creating an user filter.",
+                "operationId": "DataSource_CreateUserFilter",
+                "requestBody": {
+                    "description": "The following documentation explains how a user can create a user based filter using the API.",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/ApiCreateUserFilter"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "User Filter created successfully.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/WebAPItemResponse"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Item name is empty",
+                        "content": {}
+                    },
+                    "401": {
+                        "description": " Unauthorized.",
+                        "content": {}
+                    },
+                    "404": {
+                        "description": "Requested resource is not found.",
+                        "content": {}
+                    },
+                    "409": {
+                        "description": "Item name already exists.",
+                        "content": {}
+                    },
+                    "411": {
+                        "description": "Content-length is required.",
+                        "content": {}
+                    }
+                },
+                "x-codegen-request-body-name": "apiCreateUserFilter"
+            }
+        },
         "/v5.0/datasources/{datasourceId}": {
             "get": {
                 "tags": [
@@ -4116,6 +4173,59 @@
                     },
                     "417": {
                         "description": "Failed to delete item.",
+                        "content": {}
+                    }
+                }
+            }
+        },
+        "/v5.0/data-sources/{datasourceId}/dashboards": {
+            "get": {
+                "tags": [
+                    "DataSource"
+                ],
+                "summary": "Get Linked Dashboards",
+                "description": "Users who have read access to the data source can get the list of the linked dashboards.",
+                "operationId": "DataSource_GetLinkedDataSourceDashboards",
+                "parameters": [
+                    {
+                        "name": "datasourceId",
+                        "in": "path",
+                        "description": "Datasource ID",
+                        "required": true,
+                        "style": "simple",
+                        "explode": false,
+                        "schema": {
+                            "type": "string",
+                            "format": "guid",
+                            "nullable": false
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Linked dashboards retrieved successfully.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ApiGetLinkedDatasourceDashboards"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Item id invalid.",
+                        "content": {}
+                    },
+                    "401": {
+                        "description": "Access denied.",
+                        "content": {}
+                    },
+                    "404": {
+                        "description": "Item details not found.",
+                        "content": {}
+                    },
+                    "405": {
+                        "description": "Request type was not GET.",
                         "content": {}
                     }
                 }
@@ -5193,6 +5303,89 @@
             "x-codegen-request-body-name": "apiPinboardCopy"
           }
         },
+        "/pinboards": {
+            "get": {
+                "tags": [
+                    "Pinboard"
+                ],
+                "summary": "Get Pinbords",
+                "description": "Retrieves the list of pinboard details.",
+                "operationId": "Pinboard_GetPinboards",
+                "parameters": [
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "required": false,
+                        "description": "<br />\nPage number",
+                        "x-nullable": true,
+                        "schema" : {
+                            "type": "integer",
+                            "format": "int32"
+                        },
+                        "example": "  1 ",
+                        "default": 1,
+                        "minimum": 1
+                    },
+                    {
+                        "name": "page_size",
+                        "in": "query",
+                        "required": false,
+                        "description": "<br />\nPage size",
+                        "x-nullable": true,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        },
+                        "example" : "  10 ",
+                         "default": 25,
+                         "minimum":1,
+                         "Maximum":100
+                    },
+                    {
+                        "type": "string",
+                        "name": "q",
+                        "in": "query",
+                        "required": false,
+                        "description": "<br />\nSearch Keyword<br />Keyword searched in <code>Name</code>",
+                        "x-nullable": true,
+                        "example": " Bold "
+                    },
+                    {
+                        "type": "string",
+                        "name": "sort",
+                        "in": "query",
+                        "required": false,
+                        "description": "<br />\nSorting type<br />Values allowed are <code>+(ascending), -(descending)</code>",
+                        "x-nullable": true,
+                        "example": "  + "
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "List of pinboards has been retrieved successfully.",
+                        "content":{
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ApiGetPinboardPaginatedResponse"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Pinboard list is empty.",
+                        "content": {}
+                    },
+                    "401": {
+                        "description": "Access denied.",
+                        "content": {}
+                    },
+                    "405": {
+                        "description": "Request type was not GET.",
+                        "content": {}
+                    }
+                }
+            }
+        },
         "/pinboard/{name}": {
           "get": {
             "tags": [
@@ -6230,7 +6423,7 @@
                   "Settings"
                 ],
                 "summary": "Get Email Settings",
-                "description": "Retrieves the email setting details of the particular site if the user has admin rights for the email settings.\n\n<B> **NOTE:** </B> This API is not available in Bold BI Cloud Analytics Server.",
+                "description": "Retrieves the email setting details of the particular site if the user has admin rights for the email settings.\n\n<B> **NOTE:** </B> This API is not available in Syncfusion Managed Cloud Server.",
                 "operationId": "Administration_GetEmailSettings",
                 "responses": {
                   "200": {
@@ -6262,7 +6455,7 @@
               "Settings"
             ],
             "summary": "Update Email Settings",
-            "description": "Users who have admin rights permission to email settings can update the email settings.\n\n<B> **NOTE:** </B> This API is not available in Bold BI Cloud Analytics Server.",
+            "description": "Users who have admin rights permission to email settings can update the email settings.\n\n<B> **NOTE:** </B> This API is not available in Syncfusion Managed Cloud Server.",
             "operationId": "Administration_UpdateEmailSettings",
             "requestBody": {
               "description": "The details of the email settings that have been passed will be updated.",
@@ -6489,7 +6682,7 @@
               "Settings"
             ],
             "summary": "Get Account Settings",
-            "description": "Retrieves the account setting details of the particular site if the user has admin rights for the account settings.\n\n<B> **NOTE:** </B> This API is not available in Bold BI Cloud Analytics Server.",
+            "description": "Retrieves the account setting details of the particular site if the user has admin rights for the account settings.\n\n<B> **NOTE:** </B> This API is not available in Syncfusion Managed Cloud Server.",
             "operationId": "Administration_GetAccountSettings",
             "responses": {
               "200": {
@@ -6687,7 +6880,7 @@
                     "Settings"
                 ],
                 "summary": "Get Datastore Settings",
-                "description": "Retrieves the datastore setting details of a particular site if the user has admin rights for the datastore settings.\n\n<B> **NOTE:** </B> This API is not available in Bold BI Cloud Analytics Server.",
+                "description": "Retrieves the datastore setting details of a particular site if the user has admin rights for the datastore settings.\n\n<B> **NOTE:** </B> This API is not available in Syncfusion Managed Cloud Server.",
                 "operationId": "Administration_GetDatastoreSettings",
                 "responses": {
                     "200": {
@@ -6715,7 +6908,7 @@
                     "Settings"
                 ],
                 "summary": "Update Datastore Settings",
-                "description": "Users who have admin rights permission to datastore settings can update the datastore settings.\n\n<B> **NOTE:** </B> This API is not available in Bold BI Cloud Analytics Server.",
+                "description": "Users who have admin rights permission to datastore settings can update the datastore settings.\n\n<B> **NOTE:** </B> This API is not available in Syncfusion Managed Cloud Server.",
                 "operationId": "Administration_UpdateDatastoreSettings",
                 "requestBody": {
                     "description": "The details of the datastore settings that have been passed will be updated.",
@@ -6848,7 +7041,7 @@
                     "Settings"
                 ],
                 "summary": "Add Deployment Dashboards",
-                "description": "In the master site, the user who have admin rights for the dashboard settings can add the deployment dashboards.\n\n<B> **NOTE:** </B> This API is not available in Bold BI Cloud Analytics Server.",
+                "description": "In the master site, the user who have admin rights for the dashboard settings can add the deployment dashboards.\n\n<B> **NOTE:** </B> This API is not available in Syncfusion Managed Cloud Server.",
                 "operationId": "Administration_AddDeploymentDashboards",
                 "requestBody": {
                     "description": "Deployment dashboard details, which is sent as request.",
@@ -6896,7 +7089,7 @@
                     "Settings"
                 ],
                 "summary": "Get Deployment Dashboards",
-                "description": "Retrieves the list of deployment dashboards details of the master site if the user has admin rights for the dashboard settings.\n\n<B> **NOTE:** </B> This API is not available in Bold BI Cloud Analytics Server.",
+                "description": "Retrieves the list of deployment dashboards details of the master site if the user has admin rights for the dashboard settings.\n\n<B> **NOTE:** </B> This API is not available in Syncfusion Managed Cloud Server.",
                 "operationId": "Administration_GetDeploymentDashboards",
                 "responses": {
                     "200": {
@@ -6932,7 +7125,7 @@
                     "Settings"
                 ],
                 "summary": "Delete Deployment Dashboard",
-                "description": "Delete the deployment dashboards by their respective dashboard IDs.\n\n<B> **NOTE:** </B> This API is not available in Bold BI Cloud Analytics Server.",
+                "description": "Delete the deployment dashboards by their respective dashboard IDs.\n\n<B> **NOTE:** </B> This API is not available in Syncfusion Managed Cloud Server.",
                 "operationId": "Administration_DeleteDeploymentDashboards",
                 "parameters": [
                     {
@@ -7148,13 +7341,369 @@
                 }
             }
         },
+        "/v5.0/settings/authentication/oauth": {
+            "get": {
+                "tags": [
+                    "Settings"
+                ],
+                "summary": "Get OAuth settings",
+                "description": "The OAuth settings details of the particular site are retrieved if the user has admin rights for the authentication settings.\n\n<B> **NOTE:** </B> This API is not available in Syncfusion Managed Cloud Server.",
+                "operationId": "Administartion_GetOAuthSettings",
+                "responses": {
+                    "200": {
+                        "description": "OAuth settings have been retrieved successfully.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ApiGetOAuthSettings"
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Access denied",
+                        "content": {}
+                    },
+                    "404":{
+                        "description":"OAuth settings are not configured.",
+                        "content": {}
+                    },
+                    "405": {
+                        "description": "Request type was not GET.",
+                        "content": {}
+                    },
+                    "500": {
+                        "description": "Failed to retrieve the OAuth settings.",
+                        "content": {}
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "Settings"
+                ],
+                "summary": "Update OAuth settings",
+                "description": "Users who have admin rights or permissions for authentication settings can update the OAuth settings.\n\n<B> **NOTE:** </B> This API is not available in Syncfusion Managed Cloud Server.",
+                "operationId": "Administration_UpdateOAuthSettings",
+                "requestBody": {
+                    "description": "Detail of the OAuth settings.",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/ApiUpdateOAuthSettings"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "OAuth settings have been updated successfully.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ApiResponse"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "The content of the request body is missing or incomplete.",
+                        "content": {}
+                    },
+                    "401": {
+                        "description": "Access denied.",
+                        "content": {}
+                    },
+                    "405": {
+                        "description": "Request type was not PUT.",
+                        "content": {}
+                    },
+                    "406": {
+                        "description": "The content of the request body is invalid.",
+                        "content": {}
+                    },
+                    "500": {
+                        "description": "Failed to update the OAuth settings.",
+                        "content": {}
+                    }
+                }
+            }
+        },
+        "/v5.0/settings/authentication/openid": {
+            "get": {
+                "tags": [
+                    "Settings"
+                ],
+                "summary": "Get OpenID settings",
+                "description": "The OpenID settings details of the particular site are retrieved if the user has admin rights for the authentication settings.\n\n<B> **NOTE:** </B> This API is not available in Syncfusion Managed Cloud Server.",
+                "operationId": "Administartion_GetOpenIDSettings",
+                "responses": {
+                    "200": {
+                        "description": "OpenID settings have been retrieved successfully.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ApiGetOpenIDSettings"
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Access denied.",
+                        "content": {}
+                    },
+                    "404":{
+                        "description":"OpenID settings are not configured.",
+                        "content": {}
+                    },
+                    "405": {
+                        "description": "Request type was not GET.",
+                        "content": {}
+                    },
+                    "500": {
+                        "description": "Failed to retrieve OpenID settings.",
+                        "content": {}
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "Settings"
+                ],
+                "summary": "Update OpenID settings",
+                "description": "Users who have admin rights or permission to access authentication settings are able to update the OpenID settings.\n\n<B> **NOTE:** </B> This API is not available in Syncfusion Managed Cloud Server.",
+                "operationId": "Administration_UpdateOpenIDSettings",
+                "requestBody": {
+                    "description": "Detail of the OpenID settings.",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/ApiUpdateOpenIDSettings"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "OpenID settings have been updated successfully.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ApiResponse"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "The content of the request body is missing or incomplete.",
+                        "content": {}
+                    },
+                    "401": {
+                        "description": "Access denied.",
+                        "content": {}
+                    },
+                    "405": {
+                        "description": "Request type was not PUT.",
+                        "content": {}
+                    },
+                    "406": {
+                        "description": "The content of the request body is invalid.",
+                        "content": {}
+                    },
+                    "500": {
+                        "description": "Failed to update the OpenID settings.",
+                        "content": {}
+                    }
+                }
+            }
+        },
+        "/v5.0/settings/windows-active-directory": {
+            "get": {
+                "tags": [
+                  "Settings"
+                ],
+                "summary": "Get Windows AD Settings",
+                "description": "Retrieves the Windows AD settings details if the user has admin rights for the user directories.\n\n<B> **NOTE:** </B> This API is not available in Syncfusion Managed Cloud Server.",
+                "operationId": "Administration_GetWindowsADSettings",
+                "responses": {
+                  "200": {
+                    "description": "Windows AD settings details have been retrieved successfully.",
+                    "content": {
+                      "application/json": {
+                        "schema": {
+                          "$ref": "#/components/schemas/ApiWindowsADSettings"
+                        }
+                      }
+                    }
+                  },
+                  "401": {
+                    "description": "Access denied.",
+                    "content": {}
+                  },
+                  "404": {
+                    "description": "Windows Active Directory details are not configured.",
+                    "content": {}
+                  },
+                  "405": {
+                    "description": "Request type was not GET.",
+                    "content": {}
+                  },
+                  "417": {
+                    "description": "Failed to retrieve Windows AD settings.",
+                    "content": {}
+                  }
+                }
+          },
+          "put": {
+            "tags": [
+              "Settings"
+            ],
+            "summary": "Update Windows AD Settings",
+            "description": "Users who have admin rights permission to user directories can update the Windows AD settings.\n\n<B> **NOTE:** </B> This API is not available in Syncfusion Managed Cloud Server.",
+            "operationId": "Administration_UpdateWindowsADSettings",
+            "requestBody": {
+              "description": "The details of the windows active directory settings that have been passed will be updated.",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/ApiUpdateWindowsADSettings"
+                  }
+                }
+              },
+              "required": true
+            },
+            "responses": {
+              "200": {
+                "description": "Windows AD settings have been updated successfully.",
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/ApiResponse"
+                    }
+                  }
+                }
+              },
+              "400": {
+                "description": "The content of the request body is missing or incomplete",
+                "content": {}
+              },
+              "401": {
+                "description": "Access denied",
+                "content": {}
+              },
+              "405": {
+                "description": "Request type was not PUT",
+                "content": {}
+              },
+              "412": {
+                "description": "Connection details are invalid.",
+                "content": {}
+              },
+              "417": {
+                "description": "Failed to update Windows AD settings.",
+                "content": {}
+              }
+            }
+          }
+        },
+        "/v5.0/settings/windows-active-directory/schedule-synchronization": {
+            "get": {
+                  "tags": [
+                    "Settings"
+                  ],
+                  "summary": "Get Windows AD Schedule Synchronization Settings",
+                  "description": "Retrieves the Windows AD Schedule Synchronization Settings details if the user has admin rights for the user directories.\n\n<B> **NOTE:** </B> This API is not available in Syncfusion Managed Cloud Server.",
+                  "operationId": "Administration_GetWindowsADScheduleSettings",
+                  "responses": {
+                    "200": {
+                      "description": "Windows AD Schedule Synchronization settings details have been retrieved successfully.",
+                      "content": {
+                        "application/json": {
+                          "schema": {
+                            "$ref": "#/components/schemas/ApiAzureAdScheduleSynchronizationSettings"
+                          }
+                        }
+                      }
+                    },
+                    "401": {
+                      "description": "Access denied.",
+                      "content": {}
+                    },
+                    "404": {
+                      "description": "Windows AD synchronization schedule settings are not configured.",
+                      "content": {}
+                    },
+                    "405": {
+                      "description": "Request type was not GET.",
+                      "content": {}
+                    }
+                  }
+            },
+            "put": {
+              "tags": [
+                "Settings"
+              ],
+              "summary": "Update Windows AD Schedule Synchronization Settings",
+              "description": "Users who have admin rights permission to user directories can update the Windows AD schedule synchronization settings.\n\n<B> **NOTE:** </B> This API is not available in Syncfusion Managed Cloud Server.",
+              "operationId": "Administration_UpdateWindowsADScheduleSettings",
+              "requestBody": {
+                "description": "The details of the Windows Active Directory schedule synchronization settings that have been passed will be updated.",
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/ApiUpdateAzureAdScheduleSynchronizationSettings"
+                    }
+                  }
+                },
+                "required": true
+              },
+              "responses": {
+                "200": {
+                  "description": "Windows AD Schedule Synchronization settings have been updated successfully.",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/ApiUpdateAzureAdScheduleSynchronizationSettingsResponse"
+                      }
+                    }
+                  }
+                },
+                "400": {
+                  "description": "The content of the request body is missing or incomplete.",
+                  "content": {}
+                },
+                "401": {
+                  "description": "Access denied.",
+                  "content": {}
+                },
+                "405": {
+                  "description": "Request type was not PUT.",
+                  "content": {}
+                },
+                "406": {
+                  "description": "Schedule type is invalid (or) Recurrence type is invalid.",
+                  "content": {}
+                },
+                "412": {
+                  "description": "Start time is invalid.",
+                  "content": {}
+                },
+                "417": {
+                  "description": "Failed to update Windows AD schedule synchronization.",
+                  "content": {}
+                }
+              }
+            }
+        },
         "/v5.0/publish/item": {
           "post": {
             "tags": [
               "Publish to another site"
             ],
             "summary": "Publish Dashboard",
-            "description": "Publish the dashboard from one site to other site(s). \n\n<B> **NOTE:** </B> This API is not available in Bold BI Cloud Analytics Server.",
+            "description": "Publish the dashboard from one site to other site(s). \n\n<B> **NOTE:** </B> This API is not available in Syncfusion Managed Cloud Server.",
             "operationId": "Publish_Dashboard",
             "requestBody": {
               "description": "Details about the publish dashboard, which is sent as request.",
@@ -7607,6 +8156,759 @@
                     }
                 }
             }
+        },
+        "/v5.0/activity-logs":{
+            "get":{
+                "tags":[
+                    "Audit Logs"
+                ],
+                "summary": "All Activity Logs",
+                "description": "With this endpoint, site administrator can retrieve list of all activities performed in the site.",
+                "operationId": "ActivityLogs_GetAllActivityLogs",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "name": "startDate",
+                        "in": "query",
+                        "required": false,
+                        "description": "Specify the UTC start date to filter the logs with a particular date range.<br /> The format should be ISO 8601 i.e. `yyyy-MM-ddTHH:mm:ssZ`.",
+                        "format":"date-time",
+                        "schema": {
+                            "type": "string",
+                            "nullable": false
+                        }
+                    },
+                    {
+                        "type": "string",
+                        "name": "endDate",
+                        "in": "query",
+                        "required": false,
+                        "description": "Specify the UTC end date to filter the logs with a particular date range.<br /> The format should be ISO 8601 i.e. `yyyy-MM-ddTHH:mm:ssZ`.",
+                        "format":"date-time",
+                        "schema": {
+                            "type": "string",
+                            "nullable": false
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "List of activities retrieved successfully.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ApiGetActivityLogs"
+                                }
+                            }
+                        }
+                    },
+                    "204":{
+                        "description": "Log is empty",
+                        "content": {}
+                    },
+                    "400": {
+                        "description": "Invalid log module",
+                        "content": {}
+                    },
+                    "401":{
+                        "description":"Access denied",
+                        "content":{}
+                    },
+                    "405": {
+                        "description": "Request type was not GET",
+                        "content": {}
+                    }
+                }
+            }
+        },
+        "/v5.0/activity-logs?activitymodule=group":{
+            "get":{
+                "tags":[
+                    "Audit Logs"
+                ],
+                "summary": "Group Activity Logs",
+                "description": "With this endpoint, site administrator can retrieve the list of activities performed in group module.",
+                "operationId": "ActivityLogs_GetGroupActivityLogs",
+                "parameters":[
+                    {
+                        "name": "activity",
+                        "in": "query",
+                        "required": false,
+                        "description": "You can either ignore this or only pass the single activity value. <br/>Values allowed are <code> Add, Update, Delete, Sychroniztion, Import, Visit, UserAdd, UserRemove </code>",
+                        "schema": {
+                            "type": "string",
+                            "nullable": false
+                        }
+                    },
+                    {
+                        "type": "string",
+                        "name": "startDate",
+                        "in": "query",
+                        "required": false,
+                        "description": "Specify the UTC start date to filter the logs with a particular date range.<br /> The format should be ISO 8601 i.e. `yyyy-MM-ddTHH:mm:ssZ`.",
+                        "format":"date-time",
+                        "schema": {
+                            "type": "string",
+                            "nullable": false
+                        }
+                    },
+                    {
+                        "type": "string",
+                        "name": "endDate",
+                        "in": "query",
+                        "required": false,
+                        "description": "Specify the UTC end date to filter the logs with a particular date range.<br /> The format should be ISO 8601 i.e. `yyyy-MM-ddTHH:mm:ssZ`.",
+                        "format":"date-time",
+                        "schema": {
+                            "type": "string",
+                            "nullable": false
+                        }
+                    }
+                ],
+                "responses":{
+                    "200":{
+                        "description": "List of group activities retrieved successfully.",
+                        "content":{
+                            "application/json":{
+                                "schema":{
+                                    "$ref": "#/components/schemas/ApiGetGroupActivityLogs"
+                                }
+                            }
+                        }
+                    },
+                    "204":{
+                        "description": "Log is empty",
+                        "content": {}
+                    },
+                    "400": {
+                        "description": "Invalid log module",
+                        "content": {}
+                    },
+                    "401":{
+                        "description":"Access denied",
+                        "content":{}
+                    },
+                    "405": {
+                        "description": "Request type was not GET",
+                        "content": {}
+                    }
+                }
+            }
+        },
+        "/v5.0/activity-logs?activitymodule=grouppermission":{
+            "get":{
+                "tags":[
+                    "Audit Logs"
+                ],
+                "summary": "Group Permission Activity Logs",
+                "description": "With this endpoint, site administrator can retrieve the list of activities performed in group permission module.",
+                "operationId": "ActivityLogs_GetGroupPermissionActivityLogs",
+                "parameters":[
+                    {
+                        "type": "string",
+                        "name": "activity",
+                        "in": "query",
+                        "required": false,
+                        "description": "You can either ignore this or only pass the single activity value. <br/>Values allowed are <code>PermissionAdded, PermissionRemoved</code>",
+                        "schema": {
+                            "type": "string",
+                            "nullable": false
+                        }
+                    },
+                    {
+                        "type": "string",
+                        "name": "startDate",
+                        "in": "query",
+                        "required": false,
+                        "description": "Specify the UTC start date to filter the logs with a particular date range.<br /> The format should be ISO 8601 i.e. `yyyy-MM-ddTHH:mm:ssZ`.",
+                        "format":"date-time",
+                        "schema": {
+                            "type": "string",
+                            "nullable": false
+                        }
+                    },
+                    {
+                        "type": "string",
+                        "name": "endDate",
+                        "in": "query",
+                        "required": false,
+                        "description": "Specify the UTC end date to filter the logs with a particular date range.<br /> The format should be ISO 8601 i.e. `yyyy-MM-ddTHH:mm:ssZ`.",
+                        "format":"date-time",
+                        "schema": {
+                            "type": "string",
+                            "nullable": false
+                        }
+                    }
+                ],
+                "responses":{
+                    "200":{
+                        "description": "List of group permission activities retrieved successfully.",
+                        "content":{
+                            "application/json":{
+                                "schema":{
+                                    "$ref": "#/components/schemas/ApiGetGrouppermissionActivityLogs"
+                                }
+                            }
+                        }
+                    },
+                    "204":{
+                        "description": "Log is empty",
+                        "content": {}
+                    },
+                    "400": {
+                        "description": "Invalid log module",
+                        "content": {}
+                    },
+                    "401":{
+                        "description":"Access denied",
+                        "content":{}
+                    },
+                    "405": {
+                        "description": "Request type was not GET.",
+                        "content": {}
+                    }
+                }
+            }
+        },
+        "/v5.0/activity-logs?activitymodule=user":{
+            "get":{
+                "tags":[
+                    "Audit Logs"
+                ],
+                "summary": "User Activity Logs",
+                "description": "With this endpoint, site administrator can retrieve the list of activities performed in user module.",
+                "operationId": "ActivityLogs_GetUserActivityLogs",
+                "parameters":[
+                    {
+                        "type": "string",
+                        "name": "activity",
+                        "in": "query",
+                        "required": false,
+                        "description": "You can either ignore this or only pass the single activity value. <br/>Values allowed are <code>Add, Update, Delete, Sychroniztion, Import, Visit</code>",
+                        "schema": {
+                            "type": "string",
+                            "nullable": false
+                        }
+                    },
+                    {
+                        "type": "string",
+                        "name": "startDate",
+                        "in": "query",
+                        "required": false,
+                        "description": "Specify the UTC start date to filter the logs with a particular date range.<br /> The format should be ISO 8601 i.e. `yyyy-MM-ddTHH:mm:ssZ`.",
+                        "format":"date-time",
+                        "schema": {
+                            "type": "string",
+                            "nullable": false
+                        }
+                    },
+                    {
+                        "type": "string",
+                        "name": "endDate",
+                        "in": "query",
+                        "required": false,
+                        "description": "Specify the UTC end date to filter the logs with a particular date range.<br /> The format should be ISO 8601 i.e. `yyyy-MM-ddTHH:mm:ssZ`.",
+                        "format":"date-time",
+                        "schema": {
+                            "type": "string",
+                            "nullable": false
+                        }
+                    }
+                ],
+                "responses":{
+                    "200":{
+                        "description": "List of user activities retrieved successfully.",
+                        "content":{
+                            "application/json":{
+                                "schema":{
+                                    "$ref": "#/components/schemas/ApiGetUserActivityLogs"
+                                }
+                            }
+                        }
+                    },
+                    "204":{
+                        "description": "Log is empty",
+                        "content": {}
+                    },
+                    "400": {
+                        "description": "Invalid log module",
+                        "content": {}
+                    },
+                    "401":{
+                        "description":"Access denied",
+                        "content":{}
+                    },
+                    "405": {
+                        "description": "Request type was not GET.",
+                        "content": {}
+                    }
+                }
+            }
+        },
+        "/v5.0/activity-logs?activitymodule=userpermission":{
+            "get":{
+                "tags":[
+                    "Audit Logs"
+                ],
+                "summary": "User Permission Activity Logs",
+                "description": "With this endpoint, site administrator can retrieve the list of activities performed in user permission module.",
+                "operationId": "ActivityLogs_GetUserPermissionActivityLogs",
+                "parameters":[
+                    {
+                        "type": "string",
+                        "name": "activity",
+                        "in": "query",
+                        "required": false,
+                        "description": "You can either ignore this or only pass the single activity value. <br/>Values allowed are <code>PermissionAdded, PermissionRemoved</code>",
+                        "schema": {
+                            "type": "string",
+                            "nullable": false
+                        }
+                    },
+                    {
+                        "type": "string",
+                        "name": "startDate",
+                        "in": "query",
+                        "required": false,
+                        "description": "Specify the UTC start date to filter the logs with a particular date range.<br /> The format should be ISO 8601 i.e. `yyyy-MM-ddTHH:mm:ssZ`.",
+                        "format":"date-time",
+                        "schema": {
+                            "type": "string",
+                            "nullable": false
+                        }
+                    },
+                    {
+                        "type": "string",
+                        "name": "endDate",
+                        "in": "query",
+                        "required": false,
+                        "description": "Specify the UTC end date to filter the logs with a particular date range.<br /> The format should be ISO 8601 i.e. `yyyy-MM-ddTHH:mm:ssZ`.",
+                        "format":"date-time",
+                        "schema": {
+                            "type": "string",
+                            "nullable": false
+                        }
+                    }
+                ],
+                "responses":{
+                    "200":{
+                        "description": "List of user permission activities retrieved successfully.",
+                        "content":{
+                            "application/json":{
+                                "schema":{
+                                    "$ref": "#/components/schemas/ApiGetUserPermissionActivityLogs"
+                                }
+                            }
+                        }
+                    },
+                    "204":{
+                        "description": "Log is empty",
+                        "content": {}
+                    },
+                    "400": {
+                        "description": "Invalid log module",
+                        "content": {}
+                    },
+                    "401":{
+                        "description":"Access denied",
+                        "content":{}
+                    },
+                    "405": {
+                        "description": "Request type was not GET.",
+                        "content": {}
+                    }
+                }
+            }
+        },
+        "/v5.0/activity-logs?activitymodule=comment":{
+            "get":{
+                "tags":[
+                    "Audit Logs"
+                ],
+                "summary": "Comment Activity Logs",
+                "description": "With this endpoint, site administrator can retrieve the list of activities performed in the dashboard comment module.",
+                "operationId": "ActivityLogs_GetCommentActivityLogs",
+                "parameters":[
+                    {
+                        "type": "string",
+                        "name": "activity",
+                        "in": "query",
+                        "required": false,
+                        "description": "You can either ignore this or only pass the single activity value. <br/>Values allowed are <code>Added, Edited, Deleted, Replied, UserMention</code>",
+                        "schema": {
+                            "type": "string",
+                            "nullable": false
+                        }
+                    },
+                    {
+                        "type": "string",
+                        "name": "startDate",
+                        "in": "query",
+                        "required": false,
+                        "description": "Specify the UTC start date to filter the logs with a particular date range.<br /> The format should be ISO 8601 i.e. `yyyy-MM-ddTHH:mm:ssZ`.",
+                        "format":"date-time",
+                        "schema": {
+                            "type": "string",
+                            "nullable": false
+                        }
+                    },
+                    {
+                        "type": "string",
+                        "name": "endDate",
+                        "in": "query",
+                        "required": false,
+                        "description": "Specify the UTC end date to filter the logs with a particular date range.<br /> The format should be ISO 8601 i.e. `yyyy-MM-ddTHH:mm:ssZ`.",
+                        "format":"date-time",
+                        "schema": {
+                            "type": "string",
+                            "nullable": false
+                        }
+                    }
+                ],
+                "responses":{
+                    "200":{
+                        "description": "List of comment activities retrieved successfully.",
+                        "content":{
+                            "application/json":{
+                                "schema":{
+                                    "$ref": "#/components/schemas/ApiGetCommentActivityLogs"
+                                }
+                            }
+                        }
+                    },
+                    "204":{
+                        "description": "Log is empty",
+                        "content": {}
+                    },
+                    "400": {
+                        "description": "Invalid log module",
+                        "content": {}
+                    },
+                    "401":{
+                        "description":"Access denied",
+                        "content":{}
+                    },
+                    "405": {
+                        "description": "Request type was not GET.",
+                        "content": {}
+                    }
+                }
+            }
+        },
+        "/v5.0/activity-logs?activitymodule=schedule":{
+            "get":{
+                "tags":[
+                    "Audit Logs"
+                ],
+                "summary": "Schedule Activity Logs",
+                "description": "With this endpoint, site administrator can retrieve the list of activities performed in schedule module.",
+                "operationId": "ActivityLogs_GetScheduleActivityLogs",
+                "parameters":[
+                    {
+                        "type": "string",
+                        "name": "activity",
+                        "in": "query",
+                        "required": false,
+                        "description": "You can either ignore this or only pass the single activity value. <br/>Values allowed are <code>Success, Failure</code>",
+                        "schema": {
+                            "type": "string",
+                            "nullable": false
+                        }
+                    },
+                    {
+                        "type": "string",
+                        "name": "startDate",
+                        "in": "query",
+                        "required": false,
+                        "description": "Specify the UTC start date to filter the logs with a particular date range.<br /> The format should be ISO 8601 i.e. `yyyy-MM-ddTHH:mm:ssZ`.",
+                        "format":"date-time",
+                        "schema": {
+                            "type": "string",
+                            "nullable": false
+                        }
+                    },
+                    {
+                        "type": "string",
+                        "name": "endDate",
+                        "in": "query",
+                        "required": false,
+                        "description": "Specify the UTC end date to filter the logs with a particular date range.<br /> The format should be ISO 8601 i.e. `yyyy-MM-ddTHH:mm:ssZ`.",
+                        "format":"date-time",
+                        "schema": {
+                            "type": "string",
+                            "nullable": false
+                        }
+                    }
+                ],
+                "responses":{
+                    "200":{
+                        "description": "List of schedule activities retrieved successfully.",
+                        "content":{
+                            "application/json":{
+                                "schema":{
+                                    "$ref": "#/components/schemas/ApiGetScheduleActivityLogs"
+                                }
+                            }
+                        }
+                    },
+                    "204":{
+                        "description": "Log is empty",
+                        "content": {}
+                    },
+                    "400": {
+                        "description": "Invalid log module",
+                        "content": {}
+                    },
+                    "401":{
+                        "description":"Access denied",
+                        "content":{}
+                    },
+                    "405": {
+                        "description": "Request type was not GET.",
+                        "content": {}
+                    }
+                }
+            }
+        },
+        "/v5.0/activity-logs?activitymodule=system":{
+            "get":{
+                "tags":[
+                    "Audit Logs"
+                ],
+                "summary": "System Activity Logs",
+                "description": "With this endpoint, site administrator can retrieve the list of activities performed in system settings module.",
+                "operationId": "ActivityLogs_GetSystemActivityLogs",
+                "parameters":[
+                    {
+                        "type": "string",
+                        "name": "activity",
+                        "in": "query",
+                        "required": false,
+                        "description": "You can either ignore this or only pass the single activity value. <br/>Values allowed are <code>Add, Update, Delete, Visit, Enable, Disable</code>",
+                        "schema": {
+                            "type": "string",
+                            "nullable": false
+                        }
+                    },
+                    {
+                        "type": "string",
+                        "name": "startDate",
+                        "in": "query",
+                        "required": false,
+                        "description": "Specify the UTC start date to filter the logs with a particular date range.<br /> The format should be ISO 8601 i.e. `yyyy-MM-ddTHH:mm:ssZ`.",
+                        "format":"date-time",
+                        "schema": {
+                            "type": "string",
+                            "nullable": false
+                        }
+                    },
+                    {
+                        "type": "string",
+                        "name": "endDate",
+                        "in": "query",
+                        "required": false,
+                        "description": "Specify the UTC end date to filter the logs with a particular date range.<br /> The format should be ISO 8601 i.e. `yyyy-MM-ddTHH:mm:ssZ`.",
+                        "format":"date-time",
+                        "schema": {
+                            "type": "string",
+                            "nullable": false
+                        }
+                    }
+                ],
+                "responses":{
+                    "200":{
+                        "description": "List of system activities retrieved successfully.",
+                        "content":{
+                            "application/json":{
+                                "schema":{
+                                    "$ref": "#/components/schemas/ApiGetSystemActivityLogs"
+                                }
+                            }
+                        }
+                    },
+                    "204":{
+                        "description": "Log is empty",
+                        "content": {}
+                    },
+                    "400": {
+                        "description": "Invalid log module",
+                        "content": {}
+                    },
+                    "401":{
+                        "description":"Access denied",
+                        "content":{}
+                    },
+                    "405": {
+                        "description": "Request type was not GET.",
+                        "content": {}
+                    }
+                }
+            }
+        },
+        "/v5.0/activity-logs?activitymodule=item":{
+            "get":{
+                "tags":[
+                    "Audit Logs"
+                ],
+                "summary": "Item Activity Logs",
+                "description": "With this endpoint, site administrator can retrieve the list of activities performed in item module.",
+                "operationId": "ActivityLogs_GetItemActivityLogs",
+                "parameters":[
+                    {
+                        "type": "string",
+                        "name": "activity",
+                        "in": "query",
+                        "required": false,
+                        "description": "You can either ignore this or only pass the single activity value. <br/>Values allowed are <code>Added, Edited, Deleted, Moved, Copied, Cloned, Trashed, Restored, Rollbacked, Visited, Downloaded</code>",
+                        "schema": {
+                            "type": "string",
+                            "nullable": false
+                        }
+                    },
+                    {
+                        "type": "string",
+                        "name": "itemType",
+                        "in": "query",
+                        "required": false,
+                        "description": "Type of the Item. <br/>Values allowed are <code>Category, Dashboard, DataSource, Schedule</code>",
+                        "schema": {
+                            "type": "string",
+                            "nullable": false
+                        }
+                    },
+                    {
+                        "type": "string",
+                        "name": "startDate",
+                        "in": "query",
+                        "required": false,
+                        "description": "Specify the UTC start date to filter the logs with a particular date range.<br /> The format should be ISO 8601 i.e. `yyyy-MM-ddTHH:mm:ssZ`.",
+                        "format":"date-time",
+                        "schema": {
+                            "type": "string",
+                            "nullable": false
+                        }
+                    },
+                    {
+                        "type": "string",
+                        "name": "endDate",
+                        "in": "query",
+                        "required": false,
+                        "description": "Specify the UTC end date to filter the logs with a particular date range.<br /> The format should be ISO 8601 i.e. `yyyy-MM-ddTHH:mm:ssZ`.",
+                        "format":"date-time",
+                        "schema": {
+                            "type": "string",
+                            "nullable": false
+                        }
+                    }
+                ],
+                "responses":{
+                    "200":{
+                        "description": "List of item activities retrieved successfully.",
+                        "content":{
+                            "application/json":{
+                                "schema":{
+                                    "$ref": "#/components/schemas/ApiGetitemActivityLogs"
+                                }
+                            }
+                        }
+                    },
+                    "204":{
+                        "description": "Log is empty",
+                        "content": {}
+                    },
+                    "400": {
+                        "description": "Invalid log module",
+                        "content": {}
+                    },
+                    "401":{
+                        "description":"Access denied",
+                        "content":{}
+                    },
+                    "405": {
+                        "description": "Request type was not GET.",
+                        "content": {}
+                    }
+                }
+            }
+        },
+        "/v5.0/settings/webhooks":{
+            "get":{
+                "tags":[
+                    "Webhooks"
+                ],
+                "summary":"Get Webhooks",
+                "description": "Using this endpoint, the user can obtain a list of webhooks.",
+                "operationId": "Webhooks_GetWebhooks",
+                "responses":{
+                    "200":{
+                        "description": "Wehbooks details have been retrived successfully.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/WehbooksSettings"
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Access denied",
+                        "content": {}
+                    },
+                    "204": {
+                        "description": "Wehbooks list is empty.",
+                        "content": {}
+                    },
+                    "405": {
+                        "description": "Request type was not GET.",
+                        "content": {}
+                    }
+                }
+            },
+            "delete":{
+                "tags":[
+                    "Webhooks"
+                ],
+                "summary":"Delete Webhook",
+                "description":"Delete the webhook.",
+                "operationId":"Delete_Webhooks",
+                "parameters":[
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Id of the webhook",
+                        "required": true,
+                        "style": "simple",
+                        "explode": false,
+                        "schema":{
+                            "type": "string",
+                            "format": "int32",
+                            "nullable": false 
+                        }
+                    }
+                ],
+                "responses":{
+                    "400": {
+                        "description": "Invalid webhook ID.",
+                        "content": {}
+                    },
+                    "401":{
+                        "description":"Access denied",
+                        "content":{}
+                    },
+                    "404": {
+                        "description": "Webhook details not found.",
+                        "content": {}
+                    },
+                    "405": {
+                        "description": "Request type was not DELETE.",
+                        "content": {}
+                    },
+                    "417": {
+                        "description": "Failed to delete webhook.",
+                        "content": {}
+                    }
+                }
+            }
         }
     },
     "components": {
@@ -7711,6 +9013,13 @@
                 }
             },
             "ApiGroupAdd": {
+                "type": "array",
+                "description": "Group detail.",
+                "items": {
+                    "$ref": "#/components/schemas/Group"
+                }
+            },
+            "Group": {
                 "required": [
                     "Name"
                 ],
@@ -9444,7 +10753,7 @@
                     },
                     "Connection": {
                         "type": "object",
-                        "description": "You need to send the connection object for each data source based on its type. Please refer its relative documentation for the connection details as follows [Web Live](/working-with-data-source/data-connectors/live-web/#connecting-bold-bi-to-web-live-data-source-via-rest-api), [MongoDB](/working-with-data-source/data-connectors/mongodb/#connecting-bold-bi-to-mongodb-data-source-via-rest-api), [amazonathena](/working-with-data-source/data-connectors/amazon-athena/#connecting-bold-bi-to-amazon-athena-data-source-via-rest-api), [amazonauroramysql](/working-with-data-source/data-connectors/amazon-aurora/#connecting-bold-bi-to-amazon-aurora-data-source-via-rest-api), [amazonaurorapostgresql](/working-with-data-source/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsmysql](/working-with-data-source/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsmariadb](/working-with-data-source/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsamazonauroramysql](/working-with-data-source/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsamazonaurorapostgresql](/working-with-data-source/data-connectors/amazon-aurora/#connecting-bold-bi-to-amazon-aurora-data-source-via-rest-api), [amazonrdspostgresql](/working-with-data-source/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdssqlserver](/working-with-data-source/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsoracle](/working-with-data-source/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [awsopensearch](/working-with-data-source/data-connectors/aws-opensearch/#connecting-bold-bi-to-aws-open-search-data-source-via-rest-api), [redshift](/working-with-data-source/data-connectors/amazon-redshift/#connecting-bold-bi-to-amazon-redshift-data-source-via-rest-api), [azuresynapseanalytics](/working-with-data-source/data-connectors/azure-synapse-analytics/#connecting-bold-bi-to-azure-synapse-analytics-data-source-via-rest-api), [cdata](/working-with-data-source/data-connectors/cdata/#connecting-bold-bi-to-cdata-data-source-via-rest-api), [clickhouse](/working-with-data-source/data-connectors/clickhouse/#connecting-bold-bi-to-clickhouse-data-source-via-rest-api), [elasticsearch](/working-with-data-source/data-connectors/elastic-search/#connecting-bold-bi-to-elastic-search-data-source-via-rest-api), [googlecloudmysql](/working-with-data-source/data-connectors/google-cloud-sql/#connecting-bold-bi-to-google-cloud-sql-data-source-via-rest-api), [googlecloudpostgresql](/working-with-data-source/data-connectors/google-cloud-sql/#connecting-bold-bi-to-google-cloud-sql-data-source-via-rest-api), [influxdb](/working-with-data-source/data-connectors/influxdb/#connecting-bold-bi-to-influxdb-data-source-via-rest-api), [mariadb](/working-with-data-source/data-connectors/mariadb/#connecting-bold-bi-to-mariadb-data-source-via-rest-api), [ssas](/working-with-data-source/data-connectors/ssas/#connecting-bold-bi-to-microsoft-sql-server-analysis-servicesssas-via-rest-api), [mysql](/working-with-data-source/data-connectors/mysql/#connecting-bold-bi-to-mysql-data-source-via-rest-api), [oracle](/working-with-data-source/data-connectors/oracle/#connecting-bold-bi-to-oracle-data-source-via-rest-api), [postgresql](/working-with-data-source/data-connectors/postgresql/#connecting-bold-bi-to-postgresql-data-source-via-rest-api), [presto](/working-with-data-source/data-connectors/presto/#connecting-bold-bi-to-presto-data-source-via-rest-api), [singlestore](/working-with-data-source/data-connectors/single-store/#connecting-bold-bi-to-singlestore-data-source-via-rest-api), [sqlserver](/working-with-data-source/data-connectors/sql-data-source/#connecting-bold-bi-to-microsoft-sql-server-data-source-via-rest-api), [snowflake](/working-with-data-source/data-connectors/snowflake/#connecting-bold-bi-to-snowflake-data-source-via-rest-api), [sparksql](/working-with-data-source/data-connectors/sparksql/#connecting-bold-bi-to-sparksql-data-source-via-rest-api), [odbc](/working-with-data-source/data-connectors/odbc/#connecting-bold-bi-to-odbc-data-source-via-rest-api), [rockset](/working-with-data-source/data-connectors/rockset/#connecting-bold-bi-to-rockset-data-source-via-rest-api)."
+                        "description": "You need to send the connection object for each data source based on its type. Please refer its relative documentation for the connection details as follows [Web Live](/working-with-data-sources/data-connectors/live-web/#connecting-bold-bi-to-web-live-data-source-via-rest-api), [MongoDB](/working-with-data-sources/data-connectors/mongodb/#connecting-bold-bi-to-mongodb-data-source-via-rest-api), [amazonathena](/working-with-data-sources/data-connectors/amazon-athena/#connecting-bold-bi-to-amazon-athena-data-source-via-rest-api), [amazonauroramysql](/working-with-data-sources/data-connectors/amazon-aurora/#connecting-bold-bi-to-amazon-aurora-data-source-via-rest-api), [amazonaurorapostgresql](/working-with-data-sources/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsmysql](/working-with-data-sources/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsmariadb](/working-with-data-sources/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsamazonauroramysql](/working-with-data-sources/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsamazonaurorapostgresql](/working-with-data-sources/data-connectors/amazon-aurora/#connecting-bold-bi-to-amazon-aurora-data-source-via-rest-api), [amazonrdspostgresql](/working-with-data-sources/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdssqlserver](/working-with-data-sources/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsoracle](/working-with-data-sources/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [awsopensearch](/working-with-data-sources/data-connectors/aws-opensearch/#connecting-bold-bi-to-aws-open-search-data-source-via-rest-api), [redshift](/working-with-data-sources/data-connectors/amazon-redshift/#connecting-bold-bi-to-amazon-redshift-data-source-via-rest-api), [azuresynapseanalytics](/working-with-data-sources/data-connectors/azure-synapse-analytics/#connecting-bold-bi-to-azure-synapse-analytics-data-source-via-rest-api), [cdata](/working-with-data-sources/data-connectors/cdata/#connecting-bold-bi-to-cdata-data-source-via-rest-api), [clickhouse](/working-with-data-sources/data-connectors/clickhouse/#connecting-bold-bi-to-clickhouse-data-source-via-rest-api), [elasticsearch](/working-with-data-sources/data-connectors/elastic-search/#connecting-bold-bi-to-elastic-search-data-source-via-rest-api), [googlecloudmysql](/working-with-data-sources/data-connectors/google-cloud-sql/#connecting-bold-bi-to-google-cloud-sql-data-source-via-rest-api), [googlecloudpostgresql](/working-with-data-sources/data-connectors/google-cloud-sql/#connecting-bold-bi-to-google-cloud-sql-data-source-via-rest-api), [influxdb](/working-with-data-sources/data-connectors/influxdb/#connecting-bold-bi-to-influxdb-data-source-via-rest-api), [mariadb](/working-with-data-sources/data-connectors/mariadb/#connecting-bold-bi-to-mariadb-data-source-via-rest-api), [ssas](/working-with-data-sources/data-connectors/ssas/#connecting-bold-bi-to-microsoft-sql-server-analysis-servicesssas-via-rest-api), [mysql](/working-with-data-sources/data-connectors/mysql/#connecting-bold-bi-to-mysql-data-source-via-rest-api), [oracle](/working-with-data-sources/data-connectors/oracle/#connecting-bold-bi-to-oracle-data-source-via-rest-api), [postgresql](/working-with-data-sources/data-connectors/postgresql/#connecting-bold-bi-to-postgresql-data-source-via-rest-api), [presto](/working-with-data-sources/data-connectors/presto/#connecting-bold-bi-to-presto-data-source-via-rest-api), [singlestore](/working-with-data-sources/data-connectors/single-store/#connecting-bold-bi-to-singlestore-data-source-via-rest-api), [sqlserver](/working-with-data-sources/data-connectors/sql-data-source/#connecting-bold-bi-to-microsoft-sql-server-data-source-via-rest-api), [snowflake](/working-with-data-sources/data-connectors/snowflake/#connecting-bold-bi-to-snowflake-data-source-via-rest-api), [sparksql](/working-with-data-sources/data-connectors/sparksql/#connecting-bold-bi-to-sparksql-data-source-via-rest-api), [odbc](/working-with-data-sources/data-connectors/odbc/#connecting-bold-bi-to-odbc-data-source-via-rest-api), [rockset](/working-with-data-sources/data-connectors/rockset/#connecting-bold-bi-to-rockset-data-source-via-rest-api)."
                     },
                     "RefreshSettings": {
                         "properties": {
@@ -9559,10 +10868,20 @@
                     },
                     "Connection": {
                         "type": "object",
-                        "description": "You need to send the connection object for each data source based on its type. Please refer its relative documentation for the connection details as follows [amazonathena](/working-with-data-source/data-connectors/amazon-athena/#connecting-bold-bi-to-amazon-athena-data-source-via-rest-api), [amazonauroramysql](/working-with-data-source/data-connectors/amazon-aurora/#connecting-bold-bi-to-amazon-aurora-data-source-via-rest-api), [amazonaurorapostgresql](/working-with-data-source/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsmysql](/working-with-data-source/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsmariadb](/working-with-data-source/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsamazonauroramysql](/working-with-data-source/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsamazonaurorapostgresql](/working-with-data-source/data-connectors/amazon-aurora/#connecting-bold-bi-to-amazon-aurora-data-source-via-rest-api), [amazonrdspostgresql](/working-with-data-source/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdssqlserver](/working-with-data-source/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsoracle](/working-with-data-source/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [awsopensearch](/working-with-data-source/data-connectors/aws-opensearch/#connecting-bold-bi-to-aws-open-search-data-source-via-rest-api), [redshift](/working-with-data-source/data-connectors/amazon-redshift/#connecting-bold-bi-to-amazon-redshift-data-source-via-rest-api), [azuresynapseanalytics](/working-with-data-source/data-connectors/azure-synapse-analytics/#connecting-bold-bi-to-azure-synapse-analytics-data-source-via-rest-api), [cdata](/working-with-data-source/data-connectors/cdata/#connecting-bold-bi-to-cdata-data-source-via-rest-api), [clickhouse](/working-with-data-source/data-connectors/clickhouse/#connecting-bold-bi-to-clickhouse-data-source-via-rest-api), [elasticsearch](/working-with-data-source/data-connectors/elastic-search/#connecting-bold-bi-to-elastic-search-data-source-via-rest-api), [googlecloudmysql](/working-with-data-source/data-connectors/google-cloud-sql/#connecting-bold-bi-to-google-cloud-sql-data-source-via-rest-api), [googlecloudpostgresql](/working-with-data-source/data-connectors/google-cloud-sql/#connecting-bold-bi-to-google-cloud-sql-data-source-via-rest-api), [influxdb](/working-with-data-source/data-connectors/influxdb/#connecting-bold-bi-to-influxdb-data-source-via-rest-api), [mariadb](/working-with-data-source/data-connectors/mariadb/#connecting-bold-bi-to-mariadb-data-source-via-rest-api), [ssas](/working-with-data-source/data-connectors/ssas/#connecting-bold-bi-to-microsoft-sql-server-analysis-servicesssas-via-rest-api), [mysql](/working-with-data-source/data-connectors/mysql/#connecting-bold-bi-to-mysql-data-source-via-rest-api), [oracle](/working-with-data-source/data-connectors/oracle/#connecting-bold-bi-to-oracle-data-source-via-rest-api), [postgresql](/working-with-data-source/data-connectors/postgresql/#connecting-bold-bi-to-postgresql-data-source-via-rest-api), [presto](/working-with-data-source/data-connectors/presto/#connecting-bold-bi-to-presto-data-source-via-rest-api), [singlestore](/working-with-data-source/data-connectors/single-store/#connecting-bold-bi-to-singlestore-data-source-via-rest-api), [sqlserver](/working-with-data-source/data-connectors/sql-data-source/#connecting-bold-bi-to-microsoft-sql-server-data-source-via-rest-api), [snowflake](/working-with-data-source/data-connectors/snowflake/#connecting-bold-bi-to-snowflake-data-source-via-rest-api), [sparksql](/working-with-data-source/data-connectors/sparksql/#connecting-bold-bi-to-sparksql-data-source-via-rest-api), [odbc](/working-with-data-source/data-connectors/odbc/#connecting-bold-bi-to-odbc-data-source-via-rest-api), [rockset](/working-with-data-source/data-connectors/rockset/#connecting-bold-bi-to-rockset-data-source-via-rest-api)."
+                        "description": "You need to send the connection object for each data source based on its type. Please refer its relative documentation for the connection details as follows [amazonathena](/working-with-data-sources/data-connectors/amazon-athena/#connecting-bold-bi-to-amazon-athena-data-source-via-rest-api), [amazonauroramysql](/working-with-data-sources/data-connectors/amazon-aurora/#connecting-bold-bi-to-amazon-aurora-data-source-via-rest-api), [amazonaurorapostgresql](/working-with-data-sources/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsmysql](/working-with-data-sources/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsmariadb](/working-with-data-sources/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsamazonauroramysql](/working-with-data-sources/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsamazonaurorapostgresql](/working-with-data-sources/data-connectors/amazon-aurora/#connecting-bold-bi-to-amazon-aurora-data-source-via-rest-api), [amazonrdspostgresql](/working-with-data-sources/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdssqlserver](/working-with-data-sources/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsoracle](/working-with-data-sources/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [awsopensearch](/working-with-data-sources/data-connectors/aws-opensearch/#connecting-bold-bi-to-aws-open-search-data-source-via-rest-api), [redshift](/working-with-data-sources/data-connectors/amazon-redshift/#connecting-bold-bi-to-amazon-redshift-data-source-via-rest-api), [azuresynapseanalytics](/working-with-data-sources/data-connectors/azure-synapse-analytics/#connecting-bold-bi-to-azure-synapse-analytics-data-source-via-rest-api), [cdata](/working-with-data-sources/data-connectors/cdata/#connecting-bold-bi-to-cdata-data-source-via-rest-api), [clickhouse](/working-with-data-sources/data-connectors/clickhouse/#connecting-bold-bi-to-clickhouse-data-source-via-rest-api), [elasticsearch](/working-with-data-sources/data-connectors/elastic-search/#connecting-bold-bi-to-elastic-search-data-source-via-rest-api), [googlecloudmysql](/working-with-data-sources/data-connectors/google-cloud-sql/#connecting-bold-bi-to-google-cloud-sql-data-source-via-rest-api), [googlecloudpostgresql](/working-with-data-sources/data-connectors/google-cloud-sql/#connecting-bold-bi-to-google-cloud-sql-data-source-via-rest-api), [influxdb](/working-with-data-sources/data-connectors/influxdb/#connecting-bold-bi-to-influxdb-data-source-via-rest-api), [mariadb](/working-with-data-sources/data-connectors/mariadb/#connecting-bold-bi-to-mariadb-data-source-via-rest-api), [ssas](/working-with-data-sources/data-connectors/ssas/#connecting-bold-bi-to-microsoft-sql-server-analysis-servicesssas-via-rest-api), [mysql](/working-with-data-sources/data-connectors/mysql/#connecting-bold-bi-to-mysql-data-source-via-rest-api), [oracle](/working-with-data-sources/data-connectors/oracle/#connecting-bold-bi-to-oracle-data-source-via-rest-api), [postgresql](/working-with-data-sources/data-connectors/postgresql/#connecting-bold-bi-to-postgresql-data-source-via-rest-api), [presto](/working-with-data-sources/data-connectors/presto/#connecting-bold-bi-to-presto-data-source-via-rest-api), [singlestore](/working-with-data-sources/data-connectors/single-store/#connecting-bold-bi-to-singlestore-data-source-via-rest-api), [sqlserver](/working-with-data-sources/data-connectors/sql-data-source/#connecting-bold-bi-to-microsoft-sql-server-data-source-via-rest-api), [snowflake](/working-with-data-sources/data-connectors/snowflake/#connecting-bold-bi-to-snowflake-data-source-via-rest-api), [sparksql](/working-with-data-sources/data-connectors/sparksql/#connecting-bold-bi-to-sparksql-data-source-via-rest-api), [odbc](/working-with-data-sources/data-connectors/odbc/#connecting-bold-bi-to-odbc-data-source-via-rest-api), [rockset](/working-with-data-sources/data-connectors/rockset/#connecting-bold-bi-to-rockset-data-source-via-rest-api)."
                     }
                 },
                 "description": "Data Source details."
+            },
+            "ApiCreateUserFilter": {
+                "type": "object",
+                "properties": {
+                    "BasicFilters": {
+                        "type": "object",
+                        "description": "You need to send the user filter object. Please refer to its related documentation for the user filter details as follows [userfilter](/working-with-data-sources/user-filter/user-filter-manual.md)"
+                    }
+                },
+                "description": "User filter details."
             },
             "ApiCopyDataSourceRequestV4": {
                 "required": [
@@ -9777,10 +11096,6 @@
                     "ViewName": {
                         "type": "string",
                         "description": "View Name."
-                    },
-                    "IsMultiDashboard": {
-                        "type": "boolean",
-                        "description": "Returns true, if the dashboard is multi-dashboard."
                     },
                     "IsActive": {
                         "type": "boolean",
@@ -10854,6 +12169,137 @@
               },
               "description": "Copy the pinboard request details."
             },
+            "ApiGetPinboardPaginatedResponse": {
+                "type": "object",
+                "properties": {
+                    "Data":{
+                        "type": "array",
+                        "description" : "Returns data from the API.",
+                        "items":{
+                            "$ref": "#/components/schemas/PinboardItemsResponse"
+                        }
+                    },
+                    "TotalResults": {
+                        "type": "integer",
+                        "description": "Returns items count of the API request.",
+                        "format": "int32"
+                    },
+                    "Links": {
+                        "type": "array",
+                        "description": "Returns pagination links.",
+                        "items": {
+                            "$ref": "#/components/schemas/Links"
+                        }
+                    }
+                }
+            },
+            "PinboardItemsResponse":{
+                "type": "object",
+                "properties": {
+                    "CreatedDate": {
+                        "type": "string",
+                        "description": "Date created of the pinboard in string format.",
+                        "format": "datetime"
+                    },
+                    "ColumnInfo":{
+                        "type": "object",
+                        "description": "Specifies the details of the widget and dashboard.",
+                        "allOf": [
+                            {
+                                "$ref": "#/components/schemas/ApiColumnInfo"
+                            }
+                        ]
+                    },
+                    "Id": {
+                        "type": "string",
+                        "description": "Specifies the item ID of the pinboard.",
+                        "format": "guid"
+                    },
+                    "IsDefaultHomepage":{
+                        "type": "boolean",
+                        "description": "Returns true, if it is default homepage."
+                    },
+                    "ItemType": {
+                        "type": "string",
+                        "description": "Item type.<br />The possible values are <code>Widget</code>"
+                    },
+                    "ModifiedDate": {
+                        "type": "string",
+                        "description": "Date modified of item in string format."
+                    },
+                    "Name": {
+                        "type": "string",
+                        "description": "Specifies the name of the pinboard."
+                    }
+                }
+            },
+            "ApiColumnInfo":{
+                "type": "object",
+                "properties": {
+                   "Column": {
+                    "type": "array",
+                    "description":"Specifies the details of the widget column.",
+                    "items":{
+                        "$ref":"#/components/schemas/Column"
+                    }
+                },
+                "Layout":{
+                    "type": "integer",
+                    "description": "Specifies the layout."
+                }
+                }
+            }, 
+            "Column":{
+                "type": "object",
+                "properties": {
+                    "Item":{
+                        "type": "array",
+                        "description": "Specifies the details of each widget item.",
+                        "items":{
+                            "$ref": "#/components/schemas/WidgetDetails"
+                        }
+                    }
+                }
+            },
+            "WidgetDetails":{
+                "type": "object",
+                "properties": {
+                    "Id": {
+                        "type": "string",
+                        "description": "Specifies the widget ID.",
+                        "format": "guid"
+                    },
+                    "IsActive": {
+                        "type": "boolean",
+                        "description": "Returns true, if the item is active."
+                    },
+                    "ItemId": {
+                        "type": "string",
+                        "description": "Specifies the ID of the dashboard.",
+                        "format": "guid"
+                    },
+                    "ItemName": {
+                        "type": "string",
+                        "description": "Specifies the name of the dashboard."
+                    },
+                    "CategoryName": {
+                        "type": "string",
+                        "description": "Specifies the name of the category."
+                    },
+                    "Name": {
+                        "type": "string",
+                        "description": "Specifies the name of the widget."
+                    },
+                    "Path": {
+                        "type": "string",
+                        "description": "Specifies the version path of the pinned widget." 
+                    },
+                    "WidgetType": {
+                        "type": "string",
+                        "description": "Specifies the type of the widget."
+                    }
+                }
+            },
             "ApiUpdateEmbedPinboard": {
               "type": "object",
               "required": [
@@ -11220,26 +12666,26 @@
             },
             "ApiUpdateEmailSettings": {
               "required": [
-                "SMTPServer",
-                "SMTPPort",
-                "SenderName",
                 "SenderEmailAddress",
-                "AuthenticationType",
-                "EnableSSL"
+                "AuthenticationType"
               ],
               "type": "object",
               "properties": {
+                "EmailAccount":{
+                    "type": "string",
+                    "description": "Specify the email account.<br />Values allowed are <code>SMTP, Microsoft365</code> <br /> Default value is <code>SMTP</code>"
+                },
                 "SMTPServer": {
                   "type": "string",
-                  "description": "Specify the SMTP server name."
+                  "description": "Specify the SMTP server name.<br />Applicable only for <code>SMTP</code>."
                 },
                 "SMTPPort": {
                   "type": "string",
-                  "description": "Specify the SMTP port number."
+                  "description": "Specify the SMTP port number.<br />Applicable only for <code>SMTP</code>."
                 },
                 "SenderName": {
                   "type": "string",
-                  "description": "Specify the Sender name for the email."
+                  "description": "Specify the Sender name for the email.<br />Applicable only for <code>SMTP</code>."
                 },
                 "SenderEmailAddress": {
                   "type": "string",
@@ -11247,20 +12693,32 @@
                 },
                 "AuthenticationType": {
                   "type": "string",
-                  "description": "Specify the Authentication type of the email.<br />Values allowed are <code>Basic, Anonymous.</code>"
+                  "description": "Specify the Authentication type of the email.<br />Values allowed are <code>Basic, Anonymous, OAuth</code> <br /> OAuth only applicable for <code>Microsoft365</code>"
                 },
                 "Username": {
                   "type": "string",
-                  "description": "Specify the Username for Basic Authentication type."
+                  "description": "Specify the Username for Basic Authentication type.<br />Applicable only for <code>SMTP</code>."
                 },
                 "Password": {
                   "type": "string",
-                  "description": "Specify the Password for Basic Authentication type."
+                  "description": "Specify the Password for Basic Authentication type.<br />Applicable only for <code>SMTP</code>."
                 },
                 "EnableSSL": {
                   "type": "boolean",
-                  "description": "Specify true to enable SSL to connect with SMTP server.",
+                  "description": "Specify true to enable SSL to connect with SMTP server.<br />Applicable only for <code>SMTP</code>.",
                   "nullable": true
+                },
+                "TenantId": {
+                    "type": "string",
+                    "description": "Specify the Tenant name.<br />Applicable only for <code>Microsoft365</code>."
+                },
+                "ClientId": {
+                    "type": "string",
+                    "description": "Specify the Client id.<br />Applicable only for <code>Microsoft365</code>."
+                },
+                "ClientSecret": {
+                    "type": "string",
+                    "description": "Specify the Client secret.<br />Applicable only for <code>Microsoft365</code>."
                 }
               }
             },
@@ -11598,14 +13056,19 @@
                   "format": "int32"
                 },
                 "PermissionEntity": {
-                  "type": "string",
-                  "description": "Specify an entity of item for permission.<br />Values allowed are <code>AllCategories, SpecificCategory, AllSchedules, SpecificSchedule, AllDashboards, DashboardsInCategory, SpecificDashboard</code>"
+                    "type": "string",
+                    "description": "Specify an entity of item for permission.<br />Values allowed are <code>AllCategories, SpecificCategory, AllSchedules, SpecificSchedule, AllDashboards, DashboardsInCategory, SpecificDashboard, AllDataSources, SpecificDataSource, AllSlideshow, SpecificSlideshow, AllPermissions , SpecificPermissions, AllSettings, SpecificSettings, AllGroups, SpecificGroup, UserandGroups</code>"
                 },
                 "ItemId": {
                   "type": "string",
                   "description": "Specify the item ID while assigning permission to particular item.",
                   "format": "guid",
                   "nullable": true
+                },
+                "ScopeId":{
+                    "type": "string",
+                    "description": "Specify the group ID, settings name or item type to add. <br />Values allowed are </br> SpecificGroup - <code>Specify the group ID</code> </br> SpecificSettings - <code>Category, Dashboard, Datasource, Schedule, Slideshow</code> </br> SpecificPermissions - <code>SiteSettings, DashboardSettings, EmbedSettings, DataStoreSettings, Connectors, Email, Accounts, UserDirectorySettings, AuthenticationSettings, NotificationSettings, Widgets, Security,  CORSPolicySettings, LookAndFeel, SiteCredentials</code>.",
+                    "nullable":true
                 }
               },
               "description": "Permission details."
@@ -11654,34 +13117,149 @@
               "description": "User permission details."
             },
             "ApiGroupPermissionAdd": {
-              "required": [
-                "PermissionAccess",
-                "GroupId",
-                "PermissionEntity"
-              ],
-              "type": "object",
-              "properties": {
-                "PermissionAccess": {
-                  "type": "string",
-                  "description": "Specify an access type for item.<br />Values allowed are <code>Create, Read, ReadWrite, ReadWriteDelete</code>"
-                },
-                "GroupId": {
-                  "type": "integer",
-                  "description": "Group ID.",
-                  "format": "int32"
-                },
-                "PermissionEntity": {
-                  "type": "string",
-                  "description": "Specify an entity of item for permission.<br />Values allowed are <code>AllCategories, SpecificCategory, AllSchedules, SpecificSchedule, AllDashboards, DashboardsInCategory, SpecificDashboard</code>"
-                },
-                "ItemId": {
-                  "type": "string",
-                  "description": "Specify the item ID while assigning permission to particular item.",
-                  "format": "guid",
-                  "nullable": true
+                "required":[
+                    "GroupId",
+                    "Permission"
+                ],
+                "type": "object",
+                "properties": {
+                  "GroupId": {
+                    "type": "integer",
+                    "description": "Group ID.",
+                    "format": "int32"
+                  },
+                  "Permission": {
+                      "type" : "array",
+                      "description": "Specify the details of the group permissions.", 
+                      "items":{
+                          "$ref":"#/components/schemas/Permission"
+                        }
+                    }
                 }
-              },
-              "description": "Permission details."
+            },
+            "Permission": {
+                  "type": "object",
+                  "properties":{
+                  "PermissionAccess": {
+                      "type": "string",
+                      "description": "Specify an access type for item.<br />Values allowed are <code>Create, Read, ReadWrite, ReadWriteDelete, Manage</code>"
+                    },
+                  "PermissionEntity": {
+                    "type": "string",
+                    "description": "Specify an entity of item for permission.<br />Values allowed are <code>AllCategories, SpecificCategory, AllSchedules, SpecificSchedule, AllDashboards, DashboardsInCategory, SpecificDashboard, AllDataSources, SpecificDataSource, AllSlideshow, SpecificSlideshow, AllPermissions , SpecificPermissions, AllSettings, SpecificSettings, AllGroups, SpecificGroup, UserandGroups</code>"
+                  },
+                  "ItemId": {
+                    "type": "string",
+                    "description": "Specify the item ID while assigning permission to particular item.",
+                    "format": "guid",
+                    "nullable": true
+                  },
+                  "ScopeId":{
+                    "type": "string",
+                    "description": "Specify the group name, settings name or item type to add. <br/>Values  allowed are </br> SpecificGroup - <code>Specify the group name</code> </br> SpecificSettings - <code>Category, Dashboard, Datasource, Schedule, Slideshow</code> </br> SpecificPermissions - <code>SiteSettings, DashboardSettings, EmbedSettings, DataStoreSettings, Connectors, Email, Accounts, UserDirectorySettings, AuthenticationSettings, NotificationSettings, Widgets, Security,  CORSPolicySettings, LookAndFeel, SiteCredentials</code>.",
+                    "nullable":true
+                  }
+                }
+            },
+            "BulkGroupPermission":{
+                "type": "object",
+                "properties":{
+                    "AddedPermissions": {
+                        "type": "array",
+                        "description": "Specifies the added permission details.",
+                        "items":{
+                            "$ref":"#/components/schemas/AddedPermission"
+                        }
+                    },
+                    "FailedPermissions":{
+                        "type": "array",
+                        "description": "Specifies the failed permission details.",
+                        "items":{
+                            "$ref":"#/components/schemas/FailedPermission"
+                        }
+                    }
+                }
+            },
+            "AddedPermission": {
+                "type": "object",
+                "properties": {
+                    "GroupId": {
+                        "type": "integer",
+                        "description": "Specifies the group ID."
+                    },
+                    "Permission": {
+                        "type": "array",
+                        "description": "Specifies the group permission details.",
+                        "items":{
+                            "$ref":"#/components/schemas/BulkGroupAddPermission"
+                        }
+                    }
+                }
+            },
+            "FailedPermission":{
+                "type": "object",
+                "properties":{
+                    "GroupId":{
+                        "type": "integer",
+                        "description": "Specifies the group ID."
+                    },
+                    "FailedGroupPermissions":
+                    {
+                        "type": "array",
+                        "description": "Specifies the group permission details.",
+                        "items": {
+                            "$ref":"#/components/schemas/BulkGroupFailedPermissions"
+                        }
+                    }
+                }
+            },
+            "BulkGroupAddPermission":{
+                "type":"object",
+                "properties": {
+                    "PermissionAccess": {
+                        "type": "string",
+                        "description": "Specifies an access type for item.<br />The possible values are <code>Create, Read, ReadWrite, ReadWriteDelete, Manage</code>"
+                    },
+                    "PermissionEntity": {
+                      "type": "string",
+                      "description": "Specifies an entity of item for permission.<br />The possible values are <code>AllCategories, SpecificCategory, AllSchedules, SpecificSchedule, AllDashboards, DashboardsInCategory, SpecificDashboard, AllDataSources, SpecificDataSource, AllSlideshow, SpecificSlideshow, AllPermissions , SpecificPermissions, AllSettings, SpecificSettings, AllGroups, SpecificGroup, UserandGroups</code>"
+                    },
+                    "ItemId": {
+                        "type": "string",
+                        "description": "Specifies the item ID.",
+                        "format": "guid"
+                    },
+                    "ScopeId": {
+                        "type": "string",
+                        "description": "Specifies the Scope ID of the added permission type."
+                    }
+                }
+            },
+            "BulkGroupFailedPermissions":{
+                "type":"object",
+                "properties": {
+                    "PermissionAccess": {
+                        "type": "string",
+                        "description": "Specifies an access type for item.<br />The possible values are <code>Create, Read, ReadWrite, ReadWriteDelete, Manage</code>"
+                    },
+                    "PermissionEntity": {
+                      "type": "string",
+                      "description": "Specifies an entity of item for permission.<br />The possible values are <code>AllCategories, SpecificCategory, AllSchedules, SpecificSchedule, AllDashboards, DashboardsInCategory, SpecificDashboard, AllDataSources, SpecificDataSource, AllSlideshow, SpecificSlideshow, AllPermissions , SpecificPermissions, AllSettings, SpecificSettings, AllGroups, SpecificGroup, UserandGroups</code>"
+                    },
+                    "ItemId": {
+                        "type": "string",
+                        "description": "Specifies the item ID.",
+                        "format": "guid"
+                    },
+                    "ScopeId": {
+                        "type": "string",
+                        "description": "Specifies the Scope ID of the added permission type."
+                    },
+                    "Message": {
+                        "type": "string",
+                        "description": "Specifies the error message of the permission."
+                    }
+                }
             },
             "ApiGroupPermissionDetail": {
               "type": "object",
@@ -12304,32 +13882,37 @@
                     "StyleSource": {
                         "type": "string",
                         "description": "Specified Style-Source directive allows access to the style resource only from URLs.\n\n**Note:** Multiple Style-source are allowed using a comma separator.",
-                        "example": "https://test1.boldbi.com, https://test2.boldbi.com "
+                        "example": "https://test1.boldbi.com,https://test2.boldbi.com "
                     },
                     "ScriptSource": {
                         "type": "string",
                         "description": "Specified Script-Source directive allows access to the script resource only from URLs.\n\n**Note:** Multiple Script-source are allowed using a comma separator.",
-                        "example": "https://test1.boldbi.com, https://test2.boldbi.com "
+                        "example": "https://test1.boldbi.com,https://test2.boldbi.com "
                     },
                     "FontSource": {
                         "type": "string",
                         "description": "Specified Font-Source directive allows access to the font resource only from URLs.\n\n**Note:** Multiple Font-source are allowed using a comma separator.",
-                        "example": "https://test1.boldbi.com, https://test2.boldbi.com "
+                        "example": "https://test1.boldbi.com,https://test2.boldbi.com "
                     },
                     "ImageSource": {
                         "type": "string",
                         "description": "Specified Image-Source directive allows access to the image resource only from URLs.\n\n**Note:** Multiple Image-source are allowed using a comma separator.",
-                        "example": "https://test1.boldbi.com, https://test2.boldbi.com "
+                        "example": "https://test1.boldbi.com,https://test2.boldbi.com "
                     },
                     "ConnectSource": {
                         "type": "string",
                         "description": "Specified Connect-Source directive allows the source to make Fetch/XHR requests only from URLs.\n\n**Note:** Multiple connect-source are allowed using a comma separator.",
-                        "example": "https://test1.boldbi.com, https://test2.boldbi.com "
+                        "example": "https://test1.boldbi.com,https://test2.boldbi.com "
                     },
                     "FrameSource": {
                         "type": "string",
                         "description": "Specified Frame-Source directive allows access to the frame resource only from URLs.\n\n**Note:** Multiple Frame-source are allowed using a comma separator.",
-                        "example": "https://test1.boldbi.com, https://test2.boldbi.com "
+                        "example": "https://test1.boldbi.com,https://test2.boldbi.com "
+                    },
+                    "FrameAncestors":{
+                        "type": "string",
+                        "description": "Specified Frame-Ancestors directive allows access to valid parent domains that may embed a dashboard or complete application from URLs.\n\n**Note:** Multiple Frame-Ancestors are allowed using a comma separator.",
+                        "example": "https://test1.boldbi.com,https://test2.boldbi.com"
                     }
                 }
             },
@@ -12500,6 +14083,10 @@
             "ApiEmailSettings": {
               "type": "object",
               "properties": {
+                "EmailAccount":{
+                    "type": "string",
+                    "description": "Email account.<br />Values allowed are <code>SMTP, Microsoft365</code>"
+                },
                 "SMTPServer": {
                   "type": "string",
                   "description": "SMTP server name."
@@ -12518,7 +14105,7 @@
                   },
                   "AuthenticationType": {
                     "type": "string",
-                    "description": "The authentication type of the email.<br />Values allowed are <code>Basic, Anonymous.</code>"
+                    "description": "The authentication type of the email.<br /> Values allowed are <code>Basic, Anonymous, OAuth</code> "
                   },
                   "Username": {
                       "type": "string",
@@ -12528,7 +14115,15 @@
                     "type": "boolean",
                     "description": "Returns true to enable SSL to connect with SMTP server.",
                     "nullable": true
-                  }
+                  },
+                  "TenantId": {
+                    "type": "string",
+                    "description": "Tenant id."
+                  },
+                  "ClientId": {
+                    "type": "string",
+                    "description": "Client id."
+                 }
               }
             },
             "ApiCorsSettings": {
@@ -13197,6 +14792,337 @@
                     }
                 }
             },
+            "ApiGetOAuthSettings": {
+                "type": "object",
+                "properties": {
+                    "IsEnabled": {
+                        "type": "boolean",
+                        "description": "Returns true if the OAuth settings are enabled."
+                    },
+                    "ProviderLogo": {
+                        "type": "string",
+                        "description": "Content of the provider logo."
+                    },
+                    "LogoType": {
+                        "type": "string",
+                        "description": "Type of the logo."
+                    },
+                    "ProviderName": {
+                        "type": "string",
+                        "description": "Name of the provider."
+                    },
+                    "ClientId": {
+                        "type": "string",
+                        "description": "Client ID for the OAuth provider."
+                    },
+                    "AuthorizationEndPoint": {
+                        "type": "string",
+                        "description": "URL for the authorization endpoint."
+                    },
+                    "TokenEndPoint": {
+                        "type": "string",
+                        "description": "URL of the token endpoint."
+                    },
+                    "TokenEndPointMethod": {
+                        "type": "string",
+                        "description": "HTTP methods are used for the token endpoint. </br>The possible values are<code>GET, POST</code>"
+                    },
+                    "UserInfoEndPoint": {
+                        "type": "string",
+                        "description": "URL for the user information endpoint."
+                    },
+                    "UserInfoEndPointMethod": {
+                        "type": "string",
+                        "description": "HTTP methods are used for the user information endpoint. </br>The possible values are<code>GET, POST</code>"
+                    },
+                    "Scopes": {
+                        "type": "string",
+                        "description": "Scopes required for OAuth authorization."
+                    },
+                    "UserInfoEmail": {
+                        "type": "string",
+                        "description": "The JSON key in claims mapped with the user's email."
+                    },
+                    "UserInfoFirstname": {
+                        "type": "string",
+                        "description": "The JSON key in claims mapped with the user's first name."
+                    },
+                    "UserInfoLastname": {
+                        "type": "string",
+                        "description": "The JSON key in claims mapped with the user's last name."
+                    },
+                    "LogoutEndPoint": {
+                        "type": "string",
+                        "description": "URL of the logout endpoint."
+                    },
+                    "RedirectURI": {
+                        "type": "string",
+                        "description": "Redirect URI for OAuth authentication."
+                    },
+                    "MobileAppRedirectURI": {
+                        "type": "string",
+                        "description": "Redirect URI for mobile app authentication."
+                    },
+                    "CanCreateAccount": {
+                        "type": "boolean",
+                        "description": "Returns true if the CanCreateAccount is enabled to create a new account."
+                    },
+                    "GroupImportSettings": {
+                        "type": "object",
+                        "description": "Details for group import settings.",
+                        "allOf": [
+                            {
+                               "$ref": "#/components/schemas/OAuthGroupImportSettings"
+                            }
+                        ]
+                    }
+                }
+            },
+            "ApiUpdateOAuthSettings": {
+                "required": [
+                    "IsEnabled",
+                    "ProviderLogo",
+                    "LogoType",
+                    "ProviderName",
+                    "ClientId",
+                    "ClientSecret",
+                    "AuthorizationEndPoint",
+                    "TokenEndPoint",
+                    "TokenEndPointMethod",
+                    "UserInfoEndPoint",
+                    "UserInfoEndPointMethod",
+                    "Scopes",
+                    "UserInfoEmail"
+                ],
+                "type": "object",
+                "properties": {
+                    "IsEnabled": {
+                        "type": "boolean",
+                        "description": "Specify true value to enable the OAuth settings."
+                    },
+                    "ProviderLogo": {
+                        "type": "string",
+                        "description": "Specify the provider logo. It should be `Base64EncodedString`"
+                    },
+                    "LogoType": {
+                        "type": "string",
+                        "description": "Specify the logo type. </br>Values allowed are <code>image/png, image/jpeg, image/svg+xml</code>"
+                    },
+                    "ProviderName": {
+                        "type": "string",
+                        "description": "Specify the name of the provider that you configure."
+                    },
+                    "ClientId": {
+                        "type": "string",
+                        "description": "Specify the Client ID of the provider."
+                    },
+                    "ClientSecret": {
+                        "type": "string",
+                        "description": "Specify the Client Secret of the provider."
+                    },
+                    "AuthorizationEndPoint": {
+                        "type": "string",
+                        "description": "Specify the authorization endpoint URL."
+                    },
+                    "TokenEndPoint": {
+                        "type": "string",
+                        "description": "Specify the token endpoint URL."
+                    },
+                    "TokenEndPointMethod": {
+                        "type": "string",
+                        "description": "Specify the token endpoint method. </br>Values allowed are <code>GET, POST</code>"
+                    },
+                    "UserInfoEndPoint": {
+                        "type": "string",
+                        "description": "Specify the user information endpoint."
+                    },
+                    "UserInfoEndPointMethod": {
+                        "type": "string",
+                        "description": "Specify the user information endpoint method. </br>Values allowed are <code>GET, POST</code>"
+                    },
+                    "Scopes": {
+                        "type": "string",
+                        "description": "Specify the scopes with comma separator for authorization. <br> For Example: 'openid', 'profile', 'email' "
+                    },
+                    "UserInfoEmail": {
+                        "type": "string",
+                        "description": "Specify the JSON key that should be mapped with the user's email."
+                    },
+                    "UserInfoFirstname": {
+                        "type": "string",
+                        "description": "Specify the JSON key that should be mapped with the user's first name."
+                    },
+                    "UserInfoLastname": {
+                        "type": "string",
+                        "description": "Specify the JSON key that should be mapped with the user's last name."
+                    },
+                    "LogoutEndPoint": {
+                        "type": "string",
+                        "description": "Specify the logout endpoint URL."
+                    },
+                    "CanCreateAccount": {
+                        "type": "boolean",
+                        "description": "Specify true if you want to create an account."
+                    },
+                    "GroupImportSettings": {
+                        "type": "object",
+                        "description": "Specify the group import settings details.",
+                        "allOf": [
+                            {
+                              "$ref": "#/components/schemas/OAuthGroupImportSettings"
+                            }
+                        ]
+                    }
+                }
+            },
+            "OAuthGroupImportSettings":{
+                "type": "object",
+                "properties": {
+                    "ProviderType": {
+                        "type": "string",
+                        "description": "Provider type to import groups settings. </br>Values allowed are <code>Cognito AWS, Auth0, Okta, OneLogin</code>"
+                    },
+                    "Setting": {
+                        "type": "object",
+                        "description": "Group import settings details. Please refer to the link [here](/faq/what-are-the-different-request-object-properties-of-group-imports-setting-for-each-oauth-and-openid-provider-type/) to learn about the details of each provider type's group import settings."
+                    }
+                }
+            },
+            "ApiGetOpenIDSettings": {
+                "type": "object",
+                "properties": {
+                    "IsEnabled": {
+                        "type": "boolean",
+                        "description": "Returns true if the OpenID settings are enabled."
+                    },
+                    "LogoType": {
+                        "type": "string",
+                        "description": "Type of the logo."
+                    },
+                    "ProviderLogo": {
+                        "type": "string",
+                        "description": "Content for the provider logo."
+                    },
+                    "ProviderName": {
+                        "type": "string",
+                        "description": "Name of the provider"
+                    },
+                    "ClientId": {
+                        "type": "string",
+                        "description": "Client ID of the OpenID provider."
+                    },
+                    "Identifier": {
+                        "type": "string",
+                        "description": "Identifier of the OpenID provider."
+                    },
+                    "Authority": {
+                        "type": "string",
+                        "description": "URL of the authority"
+                    },
+                    "LogoutUrl": {
+                        "type": "string",
+                        "description": "URL of the logout"
+                    },
+                    "RedirectURI": {
+                        "type": "string",
+                        "description": "Redirect URI for OpenID authentication."
+                    },
+                    "MobileAppRedirectURI": {
+                        "type": "string",
+                        "description": "Redirect URI for mobile app authentication."
+                    },
+                    "CanCreateAccount": {
+                        "type": "boolean",
+                        "description": "Returns true if the CanCreateAccount is enabled to create a new account."
+                    },
+                    "GroupImportSettings": {
+                        "type": "object",
+                        "description": "Details for group import settings.",
+                        "allOf": [
+                            {
+                              "$ref": "#/components/schemas/OpenIDGroupImportSettings"
+                            }
+                        ]
+                    }
+                }
+            },
+            "ApiUpdateOpenIDSettings": {
+                "required": [
+                    "IsEnabled",
+                    "ProviderLogo",
+                    "LogoType",
+                    "ProviderName",
+                    "ClientId",
+                    "ClientSecret",
+                    "Identifier",
+                    "Authority"
+                ],
+                "type": "object",
+                "properties": {
+                    "IsEnabled": {
+                        "type": "boolean",
+                        "description": "Specify true value to enable the OpenID settings."
+                    },
+                    "ProviderLogo": {
+                        "type": "string",
+                        "description": "Specify the provider logo. It should be `Base64EncodedString`"
+                    },
+                    "LogoType": {
+                        "type": "string",
+                        "description": "Specify the logo type. </br>Values allowed are <code>image/png, image/jpeg, image/svg+xml</code>"
+                    },
+                    "ProviderName": {
+                        "type": "string",
+                        "description": "Specify the name of the provider that you configure."
+                    },
+                    "ClientId": {
+                        "type": "string",
+                        "description": "Specify the Client ID of the provider."
+                    },
+                    "ClientSecret": {
+                        "type": "string",
+                        "description": "Specify the Client Secret of the provider."
+                    },
+                    "Identifier": {
+                        "type": "string",
+                        "description": "Specify the identifier."
+                    },
+                    "Authority": {
+                        "type": "string",
+                        "description": "Specify the authority URL."
+                    },
+                    "LogoutUrl": {
+                        "type": "string",
+                        "description": "Specify the logout URL."
+                    },
+                    "CanCreateAccount": {
+                        "type": "boolean",
+                        "description": "Specify true if you want to create an account."
+                    },
+                    "GroupImportSettings": {
+                        "type": "object",
+                        "description": "Specify the group import settings details.",
+                        "allOf": [
+                            {
+                        "$ref": "#/components/schemas/OpenIDGroupImportSettings"
+                            }
+                        ]
+                    }
+                }
+            },
+            "OpenIDGroupImportSettings":{
+                "type": "object",
+                "properties": {
+                    "ProviderType": {
+                        "type": "string",
+                        "description": "Provider type to import groups settings. </br>Values allowed are <code>Auth0, Okta, OneLogin</code>"
+                    },
+                    "Setting": {
+                        "type": "object",
+                        "description": "Group import settings details. Please refer to the link [here](/faq/what-are-the-different-request-object-properties-of-group-imports-setting-for-each-oauth-and-openid-provider-type/) to learn about the details of each provider type's group import settings."
+                    }
+                }
+            },
             "ApiUpdateUploadDashboard": {
                 "required": [
                     "ItemContent",
@@ -13297,7 +15223,7 @@
                     },
                     "Connection": {
                         "type": "object",
-                        "description": "Connection object of the data source. Please refer its relative documentation for the connection details as follows [Web Live](/working-with-data-source/data-connectors/live-web/#connecting-bold-bi-to-web-live-data-source-via-rest-api), [MongoDB](/working-with-data-source/data-connectors/mongodb/#connecting-bold-bi-to-mongodb-data-source-via-rest-api), [amazonathena](/working-with-data-source/data-connectors/amazon-athena/#connecting-bold-bi-to-amazon-athena-data-source-via-rest-api), [amazonauroramysql](/working-with-data-source/data-connectors/amazon-aurora/#connecting-bold-bi-to-amazon-aurora-data-source-via-rest-api), [amazonaurorapostgresql](/working-with-data-source/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsmysql](/working-with-data-source/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsmariadb](/working-with-data-source/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsamazonauroramysql](/working-with-data-source/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsamazonaurorapostgresql](/working-with-data-source/data-connectors/amazon-aurora/#connecting-bold-bi-to-amazon-aurora-data-source-via-rest-api), [amazonrdspostgresql](/working-with-data-source/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdssqlserver](/working-with-data-source/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsoracle](/working-with-data-source/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [awsopensearch](/working-with-data-source/data-connectors/aws-opensearch/#connecting-bold-bi-to-aws-open-search-data-source-via-rest-api), [redshift](/working-with-data-source/data-connectors/amazon-redshift/#connecting-bold-bi-to-amazon-redshift-data-source-via-rest-api), [azuresynapseanalytics](/working-with-data-source/data-connectors/azure-synapse-analytics/#connecting-bold-bi-to-azure-synapse-analytics-data-source-via-rest-api), [cdata](/working-with-data-source/data-connectors/cdata/#connecting-bold-bi-to-cdata-data-source-via-rest-api), [clickhouse](/working-with-data-source/data-connectors/clickhouse/#connecting-bold-bi-to-clickhouse-data-source-via-rest-api), [elasticsearch](/working-with-data-source/data-connectors/elastic-search/#connecting-bold-bi-to-elastic-search-data-source-via-rest-api), [googlecloudmysql](/working-with-data-source/data-connectors/google-cloud-sql/#connecting-bold-bi-to-google-cloud-sql-data-source-via-rest-api), [googlecloudpostgresql](/working-with-data-source/data-connectors/google-cloud-sql/#connecting-bold-bi-to-google-cloud-sql-data-source-via-rest-api), [influxdb](/working-with-data-source/data-connectors/influxdb/#connecting-bold-bi-to-influxdb-data-source-via-rest-api), [mariadb](/working-with-data-source/data-connectors/mariadb/#connecting-bold-bi-to-mariadb-data-source-via-rest-api), [ssas](/working-with-data-source/data-connectors/ssas/#connecting-bold-bi-to-microsoft-sql-server-analysis-servicesssas-via-rest-api), [mysql](/working-with-data-source/data-connectors/mysql/#connecting-bold-bi-to-mysql-data-source-via-rest-api), [oracle](/working-with-data-source/data-connectors/oracle/#connecting-bold-bi-to-oracle-data-source-via-rest-api), [postgresql](/working-with-data-source/data-connectors/postgresql/#connecting-bold-bi-to-postgresql-data-source-via-rest-api), [presto](/working-with-data-source/data-connectors/presto/#connecting-bold-bi-to-presto-data-source-via-rest-api), [singlestore](/working-with-data-source/data-connectors/single-store/#connecting-bold-bi-to-singlestore-data-source-via-rest-api), [sqlserver](/working-with-data-source/data-connectors/sql-data-source/#connecting-bold-bi-to-microsoft-sql-server-data-source-via-rest-api), [snowflake](/working-with-data-source/data-connectors/snowflake/#connecting-bold-bi-to-snowflake-data-source-via-rest-api), [sparksql](/working-with-data-source/data-connectors/sparksql/#connecting-bold-bi-to-sparksql-data-source-via-rest-api), [odbc](/working-with-data-source/data-connectors/odbc/#connecting-bold-bi-to-odbc-data-source-via-rest-api)."
+                        "description": "Connection object of the data source. Please refer its relative documentation for the connection details as follows [Web Live](/working-with-data-sources/data-connectors/live-web/#connecting-bold-bi-to-web-live-data-source-via-rest-api), [MongoDB](/working-with-data-sources/data-connectors/mongodb/#connecting-bold-bi-to-mongodb-data-source-via-rest-api), [amazonathena](/working-with-data-sources/data-connectors/amazon-athena/#connecting-bold-bi-to-amazon-athena-data-source-via-rest-api), [amazonauroramysql](/working-with-data-sources/data-connectors/amazon-aurora/#connecting-bold-bi-to-amazon-aurora-data-source-via-rest-api), [amazonaurorapostgresql](/working-with-data-sources/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsmysql](/working-with-data-sources/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsmariadb](/working-with-data-sources/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsamazonauroramysql](/working-with-data-sources/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsamazonaurorapostgresql](/working-with-data-sources/data-connectors/amazon-aurora/#connecting-bold-bi-to-amazon-aurora-data-source-via-rest-api), [amazonrdspostgresql](/working-with-data-sources/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdssqlserver](/working-with-data-sources/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsoracle](/working-with-data-sources/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [awsopensearch](/working-with-data-sources/data-connectors/aws-opensearch/#connecting-bold-bi-to-aws-open-search-data-source-via-rest-api), [redshift](/working-with-data-sources/data-connectors/amazon-redshift/#connecting-bold-bi-to-amazon-redshift-data-source-via-rest-api), [azuresynapseanalytics](/working-with-data-sources/data-connectors/azure-synapse-analytics/#connecting-bold-bi-to-azure-synapse-analytics-data-source-via-rest-api), [cdata](/working-with-data-sources/data-connectors/cdata/#connecting-bold-bi-to-cdata-data-source-via-rest-api), [clickhouse](/working-with-data-sources/data-connectors/clickhouse/#connecting-bold-bi-to-clickhouse-data-source-via-rest-api), [elasticsearch](/working-with-data-sources/data-connectors/elastic-search/#connecting-bold-bi-to-elastic-search-data-source-via-rest-api), [googlecloudmysql](/working-with-data-sources/data-connectors/google-cloud-sql/#connecting-bold-bi-to-google-cloud-sql-data-source-via-rest-api), [googlecloudpostgresql](/working-with-data-sources/data-connectors/google-cloud-sql/#connecting-bold-bi-to-google-cloud-sql-data-source-via-rest-api), [influxdb](/working-with-data-sources/data-connectors/influxdb/#connecting-bold-bi-to-influxdb-data-source-via-rest-api), [mariadb](/working-with-data-sources/data-connectors/mariadb/#connecting-bold-bi-to-mariadb-data-source-via-rest-api), [ssas](/working-with-data-sources/data-connectors/ssas/#connecting-bold-bi-to-microsoft-sql-server-analysis-servicesssas-via-rest-api), [mysql](/working-with-data-sources/data-connectors/mysql/#connecting-bold-bi-to-mysql-data-source-via-rest-api), [oracle](/working-with-data-sources/data-connectors/oracle/#connecting-bold-bi-to-oracle-data-source-via-rest-api), [postgresql](/working-with-data-sources/data-connectors/postgresql/#connecting-bold-bi-to-postgresql-data-source-via-rest-api), [presto](/working-with-data-sources/data-connectors/presto/#connecting-bold-bi-to-presto-data-source-via-rest-api), [singlestore](/working-with-data-sources/data-connectors/single-store/#connecting-bold-bi-to-singlestore-data-source-via-rest-api), [sqlserver](/working-with-data-sources/data-connectors/sql-data-source/#connecting-bold-bi-to-microsoft-sql-server-data-source-via-rest-api), [snowflake](/working-with-data-sources/data-connectors/snowflake/#connecting-bold-bi-to-snowflake-data-source-via-rest-api), [sparksql](/working-with-data-sources/data-connectors/sparksql/#connecting-bold-bi-to-sparksql-data-source-via-rest-api), [odbc](/working-with-data-sources/data-connectors/odbc/#connecting-bold-bi-to-odbc-data-source-via-rest-api)."
                     },
                     "ReplaceDataSourceId": {
                         "type": "string",
@@ -13306,6 +15232,782 @@
                     }
                 },
                 "description": "Details about the data sources."
+            },
+            "ApiWindowsADSettings": {
+                "type": "object",
+                "properties": {
+                    "Username": {
+                        "type": "string",
+                        "description": "Returns username of the Windows Active Directory."
+                    },
+                    "LdapURL": {
+                      "type": "string",
+                      "description": "Returns Ldap URL"
+                    },
+                    "EnableSsl": {
+                      "type": "boolean",
+                      "description": "Returns true if SSL was enabled."
+                    },
+                    "DistinguishedName": {
+                        "type": "string",
+                        "description": "Returns Distinguished Name"
+                    },
+                    "PortNo": {
+                        "type": "string",
+                        "description": "Returns Port Number."
+                    },
+                    "EnableGroupUserImport": {
+                        "type": "boolean",
+                        "description": "Returns true if import users from the group was enabled."
+                    }
+                }
+            },
+            "ApiUpdateWindowsADSettings": {
+                "required": [
+                  "Username",
+                  "Password",
+                  "LdapURL",
+                  "EnableSsl",
+                  "DistinguishedName",
+                  "PortNo"
+                ],
+                "type": "object",
+                "properties": {
+                  "Username": {
+                    "type": "string",
+                    "description": "Specify the user name."
+                  },
+                  "Password": {
+                    "type": "string",
+                    "description": "Specify the password"
+                  },
+                  "LdapURL": {
+                    "type": "string",
+                    "description": "Specify the Ldap url."
+                  },
+                  "EnableSsl": {
+                    "type": "string",
+                    "description": "Specify true to enable SSL."
+                  },
+                  "DistinguishedName": {
+                    "type": "string",
+                    "description": "Specify the distinguished name."
+                  },
+                  "PortNo": {
+                    "type": "string",
+                    "description": "Specify the port no."
+                  },
+                  "EnableGroupUserImport": {
+                    "type": "boolean",
+                    "description": "Specify true to enable import users from the group.\n\n**Note:** By default, the value is true."
+                  }
+                }
+            },
+            "ApiGetLinkedDatasourceDashboards": {
+                "type": "array",
+                "description": "Linked dashboard details list.",
+                "items": {
+                    "$ref": "#/components/schemas/GetLinkedDatasourceDashboards"
+                }
+            },
+            "GetLinkedDatasourceDashboards": {
+                "type": "object",
+                "properties": {
+                    "DashboardName": {
+                      "type": "string",
+                      "description": "Returns the linked dashboard name."
+                    },
+                    "CategoryName": {
+                      "type": "string",
+                      "description": "Returns the dashboard category name."
+                    },
+                    "CreatedByDisplayName": {
+                        "type": "string",
+                        "description": "Specifies the display name of the user who created the linked dashboard."
+                    },
+                    "CreatedById": {
+                        "type": "integer",
+                        "description": "Specifies the user ID of the linked dashboard creator.",
+                        "format": "int32"
+                    },
+                    "ModifiedDate": {
+                      "type": "string",
+                      "description": "Date modified of dashboard in date format.",
+                      "format": "datetime"
+                    },
+                    "CanAccess": {
+                      "type": "string",
+                      "description": "Returns true if the user has access to the dashboard."
+                    }
+                },
+                "description": "Linked dashboards details."
+            },
+            "ApiGetActivityLogs":{
+                "type": "object",
+                "properties":{
+                    "Id": {
+                        "type": "string",
+                        "description": "ID of the activity."
+                    },
+                    "ActivityModule": {
+                        "type": "string",
+                        "description": "Name of the module in which the activity was performed."
+                    },
+                    "Activity": {
+                        "type": "string",
+                        "description": "Type of activity which is performed."
+                    },
+                    "OldValue": {
+                        "type": "string",
+                        "description": "Specifies the value before update."
+                    },
+                    "NewValue":{
+                        "type": "string",
+                        "description": "Specifies the value after update."
+                    },
+                    "ModifiedById":{
+                        "type": "integer",
+                        "description": "Specifies the ID of the user who modified this item.",
+                        "format":"int32"
+                    },
+                    "ModifiedBy":{
+                        "type": "string",
+                        "description": "Specifies the name of the user who modified this item."
+                    },
+                    "GroupId":{
+                        "type": "integer",
+                        "description": "ID of the group.",
+                        "format":"int32"
+                    },
+                    "GroupName":{
+                        "type": "string",
+                        "description": "Name of the group."
+                    },
+                    "SourceTypeId":{
+                        "type": "integer",
+                        "description": "Specifies the enum value of the source type.</br>The possible values are <code>1, 2, 3</code> \n\n Note: </br> <code>1</code> - Specify the Web source type </br> <code>2</code> - Specify the API source type </br> <code>3</code> - Specify the Job source type"
+                    },
+                    "SourceType":{
+                        "type": "string",
+                        "description": "Specifies the source type.</br>The possible values are <code>Web, API, Job</code>"
+                    },
+                    "ActivityStatusId":{
+                        "type": "integer",
+                        "description": "Specifies the enum value of the activity status.</br>The possible values are <code>2, 3</code> \n\n Note: </br> <code>2</code> - Specify the Success status </br> <code>3</code> - Specify the Fail status"
+                    },
+                    "ActivityStatus":{
+                        "type": "string",
+                        "description": "Status of the activity.</br>The possible values are <code>Success, Fail</code>"
+                    },
+                    "CreatedDate":{
+                        "type":"string",
+                        "description": "Date created of item in date format.",
+                        "format": "date-time"
+                    },
+                    "IsActive":{
+                        "type": "boolean",
+                        "description": "Returns true if the item is active."
+                    },
+                    "UserId":{
+                        "type":"integer",
+                        "description": "ID of the user.",
+                        "format": "int32"
+                    },
+                    "UserName": {
+                        "type": "string",
+                        "description":"Username of the user."
+                    },
+                    "GroupPermissionId":{
+                        "type": "integer",
+                        "description": "Specifies the ID of the group permission.",
+                        "format": "int32"
+                    },
+                    "CommentId":{
+                        "type": "integer",
+                        "description": "ID of the comment.",
+                        "format": "int32"
+                    },
+                    "URl":{
+                        "type": "string",
+                        "description":"Specifies the URL of the dashboard."
+                    },
+                    "ParentCommentId":{
+                        "type":"integer",
+                        "description": "ID of the replied comment."
+                    },
+                    "NotificationTo":{
+                        "type": "integer",
+                        "description": "ID of the user who recevies the notification.",
+                        "format": "int32"
+                    },
+                    "ModifiedDate":{
+                        "type": "string",
+                        "description": "Date modified of item in date format.",
+                        "format": "date-time"
+                    },
+                    "IsRead": {
+                        "type":"boolean",
+                        "description": "Returns true if comment was read."
+                    },
+                    "ItemId":{
+                        "type": "string",
+                        "description": "ID of the item.",
+                        "format": "guid"
+                    },
+                    "ItemName":{
+                        "type": "string",
+                        "description": "Name of the item."
+                    },
+                    "ItemType":{
+                        "type":"string",
+                        "description": "Type of the item."
+                    },
+                    "ItemVersionId":{
+                        "type": "string",
+                        "description": "Specifies the version ID of the item."
+                    },
+                    "ParentId":{
+                        "type": "string",
+                        "description": "Specifies the category ID."
+                    },
+                    "CategoryName":{
+                        "type": "string",
+                        "description": "Specifies the category name."
+                    },
+                    "FromCategoryId":{
+                        "type": "string",
+                        "description": "Specifies the source category ID."
+                    },
+                    "FromCategoryName":{
+                        "type": "string",
+                        "description": "Specifies the source category name."
+                    },
+                    "ToCategoryId":{
+                        "type": "string",
+                        "description": "Specifies the destination category ID"
+                    },
+                    "ToCategoryName":{
+                        "type": "string",
+                        "description": "Specifies the destination category name."
+                    },
+                    "UserPermissionId":{
+                        "type": "string",
+                        "description": "Specifies the ID of the user permission."
+                    },
+                    "ExecutedDate": {
+                        "type": "string",
+                        "description": "Schedule executed date in date format.",
+                        "format": "date-time"
+                    },
+                    "IsOnDemand":{
+                        "type": "string",
+                        "description": "Returns true if schedule was run on-demand."
+                    },
+                    "Description": {
+                        "type": "string",
+                        "description": "Specifies the description of the item."
+                    },
+                    "ScheduleId":{
+                        "type": "string",
+                        "description": "ID of the schedule.",
+                        "format": "guid"
+                    },
+                    "ScheduleName":{
+                        "type": "string",
+                        "description": "Name of the schedule."
+                    },
+                    "ExportType":{
+                        "type":"string",
+                        "description":"Export type.<br/>The possible values are <code>Excel, Pdf, Image, CSV</code>"
+                    },
+                    "PermissionAccess":{
+                        "type": "string",
+                        "description":"Specify an access type for item.<br/>The possible values are <code>Create, Read, ReadWrite, ReadWriteDelete, Download, Manage</code>"
+                    },
+                    "PermissionEntity":{
+                        "type": "string",
+                        "description": "Specify an entity of item for permission.<br/>The possible values are </br> Create - <code>AllCategories, AllDashboards, DashboardsInCategory, AllDataSources, AllSchedules, AllGroups</code> </br> Read, ReadWrite, ReadWriteDelete - <code>AllCategories, SpecificCategory, AllDashboards, DashboardsInCategory, SpecificDashboard, AllDataSources, SpecificDataSource, AllSchedules, SpecificSchedule</code> </br> Download - <code>AllDashboards, DashboardsInCategory, SpecificDashboard</code> </br> Manage - <code>AllPermissions, SpecificPermissions, AllSettings, SpecificSettings, SpecificGroup, UserAllGroups</code>"
+                    }     
+                }
+            },
+            "ApiGetGroupActivityLogs":{
+                "type": "object",
+                "properties":{
+                    "Id": {
+                        "type": "string",
+                        "description": "ID of the activity."
+                    },
+                    "Activity": {
+                        "type": "string",
+                        "description": "Type of activity which is performed."
+                    },
+                    "OldValue": {
+                        "type": "string",
+                        "description": "Specifies the value before update."
+                    },
+                    "NewValue":{
+                        "type": "string",
+                        "description": "Specifies the value after update."
+                    },
+                    "ModifiedById":{
+                        "type": "integer",
+                        "description": "Specifies the ID of the user who modified this item.",
+                        "format":"int32"
+                    },
+                    "ModifiedBy":{
+                        "type": "string",
+                        "description": "Specifies the name of the user who modified this item."
+                    },
+                    "GroupId":{
+                        "type": "integer",
+                        "description": "ID of the group.",
+                        "format":"int32"
+                    },
+                    "GroupName":{
+                        "type": "string",
+                        "description": "Name of the group."
+                    },
+                    "SourceTypeId":{
+                        "type": "integer",
+                        "description": "Specifies the enum value of the source type.</br>The possible values are <code>1, 2, 3</code> \n\n Note: </br> <code>1</code> - Specify the Web source type </br> <code>2</code> - Specify the API source type </br> <code>3</code> - Specify the Job source type"
+                    },
+                    "SourceType":{
+                        "type": "string",
+                        "description": "Specifies the source type.</br>The possible values are <code>Web, API, Job</code>"
+                    },
+                    "ActivityStatusId":{
+                        "type": "integer",
+                        "description": "Specifies the enum value of the activity status.</br>The possible values are <code>2, 3</code> \n\n Note: </br> <code>2</code> - Specify the Success status </br> <code>3</code> - Specify the Fail status"
+                    },
+                    "ActivityStatus":{
+                        "type": "string",
+                        "description": "Status of the activity.</br>The possible values are <code>Success, Fail</code>"
+                    },
+                    "CreatedDate":{
+                        "type":"string",
+                        "description": "Date created of item in date format.",
+                        "format": "date-time"
+                    },
+                    "IsActive":{
+                        "type": "boolean",
+                        "description": "Returns true if the item is active."
+                    }
+                }
+            },
+            "ApiGetGrouppermissionActivityLogs":{
+                "type":"object",
+                "properties":{
+                     "Id": {
+                        "type": "string",
+                        "description": "ID of the activity."
+                    },
+                    "Activity": {
+                        "type": "string",
+                        "description": "Type of activity which is performed."
+                    },
+                    "ModifiedById":{
+                        "type": "integer",
+                        "description": "Specifies the ID of the user who modified this item.",
+                        "format":"int32"
+                    },
+                    "ModifiedBy":{
+                        "type": "string",
+                        "description": "Specifies the name of the user who modified this item."
+                    },
+                    "GroupId":{
+                        "type": "integer",
+                        "description": "ID of the group.",
+                        "format":"int32"
+                    },
+                    "GroupName":{
+                        "type": "string",
+                        "description": "Name of the group."
+                    },
+                    "CreatedDate":{
+                        "type":"string",
+                        "description": "Date created of item in date format.",
+                        "format": "date-time"
+                    },
+                    "IsActive":{
+                        "type": "boolean",
+                        "description": "Returns true if the item is active."
+                    },
+                    "PermissionAccess":{
+                        "type": "string",
+                        "description":"Specify an access type for item.<br/>The possible values are <code>Create, Read, ReadWrite, ReadWriteDelete, Download, Manage</code>"
+                    },
+                    "PermissionEntity":{
+                        "type": "string",
+                        "description": "Specify an entity of item for permission.<br/>The possible values are </br> Create - <code>AllCategories, AllDashboards, DashboardsInCategory, AllDataSources, AllSchedules, AllGroups</code> </br> Read, ReadWrite, ReadWriteDelete - <code>AllCategories, SpecificCategory, AllDashboards, DashboardsInCategory, SpecificDashboard, AllDataSources, SpecificDataSource, AllSchedules, SpecificSchedule</code> </br> Download - <code>AllDashboards, DashboardsInCategory, SpecificDashboard</code> </br> Manage - <code>AllPermissions, SpecificPermissions, AllSettings, SpecificSettings, SpecificGroup, UserAllGroups</code>"
+                    },
+                    "GroupPermissionId":{
+                        "type": "integer",
+                        "description": "Specifies the ID of the group permission.",
+                        "format": "int32"
+                    }     
+                }
+            },
+            "ApiGetUserActivityLogs":{
+                "type": "object",
+                "properties":{
+                    "Id": {
+                        "type": "string",
+                        "description": "ID of the activity."
+                    },
+                    "Activity": {
+                        "type": "string",
+                        "description": "Type of activity which is performed."
+                    },
+                    "OldValue": {
+                        "type": "string",
+                        "description": "Specifies the value before update."
+                    },
+                    "NewValue":{
+                        "type": "string",
+                        "description": "Specifies the value after update."
+                    },
+                    "SourceTypeId":{
+                        "type": "integer",
+                        "description": "Specifies the enum value of the source type.</br>The possible values are <code>1, 2, 3</code> \n\n Note: </br> <code>1</code> - Specify the Web source type </br> <code>2</code> - Specify the API source type </br> <code>3</code> - Specify the Job source type"
+                    },
+                    "SourceType":{
+                        "type": "string",
+                        "description": "Specifies the source type.</br>The possible values are <code>Web, API, Job</code>"
+                    },
+                    "ActivityStatusId":{
+                        "type": "integer",
+                        "description": "Specifies the enum value of the activity status.</br>The possible values are <code>2, 3</code> \n\n Note: </br> <code>2</code> - Specify the Success status </br> <code>3</code> - Specify the Fail status"
+                    },
+                    "ActivityStatus":{
+                        "type": "string",
+                        "description": "Status of the activity.</br>The possible values are <code>Success, Fail</code>"
+                    },
+                    "CreatedDate":{
+                        "type":"string",
+                        "description": "Date created of item in date format.",
+                        "format": "date-time"
+                    },
+                    "IsActive":{
+                        "type": "boolean",
+                        "description": "Returns true if the item is active."
+                    },
+                    "UserId":{
+                        "type":"integer",
+                        "description": "ID of the user.",
+                        "format": "int32"
+                    },
+                    "ModifiedById":{
+                        "type": "integer",
+                        "description": "Specifies the ID of the user who modified this item.",
+                        "format":"int32"
+                    },
+                    "ModifiedBy":{
+                        "type": "string",
+                        "description": "Specifies the name of the user who modified this item."
+                    }
+                }
+            },
+            "ApiGetUserPermissionActivityLogs":{
+                "type": "object",
+                "properties":{
+                    "Id": {
+                        "type": "string",
+                        "description": "ID of the activity."
+                    },
+                    "Activity": {
+                        "type": "string",
+                        "description": "Type of activity which is performed."
+                    },
+                    "ModifiedById":{
+                        "type": "integer",
+                        "description": "specifies the ID of the user who modified this item.",
+                        "format":"int32"
+                    },
+                    "ModifiedBy":{
+                        "type": "string",
+                        "description": "specifies the name of the user who modified this item."
+                    },
+                    "UserPermissionId":{
+                        "type": "string",
+                        "description": "Specifies the ID of the user permission."
+                    },
+                    "ItemId":{
+                        "type": "string",
+                        "description": "ID of the item.",
+                        "format": "guid"
+                    },
+                    "CreatedDate":{
+                        "type":"string",
+                        "description": "Date created of item in date format.",
+                        "format": "date-time"
+                    },
+                    "IsActive":{
+                        "type": "boolean",
+                        "description": "Returns true if the item is active."
+                    },
+                    "UserId":{
+                        "type":"integer",
+                        "description": "ID of the user.",
+                        "format": "int32"
+                    },
+                    "PermissionAccess":{
+                        "type": "string",
+                        "description":"Specify an access type for item.<br/>The possible values are <code>Create, Read, ReadWrite, ReadWriteDelete, Download, Manage</code>"
+                    },
+                    "PermissionEntity":{
+                        "type": "string",
+                        "description": "Specify an entity of item for permission.<br/>The possible values are </br> Create - <code>AllCategories, AllDashboards, DashboardsInCategory, AllDataSources, AllSchedules, AllGroups</code> </br> Read, ReadWrite, ReadWriteDelete - <code>AllCategories, SpecificCategory, AllDashboards, DashboardsInCategory, SpecificDashboard, AllDataSources, SpecificDataSource, AllSchedules, SpecificSchedule</code> </br> Download - <code>AllDashboards, DashboardsInCategory, SpecificDashboard</code> </br> Manage - <code>AllPermissions, SpecificPermissions, AllSettings, SpecificSettings, SpecificGroup, UserAllGroups</code>"
+                    }    
+                }
+            },
+            "ApiGetCommentActivityLogs":{
+                "type":"object",
+                "properties":{
+                    "Id": {
+                        "type": "string",
+                        "description": "ID of the activity."
+                    },
+                    "Activity": {
+                        "type": "string",
+                        "description": "Type of activity which is performed."
+                    },
+                    "ModifiedById":{
+                        "type": "integer",
+                        "description": "Specifies the ID of the user who modified this item.",
+                        "format":"int32"
+                    },
+                    "ModifiedBy":{
+                        "type": "string",
+                        "description": "Specifies the name of the user who modified this item."
+                    },
+                    "CommentId":{
+                        "type": "integer",
+                        "description": "ID of the comment.",
+                        "format": "int32"
+                    },
+                    "ParentCommentId":{
+                        "type":"integer",
+                        "description": "ID of the replied comment."
+                    },
+                    "NotificationTo":{
+                        "type": "integer",
+                        "description": "ID of the user who recevies the notification.",
+                        "format": "int32"
+                    },
+                    "IsRead": {
+                        "type":"boolean",
+                        "description": "Returns true if comment was read."
+                    },
+                    "ModifiedDate":{
+                        "type": "string",
+                        "description": "Date modified of item in date format.",
+                        "format": "date-time"
+                    },
+                    "Description": {
+                        "type": "string",
+                        "description": "Specifies the description of the item."
+                    },
+                    "IsActive":{
+                        "type": "boolean",
+                        "description": "Returns true if the item is active."
+                    }
+                }
+            },
+            "ApiGetScheduleActivityLogs":{
+                "type": "object",
+                "properties":{
+                "Id": {
+                    "type": "string",
+                    "description": "ID of the activity."
+                },
+                "Activity": {
+                    "type": "string",
+                    "description": "Type of activity which is performed."
+                },
+                "ScheduleId":{
+                    "type": "string",
+                    "description": "Id of the schedule.",
+                    "format": "guid"
+                },
+                "ItemId":{
+                    "type": "string",
+                    "description": "ID of the item.",
+                    "format": "guid"
+                },
+                "ItemType":{
+                    "type":"string",
+                    "description": "Type of the item."
+                },
+                "ExecutedDate": {
+                    "type": "string",
+                    "description": "Schedule executed date in date format.",
+                    "format": "date-time"
+                },
+                "IsOnDemand":{
+                    "type": "string",
+                    "description": "Returns true if schedule was run on-demand."
+                },
+                "IsActive":{
+                    "type": "boolean",
+                    "description": "Returns true if the item is active."
+                },
+                "ScheduleName":{
+                    "type": "string",
+                    "description": "Name of the schedule."
+                },
+                "ExportType":{
+                    "type":"string",
+                     "description":"Export type.<br/>The possible values are <code>Excel, Pdf, Image, CSV</code>"
+                }
+            }
+            },
+            "ApiGetSystemActivityLogs":{
+                "type": "object",
+                "properties":{
+                "Id": {
+                    "type": "string",
+                    "description": "ID of the activity."
+                },
+                "Activity": {
+                    "type": "string",
+                    "description": "Type of activity which is performed."
+                },
+                "OldValue": {
+                    "type": "string",
+                    "description": "Specifies the value before update."
+                },
+                "NewValue":{
+                    "type": "string",
+                    "description": "Specifies the value after update."
+                },
+                "ModifiedById":{
+                    "type": "integer",
+                    "description": "Specifies the user ID of the item modifier.",
+                    "format":"int32"
+                },
+                "ActivityStatus":{
+                    "type": "string",
+                    "description": "Status of the activity.</br>The possible values are <code>Success, Fail</code>"
+                },
+                "CreatedDate":{
+                    "type":"string",
+                    "description": "Date created of item in date format.",
+                    "format": "date-time"
+                },
+                "IsActive":{
+                    "type": "boolean",
+                    "description": "Returns true if the item is active."
+                },
+                "SettingName":
+                {
+                    "type": "string",
+                    "description": "Specifies the description of the setting."
+                }
+            }
+            },
+            "ApiGetitemActivityLogs":{
+                "type": "object",
+                "properties":{
+                    "Id": {
+                        "type": "string",
+                        "description": "ID of the activity."
+                    },
+                    "Activity": {
+                        "type": "string",
+                        "description": "Type of activity which is performed."
+                    },
+                    "ModifiedById":{
+                        "type": "integer",
+                        "description": "Specifies the ID of the user who modified this item.",
+                        "format":"int32"
+                    },
+                    "ModifiedBy":{
+                        "type": "string",
+                        "description": "Specifies the name of the user who modified this item."
+                    },
+                    "SourceTypeId":{
+                        "type": "integer",
+                        "description": "Specifies the enum value of the source type.</br>The possible values are <code>1, 2, 3</code> \n\n Note: </br> <code>1</code> - Specify the Web source type </br> <code>2</code> - Specify the API source type </br> <code>3</code> - Specify the Job source type"
+                    },
+                    "SourceType":{
+                        "type": "string",
+                        "description": "Specifies the source type.</br>The possible values are <code>Web, API, Job</code>"
+                    },
+                    "ItemId":{
+                        "type": "string",
+                        "description": "ID of the item.",
+                        "format": "guid"
+                    },
+                    "ItemName":{
+                        "type": "string",
+                        "description": "Name of the item."
+                    },
+                    "ItemType":{
+                        "type":"string",
+                        "description": "Type of the item."
+                    },
+                    "ItemVersionId":{
+                        "type": "string",
+                        "description": "Specifies the version ID of the item."
+                    },
+                    "ParentId":{
+                        "type": "string",
+                        "description": "Specifies the category ID."
+                    },
+                    "CategoryName":{
+                        "type": "string",
+                        "description": "Specifies the category name."
+                    },
+                    "FromCategoryId":{
+                        "type": "string",
+                        "description": "Specifies the source category ID."
+                    },
+                    "FromCategoryName":{
+                        "type": "string",
+                        "description": "Specifies the source category name."
+                    },
+                    "ToCategoryId":{
+                        "type": "string",
+                        "description": "Specifies the destination category ID"
+                    },
+                    "ToCategoryName":{
+                        "type": "string",
+                        "description": "Specifies the destination category name."
+                    },
+                    "IsActive":{
+                        "type": "boolean",
+                        "description": "Returns true if the item is active."
+                    }
+                }
+            },
+            "WehbooksSettings":{
+                "type": "object",
+                "properties":{
+                    "Id":{
+                        "type":"integer",
+                        "description": "ID of the webhook."
+                    },
+                    "Name":{
+                        "type": "string",
+                        "description": "Name of the webhook."
+                    },
+                    "Event":{
+                        "type":"string",
+                        "description":"Type of the webhook event."
+                    },
+                    "ModifiedBy":{
+                        "type": "string",
+                        "description": "Name of the webhook modifier."
+                    },
+                    "ModifiedDate": {
+                        "type": "string",
+                        "description": "Date modified of item in string format."
+                    },
+                    "Status": {
+                        "type": "boolean",
+                        "description": "Returns true if the webhook is active."
+                    }
+                }
             }
         },
         "securitySchemes": {

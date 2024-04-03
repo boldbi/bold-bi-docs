@@ -14,43 +14,42 @@ The theme feature allows you to customize the appearance of the Bold BI Applicat
 
 ### Site theme settings
 
-   Change the `Theme` in the site settings under the `Look and Feel Settings`. If you want to change the `Theme` in the site settings, change to the desired `Custom Theme` and `Dashboard Theme` after generating and uploading the `Theme` file for the `BI and Designer Service.`
+   Change the Theme in the site settings under the `Look and Feel Settings`. If you want to change the `Theme` in the site settings, switch to the desired `Custom Theme` and `Dashboard Theme` after generating and uploading the `Theme` file for the `BI and Designer Service`.
  
   ![Site theme setting](/static/assets/site-administration/dashboard-themes/images/sitesetting.png)
 
 ## Limitations
  
-The following items are not supported with the dashboard theme.
+The following items are not supported with the dashboard theme:
 
 1. Newly implemented widgets like `Custom widgets`. 
 
-2. Deprecated widgets such as `Card and Maps`. –Syncfusion will not provide the support in the future.
+2. Deprecated widgets such as `Card and Maps` – Syncfusion will not provide support for these in the future.
 
 ## How to create custom Theme using CSS3 Variable 
 
 Create the custom theme in two ways:
-1. Refer [this](/site-administration/look-and-feel-settings-in-cloud-bi/create-custom-application-theme/#how-to-create-custom-application-theme) to create the application custom theme.
-2. Refer [this](/site-administration/look-and-feel-settings-in-cloud-bi/create-custom-dashboard-theme/#how-to-create-a-custom-theme-using-variables-for-dashboards) to create the dashboard custom theme
+1. Refer to [this](/site-administration/look-and-feel-settings-in-cloud-bi/create-custom-application-theme/#how-to-create-custom-application-theme) to create the application custom theme.
+2. Refer to [this](/site-administration/look-and-feel-settings-in-cloud-bi/create-custom-dashboard-theme/#how-to-create-a-custom-theme-using-variables-for-dashboards) to create the dashboard custom theme.
 
-Similarly, customize the `Theme` for widgets in the dashboard using the provided variables per your requirements. Follow these steps to create a custom theme file.
-
+Similarly, customize the `Theme` for widgets in the dashboard using the provided variables according to your requirements. Follow these steps to create a custom theme file:
       
 1. Download the default `light` and `dark` files from the [Github](https://github.com/boldbi/boldbi-themestudio/releases) release page and extract them.
 
     ![Download github image](/static/assets/site-administration/dashboard-themes/images/download-github-link.png)
 
-2. Within the `light` and `dark` folder, there are widgets folder.
+2. Within the `light` and `dark` folders, there is a widgets folder.
 
-3. Within the `widgets` folder, there is a `boldbi.widgets.core.definition.css` file. Open this in an `editor.` Then, customize the color code and font for all widgets in the provided variables..
+3. Inside the `widgets` folder, locate the `boldbi.widgets.core.definition.css` file. Open this file in an `editor` and customize the color code and font for all widgets using the provided variables.
  
       ![Widgets core file](/static/assets/site-administration/dashboard-themes/images/widgetcorefile.png)
 
-4. Separate files have been included for each widget to use if you want to customize a specific widget's properties.
+4. Separate files have been included for each widget if you wish to customize a specific widget's properties.
       
 	  ![Widgets file](/static/assets/site-administration/dashboard-themes/images/widgetsfile.png)
       
 
-> **NOTE:**  If the value for the property is left blank, then the default value is taken.
+> **NOTE:**  If the property value is left blank, the default value will be used.
  
 ### Designer Font
 
@@ -93,7 +92,7 @@ Click the [Dashboard banner](https://github.com/boldbi/boldbi-themestudio/blob/m
 }
 
 ```
-For example, here customized the color in the banner variable,
+For example, here the color in the banner variable has been customized,
 
 ```css3
 
@@ -125,7 +124,7 @@ Click the [Data color palette](https://github.com/boldbi/boldbi-themestudio/blob
 }
 
 ```
-For example, here customized the color in the data color palette variable,
+For example, here the color in the data color palette variable has been customized,
 
 ```css3
 
@@ -144,7 +143,7 @@ The `boldbi.widgets.core.definition.css` section allows you to configure the wid
 
 ### Widget common level properties
 
-The color codes and font settings defined under the `boldbi.widgets.core.definition.css` section will be applied to all the applicable widgets unless it has been overridden at the widget-specific level. 
+The color codes and font settings defined under the `boldbi.widgets.core.definition.css` section will be applied to all the applicable widgets unless they have been overridden at the widget-specific level.
 
 **Widgets core file Variables:**
 
@@ -183,7 +182,7 @@ Click the [Widget core](https://github.com/boldbi/boldbi-themestudio/blob/main/t
  
 #### Chart Variables
 
-Click the [Chart](https://github.com/boldbi/boldbi-themestudio/blob/main/themes/light/widgets/boldbi.chart.widgets.definition.css) to navigate the template file.
+Click on the [Chart](https://github.com/boldbi/boldbi-themestudio/blob/main/themes/light/widgets/boldbi.chart.widgets.definition.css) to navigate the template file.
 ```css3
 
 :root{
@@ -229,7 +228,7 @@ Click the [Chart](https://github.com/boldbi/boldbi-themestudio/blob/main/themes/
 
 #### Map Variables
 
-Click the [Map](https://github.com/boldbi/boldbi-themestudio/blob/main/themes/light/widgets/boldbi.map.widgets.definition.css) to navigate the template file.
+Please click on the [Map](https://github.com/boldbi/boldbi-themestudio/blob/main/themes/light/widgets/boldbi.map.widgets.definition.css) to navigate the template file.
 ```css3
 
 :root {
@@ -262,7 +261,7 @@ Click the [Map](https://github.com/boldbi/boldbi-themestudio/blob/main/themes/li
 
 #### Tree Map Variables
 
-Click the [Tree map](https://github.com/boldbi/boldbi-themestudio/blob/main/themes/light/widgets/boldbi.treemap.widgets.definition.css) to navigate the template file.
+Click on the [Tree map](https://github.com/boldbi/boldbi-themestudio/blob/main/themes/light/widgets/boldbi.treemap.widgets.definition.css) to navigate the template file.
 ```css3
 
 :root {
@@ -295,7 +294,7 @@ Click the [Tree map](https://github.com/boldbi/boldbi-themestudio/blob/main/them
 
 #### Heat Map Variables
 
-Click the [Heat map](https://github.com/boldbi/boldbi-themestudio/blob/main/themes/light/widgets/boldbi.heatmap.widgets.definition.css) to navigate the template file.
+Click on the [Heat map](https://github.com/boldbi/boldbi-themestudio/blob/main/themes/light/widgets/boldbi.heatmap.widgets.definition.css) to navigate to the template file.
 ```css3
 
 :root {
@@ -336,7 +335,7 @@ Click the [Heat map](https://github.com/boldbi/boldbi-themestudio/blob/main/them
 
 #### Grid Variables
 
-Click the [Grid](https://github.com/boldbi/boldbi-themestudio/blob/main/themes/light/widgets/boldbi.grid.widgets.definition.css) to navigate the template file.
+Click on the [Grid](https://github.com/boldbi/boldbi-themestudio/blob/main/themes/light/widgets/boldbi.grid.widgets.definition.css) to navigate through the template file.
 ```css3
 
 :root {
@@ -386,7 +385,7 @@ Click the [Grid](https://github.com/boldbi/boldbi-themestudio/blob/main/themes/l
 
 #### Pivot Grid Variables
 
-Click the [Pivot grid](https://github.com/boldbi/boldbi-themestudio/blob/main/themes/light/widgets/boldbi.pivotgrid.widgets.definition.css) to navigate the template file.
+Click on the [Pivot grid](https://github.com/boldbi/boldbi-themestudio/blob/main/themes/light/widgets/boldbi.pivotgrid.widgets.definition.css) to navigate through the template file.
 ```css3
 
 :root {
@@ -500,7 +499,7 @@ Click the [Pivot grid](https://github.com/boldbi/boldbi-themestudio/blob/main/th
 
 #### List Box Variables
 
-Click the [List box](https://github.com/boldbi/boldbi-themestudio/blob/main/themes/light/widgets/boldbi.listbox.widgets.definition.css) to navigate the template file.
+Please click on the [List box](https://github.com/boldbi/boldbi-themestudio/blob/main/themes/light/widgets/boldbi.listbox.widgets.definition.css) to navigate the template file.
 ```css3
 
 :root {
@@ -545,7 +544,7 @@ Click the [List box](https://github.com/boldbi/boldbi-themestudio/blob/main/them
 
 #### Combo Box Variables
 
-Click the [Combo box](https://github.com/boldbi/boldbi-themestudio/blob/main/themes/light/widgets/boldbi.combobox.widgets.definition.css) to navigate the template file.
+Click on the [Combo box](https://github.com/boldbi/boldbi-themestudio/blob/main/themes/light/widgets/boldbi.combobox.widgets.definition.css) to navigate to the template file.
 ```css3
 
 :root {
@@ -593,7 +592,7 @@ Click the [Combo box](https://github.com/boldbi/boldbi-themestudio/blob/main/the
 
 #### Date Picker Variables
 
-Click the [Date picker](https://github.com/boldbi/boldbi-themestudio/blob/main/themes/light/widgets/boldbi.datepicker.widgets.definition.css) to navigate the template file.
+Click on the [Date picker](https://github.com/boldbi/boldbi-themestudio/blob/main/themes/light/widgets/boldbi.datepicker.widgets.definition.css) to navigate to the template file.
 ```css3
 
 :root {
@@ -693,7 +692,7 @@ Click the [Date picker](https://github.com/boldbi/boldbi-themestudio/blob/main/t
 
 #### KPI Card Variables
 
-Click the [KPI card](https://github.com/boldbi/boldbi-themestudio/blob/main/themes/light/widgets/boldbi.kpi.widgets.definition.css) to navigate the template file.
+Please click on the [KPI card](https://github.com/boldbi/boldbi-themestudio/blob/main/themes/light/widgets/boldbi.kpi.widgets.definition.css) to navigate to the template file.
 ```css3
 
 :root {
@@ -745,7 +744,7 @@ Click the [KPI card](https://github.com/boldbi/boldbi-themestudio/blob/main/them
 
 #### Number Card Variables
 
-Click the [Number card](https://github.com/boldbi/boldbi-themestudio/blob/main/themes/light/widgets/boldbi.numbercard.widgets.definition.css) to navigate the template file.
+Please click on the [Number card](https://github.com/boldbi/boldbi-themestudio/blob/main/themes/light/widgets/boldbi.numbercard.widgets.definition.css) to navigate the template file.
 ```css3
 
 :root {
@@ -776,7 +775,7 @@ Click the [Number card](https://github.com/boldbi/boldbi-themestudio/blob/main/t
 
 #### Range Slider Variables
 
-Click the [Range slider](https://github.com/boldbi/boldbi-themestudio/blob/main/themes/light/widgets/boldbi.rangeslider.widgets.definition.css) to navigate the template file.
+Click on the [Range slider](https://github.com/boldbi/boldbi-themestudio/blob/main/themes/light/widgets/boldbi.rangeslider.widgets.definition.css) to navigate the template file.
 ```css3
 
 :root {
@@ -805,7 +804,7 @@ Click the [Range slider](https://github.com/boldbi/boldbi-themestudio/blob/main/
 ```
 #### Range Navigator Variables
 
-Click the [Range navigator](https://github.com/boldbi/boldbi-themestudio/blob/main/themes/light/widgets/boldbi.rangenavigator.widgets.definition.css) to navigate the template file.
+Click on the [Range navigator](https://github.com/boldbi/boldbi-themestudio/blob/main/themes/light/widgets/boldbi.rangenavigator.widgets.definition.css) to navigate to the template file.
 ```css3
 
 :root {
@@ -829,7 +828,7 @@ Click the [Range navigator](https://github.com/boldbi/boldbi-themestudio/blob/ma
 
 #### Circular Gauge Variables
 
-Click the [Circular gauge](https://github.com/boldbi/boldbi-themestudio/blob/main/themes/light/widgets/boldbi.circularguage.widgets.definition.css) to navigate the template file.
+Click on the [Circular gauge](https://github.com/boldbi/boldbi-themestudio/blob/main/themes/light/widgets/boldbi.circularguage.widgets.definition.css) to navigate to the template file.
 ```css3
 
 :root {
@@ -874,7 +873,7 @@ Click the [Circular gauge](https://github.com/boldbi/boldbi-themestudio/blob/mai
 
 #### Radar Polar Variables
 
-Click the [Radar polar](https://github.com/boldbi/boldbi-themestudio/blob/main/themes/light/widgets/boldbi.radarpolar.widgets.definition.css) to navigate the template file.
+Click the [Radar polar](https://github.com/boldbi/boldbi-themestudio/blob/main/themes/light/widgets/boldbi.radarpolar.widgets.definition.css) button to navigate the template file.
 ```css3
 
 :root {
@@ -912,7 +911,7 @@ Click the [Radar polar](https://github.com/boldbi/boldbi-themestudio/blob/main/t
 
 #### Combo Chart Variables
 
-Click the [Combo chart](https://github.com/boldbi/boldbi-themestudio/blob/main/themes/light/widgets/boldbi.combochart.widgets.definition.css) to navigate the template file.
+Please click on the [Combo chart](https://github.com/boldbi/boldbi-themestudio/blob/main/themes/light/widgets/boldbi.combochart.widgets.definition.css) to navigate through the template file.
 ```css3
 
 :root {
@@ -1086,7 +1085,7 @@ Click the [Period Over Period](https://github.com/boldbi/boldbi-themestudio/blob
 
 #### Tab widget Variables
 
-Click the [Tab widget](https://github.com/bold-bi/boldbi-themestudio/blob/main/themes/light/widgets/boldbi.tab.widget.definition.css) to navigate the template file.
+Click on the [Tab widget](https://github.com/bold-bi/boldbi-themestudio/blob/main/themes/light/widgets/boldbi.tab.widget.definition.css) to navigate the template file.
 ```css3
 
 :root {
@@ -1102,7 +1101,7 @@ Click the [Tab widget](https://github.com/bold-bi/boldbi-themestudio/blob/main/t
 
 #### Text Filter Variables
 
-Click the [Text Filter](https://github.com/boldbi/boldbi-themestudio/blob/main/themes/light/widgets/boldbi.textfilter.widgets.definition.css) to navigate the template file.
+Click on the [Text Filter](https://github.com/boldbi/boldbi-themestudio/blob/main/themes/light/widgets/boldbi.textfilter.widgets.definition.css) to navigate the template file.
 ```css3
 
 :root {
@@ -1130,7 +1129,7 @@ Click the [Text Filter](https://github.com/boldbi/boldbi-themestudio/blob/main/t
 
 #### Scatter widget variables
 
-Click the [Scatter](https://github.com/boldbi/boldbi-themestudio/blob/main/themes/light/widgets/boldbi.scatter.widgets.definition.css) to navigate the template file.
+Click on the [Scatter](https://github.com/boldbi/boldbi-themestudio/blob/main/themes/light/widgets/boldbi.scatter.widgets.definition.css) to navigate the template file.
 ```css3
 
 :root {
@@ -1171,7 +1170,7 @@ Click the [Scatter](https://github.com/boldbi/boldbi-themestudio/blob/main/theme
 
 #### RTE widget variables
 
-Click the [RTE](https://github.com/boldbi/boldbi-themestudio/blob/main/themes/light/widgets/boldbi.rte.widgets.definition.css) to navigate the template file.
+Click on the [RTE](https://github.com/boldbi/boldbi-themestudio/blob/main/themes/light/widgets/boldbi.rte.widgets.definition.css) to navigate the template file.
 ```css3
 
 :root {
@@ -1185,7 +1184,7 @@ Click the [RTE](https://github.com/boldbi/boldbi-themestudio/blob/main/themes/li
 
 #### Filter Overview variables
 
-Click the [Filter overview](https://github.com/boldbi/boldbi-themestudio/blob/main/themes/light/widgets/boldbi.filteroverview.definition.css) to navigate the template file.
+Click on the [Filter overview](https://github.com/boldbi/boldbi-themestudio/blob/main/themes/light/widgets/boldbi.filteroverview.definition.css) button to navigate through the template file.
 ```css3
 
 :root {
@@ -1216,7 +1215,7 @@ Click the [Filter overview](https://github.com/boldbi/boldbi-themestudio/blob/ma
 
 #### Dashboard Menu variables
 
-Click the [Dashboard Menu](https://github.com/boldbi/boldbi-themestudio/blob/main/themes/light/widgets/boldbi.designer.menualertdialog.definition.css) to navigate the template file.
+Click on the [Dashboard Menu](https://github.com/boldbi/boldbi-themestudio/blob/main/themes/light/widgets/boldbi.designer.menualertdialog.definition.css) to navigate to the template file.
 ```css3
 
 :root {
@@ -1239,7 +1238,7 @@ Click the [Dashboard Menu](https://github.com/boldbi/boldbi-themestudio/blob/mai
 
 #### Dashboard Tooltip variables
 
-Click the [Dashboard Tooltip](https://github.com/boldbi/boldbi-themestudio/blob/main/themes/light/widgets/boldbi.tooltip.definition.css) to navigate the    template file.
+Click on the [Dashboard Tooltip](https://github.com/boldbi/boldbi-themestudio/blob/main/themes/light/widgets/boldbi.tooltip.definition.css) to navigate to the template file.
 ```css3
 
 :root {
@@ -1256,7 +1255,7 @@ Click the [Dashboard Tooltip](https://github.com/boldbi/boldbi-themestudio/blob/
 
 #### Dashboard Error dialog variables
 
-Click the [Dashboard Error dialog](https://github.com/boldbi/boldbi-themestudio/blob/main/themes/light/widgets/boldbi.designer.menualertdialog.definition.css) to navigate the template file.
+Click on the [Dashboard Error dialog](https://github.com/boldbi/boldbi-themestudio/blob/main/themes/light/widgets/boldbi.designer.menualertdialog.definition.css) to navigate to the template file.
 ```css3
 
 :root {

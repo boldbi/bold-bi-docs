@@ -9,11 +9,11 @@ documentation: ug
 
 # Manage Pinboards
 
-Pinboard is a collection of individual widgets from the various dashboards pinned to it.
+A pinboard is a collection of individual widgets from various dashboards pinned to it.
 
-This section explains how to manage pinboards like add, delete, duplicate pinboards, and their behavior in the Bold BI application.
+This section explains how to manage pinboards, such as adding, deleting, duplicating pinboards, and understanding their behavior in the Bold BI application.
 
-You can explore the managing pinboards in detail here,
+You can explore managing pinboards in detail here:
 
 [Rename Pinboards](/managing-resources/manage-pinboards/rename-pinboards/)
 

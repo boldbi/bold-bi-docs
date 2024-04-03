@@ -8,15 +8,15 @@ documentation: ug
 
 # Bold BI Dashboards embedding in Ionic with ASP.NET core using Embedded SDK
 
-A GitHub link has been provided to [get](https://github.com/boldbi/ionic-with-aspnet-core-sample) the sample application, which demonstrates the rendering of dashboard available in your Bold BI server and followed by steps to create a new embedding application in the `Ionic` with `ASP.NET Core` on your own.
+A GitHub link has been provided to [get](https://github.com/boldbi/ionic-with-aspnet-core-sample) the sample application, which demonstrates the rendering of the dashboard available on your Bold BI server. This is followed by step-by-step instructions on creating a new embedding application in `Ionic` with `ASP.NET Core` on your own.
 
-> **NOTE:** The best way to get started would be reading the [Getting Started](/getting-started/embedding-in-your-application/) section of the documentation.  The `Getting Started` guide gives you enough information that you need to know before working on the sample.      
+> **NOTE:** The best way to get started would be to read the [Getting Started](/getting-started/embedding-in-your-application/) section of the documentation. The `Getting Started` guide provides you with enough information that you need to know before working on the sample.     
 
 ## How to run the sample
  
  1. Please [get](https://github.com/boldbi/ionic-with-aspnet-core-sample) the Ionic project.
 
- 2. You need to set the following properties in the `home.service.ts` and the dashboard id in the `home.page.ts` files as follow.
+ 2. You need to set the following properties in the `home.service.ts` file and the dashboard id in the `home.page.ts` file as follows.
     ![Ionic_properties](/static/assets/javascript/sample/images/ionic-properties.png#max-width=75%)
     ![Ionic_renderdashboard](/static/assets/javascript/sample/images/ionic-renderdashboard.png#max-width=75%)
   
@@ -54,15 +54,15 @@ A GitHub link has been provided to [get](https://github.com/boldbi/ionic-with-as
     </tbody>
     </table>
 
- 3. You can get your Embed Secret key from the administrator setting section. Please refer to this [link](/site-administration/embed-settings/) for more details.
+ 3. You can obtain your Embed Secret key from the administrator setting section. Please refer to this [link](/site-administration/embed-settings/) for more details.
 
- 4. Run your Ionic application.
+ 4. Please run your Ionic application.
 
 ## How this sample works
 
- 1. Based on the dashboardId provided in the `home.page.ts`, authorize the server URL by calling the GetEmbedDetails function as follows.
+ 1. Based on the provided dashboardId in the `home.page.ts` file, authorize the server URL by calling the GetEmbedDetails function as follows.
     ![Ionic_renderdashboard](/static/assets/javascript/sample/images/ionic-renderdashboard.png#max-width=75%)
 
- 2. The SignatureUrl will be generated with the provided EmbedSecret key and validate the embed details in Bold BI. Once details are validated, the dashboard starts to render using the `renderDashboard()` method available in the `home.page.ts`.
+ 2. The SignatureUrl will be generated using the provided EmbedSecret key and will validate the embed details in Bold BI. Once the details are validated, the dashboard will start to render using the `renderDashboard()` method available in the `home.page.ts`.
 
- 3. In the `home.page.ts`, change the dashboard Id of the respective dashboard as you wish to embed.
+ 3. In the `home.page.ts`, change the dashboard ID of the respective dashboard as you desire to embed.

@@ -7,9 +7,9 @@ documentation: ug
 
 # User Directory Settings
 
-This section explains how to configure Active Directory and Azure Active Directory with the Bold BI server and how to schedule the synchronization of users and groups from the Active Directory and Azure Active Directory.
+This section explains how to configure Active Directory and Azure Active Directory with the Bold BI server and how to schedule the synchronization of users and groups from Active Directory and Azure Active Directory.
 
-You can explore the user directory settings in detail here,
+You can explore the user directory settings in detail here:
 
 [Active Directory](/site-administration/user-directory-settings/active-directory/)
 
@@ -17,4 +17,4 @@ You can explore the user directory settings in detail here,
 
 [Existing Database](/site-administration/user-directory-settings/existing-database/)
 
-> **NOTE:** Active Directory settings is available in the Bold BI Embedded Analytics but not in Cloud Analytics Server.
+> **NOTE:** The Active Directory settings are available in the On-Premises Deployment but not in Syncfusion Managed Cloud Server.

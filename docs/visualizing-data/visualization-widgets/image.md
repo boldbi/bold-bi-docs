@@ -122,6 +122,18 @@ Ex: http://flagpedia.net/data/flags/normal/in.png
 
 ![URL](/static/assets/visualizing-data/visualization-widgets/images/image/url-image.png)
 
+If you wish to provide tenant-specific images, you can utilize the dashboard parameter. We have added support for using the dashboard parameter in the URL field. 
+
+For Example: you want to render the image located at `http://localhost:56372/bi/site/site1/get-client-logo`. The default dashboard parameter is `@{{:CURRENTUSER.SITEURL}}`.
+
+When adding the URL in the image widget, the image will be displayed dynamically based on the tenant. The URL should be structured as follows: `@{{:CURRENTUSER.SITEURL}}/get-client-logo`.
+
+![URL](/static/assets/visualizing-data/visualization-widgets/images/image/parameter.png)
+
+The image widget rendered like below 
+
+![URL](/static/assets/visualizing-data/visualization-widgets/images/image/image.png)
+
 ### Parameterized URL
 
 Parameterized URL option allows the user to pick an image from the data source field to the image widget.
@@ -154,6 +166,12 @@ EX: http://flagpedia.net/data/flags/normal/{0}.png
 
 > **Note:** Always remember that used parameter will get the 1st value of the field after considering all the dashboard filters.
 
+### Tooltip Settings
+
+`Show Tooltip` allows you to toggle the visibility of a tooltip on an image. The `text box` below the Show Tooltip option allows you to set the text that appears in the tooltip
+
+![Showtooltip](/static/assets/visualizing-data/visualization-widgets/images/image/Show-tool-tip.png)
+
 ### Filter Settings
 
 ![Filter](/static/assets/visualizing-data/visualization-widgets/images/image/filter.png)
@@ -166,4 +184,12 @@ You can ignore the filter actions by enabling the IgnoreFilterActions property. 
 
 ![Link](/static/assets/visualizing-data/visualization-widgets/images/image/link.png)
 
-To configure the linking to URL or dashboard with the widget using its settings. For more details, refer to the [Linking](/visualizing-data/working-with-widgets/linking-urls-and-dashboards/).
+Configure the linking to URL or dashboard with the widget using its settings. For more details, refer to the [Linking](/visualizing-data/working-with-widgets/linking-urls-and-dashboards/).
+
+### Container actions
+
+![Container Actions](/static/assets/visualizing-data/visualization-widgets/images/image/pin-icon.png)
+
+#### Pin Widget
+
+This allows you to pin the widget.

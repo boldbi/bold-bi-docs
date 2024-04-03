@@ -21,7 +21,7 @@ Please find the filterParameters output dashboard as follows.
 
 ![parameter dashboard1](/static/assets/faq/images/parameter-dashboard1.png)
 
-This could be changed depending on the [mode](/working-with-data-source/dashboard-parameter/configuring-dashboard-parameters/#modes) (Literal/List) you configured in the dashboard parameter.
+This could be changed depending on the [mode](/working-with-data-sources/dashboard-parameter/configuring-dashboard-parameters/#modes) (Literal/List) you configured in the dashboard parameter.
 
 ## How to update the filter parameters in Embedded BI
 

@@ -420,6 +420,16 @@ You can customize the legend text through the `Custom Legend Settings` dialog. T
 
 ![Legend customization Change](/static/assets/visualizing-data/visualization-widgets/images/stacked-bar-chart/legend-customization-change.png)
 
+#### Legend Item as Dropdown
+
+Legends can be displayed as a dropdown menu when the legend position is set to "dropdown." When you hover over a chart, a legend icon appears. Clicking on this icon will bring up a legend dropdown. This feature allows you to toggle the visibility of the legend in the chart.
+
+This option will hide the legends in the chart area, resulting in increased chart space and enhanced visibility.
+ 
+The chart legend dropdown option can be used to simplify viewing complex charts with multiple data sources. For example, if you have a chart displaying sales data for the different years, you can use the legend dropdown to deselect all other years and focus only on a specific year.
+
+![Legend item as dropdown](/static/assets/visualizing-data/visualization-widgets/images/stacked-bar-chart/legend-as-dropdown.png)
+
 #### Legend Shape
 
 This allows you change the **shape** of the legend.
@@ -617,6 +627,62 @@ This allows you to manually set the Minimum, Maximum and Interval values of prim
 It will reflect in the primary value axis of the chart.
 
 ![Axis Range Output](/static/assets/visualizing-data/visualization-widgets/images/stacked-bar-chart/axisrangeoutput.png)
+
+### Parameter Support in Axis range:
+
+This allows you to dynamically set the Minimum, Maximum, and Interval values of the primary value axis through the `Axis Range Settings` dialog by using the dashboard parameter values. Only number-type Dashboard parameter values are allowed in the axis range properties. You can create multiple types of dashboard parameters.
+
+1. Single parameter value.
+2. Range parameter value.
+3. Data source field based parameter values.
+
+For more details about dashboard parameter, refer to the [Dashboard parameter documentation](/working-with-data-sources/dashboard-parameter/configuring-dashboard-parameters/).
+
+### Single Parameter Value:
+
+A single value is stored in this type of parameter.
+
+1. Create a dashboard parameter in number type like below.
+
+![Axis Range Settings Output](/static/assets/visualizing-data/visualization-widgets/images/stacked-bar-chart/parameter.png)
+
+Click the axis range settings dialog and enter `@` in any textbox(**minimum**, **maximum and interval**). Select the parameter value (Number type parameter values only allowed).
+
+![Axis Range Settings Output](/static/assets/visualizing-data/visualization-widgets/images/stacked-bar-chart/minparam.png)
+
+Now the parameter value is reflected in the chart axis.
+
+![Axis Range Settings Output](/static/assets/visualizing-data/visualization-widgets/images/stacked-bar-chart/stackedbarmin.png)
+
+### Range Parameter Value:
+
+If you wish to set the same ranges in multiple cases, create the range type parameter value. This type of parameter has the start and end values.
+
+1. Create a parameter in range type.
+
+![Axis Range Settings Output](/static/assets/visualizing-data/visualization-widgets/images/stacked-bar-chart/rangeparameter.png)
+
+2. Click the axis range settings dialog and enter `@` in any textbox(**minimum**, **maximum**, and **interval**). The range parameter is split into start and end parameters. First textbox value is stored in the start parameter, and the second textbox value is stored in the end parameter. Select the parameter value (Number type parameter values only allowed).
+
+![Axis Range Settings Output](/static/assets/visualizing-data/visualization-widgets/images/stacked-bar-chart/rangeaxis.png)
+
+3. The parameter value is reflected in the chart axis.
+
+![Axis Range Settings Output](/static/assets/visualizing-data/visualization-widgets/images/stacked-bar-chart/range.png)
+
+### Data Source Field Based Parameter Value:
+
+1. Create a parameter in the data source type. In this, choose any field. The value is based on the selected field value.
+
+![Axis Range Settings Output](/static/assets/visualizing-data/visualization-widgets/images/stacked-bar-chart/datasource.png)
+
+2. Click the axis range settings dialog and enter `@` in any textbox(**minimum**, **maximum and interval**). Select the parameter value.
+
+![Axis Range Settings Output](/static/assets/visualizing-data/visualization-widgets/images/stacked-bar-chart/datasourceaxis.png)
+
+3. The parameter value is reflected in the chart axis.
+
+![Axis Range Settings Output](/static/assets/visualizing-data/visualization-widgets/images/stacked-bar-chart/datasourcemin.png)
 
 #### Axis Format
 

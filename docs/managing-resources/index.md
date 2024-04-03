@@ -12,7 +12,7 @@ documentation: ug
 
 This section explains how to manage dashboards, data sources, schedules, slideshows, pinboards, groups, and users in the Bold BI Enterprise application.
 
-You can explore the resource management in detail here,
+You can explore resource management in detail here:
 
 [Manage Dashboards](/managing-resources/manage-dashboards/)
 

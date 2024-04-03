@@ -14,41 +14,57 @@ Error log files are generated when an exception occurs while configuring or inte
 
 Event log files record the complete user interaction details one after the other when users interact with the Bold BI application
 
-> **NOTE:** This settings option is available in Bold BI Embedded Analytics but not in Cloud Analytics Server.
+> **NOTE:** This settings option is available in On-Premises Deployment but not in Syncfusion Managed Cloud Server.
 
-## Log Directories
+## How to get the diagnostic logs
 
-For any configurations made in the Bold BI, log files are generated in deployed locations under the various modules listed in the following table based on the nature of the error or event.
+The diagnostic logs can be downloaded in the UMS based on the versions of Bold BI, as explained below.
+
+### Bold BI version 6.17 or later
+
+1. In the Bold BI tenant site, click on the Profile icon and select the `Manage sites (Admin access)` option, and it will open the **UMS sites page** in a new tab.
+
+    > **NOTE:** This option will be shown for the UMS Admin user only.
+
+    ![Manage Sites Option latest](/static/assets/faq/images/manage-sites-option-6-17.png#max-width=85%)
+
+2. Now, it will be navigated to the UMS site and click the help icon at the top right, near the profile icon, and select the `Get diagnostic logs` option.
+
+    ![Get Diagnostic Option](/static/assets/faq/images/get-diagnostic-option-6-17.png#max-width=85%)
+
+3. In the `Get diagnostic logs` dialog, select the required period options `Last 1 hour`, `Last 24 hours`, `Last seven days`, or `All` from the `Select time period` dropdown option and click `Download diagnostic logs`. Now, the logs will be downloaded.
+
+    ![Get Diagnostic download](/static/assets/faq/images/get-logs-dropdown.png#max-width=85%)
 
 ### Bold BI version 6.1 or later
 
-1. Click the Profile icon and select the `Manage sites (Admin access)` option, and it will open the **UMS sites page** in a new tab.
+1. In the Bold BI tenant site, click on the Profile icon and select the `Manage sites (Admin access)` option, and it will open the **UMS sites page** in a new tab.
 
-    ![Manage Sites Option latest](/static/assets/faq/images/manage-sites-option-latest.png#max-width=85%)
+    > **NOTE:** This option will be shown for the UMS Admin user only.
 
-2. Click the help icon on the navigation menu and select the `Get diagnostic logs` option.
+    ![Manage Sites Option latest](/static/assets/faq/images/manage-sites-option-6-1.png#max-width=85%)
 
-    ![Get Diagnostic Option](/static/assets/faq/images/get-diagnostic-option_latest.png#max-width=85%)
+2. Now, it will be navigated to the UMS site. Click the help icon on the navigation menu and select the `Get diagnostic logs` option.
 
-3. In the `Get diagnostic logs dialog`, select the required period options `Last 1 hour`, `Last 24 hours`, `Last seven days`, or `All` from the `Select time period` dropdown option and click `Download diagnostic logs`. Now, the logs will be downloaded.
+    ![Get Diagnostic Option](/static/assets/faq/images/get-diagnostic-option-6-1.png#max-width=85%)
+
+3. In the `Get diagnostic logs` dialog, select the required period options `Last 1 hour`, `Last 24 hours`, `Last seven days`, or `All` from the `Select time period` dropdown option and click `Download diagnostic logs`. Now, the logs will be downloaded.
 
     ![Get Diagnostic download](/static/assets/faq/images/get-logs-dropdown.png#max-width=85%)
 
 ### Bold BI version 4.1.36 or later
 
-Admin can download log files from `Get diagnostic logs` in UMS.
+1. In the Bold BI tenant site, click on the Profile icon and select the `Manage sites (Admin access)` option, and it will open the **UMS sites page** in a new tab.
 
-Follow these steps to download log files:
+    > **NOTE:** This option will be shown for the UMS Admin user only.
 
-1. Click the Profile icon and select the `Manage sites (Admin access)` option, and it will open the **UMS sites page** in a new tab.
+    ![Manage Sites Option](/static/assets/faq/images/manage-sites-option-6-1.png#max-width=85%)
 
-    ![Manage Sites Option](/static/assets/faq/images/manage-sites-option.png#max-width=85%)
-
-2. Click the question mark icon on the navigation menu and select the `Get diagnostic logs` option. The logs will now be downloaded
+2. Now, it will be navigated to the UMS site. Click the question mark icon on the navigation menu and select the `Get diagnostic logs` option. Now, the logs will be downloaded.
 
     ![Get Diagnostic Option](/static/assets/faq/images/get-diagnostic-option.png#max-width=85%)
 
-You can get the log file manually from the following location for Bold BI version 4.1.36 or later.
+You can also get the log file manually from the following location for Bold BI version 4.1.36 or later.
 
 > **NOTE:** By default, the Bold BI is deployed in "C:\BoldServices" for Windows and "/var/www/bold-services/application" for Linux.
 
@@ -59,28 +75,28 @@ You can get the log file manually from the following location for Bold BI versio
 
 ### Bold BI version below 4.1.36
 
-You can get the log file manually from the following location for Bold BI version below 4.1.36.
+We do not have the support to get the logs directly from the application in this version. Therefore, we need to get them from the deployment location as described below.
 
 > **NOTE:**  By default, the Bold BI is deployed in "C:\BoldBI" for Windows.
 
 | Application       	| Log location                                              	|
 |-------------------	|-----------------------------------------------------------	|
-| Identity Provider 	| **`{Deployed Location}`**\ums\web\App_Data\Logs               |
-| Dashboard Server  	| **`{Deployed Location}`**\bi\App_Data\Logs  	                |
-| Designer Service  	| **`{Deployed Location}`**\bi\designer\DesignerLogs 	        |
+| Identity Provider 	| **`{Deployed Location}`**\IDP\App_Data\Logs               |
+| Dashboard Server  	| **`{Deployed Location}`**\Dashboard Server\App_Data\Logs  	                |
+| Designer Service  	| **`{Deployed Location}`**\Dashboard Designer\App_Data\Logs 	        |
 
 ## How to get configuration files?
 
-1. This option is available from Bold BI version 6.4 or later to download the configuration files along with the logs. **Enable the checkbox only if the Bold BI support team has requested the configuration files.**
+1. This option is available from Bold BI version 6.4 or later to download the configuration files along with the logs. 
 
-2. Click the Profile icon and select the `Manage sites (Admin access)` option. It will open the **UMS sites page** in a new tab.
+    > **NOTE:** Enable the checkbox only if the Bold BI support team has requested the configuration files.
 
-    ![Manage Sites Option](/static/assets/faq/images/manage-sites-option-latest.png#max-width=85%)
+2. Please refer to the above [sections](#how-to-get-the-diagnostic-logs) to locate the `Get Diagnostic Logs` option in UMS based on the Bold BI version.
 
-3. Click the help icon on the navigation menu and select the `Get diagnostic logs` option.
-
-    ![Get Diagnostic Option](/static/assets/faq/images/get-diagnostic-option_latest.png#max-width=85%)
-
-4. In the `Get diagnostic logs` dialog, enable the `Include configuration files` checkbox and click `Download diagnostic logs`, the configuration files will be downloaded along with the logs.
+3. In the `Get diagnostic logs` dialog, enable the `Include configuration files` checkbox and click `Download diagnostic logs`, the configuration files will be downloaded along with the logs.
 
     ![Get configuration file download](/static/assets/faq/images/get-configuration-file.png#max-width=85%)
+
+    > **NOTE:** If you are only going to get configuration files, then you can select the minimum period option **Last 1 hour** instead of **All** from the **Select time period** dropdown option. 
+
+    ![Get Diagnostic Logs](/static/assets/faq/images/get-diagnostic-logs.png#max-width=85%)

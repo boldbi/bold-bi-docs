@@ -10,10 +10,10 @@ documentation: ug
 
 # Collaborate with your team by enabling comments in dashboard
 
-You can comment over a dashboard in the site. You can toggle this setting through the `Enable Commenting` option exposed in the properties tab of the dashboard.
+You can comment on a dashboard on the site. You can toggle this setting by selecting the `Enable Commenting` option in the properties tab of the dashboard.
 
 ## Commenting a dashboard
 
-To enable comments on dashboard, go to the `Properties Tab` and enable the `Enable Commenting` option. By default, this option is enabled.
+To enable comments on a dashboard, go to the `Properties Tab` and enable the `Enable Commenting` option. This option is enabled by default.
 
 ![Enable Comments for Dashboard](/static/assets/working-with-dashboards/images/commenttinganddashboardwidget_dashboardmenu.PNG)

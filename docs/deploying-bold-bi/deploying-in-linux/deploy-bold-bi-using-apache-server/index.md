@@ -8,7 +8,7 @@ documentation: ug
 
 # Bold BI Linux Package Installation and Deployment
 
-Configuration of the Apache Server in Bold BI Linux can run in Ubuntu and CentOS Operating Systems.
+The configuration of the Apache Server in Bold BI Linux is compatible with both the Ubuntu and CentOS operating systems.
 
 [Configure Apache Server in Ubuntu](/deploying-bold-bi/deploying-in-linux/deploy-bold-bi-using-apache-server/configure-apache-server-in-ubuntu/)
 

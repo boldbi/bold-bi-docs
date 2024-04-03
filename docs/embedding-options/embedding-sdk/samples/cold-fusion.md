@@ -8,15 +8,15 @@ documentation: ug
 
 # Bold BI Dashboards embedding in ColdFusion using Embedded SDK
 
-A GitHub link has been provided to [get](https://github.com/boldbi/coldfusion-sample) the sample application, which demonstrates the rendering of dashboard available in your Bold BI server and followed by steps to create a new embedding application in the `ColdFusion` on your own. 
+A GitHub link has been provided to [get](https://github.com/boldbi/coldfusion-sample) the sample application, which demonstrates the rendering of a dashboard available on your Bold BI server. The next steps will guide you through creating a new embedding application in `ColdFusion` on your own. 
 
-> **NOTE:** The best way to get started would be reading the [Getting Started](/getting-started/embedding-in-your-application/) section of the documentation.  The `Getting Started` guide gives you enough information that you need to know before working on the sample.      
+> **NOTE:** The best way to get started would be to read the [Getting Started](/getting-started/embedding-in-your-application/) section of the documentation. The `Getting Started` guide provides you with enough information that you need to know before working on the sample.   
 
 ## How to run the sample
 
  1. Please [get](https://github.com/boldbi/coldfusion-sample) the BoldBI ColdFusion Embed sample from the attached file.    
 
- 2. You need to set the following properties in the `BoldBIEmbed.html` and `embedDetails.cfc` file as follows.
+ 2. You need to set the following properties in the `BoldBIEmbed.html` and `embedDetails.cfc` files as follows.
 
     ![Embed Properties](/static/assets/javascript/sample/images/coldfusion-props.png#max-width=80%)
 
@@ -44,15 +44,15 @@ A GitHub link has been provided to [get](https://github.com/boldbi/coldfusion-sa
     </table>
 
 
- 3. You can get your Embed Secret key from the administrator setting section. Please refer to this [link](/site-administration/embed-settings/) for more details.
+ 3. You can retrieve your Embed Secret key from the administrator setting section. Please refer to this [link](/site-administration/embed-settings/) for more details.
 
- 4. Run your ColdFusion application.
+ 4. Please run your ColdFusion application.
 
 ## How this sample works
- 1. Based on the `dashboardId` provided in the `BoldBIEmbed.html`,authorize the server URL by calling the GetEmbedDetails function as follows.
+ 1. To authorize the server URL, call the GetEmbedDetails function as follows, based on the `dashboardId` provided in the `BoldBIEmbed.html`.
     ![embed details](/static/assets/javascript/sample/images/embeddetailsColdfusion.png#max-width=80%)
 
- 2. In the above authorization, generate the `SignatureUrl` with the provided `EmbedSecret key` and validate the embed details in Bold BI. Once details are validated, the dashboard starts to render.
+ 2. In the above authorization, generate the `SignatureUrl` using the provided `EmbedSecret key` and validate the embed details in Bold BI. Once the details are validated, the dashboard will start rendering.
 
- 3. In the `BoldBIEmbed.html`, change the dashboard Id of the respective dashboard as you wish to embed.
+ 3. In the `BoldBIEmbed.html` file, you can change the dashboard Id of the respective dashboard that you want to embed.
     ![Embed Properties](/static/assets/javascript/sample/images/coldfusion-props.png#max-width=80%)

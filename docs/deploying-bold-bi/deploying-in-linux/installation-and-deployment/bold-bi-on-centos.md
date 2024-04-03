@@ -6,19 +6,31 @@ platform: bold-bi
 documentation: ug
 ---
 
-# Bold BI Installation and Deployment on CentOS
+# Bold BI Installation and Deployment on CentOS Environment 
 
 ## Deployment prerequisites
 
 1. Install [Nginx](https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-centos-8).
 
-2. Install `GDIPlus` package using the following command.
+2. Install the `GDIPlus` package using the following command:
 
     ~~~shell
-    sudo yum install libgdiplus 
+    sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
+    sudo yum install epel-release
+    sudo yum install libgdiplus
     ~~~ 
 
-4. Add an `openssl conf` path in the environment, if does not exist.
+3. Check and install `Python 3.9` by executing the following command:
+
+    ~~~shell
+    sudo dnf groupinstall 'development tools' && sudo dnf install wget openssl-devel bzip2-devel libffi-devel && sudo curl https://www.python.org/ftp/python/3.9.2/Python-3.9.2.tgz -O && sudo tar -xvf Python-3.9.2.tgz && cd Python-3.9.2 && sudo ./configure --enable-optimizations && sudo make install
+    ~~~
+
+4. Install `python pip` and following pip packages by running the below command.
+	~~~shell
+   sudo yum -y install python3-pip && python3.9 -m pip install duckdb===0.9.2 dlt===0.4.2 pymysql pyodbc pg8000 poetry pandas===2.0.0 "dlt[parquet]" "dlt[filesystem]"
+	~~~
+6. Add an `openssl conf` path to the environment if does not exist:
 
 	~~~shell
     export OPENSSL_CONF=/etc/ssl/
@@ -26,55 +38,55 @@ documentation: ug
 
 ## Configuring the Bold BI application
 
-1. Register and download the Bold BI Linux package from [here](/deploying-bold-bi/overview/#registration-and-download).
+1. Register and download the Bold BI Linux package from [here](https://www.boldbi.com/account).
 
-2. Download the Bold BI Linux package by running the following command.
+2. Download the Bold BI Linux package by running the following command:
 
     ~~~shell
     sudo wget {Bold BI Linux package link}
     ~~~
 
-3. Extract the zip file.
+3. Extract the zip file:
 
     ~~~shell
     sudo unzip {Bold BI Linux package zip file}
     ~~~ 
 
-4. Change the working directory to `BoldBIEnterpriseEdition-Linux` by running the following command. 
+4. Change the working directory to `BoldBIEnterpriseEdition-Linux` by running the following command:
 
     ~~~shell
     cd BoldBIEnterpriseEdition-Linux
     ~~~ 
  
-5. Execute the following command to deploy Bold BI in your Linux machine. 
+5. Execute the following command to deploy Bold BI in your Linux machine:
  
     ~~~shell
     sudo bash install-boldbi.sh -i {new} -u {user} -h {host URL} -n {true or false} 
     ~~~
  
 
-* **i :** Installation type: Specifies either it is a new or upgrade installation.
+* **i :** Installation type: Specifies whether it is a new or upgrade installation.
 
-* **u :** Specifies the user or group that manages the service. Please ensure that this user exists in your Linux server. 
+* **u :** Specifies the user or group that manages the service. Please ensure that this user exists on your Linux server. 
 
 * **h :** Domain or IP address of the machine with HTTP protocol. 
 
-* **n :** Setting this to “true” will automatically configure the Bold BI with Nginx front-end server. 
+* **n :** Setting this to “true” will automatically configure Bold BI with the Nginx front-end server. 
 
-    >**IMPORTANT:** If you have any existing applications running in the Linux machine using Nginx, set “-n” value to false and configure the [Nginx manually](/deploying-bold-bi/deploying-in-linux/installation-and-deployment/bold-bi-on-ubuntu/#manually-configure-nginx)..  
+    >**IMPORTANT:** If you have any existing applications running on the Linux machine using Nginx, set “-n” value to false and configure [Nginx manually](/deploying-bold-bi/deploying-in-linux/installation-and-deployment/bold-bi-on-ubuntu/#manually-configure-nginx).
 
-    Example for new installation,
+    Example for new installation:
     ~~~shell
     sudo bash install-boldbi.sh -i new -u www-data -h http://linux.example.com -n true
     ~~~ 
 
 > **NOTE:** You can also [configure Bold BI with Apache server](/deploying-bold-bi/deploying-in-linux/deploy-bold-bi-using-apache-server/configure-apache-server-in-centos/) in CentOS.
 
-Once the installation completed, open the host URL in the browser and continue the application startup.
+Once the installation is completed, open the host URL in the browser and continue with the application startup.
 
 ## Manually Configure Nginx
 
-To configure Nginx as a reverse proxy to forward requests to the Bold BI app, modify `/etc/nginx/nginx.conf.` Open it in a text editor, and add the following code.
+To configure Nginx as a reverse proxy to forward requests to the Bold BI app, modify `/etc/nginx/nginx.conf.` Open it in a text editor and add the following code.
 
 ~~~shell
 #server {
@@ -208,10 +220,10 @@ server {
 }
 ~~~
 
-Once the Nginx configuration is established, run the `sudo nginx -t` to verify the syntax of the configuration files. If the configuration file test is successful, force the Nginx to pick up the changes by running the `sudo nginx -s reload.`
+Once the Nginx configuration is established, run `sudo nginx -t` to verify the syntax of the configuration files. If the configuration file test is successful, force Nginx to pick up the changes by running `sudo nginx -s reload`.
 
 ## Configure SSL
-If you have an SSL certificate for your domain and need to configure the site with your SSL certificate, follow these steps or you can skip this:
+If you have an SSL certificate for your domain and need to configure the site with it, follow these steps or you can skip this:
 1. Navigate to `/etc/nginx/conf.d`. Open the `boldbi-nginx-config.conf` file in a text editor.
 2. Uncomment the following marked lines in the Nginx config file.
 
@@ -221,15 +233,15 @@ If you have an SSL certificate for your domain and need to configure the site wi
 
     ![ssl configuration comment](/static/assets/installation-and-deployment/images/linux-ssl-configuration-comment.png)
 
-4. Replace the `example.com` with your domain name.
+4. Replace `example.com` with your domain name.
 
-5. Define the path of the SSL certificate: `ssl_certificate /etc/ssl/domain.crt.`
+5. Define the path of the SSL certificate: `ssl_certificate /etc/ssl/domain.crt`.
 
-6. Specify the directory where the SSL certificate key is located: `ssl_certificate_key /etc/ssl/domain.key.`
+6. Specify the directory where the SSL certificate key is located: `ssl_certificate_key /etc/ssl/domain.key`.
 
-7. Save and run the `sudo nginx -t` to verify the syntax of the configuration file. If the configuration file test is successful, force the Nginx to pick up the changes by running the `sudo nginx -s reload.`
+7. Save and run `sudo nginx -t` to verify the syntax of the configuration file. If the configuration file test is successful, force Nginx to pick up the changes by running `sudo nginx -s reload.`
 
-> **NOTE:** If you are configuring the application with SSL, you need to update the URLs in the product.json with `HTTPS` located in the `/var/www/bold-services/application/app_data/configuration.
+> **NOTE:** If you are configuring the application with SSL, you need to update the URLs in the product.json with `HTTPS` located in `/var/www/bold-services/application/app_data/configuration.
 
 ## Next steps
 

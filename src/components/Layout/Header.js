@@ -21,7 +21,7 @@ class MainHeader extends React.Component {
                     <a href="https://www.boldbi.com/support" target="_blank"><div className="doc-header-link doc-support-link">Support</div></a>
                     <a href={this.state.blogPath} target="_blank"><div className="doc-header-link doc-forum-link">Blog</div></a>
                     <div id="doc-content-search"></div>
-                    <a href="https://app.boldid.net/bi/embedded/register?plan=127&evaluation=v2&leadsource=www.boldbi.com&gclid=&referrerroriginurl=https://www.boldbi.com/page-sitemap1.xml&secondaryreferraloriginurl=https://help.boldbi.com/&_gl=1*1fncaio*_gcl_au*MjA5NDgyNDY2OS4xNjg5NjU4OTEx*_ga*NDcwNjgzMjYxLjE2ODk1NjkyMjk.*_ga_SRXJZD7EME*MTY5MDI3NDMwNy40MC4xLjE2OTAyNzg3ODEuMC4wLjA." target="_blank" role="button"><div class="header-demo-link">Start Free Trial</div></a>
+                    <a href="https://app.boldid.net/bi/embedded/register?plan=146&evaluation=v2&leadsource=www.boldbi.com&gclid=&referrerroriginurl=https://www.boldbi.com/page-sitemap1.xml&secondaryreferraloriginurl=https://help.boldbi.com/&host=server&quantity=1&_gl=1*1fncaio*_gcl_au*MjA5NDgyNDY2OS4xNjg5NjU4OTEx*_ga*NDcwNjgzMjYxLjE2ODk1NjkyMjk.*_ga_SRXJZD7EME*MTY5MDI3NDMwNy40MC4xLjE2OTAyNzg3ODEuMC4wLjA." target="_blank" role="button"><div class="header-demo-link">Start Free Trial</div></a>
                 </div>
             </SiteContainer>
         )

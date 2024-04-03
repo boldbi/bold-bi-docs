@@ -2,28 +2,28 @@
 layout: post
 title: How to unlist a dashboard from listing | Bold BI Docs
 description:  Learn about dashboards unlisting in Bold BI and how to unlist or hide a dashboard from the list of dashboards that are already shared using Bold BI.
-canonical: "/managing-resources/manage-dashboards/unlist-dashboards/" 
+canonical: "/managing-resources/manage-dashboards/unlisted-dashboards/" 
 platform: bold-bi
 documentation: ug
 ---
 
 # Unlisted Dashboards
 
-Unlisted dashboards will not be listed to any users other than the owner, but users with the dashboard link can access the dashboards directly with their permission.
+Unlisted dashboards will not be visible to any users other than the owner, but users with the dashboard link can access them directly with permission.
 
-This section explains how to unlist the dashboard from listing.
+This section provides instructions on how to unlist a dashboard from the listing.
 
 ### Steps to unlist a dashboard
 
-1. Click the `Share Permissions` option in the Dashboards grid context menu.
+1. Click on the `Share Permissions` option in the Dashboards grid context menu.
 
 	![Manage Permission](/static/assets/managing-resources/manage-dashboards/images/manage-permission-context.png)
 
-2. Then, click the ​`Change​` option.
+2. Then, click on the `Change` option.
     
 	![Change Access](/static/assets/managing-resources/manage-dashboards/images/change-access.png#width=45%)
 
-3. Select the checkbox `Unlist dashboard from listing` to mark the private/public dashboard as unlisted.
+3. Select the checkbox `Unlist dashboard from listing`to mark the private/public dashboard as unlisted.
   
 	![Unlist Dashboard](/static/assets/managing-resources/manage-dashboards/images/unlist-dashboard.png#width=45%)
 

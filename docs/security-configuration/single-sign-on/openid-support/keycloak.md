@@ -8,15 +8,15 @@ documentation: ug
 
 # Keycloak support for SSO authentication
 
-Keycloak is an open-source identity and Access Management solution designed for modern applications and services.
+Keycloak is an open-source identity and access management solution designed for modern applications and services.
 
-This section explains how to perform Single Sign-On for users in Keycloak with the Bold BI application using Open ID Connect.
+This section explains how to perform Single Sign-On for users in Keycloak with the Bold BI application using OpenID Connect.
 
-> **NOTE:** This feature is available in Bold BI Embedded Analytics but not in Cloud Analytics Server.
+> **NOTE:** This feature is available in Bold BI Embedded Analytics, but not in Cloud Analytics Server.
 
 ## How to register the Bold BI application in Keycloak
 
-> **NOTE:**  This configuration has to be done on the Keycloak website.
+> **NOTE:**  This configuration needs to be done on the Keycloak website.
 
 #### Prerequisites
 
@@ -25,15 +25,15 @@ This section explains how to perform Single Sign-On for users in Keycloak with t
 
 ### Steps to register the Bold BI application
 
-1. Log in to the Keycloak website with an admin account.
+1. Login to the Keycloak website using an admin account.
 
    ![Keycloak Admin console](/static/assets/site-administration/openid-support/images/Keycloak-adminconsole.png)
 
-2. Navigate to the Security admin console, then to the `Clients` page and, select the `Create` option.
+2. Please navigate to the Security admin console, then go to the `Clients` page and select the `Create` option.
 
    ![Keycloak Client Option](/static/assets/site-administration/openid-support/images/Keycloak-client.png)
 
-3. On the Add Client page, enter the client id and select the Client protocol as `openid-connect`, then click `Save`.
+3. On the Add Client page, enter the client ID and select the Client protocol as `openid-connect`, then click `Save`.
 
    ![Keycloak Application Page](/static/assets/site-administration/openid-support/images/Keycloak-application.png)
 
@@ -62,15 +62,15 @@ This section explains how to perform Single Sign-On for users in Keycloak with t
 
 </table>
 
-After successful registration with Keycloak, save these settings in the Bold BI settings page to enable this authentication.
+After successfully registering with Keycloak, save these settings on the Bold BI settings page to enable this authentication.
 
 ## Enable Keycloak authentication support in Bold BI
 
-Configure the settings in Bold BI as shown in the following screenshot to enable the authentication using Keycloak.
+Configure the settings in Bold BI as shown in the following screenshot to enable authentication using Keycloak.
 
 ![Keycloak Bi Settings](/static/assets/site-administration/openid-support/images/Keycloak-bi-settings.png)
 
-The fields to be saved in the Bold BI to enable the Keycloak for authentication are explained as follows.
+The fields that need to be saved in Bold BI in order to enable Keycloak for authentication are explained as follows.
 
 <table>
 
@@ -118,10 +118,10 @@ The fields to be saved in the Bold BI to enable the Keycloak for authentication 
 
 ## Login with Keycloak
 
-1. Go to the login page and select the Keycloak option to log in.
+1. Please navigate to the login page and choose the Keycloak option to log in.
 
    ![Keycloak Bi Login Option](/static/assets/site-administration/openid-support/images/Keycloak-bi-login-option.png)
 
-2. Fill in the username and password in the Keycloak login screen and sign in.
+2. Fill in the username and password on the Keycloak login screen and then proceed to sign in.
 
    ![Keycloak Bi Login](/static/assets/site-administration/openid-support/images/Keycloak-login.png)

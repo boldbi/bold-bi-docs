@@ -8,7 +8,7 @@ documentation: ug
 
 # Resource Migration
 
-Resource migration is the process of moving resources from one server to another. In Bold BI, you can migrate dashboards and data sources online, as well as dashboards offline.
+Resource migration is the process of moving resources from one server to another. In Bold BI, you can migrate dashboards and data sources online, as well as offline.
 
 ## Online Migration
 
@@ -18,7 +18,7 @@ Online migration refers to the process of migrating dashboards and data sources 
 
 Offline migration refers to the process of migrating dashboards from one Bold BI site to another Bold BI site without using an internet or network connection. This migration process involves downloading the dashboard as a physical file from the source site and then uploading it to the destination site. Offline migration does not require both the source and destination Bold BI sites to be online at the same time.
 
-You can explore the resource migration in detail here,
+You can explore resource migration in detail here:
 
 [Migrate Dashboards Online](/resource-migration/migrate-dashboards-online/)
 

@@ -8,10 +8,10 @@ documentation: ug
 ---
 
 # What is Single sign-on
-Single sign-on (SSO) is an authentication method that enables users to securely authenticate with multiple applications and websites by using just one set of credentials. This prevents the need for the user to log in separately into the different applications. With one security token (a username and password pair), you can enable and disable user access to multiple systems, apps, and other resources. It has overthrown the traditional login process. It reduces the time-consuming process to login to each application with different passwords.
+Single sign-on (SSO) is an authentication method that allows users to securely authenticate with multiple applications and websites using only one set of credentials. This eliminates the need for users to log in separately to different applications. By using a single security token (a combination of username and password), you can manage user access to multiple systems, apps, and resources. SSO has revolutionized the traditional login process and significantly reduces the time-consuming task of logging in to each application with different passwords.
 
 ## Supported SSO in Bold BI
-Bold BI has SSO support for the following login providers:
+Bold BI has single sign-on (SSO) support for the following login providers:
 * [Configure SSO with ADFS](/security-configuration/single-sign-on/azure-active-directory/)
 
 * [Configure SSO with OAuth 2.0](/security-configuration/single-sign-on/oauth-2.0-support/)

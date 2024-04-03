@@ -15,7 +15,7 @@ You can white label the Bold BI mobile application by following these requiremen
 * App Store Publishing
 
 ## Application White Labeling
-Use the `Content` and `Images` to represent the Bold BI branding in the mobile application with the following details:
+Utilize the `Content` and `Images` to showcase the Bold BI branding in the mobile application, incorporating the following details.
 
 ### Required Content for White Labeling
 
@@ -37,7 +37,7 @@ Use the `Content` and `Images` to represent the Bold BI branding in the mobile a
 
 ## Play Store Publishing
 
-You need the following content and images to represent your branding while publishing it in Play Store. 
+You need the following content and images to properly represent your branding when publishing it on the Play Store.
 
 ### Required Content for Publishing
 
@@ -180,11 +180,11 @@ You need the following content and images to represent your branding while publi
 | Screenshots for tablet <br>(Minimum 2 and maximum 8 screenshots). | <li>7-inch screenshot<li>10-inch screenshot | ![Screenshot for Phone](/static/assets/accessing-through-mobile-app/images/screenshot-for-tablet.png)|
 | Hi-res icon (App icon) | <li>512 x 512<li>32-bit PNG (with alpha) |  ![Hi Res Icon](/static/assets/accessing-through-mobile-app/images/hi-res-icon.png)|
 
-Please click this [link](https://support.google.com/googleplay/android-developer/answer/1078870 ), for more details about screenshots and images.
+Please click on this [link](https://support.google.com/googleplay/android-developer/answer/1078870 ) for more details about screenshots and images.
 
 ## App Store Publishing
 
-You need the following content and images to represent your branding while publishing it in App Store. 
+You will need the following content and images to represent your branding when publishing it in the App Store.
 
 ### Required Content for Publishing
 
@@ -280,9 +280,8 @@ You need the following content and images to represent your branding while publi
 | 9.7-inch retina display screenshots (may use 12.9-inch Display)<br><br><strong>Note:</strong><br>Need maximum 5 screenshots. | <li>72 dpi, RGB, flattened, and no transparency.<li>High-quality JPEG or PNG image file format.<li>Any of the following sizes:<ul><li>1024 x 748 pixels for minimum landscape (without status bar).<li>1024 x 768 pixels for maximum landscape (full screen).<li>2048 x 1496 pixels for minimum hi-res (without status bar).<li>2048 x 1536 pixels for maximum hi-res landscape (full screen).<li>768 x 1004 pixels for minimum portrait (without status bar).<li>768 x 1024 pixels for maximum portrait (full screen).<li>1536 x 2008 pixels for minimum hi-res portrait (without status bar).<li>1536 x 2048 pixels for maximum hi-res portrait (full screen). | ![App Store Publising Tablet](/static/assets/accessing-through-mobile-app/images/app-store-publishing-tablet.png) |
 | App Icon | 1024 x 1024 pixels (do not scale up smaller artwork, because this could appear pixelated and blurry).<br><br>72 dpi, RGB, flattened, no transparency, and no rounded corners.<br><br>High-quality JPEG or PNG image file format.<br><br><strong>Note:</strong><br> The small icon (57 x 57 pixels for iPhone and iPod touch, 50 x 50 and 72 x 72 pixels for iPad) that you include inside the build, is used on the device Home screen when installed. | ![App Store Publising App Icon](/static/assets/accessing-through-mobile-app/images/app-store-publishing-app-icon.png) |
 
-Please click this [link](https://developer.apple.com/library/content/documentation/LanguagesUtilities/Conceptual/iTunesConnect_Guide/Chapters/Properties.html#//apple_ref/doc/uid/TP40011225-CH26-SW10), for more details about screenshots and images.
-
+Please click on the [link](https://developer.apple.com/library/content/documentation/LanguagesUtilities/Conceptual/iTunesConnect_Guide/Chapters/Properties.html#//apple_ref/doc/uid/TP40011225-CH26-SW10) for more information about screenshots and images.
 > **NOTE:**<br>
-•	Screenshots must be in the JPG or PNG format, and in the RGB color space.<br>
-•	App previews must be in the M4V, MP4, or MOV format and cannot exceed 500 MB.
+> •	Screenshots must be in the JPG or PNG format, and in the RGB color space.<br>
+> •	App previews must be in the M4V, MP4, or MOV format and cannot exceed 500 MB.
 

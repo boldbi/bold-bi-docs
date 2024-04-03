@@ -8,13 +8,11 @@ documentation: ug
 
 # Recommended VM configuration to use Bold BI server on Microsoft Azure
 
-This section will explain the recommended Azure VM configuration to install the Bold BI server. For a complete list of all VM types and sizes, refer this [Windows Virtual Machine Types](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes)
-
-You have to choose the correct VM configuration to experience the performance in Bold BI.
+This section outlines the recommended VM configuration for the installation of the Bold BI server on Microsoft Azure. Selecting the correct VM configuration is crucial to experiencing optimal performance with Bold BI. For a comprehensive list of all VM types and sizes, please refer to this link: [Windows Virtual Machine Types](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes).
 
 ## VM types for test, development and production environments
 
- General Purpose type VM can be used in the test/development and in low level and medium level traffic data processing production environment. For more information about the sizes of General Purpose virtual machine, see [General Purpose VM sizes](https://docs.microsoft.com/en-us/azure/virtual-machines/sizes-general)
+Virtual Machines of the General Purpose type are ideally suited for test and development environments, as well as for production environments that process low to medium levels of traffic data. For detailed information regarding the sizes of General Purpose virtual machines, please refer to our comprehensive guide on [General Purpose VM sizes](https://docs.microsoft.com/en-us/azure/virtual-machines/sizes-general).
 
 ## Recommended specifications for test, development environments
 
@@ -49,9 +47,9 @@ You have to choose the correct VM configuration to experience the performance in
  </tr>
  </table>
 
- > **NOTE:**  We can use the above-recommended configuration machine for the low traffic production servers also.
+ > **NOTE:**  The above-recommended configuration machine can also be used for low-traffic production servers. 
 
-Memory Optimized type VM can be used in the high traffic and large data processing production environment. For more information about the sizes of Memory Optimized virtual machine, see [Memory Optimized VM sizes](https://docs.microsoft.com/en-us/azure/virtual-machines/sizes-memory)
+Optimized type VM is suitable for high traffic and large data processing production environments. For details on Memory Optimized VM sizes, refer to the [Memory Optimized VM sizes section](https://docs.microsoft.com/en-us/azure/virtual-machines/sizes-memory).
 
 ## Recommended specifications for production environment
 

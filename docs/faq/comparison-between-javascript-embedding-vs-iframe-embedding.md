@@ -83,8 +83,7 @@ We can embed below modules but user need to login each time due to cross site co
     </tr>
     <tr>
         <td align="left">Bold BI Pricing </td>
-        <td align="left">Requires embedding plans - Check the <a href="https://www.boldbi.com/pricing">pricing plans</a></td>
-        <td align="left">Anonymous embedding works on all plans whereas secure embedding works only on embedding plans.</td>
+        <td align="left" colspan="2">Embedding works on all plans - Check the <a href="https://www.boldbi.com/pricing">pricing plans</a></td>
     </tr>
     <tr>
         <td align="left">Embedding sample</td>

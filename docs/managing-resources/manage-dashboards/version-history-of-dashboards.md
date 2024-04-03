@@ -9,14 +9,14 @@ documentation: ug
 
 # Version History
 
-Versions and file logs for each Dashboard will be maintained in the Dashboard server for every changes in the Dashboard.
+Versions and file logs for each Dashboard will be maintained on the Dashboard server for every change in the Dashboard.
 
 ### Versions
-For each change in the `.sydx` file, a new version will be created. All versions can be individually opened. At any time, the Dashboard can be rolled back to an older version.
+For each change in the `.sydx` file, a new version will be created. All versions can be opened individually. The Dashboard can be rolled back to an older version at any time.
 
 ![Versions](/static/assets/managing-resources/manage-dashboards/images/versions.png)
 
 ### File logs
-For each change in the Dashboard, file logs will be added, including changes to the name, description, make public, make private, and security.
+For each change in the Dashboard, file logs will be added, including changes to the name, description, making public, making private, and security.
 
 ![File logs](/static/assets/managing-resources/manage-dashboards/images/file-logs.png)

@@ -14,10 +14,10 @@ Before integrating Azure AD B2C with Bold BI, ensure the [Configure Azure AD B2C
 
 ## Configure Azure AD B2C in User Management Server
 
-1. In Bold BI Settings, Click `Authentication` and Select the `Azure AD B2C` tab.
+1. In Bold BI Settings, click on `Authentication` and select the `Azure AD B2C` tab.
     ![Authentication settings](/static/assets/multi-tenancy/images/azure-ad-b2c-page.png)
 
-3. `Enable Azure AD B2C` and provide the following details.
+2. `Enable Azure AD B2C` and enter the required details.
 
     <table>
 
@@ -55,21 +55,20 @@ Before integrating Azure AD B2C with Bold BI, ensure the [Configure Azure AD B2C
 
 ## Where to get Azure AD B2C settings
 
-* In the Azure AD B2C tenant, under the `Overview`, select the tenant’s name from the domain name.
+* In the Azure AD B2C tenant, under `Overview`, select the tenant's name from the domain name.
     ![Azure AD B2C setting tenant name](/static/assets/multi-tenancy/images/azure-ad-b2c-setting-tenant-name.png)
 
-* Select the registered application, get the application id, and Provide the created user flow name as the policy name.
+* Select the registered application, obtain the application ID, and provide the created user flow.
     ![Azure AD B2C settings application id](/static/assets/multi-tenancy/images/azure-ad-b2c-setting-application-id.png)
 
 ## Set Azure AD B2C as default authentication
 
-Azure AD B2C can be set as default authentication when the [Azure AD B2C settings](/multi-tenancy/site-administration/authentication/azure-b2c-settings/#configure-azure-ad-b2c-in-user-management-server) is enabled.
-
+Azure AD B2C can be set as the default authentication when the [Azure AD B2C settings](/multi-tenancy/site-administration/authentication/azure-b2c-settings/#configure-azure-ad-b2c-in-user-management-server) are enabled.
 Follow these steps to configure the default authentication.
 
-1. In the settings page, click the `Authentication` tab and select `General`.
+1. On the settings page, click the `Authentication` tab and select `General`.
 
-2. Enable the **Enable Default Authentication** option and select the **Azure AD B2C** as default authentication provider as shown in the following screenshot.
+2. Enable the **Enable Default Authentication** option and select **Azure AD B2C** as the default authentication provider as shown in the following screenshot.
 
    ![Enable Azure AD B2C Default Authentication](/static/assets/multi-tenancy/images/azure-ad-b2c-default-authentication.png)
 
@@ -81,46 +80,46 @@ Disabling the Enable Default Authentication option and then clicking `Save` will
 
 ## Configure Azure AD B2C tenant in Azure portal
 
-You have an Azure subscription for configuring the Azure AD B2C tenant in the Azure portal. If you don't have one, create a [free account](https://azure.microsoft.com/free/).
+You have an Azure subscription for configuring the Azure AD B2C tenant in the Azure portal. If you don't have one, please create [free account](https://azure.microsoft.com/free/).
 
-> **NOTE:** For complete information on configuring Azure AD B2C, check the [official B2C documentation](https://docs.microsoft.com/en-us/azure/active-directory-b2c/tutorial-create-tenant) which includes tutorials on creating a B2C tenant, registering applications, and more.
+> **NOTE:** For comprehensive information on configuring Azure AD B2C, refer to the [official B2C documentation](https://docs.microsoft.com/en-us/azure/active-directory-b2c/tutorial-create-tenant), which includes tutorials on creating a B2C tenant, registering applications, and more.
 
 ### Create Azure AD B2C Tenant
 
-To create an Azure AD B2C tenant, please refer to the link [Create Azure AD B2C Tenant](https://docs.microsoft.com/en-us/azure/active-directory-b2c/tutorial-create-tenant)
+To create an Azure AD B2C tenant, please refer to the link [Create Azure AD B2C Tenant](https://docs.microsoft.com/en-us/azure/active-directory-b2c/tutorial-create-tenant).
 
 ### Register a web application
 
-After creating an Azure AD B2C tenant, please follow these steps to register a new application into the tenant.
+After creating an Azure AD B2C tenant, please follow these steps to register a new application into the tenant:
 
-1. Select `App registration` in the left side menu, select `New Registration` and give your app a new name.
+1. Select `App registration` in the left side menu, choose `New Registration`, and give your app a new name.
 
 2. Select `Accounts in any identity provider or organizational directory (for authenticating users with user flows)` under Supported account types.
 
 3. Under Redirect URI, select `Web,` then enter the URL of the Bold BI application. Example `https://localhost:5000`.
 
-4. Under Permissions, select the Grant admin consent to OpenID and offline_access permissions check box and select Register.
+4. Under Permissions, select the "Grant admin consent to OpenID and offline_access permissions" check box, and then select Register.
 
-5. Select the registered application, under `Manage,` select `Authentication,` then select the `Access tokens (used for implicit flows)` check box and save the changes.
+5. Select the registered application, under `Manage`, choose `Authentication`, then select the `Access tokens (used for implicit flows)` check box and save the changes.
     ![Register a web application](/static/assets/multi-tenancy/images/azure-b2c-register-web-application.png)
 
 ### Create user flow
 
 > **NOTE:** In creating user flow, support is provided for the `sign up and sign in` or `sign in` options.
 
-1. Go to `Policies,` select `User flows,` and then Click `+ New user flow`.
+1. Go to `Policies`, select `User flows`, and then click `+ New user flow`.
 
-2. Select `Sign up and sign in` or `sign in` is `Recommended,` and click `Create.`
+2. Select `Sign up and sign in` or `sign in` is `Recommended`, and click `Create`.
 
     ![Create user flow](/static/assets/multi-tenancy/images/azure-b2c-create-user-flow.png)
 
-3. After that, complete the following configuration of user flow creation.
+3. After that, complete the following configuration of user flow creation:
 
    Name: Enter a name for the flow, for example, signupsignin1.
 
    Local accounts: Select Email Sign up.
 
-   User attributes and token claims: Select the following listed attributes that will be collected from the user during sign-up and select the claims that will be returned in the token. Please ensure the following mentioned claims are selected.
+   User attributes and token claims: Select the listed attributes that will be collected from the user during sign-up and select the claims that will be returned in the token. Please ensure the mentioned claims are selected.
     
     <table>
 
@@ -153,5 +152,5 @@ After creating an Azure AD B2C tenant, please follow these steps to register a n
     
     ![Azure B2C select attribute](/static/assets/multi-tenancy/images/select-attribute.png)
 
-4. Select the policy and the `application claims` on the left side. Then ensure the following items are selected. If not, select and save the changes.
+4. Select the policy and the `application claims` on the left side. Then, ensure that the following items are selected. If they are not, make sure to select and save the changes.
     ![Azure B2C select overview](/static/assets/multi-tenancy/images/azure-b2c-application-claims.png)

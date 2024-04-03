@@ -10,20 +10,20 @@ documentation: ug
 
 This section explains how to schedule the synchronization of users and groups from Active Directory with the users and groups in the Bold BI Server.
 
-> **NOTE:**  Please configure [Active Directory Settings](/site-administration/user-directory-settings/active-directory/active-directory/), before you schedule synchronization of Active Directory users and groups. This feature is available in Bold BI Embedded Analytics but not in Cloud Analytics Server.
+> **NOTE:**  Please configure [Active Directory Settings](/site-administration/user-directory-settings/active-directory/active-directory/) before scheduling the synchronization of Active Directory users and groups. This feature is available in On-Premises Deployment but not in Syncfusion Managed Cloud Server.
  
 
 ![Active Directory Synchronization Schedule](/static/assets/site-administration/images/active-directory-schedule-synchronization.png)
 
-Users and groups of the specified distinguished name from Active Directory can be synchronized to update the details in the Server to make the details synchronized up to date.
+Users and groups of the specified distinguished name from Active Directory can be synchronized to update the details in the Server to ensure the details are up to date.
 
-The Active Directory Synchronization can be done for the below objects,
+Active Directory Synchronization can be done for the following objects:
 1. Users
 2. Groups   
 
-The users will be removed or added in the Bold BI Server based on its availability in the specified distinguished name from Active Directory during the synchronization process.
+During the synchronization process, users will be removed or added in the Bold BI Server based on their availability in the specified distinguished name from Active Directory.
 
-Please find more details on the synchronization of users and groups from Active Directory with Bold BI Server in the below links.
+For more details on synchronizing users and groups from Active Directory with the Bold BI Server, please refer to the following links:
 
 [Synchronize Active Directory Users](/managing-resources/manage-users/synchronize-active-directory-users/)
 
@@ -31,8 +31,8 @@ Please find more details on the synchronization of users and groups from Active 
 
 ## Email Notifications
 
-Once a scheduled recurrence of synchronization is completed, the users in the `System Administrator` group will be notified through email about the synchronization status.
+Once a scheduled recurrence of synchronization is completed, users in the `System Administrator` group will be notified through email about the synchronization status.
 
 ## Enable/Disable Synchronization schedule 
 
-Synchronization schedule can be enabled or disabled anytime from the top check box.
+The synchronization schedule can be enabled or disabled at any time using the top checkbox.

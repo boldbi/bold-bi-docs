@@ -8,15 +8,17 @@ documentation: ug
 
 # Prerequisites and Deployment of Embedded BI
 
-This section explains the prerequisites for installing Bold BI in your server and about its deployment in Windows, Azure, and Linux, and Kubernetes.
+This section provides comprehensive guidance on the prerequisites for installing Bold BI on your server and details about its deployment on various platforms including Windows, Azure, Linux, and Kubernetes. 
 
-You can explore the prerequisites and deployment in detail here,
+Here, you can delve into the detailed prerequisites and deployment processes:
 
 [Overview and system requirements for Bold BI](/deploying-bold-bi/overview/)
 
 [Deploying in Windows](/deploying-bold-bi/deploying-in-windows/)
 
 [Deploying in Azure](/deploying-bold-bi/deploying-in-azure/)
+ 
+[Deploying in AWS](/deploying-bold-bi/deploying-in-aws/)
 
 [Deploying in Azure App Service](/deploying-bold-bi/deploying-in-azure-app-service/)
 

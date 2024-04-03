@@ -18,4 +18,4 @@ This section explains about how to add the user defined widgets in the dashboard
 
 [Debug Custom Widget](/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/debugging-custom-widget/)
 
-> **NOTE:** This feature is available in Bold BI Embedded Analytics but not in Cloud Analytics Server.
+> **NOTE:** This feature is available in On-Premises Deployment but not in Syncfusion Managed Cloud Server.

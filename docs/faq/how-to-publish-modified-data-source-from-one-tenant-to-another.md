@@ -9,7 +9,7 @@ documentation: ug
 
 # How to publish modified data sources from one tenant to another
 
-To modify the connection string of the corresponding data source of a dashboard dynamically in the destination tenant using [Custom Attribute](/working-with-data-source/configuring-custom-attribute/#site-level-attribute) support, create and save the required data source connection string details as custom attribute in both source and destination tenants with the same attribute key and use it in the dynamic connection string value of a corresponding data source in a dashboard of a source tenant.
+To modify the connection string of the corresponding data source of a dashboard dynamically in the destination tenant using [Custom Attribute](/working-with-data-sources/configuring-custom-attribute/#site-level-attribute) support, create and save the required data source connection string details as custom attribute in both source and destination tenants with the same attribute key and use it in the dynamic connection string value of a corresponding data source in a dashboard of a source tenant.
 
 Find the list of connections with the connection string details as follows,
 
@@ -222,6 +222,27 @@ Find the list of connections with the connection string details as follows,
             }
    </td></tr>
    </table>
+
+ * Google BigQuery
+   <table>
+   <tr><td>               
+                
+            {
+
+               "ServiceId" = "",
+               "Service" = "",
+               "Provider" = "",
+               "Database" = "",
+               "IsServiceAccount" = "",
+               "ClientID" = "",
+               "Type" = "",
+               "ClientEmail" = "",
+               "PrivateKey" = ""
+            }
+   </td></tr>
+   </table>
+
+>**NOTE** :This is supported only for Service Account Authentication
 
 Follow these steps to publish the modified data sources from one tenant to another
 

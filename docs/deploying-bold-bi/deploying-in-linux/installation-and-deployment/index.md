@@ -8,13 +8,17 @@ documentation: ug
 
 # Bold BI Linux Package Installation and Deployment
 
-Bold BI Linux can run in Ubuntu and CentOS operating systems.
+Bold BI Linux is compatible with Ubuntu, CentOS, Oracle, and RedHat operating systems.
 
 [Bold BI Version 4.1 or Older](/deploying-bold-bi/deploying-in-linux/installation-and-deployment/v4.1-or-older/)
 
 [Bold BI on Ubuntu](/deploying-bold-bi/deploying-in-linux/installation-and-deployment/bold-bi-on-ubuntu/)
 
 [Bold BI on CentOS](/deploying-bold-bi/deploying-in-linux/installation-and-deployment/bold-bi-on-centos/)
+
+[Bold BI on RHEL](/deploying-bold-bi/deploying-in-linux/installation-and-deployment/bold-bi-on-redhat/)
+
+[Bold BI on Oracle](/deploying-bold-bi/deploying-in-linux/installation-and-deployment/bold-bi-on-oracle/)
 
 [Auto Deployment](/deploying-bold-bi/deploying-in-linux/installation-and-deployment/auto-deployment/)
 

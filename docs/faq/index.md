@@ -230,8 +230,20 @@ The following are the frequently asked questions in Bold BI Enterprise:
 
 [How to hide sample dashboards option in Bold BI](/faq/how-to-hide-sample-dashboards-option-in-bold-bi-application/)
 
+[How to change schema while uploading the dashboard via API](/faq/how-to-change-schema-while-upload-dashboard-via-api/)
+
 [How to deploy a Bold BI with N windows servers using load balancer](/faq/how-to-deploy-bold-bi-using-load-balancer-with-n-windows-servers/)
 
 [How to apply widget filters using both initial rendering and on-demand in embedding](/faq/how-to-apply-widget-filters-using-both-initialrendering-and-ondemand-in-embedding/)
 
 [How to restart the bold bi embedded application](/faq/how-to-restart-the-bold-bi-embedded-application/)
+
+[How to register an Azure app with mail-sending API permissions and restrict its access to specific mailboxes?](/faq/how-to-register-an-azure-app-with-mail-sending-permissions/)
+
+[What are the different request object properties of Group Imports Setting for each OAuth and OpenID Provider Type](/faq/what-are-the-different-request-object-properties-of-group-imports-setting-for-each-oauth-and-openid-provider-type/)
+
+[How to integrate Bold BI dashboards with Git](/faq/how-to-integrate-bold-bi-dashboards-with-git/)
+
+[Customizing the Start Day of the Week in Bold BI](/faq/customizing-the-start-day-of-the-week-in-bold-bi/)
+
+[What are the ways to securely access data behind firewall in Bold BI](/faq/ways-to-securely-access-data-behind-firewall-in-bold-bi/)

@@ -8,24 +8,24 @@ documentation: ug
 
 # Font Style
 
-By default, the Bold BI application will load the text using the **Robotoregular** font style. Using this option, you can change the font style of the Bold BI application.
+By default, the Bold BI application will load the text using the **Robotoregular** font style. With this option, you can change the font style of the Bold BI application.
 
 ## Add font
 
-Please follow the below steps to upload a new font style.
+To add a new font, please follow the steps below:
 
-Go to the `Look and Feel` settings page, and Click the `Add a new font` option.
+Go to the `Look and Feel` settings page and click on the `Add a new font` option.
 
    ![Add-font-option](/static/assets/multi-tenancy/images/look-and-feel/add-font-option.png)
 
-`Browse` the font file and Click `Upload` in the dialog.
+`Browse` the font file and click `Upload` in the dialog.
 
    ![Upload-font-dialog](/static/assets/multi-tenancy/images/look-and-feel/upload-font-dialog.png)
 
-The uploaded font file will be listed in the Font Style drop-down. `Select` the uploaded font and `save` the settings. 
+The uploaded font file will be listed in the Font Style drop-down. `Select` the uploaded font and `save` the settings.
 
    ![Font-style-dropdown](/static/assets/multi-tenancy/images/look-and-feel/font-style-dropdown.png)
 
-Here is the sample image after applying the font.
+Here is a sample image after applying the font.
 
    ![Font-applied](/static/assets/multi-tenancy/images/look-and-feel/font-applied.png)

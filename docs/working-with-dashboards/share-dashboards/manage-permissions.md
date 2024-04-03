@@ -9,6 +9,6 @@ documentation: ug
 
 # Manage Permissions
 
-You can provide dashboard access to users or groups with Read, Read and Write, or Read, Write, and Delete permissions and you can also revoke that access using the share permission dialog on the dashboard listing page.
+You can grant dashboard access to users or groups with Read, Read and Write, or Read, Write, and Delete permissions. You can also revoke this access using the share permission dialog on the dashboard listing page.
 
-Please visit [Manage dashboard](/managing-resources/manage-dashboards/share-dashboards/) for more information.
+For more information, please visit the [Manage dashboard](/managing-resources/manage-dashboards/share-dashboards/) section.

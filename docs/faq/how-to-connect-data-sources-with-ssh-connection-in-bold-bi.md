@@ -31,7 +31,7 @@ Bold BI application allows you to enable SSH for the supported data sources by f
 
 ## Steps to connect to a data source with SSH connection
 
-1.	Refer to the [Connecting to Bold BI data sources](/working-with-data-source/data-connectors/) for successfully connecting to any of the above supported data sources.
+1.	Refer to the [Connecting to Bold BI data sources](/working-with-data-sources/data-connectors/) for successfully connecting to any of the above supported data sources.
 
 2.	For connecting to the data source with SSH connection, you need to enable the **Enable SSH** checkbox and enter the required SSH details along with the existing data source server details and click **Connect.**
 

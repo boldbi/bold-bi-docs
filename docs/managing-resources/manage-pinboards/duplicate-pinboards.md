@@ -9,7 +9,7 @@ documentation: ug
 
 # Duplicate a Particular Pinboard
 
-This section explains how to duplicate Pinboard in the Bold BI application.
+This section explains how to duplicate a Pinboard in the Bold BI application.
 
 ### Steps to duplicate a Pinboard
 
@@ -21,4 +21,4 @@ This section explains how to duplicate Pinboard in the Bold BI application.
 
     ![Save Duplicate](/static/assets/managing-resources/manage-pinboards/images/save-duplicate.png#width=50%)
 
-3. A duplicated Pinboard has been saved and it will be loaded automatically.
+3. The duplicated Pinboard has been saved and will be loaded automatically.

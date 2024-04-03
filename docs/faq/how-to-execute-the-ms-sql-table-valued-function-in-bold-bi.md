@@ -36,9 +36,9 @@ Create a table-valued function in the `Microsoft SQL Server` before connecting t
 
 ## Executing the table-valued function in Bold BI
 
-1.	Refer to the [Connecting Bold BI to SQL data source](/working-with-data-source/data-connectors/sql-data-source/#connecting-bold-bi-to-microsoft-sql-server-data-source) to successfully connect to it.
+1.	Refer to the [Connecting Bold BI to SQL data source](/working-with-data-sources/data-connectors/sql-data-source/#connecting-bold-bi-to-microsoft-sql-server-data-source) to successfully connect to it.
 
-2.	After connecting to the data source, [switch to the code view](/working-with-data-source/data-connectors/sql-data-source/#switch-to-code-view) by enabling the slider option in the tools pane in the data design view, and you can find the query editor window in which you can execute the custom queries as follows.
+2.	After connecting to the data source, [switch to the code view](/working-with-data-sources/data-connectors/sql-data-source/#switch-to-code-view) by enabling the slider option in the tools pane in the data design view, and you can find the query editor window in which you can execute the custom queries as follows.
 
 	![Code view mode](/static/assets/faq/images/tablevalued-code-view.png#max-width=100%)
 	

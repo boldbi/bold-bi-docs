@@ -8,29 +8,29 @@ documentation: ug
 
 # Manage Admin access to the users
 
-This section explains how to add or remove admin access to the users into the Bold ID Server.
+This section explains how to add or remove admin access to users in the Bold ID Server.
 
 ## Assign Admin Role
 
-Login into UMS User management page `{Bold BI URL}/ums/administration/user-management/users` using the existing admin credentials.
+To assign the Admin Role, log in to the UMS User management page at `{Bold BI URL}/ums/administration/user-management/users` using the existing admin credentials.
 
-From user listing page, select the users to assign the admin role. Use `CTRL + Click` for selecting multiple users.
+From the user listing page, select the users to assign the admin role. Use `CTRL + Click` to select multiple users.
 
-Once, you have selected the users, you can choose `Make Admin` option.
+Once you have selected the users, you can choose the `Make Admin` option.
 
 ![Select Users from User Management page](/static/assets/multi-tenancy/images/ums-user-management.png)
 
-After choosing the `Make Admin` option, the confirmation window will open and click `Yes` to assign admin role for the selected users.
+After choosing the `Make Admin` option, a confirmation window will open. Click `Yes` to assign the admin role to the selected users.
 
 ![Assign Admin Role Confirmation](/static/assets/multi-tenancy/images/admin-role-confirmation.png)
 
 
 ## Remove Admin Role
 
-You can select any user to remove their admin role with the admin credentials.
+To remove the Admin Role, select any user with the admin credentials.
 
 ![Admin Users confirmation](/static/assets/multi-tenancy/images/remove-admin-option.png)
 
-After choosing the `Remove Admin` option, the confirmation window will open and click `Yes` to remove admin role for the selected users.
+After choosing the `Remove Admin` option, a confirmation window will open. Click `Yes` to remove the admin role for the selected users.
 
 ![Remove Admin Confirmation](/static/assets/multi-tenancy/images/remove-admin-confirmation.png) 

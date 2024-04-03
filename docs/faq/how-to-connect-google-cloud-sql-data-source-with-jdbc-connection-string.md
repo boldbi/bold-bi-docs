@@ -18,7 +18,7 @@ You cannot directly pass the JDBC URL in Bold BI, but you can connect to Google 
 
 ## Connecting Google Cloud SQL with JDBC URL
  
-1.  Refer to the [Choosing Google Cloud SQL data source documentation](/working-with-data-source/data-connectors/google-cloud-sql/#choose-google-cloud-sql-data-source) for choosing the data source from the connectors.
+1.  Refer to the [Choosing Google Cloud SQL data source documentation](/working-with-data-sources/data-connectors/google-cloud-sql/#choose-google-cloud-sql-data-source) for choosing the data source from the connectors.
 
 2.	After clicking the data source, the **NEW DATA SOURCE** configuration panel opens.
 

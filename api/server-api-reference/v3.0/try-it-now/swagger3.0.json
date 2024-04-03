@@ -63,9 +63,6 @@
           "400" : {
             "description" : "Email address is empty"
           },
-          "401" : {
-            "description" : "Invalid email or password"
-          },
           "404" : {
             "description" : "User detail not found."
           },

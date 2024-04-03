@@ -8,7 +8,7 @@ documentation: ug
 
 # Reset Password for Bold BI version 3.3 or older
 
-You can reset the current password of any user using their email address with this command. Please follow these steps:
+You can reset any user's current password using their email address with this command. Please follow these steps:
    
 1. Open the command prompt and change the directory to the admin utility location. 
 ~~~
@@ -22,4 +22,4 @@ AdminUtils.exe reset -u 'user email here' -p 'new password here'
 ~~~  
 ![reset-command](/static/assets/admin-utility/images/resetcmd.png) 
 
-3. Once, the password has been successfully reset, the user can login with the new password.
+3. Once the password has been successfully reset, the user can log in with the new password.

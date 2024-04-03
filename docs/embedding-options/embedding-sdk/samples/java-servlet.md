@@ -8,15 +8,15 @@ documentation: ug
 
 # Bold BI Dashboards embedding in Java Servlet using Embedded SDK
 
-A GitHub link has been provided to [get](https://github.com/boldbi/java-servlet-sample) the sample application, which demonstrates the rendering of dashboard available in your Bold BI server and followed by steps to create a new embedding application in the `Java Servlet` on your own. 
+A GitHub link has been provided to [get](https://github.com/boldbi/java-servlet-sample) the sample application, which demonstrates the rendering of the dashboard available on your Bold BI server. This is followed by steps to create a new embedding application in `Java Servlet` on your own. 
 
-> **NOTE:** The best way to get started would be reading the [Getting Started](/getting-started/embedding-in-your-application/) section of the documentation.  The `Getting Started` guide gives you enough information that you need to know before working on the sample.      
+> **NOTE:** The best way to get started would be to read the [Getting Started](/getting-started/embedding-in-your-application/) section of the documentation. The `Getting Started` guide provides you with enough information that you need to know before working on the sample.     
 
 ## How to run the sample
 
  1. Please [get](https://github.com/boldbi/java-servlet-sample) the Java Servlet project from this link.
 
- 2. You need to set your embed property details in the `index.jsp` and `BoldBI.java.`
+ 2. You need to set the embed property details in the `index.jsp` and `BoldBI.java`.
     ![Embed Properties in Index](/static/assets/javascript/sample/images/java-index-props.png)
     ![Embed Properties in API](/static/assets/javascript/sample/images/java-boldbi-props.png)  
     
@@ -51,16 +51,16 @@ A GitHub link has been provided to [get](https://github.com/boldbi/java-servlet-
     </table>
 
 
- 3. You can get your Embed Secret key from the administrator setting section. Please refer to this [link](/site-administration/embed-settings/) for more details.    
+ 3. You can obtain your Embed Secret key from the administrator settings section. Please refer to this [link](/site-administration/embed-settings/) for more details.    
 
- 4. Run your Java Servlet project.
+ 4. Execute your Java Servlet project.
 
 ## How this sample works
 
- 1. Based on the `dashboardId` provided in the `index.jsp`, authorize the server by calling the `doPost` function using the `AuthorizeURL(http://localhost:8080/BoldBIEmbed/BoldBI.do)` with the provided EmbedProperties values. 
+ 1. To authorize the server, call the `doPost` function using the `AuthorizeURL(http://localhost:8080/BoldBIEmbed/BoldBI.do)` with the provided EmbedProperties values, based on the `dashboardId` provided in the `index.jsp`.
     ![Get Embed Details](/static/assets/javascript/sample/images/java-authorize.png)
 
- 2. In the above authorization, generate the SignatureURL with the provided EmbedSecret key and embed details, which can be validated in the Bold BI Server API, and returns the token. Based on the returned token, the dashboard will be started to render in the `index.jsp`.
+ 2. In the previous authorization, generate the SignatureURL using the provided EmbedSecret key and embed details. This SignatureURL can be validated in the Bold BI Server API and will return a token. Based on the returned token, the dashboard will begin rendering in the `index.jsp`.
 
- 3. In the `index.jsp`, change the dashboard Id of the respective dashboard based on your requirement.
+ 3. In the `index.jsp`, change the dashboard ID of the respective dashboard according to your requirement.
     ![Set Dashboard Id](/static/assets/javascript/sample/images/java-dashboard.png)  

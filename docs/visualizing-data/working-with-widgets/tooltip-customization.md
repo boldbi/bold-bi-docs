@@ -39,13 +39,13 @@ The following sections discuss about how to add additional tooltip fields and ho
 6.	Now, the widget will be rendered and on mouse hover, it will show the additional information as tooltip points for the configured measure. 
  ![Widget with tooltip](/static/assets/visualizing-data/working-with-widgets/images/Tooltip06.png)
 
-> **IMPORTANT:** <br>
-    1. Only measure fields are allowed as additional tooltip fields. If the Dimension field is added in the tooltip section, it will only act as a measure field.<br>
-    2. This section is optional. If no additional fields are required, you need not add any fields in the tooltip section.<br>
-    3. Tooltip fields do not affect the visualization and the values are displayed in the tooltip points only.<br> 
-    4. You can add any number of tooltip fields as per requirement.<br>
-    5. All type of charts, Choropleth Map, Bubble Map, Map, Tree map, and Heat map are supporting the tooltip fields.<br> 
-    6. Tooltip fields are currently not supported in the KPI Card, Number Card, Radial Gauge, Grid, Pivot Grid, Image, Label, and the filter widgets. 
+> **IMPORTANT:**
+* Only measure fields are allowed as additional tooltip fields. If the Dimension field is added in the tooltip section, it will only act as a measure field.
+* This section is optional. If no additional fields are required, you need not add any fields in the tooltip section.
+* Tooltip fields do not affect the visualization and the values are displayed in the tooltip points only.
+* You can add any number of tooltip fields as per requirement.
+* All type of charts, Choropleth Map, Bubble Map, Map, Tree map, and Heat map are supporting the tooltip fields.
+* Tooltip fields are currently not supported in the Radial Gauge, Grid, Pivot Grid, Image, Label, and the filter widgets. 
 
 ## How to format the tooltip values
 You can customize the tooltip field name and the format of the displayed data value. 

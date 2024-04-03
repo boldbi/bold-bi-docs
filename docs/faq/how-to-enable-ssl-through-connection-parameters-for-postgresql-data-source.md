@@ -13,9 +13,9 @@ Bold BI application allows you to enable SSL through connection parameters in th
 
 ## Steps to connect PostgreSQL with SSL
 
-1.	Refer to the [Connecting Bold BI to PostgreSQL data source](/working-with-data-source/data-connectors/postgresql/#connecting-bold-bi-to-postgresql-data-source) for successfully connecting to it.
+1.	Refer to the [Connecting Bold BI to PostgreSQL data source](/working-with-data-sources/data-connectors/postgresql/#connecting-bold-bi-to-postgresql-data-source) for successfully connecting to it.
 
-2.	For connecting the [PostgreSQL](/working-with-data-source/data-connectors/postgresql/) with SSL connection, you need to add the connection string **sslmode=Require;TrustServerCertificate=true** in the **Additional connection parameters** textbox along with the existing server details and click **Connect.**
+2.	For connecting the [PostgreSQL](/working-with-data-sources/data-connectors/postgresql/) with SSL connection, you need to add the connection string **sslmode=Require;TrustServerCertificate=true** in the **Additional connection parameters** textbox along with the existing server details and click **Connect.**
 
     ![Additional COnnection Parameters](/static/assets/faq/images/additional-parameters.png#max-width=40%)
 

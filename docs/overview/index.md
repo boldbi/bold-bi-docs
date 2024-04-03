@@ -5,18 +5,17 @@ description: Study the overview of Bold BI and know about its two ways of embedd
 canonical: "/overview/"
 platform: bold-bi
 documentation: ug
-
 ---
 
 # Overview of Bold BI
 
-Bold BI is a complete embedded analytics platform that aims to bring the power of analytics to the end users for different use cases as part of their business applications. With its modern data architecture model and associated in-built capabilities, you can empower your users in making data-driven decisions more effectively. 
+Bold BI is a comprehensive embedded analytics platform designed to empower end users with data-driven decision-making capabilities. Our solution is tailored for a variety of use cases, enabling you to integrate powerful analytics directly into your business applications.
 
-With Bold BI, you can connect to your data, transform it to your needs, create dashboard with related KPIs, and share it with your users for collaboration. In between these processes, there are several other capabilities that can be enabled based on your use case requirement.  
+Our platform utilizes a modern data architecture model and boasts a range of in-built capabilities. With Bold BI, you can connect to your data, modify it to suit your specific needs, construct dashboards with relevant KPIs, and share these with your users to facilitate collaboration. Additionally, depending on your use case requirements, several other features can be enabled throughout these processes.
 
-Bold BI comes with various deployment options. You can use the Syncfusion Cloud Managed service or deploy Bold BI in your cloud environment or on-premise servers.
+Bold BI also offers flexible deployment options. You can take advantage of the Syncfusion Cloud Managed service, or choose to deploy Bold BI in your own cloud environment or on-premise servers.
 
-Embedding is supported with any of these deployment options. Two different embedding methods are supported: JavaScript Embedding and IFrame Embedding. However, JavaScript Embedding is the recommended one due to its benefit of seamless website integration experience through our Embedded SDK APIs.
+Whichever deployment you opt for, integration is supported through two different methods: JavaScript Embedding and IFrame Embedding. We recommend JavaScript Embedding for its seamless website integration experience, delivered via our Embedded SDK APIs. This method ensures a smooth and consistent user experience, further enhancing the value of your analytics.
 
 [Creating a dashboard](/getting-started/creating-dashboard/)
 

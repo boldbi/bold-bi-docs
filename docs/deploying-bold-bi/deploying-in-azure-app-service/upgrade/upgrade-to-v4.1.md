@@ -8,9 +8,9 @@ documentation: ug
 
 # Upgrade to v4.1
 
-Follow these steps to upgrade the Bold BI Azure App service to the version 4.1:
+Follow these steps to upgrade the Bold BI Azure App service to version 4.1:
 
-1. Log in to [Azure Portal](https://portal.azure.com) and select the Bold BI Azure App Service in Microsoft Azure Services.
+1. Log in to the [Azure Portal](https://portal.azure.com) and select the Bold BI Azure App Service in Microsoft Azure Services.
 
 2. In the **Overview** section, click **Stop**.
 
@@ -20,27 +20,27 @@ Follow these steps to upgrade the Bold BI Azure App service to the version 4.1:
 
     ![Deployment center](/static/assets/installation-and-deployment/images/arm-upgrade-deployment-center.png)
 
-4. To upgrade v4.1.36, you need to migrate the v3.3.40 or v3.3.88 UMS blob resources to a new blob structure. For that, click **Sync** in the deployment center blade.
+4. To upgrade to v4.1.36, you need to migrate the v3.3.40 or v3.3.88 UMS blob resources to a new blob structure. To do that, click **Sync** in the deployment center blade.
 
      ![Deployment center utility sync](/static/assets/installation-and-deployment/images/sync-migration-utility.png)
 
      ![Deployment center utility redeployment](/static/assets/installation-and-deployment/images/redeployment-confirmation-utility.png)
 
-5. Check the deployment status in logs. Once, the deployment is completed successfully, the logs will show a **success** status.
+5. Check the deployment status in the logs. Once, the deployment is completed successfully, the logs will show a **success** status.
 
      ![Deployment center utility success](/static/assets/installation-and-deployment/images/utility-files-success.png)
 
-6. After successful deployment, navigate to **WebJobs** in the left panel of the Bold BI Azure App service.
+6. After a successful deployment, navigate to **WebJobs** in the left panel of the Bold BI Azure App service.
 
      ![Webjobs options](/static/assets/installation-and-deployment/images/webjobs-option.png)
 
-7. In the **WebJobs**, the migration utility will be available. Click ‘Run’ and wait to complete the migration.
+7. In the **WebJobs** section, the migration utility will be available. Click ‘Run’ and wait for the migration to complete.
 
      ![Webjobs run](/static/assets/installation-and-deployment/images/migration-webjob-run.png)
 
      ![Webjobs success](/static/assets/installation-and-deployment/images/migration-utility-completed-status.png)
 
-8. To ensure migration success, go to the blob container is used in the Bold BI Azure App service and check whether the following **boldservices** Blob is created or not.
+8. To ensure migration success, go to the blob container used in the Bold BI Azure App service and check whether the following **boldservices** Blob is created or not.
 
      ![Blob migration confirmation](/static/assets/installation-and-deployment/images/migration-confirmation.png)
 
@@ -48,7 +48,7 @@ Follow these steps to upgrade the Bold BI Azure App service to the version 4.1:
 
      ![Kudu Console options](/static/assets/installation-and-deployment/images/kudu-console-tool.png)
 
-10. In **KUDU console**, click **Debug Console** and choose **PowerShell**.
+10. In the **KUDU console**, click **Debug Console** and choose **PowerShell**.
 
      ![Kudu Console poweshell options](/static/assets/installation-and-deployment/images/powershell-option.png)
 
@@ -95,7 +95,7 @@ Follow these steps to upgrade the Bold BI Azure App service to the version 4.1:
 
     ![Synchronization Status](/static/assets/installation-and-deployment/images/arm-upgrade-sync-request-status.png)
 
-19. Please wait until synchronization is completed.
+19. Please wait until the synchronization is completed.
 
     ![Synchronization Success](/static/assets/installation-and-deployment/images/arm-upgrade-sync-request-success.png)
 

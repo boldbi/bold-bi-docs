@@ -4,18 +4,17 @@ title: Install Bold BI Enterprise Edition in Silent Mode | Bold BI Docs
 description: Read this documentation to learn how to install the Bold BI Enterprise Edition in silent mode into another installer and embed the dashboards in an application.
 platform: bold-bi
 documentation: ug
-
 ---
 
 # Install the Bold BI Enterprise Edition in silent mode
  
- This section explains how to install and deploy the Bold BI Enterprise Edition in silent mode. This silent installer can be included in your existing installation process.
+This section outlines how to install and deploy the Bold BI Enterprise Edition in silent mode. This silent installer can be integrated into your existing installation process.
 
 ## Installing the Bold BI Enterprise Edition in command line
 
 To install the Bold BI Enterprise Edition in silent mode, follow the steps below.
 
-1.	First you need to [download](/deploying-bold-bi/overview/#registration-and-download) the `BoldBIEnterpriseEdition.exe` from your account.  
+1.	First, download the `BoldBIEnterpriseEdition.exe` from your [account](https://www.boldbi.com/account/).  
 
 2.  Run the downloaded `BoldBIEnterpriseEdition.exe` by double-clicking it. The installer wizard automatically opens and extracts the package into the `%temp%` folder.
 
@@ -25,9 +24,9 @@ To install the Bold BI Enterprise Edition in silent mode, follow the steps below
 
     ![Temp-folder](/static/assets/installation-and-deployment/images/temp-folder.png)
 
-5. Copy the extracted `boldbienterpriseedition`_(version)_(timestamp).exe file in any of the local drive, Exit the Wizard.
+5. Copy the extracted `boldbienterpriseedition`_(version)_(timestamp).exe file to any local drive, then exit the Wizard.
 
-6.	Now, run the windows command prompt in **Administrator** mode and pass the following arguments in the command line to the above `Bold BI Enterprise Edition` installer to install it in silent mode.
+6.	Now, run the windows command prompt in **Administrator** mode and pass the following arguments in the command line to the `Bold BI Enterprise Edition` installer to install it in silent mode.
 
       **parameters:**
      ~~~
@@ -66,6 +65,4 @@ If you don’t want to provide the application startup configuration details dur
 
 ![Command-line-startUp-false](/static/assets/installation-and-deployment/images/command-line-startup-false.png)
 
-Once the setup installation is completed, you can provide the startup details in the Bold BI application itself and configure it. Refer to the following [link](/application-startup/latest/) for more information on application startup.
-
-    
+Once the setup installation is completed, you can provide the startup details in the Bold BI application itself and configure it. Refer to the [application startup](/application-startup/latest/) for more information.

@@ -10,29 +10,29 @@ documentation: ug
 
 A GitHub link has been provided to [get](https://github.com/boldbi/react-with-nodejs-sample/tree/master) the sample application, which demonstrates the dashboard rendering in your Bold BI server and followed by steps to create a new embedding application in `React` with `Node.js` on your own.  
 
-> **NOTE:** The best way to get started would be to read the [Getting Started](/getting-started/embedding-in-your-application/) section of the documentation to start using first. The Getting Started guide gives you enough information to know before working on the sample.      
+> **NOTE:** The best way to get started would be to read the [Getting Started](/getting-started/embedding-in-your-application/) section of the documentation first. The Getting Started guide provides enough information that you need to know before working on the sample.      
 
 ## Prerequisites
 
  * [Node.js](https://nodejs.org/en/)
  * [Visual Studio Code](https://code.visualstudio.com/download)
 
- > **NOTE:** Node.js v14.16 to v18.18 are supported.
+ > **NOTE:** Node.js versions 14.16 to 18.18 are supported.
 
  ## How to run the sample
 
  1. Please get the [React with Node.js](https://github.com/boldbi/react-with-nodejs-sample)  sample from GitHub.
 
- 2. Please ensure you have enabled embed authentication on the `embed settings` page. If it is not currently enabled, please refer to the following image or detailed [instructions](https://help.boldbi.com/site-administration/embed-settings/#get-embed-secret-code) to enable it.
+ 2. Please make sure that you have enabled embed authentication on the `embed settings` page. If it is not currently enabled, please refer to the provided image or detailed [instructions](/site-administration/embed-settings/#get-embed-secret-code) for enabling it.
 
     ![Embed Settings](/static/assets/javascript/sample/images/embed-settings.png)
 
- 3. To download the `embedConfig.json` file, please follow this [link](https://help.boldbi.com/site-administration/embed-settings/#get-embed-configuration-file) for reference. Additionally, you can refer to the following image for visual guidance.
+ 3. To download the `embedConfig.json` file, please click on this [link](/site-administration/embed-settings/#get-embed-configuration-file) for reference. Additionally, you can refer to the following image for visual guidance.
      
     ![EmbedSettings image](/static/assets/javascript/sample/images/embed-settings-download.png) 
     ![EmbedConfig Properties](/static/assets/javascript/sample/images/prop-core.png)
  
- 4. Copy the downloaded `embedConfig.json` file and paste it into the designated [location](https://github.com/boldbi/react-with-nodejs-sample) within the application. Please ensure you have placed it in the application as shown in the following image.
+ 4. Please copy the downloaded `embedConfig.json` file and paste it into the designated [location](https://github.com/boldbi/react-with-nodejs-sample) within the application. Make sure to place it in the application exactly as shown in the following image.
 
     ![EmbedConfig Location Image](/static/assets/javascript/sample/images/ReactWIthNodeJS_EmbedConfig.png)
 
@@ -57,7 +57,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/react-with-no
     </tr>
     <tr>
     <td align="left">EmbedSecret</td>
-    <td align="left">Get your EmbedSecret key from the Embed tab by enabling the <code>Enable embed authentication</code> in the <a href='https://help.boldbi.com/embedded-bi/site-administration/embed-settings/'>Administration page</a></td>
+    <td align="left">Get your EmbedSecret key from the Embed tab by enabling the <code>Enable embed authentication</code> in the <a href='/site-administration/embed-settings/'>Administration page</a></td>
     </tr>
     <tr>
     <td align="left">UserEmail</td>
@@ -70,19 +70,19 @@ A GitHub link has been provided to [get](https://github.com/boldbi/react-with-no
     </tbody>
     </table>
 
- 5. To install all dependent packages, use the following command.
+ 5. To install all the necessary packages, use the following command.
 
      ```js
           npm install
      ```
 
- 6. To run the samples, use the following command.
+ 6. To run the samples, please use the following command.
 
      ```js
           npm start
      ```
 
-7.	The dashboard can be editable in design mode and create a new dashboard with the following changes in the `renderDashboard()` method.
+7. The dashboard can be edited in design mode and a new dashboard can be created with the following changes in the `renderDashboard()` method.
 
     <meta charset="utf-8"/>
     <table>
@@ -113,11 +113,18 @@ A GitHub link has been provided to [get](https://github.com/boldbi/react-with-no
                     url: apiHost + authorizationUrl
                 }
             });
-    
+
             this.dashboard.loadDashboard();                     
         }
 
      ```
+
+> **NOTE:** If you are using a React version lower than v18.0, you can update the `index.js` file by adding the following line. Make sure to replace the existing `createRoot` line with the following line.</br>
+
+  ```js
+   import ReactDOM from 'react-dom';
+   ReactDOM.render(<App />, document.getElementById('root'));
+  ```
 
 ## How this sample works
 
@@ -125,31 +132,31 @@ A GitHub link has been provided to [get](https://github.com/boldbi/react-with-no
 
     ![render dashboard](/static/assets/javascript/sample/images/react-nodejs-dashboard.png)
 
- 2. Before rendering, authorize the server URL by calling the `AuthorizationServer` API(http://localhost:8080/authorizationserver/get) call with the provided `embedConfig` values.
+ 2. Before rendering, authorize the server URL by making a call to the `AuthorizationServer` API (http://localhost:8080/authorizationserver/get) with the provided `embedConfig` values.
 
     ![Get Embed Details](/static/assets/javascript/sample/images/react-node-js-authorize.png)  
 
- 3. These details will be sent to the Bold BI server and get validated there. Once the details are validated, the dashboard starts to render.
+ 3. These details will be sent to the Bold BI server and will be validated there. Once the details are validated, the dashboard will start to render.
 
  ## Steps to create new React with Node.js application to embed dashboard
 
  1. Create a folder in the desired location and open it in the **Visual Studio Code**. 
 
- 2. Open the terminal in Visual Studio Code. Please refer to the following image.
+ 2. Open the terminal in Visual Studio Code. Please refer to the image below.
 
     ![Terminal Image](/static/assets/javascript/sample/images/react-nodejs-terminal.png)
  
- 3. Please ensure that you have enabled embed authentication on the `embed settings` page. If it is not currently enabled, please refer to the following image or detailed [instructions](https://help.boldbi.com/site-administration/embed-settings/#get-embed-secret-code) to enable it.
+ 3. Please make sure that you have enabled embed authentication on the `embed settings` page. If it is not currently enabled, please refer to the following image or detailed [instructions](/site-administration/embed-settings/#get-embed-secret-code) to enable it.
 
     ![Embed Settings](/static/assets/javascript/sample/images/embed-settings.png)
 
- 4. To download the `embedConfig.json` file, please follow this [link](https://help.boldbi.com/site-administration/embed-settings/#get-embed-configuration-file) for reference. Additionally, you can refer to the following image for visual guidance.
+ 4. To download the `embedConfig.json` file, please follow this [link](/site-administration/embed-settings/#get-embed-configuration-file) for reference. Additionally, you can refer to the image below for visual guidance.
 
     ![EmbedSettings image](/static/assets/javascript/sample/images/embed-settings-download.png)
 
     ![EmbedConfig Properties](/static/assets/javascript/sample/images/prop-core.png)
 
- 5. Copy the downloaded `embedConfig.json` file and paste it into the designated [location](https://github.com/boldbi/react-with-nodejs-sample) within the application. Please ensure that you have placed it in the application as shown in the following image.
+ 5. Please copy the downloaded `embedConfig.json` file and paste it into the specified [location](https://github.com/boldbi/react-with-nodejs-sample) within the application. Please make sure that you have placed it in the application as demonstrated in the image below.
 
     ![EmbedConfig image](/static/assets/javascript/sample/images/react-nodejs-embed-config.png)
 

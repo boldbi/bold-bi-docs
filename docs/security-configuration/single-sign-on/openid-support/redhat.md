@@ -8,15 +8,15 @@ documentation: ug
 
 # Red Hat support for SSO authentication
 
-Red Hat Single Sign-On (RH-SSO) is based on the Keycloak project and enables you to secure your web applications by providing Web single sign-on (SSO) capabilities based on popular standards such as SAML 2.0, OpenID Connect, and OAuth 2.0.
+Red Hat Single Sign-On (RH-SSO) is based on the Keycloak project and allows you to secure your web applications by providing web single sign-on (SSO) capabilities based on popular standards like SAML 2.0, OpenID Connect, and OAuth 2.0.
 
-> **NOTE:** This feature is available in Bold BI Embedded Analytics but not in Cloud Analytics Server.
+> **NOTE:** This feature is available in Bold BI Embedded Analytics, but not in Cloud Analytics Server.
 
 This section explains how to perform Single Sign-On for users in Red Hat with the Bold BI application using Open ID Connect.
 
 ## How to register the Bold BI application in Red Hat
 
-> **NOTE:**  This configuration has to be done on the Red Hat website.
+> **NOTE:**  This configuration needs to be done on the Red Hat website.
 
 #### Prerequisites
 
@@ -25,15 +25,15 @@ This section explains how to perform Single Sign-On for users in Red Hat with th
 
 ### Steps to register the Bold BI application
 
-1. Log in to the Red Hat website with an admin account.
+1. Please login to the Red Hat website using an admin account.
 
     ![RedHat Admin console](/static/assets/site-administration/openid-support/images/Redhat-adminconsole.png)
 
-2. Navigate to the Security admin console, then to the `Clients` page and, select the `Create` option.
+2. Navigate to the Security admin console, then go to the `Clients` page and select the `Create` option.
 
     ![RedHat Client Option](/static/assets/site-administration/openid-support/images/Redhat-client.png)
 
-3. On the Add Client page, enter the client id and select the Client protocol as `openid-connect`, then click `Save`.
+3. On the Add Client page, enter the client ID and select the Client protocol as `openid-connect,` then click `Save.`
 
     ![RedHat Application Page](/static/assets/site-administration/openid-support/images/Redhat-application.png)
 
@@ -62,15 +62,15 @@ This section explains how to perform Single Sign-On for users in Red Hat with th
 
 </table>
 
-After successful registration with Red Hat, save these settings in the Bold BI settings page to enable this authentication.
+After successfully registering with Red Hat, save these settings on the Bold BI settings page to enable this authentication.
 
 ## Enable Red Hat authentication support in Bold BI
 
-Configure the settings in Bold BI as shown in the following screenshot to enable the authentication using Red Hat.
+Configure the settings in Bold BI, as shown in the following screenshot, to enable authentication using Red Hat.
 
 ![RedHat Bi Settings](/static/assets/site-administration/openid-support/images/Redhat-bi-settings.png)
 
-The fields to be saved in the Bold BI to enable the Red Hat for authentication are explained as follows.
+The fields that need to be saved in Bold BI in order to enable Red Hat for authentication are explained as follows.
 
 <table>
 
@@ -118,10 +118,10 @@ The fields to be saved in the Bold BI to enable the Red Hat for authentication a
 
 ## Login with Red Hat
 
-1. Go to the login page and select the Red Hat option to log in.
+1. Please go to the login page and select the Red Hat option to log in.
 
    ![RedHat Bi Login Option](/static/assets/site-administration/openid-support/images/Redhat-bi-login-option.png)
 
-2. Fill in the username and password in the Red Hat SSO login screen and sign in.
+2. Please enter your username and password in the Red Hat SSO login screen and proceed to sign in.
 
    ![RedHat Bi Login](/static/assets/site-administration/openid-support/images/Redhat-login.png)

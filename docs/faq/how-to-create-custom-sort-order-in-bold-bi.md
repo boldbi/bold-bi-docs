@@ -23,7 +23,7 @@ In this example, we have configured a column chart to show the details of advanc
 
 Here, we have March through July and it's formatted as text and does not date specific. So, it would not be sorted January through December. You can see in our sort it's sorted alphabetically by the first letter of the month. That's because it doesn't recognize this as actual month data. From, creating custom sort order function, you can control all of that.
 
-First, you need to create an [expression](/working-with-data-source/transforming-data/configuring-expression-columns/) column like below to house your sorting logic. 
+First, you need to create an [expression](/working-with-data-sources/data-modeling/configuring-expression-columns/) column like below to house your sorting logic. 
 
 **Sample Expression:** `IF([ORDER_MONTH] ='MAR', 1, IF([ORDER_MONTH] ='APR', 2, IF([ORDER_MONTH] ='MAY', 3, IF([ORDER_MONTH] ='JUN',4, IF([ORDER_MONTH] ='JUL', 5, 0)))))`
 
@@ -50,7 +50,7 @@ Once the `Expression` is created, Sort the dimension value based on this express
 
 [Dashboard Designer Walkthrough](/getting-started/creating-dashboard/)
 
-[Data Transformation](/working-with-data-source/transforming-data/joining-table/)
+[Data Transformation](/working-with-data-sources/data-modeling/joining-table/)
 
 [Sort data using custom list](https://support.microsoft.com/en-us/office/sort-data-using-a-custom-list-cba3d67a-c5cb-406f-9b14-a02205834d72)
 

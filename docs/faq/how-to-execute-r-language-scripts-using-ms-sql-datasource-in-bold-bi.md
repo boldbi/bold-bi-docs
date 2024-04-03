@@ -43,9 +43,9 @@ Now, you can create stored procedures with R scripts in the Microsoft SQL Server
 
 ## Connecting stored procedure in Bold BI
 
-1.	Refer to the [Connecting Bold BI to SQL data source](/working-with-data-source/data-connectors/sql-data-source/#connecting-bold-bi-to-microsoft-sql-server-data-source) to successfully connect to it.
+1.	Refer to the [Connecting Bold BI to SQL data source](/working-with-data-sources/data-connectors/sql-data-source/#connecting-bold-bi-to-microsoft-sql-server-data-source) to successfully connect to it.
 
-2.	Drag and drop the created stored procedure from the [stored procedure](/working-with-data-source/data-connectors/sql-data-source/#connecting-to-stored-procedure-in-sql-server-database) schema in the data design view page. 
+2.	Drag and drop the created stored procedure from the [stored procedure](/working-with-data-sources/data-connectors/sql-data-source/#connecting-to-stored-procedure-in-sql-server-database) schema in the data design view page. 
 
 3.	While dragging the stored procedure, select the `Internal Cache` option in the `Parameters` window and click `OK.`
 

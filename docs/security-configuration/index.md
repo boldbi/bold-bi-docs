@@ -9,7 +9,7 @@ documentation: ug
 
 # Security Settings
 
-This section explains the CORS(Cross-Origin Resource Sharing) and Allow Known Domain setting in the Bold BI embedded.
+This section explains CORS (Cross-Origin Resource Sharing) and the Allow Known Domain setting in Bold BI embedded.
 
 [SSO](/security-configuration/single-sign-on/)
 
@@ -26,3 +26,5 @@ This section explains the CORS(Cross-Origin Resource Sharing) and Allow Known Do
 [Security in Embed BI](/security-configuration/security-in-embed-bi/)
 
 [Authorization Server](/security-configuration/authorize-server/)
+
+[Data Security Configuration](/security-configuration/data-security-configuration/)

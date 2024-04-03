@@ -198,13 +198,15 @@ The following screenshot shows the Number Card widget, after modifying the heade
 
 ![Header properties customized](/static/assets/visualizing-data/visualization-widgets/images/number-card/header-properties.png)
 
-### Basic Settings
+### Tooltip Settings
+
+![Tooltip settings](/static/assets/visualizing-data/visualization-widgets/images/number-card/tooltip-settings.png)
 
 ### Show Tooltip
 
 This option allows you to toggle the visibility of tooltip in a card.
 
-![Header properties customized](/static/assets/visualizing-data/visualization-widgets/images/number-card/tooltip.png)
+![Header properties customized](/static/assets/visualizing-data/visualization-widgets/images/number-card/number-card-tooltip.png)
 
 ## How to apply conditional formatting in Number card
 

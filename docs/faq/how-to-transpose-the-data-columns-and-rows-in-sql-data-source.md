@@ -13,7 +13,7 @@ Bold BI allows you to transpose the data columns and rows using the Code view mo
 
 ## Transposing data columns and rows in Bold BI
 
-1.	Refer to the [Connecting Bold BI to SQL data source](/working-with-data-source/data-connectors/sql-data-source/#connecting-bold-bi-to-microsoft-sql-server-data-source) to successfully connect to it.
+1.	Refer to the [Connecting Bold BI to SQL data source](/working-with-data-sources/data-connectors/sql-data-source/#connecting-bold-bi-to-microsoft-sql-server-data-source) to successfully connect to it.
 
 2.	After dragging and dropping the required table in the data design view page, switch to code the view mode in Bold BI as follows.
 

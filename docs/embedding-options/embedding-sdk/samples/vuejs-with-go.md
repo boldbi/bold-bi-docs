@@ -4,20 +4,19 @@ title:  Building dashboard app with Go and Vue.js | Bold BI Docs
 description: Explore the dashboard embedded web application built with Go and Vue.js supported since v4.1.36 of Bold BI.
 platform: bold-bi
 documentation: ug
-
 ---
 
 # Building dashboard app in VueJs with Go using Embedded SDK
 
-A GitHub link has been provided to [get](https://github.com/boldbi/vue-with-go-sample) the sample application, which demonstrates the rendering of dashboard available in your Bold BI server and followed by steps to create a new embedding application in the `VueJs` with `Go` on your own. 
+A GitHub link has been provided to [get](https://github.com/boldbi/vue-with-go-sample) the sample application, which illustrates the rendering of the dashboard that is accessible on your Bold BI server. This is followed by a set of steps to create a new embedding application in `VueJs` with `Go` on your own. 
 
-> **NOTE:** The best way to get started would be reading the [Getting Started](/getting-started/embedding-in-your-application/) section of the documentation. The `Getting Started` guide gives you enough information that you need to know before working on the sample.  
+> **NOTE:** The best way to get started would be to read the [Getting Started](/getting-started/embedding-in-your-application/) section of the documentation. The `Getting Started` guide provides you with enough information that you need to know before working on the sample.
 
 ## How to run the sample
 
  1. Please [get](https://github.com/boldbi/vue-with-go-sample) the VueJS with Go Application.       
 
- 2. Here, the VueJS application act as a client, and the Go application act as a server since you need to set the following properties in the `App.vue` file in the VueJS app as follows.
+ 2. Here, the VueJS application acts as a client, and the Go application acts as a server since you need to set the following properties in the `App.vue` file in the VueJS app as follows.
     ![Embed Properties in VueJS](/static/assets/javascript/sample/images/vuejs-go-props.png)  
 
     <meta charset="utf-8"/>
@@ -46,10 +45,10 @@ A GitHub link has been provided to [get](https://github.com/boldbi/vue-with-go-s
     </tbody>
     </table>
 
- 3. Get the item id of the dashboard from the BI server. Please refer to this [link](/working-with-dashboards/share-dashboards/get-dashboard-link/#get-link) and the following screenshot.  
+ 3. Please obtain the item ID of the dashboard from the BI server. Kindly refer to this [link](/working-with-dashboards/share-dashboards/get-dashboard-link/#get-link) and the accompanying screenshot. 
     ![Get Dashboard Id](/static/assets/javascript/sample/images/get-dashboard-id.png#max-width=55%)
 
- 4. In the`main.go` of the Go application, you need to set the UserEmail and EmbedSecret properties. 
+ 4. In the `main.go` file of the Go application, you need to set the UserEmail and EmbedSecret properties. 
     ![Embed Properties in GO](/static/assets/javascript/sample/images/react-go-main.png)
 
     <meta charset="utf-8"/>
@@ -66,7 +65,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/vue-with-go-s
       </tbody>
     </table>
     
- 5. Then, run your Go application and as well as the VueJS App.
+ 5. Then, run your Go application as well as the VueJS App.
 
  6. The dashboard can be rendered in design mode or created with the following changes in the `App.Vue` method.
 
@@ -120,31 +119,31 @@ A GitHub link has been provided to [get](https://github.com/boldbi/vue-with-go-s
 
 ## How this sample works
 
- 1. Based on the `dashboard` provided in the `App.vue`, you will authorize the server by calling the GetEmbedDetails function using the `AuthorizeURL(http://localhost:8086/getDetails)` with the provided `EmbedProperties` values. 
+ 1. Based on the `dashboard` provided in the `App.vue`, you will authorize the server by calling the GetEmbedDetails function using the `AuthorizeURL (http://localhost:8086/getDetails)` with the provided `EmbedProperties` values. 
     ![Get Embed Details](/static/assets/javascript/sample/images/react-go-authorize.png)
 
- 2. In the above authorization, the `SignatureURL` has been generated with the provided `EmbedSecret key` and embed details which can be validated in the Bold BI Server API and returns the token. Based on the returned token, the dashboard will start to render. 
+ 2. In the above authorization, the `SignatureURL` has been generated using the provided `EmbedSecret key` and embed details. This SignatureURL can be validated in the Bold BI Server API, which will return a token. The dashboard will then start to render based on this token. 
     ![Get Signature Url](/static/assets/javascript/sample/images/react-go-signature.png)
 
- 3. In the `App.vue`, change the dashboard Id of the respective dashboard based on your requirement.  
+ 3. In the `App.vue`, change the dashboard ID of the respective dashboard based on your requirement. 
     ![Set Dashboard Id](/static/assets/javascript/sample/images/vuejs-go-dashboard.png)  
 
  ## Steps to create new VueJs with Go application to embed dashboard
 
- 1. Create the Vue application by running the command `vue create my-app`. Here `my-app` is the folder name of the Vue application.
+ 1. To create the Vue application, run the command `vue create my-app`. In this case, `my-app` refers to the folder name of the Vue application.
 
- 2. Open the created folder in the visual studio code, and change the directory by running the command `cd my-app.`
+ 2. Open the created folder in Visual Studio Code and change the directory by running the command `cd my-app.`
 
- 3. Download the VueJs with Go sample and open the VueJS in the visual studio code using the `EmbedBIWrapper.js` file and import it in the `App.vue` as follows.
+ 3. Download the VueJs with Go sample and open the VueJS in Visual Studio Code using the `EmbedBIWrapper.js` file. Import it in the `App.vue` as follows.
     ![WrapperFileInclusion](/static/assets/javascript/sample/images/vue_wrapper_inclusion.png)
    
- 4. In the `App.vue` file, create a DOM element with the id `dashboard` including the mandatory cdn files and properties to render the dashboard.
+ 4. In the `App.vue` file, create a DOM element with the id `dashboard` and include the necessary cdn files and properties to render the dashboard.
 
     ```js
      mounted: function() {
     var scripts = [
       "https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js",
-      "https://cdn.boldbi.com/embedded-sdk/v6.16.12/boldbi-embed.js"
+      "https://cdn.boldbi.com/embedded-sdk/v7.6.12/boldbi-embed.js"
     ];
     scripts.forEach(script => {
       let tag = document.createElement("script");
@@ -181,13 +180,12 @@ A GitHub link has been provided to [get](https://github.com/boldbi/vue-with-go-s
     });
     dashboard.loadDashboard(); 
     }
-
     ```
   
- 5. Install the `Go` with the [link](https://go.dev/dl/). Install the visual studio code extension as follows.
+ 5. To install `Go`, please follow this [link](https://go.dev/dl/). After that, you can install the Visual Studio Code extension.
     ![go_install](/static/assets/javascript/sample/images/go_install.png)
 
- 6. Create a folder in the desired location and open it in the visual studio code. Create a file `main.go` and `launch.json`, include the following code.
+ 6. Please create a folder in the desired location and open it in Visual Studio Code. Next, create a file named `main.go` and `launch.json`, and include the following code.
 
     ```js
     {
@@ -210,7 +208,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/vue-with-go-s
     }
     ```
 
- 7. In the `main.go` file,  include the following code to contact the BOLD BI server.
+ 7. In the `main.go` file, include the following code to contact the BOLD BI server.
 
      ```js
         package main
@@ -295,10 +293,10 @@ A GitHub link has been provided to [get](https://github.com/boldbi/vue-with-go-s
         }
      ```
 
- 8. Initialize the variables `embedSecret` and `userMail` for authorization purpose.
+ 8. Initialize the variables `embedSecret` and `userMail` for authorization purposes.
 
- 9. Initialize the API `/getDetails` to get the particular dashboard details from the server.
+ 9. To obtain the specific dashboard details from the server, initialize the API `/getDetails`.
 
- 10. This API uses the method `getSignatureUrl()` to generate the algorithm. In the `getEmbedDetails(`) API, the `embedQuerString`, `userEmail`, and the value from the `GetSignatureUrl()` method are appended as query parameters in the URL to get details of a particular dashboard.
+ 10. This API uses the method `getSignatureUrl()` to generate the algorithm. In the `getEmbedDetails()` API, the `embedQueryString`, `userEmail`, and the value from the `getSignatureUrl()` method are appended as query parameters in the URL to get details of a particular dashboard.
 
- 11. Then, run the Go application. And the VueJs by `npm run serve` to render the dashboard.
+ 11. First, run the Go application. Then, run the VueJs application by using `npm run serve` to render the dashboard.

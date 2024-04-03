@@ -1,0 +1,142 @@
+---
+layout: post
+title: Azure OpenAI-fine-tuning utility - Embedded BI | Bold BI Docs
+description: Learn and unlock the secrets to building a finely-tuned Azure OpenAI model, tailored specifically for seamless integration into BoldBI’ s Q&A widget.
+canonical: "/utilities/fine-tuning-utility/"
+platform: bold-bi
+documentation: ug
+---
+
+# Instructions to fine-tune a new Azure OpenAI GPT 3.5 model
+
+1. Open the Command Prompt: Press `Win + R` on your keyboard, type `cmd`, and enter to open the Command Prompt window.
+
+2. Navigate to the Directory: Use the `cd` command to change directories to where the OpenAI trainer utility is located.
+   ```bash
+   cd <:INSTALLED_DIRECTORY>\BoldServices\utilities\openai_trainer
+   ```
+   
+3. Execute the Application: Once in the correct directory, run the executable file by typing the following command, replacing `<:API_KEY>` with your actual Azure key and `<:RESOURCE_NAME>` with the resource name you created.
+   ```bash
+   OpenAITrainer.exe -provider AzureAI -AzureAIKey <:API_KEY> -ResourceName <:RESOURCE_NAME> 
+   ```
+   Ensure to replace `<:API_KEY>` with the API key and `<:RESOURCE_NAME>` from Azure.
+
+   ![Running the command](/static/assets/fine-tuning-utility/Azure_Command.png)
+
+   **NOTE** : You can generate your key by visiting the AzureAI portal and creating your resource at https://azure.microsoft.com/en-in/products/ai-services/openai-service.
+
+## Steps to run in Linux
+
+1. Open a Terminal: Open a terminal using the appropriate key combination (e.g., `Ctrl + Alt + T`).
+
+2. Navigate to the Directory: Use the `cd` command to change directories to where the OpenAI trainer utility is located.
+   
+   ```bash
+   cd /var/www/bold-services/application/utilities
+   ```
+3. Once in the correct directory, run the dll file by typing the following command, replacing `<:API_KEY>` with your actual Azure key and `<:RESOURCE_NAME>` with the resource name you created.
+
+   ```bash
+   /var/www/bold-services/dotnet/dotnet OpenAITrainer.dll -provider AzureAI -AzureAIKey <:API_KEY> -ResourceName <:RESOURCE_NAME> 
+   ```
+## Steps to run in Docker
+
+1. Run the following command to list all the containers and note the `BoldBI container name`.
+   
+   ```bash
+   docker ps
+   ```
+2. Execute the following command for bashing boldbi running container.
+
+   ```bash
+   docker exec -it <BoldBI container name> bash 
+   ```
+3. Navigate to the Directory: Use the `cd` command to change directories to where the OpenAI trainer utility is located.
+
+   ```bash
+   cd /application/utilities/openai_trainer
+   ```
+4. Once in the correct directory, run the dll file by typing the following command, replacing `<:API_KEY>` with your actual Azure key and `<:RESOURCE_NAME>` with the resource name you created.
+
+   ```bash
+   dotnet OpenAITrainer.dll -provider AzureAI -AzureAIKey <:API_KEY> -ResourceName <:RESOURCE_NAME>
+   ```
+Once the training and validation JSONL files are uploaded for fine-tuning a machine-learning model, the system will begin processing the data. During this time, you will receive a `jobId`, which is a unique identifier for your fine-tuning task. This ID allows you to track the progress of your fine-tuning job.
+
+## Status of fine-tuning
+The system will also provide you with `status` updates. The status indicates the current stage of the fine-tuning process. Initially, the status will show as `pending` as the system prepares and starts the training with your data.
+
+Subsequently, the status will transition to `running` and persist until the fine-tuning process succeeds or encounters a failure.
+
+Hitting the `esc` key triggers the termination process for the ongoing fine-tuning task.
+
+**NOTE** : Cancellation of the job will only take effect if the status transitions to `running`. If an attempt is made to cancel the job while it is still in the `pending` state, the cancellation won't be successful, and manual intervention will be required to cancel the job.
+
+![Fine-tuning_Cancellation](/static/assets/fine-tuning-utility/Fine-tuning_Cancellation-AzureAI.png)
+
+The `status` of the fine-tuning job will be displayed after every one minute.
+
+![Fine-tuning_Status](/static/assets/fine-tuning-utility/Fine-tuning_Status.png)
+
+## Post fine-tuning
+
+After a successful fine-tuning process, the console will display the name of the fine-tuned model. It is important to make a note of this model name for future use-cases and configure it in BoldBI.
+
+> **NOTE** : An error message will be displayed if an error occurs during the fine-tuning process.
+
+![Fine_Tuned_Model](/static/assets/fine-tuning-utility/Fine_Tuned_Model.png)
+
+### Deploying Trained Model in Azure OpenAI
+Login in to your portal using https://portal.azure.com/.
+
+To access the Azure OpenAI Studio, navigate to the overview tab within the Azure Portal.
+
+![Portal_Page](/static/assets/fine-tuning-utility/PortalPage.png)
+
+Next, navigate to the `Models` section and choose the fine-tuned model generated by the utility.
+
+Once you have chosen the desired model, click on the `Deploy` option. 
+
+For further reference on deploying a model: https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/create-resource?pivots=web-portal#deploy-a-model
+
+![Deploying_Model](/static/assets/fine-tuning-utility/DeployingModel.png)
+
+Ensure that the deployment is successfully created and visible within the Deployments tab.
+
+## Steps to update fine-tuned model name
+
+> **NOTE** : Support for AzureAI is provided on version 7.5 or later.
+
+### Bold BI version 7.5 or later 
+
+1. Go to `Manage Sites`.
+
+![Manage_Sites](/static/assets/fine-tuning-utility/Manage_Sites.png)
+
+2. Inside the `Settings` tab, go to the `Configuration` tab.
+
+![Settings](/static/assets/fine-tuning-utility/Settings.png)
+
+3. In the `config.json` file, you will find OpenAI Active by default as `true` and AzureAI Active as `false`.
+
+![Updated_config.json](/static/assets/fine-tuning-utility/Updatedconfigfile.png)
+
+4. Replace `<:API_KEY>`,`<:RESOURCE_NAME>` and `<:DEPLOYMENT_NAME>` with your apiKey resource name and deployment name.
+
+![AzureAI_config_file_change](/static/assets/fine-tuning-utility/Azureai.png)
+
+#### Syntax
+```json
+   "AzureAI":{
+     "Active":true,
+     "AzureAiKey": "<:API_KEY>",
+     "AzureAiResourceName": "<:RESOURCE_NAME>",
+     "AzureAiDeploymentName": "<:DEPLOYMENT_NAME>"
+   }
+``` 
+> **NOTE** Ensure the Active is `true` for AzureAI and `false` for OpenAI.
+
+5. Restart the Bold BI services and open the dashboard.
+
+> **NOTE** Refer to https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service/#pricing for the cost of fine-tuning and deployment.

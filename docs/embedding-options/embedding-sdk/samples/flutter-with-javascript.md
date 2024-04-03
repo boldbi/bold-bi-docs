@@ -8,14 +8,14 @@ documentation: ug
 
 # Embedding Bold BI Dashboards in Flutter using the Embedded SDK
 
-A GitHub link has been provided to [get](https://github.com/boldbi/flutter-sample) the sample application, which demonstrates the rendering of dashboard in your Bold BI server and followed by steps to create a new embedding application in the `Flutter` on your own.
+A GitHub link has been provided to [get](https://github.com/boldbi/flutter-sample) the sample application, which demonstrates the rendering of a dashboard on your Bold BI server. This is followed by steps to create your own embedding application in `Flutter`.
 
-> **NOTE:** Reading the [Getting Started](/getting-started/embedding-in-your-application/) section of the documentation is the best way to get started. The `Getting Started` guide gives you enough information that you need to know before working on the sample. 
+> **NOTE:** Reading the [Getting Started](/getting-started/embedding-in-your-application/) section of the documentation is the best way to begin. The `Getting Started` guide provides you with all the necessary information you need to know before working on the sample.
 
 ## How to run the sample
  1. Please [get](https://github.com/boldbi/flutter-sample) the Flutter sample from provided link.    
 
- 2. In the `index.html`, set your server details to the `EmbedProperties` as follows.  
+ 2. In the `index.html`, please set your server details in the `EmbedProperties` as shown below. 
     ![Embed Properties](/static/assets/javascript/sample/images/flutter_EmbedProperties.png#max-width=75%)
 
     <meta charset="utf-8"/>
@@ -43,12 +43,12 @@ A GitHub link has been provided to [get](https://github.com/boldbi/flutter-sampl
     </tr>
     <tr>
         <td align="left">EmbedSecret</td>
-        <td align="left">You could get your EmbedSecret key from Embed tab by enabling Enable embed authentication in <a href='https://help.boldbi.com/embedded-bi/site-administration/embed-settings/'>Administration page.</a> </td>
+        <td align="left">You could get your EmbedSecret key from Embed tab by enabling Enable embed authentication in <a href='/site-administration/embed-settings/'>Administration page.</a> </td>
     </tr>
     </tbody>
     </table>
 
- 3. Run your Flutter sample.
+ 3. Please run your Flutter sample.
 
  4. The dashboard can be rendered in design mode or created with the following changes in the `renderDashboard()` method.
 
@@ -107,31 +107,31 @@ A GitHub link has been provided to [get](https://github.com/boldbi/flutter-sampl
 
  1. Based on the `EmbedProperties` provided in the `index.html`, authorize the server URL by calling the `GetEmbedDetails()` function.
 
- 2. In the above authorization, generate the `SignatureUrl` with the provided `EmbedSecret` key and validate the embed details in Bold BI. Once details are validated, the dashboard starts to render.
+ 2. In the above authorization, generate the `SignatureUrl` using the provided `EmbedSecret` key and validate the embed details in Bold BI. Once the details are validated, the dashboard will start to render.
     ![Get Dashboards](/static/assets/javascript/sample/images/flutter-get-details.png)
 
- 3. Change the dashboard Id of the respective dashboard as you wish to embed.
+ 3. Change the dashboard ID of the respective dashboard as you wish to embed it.
 
 ## Steps to create new flutter application to embed dashboard
  1. Install the `Flutter` in the visual studio code.
     ![flutter install](/static/assets/javascript/sample/images/flutter_install.png#max-width=60%)
 
- 2. Download the android studio from the following official [website](https://developer.android.com/studio),download the flutter SDK from the following official [website](https://docs.flutter.dev/get-started/install/windows), and include the paths in the system environment variable.
+ 2. Download Android Studio from the official [website](https://developer.android.com/studio) provided, download the Flutter SDK from the official [website](https://docs.flutter.dev/get-started/install/windows) provided, and include the paths in the system environment variable.
 
- 3. In the desired location, create a folder for this project and open it in the visual studio code.
+ 3. Create a folder for this project in the desired location and open it in Visual Studio Code.
 
- 4. Create the Flutter folder, run a command in the visual studio terminal as `flutter create my_app`. Here `my_app` is the flutter project name and change the directory by running the command `cd my_app`. 
+ 4. Create the Flutter folder, run a command in the Visual Studio terminal as `flutter create my_app`. Here, `my_app` is the Flutter project name. Change the directory by running the command `cd my_app`.
 
- 5. Include the following mandatory files in the `index.html` of the `<head>` tag as follows.
+ 5. Please include the following mandatory files in the `<head>` tag of the `index.html` file.
 
      ```js
-    <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v6.16.12/boldbi-embed.js"></script>
+    <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v7.6.12/boldbi-embed.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/hmac-sha256.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/enc-base64.min.js"></script>
      ```
 
- 6. In the `<body>` tag, invoke the `Init()` method, create the DOM element with id `dashboard` as follows.
+ 6. In the `<body>` tag, invoke the `Init()` method and create the DOM element with the id `dashboard` as follows.
 
      ```js
         <div id="viewer-section">
@@ -161,9 +161,9 @@ A GitHub link has been provided to [get](https://github.com/boldbi/flutter-sampl
             GetEmbedDetails();
         };
      ```
-    Here you need to invoke the `GetEmbedDetails()` method where you get the details of a particular dashboard and invoke the `renderDashboard()` method to render a dashboard.
+    To perform this task, you should call the `GetEmbedDetails()` method to retrieve the details of a specific dashboard and then call the `renderDashboard()` method to display the dashboard.
 
- 7. In this `GetEmbedDetails()`, `embedQuerString`, `userEmail` and the value from  the `GetSignatureUrl()` method is appended as query parameters in the URL to get details of a particular dashboard.
+ 7. In the `GetEmbedDetails()` method, the `embedQueryString`, `userEmail`, and the value from the `GetSignatureUrl()` method are appended as query parameters in the URL to retrieve details of a specific dashboard.
 
      ```js
         function GetEmbedDetails(){
@@ -207,7 +207,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/flutter-sampl
         }
      ```
 
- 8. Implement the `renderdashboard()` to render the dashboard as follows.
+ 8. Implement the `renderDashboard()` function to render the dashboard as shown.
 
      ```js
         function renderDashboard(dashboardId) {
@@ -230,4 +230,4 @@ A GitHub link has been provided to [get](https://github.com/boldbi/flutter-sampl
         };
      ```
      
- 9. Now, run the project by executing the command `flutter run`.
+ 9. Now, execute the command `flutter run` to run the project.

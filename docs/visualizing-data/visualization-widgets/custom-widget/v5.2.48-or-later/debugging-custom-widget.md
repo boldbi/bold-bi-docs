@@ -37,5 +37,5 @@ documentation: ug
 
  Now we can debug the init and update methods in the custom widget.  
 
-> **NOTE:** This feature is available in Bold BI Embedded Analytics but not in Cloud Analytics Server.
+> **NOTE:** This feature is available in On-Premises Deployment but not in Syncfusion Managed Cloud Server.
 

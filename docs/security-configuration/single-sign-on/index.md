@@ -8,9 +8,9 @@ documentation: ug
 
 # Single Sign-On
 
-This section explains how to set up the Azure Active Directory for SSO in the Bold BI server.
+This section explains how to set up Azure Active Directory for SSO in the Bold BI server.
 
-You can explore the Single Sign-On in detail here,
+You can explore Single Sign-On in detail here.
 
 [Overview](/security-configuration/single-sign-on/overview/)
 
@@ -22,4 +22,4 @@ You can explore the Single Sign-On in detail here,
 
 [OpenID Support](/security-configuration/single-sign-on/openid-support/)
 
-> **NOTE:** This feature is available in Bold BI Embedded Analytics but not in Cloud Analytics Server.
+> **NOTE:** This feature is available in Bold BI Embedded Analytics, but not in Cloud Analytics Server.

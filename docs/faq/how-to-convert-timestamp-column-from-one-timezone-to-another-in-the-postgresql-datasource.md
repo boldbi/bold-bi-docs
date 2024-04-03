@@ -13,7 +13,7 @@ Bold BI application allows you to convert the timestamp column in the PostgreSQL
 
 ## Steps to convert timestamp column to another time zone
 
-1.	Refer to the [Connecting Bold BI to PostgreSQL data source documentation](/working-with-data-source/data-connectors/postgresql/) to successfully connect to it.
+1.	Refer to the [Connecting Bold BI to PostgreSQL data source documentation](/working-with-data-sources/data-connectors/postgresql/) to successfully connect to it.
 
 2.	Drag and drop the table from the table schema in the data design view page.
 
@@ -39,7 +39,7 @@ Bold BI application allows you to convert the timestamp column in the PostgreSQL
 
     ![Result preview](/static/assets/faq/images/converted-timezone.png)
 
-    >**Note:**  This documentation works for all the web data sources in the extract mode only and [PostgreSQL in live](/working-with-data-source/data-connectors/postgresql/#live-mode-connection) and [extract](/working-with-data-source/data-connectors/postgresql/#extract-mode-connection) modes in the Bold BI. For [MS SQL Server](/working-with-data-source/data-connectors/sql-data-source/) and [MySQL](/working-with-data-source/data-connectors/mysql/) data sources, use the following expressions for converting the GMT date column to the Indian Standard Time zone.
+    >**Note:**  This documentation works for all the web data sources in the extract mode only and [PostgreSQL in live](/working-with-data-sources/data-connectors/postgresql/#live-mode-connection) and [extract](/working-with-data-sources/data-connectors/postgresql/#extract-mode-connection) modes in the Bold BI. For [MS SQL Server](/working-with-data-sources/data-connectors/sql-data-source/) and [MySQL](/working-with-data-sources/data-connectors/mysql/) data sources, use the following expressions for converting the GMT date column to the Indian Standard Time zone.
 	
 	<table>
 	<tr>

@@ -11,7 +11,7 @@ documentation: ug
 Bold BI allows joining tables based on the expression columns created.
 
 
-1. Create an [expression](/working-with-data-source/transforming-data/configuring-expression-columns/) for joining the tables and click `Save`. The below expression used to split the employee name from Email column in the Employee table and joining the Employee table with EmployeesProfile table.
+1. Create an [expression](/working-with-data-sources/data-modeling/configuring-expression-columns/) for joining the tables and click `Save`. The below expression used to split the employee name from Email column in the Employee table and joining the Employee table with EmployeesProfile table.
 
     ![create expression](/static/assets/faq/images/create-expression-for-join.png)
 

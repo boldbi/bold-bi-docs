@@ -10,14 +10,14 @@ documentation: ug
 
 This section will explain how to edit profile information, upload profile pictures, change passwords, enable 2FA, and update user preferences in your user profile.
 
-> **NOTE:** User profile support is not available in Cloud Analytics Server and it is available in Bold BI Embedded Analytics.
+> **NOTE:** User profile support is not available in Syncfusion Managed Cloud Server and is available in On-Premises Deployment.
 
 ## My profile
 
 In this section, you can view the profile information.
 
 ### Edit Profile
-To edit your profile, click `Edit Profile`, give your details, and `save.`
+To edit your profile, click on `Edit Profile`, provide your details, and `save`.
     ![My Profile tab](/static/assets/images/save-profile.png)
 
 ### Upload Profile Picture
@@ -29,7 +29,7 @@ To delete your profile picture, click the delete icon on your profile and procee
 
 ## Account Preference
 
-In account preference, set the language preference for your profile.
+In the Account Preference section, set the language preference for your profile.
     ![My Profile tab](/static/assets/images/account-preference.png)
 
 ## Security
@@ -58,10 +58,10 @@ Please refer to this  [link](/multi-tenancy/two-factor-authentication/#two-facto
 4. Enter the verification code shown in the authenticator application and click **Activate**.
     ![Two Factor Authentication configuration code](/static/assets/images/2fa-configuration-code.png)
 
-5. After enabling, the 10 recovery codes are generated. Copy the recovery codes and store them in a safe place.
+5. After enabling, 10 recovery codes are generated. Copy the recovery codes and store them in a safe place.
     ![Two Factor Authentication Recovery code](/static/assets/images/2fa-recovery-code.png)
 
-> **NOTE:** Each recovery code can be used at one time. Regenerate recovery codes using the `Regenerate Recovery Code` option from your profile.
+> **NOTE:** Each recovery code can be used only once. Regenerate recovery codes using the `Regenerate Recovery Code` option from your profile.
 
 #### Disable Two Factor Authentication
 

@@ -8,7 +8,7 @@ documentation: ug
 
 # Bold BI Enterprise Application Embedding dashboard Sample
 
-This section explains how to embed the Bold BI dashboard into a sample application by integrating Viewing modules.
+This section explains how to integrate the Bold BI dashboard into a sample application by embedding Viewing modules.
  
 [ ASP.NET MVC](/embedding-options/iframe-embedding/sample/dashboard-embedding/asp.net-mvc/)
  

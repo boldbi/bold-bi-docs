@@ -8,7 +8,7 @@ documentation: ug
 
 # Embedded SDK Samples
 
-Embedded SDK is a JavaScript library that enables you to embed your BoldBI dashboards in your applications, which may be ASP.NET MVC application, ASP.NET Core application, Angular, and React application. This embedding reduces the amount of code and effort required to embed the dashboards and widgets. The sample applications for ASP.NET Core, ASP.NET MVC, and Angular. You can get download and embed your dashboards and widgets using the following links. 
+The Embedded SDK is a JavaScript library that allows you to embed your BoldBI dashboards in various applications, such as ASP.NET MVC, ASP.NET Core, Angular, and React. This embedding feature helps to reduce the amount of code and effort needed to embed the dashboards and widgets. Sample applications for ASP.NET Core, ASP.NET MVC, and Angular are available. You can download and embed your dashboards and widgets using the links provided.
 
 ## Available samples
 
@@ -27,4 +27,4 @@ Embedded SDK is a JavaScript library that enables you to embed your BoldBI dashb
   </tr>
 </table>
 
-> **NOTE:**  The best way to get started would be to read the [Getting Started](/getting-started/embedding-in-your-application/) section of the documentation first. The [Getting Started](/getting-started/embedding-in-your-application/) guide gives enough information that you need to know before working on the sample.
+> **NOTE:**  The best way to get started would be to read the [Getting Started](/getting-started/embedding-in-your-application/) section of the documentation first. The [Getting Started](/getting-started/embedding-in-your-application/) guide provides enough information that you need to know before working on the sample.

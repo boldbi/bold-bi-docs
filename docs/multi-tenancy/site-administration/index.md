@@ -8,9 +8,9 @@ documentation: ug
 
 # Site Administration
 
-This section explains how to configure email, embed settings, account settings, custom rebranding, API keys information, license update, and manage localization in the User Management Server.
+This section explains how to configure email, embed settings, account settings, custom rebranding, API keys information, license updates, and manage localization in the User Management Server.
 
-You can explore the Site Administration in the details below:
+You can explore the Site Administration details below:
 
 [Rebranding](/multi-tenancy/site-administration/rebranding/)
 

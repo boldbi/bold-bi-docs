@@ -8,7 +8,7 @@ documentation: ug
 
 # Theme variables equivalent to the JSON property
 
-Use theme variables for customizing the Bold BI application. This document allows you to find the equivalent theme variable for the JSON property.  
+Use theme variables to customize the Bold BI application. This document will help you locate the corresponding theme variable for the JSON property.
 
 ### Dashboard banner
 
@@ -317,7 +317,7 @@ Use theme variables for customizing the Bold BI application. This document allow
 </table>
 
 ### Widget specific level properties
-The `widgets` section allows you to customize the properties of a specific widget
+The `widgets` section allows you to customize the properties of a specific widget.
 
 #### Chart widget
 

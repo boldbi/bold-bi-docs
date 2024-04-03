@@ -8,29 +8,30 @@ documentation: ug
 
 # Steps to embed the data source in your application
 
-Follow these steps to embed data source in your application.
+Please follow these steps to embed a data source in your application.
 
 ## How to use BoldBI wrapper inside your html page
 
-1. In your .html page, you need to add the following Embed SDK URL in the head tag of your page.
+1. In your .html page, you need to add the following Embed SDK URL in the `head` tag of your page.
 
     ```js
     <head>
-        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v6.16.12/boldbi-embed.js"></script>
+        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v7.6.12/boldbi-embed.js"></script>
     </head>
     ```
 
-2. In the body tag, you need to create the div element with your own id name. This element will be used for data source embedding.
+2. In the `body` tag, you need to create the `div` element with your own id name. This element will be used for embedding a data source.
 
     ```js
     <body>
         <div id="datasource_container"></div>
     </body>
     ```
+    >**NOTE:** If you use hyphens in ID, your code may become more prone to errors and be harder to read while using Jquery. Instead, use underscores or camelCase if you are in control of the ID.
 
-3. In the body tag, you need to add the function to create BoldBI instance with following properties and call that function in the body using the `onload` attribute as follows. Also, call the `loadDatasource()` function.
+3. ¬In the `body` tag, you need to add the function that creates a BoldBI instance with the following properties and call that function in the body using the `onload` attribute as shown. Additionally, call the `loadDatasource()` function.
 
-    You can embed the data source using either the data source ID or data source name as shown in the following code samples:
+    You can embed the data source using either the data source ID or data source name, as shown in the following code samples.
 
     ### Embed using data source ID
 
@@ -44,7 +45,6 @@ Follow these steps to embed data source in your application.
                     datasourceId: "755e99c7-f858-4058-958b-67577b283309",                
                     embedContainerId: "datasource_container",// This should be the container id where you want to embed the datasource
                     embedType: BoldBI.EmbedType.Component,
-                    environment: BoldBI.Environment.Enterprise,
                     mode: BoldBI.Mode.DataSource,
                     height: "800px",
                     width: "1200px",
@@ -59,6 +59,8 @@ Follow these steps to embed data source in your application.
     </body>
     ```  
 
+    > **NOTE:** By default, `BoldBI.Environment.Enterprise` is used for the Environment API member. For Cloud sites, you must set the Environment member value to `BoldBI.Environment.Cloud`.
+
     ### Embed using data source Name
 
     ```js
@@ -71,7 +73,6 @@ Follow these steps to embed data source in your application.
                     datasourceName: "Datasource Name",     
                     embedContainerId: "datasource_container",// This should be the container id where you want to embed the datasource
                     embedType: BoldBI.EmbedType.Component,
-                    environment: BoldBI.Environment.Enterprise,
                     mode: BoldBI.Mode.DataSource,
                     height: "800px",
                     width: "1200px",
@@ -88,7 +89,7 @@ Follow these steps to embed data source in your application.
 
     ### Creating datasource in datasource embedding
 
-    If you need to create a new data source in embedding, then set the mode as `connection` as shown in the following samples and call the `loadDatasource()` function. The embedded user needs to have data source create permission to create data source in data source embedding.
+    If you need to create a new data source in embedding, set the mode as `connection` as shown in the following examples and call the `loadDatasource()` function. The embedded user must have permission to create data sources in data source embedding.
 
     ```js
     <body onload="embedSample();">
@@ -99,7 +100,6 @@ Follow these steps to embed data source in your application.
                     serverUrl: "http://localhost:51777/bi/site/site1",
                     embedContainerId: "datasource_container",// This should be the container id where you want to embed the datasource
                     embedType: BoldBI.EmbedType.Component,
-                    environment: BoldBI.Environment.Enterprise,
                     mode: BoldBI.Mode.Connection,
                     height: "800px",
                     width: "1200px",
@@ -114,7 +114,7 @@ Follow these steps to embed data source in your application.
     </body>
     ```  
 
-4. Refer the following table for the values of the previous properties based on your application.  
+4. Please refer to the following table for the values of the previous properties based on your application.
 
     <meta charset="utf-8"/>
     <table>
@@ -140,10 +140,6 @@ Follow these steps to embed data source in your application.
     <td align="left">BoldBI.EmbedType.Component</td>
     </tr>
     <tr>
-    <td align="left">environment</td>
-    <td align="left">BoldBI.Environment.Cloud or BoldBI.Environment.Enterprise</td>
-    </tr>
-    <tr>
     <td align="left">height</td>
     <td align="left">Height of the datasource designer in your page</td>
     </tr>
@@ -162,11 +158,11 @@ Follow these steps to embed data source in your application.
     </tbody>
     </table>
 
-5. Copy the previous embedSample() function and paste in your page. You need to update your values to the properties.  
+5. Copy the previous embedSample() function and paste it on your page. Make sure to update the values to the appropriate properties. 
 
-> **NOTE:**  embedContainerId should be same as your div element id value.
+> **NOTE:**  The embedContainerId should be the same as the value of your div element id.
 
-> **NOTE:**  For Bold BI **v5.2.48** or lower version, you must have add the following dependent scripts and also refer the below **Embed SDK URL** of respective Bold BI version.<br />
+> **NOTE:**  To use Bold BI **v5.2.48** or a lower version, you need to include the following dependent scripts and refer to the **Embed SDK URL** of respective Bold BI version.<br />
 `https://cdn.boldbi.com/embedded-sdk/v5.2.48/embed-js.js`
 
 <meta charset="utf-8"/>
@@ -206,12 +202,12 @@ Follow these steps to embed data source in your application.
 </code></td>
 </tr>
 <tr>            
-<td><code>v6.16.12(latest)</code></td>            
+<td><code>v7.6.12(latest)</code></td>            
 <td><code>
 
  ```js
 <head> 
-    <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v6.16.12/boldbi-embed.js"></script>
+    <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v7.6.12/boldbi-embed.js"></script>
 </head>
 ```
 </code></td>
@@ -221,9 +217,9 @@ Follow these steps to embed data source in your application.
 
 ## How to implement the authorize server with user mail or user name
 
-1. You need to implement authorization end point in your application. This will act as the bridge between your application and Bold BI server and also you need to update the secure details like email and group based access. Learn more about authorize server [here](/security-configuration/authorize-server/).  
+1. You need to implement an authorization endpoint in your application. This endpoint will act as the bridge between your application and the Bold BI server. Additionally, you need to up-date the secure details such as email and group-based access. Learn more about the authorization server [here](/security-configuration/authorize-server/).  
 
-2. To create authorization-server action method, copy the following snippet in your controller. You can use currently logged in user email at `user@domain.com` or user name at `username`, but this user must have access to the dashboard.
+2. To create an authorization-server action method, copy the following snippet into your con-troller. You can use either the currently logged in user's email at `user@domain.com` or their `username`, but this user must have access to the dashboard.
 
     ```js 
     [HttpPost]
@@ -256,7 +252,7 @@ Follow these steps to embed data source in your application.
     }
     ```
 
-3. Add the GetSignatureUrl method, and this method will be called from the previous GetEmbedDetails action. Follow the next section to get EmbedSecret key from the Bold BI application.
+3. Please add the GetSignatureUrl method, and this method will be called from the previous GetEmbedDetails action. Refer to the following section to obtain the EmbedSecret key from the Bold BI application.
 
     ```js  
     public string GetSignatureUrl(string queryString)
@@ -276,10 +272,8 @@ Follow these steps to embed data source in your application.
 
 ## How to get Embed Secret key from Bold BI application
 
-You can get your Embed Secret key from administrator setting section. Refer to this [link](/site-administration/embed-settings/) for more details.
+You can obtain your Embed Secret key from the administrator settings section. Please refer to this [link](/site-administration/embed-settings/) for additional information.
 
 ## How to get common Embed Secret key from UMS
 
-If you are using multi-tenant Bold BI server sites and want to embed the designer in your application, then we recommend using the common embed secret instead of the separate embed secret for each site. Refer to this [link](/site-administration/embed-settings/#get-common-embed-secret-code-from-ums) to get the common embed secret.
-
-> **NOTE:**  <br>This embed setting will be enabled only if you have an Embedded BI plan. <br><br>Refer to this [link](/faq/how-to-resolve-jquery-conflict-in-embedding/) to resolve the jQuery conflict problem in embedded.
+If you are using multi-tenant Bold BI server sites and want to embed the designer in your application, we recommend using the common embed secret instead of a separate embed secret for each site. You can refer to this [link](/site-administration/embed-settings/#get-common-embed-secret-code-from-ums) to obtain the common embed secret.

@@ -8,7 +8,7 @@ documentation: ug
 
 # Install Optional Libraries
 
-This section explains how to install optional libraries in Linux environment.
+This section will explain the process of installing optional libraries in a Linux environment.
 
 [Version 5.2 or above ](/deploying-bold-bi/deploying-in-linux/install-optional-libraries/v5.2-or-above/)
 
@@ -17,4 +17,3 @@ This section explains how to install optional libraries in Linux environment.
 [Version 4.2](/deploying-bold-bi/deploying-in-linux/install-optional-libraries/v4.2/)
 
 [Version 4.1 or older](/deploying-bold-bi/deploying-in-linux/install-optional-libraries/v4.1-or-older/)
-

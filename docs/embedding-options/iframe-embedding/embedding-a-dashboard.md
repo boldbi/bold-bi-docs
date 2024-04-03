@@ -8,19 +8,19 @@ documentation: ug
 
 # Embed the dashboard in an iframe
 
-A dashboard can be embedded in the create, edit and view modes in any application using URL. In create mode, a new dashboard can be created. In edit mode, existing dashboard can be edited. In the view, users can interact with the dashboard by filtering data, adding comments, and saving the filter views.  
+A dashboard can be embedded in the create, edit, and view modes of any application using a URL. In the create mode, a new dashboard can be created. In the edit mode, an existing dashboard can be edited. In the view mode, users can interact with the dashboard by filtering data, adding comments, and saving the filter views.
 
 ## Steps to embed dashboard in view mode using URL 
 
-> **NOTE:** A similar procedure should be followed to render the multi-tab dashboard in view mode. 
+> **NOTE:** Please follow a similar procedure to display the multi-tab dashboard in view mode.
 
-1. To get the **embed URL**, click the context menu of the respective dashboard and choose the `Get Embed code` option.  
+1. To obtain the **embed URL**, click on the context menu of the corresponding dashboard and select the option `Get Embed code`.  
 ![EmbedCodeOption](/static/assets/iFrame-based/images/embed-option.png#max-width=75%)  
 
-2. Choose the mode value as `View` for rendering a dashboard in the View mode.
+2. Choose the mode value as `View` to render a dashboard in View mode.
 ![ModeOption](/static/assets/iFrame-based/images/select-mode.png#max-width=45%)
 
-3. By Default, Dashboard Comments, Widget Comments, Saved Views, Export, and SSO options are disabled. Enable this option by sliding the button given in the embed dialog. 
+3. By default, the options for Dashboard Comments, Widget Comments, Saved Views, Export, and SSO are disabled. To enable these options, simply slide the button provided in the embed dialog.
 	
     ![EnableOption](/static/assets/iFrame-based/images/enable-option.png#max-width=45%)  
 	<table>
@@ -66,32 +66,32 @@ A dashboard can be embedded in the create, edit and view modes in any applicatio
 	    </tr>
 	</table>  
 
-4. Copy the embed URL by clicking the copy icon from the Embed Code dialog.  
+4. Please copy the embed URL by clicking the copy icon in the Embed Code dialog. 
 	![CopyEmbedCode](/static/assets/iFrame-based/images/copy-embedcode.png#max-width=45%)
 
-5. Embed the copied URL into other web applications.
+5. Please embed the copied URL into other web applications.
 
-6. When you run the web application, it will show the login window or dashboard based on the type of dashboard. When you click **login** and you log in with valid user credentials, the dashboard will render automatically. To avoid login, use [single sign-on](/embedding-options/iframe-embedding/dashboard-embedding-with-external-sso/).
+6. When the web application is run, it will display either the login window or the dashboard, depending on the type of dashboard. Once you click on "login" and successfully log in with valid user credentials, the dashboard will automatically load. To bypass the login process, use [single sign-on](/embedding-options/iframe-embedding/dashboard-embedding-with-external-sso/).
 	
 	![EmbedLogin](/static/assets/iFrame-based/images/iframeLoginPage.png#max-width=45%) 
 	![EmbedViewDashboard](/static/assets/iFrame-based/images/embed-dashboard-view.png#max-width=85%)   
 
-> **NOTE:**  In the case of SSO enabled parameters, a login prompt will appear if you haven't logged in and selected SSO authentication; if you have already logged in, the dashboard will be rendered based on the permission granted to the user to that dashboard. 
+> **NOTE:**  Please note that if SSO enabled parameters are used, a login prompt will appear if you have not logged in and selected SSO authentication. However, if you have already logged in, the dashboard will be rendered based on the user's permission granted for that specific dashboard.
 
 ## Public embedding
-If you want to embed the dashboard without user authentication, then make the dashboard public and then embed it. The public dashboard will be rendered automatically without credentials. You cannot enable the comments panel for public dashboard embedding. 
+If you wish to embed the dashboard without requiring user authentication, you should first make the dashboard public and then proceed to embed it. By making it public, it will automatically be rendered without the need for credentials. However, it is important to note that you cannot enable the comments panel when embedding a public dashboard.
 
-> **NOTE:** Embedding the public dashboard will not work when public dashboard setting is disabled. Learn more about the dashboard settings [here](/site-administration/dashboard-settings/).
+> **NOTE:** Embedding the public dashboard will not work when the public dashboard setting is disabled. Learn more about the dashboard settings [here](/site-administration/dashboard-settings/).
 
 ## Private embedding
-Private dashboards can be embedded, which are accessible to users in the Bold BI, who has the read permission, and these dashboards would be requested to login to Bold BI server before rendering. So embedded dashboard will show the login page whenever private dashboards are embedded and the user is not authenticated yet.
+Private dashboards can be embedded and are accessible to users in Bold BI who have read permission. These dashboards would require users to log in to the Bold BI server before rendering. Therefore, whenever private dashboards are embedded and the user is not yet authenticated, the embedded dashboard will display the login page.
 
-> **NOTE:**  By default, dashboard access mode will be set to private until it is changed to the public by the owner of the dashboard.  
+> **NOTE:**  By default, the dashboard access mode will be set to private until the owner of the dashboard changes it to public.
 
 ## Advanced security
-Using the dashboard security option, you can control which websites, IP addresses, and applications can embed the dashboard. Learn more about dashboard security [here](/managing-resources/manage-dashboards/advanced-dashboard-security/).  
+You can control which websites, IP addresses, and applications can embed the dashboard by using the dashboard security option. Find more information about dashboard security [here](/managing-resources/manage-dashboards/advanced-dashboard-security/).  
 
-> **NOTE:**  Learn more details about embedding dashboard sample [here](/embedding-options/iframe-embedding/sample/dashboard-embedding/).  
+> **NOTE:**  Please learn more details about embedding the dashboard sample [here](/embedding-options/iframe-embedding/sample/dashboard-embedding/).  
 
 ## Available parameter
 <table>
@@ -198,7 +198,7 @@ Using the dashboard security option, you can control which websites, IP addresse
 
 ### How to pass the Dashboard Parameter and URL Parameter filters in iFrame URL
 
-In iFrame URL, you can pass separate and both types of filters(Dashboard Parameter/URL Parameter) values at the same time.
+In the iFrame URL, you can pass values for separate filters (Dashboard Parameter/URL Parameter) at the same time.
 
 Pass your filters to the `embed_datasource_filter` parameter in the iFrame URL as like below.
 
@@ -220,31 +220,31 @@ Pass your filters to the `embed_datasource_filter` parameter in the iFrame URL a
 <iframe src='http://test.boldbi.com/bi/en-us/site/site1/dashboards/8428c9d9-85db-418c-b877-ea4495dcddd7/Predictive%20Analytics/Personal%20Expense%20Analysis?isembed=true&embed_datasource_filter=&&dashboardparametername=parametervalue&urlparametername=parametervalue' id='dashboard-frame' width='100%' height='600px' allowfullscreen frameborder='0'></iframe>
 ```
 
-* In the iframe URL, the dashboard parameter filter must be started with a double ampersand `&&`. For more details, refer to this [link](/working-with-data-source/dashboard-parameter/configuring-dashboard-parameters/).    
+* In the iframe URL, the dashboard parameter filter must be started with a double ampersand `&&`. For more details, refer to this [link](/working-with-data-sources/dashboard-parameter/configuring-dashboard-parameters/).    
 
 * In the iframe URL, the URL filter parameter must be started with a single ampersand `&`. For more details, refer to this [link](/working-with-dashboards/preview-dashboard/urlparameters/).
 
 
 ## How to embed the dashboard in create mode using the URL
 
-1. To create a new dashboard, change the embed URL, as shown in the following image.
+1. To create a new dashboard, you need to change the embed URL as demonstrated in the image below.
     ![EmbedDashboardCreate](/static/assets/iFrame-based/images/dashboard-create-embed-code.png#max-width=65%) 
 
-2. Embed the above embed URL into any web application.    
+2. Please embed the above URL into any web application.  
 
-3. Run the web application; it will show the login window or dashboard based on the type of dashboard. Click the login and enter the valid user credentials, and then the create page will render automatically. 
+3. To use the web application, run it. Depending on the type of dashboard, either the login window or the dashboard will be displayed. Click on the login option and enter valid user credentials. After that, the create page will automatically load.
     ![EmbedLogin](/static/assets/iFrame-based/images/iframeLoginPage.png#max-width=45%)  
     ![EmbedCreateDashboard](/static/assets/iFrame-based/images/embedded-create.png#max-width=85%)  
 
 ## Steps to embed dashboard designer using URL
 
-1.  To get the **embed URL**, click the context menu of the respective dashboard and choose the `Get Embed code` option.
+1.  To obtain the **embed URL**, click on the context menu of the dashboard you wish to embed and select the `Get Embed code` option.
 ![EmbedCodeOption](/static/assets/iFrame-based/images/embed-option.png#max-width=85%) 
 
 2. Select the mode value as `Edit` for rendering a dashboard to edit or design.
 ![ModeOption](/static/assets/iFrame-based/images/select-mode-design.png#max-width=45%) 
 
-3. By default, the SSO options are disabled. Enable this option by sliding the button given in the embed dialog. 
+3. The SSO options are disabled by default. To enable this option, slide the button provided in the embed dialog.
 ![EnableOption](/static/assets/iFrame-based/images/enable-option-design.png#max-width=45%)  
 <table>
     <tr>
@@ -257,22 +257,22 @@ Pass your filters to the `embed_datasource_filter` parameter in the iFrame URL a
     </tr>
 </table>  
 
-4. Copy the embed URL by clicking the copy icon from the embed code dialog.  
+4. Please copy the embed URL by clicking on the copy icon in the embed code dialog. 
 	![CopyEmbedCodeForDesgin](/static/assets/iFrame-based/images/copy-embedcode-design.png#max-width=45%)
 
-5. Embed the copied URL into other web applications.
+5. Please embed the copied URL into other web applications.
 
-6. When you run the web application, it will show the login window or designer dashboard. When you click the login button and log in with valid user credentials, the dashboard designer will render automatically.
+6. When the web application is run, it will display either the login window or the designer dashboard. Upon clicking the login button and logging in with valid user credentials, the dashboard designer will be rendered automatically.
 To avoid login, use the Single Sign-On.
 ![EmbedLogin](/static/assets/iFrame-based/images/iframeLoginPage-design.png#max-width=45%) 
 ![EmbedDesignDashboard](/static/assets/iFrame-based/images/embedded-design.png#max-width=90%) 
 
 
-> **NOTE:** For Single Sign-On click the context menu of the respective dashboard and choose the `Get Embed code` option. In the Embed Code dialog box, select `Edit` as the Mode value. Enable the SSO and the select any one of these:`Windows Active Directory`, `Azure Active Directory`, `OAuth 2.0` and `OpenID Connect` authentications. Similar to the view mode Single Sign-On.
+> **NOTE:** To access Single Sign-On, click on the context menu of the corresponding dashboard and select the `Get Embed code` option. In the Embed Code dialog box, choose `Edit` as the Mode value. Enable SSO and select one of the following authentication methods:`Windows Active Directory`, `Azure Active Directory`, `OAuth 2.0` and `OpenID Connect`. This is similar to the Single Sign-On view mode.
 
 
 ## Embedding dashboard with filter parameter
-You can pass parameters to a dashboard by including them in a dashboard URL in embedding. Passing parameter values within URL will apply filter in the dashboard on initial load itself. You can learn more details [here](/working-with-dashboards/preview-dashboard/urlparameters/#passing-parameter-with-url).  
+You can pass parameters to a dashboard by including them in the dashboard URL when embedding it. By passing parameter values within the URL, filters will be applied to the dashboard upon initial load. For more detailed information, you can learn more [here](/working-with-dashboards/preview-dashboard/urlparameters/#passing-parameter-with-url).  
 
 ## Dynamic connection string for dashboard embedding
-The Dynamic Connection String feature enables you to modify the connection string of the data sources in dashboard view mode. This feature is applicable only to the dashboards embedded using the Dashboard Embedding feature. Dashboards in the Bold BI application will be rendered using the connection string used while creating the data source. Learn more details [here](/embedding-options/iframe-embedding/dynamic-connection-string/).  
+The Dynamic Connection String feature allows you to change the connection string of data sources in dashboard view mode. This feature is only applicable to embedded dashboards using the Dashboard Embedding feature. Dashboards in the Bold BI application will use the connection string used during data source creation. For more information, please visit the provided [here](/embedding-options/iframe-embedding/dynamic-connection-string/).  

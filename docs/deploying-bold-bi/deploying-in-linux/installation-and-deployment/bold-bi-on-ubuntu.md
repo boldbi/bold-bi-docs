@@ -10,9 +10,9 @@ documentation: ug
 
 ## Deployment prerequisites
 
-1. Access to a Linux server with a standard user account with sudo privileges.
+1. You must have access to a Linux server with a standard user account that has sudo privileges.
 
-2. Install [Nginx](https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/linux-nginx?view=aspnetcore-3.1#install-nginx).
+2. Install [Nginx](https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/linux-nginx?view=aspnetcore-3.1#install-nginx) by running the following commands:
 
     ~~~shell
     sudo apt-get update 
@@ -20,25 +20,42 @@ documentation: ug
     sudo apt-get install nginx
     ~~~ 
 
-3. Install zip.
+3. Install zip by running the following command:
 
     ~~~shell
     sudo apt-get install zip 
     ~~~
 
-4. Install `GDIPlus` package using the following command. 
+4. Install the `GDIPlus` package using the following command:
 
     ~~~shell
     sudo apt-get install libgdiplus
     ~~~
 
-5. Install `pv` tool by running below command.
+5. Install the `pv` tool by running the following command:
 
     ~~~shell
     sudo apt-get install pv
     ~~~
+
+6. Install the `python 3.9` or `later` by executing the following command:
+   
+   **Ubuntu Version:22.04** :
+    ~~~shell
+    sudo apt-get install -y python3
+    ~~~
+
+    **Ubuntu Version:20.04** :
+    ~~~shell
+    sudo apt update && sudo apt install wget software-properties-common && sudo add-apt-repository ppa:deadsnakes/ppa && sudo apt update && sudo apt install python3.9
+    ~~~
     
-6. Add an `openssl conf` path in the environment, if does not exist.
+8. Install pip dependency packages for ETL service by running the following command:
+    ~~~shell
+    sudo apt-get install python3-pip && sudo pip install duckdb===0.9.2 dlt===0.4.2 pymysql pyodbc pg8000 poetry pandas===2.0.0 "dlt[parquet]" "dlt[filesystem]"
+    ~~~
+
+9. If it does not exist, add an `openssl conf` path to the environment by running the following command:
 
 	~~~shell
     export OPENSSL_CONF=/etc/ssl/
@@ -46,55 +63,54 @@ documentation: ug
 
 ## Configuring the Bold BI application
 
-1. Register and download the Bold BI Linux package from [here](/deploying-bold-bi/overview/#registration-and-download).
+1. Register and download the Bold BI Linux package from [here](https://www.boldbi.com/account/).
 
-2. Download the Bold BI Linux package by running the following command.
+2. Download the Bold BI Linux package by running the following command:
 
     ~~~shell
     sudo wget {Bold BI Linux package link}
     ~~~
 
-3. Extract the zip file.
+3. Extract the zip file by running the following command:
 
     ~~~shell
     sudo unzip {Bold BI Linux package zip file}
     ~~~ 
 
-4. Change the directory to `BoldBIEnterpriseEdition-Linux` by running the following command. 
+4. Change the directory to `BoldBIEnterpriseEdition-Linux` by running the following command:
 
     ~~~shell
     cd BoldBIEnterpriseEdition-Linux
     ~~~ 
  
-5. Execute the following command to deploy Bold BI in your Linux machine. 
+5. Execute the following command to deploy Bold BI on your Linux machine:
  
     ~~~shell
     sudo bash install-boldbi.sh -i {new} -u {user} -h {host URL} -n {true or false} 
     ~~~
- 
 
-* **i :** Installation type - Specifies either it is a new or upgrade installation.
+* **i :** Installation type - Specify whether it is a new or upgrade installation.
 
-* **u :** Specify the user or group that manages the service. Please ensure that this user exists in your Linux server. 
+* **u :** Specify the user or group that manages the service. Make sure this user exists on your Linux server. 
 
-* **h :** Domain or IP address of the machine with http protocol. 
+* **h :** Domain or IP address of the machine with HTTP protocol. 
 
-* **n :** Setting this to “true” will automatically configure the Bold BI with Nginx front-end server. 
+* **n :** Setting this to “true” will automatically configure Bold BI with Nginx front-end server.
 
-    >**IMPORTANT:** If you have any existing applications running in that Linux machine using Nginx, set “-n” value to false and configure the [Nginx manually](/deploying-bold-bi/deploying-in-linux/installation-and-deployment/bold-bi-on-ubuntu/#manually-configure-nginx).  
+    >**IMPORTANT:** If there are any existing applications running on the Linux machine using Nginx, set the “-n” value to false and configure [Nginx manually](/deploying-bold-bi/deploying-in-linux/installation-and-deployment/bold-bi-on-ubuntu/#manually-configure-nginx).  
 
-    Example for new installation,
+    Example for new installation:
     ~~~shell
     sudo bash install-boldbi.sh -i new -u www-data -h http://linux.example.com -n true
     ~~~ 
 
-> **NOTE:** You can also [configure Bold BI with Apache server](/deploying-bold-bi/deploying-in-linux/deploy-bold-bi-using-apache-server/configure-apache-server-in-ubuntu/) in Ubuntu.
+> **NOTE:** You can also [configure Bold BI with Apache server](/deploying-bold-bi/deploying-in-linux/deploy-bold-bi-using-apache-server/configure-apache-server-in-ubuntu/) on Ubuntu.
 
-Once the installation completed, open the host URL in the browser and continue the application startup.
+Once the installation is completed, open the host URL in your browser and proceed with the application startup.
 
 ## Manually Configure Nginx
 
-To configure Nginx as a reverse proxy to forward requests to the Bold BI app, modify `/etc/nginx/sites-available/default`. Open it in a text editor, and add the following code.
+To configure Nginx as a reverse proxy to forward requests to the Bold BI app, modify the file `/etc/nginx/sites-available/default`. Open it in a text editor and add the following code.
 
 ~~~shell
 #server {
@@ -228,29 +244,29 @@ server {
 }
 ~~~
 
-Once the Nginx configuration is established, run the `sudo nginx -t` to verify the syntax of the configuration files. If the configuration file test is successful, force the Nginx to pick up the changes by running the `sudo nginx -s reload.`
+Once the Nginx configuration is set up, run the command `sudo nginx -t` to verify the syntax of the configuration files. If the configuration file test is successful, force Nginx to pick up the changes by running `sudo nginx -s reload`.
 
 ## Configure SSL
-If you have an SSL certificate for your domain and need to configure the site with your SSL certificate, follow these steps or you can skip this.
+If you have an SSL certificate for your domain and need to configure the site with it, follow these steps. Otherwise, you can skip this section.
 
-1. Navigate to `/etc/nginx/sites-available/`. Open the `boldbi-nginx-config` file in a text editor.
-2. Uncomment the following marked lines in the Nginx config file.
+1. Navigate to the directory `/etc/nginx/sites-available/` and open the file `boldbi-nginx-config` in a text editor.
+2. Uncomment the marked lines in the Nginx config file.
 
     ![ssl configuration uncomment](/static/assets/installation-and-deployment/images/linux-ssl-configuration-uncomment.png)
 
-3. Comment the following marked line in the Nginx config file.
+3. Comment the marked line in the Nginx config file.
 
     ![ssl configuration comment](/static/assets/installation-and-deployment/images/linux-ssl-configuration-comment.png)
 
-4. Replace the `example.com` with your domain name.
+4. Replace `example.com` with your domain name.
 
 5. Define the path of the SSL certificate: `ssl_certificate /etc/ssl/domain.crt`.
 
 6. Specify the directory where the SSL certificate key is located: `ssl_certificate_key /etc/ssl/domain.key`.
 
-7. Save and run the `sudo nginx -t` to verify the syntax of the configuration file. If the configuration file test is successful, force the Nginx to pick up the changes by running the `sudo nginx -s reload.`
+7. Save the changes and run `sudo nginx -t` to verify the syntax of the configuration file. If the configuration file test is successful, force Nginx to pick up the changes by running `sudo nginx -s reload`.
 
-> **NOTE:** If you are configuring the application with SSL, you need to update the URLs in the product.json with `HTTPS` located in the `/var/www/bold-services/application/app_data/configuration.`
+> **NOTE:** If you are configuring the application with SSL, you need to update the URLs in the product.json file with `HTTPS`, located in the directory `/var/www/bold-services/application/app_data/configuration`.
 
 ## Next steps
 

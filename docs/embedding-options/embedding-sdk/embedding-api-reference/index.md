@@ -5,13 +5,11 @@ description: Know about the JavaScript APIs in Embed SDK to pass server URL, das
 platform: bold-bi
 documentation: UG
 keywords: Bold BI,embedding,Dashboard
-
 ---
 
 # Bold BI Embedding SDK
 
-Bold BI Embed SDK allows you to visualize the dashboard that was published in Bold BI server by providing the server URL, dashboard path, and authorization server details inside your application. Refer this link <a href="https://samples.boldbi.com/embed/" target="_blank">here</a>
- , for more supported customization in Bold BI Embed SDK.
+The Bold BI Embed SDK enables you to visualize the dashboard published on the Bold BI server by including the server URL, dashboard path, and authorization server details in your application. For additional supported customization options in the Bold BI Embed SDK, please refer to this [here](https://samples.boldbi.com/embed/).
 
 **Syntax**
 
@@ -48,8 +46,8 @@ dashboard.loadDashboard();
 
 * module:`boldbi-embed.js`
 
-In this section, public API's details with code snippets are mentioned.
+In this section, the details of public APIs are mentioned along with code snippets. 
 
-* [Methods](/embedding-options/embedding-sdk/embedding-api-reference/methods/)
 * [Members](/embedding-options/embedding-sdk/embedding-api-reference/members/)
+* [Methods](/embedding-options/embedding-sdk/embedding-api-reference/methods/)
 * [Events](/embedding-options/embedding-sdk/embedding-api-reference/events/)

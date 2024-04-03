@@ -8,15 +8,15 @@ documentation: ug
 
 # Embedding Bold BI Dashboards in WPF using the Embedded SDK
 
-A GitHub link has been provided to [get](https://github.com/boldbi/wpf-sample) the sample application, which demonstrates the rendering of dashboard available in your Bold BI server and followed by steps to create a new embedding application in the `WPF` on your own.  
+A GitHub link has been provided to [get](https://github.com/boldbi/wpf-sample) the sample application that demonstrates the rendering of the dashboard available on your Bold BI server. This will be followed by steps to create a new embedding application in `WPF` on your own.  
 
-> **NOTE:** Reading the [Getting Started](/getting-started/embedding-in-your-application/) section of the documentation is the best way to get started. The `Getting Started` guide gives you enough information that you need to know before working on the sample. 
+> **NOTE:** Reading the [Getting Started](/getting-started/embedding-in-your-application/) section of the documentation is the best way to begin. The `Getting Started` guide provides you with the necessary information you need to know before working on the sample. 
 
 ## Sample to embed dashboard
 
  1. Please [get](https://github.com/boldbi/wpf-sample) the WPF Forms sample.    
 
- 2. You need to set the following properties in the `EmbedProperties.cs` file as follows.  
+ 2. You must set the following properties in the `EmbedProperties.cs` file as shown below.  
     ![Embed Properties](/static/assets/javascript/sample/images/wpf-props.png#max-width=80%)
     <meta charset="utf-8"/>
     <table>
@@ -43,14 +43,14 @@ A GitHub link has been provided to [get](https://github.com/boldbi/wpf-sample) t
         </tr>
         <tr>
         <td align="left">EmbedSecret</td>
-            <td align="left">You can get your EmbedSecret key from embed tab by enabling<code> Enable embedauthentication</code> in <a href='https://help.boldbi.com/embedded-bi/site-administration/embed-settings/'>Administration page</a>. </td>
+            <td align="left">You can get your EmbedSecret key from embed tab by enabling<code> Enable embedauthentication</code> in <a href='/site-administration/embed-settings/'>Administration page</a>. </td>
         </tr>    
     </tbody>
     </table>
 
- 3. Then, run your WPF application.
+ 3. Then, you can run your WPF application.
 
- 4. The dashboard can be rendered in design mode or created with the following changes in the `InitializeAsync()` method.
+ 4. The dashboard can be rendered in design mode or created by making the following changes in the `InitializeAsync()` method.
 
      ```js
      async void InitializeAsync(string resultContent)
@@ -59,7 +59,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/wpf-sample) t
             <!DOCTYPE html>
         <html><head><meta http-equiv='X-UA-Compatible' content='IE=Edge' />
         <script src='https://cdn.polyfill.io/v2/polyfill.min.js'></script>
-        <script type='text/javascript' src='https://cdn.boldbi.com/embedded-sdk/v6.16.12/boldbi-embed.js'></script>" +
+        <script type='text/javascript' src='https://cdn.boldbi.com/embedded-sdk/v7.6.12/boldbi-embed.js'></script>" +
         "<script type='text/javascript'>$(document).ready(function() " +
         "{this.dashboard = BoldBI.create({ serverUrl:'" + EmbedProperties.RootUrl + EmbedProperties.SiteIdentifier + "', dashboardId:'" + EmbedProperties.DashboardId + "',embedContainerId: 'dashboard',embedType:'" + BoldBI.EmbedType.Component + "',environment:'" + BoldBI.Environment.Enterprise, /* If Cloud, you should use BoldBI.Environment.Cloud */ + "'mode: '" + BoldBI.Mode.Design + "',width: window.innerWidth - 20 + 'px',height: window.innerHeight - 20 + 'px',expirationTime: 100000,authorizationServer:{url: '', data:" + resultContent + "}});this.dashboard.loadDesigner();});</script>" +
         "</head>" +
@@ -109,34 +109,34 @@ A GitHub link has been provided to [get](https://github.com/boldbi/wpf-sample) t
 
 ## Get dashboard ID
 
- Get the item id of the dashboard from the BI server. Please refer to this [link](/working-with-dashboards/share-dashboards/get-dashboard-link/#get-link) and the following screenshot.
+ Please obtain the item ID of the dashboard from the BI server. Kindly refer to this [link](/working-with-dashboards/share-dashboards/get-dashboard-link/#get-link) and the accompanying screenshot.
    ![Get dashboard ID](/static/assets/javascript/sample/images/get-dashboard-id.png#max-width=55%)
 
- After changing the above details in the sample, run the WPF forms and the dashboard will be rendered.
+ After making the above changes in the sample, run the WPF forms and the dashboard will be displayed.
 
 ## How this sample works
  1. Use `WebView` to render the BoldBI Dashboard in the WPF application.
 
- 2. Since you are using `WebView`, you have to generate the html file to append to `WebView`.
+ 2. Since you are using the `WebView`, you need to generate the HTML file to append it to the `WebView`.
 
- 3. Authorize the application by calling the `MainWindow` method as follows.
+ 3. To authorize the application, call the `MainWindow` method in the following manner.
     ![embed details](/static/assets/javascript/sample/images/mainwindow-wpf.png#max-width=100%)
 
- 4. In the above authorization, the `SignatureUrl` is generated with the provided `EmbedSecret`. Using the signature, You will validate the details and BoldBI will return the token. You will pass the token with the `HtmlString` as follows.
+ 4. In the above authorization, the `SignatureUrl` is generated with the provided `EmbedSecret`. Using the signature, you will validate the details and BoldBI will return the token. You will pass the token with the `HtmlString` as follows.
     ![Htmlstring](/static/assets/javascript/sample/images/wpf-htmlstring.png#max-width=80%)
 
- 5. In the` EmbedProperties.cs`, change the `dashboard Id` of the respective dashboard as you wish to embed.
+ 5. In the `EmbedProperties.cs` file, modify the `dashboard Id` of the desired dashboard according to your embedding preference.
     ![Embed Properties](/static/assets/javascript/sample/images/wpf-props.png#max-width=80%)
 
 ## Steps to create new WPF Core application to embed dashboard
- 1. Open visual studio and search WPF in the search template as follows.
+ 1. Open Visual Studio and search for WPF in the search template.
     ![Create_WPF](/static/assets/javascript/sample/images/wpf_create.png#max-width=80%)
 
- 2. Choose like the above highlighted one, then click `Next`.
+ 2. Choose the one highlighted above, then click `Next`.
 
- 3. Change the project name as you want, then click `Create`.
+ 3. Change the project name as desired, then click on `Create`.
 
- 4. Create the model class `EmbedProperties.cs` and define properties as follows.
+ 4. Create the model class `EmbedProperties.cs` and define the properties as follows.
 
      ```js
         public class EmbedProperties
@@ -159,7 +159,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/wpf-sample) t
         }
      ```
 
- 5. In this method, the `embedQuerString`, `userEmail`, and the value from the `GetSignatureUrl()` method are appended as query parameters in the URL to get details of a particular dashboard.
+ 5. In this method, the `embedQueryString`, `userEmail`, and the value from the `GetSignatureUrl()` method are appended as query parameters in the URL to obtain details of a specific dashboard.
 
      ```js
      public MainWindow()
@@ -201,7 +201,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/wpf-sample) t
         }
      ```
 
- 6. In the `InitializeAsync()` method, create the html content and include the mandatory cdn files in it. Create a DOM element with id dashboard where the `dashboard` is rendered.
+ 6. In the `InitializeAsync()` method, create the HTML content and include the mandatory CDN files in it. Create a DOM element with the id "dashboard" where the `dashboard` is rendered.
 
      ```js
         async void InitializeAsync(string resultContent)
@@ -210,7 +210,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/wpf-sample) t
                 <!DOCTYPE html>
         <html><head><meta http-equiv='X-UA-Compatible' content='IE=Edge' />
         <script src='https://cdn.polyfill.io/v2/polyfill.min.js'></script>
-        <script type='text/javascript' src='https://cdn.boldbi.com/embedded-sdk/v6.16.12/boldbi-embed.js'></script>" +
+        <script type='text/javascript' src='https://cdn.boldbi.com/embedded-sdk/v7.6.12/boldbi-embed.js'></script>" +
         "<script type='text/javascript'>$(document).ready(function() " +
         "{this.dashboard = BoldBI.create({ serverUrl:'" + EmbedProperties.RootUrl + EmbedProperties.SiteIdentifier + "', dashboardId:'" + EmbedProperties.DashboardId + "',embedContainerId: 'dashboard',embedType:'" + BoldBI.EmbedType.Component + "',environment:'" + BoldBI.Environment.Enterprise, /* If Cloud, you should use BoldBI.Environment.Cloud */ + "'mode: '" + BoldBI.Mode.View + "',width: window.innerWidth - 20 + 'px',height: window.innerHeight - 20 + 'px',expirationTime: 100000,authorizationServer:{url: '', data:" + resultContent + "}});this.dashboard.loadDashboard();});</script>" +
         "</head>" +

@@ -9,6 +9,6 @@ documentation: ug
 
 # REST API v2.0
 
-This section explains how to manage your sites and users in your Bold BI or Bold Reports applications.
+This section explains how to manage the sites and users in your Bold BI or Bold Reports applications.
 
 [Rest API - v2.0](/site-administration/api-reference/v2.0/api-reference/)

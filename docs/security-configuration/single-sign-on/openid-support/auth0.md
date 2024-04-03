@@ -8,7 +8,7 @@ documentation: ug
 
 # Auth0 support for SSO authentication
 
-Bold BI application supports adding users using the Auth0 provider. By importing them, you can share the dashboards and email exported dashboards with them.
+The Bold BI application supports the addition of users using the Auth0 provider. By importing them, you can share the dashboards and send exported dashboards to them via email.
 
 > **NOTE:** This feature is available in Bold BI Embedded Analytics but not in Cloud Analytics Server.
 
@@ -16,7 +16,7 @@ Bold BI application supports adding users using the Auth0 provider. By importing
 
 This section explains how to perform Single Sign-On for users in Auth0 with the Bold BI application.
 
-> **NOTE:**  This configuration has to be done in Auth0 website.
+> **NOTE:**  This configuration needs to be done on the Auth0 website.
 
 #### Prerequisites
 
@@ -25,15 +25,15 @@ This section explains how to perform Single Sign-On for users in Auth0 with the 
 
 ### Steps to register the Bold BI application
 
-1. Login to the Auth0 website with an admin account.
+1. To login to the Auth0 website, use an admin account.
 
     ![Admin page](/static/assets/site-administration/openid-support/images/Authadmin.png)
 
-2. Click `Applications` in the left menu and the click `CREATE APPLICATION` button.
+2. Click on `Applications` in the left menu, and then click on the `CREATE APPLICATION` button.
 
     ![Application page](/static/assets/site-administration/openid-support/images/authAddapp.png)
 
-3. Click `web` and proceed with `Next`.
+3. Click on `web` and proceed to the `Next` step.
 
     ![Application type](/static/assets/site-administration/openid-support/images/authregisterapp.png)
 
@@ -41,25 +41,25 @@ This section explains how to perform Single Sign-On for users in Auth0 with the 
 
     ![Client details](/static/assets/site-administration/openid-support/images/authclientdetails.png)
 
-5. Scroll down and save the `Allowed Callback URLs`.
+5. Please scroll down and save the `Allowed Callback URLs`.
 
     ![Callback URI](/static/assets/site-administration/openid-support/images/auth0-callback-uri.png)
 
-6. This URL must be the redirect URI in the settings of your Bold BI application as in the following screenshot.
+6. This URL must be the redirect URI in the settings of your Bold BI application, as shown in the following screenshot.
 
     ![Redirect URI](/static/assets/site-administration/openid-support/images/redirecturi.png#width=55%)
     
-Fill the details and save the changes.
+Please fill in the details and save the changes.
 
-After successful registration in Auth0, save these settings in Bold BI settings page to enable this authentication.
+After successfully registering in Auth0, save these settings on the Bold BI settings page to enable this authentication.
 
 ## Enable Auth0 support for authentication in Bold BI
 
-Configure the settings in Bold BI as in the following snap to enable the authentication using the Auth0.
+To enable authentication using Auth0, configure the settings in Bold BI as shown in the following snapshot.
 
 ![Auth0 settings](/static/assets/site-administration/openid-support/images/auth0-sample-value.png#width=55%)
 
-The fields to be saved in the Bold BI to enable the Auth0 for authentication is explained as follows.
+The fields that need to be saved in Bold BI in order to enable Auth0 for authentication are explained as follows.
 
 <table>
 
@@ -102,10 +102,10 @@ The fields to be saved in the Bold BI to enable the Auth0 for authentication is 
 
 ## Configure Auth0 Group Import Settings in Bold BI
 
-Configure group import setting in Bold BI using Auth0 as shown in the below image.
+Configure the group import setting in Bold BI using Auth0, as shown in the image below.
 
 ![Auth0 Group](/static/assets/site-administration/openid-support/images/Auth0-group.png)
 
-> **IMPORTANT:**  For managing groups in Auth0, we need to install `Authorization Extension`. Follow the link for more details https://auth0.com/docs/extensions/authorization-extension/v2
+> **IMPORTANT:**  To manage groups in Auth0, we need to install the `Authorization Extension`. For more details, please follow this link: https://auth0.com/docs/extensions/authorization-extension/v2.
 
-For `Audience` and `Extension URL` refer the link https://auth0.com/docs/api/authorization-extension#get-all-groups
+To reference the `Audience` and `Extension URL`, please refer to the link: https://auth0.com/docs/api/authorization-extension#get-all-groups.

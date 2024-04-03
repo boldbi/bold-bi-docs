@@ -12,7 +12,7 @@ Enabling Content Security Policy (CSP) will not affect dashboard rendering unles
 
 Click [here](/security-configuration/content-security-policy/) to learn how to configure CSP in the Bold BI.
 
-> **NOTE:** Enabling the Content Security Policy support is not available in Bold BI Embedded Analytics and it is available in Cloud Analytics Server.
+> **NOTE:** Enabling the Content Security Policy support is not available in On-Premises Deployment and it is available in Syncfusion Managed Cloud Server.
 
 ## How will the dashboards get affected while content security policy enabled?
 

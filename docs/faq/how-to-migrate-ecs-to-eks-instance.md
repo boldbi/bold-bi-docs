@@ -67,7 +67,9 @@ Example: `https://example.com/ums/administration`
 
 14. Save the changes, and now the application is mapped to the EKS DNS.
 
-15. Also, replace the DNS in the `config.xml` and `product.json` files. We need to bash into the dataservice pod to replace the EKS DNS in the config.xml and product.json file.
+15. Also, replace the DNS in the `config.json` and `product.json` files. You need to bash into the data service pod to replace the EKS DNS in the config.json and product.json files.
+
+    >**Note:** From version 6.19.14, use the config.json and the config.xml for versions prior to this.
 
 16. Follow the command below to bash a pod to replace an EKS ingress DNS:
 
@@ -75,7 +77,7 @@ Example: `https://example.com/ums/administration`
     kubectl exec -it <dataservice pod name> -n <namespace> -- bash 
     ~~~
 
-17. Follow the command below to edit the `config.xml` file inside the pod and replace the EKS ingress DNS and save the changes.
+17. Follow the below command to edit the `config.json` file inside the pod, replace the EKS ingress DNS, and save the changes.
 
     ~~~shell
     apt update 

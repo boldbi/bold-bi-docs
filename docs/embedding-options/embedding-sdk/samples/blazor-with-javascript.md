@@ -8,9 +8,9 @@ documentation: ug
 
 # Embedding Bold BI Dashboards in Blazor using the Embedded SDK
 
-The sample has been provided in the following sections for `Blazor Server`, which demonstrates the dashboard rendering available in your Bold BI server and is followed by steps to create a new embedding application in `Blazor Server` on your own.
+The sample has been provided in the following sections for `Blazor Server`, which demonstrates the dashboard rendering available on your Bold BI server. It is followed by steps to create a new embedding application in `Blazor Server` on your own. 
 
-> **NOTE:** Reading the [Getting Started](/getting-started/embedding-in-your-application/) section of the documentation is the best way to get started. The `Getting Started` guide gives you enough information that you need to know before working on the sample.
+> **NOTE:** Reading the [Getting Started](/getting-started/embedding-in-your-application/) section of the documentation is the best way to begin. The `Getting Started` guide provides you with all the necessary information you need to know before working on the sample.
 
 ## Prerequisites
 
@@ -21,14 +21,14 @@ The sample has been provided in the following sections for `Blazor Server`, whic
 
 1. Please [get](https://github.com/boldbi/blazor-server-sample) the Blazor Server sample from GitHub. 
 
-2. Please ensure you have enabled embed authentication on the `embed settings` page. If it is not currently enabled, please refer to the following image or detailed [instructions](https://help.boldbi.com/site-administration/embed-settings/#get-embed-secret-code) to enable it.
+2. Please make sure that you have enabled embed authentication on the `embed settings` page. If it is not currently enabled, please refer to the following image or detailed [instructions](/site-administration/embed-settings/#get-embed-secret-code) to enable it.
    ![Embed Settings](/static/assets/javascript/sample/images/embed-settings.png)
 
-3. To download the `embedConfig.json` file, please follow this [link](https://help.boldbi.com/site-administration/embed-settings/#get-embed-configuration-file) for reference. Additionally, you can refer to the following image for visual guidance.
+3. To download the `embedConfig.json` file, please follow this [link](/site-administration/embed-settings/#get-embed-configuration-file) for reference. Additionally, you can refer to the image below for visual guidance.
    ![EmbedSettings image](/static/assets/javascript/sample/images/embed-settings-download.png)
    ![EmbedConfig Properties](/static/assets/javascript/sample/images/prop-core.png)
  
-4. Copy the downloaded `embedConfig.json` file and paste it into the designated [location](https://github.com/boldbi/blazor-server-sample) within the application. Please ensure you have placed it in the application, as shown in the following image.
+4. Copy the downloaded `embedConfig.json` file and paste it into the designated [location](https://github.com/boldbi/blazor-server-sample) within the application. Please make sure that you have placed it in the application, as shown in the following image.
 
    ![EmbedConfig image](/static/assets/javascript/sample/images/blazor-embed-config.png)
 
@@ -49,7 +49,7 @@ The sample has been provided in the following sections for `Blazor Server`, whic
        </tr>
        <tr>
           <td align="left">EmbedSecret</td>
-          <td align="left">Get your EmbedSecret key from the Embed tab by enabling the <code>Enable embed authentication</code> in the <a href='https://help.boldbi.com/embedded-bi/site-administration/embed-settings/'>Administration page</a> </td>
+          <td align="left">Get your EmbedSecret key from the Embed tab by enabling the <code>Enable embed authentication</code> in the <a href='/site-administration/embed-settings/'>Administration page</a> </td>
        </tr>
        <tr>
           <td align="left">Environment</td>
@@ -67,11 +67,11 @@ The sample has been provided in the following sections for `Blazor Server`, whic
     </table>
 
        
-5. Open your project in `Visual Studio Code` and use the command `dotnet restore` to restore the necessary packages. Once the packages have been restored, use the `dotnet build` command to build the project.
+5. Please open your project in `Visual Studio Code` and use the command `dotnet restore` to restore the necessary packages. Once the packages have been restored, use the command `dotnet build` to build the project.
 
-6. Run the Blazor Server sample with the command `dotnet watch run` in Visual Studio Code. 
+6. To run the Blazor Server sample, use the command `dotnet watch run` in Visual Studio Code. 
 
-7. The dashboard can be editable in design mode and create a new dashboard with the following changes in the `renderDashboard()` method.
+7. The dashboard can be edited in design mode, and you can create a new dashboard with the following changes in the `renderDashboard()` method.
 
     <meta charset="utf-8"/>
     <table>
@@ -111,13 +111,13 @@ The sample has been provided in the following sections for `Blazor Server`, whic
         };
      ```
 
-> **NOTE:** We represent the dashboard embedding by default without the dashboard listing sidebar. You must navigate to the `dashboardlisting` URL (such as https://localhost:5001/dashboardlisting) to enable the dashboard list.
+> **NOTE:** By default, we represent the dashboard embedding without the dashboard listing sidebar. To enable the dashboard list, you need to navigate to the `dashboardlisting` URL (e.g., https://localhost:5001/dashboardlisting).
 
 ## How Blazor Server sample works
- 1. Based on the dashboard details in the `_Host.cshtml`, authorize the server URL by calling the `AuthorizationServer` function as follows.
+ 1. Based on the dashboard details in the `_Host.cshtml`, authorize the server URL by calling the `AuthorizationServer` function in the following manner.
     ![Authorization Server](/static/assets/javascript/sample/images/blazor-authorize.png#max-width=95%)
 
- 2. In the above authorization, generate the `SignatureUrl` with the provided `EmbedSecret key` and validate the authorization server in Bold BI. Once details are validated, the dashboard starts to render.
+ 2. In the above authorization, generate the `SignatureUrl` using the provided `EmbedSecret key` and validate the authorization server in Bold BI. Once the details are validated, the dashboard will start to render.
 
  3. In `embedConfig.json`, change the dashboard ID of the respective dashboard as you wish to embed.
     ![EmbedProperties](/static/assets/javascript/sample/images/prop-core.png#max-width=70%)
@@ -127,8 +127,7 @@ The sample has been provided in the following sections for `Blazor Server`, whic
  1. Create a folder in the desired location and open it in the Visual Studio Code. 
 
  2. Open the terminal in the Visual Studio Code. Please refer to the following image.
-
-    ![Terminal Image](/static/assets/javascript/sample/images/blazor-terminal-img.png)
+    ![Terminal Image](/static/assets/javascript/sample/images/blazor-terminal-image.png)
     
  3. To create a new project, we need to run this command in the terminal.
 
@@ -136,12 +135,10 @@ The sample has been provided in the following sections for `Blazor Server`, whic
          dotnet new blazorserver
     ```
 
- 4. Please ensure you have enabled embed authentication on the `embed settings` page. If it is not currently enabled, please refer to the following image or detailed [instructions](https://help.boldbi.com/site-administration/embed-settings/#get-embed-secret-code) to enable it.
-
+ 4. Please ensure you have enabled embed authentication on the `embed settings` page. If it is not currently enabled, please refer to the following image or detailed [instructions](/site-administration/embed-settings/#get-embed-secret-code) to enable it.
     ![Embed Settings](/static/assets/javascript/sample/images/embed-settings.png)
 
- 5. To download the `embedConfig.json` file, please follow this [link](https://help.boldbi.com/site-administration/embed-settings/#get-embed-configuration-file) for reference. Additionally, you can refer to the following image for visual guidance.
-
+ 5. To download the `embedConfig.json` file, please follow this [link](/site-administration/embed-settings/#get-embed-configuration-file) for reference. Additionally, you can refer to the following image for visual guidance.
     ![EmbedSettings image](/static/assets/javascript/sample/images/embed-settings-download.png)
     ![EmbedConfig Properties](/static/assets/javascript/sample/images/prop-core.png)
 
@@ -193,12 +190,12 @@ The sample has been provided in the following sections for `Blazor Server`, whic
 
  9. The following script is mandatory to render the dashboard. Set the `Layout = null` at the top and the following code in your `\Pages\_Host.cshtml` page of the `<body>` tag. This ready function can be used to render the dashboard.
 
-     ![Index.cshml Image](/static/assets/javascript/sample/images/BlazorViewFolderProperties.png)
+     ![Index.cshml Image](/static/assets/javascript/sample/images/ViewFolderProperties-blazor.png)
 
      ```js 
        <div id="dashboard"></div>
        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-       <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v6.16.12/boldbi-embed.js"></script>
+       <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v7.6.12/boldbi-embed.js"></script>
        <script type="text/javascript">
              var rootUrl = "@GlobalAppSettings.EmbedDetails.ServerUrl";
              var siteIdentifier = "@GlobalAppSettings.EmbedDetails.SiteIdentifier";

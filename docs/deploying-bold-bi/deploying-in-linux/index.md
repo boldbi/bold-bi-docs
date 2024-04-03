@@ -8,7 +8,7 @@ documentation: ug
 
 # Deploying in Linux
 
-This document explains setting up a Bold BI application on an Linux server.
+This document explains how to set up a Bold BI application on a Linux server.
 
 [Prerequisites](/deploying-bold-bi/deploying-in-linux/prerequisites-linux/)
 

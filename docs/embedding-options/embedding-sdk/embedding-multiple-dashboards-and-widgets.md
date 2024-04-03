@@ -8,19 +8,19 @@ documentation: ug
 
 # Steps to embed the multiple dashboard and widgets in your application
 
-Follow these steps to embed multiple dashboards and widgets in your application.
+Please follow these steps to embed multiple dashboards and widgets in your application.
 
 ## How to use BoldBI wrapper inside your html page
 
-1. In your .html page, you need to add the following Embed SDK URL in the head tag of your page.
+1. In your .html page, you need to add the following Embed SDK URL to the `head` tag of your page. 
 
     ```js
     <head>  
-        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v6.16.12/boldbi-embed.js"></script>
+        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v7.6.12/boldbi-embed.js"></script>
     </head>
     ```
 
-2. In the body tag, you need to create the div elements with your own id name. These elements will be used for multiple dashboards and widgets embedding.
+2. In the `body` tag, you need to create the `div` elements with your own id names. These elements will be used for embedding multiple dashboards and widgets.
 
     ```js
     <body>
@@ -29,8 +29,9 @@ Follow these steps to embed multiple dashboards and widgets in your application.
         <div id="widget2_container"></div>
     </body>
     ```
+    >**NOTE:** If you use hyphens in IDs, your code may become more prone to errors and be harder to read while using Jquery. Instead, use underscores or camelCase if you are in control of the IDs.
 
-3. In the body tag, you need to add the function to create BoldBI instance with following properties and call that function in the body using the `onload` attribute as follows. Also, call the `loadDashboard()` function for every dashboard and widget.
+3. In the `body` tag, you need to add the function to create a BoldBI instance with the following properties and call that function in the body using the `onload` attribute as follows. Also, call the `loadDashboard()` function for every dashboard and widget.
 
     ```js
     <body onload="embedSample();">
@@ -42,7 +43,6 @@ Follow these steps to embed multiple dashboards and widgets in your application.
                     dashboardPath: "/Sales/Sales Analysis Dashboard",               
                     embedContainerId: "dashboard_container",
                     embedType: BoldBI.EmbedType.Component,
-                    environment: BoldBI.Environment.Enterprise,
                     mode: BoldBI.Mode.View,
                     height: "800px",
                     width: "1200px",
@@ -58,7 +58,6 @@ Follow these steps to embed multiple dashboards and widgets in your application.
                     dashboardPath: "/Sales/Sales Analysis Dashboard",               
                     embedContainerId: "widget1_container",
                     embedType: BoldBI.EmbedType.Component,
-                    environment: BoldBI.Environment.Enterprise,
                     mode: BoldBI.Mode.View,
                     height: "800px",
                     width: "1200px",
@@ -74,7 +73,6 @@ Follow these steps to embed multiple dashboards and widgets in your application.
                     dashboardPath: "/Sales/Sales Analysis Dashboard",               
                     embedContainerId: "widget2_container",
                     embedType: BoldBI.EmbedType.Component,
-                    environment: BoldBI.Environment.Enterprise,
                     mode: BoldBI.Mode.View,
                     height: "800px",
                     width: "1200px",
@@ -89,7 +87,9 @@ Follow these steps to embed multiple dashboards and widgets in your application.
     </body>
     ```  
 
-4. Refer the following table for value of the previous properties based on your application.  
+    > **NOTE:** By default, `BoldBI.Environment.Enterprise` is used for the Environment API member. For Cloud sites, you must set the Environment member value to `BoldBI.Environment.Cloud`.
+
+4. Please refer to the following table for the values of the previous properties based on your application.  
 
     <meta charset="utf-8"/>
     <table>
@@ -115,10 +115,6 @@ Follow these steps to embed multiple dashboards and widgets in your application.
     <td align="left">BoldBI.EmbedType.Component</td>
     </tr>
     <tr>
-    <td align="left">environment</td>
-    <td align="left">BoldBI.Environment.Cloud or BoldBI.Environment.Enterprise</td>
-    </tr>
-    <tr>
     <td align="left">height</td>
     <td align="left">Height of the dashboard designer in your page</td>
     </tr>
@@ -138,11 +134,11 @@ Follow these steps to embed multiple dashboards and widgets in your application.
     </table>
 
 
-5. Copy the previous embedSample() function and paste in your page. You need to update your values to the properties.  
+5. Copy the previous embedSample() function and paste it in your page. You need to update your values to the properties. 
 
-> **NOTE:**  embedContainerId should be same as your div element id value.
+> **NOTE:**  The embedContainerId should be the same as the value of your div element's id.
 
-> **NOTE:**  For Bold BI **v5.2.48** or lower version, you must have add the following dependent scripts and also refer the below **Embed SDK URL** of respective Bold BI version.<br />
+> **NOTE:**  To use Bold BI **v5.2.48** or a lower version, you need to add the following dependent scripts and also reference the **Embed SDK URL** of the respective Bold BI version.<br />
 `https://cdn.boldbi.com/embedded-sdk/v5.2.48/embed-js.js`
 
 <meta charset="utf-8"/>
@@ -182,12 +178,12 @@ Follow these steps to embed multiple dashboards and widgets in your application.
 </code></td>
 </tr>
 <tr>            
-<td><code>v6.16.12(latest)</code></td>             
+<td><code>v7.6.12(latest)</code></td>             
 <td><code>
 
 ```js
 <head> 
-    <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v6.16.12/boldbi-embed.js"></script>
+    <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v7.6.12/boldbi-embed.js"></script>
 </head>
 ```
 
@@ -198,9 +194,9 @@ Follow these steps to embed multiple dashboards and widgets in your application.
 
 ## How to implement the authorize server with user mail or user name
 
-1. You need to implement authorization end point in your application. This will act as the bridge between your application and Bold BI server and also you need to update the secure details like email and group based access. Learn more about authorize server [here](/security-configuration/authorize-server/).  
+1. You need to implement an authorization endpoint in your application. This endpoint will serve as the bridge between your application and the Bold BI server. Additionally, you need to update the secure details, such as email and group-based access. To learn more about the authorize server, please refer to the provided [here](/security-configuration/authorize-server/).  
 
-2. To create authorization-server action method, copy the following snippet in your controller. You can use currently logged in user email at `user@domain.com` or user name at `username`, but this user should have access to the dashboard.   
+2. To create an authorization-server action method, copy the following snippet into your controller. You can use the currently logged-in user's email, which is `user@domain.com` or their `username`. However, this user must have access to the dashboard.
 
     ```js  
     [HttpPost]
@@ -233,7 +229,7 @@ Follow these steps to embed multiple dashboards and widgets in your application.
     }
     ```
 
-3. Add the GetSignatureUrl method, and this method would be called from the previous GetEmbedDetails action. Follow the next section to get EmbedSecret key from Bold BI application.
+3. Please add the GetSignatureUrl method, and make sure to call this method from the previous GetEmbedDetails action. Refer to the following section for instructions on obtaining the EmbedSecret key from the Bold BI application.
 
     ```js  
     public string GetSignatureUrl(string queryString)
@@ -253,9 +249,9 @@ Follow these steps to embed multiple dashboards and widgets in your application.
 
 ## How to pass the Dashboard Parameter and URL Filter Parameter in the authorization end point dynamically
 
-In the authorization endpoint, you can pass both types of filters(Dashboard Parameter/Filter Parameter) at the same time.
+In the authorization endpoint, you can pass both types of filters (Dashboard Parameter/Filter Parameter) simultaneously.
 
-To pass filters to the `embed_datasource_filter` parameter in the authorization endpoint, refer to the following sample in C#(It differs based on your platform language). Here, we have set both types of filters to the `embed_datasource_filter` property in the endpoint.
+To pass filters to the `embed_datasource_filter` parameter in the authorization endpoint, refer to the following sample in C# (the syntax may vary depending on your platform language). In this example, we have set both types of filters to the `embed_datasource_filter` property in the endpoint.
 
 ```js  
 [HttpPost]
@@ -285,11 +281,11 @@ public string GetEmbedDetails(string embedQuerString, string dashboardServerApiU
 }
 ```
 
-* The `Dashboard Parameter` filter must be started with a double ampersand `&&` in the endpoint. Refer to this [link](/working-with-data-source/dashboard-parameter/configuring-dashboard-parameters/) for more details.    
+* The `Dashboard Parameter` filter must be started with a double ampersand `&&` in the endpoint. Refer to this [link](/working-with-data-sources/dashboard-parameter/configuring-dashboard-parameters/) for more details.    
 
-* The `URL Parameter` filter must be started with a single ampersand `&` in the endpoint. Refer to this [link](/working-with-dashboards/preview-dashboard/urlparameters/) for more details.    
+* The `URL Parameter` filter must be started with a single ampersand `&` in the endpoint. Please refer to this [link](/working-with-dashboards/preview-dashboard/urlparameters/) for more details.    
 
-Refer to the following table for the value of the filter properties based on your filter. 
+Please refer to the following table for the values of the filter properties based on your filter.
 
 <meta charset="utf-8"/>
 <table>
@@ -313,14 +309,12 @@ Refer to the following table for the value of the filter properties based on you
 </tbody>
 </table>
 
-> **NOTE:**  Filter value should be enclosed with square and curly brackets as mentioned above.
+> **NOTE:**  The filter value should be enclosed with square and curly brackets, as mentioned above.
 
 ## How to get Embed Secret key from Bold BI application
 
-You can get your Embed Secret key from administrator setting section. Refer this [link](/site-administration/embed-settings/) for more details.
+You can obtain your Embed Secret key from the administrator settings section. Please refer to this [link](/site-administration/embed-settings/) for further information.
 
 ## How to get common Embed Secret key from UMS
 
-If you are using multi-tenant Bold BI server sites and looking for embedding the multiple Dashboard and widgets on the same page in your application, then we recommend using the common embed secret instead of the separate embed secret for each site. Refer to this [link](/site-administration/embed-settings/#get-common-embed-secret-code-from-ums) to get the common embed secret.
-
-> **NOTE:**  <br>This embed setting will be enabled only if you have an Embedded BI plan. <br><br>Refer to this [link](/faq/how-to-resolve-jquery-conflict-in-embedding/) to resolve the jQuery conflict problem in embedded.
+If you are using multi-tenant Bold BI server sites and are looking to embed multiple dashboards and widgets on the same page in your application, we recommend using the common embed secret instead of separate embed secrets for each site. Please refer to this [link](/site-administration/embed-settings/#get-common-embed-secret-code-from-ums) to obtain the common embed secret.

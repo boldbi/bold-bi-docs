@@ -8,9 +8,9 @@ documentation: ug
 
 # Managing Existing Database
 
-This section explains how to configure and how to schedule the synchronization of users from an existing database in the Bold BI Embedded.
+This section explains how to configure and schedule the synchronization of users from an existing database in Bold BI Embedded.
 
-You can explore the configuration in detail here,
+You can explore the configuration details here:
 
 [Database Settings](/site-administration/user-directory-settings/existing-database/database-settings/)
 

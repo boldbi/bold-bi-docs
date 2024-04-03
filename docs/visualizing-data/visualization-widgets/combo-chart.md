@@ -536,6 +536,63 @@ This allows you to edit the `Secondary Value Axis` title. It will reflect in Sec
 
 This allows you to manually set the Minimum, Maximum, and Interval values of primary value axis and secondary value axis through the `Axis Range Settings` dialog.
 
+### Parameter Support in Axis range:
+
+This allows you to dynamically set the Minimum, Maximum, and Interval values of the primary value axis through the `Axis Range Settings` dialog by using the dashboard parameter values. Only number-type Dashboard parameter values are allowed in the axis range properties. You can create multiple types of dashboard parameters.
+
+1. Single parameter value.
+2. Range parameter value.
+3. Data source field based parameter values.
+
+For more details about dashboard parameter, refer to the [Dashboard parameter documentation](/working-with-data-sources/dashboard-parameter/configuring-dashboard-parameters/).
+
+### Single Parameter Value:
+
+A single value is stored in this type of parameter.
+
+1. Create a dashboard parameter in number type like below.
+
+![Axis Range Settings Output](/static/assets/visualizing-data/visualization-widgets/images/combo-chart/parameter.png)
+
+Click the axis range settings dialog and enter `@` in the textbox. Select the parameter value(Numeric parameter values only allowed in the **minimum**, **maximum and interval**).
+
+![Axis Range Settings Output](/static/assets/visualizing-data/visualization-widgets/images/combo-chart/singleaxis.png)
+
+Now the parameter value is reflected in the chart axis.
+
+![Axis Range Settings Output](/static/assets/visualizing-data/visualization-widgets/images/combo-chart/combochartmin.png)
+
+
+### Range Parameter Value:
+
+If you wish to set the same ranges in multiple cases, create the range type parameter value. This type of parameter has the start and end values.
+
+1. Create a parameter in range type.
+
+![Axis Range Settings Output](/static/assets/visualizing-data/visualization-widgets/images/combo-chart/rangeparameter.png)
+
+2. Click the axis range settings dialog and enter `@` in any textbox(**minimum**, **maximum**, and **interval**). The range parameter is split into start and end parameters. First textbox value is stored in the start parameter, and the second textbox value is stored in the end parameter. Select the parameter value (Number type parameter values only allowed).
+
+![Axis Range Settings Output](/static/assets/visualizing-data/visualization-widgets/images/combo-chart/rangeaxis.png)
+
+3. The parameter value is reflected in the chart axis.
+
+![Axis Range Settings Output](/static/assets/visualizing-data/visualization-widgets/images/combo-chart/primaryrange.png)
+
+### Data Source Field Based Parameter Value:
+
+1. Create a parameter in the data source type. In this, choose any field. The value is based on the selected field value.
+
+![Axis Range Settings Output](/static/assets/visualizing-data/visualization-widgets/images/combo-chart/datasource.png)
+
+2. Click the axis range settings dialog and enter `@` in any textbox(**minimum**, **maximum and interval**). Select the parameter value.
+
+![Axis Range Settings Output](/static/assets/visualizing-data/visualization-widgets/images/combo-chart/datasourceaxis.png)
+
+3. The parameter value is reflected in the chart primary axis.
+
+![Axis Range Settings Output](/static/assets/visualizing-data/visualization-widgets/images/combo-chart/primarydatasource.png)
+
 #### Axis Format
 
 This option allows you to format primary and secondary axis values from the formatting details provided using 'Format' button. For more details, refer to this [measure format](/visualizing-data/working-with-widgets/formatting-measure-type-column/).

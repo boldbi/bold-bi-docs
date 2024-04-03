@@ -8,9 +8,9 @@ documentation: ug
 
 # Deploying in Azure
 
-This section explains how to deploy our Bold BI Enterprise edition in the Microsoft Azure Portal. And also explains the recommended VM configuration.
+This section provides detailed instructions on how to deploy Bold BI Enterprise Edition in the Microsoft Azure Portal. It also offers a recommended configuration for your Azure Virtual Machine (VM).
 
-You can explore the deployment of Enterprise BI in azure in detail here,
+For a more detailed exploration of Enterprise BI deployment in Azure, please refer to the links provided,
 
 [Prerequisites](/deploying-bold-bi/deploying-in-azure/prerequisites-azure-vm/)
 

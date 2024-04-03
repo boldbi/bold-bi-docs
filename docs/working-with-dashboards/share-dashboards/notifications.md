@@ -10,7 +10,7 @@ documentation: ug
 
 # Notifications for comments on the dashboards and widgets
 
-This section explains how to configure notifications to notify the users of comments on dashboards and Widgets in Bold BI.
+This section explains how to configure notifications to alert users of comments on dashboards and widgets in Bold BI.
 
 Notifications can be configured by both the `System Administrator` and users.
 
@@ -22,6 +22,6 @@ Please visit [here](/site-administration/notification-settings/) for detailed in
 
 ## User notification settings
 
-You can configure your own notification preferences in profile page for receiving comments on dashboards and widgets.
+You can configure your own notification preferences on your profile page for receiving comments on dashboards and widgets.
 
 Please visit [here](/managing-resources/user-profile/#notifications) for detailed information.

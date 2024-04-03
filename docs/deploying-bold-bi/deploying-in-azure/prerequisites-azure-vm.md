@@ -6,14 +6,13 @@ platform: bold-bi
 documentation: ug
 ---
 
-# Prerequisites to use Bold BI server on Microsoft Azure
+# Prerequisites for Deploying Bold BI Server on Microsoft Azure
 
-This section explains the requirement to use the Bold BI server on Microsoft Azure portal.
-1. Need the Microsoft Azure subscription. If you don’t have already, you can use the free trial on this [website](https://azure.microsoft.com/en-us/free/).
+To deploy Bold BI server on Microsoft Azure, the following prerequisites are necessary:
+1. A Microsoft Azure subscription is required. If you do not already have one, you can avail of the free trial on the [Microsoft Azure website](https://azure.microsoft.com/en-us/free/).
 
-2. Bold BI Enterprise Edition. Please check the license and download the build by following the steps on this [help link](/deploying-bold-bi/overview/#registration-and-download).
+2. You will need the Bold BI Enterprise Edition. Please ensure you have the appropriate license and download the build by following the instructions provided in this [help link](/deploying-bold-bi/overview/#registration-and-download).
               
-3. Microsoft Remote Desktop installed on your computer. You have to use Remote Desktop to sign in to the VM which has Bold BI Server installed. Remote Desktop is pre-installed on Windows-based operating systems. 
+3. Microsoft Remote Desktop must be installed on your computer. This is necessary to sign in to the Virtual Machine (VM) where the Bold BI Server is installed. Note that Remote Desktop comes pre-installed on Windows-based operating systems. 
 
-> **NOTE:**  If you use a Mac, you can install Remote Desktop as a client from the [link](https://www.microsoft.com/en-us/p/microsoft-remote-desktop/9wzdncrfj3ps?activetab=pivot:overviewtab).
- If you're connecting from a Linux operating system, you can use [rdesktop](http://www.rdesktop.org/) to connect to your Azure VM running Microsoft Windows. For more information, see How to connect and log on to an Azure virtual machine running Windows at the [Microsoft Azure website](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/connect-logon).
+> **NOTE:** If you are using a Mac, the Remote Desktop client can be installed from the provided [link](https://www.microsoft.com/en-us/p/microsoft-remote-desktop/9wzdncrfj3ps?activetab=pivot:overviewtab). For Linux users, [rdesktop](http://www.rdesktop.org/) can be utilized to connect to your Azure VM running Microsoft Windows. Additional information on how to connect and log on to an Azure virtual machine running Windows can be found on the [Microsoft Azure website](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/connect-logon).

@@ -9,36 +9,36 @@ documentation: ug
 
 # What is Authorization Server
 
-Any application that embeds Bold BI dashboard and widget needs to be authenticated with Bold BI server and this authentication flow requires sending the confidential information like user email, group details, and embed signature to the Bold BI server. So, you need to implement this authentication flow in your server application and provide the URL for connecting to your server in Bold BI embed instance.
+Any application that embeds the Bold BI dashboard and widget needs to be authenticated with the Bold BI server. This authentication flow requires sending confidential information such as user email, group details, and embed signature to the Bold BI server. Therefore, you need to implement this authentication flow in your server application and provide the URL for connecting to your server in the Bold BI embed instance. 
 
 ![AuthorizeServer](/static/assets/javascript/images/authorize-server.png)
 
-> **NOTE:**  Authorization Server is nothing but an endpoint implemented in the embedding application, this will receive the details from embed SDK instance and send this to the Bold BI server to get this validated. This endpoint will take care of authorizing the Bold BI embedding by communicating with Bold BI Server, so we call this as Authorization Server.
+> **NOTE:**  The Authorization Server is simply an endpoint implemented in the embedding application. It receives details from the embed SDK instance and sends them to the Bold BI server for validation. This endpoint handles the authorization of the Bold BI embedding by communicating with the Bold BI Server, which is why we refer to it as the Authorization Server.
 
 ## How the Authorization Server works
 
-1. Bold BI embed instance call the authorization end point implemented in Embedding application with details like dashboard id, dashboard path, expiration time, and more. 
+1. The Bold BI embed instance calls the authorization endpoint implemented in the Embedding application, providing details such as the dashboard id, dashboard path, expiration time, and more. 
 
-2. Authorization Server, which receive details from embed instance will update the secure information like user email, group details, and embed signature. This information will send to the Bold BI server for authorization.
+2. The Authorization Server, which receives details from the embed instance, will update the secure information such as user email, group details, and embed signature. This information will be sent to the Bold BI server for authorization.
 
-3. Bold BI server will use the user email, dashboard path, and embed signature to validate the following information.
+3. The Bold BI server will utilize the user's email, dashboard path, and embed signature to authenticate the provided information.
     * Whether dashboard is valid or not.
     * Whether user is valid or not.
     * Whether user has access to that dashboard or not.
     * Whether this application is allowed to embed this dashboard or not.
 
-4. After validating previous details, Bold BI server would send the following response to Authorization Server.  Authorization Server will send the received details back to Bold BI embed instance without any modification.
+4. After validating the previous details, the Bold BI server would send the following response to the Authorization Server. The Authorization Server will send the received details back to the Bold BI embed instance without making any modifications.
     * If details are valid, then it will send the access token and other internal embed details
     * If details are invalid, then it will sent the error details.
 
-5. Bold BI embed instance either render the dashboard or show the error message based on the response received from the Authorization Server.
+5. A Bold BI embed instance will either render the dashboard or show the error message, depending on the response received from the Authorization Server.
 
-> **NOTE:**  Any application that send the valid embed signature will be accepted as the authorization application to embed.
+> **NOTE:**  Any application that sends the valid embed signature will be accepted as the authorization application to embed.
 
 ## Why the user email is needed
 
-1. User email is needed for rendering the dashboard, because Bold BI server will always validate the user and check whether the user has permission for that dashboard.
+1. The user's email is required for rendering the dashboard because the Bold BI server will always validate the user and check if they have permission for that specific dashboard.
 
-2. Dashboard can be configured to show the user specific information. Bold BI server would validate the user and render the dashboard data based on logged user. The dashboard data would be different from one user to another.
+2. The dashboard can be configured to display specific information for the user. The Bold BI server would authenticate the user and generate the dashboard data according to the logged-in user. The dashboard data would vary for each user.
 
-3. The dashboard collaboration and views are supported only for authorized user. Authorized user only can see the comments, apply filtering, and handling the views in the dashboard without the problem.
+3. The dashboard collaboration and views are supported only for authorized users. Only authorized users can see the comments, apply filtering, and handle the views in the dashboard without any problems.

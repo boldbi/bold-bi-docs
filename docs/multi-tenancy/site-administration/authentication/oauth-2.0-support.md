@@ -18,7 +18,7 @@ The User Management Server can be configured to support OAuth 2.0 for Single Sig
 
 ## Steps to configure OAuth 2.0 in User Management Server
 
-1. Log in to the User Management Server with the admin credential.
+1. Log in to the User Management Server with the admin credentials.
 
 2. In the left side menu, click `Settings`, then `Authentication`, and finally `OAuth 2.0`.
 
@@ -91,7 +91,7 @@ If you need to import the OAuth 2.0 groups, you must configure the group details
 
   ![OAuth setting provider option](/static/assets/multi-tenancy/images/oauth-setting-provider-option.png)
 
-The following list of OAuth 2.0 providers explains how to connect with the User Management Server. 
+The following list of OAuth 2.0 providers explains how to connect with the User Management Server:
 
 * [Amazon Cognito](/security-configuration/single-sign-on/oauth-2.0-support/amazon-cognito/)
 * [Auth0](/security-configuration/single-sign-on/oauth-2.0-support/auth0/)
@@ -99,18 +99,18 @@ The following list of OAuth 2.0 providers explains how to connect with the User 
 * [OneLogin](/security-configuration/single-sign-on/oauth-2.0-support/onelogin/)
 
 ## Set OAuth 2.0 as default authentication
-OAuth 2.0 can be set as default authentication when [OAuth 2.0 settings](/multi-tenancy/site-administration/authentication/oauth-2.0-support/#steps-to-configure-oauth-2.0-in-user-management-server) is enabled.
+OAuth 2.0 can be set as the default authentication when [OAuth 2.0 settings](/multi-tenancy/site-administration/authentication/oauth-2.0-support/#steps-to-configure-oauth-2.0-in-user-management-server) are enabled.
 
 Follow these steps to configure default authentication:
 
-1. In settings page, click `Authentication` tab and select `General`.
+1. On the settings page, click the `Authentication` tab and select `General`.
 
-2. Enable the **Enable Default Authentication** option and select the **OAuth 2.0** as default authentication provider, as shown in the following screenshot.
+2. Enable the **Enable Default Authentication** option and select **OAuth 2.0** as the default authentication provider, as shown in the following screenshot.
 
     ![Enable OAuth Default Authentication](/static/assets/multi-tenancy/images/default-oauth.png)
 
 ## Disabling OAuth 2.0 settings
 
-Disable the **Enable Default Authentication** option and then clicking `Save` will disable the [OAuth 2.0 default authentication](/multi-tenancy/site-administration/authentication/oauth-2.0-support/#set-oauth-2.0-as-default-authentication).
+Disabling the **Enable Default Authentication** option and then clicking `Save` will disable the default [OAuth 2.0 default authentication](/multi-tenancy/site-administration/authentication/oauth-2.0-support/#set-oauth-2.0-as-default-authentication).
 
 ![Disable Default Authentication](/static/assets/multi-tenancy/images/oauth-default-authentication.png)

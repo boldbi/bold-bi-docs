@@ -92,10 +92,6 @@
             "description": "Email address is empty.",
             "content": {}
           },
-          "401": {
-            "description": "Invalid email or password.",
-            "content": {}
-          },
           "404": {
             "description": "User detail not found.",
             "content": {}

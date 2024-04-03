@@ -8,9 +8,9 @@ documentation: ug
 
 # Migrate Dashboards Offline
 
-In the Bold BI, you can migrate dashboards offline by downloading them from the source site and then uploading them to the destination site. This is useful when you don't have internet connectivity or if you want to transfer the dashboard files manually.
+In Bold BI, you can migrate dashboards offline by downloading them from the source site and then uploading them to the destination site. This is useful when you do not have internet connectivity or if you prefer to transfer the dashboard files manually.
 
-You can explore the offline migration in detail here,
+You can explore the details of offline migration here:
 
 [Download Dashboards](/resource-migration/migrate-dashboards-offline/download-dashboards/)
 

@@ -4,21 +4,20 @@ title: Embedding Analytics with Ruby on Rails | Bold BI Docs
 description: Learn how to embed an analytics dashboard with Ruby on Rails application using Bold BI Embed SDK and try it yourself.
 platform: bold-bi
 documentation: ug
-
 ---
 
 # Bold BI Dashboards embedding in Ruby on Rails using Embedded SDK
 
-A GitHub link has been provided to [get](https://github.com/boldbi/ruby-on-rails-sample)  the sample application, which demonstrates the rendering of dashboard available in your Bold BI server and followed by steps to create a new embedding application in the `Ruby on Rails ` on your own.  
+A GitHub link has been provided to [get](https://github.com/boldbi/ruby-on-rails-sample) the sample application, which demonstrates the rendering of a dashboard available on your Bold BI server. The link is followed by steps to create a new embedding application in `Ruby on Rails ` on your own.  
 
-> **NOTE:** The best way to get started would be reading the [Getting Started](/getting-started/embedding-in-your-application/) section of the documentation to start using first. The `Getting Started` guide gives you enough information that you need to know before working on the sample. 
+> **NOTE:** The best way to get started would be to read the [Getting Started](/getting-started/embedding-in-your-application/) Started section of the documentation first. The `Getting Started` guide provides you with enough information that you need to know before working on the sample.
 
     
 ## How to run the sample
 
  1. Please [get](https://github.com/boldbi/ruby-on-rails-sample) the Ruby on Rails sample.    
 
- 2. You need to set your embed property details in the `Index.html.erb` and `Authorizes_Controller.rb`.  
+ 2. You need to set the details of your embed property in the `Index.html.erb` and `Authorizes_Controller.rb`.
     ![Embed Properties](/static/assets/javascript/sample/images/ruby-index-props.png)
     ![Embed Properties In Authorize Controller](/static/assets/javascript/sample/images/ruby-authorize-props.png)
     <meta charset="utf-8"/>
@@ -47,12 +46,12 @@ A GitHub link has been provided to [get](https://github.com/boldbi/ruby-on-rails
     </tbody>
     </table>
 
- 3. Get the item id of the dashboard from the BI server. Please refer to this [link](/working-with-dashboards/share-dashboards/get-dashboard-link/#get-link) and the following screenshot. 
+ 3. Please get the item ID of the dashboard from the BI server. Kindly refer to this [link](/working-with-dashboards/share-dashboards/get-dashboard-link/#get-link) and the screenshot provided below.
     ![Get Dashboard Id](/static/assets/javascript/sample/images/get-dashboard-id.png)
 
  4. Then, run your Ruby on Rails sample.
 
- 5. Dashboard can be rendered in design mode or created with the following changes in the `embedSample()` method.
+ 5. The dashboard can be rendered in design mode or created with the following changes in the `embedSample()` method.
 
      ```js
      function embedSample() {
@@ -106,32 +105,32 @@ A GitHub link has been provided to [get](https://github.com/boldbi/ruby-on-rails
 
 ## How this sample works
 
- 1. Based on the dashboard provided in the embed properties, you will authorize the server URL by calling the GetEmbedDetails function by API(http://localhost:3000/api/v1/authorizes) call with the provided EmbedProperties values.
+ 1. To authorize the server URL, you will call the GetEmbedDetails function using the API (http://localhost:3000/api/v1/authorizes) with the provided EmbedProperties values, based on the dashboard provided in the embed properties.
     ![Get Embed Details](/static/assets/javascript/sample/images/ruby-authorize.png)
 
- 2. In the above authorization, the `SignatureUrl` has been generated with the provided `EmbedSecret key` and validated the embed details in Bold BI. Once the details are validated, the dashboard starts to render in the `index.html.erb`.
+ 2. In the previous authorization, the `SignatureUrl` has been generated using the provided `EmbedSecret key` and the embed details have been validated in Bold BI. After the details are validated, the dashboard starts to render in the `index.html.erb` file.
 
- 3. In the `Index.html.erb`, change the dashboard Id of the respective dashboard as you wish to embed.
+ 3. In the `Index.html.erb`, change the dashboard ID of the respective dashboard as you wish to embed.
     ![Set Dashboard Id](/static/assets/javascript/sample/images/ruby-dashboard.png)
 
 ## Steps to create new Ruby on Rails application to embed dashboard
 
- 1. Install the ruby using [link](https://rubyinstaller.org/) by accepting the license.
+ 1. Install Ruby using the provided [link](https://rubyinstaller.org/) and accept the license.
 
- 2. Once installed, check the version of the ruby using the command prompt `ruby -v`.
+ 2. Once installed, check the version of Ruby by using the command prompt `ruby -v`.
 
- 3. To install the `rails`, run the command `gem install rails`. To check the rails version, run the command `rails -v`.
+ 3. To install `rails`, run the command `gem install rails`. To check the version of rails, run the command `rails -v`.
 
- 4. To create a new application, run the command `rails new myApp --database-postgresql`. Here, `myApp` is the folder name, and `postgresql` is the data base used. Ruby on rails uses `SQLite` as a default database, other than this need to be specified in command.
+ 4. To create a new application, run the command `rails new myApp --database=postgresql`. Here, `myApp` is the folder name, and `postgresql` is the database used. Ruby on Rails uses `SQLite` as the default database, so any other database needs to be specified in the command.
 
- 5. Change the file directory by the command `cd myApp` and run a command `rails s` to run the application. Open the browser and go to the `localhost://3000`, you are able to view the Ruby on Rails welcome page.
+ 5. Change the file directory using the command `cd myApp` and then run `rails s` to start the application. Open your browser and go to `localhost://3000` to view the Ruby on Rails welcome page.
 
- 6. In the `index.html.erb` file, include the mandatory file in the `<head>` tag. In the `<body>` tag, invoke the method `embedSample()` and create a DOM element with id `dashboard` as follows.
+ 6. In the `index.html.erb` file, include the required file within the `<head>` tag. Within the `<body>` tag, call the `embedSample()` method and create a DOM element with the id `dashboard` as shown.
 
      ```js
         <head>
             <title>Demo</title>
-            <%= javascript_include_tag "https://cdn.boldbi.com/embedded-sdk/v6.16.12/boldbi-embed.js", "data-turbolinks-track" => true  %>
+            <%= javascript_include_tag "https://cdn.boldbi.com/embedded-sdk/v7.6.12/boldbi-embed.js", "data-turbolinks-track" => true  %>
         </head>
 
         <body onload="embedSample();">
@@ -161,11 +160,11 @@ A GitHub link has been provided to [get](https://github.com/boldbi/ruby-on-rails
         </body>
      ```
 
- 7. In the `embedSample()` method, create an instance to render the dashboard using the `loadDashboard()` method.
+ 7. In the `embedSample()` method, create an instance to render the dashboard by using the `loadDashboard()` method.
 
- 8. In the `authorize_controller.rb` file, define the variables `embedSecret` and `userEmail` for authorization purpose. Invoke the method `getEmbedDetails()`, which uses the method `getSignatureUrl()` to generate the algorithm.
+ 8. In the `authorize_controller.rb` file, define the variables `embedSecret` and `userEmail` for authorization purposes. Invoke the method `getEmbedDetails()`, which uses the method `getSignatureUrl()` to generate the algorithm.
 
-    In `getEmbedDetails()` API, the `embedQuerString`,`userEmail` and the value from the `GetSignatureUrl()` method is appended as query parameters in the URL to get details of particular dashboard. Then run the application.
+    In the `getEmbedDetails()` API, the `embedQuerString`, `userEmail`, and the value from the `GetSignatureUrl()` method are appended as query parameters in the URL to get details of a particular dashboard. Then, run the application.
 
      ```js
         class Api::V1::AuthorizesController < ApplicationController

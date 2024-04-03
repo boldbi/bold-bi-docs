@@ -21,9 +21,9 @@ Bold BI multi-tenant support ensures the security to of both application and dat
 
 If you would like to embed the Bold BI Dashboard into your application and distribute it to your customers and would like to filter the data based on your customers, then you can make use of the Row-level security. Row-level security can be applied from multiple layers,
 
-1. [Isolation code](/working-with-data-source/configuring-isolation-code/) - The UMS admin can apply the isolation code on any site from the site settings.
-2. [Custom Attribute](/working-with-data-source/configuring-custom-attribute/) - The Bold BI admin can set the custom attribute which can be applied in the data source query level based on the user and groups.
-3. [User-based filters(Row-level security)](/working-with-data-source/user-filter/) - User-based filters can be configured when you design the dashboard.
+1. [Isolation code](/working-with-data-sources/configuring-isolation-code/) - The UMS admin can apply the isolation code on any site from the site settings.
+2. [Custom Attribute](/working-with-data-sources/configuring-custom-attribute/) - The Bold BI admin can set the custom attribute which can be applied in the data source query level based on the user and groups.
+3. [User-based filters(Row-level security)](/working-with-data-sources/user-filter/) - User-based filters can be configured when you design the dashboard.
 
 Row-level filtering can be applied in the above hierarchy.
 

@@ -4,20 +4,19 @@ title: Data source iframe Embedding Using SSO | Bold BI Docs
 description: Learn how to embed a data source in different modes using iFrame with Single Sign-on authentication. Also, find a sample to download.
 platform: bold-bi
 documentation: ug
-
 ---
 
 # Embed data source using SSO in Bold BI
 
-Bold BI supports embedding the data source to other web applications using Single Sign-On authentication. 
+Bold BI supports embedding the data source into other web applications using Single Sign-On authentication.
 
 ## Steps to embed data source 
 
-The following are the steps to embed data source into other web applications.
+The following steps outline how to embed a data source into other web applications.
 
 ### Get embed secret code
 
-1. Go to the settings page and click `Embed`. Enable the `Enable embed authentication` under that page.
+1. Go to the settings page and click on `Embed`. Enable the `Enable embed authentication` under that page.
 
     ![Enable embed authentication](/static/assets/iFrame-based/images/enable-embed-option.png)
 
@@ -25,7 +24,7 @@ The following are the steps to embed data source into other web applications.
 
     ![Generate secret code](/static/assets/iFrame-based/images/generate-secret-code.png)
 
-3. When you click it, the secret code will be generated. Save the secret key safely because it will not be able to retrieve or restore the generated secret.                    
+3. When you click on it, the secret code will be generated. Be sure to save the secret key securely as it cannot be retrieved or restored once the secret is generated.                    
 
     ![Copy secret code](/static/assets/iFrame-based/images/copy-secret-code.png)
 
@@ -33,7 +32,7 @@ The following are the steps to embed data source into other web applications.
 
     ![Regenerate secret code](/static/assets/iFrame-based/images/regenerate-secret-code.png)
 
-> **Warning :** Resetting this code will break the previously working embedded dashboards.
+> **Warning :** Resetting this code will cause the previously functioning embedded dashboards to stop working.
 ### Creating the embed URL to create data source
 
 The embed URL should be in the following format; to get `create datasource URl,` refer [here](/embedding-options/iframe-embedding/get-datasource-url/).
@@ -88,7 +87,7 @@ Please find the details of the parameter in the URL as follows.
 
 <tr>
 <td>edit datasource URL</td>
-<td>URL of the data source to be embedded. To know more, click <a href="/iframe-based/get-datasource-url/">here.</a></td>
+<td>URL of the data source to be embedded. To know more, click <a href="/embedding-options/iframe-embedding/get-datasource-url/">here.</a></td>
 </tr>
 
 <tr>
@@ -160,7 +159,7 @@ embed_nonce=55a1c8f4-5015-487d-8463-d3ebeae655fd&embed_user_email=test@syncfusio
 </td></tr>
 </table>
 
-To obtain the signature for the embed URL, pass the query parameters as an argument to the following <code>GetSignatureUrl</code> method. It will return the hashed signature, which you must append to the existing query parameters with the query parameter name as <strong>'embed_signature'</strong>.
+To obtain the signature for the embed URL, you need to pass the query parameters as an argument to the <code>GetSignatureUrl</code> method. This method will return the hashed signature, which you should append to the existing query parameters using the query parameter name <strong>'embed_signature'</strong>.
 
 ```js  
         
@@ -178,7 +177,7 @@ To obtain the signature for the embed URL, pass the query parameters as an argum
             }
         }
 ```
-> Provided the code sample to generate the signature in C#. You can write the equivalent code in your platform language.
+> Please find below the code sample to generate the signature in C#. You can write the equivalent code in your preferred programming language.
 
 ## Sample to embed data source in edit mode using SSO authentication
 

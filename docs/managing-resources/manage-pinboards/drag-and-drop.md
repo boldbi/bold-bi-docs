@@ -9,10 +9,10 @@ documentation: ug
 
 # Widgets Drag and Drop 
 
-This section explains how to drag and drop widgets between columns inside the Pinboard in the Bold BI application.
+This section explains how to drag and drop widgets between columns within the Pinboard in the Bold BI application.
 
 ### Steps to drag and drop the widgets in Pinboard
 
-Widgets inside the Pinboard can be dragged and dropped between their columns by using the headers.
+Widgets within the Pinboard can be dragged and dropped between columns by using the headers.
 
 ![Drag And Drop](/static/assets/managing-resources/manage-pinboards/images/drag-and-drop.png#width=50%)

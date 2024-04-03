@@ -13,6 +13,6 @@ This section explains how to unpin Widgets from Pinboard in the Bold BI applicat
 
 ### Steps to unpin Widget from the Pinboard
 
-Pinned widget can be unpinned from the Pinboard by clicking the `delete` icon on the specific widget.
+A pinned widget can be unpinned from the Pinboard by clicking the `delete` icon on the specific widget.
 
 ![Unpin Widget](/static/assets/managing-resources/manage-pinboards/images/unpin-widget.png#width=50%)

@@ -8,10 +8,10 @@ documentation: ug
 
 # How to get the data source URL
 
-1. To get the embed URL, click the More option icon of the desired data source from data source listing page .Select Edit data source option from dropdown.  
+1. To obtain the embed URL, click on the More option icon of the desired data source from the data source listing page. Then, select the Edit data source option from the dropdown menu. 
 ![DataSourceUrl](/static/assets/iFrame-based/images/Edit-DataSource.png#max-width=90%)  
 
-2. Once the particular data source opened, copy the datasourceId with its name from the URL to embed it.  
+2. Once the specific data source has been opened, copy the datasourceId along with its name from the URL in order to embed it.  
 ![InspectElement](/static/assets/iFrame-based/images/datasource-url.png)
 
 3. Example URL for edit data source.
@@ -21,7 +21,7 @@ documentation: ug
 </tr>
 </table>
 
-4. To form a URL for creating a data source , replace the data source name and data source Id with a word `connection`.
+4. To create a URL for forming a data source, substitute the data source name and data source Id with the term `connection`.
 Example URL for create data source,
 <table>
 <tr>

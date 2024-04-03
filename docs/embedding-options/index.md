@@ -8,9 +8,9 @@ documentation: ug
 
 # Embedding Options
 
-This section explains the various embedding options in the Bold BI dashboard.
+This section explains the different embedding options available in the Bold BI dashboard.
 
-You can explore the embedding options in detail here.
+You can explore the embedding options in detail on this page.
 
 [Application Embedding in Bold BI Enterprise](/embedding-options/application-embedding/)
 
@@ -19,4 +19,3 @@ You can explore the embedding options in detail here.
 [Embedding SDK](/embedding-options/embedding-sdk/)
 
 [Embedding using NPM package](/embedding-options/embedding-using-npm-package/)
-

@@ -8,7 +8,7 @@ documentation: ug
 
 # How the dashboard user can modify the input value of a parameter in view mode
 
-The dashboard user can modify input value of a parameter in view mode using the [Literal](/working-with-data-source/dashboard-parameter/configuring-dashboard-parameters/#literal-mode) type dashboard parameter support in Bold BI application.
+The dashboard user can modify input value of a parameter in view mode using the [Literal](/working-with-data-sources/dashboard-parameter/configuring-dashboard-parameters/#literal-mode) type dashboard parameter support in Bold BI application.
 
 The following steps will help you achieve this:
 

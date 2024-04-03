@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Single Sign-On with OpenID Connect | Bold BI Embedded
-description: Learn how to configure Bold BI Embedded with OpenID based identity provider for Single Sign-on authentication using OpenID Connect.
+description: Enable seamless and straightforward authentication within the Bold BI application by configuring OpenID through both the intuitive application user interface (UI) and the powerful REST API.
 platform: bold-bi
 documentation: ug
 
@@ -9,27 +9,27 @@ documentation: ug
 
 # OpenID Connect support
 
-The Bold BI application can be configured to support OpenID Connect for Single Sign-On (SSO), so that the users can log in directly to Bold BI application after authenticating using the OpenID Connect.
+The Bold BI application can be configured to support OpenID Connect for Single Sign-On (SSO), allowing users to log in directly to the Bold BI application after authenticating using OpenID Connect.
 
 ## Configure OpenID Connect provider
 
-1. An account with an OpenID provider.
+1. A user account with an OpenID provider.
 
-2. Register the Bold BI application in the OpenID Connect provider.
+2. Register the Bold BI application with the OpenID Connect provider.
 
 ## Steps to configure OpenID in Bold BI
 
-1. Login to the Bold BI with an admin credential.
+1. Please log in to Bold BI using an admin credential.
 
-2. Click `Settings` in the left side menu.
+2. Click on `Settings` in the left-side menu.
 
     ![Settings](/static/assets/site-administration/openid-support/images/settings.png#width=65%)
 
-3. Click `Authentication` and then `OpenID Connect`
+3. Click on `Authentication` and then select `OpenID Connect.`
 
     ![Authentication settings](/static/assets/site-administration/openid-support/images/authentication-settings.png)
 
-4. Provide the following details in the `OpenID Connect` settings page of Bold BI application.
+4. Please provide the following details on the `OpenID Connect` settings page of the Bold BI application.
 
     <table>
 
@@ -72,34 +72,40 @@ The Bold BI application can be configured to support OpenID Connect for Single S
 
     ![OpenId settings](/static/assets/site-administration/openid-support/images/openid-settings.png#width=55%)
 
-If we need to import the OpenID Connect groups, we have to configure the group details while saving the OpenID authentication settings.
+If we need to import the OpenID Connect groups, we must configure the group details when saving the OpenID authentication settings.
 
   ![OpenId Group setting](/static/assets/site-administration/openid-support/images/OpenId-group-settings.png)
 
-The previous mentioned similar steps are applicable to configure the OpenID support in User Management Server by logging into the URL `{Bold BI URL}/ums/administration/sso?view=openid-settings` with admin credential.
+The previously mentioned similar steps are applicable to configure OpenID support in the User Management Server by logging into the URL `{Bold BI URL}/ums/administration/sso?view=openid-settings` with admin credentials.
 
-Following are the list of few OpenID Connect providers and that explains how to connect with the Bold BI application. 
+Here is a list of a few OpenID Connect providers, along with an explanation of how to connect with the Bold BI application. 
 
 * [Auth0](/security-configuration/single-sign-on/openid-support/auth0/)
 * [Okta](/security-configuration/single-sign-on/openid-support/okta/)
 * [OneLogin](/security-configuration/single-sign-on/openid-support/onelogin/)
 
-The OpenID Connect support is provided in both the Bold BI sites and User Management Server. This support can be handled for each sites individually in the settings page by disabling the option as in the following screenshot.
+OpenID Connect support is provided in both the Bold BI sites and User Management Server. This support can be managed individually for each site on the settings page by disabling the option, as shown in the following screenshot.
 
 ![Enable OpenID Connect support](/static/assets/site-administration/openid-support/images/EnableOpenId.png)
 
 ## Set OpenID Connect as Default Authentication
 
-OpenID Connect can be set as default authentication when [OpenID Connect settings](/security-configuration/single-sign-on/openid-support/#steps-to-configure-openid-in-bold-bi) is enabled and saved. Follow these steps:
+OpenID Connect can be set as the default authentication method [OpenID Connect settings](/security-configuration/single-sign-on/openid-support/#steps-to-configure-openid-in-bold-bi) are enabled and saved. Follow these steps:
 
-1. In settings page, click Authentication tab and select General.
+1. On the settings page, click on the Authentication tab and then select General.
 
-2. Enable the **Enable Default Authentication** option and select the **OpenID Connect** in default authentication provider as in the following screenshot.
+2. Please enable the **Enable Default Authentication** option and select **OpenID Connect** as the default authentication provider, as shown in the following screenshot.
 
     ![Enable OpenID Default Authentication](/static/assets/site-administration/openid-support/images/openid-default-authentication.png)
 
 ## Disabling OpenID Connect Settings
 
-When OpenID Connect is set as default authentication and try to disable the [OpenID Connect settings](/security-configuration/single-sign-on/openid-support/#steps-to-configure-openid-in-bold-bi) to display the following pop-up. Proceeding by clicking `Yes` will disable the [OpenID Connect default authentication](/security-configuration/single-sign-on/openid-support/#set-openid-connect-as-default-authentication).
+When OpenID Connect is set as the default authentication and you try to disable the [OpenID Connect settings](/security-configuration/single-sign-on/openid-support/#steps-to-configure-openid-in-bold-bi) , the following pop-up will be displayed. Clicking `Yes` will disable the  [OpenID Connect default authentication](/security-configuration/single-sign-on/openid-support/#set-openid-connect-as-default-authentication).
 
 ![Disable Default Authentication](/static/assets/site-administration/images/disable-default-authentication.png#width=60%)
+
+## Configure OpenID authentication using REST API
+
+To configure the OpenID settings using the REST API, refer to this [REST API](/server-api-reference/v5.0/api-reference/#operation/Administration_UpdateOpenIDSettings) document.  
+ 
+In addition to configuring the OpenID settings, you can also configure the group import settings to import the OpenID groups. Include the group settings details based on the provider type to configure the group import settings. For more information on the different group import settings details based on the provider, please refer to this [FAQ](/faq/what-are-the-different-request-object-properties-of-group-imports-setting-for-each-oauth-and-openid-provider-type/) document.

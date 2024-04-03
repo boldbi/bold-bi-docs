@@ -9,11 +9,11 @@ documentation: ug
 
 # To Rename a Particular Pinboard
 
-This section explains how to rename Pinboard in the Bold BI application.
+This section explains how to rename a Pinboard in the Bold BI application.
 
 ### Steps to rename Pinboard
 
-1. Click the `Rename` option from the `gear` icon menu.
+1. Click on the `Rename` option from the `gear` icon menu.
 
     ![Rename Option](/static/assets/managing-resources/manage-pinboards/images/rename-option.png#width=50%)
 
