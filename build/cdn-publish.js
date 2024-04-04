@@ -3,9 +3,9 @@ var gzip = require('gulp-gzip');
 var shelljs = require('shelljs');
 
 const CONFIG = {
-    accessKeyId: "AKIARWYFLOTLTQCT7S7Q",
-    secretAccessKey: "Hxx5fbihbkWz7ukYFqmF1HDtsFy4ignLt10kJxEx",
-    AWS_REPORTS_BUCKET: "documentation.boldbi.com"
+    accessKeyId: "Your AWS access key ID",
+    secretAccessKey: "Your AWS secret access key",
+    AWS_REPORTS_BUCKET: "Your AWS bucket name"
 };
 
 var s3 = require('gulp-s3-upload')(CONFIG);
