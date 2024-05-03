@@ -290,7 +290,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/spring-boot-s
                 renderDashboard(data)
             })
         .catch(error => {
-            const content='<div>To compile and run the project, an embed config file needs to be required. Please use the <a href="https://help.boldbi.com/embedded-bi/site-administration/embed-settings/" target="_blank">link</a> to obtain the JSON file from the Bold BI server.</div>';
+            const content='<div>To compile and run the project, an embed config file needs to be required. Please use the <a href="/site-administration/embed-settings/">link</a> to obtain the JSON file from the Bold BI server.</div>';
             const errorMessageElement = document.getElementById('error-message');
             errorMessageElement.innerHTML = content;
             errorMessageElement.style.display = 'block';

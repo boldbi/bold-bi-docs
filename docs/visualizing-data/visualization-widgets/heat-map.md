@@ -11,7 +11,7 @@ documentation: ug
 
 # Configuring and Formatting Heatmap
 
-`Heatmap` allows you to visualize large amounts of data as clustered rectangles with a color scale.
+The `Heatmap` allows you to visualize large amounts of data as clustered rectangles with a color scale. 
 
 *Figure: Heatmap visualization after various customizations*
 
@@ -23,11 +23,11 @@ documentation: ug
 
 > **IMPORTANT:**  To showcase a Heatmap, a minimum requirement of `one value` and `two groups` by the field is needed.
 
-The following steps explains about data configuration of the Heatmap.
+The following steps explain the data configuration of the Heatmap:
 
 ### Step 1: Add a heatmap widget to the design canvas 
 
-1.   Drag and drop the `Heatmap` control icon from the toolbox into the design panel. You can find control in a toolbox by search.
+1.   Drag and drop the `Heatmap` control icon from the toolbox into the design panel. You can find the control in the toolbox by searching.
 
 ![Adding Heatmap](/static/assets/visualizing-data/visualization-widgets/images/heat-map/drop-widget.png)
 
@@ -51,7 +51,7 @@ The following steps explains about data configuration of the Heatmap.
 
 #### Value section
 
-Bind column by dragging and dropping the element from sections to `values.`
+Bind columns by dragging and dropping the elements from sections to `values`.
 
 ![Value fields](/static/assets/visualizing-data/visualization-widgets/images/heat-map/field-value.png)
 
@@ -61,15 +61,15 @@ Bind column by dragging and dropping the element from sections to `values.`
 
 ## Hidden Column
 
-Hidden columns are useful in cases where we don't want the fields to take part in the visualization, but only to be used for [linking](#linking), [filtering](#filtering) and [view data](#view-data).  
+Hidden columns are useful in cases where we don’t want the fields to take part in the visualization, but only to be used for [linking](#linking), [filtering](#filtering) and [view data](#view-data).  
 
 ![Hidden column ](/static/assets/visualizing-data/visualization-widgets/images/heat-map/assigndata.png)
 
-We can configure both measure and dimension fields into the hidden column. For measure we will be having all the settings we have for the measure fields expect formatting and filtering. 
+We can configure both measure and dimension fields into the hidden column. For measures, we will have all the settings we have for the measure fields, except formatting and filtering.
 
 ![Measure ](/static/assets/visualizing-data/visualization-widgets/images/heat-map/measure.png)
 
-In the case of dimension fields we will having the following options only. In Date fields we will having all available types except sorting, relative date filter, settings and filters.
+In the case of dimension fields, we will have the following options only. In Date fields, we will have all available types except sorting, relative date filter, settings, and filters.
 
 ![Dimension ](/static/assets/visualizing-data/visualization-widgets/images/heat-map/dimension.png)
 
@@ -77,19 +77,19 @@ In the case of dimension fields we will having the following options only. In D
 
 #### Linking
 
-The primary use case of the hidden columns is linking. On configuring hidden columns, we can see below that the fields configured in hidden columns are listed in the linking section.  On configuring the column in linking we can pass the corresponding column value in linking parameter.
+The primary use case for hidden columns is linking. On configuring hidden columns, we can see below that the fields configured in hidden columns are listed in the linking section. On configuring the column in linking, we can pass the corresponding column value in the linking parameter.
 
-**Measure Based Example:** If we wish to pass the number of Shots as an URL parameter but do not want it to influence the visualization, we can configure the Shots in the hidden columns and incorporate them into the link.
+**Measure Based Example:** If we wish to pass the number of Shots as a URL parameter but do not want it to influence the visualization, we can configure the Shots in the hidden columns and incorporate them into the link.
 
 ![Linking ](/static/assets/visualizing-data/visualization-widgets/images/heat-map/link-measure.png)
 
-**Dimension Based Example:** If we wish to pass the number of Team Name played as an URL parameter but do not want it to influence the visualization, we can configure  the Team Name in the hidden columns and incorporate them into the link.
+**Dimension Based Example:** If we wish to pass the number of Team Name played as a URL parameter but do not want it to influence the visualization, we can configure the Team Name in the hidden columns and incorporate them into the link.
 
 ![Linking ](/static/assets/visualizing-data/visualization-widgets/images/heat-map/link-dimension.png)
 
 #### Filtering
 
-You can use hidden columns to filter data in the visualizations. Configure hidden columns and click the below filter icon.
+You can use hidden columns to filter data in the visualizations. Configure hidden columns and click the filter icon below.
 
 ![Filtering ](/static/assets/visualizing-data/visualization-widgets/images/heat-map/filtericon.png)
 
@@ -97,49 +97,49 @@ Click the Custom button highlighted in the filter configuration dialog image bel
 
 ![Filtering ](/static/assets/visualizing-data/visualization-widgets/images/heat-map/custom.png)
 
-Now, we can see in the below image, the data is filtered based on the hidden column field instead of the actual column that we bound in the widget. 
+Now, we can see in the image below, the data is filtered based on the hidden column field instead of the actual column that we bound in the widget.
 
 ![Filtering ](/static/assets/visualizing-data/visualization-widgets/images/heat-map/hidden-column-filter.png)
 
-For more details about filtering the widget data, refer to the [Filter Configuration documentation](/working-with-dashboards/configuring-dashboard-filters/)
+For more details about filtering the widget data, refer to the [Cross Filter Configuration documentation](/working-with-dashboards/configuring-cross-filters/)
 
 #### View Data
 
-You can view the data in the hidden columns in the underlying data view. This is useful for checking the data in more detail and can help you to identify any issues with the data.
+You can view the data in the hidden columns in the underlying data view. This is useful for checking the data in more detail and can help you identify any issues with the data.
 
 ![View data ](/static/assets/visualizing-data/visualization-widgets/images/heat-map/viewdata.png)
 
-> **NOTE:** We don't recommend to configure lower hierarchy data in hidden columns as we can see in the info icon in `Hidden Column` section denotes the same. 
+> **NOTE:** We don’t recommend configuring lower hierarchy data in hidden columns, as indicated by the info icon in the `Hidden Column` section.
 
 ![Hidden Column ](/static/assets/visualizing-data/visualization-widgets/images/heat-map/info-icon.png)
 
-The below heat map displays the goals and Attempts On Target by each team without hidden columns.
+The heat map below displays the goals and Attempts On Target by each team without hidden columns.
 
 ![Before](/static/assets/visualizing-data/visualization-widgets/images/heat-map/before.png)
 
-If we configure lower hierarchy data(Player Name) in hidden columns, the data configured in the widgets gets duplicate. The sorting order of the widget will changed, This affects the heat map visualization as we can see in the below image.
+If we configure lower hierarchy data (Player Name) in hidden columns, the data configured in the widgets gets duplicated. The sorting order of the widget will change, which affects the heat map visualization as seen in the image below.
 
 ![After](/static/assets/visualizing-data/visualization-widgets/images/heat-map/after.png)
 
 #### X-Axis section
 
-Drag and drop the elements from sections to `X-Axis` section.
+Drag and drop the elements from sections to the `X-Axis` section.
 
 ![X Axis fields](/static/assets/visualizing-data/visualization-widgets/images/heat-map/x-field.png)
 
 > **NOTE:** 
-* The field added in this section will act as a dimension value. 
-* It is a mandatory section and only one value can be configured
+> * The field added in this section will act as a dimension value. 
+> * It is a mandatory section and only one value can be configured
 
 #### Y-Axis section
 
-Drag and drop the elements from sections to `Y-Axis` section.
+Drag and drop the elements from sections to the `Y-Axis` section.
 
 ![Y-Axis fields](/static/assets/visualizing-data/visualization-widgets/images/heat-map/y-field.png)
 
 > **NOTE:** 
-* The field added in this section will act as a dimension value. 
-* It is a mandatory section and only one value can be configured. 
+> * The field added in this section will act as a dimension value. 
+> * It is a mandatory section and only one value can be configured. 
 
 *Image: Heatmap widget after configuring the mandatory fields.*
 
@@ -147,7 +147,7 @@ Drag and drop the elements from sections to `Y-Axis` section.
 
 #### Size section
 
-Drag and drop the elements from sections to `size` section. It will define the size of the bubble in the heatmap. Also, it is an optional section. 
+Drag and drop the elements from sections to the `size` section. It will define the size of the bubble in the heatmap. Also, it is an optional section.
 
 ![Size fields](/static/assets/visualizing-data/visualization-widgets/images/heat-map/field-size.png)
 
@@ -157,13 +157,13 @@ Drag and drop the elements from sections to `size` section. It will define the s
 
 #### Tooltip section 
 
-You can configure the `tooltip` section to showcase the additional information in the widget’s tooltip without affecting the visualization. Refer to [this section](/visualizing-data/working-with-widgets/tooltip-customization/) for more details on configuring the tooltip fields.
+You can configure the `tooltip` section to showcase additional information in the widget's tooltip without affecting the visualization. Refer to [this section](/visualizing-data/working-with-widgets/tooltip-customization/) for more details on configuring the tooltip fields.
 
 ### Step 3: Settings menu options
 
 You can `filter,` `format,` and `Rename` the data displayed in the widget from the settings menu options.  To open the settings menu, click the `settings` icon.
 
-The following screenshots shows the various settings menu options based on the type of field configured in the type of section. 
+The following screenshots show the various settings menu options based on the type of field configured in the type of section.
 
 **Measure field in values**
 
@@ -200,11 +200,11 @@ You can format the elements by selecting the `Format` option. For more details, 
 
 #### Drill Down
 
-When the second value is added to the x-axis or y-axis section, the alert message will be shown.
+When the second value is added to the X-axis or Y-axis section, an alert message will be shown.
 
 ![Drill confirmation alert](/static/assets/visualizing-data/visualization-widgets/images/drillalert.png)
 
-Click `Yes` to enable the option. If you click `No,` then a single value will be added to the respected section( x-axis or y-axis).
+Click `Yes` to enable the option. If you click `No`, then a single value will be added to the respective section (X-axis or Y-axis).
 
 *Figure: Heat Map with a drilled view of the selected region.*
 
@@ -220,19 +220,19 @@ You can format the `Heatmap` for better illustration of the view that you requir
 
 #### Name
 
-This allows you to set `title` for this Heatmap widget.
+This allows you to set a `title` for this Heatmap widget.
 
 ![General settings](/static/assets/visualizing-data/visualization-widgets/images/heat-map/Name.png)
 
 #### Subtitle
 
-This allows you to set `subtitle` for this Heatmap widget. 
+This allows you to set a `subtitle` for this Heatmap widget. 
 
 ![General settings](/static/assets/visualizing-data/visualization-widgets/images/heat-map/Subtitle.png)
 
 #### Description
 
-This allows you to set brief explanation about this Heatmap widget.
+This allows you to set a brief explanation about this Heatmap widget.
 
 ![General settings](/static/assets/visualizing-data/visualization-widgets/images/heat-map/Description.png)
 
@@ -274,7 +274,7 @@ This allows you to apply the specified radius to cell corners. The value ranges 
 
 #### Cell border
 
-This allows you to toggle the visibility of the border surrounding the cell. The value ranges from 0 to 10. `Default value is 1.`
+This allows you to toggle the visibility of the border surrounding the cell. The value ranges from 0 to 10. The `default value is 1`.
 
 ![Cell border](/static/assets/visualizing-data/visualization-widgets/images/heat-map/cellborder-settings.png)
 
@@ -298,7 +298,7 @@ This allows you to configure a single-color palette whose saturation will be var
 
 ![Across Table](/static/assets/visualizing-data/visualization-widgets/images/heat-map/across-table.png)
 
-**Column Wise**:Monochromatic color applied based on the individual column wise minimum and maximum data values.
+**Column Wise**: Monochromatic color applied based on the individual column-wise minimum and maximum data values.
 
 ![Column Wise](/static/assets/visualizing-data/visualization-widgets/images/heat-map/column-wise.png)
 
@@ -308,7 +308,7 @@ This allows you to configure a single-color palette whose saturation will be var
 
 #### Advanced setting
 
-Select Advance setting to configure conditions and apply color to the cells based on that. Click [here](/visualizing-data/visualization-widgets/heat-map/#how-to-apply-conditional-formatting-in-heatmap)  for more details.
+Select Advanced setting to configure conditions and apply color to the cells based on that. Click [here](/visualizing-data/visualization-widgets/heat-map/#how-to-apply-conditional-formatting-in-heatmap) for more details.
 
 ### Legend settings
 
@@ -316,7 +316,7 @@ Select Advance setting to configure conditions and apply color to the cells base
 
 #### Show legend
 
-This allows you to toggle the visibility of legend in the heatmap. By default, it will be disabled. 
+This allows you to toggle the visibility of the legend in the heatmap. By default, it will be disabled.
 
 ![Legend settings](/static/assets/visualizing-data/visualization-widgets/images/heat-map/legendsettings-show.png)
 
@@ -371,23 +371,23 @@ This option did not trim the end of overlapping label in the axis.
 
 **Trim**
 
-This option trims the end of overlapping label in the axis.
+This option trims the end of overlapping labels in the axis.
 
 ![Trim](/static/assets/visualizing-data/visualization-widgets/images/heat-map/trim.png)
 
 #### Enable Trim
 
-This option allows you to trim x-axis labels based on the 'Maximum Label Width' property value.
+This option allows you to trim X-axis labels based on the `Maximum Label Width` property value.
 
 #### Maximum Label Width
 
-This option allows you to set a maximum width for the x-axis labels, and also it can be made customizable when the trim axis label option is enabled.
+This option allows you to set a maximum width for the X-axis labels, and it can also be made customizable when the trim axis label option is enabled.
 
 ![Maximum label width](/static/assets/visualizing-data/visualization-widgets/images/heat-map/maximum-label-width.png)
 
 #### Inversed axis
 
-This allows you to change the axis label’s placement order from left to right in the x-axis.
+This allows you to change the axis label's placement order from left to right in the X-axis.
 
 ![Inversed axis](/static/assets/visualizing-data/visualization-widgets/images/heat-map/inversedaxis.png)
 
@@ -399,9 +399,9 @@ This allows you to change the axis position from bottom to top in the x-axis.
 
 #### Sorting
 
-This option allows you to perform sorting both x-axis and y-axis at the same time. As we currently plotting data as per the 2D resultant table, you are unable to sort both the X and Y axis at the same time. So, we have provided an option in the property panel to customize the sort setting in Heat Map. By default, `Auto` sorting is selected, and the sort order will be the same as per the 2D resultant table.
+This option allows you to perform sorting on both the X-axis and Y-axis at the same time. As we are currently plotting data as per the 2D resultant table, you are unable to sort both the X and Y axis at the same time. So, we have provided an option in the property panel to customize the sort setting in Heat Map. By default, `Auto` sorting is selected, and the sort order will be the same as per the 2D resultant table.
 
-X-axis sorting with 'Ascending' value.
+X-axis sorting with `Ascending` value.
 
 ![Sorting](/static/assets/visualizing-data/visualization-widgets/images/heat-map/x-axis-sorting.png)
 
@@ -431,23 +431,23 @@ This allows you to enable the visibility of y-axis title.
 
 #### Axis title
 
-This allows you to edit the x-axis title for the Heatmap. It will reflect in the y-axis title of the Heatmap.
+This allows you to edit the Y-axis title for the Heatmap. It will reflect in the Y-axis title of the Heatmap.
 
 ![axis title](/static/assets/visualizing-data/visualization-widgets/images/heat-map/y-axis-title-edit.png)
 
 #### Enable Trim
 
-This option allows you to trim y-axis labels based on the 'Maximum Label Width' property value.
+This option allows you to trim Y-axis labels based on the `Maximum Label Width` property value.
 
 #### Maximum Label Width
 
-This option allows you to set the maximum width for the y-axis labels and also it can be made customizable when the trim axis label option is enabled.
+This option allows you to set the maximum width for the Y-axis labels, and it can also be made customizable when the trim axis label option is enabled.
 
 ![Maximum label width](/static/assets/visualizing-data/visualization-widgets/images/heat-map/y-axis-maximum-label-width.png)
 
 #### Inversed axis
 
-This allows you to change the axis label’s placement order from bottom to top in the y-axis.
+This allows you to change the axis label's placement order from bottom to top in the Y-axis.
 
 ![Inversed y-axis](/static/assets/visualizing-data/visualization-widgets/images/heat-map/inversed-axis-y.png)
 
@@ -459,9 +459,9 @@ This allows you to change the axis position from left to right in the y-axis.
 
 #### Sorting
 
-This option allows you to perform sorting on both the x-axis and y-axis at the same time. As you are currently plotting data as per the 2D resultant table, you are unable to sort both the X and Y axis at the same time. So, we have provided an option in the property panel to customize the sort setting in Heat Map. By default, the Auto sorting is selected, and the sort order will be same as per 2D resultant table. 
+This option allows you to perform sorting on both the X-axis and Y-axis at the same time. As you are currently plotting data as per the 2D resultant table, you are unable to sort both the X and Y axis at the same time. So, we have provided an option in the property panel to customize the sort setting in Heat Map. By default, Auto sorting is selected, and the sort order will be the same as per the 2D resultant table.
 
-Y-axis sorting with the 'Descending' value.
+Y-axis sorting with the `Descending` value.
 
 ![Sorting](/static/assets/visualizing-data/visualization-widgets/images/heat-map/y-axis-sorting.png)
 
@@ -477,25 +477,25 @@ To configure the linking to URL or dashboard with the widget using its settings.
 
 #### Act as master widget
 
-This allows you to define the Heatmap widget as a master widget such that its filter action can be listened by other widgets in the Dashboard.
+This allows you to define the Heatmap widget as a master widget such that its filter action can be listened to by other widgets in the Dashboard.
 
 #### Ignore filter actions
 
-This allows you to define the Heatmap widget to ignore responding filter actions applied on other widgets in the Dashboard.
+This allows you to define the Heatmap widget to ignore responding to filter actions applied to other widgets in the Dashboard.
 
 #### Enable hierarchical filtering
 
-Using this option, you can enable or disable the hierarchical Top N filtering. While applying Top N filter with multiple dimension columns, the returned data can be customized based on whether the filtering need to be done as flat or hierarchy of added dimension columns.
+Using this option, you can enable or disable the hierarchical Top N filtering. While applying Top N filter with multiple dimension columns, the returned data can be customized based on whether the filtering needs to be done as a flat or hierarchy of added dimension columns. 
 
 When the hierarchical filter option is enabled, the Top N will be applied for each individual column separately based on the number set for each column.
 
 ## How to apply conditional formatting in Heatmap
 
-In case, if you have the requirement to highlight any data based on some conditions, you might be required to enable the advanced formatting option.
+In case you have the requirement to highlight any data based on some conditions, you might be required to enable the advanced formatting option.
 
 ### How to enable advanced formatting
 
-1. In the properties pane, under the `Formatting` section, click the `Advanced Setting` radio button.
+1. In the properties pane, click on the `Advanced Setting` radio button under the `Formatting` section.
 
 ![Advanced setting enable](/static/assets/visualizing-data/visualization-widgets/images/heat-map/advanced-settings.png)
 
@@ -503,9 +503,9 @@ In case, if you have the requirement to highlight any data based on some conditi
 
 ![Conditional formatting dialog](/static/assets/visualizing-data/visualization-widgets/images/heat-map/conditionalformatting-dialog.png)
 
-3. Select the `mode` and enter the conditions as required and click the `Save` button to apply.
+3. Enter the conditions as required, select the `mode`, and click the `Save` button to apply.
 
-4. Now, the widget visualization will be updated based on the conditions.
+4. The widget visualization will now be updated based on the conditions.
 
 ![Heatmap with conditional formatting](/static/assets/visualizing-data/visualization-widgets/images/heat-map/formattedresult.png)
 
@@ -513,31 +513,31 @@ Refer to the following sections for the detailed steps on using the [`Gradient`]
 
 ### Gradient mode
 
-You can customize the fill color of the heatmap using the gradient based conditional formatting. This is the default mode. 
+You can customize the fill color of the heatmap using the gradient-based conditional formatting. This is the default mode. 
 
-> **NOTE:** Binding size field in heat map, Gradient mode option will be disabled. 
+> **NOTE:** The Gradient mode option will be disabled if the binding size field in the heat map is enabled.
 
 #### Based on field
 
-The configured value fields. Based on field cannot be changed in the conditional formatting dialog. 
+This option is based on the configured value fields and cannot be changed in the conditional formatting dialog.
 
 #### Summary type
 
-The summary type of the configured value field. 
+This refers to the summary type of the configured value field.
 
 #### Low, mid, and high values
 
 You can define your range by entering the low, mid, and high values. 
 
-> **NOTE:** It is optional, if no value is entered, then the ranges will be auto calculated based on the minimum and maximum values from the data source. 
+> **NOTE:** If no value is entered, the ranges will be auto-calculated based on the minimum and maximum values from the data source.
 
 #### Default color
 
-If the region of Heatmap value is out of the specified range, then the color specified in the default color will be applied.
+If the region of the Heatmap value is out of the specified range, the color specified in the default color will be applied.
 
 ### Rule based condition mode
 
-This allows you to customize the fill color of the Heatmap based on one or more numerical / text conditions.
+This allows you to customize the fill color of the Heatmap based on one or more numerical/text conditions.
 
 ![Rule mode](/static/assets/visualizing-data/visualization-widgets/images/heat-map/rulemode.png)
 
@@ -547,45 +547,45 @@ You can give a meaningful name to the applied conditions.
 
 #### Condition type
 
-Choose the condition for measure field from the highlighted conditions.
+Choose the condition for the measure field from the highlighted conditions.
 
 ![Condition type](/static/assets/visualizing-data/visualization-widgets/images/heat-map/conditiontype.png)
 
 #### Value
 
-You can mention the condition value.
+You can specify the condition value.
 
 #### Fill color
 
-Select the fill color for that condition using the color picker. 
+Select the fill color for that condition using the color picker.
 
 #### Add condition
 
-Click add condition to specify add new condition. 
+Click the add condition button to specify a new condition.
 
 ![Add rules](/static/assets/visualizing-data/visualization-widgets/images/heat-map/addrules.png)
 
 #### Delete condition
 
-Click the delete button to remove the existing condition. 
+Click the delete button to remove an existing condition.
 
 ![Delete rules](/static/assets/visualizing-data/visualization-widgets/images/heat-map/remove-rules.png)
 
 ## Cohort Visualization
 
-Cohort visualization examines the outcomes of predetermined groups, called cohorts, as they progress through a set of stages. The signature characteristic of a cohort is its comparison of the change in a variable across two different time series. A cohort is a group of people sharing common characteristics over a specified period and it's helps for decision making purpose.
+Cohort visualization examines the outcomes of predetermined groups, called cohorts, as they progress through a set of stages. The signature characteristic of a cohort is its comparison of the change in a variable across two different time series. A cohort is a group of people sharing common characteristics over a specified period, and it helps for decision making purposes.
 
 ### How to do cohort visualization in HeatMap widget
 
-1. Drag and Drop the heatmap widget and bind the measure values in it.
+1. Drag and drop the heatmap widget and bind the measure values to it.
 
-2. Go to the `Formatting section` and change the drop-down value to `Row Wise.`
+2. Go to the `Formatting section` and change the dropdown value to `Row Wise`.
 
 ![Formatting Section](/static/assets/visualizing-data/visualization-widgets/images/heat-map/formatting-section.png)
 
 ![Cohort Visualization](/static/assets/visualizing-data/visualization-widgets/images/heat-map/cohorot_visulization.png)
 
-Above screenshot shows cohort visualization in heatmap widget.
+The above screenshot shows cohort visualization in the heatmap widget.
 
 ### Container Appearance
 
@@ -593,7 +593,7 @@ Above screenshot shows cohort visualization in heatmap widget.
 
 ### Title Alignment
 
-This allows you to handle the alignment of widget title to either **left, center, or right**.
+This allows you to handle the alignment of the widget title to either **left, center, or right**.
 
 ### Title Color
 
@@ -601,27 +601,27 @@ This allows you to apply the text `color` to the widget title.
 
 ### Title Auto Font Size
 
-On enabling Auto Font Size, the font size of the title will be adjusted automatically if the resolution of the screen varies.
+When enabled, the font size of the title will be adjusted automatically if the resolution of the screen varies.
 
 **Font Size**
 
-This allows you to apply the specified size of the font to the widget title if the **Title Auto Font Size** is disabled. Value can be between 10 and 44.
+This allows you to apply the specified size of the font to the widget title if the **Title Auto Font Size** is disabled. The value can be between 10 and 44.
 
 ### Subtitle Auto Font Size
 
-On enabling Auto Font Size, the font size of the subtitle will be adjusted automatically if the resolution of the screen varies.
+When enabled, the font size of the subtitle will be adjusted automatically if the resolution of the screen varies.
 
 **Font Size**
 
-This allows you to apply the specified size of the font to the widget title if the **Subtitle Auto Font Size** is disabled. Value can be between 10 and 32.
+This allows you to apply the specified size of the font to the widget title if the **Subtitle Auto Font Size** is disabled. The value can be between 10 and 32.
 
 ### Auto Padding
 
-On enabling Auto Padding, the padding of the widget container will be adjusted automatically if the size of the widget varies.
+When enabled, the padding of the widget container will be adjusted automatically if the size of the widget varies.
 
 **Padding**
 
-This allows you to customize the padding of the widget container if the **Auto Padding** is disabled. Value can be between 0 and 25.
+This allows you to customize the padding of the widget container if the **Auto Padding** is disabled. The value can be between 0 and 25.
 
 ### Show Border
 
@@ -629,7 +629,7 @@ This allows you to toggle the visibility of the `border` surrounding the widget.
 
 ### Corner Radius
 
-This allows you to apply the specified `radius` to the widget corners if the **Show Border** is enabled. Value can be between 0 and 10.
+This allows you to apply the specified `radius` to the widget corners if the **Show Border** is enabled. The value can be between 0 and 10.
 
 ### Show Background Image
 
@@ -637,7 +637,7 @@ This allows you to set the **background image** for the heat map widget.
 
 ### Background Color
 
-This allows you to set the **background color** to the heat map widget.
+This allows you to set the **background color** for the heat map widget.
 
 ### Transparency
 
@@ -677,7 +677,7 @@ This allows you to enable or disable the `PDF export` option for the heat map wi
 
 #### Enable Comments
 
-This allows you to enable or disable `comment` for the dashboard widget. For more details, refer to this [link](/visualizing-data/working-with-widgets/commenting-widget/).
+This allows you to enable or disable `comments` for the dashboard widget. For more details, refer to this [link](/visualizing-data/working-with-widgets/commenting-widget/).
 
 #### Allow View Underlying Data
 
@@ -693,11 +693,11 @@ This allows you to pin the widget.
 
 We hide the widget elements based on the size of the widget for better readability.
 
-When the Heatmap has been placed with less than 20 columns chart y-axis title and y-axis label will be hidden.
+When the Heatmap has been placed with less than 20 columns, the chart y-axis title and y-axis label will be hidden.
 
 ![Widget Element](/static/assets/visualizing-data/visualization-widgets/images/heat-map/Y-axis.png)
 
-When the Heatmap is placed with less than 7 rows, the x-axis title and x-axis label, the legend will be hidden.
+When the Heatmap is placed with less than 7 rows, the x-axis title and x-axis label, and the legend will be hidden.
 
 ![Widget Element](/static/assets/visualizing-data/visualization-widgets/images/heat-map/X-axis.png)
 

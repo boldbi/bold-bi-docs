@@ -8,9 +8,9 @@ documentation: ug
 
 # Change the Dashboard Parameter value in URL
 
-By using dashboard parameters the user can change the value of the URLs dynamically.
+By utilizing dashboard parameters, the user can dynamically change the value of the URLs.
 
-You can pass the parameters to a dashboard by including them in a dashboard URL. Passing parameter values within the URL will apply a filter in the dashboard on the initial load itself.
+Parameters can be passed to a dashboard by including them in the dashboard URL. Passing parameter values within the URL will apply a filter in the dashboard upon initial load.
 
 To set a dashboard parameter within a URL, use the following syntax:
 
@@ -22,7 +22,7 @@ To set a dashboard parameter within a URL, use the following syntax:
 
 `<parameter1>=<value>&&<parameter>=<value>`
 
-Using the syntax, you can pass the dashboard parameter value in the URL as follows.
+By using the syntax, you can pass the dashboard parameter value in the URL as follows.
 
 `https://<servername>/dashboards/<dashboardid>/<category>/<dashboardname>?&&<parameter1>=<value1>&&<parameter2>=<value2>`
 
@@ -34,7 +34,7 @@ Using the syntax, you can pass the dashboard parameter value in the URL as follo
 
 ## Passing Stored Procedure parameter with URL using the Dashboard Parameter
 
-You can pass the stored procedure parameters to a dashboard by including them in a dashboard URL. Passing parameter values within the URL will apply a filter in the dashboard on the initial load itself. 
+You can pass the stored procedure parameters to a dashboard by including them in the dashboard URL. Passing parameter values within the URL will apply a filter in the dashboard upon the initial load.
 
 To set a dashboard parameter within a URL, use the following syntax:
 
@@ -56,9 +56,9 @@ To set a dashboard parameter within a URL, use the following syntax:
 
 •	NOTIN
 
-`IN` and `NOTIN` operators are supported for [URL Filter](/working-with-dashboards/preview-dashboard/urlparameters/) in dashboard parameter.
+The `IN` and `NOTIN` operators are supported for the [URL Filter](/working-with-dashboards/preview-dashboard/urlparameters/) in the dashboard parameter.
 
-> **NOTE:**  Parameter name is case sensitive.
+> **NOTE:**  The parameter name is case sensitive.
 ### Supported Data types
 
 •	Character and String
@@ -69,21 +69,21 @@ To set a dashboard parameter within a URL, use the following syntax:
 
 •	Binary
 
-For date type parameter values, you can provide the server (where the query will be executed) supported date format as parameter value.
+For date type parameter values, you can provide the supported date format of the server where the query will be executed as the parameter value.
 
-To append your query string with URL, add a prefix (?) to the query string. If (?) is already there in the URL, add a prefix (&&) to the query string.
+To append your query string to a URL, add a prefix (?) to the query string. If (?) is already present in the URL, add a prefix (&&) to the query string.
 
  `https://<servername>/dashboards/<dashboardid>/<category>/<dashboardname>?@<parameter1>=<value1>&&@<parameter2>=<value2>`
 
 ![Stored procedure URL parameter](/static/assets/working-with-datasource/dashboard-parameter/images/stored-procedure-url-parameter.png)
 
-Using the dashboard parameter syntax, you can pass the dashboard parameter value in URL as follows.
+By using the dashboard parameter syntax, you can pass the dashboard parameter value in the URL as follows.
 
 ![Dashboard parametr in URL parameter](/static/assets/working-with-datasource/dashboard-parameter/images/dashboardparameter-in-url.png)
 
 ## Default parameters
 
-Default parameters enhances to filter the data based on the current user. It can be passed in custom query and web URL. Currently, the default parameter is supported with,
+Default parameters enhance the ability to filter the data based on the current user. They can be passed in a custom query and web URL. Currently, the default parameter is supported with:
 
 <meta charset="utf-8"/>
 <table>
@@ -125,19 +125,19 @@ Default parameters enhances to filter the data based on the current user. It can
 
 ### Default parameter in custom query
 
-Include the default parameter by pressing the key `Shift+2`, to list the default parameter along with the available user defined parameters. You can use it anywhere in query editor window.
+To include the default parameter, press `Shift+2` to list it along with the available user defined parameters. You can use this feature anywhere in the query editor window.
 
-Another way is, user can manually type the default parameter in code view using the following syntax.
+Alternatively, users can manually type the default parameter in the code view using the following syntax.
 
 ![Use default parameter in custom query](/static/assets/working-with-datasource/dashboard-parameter/images/default-parameter-code-view-listing.png)
 
 ### Default parameter in web URL
 
-You can include the default parameter in the web URL with live connection using the following syntax.
+You can include the default parameter in the web URL with a live connection using the following syntax.
 
 ![Use default parameter in web URL](/static/assets/working-with-datasource/dashboard-parameter/images/default-parameter-web-url.png)
 
-Here, Sales Analysis Dashboard is rendered for two users with full name **ALFKI** and **BERGS**. The default parameter is applied as follows.
+Here, the Sales Analysis Dashboard is rendered for two users with the full names **ALFKI** and **BERGS**. The default parameter is applied as follows.
 
 ![Use default parameter in Sales Analysis Dashboard](/static/assets/working-with-datasource/dashboard-parameter/images/default-parameter-code-view.png)
 

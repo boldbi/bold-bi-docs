@@ -10,42 +10,42 @@ documentation: ug
 
 # Trendlines
 
-Trendline helps to know the general pattern or overall direction of the data in the chart widget. You can add more than one trendline to Cartesian charts except bar type series (Line, Column, Area, Spline) and stacked type of charts. You can add, edit, and delete trendlines. 
+Trendlines help determine the general pattern or overall direction of the data in the chart widget. You can add more than one trendline to Cartesian charts, except for bar type series (Line, Column, Area, Spline) and stacked types of charts. You are able to add, edit, and delete trendlines.
 
 ## Add and edit trendline
 
-1. You can see the trendlines option under the `properties` tab of the applicable chart widgets. 
+1. The trendlines option can be found under the `properties` tab of the applicable chart widgets.
 ![Trendline properties](/static/assets/visualizing-data/working-with-widgets/images/trendLine-properties.png)
 
-2. To add trendline, click the highlighted button. 
+2. To add a trendline, click the highlighted button.
 ![Add button click](/static/assets/visualizing-data/working-with-widgets/images/add-trendLine.png)
 
-3. Now, the dialog will open as follows.
+3. A dialog will then open.
 ![Trendline dialog](/static/assets/visualizing-data/working-with-widgets/images/TrendLine-dialog.png)
 
-4. Click the `OK` button to add trendline in combination chart. 
+4. Click the `OK` button to add the trendline in the combination chart.
 ![ok click](/static/assets/visualizing-data/working-with-widgets/images/click-ok-to-add-trendline.png)
 
-5. Now, chart renders as follows. 
+5. The chart will render accordingly.
 ![Chart with trendline](/static/assets/visualizing-data/working-with-widgets/images/ChartTrendLines.png)
 
-6. To edit trendline, select the one to be edited and click the highlighted button.
+6. To edit a trendline, select the one to be edited and click the highlighted button.
 ![Edit trendline](/static/assets/visualizing-data/working-with-widgets/images/edit-trendLine.png)
 
-7. Again, trendline dialog window opens now.
+7. Once again, the trendline dialog window will open.
 ![Trendline dialog](/static/assets/visualizing-data/working-with-widgets/images/TrendLine-window.png)
 
 ### Legend text
 
-You can edit Trendline legend by `Legend Text` text box. By default, Legend Text renders based on Line type and Series name.
+You can edit the trendline legend in the `Legend Text` text box. By default, the Legend Text is rendered based on the Line type and Series name.
 
 ### Series
 
-You can change the series that shows the trendline by Series drop-down option.
+You can change the series that shows the trendline by selecting from the Series drop-down option.
 
 ### Line type
 
-You can select line type by Line Type drop-down option (`Linear, Exponential, Logarithmic, Power, and Polynomial`).
+The line type can be selected from the Line Type drop-down option (`Linear, Exponential, Logarithmic, Power, and Polynomial`).
 
 ### Line Width
 
@@ -53,15 +53,15 @@ You can set the width of the trendline.
 
 ### Line color
 
-You can change color of trendline by `Line Color` color picker.
+The color of the trendline can be changed using the `Line Color` color picker.
 
 ### Line style
 
-You can change the style of trendline by Line Style drop-down option (`Solid, Dot, Dash, DotDash, LongDash, and LongDashDotDot`).
+The style of the trendline can be changed by selecting from the Line Style drop-down option (`Solid, Dot, Dash, DotDash, LongDash, and LongDashDotDot`).
 
 ## Delete trendline
 
-To delete trendline, select the one to be deleted and click the highlighted button.
+To delete a trendline, select the one to be deleted and click the highlighted button.
 
 ![Delete trendline](/static/assets/visualizing-data/working-with-widgets/images/delete-trendLine.png)
 

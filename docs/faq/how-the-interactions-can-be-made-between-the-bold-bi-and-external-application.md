@@ -8,28 +8,28 @@ documentation: ug
 
 # How the interactions can be made between the Bold BI and external application?
 
-In Bold BI, you can control the overall interaction between the dashboard widgets using the events. You can manipulate the dashboard widget elements on the client-side and can control their behavior also. Consider the following embedding sample, the Chart, and Cards controls are Bold BI widget controls and the other controls are JS controls. 
+In Bold BI, you can control the overall interaction between the dashboard widgets using events. You can manipulate the dashboard widget elements on the client-side and control their behavior as well. In the following embedding sample, the Chart and Cards controls are Bold BI widget controls, while the other controls are JavaScript controls.
 
    ![Sample Dashboard](/static/assets/faq/images/sample-dashboard-for-seamless-interaction.png)
 
-The above dashboard is available in this <a href="https://demo-interaction.boldbi.com/embed">link</a>.
+The above dashboard is available in this [link](https://demo-interaction.boldbi.com/embed)
 
-JS controls data are loaded from the same database, which we used for the Bold BI widgets controls.
+The JS controls load data from the same database that we used for the Bold BI widgets controls.
 
 ## Sample Working details:
 
-1.	When we choose any value from the JS filter control except the Work Order number filter, Bold BI Card widgets data will be changed accordingly. 
-2.	When we choose any value from the `Work Order Number` filter and click the `Work Order Number` column data from the Grid JS control, the Bold BI chart widget data will be changed accordingly.
-3.	When we choose the value from the `Organization and Work Order Number` filters value, the Grid JS control data will be changed accordingly.
-4.	If we change the organization value, the values of Work Order Number, Crew, and Zone will be changed automatically with the current range. The values will be changed according to this hierarchical order - `Organization -> Work Order Number -> Crew -> Zone`.
-5.	We show the applied filter values as a Breadcrumb like in the following image.
+1.	When we select any value from the JS filter control other than the Work Order number filter, the data in the Bold BI Card widgets will be updated accordingly.
+2.	When we select a value from the `Work Order Number` filter and then click on the data in the `Work Order Number` column of the Grid JS control, the data displayed in the Bold BI chart widget will be updated accordingly.
+3.	When we select a value from the `Organization and Work Order Number` filters, the data in the Grid JS control will be updated accordingly.
+4.	If we change the organizational value, the values of the Work Order Number, Crew, and Zone will be automatically changed within the current range. The values will be adjusted in the following hierarchical order: `Organization -> Work Order Number -> Crew -> Zone`.
+5.	We display the applied filter values as a breadcrumb, as shown in the following image.
 ![Apply filtering in the values](/static/assets/faq/images/show-filtered-values-in-breadcrumb-structure.png)
-6.	Using this Breadcrumb, we can remove the child level of hierarchy filter.
-7.	We can also show the filter overview options like in the following image. Using this, we can remove the particular filter value data.
+6.	By using this Breadcrumb, we can remove the child level of hierarchy filter.
+7.	Additionally, we can display the filter overview options, as shown in the following image. This will allow us to eliminate the specific filter value data.
 ![Show the Filter overview option](/static/assets/faq/images/filter-overview-option.png)
-8. If we click any column from the Bold BI chart widget, it will navigate to the new page to render the Grid JS control with the clicked column value. In this case, we are able to pass the context values from the Bold BI widgets to external applications. And also, we can filter the data based on the applied filters and can show the filters data as follows,
+8. If we click on any column in the Bold BI chart widget, it will navigate to a new page where the Grid JS control will render with the value of the clicked column. In this scenario, we can pass the context values from the Bold BI widgets to external applications. Additionally, we can filter the data based on the applied filters and display the filtered data accordingly,
 ![Linking the values in bar chart](/static/assets/faq/images/linking-in-bar-chart.png)
-Also, you can refer to the this <a href='https://samples.boldbi.com/embed/javascript/user-interaction/url-linking'>Sample Browser</a>  to know more about the linking events to get the context values to pass to the external application.
-9.	If we click the `Organization` data column in the grid, it will navigate to the home page with the existing and newly applied filter, and the home page sample data will render based on all filters.
-10. If we click the `Home` or any value from the second-page breadcrumb, the filter values are removed in the home page based on the clicked context value.
+Also, you can refer to the [Sample Browser](https://samples.boldbi.com/embed/javascript/user-interaction/url-linking) to learn more about linking events to obtain context values to pass to the external application. 
+9.	If we click on the `Organization` data column in the grid, it will navigate to the home page with both existing and newly applied filters, and the home page sample data will render based on all filters. 
+10. If we click on the `Home` button or any value from the breadcrumb on the second page, the filter values will be removed on the home page based on the clicked context value.
 

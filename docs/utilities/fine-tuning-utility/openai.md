@@ -36,7 +36,7 @@ To run the OpenAI fine-tuning utility, follow these steps:
 2. Navigate to the Directory: Use the `cd` command to change directories to where the OpenAI trainer utility is located.
    
    ```bash
-   cd /var/www/bold-services/application/utilities
+   cd /var/www/bold-services/application/utilities/openai_trainer
    ```
 3. Once in the correct directory, run the dll file by typing the following command, replacing `<:API_KEY>` with your actual OpenAI API key.
 
@@ -147,4 +147,4 @@ After a successful fine-tuning process, the console will display the name of the
 
 5. Restart the Bold BI services and open the dashboard.
 
-> **NOTE:**  Fine-tuning once will cost approximately $13 USD. Each search in the Q&A widget will incur a cost based on the pricing of the OpenAI fine-tuned model (https://openai.com/pricing), where the number of input and output tokens depends on the question and the data sources connected to the dashboard.
+> **NOTE:**  Fine-tuning once will cost approximately $25 USD. Each search in the Q&A widget will incur a cost based on the pricing of the OpenAI fine-tuned model (https://openai.com/pricing), where the number of input and output tokens depends on the question and the data sources connected to the dashboard.

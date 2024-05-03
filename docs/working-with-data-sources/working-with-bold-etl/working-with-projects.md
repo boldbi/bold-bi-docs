@@ -9,38 +9,32 @@ documentation: ug
 
 # Working with Projects:
 
-This section explains creating a new project and importing data into the destination connector.
+This section explains how to create a new project and import data into the destination connector.
 
 ## Steps for Creating New Project:
 
-Click Add Project in the left side panel. Enter the name of the project and click ‘+’.
+Click Add Project in the left side panel. Enter the project name ('_' only allowed) and click the tick icon.
    
 ![Add Project](/static/assets/working-with-etl/images/etl_add_project.png)  
 
-Enter the project name ('_' only allowed) and click the tick icon. Then click on the project name.
+Enter the project name (only '_' allowed) and click the tick icon. Then click on the project name.
    
 ![Tick](/static/assets/working-with-etl/images/etl_project_name.png)
 
-It will show to the **Source** page to configure the source and destination connector configuration.
+It will take you to the **Load** page to configure the source and destination connector settings.
    
 ![Source](/static/assets/working-with-etl/images/etl_source.png)
 
-## Source Page:
+## Load:
 
-Configure the details of the source data source connector in a YAML file format.
+We can configure the details of the source data source connector in a **YAML** file format.
 
-In the Connector list panel, the data source name is listed. Select the connector name and click on the Add Template for sample configuration details and a sample template source configuration will be added. We can add multiple connectors into a single project and move data into a destination database.
+In the Connector list panel, the data source name is listed. Select the connector name and click on Add Template for sample configuration details. A sample template source configuration will be added. Multiple connectors can be added to a single project to move data into a destination database.
 
 ![SourcePage](/static/assets/working-with-etl/images/etl_addtemplate.png)
 
 ![Template](/static/assets/working-with-etl/images/etl_mysqltemplate.png)
 
-Click Save and Popup window will appear. Click on the dropdown menu Select Destination and select ``DataStoreName`` which configured in the Data Store settings page.
-![Template1](/static/assets/working-with-etl/images/etl_savedest.png)
-
-Once project runs completed, it will create data source in ``Bold BI Data Sources``.
-
-![Template1](/static/assets/working-with-etl/images/etl_create_datasource.png)
 
 Example: Configuration File
 
@@ -72,3 +66,16 @@ plugins:
       select:
       - table2
 ```
+
+Click Save and Popup window will appear. Click on the dropdown menu Select Destination and select ``DataStoreName`` which configured in the Data Store settings page.
+![Template1](/static/assets/working-with-etl/images/etl_savedest.png)
+
+Then Go to ``Schedule`` page and click ``Run Now`` option.
+![Template1](/static/assets/working-with-etl/images/etl_s5.png)
+
+View the running status in ``Logs`` tab.
+![Template1](/static/assets/working-with-etl/images/etl_s6.png)
+
+ Once project runs completed, it will create data source in ``Bold BI Data Sources``.
+![Template1](/static/assets/working-with-etl/images/etl_create_datasource.png)
+

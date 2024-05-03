@@ -13,17 +13,17 @@ You can view the data bound to the widget by enabling the View data option under
 
 ![View data option](/static/assets/visualizing-data/working-with-widgets/images/viewdataoptionindesigner.png)
 
-The selected widget will get a new menu for view data along with the export menu as shown in the following image.
+The selected widget will have a new menu for viewing data, along with the export menu, as shown in the following image.
 
 ![View data menu](/static/assets/visualizing-data/working-with-widgets/images/viewdataoptionincontrolmenu.png)
 
 ## View data
 
-By default, the column values which is configured with the widget are displayed in view data. The **select column** button can be seen on the top right of the dialog.
+By default, the column values configured with the widget are displayed in view data. The **Select Column** button can be seen at the top right of the dialog.
 
 ![View data widget column](/static/assets/visualizing-data/working-with-widgets/images/viewdatadefaultcolumns.png)
 
-When we click the **Select Column** button, a list box containing the list of the columns in the data source that is configured in widgets will be displayed.
+When we click the **Select Column** button, a list box containing the columns in the data source configured in widgets will be displayed.
 
 ![Select column list box](/static/assets/visualizing-data/working-with-widgets/images/viewdataSelectColumnListBox.png)
 
@@ -39,7 +39,7 @@ By checking the **Select All** field, we can display all column values in the da
 
 ![Select all columns](/static/assets/visualizing-data/working-with-widgets/images/viewdataSelectAllColumn.png#max-width=50%)
 
-We can also export the selected/all column(s) value into CSV or excel file by clicking the **Export** options.
+We can also export the selected/all column(s) value into a CSV or Excel file by clicking the **Export** options.
 
 ![View data export](/static/assets/visualizing-data/working-with-widgets/images/viewdataexportmenu.png)
 

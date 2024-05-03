@@ -157,7 +157,7 @@ Following steps to connect the 64-bit values:
 
 Type while creating the data source needs to be ODBC.
 
-[Rest API - v4.0](https://help.boldbi.com/embedded-bi/rest-api-reference/v4.0/api-reference/)
+[Rest API - v4.0](/server-api-reference/v4.0/api-reference/)
 
 ### Parameters for creating Data Source
 

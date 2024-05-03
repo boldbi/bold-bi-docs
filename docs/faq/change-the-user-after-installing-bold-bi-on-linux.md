@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # How to Change the user after installing Bold Bi On Linux?
-1. Edit the service of Bold BI apps using following command.
+1. To edit the service of Bold BI apps, use the following command:
     
     `systemctl edit --full <boldbi-service-name>`
  
@@ -29,13 +29,13 @@ documentation: ug
 
     `find "/etc/systemd/system/" -type f -name "*.service" -print0 | xargs -0 sed -i"s|$existing_user|$user_to_replace|g"`
 
-4. Check and provide read and write or owner permission for the Bold BI installed directory `(/var/www/boldbi-embedded)` to the newly updated user.
+4. Check and provide read, write, or owner permissions for the Bold BI installed directory `(/var/www/boldbi-embedded)` to the newly updated user.
  
 5. Run the following command. 
 
     `sudo systemctl daemon-reload`
 
-6. Restart the services using the following command. 
+6. Restart the services by using the following command. 
 
     `systemctl restart bold-*` 
 

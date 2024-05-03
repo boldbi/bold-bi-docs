@@ -8,23 +8,23 @@ documentation: ug
 
 # How to show a detailed view of a widget in JavaScript embedding application
 
-You can able to show detailed view of a widget in JavaScript based embedding application using [URL Linking](/visualizing-data/working-with-widgets/linking-urls-and-dashboards/) support in Bold BI application.
+You can display a detailed view of a widget in a JavaScript-based embedding application by utilizing [URL linking](/visualizing-data/working-with-widgets/linking-urls-and-dashboards/) support in the Bold BI application.
 
-Follow the below steps to achieve this 
+Follow the steps below to achieve this, 
 
-1. First, you need to create and publish a main dashboard with required widgets in Bold BI server.
+1. First, you need to create and publish a main dashboard with the required widgets on the Bold BI server.
 
     ![Main Dashboard](/static/assets/faq/images/main-dashboard.png)
 
-2. Then, create a detailed information dashboard with the required widgets and publish this dashboard. After this, copy this dashboard’s ID and use that dashboard ID in `URL` text box of `Link` Property of the corresponding widget in a main dashboard. Then choose the `Target` as `Pop up`.
+2. Next, create a detailed information dashboard with the necessary widgets and publish it. Once completed, copy the dashboard's ID and paste it into the `URL` text box of the `Link` Property for the corresponding widget in the main dashboard. Select `Pop up` as the `Target`.
 
     ![Detailed Dashboard Id](/static/assets/faq/images/detailed-dashboard-id.png)
 
-3. After this, embed the main dashboard in your application using Dashboard ID by following the steps mentioned in this [section](/getting-started/embedding-in-your-application/#embed-using-dashboard-id).
+3. Afterward, embed the main dashboard in your application using the Dashboard ID by following the steps mentioned in this [section](/getting-started/embedding-in-your-application/#embed-using-dashboard-id).
 
-4. Next, you need to add `beforeNavigateUrlinking` (/embedding-options/embedding-sdk/embedding-api-reference/events/#beforenavigateurllinking) event to handle and show the detailed information of a widget in a pop-up window and this event will be triggered before the URL linking navigation is invoked.
+4. Next, you need to add the `beforeNavigateUrlinking` (/embedding-options/embedding-sdk/embedding-api-reference/events/#beforenavigateurllinking) event to handle and display detailed information of a widget in a pop-up window. This event will be triggered before the URL linking navigation is invoked.
 
-Find the sample code to show a details view of a widget in pop-up window as follows
+Find the sample code below to display a detailed view of a widget in a pop-up window:
 
 ```js
 var dashboard = BoldBI.create({ 
@@ -66,6 +66,6 @@ beforeNavigateUrlLinking: function (arg){
     urlLinkDbrd.loadDashboard();
 ```
 
-5. After completing this, when you click on the corresponding widget, you can view the detailed information of a widget in pop-up window with the assigned Title like below screen shot
+5. After completing this task, when you click on the corresponding widget, you can view the detailed information of the widget in a pop-up window with the assigned title, as shown in the screenshot below.
 
     ![Detailed Info Pop-up](/static/assets/faq/images/detailed-info-pop-up.png)

@@ -8,14 +8,14 @@ documentation: ug
 
 # Custom Connector
 
-A custom connector allows you create a BoldBI connector by yourself. You can create a BoldBI connector for your REST API without waiting to be implemented.
+A custom connector allows you to create a BoldBI connector by yourself. You can create a BoldBI connector for your REST API without having to wait for it to be implemented. 
 To create a custom connector, you need to prepare a JSON file and upload it to Bold BI.
 
 > **Note:** This feature is available in On-Premises Deployment but not in Syncfusion Managed Cloud Server.
 
 ## Configuring Custom connector 
 
-This section explains how to Configure Custom Connector using [JSON file](/working-with-data-sources/custom-connector/create-custom-connector/) in Bold BI enterprises.
+This section explains how to configure a custom connector using a [JSON file](/working-with-data-sources/custom-connector/create-custom-connector/) in Bold BI enterprises.
 
   [Add](#add-custom-connector)
   
@@ -27,15 +27,15 @@ This section explains how to Configure Custom Connector using [JSON file](/worki
 
 ### Add Custom connector
 
-Add Custom connector JSON file by following the given steps:
+Add a custom connector JSON file by following the given steps:
 
-  1. Click **Settings** icon in the left panel.
+  1. Click the **Settings** icon in the left panel.
 
-  2. Select **Connectors** tab. This tab lists the available data sources and custom connectors in Bold BI.
+  2. Select the **Connectors** tab. This tab lists the available data sources and custom connectors in Bold BI.
 
      ![Settings](/static/assets/working-with-datasource/data-connectors/images/Customconnector/settingandconnector.png)
 
-  3. Navigate **Custom connector panel** by scrolling down the Data Source panel.
+  3. Scroll down the Data Source panel and navigate to the **Custom connector panel**.
     
   4. Click **Add new Connector**.
 
@@ -46,7 +46,7 @@ Add Custom connector JSON file by following the given steps:
      
      ![Save](/static/assets/working-with-datasource/data-connectors/images/Customconnector/Saveicon.png)
     
-  6. Click **Save** button at the end of the custom connector panel. If you proceed without saving the configuration, you will not be able to see your connector(s) in the data source panel.
+  6. Click the **Save** button at the end of the custom connector panel. If you proceed without saving the configuration, you will not be able to see your connector(s) in the data source panel.
   
      ![ConformSave](/static/assets/working-with-datasource/data-connectors/images/Customconnector/Confirmsave.png)
 
@@ -54,9 +54,9 @@ Add Custom connector JSON file by following the given steps:
 
 ### Edit Custom connector
 
- Edit Custom connector by uploading new or Updated JSON file by following the given steps.
+ Edit a custom connector by uploading a new or updated JSON file by following the given steps.
 
-  1. Click **Edit icon** on the custom connector that has to be edited.
+  1. Click the **Edit icon** on the custom connector that needs to be edited.
     
      ![Edit](/static/assets/working-with-datasource/data-connectors/images/Customconnector/EditConnector.png)
  
@@ -65,7 +65,7 @@ Add Custom connector JSON file by following the given steps:
   3. Upload and save your new custom connector by clicking the **Save** button in the popup.
     
      ![Save](/static/assets/working-with-datasource/data-connectors/images/Customconnector/Saveicon.png)
-  4. Click **Save** button at the end of the custom connector panel. If you proceed without saving the configuration, Your new JSON file will not be uploaded.
+  4. Click the **Save** button at the end of the custom connector panel. If you proceed without saving the configuration, your new JSON file will not be uploaded.
 
      ![conformSave](/static/assets/working-with-datasource/data-connectors/images/Customconnector/Confirmsave.png)
 
@@ -73,10 +73,10 @@ Add Custom connector JSON file by following the given steps:
 
  You can delete the added Custom connector JSON file by following the given steps:
 
-  1. To delete the specified custom connector, click **Delete Icon**.
+  1. To delete the specified custom connector, click the **Delete Icon**.
     
      ![Delete](/static/assets/working-with-datasource/data-connectors/images/Customconnector/DeleteConnector.png)
  
-  2. A confirmation popup will be opened. Click **Yes** button to delete custom connector
+  2. A confirmation popup will open. Click the **Yes** button to delete the custom connector.
 
      ![Conformdelete](/static/assets/working-with-datasource/data-connectors/images/Customconnector/confirmdelete.png)

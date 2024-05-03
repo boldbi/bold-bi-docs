@@ -18,7 +18,7 @@ Follow these steps to embed a programmatically created multi-tab dashboard into 
 
     ```js
     <head> 
-        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v7.6.12/boldbi-embed.js"></script>
+        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v7.8.18/boldbi-embed.js"></script>
     </head>
     ```
 
@@ -30,7 +30,7 @@ Follow these steps to embed a programmatically created multi-tab dashboard into 
     </body>
     ```
 
-> **NOTE:** If you use hyphens in ID, your code may become more prone to errors and be harder to read while using Jquery. Instead, use underscores or camelCase if you are in control of the ID.
+    > **NOTE:** If you use hyphens in ID, your code may become more prone to errors and be harder to read while using Jquery. Instead, use underscores or camelCase if you are in control of the ID.
 
 3. In the body tag, you need to add the function to create a BoldBI instance with the following properties and call that function in the body using the `onload` attribute. Also, call the [loadMultitabDashboard()](/embedding-options/embedding-sdk/embedding-api-reference/methods/#loadmultitabdashboard) function.
 
@@ -127,7 +127,6 @@ Follow these steps to embed a programmatically created multi-tab dashboard into 
     </tbody>
     </table>
 
-
 5. Copy the previous embedSample() function and paste in your page. You need to update your values to the properties.  
 
 > **NOTE:**  embedContainerId should be same as your div element id value.
@@ -141,12 +140,12 @@ Follow these steps to embed a programmatically created multi-tab dashboard into 
 </tr></thead>
 <tbody>        
 <tr>            
-<td><code>v7.6.12(latest)</code></td>            
+<td><code>v7.8.18(latest)</code></td>            
 <td><code>
 
 ```js
 <head> 
-    <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v7.6.12/boldbi-embed.js"></script>
+    <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v7.8.18/boldbi-embed.js"></script>
 </head>
 ```
 
@@ -182,8 +181,6 @@ Follow these steps to embed a programmatically created multi-tab dashboard into 
 </tr>
 </tbody>
 </table>
-
-> **NOTE:**  For Bold BI **v5.2.48** or lower version, you must have add the following dependent scripts and also refer the below **Embed SDK URL** of respective Bold BI version.<br />
 
 ## How to implement the authorize server with user mail or user name
 

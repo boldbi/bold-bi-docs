@@ -16,7 +16,7 @@ Follow these steps to embed a pinboard in your application.
 
     ```js
     <head> 
-        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v7.6.12/boldbi-embed.js"></script>
+        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v7.8.18/boldbi-embed.js"></script>
     </head>
     ```
 
@@ -145,12 +145,12 @@ Follow these steps to embed a pinboard in your application.
 </code></td>
 </tr>
 <tr>            
-<td><code>v7.6.12(latest)</code></td>            
+<td><code>v7.8.18(latest)</code></td>            
 <td><code>
 
 ```js
 <head> 
-    <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v7.6.12/boldbi-embed.js"></script>
+    <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v7.8.18/boldbi-embed.js"></script>
 </head>
 ```
 

@@ -10,12 +10,12 @@ documentation: ug
 # Zendesk Chat:
 
 ## Grab Subdomain:
-Log into Zendesk to find your subdomain in the URL. For example, for https://www.yourhub.zendesk.com, the subdomain is ``yourhub``.
+Log into Zendesk to find your subdomain in the URL. For example, for ``www.yourhub.zendesk.com``, the subdomain is `yourhub`.
 
 ## Grab Zendesk Chat OAuth token:
 1. Access Zendesk Chat directly or through the top right "Chat" option in Zendesk product.
 2. Navigate to "Settings" > "Account" > "API" > "Add API client".
-3. Fill in client name, company, and redirect URLs (default: [http://localhost:8080](http://localhost:8080)).
+3. Fill in client name, company, and redirect URLs (default: ``localhost:8080``).
 4. Record the "CLIENT_ID" and "SUBDOMAIN".
 5. Format the following URL with your own CLIENT_ID and SUBDOMAIN, paste it into a new browser tab, and press Enter.
 6. The call will be made, possibly asking you to log in and select 'Allow' to generate the token.
@@ -34,7 +34,7 @@ Oauth_token: OAuth token
 
 ```
 **Metadata Properties:**
-This section defines the mode of data refresh. There are two modes: INCREMENTAL and ``FULL_TABLE``
+This section defines the mode of data refresh. There are two modes: INCREMENTAL and ``FULL_TABLE``. It only supports Date/DateTime datatype columns.
 
 
 <table>
@@ -55,7 +55,7 @@ metadata:
     replication_value: column value that data starts from
 ```
 </td>
-        <td>This mode fetches data from the date column mentioned in replication_key from the start date as mentioned in replication_value. Once it is scheduled, replication_value is updated automatically from the imported data.</td>
+        <td>This mode fetches data from the date column specified in the replication key starting from the date specified in the replication value. Once scheduled, the replication value is updated according to the interval_type and interval_value from the imported data. For example, if the interval_type is set to 'year' and the interval_value is set to '1', the first schedule will fetch records from January 1, 2000 to December 31, 2000. In the next schedule, it will fetch records from January 1, 2001 to December 31, 2001, and so on.</td>
     </tr>
     <tr>
         <td>FULL_TABLE</td>
@@ -72,12 +72,12 @@ metadata:
 
 ```
 </td>
-        <td>This mode fetches data from the date column mentioned in replication_key from the start date as mentioned in replication_value. Once it is scheduled, replication_value is updated automatically from the imported data.</td>
+        <td>This mode fetches data from the date column mentioned in the replication key from the start date as mentioned in the replication value. Once it is scheduled, the replication value is updated based on the interval_type and interval_value from the imported data. For ex  set interval_type as 'year' and intervalue value as '1'.In first schedule, will fetch the record from Jan 1, 2000 to Dec 31, 2000. In next schedule, will fetch the record from Jan 1, 2001 to Dec 31, 2001 and so on.</td>
     </tr>
 </table>
 
 ### Examples:
-### INCREMENTAL:
+#### INCREMENTAL:
 
 ```yaml
 version: 1
@@ -103,7 +103,7 @@ plugins:
           replication_value: '2023-07-19 00:00:00'
 ```
 
-### ``FULL_TABLE``:
+#### FULL_TABLE:
 ```yaml
 version: 1
 encrypt_credentials: false

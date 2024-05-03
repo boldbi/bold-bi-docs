@@ -19,7 +19,7 @@ In Bold BI, it's possible to download dashboards from tenants deployed on your s
 
     •   [Download dashboard via API](https://help.boldbi.com/server-api-reference/v4.0/api-reference/#operation/Dashboards_DownloadDashboard)
 
-Since Bold BI lacks native Git integration, you must rely on an external tool such as [VS Code](https://code.visualstudio.com/) to initialize your Git repository.
+As Bold BI does not have native Git integration, you will need to use an external tool like [VS Code](https://code.visualstudio.com/) to set up your Git repository.
 
 Follow these steps to save dashboard files in source control.
 
@@ -39,7 +39,7 @@ Follow these steps to save dashboard files in source control.
 
     ![tracked-changes-difference](/static/assets/faq/images/tracked-changes-difference.png)
 
-5.  By working with a local Git repository, you'll get immediate benefits such as:
+5.  By working with a local Git repository, you will receive immediate benefits such as:
 
     •	Backup and quick recovery of previous versions.
 

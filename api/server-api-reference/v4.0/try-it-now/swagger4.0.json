@@ -5988,7 +5988,7 @@
         },
         "Email": {
           "type": "string",
-          "description": "Email address of the user (Email required only in [Email required](/embedded-bi/site-administration/account-settings/#email-required) mode)"
+          "description": "Email address of the user (Email required only in [Email required](/site-administration/account-settings/#email-required) mode)"
         },
         "FirstName": {
           "type": "string",
@@ -6000,7 +6000,7 @@
         },
         "Password": {
           "type": "string",
-          "description": "Password of the user (Password accepted only in [Automatic activation](/embedded-bi/site-administration/account-settings/#automatic-activation) mode)"
+          "description": "Password of the user (Password accepted only in [Automatic activation](/site-administration/account-settings/#automatic-activation) mode)"
         }
       }
     },
@@ -7969,7 +7969,7 @@
         },
         "FilterParameter": {
           "type": "string",
-          "description": "Specify the filter parameter. \n\n**Note:**  To know more about supported operators and funtions in filter parameter, refer to [this](/embedded-bi/working-with-dashboards/preview-dashboard/urlparameters/#supported-operators/).",
+          "description": "Specify the filter parameter. \n\n**Note:**  To know more about supported operators and funtions in filter parameter, refer to [this](/working-with-dashboards/preview-dashboard/urlparameters/#supported-operators/).",
           "example": "Department= Cardiology & Year(Date)=2021"
         }
       }

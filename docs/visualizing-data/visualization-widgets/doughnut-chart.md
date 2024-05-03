@@ -10,17 +10,17 @@ documentation: ug
 
 # Doughnut Chart
 
-The Doughnut chart allows you to showcase the proportionality of each item to the total in the form of doughnut-slices. It works best to display data with a small number of categories.
+The Doughnut chart allows you to showcase the proportionality of each item to the total in the form of doughnut slices. It works best to display data with a small number of categories.
 
 ![Doughnut chart](/static/assets/visualizing-data/visualization-widgets/images/doughnut-chart/doughnutchart-column.png)
 
 ## How to configure table data in the Doughnut Chart
 
-The Doughnut chart needs a minimum of one value element and one column element to showcase. The `measure` or `expression` field that you want to analyze can be dropped into the Values block. The dimension for which you want to categorize the measure can be dropped into the Columns block. To categorize based on a series, drop the respective dimension into the `Rows block.`
+The Doughnut chart needs a minimum of one value element and one column element to showcase. The `measure` or `expression` field that you want to analyze can be dropped into the Values block. The dimension for which you want to categorize the measure can be dropped into the Columns block. To categorize based on a series, drop the respective dimension into the `Rows block`. 
 
-Follow the below steps to configure the data to the doughnut chart.
+Follow the steps below to configure the data for the doughnut chart:
 
-1. Drag and drop the Doughnut chart into the canvas and resize it to your required size.
+1. Drag and drop the Doughnut chart onto the canvas and resize it to your required size.
 
 ![Drag and drop](/static/assets/visualizing-data/visualization-widgets/images/doughnut-chart/add-doughnutchart.png)
 
@@ -40,7 +40,7 @@ Follow the below steps to configure the data to the doughnut chart.
 
 ![Connect button](/static/assets/visualizing-data/visualization-widgets/images/connectbutton.png)
 
-6. Drag your preferred table or view from the left pane from the data design view and click the **Save** button.
+6. Drag your preferred table or view from the left pane in the data design view and click the **Save** button.
 
 ![Virtual table](/static/assets/visualizing-data/visualization-widgets/images/virtualtable.png)
 
@@ -52,7 +52,7 @@ Follow the below steps to configure the data to the doughnut chart.
 
 ![Assign data](/static/assets/visualizing-data/visualization-widgets/images/doughnut-chart/assigndata.png)
 
-9.  The **ASSIGN DATA** tab will be opened with available measures and dimensions from the connected data source.
+9. The **ASSIGN DATA** tab will open with available measures and dimensions from the connected data source.
 
 ![Chart data](/static/assets/visualizing-data/visualization-widgets/images/doughnut-chart/chartdata.png)
 
@@ -64,7 +64,7 @@ You can add more than one measures section to the `Value(s)` field by dragging t
 
 ![Add data to value](/static/assets/visualizing-data/visualization-widgets/images/doughnut-chart/add-data.png)
 
-Now, the doughnut chart will be rendered as follows.
+The doughnut chart will be rendered as follows.
 
 ![Configured Doughnut chart](/static/assets/visualizing-data/visualization-widgets/images/doughnut-chart/configured-doughnutchart.png)
 
@@ -102,7 +102,7 @@ You can enable this option to get further details about the selected chart regio
 
 ![Selecting chart region](/static/assets/visualizing-data/visualization-widgets/images/doughnut-chart/select-region.png)
 
-> **NOTE:**  If you click No, a single value will be added to the Columns field.
+> **NOTE:**  If you click No, a single value will be added to the Columns field. 
 
 The drilled view of the selected chart region will be as follows.
 
@@ -134,15 +134,15 @@ The configured field names can be edited by using the `Rename` option provided i
 
 ## Hidden Column
 
-Hidden columns are useful in cases where we don't want the fields to take part in the visualization, but only to be used for [linking](#linking), [filtering](#filtering) and [view data](#view-data).  
+Hidden columns are useful in cases where we don’t want the fields to take part in the visualization, but only to be used for [linking](#linking), [filtering](#filtering) and [view data](#view-data).  
 
 ![Hidden column](/static/assets/visualizing-data/visualization-widgets/images/doughnut-chart/assign-data.png)
 
-We can configure both measure and dimension fields into the hidden column. For measure we will be having all the settings we have for the measure fields expect formatting and filtering. 
+We can configure both measure and dimension fields into the hidden column. For measure, we will have all the settings we have for the measure fields except formatting and filtering.
 
 ![Measure](/static/assets/visualizing-data/visualization-widgets/images/doughnut-chart/measure.png)
 
-In the case of dimension fields we will having the following options only. In Date fields we will having all available types except sorting, relative date filter, settings and filters.
+In the case of dimension fields, we will have the following options only. In Date fields, we will have all available types except sorting, relative date filter, settings, and filters.
 
 ![Dimension](/static/assets/visualizing-data/visualization-widgets/images/doughnut-chart/dimension.png)
 
@@ -150,9 +150,9 @@ In the case of dimension fields we will having the following options only. In D
 
 #### Linking
 
-The primary use case of the hidden columns is linking. On configuring hidden columns, we can see below that the fields configured in hidden columns are listed in the linking section.  On configuring the column in linking we can pass the corresponding column value in linking parameter.
+The primary use case of hidden columns is linking. On configuring hidden columns, we can see below that the fields configured in hidden columns are listed in the linking section. On configuring the column in linking, we can pass the corresponding column value in the linking parameter.
 
-**Measure Based Example:** If we wish to pass the number of Matches played as an URL parameter but do not want it to influence the visualization, we can configure the Matches in the hidden columns and incorporate them into the link.
+**Measure Based Example:** If we wish to pass the number of Matches played as a URL parameter but do not want it to influence the visualization, we can configure the Matches in the hidden columns and incorporate them into the link.
 
 ![Linking](/static/assets/visualizing-data/visualization-widgets/images/doughnut-chart/link-measure.png)
 
@@ -174,7 +174,7 @@ Now, we can see in the below image, the data is filtered based on the hidden col
 
 ![Filtering](/static/assets/visualizing-data/visualization-widgets/images/doughnut-chart/hidden-column-filter.png)
 
-For more details about filtering the widget data, refer to the [Filter Configuration documentation](/working-with-dashboards/configuring-dashboard-filters/)
+For more details about filtering the widget data, refer to the [Cross Filter Configuration documentation](/working-with-dashboards/configuring-cross-filters/).
 
 #### View Data
 
@@ -182,7 +182,7 @@ You can view the data in the hidden columns in the underlying data view. This is
  
 ![View data](/static/assets/visualizing-data/visualization-widgets/images/doughnut-chart/viewdata.png)
 
-> **NOTE:** We don't recommend to configure lower hierarchy data in hidden columns as we can see in the info icon in `Hidden Column` section denotes the same. 
+> **NOTE:** We don’t recommend configuring lower hierarchy data in hidden columns as we can see in the info icon in the `Hidden Column` section denotes the same.
 
 ![Hidden Column ](/static/assets/visualizing-data/visualization-widgets/images/doughnut-chart/info-icon.png)
 
@@ -190,7 +190,7 @@ The below chart displays the goals by each team without hidden columns.
 
 ![Before](/static/assets/visualizing-data/visualization-widgets/images/doughnut-chart/before.png)
 
-If we configure lower hierarchy data(Player Name) in hidden columns compared to column and Row filed data, the data configured in the widgets gets duplicate, This affects the chart visualization as we can see in the below image.
+If we configure lower hierarchy data (Player Name) in hidden columns compared to column and Row filed data, the data configured in the widgets gets duplicate. This affects the chart visualization as we can see in the below image.
 
 ![After](/static/assets/visualizing-data/visualization-widgets/images/doughnut-chart/after.png)
 
@@ -200,7 +200,7 @@ You can drag and drop the `Dimension` field into the `Rows` field.
 
 ![Add data to row](/static/assets/visualizing-data/visualization-widgets/images/doughnut-chart/chart-row.png)
 
-You can apply [filter](/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column) and [sort](/visualizing-data/working-with-widgets/advanced-sorting/#dimension-column) options for the rows field, if required.
+You can apply [filter](/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column) and [sort](/visualizing-data/working-with-widgets/advanced-sorting/#dimension-column) options for the rows field if required.
 
 This will render a Doughnut chart in a series.
 
@@ -212,7 +212,7 @@ Scroll down to see all charts.
 
 You can format the Doughnut Chart for better illustration of the view by using the settings available in the Properties tab.
 
-To configure data in Doughnut Chart, follow these steps:
+To configure data in the Doughnut Chart, follow these steps:
 
 1. Drag and drop the Doughnut Chart into the canvas and resize it to your required size.
 
@@ -246,7 +246,7 @@ Allows you to set a `subtitle` for the Doughnut chart widget.
 
 #### Description
 
-Set a `description` for the Doughnut chart, whose visibility will be denoted by **i** icon, and hovering over it will display the description in a tooltip.
+Set a `description` for the Doughnut chart, whose visibility will be denoted by an icon, and hovering over it will display the description in a tooltip.
 
 ![Title](/static/assets/visualizing-data/visualization-widgets/images/doughnut-chart/Description.png)
 
@@ -276,7 +276,7 @@ Toggle the visibility of value labels.
 
 ![Show value labels](/static/assets/visualizing-data/visualization-widgets/images/doughnut-chart/value-labels.png)
 
-If you disable `Show Value Labels` properties, the dependent properties, which are **color**, **Value label position**, **Value label rotation** and **Value label suffix** will be hidden.
+If you disable the `Show Value Labels` properties, the dependent properties, which are **color**, **value label position**, **value label rotation**, and **value label suffix**, will be hidden.
 
 ![Show value label](/static/assets/visualizing-data/visualization-widgets/images/doughnut-chart/value-label.png)
 
@@ -356,7 +356,7 @@ By enabling the `Column Count,` you can set the column count.
 
 ![Doughnut Series Settings](/static/assets/visualizing-data/visualization-widgets/images/doughnut-chart/series-settingsfixed.png)
 
->**Note**: If the invalid columns and rows are given, the rows and columns reset to their default value. For example: If you are given the number of rows as 6 and the number of columns as 5 but your data count is only 20. In this case, the rows and columns will reset to their default value.
+>**Note**: If invalid columns and rows are given, the rows and columns reset to their default value. For example, if you are given the number of rows as 6 and the number of columns as 5 but your data count is only 20. In this case, the rows and columns will reset to their default value.
 
 ### Legend Settings
 
@@ -364,11 +364,11 @@ By enabling the `Column Count,` you can set the column count.
 
 #### Show legend
 
-A Legend is a text used to describe the plotted data. It allows you to toggle the visibility of the legend in the chart and change the legend text position (selecting through the combo box).
+A legend is a text used to describe the plotted data. It allows you to toggle the visibility of the legend in the chart and change the legend text position by selecting through the combo box.
 
 ![Show legend](/static/assets/visualizing-data/visualization-widgets/images/doughnut-chart/show-legend.png)
 
-Enabling the **Custom Legend Text** option will allow you to define a custom text (through the text area) to display for each legend series (selecting through the combo box) in the chart.
+Enabling the **Custom Legend Text** option will allow you to define custom text through the text area to display for each legend series by selecting through the combo box in the chart.
 
 #### Legend Interactivity
 
@@ -377,7 +377,7 @@ The chart `legend interactivity` option allows you to control the behavior of th
 Disabling the Interactivity feature in the Legend Settings category does not allow you to click on the legends.
 
 ![Legend Interactivity Disable](/static/assets/visualizing-data/visualization-widgets/images/doughnut-chart/legend-interactivity-disable.png)
-Enabling the Interactivity feature in the Legend Settings category allows you to click on the legends
+Enabling the interactivity feature in the Legend Settings category allows you to click on the legends.
 
 ![Legend Interactivity Enable](/static/assets/visualizing-data/visualization-widgets/images/doughnut-chart/legend-interactivity-enable.png)
 
@@ -391,7 +391,7 @@ This allows you to change the chart legend title and label colors.
 
 #### Customize
 
-You can customize the legend text through the Custom Legend Settings dialog. This dialog will show the legend text list as labels at left and corresponding text area at right to add the formatted text to display instead.
+You can customize the legend text through the Custom Legend Settings dialog. This dialog will show the legend text list as labels on the left and corresponding text area on the right to add the formatted text to display instead.
 
 ![Legend customization](/static/assets/visualizing-data/visualization-widgets/images/doughnut-chart/legend-custom.png)
 
@@ -401,13 +401,13 @@ You can customize the legend text through the Custom Legend Settings dialog. Thi
 
 ### Position
 
-You can able to change the position for the legend at `Top, Left, Right,` and `Bottom.`
+You can change the position for the legend to `Top, Left, Right,` and `Bottom.`
 
 ![Legend position](/static/assets/visualizing-data/visualization-widgets/images/doughnut-chart/legend-position.png)
 
 #### Legend Item as Dropdown
 
-Legends can be displayed as a dropdown menu when the legend position is set to "dropdown." When you hover over a chart, a legend icon appears. Clicking on this icon will bring up a legend dropdown. This feature allows you to toggle the visibility of the legend in the chart.
+Legends can be displayed as a dropdown menu when the legend position is set to `dropdown`. When you hover over a chart, a legend icon appears. Clicking on this icon will bring up a legend dropdown. This feature allows you to toggle the visibility of the legend in the chart.
 
 This option will hide the legends in the chart area, resulting in increased chart space and enhanced visibility.
  
@@ -459,7 +459,7 @@ This option allows you to trim the legend items if its legend exceeds the 'Text 
 
 **Wrap**
 
-This option allows you to wrap legend items based on the 'Text Width' value.
+This option allows you to trim the legend items if its legend exceeds the `Text Width` value.
 
 ![Legend Overflow Wrap Option in chart](/static/assets/visualizing-data/visualization-widgets/images/doughnut-chart/legend-text-overflow-wrap-option.png)
 
@@ -467,13 +467,13 @@ This option allows you to wrap legend items based on the 'Text Width' value.
 
 #### Text Width
 
-This option allows you to set the maximum width for the Legend Items and it is applicable only if text-overflow is set as Trim or Wrap.
+This option allows you to set the maximum width for the Legend Items and is applicable only if text-overflow is set as Trim or Wrap.
 
 ![Legend Text Width Option in chart](/static/assets/visualizing-data/visualization-widgets/images/doughnut-chart/legend-text-overflow-width-option.png)
 
 ![Legend Text Width in chart](/static/assets/visualizing-data/visualization-widgets/images/doughnut-chart/legend-text-overflow-width.png)
 
-If you uncheck the `Show Legend` property in the property panel, the dependent properties **Legend color**, **Legend position**, **customization button** and **Legend title** are also hidden.
+If you uncheck the `Show Legend` property in the property panel, the dependent properties **Legend color**, **Legend position**, **customization button**, and **Legend title** are also hidden.
 
 ### Filter
 
@@ -481,7 +481,7 @@ If you uncheck the `Show Legend` property in the property panel, the dependent p
 
 #### Act as Master Widget
 
-It defines the Doughnut chart widget as a master widget such that its filter action will be shown in other widgets of the dashboard.
+It defines the Doughnut chart widget as a master widget so that its filter action will be shown in other widgets of the dashboard.
 
 #### Ignore filter actions
 
@@ -489,9 +489,9 @@ It defines the Doughnut chart widget to ignore the filter actions applied to oth
 
 #### Hierarchical Filter
 
-Through this option, you can enable or disable hierarchical `Top N` filtering. While applying the `Top N` filter with multiple dimension columns, the data returned can be customized based on whether the filtering needs to be done as flat or based on the hierarchy of added dimension columns.
+Through this option, you can enable or disable hierarchical `Top N` filtering. When applying the `Top N` filter with multiple dimension columns, the data returned can be customized based on whether the filtering needs to be done as flat or based on the hierarchy of added dimension columns. 
 
-When the Hierarchical Filter option is enabled, the `Top N` will be applied for each individual column separately based on the number set for each column.
+When the Hierarchical Filter option is enabled, the` Top N` will be applied for each individual column separately based on the number set for each column.
 
 ### Link
 
@@ -501,13 +501,13 @@ You can enable linking and configure navigating to a general URL with or without
 
 ### Series palette
 
-By toggling the `series palette,` you can customize the proportion series segments’ colors.
+By toggling the `series palette`, you can customize the colors of the proportion series segments.
 
 ![Series palette](/static/assets/visualizing-data/visualization-widgets/images/doughnut-chart/seriespalette.png)
 
 ### Font settings
 
-This section allows you to customize font size of chart elements.
+This section allows you to customize the font size of chart elements.
 
 ![Font settings](/static/assets/visualizing-data/visualization-widgets/images/doughnut-chart/font-settings.png)
 
@@ -517,7 +517,7 @@ This section allows you to customize font size of chart elements.
 
 #### Color Mapping Type
 
-Using the Color Mapping type, you can apply the colors to the series either based on data or index.
+Using the Color Mapping type, you can apply colors to the series either based on data or index.
 
 ![Color Mapping Type option](/static/assets/visualizing-data/visualization-widgets/images/doughnut-chart/column-chart-formatting-color-mapping-type-options.png)
 
@@ -527,11 +527,10 @@ It allows you to apply color for chart series based on data. If you want to appl
 
 ![Color Mapping Type Data](/static/assets/visualizing-data/visualization-widgets/images/doughnut-chart/column-chart-individual-mode.png)
 
-> **IMPORTANT:**  Only top 100 records will be listed in the 
-dialog. 
+> **IMPORTANT:**  Only top 100 records will be listed in the dialog. 
 ***Index***
 
-It allows you to apply color for chart series based on `Index`. Such that the colors are maintained based on index even if data is changed. It shows only 15 different colors. After that, the color will be repeated from above colors.
+It allows you to apply color for chart series based on `Index`. Such that the colors are maintained based on the index even if the data is changed. It shows only 15 different colors. After that, the color will be repeated from above colors.
 
 For example, If you are displaying the countries based on the increasing order of the case count, then the index-based color mapping will be useful to set the colors based on the rank. Say red color to the top, then the red color will be maintained for the country having the largest case count.
 
@@ -549,7 +548,7 @@ For example, If you are displaying the countries based on the increasing order o
 
 This option shows when you add more than one measure field to the Value(s).
 
-By toggle off the `Use Default Palette,` you can customize the proportion series segments' colors by clicking the colored squares.
+By toggling off the `Use Default Palette`, you can customize the colors of the proportion series segments by clicking the colored squares.
 
 ![Series color palette window](/static/assets/visualizing-data/visualization-widgets/images/doughnut-chart/series-color-palette-window.png)
 
@@ -559,7 +558,7 @@ By toggle off the `Use Default Palette,` you can customize the proportion series
 
 ### Title Alignment
 
-This allows you to handle the alignment of widget title to either **left, center, or right**.
+This allows you to handle the alignment of the widget title to either **left, center, or right**.
 
 ### Title Color
 
@@ -571,7 +570,7 @@ On enabling Auto Font Size, the font size of the title will be adjusted automati
 
 **Font Size**
 
-This allows you to apply the specified size of the font to the widget title if the **Title Auto Font Size** is disabled. Value can be between 10 and 44.
+This allows you to apply the specified size of the font to the widget title if the `Subtitle Auto Font Size` is disabled. The value can be between 10 and 32.
 
 ### Subtitle Auto Font Size
 
@@ -587,7 +586,7 @@ On enabling Auto Padding, the padding of the widget container will be adjusted a
 
 **Padding**
 
-This allows you to customize the padding of the widget container if the **Auto Padding** is disabled. Value can be between 0 and 25.
+This allows you to customize the padding of the widget container if the **Auto Padding** is disabled. The value can be between 0 and 25.
 
 ### Show Border
 
@@ -595,19 +594,19 @@ This allows you to toggle the visibility of the `border` surrounding the widget.
 
 ### Corner Radius
 
-This allows you to apply the specified `radius` to the widget corners if the **Show Border** is enabled. Value can be between 0 and 10.
+This allows you to apply the specified `radius` to the widget corners if the **Show Border** is enabled. The value can be between 0 and 10.
 
 ### Show Background Image
 
-This allow you to set the **background image** for the spline area chart widget.
+This allows you to set the **background image** for the spline area chart widget.
 
 ### Background Color
 
-This allows you to set the **background color** to the spline area chart widget.
+This allows you to set the **background color** of the spline area chart widget.
 
 ### Transparency
 
-This property allows you to specifies the **transparency** for the `background color`.
+This property allows you to specify the **transparency** for the `background color`.
 
 ### Show Shadow
 

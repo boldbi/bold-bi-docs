@@ -10,13 +10,13 @@ documentation: ug
 
 # Period Over Period(PoP)
 
-Period over Period support used to compare measure values for one period of time against the results from a previous or subsequent period of time. The PoP widget used to choose two different time periods at a time.
+Period over Period support is used to compare measure values for one period of time against the results from a previous or subsequent period of time. The PoP widget is used to choose two different time periods at a time.
 
 ![period over period](/static/assets/visualizing-data/visualization-widgets/images/pop/pop.png)
 
 ## How to configure table data to Period over Period?
 
-1.  Drag and drop the `Period Over Period` from the toolbox at left into the design canvas and resize it to your required size.
+1.  Drag and drop the `Period Over Period` from the toolbox on the left into the design canvas and resize it to your required size.
 
 ![dragging period over period into canvas](/static/assets/visualizing-data/visualization-widgets/images/pop/pop-draganddrop.png)
 
@@ -28,25 +28,25 @@ Period over Period support used to compare measure values for one period of time
 
 ![create new button](/static/assets/visualizing-data/visualization-widgets/images/datasourcebutton.png)
 
-4.  In the connection type panel, click any one (Here, the `Microsoft Excel` Connection type is selected for demonstration) of the listed connection type button shown.
+4.  In the connection type panel, click on any one of the listed connection type buttons (For demonstration purposes, the `Microsoft Excel` Connection type is selected).
 
 ![data source list](/static/assets/visualizing-data/visualization-widgets/images/datasourcelist.png)
 
-5.  In the `NEW DATA SOURCE` configuration panel, fill the connection type and related details. Click the `Connect` button.
+5.  In the `NEW DATA SOURCE` configuration panel, fill in the connection type and related details. Click the `Connect` button.
 
 ![data source page](/static/assets/visualizing-data/visualization-widgets/images/connectbutton.png)
 
-6.  Drag your preferred table or view from the left pane from the data design view, click the `Save` button.
+6.  Drag your preferred table or view from the left pane in the data design view and click the `Save` button.
 
 ![table dragged into table canvas](/static/assets/visualizing-data/visualization-widgets/images/virtualtable.png)
 
-7.  Click the `Properties` button in the configuration panel, property panel opens. Now, switch to the `ASSIGN DATA` tab.
+7.  Click the `Properties` button in the configuration panel to open the property panel. Switch to the `ASSIGN DATA` tab.
 
 ![highlights widgets configuration button](/static/assets/visualizing-data/visualization-widgets/images/designerpropertiesbutton.png)
 
 ![period over period assign data tab](/static/assets/visualizing-data/visualization-widgets/images/pop/pop-assigndata.png)
 
-8.  The data tab will be opened with available measures and dimensions from the connected data source.
+8.  The data tab will open with available measures and dimensions from the connected data source.
 
 ![assigning fields to period over period](/static/assets/visualizing-data/visualization-widgets/images/pop/fieldlists.png)
 
@@ -55,33 +55,33 @@ Period over Period support used to compare measure values for one period of time
 ![dragging fields to configure data for period over period](/static/assets/visualizing-data/visualization-widgets/images/pop/configure-widget.png)
 
 ### Binding Fields
-On binding field to the PoP widget, default date ranges calculated based on the bounded field and set as a selected filter.
+When binding a field to the PoP widget, default date ranges are calculated based on the bound field and set as a selected filter.
 
 ![default date range for period over period](/static/assets/visualizing-data/visualization-widgets/images/pop/pop-defaultdaterange-denote.png)
 
-By default, the PoP widget is rendered with a default filter value that cannot be discarded. We only allow for resetting the filters to default if changes have been made. The default date range is calculated based on the span of days between the minimum and maximum dates of the bounded field.
+The PoP widget is initially rendered with a default filter value that cannot be removed. Filters can only be reset to default if changes have been made. The default date range is determined by the number of days between the minimum and maximum dates of the bound field.
 
-You can select the Relative/Custom date ranges using the `Relative Combobox` or `Calendars.` We can select any date ranges irrespective of the bounded field. That field is used to calculate the default date ranges and for filtering purposes.
+Users can select Relative/Custom date ranges using the `Relative Combobox` or `Calendars`, regardless of the bound field. The bound field is used for calculating default date ranges and for filtering purposes.
 
 ![popup dialog for period over period](/static/assets/visualizing-data/visualization-widgets/images/pop/pop-popup.png)
 
 
-The following relative items are displayed under the Date Range:
+Under the Date Range, the following relative items are displayed:
 
 ![date range relative items for period over period](/static/assets/visualizing-data/visualization-widgets/images/pop/pop-daterange-relativeitems.png)
 
-The following relative items are displayed under the Compare To:
+Under the Compare To, the following relative items are displayed:
 
 ![date range relative items for period over period](/static/assets/visualizing-data/visualization-widgets/images/pop/pop-customrange-relativeitems.png)  
 
-In both relative items Combobox, the `Custom` will be selected automatically if you choose custom range from calendar or enter custom range manually using the `Combobox` input section.
+In both relative items Combobox, the `Custom` option will be automatically selected if a custom range is chosen from the calendar or entered manually in the `Combobox` input section.
 
 > **IMPORTANT:**  
-* The PoP widget won't act as a slave for any widget. 
-* The PoP widget always has a default value selected in it. We can reset it, but we can't discard it's filter values. 
-* No widget is mapped as a slave by default to the PoP widget. We need to manually configure the required widgets as slaves. 
-* The widget acting as a slave for the PoP widget will display it’s virtual measure in view mode only. 
-* For now, PoP support is provided for the Chart widget(except Bubble Scatter, Combo and Radar Polar), Grid and KPI card only.
+> * The PoP widget does not function as a slave for any widget.
+> * The PoP widget always has a default value selected and filter values cannot be discarded.
+> * No widget is automatically mapped as a slave to the PoP widget; required widgets must be configured manually.
+> * Widgets acting as slaves for the PoP widget will only display their virtual measure in view mode.
+> * Currently, PoP support is available for the Chart widget (excluding Bubble Scatter, Combo, and Radar Polar), Grid, and KPI card.
 
 
 
@@ -106,29 +106,29 @@ Consider that you have configured the `Column Chart`, `Grid`, and `KPICard`. You
 
 ![Chart as slave widget in filter configuration](/static/assets/visualizing-data/visualization-widgets/images/pop/pop-slavewidget.png)
 
-Once you configured, the `Chart` color palette will be changed using the `PoP` selection colors (blue and green). The red information icon denotes that the chart virtual column value will not be displayed in the design mode.
+Upon configuration, the `Chart` color palette will change to the `PoP` selection colors (blue and green). The red information icon indicates that the chart virtual column value will not be displayed in design mode.
 
 ![chart color palette update for period over period](/static/assets/visualizing-data/visualization-widgets/images/pop/pop-chartcolors.png)
 
-Similarly, you can see an option to customize legend and palette for the virtual column which will be displayed in the Design, Preview/ View Mode.
+Options to customize legend and palette for the virtual column will be available in Design, Preview, and View modes.
 
 ![chart custom legend for period over period](/static/assets/visualizing-data/visualization-widgets/images/pop/pop-customlegend.png) 
 
-The formatting category in the property panel will be shown as below.
+The formatting category in the property panel will be displayed as shown below.
 
 ![chart color palette option for period over period](/static/assets/visualizing-data/visualization-widgets/images/pop/pop-colorpalette.png) 
 
-The stacked column chart will be displayed with the colors under the formatting category.
+The stacked column chart will display colors under the formatting category.
 
 ![chart color palette option for period over period](/static/assets/visualizing-data/visualization-widgets/images/pop/pop-colorpalettech.png) 
 
-During interaction from the PoP widget, the chart will display two series. One having values filtered from the `Date Range` and another one contains filtered values from the `Compare To`.
+During interaction with the PoP widget, the chart will display two series. One series will have values filtered from the `Date Range`, and the other will contain filtered values from the `Compare To`.
 
 ![period over period workflow](/static/assets/visualizing-data/visualization-widgets/images/pop/pop-workflow.png) 
 
 
 
-Please find the response of different type of charts as slave of PoP widget.
+Please find the response of different types of charts as slaves of the PoP widget:
 
 **Bar Chart**
 
@@ -176,11 +176,11 @@ Please find the response of different type of charts as slave of PoP widget.
 
 **KPI card**
 
-The `KPI Card` will be displayed with the following information. You can visualize its value in Preview, or View Mode.
+The `KPI Card` will be displayed with the following information. You can visualize its value in Preview or View Mode.
 
 ![KPI Card info update for period over period](/static/assets/visualizing-data/visualization-widgets/images/pop/pop-kpicard.png)
 
-During the interaction with the PoP widget, the KPI Card will display two values. One value is filtered from the `Date Range`, which is displayed as the `Actual Value`, while the other value contains the filtered value from `Compare To`, which is displayed as the `Target Value`.
+During interaction with the PoP widget, the KPI Card will display two values. One value is filtered from the `Date Range` and is displayed as the `Actual Value`, while the other value contains the filtered value from `Compare To` and is displayed as the `Target Value`.
 
 ![period over period kpicard workflow](/static/assets/visualizing-data/visualization-widgets/images/pop/pop-kpicardworkflow.png)
 
@@ -190,25 +190,25 @@ Consider that you have configured the `Proportional Chart` as a slave for the `P
 
 ![Proportion chart update in design mode](/static/assets/visualizing-data/visualization-widgets/images/pop/pop-proportionalchart.png)
 
-During the interaction of the PoP widget, the proportional chart will display two series. One series shows values filtered from the `Date Range`, while the other series contains filtered values from the `Compare To`.
+During interaction with the PoP widget, the proportional chart will display two series. One series shows values filtered from the `Date Range`, while the other series contains filtered values from the `Compare To`.
 
 ![Proportional chart as slave widget](/static/assets/visualizing-data/visualization-widgets/images/pop/pop-proportional.png)
 
 **Grid**
 
-During interaction with the PoP widget, the grid will display two series for each column which are a slave to the PoP. One has values filtered from the `Date Range`, while the other contains filtered values from `Compare To`.
+During interaction with the PoP widget, the grid will display two series for each column which are slaves to the PoP. One will have values filtered from the `Date Range`, while the other will contain filtered values from `Compare To`.
 
 ![period over period grid workflow](/static/assets/visualizing-data/visualization-widgets/images/pop/pop-gridworkflow.png)
 
-You can see a category to customize the POP settings and color palette for the grid which will be displayed in the Design, Preview or View Mode.
+You can see a category to customize the POP settings and color palette for the grid which will be displayed in Design, Preview, or View Mode.
 
 ![Grid pop settings update for period over period](/static/assets/visualizing-data/visualization-widgets/images/pop/pop-gridcolorpalette.png)
 
-You can customize each column to be displayed in the Design, Preview or View Mode using the `Customize` option. If you click on the `Customize` option, the following window will appear with a checkbox labeled `Act as Slave`. This helps us decide whether the column should act as a slave for the PoP or not.
+You can customize each column to be displayed in Design, Preview, or View Mode using the `Customize` option. If you click on the `Customize` option, a window will appear with a checkbox labeled `Act as Slave`. This helps us decide whether the column should act as a slave for the PoP or not.
 
 ![Grid pop settings update for period over period](/static/assets/visualizing-data/visualization-widgets/images/pop/pop-gridcustomize.png)
 
-Consider that you have configured two measure columns in the grid. For example, if you only want the `Freight` column to act as a slave for the PoP means, then uncheck the `Act as slave` checkbox for the `UnitsOnOrder` column and click `Ok` to update the changes.
+Consider that you have configured two measure columns in the grid. For example, if you only want the `Freight` column to act as a slave for the PoP, uncheck the `Act as slave` checkbox for the `UnitsOnOrder` column and click `Ok` to update the changes.
 
 ![Grid Act as Slave setting update ](/static/assets/visualizing-data/visualization-widgets/images/pop/Actasslave-setting.png)
 
@@ -250,7 +250,7 @@ Now, the grid will render as shown below with the KPI value.
 
 ## How to format Period Over Period?
 
-You can format the Period Over Period for better illustration of the view that you require, through the settings available in `Properties` tab.
+You can format the Period Over Period for better illustration of the view that you require, through the settings available in the `Properties` tab.
 
 ### General Settings
 
@@ -341,4 +341,4 @@ This option allows you to enable or disable the `widget title` of the Period ove
 
 #### Enable Comments
 
-This allows you to enable or disable `comment` for the dashboard widget. For more details, refer to this [link](/visualizing-data/working-with-widgets/commenting-widget/).
+This allows you to enable or disable `comments` for the dashboard widget. For more details, refer to this [link](/visualizing-data/working-with-widgets/commenting-widget/).

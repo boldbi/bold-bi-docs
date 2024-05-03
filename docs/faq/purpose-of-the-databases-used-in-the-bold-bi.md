@@ -22,16 +22,16 @@ documentation: ug
     <tr>
         <td align="left">Purpose</td>
         <td align="left">
-          This database stores the Bold BI sites, which you have created and the users you are adding in the Bold BI sites. This database needs to be setup only once during the application startup.
+          This database stores the Bold BI sites that you have created and the users you are adding to the Bold BI sites. It needs to be set up only once during the application startup.
         </td>
         <td align="left">
-            This is BI application database and it will store the below information.
+           This is a BI application database, and it will store the following information.
             <ul>
               <li>
                   Users and groups information.
               </li>
               <li>
-                  Resource like dashboard, data source, schedules etc.
+                  Resources such as dashboard, data source, schedules, etc.
               </li>
               <li>
                   Users and groups permission to access the resources.
@@ -40,9 +40,9 @@ documentation: ug
                   Authentication details, Email configuration, dashboard settings.
               </li>
             </ul>
-            <b>Note:</b> Each Bold BI site requires separate database.
+            <b>Note:</b> Each Bold BI site requires a separate database.
         </td>
-        <td align="left">This database needs to be set up only when you are targeting the data source, which is extract type like file data source, web API data source, etc.
+        <td align="left">This database needs to be set up only when you are targeting a data source, such as a file data source, web API data source, etc.
         </td>
     </tr>
     <tr>
@@ -53,15 +53,15 @@ documentation: ug
     </tr>
     <tr>
         <td align="left">Database Load</td>
-        <td align="left">Less load, since it is only used for site management and user login.
+        <td align="left">There is less load, as it is only used for site management and user login.
         </td>
-        <td align="left">Load based on traffic in the Bold BI site.
+        <td align="left">The load on the Bold BI site is based on traffic.
         </td>
-        <td align="left">The database will get loaded, if you use the extract type data source. The load to the database depends on data and traffic to the dashboard, which uses the extract type data source.</td>
+        <td align="left">The database will be loaded if you use the extract type data source. The loading of data into the database depends on the data and traffic to the dashboard, which utilizes the extract type data source.</td>
     </tr>
   </tbody>
 </table>
 
 ## Can we use same database for both configuration and extract data storage?
 
-Yes, you can use a single database for low traffic sites, which will be cost-effective. But you may face difficulties in scalability. So, it is recommended to use the single database for both Bold ID, site, and a separate database for data store.
+Yes, you can use a single database for low-traffic sites, which will be cost-effective. However, you may face difficulties in scalability. Therefore, it is recommended to use a single database for both Bold ID and the site, and a separate database for data store.

@@ -385,7 +385,7 @@
           },
           "UserName": {
             "type": "string",
-            "description": "Username of the database server.  <br /> <blockquote>Check the permission required for the database users [here](https://staginghelp.boldbi.com/embedded-bi/faq/what-are-the-database-permissions-required-to-set-up-bold-bi-embedded/)</blockquote>"
+            "description": "Username of the database server.  <br /> <blockquote>Check the permission required for the database users [here](/faq/what-are-the-database-permissions-required-to-set-up-bold-bi-embedded/)</blockquote>"
           },
           "Password": {
             "type": "string",
@@ -442,7 +442,7 @@
           },
           "UserName": {
             "type": "string",
-            "description": "Username of the database server.  <br /> <blockquote>Check the permission required for the database users [here](https://staginghelp.boldbi.com/embedded-bi/faq/what-are-the-database-permissions-required-to-set-up-bold-bi-embedded/)</blockquote>"
+            "description": "Username of the database server.  <br /> <blockquote>Check the permission required for the database users [here](/faq/what-are-the-database-permissions-required-to-set-up-bold-bi-embedded/)</blockquote>"
           },
           "Password": {
             "type": "string",

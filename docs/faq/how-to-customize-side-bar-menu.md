@@ -7,11 +7,11 @@ documentation: ug
 ---
 # How to customize side bar menu based on user permission
 
-This page describes how to customize side bar menu in the Bold BI application, based on user permission.
+This page describes how to customize the sidebar menu in the Bold BI application based on user permissions.
 
 ## Steps to customize side bar menu option based on user permission
 
-1. Set the `<IsUserBasedMenu>` as true in the config file, which is available in the following location.
+1. Set the `<IsUserBasedMenu>` to true in the config file, which is located in the following location.
    * For Windows - `C:\BoldServices\app_data\bi\configuration`
    * For Linux - `/var/www/bold-services/application/app_data/bi/configuration/`
 
@@ -21,22 +21,22 @@ This page describes how to customize side bar menu in the Bold BI application, b
 
    ![Restart IIS](/static/assets/faq/images/restart-bold-bi-in-iis.png)
 
-3. If the user does not have any kind of permission in the sense, the dashboards and pinboards options will be displayed.
+3. If the user does not have any kind of permission, the dashboards and pinboards options will be displayed.
 
    ![No Permission User Login](/static/assets/faq/images/no-permission-user-login.png)
 
-4. Hide the `Pinboards` option by setting the **ShowMenu** to **false** for the node **Pinboard** in the `custom_ui.json`, which will hide the Pinboard item for all users. Refer to this [section](/site-administration/user-interface-customization/) for customizing the `custom_ui.json` file.
+4. Hide the `Pinboards` option by setting the **ShowMenu** to **false** for the node **Pinboard** in the `custom_ui.json`. This will hide the Pinboard item for all users. Please refer to this [section](/site-administration/user-interface-customization/) for information on customizing the `custom_ui.json` file.
 
    ![Hide Pinboard](/static/assets/faq/images/pinboard-hide.png#max-width=30%)
 
    ![Hide Pinboard in Bold BI](/static/assets/faq/images/hide-pinboard-bold-bi.png)
 
-5. For example, if the user has any kind of permission in data sources in the sense, it will show data sources option.
+5. For example, if the user has any type of permission for data sources, it will display the option for data sources.
 
    ![Data source Permission User](/static/assets/faq/images/data-source-permission-login.png)
 
 ### Dashboard Dependent Menus:
 
-If the user has permission to **Create Dashboard**, its dependent menu options **Add Dashboard and Publish** will be shown. In contrast, if the user has any other dashboard-related permissions (like Read, (Read and Write), and (Read, Write, and Delete)), then both options will not be shown.
+If the user has permission to **create a dashboard**, the dependent menu options **Add Dashboard and Publish** will be shown. However, if the user has any other dashboard-related permissions (such as Read, Read and Write, or Read, Write, and Delete), then both options will not be shown.
 
    ![Dashboard Dependent Menus](/static/assets/faq/images/create-dashboard-permission-menu-items.png)

@@ -9,19 +9,19 @@ documentation: ug
 
 # Create, Configure and Format the Custom Widget
 
-The Bold BI custom widget allows you to add any user-defined widget, d3 controls, Syncfusion controls, or any Javascript-based controls in a dashboard, and it performs like the normal widget.
+The Bold BI custom widget allows you to add any user-defined widget, d3 controls, Syncfusion controls, or any Javascript-based controls in a dashboard, and it performs like a normal widget.
 
-> **NOTE:** This feature is available in On-Premises Deployment but not in Syncfusion Managed Cloud Server.
+> **NOTE:** This feature is available in On-Premises Deployment, but not in Syncfusion Managed Cloud Server.
 
 ## Prerequisites and knowledge required for development of the custom widget
 
-This section explains the mandatory requirements to develop the custom widget.
+This section explains the mandatory requirements for developing the custom widget.
 
 <table class="params">
 <thead>
 <tr>
 <td><b>Development Environment</b></td>
-<td>Bold BI Enterprise Edition and any web browser as mentioned in the <a href="/embedded-bi/setup/overview/#software-requirements">link</a><br/> </td>
+<td>Bold BI Enterprise Edition and any web browser as mentioned in the <a href="/deploying-bold-bi/overview/#software-requirements">link</a><br/> </td>
             
 </tr>
 <tr>
@@ -45,19 +45,15 @@ To Create a new custom widget, follow the steps below:
 
 ## Create a custom widget template
 
-BoldBI Custom Widget Utility (bicw.exe) is used to create the custom widget template 
-
-To create a new custom widget template, download the [Custom Widget Utility](https://files2.syncfusion.com/Installs/BoldBI/07-12-2023/Bicw+Utility.zip)
-
-Extract the zipped folder 
+The BoldBI Custom Widget Utility (bicw.exe) is used to create the custom widget template. To create a new custom widget template, download the [Custom Widget Utility](https://files2.syncfusion.com/Installs/BoldBI/07-12-2023/Bicw+Utility.zip) and extract the zipped folder.
 
   ![bicw.exe downloaded file location](/static/assets/visualizing-data/visualization-widgets/images/custom-widget/bicw_exefile.png)
 
-Click on bicw.exe file as shown in the snippet below:
+Please click on the bicw.exe file as shown in the snippet below:
 
   ![bicw.exe file](/static/assets/visualizing-data/visualization-widgets/images/custom-widget/create-new-custom-widget.png)
 
-Using the [create command](/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/create-new-custom-widget/#format) you can create the widget template in the specified path with the provided name.
+Using the [create command](/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/create-new-custom-widget/#format), you can create the widget template in the specified path with the provided name.
 
   ![create command](/static/assets/visualizing-data/visualization-widgets/images/custom-widget/create-command.png)
 
@@ -65,7 +61,7 @@ Using the [create command](/visualizing-data/visualization-widgets/custom-widget
 
 create c:\widgets\SunburstChart
 
-After the create command execution, you can see the widget named folder that is created as below:
+After executing the create command, you will see the widget named folder that is created as shown below:
 
   ![custom widget location](/static/assets/visualizing-data/visualization-widgets/images/custom-widget/custom-widget-template-sunburstchart.png)
 
@@ -76,7 +72,7 @@ You can configure the widget by using the manifest file.
 
 The manifest file is used to specify the widget’s configuration. This file will be available in the custom widgets root directory with the name `widgetconfig.json`.
 
-The custom widget can be configured using the following settings. Refer to the structure of `widgetconfig.json`
+The custom widget can be configured using the following settings. Please refer to the structure of `widgetconfig.json`:
 
   ```js
 
@@ -101,7 +97,7 @@ The custom widget can be configured using the following settings. Refer to the s
    }
 
   ```
-  > **NOTE:** In the above code, the guid must be unique. So, it should be updated whenever a new custom widget template is downloaded. For example **guid**: "74926583-8493-3333-6382-863428678492"
+  > **NOTE:** In the above code, the GUID must be unique. Therefore, it should be updated whenever a new custom widget template is downloaded. For example, **guid**: “74926583-8493-3333-6382-863428678492”.
    
    <table>
 <tbody>
@@ -257,11 +253,11 @@ dataFields:[
 
 ## Limitation
 
-  jQuery reference (`jquery-1.10.2.min.js`) will be added as a built-in reference for the custom widget so that you are not allowed to specify the jQuery files in dependencies.
+  The jQuery reference (`jquery-1.10.2.min.js`) will be included as a built-in reference for the custom widget, so you will not be able to specify the jQuery files in dependencies.
 
 ## Example 
 
-Below is an example code to configure the `widgetconfig.json` file for the Syncfusion SunburstChart Chart
+Below is an example code to configure the `widgetconfig.json` file for the Syncfusion SunburstChart Chart.
 
   ```js
   {
@@ -467,13 +463,13 @@ The source file is used to embed the user-defined widget within the dashboard. R
   ```
 ### Init method
 
- Once your widget is initialized through the init method, the update method will be called for widget updation like data update, widget resizing etc.
+ Once your widget is initialized through the init method, the update method will be called for widget updates such as data updates and resizing.
 
 ### Update method
 
- Once your widget is initialized through the init method, update method will called for widget updation like data update, widget resizing etc.
+ Once your widget is initialized through the init method, the update method will be called for widget updates such as data updates and widget resizing.
 
- The update method will be triggered for the below operations, so here we are performing the operations based on the update type(resize, refresh) by invoking the respective API of the widget.
+ The update method will be triggered for the following operations. Therefore, we perform these operations based on the update type (resize, refresh) by invoking the respective API of the widget.
 
    1) Resize
 
@@ -481,7 +477,7 @@ The source file is used to embed the user-defined widget within the dashboard. R
 
 ### Configuring the custom widget for interaction in the sourcefile
 
- The custom widget can take part in the filter interaction like built-in widgets. Use the following APIs to perform the communication between the widgets.
+ The custom widget can participate in filter interaction like built-in widgets. Use the following APIs to facilitate communication between the widgets.
 
 #### Format
 
@@ -520,7 +516,7 @@ Various conditions are available for the dimension column other than the DateTim
 
 #### Example
 
-The following code will filter the dimension value "India" and "China" in the other widgets
+The following code will filter the dimension values `India` and `China` in the other widgets.
 
 ```js
 
@@ -535,7 +531,7 @@ bbicustom.dashboard.filterData(that, selectedFilterInfos);
 
 ```
 
-> **NOTE:**  In the above code sample, pass the unique column name of a particular column from the variable `this.model.boundColumns` to filter the data in the other widgets. In this variable all the bounded or configured data fields will be available with their bounded value column name and unique column name.
+> **NOTE:**  In the above code sample, pass the unique column name of a particular column from the variable `this.model.boundColumns` to filter the data in the other widgets. In this variable, all the bounded or configured data fields will be available with their bound value column name and unique column name.
 
 Various conditions are available for the dimension column with the DateTime data type:
 
@@ -543,7 +539,7 @@ Various conditions are available for the dimension column with the DateTime data
 * **include**
 * **exclude**
 
-The following code is the example to filter the data of the specified date range in the other widgets:
+The following code is an example of filtering the data of the specified date range in the other widgets:
 
 ```js
 
@@ -560,7 +556,7 @@ bbicustom.dashboard.filterData(this, selectedFilterInfos);
 
 ### Measure type column
 
-To apply the filter based on the measure, the value type should be dimensionormeasure for the data field and the summary type of the measure should be set as none. Various condition types are available for the measure type column as follows:
+To apply the filter based on the measure, the value type should be 'dimensionormeasure' for the data field, and the summary type of the measure should be set as none. Various condition types are available for the measure type column, as follows:
 
  * **equals**
  * **notequals**
@@ -571,7 +567,7 @@ To apply the filter based on the measure, the value type should be dimensionorme
  * **isbetween**
  * **isnotbetween** 
 
-The following code is the example to filter the other widgets based on the measure value:
+The following code is an example to filter the other widgets based on the measure value:
 
 ```js
 
@@ -584,7 +580,7 @@ selectedFilterInfos.push(filterinfo);
 bbicustom.dashboard.filterData(this, selectedFilterInfos); 
 
 ```
-The following code is an example of how to filter the value between 10248 and 10251 in the other widgets.
+The following code is an example of how to filter the values between 10248 and 10251 in the other widgets.
 
 ```js
 
@@ -600,7 +596,7 @@ bbicustom.dashboard.filterData(this, selectedFilterInfos);
 
 ## Example
 
-Below is an example code to configure the `sourcefile.js` file for the Syncfusion SunburstChart Chart
+Below is an example code to configure the `sourcefile.js` file for the Syncfusion SunburstChart Chart.
 
   ```js
      bbicustom.dashboard.registerWidget({
@@ -916,12 +912,12 @@ The variables used in the code sample above are explained below:
 
 ## Converting the widget to a *.bicw file 
 
- After configuring the widget, you can pack the widget by using the custom widget utility.
+ After configuring the widget, you can pack it using the custom widget utility.
 
- To import the custom widget in the Bold Bi designer, you should pack the widget in the *.bicw format. Follow the steps below to convert the custom widget to the *.bicw file
+ To import the custom widget in the Bold BI designer, you need to pack the widget in the *.bicw format. Follow the steps below to convert the custom widget to the *.bicw file:
 
-   * Run the custom widget utility by following the steps mentioned below.  
-  * Now run the [pack command](#format) to convert  the widget to *.bicw file 
+  * Run the custom widget utility by following the steps provided. 
+  * Run the [pack command](#format) to convert the widget to a *.bicw file.
 
 ### Format
 
@@ -933,41 +929,41 @@ The variables used in the code sample above are explained below:
 
   ![Pack Command](/static/assets/visualizing-data/visualization-widgets/images/custom-widget/pack-command.png)
 
- The SunburstChart.bicw file will be created in the output folder as shown below:
+ The SunburstChart.bicw file will be created in the output folder.
 
   ![Sunburst bicw](/static/assets/visualizing-data/visualization-widgets/images/custom-widget/Sunburst.png)
 
 ## Publish Custom Widget
 
- To import the custom widgets click on the Settings icon in the Bold BI Server as shown in the below image:
+ To import the custom widgets, click on the Settings icon in the Bold BI Server, as shown in the image below:
 
   ![Dashboard Settings](/static/assets/visualizing-data/visualization-widgets/images/custom-widget/dashboard-settings.png#max-width=75%)
 
- Click on the "Widgets" tab as shown in the image below:
+ Click on the `Widgets` tab, as shown in the image below.
 
   ![Widgets Tab](/static/assets/visualizing-data/visualization-widgets/images/custom-widget/widgets-section.png)
 
- Click on "Add New Widget" as shown in the image below:
+ Click on `Add New Widget`, as shown in the image below.
 
   ![Add Custom widget button](/static/assets/visualizing-data/visualization-widgets/images/custom-widget/Add-custom-widget.png#max-width=75%)
 
- Browse the custom widget file location and select the custom widget(*.bicw) to be added to the designer.
+ Browse to the custom widget file location and select the custom widget (*.bicw) to be added to the designer.
 
    ![browse button](/static/assets/visualizing-data/visualization-widgets/images/custom-widget/Browse-widget.png)
 
- The custom widget file selected should be in "bicw" format. Refer to this [link](/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/create-new-custom-widget/#converting-the-widget-to-a-bicw-file) for converting to "bicw" format.
+ The custom widget file selected should be in `bicw` format. Refer to this [link](/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/create-new-custom-widget/#converting-the-widget-to-a-bicw-file) for converting to "bicw" format.
 
   ![bicw formatted file image](/static/assets/visualizing-data/visualization-widgets/images/custom-widget/bicw-format-widget.png)
 
   ![upload button](/static/assets/visualizing-data/visualization-widgets/images/custom-widget/upload-widget.png)
 
- Once the custom widget is uploaded, it will appear under the "Custom Widgets" category. 
+ Once the custom widget is uploaded, it will appear under the `Custom Widgets` category. 
 
- Now the custom widget will appear in the Bold BI Designer as shown in the image below:
+ Now the custom widget will appear in the Bold BI Designer, as shown in the image below.
 
   ![Custom widget in Designer Dashboard](/static/assets/visualizing-data/visualization-widgets/images/custom-widget/custom-widget-dashboard.png)
 
- **NOTE:** The custom widget will be published within the particular tenant alone.
+ > **NOTE:** The custom widget will be published within the particular tenant alone.
 
 
 

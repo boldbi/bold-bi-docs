@@ -36,13 +36,13 @@ Create a table-valued function in the `Microsoft SQL Server` before connecting t
 
 ## Executing the table-valued function in Bold BI
 
-1.	Refer to the [Connecting Bold BI to SQL data source](/working-with-data-sources/data-connectors/sql-data-source/#connecting-bold-bi-to-microsoft-sql-server-data-source) to successfully connect to it.
+1.	Refer to the instructions for  [Connecting Bold BI to SQL data source](/working-with-data-sources/data-connectors/sql-data-source/#connecting-bold-bi-to-microsoft-sql-server-data-source) in order to successfully establish the connection.
 
-2.	After connecting to the data source, [switch to the code view](/working-with-data-sources/data-connectors/sql-data-source/#switch-to-code-view) by enabling the slider option in the tools pane in the data design view, and you can find the query editor window in which you can execute the custom queries as follows.
+2.	After connecting to the data source, [switch to the code view](/working-with-data-sources/data-connectors/sql-data-source/#switch-to-code-view) by enabling the slider option in the tools pane in the data design view. You will then find the query editor window where you can execute custom queries.
 
 	![Code view mode](/static/assets/faq/images/tablevalued-code-view.png#max-width=100%)
 	
-3.	Here, you can enter the query to fetch the data from the `tableValuedReleases` table-valued function by passing the value for the `ReleaseId` parameter. After entering the query, click on the `Run` button to execute the query.
+3.	Here, you can enter the query to retrieve data from the `tableValuedReleases` table-valued function by providing the value for the `ReleaseId` parameter. Once you have entered the query, click on the `Run` button to execute it.
 
 	![Alter query](/static/assets/faq/images/table-valued-query.png#max-width=100%)
 	

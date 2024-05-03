@@ -20,37 +20,38 @@ This section explains the process of upgrading the Bold BI Linux package to the 
     |------------------------------------------------------|------------------------------------------------------|
     | `sudo apt-get install pv`                            | `sudo yum install pv`                                |
 
-2. Install the `python 3.9` or `later` by executing the following command:
+3. If you want to install the ETL application while upgrading the Bold BI, follow these steps. Otherwise, skip this step and proceed with step 4.
+    * Install the `python 3.9` or `later` by executing the following command:
 
-    | Ubuntu                                               | CentOS                                               |
-    |------------------------------------------------------|------------------------------------------------------|
-    | **Ubuntu Version:22.04** : `sudo apt-get install -y python3` <br> <br> **Ubuntu Version:20.04** :  `sudo apt update && sudo apt install wget software-properties-common && sudo add-apt-repository ppa:deadsnakes/ppa && sudo apt update && sudo apt install python3.9`                  | `sudo dnf groupinstall 'development tools' && sudo dnf install wget openssl-devel bzip2-devel libffi-devel && sudo curl https://www.python.org/ftp/python/3.9.2/Python-3.9.2.tgz -O && sudo tar -xvf Python-3.9.2.tgz && cd Python-3.9.2 && sudo ./configure --enable-optimizations && sudo make install`                           |
+        | Ubuntu                                               | CentOS                                               |
+        |------------------------------------------------------|------------------------------------------------------|
+        | **Ubuntu Version:22.04** : `sudo apt-get install -y python3` <br> <br> **Ubuntu Version:20.04** :  `sudo apt update && sudo apt install wget software-properties-common && sudo add-apt-repository ppa:deadsnakes/ppa && sudo apt update && sudo apt install python3.9`                  | `sudo dnf groupinstall 'development tools' && sudo dnf install wget openssl-devel bzip2-devel libffi-devel && sudo curl https://www.python.org/ftp/python/3.9.2/Python-3.9.2.tgz -O && sudo tar -xvf Python-3.9.2.tgz && cd Python-3.9.2 && sudo ./configure --enable-optimizations && sudo make install`                           |
 
-3. Install `python pip` and following pip packages by running the below command.
+    * Install `python pip` and following pip packages by running the below command.
 
-    | Ubuntu                                               | CentOS                                               |
-    |------------------------------------------------------|------------------------------------------------------|
-    | `sudo apt-get install python3-pip` <br> <br>  `sudo pip install duckdb===0.9.2 dlt===0.4.2 pymysql pyodbc pg8000 poetry pandas===2.0.0 "dlt[parquet]" "dlt[filesystem]` | `sudo yum -y install python3-pip` <br> <br> `python3.9 -m pip install duckdb===0.9.2 dlt===0.4.2 pymysql pyodbc pg8000 poetry pandas===2.0.0 "dlt[parquet]" "dlt[filesystem]"`                    |
-
-3. Download the latest Bold BI Linux package by running this command:
+        | Ubuntu                                               | CentOS                                               |
+        |------------------------------------------------------|------------------------------------------------------|
+        | `sudo apt-get install python3-pip` <br> <br>  `sudo pip install duckdb===0.9.2 dlt===0.4.2 pymysql pyodbc pg8000 poetry pandas===2.0.0 "dlt[parquet]" "dlt[filesystem]` | `sudo yum -y install python3-pip` <br> <br> `python3.9 -m pip install duckdb===0.9.2 dlt===0.4.2 pymysql pyodbc pg8000 poetry pandas===2.0.0 "dlt[parquet]" "dlt[filesystem]"`                    |
+        > Note: If ETL is already installed, there is no need to follow this step.
+4. Download the latest Bold BI Linux package by running this command:
 
     ~~~shell
     sudo wget {Bold BI Linux package link}
     ~~~
 
-4. Extract the zip file:
+5. Extract the zip file:
 
     ~~~shell
     sudo unzip {Bold BI Linux package zip file}
     ~~~ 
 
-5. Change the directory to `BoldBIEnterpriseEdition-Linux` by running this command:
+6. Change the directory to `BoldBIEnterpriseEdition-Linux` by running this command:
 
     ~~~shell
     cd BoldBIEnterpriseEdition-Linux
     ~~~ 
  
-6. Execute the following command to deploy Bold BI on your Linux machine:
+7. Execute the following command to deploy Bold BI on your Linux machine:
  
     ~~~shell
     sudo bash install-boldbi.sh -i {upgrade}

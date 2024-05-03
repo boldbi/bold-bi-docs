@@ -10,32 +10,32 @@ documentation: ug
 
 # What are Shared Tables
 
-Shared tables are used to join multiple data sources to form a single data source.
+Shared tables are used to combine multiple data sources into one data source.
 
-After merging the tables, you can perform operations like join, expressions, and more. To learn more, click this link. [link](/working-with-data-sources/data-modeling/joining-table/#adding-a-join-condition).
+Once the tables are merged, you can perform operations such as joins and expressions. To learn more, click on this [link](/working-with-data-sources/data-modeling/joining-table/#adding-a-join-condition).
 
 ## How does it work?
 
-While creating or editing an data source, under the tree view area where the schema and the tables are shown, an accordion will be shown with the name <b>Shared Tables</b>. On expanding this accordion **Only data sources of same mode** that are currently shared to the logged in user will be listed. Users can expand the data source and use the table in the data source.
+When creating or editing a data source, there will be an accordion called **Shared Tables** in the tree view area where the schema and tables are displayed. By expanding this accordion, **only data sources of the same mode** that are currently shared to the logged-in user will be shown. Users can expand the data source and utilize the tables within it.
 
-The changes made in the original data source from where the table originated will be reflected here. So, if users modify a column, data or drop the table, the current data source will also be affected.
+Any changes made to the original data source from which the table originated will be reflected here. So, if users modify a column, data, or drop the table, the current data source will also be affected.
 
-<b>Example:</b> The user can join Salesforce data with Google Analytics by same column field.
+<b>Example:</b> The user can join Salesforce data with Google Analytics using the same column field.
 
->**Note:** The shared tables feature is available only in the **All Extract** and **Web Live modes**   .
+>**Note:** The shared tables feature is only available in the **All Extract** and **Web Live modes**   .
 
 <b>Steps to Join tables:</b>
-1. To integrate two or more data sources, open Shared Tables.
+1. Open the Shared Tables feature to integrate two or more data sources.
 
    ![Expand SharedTables](/static/assets/working-with-datasource/images/SharedTables-expand.png)
 
-2. Then, select your shared data source table and perform drag-and-drop.
+2. Select the shared data source table and perform a drag and drop action.
 
    ![Add SharedTables](/static/assets/working-with-datasource/images/SharedTables-add.png)  
 
-3. The tables are merged based on your same column fields.
+3. The tables will be merged based on the same column fields.
 
    ![SharedTables](/static/assets/working-with-datasource/images/SharedTables-result.png)  
 
->**Note:** If you connect to WEB API live data source other web API live data sources will be listed in accordion. Similarly, for extract mode data sources all extract mode data sources will be listed.
+>**Note:** If you connect to a WEB API live data source, other web API live data sources will be listed in the accordion. Similarly, for extract mode data sources, all extract mode data sources will be listed.
 

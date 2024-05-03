@@ -1189,7 +1189,7 @@
       "properties": {
         "Email": {
           "type": "string",
-          "description": "Email address of the user (Email required only in [Email required](/embedded-bi/site-administration/account-settings/#email-required) mode)."
+          "description": "Email address of the user (Email required only in [Email required](/site-administration/account-settings/#email-required) mode)."
         },
         "FirstName": {
           "type": "string",
@@ -1201,7 +1201,7 @@
         },
         "Password": {
           "type": "string",
-          "description": "Password of the user (Password accepted only in [Automatic activation](/embedded-bi/site-administration/account-settings/#automatic-activation) mode).\n\n<B> **NOTE:** </B> If you are using a Syncfusion Managed Cloud Server, then the password field is not required to be used."
+          "description": "Password of the user (Password accepted only in [Automatic activation](/site-administration/account-settings/#automatic-activation) mode).\n\n<B> **NOTE:** </B> If you are using a Syncfusion Managed Cloud Server, then the password field is not required to be used."
         }
       }
     },

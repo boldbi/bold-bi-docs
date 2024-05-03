@@ -10,7 +10,7 @@ documentation: ug
 
 # Aggregating Value Columns Based on Type
 
-Each value column configured to widget can be aggregated individually based on the type you define. Following table illustrates the aggregation types and their use.
+Each value column configured for the widget can be aggregated individually based on the type you define. The following table illustrates the aggregation types and their respective uses.
 
 <table>
 <tr>

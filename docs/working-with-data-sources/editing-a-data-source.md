@@ -9,27 +9,27 @@ documentation: ug
 
 # Editing a Data Source
 
-You can edit a data source using the following steps:
+To edit a data source, follow these steps:
 
-1. Click `Data Source` button in the configuration panel.
+1. Click on the `Data Source` button in the configuration panel.
 
    ![Data button](/static/assets/working-with-datasource/images/databutton.png)  
 
-2. Select a data source listed in the data panel that you need to edit.
+2. Select the data source that you need to edit from the list in the data panel.
 
-3. Click the highlighted icon to edit the selected data source.
+3. Click on the highlighted icon to edit the selected data source.
 
    ![Edit data source icon](/static/assets/working-with-datasource/images/editdatasourceicon.png)
 
-   Now, the respective data source will be opened in the data design view to handle the modification.
+   The respective data source will now open in the data design view for modification.
 
    ![Edit data source](/static/assets/working-with-datasource/images/editthedatasource.png)
 
-4. After modification, click `Save` in the tools pane in data design view to    navigate to the dashboard design view as highlighted in the following image.
+4. After making the necessary changes, click on `Save` in the tools pane in the data design view. This will take you to the dashboard design view, as shown in the image.
 
    ![Data save button](/static/assets/working-with-datasource/images/finishbutton.png) 
 
  [Learn how to rename a data source](/working-with-data-sources/renaming-a-data-source/)
 
 ## Post your message
-If you are still not able to find the information that you are looking for in the self-help resources mentioned above then please <a href="https://www.boldbi.com/support" target="_blank">contact us</a> and send your requirements.
+If you are still unable to find the information you are looking for in the self-help resources mentioned above, please <a href="https://www.boldbi.com/support" target="_blank">contact us</a> and send us your requirements.

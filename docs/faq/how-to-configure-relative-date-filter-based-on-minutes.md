@@ -12,11 +12,11 @@ The [relative date filter](/visualizing-data/working-with-widgets/configuring-wi
 
    ![Relative date](/static/assets/faq/images/relative-date.png#max-width=100%)
 
-**Click** Relative Date filter option in the settings and edit the column function.
+**Click** on the Relative Date filter option in the settings and edit the column function.
 
    ![Relative date window](/static/assets/faq/images/relative-date-window.png#max-width=100%)
 
-This dialog allows you to configure filter for the date-time column.
+This dialog allows you to configure a filter for the date-time column.
 
 ## How to configure Relative date filter based on minutes
 

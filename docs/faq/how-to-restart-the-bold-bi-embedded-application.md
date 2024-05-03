@@ -6,7 +6,7 @@ platform: bold-bi
 documentation: ug
 ---
 # Restart Application
-Please refer to your hosting environment’s documentation for how to restart the Bold BI Embedded application.
+Please refer to the documentation of your hosting environment for instructions on how to restart the Bold BI Embedded application.
 
 * [Windows](/faq/how-to-restart-the-bold-bi-embedded-application/#windows)
 * [Linux](/faq/how-to-restart-the-bold-bi-embedded-application/#linux)
@@ -16,17 +16,17 @@ Please refer to your hosting environment’s documentation for how to restart th
 
 ## Windows
 
-1. Open the IIS Manager and use the site’s dropdown to find the Bold BI Embedded app. 
+1. Open the IIS Manager and use the site's dropdown to locate the Bold BI Embedded app. 
 ![IIS Manager](/static/assets/faq/images/iis-manager-site.png)
 
-2. In Manage Websites in the IIS Manager, you can stop and start the application.
+2. In the IIS Manager's Manage Websites section, you can stop and start the application.
 ![IIS Manager](/static/assets/faq/images/iis-manager-restart.png)  
 
-> **NOTE:** If the Bold BI Embedded and Bold Reports enterprise apps are installed with a common login, the site name will be `BoldAppsEnterpriseEdition`.
+> **NOTE:** If both the Bold BI Embedded and Bold Reports enterprise apps are installed using a common login, the site name will be `BoldAppsEnterpriseEdition`.
 
 ## Linux
   
-1. Please run the following command to restart all the Bold BI Embedded services.   
+1. Please run the following command to restart all of the Bold BI Embedded services.   
 ~~~
 sudo systemctl restart bold-*
 ~~~
@@ -56,7 +56,7 @@ sudo systemctl restart bold-bi-designer - BI designer service
 
 ## Kubernetes
 
-1. Please run the following command to restart all the Bold BI Embedded services.   
+1. Please run the following command to restart all of the Bold BI Embedded services.   
 ~~~
 kubectl rollout restart deploy -n {namespace}
 ~~~
@@ -87,15 +87,15 @@ kubectl rollout restart deploy/bi-dataservice-deployment -n {namespace} - BI des
 
 ## Docker
 
-1. Please run the following command to restart all the Bold BI Embedded services.  
+1. Please run the following command to restart all of the Bold BI Embedded services.  
 ~~~
 docker restart {container name}
 ~~~
 
 ## Azure App Service
 
-1. Go to the Azure Portal home page and choose `App Services`.
+1. Go to the Azure Portal home page and select `App Services`.
 ![App Service Home](/static/assets/faq/images/azure-app-home.png)
 
-2. Select the hosted Bold BI Embedded application and use `Restart` like in the following. 
+2. Select the hosted Bold BI Embedded application and use `Restart` as shown below. 
 ![App Service Restart](/static/assets/faq/images/azure-app-restart.png)

@@ -18,7 +18,7 @@ You can explore working with the dashboard in detail here:
 
 [Edit Dashboard](/working-with-dashboards/edit-existing-dashboard/)
 
-[Configuring Dashboard Filters](/working-with-dashboards/configuring-dashboard-filters/)
+[Configuring Cross Filters](/working-with-dashboards/configuring-cross-filters/)
 
 [Commenting Dashboard](/working-with-dashboards/commenting-dashboard/)
 

@@ -8,15 +8,15 @@ documentation: ug
 
 # Uses of Dashboard parameters
 
-The dashboard parameters can be used in the expression, stored procedures and custom query.
+Dashboard parameters can be utilized in expressions, stored procedures, and custom queries.
 
 ## Expression
 
-Select the parameter from the `Column Settings` or use the following syntax to create a [expression](/working-with-data-sources/data-modeling/configuring-expression-columns/) with dashboard parameter.
+Select the parameter from the `Column Settings` or use the following syntax to create an [expression](/working-with-data-sources/data-modeling/configuring-expression-columns/) with a dashboard parameter.
 
  Syntax: `@{{:ParameterName}}`
 
- For `range` type parameter, syntax should be provided as follows.
+ For a `range` type parameter, the syntax should be provided as follows:
 
  Syntax:`@{{:ParameterName.START}}` or `@{{:ParameterName.END}}`
 
@@ -26,7 +26,7 @@ Select the parameter from the `Column Settings` or use the following syntax to c
 
 ## Stored Procedure
 
-Choose the parameter option from the [stored procedure](/working-with-data-sources/connecting-to-stored-procedures/) parameter window. Available parameter will be listed in value drop-down box.
+Choose the parameter option from the [stored procedure](/working-with-data-sources/connecting-to-stored-procedures/) parameter window. Available parameters will be listed in the value drop-down box.
 
 ![Use dashboard parameter in stored procedure](/static/assets/working-with-datasource/dashboard-parameter/images/dashboard-parameter-in-SP.png)
 
@@ -42,11 +42,11 @@ You can use parameters in the `Data filter` to filter records. To configure the 
 
 Type `@` to list the available parameters. You can use it anywhere in the query editor window.
 
-Another way is, user can manually type the required parameter in code view using the syntax.
+Another way is, users can manually type the required parameter in code view using the syntax.
 
 Syntax: `@{{:ParameterName}}`
 
- For range type parameter, syntax should be provided as follows.
+ For range type parameter, the syntax should be provided as follows:
 
 Syntax: `@{{:ParameterName.START}}` or `@{{:ParameterName.END}}`
 
@@ -54,7 +54,7 @@ Syntax: `@{{:ParameterName.START}}` or `@{{:ParameterName.END}}`
 
 ## Conditions to use list-mode type with multiple selected values
 
-`Expression`: You can prefer the **‘CONCAT’** function.
+`Expression`: You can use the **CONCAT** function.
 
 Example: `CONCAT([Parameter1])`
 
@@ -92,13 +92,11 @@ Configure the following properties:
 
 ![Dynamic connection](/static/assets/working-with-datasource/dashboard-parameter/images/dynamicconnection.png)
 
-We have implemented IntelliSense support for dashboard parameter, allowing users to type '@' within the
-All SQL data source properties to display the dashboard parameter.
+We have implemented IntelliSense support for the dashboard parameter, allowing users to type '@' within the All SQL data source properties to display the dashboard parameter.
 
 ![Intellisense Support](/static/assets/working-with-datasource/dashboard-parameter/images/intellisense.png)
 
->**Note**
-dashboard parameter support is not available for connections using SSH or SSL modes.
+>**Note** Dashboard parameter support is not available for connections using SSH or SSL modes.
 
 ### WEB DataSources
 Configure the following properties:
@@ -127,14 +125,13 @@ Configure the following properties:
 
 ![WebCustom](/static/assets/working-with-datasource/dashboard-parameter/images/webds-dashboard-parameter.png#max-width=52%)
 
-We have implemented IntelliSense support for dashboard parameter, allowing users to type '@' within the
-web data source properties to display the dashboard parameter.
+We have implemented IntelliSense support for the dashboard parameter, allowing users to type `@` within the web data source properties to display the dashboard parameter.
 
 ![Intellisense Support](/static/assets/working-with-datasource/dashboard-parameter/images/webintellisense.png)
 
->**Note** dashboard parameter support has been incorporated for both internal and external site publishing of data sources. Additionally, we have enabled features for downloading and uploading.
+>**Note** Dashboard parameter support has been incorporated for both internal and external site publishing of data sources. Additionally, we have enabled features for downloading and uploading.
 
-When uploading a dashboard to a different site with a dashboard parameter, ensure that you Create the same dashboard parameter name and its corresponding value.
+When uploading a dashboard to a different site with a dashboard parameter, ensure that you create the same dashboard parameter name and its corresponding value.
 
 Use the following syntax for the dashboard parameter.
 

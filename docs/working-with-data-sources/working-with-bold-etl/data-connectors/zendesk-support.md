@@ -17,7 +17,7 @@ Zendesk support can be authenticated using one of the following three methods:
 3. Method 3 (subdomain + OAuth token)
 
 ## Grab Subdomain
-Log into Zendesk to find your subdomain in the URL. For example, for https://www.yourhub.zendesk.com, the subdomain is ``yourhub``.
+Log into Zendesk to find your subdomain in the URL. For example, for ``www.yourhub.zendesk.com``, the subdomain is ``yourhub``.
 
 ## Grab Zendesk Support API Token
 1. In Zendesk (top right), select Admin Center.
@@ -46,7 +46,7 @@ OAuth Token: OAuth token
 
 
 ## Metadata Properties
-In this section, the mode of data refresh is defined. There are two modes: INCREMENTAL and ``FULL_TABLE``.
+In this section, the mode of data refresh is defined. There are two modes: INCREMENTAL and ``FULL_TABLE``. It supports only Date/DateTime datatype column.
 
 <table>
     <tr>
@@ -83,12 +83,12 @@ metadata:
 
 ```
 </td>
-        <td>This mode will fetch data from date column mentioned replication key from the start date as mentioned in replication value. Once it is Scheduled,  replication_value updated automatically from the imported data.</td>
+        <td>TThis mode fetches data from the date column mentioned in the replication key from the start date as mentioned in the replication value. Once it is scheduled, the replication value is updated based on the interval_type and interval_value from the imported data. For ex  set interval_type as 'year' and intervalue value as '1'.In first schedule, will fetch the record from Jan 1, 2000 to Dec 31, 2000. In next schedule, will fetch the record from Jan 1, 2001 to Dec 31, 2001 and so on.</td>
     </tr>
 </table>
 
 ### Example
-### ``FULL_TABLE``
+#### FULL_TABLE
 
 ```yaml
 version: 1
@@ -121,7 +121,7 @@ plugins:
         interval_value: 6
 ```
 
-### INCREMENTAL
+#### INCREMENTAL
 
 ```yaml
 version: 1

@@ -8,7 +8,7 @@ documentation: ug
 
 # Custom Widget
 
-This section explains about how to add the user defined widgets in the dashboard in the release version of 5.2.48 or later
+This section explains how to add user-defined widgets to the dashboard in release version 5.2.48 or later.
 
 [Custom Widget Creation](/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/create-new-custom-widget/)
 
@@ -18,4 +18,4 @@ This section explains about how to add the user defined widgets in the dashboard
 
 [Debug Custom Widget](/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/debugging-custom-widget/)
 
-> **NOTE:** This feature is available in On-Premises Deployment but not in Syncfusion Managed Cloud Server.
+> **NOTE:** This feature is available in On-Premises Deployment, but not in Syncfusion Managed Cloud Server.

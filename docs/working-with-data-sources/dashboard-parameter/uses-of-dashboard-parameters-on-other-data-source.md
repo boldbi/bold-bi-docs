@@ -8,7 +8,7 @@ documentation: ug
 
 # Uses of Dashboard Parameter on other data source
 
-Users can use the parameter from the cross data source using the following syntax.
+Users can utilize the parameter from the cross data source by using the following syntax.
 
 Syntax: `@{{:DatasourceName.ParameterName}}`
 

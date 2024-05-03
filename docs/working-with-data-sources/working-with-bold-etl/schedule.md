@@ -19,9 +19,11 @@ Data refresh can be initiated on demand by selecting the **Run Now** option in t
 
 ![Source](/static/assets/working-with-etl/images/etl_s2.png)
 
+ **Note:** ``Run Now`` option only works if we save the ``Project`` in ``Load`` tab.
+
 ## Interval Schedule:
 
-Click Actions in the context menu of the Data sources grid and select the Schedule option.
+Click on Actions in the context menu of the Data sources grid and select the **Schedule** option.
 
 ![Source](/static/assets/working-with-etl/images/etl_s3.png)
 

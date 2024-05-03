@@ -11,7 +11,7 @@ documentation: ug
 
 ## Prerequisites
 
-You need the following prerequisites to Configure Bold BI with a reverse proxy server in the DMZ environment to the Linux server.
+You need the following prerequisites to configure Bold BI with a reverse proxy server in the DMZ environment for the Linux server.
 
 1. Linux server.
 
@@ -21,19 +21,19 @@ You need the following prerequisites to Configure Bold BI with a reverse proxy s
 
 
 ## Follow the given steps to configure the Bold BI with a reverse proxy server in the DMZ on a Linux server.
-1. You need to  [Install](/deploying-bold-bi/deploying-in-linux/installation-and-deployment/bold-bi-on-ubuntu/) the Bold BI in the Linux server and after finishing the [Application Setup](/application-startup/) create a [dashboard](/getting-started/creating-dashboard/).
+1. You need to  [Install](/deploying-bold-bi/deploying-in-linux/installation-and-deployment/bold-bi-on-ubuntu/) Bold BI on the Linux server. After finishing the [Application Setup](/application-startup/) create a [dashboard](/getting-started/creating-dashboard/).
 
 
-2. Need to proxy pass the Boldbi server to the reverse proxy server. Here you are considering the Nginx as a reverse proxy server. Follow the given steps to proxy pass the Bold BI to the Nginx server.
+2. You need to proxy pass the Bold BI server to the reverse proxy server. In this case, you are using Nginx as the reverse proxy server. Follow the provided steps to proxy pass Bold BI to the Nginx server.
    
     1. Install [Nginx](https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-centos-8).
 
-    2. Move to the **Nginx** install directory by running the following command.
+    2. Move to the **Nginx** installation directory by executing the following command.
         
         ~~~shell
         cd /etc/nginx
         ~~~ 
-    3. Edit the **Nginx** default sites-available file using the command shown.
+    3. Edit the **Nginx** default sites-available file using the command that is shown.
 
         ~~~shell
         sudo nano sites-available/default
@@ -53,27 +53,27 @@ You need the following prerequisites to Configure Bold BI with a reverse proxy s
         sudo nginx -t
         ~~~
 
-    6. Now, you can access the Bold BI using the reverse proxy IP inside the same network connection. 
+    6. Now, you can access Bold BI using the reverse proxy IP within the same network connection. 
 
 
-3. Follow the given steps to set the inbound rule for the reverse proxy IP in the Bold BI server machine. Here you are using Ubuntu as a server machine so set the inbound rule In that machine using UFW.
+3. Follow the provided steps to set the inbound rule for the reverse proxy IP on the Bold BI server machine. Since you are using Ubuntu as the server machine, set the inbound rule on that machine using UFW.
 
     1. You need to install **UFW** by running the below command.
         ~~~shell
         sudo apt install ufw
         ~~~ 
-    2. Run the below command to check **UFW** status. Initially, the output status shows inactive.
+    2. Run the command below to check the **UFW** status. Initially, the output status will show as inactive.
         ~~~shell
         sudo ufw status verbose
         ~~~ 
-    3. You can enable the UFW by running the below command.
+    3. You can enable the UFW by running the command below.
         ~~~shell
         sudo ufw enable
         ~~~
 
-        >  **NOTE:** By default, UFW will block all the incoming connections and allow all outbound connections. This means that anyone trying to access your server will not be able to connect unless you specifically open the port, while all applications and services running on your server will be able to access the outside world.
+        >  **NOTE:** By default, UFW will block all incoming connections and allow all outbound connections. This means that anyone attempting to access your server will not be able to connect unless you specifically open the port, while all applications and services running on your server will be able to access the outside world.
 
-    4. After enabling **UFW** You can’t access the server from anywhere, you need to set the inbound rule to access the Bold BI server only from the reverse proxy server by running the following commands.
+    4. After enabling **UFW**, you cannot access the server from anywhere. You need to set the inbound rule to access the Bold BI server only from the reverse proxy server by running the following commands.
         ~~~shell
         sudo ufw allow from {reverse proxy IP}
         
@@ -85,11 +85,11 @@ You need the following prerequisites to Configure Bold BI with a reverse proxy s
         After running the command, you can access the Linux Bold BI server only from the reverse proxy server IP.
 
 
-5. You need to embed the dashboards. Follow the given steps to run the embedded application in the react front-end machine.
+5. You need to embed the dashboards. Follow the given steps to run the embedded application on the React front-end machine.
 
     1. You can download the embedded sample [here](https://onpremise-demo.boldbi.com/getting-started/asp-net-core/sample.zip?_gl=1*6o0c72*_ga*NTYxNDY4NzE5LjE2NDczMjkxNDg.*_ga_SRXJZD7EME*MTY0NzM0MzA4OC4zLjAuMTY0NzM0MzA4OS4w).
 
-    2. Open the solution file in visual studio and you need to set the following properties in the `EmbedProperties.cs` file as follows.
+    2. Open the solution file in Visual Studio and then set the following properties in the `EmbedProperties.cs` file as instructed.
 
         ![set-embed-properties-vs](/static/assets/faq/images/set-embed-properties-vs.png)
 
@@ -115,15 +115,15 @@ You need the following prerequisites to Configure Bold BI with a reverse proxy s
             </tbody>
             </table>
     
-        FYI: Here our reverse proxy IP is 10.0.0.31 and the site name is site1.
+        FYI: Our reverse proxy IP is 10.0.0.31 and the site name is site1.
         
         ![set-embed-properties](/static/assets/faq/images/set-embed-properties.png)
 
-    3. You can get your [Embed Secret key](/site-administration/embed-settings/) from the administrator setting section.
+    3. You can obtain your [Embed Secret key](/site-administration/embed-settings/) from the administrator setting section.
 
-	4. Now, your application is ready to run, before running the application need to change the `applicationUrl` with your machine IP with the port number in the `lanchSetting.json` file as shown.
+	4. Now, your application is ready to run. Before running the application, you need to change the `applicationUrl` to your machine's IP address with the port number in the `launchSettings.json` file as shown.
 
-        FYI: Here our machine IP is 10.0.0.11:8082.
+       FYI: Our machine's IP address is 10.0.0.11 and the port number is 8082.
 
         ![change-applicationurl](/static/assets/faq/images/change-applicationurl.png)
 
@@ -131,7 +131,7 @@ You need the following prerequisites to Configure Bold BI with a reverse proxy s
 
         ![embed-application-output](/static/assets/faq/images/embed-application-output.png)
 
-         >**NOTE:** If you are facing the below issue while running the application with your machine IP, please open the command prompt in administered mode and run the given commands.
+         >**NOTE:** If you are facing the issue below while running the application with your machine's IP, please open the command prompt in administrator mode and run the provided commands.
 
         ![iis-express-error](/static/assets/faq/images/iis-express-error.png)
 
@@ -142,15 +142,15 @@ You need the following prerequisites to Configure Bold BI with a reverse proxy s
         ~~~
         
         
-6. You need to set the inbound rule for the react front end machine IP in the reverse proxy server by following the steps.
+6. You need to set the inbound rule for the React front-end machine IP in the reverse proxy server by following the steps.
 
-	1. Run the following command with the react front end machine IP.
+	1. Run the following command with the IP address of the react front end machine.
 
         ~~~shell
         sudo ufw allow from {react front end IP}
         ~~~
 
-    2. You can list the inbound rules, using the command shown as follows.
+    2. You can list the inbound rules by using the command shown below.
 
         ~~~shell
         sudo ufw status numbered
@@ -158,8 +158,8 @@ You need the following prerequisites to Configure Bold BI with a reverse proxy s
 
         ![add-inbound-rule](/static/assets/faq/images/add-inbound-rule.png)
 
-        > **NOTE:** Make sure the react front end machine IP only accesses the reverse proxy machine.
+        > **NOTE:** Ensure that the React front-end machine's IP only has access to the reverse proxy machine.
 
-    3. Finally, you can expose the react front-end server to the internet. In your case, you are exposing the private URL http://10.0.0.11:8082/ to Public URL http://182.72.161.150:58951/ as shown below.
+    3. Finally, you can expose the React front-end server to the internet. In this case, you are exposing the private URL http://10.0.0.11:8082/ to the public URL http://182.72.161.150:58951/ as shown below.
 
         ![expose-server-to-internet](/static/assets/faq/images/expose-server-to-internet.png)

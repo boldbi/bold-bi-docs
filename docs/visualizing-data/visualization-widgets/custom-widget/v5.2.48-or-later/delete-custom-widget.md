@@ -9,11 +9,11 @@ documentation: ug
 
 # Deleting the custom widget in designer
 
- To delete the custom widget click on the Settings icon in the Bold BI Server as shown in the image below:
+ To delete the custom widget in the designer, click on the Settings icon in the Bold BI Server as shown in the image below:
 
    ![Dashboard Settings](/static/assets/visualizing-data/visualization-widgets/images/custom-widget/dashboard-settings.png#max-width=75%)
 
- Click on the "Widgets" tab as shown in the image below:
+ Click on the `Widgets` tab as shown in the image below:
 
   ![Widgets Tab](/static/assets/visualizing-data/visualization-widgets/images/custom-widget/widgets-section.png)
  
@@ -21,4 +21,4 @@ documentation: ug
 
   ![Delete Icon](/static/assets/visualizing-data/visualization-widgets/images/custom-widget/delete-icon.png)
 
- > **NOTE:** The custom widget will be deleted only within the particular tenant alone. This feature is available in On-Premises Deployment but not in Syncfusion Managed Cloud Server.
+ > **NOTE:** The custom widget will only be deleted within the particular tenant. This feature is available in On-Premises Deployment but not in Syncfusion Managed Cloud Server.

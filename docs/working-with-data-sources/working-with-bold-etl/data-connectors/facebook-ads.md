@@ -16,7 +16,7 @@ Facebook Ads is the advertising platform that allows businesses and individuals 
 
 1. Ensure you have Ads Manager activated for your Facebook account.
 
-2. Locate your account ID, which is a lengthy number. You can find it by clicking on the Account Overview dropdown in Ads Manager or by checking the link address. For example, https://adsmanager.facebook.com/adsmanager/manage/accounts?act=10150974068878324.
+2. Locate your account ID, which is a lengthy number. You can find it by clicking on the Account Overview dropdown in Ads Manager or by checking the link address. For example, ``adsmanager.facebook.com/adsmanager/manage/accounts?act={accountId}``.
 
 3. Copy the account ID.
 

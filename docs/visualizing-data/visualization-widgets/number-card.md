@@ -11,9 +11,9 @@ documentation: ug
 
 # Configuring and formatting Number card with Bold BI
 
-The `Number Card` widget is a very useful widget that allows you to showcase a single value or a series of measure values to the users in the dashboard. The key metrics such as *total sales amount, number of page visits, current month goal*, etc, are generally displayed in the card widgets. 
+The `Number Card` widget is a very useful tool that allows users to showcase a single value or a series of measure values in a dashboard. Key metrics such as total sales amount, number of page visits, and current month goal are typically displayed in these card widgets.
 
-The visualization of the number card widget is customizable, and you can format the values displayed in the widget using the provided options.
+The visualization of the Number Card widget is customizable, allowing users to format the values displayed using the provided options.
 
 a)  Single Number Card widget.
 
@@ -25,49 +25,49 @@ b)	Series of Number Card widget.
 
 ## How to configure data into the Number Card widget
 
-To showcase a `Number Card`, a minimum requirement of one `measure` value is needed.
+To display a `Number Card`, at least one `measure` value is required.
 
-The following procedure illustrates data configuration of the card:
+Follow these steps to configure data for the card:
 
-1.	Drag the `Number Card` control icon from the tool box into the design panel. You can find the control in the tool box by search.
+1.	Drag the `Number Card` control icon from the toolbox into the design panel. The control can be found by searching in the toolbox.
 
 ![Drag and drop](/static/assets/visualizing-data/visualization-widgets/images/number-card/drop-widget.png)
 
-2.	Click `Data Sources` icon in the configuration panel.
+2.	Click on the `Data Sources` icon in the configuration panel.
 
 ![Data Source](/static/assets/visualizing-data/visualization-widgets/images/databutton.png)
 
-3.	Click `CREATE NEW` to launch a new connection from the connection-type panel.
+3.	Click on `CREATE NEW` to create a new connection from the connection-type panel.
 
 ![New data source](/static/assets/visualizing-data/visualization-widgets/images/datasourcebutton.png)
 
-4.	In the connection-type panel, click any one of the listed connection type buttons shown. Here, the `Microsoft Excel` connection type is selected for demonstration.
+4.	Choose a connection type from the options listed in the connection-type panel. For this example, the `Microsoft Excel` connection type is selected.
 
 ![Datasource list](/static/assets/visualizing-data/visualization-widgets/images/datasourcelist.png)
 
-5.	In the `NEW DATA SOURCE` configuration panel, enter the required details.
+5.	Enter the required details in the `NEW DATA SOURCE` configuration panel.
 
 ![Enter data source details](/static/assets/visualizing-data/visualization-widgets/images/connectbutton.png)
 
-6.	Click `Preview & Connect`. Now, the `Choose Table(s)` dialog will be shown.
+6.	Click `Preview & Connect`. The `Choose Table(s)` dialog will appear.
 
 ![Choose tables](/static/assets/visualizing-data/visualization-widgets/images/number-card/choose-tables.png)
 
-7.	After selecting the required tables, click `Connect`.
+7.	Select the desired tables and click `Connect`.
 
 ![Click connect](/static/assets/visualizing-data/visualization-widgets/images/number-card/connect-data-source.png)
 
-8.	Drag your preferred table from the left pane to the data design view and click `Save`.
+8.	Drag the preferred table from the left pane to the data design view and click `Save`.
 
 ![Save data source](/static/assets/visualizing-data/visualization-widgets/images/number-card/save-data-source.png)
 
-Now, the data source is successfully created.
+Your data source has now been successfully created.
 
-9.	Click the `Properties` icon in the configuration panel.
+9.	Click on the `Properties` icon in the configuration panel.
 
 ![Properties icon](/static/assets/visualizing-data/visualization-widgets/images/number-card/properties-icon.png)
 
-The properties panel of the widget will be displayed as shown in the following screenshot.
+The properties panel of the widget will appear as shown in the following screenshot.
 
 ![Properties pane](/static/assets/visualizing-data/visualization-widgets/images/number-card/properties-panel.png)
 
@@ -114,7 +114,7 @@ Now, the card will be rendered with the sparkline.
 
 ### Image
 
-The `Image` section allows you to configure the image data for each number card/records. The image data may be the direct URL for the records or contains the part of the URL. 
+The `Image` section allows you to configure the image data for each number card/records. The image data may be the direct URL for the records or contain part of the URL.
 
 #### Direct URL
 
@@ -142,9 +142,9 @@ Now, the widget will be rendered with image data.
 
 #### Partial Image data 
 
-If your data source contains the partial data of the URL, enter the URL text with the proper patterns.
+If your data source contains partial data of the URL, enter the URL text with the proper patterns.
 
-For example, consider the following data source. 
+For example, consider the following data source.
 
 ![Example data](/static/assets/visualizing-data/visualization-widgets/images/number-card/sample-image-data.png)
 
@@ -152,11 +152,11 @@ It contains the Players name and part of their image URL in the above columns.
 
 The full Image URL for `Cristiano Ronaldo` is `https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Cristiano_Ronaldo_2018.jpg/345px-Cristiano_Ronaldo_2018.jpg` and the Player Image Column contains the information `commons/thumb/8/8c/Cristiano_Ronaldo_2018.jpg/345px-Cristiano_Ronaldo_2018.jpg`. So, you should enter the URL as `https://upload.wikimedia.org/wikipedia/{0}`, where the *{0}* indicates the first field in the image section.
 
-> **NOTE:** - You can add any number of fields in the image section and need to append {0}, {1} for the 1st, 2nd fields configured in the image section. 
+> **NOTE:** - You can add any number of fields in the image section and need to append {0}, {1} for the 1st, 2nd fields configured in the image section.
 
 > **NOTE:** -  If more than one data is available in the record, the first record with the highest measure will be displayed in the Number Card widget.
 
-For example, if you try to show the Goals of each team and configure the player image in the image section. It will show top scorer image of each team as shown in the following screenshot. 
+For example, if you try to show the goals of each team and configure the player image in the image section, it will display the top scorer image of each team as shown in the following screenshot.
 
 *Configure Image Section*
 
@@ -170,13 +170,13 @@ For example, if you try to show the Goals of each team and configure the player 
 
 ![Series with image](/static/assets/visualizing-data/visualization-widgets/images/number-card/image-in-series.png)
 
-> **NOTE:**  The image will be hidden automatically, if the width of the number card is low. An information icon will display the message as highlighted in the following image.
+> **NOTE:**  The image will be hidden automatically if the width of the number card is low. An information icon will display the message as highlighted in the following image.
 
 ![Information icon](/static/assets/visualizing-data/visualization-widgets/images/number-card/info-icon.png)
 
 #### Background image
 
-Like the image option, you can also configure the `background image` of the Number Card.
+Similar to the image option, you can also configure the `background image` of the Number Card.
 
 ![Background image](/static/assets/visualizing-data/visualization-widgets/images/number-card/background-field.png)
 
@@ -190,7 +190,7 @@ To format the properties of the Number Card widget, switch to the `PROPERTIES` t
 
 ### General properties
 
-The following highlighted section in the image allows you to modify the widgets name, subtitle, and to add useful description.
+You can modify the widget's name, subtitle, and add a useful description in the highlighted section of the image.
 
 ![general properties](/static/assets/visualizing-data/visualization-widgets/images/number-card/general-properties.png)
 
@@ -204,27 +204,27 @@ The following screenshot shows the Number Card widget, after modifying the heade
 
 ### Show Tooltip
 
-This option allows you to toggle the visibility of tooltip in a card.
+This option allows you to toggle the visibility of the tooltip in a card.
 
 ![Header properties customized](/static/assets/visualizing-data/visualization-widgets/images/number-card/number-card-tooltip.png)
 
 ## How to apply conditional formatting in Number card
 
-By enabling the advanced settings in formatting , you can customize the color, styles, and highlighting of the data based on the conditional range values.
+By enabling the advanced settings in formatting, you can customize the color, styles, and highlighting of the data based on the conditional range values.
 
 ### How to enable advanced formatting
 
-In the properties pane, check the `Advanced Setting` check box provided under the `formatting` section. 
+In the properties pane, check the `Advanced Setting` checkbox provided under the `formatting` section. 
 
 ![Enable advance settings](/static/assets/visualizing-data/visualization-widgets/images/number-card/enable-advance-settings.png)
 
-This will open the `Conditional Formatting` dialog. 
+This will open the `Conditional Formatting` dialog.
 
 ![Conditional formatting](/static/assets/visualizing-data/visualization-widgets/images/number-card/conditional-formatting.png)
 
 #### Properties
 
-You can customize more than one property using the rule based conditional formatting. 
+You can customize more than one property using rule-based conditional formatting:
 
 - Title 
 - Background 
@@ -249,7 +249,7 @@ You can select the summary type for the selected measure field.
 
 #### Value type
 
-The value type drop-down allows you to choose whether you are going to apply the direct value (specific number like 3 goals, order ID 10248 ) or percentage (values above 30% or 50 %). 
+The value type drop-down allows you to choose whether you are going to apply the direct value (specific number like 3 goals, order ID 10248) or percentage (values above 30% or 50%).
 
 ![Value type](/static/assets/visualizing-data/visualization-widgets/images/number-card/value-type.png)
 
@@ -261,7 +261,7 @@ You can give a meaningful name to the applied conditions using the highlighted t
 
 #### Condition type
 
-Choose the condition for measure field from the highlighted conditions. 
+Choose the condition for the measure field from the highlighted conditions.
 
 ![Condition type](/static/assets/visualizing-data/visualization-widgets/images/number-card/condition-type.png)
 
@@ -277,13 +277,13 @@ Enter the condition value.
 
 #### Font style
 
-Allows you to choose the title font style. (Bold, Italic, Underline, and Superscript).
+Allows you to choose the title font style (bold, italic, underline, and superscript).
 
 #### Case sensitivity
 
-For the dimensions, case sensitive option is provided to choose whether the entered value is case sensitive or not. 
+For dimensions, the case-sensitive option is provided to choose whether the entered value is case-sensitive or not.
 
-Select the checkbox next to the options to customize the properties, and similarly click `Font Style` icons to apply them, as shown in the following screenshot.
+Select the checkbox next to the options to customize the properties, and click `Font Style` icons to apply them.
 
 ![Select properties](/static/assets/visualizing-data/visualization-widgets/images/number-card/customize-properties.png)
 
@@ -303,7 +303,7 @@ This option allows you to customize the alignment of the number card vertically.
 
 ### Auto font size
 
-By enabling Auto Font Size option, the font size will be adjusted automatically, if the resolution of the screen varies.
+By enabling the Auto Font Size option, the font size will be adjusted automatically if the resolution of the screen varies.
 
 ### Auto font size at 3840 x 2160
 
@@ -319,7 +319,7 @@ By enabling Auto Font Size option, the font size will be adjusted automatically,
 
 ### Scaling factor
 
-If the auto font size is enabled, scaling factor allows you to increase or decrease the font size.
+If the auto font size is enabled, the scaling factor allows you to increase or decrease the font size.
 
 #### Measure properties
 
@@ -327,7 +327,7 @@ If the auto font size is enabled, scaling factor allows you to increase or decre
 
 ### Show Measure
 
-You can also toggle the measure card visibility in the Number Card widget by using the Show Measure check box.
+You can toggle the measure card visibility in the Number Card widget by using the Show Measure checkbox.
 
 From the measure property section, you can customize the font size and color of the measure values displayed in the Number Card widget.
 
@@ -385,7 +385,7 @@ The following image shows the Number Card widget after unchecking the title valu
 
 ### Title for single card
 
-You can customize the font color and size of the title. You can also enable or disable the title and you can edit the title.
+You can customize the font color and size of the title. You can also enable or disable the title and edit the title.
 
 The following image shows the Number Card widget after modifying the color and font size of the title value.
 
@@ -395,21 +395,21 @@ The following image shows the Number Card widget after modifying the color and f
 
 ### Text Wrap
 
-This option allows you to wrap Card Title based on ‘Card size ’.This option will be enabled only for single card. It wraps title only, if the space is not enough to show title in single line. 
+This option allows you to wrap the Card Title based on `Card size`. This option will be enabled only for a single card. It wraps the title only if the space is not enough to show the title in a single line.
 
 ![Show Text Wrap title](/static/assets/visualizing-data/visualization-widgets/images/number-card/show-singlecard-title-text-wrap.png)
 
-If card height is not enough to wrap title further it will trim the title.
+If the card height is not enough to wrap the title further, it will trim the title.
 
 ![Show Text trim title](/static/assets/visualizing-data/visualization-widgets/images/number-card/show-singlecard-title-text-trim.png)
 
-If the title doesn't contains space between words, it will not wrap. 
+If the title doesn’t contain space between words, it will not wrap.
 
 ![Title without space](/static/assets/visualizing-data/visualization-widgets/images/number-card/show-singlecard-title-text-without-space.png)
 
 ### Auto Font Size
 
-On enabling this property, the font size of the number card title varies based on the screen resolution.
+By enabling this property, the font size of the number card title varies based on the screen resolution.
 
 Use Case: 
 
@@ -435,13 +435,13 @@ You can customize the font size of the number card title by unchecking `Auto Fon
 
 ### Series settings 
 
-Series settings enabled only when you configure the **series** in `Assigned Data` tab.
+Series settings are enabled only when you configure the **series** in the `Assigned Data` tab.
 
 ![Series Settings](/static/assets/visualizing-data/visualization-widgets/images/number-card/series.png)
 
 #### Fixed rows and columns
 
-If you enable the Fixed rows and columns, you can customize the rows and columns. The rows and columns are fixed based on the container size and the card size of the number card.
+If you enable Fixed rows and columns, you can customize the rows and columns. The rows and columns are fixed based on the container size and the card size of the number card.
 
 ### Row count
 
@@ -451,7 +451,7 @@ By enabling `row count`, you can set the row count.
 
 By enabling the `Column Count,` you can set the column count.
 
-> **Note**: If the invalid columns and rows are given , the rows and columns reset to its default value. For example : If you given the number of rows as 6 and number of columns as 5 but your data count is only 20 . In this case the rows and columns will reset to its default value.
+> **Note**: If invalid columns and rows are given, the rows and columns will reset to their default value. For example, if you set the number of rows as 6 and the number of columns as 5 but your data count is only 20, in this case, the rows and columns will reset to their default value.
 
 ### Animation settings
 
@@ -463,7 +463,7 @@ It animates the measure values when you enable the `Enable Animation`.
 
 ### Animation duration
 
-This animation-duration property specifies how long the animation cycle should last. And the time is specified in seconds or milliseconds.
+This animation-duration property specifies how long the animation cycle should last, and the time is specified in seconds or milliseconds.
 
 ### Image properties
 
@@ -475,7 +475,7 @@ If the Show Image check box is unchecked, then the image is not displayed in the
 
 #### Image Mode
 
-You can customize the image showcase style through the ode setting.
+You can customize the image showcase style through the mode setting.
 
 *Default*: The image will be displayed in its original size.
 
@@ -513,7 +513,7 @@ You can use the pattern as explained in the Image data section.
 
 #### Background Image 
 
-The background image properties are same as the Number card’s image properties.
+The background image properties are the same as the Number card’s image properties.
 
 #### Background color
 
@@ -527,7 +527,7 @@ Allows you to set a solid color as the background and to change the transparency
 
 ### Sparkline properties
 
-Sparkline in the Number Card widget can be turned off by unchecking the Show Sparkline check box. The color of the sparkline and the transparency can be customized using the provided options.
+The Sparkline in the Number Card widget can be turned off by unchecking the Show Sparkline check box. The color of the sparkline and the transparency can be customized using the provided options.
 
 ![Sparkline properties](/static/assets/visualizing-data/visualization-widgets/images/number-card/sparkline-properties.png)
 
@@ -535,23 +535,23 @@ Sparkline in the Number Card widget can be turned off by unchecking the Show Spa
 
 ### Link
 
-You can enable linking and configure it  to navigate to a general URL with or without parameters. For more information, refer [Linking](/visualizing-data/working-with-widgets/linking-urls-and-dashboards/).
+You can enable linking and configure it to navigate to a general URL with or without parameters. For more information, refer to [Linking](/visualizing-data/working-with-widgets/linking-urls-and-dashboards/).
 
 ![Link](/static/assets/visualizing-data/visualization-widgets/images/number-card/link.png)
 
 ### Filter interaction properties
 
-The Number Card widget can be set to act as a master widget by selecting the `Act as Master Widget` check box. Enabling the `Ignore Filter Actions` check box, enable the Number Card widget not to be filtered by any other master widgets during the interaction time in both preview and published modes.
+The Number Card widget can be set to act as a master widget by selecting the `Act as Master Widget` check box. Enabling the `Ignore Filter Actions` check box allows the Number Card widget not to be filtered by any other master widgets during the interaction time in both preview and published modes.
 
-> **NOTE:**  Act as Master Widget check box will be enabled only when the Series section is configured.
+> **NOTE:**  The Act as Master Widget check box will be enabled only when the Series section is configured.
 
 ![Filter properties](/static/assets/visualizing-data/visualization-widgets/images/number-card/filter-properties.png)
 
 ### Number card with fixed measure
 
-You can create fixed measure value in Number Card using expressions.
+You can create a fixed measure value in Number Card using expressions.
 
-The following steps illustrates how to add the fixed value:
+The following steps illustrate how to add the fixed value:
 
 1. Click the `fx expression` in the Data Source.
 
@@ -561,7 +561,7 @@ The following steps illustrates how to add the fixed value:
 
 ![Expression Value](/static/assets/visualizing-data/visualization-widgets/images/number-card/expression-value.png)
 
-3. You can view the added value in the measure section in the assigned data tab. Drag the added measures in the `Value(s)` section.
+3. You can view the added value in the measure section in the assigned data tab. Drag the added measures into the `Value(s)` section.
 
 ![Added Value](/static/assets/visualizing-data/visualization-widgets/images/number-card/add-value.png)
 
@@ -577,7 +577,7 @@ The following steps illustrates how to add the fixed value:
 
 ### Title alignment
 
-This allows you to handle the alignment of widget title to either **left, center, or right**.
+This allows you to handle the alignment of the widget title to either **left, center, or right**.
 
 ### Title color
 
@@ -585,27 +585,27 @@ This allows you to apply the text `color` to the widget title.
 
 ### Title Auto Font Size
 
-On enabling the Auto Font Size, the font size of the title will be adjusted automatically if the resolution of the screen varies.
+By enabling the Auto Font Size, the font size of the title will be adjusted automatically if the resolution of the screen varies.
 
 **Font Size**
 
-This allows you to apply the specified font size to the widget title, if the `Title Auto Font Size` is disabled. The value can range between 10 and 44.
+This allows you to apply the specified font size to the widget title if the `Title Auto Font Size` is disabled. The value can range between 10 and 44.
 
 ### Subtitle Auto Font Size
 
-On enabling the Auto Font Size, the font size of the subtitle will be adjusted automatically if the resolution of the screen varies.
+By enabling the Auto Font Size, the font size of the subtitle will be adjusted automatically if the resolution of the screen varies.
 
 **Font Size**
 
-This allows you to apply the specified size of the font to the widget title, if the `Subtitle Auto Font Size` is disabled. The value can range between 10 and 32.
+This allows you to apply the specified size of the font to the widget title if the `Subtitle Auto Font Size` is disabled. The value can range between 10 and 32.
 
 ### Show Border
 
-This allows you to toggle the visibility of border surrounding the widget.
+This allows you to toggle the visibility of the border surrounding the widget.
 
 ### Corner Radius
 
-This allows you to apply the specified radius to the widget corners, if the `Show Border` is enabled. The value can range between 0 and 10.
+This allows you to apply the specified radius to the widget corners if the `Show Border` is enabled. The value can range between 0 and 10.
 
 ### Container actions
 

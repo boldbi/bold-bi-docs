@@ -11,29 +11,29 @@ documentation: ug
 
 ## Renaming column
 
-   Rename the column, if required, through double clicking the respective column to enable the edit mode and typing the modified name. Press `<Enter>` key to commit the modification done.
+   To rename a column, double click on the respective column to enable the edit mode, and type the modified name. Press the `<Enter>` key to confirm the changes.
 
    ![Column rename option](/static/assets/working-with-datasource/images/renamecolumn.PNG)
 
-   Once modified, the changes will be reflected in the column in the table.
+   Once the column has been renamed, the modifications will be reflected in the table.
 
    ![Renamed column](/static/assets/working-with-datasource/images/renamedcolumnrep.PNG)
 
-   You can also rename the column through the `Settings` icon which will be displayed like below.
+   You can also rename the column by clicking on the `Settings` icon, which will be displayed as shown below.
 
    ![Settings icon](/static/assets/working-with-datasource/images/settings-icon.PNG)
 
-   Click this icon to drop down the menu with `Rename Column`, clicking which the edit mode will be enabled in that column.
+   Click on this icon to open a dropdown menu with the option to `Rename Column`. Clicking on this option will enable the edit mode for that column.
 
    ![Rename option](/static/assets/working-with-datasource/images/selectrenamecolumn.PNG)
 
 ## Handling column type conversion
 
-   Click this icon to drop down the menu with `Change Column Type`, clicking `Change Column Type` option allows to convert the column type.
+   Click on this icon to drop down the menu with the option to `Change Column Type`. Clicking on the `Change Column Type` option allows you to convert the column type.
 
    ![Select column](/static/assets/working-with-datasource/images/selectcolumn.PNG)
 
-   The following table represents the column types and their equivalent convertible types that are supported in Dashboard Designer.
+   The table below lists the column data types and their equivalent convertible types that are supported in Dashboard Designer.
 
    <table>
    <tr>
@@ -56,11 +56,11 @@ documentation: ug
 
 ## Show Value As
 
-   Click this icon to drop down the menu with `Show Value As`, clicking `Show Value As` option allows to convert the string column type into desired string format.
+   Click on this icon to drop down the menu with the option `Show Value As`. Clicking on the `Show Value As` option allows you to convert the string column type into the desired string format.
 
    ![Select column](/static/assets/working-with-datasource/images/showvalueas.png)
 
-   The table below illustrates the "Show Value As" types and their corresponding transformations:
+   The table below illustrates the `Show Value As` types and their corresponding transformations.
 
    <table>
    <tr>

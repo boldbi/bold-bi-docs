@@ -14,23 +14,23 @@ This section explains how to use the `Append Data` option in Bold BI Enterprise.
 
 ### Configuring the Append Data Source:
 
-The `Append Data Source` allows users to append the selected files to an existing data source table. Currently, this feature is available for file types such as Excel, JSON, CSV, and XML.
+The `Append Data Source` allows users to append selected files to an existing data source table. Currently, this feature is available for file types such as Excel, JSON, CSV, and XML.
 
 ![Append data icon button](/static/assets/working-with-datasource/append-data-from-file/images/append-ds-append-btn.png)
 
-To append data in an existing data source, click on the `append data` icon. The dialog will open, as seen in the following.
+To append data in an existing data source, click on the `append data` icon. The dialog will open, as seen in the following image.
 
 ![Append data dialog](/static/assets/working-with-datasource/append-data-from-file/images/append-ds-dialog.png)
 
-Choose the table name from the selected tables dropdown in which the data should be appended.
+Choose the table name from the selected tables dropdown menu in which the data should be appended.
 
 The `Append Data Source` allows users to append both single and multiple files.
 
-Click the `Browse File` to select the files you want to append, as shown in the following image.
+Click the `Browse File` button to select the files you want to append, as shown in the following image.
 
 ![Append data browse button](/static/assets/working-with-datasource/append-data-from-file/images/append-ds-browse-btn.png)
 
-Once the selected files are uploaded, the schema comparison will be done, and the validation status will be updated as follows.
+Once the selected files are uploaded, the schema comparison will be done, and the validation status will be updated as follows:
 
 1. Single file upload
 
@@ -52,13 +52,13 @@ The `Save As` option allows you to create a new data source with the selected fi
 
 ![Append data Save as button](/static/assets/working-with-datasource/append-data-from-file/images/append-ds-save-as-btn.png)
 
-Click the `Save As` button and provide the new data source name and click the `Save` button.
+Click the `Save As` button, provide the new data source name, and click the `Save` button.
 
 ![Append data Save button](/static/assets/working-with-datasource/append-data-from-file/images/append-ds-save-btn.png)
 
 ### Append:
 
-The `Append` button will move the selected files data to the existing data source table.
+The `Append` button will move the selected files' data to the existing data source table.
 
 ![Append data append button](/static/assets/working-with-datasource/append-data-from-file/images/append-ds-buttons.png)
 

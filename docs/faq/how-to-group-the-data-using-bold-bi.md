@@ -9,17 +9,17 @@ documentation: ug
 
 # How to group the data using Bold BI
 
-You can apply grouping based on specific fields either in the code view mode or by creating views for a required table and accessing the views using the Bold BI.
+You can apply grouping based on specific fields either in code view mode or by creating views for a required table and accessing the views using Bold BI.
 
 ## Grouping data using the code view mode
 
-1.	Refer to the [Connecting Bold BI to SQL data source](/working-with-data-sources/data-connectors/sql-data-source/#connecting-bold-bi-to-microsoft-sql-server-data-source) to successfully connect to it.
+1.	Refer to the instructions for [Connecting Bold BI to SQL data source](/working-with-data-sources/data-connectors/sql-data-source/#connecting-bold-bi-to-microsoft-sql-server-data-source) in order to successfully establish the connection.
 
 2.	Drag and drop the table from the table schema in the data design view page. Switch to the code view by enabling the toggle option in the tools pane, as shown in the following image.
 
     ![Code view mode](/static/assets/faq/images/patientdb-code-view.png#max-width=100%)
 
-3.	You can find the query editor window in which you can alter the query by using `GROUP BY` with the aggregate functions like SUM(), COUNT(), MAX(), MIN(), and more to group the records based on one or more columns. Here, the data is grouped based on the `PatientID` column.
+3.	You can find the query editor window where you can alter the query by using `GROUP BY` with aggregate functions such as SUM(), COUNT(), MAX(), MIN(), and more to group the records based on one or more columns. In this case, the data is grouped based on the `PatientID` column.
 
      **Example query:**
 	 
@@ -46,7 +46,7 @@ You can apply grouping based on specific fields either in the code view mode or 
 	
 ## Grouping data using views:
 
-1.	Create a view for a required table with `GROUP BY` in **Microsoft SQL Server.** Here, we have created a view for grouping data based on the `PatientID` column.
+1.	Create a view for a required table with `GROUP BY` in **Microsoft SQL Server**. In this case, a view has been created to group data based on the `PatientID` column.
 
      **Example view query:**
 
@@ -68,7 +68,7 @@ You can apply grouping based on specific fields either in the code view mode or 
     
     ![Drag view](/static/assets/faq/images/drag-views.png#max-width=100%)
 	
-3.	Click on the `Update`, and you can find the records based on the grouped column.
+3.	Click on the `Update` button, and you will be able to find the records based on the grouped column.
 
     ![Resulting view data](/static/assets/faq/images/view-data.png#max-width=100%)
 	

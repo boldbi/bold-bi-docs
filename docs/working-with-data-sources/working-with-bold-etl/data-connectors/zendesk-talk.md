@@ -23,7 +23,7 @@ Token: API Token
 Oauth_token: OAuth token
 ```
 ## Metadata Properties
-In this section, two modes of data refresh are defined: INCREMENTAL and ``FULL_TABLE``.
+In this section, two modes of data refresh are defined: INCREMENTAL and ``FULL_TABLE``. It only supports Date/DateTime datatype columns.
 
 <table>
     <tr>
@@ -65,7 +65,7 @@ metadata:
 
 ### Example Configuration
 
-### ``FULL_TABLE``
+#### FULL_TABLE
 
 ```YAML
 version: 1
@@ -95,7 +95,7 @@ plugins:
           interval_value: 6
 
 ```
-### INCREMENTAL
+#### INCREMENTAL
 ```YAML
 version: 1
 encrypt_credentials: false

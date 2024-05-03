@@ -186,9 +186,9 @@ You can activate your account by using either your login credentials or an offli
 
 Open the Manage License Page - `{domain}/ums/administration/license-settings`
 
-Next, select the Embedded BI tab.
+Next, select the Enterprise BI tab.
 
-![BoldBI Embedded tab](/static/assets/application-startup/images/boldbi-embedded-tab.png)
+![BoldBI Enterprise tab](/static/assets/application-startup/images/boldbi-enterprise-tab.png)
 
 ### Activate Bold BI license using the login credential
 

@@ -9,19 +9,19 @@ documentation: ug
 
 # Adding C3 chart as a custom widget
 
-Here we create a C3 Chart using the D3 Library.
+Here we are creating a C3 Chart using the D3 Library.
 
- > **NOTE:** The C3 Chart is open-source and it is under MIT license. This feature is available in On-Premises Deployment but not in Syncfusion Managed Cloud Server.
+ > **NOTE:** The C3 Chart is open-source and is licensed under MIT. This feature is available in On-Premises Deployment but not in Syncfusion Managed Cloud Server.
 
-Follow these steps to add the third-party widget(C3 Chart) as a custom widget for the dashboard:
+Follow these steps to add the third-party widget (C3 Chart) as a custom widget for the dashboard:
 
-* Refer to this [link](/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/create-new-custom-widget/#creating-a-new-widget) to create a new custom widget files.
+* Refer to this [link](/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/create-new-custom-widget/#creating-a-new-widget) to create new custom widget files.
 
   ![Custom_widget C3 chart](/static/assets/visualizing-data/visualization-widgets/images/custom-widget/custom-widget-c3chart.png)
 
 * Configure the widget using the `widgetconfig.json` file.
 
-* As a C3 Chart requires two data fields, we have configured **column** and **values** as shown below, and the properties section contains the properties related to the C3 Chart. Refer to this [link](/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/create-new-custom-widget/#configuring-widget-configuration-file) for configuring the `widgetconfig.json`.
+* As a C3 Chart requires two data fields, we have configured **column** and **values** as shown below. The properties section contains the properties related to the C3 Chart. Refer to this [link](/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/create-new-custom-widget/#configuring-widget-configuration-file) for configuring the `widgetconfig.json`.
 
 
   ```js
@@ -107,11 +107,11 @@ Follow these steps to add the third-party widget(C3 Chart) as a custom widget fo
 
 * You can debug the custom widget by dragging and dropping it into the design canvas after placing the ‘debugger’ in `src/sourcefile.js`.
 
-* **this.element** is the container(div) provided to render our actual widget.
+* **this.element** is the container (div) provided to render our actual widget.
 
 * So, we create our C3 Chart in **this.element** by using the data in **this.model.dataSource**. 
 
-* In Init(), we create a new space (div) for rendering our C3 Chart custom widget and appending it into the container as you can see in the following code.
+* In Init(), we create a new space (div) for rendering our C3 Chart custom widget and append it into the container as you can see in the following code.
 
 * The width and height of the widget are assigned from the container's width and height respectively.  
 
@@ -127,7 +127,7 @@ Follow these steps to add the third-party widget(C3 Chart) as a custom widget fo
 
   ```
 
-* Configure the datasource with some default values for the initial rendering of the C3 Chart.
+* Configure the datasource with default values for the initial rendering of the C3 Chart.
 
   ```js
 
@@ -136,7 +136,7 @@ Follow these steps to add the third-party widget(C3 Chart) as a custom widget fo
 
   ```
 
-* this.model.boundColumns.Value and this.model.boundColumns.length contains the columns bounded in the columns and values respectively. By checking the following condition, we can find whether the widget is configured with columns or not. 
+* The `this.model.boundColumns.Value` and `this.model.boundColumns.length` contain the columns bound in the columns and values respectively. By checking the following condition, we can determine whether the widget is configured with columns or not.
 
 * Converting the datasource structure required by the C3 Chart. 
 
@@ -149,7 +149,7 @@ Follow these steps to add the third-party widget(C3 Chart) as a custom widget fo
 	}
    ```
 
-* To render the C3 Chart, configure the required API's and assign the data to it.
+* To render the C3 Chart, configure the necessary APIs and assign the data to it.
 
   ```js
 
@@ -198,12 +198,12 @@ Follow these steps to add the third-party widget(C3 Chart) as a custom widget fo
 	this.widget = chart;
   ```
 
-* The C3 Chart widget will be rendered as follows:
+* The C3 Chart widget will be displayed as follows:
 
   ![Custom widget C3 chart](/static/assets/visualizing-data/visualization-widgets/images/custom-widget/custom_widget_C3_chart.png)
 
 
-* The update method will be triggered for the following operations, and we have to do the required changes by checking the update types (resize, refresh, and propertyChange), and the widget will be updated accordingly by invoking the respective API of the widget 
+* The update method will be triggered for the following operations. We must make the necessary changes by checking the update types (resize, refresh, and propertyChange). The widget will be updated accordingly by invoking the respective API of the widget. 
 
 	1) Resize
 
@@ -247,7 +247,7 @@ Follow these steps to add the third-party widget(C3 Chart) as a custom widget fo
 
     ```
 
-* To refresh the C3 Chart, assign the data to the C3 Chart APIs
+* To refresh the C3 Chart, data must be assigned to the C3 Chart APIs.
   
   ```js
 
@@ -303,4 +303,4 @@ Follow these steps to add the third-party widget(C3 Chart) as a custom widget fo
     ```
 ## Publish the C3 custom widget 
 
-Follow the steps mentioned in the [link](/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/create-new-custom-widget/#publish-custom-widget) to publish the C3 custom widget 
+Follow the steps outlined in the [link](/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/create-new-custom-widget/#publish-custom-widget) to publish the C3 custom widget.

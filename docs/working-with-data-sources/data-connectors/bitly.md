@@ -7,7 +7,7 @@ documentation: ug
 ---
 
 # Connecting Bold BI to Bitly data source
-Bold BI dashboard designer supports connecting Bitly web services through REST API. 
+The Bold BI dashboard designer supports connecting to Bitly web services through the REST API.
 
 ## Choose Bitly data source
 To configure the Bitly data source, follow the below steps:
@@ -20,21 +20,21 @@ To configure the Bitly data source, follow the below steps:
 
    ![Choose data source](/static/assets/working-with-datasource/data-connectors/images/bitly/ChooseDS.png)
 
-> **NOTE:**  You can also create a data source from the home page by clicking the **Data Sources** menu from left menu panel and **Create Data Source** from the data sources page.
+> **NOTE:**  You can also create a data source from the home page by clicking the **Data Sources** menu from the left menu panel and selecting **Create Data Source** from the data sources page.
 
    ![Choose data source](/static/assets/working-with-datasource/data-connectors/images/bitly/ChooseDS_server.png)
 
 ## Authentication with Bitly
 Use the following steps to authenticate with Bitly web service:
 
-1. Click the data source, you will be prompted with a login window. Enter the credentials of your Bitly account to authorize.
+1. Click the data source, and a login window will appear. Enter your Bitly account credentials to authorize.
 2. Click **Allow** in the authorization window to accept the scopes requested by Bold BI dashboards.
 
-   > **NOTE:**  If the permission is denied, the account will not be accessible from the dashboard.
+   > **NOTE:**  If permission is denied, the account will not be accessible from the dashboard.
    
 3. Set a name to identify the account and click **Next**. 
 4. You have now successfully authorized your connection. Click **Connect** to continue with the data source connection.
-5. To connect using existing connected account, refer  [Connected Accounts](/working-with-data-sources/data-connectors/bitly/#connected-accounts-for-oauth-data-sources).
+5. To connect using an existing connected account, refer to [Connected Accounts](/working-with-data-sources/data-connectors/bitly/#connected-accounts-for-oauth-data-sources).
 
 > **NOTE:**  To connect to another account click **Connect New Account.**
 
@@ -43,13 +43,13 @@ Use the following steps to authenticate with Bitly web service:
 ### Create Bitly data source
 After successful authentication, the NEW DATA SOURCE configuration panel opens. Follow the below steps to create Bitly data source.
 1. Enter a name and description (optional) for the data source.
-2. Click the **API Endpoints** down drop box and choose the required endpoint.
-3. Click the **Custom Url** if you want to enter the URL manually. Refer the [Bitly API documentation](https://dev.bitly.com/v4_documentation.html) for more details.  
-4. Select **GET** method for the REST API in **Method** combo box.
-5. In **Max Rows**, enter the maximum number of rows to be fetched from the Bitly data source. This value is used to fetch the data from Bitly data source via pagination.
-6. Choose a time interval for **Refresh Settings** using the combo box, to trigger the Rest API request periodically to keep the data in sync with our dashboard.  
-7. Select **JSON** data type in **Data Format** combo box.
-8. The authentication type will be set to **Bitly** automatically since OAuth is used for authenticating with Bitly account.
+2. Click the **API Endpoints** drop-down box and choose the required endpoint.
+3. Click **Custom URL** if you want to enter the URL manually. Refer to the [Bitly API documentation](https://dev.bitly.com/v4_documentation.html) for more details.  
+4. Select **GET** method for the REST API in the **Method** combo box.
+5. Enter the maximum number of rows to be fetched from the Bitly data source in **Max Rows**. This value is used for pagination.
+6. Choose a time interval for **Refresh Settings** using the combo box to trigger the REST API request periodically and keep the data in sync with the dashboard. 
+7. Select **JSON** data type in the **Data Format** combo box.
+8. The authentication type will be automatically set to **Bitly** since OAuth is used for authenticating with the Bitly account.
 
     ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/bitly/DataSourcesView.png)
 
@@ -77,11 +77,11 @@ Period of time before next refresh call is triggered. This will automatically tr
 </table>
 
 ### Setting up the URL
-1. Replace the **&lt;:group_guid&gt;** in the URL to query the groups endpoint.
-2. For instance, to get the Groups data, query the <i>/groups</i> endpoint.
-3. From the listed group information get the guid.
+1. Replace the **<:group_guid>** in the URL with the query to the groups endpoint.
+2. For example, to retrieve the Groups data, query the */groups* endpoint.
+3. Obtain the guid from the listed group information.
 
-Replace it in the URL to query a particular group:
+Replace it in the URL to query a specific group:
 
 [https://api-ssl.bitly.com/v4/groups/&lt;:group_guid&gt;/bitlinks](https://api-ssl.bitly.com/v4/groups/%3c:group_guid%3e/bitlinks)
 
@@ -98,21 +98,21 @@ For more information on the API endpoints available for this data source, refer 
 
 ### Preview and data import
 * Click **Preview & Connect** to connect with the configurations set.
-* The Choose Schema(s) dialog opens. The schema represents the key fields of JSON data retrieved from Bitly Rest API request. This dialog displays a list of schemas in treeview and its corresponding values in grid for preview. Select required schema(s) from treeview to use in designer and click **Connect**.
+* The Choose Schema(s) dialog will open. The schema represents the key fields of JSON data retrieved from the Bitly Rest API request. This dialog displays a list of schemas in a tree view and its corresponding values in a grid for preview. Select the required schema(s) from the tree view to use in the designer and click **Connect**.
 
    ![Preview](/static/assets/working-with-datasource/data-connectors/images/common/Preview.png)
 
-* Now, the data design view page with selected table schema opens. Drag and drop the table.
+* The data design view page with the selected table schema will open. Drag and drop the table.
    ![Query Editor](/static/assets/working-with-datasource/data-connectors/images/common/QueryEditor.png)
 
 * Click **Save** to save the data source with a relevant name.
 
 ## Connected accounts for OAuth data sources
-If you have already logged into the account and authenticated with web data source, the account information will be listed here. You can select one of the accounts or connect to a new account by clicking the **Connect New Account** button.
+If you have already logged into the account and authenticated with the web data source, the account information will be listed here. You can select one of the accounts or connect to a new account by clicking the **Connect New Account** button.
 
    ![OAuth](/static/assets/working-with-datasource/data-connectors/images/bitly/OAuthDS.png)
 
-You can edit, delete and re-authorize this account from the **Connected Accounts** page.
+You can edit, delete, and re-authorize this account from the **Connected Accounts** page.
 
    ![Manage Accounts](/static/assets/working-with-datasource/data-connectors/images/bitly/ManageDS.png)
 

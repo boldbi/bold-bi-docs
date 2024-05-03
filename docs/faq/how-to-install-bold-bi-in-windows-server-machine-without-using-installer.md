@@ -20,21 +20,21 @@ documentation: ug
 
 ## Follow the below steps to deploy Bold BI on a Windows server machine without using the installer.
 
-1. Download the Bold BI deployment file [here](https://s3.amazonaws.com/files2.syncfusion.com/Installs/BoldBI/24-05-2022/BoldServices.zip) or you can also get deployment files from another machine where you are allowed to [install.exe](https://www.boldbi.com/account#windows) from <Installed Drive\BoldServices> location.
+1. Download the Bold BI deployment file [here](https://s3.amazonaws.com/files2.syncfusion.com/Installs/BoldBI/24-05-2022/BoldServices.zip) or you can also obtain deployment files from another machine where you are permitted to [install.exe](https://www.boldbi.com/account#windows) from <Installed Drive\BoldServices> location.
 
-    > **NOTE:** By default, the Bold BI is deployed in "C:\BoldServices" location for Windows. 
+    > **NOTE:** By default, Bold BI is deployed in the "C:\BoldServices" location for Windows. 
 
-2. Extract the downloaded zip file and move the files to the deployment drive, then follow these steps to install the Bold BI.
+2. Extract the downloaded zip file and move the files to the deployment drive. Then, follow these steps to install Bold BI.
     
     1. Right-click the `Application Pools` and select `Add Application Pool`.
 
         ![Add Application Pool](/static/assets/faq/images/add-application-pool.png)
 
-    2. Name the application pool and click `OK`.
+    2. Name the application pool and then click `OK`.
 
         ![Add Application Pool](/static/assets/faq/images/add-app-pool.png#width=55%)
 
-    3. Right-click the newly created application pool and select `Advanced Settings` option.
+    3. Right-click the newly created application pool and select the `Advanced Settings` option.
 
         ![Application Pool Advanced Settings](/static/assets/faq/images/application-pool-advanced-settings.png#width=55%)
 
@@ -53,29 +53,29 @@ documentation: ug
         *	BoldUMS
         *	BoldWinAuth
 
-         Here, I’m showing all the created application pools.
+         Here, I am displaying all of the created application pools.
     
         ![created](/static/assets/faq/images/created-application-pools.png#width=55%)
 
     5. Right-click the site then click Add Website and fill in the following details.
 
-        * **Alias name** : Enter the name that you want to use as an alias for the domain.
+        * **Alias name** : Enter the name that you would like to use as an alias for the domain.
 
-        * **Application pool** : Application Pools are logical groupings of web applications that will execute in a common process.
+        * **Application pool** : Application pools are logical groupings of web applications that will execute in a common process.
 
-        * **Physical path** : In the Physical path box, click `Browse` to navigate the file system to find the IDP - Web from Bold BI extracted location.
+        * **Physical path** : In the Physical path box, click `Browse` to navigate the file system and locate the IDP - Web from the Bold BI extracted location.
 
         ![create-site](/static/assets/faq/images/create-site.png#width=150%)
         
-        After clicking `OK` you can see the site and site dependencies as shown below.
+        After clicking `OK` you will be able to see the site and its dependencies as shown below.
 
         ![created-site](/static/assets/faq/images/created-site.png#width=55%)
 
-    6. Add services as an application under the created site. Right-click on the site name and select `Add Application` then enter the details shown in the following.
+    6. Add services as an application under the created site. Right-click on the site name and select `Add Application`, then enter the details as shown in the following.
 
         ![create-application](/static/assets/faq/images/create-application.png)
 
-        Repeat the same procedure for the applications of Bold BI given in the following table,
+        Repeat the same procedure for the applications of Bold BI as listed in the following table.
     
         | Application Pool    | Under Application    | Alias Name of the application   |           Physical Path  |
 		|-------------------   |-----------------------     |------------------|-------------------------------               |
@@ -91,11 +91,11 @@ documentation: ug
     
         ![bi-apps-ensure](/static/assets/faq/images/bi-app-ensure.png#width=55%)
 
-    8. Finally, the application structure is created successfully as shown in the following image.
+    8. Finally, the application structure has been successfully created, as shown in the following image.
        
         ![final-application](/static/assets/faq/images/final-application.png#width=55%)
 		
-	9. Restart the site and access it with the mentioned port number in any browser.
+	9. Restart the site and access it with the specified port number in any browser.
 	
 		Example: http://localhost: **mentioned-port-number**
 

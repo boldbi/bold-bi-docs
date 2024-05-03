@@ -11,7 +11,7 @@ documentation: ug
 
 # Combo Box
 
-Combo box enables you to filter the items based on single or multiple items selection in the dropdown list. To bind a combo box, a minimum requirement of 1 column is needed.
+The combo box enables you to filter items based on single or multiple item selections in the dropdown list. To bind a combo box, a minimum requirement of 1 column is needed.
 
 ![Combobox](/static/assets/visualizing-data/visualization-widgets/images/combo-box/combobox.png)
 
@@ -19,7 +19,7 @@ Combo box enables you to filter the items based on single or multiple items sele
 
 The following procedure explains the data configuration of the Combo box:
 
-1.  Drag and drop the `Combo Box` widget from the tool box into design panel and resize into your required size. You can find the widget in tool box by `search`. 
+1.  Drag and drop the `combo box` widget from the toolbox into the design panel and resize it to your required size. You can find the widget in the toolbox by `search`.
 
 ![Combobox](/static/assets/visualizing-data/visualization-widgets/images/combo-box/drop-widget.png)
 
@@ -31,7 +31,7 @@ The following procedure explains the data configuration of the Combo box:
 
 ![Data source button](/static/assets/visualizing-data/visualization-widgets/images/datasourcebutton.png)
 
-4.  In the connection type panel, click any one (Here, the `Microsoft Excel` Connection type is selected for demonstration) of the listed connection type button shown.
+4.  In the connection type panel, click any one of the listed connection type buttons (Here, the `Microsoft Excel` Connection type is selected for demonstration).
 
 ![Data source list](/static/assets/visualizing-data/visualization-widgets/images/datasourcelist.png)
 
@@ -39,11 +39,11 @@ The following procedure explains the data configuration of the Combo box:
 
 ![Connect button](/static/assets/visualizing-data/visualization-widgets/images/connectbutton.png)
 
-6.  Drag your preferred table or view from the left pane from the data design view, click the `Save` button.
+6.  Drag your preferred table or view from the left pane from the data design view, then click the `Save` button.
 
 ![Virtual table](/static/assets/visualizing-data/visualization-widgets/images/virtualtable.png)
 
-7.  Click the `Properties` button in the configuration panel, property pane opens. 
+7.  Click the `Properties` button in the configuration panel, and the property pane opens.
 
 ![Designer properties](/static/assets/visualizing-data/visualization-widgets/images/designerpropertiesbutton.png)
 
@@ -69,19 +69,19 @@ Define the `Sort` of the dropped column through the Sort option in the Settings 
 
 ### Filtering data
 
-Define filter criteria through the `Filter(s)` menu item in the `Settings` drop down menu. For more details, refer to the [filter](/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column).
+Define filter criteria through the `Filter(s)` menu item in the `Settings` dropdown menu. For more details, refer to the [filter](/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column).
 
 ![Filtering](/static/assets/visualizing-data/visualization-widgets/images/combo-box/filtering.png)
 
-Clear the filters by selecting the `Show All Records` in the `Settings` dropdown menu.
+Clear the filters by selecting `Show All Records` in the `Settings` dropdown menu.
 
 ## How to configure relative dates to Combobox?
 
-Click the `Settings` icon in the dropped date value and select `Relative Dates` in the drop-down menu.
+Click the `Settings` icon in the dropped date value and select `Relative Dates` in the dropdown menu.
 
 ![showing relative dates menu](/static/assets/visualizing-data/visualization-widgets/images/combo-box/combobox-relativedates.png)
 
-In the launched `Relative Date Options` window, configure the relative date and click Add. Repeat this process till the required set of relative dates are added.
+In the launched `Relative Date Options` window, configure the relative date and click Add. Repeat this process until the required set of relative dates are added.
 
 ![relative date options window](/static/assets/visualizing-data/visualization-widgets/images/combo-box/relativedatefilterwindow-combobox.png)
 
@@ -91,7 +91,7 @@ You can see the added relative dates in the combo box as follows.
 
 ![showing relative date options in combobox](/static/assets/visualizing-data/visualization-widgets/images/combo-box/relativedateoptions-in-combobox.png)
 
-**Note:** If Multi selection is enabled, then the applied relative dates will be removed.
+> **Note:** If Multi-selection is enabled, then the applied relative dates will be removed.
 
 ## How to configure custom relative dates to the Combobox?
 
@@ -103,7 +103,7 @@ In the launched `Relative Date Options` window, select the `Custom` option from 
 
 ![selecting custom option in relative dates window](/static/assets/visualizing-data/visualization-widgets/images/combo-box/customoptionin-relativedatefilter-combobox.png)
 
-Choose the start and end dates you like to set as custom range, set a name for the custom range, and then click `Add.` Repeat this process till the required set of custom relative dates are added.
+Choose the start and end dates you would like to set as a custom range, set a name for the custom range, and then click `Add`. Repeat this process until the required set of custom relative dates are added.
 
 
 ![setting range for custom option](/static/assets/visualizing-data/visualization-widgets/images/combo-box/customdatelimits-relativedates-combobox.png)
@@ -114,7 +114,7 @@ You can see the added custom relative dates in the combo box as follows.
 
 ![custom date option is displayed in combo box](/static/assets/visualizing-data/visualization-widgets/images/combo-box/customrelativedate-combobox.png)
 
-**Note:** If Multi selection is enabled, then the applied relative dates will be removed.
+> **Note:** If Multi-selection is enabled, then the applied relative dates will be removed.
 
 ## How to format combo box?
 
@@ -138,7 +138,7 @@ This allows you to set the `subtitle` for this combo box widget.
 
 #### Description
 
-This allows you to set the brief explanation about this combo box widget.
+This allows you to set a brief explanation about this combo box widget.
 
 ![General Settings](/static/assets/visualizing-data/visualization-widgets/images/combo-box/Description.png)
 
@@ -148,7 +148,7 @@ This allows you to set the brief explanation about this combo box widget.
 
 #### Enable Multi-select
 
-`Enable Multi-Select` allows you to select the one or more items in the dropdown list.
+`Enable Multi-Select` allows you to select one or more items in the dropdown list.
 
 #### Single Selection
 
@@ -156,7 +156,7 @@ This allows you to set the brief explanation about this combo box widget.
 
 #### Multiple Selection
 
-You can able to select the multiple items in the combo box.
+You can select multiple items in the combo box.
 
 ![Multiple Selection](/static/assets/visualizing-data/visualization-widgets/images/combo-box/combobox-multiselect.png)
 
@@ -170,7 +170,7 @@ This allows you to enable a `filter` box for easy filtering of data.
 
 #### Place Holder
 
-The `PlaceHolder` property of a combo box provides context about the user's selection. The placeholder text in the Place Holder text box and combo box is set to `All` by default.
+The `Placeholder` property of a combo box provides context about the user’s selection. The placeholder text in the Placeholder text box and combo box is set to `All` by default.
 
 ![Filter](/static/assets/visualizing-data/visualization-widgets/images/combo-box/combox-placeholder.png)
 
@@ -198,7 +198,7 @@ This allows you to define this combo box widget as a master widget such that its
 
 #### Ignore Filter Actions
 
-This allows you to define this combo box widget to ignore responding to the filter actions applied on other widgets in dashboard.
+This allows you to define this combo box widget to ignore responding to the filter actions applied on other widgets in the dashboard.
 
 #### Enable Hierarchical Filtering
 
@@ -212,7 +212,7 @@ When `Enable Hierarchical Filtering` is enabled, the Top N will be applied for e
 
 #### Title Alignment
 
-This allows you to handle the alignment of widget title to either `left, center, or right.`
+This allows you to handle the alignment of the widget title to either `left, center, or right.`
 
 #### Title Color
 
@@ -244,15 +244,15 @@ This allows you to apply the specified `radius` to the widget corners if the **S
 
 #### Background Color
 
-This allows you to set the **background color** to the combo box widget.
+This allows you to set the **background color** of the combo box widget.
 
 #### Transparency
 
-This property allows you to specifies the **transparency** for the `background color`.
+This property allows you to specify the **transparency** for the `background color`.
 
 #### Show Shadow
 
-This allows you to toggle the visibility of `shadow` surrounding the widget.
+This allows you to toggle the visibility of the `shadow` surrounding the widget.
 
 #### Container actions
 
@@ -264,4 +264,4 @@ This allows you to enable or disable the `widget title` of the combo box widget.
 
 #### Enable Comments
 
-This allows you to enable or disable `comment` for the dashboard widget. For more details, refer to this [link](/visualizing-data/working-with-widgets/commenting-widget/).
+This allows you to enable or disable comments for the dashboard widget. For more details, refer to this [link](/visualizing-data/working-with-widgets/commenting-widget/).

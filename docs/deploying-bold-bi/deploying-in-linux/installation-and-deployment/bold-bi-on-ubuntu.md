@@ -38,24 +38,26 @@ documentation: ug
     sudo apt-get install pv
     ~~~
 
-6. Install the `python 3.9` or `later` by executing the following command:
+6. If you want to install the ETL application with Bold BI, follow these steps. Otherwise, skip this step and proceed with step 7.
+    * Install the `python 3.9` or `later` by executing the following command:
    
-   **Ubuntu Version:22.04** :
-    ~~~shell
-    sudo apt-get install -y python3
-    ~~~
+        **Ubuntu Version:22.04** :
+        ~~~shell
+        sudo apt-get install -y python3
+        ~~~
 
-    **Ubuntu Version:20.04** :
-    ~~~shell
-    sudo apt update && sudo apt install wget software-properties-common && sudo add-apt-repository ppa:deadsnakes/ppa && sudo apt update && sudo apt install python3.9
-    ~~~
+        **Ubuntu Version:20.04** :
+
+        ~~~shell
+        sudo apt update && sudo apt install wget software-properties-common && sudo add-apt-repository ppa:deadsnakes/ppa && sudo apt update && sudo apt install python3.9
+        ~~~
     
-8. Install pip dependency packages for ETL service by running the following command:
-    ~~~shell
-    sudo apt-get install python3-pip && sudo pip install duckdb===0.9.2 dlt===0.4.2 pymysql pyodbc pg8000 poetry pandas===2.0.0 "dlt[parquet]" "dlt[filesystem]"
-    ~~~
+    * Install pip dependency packages for ETL service by running the following command:
+        ~~~shell
+        sudo apt-get install python3-pip && sudo pip install duckdb===0.9.2 dlt===0.4.2 pymysql pyodbc pg8000 poetry pandas===2.0.0 "dlt[parquet]" "dlt[filesystem]"
+        ~~~
 
-9. If it does not exist, add an `openssl conf` path to the environment by running the following command:
+7. If it does not exist, add an `openssl conf` path to the environment by running the following command:
 
 	~~~shell
     export OPENSSL_CONF=/etc/ssl/

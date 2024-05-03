@@ -8,7 +8,7 @@ documentation: ug
 
 # Where can i find the error and debug log files?
 ## Error logs
-Error log files are generated when an exception occurs while configuring or interacting with the Bold BI application
+Event log files record the complete details of user interactions in the Bold BI application, one after the other, as users interact with the application.
 
 ## Debug logs
 
@@ -22,49 +22,49 @@ The diagnostic logs can be downloaded in the UMS based on the versions of Bold B
 
 ### Bold BI version 6.17 or later
 
-1. In the Bold BI tenant site, click on the Profile icon and select the `Manage sites (Admin access)` option, and it will open the **UMS sites page** in a new tab.
+1. In the Bold BI tenant site, click on the Profile icon and select the `Manage sites (Admin access)` option. This will open the **UMS sites page** in a new tab.
 
-    > **NOTE:** This option will be shown for the UMS Admin user only.
+    > **NOTE:** This option will only be shown to the UMS Admin user.
 
     ![Manage Sites Option latest](/static/assets/faq/images/manage-sites-option-6-17.png#max-width=85%)
 
-2. Now, it will be navigated to the UMS site and click the help icon at the top right, near the profile icon, and select the `Get diagnostic logs` option.
+2. Now, navigate to the UMS site and click on the help icon at the top right, near the profile icon. Select the `Get diagnostic logs` option.
 
     ![Get Diagnostic Option](/static/assets/faq/images/get-diagnostic-option-6-17.png#max-width=85%)
 
-3. In the `Get diagnostic logs` dialog, select the required period options `Last 1 hour`, `Last 24 hours`, `Last seven days`, or `All` from the `Select time period` dropdown option and click `Download diagnostic logs`. Now, the logs will be downloaded.
+3. In the `Get diagnostic logs` dialog, select the necessary period options such as `Last 1 hour`, `Last 24 hours`, `Last seven days`, or `All` from the `Select time period` dropdown menu and then click on `Download diagnostic logs`. The logs will now be downloaded.
 
     ![Get Diagnostic download](/static/assets/faq/images/get-logs-dropdown.png#max-width=85%)
 
 ### Bold BI version 6.1 or later
 
-1. In the Bold BI tenant site, click on the Profile icon and select the `Manage sites (Admin access)` option, and it will open the **UMS sites page** in a new tab.
+1. In the Bold BI tenant site, click on the Profile icon and select the `Manage sites (Admin access)` option. This will open the **UMS sites page** in a new tab.
 
-    > **NOTE:** This option will be shown for the UMS Admin user only.
+    > **NOTE:** This option will only be shown to the UMS Admin user.
 
     ![Manage Sites Option latest](/static/assets/faq/images/manage-sites-option-6-1.png#max-width=85%)
 
-2. Now, it will be navigated to the UMS site. Click the help icon on the navigation menu and select the `Get diagnostic logs` option.
+2. Now, navigate to the UMS site. Click on the help icon in the navigation menu and select the `Get diagnostic logs` option.
 
     ![Get Diagnostic Option](/static/assets/faq/images/get-diagnostic-option-6-1.png#max-width=85%)
 
-3. In the `Get diagnostic logs` dialog, select the required period options `Last 1 hour`, `Last 24 hours`, `Last seven days`, or `All` from the `Select time period` dropdown option and click `Download diagnostic logs`. Now, the logs will be downloaded.
+3. In the `Get diagnostic logs` dialog, select the necessary period options such as `Last 1 hour`, `Last 24 hours`, `Last seven days`, or `All` from the `Select time period `dropdown menu and then click on `Download diagnostic logs`. The logs will now be downloaded.
 
     ![Get Diagnostic download](/static/assets/faq/images/get-logs-dropdown.png#max-width=85%)
 
 ### Bold BI version 4.1.36 or later
 
-1. In the Bold BI tenant site, click on the Profile icon and select the `Manage sites (Admin access)` option, and it will open the **UMS sites page** in a new tab.
+1. In the Bold BI tenant site, click on the Profile icon and select the `Manage sites (Admin access)` option. This will open the **UMS sites page** in a new tab.
 
-    > **NOTE:** This option will be shown for the UMS Admin user only.
+    > **NOTE:** This option will be shown only for the UMS Admin user.
 
     ![Manage Sites Option](/static/assets/faq/images/manage-sites-option-6-1.png#max-width=85%)
 
-2. Now, it will be navigated to the UMS site. Click the question mark icon on the navigation menu and select the `Get diagnostic logs` option. Now, the logs will be downloaded.
+2. Now, navigate to the UMS site. Click on the question mark icon on the navigation menu and select the `Get diagnostic logs` option. The logs will now be downloaded.
 
     ![Get Diagnostic Option](/static/assets/faq/images/get-diagnostic-option.png#max-width=85%)
 
-You can also get the log file manually from the following location for Bold BI version 4.1.36 or later.
+You can also manually obtain the log file from the following location for Bold BI version 4.1.36 or later.
 
 > **NOTE:** By default, the Bold BI is deployed in "C:\BoldServices" for Windows and "/var/www/bold-services/application" for Linux.
 
@@ -75,7 +75,7 @@ You can also get the log file manually from the following location for Bold BI v
 
 ### Bold BI version below 4.1.36
 
-We do not have the support to get the logs directly from the application in this version. Therefore, we need to get them from the deployment location as described below.
+We do not have the capability to retrieve the logs directly from the application in this version. Therefore, we will need to obtain them from the deployment location as outlined below.
 
 > **NOTE:**  By default, the Bold BI is deployed in "C:\BoldBI" for Windows.
 
@@ -87,7 +87,7 @@ We do not have the support to get the logs directly from the application in this
 
 ## How to get configuration files?
 
-1. This option is available from Bold BI version 6.4 or later to download the configuration files along with the logs. 
+1. This option is available from Bold BI version 6.4 or later for downloading the configuration files along with the logs. 
 
     > **NOTE:** Enable the checkbox only if the Bold BI support team has requested the configuration files.
 
@@ -97,6 +97,6 @@ We do not have the support to get the logs directly from the application in this
 
     ![Get configuration file download](/static/assets/faq/images/get-configuration-file.png#max-width=85%)
 
-    > **NOTE:** If you are only going to get configuration files, then you can select the minimum period option **Last 1 hour** instead of **All** from the **Select time period** dropdown option. 
+    > **NOTE:** If you are only going to get configuration files, then you can select the minimum period option **Last 1 hour** instead of **All** from the **Select time period** dropdown menu.
 
     ![Get Diagnostic Logs](/static/assets/faq/images/get-diagnostic-logs.png#max-width=85%)

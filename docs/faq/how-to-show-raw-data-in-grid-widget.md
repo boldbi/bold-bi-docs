@@ -8,15 +8,15 @@ documentation: ug
 
 # How to Show the Raw Data in the Grid widget
 
-The Bold BI Application supports **displaying the data without grouping** the column. 
+The Bold BI Application supports **displaying the data without grouping** the columns. 
 
-Follow these steps to achieve this requirement:
+Follow these steps to meet this requirement:
 
 1. Drag and drop the columns in the Measures and Dimensions field.
 
 ![Drag and drop table in measure and dimention field](/static/assets/faq/images/drag-and-drop-columns.png)
 
-2. The values of the chosen columns are grouped before choosing the option to display raw data in the Grid Widget.
+2. The values of the selected columns are grouped before selecting the option to display raw data in the Grid Widget.
 
 ![grouped columns in grid widget](/static/assets/faq/images/group-columns-in-grid-widget.png)
 
@@ -24,8 +24,8 @@ Follow these steps to achieve this requirement:
 
 ![enable show data option](/static/assets/faq/images/enable-show-rawdata-option.png)
 
-4. The Grid widget displays ungrouped columns of the raw data.
+4. The Grid widget displays columns of ungrouped raw data.
 
 ![ungrouped columns in grid widget](/static/assets/faq/images/ungrouped-columns.png)
 
->**Note:** When choosing the raw data option, the aggregation is removed, and the data is displayed.
+>**Note:** When selecting the raw data option, the aggregation is eliminated, and the data is shown.

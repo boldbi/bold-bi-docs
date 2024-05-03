@@ -8,7 +8,7 @@ documentation: ug
 
 # Custom Connector in Bold BI
 
-This section explains how to Create and Configure a custom connector in the Bold BI Enterprise.
+This section explains how to create and configure a custom connector in the Bold BI Enterprise.
 
 ## You can explore about Custom Connector in detail here
 
@@ -16,4 +16,4 @@ This section explains how to Create and Configure a custom connector in the Bold
 
    [Configure Custom Connector](/working-with-data-sources/custom-connector/configure-custom-connector/)
 
-> **Note:** This feature is available in On-Premises Deployment but not in Syncfusion Managed Cloud Server.
+> **Note:** This feature is available in On-Premises Deployment, but not in Syncfusion Managed Cloud Server.

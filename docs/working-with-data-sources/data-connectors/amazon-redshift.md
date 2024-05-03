@@ -8,23 +8,23 @@ documentation: ug
    
 # Connecting Bold BI to Amazon Redshift Database
 
-Using the `Amazon Redshift` connection type, you can connect an Amazon Redshift database.
+Using the `Amazon Redshift` connection type, you can connect to an Amazon Redshift database.
 
-Click `Data Source` button in the configuration panel to add a new data connection.
+Click the `Data Source` button in the configuration panel to add a new data connection.
 
 ![Data source Image](/static/assets/working-with-datasource/data-connectors/images/amazon-redshift/datasource.png#width=352px;height=501.51px)
 
-Click `CREATE NEW` to launch a new connection from the connection type panel. 
+Click `CREATE NEW` to launch a new connection from the connection type panel.
 
 ![Data source Button](/static/assets/working-with-datasource/data-connectors/images/amazon-redshift/datasourcebutton.png#width=351px;height=504.4px)
 
-Click `Amazon Redshift` connection button in the connection type panel.
+Click the `Amazon Redshift` connection button in the connection type panel.
 
 ![Red shift button](/static/assets/working-with-datasource/data-connectors/images/amazon-redshift/amazonredshiftbutton.png#width=351px;height=504.06px)
 
 Set the `server Name` and `port number` where the Amazon Redshift service is running.
 
-Enter the `user name` and `password` to connect to the Amazon Redshift.
+Enter the `user name` and `password` to connect to Amazon Redshift.
 
 There are two connection types available in a data source:
 
@@ -33,22 +33,22 @@ There are two connection types available in a data source:
 
 ## Live mode connection
 
-In this connection type, a data source is directly fetched from source. Choose the `Live` mode option for this connection.
+In this type of connection, a data source is directly fetched from the source. Choose the `Live` mode option for this connection.
 
 ![Redshift Live mode](/static/assets/working-with-datasource/data-connectors/images/amazon-redshift/amazonredshiftlivemode.png#width=348px;height=500.95px)
 
-> **NOTE:**  To connect data source with **SSH**, enable the SSH check box in the **NEW DATA SOURCE** configuration panel and enter the required credentials.
+> **NOTE:**  To connect to a data source using **SSH**, enable the SSH check box in the **NEW DATA SOURCE** configuration panel and enter the required credentials.
 ![Enable SSH](/static/assets/working-with-datasource/images/enable-ssh.png#max-width=60%) 
 
-The selected database will be opened in the data design view window.
+The selected database will open in the data design view window.
 
 ![Data Design view](/static/assets/working-with-datasource/data-connectors/images/amazon-redshift/datadesignview.png#max-width=100%)
 
-Drag and drop the table from table list, and click `Save` button to save the data source with valid name.
+Drag and drop the table from the table list, and click the `Save` button to save the data source with a valid name.
 
 ## Extract mode connection
 
-In this connection type, a data source is fetched from source periodically. Choose the `Extract` mode option for this connection.
+In this type of connection, a data source is fetched from the source periodically. Choose the `Extract` mode option for this connection.
 
 ![Redshift Extract Mode](/static/assets/working-with-datasource/data-connectors/images/amazon-redshift/amazonredshiftExtractmode.png#width=350px;height=503.92px)
 
@@ -66,13 +66,13 @@ In this connection type, a data source is fetched from source periodically. Choo
 2. Select the recurrence type, recurrence start, and end dates in the **Refresh Setting** dialog box.
 
      * Data refresh can be scheduled hourly, daily, weekly, and monthly.
-     * Application Time Zone is displayed below the date picker. Start time of the schedule is converted to the client Time Zone and shown at the right-side for users convenience. After selecting, click `Schedule`.
+     * Application Time Zone is displayed below the date picker. The start time of the schedule is converted to the client Time Zone and shown on the right side for user convenience. After selecting, click `Schedule`.
 
 ![Refresh Setting](/static/assets/working-with-datasource/data-connectors/images/amazon-redshift/RefreshSetting.png#max-width=100%)
 
 ## Preview and data import
 
-1. Click `Connect` to redshift server with configured details.
+1. Click `Connect` to the redshift server with configured details.
 
 2. The Extract Data dialog opens. This dialog has two modes of connection either via Table or [Custom query](/faq/working-with-custom-query-extract-mode-in-bold-bi/). Under custom query option, write the required query and click **Connect**.
 Under the Table option, this dialog displays list of tables and views in treeview. Select the required table(s) or view(s) from treeview to use in the designer.
@@ -84,13 +84,13 @@ The option is available for configuring incremental refresh column (The table mu
 
 ![Query Editor Extract](/static/assets/working-with-datasource/data-connectors/images/amazon-redshift/QueryEditorExtract.png#max-width=100%)
 
-* You can use the Code View option for passing query to display data.
+* You can use the Code View option for passing a query to display data.
 
 ![Code view mode extract](/static/assets/working-with-datasource/data-connectors/images/amazon-redshift/CodeViewModeExtract.png#max-width=100%)
 
 Click `Save` to save the data source with a relevant name.
 
-> **NOTE:** In future, you can edit the connection information for both live and extract mode connections using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
+> **NOTE:** In the future, you can edit the connection information for both live and extract mode connections using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 
 ### Connect using custom attribute and dashboard parameter
 
@@ -104,23 +104,23 @@ We have added support for **custom attributes and dashboard parameters** to the 
 
 ![Dashboard Parameter](/static/assets/working-with-datasource/data-connectors/images/amazon-redshift/Dashboardparameter.png)
 
->**Note:** Refer the [Dashboard Parameter Documentation](https://help.boldbi.com/working-with-data-sources/dashboard-parameter/) and [Custom Attributes Documentation](https://help.boldbi.com/working-with-data-sources/configuring-custom-attribute/) for more details.
+>**Note:** Please refer to the [Dashboard Parameter Documentation](https://help.boldbi.com/working-with-data-sources/dashboard-parameter/) and [Custom Attributes Documentation](https://help.boldbi.com/working-with-data-sources/configuring-custom-attribute/) for more details.
 
 ## Connecting Bold BI to Amazon Redshift Data Source via REST API
 
 ### Prerequisites 
 
-Type while creating the data source needs to be redshift.
+The type when creating the data source needs to be redshift.
 
-[Rest API - v4.0](https://help.boldbi.com/embedded-bi/rest-api-reference/v4.0/api-reference/)
+[Rest API - v4.0](/server-api-reference/v4.0/api-reference/)
 
 ### Modes
 
-Through the REST API, only the **live mode** data source can be created and edited.
+Only the **live mode** data source can be created and edited through the REST API.
 
 ### Parameters for creating Data Source
 
-> **NOTE:** The ability to provide join support is available only during the creation of a new data source. Join in edit connection mode is not supported.
+> **NOTE:** The ability to provide join support is only available during the creation of a new data source. Join in edit connection mode is not supported.
 
    <table>
    <tr>
@@ -406,7 +406,7 @@ Through the REST API, only the **live mode** data source can be created and edit
 
 ### Parameters for editing Data Source
 
-> **NOTE:**  For editing Data Source via API. All the parameters are optional. The parameter which needs to be changed can be provided.
+> **NOTE:**  To edit the Data Source via the API, all parameters are optional. Only the parameter that needs to be changed should be provided.
 
 #### Parameters for modifying expressions when editing Data Source
    
@@ -582,7 +582,7 @@ Through the REST API, only the **live mode** data source can be created and edit
 
 ```
 
-> **NOTE:**  Through Rest API, the data source can be created or edited with only one table. If different table is provided in edit data source, the table will be replaced. The widgets will be retained only if the schema is same as the previous table.
+> **NOTE:**  Through the Rest API, the data source can be created or edited using only one table. If a different table is provided for editing the data source, the table will be replaced. The widgets will be retained only if the schema is the same as the previous table.
 
 ### Connection Sample for Code View Mode
 

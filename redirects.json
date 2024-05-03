@@ -2269,7 +2269,7 @@
   },
   {
     "fromPath": "/embedded-bi/working-with-dashboards/configuring-dashboard-filters/",
-    "toPath": "/working-with-dashboards/configuring-dashboard-filters/"
+    "toPath": "/working-with-dashboards/configuring-cross-filters/"
   },
   {
     "fromPath": "/embedded-bi/working-with-dashboards/commenting-dashboard/",
@@ -3716,6 +3716,10 @@
     "toPath": "/working-with-data-sources/data-connectors/commvault/"
   },
   {
+    "fromPath": "/working-with-dashboards/configuring-dashboard-filters/",
+    "toPath": "/working-with-dashboards/configuring-cross-filters/"
+  },
+  {
     "fromPath": "/working-with-dashboards/dashboard-templates/",
     "toPath": "/working-with-dashboards/dashboards-templates/"
   },
@@ -4513,7 +4517,7 @@
   },
   {
     "fromPath": "/cloud-bi/working-with-dashboards/configuring-dashboard-filters/",
-    "toPath": "/working-with-dashboards/configuring-dashboard-filters/"
+    "toPath": "/working-with-dashboards/configuring-cross-filters/"
   },
   {
     "fromPath": "/cloud-bi/working-with-dashboards/commenting-dashboard/",
@@ -49330,5 +49334,85 @@
   {
     "fromPath": "/working-with-data-source/working-with-the-bold-extract/data-connectors/zendesk-talk/",
     "toPath": "/working-with-data-sources/working-with-bold-etl/data-connectors/zendesk-talk/"
+  },
+  {
+    "fromPath": "/working-with-data-source/data-connectors/wistia/",
+    "toPath": "/working-with-data-sources/data-connectors/wistia/"
+  },
+  {
+    "fromPath": "/working-with-data-source/data-connectors/rockset/",
+    "toPath": "/working-with-data-sources/data-connectors/rockset/"
+  },
+  {
+    "fromPath": "/working-with-data-source/data-connectors/azure-data-explorer/",
+    "toPath": "/working-with-data-sources/data-connectors/azure-data-explorer/"
+  },
+  {
+    "fromPath": "/javascript-based/getting-started/#how-to-pass-the-dashboard-parameter-and-url-filter-parameter-in-the-authorization-end-point-dynamically",
+    "toPath": "/getting-started/embedding-in-your-application/#how-to-pass-the-dashboard-parameter-and-url-filter-parameter-in-the-authorization-endpoint-dynamically"
+  },
+  {
+    "fromPath": "/getting-started/embedding-in-your-application/#how-to-implement-the-authorize-server-with-user-mail-or-user-name",
+    "toPath": "/getting-started/embedding-in-your-application/#how-to-implement-the-authorize-server-with-user-email-or-user-name"
+  },
+  {
+    "fromPath": "/embedded-bi/embedded-bi/javascript/api-reference/",
+    "toPath": "/embedding-options/embedding-sdk/embedding-api-reference/"
+  },
+  {
+    "fromPath": "/embedded-bi/rest-api-reference/v4.0/api-reference/#tag/Embed-Secret-Authentication",
+    "toPath": "/server-api-reference/v4.0/api-reference/#tag/Embed-Secret-Authentication"
+  },
+  {
+    "fromPath": "/embedded-bi/rest-api-reference/v4.0/api-reference/#tag/Password-Authentication",
+    "toPath": "/server-api-reference/v4.0/api-reference/#tag/Password-Authentication"
+  },
+  {
+    "fromPath": "/embedded-bi/rest-api-reference/v2.0/api-reference/#operation/Authentication",
+    "toPath": "/server-api-reference/v2.0/api-reference/#section/Authentication"
+  },
+  {
+    "fromPath": "/embedded-bi/rest-api-reference/v2.0/api-reference/#operation/Users_GetGroupsOfUser",
+    "toPath": "/server-api-reference/v2.0/api-reference/#section/Authentication"
+  },
+  {
+    "fromPath": "/embedded-bi/rest-api-reference/v2.0/api-reference/#operation/Permission_GetGroupPermission",
+    "toPath": "/server-api-reference/v2.0/api-reference/#section/Authentication"
+  },
+  {
+    "fromPath": "/embedded-bi/rest-api-reference/v2.0/api-reference/#operation/Items_GetItems",
+    "toPath": "/server-api-reference/v2.0/api-reference/#operation/Items_GetItems"
+  },
+  {
+    "fromPath": "/embedded-bi/site-administration/api-reference/v2.0/api-reference/#tag/Application-Startup/operation/application_startup",
+    "toPath": "/site-administration/api-reference/v2.0/api-reference/#tag/Application-Startup/operation/application_startup"
+  },
+  {
+    "fromPath": "/embedded-bi/site-administration/api-reference/v1.0/try-it-now/",
+    "toPath": "/site-administration/api-reference/v1.0/try-it-now/"
+  },
+  {
+    "fromPath": "/embedded-bi/site-administration/api-reference/v2.0/try-it-now/",
+    "toPath": "/site-administration/api-reference/v2.0/try-it-now/"
+  },
+  {
+    "fromPath": "/embedded-bi/setup/overview/#software-requirements",
+    "toPath": "/deploying-bold-bi/overview/#software-requirements"
+  },
+  {
+    "fromPath": "/embedded-bi/site-administration/account-settings/#automatic-activation",
+    "toPath": "/site-administration/account-settings/#automatic-activation"
+  },
+  {
+    "fromPath": "/embedded-bi/site-administration/account-settings/#email-required",
+    "toPath": "/site-administration/account-settings/#email-required"
+  },
+  {
+    "fromPath": "/embedded-bi/rest-api-reference/v5.0/try-it-now/",
+    "toPath": "/server-api-reference/v5.0/try-it-now/"
+  },
+  {
+    "fromPath": "/embedded-bi/rest-api-reference/site-administration/interact-with-rest-api/",
+    "toPath": "/server-api-reference/interact-with-rest-api/"
   }
 ]

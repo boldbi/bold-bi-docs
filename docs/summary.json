@@ -24,6 +24,10 @@
 			"Self-deploy a Bold BI Server on AWS VM": "deploy-aws-vm",
 			"Upgrade VM to latest version": "update-aws-vm"
 		},
+		"Deploying in GCP": {
+			"Prerequisites": "prerequisites-gcp-vm",
+			"Self-deploy a Bold BI Server on GCP VM": "deploy-gcp-vm"
+		},
 		"Deploying in Azure App Service": {
 			"Prerequisites": "prerequisites",
 			"Recommendations": "recommendations",
@@ -70,7 +74,8 @@
 			"Prerequisites": "deployment-prerequisites",
 			"Recommended System Configuration": "recommended-system-configuration",
 			"Bold BI on Docker": "bold-bi-on-docker"
-		}
+		},
+	"Upgrade guidelines":"upgrade-guidelines"
 	},
 	"Application Startup": {
 		"Latest": "latest",
@@ -88,7 +93,9 @@
 			"Embedding a datasource": "embedding-a-datasource",
 			"Embedding multiple dashboards and widgets": "embedding-multiple-dashboards-and-widgets",
 			"Embedding Pinboard": "embedding-pinboard",
+			"Embedding Dashboard with View": "embedding-the-dashboard-with-views",
 			"Custom Theme Embedding": "custom-theme-embedding",
+			"Types of Data Filtering": "types-of-data-filtering-in-embedding",
 			"Embedding Multitab Dashboard Programmatically": "embedding-multitab-dashboard-programmatically",
 			"Embedding API Reference": {
 				"Members": "members.md",
@@ -464,6 +471,7 @@
 		"Working with Widgets": {
 			"Filtering": "configuring-widget-filters",
 			"Manual Filtering": "manual-filters",
+			"Virtual Scrolling": "virtual-scrolling",
 			"Sorting": "advanced-sorting",
 			"Linking": "linking-urls-and-dashboards",
 			"Configuring Label Parameters": "configuring-label-parameters",
@@ -487,7 +495,7 @@
 		"Dashboard Themes": "dashboard-theme",
 		"Import Widgets": "import-widgets",
 		"Edit Dashboard": "edit-existing-dashboard",
-		"Configuring Dashboard Filters": "configuring-dashboard-filters",
+		"Configuring Cross Filters": "configuring-cross-filters",
 		"Commenting Dashboard": "commenting-dashboard",
 		"Data Alerts": "data-alerts",
 		"Data Cache": "data-cache",
@@ -654,7 +662,8 @@
           "Import Azure Active Directory Groups": "import-azure-active-directory-groups",
           "Synchronize Azure Active Directory Groups": "synchronize-azure-active-directory-groups",
           "Import OAuth 2.0 Groups": "import-oauth-groups",
-          "Import OpenID Connect Groups": "import-openid-groups"
+          "Import OpenID Connect Groups": "import-openid-groups",
+		  "Bulk Import Result": "bulk-import-result"
         },
         "Manage Permissions":"manage-permissions"
     },

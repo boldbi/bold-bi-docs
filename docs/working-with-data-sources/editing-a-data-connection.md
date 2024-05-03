@@ -33,7 +33,7 @@ You can edit a data connection using the following steps:
 
    ![Edit connection schema](/static/assets/working-with-datasource/images/editconnectionretainschema.png)
 
-5. Make the preferred changes and click `Reconnect`.
+5. Make the necessary changes and click `Reconnect`.
 
 > **IMPORTANT:**  Reconnection will persist the dropped table(s), table relationships, data filters, and data configuration to widgets, unless the schema differs from the previous data connection. i.e., the reconnected database should have similar schema such as the previously connected database, which may exist in same or different location. If the reconnected database does not have a column that is available in previous one, reconnection will just ignore that column and its related settings and persist others. Beyond that level, reconnection will drop previous settings entirely.
 

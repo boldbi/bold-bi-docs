@@ -130,7 +130,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/ruby-on-rails
      ```js
         <head>
             <title>Demo</title>
-            <%= javascript_include_tag "https://cdn.boldbi.com/embedded-sdk/v7.6.12/boldbi-embed.js", "data-turbolinks-track" => true  %>
+            <%= javascript_include_tag "https://cdn.boldbi.com/embedded-sdk/v7.8.18/boldbi-embed.js", "data-turbolinks-track" => true  %>
         </head>
 
         <body onload="embedSample();">
@@ -149,7 +149,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/ruby-on-rails
                         height: "800px",
                         width: "1200px",
                         authorizationServer: {
-                        //URL pointing to AuthorizeServer API file. We are running ruby sample in 3000 port(http://localhost:3000/api/v1/authorizes). Learn more about authorize server(https://help.syncfusion.com/bold-bi/embedded-bi/javascript/authorize-server)
+                        //URL pointing to AuthorizeServer API file. We are running ruby sample in 3000 port(http://localhost:3000/api/v1/authorizes). Learn more about authorize server(https://help.boldbi.com/security-configuration/authorize-server)
                             url: "http://localhost:3000/api/v1/authorizes"
                         },
                         expirationTime: "100000",//Set the duration for the token to be alive.

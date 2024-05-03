@@ -8,14 +8,13 @@ documentation: ug
 
 # Joining tables based on expression column
 
-Bold BI allows joining tables based on the expression columns created.
+Bold BI allows for joining tables based on the expression columns that are created.
 
-
-1. Create an [expression](/working-with-data-sources/data-modeling/configuring-expression-columns/) for joining the tables and click `Save`. The below expression used to split the employee name from Email column in the Employee table and joining the Employee table with EmployeesProfile table.
+1. Create an [expression](/working-with-data-sources/data-modeling/configuring-expression-columns/) for joining the tables and click `Save`. The expression below is used to split the employee name from the Email column in the Employee table and join the Employee table with the EmployeesProfile table.
 
     ![create expression](/static/assets/faq/images/create-expression-for-join.png)
 
-2. Select the column created in previous step under expression.
+2. Select the column created in the previous step under expression.
 
     ![select expression column](/static/assets/faq/images/select-expression-columns.png)
 

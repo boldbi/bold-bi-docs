@@ -32,7 +32,7 @@ This section explains how to embed the Bold BI dashboard into an ASP.NET MVC sam
         </tr>
         <tr>
         <td align="left">EmbedSecret</td>
-            <td align="left">Get your EmbedSecret key from embed tab by enabling <code>Enable embed authentication</code> in the <a href='https://help.boldbi.com/embedded-bi/site-administration/embed-settings/'>Administration page</a>. </td>
+            <td align="left">Get your EmbedSecret key from embed tab by enabling <code>Enable embed authentication</code> in the <a href='/site-administration/embed-settings/'>Administration page</a>. </td>
         </tr>  
         <tr>
         <td align="left">DashboardUrl</td>

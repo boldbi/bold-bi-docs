@@ -9,14 +9,14 @@ documentation: ug
 
 # Renaming a Data Source
 
-You can rename a data source using the `Name` field in the tools pane in data design view as shown (highlighted) in the following image.
+To rename a data source, you can use the `Name` field in the tools pane in data design view. This field is highlighted in the image below.
 
 ![Select rename](/static/assets/working-with-datasource/images/selectrename.png)
 
-Click `Save` button in the data design view.
+Click the `Save` button in the data design view.
 
 ![Save rename](/static/assets/working-with-datasource/images/saverename.png)
 
-After renaming the data source, changes will be reflected in the data panel as shown in the following image.
+Once you have renamed the data source, the changes will be reflected in the data panel, as shown in the image below.
 
 ![Data source name](/static/assets/working-with-datasource/images/datasourcename.png)

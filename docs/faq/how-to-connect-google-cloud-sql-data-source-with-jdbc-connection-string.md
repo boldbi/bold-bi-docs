@@ -8,27 +8,27 @@ documentation: ug
 ---
 # How to connect Google Cloud SQL data source with JBDC connection string
 
-Bold BI application allows you to connect Google Cloud SQL data source with JDBC connection string parameters.
+The Bold BI application allows you to connect a Google Cloud SQL data source using JDBC connection string parameters.
 
 ## JDBC connection string
 
-You cannot directly pass the JDBC URL in Bold BI, but you can connect to Google Cloud SQL data source using the JDBC URL parameters. The general format of JDBC connection string is mentioned as follows. 
+You cannot directly pass the JDBC URL in Bold BI, but you can connect to a Google Cloud SQL data source using the JDBC URL parameters. The general format of the JDBC connection string is as follows. 
 
 `jdbc:<data source>://<server name or hostname>:<port>/<database name>`
 
 ## Connecting Google Cloud SQL with JDBC URL
  
-1.  Refer to the [Choosing Google Cloud SQL data source documentation](/working-with-data-sources/data-connectors/google-cloud-sql/#choose-google-cloud-sql-data-source) for choosing the data source from the connectors.
+1.  Refer to the [Choosing Google Cloud SQL data source documentation](/working-with-data-sources/data-connectors/google-cloud-sql/#choose-google-cloud-sql-data-source) for selecting  the data source from the connectors.
 
-2.	After clicking the data source, the **NEW DATA SOURCE** configuration panel opens.
+2.	After clicking on the data source, the **NEW DATA SOURCE** configuration panel opens.
 
-3.	You need to configure the configuration panel to connect to the Google Cloud SQL data source. Since Google Cloud SQL supports `MySQL` and `PostgreSQL` database engines, you can connect with MySQL or PostgreSQL databases.
+3.	You need to configure the configuration panel in order to connect to the Google Cloud SQL data source. Google Cloud SQL supports `MySQL` and `PostgreSQL` database engines, so you can connect with either MySQL or PostgreSQL databases.
 
     Here, you have the JDBC URL of the `PostgreSQL` data source.
 	
     `jdbc:postgresql://demoserver:5740/postgres`
 
-    Here, the values for `Server name`, `Port`, and `Database` from the above JDBC connection string parameters for connecting the Google Cloud SQL data source with the PostgreSQL database engine in Bold BI are specified as follows. You can also set the additional connection parameters using [this](/faq/how-to-enable-ssl-through-connection-parameters-for-postgresql-data-source/) documentation.
+    Here, the values for the `Server name`, `Port`, and `Database` in the JDBC connection string parameters above are specified for connecting the Google Cloud SQL data source with the PostgreSQL database engine in Bold BI. You can also set additional connection parameters using [this](/faq/how-to-enable-ssl-through-connection-parameters-for-postgresql-data-source/) documentation.
 
     ![Configuration panel](/static/assets/faq/images/configure-cloud-sql.png#max-width=55%)
 	

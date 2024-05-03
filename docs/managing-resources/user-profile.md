@@ -8,7 +8,7 @@ documentation: ug
 
 # User Profile in the Bold BI
 
-This section explains how to view the profile, edit the profile details, edit the profile settings, set user notification preferences, view my permissions, connect sites, connect accounts, and change the password for the user profile in Bold BI.
+This section explains how to view the profile, edit the profile details, edit the profile settings, set user notification preferences, view my permissions, connect sites, connect accounts, generate the access token for the logged-in user, and change the password for the user profile in Bold BI.
 
 ## Profile details
 
@@ -148,6 +148,28 @@ If the `Disable User Preference` is enabled in site notification settings, the u
 
 ![Disabled in site notification](/static/assets/managing-resources/images/notification-disabled-in-site.png)
 
+## Personal Access Token
+Personal access token serves the same purpose as an OAuth access token. It enables secure embedding of the dashboard viewer and designer within your application. Additionally, this token grants access to all of our REST API endpoints.
+
+### Steps to generate the access token from the dashboard server UI
+
+1. In the Profile page, Click the `Personal Access Token` tab.
+
+![Personal Access Token](/static/assets/managing-resources/images/personal-access-token.png)
+
+2. Select the required duration from the dropdown for token expiration.
+
+![Token Expire Days DropDown](/static/assets/managing-resources/images/expire-dropdown.png)
+
+3. Click the `Generate Token` button, and in the confirmation dialog, choose `Yes`.
+
+![Generate Token Confirmation Button](/static/assets/managing-resources/images/generate-token-confirmation-dialog.png)
+
+4. An access token will be generated. Now, you can copy and use the token for embedding and REST APIs.
+
+![Generated Token Copy](/static/assets/managing-resources/images/copy-icon.png)
+
+ > **NOTE:**  The logged-in user's credentials are utilized to produce the access token.
      
 ## Change Password
 The password to log in to Bold BI can be changed on the Bold BI change password page.

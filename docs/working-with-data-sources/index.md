@@ -24,7 +24,7 @@ Within extract mode, users can choose between two methods of connecting to the d
  
 In summary, Bold BI provides users with two distinct modes for connecting to SQL data sources, each offering unique benefits depending on the nature of the analysis and the requirements of the user. Whether opting for real-time access through live mode or leveraging the efficiency of extract mode, users can access and analyze SQL data effectively to drive informed decision-making and achieve their analytical objectives.
 
-You can explore the data source in detail here,
+You can explore the data source in detail here:
 
 [Creating a New Data Source](/working-with-data-sources/creating-a-new-data-source/)
 

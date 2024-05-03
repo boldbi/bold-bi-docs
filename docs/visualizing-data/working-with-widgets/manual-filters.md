@@ -9,11 +9,11 @@ keywords: manual filters, widget filtering, filtering visuals
 
 # Configuring manual filter in widgets
 
-Starting from Bold BI [`v3.3.88`](https://www.boldbi.com/release-history/enterprise/3-3#3-3-88) you can filter the data bind to the widget by using any of the fields present in the data source. You can use single or multiple fields to filter the widget data. 
+Starting from Bold BI [`v3.3.88`](https://www.boldbi.com/release-history/3-3#3-3-88) you can filter the data bind to the widget by using any of the fields present in the data source. You can use single or multiple fields to filter the widget data. 
 
 **Example:**
 
-Here the chart widget shows Product Category with high sales. Using manual filters we can show the data of specific country, in this case we will be showing the data of `Germany` using the `Country` field.
+The chart widget shows Product Category with high sales. Using manual filters, we can show the data of a specific country. In this case, we will be showing the data of `Germany` using the `Country` field.
 
 *Chart widget: Shows the Categories with High Sales.* <br>
  ![Chart widget](/static/assets/visualizing-data/working-with-widgets/images/manual-filter-not-applied-in-chart.png)
@@ -24,7 +24,7 @@ Here the chart widget shows Product Category with high sales. Using manual filte
 ## How to configure the manual filter in widgets
 
 1.	Open the dashboard in the ` Dashboard Designer`. 
-2.	Select the  `widget` in the design layout in which you want to add manual filter. 
+2.	Select the `widget` in the design layout in which you want to add a manual filter. 
 3.	Click the `properties` icon as shown in the following screenshot.<br>
  ![Click properties option](/static/assets/visualizing-data/working-with-widgets/images/manual-filter-properties-icon.png)
 4.	Now, click `ASSIGN DATA` to open the data panel.<br>

@@ -31,28 +31,28 @@ To configure the ChartMogul data source, follow these steps:
 The NEW DATA SOURCE setup screen appears when you click the ChartMogul data source. To build a ChartMogul data source, follow the instructions below.
 
 1. Enter the name and description (optional) for the data source.
-2. Enter an API in the URL text box which must be a valid REST API. Refer to the [Chart Mogul API documentation](https://dev.chartmogul.com/reference).
+2. Enter an API URL in the URL text box, which must be a valid REST API. Refer to the [Chart Mogul API documentation](https://dev.chartmogul.com/reference) for more details.
 
     Example: `https://api.chartmogul.com/v1/metrics/arr?start-date=<:enter_start_date>&end-date=<:enter_end_date>`
 
-3. Select **GET** method for the REST API in **Method** combo box.
-4. Choose a time interval for **Refresh Settings** using the combo box, to trigger the Rest API request periodically to keep the data in sync with our dashboard.
-5. Enter a valid **API Key** to access the endpoint in your account. To obtain an API key in ChartMogul, Refer to more details on<a href ="#GenerateAPIKey"> Generate ChartMogul API Key</a>
+3. Select **GET** method for the REST API in the **Method** combo box.
+4. Choose a time interval for **Refresh Settings** using the combo box to trigger the REST API request periodically to keep the data in sync with our dashboard.
+5. Enter a valid **API Key** to access the endpoint in your account. To obtain an API key in ChartMogul, refer to more details on how to <a href ="#GenerateAPIKey"> Generate ChartMogul API Key</a>
 
    ![Data source preview](/static/assets/working-with-datasource/data-connectors/images/chartmogul/ChartMogul_view.png)  
 
-Edit the connection information set using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
+To edit the connection information set, use the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 
 
 <p id="GenerateAPIKey"></a>
 
 #### How to get APIKEY from ChartMogul
 
-1. Log in to your ChartMogul account [chartmogul.com](https://app.chartmogul.com/users/sign_in).
+1. Log in to your ChartMogul account on [chartmogul.com](https://app.chartmogul.com/users/sign_in).
 
    ![login chartmogul](/static/assets/working-with-datasource/data-connectors/images/chartmogul/login.png)
 
-2. Navigating to **Profile to View Profile.**
+2. Navigate to **Profile to View Profile**.
 
    ![Choose profile](/static/assets/working-with-datasource/data-connectors/images/chartmogul/profile.png)
 
@@ -91,12 +91,12 @@ The period before the next refresh call is triggered. It will automatically init
 </table>
 
 ### Preview and Data Import
-* Click the **Preview & Connect** to connect with the configurations set.
-* The Choose Table(s) dialog opens. The schema represents the key fields of JSON data retrieved from the Alma Rest API request. This dialog displays a list of the schema(s) in the tree view and their corresponding values in the grid for preview. Select the required schemas from the tree view for the designer and click **Connect**.
+* Click the **Preview & Connect** button to connect with the configurations that have been set.
+* The Choose Table(s) dialog will open. The schema represents the key fields of JSON data retrieved from the Alma Rest API request. This dialog displays a list of the schemas in the tree view and their corresponding values in the grid for preview. Select the required schemas from the tree view for the designer and click **Connect**.
 
    ![Preview](/static/assets/working-with-datasource/data-connectors/images/common/Preview.png)
 
-* Now, the data design view page with the selected table schema opens. Drag from the tree view table in the left pane and drop the table on the Query Designer page.
+* Now, the data design view page with the selected table schema will open. Drag the table from the tree view in the left pane and drop it onto the Query Designer page.
 
    ![Query Editor](/static/assets/working-with-datasource/data-connectors/images/common/QueryEditor.png)
 
@@ -104,7 +104,7 @@ The period before the next refresh call is triggered. It will automatically init
 
 ### Connect using custom attribute and dashboard parameter
 
-We have added support for **custom attributes and dashboard parameters** to the data source connection. You can connect to the data source using custom attributes or dashboard parameters.
+We have added support for connecting to the data source using **custom attributes and dashboard parameters**. You can connect to the data source using custom attributes or dashboard parameters.
 
 **Custom Attribute**
 
@@ -114,7 +114,7 @@ We have added support for **custom attributes and dashboard parameters** to the 
 
 ![Dashboard Parameter](/static/assets/working-with-datasource/data-connectors/images/chartmogul/Dashboardparameter.png)
 
->**Note:** Refer the [Dashboard Parameter Documentation](https://help.boldbi.com/working-with-data-sources/dashboard-parameter/) and [Custom Attributes Documentation](https://help.boldbi.com/working-with-data-sources/configuring-custom-attribute/) for more details.
+>**Note:** Please refer to the [Dashboard Parameter Documentation](https://help.boldbi.com/working-with-data-sources/dashboard-parameter/) and [Custom Attributes Documentation](https://help.boldbi.com/working-with-data-sources/configuring-custom-attribute/) for more details.
 
 ## Related links
 [Data Transformation](/working-with-data-sources/data-modeling/joining-table/)

@@ -217,6 +217,7 @@ var dashboard = BoldBI.create({
 dashboard.loadMultitabDashboard();
 ```
 >**Note:** To embed the multitab dashboard programmatically, either dashboardIds or dashboardPaths can be used.
+
 To access additional details, please click on the following [link](/embedding-options/embedding-sdk/embedding-multitab-dashboard-programmatically/).
 
 ## loadMultipleWidgets()
@@ -238,6 +239,29 @@ var dashboard = BoldBI.create({
 dashboard.loadMultipleWidgets();
 ```
 >**Note:** To embed the necessary widgets, the client application should create a container where the widgets will be displayed.
+
+## loadView()
+    
+This method will render the dashboard with a view based on the view options provided while calling the create method.
+
+**Example** 
+  
+```js      
+var dashboard = BoldBI.create({
+     serverUrl: "https://boldbidemo/bi/site/site1",
+     viewId: "b64aebef-58ca-4033-b81a-39350c849b75", 
+     embedContainerId: "dashboard_container",// This should be the container id where you want to embed the dashboard
+     environment: BoldBI.Environment.Enterprise,
+     height: "800px",
+     width: "1200px",
+     authorizationServer: {
+     url: "https://boldbidemo/authorize/server"
+     },   
+}); 
+dashboard.loadView();
+```
+
+For more details, please click on the following [link](/embedding-options/embedding-sdk/embedding-the-dashboard-with-views/).
 
 ## refreshDashboard()
     

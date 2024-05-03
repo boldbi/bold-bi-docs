@@ -7,7 +7,7 @@ documentation: ug
 ---
 
 # Connecting Bold BI to Chargify data source
-Bold BI dashboard designer supports connecting Chargify web services through REST API. 
+Bold BI dashboard designer supports connecting Chargify web services through the REST API.
 
 ## Choose Chargify data source
 To configure the Chargify data source, follow the below steps:
@@ -20,7 +20,7 @@ To configure the Chargify data source, follow the below steps:
 
    ![Choose data source](/static/assets/working-with-datasource/data-connectors/images/Chargify/ChooseDS.png)
 
-> **NOTE:**  You can also create a data source from the home page by clicking the **Data Sources** menu from left menu panel and **Create Data Source** from the data sources page.
+> **NOTE:**  You can also create a data source from the home page by clicking the **Data Sources** menu from the left menu panel and selecting **Create Data Source** from the data sources page.
 
    ![Choose data source from server](/static/assets/working-with-datasource/data-connectors/images/Chargify/ChooseDS_Server.png)
 
@@ -28,14 +28,14 @@ To configure the Chargify data source, follow the below steps:
 ## Create Chargify data source
 Once you click the data source, the NEW DATA SOURCE configuration panel opens. Follow the below steps to create Chargify data source.
 1. Enter a name and description (optional) for the data source.
-2. Enter a valid Chargify REST API endpoint in the URL textbox. Refer the [Chargify API documentation](https://reference.chargify.com/v1/basics/introduction) for more details.
+2. Enter a valid Chargify REST API endpoint in the URL textbox. Refer to the [Chargify API documentation](https://reference.chargify.com/v1/basics/introduction) for more details.
 
-    Example: `https://<:your_account_name>.chargify.com/%3c:api_end_point%3e`    
+    Example: `https://<:your_account_name>.chargify.com/%3c:api_end_point%3e`
 
-3. Select **GET** method for the REST API in **Method** combo box.
-4. In **Max Rows**, enter the maximum number of rows to be fetched from the Chargify data source. This value is used to fetch the data from Chargify data source via pagination.
-5. Choose a time interval for **Refresh Settings** using the combo box, to trigger the Rest API request periodically to keep the data in sync with our dashboard.  
-6. Select **JSON** data type in **Data Format** combo box.
+3. Select **GET** method for the REST API in the **Method** combo box.
+4. In **Max Rows**, enter the maximum number of rows to be fetched from the Chargify data source. This value is used for pagination.
+5. Choose a time interval for **Refresh Settings** using the combo box to periodically trigger the Rest API request to keep the data in sync with the dashboard.
+6. Select **JSON** data type in the **Data Format** combo box.
 7. Choose **Basic http Authentication** under **Authentication Type** and input a valid **Account Key**.
 
 You can also edit the connection information set here using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
@@ -52,10 +52,10 @@ We have added support for **custom attributes and dashboard parameters** to the 
 
 ![Dashboard Parameter](/static/assets/working-with-datasource/data-connectors/images/Chargify/Dashboardparameter.png)
 
->**Note:** Refer the [Dashboard Parameter Documentation](https://help.boldbi.com/working-with-data-sources/dashboard-parameter/) and [Custom Attributes Documentation](https://help.boldbi.com/working-with-data-sources/configuring-custom-attribute/) for more details.
+>**Note:** Refer to the [Dashboard Parameter Documentation](https://help.boldbi.com/working-with-data-sources/dashboard-parameter/) and [Custom Attributes Documentation](https://help.boldbi.com/working-with-data-sources/configuring-custom-attribute/) for more details.
 
 #### How do I get Account Key for connecting Chargify data source?
-1. Login to Chargify account. Go to *Config -> Integrations*.
+1. Login to your Chargify account. Go to *Config -> Integrations*.
 2. Use this *API key* as `Account key` in Chargify data source, refer [about API Keys](https://help.chargify.com/integrations/api-keys-chargify-direct.html).
 
 #### Additional information
@@ -87,7 +87,7 @@ Replace it in the URL to query a particular payment:
 
 `https://<:account_name>.chargify.com/%3c:end_point%3e`
 
-For more information on the API endpoints available for this data source, refer to their official [API Documentation](https://reference.chargify.com/)
+For more information on the API endpoints available for this data source, refer to their official [API Documentation](https://reference.chargify.com/).
 
 ### Sample queries
 **Subscriptions**
@@ -112,7 +112,7 @@ For more information on the API endpoints available for this data source, refer 
 
 ### Preview and data import
 * Click **Preview & Connect** to connect with the configurations set.
-* The Choose Schema(s) dialog opens. The schema represents the key fields of JSON data retrieved from Chargify Rest API request. This dialog displays a list of schemas in treeview and its corresponding values in grid for preview. Select required schema(s) from treeview to use in designer and click **Connect**.
+* The Choose Schema(s) dialog opens. The schema represents the key fields of JSON data retrieved from the Chargify Rest API request. This dialog displays a list of schemas in treeview and its corresponding values in grid for preview. Select the required schema(s) from the treeview to use in the designer and click **Connect**.
 
    ![Preview](/static/assets/working-with-datasource/data-connectors/images/common/Preview.png)
 

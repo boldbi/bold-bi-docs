@@ -8,9 +8,9 @@ documentation: ug
 
 # Configuring Replace value support in Bold BI
 
-This section explains how to use the Replace value option in Bold BI Enterprise for both the measure column as well as the dimension columns (String and Date).
+This section explains how to use the Replace Value option in Bold BI Enterprise for both the measure column and the dimension columns (String and Date).
 
-You can explore the replace value support detail here,
+You can explore the details of the replace value support here.
 
 [Replace value support in Datasource level](/working-with-data-sources/data-modeling/configuring-replace-value/datasource-level-support/)
 

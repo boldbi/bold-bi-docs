@@ -7,10 +7,10 @@ documentation: ug
 ---
 
 # Connecting Bold BI to Alchemer data source
-Bold BI dashboard designer supports connecting Alchemer web services through REST API. 
+Bold BI dashboard designer supports connecting to Alchemer web services through REST API.
 
 ## Choose Alchemer data source
-To configure the Alchemer data source, follow the below steps:
+To choose an Alchemer data source, follow these steps:
 1. Click the **Data Sources** button in the configuration panel to add a new data connection.
 
    ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/common/DataSourcesIcon.png)
@@ -20,32 +20,32 @@ To configure the Alchemer data source, follow the below steps:
 
    ![Choose data source](/static/assets/working-with-datasource/data-connectors/images/Alchemer/ChooseDS.png)
 
-> **NOTE:**  You can also create a data source from the home page by clicking the **Data Sources** menu from left menu panel and **Create Data Source** from the data sources page.
+> **NOTE:**  You can also create a data source from the home page by clicking the **Data Sources** menu from the left menu panel and selecting **Create Data Source**.
 
    ![Choose data source from server](/static/assets/working-with-datasource/data-connectors/images/Alchemer/ChooseDS_Server.png)
 
 
 ## Create Alchemer data source
 Once you click the data source, the NEW DATA SOURCE configuration panel opens. Follow the below steps to create Alchemer data source.
-1. Enter a name and description (optional) for the data source.
-2. Enter a valid Alchemer REST API endpoint in the URL textbox. Refer the [Alchemer API documentation](https://apihelp.alchemer.com/help) for more details.
+1. Enter a name and optional description for the data source.
+2. Enter a valid Alchemer REST API endpoint in the URL textbox. Refer to the [Alchemer API documentation](https://apihelp.alchemer.com/help) for more details.
 
     Example: `http://restapi.alchemer.com/v5/<:yourendpoint>?api_token=<:your_api_token>&api_token_secret=<:your_api_secret>`
 
-3. Select **GET** method for the REST API in **Method** combo box.
-4. In **Max Rows**, enter the maximum number of rows to be fetched from the Alchemer data source. This value is used to fetch the data from Alchemer data source via pagination.
-5. Choose a time interval for **Refresh Settings** using the combo box, to trigger the Rest API request periodically to keep the data in sync with our dashboard.  
-6. Select **JSON** data type in **Data Format** combo box.
-7. Choose **None** under **Authentication Type**.
+3. Select **GET** method for the REST API in the **Method** dropdown.
+4. Enter the maximum number of rows to be fetched from the Alchemer data source in the **Max Rows** field for pagination.
+5. Choose a time interval for **Refresh Settings** to trigger the REST API request periodically to keep the data in sync with the dashboard. 
+6. Select **JSON** data type in the **Data Format** dropdown.
+7. Choose **None** for **Authentication Type**.
 
-You can also edit the connection information set here using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
+You can also edit the connection information using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 
 #### How do I get API Token for connecting Alchemer Data source?
-1. Login to [Alchemer](https://www.alchemer.com/) account. Go to *Account -> Integrations -> API Key* to get your API key and API secret.
+1. Login to your [Alchemer](https://www.alchemer.com/) and go to *Account -> Integrations -> API Key* to get your API key and API secret.
 
     ![API Request Parameters](/static/assets/working-with-datasource/data-connectors/images/Alchemer/APIKey.png)
 
-2. If you don't find any keys, go to *Account -> Integrations -> Manage API -> Create an API key* to create a new key.
+2. If you don’t have any keys, go to *Account -> Integrations -> Manage API -> Create an API key* to generate a new key.
 
     ![Manage API keys](/static/assets/working-with-datasource/data-connectors/images/Alchemer/ManageAPI.png)
 
@@ -71,7 +71,7 @@ Period of time before next refresh call is triggered. This will automatically tr
 </table>
 
 ### Setting up the URL
-1. You can replace *API Key* and *API Secret* in **URL** field. Else, replace the *API Request Parameters* in URL instead of default parameters in URL field.
+1. You can replace the *API Key* and API Secret in the **URL** field. Otherwise, replace the API Request Parameters in the URL instead of the default parameters in the URL field.
 
 ### Sample queries
 **Surveys**
@@ -80,14 +80,14 @@ Period of time before next refresh call is triggered. This will automatically tr
 
 ### Preview and data import
 * Click **Preview & Connect** to connect with the configurations set.
-* The Choose Schema(s) dialog opens. The schema represents the key fields of JSON data retrieved from Alchemer Rest API request. This dialog displays a list of schemas in treeview and its corresponding values in grid for preview. Select required schema(s) from treeview to use in designer and click **Connect**.
+* The Choose Schema(s) dialog opens. The schema represents the key fields of JSON data retrieved from the Alchemer Rest API request. This dialog displays a list of schemas in a treeview and its corresponding values in a grid for preview. Select the required schema(s) from the treeview to use in the designer and click **Connect**.
 
    ![Preview](/static/assets/working-with-datasource/data-connectors/images/common/Preview.png)
 
-* Now, the data design view page with selected table schema opens. Drag and drop the table.
+* Now, the data design view page with the selected table schema opens. Drag and drop the table.
    ![Query Editor](/static/assets/working-with-datasource/data-connectors/images/common/QueryEditor.png)
 
-* Click **Save** to save the data source with a relevant name.
+* Click **Save** to save the data source with a relevant name.
 
 ### Connect using custom attribute and dashboard parameter
 
@@ -101,7 +101,7 @@ We have added support for **custom attributes and dashboard parameters** to the 
 
 ![Dashboard Parameter](/static/assets/working-with-datasource/data-connectors/images/Alchemer/Dashboardparameter.png)
 
->**Note:** Refer the [Dashboard Parameter Documentation](https://help.boldbi.com/working-with-data-sources/dashboard-parameter/) and [Custom Attributes Documentation](https://help.boldbi.com/working-with-data-sources/configuring-custom-attribute/) for more details.
+>**Note:** Refer to the [Dashboard Parameter Documentation](https://help.boldbi.com/working-with-data-sources/dashboard-parameter/) and [Custom Attributes Documentation](https://help.boldbi.com/working-with-data-sources/configuring-custom-attribute/) for more details.
 
 
 ## Related links

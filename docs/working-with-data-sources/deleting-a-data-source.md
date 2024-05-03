@@ -10,15 +10,15 @@ documentation: ug
 
 # Deleting a Data Source
 
-You can delete an existing data source by using the following steps:
+To delete an existing data source, follow these steps:
 
-1. Click `Data Source` button in the configuration panel.
+1. Click on the `Data Source` button in the configuration panel.
 
-2. Select a data source listed in the data panel that you need to delete.
+2. Select the data source that you wish to delete from the list in the data panel.
 
    ![Data button](/static/assets/working-with-datasource/images/databutton.png)
 
-3. Click the highlighted icon to delete the selected data source.
+3. Click on the highlighted icon to delete the selected data source.
 
    ![Delete data icon](/static/assets/working-with-datasource/images/deletedataicon.png)
 

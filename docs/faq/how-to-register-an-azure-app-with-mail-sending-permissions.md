@@ -9,7 +9,7 @@ documentation: ug
 
 # How to register an Azure application with mail-sending API permissions and restrict its access to specific mailboxes?
 
-To enable email sending from the Bold BI Server using a Microsoft Office 365 account with OAuth authentication, it is essential to register an Azure app. This app needs to be granted the required API permissions for accessing the email service. Additionally, you can also limit access to specific mailboxes if needed.
+In order to enable email sending from the Bold BI Server using a Microsoft Office 365 account with OAuth authentication, it is essential to register an Azure app. This app must be granted the necessary API permissions to access the email service. Furthermore, it is possible to restrict access to specific mailboxes if necessary.
 
 ## Steps to register an Azure app with mail-sending API permissions:
 
@@ -17,11 +17,11 @@ To enable email sending from the Bold BI Server using a Microsoft Office 365 acc
 
 ![Azure portal](/static/assets/faq/images/entra-id.png)
 
-2. Click on `App registrations` in the side navigation menu and click `New registration`.
+2. Click on `App registrations` in the side navigation menu, and then click on `New registration`.
 
 ![App registrations](/static/assets/faq/images/new-app-registration.png)
 
-3. Enter a meaningful name in the Name section for your application. Choose "Accounts in this organizational directory only" option under Supported account types. Click `Register` to create the application.
+3. Enter a meaningful name in the Name section for your application. Choose the "Accounts in this organizational directory only" option under Supported account types. Click `Register` to create the application.
 
 ![Register app](/static/assets/faq/images/register-app.png)
 
@@ -29,15 +29,15 @@ To enable email sending from the Bold BI Server using a Microsoft Office 365 acc
 
 ![App credentials](/static/assets/faq/images/app-credential.png)
 
-5. Click on `Certificates & Secrets` option, select `New client secret` to generate a client secret for the app.
+5. Click on the `Certificates & Secrets` option, then select `New client secret` to generate a client secret for the app.
 
 ![Generate client secret](/static/assets/faq/images/generate-client-secret.png)
 
-6. Add the `Description` and select the `Expires` option as per your requirement. Click `Add`.
+6. Add the `description` and select the `Expires` option according to your needs. Then click `Add`.
 
 ![Add client secret](/static/assets/faq/images/add-client-secret.png)
 
-7. Copy the `value` which is the app client secret, and secure it for future purposes. You will not be able to see the value again once you reload the page.
+7. Copy the `value` that is the app client secret and securely store it for future use. You will not be able to view the value again once you reload the page.
 
 ![View client secret](/static/assets/faq/images/view-client-secret.png)
 
@@ -61,7 +61,7 @@ To enable email sending from the Bold BI Server using a Microsoft Office 365 acc
 
 ## Restricting app access to specific mailboxes:
 
-Using a Microsoft Office 365 account with OAuth Authentication for email sending through the Microsoft Graph API requires the 'Mail.Send' permission. However, granting this permission to the entire application can pose a potential risk of other senders misusing someone's email address. To address this concern, it is advisable to restrict app access. You can find instructions on configuring application access policies in the documentation at [this link](https://learn.microsoft.com/en-us/graph/auth-limit-mailbox-access#configure-applicationaccesspolicy). Without such restrictions, there is a risk of unauthorized users sending emails from the application, which could present potential security concerns. Once you have configured the application access policy for a specific mailbox, other mailboxes will be restricted from sending emails using the app.
+Using a Microsoft Office 365 account with OAuth Authentication for email sending through the Microsoft Graph API requires the ‘Mail.Send’ permission. However, granting this permission to the entire application can pose a potential risk of other senders misusing someone’s email address. To address this concern, it is advisable to restrict app access. Instructions on configuring application access policies can be found in the documentation at [this link](https://learn.microsoft.com/en-us/graph/auth-limit-mailbox-access#configure-applicationaccesspolicy). Without such restrictions, there is a risk of unauthorized users sending emails from the application, which could present potential security concerns. Once you have configured the application access policy for a specific mailbox, other mailboxes will be restricted from sending emails using the app.
 
 Sample to create access policy: Create an access policy to restrict app access to specific mailboxes.
 

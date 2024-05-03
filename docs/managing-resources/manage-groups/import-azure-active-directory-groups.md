@@ -27,19 +27,21 @@ A maximum of 1000 groups can be searched and pulled from Azure Active Directory 
 
 Bold BI will display the search results of the groups in a grid format.
 
-![Import groups from Azure Active Directory Server](/static/assets/managing-resources/manage-groups/images/Searched-azure-groups-list.png)
+![Import groups from Azure Active Directory Server](/static/assets/managing-resources/manage-groups/images/azure-active-directory-group-search.png)
 
 ## Import Groups
 
-To import Azure Active Directory groups into Bold BI, you must choose the groups from the list and click `Import groups` at the top right corner.
+To import Azure Active Directory groups into the Bold BI application, you must select the groups from the list and click on `Import Selected Groups` at the top right corner in order to import the selected groups or click on `Import All Groups` at the top right corner in order to import all groups.
 
-![Import Groups from Azure Active Directory](/static/assets/managing-resources/manage-groups/images/import-groups-from-azure-active-directory.png)
+![Import Groups from Azure Active Directory](/static/assets/managing-resources/manage-groups/images/Azure-Group-import-page.png)
 
-Bold BI will import the chosen groups and a confirmation message will be displayed as shown in the following image.
+Bold BI will import the chosen groups in the background as a job, and a confirmation dialog will be displayed as shown in the following figure.
 
-![Success message after imported the Azure Active Directory groups](/static/assets/managing-resources/manage-groups/images/Azure-Active-Directory-group-import-success-window.png#width=70%)
+![Confirmation dialog after import groups started](/static/assets/managing-resources/manage-groups/images/group-import-confirmation-dialog.png#width=70%)
 
-The success message box will provide information about which users were imported and which were not into Bold BI.
+You can view the status of the current import by clicking the `View Status` button in the confirmation dialog above. You will be taken to the bulk import job details page below, where you can view the details of the current import job. Please learn more about the Bulk Import Result page [here](/managing-resources/manage-groups/bulk-import-result/).
+
+![Bulk user import job details page](/static/assets/managing-resources/manage-groups/images/group-import-result-active-directory.png#width=70%)
 
 ## Duplicate Groups
 

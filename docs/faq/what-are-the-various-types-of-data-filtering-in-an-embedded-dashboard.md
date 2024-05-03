@@ -12,7 +12,7 @@ documentation: ug
         - <b>filterParameters:</b> Applying filters when the dashboard first loads
         - <b>updateFilters:</b> Applying filters on the fly
    2. Server-side filtering
-        - <b>embed_datasource_filter:</b> Applying the filter criteria on the server side when the user accesses the dashboard using the query parameter in the authorization endpoint.
+        - <b>embed_datasource_filter:</b> The filter criteria are applied on the server side when the user accesses the dashboard by using the query parameter in the authorization endpoint.
 
 <table>
 <thead>
@@ -25,29 +25,29 @@ documentation: ug
 <tr>
 <td rowspan="2"><b>Client-Side</b></td>
 <td><code>filterParameters</code></td>
-<td>This API member can be used when you intend to filter from the client side at the initial level rendering of the dashboard itself.</td>
+<td>This API member can be used when you intend to filter from the client side at the initial level of rendering the dashboard itself.</td>
 </tr>
 <tr>
 <td><code>updateFilters</code></td>
-<td>This API method can be used when you intend to filter from the client side on demand.</td>
+<td>This API method can be used when you intend to filter on demand from the client side.</td>
 </tr>
 <tr>
 <td><b>Server-Side</b></td>
 <td><code>embed_datasource_filter</code></td>
-<td>This Query parameter can be used when you intend to filter from the server side of embedding applications in a more secured way. In the Bold BI embedded application, you can pass the filter parameters from the authorization endpoint dynamically using the query parameter `embed_datasource_filter`.</td>
+<td>This query parameter can be used when you intend to filter from the server side of embedded applications in a more secure way. In the Bold BI embedded application, you can pass the filter parameters from the authorization endpoint dynamically using the query parameter `embed_datasource_filter`.</td>
 </tr>
 </table>
 
-**Note**: To learn more about URL parameters filtering, please refer to this [URL Parameter](https://help.boldbi.com/working-with-dashboards/preview-dashboard/urlparameters/) documentation.
+**Note**: To learn more about filtering URL parameters, please refer to this documentation on [URL Parameter](https://help.boldbi.com/working-with-dashboards/preview-dashboard/urlparameters/).
 
 ## Client-side filtering
 ### Using the API member `filterParameters`
 
-Applying filters directly from the client side during the initial rendering, use the `filterParameters`(client-side) API.
+To apply filters directly from the client side during the initial rendering, use the `filterParameters` (client-side) API.
 
 Example:
 
-Set the filter value in the `filterParameters` member in `BoldBI.create()` method of an embedding. Please refer to the following code sample.
+Please set the filter value in the `filterParameters` member in the `BoldBI.create()` method of an embedding. Refer to the following code sample.
 
 ```js
 var dashboard = BoldBI.create({                            
@@ -72,7 +72,7 @@ Example:
 
     ```
 
-2. Invoke the `updateFilters` method to perform filtering. In the following example, there is a simple demonstration for applying the `Parameter` as `ProductName` and `ParameterValue` as `Alice Mutton` in an on-demand rendering case using updateFilters.
+2. Invoke the `updateFilters` method to perform filtering. In the following example, there is a simple demonstration of applying the `Parameter` as `ProductName` and `ParameterValue` as `Alice Mutton` in an on-demand rendering case using updateFilters.
 
    ```js
 
@@ -86,9 +86,9 @@ Example:
 ## Server-side filtering
 ### Using the query parameter `embed_datasource_filter`
 
-Server-side filtering lets you ensure secured access for users to their data in the embedded dashboard. In the Bold BI embedded application, you can pass the filter parameters from the authorization endpoint dynamically using the query parameter `embed_datasource_filter`.
+Server-side filtering allows you to ensure secure access for users to their data in the embedded dashboard. In the Bold BI embedded application, you can dynamically pass the filter parameters from the authorization endpoint using the query parameter `embed_datasource_filter`.
 
-For example, a code snippet is provided. Additionally, I have attached image for further reference.
+For example, a code snippet is provided. Additionally, I have attached an image for further reference.
 
 ```js
   

@@ -10,13 +10,13 @@ documentation: ug
 
 # Image
 
-Image allows you to display a both static and dynamic image within defined mode (default, fill, uniform and uniform to fill). 
+Image allows you to display both static and dynamic images within defined modes (default, fill, uniform, and uniform to fill).
 
 ![Image Widget](/static/assets/visualizing-data/visualization-widgets/images/image/image-widget.png)
 
-You may add image of supported formats including, BMP, JPG, JPEG, GIF, EMF, JFIF, JPE, PNG, RLE, TIF, TIFF, WMF, DIB, and ICO from your local machine or column binding to the image widget.
+You can add images of supported formats including BMP, JPG, JPEG, GIF, EMF, JFIF, JPE, PNG, RLE, TIF, TIFF, WMF, DIB, and ICO from your local machine or by column binding to the image widget.
 
-The following steps represents to add Image to dashboard:
+The following steps represent how to add an Image to the dashboard:
 
 1.  Drag and drop the image widget into the Canvas.
 
@@ -30,15 +30,15 @@ The following steps represents to add Image to dashboard:
 
 ![Data source button](/static/assets/visualizing-data/visualization-widgets/images/datasourcebutton.png)
 
-4.  In the connection type panel, click any one (Here, the `Microsoft Excel` Connection type is selected for demonstration) of the listed connection type button shown.
+4.  In the connection type panel, click on any one of the listed connection type buttons (Here, the `Microsoft Excel` Connection type is selected for demonstration).
 
 ![Data source list](/static/assets/visualizing-data/visualization-widgets/images/datasourcelist.png)
 
-5.  In the `NEW DATA SOURCE` configuration panel, fill the connection type and related details. Click the `Preview & Connect` button.
+5.  In the `NEW DATA SOURCE` configuration panel, fill in the connection type and related details. Click the `Preview & Connect` button.
 
 ![Connect button](/static/assets/visualizing-data/visualization-widgets/images/connectbutton.png)
 
-6.  Drag your preferred table or view from the left pane from the data design view, click the `Save` button.
+6.  Drag your preferred table or view from the left pane in the data design view, then click the `Save` button.
 
 ![Virtual table](/static/assets/visualizing-data/visualization-widgets/images/image/virtualtable.png)
 
@@ -46,27 +46,27 @@ The following steps represents to add Image to dashboard:
 
 ![Designer properties](/static/assets/visualizing-data/visualization-widgets/images/designerpropertiesbutton.png)
 
-8.  Now, the property pane opens.
+8.  The property pane will open.
 
 ![Data tab](/static/assets/visualizing-data/visualization-widgets/images/image/imagedatatab.png)
 
 ## How to configure the data to Image widget?
 
-You may browse the image or bind a datasource column that contains the image URL. 
+You can browse the image or bind a data source column containing the image URL.
 
-You may assign a data by clicking the **Assign Data** button. 
+Assign data by clicking the **Assign Data** button.
 
 ![Assign Data](/static/assets/visualizing-data/visualization-widgets/images/image/assign-data.png)
 
-Drag and drop image column from the `dimension` section to `Column` section.
+Drag and drop the image column from the `dimension` section to the `Column` section.
 
 ![Configure widget](/static/assets/visualizing-data/visualization-widgets/images/image/configure-widget.png)
 
-You can format the image for better illustration of the view that you require, through the settings available in Properties pane.
+You can format the image for better illustration of the required view through the settings available in the Properties pane.
 
 ### Name
 
-This allows you to set the `title` for this Image widget.
+This allows you to set the `title` for the Image widget.
 
 ![Name](/static/assets/visualizing-data/visualization-widgets/images/image/title.png)
 
@@ -92,13 +92,13 @@ The image will be filled in the available space.
 
 #### Uniform to Fill
 
-The image will be uniformly occupying the space but gets clipped, if it is larger than control
+The image will uniformly occupy the space but may get clipped if it is larger than the control.
 
 ![Uniform to Fill](/static/assets/visualizing-data/visualization-widgets/images/image/uniform-to-fill.png)
 
 #### Uniform 
 
-The image sizes proportionally (without clipping) to best fit to the widget area.
+The image sizes proportionally (without clipping) to best fit the widget area.
 
 ![Uniform](/static/assets/visualizing-data/visualization-widgets/images/image/uniform.png)
 
@@ -112,11 +112,11 @@ The image sizes proportionally (without clipping) to best fit to the widget area
 
 ![Local](/static/assets/visualizing-data/visualization-widgets/images/image/local-image.png)
 
-> **NOTE:** Image that having special characters in the file name is not supported in Dashboard Application.
+> **NOTE:** Images with special characters in the file name are not supported in the Dashboard Application.
 
 ### URL
 
-You can give the `URL` of the image which must be a valid URL.
+You can provide a valid `URL` for the image.
 
 Ex: http://flagpedia.net/data/flags/normal/in.png
 
@@ -130,27 +130,27 @@ When adding the URL in the image widget, the image will be displayed dynamically
 
 ![URL](/static/assets/visualizing-data/visualization-widgets/images/image/parameter.png)
 
-The image widget rendered like below 
+The image widget is rendered as shown below.
 
 ![URL](/static/assets/visualizing-data/visualization-widgets/images/image/image.png)
 
 ### Parameterized URL
 
-Parameterized URL option allows the user to pick an image from the data source field to the image widget.
+This option allows the user to select an image from the data source field for the image widget.
 
-Through the column section in the assigned data, we can add N number of fields. The fields can be represented using the `{N-1}` parameter, starting from `{0}`.
+You can add multiple fields through the column section in the assigned data. The fields can be represented using the `{N-1}` parameter, starting from `{0}`.
 
-In this example, we have two fields in a column section shown in the following illustration.
+In this example, there are two fields in a column section shown in the illustration.
 
 ![Parameterized URL](/static/assets/visualizing-data/visualization-widgets/images/image/parameterized-url.png)
 
 ![Parameterized URL Default](/static/assets/visualizing-data/visualization-widgets/images/image/bind-to-check-placeholder-default.png)
 
- we can refer `Teams image` field filed with `{0}` parameter and `Players Image` field filed with `{1}` parameter.
+ You can refer to the `Teams image` field filled with `{0}` parameter and the `Players Image` field filled with `{1}` parameter.
 
 ![Placeholder](/static/assets/visualizing-data/visualization-widgets/images/image/bind-to-check-placeholder.png)
 
-Using parameter `{1}` in the Parameterized URL pattern, we get the 1st value of `Players Image` field data as source for image widget.
+By using the parameter `{1}` in the Parameterized URL pattern, you get the 1st value of the `Players Image` field data as the source for the image widget.
 
 ![placeholder](/static/assets/visualizing-data/visualization-widgets/images/image/placeholder.png)
   
@@ -158,17 +158,17 @@ Using parameter `{1}` in the Parameterized URL pattern, we get the 1st value of 
 
 EX: http://flagpedia.net/data/flags/normal/{0}.png
 
-* `{0}` - This is representing the 1st field of the column section and gets the 1st value of that field to image widget.
-* If the 1st value of the `{0}` parameter is `au`, the URL will be framed as http://flagpedia.net/data/flags/normal/au.png. This will be used on the image source.
-* Remaining texts are constant value.
+* `{0}` - Represents the 1st field of the column section and gets the 1st value of that field for the image widget.
+* If the 1st value of the `{0}` parameter is `au`, the URL will be framed as http://flagpedia.net/data/flags/normal/au.png. This will be used as the image source.
+* Remaining texts are constant values.
 
 ![URI Placeholder](/static/assets/visualizing-data/visualization-widgets/images/image/formed-url-settings.png)
 
-> **Note:** Always remember that used parameter will get the 1st value of the field after considering all the dashboard filters.
+> **Note:** The parameter used will get the 1st value of the field after considering all the dashboard filters.
 
 ### Tooltip Settings
 
-`Show Tooltip` allows you to toggle the visibility of a tooltip on an image. The `text box` below the Show Tooltip option allows you to set the text that appears in the tooltip
+`Show Tooltip `allows you to toggle the visibility of a tooltip on an image. The text box below the Show Tooltip option allows you to set the text that appears in the tooltip.
 
 ![Showtooltip](/static/assets/visualizing-data/visualization-widgets/images/image/Show-tool-tip.png)
 

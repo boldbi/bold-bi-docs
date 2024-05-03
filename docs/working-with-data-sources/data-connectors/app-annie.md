@@ -8,37 +8,37 @@ documentation: ug
 
 # Connecting Bold BI to App Annie data source
 
-Bold BI dashboard designer supports connecting App Annie web services through REST API.
+The Bold BI dashboard designer supports utilizing App Annie web services through the REST API.
 
 ## Choose App Annie data source
 
-To configure the App Annie data source, follow the below steps:
+To choose the App Annie data source and configure it, follow the steps below:
 
-1. Click the **Data Sources** button in the configuration panel to add a new data connection.
+1. Click on the **Data Sources** button in the configuration panel to add a new data connection.
    
    ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/common/DataSourcesIcon.png)
    
-2. Click **CREATE NEW** to launch a new connection from the connection panel.
-3. Select the **App Annie** connection in the connection panel.
+2. Click on **CREATE NEW** to initiate a new connection from the connection panel.
+3. Select the **App Annie** connection from the connection panel.
 
     ![Choose data source](/static/assets/working-with-datasource/data-connectors/images/app-annie/ChooseDS.png)
 
-> **NOTE:**  You can also create a data source from the home page by clicking the **Data Sources** menu from left menu panel and **Create Data Source** from the data sources page.
+> **NOTE:**  To create a data source from the home page, click on the **Data Sources** menu in the left menu panel and then select **Create Data Source** from the data sources page.
 
    ![Choose data source from server](/static/assets/working-with-datasource/data-connectors/images/app-annie/ChooseDS_server.png)
 
 ## Create App Annie data source
-Once you click the App Annie data source, the NEW DATA SOURCE configuration panel opens. Follow the below steps to create App Annie data source.
-1. Enter a name and description (optional) for the data source.
-2. Enter a valid App Annie REST API endpoint in the URL textbox. Refer the [App Annie API documentation](https://support.appannie.com/hc/en-us) for more details.
+When you click on the App Annie data source, the NEW DATA SOURCE configuration panel will open. Follow the steps below to create an App Annie data source:
+1. Enter a name and optional description for the data source.
+2. In the URL textbox, enter a valid App Annie REST API endpoint. Refer to the [App Annie API documentation](https://support.appannie.com/hc/en-us) for more details.
 
     Example: `https://api.appannie.com/v1.3/accounts`
 
-3. Select **GET** method for the REST API in **Method** combo box.
-4. Choose a time interval for **Refresh Settings** using the combo box, to trigger the Rest API request periodically to keep the data in sync with your dashboard.  
-5. Select **JSON** data type in **Data Format** combo box.
+3. Select the **GET** method for the REST API in the **Method** combo box.
+4. Choose a time interval for **Refresh Settings** using the combo box to periodically trigger the Rest API request and keep the data in sync with your dashboard.
+5. Select **JSON** data type in the **Data Format** combo box.
 6. Replace **&lt;:your_api_token&gt;** under **Headers** with a valid bearer token.
-7. Choose **None** under **Authentication Type** as authentication is done through header.
+7. Choose **None** under **Authentication Type** as authentication is done through headers.
 
     ![DataSourcesView](/static/assets/working-with-datasource/data-connectors/images/app-annie/DataSourcesView.png)
 
@@ -46,7 +46,7 @@ You can also edit the connection information set here using the [Edit Connection
 
 #### How do I get Bearer Key for connecting App Annie data source?
 
-1. Login in to App Annie [Dashboard.](https://www.data.ai/account/login/?_ref=header)
+1. Login to the App Annie [Dashboard.](https://www.data.ai/account/login/?_ref=header)
 2. Select **Account -> API Key** and find the API Key under **'Your API Key'** section.
 
 ![Bearer token](/static/assets/working-with-datasource/data-connectors/images/app-annie/BearerToken.png)
@@ -83,12 +83,12 @@ Period of time before next refresh call is triggered. This will automatically tr
 `https://api.appannie.com/v1.3/sharing/products?page_index=0`
 
 ### Preview and data import
-* Click **Preview & Connect** to connect with the configurations set.
-* The Choose Schema(s) dialog opens. The schema represents the key fields of JSON data retrieved from App Annie Rest API request. This dialog displays a list of schemas in treeview and its corresponding values in grid for preview. Select required schema(s) from treeview to use in designer and click **Connect**.
+* Click **Preview & Connect** to connect with the configurations that have been set.
+* The Choose Schema(s) dialog will open. The schema represents the key fields of the JSON data retrieved from the App Annie Rest API request. This dialog displays a list of schemas in treeview and their corresponding values in a grid for preview. Select the required schema(s) from the treeview to use in the designer and then click **Connect**.
 
    ![Preview](/static/assets/working-with-datasource/data-connectors/images/common/Preview.png)
 
-* Now, the data design view page with selected table schema opens. Drag and drop the table.
+* Now, the data design view page with the selected table schema opens. Drag and drop the table.
    ![Query Editor](/static/assets/working-with-datasource/data-connectors/images/common/QueryEditor.png)
 
 * Click **Save** to save the data source with a relevant name.
@@ -105,7 +105,7 @@ We have added support for **custom attributes and dashboard parameters** to the 
 
 ![Dashboard Parameter](/static/assets/working-with-datasource/data-connectors/images/app-annie/Dashboardparameter.png)
 
->**Note:** Refer the [Dashboard Parameter Documentation](https://help.boldbi.com/working-with-data-sources/dashboard-parameter/) and [Custom Attributes Documentation](https://help.boldbi.com/working-with-data-sources/configuring-custom-attribute/) for more details.
+>**Note:** Please refer to the [Dashboard Parameter Documentation](https://help.boldbi.com/working-with-data-sources/dashboard-parameter/) and [Custom Attributes Documentation](https://help.boldbi.com/working-with-data-sources/configuring-custom-attribute/) for more details.
 
 ## Related links
 [Data Transformation](/working-with-data-sources/data-modeling/joining-table/)

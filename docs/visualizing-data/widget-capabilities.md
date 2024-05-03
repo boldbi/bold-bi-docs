@@ -9,7 +9,7 @@ documentation: ug
 
 # A Comprehensive Guide to Widget Capabilities
  
-This table provides a quick and easy way for users to see which features are supported by each widget. This can be helpful for users who are trying to decide which widget to use for a particular task.
+This table provides a quick and easy way for users to see which features are supported by each widget. It can be helpful for users who are trying to decide which widget to use for a particular task.
 
 <table id="widget-capabilities-table">
     <thead>

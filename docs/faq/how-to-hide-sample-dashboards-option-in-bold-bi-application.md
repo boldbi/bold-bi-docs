@@ -7,7 +7,7 @@ documentation: UG
 ---
 # How to hide sample dashboards option in Bold BI application
 
-Sample dashboards option is available in the `Create Dashboard` section, which is used to add sample dashboards to the site.
+The option for sample dashboards is available in the `Create Dashboard` section, allowing users to add sample dashboards to the site.
 
 ![Sample Dashboard Option](/static/assets/faq/images/sample-dashboard-option.png)
 
@@ -17,11 +17,11 @@ Sample dashboards option is available in the `Create Dashboard` section, which i
 
     ![UMS Settings](/static/assets/faq/images/ums-settings.png)
 
-2. Select the `Configuration` tab from settings menu and choose `bi/config.xml` on the `Search your files` drop-down.
+2. Select the `Configuration` tab from the settings menu and choose `bi/config.xml` from the `Search your files` drop-down menu.
 
     ![UMS BI Config](/static/assets/faq/images/ums-bi-config.png)
 
-3. Set `true` to the `HideSampleDashboard` node, and then `Save` the bi/config.xml file.
+3. Set the `HideSampleDashboard`  node to `true`, then `save` the bi/config.xml file.
 
     `<HideSampleDashboard>true</HideSampleDashboard>`
 

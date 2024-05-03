@@ -28,19 +28,19 @@ In the Bold BI application, use the required tables to create a Pivot table in t
 
 Follow these steps to create and use Pivot tables in Bold BI.
 
-1. Enable the **Crosstab** function using the following command in the PostgreSQL data source.
+1. Enable the **Crosstab** function in the PostgreSQL data source using the following command.
 
     **CREATE EXTENSION IF NOT EXISTS tablefunc;**
 
     ![Create Extension](/static/assets/faq/images/create-extension.png#max-width=60%) 
 
-2. Connect to PostgreSQL data connection in Bold BI.
+2. Connect to a PostgreSQL data connection in Bold BI.
 
 3. Switch to the code view mode of a data source.
 
     ![Pivot table in Bold BI](/static/assets/faq/images/pivot-table-in-boldbi.png)
 
-4. Write a query using the Crosstab function in the query designer page to use the required tables of a data source and click the following highlighted `Run` button to execute the query.
+4. Write a query using the Crosstab function in the query designer page to utilize the necessary tables from a data source, then click the highlighted `Run` button to execute the query.
 
     ![Prepare Query](/static/assets/faq/images/prepare-query.png)
 

@@ -8,7 +8,7 @@ documentation: ug
 
 # Destination
 
-Navigate to the settings tab in the Bold ETL to set the destination credentials. Bold ETL supports five different destinations:
+>To set the destination credentials navigate to the settings tab in the Bold ETL. Bold ETL supports five different destinations:
     >1.	Bold IMDB Datastore
     >2.	PostgreSQL
     >3.	Apache Doris
@@ -40,7 +40,7 @@ Step 5: Click on Save to save the credentials from the Bold BI Data Store. If al
 ## Bold IMDB Datastore
 The Bold IMDB Datastore fetches the destination credentials from the BOLD BI Data Store configuration.
  
-The data would be moved based on the credentials given in the Bold BI (data store).
+The data will be moved based on the credentials given in the Bold BI data store.
 
 ![Source](/static/assets/working-with-etl/images/etl_imdb.png)
 
@@ -51,11 +51,11 @@ The data would be moved based on the credentials given in the Bold BI (data stor
 Enter the following credentials for PostgreSQL:
 1.	Server name/Host name
 2.	Port number (default port number is 5432)
-3.	Maintenance Database: The maintenance DB is a default database for users and applications to connect to. On PostgreSQL 8.1 and above, the maintenance DB is normally called ``postgres``.
+3.	Maintenance Database : The maintenance DB is a default database for users and applications to connect to. On PostgreSQL 8.1 and above, the maintenance DB is normally called ``postgres``.
 4.	Username
 5.	Password
-6.	Check on the SSL(Secure Sockets Layer) checkbox if needed.
-7.	Database name: If the data needs to be moved to an existing database in the server, click on the existing database radio buttons and give the database name in the textbox, or click on the new database to create a new one and enter the database name in the textbox
+6.	Check the SSL (Secure Sockets Layer) checkbox if needed.
+7.	Database name : If the data wants to be moved to an existing database in the server click on the existing database radio buttons and give database name in the textbox or click on new database to create a new one and enter the database name in the textbox
 
 ![Source](/static/assets/working-with-etl/images/etl_post.png)
 
@@ -73,8 +73,8 @@ Enter the following credentials for PostgreSQL:
 1.	Server name/Host name
 2.	Username
 3.	Password
-4.	Check on the SSL(Secure Sockets Layer) checkbox if needed.
-5.	Database name: If the data needs to be moved to an existing database in the server, click on the existing database radio buttons and give the database name in the textbox, or click on the new database to create a new one and enter the database name in the textbox.
+4.	Check the SSL (Secure Sockets Layer) checkbox if needed.
+5.	Database name : If the data wants to be moved to an existing database in the server click on the existing database radio buttons and give database name in the textbox or click on new database to create a new one and enter the database name in the textbox
 
 ![Source](/static/assets/working-with-etl/images/etl_sql.png)
 
@@ -86,7 +86,7 @@ Enter the following credentials for PostgreSQL:
 2.	Port number (default port number is 3306)
 3.	Username
 4.	Password
-5.	Check on the SSL(Secure Sockets Layer) checkbox if needed.
-6.	Database name: If the data wants to be moved to an existing database in the server, click on the existing database radio buttons and give the database name in the textbox, or click on the new database to create a new one and enter the database name in the textbox.
+5.	Check the SSL (Secure Sockets Layer) checkbox if needed.
+6.	Database name : If the data wants to be moved to an existing database in the server click on the existing database radio buttons and give database name in the textbox or click on new database to create a new one and enter the database name in the textbox
 
 ![Source](/static/assets/working-with-etl/images/etl_mysql.png)

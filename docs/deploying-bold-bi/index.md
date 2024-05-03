@@ -20,6 +20,8 @@ Here, you can delve into the detailed prerequisites and deployment processes:
  
 [Deploying in AWS](/deploying-bold-bi/deploying-in-aws/)
 
+[Deploying in GCP](/deploying-bold-bi/deploying-in-gcp/)
+
 [Deploying in Azure App Service](/deploying-bold-bi/deploying-in-azure-app-service/)
 
 [Deploying in Linux](/deploying-bold-bi/deploying-in-linux/)
@@ -27,3 +29,5 @@ Here, you can delve into the detailed prerequisites and deployment processes:
 [Deploying in Kubernetes](/deploying-bold-bi/deploying-in-kubernetes/)
 
 [Deploying in Docker](/deploying-bold-bi/deploying-in-docker/)
+
+[Upgrade Guidelines](/deploying-bold-bi/upgrade-guidelines/)

@@ -12,7 +12,7 @@ documentation: ug
 
 The Bold BI Data Source designer allows for creating a data model with columns from multiple tables/entities and additional calculated columns. A single data source model can be bound to multiple widgets in a dashboard. 
 
-If we consider a data source model that has 25 columns as shown in the example below, and we have a widget that only utilizes 2 of the columns, the data service layer will generate a query for that widget with only the specific columns needed for that widget.  This allows for a single data source model to be used in an optimal manner for multiple widgets in a dashboard.
+If we consider a data source model with 25 columns, as shown in the example below, and we have a widget that only uses 2 of the columns, the data service layer will generate a query for that widget with only the specific columns needed. This allows for a single data source model to be used optimally for multiple widgets in a dashboard.
 
 ## Example Master query used at the data source level
 

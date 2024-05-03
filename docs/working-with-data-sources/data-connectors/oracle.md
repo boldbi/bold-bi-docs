@@ -68,7 +68,7 @@ We have added support for **custom attributes and dashboard parameters** to the 
 
 Type while creating the data source needs to be oracle.
 
-[Rest API - v4.0](https://help.boldbi.com/embedded-bi/rest-api-reference/v4.0/api-reference/)
+[Rest API - v4.0](/server-api-reference/v4.0/api-reference/)
 
 ### Modes
 

@@ -139,7 +139,7 @@ If the table name is provided in the Additional connection parameters text box, 
 
 Type while creating the data source needs to be mariadb.
 
-[Rest API - v4.0](https://help.boldbi.com/embedded-bi/rest-api-reference/v4.0/api-reference/)
+[Rest API - v4.0](/server-api-reference/v4.0/api-reference/)
 
 ### Modes
 

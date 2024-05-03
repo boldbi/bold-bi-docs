@@ -86,7 +86,7 @@ function validateDescLength(filePath) {
                 let imgFile = '.' + imgPath;
                 if (existsSync(imgFile)) {
                     mdImage[imgFile] = true;
-                    if ((statSync(imgFile).size) / 1024 > IMAGE_SIZE) {
+                    if (((statSync(imgFile).size) / 1024 > IMAGE_SIZE) && !imgPath.includes(".gif")) {
                         imgLargeSize = imgLargeSize + imgPath + ' ---> ' + filePath + '\n';
                     }
                 } else {
@@ -103,7 +103,7 @@ function validateImage() {
     for (let i = 0; i < fileNames.length; i++) {
         if (statSync(fileNames[i]).isDirectory()) continue;
         let exe = fileNames[i].split('.')[2];
-        if ((exe !== 'png' && exe !== 'jpeg' && exe !== 'svg' && exe !== 'PNG' && exe !== 'JPEG' && exe !== 'SVG')) {
+        if ((exe !== 'png' && exe !== 'jpeg' && exe !== 'svg' && exe !== 'PNG' && exe !== 'JPEG' && exe !== 'SVG' && exe !== 'gif')) {
             invalidImgExtension.push(fileNames[i]);
         }
         if (mdImage[fileNames[i]] === undefined) {

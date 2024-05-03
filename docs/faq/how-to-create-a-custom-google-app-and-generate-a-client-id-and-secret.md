@@ -16,14 +16,14 @@ documentation: ug
 3. Click **Save And Continue**.
 4. **Scopes for the Google APIs:** Scopes allow your application to access your user's private Google data.
 ![Scope Page](/static/assets/faq/images/scope.png)
-   * For the authentication, the default scope (email, profile, OpenID) is sufficient, you don't need to add any sensitive scopes. It is generally best practice to request scopes incrementally, at the time access is required, rather than upfront. Learn more.
+   * For authentication, the default scope (email, profile, OpenID) is sufficient. You don't need to add any sensitive scopes. It is generally best practice to request scopes incrementally when access is required, rather than upfront. Learn more.
    * For the **Google Analytics 4** required scopes are email, profile, and AdSense.
    * Click **Add Or Remove Scope**.
-   * **Non-sensitive Scope:** Scopes express the permissions you request users to authorize for your app and allow your project to access specific private user data from their Google Account.
+   * **Non-sensitive Scope:** Scopes define the permissions you are requesting users to authorize for your app and enable your project to access specific private user data from their Google Account.
 5. On the **Optional Info Tab**  (optional), click **Save And Continue**.
-6. On the **Final Review** tab, Check **Verification Status**, if your application needs verification then click **Submit for Verification** to submit your application for verification.
+6. On the **Final Review** tab, check the **Verification Status**. If your application needs verification, click **Submit for Verification** to submit your application for verification.
 
-   > **Note:** If the verification status fails, it will throw an alert message stating that the application is unauthorized.
+   > **Note:** If the verification status fails, an alert message will be thrown stating that the application is unauthorized.
 
 7. On the **Credential** page, click **Create Credentials** and choose **Oauth Client ID**.
 ![Oauth page](/static/assets/faq/images/oauthpage.png)
@@ -37,7 +37,6 @@ documentation: ug
    ![Create Menu](/static/assets/faq/images/createmenu.png)
 9. The **Client ID** and **Client Secret** will be shown once the app is created.
 ![Credentials](/static/assets/faq/images/credential.png)
-10. App creation was successful. Client details are listed as follows.
+10. The app creation was successful, and the client details are listed as follows.
 ![List of App](/static/assets/faq/images/list.png)
-11. Then, save this **Client ID** and **Client Secret** in Bold BI by referring to this link, 
-https://help.boldbi.com/embedded-bi/oauth-configuration/.
+11. Then, save this **Client ID** and **Client Secret** in Bold BI by referring to this [link](/site-administration/data-connector-settings/oauth-configuration/).

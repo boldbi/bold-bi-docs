@@ -11,13 +11,13 @@ documentation: ug
 
 # Pyramid Chart
 
-The Pyramid Chart is a triangle diagram, which allows you to make proportional comparisons between values showcased in a progressively increasing manner. It consists of various segments, each representing a data point.
+The Pyramid Chart is a triangle diagram that allows you to make proportional comparisons between values showcased in a progressively increasing manner. It consists of various segments, each representing a data point.
 
 ![Pyramid Chart](/static/assets/visualizing-data/visualization-widgets/images/pyramid-chart/pyramidchart.png)
 
 ## How to configure table data in the Pyramid Chart
 
-The Pyramid Chart needs a minimum of one value element and one column element to showcase. The measure or expression field that you want to analyze can be dropped into Values block. The dimension for which you want to categorize the measure can be dropped into the Columns block. To categorize the measure based on a series, drop the respective dimension into the Rows block.
+The Pyramid Chart needs a minimum of one value element and one column element to showcase. The measure or expression field that you want to analyze can be dropped into the Values block. The dimension for which you want to categorize the measure can be dropped into the Columns block. To categorize the measure based on a series, drop the respective dimension into the Rows block.
 
 To configure data in the Pyramid Chart, follow these steps:
 
@@ -79,7 +79,7 @@ You can filter data displayed in the Pyramid chart by using the Filter option. F
 
 #### Formatting data
 
-You can format the data displayed in the chart by using the Format option. For more details, refer to the[measure format](/visualizing-data/working-with-widgets/formatting-measure-type-column/).
+You can format the data displayed in the chart by using the Format option. For more details, refer to the [measure format](/visualizing-data/working-with-widgets/formatting-measure-type-column/).
 
 ![Format option](/static/assets/visualizing-data/visualization-widgets/images/pyramid-chart/format-option.png)
 
@@ -109,13 +109,13 @@ The configured field names can be edited by using the `Rename` option provided i
 
 #### Sorting data
 
-You can sort the dimension data using the Sort option under the Settings menu list. To apply sorting for the data, refer to the[Sort](/visualizing-data/working-with-widgets/advanced-sorting/#dimension-column).
+You can sort the dimension data using the Sort option under the Settings menu list. To apply sorting for the data, refer to the [Sort](/visualizing-data/working-with-widgets/advanced-sorting/#dimension-column).
 
 ![Sort option](/static/assets/visualizing-data/visualization-widgets/images/pyramid-chart/sort-option.png)
 
 #### Filtering data
 
-You can apply a filter by selecting the filter option in settings. For more details, refer to the[filters](/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column).
+You can apply a filter by selecting the filter option in settings. For more details, refer to the [filters](/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column).
 
 > **NOTE:**  By default, the filter will be set for the top 5 records.
 
@@ -129,7 +129,7 @@ Add more than one Dimension field into the Columns field. The alert message will
 
 ![Drill alert](/static/assets/visualizing-data/visualization-widgets/images/drillalert.png)
 
-You can enable this option to get the further details about the selected chart region. To enable drill down, click **Yes**.
+You can enable this option to get further details about the selected chart region. To enable drill down, click **Yes**.
 
 ![Select chart region](/static/assets/visualizing-data/visualization-widgets/images/pyramid-chart/select-chart-region.png)
 
@@ -141,15 +141,15 @@ The drilled-down view of the selected chart region will be as follows.
 
 ## Hidden Column
 
-Hidden columns are useful in cases where we don't want the fields to take part in the visualization, but only to be used for [linking](#linking), [filtering](#filtering) and [view data](#view-data).
+Hidden columns are useful in cases where we don’t want the fields to take part in the visualization, but only to be used for [linking](#linking), [filtering](#filtering), and [view data](#view-data).
 
 ![Hidden column](/static/assets/visualizing-data/visualization-widgets/images/pyramid-chart/assign-data.png)
 
-We can configure both measure and dimension fields into the hidden column. For measure we will be having all the settings we have for the measure fields expect formatting and filtering. 
+We can configure both measure and dimension fields into the hidden column. For measure, we will be having all the settings have for the measure fields except formatting and filtering.
 
 ![Measure](/static/assets/visualizing-data/visualization-widgets/images/pyramid-chart/measure.png)
 
-In the case of dimension fields we will having the following options only. In Date fields we will having all available types except sorting, relative date filter, settings and filters.
+In the case of dimension fields, we will have the following options only. In Date fields, we will have all available types except sorting, relative date filter, settings, and filters.
 
 ![Dimension](/static/assets/visualizing-data/visualization-widgets/images/pyramid-chart/dimension.png)
 
@@ -157,13 +157,13 @@ In the case of dimension fields we will having the following options only. In D
 
 #### Linking
 
-The primary use case of the hidden columns is linking. On configuring hidden columns, we can see below that the fields configured in hidden columns are listed in the linking section.  On configuring the column in linking we can pass the corresponding column value in linking parameter.
+The primary use case of the hidden columns is linking. On configuring hidden columns, we can see below that the fields configured in hidden columns are listed in the linking section. On configuring the column in linking we can pass the corresponding column value in linking parameter.
 
-**Measure Based Example:** If we wish to pass the number of Matches played as an URL parameter but do not want it to influence the visualization, we can configure the Matches in the hidden columns and incorporate them into the link.
+**Measure Based Example:** If we wish to pass the number of Matches played as a URL parameter but do not want it to influence the visualization, we can configure the Matches in the hidden columns and incorporate them into the link.
 
 ![Linking](/static/assets/visualizing-data/visualization-widgets/images/pyramid-chart/link-measure.png)
 
-**Dimension Based Example:** If we wish to pass the number of Team Name played as an URL parameter but do not want it to influence the visualization, we can configure  the Team Name in the hidden columns and incorporate them into the link.
+**Dimension Based Example:** If we wish to pass the number of Team Name played as a URL parameter but do not want it to influence the visualization, we can configure the Team Name in the hidden columns and incorporate them into the link.
 
 ![Linking](/static/assets/visualizing-data/visualization-widgets/images/pyramid-chart/link-dimension.png)
 
@@ -177,11 +177,11 @@ Click the Custom button highlighted in the filter configuration dialog image bel
 
 ![Filtering](/static/assets/visualizing-data/visualization-widgets/images/pyramid-chart/custom.png)
 
-Now, we can see in the below image, the data is filtered based on the hidden column field instead of the actual column that we bound in the widget. 
+Now, we can see in the image below, the data is filtered based on the hidden column field instead of the actual column that we bound in the widget.
 
 ![Filtering](/static/assets/visualizing-data/visualization-widgets/images/pyramid-chart/hidden-column-filter.png)
 
-For more details about filtering the widget data, refer to the [Filter Configuration documentation](/working-with-dashboards/configuring-dashboard-filters/)
+For more details about filtering the widget data, refer to the [Cross Filter Configuration documentation](/working-with-dashboards/configuring-cross-filters/).
 
 #### View Data
 
@@ -189,7 +189,7 @@ You can view the data in the hidden columns in the underlying data view. This is
  
 ![View data](/static/assets/visualizing-data/visualization-widgets/images/pyramid-chart/viewdata.png)
 
-> **NOTE:** We don't recommend to configure lower hierarchy data in hidden columns as we can see in the info icon in `Hidden Column` section denotes the same. 
+> **NOTE:** We don’t recommend configuring lower hierarchy data in hidden columns as we can see in the info icon in `Hidden Column` section denotes the same.
 
 ![Hidden Column ](/static/assets/visualizing-data/visualization-widgets/images/pyramid-chart/info-icon.png)
 
@@ -197,7 +197,7 @@ The below chart displays the goals by each team without hidden columns.
 
 ![Before](/static/assets/visualizing-data/visualization-widgets/images/pyramid-chart/before.png)
 
-If we configure lower hierarchy data(Player Name) in hidden columns compared to column and Row filed data, the data configured in the widgets gets duplicate, This affects the chart visualization as we can see in the below image.
+If we hide lower hierarchy data (Player Name) in columns compared to the column and row field data, the data in the widgets may appear duplicated. This can affect the visualization of the chart, as shown in the image below.
 
 ![After](/static/assets/visualizing-data/visualization-widgets/images/pyramid-chart/after.png)
 
@@ -207,7 +207,7 @@ You can drag the Dimension section into the Rows field.
 
 ![Add data to row](/static/assets/visualizing-data/visualization-widgets/images/pyramid-chart/chart-row.png)
 
-You can apply the [filter](/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column) and [sort](/visualizing-data/working-with-widgets/advanced-sorting/#dimension-column) options for the rows field, if required.
+You can apply [filter](/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column) and [sort](/visualizing-data/working-with-widgets/advanced-sorting/#dimension-column) options for the rows field, if required.
 
 This will render a pyramid chart in the series.
 
@@ -225,15 +225,15 @@ To configure data in the Pyramid Chart, follow these steps:
 
 2. Configure the data in the Pyramid Chart.
 
-3. Focus the Pyramid Chart and click the **Widget Settings** icon.
+3. Focus on the Pyramid Chart and click the **Widget Settings** icon.
 
 ![Widget settings](/static/assets/visualizing-data/visualization-widgets/images/pyramid-chart/pyramidwidgetsettings.png)
 
-The property window will be opened as follows.
+The property window will be opened as follows:
 
 ![Pyramid chart](/static/assets/visualizing-data/visualization-widgets/images/pyramid-chart/pyramidproperties.png)
 
-You can see the list of properties available for the widget with default value.
+You can see the list of properties available for the widget with default values.
 
 #### General settings
 
@@ -263,7 +263,7 @@ Set a `description` for the Pyramid chart widget whose visibility will be denote
 
 #### Show Tooltip
 
-This option allows you to toggle the visibility of tooltip in the pyramid chart.
+This option allows you to toggle the visibility of the tooltip in the pyramid chart.
 
 ![Title](/static/assets/visualizing-data/visualization-widgets/images/pyramid-chart/tooltip.png)
 
@@ -285,7 +285,7 @@ If you disable `Show Value Labels` properties, the dependent properties, which a
 
 #### Value Label Color
 
-This allows you to customize the value label's color.
+Allow you to customize the value label’s color.
 
 ![Value label Color Option](/static/assets/visualizing-data/visualization-widgets/images/pyramid-chart/data-label-color-option.png)
 
@@ -341,7 +341,7 @@ The `Series Settings` option is enabled only when you configure the **series** i
 
 ### Fixed rows and columns 
 
-If you enable the fixed rows and columns, you can customize the rows and columns. The rows and columns are fixed based on the container size and size of the pyramid chart.
+If you enable fixed rows and columns, you can customize the rows and columns. The rows and columns are fixed based on the container size and size of the pyramid chart.
 
 ![Pyramid Series Settings](/static/assets/visualizing-data/visualization-widgets/images/pyramid-chart/series-settingspyramidchart.png)
 
@@ -355,7 +355,7 @@ By enabling the `Column Count,` you can set the column count.
 
 ![Pyramid Series Settings](/static/assets/visualizing-data/visualization-widgets/images/pyramid-chart/series-settingsfixed.png)
 
->**Note**: If the invalid columns and rows are given, the rows and columns reset to their default value. For example: If you are given the number of rows as 6 and the number of columns as 5 but your data count is only 20. In this case, the rows and columns will reset to their default value.
+>**Note**: If the invalid columns and rows are given, the rows and columns reset to their default value. For example, if you are given the number of rows as 6 and the number of columns as 5 but your data count is only 20. In this case, the rows and columns will reset to their default value.
 
 #### Legend Settings
 
@@ -363,7 +363,7 @@ By enabling the `Column Count,` you can set the column count.
 
 #### Show legend
 
-A legend is text used to describe the plotted data. It allows you to toggle the visibility of the legend in chart and change the legend text position (selecting through combo box).
+A legend is text used to describe the plotted data. It allows you to toggle the visibility of the legend in the chart and change the legend text position by selecting through a combo box.
 
 ![Show legend](/static/assets/visualizing-data/visualization-widgets/images/pyramid-chart/show-legend.png)
 
@@ -382,7 +382,7 @@ Enabling the Interactivity feature in the Legend Settings category allows you to
 
 #### Legend Label Color
 
-This allows you to change the chart legend title and label colors.
+This feature allows you to change the chart legend title and label colors.
 
 ![Chart Legend Color Option](/static/assets/visualizing-data/visualization-widgets/images/pyramid-chart/legend-label-color-option.png)
 
@@ -390,7 +390,7 @@ This allows you to change the chart legend title and label colors.
 
 #### Customize
 
-You can customize the legend text through the `Custom Legend Settings` dialog. This dialog will show the legend text list as labels at left and corresponding text area at right to add the formatted text to display instead.
+You can customize the legend text through the `Custom Legend Settings` dialog. This dialog will show the legend text list as labels at the left and corresponding text area at the right to add the formatted text to display instead.
 
 ![Legend customization](/static/assets/visualizing-data/visualization-widgets/images/pyramid-chart/legendcustomize.png)
 
@@ -407,36 +407,36 @@ A Legend is a text used to describe the data plotted. This option allows you to 
 Legends can be displayed as a dropdown menu when the legend position is set to "dropdown." When you hover over a chart, a legend icon appears. Clicking on this icon will bring up a legend dropdown. This feature allows you to toggle the visibility of the legend in the chart.
 
 This option will hide the legends in the chart area, resulting in increased chart space and enhanced visibility.
- 
+
 The chart legend dropdown option can be used to simplify viewing complex charts with multiple data sources. For example, if you have a chart displaying sales data for the different years, you can use the legend dropdown to deselect all other years and focus only on a specific year.
 
 ![Legend item as dropdown](/static/assets/visualizing-data/visualization-widgets/images/pyramid-chart/legend-as-dropdown.png)
 
 #### Legend Shape
 
-This allows you change the **shape** of the legend.
+This feature allows you to change the **shape** of the legend.
 
 ***Circle***
 
-This option allows you to change the shape of the legend in a `Circle.`
+This option allows you to change the shape of the legend to a `Circle`.
 
 ![Show Legend shape](/static/assets/visualizing-data/visualization-widgets/images/pyramid-chart/legend-shape.png)
 
 ***Series Type***
 
-This option allows you to change the shape of the legend in `Series.`
+This option allows you to change the shape of the legend for `Series`.
 
 ![Show Legend shape Series](/static/assets/visualizing-data/visualization-widgets/images/pyramid-chart/legendshape-series.png)
 
 #### Legend Title
 
-This allows you to add the legend title for the chart. It will reflect with the `Show Legend.`
+This feature allows you to add the legend title for the chart. It will reflect with the `Show Legend`.
 
 ![Show Legend Title](/static/assets/visualizing-data/visualization-widgets/images/pyramid-chart/legendtitle.png)
 
 ### Text Overflow
 
-This option allows you to customize legend text based on the 'Text Width' property value.
+This feature allows you to customize legend text based on the `Text Width` property value.
 
 **None**
 
@@ -448,7 +448,7 @@ This option allows you to render legend items without any wrap and trim.
 
 **Trim**
 
-This option allows you to trim the legend items if its legend exceeds the 'Text Width' value.
+This option allows you to trim the legend items if the legend exceeds the `Text Width` value.
 
 ![Legend Overflow Trim Option in chart](/static/assets/visualizing-data/visualization-widgets/images/pyramid-chart/legend-text-overflow-trim-option.png)
 
@@ -464,23 +464,23 @@ This option allows you to wrap legend items based on the 'Text Width' value.
 
 #### Text Width
 
-This option allows you to set the maximum width for the Legend Items and it is applicable only if text-overflow is set as Trim or Wrap.
+This option allows you to set the maximum width for the Legend Items and is applicable only if text overflow is set as Trim or Wrap.
 
 ![Legend Text Width Option in chart](/static/assets/visualizing-data/visualization-widgets/images/pyramid-chart/legend-text-overflow-width-option.png)
 
 ![Legend Text Width in chart](/static/assets/visualizing-data/visualization-widgets/images/pyramid-chart/legend-text-overflow-width.png)
 
-If you uncheck the `Show Legend` property in the property panel, the dependent properties **Legend color**, **Legend position**, **customization button** and **Legend title** are also hidden.
+If you uncheck the `Show Legend` property in the property panel, the dependent properties **Legend color**, **Legend position**, **customization button**, and **Legend title** are also hidden.
 
 #### Link
 
-You can enable linking and configure navigating to a general URL with or without parameters. For more details, refer to the[Linking](/visualizing-data/working-with-widgets/linking-urls-and-dashboards/).
+You can enable linking and configure navigating to a general URL with or without parameters. For more details, refer to the [Linking](/visualizing-data/working-with-widgets/linking-urls-and-dashboards/).
 
 ![Link](/static/assets/visualizing-data/visualization-widgets/images/pyramid-chart/link.png)
 
 #### Series palette
 
-By toggling the `series palette`, you can able to customize the proportion series segments’ colors. 
+By toggling the `series palette`, you can customize the proportion series segments' colors.
 
 ![Series palette](/static/assets/visualizing-data/visualization-widgets/images/pyramid-chart/seriespalette.png)
 
@@ -488,24 +488,23 @@ By toggling the `series palette`, you can able to customize the proportion serie
 
 You can choose the field from the Based On section to apply the conditions.
 
-This section shows a palette of colors. By clicking the colored square, the color picker will open. You can choose a color and change the color by changing the corresponding hexadecimal value at the right.
+This section shows a palette of colors. By clicking the colored square, the color picker will open. You can choose a color and change the color by changing the corresponding hexadecimal value on the right.
 
 ![Individual mode](/static/assets/visualizing-data/visualization-widgets/images/pyramid-chart/column-chart-individual-mode.png)
 
 #### Color Mapping Type
 
-Using the Color Mapping type, you can apply the colors to the series either based on data or index.
+Using the Color Mapping type, you can apply the colors to the series based on data or index.
 
 ![Color Mapping Type option](/static/assets/visualizing-data/visualization-widgets/images/pyramid-chart/column-chart-formatting-color-mapping-type-options.png)
 
 ***Data***
 
-It allows you to apply color for chart series based on data. If you want to apply a specific color to specific data, you can use Data based color mapping. By default, the Color Mapping Type will be `Data`.
+Data allows you to apply color for chart series based on data. If you want to apply a specific color to specific data, you can use Data based color mapping. By default, the Color Mapping Type will be `Data`.
 
 ![Color Mapping Type Data](/static/assets/visualizing-data/visualization-widgets/images/pyramid-chart/column-chart-individual-mode.png)
 
-> **IMPORTANT:**  Only top 100 records will be listed in the 
-dialog. 
+> **IMPORTANT:**  Only the top 100 records will be listed in the dialog.
 ***Index***
 
 It allows you to apply color for chart series based on `Index`. Such that the colors are maintained based on index even if data is changed. It shows only 15 different colors. After that, the color will be repeated from above colors.
@@ -514,7 +513,7 @@ For example, If you are displaying the countries based on the increasing order o
 
 ![Color Mapping Type Index](/static/assets/visualizing-data/visualization-widgets/images/pyramid-chart/column-chart-formatting-index-based-color.png)
 
-**Note:** We prefer to use Index based color customization only for minimum data(upto 15 series).
+> **Note:** We prefer to use Index based color customization only for a minimum of data (up to 15 series).
 
 ![Use Basedon Palette](/static/assets/visualizing-data/visualization-widgets/images/pyramid-chart/column-chart-individual-mode.png)
 
@@ -526,7 +525,7 @@ For example, If you are displaying the countries based on the increasing order o
 
 This option shows when you add more than one measure field to the Value(s).
 
-By toggle off the `Use Default Palette`, you can customize the proportion series segments' colors by clicking the colored squares.
+By toggling off the `Use Default Palette`, you can customize the proportion series segments' colors by clicking the colored squares.
 
 ![Series color palette window](/static/assets/visualizing-data/visualization-widgets/images/pyramid-chart/series-color-palette-window.png)
 
@@ -550,7 +549,7 @@ Define the Pyramid Chart widget to ignore the filter actions applied to other wi
 
 #### Hierarchical filter
 
-Through this option, you can enable or disable the hierarchical `Top N` filtering. While applying the `Top N` filter with multiple dimension columns, the data returned can be customized based on whether the filtering needs to be done as flat or based on the hierarchy of added dimension columns.
+Through this option, you can enable or disable hierarchical `Top N` filtering. While applying the `Top N` filter with multiple dimension columns, the data returned can be customized based on whether the filtering needs to be done as flat or based on the hierarchy of added dimension columns.
 
 When the hierarchical filter option is enabled, the `Top N` filter will be applied for each individual column separately based on the number set for each column.
 
@@ -560,7 +559,7 @@ When the hierarchical filter option is enabled, the `Top N` filter will be appli
 
 ### Title Alignment
 
-This allows you to handle the alignment of widget title to either **left, center,** or **right**.
+This allows you to handle the alignment of the widget title to either **left, center,** or **right**.
 
 ### Title Color
 
@@ -580,7 +579,7 @@ On enabling Auto Font Size, the font size of the subtitle will be adjusted autom
 
 **Font Size**
 
-This allows you to apply the specified size of the font to the widget title if the **Subtitle Auto Font Size** is disabled. Value can be between 10 and 32.
+This allows you to apply the specified size of the font to the widget title if the **Subtitle Auto Font Size** is disabled. The value can be between 10 and 32.
 
 ### Auto Padding
 
@@ -588,7 +587,7 @@ On enabling Auto Padding, the padding of the widget container will be adjusted a
 
 **Padding**
 
-This allows you to customize the padding of the widget container if the **Auto Padding** is disabled. Value can be between 0 and 25.
+This allows you to customize the padding of the widget container if the **Auto Padding** is disabled. The value can be between 0 and 25.
 
 ### Show Border
 
@@ -596,15 +595,15 @@ This allows you to toggle the visibility of the `border` surrounding the widget.
 
 ### Corner Radius
 
-This allows you to apply the specified `radius` to the widget corners if the **Show Border** is enabled. Value can be between 0 and 10.
+This allows you to apply the specified `radius` to the widget corners if the **Show Border** is enabled. The value can be between 0 and 10.
 
 ### Show Background Image
 
-This allow you to set the **background image** for the pyramid chart widget.
+This allows you to set the **background image** for the pyramid chart widget.
 
 ### Background Color
 
-This allows you to set the **background color** to the pyramid chart widget.
+This allows you to set the **background color** for the pyramid chart widget.
 
 ### Transparency
 

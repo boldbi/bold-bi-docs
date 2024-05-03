@@ -33,7 +33,7 @@ documentation: ug
 2. Navigate to the Directory: Use the `cd` command to change directories to where the OpenAI trainer utility is located.
    
    ```bash
-   cd /var/www/bold-services/application/utilities
+   cd /var/www/bold-services/application/utilities/openai_trainer
    ```
 3. Once in the correct directory, run the dll file by typing the following command, replacing `<:API_KEY>` with your actual Azure key and `<:RESOURCE_NAME>` with the resource name you created.
 

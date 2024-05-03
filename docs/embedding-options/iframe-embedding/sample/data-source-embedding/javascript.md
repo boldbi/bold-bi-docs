@@ -22,7 +22,7 @@ This section explains how to integrate the Bold BI data source into the sample a
 
 * Please retrieve the sample of the [Iframe DataSource embedding Javascript](https://github.com/boldbi/iframe-datasource-javascript-sample) from GitHub.
 
-* Please make sure that you have enabled embed authentication on the `embed settings` settings page. If it is not currently enabled, please refer to the following image or detailed [instructions](http/site-administration/embed-settings/#get-embed-secret-code) to enable it.
+* Please make sure that you have enabled embed authentication on the `embed settings` settings page. If it is not currently enabled, please refer to the following image or detailed [instructions](/site-administration/embed-settings/#get-embed-secret-code) to enable it.
 
     ![Embed Settings](/static/assets/javascript/sample/images/embed-settings.png)
 
@@ -56,7 +56,7 @@ This section explains how to integrate the Bold BI data source into the sample a
     </tr>
     <tr>
     <td align="left">EmbedSecret</td>
-    <td align="left">Get your EmbedSecret key from the Embed tab by enabling the <code>Enable embed authentication</code> in the <a href='https://help.boldbi.com/embedded-bi/site-administration/embed-settings/'>Administration page</a></td>
+    <td align="left">Get your EmbedSecret key from the Embed tab by enabling the <code>Enable embed authentication</code> in the <a href='/site-administration/embed-settings/'>Administration page</a></td>
     </tr>
     <tr>
     <td align="left">UserEmail</td>

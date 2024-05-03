@@ -9,7 +9,7 @@ documentation: ug
 
 # Configuring Label Parameters
 
-You can configure the label parameters by using the field name in the `Name` of widget. Use the following format to configure the label parameter.
+You can configure the label parameters by using the field name in the `Name` of the widget. Use the following format to configure the label parameter:
 
 **Syntax:** `{{:Column_Name}}` **when single data source is present** 
 
@@ -21,37 +21,37 @@ For example, the name text of the Grid widget as: `Ship Country` - `{{:ShipCount
 
 ![Name property](/static/assets/visualizing-data/working-with-widgets/images/configuringlabelparameters_header.PNG)
 
-Now, the dashboard will show the label parameter for all countries like `Ship Country - All`
+Now, the dashboard will show the label parameter for all countries as `Ship Country - All`.
 
 ![All parameters](/static/assets/visualizing-data/working-with-widgets/images/configuringlabelparameters_allparameters.PNG)
 
-You can select the required country to display by selecting the country name in the grid widget. Based on the selected country, the values will be displayed on the widget.
+You can select the required country to display by choosing the country name in the grid widget. Based on the selected country, the values will be displayed on the widget.
 
 ![Particular name](/static/assets/visualizing-data/working-with-widgets/images/configuringlabelparameters_particularname.PNG)
 
-You can also use label widget to configure the label parameters.
+You can also use a label widget to configure the label parameters.
 
-Drag and drop the label widget into the design pane and click the edit label to add the label parameters.
+Drag and drop the label widget into the design pane and click edit label to add the label parameters.
 
 ![Edit label](/static/assets/visualizing-data/working-with-widgets/images/configuringlabelparameters_editlabel.PNG)
 
-While previewing the dashboard, initially the parameter of the ship country will be shown as `All` in the label widget.
+While previewing the dashboard, initially, the parameter of the ship country will be shown as `All` in the label widget.
 
 ![Label all](/static/assets/visualizing-data/working-with-widgets/images/configuringlabelparameters_labelall.PNG)
 
-While selecting the particular country, it will show that country name in the label widget.
+When selecting a particular country, the label widget will display that country's name.
 
 ![Label in specified data](/static/assets/visualizing-data/working-with-widgets/images/configuringlabelparameters_labelinspecifieddata.PNG)
 
-You can add the data source before the parameters in the `Name` of the properties tab, when more than one data source is present in the dashboard.
+You can add the data source before the parameters in the `Name` of the properties tab when more than one data source is present in the dashboard.
 
 ![Using data source](/static/assets/visualizing-data/working-with-widgets/images/configuringlabelparameters_usingdatasource.PNG)
 
-While previewing the dashboard, initially the values of parameters will be shown as `All`.
+While previewing the dashboard, initially, the values of parameters will be shown as `All`.
 
 ![Result](/static/assets/visualizing-data/working-with-widgets/images/configuringlabelparameters_result.PNG)
 
-While selecting the particular country, you can show that country name in the widget.
+When selecting a particular country, you can display that country's name in the widget.
 
 ![Specified data](/static/assets/visualizing-data/working-with-widgets/images/configuringlabelparameters_specifieddata.PNG)
 
@@ -63,7 +63,7 @@ For `Date Time` type, the supported functions are `Date, Year, Month, Quarter, D
 
 For `Text` type, the supported functions are `Count and Distinct Count`.
 
-Use the following format, to configure the label parameter.
+Use the following format to configure the label parameter.
 
 **Syntax:**  `{{:function(Column_Name)}}` **when single data source is present** 
 
@@ -196,4 +196,4 @@ Total unique transaction count is, {{:dcount(InvoiceDate)}}</td>
 </tr>
 </table>
 
-> **NOTE:**  Function name of label parameters are `case insensitive`.
+> **NOTE:**  The function name of label parameters is `case insensitive`.

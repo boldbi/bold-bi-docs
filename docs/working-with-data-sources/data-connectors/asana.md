@@ -8,11 +8,11 @@ documentation: ug
 
 # Connecting Bold BI to Asana data source
 
-Bold BI dashboard designer supports connecting Asana web services through REST API.
+Bold BI dashboard designer supports connecting to Asana web services through the REST API.
 
 ## Choose Asana data source
 
-To configure the Asana data source, follow the below steps:
+To choose Asana as a data source, follow the steps below:
 
 1. Click the **Data Sources** button in the configuration panel to add a new data connection.
    
@@ -23,64 +23,64 @@ To configure the Asana data source, follow the below steps:
 
     ![Choose data source](/static/assets/working-with-datasource/data-connectors/images/asana/ChooseDS.png)
 
-> **NOTE:** You can also create a data source from the home page by clicking the **Data Sources** menu from left menu panel and **Create Data Source** from the data sources page.
+> **NOTE:** You can also create a data source from the home page by clicking the **Data Sources** menu from the left menu panel and selecting **Create Data Source**.
 
    ![Choose data source from server](/static/assets/working-with-datasource/data-connectors/images/asana/ChooseDS_server.png)
 
 ## Advanced
-In Advanced category, It will Redirect to the Bold ETL. Refer [Bold ETL](/managing-resources/manage-data-sources/#advanced-category).
+In the Advanced category, it will redirect to the Bold ETL. Please refer to the [Bold ETL](/managing-resources/manage-data-sources/#advanced-category) for more information.
 
 ## Basic
-In Basic Category, It will act as the connector in Bold BI. And need to follow the below steps.
+In the Basic category, it will act as a connector in Bold BI. Follow the steps below:
 
 ### How to Obtain the Asana Client ID and Client Secret
-> **Note:** Asana OAuth credentials are required for the On-Premises Deployment but not needed in Syncfusion Managed Cloud Server.
-1. Log in to your Asana account [Asana Login](https://app.asana.com/-/login).
-2. Click on the User icon and select **My Settings** category.
+> **Note:** Asana OAuth credentials are required for the On-Premises Deployment, but they are not needed in Syncfusion Managed Cloud Server.
+1. Login to your Asana account by clicking on  [Asana Login](https://app.asana.com/-/login).
+2. Click on the User icon and select the **My Settings** category.
 
     ![userIcon](/static/assets/working-with-datasource/data-connectors/images/asana/userIcon.png)
 
-3. In the **My Settings** menu, go to the **Apps** tab and click on the **Manage developer Apps** at the bottom.
+3. In the **My Settings** menu, go to the **Apps** tab and click on **Manage developer Apps** at the bottom.
     ![mySettings](/static/assets/working-with-datasource/data-connectors/images/asana/mySettings.png)
 4. On the **My Apps** menu, select **Create new app**.
     ![create_app](/static/assets/working-with-datasource/data-connectors/images/asana/create_app.png)
-5. Fill in the **App Name**, enable the API terms and conditions, and click on the **Create new app**.
+5. Fill in the **App Name**, enable the API terms and conditions, and click on **Create new app**.
     ![app_name](/static/assets/working-with-datasource/data-connectors/images/asana/app_name.png) 
 6. Once the app is created, the **Client ID** and **Client secret** will be displayed.
     ![client_ID](/static/assets/working-with-datasource/data-connectors/images/asana/client_ID.png)
-7. Go to the **OAuth** page and click on the **Add Redirect URL**. 
+7. Go to the **OAuth** page and click on **Add Redirect URL**.
     ![Oauth](/static/assets/working-with-datasource/data-connectors/images/asana/Oauth.png)
-8. Add the Redirect URL as mentioned here and click **Add**. The Bold BI redirect URL should be added in the proper format required. Please refer to this URL structure, `https://<yourdomain>/bi/designer/v1.0/oauth/agent`. 
+8. Add the Redirect URL as mentioned here and click Add. The Bold BI redirect URL should be added in the proper format required. Please refer to this URL structure: `https://<yourdomain>/bi/designer/v1.0/oauth/agent`. 
     ![url](/static/assets/working-with-datasource/data-connectors/images/asana/url.png)
 
 > **NOTE:** Save the Client ID and Client secret in Bold BI by following the [OAuth Configuration](/site-administration/data-connector-settings/oauth-configuration/).
 ## Authentication with Asana
-Use the following steps to authenticate with Asana web service.
+To authenticate with the Asana web service, follow these steps:
 
-1. Click the data source, you will be prompted with a login window. Enter the credentials of your Asana account to authorize.
-2. Click **Allow** in the authorization window to accept the scopes requested by Bold BI dashboards.
+1. Click on the data source, which will prompt a login window. Enter your Asana account credentials to authorize.
+2. Click **Allow** in the authorization window to accept the scopes requested by Bold BI dashboards.
 
-   > **NOTE:** If the permission is denied, the account will not be accessible from the dashboard.
+   > **NOTE:** If permission is denied, the account will not be accessible from the dashboard.
    
 3. Set a name to identify the account and click **Next**. 
-4. You have now successfully authorized your connection. Click **Connect** to continue with the data source connection.
+4. You have successfully authorized your connection. Click **Connect** to continue with the data source connection.
 5. To connect via existing account, refer [Connected Accounts](/working-with-data-sources/data-connectors/asana/#connected-accounts-for-oauth-data-sources).
 
-> **NOTE:** If you need to connect to another account click **Connect New Account.**
+> **NOTE:** If you need to connect to another account, click **Connect New Account.**
 
 ## Connect to Asana
 ### Create Asana data source
-After successful authentication, the NEW DATA SOURCE configuration panel opens. Follow the below steps to create Asana data source.
-1. Enter a name and description (optional) for the data source.
-2. Enter a valid Asana REST API endpoint in the URL textbox. Refer the [Asana API documentation](https://asana.com/developers/documentation/getting-started/quick-start) for more details.
+After successful authentication, the NEW DATA SOURCE configuration panel will open. Follow these steps to create an Asana data source:
+1. Enter a name and optional description for the data source.
+2. Enter a valid Asana REST API endpoint in the URL textbox. Refer to the [Asana API documentation](https://asana.com/developers/documentation/getting-started/quick-start) for more details.
 
    Example: `https://app.asana.com/api/1.0/projects`
 
-3. Select **GET** method for the REST API in **Method** combo box.
+3. Select **GET** method for the REST API in the **Method** combo box.
 4. In **Max Rows**, enter the maximum number of rows to be fetched from the Asana data source. This value is used to fetch the data from Asana data source via pagination.
-5. Choose a time interval for **Refresh Settings** using the combo box, to trigger the Rest API request periodically to keep the data in sync with our dashboard.  
-6. Select **JSON** data type in **Data Format** combo box.
-7. The authentication type will be set to **Asana** automatically since OAuth is used for authenticating with Asana account.
+5. Choose a time interval for **Refresh Settings** using the combo box to trigger the Rest API request periodically to keep the data in sync with our dashboard.
+6. Select **JSON** data type in the **Data Format** combo box.
+7. The authentication type will be set to **Asana** automatically since OAuth is used for authenticating with the Asana account.
 
     ![DataSourcesView](/static/assets/working-with-datasource/data-connectors/images/asana/DataSourcesView.png)
 
@@ -131,11 +131,11 @@ In addition **Search APIs** are limited to 60 requests per minute.
 
  `https://app.asana.com/api/1.0/projects/<:project_gid>/sections`
 
-  **NOTE:** The project id can be found in the URL of the project in the Asana application. Example: Open the project in the Asana application and find the project id in the address bar like 
+  **NOTE:** The project ID can be found in the URL of the project in the Asana application. For example, open the project in the Asana application and locate the project ID in the address bar, such as  
   
   `https://app.asana.com/0/**1111094557386982**/list`.
   
-  To fetch specific project data, you need to replace the project id in the API endpoint of data source creation.
+  To retrieve specific project data, you must replace the project ID in the API endpoint of the data source creation:
 
   `https://app.asana.com/api/1.0/projects/**1111094557386982**/sections`
 
@@ -143,11 +143,11 @@ In addition **Search APIs** are limited to 60 requests per minute.
 
  `https://app.asana.com/api/1.0/workspaces/<:workspace_gid>/tasks/search`
 
-  **NOTE:** The workspace id can be found in the URL of the workspace in the Asana application. Example: Open the workspace in the Asana application and find the workspace id in the address bar like 
+  **NOTE:** The workspace ID can be found in the URL of the workspace in the Asana application. For instance, open the workspace in the Asana application and find the workspace ID in the address bar, like.
   
   `https://app.asana.com/0/**850617776313575**/list`.
   
-  To fetch specific workspace data, you need to replace the workspace id in the API endpoint of data source creation.
+  To retrieve specific workspace data, you need to replace the workspace ID in the API endpoint of data source creation:
   
   `https://app.asana.com/api/1.0/workspaces/**850617776313575**/tasks/search`
 
@@ -155,17 +155,17 @@ In addition **Search APIs** are limited to 60 requests per minute.
 
  `https://app.asana.com/api/1.0/teams/<:team_gid>/projects`
   
-   **NOTE:** The team id can be found in the URL of the team in the Asana application. Example: Open the team in the Asana application and find the team id in the address bar like
+   **NOTE:** The team ID can be found in the URL of the team in the Asana application. For example, open the team in the Asana application and locate the team ID in the address bar, such as.
 
    `https://app.asana.com/0/**1200407026130215**/list`.
   
-   To fetch specific team data, you need to replace the team id in the API endpoint of data source creation.
+   To retrieve specific team data, you must replace the team ID in the API endpoint of data source creation:
 
   `https://app.asana.com/api/1.0/teams/**1200407026130215**/projects`
 
 ### Preview and data import
-* Click **Preview & Connect** to connect with the configurations set.
-* The Choose Schema(s) dialog opens. The schema represents the key fields of JSON data retrieved from Asana Rest API request. This dialog displays a list of schemas in treeview and its corresponding values in grid for preview. Select required schema(s) from treeview to use in designer and click **Connect**.
+* Click **Preview & Connect** to establish a connection with the configured settings.
+* The Choose Schema(s) dialog will appear. The schema represents the key fields of JSON data retrieved from the Asana Rest API request. This dialog shows a list of schemas in treeview and their corresponding values in a grid for preview. Select the required schema(s) from the treeview to use in the designer and then click **Connect**.
 
    ![Preview](/static/assets/working-with-datasource/data-connectors/images/common/Preview.png)
 
@@ -175,11 +175,11 @@ In addition **Search APIs** are limited to 60 requests per minute.
 * Click **Save** to save the data source with a relevant name.
 
 ## Connected accounts for OAuth data sources
-If you have already logged into the account and authenticated with web data source, the account information will be listed here. You can select one of the accounts or connect to a new account by clicking the **Connect New Account** button.
+If you have already logged into the account and authenticated with the web data source, the account information will be listed here. You can select one of the accounts or connect to a new account by clicking the **Connect New Account** button.
 
    ![OAuth](/static/assets/working-with-datasource/data-connectors/images/asana/OAuthDS.png)
 
-You can edit, delete and re-authorize this account from the **Connected Accounts** page.
+You can edit, delete, and re-authorize this account from the **Connected Accounts** page.
 
    ![Manage Accounts](/static/assets/working-with-datasource/data-connectors/images/asana/ManageDS.png)
 

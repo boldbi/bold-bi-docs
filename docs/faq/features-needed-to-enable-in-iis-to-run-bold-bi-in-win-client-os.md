@@ -7,11 +7,11 @@ documentation: ug
 ---
 
 # Features to be enabled in IIS to run Bold BI in Windows Client OS
-Bold BI Enterprise Edition can be hosted in an IIS express and IIS. To run the Bold BI in IIS, enable the IIS along with IIS features and roles.
+Bold BI Enterprise Edition can be hosted in both IIS Express and IIS. To run Bold BI in IIS, enable IIS along with its features and roles.
 
 ## Steps to enable the IIS and features that are needed to run the Bold BI Server in Windows Client OS:
 
-1. Open `Control Panel` and click `Programs and Features > Turn Windows features on or off`.  
+1. Open `Control Panel` and click on `Programs and Features > Turn Windows features on or off`.  
 
 2. Enable `Internet Information Services`.
 
@@ -23,13 +23,13 @@ Bold BI Enterprise Edition can be hosted in an IIS express and IIS. To run the B
 
    ![Roles and Features](/static/assets/faq/images/ms-framework.png)
 
-4. Expand the `Internet Information Services` feature and verify that the required IIS component listed [here](/faq/features-needed-to-enable-in-iis-to-run-bold-bi-in-win-client-os/#required-web-server-components) are selected. Click `OK`.
+4. Expand the `Internet Information Services` feature and ensure that the necessary IIS component listed [here](/faq/features-needed-to-enable-in-iis-to-run-bold-bi-in-win-client-os/#required-web-server-components) are selected. Click `OK`.
 
    ![Roles and Features](/static/assets/faq/images/iis-features-client.png)
 
 ## Required web server components
 
-The IIS components listed below satisfy the minimum requirements to run the Bold BI. If other IIS components are enabled, they do not need to be removed.
+The IIS components listed below meet the minimum requirements to run Bold BI. If other IIS components are enabled, they do not need to be removed.
 
 <meta charset="utf-8"/>
 <table>

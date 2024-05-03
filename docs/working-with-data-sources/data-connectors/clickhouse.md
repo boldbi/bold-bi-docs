@@ -9,23 +9,23 @@ documentation: ug
  
 # Connecting Bold BI to the Clickhouse Data Source
 
-The Bold BI Dashboard Designer supports connecting the Clickhouse database using the SQL Query (C# API).
+The Bold BI Dashboard Designer supports connecting to the Clickhouse database using the SQL Query (C# API).
 
 
 ## How to create Clickhouse data source
 
 To configure the Clickhouse data source, follow these steps: 
 
-1. Click **Data Sources** in the configuration panel to add a new data connection.
+1. Click on **Data Sources** in the configuration panel to add a new data connection.
 
    ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/Clickhouse/DataSourcesIcon.png)
 
-2. Click **CREATE NEW** to launch a new connection from the connection panel.
+2. Click on **CREATE NEW** to launch a new connection from the connection panel.
 3. Select the **Clickhouse** connection in the connection panel.
 
    ![Choose data source](/static/assets/working-with-datasource/data-connectors/images/Clickhouse/ChooseDS.png)
 
-> **NOTE:**  You can also create a data source from the home page by clicking the **Data Sources** menu from left menu panel and **Create Data Source** from the data sources page.
+> **NOTE:**  You can also create a data source from the home page by clicking on the **Data Sources** menu in the left menu panel and selecting **Create Data Source** from the data sources page.
 
    ![Choose data source](/static/assets/working-with-datasource/data-connectors/images/Clickhouse/ChooseDS_server.png)
 
@@ -35,9 +35,9 @@ After clicking a data source, the NEW DATA SOURCE configuration panel opens. Fol
 
 1. Enter a name and description (optional) for the data source.
 2. Enter a valid server or host name in the Server Name text box.
-3. Enter the username in the Username text box and password in the Password text box.
+3. Enter the username in the Username text box and the password in the Password text box.
 4. Enter the database name in the database text box.
-5. Click **Connect** to connect the Clickhouse server with the configured details. 
+5. Click **Connect** to connect to the Clickhouse server with the configured details.
 
 ![Clickhouse Connection](/static/assets/working-with-datasource/data-connectors/images/Clickhouse/Clickhouse_Connection.png)
 
@@ -47,11 +47,11 @@ After clicking a data source, the NEW DATA SOURCE configuration panel opens. Fol
 
    ![Treeview schema](/static/assets/working-with-datasource/data-connectors/images/Clickhouse/Treeview_schema.png)
 
-2. Drag and drop any table and Click **update** button to preview the data.
+2. Drag and drop any table and click the **update** button to preview the data.
 
    ![Query designer](/static/assets/working-with-datasource/data-connectors/images/Clickhouse/QueryEditor_sql.png)
 
-3. By default, the data design view opens with design view. Switch to the code view by enabling the slider option in the tools pane in data design view as shown in the below image.
+3. By default, the data design view opens with the design view. Switch to the code view by enabling the slider option in the tools pane in the data design view, as shown in the image below.
 
    ![Codeview mode](/static/assets/working-with-datasource/data-connectors/images/Clickhouse/CodeViewMode.png)
 
@@ -69,7 +69,7 @@ We have added support for **custom attributes and dashboard parameters** to the 
 
 ![Dashboard Parameter](/static/assets/working-with-datasource/data-connectors/images/Clickhouse/Dashboardparameter.png)
 
->**Note:** Refer the [Dashboard Parameter Documentation](https://help.boldbi.com/working-with-data-sources/dashboard-parameter/) and [Custom Attributes Documentation](https://help.boldbi.com/working-with-data-sources/configuring-custom-attribute/) for more details.
+>**Note:** Refer to the [Dashboard Parameter Documentation](https://help.boldbi.com/working-with-data-sources/dashboard-parameter/) and [Custom Attributes Documentation](https://help.boldbi.com/working-with-data-sources/configuring-custom-attribute/) for more details.
 
 > **NOTE:**  In future, you can edit the connection information using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 
@@ -77,9 +77,9 @@ We have added support for **custom attributes and dashboard parameters** to the 
 
 ### Prerequisites 
 
-Type while creating the data source needs to be clickhouse.
+The type while creating the data source needs to be clickhouse.
 
-[Rest API - v4.0](https://help.boldbi.com/embedded-bi/rest-api-reference/v4.0/api-reference/)
+[Rest API - v4.0](/server-api-reference/v4.0/api-reference/)
 
 ### Parameters for creating Data Source
 
@@ -297,7 +297,7 @@ Type while creating the data source needs to be clickhouse.
 
 ### Parameters for editing Data Source
 
-> **NOTE:**  For editing Data Source via API. All the parameters are optional. The parameter which needs to be changed can be provided.
+> **NOTE:**  To edit a Data Source via API, all parameters are optional. Only the parameter that needs to be changed should be provided.
 
 #### Parameters for modifying expressions when editing Data Source
    
@@ -456,7 +456,7 @@ Type while creating the data source needs to be clickhouse.
 
 ```
 
-> **NOTE:**  Through Rest API, the data source can be created or edited with only one table. If different table is provided in edit data source, the table will be replaced. The widgets will be retained only if the schema is same as the previous table.
+> **NOTE:**  Through the Rest API, the data source can be created or edited with only one table. If a different table is provided in editing the data source, the table will be replaced. The widgets will be retained only if the schema is the same as the previous table.
 
 ### Connection Sample for Code View Mode
 

@@ -125,7 +125,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/flutter-sampl
  5. Please include the following mandatory files in the `<head>` tag of the `index.html` file.
 
      ```js
-    <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v7.6.12/boldbi-embed.js"></script>
+    <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v7.8.18/boldbi-embed.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/hmac-sha256.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/enc-base64.min.js"></script>
@@ -157,7 +157,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/flutter-sampl
         
         EmbedSecret = "";//Get the embedSecret key from Bold BI.
 
-        DashboardId = "";//Dashboard id of the dashboard you want to embed here.('https://help.boldbi.com/embedded-bi/javascript-based/samples/v3.3.40-or-later/blazor-with-javascript/#get-dashboard-id')
+        DashboardId = "";//Dashboard id of the dashboard you want to embed here.('https://help.boldbi.com/embedding-options/embedding-sdk/samples/blazor-with-javascript/')
             GetEmbedDetails();
         };
      ```

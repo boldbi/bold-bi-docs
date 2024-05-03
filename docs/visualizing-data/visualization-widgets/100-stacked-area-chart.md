@@ -10,17 +10,17 @@ documentation: ug
 
 # 100% Stacked Area Chart
 
-100% Stacked Area Chart allows you to compare multiple measures through filled curves stacked one after the other vertically.
+The 100% Stacked Area Chart allows for the comparison of multiple measures through the use of filled curves that are stacked vertically, one after another.
 
 ![Stacked area chart](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/stacked-area-chart.png)
 
 ## How to configure the table data to 100% stacked area chart?
 
-100% Stacked Area Chart need a minimum of 1 value element and 1 column element to showcase. The measure or expression field that you would like to analyze can be dropped into Y Values block. The dimension that you would like to categorize the measure, can be dropped onto Columns block. If you would like to categorize based on a series, then the respective dimension can be dropped onto Rows block in addition. 
+A 100% Stacked Area Chart requires at least one value element and one column element to display. The measure or expression field that you want to analyze can be placed in the Y Values block. The dimension that you want to categorize the measure by can be placed in the Columns block. If you want to categorize based on a series, you can also place the respective dimension in the Rows block.
 
-The following steps explain how to configure the data to a 100% stacked area chart:
+To configure the data to a 100% stacked area chart, follow the steps below:
 
-1.  Drag and drop the 100% stacked area chart into a canvas and resize it to your required size.
+1.  Drag and drop the 100% stacked area chart onto the canvas and resize it according to your desired size.
 
 ![Adding widget](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/drop-widget.png)
 
@@ -28,33 +28,33 @@ The following steps explain how to configure the data to a 100% stacked area cha
 
 ![Data button](/static/assets/visualizing-data/visualization-widgets/images/databutton.png)
 
-3.  Click the `CREATE NEW` button to launch a new connection from the connection type panel.
+3.  Click the `CREATE NEW` button to initiate a new connection from the connection type panel.
 
 ![Data source button](/static/assets/visualizing-data/visualization-widgets/images/datasourcebutton.png)
 
-4.  In the connection type panel, click any one (Here, the `Microsoft Excel` Connection type is selected for demonstration) of the listed connection type button shown.
+4.  In the connection type panel, click on any one of the listed connection type buttons (Here, the `Microsoft Excel` Connection type is selected for demonstration).
 
 ![Data source list](/static/assets/visualizing-data/visualization-widgets/images/datasourcelist.png)
 
-5.  In the `NEW DATA SOURCE` configuration panel, fill the connection type and related details. Click the `Connect` button.
+5.  In the `NEW DATA SOURCE` configuration panel, fill out the connection type and related details. Click the `Connect` button.
 
 ![Connect button](/static/assets/visualizing-data/visualization-widgets/images/connectbutton.png)
 
-6.  Drag your preferred table or view from the left pane from the data design view, click the `Save` button.
+6.  Drag your preferred table or view from the left pane in the data design view, then click the `Save` button.
 
 ![Virtual table](/static/assets/visualizing-data/visualization-widgets/images/virtualtable.png)
 
-7.  Click the `Properties` button in the configuration panel, property pane opens. Now, switch to the `ASSIGN DATA` tab.
+7.  Click the `Properties` button in the configuration panel, and the property pane will open. Now, switch to the `ASSIGN DATA` tab.
 
 ![Designer properties](/static/assets/visualizing-data/visualization-widgets/images/designerpropertiesbutton.png)
 
 ![Assign data](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/assign-data.png)
 
-8.  The `ASSIGN DATA` tab will be opened with the available measures and dimensions from the connected data source.
+8.  The `ASSIGN DATA` tab will be opened, displaying the available measures and dimensions from the connected data source.
 
 ![Chart data](/static/assets/visualizing-data/visualization-widgets/images/assign-data-section.png)
 
-9.  You can add the required data from the `Measures` and `Dimensions` into the required field.
+9.  You can add the necessary data from the `Measures` and `Dimensions` into the designated field.
 
 #### Adding Value(s)
 
@@ -62,73 +62,73 @@ You can add more than one `Measures` into the `Value(s)` field by dragging and d
 
 ![Adding Value(s)](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/add-measure.png)
 
-Click the `Settings` option to change the required summary type from the available summary types shown in `Settings.`
+Click on the `Settings` option to change the required summary type from the available summary types shown in the `Settings` section.
 
 ![Settings menu](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/settings.png)
 
 #### Filtering data
 
-You can filter the data to be displayed in a chart by using the filter option. For more details, refer to the [filter](/visualizing-data/working-with-widgets/configuring-widget-filters/).
+You can filter the data that is displayed in a chart by using the filter option. For more details, refer to the [filter](/visualizing-data/working-with-widgets/configuring-widget-filters/).
 
 ![Filtering](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/filter-option.png)
 
 #### Formatting data
 
-You can format the data to be displayed in a chart by using the format option. For more details, refer to the [measure format](/visualizing-data/working-with-widgets/formatting-measure-type-column/)
+You can format the data to be displayed in a chart by using the format option. For more details, please refer to the [measure format](/visualizing-data/working-with-widgets/formatting-measure-type-column/).
 
 ![Formatting measure type](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/format-option.png)
 
-To remove the added value fields click highlighted button.
+To remove the added value fields, click the highlighted button.
 
 ![Remove fields](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/removebutton.png)
 
-You can add more than one column from the `Dimensions` field into the `Values` field.
+You can add multiple columns from the `Dimensions` field to the `Values` field.
 
 #### Adding Columns
 
-You can add more than one value into `Columns` field.
+You can add more than one value to the `Columns` field.
 
 ![Adding columns](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/adding-columns.png)
 
-Chart will be rendered like this,
+The chart will be rendered like this.
 
 ![Configured widget with columns](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/configured-columns.png)
 
-You can change the `Settings.`
+You can change the `settings`.
 
 ![Settings](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/column-settings.png)
 
 #### Renaming fields
 
-The configured field names can be edited by using the `Rename` option provided in the settings menu.
+The field names that have been configured can be edited by using the `Rename` option provided in the settings menu.
 
 ![Rename](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/rename.png)
 
 #### Sorting data
 
-You can `Sort` the dimension data using  Sort option under `Settings` menu list. To apply sorting for the data, refer to the [Sort](/visualizing-data/working-with-widgets/advanced-sorting/#dimension-column).
+You can `sort` the dimension data using the Sort option under the `Settings` menu list. To apply sorting to the data, refer to the [Sort](/visualizing-data/working-with-widgets/advanced-sorting/#dimension-column).
 
 ![Sorting](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/sort-option.png)
 
 #### Filtering data
 
-You can apply filters by selecting filters option in settings. For more details, refer to the [filter](/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column).	
+You can apply filters by selecting the filters option in the settings. For more details, please refer to the [filter](/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column).	
 
 ![Dimension Filters](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/filter-option-column.png)
 
-To show all records click on `Show All Records`.
+To view all the records, click on `Show All Records`.
 
-Similarly you can add the `Measures` and `Expression Columns` into column field.
+Similarly, you can add the `Measures` and `Expression Columns` into column field.
 
 #### Multi-Level Drill Down
 
-Add more than one value to the `Columns` field, the alert message will be shown to enable the drill-down option. Click `Yes` to enable the option.
+If you add more than one value to the `Columns` field, the alert message will be shown to enable the drill-down option. Click `Yes` to enable the option.
 
-> **NOTE:**  If you click `No,` a single value will be added to the `Columns` field.
+> **NOTE:**  If you click `No`, a single value will be added to the `Columns` field.
 
 ![Drill alert](/static/assets/visualizing-data/visualization-widgets/images/drillalert.png)
 
-The drilled view of the chart region is selected.
+The zoomed in view of the chart region has been selected.
 
 ![Drilled view](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/drilled-view.png)
 
@@ -138,23 +138,23 @@ You can drag and drop the `Measure` or `Dimension` into the `Rows` field.
 
 ![Adding row](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/chart-row.png)
 
-You can apply [filter](/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column) and [sort](/visualizing-data/working-with-widgets/advanced-sorting/#dimension-column) option for the rows field, if required.
+You can apply a [filter](/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column) and [sort](/visualizing-data/working-with-widgets/advanced-sorting/#dimension-column) option for the rows field, if required.
 
-This will render chart in series.
+This will render the chart in a series.
 
 ![Configured with series](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/configured-with-series.png)
 
 ## Hidden Column
 
-Hidden columns are useful in cases where we don't want the fields to take part in the visualization, but only to be used for [linking](#linking), [filtering](#filtering) and [view data](#view-data).
+Hidden columns are useful in cases where we do not want the fields to be included in the visualization, but only used for [linking](#linking), [filtering](#filtering) and [view data](#view-data).
 
 ![Hidden Column ](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/assigndata.png)
 
-We can configure both measure and dimension fields into the hidden column. For measure we will be having all the settings we have for the measure fields expect formatting and filtering.
+We can configure both measure and dimension fields into the hidden column. For measures, we will have all the settings we have for the measure fields except for formatting and filtering.
 
 ![Configured with  measure series](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/measure.png)
 
-In the case of dimension fields we will having the following options only. In Date fields we will having all available types except sorting, relative date filter, settings and filters.
+In the case of dimension fields, we will have the following options only. In Date fields, we will have all available types except sorting, relative date filter, settings, and filters.
 
 ![Configured with  dimension series](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/dimension.png)
 
@@ -162,61 +162,61 @@ In the case of dimension fields we will having the following options only. In D
 
 #### Linking
 
-The primary use case of the hidden columns is linking. On configuring hidden columns, we can see below that the fields configured in hidden columns are listed in the linking section. On configuring the column in linking we can pass the corresponding column value in linking parameter.
+The primary use case for hidden columns is linking. When hidden columns are configured, we can see that the fields configured in hidden columns are listed in the linking section. By configuring the column in linking, we can pass the corresponding column value in the linking parameter.
 
-**Measure Based Example:** If we wish to pass the number of Matches played as an URL parameter but do not want it to influence the visualization, we can configure the Matches in the hidden columns and incorporate them into the link.
+**Measure Based Example:** If we want to pass the number of matches played as a URL parameter but do not want it to affect the visualization, we can configure the matches in the hidden columns and include them in the link.
 
 ![Linking](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/link-measure.png)
 
-**Dimension Based Example:** If we wish to pass the number of Team Name played as an URL parameter but do not want it to influence the visualization, we can configure  the Team Name in the hidden columns and incorporate them into the link.
+**Dimension Based Example:** If we want to pass the number of Team Name played as a URL parameter but do not want it to affect the visualization, we can configure the Team Name in the hidden columns and include them in the link.
 
 ![Linking](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/link-dimension.png)
 
 #### Filtering
 
-You can use hidden columns to filter data in the visualizations. Configure hidden columns and click the below filter icon.
+You can use hidden columns to filter data in the visualizations. Configure the hidden columns and click the filter icon below.
 
 ![Filter](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/filtericon.png)
 
-Click the Custom button highlighted in the filter configuration dialog image below. It will list all the fields configured in the widget. Keep the field configured in the hidden column and remove the other fields, then click the Update button.
+Click the Custom button, which is highlighted in the filter configuration dialog image below. This will display a list of all the fields that have been configured in the widget. Retain the field that is configured in the hidden column and remove the other fields. Finally, click the Update button.
 
 ![Filter](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/custom.png)
 
-Now, we can see in the below image, the data is filtered based on the hidden column field instead of the actual column that we bound in the widget. 
+Now, we can see in the image below that the data is filtered based on the hidden column field instead of the actual column that we bound in the widget.
 
 ![Filter](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/hidden-column-filter.png)
 
-For more details about filtering the widget data, refer to the [Filter Configuration documentation](/working-with-dashboards/configuring-dashboard-filters/)
+For more details about filtering the widget data, refer to the [Cross Filter Configuration documentation](/working-with-dashboards/configuring-cross-filters/).
 
 #### View Data
 
-You can view the data in the hidden columns in the underlying data view. This is useful for checking the data in more detail and can help you to identify any issues with the data.
+You can view the data in the hidden columns in the underlying data view. This is useful for checking the data in more detail and can help you identify any issues with the data.
  
 ![View data](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/viewdata.png)
 
-> **NOTE:** We don't recommend to configure lower hierarchy data in hidden columns as we can see in the info icon in `Hidden Column` section denotes the same. 
+> **NOTE:** We do not recommend configuring lower hierarchy data in hidden columns, as indicated by the information icon in the `Hidden Column` section. 
 
 ![Hidden Column ](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/info-icon.png)
 
-The below chart displays the goals and Attempts On Target by each team without hidden columns.
+The chart below displays the goals and Attempts On Target for each team without any hidden columns.
 
 ![Before](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/before.png)
 
-If we configure lower hierarchy data(Player Name) in hidden columns compared to column and Row filed data, the data configured in the widgets gets duplicate, and individual column is split based on hidden column field. This affects the chart visualization as we can see in the below image.
+If we configure the lower hierarchy data (Player Name) in hidden columns compared to column and row field data, the data configured in the widgets becomes duplicated, and each individual column is split based on the hidden column field. This affects the visualization of the chart, as can be seen in the image below.
 
 ![After](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/after.png)
 
 ## How to format 100% stacked area chart?
 
-You can format the 100% stacked area chart for better illustration of the view that you require, through the settings available in `Properties` pane.
+You can format the 100% stacked area chart for better illustration of the view you need using the settings available in the `Properties` pane.
 
 To configure data into 100% stacked area chart follow the steps
 
-1. Drag and drop the 100% stacked area chart into canvas and resize it to your required size.
+1. Please drag and drop the 100% stacked area chart onto the canvas and resize it to the size you need.
 
-2. Configure the data into 100% stacked area chart.
+2. Configure the data into a 100% stacked area chart.
 
-3. Focus on the 100% stacked area chart and click on widget settings.
+3. Please focus on the 100% stacked area chart and click on the widget settings.
 
 ![Settings Icon](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/settings-icon.png)
 
@@ -224,7 +224,7 @@ The property window will be opened.
 
 ![Properties pane](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/properties-pane.png)
 
-You can see the list of properties available for the widget with default value.
+You can view the list of properties that are available for the widget with the default value.
 
 #### General Settings
 
@@ -232,19 +232,19 @@ You can see the list of properties available for the widget with default value.
 
 #### Name
 
-This allows you to change the `title` for this 100% stacked area chart widget.
+This feature allows you to modify the `title` for the 100% stacked area chart widget.
 
 ![General Settings](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/Title.png)
 
 #### Subtitle
 
-Allows you to provide the `subtitle` for this spline area chart widget.
+This widget allows you to provide the `subtitle` for the spline area chart.
 
 ![General Settings](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/Subtitle.png)
 
 #### Description
 
-Allows you to provide the `description` about this spline area chart widget.
+This spline area chart widget allows you to provide the `description`.
 
 ![General Settings](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/description.png)
 
@@ -254,41 +254,41 @@ Allows you to provide the `description` about this spline area chart widget.
 
 #### Show Tooltip
 
-This option allows you to toggle the visibility of tooltip in a chart.
+This option allows you to toggle the visibility of the tooltip in a chart.
 
 ![General Settings](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/Tooltip.png)
 
 #### Show Value in Tooltip
 
-As it is a percentage type, while you hover on the chart the values will be shown with percentages. If you enable this option, the value will be shown in the tooltip
+As it is a percentage type, the values will be shown with percentages when you hover over the chart. If you enable this option, the value will be shown in the tooltip.
 
 #### Chart Type and axis
 
-Click the `Change` button to open the `Chart Type and Axis Settings` dialog. 
+To open the `Chart Type and Axis Settings` dialog, click the `Change` button.
 
 ![Chart Type](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/name.png)
 
-**Chart Type**: This allows you to switch the widget view from the current chart type to another chart type.
+**Chart Type**: This feature allows you to switch the widget view from the current chart type to a different chart type.
 
-**Secondary Axis**: By default, the configured field is plotted as the primary axis if you enable this option, the selected field will be plotted as the secondary axis. 
+**Secondary Axis**: By default, the configured field is plotted as the primary axis. If you enable this option, the selected field will be plotted as the secondary axis. 
 
 #### Enable Animation
 
-It animates the measure values when you toggle the `Enable Animation.`
+It animates the measure values when you toggle the `Enable Animation`.
 
 #### Show Value Labels
 
-This allows you to toggle the visibility of value labels.
+This feature allows you to switch the visibility of value labels.
 
 ![Show value label](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/show-value-label.png)
 
-If you Disable `Show Value Labels` properties, the dependent properties, which are **color**, **value label position**, **value label rotation** and **value label suffix** will be hidden.
+If you disable the `Show Value Labels` properties, the dependent properties, which are **color**, **value label position**, **value label rotation** and **value label suffix**, will be hidden.
 
 ![Show value label](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/show-label.png)
 
 #### Customize
 
-This allows you to customize the toggle visibility of value labels in each series.
+This feature allows you to customize the toggle visibility of value labels in each series.
 
 ![Show value label Customize](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/custom-valuelabel.png)
 
@@ -296,7 +296,7 @@ This allows you to customize the toggle visibility of value labels in each serie
 
 #### Value Label Color
 
-This allows you to customize the value label's color.
+This allows you to customize the color of the value label.
 
 ![Value label Color Option](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/data-label-color-option.png)
 
@@ -304,19 +304,19 @@ This allows you to customize the value label's color.
 
 #### Value Label Position
 
-This option allows you to customize the value label position in a chart. By default, it is set to ‘Auto,’ so the label position for the percent stacked area chart will be set as middle.
+This option allows you to customize the position of the value label in a chart. By default, it is set to `Auto`, so the label position for the percent stacked area chart will be set as middle.
 
 ![Value label position](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/value-labelposition.png)
 
 #### Value Label Rotation
  
-This allows you to define the rotation angle for the value labels to display.
+This allows you to define the rotation angle for displaying the value labels.
 
 ![Value label rotation](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/label-rotation.png)
 
 #### Value Label Suffix
 
-This allows you to show or hide the suffix value of value labels.
+This feature allows you to display or hide the suffix value of value labels.
 
 #### Suffix Value
 
@@ -324,51 +324,51 @@ This allows you to customize the suffix value of value labels.
 
 ![Suffix value](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/suffix-value.png)
 
-**Note:** When Increased the height and number of data in chart the value label was hidden. Use label rotation property to visible the label.
+> **Note:** When the height and number of data in the chart were increased, the value label was hidden. Use the label rotation property to make the label visible.
 
 #### Show Marker
 
-This allows you to toggle the visibility of marker from label to adorn each data point in the chart series.
+This allows you to toggle the visibility of markers, which label and adorn each data point in the chart series.
 
 ![Show marker](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/show-marker.png)
 
 ### Show Items With No Data
 
-This allows you to show the data which column does `not` have any values.
+This allows you to show the data for which column does `not` have any values.
 
 ![Empty Point Mode Gap](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/chart-gap.png)
 
 ### Empty Point Mode
 
-This option allows you to handle the display mode of the data point values is `null or undefined.`
+This option allows you to handle the display mode of the data point values when they are `null or undefined`.
 
 ![Empty Point Mode Gap](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/chart-gap.png)
  
 ### Gap
 
-This option allows you to show the null or undefined values with gaps.
+This option allows you to display the null or undefined values as gaps.
 
 ![Empty Point Mode Gap](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/chart-gap.png)
 
 ### Zero
 
-This option allows you to show the null or undefined values in the zero axis.
+This option allows you to display the null or undefined values on the zero axis.
 
 ![Empty Point Mode Zero](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/chart-zero.png)
 
 ### Average
 
-This option allows you to display the null or undefined values with the average value.
+This option enables you to present the null or undefined values using the average value.
 
 ![Empty Point Mode Zero](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/chart-average.png)
 
 ### Enable Smooth Scroll
 
-On enabling this support, the chart scroll bar thumb-size will be calculated based on the total records count. So, you can see the last record by performing a single scroll.
+By enabling this support, the size of the chart scroll bar thumb will be calculated based on the total number of records. This will allow you to view the last record by simply scrolling once.
 
 ### Page Size
 
-This option allows you to set a number of records that need to be fetched on initial load.
+This option allows you to specify the number of records that need to be fetched on the initial load.
 
 #### Legend Settings
 
@@ -376,26 +376,26 @@ This option allows you to set a number of records that need to be fetched on ini
 
 #### Show Legend
 
-A Legend is a text used to describe the data plotted. This allows you to toggle the visibility of legend in chart and also change the legend text position (selecting through combo box).  
+A legend is a text used to describe the plotted data. This allows you to toggle the visibility of the legend in the chart and also change the position of the legend text by selecting through the combo box.  
 
 ![Show Legend](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/show-legend.png)
 
-Enabling this option of **Custom Legend Text** will allow you to define a custom text (through the text area) to display for each legend series (selecting through the combo box) in chart.
+Enabling the option of **Custom Legend Text** will allow you to define a custom text, using the text area, to display for each legend series in the chart (selected through the combo box).
 
 #### Legend Interactivity
 
-The chart `legend interactivity` option allows you to control the behavior of the chart legends. This provides an option to make chart legends non-clickable, which can be especially useful in scenarios where you do not want users to hide or show series data by clicking on the legend. This might also be useful when displaying critical pieces of data that should always be present for accuracy and context purposes.
+The chart's `legend interactivity` option allows you to control the behavior of the chart legends. This option provides the ability to make chart legends non-clickable, which can be particularly useful in situations where you do not want users to hide or show series data by clicking on the legend. This feature might also be beneficial when displaying crucial data that should always be present for accuracy and context.
 
-Disabling the Interactivity feature in the Legend Settings category does not allow you to click on the legends.
+Disabling the Interactivity feature in the Legend Settings category prevents you from clicking on the legends.
 
 ![Legend Interactivity Disable](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/legend-interactivity-disable.png)
-Enabling the Interactivity feature in the Legend Settings category allows you to click on the legends
+Enabling the Interactivity feature in the Legend Settings category allows you to click on the legends.
 
 ![Legend Interactivity Enable](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/legend-interactivity-enable.png)
 
 #### Legend Label Color
 
-This allows you to change the chart legend title and label colors.
+This feature enables you to modify the title and label colors of the chart legend.
 
 ![Chart Legend Color Option](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/legend-label-color-option.png)
 
@@ -403,7 +403,7 @@ This allows you to change the chart legend title and label colors.
 
 #### Customize
 
-You can customize the legend text through the `Custom Legend Settings` dialog. This dialog will show the legend text list as labels at left and corresponding text area at right to add the formatted text to display instead.
+You can customize the legend text by using the `Custom Legend Settings` dialog. This dialog displays a list of legend text labels on the left, with a corresponding text area on the right. In this text area, you can add formatted text that will be displayed instead of the default legend text.
 
 ![Legend customization](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/legendcustomize.png)
 
@@ -411,7 +411,7 @@ You can customize the legend text through the `Custom Legend Settings` dialog. T
 
 **Custom Legend Settings when giving Row Section**
 
-You can customize the legend text using the Custom Legend Settings dialog. This dialog will show the legend text list as labels at left and corresponding text area at right to add the formatted text to display instead. When a column is added into Row section, this dialog will show two options `Individual` and `Group` at top in addition, to toggle between.
+You can customize the legend text using the Custom Legend Settings dialog. This dialog will display the legend text list as labels on the left and a corresponding text area on the right to add formatted text to be displayed instead. When a column is added to the Row section, this dialog will also show two options, `Individual` and `Group`, at the top to toggle between.
 
 ***Individual***
 
@@ -432,47 +432,47 @@ A Legend is a text used to describe the data plotted. This option allows you to 
 Legends can be displayed as a dropdown menu when the legend position is set to "dropdown." When you hover over a chart, a legend icon appears. Clicking on this icon will bring up a legend dropdown. This feature allows you to toggle the visibility of the legend in the chart.
 
 This option will hide the legends in the chart area, resulting in increased chart space and enhanced visibility.
- 
+
 The chart legend dropdown option can be used to simplify viewing complex charts with multiple data sources. For example, if you have a chart displaying sales data for the different years, you can use the legend dropdown to deselect all other years and focus only on a specific year.
 
 ![Legend item as dropdown](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/legend-as-dropdown.png)
 
 #### Legend Shape
 
-This allows you change the **shape** of the legend.
+This allows you to change the **shape** of the legend.
 
 ***Circle***
 
-This option allows you to change the shape of the legend in a `Circle.`
+This option enables you to modify the shape of the legend to a `Circle`.
 
 ![Show Legend shape](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/legend-shape.png)
 
 ***Series Type***
 
-This option allows you to change the shape of the legend in a `Series.`
+This option allows you to change the shape of the legend in a `Series`.
 
 ![Show Legend shape Series](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/legendshape-series.png)
 
 #### Legend Title
 
-This allows you to add the legend title for the chart. It will reflect with the `Show Legend.`
+This allows you to add the legend title for the chart. It will reflect with the `Show Legend`.
 
 ![Show Legend Title](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/legendtitle.png)
 
 #### Text Overflow
 
-This option allows you to customize the legend text based on the 'Text Width' property value.
+This option enables you to customize the legend text based on the value of the `Text Width` property.
 
 ***None***
 
-This option allows you to render the legend items without any wrap and trim.
+This option enables you to display the legend items without any wrapping or trimming.
 
 ![Legend Overflow None Option in chart](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/legend-text-overflow-none-option.png)
 
 ![Legend Overflow None in chart](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/legend-text-overflow-none.png)
 ***Trim***  
 
-This option allows you to trim the legend items if its legend exceeds the 'Text Width' value.
+This option allows you to trim the legend items if their legend exceeds the value of `Text Width`.
 
 ![Legend Overflow Trim Option in chart](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/legend-text-overflow-trim-option.png)
 
@@ -480,7 +480,7 @@ This option allows you to trim the legend items if its legend exceeds the 'Text 
 
 ***Wrap***
 
-This option allows you to wrap the legend items based on 'Text Width' value.
+This option allows you to wrap the legend items based on the value of `Text Width`.
 
 ![Legend Overflow Wrap Option in chart](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/legend-text-overflow-wrap-option.png)
 
@@ -488,59 +488,59 @@ This option allows you to wrap the legend items based on 'Text Width' value.
 
 #### Text Width
 
-This option allows you to set the maximum width for the Legend Items and it is applicable only if text-overflow is set as Trim or Wrap.
+This option allows you to set the maximum width for the legend items, and it is applicable only if text-overflow is set as Trim or Wrap.
 
 ![Legend Text Width Option in chart](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/legend-text-overflow-width-option.png)
 
 ![Legend Text Width in chart](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/legend-text-overflow-width.png)
 
-If you uncheck the `Show Legend` property in the property panel, the dependent properties, which are the **legend color**, **legend position**, **customization button** and **legend title** are also hidden.
+If you uncheck the `Show Legend` property in the property panel, the dependent properties, which are the **legend color**, **legend position**, **customization button** and **legend title**, are also hidden.
 
-> **NOTE:** For single series, Legend wont be visible. 
+> **NOTE:** For a single series, the legend won't be visible.
 
 #### Link
 
 ![Linking](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/linking.png)
 
-You can enable linking and configure to navigate to a general URL with or without parameters. For more details, refer to the [Linking](/visualizing-data/working-with-widgets/linking-urls-and-dashboards/).
+You can enable linking and configure it to navigate to a general URL, whether with or without parameters. For more details, please refer to the [Linking](/visualizing-data/working-with-widgets/linking-urls-and-dashboards/).
 
 #### Axis Settings
 
 ![Axis settings](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/axis-settings.png)
 
-This section allows you to customize the axis settings in chart. 
+This section allows you to customize the axis settings in the chart. 
 
 #### Title color
 
-This allows you to customize the axis title color.
+This feature allows you to customize the color of the axis title.
 
 ![Title color](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/title-color.png)
 
 #### Label color
 
-This allows you to customize the axis label color.
+This feature allows you to customize the color of the axis labels.
 
 ![Label color](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/label-color.png)
 
 #### Show Category Axis
 
-This allows you to enable the visibility of `Category Axis.`
+This allows you to enable the visibility of the `Category Axis.`
 
 ![Show Category axis](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/show-category-axis.png)
 
-If you disable the `Show Category Axis` option, dependent properties such as the **Show axis title**, **Axis title text**, **Trim overflow mode**, **Trim axis labels**, **Label Rotation** and **Auto Interval** option will be hidden.
+If you disable the `Show Category Axis` option, dependent properties such as the **Show axis title**, **Axis title text**, **Trim overflow mode**, **Trim axis labels**, **Label Rotation** and **Auto Interval**, option will be hidden.
 
 ![Show value label](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/show-axis.png)
 
 #### Show Category Axis Title
 
-This allows you to enable the visibility of `Category Axis` title.
+This allows you to enable the visibility of the `Category Axis` title.
 
 ![Show Category axis title](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/show-category-axis-title.png)
 
 #### Category Axis Title
 
-This allows you to edit the `Category Axis` title for the chart. It will reflect in the x-axis name of a chart.
+This feature allows you to edit the title of the `Category Axis` for the chart, which will be displayed as the x-axis name of the chart.
 
 ![Category axis title](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/category-axis-title.png)
 
@@ -554,23 +554,23 @@ This allows you to handle the display mode of the overlapping labels in the `Cat
 
 ***Trim***
 
-This option trims the end of overlapping label in the axis.
+This option trims the end of the overlapping label on the axis.
 
 ![Trim](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/category-axis-title.png)
 
 ***Hide***
 
-This option hides the overlapping label in the axis. 
+This option hides the overlapping label on the axis.
 
 ![Hide](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/hide.png)
 
 #### Trim Axis Labels
 
-This option allows you to trim the axis labels based on the `Maximum Label Width` property value.
+This option enables you to shorten the axis labels according to the value of the `Maximum Label Width` property.
 
 #### Label Maximum Width
 
-This option allows you to set a `maximum width` for the axis labels, and also it can be made customizable when the `trim axis label` option is enabled.
+This option allows you to set a `maximum width` for the axis labels. It can also be customized when the `trim axis label` option is enabled.
 
 ![Label maximum width](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/maximum-label-width.png)
 
@@ -578,7 +578,7 @@ This option allows you to set a `maximum width` for the axis labels, and also it
 
 #### Category Axis Label Rotation
 
-This allows you to define the rotation angle for the category axis labels to display.
+This feature allows you to specify the rotation angle for displaying the category axis labels.
 
 ![Axis label rotation](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/axis-label-rotation.png)
 
@@ -586,13 +586,13 @@ This allows you to define the rotation angle for the category axis labels to dis
 
 ![Axis interval](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/chart-auto-interval.png)
 
-By default, the 'Auto Interval' property is enabled. Auto Interval property is used to set auto intervals based on the number of data points for category axis labels. If a user wants to customize the interval, then the user needs to disable the auto interval and set the required interval.
+By default, the `Auto Interval` property is enabled. The Auto Interval property is used to set automatic intervals based on the number of data points for category axis labels. If a user wants to customize the interval, then the user needs to disable the auto interval and set the required interval.
 
 ![Axis interval Value](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/chart-interval.png)
 
 #### Show Primary Value Axis
 
-This allows you to enable the `Primary Value Axis` for chart. 
+This allows you to enable the `Primary Value Axis` for the chart. 
 
 ![Show primary value axis](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/show-primary-value-axis.png)
 
@@ -602,37 +602,37 @@ If you disable `Show Primary Axis` option, dependencies properties **Axis title*
 
 #### Show Primary Value Axis Title
 
-This allows you to enable the visibility of `Primary Value Axis` title of chart.
+This allows you to enable the visibility of the `Primary Value Axis` title of the chart.
 
 ![Show Primary value axis title](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/primary-value-axis-title.png)
 
 #### Primary Value Axis Title
 
-This allows you to edit the `Primary Value Axis` title. It will reflect in the y-axis name of a chart.
+This allows you to edit the title of the `Primary Value Axis`, which will be reflected as the name of the y-axis on a chart.
 
 ![Primary value axis title](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/edit-primary-value-axis-title.png)
 
 ### Inverse Axis
 
-By default, the chart axis showing positive values on the top and negative values at the bottom. But, there are times when we need to inverse the axis and show the negative values on the top and positive values on the bottom. For Example, When we bind the temperature data to the chart and to display the negative values on the top, we can make use of this property.
+By default, the chart axis shows positive values at the top and negative values at the bottom. However, there are times when we need to invert the axis and display the negative values at the top and positive values at the bottom. For example, when we bind temperature data to the chart and want to display the negative values at the top, we can utilize this property.
 
-On enabling this property the chart negative values will display on the top and positive values display on the bottom.
+When this property is enabled, the chart will display negative values on the top and positive values on the bottom.
 
 ![Inversed axis](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/inverseaxis.png)
 
 #### Axis Range Settings
 
-This allows you to manually set the Minimum, Maximum, and Interval values of primary value axis through the `Axis Range Settings` dialog.
+This allows you to manually set the minimum, maximum, and interval values of the primary value axis through the `Axis Range Settings` dialog.
 
 ![Axis Range Settings](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/axisrangesettings.png)
 
-It will reflect in the primary value axis of the chart.
+It will be reflected in the primary value axis of the chart.
 
 ![Axis range settings output](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/axisrangeoutput.png)
 
 ### Parameter Support in Axis range:
 
-This allows you to dynamically set the Minimum, Maximum, and Interval values of the primary value axis through the `Axis Range Settings` dialog by using the dashboard parameter values. Only number-type Dashboard parameter values are allowed in the axis range properties. You can create multiple types of dashboard parameters.
+This allows you to dynamically set the minimum, maximum, and interval values of the primary value axis through the `Axis Range Settings` dialog by using the dashboard parameter values. Only number-type dashboard parameter values are allowed in the axis range properties. You can create multiple types of dashboard parameters.
 
 1. Single parameter value.
 2. Range parameter value.
@@ -644,45 +644,45 @@ For more details about dashboard parameter, refer to the [Dashboard parameter do
 
 A single value is stored in this type of parameter.
 
-1. Create a dashboard parameter in number type like below.
+1. Please create a dashboard parameter in the number type as shown below.
 
 ![Axis Range Settings Output](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/singleparameter.png)
 
-Click the axis range settings dialog and enter `@` in any textbox(**minimum**, **maximum and interval**). Select the parameter value (Number type parameter values only allowed).
+Click the axis range settings dialog and enter `@` in any textbox (**minimum**, **maximum**, and **interval**). Select the parameter value (Number type parameter values are the only ones allowed).
 
 ![Axis Range Settings Output](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/singleaxis.png)
 
-Now the parameter value is reflected in the chart axis.
+Now, the parameter value is reflected on the chart axis.
 
 ![Axis Range Settings Output](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/single.png)
 
 ### Range Parameter Value:
 
-If you wish to set the same ranges in multiple cases, create the range type parameter value. This type of parameter has the start and end values.
+If you want to establish identical ranges in multiple instances, create a parameter value for the range type. This parameter type includes the starting and ending values.
 
 1. Create a parameter in range type.
 
 ![Axis Range Settings Output](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/rangeparameter.png)
 
-2. Click the axis range settings dialog and enter `@` in any textbox(**minimum**, **maximum**, and **interval**). The range parameter is split into start and end parameters. First textbox value is stored in the start parameter, and the second textbox value is stored in the end parameter. Select the parameter value (Number type parameter values only allowed).
+2. Click the axis range settings dialog and enter `@` in any textbox (**minimum**, **maximum**, and **interval**). The range parameter is split into start and end parameters. The value in the first textbox is stored in the start parameter, and the value in the second textbox is stored in the end parameter. Select the parameter value (only Number type parameter values allowed).
 
 ![Axis Range Settings Output](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/rangeaxis.png)
 
-3. The parameter value is reflected in the chart axis.
+3. The value of the parameter is reflected on the chart axis.
 
 ![Axis Range Settings Output](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/range.png)
 
 ### Data Source Field Based Parameter Value:
 
-1. Create a parameter in the data source type. In this, choose any field. The value is based on the selected field value.
+1. Create a parameter in the data source type, choosing any field. The value should be based on the selected field value.
 
 ![Axis Range Settings Output](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/datasource.png)
 
-2. Click the axis range settings dialog and enter `@` in any textbox(**minimum**, **maximum and interval**). Select the parameter value.
+2. Click on the axis range settings dialog and enter `@` in any textbox (**minimum**, **maximum**, and **interval**). Then, select the parameter value.
 
 ![Axis Range Settings Output](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/datasourceaxis.png)
 
-3. The parameter value is reflected in the chart axis.
+3. The value of the parameter is reflected on the chart axis.
 
 ![Axis Range Settings Output](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/datasourcemin.png)
 
@@ -692,25 +692,25 @@ If you wish to set the same ranges in multiple cases, create the range type para
 
 #### Primary value Axis
 
-This allows you to enable the `Primary Value Axis` gridlines for the 100% stacked area chart.
+This feature allows you to enable gridlines for the `Primary Value Axis` in the 100% stacked area chart.
 
 ![Axis Gridline](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/axis-gridline.png)
 
 #### Category Axis
 
-This allows you to enable the `Category axis` gridlines for the 100% stacked area chart.
+This allows you to enable the gridlines for the `Category axis` in the 100% stacked area chart.
 
 ![Category Axis](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/category-axis.png)
 
 ### Series Palette
 
-This allows you to apply color for chart series either by using a default palette or a custom color palette. By default, the colors will be applied using the default palette. This series of settings will be visible only if you configured the row section in the chart.
+This allows you to apply color to chart series either by using a default palette or a custom color palette. The colors will be applied using the default palette by default. This series of settings will only be visible if you have configured the row section in the chart.
 
 ![Series Palette](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/series-palette.png)
 
 #### Use Default Palette
 
-This Option allows you to apply default color for chart series.
+This option allows you to apply the default color for chart series.
 
 By toggle off the `Use Default Palette` option, the `Color Mapping Type` will be shown.
 
@@ -718,39 +718,39 @@ By toggle off the `Use Default Palette` option, the `Color Mapping Type` will be
 
 #### Color Mapping Type
 
-Using the Color Mapping type, you can apply the colors to the series either based on data or index.
+By using the Color Mapping type, you have the ability to apply colors to the series, either based on data or index.
 
 ![Color Mapping Type option](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/color-mapping-type-options.png)
 
 ***Data***
 
-It allows you to apply color for chart series based on data. If you want to apply a specific color to specific data(i.e. Violet color for 2021, Sky Blue color for 2022, and green for 2020), you can use Data based color mapping. By default, the Color Mapping Type will be `Data`.
+It allows you to apply color to chart series based on data. If you want to assign a specific color to specific data (e.g., Violet for 2021, Sky Blue for 2022, and green for 2020), you can use data-based color mapping. The default Color Mapping Type is `Data`.
 
 ![Color Mapping Type Data](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/data-type-color.png)
 
 ***Index***
 
-It allows you to apply color for chart series based on `Index`. Such that the colors are maintained based on index even if data is changed. It shows only 15 different colors. After that, the color will be repeated from above colors.
+It allows you to apply color to chart series based on the `Index`, so that the colors remain consistent even if the data is changed. It only shows a maximum of 15 different colors, after which the colors will be repeated from the ones above.
 
-For example, If you are displaying the countries based on the increasing order of the case count, then index-based color mapping will be useful to set the colors based on the rank. Say red color to the top, then the red color will be maintained for the country having the largest case count.
+For example, if you are displaying the countries based on the increasing order of the case count, then index-based color mapping will be useful to set the colors based on the rank. For instance, assigning the red color to the top-ranked country will be maintained for the country with the largest case count.
 
 ![Color Mapping Type Index](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/index-based-color.png)
 
-**Note:** We prefer to use Index based color customization only for minimum data(upto 15 series).
+> **Note:** We only prefer to use index-based color customization for a minimum amount of data, up to 15 series.
 
 ### Font settings
 
-This section allows you to customize font size of chart elements.
+This section allows you to customize the font size of chart elements.
 
 ![Font settings](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/font-settings.png)
 
 #### Auto font Size and font size
 
-By default, the 'Auto Font Size' property is enabled. Auto font size property used to set font size based on dashboard viewing client machine resolution. If the user wants to customize or set fixed font size, then the user needs to disable the auto font size and set the required font size.
+By default, the `Auto Font Size` property is enabled. The auto font size property is used to set the font size based on the resolution of the machine on which the dashboard is being viewed. If the user wants to customize or set a fixed font size, they need to disable the auto font size and manually set the desired font size.
 
 #### Formatting
 
-This allows you to customize the color for the widget.
+This feature enables you to personalize the color of the widget.
 
 ![Formatting](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/formatting.png)
 
@@ -762,17 +762,17 @@ This allows you to customize the color for the widget.
 
 #### Act as Master Widget
 
-This allows you to define this 100% stacked area chart widget as a master widget such that its filter action can be made to listen by other widgets in the dashboard.
+This allows you to define the 100% stacked area chart widget as a master widget, so that other widgets in the dashboard can listen to its filter action.
 
 #### Ignore Filter Actions
 
-This allows you to define this 100% stacked area chart widget to ignore responding to the filter actions applied on other widgets in dashboard.
+This feature allows you to define the 100% stacked area chart widget to ignore any filter actions applied to other widgets on the dashboard.
 
 #### Hierarchical Filter
 
-Through this option, you can enable/disable the hierarchical `top N` filtering. While applying the `Top N` filter with multiple dimension columns, the data returned can be customized based on whether the filtering need to be done as flat or based on the hierarchy of dimension columns added.
+Through this option, you can enable or disable the hierarchical `top N` filtering. When applying the `Top N` filter with multiple dimension columns, the returned data can be customized based on whether the filtering needs to be done as flat or based on the hierarchy of dimension columns added.
 
-When the `Hierarchical Filter` option is enabled, the Top N will be applied for each individual column separately based on the number set for each column.
+When the `Hierarchical Filter` option is enabled, the Top N will be applied to each individual column separately, based on the number set for each column.
 
 ### Container Appearance
 
@@ -780,7 +780,7 @@ When the `Hierarchical Filter` option is enabled, the Top N will be applied for 
 
 ### Title Alignment
 
-This allows you to handle the alignment of widget title to either **left, center, or right**.
+This feature allows you to adjust the alignment of the widget title to either the **left, center, or right**.
 
 ### Title Color
 
@@ -788,7 +788,7 @@ This allows you to apply the text `color` to the widget title.
 
 ### Title Auto Font Size
 
-On enabling Auto Font Size, the font size of the title will be adjusted automatically if the resolution of the screen varies.
+When Auto Font Size is enabled, the title's font size will be automatically adjusted if the screen resolution varies.
 
 **Font Size**
 
@@ -796,27 +796,27 @@ This allows you to apply the specified size of the font to the widget title if t
 
 ### Subtitle Auto Font Size
 
-On enabling Auto Font Size, the font size of the subtitle will be adjusted automatically if the resolution of the screen varies.
+When Auto Font Size is enabled, the subtitle's font size will be automatically adjusted if the screen resolution varies.
 
 **Font Size**
 
-This allows you to apply the specified size of the font to the widget title if the **Subtitle Auto Font Size** is disabled. Value can be between 10 and 32.
+This allows you to apply the specified font size to the widget title if the **Subtitle Auto Font Size** is disabled. The value can be between 10 and 32.
 
 ### Auto Padding
 
-On enabling Auto Padding, the padding of the widget container will be adjusted automatically if the size of the widget varies.
+When Auto Padding is enabled, the padding of the widget container will adjust automatically if the size of the widget varies.
 
 **Padding**
 
-This allows you to customize the padding of the widget container if the **Auto Padding** is disabled. Value can be between 0 and 25.
+This allows you to customize the padding of the widget container if the **Auto Padding** is disabled. The value can be between 0 and 25.
 
 ### Show Border
 
-This allows you to toggle the visibility of the `border` surrounding the widget.
+This feature allows you to toggle the visibility of the `border` surrounding the widget.
 
 ### Corner Radius
 
-This allows you to apply the specified `radius` to the widget corners if the **Show Border** is enabled. Value can be between 0 and 10.
+This allows you to apply the specified `radius` to the widget corners if the **Show Border** is enabled. The value can range from 0 to 10.
 
 ### Show Background Image
 
@@ -824,7 +824,7 @@ This allows you to set the **background image** for the spline area chart widget
 
 ### Background Color
 
-This allows you to set the **background color** to the spline area chart widget.
+This feature allows you to set the **background color** for the spline area chart widget.
 
 ### Transparency
 
@@ -832,7 +832,7 @@ This property allows you to specify the **transparency** for the `background col
 
 ### Show Shadow
 
-This allows you to toggle the visibility of the `Shadow` surrounding the widget.
+This feature allows you to toggle the visibility of the `Shadow` surrounding the widget.
 
 ### Container actions
 
@@ -840,7 +840,7 @@ This allows you to toggle the visibility of the `Shadow` surrounding the widget.
 
 #### Show Header
 
-This allows you to enable or disable the `widget title` of the 100% stacked area chart. 
+This feature allows you to enable or disable the `widget title` of the 100% stacked area chart.
 
 #### Allow Maximize View
 
@@ -884,6 +884,6 @@ When the chart has been placed with less than 7 columns chart Y-axis labels, Y-a
 
 ![Widget Element](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/Y-axis-label.png)
 
-When the chart has been placed with less than 6 rows, chart X-axis labels, X-axis titles and gridlines will be hidden.
+When the chart has fewer than 6 rows, the X-axis labels, X-axis titles, and gridlines will be hidden.
 
 ![Widget Element](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-area-chart/X-axis-label.png)

@@ -1,6 +1,6 @@
 ﻿{
   "authentication": {
-    "getauthenticationdescription": "Bold BI API uses OAuth 2.0 authentication based on client credentials. To make an API request, you need to generate an access token using the client ID and secret. For subsequent API requests, this access token should be sent in the Authorization header. This access token is valid for 60 minutes from the time it is received.\n\n For information on how to retrieve the client ID and secret for the REST API, please refer to [this](https://help.boldbi.com/embedded-bi/multi-tenancy/site-administration/api-keys/) documentation."
+    "getauthenticationdescription": "Bold BI API uses OAuth 2.0 authentication based on client credentials. To make an API request, you need to generate an access token using the client ID and secret. For subsequent API requests, this access token should be sent in the Authorization header. This access token is valid for 60 minutes from the time it is received.\n\n For information on how to retrieve the client ID and secret for the REST API, please refer to [this](/multi-tenancy/site-administration/api-keys/) documentation."
   },
   "startup": {
     "getstartupdescription": "The Bold BI or Bold Reports application can be configured for the first time using this API.\n\nYou will need an offline unlock key, which can be found [here](https://www.boldbi.com/account/downloads/embedded) , to activate Bold BI or Bold Reports.\nPlease open a support ticket [here](https://support.boldbi.com/create) if you don't have access to the offline key."

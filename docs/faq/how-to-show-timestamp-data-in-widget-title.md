@@ -7,9 +7,9 @@ documentation: ug
 
 # How to show Timestamp data in widget’s title
 
-You can show Timestamp information in the widget’s title by using the corresponding timestamp column in [Label Parameter](/visualizing-data/working-with-widgets/configuring-label-parameters/) and that timestamp column should be present in the data source.
+You can display Timestamp information in the widget's title by utilizing the corresponding timestamp column in the [Label Parameter](/visualizing-data/working-with-widgets/configuring-label-parameters/). The timestamp column must be included in the data source.
 
-The following is the list of supported date formatting. If you did not apply any formatting, the actual value of the timestamp column will be rendered in the widget’s title.
+The following is the list of supported date formatting. If you do not apply any formatting, the actual value of the timestamp column will be rendered in the widget's title.
 
 <table>
    <tr>
@@ -46,13 +46,13 @@ The following is the list of supported date formatting. If you did not apply any
    </tr>
    </table>
 
-Follow these steps to achieve this requirement:
+Follow these steps in order to meet this requirement:
 
-1. Configure any widget with the required fields. In this example, we have configured the KPI Card with the required fields in the **Assign Data** tab
+1. Configure any widget with the necessary fields. In this example, we have configured the KPI Card with the required fields in the **Assign Data** tab.
 
     ![Configure KPI Card widget](/static/assets/faq/images/configure-kpi-card-widget.png#max-width=60%)
 
-2. Navigate to the **Properties** tab and in the widget title and add a label parameter with the timestamp column name.
+2. Navigate to the **Properties** tab and in the widget title, add a label parameter with the timestamp column name.
 
     `Syntax: {{:ColumnName}}`
 
@@ -60,6 +60,6 @@ Follow these steps to achieve this requirement:
 
     ![Add Timestamp in Label Parameter](/static/assets/faq/images/add-timestamp-label-parameter.png#max-width=60%)
 
-3. In preview, you can view the data of a widget with the corresponding timestamp like the screenshot below:
+3. In the preview, you can view the data of a widget with the corresponding timestamp, similar to the screenshot below.
 
     ![KPI Card with Timestamp](/static/assets/faq/images/kpi-card-with-timestamp.png#max-width=50%)

@@ -8,13 +8,13 @@ documentation: ug
 ---
  
 # Connecting Bold BI to AWS Open Search
-The **Bold BI** Dashboard designer supports connecting the AWS Open Search using the [SQL Live Query](https://opensearch.org/docs/latest/search-plugins/sql/index/).
+The **Bold BI** Dashboard designer supports connecting to AWS Open Search using the [SQL Live Query](https://opensearch.org/docs/latest/search-plugins/sql/index/).
 
 **Supported Server Versions**:
 *  Amazon Elastic Search `7.10` and above
 
 ### Prerequisites
-To connect Amazon Elasticsearch service through Open Search, make sure you have enabled settings:
+To connect to Amazon Elasticsearch service through Open Search, make sure you have enabled the following settings:
 
 PUT _opendistro/_sql/settings <br />
 
@@ -26,8 +26,8 @@ PUT _opendistro/_sql/settings <br />
 }
 
 ## How to create AWS Open Search data source
-You can connect your AWS Open Search data source using Elastic Search data source connector. To configure the AWS Open Search data source, follow these below steps: 
-1. Open dashboard designer configuration panel and Click `Data Sources` icon to add a new data connection.
+You can connect your AWS Open Search data source using the Elastic Search data source connector. To configure the AWS Open Search data source, follow these steps:
+1. Open the dashboard designer configuration panel and click on the `Data Sources` icon to add a new data connection.
 
      ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/Amazon-opensearch/Datasourceicon.png#width=359.5px;height=512.2px)
 
@@ -37,7 +37,7 @@ You can connect your AWS Open Search data source using Elastic Search data sourc
 
      ![Choose data source](/static/assets/working-with-datasource/data-connectors/images/Amazon-opensearch/Choosedatasource.png#width=355.5px;height=509.7px)
    
-> **NOTE:**  You can also create a data source from the Bold BI home page by clicking the **Data Sources** menu from the left menu panel and **Create Data Source** from the data sources page.
+> **NOTE:**  You can also create a data source from the Bold BI home page by clicking on the **Data Sources** menu from the left menu panel and selecting **Create Data Source** from the data sources page.
 
    ![Select data source](/static/assets/working-with-datasource/data-connectors/images/Amazon-opensearch/Selectdatasource.png#max-width=85%)
 
@@ -47,9 +47,9 @@ An AWS Open Search data source can be accessed in Bold BI using the live connect
 ### Create an AWS Open Search data source in Live mode
 After clicking the data source, the NEW DATA SOURCE configuration panel opens. Follow the given steps to create an Open Search data source: <br/>
 1.	Enter a name and description (optional) for the data source. 
-2.	To connect to an Amazon Web Service hosted Open Search instance, please use connection type as Open Distro.
+2.	To connect to an Amazon Web Service hosted Open Search instance, please use the connection type as Open Distro.
 3.	Enter a valid Open Search `server` or `hostname` in the Server Name text box.
-4.	Enter the `port`, in which the server is running in the port text box.
+4.	Enter the `port` in which the server is running in the port text box.
 5.  Choose the `Live` mode option for this connection.
 6.	Enter a valid `username` in the Username text box.
 7.	Enter a valid `password` in the Password text box.
@@ -62,7 +62,7 @@ After clicking the data source, the NEW DATA SOURCE configuration panel opens. F
 1.	Enter a name and description (optional) for the data source. 
 2.	To connect to an Amazon Web Service hosted Open Search instance, use the connection type as Open Distro.
 3.	Enter a valid Open Search `server` or `hostname` in the Server Name text box.
-4.	Enter the `port`, in which the server is running in the port text box.
+4.	Enter the `port` in which the server is running in the port text box.
 5.  Choose the `Extract` mode option for this connection.
 6.	Enter a valid `username` in the Username text box.
 7.	Enter a valid `password` in the Password text box.
@@ -70,30 +70,30 @@ After clicking the data source, the NEW DATA SOURCE configuration panel opens. F
 
      ![Open search connection](/static/assets/working-with-datasource/data-connectors/images/Amazon-opensearch/opendistroextract.png#max-width=100%)
 
-**NOTE:**  You can connect with Elasticsearch database by selecting connection type as Elasticsearch SQL. Please click [here](/working-with-data-sources/data-connectors/elastic-search/) for Elasticsearch data source connection.
+> **NOTE:**  You can connect to the Elasticsearch database by selecting the connection type as Elasticsearch SQL. Please click [here](/working-with-data-sources/data-connectors/elastic-search/) for Elasticsearch data source connection.
 
-> **NOTE:** You can also connect through the `Custom query` support on the extract mode of connection by providing the valid SQL query in both the Elastic search SQL and Open distro connection types.
+> **NOTE:** You can also connect through the `Custom query` support in the extract mode of connection by providing a valid SQL query in both the Elasticsearch SQL and Open Distro connection types.
 
 ![Custom query connection](/static/assets/working-with-datasource/data-connectors/images/Amazon-opensearch/customquery.png#max-width=70%)
 
 ### Data Transformation
 
-1.	After connecting the data source, the data design view page will be opened. On this page, the list of schemas and tables from the AWS Open Search server will be shown in a  `treeview` section.
+1.	After connecting to the data source, the data design view page will open. On this page, a list of schemas and tables from the AWS Open Search server will be displayed in a `treeview` section.
 
      ![Tree view](/static/assets/working-with-datasource/data-connectors/images/Amazon-opensearch/Treeview.png#max-width=100%)
 
-2.	Now, you can drag and drop the required table from the `tree view` list.
+2.	Now, you can drag and drop the required table from the `treeview` list.
 
      ![Drag and drop table](/static/assets/working-with-datasource/data-connectors/images/Amazon-opensearch/Draganddroptable.png#max-width=100%)
 
 3.	After dragging and dropping the required table, you can do data modeling such as  [Formatting Columns](/working-with-data-sources/data-modeling/), [Configure Data Filters](/working-with-data-sources/data-modeling/), and [Configure Expression Columns](/working-with-data-sources/data-modeling/) can be done.
 
 ### Data Preview
-1.	To view the data from the selected table, select the `Update` button.
+1.	To view the data from the selected table, click the `Update` button.
 
      ![Update values](/static/assets/working-with-datasource/data-connectors/images/Amazon-opensearch/Updatevalues.png#max-width=100%)
 
-2.	Now, the data from the selected table will be shown.
+2.	The data from the selected table will then be displayed.
 
      ![Table values retrieve](/static/assets/working-with-datasource/data-connectors/images/Amazon-opensearch/Retrievedvalues.png#max-width=100%)
 	
@@ -101,17 +101,17 @@ After clicking the data source, the NEW DATA SOURCE configuration panel opens. F
 
      ![Save data source](/static/assets/working-with-datasource/data-connectors/images/Amazon-opensearch/Savedatasource.png#max-width=100%)	
 
-> **NOTE:** Amazon Open Search have the following Limitations:  <br />
-•	Joins are not supported and thrown error message.  <br />
-•	Code view switching is restricted as applying grouping for sub queries is unsupported.  <br />
-•	Virtual scrolling is restricted for now as we did not have SQL function for the operation.  <br />
-•	Top N option in initial filters are unsupported as join command is not supported.  <br />
-•	Expressions which use today() and now functions are unsupported in widgets.  <br />
+> **NOTE:** Amazon Open Search has the following limitations:  <br />
+•	Joins are not supported and will throw an error message.  <br />
+•	Code view switching is restricted as grouping for sub queries is unsupported.  <br />
+•	Virtual scrolling is restricted for now as there is no SQL function for the operation.  <br />
+•	The Top N option in initial filters is unsupported as the join command is not supported.  <br />
+•	Expressions that use today() and now functions are unsupported in widgets.  <br />
 •	The data sampling feature is restricted, as applying a limit in a subquery is not supported. <br />
 
 ### Connect using custom attribute and dashboard parameter
 
-We have added support for **custom attributes and dashboard parameters** to the data source connection. You can connect to the data source using custom attributes or dashboard parameters.
+We have added support for **custom attributes and dashboard parameters** to the data source connection. You can now connect to the data source using custom attributes or dashboard parameters.
 
 **Custom Attribute**
 
@@ -121,7 +121,7 @@ We have added support for **custom attributes and dashboard parameters** to the 
 
 ![Dashboard Parameter](/static/assets/working-with-datasource/data-connectors/images/Amazon-opensearch/DashboardParameter.png)
 
->**Note:** Refer the [Dashboard Parameter Documentation](https://help.boldbi.com/working-with-data-sources/dashboard-parameter/) and [Custom Attributes Documentation](https://help.boldbi.com/working-with-data-sources/configuring-custom-attribute/) for more details.
+>**Note:** Refer to the [Dashboard Parameter Documentation](https://help.boldbi.com/working-with-data-sources/dashboard-parameter/) and [Custom Attributes Documentation](https://help.boldbi.com/working-with-data-sources/configuring-custom-attribute/) for more details.
 
 ## Connecting Bold BI to AWS Open Search Data Source via REST API
 
@@ -131,7 +131,7 @@ We have added support for **custom attributes and dashboard parameters** to the 
 *  Amazon Elastic Search `7.10` and above
 * All versions of Open Search
 
-To connect Amazon Elasticsearch service, make sure you have enabled the following settings:
+To connect to Amazon Elasticsearch service, make sure you have enabled the following settings:
 
 PUT _opendistro/_sql/settings <br />
 
@@ -142,13 +142,13 @@ PUT _opendistro/_sql/settings <br />
    } 
 }
 
-Type while creating the data source needs to be elasticsearch or awsopensearch.
+The type required for creating the data source is elasticsearch or awsopensearch.
 
-[Rest API - v4.0](https://help.boldbi.com/embedded-bi/rest-api-reference/v4.0/api-reference/)
+[Rest API - v4.0](/server-api-reference/v4.0/api-reference/)
 
 ### Modes
 
-Through the REST API, only the **live mode** data source can be created and edited.
+Only the **live mode** data source can be created and edited through the REST API.
 
 ### Parameters for creating Data Source
 
@@ -240,7 +240,7 @@ Through the REST API, only the **live mode** data source can be created and edit
 
 ### Parameters for editing Data Source
 
-> **NOTE:**  For editing Data Source via API. All the parameters are optional. The parameter which needs to be changed can be provided.
+> **NOTE:**  When editing the Data Source via API, all parameters are optional. Only provide the parameter that needs to be changed.
 
 #### Parameters for modifying expressions when editing Data Source
    

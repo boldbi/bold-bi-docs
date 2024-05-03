@@ -9,27 +9,27 @@ documentation: ug
 
 # Chart Axis Grid Lines
 
-The chart widget in which the axis gridlines are enabled makes it easier for the users to read the values. 
+The chart widget with enabled axis gridlines makes it easier for users to read values.
 
-Grid lines can be turned on or off using the checkbox option provided in the `Grid lines section` of in the widget’s `property pane` for each chart axes. 
+Grid lines can be turned on or off using the checkbox option in the `Grid lines section` of the widget's `property pane` for each chart axis.
 
 ![Grid lines section](/static/assets/visualizing-data/working-with-widgets/images/ChartGridLines.png)
 
 ## Primary value Axis
 
-This allows you to toggle the visibility of the `Primary Value Axis gridlines` for the chart. This option is by default enabled in the charts. 
+This option allows you to toggle the visibility of the `Primary Value Axis gridlines` in the chart. It is enabled by default.
 
 ![Primary Value Axis gridlines](/static/assets/visualizing-data/working-with-widgets/images/Primary-Value-Axis-Gridlines.png)
 
 ## Secondary value Axis
 
-This allows you to toggle the visibility of the `Secondary Value Axis gridlines` for the chart. This option will be displayed in the widget only when the secondary axis is used. 
+This option allows you to toggle the visibility of the `Secondary Value Axis gridlines` in the chart. It will only be displayed in the widget when the secondary axis is used.
 
 ![Secondary Value Axis gridlines](/static/assets/visualizing-data/working-with-widgets/images/Secondary-Value-Axis-Gridlines.png)
 
 ## Category Axis
 
-This allows you to toggle the visibility of the `Category Axis gridlines` for the chart. By default, this option is disabled. 
+This option allows you to toggle the visibility of the `Category Axis gridlines` in the chart. By default, this option is disabled. 
 
 ![Category Axis gridlines](/static/assets/visualizing-data/working-with-widgets/images/Category-Axis-GridLines.png)
 

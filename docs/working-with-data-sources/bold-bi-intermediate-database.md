@@ -7,31 +7,31 @@ documentation: ug
 ---
 # Bold BI Intermediate Database in Embedded Analytics
 
-Bold BI Intermediate database is a data store to import data from the Web API data sources, extract mode connection data sources like SQL, and statistic files and connect with dashboards quickly. 
+The Bold BI Intermediate Database is a data store used to import data from Web API data sources, extract mode connection data sources like SQL, and statistic files, and connect them with dashboards quickly. 
 
-The Bold BI Data Engine is where you can perform simple transformations to your data and format them for use in visualizations. The following transformations are supported: 
+The Bold BI Data Engine allows you to perform simple transformations on your data and format it for use in visualizations. The following transformations are supported:
 
 * Join tables
 * Create calculated fields
 * Format
 * Filter
 
-> **Note:** Intermediate Database is available in On-Premises Deployment but not in Syncfusion Managed Cloud Server.
+> **Note:** The intermediate database is available for On-Premises Deployment, but not for Syncfusion Managed Cloud Server.
 
-You can use the scheduled refresh option to update data. Refresh settings will be configured by users for periodic updates. Based on the Refresh Settings, data will be imported into the intermediate database and in this case, the dashboard is rendered with the newly imported data.
+You can utilize the scheduled refresh option to update the data. Users will configure the refresh settings for periodic updates. The data will be imported into the intermediate database based on these settings, and the dashboard will be rendered with the newly imported data.
 
-The intermediate database is configured when the on-premise version is installed. Please refer to the following sections for Database configuration:
+The intermediate database is configured during the installation of the on-premise version. Please refer to the following sections for information on how to configure the database:
 
 * [Latest](/application-startup/latest/#database-configuration)
 * [v4.2.68 or earlier](/application-startup/v4.2.68-or-earlier/#database-configuration-for-data-store)
 
 ![Bold BI Intermediate Database Structure](/static/assets/working-with-datasource/images/boldbiintermediatedatabase.png)
          
-In the Bold BI Enterprise platform, the following intermediate databases are supported.
+The following intermediate databases are supported in the Bold BI Enterprise platform:
  * Microsoft SQL Server/ Azure SQL
  * PostgreSQL/ Azure PostgreSQL
  * MySQL/ Azure MySQL
  
-> **NOTE:** For MySQL/ Azure MySQL, whenever an extract data source is created, a new database will be created in the configured MySQL data base as schema and database is [same](https://dev.mysql.com/doc/refman/8.0/en/system-schema.html) in MySQL.
+> **NOTE:** For MySQL/ Azure MySQL, a new database will be created as a schema whenever an extract data source is created. The schema and database are the [same](https://dev.mysql.com/doc/refman/8.0/en/system-schema.html) in MySQL.
 
- Refer to this section to know the details of [Software Requirements](/deploying-bold-bi/overview/#software-requirements).
+ Please refer to this section for details on the [Software Requirements](/deploying-bold-bi/overview/#software-requirements).

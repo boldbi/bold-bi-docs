@@ -27,10 +27,11 @@ documentation: ug
     sudo yum install libgdiplus
     ```
     
-5.  Install `python pip` and following pip packages by running the below command.
-    ```cmd
-    sudo yum -y install python3-pip && python3.9 -m pip install duckdb===0.9.2 dlt===0.4.2 pymysql pyodbc pg8000 poetry pandas===2.0.0 "dlt[parquet]" "dlt[filesystem]"
-    ```
+5. If you want to install the ETL application with Bold BI, follow these steps. Otherwise, skip this step and proceed with step 6. 
+    * Install `python pip` and the following pip packages by running the following command.
+        ```cmd
+        sudo yum -y install python3-pip && python3.9 -m pip install duckdb===0.9.2 dlt===0.4.2 pymysql pyodbc pg8000 poetry pandas===2.0.0 "dlt[parquet]" "dlt[filesystem]"
+        ```
       > Note: Python 3.9 must be installed on that machine.
 6. Install the `pv` tool by running the following command.
     ```cmd
@@ -44,7 +45,7 @@ documentation: ug
     ```
 ## Deploying Bold BI Application
 
-1. Register and copy the Bold BI Linux package link from [here](https://help.boldbi.com/embedded-bi/setup/overview/#registration-and-download).
+1. Register and copy the Bold BI Linux package link from [here](/deploying-bold-bi/overview/).
 2. Download the Bold BI Linux package by running the following command.
 
     ```cmd

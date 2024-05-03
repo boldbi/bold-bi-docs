@@ -19,8 +19,8 @@ Each client has its own unique token to authenticate requests, which should be a
 To obtain the `Client Token`, follow these steps:
 
 1. Navigate to the appropriate interactive REST API documentation link.
-     * [v1.0](https://help.boldbi.com/embedded-bi/site-administration/api-reference/v1.0/try-it-now/)
-     * [v2.0](https://help.boldbi.com/embedded-bi/site-administration/api-reference/v2.0/try-it-now/)
+     * [v1.0](https://help.boldbi.com/site-administration/api-reference/v1.0/try-it-now/)
+     * [v2.0](https://help.boldbi.com/site-administration/api-reference/v2.0/try-it-now/)
 2. Expand `Authentication` and click `Try it out`.
 ![Authentication](/static/assets/rest-api-reference/images/site-administration/authentication.png)
 3. We have already hosted our application for public demonstration at [this](https://onpremise-demo.boldbi.com/) domain. To access the public demo, you will need to obtain the access token using the following sample credentials.

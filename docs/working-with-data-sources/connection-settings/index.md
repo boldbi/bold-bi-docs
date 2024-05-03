@@ -8,7 +8,7 @@ documentation: ug
 
 # Connection settings in Bold BI
 
-This section explains the settings available with the data source connections.
+This section explains the settings available for data source connections.
 
 ## You can explore about Connection settings in detail here
 [Enable and disable connections](/working-with-data-sources/connection-settings/enable-disable-connections/)
@@ -17,4 +17,4 @@ This section explains the settings available with the data source connections.
 
 [Adding Custom Connector](/working-with-data-sources/custom-connector/)
 
-> **Note:** Enable and disable data source connector support is available in On-Premises Deployment but not in cloud analytics server.
+> **Note:** Enabling and disabling data source connector support is available in On-Premises Deployment but not in the cloud analytics server.

@@ -64,7 +64,7 @@ This topic explains the steps required to install Bold BI Enterprise:
    
     ![Manage sites (Admin access)](/static/assets/installation-and-deployment/images/ums-report.png)
 
-9. After that, the following page will open. Go to `Settings > Manage License > Embedded BI`. Then click `Login to activate account` to register on the site.
+9. The following page opens. Go to `Settings > Manage License > Enterprise BI`. Then click `Login to activate account` to register on the site.
     
     ![Login to activate account](/static/assets/installation-and-deployment/images/ums-server.png)
 

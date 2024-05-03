@@ -11,11 +11,11 @@ documentation: ug
 # User Filter - Query Mode
 
 ## Query Mode
-The query mode gives us more control over the data that is used for the mapping. We can write our own query that will be executed towards the connection of the data source selected from the Mapping Data source list.
+The query mode allows us to have more control over the data used for mapping. We can create our own query that will be executed against the selected data source from the Mapping Data source list.
 
-We can write query that can be a Stored procedure or return an expression column.
+We can write a query that can be a stored procedure or return an expression column.
 
-Hit on **Run** button to run the query. If the query is valid the identity column drop down and the mapping column list will be populated. 
+Click on the **Run** button to execute the query. If the query is valid, the identity column drop-down menu and the mapping column list will be populated.
 
-From here we can follow the same steps that we followed while configuring the data source mode.
+From here, we can follow the same steps that we followed while configuring the data source mode.
 ![User Filter Query Mode](/static/assets/working-with-datasource/user-filter/images/user-filter-dlg-adv-query-mode.png)

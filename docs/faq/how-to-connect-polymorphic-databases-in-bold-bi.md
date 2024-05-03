@@ -9,7 +9,7 @@ documentation: ug
 
 # How to connect polymorphic databases in Bold BI
 
-Bold BI application allows you to connect polymorphic databases in Bold BI. Polymorphic databases can create a single instance and access multiple databases.
+The Bold BI application allows you to connect polymorphic databases within Bold BI. Polymorphic databases can create a single instance and access multiple databases.
 
 ## Supported polymorphic databases in Bold BI
 
@@ -64,7 +64,7 @@ Database Engines
 
 ## Connecting polymorphic databases in Bold BI using Google Cloud SQL
 
-1.	Connect your [Google Cloud SQL](/working-with-data-sources/data-connectors/google-cloud-sql/) data source with MySQL database engine as follows.
+1.	Connect your [Google Cloud SQL](/working-with-data-sources/data-connectors/google-cloud-sql/) data source to a MySQL database engine as follows.
    
 	![Google Cloud SQL](/static/assets/faq/images/cloud-mysql.png#max-width=60%)
 	
@@ -74,11 +74,11 @@ Database Engines
 
     ![Edit connection](/static/assets/faq/images/edit-connection.png#max-width=100%)
 	
-4.	After clicking, the edit connection dialog opens where you can change the database engine from `MySQL` to `PostgreSQL` and configure with the PostgreSQL credentials as follows and click `connect.`
+4.	After clicking, the edit connection dialog opens where you can change the database engine from `MySQL` to `PostgreSQL` and configure it with the PostgreSQL credentials. After configuring, click `connect`.
 
     ![Edit connection panel](/static/assets/faq/images/edit-connection-panel.png#max-width=60%)
 	
-5.	You can work with the required tables, views, or stored procedures after connecting with the PostgreSQL database engine and click `Save` to save the data source with a relevant name to proceed with [designing a dashboard.](/working-with-dashboards/)
+5.	You can work with the required tables, views, or stored procedures after connecting to the PostgreSQL database engine and clicking `Save` to save the data source with a relevant name in order to proceed with  [designing a dashboard.](/working-with-dashboards/)
 
     ![Save option](/static/assets/faq/images/save-google-cloud.png#max-width=100%)
 	

@@ -8,13 +8,13 @@ documentation: ug
 
 # Change the Dashboard Parameter value dynamically
 
-The dashboard parameters used in the dashboard can be updated dynamically by the user in the view mode.
+To change the dashboard parameter values dynamically, users can update them in view mode.
 
-Click dashboard parameter icon to update the dashboard parameters.
+Click on the dashboard parameter icon to make changes.
 
 ![Dashboard parameter icon](/static/assets/working-with-datasource/dashboard-parameter/images/dashboard-parameter-icon-preview.png)
 
-Now, the list of added parameters will be shown in the following dialog.
+Now, the list of added parameters will be displayed in the following dialog.
 
 ![Dashboard parameter viewer dialog](/static/assets/working-with-datasource/dashboard-parameter/images/dashboard-parameter-viewer.png)
 

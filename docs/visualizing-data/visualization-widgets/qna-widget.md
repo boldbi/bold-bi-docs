@@ -24,14 +24,14 @@ To ensure optimal performance within the BoldBI environment, the GPT 3.5 model i
 For detailed instructions on configuring either the AI key and model for OpenAI or the AI key, resource name, and deployment for AzureAI within BoldBI, please refer to the following link: [Fine Tuning Utility](https://help.boldbi.com/utilities/openai-fine-tuning-utility) and proceed with the following instructions.
 
 ## How to add Q&A widget
-Drag the Q&A widget from dashboard's item panel, present under Miscellaneous group.
+Drag the Q&A widget from the dashboard’s item panel, present under the Miscellaneous group.
 
 ![Drag and drop](/static/assets/visualizing-data/visualization-widgets/images/qna-widget/add-qnawidget.png)
 
 Now, resize the container as required to drag multiple widgets in it.
 
 ## Questioning the Q&A widget 
-The Q&A widget features a search bar where users can enter their queries. Begin by stating the desired information in conversational language. For instance, you might input, "Show sales by region."
+The Q&A widget features a search bar where users can enter their queries. Begin by stating the desired information in conversational language. For instance, you might input, `Show sales by region`.
 
 Our AI system will understand your question phrased in everyday language, determine the relevant data, and select the appropriate chart format. The Q&A widget takes into account previous questions when responding to the current query, providing tailored responses to meet user preferences.
 
@@ -55,7 +55,7 @@ The email will be sent from the email configured in the [Email settings](https:/
 
 You have the option to transform the widget generated from the Q&A into a regular widget, which provides additional customization features to tailor the chart according to your preferences.
 
-To initiate the transformation, select the "Convert to standard widget" icon. This action will change the current Q&A widget into a regular widget, maintaining the same dimensions. After conversion, it will function just like any other standard widget, ready for further customization.
+To initiate the transformation, select the `Convert to standard widget` icon. This action will change the current Q&A widget into a regular widget, maintaining the same dimensions. After conversion, it will function just like any other standard widget, ready for further customization.
 
 ![Convert to Standard widget](/static/assets/visualizing-data/visualization-widgets/images/qna-widget/converttostandard-qna.png)
 
@@ -82,6 +82,6 @@ The Questions and Answers feature can be deployed on the dashboard, enabling end
 
 ## Best Practices for Use
 Improvements to the AI model will be implemented progressively, informed by user input. Should an error arise when posing a question, consider revising it with these guidelines:
-1. Enclose string or date values within quotation marks. For instance, use "Show the orders on date '07/06/2023'."
+1. Enclose string or date values within quotation marks. For instance, use "Show the orders on date `07/06/2023`."
 
 2. Ensure column names match those in the data sources exactly.

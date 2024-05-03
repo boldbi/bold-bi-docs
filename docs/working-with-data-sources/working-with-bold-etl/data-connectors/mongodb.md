@@ -40,7 +40,7 @@ Here are the typical ways to configure MongoDB and their connection URLs:
 In the select section, specify the table name list to load tables from the MongoDB server.
 
 ## Metadata Properties
-In the metadata section, define the mode of data refresh. There are two modes: INCREMENTAL and ``FULL_TABLE``.
+In the metadata section, define the mode of data refresh. There are two modes: INCREMENTAL and FULL_TABLE. It only supports Date/DateTime datatype columns.
 
 ## INCREMENTAL
 
@@ -52,9 +52,10 @@ metadata:
     replication_key: Column name
     replication_value: column value that data starts from
 ```
-## ``FULL_TABLE``
+## FULL_TABLE
 
-This mode fetches data from the date column mentioned in the replication key from the start date as mentioned in the replication value. Once it is scheduled, the replication value is updated automatically from the imported data.
+This mode fetches data from the date column mentioned in the replication key from the start date as mentioned in the replication value. Once it is scheduled, the replication value is updated based on the interval_type and interval_value from the imported data. For ex set interval_type as 'year' and intervalue value as '1'.In first schedule, will fetch the record from Jan 1, 2000 to Dec 31, 2000. In next schedule, will fetch the record from Jan 1, 2001 to Dec 31, 2001 and so on
+
 
 ```yaml
 metadata:
@@ -68,7 +69,7 @@ metadata:
 ```
 
 ### Example Configuration
-### ``FULL_TABLE``
+#### FULL_TABLE
 ```yaml
 version: 1
 encrypt_credentials: false
@@ -97,7 +98,7 @@ plugins:
           interval_value: 6
 ```
 
-### INCREMENTAL
+#### INCREMENTAL
 
 ```yaml
 version: 1

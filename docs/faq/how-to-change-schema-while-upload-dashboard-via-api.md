@@ -8,13 +8,13 @@ documentation: ug
 
 # How to change the schema name while uploading the dashboard via API
 
-Bold BI supports changing the schema name while uploading the dashboard via API using the connection object.
+Bold BI supports changing the schema name while uploading the dashboard via API by using the connection object.
 
-1. Refer to the [Upload Dashboard](https://help.boldbi.com/server-api-reference/v4.0/api-reference/#operation/Dashboards_UploadDashboard) file to upload a dashboard via API.
+1. Refer to the [Upload Dashboard](https://help.boldbi.com/server-api-reference/v4.0/api-reference/#operation/Dashboards_UploadDashboard) file in order to upload a dashboard via API.
 
-2. To change the schema in the data source while uploading the dashboard, set the new schema name in the Schema parameter.
+2. To change the schema in the data source when uploading the dashboard, enter the new schema name in the Schema parameter.
 
-3. Sample connection JSON is given below using PostgreSql data source,
+3. The sample connection JSON for a PostgreSql data source is provided below.
 
 > **NOTE:**  The connection string varies for different connectors, and it is available on the [connectors page.](/working-with-data-sources/data-connectors/).
 ```json

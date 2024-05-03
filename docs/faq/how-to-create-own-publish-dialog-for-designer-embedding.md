@@ -7,14 +7,14 @@ documentation: ug
 ---
 
 # How to create your own Save or Publish dialog for Designer in Javascript embedding
-In Javascript-based embedding, there are methods for creating categories, getting categories, and saving dashboard actions. With the help of the above method, design your prompt and bind action to your UI. So, this section explains how to create your own Publish or Save prompt with the necessary steps to use in your designer embedding.
+In Javascript-based embedding, there are methods for creating categories, getting categories, and saving dashboard actions. With the help of these methods, you can design your prompt and bind actions to your UI. This section explains how to create your own Publish or Save prompt with the necessary steps to use in your designer embedding.
 
-Publish or Save dialog has been created and used in dashboard designer embedding. Follow the given steps to apply in your environment.
+A Publish or Save dialog has been created and used in the dashboard designer embedding. Follow the provided steps to apply it in your environment.
 
 ## Steps to follow for customizing the publish dialog in designer embedding
 1. Please [download](https://github.com/boldbi/samples/tree/master/Scenario%20Based%20Samples/Custom%20Publish%20Dialog%20in%20Designer%20Embedding) the ASP.NET Core Sample.
 
-2. Provide your embed properties details in the `EmbedProperties.cs` file, then run your application.
+2. Provide the details of your embed properties in the `EmbedProperties.cs` file, and then proceed to run your application.
 
     ![AddEmbedProperties](/static/assets/faq/images/add_embed_properties.png)
 
@@ -48,40 +48,40 @@ Publish or Save dialog has been created and used in dashboard designer embedding
     </tbody>
     </table>
 
-3. To open your own Publish dialog, use the `actionBegin` event while creating the Bold BI object as follows.
+3. To open your own Publish dialog, use the `actionBegin` event when creating the Bold BI object as shown below.
 
     ![DefineActionBegin](/static/assets/faq/images/actionbegin_define.png)
 
-4. While clicking the `Publish` button from the designer, the actionBegin event would be triggered with the type value as `PublishAsAction`, where the dialog has been created using EJ2 controls(Dropdown, Textbox, and Button).
+4. When clicking the `Publish` button in the designer, the actionBegin event will be triggered with the type value set as `PublishAsAction`. The dialog has been created using EJ2 controls such as Dropdown, Textbox, and Button.
 
     ![ClickPublishDropdown](/static/assets/faq/images/click_publish_dropdown.png)
 
- 5. To get the categories information such as category name and category id, the `getDashboardCategories()` method has been called as follows. For more information, see [getDashboardCategories()](/embedding-options/embedding-sdk/embedding-api-reference/methods/#getdashboardcategories).
+ 5. To retrieve the categories information, including the category name and category ID, the `getDashboardCategories()` method is called as shown below. For further details, refer to  [getDashboardCategories()](/embedding-options/embedding-sdk/embedding-api-reference/methods/#getdashboardcategories).
 
     ![CreatePublishPanel](/static/assets/faq/images/call_get_dashboard_category.png)
 
-6. Once you get the category list, bind to the DropdownList of the `Select Category`, and it will appear as a selection option.
+6. Once you receive the category list, bind it to the Drop Down List of the `Select Category`, and it will be displayed as a selection option.
 
     ![SelectCategoryDropDown](/static/assets/faq/images/popup_select_category_dropdown.png)
 
     ![ShowListCategory](/static/assets/faq/images/select_category_dropdown.png)
 
-7. A new popup has been created for creating a new category, which will appear when clicking the `add` icon in the publish dialog.
+7. A new pop-up has been created for creating a new category, which will appear when clicking the `add` icon in the publish dialog.
 
      ![CreateNewpopup](/static/assets/faq/images/click_add_button.png)
          
-8. Get the inputs of the `category Name` and `Description` from creating category dialog and creating a new category using the `createDashboardCategory()` method available in Bold BI. For more information, see [createDashboardCategory()](/embedding-options/embedding-sdk/embedding-api-reference/methods/#createdashboardcategory).
+8. Get the inputs for the `category Name` and `Description` from the create category dialog when creating a new category using the `createDashboardCategory()` method available in Bold BI. For more information, refer to [createDashboardCategory()](/embedding-options/embedding-sdk/embedding-api-reference/methods/#createdashboardcategory).
 
     ![ClickSaveCategory](/static/assets/faq/images/save_new_category.png)
 
     ![SaveNewCategory](/static/assets/faq/images/popup_add_category.png)
 
-9. For saving or publishing the dashboard with given details, call the `saveDashboard()` method by passing the `dashboardName`, `categoryId`, `categoryName`, and `description` as parameters as follows. For more information, see [saveDashboard()](/embedding-options/embedding-sdk/embedding-api-reference/methods/#savedashboard).
+9. To save or publish the dashboard with the provided details, you should call the `saveDashboard()` method and pass the `dashboardName`, `categoryId`, `categoryName`, and `description` as parameters. For additional information, refer to the  [saveDashboard()](/embedding-options/embedding-sdk/embedding-api-reference/methods/#savedashboard).
 
     ![SaveDashboard](/static/assets/faq/images/popup_publish_button.png)
 
     ![ClickPublish](/static/assets/faq/images/publish_dashboard.png)
 
-10. Now, your new dashboard will be published into a respective category. The same method will be used to `Publish` the existing dashboard and `PublishAs` the new dashboard from the existing one.
+10. Now, your new dashboard will be published in a respective category. The same method will be used to `publish` the existing dashboard and to `publishAs` the new dashboard as an extension of the existing one.
 
     ![OpenPublishDialog](/static/assets/faq/images/publish_dialog_open.png)

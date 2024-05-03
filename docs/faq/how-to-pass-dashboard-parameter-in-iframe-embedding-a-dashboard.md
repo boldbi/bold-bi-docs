@@ -10,18 +10,18 @@ documentation: ug
 
 ## Passing Dashboard Parameter With iframe
 
-1. Refer to this [document](/embedding-options/iframe-embedding/embedding-a-dashboard/#steps-to-embed-dashboard-designer-using-url) to get the iframe code that can be used to embed the Bold BI dashboard on your web page.
+1. Refer to this [document](/embedding-options/iframe-embedding/embedding-a-dashboard/#steps-to-embed-dashboard-designer-using-url) to obtain the iframe code that can be utilized to embed the Bold BI dashboard on your web page.
 
-2. The dashboard parameters have two modes. One mode is Literal and another mode is List.
+2. The dashboard parameters have two modes: Literal and List.
 
 ## Literal Mode
 
-To pass dashboard parameters in the literal mode, pass in the parameter name with the value after the `isembed=true` in the src attribute.
+To pass dashboard parameters in literal mode, include the parameter name and value after `isembed=true` in the src attribute.
 For example, `<iframe src='http://<servername>/bi/site/<siteidentifier>/dashboards/<dashboardid>/<category>/<dashboardname>?isembed=true&DashboardParameter=value' id='dashboard-frame' width='100%' height='600px' allowfullscreen frameborder='0'></iframe>` 
 
 ## List Mode
 
-If you are using a list mode, use Operators like IN or NOTIN in the iframe src attribute.
+If you are using list mode, use operators like IN or NOT IN in the iframe src attribute.
 
 <table>
 <tr><td>

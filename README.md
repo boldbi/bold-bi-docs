@@ -155,7 +155,7 @@ Swagger files should be placed in **api** folder and its respective index files 
 
 For example, `Migration Utility` support presents in both Cloud and Embedded BI Platform. So we need to add the `migration-utility` file in both platform folders(\docs\cloud-bi\migration-utility & \docs\embedded-bi\migration-utility). In this file, same details will be given. So need to add original file path in canonical tag like below in duplicated file.
 
-> **canonical:** "/cloud-bi/migration-utility/"
+> **canonical:** "/migration-utility/"
 
 ## Notes and Important Style
 

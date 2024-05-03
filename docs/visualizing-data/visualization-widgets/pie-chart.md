@@ -11,13 +11,13 @@ documentation: ug
 
 # Pie Chart
 
-Pie chart allows you to showcase the proportionality of each item to the total in the form of pie-slices.
+Pie charts allow you to display the proportion of each item to the total in the form of pie slices.
 
 ![Pie Chart](/static/assets/visualizing-data/visualization-widgets/images/pie-chart/pie-chart.png)
 
 ## How to configure table data in the Pie Chart
 
-The Pie chart needs a minimum of one value element and one column element to showcase. The `measure` or `expression` field that you would like to analyze can be dropped into the `Values` block. The `dimension` that you would like to categorize the measure can be dropped onto the Columns block. If you would like to categorize  the measure based on a series, then the respective dimension can be dropped onto the `Rows block` in addition
+The Pie chart requires at least one value element and one column element to showcase. The `measure` or `expression` field that you would like to analyze can be dropped into the `Values` block. The `dimension` that you would like to categorize the measure can be dropped onto the Columns block. If you would like to categorize the measure based on a series, then the respective dimension can be dropped onto the `Rows block` in addition.
 
 To configure data in the Pie Chart, follow these steps:
 
@@ -57,7 +57,7 @@ To configure data in the Pie Chart, follow these steps:
 
 ![Chart data](/static/assets/visualizing-data/visualization-widgets/images/pie-chart/chartdata.png)
 
-10. You can add the required data from the Measures and Dimensions sections to the required field.
+10. You can add the required data from the Measures and Dimensions sections to the necessary field.
 
 ### Adding values
 
@@ -69,15 +69,15 @@ Now, the Pie chart will be rendered as follows.
 
 ![Configured widget](/static/assets/visualizing-data/visualization-widgets/images/pie-chart/configured-widget.png)
 
-Click the `Settings` option to change the required summary type from the available summary types shown in the Settings.
+Click the `Settings` option to change the necessary summary type from the available summary types shown in the Settings.
 
 ![Pie Chart settings](/static/assets/visualizing-data/visualization-widgets/images/pie-chart/piechart-settings.png)
 
-You can filter the data displayed in the Pie Chart by using the `Filter` option. For more details, refer to the[filter](/visualizing-data/working-with-widgets/configuring-widget-filters/).
+You can filter the data displayed in the Pie Chart by using the `Filter` option. For more details, refer to the [filter](/visualizing-data/working-with-widgets/configuring-widget-filters/).
 
 ![Widget filters](/static/assets/visualizing-data/visualization-widgets/images/pie-chart/widget-filters.png)
 
-You can format the data displayed in the Pie Chart by using the `Format` option. For more details, refer to the[measure format](/visualizing-data/working-with-widgets/formatting-measure-type-column/).
+You can format the data displayed in the Pie Chart by using the `Format` option. For more details, refer to the [measure format](/visualizing-data/working-with-widgets/formatting-measure-type-column/).
 
 ![Measure format](/static/assets/visualizing-data/visualization-widgets/images/pie-chart/measure-format.png)
 
@@ -103,7 +103,7 @@ You can enable this option to get further details about the selected chart regio
 
 ![Enable drill](/static/assets/visualizing-data/visualization-widgets/images/pie-chart/enable-drill.png)
 
-> **NOTE:**  If you click `No,` a single value will be added to the Columns field.
+> **NOTE:**  If you click `No`, a single value will be added to the Columns field. 
 
 The drilled view of the selected chart region will be as follows.
 
@@ -113,7 +113,7 @@ You can change the Settings.
 
 ![Pie Chart](/static/assets/visualizing-data/visualization-widgets/images/pie-chart/columnsettings.png)
 
-You can sort the dimension data using the `Sort` option under the Settings menu list. To apply sorting for data, refer to the[Sort] (/visualizing-data/working-with-widgets/advanced-sorting/#dimension-column).
+You can sort the dimension data using the `Sort` option under the Settings menu list. To apply sorting for data, refer to the [Sort] (/visualizing-data/working-with-widgets/advanced-sorting/#dimension-column).
 
 ![Pie Chart dimension](/static/assets/visualizing-data/visualization-widgets/images/pie-chart/sortoption.png)
 
@@ -125,21 +125,21 @@ Similarly, you can add the Measures and Expressions Columns to the Columns field
 
 #### Renaming fields
 
-The configured field names can be edited by using the `Rename` option provided in the settings menu.
+The configured field names can be edited using the `Rename` option provided in the settings menu.
 
 ![Rename](/static/assets/visualizing-data/visualization-widgets/images/pie-chart/rename.png)
 
 ## Hidden Column
 
-Hidden columns are useful in cases where we don't want the fields to take part in the visualization, but only to be used for [linking](#linking), [filtering](#filtering) and [view data](#view-data). 
+Hidden columns are useful in cases where we don’t want the fields to take part in the visualization, but only to be used for [linking](#linking), [filtering](#filtering) and [view data](#view-data). 
 
 ![Hidden column](/static/assets/visualizing-data/visualization-widgets/images/pie-chart/assign-data.png)
 
-We can configure both measure and dimension fields into the hidden column. For measure we will be having all the settings we have for the measure fields expect formatting and filtering.
+We can configure both measure and dimension fields into the hidden column. For measure, we will have all the settings we have for the measure fields except formatting and filtering.
 
 ![Measure](/static/assets/visualizing-data/visualization-widgets/images/pie-chart/measure.png)
 
-In the case of dimension fields we will having the following options only. In Date fields we will having all available types except sorting, relative date filter, settings and filters.
+In the case of dimension fields, we will have the following options only. In Date fields, we will have all available types except sorting, relative date filter, settings, and filters.
 
 ![Dimension](/static/assets/visualizing-data/visualization-widgets/images/pie-chart/dimension.png)
 
@@ -147,19 +147,19 @@ In the case of dimension fields we will having the following options only. In D
 
 #### Linking
 
-The primary use case of the hidden columns is linking. On configuring hidden columns, we can see below that the fields configured in hidden columns are listed in the linking section.  On configuring the column in linking we can pass the corresponding column value in linking parameter.
+The primary use case of hidden columns is linking. On configuring hidden columns, we can see below that the fields configured in hidden columns are listed in the linking section. By configuring the column in linking, we can pass the corresponding column value in the linking parameter.
 
-**Measure Based Example:** If we wish to pass the number of Matches played as an URL parameter but do not want it to influence the visualization, we can configure the Matches in the hidden columns and incorporate them into the link.
+**Measure Based Example:** If we wish to pass the number of Matches played as a URL parameter but do not want it to influence the visualization, we can configure the Matches in the hidden columns and incorporate them into the link.
 
 ![Linking](/static/assets/visualizing-data/visualization-widgets/images/pie-chart/link-measure.png)
 
-**Dimension Based Example:** If we wish to pass the number of Team Name played as an URL parameter but do not want it to influence the visualization, we can configure  the Team Name in the hidden columns and incorporate them into the link.
+**Dimension Based Example:** If we wish to pass the number of Team Name played as a URL parameter but do not want it to influence the visualization, we can configure the Team Name in the hidden columns and incorporate them into the link.
 
 ![Linking](/static/assets/visualizing-data/visualization-widgets/images/pie-chart/link-dimension.png)
 
 #### Filtering
 
-You can use hidden columns to filter data in the visualizations. Configure hidden columns and click the below filter icon.
+You can use hidden columns to filter data in the visualizations. Configure hidden columns and click the filter icon below.
 
 ![Filtering](/static/assets/visualizing-data/visualization-widgets/images/pie-chart/filtericon.png)
 
@@ -167,11 +167,11 @@ Click the Custom button highlighted in the filter configuration dialog image bel
 
 ![Filtering](/static/assets/visualizing-data/visualization-widgets/images/pie-chart/custom.png)
 
-Now, we can see in the below image, the data is filtered based on the hidden column field instead of the actual column that we bound in the widget. 
+Now, we can see in the image below, the data is filtered based on the hidden column field instead of the actual column that we bound in the widget.
 
 ![filtering](/static/assets/visualizing-data/visualization-widgets/images/pie-chart/hidden-column-filter.png)
 
-For more details about filtering the widget data, refer to the [Filter Configuration documentation](/working-with-dashboards/configuring-dashboard-filters/)
+For more details about filtering the widget data, refer to the [Cross Filter Configuration documentation](/working-with-dashboards/configuring-cross-filters/).
 
 #### View Data
 
@@ -179,43 +179,43 @@ You can view the data in the hidden columns in the underlying data view. This is
  
 ![View data](/static/assets/visualizing-data/visualization-widgets/images/pie-chart/viewdata.png)
 
-> **NOTE:** We don't recommend to configure lower hierarchy data in hidden columns as we can see in the info icon in `Hidden Column` section denotes the same. 
+> **NOTE:** We don’t recommend configuring lower hierarchy data in hidden columns as we can see in the info icon in `Hidden Column` section denotes the same.
 
 ![Hidden Column ](/static/assets/visualizing-data/visualization-widgets/images/pie-chart/info-icon.png)
 
-The below chart displays the goals by each team without hidden columns.
+The chart below displays the goals scored by each team without any hidden columns.
 
 ![Before](/static/assets/visualizing-data/visualization-widgets/images/pie-chart/before.png)
 
-If we configure lower hierarchy data(Player Name) in hidden columns compared to column and Row filed data, the data configured in the widgets gets duplicate, This affects the chart visualization as we can see in the below image.
+If we place lower hierarchy data (Player Name) in hidden columns compared to the column and row field data, the data in the widgets may become duplicated. This can affect the visualization of the chart, as shown in the image below.
 
 ![After](/static/assets/visualizing-data/visualization-widgets/images/pie-chart/after.png)
 
 ### Adding rows
 
-You can drag the `Dimension` field into the `Rows field.`
+To add rows, you can drag the `Dimension` field into the `Rows field`.
 
 ![Pie Chart](/static/assets/visualizing-data/visualization-widgets/images/pie-chart/chart-row.png)
 
-You can apply the [filter](/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column) and [sort](/visualizing-data/working-with-widgets/advanced-sorting/#dimension-column) options for the rows field, if required.
+You can apply the [filter](/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column) and [sort](/visualizing-data/working-with-widgets/advanced-sorting/#dimension-column) to the rows field if needed. 
 
-This will render a pie chart in a series.
+This will result in a pie chart being displayed in a series.
 
 ![Pie Chart series](/static/assets/visualizing-data/visualization-widgets/images/pie-chart/piechart-series.png)
 
-Scroll down to see all the charts.  
+Scroll down to view all the charts.
 
 ## How to format Pie Chart
 
-You can format the pie chart for better illustration of the view by using the settings available in the Properties tab.
+You can format the pie chart for better illustration by using the settings available in the Properties tab.
 
 To configure data in the pie chart, follow these steps:
 
-1. Drag and drop the pie chart into the canvas and resize it to your required size.
+1. Drag and drop the pie chart onto the canvas and resize it as needed.
 
-2. Configure data in the pie chart.
+2. Configure the data in the pie chart.
 
-3. Focus the pie chart and click the Widget Settings icon.
+3. Select the pie chart and click the Widget Settings icon.
 
 ![Widget settings](/static/assets/visualizing-data/visualization-widgets/images/pie-chart/piechart-settingsicon.png)
 
@@ -231,19 +231,19 @@ You can see the list of properties available for the widget with default value.
 
 ### Name
 
-Allows you to set the `title` for the Pie chart widget.
+Set the `title` for the Pie chart widget.
 
 ![General Settings](/static/assets/visualizing-data/visualization-widgets/images/pie-chart/Name.png)
 
 ### Subtitle
 
-Allows you to set the `subtitle` for the Pie chart widget.
+Set the `subtitle` for the Pie chart widget.
 
 ![General Settings](/static/assets/visualizing-data/visualization-widgets/images/pie-chart/Subtitle.png)
 
 ### Description
 
-Set a description for the Pie chart, whose visibility will be denoted by **i** icon, and hovering over it will display the `description` in a tooltip.
+Set a description for the Pie chart, which can be viewed by hovering over the **i** icon and hovering over it will display the `description` in a tooltip.
 
 ![General Settings](/static/assets/visualizing-data/visualization-widgets/images/pie-chart/Description.png)
 
@@ -265,7 +265,7 @@ Switch the widget view from the current chart type to another chart type.
 
 ### Enable animation
 
-It animates the measure values when you enable the `Enable Animation.`
+It animates the measure values when you `Enable Animation`.
 
 ### Show value label
 
@@ -273,7 +273,7 @@ It allows you to toggle the visibility of value labels.
 
 ![Show Value Label](/static/assets/visualizing-data/visualization-widgets/images/pie-chart/show-value-label.png)
 
-If you disable `Show Value Labels` properties, the dependent properties, which are **color**, **Value label position**, **Value label rotation** and **Value label suffix** will be hidden..
+If you disable the `Show Value Labels` properties, the dependent properties, such as **color**, **value label position**, **value label rotation**, and **value label suffix**, will be hidden.
 
 ![Show value label](/static/assets/visualizing-data/visualization-widgets/images/pie-chart/value-label.png)
 ### Value Label Color
@@ -350,7 +350,7 @@ By enabling the `Column Count,` you can set the column count.
 
 ![Pie Series Settings](/static/assets/visualizing-data/visualization-widgets/images/pie-chart/series-settingsfixed.png)
 
->**Note**: If the invalid columns and rows are given, the rows and columns reset to their default value. For example: If you are given the number of rows as 6 and the number of columns as 5 but your data count is only 20. In this case, the rows and columns will reset to their default value.
+>**Note**: If invalid columns and rows are given, the rows and columns will reset to their default value. For example, if you are given the number of rows as 6 and the number of columns as 5 but your data count is only 20, the rows and columns will reset to their default value.
 
 ### Legend Settings
 
@@ -358,7 +358,7 @@ By enabling the `Column Count,` you can set the column count.
 
 ### Show legend
 
-A Legend is a text used to describe the plotted data. It allows you to toggle the visibility of the legend in the chart and change the legend text position (selecting through combo box). Enabling the Custom Legend Text option will allow you to define a custom text (through the text area) to display for each legend series (selecting through the combo box) in the chart.
+A legend is a text used to describe the plotted data. It allows you to toggle the visibility of the legend in the chart and change the legend text position (selecting through the combo box). Enabling the Custom Legend Text option will allow you to define a custom text (through the text area) to display for each legend series (selecting through the combo box) in the chart.
 
 ![Show Legend](/static/assets/visualizing-data/visualization-widgets/images/pie-chart/show-legend.png)
 
@@ -369,7 +369,7 @@ The chart `legend interactivity` option allows you to control the behavior of th
 Disabling the Interactivity feature in the Legend Settings category does not allow you to click on the legends.
 
 ![Legend Interactivity Disable](/static/assets/visualizing-data/visualization-widgets/images/pie-chart/legend-interactivity-disable.png)
-Enabling the Interactivity feature in the Legend Settings category allows you to click on the legends
+Enabling the Interactivity feature in the Legend Settings category allows you to click on the legends.
 
 ![Legend Interactivity Enable](/static/assets/visualizing-data/visualization-widgets/images/pie-chart/legend-interactivity-enable.png)
 
@@ -423,7 +423,7 @@ This option allows you to change the shape of the legend in `Series.`
 
 ### Legend Title 
 
-This allows you to add the legend title for the chart. It will reflect with the `Show Legend.`
+This allows you to add the legend title for the chart, which will reflect with the `Show Legend`.
 
 ![Show Legend Title](/static/assets/visualizing-data/visualization-widgets/images/pie-chart/pie-legendtitle.png)
 
@@ -457,23 +457,23 @@ This option allows you to wrap legend items based on the 'Text Width' value.
 
 #### Text Width
 
-This option allows you to set the maximum width for the Legend Items and it is applicable only if text-overflow is set as Trim or Wrap.
+This option allows you to set the maximum width for the Legend Items and is applicable only if text-overflow is set as Trim or Wrap.
 
 ![Legend Text Width Option in chart](/static/assets/visualizing-data/visualization-widgets/images/pie-chart/legend-text-overflow-width-option.png)
 
 ![Legend Text Width in chart](/static/assets/visualizing-data/visualization-widgets/images/pie-chart/legend-text-overflow-width.png)
 
-If you uncheck the `Show Legend` property in the property panel, the dependent properties **Legend color**, **Legend position**, **customization button** and **Legend title** are also hidden.
+If you uncheck the `Show Legend` property in the property panel, the dependent properties **Legend color**, **Legend position**, **customization button**, and **Legend title** are also hidden.
 
 ### Link
 
-You can enable linking and configure navigating to a general URL with or without parameters. For more details, refer to the[Linking](/visualizing-data/working-with-widgets/linking-urls-and-dashboards/).
+You can enable linking and configure navigating to a general URL with or without parameters. For more details, refer to the [Linking](/visualizing-data/working-with-widgets/linking-urls-and-dashboards/).
 
 ![Link](/static/assets/visualizing-data/visualization-widgets/images/pie-chart/linking.png)
 
 ### Series palette
 
-By toggling the `series palette,` you can able to customize the proportion series segments’ colors.
+By toggling the `series palette`, you can customize the proportion series segments’ colors.
 
 ![Use Series Palette](/static/assets/visualizing-data/visualization-widgets/images/pie-chart/seriespallete.png)
 
@@ -497,17 +497,16 @@ It allows you to apply color for chart series based on data. If you want to appl
 
 ![Color Mapping Type Data](/static/assets/visualizing-data/visualization-widgets/images/pie-chart/column-chart-individual-mode.png)
 
-> **IMPORTANT:**  Only top 100 records will be listed in the 
-dialog. 
+> **IMPORTANT:**  Only the top 100 records will be listed in the dialog.
 ***Index***
 
-It allows you to apply color for chart series based on `Index`. Such that the colors are maintained based on index even if data is changed. It shows only 15 different colors. After that, the color will be repeated from above colors.
+It allows you to apply color for chart series based on `Index`. Such that the colors are maintained based on the index even if data is changed. It shows only 15 different colors. After that, the color will be repeated from above colors.
 
 For example, If you are displaying the countries based on the increasing order of the case count, then the index-based color mapping will be useful to set the colors based on the rank. Say red color to the top, then the red color will be maintained for the country having the largest case count.
 
 ![Color Mapping Type Index](/static/assets/visualizing-data/visualization-widgets/images/pie-chart/column-chart-formatting-index-based-color.png)
 
-**Note:** We prefer to use Index based color customization only for minimum data(upto 15 series).
+**Note:** We prefer to use Index based color customization only for minimum data (up to 15 series).
 
 ![Use Basedon Palette](/static/assets/visualizing-data/visualization-widgets/images/pie-chart/column-chart-individual-mode.png)
 
@@ -517,9 +516,9 @@ For example, If you are displaying the countries based on the increasing order o
 
 ### Use Default Palette
 
-This option shows when you add more than one measure field to the Value(s).
+This option is displayed when you add more than one measure field to the Value(s).
 
-By toggle off the `Use Default Palette,` you can customize the proportion series segments' colors by clicking the colored squares.
+By toggling off the `Use Default Palette`, you can customize the colors of the proportion series segments by clicking the colored squares.
 
 ![Series color palette window](/static/assets/visualizing-data/visualization-widgets/images/pie-chart/series-color-window.png)
 
@@ -531,23 +530,23 @@ This section allows you to customize the font size of the chart elements.
 
 ### Filter
 
-This section allows you to handle the `filter` actions for the pie chart widget.
+This section allows you to manage the `filter` actions for the pie chart widget.
 
 ![Filter](/static/assets/visualizing-data/visualization-widgets/images/pie-chart/filter.png)
 
 ### Act as master widget
 
-Define the Pie Chart widget as a `master widget` such that its filter action will be shown in other widgets of the dashboard.
+Define the Pie Chart widget as a `master widget` so that its filter action will be displayed in other widgets on the dashboard.
 
 ### Ignore filter actions
 
-Define the Pie chart widget to ignore the filter actions applied to other widgets in the dashboard.
+Define the Pie Chart widget to disregard the filter actions applied to other widgets on the dashboard.
 
 ### Enable Hierarchical Filtering
 
-Through this option, you can enable or disable the hierarchical `Top N` filtering. While applying the `Top N` filter with multiple dimension columns, the data returned can be customized based on whether the filtering needs to be done as flat or based on the hierarchy of added dimension columns.
+Through this option, you can enable or disable hierarchical `Top N` filtering. When applying the `Top N` filter with multiple dimension columns, the data returned can be customized based on whether the filtering needs to be done in a flat manner or based on the hierarchy of added dimension columns.
 
-When the **Enable Hierarchical Filtering** option is enabled, the `Top N` will be applied for each individual column separately based on the number set for each column.
+When the **Enable Hierarchical Filtering** option is enabled, the `Top N` filter will be applied for each individual column separately based on the number set for each column.
 
 ### Container Appearance
 
@@ -555,35 +554,35 @@ When the **Enable Hierarchical Filtering** option is enabled, the `Top N` will b
 
 ### Title Alignment
 
-This allows you to handle the alignment of widget title to either **left, center,** or **right**.
+This allows you to adjust the alignment of the widget title to either **left, center,** or **right**.
 
 ### Title Color
 
-This allows you to apply the text `color` to the widget title.
+This allows you to apply a text `color` to the widget title.
 
 ### Title Auto Font Size
 
-On enabling Auto Font Size, the font size of the title will be adjusted automatically if the resolution of the screen varies.
+By enabling Auto Font Size, the font size of the title will automatically adjust if the screen resolution varies.
 
 **Font Size**
 
-This allows you to apply the specified size of the font to the widget title if the **Title Auto Font Size** is disabled. Value can be between 10 and 44.
+This allows you to apply a specified font size to the widget title if the **Title Auto Font Size** is disabled. The value can range from 10 to 44.
 
 ### Subtitle Auto Font Size
 
-On enabling Auto Font Size , the font size of the subtitle will be adjusted automatically if the resolution of the screen varies.
+By enabling Auto Font Size, the font size of the subtitle will automatically adjust if the screen resolution varies.
 
 **Font Size**
 
-This allows you to apply the specified size of the font to the widget title if the **Subtitle Auto Font Size** is disabled. Value can be between 10 and 32.
+This allows you to apply a specified font size to the widget subtitle if the **Subtitle Auto Font Size** is disabled. The value can range from 10 to 32.
 
 ### Auto Padding
 
-On enabling Auto Padding, the padding of the widget container will be adjusted automatically if the size of the widget varies.
+By enabling Auto Padding, the padding of the widget container will automatically adjust if the size of the widget varies.
 
 **Padding**
 
-This allows you to customize the padding of the widget container if the **Auto Padding** is disabled. Value can be between 0 and 25.
+This allows you to customize the padding of the widget container if **Auto Padding** is disabled. The value can range from 0 to 25.
 
 ### Show Border
 
@@ -591,15 +590,15 @@ This allows you to toggle the visibility of the `border` surrounding the widget.
 
 ### Corner Radius
 
-This allows you to apply the specified `radius` to the widget corners if the **Show Border** is enabled. Value can be between 0 and 10.
+This allows you to apply a specified `radius` to the widget corners if **Show Border** is enabled. The value can range from 0 to 10.
 
 ### Show Background Image
 
-This allow you to set the **background image** for the pie chart widget.
+This allows you to set a **background image** for the pie chart widget.
 
 ### Background Color
 
-This allows you to set the **background color** to the pie chart widget.
+This allows you to set a **background color** for the pie chart widget.
 
 ### Transparency
 

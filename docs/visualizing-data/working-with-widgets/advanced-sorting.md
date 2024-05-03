@@ -14,9 +14,9 @@ You can customize the sorting behavior of dimension fields in each widget. You c
 
 ## Dimension column
 
-To customize the sorting behavior of dimension field, drag and drop the `Dimension Field` into the control designer.
+To customize the sorting behavior of dimension fields, drag and drop the `Dimension Field` into the control designer.
 
-Click the `Settings` icon available in the `Columns` or `Rows` or `Series` section, and select `Sort` from the context menu.
+Click the `Settings` icon available in the `Columns`, `Rows`, or `Series` section, and select `Sort` from the context menu.
 
 ![Custom sort option](/static/assets/visualizing-data/working-with-widgets/images/Custom-sort-option.PNG)
 
@@ -28,23 +28,23 @@ The options available in the `Advanced Sorting Options` dialog are:
 
 #### Sort order
 
- * `Ascending`: Displays the sorted results in the ascending order.
+ * `Ascending`: Displays the sorted results in ascending order.
 
- * `Descending`: Displays the sorted results in the descending order.
+ * `Descending`: Displays the sorted results in descending order.
 
 #### Sort by
 
- * `Alphabetic`: Orders the data either in ascending or descending order based on initial alphabet. You can apply this sorting for more than one string field. Here, the data has been ordered in hierarchical pattern as follows.
+ * `Alphabetic`: Orders the data either in ascending or descending order based on the initial alphabet. You can apply this sorting for more than one string field. Here, the data has been ordered in a hierarchical pattern.
 
      ![Alphabetic sort](/static/assets/visualizing-data/working-with-widgets/images/Alphabetic-sort.PNG)
 
- * `Data source`: Places resultant data from the data source on query execution, i.e., without performing any additional operations such as ascending or descending as follows.
+ * `Data source`: Places resultant data from the data source on query execution without performing any additional operations such as ascending or descending.
 
     ![Data source sort](/static/assets/visualizing-data/working-with-widgets/images/Data-source-sort.PNG)
 
  * `Field`: Orders the data based on the associated values of another measure or dimension field. For example, you can order several countries based on their freight values.
 
-    For example, the sort dialog box shown below is configured to sort the "Ship Name" field based on sum of the "Freight" measure in the ascending order. The results will be displayed in such a way that the "Ship Name" with lowest "Freight" value is displayed first and the "Ship Name" with the second lowest "Freight" value is displayed second, and so on.
+    For example, the sort dialog box shown below is configured to sort the “Ship Name” field based on the sum of the “Freight” measure in ascending order. The results will be displayed in such a way that the “Ship Name” with the lowest “Freight” value is displayed first and the “Ship Name” with the second lowest “Freight” value is displayed second, and so on.
     
     ![Sorting based on measure field](/static/assets/visualizing-data/working-with-widgets/images/sorting-measures.PNG)
     

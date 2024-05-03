@@ -9,23 +9,23 @@ documentation: ug
 
 # How to give access for custom JSON using PostgreSql data source?
 
-Bold BI application allows you to access the custom JSON data using PostgreSQL data source by following these steps.
+The Bold BI application allows you to access custom JSON data using a PostgreSQL data source by following these steps.
 
 ## Steps to access custom JSON data in Bold BI
 
-1.	Refer to the [Connecting Bold BI to PostgreSQL data source documentation](/working-with-data-sources/data-connectors/postgresql/#connecting-bold-bi-to-postgresql-data-source) to successfully connect it.
+1.	Refer to the [Connecting Bold BI to PostgreSQL data source documentation](/working-with-data-sources/data-connectors/postgresql/#connecting-bold-bi-to-postgresql-data-source) for successful connection.
 
-2.	Drag and drop the table which has the JSONB data type in Bold BI as shown in the following image.
+2.	Drag and drop the table that has the JSONB data type in Bold BI, as displayed in the image below.
 
     ![Drag table](/static/assets/faq/images/drag-table.png)
 	
-    >**NOTE:** The JSONB data type will be hidden on `data preview` but can be accessed by creating expressions in Bold BI.
+    >**NOTE:** The JSONB data type will be hidden in the `data preview`, but it can be accessed by creating expressions in Bold BI.
 
-3.	Click `Save` to save the data source with a relevant name to proceed with designing dashboard.
+3.	Click `Save` to save the data source with a relevant name in order to proceed with designing the dashboard.
     
 	![Save option](/static/assets/faq/images/save-option.png)
 	 
-    >**Note:** You can also create expressions in the data source page itself: <br />
+    >**Note:** You can also create expressions on the data source page itself: <br />
     [Configuring Expression Columns](/working-with-data-sources/data-modeling/configuring-expression-columns/)
 
 4.	Drag and drop the `Grid` widget and click on the `Assign data` section to start creating expressions.
@@ -83,14 +83,14 @@ Bold BI application allows you to access the custom JSON data using PostgreSQL d
 
     ![View JSONB data in widget](/static/assets/faq/images/grid-jsonb-data.png)
 	
-9.  You can also access the JSONB data using query in a code view mode. Switch to the code view by enabling the toggle option in the tools pane in the data design view as shown in the following image.
+9.  You can also access the JSONB data using queries in a code view mode. Switch to the code view by enabling the toggle option in the tools pane in the data design view, as shown in the following image.
 
     ![Code view toggle](/static/assets/faq/images/code-view-mode.png)
 
-10. In the Query Editor Window, you can enter the Query which helps to access JSONB data. After entering your query, click the `Run` icon in the tools pane.
+10. In the Query Editor Window, you can enter the query that helps access JSONB data. After entering your query, click the `Run` icon in the tools pane.
 
     ![Altered query](/static/assets/faq/images/altered-query.png)
 
-11. You can view the data for your query at bottom of the Query Editor by clicking `Update.`
+11. You can view the data for your query at the bottom of the Query Editor by clicking `Update`.
 
     ![Preview data](/static/assets/faq/images/jsonb-data.png)

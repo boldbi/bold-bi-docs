@@ -11,15 +11,15 @@ documentation: ug
 
 # Range Slider
 
-Range Slider enables you to filter based on value or date range set through sliders. To configure a range slider, a minimum requirement of 1 column is needed.
+The Range Slider enables you to filter based on a value or date range set through sliders. To configure a range slider, a minimum requirement of 1 column is needed.
 
 ![Range Slider](/static/assets/visualizing-data/visualization-widgets/images/range-slider/rangeslider.png)
 
 ## How to configure table data to range slider?
 
-The following procedure explains the data configuration of Range Slider.
+The following procedure explains the data configuration of the Range Slider.
 
-1.  Drag and drop the `Range Slider` control icon from the toolbox into design panel. You can find control by searching in the toolbox.
+1.  Drag and drop the `Range Slider` control icon from the toolbox into the design panel. You can find the control by searching in the toolbox.
 
 ![Drop Range Slider](/static/assets/visualizing-data/visualization-widgets/images/range-slider/drop-widget.png)
 
@@ -31,7 +31,7 @@ The following procedure explains the data configuration of Range Slider.
 
 ![Data source button](/static/assets/visualizing-data/visualization-widgets/images/datasourcebutton.png)
 
-4.  In the connection type panel, click any one (Here, the `Microsoft Excel` Connection type is selected for demonstration) of the listed connection type button shown.
+4.  In the connection type panel, click any one (Here, the `Microsoft Excel` Connection type is selected for demonstration) of the listed connection type buttons shown.
 
 ![Data source list](/static/assets/visualizing-data/visualization-widgets/images/datasourcelist.png)
 
@@ -43,7 +43,7 @@ The following procedure explains the data configuration of Range Slider.
 
 ![Virtual table](/static/assets/visualizing-data/visualization-widgets/images/virtualtable.png)
 
-7.  Click the `Properties` button in the configuration panel, property pane opens. Now, switch to the `ASSIGN DATA` tab.
+7.  Click the `Properties` button in the configuration panel, the property pane opens. Now, switch to the `ASSIGN DATA` tab.
 
 ![Designer properties button](/static/assets/visualizing-data/visualization-widgets/images/designerpropertiesbutton.png)
 
@@ -53,7 +53,7 @@ The following procedure explains the data configuration of Range Slider.
 
 ![Assign data](/static/assets/visualizing-data/visualization-widgets/images/range-slider/rangesilderassigndata.png)
 
-9.  Bind column through drag and drop element from the sections to `Columns` section.
+9.  Bind columns through drag and drop elements from the sections to the `Columns` section.
 
 ![Configure Widget](/static/assets/visualizing-data/visualization-widgets/images/range-slider/configure-widget.png)
 
@@ -84,7 +84,7 @@ This allows you to set the `subtitle` for this range slider widget.
 
 #### Description
 
-This allows you to set the brief explanation about this range slider widget.
+This allows you to set a brief explanation about this range slider widget.
 
 ![General Settings](/static/assets/visualizing-data/visualization-widgets/images/range-slider/Description.png)
 
@@ -94,7 +94,7 @@ This allows you to set the brief explanation about this range slider widget.
 
 #### Range Selection
 
-This allows you to toggle the selection type of `Range Selection.`
+Single value can be bounded if you disable the `Range Selection` option. 
 
 Single – Single value can be bounded, if you disable the `Range Selection` option.
 
@@ -102,7 +102,7 @@ Single – Single value can be bounded, if you disable the `Range Selection` opt
 
 ![Range Slider with Single Pointer](/static/assets/visualizing-data/visualization-widgets/images/range-slider/single-pointer.png)
 
-Range – A range (two values) can be bounded, if you enable the `Range Selection` option.
+Range – A range (two values) can be bounded if you enable the `Range Selection` option.
 
 **Range Slider with Range Pointer**
 
@@ -114,7 +114,7 @@ This allows you to toggle the orientation type of `Vertical Orientation` and `Ho
 
 ![Range Slider Orientation Type](/static/assets/visualizing-data/visualization-widgets/images/range-slider/orientation-type.png)
 
-Orientation will be set based on the widget resolutions in the`Auto` mode.
+Orientation will be set based on the widget resolutions in the `Auto` mode.
 
 #### Range Slider with Vertical Orientation
 
@@ -154,11 +154,11 @@ This allows you to modify the incremental step of the slider. When the slider is
 
 #### Act as Master Widget
 
-This allows you to define this range slider widget as a master widget such that its filter action can be made to listen by other widgets in the dashboard.
+This option allows you to define the range slider widget as a master widget so that its filter action can be recognized by other widgets in the dashboard.
 
 #### Ignore Filter Actions
 
-This allows you to define this range slider widget to ignore responding to the filter actions applied on other widgets in dashboard.
+This option allows you to specify that the range slider widget should not respond to filter actions applied on other widgets in the dashboard.
 
 #### Enable Hierarchical Filtering
 
@@ -172,39 +172,39 @@ When the `Enable Hierarchical Filtering` is enabled, the Top N will be applied f
 
 #### Title Alignment
 
-This allows you to handle the alignment of widget title to either `left, center, or right.`
+This setting allows you to adjust the alignment of the widget title to be `left, center, or right.`
 
 #### Title Color
 
-This allows you to apply the text `color` to the widget title.
+You can apply a specific text `color` to the widget title using this option.
 
 #### Title Auto Font Size
 
-On enabling Auto Font Size, the font size of the title will be adjusted automatically if the resolution of the screen varies.
+If Auto Font Size is enabled, the font size of the title will automatically adjust if the screen resolution varies.
 
 **Font Size**
 
-This allows you to apply the specified size of the font to the widget title if the **Title Auto Font Size** is disabled. Value can be between 10 and 44.
+This setting allows you to specify the font size for the widget title if the **Title Auto Font Size** is disabled. The value can be between 10 and 44.
 
 #### Subtitle Auto Font Size
 
-On enabling Auto Font Size, the font size of the subtitle will be adjusted automatically if the resolution of the screen varies.
+Similar to the title, enabling Auto Font Size for the subtitle will adjust the font size automatically based on screen resolution.
 
 **Font Size**
 
-This allows you to apply the specified size of the font to the widget title if the **Subtitle Auto Font Size** is disabled. Value can be between 10 and 32.
+This setting allows you to specify the font size for the subtitle if the **Subtitle Auto Font Size** is disabled. The value can be between 10 and 32.
 
 #### Show Border
 
-This allows you to toggle the visibility of the `border` surrounding the widget.
+You can toggle the visibility of the `border` surrounding the widget using this option.
 
 #### Corner Radius
 
-This allows you to apply the specified `radius` to the widget corners if the **Show Border** is enabled. Value can be between 0 and 10.
+This setting allows you to specify the `radius` for the widget corners if the **Show Border** is enabled. The value can be between 0 and 10.
 
 #### Background Color
 
-This allows you to set the **background color** to the range slider widget.
+Set the **background color** for the range slider widget using this option.
 
 #### Transparency
 
@@ -212,7 +212,7 @@ This property allows you to specify the **transparency** for the `background col
 
 ### Show Shadow
 
-This allows you to toggle the visibility of the `shadow` surrounding the widget.
+Toggle the visibility of the `shadow` surrounding the widget with this option.
 
 #### Container actions
 
@@ -224,4 +224,4 @@ This allows you to enable or disable the `widget title` of the range slider widg
 
 #### Enable Comments
 
-This allows you to enable or disable `comment` for the dashboard widget. For more details, refer to this [link](/visualizing-data/working-with-widgets/commenting-widget/).
+Choose to enable or disable `comments` for the dashboard widget. For more details, please refer to this [link](/visualizing-data/working-with-widgets/commenting-widget/).

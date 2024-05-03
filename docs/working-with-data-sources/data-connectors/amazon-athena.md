@@ -7,11 +7,11 @@ documentation: ug
 ---
 
 # Connecting Bold BI to Amazon Athena data source
-The **Bold BI** Dashboard Designer supports connecting the Amazon Athena database using the SQL Live Query (C# API).
+The **Bold BI** Dashboard Designer supports connecting to the Amazon Athena database using the SQL Live Query (C# API). 
 
 ## Choose an Amazon Athena data source
-To configure the Amazon Athena data source, follow these steps: 
-1.  Click **Data Sources** in the configuration panel to add a new data connection.
+To choose an Amazon Athena data source, follow these steps:
+1.  Click on **Data Sources** in the configuration panel to add a new data connection.
 ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/amazon-athena/data-sources-icon.png#max-width=60%)
 
 2. Click **CREATE NEW** to launch a new connection from the connection panel.
@@ -20,24 +20,24 @@ To configure the Amazon Athena data source, follow these steps:
 3. Select the **Amazon Athena** connection in the connection panel.
 ![Amazon Athena icon](/static/assets/working-with-datasource/data-connectors/images/amazon-athena/amazon-athena-icon.png#max-width=60%)
 
->**NOTE:** You can also create a data source from the home page by clicking the Data Sources menu from the left menu panel and Create Data Source from the data sources page.
+>**NOTE:** You can also create a data source from the home page by clicking on the Data Sources menu in the left menu panel and selecting Create Data Source from the data sources page.
 ![Amazon Athena connector](/static/assets/working-with-datasource/data-connectors/images/amazon-athena/athena-select-connector.png#max-width=90%)
 
 ## Connect to Amazon Athena
-Amazon Athena data source can be accessed in Bold BI using the live connection mode.
+The Amazon Athena data source can be accessed in Bold BI using the live connection mode.
 
 ### Create Amazon Athena data source
-After clicking the data source, the **NEW DATA SOURCE** configuration panel opens. Follow the given steps to create an Amazon Athena data source: 
+After clicking on the data source, the **NEW DATA SOURCE** configuration panel opens. Follow the given steps to create an Amazon Athena data source: 
 1.	Enter a name and description (optional) for the data source. 
 2.	Choose the region endpoint of the server from the **Region Endpoint** drop-down.
-3.	Enter the port, in which the server is running in the **AwsAccessKeyID** text box.
-4.	Enter a valid Amazon Athena secret key in the **AwsSecretKey** text box. 
+3.	Enter the port in which the server is running in the **AwsAccessKeyID** text box.
+4.	Enter a valid Amazon Athena secret key in the **AwsSecretKey** text box.
 5.	Enter a valid output location for storing the output files in the **Output location** text box in the format mentioned in the tooltip.
 6.	Select a database that you want to query in the listed database associated with the given Amazon Athena server in the database combo box.
 ![Amazon Athena connection details](/static/assets/working-with-datasource/data-connectors/images/amazon-athena/athena-connection-details.png#max-width=60%)
 
 ### Data preview
-1.	Click Connect to connect the Amazon Athena server with the configured details. The schema represents the collection list retrieved from the Amazon Athena server. This dialog box displays a list of schemas in a tree view and their corresponding values.
+1.	Click Connect to connect to the Amazon Athena server with the configured details. The schema represents the collection list retrieved from the Amazon Athena server. This dialog box displays a list of schemas in a tree view and their corresponding values.
 ![Query designer page](/static/assets/working-with-datasource/data-connectors/images/amazon-athena/athena-query-designer.png#max-width=100%)
 
 2.	Now, the data design view page with the selected table schema opens. Drag the table.
@@ -52,7 +52,7 @@ You can use the Code View option for passing a query to display data.
 
 ### Connect using custom attribute and dashboard parameter
 
-We have added support for **custom attributes and dashboard parameters** to the data source connection. You can connect to the data source using custom attributes or dashboard parameters.
+We have added support for **custom attributes and dashboard parameters** in the data source connection. You can now connect to the data source using custom attributes or dashboard parameters.
 
 **Custom Attribute**
 
@@ -62,15 +62,15 @@ We have added support for **custom attributes and dashboard parameters** to the 
 
 ![Dashboard Parameter](/static/assets/working-with-datasource/data-connectors/images/amazon-athena/Dashboardparameter.png)
 
->**Note:** Refer the [Dashboard Parameter Documentation](https://help.boldbi.com/working-with-data-sources/dashboard-parameter/) and [Custom Attributes Documentation](https://help.boldbi.com/working-with-data-sources/configuring-custom-attribute/) for more details.
+>**Note:** Please refer to the [Dashboard Parameter Documentation](https://help.boldbi.com/working-with-data-sources/dashboard-parameter/) and [Custom Attributes Documentation](https://help.boldbi.com/working-with-data-sources/configuring-custom-attribute/) for more details.
 
 ## Connecting Bold BI to Amazon Athena Data Source via REST API
 
 ### Prerequisites
 
-Type while creating the data source needs to be amazonathena.
+The type while creating the data source needs to be amazonathena.
 
-[Rest API - v4.0](https://help.boldbi.com/embedded-bi/rest-api-reference/v4.0/api-reference/)
+[Rest API - v4.0](/server-api-reference/v4.0/api-reference/)
 
 ### Parameters for creating Data Source
 
@@ -306,7 +306,7 @@ Type while creating the data source needs to be amazonathena.
 
 ### Parameters for editing Data Source
 
-> **NOTE:**  For editing Data Source via API. All the parameters are optional. The parameter which needs to be changed can be provided.
+> **NOTE:**  For editing a Data Source via API, all parameters are optional. The required parameter that needs to be changed can be provided.
 
 #### Parameters for modifying expressions when editing Data Source
    
@@ -464,7 +464,7 @@ Type while creating the data source needs to be amazonathena.
 
 ```
 
-> **NOTE:**  Through Rest API, the data source can be created or edited with only one table. If different table is provided in edit data source, the table will be replaced. The widgets will be retained only if the schema is same as the previous table.
+> **NOTE:**  Through the REST API, the data source can be created or edited with only one table. If a different table is provided in editing the data source, the table will be replaced. The widgets will be retained only if the schema is the same as the previous table.
 
 ### Connection Sample for Code View Mode
 
@@ -504,11 +504,8 @@ Type while creating the data source needs to be amazonathena.
 ```
 
 ## Related links
-[Data transformation](/working-with-data-sources/data-modeling/joining-table/)
+[Data Transformation](/working-with-data-sources/data-modeling/joining-table/)
 
 [Editing a data connection](/working-with-data-sources/editing-a-data-connection/)
 
 [Dashboard designer walk-through](/getting-started/creating-dashboard/)
-
-
-

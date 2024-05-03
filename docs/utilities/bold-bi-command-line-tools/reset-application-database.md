@@ -144,7 +144,7 @@ cd /application/utilities/adminutils/
 
 2. After changing the directory, run the following command to reset the database:  
 ~~~
-dotnet Syncfusion.Server.Commands.Utility.dll dbconfig -servername "localhost" -databasename "BoldBIMasterDatabase" -u "Admin" -p "Admin@12345" -iswindowsauthentication false -sslenabled false -port "5432" -additionalparameters "Pooling=True"   
+dotnet Syncfusion.Server.Commands.Utility.dll dbconfig -servername "localhost" -databasename "BoldBIMasterDatabase" -u "Admin" --p "Admin@12345" -iswindowsauthentication false -sslenabled false -port "5432" -additionalparameters "Pooling=True"   
 ~~~  
 
 > **IMPORTANT:**  command details:  
@@ -157,7 +157,7 @@ dotnet Syncfusion.Server.Commands.Utility.dll dbconfig -servername "localhost" -
 > sslenabled – Is encrypted connection required (this is optional)  
 > additionalparameters - Additional parameters required for database connection (this is optional)
 
-![Database-reset](/static/assets/admin-utility/images/database-reset.png)
+![Database-reset](/static/assets/admin-utility/images/kubernete-database-reset.png)
 
 3. Once the database has been updated successfully, restart the application using the below command:
 

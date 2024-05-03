@@ -21,11 +21,11 @@ Please follow these steps to update the license manually in `Bold BI Embedded.`
 
    ![Manage License Settings](/static/assets/faq/images/manage_license_settings.png)
 
-4. On the Manage License Settings page, go to the **Embedded BI** tab and click on the `Refresh License` button to update the license.
+4. On the Manage License Settings page, navigate to the **Embedded BI** tab and click on the `Refresh License` button to update the license.
    
    ![License Update Settings](/static/assets/faq/images/license-update-settings.png)
 
-5. Below popup will appear. Here, the license can be refreshed in either online or offline mode.
+5. The following popup will appear below. The license can be refreshed in either online or offline mode.
    ![Refresh License Popup](/static/assets/faq/images/refresh_license_popup.png)
 
 6. Refer to the below KB articles for updating license in both online and offline mode.

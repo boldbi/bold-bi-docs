@@ -9,9 +9,9 @@ documentation: ug
 
 # Data Transformation in connected Data Source
 
-This section explains how to join the tables, formatting columns, replace value, and configuring filters and expression columns when creating a data source in the Bold BI Enterprise.
+This section explains how to join tables, format columns, replace values, and configure filters and expression columns when creating a data source in Bold BI Enterprise.
 
-You can explore about transforming data in detail here,
+You can explore more about data modeling in detail here.
 
 [Joining Tables](/working-with-data-sources/data-modeling/joining-table/)
 

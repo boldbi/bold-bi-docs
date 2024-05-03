@@ -9,14 +9,16 @@ documentation: ug
 
 # Working with Widgets
 
-This section explains how to work with the available widgets in Bold BI Enterprise and also explains about various features involved while designing a dashboard with the widgets.
+This section explains how to work with the available widgets in Bold BI Enterprise and also explains various features involved in designing a dashboard with the widgets.
 
-You can explore the available features in detail here,
+You can explore the available features in detail here:
 
 
 [Filtering](/visualizing-data/working-with-widgets/configuring-widget-filters/)
 
 [Manual Filtering](/visualizing-data/working-with-widgets/manual-filters/)
+
+[Virtual Scrolling](/visualizing-data/working-with-widgets/virtual-scrolling/)
 
 [Sorting](/visualizing-data/working-with-widgets/advanced-sorting/)
 

@@ -12,7 +12,7 @@ documentation: ug
 
 ## Choropleth map
 
-Choropleth maps allow you to showcase quantitative values encoded using color scale. 
+Choropleth maps allow you to display quantitative values encoded using a color scale.
 
 ![Choropleth Map](/static/assets/visualizing-data/visualization-widgets/images/map/choroplethmap.png)
 
@@ -24,29 +24,29 @@ Bubble maps allow you to showcase quantitative values encoded using bubble size.
 
 ## How to change map type as choropleth or bubble?
 
-You can change map type as choropleth or bubble by `Map Type` property.
+You can change the map type to choropleth or bubble by using the `Map Type` property.
 
 ![Map Type](/static/assets/visualizing-data/visualization-widgets/images/map/map-type.png)
 
 ## How to configure the table data into a map?
 
-To plot a map, a minimum requirement of 1 value and 1 shape are needed. Dropping a dimension will display each region split by each of its item.
+To plot a map, you need a minimum requirement of 1 value and 1 shape. Dropping a dimension will display each region split by each of its items.
 
 The following steps explain the data configuration of a map:
 
-1.  Click the `Data Source` in the configuration panel.
+1.  Click on the `Data Source` in the configuration panel.
 
 ![Data button](/static/assets/visualizing-data/visualization-widgets/images/databutton.png)
 
-2.  Click the `CREATE NEW` to launch a new connection from the connection-type panel.
+2.  Click on `CREATE NEW` to launch a new connection from the connection-type panel.
 
 ![Data source button](/static/assets/visualizing-data/visualization-widgets/images/datasourcebutton.png)
 
-3.  In the connection-type panel, click any one (Here, the `Microsoft Excel` Connection type is selected for demonstration) of the listed connection type buttons shown.
+3.  In the connection-type panel, click on any one of the listed connection type buttons (Here, the `Microsoft Excel` Connection type is selected for demonstration).
 
 ![Data source list](/static/assets/visualizing-data/visualization-widgets/images/datasourcelist.png)
 
-4.  In the `NEW DATA SOURCE` configuration panel, fill the connection type and related details. Click the `Connect.`
+4.  In the `NEW DATA SOURCE` configuration panel, fill in the connection type and related details. Click on `Connect`.
 
 ![Connect button](/static/assets/visualizing-data/visualization-widgets/images/connectbutton.png)
 
@@ -54,15 +54,15 @@ The following steps explain the data configuration of a map:
 
 ![Virtual table](/static/assets/visualizing-data/visualization-widgets/images/virtualtable.png)
 
-6.  Drag the `Map` control icon from the toolbox into the design panel. You can find control by searching in the toolbox.
+6.  Drag the `Map` control icon from the toolbox into the design panel. You can find the control by searching in the toolbox.
 
 ![Adding Bubblemap](/static/assets/visualizing-data/visualization-widgets/images/map/drag-drop.png)
 
-7.  Click `Properties` in the configuration panel to open the property pane. Switch to the `ASSIGN DATA` tab.
+7.  Click on `Properties` in the configuration panel to open the property pane. Switch to the `ASSIGN DATA` tab.
 
 ![Designer properties button](/static/assets/visualizing-data/visualization-widgets/images/designerpropertiesbutton.png)
 
-The property panel renders as follows.
+The property panel will render as follows.
 
 ![Data tab](/static/assets/visualizing-data/visualization-widgets/images/map/map-type.png)
 
@@ -74,11 +74,11 @@ The data tab will be opened with available measures and dimensions from the conn
 
 ![Assign data](/static/assets/visualizing-data/visualization-widgets/images/map/bubblemapassigndata.png)
 
-Bind columns by dragging the element from the `Measures` section to `Location Value.`
+Bind columns by dragging the element from the `Measures` section to `Location Value`.
 
 ![Bind columns for Bubblemap](/static/assets/visualizing-data/visualization-widgets/images/map/values-for-bubblemap.png)
 
-Drag the elements from the `Dimension` section to the `Location Name.`
+Drag the elements from the `Dimension` section to `Location Name`.
 
 ![Add location name field](/static/assets/visualizing-data/visualization-widgets/images/map/location-name-field.png)
 
@@ -86,7 +86,7 @@ You can use the aggregation function to change the `Location Value` of the colum
 
 ![Value](/static/assets/visualizing-data/visualization-widgets/images/map/bubblemap-value.png)
 
-You can use the `Filter` to filter the data. For more details, refer to this [filter](/visualizing-data/working-with-widgets/configuring-widget-filters/).
+You can use the `filter` to filter the data. For more details, refer to this [filter](/visualizing-data/working-with-widgets/configuring-widget-filters/).
 
 ![Filter for Bubblemap](/static/assets/visualizing-data/visualization-widgets/images/map/filter-data.png)
 
@@ -114,7 +114,7 @@ Here is an illustration,
 
 ![Bubble map](/static/assets/visualizing-data/visualization-widgets/images/map/bubblemap.png)
 
-There is a section `Location Tooltip,` which is used to show the values of bound columns while rendering tooltips in a map widget.
+There is a section called `Location Tooltip`, which is used to show the values of bound columns while rendering tooltips in a map widget.
 
 ![Bubble map Tooltip data](/static/assets/visualizing-data/visualization-widgets/images/map/bubblemap-tooltip.png)
 
@@ -146,7 +146,7 @@ The map renders as follows.
 
 ![Bubble map Marker data](/static/assets/visualizing-data/visualization-widgets/images/map/bubblemapmarker.png)
 
-Marker has an individual tooltip. Bind data to a `Marker Tooltip` from the `Measures` or `Dimensions` sections.
+Each marker has an individual tooltip. Bind data to a `Marker Tooltip` from the `Measures` or `Dimensions` sections.
 
 ## Marker Size
 
@@ -154,21 +154,21 @@ If you wish to modify the size of the marker according to the data, then you can
 
 ![Map Marker Size Container](/static/assets/visualizing-data/visualization-widgets/images/map/markersize.png)
 
-After configuring the marker size field, the map renders as follows.
+After configuring the marker size field, the map renders as follows:
 
 ![Map with Marker Size](/static/assets/visualizing-data/visualization-widgets/images/map/mapwithmarkersize.png)
 
-> **Note:** After configuring the marker size, the width and height of marker settings under the property panel will be disabled automatically.
+> **Note:** After configuring the marker size, the width and height of the marker settings under the property panel will be disabled automatically.
 
 ![Bubble map Marker tooltip](/static/assets/visualizing-data/visualization-widgets/images/map/bubblemap-markerdata.png)
 
 ![Bubble map Marker tooltip](/static/assets/visualizing-data/visualization-widgets/images/map/bubblemap-markerdim.png)
 
-You can use the aggregation function to change the `Marker Tooltip` Which column bounds from the `Measures` section.
+You can use the aggregation function to change the column bounds in the `Marker Tooltip` from the `Measures section`.
 
 ![Bubble map Marker tooltip Data](/static/assets/visualizing-data/visualization-widgets/images/map/bubblemarker-tooltipagg.png)
 
-You can filter the data using the `Filter` option for both `Measure` and `Dimensions` field data. For more details, refer to this [filter](/visualizing-data/working-with-widgets/configuring-widget-filters/).
+To filter the data, you can use the `Filter` option for both `Measure` and `Dimensions` field data. For more details, refer to this [filter](/visualizing-data/working-with-widgets/configuring-widget-filters/).
 
 ![Bubble map Marker tooltip filter](/static/assets/visualizing-data/visualization-widgets/images/map/bubblemap-marfil.png)
 
@@ -190,27 +190,27 @@ Here, the marker tooltip shows data while the cursor hovers over the marker.
 
 ## Hidden Column
 
-Hidden columns are useful in cases where we don't want the fields to take part in the visualization, but only to be used for [linking](#linking), [filtering](#filtering) and [view data](#view-data).
+Hidden columns are useful when we don't want certain fields to be part of the visualization, but only used for [linking](#linking), [filtering](#filtering) and [view data](#view-data).
 
 ![Hidden column](/static/assets/visualizing-data/visualization-widgets/images/map/assigndata.png)
 
-We can configure both measure and dimension fields into the hidden column. For measure we will be having all the settings we have for the measure fields expect formatting and filtering. 
+We can configure both measure and dimension fields into the hidden column. For measures, we have all the settings available except for formatting and filtering.
 
 ![Measure](/static/assets/visualizing-data/visualization-widgets/images/map/measure.png)
 
-In the case of dimension fields we will having the following options only.
+For dimension fields, we only have the following options.
 
 ![Dimension](/static/assets/visualizing-data/visualization-widgets/images/map/dimension.png)
 
 #### Linking
 
-The primary use case of the hidden columns is linking. On configuring hidden columns, we can see below that the fields configured in hidden columns are listed in the linking section.  On configuring the column in linking we can pass the corresponding column value in linking parameter.
+Linking is the primary use case for hidden columns. When configuring hidden columns, the fields are listed in the linking section. By configuring a column in linking, we can pass the corresponding column value in the linking parameter.
 
-**Measure Based Example:** If we wish to pass the number of UnitsInStock as an URL parameter but do not want it to influence the visualization, we can configure the UnitsInStock in the hidden columns and incorporate them into the link.
+**Measure Based Example:** If we want to pass the number of UnitsInStock as a URL parameter without influencing the visualization, we can configure UnitsInStock in the hidden columns and incorporate it into the link.
 
 ![Linking](/static/assets/visualizing-data/visualization-widgets/images/map/link-measure.png)
 
-**Dimension Based Example:** If we wish to pass the region an URL parameter but do not want it to influence the visualization, we can configure the region in the hidden columns and incorporate them into the link.
+**Dimension Based Example:** If we want to pass the region as a URL parameter without influencing the visualization, we can configure the region in the hidden columns and incorporate it into the link.
 
 ![linking](/static/assets/visualizing-data/visualization-widgets/images/map/link-dimension.png)
 
@@ -220,31 +220,31 @@ You can use hidden columns to filter data in the visualizations. Configure hidde
 
 ![Filtering](/static/assets/visualizing-data/visualization-widgets/images/map/filtericon.png)
 
-Click the Custom button highlighted in the filter configuration dialog image below. It will list all the fields configured in the widget. Keep the field configured in the hidden column and remove the other fields, then click the Update button.
+Click on the Custom button highlighted in the filter configuration dialog image below. It will display a list of all the fields that are configured in the widget. Keep the field that is configured in the hidden column and remove the other fields. Then, click on the Update button.
 
 ![Filtering](/static/assets/visualizing-data/visualization-widgets/images/map/custom.png)
 
-Now, we can see in the below image, the data is filtered based on the hidden column field instead of the actual column that we bound in the widget. 
+Now, in the image below, we can see that the data is filtered based on the field in the hidden column instead of the actual column that we bound in the widget.
 
 ![Filtering](/static/assets/visualizing-data/visualization-widgets/images/map/hidden-column-filter.png)
 
-For more details about filtering the widget data, refer to the [Filter Configuration documentation](/working-with-dashboards/configuring-dashboard-filters/)
+For more details about filtering the widget data, refer to the [Cross Filter Configuration documentation](/working-with-dashboards/configuring-cross-filters/)
 
 #### View Data
 
-You can view the data in the hidden columns in the underlying data view. This is useful for checking the data in more detail and can help you to identify any issues with the data.
+You can view the data in the hidden columns in the underlying data view. This is useful for checking the data in more detail and can help you identify any issues with the data.
 
 ![View date](/static/assets/visualizing-data/visualization-widgets/images/map/viewdata.png)
 
-> **NOTE:** We don't recommend to configure lower hierarchy data in hidden columns as we can see in the info icon in `Hidden Column` section denotes the same. 
+> **NOTE:** We do not recommend configuring lower hierarchy data in hidden columns, as indicated by the info icon in the `Hidden Column` section.
 
 ![Hidden Column ](/static/assets/visualizing-data/visualization-widgets/images/map/info-icon.png)
 
-The below map displays the unit price by ship country without hidden columns.
+The map below displays the unit price by ship country without hidden columns.
 
 ![Before](/static/assets/visualizing-data/visualization-widgets/images/map/before.png)
 
-If we configure lower hierarchy data (Ship City) in hidden columns, the data configured in the widgets gets duplicated, and incorrect data is displayed in the tooltip, as we can see in the image below.
+If we configure lower hierarchy data (Ship City) in hidden columns, the data configured in the widgets gets duplicated, and incorrect data is displayed in the tooltip, as shown in the image below.
 
 ![After](/static/assets/visualizing-data/visualization-widgets/images/map/after.png)
 
@@ -264,7 +264,7 @@ This allows you to set a `title` for the map widget.
 
 #### Subtitle
 
-This allow you to set a `subtitle` for the map widget.
+This allows you to set a `subtitle` for the map widget.
 
 ![General settings](/static/assets/visualizing-data/visualization-widgets/images/map/Subtitle.png)
 
@@ -280,7 +280,7 @@ This allows you to set a brief explanation about the map widget.
 
 #### Show Tooltip
 
-This option allows you to toggle the visibility of tooltip in a map.
+This option allows you to toggle the visibility of the tooltip in a map.
 
 ![General settings](/static/assets/visualizing-data/visualization-widgets/images/map/tooltip.png)
 
@@ -296,7 +296,7 @@ By setting the map type as `Bubble`, the show value label property will be hidde
 
 ### Show legend
 
-A Legend is a text used to describe the plotted data. It allows you to toggle the visibility of legend in the map.
+A legend is a text used to describe the plotted data. It allows you to toggle the visibility of the legend in the map.
 
 ![Map](/static/assets/visualizing-data/visualization-widgets/images/map/show-legend.png)
 
@@ -314,7 +314,7 @@ This allows you to enable the visibility of `Data Labels.`
 
 #### Label Color
 
-This allows you to customize the data labels color.
+This allows you to customize the color of the data labels.
 
 ![Value Labels Color](/static/assets/visualizing-data/visualization-widgets/images/map/value-label-color-option.png)
 
@@ -322,19 +322,19 @@ This allows you to customize the data labels color.
 
 ### Enable Multi Selection
 
-This option will be enabled only after you enable the `Act as Master Widget` option and this allows you to filter the multiple data by enabling the `Enable Multi Selection` option.
+This option will only be enabled after you enable the `Act as Master Widget` option, and it allows you to filter multiple data by enabling the `Enable Multi Selection` option.
 
 ![Enable multi selection](/static/assets/visualizing-data/visualization-widgets/images/map/multi-selection.png)
 
 #### Shape kind
 
-You can select any type of shape (country or continent or state) from the shape kind drop-down.
+You can select any type of shape (country, continent, or state) from the shape kind drop-down.
 
 ![Choropleth color](/static/assets/visualizing-data/visualization-widgets/images/map/bubblemapshape.png)
 
 #### Shape data
 
-You can choose a shape for the selected country or continent or state. The combo box data shows based on the selected values in the `shape Kind.`
+You can choose a shape for the selected country, continent, or state. The combo box data is based on the selected values in the `shape Kind`.
 
 ![Choropleth map field](/static/assets/visualizing-data/visualization-widgets/images/map/bubblemap-field.png)
 
@@ -369,13 +369,13 @@ If you want to load new map shape files into the map, for example, if you wish t
 
     ![Rename shape file](/static/assets/visualizing-data/visualization-widgets/images/map/dropdown.png)
 
-9. Click on the shape name, the customized shape will be rendered in the map widget based on the data configuration.
+9. Click on the shape name and the customized shape will be rendered in the map widget based on the data configuration.
 
     ![Json shape file name](/static/assets/visualizing-data/visualization-widgets/images/map/customindia.png)
 
 ### Drill down configuration
 
-By default, the state shapes in India are divided into districts. However, if you prefer to drill the state shapes with city divisions instead of districts(e.g., If you want to drill the shape of `Tamil Nadu` with city divisions instead of districts), follow these steps.
+By default, the state shapes in India are divided into districts. However, if you prefer to drill the state shapes with city divisions instead of districts (e.g., if you want to drill the shape of `Tamil Nadu` with city divisions instead of districts), follow these steps:
 
 1. Download the `Tamil Nadu` shape file with the city division from any open-source website.
 
@@ -397,7 +397,7 @@ By default, the state shapes in India are divided into districts. However, if yo
 
     ![Json shape file name](/static/assets/visualizing-data/visualization-widgets/images/map/finalpath.png)
 
-7. Please reload the dashboard page and drill the India shape in the world map, Then drill the `Tamil Nadu` shape in India, The `Tamil Nadu` shape will be displayed with city divisions instead of districts.
+7. Please reload the dashboard page and drill the India shape in the world map. Then drill the `Tamil Nadu` shape in India. The `Tamil Nadu` shape will be displayed with city divisions instead of districts.
 
     ![drilldown shape file](/static/assets/visualizing-data/visualization-widgets/images/map/tamil-drill.png)
 
@@ -437,32 +437,32 @@ This section allows you to customize the legend in the map.
 
 #### Show legend
 
-This allows you to toggle the visibility of legend in a map. By default, it will be enabled.
+This allows you to toggle the visibility of the legend in a map. By default, it will be enabled.
 
 #### Type
 
 It defines the legend type whether layers or marker. 
 
-* If Location Value and Location Name alone are configured without Marker Latitude and Longitude, the legend type will be Layers by default. In this case, the Type option will not be shown.
+* If Location Value and Location Name are configured without Marker Latitude and Longitude, the legend type will be Layers by default. In this case, the Type option will not be shown.
 
 ![Layers Legend](/static/assets/visualizing-data/visualization-widgets/images/map/layers-legend.png)
 
-* If Marker Latitude and Longitude alone bounded with advanced customization in the map without Location Name and Value configuration, the type will be Markers by default. In this case, the Type option will not be shown.
+* If Marker Latitude and Longitude are bounded with advanced customization in the map without Location Name and Value configuration, the type will be Markers by default. In this case, the Type option will not be shown.
 
 ![Markers Legend](/static/assets/visualizing-data/visualization-widgets/images/map/markers-legend.png)
 
-* If both Location Value and Location Name and Marker Latitude and Longitude with advanced customization configured, the Type option will be shown in `Legend Settings section`.In this case, Legend will be shown based on legend type. In below image, the legend will be shown for Layers by default.
+* If both Location Value and Location Name and Marker Latitude and Longitude with advanced customization are configured, the Type option will be shown in the `Legend Settings section`. In this case, the legend will be shown based on the legend type.
 
 ![Legend Type](/static/assets/visualizing-data/visualization-widgets/images/map/map-legend-type.png)
 
- For type `Markers`, legend will be shown as below.
+ For type `Markers`, the legend will be shown as below.
 
 ![Legend Type Marker](/static/assets/visualizing-data/visualization-widgets/images/map/map-legend-type-marker.png)
 
 
 #### Show Title
 
-This option allows you to toggle the visibility of legend title in a map.
+This option allows you to toggle the visibility of the legend title in a map.
 
 ![Show Legend Title](/static/assets/visualizing-data/visualization-widgets/images/map/show-title.png)
 
@@ -493,7 +493,7 @@ If you bind the Marker latitude and Marker Longitude fields, the Marker settings
 
 #### Marker Based Zoom
 
-If you enable this option, the map will be automatically zoomed in to the marker area. Here in the following map widget, the map has a single marker. It will be useful for the filtering process.
+If you enable this option, the map will automatically zoom in to the marker area. Here, in the following map widget, the map has a single marker. It will be useful for the filtering process.
 
 ![Map Zoom](/static/assets/visualizing-data/visualization-widgets/images/map/map-zoomin.png)
 
@@ -547,7 +547,7 @@ If you click save, the map widget will render like this:
 
 This option allows you to customize the map marker color individually based on the selected column values.
 
-For example, if you have three types of signal strength options in your data and you want to display marker colors based on the three types. You can select the `Signal Strength` column in the based selection and then assign a color for each type of signal strength option.
+For example, if you have three types of signal strength options in your data and you want to display marker colors based on the three types, you can select the `Signal Strength` column in the based selection and then assign a color for each type of signal strength option.
 
 ![Individual Marker settings](/static/assets/visualizing-data/visualization-widgets/images/map/map-individualcolor-settings.png)
 
@@ -648,11 +648,11 @@ You can save your changes by clicking `Save.` Now, the map renders with changes.
 ![Bubble map Individual settings changes](/static/assets/visualizing-data/visualization-widgets/images/map/map-individualsetting.png)
 
 ### Font settings
- 
+
 This section allows you to customize the font size of map elements.
- 
+
 ![Font settings](/static/assets/visualizing-data/visualization-widgets/images/map/font-settings.png)
- 
+
 #### Auto Font Size and Font Size
  
 By default, the 'Auto Font Size' property is enabled. The Auto Font Size property is used to set Font Size based on dashboard viewing client machine resolution.

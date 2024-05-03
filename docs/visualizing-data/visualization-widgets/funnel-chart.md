@@ -11,17 +11,17 @@ documentation: ug
 
 # Funnel Chart
 
-The Funnel Chart control shows values across multiple stages in a process by highlighting different stages with different colors. It allows you to make proportional comparisons between values showcased in a progressively decreasing manner.
+The Funnel Chart control displays values across multiple stages in a process by highlighting different stages with different colors. It allows for proportional comparisons between values in a progressively decreasing manner.
 
 ![Funnel chart](/static/assets/visualizing-data/visualization-widgets/images/funnel-chart/funnel-chart.png)
 
 ## How to configure table data in the Funnel Chart
 
-The Funnel Chart needs a minimum of one value element and one column element to showcase. The measure or expression field that you want to analyze can be dropped into the Values block. The dimension for which you want to categorize the measure can be dropped into the Columns block. To categorize the measure based on a series, drop the respective dimension into the Rows block.
+The Funnel Chart requires at least one value element and one column element to showcase. The measure or expression field that you want to analyze can be placed in the Values block. The dimension for categorizing the measure can be placed in the Columns block. To categorize the measure based on a series, place the respective dimension in the Rows block.
 
 To configure data in the Funnel Chart, follow these steps:
 
-1. Drag the Funnel Chart into the canvas and resize it to your required size.
+1. Drag the Funnel Chart onto the canvas and adjust its size as needed.
 
 ![Drag and drop](/static/assets/visualizing-data/visualization-widgets/images/funnel-chart/add-funnelchart.png)
 
@@ -29,7 +29,7 @@ To configure data in the Funnel Chart, follow these steps:
 
 ![Data source button](/static/assets/visualizing-data/visualization-widgets/images/databutton.png)
 
-3. Click **CREATE NEW** to launch a new connection from the connection-type panel.
+3. Click **CREATE NEW** to establish a new connection from the connection-type panel.
 
 ![Add data source](/static/assets/visualizing-data/visualization-widgets/images/datasourcebutton.png)
 
@@ -37,29 +37,29 @@ To configure data in the Funnel Chart, follow these steps:
 
 ![Datasource list](/static/assets/visualizing-data/visualization-widgets/images/datasourcelist.png)
 
-5. In the NEW DATA SOURCE configuration panel, choose the file path and click **Preview &Connect**.
+5. In the NEW DATA SOURCE configuration panel, select the file path and click **Preview & Connect**.
 
 ![Connect button](/static/assets/visualizing-data/visualization-widgets/images/connectbutton.png)
 
-6. Drag your preferred table or view from the left pane from the data design view and click **Save**.
+6. Drag your preferred table or view from the data design view on the left pane and click **Save**.
 
 ![Virtual table](/static/assets/visualizing-data/visualization-widgets/images/virtualtable.png)
 
-7. Click the **Properties** icon in the configuration panel. The property pane opens.
+7. Click the **Properties** icon in the configuration panel to open the property pane.
 
 ![Properties button](/static/assets/visualizing-data/visualization-widgets/images/designerpropertiesbutton.png)
 
-8. Now, switch to **ASSIGN DATA** tab.
+8. Switch to the **ASSIGN DATA** tab.
 
 ![Assign data](/static/assets/visualizing-data/visualization-widgets/images/funnel-chart/assigndata.png)
 
-The **ASSIGN DATA** tab will be opened with the available measures and dimension sections from the connected data source.
+The **ASSIGN DATA** tab will display the available measures and dimensions from the connected data source.
 
 ![Chart data](/static/assets/visualizing-data/visualization-widgets/images/funnel-chart/chartdata.png)
 
 ### Adding value(s)
 
-You can add more than one measure section to the Value(s) field by dragging the required measures.
+You can add multiple measure sections to the Value(s) field by dragging the required measures.
 
 ![Add data to value](/static/assets/visualizing-data/visualization-widgets/images/funnel-chart/add-data.png)
 
@@ -75,11 +75,11 @@ You can filter the data displayed in the Funnel chart by using the Filter option
 
 #### Formatting data
 
-You can format the data displayed in the chart by using the Format option. For more details, refer to the[measure format](/visualizing-data/working-with-widgets/formatting-measure-type-column/).
+Format the data displayed in the chart using the Format option. Refer to the [measure format](/visualizing-data/working-with-widgets/formatting-measure-type-column/) for more details.
 
 ![Format option](/static/assets/visualizing-data/visualization-widgets/images/funnel-chart/formatoption.png)
 
-To remove the added value fields, click the **Remove** option.
+To remove added value fields, click the **Remove** option.
 
 ![Remove button](/static/assets/visualizing-data/visualization-widgets/images/funnel-chart/removebutton.png)
 
@@ -89,11 +89,11 @@ Drag data from the Dimension field to the Column(s) field.
 
 ![Add data to column](/static/assets/visualizing-data/visualization-widgets/images/funnel-chart/funnelchart-columnfield.png)
 
-The Funnel chart will be rendered as follows.
+The Funnel chart will be rendered accordingly.
 
 ![Funnel chart with dimension field](/static/assets/visualizing-data/visualization-widgets/images/funnel-chart/funnel-chart.png)
 
-You can change the Settings.
+You can adjust the Settings.
 
 ![Column settings](/static/assets/visualizing-data/visualization-widgets/images/funnel-chart/columnsettings.png)
 
@@ -105,7 +105,7 @@ The configured field names can be edited by using the `Rename` option provided i
 
 #### Sorting data
 
-You can sort the dimension data using the Sort option under the Settings menu list. To apply sorting for the data, refer to the[sort](/visualizing-data/working-with-widgets/advanced-sorting/#dimension-column).
+You can sort the dimension data using the Sort option under the Settings menu list. To apply sorting for the data, refer to the [sort](/visualizing-data/working-with-widgets/advanced-sorting/#dimension-column).
 
 ![Sort option](/static/assets/visualizing-data/visualization-widgets/images/funnel-chart/sortoption.png)
 
@@ -117,7 +117,7 @@ You can apply a filter by selecting the `Filter(s)` option in settings.
 
 > **NOTE:**  By default, the filter will be set for the top 5 records.
 
-You can apply filters by selecting the filter option in settings. For more details, refer to the[filters](/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column).	
+You can apply filters by selecting the filter option in settings. For more details, refer to the [filters](/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column).	
 
 Similarly, you can add the Measures and Expression Columns to the Column field.
 
@@ -153,15 +153,15 @@ Scroll down to see all charts.
 
 ## Hidden Column
 
-Hidden columns are useful in cases where we don't want the fields to take part in the visualization, but only to be used for [linking](#linking), [filtering](#filtering) and [view data](#view-data).
+Hidden columns are useful in cases where we don’t want the fields to take part in the visualization, but only to be used for [linking](#linking), [filtering](#filtering) and [view data](#view-data).
 
 ![Hidden column](/static/assets/visualizing-data/visualization-widgets/images/funnel-chart/assigndata.png)
 
-We can configure both measure and dimension fields into the hidden column. For measure we will be having all the settings we have for the measure fields expect formatting and filtering. 
+We can configure both measure and dimension fields into the hidden column. For measure, we will have all the settings we have for the measure fields except formatting and filtering.
 
 ![Measure](/static/assets/visualizing-data/visualization-widgets/images/funnel-chart/measure.png)
 
-In the case of dimension fields we will having the following options only. In Date fields we will having all available types except sorting, relative date filter, settings and filters.
+In the case of dimension fields, we will have the following options only. In Date fields, we will have all available types except sorting, relative date filter, settings, and filters.
 
 ![Dimension](/static/assets/visualizing-data/visualization-widgets/images/funnel-chart/dimension.png)
 
@@ -171,11 +171,11 @@ In the case of dimension fields we will having the following options only. In D
 
 The primary use case of the hidden columns is linking. On configuring hidden columns, we can see below that the fields configured in hidden columns are listed in the linking section.  On configuring the column in linking we can pass the corresponding column value in linking parameter.
 
-**Measure Based Example:** If we wish to pass the number of Matches played as an URL parameter but do not want it to influence the visualization, we can configure the Matches in the hidden columns and incorporate them into the link.
+**Measure Based Example:** If we wish to pass the number of Matches played as a URL parameter but do not want it to influence the visualization, we can configure the Matches in the hidden columns and incorporate them into the link.
 
 ![Linking](/static/assets/visualizing-data/visualization-widgets/images/funnel-chart/link-measure.png)
 
-**Dimension Based Example:** If we wish to pass the number of Team Name played as an URL parameter but do not want it to influence the visualization, we can configure  the Team Name in the hidden columns and incorporate them into the link.
+**Dimension Based Example:** If we wish to pass the number of Team Name played as a URL parameter but do not want it to influence the visualization, we can configure the Team Name in the hidden columns and incorporate them into the link.
 
 ![Linking](/static/assets/visualizing-data/visualization-widgets/images/funnel-chart/link-dimension.png)
 
@@ -193,7 +193,7 @@ Now, we can see in the below image, the data is filtered based on the hidden col
 
 ![Filtering](/static/assets/visualizing-data/visualization-widgets/images/funnel-chart/hidden-column-filter.png)
 
-For more details about filtering the widget data, refer to the [Filter Configuration documentation](/working-with-dashboards/configuring-dashboard-filters/)
+For more details about filtering the widget data, refer to the [Cross Filter Configuration documentation](/working-with-dashboards/configuring-cross-filters/).
 
 #### View Data
 
@@ -201,7 +201,7 @@ You can view the data in the hidden columns in the underlying data view. This is
  
 ![View data](/static/assets/visualizing-data/visualization-widgets/images/funnel-chart/viewdata.png)
 
-> **NOTE:** We don't recommend to configure lower hierarchy data in hidden columns as we can see in the info icon in `Hidden Column` section denotes the same. 
+> **NOTE:** We don’t recommend configuring lower hierarchy data in hidden columns as we can see in the info icon in `Hidden Column` section denotes the same.
 
 ![Hidden Column ](/static/assets/visualizing-data/visualization-widgets/images/funnel-chart/info-icon.png)
 
@@ -209,7 +209,7 @@ The below chart displays the goals by each team without hidden columns.
 
 ![Before](/static/assets/visualizing-data/visualization-widgets/images/funnel-chart/before.png)
 
-If we configure lower hierarchy data(Player Name) in hidden columns compared to column and Row filed data, the data configured in the widgets gets duplicate, This affects the chart visualization as we can see in the below image.
+If we configure lower hierarchy data (Player Name) in hidden columns compared to column and Row filed data, the data configured in the widgets gets duplicate. This affects the chart visualization as we can see in the below image.
 
 ![After](/static/assets/visualizing-data/visualization-widgets/images/funnel-chart/after.png)
 
@@ -261,7 +261,7 @@ Set a `description` for the Funnel chart widget, whose visibility will be denote
 
 #### Show Tooltip
 
-This option allows you to toggle the visibility of tooltip in a chart.
+This option allows you to toggle the visibility of the tooltip in a chart.
 
 ![Show tooltip](/static/assets/visualizing-data/visualization-widgets/images/funnel-chart/tooltip.png)
 
@@ -277,7 +277,7 @@ Toggle the visibility of value labels.
 
 ![Show value labels](/static/assets/visualizing-data/visualization-widgets/images/funnel-chart/show-value-labels.png)
 
-If you disable `Show Value Labels` properties, the dependent properties, which are **color**, **Value label position**, **Value label rotation** and **Value label suffix** will be hidden.
+If you disable `Show Value Labels` properties, the dependent properties, which are **color**, **Value label position**, **Value label rotation**, and **Value label suffix** will be hidden.
 
 ![Show value label](/static/assets/visualizing-data/visualization-widgets/images/funnel-chart/value-label.png)
 
@@ -323,23 +323,23 @@ Define the display format as a value, percentage, or both.
 
 ### Value labels suffix
 
-This allows you to show or hide the suffix value of value labels.
+This feature allows you to show or hide the suffix value of value labels.
 
 ### Suffix Value
 
-This allows you to customize the suffix value of value labels.
+This feature allows you to customize the suffix value of value labels.
 
 ![Value labels suffix](/static/assets/visualizing-data/visualization-widgets/images/funnel-chart/value-labels-suffix.png)
 
 ### Series Settings
 
-The `Series Settings` is option enabled only when you configure the **series** in the `Assigned Data` tab.
+The `Series Settings` option is enabled only when you configure the **series** in the `Assigned Data` tab.
 
 ![Series Settings](/static/assets/visualizing-data/visualization-widgets/images/funnel-chart/series-settings.png)
 
 ### Fixed rows and columns 
 
-If you enable the fixed rows and columns, you can customize the rows and columns. The rows and columns are fixed based on the container size and size of the funnel chart.
+If you enable fixed rows and columns, you can customize the rows and columns. The rows and columns are fixed based on the container size and the size of the funnel chart.
 
 ![Funnel Series Settings](/static/assets/visualizing-data/visualization-widgets/images/funnel-chart/series-settingsdoughnutchart.png)
 
@@ -353,7 +353,7 @@ By enabling the `Column Count,` you can set the column count.
 
 ![Funnel Series Settings](/static/assets/visualizing-data/visualization-widgets/images/funnel-chart/series-settingsfixed.png)
 
->**Note**: If the invalid columns and rows are given, the rows and columns reset to their default value. For example: If you are given the number of rows as 6 and the number of columns as 5 but your data count is only 20. In this case, the rows and columns will reset to their default value.
+>**Note**: If invalid columns and rows are given, the rows and columns will reset to their default value. For example, if you are given 6 rows and 5 columns but only have 20 data entries, the rows and columns will reset to their default value.
 
 ### Legend Settings
 
@@ -361,11 +361,11 @@ By enabling the `Column Count,` you can set the column count.
 
 #### Show legend
 
-A Legend is the text used to describe the plotted data. It allows you to toggle the visibility of the legend in the chart and change the legend text position (selecting through the combo box).
+A Legend is the text used to describe the plotted data. This option allows you to toggle the visibility of the legend in the chart and change the legend text position by selecting through the combo box.
 
 ![Show legend](/static/assets/visualizing-data/visualization-widgets/images/funnel-chart/show-legend.png)
 
-Enabling the Custom Legend Text option will allow you to define a custom text (through the text area) to display for each legend series (selecting through the combo box) in the chart.
+Enabling the Custom Legend Text option allows you to define custom text (through the text area) to display for each legend series (selecting through the combo box) in the chart.
 
 #### Legend Interactivity
 
@@ -380,7 +380,7 @@ Enabling the Interactivity feature in the Legend Settings category allows you to
 
 #### Legend Label Color
 
-This allows you to change the chart legend title and label colors.
+This feature allows you to change the chart legend title and label colors.
 
 ![Chart Legend Color Option](/static/assets/visualizing-data/visualization-widgets/images/funnel-chart/legend-label-color-option.png)
 
@@ -388,7 +388,7 @@ This allows you to change the chart legend title and label colors.
 
 #### Customization
 
-You can customize the legend text through the `Custom Legend Settings` dialog. This dialog will show the legend text list as labels at left and corresponding text area at right to add the formatted text to display instead.
+You can customize the legend text through the `Custom Legend Settings` dialog. This dialog will show the legend text list as labels on the left and the corresponding text area on the right to add the formatted text to display instead.
 
 ![Legend customization](/static/assets/visualizing-data/visualization-widgets/images/funnel-chart/legendcustomize.png)
 
@@ -396,7 +396,7 @@ You can customize the legend text through the `Custom Legend Settings` dialog. T
 
 #### Legend Position
 
-A Legend is a text used to describe the data plotted. This option allows you to place the legend at the position of **Left, Right, Top, and Bottom**.
+A Legend is the text used to describe the data plotted. This option allows you to place the legend at the position of **Left, Right, Top, and Bottom**.
 
 ![Legend position](/static/assets/visualizing-data/visualization-widgets/images/funnel-chart/legend-position.png)
 
@@ -405,36 +405,36 @@ A Legend is a text used to describe the data plotted. This option allows you to 
 Legends can be displayed as a dropdown menu when the legend position is set to "dropdown." When you hover over a chart, a legend icon appears. Clicking on this icon will bring up a legend dropdown. This feature allows you to toggle the visibility of the legend in the chart.
 
 This option will hide the legends in the chart area, resulting in increased chart space and enhanced visibility.
- 
+
 The chart legend dropdown option can be used to simplify viewing complex charts with multiple data sources. For example, if you have a chart displaying sales data for the different years, you can use the legend dropdown to deselect all other years and focus only on a specific year.
 
 ![Legend item as dropdown](/static/assets/visualizing-data/visualization-widgets/images/funnel-chart/legend-as-dropdown.png)
 
 #### Legend Shape
 
-This allows you change the **shape** of the legend.
+This feature allows you to change the **shape** of the legend.
 
 ***Circle***
 
-This option allows you to change the shape of the legend in a `Circle.`
+This option allows you to change the shape of the legend to a `Circle.`
 
 ![Show Legend shape](/static/assets/visualizing-data/visualization-widgets/images/funnel-chart/legend-shape.png)
 
 ***Series Type***
 
-This option allows you to change the shape of the legend in `Series.`
+This option allows you to change the shape of the legend to `Series.`
 
 ![Show Legend shape Series](/static/assets/visualizing-data/visualization-widgets/images/funnel-chart/legendshape-series.png)
 
 #### Legend Title
 
-This allows you to add the legend title for the chart. It will reflect with the `Show Legend.`
+This feature allows you to add the legend title for the chart. It will reflect with the `Show Legend.`
 
 ![Show Legend Title](/static/assets/visualizing-data/visualization-widgets/images/funnel-chart/legendtitle.png)
 
 #### Text Overflow
 
-This option allows you to customize legend text based on the 'Text Width' property value.
+This feature allows you to customize legend text based on the `Text Width` property value.
 
 **None**
 
@@ -446,7 +446,7 @@ This option allows you to render legend items without any wrap and trim.
 
 **Trim**
 
-This option allows you to trim the legend items if its legend exceeds the 'Text Width' value.
+This option allows you to trim the legend items if its legend exceeds the `Text Width` value.
 
 ![Legend Overflow Trim Option in chart](/static/assets/visualizing-data/visualization-widgets/images/funnel-chart/legend-text-overflow-trim-option.png)
 
@@ -454,7 +454,7 @@ This option allows you to trim the legend items if its legend exceeds the 'Text 
 
 **Wrap**
 
-This option allows you to wrap legend items based on the 'Text Width' value.
+This option allows you to wrap legend items based on the `Text Width` value.
 
 ![Legend Overflow Wrap Option in chart](/static/assets/visualizing-data/visualization-widgets/images/funnel-chart/legend-text-overflow-wrap-option.png)
 
@@ -462,23 +462,23 @@ This option allows you to wrap legend items based on the 'Text Width' value.
 
 #### Text Width
 
-This option allows you to set the maximum width for the Legend Items and it is applicable only if text-overflow is set as Trim or Wrap.
+This feature allows you to set the maximum width for the Legend Items and it is applicable only if text-overflow is set as Trim or Wrap.
 
 ![Legend Text Width Option in chart](/static/assets/visualizing-data/visualization-widgets/images/funnel-chart/legend-text-overflow-width-option.png)
 
 ![Legend Text Width in chart](/static/assets/visualizing-data/visualization-widgets/images/funnel-chart/legend-text-overflow-width.png)
 
-If you uncheck the `Show Legend` property in the property panel, the dependent properties **Legend color**, **Legend position**, **customization button** and **Legend title** are also hidden.
+If you uncheck the `Show Legend` property in the property panel, the dependent properties **Legend color**, **Legend position**, **customization button**, and **Legend title** are also hidden.
 
 #### Link
 
-You can enable linking and configure navigating to a general URL with or without parameters. For more details, refer to the[Linking](/visualizing-data/working-with-widgets/linking-urls-and-dashboards/).
+You can enable linking and configure navigating to a general URL with or without parameters. For more details, refer to the [Linking](/visualizing-data/working-with-widgets/linking-urls-and-dashboards/).
 
 ![Link](/static/assets/visualizing-data/visualization-widgets/images/funnel-chart/link.png)
 
 #### Series palette
 
-By toggling the `series palette,` you can able to customize the proportion series segments’ colors.
+By toggling the `series palette`, you can customize the proportion series segments’ colors.
 
 ![Series palette](/static/assets/visualizing-data/visualization-widgets/images/funnel-chart/seriespalette.png)
 
@@ -486,7 +486,7 @@ By toggling the `series palette,` you can able to customize the proportion serie
 
 You can choose the field from the Based On section to apply the conditions.
 
-This section shows a palette of colors. By clicking the colored square, the color picker will open. You can choose a color and change the color by changing the corresponding hexadecimal value at the right.
+This section shows a palette of colors. By clicking the colored square, the color picker will open. You can choose a color and change the color by changing the corresponding hexadecimal value on the right.
 
 ![Individual mode](/static/assets/visualizing-data/visualization-widgets/images/funnel-chart/column-chart-individual-mode.png)
 
@@ -498,21 +498,20 @@ Using the Color Mapping type, you can apply the colors to the series either base
 
 ***Data***
 
-It allows you to apply color for chart series based on data. If you want to apply a specific color to specific data, you can use Data based color mapping. By default, the Color Mapping Type will be `Data`.
+It allows you to apply color for chart series based on data. If you want to apply a specific color to specific data, you can use Data-based color mapping. By default, the Color Mapping Type will be `Data`.
 
 ![Color Mapping Type Data](/static/assets/visualizing-data/visualization-widgets/images/funnel-chart/column-chart-individual-mode.png)
 
-> **IMPORTANT:**  Only top 100 records will be listed in the 
-dialog. 
+> **IMPORTANT:**  Only the top 100 records will be listed in the dialog. 
 ***Index***
 
-It allows you to apply color for chart series based on `Index`. Such that the colors are maintained based on index even if data is changed. It shows only 15 different colors. After that, the color will be repeated from above colors.
+It allows you to apply color for chart series based on `Index`. The colors are maintained based on the index even if the data is changed. It shows only 15 different colors. After that, the color will be repeated from above colors.
 
 For example, If you are displaying the countries based on the increasing order of the case count, then the index-based color mapping will be useful to set the colors based on the rank. Say red color to the top, then the red color will be maintained for the country having the largest case count.
 
 ![Color Mapping Type Index](/static/assets/visualizing-data/visualization-widgets/images/funnel-chart/column-chart-formatting-index-based-color.png)
 
-**Note:** We prefer to use Index based color customization only for minimum data(upto 15 series).
+> **Note:** We prefer to use Index based color customization only for minimum data(upto 15 series).
 
 ![Use Basedon Palette](/static/assets/visualizing-data/visualization-widgets/images/funnel-chart/column-chart-individual-mode.png)
 
@@ -524,13 +523,13 @@ For example, If you are displaying the countries based on the increasing order o
 
 This option shows when you add more than one measure field to the Value(s).
 
-By toggle off the `Use Default Palette,` you can customize the proportion series segments' colors by clicking the colored squares.
+By toggling off the `Use Default Palette`, you can customize the proportion series segments’ colors by clicking the colored squares.
 
 ![Series color palette window](/static/assets/visualizing-data/visualization-widgets/images/funnel-chart/series-color-palette-window.png)
 
 ### Font settings
 
-This section allows you to customize font size of chart elements.
+This section allows you to customize the font size of chart elements.
 
 ![Font settings](/static/assets/visualizing-data/visualization-widgets/images/funnel-chart/font-settings.png)
 
@@ -540,15 +539,15 @@ This section allows you to customize font size of chart elements.
 
 #### Act as Master Widget
 
-Define the Funnel chart widget as a `master widget` such that its filter action will be shown in other widgets of the dashboard.
+Define the Funnel chart widget as a `master widget` so that its filter action will be shown in other widgets on the dashboard.
 
 #### Ignore filter actions
 
-Define the Funnel Chart widget to ignore the filter actions applied to other widgets in the dashboard.
+Define the Funnel Chart widget to ignore the filter actions applied to other widgets on the dashboard.
 
 #### Enable Hierarchical filter
 
-Through this option, you can enable or disable hierarchical `Top N` filtering. While applying the `Top N` filter with multiple dimension columns, the data returned can be customized based on whether the filtering needs to be done as flat or based on the hierarchy of added dimension columns.
+Through this option, you can enable or disable hierarchical `Top N` filtering. When applying the `Top N` filter with multiple dimension columns, the data returned can be customized based on whether the filtering needs to be done as flat or based on the hierarchy of added dimension columns.
 
 When the Hierarchical Filter option is enabled, the `Top N` filter will be applied for each individual column separately based on the number set for each column.
 
@@ -558,7 +557,7 @@ When the Hierarchical Filter option is enabled, the `Top N` filter will be appli
 
 ### Title Alignment
 
-This allows you to handle the alignment of widget title to either **left, center, or right**.
+This allows you to handle the alignment of the widget title to either **left, center, or right**.
 
 ### Title Color
 
@@ -566,27 +565,27 @@ This allows you to apply the text `color` to the widget title.
 
 ### Title Auto Font Size
 
-On enabling Auto Font Size, the font size of the title will be adjusted automatically if the resolution of the screen varies.
+By enabling Auto Font Size, the font size of the title will be adjusted automatically if the resolution of the screen varies.
 
 **Font Size**
 
-This allows you to apply the specified size of the font to the widget title if the **Title Auto Font Size** is disabled. Value can be between 10 and 44.
+This allows you to apply the specified size of the font to the widget title if the **Title Auto Font Size** is disabled. The value can be between 10 and 44.
 
 ### Subtitle Auto Font Size
 
-On enabling Auto Font Size, the font size of the subtitle will be adjusted automatically if the resolution of the screen varies.
+By enabling Auto Font Size, the font size of the subtitle will be adjusted automatically if the resolution of the screen varies.
 
 **Font Size**
 
-This allows you to apply the specified size of the font to the widget title if the **Subtitle Auto Font Size** is disabled. Value can be between 10 and 32.
+This allows you to apply the specified size of the font to the widget title if the **Subtitle Auto Font Size** is disabled. The value can be between 10 and 32.
 
 ### Auto Padding
 
-On enabling Auto Padding, the padding of the widget container will be adjusted automatically if the size of the widget varies.
+By enabling Auto Padding, the padding of the widget container will be adjusted automatically if the size of the widget varies.
 
 **Padding**
 
-This allows you to customize the padding of the widget container if the **Auto Padding** is disabled. Value can be between 0 and 25.
+This allows you to customize the padding of the widget container if the **Auto Padding** is disabled. The value can be between 0 and 25.
 
 ### Show Border
 
@@ -594,11 +593,11 @@ This allows you to toggle the visibility of the `border` surrounding the widget.
 
 ### Corner Radius
 
-This allows you to apply the specified `radius` to the widget corners if the **Show Border** is enabled. Value can be between 0 and 10.
+This allows you to apply the specified `radius` to the widget corners if the **Show Border** is enabled. The value can be between 0 and 10.
 
 ### Show Background Image
 
-This allow you to set the **background image** for the funnel chart widget.
+This allows you to set the **background image** for the funnel chart widget.
 
 ### Background Color
 

@@ -10,17 +10,17 @@ documentation: ug
 
 # Text (Rich Text Editor)
 
-Text editor allows you to edit and visualize the content of the formatted texts, tables, hyperlinks, and source code.
+The text editor allows you to edit and visualize the content of formatted texts, tables, hyperlinks, and source code.
 
 ![text_overview](/static/assets/visualizing-data/visualization-widgets/images/text/text-overview.png)
 
 ## How to configure text editor ?
 
-Drag and drop the `Text` control icon from the toolbox to the design panel. You can find control by searching in the toolbox.
+Drag and drop the `Text` control icon from the toolbox to the design panel. You can find the control by searching in the toolbox.
 
 ![text_dragDrop](/static/assets/visualizing-data/visualization-widgets/images/text/text-dragdrop.png)
 
- Click the `Properties` button in the configuration panel property pane opens. 
+ Click the `Properties` button in the configuration panel property pane to open.
 
 ![Designer properties](/static/assets/visualizing-data/visualization-widgets/images/designerpropertiesbutton.png)
 
@@ -32,7 +32,7 @@ This allows you to customize the padding of the widget container. The default va
 
 ![Padding](/static/assets/visualizing-data/visualization-widgets/images/text/propertypanel.png)
 
-If we set padding as 0, The RTE widget will be render like below
+If the padding is set as 0, the RTE widget will render as shown below.
 
 ![Padding](/static/assets/visualizing-data/visualization-widgets/images/text/rtewidget.png)
 
@@ -41,13 +41,13 @@ If we set padding as 0, The RTE widget will be render like below
 
 ### Show Background Image
 
-This option allows you to enable the image for the background.
+This option allows you to enable an image for the background.
 
 ![Background Image](/static/assets/visualizing-data/visualization-widgets/images/text/background-image.png)
 
 ### Image Type
 
-This option allows you to handle the type of the image.
+This option allows you to select the type of image.
 
 ### Local
 
@@ -57,7 +57,7 @@ You can browse the image from your `local` system.
 
 ### URL
 
-You can give the `URL` of the image which must be a valid URL.
+You can provide the `URL` of the image, which must be a valid URL.
 
 Ex: http://flagpedia.net/data/flags/normal/in.png
 
@@ -80,19 +80,19 @@ The image will be filled in the available space.
 
 #### Uniform to Fill
 
-The image will be uniformly occupying the space but gets clipped if it is larger than control.
+The image will uniformly occupy the space but may get clipped if it is larger than the control.
 
 ![Background Image UniformtoFill](/static/assets/visualizing-data/visualization-widgets/images/text/textimage-uniformtofill.png)
 
 #### Uniform 
 
-The image sizes proportionally (without clipping) to best fit to the widget area.
+The image sizes proportionally (without clipping) to best fit the widget area.
 
 ![Background Image Uniform](/static/assets/visualizing-data/visualization-widgets/images/text/textimage-uniform.png)
 
 #### Background color
 
-You can customize the color of the background by enabling the `background color.` Only when the `Background image` is not enabled.
+You can customize the color of the background by enabling the `background color`, only when the `background image` is not enabled.
 
 ![Background color](/static/assets/visualizing-data/visualization-widgets/images/text/background-color.png)
 
@@ -102,7 +102,7 @@ This property allows you to specify the **transparency** for the `background col
 
 ![Background Transparency](/static/assets/visualizing-data/visualization-widgets/images/text/background-transparency.png)
 
-By default, the text editor in the `read-only` mode, click the `edit` icon to interact with the widget.
+By default, the text editor is in `read-only` mode. Click the `edit` icon to interact with the widget.
 
 ![text-editIcon](/static/assets/visualizing-data/visualization-widgets/images/text/text-editicon.png)
 
@@ -110,27 +110,27 @@ Click the `tick` icon to save the `Text.`
 
 ![text-tickIcon](/static/assets/visualizing-data/visualization-widgets/images/text/text-tickicon.png)
 
-`Text` editor property panel is disabled by default because it does not have any items in the property panel. It contains all properties in the toolbar.
+The `Text` editor property panel is disabled by default because it does not have any items in the property panel. It contains all properties in the toolbar.
 
 ### Toolbar Classification
 
-Toolbar contains the property which used in `Text`. Based on the size of text editor, toolbar mode can be classified as `floating` and `inline toolbar`. 
+The toolbar contains properties used in `Text`. Based on the size of the text editor, the toolbar mode can be classified as `floating` and `inline toolbar`.
 
 **Inline Toolbar**
 
-`Text` editor contains an inline toolbar by default because of its smaller size. The inline toolbar can be enabled by selecting the text content. This mode is active when the text editor does not have enough space to enable a floating toolbar.
+The `Text` editor contains an inline toolbar by default because of its smaller size. The inline toolbar can be enabled by selecting the text content. This mode is active when the text editor does not have enough space to enable a floating toolbar.
 
 ![text_inline](/static/assets/visualizing-data/visualization-widgets/images/text/text-inline.png)
 
 **Floating Toolbar**
 
-It can be enabled by increasing widget size to the required size based on the resolution. This mode is active when the text editor has enough space to display a floating toolbar.
+It can be enabled by increasing the widget size to the required size based on the resolution. This mode is active when the text editor has enough space to display a floating toolbar.
 
 ![text_floating](/static/assets/visualizing-data/visualization-widgets/images/text/text-floating.png)
 
 ### Properties
 
-Text editors have support to format the font, paragraph, and other functionalities.
+Text editors support formatting the font, paragraph, and other functionalities.
 
 
 ### Font Formatting
@@ -163,7 +163,7 @@ You can format the text by applying font style, family, and color. The available
 
 ### Paragraph Formatting
 
-You can format the paragraph in the text widget. The available paragraph formats are paragraph formats, alignments, numbered and bulleted list. 
+You can format the paragraph in the text widget. The available paragraph formats are paragraph formats, alignments, numbered and bulleted lists.
 
 ![text_paraFormatting](/static/assets/visualizing-data/visualization-widgets/images/text/text-paraformatting.png)
 
@@ -171,11 +171,11 @@ You can format the paragraph in the text widget. The available paragraph formats
 
 ***Alignments*** - Used to align the paragraph as left, right, center, and justify.
 
-***Numbered and Bulleted List*** - It allows you to add numbers and bullets before the selected lines of paragraph. 
+***Numbered and Bulleted List*** - It allows you to add numbers and bullets before the selected lines of the paragraph.
 
 ### Vertical Alignments
 
-This allows you to align the paragraph by vertically.
+This allows you to align the paragraph vertically.
 
 There are three options in the menu for vertical-align as follows.
 
@@ -197,11 +197,11 @@ To create table, do one of the following,
 
     ![text_tablecell](/static/assets/visualizing-data/visualization-widgets/images/text/text-tablecell.png)
 
-* Open Insert Table dialog by clicking the `InsertTable` button. Enter the number of rows and columns required in the numeric textbox.
+* Open the Insert Table dialog by clicking the `Insert Table` button. Enter the number of rows and columns required in the numeric textbox.
 
     ![text_tableinsert](/static/assets/visualizing-data/visualization-widgets/images/text/text-tableinsert.png)
 
-Created table is shown like below and it can be resized based on row and column.
+The created table is shown below and can be resized based on row and column.
 
 ![text_tableCreate](/static/assets/visualizing-data/visualization-widgets/images/text/text-tablecreate.png)
 
@@ -211,55 +211,55 @@ Quick toolbar is opened by clicking the table. It has different sets of commands
 
 ![text_tableProp](/static/assets/visualizing-data/visualization-widgets/images/text/text-tableprop.png)
 
-***Table Header*** - This command is available with quick toolbar option through which the header row can be added or removed from the inserted table.  
+***Table Header*** - This command is available with the quick toolbar option through which the header row can be added or removed from the inserted table.
 
-***Table Rows and Columns*** - Additional row/column in table can be added before/after selected row/column element or delete unwanted row/column.  
+***Table Rows and Columns*** - Additional row/column in the table can be added before/after selected row/column element or delete unwanted row/column.
 
-***Background Color*** - The background color can be set for each table cell.   
+***Background Color*** - The background color can be set for each table cell. 
 
-***Table Remove*** - Using the delete item in the quick toolbar, users can delete the entire table.   
+***Table Remove*** - Users can delete the entire table using the delete item in the quick toolbar.
 
-***Alignments*** - Used to align the cell content as left, right, center and justify.   
+***Alignments*** - Alignment options include left, right, center, and justify for cell content.   
 
-***Table Cell Vertical Align*** - Cell can be aligned vertically in top, middle and bottom.     
+***Table Cell Vertical Align*** - Cells can be aligned vertically in top, middle, and bottom.   
 
-***Styles*** - It has two properties, `Dashed Borders` used to style table border as dashed and `Alternate Rows` used to highlight a selected row.
+***Styles*** - There are two properties: `Dashed Borders` for styling table borders as dashed, and `Alternate Rows` for highlighting a selected row.
 
 ### Insert Hyperlink
 
-Point the cursor anywhere within the editor where you would like to insert the link. It is also possible to select a text within the editor and can be converted to a hyperlink. Click the `Insert HyperLink`![text_link](/static/assets/visualizing-data/visualization-widgets/images/text/text-link.png)icon on the toolbar.
+Point the cursor anywhere within the editor where you would like to insert the link. It is also possible to select a text within the editor and can be converted to a hyperlink. Click the `Insert HyperLink`![text_link](/static/assets/visualizing-data/visualization-widgets/images/text/text-link.png) icon on the toolbar.
 
-The insert link dialog has the following options,
+The insert link dialog includes the following options:
 
-***Web Address*** - Type or paste the destination for the link you are creating.  
+***Web Address*** - Type or paste the destination for the link.
 
-***Display Text*** - Type or edit the required text that you want to display text for the link.   
+***Display Text*** - Type or edit the required text to display for the link. 
 
-***Tooltip*** - To display additional helpful information when you place the pointer on the hyperlink, type the required text in the “Tooltip” field.   
+***Tooltip*** - Enter text in the `Tooltip` field to display additional information when hovering over the hyperlink.
 
-***Open Link in New Window*** - Specify whether the given link will be open in the new window or not.
+***Open Link in New Window*** - Specify whether the link should open in a new window.
 
 ![text_linkDialog](/static/assets/visualizing-data/visualization-widgets/images/text/text-linkdialog.png)
 
 **Quick Toolbar**
 
-Hyperlink contains quick toolbar which can be enable by clicking link. 
+Enable the quick toolbar for hyperlinks by clicking the link.
 
 ![text_linkToolbar](/static/assets/visualizing-data/visualization-widgets/images/text/text-linktoolbar.png)
 
-The quick toolbar for the link has the following options,   
+The quick toolbar for the link has the following options:
 
-***Open*** - The given link page, will be open in new window.   
+***Open*** - The given link page will open in a new window.
 
 ***Edit Link*** - Used to edit the link in the Rich Text Editor content.  
   
-***Remove Link*** - Used to remove link from the content of Rich Text Editor.
+***Remove Link*** - Used to remove the link from the content of the Rich Text Editor.
 
 ### Code View
 
-Text Editor includes the ability for users to directly edit HTML code via `Source Code` in the text area. If you made any modifications in the Source view directly, the changes will be reflected in the Text Editor’s content.
+The Text Editor includes the ability for users to directly edit HTML code via the `Source Code` in the text area. If you make any modifications in the Source view directly, the changes will be reflected in the Text Editor’s content.
 
-Click the `Source Code ` ![text_sourceCode](/static/assets/visualizing-data/visualization-widgets/images/text/text-sourcecode.png) icon on the toolbar to switch code view as shown in below,
+Click the `Source Code` ![text_sourceCode](/static/assets/visualizing-data/visualization-widgets/images/text/text-sourcecode.png) icon on the toolbar to switch to code view.
 
 ![text_sampleSourceView](/static/assets/visualizing-data/visualization-widgets/images/text/text-samplesource-view.png)
 
@@ -267,7 +267,7 @@ Clicking the `preview` icon will switch to the editor view.
 
 #### IFrame
 
-The code view allows you to pass `<iframe>` tag to embed external web page as below,
+The code view allows you to pass `<iframe>` tag to embed an external web page as shown below.
 
 ![text-iframeCode](/static/assets/visualizing-data/visualization-widgets/images/text/text-framecode.png)
 
@@ -275,7 +275,7 @@ The code view allows you to pass `<iframe>` tag to embed external web page as be
 
 ### Undo/Redo Manager
  
-Undo and redo tools allow you to edit the text by disregard/cancel the recently made changes and restore it to previous state. It is a useful tool to restore the performed action which got changed by mistake. By default, upto 30 actions can be undo/redo in the editor.
+The Undo and Redo tools allow you to edit the text by disregarding/canceling the recently made changes and restoring it to the previous state. It is a useful tool to restore the action performed by mistake. By default, up to 30 actions can be undone/redone in the editor.
 
 To undo and redo operations, do one of the following:
 

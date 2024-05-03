@@ -11,33 +11,33 @@ documentation: ug
 
 # Configuring Radial Gauge
 
-`Radial Gauge` allows you measure the processing efficiency through the key performance indicator (KPI) like value and goal.
+`Radial Gauge` allows you to measure processing efficiency through key performance indicators (KPIs) such as value and goal.
 
 ![Radial gauge](/static/assets/visualizing-data/visualization-widgets/images/radial-gauge/radialgauge.png)
 
 ## How to configure data to Radial Gauge
 
-`Radial Gauge` needs one actual value and/or one target value as minimum requirement to showcase.
+`Radial Gauge` requires at least one actual value and/or one target value to display.
 
-Follow these steps to configure data to the Radial Gauge:
+Follow these steps to configure data for the Radial Gauge:
 
-1. Drag the Radial Gauge into the canvas and resize it to your required size.
+1. Drag the Radial Gauge onto the canvas and adjust its size as needed.
 
 ![Drag and drop](/static/assets/visualizing-data/visualization-widgets/images/radial-gauge/drop-widget.png)
 
-2. Click the `Data Source` button in the configuration panel.
+2. Click on the `Data Source` button in the configuration panel.
 
 ![Data source panel click](/static/assets/visualizing-data/visualization-widgets/images/databutton.png)
 
-3. Click `CREATE NEW` to launch a new connection from the connection type panel.
+3. Click on `CREATE NEW` to establish a new connection from the connection type panel.
 
 ![Create new click](/static/assets/visualizing-data/visualization-widgets/images/datasourcebutton.png)
 
-4.  In the `DATA SOURCES` panel, click any one of the listed connection type buttons as shown in the following. Here, the `Microsoft Excel` type is selected for demonstration.
+4. In the `DATA SOURCES` panel, select one of the listed connection type buttons. For this demonstration, the `Microsoft Excel` type is chosen.
 
 ![Excel connection type](/static/assets/visualizing-data/visualization-widgets/images/datasourcelist.png)
 
-5.  In the `NEW DATA SOURCE` configuration panel, enter the name and choose the file path, and then click `Preview & Connect.`
+5.  In the `NEW DATA SOURCE` configuration panel, enter the name, choose the file path, and then click `Preview & Connect`.
 
 ![Select file path](/static/assets/visualizing-data/visualization-widgets/images/connectbutton.png)
 
@@ -61,7 +61,7 @@ Follow these steps to configure data to the Radial Gauge:
 
 ### Actual Value
 
-Bind column by dragging any field from any section to `Actual Value.`
+Bind the column by dragging any field from any section to the `Actual Value`.
 
 ![Actual Value](/static/assets/visualizing-data/visualization-widgets/images/radial-gauge/actualvalue.png)
 
@@ -107,13 +107,13 @@ Drag any field from the Dimensions section to `Series.`
 
 ### Settings 
 
-You can apply the `Sort` and `Filter` options for the Series field, if required from the `settings` menu.
+You can apply the `Sort` and `Filter` options for the Series field if required from the `settings` menu.
 
 ![Settings menu options](/static/assets/visualizing-data/visualization-widgets/images/radial-gauge/sorting-settings.png)
 
-**Sorting**: You can customize the sorting behavior of dimension fields in the Radial Gauge widget. You can order them based on alphabet or value, data source (default), or field. Refer to this [link](/visualizing-data/working-with-widgets/advanced-sorting/) for the detailed steps.
+**Sorting**: You can customize the sorting behavior of dimension fields in the Radial Gauge widget. You can order them based on alphabet or value, data source (default), or field. Refer to this [link](/visualizing-data/working-with-widgets/advanced-sorting/) for detailed steps.
 
-**Filtering**: You can use the “Filter” option to filter the data by specifying the filter condition. Refer to the detailed steps on applying measure filter from this [page](/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column).
+**Filtering**: You can use the `Filter` option to filter the data by specifying the filter condition. Refer to the detailed steps on applying measure filter from this [page](/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column).
 
 ### Minimum Value
 
@@ -125,7 +125,7 @@ Drag any field from the Measures section to `Minimum Value.` If the minimum valu
 
 ### Maximum Value
 
-Drag any field from the Measures section to `Maximum Value.` If the maximum value is configured, it will act as the end range for the gauge widget.
+Drag any field from the Measures section to the `Maximum Value`. If the maximum value is configured, it will act as the end range for the gauge widget.
 
 ![Maximum Value](/static/assets/visualizing-data/visualization-widgets/images/radial-gauge/maximumvalue.png)
 
@@ -133,11 +133,11 @@ Drag any field from the Measures section to `Maximum Value.` If the maximum valu
 
 ## Hidden Column
 
-Hidden columns are useful in cases where we don't want the fields to take part in the visualization, but only to be used for [linking](#linking), [filtering](#filtering) and [view data](#view-data). 
+Hidden columns are useful in cases where we don’t want the fields to take part in the visualization, but only to be used for [linking](#linking), [filtering](#filtering) and [view data](#view-data). 
 
 ![Hidden column](/static/assets/visualizing-data/visualization-widgets/images/radial-gauge/assigndata.png)
 
-In the case of dimension fields we will having the following options only. In Date fields we will having all available types except sorting, relative date filter, settings and filters.
+In the case of dimension fields, we will have the following options only. In Date fields, we will have all available types except sorting, relative date filter, settings, and filters.
 
 ![Measure](/static/assets/visualizing-data/visualization-widgets/images/radial-gauge/measure.png)
 
@@ -147,47 +147,47 @@ In the case of dimension fields we will having the following options only. In D
 
 #### Linking
 
-The primary use case of the hidden columns is linking. On configuring hidden columns, we can see below that the fields configured in hidden columns are listed in the linking section.  On configuring the column in linking we can pass the corresponding column value in linking parameter.
+The primary use case of hidden columns is linking. When configuring hidden columns, the fields configured are listed in the linking section. By configuring the column in linking, we can pass the corresponding column value in the linking parameter.
 
-**Measure Based Example:** If we wish to pass the number of Matches played as an URL parameter but do not want it to influence the visualization, we can configure the Matches in the hidden columns and incorporate them into the link.
+**Measure Based Example:** If we wish to pass the number of Matches played as a URL parameter but do not want it to influence the visualization, we can configure Matches in the hidden columns and incorporate them into the link.
 
 ![Linking](/static/assets/visualizing-data/visualization-widgets/images/radial-gauge/link-measure.png)
 
-**Dimension Based Example:** If we wish to pass the number of Team Name played as an URL parameter but do not want it to influence the visualization, we can configure  the Team Name in the hidden columns and incorporate them into the link.
+**Dimension Based Example:** If we wish to pass the Team Name as a URL parameter but do not want it to influence the visualization, we can configure the Team Name in the hidden columns and incorporate it into the link.
 
 ![Linking](/static/assets/visualizing-data/visualization-widgets/images/radial-gauge/link-dimension.png)
 
 #### Filtering
 
-You can use hidden columns to filter data in the visualizations. Configure hidden columns and click the below filter icon.
+Hidden columns can be used to filter data in the visualizations. Configure hidden columns and click on the filter icon.
 
 ![Filtering](/static/assets/visualizing-data/visualization-widgets/images/radial-gauge/filtericon.png)
 
-Click the Custom button highlighted in the filter configuration dialog image below. It will list all the fields configured in the widget. Keep the field configured in the hidden column and remove the other fields, then click the Update button.
+Click the Custom button highlighted in the filter configuration dialog image to list all the fields configured in the widget. Keep the field configured in the hidden column and remove the other fields, then click the Update button.
 
 ![Filtering](/static/assets/visualizing-data/visualization-widgets/images/radial-gauge/custom.png)
 
-Now, we can see in the below image, the data is filtered based on the hidden column field instead of the actual column that we bound in the widget. 
+Now, in the image below, the data is filtered based on the hidden column field instead of the actual column bound in the widget.
 
 ![Filtering](/static/assets/visualizing-data/visualization-widgets/images/radial-gauge/hidden-column-filter.png)
 
-For more details about filtering the widget data, refer to the [Filter Configuration documentation](/working-with-dashboards/configuring-dashboard-filters/)
+To learn more about filtering the widget data, refer to the [Cross Filter Configuration documentation](/working-with-dashboards/configuring-cross-filters/).
 
 #### View Data
 
-You can view the data in the hidden columns in the underlying data view. This is useful for checking the data in more detail and can help you to identify any issues with the data.
+You can view the data in the hidden columns in the underlying data view. This is useful for checking the data in more detail and can help you identify any issues with the data.
 
 ![View data](/static/assets/visualizing-data/visualization-widgets/images/radial-gauge/viewdata.png)
 
-> **NOTE:** We don't recommend to configure lower hierarchy data in hidden columns as we can see in the info icon in `Hidden Column` section denotes the same. 
+> **NOTE:** We do not recommend configuring lower hierarchy data in hidden columns, as indicated by the info icon in the `Hidden Column` section.
 
 ![Hidden Column ](/static/assets/visualizing-data/visualization-widgets/images/radial-gauge/info-icon.png)
 
-The below gauge displays the goals and Attempts On Target by each team without hidden columns.
+The gauge below displays the goals and attempts on target by each team without any hidden columns.
 
 ![Before](/static/assets/visualizing-data/visualization-widgets/images/radial-gauge/before.png)
 
-If we configure lower hierarchy data(Player Name) in hidden columns, incorrect data is being displayed on the gauge.
+If we configure lower hierarchy data (Player Name) in hidden columns, incorrect data will be displayed on the gauge.
 
 ![After](/static/assets/visualizing-data/visualization-widgets/images/radial-gauge/after.png)
 
@@ -195,13 +195,13 @@ If we configure lower hierarchy data(Player Name) in hidden columns, incorrect d
 
 You can format the Radial Gauge for better illustration of the view through the settings available in the Properties tab.
 
-To format the Radial Gauge, follow the given steps:
+To format the Radial Gauge, follow these steps:
 
-1.	Drag the Radial Gauge into the canvas and resize it to your required size.
+1.	Drag the Radial Gauge onto the canvas and resize it to your required size.
 
-2.	Configure data into the Radial Gauge.
+2.	Configure the data into the Radial Gauge.
 
-3.	Focus the Radial Gauge and click the `settings` icon.
+3.	Focus on the Radial Gauge and click the `settings` icon.
 
 ![Settings menu click](/static/assets/visualizing-data/visualization-widgets/images/radial-gauge/settings-menu-click.png)
 
@@ -211,19 +211,19 @@ To format the Radial Gauge, follow the given steps:
 
 #### Name
 
-This option allows you change the `title` for the Radial Gauge.
+This option allows you to change the `title` for the Radial Gauge.
 
 ![General Settings](/static/assets/visualizing-data/visualization-widgets/images/radial-gauge/Name.png)
 
 #### Subtitle
 
-Allows you provide `subtitle` for the Radial Gauge.
+Allows you to provide a `subtitle` for the Radial Gauge.
 
 ![General Settings](/static/assets/visualizing-data/visualization-widgets/images/radial-gauge/subtitle.png)
 
 #### Description
 
-Allows you provide `description` about the Radial Gauge.
+Allows you to provide a `description` about the Radial Gauge.
 
 ![General Settings](/static/assets/visualizing-data/visualization-widgets/images/radial-gauge/Description.png)
 
@@ -239,9 +239,9 @@ This option allows you to toggle the visibility of tooltip in the radial gauge.
 
 #### Gauge Type
 
-Allows you to switch the widget view from the Half Circle type to Horse Shoe type or Full circular gauge or vice versa. The default type is `Horse Shoe.`
+Allows you to switch the widget view from the Half Circle type to Horse Shoe type or Full circular gauge, or vice versa. The default type is `Horse Shoe`.
 
-> **Note:** If you change gauge type to `Full circle`, **Color settings** or **Range settings** categories will be hidden. In the `Pointer settings` category, **Value Pointer**, **Target Pointer** and **Target Color** properties will be hidden, and in `Scale settings` category, **Show ticks**, **Show label** and their dependent properties will be hidden. The `Size` option will be shown, which is used to customize the font size of the difference value.
+> **Note:** If you change the gauge type to `Full circle`, the **Color settings** or **Range settings** categories will be hidden. In the Pointer settings category, the **Value Pointer**, **Target Pointer**, and **Target Color** properties will be hidden, and in the `Scale settings` category, **Show ticks**, **Show label**, and their dependent properties will be hidden. The `Size` option will be shown, which is used to customize the font size of the difference value.
 
 #### Half Circular Gauge
 
@@ -249,16 +249,16 @@ Allows you to switch the widget view from the Half Circle type to Horse Shoe typ
 
 ### Full circular Gauge
 
-You can change the type `Full Circle` to show a full circular gauge. If you change, the gauge will render like this. For full circular type, the difference value will not be shown, only the percentage of the difference value will be shown.
+You can change the type to `Full Circle` to display a full circular gauge. If changed, the gauge will render like this. For the full circular type, the difference value will not be shown; only the percentage of the difference value will be displayed.
 
 ![Full Circular Gauge](/static/assets/visualizing-data/visualization-widgets/images/radial-gauge/fullcirculargauge.png)
 
-For full circular gauge, some of the categories in property panel get hidden. If properties are applied before changing their type, which is not unnecessary to the full circular gauge, it will be reverted. Here, is the list of categories that do not support for full circular gauge.
+For the full circular gauge, some categories in the property panel will be hidden. If properties are applied before changing their type, which is unnecessary for the full circular gauge, they will be reverted. Here is a list of categories that do not support the full circular gauge:
 
 - Color Settings
 - Range Settings
 
-In property panel, two more properties(Difference value color and size) shown in the `Basic Settings` for full circular gauge.
+In the property panel, two additional properties (Difference value color and size) are shown in the `Basic Settings` for the full circular gauge:
 
 **Difference value color**
 
@@ -266,29 +266,29 @@ You can apply color for difference value of the gauge.
 
 **Difference value size**
 
-This allows you to change size of difference value. The default value of this property is 15. You can change its size between 12 and 55.
+Change the size of the difference value. The default value is 15, and it can be changed between 12 and 55.
 
 #### Minimum Value
 
-Allows you to change the minimum value of the gauge. This option will be in a disabled state when you configure the column to start value in the data configuration panel.
+Change the minimum value of the gauge. This option will be disabled when configuring the column to start value in the data configuration panel.
 
 #### Maximum Value
 
-Allows you to change the maximum value of the gauge. This option will be in a disabled state when you configure the column to end value in the data configuration panel.
+Change the maximum value of the gauge. This option will be disabled when configuring the column to end value in the data configuration panel.
 
 #### Enable Animation
 
-You can enable the animation for gauge by setting this property to true. The default value of this property is false.
+Enable the animation for the gauge by setting this property to true. The default value is false.
 
 #### Show Actual value
 
-Allows you to hide or show the actual value in gauge by disabling or enabling the option. The default value of this property is true.
+Hide or show the actual value in the gauge by disabling or enabling the option. The default value is true.
 
 ![Actual Value](/static/assets/visualizing-data/visualization-widgets/images/radial-gauge/actualvalue-set.png)
 
 #### Value Color 
 
-You can apply color for the Actual value displayed in the Radial Gauge. The default value is `#666666.`
+Apply a color for the actual value displayed in the Radial Gauge. The default value is `#666666`.
 
 ![Actual Value color](/static/assets/visualizing-data/visualization-widgets/images/radial-gauge/actualvalue-set-color.png)
 
@@ -306,13 +306,13 @@ You can apply color for the Radial Gauge labels. The default value is `#000000.`
 
 #### Show Difference Value
 
-When you bind both actual and target values in gauge, this option will be shown. This allows you to hide or show the difference value of actual and target value with its percentage value. The default value of this property is true.
+When binding both actual and target values in the gauge, this option will be shown. This allows you to hide or show the difference value of the actual and target value with its percentage value. The default value is true.
 
 ![Show Difference Value](/static/assets/visualizing-data/visualization-widgets/images/radial-gauge/show-difference-value.png)
 
 #### Title Color
 
-The Radial Gauge title color can be customized. The default value is #000000. This option will be disabled if the series is not configured in the Radial Gauge.
+Customize the Radial Gauge title color. The default value is #000000. This option will be disabled if the series is not configured in the Radial Gauge.
 
 ### Color Settings
 
@@ -320,9 +320,9 @@ The Radial Gauge title color can be customized. The default value is #000000. Th
 
 #### Direction
 
-You can set the value label status to High is Good or Low is Good. The default setting is High is Good. This option is enabled only when you configured the actual value and target value.
+Set the value label status to High is Good or Low is Good. The default setting is High is Good. This option is enabled only when configuring the actual value and target value.
 
-From the provided color pickers, you can customize the color values for the **High, Medium,** and **low** colors. 
+Customize the color values for the **High**, **Medium**, and **low** colors from the provided color pickers.
 
 ### Pointer Settings
 
@@ -330,19 +330,19 @@ From the provided color pickers, you can customize the color values for the **Hi
 
 **Needle Pointer Color**
 
-You can change the color of the needle pointer.
+Change the color of the needle pointer.
 
 **Needle Pointer Height**
 
-You can increase or decrease the height of the needle by changing the `Needle pointer height.`
+Increase or decrease the height of the needle by changing the `Needle pointer height.`
 
 **Target Pointer**
 
-You can change the pointer as **line, triangle** and **inverted triangle**.
+Change the pointer to a **line, triangle** and **inverted triangle**.
 
 **Target Color**
 
-You change change the color for the `target pointer`.
+Change the color for the `target pointer`.
 
 **Needle Pointer Customization**
 
@@ -350,7 +350,7 @@ You change change the color for the `target pointer`.
  
 ### Range with Needle
 
-This is used to display the actual value by coloring the region and set the needle pointer up to the actual value in Radial Gauge.
+Display the actual value by coloring the region and set the needle pointer up to the actual value in the Radial Gauge.
 
 ![Range Needle Pointer](/static/assets/visualizing-data/visualization-widgets/images/radial-gauge/rangeneedle-settings.png)
 
@@ -362,7 +362,7 @@ This is used to display the actual value by coloring the region and set the need
 
 #### Scale Color
 
-Allows you to set the color of the scale. The default value is `#e0e0e0.`
+Set the color of the scale. The default value is `#e0e0e0.`
 
 #### Show Ticks
 
@@ -370,38 +370,38 @@ Allows you displays the ticks for gauge scales. The default value is `false.` Th
 
 ![Scale Ticks](/static/assets/visualizing-data/visualization-widgets/images/radial-gauge/show-ticks.png)
 
-If you check the `Show Ticks` property, **Ticks Position**, **Ticks Height** and **Ticks Width** properties will be shown.
+If you check the `Show Ticks` property, the **Ticks Position**, **Ticks Height**, and **Ticks Width** properties will be shown.
 
 ![Scale Ticks](/static/assets/visualizing-data/visualization-widgets/images/radial-gauge/tick.png)
 
 #### Ticks Position
 
-You can change the tick’s position either at inside or `outside.` The default value is outside. This option is displayed only when the show ticks’ option is enabled.
+You can change the tick’s position to either inside or `outside`. The default value is outside. This option is displayed only when the Show Ticks option is enabled.
 
 #### Ticks Height
 
-Allows you to change the tick’s height. The minimum and maximum value of ticks’ height is 1 and 10 respectively and the default value is `5.` This option is displayed only when the Show Ticks option is enabled.
+Allows you to change the tick’s height. The minimum and maximum values of the tick’s height are 1 and 10 respectively, with the default value being `5`. This option is displayed only when the Show Ticks option is enabled.
 
 #### Ticks Width
 
-Allows you to change the tick’s width of the gauge. The minimum and maximum value of ticks’ width is 1 and 5 respectively and the default value is `1.` This option is displayed only when the Show Ticks option is enabled.
+Allows you to change the tick’s width of the gauge. The minimum and maximum values of the tick’s width are 1 and 5 respectively, with the default value being `1`. This option is displayed only when the Show Ticks option is enabled.
 
 #### Scale Width
 
-Allows you change the scale width of the gauge. The minimum and maximum values of gauge is 1 and 60 respectively and the default value is `40.`
+Allows you to change the scale width of the gauge. The minimum and maximum values of the gauge are 1 and 60 respectively, with the default value being `40`.
 
 #### Show Scale Label
 
-Allows you display the scale label of the gauge. The default value is `true.`
+Allows you to display the scale label of the gauge. The default value is `true`.
 
-By enabling this property, the **Scale label position** property will be shown.
+By enabling this property, the **Scale Label Position** property will be shown.
 
 ![Scale Ticks](/static/assets/visualizing-data/visualization-widgets/images/radial-gauge/scale.png)
 
 
 #### Scale Label Position
 
-Allows you change the scale label position. The default value is `outside.` This option will be disabled, if the gauge type is half circle and the Show Ticks is false.
+Allows you to change the scale label position. The default value is `outside`. This option will be disabled if the gauge type is half circle and the Show Ticks option is false.
 
 ### Range Settings
 
@@ -421,25 +421,25 @@ You can select a range to change its start, end, and color values.
 
 #### Start
 
-Allows you to set the start value of the selected range. This option is displayed only if the Show Range is true.
+Allows you to set the start value of the selected range. This option is displayed only if Show Range is true.
 
 #### End
 
-Allows you to set the end value of the selected range. This option is displayed only if the Show Range is true.
+Allows you to set the end value of the selected range. This option is displayed only if Show Range is true.
 
 #### Color
 
-Allows you to set the color of the selected range. This option is displayed only if the Show Range is true.
+Allows you to set the color of the selected range. This option is displayed only if Show Range is true.
 
 #### Value Color
-You can customize color for the Actual value displayed in the Radial Gauge by range color or default label color.
+You can customize the color for the Actual value displayed in the Radial Gauge by range color or default label color.
 
 #### Label Color
-You can customize color for the Radial Gauge labels with the range color or default color.
+You can customize the color for the Radial Gauge labels with the range color or default color.
 
 ### Link
 
-You can enable linking and configure to navigate to a general URL with or without parameters. For more details, refer to the [linking URLs](/visualizing-data/working-with-widgets/linking-urls-and-dashboards/).
+You can enable linking and configure it to navigate to a general URL with or without parameters. For more details, refer to the [linking URLs](/visualizing-data/working-with-widgets/linking-urls-and-dashboards/).
 
 ![Link](/static/assets/visualizing-data/visualization-widgets/images/radial-gauge/linking.png)
 
@@ -451,7 +451,7 @@ This section allows you to customize the font size of radial gauge elements.
 
 #### Auto font Size and font size
 
-By default, the 'Auto Font Size' property is enabled. Auto font size property used to set font size based on dashboard viewing client machine resolution. If the user wants to customize or set the fixed font size, then the user needs to disable auto font size and set the required font size.
+By default, the `Auto Font Size` property is enabled. The Auto font size property is used to set the font size based on the dashboard viewing client machine resolution. If the user wants to customize or set the fixed font size, then the user needs to disable auto font size and set the required font size.
 
 ### Widget with Auto Font Size
 
@@ -459,25 +459,25 @@ By default, the 'Auto Font Size' property is enabled. Auto font size property us
 
 ### Scale Label Font Size
 
-This option allows you to customize font size of scale labels. While `Auto Font Size` option is enabled, font size will be applied based on resolution.
+This option allows you to customize the font size of scale labels. While the `Auto Font Size` option is enabled, the font size will be applied based on resolution.
 
 ![Customized Scale Label Font Size](/static/assets/visualizing-data/visualization-widgets/images/radial-gauge/scale-fontsize.png)
 
 ### Actual Value Font Size
 
-This option allows you to customize font size of Actual Value. While `Auto Font Size` option is enabled, font size will be applied based on gauge size.
+This option allows you to customize the font size of the Actual Value. While the `Auto Font Size` option is enabled, the font size will be applied based on gauge size.
 
 ![Customized Actual Value Font Size](/static/assets/visualizing-data/visualization-widgets/images/radial-gauge/actualvaalue-fontsize.png)
 
 ### Difference Value Font Size
 
-This option allows you to customize font size of Actual Value. While `Auto Font Size` option is enabled, font size will be applied based on gauge size.
+This option allows you to customize the font size of the Actual Value. While the `Auto Font Size` option is enabled, the font size will be applied based on gauge size.
 
 ![Customized Difference Value Font Size](/static/assets/visualizing-data/visualization-widgets/images/radial-gauge/differencevalue-fontsize.png)
 
 ### Series Title Font Size
 
-This option allows you to customize font size of Series Title. While `Auto Font Size` option is enabled, font size will be applied based on resolution.
+This option allows you to customize the font size of the Series Title. While the `Auto Font Size` option is enabled, the font size will be applied based on resolution.
 
 ![Customized Series Title Font Size](/static/assets/visualizing-data/visualization-widgets/images/radial-gauge/seriestitle-fontsize.png)
 
@@ -487,23 +487,23 @@ This option allows you to customize font size of Series Title. While `Auto Font 
 
 #### Ignore filter actions
 
-This allows you to define the radial gauge widget to ignore responding filter actions applied on other widgets in the dashboard.
+This allows you to define the radial gauge widget to ignore responding filter actions applied to other widgets on the dashboard.
 
 #### Enable Hierarchical Filter
 
-The Radial Gauge widget can be set to act as a master widget by checking the `Act as Master Widget` option. The `Ignore Filter Actions` options enable the Radial gauge widget not to be filtered by any other master widgets during the interaction time in both preview and published modes. 
+The Radial Gauge widget can be set to act as a master widget by checking the `Act as Master Widget` option. The `Ignore Filter Actions` options enable the Radial gauge widget not to be filtered by any other master widgets during the interaction time in both preview and published modes.
 
-> The Act as Master Widget option will be enabled only when the Series section is configured.
+>**NOTE:** The Act as Master Widget option will be enabled only when the Series section is configured.
 
 ## How to apply advanced conditional formatting
 
-The color of various properties in the Radial gauge can be customized from the corresponding properties section as explained in the formatting section. This will apply the same color for all records. 
+The color of various properties in the Radial gauge can be customized from the corresponding properties section, as explained in the formatting section. This will apply the same color for all records.
 
-In case, if you have the requirement to highlight any data based on some conditions, you might be required to enable the advanced formatting option. 
+If you have the requirement to highlight any data based on certain conditions, you may need to enable the advanced formatting option.
 
 ### How to enable advanced formatting
 
-In the properties pane, enable the `Advanced Setting` option provided under the formatting section.
+In the properties pane, enable the `Advanced Setting` option provided under the formatting section. 
 
 ![Enable advance settings](/static/assets/visualizing-data/visualization-widgets/images/radial-gauge/enable-advance-settings.png)
 
@@ -513,9 +513,9 @@ Now, the Conditional Formatting dialog opens.
 
 #### Gradient based
 
-The `Gradient` color format requires the `Low` and `High` color values. The data will be compared with this range and the matching color will be applied to the `Range pointer` of the Gauge widget. 
+The `Gradient` color format requires the `Low` and `High` color values. The data will be compared within this range, and the matching color will be applied to the `Range pointer` of the Gauge widget.
 
-If any widget data is not present in the given limit, then the property panel’s range pointer color will be applied to the gauge widget. 
+If any widget data is not present within the given limit, then the property panel’s range pointer color will be applied to the gauge widget.
 
 After applying the gradient conditions
 
@@ -533,9 +533,9 @@ From the Conditional Formatting dialog, you can choose the `based-on field` and 
 
 You can add the required conditions instead of providing a simple range using the `rule` based conditional formatting.
 
-The based-on field and the summary type are customizable as in the gradient-conditional type. Also, you can choose the `Value type` (value/percentage) from the drop-down .
+The based-on field and the summary type are customizable as in the gradient-conditional type. Also, you can choose the `Value type` (value/percentage) from the drop-down.
 
-> **NOTE:** The percentage will be calculated by using the maximum value of the Based-on field. 
+> **NOTE:** The percentage will be calculated using the maximum value of the Based-on field.
 
 You can customize more than one property using the rule-based conditional formatting. 
 
@@ -545,11 +545,9 @@ You can customize more than one property using the rule-based conditional format
 4.	Target pointer color
 5.	Title color (Applicable only when the series is configured.)
 
-> **NOTE:**  If the condition is matched, the colors will be applied accordingly for the corresponding properties. 
-> **NOTE:** 
-> **NOTE:**  If the condition is not met, the property panel color will be applied. 
-> **NOTE:** 
-> **NOTE:**  If more than one condition is matched, the last applied condition will be applied. 
+> **NOTE:**  If the condition is met, the colors will be applied accordingly for the corresponding properties.
+> **NOTE:**  If the condition is not met, the property panel color will be applied.
+> **NOTE:**  If more than one condition is met, the last applied condition will be used.
 
 ![Rule dialog](/static/assets/visualizing-data/visualization-widgets/images/radial-gauge/ruledialog.png)
 
@@ -565,7 +563,7 @@ After applying the conditional formatting:
 
 #### Text condition
 
-You can also use the text-based matching for the configured series field as shown in the following screenshots. 
+You can also use text-based matching for the configured series field as shown in the screenshots. 
 
 ![Text condition](/static/assets/visualizing-data/visualization-widgets/images/radial-gauge/text-condition.png)
 
@@ -573,7 +571,7 @@ You can also use the text-based matching for the configured series field as show
 
 #### Condition Type
 
-You can choose from any one of the following types:
+You can choose from the following types:
 1. Starts with 
 2.	Ends with
 3.	Contains
@@ -596,7 +594,7 @@ Indicating whether the value is `case sensitive` or not.
 
 ### Title Alignment
 
-This allows you to handle the alignment of widget title to either **left, center, or right**.
+This allows you to handle the alignment of the widget title to either **left, center, or right**.
 
 ### Title Color
 
@@ -604,27 +602,27 @@ This allows you to apply the text `color` to the widget title.
 
 ### Title Auto Font Size
 
-On enabling Auto Font Size, the font size of the title will be adjusted automatically if the resolution of the screen varies.
+Enabling Auto Font Size will adjust the font size of the title automatically if the screen resolution varies.
 
 **Font Size**
 
-This allows you to apply the specified size of the font to the widget title if the **Title Auto Font Size** is disabled. Value can be between 10 and 44.
+This allows you to apply the specified font size to the widget title if **Title Auto Font Size** is disabled. The value can be between 10 and 44.
 
 ### Subtitle Auto Font Size
 
-On enabling Auto Font Size, the font size of the subtitle will be adjusted automatically if the resolution of the screen varies.
+Enabling Auto Font Size will adjust the font size of the subtitle automatically if the screen resolution varies.
 
 **Font Size**
 
-This allows you to apply the specified size of the font to the widget title if the **Subtitle Auto Font Size** is disabled. Value can be between 10 and 32.
+This allows you to apply the specified font size to the widget title if **Subtitle Auto Font Size** is disabled. The value can be between 10 and 32.
 
 ### Auto Padding
 
-On enabling Auto Padding, the padding of the widget container will be adjusted automatically if the size of the widget varies.
+Enabling Auto Padding will adjust the padding of the widget container automatically if the widget size varies.
 
 **Padding**
 
-This allows you to customize the padding of the widget container if the **Auto Padding** is disabled. Value can be between 0 and 25.
+This allows you to customize the padding of the widget container if **Auto Padding** is disabled. The value can be between 0 and 25.
 
 ### Show Border
 
@@ -632,11 +630,11 @@ This allows you to toggle the visibility of the `border` surrounding the widget.
 
 ### Corner Radius
 
-This allows you to apply the specified `radius` to the widget corners if the **Show Border** is enabled. Value can be between 0 and 10.
+This allows you to apply the specified `radius` to the widget corners if **Show Border** is enabled. The value can be between 0 and 10.
 
 ### Show Background Image
 
-This allows you to set the **background image** for the radial gauge widget.
+This allows you to set the **background color** for the radial gauge widget.
 
 ### Background Color
 
@@ -644,7 +642,7 @@ This allows you to set the **background color** to the radial gauge  widget.
 
 ### Transparency
 
-This property allows you to specifies the **transparency** for the `background color.`
+This property allows you to specify the **transparency** for the `background color`.
 
 ### Show Shadow
 

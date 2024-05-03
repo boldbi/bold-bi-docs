@@ -8,11 +8,11 @@ documentation: ug
 
 # jQuery conflict issue in embedding
 
-Bold BI Embedded has a known issue when the jQuery version reference is greater than the recommended version `(v1.10.2)`. You can resolve this by using the `jQuery.noConflict()` function to render the dashboard rendered with the jQuery `v1.10.2`.
+Bold BI Embedded has a known issue when the jQuery version reference is greater than the recommended version `(v1.10.2)`. This can be resolved by using the `jQuery.noConflict()` function to render the dashboard with jQuery `v1.10.2`.
 
 ## Follow these steps to resolve the `jQuery conflict` issue
 
-You have to use the following `jQuery.noConflict` function in your embed application instead of default reference mentioned on our Bold BI [help documentation](/getting-started/embedding-in-your-application/#how-to-use-bold-bi-wrapper-inside-your-html-page).
+You must use the `jQuery.noConflict` function in your embedded application instead of the default reference mentioned in our Bold BI [help documentation](/getting-started/embedding-in-your-application/#how-to-use-bold-bi-wrapper-inside-your-html-page).
 
 ```js
 <head> 

@@ -7,7 +7,7 @@ documentation: ug
 
 # How to do Bold BI offline deployment in Docker?
 
- Bold BI deployment in docker can also be done offline by manually importing the Bold BI image into the local docker and deploying it into the local docker. Follow the steps given in this topic to know how to deploy Bold BI offline in docker.
+ Bold BI deployment in Docker can also be done offline by manually importing the Bold BI image into the local Docker and deploying it. Follow the steps provided in this topic to learn how to deploy Bold BI offline in Docker.
 
 ## Steps to deploy offline Bold BI in docker 
 
@@ -25,16 +25,16 @@ documentation: ug
     docker images
     ~~~
 
-4. Now, you need to save the download image into a file using the <b>docker</b> save command:
+4. Now, you need to save the downloaded image into a file using the **docker** save command.
  
      ~~~
     docker save -o <output path and filename> <docker image name:tag>
     ~~~
     ` Example: docker save -o C:\User\Boldbi.tar syncfusion/boldbi:latest`
 
-    When the command is done, you should see a container file created at the path you specified.
+    When the command is finished, you should see a container file created at the path you specified.
 
-5. Now, you need to load the file using <b>docker load</b> command. 
+5. Now, you need to load the file using the **docker load** command. 
  
     ~~~
     docker load -i <path and filename>
@@ -47,8 +47,8 @@ documentation: ug
     docker images
     ~~~
 
-    Now the image is loaded on the <b>offline</b> machine.
-7. Run the command to run Bold BI on your machine.
+   Now, the image has been loaded onto the **offline** machine.
+7. Run the command to launch Bold BI on your machine.
      ~~~
      docker run --name boldbi -p 80:80 -d syncfusion/boldbi
      ~~~
@@ -57,6 +57,6 @@ documentation: ug
 
 ## Application Startup
 
-Configure the Bold BI On-Premise application start-up to use the application. Please refer to the following link for more details on configuring the application start-up:
+Configure the Bold BI On-Premise application start-up to utilize the application. Please refer to the following link for more details on configuring the application start-up:
 
 [Application Startup](/application-startup/)

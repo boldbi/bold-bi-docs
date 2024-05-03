@@ -18,7 +18,7 @@ This section contains guidelines on naming files, sections, documents and other 
 
   For example, `Migration Utility` support presents in both Cloud and Embedded BI Platform. So we need to add the `migration-utility` file in both platform folders(\docs\cloud-bi\migration-utility & \docs\embedded-bi\migration-utility). In this file, same details will be given. So need to add original file path in canonical tag like below in duplicated file.
 
-> **canonical:** "/cloud-bi/migration-utility/"
+> **canonical:** "/migration-utility/"
 
 ## Markdown Syntax Guideline
 * Follow the syntax mentioned in this [link](http://kramdown.gettalong.org/syntax.html) for most of the elements. There are some elements which need special styling or additional settings to do. Those have been described in the below topics.
@@ -38,7 +38,7 @@ This section contains guidelines on naming files, sections, documents and other 
 
 > **Syntax**: \[Link name](relative path "Tooltip text")
 
-> **Example**: \[Getting Started](/docs/cloud-bi/Getting-Started "Cloud BI Getting Started")
+> **Example**: \[Getting Started](/docs/Getting-Started "Getting Started")
 
 ### Table
 * Use the [Syntax](http://kramdown.gettalong.org/syntax.html#tables) for creating the tables.

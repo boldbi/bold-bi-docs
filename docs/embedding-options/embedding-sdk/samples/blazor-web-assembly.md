@@ -49,7 +49,7 @@ The sample has been provided in the following sections for `Blazor WebAssembly`,
        </tr>
        <tr>
           <td align="left">EmbedSecret</td>
-          <td align="left">Get your EmbedSecret key from the Embed tab by enabling the <code>Enable embed authentication</code> in the <a href='https://help.boldbi.com/embedded-bi/site-administration/embed-settings/'>Administration page</a> </td>
+          <td align="left">Get your EmbedSecret key from the Embed tab by enabling the <code>Enable embed authentication</code> in the <a href='/site-administration/embed-settings/'>Administration page</a> </td>
        </tr>
        <tr>
           <td align="left">Environment</td>
@@ -191,7 +191,7 @@ The sample has been provided in the following sections for `Blazor WebAssembly`,
 9. In the `Client project`, the following scripts and style sheets are mandatory to render the dashboard. Include the following code in your `\wwwroot\index.html` page of the `<head>` tag.
 
     ```js 
-    <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v7.6.12/boldbi-embed.js"></script>
+    <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v7.8.18/boldbi-embed.js"></script>
     ```
 
 10. Inside the `<body>` tag, create the DOM element with the id `dashboard` and implement a function to render the dashboard.

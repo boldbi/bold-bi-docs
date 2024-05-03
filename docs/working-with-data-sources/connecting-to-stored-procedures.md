@@ -9,7 +9,7 @@ documentation: ug
 
 # Connecting to Stored Procedures in SQL Server database
 
-The Bold BI allows you to use the stored procedure defined in the SQL Server database using the `Microsoft SQL` connection.
+Bold BI allows you to use the stored procedure defined in the SQL Server database using the `Microsoft SQL` connection.
 
 > **NOTE:** You can connect to a database hosted in the Microsoft SQL Server whose version should be 2012 or above.
 
@@ -26,17 +26,17 @@ Enable the Data Access for the stored procedure in SQL Server by executing the f
  
 `EXEC sp_serveroption 'SQLServerName', 'DATA ACCESS', TRUE`
 
-> **NOTE:** If you did not enable the Data Access in SQL Server, you cannot access the stored procedure with OpenQuery option in Bold BI.
+> **NOTE:** If you did not enable the Data Access in SQL Server, you cannot access the stored procedure with the OpenQuery option in Bold BI.
 
 ### Supported server
 
-This OpenQuery only supports the Microsoft SQL Server and Azure SQL Database (Managed Instance only). All other servers like Azure SQL Database, Azure SQL Data Warehouse (Azure Synapse Analytics), and Parallel Data Warehouse does not support this OpenQuery.
+This OpenQuery only supports the Microsoft SQL Server and Azure SQL Database (Managed Instance only). All other servers like Azure SQL Database, Azure SQL Data Warehouse (Azure Synapse Analytics), and Parallel Data Warehouse do not support this OpenQuery.
 
 ## Internal Cache
-In Internal Cache mode, Bold BI executes the stored procedure completely and moving the result into a temporary table. After that, Bold BI uses the created temporary table for every action execution in the stored procedure's data source.
+In Internal Cache mode, Bold BI executes the stored procedure completely and moves the result into a temporary table. After that, Bold BI uses the created temporary table for every action execution in the stored procedure's data source.
 
 ## Connecting to SQL Server database
-1. To connect the SQL Server database, refer to this link [Microsoft SQL](/working-with-data-sources/data-connectors/sql-data-source/).
+1. To connect to the SQL Server database, refer to this link [Microsoft SQL](/working-with-data-sources/data-connectors/sql-data-source/).
      
 2. If it succeeds, you can get into the data design view with the available stored procedure displayed on the left pane of the tree view. The available parameters can also be displayed while expanding the procedures.
 

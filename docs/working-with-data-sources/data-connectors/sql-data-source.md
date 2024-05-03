@@ -264,7 +264,7 @@ Here, you need to assign the `Current User Full Name` parameter to the `Name` co
 
 ![Name parameter](/static/assets/working-with-datasource/data-connectors/images/SQLDataSource/name-parameter.png#max-width=100%)
 
-You can refer to the <a href="https://help.boldbi.com/cloud-bi/working-with-dashboards/" target="_blank">documentation</a> to create a dashboard using Bold BI. Once the dashboard is created, you can preview the dashboard by clicking the `Preview` button.
+You can refer to the [documentation](/working-with-dashboards/) to create a dashboard using Bold BI. Once the dashboard is created, you can preview the dashboard by clicking the `Preview` button.
 
 **Dashboard preview for User 1:**
 
@@ -296,7 +296,7 @@ The following image shows the sample SQL query using the dashboard parameter in 
 
 ![Assigning dashboard parameter](/static/assets/working-with-datasource/data-connectors/images/SQLDataSource/assigning-parameter.png#max-width=100%)
 
-You can use [this documentation](https://help.boldbi.com/cloud-bi/working-with-dashboards/) to create a dashboard using Bold BI. Once the dashboard is created, you can preview the dashboard by clicking the `Preview` button. 
+You can use [this documentation](/working-with-dashboards/) to create a dashboard using Bold BI. Once the dashboard is created, you can preview the dashboard by clicking the `Preview` button. 
 
 You can also change the parameter value by clicking the `dashboard parameters` icon, as shown in the following image.
 
@@ -412,7 +412,7 @@ We have added support for **custom attributes and dashboard parameters** to the 
 
 Type while creating the data source needs to be sqlserver.
 
-<a href="https://help.boldbi.com/embedded-bi/rest-api-reference/v4.0/api-reference/" target="_blank">Rest API - v4.0</a>
+[Rest API - v4.0](/server-api-reference/v4.0/api-reference/)
 
 ### Modes
 

@@ -9,11 +9,11 @@ documentation: ug
 
 # How to allow users to create dashboards without modifying the existing data sources
 
-You can provide access to the specific users to create their dashboards without modifying the existing data sources.
+You can grant specific users access to create their own dashboards without altering the existing data sources.
 
 Please follow these steps:
 
-1. First of all, provide permission to the [user](/managing-resources/manage-permissions/#manage-permissions---users) with the required entity and access mode. To create a dashboard, you need to provide the `Create` permission for the user.
+1. First of all, grant the [user](/managing-resources/manage-permissions/#manage-permissions---users) permission with the necessary entity and access mode. In order to create a dashboard, you must provide the user with the `Create` permission.
 
 **Entity**: `All Dashboard`
 
@@ -21,7 +21,7 @@ Please follow these steps:
 
 ![Create All Dashboards Access](/static/assets/faq/images/create-all-dashboards.png#width=400px;height=200px)
 
-2. After this, provide access to a particular data source with the `Read` permission alone, so that the user can use the existing data source for dashboard creation without modifying it.
+2. Afterwards, grant access to a specific data source with only `Read` permission, allowing the user to utilize the data source for creating dashboards without making any modifications.
 
 **Entity**: `Specific Data source`
 

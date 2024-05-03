@@ -8,7 +8,7 @@ documentation: ug
 
 # How to apply filters for widgets using both initial rendering and on-demand in embedding
 
-In Javascript based embedding, we have added support for applying filters in specific widgets. This page will explain how to apply filters in multiple widgets based on different formats like string and date using the following two ways,
+In JavaScript-based embedding, we have added support for applying filters to specific widgets. This page will explain how to apply filters to multiple widgets based on different formats such as string and date using the following two methods:
 
 * Initial rendering
 * On-demand
@@ -17,13 +17,13 @@ In Javascript based embedding, we have added support for applying filters in spe
 
 1. Please [download](https://github.com/boldbi/samples/tree/master/Scenario%20Based%20Samples/Widget%20Filtering%20Sample) the ASP.NET Core sample for a better understanding of the widget filtering support.
 
-2. In the Bold BI Server, load the `Agent Activity Dashboard` from Sample Dashboards.
+2. In the Bold BI Server, load the `Agent Activity Dashboard` from the Sample Dashboards.
 
     ![LoadSampleDashboard](/static/assets/faq/images/load_sample_dashboard_inserver.png)
 
-3. By default, the `Agent Activity Dashboard` have one master widget(`Date`), for demonstration, we need to make the `Avg. Resolution Time by Event` as a master widget using [ActAsMasterWidget](/visualizing-data/visualization-widgets/bar-chart/#filter) property in widget settings. And also enabling [MultiSelect](/visualizing-data/visualization-widgets/list-box/#basic-settings) property in widget settings for filtering multiple values in a single widget.
+3. By default, the `Agent Activity Dashboard` has one master widget (`Date`). For demonstration purposes, we need to designate the `Avg. Resolution Time by Event` as a master widget by using the [ActAsMasterWidget](/visualizing-data/visualization-widgets/bar-chart/#filter) property in the widget settings. Additionally, we need to enable the [MultiSelect](/visualizing-data/visualization-widgets/list-box/#basic-settings) property in the widget settings to allow for filtering multiple values in a single widget.
 
-4. In the downloaded application, you can find the EmbedProperties class file in the Models folder. Provide your server details in the `EmbedProperties.cs`, where you should set the `Agent Activity Dashboard` path to the DashboardPath property as showcased in the below image.
+4. In the downloaded application, you can find the EmbedProperties class file in the Models folder. Provide your server details in the `EmbedProperties.cs` file, where you should set the `Agent Activity Dashboard` path to the DashboardPath property as shown in the image below.
 
     ![AddEmbedProperties](/static/assets/faq/images/embed_properties_widgetfilter.png)
 
@@ -61,7 +61,7 @@ In Javascript based embedding, we have added support for applying filters in spe
     </tbody>
     </table>
 
-5. After run the application, the specific widgets of the dashboard are filtered by default rendering like below.
+5. After running the application, the specific widgets on the dashboard are filtered by default rendering as shown below.
 
     ![WidgetFilterSample](/static/assets/faq/images/widget_filter_full_view_sample.png)
 
@@ -69,7 +69,7 @@ In Javascript based embedding, we have added support for applying filters in spe
 
 1. Before rendering the dashboard, we retrieved the widget collection details of that dashboard using REST API in the GetWidgets() method in this application. Please check this [link](/server-api-reference/v4.0/api-reference/#operation/Dashboards_GetWidgets) for more details.
 
-2. We could get the widget details by conditioning with specific widget names (`Avg. Resolution Time by Event` and `Date`) from the widget collections as below.
+2. We could retrieve the widget details by conditioning with specific widget names (such as `Average Resolution Time by Event` and `Date`) from the widget collections as shown below.
 
     ```js
     function ListWidgets(data) {
@@ -87,9 +87,9 @@ In Javascript based embedding, we have added support for applying filters in spe
     }
     ```
 
-3. For `initial rendering`, we could pass the specific widget id in [getWidgetInstance()](/embedding-options/embedding-sdk/embedding-api-reference/methods/#getwidgetinstance) to get the widget instance and respective filterValues in [setFilterParameters()](/embedding-options/embedding-sdk/embedding-api-reference/methods/#setfilterparameters) to filter the widgets with the filterValues in renderDashboard().
+3. For the `initial rendering`, we could pass the specific widget ID in [getWidgetInstance()](/embedding-options/embedding-sdk/embedding-api-reference/methods/#getwidgetinstance) to retrieve the widget instance and the corresponding filter values in [setFilterParameters()](/embedding-options/embedding-sdk/embedding-api-reference/methods/#setfilterparameters) to filter the widgets with the specified filter values in renderDashboard().
 
-4. The default string values `Agent_1`, `Agent_5`, `Agent_7`, and default date range of `1/1/2022`, `6/30/2022` are filtered in the `Avg. Resolution Time by Agent` and `Date` widgets, respectively.
+4. The default string values for `Agent_1`, `Agent_5`, and `Agent_7`, along with the default date range of `1/1/2022` to `6/30/2022`, are filtered in the `Avg. Resolution Time by Agent` and `Date` widgets, respectively.
    ```js
     function renderDashboard(dimensionWidgetId, dateWidgetId) {
         this.dashboard = BoldBI.create({
@@ -115,9 +115,9 @@ In Javascript based embedding, we have added support for applying filters in spe
 
     ![InitialRendering](/static/assets/faq/images/initial_action_widgetfilter.png)
 
-5. For the `on-demand` case, we could pass the specific widget id in [getWidgetInstance()](/embedding-options/embedding-sdk/embedding-api-reference/methods/#getwidgetinstance) to get the widget instance and pass the respective filter values in [setFilterParameters()](/embedding-options/embedding-sdk/embedding-api-reference/methods/#setfilterparameters) to set the filter values in the widget instance. Then call the `updateWidgetFilters()` method to reflect the applied filter values into the dashboard using the dashboard instance.
+5. For the `on-demand` case, we could pass the specific widget id in [getWidgetInstance()](/embedding-options/embedding-sdk/embedding-api-reference/methods/#getwidgetinstance) to retrieve the widget instance and pass the respective filter values in [setFilterParameters()](/embedding-options/embedding-sdk/embedding-api-reference/methods/#setfilterparameters) to set the filter values in the widget instance. Then, call the `updateWidgetFilters()` method to reflect the applied filter values in the dashboard using the dashboard instance.
 
-6. By clicking the `Apply Dimension Filters` button, the on-demand new filter values `Agent_4`, `Agent_6`, and `Agent_8` are applied to `Avg. Resolution Time by Agent` widget. The below ondemandDimensionFilters() method will be triggered for applying dimension filters.
+6. By clicking the `Apply Dimension Filters` button, the on-demand new filter values `Agent_4`, `Agent_6`, and `Agent_8` are applied to the `Avg. Resolution Time by Agent` widget. The ondemandDimensionFilters() method below will be triggered to apply the dimension filters.
 
     ```js
     function ondemandDimensionFilters() {
@@ -130,7 +130,7 @@ In Javascript based embedding, we have added support for applying filters in spe
 
     ![DimensionFilterApply](/static/assets/faq/images/applied_dimension_filters_ondemand.png)
 
-7. By clicking the Apply Date Filters button, the on-demand new date range of `7/1/2022` and `12/31/2022` are applied to the `Date` widget. The below ondemandDateFilters() method will be triggered for applying date filters.
+7. By clicking the Apply Date Filters button, the on-demand date range of `7/1/2022` to `12/31/2022` is applied to the `Date` widget. The ondemandDateFilters() method below will be triggered to apply the date filters.
 
     ```js
      function ondemandDateFilters() {

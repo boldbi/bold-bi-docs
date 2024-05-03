@@ -9,7 +9,7 @@ documentation: ug
 ---
 # How to configure combine widget 
 
-Combine widget allows you to add multiple widgets in one container.
+Combine widget allows you to add multiple widgets in one container. 
 
 ![Combine widgets](/static/assets/visualizing-data/visualization-widgets/images/combine-widgets/combine_widgets.png)
 

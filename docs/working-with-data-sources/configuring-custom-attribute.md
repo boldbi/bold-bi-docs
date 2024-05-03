@@ -11,76 +11,76 @@ keywords: Custom attribute, attribute, configure custom attribute
 
 # Configuring Custom Attribute
 
-Custom attribute is a piece of code that acts like a parameter, which is replaced anywhere in the query varied by the users. The attribute name is replaced by the code, which is saved for each user that makes the dashboard to get rendered based on it.
+A custom attribute is a piece of code that functions as a parameter and can be replaced by users in a query. The attribute name is replaced by the code, which is saved for each user and used to render the dashboard.
 
 ## Custom attribute hierarchy
 
-Custom attribute can be defined in three levels:
+Custom attributes can be defined at three levels:
 
 1.	User level
 2.	Group level
 3.	Site level
 
-The user level attribute has high priority than the other levels. The group and site level attribute can be override in the user level. Also, the site level attribute can be override by the group level attribute.
+The user level attribute takes precedence over the other levels. The group and site level attributes can be overridden at the user level. Additionally, the group level attribute can override the site level attribute.
 
 ## User level attribute
 
-This attribute can be set by the site admin for a user in the user management profile page. You can view the attributes inherited from the group and site level in the user’s attribute listing.
+This attribute can be set by the site admin for a user on the user management profile page. The user's attribute listing will display the attributes inherited from the group and site levels.
 
 ![User Level Add Custom Attribute Button](/static/assets/working-with-datasource/custom-attribute/images/custom-attribute-add-button-user-level.png)
 
 ## Group level attribute
 
-This attribute can be set by the site admin for a group in the group profile page. You can view the attributes inherited from the site level in the group’s attribute listing.
+This attribute can be set by the site admin for a group on the group profile page. The group's attribute listing will display the attributes inherited from the site level.
 
 ![Group Level Add Custom Attribute Button](/static/assets/working-with-datasource/custom-attribute/images/custom-attribute-add-button-group-level.png)
 
 ## Site level attribute
 
-This attribute can be set by the UMS admin for a site in the site details page.
+This attribute can be set by the UMS admin for a site on the site details page.
 
 ![Site Level Add Custom Attribute Button](/static/assets/working-with-datasource/custom-attribute/images/custom-attribute-add-button-tenant-level.png)
 
 ## Adding custom attribute
 
-Attributes are name-value pairs that are associated with users, groups, and the sites (tenants).
+Attributes are name-value pairs associated with users, groups, and sites (tenants).
 
 ![Custom Attribute Window](/static/assets/working-with-datasource/custom-attribute/images/add-custom-attribute.png#width=65%)
 
-Name – Name of the attribute.
+Name – The name of the attribute.
 
-Value – Value of the attribute.
+Value – The value of the attribute
 
-Description – Explaining the purpose for this attribute.
+Description – An explanation of the purpose of this attribute.
 
-Encrypt – Store it as encrypted one in database and the value will be shown as dots in the grid.
+Encrypt – Option to store the attribute as encrypted in the database, with the value displayed as dots in the grid.
 
 
 ## Applying custom attribute for different users
 
-Let us consider for the user **James** has the custom attribute value is configured as **Sectors IN ('Industrial', 'Traffic')** with the attribute name as **Sector**.
+Let's consider the user **James** with the custom attribute value configured as **Sectors IN ('Industrial', 'Traffic')** and the attribute name as **Sector**.
 
 ![Use custom attribute for user James](/static/assets/working-with-datasource/custom-attribute/images/custom-attribute-user-James.png#width=50%)
 
-For the user **Christ** , has the custom attribute value is configured as **Sectors IN ('Residential', 'Commercial')** with the attribute name as **Sector**.
+For the user **Christ**, the custom attribute value is configured as **Sectors IN ('Residential', 'Commercial')** with the attribute name as **Sector**.
 
 ![Use custom attribute for user Christ](/static/assets/working-with-datasource/custom-attribute/images/custom-attribute-user-Christ.png#width=50%)
 
 ## Uses of custom attribute
-The custom attribute can be used in the following areas:
+Custom attributes can be used in the following areas:
 
 1. Custom Query.
 2. Web Connection window.
 
 ### 1. Custom Query
-The custom attribute can be used in custom query by manually providing the required custom attribute name in code view using syntax.
+Custom attributes can be used in a custom query by manually providing the required custom attribute name in the code view using the syntax:
 
 Syntax: `${{:AttributeName}}`
 
 ![Use custom attribute in code view](/static/assets/working-with-datasource/custom-attribute/images/custom-attribute-in-code-view.png)
 
 
-Here, created a simple dashboard for **James**, the data is retrieved based on the condition for the column `Sectors` as given in the custom attribute **Sectors**.
+Here, a simple dashboard is created for **James**, and the data is retrieved based on the condition for the column `Sectors` as given in the custom attribute **Sectors**.
 
 ![Sample Dashboard for user James](/static/assets/working-with-datasource/custom-attribute/images/custom-attribute-sample-dashboard-James.png)
 
@@ -89,11 +89,11 @@ For **Christ**, the data is retrieved based on the condition for the column `Sec
 
 ![Sample Dashboard for user Christ](/static/assets/working-with-datasource/custom-attribute/images/custom-attribute-sample-dashboard-Christ.png)
 
->**Note**: Please refer to this [Datasource connector page](/working-with-data-sources/data-connectors/) to create a datasource using a **custom attribute**.
+>**Note**: Please refer to this [Datasource connector page](/working-with-data-sources/data-connectors/) for instructions on creating a datasource using a **custom attribute**.
 
 ### 2. Data source Connection window
 
-Utilize the custom attribute within the Data Source Connection interface to set up the Dynamic Connection String interface for the External API detailed as follows:
+Custom attributes can be utilized within the Data Source Connection interface to set up the Dynamic Connection String interface for the External API.
 
 ### SQL Data Sources Configuration
 Configure the following properties:
@@ -119,13 +119,11 @@ Configure the following properties:
 
 ![Dynamic connection](/static/assets/working-with-datasource/custom-attribute/images/dynamicconnection.png)
 
-We have implemented IntelliSense support for custom attributes, allowing users to type '$' within the
-All SQL data source properties to display the custom attributes.
+IntelliSense support has been implemented for custom attributes, allowing users to type '$' within the All SQL data source properties or web data source properties to display the custom attributes.
 
 ![Intellisense Support](/static/assets/working-with-datasource/custom-attribute/images/intellisense.png)
 
->**Note**
-Custom attribute support is not available for connections using SSH or SSL modes.
+>**Note** Custom attribute support is not available for connections using SSH or SSL modes.
 
 ### WEB DataSources
 Configure the following properties:
@@ -154,14 +152,13 @@ Configure the following properties:
 
 ![WebCustom](/static/assets/working-with-datasource/custom-attribute/images/webdsCustom.png#max-width=52%)
 
-We have implemented IntelliSense support for custom attributes, allowing users to type '$' within the
-web data source properties to display the custom attributes.
+IntelliSense support has been implemented for custom attributes, allowing users to type '$' within the web data source properties to display the custom attributes.
 
 ![Intellisense Support](/static/assets/working-with-datasource/custom-attribute/images/webintellisense.png)
 
->**Note** Custom attribute support has been incorporated for both internal and external site publishing of data sources. Additionally, we have enabled features for downloading and uploading.
+>**Note** Custom attribute support has been incorporated for both internal and external site publishing of data sources. Additional features for downloading and uploading have also been enabled.
 
-When uploading a dashboard to a different site with a custom attribute, ensure that you Create the same custom attribute name and its corresponding value.
+When uploading a dashboard to a different site with a custom attribute, ensure that you create the same custom attribute name and its corresponding value.
 
 Use the following syntax for the custom attribute.
 
@@ -169,7 +166,7 @@ Syntax: `${{:AttributeName}}`
 
 ![Use custom attribute in web connection](/static/assets/working-with-datasource/custom-attribute/images/set-custom-attribute.png#max-width=52%)
 
-When simple dashboard is created here, data is retrieved based on the condition for column `id` as given in the custom attribute sectors.
+When a simple dashboard is created, the data is retrieved based on the condition for the column `id` as given in the custom attribute sectors.
 
 ![Use custom attribute in widget](/static/assets/working-with-datasource/custom-attribute/images/widget-custom-attribute.PNG)
 

@@ -20,17 +20,18 @@ documentation: ug
     sudo yum install libgdiplus
     ~~~ 
 
-3. Check and install `Python 3.9` by executing the following command:
+3. If you want to install the ETL application with Bold BI, follow these steps. Otherwise, skip this step and proceed with step 4.
+    * Check and install `Python 3.9` by executing the following command:
 
-    ~~~shell
-    sudo dnf groupinstall 'development tools' && sudo dnf install wget openssl-devel bzip2-devel libffi-devel && sudo curl https://www.python.org/ftp/python/3.9.2/Python-3.9.2.tgz -O && sudo tar -xvf Python-3.9.2.tgz && cd Python-3.9.2 && sudo ./configure --enable-optimizations && sudo make install
-    ~~~
+        ~~~shell
+        sudo dnf groupinstall 'development tools' && sudo dnf install wget openssl-devel bzip2-devel libffi-devel && sudo curl https://www.python.org/ftp/python/3.9.2/Python-3.9.2.tgz -O && sudo tar -xvf Python-3.9.2.tgz && cd Python-3.9.2 && sudo ./configure --enable-optimizations && sudo make install
+        ~~~
 
-4. Install `python pip` and following pip packages by running the below command.
-	~~~shell
-   sudo yum -y install python3-pip && python3.9 -m pip install duckdb===0.9.2 dlt===0.4.2 pymysql pyodbc pg8000 poetry pandas===2.0.0 "dlt[parquet]" "dlt[filesystem]"
-	~~~
-6. Add an `openssl conf` path to the environment if does not exist:
+    * Install `python pip` and the following pip packages by running the following command.
+        ~~~shell
+        sudo yum -y install python3-pip && python3.9 -m pip install duckdb===0.9.2 dlt===0.4.2 pymysql pyodbc pg8000 poetry pandas===2.0.0 "dlt[parquet]" "dlt[filesystem]"
+       ~~~
+4. Add an `openssl conf` path to the environment if does not exist:
 
 	~~~shell
     export OPENSSL_CONF=/etc/ssl/

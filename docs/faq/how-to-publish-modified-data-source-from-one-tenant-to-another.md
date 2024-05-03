@@ -9,7 +9,7 @@ documentation: ug
 
 # How to publish modified data sources from one tenant to another
 
-To modify the connection string of the corresponding data source of a dashboard dynamically in the destination tenant using [Custom Attribute](/working-with-data-sources/configuring-custom-attribute/#site-level-attribute) support, create and save the required data source connection string details as custom attribute in both source and destination tenants with the same attribute key and use it in the dynamic connection string value of a corresponding data source in a dashboard of a source tenant.
+To dynamically modify the connection string of the corresponding data source of a dashboard in the destination tenant using [Custom Attribute](/working-with-data-sources/configuring-custom-attribute/#site-level-attribute) support, you need to create and save the necessary data source connection string details as a custom attribute in both the source and destination tenants. Make sure to use the same attribute key and then incorporate it into the dynamic connection string value of the corresponding data source in a dashboard of the source tenant.
 
 Find the list of connections with the connection string details as follows,
 
@@ -250,11 +250,11 @@ Follow these steps to publish the modified data sources from one tenant to anoth
 
    ![Custom Attribute of Source Tenant](/static/assets/faq/images/custom-attribute-of-source-tenant.png)
 
-2. Edit the dashboard's corresponding data source, enable the Dynamic Connection String option, and click on the Configure button. 
+2. Edit the corresponding data source of the dashboard, enable the Dynamic Connection String option, and then click on the Configure button. 
   
    ![Enable Dynamic Connection String](/static/assets/faq/images/enable-dynamic-connectionstring.png)
 
-3. In that pop-up window, choose the Custom Attribute option, enter the created custom attribute key (Name) in the text box, select the Configuration Mode as Both if needed, and save the configuration. Finally, save that data source. 
+3. In the pop-up window, select the Custom Attribute option, enter the custom attribute key (Name) in the text box, choose the Configuration Mode as Both if necessary, and save the configuration. Lastly, save the data source. 
 
    >**Note:** Refer to this [section](/embedding-options/iframe-embedding/dynamic-connection-string/#how-to-configure-the-api-details-for-a-data-source) to learn more details about the Configuration Mode of Dynamic Connection String.
 
@@ -264,26 +264,26 @@ Follow these steps to publish the modified data sources from one tenant to anoth
 
    ![Dashboard in Source Tenant](/static/assets/faq/images/dashboard-in-source-tenant.png) 
 
-4. Then create the Custom Attribute with the required connection string details in the destination tenant with the same attribute key (Name) used on the source tenant as shown in the following image. 
+4. Then, create the Custom Attribute in the destination tenant with the required connection string details using the same attribute key (Name) that was used in the source tenant, as shown in the following image.
 
    ![Custom Attribute of Target Tenant](/static/assets/faq/images/custom-attribute-of-target-tenant.png) 
 
-5. Now, publish the dashboard in the source tenant configured with the modified data source to the destination tenant using the Publish dashboard in the [internal site](/managing-resources/manage-dashboards/publish-dashboards/#internal-site) support. And we can ensure it by checking the status of the published dashboard by clicking on the `Publish` icon in left sidebar.
+5. Now, publish the dashboard in the source tenant that is configured with the modified data source to the destination tenant using the "Publish dashboard" feature in the [internal site](/managing-resources/manage-dashboards/publish-dashboards/#internal-site) support. We can ensure this by checking the status of the published dashboard by clicking on the `Publish` icon in the left sidebar.
   
    ![How to publish dashboard in Target Tenant](/static/assets/faq/images/publish-dashboard-in-target-tenant.png)
 
-   To `Synchronize` published dashboard to reflect dashboard changes in other sites, click `Synchronize` option then select `Yes` on the pop-window.
+  To `synchronize` the published dashboard to reflect dashboard changes on other sites, click the `Synchronize` option, and then select `Yes` on the pop-up window.
 
    ![Synchronize Option](/static/assets/faq/images/synchronize-option.png)
 
    ![Synchronize Pop-up Window](/static/assets/faq/images/synchronize-pop-up.png)
 
-   You will receive the following highlighted notification
+   You will receive the highlighted notification.
 
    ![Synchronization Notification](/static/assets/faq/images/synchronized-notification.png)
  
-6. Refresh the destination tenant and open the dashboard. Now, the dashboard will be rendered with the data of the connection string, which is added to the custom attribute of the tenant.
+6. Refresh the destination tenant and open the dashboard. The dashboard will now be rendered with the data from the connection string that has been added to the custom attribute of the tenant.
 
    ![Dashboard in Target Tenant](/static/assets/faq/images/dashboard-in-target-tenant.png)
 
->**NOTE:** The published dashboard will work properly only if the source site's data source schema matches the target site's schema.
+>**NOTE:** The published dashboard will only work properly if the data source schema of the source site matches the schema of the target site.

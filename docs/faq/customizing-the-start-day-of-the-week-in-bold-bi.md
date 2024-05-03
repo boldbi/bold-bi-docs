@@ -11,7 +11,7 @@ documentation: ug
 
 ## Introduction
 
-This guide outlines the steps required to customize the start day of the week in relative date filter, Expression and Widget Aggregation using the Data language option in the language settings
+This guide outlines the steps required to customize the start day of the week in the relative date filter, Expression, and Widget Aggregation using the Data language option in the language settings.
 
 ## Steps to Customize Start Day of Week
 
@@ -21,9 +21,9 @@ This guide outlines the steps required to customize the start day of the week in
 
 - Navigate to the site settings.
 
-- Select `English (United Kingdom)` for Monday or `English (United States)` for Sunday as the start day of the week.
-- Every language setting will reflect the cultural norm for the start day of the week.
-- Save the changes and refresh the application to apply the new language settings.
+- Choose `English (United Kingdom)` for Monday or `English (United States)` for Sunday as the start day of the week.
+- Every language setting will reflect the cultural norm for the starting day of the week.
+- Save the changes and refresh the application in order to apply the new language settings.
   
   ![Customize week start](/static/assets/faq/images/CWS-uk.png#max-width=100%)
 

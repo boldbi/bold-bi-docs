@@ -9,21 +9,25 @@ documentation: ug
 
 # Steps to embed Bold BI in your application
 
-Follow these steps to embed dashboard in your application
+Please follow these steps to embed the dashboard in your application.
 
-> **NOTE:** We do support scrollable dashboards while embedding in your application.
+> **NOTE:** We do support scrollable dashboards when they are embedded in your application.
+
+You may also watch the below video to learn more about embedding Bold BI dashboard in an ASP.NET Core application.<br/>
+
+<iframe class="helpsite-video-section" src="https://www.youtube.com/embed/OXISapzYAj8?start=379" frameborder="0" allowfullscreen></iframe>
 
 ## How to use Bold BI wrapper inside your html page
 
-1. In your .html page, you need to add the following Embed SDK URL in the head tag of your page.
+1. In your .html page, you need to add the following Embed SDK URL in the `head` tag of your page.
 
     ```js
     <head>  
-        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v7.6.12/boldbi-embed.js"></script>
+        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v7.8.18/boldbi-embed.js"></script>
     </head>
     ```
 
-2. In the body tag, you need to create the div element with your own id name. This element will be used for dashboard embedding.
+2. In the `body` tag, you need to create the `div` element with your own id name. This element will be used for dashboard embedding.
 
     ```js
     <body>
@@ -31,11 +35,11 @@ Follow these steps to embed dashboard in your application
     </body>
     ```
 
-    >**NOTE:** If you use hyphens in ID, your code may become more prone to errors and be harder to read while using Jquery. Instead, use underscores or camelCase if you are in control of the ID.
+  >**NOTE:** If you use hyphens in ID, your code may become more prone to errors and be harder to read while using Jquery. Instead, use underscores or camelCase if you are in control of the ID.
 
-3. In the body tag, you need to add the function to create BoldBI instance with following properties and call that function in the body using the `onload` attribute as follows. Also, call the `loadDashboard()` function.
+3. In the `body` tag, you need to add the function to create BoldBI instance with following properties and call that function in the body using the `onload` attribute as follows. Also, call the `loadDashboard()` function.
 
-    You can embed the dashboard using either the dashboard ID or dashboard path like in below samples.
+    You can embed the dashboard using either the dashboard ID or dashboard path, as shown in the samples below.
 
 ### Embed using dashboard ID
 
@@ -61,9 +65,9 @@ Follow these steps to embed dashboard in your application
             }
         </script>
     </body>
- ```  
+ ```
 
-> **NOTE:** By default, `BoldBI.Environment.Enterprise` is used for the Environment API member. For Cloud sites, you must set the Environment member value to `BoldBI.Environment.Cloud`.
+> **NOTE:** By default, `BoldBI.Environment.Enterprise` is used for the Environment API member. For Cloud sites, you must set the Environment member value to `BoldBI.Environment.Cloud`.  
 
 ### Embed using dashboard path
 
@@ -89,9 +93,9 @@ Follow these steps to embed dashboard in your application
             }
         </script>
     </body>
-  ```  
+  ```
 
-4. Refer the following table for value of the previous properties based on your application.  
+4. Please refer to the following table for the values of the previous properties based on your application.  
 
     <meta charset="utf-8"/>
     <table>
@@ -135,11 +139,11 @@ Follow these steps to embed dashboard in your application
     </tbody>
     </table>
 
-5. Copy the previous embedSample() function and paste in your page. You need to update your values to the properties.  
+5. Please copy the previous embedSample() function and paste it into your page. Make sure to update the values with the appropriate properties.  
 
-> **NOTE:**  The embedContainerId should be the same as your div element id value.
+> **NOTE:**  The embedContainerId should be the same as the value of your div element id.
 
-> **NOTE:**  For Bold BI **v5.2.48** or lower version, you must have add the following dependent scripts and also refer the below **Embed SDK URL** of respective Bold BI version.<br />
+> **NOTE:**  For Bold BI **v5.2.48** or lower versions, you must add the following dependent scripts and also refer to the **Embed SDK URL** of the respective Bold BI version below.<br />
 `https://cdn.boldbi.com/embedded-sdk/v5.2.48/embed-js.js`
 
 <meta charset="utf-8"/>
@@ -179,12 +183,12 @@ Follow these steps to embed dashboard in your application
 </code></td>
 </tr>
 <tr>            
-<td><code>v7.6.12(latest)</code></td>            
+<td><code>v7.8.18(latest)</code></td>
 <td><code>
 
 ```js
 <head> 
-    <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v7.6.12/boldbi-embed.js"></script>
+   <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v7.8.18/boldbi-embed.js"></script>
 </head>
 ```
 
@@ -195,7 +199,7 @@ Follow these steps to embed dashboard in your application
 
 ## How to embed the Multi-tabbed dashboard
 
-You can embed the multi-tabbed dashboard by using the dashboard ID or dashboard path which is similar to embedding a regular dashboard. Please refer to the following code sample for embedding a multi-tabbed dashboard
+To embed the multi-tabbed dashboard, you can use either the dashboard ID or the dashboard path, similar to embedding a regular dashboard. Please refer to the code sample below for embedding a multi-tabbed dashboard.
 
 ```js
 
@@ -222,11 +226,11 @@ You can embed the multi-tabbed dashboard by using the dashboard ID or dashboard 
 </body>
 ```  
 
-## How to implement the authorize server with user mail or user name
+## How to implement the authorize server with user email or user name
 
-1. You need to implement authorization end point in your application. This will act as the bridge between your application and Bold BI server and also you need to update the secure details like email and group based access. Learn more about authorize server [here](/security-configuration/authorize-server/).  
+1. You need to implement an authorization endpoint in your application. This will act as the bridge between your application and the Bold BI server. Additionally, you need to update the secure details, such as email and group-based access. To learn more about the authorization server, click [here](/security-configuration/authorize-server/).  
 
-2. To create authorization-server action method, copy the following snippet in your controller. You can use currently logged in user email at `user@domain.com` or user name at `username`, but this user should have access to the dashboard.   
+2. To create the authorization-server action method, copy the following snippet into your controller. You can use the currently logged-in user's email at `user@domain.com` or `username`, but this user should have access to the dashboard. 
 
     ```js  
     [HttpPost]
@@ -259,7 +263,7 @@ You can embed the multi-tabbed dashboard by using the dashboard ID or dashboard 
     }
     ```
 
-3. Add the GetSignatureUrl method, and this method would be called from the previous GetEmbedDetails action. Follow the next section to get EmbedSecret key from Bold BI application.
+3. Please add the GetSignatureUrl method, which will be called from the previous GetEmbedDetails action. Follow the next section to obtain the EmbedSecret key from the Bold BI application.
 
     ```js  
     public string GetSignatureUrl(string queryString)
@@ -277,11 +281,11 @@ You can embed the multi-tabbed dashboard by using the dashboard ID or dashboard 
     }
     ```
 
-## How to pass the Dashboard Parameter and URL Filter Parameter in the authorization end point dynamically
+## How to pass the Dashboard Parameter and URL Filter Parameter in the authorization endpoint dynamically
 
-In the authorization end point, you can pass the both type of filters(Dashboard Parameter/Filter Parameter) at the same time. 
+In the authorization endpoint, you can pass both types of filters (Dashboard Parameter/Filter Parameter) at the same time. 
 
-To pass filters to the `embed_datasource_filter` parameter in the authorization endpoint, refer to the following sample in C#(It differs based on your platform language). Here, we have to set both types of filters to the `embed_datasource_filter` property in the endpoint.
+To pass filters to the `embed_datasource_filter` parameter in the authorization endpoint, refer to the following sample in C# (it may differ based on your platform language). Here, we need to set both types of filters to the `embed_datasource_filter` property in the endpoint.
 
 ```js  
 [HttpPost]
@@ -311,11 +315,11 @@ public string GetEmbedDetails(string embedQuerString, string dashboardServerApiU
 }
 ```
 
-* The `Dashboard Parameter` filter must be started with a double ampersand `&&` in the endpoint. Refer to this [link](/working-with-data-sources/dashboard-parameter/configuring-dashboard-parameters/) for more details.   
+* The `Dashboard Parameter` filter must be started with a double ampersand `&&` in the endpoint. Please refer to this [link](/working-with-data-sources/dashboard-parameter/configuring-dashboard-parameters/) for more details.   
 
-* The `URL Parameter` filter must be started with a single ampersand `&` in the endpoint. Refer to this [link](/working-with-dashboards/preview-dashboard/urlparameters/) for more details.     
+* The `URL Parameter` filter must be started with a single ampersand `&` in the endpoint. Please refer to this [link](/working-with-dashboards/preview-dashboard/urlparameters/) for more details.     
 
-Refer to the following table for the value of the filter properties based on your filter.
+Please refer to the table below for the values of the filter properties related to your filter.
 
 <meta charset="utf-8"/>
 <table>
@@ -339,29 +343,29 @@ Refer to the following table for the value of the filter properties based on you
 </tbody>
 </table>
 
-> **NOTE:**  Filter value should be enclosed with square and curly brackets as mentioned above.
+> **NOTE:**  The filter value should be enclosed with square brackets and curly braces as mentioned above.
 
 ## How to get Embed Secret key from Bold BI application
 
-You can get your Embed Secret key from administrator setting section. Refer this [link](/site-administration/embed-settings/) for more details.
+You can obtain your Embed Secret key from the administrator's settings section. Please refer to this [link](/site-administration/embed-settings/) for further information.
 
 ## How to get common Embed Secret key from UMS
 
-If you are using multi-tenant Bold BI server sites and looking for embedding the Dashboard in your application, then we recommend using the common embed secret instead of the separate embed secret for each site. Refer to this [link](/site-administration/embed-settings/#get-common-embed-secret-code-from-ums) to get the common embed secret.
+If you are using multi-tenant Bold BI server sites and are looking to embed the Dashboard in your application, we recommend using the common embed secret instead of a separate embed secret for each site. You can refer to this [link](/site-administration/embed-settings/#get-common-embed-secret-code-from-ums) to obtain the common embed secret. 
 
 ## How to use Server URL for embedding the Bold BI in different scenarios
 
-Get the Server URL of the respective Bold BI tenant from the following UMS sites management page.
+To obtain the Server URL of the corresponding Bold BI tenant, refer to the UMS sites management page.
 
->**Note:** Site Management page is accessible only for the OnPremise or Enterprise deployment.
+>**Note:** The Site Management page is only accessible for OnPremise or Enterprise deployment.
 
-To open UMS page, open the OnPremise dashboard listing page, select the user profile in the side menu, then click the `Manage sites (Admin access)` option as follows.
+To open the UMS page, open the OnPremise dashboard listing page. From there, select the user profile in the side menu and click on the `Manage sites (Admin access)` option.
 
 ![GotoUMSPage](/static/assets/javascript/images/goto_ums_page.png)
 
 ![GetServerURL](/static/assets/javascript/images/get-server-url.png)
 
-Refer to the following table for using the server URL in different scenarios to embed the Bold BI.
+Please refer to the table below for instructions on how to use the server URL in various scenarios to embed Bold BI.
 
 ServerUrl - Combination of the `rootURL` and `siteIdentifier`.
 

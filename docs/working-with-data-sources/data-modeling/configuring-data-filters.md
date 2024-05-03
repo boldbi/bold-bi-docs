@@ -11,36 +11,36 @@ documentation: ug
 
 ## Configuring Data Filters
 
-  Data Filters can be configured to restrict records visibility based on defined criteria. The configuration can be done by adding and deleting a filter condition.
+  Data Filters can be configured to restrict record visibility based on defined criteria. The configuration can be done by adding and deleting a filter condition.
   
 ### Adding a filter condition
 
-   Click `Filters` option shown in the data design view window. Data filter window opens.
+   Click on the `Filters` option shown in the data design view window. The Data Filter window will open.
 
    ![Data filters](/static/assets/working-with-datasource/images/datafilters.png)
 
-   Add a filter condition through clicking the `Add` button in the `Query Filters` window.
+   Add a filter condition by clicking the `Add` button in the `Query Filters` window.
 
    ![Filters wizard](/static/assets/working-with-datasource/images/filterswizard.png)
 
-   Now, a filter condition will get added by default like below:
+   Now, a filter condition will be added by default as shown below:
 
    ![Filter condition](/static/assets/working-with-datasource/images/filtercondition.png)
    
-   You can filter values with or without `Null` by checking or unchecking the `Include Null` option. If you check this option, only `Equals` and `Does Not Equal` condition will be shown like below. Based on these conditions, you may filter values with or without `Null`.
+   You can filter values with or without `Null` by checking or unchecking the `Include Null` option. If you check this option, only `Equals` and `Does Not Equal` conditions will be shown. Based on these conditions, you may filter values with or without `Null`.
    
    ![Null values condition](/static/assets/working-with-datasource/images/nullvaluescondition.PNG)
    
-   Modify the condition as you require and define criteria. The condition can be defined based on two options.
+   Modify the condition as needed and define the criteria. The condition can be defined based on two options:
    1. Custom
    2. Parameters
 
 ### Custom
-   In the custom, filter the records based on the columns. Based on its data type, the parameters to define will differ.
+   In the custom option, filter the records based on the columns. The parameters to define will differ based on the data type.
 
    ![Condition based on column](/static/assets/working-with-datasource/images/conditionbasedoncolumn.png)
 
-   With the date time type or text type column like above, you may get a toggle button TOP ‘N’ at right, to enable the Top `N` filter to configure the field and the condition by which it has to be applied.
+   For columns like date time or text type, you may see a toggle button for TOP `N` on the right to enable the Top `N`filter and configure the field and condition.
 
    ![Select type](/static/assets/working-with-datasource/images/selecttype.PNG)
 
@@ -52,21 +52,21 @@ documentation: ug
    
    ![Example of Top N](/static/assets/working-with-datasource/images/exampledimensionwithtop.png)
 
-   For numeric type column, the parameters will be like below:
+   For numeric type columns, the parameters will be as shown below:
 
    ![Numeric type](/static/assets/working-with-datasource/images/numerictype.PNG)
 
    ![Select operators](/static/assets/working-with-datasource/images/selectoperators.PNG)
    
-   Below example shows data of freight whose values are greater than 500. 
+   The example below shows data of freight with values greater than 500. 
    
    ![Filter greater than](/static/assets/working-with-datasource/images/filtergreaterthan.png)
 
-   On clicking `OK` in above dialog, Data Preview grid will be like below,
+   Upon clicking `OK` in the dialog above, the Data Preview grid will appear as shown below.
 
    ![Column greater than 500](/static/assets/working-with-datasource/images/column-greater-than-500.png)
 
-   For date time type column, the parameters will be like below:
+   For date and time columns, the parameters will be as follows:
 
    ![Date time](/static/assets/working-with-datasource/images/datetimetypefilter.png)
 
@@ -76,7 +76,7 @@ documentation: ug
 
    ![Date time options](/static/assets/working-with-datasource/images/datetimeoptions.png)
    
-   Below example shows data within the applied date range.
+   The example below shows data within the specified date range.
    
    ![Example date time column](/static/assets/working-with-datasource/images/examplefordatetimecolumn.png)
 
@@ -84,36 +84,36 @@ documentation: ug
 
    ![Selected filters condition](/static/assets/working-with-datasource/images/selectedfilterscondition.PNG#max-width=100%)
 
-   > **NOTE:**  By default, AND operation will be handled in between two conditions. The operator can be changed to OR operation if needed.
+   > **NOTE:**  By default, the AND operation will be used between two conditions. The operator can be changed to OR if necessary. 
 
-   Click `OK` to save defined data filter conditions.
+   Click `OK` to save the defined data filter conditions.
 
-   Click `Close` or the Close icon at top right corner of the window to close the Filters window.
+   Click `Close` or the Close icon at the top right corner of the window to close the Filters window.
 
 #### Parameters
-Filter the records based on the dashboard parameter values. This lets you dynamically change the parameter values from both the view and preview modes.
+Filter the records based on the dashboard parameter values. This allows for dynamically changing the parameter values in both view and preview modes.
 
-   Click on the `Parameters` option as follows.
+   Click on the `Parameters` option as shown below.
 
    ![Parmeters Option](/static/assets/working-with-datasource/images/parameteroption.png)
 
-   Select the desired parameter lists from the following dropdown. The first parameter will be selected by default.
+   Select the desired parameter lists from the dropdown menu. The first parameter will be selected by default.
 
    ![Parmeters List](/static/assets/working-with-datasource/images/parameterlists.png)
 
-   The following example displays data where the selected table column is equal to the chosen dashboard parameter. To create parameters, follow the instructions provided in the [configuring dashboard parameters](/working-with-data-sources/dashboard-parameter/configuring-dashboard-parameters/)
+   The following example displays data where the selected table column is equal to the chosen dashboard parameter. To create parameters, follow the instructions provided in [configuring dashboard parameters](/working-with-data-sources/dashboard-parameter/configuring-dashboard-parameters/)
 
    ![Data Preview](/static/assets/working-with-datasource/images/datapreview.png)
 
-   For a date column with a date range type, it will show date format parameters only.
+   For a date column with a date range type, only date format parameters will be shown.
 
    ![Parameter Date filter](/static/assets/working-with-datasource/images/paramdatefilter.png)
 
-   > **NOTE:**  We have only provided support for dimensions, measures, and date columns with date range types.
+   > **NOTE:**  Support is only provided for dimensions, measures, and date columns with date range types.
 
 ### Deleting a filter condition
 
-   Remove a filter condition by clicking the highlighted icon at the right of the respective filter condition.
+   Remove a filter condition by clicking the highlighted icon on the right of the respective filter condition.
 
    ![Delete filter condition](/static/assets/working-with-datasource/images/deletefiltercondition.png)
 

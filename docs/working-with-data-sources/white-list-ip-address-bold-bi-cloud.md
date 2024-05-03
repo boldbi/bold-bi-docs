@@ -8,7 +8,7 @@ documentation: ug
 
 # White List IP addresses of the Bold BI cloud analytics server
 
-You should White list the following IP addresses of the Bold BI cloud servers and allow the database server to create the Datasource.
+You should white list the following IP addresses of the Bold BI cloud servers and allow the database server to create the datasource.
 
 `104.154.147.239`
 
@@ -31,5 +31,5 @@ You should White list the following IP addresses of the Bold BI cloud servers an
 `35.226.39.208`
 
 
-> **NOTE:** It is is not applicable to use in On-Premises Deployment.
+> **NOTE:** It is not applicable to use in On-Premises Deployment.
 

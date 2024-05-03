@@ -449,7 +449,7 @@
           "Tenants"
         ],
         "summary": "List Tenants",
-         "description": "List all the Bold BI and Bold Reports tenants available in the application. <br /><blockquote>URI Parameters</blockquote><ul><li><code>/v2.0/tenants</code> returns the first 25 tenants by default.</li><li><code>/v2.0/tenants?page_size=30</code> returns the first 30 tenants.</li><li><code>/v2.0/tenants?page=2&page_size=30</code> returns the 2nd group of 30 tenants.</li></ul>",
+        "description": "List all the Bold BI and Bold Reports tenants available in the application. <br /><code>/v2.0/tenants</code> returns the first 25 tenants by default.<br /><blockquote style='display: inline;'>Note:</blockquote>By default, this API endpoint returns a list of 25 tenants. You can get more records (up to 100 records at a time) by using the <code>page</code> and <code>page_size</code> URI parameters. For example, refer to the following URLs:<br /><ul><li><code>/v2.0/tenants?page_size=30</code> returns the first 30 tenants.</li><li><code>/v2.0/tenants?page=2&page_size=30</code> returns the second group of 30 tenants.</li></ul><br /><blockquote>URI Parameters</blockquote><ul><li><code>page_size</code> the number of tenants to be returned per page.</li><li><code>page</code> the page number.</li></ul>",
         "operationId": "list_tenant",
 		"parameters": [
           {
@@ -1293,7 +1293,7 @@
           },
           "UserName": {
             "type": "string",
-            "description": "Username of the database server.  <br /> <blockquote>Check the permission required for the database users [here](https://staginghelp.boldbi.com/embedded-bi/faq/what-are-the-database-permissions-required-to-set-up-bold-bi-embedded/)</blockquote>"
+            "description": "Username of the database server.  <br /> <blockquote>Check the permission required for the database users [here](/faq/what-are-the-database-permissions-required-to-set-up-bold-bi-embedded/)</blockquote>"
           },
           "Password": {
             "type": "string",
@@ -1342,7 +1342,7 @@
           },
           "UserName": {
             "type": "string",
-            "description": "Username of the database server.  <br /> <blockquote>Check the permission required for the database userss [here](https://staginghelp.boldbi.com/embedded-bi/faq/what-are-the-database-permissions-required-to-set-up-bold-bi-embedded/)</blockquote>"
+            "description": "Username of the database server.  <br /> <blockquote>Check the permission required for the database userss [here](/faq/what-are-the-database-permissions-required-to-set-up-bold-bi-embedded/)</blockquote>"
           },
           "Password": {
             "type": "string",
@@ -1399,7 +1399,7 @@
           },
           "UserName": {
             "type": "string",
-            "description": "Username of the database server.  <br /> <blockquote>Check the permission required for the database users [here](https://staginghelp.boldbi.com/embedded-bi/faq/what-are-the-database-permissions-required-to-set-up-bold-bi-embedded/)</blockquote>"
+            "description": "Username of the database server.  <br /> <blockquote>Check the permission required for the database users [here](/faq/what-are-the-database-permissions-required-to-set-up-bold-bi-embedded/)</blockquote>"
           },
           "Password": {
             "type": "string",

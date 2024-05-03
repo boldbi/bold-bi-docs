@@ -29,7 +29,7 @@
           "Authentication"
         ],
         "summary": "Authenticate Client",
-		"description": "For information on how to retrieve the client ID and secret for the REST API, please refer to [this](https://help.boldbi.com/embedded-bi/multi-tenancy/site-administration/api-keys/) documentation.",
+		"description": "For information on how to retrieve the client ID and secret for the REST API, please refer to [this](/multi-tenancy/site-administration/api-keys/) documentation.",
         "operationId": "client_authentication",
         "consumes" : [ "application/x-www-form-urlencoded" ],
         "parameters" : [ {
@@ -382,7 +382,7 @@
         },
         "UserName": {
           "type": "string",
-          "description": "Username of the database server.  <br /> <blockquote>Check the permission required for the database users [here](https://staginghelp.boldbi.com/embedded-bi/faq/what-are-the-database-permissions-required-to-set-up-bold-bi-embedded/)</blockquote>"
+          "description": "Username of the database server.  <br /> <blockquote>Check the permission required for the database users [here](/faq/what-are-the-database-permissions-required-to-set-up-bold-bi-embedded/)</blockquote>"
         },
         "Password": {
           "type": "string",
@@ -439,7 +439,7 @@
         },
         "UserName": {
           "type": "string",
-          "description": "Username of the database server.  <br /> <blockquote>Check the permission required for the database users [here](https://staginghelp.boldbi.com/embedded-bi/faq/what-are-the-database-permissions-required-to-set-up-bold-bi-embedded/)</blockquote>"
+          "description": "Username of the database server.  <br /> <blockquote>Check the permission required for the database users [here](/faq/what-are-the-database-permissions-required-to-set-up-bold-bi-embedded/)</blockquote>"
         },
         "Password": {
           "type": "string",

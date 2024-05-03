@@ -12,7 +12,7 @@ documentation: ug
 
 This section explains each available widget and its features in the Bold BI Enterprise.
 
-You can explore about visualizing widgets in detail here,
+You can explore the details of visualizing widgets here,
 
 [Visualization Widgets](/visualizing-data/visualization-widgets/)
 

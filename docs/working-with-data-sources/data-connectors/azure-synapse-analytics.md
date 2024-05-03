@@ -7,20 +7,20 @@ documentation: ug
 ---
  
 # Connecting Bold BI to Azure Synapse Analytics data source
-The Bold BI Dashboard Designer supports connecting Azure Synapse Analytics database using SQL Live Query (C# API).
+The Bold BI Dashboard Designer supports connecting to an Azure Synapse Analytics database using SQL Live Query (C# API).
 
 ## Choose Azure Synapse Analytics data source
 To configure the Azure Synapse Analytics data source, follow these steps: 
-1. Click **Data Sources** in the configuration panel to add a new data connection.
+1. Click on **Data Sources** in the configuration panel to add a new data connection.
 
    ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/common/DataSourcesIcon.png)
 
-2. Click **CREATE NEW** to launch a new connection from the connection panel.
+2. Click on **CREATE NEW** to launch a new connection from the connection panel.
 3. Select the **Azure Synapse Analytics** connection in the connection panel.
 
    ![Choose data source](/static/assets/working-with-datasource/data-connectors/images/AzureSynapseAnalytics/ChooseDS.png)
 
-> **NOTE:**  You can also create a data source from the home page by clicking the **Data Sources** menu from left menu panel and **Create Data Source** from the data sources page.
+> **NOTE:**  You can also create a data source from the home page by clicking on the **Data Sources** menu from the left menu panel and selecting **Create Data Source** from the data sources page.
 
    ![Choose data source from server](/static/assets/working-with-datasource/data-connectors/images/AzureSynapseAnalytics/ChooseDS_server.png)
 
@@ -31,7 +31,7 @@ After clicking a data source, the **NEW DATA SOURCE** configuration panel opens.
 2. Enter a valid server or host name in the **ServerName** text box.
 3. Enter a valid username in the **UserName** text box. 
 4. Enter a valid password in the **Password** text box.
-5. Select a database that you want to query in the listed database associated with the given Azure Synapse Analytics server in the database combo box.
+5. Select a database that you want to query from the listed databases associated with the Azure Synapse Analytics server in the database combo box.
 
    ![Azure Synapse Analytics Connection](/static/assets/working-with-datasource/data-connectors/images/AzureSynapseAnalytics/AzureSynapseAnalytics_Connection.png)
 
@@ -42,20 +42,20 @@ After clicking a data source, the **NEW DATA SOURCE** configuration panel opens.
 We have added support for **custom attributes and dashboard parameters** to the data source connection. You can connect to the data source using custom attributes or dashboard parameters.
 
 ### Data Preview
-1. Click **Connect** to connect the Azure Synapse Analytics server with configured details. 
-The schema represents the collection list retrieved from the Azure Synapse Analytics server. This dialog displays a list of schemas in treeview and their corresponding values.
+1. Click **Connect** to connect to the Azure Synapse Analytics server with the configured details.
+The schema represents the collection list retrieved from the Azure Synapse Analytics server. This dialog displays a list of schemas in a treeview and their corresponding values.
 
    ![Treeview schema](/static/assets/working-with-datasource/data-connectors/images/common/Treeview_schema.png)
 
-2. Now, the data design view page with the selected table schema opens. Drag the table.
+2. Now, the data design view page with the selected table schema opens. Drag the table onto the page.
 
    ![Query designer](/static/assets/working-with-datasource/data-connectors/images/common/QueryEditor_sql.png)
 
-    You can use  the Code View option for passing a query to display data.
+    You can use the "Code View" option to pass a query to display data.
 
    ![Codeview mode](/static/assets/working-with-datasource/data-connectors/images/common/CodeViewMode.png)
 
-3. Click **Save** to save the data source with a relevant name.
+3. Click **Save** to save the data source with a relevant name.
 
 ### Connect using custom attribute and dashboard parameter
 
@@ -69,7 +69,7 @@ We have added support for **custom attributes and dashboard parameters** to the 
 
 ![Dashboard Parameter](/static/assets/working-with-datasource/data-connectors/images/AzureSynapseAnalytics/Dashboardparameter.png)
 
->**Note:** Refer the [Dashboard Parameter Documentation](https://help.boldbi.com/working-with-data-sources/dashboard-parameter/) and [Custom Attributes Documentation](https://help.boldbi.com/working-with-data-sources/configuring-custom-attribute/) for more details.
+>**Note:** Refer to the [Dashboard Parameter Documentation](https://help.boldbi.com/working-with-data-sources/dashboard-parameter/) and [Custom Attributes Documentation](https://help.boldbi.com/working-with-data-sources/configuring-custom-attribute/) for more details.
 
 ## Connecting Bold BI to Azure Synapse Analytics Data Source via REST API
 
@@ -77,7 +77,7 @@ We have added support for **custom attributes and dashboard parameters** to the 
 
 Type while creating the data source needs to be azuresynapseanalytics.
 
-[Rest API - v4.0](https://help.boldbi.com/embedded-bi/rest-api-reference/v4.0/api-reference/)
+[Rest API - v4.0](/server-api-reference/v4.0/api-reference/)
 
 ### Parameters for creating Data Source
 
@@ -305,7 +305,7 @@ Type while creating the data source needs to be azuresynapseanalytics.
 
 ### Parameters for editing Data Source
 
-> **NOTE:**  For editing Data Source via API. All the parameters are optional. The parameter which needs to be changed can be provided.
+> **NOTE:**  To edit the data source via API, all parameters are optional. Only the parameter that needs to be changed should be provided.
 
 #### Parameters for modifying expressions when editing Data Source
    
@@ -468,7 +468,7 @@ Type while creating the data source needs to be azuresynapseanalytics.
 
 ```
 
-> **NOTE:**  Through Rest API, the data source can be created or edited with only one table. If different table is provided in edit data source, the table will be replaced. The widgets will be retained only if the schema is same as the previous table.
+> **NOTE:**  Through the REST API, the data source can be created or edited with only one table. If a different table is provided in editing the data source, the table will be replaced. The widgets will be retained only if the schema is the same as the previous table.
 
 ### Connection Sample for Code View Mode
 

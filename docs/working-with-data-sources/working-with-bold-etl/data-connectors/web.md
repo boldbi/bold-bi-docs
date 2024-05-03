@@ -24,7 +24,10 @@ In a YAML file, the `config` section contains the following properties:
 url: URL
 username: Username
 password: Password
+type: HHTP method either GET/POST
 headers: Header parameters
+params: Query Paramaeter value
+data: Data value 
 ```
 
 
@@ -39,10 +42,10 @@ plugins:
       #Json Response only supported
       connectorname: Web
       config:
-        url: 
+        url: url
         # Basic Authentication
         username: username 
         password: password
-        # Headers should be in json format => headers: { "ContentType": "application/json", "x-api-key": "somevalue" } 
-        headers:
+        type: get 
+        headers: { 'ContentType': 'application/json' } 
 ```

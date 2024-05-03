@@ -9,23 +9,23 @@ documentation: ug
 
 # How to convert a timestamp column from one timezone to another in the PostgreSQL data source
 
-Bold BI application allows you to convert the timestamp column in the PostgreSQL data source from one time zone to another.
+The Bold BI application allows you to convert the timestamp column in the PostgreSQL data source from one time zone to another.
 
 ## Steps to convert timestamp column to another time zone
 
-1.	Refer to the [Connecting Bold BI to PostgreSQL data source documentation](/working-with-data-sources/data-connectors/postgresql/) to successfully connect to it.
+1.	Refer to the [Connecting Bold BI to PostgreSQL data source documentation](/working-with-data-sources/data-connectors/postgresql/) for successful connection.
 
-2.	Drag and drop the table from the table schema in the data design view page.
+2.	Drag and drop the table from the table schema onto the data design view page.
 
     ![Drag table](/static/assets/faq/images/drag-timestamp-table.png)
 
-3.	Click on the `Expression` icon and choose the timestamp column which needs to be converted to the local time zone as shown in the following image.
+3.	Click on the `Expression` icon and choose the timestamp column that needs to be converted to the local time zone, as shown in the following image.
 
     ![Expression icon](/static/assets/faq/images/expression-icon.png)
 	
 	![Datetime column](/static/assets/faq/images/timestamp-column.png)
 
-4.	Then add the following code to the timestamp column which needs to be converted from Greenwich Mean Time (GMT) to your local time zone in the Expression editor as shown in the following image and click `Save.`
+4.	Then, add the following code to the timestamp column that needs to be converted from Greenwich Mean Time (GMT) to your local time zone in the Expression editor, as shown in the following image, and click `Save`.
 
         AT TIME ZONE 'GMT' AT TIME ZONE '+05:30'
 	  
@@ -33,13 +33,13 @@ Bold BI application allows you to convert the timestamp column in the PostgreSQL
 	
 	![Create Expression](/static/assets/faq/images/timezone-expression.png)
 	
-	>**NOTE:** The time difference from GMT to your local time zone should be set manually in the above sample. 
+	>**NOTE:** The time difference between GMT and your local time zone should be manually set in the above sample.
 	
-5.	Click on the `Update` and you can find the result where the created timestamp column in GMT will be converted into Indian Standard Time.
+5.	Click on `Update` and you will find the result, where the created timestamp column in GMT will be converted into Indian Standard Time.
 
     ![Result preview](/static/assets/faq/images/converted-timezone.png)
 
-    >**Note:**  This documentation works for all the web data sources in the extract mode only and [PostgreSQL in live](/working-with-data-sources/data-connectors/postgresql/#live-mode-connection) and [extract](/working-with-data-sources/data-connectors/postgresql/#extract-mode-connection) modes in the Bold BI. For [MS SQL Server](/working-with-data-sources/data-connectors/sql-data-source/) and [MySQL](/working-with-data-sources/data-connectors/mysql/) data sources, use the following expressions for converting the GMT date column to the Indian Standard Time zone.
+    >**Note:**  This documentation is applicable to all web data sources in extract mode only, as well as [PostgreSQL in live](/working-with-data-sources/data-connectors/postgresql/#live-mode-connection) and [extract](/working-with-data-sources/data-connectors/postgresql/#extract-mode-connection) modes in the Bold BI. For [MS SQL Server](/working-with-data-sources/data-connectors/sql-data-source/) and [MySQL](/working-with-data-sources/data-connectors/mysql/) data sources, the following expressions should be used to convert the GMT date column to the Indian Standard Time zone.
 	
 	<table>
 	<tr>

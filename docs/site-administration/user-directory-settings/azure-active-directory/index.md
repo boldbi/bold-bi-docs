@@ -39,37 +39,45 @@ This section explains the [Azure Active Directory](https://azure.microsoft.com/e
 
     > **NOTE:**  Save the client secret value generated.
 
-6. Go to `API permissions`, click on `Add a permission`, and then select the `APIs my organization uses`. Click on `Microsoft Graph`.
+6. Go to `API permissions`,
 
-    <table>
-     <tr>
-     <th><b>Application Permissions</b></th>
-     <th></th>
-     </tr>
-     <tr>
-     <td> Directory <td>Read directory data</td></td>
-     </tr>
-     <tr>
-     <th><b>Delegated Permissions</b></th>
-     <th></th>
-     </tr>
-     <tr>
-     <td> 1. Directory <td>Read directory data, Access directory as the signed in user</td></td>
-     </tr>
-     <tr>
-     <td>2. Group <td>Read all groups</td></td>
-     </tr>
-     <tr>
-     <td>3. User <td>Read and write access to user profile</td></td>
-     </tr>
-      <tr>
-     <td>4. OpenId permissions <td>View user's basic profile</td></td>
-     </tr>
-     </table>
-    
-    Select the above listed permissions and add them.
+    ![API permission](/static/assets/site-administration/images/api-permission.png)
 
-7. After adding the permissions, click on `Grant admin consent` to grant admin consent for the same.
+    click on `Add a permission`,
+
+    ![Add permission](/static/assets/site-administration/images/add-permission.png)
+
+    select the `APIs my organization uses`, and click on `Microsoft Graph`.
+
+    ![Select api organization uses](/static/assets/site-administration/images/api-organization-uses.png)
+
+ 7. In `Microsoft Graph`, click on `Application Permissions`.
+
+    ![Application Permissions](/static/assets/site-administration/images/application-permission.png)
+
+    In search option, find the `Directory`, expand the `Directory` option, and select `Read directory data`.
+
+    ![Application Permissions - Directory](/static/assets/site-administration/images/directory-application-permission.png)
+
+ 8. Click `Delegated Permissions`, find the `Directory`, and expand the `Directory` option, and select `Read directory data` and `Access directory as the signed in user`.
+
+    ![Delegated Permissions - Directory](/static/assets/site-administration/images/delegated-permission-directory.png)
+
+    After that, find the `Group`, expand the `Group` option, and select `Read all groups`.
+
+    ![Delegated Permissions - Group](/static/assets/site-administration/images/delegated-permission-group.png)
+
+    After that, find the `User`, expand the `User` option, and select `Read and write access to user profile`.
+
+    ![Delegated Permissions - User](/static/assets/site-administration/images/delegated-permission-user.png)
+
+    ![Delegated Permissions - User](/static/assets/site-administration/images/delegated-permission-user2.png)
+
+    After that, find the `OpenId permissions`, expand the `OpenId permissions` option, select `View user's basic profile`, and finally click on the `Add permissions`.
+
+    ![Delegated Permissions - OpenId permissions](/static/assets/site-administration/images/delegated-permission-openid-permissions.png)
+
+9. After adding the permissions, click on `Grant admin consent` to grant admin consent for the same.
  
     ![Grant admin consent](/static/assets/site-administration/images/grant-admin-consent.png)
 

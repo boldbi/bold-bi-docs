@@ -10,9 +10,9 @@ documentation: ug
 
 # Visualization Widgets
 
-This section explains how to configure and format the available widgets in Bold BI Enterprise and also explains about various properties in each widget.
+This section explains how to configure and format the available widgets in Bold BI Enterprise. It also provides information about the various properties in each widget.
 
-You can explore the available widgets in detail here,
+You can explore working with the dashboard in detail here:
 
 [Bar Chart](/visualizing-data/visualization-widgets/bar-chart/)
 

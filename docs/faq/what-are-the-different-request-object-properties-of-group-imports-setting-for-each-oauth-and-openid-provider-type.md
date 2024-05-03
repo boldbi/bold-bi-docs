@@ -12,10 +12,10 @@ You can configure the OAuth 2.0 and OpenID settings using the REST API. While co
 
 The group import has two properties:
 
-1. <b>ProviderType</b> – This property specifies the provider type to import the groups. The possible values for this property are:
+1. **ProviderType** – This property specifies the provider type used to import the groups. The possible values for this property are:
    `CognitoAWS, Auth0, Okta, and OneLogin`
  
-2. <b>Setting</b> – The properties of this object will vary depending on the type of provider mentioned above. Please refer to the following information to know the specific setting properties for each provider type.
+2. **Setting** – The properties of this object will vary depending on the type of provider mentioned above. Please refer to the following information to learn the specific setting properties for each provider type.
    
 ## Cognito AWS
 
@@ -39,7 +39,7 @@ Configure the provider type as `CognitoAWS` and the `Setting` object with the fo
 </tr>
 </table>
 
-The final Group Import Object for Cognito AWS will look as follows.
+The final Group Import Object for AWS Cognito will appear as follows.
 ```js
 {
   "ProviderType": "CognitoAWS",
@@ -66,7 +66,7 @@ Configure the provider type as `Auth0` and the `Setting` object with the followi
 </tr>
 </table>
 
-The final Group Import Object for Auth0 will look as follows.
+The final Group Import Object for Auth0 will appear as follows.
 ```js
 {
   "ProviderType": "Okta",
@@ -99,7 +99,7 @@ The final Group Import Object for Okta will look as follows.
 
 ## OneLogin
 
-Configure the provider type as `OneLogin` and the `Setting` object with the following properties to import groups from OneLogin. This provider type is applicable for both OAuth and OpenID.
+Configure the provider type as `OneLogin` and the `Setting` object with the following properties in order to import groups from OneLogin. This provider type is applicable for both OAuth and OpenID.
 
 <table>
 <tr>
@@ -116,7 +116,7 @@ Configure the provider type as `OneLogin` and the `Setting` object with the foll
 </tr>
 </table>
 
-The final Group Import Object for OneLogin will look as follows.
+The final Group Import Object for OneLogin will appear as follows.
 ```js
 {
   "ProviderType": "OneLogin",

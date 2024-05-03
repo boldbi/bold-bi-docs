@@ -145,7 +145,7 @@ The data can be applied in the top and bottom filters for time column based on t
 
 Type while creating the data source needs to be influxdb.
 
-[Rest API - v4.0](https://help.boldbi.com/embedded-bi/rest-api-reference/v4.0/api-reference/)
+[Rest API - v4.0](/server-api-reference/v4.0/api-reference/)
 
 ### Parameters for creating Data Source
 

@@ -9,13 +9,13 @@ keywords: isolation, isolation code, isolation filter, row level security, row l
 
 # Data Sampling feature in Bold BI
 
-`Data sampling` will provide a better designing experience by limiting the number of records while creating dashboards with millions of data, However, the limitation will not be applied while previewing or publishing dashboards.
+The `Data Sampling` feature in Bold BI will provide a better design experience by limiting the number of records when creating dashboards with millions of data. However, this limitation will not be applied during the preview or publishing of dashboards.
 
 > **Note:** This feature is available in On-Premises Deployment but not in Syncfusion Managed Cloud Server.
 
 ## Enabling Data sampling in Bold BI:
 
-Please follow these steps to enable the data sampling feature in Bold BI.
+To enable Data Sampling in Bold BI, please follow these steps:
 
 1. Connect to a data source by providing valid credentials.
 
@@ -29,22 +29,22 @@ Please follow these steps to enable the data sampling feature in Bold BI.
 
 ![Data sampling enable](/static/assets/working-with-datasource/data-sampling/enabledatasampling.png)
 
-5. Click on the `Check box` to enable and enter the number of records needed while creating a dashboard.
+5. Click on the `checkbox` to enable and enter the number of records needed when creating a dashboard.
 
 ![Data sampling enable](/static/assets/working-with-datasource/data-sampling/enableandapplylimit.png)
 
-> **NOTE:** The data sampling button will be disabled while switching to the code view mode in Bold BI.
+> **NOTE:** The Data Sampling button will be disabled when switching to the code view mode in Bold BI.
 
-6. Select `OK` and click on the preview to ensure whether `Data sampling` has been applied to the data source as shown in the following image.
+6. Select `OK` and click on preview to ensure that `Data Sampling` has been applied to the data source as shown in the following image.
 
 ![Data sampling table preview](/static/assets/working-with-datasource/data-sampling/datasampledtablepreview.png)
 
-7. The data sources enabled with `Data sampling` can be identified by using the icon as shown in the following image.
+7. Data sources enabled with `Data Sampling` can be identified using the icon as shown in the following image.
 
 ![Data sampling enabled](/static/assets/working-with-datasource/data-sampling/datasampleenabledicon.png#width=453px;height=544.9px)
 
-8. While designing dashboards in Bold BI, the `Data sampling` limit will be applied to all the widgets.<br/> Whereas, while previewing or publishing the dashboard, the `data sampling` will be disabled automatically to ensure data integrity.
+8. While designing dashboards in Bold BI, the `Data Sampling` limit will be applied to all widgets.<br/> However, during the preview or publishing of the dashboard, `Data Sampling` will be automatically disabled to ensure data integrity.
 
 ![Data sample dashboard](/static/assets/working-with-datasource/data-sampling/datasampledashboard.png)
 
-> **NOTE:** The data sampling is not supported for the following data source’s  **SSAS**, **SparkSQL**, **AWS OpenSearch**, **Elasticsearch**,**Influx DB** and **ODBC**.
+> **NOTE:** Data Sampling is not supported for the following data sources: **SSAS**, **SparkSQL**, **AWS OpenSearch**, **Elasticsearch**,**Influx DB** and **ODBC**.

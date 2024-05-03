@@ -18,14 +18,14 @@ Isolation code will be applied as follows.
 
 ![Apply Isolation Code](/static/assets/working-with-datasource/combine-ds-and-isolation-code/images/isolation-code-apply.png)
 
-The dashboard will be rendered based on the applied isolation code and shows the data as follows.
+The dashboard will be rendered based on the applied isolation code and will show the data as follows.
 
 ![Apply Isolation Code in dashboard](/static/assets/working-with-datasource/combine-ds-and-isolation-code/images/isolation-code-apply-in-dashboard.png)
 
-No records will be displayed in the dashboard, if the isolation code does not match the data source column.
+No records will be displayed in the dashboard if the isolation code does not match the data source column.
 
 ![Isolation Code not matched](/static/assets/working-with-datasource/combine-ds-and-isolation-code/images/isolation-code-not-matched.png)
 
 ## Syntax for isolation code
 
-You can also use the [url filter parameter](/working-with-dashboards/preview-dashboard/urlparameters/#supported-operators) syntax in isolation code.
+You can also use the [url filter parameter](/working-with-dashboards/preview-dashboard/urlparameters/#supported-operators) syntax in the isolation code.
