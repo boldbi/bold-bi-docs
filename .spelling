@@ -1560,6 +1560,8 @@ WireGuard
 wgclient.conf
 BoldBI.Dashboard.Service.Extensions
 handler_config.json
+Adsets
+handler_config.json
 BoldBI.create
 AuthorizeAPI
 ReadWriteMany
@@ -1582,3 +1584,4 @@ MSIExec.exe.
 7B84657A-23E5-479E-9241-16A2B3743A6F}
 MsiExec.exe /I{7B84657A-23E5-479E-9241-16A2B3743A6F}
 "MsiExec.exe /X{7B84657A-23E5-479E-9241-16A2B3743A6F}"
+runAccessReport

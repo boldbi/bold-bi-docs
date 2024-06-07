@@ -90,6 +90,8 @@ export default class LayoutTemplate extends React.Component {
     this.configureHamburger();
     this.configureRightSideBar();        
     this.configureMobileSearch();
+    zoomOptionForImages();
+    copyToClipboard();
     select('.doc-toc-search-icon').addEventListener('click', () => {
       let leftTocSearch = select('#auto-complete');
       if (leftTocSearch && leftTocSearch.value && leftTocSearch.ej2_instances) {
@@ -937,6 +939,59 @@ function createCustomSearch() {
       select('#gsc-i-id1').value = '';
     });
   }
+}
+
+function zoomOptionForImages() {
+  var imageZoom = '<div id="zoom-image-container">' +
+                    '<div id="zoom-image-center">' +
+                        '<span id="zoom-image-close">&#10006;</span>' +
+                        '<img id="zoom-image">' +
+                    '</div>'
+                  '</div>';
+  document.body.insertAdjacentHTML('beforeend', imageZoom);
+
+  var getImage = document.querySelectorAll("#doc-body-cont img");
+  var zoomImageContainer = document.getElementById("zoom-image-container");
+  var zoomImage = document.getElementById("zoom-image");
+  var zoomImageClose = document.getElementById("zoom-image-close");
+
+  Array.from(getImage).forEach(getImage => {
+      getImage.onclick = function () {
+          zoomImageContainer.style.display = "block";
+          zoomImage.src = this.src;
+      }
+  });
+
+  zoomImageClose.onclick = function () {
+      zoomImageContainer.style.display = "none";
+  }
+}
+
+function copyToClipboard() {
+  const copyButton = '<div class="copy-button">' +
+                        '<span class="copy-button-tooltip">Copy</span>' +
+                        '<svg class="copy-button-icon" xmlns="http://www.w3.org/2000/svg" fill="#000" width="24" height="27" viewBox="0 0 27 27"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M17.875 5.844l3.281 3.406c0.313 0.344 0.594 1.063 0.594 1.531v10.094c0 0.469-0.375 0.906-0.875 0.906h-5.844v-1.531h4.906c0.156 0 0.281-0.125 0.281-0.281v-8.5c0-0.156-0.125-0.281-0.281-0.281h-3.625c-0.156 0-0.313-0.125-0.313-0.281v-3.875c0-0.156-0.125-0.281-0.281-0.281h-5.938c-0.156 0-0.313 0.125-0.313 0.281v2.156c-0.313-0.125-0.719-0.188-1.031-0.188h-0.469v-2.906c0-0.5 0.406-0.875 0.875-0.875h7.563c0.469 0 1.156 0.281 1.469 0.625zM17.813 9.656h1.313c0.156 0 0.188-0.094 0.094-0.219l-1.5-1.531c-0.094-0.125-0.188-0.094-0.188 0.063v1.406c0 0.156 0.125 0.281 0.281 0.281zM9.938 10.844l3.25 3.438c0.344 0.344 0.594 1.031 0.594 1.5v10.094c0 0.5-0.375 0.906-0.844 0.906h-12.031c-0.5 0-0.906-0.406-0.906-0.906v-14.781c0-0.469 0.406-0.906 0.906-0.906h7.531c0.469 0 1.156 0.313 1.5 0.656zM1.813 25.25h10.156c0.156 0 0.313-0.125 0.313-0.281v-8.5c0-0.156-0.156-0.281-0.313-0.281h-3.625c-0.156 0-0.281-0.125-0.281-0.281v-3.875c0-0.156-0.125-0.281-0.281-0.281h-5.969c-0.156 0-0.281 0.125-0.281 0.281v12.938c0 0.156 0.125 0.281 0.281 0.281zM11.25 14.469l-1.469-1.594c-0.125-0.125-0.219-0.031-0.219 0.125v1.375c0 0.156 0.156 0.281 0.313 0.281h1.281c0.156 0 0.219-0.094 0.094-0.188z"></path></svg>' +
+                      '</div>';
+  document.querySelectorAll("pre").forEach((pre) => {
+      pre.insertAdjacentHTML("beforebegin", copyButton);
+  });
+
+  document.querySelectorAll(".copy-button").forEach((button) => {
+      button.addEventListener("click", function() {
+          const pre = this.nextElementSibling;
+          const text = pre.innerText;
+          const tooltip = this.querySelector(".copy-button-tooltip");
+
+          navigator.clipboard.writeText(text).then(() => {
+              tooltip.innerText = "Copied!";
+              setTimeout(() => {
+                  tooltip.innerText = "Copy";
+              }, 5000);
+          }).catch((err) => {
+              console.error("Failed to copy: ", err);
+          });
+      });
+  });
 }
 
 const RightToc = styled.div`

@@ -9,7 +9,7 @@ documentation: ug
 # Connecting Bold BI to Avochato data source
 The Bold BI dashboard designer connects to Avochato web services through REST API.
 
-> **Note:** The Avochato data source is available in On-Premises Deployment but not in Syncfusion Managed Cloud Server.
+> **Note:** The Avochato data source is available in On-Premises Deployment, but not in the Syncfusion Managed Cloud Server.
 
 ## Choose Avochato data source
 
@@ -28,7 +28,7 @@ To configure the Avochato data source, follow these steps:
    ![Choose data source from server](/static/assets/working-with-datasource/data-connectors/images/avochato/AvochatoDS_server.png)
 
 ## Create Avochato data source
-Once you click the data source, the NEW DATA SOURCE configuration panel opens. Follow these steps to create a Avochato data source:
+Once you click the data source, the NEW DATA SOURCE configuration panel will open. Follow these steps to create a Avochato data source:
 1.  Enter a name and description (optional) for the data source.
 2.  Click on **API Endpoints** from the drop-down box and choose the required Endpoints.
 3.  Enter your **authId** and **authsecret** for the datasource. Please refer to [Avochato API Access documentation](https://www.avochato.com/docs)

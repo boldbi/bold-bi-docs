@@ -14,7 +14,7 @@ We have created an ASP.NET Core sample using the Embedded SDK. Here, we can list
 
 ## How to run the sample
 
-1. Please download the ASP.NET Core sample from [here](https://github.com/boldbi/samples/tree/master/v3.2.16/asp-net-core).  
+1. Please download the [ASP.NET Core](https://github.com/boldbi/samples/tree/master/v3.2.16/asp-net-core) sample.
 
 2. In the ASP.NET Core sample, you can find the EmbedProperties class file in the Models folder.
 ![Properties](/static/assets/javascript/sample/images/core-properties.png)
@@ -52,7 +52,7 @@ We have created an ASP.NET Core sample using the Embedded SDK. Here, we can list
 </table>
 
 
-4. You can obtain your Embed Secret key from the administrator settings section. Please refer to this [link](/site-administration/embed-settings/) for more details.  
+4. You can obtain your Embed Secret key from the administrator settings section. Please refer to the [Embed Settings](/site-administration/embed-settings/) for further information. 
 
 5. Then, run your ASP.NET Core sample.
 

@@ -15,7 +15,7 @@ documentation: ug
 
 1. If you don't have a Notion account, please create one.
 2. Access your Notion account and navigate to My Integrations.
-3. Click "New Integration" on the left and name it appropriately.
+3. Click on "New Integration" on the left and name it appropriately.
 4. Finally, click on "Submit" located at the bottom of the page.
 
 ## Add a Connection to the Database
@@ -26,7 +26,7 @@ documentation: ug
 
 ## Connection Properties
 
-In a YAML file, the `config` section contains the following properties:
+The `config` section in a YAML file includes the following properties:
 
 ```yaml
 connector_name: Notion

@@ -34,7 +34,7 @@ Please find the details of the parameter in the URL below.
 
 <tr>
 <td>dashboard URL</td>
-<td>URL of the dashboard widget to be embed. Refer this <a href="/embedding-options/iframe-embedding/embedding-a-widget/">link</a> to get the URL. 
+<td>URL of the dashboard widget to be embed. Please refer to the <a href="/embedding-options/iframe-embedding/embedding-a-widget/">Widget Embedding</a> to get the URL.
 <code>
 
 ```js
@@ -129,7 +129,7 @@ If you want to set embed_expirationtime, you must set the embed_timestamp too in
 
 <tr>
 <td><code>widgetId</code></td>
-<td>Widget Id of the dashboard widget to be embedded. To know how to get widgetId from the dashboard, <a href="/embedding-options/iframe-embedding/embedding-a-widget/">here</a>
+<td>Widget Id of the dashboard widget to be embedded. To know how to get widgetId from the dashboard, refer to the<a href="/embedding-options/iframe-embedding/embedding-a-widget/">Widget Embedding</a>
 </td>
 <td>0000aeab-3359-40c6-b014-1ea98e9a7ce9</td>
 </tr>

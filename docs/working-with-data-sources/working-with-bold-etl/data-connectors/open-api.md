@@ -13,16 +13,16 @@ documentation: ug
 
 ## ``OpenAPI`` features supported
 
-1. All HTTP Methods
-2. JSON and form bodies, path and query parameters
-3. File uploads with ``multipart/form-data`` bodies
-4. float, string, int, date, datetime, ``string enums``, and custom schemas or lists containing any of those
-6. html/text or application/json responses containing any of the previous types
-5. Basic or Bearer Authentication not supported
+1. All HTTP methods are supported.
+2. JSON and form bodies, path and query parameters are accepted.
+3. File uploads can be done with `multipart/form-data` bodies.
+4. Supported data types include float, string, int, date, datetime, `string enums`, and custom schemas or lists containing any of those.
+6. Responses can be in html/text or application/json format containing any of the mentioned types.
+5. Basic or Bearer Authentication is not supported.
 
 ## Connection Properties
 
-In a YAML file, the `config` section contains the following properties:
+The `config` section in a YAML file includes the following properties:
 
 ```yaml
         ymlURL: 

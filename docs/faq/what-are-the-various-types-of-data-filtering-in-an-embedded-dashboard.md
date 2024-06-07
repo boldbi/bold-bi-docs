@@ -38,7 +38,7 @@ documentation: ug
 </tr>
 </table>
 
-**Note**: To learn more about filtering URL parameters, please refer to this documentation on [URL Parameter](https://help.boldbi.com/working-with-dashboards/preview-dashboard/urlparameters/).
+**Note**: To learn more about filtering URL parameters, please refer to this documentation on [URL Parameter](/working-with-dashboards/preview-dashboard/urlparameters/).
 
 ## Client-side filtering
 ### Using the API member `filterParameters`

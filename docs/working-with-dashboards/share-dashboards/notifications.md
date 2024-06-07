@@ -18,7 +18,7 @@ Notifications can be configured by both the `System Administrator` and users.
 
 You can configure how users receive notifications for comments from the site notification settings page.
 
-Please visit [here](/site-administration/notification-settings/) for detailed information.
+Please visit the [Notification Settings](/site-administration/notification-settings/) for detailed information.
 
 ## User notification settings
 

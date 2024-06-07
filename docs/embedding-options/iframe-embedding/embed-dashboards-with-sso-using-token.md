@@ -26,7 +26,7 @@ Please find the details of the parameter in the URL as follows:
 
 <tr>
 <td>dashboard URL</td>
-<td>URL of the dashboard to be embed. Refer this <a href="/working-with-dashboards/share-dashboards/get-dashboard-link/">link</a> to get the URL. <code>
+<td>URL of the dashboard to be embed. Please refer to the <a href="/working-with-dashboards/share-dashboards/get-dashboard-link/">Get links to Dashboards</a>. <code>
 
 ```js
 Example:
@@ -85,7 +85,7 @@ The following embed URL is the formation of the <strong>dashboard URL</strong>, 
 
 </table>
 
-> **NOTE:** By default, the generated Iframe signature URL is valid for an indefinite amount of period. In mean time, you can `secure your Iframe URL with allowed domains and IP addresses support`. Refer this [link](https://help.boldbi.com/embedding-options/iframe-embedding/secured-embedding/) for more.
+> **NOTE:** By default, the generated Iframe signature URL is valid for an indefinite amount of period. In mean time, you can `secure your Iframe URL with allowed domains and IP addresses support`. Please refer to the [Secured Embedding](/embedding-options/iframe-embedding/secured-embedding/) for more.
 
 > **NOTE:** If you want to [enable the validation and expiration](https://help.boldbi.com/embedding-options/iframe-embedding/embed-dashboards-with-sso-using-token/#how-to-enable-token-validity-and-expiration-time-in-embed-url) for generated URL, you can set the `embed_timestamp` and `embed_expirationtime` parameters.
 
@@ -384,6 +384,6 @@ Pass your filters to the `embed_datasource_filter=&&dashboardparameter1=value1&u
 </table>
 
 
-* In the embed URL, the dashboard parameter filter must be started with a double ampersand `&&`. For more details, Refer to this [link](/working-with-data-sources/dashboard-parameter/configuring-dashboard-parameters/).
+* In the embed URL, the dashboard parameter filter must be started with a double ampersand `&&`. For more details, Refer to the [configuring dashboard parameters](/working-with-data-sources/dashboard-parameter/configuring-dashboard-parameters/).
 
-* In the embed URL, the URL filter parameter must be started with a single ampersand `&`. For more details, refer to this [link](/working-with-dashboards/preview-dashboard/urlparameters/).
+* In the embed URL, the URL filter parameter must be started with a single ampersand `&`. For more details, please refer to the [URL Filter](/working-with-dashboards/preview-dashboard/urlparameters/).

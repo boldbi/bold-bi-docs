@@ -39,7 +39,7 @@ Users belonging to the same tenant can only see users from that same tenant and 
 
 ## Adding new tenant
 
-To deploy a new tenant in Bold BI Enterprise application, click the `Create Site` button on the site management page. The new tenant deployment will use its own database and resource storage that is completely separate from other tenants. Learn more about creating a new tenant [here](/multi-tenancy/create-new-site/).
+To deploy a new tenant in Bold BI Enterprise application, click the `Create Site` button on the site management page. The new tenant deployment will use its own database and resource storage that is completely separate from other tenants. Learn more about creating a [new tenant](/multi-tenancy/create-new-site/).
 
 ![Create Site](/static/assets/multi-tenancy/images/create-button.png)
 
@@ -47,7 +47,7 @@ To deploy a new tenant in Bold BI Enterprise application, click the `Create Site
 
 Users can only be added, edited, and deleted by users belonging to the System Administrator group. You can invite a user to your tenant from another tenant by adding the user with the same email address as an existing user. Additionally, an invitation email can be sent to that existing tenant user. The invited user can access resources in both tenants after the required permissions (Read/Write/Delete) for that resource are granted.
 
-Learn more about adding a new user to a tenant [here](/managing-resources/manage-users/).   
+Learn more about how to add a new user to a tenant in order to [Manage Users](/managing-resources/manage-users/).
 
 > **NOTE:**  You can invite a user to a certain tenant from another tenant. 
 
@@ -59,4 +59,4 @@ You can share the dashboard to user in same tenant or other tenant by two option
 2.	If you want to share the dashboard with users from another tenant, make the dashboard public and share the dashboard link URL with users from the other tenant. Learn more [Share Dashboard](/working-with-dashboards/share-dashboards/public-dashboards/) here.
  
 ## Embedded BI
-Bold BI's Multi-tenant solution provides the option to embed resources (dashboards and data sources) within other applications. Learn more about the embedding solution [here](/overview/).
+Bold BI's Multi-tenant solution provides the option to embed resources (dashboards and data sources) within other applications. Learn more about the [Overview of Bold BI](/overview/).

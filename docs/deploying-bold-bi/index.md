@@ -14,20 +14,20 @@ Here, you can delve into the detailed prerequisites and deployment processes:
 
 [Overview and system requirements for Bold BI](/deploying-bold-bi/overview/)
 
-[Deploying in Windows](/deploying-bold-bi/deploying-in-windows/)
+[Deploying in Windows](/deploying-bold-bi/deploying-on-windows/)
 
-[Deploying in Azure](/deploying-bold-bi/deploying-in-azure/)
+[Deploying in Azure](/deploying-bold-bi/deploying-on-azure/)
  
-[Deploying in AWS](/deploying-bold-bi/deploying-in-aws/)
+[Deploying in AWS](/deploying-bold-bi/deploying-on-aws/)
 
-[Deploying in GCP](/deploying-bold-bi/deploying-in-gcp/)
+[Deploying in GCP](/deploying-bold-bi/deploying-on-gcp/)
 
-[Deploying in Azure App Service](/deploying-bold-bi/deploying-in-azure-app-service/)
+[Deploying in Azure App Service](/deploying-bold-bi/deploying-on-azure-app-service/)
 
-[Deploying in Linux](/deploying-bold-bi/deploying-in-linux/)
+[Deploying in Linux](/deploying-bold-bi/deploying-on-linux/)
 
-[Deploying in Kubernetes](/deploying-bold-bi/deploying-in-kubernetes/)
+[Deploying in Kubernetes](/deploying-bold-bi/deploying-on-kubernetes/)
 
-[Deploying in Docker](/deploying-bold-bi/deploying-in-docker/)
+[Deploying in Docker](/deploying-bold-bi/deploying-on-docker/)
 
 [Upgrade Guidelines](/deploying-bold-bi/upgrade-guidelines/)

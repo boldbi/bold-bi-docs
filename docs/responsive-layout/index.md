@@ -19,6 +19,6 @@ Bold BI allows you to view the dashboard in three kinds of layouts,
 * Mobile
 * Tablet
 
-You can see the responsive visualizations of the Bold BI Dashboard [here](/responsive-layout/responsive-design-bold-bi-dashboard/).
+You can see the responsive visualizations of the Bold BI Dashboard in [Responsive Layout](/responsive-layout/responsive-design-bold-bi-dashboard/).
 
-Additionally, you can see the responsive visualizations of the Bold BI Server [here](/responsive-layout/responsive-design-bold-bi-server/).
+Additionally, you can see the responsive visualizations of the Bold BI Server in [Responsive Layout](/responsive-layout/responsive-design-bold-bi-server/).

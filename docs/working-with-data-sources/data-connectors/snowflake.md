@@ -7,13 +7,13 @@ documentation: ug
 ---
 
 # Connecting Bold BI to Snowflake data source
-Bold BI Dashboard Designer supports connecting Snowflake database through SQL Live query.
+The Bold BI dashboard designer supports connecting to Snowflake database through SQL Live query.
 
 **Supported Server Editions:** Standard, Enterprise and Business Critical
 
 ## Choose Snowflake data source
 To configure the Snowflake data source, follow these steps:
-1. Click the **Data Sources** button in the configuration panel to add a new data connection.
+1. Click on the **Data Sources** button in the configuration panel to add a new data connection.
 
    ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/common/DataSourcesIcon.png)
 
@@ -22,7 +22,7 @@ To configure the Snowflake data source, follow these steps:
 
    ![Choose data source](/static/assets/working-with-datasource/data-connectors/images/Snowflake/ChooseDS.png)
 
-> **NOTE:**  You can also create a data source from the home page by clicking the **Data Sources** menu from left menu panel and **Create Data Source** from the data sources page.
+> **NOTE:**  You can also create a data source from the home page by clicking on the **Data Sources** menu on the left menu panel and selecting **Create Data Source** from the data sources page.
 
    ![Choose data source from server](/static/assets/working-with-datasource/data-connectors/images/Snowflake/ChooseDS_server.png)
 
@@ -34,7 +34,7 @@ After clicking the data source, the NEW DATA SOURCE configuration panel opens. F
 For example, `https://dum421.west-europe.azure.snowflakecomputing.com` 
 3. Enter a valid Snowflake user name in the User Name text box.
 4. Enter a valid Snowflake password in the Password text box.
-5. Enter a valid Snowflake database name in the  Database text box.
+5. Enter a valid Snowflake database name in the Database text box.
 
    ![Snowflake Connection](/static/assets/working-with-datasource/data-connectors/images/Snowflake/Snowflake_newconnection.png)
 
@@ -43,17 +43,17 @@ There are two connection types in a data source:
 * Extract mode
 
 ## Live mode connection
-In this connection type, a data source is directly fetched from the source. Choose the Live mode option for this connection.
+In this type of connection, data is directly fetched from the source. Select the Live mode option for this connection.
 
    ![Snowflake Live Connection](/static/assets/working-with-datasource/data-connectors/images/Snowflake/Snowflake_livemode.png)
 
 ### Data Preview
-1. Click **Connect** to connect the Snowflake server with configured details.
-The schema represents the collection list that are retrieved from the Snowflake server. This dialog displays a list of schemas in treeview and its corresponding values.
+1. Click **Connect** to establish a connection with the Snowflake server using the configured details.
+The schema represents the collection of lists retrieved from the Snowflake server. This dialog displays a treeview list of schemas and their corresponding values.
 
    ![Treeview schema](/static/assets/working-with-datasource/data-connectors/images/common/Treeview_schema.png)
 
-2. Now, the data design view page with selected table schema opens. Drag and drop the table.
+2. Now, the data design view page with the selected table schema opens. Drag and drop the table.
 
    ![Query designer](/static/assets/working-with-datasource/data-connectors/images/common/QueryEditor_sql.png)
 
@@ -68,7 +68,7 @@ In this connection type, a data source is fetched from the source periodically. 
 
    ![Snowflake Connection](/static/assets/working-with-datasource/data-connectors/images/Snowflake/Snowflake_extractmode.png)
 
-> **NOTE:**  Initially, data will be extracted based on the Max Rows selected in order to proceed with data model creation. The remaining records (there is no limit) will be extracted during the next refresh.  <br /> 
+> **NOTE:**  Initially, data will be extracted based on the maximum number of rows selected in order to proceed with data model creation. The remaining records (with no limit) will be extracted during the next refresh.  <br /> 
   ![Max rows option](/static/assets/working-with-datasource/data-connectors/images/Snowflake/maxRowOption.png#max-width=60%)
 	
 ### Refresh settings
@@ -77,21 +77,21 @@ In this connection type, a data source is fetched from the source periodically. 
 
     ![Refresh Setting](/static/assets/working-with-datasource/data-connectors/images/Snowflake/Snowflake_Refresh_Setting.png)
 
-2. Select the recurrence type, recurrence start and end dates in the **Refresh Setting** dialog box.
+2. Select the recurrence type, recurrence start date, and end date in the **Refresh Setting** dialog box.
 	* Data refresh can be scheduled hourly, daily, weekly, and monthly.
-	* Application Time Zone is displayed below the date picker. Start time of the schedule is converted to the client Time Zone and shown in the right side for users convenience. After selecting, click **Schedule**.
+	* The Application Time Zone is displayed below the date picker. The start time of the schedule is converted to the client's Time Zone and shown on the right side for users' convenience. After selecting, click **Schedule**.
 
 	![Save Schedule](/static/assets/working-with-datasource/data-connectors/images/common/RefreshSetting.png)
 
 ### Preview and data import
-1. Click **Connect** to connect the snowflake server with configured details.
+1. Click **Connect** to establish a connection with the Snowflake server using the configured details.
 2. The Extract data dialog opens. This dialog has two modes of connection either via Table or [Custom query](/faq/working-with-custom-query-extract-mode-in-bold-bi/). Under custom query option, write the required query and click **Connect**.
-Under Table option, this dialog displays list of tables and views in treeview. Select the required table(s) or view(s) from treeview to use in the designer. [Incremental Update](/working-with-data-sources/data-connectors/sql-data-source/#incremental-update) can be performed in both tables and views. 
+Under Table option, this dialog displays list of tables and views in treeview. Select the required table(s) or view(s) from treeview to use in the designer. [Incremental Update](/working-with-data-sources/data-connectors/ms-sql-server/#incremental-update) can be performed in both tables and views. 
 The option is available for configuring incremental refresh column for the selected items in the right-side panel. 
       * The table must have a primary key column and date column to configure the incremental refresh option.
-      * The Views must have a date column to configure the incremental refresh option and unique column(s) is optional which is used to update the modified records.
+      * Views must have a date column to configure the incremental refresh option, and unique column(s) are optional but can be used to update the modified records.
 
-   If you configured it, then the data source will work on [Incremental update](/working-with-data-sources/data-connectors/sql-data-source/#incremental-update), otherwise works on [Full load](/working-with-data-sources/data-connectors/sql-data-source/#full-load) concept. And finally click **Connect**.
+   If you configured it, then the data source will work on [Incremental update](/working-with-data-sources/data-connectors/ms-sql-server/#incremental-update), otherwise works on [Full load](/working-with-data-sources/data-connectors/ms-sql-server/#full-load) concept. And finally click **Connect**.
 
    ![Preview](/static/assets/working-with-datasource/data-connectors/images/common/Preview_Extract.png#max-width=100%)
    
@@ -111,7 +111,7 @@ The option is available for configuring incremental refresh column for the selec
 
 ### Connect using custom attribute and dashboard parameter
 
-We have added support for **custom attributes and dashboard parameters** to the data source connection. You can connect to the data source using custom attributes or dashboard parameters.
+We have added support for **custom attributes and dashboard parameters** in the data source connection. You can now connect to the data source using custom attributes or dashboard parameters.
 
 **Custom Attribute**
 
@@ -121,7 +121,7 @@ We have added support for **custom attributes and dashboard parameters** to the 
 
 ![Dashboard Parameter](/static/assets/working-with-datasource/data-connectors/images/Snowflake/Dashboardparameter.png)
 
->**Note:** Refer the [Dashboard Parameter Documentation](https://help.boldbi.com/working-with-data-sources/dashboard-parameter/) and [Custom Attributes Documentation](https://help.boldbi.com/working-with-data-sources/configuring-custom-attribute/) for more details.
+>**Note:** Refer to the [Dashboard Parameter Documentation](https://help.boldbi.com/working-with-data-sources/dashboard-parameter/) and [Custom Attributes Documentation](https://help.boldbi.com/working-with-data-sources/configuring-custom-attribute/) for more details.
 
 ## Connecting Bold BI to Snowflake Data Source via REST API
 
@@ -139,7 +139,7 @@ Through the REST API, only the **live mode** data source can be created and edit
 
 ### Parameters for creating Data Source
 
-> **NOTE:** The ability to provide join support is available only during the creation of a new data source. Join in edit connection mode is not supported.
+> **NOTE:** The ability to provide join support is only available during the creation of a new data source. Join in edit connection mode is not supported.
 
    <table>
    <tr>
@@ -358,7 +358,7 @@ Through the REST API, only the **live mode** data source can be created and edit
 
 ### Parameters for editing Data Source
 
-> **NOTE:**  For editing Data Source via API. All the parameters are optional. The parameter which needs to be changed can be provided.
+> **NOTE:**  To edit the data source via API, all parameters are optional. Only provide the parameter that needs to be changed.
 
 #### Parameters for modifying expressions when editing Data Source
    
@@ -520,7 +520,7 @@ Through the REST API, only the **live mode** data source can be created and edit
 
 ```
 
-> **NOTE:**  Through Rest API, the data source can be created or edited with only one table. If different table is provided in edit data source, the table will be replaced. The widgets will be retained only if the schema is same as the previous table.
+> **NOTE:**  Through the Rest API, the data source can be created or edited with only one table. If different table is provided in edit data source, the table will be replaced. The widgets will be retained only if the schema is same as the previous table.
 
 ### Connection Sample for Code View Mode
 
@@ -562,7 +562,7 @@ Through the REST API, only the **live mode** data source can be created and edit
 
 ## How to filter active warehouse through connection parameters for Snowflake data source
 
-Bold BI application allows you to filter warehouse through connection parameters in the snowflake data source by following these steps.
+The Bold BI application allows you to filter the warehouse through connection parameters in the Snowflake data source by following these steps.
 
 ### Steps to connect the snowflake with the active warehouse
 
@@ -578,7 +578,7 @@ In this way, you can filter the warehouse connection by passing parameters in th
 
     ![Table schema](/static/assets/faq/images/ssh-tables.png#max-width=70%)
 
-4.	Click **Save** to save the data source with a relevant name to proceed with designing a dashboard.
+4.	Click **Save** to save the data source with a relevant name in order to proceed with designing a dashboard.
 
     ![Save option](/static/assets/faq/images/ssh-save-option.png#max-width=70%)
 

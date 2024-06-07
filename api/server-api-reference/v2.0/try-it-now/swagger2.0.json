@@ -27,7 +27,7 @@
       "post" : {
         "tags" : [ "Authentication" ],
         "summary" : "Authenticate User",
-        "description" : "Authenticate with a user password.",
+        "description" : "Please authenticate with a user password.",
         "operationId" : "Authentication",
         "consumes" : [ "application/x-www-form-urlencoded" ],
         "parameters" : [ {
@@ -123,7 +123,7 @@
       "get": {
         "tags": [ "Users" ],
         "summary": "Get a User by Email or Username",
-        "description": "Retrieves the particular user detail.",
+        "description": "Retrieve the specific user detail.",
         "operationId": "Users_GetUserDetail",
         "parameters": [
           {
@@ -162,7 +162,7 @@
       "get": {
         "tags": [ "Users" ],
         "summary": "Get User Groups",
-        "description": "Retrieves the list of group details of the particular user.",
+        "description": "Retrieve the list of group details for the specific user.",
         "operationId": "Users_GetGroupsOfUser",
         "parameters": [
           {
@@ -204,7 +204,7 @@
       "get": {
         "tags": [ "Users" ],
         "summary": "Download CSV Template",
-        "description": "Download the CSV template to import the CSV users.",
+        "description": "Download the CSV template in order to import the CSV users.",
         "operationId": "Users_DownloadCsvTemplate",
         "responses": {
           "200": {
@@ -230,7 +230,7 @@
       "post": {
         "tags": [ "Users" ],
         "summary": "Add CSV User",
-        "description": "Add the list of users using the CSV file.",
+        "description": "Please add the list of users using the CSV file.",
         "operationId": "Users_CsvUserImport",
         "parameters": [
           {
@@ -271,7 +271,7 @@
       "get": {
         "tags": [ "Groups" ],
         "summary": "Get Groups",
-        "description": "Retrieves the list of group details.",
+        "description": "Retrieve the list of group details.",
         "operationId": "Groups_GetGroups",
         "responses": {
           "200": {
@@ -297,7 +297,7 @@
       "post": {
         "tags": [ "Groups" ],
         "summary": "Add User(s) to Group",
-        "description": "Adds the list of users to the particular group.",
+        "description": "Add the list of users to the specific group.",
         "operationId": "Groups_AddUserToGroup",
         "parameters": [
           {
@@ -348,7 +348,7 @@
       "delete": {
         "tags": [ "Groups" ],
         "summary": "Delete Group User",
-        "description": "Deletes the list of users from the particular group.",
+        "description": "Delete the list of users from the specific group.",
         "operationId": "Groups_DeleteUserFromGroup",
         "parameters": [
           {
@@ -440,7 +440,7 @@
       "post": {
         "tags": [ "Permission" ],
         "summary": "Add User Permission",
-        "description": "Administrators can add a new permission to the specific user by providing permission details.<br /><br />To add a specific permission, you must provide the item ID (Category Id, Schedule Id, and Dashboard Id) for the permission entity (SpecificCategory, SpecificSchedule, and SpecificDashboard).",
+        "description": "Administrators can add a new permission to a specific user by providing the permission details.<br /><br />To add a specific permission, you must provide the item ID (Category Id, Schedule Id, and Dashboard Id) for the permission entity (SpecificCategory, SpecificSchedule, and SpecificDashboard).",
         "operationId": "Permission_AddUserPermission",
         "parameters": [
           {
@@ -450,7 +450,7 @@
             "schema": {
               "$ref": "#/definitions/ApiUserPermissionAdd"
             },
-            "description": "Details about the permissions passed will be added to specified user id.",
+            "description": "Details about the permissions that were passed will be added to the specified user id.",
             "x-nullable": true
           }
         ],
@@ -490,7 +490,7 @@
       "get": {
         "tags": [ "Permission" ],
         "summary": "Get User Permissions",
-        "description": "Administrators can get the list of permissions of the specific user.",
+        "description": "Administrators can obtain the list of permissions for the specific user.",
         "operationId": "Permission_GetUserPermission",
         "parameters": [
           {
@@ -534,7 +534,7 @@
       "delete": {
         "tags": [ "Permission" ],
         "summary": "Delete User Permission",
-        "description": "Administrators can delete the specific user's permission.",
+        "description": "Administrators have the ability to delete a specific user's permission.",
         "operationId": "Permission_DeleteUserPermission",
         "parameters": [
           {
@@ -580,7 +580,7 @@
             "schema": {
               "$ref": "#/definitions/ApiGroupPermissionAdd"
             },
-            "description": "Details about the permissions passed will be added to specified group id.",
+            "description": "Details about the permissions that were passed will be added to the specified group ID.",
             "x-nullable": true
           }
         ],
@@ -620,7 +620,7 @@
       "get": {
         "tags": [ "Permission" ],
         "summary": "Get Group Permissions",
-        "description": "Administrators can get the list of permissions of the specific group.",
+        "description": "Administrators can obtain the list of permissions for the specific group.",
         "operationId": "Permission_GetGroupPermission",
         "parameters": [
           {
@@ -664,7 +664,7 @@
       "delete": {
         "tags": [ "Permission" ],
         "summary": "Delete Group Permission",
-        "description": "Administrators can delete the specific group permission.",
+        "description": "Administrators have the ability to delete specific group permissions.",
         "operationId": "Permission_DeleteGroupPermission",
         "parameters": [
           {
@@ -700,7 +700,7 @@
       "post": {
         "tags": [ "Category" ],
         "summary": "Add Category",
-        "description": "Users who have a create access for categories, can add a new category.",
+        "description": "Users who have create access for categories can add a new category.",
         "operationId": "Category_AddCategory",
         "parameters": [
           {
@@ -745,7 +745,7 @@
       "put": {
         "tags": [ "Category" ],
         "summary": "Update Category",
-        "description": "Users who have write access for categories can update an existing category.",
+        "description": "Users who have write access to categories can update an existing category.",
         "operationId": "Category_UpdateCategory",
         "parameters": [
           {
@@ -755,7 +755,7 @@
             "schema": {
               "$ref": "#/definitions/ApiCategoryUpdate"
             },
-            "description": "Details about the passed category will be updated to the specified category id.",
+            "description": "Details about the category that has been passed will be updated to the specified category ID.",
             "x-nullable": true
           }
         ],
@@ -795,7 +795,7 @@
       "get": {
         "tags": [ "Dashboard" ],
         "summary": "Get Public Dashboards",
-        "description": "Retrieves the list of public dashboards for the current user.",
+        "description": "Retrieve the list of public dashboards for the current user.",
         "operationId": "Dashboards_GetPublicItems",
         "parameters": [
           {
@@ -843,7 +843,7 @@
       "get": {
         "tags": [ "Dashboard" ],
         "summary": "Get Favorite Dashboards",
-        "description": "Retrieves a list of favorite dashboards for the current user.",
+        "description": "Retrieve a list of favorite dashboards for the current user.",
         "operationId": "Dashboards_GetFavoriteItems",
         "responses": {
           "200": {
@@ -873,7 +873,7 @@
       "put": {
         "tags": [ "Dashboard" ],
         "summary": "Update Favorite Dashboard",
-        "description": "Users who have read access to the dashboard can update the dashboard as favorite or non-favorite.",
+        "description": "Users who have read access to the dashboard can update the dashboard as a favorite or non-favorite.",
         "operationId": "Dashboards_UpdateFavoriteItem",
         "parameters": [
           {
@@ -917,7 +917,7 @@
       "post": {
         "tags": [ "Dashboard" ],
         "summary": "Export Dashboard",
-        "description": "Users who have read access to the dashboard can export the dashboard to the export types (Excel, PDF, and Image) and get the exported dashboard as an array of bytes in response.<br /><br />When exporting multi-tabbed dashboard in image format, the response bytes must be saved in ZIP format.",
+        "description": "Users who have read access to the dashboard can export it to various formats (Excel, PDF, and Image) and receive the exported dashboard as an array of bytes in response.<br /><br />When exporting a multi-tabbed dashboard in image format, the response bytes must be saved in ZIP format.",
         "operationId": "Dashboards_ExportDashboard",
         "parameters": [
           {
@@ -927,7 +927,7 @@
             "schema": {
               "$ref": "#/definitions/ApiExportDashboard"
             },
-            "description": "Details about the dashboard passed will be exported.",
+            "description": "Details about the passed dashboard will be exported.",
             "x-nullable": true
           }
         ],
@@ -964,7 +964,7 @@
       "get": {
         "tags": [ "Items" ],
         "summary": "Get Items",
-        "description": "Retrieves the respective list of items for the item types (Category, Dashboard, Datasource, and Schedule) for the current user.",
+        "description": "Retrieve the respective list of items for the item types (Category, Dashboard, Datasource, and Schedule) for the current user.",
         "operationId": "Items_GetItems",
         "parameters": [
           {
@@ -1016,7 +1016,7 @@
       "get": {
         "tags": [ "Items" ],
         "summary": "Get Item by Id",
-        "description": "Retrieves the respective item detail for the current users’ item types (Category, Dashboard, Datasource, and Schedule).",
+        "description": "Retrieve the respective item details for the current users' item types (Category, Dashboard, Datasource, and Schedule).",
         "operationId": "Items_GetItemDetail",
         "parameters": [
           {
@@ -1054,7 +1054,7 @@
       "delete": {
         "tags": [ "Items" ],
         "summary": "Delete Item",
-        "description": "Users who have delete access to the item types Category, Dashboard, Datasource, and Schedule can delete the item by providing the item ID (Category Id, Dashboard Id, Datasource Id, and Schedule Id).",
+        "description": "Users who have delete access to the item types Category, Dashboard, Datasource, and Schedule can delete the item by providing the item ID (Category ID, Dashboard ID, Datasource ID, and Schedule ID).",
         "operationId": "Items_DeleteItem",
         "parameters": [
           {
@@ -1093,7 +1093,7 @@
       "post" : {
         "tags" : [ "Items" ],
         "summary" : "Check Item name existence",
-        "description" : "Current user can check whether the item (category, dashboard, datasource, schedule) is alread exists or not by providing itemname (category name, dashboard name, schedule name, datasource name) and itemtype (category, dashboard, datasource, schedule) in the request body.",
+        "description" : "The current user can check whether the item (category, dashboard, datasource, schedule) already exists by providing the item name (category name, dashboard name, schedule name, datasource name) and item type (category, dashboard, datasource, schedule) in the request body.",
         "operationId" : "Items_IsItemNameExists",
         "parameters" : [ {
           "name" : "apiValidateItemName",
@@ -1102,7 +1102,7 @@
           "schema" : {
             "$ref" : "#/definitions/ApiValidateItemName"
           },
-          "description" : "Details about the item passed will be checked.",
+          "description" : "Details about the item that was passed will be checked.",
           "x-nullable" : true
         } ],
         "responses" : {

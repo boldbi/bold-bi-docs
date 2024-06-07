@@ -9,7 +9,7 @@ documentation: ug
 
 # ``Personio``
 
-``Personio`` is a ``human resources management software`` that helps businesses streamline ``HR`` processes, including recruitment, employee data management, and payroll, in one platform.
+``Personio`` is a ``human resources management software`` that helps businesses streamline ``HR`` processes, including recruitment, employee data management, and payroll, all in one platform.
 
 ## Grab Credentials
 
@@ -18,11 +18,11 @@ To load data from ``Personio``, you need to obtain API credentials, `client_id` 
 1. Sign in to your ``Personio`` account, and ensure that your user account has API access rights.
 2. Navigate to Settings > Integrations > API credentials.
 3. Click on "Generate new credentials."
-4. Assign necessary permissions to credentials. This is read access.
+4. Assign necessary permissions to the credentials, which include read access.
 
 ## Connection Properties
 
-In a YAML file, the `config` section contains the following properties:
+The `config` section in a YAML file includes the following properties:
 
 ```yaml
 Connectorname: Personio

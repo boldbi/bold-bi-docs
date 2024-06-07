@@ -132,7 +132,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/react-with-no
 
     ![render dashboard](/static/assets/javascript/sample/images/react-nodejs-dashboard.png)
 
- 2. Before rendering, authorize the server URL by making a call to the `AuthorizationServer` API (http://localhost:8080/authorizationserver/get) with the provided `embedConfig` values.
+ 2. Before rendering, authorize the server URL by making a call to the `AuthorizationServer` API (`http://localhost:8080/authorizationserver/get`) with the provided `embedConfig` values.
 
     ![Get Embed Details](/static/assets/javascript/sample/images/react-node-js-authorize.png)  
 
@@ -401,4 +401,4 @@ A GitHub link has been provided to [get](https://github.com/boldbi/react-with-no
 
 19. Run the React with Node.js sample, use the following command `npm start` in visual Studio Code.
 
-20. After executing the command, the application will automatically launch in the default browser. You can access it at the specified port number (e.g., https://localhost:3000).
+20. After executing the command, the application will automatically launch in the default browser. You can access it at the specified port number (e.g., `https://localhost:3000`).

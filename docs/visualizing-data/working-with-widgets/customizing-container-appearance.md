@@ -77,7 +77,7 @@ For more details on `PDF` export, please click [here](/working-with-dashboards/p
 ## Enable commenting
 
 This option allows you to enable or disable comments for the dashboard widget.
-For more details on the `commenting` option, please click  [here](/visualizing-data/working-with-widgets/commenting-widget/).
+For more details on the `commenting` option, please click on the [Commenting Widget](/visualizing-data/working-with-widgets/commenting-widget/).
 
 ![View data option](/static/assets/visualizing-data/working-with-widgets/images/ContainerAppearance11.png)
 

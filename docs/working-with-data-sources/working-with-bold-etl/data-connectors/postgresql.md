@@ -13,7 +13,7 @@ documentation: ug
 
 ## Connection Properties
 
-In a YAML file, the `config` section contains the following properties:
+The `config` section in a YAML file includes the following properties:
 
 ```yaml
 Connectorname: PostgreSQL
@@ -51,7 +51,7 @@ metadata:
     replication_value: column value that data starts from
 ```
 </td>
-        <td>This mode fetches data from the date column mentioned in the replication key from the start date as mentioned in the replication value. Once it is scheduled, the replication value is updated automatically from the imported data.</td>
+        <td>This mode retrieves data from the date column specified in the replication key starting from the date indicated in the replication value. Once scheduled, the replication value is automatically updated with the imported data.</td>
     </tr>
     <tr>
         <td>FULL_TABLE</td>
@@ -68,7 +68,7 @@ metadata:
 
 ```
 </td>
-        <td>This mode fetches data from the date column specified in the replication key starting from the date specified in the replication value. Once scheduled, the replication value is updated according to the interval_type and interval_value from the imported data. For example, if the interval_type is set to 'year' and the interval_value is set to '1', the first schedule will fetch records from January 1, 2000 to December 31, 2000. In the next schedule, it will fetch records from January 1, 2001 to December 31, 2001, and so on..</td>
+        <td>This mode fetches data from the date column specified in the replication key starting from the date specified in the replication value. Once scheduled, the replication value is updated according to the interval_type and interval_value from the imported data. For example, if the interval_type is set to 'year' and the interval_value is set to '1', the first schedule will fetch records from January 1, 2000 to December 31, 2000. In the next schedule, it will fetch records from January 1, 2001 to December 31, 2001, and so on.</td>
     </tr>
 </table>
 

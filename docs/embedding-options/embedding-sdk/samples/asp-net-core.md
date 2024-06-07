@@ -113,7 +113,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/aspnet-core-s
         };
      ```
 
-> **NOTE:** By default, we display the dashboard embedding without the dashboard listing sidebar. To enable the dashboard list, you need to navigate to the `dashboardlisting` URL (e.g., https://localhost:5001/dashboardlisting).
+> **NOTE:** By default, we display the dashboard embedding without the dashboard listing sidebar. To enable the dashboard list, you need to navigate to the `dashboardlisting` URL (e.g., `https://localhost:5001/dashboardlisting`).
 
 ## How this sample works
 

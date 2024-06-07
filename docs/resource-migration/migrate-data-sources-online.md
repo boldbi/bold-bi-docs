@@ -136,7 +136,7 @@ Click `Actions` in the grid context menu and select `Unlock Edit` to unlock the 
 
 The synchronization of published data sources from the source site can be disabled by enabling `Lock Resource Synchronization` in the dashboard settings in the target site.
 
-Learn how to disable synchronization for the published data sources [here](/site-administration/dashboard-settings/lock-resource-synchronization/).
+Learn how to disable synchronization for the published data sources in [Lock Resource Synchronization](/site-administration/dashboard-settings/lock-resource-synchronization/).
 
 Once these settings are enabled in the target site, synchronization of the published data sources from the source site will fail. Show the failed status in the grid.
 

@@ -10,8 +10,7 @@ documentation: ug
 
 # Manage Dashboard Views
 
-This section explains how to open, add, update, share, and delete Dashboard views in Bold BI.
-
+This section explains on how to open, add, update, share, delete Dashboard views and create schedule with dashboard views in the Bold BI.
 Dashboard Views that are accessible to the user, depending on the user’s permission, are displayed on the Dashboards page.
 
 ![Manage Dashboard Views](/static/assets/managing-resources/manage-dashboards/images/Launch-Dashboard-Views-From-Server.png)
@@ -35,7 +34,7 @@ Dashboard Views are opened in our embedded Dashboard Viewer itself as Dashboards
     
     ![Created Dashboard View](/static/assets/managing-resources/manage-dashboards/images/Added-Dashboard-View.png#width=65%)
 
-2. The views can be set as default while saving them by enabling the `Mark as Default` option in the save view dialog. Learn more about default views [here](/site-administration/dashboard-settings/default-views/).
+2. The views can be set as default while saving them by enabling the `Mark as Default` option in the save view dialog. Learn more about [Default Views](/site-administration/dashboard-settings/default-views/).
 
 3. Saved Dashboard Views are shown in the Dashboard Views panel by clicking the `Views` icon.
 
@@ -47,6 +46,10 @@ Dashboard Views are opened in our embedded Dashboard Viewer itself as Dashboards
    ![View Dashboard Views](/static/assets/managing-resources/manage-dashboards/images/applied-filters-accordion.png)
 
 > **NOTE:**  `Read, Write, and Delete` permissions for the `specific Dashboard View` are added to the users by the person who created the Dashboard View.
+
+## Create a Schedule with Dashboard Views
+
+Dashboard views can be scheduled to export content based on time intervals or when certain threshold conditions are met. For more information on utilizing views in dashboard export scheduling, please refer [here] (/managing-resources/manage-schedules/)
 
 ## Share Dashboard Views
 Dashboard views can be shared with users who have permission for the `specific dashboard`.
@@ -83,7 +86,7 @@ Only the user who created the dashboard view can remove the shared dashboard vie
 
 Dashboard Views can be marked as public to allow anyone to access it. 
 
-Click the `change` button to select the access permission.
+Click the `change` button to select the access permission. 
 
 
 ![Make Public Dashboard View](/static/assets/managing-resources/manage-dashboards/images/change-permission-access.png#width=65%)
@@ -118,7 +121,7 @@ The dashboard view can be set as the default view in two ways: while saving the 
 
     ![Set default](/static/assets/managing-resources/manage-dashboards/images/default-view.png#width=65%)
 
-> **NOTE:** To set a dashboard view as the default view for the dashboard, the `Default view` option in `Dashboard settings` must be enabled. Learn more about default views [here](/site-administration/dashboard-settings/default-views/).
+> **NOTE:** To set a dashboard view as the default view for the dashboard, the `Default view` option in `Dashboard settings` must be enabled. Learn more about [Default Views](/site-administration/dashboard-settings/default-views/).
 
 ## Remove a default view for the dashboard
 

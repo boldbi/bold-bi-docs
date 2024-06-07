@@ -7,7 +7,7 @@ documentation: ug
 ---
  
 # Connecting Bold BI to MariaDB data source
-The Bold BI Dashboard Designer supports connecting the MariaDB database using the SQL Live Query (C# API).
+The Bold BI dashboard designer supports connecting to MariaDB database using the SQL Live Query (C# API).
 
 ## Choose MariaDB data source
 To configure the MariaDB data source, follow these steps: 
@@ -20,30 +20,30 @@ To configure the MariaDB data source, follow these steps:
 
    ![Choose data source](/static/assets/working-with-datasource/data-connectors/images/Mariadb/ChooseDS.png)
 
-> **NOTE:**  You can also create a data source from the home page by clicking the **Data Sources** menu from left menu panel and **Create Data Source** from the data sources page.
+> **NOTE:**  You can also create a data source from the home page by clicking on the **Data Sources** menu on the left menu panel and selecting **Create Data Source** from the data sources page.
 
    ![Choose data source from server](/static/assets/working-with-datasource/data-connectors/images/Mariadb/ChooseDS_server.png)
 
 ## Connect to MariaDB
 ### Create MariaDB data source
-After clicking the data source, the **NEW DATA SOURCE** configuration panel opens. Follow the given steps to create a MariaDB data source: 
+After clicking on the data source, the **NEW DATA SOURCE** configuration panel opens. Follow the given steps to create a MariaDB data source: 
 1. Enter a name and description (optional) for the data source. 
 2. Enter a valid MariaDB server or host name in the **ServerName** text box.
 3. Enter a valid MariaDB username in the **UserName** text box. 
 4. Enter a valid MariaDB password in the **Password** text box.
-5. Select a database that you want to query in the listed database associated with the given MariaDB server in the database combo box.
+5. Select a database that you want to query from the list of databases associated with the specified MariaDB server in the database combo box.
 
    ![MariaDB Connection](/static/assets/working-with-datasource/data-connectors/images/Mariadb/Mariadb_Connection.png)
 
-To connect MariaDB with a particular table, enter the property currenttable={tablename} or specifictable={tablename} in the Additional connection parameters text box. The tables can be separated by comma {table1,table2} to connect with multiple tables.
+To connect MariaDB with a specific table, enter the property currenttable={tablename} or specifictable={tablename} in the Additional connection parameters text box. The tables can be separated by a comma {table1, table2} to connect with multiple tables.
    ![MariaDB Connection Specific Table](/static/assets/working-with-datasource/data-connectors/images/Mariadb/MariaDBConnectionwithAdditionalParameter.png)
 
-> **NOTE:**  To connect data source with **SSH**, enable the SSH check box in the **NEW DATA SOURCE** configuration panel and enter the required credentials.
+> **NOTE:**  To connect data source with **SSH**, enable the SSH check box in the **NEW DATA SOURCE** configuration panel and enter the necessary credentials.
 ![Enable SSH](/static/assets/working-with-datasource/images/enable-ssh.png#max-width=60%)s
 
 ### Connect using custom attribute and dashboard parameter
 
-We have added support for **custom attributes and dashboard parameters** to the data source connection. You can connect to the data source using custom attributes or dashboard parameters.
+We have added support for **custom attributes and dashboard parameters** to the data source connection. You can now connect to the data source using custom attributes or dashboard parameters.
 
 **Custom Attribute**
 
@@ -53,7 +53,7 @@ We have added support for **custom attributes and dashboard parameters** to the 
 
 ![Dashboard Parameter](/static/assets/working-with-datasource/data-connectors/images/Mariadb/Dashboardparameter.png)
 
->**Note:** Refer the [Dashboard Parameter Documentation](https://help.boldbi.com/working-with-data-sources/dashboard-parameter/) and [Custom Attributes Documentation](https://help.boldbi.com/working-with-data-sources/configuring-custom-attribute/) for more details.
+>**Note:** Refer to the [Dashboard Parameter Documentation](https://help.boldbi.com/working-with-data-sources/dashboard-parameter/) and [Custom Attributes Documentation](https://help.boldbi.com/working-with-data-sources/configuring-custom-attribute/) for more details.
 
 There are two connection types available in a data source:
 
@@ -68,18 +68,18 @@ In this connection type, a data source is directly fetched from source. Choose t
 
 ### Data Preview
 1. Click **Connect** to connect the MariaDB server with configured details. 
-The schema represents the collection list retrieved from the MariaDB server. This dialog displays a list of schemas in treeview and their corresponding values.
+The schema represents the collection list retrieved from the MariaDB server. This dialog displays a list of schemas in a treeview and their corresponding values.
 
    ![Treeview schema](/static/assets/working-with-datasource/data-connectors/images/common/Treeview_schema.png)
 
 If the table name is provided in the Additional connection parameters text box, only the specified table will be listed.
   ![Treeview specific table](/static/assets/working-with-datasource/data-connectors/images/common/Treeview_schema_specific_table.png)
 
-2. Now, the data design view page with the selected table schema opens. Drag the table.
+2. Now, the data design view page with the selected table schema is open. Please drag the table.
 
    ![Query designer](/static/assets/working-with-datasource/data-connectors/images/common/QueryEditor_sql.png)
 
-    You can use the Code View option for passing a query to display data.
+    You can use the Code View option to pass a query and display data.
 
    ![Codeview mode](/static/assets/working-with-datasource/data-connectors/images/common/CodeViewMode.png)
 
@@ -87,11 +87,11 @@ If the table name is provided in the Additional connection parameters text box, 
 
 ## Extract mode connection 
 
-In this connection type, a data source is fetched from source periodically. Choose the **Extract** mode option for this connection.
+In this type of connection, data is retrieved periodically from a data source. Select the **Extract** mode option for this connection.
 
 ![Extract Connection](/static/assets/working-with-datasource/data-connectors/images/Mariadb/Mariadb_Extract_Connection.png)
 
-> **NOTE:**  Initially, data will be extracted based on the Max Rows selected in order to proceed with data model creation. The remaining records (there is no limit) will be extracted during the next refresh.  <br /> 
+> **NOTE:** Initially, data will be extracted based on the maximum number of rows selected in order to proceed with creating the data model. The remaining records, of which there is no limit, will be extracted during the next refresh. <br /> 
  ![Max rows option](/static/assets/working-with-datasource/data-connectors/images/Mariadb/maxRowOption.png#max-width=60%)	
  
 ### Refresh Settings
@@ -102,19 +102,20 @@ In this connection type, a data source is fetched from source periodically. Choo
 
 2. Select the recurrence type, recurrence start, and end dates in the **Refresh Setting** dialog box.
 	* Data refresh can be scheduled hourly, daily, weekly, and monthly.
-	* Application Time Zone is displayed below the date picker. Start time of the schedule is converted to the client Time Zone and shown at the right-side for users convenience. After selecting, click **Schedule**.
+	* The Application Time Zone is displayed below the date picker. The start time of the schedule is converted to the client's Time Zone and shown on the right side for user convenience. After selecting, click **Schedule**.
 
 	![Save Schedule](/static/assets/working-with-datasource/data-connectors/images/common/RefreshSetting.png)
 
 ### Preview and data import
-1. Click **Connect** to connect the MariaDB server with configured details.
-2. The Extract data dialog opens. This dialog has two modes of connection either via Table or [Custom query](/faq/working-with-custom-query-extract-mode-in-bold-bi/). Under custom query option, write the required query and click **Connect**.
-Under Table option, This dialog displays a list of tables and views in treeview. Select the required table(s) or view(s) from treeview to use in the designer. [Incremental Update](/working-with-data-sources/data-connectors/sql-data-source/#incremental-update) can be performed in both tables and views. 
+1. Click **Connect** to establish a connection with the MariaDB server using the configured details.
+
+2. The Extract data dialog will open. This dialog has two modes of connection either via Table or [Custom query](/faq/working-with-custom-query-extract-mode-in-bold-bi/). For the custom query option, input the necessary query and then click **Connect**.
+Under Table option, This dialog displays a list of tables and views in treeview. Select the required table(s) or view(s) from treeview to use in the designer. [Incremental Update](/working-with-data-sources/data-connectors/ms-sql-server/#incremental-update) can be performed in both tables and views. 
 The option is available for configuring incremental refresh column for the selected items in the right-side panel. 
       * The table must have a primary key column and date column to configure the incremental refresh option.
       * The Views must have a date column to configure the incremental refresh option and unique column(s) is optional which is used to update the modified records.
 
-   If you configured it, then the data source will work on [Incremental update](/working-with-data-sources/data-connectors/sql-data-source/#incremental-update), otherwise works on [Full load](/working-with-data-sources/data-connectors/sql-data-source/#full-load) concept. And finally click **Connect**.
+   If you configured it, the data source will work on [Incremental update](/working-with-data-sources/data-connectors/ms-sql-server/#incremental-update), otherwise, it will work on the [Full load](/working-with-data-sources/data-connectors/ms-sql-server/#full-load) concept. Finally click **Connect**.
 
    ![Preview](/static/assets/working-with-datasource/data-connectors/images/common/Preview_Extract.png#max-width=100%)
 
@@ -143,11 +144,11 @@ Type while creating the data source needs to be mariadb.
 
 ### Modes
 
-Through the REST API, only the **live mode** data source can be created and edited.
+Only the live mode data source can be created and edited through the REST API.
 
 ### Parameters for creating Data Source
 
-> **NOTE:** The ability to provide join support is available only during the creation of a new data source. Join in edit connection mode is not supported.
+> **NOTE:** The ability to provide join support is only available during the creation of a new data source. Join in edit connection mode is not supported.
 
    <table>
    <tr>
@@ -433,7 +434,7 @@ Through the REST API, only the **live mode** data source can be created and edit
 
 ### Parameters for editing Data Source
 
-> **NOTE:**  For editing Data Source via API. All the parameters are optional. The parameter which needs to be changed can be provided.
+> **NOTE:**  To edit a Data Source via API, all parameters are optional. Only the parameter that needs to be changed should be provided.
 
 #### Parameters for modifying expressions when editing Data Source
    
@@ -610,7 +611,7 @@ Through the REST API, only the **live mode** data source can be created and edit
 
 ```
 
-> **NOTE:**  Through Rest API, the data source can be created or edited with only one table. If different table is provided in edit data source, the table will be replaced. The widgets will be retained only if the schema is same as the previous table.
+> **NOTE:**  Through the Rest API, the data source can be created or edited with only one table. If different table is provided in edit data source, the table will be replaced. The widgets will be retained only if the schema is same as the previous table.
 
 ### Connection Sample for Code View Mode
 

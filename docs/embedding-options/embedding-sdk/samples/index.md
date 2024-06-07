@@ -62,4 +62,4 @@ You can explore the available samples in detail here,
 
 [Spring Boot](/embedding-options/embedding-sdk/samples/spring-boot/)
 
-> **NOTE:** If you are seeking a Bold BI version 3.2.16 with supporting samples, please click [here](/embedding-options/embedding-sdk/samples/v3.2.16/).
+> **NOTE:** If you are seeking a Bold BI version 3.2.16 with supporting samples, please click on the [Bold BI v3.2.16](/embedding-options/embedding-sdk/samples/v3.2.16/).

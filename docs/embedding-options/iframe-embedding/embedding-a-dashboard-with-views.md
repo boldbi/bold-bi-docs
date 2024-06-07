@@ -63,7 +63,7 @@ A dashboard can have saved filter views embedded in any application using a URL.
 * To access the web application, if the dashboard is not available as a public dashboard, run it. The login page will then be displayed. Proceed by clicking the login button and entering valid user credentials. The dashboard will automatically be rendered for you.
 ![EmbedViews-EmbedLogin](/static/assets/iFrame-based/images/iframeLoginPage.png#max-width=45%)
 
-For example, below image represents that our dashboard embedded in "http://example.com/" website.
+For example, below image represents that our dashboard embedded in `http://example.com/` website.
 ![EmbedViews-EmbedSample](/static/assets/iFrame-based/images/EmbedViews-EmbedSample.png)
 
 

@@ -32,7 +32,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/vue-with-go-s
       </tr>
       <tr>
           <td align="left">authorizationUrl</td>
-          <td align="left">Url of the GetDetails action in the Go application(http://localhost:8086/getDetails). Learn more about authorize server in this <a href='/security-configuration/authorize-server/'>link.</a></td>
+          <td align="left">Url of the GetDetails action in the Go application(http://localhost:8086/getDetails). Learn more about authorize server in this link: <a href='/security-configuration/authorize-server/'>Authorized Server Information.</a></td>
       </tr>
       <tr>
           <td align="left">environment</td>
@@ -182,7 +182,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/vue-with-go-s
     }
     ```
   
- 5. To install `Go`, please follow this [link](https://go.dev/dl/). After that, you can install the Visual Studio Code extension.
+ 5. [To install GO](https://go.dev/dl/), you can then install the Visual Studio Code extension.
     ![go_install](/static/assets/javascript/sample/images/go_install.png)
 
  6. Please create a folder in the desired location and open it in Visual Studio Code. Next, create a file named `main.go` and `launch.json`, and include the following code.

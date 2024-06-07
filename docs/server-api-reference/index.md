@@ -10,7 +10,7 @@ documentation: ug
 
 # Bold BI Server API References
 
-Using the Bold BI REST API, you can manage and change resources in your site programmatically using HTTP. The API gives you simple access to the functionality behind the resources on your site. You can use this access to create your own custom applications or to script interactions with your site.
+By using the Bold BI REST API, you are able to programmatically manage and modify resources on your site using HTTP. The API provides easy access to the functionality of the resources on your site, allowing you to create custom applications or script interactions with your site.
 
 For Bold BI Enterprise, the API path will be `https://{Domain}/bi/api/site/{TenantIdentifier}/{ApiEndpoint}`
 

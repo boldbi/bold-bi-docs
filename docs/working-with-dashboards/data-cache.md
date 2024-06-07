@@ -79,7 +79,7 @@ Data cache can be achieved through two modes:
 The `In-Memory` mode is the default cache memory for dashboards. It stores the data in the internal cache storage. You should configure the `CacheMode` property for the `in-memory` mode selection. Please find more details about [Mode Selection](/working-with-dashboards/data-cache/#mode-selection).
 
 ### Redis
-Data is cached in an external server named `Redis`. Redis is an open source (BSD licensed), in-memory data structure store used as a database, cache, message broker, and streaming engine. Learn more about `Redis` and its installation [here](https://redis.io/).
+Data is cached in an external server named `Redis`. Redis is an open source (BSD licensed), in-memory data structure store used as a database, cache, message broker, and streaming engine. Learn more about `Redis` and its installation of [Redis](https://redis.io/).
 
 After installation, you should start the Redis server as shown in the following image:
 ![DataCache Redis server](/static/assets/working-with-dashboards/images/DataCache-Redis-server.png#max-width=70%)

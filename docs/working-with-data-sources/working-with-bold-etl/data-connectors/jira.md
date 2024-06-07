@@ -22,7 +22,7 @@ Jira by ``atlassian`` helps teams manage projects and tasks efficiently, priorit
 
 ## Connection Properties
 
-In a YAML file, the `config` section contains the following properties:
+The `config` section in a YAML file includes the following properties:
 
 ```yaml
 connector_name: jira

@@ -13,15 +13,15 @@ Slack is a popular messaging and collaboration platform for teams and organizati
 
 ## Grab User OAuth Token
 
-To set up the pipeline, create a Slack app in your workspace to obtain a user token for accessing the Slack API.
+To set up the pipeline, you need to create a Slack app in your workspace in order to obtain a user token for accessing the Slack API.
 
-1. Navigate to your Slack workspace and click on the name at the top-left.
+1. Go to your Slack workspace and click on the name at the top-left.
 2. Select Tools > Customize Workspace.
 3. From the top-left Menu, choose Configure apps.
-4. Click Build (top-right) > Create a New App.
-5. Opt for "From scratch", set the "App Name", and pick your target workspace.
-6. Confirm with Create App.
-7. Navigate to OAuth and Permissions under the Features section.
+4. Click on Build (top-right) > Create a New App.
+5. Choose "From scratch", enter the "App Name", and select your target workspace.
+6. Confirm by clicking on Create App.
+7. Go to OAuth and Permissions under the Features section.
 8. Assign the following scopes:
 
    | Name               | Description                                                |
@@ -37,9 +37,9 @@ To set up the pipeline, create a Slack app in your workspace to obtain a user to
    | ``mpim:read``          | View basic information about group direct messages          |
    | ``users:read``         | View people in a workspace                                 |
 
-   >**Note:** These scopes are adjustable; tailor them to your needs.
+   >**Note:** These scopes are adjustable; tailor them to fit your needs.
 
-9. From "OAuth & Permissions" on the left, add the scopes and copy the User OAuth Token.
+9. From the "OAuth & Permissions" section on the left, add the scopes and copy the User OAuth Token.
 
 ## Connection Properties
 

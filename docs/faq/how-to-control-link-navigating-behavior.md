@@ -28,7 +28,7 @@ This page describes how to open the links in the current tab rather than in a ne
 
     ![Enable SameTab](/static/assets/faq/images/set-enable-application-true.png)
 
-4. After completing the above steps, restart the site by using the provided [link](https://help.boldbi.com/faq/how-to-restart-the-bold-bi-embedded-application/). Once restarted, access the Bold BI application, and the link will now open in the current tab.
+4. After completing the above steps, To learn [how to restart the Bold BI](/faq/how-to-restart-the-bold-bi-embedded-application/) application. Once restarted, access the Bold BI application, and the link will now open in the current tab.
 
    **For Example:** 
 
@@ -36,4 +36,4 @@ This page describes how to open the links in the current tab rather than in a ne
 
     * When `EnableSameTabLinkTarget: true` is set in config.json, opening the dashboard from the dashboard listing page to view the dashboard data will now open in the current tab.
 
-   > **NOTE:** This feature is useful for controlling link navigation when the entire Bold BI Embed application is embedded in the IFrame. For more details about application embedding, refer to this [link](/embedding-options/application-embedding/).
+   > **NOTE:** This feature is useful for controlling link navigation when the entire Bold BI Embed application is embedded in the IFrame. For more details about [Application Embedding](/embedding-options/application-embedding/).

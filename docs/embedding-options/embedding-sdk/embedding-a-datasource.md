@@ -217,7 +217,7 @@ Please follow these steps to embed a data source in your application.
 
 ## How to implement the authorize server with user mail or user name
 
-1. You need to implement an authorization endpoint in your application. This endpoint will act as the bridge between your application and the Bold BI server. Additionally, you need to up-date the secure details such as email and group-based access. Learn more about the authorization server [here](/security-configuration/authorize-server/).  
+1. You need to implement an authorization endpoint in your application. This endpoint will act as the bridge between your application and the Bold BI server. Additionally, you need to up-date the secure details such as email and group-based access. Learn more about the [authorization server](/security-configuration/authorize-server/).
 
 2. To create an authorization-server action method, copy the following snippet into your con-troller. You can use either the currently logged in user's email at `user@domain.com` or their `username`, but this user must have access to the dashboard.
 
@@ -272,7 +272,7 @@ Please follow these steps to embed a data source in your application.
 
 ## How to get Embed Secret key from Bold BI application
 
-You can obtain your Embed Secret key from the administrator settings section. Please refer to this [link](/site-administration/embed-settings/) for additional information.
+You can obtain your Embed Secret key from the administrator settings section. Please refer to the [Embed Settings](/site-administration/embed-settings/) for additional information.
 
 ## How to get common Embed Secret key from UMS
 

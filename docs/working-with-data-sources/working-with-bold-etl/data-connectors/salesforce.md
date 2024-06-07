@@ -13,7 +13,7 @@ documentation: ug
 
 ## Grab Credentials
 
-To set up your pipeline, you'll need your Salesforce `user_name`, `password`, and `security_token`. Use your login credentials for `user_name` and `password`.
+To set up your pipeline, you'll need your Salesforce `user_name`, `password`, and `security_token`. Use your login credentials for the `user_name` and `password`.
 
 ### Obtain Security Token
 
@@ -28,7 +28,7 @@ Follow these steps to obtain the `security_token`:
 
 ## Connection Properties
 
-In a YAML file, the `config` section contains the following properties:
+The `config` section in a YAML file includes the following properties:
 
 ```yaml
 Connectorname: Salesforce

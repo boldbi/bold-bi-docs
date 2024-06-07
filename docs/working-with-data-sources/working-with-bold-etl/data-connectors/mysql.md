@@ -9,11 +9,11 @@ documentation: ug
 
 # MySQL
 
-[MySQL](https://www.mysql.com/) is a relational database management system based on SQL – Structured Query Language. The application is used for a wide range of purposes, including data warehousing, e-commerce, and logging applications.
+[MySQL](https://www.mysql.com/) is a relational database management system based on SQL (Structured Query Language). The application is used for a wide range of purposes, including data warehousing, e-commerce, and logging applications.
 
 ## Connection Properties
 
-In a YAML file, the `config` section contains the following properties:
+The `config` section in a YAML file includes the following properties:
 
 ```yaml
 Connectorname: MySQL

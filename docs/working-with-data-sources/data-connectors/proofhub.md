@@ -8,13 +8,13 @@ documentation: ug
 
 # Connecting Bold BI to ProofHub data source
 
-The Bold BI dashboard designer supports connecting the ProofHub web services using the REST API.
+The Bold BI dashboard designer supports connecting to ProofHub web services using the REST API.
 
 ## Choose ProofHub data source
 
 To configure the ProofHub data source, follow these steps:
 
-1. Click the **Data Sources** button in the configuration panel to add a new data connection.
+1. Click on the **Data Sources** button in the configuration panel to add a new data connection.
    ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/common/DataSourcesIcon.png)  
    
 2. Click **CREATE NEW** to launch a new connection from the connection panel.
@@ -22,13 +22,13 @@ To configure the ProofHub data source, follow these steps:
 
    ![Choose data source](/static/assets/working-with-datasource/data-connectors/images/proofhub/ChooseDS.png)
 
-> **NOTE:**  You can also create a data source from the home page by clicking the **Data Sources** menu from the left menu panel and **Create Data Source** from the data sources page.
+> **NOTE:**  You can also create a data source from the home page by clicking the **Data Sources** menu on the left menu panel and selecting **Create Data Source** from the data sources page.
 
    ![Choose data source from server](/static/assets/working-with-datasource/data-connectors/images/proofhub/ChooseDS_server.png)
 
 ## Create ProofHub data source
 
-Once you click the data source, the NEW DATA SOURCE configuration panel opens. Follow these steps to create the ProofHub data source.
+Once you click on the data source, the NEW DATA SOURCE configuration panel will open. Follow these steps to create the ProofHub data source.
 1. Enter a name and description (optional) for the data source.
 2. Enter a valid ProofHub REST API endpoint in the URL textbox. Refer to the [ProofHub API documentation](https://github.com/ProofHub/api_v3) for more details.
 
@@ -47,7 +47,7 @@ You can also edit the connection information set using the [Edit Connection](/wo
 #### How do I get API Key for connecting ProofHub Data source?
 
 1. Login to your [ProofHub](https://www.ProofHub.com/login) account.
-2. Click Manage profile dropdown and clicking five times on the profile picture. The API key of the logged-in user will be displayed in the pop-up window opened.
+2. Click on Manage profile dropdown and then click five times on the profile picture. The API key of the logged-in user will be displayed in the pop-up window that opens.
 
 ![Reveal API Key](/static/assets/working-with-datasource/data-connectors/images/proofhub/Access_key.png)
 
@@ -58,7 +58,7 @@ You can also edit the connection information set using the [Edit Connection](/wo
 Refresh Settings
 </td>
 <td>
-Period of time before next refresh call is triggered. This will automatically trigger a call for the API configured in the data source to keep the data up to date.
+The period of time before the next refresh call is triggered. This will automatically trigger a call to the API configured in the data source to keep the data up to date.
 </td>
 </tr>
 </table>
@@ -82,7 +82,7 @@ For more information on the API endpoints available for this data source, refer 
 `https://<:company_name>.proofhub.com/api/v3/people`
 
 ### Preview and data import
-* Click **Preview & Connect** to connect with the configurations set.
+* Click **Preview & Connect** to connect with the configurations that have been set.
 * The Choose Schema(s) dialog opens. The schema represents the key fields of JSON data retrieved from the ProofHub Rest API request. This dialog displays a list of schemas in the treeview and its corresponding values in the grid for preview. Select required schema(s) from the treeview to use in designer and click **Connect**.* The Choose Schema(s) dialog opens. The schema represents the key fields of JSON data retrieved from the ProofHub Rest API request. This dialog displays a list of schemas in the treeview and its corresponding values in the grid for preview. Select required schema(s) from the treeview to use in designer and click **Connect**.
 
    ![Preview](/static/assets/working-with-datasource/data-connectors/images/common/Preview.png)
@@ -94,7 +94,7 @@ For more information on the API endpoints available for this data source, refer 
 
 ### Connect using custom attribute and dashboard parameter
 
-We have added support for **custom attributes and dashboard parameters** to the data source connection. You can connect to the data source using custom attributes or dashboard parameters.
+We have added support for **custom attributes and dashboard parameters** in the data source connection. You can now connect to the data source using custom attributes or dashboard parameters.
 
 **Custom Attribute**
 
@@ -104,7 +104,7 @@ We have added support for **custom attributes and dashboard parameters** to the 
 
 ![Dashboard Parameter](/static/assets/working-with-datasource/data-connectors/images/proofhub/Dashboardparameter.png)
 
->**Note:** Refer the [Dashboard Parameter Documentation](https://help.boldbi.com/working-with-data-sources/dashboard-parameter/) and [Custom Attributes Documentation](https://help.boldbi.com/working-with-data-sources/configuring-custom-attribute/) for more details.
+>**Note:** Refer to the [Dashboard Parameter Documentation](https://help.boldbi.com/working-with-data-sources/dashboard-parameter/) and [Custom Attributes Documentation](https://help.boldbi.com/working-with-data-sources/configuring-custom-attribute/) for more details.
 
 ## Related links
 

@@ -53,7 +53,7 @@
           "Password Authentication"
         ],
         "summary": "Authenticate User",
-        "description": "Authenticate with a user password.",
+        "description": "Please authenticate with a user password.",
         "operationId": "PasswordAuthentication",
         "requestBody": {
           "content": {
@@ -153,7 +153,7 @@
           "Users"
         ],
         "summary": "Get Users",
-        "description": "Retrieves the list of user details.",
+        "description": "Retrieve the list of user details.",
         "operationId": "Users_GetUsers",
         "responses": {
           "200": {
@@ -188,7 +188,7 @@
           "Users"
         ],
         "summary": "Get a User by Email or Username",
-        "description": "Retrieves the particular user detail.",
+        "description": "Retrieve the specific user detail.",
         "operationId": "Users_GetUserDetail",
         "parameters": [
           {
@@ -238,7 +238,7 @@
           "Users"
         ],
         "summary": "Update User",
-        "description": "Updates the particular user detail.",
+        "description": "Update the specific user details.",
         "operationId": "Users_EditUser",
         "parameters": [
           {
@@ -308,7 +308,7 @@
           "Users"
         ],
         "summary": "Delete User",
-        "description": "Deletes the particular user.",
+        "description": "Delete the specific user.",
         "operationId": "Users_DeleteUser",
         "parameters": [
           {
@@ -358,7 +358,7 @@
           "Groups"
         ],
         "summary": "Add Group",
-        "description": "Adds the new group to group the users.",
+        "description": "Add the new group to group the users.",
         "operationId": "Groups_AddGroup",
         "requestBody": {
           "description": "Detail of the group.",
@@ -414,7 +414,7 @@
           "Groups"
         ],
         "summary": "Get Groups",
-        "description": "Retrieves the list of group details.",
+        "description": "Retrieve the list of group details.",
         "operationId": "Groups_GetGroups",
         "responses": {
           "200": {
@@ -448,7 +448,7 @@
           "Groups"
         ],
         "summary": "Get Group by Id",
-        "description": "Retrieves the particular group detail.",
+        "description": "Retrieve the specific group details.",
         "operationId": "Groups_GetGroupDetail",
         "parameters": [
           {
@@ -499,7 +499,7 @@
           "Groups"
         ],
         "summary": "Update Group",
-        "description": "Updates the particular group detail.",
+        "description": "Update the specific group details.",
         "operationId": "Groups_EditGroup",
         "parameters": [
           {
@@ -574,7 +574,7 @@
           "Groups"
         ],
         "summary": "Delete Group",
-        "description": "Deletes the particular group.",
+        "description": "Remove the specific group.",
         "operationId": "Groups_DeleteGroup",
         "parameters": [
           {
@@ -621,7 +621,7 @@
           "Groups"
         ],
         "summary": "Get Group Users",
-        "description": "Retrieves the list of user details of the particular group.",
+        "description": "Retrieve the list of user details for the specific group.",
         "operationId": "Groups_GetUsersFromGroup",
         "parameters": [
           {

@@ -27,7 +27,7 @@ The option for sample dashboards is available in the `Create Dashboard` section,
 
     ![Hide Sample Dashboard](/static/assets/faq/images/hide-sample-dashboard.png)
 
-4. Restart the application and access the site. Refer to this [link](/faq/how-to-restart-the-bold-bi-embedded-application/) to learn how to restart the Bold BI application.
+4. Restart the application and access the site. Please refer to the instructions on [how to restart the Bold BI](/faq/how-to-restart-the-bold-bi-embedded-application/) application for more information.
 
 The sample dashboard option will be hidden as in the following image.
 

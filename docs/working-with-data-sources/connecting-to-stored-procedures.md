@@ -36,7 +36,7 @@ This OpenQuery only supports the Microsoft SQL Server and Azure SQL Database (Ma
 In Internal Cache mode, Bold BI executes the stored procedure completely and moves the result into a temporary table. After that, Bold BI uses the created temporary table for every action execution in the stored procedure's data source.
 
 ## Connecting to SQL Server database
-1. To connect to the SQL Server database, refer to this link [Microsoft SQL](/working-with-data-sources/data-connectors/sql-data-source/).
+1. To connect to the SQL Server database, refer to this link [Microsoft SQL](/working-with-data-sources/data-connectors/ms-sql-server/).
      
 2. If it succeeds, you can get into the data design view with the available stored procedure displayed on the left pane of the tree view. The available parameters can also be displayed while expanding the procedures.
 

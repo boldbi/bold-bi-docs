@@ -44,7 +44,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/coldfusion-sa
     </table>
 
 
- 3. You can retrieve your Embed Secret key from the administrator setting section. Please refer to this [link](/site-administration/embed-settings/) for more details.
+ 3. You can retrieve your Embed Secret key from the administrator setting section. Please refer to the [Embed Settings](/site-administration/embed-settings/) for further information.
 
  4. Please run your ColdFusion application.
 

@@ -39,9 +39,9 @@ To resolve this issue, please add Warehouse=WarehouseName in the Additional conn
 
 This error occurs when the required client DLL is not installed in Bold BI. Please download the client libraries based on your environment using the following help links.
 
-* [Installing client libraries in azure app service](/deploying-bold-bi/deploying-in-azure-app-service/install-client-libraries/)
-* [Installing client libraries in linux](/deploying-bold-bi/deploying-in-linux/install-optional-libraries/v4.1-or-older/)
-* [Installing client libraries in windows](/deploying-bold-bi/deploying-in-windows/installation-and-deployment/#client-libraries)
+* [Installing client libraries in azure app service](/deploying-bold-bi/deploying-on-azure-app-service/install-client-libraries/)
+* [Installing client libraries in linux](/deploying-bold-bi/deploying-on-linux/install-optional-libraries/v4.1-or-older/)
+* [Installing client libraries in windows](/deploying-bold-bi/deploying-on-windows/installation-and-deployment/#client-libraries)
 
 ## Error: Login failed for user - SQL Server Windows authentication
 
@@ -88,7 +88,7 @@ Please find the steps to increase the timeout value in the following Nginx confi
 ![Solution image Command timeout](/static/assets/faq/images/solution-command-time-out2.png)
 3. Finally, restart nginx by running the following command.<br/>
 **sudo systemctl restart nginx**<br/>
-Please refer to the provided document for instructions on [manually-configure-nginx](/deploying-bold-bi/deploying-in-linux/installation-and-deployment/bold-bi-on-ubuntu/#manually-configure-nginx)
+Please refer to the provided document for instructions on [manually-configure-nginx](/deploying-bold-bi/deploying-on-linux/installation-and-deployment/bold-bi-on-ubuntu/#manually-configure-nginx)
 
 ## Error: No space left on device
 

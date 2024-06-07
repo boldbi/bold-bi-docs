@@ -7,12 +7,12 @@ documentation: ug
 ---
 
 # Connecting Bold BI to Zendesk Support data source
-The Bold BI dashboard designer supports connecting Zendesk Support web services through REST API. 
+The Bold BI dashboard designer supports connecting to Zendesk Support web services through the REST API. 
 
 ## Choose Zendesk Support data source
 
 To configure the Zendesk Support data source, follow these steps:
-1. Click the **Data Sources** button in the configuration panel to add a new data connection.
+1. Click on the **Data Sources** button in the configuration panel to add a new data connection.
    ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/common/DataSourcesIcon.png)
    
 2. Click **CREATE NEW** to launch a new connection from the connection panel.
@@ -20,12 +20,12 @@ To configure the Zendesk Support data source, follow these steps:
 
    ![Choose data source](/static/assets/working-with-datasource/data-connectors/images/ZendeskSupport/ChooseDS.png)
 
-> **NOTE:** You can also create a data source from the home page by clicking the **Data Sources** menu from the left menu panel and **Create Data Source** from the data sources page.
+> **NOTE:** You can also create a data source from the home page by clicking the **Data Sources** menu on the left menu panel and selecting **Create Data Source** from the data sources page.
 
    ![Choose data source from server](/static/assets/working-with-datasource/data-connectors/images/ZendeskSupport/ChooseDS_Server.png)
 
 ## Create Zendesk Support data source
-Once you click the data source, the NEW DATA SOURCE configuration panel opens. Follow these steps to create a Zendesk Support data source.
+Once you click on the data source, the NEW DATA SOURCE configuration panel will open. Follow these steps to create a Zendesk Support data source.
 1. Enter a name and description (optional) for the data source.
 2. Enter the **HostName** for the connected account.
 3. Click the **API Endpoints** dropdown box and choose the required endpoint.
@@ -48,8 +48,7 @@ You can also edit the connection information set using the [Edit Connection](/wo
 Max Rows
 </td>
 <td>
-Most of the REST APIs return only fewer data on a single API request. To pull the amount of data you need, set a value in this field.  
-Pagination is handled internally and will fetch the amount of data you need.
+Most REST APIs return only a limited amount of data on a single API request. To retrieve the necessary amount of data, you can set a value in this field. Pagination is handled internally and will fetch the required data.
 </td>
 </tr>
 <tr>
@@ -100,7 +99,7 @@ Replace it in the URL to query particular conversations:
 
 ### Connect using custom attribute and dashboard parameter
 
-We have added support for **custom attributes and dashboard parameters** to the data source connection. You can connect to the data source using custom attributes or dashboard parameters.
+We have added support for **custom attributes and dashboard parameters** in the data source connection. You can now connect to the data source using custom attributes or dashboard parameters.
 
 **Custom Attribute**
 
@@ -110,7 +109,7 @@ We have added support for **custom attributes and dashboard parameters** to the 
 
 ![Dashboard Parameter](/static/assets/working-with-datasource/data-connectors/images/ZendeskSupport/Dashboardparameter.png)
 
->**Note:** Refer the [Dashboard Parameter Documentation](https://help.boldbi.com/working-with-data-sources/dashboard-parameter/) and [Custom Attributes Documentation](https://help.boldbi.com/working-with-data-sources/configuring-custom-attribute/) for more details.
+>**Note:** Refer to the [Dashboard Parameter Documentation](https://help.boldbi.com/working-with-data-sources/dashboard-parameter/) and [Custom Attributes Documentation](https://help.boldbi.com/working-with-data-sources/configuring-custom-attribute/) for more details.
 
 ## Related links
 [Data Transformation](/working-with-data-sources/data-modeling/joining-table/)

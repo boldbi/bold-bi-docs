@@ -65,8 +65,7 @@ We have added support for **custom attributes and dashboard parameters** to the 
 Max Rows
 </td>
 <td>
-Most of the REST APIs return only fewer data on a single API request. To pull the amount of data you need, set a value in this field.  
-Pagination is handled internally and will fetch the amount of data you need.
+Most REST APIs return only a limited amount of data on a single API request. To retrieve the necessary amount of data, you can set a value in this field. Pagination is handled internally and will fetch the required data.
 </td>
 </tr>
 <tr>
@@ -74,7 +73,7 @@ Pagination is handled internally and will fetch the amount of data you need.
 Refresh Settings
 </td>
 <td>
-Period of time before next refresh call is triggered. This will automatically trigger a call for the API configured in the data source to keep the data up to date. If you do not want to sync your new data, choose ‘Never’.
+The period of time before the next refresh call is triggered. This will automatically trigger a call to the API configured in the data source to keep the data up to date. If you do not want to sync your new data, choose ‘Never’.
 </td>
 </tr>
 </table>
@@ -90,28 +89,29 @@ Replace it in the URL to query a particular payment:
 For more information on the API endpoints available for this data source, refer to their official [API Documentation](https://reference.chargify.com/).
 
 ### Sample queries
+
 **Subscriptions**
 
-[https://testaccount.chargify.com/subscriptions.json](https://testaccount.chargify.com/subscriptions.json)
+`https://testaccount.chargify.com/subscriptions.json`
 
 **Customers**
 
-[https://testaccount.chargify.com/customers.json](https://testaccount.chargify.com/customers.json)
+`https://testaccount.chargify.com/customers.json`
 
 **Events**
 
-[https://testaccount.chargify.com/events.json](https://testaccount.chargify.com/events.json)
+`https://testaccount.chargify.com/events.json`
 
 **Transactions**
 
-[https://testaccount.chargify.com/transactions.json](https://testaccount.chargify.com/transactions.json)
+`https://testaccount.chargify.com/transactions.json`
 
 **Payment Profiles**
 
-[https://testaccount.chargify.com/payment_profiles.json](https://testaccount.chargify.com/payment_profiles.json)
+`https://testaccount.chargify.com/payment_profiles.json`
 
 ### Preview and data import
-* Click **Preview & Connect** to connect with the configurations set.
+* Click **Preview & Connect** to connect with the configurations that have been set.
 * The Choose Schema(s) dialog opens. The schema represents the key fields of JSON data retrieved from the Chargify Rest API request. This dialog displays a list of schemas in treeview and its corresponding values in grid for preview. Select the required schema(s) from the treeview to use in the designer and click **Connect**.
 
    ![Preview](/static/assets/working-with-datasource/data-connectors/images/common/Preview.png)

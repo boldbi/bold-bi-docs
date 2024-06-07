@@ -14,15 +14,15 @@ documentation: ug
 ## Grab Credentials
 
 1. Sign in to ``mux.com``.
-2. Click "Settings" at the bottom left, then select "Access Token".
+2. Click on "Settings" at the bottom left, then select "Access Token".
 3. Select "Generate new token".
-4. Assign read permissions for ``Mux`` videos and data, and name the token.
-5. Click "Generate token".
+4. Assign read permissions for `Mux` videos and data, and give the token a name.
+5. Click on "Generate token".
 6. Copy the API access token and secret key for later configuration.
 
 ## Connection Properties
 
-In a YAML file, the `config` section contains the following properties:
+The `config` section in a YAML file includes the following properties:
 
 ```yaml
 connector_name: Mux

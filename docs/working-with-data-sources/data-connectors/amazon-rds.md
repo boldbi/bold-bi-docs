@@ -48,7 +48,7 @@ We have added support for **custom attributes and dashboard parameters** to the 
 
 ![Dashboard Parameter](/static/assets/working-with-datasource/data-connectors/images/amazonrds/amazon_dashboardparameter.png)
 
->**Note:** Refer to the [Dashboard Parameter Documentation](https://help.boldbi.com/working-with-data-sources/dashboard-parameter/) and [Custom Attributes Documentation](https://help.boldbi.com/working-with-data-sources/configuring-custom-attribute/) for more details.
+>**Note:** Refer to the [Dashboard Parameter Documentation](https://help.boldbi.com/working-with-data-sources/dashboard-parameter/) and [Custom Attributes Documentation](/working-with-data-sources/configuring-custom-attribute/) for more details.
 
 ### Amazon RDS supported database engine in Bold bi
    * MySQL
@@ -112,7 +112,7 @@ In this connection type, a data source is fetched from the source periodically. 
 1. Click **Connect** to connect to the Amazon RDS server with configured details.
 2. The Extract Data dialog opens. This dialog has two modes of connection either via Table or [Custom query](/faq/working-with-custom-query-extract-mode-in-bold-bi/). . Under custom query option, write the required query and click **Connect**.
 Under Table option, the dialog displays list of tables and views in treeview. Select the required table(s) or view(s) from treeview to use in the designer.
-The option is available for configuring incremental refresh column (The table must have a primary key column and date column to configure this option) for the selected items in the right side panel. If you configured it, then the data source will work on [Incremental update](/working-with-data-sources/data-connectors/sql-data-source/#incremental-update), otherwise works on [Full load](/working-with-data-sources/data-connectors/sql-data-source/#full-load) concept. And finally click **Connect**.
+The option is available for configuring incremental refresh column (The table must have a primary key column and date column to configure this option) for the selected items in the right side panel. If you configured it, then the data source will work on [Incremental update](/working-with-data-sources/data-connectors/ms-sql-server/#incremental-update), otherwise works on [Full load](/working-with-data-sources/data-connectors/ms-sql-server/#full-load) concept. And finally click **Connect**.
 
    ![Preview](/static/assets/working-with-datasource/data-connectors/images/common/Preview_Extract.png#max-width=100%)
 
@@ -138,7 +138,7 @@ We have added support for **custom attributes and dashboard parameters** to the 
 **Dashboard Parameter**
 ![Dashboard Parameter](/static/assets/working-with-datasource/data-connectors/images/amazonrds/amazon_dashboardparameter.png)
 
->**Note:** Refer to the [Dashboard Parameter Documentation](https://help.boldbi.com/working-with-data-sources/dashboard-parameter/) and [Custom Attributes Documentation](https://help.boldbi.com/working-with-data-sources/configuring-custom-attribute/) for more details.
+>**Note:** Refer to the [Dashboard Parameter Documentation](https://help.boldbi.com/working-with-data-sources/dashboard-parameter/) and [Custom Attributes Documentation](/working-with-data-sources/configuring-custom-attribute/) for more details.
 
 ## Connecting Bold BI to Amazon RDS Data Source via REST API
 

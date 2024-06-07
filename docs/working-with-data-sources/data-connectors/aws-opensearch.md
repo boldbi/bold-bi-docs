@@ -70,7 +70,7 @@ After clicking the data source, the NEW DATA SOURCE configuration panel opens. F
 
      ![Open search connection](/static/assets/working-with-datasource/data-connectors/images/Amazon-opensearch/opendistroextract.png#max-width=100%)
 
-> **NOTE:**  You can connect to the Elasticsearch database by selecting the connection type as Elasticsearch SQL. Please click [here](/working-with-data-sources/data-connectors/elastic-search/) for Elasticsearch data source connection.
+> **NOTE:**  You can connect to the Elasticsearch database by selecting the connection type as Elasticsearch SQL. Please click on the [Elastic Search](/working-with-data-sources/data-connectors/elastic-search/) for Elasticsearch data source connection.
 
 > **NOTE:** You can also connect through the `Custom query` support in the extract mode of connection by providing a valid SQL query in both the Elasticsearch SQL and Open Distro connection types.
 

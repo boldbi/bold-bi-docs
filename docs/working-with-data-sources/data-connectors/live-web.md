@@ -7,8 +7,8 @@ documentation: ug
 ---
 
 # Connecting Bold BI to Web data source
-Bold BI dashboard designer supports connecting almost all web services that has a REST API interface.
-A live connection in Bold BI is more powerful than an extract connection because it won't store data in the data process. However, it is different from the Direct Query since it will fetch the data from your server rather than connecting directly to it.
+The Bold BI dashboard designer supports connecting to nearly all web services that have a REST API interface.
+A live connection in Bold BI is more powerful than an extract connection because it does not store data in the data process. However, it is different from Direct Query since it fetches the data from your server rather than connecting directly to it.
 
 ## What is Live Connection?
 A live connection feature is available for WEB API data sources. Live web API connections do not store data in the data process. The fetched data will be cleared from the data process once all widgets have been visualized in the dashboard.
@@ -16,9 +16,9 @@ A live connection feature is available for WEB API data sources. Live web API co
 ### Advantages
 1. Dashboard can automatically update with live data.
 2. Data will no longer be stored on the data process, making it more secure.
-3. No need to configure refresh setting for data refresh.
+3. There is no need to configure refresh settings for data refresh.
 4. [Shared](/working-with-data-sources/shared-table/) and [Joined](/working-with-data-sources/data-modeling/joining-table/) more than one live data sources.
-5. The [Dashboard parameter](/working-with-data-sources/dashboard-parameter/) is supported in Live connection, which is a global placeholder value such as a number, string, or date.
+5. The [Dashboard parameter](/working-with-data-sources/dashboard-parameter/) is supported in Live connection, allowing for a global placeholder value such as a number, string, or date.
 6. Pick up a selected column from the Web API schema.
 
 ### Limitations
@@ -27,9 +27,9 @@ Some of the limitations associated with the Bold BI Web API LIVE Connection are 
 2. It is a bit slower than the extract mode connection because the data will be fetched from your server for every action.
 
 ### Workflow of live connections in Bold BI
-1. At the beginning, the Live Web API can fetch data from a connected server and move it to a connected data process.
-2. Widgets on the dashboard are rendered based on fetched data.
-3. Data will be cleared from the data process once the dashboard data has been rendered.
+1. In the beginning, the Live Web API can fetch data from a connected server and transfer it to a connected data processing unit.
+2. Widgets on the dashboard are displayed based on the fetched data.
+3. The data will be cleared from the data processing unit once the dashboard data has been displayed.
 
 ## Choose web data source
 To configure the web data source, follow the below steps:
@@ -42,19 +42,19 @@ To configure the web data source, follow the below steps:
 
    ![Choose data source](/static/assets/working-with-datasource/data-connectors/images/LiveWeb/ChooseDS.png)
 
-> **NOTE:**  You can also create a data source from the home page by clicking the **Data Sources** menu from left menu panel and **Create Data Source** from the data sources page.
+> **NOTE:**  You can also create a data source from the home page by clicking on the **Data Sources** menu on the left menu panel and selecting **Create Data Source** from the data sources page.
 
    ![Choose data source](/static/assets/working-with-datasource/data-connectors/images/LiveWeb/ChooseDS_Server.png)
 
 ### Create web data source
-After clicking the data source, the **NEW DATA SOURCE** configuration panel opens. Follow the below steps to create web data source:
+After clicking on the data source, the **NEW DATA SOURCE** configuration panel will open. Follow the below steps to create web data source:
 1. Enter a name and description (optional) for the data source.
 2. Enter a valid REST API endpoint in the URL text box.
-3. Choose one of the **Method Type** from the combo box for the provided REST API. Options are *GET* and *POST*.
-4. If required by the REST API, provide key value pairs in **Headers**. To get details about headers, refer to [Query Parameters](/working-with-data-sources/data-connectors/web/#query-parameters).
+3. Choose one of the **Method Type** from the combo box for the provided REST API. The options are *GET* and *POST*.
+4. If required by the REST API, provide key value pairs in **Headers**. For details about headers, refer to [Query Parameters](/working-with-data-sources/data-connectors/web/#query-parameters).
 5. Choose a time interval for **Refresh Settings** using the combo box to trigger the Rest API request periodically to keep the data in sync with our dashboard.  
-6. Choose a **Data Format** from the combo box based on the response of your provided REST API. Options are *JSON, CSV, and XML*.
-7. Choose an **Authentication Type** supported by the data source. Options are *Basic http authentication* and *None*. Learn more about [Authentication Types](/working-with-data-sources/data-connectors/web/#authentication-types).
+6. Choose a **Data Format** from the combo box based on the response of your provided REST API. The options are *JSON, CSV, and XML*.
+7. Choose an **Authentication Type** supported by the data source. The options are *Basic http authentication* and *None*. Learn more about [Authentication Types](/working-with-data-sources/data-connectors/web/#authentication-types).
 8. Choose a **Pagination Type** supported by the data source from the combo box.
 
    ![Data source preview](/static/assets/working-with-datasource/data-connectors/images/LiveWeb/DataSourcesView.png)
@@ -62,7 +62,7 @@ After clicking the data source, the **NEW DATA SOURCE** configuration panel open
 You can also edit the connection information set here using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option. 
 
 ### Preview and Data Import
-* Click **Preview & Connect** to connect with the configurations set.
+* Click **Preview & Connect** to connect with the configurations that have been set.
 * The Choose Table(s) dialog opens. The schema represents the key data fields retrieved from the Web Rest API request. This dialog displays a list of schemas in treeview and their corresponding values in the grid for preview. Select the required schema(s) from the treeview to use in the designer and click **Connect**.
 
    ![Preview](/static/assets/working-with-datasource/data-connectors/images/common/Preview.png)
@@ -75,7 +75,7 @@ You can also edit the connection information set here using the [Edit Connection
 
 ### Connect using custom attribute and dashboard parameter
 
-We have added support for **custom attributes and dashboard parameters** to the data source connection. You can connect to the data source using custom attributes or dashboard parameters.
+We have added support for **custom attributes and dashboard parameters** in the data source connection. You can now connect to the data source using custom attributes or dashboard parameters.
 
 **Custom Attribute**
 
@@ -85,25 +85,25 @@ We have added support for **custom attributes and dashboard parameters** to the 
 
 ![Dashboard Parameter](/static/assets/working-with-datasource/data-connectors/images/LiveWeb/Dashboardparameter.png)
 
->**Note:** Refer the [Dashboard Parameter Documentation](https://help.boldbi.com/working-with-data-sources/dashboard-parameter/) and [Custom Attributes Documentation](https://help.boldbi.com/working-with-data-sources/configuring-custom-attribute/) for more details.
+>**Note:** Refer to the [Dashboard Parameter Documentation](https://help.boldbi.com/working-with-data-sources/dashboard-parameter/) and [Custom Attributes Documentation](https://help.boldbi.com/working-with-data-sources/configuring-custom-attribute/) for more details.
 
 ## Pagination Types
 
 Options are [*None*](#none), [*Offset*](#offset), [*Next Page*](#next-page), [*Next Token*](#next-token), and [*Next URL*](#next-url).
 
-> **Note:**  In accordance with the pagination type, the response data must match the provided JSON format.
+> **Note:**  According to the pagination type, the response data must align with the provided JSON format.
 
 ### None
 
-It can be used when the REST API does not need to be paginated. This will return the first set of records alone.
+It can be used when the REST API does not need to be paginated. This will return only the first set of records.
 
 ### Offset
 
-The number of records to be skipped before starting paginating.
+The number of records that should be skipped before beginning pagination.
 
    ![Offset Pagination](/static/assets/working-with-datasource/data-connectors/images/LiveWeb/Offset_Pagination.png)
 
-For example, connect the `OData` REST API in the web data source with the pagination parameters as follows:
+For example, connect the `OData` REST API in the web data source with the pagination parameters as shown below:
 
    <table>
    <tr>
@@ -183,7 +183,7 @@ For example, connect the `OData` REST API in the web data source with the pagina
 
 ### Next Page
 
-The number of pages to be fetched with the specific number of records per page.
+The number of pages that need to be fetched with the specific number of records per page.
 
    ![Next Page Pagination](/static/assets/working-with-datasource/data-connectors/images/LiveWeb/Next_Page_pagination.png)
 
@@ -398,30 +398,30 @@ For example, let's connect the `GitHub` REST API in the web data source with the
    </tr>
    </table> 
 
-> **NOTE:**   To do pagination, you must provide any one of the field values, either the `Total Records Path` or `Data Indicator Path`. If both values are provided, the `Total Records Path` will be considered. 
+> **NOTE:**   To implement pagination, you must provide either the `Total Records Path` or the `Data Indicator Path`. If both values are provided, the `Total Records Path` will take precedence. 
 
 ## Query Parameters
 
-1. If required by the Rest API, pass required values as key-value pairs in **Headers**.
-2. For **POST** method type, if required, pass required values as key-value pairs in **Parameter(s)**.
-3. Use either *Parameter(s)* or *Raw* for POST request.
+1. If the Rest API requires it, pass the necessary values as key-value pairs in the **Headers**.
+2. For the **POST** method, if necessary, pass the required values as key-value pairs in the **Parameters**.
+3. Use either *Parameter(s)* or *Raw* for a POST request.
 
 ## Authentication Types
 
-1. If your data source supports authentication directly through REST API URL, choose **None** under **Authentication Type**.
+1. If your data source supports authentication directly through the REST API URL, choose **None** under **Authentication Type**.
 2. If your data source supports API Key/API Token authentication, pass these values under **Header(s)** by clicking **+Add**. Choose **None** under **Authentication Type**.
 3. If your data source has Basic HTTP authentication, choose **Basic http Authentication** under **Authentication Type** and input the username and password.
 
 ### Connecting Web API data source with API Key Authentication
-API Key is one of the most commonly used authentication types for REST API. API Key will be assigned to a user by the provider at the time of user creation or when enabling the API Key authentication to access the data via REST API.
+An API key is one of the most commonly used authentication types for REST APIs. The API key will be assigned to a user by the provider at the time of user creation or when enabling API key authentication to access data via the REST API.
 
-API Key can be used in following places which have listed below.
+API keys can be used in the following places, which are listed below.
 * Authorization/Custom Header (Basic or Bearer).
 * Query String.
 * Body Data.
 
 ### Adding Authorization/Custom header for API Key
-To connect REST API for adding API Key in the header, you can follow below steps to connect the API in Bold BI. 
+To connect a REST API for adding an API Key in the header, you can follow the steps below to connect the API in Bold BI. 
 
 * Add header in Web API data source as below.
 
@@ -431,36 +431,36 @@ To connect REST API for adding API Key in the header, you can follow below steps
 
     ![Authentication View](/static/assets/working-with-datasource/data-connectors/images/LiveWeb/Authentication_View.png)
 	
-* Header value can be either basic or bearer based on the application that you are connecting.
-* Most of the API Key authentication connect using Authorization header. You can also change the name of the header key as per your need.
+* The header value can be either basic or bearer, depending on the application to which you are connecting.
+* Most API Key authentication methods connect using the Authorization header. You can also change the name of the header key as needed.
 
     ![Header Basic View](/static/assets/working-with-datasource/data-connectors/images/LiveWeb/Header_Basic_View.png)
  
 ### Adding API Key in Query String Parameter
-Query String parameter will be added within the URL, so you can access the REST API without adding any header or body.
+A query string parameter will be added to the URL, allowing you to access the REST API without the need to add any headers or bodies.
     ![Query String parameter View](/static/assets/working-with-datasource/data-connectors/images/LiveWeb/Query_String_parameter_View.png)
 	
-* No additional steps may require for connecting API using Query String type of API Key authentication. 
-* You need to select the Authentication Type as None since its API Key added in the Query String parameter.
+* No additional steps may be required for connecting to the API using Query String type of API Key authentication.
+* You need to select the Authentication Type as None, since the API Key is added in the Query String parameter.
 
     ![Authentication Type View](/static/assets/working-with-datasource/data-connectors/images/LiveWeb/Authentication_Type_View.png)
 	
 ### Adding API Key in the Body Data for Post method REST APIs
-Body Data usually be added for Post method API calls. If the application designed to send the API Key over the Body Data of REST API, you can follow the below steps.
+Body data is typically added for POST method API calls. If the application is designed to send the API Key over the body data of the REST API, you can follow the steps below.
     
-* Choose POST method in Web API data source to add Body Data and add the API Key as below with relevant property names.
+* Please select the POST method in the Web API data source to include Body Data and then add the API Key as shown below, using the appropriate property names.
 
     ![Post method View](/static/assets/working-with-datasource/data-connectors/images/LiveWeb/Post_Method_View.png)
 
-* You need to select the Authentication Type as None since its API Key added as Body Data.
+* You need to select the Authentication Type as None since its API Key is added as Body Data.
 
     ![Post Authentication Type View](/static/assets/working-with-datasource/data-connectors/images/LiveWeb/Post_Authentication_Type_View.png)
 
 
 ## Dashboard Parameter
 
-Use Dashboard parameters with Live Web API connection.
-The Web API live connection in combination with the dashboard parameter will help to achieve many of the use cases. The following are some examples of dashboard parameters with Live web connections.
+Utilize dashboard parameters in conjunction with a Live Web API connection.
+Connecting to the Web API live connection, along with using dashboard parameters, will assist in achieving various use cases. Below are some examples of using dashboard parameters with Live web connections.
 
 Dashboard parameters can be used in the Web API connection's URL, Headers, and Parameters.
 
@@ -473,23 +473,23 @@ Follow these steps to use the feature.
    ![Data preview](/static/assets/working-with-datasource/data-connectors/images/LiveWeb/web1.png)
 2. Once you have connected the data source, create the StartDate and EndDate under the [Literal Mode](/working-with-data-sources/dashboard-parameter/configuring-dashboard-parameters/) dashboard parameters.
    ![Data preview](/static/assets/working-with-datasource/data-connectors/images/LiveWeb/web2.png)
-3. Save the data source. Then, click the edit data source to reconnect the dashboard parameter URL as given and save the changes.
+3. Save the data source first. Then, click on the Edit Data Source button to reconnect the dashboard parameter URL provided, and save the changes.
    Example:`http://services.odata.org/V4/OData/OData.svc/Products?%24filter=ReleaseDate%20gt%20@{{:LiteralDS.StartDate}}T00:00:00Z%20and%20ReleaseDate%20lt%20@{{:LiteralDS.EndDate}}T00:00:00Z`
 
    ![Data preview](/static/assets/working-with-datasource/data-connectors/images/LiveWeb/web3.png)
-4. Create the dashboard with the data source and publish it.
+4. Create the dashboard using the data source and then publish it.
 
     >  **NOTE:** A dashboard is rendered according to the date range configured in the dashboard parameter when the data source is created.
 
    ![Data preview](/static/assets/working-with-datasource/data-connectors/images/LiveWeb/web5.png)
-5. Click the dashboard parameter icon and adjust the date range to render the dashboard with the specified values.
+5. Click on the dashboard parameter icon and adjust the date range to display the dashboard with the specified values.
    ![Data preview](/static/assets/working-with-datasource/data-connectors/images/LiveWeb/web4.png)
-6. Real-time data will be displayed on the dashboard based on the selected date range.
+6. Real-time data will be displayed on the dashboard according to the chosen date range.
     ![Data preview](/static/assets/working-with-datasource/data-connectors/images/LiveWeb/web6.png)
 
 **Example 2:** Filtering the dashboards based on Iterative Mode.
 
-   >  **Note:** The Live Web data sources do not support multiple iterative Modes for optimum performance and time delay.
+   >  **Note:** The Live Web data sources do not support multiple iterative modes for optimal performance and minimal time delay.
 
 Follow these steps to use the feature.
 
@@ -497,19 +497,19 @@ Follow these steps to use the feature.
 `https://gorest.co.in/public/v2/users`
    ![Data preview](/static/assets/working-with-datasource/data-connectors/images/LiveWeb/it1.png)
 
-2. Once you've connected the data source, create the User ID under the Iterative Mode of the dashboard parameters. Refer to the document to add the [Iterative Mode](/working-with-data-sources/dashboard-parameter-iterative-mode/) dashboard parameter.
+2. Once you have connected the data source, create the User ID under the Iterative Mode of the dashboard parameters. Refer to the document for instructions on how to add the [Iterative Mode](/working-with-data-sources/dashboard-parameter-iterative-mode/) dashboard parameter.
    ![Data preview](/static/assets/working-with-datasource/data-connectors/images/LiveWeb/it2.png)
-3. Save the data source. Then, click the edit data source to reconnect the dashboard parameter URL as given and save the changes.
+3. Save the data source. Then, click edit data source to reconnect the dashboard parameter URL as provided and save the changes.
    Example:`https://gorest.co.in/public/v2/users/@{{:IterativeDS.User ID}}`
    ![Data preview](/static/assets/working-with-datasource/data-connectors/images/LiveWeb/it3.png)
 
 4. Create the dashboard with the data source and publish it.
 
-    >  **NOTE:** A dashboard is rendered according to the User ID's range configured in the dashboard parameter when the data source is created.
+    >  **NOTE:** A dashboard is rendered according to the range of User IDs configured in the dashboard parameter when the data source is created.
 
    ![Data preview](/static/assets/working-with-datasource/data-connectors/images/LiveWeb/it4.png)
 
-5. Click the dashboard parameter icon and select the User IDs to render the dashboard with the specified values.
+5. Click on the dashboard parameter icon and select the User IDs to render the dashboard with the specified values.
    ![Data preview](/static/assets/working-with-datasource/data-connectors/images/LiveWeb/it5.png)
 6. Real-time data will be displayed on the dashboard based on the selected User ID's range.
     ![Data preview](/static/assets/working-with-datasource/data-connectors/images/LiveWeb/it6.png)
@@ -521,7 +521,7 @@ Follow these steps to use the feature.
 Live mode max rows limitation
 </td>
 <td>
-For optimum performance in live mode Web API, records are restricted to 5000 by default. Change the limit from the Max Rows option to fetch more records in live mode or extract mode for more than 5000 records.
+For optimal performance in live mode Web API, records are restricted to 5000 by default. To fetch more records in live mode or extract mode for more than 5000 records, change the limit from the Max Rows option.
 </td>
 </tr>
 <tr>
@@ -529,14 +529,14 @@ For optimum performance in live mode Web API, records are restricted to 5000 by 
 Refresh Settings limitation
 </td>
 <td>
-For the live mode Web API, refreshing tables is impossible because the data is not stored while connecting the data source in live mode.
+In live mode Web API, it is impossible to refresh tables because the data is not stored when connecting to the data source.
 </td>
 </tr>
 </table>
 
 ## Configuring Date Parameters
 
-You can configure the URL of the API request with templates containing date queries. The queries will be updated with respective date values.
+You can configure the URL of the API request with templates containing date queries. The queries will be updated with the respective date values.
 
 **Syntax**`{{:today()}}:`It is used for single calendar related method.
 
@@ -548,15 +548,15 @@ For example,a dummy API is used to explain here
 
    ![Showing configuration of relative date parameter with web url](/static/assets/working-with-datasource/data-connectors/images/LiveWeb/RelativeDateParsing.png)
 
-Now, this URL will be parsed, and templates will be matched, hence the templates will be replaced with dates accordingly. This helps you to fetch data between the start date and end date.
+Now, this URL will be parsed, and templates will be matched. Therefore, the templates will be replaced with dates accordingly. This will help you fetch data between the start date and end date.
 
 ### Functions supported in date parameters
 
-You can configure parameters as numeric values for the following functions: AddMinutes, Addhours, AddDays, AddWeeks, AddMonths, AddYears, AddQuarters, SetDayStart, and SetMonthStart.
+You can configure parameters as numeric values for the following functions: AddMinutes, AddHours, AddDays, AddWeeks, AddMonths, AddYears, AddQuarters, SetDayStart, and SetMonthStart.
 
-All the Add methods should not have parameter as 0, the SetDayStart should have a numerical value between 0 and 6, and the SetMonthStart should have a numerical value between 1 and 12.
+All the Add methods should not have a parameter of 0. The SetDayStart function should have a numerical value between 0 and 6, and the SetMonthStart function should have a numerical value between 1 and 12.
 
-String parameters are used in the next set of functions which are start, end, format, and SetTimeZone. Both start and end functions support four string parameters which are week, month, quarter, and year. The format function is used to change the format of date and time, and the parameter is matched with the date and time format supported in C#. A support for epoch time is also made available in the format function. The SetTimeZone is used to change the time zone of the date and the parameter is matched with TimeZoneInfo IDs present in C#.
+String parameters are utilized in the following set of functions: start, end, format, and SetTimeZone. Both the start and end functions support four string parameters - week, month, quarter, and year. The format function is utilized to modify the format of date and time, with the parameter aligning with the date and time format supported in C#. Additionally, support for epoch time is available in the format function. The SetTimeZone function is utilized to alter the time zone of the date, with the parameter aligning with TimeZoneInfo IDs present in C#.
 
 `Today` function does not hold any parameters.
 Here for example concern we are using `today()`as `11/16/2018 12:17`
@@ -669,8 +669,8 @@ Here for example concern we are using `today()`as `11/16/2018 12:17`
 </tr>
 </table>
 
-> **NOTE:** Each template should mandatorily start with today function. 
-> For a template, if the format function is used, it should be the last function call.
+> **NOTE:** Each template should start with the today function as a mandatory requirement. 
+> If the format function is used in a template, it should be the last function call.
 
 
 ## Related links

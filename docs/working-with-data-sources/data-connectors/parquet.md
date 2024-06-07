@@ -30,11 +30,11 @@ To configure the Parquet data source, follow these steps:
 In Advanced category, It will Redirect to the Bold ETL. Refer [Bold ETL](/managing-resources/manage-data-sources/#advanced-category).
 
 ## Basic
-In Basic Category, It will act as the connector in Bold BI. And need to follow the below steps.
+In the Basic Category, It will act as the connector in Bold BI. And need to follow the below steps.
 
 ## Connect to Parquet
 ### Create an Parquet data source
-After clicking the data source, the **NEW DATA SOURCE** configuration panel opens. Follow the given steps to create a Parquet data source: 
+After clicking on the data source, the **NEW DATA SOURCE** configuration panel opens. Follow the given steps to create a Parquet data source: 
 
 1.	Enter a name and description (optional) for the data source.
 

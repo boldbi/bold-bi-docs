@@ -10,9 +10,9 @@ documentation: ug
 
 **Supported Server Versions:** Oracle Database `(11g, 12c, 18c, and 19c)`
 
-   Using the `Oracle` connection type, you can connect an Oracle database.
+   With the `Oracle` connection type, you are able to connect to an Oracle database.
 
-   Click `Data Source` button in the configuration panel to add a new data connection.
+   Click the `Data Source` button in the configuration panel to add a new data connection.
    
    ![Data button](/static/assets/working-with-datasource/data-connectors/images/oracle/datasource.png)
    
@@ -26,9 +26,9 @@ documentation: ug
    
    Set the `server Name` and `port number` where the Oracle service is running. 
    
-   `Service Instance Name` is an optional parameter. Set the Service Instance Name if you have specific name for Oracle service: otherwise, Oracle connection will be launched with default service name
+   The `Service Instance Name` is an optional parameter. Set the Service Instance Name if you have a specific name for the Oracle service: otherwise, the Oracle connection will be launched with the default service name
 
-   > **NOTE:**  What is Service Instance Name – Service Instance Name is a name given for Oracle Cloud Service. For more details refer [Service Instance Name](https://docs.oracle.com/en/cloud/paas/identity-cloud/uaids/service-instances.html)
+   > **NOTE:**  What is the Service Instance Name – The Service Instance Name is a name given to an Oracle Cloud Service. For more details refer [Service Instance Name](https://docs.oracle.com/en/cloud/paas/data-integrator-cloud/user/creating-oracle-database-cloud-service-instance.html)
 
    Enter the `user name` and `password` to connect to the Oracle.
    
@@ -45,11 +45,11 @@ documentation: ug
 
    Drag and drop the table from table list, and click `Save` button to save the data source with valid name.
 
-   >**Note:** Following a successful connection, Query Designer will list `Tables`, `Views`, and `Stored procedure`. Materialized views will be listed under the `Tables` section.
+   >**Note:** After a successful connection, the Query Designer will list `Tables`, `Views`, and `Stored procedure`. Materialized views will be listed under the `Tables` section.
 
 ### Connect using custom attribute and dashboard parameter
 
-We have added support for **custom attributes and dashboard parameters** to the data source connection. You can connect to the data source using custom attributes or dashboard parameters.
+We have added support for **custom attributes and dashboard parameters** in the data source connection. You can now connect to the data source using custom attributes or dashboard parameters.
 
 **Custom Attribute**
 
@@ -59,7 +59,7 @@ We have added support for **custom attributes and dashboard parameters** to the 
 
 ![Dashboard Parameter](/static/assets/working-with-datasource/data-connectors/images/oracle/Dashboardparameter.png)
 
->**Note:** Refer the [Dashboard Parameter Documentation](https://help.boldbi.com/working-with-data-sources/dashboard-parameter/) and [Custom Attributes Documentation](https://help.boldbi.com/working-with-data-sources/configuring-custom-attribute/) for more details.
+>**Note:** Refer to the [Dashboard Parameter Documentation](https://help.boldbi.com/working-with-data-sources/dashboard-parameter/) and [Custom Attributes Documentation](https://help.boldbi.com/working-with-data-sources/configuring-custom-attribute/) for more details.
 
 
 ## Connecting Bold BI to Oracle Data Source via REST API
@@ -332,7 +332,7 @@ Through the REST API, only the **live mode** data source can be created and edit
 
 ### Parameters for editing Data Source
 
-> **NOTE:**  For editing Data Source via API. All the parameters are optional. The parameter which needs to be changed can be provided.
+> **NOTE:**  To edit the Data Source via API, all parameters are optional. The parameter that needs to be changed can be provided.
 
 #### Parameters for modifying expressions when editing Data Source
    
@@ -497,7 +497,7 @@ Through the REST API, only the **live mode** data source can be created and edit
 
 ```
 
-> **NOTE:**  Through Rest API, the data source can be created or edited with only one table. If different table is provided in edit data source, the table will be replaced. The widgets will be retained only if the schema is same as the previous table.
+> **NOTE:**  Through the Rest API, the data source can be created or edited with only one table. If different table is provided in edit data source, the table will be replaced. The widgets will be retained only if the schema is same as the previous table.
 
 ### Connection Sample for Code View Mode
 

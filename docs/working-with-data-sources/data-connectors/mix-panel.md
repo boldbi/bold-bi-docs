@@ -8,7 +8,7 @@ documentation: ug
 
 # Connecting Bold BI to Mixpanel data source
 
-  You can connect to web services of popular site like `Mixpanel` connection type. To enable this connection, follow the given steps.
+  You can connect to web services of popular sites like `Mixpanel` by selecting the connection type. To enable this connection, follow the given steps.
   
   Click the `Data Source` button in the configuration panel to add a new data connection.
    
@@ -26,13 +26,13 @@ documentation: ug
 
   ![Mixpanel panel](/static/assets/working-with-datasource/data-connectors/images/mixpanel/mixpanel_panel.png)
 
-  Enter an API in the URL text box which must be a valid REST API.
+  Enter a valid REST API into the URL text box. 
 
-  Refer to the [Mixpanel API documentation](https://mixpanel.com/help/reference/data-export-api)
+  Refer to the [Mixpanel API documentation](https://mixpanel.com/help/reference/data-export-api) for more information
 
   ![URL](/static/assets/working-with-datasource/data-connectors/images/mixpanel/URL_mixpanel.png)
 
-  Choose an appropriate method for the REST API; it can be either `GET` or `POST` in the type combo box.
+  Select the appropriate method for the REST API from the type combo box, which can be either `GET` or `POST`.
 
   ![Method Mixpanel](/static/assets/working-with-datasource/data-connectors/images/mixpanel/Method_mixpanel.png)
 
@@ -60,7 +60,7 @@ documentation: ug
   
   ![Schema window](/static/assets/working-with-datasource/data-connectors/images/mixpanel/schemawindow.png)
   
-  Now, you can get into the data design view window with selected table schema. Drag and drop the table.
+  Now, you can enter the data design view window with the selected table schema. Drag and drop the table.
   
   ![Data view](/static/assets/working-with-datasource/data-connectors/images/mixpanel/dataview.png)
 

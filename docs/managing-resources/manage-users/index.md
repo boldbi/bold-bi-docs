@@ -123,7 +123,7 @@ Bold BI will import the selected users in the background as a job, and a confirm
 
   ![Confirmation dialog after import users started](/static/assets/managing-resources/manage-users/images/confirmation-dialogue-on-import-click.png#width=70%)
 
-  You can check the status of the current import by clicking on the View Status button in the confirmation dialog. This will take you to the bulk import job details page where you can view the details of the current import job. Learn more about the Bulk Import Result page [here](/managing-resources/manage-users/bulk-import-result/).
+  You can check the status of the current import by clicking on the View Status button in the confirmation dialog. This will take you to the bulk import job details page where you can view the details of the current import job. Learn more about the [Bulk Import Result](/managing-resources/manage-users/bulk-import-result/) page.
 
   ![Bulk user import job details page](/static/assets/managing-resources/manage-users/images/import-job-details-page.png#width=70%)
 

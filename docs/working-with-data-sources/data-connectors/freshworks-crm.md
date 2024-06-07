@@ -7,20 +7,20 @@ documentation: ug
 ---
 
 # Connecting Bold BI to Freshworks CRM data source
-Bold BI dashboard designer supports connecting Freshworks CRM web services through REST API. 
+The Bold BI dashboard designer supports connecting to Freshworks CRM web services through the REST API. 
 
 ## Choose Freshworks CRM data source
 To configure the Freshworks CRM data source, follow the below steps:
-1. Click the **Data Sources** button in the configuration panel to add a new data connection.
+1. Click on the **Data Sources** button in the configuration panel to add a new data connection.
 
    ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/common/DataSourcesIcon.png)
 
-2. Click **CREATE NEW** to launch a new connection from the connection panel.
-3. Select the **Freshworks CRM** connection in the connection panel.
+2. Click on **CREATE NEW** to launch a new connection from the connection panel.
+3. Choose the **Freshworks CRM** connection from the connection panel.
 
    ![Choose data source](/static/assets/working-with-datasource/data-connectors/images/freshworks-CRM/ChooseDS.png)
 
-> **NOTE:**  You can also create a data source from the home page by clicking the **Data Sources** menu from left menu panel and **Create Data Source** from the data sources page.
+> **NOTE:**  You can also create a data source from the home page by clicking on the **Data Sources** menu on the left menu panel and selecting **Create Data Source** from the data sources page.
 
    ![Choose data source from server](/static/assets/working-with-datasource/data-connectors/images/freshworks-CRM/ChooseDS_server.png)
    
@@ -34,9 +34,9 @@ Once you click the data source, the `NEW DATA SOURCE` configuration panel open
 
     Example: `https://<:your_domain>.freshworks.io/leads/view/8000328940`
 
-5. Select **GET** method for the REST API in **Method** combo box.
+5. Select the **GET** method for the REST API in the **Method** combo box.
 6. In **Max Rows**, enter the maximum number of rows to be fetched from the Freshworks CRM data source. This value is used to fetch the data from Freshworks CRM data source via pagination.
-7. Choose a time interval for **Refresh Settings** using the combo box, to trigger the Rest API request periodically to keep the data in sync with our dashboard.  
+7. Choose a time interval for the **Refresh Settings** using the combo box, to periodically trigger the REST API request and keep the data in sync with our dashboard.  
 8. Select **JSON** data type in **Data Format** combo box.
 9. Replace **&lt;:your_api_token&gt;** under Headers with a valid API token.
 10. Choose **None** under **Authentication Type** as authentication is done through header.
@@ -61,8 +61,7 @@ You can also edit the connection information set here using the [Edit Connection
 Max Rows
 </td>
 <td>
-Most of the REST APIs return only fewer data on a single API request. To pull the amount of data you need, set a value in this field.  
-Pagination is handled internally and will fetch the amount of data you need.
+Most REST APIs return only a limited amount of data on a single API request. To retrieve the necessary amount of data, you can set a value in this field. Pagination is handled internally and will fetch the required data.
 </td>
 </tr>
 <tr>
@@ -70,7 +69,7 @@ Pagination is handled internally and will fetch the amount of data you need.
 Refresh Settings
 </td>
 <td>
-Period of time before next refresh call is triggered. This will automatically trigger a call for the API configured in the data source to keep the data up to date. If you do not want to sync your new data, choose ‘Never’.
+The period of time before the next refresh call is triggered. This will automatically trigger a call for the API configured in the data source to keep the data up to date. If you do not want to sync your new data, choose 'Never'.
 </td>
 </tr>
 </table>
@@ -85,26 +84,26 @@ Replace &lt;:your_domain&gt; with your Freshworks CRM domain.
 
 **Contacts**
 
-[https://your-domain.freshsales.io/api/contacts/view/8000666352](https://your-domain.freshsales.io/api/contacts/view/8000666352)
+`https://your-domain.freshsales.io/api/contacts/view/8000666352`
 
 **Deals**
 
-[https://your-domain.freshsales.io/api/deals/view/8000666352](https://your-domain.freshsales.io/api/deals/view/8000666352)
+`https://your-domain.freshsales.io/api/deals/view/8000666352`
 
 ### Preview and data import
-* Click **Preview & Connect** to connect with the configurations set.
-* The Choose Schema(s) dialog opens. The schema represents the key fields of JSON data retrieved from Freshworks CRM Rest API request. This dialog displays a list of schemas in treeview and its corresponding values in grid for preview. Select required schema(s) from treeview to use in designer and click **Connect**.
+* Click **Preview & Connect** to connect with the configurations that have been set.
+* The Choose Schema(s) dialog opens. The schema represents the key fields of JSON data retrieved from the Freshworks CRM Rest API request. This dialog displays a list of schemas in a treeview and its corresponding values in grid for preview. Select required schema(s) from treeview to use in designer and click **Connect**.
 
    ![Preview](/static/assets/working-with-datasource/data-connectors/images/common/Preview.png)
 
-* Now, the data design view page with selected table schema opens. Drag and drop the table.
+* Now, the data design view page with the selected table schema opens. Drag and drop the table.
    ![Query Editor](/static/assets/working-with-datasource/data-connectors/images/common/QueryEditor.png)
 
 * Click **Save** to save the data source with a relevant name.
 
 ### Connect using custom attribute and dashboard parameter
 
-We have added support for **custom attributes and dashboard parameters** to the data source connection. You can connect to the data source using custom attributes or dashboard parameters.
+We have added support for **custom attributes and dashboard parameters** in the data source connection. You can now connect to the data source using custom attributes or dashboard parameters.
 
 **Custom Attribute**
 
@@ -114,7 +113,7 @@ We have added support for **custom attributes and dashboard parameters** to the 
 
 ![Dashboard Parameter](/static/assets/working-with-datasource/data-connectors/images/freshworks-CRM/Dashboardparameter.png)
 
->**Note:** Refer the [Dashboard Parameter Documentation](https://help.boldbi.com/working-with-data-sources/dashboard-parameter/) and [Custom Attributes Documentation](https://help.boldbi.com/working-with-data-sources/configuring-custom-attribute/) for more details.
+>**Note:** Refer to the [Dashboard Parameter Documentation](https://help.boldbi.com/working-with-data-sources/dashboard-parameter/) and [Custom Attributes Documentation](https://help.boldbi.com/working-with-data-sources/configuring-custom-attribute/) for more details.
 
 ## Related links
 [Data Transformation](/working-with-data-sources/data-modeling/joining-table/)

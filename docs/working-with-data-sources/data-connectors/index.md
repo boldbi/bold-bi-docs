@@ -40,7 +40,7 @@ The Bold BI supports the following data connection types such that the structure
             <br> <a href="/working-with-data-sources/data-connectors/google-bigquery/"> Google BigQuery</a>
             <br> <a href="/working-with-data-sources/data-connectors/influxdb/"> InfluxDB</a>
             <br> <a href="/working-with-data-sources/data-connectors/mariadb/"> MariaDB</a>
-            <br> <a href="/working-with-data-sources/data-connectors/sql-data-source/"> Microsoft SQL</a>
+            <br> <a href="/working-with-data-sources/data-connectors/ms-sql-server/"> Microsoft SQL</a>
             <br> <a href="/working-with-data-sources/data-connectors/mysql/"> MySQL</a>
             <br> <a href="/working-with-data-sources/data-connectors/clickhouse/"> Clickhouse</a>
             <br> <a href="/working-with-data-sources/data-connectors/oracle/"> Oracle</a>

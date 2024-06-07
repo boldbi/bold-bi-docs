@@ -46,4 +46,4 @@ Unchecking the **Enable Default Authentication** option and then clicking Save w
 
 ![Disable default authentication](/static/assets/multi-tenancy/images/disable-default-authentication.png) 
 
-> **NOTE:** If you want to skip default authentication after setting it, use '`use_default_authentication=false`' in the login URL (ex: https://testdomain.com/login?use&#95;default&#95;authentication=false).
+> **NOTE:** If you want to skip default authentication after setting it, use '`use_default_authentication=false`' in the login URL (ex: `https://testdomain.com/login?use&#95;default&#95;authentication=false`).

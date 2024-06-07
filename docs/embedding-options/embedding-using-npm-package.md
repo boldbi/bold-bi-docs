@@ -203,9 +203,9 @@ You can also embed the multi-tabbed dashboard using the dashboard ID and dashboa
 
 ## How to implement the authorize server with user mail
 
-1. You need to implement an authorization endpoint in your application. This will act as the bridge between your application and the Bold BI server. Additionally, you will need to update the secure details such as email and group-based access. Learn more about the authorization server [here](/security-configuration/authorize-server/).
+1. You need to implement an authorization endpoint in your application. This will act as the bridge between your application and the Bold BI server. Additionally, you will need to update the secure details such as email and group-based access. Learn more about the [authorization server](/security-configuration/authorize-server/).
 
-    Here is the provided code sample in C# language, which should be based on the application's backend server language. There are already samples available on multiple platforms with this authorization server implementation. Please take a look at the samples provided [here](/embedding-options/embedding-sdk/samples/).
+    Here is the provided code sample in C# language, which should be based on the application's backend server language. There are already samples available on multiple platforms with this authorization server implementation. Please take a look at the [samples](/embedding-options/embedding-sdk/samples/).
 
 2. To create an authorization-server action method, please refer to the code sample below and copy it to your controller if you are using C# as your server-side language. You can utilize the email address of the currently logged-in user, which should be `user@domain.com`. However, it is important to ensure that this user has access to the dashboard.  
 
@@ -257,7 +257,7 @@ You can also embed the multi-tabbed dashboard using the dashboard ID and dashboa
 
 ## How to get Embed Secret key from Bold BI application
 
-The embed secret key can be found in the administrator setting section. Please refer to [link](/site-administration/embed-settings/) for further details.
+The embed secret key can be found in the administrator setting section. Please refer to the [Embed Settings](/site-administration/embed-settings/) for further details.
 
 ## How to get common Embed Secret key from UMS
 

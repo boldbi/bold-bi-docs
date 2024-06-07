@@ -10,7 +10,7 @@ documentation: ug
 
 # REST API v2.0
 
-This section explains how to manage(retrieve, add, update, delete, and export) items and permissions. Also, you can perform the special operations of groups and users in your Bold BI site.
+This section explains how to manage (retrieve, add, update, delete, and export) items and permissions. Additionally, you can perform special operations for groups and users on your Bold BI site.
 
 [Rest API - v2.0](/server-api-reference/v2.0/api-reference/)
 

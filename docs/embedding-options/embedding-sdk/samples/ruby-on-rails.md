@@ -105,7 +105,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/ruby-on-rails
 
 ## How this sample works
 
- 1. To authorize the server URL, you will call the GetEmbedDetails function using the API (http://localhost:3000/api/v1/authorizes) with the provided EmbedProperties values, based on the dashboard provided in the embed properties.
+ 1. To authorize the server URL, you will call the GetEmbedDetails function using the API (`http://localhost:3000/api/v1/authorizes`) with the provided EmbedProperties values, based on the dashboard provided in the embed properties.
     ![Get Embed Details](/static/assets/javascript/sample/images/ruby-authorize.png)
 
  2. In the previous authorization, the `SignatureUrl` has been generated using the provided `EmbedSecret key` and the embed details have been validated in Bold BI. After the details are validated, the dashboard starts to render in the `index.html.erb` file.
@@ -115,7 +115,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/ruby-on-rails
 
 ## Steps to create new Ruby on Rails application to embed dashboard
 
- 1. Install Ruby using the provided [link](https://rubyinstaller.org/) and accept the license.
+ 1. Install [Ruby](https://rubyinstaller.org/) using the provided installer and accept the license.
 
  2. Once installed, check the version of Ruby by using the command prompt `ruby -v`.
 

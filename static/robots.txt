@@ -4,4 +4,13 @@ Disallow: /working-with-data-source/
 Disallow: /rebranding/
 Disallow: /security-configuration/sso/overview/
 Disallow: /utilities/openai-fine-tuning-utility/
+Disallow: /working-with-dashboards/configuring-dashboard-filters/
+Disallow: /deploying-bold-bi/deploying-in-docker/
+Disallow: /deploying-bold-bi/deploying-in-kubernetes/
+Disallow: /deploying-bold-bi/deploying-in-linux/
+Disallow: /deploying-bold-bi/deploying-in-windows/
+Disallow: /deploying-bold-bi/deploying-in-azure/
+Disallow: /deploying-bold-bi/deploying-in-aws/
+Disallow: /deploying-bold-bi/deploying-in-gcp/
+Disallow: /deploying-bold-bi/deploying-in-azure-app-service/
 Sitemap: https://help.boldbi.com/sitemap-help.xml

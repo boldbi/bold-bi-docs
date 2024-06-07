@@ -36,5 +36,4 @@ After importing the configuration file, review the configuration details to ensu
 ![Wireguard Client Details](/static/assets/faq/images/wireguard-client-details.png)
 
 ## SSH Tunnel
-Bold BI supports you in enabling SSH for the selected [data sources]
-(/faq/how-to-connect-data-sources-with-ssh-connection-in-bold-bi/).
+Bold BI supports you in enabling SSH for the selected [data sources](/faq/how-to-connect-data-sources-with-ssh-connection-in-bold-bi/).

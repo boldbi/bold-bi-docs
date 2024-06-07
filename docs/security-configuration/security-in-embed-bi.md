@@ -58,14 +58,14 @@ In BoldBI, you can control users based on their permissions. There are read, wri
 
 Object Level Security allows administrators to control access to different dashboards within the BoldBI server for various users and groups. This includes the ability to share dashboards at both the individual user and group levels, with options to manage access rights for all users and define whether users can edit the dashboard.
 
->**Note**: For more information on how to share the dashboard with other users, please refer to the [link](https://help.boldbi.com/managing-resources/manage-dashboards/share-dashboards/).
+>**Note**: For more information on how to share the dashboard with other users, please refer to the [Share Dashboards](/managing-resources/manage-dashboards/share-dashboards/).
 
 ### Data Level Security
 In BoldBI, you can control users based on their permissions for data sources connected to live databases. There are read, write, create, and delete permissions that can be assigned to users and groups. Without the read permission, no user can see your data sources.
 
 Data Level Security enables the enforcement of different levels of data visibility. By sharing a single dashboard with multiple users, each user can access only the data relevant to their specific requirements. This approach not only reduces development efforts but also enhances security measures.
 
->**Note:** Row Level security grants the user and group permissions to show only specific rows in the data. For more information, please refer to the [link](https://help.boldbi.com/faq/how-to-apply-row-level-security-in-elastic-search-data-source/).
+>**Note:** Row Level security grants the user and group permissions to show only specific rows in the data. For more information, please refer to the [How to apply Row-level Security in Elastic search data source](/faq/how-to-apply-row-level-security-in-elastic-search-data-source/).
 
 ## Application security
 Every Bold BI product installation will generate unique private keys on the customer's machine. These private keys will be used to encrypt and store sensitive data, such as passwords and database details. 

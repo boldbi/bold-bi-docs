@@ -14,7 +14,7 @@ This section explains how to collaborate with other users in the Bold BI cloud b
 
 The Collaboration feature in Bold BI allows users to write comments on a dashboard to share with other users who have access to the dashboard. It is useful for tracking events and providing insights into those events. Users can also add links to other dashboards or any external websites.
 
-Anyone with access to a dashboard can write comments. When a comment is added to a dashboard, users who have notifications enabled in their profile will receive email and system notifications. You can learn more about notifications in [this](/working-with-dashboards/share-dashboards/notifications/) documentation.
+Anyone with access to a dashboard can write comments. When a comment is added to a dashboard, users who have notifications enabled in their profile will receive email and system notifications. You can learn more about the [Notifications](/working-with-dashboards/share-dashboards/notifications/) in documentation.
 
 ## Post a new comment
 
@@ -82,7 +82,7 @@ To do this, type `@` followed by the user’s name, and then select the user fro
 
 ![Mentioned Users](/static/assets/working-with-dashboards/share-dashboards/images/user-mentioned.png)
 
-> **NOTE:**  The previous options - Post a new comment, reply to a comment, edit a comment, delete a comment, and show the parent comment of a reply - apply to widgets inside a dashboard. Click [here](/working-with-dashboards/commenting-dashboard/) for more details about dashboard and widget commenting.
+> **NOTE:** The previous options - Post a new comment, reply to a comment, edit a comment, delete a comment, and show the parent comment of a reply - apply to widgets inside a dashboard. Click on the [Commenting Dashboard](/working-with-dashboards/commenting-dashboard/) for more details about dashboard and widget commenting.
 
 ## Notification
 Whenever dashboards or widgets receive comments, users will be notified in two different ways: 
@@ -90,7 +90,7 @@ Whenever dashboards or widgets receive comments, users will be notified in two d
 1. System notification.
 2. Email notification.
 
-Learn more about the notification [here](/working-with-dashboards/share-dashboards/notifications/).
+Learn more about the [Notification](/working-with-dashboards/share-dashboards/notifications/).
 
 > **NOTE:**  An email setting is not necessary for collaboration. If email settings are not configured, then email notifications will not be sent.
 

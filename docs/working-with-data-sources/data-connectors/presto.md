@@ -7,11 +7,11 @@ documentation: ug
 ---
  
 # Connecting Bold BI to Presto data source
-Bold BI Dashboard Designer supports connecting Presto database through SQL Live Query (REST API).
+The Bold BI dashboard designer supports connecting to Presto database through SQL Live Query (REST API).
 
 ## Choose Presto data source
 To configure the Presto data source, follow the below steps:
-1. Click the **Data Sources** button in the configuration panel to add a new data connection.
+1. Click on the **Data Sources** button in the configuration panel to add a new data connection.
 
    ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/common/DataSourcesIcon.png)
 
@@ -20,7 +20,7 @@ To configure the Presto data source, follow the below steps:
 
    ![Choose data source](/static/assets/working-with-datasource/data-connectors/images/Presto/ChooseDS.png)
 
-> **NOTE:**  You can also create a data source from the home page by clicking the **Data Sources** menu from left menu panel and **Create Data Source** from the data sources page.
+> **NOTE:**  You can also create a data source from the home page by clicking on the **Data Sources** menu on the left menu panel and selecting **Create Data Source** from the data sources page.
 
    ![Choose data source from server](/static/assets/working-with-datasource/data-connectors/images/Presto/ChooseDS_server.png)
 
@@ -30,26 +30,25 @@ After clicking the data source, the NEW DATA SOURCE configuration panel opens. F
 1. Enter a name and description (optional) for the data source.
 2. Enter a valid Presto server or host name in the Server Name text box.
 3. Enter its corresponding port in Port text box.
-4. Enter the Catalog Name from below Presto Connectors Link.
-https://prestodb.github.io/docs/current/connector
-5. Choose **None** or **BASIC authentication** in Authentication Mechanism combo box.
+4. Enter the Catalog Name from below [Presto Connectors Link](https://prestodb.github.io/docs/current/connector).
+5. Choose either **None** or **BASIC authentication** in the Authentication Mechanism combo box.
 6. Enter a valid Presto user name and password if you choose Basic Authentication Mechanism.
-7. Select the database you want to query in the listed database associated with the given Presto Server in Database combo box.
+7. Select the database you want to query from the listed databases associated with the given Presto Server in the Database combo box.
 
    ![Presto Connection](/static/assets/working-with-datasource/data-connectors/images/Presto/Presto_Connection.png)
 
 In future, you can edit the connection information using [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 
-> **NOTE:**  To connect data source with **SSH**, enable the SSH check box in the **NEW DATA SOURCE** configuration panel and enter the required credentials.
+> **NOTE:**  To connect a data source with **SSH**, enable the SSH check box in the **NEW DATA SOURCE** configuration panel and enter the required credentials.
 ![Enable SSH](/static/assets/working-with-datasource/images/enable-ssh.png#max-width=60%)
 
 ### Data Preview
 1. Click **Connect** to connect the Presto server with configured details.
-The schema represents the collection list that are retrieved from the Presto server. This dialog displays a list of schemas in treeview and its corresponding values.
+The schema represents the collection list that is retrieved from the Presto server. This dialog displays a list of schemas in a tree view and their corresponding values.
 
    ![Treeview schema](/static/assets/working-with-datasource/data-connectors/images/common/Treeview_schema.png)
 
-2. Now, the data design view page with selected table schema opens. Drag and drop the table.
+2. Now, the data design view page with the selected table schema opens. Drag and drop the table.
 
    ![Query designer](/static/assets/working-with-datasource/data-connectors/images/common/QueryEditor_sql.png)
 
@@ -61,7 +60,7 @@ The schema represents the collection list that are retrieved from the Presto ser
 
 ### Connect using custom attribute and dashboard parameter
 
-We have added support for **custom attributes and dashboard parameters** to the data source connection. You can connect to the data source using custom attributes or dashboard parameters.
+We have added support for **custom attributes and dashboard parameters** in the data source connection. You can now connect to the data source using custom attributes or dashboard parameters.
 
 **Custom Attribute**
 
@@ -71,7 +70,7 @@ We have added support for **custom attributes and dashboard parameters** to the 
 
 ![Dashboard Parameter](/static/assets/working-with-datasource/data-connectors/images/Presto/Dashboardparameter.png)
 
->**Note:** Refer the [Dashboard Parameter Documentation](https://help.boldbi.com/working-with-data-sources/dashboard-parameter/) and [Custom Attributes Documentation](https://help.boldbi.com/working-with-data-sources/configuring-custom-attribute/) for more details.
+>**Note:** Refer to the [Dashboard Parameter Documentation](https://help.boldbi.com/working-with-data-sources/dashboard-parameter/) and [Custom Attributes Documentation](https://help.boldbi.com/working-with-data-sources/configuring-custom-attribute/) for more details.
 
 ## Connecting Bold BI to Presto Data Source via REST API
 
@@ -389,7 +388,7 @@ Type while creating the data source needs to be presto.
 
 ### Parameters for editing Data Source
 
-> **NOTE:**  For editing Data Source via API. All the parameters are optional. The parameter which needs to be changed can be provided.
+> **NOTE:**  To edit a Data Source via API, all parameters are optional. Only the parameter that needs to be changed should be provided.
 
 #### Parameters for modifying expressions when editing Data Source
    
@@ -572,7 +571,7 @@ Type while creating the data source needs to be presto.
 
 ```
 
-> **NOTE:**  Through Rest API, the data source can be created or edited with only one table. If different table is provided in edit data source, the table will be replaced. The widgets will be retained only if the schema is same as the previous table.
+> **NOTE:**  Through the Rest API, the data source can be created or edited with only one table. If different table is provided in edit data source, the table will be replaced. The widgets will be retained only if the schema is same as the previous table.
 
 ### Connection Sample for Code View Mode
 

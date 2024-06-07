@@ -35,7 +35,9 @@ Schedules can only be created if the user has the `Create All Schedules` permiss
 
 	![Choose Schedule](/static/assets/managing-resources/images/choose-schedule.png#width=50%)
 
-* Choose the required category from the `Category` dropdown. Once a category is selected, the corresponding dashboards under that category will be displayed in the `Dashboard` dropdown.
+* Choose the required category from the `Category` dropdown. Once a category is selected, the corresponding dashboards under that category will be displayed in the `Dashboard` dropdown. Once a dashboard is selected, the corresponding widget and views under the dashboard will be displayed in the `Widget` and `View` dropdown.
+
+* Select the desired category from the dropdown.
 
 	![Select Category](/static/assets/managing-resources/images/select-category.png)
 
@@ -43,19 +45,33 @@ Schedules can only be created if the user has the `Create All Schedules` permiss
 
 	![Select dashboard](/static/assets/managing-resources/images/select-dashboard.png)
 
+* Select the desired widget from the dropdown.
+
+    ![Select widget](/static/assets/managing-resources/images/select-widget.png)
+    
+* Select the desired view form the dropdown.
+
+    ![Select view](/static/assets/managing-resources/images/select-view.png)
+
+### Add schedule from dashboard viewer page
+
+If the user has `Read` permission for a specific dashboard and `Create` permission for the schedule, then they can create a schedule in that dashboard.
+
+To learn about creating a schedule on the dashboard viewer page, please check [the create schedule in dashboard viewer page](/working-with-dashboards/dashboard-schedule/)
+
 ### Add schedule from context menu of the respective dashboards
 
 * Click on the `Actions` button in the dashboard grid context menu and choose `Create Schedule` to schedule the corresponding dashboard.
 
 	![Create Schedule](/static/assets/managing-resources/images/create-schedule.png)
 
-* Once the dialog is opened, the category and dashboard values are selected by default.
+* Once the dialog is opened, the category and dashboard values are selected by default. The user can choose view and widget from the dropdown menu if needed.
 
 	![Default Values](/static/assets/managing-resources/images/category-dashboard-preselect.png)
 
-> **NOTE:**  Categories or Dashboards can be changed from the schedule dialog box itself.
+> **NOTE:** Categories, Dashboards, Views, and Widgets can be changed from schedule dialog box itself.
 
-* After adding schedule details, click `Next` in the schedule dialog.
+* After adding schedule details, click `Next` in the schedule dialog. 
 
 ## Customizing schedule email Content
 	
@@ -139,7 +155,7 @@ You can send a webhook notification for an export schedule or [data alerts](/wor
 
 	![Select Webhook](/static/assets/managing-resources/images/select-webhook.png)
 
-2. If you haven’t created any webhooks, you can create them by clicking the `Create` option. This will open the `Add Webhook` page in a new tab. Please visit this [link](/manage-webhooks/) for information on how to add a webhook.
+2. If you haven’t created any webhooks, you can create them by clicking the `Create` option. This will open the `Add Webhook` page in a new tab. Please visit the [Manage Webhook](/manage-webhooks/) for information on how to add a webhook.
 
 	![Create Webhook](/static/assets/managing-resources/images/create-webhook.png)
 
@@ -151,7 +167,7 @@ You can send a webhook notification for an export schedule or [data alerts](/wor
 
 	![Configuration Message](/static/assets/managing-resources/images/webhook-configuration-message.png)
 
-5. When running the schedule, Bold BI will call the webhook endpoint you selected with the selected or all payload data. Click [here](/manage-webhooks/webhook-payload/) to learn more about what the payload data sent to a webhook call is.
+5. When running the schedule, Bold BI will call the webhook endpoint you selected with the selected or all payload data. Click on the [Webhook Payload](/manage-webhooks/webhook-payload/) to learn more about what the payload data sent to a webhook call is.
 
 > **NOTE:**  `Time Driven Dashboard Export` event webhooks are listed only for normal schedules, and `Alert Driven Dashboard Export` event webhooks are listed only for data alert schedules.
 

@@ -22,7 +22,7 @@ You need the following prerequisites to Configure Bold BI with a reverse proxy s
 
 ## Follow the given steps to configure the Bold BI with a reverse proxy server in the DMZ in the windows server.
 
-1. You need to  [Install](/deploying-bold-bi/deploying-in-windows/installation-and-deployment/)  Bold BI on the windows server. After completing the [Application Setup](/application-startup/) create a [dashboard](/getting-started/creating-dashboard/).
+1. You need to  [Install](/deploying-bold-bi/deploying-on-windows/installation-and-deployment/)  Bold BI on the windows server. After completing the [Application Setup](/application-startup/) create a [dashboard](/getting-started/creating-dashboard/).
 
 
 2. Then, you need to [Change the binding](/faq/how-to-change-binding-in-bold-bi-embedded/) from localhost to the IP address as shown below.

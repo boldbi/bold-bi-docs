@@ -42,7 +42,7 @@ A data source can be created and edited in any application using the URL. In the
 Bold BI supports embedding the data source into other web applications using external Single Sign-On authentication in iframe-based embedding. The Bold BI application can be configured to support `Windows Active Directory`, `Azure Active Directory`, `OAuth 2.0` and `OpenID Connect` authentications.
 
 ### Embed using Windows AD Authentication
-The Bold BI application has been configured with Windows Active Directory. Follow these steps to obtain the embed code using the `Windows Active Directory SSO` settings. To learn more about configuring Windows Active Directory settings, click [here](/site-administration/user-directory-settings/active-directory/active-directory/).
+The Bold BI application has been configured with Windows Active Directory. Follow these steps to obtain the embed code using the `Windows Active Directory SSO` settings. To learn more about configuring [Windows Active Directory](/site-administration/user-directory-settings/active-directory/active-directory/) settings.
 
 1. To access the respective data source's context menu, click on it and select the `Get Embed code` option. In the Embed Code dialog box, enable the `SSO` feature and choose the "Windows Active Directory" option, similar to what is illustrated in the provided image.
 ![EmbedSSOWindows](/static/assets/iFrame-based/images/embed-sso-windows-datasource.png#max-width=45%)
@@ -52,7 +52,7 @@ The Bold BI application has been configured with Windows Active Directory. Follo
 3. Please run the web application and sign in using the Windows Active Directory. The data source will then be automatically rendered according to the permissions granted to the Windows user.
 
 ### Embed using Azure AD Authentication
-The Bold BI application has been configured with **Azure Active Directory**. Follow these steps to obtain the embed code using the `Azure Active Directory SSO` settings. For more information on configuring Azure Active Directory settings, click [here](/security-configuration/single-sign-on/azure-active-directory/).
+The Bold BI application has been configured with **Azure Active Directory**. Follow these steps to obtain the embed code using the `Azure Active Directory SSO` settings. For more information on configuring [Azure Active Directory](/security-configuration/single-sign-on/azure-active-directory/) settings.
 
 1. Click the context menu of the respective data source and choose `Get Embed code` option. In Embed Code dialog, enable the `SSO` and select `Azure Active Directory` option as shown in the following image.
 ![EmbedSSOAzure](/static/assets/iFrame-based/images/embed-sso-azure-datasource.png#max-width=45%)
@@ -63,7 +63,7 @@ The Bold BI application has been configured with **Azure Active Directory**. Fol
 
 
 ### Embed using OAuth 2.0 Authentication
-The Bold BI application has been configured with **OAuth 2.0** for Single Sign-On (SSO). Follow these steps to obtain the embed code with the `OAuth SSO` settings. Find additional information about configuring OAuth 2.0 settings [here](/security-configuration/single-sign-on/oauth-2.0-support/).
+The Bold BI application has been configured with **OAuth 2.0** for Single Sign-On (SSO). Follow these steps to obtain the embed code with the `OAuth SSO` settings. Find additional information about configuring [OAuth 2.0 settings](/security-configuration/single-sign-on/oauth-2.0-support/).
 
 1. Click on the context menu of the respective data source and choose `Get Embed code` option. In Embed Code dialog, enable the `SSO` and select `OAuth 2.0` option as shown in the following image.
 ![EmbedSSOOAuth](/static/assets/iFrame-based/images/embed-sso-oauth-datasource.png#max-width=45%)
@@ -73,7 +73,7 @@ The Bold BI application has been configured with **OAuth 2.0** for Single Sign-O
 3. To use the web application, sign in with the configured OAuth provider. The data source will then be automatically rendered based on the user's given permissions.
 
 ### Embed using OpenID Connect Authentication
-The Bold BI application has been configured with **OpenID Connect** for Single Sign-On (SSO). Follow these steps to obtain the embed code using the `OpenID SSO` Settings. For further information on configuring OpenID settings, please refer to the provided [here](/security-configuration/single-sign-on/openid-support/).
+The Bold BI application has been configured with **OpenID Connect** for Single Sign-On (SSO). Follow these steps to obtain the embed code using the `OpenID SSO` Settings. For further information on configuring OpenID settings, please refer to the provided [OpenID Support](/security-configuration/single-sign-on/openid-support/).
 
 1. Click on the context menu of the respective data source and choose `Get Embed code` option. In Embed Code dialog, enable the `SSO` and select `OpenID` option as shown in the following image.  
 ![EmbedSSOOpenID](/static/assets/iFrame-based/images/embed-sso-openid-datasource.png#max-width=45%)

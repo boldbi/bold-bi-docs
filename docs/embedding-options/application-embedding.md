@@ -17,14 +17,14 @@ Please follow the steps below continuously, one by one, to embed the Bold BI app
 
 ## Setting up the JWT authentication in Bold ID
 
-1.  Please refer to [link](/multi-tenancy/site-administration/authentication/json-web-token/#steps-to-configure-jwt-in-bold-bi) to configure `JWT settings` in the Bold ID application. You will need to configure your external application URL details.
+1. Please refer to [JWT settings](/multi-tenancy/site-administration/authentication/json-web-token/#steps-to-configure-jwt-in-bold-bi) to configure `JWT settings` in the Bold ID application. You will need to configure your external application URL details.
 
 2.  After saving the JWT settings, a `Signing Key` will be generated. This key must be used to sign the JSON web tokens from your application.
     ![JWT settings Signing key](/static/assets/images/SigningKey.png)
 
 ## Set up External Application for auto sign-in with JWT token in Bold BI
 
-1.	In your application, implement the code to retrieve the `JSON web token` using the `signing key` generated above. Refer to the sample [here](/multi-tenancy/site-administration/authentication/json-web-token/#create-json-web-token). 
+1. In your application, implement the code to retrieve the `JSON web token` using the `signing key` generated above. Refer to the sample [JSON web token](/multi-tenancy/site-administration/authentication/json-web-token/#create-json-web-token). 
 
 2.	Make a call to the Bold BI JWT callback URL, which includes the site Identifier and the JWT web token generated earlier, in order to automatically sign in to the Bold BI application.
 
@@ -51,7 +51,7 @@ Please follow the steps below continuously, one by one, to embed the Bold BI app
 
 ## Controlling link navigation behavior in embedded application
 
-Once you have embedded the Bold BI application, some links within the application will open in a new tab instead of loading inside the configured iframe above. Therefore, we recommend enabling link navigation behavior to open on the same page by referring to the instructions provided [here](/faq/how-to-control-link-navigating-behavior/).
+Once you have embedded the Bold BI application, some links within the application will open in a new tab instead of loading inside the configured iframe above. Therefore, we recommend enabling link navigation behavior to open on the same page by referring to the instructions provided in [this documentation](/faq/how-to-control-link-navigating-behavior/).
 
 ## How Embed Bold BI application works
 
@@ -66,6 +66,6 @@ Once you have embedded the Bold BI application, some links within the applicatio
 
 ## Help Links:
 
-1.  Please refer to this [link](/multi-tenancy/site-administration/authentication/) for additional information regarding authentication settings.
+1. Please refer to the document for additional information regarding [authentication](/multi-tenancy/site-administration/authentication/) settings.
 
-2.  Please refer to this [link](https://www.syncfusion.com/downloads/support/directtrac/general/ze/EmbeddingSample211738849) link for a sample external application that can be used to embed Bold BI site.
+2. Please refer to this [Embedding Sample](https://www.syncfusion.com/downloads/support/directtrac/general/ze/EmbeddingSample211738849) link for a sample external application that can be used to embed Bold BI site.

@@ -224,4 +224,4 @@ This allows you to enable or disable the `widget title` of the range slider widg
 
 #### Enable Comments
 
-Choose to enable or disable `comments` for the dashboard widget. For more details, please refer to this [link](/visualizing-data/working-with-widgets/commenting-widget/).
+Choose to enable or disable `comments` for the dashboard widget. For more details, please refer to the [Commenting Widget](/visualizing-data/working-with-widgets/commenting-widget/).

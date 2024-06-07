@@ -10,10 +10,10 @@ documentation: ug
 # Connecting Bold BI to ODBC data source
 Bold BI Dashboard designer (Enterprise) supports connecting to datasources through Open Database Connectivity (ODBC).
 
-> **Note:** ODBC Connector is available in On-Premises Deployment but not in Syncfusion Managed Cloud Server.
+> **Note:** The ODBC Connector is available in On-Premises Deployment but not in the Syncfusion Managed Cloud Server.
 
 ## Choose an ODBC data source
-Dashboard designer (Enterprise) supports connecting to the ODBC data sources through following two connection modes.
+The Dashboard Designer (Enterprise) supports connecting to ODBC data sources through the following two connection modes.
 
 •	Data Source Name (DSN).
 
@@ -23,20 +23,20 @@ Dashboard designer (Enterprise) supports connecting to the ODBC data sources thr
 ### Data Source Name (DSN)
 Create a DSN using the 32-bit driver architecture and Bold BI will retrieve the 32-bit DSN architecture types from the windows registry.
 
-•	If the Bold BI is installed in IIS, it will show the system DSN alone because all the applications hosted in IIS are considered and running on the system user privilege.
+•	If Bold BI is installed in IIS, it will only show the system DSN because all applications hosted in IIS are considered to be running on the system user privilege.
 
-By default, IIS (inetinfo.exe) is configured to run in the system account context, but you can use the services console to change the identity of various services. So that they can run in a user account rather than the system account and the system DSN will work only under the hosted application in IIS.
+By default, IIS (inetinfo.exe) is configured to run in the system account context. However, you can use the services console to change the identity of various services so that they can run in a user account rather than the system account. The system DSN will only work under the hosted application in IIS.
 
 •	If the Bold BI is installed in IIS Express, we will list out the system and user DSN from the installed machine. So that you can connect using both the system and user DSN.
 ![ODBC DSN list](/static/assets/working-with-datasource/data-connectors/images/Odbc/dsn-list.png#max-width=60%)
 
 ### ODBC Drivers
 
-ODBC Data source can also be connect through the drivers. If the Bold BI is installed in IIS Express, list out the drivers from the installed machine. So that you can connect using the driver.
+ODBC data sources can also be connected through drivers. If Bold BI is installed in IIS Express, list the drivers from the installed machine so that you can connect using the driver.
 ![ODBC driver list](/static/assets/working-with-datasource/data-connectors/images/Odbc/driver-list.png#max-width=60%)
 
 To configure the ODBC data source, follow these steps:
-1. Click the **Data Sources** button in the configuration panel to add a new data connection.
+1. Click on the **Data Sources** button in the configuration panel to add a new data connection.
 
    ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/Odbc/data-sources-icon.png#max-width=60%)
 
@@ -48,7 +48,7 @@ To configure the ODBC data source, follow these steps:
 
    ![ODBC data source](/static/assets/working-with-datasource/data-connectors/images/Odbc/odbc-icon.png#max-width=60%)
 
-> **NOTE:** You can also create a data source from the home page by clicking the **Data Sources** menu from left menu panel and **Create Data Source** from the data sources page.
+> **NOTE:** You can also create a data source from the home page by clicking on the **Data Sources** menu on the left menu panel and selecting **Create Data Source** from the data sources page.
    ![ODBC connector](/static/assets/working-with-datasource/data-connectors/images/Odbc/odbc-connector.png#max-width=90%)
 
 ## Connect to ODBC
@@ -99,7 +99,7 @@ In future, you can edit the connection information using [Edit Connection](/work
 
 ### Data Preview
 1. Click **Connect** to connect the ODBC server with configured details.
-The schema represents the collection list that are retrieved from the ODBC server. This dialog box displays the list of schemas in tree view and its corresponding values.
+The schema represents the collection list that is retrieved from the ODBC server. This dialog box displays the list of schemas in a tree view and their corresponding values.
 
    ![ODBC designer page](/static/assets/working-with-datasource/data-connectors/images/Odbc/odbc-designer-page.png#max-width=100%)
 
@@ -115,7 +115,7 @@ The schema represents the collection list that are retrieved from the ODBC serve
 
 ### Connect using custom attribute and dashboard parameter
 
-We have added support for **custom attributes and dashboard parameters** to the data source connection. You can connect to the data source using custom attributes or dashboard parameters.
+We have added support for **custom attributes and dashboard parameters** in the data source connection. You can now connect to the data source using custom attributes or dashboard parameters.
 
 **Custom Attribute**
 
@@ -125,11 +125,11 @@ We have added support for **custom attributes and dashboard parameters** to the 
 
 ![Dashboard Parameter](/static/assets/working-with-datasource/data-connectors/images/Odbc/Dashboardparameter.png)
 
->**Note:** Refer the [Dashboard Parameter Documentation](https://help.boldbi.com/working-with-data-sources/dashboard-parameter/) and [Custom Attributes Documentation](https://help.boldbi.com/working-with-data-sources/configuring-custom-attribute/) for more details.
+>**Note:** Refer to the [Dashboard Parameter Documentation](https://help.boldbi.com/working-with-data-sources/dashboard-parameter/) and [Custom Attributes Documentation](https://help.boldbi.com/working-with-data-sources/configuring-custom-attribute/) for more details.
 
 
 ## Bold BI hosting with x86 and x64 bit wise for ODBC data source connection
-If the Bold BI is installed in IIS, we will list the system DSN values from the installed machine. By default, the application will be hosted in IIS 32-bit mode. So, we will list only the 32-bit System DSN values in Bold BI ODBC connector.
+If Bold BI is installed in IIS, we will list the system DSN values from the installed machine. By default, the application will be hosted in 32-bit mode in IIS. Therefore, we will only list the 32-bit System DSN values in the Bold BI ODBC connector.
 
 Following steps to connect the 64-bit values: 
 1. Open Internet Information Services (IIS) Manager (**Start** > **Run** > type "**inetmgr**").
@@ -149,7 +149,7 @@ Following steps to connect the 64-bit values:
 9. Restart the site (**BoldBIOnPremiseEdition**) and all application pools (**BoldBI**, **BoldBIDesigner**, **BoldBIJobs**, and **BoldUMS**).
    ![IIS Start BoldBI](/static/assets/working-with-datasource/data-connectors/images/Odbc/IIS_Start_BoldBI.png)
    ![IIS Start Application Pools](/static/assets/working-with-datasource/data-connectors/images/Odbc/IIS_Start_ApplicationPools.png) 
-10. If the services are restarted, then go to the ODBC data source, it will list out the System DSN 64-bit values.
+10. If the services are restarted, then go to the ODBC data source to list out the System DSN 64-bit values.
 
 ## Connecting Bold BI to ODBC Data Source via REST API
 
@@ -398,7 +398,7 @@ Type while creating the data source needs to be ODBC.
 
 ### Parameters for editing Data Source
 
-> **NOTE:**  For editing Data Source via API. All the parameters are optional. The parameter which needs to be changed can be provided.
+> **NOTE:**  To edit a Data Source via API, all parameters are optional. Only the parameter that needs to be changed should be provided.
 
 #### Parameters for modifying expressions when editing Data Source
    
@@ -586,7 +586,7 @@ Type while creating the data source needs to be ODBC.
 
 ```
 
-> **NOTE:**  Through Rest API, the data source can be created or edited with only one table. If different table is provided in edit data source, the table will be replaced. The widgets will be retained only if the schema is same as the previous table.
+> **NOTE:**  Through the Rest API, the data source can be created or edited with only one table. If different table is provided in edit data source, the table will be replaced. The widgets will be retained only if the schema is same as the previous table.
 
 ### Connection Sample for Code View Mode
 

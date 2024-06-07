@@ -1,7 +1,7 @@
 # Introduction
-Bold BI is a powerful business intelligence dashboard software that helps you gain meaningful insights from your business data and make better decisions.
+Bold BI is a powerful business intelligence dashboard software that helps you gain meaningful insights from your business data to make better decisions.
 
-Bold BI provides a RESTful web API that allows other third-party applications to interact with Embedded BI programmatically. It supports read, create, edit, and delete operations, which are usually in JSON format. Users, groups, dashboards, data sources, and settings, among other items, can be handled using REST APIs.
+Bold BI provides a RESTful web API that allows third-party applications to interact with Embedded BI programmatically. It supports read, create, edit, and delete operations, which are typically in JSON format. Users, groups, dashboards, data sources, settings, and other items can be managed using REST APIs.
 
 If `https://<yourdomain>/bi/site/<site_identifier>` is your Bold BI site URL, then API end of this site will be accessed by `https://{yourdomain}/bi/api/site/<site_identifier>`
 
@@ -27,9 +27,9 @@ HTTP defines a collection of request methods that can be used to determine the a
 
 
 ## Response Status
-Response status codes are used by Bold BI to indicate whether API calls were successful or unsuccessful. This will assist you in determining the error or message type.
+Response status codes are used by Bold BI to indicate whether API calls were successful or unsuccessful. This will assist you in determining the type of error or message.
 
-The following table shows the HTTP status codes used in the Bold BI.
+The following table shows the HTTP status codes used in Bold BI.
 
 | **Status Code** | **Message**                | **Details**                                                                                                                                                      |
 | --------------- | -------------------------- | -----------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -56,7 +56,7 @@ The Content-Type header in the response headers specifies the type of content re
  - **Content-Type:** application/json
 
 ## Conventions
-The JSON format is used in Bold BI for API requests and responses, which can include different data types. The following is a list of data types that are used in Bold BI for API operations.
+The JSON format is used in Bold BI for API requests and responses, which can include various data types. The following is a list of data types that are utilized in Bold BI for API operations.
 
 | **Type** | **Description** |
 | --------- | -----------------|

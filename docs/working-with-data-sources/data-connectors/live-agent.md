@@ -7,12 +7,12 @@ documentation: ug
 ---
 
 # Connecting Bold BI to LiveAgent data source
-The Bold BI dashboard designer connects the LiveAgent web services through the REST API.
+The Bold BI dashboard designer connects to the LiveAgent web services through the REST API.
 
 ## Choose LiveAgent data source
   
   To configure the LiveAgent data source, follow these steps:
-1. Click the **Data Sources** button in the configuration panel to add a new data connection.
+1. Click on the **Data Sources** button in the configuration panel to add a new data connection.
 
    ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/common/DataSourcesIcon.png)
    
@@ -23,7 +23,7 @@ The Bold BI dashboard designer connects the LiveAgent web services through the R
   ![LiveAgent button](/static/assets/working-with-datasource/data-connectors/images/live-agent/liveagent_button.png)
 
 
- > **NOTE:** You can also create a data source from the home page by clicking the **Data Sources** menu from the left menu panel and **Create Data Source** from the data sources page.
+ > **NOTE:** You can also create a data source from the home page by clicking the **Data Sources** menu on the left menu panel and selecting **Create Data Source** from the data sources page.
 
    ![Choose data source from server](/static/assets/working-with-datasource/data-connectors/images/live-agent/LiveAgent-server.png)
 
@@ -31,15 +31,15 @@ The Bold BI dashboard designer connects the LiveAgent web services through the R
 
 ## Create LiveAgent data source
 
-Once you click the LiveAgent data source, the NEW DATA SOURCE configuration panel opens. Follow the below steps to create LiveAgent data source.
+Once you click the LiveAgent data source, the NEW DATA SOURCE configuration panel will open. Follow the below steps to create LiveAgent data source.
 
 1. Enter a name and description (optional) for the data source.
 2. Enter a valid LiveAgent REST API endpoint in the URL textbox. Refer to the [LiveAgent API documentation](https://www.ladesk.com/features/api/) for more details.
 
     Example: `https://<:your_site>.ladesk.com/api/v3/tickets`   
 
-3. Select **GET** method for the REST API in **Method** combo box.
-4. Choose a time interval for **Refresh Settings** using the combo box, to trigger the Rest API request periodically to keep the data in sync with our dashboard.  
+3. Select the **GET** method for the REST API in the **Method** combo box.
+4. Choose a time interval for the **Refresh Settings** using the combo box, to periodically trigger the REST API request and keep the data in sync with our dashboard.  
 
 5. Replace <:your_api_key> under Headers in **apikey** parameter.
 6. Choose **None** under **Authentication Type** as authentication is done through header.
@@ -100,7 +100,7 @@ The period before the next refresh call is triggered. It will automatically init
 
 ### Connect using custom attribute and dashboard parameter
 
-We have added support for **custom attributes and dashboard parameters** to the data source connection. You can connect to the data source using custom attributes or dashboard parameters.
+We have added support for **custom attributes and dashboard parameters** in the data source connection. You can now connect to the data source using custom attributes or dashboard parameters.
 
 **Custom Attribute**
 
@@ -110,7 +110,7 @@ We have added support for **custom attributes and dashboard parameters** to the 
 
 ![Dashboard Parameter](/static/assets/working-with-datasource/data-connectors/images/live-agent/Dashboardparameter.png)
 
->**Note:** Refer the [Dashboard Parameter Documentation](https://help.boldbi.com/working-with-data-sources/dashboard-parameter/) and [Custom Attributes Documentation](https://help.boldbi.com/working-with-data-sources/configuring-custom-attribute/) for more details.
+>**Note:** Refer to the [Dashboard Parameter Documentation](https://help.boldbi.com/working-with-data-sources/dashboard-parameter/) and [Custom Attributes Documentation](https://help.boldbi.com/working-with-data-sources/configuring-custom-attribute/) for more details.
 
 ## Related Links
 

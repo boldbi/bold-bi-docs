@@ -29,7 +29,7 @@ The Bold BI Server is the server responsible for serving the dashboards. It cons
 ## Customer Server
 The Customer Server is simply an embedding application that functions as an Authorization Server. This application will make calls to the Bold BI Server as part of the embedding architecture.
 
-> **NOTE:** Learn more about the authorized server [here](/security-configuration/authorize-server/).
+> **NOTE:** Learn more about the authorized server at the following link:[Authorized Server Information](/security-configuration/authorize-server/).
 
 ## Key features  
 

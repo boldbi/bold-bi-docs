@@ -8,7 +8,7 @@ documentation: ug
 
 # Connecting Bold BI to Flurry data source
 
-  You can connect to web services of popular site like `Flurry` connection type. To enable this connection, follow the given steps.
+  You can connect to web services of popular site like `Flurry` using the connection type. To enable this connection, follow the given steps.
   
   Click the `Data Source` button in the configuration panel to add a new data connection.
    
@@ -28,7 +28,7 @@ documentation: ug
 
   Enter an API in the URL text box which must be a valid REST API.
 
-  Refer to the [Flurry API documentation](https://developer.yahoo.com/flurry/docs/)
+  Refer to the [Flurry API documentation](https://developer.yahoo.com/flurry/support.html)
 
   ![URL](/static/assets/working-with-datasource/data-connectors/images/flurry/URL_flurry.png)
 
@@ -36,7 +36,7 @@ documentation: ug
 
   ![Method Flurry](/static/assets/working-with-datasource/data-connectors/images/flurry/Method_flurry.png)
 
-  Add header information by clicking `ADD`, if required.
+  Add header information by clicking `ADD`, if necessary.
 
   ![Header Flurry](/static/assets/working-with-datasource/data-connectors/images/flurry/Header_flurry.png)
   
@@ -60,11 +60,11 @@ documentation: ug
   
   ![Schema window](/static/assets/working-with-datasource/data-connectors/images/flurry/asknicelyschemawindow.png)
   
-  Now, you can get into the data design view window with selected table schema. Drag and drop the table.
+  Now, you can enter the data design view window with the selected table schema. Drag and drop the table.
   
   ![Data view](/static/assets/working-with-datasource/data-connectors/images/flurry/dataview_asknicely.png)
 
-  Click `Save` button to save the data source with valid name.
+  Click the `Save` button to save the data source with a valid name.
 
    ![Save](/static/assets/working-with-datasource/data-connectors/images/flurry/save_asknicely.png)
 

@@ -68,7 +68,7 @@ In this case, the dashboard can be embedded in the specified domains in the `Acc
 * The dashboards embedded in the allowed domain can be viewed.
 * The viewing of embedded dashboards will be blocked by the browser for domains not mentioned in the `Accept embedding requests from these websites`.
 
-Learn more about embedding the dashboard with advanced dashboard security [here](/embedding-options/iframe-embedding/secured-embedding/).  
+Learn more about embedding the dashboard with advanced security measures for [Secured Embedding](/embedding-options/iframe-embedding/secured-embedding/).
 
 When the dashboard is viewed from the allowed IP address,
 

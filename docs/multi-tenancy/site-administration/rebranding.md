@@ -41,7 +41,7 @@ The date format of the User Management Server can be changed, with the default d
 The time format of the Bold BI site can be changed, with the default time format being `12 hour`.
 
 ## Language
-There is an option to localize the User Management Server to any culture. Click [here](/localization/) to learn how to add a new localization or edit the existing localization in the User Management Server.
+There is an option to localize the User Management Server to any culture. Click on the [localization](/localization/) to learn how to add a new localization or edit the existing localization in the User Management Server.
 
 ## Powered by Syncfusion
 There is an option to show or hide `Powered by Syncfusion` in the footer of the User Management Server, with it being shown by default.

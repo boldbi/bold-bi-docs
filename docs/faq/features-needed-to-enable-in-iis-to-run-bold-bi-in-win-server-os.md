@@ -9,7 +9,7 @@ documentation: ug
 # Features to be enabled in IIS to run Bold BI in Windows Server OS
 The Bold BI Enterprise Edition can be hosted in both IIS Express and IIS. To run Bold BI in IIS, enable IIS along with its features and roles.
 
-> **NOTE:**  A pre-installed Bold BI Enterprise Edition and IIS configured Azure VM are available [here](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/syncfusion.bold-bi-enterprise-multi-tenant).
+> **NOTE:** A pre-installed Bold BI Enterprise Edition and IIS configured Azure VM are available in the Azure [Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/syncfusion.bold-bi-enterprise-multi-tenant).
 
 ## Steps to enable the IIS and features that are needed to run the Bold BI Server in Windows Server OS
 
@@ -23,7 +23,7 @@ The Bold BI Enterprise Edition can be hosted in both IIS Express and IIS. To run
 
 5. Enable the following .NET Framework features on `Features` and then click `Next`.
 
-   > **NOTE:**  You should use Microsoft .NET Framework 4.5 or higher version. Learn more [here](/overview/).
+   > **NOTE:** You should use Microsoft .NET Framework 4.5 or higher version. Learn more about the [Overview of Bold BI](/overview/).
 
    ![Roles and Features](/static/assets/faq/images/roles-features.png)
 

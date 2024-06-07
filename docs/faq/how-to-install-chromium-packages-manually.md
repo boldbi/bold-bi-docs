@@ -18,7 +18,7 @@ If you installed the build offline or skipped the packages during the build inst
 | Windows 64-bit        | https://storage.googleapis.com/chromium-browser-snapshots/Win_x64/901912/chrome-win.zip  | **`{Deployed Location}`**\app_data\bi\dataservice\\**`puppeteer`**\\**`Win64-901912`**\chrome-win|
 | Linux                 | https://storage.googleapis.com/chromium-browser-snapshots/Linux_x64/901912/chrome-linux.zip | /var/www/bold-services/application/app_data/bi/dataservice/**`puppeteer`**/**`Linux-901912`**/chrome-linux  |
 
-After copying the chromium packages into the specified directory above the table, you must restart the designer service. Please refer to this [link](/faq/how-to-restart-the-bold-bi-embedded-application/) for more information.
+After copying the chromium packages into the specified directory above the table, you must restart the designer service. Please refer to the instructions on [how to restart the Bold BI](/faq/how-to-restart-the-bold-bi-embedded-application/) for more information.
 
 > **NOTE:**
 > * The locations highlighted above do not exist. Please create them manually and move the downloaded packages.

@@ -26,7 +26,7 @@ To configure the CDATA data source, follow these steps:
 
 ## Connect to CDATA
 ### Create CDATA data source
-After clicking the data source, the **NEW DATA SOURCE** configuration panel opens. Follow the given steps to create the CDATA data source: 
+After clicking on the data source, the **NEW DATA SOURCE** configuration panel opens. Follow the given steps to create the CDATA data source: 
 1. Enter a name and description (optional) for the data source. 
 2. Enter a valid CDATA server or host name in the **ServerName** text box.
 3. Enter a valid CDATA username in the **UserName** text box. 
@@ -89,12 +89,12 @@ In this connection type, data is fetched from the source periodically. Choose th
 ### Preview and data import
 1. Click **Connect** to connect the CDATA server with configured details.
 2. The Extract Data dialog opens. This dialog has two modes of connection, either via Table or [Custom query](/faq/working-with-custom-query-extract-mode-in-bold-bi/). Under the custom query option, write the required query and click **Connect**.
-Under Table option, this dialog displays list of tables and views in treeview. Select the required table(s) or view(s) from treeview to use in the designer. [Incremental Update](/working-with-data-sources/data-connectors/sql-data-source/#incremental-update) can be performed in both tables and views. 
+Under Table option, this dialog displays list of tables and views in treeview. Select the required table(s) or view(s) from treeview to use in the designer. [Incremental Update](/working-with-data-sources/data-connectors/ms-sql-server/#incremental-update) can be performed in both tables and views. 
 The option is available for configuring incremental refresh column for the selected items in the right-side panel. 
       * The table must have a primary key column and date column to configure the incremental refresh option.
       * The Views must have a date column to configure the incremental refresh option and unique column(s) is optional which is used to update the modified records.
 
-   If you configured it, then the data source will work on [Incremental update](/working-with-data-sources/data-connectors/sql-data-source/#incremental-update); otherwise, it works on the [Full load](/working-with-data-sources/data-connectors/sql-data-source/#full-load) concept. Finally, click **Connect**.
+   If you configured it, then the data source will work on [Incremental update](/working-with-data-sources/data-connectors/ms-sql-server/#incremental-update); otherwise, it works on the [Full load](/working-with-data-sources/data-connectors/ms-sql-server/#full-load) concept. Finally, click **Connect**.
 
    ![Preview](/static/assets/working-with-datasource/data-connectors/images/common/Preview_Extract.png#max-width=100%)
 

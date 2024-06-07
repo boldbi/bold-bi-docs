@@ -7,12 +7,12 @@ documentation: ug
 ---
 
 # Connecting Bold BI to HubSpot data source
-The Bold BI dashboard designer supports connecting the HubSpot web services through REST API. 
+The Bold BI dashboard designer supports connecting to HubSpot web services through the REST API. 
 
 ## Choose HubSpot data source
 
 To configure the HubSpot data source, follow these steps:
-1. Click the **Data Sources** button in the configuration panel to add a new data connection.
+1. Click on the **Data Sources** button in the configuration panel to add a new data connection.
    ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/common/DataSourcesIcon.png)
    
 2. Click **CREATE NEW** to launch a new connection from the connection panel.
@@ -20,18 +20,18 @@ To configure the HubSpot data source, follow these steps:
 
    ![Choose data source](/static/assets/working-with-datasource/data-connectors/images/HubSpot/ChooseDS.png)
 
-> **NOTE:** You can also create a data source from the home page by clicking the **Data Sources** menu from the left menu panel and **Create Data Source** from the data sources page.
+> **NOTE:** You can also create a data source from the home page by clicking the **Data Sources** menu on the left menu panel and selecting **Create Data Source** from the data sources page.
 
    ![Choose data source from server](/static/assets/working-with-datasource/data-connectors/images/HubSpot/ChooseDS_Server.png)
 
 ## Advanced
-In Advanced category, It will Redirect to the Bold ETL. Refer [Bold ETL](/managing-resources/manage-data-sources/#advanced-category).
+In the Advanced category, It will Redirect to the Bold ETL. Refer to the [Bold ETL](/managing-resources/manage-data-sources/#advanced-category).
 
 ## Basic
-In Basic Category, It will act as the connector in Bold BI. And need to follow the below steps.
+In the Basic Category, It will act as the connector in Bold BI and needs to follow the steps below.
 
 ## Create a HubSpot data source
-Once you click the data source, the NEW DATA SOURCE configuration panel opens. Follow these steps to create a HubSpot data source.
+Once you click on the data source, the NEW DATA SOURCE configuration panel will open. Follow these steps to create a HubSpot data source.
 1. Enter a name and description (optional) for the data source.
 2. Click the **API Endpoints** dropdown box and choose the required endpoint.
 3. Enter your **API KEY** in the API key text box.
@@ -53,8 +53,7 @@ You can also edit the connection information set using the [Edit Connection](/wo
 Max Rows
 </td>
 <td>
-Most of the REST APIs return only fewer data on a single API request. To pull the amount of data you need, set a value in this field.  
-Pagination is handled internally and will fetch the amount of data you need.
+Most REST APIs return only a limited amount of data on a single API request. To retrieve the necessary amount of data, you can set a value in this field. Pagination is handled internally and will fetch the required data.
 </td>
 </tr>
 <tr>
@@ -69,8 +68,8 @@ Period of time before the next refresh call is triggered. This will automaticall
 
 ### Setting up the URL
 
-1. For instance, to get the specific deal details, query the <i>/Show Deal</i> endpoint.
-2. From the listed information get the id of the specific user.
+1. For example, in order to retrieve the specific deal details, query the <i>/Show Deal</i> endpoint.
+2. Obtain the id of the specific user from the information listed.
 
 Replace it in the URL to query particular conversations:
 
@@ -99,7 +98,7 @@ Click the Preview & Connect to connect with the configurations set.
 
    ![Preview](/static/assets/working-with-datasource/data-connectors/images/common/Preview.png)
 
-* Now, the data design view page with the selected table schema opens. Drag from the tree view table in the left pane and drop the table in the Query designer page.
+* Now, the data design view page with the selected table schema opens. Drag the table from the tree view table in the left pane and drop it onto the Query designer page.
 
    ![Query Editor](/static/assets/working-with-datasource/data-connectors/images/common/QueryEditor.png)
 
@@ -107,7 +106,7 @@ Click the Preview & Connect to connect with the configurations set.
 
 ### Connect using custom attribute and dashboard parameter
 
-We have added support for **custom attributes and dashboard parameters** to the data source connection. You can connect to the data source using custom attributes or dashboard parameters.
+We have added support for **custom attributes and dashboard parameters** in the data source connection. You can now connect to the data source using custom attributes or dashboard parameters.
 
 **Custom Attribute**
 
@@ -117,7 +116,7 @@ We have added support for **custom attributes and dashboard parameters** to the 
 
 ![Dashboard Parameter](/static/assets/working-with-datasource/data-connectors/images/HubSpot/Dashboardparameter.png)
 
->**Note:** Refer the [Dashboard Parameter Documentation](https://help.boldbi.com/working-with-data-sources/dashboard-parameter/) and [Custom Attributes Documentation](https://help.boldbi.com/working-with-data-sources/configuring-custom-attribute/) for more details.
+>**Note:** Refer to the [Dashboard Parameter Documentation](https://help.boldbi.com/working-with-data-sources/dashboard-parameter/) and [Custom Attributes Documentation](https://help.boldbi.com/working-with-data-sources/configuring-custom-attribute/) for more details.
 
 ## Related links
 [Data Transformation](/working-with-data-sources/data-modeling/joining-table/)

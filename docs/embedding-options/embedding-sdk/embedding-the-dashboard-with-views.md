@@ -199,7 +199,7 @@ Follow these steps to embed a dashboard with view in your application.
 
 ## How to implement the AuthorizeAPI endpoint with user mail or user name
 
-1. You need to implement the AuthorizeAPI endpoint in your application. This will act as the bridge between your application and the Bold BI server and also you need to update the secure details like email. Learn more about the authorize server [here](/security-configuration/authorize-server/).  
+1. You need to implement the AuthorizeAPI endpoint in your application. This will act as the bridge between your application and the Bold BI server and also you need to update the secure details like email. Learn more about the [authorization server](/security-configuration/authorize-server/).
 
 2. To create the AuthorizeAPI action method, copy the following code snippet in your controller. You can use currently logged in user email at `user@domain.com` or user name at `username`, but this user should have write access to the dashboard.   
 
@@ -254,7 +254,7 @@ Follow these steps to embed a dashboard with view in your application.
 
 ## How to get Embed Secret key from Bold BI application
 
-You can get your Embed Secret key from the administrator setting section. Refer to this [link](/site-administration/embed-settings/) for more details.
+You can get your Embed Secret key from the administrator setting section. Please refer to the [Embed Settings](/site-administration/embed-settings/) for further information.
 
 ## How to get common Embed Secret key from UMS
 

@@ -59,7 +59,7 @@ You can browse the image from your `local` system.
 
 You can provide the `URL` of the image, which must be a valid URL.
 
-Ex: http://flagpedia.net/data/flags/normal/in.png
+Ex: `http://flagpedia.net/data/flags/normal/in.png`
 
 ![Background Image URL](/static/assets/visualizing-data/visualization-widgets/images/text/textimage-url.png)
 

@@ -108,11 +108,11 @@ The user will be added and granted access to the site.
 
 ### Isolation Code
 
-To learn about how to configure the Isolation Code, click [here](/working-with-data-sources/configuring-isolation-code/).
+To learn about how to configure the Isolation Code, click on the [Isolation code](/working-with-data-sources/configuring-isolation-code/).
 
 ### Custom Attribute 
 
-To learn about how to configure the Custom Attribute, click [here](/working-with-data-sources/configuring-custom-attribute/).
+To learn how to configure the [Custom Attribute](/working-with-data-sources/configuring-custom-attribute/).
 
 ### Settings
 

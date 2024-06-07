@@ -31,7 +31,7 @@ Steps to open and edit the `custom_ui.json` file to customize the user interface
 
 3. Fill in the required fields in the file and `Save.`
 
-4. Restart the application and access the site. Refer to this [link](/faq/how-to-restart-the-bold-bi-embedded-application/) to learn how to restart the Bold BI application.
+4. Restart the application and access the site. Please refer to the instructions on [how to restart the Bold BI](/faq/how-to-restart-the-bold-bi-embedded-application/) for more information.
 
 **Custom UI JSON**
 

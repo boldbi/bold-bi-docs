@@ -33,7 +33,7 @@ The font styles that have been uploaded in the **UMS site settings** will be lis
 
 ![Custom Font Settings](/static/assets/site-administration/images/custom-font.png#width=45%)
 
-Please click [here](/multi-tenancy/site-administration/look-and-feel-settings/) to learn how to upload font styles on the **UMS site settings** page.
+Please click on the [Look and Feel Settings](/multi-tenancy/site-administration/look-and-feel-settings/) to learn how to upload font styles on the **UMS site settings** page.
 
 
 ## Theme Mode
@@ -54,9 +54,9 @@ Here is a sample image after applying the custom theme on your site.
 
 ![Light custom image](/static/assets/site-administration/images/light-custom-image.png#width=45%)
 
-Please click [here](/multi-tenancy/site-administration/look-and-feel-settings/) to learn how to upload custom theme files on the **UMS site settings** page.
+Please click on the [Look and Feel Settings](/multi-tenancy/site-administration/look-and-feel-settings/) to learn how to upload custom theme files on the **UMS site settings** page.
 
-Please click [here](/multi-tenancy/site-administration/look-and-feel-settings/theme/create-custom-application-theme/) to learn how to create a custom application theme file.
+Please click on the [Create application custom theme](/multi-tenancy/site-administration/look-and-feel-settings/theme/create-custom-application-theme/) to learn how to create a custom application theme file.
 
 ## Dashboard Theme
 
@@ -68,6 +68,6 @@ The custom theme files uploaded in **UMS site settings** will be listed in the `
 Here is a sample image after applying the custom theme for dashboards on your site.
 ![darkvioletthemedashboard](/static/assets/site-administration/images/darkvioletthemedashboard.png#width=45%)
 
-Please click [here](/multi-tenancy/site-administration/look-and-feel-settings/) to learn how to upload custom theme files on the **UMS site settings** page.
+Please click on the [Look and Feel Settings](/multi-tenancy/site-administration/look-and-feel-settings/) to learn how to upload custom theme files on the **UMS site settings** page.
 
-Please click [here](/multi-tenancy/site-administration/look-and-feel-settings/theme/create-custom-dashboard-theme/) to learn how to create a custom dashboard theme file.
+Please click on the [Create dashboard custom theme](/multi-tenancy/site-administration/look-and-feel-settings/theme/create-custom-dashboard-theme/) to learn how to create a custom dashboard theme file.

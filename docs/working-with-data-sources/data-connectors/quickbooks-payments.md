@@ -6,7 +6,7 @@ documentation: ug
 ---
 
 # Connecting Bold BI to the QuickBooks Payments data source
-The Bold BI dashboard designer supports connecting the QuickBooks Payments web services through REST API. 
+The Bold BI dashboard designer supports connecting to QuickBooks Payments web services through the REST API. 
 
 ## Choose QuickBooks Payments data source
 To configure the QuickBooks Payments data source, follow these steps:
@@ -18,23 +18,23 @@ To configure the QuickBooks Payments data source, follow these steps:
 
    ![Choose data source](/static/assets/working-with-datasource/data-connectors/images/QuickBooksPayments/ChooseDS.png)
 
-> **NOTE:** You can also create a data source from the home page by clicking the **Data Sources** menu from the left menu panel and **Create Data Source** from the data sources page.
+> **NOTE:** You can also create a data source from the home page by clicking the **Data Sources** menu on the left menu panel and selecting **Create Data Source** from the data sources page.
 
    ![Choose data source](/static/assets/working-with-datasource/data-connectors/images/QuickBooksPayments/ChooseDS_server.png)
 
 ## Authentication with QuickBooks Payments
-Use the following steps to authenticate with QuickBooks Payments web service:
+Follow these steps to authenticate with the QuickBooks Payments web service:
  
-1. Click the data source, you will be prompted with a login window. Enter the credentials of your QuickBooks Payments account to authorize.
+1. Click on the data source, which will prompt a login window. Enter the credentials of your QuickBooks Payments account to authorize.
  
 2. Click **Allow** in the authorization window, to accept the scopes requested by the Bold BI dashboards.
-> **NOTE:** If the permission is denied, the account will not be accessible from the dashboard.
+> **NOTE:** If permission is denied, the account will not be accessible from the dashboard.
  
-3. Set a name to identify the account and click **Next**. 
+3. Provide a name to identify the account and click **Next**. 
  
-4. You have now successfully authorized your connection. Click **Connect** to continue with the data source connection.
+4. You have now successfully authorized your connection. Click on **Connect** to proceed with the data source connection.
  
-5. To connect through already connected account, refer to the [Connected Accounts](#connected-accounts-for-the-oauth-data-sources). 
+5. To connect through an already connected account, refer to the [Connected Accounts](#connected-accounts-for-the-oauth-data-sources). 
 > **NOTE:** To connect another account, click **Connect New Account.**
 
 
@@ -48,7 +48,7 @@ After the successful authentication, the NEW DATA SOURCE configuration panel w
 5. In **Max Rows**, enter the maximum number of rows to be fetched from the QuickBooks Payments data source. This value is used to fetch the data from the QuickBooks Payments data source using pagination.
 6. Choose a time interval for the **Refresh Settings** using the combo box, to trigger the Rest API request periodically to keep the data in sync with our dashboard.  
 7. Select the **JSON** data type in the **Data Format** combo box.
-8. The authentication type will be set to the **QuickBooks Payments** automatically since the OAuth is used for authenticating with QuickBooks Payments account.
+8. The authentication type will be automatically set to **QuickBooks Payments** since OAuth is used for authenticating with the QuickBooks Payments account.
 
 ![Data source preview](/static/assets/working-with-datasource/data-connectors/images/QuickBooksPayments/DataSourcesView.png)
 
@@ -61,8 +61,7 @@ You can also edit the connection information set here using the [Edit Connection
 Max Rows
 </td>
 <td>
-Most of the REST APIs return only fewer data on a single API request. To pull the amount of data you need, set a value in this field.  
-Pagination is handled internally and will fetch the amount of data you need.
+Most REST APIs return only a limited amount of data on a single API request. To retrieve the necessary amount of data, you can set a value in this field. Pagination is handled internally and will fetch the required data.
 </td>
 </tr>
 <tr>
@@ -70,7 +69,7 @@ Pagination is handled internally and will fetch the amount of data you need.
 Refresh Settings
 </td>
 <td>
-Period of time before next refresh call is triggered. This will automatically trigger a call for the API configured in the data source to keep the data up to date.
+The period of time before the next refresh call is triggered. This will automatically trigger a call to the API configured in the data source to keep the data up to date.
 </td>
 </tr>
 <tr>
@@ -83,8 +82,8 @@ By default, the data is retrieved in the <i>JSON</i> format. Additionally, <i>XM
 </tr>
 </table>
 
-1. For instance, to query about the account, query the <i>/Get bank account</i> endpoint.
-2. From the listed information, you can get the ID of the specific account.
+1. For example, if you want to inquire about the account, you can query the <i>/Get bank account</i> endpoint.
+2. You can obtain the ID of the specific account from the information provided.
 
 Replace it in the URL to query a particular account:
 

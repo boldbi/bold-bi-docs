@@ -81,7 +81,7 @@ A dashboard can be embedded in the create, edit, and view modes of any applicati
 ## Public embedding
 If you wish to embed the dashboard without requiring user authentication, you should first make the dashboard public and then proceed to embed it. By making it public, it will automatically be rendered without the need for credentials. However, it is important to note that you cannot enable the comments panel when embedding a public dashboard.
 
-> **NOTE:** Embedding the public dashboard will not work when the public dashboard setting is disabled. Learn more about the dashboard settings [here](/site-administration/dashboard-settings/).
+> **NOTE:** Embedding the public dashboard will not work when the public dashboard setting is disabled. Learn more about the [Dashboard Settings](/site-administration/dashboard-settings/).
 
 ## Private embedding
 Private dashboards can be embedded and are accessible to users in Bold BI who have read permission. These dashboards would require users to log in to the Bold BI server before rendering. Therefore, whenever private dashboards are embedded and the user is not yet authenticated, the embedded dashboard will display the login page.
@@ -89,9 +89,9 @@ Private dashboards can be embedded and are accessible to users in Bold BI who ha
 > **NOTE:**  By default, the dashboard access mode will be set to private until the owner of the dashboard changes it to public.
 
 ## Advanced security
-You can control which websites, IP addresses, and applications can embed the dashboard by using the dashboard security option. Find more information about dashboard security [here](/managing-resources/manage-dashboards/advanced-dashboard-security/).  
+You can control which websites, IP addresses, and applications can embed the dashboard by using the dashboard security option. Find more information about the [Advanced Dashboard Security](/managing-resources/manage-dashboards/advanced-dashboard-security/). 
 
-> **NOTE:**  Please learn more details about embedding the dashboard sample [here](/embedding-options/iframe-embedding/sample/dashboard-embedding/).  
+> **NOTE:** Please learn more details about [Dashboard Embedding Sample](/embedding-options/iframe-embedding/sample/dashboard-embedding/).
 
 ## Available parameter
 <table>
@@ -220,9 +220,9 @@ Pass your filters to the `embed_datasource_filter` parameter in the iFrame URL a
 <iframe src='http://test.boldbi.com/bi/en-us/site/site1/dashboards/8428c9d9-85db-418c-b877-ea4495dcddd7/Predictive%20Analytics/Personal%20Expense%20Analysis?isembed=true&embed_datasource_filter=&&dashboardparametername=parametervalue&urlparametername=parametervalue' id='dashboard-frame' width='100%' height='600px' allowfullscreen frameborder='0'></iframe>
 ```
 
-* In the iframe URL, the dashboard parameter filter must be started with a double ampersand `&&`. For more details, refer to this [link](/working-with-data-sources/dashboard-parameter/configuring-dashboard-parameters/).    
+* In the iframe URL, the dashboard parameter filter must be started with a double ampersand `&&`. For more details, Refer to the [configuring dashboard parameters](/working-with-data-sources/dashboard-parameter/configuring-dashboard-parameters/).   
 
-* In the iframe URL, the URL filter parameter must be started with a single ampersand `&`. For more details, refer to this [link](/working-with-dashboards/preview-dashboard/urlparameters/).
+* In the iframe URL, the URL filter parameter must be started with a single ampersand `&`. For more details, please refer to the [URL Filter](/working-with-dashboards/preview-dashboard/urlparameters/).
 
 
 ## How to embed the dashboard in create mode using the URL
@@ -275,4 +275,4 @@ To avoid login, use the Single Sign-On.
 You can pass parameters to a dashboard by including them in the dashboard URL when embedding it. By passing parameter values within the URL, filters will be applied to the dashboard upon initial load. For more detailed information, you can learn more [here](/working-with-dashboards/preview-dashboard/urlparameters/#passing-parameter-with-url).  
 
 ## Dynamic connection string for dashboard embedding
-The Dynamic Connection String feature allows you to change the connection string of data sources in dashboard view mode. This feature is only applicable to embedded dashboards using the Dashboard Embedding feature. Dashboards in the Bold BI application will use the connection string used during data source creation. For more information, please visit the provided [here](/embedding-options/iframe-embedding/dynamic-connection-string/).  
+The Dynamic Connection String feature allows you to change the connection string of data sources in dashboard view mode. This feature is only applicable to embedded dashboards using the Dashboard Embedding feature. Dashboards in the Bold BI application will use the connection string used during data source creation. For more information, please visit the provided [Dynamic Connection String](/embedding-options/iframe-embedding/dynamic-connection-string/).

@@ -84,7 +84,7 @@ The authentication information and data collected from SQL and REST data sources
 
 ## Select storage
 
-You need to provide the storage type as either file storage or blob storage, in which Bold BI application will store the resources, contents, and logs. For more information, please refer to this [link](/faq/what-all-are-the-files-and-folders-will-be-generated-in-the-installed-machine/).
+You need to provide the storage type as either file storage or blob storage, in which Bold BI application will store the resources, contents, and logs. For more information, please refer to the [what are the resources will be generated in the installed machine](/faq/what-all-are-the-files-and-folders-will-be-generated-in-the-installed-machine/).
 
 ![File storage type](/static/assets/multi-tenancy/images/select-storage-file.png#max-width=45%)
 
@@ -98,11 +98,11 @@ You can skip this configuration directly by clicking the `Next` button, or you c
 
 ### Isolation code
 
-The isolation code feature is used to configure row-level security for the site to apply to all dashboards on the site. Users can set the filter value in a specific column of the data source. The UMS admin can apply the isolation code from the site settings of the UMS site details page. Dashboards will be filtered based on the applied isolation code. If the column in the code does not match the data source level, no data will be displayed in widgets. Learn more [here](/working-with-data-sources/configuring-isolation-code/).
+The isolation code feature is used to configure row-level security for the site to apply to all dashboards on the site. Users can set the filter value in a specific column of the data source. The UMS admin can apply the isolation code from the site settings of the UMS site details page. Dashboards will be filtered based on the applied isolation code. If the column in the code does not match the data source level, no data will be displayed in widgets. Learn more about [Isolation code](/working-with-data-sources/configuring-isolation-code/).
 
 ### Custom attribute
 
-This can be set by the UMS admin for a site on the site details page. Learn more [here](/working-with-data-sources/configuring-custom-attribute/).
+This can be set by the UMS admin for a site on the site details page. Learn more about the [Configure Custom Attribute](/working-with-data-sources/configuring-custom-attribute/).
 
 Attributes are name-value pairs associated with users, groups, and sites (tenants).
 

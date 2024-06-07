@@ -7,11 +7,11 @@ documentation: ug
 ---
  
 # Connecting Bold BI to Rockset data source
-Bold BI Dashboard Designer supports connecting Rockset database through SQL Live Query (REST API).
+The Bold BI dashboard designer supports connecting to Rockset database through SQL Live Query (REST API).
 
 ## Choose Rockset data source
 To configure the Rockset data source, follow the below steps:
-1. Click the **Data Sources** button in the configuration panel to add a new data connection.
+1. Click on the **Data Sources** button in the configuration panel to add a new data connection.
 
    ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/common/DataSourcesIcon.png)
 
@@ -20,7 +20,7 @@ To configure the Rockset data source, follow the below steps:
 
    ![Choose data source](/static/assets/working-with-datasource/data-connectors/images/Rockset/ChooseDS.png)
 
-> **NOTE:**  You can also create a data source from the home page by clicking the **Data Sources** menu from left menu panel and **Create Data Source** from the data sources page.
+> **NOTE:**  You can also create a data source from the home page by clicking on the **Data Sources** menu on the left menu panel and selecting **Create Data Source** from the data sources page.
 
    ![Choose data source from server](/static/assets/working-with-datasource/data-connectors/images/Rockset/ChooseDS_server.png)
 
@@ -30,23 +30,23 @@ After clicking the data source, the NEW DATA SOURCE configuration panel opens. F
 1. Enter a name and description (optional) for the data source.
 2. Choose the region endpoint of the server from the **Region Endpoint** drop-down.
 3. Enter a valid Rockset secret key in the **ApiKey** text box. 
-4. Select a Workspace that you want to query in the listed Workspace associated with the given Rockset server in the WorkSpaces drop down. 
+4. Select a Workspace that you want to query from the list of Workspaces associated with the given Rockset server in the Workspace drop-down menu.
 
    ![Rockset Connection](/static/assets/working-with-datasource/data-connectors/images/Rockset/Rockset_Connection.png)
 
-In future, you can edit the connection information using [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
+In the future, you can edit the connection information using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 
 ### Data Preview
 1. Click **Connect** to connect the Rockset server with configured details.
-The schema represents the collection list that are retrieved from the Rockset server. This dialog displays a list of schemas in treeview and its corresponding values.
+The schema represents the collection list that is retrieved from the Rockset server. This dialog displays a list of schemas in treeview and their corresponding values.
 
    ![Treeview schema](/static/assets/working-with-datasource/data-connectors/images/common/Treeview_schema.png)
 
-2. Now, the data design view page with selected table schema opens. Drag and drop the table.
+2. Now, the data design view page with the selected table schema opens. Drag and drop the table.
 
    ![Query designer](/static/assets/working-with-datasource/data-connectors/images/common/QueryEditor_sql.png)
 
-    Either you can use the Code View options for passing query to display data.
+    Alternatively, you can use the Code View options for passing a query to display data.
 
    ![Codeview mode](/static/assets/working-with-datasource/data-connectors/images/common/CodeViewMode.png)
 
@@ -54,7 +54,7 @@ The schema represents the collection list that are retrieved from the Rockset se
 
 ### Connect using custom attribute and dashboard parameter
 
-We have added support for **custom attributes and dashboard parameters** to the data source connection. You can connect to the data source using custom attributes or dashboard parameters.
+We have added support for **custom attributes and dashboard parameters** in the data source connection. You can now connect to the data source using custom attributes or dashboard parameters.
 
 **Custom Attribute**
 
@@ -64,7 +64,7 @@ We have added support for **custom attributes and dashboard parameters** to the 
 
 ![Dashboard Parameter](/static/assets/working-with-datasource/data-connectors/images/Rockset/Dashboardparameter.png)
 
->**Note:** Refer the [Dashboard Parameter Documentation](https://help.boldbi.com/working-with-data-sources/dashboard-parameter/) and [Custom Attributes Documentation](https://help.boldbi.com/working-with-data-sources/configuring-custom-attribute/) for more details.
+>**Note:** Refer to the [Dashboard Parameter Documentation](https://help.boldbi.com/working-with-data-sources/dashboard-parameter/) and [Custom Attributes Documentation](https://help.boldbi.com/working-with-data-sources/configuring-custom-attribute/) for more details.
 
 ## Connecting Bold BI to Rockset Data Source via REST API
 
@@ -76,7 +76,7 @@ Type while creating the data source needs to be Rockset.
 
 ### Parameters for creating Data Source
 
-> **NOTE:** The ability to provide join support is available only during the creation of a new data source. Join in edit connection mode is not supported.
+> **NOTE:** The ability to provide join support is only available during the creation of a new data source. Join in edit connection mode is not supported.
 
    <table>
    <tr>
@@ -220,7 +220,7 @@ Type while creating the data source needs to be Rockset.
 
 ### Parameters for editing Data Source
 
-> **NOTE:**  For editing Data Source via API. All the parameters are optional. The parameter which needs to be changed can be provided.
+> **NOTE:**  To edit the Data Source via API, all parameters are optional. Only provide the parameter that needs to be changed.
 
 #### Parameters for modifying expressions when editing Data Source
    
@@ -373,7 +373,7 @@ Type while creating the data source needs to be Rockset.
 
 ```
 
-> **NOTE:**  Through Rest API, the data source can be created or edited with only one table. If different table is provided in edit data source, the table will be replaced. The widgets will be retained only if the schema is same as the previous table.
+> **NOTE:**  Through the Rest API, the data source can be created or edited with only one table. If different table is provided in edit data source, the table will be replaced. The widgets will be retained only if the schema is same as the previous table.
 
 ### Connection Sample for Code View Mode
 

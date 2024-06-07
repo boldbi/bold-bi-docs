@@ -32,7 +32,7 @@ Use the following steps to authenticate with Azure DevOps web service:
 
    > **NOTE:** If permission is denied, the account will not be accessible from the dashboard.
 
-3. Set a name to identify the account and click **Next**. 
+3. Provide a name to identify the account and click **Next**. 
 4. You have now successfully authorized your connection. Click **Connect** to continue with the data source connection.
 5. To connect via an already connected account, refer to [Connected Accounts](/working-with-data-sources/data-connectors/azure-devops/#connected-accounts-for-oauth-data-sources).
 
@@ -63,7 +63,7 @@ In Azure DevOps, you can fetch data through [**Boards**](/working-with-data-sour
 1. Enter a name and optional description for the data source.
 2. Please enter a valid Azure DevOps REST API endpoint in the URL textbox. Refer to the [Azure DevOps API documentation](https://docs.microsoft.com/en-us/rest/api/azure/devops/?view=azure-devops-rest-5.0) for more details.
 
-    Example: [https://dev.azure.com/&lt;:Account&gt;/_apis/projects](https://dev.azure.com/%3c:Account%3e/_apis/projects)
+    Example: `https://dev.azure.com/<:Account>/_apis/projects`
 
    > **NOTE:** With this, you can extract data from other Azure DevOps services such as Azure Pipelines, Azure Repos, Azure Test Plans, and Azure Artifacts using the prepared endpoint.
 
@@ -79,8 +79,7 @@ You can also edit the connection information set here using the [Edit Connection
 Max Rows
 </td>
 <td>
-Most of the REST APIs return only fewer data on a single API request. To pull the amount of data you need, set a value in this field.  
-Pagination is handled internally and will fetch the amount of data you need.
+Most REST APIs return only a limited amount of data on a single API request. To retrieve the necessary amount of data, you can set a value in this field. Pagination is handled internally and will fetch the required data.
 </td>
 </tr>
 <tr>
@@ -88,7 +87,7 @@ Pagination is handled internally and will fetch the amount of data you need.
 Refresh Settings
 </td>
 <td>
-Period of time before next refresh call is triggered. This will automatically trigger a call for the API configured in the data source to keep the data up to date. If you do not want to sync your new data, choose ‘Never’.
+The period of time before the next refresh call is triggered. This will automatically trigger a call to the API configured in the data source to keep the data up to date. If you do not want to sync your new data, choose ‘Never’.
 </td>
 </tr>
 </table>
@@ -108,18 +107,18 @@ For more information on the API endpoints available for this data source, refer 
 ### Sample queries
 **Projects**
 
-[https://dev.azure.com/TestAccount/_apis/projects](https://dev.azure.com/TestAccount/_apis/projects)
+`https://dev.azure.com/TestAccount/_apis/projects`
 
 **Test Plans**
 
-[https://dev.azure.com/MyOrganization/TestProject/_apis/testplan/plans](https://dev.azure.com/MyOrganization/TestProject/_apis/testplan/plans)
+`https://dev.azure.com/MyOrganization/TestProject/_apis/testplan/plans`
 
 **Builds**
 
-[https://dev.azure.com/MyOrganization/TestProject/_apis/build/builds](https://dev.azure.com/MyOrganization/TestProject/_apis/build/builds)
+`https://dev.azure.com/MyOrganization/TestProject/_apis/build/builds`
 
 ## Preview and Data import
-* Click **Preview & Connect** to connect with the configurations set.
+* Click **Preview & Connect** to connect with the configurations that have been set.
 * The Choose Schema(s) dialog opens. The schema represents the key fields of JSON data retrieved from Azure DevOps Rest API request. This dialog displays a list of schemas in treeview and its corresponding values in grid for preview. Select required schema(s) from treeview to use in designer and click **Connect**.
 
    ![Preview](/static/assets/working-with-datasource/data-connectors/images/common/Preview.png)

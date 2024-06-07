@@ -184,7 +184,7 @@ Follow these steps to embed a programmatically created multi-tab dashboard into 
 
 ## How to implement the authorize server with user mail or user name
 
-1. Implement an authorization endpoint in your application. This will bridge your application and the Bold BI server and update secure details like email and group-based access. You can learn more about the authorized server [here](/security-configuration/authorize-server/).  
+1. Implement an authorization endpoint in your application. This will bridge your application and the Bold BI server and update secure details like email and group-based access. You can learn more about the [authorization server](/security-configuration/authorize-server/).
 
 2. To create authorization-server action method, copy the following snippet in your controller. You can use currently logged in user email at `user@domain.com` or user name at `username`, but this user should have access to the dashboard.   
 
@@ -238,7 +238,7 @@ Follow these steps to embed a programmatically created multi-tab dashboard into 
 
 ## How to get Embed Secret key from Bold BI application
 
-You can get your Embed Secret key from administrator setting section. Refer this [link](/site-administration/embed-settings/) for more details.
+You can get your Embed Secret key from administrator setting section. Please refer to the [Embed Settings](/site-administration/embed-settings/) for further information.
 
 ## How to get common Embed Secret key from UMS
 

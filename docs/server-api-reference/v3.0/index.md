@@ -9,7 +9,7 @@ documentation: ug
 
 # REST API v3.0
 
-This section explains how to manage(add and update) schedules in your Bold BI site.
+This section explains how to manage (add and update) schedules on your Bold BI site.
 
 [Rest API - v3.0](/server-api-reference/v3.0/api-reference/)
 

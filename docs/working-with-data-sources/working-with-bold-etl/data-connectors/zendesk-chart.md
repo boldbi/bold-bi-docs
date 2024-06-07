@@ -13,16 +13,16 @@ documentation: ug
 Log into Zendesk to find your subdomain in the URL. For example, for ``www.yourhub.zendesk.com``, the subdomain is `yourhub`.
 
 ## Grab Zendesk Chat OAuth token:
-1. Access Zendesk Chat directly or through the top right "Chat" option in Zendesk product.
+1. Access Zendesk Chat directly or through the "Chat" option located in the top right corner of the Zendesk product.
 2. Navigate to "Settings" > "Account" > "API" > "Add API client".
-3. Fill in client name, company, and redirect URLs (default: ``localhost:8080``).
+3. Fill in the client name, company, and redirect URLs (default: `http://localhost:8080`).
 4. Record the "CLIENT_ID" and "SUBDOMAIN".
 5. Format the following URL with your own CLIENT_ID and SUBDOMAIN, paste it into a new browser tab, and press Enter.
-6. The call will be made, possibly asking you to log in and select 'Allow' to generate the token.
-7. If the call succeeds, your browser's address field will contain your new OAuth token (returned as the `access_token` value).
-8. Despite the seeming error message displayed in the browser's main window, if 'access_token' is returned in the browser's URL field, then it worked.
-9. Safely store the OAuth token to authenticate Zendesk Chat for retrieving data.
-10. There are several other methods to obtain Zendesk chat token as given in the full documentation [here](https://developer.zendesk.com/rest_api/docs/chat/introduction).
+6. The call will be made, possibly prompting you to log in and select 'Allow' to generate the token.
+7. If the call is successful, your browser's address field will display your new OAuth token (returned as the `access_token` value).
+8. Despite any error messages in the browser's main window, if 'access_token' appears in the browser's URL field, then the process was successful.
+9. Safely store the OAuth token for authentication purposes when retrieving data from Zendesk Chat.
+10. Additional methods for obtaining a Zendesk chat token can be found in the full documentation provided [here](https://developer.zendesk.com/rest_api/docs/chat/introduction).
 
 ## Connection Properties:
 In the YAML file, the config section contains the following properties:
@@ -34,8 +34,8 @@ Oauth_token: OAuth token
 
 ```
 **Metadata Properties:**
-This section defines the mode of data refresh. There are two modes: INCREMENTAL and ``FULL_TABLE``. It only supports Date/DateTime datatype columns.
 
+This section defines the mode of data refresh. There are two modes: INCREMENTAL and `FULL_TABLE`. It only supports columns with Date/DateTime data types.
 
 <table>
     <tr>
@@ -55,7 +55,7 @@ metadata:
     replication_value: column value that data starts from
 ```
 </td>
-        <td>This mode fetches data from the date column specified in the replication key starting from the date specified in the replication value. Once scheduled, the replication value is updated according to the interval_type and interval_value from the imported data. For example, if the interval_type is set to 'year' and the interval_value is set to '1', the first schedule will fetch records from January 1, 2000 to December 31, 2000. In the next schedule, it will fetch records from January 1, 2001 to December 31, 2001, and so on.</td>
+          <td>This mode fetches data from the date column specified in the replication key starting from the date specified in the replication value. Once scheduled, the replication value is updated according to the interval_type and interval_value from the imported data. For example, if the interval_type is set to 'year' and the interval_value is set to '1', the first schedule will fetch records from January 1, 2000 to December 31, 2000. In the next schedule, it will fetch records from January 1, 2001 to December 31, 2001, and so on.</td>
     </tr>
     <tr>
         <td>FULL_TABLE</td>

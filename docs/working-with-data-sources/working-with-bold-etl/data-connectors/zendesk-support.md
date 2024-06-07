@@ -17,20 +17,20 @@ Zendesk support can be authenticated using one of the following three methods:
 3. Method 3 (subdomain + OAuth token)
 
 ## Grab Subdomain
-Log into Zendesk to find your subdomain in the URL. For example, for ``www.yourhub.zendesk.com``, the subdomain is ``yourhub``.
+Log into Zendesk to find your subdomain in the URL. For example, for `www.yourhub.zendesk.com`, the subdomain is `yourhub`.
 
 ## Grab Zendesk Support API Token
 1. In Zendesk (top right), select Admin Center.
 2. Choose "Apps and Integrations."
 3. Navigate to APIs and select Zendesk API. Activate “Password access” & “Token access”.
-4. Click “Add API token,” add a description, and note down the API token.
-5. The token displays just once; note it safely.
+4. Click on "Add API token" provide a description, and make sure to write down the API token.
+5. The token will only be displayed once, so be sure to keep it in a safe place.
 
 ## Grab Zendesk Support OAuth Token
-1. Obtain client ID via Zendesk API: Send this curl request and note the response's client ID.
-2. Alternatively, fetch client ID via OAuth using this.
-3. To get a full token using the client id obtained above, follow the instructions here.
-4. In response to the above request, you'll get a full token that can be used to configure Zendesk support.
+1. Obtain the client ID through the Zendesk API: Send this curl request and make a note of the client ID in the response.
+2. Alternatively, retrieve the client ID through OAuth using this method.
+3. To obtain a complete token using the client ID acquired earlier, refer to the instructions provided here.
+4. Upon receiving the aforementioned request, you will receive a complete token that can be utilized to set up Zendesk support.
 
 ## Connection Properties
 In the ``yaml`` file, the config section contains the following properties:
@@ -46,7 +46,8 @@ OAuth Token: OAuth token
 
 
 ## Metadata Properties
-In this section, the mode of data refresh is defined. There are two modes: INCREMENTAL and ``FULL_TABLE``. It supports only Date/DateTime datatype column.
+
+In this section, the mode of data refresh is defined. There are two modes: INCREMENTAL and `FULL_TABLE`. It supports only columns with Date/DateTime datatype.
 
 <table>
     <tr>
@@ -66,7 +67,7 @@ metadata:
     replication_value: column value that data starts from
 ```
 </td>
-        <td>This mode will fetch data from date column mentioned replication key from the start date as mentioned in replication_value.  Once it is Scheduled,  replication_value updated automatically from the imported data.</td>
+        <td>This mode will fetch data from the date column mentioned as the replication key, starting from the date specified in the replication_value. Once it is scheduled, the replication_value will be updated automatically from the imported data.</td>
     </tr>
     <tr>
         <td>FULL_TABLE</td>

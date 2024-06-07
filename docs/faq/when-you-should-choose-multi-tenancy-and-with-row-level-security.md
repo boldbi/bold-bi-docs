@@ -14,7 +14,7 @@ Multi-tenant support enables the administrator to deploy multiple tenants to ser
 
 For example, if your Bold BI Server is bound to the `company.com` domain, you can create multiple tenants for your customers with different sub domains like `client1.company.com` and `client2.company.com`. This will allow each customer to use their own databases to create the required dashboards.
 
-Bold BI's multi-tenant support ensures the security of both the application and data. You can learn more about Multi-Tenancy [here](/multi-tenancy/).
+Bold BI's multi-tenant support ensures the security of both the application and data. You can learn more about [Multi-Tenancy](/multi-tenancy/).
 
 ## Row-level Security
 

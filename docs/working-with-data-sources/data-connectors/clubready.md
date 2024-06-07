@@ -50,7 +50,7 @@ You can also edit the connection information set here using the [Edit Connection
 Refresh Settings
 </td>
 <td>
-Period of time before next refresh call is triggered. This will automatically trigger a call for the API configured in the data source to keep the data up to date.
+The period of time before the next refresh call is triggered. This will automatically trigger a call to the API configured in the data source to keep the data up to date.
 </td>
 </tr>
 </table>
@@ -65,7 +65,7 @@ Period of time before next refresh call is triggered. This will automatically tr
 `https://www.clubready.com/api/current/club/lead-types?ApiKey=<:apikey>&ChainId=<:chainid>`
 
 ### Preview and data import
-* Click **Preview & Connect** to connect with the configurations set.
+* Click **Preview & Connect** to connect with the configurations that have been set.
 * The Choose Schema(s) dialog opens, displaying a list of schemas in tree view and corresponding values in a grid for preview. Select the required schema(s) from the tree view to use in the designer and click **Connect**.
 
    ![Preview](/static/assets/working-with-datasource/data-connectors/images/common/Preview.png)

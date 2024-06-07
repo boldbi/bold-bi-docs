@@ -13,13 +13,13 @@ This verified source can be used to load data on issues or pull requests from an
 
 ## Grab Credentials
 
-To get the API token, follow these steps:
+To obtain the API token, follow these steps:
 
-1. Click on your profile picture in the top right corner.
+1. Click on your profile picture located in the top right corner.
 2. Choose "Settings".
-3. Select "Developer settings" on the left panel.
+3. Select "Developer settings" from the left panel.
 4. Under "Personal access tokens", click on "Generate a personal access token (preferably under Tokens (classic))".
-5. Grant at least the following scopes to the token by checking them:
+5. Check the following scopes to grant permissions to the token:
 
    - `public_repo`: Limits access to public repositories.
    - `read:repo_hook`: Grants read and ping access to hooks in public or private repositories.
@@ -28,12 +28,12 @@ To get the API token, follow these steps:
    - `read:project`: Grants read-only access to user and organization projects.
    - `read:discussion`: Allows read access for team discussions.
 
-6. Finally, click "Generate token".
-7. Copy the token and save it.
+6. Click on "Generate token".
+7. Copy the token and remember to save it for future use.
 
 ## Connection Properties
 
-In a YAML file, the `config` section contains the following properties:
+The `config` section in a YAML file includes the following properties:
 
 ```yaml
 Connector name: GitHub
