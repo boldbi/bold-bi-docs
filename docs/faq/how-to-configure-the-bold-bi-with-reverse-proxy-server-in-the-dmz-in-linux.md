@@ -21,7 +21,7 @@ You need the following prerequisites to configure Bold BI with a reverse proxy s
 
 
 ## Follow the given steps to configure the Bold BI with a reverse proxy server in the DMZ on a Linux server.
-1. You need to  [Install](/deploying-bold-bi/deploying-in-linux/installation-and-deployment/bold-bi-on-ubuntu/) Bold BI on the Linux server. After finishing the [Application Setup](/application-startup/) create a [dashboard](/getting-started/creating-dashboard/).
+1. You need to  [Install](/deploying-bold-bi/deploying-on-linux/installation-and-deployment/bold-bi-on-ubuntu/) Bold BI on the Linux server. After finishing the [Application Setup](/application-startup/) create a [dashboard](/getting-started/creating-dashboard/).
 
 
 2. You need to proxy pass the Bold BI server to the reverse proxy server. In this case, you are using Nginx as the reverse proxy server. Follow the provided steps to proxy pass Bold BI to the Nginx server.

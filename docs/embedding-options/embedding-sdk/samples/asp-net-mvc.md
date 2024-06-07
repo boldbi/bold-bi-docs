@@ -111,7 +111,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/aspnet-mvc-sa
         };
      ```
 
-> **NOTE:** By default, we display the dashboard embedding without the dashboard listing sidebar. To access the dashboard list, you need to navigate to the `dashboardlisting` URL (e.g., https://localhost:44382/home/dashboardlisting).
+> **NOTE:** By default, we display the dashboard embedding without the dashboard listing sidebar. To access the dashboard list, you need to navigate to the `dashboardlisting` URL (e.g., `https://localhost:44382/home/dashboardlisting`).
 
  ## How this sample works
 

@@ -7,7 +7,7 @@ documentation: ug
 ---
 
 # Connecting Bold BI to Google BigQuery data source
-Bold BI dashboard designer supports connecting Google BigQuery server using the Live mode.
+The Bold BI dashboard designer supports connecting to Google BigQuery server using the Live mode.
 
 ## Authentication Types:
 
@@ -31,12 +31,11 @@ Bold BI dashboard designer supports connecting Google BigQuery server using the 
 
 ![ServiceAuth](/static/assets/working-with-datasource/data-connectors/images/GoogleBigQuery/CreateServiceAccount.png)
 
-4. In the Service account name field, enter a name. The Google Cloud console fills in the Service account ID field based on this name.
+4. In the Service account name field, enter a name. The Google Cloud console will automatically populate the Service account ID field based on this name.
 
 ![ServiceAuth](/static/assets/working-with-datasource/data-connectors/images/GoogleBigQuery/CreateServiceAccountDialog.png)
 
 5. In the Service account description field, enter a description. For example, Service account for quickstart.
-
 
 6. Click Create and continue.
 
@@ -46,17 +45,17 @@ Bold BI dashboard designer supports connecting Google BigQuery server using the 
 
 8. In the Select a role list, select a role and Click Continue.
 
-For additional roles, click add Add another role and add each additional role.
+To add additional roles, click on Add another role and add each role individually.
 
-> **NOTE:**  The Role field affects which resources your service account can access in your project. You can revoke these roles or grant additional roles later. In production environments, do not grant the Owner, Editor, or Viewer roles in production environments. Instead, grant a predefined role or custom role that meets your needs.
+> **NOTE:**  The Role field determines which resources your service account can access in your project. You can revoke or grant additional roles later. In production environments, avoid granting the Owner, Editor, or Viewer roles. Instead, assign a predefined or custom role that suits your requirements.
 
 8. Click Done to finish creating the service account. Do not close your browser window. You will use it in the next step.
 
 **Create a service account key:**
 
-1. In the Google Cloud console, click the email address for the service account that you created.
+1. In the Google Cloud console, click on the email address for the service account that you created.
 
-2. Click context menu and select Manage Keys.
+2. Click on the context menu and select Manage Keys.
 
 ![ServiceAuth](/static/assets/working-with-datasource/data-connectors/images/GoogleBigQuery/ManageKeys.png)
 
@@ -108,11 +107,11 @@ Enter the app's name and user's email address, as shown in the following image.
 
 ![Set Application Name](/static/assets/working-with-datasource/data-connectors/images/GoogleBigQuery/GoogleBQ_AppName.png)
 
-Enter the app domain information for registering the application with Bold BI as follows.
+Please enter the app domain information in order to register the application with Bold BI as follows.
 
 ![Set Domain Information](/static/assets/working-with-datasource/data-connectors/images/GoogleBigQuery/GoogleBQ_AppDomain.png)
 
-Set the authorized domain as **boldbi.com** and enter the **User's email address** mail for development contact information as shown in the following image.
+Set the authorized domain as **boldbi.com** and enter the **user's email address** in the mail field for development contact information, as shown in the following image.
 
 ![Set Authorized Information](/static/assets/working-with-datasource/data-connectors/images/GoogleBigQuery/GoogleBQ_AuthorizedDomain.png)
 
@@ -128,7 +127,7 @@ To Create a new Credentials (Client ID, Client Secret), use the following link.
 
    ![Google BigQuery Credentials Create](/static/assets/working-with-datasource/data-connectors/images/GoogleBigQuery/GoogleBQ_CredentialsCreate.png)
  
-After creating the credentials, open the corresponding credentials and add your Bold BI Enterprises build hosted URL as the following sample URL format.
+After creating the credentials, open the corresponding credentials and add your Bold BI Enterprises build hosted URL in the following sample URL format.
 
 `http://localhost:<boldbi-running port>/bi/designer/v1.0/oauth/agent`
 
@@ -137,7 +136,7 @@ After creating the credentials, open the corresponding credentials and add your 
 
 **3. Go to Bold BI application and navigate to data connectors settings page**
 
-If intermediate DB is not configured, you will get an error as follows.
+If the intermediate DB is not configured, you will receive an error as shown below.
 
    ![IntermediateDB Set Error](/static/assets/working-with-datasource/data-connectors/images/GoogleBigQuery/IntermediateDB_SetError.png)
  
@@ -145,7 +144,7 @@ Then, configure the intermediate DB in **Data Store** section.
 
    ![Data Store Page](/static/assets/working-with-datasource/data-connectors/images/GoogleBigQuery/DataStore_Page.png)
  
-Also, configure the client ID and client secret information in **Connectors** section and save the information for Google BigQuery as follows.
+Additionally, configure the client ID and client secret information in the **Connectors** section, and save the information for Google BigQuery as instructed.
 
    ![Connectors Page](/static/assets/working-with-datasource/data-connectors/images/GoogleBigQuery/Connectors_Page.png)
  
@@ -164,15 +163,15 @@ To configure the Google BigQuery data source, follow these steps:
 
    ![Choose data source](/static/assets/working-with-datasource/data-connectors/images/GoogleBigQuery/ChooseDS.png)
 
-> **NOTE:**  You can also create a data source from the home page by clicking the **Data Sources** menu from left menu panel and **Create Data Source** from the data sources page.
+> **NOTE:**  You can also create a data source from the home page by clicking on the **Data Sources** menu on the left menu panel and selecting **Create Data Source** from the data sources page.
  
    ![Choose data source server](/static/assets/working-with-datasource/data-connectors/images/GoogleBigQuery/ChooseDS_server.png)
 
 ## Authentication with Google BigQuery
 
-Use the following steps to authenticate with Google BigQuery server:
+Use the following steps to authenticate with the Google BigQuery server:
 
-1. Click the data source, you will be prompted with a login window. Enter the credentials of your Google BigQuery account to authorize.
+1. Click on the data source, and you will be prompted with a login window. Enter the credentials for your Google BigQuery account to authorize.
 
    ![Google BigQuery Login](/static/assets/working-with-datasource/data-connectors/images/GoogleBigQuery/GoogleBQ_Login.png)
 
@@ -180,14 +179,14 @@ Use the following steps to authenticate with Google BigQuery server:
 
    ![Google BigQuery Login Allow](/static/assets/working-with-datasource/data-connectors/images/GoogleBigQuery/GoogleBQ_LoginAllow.png)
 
-   > **NOTE:**  If the permission is denied, the account will not be accessible from the dashboard.
+   > **NOTE:**  If permission is denied, the account will not be accessible from the dashboard.
 
 3. Set a name to identify the account and click **Next**.
 4. Now, you have successfully authorized your connection. Click **Connect** to continue with the data source connection.
 
    ![Google BigQuery Connect Account](/static/assets/working-with-datasource/data-connectors/images/GoogleBigQuery/GoogleBQ_ConnectAccount.png)
 
-5. To connect using the already connected account, refer to Connected Accounts.
+5. To connect using the already connected account, please refer to Connected Accounts.
 
 > **NOTE:**  To connect to another account, click **Connect New Account**.
 
@@ -199,7 +198,7 @@ After successful authentication, the **NEW DATA SOURCE** configuration panel ope
 Follow these steps to create the Google BigQuery data source. 
 1. Enter a name and description (optional) for the data source. 
 2. Choose the required projects in **Project** drop down box.
-3. The authentication type will be set to Google BigQuery automatically in **Connected as** text box since OAuth is used for authenticating with Google BigQuery account.
+3. The authentication type will be set to Google BigQuery automatically in the **Connected as** text box, as OAuth is used for authenticating with the Google BigQuery account.
 
    ![Google BigQuery Connection](/static/assets/working-with-datasource/data-connectors/images/GoogleBigQuery/GoogleBQ_Connection.png)
 
@@ -213,21 +212,21 @@ Select the JSON file downloaded from [Connecting with Service Authentication](/w
 
 **For OAuth:**
 
-The authentication type will automatically be sent to the Google BigQuery in the **Connected as** text box since the OAuth is used for authenticating with the Google BigQuery account.
+The authentication type will automatically be sent to the Google BigQuery in the **Connected as** text box since OAuth is used for authenticating with the Google BigQuery account. 
 
-Choose the required projects in the **Project** drop-down box. 
+Please choose the required projects in the **Project** drop-down box.
 
-To connect the Google Big Query with a particular dataset, enter the property currentdataset={datasetname} or specificdataset={datasetname} in the Additional connection parameters text box.
+To connect Google BigQuery with a specific dataset, enter the property currentdataset={datasetname} or specificdataset={datasetname} in the Additional connection parameters text box.
 
    ![Google BigQuery Connection](/static/assets/working-with-datasource/data-connectors/images/GoogleBigQuery/ConnectingOAuth.png#max-width=100%)
 
 To edit the connection information, use the [Edit Connection](https://help.syncfusion.com/bold-bi/editing-a-data-connection) option.
 
-> **NOTE** We have provided support for using dynamic connection string for Service account authentication type. please refer [Dynamic Connection String](https://help.boldbi.com/embedding-options/iframe-embedding/dynamic-connection-string/) documentation. 
+> **NOTE** We have provided support for using a dynamic connection string for Service account authentication type. please refer to the [Dynamic Connection String](/embedding-options/iframe-embedding/dynamic-connection-string/) documentation. 
 
 ### Preview data
-1. Click **Connect** to connect the Google BigQuery server with configured details. 
-The available schemas list is shown in tree view for the selected projects that are retrieved from the Google BigQuery server.
+1. Click **Connect** to connect to the Google BigQuery server with the configured details. 
+The list of available schemas is displayed in tree view for the selected projects that have been retrieved from the Google BigQuery server.
 
    ![Treev view](/static/assets/working-with-datasource/data-connectors/images/GoogleBigQuery/GoogleBQ_Treeview.png)
 
@@ -257,11 +256,11 @@ You can edit, delete, and re-authorize this account from the **Connected Account
    ![Manage Accounts](/static/assets/working-with-datasource/data-connectors/images/GoogleBigQuery/ManageDS.png)
 
 ## Link Google BigQuery data source with Google Analytics
-Google BigQuery is a data warehouse and only supports live connection in Bold BI. You can link your Google BigQuery with Google Analytics by following the official documentation steps about [linking Google BigQuery with Google Analytics](https://support.google.com/analytics/answer/3416092?hl=en). 
+Google BigQuery is a data warehouse and that only supports live connection in Bold BI. You can link your Google BigQuery with Google Analytics by following the official documentation steps on how to [linking Google BigQuery with Google Analytics](https://support.google.com/analytics/answer/3416092?hl=en). 
 
 ### Connect using custom attribute and dashboard parameter
 
-We have added support for **custom attributes and dashboard parameters** to the data source connection. You can connect to the data source using custom attributes or dashboard parameters.
+We have added support for **custom attributes and dashboard parameters** in the data source connection. You can now connect to the data source using custom attributes or dashboard parameters.
 
 **Custom Attribute**
 
@@ -271,7 +270,7 @@ We have added support for **custom attributes and dashboard parameters** to the 
 
 ![Dashboard Parameter](/static/assets/working-with-datasource/data-connectors/images/GoogleBigQuery/Dashboardparameter.png)
 
->**Note:** Refer the [Dashboard Parameter Documentation](https://help.boldbi.com/working-with-data-sources/dashboard-parameter/) and [Custom Attributes Documentation](https://help.boldbi.com/working-with-data-sources/configuring-custom-attribute/) for more details.
+>**Note:** Refer to the [Dashboard Parameter Documentation](https://help.boldbi.com/working-with-data-sources/dashboard-parameter/) and [Custom Attributes Documentation](https://help.boldbi.com/working-with-data-sources/configuring-custom-attribute/) for more details.
 
 ## Related links
 [Data Transformation](/working-with-data-sources/data-modeling/joining-table/)

@@ -35,7 +35,7 @@ The following steps outline how to embed a data source into other web applicatio
 > **Warning :** Resetting this code will cause the previously functioning embedded dashboards to stop working.
 ### Creating the embed URL to create data source
 
-The embed URL should be in the following format; to get `create datasource URl,` refer [here](/embedding-options/iframe-embedding/get-datasource-url/).
+The embed URL should be in the following format; to get `create datasource URl,` Please refer the [Get Data source URL](/embedding-options/iframe-embedding/get-datasource-url/).
 
 `{create datasource URL}/{embed parameters}&embed_signature={signature}`
 
@@ -53,7 +53,7 @@ Please find the details of the parameter in the URL as follows.
 
 <tr>
 <td>create datasource URL</td>
-<td>URL of the data source to establish a new connection. To know more, click <a href="/embedding-options/iframe-embedding/get-datasource-url/">here.</a></td>
+<td>URL of the data source to establish a new connection. To know more, click the <a href="/embedding-options/iframe-embedding/get-datasource-url/">Get Data source URL.</a></td>
 </tr>
 
 <tr>
@@ -69,7 +69,7 @@ Please find the details of the parameter in the URL as follows.
 
 ### Creating the embed URL to edit data source
 
-The embed URL should be in the following format; to get `edit datasource URL,` refer [here](/embedding-options/iframe-embedding/get-datasource-url/).
+The embed URL should be in the following format; to get `edit datasource URL,` please refer the [Get Data source URL](/embedding-options/iframe-embedding/get-datasource-url/).
 
 `{edit datasource URL}/{embed parameters}&embed_signature={signature}`
 
@@ -87,7 +87,7 @@ Please find the details of the parameter in the URL as follows.
 
 <tr>
 <td>edit datasource URL</td>
-<td>URL of the data source to be embedded. To know more, click <a href="/embedding-options/iframe-embedding/get-datasource-url/">here.</a></td>
+<td>URL of the data source to be embedded. To know more, click the<a href="/embedding-options/iframe-embedding/get-datasource-url/">Get Data source URL.</a></td>
 </tr>
 
 <tr>
@@ -181,4 +181,4 @@ To obtain the signature for the embed URL, you need to pass the query parameters
 
 ## Sample to embed data source in edit mode using SSO authentication
 
-You can download the sample [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/EmbedDashboardUsingSSO-1689837049).
+You can download the [sample](https://www.syncfusion.com/downloads/support/directtrac/general/ze/EmbedDashboardUsingSSO-1689837049).

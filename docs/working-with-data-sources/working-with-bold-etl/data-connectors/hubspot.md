@@ -27,7 +27,7 @@ HubSpot is a customer relationship management (CRM) software and inbound marketi
 
 ## Connection Properties
 
-In a YAML file, the `config` section contains the following properties:
+The `config` section in a YAML file includes the following properties:
 
 ```yaml
 ConnectorName: HubSpot

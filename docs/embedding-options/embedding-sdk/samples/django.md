@@ -45,7 +45,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/django-sample
     </tbody>
     </table>
 
- 3. You can obtain your Embed Secret key from the administrator setting section. Please refer to this [link](/site-administration/embed-settings/) for further details.
+ 3. You can obtain your Embed Secret key from the administrator setting section. Please refer to the [Embed Settings](/site-administration/embed-settings/) for further information.
 
  4. Please run your Django application.
 
@@ -53,7 +53,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/django-sample
 
  1. To authorize the server URL, use the provided embed details from the dashboard and call the `get_embed_details` function `(views.py/get_embed_details)` with the provided values of `EmbedProperties`.
  
-    Learn more about authorize server [here](/security-configuration/authorize-server/).
+    Learn more about the [authorization server](/security-configuration/authorize-server/).
     
     ![Authorize Server URL](/static/assets/javascript/sample/images/django-api.png)
     ![Get Embed Details](/static/assets/javascript/sample/images/django-authorize.png)

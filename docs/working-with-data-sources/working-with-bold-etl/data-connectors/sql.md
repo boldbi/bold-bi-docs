@@ -16,7 +16,7 @@ Structured Query Language (SQL) is a programming language for storing and proces
 
 ## Connection Properties
 
-In a YAML file, the `config` section contains the following properties:
+The `config` section in a YAML file includes the following properties:
 
 ```yaml
 Connectorname: SQL

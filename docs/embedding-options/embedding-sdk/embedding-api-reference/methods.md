@@ -218,7 +218,7 @@ dashboard.loadMultitabDashboard();
 ```
 >**Note:** To embed the multitab dashboard programmatically, either dashboardIds or dashboardPaths can be used.
 
-To access additional details, please click on the following [link](/embedding-options/embedding-sdk/embedding-multitab-dashboard-programmatically/).
+To access additional details, please click on the following [Embedded multitab dashboard programmatically](/embedding-options/embedding-sdk/embedding-multitab-dashboard-programmatically/).
 
 ## loadMultipleWidgets()
 
@@ -261,7 +261,7 @@ var dashboard = BoldBI.create({
 dashboard.loadView();
 ```
 
-For more details, please click on the following [link](/embedding-options/embedding-sdk/embedding-the-dashboard-with-views/).
+For more details, please click on the following [Embedded the dashboard with views](/embedding-options/embedding-sdk/embedding-the-dashboard-with-views/).
 
 ## refreshDashboard()
     
@@ -356,7 +356,7 @@ var publishModel = {category: "Sales",categoryId: "e6ed2f36-7205-423e-81e0-38a8c
 instance.saveDashboard(publishModel, containerId);
 ```
 
-> **NOTE:** Please customize the `saveDashboard()` function in the dashboard designer using the web application. For more details, please refer to this [link](/faq/how-to-create-own-publish-dialog-for-designer-embedding/).
+> **NOTE:** Please customize the `saveDashboard()` function in the dashboard designer using the web application. For more details, please refer to [this documentation](/faq/how-to-create-own-publish-dialog-for-designer-embedding/).
 
 ## updateDatasource()
     
@@ -459,7 +459,7 @@ instance.getWidgetInstance(widgetId2).setFilterParameters(filtersValue2);
 instance.updateWidgetFilters("container"); //container -> embed container id
 ```
 
->**Note:** Please apply widget filters on both the initial rendering and on-demand in the dashboard using a web application. For more details, please refer to this [link](/faq/how-to-apply-widget-filters-using-both-initialrendering-and-ondemand-in-embedding/).
+>**Note:** Please apply widget filters on both the initial rendering and on-demand in the dashboard using a web application. For more details, please refer to [this documentation](/faq/how-to-apply-widget-filters-using-both-initialrendering-and-ondemand-in-embedding/).
 
 ## category
 
@@ -507,7 +507,7 @@ function callBackFnc(args)
 </tr>
 </table>
 
-> **NOTE:** To customize the `createDashboardCategory()` in the dashboard designer using the web application, please refer to the details provided [here](/faq/how-to-create-own-publish-dialog-for-designer-embedding/).
+> **NOTE:** To customize the `createDashboardCategory()` in the dashboard designer using the web application, please refer to the details provided [this documentation](/faq/how-to-create-own-publish-dialog-for-designer-embedding/).
 
 ### getDashboardCategories()
 
@@ -543,7 +543,7 @@ function callBackFnc(args)
 </tr>
 </table>
 
-> **NOTE:** Customize the `getDashboardCategories()` function in the dashboard designer using the web application. For more information, please refer to this [link](/faq/how-to-create-own-publish-dialog-for-designer-embedding/).
+> **NOTE:** Customize the `getDashboardCategories()` function in the dashboard designer using the web application. For more information, please refer to [this documentation](/faq/how-to-create-own-publish-dialog-for-designer-embedding/).
 
 ## comment
 
@@ -1536,7 +1536,7 @@ function callBackFunc(views) {
 ### saveAsFilterView()
 This method will clone the existing filter view on the dashboard and save it with a new name.
 
->**Note:** Please refer to the knowledge base article [here](https://support.boldbi.com/agent/kb/14233) to obtain the viewName and QueryString from the REST API using the ViewID.
+>**Note:** Please refer to the [knowledge base](https://support.boldbi.com/agent/kb/14233) article to obtain the viewName and QueryString from the REST API using the ViewID.
 
 **Example for cloning an existing view of the normal dashboard**
 
@@ -1559,7 +1559,7 @@ function callBackFunc(view, status) {
 }
 ```
 
-> **NOTE:** If you want to save the view as the default for the embedded dashboard, you must enable the `Default view` option in the `Dashboard settings.` Learn more about the default view [here](/site-administration/dashboard-settings/default-views/).
+> **NOTE:** If you want to save the view as the default for the embedded dashboard, you must enable the `Default view` option in the `Dashboard settings.` Learn more about the [Default View](/site-administration/dashboard-settings/default-views/).
 
 **Example for cloning an existing view as default to the dashboard**
 
@@ -1659,7 +1659,7 @@ function callBackFunc(view, status) {
 ### saveFilterView()
 This method will save the filter view onto the dashboard.
 
-> **NOTE:** Please refer to the knowledge base article [here](https://support.boldbi.com/agent/kb/14233) to obtain the viewName and QueryString from the REST API by using the viewId if the view details al-ready exist in Bold BI.
+> **NOTE:** Please refer to the [knowledge base](https://support.boldbi.com/agent/kb/14233) article to obtain the viewName and QueryString from the REST API by using the viewId if the view details already exist in Bold BI.
 
 **Example for saving view to the normal dashboard**
 
@@ -1682,7 +1682,7 @@ function callBackFunc(view, status) {
 }
 ```
 
-> **NOTE:** If you want to save the view as the default for the embedded dashboard, you must enable the `Default view` option in `Dashboard settings`. Learn more about the default view [here](/site-administration/dashboard-settings/default-views/).
+> **NOTE:** If you want to save the view as the default for the embedded dashboard, you must enable the `Default view` option in `Dashboard settings`. Learn more about the [Default View](/site-administration/dashboard-settings/default-views/).
 
 **Example for saving view as default to the dashboard**
 

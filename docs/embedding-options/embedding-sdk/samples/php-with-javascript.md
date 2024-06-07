@@ -40,7 +40,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/php-sample) g
     </tbody>
     </table>
 
-3. In the `AuthorizeServer.php` set the UserEmail and Embed Secret key. These keys are used to create an embed signature and authorize the server in the PHP sample. You can learn more about authorized servers [here](/security-configuration/authorize-server/).
+3. In the `AuthorizeServer.php` set the UserEmail and Embed Secret key. These keys are used to create an embed signature and authorize the server in the PHP sample. You can learn more about the [authorization server](/security-configuration/authorize-server/).
 
     ![Authorize Server](/static/assets/javascript/sample/images/authorize-server-php.png#max-width=80%)
     <meta charset="utf-8"/>

@@ -1,57 +1,57 @@
 ﻿{
   "authentication": {
-    "getauthenticationdescription": "When you sign in to the Bold BI Embed, an authentication token is provided that should be attached in the request header(Authorization) for all subsequent API calls to authenticate the requests."
+    "getauthenticationdescription": "When you sign in to Bold BI Embed, an authentication token is provided that should be attached in the request header (Authorization) for all subsequent API calls to authenticate the requests."
   },
   "dashbaordviewsdescription": {
-    "getdashbaordviewsdescription": "To retrieve, add, update, and delete a list of dashboard views in a particular dashboard from the Bold BI Embed, use the corresponding endpoints below."
+    "getdashbaordviewsdescription": "To retrieve, add, update, and delete a list of dashboard views in a specific dashboard from the Bold BI Embed, use the corresponding endpoints provided below."
   },
   "attributesdescription": {
-    "getattributesdescription": "To retrieve, add, update, and delete the attributes, also to customize a particular dashboard for user, group, and site, use the following corresponding endpoints."
+    "getattributesdescription": "To retrieve, add, update, and delete attributes, as well as customize a specific dashboard for a user, group, or site, use the following corresponding endpoints."
   },
   "groupdescription": {
-    "getgroupsdescription": "Use the corresponding endpoints listed below, to retrieve a list of groups, create, modify, and delete a particular group from the Bold BI Embed."
+    "getgroupsdescription": "Please use the provided endpoints below to retrieve a list of groups, create, modify, and delete a specific group from the Bold BI Embed."
   },
   "userdescription": {
-    "getusersdescription": "To add, retrieve, update, and delete users, a list of groups of the particular user, add CSV users, download CSV templates in the Bold BI Embed, use the corresponding endpoints below."
+    "getusersdescription": "To add, retrieve, update, and delete users, as well as view a list of groups to which a particular user belongs, add CSV users, and download CSV templates in the Bold BI Embed, please use the corresponding endpoints below."
   },
   "permissiondescription": {
-    "getpermissiondescription": "Use the corresponding endpoints listed below, to retrieve a list of permissions, create, and delete particular permission in the Bold BI Embed."
+    "getpermissiondescription": "Use the provided endpoints below to retrieve a list of permissions, create, and delete specific permissions in the Bold BI Embed."
   },
   "categorydescription": {
-    "getcategorydescription": "To create and modify a particular category in the Bold BI Embed, use the corresponding endpoints below."
+    "getcategorydescription": "To create and modify a specific category in the Bold BI Embed, use the corresponding endpoints provided below."
   },
   "slideshowdescription": {
-    "getslideshowdescription": "To retrieve, create, modify and delete a particular slideshow and retrieve list of slideshows in the Bold BI Embed, use the corresponding endpoints below."
+    "getslideshowdescription": "To retrieve, create, modify, and delete a specific slideshow and retrieve a list of slideshows in the Bold BI Embed, use the corresponding endpoints below."
   },
   "scheduledescription": {
-    "getscheduledescription": "To retrieve, create, and modify a particular dashboard schedule, retrieve the list of dashboard schedules, and run the schedules in the Bold BI Embed, use the corresponding endpoints below."
+    "getscheduledescription": "To retrieve, create, and modify a specific dashboard schedule, you can retrieve the list of dashboard schedules and run the schedules in the Bold BI Embed by using the corresponding endpoints below."
   },
   "settingsdescription": {
-    "getsettingsdescription": "To modify the site settings in the Bold BI Embed, use the corresponding endpoints below."
+    "getsettingsdescription": "To modify the site settings in the Bold BI Embed, use the corresponding endpoints provided below."
   },
   "pinboarddescription": {
-    "getpinboarddescription": "To retrieve, create, copy, and delete a particular pinboard in the Bold BI Embed, use the corresponding endpoints below."
+    "getpinboarddescription": "To retrieve, create, copy, and delete a specific pinboard in Bold BI Embed, use the corresponding endpoints provided below."
   },
   "publishdescription": {
-    "getpublishdescription": "To publish a particular dashboard from one site to other site(s) in the Bold BI Embed, use the corresponding endpoints below.>Note: This support is not available in Syncfusion Managed Cloud Server"
+    "getpublishdescription": "To publish a specific dashboard from one site to other site(s) in Bold BI Embed, use the corresponding endpoints provided below. Please note that this support is not available in Syncfusion Managed Cloud Server."
   },
   "dashboarddescription": {
-    "getdashboarddescription": "To copy, retrieve, and export dashboards in the Bold BI Embed, use the corresponding endpoints below."
+    "getdashboarddescription": "To copy, retrieve, and export dashboards in the Bold BI Embed, please use the corresponding endpoints listed below."
   },
   "downloaddashboarddescription": {
-    "getdownloaddashboarddescription": "To download dashboards in the Bold BI Embed, use the corresponding endpoints below."
+    "getdownloaddashboarddescription": "To download dashboards in the Bold BI Embed, please use the corresponding endpoints provided below."
   },
   "uploaddashboarddescription": {
-    "getuploaddashboarddescription": "To upload dashboards in the Bold BI Embed, use the corresponding endpoints below."
+    "getuploaddashboarddescription": "To upload dashboards in the Bold BI Embed, use the corresponding endpoints provided below."
   },
   "datasourcedescription": {
-    "getdatasourcedescription": "To retrieve a list of data sources, and copy a particular data source in the Bold BI Embed, use the corresponding endpoints below."
+    "getdatasourcedescription": "To retrieve a list of data sources and copy a particular data source in the Bold BI Embed, use the corresponding endpoints below."
   },
   "draftdashboarddescription": {
-    "getdraftdashboarddescription": "To retrieve a list of draft dashboards, create and modify a particular draft dashboard in the Bold BI Embed, use the corresponding endpoints below."
+    "getdraftdashboarddescription": "To retrieve a list of draft dashboards, create and modify a specific draft dashboard in the Bold BI Embed platform, use the corresponding endpoints provided below."
   },
   "itemdescription": {
-    "getitemdescription": "To retrieve a list of items, retrieve, delete a particular item, and check a particular item name in the Bold BI Embed, use the corresponding endpoints below."
+    "getitemdescription": "To retrieve a list of items, retrieve, delete a specific item, and check a specific item name in the Bold BI Embed, use the corresponding endpoints below."
   },
   "userprofiledescription":{
     "getuserprofiledescription": "Use the following endpoints to retrieve a list of user permissions and user notification settings in the Bold BI Embed."
@@ -62,6 +62,6 @@
   },
   "webhooksdescription": 
   {
-    "getwebhooksdescription": "To retrieve a list of webhooks, and delete a particular webhook in Bold BI, use the following corresponding endpoints." 
+    "getwebhooksdescription": "To retrieve a list of webhooks and delete a specific webhook in Bold BI, use the following corresponding endpoints." 
   }
 }

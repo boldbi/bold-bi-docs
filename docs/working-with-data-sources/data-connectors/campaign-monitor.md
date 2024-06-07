@@ -57,7 +57,7 @@ You can also edit the connection information set here using the [Edit Connection
 Refresh Settings
 </td>
 <td>
-Period of time before next refresh call is triggered. This will automatically trigger a call for the API configured in the data source to keep the data up to date. If you do not want to sync your new data, choose ‘Never’.
+The period of time before the next refresh call is triggered. This will automatically trigger a call to the API configured in the data source to keep the data up to date. If you do not want to sync your new data, choose ‘Never’.
 </td>
 </tr>
 </table>
@@ -66,11 +66,11 @@ Period of time before next refresh call is triggered. This will automatically tr
 
 **Billing details**
 
-[https://myaccount.createsend.com/api/v3.2/billingdetails.json](https://myaccount.createsend.com/api/v3.2/billingdetails.json)
+`https://myaccount.createsend.com/api/v3.2/billingdetails.json`
 
 **Administrators**
 
-[https://myaccount.createsend.com/api/v3.2/admins.json](https://myaccount.createsend.com/api/v3.2/admins.json)
+`https://myaccount.createsend.com/api/v3.2/admins.json`
 
 ### Preview and data import
 * Click **Preview & Connect** to connect with the configurations that have been set.

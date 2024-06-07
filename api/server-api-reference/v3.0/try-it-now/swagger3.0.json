@@ -27,7 +27,7 @@
       "post" : {
         "tags" : [ "Authentication" ],
         "summary" : "Authenticate User",
-        "description" : "Authenticate with a user password.",
+        "description" : "Please authenticate with a user password.",
         "operationId" : "Authentication",
         "consumes" : [ "application/x-www-form-urlencoded" ],
         "parameters" : [ {
@@ -76,7 +76,7 @@
       "get": {
         "tags": [ "Users" ],
         "summary": "Get Users",
-        "description": "Retrieves the list of user details.",
+        "description": "Retrieve the list of user details.",
         "operationId": "Users_GetUsers",
         "responses": {
           "200": {
@@ -105,7 +105,7 @@
       "get": {
         "tags": [ "Users" ],
         "summary": "Get a User by Email",
-        "description": "Retrieves the particular user detail.",
+        "description": "Retrieve the specific user detail.",
         "operationId": "Users_GetUserDetail",
         "parameters": [
           {
@@ -144,7 +144,7 @@
       "get": {
         "tags": [ "Groups" ],
         "summary": "Get Groups",
-        "description": "Retrieves the list of group details.",
+        "description": "Retrieve the list of group details.",
         "operationId": "Groups_GetGroups",
         "responses": {
           "200": {
@@ -170,7 +170,7 @@
       "post": {
         "tags": [ "Schedule" ],
         "summary": "Add Dashboard Schedule",
-        "description": "Users who have create access to the schedule can add new dashboard schedule.",
+        "description": "Users who have create access to the schedule can add a new dashboard schedule.",
         "operationId": "Dashboards_AddSchedule",
         "parameters": [
           {
@@ -180,7 +180,7 @@
             "schema": {
               "$ref": "#/definitions/ApiScheduleRequest"
             },
-            "description": "Details about the schedule passed will be added.",
+            "description": "Details about the schedule that was passed will be added.",
             "x-nullable": true
           }
         ],
@@ -214,7 +214,7 @@
       "put": {
         "tags": [ "Schedule" ],
         "summary": "Update Dashboard Schedule",
-        "description": "Users who have write access for schedule can update an existing dashboard schedule.",
+        "description": "Users who have write access to the schedule can update an existing dashboard schedule.",
         "operationId": "Dashboards_UpdateSchedule",
         "parameters": [
           {
@@ -233,7 +233,7 @@
             "schema": {
               "$ref": "#/definitions/ApiUpdateScheduleRequest"
             },
-            "description": "Details about the schedule passed will be updated.",
+            "description": "Details about the schedule that was passed will be updated.",
             "x-nullable": true
           }
         ],
@@ -492,7 +492,7 @@
     },
     "ApiScheduleRequest": {
       "type": "object",
-      "description": "Details about the schedule passed will be added.",
+      "description": "Details about the schedule that was passed will be added.",
       "additionalProperties": false,
       "required": [
         "Name",
@@ -852,7 +852,7 @@
     },
     "ApiUpdateScheduleRequest": {
       "type": "object",
-      "description": "Details about the schedule passed will be updated.",
+      "description": "Details about the schedule that was passed will be updated.",
       "additionalProperties": false,
       "required": [
         "ItemId",

@@ -22,8 +22,8 @@ Facebook Ads is the advertising platform that allows businesses and individuals 
 
 ### Grab Access_Token
 
-1. Please sign up for a developer account on https://developers.facebook.com.
-2. Log in to your developer account and click on **My Apps** located in the top right corner.
+1. Please sign up for a developer account at https://developers.facebook.com.
+2. Log in to your developer account and click on **My Apps** in the top right corner.
 3. Create an app, choose **Other** as the type, select **`Business`** as the category, and click **Next**.
 4. Enter the name of your app and select the associated business manager account.
 5. Navigate to the **`Basic`** settings in the left-hand side menu.
@@ -34,7 +34,7 @@ Facebook Ads is the advertising platform that allows businesses and individuals 
 
 ## Connection Properties
 
-In a YAML file, the `config` section contains the following properties:
+The `config` section in a YAML file includes the following properties:
 
 ```yaml
 Connectorname**: FacebookAds
@@ -44,7 +44,7 @@ Client_secret**: Client’s secret
 Account_id**: FacebookAds Account ID
 ```
 ## Incremental Mode:
-`	`The Facebook ads doesn’t support incremental mode and Facebook insights supports incremental mode.
+The Facebook ads doesn’t support incremental mode and Facebook insights supports incremental mode.
 ```yaml
 properties:
         type: insights
@@ -95,3 +95,64 @@ plugins:
         attribution_window_days_lag: 7
         time_increment_days: 1
 ```
+## Configure the ETL to connect Facebook Ads
+
+  1. To start, Click the `Bold ETL` icon on the Navigation Pane.
+
+  ![Facebook ADs ETL - BoldBI](/static/assets/working-with-etl/images/fbads_ClickETL.png#max-width=100%)
+
+  2. Click `Add Project` and provide the name for the new project.
+  
+   ![Facebook ADs ETL - BoldBI](/static/assets/working-with-etl/images/fbads_AddProject.png#max-width=100%)
+  
+  3. Select the newly created project and add the `Facebook Ads` template.
+
+  ![Facebook ADs ETL - BoldBI](/static/assets/working-with-etl/images/fbads_Template.png#max-width=100%)
+  
+  4. Update the access token and account ID in the template. Also, Update the resources on the `select` property and save it to the BoldBI Data Store.
+
+  ![Facebook ADs ETL - BoldBI](/static/assets/working-with-etl/images/fbads_Update.png#max-width=100%)
+
+```js
+The available resources are supported in Facebook Ads 
+- campaigns 
+- ads 
+- ad_creatives 
+- leads 
+- ad_sets 
+ ```
+
+>**Warning:**
+    1. The `Encrypt_Credentials` property should be set to false when updating the new access token on the template. If you have modified other properties, such as 'select' or 'account id', the `Encrypt_Credentials` property must be set to true.  
+    2. The default lifetime of the access token is 1 hour. Therefore, you need to convert it to a long-lived access token in order to use the same token for 60 days. Existing tables should be maintained even if the token has expired or is being used as an invalid token. 
+
+### Schedule ETL Job
+
+1. Click `Schedules` and select the created `facebookETLDS`project.
+
+![Facebook ADs ETL - BoldBI](/static/assets/working-with-etl/images/fbads_SchedulleETL.png#max-width=100%)
+
+2. For on-demand refresh, click `Run Now`.
+
+![Facebook ADs ETL - BoldBI](/static/assets/working-with-etl/images/fbads_RunNewETL.png#max-width=100%)  
+
+3. After, Complete the on-demand refresh.
+
+![Facebook ADs ETL - BoldBI](/static/assets/working-with-etl/images/fbads_Complete.png#max-width=100%)  
+
+4. To schedule the refresh hourly, please click the `Schedule`option.
+
+![Facebook ADs ETL - BoldBI](/static/assets/working-with-etl/images/fbads_RefreshSchedule.png#max-width=100%)  
+
+5. The data source was created by ETL in Bold BI.
+
+![Facebook ADs ETL - BoldBI](/static/assets/working-with-etl/images/fbads_DsCreated.png#max-width=100%)  
+
+6. Click `Edit DataSource` Option to view the created tables, such as 'Campaigns' and 'Adsets' tables.
+
+![Facebook ADs ETL - BoldBI](/static/assets/working-with-etl/images/fbads_EditDatasource.png#max-width=100%)  
+
+## Reference
+
+1. Facebook Get Started - https://developers.facebook.com/docs/graph-api/get-started 
+2. Long-Lived Access Token - https://developers.facebook.com/docs/facebook-login/guides/access-tokens/get-long-lived/

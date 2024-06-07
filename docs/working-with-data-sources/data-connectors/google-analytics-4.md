@@ -7,47 +7,47 @@ documentation: ug
 ---
 
 # Connecting Bold BI to Google Analytics 4 data source
-Bold BI dashboard designer supports connecting Google Analytics 4 web services through REST API. 
+The Bold BI dashboard designer supports connecting to Google Analytics 4 web services through the REST API. 
 
 ## Choose Google Analytics 4 data source
 To configure the Google Analytics 4 data source, follow the below steps:
-1. Click the **Data Sources** button in the configuration panel to add a new data connection.
+1. Click on the **Data Sources** button in the configuration panel to add a new data connection.
 
    ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/common/DataSourcesIcon.png)
 
-2. Click **CREATE NEW** to launch a new connection from the connection panel.
+2. Click on **CREATE NEW** to launch a new connection from the connection panel.
 3. Select the **Google Analytics 4** connection in the connection panel.
 
    ![Choose data source](/static/assets/working-with-datasource/data-connectors/images/GoogleAnalytics4/GA4_Icon.png)
 
-> **NOTE:**  You can also create a data source from the home page by clicking the **Data Sources** menu from left menu panel and **Create Data Source** from the data sources page.
+> **NOTE:**  You can also create a data source from the home page by clicking on the **Data Sources** menu on the left menu panel and selecting **Create Data Source** from the data sources page.
 
    ![Choose data source from server](/static/assets/working-with-datasource/data-connectors/images/GoogleAnalytics4/GA4_Server.png)
 
 ## Authentication with Google Analytics 4
-Use the following steps to authenticate with Google Analytics 4 web service:
+Use the following steps to authenticate with the Google Analytics 4 web service:
 
-1. Click the data source, you will be prompted with a login window. Enter the credentials of your Google Analytics 4 account to authorize.
-2. Click **Allow** in the authorization window to accept the scopes requested by Bold BI dashboards.
+1. Click on the data source, which will prompt a login window. Enter the credentials of your Google Analytics 4 account to authorize.
+2. Click on **Allow** in the authorization window to accept the scopes requested by Bold BI dashboards.
 
-   > **NOTE:**  If the permission is denied, the account will not be accessible from the dashboard.
+   > **NOTE:**  If permission is denied, the account will not be accessible from the dashboard.
    
-3. Set a name to identify the account and click **Next**. 
+3. Provide a name to identify the account and click **Next**. 
 4. You have now successfully authorized your connection. Click **Connect** to continue with the data source connection.
-5. To connect via an already connected account, refer to the [Connected Accounts.](/working-with-data-sources/data-connectors/google-analytics/#connected-accounts-for-oauth-data-sources).
+5. If you want to connect via a previously connected account, refer to the [Connected Accounts.](/working-with-data-sources/data-connectors/google-analytics/#connected-accounts-for-oauth-data-sources).
 
    > **NOTE:**  To connect to another account click **Connect New Account.**
 
 
 ## Connect to Google Analytics 4
 ### Create Google Analytics 4 data source
-After successful authentication, the NEW DATA SOURCE configuration panel opens. Follow the below steps to create Google Analytics 4 data source.
+After successful authentication, the NEW DATA SOURCE configuration panel will open. Follow the below steps to create Google Analytics 4 data source.
 1. Enter a name and description (optional) for the data source.
 2. Select the account and property value.
-3. You can choose a specific date as a start date and end date, respectively, using the date picker controls given. If you choose the launch date option, Google Analytics 4 initial launch date will be considered as the start date for the API. Similarly, if no end date option is selected, the current date will be passed as the end date to pull data up to date during data source creation and refresh.
-4. You can choose multiple metrics and dimensions which will replace in Raw Body.
-5. Click Custom URL to enter the URL and Raw Body manually. Refer to the [Google Analytics 4 API documentation](https://developers.google.com/analytics/devguides/config/admin/v1/rest/v1beta/accountSummaries))) for more details.
-    URL Example:[https://analyticsdata.googleapis.com/v1beta/<GA4_PropertyID>:runReport](https://analyticsdata.googleapis.com/v1beta/<GA4_PropertyID>:runReport)
+3. You can choose a specific start date and end date using the date picker controls provided. If you select the launch date option, the initial launch date of Google Analytics 4 will be considered as the start date for the API. If no end date option is chosen, the current date will be used as the end date to pull data up to date during data source creation and refresh.
+4. Choose multiple metrics and dimensions to replace in Raw Body.
+5. Click Custom URL to enter the URL and Raw Body manually. Refer to the [Google Analytics 4 API documentation](https://developers.google.com/analytics/devguides/config/admin/v1/rest/v1beta/accountSummaries) for more details.
+    URL Example:`https://analyticsadmin.googleapis.com/v1beta/{entity=properties/*}:runAccessReport`
 
     Raw Body Example: `[{"dateRanges":[{"startDate":"2020-11-04","endDate":"2023-05-03"}],"dimensions":[{"name":"deviceCategory"}],"metrics":[{"name":"sessions"}]}]`
     
@@ -92,7 +92,7 @@ Pagination is handled internally and will fetch the amount of data you need.
 Refresh Settings
 </td>
 <td>
-Period before the next refresh call is triggered. This will automatically trigger a call for the API configured in the data source to keep the data up to date. If you do not want to sync your new data, choose ‘Never.’
+A period will pass before the next refresh call is triggered. This will automatically trigger a call for the API configured in the data source to keep the data up to date. If you do not want to sync your new data, choose ‘Never.’
 </td>
 </tr>
 <tr>
@@ -103,9 +103,9 @@ Period before the next refresh call is triggered. This will automatically trigge
 
 ### Setting up the URL and Raw Body
 
-1. URL is prepared automatically once the properties of your account are selected.
+1. The URL is generated automatically once the properties of your account are selected.
 
-     URL Example:[https://analyticsdata.googleapis.com/v1beta/<GA4_PropertyID>:runReport](https://analyticsdata.googleapis.com/v1beta/<GA4_PropertyID>:runReport)
+     URL Example:`https://analyticsdata.googleapis.com/v1beta/<GA4_PropertyID>:runReport`
 2. Generate Raw Body for Google Analytics 4 by selecting the required start date, end date, Metrics, and Dimensions from the Bold BI.
 
    Example: [{"dateRanges":[{"startDate":"<:startDate>","endDate":"<:endDate>"}],"dimensions":[{"name":"<:dimensions>"}],"metrics":[{"name":"<:metrics>"}]}]`({"dateRanges":[{"startDate":"2020-11-04","endDate":"2023-05-03"}],"dimensions":[{"name":"eventName"}],"metrics":[{"name":"eventCount"}]})`  
@@ -122,7 +122,7 @@ For more information on the API endpoints available for this data source, refer 
 [{"dateRanges":[{"startDate":"2020-11-04","endDate":"2023-05-03"}],"dimensions":[{"name":"deviceCategory"}],"metrics":[{"name":"sessions"}]}]
 
 ### Preview and data import
-* Click **Preview & Connect** to connect with the configurations set.
+* Click **Preview & Connect** to connect with the configurations that have been set.
 * The Choose Schema(s) dialog opens. The schema represents the key fields of JSON data retrieved from the Google Analytics 4 Rest API request. This dialog displays a list of schemas in Treeview and their corresponding values in the grid for preview. Select the required schema(s) from Treeview to use in the designer and click **Connect**.
 
    ![Preview](/static/assets/working-with-datasource/data-connectors/images/common/Preview.png)

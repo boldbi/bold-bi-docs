@@ -56,7 +56,7 @@ You can also edit the connection information set here using the [Edit Connection
 Refresh Settings
 </td>
 <td>
-Period of time before next refresh call is triggered. This will automatically trigger a call for the API configured in the data source to keep the data up to date. If you do not want to sync your new data, choose ‘Never’.
+The period of time before the next refresh call is triggered. This will automatically trigger a call to the API configured in the data source to keep the data up to date. If you do not want to sync your new data, choose ‘Never’.
 </td>
 </tr>
 </table>
@@ -72,7 +72,7 @@ Period of time before next refresh call is triggered. This will automatically tr
 [https://your_asknicely_domain.asknice.ly/datafeed/v1/stats?apikey=your_api_key](https://your_asknicely_domain.asknice.ly/datafeed/v1/stats?apikey=your_api_key)
 
 ### Preview and data import
-* Click **Preview & Connect** to connect with the configurations set.
+* Click **Preview & Connect** to connect with the configurations that have been set.
 * The Choose Schema(s) dialog will open. The schema represents the key fields of JSON data retrieved from the Ask Nicely Rest API request. This dialog displays a list of schemas in treeview and its corresponding values in grid for preview. Select the required schema(s) from the treeview to use in the designer and click **Connect**.
 
    ![Preview](/static/assets/working-with-datasource/data-connectors/images/common/Preview.png)

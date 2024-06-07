@@ -78,7 +78,7 @@ The fields that need to be saved in Bold BI to enable Amazon Cognito for authent
 
 <tr>
 <td>Authorization Endpoint</td>
-<td>It should be in the format <span style="color:#0c9dd1">https://AUTH_DOMAIN/oauth2/authorize</span> <br>Please refer <a href="https://aws.amazon.com/blogs/mobile/understanding-amazon-cognito-user-pool-oauth-2-0-grants/">here</a> for more details.</td>
+<td>It should be in the format <span style="color:#0c9dd1">https://AUTH_DOMAIN/oauth2/authorize</span> <br>Please refer <a href="https://aws.amazon.com/blogs/mobile/understanding-amazon-cognito-user-pool-oauth-2-0-grants/">blog</a> for more details.</td>
 </tr>
 
 <tr>
@@ -88,7 +88,7 @@ The fields that need to be saved in Bold BI to enable Amazon Cognito for authent
 
 <tr>
 <td>Token Endpoint</td>
-<td>It should be in the format <span style="color:#0c9dd1">https://AUTH_DOMAIN/oauth2/token</span> <br>Please refer <a href="https://aws.amazon.com/blogs/mobile/understanding-amazon-cognito-user-pool-oauth-2-0-grants/">here</a> for more details.</td>
+<td>It should be in the format <span style="color:#0c9dd1">https://AUTH_DOMAIN/oauth2/token</span> <br>Please refer <a href="https://aws.amazon.com/blogs/mobile/understanding-amazon-cognito-user-pool-oauth-2-0-grants/">blog</a> for more details.</td>
 </tr>
 
 <tr>
@@ -98,7 +98,7 @@ The fields that need to be saved in Bold BI to enable Amazon Cognito for authent
 
 <tr>
 <td>User Information Endpoint</td>
-<td>It should be in the following format <span style="color:#0c9dd1">https://AUTH_DOMAIN/oauth2/userinfo</span>. Please refer <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/userinfo-endpoint.html">here</a>, for more details.</td>
+<td>It should be in the following format <span style="color:#0c9dd1">https://AUTH_DOMAIN/oauth2/userinfo</span>. Please refer <a href="https://docs.aws.amazon.com/cognito/latest/developerguide/userinfo-endpoint.html">this documentation</a>, for more details.</td>
 </tr>
 
 <tr>
@@ -140,4 +140,4 @@ The `User Pool Id` and `Region` can be found in the general settings of your use
 
 ![AWS User Pool Id](/static/assets/site-administration/oauth-support/images/AWS-userpool.png)
 
-To generate an Access Key and Access Secret, please follow the link https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html#Using_CreateAccessKey
+To generate an Access Key and Access Secret, please follow the link: [AWS IAM User Guide - Creating Access Keys](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html#Using_CreateAccessKey)

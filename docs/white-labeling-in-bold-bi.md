@@ -75,7 +75,7 @@ You can customize the language settings for application language and data langua
 
 **Application Language Customization**
 
-You can localize the Bold BI application to any culture by changing the language in the `Application language` section. Please click [here](/localization/) to learn how to add a new localization or edit the existing localization in the Bold BI application. This language will be applied to the application user interface, including menu items, dialog boxes, toolboxes, and more.
+You can localize the Bold BI application to any culture by changing the language in the `Application language` section. Please click on the [localization](/localization/) to learn how to add a new localization or edit the existing localization in the Bold BI application. This language will be applied to the application user interface, including menu items, dialog boxes, toolboxes, and more.
 
 ![Application Language](/static/assets/images/site-application-language.png)
 
@@ -115,10 +115,10 @@ You can customize your bindings with either an IP address or a domain. Please fo
 
 **Custom Domain in Cloud BI**
 
-By default, the domain of the cloud site will be the subdomain of `boldbi.com` (e.g. https://demo.boldbi.com/). You can customize it on the `Site Settings` page under the `Domain` section. To set up the custom vanity domain, you will need a domain from a DNS provider, and Bold BI will provide an SSL certificate for your domain. Please follow this [link](/site-administration/custom-domain-in-cloud-bi/) to learn how to set up a custom domain in Cloud BI.
+By default, the domain of the cloud site will be the subdomain of `boldbi.com` (e.g. https://demo.boldbi.com/). You can customize it on the `Site Settings` page under the `Domain` section. To set up the custom vanity domain, you will need a domain from a DNS provider, and Bold BI will provide an SSL certificate for your domain. Please follow the [Custom Domain in Cloud Analytics Server](/site-administration/custom-domain-in-cloud-bi/) to learn how to set up a custom domain in Cloud BI.
 ![Administration Page](/static/assets/site-administration/images/administration-page.png)
 
-Please refer to this [link](/site-administration/custom-domain-in-cloud-bi/) to learn more about customizing the domain in Bold BI.
+Please refer to the [Custom Domain in Cloud Analytics Server](/site-administration/custom-domain-in-cloud-bi/) to learn more about customizing the domain in Bold BI.
 
 > **Note**: The logos, site name, copyright information, "powered by" information, languages, date and time display formats, and domain customizations can be updated on the `Site Settings` page by administrators or users with permission to manage the site settings.
 
@@ -155,7 +155,7 @@ The font styles uploaded in **UMS site settings** will be listed in the `Fonts` 
 
 ![Font Settings Embedded BI](/static/assets/white-label/images/custom-font.png#width=45%)
 
-Please click [here](/multi-tenancy/site-administration/look-and-feel-settings/font/) to learn how to upload font styles on the **UMS site settings** page.
+Please click on the [Font](/multi-tenancy/site-administration/look-and-feel-settings/font/) to learn how to upload font styles on the **UMS site settings** page.
 
 **Font Customization in Cloud BI**
 

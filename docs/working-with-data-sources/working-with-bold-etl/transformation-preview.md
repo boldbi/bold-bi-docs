@@ -9,7 +9,7 @@ documentation: ug
 
 # Transformation
 
-After the project data has been moved into the destination database, select a project and click on the Transform tab in the right side panel.  
+After the project data has been moved into the destination database, select a project and click on the Transform tab in the right side panel.
 
 ![Transform1](/static/assets/working-with-etl/images/etl_t1.png)
 

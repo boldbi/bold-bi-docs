@@ -9,20 +9,20 @@ documentation: ug
 
 # Stripe
 
-Stripe is an online payment platform that allows businesses to securely process and manage customer transactions over the Internet.
+Stripe is an online payment platform that enables businesses to securely process and manage customer transactions over the Internet.
 
 ## Grab Credentials
 
 1. Log in to your Stripe account.
-2. Click Settings in the top-right.
-3. Go to Developers from the top menu.
+2. Click on Settings in the top right corner.
+3. Navigate to Developers in the top menu.
 4. Choose "API Keys".
-5. In "Standard Keys", click "Reveal test key" beside the Secret Key.
-6. Note down the `API_secret_key` for configuring `secrets.toml`.
+5. Under "Standard Keys", click on "Reveal test key" next to the Secret Key.
+6. Make a note of the `API_secret_key` for configuring `secrets.toml`.
 
 ## Connection Properties
 
-In the YAML file, the configuration section contains the following properties:
+The configuration section in the YAML file includes the following properties:
 
 ```yaml
 Connectorname: Stripe
@@ -51,7 +51,7 @@ metadata:
         replication_value: column value that data starts from
 ```
 </td>
-        <td>This mode will fetch data from the date column mentioned in replication key from the start date as mentioned in replication value. Once it is scheduled, the replication value is updated automatically from the imported data.</td>
+        <td>This mode will retrieve data from the date column specified in the replication key starting from the date indicated in the replication value. Once it is scheduled, the replication value will be automatically updated based on the imported data.</td>
     </tr>
     <tr>
         <td>FULL_TABLE</td>
@@ -68,7 +68,7 @@ metadata:
 
 ```
 </td>
-        <td>This mode will fetch data from the date column mentioned in replication key from the start date as mentioned in replication value. Once it is scheduled, the replication value is updated automatically from the imported data.</td>
+        <td>This mode will fetch data from the date column mentioned in the replication key starting from the date specified in the replication value. Once scheduled, the replication value is automatically updated from the imported data.</td>
     </tr>
 </table>
 

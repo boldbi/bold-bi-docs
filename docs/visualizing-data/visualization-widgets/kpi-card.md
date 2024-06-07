@@ -67,7 +67,7 @@ Now, the menu will be shown.
 
 **Changing the aggregation type**: 
 
-You can change the summary type of the dropped measure field by clicking the summary types listed in the menu. Refer [here](/visualizing-data/working-with-widgets/aggregating-value-columns-based-on-type/) for more details on aggregation types. 
+You can change the summary type of the dropped measure field by clicking the summary types listed in the menu. Refer to the [Aggregating Value Columns](/visualizing-data/working-with-widgets/aggregating-value-columns-based-on-type/) for more details on aggregation types.
 
 **Measure filtering**: 
 
@@ -75,7 +75,7 @@ You can use the `Filter` option to filter the data by specifying the filter cond
 
 **Measure formatting**
 
-Select the `Format` option to define the display format for the values in the column using the Measure Formatting window. To learn more about measure formatting, refer  [here](/visualizing-data/working-with-widgets/formatting-measure-type-column/). 
+Select the `Format` option to define the display format for the values in the column using the Measure Formatting window. To learn more about measure formatting, refer to the [measure format](/visualizing-data/working-with-widgets/formatting-measure-type-column/).
 
 ### Target value
 
@@ -103,7 +103,7 @@ You can filter and sort the records using the settings menu items.
 
 ![Settings options](/static/assets/visualizing-data/visualization-widgets/images/kpi-card/settings-option.png)
 
-**Sorting**: You can customize the `sorting` behavior of dimension fields in the KPI Card widget. You can also order them based on **alphabet** or **value**, **data source (default)**, or **field**. Refer [here](/visualizing-data/working-with-widgets/advanced-sorting/) for detailed steps.
+**Sorting**: You can customize the `sorting` behavior of dimension fields in the KPI Card widget. You can also order them based on **alphabet** or **value**, **data source (default)**, or **field**. Refer to the [Sort](/visualizing-data/working-with-widgets/advanced-sorting/) for detailed steps.
 
  Refer to this page to learn how to apply measure filter. 
 
@@ -925,7 +925,7 @@ This allows you to enable or disable the `PDF export` option for the KPI Card wi
 
 #### Enable comments
 
-This allows you to enable or disable `comment` for the dashboard widget. For more details, refer to this [link](/visualizing-data/working-with-widgets/commenting-widget/).
+This allows you to enable or disable `comment` for the dashboard widget. For more details, refer to the [Commenting Widget](/visualizing-data/working-with-widgets/commenting-widget/).
 
 #### Allow view underlying data
 

@@ -7,7 +7,7 @@ documentation: ug
 
 ---
 
-> This document explains how to change the DNS for each site in the Bold BI version above 4.1.36. Refer to [this](/faq/how-to-change-dns-for-each-tenant-site-v4.1.36-or-below/) document to change the DNS for each site in the Bold BI version 4.1.36 or below.
+> This document explains how to change the DNS for each site in the Bold BI version above 4.1.36. Please refer to the instructions on [how to change DNS for each site in Bold BI version 4.1.36 or below](/faq/how-to-change-dns-for-each-tenant-site-v4.1.36-or-below/).
 
 # How to change a DNS for each site in Bold BI Application
 

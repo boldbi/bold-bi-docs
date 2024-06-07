@@ -8,7 +8,7 @@ documentation: ug
 
 # Connecting Bold BI to Oracle BI Reports data source
 
-Bold BI dashboard designer supports connecting `Oracle BI Reports` web services through Report services API.
+The Bold BI dashboard designer supports connecting to `Oracle BI Reports` web services through Report services API.
 
 ## Choose Oracle BI Reports data source
 
@@ -24,7 +24,7 @@ To configure the `Oracle BI Reports` data source, follow these steps:
 
    ![Select the Oracle BI reports data source](/static/assets/working-with-datasource/data-connectors/images/OracleBIReports/Select_OracleBIReports.png)
 
-> **NOTE:** You can also create a data source from the home page by clicking the **Data Sources** menu from the left menu panel and **Create Data Source** from the data sources page.
+> **NOTE:** You can also create a data source from the home page by clicking the **Data Sources** menu on the left menu panel and selecting **Create Data Source** from the data sources page.
 
    ![Creating data source from server page](/static/assets/working-with-datasource/data-connectors/images/OracleBIReports/Select_OracleBIReports_ServerPage.png)
 

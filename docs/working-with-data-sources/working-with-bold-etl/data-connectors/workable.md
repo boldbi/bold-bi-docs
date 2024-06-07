@@ -10,7 +10,7 @@ documentation: ug
 # Workable
 
 **Description:**
-Workable is an online platform for posting jobs and managing the hiring process. With Workable, employers can create job listings, receive applications, track candidates, collaborate with team members, schedule interviews, and manage the overall hiring workflow.
+Workable is an online platform for posting jobs and managing the hiring process. Employers can create job listings, receive applications, track candidates, collaborate with team members, schedule interviews, and manage the overall hiring workflow with Workable.
 
 **Prerequisites:**
 - Application: Python (>=3.10) and Pip
@@ -18,10 +18,10 @@ Workable is an online platform for posting jobs and managing the hiring process.
 
 **Grab API credentials:**
 1. Log into Workable.
-2. Click the top right user icon and select "Settings".
+2. Click the user icon at the top right and select "Settings".
 3. Under "RECRUITING", select "Integrations" on the left.
-4. Find "ACCESS TOKEN" and generate a new token.
-5. Safely copy the new token for pipeline configuration.
+4. Locate "ACCESS TOKEN" and generate a new token.
+5. Carefully copy the new token for pipeline configuration.
 
 **Connection Properties:**
 - **Connector Name:** Workable

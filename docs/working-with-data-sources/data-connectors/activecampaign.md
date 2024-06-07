@@ -34,7 +34,7 @@ Once you click on the data source, the NEW DATA SOURCE configuration panel will 
 1. Enter a name and description (optional) for the data source.
 2. Enter a valid ActiveCampaign REST API endpoint in the URL textbox. Refer to the [ActiveCampaign API documentation](https://developers.activecampaign.com/reference) for more details.
 
-   Example: [https://&lt;your-account&gt;.api-us1.com/api/3/connections](https://%3cyour-account%3e.api-us1.com/api/3/connections)
+   Example: `https://%3cyour-account%3e.api-us1.com/api/3/connections`
 
 3. Select **GET** method for the REST API in the **Method** combo box.
 4. In **Max Rows**, enter the maximum number of rows to be fetched from the ActiveCampaign data source. This value is used to fetch the data from ActiveCampaign data source via pagination.
@@ -61,8 +61,7 @@ You can also edit the connection information set here using the [Edit Connection
 Max Rows
 </td>
 <td>
-Most of the REST APIs return only fewer data on a single API request. To pull the amount of data you need, set a value in this field.  
-Pagination is handled internally and will fetch the amount of data you need.
+Most REST APIs return only a limited amount of data on a single API request. To retrieve the necessary amount of data, you can set a value in this field. Pagination is handled internally and will fetch the required data.
 </td>
 </tr>
 <tr>
@@ -70,7 +69,7 @@ Pagination is handled internally and will fetch the amount of data you need.
 Refresh Settings
 </td>
 <td>
-Period of time before next refresh call is triggered. This will automatically trigger a call for the API configured in the data source to keep the data up to date. If you do not want to sync your new data, choose ‘Never’.
+The period of time before the next refresh call is triggered. This will automatically trigger a call to the API configured in the data source to keep the data up to date. If you do not want to sync your new data, choose ‘Never’.
 </td>
 </tr>
 <tr>
@@ -89,7 +88,7 @@ ActiveCampaign API has a rate limit of 5 requests per second per account. Contac
 2. Replace *&lt;:your-account&gt;* with this base URL.
 3. Replace *&lt;:resource&gt;* with a valid endpoint.
 
-[https://&lt;your-account&gt;.api-us1.com/api/3/&lt;:resource&gt;](https://%3cyour-account%3e.api-us1.com/api/3/%3c:resource%3e)
+`https://<your-account>.api-us1.com/api/3/<:resource>`
 
 For more information on API endpoints available for this data source, refer to their official [API Documentation](https://developers.activecampaign.com/reference)
 
@@ -97,15 +96,14 @@ For more information on API endpoints available for this data source, refer to t
 
 **Campaigns**
 
-[https://sample-user-api.com/api/3/campaigns](https://sample-user-api.com/api/3/campaigns)
-
+`https://sample-user-api.com/api/3/campaigns`
 
 **Deals**
 
-[https://sample-user-api.com/api/3/deals](https://sample-user-api.com/api/3/deals)
+`https://sample-user-api.com/api/3/deals`
 
 ### Preview and data import
-* Click **Preview & Connect** to connect with the configurations set.
+* Click **Preview & Connect** to connect with the configurations that have been set.
 * The Choose Schema(s) dialog opens. The schema represents the key fields of JSON data retrieved from ActiveCampaign Rest API request. This dialog displays a list of schemas in treeview and its corresponding values in grid for preview. Select required schema(s) from treeview to use in designer and click **Connect**.
 
    ![Preview](/static/assets/working-with-datasource/data-connectors/images/common/Preview.png)

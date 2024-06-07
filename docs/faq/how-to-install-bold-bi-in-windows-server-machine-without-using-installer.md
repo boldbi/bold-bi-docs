@@ -11,7 +11,7 @@ documentation: ug
 
 ## Prerequisites
 
-1. [Software and Hardware requirements](/deploying-bold-bi/deploying-in-windows/prerequisites-windows/#software-requirements)  
+1. [Software and Hardware requirements](/deploying-bold-bi/deploying-on-windows/prerequisites-windows/#software-requirements)  
 
 2. [Features needed to be enabled in IIS](/faq/features-needed-to-enable-in-iis-to-run-bold-bi-in-win-server-os/)
 

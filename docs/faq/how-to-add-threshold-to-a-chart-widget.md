@@ -9,7 +9,7 @@ documentation: ug
 
 # How to add threshold to a Chart widget 
 
-You can display the threshold line in the chart widget using both the [Expressions](/working-with-data-sources/data-modeling/configuring-expression-columns/) field and [Dashboard Parameter](/working-with-data-sources/dashboard-parameter/configuring-dashboard-parameters/) support in the Bold BI application. 
+You can display the threshold line in the chart widget using both the [Expressions](/working-with-data-sources/data-modeling/configuring-expression-columns/) field and [Dashboard Parameter](/working-with-data-sources/dashboard-parameter/configuring-dashboard-parameters/) support in the Bold BI application.
 
 * `Expression field`: You can use this option to display a static threshold value for all users.
 * `Dashboard Parameter`: You can use this option to select the dynamic threshold value. You can also use this in conjunction with the user-based filter to display the threshold value based on the user currently viewing the dashboard.

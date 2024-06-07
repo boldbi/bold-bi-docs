@@ -14,7 +14,7 @@ Google Sheets is a cloud-based spreadsheet application offered by Google as part
 
 ### Service Account Credential
 
-Service account credentials are better suited for server-to-server interactions. Here, we recommend using service account credentials.
+Service account credentials are better suited for server-to-server interactions. Therefore, we recommend using service account credentials.
 
 #### Google Service Account Credentials
 
@@ -24,8 +24,8 @@ To get API credentials using a GCP service account, follow these steps:
 2. Create a service account if needed.
 3. Enable "Google Sheets API" (refer to Google documentation for comprehensive instructions).
 4. Generate credentials:
-   - Navigate to IAM & Admin in the console's left panel, then select Service Accounts.
-   - Identify the service account you intend to use, and click on the three-dot menu under the "Actions" column next to it.
+   - Go to IAM & Admin in the console's left panel, then choose Service Accounts.
+   - Locate the service account you plan to use, and click the three-dot menu under the "Actions" column next to it.
    - Create a new JSON key by selecting "Manage Keys" > "ADD KEY" > "CREATE".
    - Download the ".json" file containing the necessary credentials for future use.
 
@@ -33,7 +33,7 @@ To get API credentials using a GCP service account, follow these steps:
 
 ## Connection Properties
 
-In a YAML file, the `config` section contains the following properties:
+The `config` section in a YAML file includes the following properties:
 
 ```yaml
 Connectorname: GoogleSheets

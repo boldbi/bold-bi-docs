@@ -79,7 +79,7 @@ The configured field names can be edited by using the `Rename` option provided i
 
 #### Filtering data
 
-You can use the `Filter` option to filter the data by specifying the filter condition. For more details, refer to the [filter](https://help.syncfusion.com/dashboard-embedded/visualize-data/configuring-widget-filters).
+You can use the `Filter` option to filter the data by specifying the filter condition. For more details, refer to the [filter](https://help.boldbi.com/visualizing-data/working-with-widgets/configuring-widget-filters/).
 
 ![Measure filter](/static/assets/visualizing-data/visualization-widgets/images/radial-gauge/filter-option.png)
 
@@ -89,7 +89,7 @@ You can format the data to be displayed in the gauge by using the `Format` optio
 
 ![Measure format](/static/assets/visualizing-data/visualization-widgets/images/radial-gauge/format-option.png)
 
-> **NOTE:**  Refer to this [link](/visualizing-data/working-with-widgets/formatting-measure-type-column/) for more details on Measure formatting.
+> **NOTE:** Refer to the [measure format](/visualizing-data/working-with-widgets/formatting-measure-type-column/) for more details on Measure formatting.
 
 ### Target Value
 
@@ -111,7 +111,7 @@ You can apply the `Sort` and `Filter` options for the Series field if required f
 
 ![Settings menu options](/static/assets/visualizing-data/visualization-widgets/images/radial-gauge/sorting-settings.png)
 
-**Sorting**: You can customize the sorting behavior of dimension fields in the Radial Gauge widget. You can order them based on alphabet or value, data source (default), or field. Refer to this [link](/visualizing-data/working-with-widgets/advanced-sorting/) for detailed steps.
+**Sorting**: You can customize the sorting behavior of dimension fields in the Radial Gauge widget. You can order them based on alphabet or value, data source (default), or field. Refer to the [Sort](/visualizing-data/working-with-widgets/advanced-sorting/) for detailed steps.
 
 **Filtering**: You can use the `Filter` option to filter the data by specifying the filter condition. Refer to the detailed steps on applying measure filter from this [page](/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column).
 
@@ -678,7 +678,7 @@ This allows you to enable or disable the `PDF export` option for the radial gaug
 
 #### Enable Comments
 
-This allows you to enable or disable `comment` for the dashboard widget. For more details, refer to this [link](/visualizing-data/working-with-widgets/commenting-widget/).
+This allows you to enable or disable `comment` for the dashboard widget. For more details, refer to the [Commenting Widget](/visualizing-data/working-with-widgets/commenting-widget/).
 
 #### Allow View Underlying Data
 

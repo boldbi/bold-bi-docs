@@ -13,11 +13,11 @@ Bold BI allows you to deploy it in various environments and you can find the ste
 2. Linux
    <ul><li>
 
-   [Ubuntu](/deploying-bold-bi/deploying-in-linux/installation-and-deployment/bold-bi-on-ubuntu/#configure-ssl) 
+   [Ubuntu](/deploying-bold-bi/deploying-on-linux/installation-and-deployment/bold-bi-on-ubuntu/#configure-ssl) 
    </li>
    <li>
 
-   [CentOS](/deploying-bold-bi/deploying-in-linux/installation-and-deployment/bold-bi-on-centos/#configure-ssl)
+   [CentOS](/deploying-bold-bi/deploying-on-linux/installation-and-deployment/bold-bi-on-centos/#configure-ssl)
    </li>
    </ul>
 

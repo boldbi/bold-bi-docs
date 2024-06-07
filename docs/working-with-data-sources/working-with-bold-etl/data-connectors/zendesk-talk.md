@@ -43,7 +43,7 @@ metadata:
     replication_value: column value that data starts from
 ```
 </td>
-        <td>This mode fetches data from the date column mentioned in the replication key from the start date, as specified in the replication value. Once scheduled, the replication value is updated automatically from the imported data.</td>
+        <td>This mode retrieves data from the date column specified in the replication key starting from the designated start date in the replication value. Once scheduled, the replication value is automatically updated based on the imported data.</td>
     </tr>
     <tr>
         <td>FULL_TABLE</td>
@@ -59,7 +59,7 @@ metadata:
     interval_value: integer value to add in interval type
 ```
 </td>
-        <td>This mode fetches data from the date column mentioned in the replication key from the start date, as specified in the replication value. Once scheduled, the replication value is updated automatically from the imported data.</td>
+        <td>This mode retrieves data from the date column specified in the replication key starting from the specified start date in the replication value. Once scheduled, the replication value is automatically updated from the imported data.</td>
     </tr>
 </table>
 

@@ -111,7 +111,7 @@ The sample has been provided in the following sections for `Blazor Server`, whic
         };
      ```
 
-> **NOTE:** By default, we represent the dashboard embedding without the dashboard listing sidebar. To enable the dashboard list, you need to navigate to the `dashboardlisting` URL (e.g., https://localhost:5001/dashboardlisting).
+> **NOTE:** By default, we represent the dashboard embedding without the dashboard listing sidebar. To enable the dashboard list, you need to navigate to the `dashboardlisting` URL (e.g., `https://localhost:5001/dashboardlisting`).
 
 ## How Blazor Server sample works
  1. Based on the dashboard details in the `_Host.cshtml`, authorize the server URL by calling the `AuthorizationServer` function in the following manner.
@@ -279,4 +279,4 @@ The sample has been provided in the following sections for `Blazor Server`, whic
             string jsonString = System.IO.File.ReadAllText(Path.Combine(basePath, "embedConfig.json"));GlobalAppSettings.EmbedDetails = JsonConvert.DeserializeObject<EmbedDetails>(jsonString);
         ```
         
- 13. To run the application, use the command `dotnet watch run` in the terminal. After executing the command, the application will automatically launch in the default browser. You can access it at the specified port number (e.g., https://localhost:5001).
+ 13. To run the application, use the command `dotnet watch run` in the terminal. After executing the command, the application will automatically launch in the default browser. You can access it at the specified port number (e.g., `https://localhost:5001`).

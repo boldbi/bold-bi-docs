@@ -98,7 +98,7 @@ This API member `filterParamters` can be used when you intend to filter from the
 
   To use a filter parameter, use the following syntax: `Column_Name=value1, value2,…, valueN`
    
-  Filtering values can be single-valued and multiple-valued. For more details, please refer [here](/working-with-dashboards/preview-dashboard/urlparameters/).
+  Filtering values can be single-valued and multiple-valued. For more details, please refer to the [URL Filter](/working-with-dashboards/preview-dashboard/urlparameters/).
 
   1. In the BoldBI.create() method of an embedded application, handle the filterParameters API as in the following example.
  
@@ -120,7 +120,7 @@ This API member `filterParamters` can be used when you intend to filter from the
 
   ### Through dashboard parameter 
 
-  Its a stored procedure of filter value, for this need to configure the dashboard parameter in the datasource level. This can be used when column name is unknown. For configuration details please refer [here](/working-with-data-sources/dashboard-parameter/configuring-dashboard-parameters/).
+  Its a stored procedure of filter value, for this need to configure the dashboard parameter in the datasource level. This can be used when column name is unknown. For more details, Refer to the [configuring dashboard parameters](/working-with-data-sources/dashboard-parameter/configuring-dashboard-parameters/).
 
   To use a dashboard parameter, use the following syntax:`dashboard_parameter_name=dashboard_parameter_value`
    

@@ -58,7 +58,7 @@ Users can select a default pinboard by choosing one of the added pinboards from 
 
 ![Default Pinboard](/static/assets/managing-resources/images/default-pinboard.png)
 
-The default pinboard will be loaded when the user navigates to the Pinboard page. Click [here](/managing-resources/manage-pinboards/) to learn more about pinboards.
+The default pinboard will be loaded when the user navigates to the Pinboard page. Click on the [Manage Pinboards](/managing-resources/manage-pinboards/) to learn more about pinboards.
 
 ### Dashboard settings
 #### AutoSave filter

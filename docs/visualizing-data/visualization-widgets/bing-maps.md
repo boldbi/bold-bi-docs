@@ -19,7 +19,7 @@ documentation: ug
 
 To obtain `keys`, follow these steps:
 
-1. Go to the Bing Maps `Dev` Center at  https://www.bingmapsportal.com/.
+1. Go to the Bing Maps `Dev` Center at the following link: [Bing Maps](https://www.bingmapsportal.com/).
 
 2. Register or sign in using your Microsoft account.
 
@@ -55,7 +55,7 @@ Set your Bing Maps Key in the `key` field in `config.json`.
 
 ![Bing Map Configuration](/static/assets/visualizing-data/visualization-widgets/images/bing-maps/configjson-map-key.png)
 
-After making the above changes, restart the site using the provided [link](https://help.boldbi.com/faq/how-to-restart-the-bold-bi-embedded-application/).
+After completing the above changes, To learn [how to restart the Bold BI](/faq/how-to-restart-the-bold-bi-embedded-application/) application.
 
 ### Bold BI version 5.1.55 or later
 
@@ -71,7 +71,7 @@ Set your Bing Maps Key in the `<key>` field in `config.xml`.
 
 ![Bing Map Configuration](/static/assets/visualizing-data/visualization-widgets/images/bing-maps/configxmlsettings-map-key.png)
 
-After making the above changes, restart the site using the provided [link](https://help.boldbi.com/faq/how-to-restart-the-bold-bi-embedded-application/).
+After completing the above changes, To learn [how to restart the Bold BI](/faq/how-to-restart-the-bold-bi-embedded-application/) application.
 
 ### Bold BI version 4.2.68 or later
 
@@ -689,7 +689,7 @@ This allows you to enable or disable the `PDF export` option for the map widget.
 
 #### Enable Comments
 
-This allows you to enable or disable `comment` for the dashboard widget. For more details, refer to this [link](/visualizing-data/working-with-widgets/commenting-widget/).
+This allows you to enable or disable `comment` for the dashboard widget. For more details, refer to the [Commenting Widget](/visualizing-data/working-with-widgets/commenting-widget/).
 
 #### Allow View Underlying Data
 

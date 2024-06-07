@@ -133,6 +133,6 @@ Configure the group import setting in Bold BI using Auth0 as shown in the image 
 
 ![Auth0 Group](/static/assets/site-administration/oauth-support/images/Auth0-group.png)
 
-> **IMPORTANT:**  To manage groups in Auth0, it is necessary to install the `Authorization Extension`. For more details, please follow the link: https://auth0.com/docs/extensions/authorization-extension/v2
+> **IMPORTANT:**  To manage groups in Auth0, it is necessary to install the `Authorization Extension`. For more details, please follow the link: [Auth0 Authorization Extension Documentation](https://auth0.com/docs/extensions/authorization-extension/v2).
 
-To obtain information about the `Audience` and `Extension URL` , please refer to the following link: https://auth0.com/docs/api/authorization-extension#get-all-groups
+To obtain information about the `Audience` and `Extension URL` , please refer to the following link: [Auth0 API Documentation - Get All Groups](https://auth0.com/docs/api/authorization-extension#get-all-groups).

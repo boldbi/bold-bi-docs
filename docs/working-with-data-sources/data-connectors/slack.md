@@ -7,12 +7,12 @@ documentation: ug
 ---
 
 # Connecting Bold BI to Slack data source
-Bold BI dashboard designer supports connecting Slack web services through REST API. 
+The Bold BI dashboard designer supports connecting to Slack web services through the REST API. 
 
 ## Choose Slack data source
 
 To configure the Slack data source, follow the below steps:
-1. Click the **Data Sources** button in the configuration panel to add a new data connection.
+1. Click on the **Data Sources** button in the configuration panel to add a new data connection.
 
    ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/common/DataSourcesIcon.png)
 
@@ -21,26 +21,26 @@ To configure the Slack data source, follow the below steps:
 
    ![Choose data source](/static/assets/working-with-datasource/data-connectors/images/Slack/ChooseDS.png)
 
-> **NOTE:** You can also create a data source from the home page by clicking the **Data Sources** menu from left menu panel and **Create Data Source** from the data sources page.
+> **NOTE:** You can also create a data source from the home page by clicking on the **Data Sources** menu on the left menu panel and selecting **Create Data Source** from the data sources page.
 
    ![Choose data source from server](/static/assets/working-with-datasource/data-connectors/images/Slack/ChooseDS_Server.png)
 
 ## Advanced
-In Advanced category, It will Redirect to the Bold ETL. Refer [Bold ETL](/managing-resources/manage-data-sources/#advanced-category).
+In the Advanced category, It will Redirect to the Bold ETL. Refer [Bold ETL](/managing-resources/manage-data-sources/#advanced-category).
 
 ## Basic
-In Basic Category, It will act as the connector in Bold BI. And need to follow the below steps.
+In the Basic Category, It will act as the connector in Bold BI. And need to follow the below steps.
 
 ## Create Slack data source
-Once you click the data source, the NEW DATA SOURCE configuration panel opens. Follow the below steps to create Slack data source.
+Once you click on the data source, the NEW DATA SOURCE configuration panel will open. Follow the below steps to create Slack data source.
 1. Enter a name and description (optional) for the data source.
-2. Click the **API Endpoints** down drop box and choose the required endpoint.
-3. Enter a valid REST API endpoint in the URL textbox. Refer the [Slack API documentation](https://api.slack.com/methods) for more details.
-4. Click **Custom Url** to enter the URL manually.
-5. Select **GET** method for the REST API in **Method** combo box.
-6. Choose a time interval for **Refresh Settings** using the combo box, to trigger the Rest API request periodically to keep the data in sync with our dashboard.  
-7. Select **JSON** data type in **Data Format** combo box.
-8. The authentication type will be set to **Slack** automatically since OAuth is used for authenticating with Slack account.
+2. Click on the **API Endpoints** down drop box and choose the required endpoint.
+3. Enter a valid REST API endpoint in the URL textbox. Refer to the [Slack API documentation](https://api.slack.com/methods) for more details.
+4. Click on **Custom Url** to enter the URL manually.
+5. Select the **GET** method for the REST API in the **Method** combo box.
+6. Select a time interval for **Refresh Settings** using the drop-down menu to periodically trigger the REST API request to keep the data in sync with our dashboard. 
+7. Select **JSON** data type in the **Data Format** combo box.
+8. The authentication type will automatically be set to **Slack** since OAuth is used for authenticating with the Slack account.
 
 ![Data source preview](/static/assets/working-with-datasource/data-connectors/images/Slack/DataSourcesView.png)
 
@@ -54,7 +54,7 @@ You can also edit the connection information set here using the [Edit Connection
 Refresh Settings
 </td>
 <td>
-Period of time before next refresh call is triggered. This will automatically trigger a call for the API configured in the data source to keep the data up to date.
+The period of time before the next refresh call is triggered. This will automatically trigger a call to the API configured in the data source to keep the data up to date.
 </td>
 </tr>
 </table>
@@ -63,26 +63,26 @@ Period of time before next refresh call is triggered. This will automatically tr
 ### Sample queries
 **User conversations**
 
-https://slack.com/api/users.conversations
+`https://slack.com/api/users.conversations`
 
 **Channels Groups**
 
-https://slack.com/api/channels.list
+`https://slack.com/api/channels.list`
 
 
 ### Preview and data import
-* Click **Preview & Connect** to connect with the configurations set.
-* The Choose Schema(s) dialog opens. The schema represents the key fields of JSON data retrieved from Slack Rest API request. This dialog displays a list of schemas in treeview and its corresponding values in grid for preview. Select required schema(s) from treeview to use in designer and click **Connect**.
+* Click **Preview & Connect** to connect with the configurations that have been set.
+* The Choose Schema(s) dialog opens. The schema represents the key fields of JSON data retrieved from Slack Rest API request. This dialog displays a list of schemas in a treeview and its corresponding values in grid for preview. Select required schema(s) from treeview to use in designer and click **Connect**.
 
    ![Preview](/static/assets/working-with-datasource/data-connectors/images/common/Preview.png)
 
-* Now, the data design view page with selected table schema opens. Drag and drop the table.
+* Now, the data design view page with the selected table schema opens. Drag and drop the table.
    ![Query Editor](/static/assets/working-with-datasource/data-connectors/images/common/QueryEditor.png)
 
 * Click **Save** to save the data source with a relevant name.
 
 ## Connected accounts for OAuth data sources
-If you have already logged into the account and authenticated with web data source, the account information will be listed here. You can select one of the accounts or connect to a new account by clicking the **Connect New Account** button.
+If you have already logged into the account and authenticated with the web data source, the account information will be listed here. You can select one of the accounts or connect to a new account by clicking the **Connect New Account** button.
 
    ![OAuth](/static/assets/working-with-datasource/data-connectors/images/Slack/OAuthDS.png)
 

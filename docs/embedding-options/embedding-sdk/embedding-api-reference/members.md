@@ -738,7 +738,7 @@ dashboard.loadDashboard();
 </h3>
 
     
-The `authorizationServer.headers` parameter, which is optional, is used to transmit any custom data or header values that need to be delivered to your embedding application's `AuthorizationServer`. As a result, you may find this value in the headers of the Authorization Server API. Refer to that Knowledge Base article [here](https://support.boldbi.com/kb/article/12507/how-to-pass-custom-data-to-authorization-server).
+The `authorizationServer.headers` parameter, which is optional, is used to transmit any custom data or header values that need to be delivered to your embedding application's `AuthorizationServer`. As a result, you may find this value in the headers of the Authorization Server API. Please refer to the [Knowledge Base](https://support.boldbi.com/kb/article/12507/how-to-pass-custom-data-to-authorization-server) article.
 
 <br>
 
@@ -774,7 +774,7 @@ dashboard.loadDashboard();
     
 Any application that embeds a Bold BI dashboard and widget needs to authenticate with the Bold BI server. This authentication flow requires sending confidential information such as user email, group details, and embed signature to the Bold BI server. Therefore, you must implement this authentication flow in your server application and provide the URL for connecting to your server in the Bold BI embed instance.
 
-This property holds the URL of the embedding application that will implement authorization. Learn more about the authorization server [here](/security-configuration/authorize-server/).
+This property holds the URL of the embedding application that will implement authorization. Learn more about the [authorization server](/security-configuration/authorize-server/).
 
 <br>
 
@@ -1136,7 +1136,7 @@ The Fontfamily member allows you to customize the font of the Bold BI embedded m
 
 <li>""</li><br>
 
-> **NOTE:** Before customizing the font for embedding, you need to upload the font file to the Bold BI Server. Please refer to this [link](/multi-tenancy/site-administration/look-and-feel-settings/font/) for further information on uploading the font family file. When embedding, use the name you provided for the font when uploading the font file to the server.
+> **NOTE:** Before customizing the font for embedding, you need to upload the font file to the Bold BI Server. Please refer to the [Font](/multi-tenancy/site-administration/look-and-feel-settings/font/) for further information on uploading the font family file. When embedding, use the name you provided for the font when uploading the font file to the server.
 
 **Example** 
 
@@ -1508,7 +1508,7 @@ To obtain the view ID of a specific view from the URL of the corresponding dashb
 
 ![viewID](/static/assets/javascript/images/ViewID.png)
 
-For more details, please refer to that Knowledge Base article [here](https://support.boldbi.com/agent/kb/14233) to obtain the viewName and query string from the REST API.
+For more details, Please refer to the [Knowledge Base](https://support.boldbi.com/agent/kb/14233) article to obtain the viewName and query string from the REST API.
 
 <br>
 
@@ -1545,7 +1545,7 @@ dashboard.loadDashboard();
 
 By passing the value of `viewName` and the query string in the `filterParameters`, you can embed the dashboard with views.
 
-For more details, please refer to the Knowledge Base article [here](https://support.boldbi.com/agent/kb/14233) to retrieve the viewName and query string from the REST API.
+For more details, please refer to the [Knowledge Base](https://support.boldbi.com/agent/kb/14233) article to retrieve the viewName and query string from the REST API.
 
 <br>
 
@@ -2149,7 +2149,7 @@ The values in the widget will be rendered as follows.
 
 ![Default Curreny Culture Grid](/static/assets/javascript/images/default-currency-culture-grid.png)
 
-You can embed the Bold BI dashboards in your web page by following the steps provided in this [link](/getting-started/embedding-in-your-application/).
+You can embed the Bold BI dashboards in your web page by following the steps provided in this guide on [Embedding In Your Application](/getting-started/embedding-in-your-application/).
 
 After embedding the dashboard, you can change the culture settings on the embedded dashboard instance to achieve the desired currency format by passing it through the highlighted API provided.
 

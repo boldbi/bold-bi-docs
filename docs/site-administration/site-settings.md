@@ -10,15 +10,25 @@ documentation: ug
 
 This section explains how to customize the site settings to change the organization name, header logo, favicon, email logo, time zone, and date/time display formats.
 
-## General
-
-![General Settings](/static/assets/images/general-settings.png#width=65%)
-
 ### Organization Name
-The name of the Bold BI site can be changed at any time and will appear in the title bar of the browser and email template content.
+The organization's name will be used in the application for both page titles and email content, especially in the 'regards' section.
 
-### Site URL
-You can view the site URL in the general section of site settings. To edit the site URL, use the site edit option on the UMS site listing page. Please refer [here](/multi-tenancy/manage-sites/#edit-site) for more details.
+![Organization Name](/static/assets/images/organization-name.png)
+
+### Resource Sorting
+The sorting configuration will determine the arrangement of application resources, including dashboards, views, data sources, schedules, and slideshows
+
+![Resource Sorting](/static/assets/images/resource-sorting.png)
+
+### Sorting Type
+The application will automatically arrange the resource based on its modified date by default. However, users have the option to switch the sorting criteria for the resource on the site to either name or modified date.
+
+![SortingType](/static/assets/images/resource-type.png)
+
+### Sorting Order
+The application will automatically arrange the resource in descending order of its modified date by default. However, users have the option to switch the sorting order for the resource on the site to either ascending or descending.
+
+![SortingOrder](/static/assets/images/resource-order.png)
 
 ## Date and Time
 
@@ -46,7 +56,7 @@ This section explains how to configure the language settings for application lan
 ![Site Language](/static/assets/images/site-language.png)
 
 ### Application language
-You can localize the Bold BI application to any culture by changing the language in the `Application language` section. Please click [here](/localization/) to learn how to add a new localization or edit the existing localization in the Bold BI application. This language is used in the application user interface, such as menu items, dialog boxes, toolboxes, and so on.
+You can localize the Bold BI application to any culture by changing the language in the `Application language` section. Please click on the [localization](/localization/) to learn how to add a new localization or edit the existing localization in the Bold BI application. This language is used in the application user interface, such as menu items, dialog boxes, toolboxes, and so on.
 
 ![Application Language](/static/assets/images/site-application-language.png)
 
@@ -94,4 +104,4 @@ You can either change the copyright information with rebranded content, or disab
 
 ![Administration Page](/static/assets/site-administration/images/administration-page.png)
 
-Please follow this [link](/site-administration/custom-domain-in-cloud-bi/) to learn how to set up a custom domain in Cloud BI.
+Please follow the [Custom Domain in Cloud Analytics Server](/site-administration/custom-domain-in-cloud-bi/) to learn how to set up a custom domain in Cloud BI.

@@ -149,7 +149,7 @@ Click `Actions` in the grid context menu and select `Unlock Edit` to unlock the 
 
 The synchronization of published dashboards from the source site can be disabled by enabling the `Lock Resource Synchronization` in the dashboard settings on the target site. 
 
-Learn how to disable synchronization for the published dashboard [here](/site-administration/dashboard-settings/lock-resource-synchronization/).
+Learn how to disable synchronization for the published dashboard in [Lock Resource Synchronization](/site-administration/dashboard-settings/lock-resource-synchronization/).
 
 Once these settings are enabled on the target site, synchronization of the published dashboard from the source site will fail and show the failed status in the grid.
 

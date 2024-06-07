@@ -7,11 +7,11 @@ documentation: ug
 ---
 
 # Connecting Bold BI to Jira data source
-Bold BI dashboard designer supports connecting Jira web services through REST API. 
+The Bold BI dashboard designer supports connecting to Jira web services through the REST API. 
 
 ## Choose Jira data source
 To configure the Jira data source, follow the below steps:
-1. Click the **Data Sources** button in the configuration panel to add a new data connection.
+1. Click on the **Data Sources** button in the configuration panel to add a new data connection.
 
    ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/common/DataSourcesIcon.png)
 
@@ -20,7 +20,7 @@ To configure the Jira data source, follow the below steps:
 
    ![Choose data source](/static/assets/working-with-datasource/data-connectors/images/Jira/ChooseDS.png)
 
-> **NOTE:** You can also create a data source from the home page by clicking the **Data Sources** menu from left menu panel and **Create Data Source** from the data sources page.
+> **NOTE:** You can also create a data source from the home page by clicking the **Data Sources** menu on the left menu panel and selecting **Create Data Source** from the data sources page.
 
    ![Choose data source from server](/static/assets/working-with-datasource/data-connectors/images/Jira/ChooseDS_Server.png)
 
@@ -28,14 +28,14 @@ To configure the Jira data source, follow the below steps:
 In Advanced category, It will Redirect to the Bold ETL. Refer [Bold ETL](/managing-resources/manage-data-sources/#advanced-category).
 
 ## Basic
-In Basic Category, It will act as the connector in Bold BI. And need to follow the below steps.
+In the Basic Category, It will act as the connector in Bold BI. And need to follow the below steps.
 
 ## Create Jira data source
-Once you click the data source, the NEW DATA SOURCE configuration panel opens. Follow the below steps to create Jira data source.
+Once you click the data source, the NEW DATA SOURCE configuration panel will open. Follow the steps below to create a Jira data source.
 1. Enter a name and description (optional) for the data source.
-2. Enter a valid Jira REST API in the URL textbox. Refer the [Jira API documentation](https://developer.atlassian.com/cloud/jira/software/rest/intro/) for more details.
+2. Enter a valid Jira REST API endpoint in the URL textbox. Refer to the [Jira API documentation](https://developer.atlassian.com/cloud/jira/software/rest/intro/) for more details.
 3. Choose one of the **Request Body** type to make a request, either [**JQL**](/working-with-data-sources/data-connectors/jira/#jql) or [**Raw Query**](/working-with-data-sources/data-connectors/jira/#raw-query).
-4. Choose a time interval for **Refresh Settings** using the combo box, to trigger the Rest API request periodically to keep the data in sync with our dashboard.  
+4. Choose a time interval for the **Refresh Settings** using the combo box, to periodically trigger the REST API request and keep the data in sync with our dashboard.  
 5. Select **JSON** data type in **Data Format** combo box.
 6. Choose **Basic http Authentication** under **Authentication Type** and input a valid **Username** and **API Token**.
 
@@ -50,11 +50,11 @@ You can also edit the connection information set here using the [Edit Connection
 
    Example: <span style="color:#FF4801"> https://&lt;:your_domain&gt;.atlassian.net</span>
 
-2. Enter a valid JQL Query in **JQL** field.
+2. Enter a valid JQL Query in the **JQL** field.
 
    Example: `project = weather`
 
-3. If you need to add custom fields in JQL filtering, then enable **Include Custom Fields** and provide the custom fields in enabled text box.
+3. If you need to add custom fields in JQL filtering, then enable **Include Custom Fields** and provide the custom fields in the enabled text box.
 4. In **Max Rows**, enter the maximum number of rows to be fetched from the Jira data source. This value is used to fetch the data from Jira data source via pagination.
 
 #### How to get the Custom field ID value from Jira?
@@ -76,7 +76,7 @@ You can also edit the connection information set here using the [Edit Connection
 
 > **NOTE:** 
 > * The Custom field IDs must be separated by using a **comma**.
-> * If you have a Jira Admin account, you can also view the Custom fields ID by the ways mentioned in this [link](https://confluence.atlassian.com/jirakb/how-to-find-id-for-custom-field-s-744522503.html). 
+> * If you have a Jira Admin account, you can also view the Custom fields ID by the ways mentioned in this [knowledge base](https://confluence.atlassian.com/jirakb/how-to-find-id-for-custom-field-s-744522503.html).
 
 #### How To retrieve any field in Jira
 
@@ -113,7 +113,7 @@ Example: To fetch the value of the **project -> name** field, add `project` to t
 2. Select **GET** method for the REST API in **Method** combo box.
 
 #### How do I get API Token for connecting Jira data source?
-1. Log in to [Generate API Token](https://id.atlassian.com/manage/api-tokens).
+1. Log in to [Generate an API Token](https://id.atlassian.com/manage/api-tokens).
 2. Click Create API token.
 3. From the dialog that appears, enter a memorable and concise Label for your token and click **Create**.
 4. Click Copy to clipboard, then paste the token to your script, or elsewhere to save.
@@ -125,8 +125,7 @@ Example: To fetch the value of the **project -> name** field, add `project` to t
 Max Rows
 </td>
 <td>
-Most of the REST APIs return only fewer data on a single API request. To pull the amount of data you need, set a value in this field.  
-Pagination is handled internally and will fetch the amount of data you need.
+Most REST APIs return only a limited amount of data on a single API request. To retrieve the necessary amount of data, you can set a value in this field. Pagination is handled internally and will fetch the required data.
 </td>
 </tr>
 <tr>
@@ -134,7 +133,7 @@ Pagination is handled internally and will fetch the amount of data you need.
 Refresh Settings
 </td>
 <td>
-Period of time before next refresh call is triggered. This will automatically trigger a call for the API configured in the data source to keep the data up to date. If you do not want to sync your new data, choose ‘Never’.
+The period of time before the next refresh call is triggered. This will automatically trigger a call for the API configured in the data source to keep the data up to date. If you do not want to sync your new data, choose 'Never'.
 </td>
 </tr>
 </table>
@@ -142,7 +141,7 @@ Period of time before next refresh call is triggered. This will automatically tr
 ### Setting up the URL
 
 1. Replace **&lt;:your_domain&gt;** with your domain name in the URL.
-2. For instance, to get the tasks/issues under specific project, replace your JQL Query in the textarea.
+2. For example, to retrieve the tasks or issues under a specific project, replace your JQL Query in the text area.
 
       Sample Domain URL: `https://abcde.atlassian.net`
 
@@ -169,12 +168,12 @@ project = "weather" AND resolution changed to "Done" by currentUser() during (st
 project = weather AND fixVersion = latestReleasedVersion(weather)
 
 ### Preview and data import
-* Click **Preview & Connect** to connect with the configurations set.
-* The Choose Schema(s) dialog opens. The schema represents the key fields of data retrieved from Jira Rest API request. This dialog displays a list of schemas in treeview and its corresponding values in grid for preview. Select required schema(s) from treeview to use in designer and click **Connect**.
+* Click **Preview & Connect** to connect with the configurations that have been set.
+* The Choose Schema(s) dialog opens. The schema represents the key fields of data retrieved from Jira Rest API request. This dialog displays a list of schemas in a treeview and its corresponding values in grid for preview. Select required schema(s) from treeview to use in designer and click **Connect**.
 
    ![Preview](/static/assets/working-with-datasource/data-connectors/images/common/Preview.png)
 
-* Now, the data design view page with selected table schema opens. Drag and drop the table.
+* Now, the data design view page with the selected table schema opens. Drag and drop the table.
    ![Query Editor](/static/assets/working-with-datasource/data-connectors/images/common/QueryEditor.png)
 
 * Click **Save** to save the data source with a relevant name.
@@ -191,7 +190,7 @@ We have added support for **custom attributes and dashboard parameters** to the 
 
 ![Dashboard Parameter](/static/assets/working-with-datasource/data-connectors/images/Jira/Dashboardparameter.png)
 
->**Note:** Refer the [Dashboard Parameter Documentation](https://help.boldbi.com/working-with-data-sources/dashboard-parameter/) and [Custom Attributes Documentation](https://help.boldbi.com/working-with-data-sources/configuring-custom-attribute/) for more details.
+>**Note:** Refer to the [Dashboard Parameter Documentation](https://help.boldbi.com/working-with-data-sources/dashboard-parameter/) and [Custom Attributes Documentation](https://help.boldbi.com/working-with-data-sources/configuring-custom-attribute/) for more details.
 
 ## Related links
 <a href="https://www.boldbi.com/blog/jira-dashboard-example-with-bold-bi" target="_blank">Blog Post</a>

@@ -392,7 +392,8 @@ Please enter the data source connection string in JSON format in the Custom Attr
           "SslMode": "",
           "TrustServerCertificate": "",
           "AdvancedSettings": "",
-          "CommandTimeout": ""     
+          "CommandTimeout": "",
+          "Schema":""    
       } 
    </td>
    </tr>
@@ -581,5 +582,5 @@ Please enter the data source connection string in JSON format in the Custom Attr
 
 ![Custom Attribute Configuration with Dynamic Connection String](/static/assets/iFrame-based/images/custom-attribute-configuration-with-dynamic-connection-string.png)
 
-Please refer to the help document below for instructions on configuring Custom Attribute. Click [here](/working-with-data-sources/configuring-custom-attribute/) for more information.
+Please refer to the help document below for instructions on configuring Custom Attribute. Click on the [custom attribute](/working-with-data-sources/configuring-custom-attribute/) for more information.
  

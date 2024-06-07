@@ -54,4 +54,4 @@ To make the dashboards accessible to anonymous users, follow the steps below:
 
 3. Click `Make Public` in the confirmation dialog box to mark the dashboard as public.
  
-> **NOTE:**  Click [here](/working-with-dashboards/share-dashboards/public-dashboards/) for more details about public dashboards.
+> **NOTE:** Click [Public Dashboards](/working-with-dashboards/share-dashboards/public-dashboards/) for more details about public dashboards.

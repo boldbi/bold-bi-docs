@@ -13,7 +13,7 @@ documentation: ug
 
 ## Connection Properties
 
-In a YAML file, the `config` section contains the following properties:
+The `config` section in a YAML file includes the following properties:
 
 - ``connectorname``: MongoDB
 - ``connection_url``: MongoDB can be configured in multiple ways. Typically, the connection URL format is:

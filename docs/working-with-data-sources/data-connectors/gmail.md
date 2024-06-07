@@ -9,13 +9,13 @@ documentation: ug
    
 # Connecting Bold BI to Gmail data source
 
-  `What is Gmail` Gmail offers free cloud storage for storing emails in the web. Gmail makes emailing, chatting, drafting and archiving your mails and conversations easy and convenient. It's necessary to create a Gmail account.
+  `What is Gmail?` Gmail offers free cloud storage for storing emails on the web. Gmail makes emailing, chatting, drafting, and archiving your mails and conversations easy and convenient. It is necessary to create a Gmail account.
 
-> **Note:** Gmail data source is available in On-Premises Deployment but not in Syncfusion Managed Cloud Server.
+> **Note:** Gmail data source is available in On-Premises Deployment but not in the Syncfusion Managed Cloud Server.
 
 ## Connecting to a Gmail 
 
-   You can connect to web services of popular site like `Gmail` connection type. To enable this connection, follow the given steps.
+   You can connect to web services of popular sites like `Gmail` using the connection type. To enable this connection, follow the given steps.
 
    Click the `Data Source` button in the configuration panel to add a new data connection.
    
@@ -35,7 +35,7 @@ documentation: ug
    
    The login window opens to authorize the user.
    
-   Enter an appropriate username and password. The authorization window opens.
+   Please enter an appropriate username and password. The authorization window will then open.
 
    ![Sign in](/static/assets/working-with-datasource/data-connectors/images/gmail/gmail.png)
 
@@ -43,23 +43,23 @@ documentation: ug
 
    ![Allow access](/static/assets/working-with-datasource/data-connectors/images/gmail/allowbuttongmail.png)
 
-   To get data through datasource window, follow the given steps:
+   To retrieve data through the datasource window, follow these steps:
 
    * Enter an API in URL text box which must be the valid REST API.
 
 > **IMPORTANT:** Refer to the [Gmail API Documentation](https://developers.google.com/gmail/api/) to build a query for discovering more data requests. Test the query before entering it in the URL text box. Use [Google APIs Explorer](https://developers.google.com/apis-explorer/#p/gmail/v1//), to build the query.
 
-   * Choose appropriate method for the API. Refer API documentation link given below URL text box to get appropriate API.
+   * Choose the appropriate method for the API by referring to the API documentation link provided in the URL text box.
 
    * Add Header information, if necessary.
 
-   * Choose appropriate refresh settings for API.
+   * Select the appropriate refresh settings for the API.
 
-   * Choose appropriate data format.
+   * Choose the suitable data format.
 
-   * Authentication type will be set as `Gmail` automatically, if the login gets success.
+   * The authentication type will automatically be set as `Gmail` if the login is successful.
 
-   Click connect to get data.
+   Click connect to retrieve the data.
    
    ![API](/static/assets/working-with-datasource/data-connectors/images/gmail/gmailweb.png)
 
@@ -67,22 +67,22 @@ documentation: ug
    
    ![Choose Schema](/static/assets/working-with-datasource/data-connectors/images/gmail/schemawindow.png)
 
-   Now, you can get into the data design view window with selected table schema.
+   Now, you can access the data design view window with the selected table schema.
 
    ![Table](/static/assets/working-with-datasource/data-connectors/images/gmail/dataview.png)
 
-   Drag and drop the table and click `Save` button to save the data source with valid name.
+   Drag and drop the table, then click the `Save` button to save the data source with a valid name.
 
    ![Save button](/static/assets/working-with-datasource/data-connectors/images/gmail/save.png)
 
 ## How to Obtain the Google Client ID and Client Secret
 
-> **Note:** Google OAuth credentials are required for the On-Premises Deployment but not needed in Syncfusion Managed Cloud Server.
+> **Note:** Google OAuth credentials are required for the On-Premises Deployment, but they are not needed in the Syncfusion Managed Cloud Server.
 
 
 1. Go to the Google API Console at [Google API Console](https://console.developers.google.com/).
 
-2. Select the existing project or create a new project by clicking on the **Select Project** dropdown at the top of the page and give your project a name. Then click on **Create**.
+2. You can either select an existing project or create a new project by clicking on the **Select Project** dropdown at the top of the page and giving your project a name. After that, click on **Create**.
 
       ![New Project](/static/assets/working-with-datasource/data-connectors/images/googleapps/Newproject.png)
 
@@ -98,7 +98,7 @@ documentation: ug
 
       ![Oauth Concert screen](/static/assets/working-with-datasource/data-connectors/images/googleapps/peopleapi.png)
 
->**NOTE**:  Need to enable the required APIs to connect the connector in the Bold BI.
+>**NOTE**:  You need to enable the required APIs in order to connect the connector in Bold BI.
    
    <table>
          <tr>
@@ -248,7 +248,7 @@ documentation: ug
 
 9. Choose the **Web application** application type, and enter a name for your OAuth 2.0 app.
 
-10. Add the Redirect URL as mentioned here by clicking **Add URI**.
+10. Add the Redirect URL mentioned here by clicking **Add URI**.
 
       ![Redirect uri](/static/assets/working-with-datasource/data-connectors/images/googleapps/Redirecturi.png)
 

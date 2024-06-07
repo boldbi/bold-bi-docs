@@ -1546,7 +1546,7 @@
           },
           "Data": {
             "type": "array",
-            "description": "Response data from the API..",
+            "description": "Response data from the API.",
             "items": {
             "$ref": "#/components/schemas/UserDeleteResponse"
             }
@@ -1783,7 +1783,7 @@
           },
           "Data": {
             "type": "array",
-            "description": "Response data from the API..",
+            "description": "Response data from the API.",
             "items": {
 			"$ref": "#/components/schemas/GrantResponseData",
             }
@@ -1976,7 +1976,7 @@
           },
           "Data": {
             "type": "array",
-            "description": "Response data from the API..",
+            "description": "Response data from the API.",
             "items": {
             "$ref": "#/components/schemas/UserResponse"
             }
@@ -2005,7 +2005,7 @@
           },
           "Data": {
             "type": "array",
-            "description": "Response data from the API..",
+            "description": "Response data from the API.",
             "items": {
             "$ref": "#/components/schemas/UpdateUserResponse"
             }

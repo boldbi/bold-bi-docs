@@ -8,15 +8,15 @@ documentation: ug
 ---
  
 # Connecting Bold BI to Elastic Search data source
-The **Bold BI Cloud** Dashboard designer supports connecting the Elastic Search database using the SQL Live Query. 
+The **Bold BI Cloud** Dashboard designer supports connecting to the Elastic Search database using the SQL Live Query. 
 
 **Supported Server Versions**:
 *  Elasticsearch `6.8` and above 
 *  Amazon Elastic Search `7.10` and above
 
 ## Choose an Elastic Search data source
-To configure the Elastic Search data source, follow these steps:  
-1. Click the `Data Sources` icon in the configuration panel to add a new data connection.
+To choose an Elastic Search data source, follow these steps: 
+1. Click on the `Data Sources` icon in the configuration panel to add a new data connection.
 
 ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/Elastic-search/Datasourceicon.png#width=359.5px;height=512.2px)
 
@@ -33,18 +33,18 @@ To configure the Elastic Search data source, follow these steps:
 ![Select data source](/static/assets/working-with-datasource/data-connectors/images/Elastic-search/Selectdatasource.png#max-width=85%)
 
 ## Advanced
-In Advanced category, It will Redirect to the Bold ETL. Refer [Bold ETL](/managing-resources/manage-data-sources/#advanced-category).
+In the Advanced category, It will Redirect to the Bold ETL. Refer to [Bold ETL](/managing-resources/manage-data-sources/#advanced-category).
 
 ## Basic
-In Basic Category, It will act as the connector in Bold BI. And need to follow the below steps.
+In the Basic Category, It will act as the connector in Bold BI. And need to follow the below steps.
 
 ## Connect to Elastic Search
 An Elastic Search data source can be accessed in Bold BI using the live connection mode.
 
 ### Create an Elastic Search data source
-After clicking a data source, the `NEW DATA SOURCE` configuration panel opens. Follow the given steps to create an Elastic Search data source: <br/>
+After selecting a data source, the `NEW DATA SOURCE` configuration panel will open. Follow the steps below to create an Elastic Search data source: <br/>
 1.	Enter a name and description (optional) for the data source. 
-2.	Select a connection type you want to use with Elastic Search from the `Connection Type` drop-down box. 
+2.	Select a connection type for Elastic Search from the `Connection Type` drop-down box 
 
 There are two connection types available in the Elastic Search connector:
    *  Elasticsearch SQL
@@ -66,9 +66,10 @@ There are two connection types available in a data source
 
 ![Choose Authentication](/static/assets/working-with-datasource/data-connectors/images/Elastic-search/Authenticationtype.png#width=358.5px;height=511.06px)
 
-4.	If the Elastic Search server uses the `Basic HTTP Authentication` in the Authentication type, then, enter a valid Elastic Search username in the `Username` text box and enter a valid Elastic Search `password` in the Password text box.
+4.	If the Elastic Search server uses `Basic HTTP Authentication` in the Authentication type, then enter a valid Elastic Search username in the `Username` text box and enter a valid Elastic Search `password` in the Password text box.
+
 5.	Choose the `Live` mode option for this connection.
-6.	Select a `database` that you want to query in the listed database associated with the given Elastic Search server in the database drop-down box.
+6.	Select the `database` you want to query from the listed databases associated with the given Elastic Search server in the database drop-down box.
 7.	Click `Connect` to connect the Elastic Search server with the configured details.
 
 ![Data source connection](/static/assets/working-with-datasource/data-connectors/images/Elastic-search/elasticsearchlive.png#max-width=100%)
@@ -87,7 +88,7 @@ There are two connection types available in a data source
 
 ![Choose Authentication](/static/assets/working-with-datasource/data-connectors/images/Elastic-search/Authenticationtype.png#width=358.5px;height=511.06px)
 
-4.	If the Elastic Search server uses the `Basic HTTP Authentication` in the Authentication type, then enter a valid Elastic Search username in the `Username` text box and enter a valid Elastic Search `password` in the Password text box.
+4.	If the Elastic Search server uses `Basic HTTP Authentication` in the Authentication type, then enter a valid Elastic Search username in the `Username` text box and enter a valid Elastic Search `password` in the Password text box.
 5.	Choose the `Extract` mode option for this connection.
 6.	Select a `database` that you want to query in the listed database associated with the given Elastic Search server in the database drop-down box.
 7.	Click `Connect` to connect the Elastic Search server with the configured details.
@@ -97,7 +98,7 @@ There are two connection types available in a data source
 ### Connect using Open Distro connection type
 
 ### Prerequisites
-To connect Amazon Elasticsearch service through Open Distro, make sure you have enabled settings:
+To connect to the Amazon Elasticsearch service through Open Distro, ensure that you have enabled the necessary settings.
 
 PUT _opendistro/_sql/settings <br />
 “persistent”:{ <br />
@@ -121,7 +122,7 @@ Please follow these steps to connect using the Open Distro connection type.
 
 ### Data Transformation
 
-1.	After connecting the data source, the data design view page will be opened. On this page, the list of schemas and tables from the Elastic Search server will be shown in a `treeview` section.
+1.	After connecting to the data source, the data design view page will open. On this page, a list of schemas and tables from the Elastic Search server will be displayed in a `treeview` section.
 
 ![Tree view](/static/assets/working-with-datasource/data-connectors/images/Elastic-search/Treeview.png#max-width=100%)
 
@@ -129,7 +130,7 @@ Please follow these steps to connect using the Open Distro connection type.
 
 ![Drag and drop table](/static/assets/working-with-datasource/data-connectors/images/Elastic-search/Draganddroptable.png#max-width=100%)
 
-3.	After dragging and dropping the required table, you can do data modeling such as [Joining Tables](/working-with-data-sources/data-modeling/), [Formatting Columns](/working-with-data-sources/data-modeling/), [Configure Data Filters](/working-with-data-sources/data-modeling/), and [Configure Expression Columns](/working-with-data-sources/data-modeling/) can be done.
+3.	After dragging and dropping the required table, you can perform data modeling tasks such as [Joining Tables](/working-with-data-sources/data-modeling/), [Formatting Columns](/working-with-data-sources/data-modeling/), [Configure Data Filters](/working-with-data-sources/data-modeling/), and [Configure Expression Columns](/working-with-data-sources/data-modeling/) can be done.
 
 ### Data Preview
 1.	To view the data from the selected table, select the `Update` button.
@@ -144,17 +145,17 @@ Please follow these steps to connect using the Open Distro connection type.
 
 ![Save data source](/static/assets/working-with-datasource/data-connectors/images/Elastic-search/Savedatasource.png#max-width=100%)	
 
-> **NOTE:**  In the future, you can edit the connection information using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option and  <br /> Elastic Search datasource have the following Limitations:  <br />
-•	Joins are not supported and thrown error message.  <br />
+> **NOTE:**  In the future, you can edit the connection information using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option and  <br /> Elastic Search datasource has the following Limitations:  <br />
+•	Joins are not supported and will result in an error message.  <br />
 •	Code view switching is restricted as applying grouping for sub queries is unsupported.  <br />
 •	Virtual scrolling is restricted for now as we did not have SQL function for the operation.  <br />
-•	Top N option in initial filters are unsupported as join command is not supported.  <br />
-•	Expressions which use today() and now functions are unsupported in widgets.  <br />
+•	The Top N option in initial filters is unsupported, as the join command is not supported.  <br />
+•	Expressions that use the today() and now() functions are unsupported in widgets.  <br />
 •	The data sampling feature is restricted, as applying a limit in a subquery is not supported. <br />
 
 ### Connect using custom attribute and dashboard parameter
 
-We have added support for **custom attributes and dashboard parameters** to the data source connection. You can connect to the data source using custom attributes or dashboard parameters.
+We have added support for **custom attributes and dashboard parameters** in the data source connection. You can now connect to the data source using custom attributes or dashboard parameters.
 
 **Custom Attribute**
 
@@ -164,13 +165,13 @@ We have added support for **custom attributes and dashboard parameters** to the 
 
 ![Dashboard Parameter](/static/assets/working-with-datasource/data-connectors/images/Elastic-search/Dashboardparameter.png)
 
->**Note:** Refer the [Dashboard Parameter Documentation](https://help.boldbi.com/working-with-data-sources/dashboard-parameter/) and [Custom Attributes Documentation](https://help.boldbi.com/working-with-data-sources/configuring-custom-attribute/) for more details.
+>**Note:** Refer to the [Dashboard Parameter Documentation](https://help.boldbi.com/working-with-data-sources/dashboard-parameter/) and [Custom Attributes Documentation](https://help.boldbi.com/working-with-data-sources/configuring-custom-attribute/) for more details.
 
 ## Connecting Bold BI to Elastic Search Data Source via REST API
 
 ### Connect using Open Distro Connection Type
 
-The detailed steps to connect using an open distro connection type is explained in the following document.
+The detailed steps for connecting using an open distro connection type are explained in the following document.
 [AWS Open Search](/working-with-data-sources/data-connectors/aws-opensearch/#connecting-bold-bi-to-aws-open-search-data-source-via-rest-api) 
 
 
@@ -181,13 +182,13 @@ The detailed steps to connect using an open distro connection type is explained 
 **Supported Server Versions**:
 *  Elasticsearch `6.8` and above 
 
-Type while creating the data source needs to be elasticsearch.
+The type of data source that needs to be used is Elasticsearch.
 
 [Rest API - v4.0](/server-api-reference/v4.0/api-reference/)
 
 ### Modes
 
-Through the REST API, only the **live mode** data source can be created and edited.
+Only the **live mode** data source can be created and edited through the REST API.
 
 ### Parameters for creating Data Source
 
@@ -416,7 +417,7 @@ Through the REST API, only the **live mode** data source can be created and edit
 
 ### Parameters for editing Data Source
 
-> **NOTE:**  For editing Data Source via API. All the parameters are optional. The parameter which needs to be changed can be provided.
+> **NOTE:**  To edit a Data Source via API, all parameters are optional. Only the parameter that needs to be changed should be provided.
 
 #### Parameters for modifying expressions when editing Data Source
    

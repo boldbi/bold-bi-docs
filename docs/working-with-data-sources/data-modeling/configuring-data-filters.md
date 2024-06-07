@@ -19,7 +19,7 @@ documentation: ug
 
    ![Data filters](/static/assets/working-with-datasource/images/datafilters.png)
 
-   Add a filter condition by clicking the `Add` button in the `Query Filters` window.
+   Add a filter condition by clicking the `Add` button in the `Data Filters` window.
 
    ![Filters wizard](/static/assets/working-with-datasource/images/filterswizard.png)
 

@@ -10,7 +10,7 @@ documentation: ug
 
 Enabling Content Security Policy (CSP) will not affect dashboard rendering unless the resources loaded inside the dashboards are requested from unknown domains and URLs are not excluded from CSP settings. If you want to load resources for your dashboard from an external URL, then you need to add that URL in the respective sources section in the CSP settings.
 
-Click [here](/security-configuration/content-security-policy/) to learn how to configure CSP in the Bold BI.
+Click on the [Content Security Policy Settings](/security-configuration/content-security-policy/) to learn how to configure CSP in the Bold BI.
 
 > **NOTE:** Enabling Content Security Policy support is not available in On-Premises Deployment, but it is available in Syncfusion Managed Cloud Server.
 

@@ -49,7 +49,7 @@ The samples have been created in other platforms to embed the Bold BI Dashboard.
     </table>
 
 
- 3. You can get your Embed Secret key from the administrator setting section. Please refer to this [link](/site-administration/embed-settings/) for more details.
+ 3. You can get your Embed Secret key from the administrator setting section. Please refer to the [Embed Settings](/site-administration/embed-settings/) for further information.
 
  4. Run your ColdFusion application.
 
@@ -102,7 +102,7 @@ The samples have been created in other platforms to embed the Bold BI Dashboard.
     </table>
 
 
- 3. You can get your Embed Secret key from the administrator setting section. Please refer to this [link](/site-administration/embed-settings/) for more details.    
+ 3. You can get your Embed Secret key from the administrator setting section. Please refer to the [Embed Settings](/site-administration/embed-settings/) for further information.   
 
  4. Run your Java Servlet project.
 
@@ -149,7 +149,7 @@ The samples have been created in other platforms to embed the Bold BI Dashboard.
     </tbody>
     </table>
 
- 3. You can get your Embed Secret key from the administrator setting section. Please refer to this [link](/site-administration/embed-settings/)for more details.
+ 3. You can get your Embed Secret key from the administrator setting section. Please refer to the [Embed Settings](/site-administration/embed-settings/) for further information.
 
  4. Run your Django application.
 
@@ -157,7 +157,7 @@ The samples have been created in other platforms to embed the Bold BI Dashboard.
 
  1. Based on the provided embed details with the dashboard, authorize the server URL by calling the get embed details function `(views.py/get_embed_details)` call with the provided `EmbedProperties` values
  
-    Learn more about authorize server [here](/security-configuration/authorize-server/)
+    Learn more about the [authorization server](/security-configuration/authorize-server/).
     
     ![Authorize Server URL](/static/assets/javascript/sample/images/django-api.png)
     ![Get Embed Details](/static/assets/javascript/sample/images/django-authorize.png)
@@ -213,7 +213,7 @@ The samples have been created in other platforms to embed the Bold BI Dashboard.
     </tbody>
     </table>
 
- 3. You can get your Embed Secret key from the administrator setting section. Please refer to this [link](/site-administration/embed-settings/) for more details.
+ 3. You can get your Embed Secret key from the administrator setting section. Please refer to the [Embed Settings](/site-administration/embed-settings/) for further information.
 
  4. Run your Ionic application.
 

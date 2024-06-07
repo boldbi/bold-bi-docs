@@ -19,7 +19,7 @@ Bold BI Enterprise Edition can be hosted in both IIS Express and IIS. To run Bol
 
 3. Expand the `.NET Framework 4.5 Advanced Services` and enable the ASP.NET 4.5 feature.
 
-   > **NOTE:** You should use Microsoft .NET Framework 4.5 or higher version. Learn more [here](/deploying-bold-bi/deploying-in-windows/prerequisites-windows/).  
+   > **NOTE:** You should use Microsoft .NET Framework 4.5 or higher version. Learn more [here](/deploying-bold-bi/deploying-on-windows/prerequisites-windows/).  
 
    ![Roles and Features](/static/assets/faq/images/ms-framework.png)
 

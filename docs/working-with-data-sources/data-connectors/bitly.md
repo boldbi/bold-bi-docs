@@ -28,11 +28,11 @@ To configure the Bitly data source, follow the below steps:
 Use the following steps to authenticate with Bitly web service:
 
 1. Click the data source, and a login window will appear. Enter your Bitly account credentials to authorize.
-2. Click **Allow** in the authorization window to accept the scopes requested by Bold BI dashboards.
+2. Click on **Allow** in the authorization window to accept the scopes requested by Bold BI dashboards.
 
    > **NOTE:**  If permission is denied, the account will not be accessible from the dashboard.
    
-3. Set a name to identify the account and click **Next**. 
+3. Provide a name to identify the account and click **Next**. 
 4. You have now successfully authorized your connection. Click **Connect** to continue with the data source connection.
 5. To connect using an existing connected account, refer to [Connected Accounts](/working-with-data-sources/data-connectors/bitly/#connected-accounts-for-oauth-data-sources).
 
@@ -62,8 +62,7 @@ You can also edit the connection information set here using the [Edit Connection
 Max Rows
 </td>
 <td>
-Most of the REST APIs return only fewer data on a single API request. To pull the amount of data you need, set a value in this field.  
-Pagination is handled internally and will fetch the amount of data you need.
+Most REST APIs return only a limited amount of data on a single API request. To retrieve the necessary amount of data, you can set a value in this field. Pagination is handled internally and will fetch the required data.
 </td>
 </tr>
 <tr>
@@ -71,7 +70,7 @@ Pagination is handled internally and will fetch the amount of data you need.
 Refresh Settings
 </td>
 <td>
-Period of time before next refresh call is triggered. This will automatically trigger a call for the API configured in the data source to keep the data up to date. If you do not want to sync your new data, choose ‘Never’.
+The period of time before the next refresh call is triggered. This will automatically trigger a call to the API configured in the data source to keep the data up to date. If you do not want to sync your new data, choose ‘Never’.
 </td>
 </tr>
 </table>
@@ -90,14 +89,14 @@ For more information on the API endpoints available for this data source, refer 
 ### Sample queries
 **Bitlinks**
 
-[https://api-ssl.bitly.com/v4/groups/Bi9c3AFP5Fx/bitlinks](https://api-ssl.bitly.com/v4/groups/Bi9c3AFP5Fx/bitlinks)
+`https://api-ssl.bitly.com/v4/groups/Bi9c3AFP5Fx/bitlinks`
 
 **Organizations**
 
-[https://api-ssl.bitly.com/v4/organizations/Oi9c3A8HnWZ/shorten_counts](https://api-ssl.bitly.com/v4/organizations/Oi9c3A8HnWZ/shorten_counts)
+`https://api-ssl.bitly.com/v4/organizations/Oi9c3A8HnWZ/shorten_counts`
 
 ### Preview and data import
-* Click **Preview & Connect** to connect with the configurations set.
+* Click **Preview & Connect** to connect with the configurations that have been set.
 * The Choose Schema(s) dialog will open. The schema represents the key fields of JSON data retrieved from the Bitly Rest API request. This dialog displays a list of schemas in a tree view and its corresponding values in a grid for preview. Select the required schema(s) from the tree view to use in the designer and click **Connect**.
 
    ![Preview](/static/assets/working-with-datasource/data-connectors/images/common/Preview.png)

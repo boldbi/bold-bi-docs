@@ -8,13 +8,13 @@ documentation: ug
 ---
 
 # Connecting Bold BI to Fitbit data source
-Bold BI dashboard designer supports connecting the Fitbit web services through REST API.
-> **NOTE:** Fitbit OAuth credentials are required for the On-Premises Deployment but not needed in Syncfusion Managed Cloud Server.
+The Bold BI dashboard designer supports connecting to the Fitbit web services through the REST API.
+> **NOTE:** Fitbit OAuth credentials are required for On-Premises Deployment, but they are not needed in the Syncfusion Managed Cloud Server.
 ## Choose Fitbit data source
 
 To configure the Fitbit data source, follow these steps:
 
-1. Click the **Data Sources** button in the configuration panel to add a new data connection.
+1. Click on the **Data Sources** button in the configuration panel to add a new data connection.
 
    ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/common/DataSourcesIcon.png)
 
@@ -23,7 +23,7 @@ To configure the Fitbit data source, follow these steps:
 
    ![Choose data source](/static/assets/working-with-datasource/data-connectors/images/Fitbit/ChooseDS.png)
 
-> **NOTE:** You can also create a data source from the home page by clicking the **Data Sources** menu from the left menu panel and **Create Data Source** from the data sources page.
+> **NOTE:** You can also create a data source from the home page by clicking the **Data Sources** menu on the left menu panel and selecting **Create Data Source** from the data sources page.
 
    ![Choose data source from server](/static/assets/working-with-datasource/data-connectors/images/Fitbit/ChooseDS_Server.png)
 
@@ -33,7 +33,7 @@ To configure the Fitbit data source, follow these steps:
 2. Click on the **Manage** section and select **Register an App** category.
 
     ![userIcon](/static/assets/working-with-datasource/data-connectors/images/Fitbit/Manage.png)
-3. Fill in the application details, providing the necessary information about your application, including the **name**, **description**, **website**, and **organization**.
+3. Fill in the application details by providing the necessary information about your application, including the **name**, **description**, **website**, and **organization**.
 4. Enter a valid redirect URL for your application in the **Redirect URL** field. The Bold BI redirect URL should be added in the proper format required. Please refer to this URL structure, `https://<yourdomain>/bi/designer/v1.0/oauth/agent`. 
 5. Configure **Read Only** access and Click the **Register** button.
 
@@ -44,7 +44,7 @@ To configure the Fitbit data source, follow these steps:
 > **NOTE:** Save the Client ID and Client secret in Bold BI by following the [OAuth Configuration](/site-administration/data-connector-settings/oauth-configuration/).
 
 ## Create Fitbit data source
-After successful authentication, the NEW DATA SOURCE configuration panel opens. Follow these steps to create Fitbit data source.
+After successful authentication, the NEW DATA SOURCE configuration panel will open. Follow these steps to create Fitbit data source.
 1. Enter a name and description (optional) for the data source.
 2. Click the **API Endpoints** drop-down box and choose the required endpoint.
 3. If you want to enter the endpoint manually, click **Custom Url** and then enter the URL manually. Refer to the [Fitbit API documentation](https://dev.fitbit.com/build/reference/web-api/explore/) for more details.
@@ -70,9 +70,8 @@ Period of time before the next refresh call is triggered. This will automaticall
 
 ### Setting up the URL
 
-1. For instance, to get the specific activity details, query the <i>All Activities</i> endpoint.
-2. From the listed information, get the id of the specific activity.
-
+1. For example, to obtain the specific activity details, query the *All Activities* endpoint.
+2. From the information provided, retrieve the id of the specific activity.
 Replace it in the URL to query particular activity:
 
 `https://api.fitbit.com/1/activities/<:activity-id>.json`
@@ -95,7 +94,7 @@ Replace it in the URL to query particular activity:
 `https://api.fitbit.com/1/foods/locales.json`
 
 ### Preview and data import
-* Click **Preview & Connect** to connect with the configurations set.
+* Click **Preview & Connect** to connect with the configurations that have been set.
 * The Choose Schema(s) dialog opens. The schema represents the key fields of JSON data retrieved from the Fitbit Rest API request. This dialog displays a list of schemas in a treeview and its corresponding values in a grid for a preview. Select required schema(s) from a treeview to use in the designer and then click **Connect**.
 
    ![Preview](/static/assets/working-with-datasource/data-connectors/images/common/Preview.png)

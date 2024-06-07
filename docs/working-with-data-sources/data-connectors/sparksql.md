@@ -9,7 +9,7 @@ documentation: ug
 # Connecting Bold BI to SparkSQL data source
 The Bold BI Dashboard designer connects the SparkSQL database using the SQL Live Query.
 
-> **Note:** SparkSQL data source is available in On-Premises Deployment but not in Syncfusion Managed Cloud Server.
+> **Note:** SparkSQL data source is available in On-Premises Deployment, but not in the Syncfusion Managed Cloud Server.
 
 ## Choose the SparkSQL data source
 To configure the SparkSQL data source, follow these steps: 
@@ -25,23 +25,23 @@ To configure the SparkSQL data source, follow these steps:
 
    ![Choose data source](/static/assets/working-with-datasource/data-connectors/images/Sparksql/sparksqlbutton.png#max-width=60%)
 
-> **NOTE:**  You can also create a data source from the home page by clicking the **Data Sources** menu from the left menu panel and **Create Data Source** from the data sources page.
+> **NOTE:**  You can also create a data source from the home page by clicking the **Data Sources** menu on the left menu panel and selecting **Create Data Source** from the data sources page.
 
    ![Choose data source from homepage](/static/assets/working-with-datasource/data-connectors/images/Sparksql/selectconnector.png#max-width=100%)
 
 ## Connect to SparkSQL
 ### Create SparkSQL data source
-After clicking the data source, the NEW DATA SOURCE configuration panel opens. Follow the given steps to create a SparkSQL data source: 
+After clicking on the data source, the NEW DATA SOURCE configuration panel opens. Follow the given steps to create a SparkSQL data source: 
 1. Enter a name and description(optional) for the data source. 
 2. Enter a valid SparkSQL server or hostname in the ServerName text box.
-3. Enter its corresponding port in the Port text box.
-4. Choose **None** or **BASIC authentication** in the Authentication Mechanism combo box.
-5. Enter a valid SparkSQL username and password if you choose the Basic Authentication Mechanism. 
-6. Select a database you want to query in the listed database associated with the given SparkSQL server in the database combo box.
+3. Provide the corresponding port in the Port text box.
+4. Choose either **None** or **BASIC authentication** in the Authentication Mechanism combo box.
+5. If Basic Authentication Mechanism is chosen, enter a valid SparkSQL username and password.
+6. Select the desired database from the list associated with the SparkSQL server in the database combo box for querying.
 
    ![Sparksql Connection](/static/assets/working-with-datasource/data-connectors/images/Sparksql/sparksql_connection.png#max-width=60%)
 
-> **NOTE:** To connect data source with SSH, enable the **SSH** check box in the **NEW DATA SOURCE** configuration panel and enter the required credentials.
+> **NOTE:** To connect data source with SSH, enable the **SSH** check box in the **NEW DATA SOURCE** configuration panel and enter the necessary credentials.
 ![Enable SSH](/static/assets/working-with-datasource/data-connectors/images/Sparksql/enable-ssh.png#max-width=60%)
 
 ### Data Preview
@@ -64,7 +64,7 @@ The schema represents the collection list that is retrieved from the SparkSQL se
 
 ### Connect using custom attribute and dashboard parameter
 
-We have added support for **custom attributes and dashboard parameters** to the data source connection. You can connect to the data source using custom attributes or dashboard parameters.
+We have added support for **custom attributes and dashboard parameters** in the data source connection. You can now connect to the data source using custom attributes or dashboard parameters.
 
 **Custom Attribute**
 
@@ -74,7 +74,7 @@ We have added support for **custom attributes and dashboard parameters** to the 
 
 ![Dashboard Parameter](/static/assets/working-with-datasource/data-connectors/images/Sparksql/Dashboardparameter.png)
 
->**Note:** Refer the [Dashboard Parameter Documentation](https://help.boldbi.com/working-with-data-sources/dashboard-parameter/) and [Custom Attributes Documentation](https://help.boldbi.com/working-with-data-sources/configuring-custom-attribute/) for more details.
+>**Note:** Refer to the [Dashboard Parameter Documentation](https://help.boldbi.com/working-with-data-sources/dashboard-parameter/) and [Custom Attributes Documentation](https://help.boldbi.com/working-with-data-sources/configuring-custom-attribute/) for more details.
 
 ## Connecting Bold BI to SparkSQL Data Source via REST API
 
@@ -377,7 +377,7 @@ Type while creating the data source needs to be sparksql.
 
 ### Parameters for editing Data Source
 
-> **NOTE:**  For editing Data Source via API. All the parameters are optional. The parameter which needs to be changed can be provided.
+> **NOTE:**  To edit a Data Source via API, all parameters are optional. Only the parameter that needs to be changed should be provided.
 
 #### Parameters for modifying expressions when editing Data Source
    
@@ -557,7 +557,7 @@ Type while creating the data source needs to be sparksql.
 ]
 ```
 
-> **NOTE:**  Through Rest API, the data source can be created or edited with only one table. If different table is provided in edit data source, the table will be replaced. The widgets will be retained only if the schema is same as the previous table.
+> **NOTE:**  Through the Rest API, the data source can be created or edited with only one table. If different table is provided in edit data source, the table will be replaced. The widgets will be retained only if the schema is same as the previous table.
 
 ### Connection Sample for Code View Mode
 

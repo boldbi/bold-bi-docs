@@ -9,7 +9,7 @@ documentation: ug
 
 # Web
 
-Web connector fetch data from REST API and it supports nested json fields. 
+The web connector fetches data from a REST API and supports nested JSON fields.
 
 ## Limitations
 
@@ -18,7 +18,7 @@ Web connector fetch data from REST API and it supports nested json fields.
    
 ## Connection Properties
 
-In a YAML file, the `config` section contains the following properties:
+The `config` section in a YAML file includes the following properties:
 
 ```yaml
 url: URL

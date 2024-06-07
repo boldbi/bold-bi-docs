@@ -26,7 +26,7 @@ To choose the Amazon MWS data source and configure it, follow these steps:
 You can edit the connection information set here using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 
 ## Create Amazon MWS data source
-Once you click the data source, the NEW DATA SOURCE configuration panel opens. Follow these steps to create an Amazon MWS data source:
+Once you click the data source, the NEW DATA SOURCE configuration panel will open. Follow these steps to create an Amazon MWS data source:
 1. Enter a name and description (optional) for the data source.
 2. Choose the region for your account accessing the market place.
 3. Select the operation that depends on your data needs, and you can also use a custom URL for the data source connection.
@@ -41,7 +41,7 @@ Once you click the data source, the NEW DATA SOURCE configuration panel opens. F
 
 ## Connecting using Custom URL details
 
-1. Open the Scratchpad URL - https://mws.amazonservices.ca/scratchpad/index.html 
+1. Open the [Scratchpad URL](https://mws.amazonservices.ca/scratchpad/index.html)
 
 2. Select the API Section, Operation, and provide authentication values. 
 
@@ -64,8 +64,7 @@ Once you click the data source, the NEW DATA SOURCE configuration panel opens. F
 Max Rows
 </td>
 <td>
-Most of the REST APIs return only fewer data on a single API request. To pull the amount of data you need, set a value in this field.  
-Pagination is handled internally and will fetch the amount of data you need.
+Most REST APIs return only a limited amount of data on a single API request. To retrieve the necessary amount of data, you can set a value in this field. Pagination is handled internally and will fetch the required data.
 </td>
 </tr>
 <tr>
@@ -73,7 +72,7 @@ Pagination is handled internally and will fetch the amount of data you need.
 Refresh Settings
 </td>
 <td>
-Period of time before next refresh call is triggered. This will automatically trigger a call for the API configured in the data source to keep the data up to date. If you do not want to sync your new data, choose ‘Never’.
+The period of time before the next refresh call is triggered. This will automatically trigger a call to the API configured in the data source to keep the data up to date. If you do not want to sync your new data, choose ‘Never’.
 </td>
 </tr>
 </table>
@@ -87,7 +86,7 @@ Period of time before next refresh call is triggered. This will automatically tr
 
     ![product paramter](/static/assets/working-with-datasource/data-connectors/images/AmazonMWS/Product_parameter.png)
 
-3. You can create a custom URL using the Amazon Scratchpad. [https://docs.developer.amazonservices.com/en_UK/scratchpad/Scratchpad_Using.html](https://docs.developer.amazonservices.com/en_UK/scratchpad/Scratchpad_Using.html)
+3. You can create a custom URL using the [Amazon Scratchpad](https://docs.developer.amazonservices.com/en_UK/scratchpad/Scratchpad_Using.html).
 
 For more information on the API endpoints available for this data source, refer to their official [API Documentation]( http://docs.developer.amazonservices.com/en_US/dev_guide/index.html)
 

@@ -31,5 +31,5 @@ The release alert banner will display the details about the latest release versi
 
     ![Hide Release Alert](/static/assets/faq/images/hide-release-alert.png)
 
-4. Restart the application, then access the site. Refer to this [link](/faq/how-to-restart-the-bold-bi-embedded-application/) to learn how to restart the Bold BI application.
+4. Restart the application, then access the site. To learn [how to restart the Bold BI](/faq/how-to-restart-the-bold-bi-embedded-application/) application.
 

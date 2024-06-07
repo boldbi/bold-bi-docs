@@ -14,7 +14,7 @@ We have created an ASP.NET MVC sample with the Embedded SDK. Here, we can list t
 
 ## How to run the sample
 
-1. Download the ASP.NET MVC sample from [here](https://github.com/boldbi/samples/tree/master/v3.2.16/asp-net-mvc).
+1. Download the [ASP.NET MVC](https://github.com/boldbi/samples/tree/master/v3.2.16/asp-net-mvc) sample.
 
 2. Within the ASP.NET MVC sample, you can locate the EmbedProperties class file in the Models folder.
 ![Properties](/static/assets/javascript/sample/images/mvc-properties.png)
@@ -52,7 +52,7 @@ We have created an ASP.NET MVC sample with the Embedded SDK. Here, we can list t
 </table>
 
 
-4. You can obtain your Embed Secret key from the administrator settings section. Please refer to this [link](/site-administration/embed-settings/) for more details.    
+4. You can obtain your Embed Secret key from the administrator settings section. Please refer to the [Embed Settings](/site-administration/embed-settings/) for further information.   
 
 5. Then, run your ASP.NET MVC sample.
 

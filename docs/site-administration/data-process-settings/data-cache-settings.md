@@ -30,7 +30,7 @@ The mode should be either `in-memory` or `redis`. The widget data will be cached
     
     **Redis**
 
-    The Data is cached in an external server named `Redis`. Redis is an open-source (BSD licensed), in-memory data structure store used as a database, cache, message broker, and streaming engine. Learn more about `Redis` and its installation [here](https://redis.io/).
+    The Data is cached in an external server named `Redis`. Redis is an open-source (BSD licensed), in-memory data structure store used as a database, cache, message broker, and streaming engine. Learn more about `Redis` and its installation of [Redis](https://redis.io/).
 
     ![DataCache configuration](/static/assets/site-administration/images/datacache_configuration.png#max-width=100%)
 

@@ -114,5 +114,4 @@ Configure the group import setting in Bold BI using Okta, as shown in the image 
 
 ![Okta Group](/static/assets/site-administration/openid-support/images/Okta-group.png)
 
-Generate an API token by following the link below,
-https://developer.okta.com/docs/guides/create-an-api-token/create-the-token
+Generate an API token by following the link: [Generate API Token](https://developer.okta.com/docs/guides/create-an-api-token/create-the-token).

@@ -228,4 +228,4 @@ This feature allows you to enable or disable the `widget title` for the list box
 
 #### Enable Comments
 
-This feature allows you to enable or disable `comments` for the dashboard widget. For more details, please refer to this [link](/visualizing-data/working-with-widgets/commenting-widget/).
+This feature allows you to enable or disable `comments` for the dashboard widget. For more details, please refer to the [Commenting Widget](/visualizing-data/working-with-widgets/commenting-widget/).

@@ -13,7 +13,7 @@ By default, the Bold BI application is available in `English (en-US)` localizati
 
 Please refer to the following documentation to add a new localization or edit the existing localization:
 
-> **NOTE:** For applying localization files in Bold BI version 4.2.69 or earlier, refer to [this](/localization/v4.2.69-or-earlier/) guide.
+> **NOTE:** For applying localization files in Bold BI version 4.2.69 or earlier, Please refer to the Bold BI version [4.2.69 or earlier](/localization/v4.2.69-or-earlier/) guide.
 ## Add a new localization
 
 1. Create a folder named locale inside the app_data folder in the deployed location.
@@ -21,7 +21,7 @@ Please refer to the following documentation to add a new localization or edit th
 
 2. Create a folder inside the locale folder and specify the folder name in the locale language code in which you wish to generate the localization file.
 
-   Please refer to this [link](https://docs.microsoft.com/en-us/openspecs/office_standards/ms-oe376/6c085406-a698-4e12-9d4d-c3b0ee3dbc4a) for a sample language code. For example, create a folder called `fr-FR` to represent the French language code.
+   Please refer to the [sample](https://docs.microsoft.com/en-us/openspecs/office_standards/ms-oe376/6c085406-a698-4e12-9d4d-c3b0ee3dbc4a) language code. For example, create a folder called `fr-FR` to represent the French language code.
 
    ![language region folder location](/static/assets/localization/images/french-language-region-folder-creation.png#width=65%)
 
@@ -107,7 +107,7 @@ Here, the sample converted locale file will appear as follows:
 
       * Rename the previously pasted `default.po` file to `messages.po`.
 
-2. Use the online site https://www.matecat.com/ to generate the localization file.
+2. Use the online [site](https://www.matecat.com/) to generate the localization file.
 
 3. Browse to select the `messages.po` file in the application folder on the site.
 
@@ -131,7 +131,7 @@ Here, the sample converted locale file will appear as follows:
 
 ## How to generate the locale JS file for bi-DataService
 
-1. Download the locale Utility from the provided [link](https://cdn.boldbi.com/downloads/utilities/BoldBI.Locale.Utility.zip) . Once the download is completed, extract the `.Zip` file.
+1. Download the locale [Utility](https://cdn.boldbi.com/downloads/utilities/BoldBI.Locale.Utility.zip). Once the download is completed, extract the `.Zip` file.
 
 2. Open the `appsettings.json` file in an editor and modify the `boldbi_custom_locale_path` as the deployed path of the application designer locale files and `boldbi_locale_path` locale as the deployed path of default designer locale files.
 

@@ -137,7 +137,7 @@
           "Password Authentication"
         ],
         "summary": "Authenticate User",
-        "description": "Authenticate with a user password.",
+        "description": "Please authenticate with a user password.",
         "operationId": "PasswordAuthentication",
         "requestBody": {
           "content": {
@@ -225,10 +225,10 @@
           "Dashboard Views"
         ],
         "summary": "Add Dashboard View",
-        "description": "Users who have access to the dashboard can save a view by providing proper dashboard filter details.",
+        "description": "Users who have access to the dashboard can save a view by providing the proper dashboard filter details.",
         "operationId": "ItemViews_AddItemView",
         "requestBody": {
-          "description": "Details about the dashboard filter to save the view.",
+          "description": "Information about the dashboard filter for saving the view.",
           "content": {
             "application/json": {
               "schema": {
@@ -285,10 +285,10 @@
           "Dashboard Views"
         ],
         "summary": "Edit Dashboard View",
-        "description": "Users who have created a view can edit the view by providing proper dashboard filter details.",
+        "description": "Users who have created a view can edit the view by providing the proper dashboard filter details.",
         "operationId": "ItemViews_UpdateItemView",
         "requestBody": {
-          "description": "Details about the dashboard filter to edit the view.",
+          "description": "Please provide details about the dashboard filter for editing the view.",
           "content": {
             "application/json": {
               "schema": {
@@ -347,7 +347,7 @@
           "Dashboard Views"
         ],
         "summary": "Get Dashboard Views",
-        "description": "Retrieves the list of views of the particular dashboard for the current user.",
+        "description": "Retrieve the list of views of the specific dashboard for the current user.",
         "operationId": "ItemViews_ItemViewsByItemId",
         "parameters": [
           {
@@ -407,7 +407,7 @@
           "Dashboard Views"
         ],
         "summary": "Get Dashboard View by Id",
-        "description": "Retrieves the view detail for the current user.",
+        "description": "Retrieve the detailed view for the current user.",
         "operationId": "ItemViews_ItemViewByViewId",
         "parameters": [
           {
@@ -462,7 +462,7 @@
           "Dashboard Views"
         ],
         "summary": "Delete Dashboard View",
-        "description": "Users who have created a view can delete them.",
+        "description": "Users who have created a view can delete it.",
         "operationId": "ItemViews_ItemViewDelete",
         "parameters": [
           {
@@ -513,7 +513,7 @@
           "Dashboard"
         ],
         "summary": "Get Dashboards",
-        "description": "Users who have created the dashboards can view the dashboard lists.",
+        "description": "Users who have created the dashboards are able to view the lists of dashboards.",
         "operationId": "Dashboards_GetDashboards",
         "parameters": [
           {
@@ -620,7 +620,7 @@
           "Dashboard"
         ],
         "summary": "Copy Dashboard",
-        "description": "Users who have create access to the dashboard, can copy the dashboard.",
+        "description": "Users who have access to create on the dashboard can copy it.",
         "operationId": "Dashboards_CopyDashboard",
         "parameters": [
           {
@@ -638,7 +638,7 @@
           }
         ],
         "requestBody": {
-          "description": "Details of the dashboard passed will be copied.",
+          "description": "The details of the dashboard that were passed will be copied.",
           "content": {
             "application/json": {
               "schema": {
@@ -701,7 +701,7 @@
           "Dashboard"
         ],
         "summary": "Get Public Dashboards",
-        "description": "Retrieves the list of public dashboards for the current user.",
+        "description": "Retrieve the list of public dashboards for the current user.",
         "operationId": "Dashboards_GetPublicItems",
         "parameters": [
           {
@@ -764,10 +764,10 @@
             "Dashboard"
         ],
         "summary" : "Update Public Dashboard",
-        "description": "Users who have access to the dashboard and the dashboards settings can update the dashboard as public.",
+        "description": "Users who have access to the dashboard and its settings can update the dashboard to be public.",
         "operationId": "Dashboards_UpdatePublicDashboard",
         "requestBody": {
-            "description": "Public value passed will be updated to the specified dashboard.",
+            "description": "The public value that is passed will be updated on the specified dashboard.",
             "content": {
                 "application/json": {
                     "schema": {
@@ -813,7 +813,7 @@
           "Dashboard"
         ],
         "summary": "Get Favorite Dashboards",
-        "description": "Retrieves a list of favorite dashboards for the current user.",
+        "description": "Retrieve a list of favorite dashboards for the current user.",
         "operationId": "Dashboards_GetFavoriteItems",
         "responses": {
           "200": {
@@ -852,10 +852,10 @@
           "Dashboard"
         ],
         "summary": "Update Favorite Dashboard",
-        "description": "Users who have read access to the dashboard can update the dashboard as favorite or non-favorite.",
+        "description": "Users who have read access to the dashboard can update the dashboard as a favorite or non-favorite.",
         "operationId": "Dashboards_UpdateFavoriteItem",
         "requestBody": {
-          "description": "Favorite value passed will be updated to the specified dashboard.",
+          "description": "The favorite value that is passed will be updated on the specified dashboard.",
           "content": {
             "application/json": {
               "schema": {
@@ -906,10 +906,10 @@
           "Dashboard"
         ],
         "summary": "Export Dashboard",
-        "description": "Users who have read access to the dashboard can export the dashboard to the export types (Excel, PDF, and Image) and get the exported dashboard as an array of bytes in response.<br /><br />When exporting multi-tabbed dashboard in image format, the response bytes must be saved in ZIP format.",
+        "description": "Users who have read access to the dashboard can export it to various formats (Excel, PDF, and Image) and receive the exported dashboard as an array of bytes in response.<br /><br />When exporting a multi-tabbed dashboard in image format, the response bytes must be saved in ZIP format.",
         "operationId": "Dashboards_ExportDashboard",
         "requestBody": {
-          "description": "Details about the dashboard passed will be exported.",
+          "description": "Details about the passed dashboard will be exported.",
           "content": {
             "application/json": {
               "schema": {
@@ -964,7 +964,7 @@
           "Dashboard"
         ],
         "summary": "Get Dashboard by Id",
-        "description": "Users who have created the dashboard can view the dashboard detail.",
+        "description": "Users who have created the dashboard are able to view the detailed information on the dashboard.",
         "operationId": "Dashboards_GetDashboard",
         "parameters": [
           {
@@ -1015,7 +1015,7 @@
           "Dashboard"
         ],
         "summary": "Delete Dashboard",
-        "description": "Users who have delete access to the item type dashboard can delete the item by providing the Dashboard Id.",
+        "description": "Users who have deletion access to the item type dashboard can delete the item by providing the Dashboard Id.",
         "operationId": "Dashboards_DeleteDashboard",
         "parameters": [
           {
@@ -1066,7 +1066,7 @@
           "Dashboard"
         ],
         "summary": "Get Widgets of Dashboard",
-        "description": "Users who created the dashboard can view their widgets details.",
+        "description": "Users who created the dashboard can view the details of their widgets.",
         "operationId": "Dashboards_GetWidgets",
         "parameters": [
           {
@@ -1168,7 +1168,7 @@
           "Dashboard"
         ],
         "summary": "Download Dashboard",
-        "description": "Download the content of a dashboard file.",
+        "description": "Please download the content of the dashboard file.",
         "operationId": "Dashboard_DownloadDashboardFile",
         "parameters": [
           {
@@ -1217,7 +1217,7 @@
           "Dashboard"
         ],
         "summary": "Get Meta Info For Dashboard",
-        "description": "Retrieve meta information for the downloaded dashboard files.",
+        "description": "Retrieve metadata for the downloaded dashboard files.",
         "operationId": "Dashboards_GetMetaInfo",
         "requestBody": {
           "description": "Dashboard file content",
@@ -1263,7 +1263,7 @@
           "Dashboard"
         ],
         "summary": "Upload Dashboard File",
-        "description": "Users who have create access to the dashboard can upload the dashboard.",
+        "description": "Users who have create access to the dashboard can upload it.",
         "operationId": "Dashboards_UploadDashboard",
         "requestBody": {
           "description": "",
@@ -1309,7 +1309,7 @@
           "Dashboard"
         ],
         "summary": "Upload Dashboard Status",
-        "description": "Get the status of an upload dashboard job.",
+        "description": "Retrieve the status of an upload dashboard job.",
         "operationId": "Dashboard_GetUploadDashboardJobStatus",
         "parameters": [
           {
@@ -1413,7 +1413,7 @@
           "Draft Dashboard"
         ],
         "summary": "Get Draft Dashboards",
-        "description": "Users who have created the draft dashboard can view the draft dashboard lists.",
+        "description": "Users who have created the draft dashboard can view the lists of draft dashboards.",
         "operationId": "Dashboards_GetDraftDashboard",
         "responses": {
           "200": {
@@ -1454,7 +1454,7 @@
           "Draft Dashboard"
         ],
         "summary": "Update Draft Dashboard",
-        "description": "Users who have created the draft dashboard can update dashboard details.",
+        "description": "Users who have created the draft dashboard are able to update the dashboard details.",
         "operationId": "Items_UpdateDraftItemDetail",
         "parameters": [
           {
@@ -1531,7 +1531,7 @@
           "DataSource"
         ],
         "summary": "Get Datasources",
-        "description": "Users who have created the data source can view the data source lists.",
+        "description": "Users who have created the data source are able to view the lists of data sources.",
         "operationId": "DataSource_GetDataSources",
         "parameters": [
           {
@@ -1623,7 +1623,7 @@
         "description": "Create a data source.",
         "operationId": "DataSource_CreateDataSource",
         "requestBody": {
-          "description": "The following documentation explains how a user can create a data source using the API",
+          "description": "The following documentation explains how a user can create a data source using the API.",
           "content": {
             "application/json": {
               "schema": {
@@ -1672,10 +1672,10 @@
           "DataSource"
         ],
         "summary": "Update Data Source",
-        "description": "Updates an existing data source in a particular site. \n\n Note: Update data source API is only applicable for a live SQL data source.",
+        "description": "Update an existing data source on a specific site. \n\n Note: The Update data source API is only applicable for a live SQL data source.",
         "operationId": "DataSource_UpdateDataSource",
         "requestBody": {
-          "description": "Details about the data source passed will be updated.",
+          "description": "Details about the passed data source will be updated.",
           "content": {
             "application/json": {
               "schema": {
@@ -1726,7 +1726,7 @@
           "DataSource"
         ],
         "summary": "Copy Datasource",
-        "description": "Users who have create access to the data source, can copy the data source.",
+        "description": "Users who have create access to the data source can copy the data source.",
         "operationId": "DataSource_CopyDataSource",
         "parameters": [
           {
@@ -1803,7 +1803,7 @@
           "DataSource"
         ],
         "summary": "Get Datasource by Id",
-        "description": "Users who have created the data source can view the data source details.",
+        "description": "Users who have created the data source are able to view the details of the data source.",
         "operationId": "DataSource_GetDataSource",
         "parameters": [
           {
@@ -1905,7 +1905,7 @@
           "Items"
         ],
         "summary": "Get Items",
-        "description": "Retrieves the respective list of items for the item types (Category, Dashboard, Datasource, and Schedule) for the current user.",
+        "description": "Retrieve the respective list of items for the item types (Category, Dashboard, Datasource, and Schedule) for the current user.",
         "operationId": "Items_GetItems",
         "parameters": [
           {
@@ -1975,7 +1975,7 @@
           "Items"
         ],
         "summary": "Get Item by Id",
-        "description": "Retrieves the respective item detail for the current users’ item types (Category, Dashboard, Datasource, and Schedule).",
+        "description": "Retrieve the respective item details for the current users' item types (Category, Dashboard, Datasource, and Schedule).",
         "operationId": "Items_GetItemDetail",
         "parameters": [
           {
@@ -2026,7 +2026,7 @@
           "Items"
         ],
         "summary": "Delete Item",
-        "description": "Users who have delete access to the item types Category, Dashboard, Datasource, and Schedule can delete the item by providing the item ID (Category Id, Dashboard Id, Datasource Id, and Schedule Id).",
+        "description": "Users who have delete access to the item types Category, Dashboard, Datasource, and Schedule can delete the item by providing the item ID (Category ID, Dashboard ID, Datasource ID, and Schedule ID).",
         "operationId": "Items_DeleteItem",
         "parameters": [
           {
@@ -2077,10 +2077,10 @@
           "Items"
         ],
         "summary": "Check Item name existence",
-        "description": "Current user can check whether the item (category, dashboard, data source, schedule, slideshow) is already exists or not by providing item name (category name, dashboard name, data source name, schedule name, slideshow name) and itemtype (Category, Dashboard, Data source, Schedule, Slideshow) in the request body.",
+        "description": "The current user can check whether the item (category, dashboard, data source, schedule, slideshow) already exists by providing the item name (category name, dashboard name, data source name, schedule name, slideshow name) and item type (Category, Dashboard, Data source, Schedule, Slideshow) in the request body.",
         "operationId": "Items_IsItemNameExists",
         "requestBody": {
-          "description": "Details about the item passed will be checked.",
+          "description": "Details about the item that was passed will be checked.",
           "content": {
             "application/json": {
               "schema": {
@@ -2186,7 +2186,7 @@
           "Users"
         ],
         "summary": "Get Users",
-        "description": "Retrieves the list of user details.",
+        "description": "Retrieve the list of user details.",
         "operationId": "Users_GetUsers",
         "responses": {
           "200": {
@@ -2220,7 +2220,7 @@
           "Users"
         ],
         "summary": "Get User Groups",
-        "description": "Retrieves the list of group details of the particular user.",
+        "description": "Retrieve the list of group details for the specific user.",
         "operationId": "Users_GetGroupsOfUser",
         "parameters": [
           {
@@ -2276,7 +2276,7 @@
           "Users"
         ],
         "summary": "Download CSV Template",
-        "description": "Download the CSV template to import the CSV users.",
+        "description": "Download the CSV template in order to import the CSV users.",
         "operationId": "Users_DownloadCsvTemplate",
         "responses": {
           "200": {
@@ -2310,7 +2310,7 @@
           "Users"
         ],
         "summary": "Add CSV User",
-        "description": "Add the list of users using the CSV file.",
+        "description": "Please add the list of users using the CSV file.",
         "operationId": "Users_CsvUserImport",
         "requestBody": {
           "description": "Details passed to add the CSV of users.",
@@ -2360,7 +2360,7 @@
           "Users"
         ],
         "summary": "Get a User by Email or Username",
-        "description": "Retrieves the particular user detail.",
+        "description": "Retrieve the specific user detail.",
         "operationId": "Users_GetUserDetail",
         "parameters": [
           {
@@ -2410,7 +2410,7 @@
           "Users"
         ],
         "summary": "Update User",
-        "description": "Updates the particular user detail.",
+        "description": "Update the specific user details.",
         "operationId": "Users_EditUser",
         "parameters": [
           {
@@ -2480,7 +2480,7 @@
           "Users"
         ],
         "summary": "Delete User",
-        "description": "Deletes the particular user.",
+        "description": "Delete the specific user.",
         "operationId": "Users_DeleteUser",
         "parameters": [
           {
@@ -2530,7 +2530,7 @@
           "Groups"
         ],
         "summary": "Add Group",
-        "description": "Adds the new group to group the users.",
+        "description": "Add the new group to group the users.",
         "operationId": "Groups_AddGroup",
         "requestBody": {
           "description": "Detail of the group.",
@@ -2586,7 +2586,7 @@
           "Groups"
         ],
         "summary": "Get Groups",
-        "description": "Retrieves the list of group details.",
+        "description": "Retrieve the list of group details.",
         "operationId": "Groups_GetGroups",
         "responses": {
           "200": {
@@ -2620,7 +2620,7 @@
           "Groups"
         ],
         "summary": "Get Group by Id",
-        "description": "Retrieves the particular group detail.",
+        "description": "Retrieve the specific group details.",
         "operationId": "Groups_GetGroupDetail",
         "parameters": [
           {
@@ -2671,7 +2671,7 @@
           "Groups"
         ],
         "summary": "Update Group",
-        "description": "Updates the particular group detail.",
+        "description": "Update the specific group details.",
         "operationId": "Groups_EditGroup",
         "parameters": [
           {
@@ -2746,7 +2746,7 @@
           "Groups"
         ],
         "summary": "Delete Group",
-        "description": "Deletes the particular group.",
+        "description": "Remove the specific group.",
         "operationId": "Groups_DeleteGroup",
         "parameters": [
           {
@@ -2847,7 +2847,7 @@
           "Groups"
         ],
         "summary": "Add User(s) to Group",
-        "description": "Adds the list of users to the particular group.",
+        "description": "Add the list of users to the specific group.",
         "operationId": "Groups_AddUserToGroup",
         "parameters": [
           {
@@ -2914,7 +2914,7 @@
           "Groups"
         ],
         "summary": "Get Group Users",
-        "description": "Retrieves the list of user details of the particular group.",
+        "description": "Retrieve the list of user details for the specific group.",
         "operationId": "Groups_GetUsersFromGroup",
         "parameters": [
           {
@@ -2973,7 +2973,7 @@
           "Groups"
         ],
         "summary": "Delete Group User",
-        "description": "Deletes the list of users from the particular group.",
+        "description": "Delete the list of users from the specific group.",
         "operationId": "Groups_DeleteUserFromGroup",
         "parameters": [
           {
@@ -3040,7 +3040,7 @@
           "Settings"
         ],
         "summary": "Get Site Settings",
-        "description": "Retrieves the list of site setting details of the particular site if the user has admin rights for the site settings.",
+        "description": "Retrieve the list of site setting details for the particular site if the user has administrative rights for the site settings.",
         "operationId": "Administration_GetSiteSettings",
         "parameters": [
           {
@@ -3084,10 +3084,10 @@
           "Settings"
         ],
         "summary": "Update Site Settings",
-        "description": "Users who have admin rights to the site can update the site settings.",
+        "description": "Users who have administrative rights to the site are able to update the site settings.",
         "operationId": "Administration_UpdateSiteSettings",
         "requestBody": {
-          "description": "Details of the site settings passed will be updated.",
+          "description": "The details of the site settings that were passed will be updated.",
           "content": {
             "application/json": {
               "schema": {
@@ -3138,7 +3138,7 @@
           "Settings"
         ],
         "summary": "Get Dashboard Settings",
-        "description": "Retrieves the dashboard setting details of the particular site if the user has admin rights for the dashboard settings.",
+        "description": "Retrieve the dashboard settings details of the specific site if the user has admin rights for the dashboard settings.",
         "operationId": "Administration_GetDashboardSettings",
         "responses": {
           "200": {
@@ -3170,7 +3170,7 @@
           "Settings"
         ],
         "summary": "Update Dashboard Settings",
-        "description": "Users who have admin rights permission to dashboard settings can update the dashboard settings.",
+        "description": "Users who have admin rights permissions to dashboard settings can update the dashboard settings.",
         "operationId": "Administration_UpdateDashboardSettings",
         "requestBody": {
           "description": "The details of the dashboard settings that have been passed will be updated.",
@@ -3223,10 +3223,10 @@
           "Settings"
         ],
         "summary": "Update Email Settings",
-        "description": "Users who have admin rights permission to email settings can update the email settings.\n\n<B> **NOTE:** </B> This API is not available in Syncfusion Managed Cloud Server.",
+        "description": "Users who have admin rights permission to email settings are able to update the email settings.\n\n<B> **NOTE:** </B> This API is not available in Syncfusion Managed Cloud Server.",
         "operationId": "Administration_UpdateEmailSettings",
         "requestBody": {
-          "description": "The details of the email settings that have been passed will be updated.",
+          "description": "The details of the email settings that have been provided will be updated.",
           "content": {
             "application/json": {
               "schema": {
@@ -3276,7 +3276,7 @@
           "Settings"
         ],
         "summary": "Update Azure AD Settings",
-        "description": "Users who have admin rights permission to user directories can update the Azure AD settings.",
+        "description": "Users who have admin rights permissions to user directories can update the Azure AD settings.",
         "operationId": "Administration_UpdateAzureADSettings",
         "requestBody": {
           "description": "The details of the azure active directory settings that have been passed will be updated.",
@@ -3329,10 +3329,10 @@
           "Settings"
         ],
         "summary": "Update Azure AD Schedule Synchronization Settings",
-        "description": "Users who have admin rights permission to user directories can update the Azure AD schedule synchronization settings.",
+        "description": "Users with administrative permissions to user directories can update the Azure AD schedule synchronization settings.",
         "operationId": "Administration_UpdateAzureADScheduleSettings",
         "requestBody": {
-          "description": "The details of the azure active directory schedule synchronization settings that have been passed will be updated.",
+          "description": "The details of the Azure Active Directory schedule synchronization settings that have been provided will be updated.",
           "content": {
             "application/json": {
               "schema": {
@@ -3386,7 +3386,7 @@
           "Settings"
         ],
         "summary": "Get Account Settings",
-        "description": "Retrieves the account setting details of the particular site if the user has admin rights for the account settings.\n\n<B> **NOTE:** </B> This API is not available in Syncfusion Managed Cloud Server.",
+        "description": "Retrieve the account setting details of the specific site if the user has administrative rights for the account settings.\n\n<B> **NOTE:** </B> This API is not available in Syncfusion Managed Cloud Server.",
         "operationId": "Administration_GetAccountSettings",
         "responses": {
           "200": {
@@ -3418,7 +3418,7 @@
           "Settings"
         ],
         "summary": "Update Account Settings",
-        "description": "Users who have admin rights permission to account settings can update the account settings.",
+        "description": "Users who have admin rights permissions to account settings can update the account settings.",
         "operationId": "Administration_UpdateAccountSettings",
         "requestBody": {
           "description": "The details of the account settings that have been passed will be updated.",
@@ -3469,10 +3469,10 @@
           "Settings"
         ],
         "summary": "Update Cors Settings",
-        "description": "Users who have admin rights permission to security settings can update the cors settings.",
+        "description": "Users who have administrative rights permission to security settings can update the CORS settings.",
         "operationId": "Administration_UpdateCorsSettings",
         "requestBody": {
-          "description": "The details of the cors settings that have been passed will be updated.",
+          "description": "The details of the CORS settings that have been passed will be updated.",
           "content": {
             "application/json": {
               "schema": {
@@ -3518,7 +3518,7 @@
           "Settings"
         ],
         "summary": "Generate Embed Secret",
-        "description": "Generate the embed secret of the particular site if the user has admin rights for the site settings.",
+        "description": "Generate the embed secret for the specific site only if the user has administrative rights for the site settings.",
         "operationId": "Administration_GenerateEmbedSecret",
         "responses": {
           "200": {
@@ -3552,7 +3552,7 @@
           "Attributes"
         ],
         "summary": "Add User Attribute",
-        "description": "Adds the attribute for a particular user.",
+        "description": "Add the attribute for a specific user.",
         "operationId": "Attribute_AddUserAttribute",
         "requestBody": {
           "description": "Attribute object, which is sent as request.",
@@ -3604,7 +3604,7 @@
           "Attributes"
         ],
         "summary": "Update User Attribute",
-        "description": "Updates the specific attribute of a particular user.",
+        "description": "Updates the specific attribute of a specific user.",
         "operationId": "Attribute_UpdateUserAttribute",
         "requestBody": {
           "description": "Attribute object, which is sent as request.",
@@ -3658,7 +3658,7 @@
           "Attributes"
         ],
         "summary": "Get User Attributes",
-        "description": "Retrieves the list of attributes of the particular user.",
+        "description": "Retrieve the list of attributes of the specific user.",
         "operationId": "Attribute_GetUserCustomAttribute",
         "parameters": [
           {
@@ -3709,7 +3709,7 @@
           "Attributes"
         ],
         "summary": "Delete User Attribute",
-        "description": "Deletes the attribute of the particular user.",
+        "description": "Delete the attribute of the specific user.",
         "operationId": "Attribute_DeleteUserAttribute",
         "parameters": [
           {
@@ -3752,7 +3752,7 @@
           "Attributes"
         ],
         "summary": "Add Group Attribute",
-        "description": "Adds the attribute for a particular group.",
+        "description": "Add the attribute for a specific group.",
         "operationId": "Attribute_AddGroupAttribute",
         "requestBody": {
           "description": "Attribute object, which is sent as request.",
@@ -3804,7 +3804,7 @@
           "Attributes"
         ],
         "summary": "Update Group Attribute",
-        "description": "Updates the specific attribute of a particular group.",
+        "description": "Retrieve the list of attributes of the specific group.",
         "operationId": "Attribute_UpdateGroupAttribute",
         "requestBody": {
           "description": "Attribute object, which is sent as request.",
@@ -3858,7 +3858,7 @@
           "Attributes"
         ],
         "summary": "Get Group Attributes",
-        "description": "Retrieves the list of attributes of the particular group.",
+        "description": "Retrieve the list of attributes of the specific group.",
         "operationId": "Attribute_GetGroupCustomAttribute",
         "parameters": [
           {
@@ -3909,7 +3909,7 @@
           "Attributes"
         ],
         "summary": "Delete Group Attribute",
-        "description": "Deletes the attribute of the particular group.",
+        "description": "Remove the attribute from the specific group.",
         "operationId": "Attribute_DeleteGroupAttribute",
         "parameters": [
           {
@@ -3952,7 +3952,7 @@
           "Attributes"
         ],
         "summary": "Add Site Attribute",
-        "description": "Adds the attribute for a particular site.",
+        "description": "Add the attribute for a specific site.",
         "operationId": "Attribute_SaveSiteAttribute",
         "requestBody": {
           "description": "Attribute object, which is sent as request.",
@@ -4004,7 +4004,7 @@
           "Attributes"
         ],
         "summary": "Get Site Attributes",
-        "description": "Retrieves the list of attributes of the particular site.",
+        "description": "Retrieve the list of attributes for the specific site.",
         "operationId": "Attribute_GetSiteAttributes",
         "responses": {
           "200": {
@@ -4036,7 +4036,7 @@
           "Attributes"
         ],
         "summary": "Update Site Attribute",
-        "description": "Updates the specific attribute of a particular site.",
+        "description": "Update the specific attribute of a particular site.",
         "operationId": "Attribute_UpdateSiteAttributes",
         "requestBody": {
           "description": "Attribute object, which is sent as request.",
@@ -4090,7 +4090,7 @@
           "Attributes"
         ],
         "summary": "Delete Site Attribute",
-        "description": "Deletes the attribute of the particular site.",
+        "description": "Remove the attribute from the specific site.",
         "operationId": "Attribute_DeleteSiteAttributes",
         "parameters": [
           {
@@ -4133,7 +4133,7 @@
           "Pinboard"
         ],
         "summary": "Add Pinboard",
-        "description": "Adds the new pinboard into a particular site.",
+        "description": "Add the new pinboard to a specific site.",
         "operationId": "Pinboard_AddEmbedPinBoard",
         "requestBody": {
           "description": "Details about adding pinboard.",
@@ -4187,7 +4187,7 @@
           "Pinboard"
         ],
         "summary": "Copy Pinboard",
-        "description": "Copies the pinboard in the particular site.",
+        "description": "Copy the pinboard on the specific site.",
         "operationId": "Pinboard_CopyEmbedPinBoard",
         "requestBody": {
           "description": "Details about the copy pinboard.",
@@ -4241,7 +4241,7 @@
           "Pinboard"
         ],
         "summary": "Get Pinboard by Name",
-        "description": "Users who have create access for dashboard can retrieve pinboard item.",
+        "description": "Users who have create access for the dashboard can retrieve pinboard items.",
         "operationId": "Dashboards_GetEmbedPinBoard",
         "parameters": [
           {
@@ -4295,7 +4295,7 @@
           "Pinboard"
         ],
         "summary": "Update Pinboard",
-        "description": "Updates an existing pinboard in a particular site.",
+        "description": "Update an existing pinboard on a specific site.",
         "operationId": "Pinboard_UpdateEmbedPinBoard",
         "parameters": [
           {
@@ -4312,7 +4312,7 @@
           }
         ],
         "requestBody": {
-          "description": "Details about the pinboard passed will be updated.",
+          "description": "Details regarding the passed pinboard will be updated.",
           "content": {
             "application/json": {
               "schema": {
@@ -4359,7 +4359,7 @@
           "Pinboard"
         ],
         "summary": "Delete Pinboard",
-        "description": "Users who have created a pinboard can delete that pinboard.",
+        "description": "Users who have created a pinboard can delete it.",
         "operationId": "Pinboard_RemoveEmbedPinBoard",
         "parameters": [
           {
@@ -4405,10 +4405,10 @@
           "Pinboard"
         ],
         "summary": "Check Pinboard name existence",
-        "description": "Current user can check whether the pinboard is already exists or not by providing name in the request body.",
+        "description": "The current user can check whether the pinboard already exists by providing the name in the request body.",
         "operationId": "Pinboard_IsPinBoardNameExists",
         "requestBody": {
-          "description": "Details about the item passed will be checked.",
+          "description": "Details about the item that was passed will be checked.",
           "content": {
             "application/json": {
               "schema": {
@@ -4453,7 +4453,7 @@
         "description": "Publish the dashboard from one site to other site(s). \n\n<B> **NOTE:** </B> This API is not available in Syncfusion Managed Cloud Server.",
         "operationId": "Publish_Dashboard",
         "requestBody": {
-          "description": "Details about the publish dashboard, which is sent as request.",
+          "description": "Details about the publish dashboard, which have been sent as a request.",
           "content": {
             "application/json": {
               "schema": {
@@ -4504,7 +4504,7 @@
           "Publish to another site"
         ],
         "summary": "Get Published Items",
-        "description": "Get Published Items details.",
+        "description": "Please provide the details of the published items.",
         "operationId": "Publish_GetPublishedItemsDetails",
         "responses": {
           "200": {
@@ -4534,10 +4534,10 @@
           "Publish to another site"
         ],
         "summary": "Add External Site",
-        "description": "Adds the external site details.\n\n<B> **NOTE:** </B> This API is not available in Syncfusion Managed Cloud Server.",
+        "description": "Please provide the details of the external site.\n\n<B> **NOTE:** </B> This API is not available in Syncfusion Managed Cloud Server.",
         "operationId": "Add_External_Sites",
         "requestBody": {
-          "description": "Details about the add external site, which is sent as request.",
+          "description": "Details about the external site that was requested to be added.",
           "content": {
             "application/json": {
               "schema": {
@@ -4584,10 +4584,10 @@
           "Permission"
         ],
         "summary": "Add User Permission",
-        "description": "Administrators can add a new permission to the specific user by providing permission details.<br /><br />To add a specific permission, you must provide the item ID (Category Id, Schedule Id, and Dashboard Id) for the permission entity (SpecificCategory, SpecificSchedule, and SpecificDashboard).",
+        "description": "Administrators can add a new permission to a specific user by providing the permission details.<br /><br />To add a specific permission, you must provide the item ID (Category Id, Schedule Id, and Dashboard Id) for the permission entity (SpecificCategory, SpecificSchedule, and SpecificDashboard).",
         "operationId": "Permission_AddUserPermission",
         "requestBody": {
-          "description": "Details about the permissions passed will be added to specified user id.",
+          "description": "Details about the permissions that were passed will be added to the specified user id.",
           "content": {
             "application/json": {
               "schema": {
@@ -4646,7 +4646,7 @@
           "Permission"
         ],
         "summary": "Get User Permissions",
-        "description": "Administrators can get the list of permissions of the specific user.",
+        "description": "Administrators can obtain the list of permissions for the specific user.",
         "operationId": "Permission_GetUserPermission",
         "parameters": [
           {
@@ -4704,7 +4704,7 @@
           "Permission"
         ],
         "summary": "Delete User Permission",
-        "description": "Administrators can delete the specific user's permission.",
+        "description": "Administrators have the ability to delete a specific user's permission.",
         "operationId": "Permission_DeleteUserPermission",
         "parameters": [
           {
@@ -4754,7 +4754,7 @@
         "description": "Administrators can add a new permission to the specific group by providing permission details.<br /><br />To add a specific permission, you must provide the item ID (Category Id, Schedule Id, and Dashboard Id) for the permission entity (SpecificCategory, SpecificSchedule, and SpecificDashboard).",
         "operationId": "Permission_AddGroupPermission",
         "requestBody": {
-          "description": "Details about the permissions passed will be added to specified group id.",
+          "description": "Details about the permissions that were passed will be added to the specified group ID.",
           "content": {
             "application/json": {
               "schema": {
@@ -4813,7 +4813,7 @@
           "Permission"
         ],
         "summary": "Get Group Permissions",
-        "description": "Administrators can get the list of permissions of the specific group.",
+        "description": "Administrators can obtain the list of permissions for the specific group.",
         "operationId": "Permission_GetGroupPermission",
         "parameters": [
           {
@@ -4871,7 +4871,7 @@
           "Permission"
         ],
         "summary": "Delete Group Permission",
-        "description": "Administrators can delete the specific group permission.",
+        "description": "Administrators have the ability to delete specific group permissions.",
         "operationId": "Permission_DeleteGroupPermission",
         "parameters": [
           {
@@ -4918,7 +4918,7 @@
           "Category"
         ],
         "summary": "Add Category",
-        "description": "Users who have a create access for categories, can add a new category.",
+        "description": "Users who have create access for categories can add a new category.",
         "operationId": "Category_AddCategory",
         "requestBody": {
           "description": "Details about the passed category will be added.",
@@ -4974,7 +4974,7 @@
           "Category"
         ],
         "summary": "Get Categories",
-        "description": "Users who have created the categories can view the category lists.",
+        "description": "Users who have created the categories are able to view the lists of categories.",
         "operationId": "Category_GetCategories",
         "parameters": [
           {
@@ -5063,10 +5063,10 @@
           "Category"
         ],
         "summary": "Update Category",
-        "description": "Users who have write access for categories can update an existing category.",
+        "description": "Users who have write access to categories can update an existing category.",
         "operationId": "Category_UpdateCategory",
         "requestBody": {
-          "description": "Details about the passed category will be updated to the specified category id.",
+          "description": "Details about the category that has been passed will be updated to the specified category ID.",
           "content": {
             "application/json": {
               "schema": {
@@ -5125,7 +5125,7 @@
           "Category"
         ],
         "summary": "Get Category by Id",
-        "description": "Users who created the category can view the category details.",
+        "description": "Users who created the category are able to view the category details.",
         "operationId": "Category_GetCategory",
         "parameters": [
           {
@@ -5231,10 +5231,10 @@
           "Schedule"
         ],
         "summary": "Add Dashboard Schedule",
-        "description": "Users who have create access to the schedule can add new dashboard schedule.",
+        "description": "Users who have create access to the schedule can add a new dashboard schedule.",
         "operationId": "Dashboards_AddSchedule",
         "requestBody": {
-          "description": "Details about the schedule passed will be added.",
+          "description": "Details about the schedule that was passed will be added.",
           "content": {
             "application/json": {
               "schema": {
@@ -5291,7 +5291,7 @@
           "Schedule"
         ],
         "summary": "Get Dashboard Schedules",
-        "description": "Users who have read access to the schedule can get the list of dashboard schedules.",
+        "description": "Users who have read access to the schedule can access the list of dashboard schedules.",
         "operationId": "Dashboards_GetScheduleItems",
         "parameters": [
           {
@@ -5386,7 +5386,7 @@
           "Schedule"
         ],
         "summary": "Get Dashboard Schedule by Id",
-        "description": "Users who have read access to the schedule can get the particular dashboard schedule.",
+        "description": "Users who have read access to the schedule can access the specific dashboard schedule.",
         "operationId": "Dashboards_GetSchedule",
         "parameters": [
           {
@@ -5445,7 +5445,7 @@
           "Schedule"
         ],
         "summary": "Update Dashboard Schedule",
-        "description": "Users who have write access for schedule can update an existing dashboard schedule.",
+        "description": "Users who have write access to the schedule can update an existing dashboard schedule.",
         "operationId": "Dashboards_UpdateSchedule",
         "parameters": [
           {
@@ -5463,7 +5463,7 @@
           }
         ],
         "requestBody": {
-          "description": "Details about the schedule passed will be updated.",
+          "description": "Details about the schedule that was passed will be updated.",
           "content": {
             "application/json": {
               "schema": {
@@ -5530,7 +5530,7 @@
           "Schedule"
         ],
         "summary": "Run Schedule",
-        "description": "Users who have read access for schedule can run the particular schedule.",
+        "description": "Users who have read access to the schedule can run that specific schedule.",
         "operationId": "Scheduler_RunSchedule",
         "parameters": [
           {
@@ -5591,7 +5591,7 @@
           "Schedule"
         ],
         "summary": "Delete Schedule",
-        "description": "Users who have delete access to the item type schedule can delete the particular dashboards schedule by providing the Schedule Id.",
+        "description": "Users who have delete access to the item type schedule can delete the specific dashboard schedule by providing the Schedule Id.",
         "operationId": "Scheduler_DeleteSchedule",
         "parameters": [
           {
@@ -5642,10 +5642,10 @@
           "Slideshow"
         ],
         "summary": "Add Slideshow",
-        "description": "Users who have create access to the slideshow can add a new slideshow.",
+        "description": "Users who have created access to the slideshow can add a new slideshow.",
         "operationId": "SlideShow_AddSlideshow",
         "requestBody": {
-          "description": "Details about the slideshow passed will be added.",
+          "description": "Details about the passed slideshow will be added.",
           "content": {
             "application/json": {
               "schema": {
@@ -5698,7 +5698,7 @@
           "Slideshow"
         ],
         "summary": "Get Slideshows",
-        "description": "Retrieves the list of slideshow details.",
+        "description": "Retrieve the list of slideshow details.",
         "operationId": "SlideShow_GetSlideshows",
         "parameters": [
           {
@@ -5789,7 +5789,7 @@
           "Slideshow"
         ],
         "summary": "Get Slideshow by Id",
-        "description": "Users who have read access to the slideshow can get slideshow detail.",
+        "description": "Users who have read access to the slideshow can access slideshow details.",
         "operationId": "SlideShow_GetSlideshowDetail",
         "parameters": [
           {
@@ -5848,7 +5848,7 @@
           "Slideshow"
         ],
         "summary": "Update Slideshow",
-        "description": "Users who have write access to the slideshow can update the slideshow detail.",
+        "description": "Users who have write access to the slideshow can update the details of the slideshow.",
         "operationId": "SlideShow_EditSlideshow",
         "parameters": [
           {
@@ -5866,7 +5866,7 @@
           }
         ],
         "requestBody": {
-          "description": "Details about the slideshow passed will be updated.",
+          "description": "Details about the passed slideshow will be updated.",
           "content": {
             "application/json": {
               "schema": {
@@ -5919,7 +5919,7 @@
           "Slideshow"
         ],
         "summary": "Delete Slideshow",
-        "description": "Users can delete the specific slideshow.",
+        "description": "Users have the ability to delete the specific slideshow.",
         "operationId": "SlideShow_DeleteSlideshow",
         "parameters": [
           {
@@ -6318,7 +6318,7 @@
           },
           "Connection": {
             "type": "object",
-            "description": "You need to send the connection object for each data source based on its type. Please refer its relative documentation for the connection details as follows [Web Live](/working-with-data-sources/data-connectors/live-web/#connecting-bold-bi-to-web-live-data-source-via-rest-api), [MongoDB](/working-with-data-sources/data-connectors/mongodb/#connecting-bold-bi-to-mongodb-data-source-via-rest-api), [amazonathena](/working-with-data-sources/data-connectors/amazon-athena/#connecting-bold-bi-to-amazon-athena-data-source-via-rest-api), [amazonauroramysql](/working-with-data-sources/data-connectors/amazon-aurora/#connecting-bold-bi-to-amazon-aurora-data-source-via-rest-api), [amazonaurorapostgresql](/working-with-data-sources/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsmysql](/working-with-data-sources/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsmariadb](/working-with-data-sources/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsamazonauroramysql](/working-with-data-sources/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsamazonaurorapostgresql](/working-with-data-sources/data-connectors/amazon-aurora/#connecting-bold-bi-to-amazon-aurora-data-source-via-rest-api), [amazonrdspostgresql](/working-with-data-sources/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdssqlserver](/working-with-data-sources/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsoracle](/working-with-data-sources/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [awsopensearch](/working-with-data-sources/data-connectors/aws-opensearch/#connecting-bold-bi-to-aws-open-search-data-source-via-rest-api), [redshift](/working-with-data-sources/data-connectors/amazon-redshift/#connecting-bold-bi-to-amazon-redshift-data-source-via-rest-api), [azuresynapseanalytics](/working-with-data-sources/data-connectors/azure-synapse-analytics/#connecting-bold-bi-to-azure-synapse-analytics-data-source-via-rest-api), [cdata](/working-with-data-sources/data-connectors/cdata/#connecting-bold-bi-to-cdata-data-source-via-rest-api), [clickhouse](/working-with-data-sources/data-connectors/clickhouse/#connecting-bold-bi-to-clickhouse-data-source-via-rest-api), [elasticsearch](/working-with-data-sources/data-connectors/elastic-search/#connecting-bold-bi-to-elastic-search-data-source-via-rest-api), [googlecloudmysql](/working-with-data-sources/data-connectors/google-cloud-sql/#connecting-bold-bi-to-google-cloud-sql-data-source-via-rest-api), [googlecloudpostgresql](/working-with-data-sources/data-connectors/google-cloud-sql/#connecting-bold-bi-to-google-cloud-sql-data-source-via-rest-api), [influxdb](/working-with-data-sources/data-connectors/influxdb/#connecting-bold-bi-to-influxdb-data-source-via-rest-api), [mariadb](/working-with-data-sources/data-connectors/mariadb/#connecting-bold-bi-to-mariadb-data-source-via-rest-api), [ssas](/working-with-data-sources/data-connectors/ssas/#connecting-bold-bi-to-microsoft-sql-server-analysis-servicesssas-via-rest-api), [mysql](/working-with-data-sources/data-connectors/mysql/#connecting-bold-bi-to-mysql-data-source-via-rest-api), [oracle](/working-with-data-sources/data-connectors/oracle/#connecting-bold-bi-to-oracle-data-source-via-rest-api), [postgresql](/working-with-data-sources/data-connectors/postgresql/#connecting-bold-bi-to-postgresql-data-source-via-rest-api), [presto](/working-with-data-sources/data-connectors/presto/#connecting-bold-bi-to-presto-data-source-via-rest-api), [singlestore](/working-with-data-sources/data-connectors/single-store/#connecting-bold-bi-to-singlestore-data-source-via-rest-api), [sqlserver](/working-with-data-sources/data-connectors/sql-data-source/#connecting-bold-bi-to-microsoft-sql-server-data-source-via-rest-api), [snowflake](/working-with-data-sources/data-connectors/snowflake/#connecting-bold-bi-to-snowflake-data-source-via-rest-api), [sparksql](/working-with-data-sources/data-connectors/sparksql/#connecting-bold-bi-to-sparksql-data-source-via-rest-api), [odbc](/working-with-data-sources/data-connectors/odbc/#connecting-bold-bi-to-odbc-data-source-via-rest-api), [rockset](/working-with-data-sources/data-connectors/rockset/#connecting-bold-bi-to-rockset-data-source-via-rest-api)."
+            "description": "You need to send the connection object for each data source based on its type. Please refer its relative documentation for the connection details as follows [Web Live](/working-with-data-sources/data-connectors/live-web/#connecting-bold-bi-to-web-live-data-source-via-rest-api), [MongoDB](/working-with-data-sources/data-connectors/mongodb/#connecting-bold-bi-to-mongodb-data-source-via-rest-api), [amazonathena](/working-with-data-sources/data-connectors/amazon-athena/#connecting-bold-bi-to-amazon-athena-data-source-via-rest-api), [amazonauroramysql](/working-with-data-sources/data-connectors/amazon-aurora/#connecting-bold-bi-to-amazon-aurora-data-source-via-rest-api), [amazonaurorapostgresql](/working-with-data-sources/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsmysql](/working-with-data-sources/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsmariadb](/working-with-data-sources/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsamazonauroramysql](/working-with-data-sources/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsamazonaurorapostgresql](/working-with-data-sources/data-connectors/amazon-aurora/#connecting-bold-bi-to-amazon-aurora-data-source-via-rest-api), [amazonrdspostgresql](/working-with-data-sources/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdssqlserver](/working-with-data-sources/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsoracle](/working-with-data-sources/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [awsopensearch](/working-with-data-sources/data-connectors/aws-opensearch/#connecting-bold-bi-to-aws-open-search-data-source-via-rest-api), [redshift](/working-with-data-sources/data-connectors/amazon-redshift/#connecting-bold-bi-to-amazon-redshift-data-source-via-rest-api), [azuresynapseanalytics](/working-with-data-sources/data-connectors/azure-synapse-analytics/#connecting-bold-bi-to-azure-synapse-analytics-data-source-via-rest-api), [cdata](/working-with-data-sources/data-connectors/cdata/#connecting-bold-bi-to-cdata-data-source-via-rest-api), [clickhouse](/working-with-data-sources/data-connectors/clickhouse/#connecting-bold-bi-to-clickhouse-data-source-via-rest-api), [elasticsearch](/working-with-data-sources/data-connectors/elastic-search/#connecting-bold-bi-to-elastic-search-data-source-via-rest-api), [googlecloudmysql](/working-with-data-sources/data-connectors/google-cloud-sql/#connecting-bold-bi-to-google-cloud-sql-data-source-via-rest-api), [googlecloudpostgresql](/working-with-data-sources/data-connectors/google-cloud-sql/#connecting-bold-bi-to-google-cloud-sql-data-source-via-rest-api), [influxdb](/working-with-data-sources/data-connectors/influxdb/#connecting-bold-bi-to-influxdb-data-source-via-rest-api), [mariadb](/working-with-data-sources/data-connectors/mariadb/#connecting-bold-bi-to-mariadb-data-source-via-rest-api), [ssas](/working-with-data-sources/data-connectors/ssas/#connecting-bold-bi-to-microsoft-sql-server-analysis-servicesssas-via-rest-api), [mysql](/working-with-data-sources/data-connectors/mysql/#connecting-bold-bi-to-mysql-data-source-via-rest-api), [oracle](/working-with-data-sources/data-connectors/oracle/#connecting-bold-bi-to-oracle-data-source-via-rest-api), [postgresql](/working-with-data-sources/data-connectors/postgresql/#connecting-bold-bi-to-postgresql-data-source-via-rest-api), [presto](/working-with-data-sources/data-connectors/presto/#connecting-bold-bi-to-presto-data-source-via-rest-api), [singlestore](/working-with-data-sources/data-connectors/single-store/#connecting-bold-bi-to-singlestore-data-source-via-rest-api), [sqlserver](/working-with-data-sources/data-connectors/ms-sql-server/#connecting-bold-bi-to-microsoft-sql-server-data-source-via-rest-api), [snowflake](/working-with-data-sources/data-connectors/snowflake/#connecting-bold-bi-to-snowflake-data-source-via-rest-api), [sparksql](/working-with-data-sources/data-connectors/sparksql/#connecting-bold-bi-to-sparksql-data-source-via-rest-api), [odbc](/working-with-data-sources/data-connectors/odbc/#connecting-bold-bi-to-odbc-data-source-via-rest-api), [rockset](/working-with-data-sources/data-connectors/rockset/#connecting-bold-bi-to-rockset-data-source-via-rest-api)."
           },
           "RefreshSettings": {
             "properties": {
@@ -6396,7 +6396,7 @@
           },
           "Connection": {
             "type": "object",
-            "description": "You need to send the connection object for each data source based on its type. Please refer its relative documentation for the connection details as follows [amazonathena](/working-with-data-sources/data-connectors/amazon-athena/#connecting-bold-bi-to-amazon-athena-data-source-via-rest-api), [amazonauroramysql](/working-with-data-sources/data-connectors/amazon-aurora/#connecting-bold-bi-to-amazon-aurora-data-source-via-rest-api), [amazonaurorapostgresql](/working-with-data-sources/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsmysql](/working-with-data-sources/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsmariadb](/working-with-data-sources/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsamazonauroramysql](/working-with-data-sources/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsamazonaurorapostgresql](/working-with-data-sources/data-connectors/amazon-aurora/#connecting-bold-bi-to-amazon-aurora-data-source-via-rest-api), [amazonrdspostgresql](/working-with-data-sources/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdssqlserver](/working-with-data-sources/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsoracle](/working-with-data-sources/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [awsopensearch](/working-with-data-sources/data-connectors/aws-opensearch/#connecting-bold-bi-to-aws-open-search-data-source-via-rest-api), [redshift](/working-with-data-sources/data-connectors/amazon-redshift/#connecting-bold-bi-to-amazon-redshift-data-source-via-rest-api), [azuresynapseanalytics](/working-with-data-sources/data-connectors/azure-synapse-analytics/#connecting-bold-bi-to-azure-synapse-analytics-data-source-via-rest-api), [cdata](/working-with-data-sources/data-connectors/cdata/#connecting-bold-bi-to-cdata-data-source-via-rest-api), [clickhouse](/working-with-data-sources/data-connectors/clickhouse/#connecting-bold-bi-to-clickhouse-data-source-via-rest-api), [elasticsearch](/working-with-data-sources/data-connectors/elastic-search/#connecting-bold-bi-to-elastic-search-data-source-via-rest-api), [googlecloudmysql](/working-with-data-sources/data-connectors/google-cloud-sql/#connecting-bold-bi-to-google-cloud-sql-data-source-via-rest-api), [googlecloudpostgresql](/working-with-data-sources/data-connectors/google-cloud-sql/#connecting-bold-bi-to-google-cloud-sql-data-source-via-rest-api), [influxdb](/working-with-data-sources/data-connectors/influxdb/#connecting-bold-bi-to-influxdb-data-source-via-rest-api), [mariadb](/working-with-data-sources/data-connectors/mariadb/#connecting-bold-bi-to-mariadb-data-source-via-rest-api), [ssas](/working-with-data-sources/data-connectors/ssas/#connecting-bold-bi-to-microsoft-sql-server-analysis-servicesssas-via-rest-api), [mysql](/working-with-data-sources/data-connectors/mysql/#connecting-bold-bi-to-mysql-data-source-via-rest-api), [oracle](/working-with-data-sources/data-connectors/oracle/#connecting-bold-bi-to-oracle-data-source-via-rest-api), [postgresql](/working-with-data-sources/data-connectors/postgresql/#connecting-bold-bi-to-postgresql-data-source-via-rest-api), [presto](/working-with-data-sources/data-connectors/presto/#connecting-bold-bi-to-presto-data-source-via-rest-api), [singlestore](/working-with-data-sources/data-connectors/single-store/#connecting-bold-bi-to-singlestore-data-source-via-rest-api), [sqlserver](/working-with-data-sources/data-connectors/sql-data-source/#connecting-bold-bi-to-microsoft-sql-server-data-source-via-rest-api), [snowflake](/working-with-data-sources/data-connectors/snowflake/#connecting-bold-bi-to-snowflake-data-source-via-rest-api), [sparksql](/working-with-data-sources/data-connectors/sparksql/#connecting-bold-bi-to-sparksql-data-source-via-rest-api), [odbc](/working-with-data-sources/data-connectors/odbc/#connecting-bold-bi-to-odbc-data-source-via-rest-api), [rockset](/working-with-data-sources/data-connectors/rockset/#connecting-bold-bi-to-rockset-data-source-via-rest-api)."
+            "description": "You need to send the connection object for each data source based on its type. Please refer its relative documentation for the connection details as follows [amazonathena](/working-with-data-sources/data-connectors/amazon-athena/#connecting-bold-bi-to-amazon-athena-data-source-via-rest-api), [amazonauroramysql](/working-with-data-sources/data-connectors/amazon-aurora/#connecting-bold-bi-to-amazon-aurora-data-source-via-rest-api), [amazonaurorapostgresql](/working-with-data-sources/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsmysql](/working-with-data-sources/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsmariadb](/working-with-data-sources/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsamazonauroramysql](/working-with-data-sources/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsamazonaurorapostgresql](/working-with-data-sources/data-connectors/amazon-aurora/#connecting-bold-bi-to-amazon-aurora-data-source-via-rest-api), [amazonrdspostgresql](/working-with-data-sources/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdssqlserver](/working-with-data-sources/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [amazonrdsoracle](/working-with-data-sources/data-connectors/amazon-rds/#connecting-bold-bi-to-amazon-rds-data-source-via-rest-api), [awsopensearch](/working-with-data-sources/data-connectors/aws-opensearch/#connecting-bold-bi-to-aws-open-search-data-source-via-rest-api), [redshift](/working-with-data-sources/data-connectors/amazon-redshift/#connecting-bold-bi-to-amazon-redshift-data-source-via-rest-api), [azuresynapseanalytics](/working-with-data-sources/data-connectors/azure-synapse-analytics/#connecting-bold-bi-to-azure-synapse-analytics-data-source-via-rest-api), [cdata](/working-with-data-sources/data-connectors/cdata/#connecting-bold-bi-to-cdata-data-source-via-rest-api), [clickhouse](/working-with-data-sources/data-connectors/clickhouse/#connecting-bold-bi-to-clickhouse-data-source-via-rest-api), [elasticsearch](/working-with-data-sources/data-connectors/elastic-search/#connecting-bold-bi-to-elastic-search-data-source-via-rest-api), [googlecloudmysql](/working-with-data-sources/data-connectors/google-cloud-sql/#connecting-bold-bi-to-google-cloud-sql-data-source-via-rest-api), [googlecloudpostgresql](/working-with-data-sources/data-connectors/google-cloud-sql/#connecting-bold-bi-to-google-cloud-sql-data-source-via-rest-api), [influxdb](/working-with-data-sources/data-connectors/influxdb/#connecting-bold-bi-to-influxdb-data-source-via-rest-api), [mariadb](/working-with-data-sources/data-connectors/mariadb/#connecting-bold-bi-to-mariadb-data-source-via-rest-api), [ssas](/working-with-data-sources/data-connectors/ssas/#connecting-bold-bi-to-microsoft-sql-server-analysis-servicesssas-via-rest-api), [mysql](/working-with-data-sources/data-connectors/mysql/#connecting-bold-bi-to-mysql-data-source-via-rest-api), [oracle](/working-with-data-sources/data-connectors/oracle/#connecting-bold-bi-to-oracle-data-source-via-rest-api), [postgresql](/working-with-data-sources/data-connectors/postgresql/#connecting-bold-bi-to-postgresql-data-source-via-rest-api), [presto](/working-with-data-sources/data-connectors/presto/#connecting-bold-bi-to-presto-data-source-via-rest-api), [singlestore](/working-with-data-sources/data-connectors/single-store/#connecting-bold-bi-to-singlestore-data-source-via-rest-api), [sqlserver](/working-with-data-sources/data-connectors/ms-sql-server/#connecting-bold-bi-to-microsoft-sql-server-data-source-via-rest-api), [snowflake](/working-with-data-sources/data-connectors/snowflake/#connecting-bold-bi-to-snowflake-data-source-via-rest-api), [sparksql](/working-with-data-sources/data-connectors/sparksql/#connecting-bold-bi-to-sparksql-data-source-via-rest-api), [odbc](/working-with-data-sources/data-connectors/odbc/#connecting-bold-bi-to-odbc-data-source-via-rest-api), [rockset](/working-with-data-sources/data-connectors/rockset/#connecting-bold-bi-to-rockset-data-source-via-rest-api)."
           }
         },
         "description": "Data Source details."
@@ -8183,7 +8183,7 @@
             ]
           }
         },
-        "description": "Details about the schedule passed will be added."
+        "description": "Details about the schedule that was passed will be added."
       },
       "ScheduleExportFormat": {
         "type": "object",
@@ -8666,7 +8666,7 @@
             ]
           }
         },
-        "description": "Details about the schedule passed will be updated."
+        "description": "Details about the schedule that was passed will be updated."
       },
       "ApiPublicItems": {
         "type": "object",

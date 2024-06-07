@@ -11,7 +11,7 @@ documentation: ug
 
 The Bold BI dashboard designer supports connecting to Buffer web services through the REST API.
 
-> **Note:** The buffer data source is available in On-Premises Deployment but not in Syncfusion Managed Cloud Server.
+> **Note:** The buffer data source is available in On-Premises Deployment but not in the Syncfusion Managed Cloud Server.
 
 ## Choose Buffer data source
 
@@ -34,11 +34,11 @@ To configure the Buffer data source, follow the steps below:
 Use the following steps to authenticate with the Buffer web service.
 
 1. Click on the data source, and you will be prompted with a login window. Enter the credentials of your Buffer account to authorize.
-2. Click **Allow** in the authorization window to accept the scopes requested by Bold BI dashboards.
+2. Click on **Allow** in the authorization window to accept the scopes requested by Bold BI dashboards.
 
    > **NOTE:**  If permission is denied, the account will not be accessible from the dashboard.
    
-3. Set a name to identify the account and click **Next**. 
+3. Provide a name to identify the account and click **Next**. 
 4. You have now successfully authorized your connection. Click **Connect** to continue with the data source connection.
 5. To connect via an existing account, refer to [Connected Accounts](/working-with-data-sources/data-connectors/buffer/#connected-accounts-for-oauth-data-sources).
 
@@ -67,8 +67,7 @@ You can also edit the connection information set here using the [Edit Connection
 Max Rows
 </td>
 <td>
-Most of the REST APIs return only fewer data on a single API request. To pull the amount of data you need, set a value in this field.  
-Pagination is handled internally and will fetch the amount of data you need.
+Most REST APIs return only a limited amount of data on a single API request. To retrieve the necessary amount of data, you can set a value in this field. Pagination is handled internally and will fetch the required data.
 </td>
 </tr>
 <tr>
@@ -76,7 +75,7 @@ Pagination is handled internally and will fetch the amount of data you need.
 Refresh Settings
 </td>
 <td>
-Period of time before next refresh call is triggered. This will automatically trigger a call for the API configured in the data source to keep the data up to date. If you do not want to sync your new data, choose ‘Never’.
+The period of time before the next refresh call is triggered. This will automatically trigger a call to the API configured in the data source to keep the data up to date. If you do not want to sync your new data, choose ‘Never’.
 </td>
 </tr>
 <tr>

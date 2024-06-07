@@ -4,7 +4,7 @@
 	},
 	"Deploying Bold BI": {
 		"Overview": "overview",
-		"Deploying in Windows": {
+		"Deploying on Windows": {
 			"Prerequisites": "prerequisites-windows",
 			"Recommended System Configuration": "recommended-system-configuration",
 			"Installation and Deployment": "installation-and-deployment",
@@ -12,23 +12,23 @@
 			"Installing Bold BI over Bold Reports": "install-when-bold-report-exist",
 			"Silent Installation": "silent-installation"
 		},
-		"Deploying in Azure": {
+		"Deploying on Azure": {
 			"Prerequisites": "prerequisites-azure-vm",
 			"Recommended Azure VM configuration": "vm-configuration",
 			"Self-deploy a Bold BI Server on Microsoft Azure": "self-deploy-azure-vm",
 			"Bold BI in Microsoft Azure Marketplace": "new-azure-vm",
 			"Upgrade VM to latest version": "update-azure-vm"
 		},
-		"Deploying in AWS": {
+		"Deploying on AWS": {
 			"Prerequisites": "prerequisites-aws-vm",
 			"Self-deploy a Bold BI Server on AWS VM": "deploy-aws-vm",
 			"Upgrade VM to latest version": "update-aws-vm"
 		},
-		"Deploying in GCP": {
+		"Deploying on GCP": {
 			"Prerequisites": "prerequisites-gcp-vm",
 			"Self-deploy a Bold BI Server on GCP VM": "deploy-gcp-vm"
 		},
-		"Deploying in Azure App Service": {
+		"Deploying on Azure App Service": {
 			"Prerequisites": "prerequisites",
 			"Recommendations": "recommendations",
 			"Using ARM template": "using-arm-template",
@@ -38,7 +38,7 @@
 				"Upgrade to v4.1": "upgrade-to-v4.1"
 			}
 		},
-		"Deploying in Linux": {
+		"Deploying on Linux": {
 			"Prerequisites": "prerequisites-linux",
 			"Recommended System Configuration": "recommended-system-configuration",
 			"Installation and Deployment": {
@@ -65,17 +65,17 @@
 			},
 			"Upgrading Bold BI Linux Server": "upgrade-to-latest"
 		},
-		"Deploying in Kubernetes": {
+		"Deploying on Kubernetes": {
 			"Prerequisites": "prerequisites-kubernetes",
 			"Recommended System Configuration": "recommended-system-configuration",
 			"Bold BI on Kubernetes": "bold-bi-on-kubernetes"
 		},	
-		"Deploying in Docker": {
+		"Deploying on Docker": {
 			"Prerequisites": "deployment-prerequisites",
 			"Recommended System Configuration": "recommended-system-configuration",
 			"Bold BI on Docker": "bold-bi-on-docker"
 		},
-	"Upgrade guidelines":"upgrade-guidelines"
+	"Upgrade Guidelines":"upgrade-guidelines"
 	},
 	"Application Startup": {
 		"Latest": "latest",
@@ -318,7 +318,7 @@
 			"Snowflake": "snowflake",
 			"SparkPost": "sparkpost",
 			"SparkSQL": "sparksql",
-			"SQL Data Sources": "sql-data-source",
+			"Microsoft SQL Server": "ms-sql-server",
 			"SQLite": "sqlite",
 			"SquareUp": "squareup",
 			"Stripe": "stripe",
@@ -388,7 +388,7 @@
 			"PostgreSQL": "postgresql",
 			"Salesforce": "salesforce",
 			"Slack": "slack",
-			"MSSQL": "sql",
+			"Microsoft SQL Server": "sql",
 			"Web": "web",			
 			"Stripe": "strip",
 			"Strapi": "web-analytics",
@@ -500,6 +500,7 @@
 		"Data Alerts": "data-alerts",
 		"Data Cache": "data-cache",
 		"Publish Dashboard":"publish-dashboard",
+		"Dashboard Schedule":"dashboard-schedule",
 		"Preview Dashboard": {
 			"Maximizing Widget View": "maximizing-widget-view",
 			"Exporting Reports from dashboard": "dashboard-settings",

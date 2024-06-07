@@ -10,7 +10,7 @@ documentation: ug
 
 A GitHub link has been provided to [get](https://github.com/boldbi/angular-with-aspnet-core-sample) the sample application, which demonstrates the rendering of a dashboard with a list of dashboards available on your Bold BI server. This is followed by steps to create your own embedding application in `Angular`. 
 
-> **NOTE:** The best way to get started would be to read the [Getting Started](/getting-started/embedding-in-your-application/) section of the documentation first. The `Getting Started` guide provides you with enough information that you need to know before working on the sample. To explore the Angular embedding sample in Bold BI v3.2.16, please refer to this [link](/embedding-options/embedding-sdk/samples/v3.2.16/angular/).
+> **NOTE:** The best way to get started would be to read the [Getting Started](/getting-started/embedding-in-your-application/) section of the documentation first. The `Getting Started` guide provides you with enough information that you need to know before working on the sample. To explore the Angular embedding sample in Bold BI v3.2.16, please refer to the [Angular with ASP.NET Core](/embedding-options/embedding-sdk/samples/v3.2.16/angular/) for more details.
 
 ## Prerequisites
 

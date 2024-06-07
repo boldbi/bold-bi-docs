@@ -62,9 +62,9 @@ To authenticate with the Asana web service, follow these steps:
 
    > **NOTE:** If permission is denied, the account will not be accessible from the dashboard.
    
-3. Set a name to identify the account and click **Next**. 
+3. Provide a name to identify the account and click **Next**. 
 4. You have successfully authorized your connection. Click **Connect** to continue with the data source connection.
-5. To connect via existing account, refer [Connected Accounts](/working-with-data-sources/data-connectors/asana/#connected-accounts-for-oauth-data-sources).
+5. To connect via an existing account, refer [Connected Accounts](/working-with-data-sources/data-connectors/asana/#connected-accounts-for-oauth-data-sources).
 
 > **NOTE:** If you need to connect to another account, click **Connect New Account.**
 
@@ -93,8 +93,7 @@ You can also edit the connection information set here using the [Edit Connection
 Max Rows
 </td>
 <td>
-Most of the REST APIs return only fewer data on a single API request. To pull the amount of data you need, set a value in this field.  
-Pagination is handled internally and will fetch the amount of data you need.
+Most REST APIs return only a limited amount of data on a single API request. To retrieve the necessary amount of data, you can set a value in this field. Pagination is handled internally and will fetch the required data.
 </td>
 </tr>
 <tr>
@@ -102,7 +101,7 @@ Pagination is handled internally and will fetch the amount of data you need.
 Refresh Settings
 </td>
 <td>
-Period of time before next refresh call is triggered. This will automatically trigger a call for the API configured in the data source to keep the data up to date. If you do not want to sync your new data, choose ‘Never’.
+The period of time before the next refresh call is triggered. This will automatically trigger a call to the API configured in the data source to keep the data up to date. If you do not want to sync your new data, choose ‘Never’.
 </td>
 </tr>
 <tr>

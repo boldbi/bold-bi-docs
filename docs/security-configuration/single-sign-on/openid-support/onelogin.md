@@ -116,8 +116,7 @@ Configure the group import setting in Bold BI using OneLogin, as shown in the im
 
 ![OneLogin Group](/static/assets/site-administration/openid-support/images/OneLogin-group.png)
 
-To generate the API client credentials, please follow the link below,
-https://developers.onelogin.com/api-docs/1/getting-started/working-with-api-credentials
+To generate the API client credentials, please follow the link: [OneLogin API Credentials Guide](https://developers.onelogin.com/api-docs/1/getting-started/working-with-api-credentials)
 
 We use the client ID and client secret from the API client credentials to obtain a token for accessing the groups API. In order to access OneLogin APIs, we require the `Region` from the API Domain. Please refer to the image below for the region.
 

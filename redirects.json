@@ -17,171 +17,411 @@
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-windows/",
-    "toPath": "/deploying-bold-bi/deploying-in-windows/"
+    "toPath": "/deploying-bold-bi/deploying-on-windows/"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-windows/prerequisites-windows/",
-    "toPath": "/deploying-bold-bi/deploying-in-windows/prerequisites-windows/"
+    "toPath": "/deploying-bold-bi/deploying-on-windows/prerequisites-windows/"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-windows/recommended-system-configuration/",
-    "toPath": "/deploying-bold-bi/deploying-in-windows/recommended-system-configuration/"
+    "toPath": "/deploying-bold-bi/deploying-on-windows/recommended-system-configuration/"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-windows/installation-and-deployment/",
-    "toPath": "/deploying-bold-bi/deploying-in-windows/installation-and-deployment/"
+    "toPath": "/deploying-bold-bi/deploying-on-windows/installation-and-deployment/"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-windows/upgrade-to-latest/",
-    "toPath": "/deploying-bold-bi/deploying-in-windows/upgrade-to-latest/"
+    "toPath": "/deploying-bold-bi/deploying-on-windows/upgrade-to-latest/"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-windows/install-when-bold-report-exist/",
-    "toPath": "/deploying-bold-bi/deploying-in-windows/install-when-bold-report-exist/"
+    "toPath": "/deploying-bold-bi/deploying-on-windows/install-when-bold-report-exist/"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-windows/silent-installation/",
-    "toPath": "/deploying-bold-bi/deploying-in-windows/silent-installation/"
+    "toPath": "/deploying-bold-bi/deploying-on-windows/silent-installation/"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-azure/",
-    "toPath": "/deploying-bold-bi/deploying-in-azure/"
+    "toPath": "/deploying-bold-bi/deploying-on-azure/"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-azure/prerequisites-azure-vm/",
-    "toPath": "/deploying-bold-bi/deploying-in-azure/prerequisites-azure-vm/"
+    "toPath": "/deploying-bold-bi/deploying-on-azure/prerequisites-azure-vm/"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-azure/vm-configuration/",
-    "toPath": "/deploying-bold-bi/deploying-in-azure/vm-configuration/"
+    "toPath": "/deploying-bold-bi/deploying-on-azure/vm-configuration/"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-azure/self-deploy-azure-vm/",
-    "toPath": "/deploying-bold-bi/deploying-in-azure/self-deploy-azure-vm/"
+    "toPath": "/deploying-bold-bi/deploying-on-azure/self-deploy-azure-vm/"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-azure/new-azure-vm/",
-    "toPath": "/deploying-bold-bi/deploying-in-azure/new-azure-vm/"
+    "toPath": "/deploying-bold-bi/deploying-on-azure/new-azure-vm/"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-azure/update-azure-vm/",
-    "toPath": "/deploying-bold-bi/deploying-in-azure/update-azure-vm/"
+    "toPath": "/deploying-bold-bi/deploying-on-azure/update-azure-vm/"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-azure-app-service/",
-    "toPath": "/deploying-bold-bi/deploying-in-azure-app-service/"
+    "toPath": "/deploying-bold-bi/deploying-on-azure-app-service/"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-azure-app-service/prerequisites/",
-    "toPath": "/deploying-bold-bi/deploying-in-azure-app-service/prerequisites/"
+    "toPath": "/deploying-bold-bi/deploying-on-azure-app-service/prerequisites/"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-azure-app-service/recommendations/",
-    "toPath": "/deploying-bold-bi/deploying-in-azure-app-service/recommendations/"
+    "toPath": "/deploying-bold-bi/deploying-on-azure-app-service/recommendations/"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-azure-app-service/using-arm-template/",
-    "toPath": "/deploying-bold-bi/deploying-in-azure-app-service/using-arm-template/"
+    "toPath": "/deploying-bold-bi/deploying-on-azure-app-service/using-arm-template/"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-azure-app-service/install-client-libraries/",
-    "toPath": "/deploying-bold-bi/deploying-in-azure-app-service/install-client-libraries/"
+    "toPath": "/deploying-bold-bi/deploying-on-azure-app-service/install-client-libraries/"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-azure-app-service/upgrade/",
-    "toPath": "/deploying-bold-bi/deploying-in-azure-app-service/upgrade/"
+    "toPath": "/deploying-bold-bi/deploying-on-azure-app-service/upgrade/"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-azure-app-service/upgrade/upgrade-to-latest/",
-    "toPath": "/deploying-bold-bi/deploying-in-azure-app-service/upgrade/upgrade-to-latest/"
+    "toPath": "/deploying-bold-bi/deploying-on-azure-app-service/upgrade/upgrade-to-latest/"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-azure-app-service/upgrade/upgrade-to-v4.1/",
-    "toPath": "/deploying-bold-bi/deploying-in-azure-app-service/upgrade/upgrade-to-v4.1/"
+    "toPath": "/deploying-bold-bi/deploying-on-azure-app-service/upgrade/upgrade-to-v4.1/"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-linux/",
-    "toPath": "/deploying-bold-bi/deploying-in-linux/"
+    "toPath": "/deploying-bold-bi/deploying-on-linux/"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-linux/prerequisites-linux/",
-    "toPath": "/deploying-bold-bi/deploying-in-linux/prerequisites-linux/"
+    "toPath": "/deploying-bold-bi/deploying-on-linux/prerequisites-linux/"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-linux/installation-and-deployment/",
-    "toPath": "/deploying-bold-bi/deploying-in-linux/installation-and-deployment/"
+    "toPath": "/deploying-bold-bi/deploying-on-linux/installation-and-deployment/"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-linux/installation-and-deployment/v4.1-or-older/",
-    "toPath": "/deploying-bold-bi/deploying-in-linux/installation-and-deployment/v4.1-or-older/"
+    "toPath": "/deploying-bold-bi/deploying-on-linux/installation-and-deployment/v4.1-or-older/"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-linux/installation-and-deployment/v4.1-or-older/bold-bi-on-ubuntu/",
-    "toPath": "/deploying-bold-bi/deploying-in-linux/installation-and-deployment/v4.1-or-older/bold-bi-on-ubuntu/"
+    "toPath": "/deploying-bold-bi/deploying-on-linux/installation-and-deployment/v4.1-or-older/bold-bi-on-ubuntu/"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-linux/installation-and-deployment/v4.1-or-older/bold-bi-on-centos/",
-    "toPath": "/deploying-bold-bi/deploying-in-linux/installation-and-deployment/v4.1-or-older/bold-bi-on-centos/"
+    "toPath": "/deploying-bold-bi/deploying-on-linux/installation-and-deployment/v4.1-or-older/bold-bi-on-centos/"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-linux/installation-and-deployment/bold-bi-on-ubuntu/",
-    "toPath": "/deploying-bold-bi/deploying-in-linux/installation-and-deployment/bold-bi-on-ubuntu/"
+    "toPath": "/deploying-bold-bi/deploying-on-linux/installation-and-deployment/bold-bi-on-ubuntu/"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-linux/installation-and-deployment/bold-bi-on-centos/",
-    "toPath": "/deploying-bold-bi/deploying-in-linux/installation-and-deployment/bold-bi-on-centos/"
+    "toPath": "/deploying-bold-bi/deploying-on-linux/installation-and-deployment/bold-bi-on-centos/"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-linux/installation-and-deployment/auto-deployment/",
-    "toPath": "/deploying-bold-bi/deploying-in-linux/installation-and-deployment/auto-deployment/"
+    "toPath": "/deploying-bold-bi/deploying-on-linux/installation-and-deployment/auto-deployment/"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-linux/deploy-bold-bi-using-apache-server/",
-    "toPath": "/deploying-bold-bi/deploying-in-linux/deploy-bold-bi-using-apache-server/"
+    "toPath": "/deploying-bold-bi/deploying-on-linux/deploy-bold-bi-using-apache-server/"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-linux/deploy-bold-bi-using-apache-server/configure-apache-server-in-centos/",
-    "toPath": "/deploying-bold-bi/deploying-in-linux/deploy-bold-bi-using-apache-server/configure-apache-server-in-centos/"
+    "toPath": "/deploying-bold-bi/deploying-on-linux/deploy-bold-bi-using-apache-server/configure-apache-server-in-centos/"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-linux/deploy-bold-bi-using-apache-server/configure-apache-server-in-ubuntu/",
-    "toPath": "/deploying-bold-bi/deploying-in-linux/deploy-bold-bi-using-apache-server/configure-apache-server-in-ubuntu/"
+    "toPath": "/deploying-bold-bi/deploying-on-linux/deploy-bold-bi-using-apache-server/configure-apache-server-in-ubuntu/"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-linux/install-optional-libraries/",
-    "toPath": "/deploying-bold-bi/deploying-in-linux/install-optional-libraries/"
+    "toPath": "/deploying-bold-bi/deploying-on-linux/install-optional-libraries/"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-linux/install-optional-libraries/v5.2-or-above/",
-    "toPath": "/deploying-bold-bi/deploying-in-linux/install-optional-libraries/v5.2-or-above/"
+    "toPath": "/deploying-bold-bi/deploying-on-linux/install-optional-libraries/v5.2-or-above/"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-linux/install-optional-libraries/v5.1/",
-    "toPath": "/deploying-bold-bi/deploying-in-linux/install-optional-libraries/v5.1/"
+    "toPath": "/deploying-bold-bi/deploying-on-linux/install-optional-libraries/v5.1/"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-linux/install-optional-libraries/v4.2/",
-    "toPath": "/deploying-bold-bi/deploying-in-linux/install-optional-libraries/v4.2/"
+    "toPath": "/deploying-bold-bi/deploying-on-linux/install-optional-libraries/v4.2/"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-linux/install-optional-libraries/v4.1-or-older/",
-    "toPath": "/deploying-bold-bi/deploying-in-linux/install-optional-libraries/v4.1-or-older/"
+    "toPath": "/deploying-bold-bi/deploying-on-linux/install-optional-libraries/v4.1-or-older/"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-linux/upgrade-to-latest/",
-    "toPath": "/deploying-bold-bi/deploying-in-linux/upgrade-to-latest/"
+    "toPath": "/deploying-bold-bi/deploying-on-linux/upgrade-to-latest/"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-kubernetes/",
-    "toPath": "/deploying-bold-bi/deploying-in-kubernetes/"
+    "toPath": "/deploying-bold-bi/deploying-on-kubernetes/"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-docker/",
-    "toPath": "/deploying-bold-bi/deploying-in-docker/"
+    "toPath": "/deploying-bold-bi/deploying-on-docker/"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-azure/new-azure-vm/#pre-configured-image-via-azure-marketplace",
+    "toPath": "/deploying-bold-bi/deploying-on-azure/new-azure-vm/#pre-configured-image-via-azure-marketplace"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-azure/new-azure-vm/#basics-blade",
+    "toPath": "/deploying-bold-bi/deploying-on-azure/new-azure-vm/#basics-blade"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-azure/new-azure-vm/#settings-blade",
+    "toPath": "/deploying-bold-bi/deploying-on-azure/new-azure-vm/#settings-blade"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-azure/new-azure-vm/#disks",
+    "toPath": "/deploying-bold-bi/deploying-on-azure/new-azure-vm/#disks"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-azure/new-azure-vm/#networking",
+    "toPath": "/deploying-bold-bi/deploying-on-azure/new-azure-vm/#networking"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-azure/new-azure-vm/#management",
+    "toPath": "/deploying-bold-bi/deploying-on-azure/new-azure-vm/#management"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-azure/new-azure-vm/#advanced",
+    "toPath": "/deploying-bold-bi/deploying-on-azure/new-azure-vm/#advanced"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-azure/new-azure-vm/#high-availability",
+    "toPath": "/deploying-bold-bi/deploying-on-azure/new-azure-vm/#high-availability"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-azure/new-azure-vm/#review-and-create",
+    "toPath": "/deploying-bold-bi/deploying-on-azure/new-azure-vm/#review-and-create"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-azure/new-azure-vm/#connect-to-bold-bi-enterprise-multi-tenant-server-virtual-machine",
+    "toPath": "/deploying-bold-bi/deploying-on-azure/new-azure-vm/#connect-to-bold-bi-enterprise-multi-tenant-server-virtual-machine"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-azure/new-azure-vm/#run-the-bold-bi-server",
+    "toPath": "/deploying-bold-bi/deploying-on-azure/new-azure-vm/#run-the-bold-bi-server"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-azure/self-deploy-azure-vm/#set-up-a-microsoft-azure-vm",
+    "toPath": "/deploying-bold-bi/deploying-on-azure/self-deploy-azure-vm/#set-up-a-microsoft-azure-vm"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-azure/self-deploy-azure-vm/#how-to-connect-the-vm-through-the-remote-desktop-connection",
+    "toPath": "/deploying-bold-bi/deploying-on-azure/self-deploy-azure-vm/#how-to-connect-the-vm-through-the-remote-desktop-connection"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-azure/self-deploy-azure-vm/#install-and-run-the-bold-bi-server",
+    "toPath": "/deploying-bold-bi/deploying-on-azure/self-deploy-azure-vm/#install-and-run-the-bold-bi-server"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-azure/vm-configuration/#vm-types-for-test,-development-and-production-environments",
+    "toPath": "/deploying-bold-bi/deploying-on-azure/vm-configuration/#vm-types-for-test,-development-and-production-environments"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-azure/vm-configuration/#recommended-specifications-for-test,-development-environments",
+    "toPath": "/deploying-bold-bi/deploying-on-azure/vm-configuration/#recommended-specifications-for-test,-development-environments"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-azure/vm-configuration/#recommended-specifications-for-production-environment",
+    "toPath": "/deploying-bold-bi/deploying-on-azure/vm-configuration/#recommended-specifications-for-production-environment"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-azure-app-service/recommendations/#azure-app-service-plans-for-test-development-and-production-environments",
+    "toPath": "/deploying-bold-bi/deploying-on-azure-app-service/recommendations/#azure-app-service-plans-for-test-development-and-production-environments"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-linux/prerequisites-linux/#hardware-requirements",
+    "toPath": "/deploying-bold-bi/deploying-on-linux/prerequisites-linux/#hardware-requirements"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-linux/prerequisites-linux/#software-requirements",
+    "toPath": "/deploying-bold-bi/deploying-on-linux/prerequisites-linux/#software-requirements"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-linux/prerequisites-linux/#next-step",
+    "toPath": "/deploying-bold-bi/deploying-on-linux/prerequisites-linux/#next-step"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-windows/install-when-bold-report-exist/#installation",
+    "toPath": "/deploying-bold-bi/deploying-on-windows/install-when-bold-report-exist/#installation"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-windows/install-when-bold-report-exist/#proceed-installation-without-common-login",
+    "toPath": "/deploying-bold-bi/deploying-on-windows/install-when-bold-report-exist/#proceed-installation-without-common-login"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-windows/install-when-bold-report-exist/#proceed-installation-with-common-login",
+    "toPath": "/deploying-bold-bi/deploying-on-windows/install-when-bold-report-exist/#proceed-installation-with-common-login"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-windows/install-when-bold-report-exist/#select-portal-license",
+    "toPath": "/deploying-bold-bi/deploying-on-windows/install-when-bold-report-exist/#select-portal-license"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-windows/install-when-bold-report-exist/#hosting-type",
+    "toPath": "/deploying-bold-bi/deploying-on-windows/install-when-bold-report-exist/#hosting-type"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-windows/install-when-bold-report-exist/#phantomjs",
+    "toPath": "/deploying-bold-bi/deploying-on-windows/install-when-bold-report-exist/#phantomjs"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-windows/install-when-bold-report-exist/#client-libraries",
+    "toPath": "/deploying-bold-bi/deploying-on-windows/install-when-bold-report-exist/#client-libraries"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-windows/install-when-bold-report-exist/#registering-bold-bi-site",
+    "toPath": "/deploying-bold-bi/deploying-on-windows/install-when-bold-report-exist/#registering-bold-bi-site"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-windows/install-when-bold-report-exist/#application-structure-when-common-login-selected",
+    "toPath": "/deploying-bold-bi/deploying-on-windows/install-when-bold-report-exist/#application-structure-when-common-login-selected"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-windows/installation-and-deployment/#unlock-the-setup",
+    "toPath": "/deploying-bold-bi/deploying-on-windows/installation-and-deployment/#unlock-the-setup"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-windows/installation-and-deployment/#hosting-type",
+    "toPath": "/deploying-bold-bi/deploying-on-windows/installation-and-deployment/#hosting-type"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-windows/installation-and-deployment/#iis",
+    "toPath": "/deploying-bold-bi/deploying-on-windows/installation-and-deployment/#iis"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-windows/installation-and-deployment/#chromium-packages",
+    "toPath": "/deploying-bold-bi/deploying-on-windows/installation-and-deployment/#chromium-packages"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-windows/installation-and-deployment/#client-libraries",
+    "toPath": "/deploying-bold-bi/deploying-on-windows/installation-and-deployment/#client-libraries"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-windows/installation-and-deployment/#see-also",
+    "toPath": "/deploying-bold-bi/deploying-on-windows/installation-and-deployment/#see-also"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-windows/prerequisites-windows/#hardware-requirements",
+    "toPath": "/deploying-bold-bi/deploying-on-windows/prerequisites-windows/#hardware-requirements"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-windows/prerequisites-windows/#software-requirements",
+    "toPath": "/deploying-bold-bi/deploying-on-windows/prerequisites-windows/#software-requirements"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-windows/silent-installation/#installing-the-bold-bi-enterprise-edition-in-command-line",
+    "toPath": "/deploying-bold-bi/deploying-on-windows/silent-installation/#installing-the-bold-bi-enterprise-edition-in-command-line"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-windows/silent-installation/#configuring-the-application-startup-details-during-the-installation",
+    "toPath": "/deploying-bold-bi/deploying-on-windows/silent-installation/#configuring-the-application-startup-details-during-the-installation"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-windows/silent-installation/#silent-installation-alone-without-providing-the-application-startup-details",
+    "toPath": "/deploying-bold-bi/deploying-on-windows/silent-installation/#silent-installation-alone-without-providing-the-application-startup-details"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-windows/upgrade-to-latest/#upgrading-guidelines",
+    "toPath": "/deploying-bold-bi/deploying-on-windows/upgrade-to-latest/#upgrading-guidelines"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-windows/upgrade-to-latest/#backup-the-existing-data",
+    "toPath": "/deploying-bold-bi/deploying-on-windows/upgrade-to-latest/#backup-the-existing-data"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-windows/upgrade-to-latest/#proceeding-with-upgrade",
+    "toPath": "/deploying-bold-bi/deploying-on-windows/upgrade-to-latest/#proceeding-with-upgrade"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-windows/upgrade-to-latest/#unlock-the-setup",
+    "toPath": "/deploying-bold-bi/deploying-on-windows/upgrade-to-latest/#unlock-the-setup"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-windows/upgrade-to-latest/#hosting-type",
+    "toPath": "/deploying-bold-bi/deploying-on-windows/upgrade-to-latest/#hosting-type"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-windows/upgrade-to-latest/#chromium-packages",
+    "toPath": "/deploying-bold-bi/deploying-on-windows/upgrade-to-latest/#chromium-packages"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-windows/upgrade-to-latest/#client-libraries",
+    "toPath": "/deploying-bold-bi/deploying-on-windows/upgrade-to-latest/#client-libraries"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-azure-app-service/recommendations/#recommended-specifications-for-test-and-development-environments",
+    "toPath": "/deploying-bold-bi/deploying-on-azure-app-service/recommendations/#recommended-specifications-for-test-and-development-environments"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-azure-app-service/recommendations/#recommended-specifications-for-production-environment",
+    "toPath": "/deploying-bold-bi/deploying-on-azure-app-service/recommendations/#recommended-specifications-for-production-environment"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-azure-app-service/using-arm-template/#next-step",
+    "toPath": "/deploying-bold-bi/deploying-on-azure-app-service/using-arm-template/#next-step"
   },
   {
     "fromPath": "/embedded-bi/application-startup/",
     "toPath": "/application-startup/"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-linux/installation-and-deployment/v4.1-or-older/bold-bi-on-centos/#deployment-prerequisites",
+    "toPath": "/deploying-bold-bi/deploying-on-linux/installation-and-deployment/v4.1-or-older/bold-bi-on-centos/#deployment-prerequisites"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-linux/installation-and-deployment/v4.1-or-older/bold-bi-on-centos/#configuring-the-bold-bi-application",
+    "toPath": "/deploying-bold-bi/deploying-on-linux/installation-and-deployment/v4.1-or-older/bold-bi-on-centos/#configuring-the-bold-bi-application"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-linux/installation-and-deployment/v4.1-or-older/bold-bi-on-centos/#configure-nginx",
+    "toPath": "/deploying-bold-bi/deploying-on-linux/installation-and-deployment/v4.1-or-older/bold-bi-on-centos/#configure-nginx"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-linux/installation-and-deployment/v4.1-or-older/bold-bi-on-centos/#next-steps",
+    "toPath": "/deploying-bold-bi/deploying-on-linux/installation-and-deployment/v4.1-or-older/bold-bi-on-centos/#next-steps"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-linux/installation-and-deployment/v4.1-or-older/bold-bi-on-ubuntu/#deployment-prerequisites",
+    "toPath": "/deploying-bold-bi/deploying-on-linux/installation-and-deployment/v4.1-or-older/bold-bi-on-ubuntu/#deployment-prerequisites"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-linux/installation-and-deployment/v4.1-or-older/bold-bi-on-ubuntu/#configuring-the-bold-bi-application",
+    "toPath": "/deploying-bold-bi/deploying-on-linux/installation-and-deployment/v4.1-or-older/bold-bi-on-ubuntu/#configuring-the-bold-bi-application"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-linux/installation-and-deployment/v4.1-or-older/bold-bi-on-ubuntu/#manually-configure-nginx",
+    "toPath": "/deploying-bold-bi/deploying-on-linux/installation-and-deployment/v4.1-or-older/bold-bi-on-ubuntu/#manually-configure-nginx"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-linux/installation-and-deployment/v4.1-or-older/bold-bi-on-ubuntu/#configure-ssl",
+    "toPath": "/deploying-bold-bi/deploying-on-linux/installation-and-deployment/v4.1-or-older/bold-bi-on-ubuntu/#configure-ssl"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-linux/installation-and-deployment/v4.1-or-older/bold-bi-on-ubuntu/#next-steps",
+    "toPath": "/deploying-bold-bi/deploying-on-linux/installation-and-deployment/v4.1-or-older/bold-bi-on-ubuntu/#next-steps"
   },
   {
     "fromPath": "/embedded-bi/application-startup/latest/",
@@ -1533,11 +1773,11 @@
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/data-connectors/sql-data-source/",
-    "toPath": "/working-with-data-sources/data-connectors/sql-data-source/"
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/"
   },
   {
     "fromPath": "/working-with-data-source/data-connectors/sql-data-source/",
-    "toPath": "/working-with-data-sources/data-connectors/sql-data-source/"
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/data-connectors/sqlite/",
@@ -2552,6 +2792,10 @@
     "toPath": "/site-administration/email-settings/email-activity-logs/"
   },
   {
+    "fromPath": "/embedded-bi/site-administration/email-settings/email-customization/",
+    "toPath": "/site-administration/email-settings/email-customization/"
+  },
+  {
     "fromPath": "/embedded-bi/site-administration/embed-settings/",
     "toPath": "/site-administration/embed-settings/"
   },
@@ -2754,6 +2998,10 @@
   {
     "fromPath": "/embedded-bi/managing-resources/manage-dashboards/unlisted-dashboards/",
     "toPath": "/managing-resources/manage-dashboards/unlisted-dashboards/"
+  },
+  {
+    "fromPath": "/embedded-bi/managing-resources/manage-system-administrator-access/",
+    "toPath": "/managing-resources/manage-system-administrator-access/"
   },
   {
     "fromPath": "/embedded-bi/managing-resources/manage-data-sources/",
@@ -4073,7 +4321,7 @@
   },
   {
     "fromPath": "/cloud-bi/working-with-data-source/data-connectors/sql-data-source/",
-    "toPath": "/working-with-data-sources/data-connectors/sql-data-source/"
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/"
   },
   {
     "fromPath": "/cloud-bi/working-with-data-source/data-connectors/sqlite/",
@@ -8157,19 +8405,35 @@
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-kubernetes/#deployments-and-it's-usages",
-    "toPath": "/deploying-bold-bi/deploying-in-kubernetes/#deployments-and-it's-usages"
+    "toPath": "/deploying-bold-bi/deploying-on-kubernetes/#deployments-and-it's-usages"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-kubernetes/#how-to-achieve-high-availability-in-bold-bi-using-kubernetes",
-    "toPath": "/deploying-bold-bi/deploying-in-kubernetes/#how-to-achieve-high-availability-in-bold-bi-using-kubernetes"
+    "toPath": "/deploying-bold-bi/deploying-on-kubernetes/#how-to-achieve-high-availability-in-bold-bi-using-kubernetes"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-kubernetes/#deployment-prerequisites",
-    "toPath": "/deploying-bold-bi/deploying-in-kubernetes/#deployment-prerequisites"
+    "toPath": "/deploying-bold-bi/deploying-on-kubernetes/#deployment-prerequisites"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-kubernetes/#how-to-deploy-bold-bi-in-kubernetes",
-    "toPath": "/deploying-bold-bi/deploying-in-kubernetes/#how-to-deploy-bold-bi-in-kubernetes"
+    "toPath": "/deploying-bold-bi/deploying-on-kubernetes/#how-to-deploy-bold-bi-in-kubernetes"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-kubernetes/#deployments-and-it's-usages",
+    "toPath": "/deploying-bold-bi/deploying-on-kubernetes/#deployments-and-it's-usages"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-kubernetes/#how-to-achieve-high-availability-in-bold-bi-using-kubernetes",
+    "toPath": "/deploying-bold-bi/deploying-on-kubernetes/#how-to-achieve-high-availability-in-bold-bi-using-kubernetes"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-kubernetes/#deployment-prerequisites",
+    "toPath": "/deploying-bold-bi/deploying-on-kubernetes/#deployment-prerequisites"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-kubernetes/#how-to-deploy-bold-bi-in-kubernetes",
+    "toPath": "/deploying-bold-bi/deploying-on-kubernetes/#how-to-deploy-bold-bi-in-kubernetes"
   },
   {
     "fromPath": "/embedded-bi/setup/overview/#prerequisites-for-windows",
@@ -25777,143 +26041,283 @@
   },
   {
     "fromPath": "/cloud-bi/working-with-data-source/data-connectors/sql-data-source/#modes",
-    "toPath": "/working-with-data-sources/data-connectors/sql-data-source/#modes"
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#modes"
   },
   {
     "fromPath": "/cloud-bi/working-with-data-source/data-connectors/sql-data-source/#live",
-    "toPath": "/working-with-data-sources/data-connectors/sql-data-source/#live"
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#live"
   },
   {
     "fromPath": "/cloud-bi/working-with-data-source/data-connectors/sql-data-source/#extract",
-    "toPath": "/working-with-data-sources/data-connectors/sql-data-source/#extract"
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#extract"
   },
   {
     "fromPath": "/cloud-bi/working-with-data-source/data-connectors/sql-data-source/#how-to-create-microsoft-sql-server-data-source",
-    "toPath": "/working-with-data-sources/data-connectors/sql-data-source/#how-to-create-microsoft-sql-server-data-source"
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#how-to-create-microsoft-sql-server-data-source"
   },
   {
     "fromPath": "/cloud-bi/working-with-data-source/data-connectors/sql-data-source/#create-microsoft-sql-server-data-source-in-live-mode",
-    "toPath": "/working-with-data-sources/data-connectors/sql-data-source/#create-microsoft-sql-server-data-source-in-live-mode"
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#create-microsoft-sql-server-data-source-in-live-mode"
   },
   {
     "fromPath": "/cloud-bi/working-with-data-source/data-connectors/sql-data-source/#create-microsoft-sql-server-data-source-in-extract-mode",
-    "toPath": "/working-with-data-sources/data-connectors/sql-data-source/#create-microsoft-sql-server-data-source-in-extract-mode"
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#create-microsoft-sql-server-data-source-in-extract-mode"
   },
   {
     "fromPath": "/cloud-bi/working-with-data-source/data-connectors/sql-data-source/#connecting-to-stored-procedure-in-sql-server-database",
-    "toPath": "/working-with-data-sources/data-connectors/sql-data-source/#connecting-to-stored-procedure-in-sql-server-database"
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#connecting-to-stored-procedure-in-sql-server-database"
   },
   {
     "fromPath": "/cloud-bi/working-with-data-source/data-connectors/sql-data-source/#connecting-to-stored-procedure-in-live-mode",
-    "toPath": "/working-with-data-sources/data-connectors/sql-data-source/#connecting-to-stored-procedure-in-live-mode"
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#connecting-to-stored-procedure-in-live-mode"
   },
   {
     "fromPath": "/cloud-bi/working-with-data-source/data-connectors/sql-data-source/#connecting-to-stored-procedure-in-extract-mode",
-    "toPath": "/working-with-data-sources/data-connectors/sql-data-source/#connecting-to-stored-procedure-in-extract-mode"
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#connecting-to-stored-procedure-in-extract-mode"
   },
   {
     "fromPath": "/cloud-bi/working-with-data-source/data-connectors/sql-data-source/#connecting-through-custom-sql-query",
-    "toPath": "/working-with-data-sources/data-connectors/sql-data-source/#connecting-through-custom-sql-query"
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#connecting-through-custom-sql-query"
   },
   {
     "fromPath": "/cloud-bi/working-with-data-source/data-connectors/sql-data-source/#establish-data-connection",
-    "toPath": "/working-with-data-sources/data-connectors/sql-data-source/#establish-data-connection"
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#establish-data-connection"
   },
   {
     "fromPath": "/cloud-bi/working-with-data-source/data-connectors/sql-data-source/#switch-to-code-view",
-    "toPath": "/working-with-data-sources/data-connectors/sql-data-source/#switch-to-code-view"
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#switch-to-code-view"
   },
   {
     "fromPath": "/cloud-bi/working-with-data-source/data-connectors/sql-data-source/#write-query-and-execute",
-    "toPath": "/working-with-data-sources/data-connectors/sql-data-source/#write-query-and-execute"
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#write-query-and-execute"
   },
   {
     "fromPath": "/cloud-bi/working-with-data-source/data-connectors/sql-data-source/#code-view-for-design-view-tables",
-    "toPath": "/working-with-data-sources/data-connectors/sql-data-source/#code-view-for-design-view-tables"
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#code-view-for-design-view-tables"
   },
   {
     "fromPath": "/cloud-bi/working-with-data-source/data-connectors/sql-data-source/#alias-name-for-tables-and-columns",
-    "toPath": "/working-with-data-sources/data-connectors/sql-data-source/#alias-name-for-tables-and-columns"
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#alias-name-for-tables-and-columns"
   },
   {
     "fromPath": "/cloud-bi/working-with-data-source/data-connectors/sql-data-source/#configuring-expression-columns",
-    "toPath": "/working-with-data-sources/data-connectors/sql-data-source/#configuring-expression-columns"
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#configuring-expression-columns"
   },
   {
     "fromPath": "/cloud-bi/working-with-data-source/data-connectors/sql-data-source/#configuring-user-filter",
-    "toPath": "/working-with-data-sources/data-connectors/sql-data-source/#configuring-user-filter"
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#configuring-user-filter"
   },
   {
     "fromPath": "/cloud-bi/working-with-data-source/data-connectors/sql-data-source/#configuring-dashboard-parameter",
-    "toPath": "/working-with-data-sources/data-connectors/sql-data-source/#configuring-dashboard-parameter"
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#configuring-dashboard-parameter"
   },
   {
     "fromPath": "/cloud-bi/working-with-data-source/data-connectors/sql-data-source/#sample-query-with-cube-and-rollup",
-    "toPath": "/working-with-data-sources/data-connectors/sql-data-source/#sample-query-with-cube-and-rollup"
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#sample-query-with-cube-and-rollup"
   },
   {
     "fromPath": "/cloud-bi/working-with-data-source/data-connectors/sql-data-source/#switch-to-design-view",
-    "toPath": "/working-with-data-sources/data-connectors/sql-data-source/#switch-to-design-view"
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#switch-to-design-view"
   },
   {
     "fromPath": "/cloud-bi/working-with-data-source/data-connectors/sql-data-source/#sql-data-source-refresh-settings",
-    "toPath": "/working-with-data-sources/data-connectors/sql-data-source/#sql-data-source-refresh-settings"
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#sql-data-source-refresh-settings"
   },
   {
     "fromPath": "/cloud-bi/working-with-data-source/data-connectors/sql-data-source/#full-load",
-    "toPath": "/working-with-data-sources/data-connectors/sql-data-source/#full-load"
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#full-load"
   },
   {
     "fromPath": "/cloud-bi/working-with-data-source/data-connectors/sql-data-source/#incremental-update",
-    "toPath": "/working-with-data-sources/data-connectors/sql-data-source/#incremental-update"
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#incremental-update"
   },
   {
     "fromPath": "/cloud-bi/working-with-data-source/data-connectors/sql-data-source/#connecting-bold-bi-to-microsoft-sql-server-data-source-via-rest-api",
-    "toPath": "/working-with-data-sources/data-connectors/sql-data-source/#connecting-bold-bi-to-microsoft-sql-server-data-source-via-rest-api"
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#connecting-bold-bi-to-microsoft-sql-server-data-source-via-rest-api"
   },
   {
     "fromPath": "/cloud-bi/working-with-data-source/data-connectors/sql-data-source/#prerequisites",
-    "toPath": "/working-with-data-sources/data-connectors/sql-data-source/#prerequisites"
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#prerequisites"
   },
   {
     "fromPath": "/cloud-bi/working-with-data-source/data-connectors/sql-data-source/#modes",
-    "toPath": "/working-with-data-sources/data-connectors/sql-data-source/#modes"
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#modes"
   },
   {
     "fromPath": "/cloud-bi/working-with-data-source/data-connectors/sql-data-source/#parameters-for-creating-data-source",
-    "toPath": "/working-with-data-sources/data-connectors/sql-data-source/#parameters-for-creating-data-source"
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#parameters-for-creating-data-source"
   },
   {
     "fromPath": "/cloud-bi/working-with-data-source/data-connectors/sql-data-source/#parameters-for-adding-expressions-when-creating-data-source",
-    "toPath": "/working-with-data-sources/data-connectors/sql-data-source/#parameters-for-adding-expressions-when-creating-data-source"
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#parameters-for-adding-expressions-when-creating-data-source"
   },
   {
     "fromPath": "/cloud-bi/working-with-data-source/data-connectors/sql-data-source/#parameters-for-editing-data-source",
-    "toPath": "/working-with-data-sources/data-connectors/sql-data-source/#parameters-for-editing-data-source"
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#parameters-for-editing-data-source"
   },
   {
     "fromPath": "/cloud-bi/working-with-data-source/data-connectors/sql-data-source/#parameters-for-modifying-expressions-when-editing-data-source",
-    "toPath": "/working-with-data-sources/data-connectors/sql-data-source/#parameters-for-modifying-expressions-when-editing-data-source"
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#parameters-for-modifying-expressions-when-editing-data-source"
   },
   {
     "fromPath": "/cloud-bi/working-with-data-source/data-connectors/sql-data-source/#connection-sample-for-table-mode",
-    "toPath": "/working-with-data-sources/data-connectors/sql-data-source/#connection-sample-for-table-mode"
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#connection-sample-for-table-mode"
   },
   {
     "fromPath": "/cloud-bi/working-with-data-source/data-connectors/sql-data-source/#for-creating-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/sql-data-source/#for-creating-connection:"
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#for-creating-connection:"
   },
   {
     "fromPath": "/cloud-bi/working-with-data-source/data-connectors/sql-data-source/#for-editing-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/sql-data-source/#for-editing-connection:"
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#for-editing-connection:"
   },
   {
     "fromPath": "/cloud-bi/working-with-data-source/data-connectors/sql-data-source/#connection-sample-for-code-view-mode",
-    "toPath": "/working-with-data-sources/data-connectors/sql-data-source/#connection-sample-for-code-view-mode"
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#connection-sample-for-code-view-mode"
   },
   {
     "fromPath": "/cloud-bi/working-with-data-source/data-connectors/sql-data-source/#related-links",
-    "toPath": "/working-with-data-sources/data-connectors/sql-data-source/#related-links"
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#related-links"
+  },
+  {
+    "fromPath": "/working-with-data-sources/data-connectors/sql-data-source/#modes",
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#modes"
+  },
+  {
+    "fromPath": "/working-with-data-sources/data-connectors/sql-data-source/#live",
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#live"
+  },
+  {
+    "fromPath": "/working-with-data-sources/data-connectors/sql-data-source/#extract",
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#extract"
+  },
+  {
+    "fromPath": "/working-with-data-sources/data-connectors/sql-data-source/#how-to-create-microsoft-sql-server-data-source",
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#how-to-create-microsoft-sql-server-data-source"
+  },
+  {
+    "fromPath": "/working-with-data-sources/data-connectors/sql-data-source/#create-microsoft-sql-server-data-source-in-live-mode",
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#create-microsoft-sql-server-data-source-in-live-mode"
+  },
+  {
+    "fromPath": "/working-with-data-sources/data-connectors/sql-data-source/#create-microsoft-sql-server-data-source-in-extract-mode",
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#create-microsoft-sql-server-data-source-in-extract-mode"
+  },
+  {
+    "fromPath": "/working-with-data-sources/data-connectors/sql-data-source/#connecting-to-stored-procedure-in-sql-server-database",
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#connecting-to-stored-procedure-in-sql-server-database"
+  },
+  {
+    "fromPath": "/working-with-data-sources/data-connectors/sql-data-source/#connecting-to-stored-procedure-in-live-mode",
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#connecting-to-stored-procedure-in-live-mode"
+  },
+  {
+    "fromPath": "/working-with-data-sources/data-connectors/sql-data-source/#connecting-to-stored-procedure-in-extract-mode",
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#connecting-to-stored-procedure-in-extract-mode"
+  },
+  {
+    "fromPath": "/working-with-data-sources/data-connectors/sql-data-source/#connecting-through-custom-sql-query",
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#connecting-through-custom-sql-query"
+  },
+  {
+    "fromPath": "/working-with-data-sources/data-connectors/sql-data-source/#establish-data-connection",
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#establish-data-connection"
+  },
+  {
+    "fromPath": "/working-with-data-sources/data-connectors/sql-data-source/#switch-to-code-view",
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#switch-to-code-view"
+  },
+  {
+    "fromPath": "/working-with-data-sources/data-connectors/sql-data-source/#write-query-and-execute",
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#write-query-and-execute"
+  },
+  {
+    "fromPath": "/working-with-data-sources/data-connectors/sql-data-source/#code-view-for-design-view-tables",
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#code-view-for-design-view-tables"
+  },
+  {
+    "fromPath": "/working-with-data-sources/data-connectors/sql-data-source/#alias-name-for-tables-and-columns",
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#alias-name-for-tables-and-columns"
+  },
+  {
+    "fromPath": "/working-with-data-sources/data-connectors/sql-data-source/#configuring-expression-columns",
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#configuring-expression-columns"
+  },
+  {
+    "fromPath": "/working-with-data-sources/data-connectors/sql-data-source/#configuring-user-filter",
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#configuring-user-filter"
+  },
+  {
+    "fromPath": "/working-with-data-sources/data-connectors/sql-data-source/#configuring-dashboard-parameter",
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#configuring-dashboard-parameter"
+  },
+  {
+    "fromPath": "/working-with-data-sources/data-connectors/sql-data-source/#sample-query-with-cube-and-rollup",
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#sample-query-with-cube-and-rollup"
+  },
+  {
+    "fromPath": "/working-with-data-sources/data-connectors/sql-data-source/#switch-to-design-view",
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#switch-to-design-view"
+  },
+  {
+    "fromPath": "/working-with-data-sources/data-connectors/sql-data-source/#sql-data-source-refresh-settings",
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#sql-data-source-refresh-settings"
+  },
+  {
+    "fromPath": "/working-with-data-sources/data-connectors/sql-data-source/#full-load",
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#full-load"
+  },
+  {
+    "fromPath": "/working-with-data-sources/data-connectors/sql-data-source/#incremental-update",
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#incremental-update"
+  },
+  {
+    "fromPath": "/working-with-data-sources/data-connectors/sql-data-source/#connecting-bold-bi-to-microsoft-sql-server-data-source-via-rest-api",
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#connecting-bold-bi-to-microsoft-sql-server-data-source-via-rest-api"
+  },
+  {
+    "fromPath": "/working-with-data-sources/data-connectors/sql-data-source/#prerequisites",
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#prerequisites"
+  },
+  {
+    "fromPath": "/working-with-data-sources/data-connectors/sql-data-source/#modes",
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#modes"
+  },
+  {
+    "fromPath": "/working-with-data-sources/data-connectors/sql-data-source/#parameters-for-creating-data-source",
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#parameters-for-creating-data-source"
+  },
+  {
+    "fromPath": "/working-with-data-sources/data-connectors/sql-data-source/#parameters-for-adding-expressions-when-creating-data-source",
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#parameters-for-adding-expressions-when-creating-data-source"
+  },
+  {
+    "fromPath": "/working-with-data-sources/data-connectors/sql-data-source/#parameters-for-editing-data-source",
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#parameters-for-editing-data-source"
+  },
+  {
+    "fromPath": "/working-with-data-sources/data-connectors/sql-data-source/#parameters-for-modifying-expressions-when-editing-data-source",
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#parameters-for-modifying-expressions-when-editing-data-source"
+  },
+  {
+    "fromPath": "/working-with-data-sources/data-connectors/sql-data-source/#connection-sample-for-table-mode",
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#connection-sample-for-table-mode"
+  },
+  {
+    "fromPath": "/working-with-data-sources/data-connectors/sql-data-source/#for-creating-connection:",
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#for-creating-connection:"
+  },
+  {
+    "fromPath": "/working-with-data-sources/data-connectors/sql-data-source/#for-editing-connection:",
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#for-editing-connection:"
+  },
+  {
+    "fromPath": "/working-with-data-sources/data-connectors/sql-data-source/#connection-sample-for-code-view-mode",
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#connection-sample-for-code-view-mode"
+  },
+  {
+    "fromPath": "/working-with-data-sources/data-connectors/sql-data-source/#related-links",
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#related-links"
   },
   {
     "fromPath": "/cloud-bi/working-with-data-source/data-connectors/sqlite/#choose-a-sqlite-data-source",
@@ -27905,207 +28309,275 @@
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-azure/new-azure-vm/#pre-configured-image-via-azure-marketplace",
-    "toPath": "/deploying-bold-bi/deploying-in-azure/new-azure-vm/#pre-configured-image-via-azure-marketplace"
+    "toPath": "/deploying-bold-bi/deploying-on-azure/new-azure-vm/#pre-configured-image-via-azure-marketplace"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-azure/new-azure-vm/#basics-blade",
-    "toPath": "/deploying-bold-bi/deploying-in-azure/new-azure-vm/#basics-blade"
+    "toPath": "/deploying-bold-bi/deploying-on-azure/new-azure-vm/#basics-blade"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-azure/new-azure-vm/#settings-blade",
-    "toPath": "/deploying-bold-bi/deploying-in-azure/new-azure-vm/#settings-blade"
+    "toPath": "/deploying-bold-bi/deploying-on-azure/new-azure-vm/#settings-blade"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-azure/new-azure-vm/#disks",
-    "toPath": "/deploying-bold-bi/deploying-in-azure/new-azure-vm/#disks"
+    "toPath": "/deploying-bold-bi/deploying-on-azure/new-azure-vm/#disks"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-azure/new-azure-vm/#networking",
-    "toPath": "/deploying-bold-bi/deploying-in-azure/new-azure-vm/#networking"
+    "toPath": "/deploying-bold-bi/deploying-on-azure/new-azure-vm/#networking"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-azure/new-azure-vm/#management",
-    "toPath": "/deploying-bold-bi/deploying-in-azure/new-azure-vm/#management"
+    "toPath": "/deploying-bold-bi/deploying-on-azure/new-azure-vm/#management"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-azure/new-azure-vm/#advanced",
-    "toPath": "/deploying-bold-bi/deploying-in-azure/new-azure-vm/#advanced"
+    "toPath": "/deploying-bold-bi/deploying-on-azure/new-azure-vm/#advanced"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-azure/new-azure-vm/#high-availability",
-    "toPath": "/deploying-bold-bi/deploying-in-azure/new-azure-vm/#high-availability"
+    "toPath": "/deploying-bold-bi/deploying-on-azure/new-azure-vm/#high-availability"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-azure/new-azure-vm/#review-and-create",
-    "toPath": "/deploying-bold-bi/deploying-in-azure/new-azure-vm/#review-and-create"
+    "toPath": "/deploying-bold-bi/deploying-on-azure/new-azure-vm/#review-and-create"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-azure/new-azure-vm/#connect-to-bold-bi-enterprise-multi-tenant-server-virtual-machine",
-    "toPath": "/deploying-bold-bi/deploying-in-azure/new-azure-vm/#connect-to-bold-bi-enterprise-multi-tenant-server-virtual-machine"
+    "toPath": "/deploying-bold-bi/deploying-on-azure/new-azure-vm/#connect-to-bold-bi-enterprise-multi-tenant-server-virtual-machine"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-azure/new-azure-vm/#run-the-bold-bi-server",
-    "toPath": "/deploying-bold-bi/deploying-in-azure/new-azure-vm/#run-the-bold-bi-server"
+    "toPath": "/deploying-bold-bi/deploying-on-azure/new-azure-vm/#run-the-bold-bi-server"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-azure/self-deploy-azure-vm/#set-up-a-microsoft-azure-vm",
-    "toPath": "/deploying-bold-bi/deploying-in-azure/self-deploy-azure-vm/#set-up-a-microsoft-azure-vm"
+    "toPath": "/deploying-bold-bi/deploying-on-azure/self-deploy-azure-vm/#set-up-a-microsoft-azure-vm"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-azure/self-deploy-azure-vm/#how-to-connect-the-vm-through-the-remote-desktop-connection",
-    "toPath": "/deploying-bold-bi/deploying-in-azure/self-deploy-azure-vm/#how-to-connect-the-vm-through-the-remote-desktop-connection"
+    "toPath": "/deploying-bold-bi/deploying-on-azure/self-deploy-azure-vm/#how-to-connect-the-vm-through-the-remote-desktop-connection"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-azure/self-deploy-azure-vm/#install-and-run-the-bold-bi-server",
-    "toPath": "/deploying-bold-bi/deploying-in-azure/self-deploy-azure-vm/#install-and-run-the-bold-bi-server"
+    "toPath": "/deploying-bold-bi/deploying-on-azure/self-deploy-azure-vm/#install-and-run-the-bold-bi-server"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-azure/vm-configuration/#vm-types-for-test,-development-and-production-environments",
-    "toPath": "/deploying-bold-bi/deploying-in-azure/vm-configuration/#vm-types-for-test,-development-and-production-environments"
+    "toPath": "/deploying-bold-bi/deploying-on-azure/vm-configuration/#vm-types-for-test,-development-and-production-environments"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-azure/vm-configuration/#recommended-specifications-for-test,-development-environments",
-    "toPath": "/deploying-bold-bi/deploying-in-azure/vm-configuration/#recommended-specifications-for-test,-development-environments"
+    "toPath": "/deploying-bold-bi/deploying-on-azure/vm-configuration/#recommended-specifications-for-test,-development-environments"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-azure/vm-configuration/#recommended-specifications-for-production-environment",
-    "toPath": "/deploying-bold-bi/deploying-in-azure/vm-configuration/#recommended-specifications-for-production-environment"
+    "toPath": "/deploying-bold-bi/deploying-on-azure/vm-configuration/#recommended-specifications-for-production-environment"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-azure/new-azure-vm/#pre-configured-image-via-azure-marketplace",
+    "toPath": "/deploying-bold-bi/deploying-on-azure/new-azure-vm/#pre-configured-image-via-azure-marketplace"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-azure/new-azure-vm/#basics-blade",
+    "toPath": "/deploying-bold-bi/deploying-on-azure/new-azure-vm/#basics-blade"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-azure/new-azure-vm/#settings-blade",
+    "toPath": "/deploying-bold-bi/deploying-on-azure/new-azure-vm/#settings-blade"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-azure/new-azure-vm/#disks",
+    "toPath": "/deploying-bold-bi/deploying-on-azure/new-azure-vm/#disks"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-azure/new-azure-vm/#networking",
+    "toPath": "/deploying-bold-bi/deploying-on-azure/new-azure-vm/#networking"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-azure/new-azure-vm/#management",
+    "toPath": "/deploying-bold-bi/deploying-on-azure/new-azure-vm/#management"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-azure/new-azure-vm/#advanced",
+    "toPath": "/deploying-bold-bi/deploying-on-azure/new-azure-vm/#advanced"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-azure/new-azure-vm/#high-availability",
+    "toPath": "/deploying-bold-bi/deploying-on-azure/new-azure-vm/#high-availability"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-azure/new-azure-vm/#review-and-create",
+    "toPath": "/deploying-bold-bi/deploying-on-azure/new-azure-vm/#review-and-create"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-azure/new-azure-vm/#connect-to-bold-bi-enterprise-multi-tenant-server-virtual-machine",
+    "toPath": "/deploying-bold-bi/deploying-on-azure/new-azure-vm/#connect-to-bold-bi-enterprise-multi-tenant-server-virtual-machine"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-azure/new-azure-vm/#run-the-bold-bi-server",
+    "toPath": "/deploying-bold-bi/deploying-on-azure/new-azure-vm/#run-the-bold-bi-server"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-azure/self-deploy-azure-vm/#set-up-a-microsoft-azure-vm",
+    "toPath": "/deploying-bold-bi/deploying-on-azure/self-deploy-azure-vm/#set-up-a-microsoft-azure-vm"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-azure/self-deploy-azure-vm/#how-to-connect-the-vm-through-the-remote-desktop-connection",
+    "toPath": "/deploying-bold-bi/deploying-on-azure/self-deploy-azure-vm/#how-to-connect-the-vm-through-the-remote-desktop-connection"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-azure/self-deploy-azure-vm/#install-and-run-the-bold-bi-server",
+    "toPath": "/deploying-bold-bi/deploying-on-azure/self-deploy-azure-vm/#install-and-run-the-bold-bi-server"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-azure/vm-configuration/#vm-types-for-test,-development-and-production-environments",
+    "toPath": "/deploying-bold-bi/deploying-on-azure/vm-configuration/#vm-types-for-test,-development-and-production-environments"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-azure/vm-configuration/#recommended-specifications-for-test,-development-environments",
+    "toPath": "/deploying-bold-bi/deploying-on-azure/vm-configuration/#recommended-specifications-for-test,-development-environments"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-azure/vm-configuration/#recommended-specifications-for-production-environment",
+    "toPath": "/deploying-bold-bi/deploying-on-azure/vm-configuration/#recommended-specifications-for-production-environment"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-azure-app-service/recommendations/#azure-app-service-plans-for-test,-development,-and-production-environments",
-    "toPath": "/deploying-bold-bi/deploying-in-azure-app-service/recommendations/#azure-app-service-plans-for-test,-development,-and-production-environments"
+    "toPath": "/deploying-bold-bi/deploying-on-azure-app-service/recommendations/#azure-app-service-plans-for-test,-development,-and-production-environments"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-azure-app-service/recommendations/#recommended-specifications-for-test-and-development-environments",
-    "toPath": "/deploying-bold-bi/deploying-in-azure-app-service/recommendations/#recommended-specifications-for-test-and-development-environments"
+    "toPath": "/deploying-bold-bi/deploying-on-azure-app-service/recommendations/#recommended-specifications-for-test-and-development-environments"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-azure-app-service/recommendations/#recommended-specifications-for-production-environment",
-    "toPath": "/deploying-bold-bi/deploying-in-azure-app-service/recommendations/#recommended-specifications-for-production-environment"
+    "toPath": "/deploying-bold-bi/deploying-on-azure-app-service/recommendations/#recommended-specifications-for-production-environment"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-azure-app-service/using-arm-template/#next-step",
-    "toPath": "/deploying-bold-bi/deploying-in-azure-app-service/using-arm-template/#next-step"
+    "toPath": "/deploying-bold-bi/deploying-on-azure-app-service/using-arm-template/#next-step"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-linux/prerequisites-linux/#hardware-requirements",
-    "toPath": "/deploying-bold-bi/deploying-in-linux/prerequisites-linux/#hardware-requirements"
+    "toPath": "/deploying-bold-bi/deploying-on-linux/prerequisites-linux/#hardware-requirements"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-linux/prerequisites-linux/#software-requirements",
-    "toPath": "/deploying-bold-bi/deploying-in-linux/prerequisites-linux/#software-requirements"
+    "toPath": "/deploying-bold-bi/deploying-on-linux/prerequisites-linux/#software-requirements"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-linux/prerequisites-linux/#next-step",
-    "toPath": "/deploying-bold-bi/deploying-in-linux/prerequisites-linux/#next-step"
+    "toPath": "/deploying-bold-bi/deploying-on-linux/prerequisites-linux/#next-step"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-windows/install-when-bold-report-exist/#installation",
-    "toPath": "/deploying-bold-bi/deploying-in-windows/install-when-bold-report-exist/#installation"
+    "toPath": "/deploying-bold-bi/deploying-on-windows/install-when-bold-report-exist/#installation"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-windows/install-when-bold-report-exist/#proceed-installation-without-common-login",
-    "toPath": "/deploying-bold-bi/deploying-in-windows/install-when-bold-report-exist/#proceed-installation-without-common-login"
+    "toPath": "/deploying-bold-bi/deploying-on-windows/install-when-bold-report-exist/#proceed-installation-without-common-login"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-windows/install-when-bold-report-exist/#proceed-installation-with-common-login",
-    "toPath": "/deploying-bold-bi/deploying-in-windows/install-when-bold-report-exist/#proceed-installation-with-common-login"
+    "toPath": "/deploying-bold-bi/deploying-on-windows/install-when-bold-report-exist/#proceed-installation-with-common-login"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-windows/install-when-bold-report-exist/#select-portal-license",
-    "toPath": "/deploying-bold-bi/deploying-in-windows/install-when-bold-report-exist/#select-portal-license"
+    "toPath": "/deploying-bold-bi/deploying-on-windows/install-when-bold-report-exist/#select-portal-license"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-windows/install-when-bold-report-exist/#hosting-type",
-    "toPath": "/deploying-bold-bi/deploying-in-windows/install-when-bold-report-exist/#hosting-type"
+    "toPath": "/deploying-bold-bi/deploying-on-windows/install-when-bold-report-exist/#hosting-type"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-windows/install-when-bold-report-exist/#phantomjs",
-    "toPath": "/deploying-bold-bi/deploying-in-windows/install-when-bold-report-exist/#phantomjs"
+    "toPath": "/deploying-bold-bi/deploying-on-windows/install-when-bold-report-exist/#phantomjs"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-windows/install-when-bold-report-exist/#client-libraries",
-    "toPath": "/deploying-bold-bi/deploying-in-windows/install-when-bold-report-exist/#client-libraries"
+    "toPath": "/deploying-bold-bi/deploying-on-windows/install-when-bold-report-exist/#client-libraries"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-windows/install-when-bold-report-exist/#registering-bold-bi-site",
-    "toPath": "/deploying-bold-bi/deploying-in-windows/install-when-bold-report-exist/#registering-bold-bi-site"
+    "toPath": "/deploying-bold-bi/deploying-on-windows/install-when-bold-report-exist/#registering-bold-bi-site"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-windows/install-when-bold-report-exist/#application-structure-when-common-login-selected",
-    "toPath": "/deploying-bold-bi/deploying-in-windows/install-when-bold-report-exist/#application-structure-when-common-login-selected"
+    "toPath": "/deploying-bold-bi/deploying-on-windows/install-when-bold-report-exist/#application-structure-when-common-login-selected"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-windows/installation-and-deployment/#unlock-the-setup",
-    "toPath": "/deploying-bold-bi/deploying-in-windows/installation-and-deployment/#unlock-the-setup"
+    "toPath": "/deploying-bold-bi/deploying-on-windows/installation-and-deployment/#unlock-the-setup"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-windows/installation-and-deployment/#hosting-type",
-    "toPath": "/deploying-bold-bi/deploying-in-windows/installation-and-deployment/#hosting-type"
+    "toPath": "/deploying-bold-bi/deploying-on-windows/installation-and-deployment/#hosting-type"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-windows/installation-and-deployment/#iis",
-    "toPath": "/deploying-bold-bi/deploying-in-windows/installation-and-deployment/#iis"
+    "toPath": "/deploying-bold-bi/deploying-on-windows/installation-and-deployment/#iis"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-windows/installation-and-deployment/#chromium-packages",
-    "toPath": "/deploying-bold-bi/deploying-in-windows/installation-and-deployment/#chromium-packages"
+    "toPath": "/deploying-bold-bi/deploying-on-windows/installation-and-deployment/#chromium-packages"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-windows/installation-and-deployment/#client-libraries",
-    "toPath": "/deploying-bold-bi/deploying-in-windows/installation-and-deployment/#client-libraries"
+    "toPath": "/deploying-bold-bi/deploying-on-windows/installation-and-deployment/#client-libraries"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-windows/installation-and-deployment/#see-also",
-    "toPath": "/deploying-bold-bi/deploying-in-windows/installation-and-deployment/#see-also"
+    "toPath": "/deploying-bold-bi/deploying-on-windows/installation-and-deployment/#see-also"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-windows/prerequisites-windows/#hardware-requirements",
-    "toPath": "/deploying-bold-bi/deploying-in-windows/prerequisites-windows/#hardware-requirements"
+    "toPath": "/deploying-bold-bi/deploying-on-windows/prerequisites-windows/#hardware-requirements"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-windows/prerequisites-windows/#software-requirements",
-    "toPath": "/deploying-bold-bi/deploying-in-windows/prerequisites-windows/#software-requirements"
+    "toPath": "/deploying-bold-bi/deploying-on-windows/prerequisites-windows/#software-requirements"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-windows/silent-installation/#installing-the-bold-bi-enterprise-edition-in-command-line",
-    "toPath": "/deploying-bold-bi/deploying-in-windows/silent-installation/#installing-the-bold-bi-enterprise-edition-in-command-line"
+    "toPath": "/deploying-bold-bi/deploying-on-windows/silent-installation/#installing-the-bold-bi-enterprise-edition-in-command-line"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-windows/silent-installation/#configuring-the-application-startup-details-during-the-installation",
-    "toPath": "/deploying-bold-bi/deploying-in-windows/silent-installation/#configuring-the-application-startup-details-during-the-installation"
+    "toPath": "/deploying-bold-bi/deploying-on-windows/silent-installation/#configuring-the-application-startup-details-during-the-installation"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-windows/silent-installation/#silent-installation-alone-without-providing-the-application-startup-details",
-    "toPath": "/deploying-bold-bi/deploying-in-windows/silent-installation/#silent-installation-alone-without-providing-the-application-startup-details"
+    "toPath": "/deploying-bold-bi/deploying-on-windows/silent-installation/#silent-installation-alone-without-providing-the-application-startup-details"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-windows/upgrade-to-latest/#upgrading-guidelines",
-    "toPath": "/deploying-bold-bi/deploying-in-windows/upgrade-to-latest/#upgrading-guidelines"
+    "toPath": "/deploying-bold-bi/deploying-on-windows/upgrade-to-latest/#upgrading-guidelines"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-windows/upgrade-to-latest/#backup-the-existing-data",
-    "toPath": "/deploying-bold-bi/deploying-in-windows/upgrade-to-latest/#backup-the-existing-data"
+    "toPath": "/deploying-bold-bi/deploying-on-windows/upgrade-to-latest/#backup-the-existing-data"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-windows/upgrade-to-latest/#proceeding-with-upgrade",
-    "toPath": "/deploying-bold-bi/deploying-in-windows/upgrade-to-latest/#proceeding-with-upgrade"
+    "toPath": "/deploying-bold-bi/deploying-on-windows/upgrade-to-latest/#proceeding-with-upgrade"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-windows/upgrade-to-latest/#unlock-the-setup",
-    "toPath": "/deploying-bold-bi/deploying-in-windows/upgrade-to-latest/#unlock-the-setup"
+    "toPath": "/deploying-bold-bi/deploying-on-windows/upgrade-to-latest/#unlock-the-setup"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-windows/upgrade-to-latest/#hosting-type",
-    "toPath": "/deploying-bold-bi/deploying-in-windows/upgrade-to-latest/#hosting-type"
+    "toPath": "/deploying-bold-bi/deploying-on-windows/upgrade-to-latest/#hosting-type"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-windows/upgrade-to-latest/#chromium-packages",
-    "toPath": "/deploying-bold-bi/deploying-in-windows/upgrade-to-latest/#chromium-packages"
+    "toPath": "/deploying-bold-bi/deploying-on-windows/upgrade-to-latest/#chromium-packages"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-windows/upgrade-to-latest/#client-libraries",
-    "toPath": "/deploying-bold-bi/deploying-in-windows/upgrade-to-latest/#client-libraries"
+    "toPath": "/deploying-bold-bi/deploying-on-windows/upgrade-to-latest/#client-libraries"
   },
   {
     "fromPath": "/embedded-bi/site-administration/active-directory/active-directory-synchronization-schedule/#email-notifications",
@@ -45669,147 +46141,147 @@
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/data-connectors/sql-data-source/#modes",
-    "toPath": "/working-with-data-sources/data-connectors/sql-data-source/#modes"
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#modes"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/data-connectors/sql-data-source/#live",
-    "toPath": "/working-with-data-sources/data-connectors/sql-data-source/#live"
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#live"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/data-connectors/sql-data-source/#extract",
-    "toPath": "/working-with-data-sources/data-connectors/sql-data-source/#extract"
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#extract"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/data-connectors/sql-data-source/#how-to-create-microsoft-sql-server-data-source",
-    "toPath": "/working-with-data-sources/data-connectors/sql-data-source/#how-to-create-microsoft-sql-server-data-source"
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#how-to-create-microsoft-sql-server-data-source"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/data-connectors/sql-data-source/#create-microsoft-sql-server-data-source-in-live-mode",
-    "toPath": "/working-with-data-sources/data-connectors/sql-data-source/#create-microsoft-sql-server-data-source-in-live-mode"
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#create-microsoft-sql-server-data-source-in-live-mode"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/data-connectors/sql-data-source/#create-microsoft-sql-server-data-source-in-extract-mode",
-    "toPath": "/working-with-data-sources/data-connectors/sql-data-source/#create-microsoft-sql-server-data-source-in-extract-mode"
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#create-microsoft-sql-server-data-source-in-extract-mode"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/data-connectors/sql-data-source/#view-table-schema-support",
-    "toPath": "/working-with-data-sources/data-connectors/sql-data-source/#view-table-schema-support"
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#view-table-schema-support"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/data-connectors/sql-data-source/#connecting-to-stored-procedure-in-sql-server-database",
-    "toPath": "/working-with-data-sources/data-connectors/sql-data-source/#connecting-to-stored-procedure-in-sql-server-database"
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#connecting-to-stored-procedure-in-sql-server-database"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/data-connectors/sql-data-source/#connecting-to-stored-procedure-in-live-mode",
-    "toPath": "/working-with-data-sources/data-connectors/sql-data-source/#connecting-to-stored-procedure-in-live-mode"
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#connecting-to-stored-procedure-in-live-mode"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/data-connectors/sql-data-source/#connecting-to-stored-procedure-in-extract-mode",
-    "toPath": "/working-with-data-sources/data-connectors/sql-data-source/#connecting-to-stored-procedure-in-extract-mode"
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#connecting-to-stored-procedure-in-extract-mode"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/data-connectors/sql-data-source/#connecting-through-custom-sql-query",
-    "toPath": "/working-with-data-sources/data-connectors/sql-data-source/#connecting-through-custom-sql-query"
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#connecting-through-custom-sql-query"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/data-connectors/sql-data-source/#establish-data-connection",
-    "toPath": "/working-with-data-sources/data-connectors/sql-data-source/#establish-data-connection"
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#establish-data-connection"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/data-connectors/sql-data-source/#switch-to-code-view",
-    "toPath": "/working-with-data-sources/data-connectors/sql-data-source/#switch-to-code-view"
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#switch-to-code-view"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/data-connectors/sql-data-source/#write-query-and-execute",
-    "toPath": "/working-with-data-sources/data-connectors/sql-data-source/#write-query-and-execute"
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#write-query-and-execute"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/data-connectors/sql-data-source/#code-view-for-design-view-tables",
-    "toPath": "/working-with-data-sources/data-connectors/sql-data-source/#code-view-for-design-view-tables"
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#code-view-for-design-view-tables"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/data-connectors/sql-data-source/#alias-name-for-tables-and-columns",
-    "toPath": "/working-with-data-sources/data-connectors/sql-data-source/#alias-name-for-tables-and-columns"
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#alias-name-for-tables-and-columns"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/data-connectors/sql-data-source/#configuring-expression-columns",
-    "toPath": "/working-with-data-sources/data-connectors/sql-data-source/#configuring-expression-columns"
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#configuring-expression-columns"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/data-connectors/sql-data-source/#configuring-user-filter",
-    "toPath": "/working-with-data-sources/data-connectors/sql-data-source/#configuring-user-filter"
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#configuring-user-filter"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/data-connectors/sql-data-source/#configuring-dashboard-parameter",
-    "toPath": "/working-with-data-sources/data-connectors/sql-data-source/#configuring-dashboard-parameter"
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#configuring-dashboard-parameter"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/data-connectors/sql-data-source/#sample-query-with-cube-and-rollup",
-    "toPath": "/working-with-data-sources/data-connectors/sql-data-source/#sample-query-with-cube-and-rollup"
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#sample-query-with-cube-and-rollup"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/data-connectors/sql-data-source/#switch-to-design-view",
-    "toPath": "/working-with-data-sources/data-connectors/sql-data-source/#switch-to-design-view"
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#switch-to-design-view"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/data-connectors/sql-data-source/#sql-data-source-refresh-settings",
-    "toPath": "/working-with-data-sources/data-connectors/sql-data-source/#sql-data-source-refresh-settings"
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#sql-data-source-refresh-settings"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/data-connectors/sql-data-source/#full-load",
-    "toPath": "/working-with-data-sources/data-connectors/sql-data-source/#full-load"
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#full-load"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/data-connectors/sql-data-source/#incremental-update",
-    "toPath": "/working-with-data-sources/data-connectors/sql-data-source/#incremental-update"
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#incremental-update"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/data-connectors/sql-data-source/#connecting-bold-bi-to-microsoft-sql-server-data-source-via-rest-api",
-    "toPath": "/working-with-data-sources/data-connectors/sql-data-source/#connecting-bold-bi-to-microsoft-sql-server-data-source-via-rest-api"
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#connecting-bold-bi-to-microsoft-sql-server-data-source-via-rest-api"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/data-connectors/sql-data-source/#prerequisites",
-    "toPath": "/working-with-data-sources/data-connectors/sql-data-source/#prerequisites"
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#prerequisites"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/data-connectors/sql-data-source/#modes",
-    "toPath": "/working-with-data-sources/data-connectors/sql-data-source/#modes"
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#modes"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/data-connectors/sql-data-source/#parameters-for-creating-data-source",
-    "toPath": "/working-with-data-sources/data-connectors/sql-data-source/#parameters-for-creating-data-source"
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#parameters-for-creating-data-source"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/data-connectors/sql-data-source/#parameters-for-adding-expressions-when-creating-data-source",
-    "toPath": "/working-with-data-sources/data-connectors/sql-data-source/#parameters-for-adding-expressions-when-creating-data-source"
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#parameters-for-adding-expressions-when-creating-data-source"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/data-connectors/sql-data-source/#parameters-for-editing-data-source",
-    "toPath": "/working-with-data-sources/data-connectors/sql-data-source/#parameters-for-editing-data-source"
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#parameters-for-editing-data-source"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/data-connectors/sql-data-source/#parameters-for-modifying-expressions-when-editing-data-source",
-    "toPath": "/working-with-data-sources/data-connectors/sql-data-source/#parameters-for-modifying-expressions-when-editing-data-source"
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#parameters-for-modifying-expressions-when-editing-data-source"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/data-connectors/sql-data-source/#connection-sample-for-table-mode",
-    "toPath": "/working-with-data-sources/data-connectors/sql-data-source/#connection-sample-for-table-mode"
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#connection-sample-for-table-mode"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/data-connectors/sql-data-source/#for-creating-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/sql-data-source/#for-creating-connection:"
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#for-creating-connection:"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/data-connectors/sql-data-source/#for-editing-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/sql-data-source/#for-editing-connection:"
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#for-editing-connection:"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/data-connectors/sql-data-source/#connection-sample-for-code-view-mode",
-    "toPath": "/working-with-data-sources/data-connectors/sql-data-source/#connection-sample-for-code-view-mode"
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#connection-sample-for-code-view-mode"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/data-connectors/sql-data-source/#related-links",
-    "toPath": "/working-with-data-sources/data-connectors/sql-data-source/#related-links"
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#related-links"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/data-connectors/sqlite/#choose-a-sqlite-data-source",
@@ -47793,119 +48265,119 @@
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-linux/deploy-bold-bi-using-apache-server/configure-apache-server-in-centos/#manually-configure-apache",
-    "toPath": "/deploying-bold-bi/deploying-in-linux/deploy-bold-bi-using-apache-server/configure-apache-server-in-centos/#manually-configure-apache"
+    "toPath": "/deploying-bold-bi/deploying-on-linux/deploy-bold-bi-using-apache-server/configure-apache-server-in-centos/#manually-configure-apache"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-linux/deploy-bold-bi-using-apache-server/configure-apache-server-in-centos/#configure-ssl-in-apache-server",
-    "toPath": "/deploying-bold-bi/deploying-in-linux/deploy-bold-bi-using-apache-server/configure-apache-server-in-centos/#configure-ssl-in-apache-server"
+    "toPath": "/deploying-bold-bi/deploying-on-linux/deploy-bold-bi-using-apache-server/configure-apache-server-in-centos/#configure-ssl-in-apache-server"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-linux/deploy-bold-bi-using-apache-server/configure-apache-server-in-centos/#next-steps",
-    "toPath": "/deploying-bold-bi/deploying-in-linux/deploy-bold-bi-using-apache-server/configure-apache-server-in-centos/#next-steps"
+    "toPath": "/deploying-bold-bi/deploying-on-linux/deploy-bold-bi-using-apache-server/configure-apache-server-in-centos/#next-steps"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-linux/deploy-bold-bi-using-apache-server/configure-apache-server-in-ubuntu/#manually-configure-apache",
-    "toPath": "/deploying-bold-bi/deploying-in-linux/deploy-bold-bi-using-apache-server/configure-apache-server-in-ubuntu/#manually-configure-apache"
+    "toPath": "/deploying-bold-bi/deploying-on-linux/deploy-bold-bi-using-apache-server/configure-apache-server-in-ubuntu/#manually-configure-apache"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-linux/deploy-bold-bi-using-apache-server/configure-apache-server-in-ubuntu/#configure-ssl-for-apache-server",
-    "toPath": "/deploying-bold-bi/deploying-in-linux/deploy-bold-bi-using-apache-server/configure-apache-server-in-ubuntu/#configure-ssl-for-apache-server"
+    "toPath": "/deploying-bold-bi/deploying-on-linux/deploy-bold-bi-using-apache-server/configure-apache-server-in-ubuntu/#configure-ssl-for-apache-server"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-linux/deploy-bold-bi-using-apache-server/configure-apache-server-in-ubuntu/#next-steps",
-    "toPath": "/deploying-bold-bi/deploying-in-linux/deploy-bold-bi-using-apache-server/configure-apache-server-in-ubuntu/#next-steps"
+    "toPath": "/deploying-bold-bi/deploying-on-linux/deploy-bold-bi-using-apache-server/configure-apache-server-in-ubuntu/#next-steps"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-linux/install-optional-libraries/v4.1-or-older/#client-libraries",
-    "toPath": "/deploying-bold-bi/deploying-in-linux/install-optional-libraries/v4.1-or-older/#client-libraries"
+    "toPath": "/deploying-bold-bi/deploying-on-linux/install-optional-libraries/v4.1-or-older/#client-libraries"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-linux/install-optional-libraries/v4.1-or-older/#phantomjs",
-    "toPath": "/deploying-bold-bi/deploying-in-linux/install-optional-libraries/v4.1-or-older/#phantomjs"
+    "toPath": "/deploying-bold-bi/deploying-on-linux/install-optional-libraries/v4.1-or-older/#phantomjs"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-linux/install-optional-libraries/v4.1-or-older/#next-step",
-    "toPath": "/deploying-bold-bi/deploying-in-linux/install-optional-libraries/v4.1-or-older/#next-step"
+    "toPath": "/deploying-bold-bi/deploying-on-linux/install-optional-libraries/v4.1-or-older/#next-step"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-linux/install-optional-libraries/v4.2/#client-libraries",
-    "toPath": "/deploying-bold-bi/deploying-in-linux/install-optional-libraries/v4.2/#client-libraries"
+    "toPath": "/deploying-bold-bi/deploying-on-linux/install-optional-libraries/v4.2/#client-libraries"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-linux/install-optional-libraries/v4.2/#phantomjs",
-    "toPath": "/deploying-bold-bi/deploying-in-linux/install-optional-libraries/v4.2/#phantomjs"
+    "toPath": "/deploying-bold-bi/deploying-on-linux/install-optional-libraries/v4.2/#phantomjs"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-linux/install-optional-libraries/v4.2/#next-step",
-    "toPath": "/deploying-bold-bi/deploying-in-linux/install-optional-libraries/v4.2/#next-step"
+    "toPath": "/deploying-bold-bi/deploying-on-linux/install-optional-libraries/v4.2/#next-step"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-linux/install-optional-libraries/v5.1/#client-libraries",
-    "toPath": "/deploying-bold-bi/deploying-in-linux/install-optional-libraries/v5.1/#client-libraries"
+    "toPath": "/deploying-bold-bi/deploying-on-linux/install-optional-libraries/v5.1/#client-libraries"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-linux/install-optional-libraries/v5.1/#next-step",
-    "toPath": "/deploying-bold-bi/deploying-in-linux/install-optional-libraries/v5.1/#next-step"
+    "toPath": "/deploying-bold-bi/deploying-on-linux/install-optional-libraries/v5.1/#next-step"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-linux/install-optional-libraries/v5.2-or-above/#client-libraries",
-    "toPath": "/deploying-bold-bi/deploying-in-linux/install-optional-libraries/v5.2-or-above/#client-libraries"
+    "toPath": "/deploying-bold-bi/deploying-on-linux/install-optional-libraries/v5.2-or-above/#client-libraries"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-linux/install-optional-libraries/v5.2-or-above/#next-step",
-    "toPath": "/deploying-bold-bi/deploying-in-linux/install-optional-libraries/v5.2-or-above/#next-step"
+    "toPath": "/deploying-bold-bi/deploying-on-linux/install-optional-libraries/v5.2-or-above/#next-step"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-linux/installation-and-deployment/auto-deployment/#deployment-prerequisites",
-    "toPath": "/deploying-bold-bi/deploying-in-linux/installation-and-deployment/auto-deployment/#deployment-prerequisites"
+    "toPath": "/deploying-bold-bi/deploying-on-linux/installation-and-deployment/auto-deployment/#deployment-prerequisites"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-linux/installation-and-deployment/auto-deployment/#configuring-the-bold-bi-application",
-    "toPath": "/deploying-bold-bi/deploying-in-linux/installation-and-deployment/auto-deployment/#configuring-the-bold-bi-application"
+    "toPath": "/deploying-bold-bi/deploying-on-linux/installation-and-deployment/auto-deployment/#configuring-the-bold-bi-application"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-linux/installation-and-deployment/auto-deployment/#environment-variable-and-it's-usage",
-    "toPath": "/deploying-bold-bi/deploying-in-linux/installation-and-deployment/auto-deployment/#environment-variable-and-it's-usage"
+    "toPath": "/deploying-bold-bi/deploying-on-linux/installation-and-deployment/auto-deployment/#environment-variable-and-it's-usage"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-linux/installation-and-deployment/bold-bi-on-centos/#deployment-prerequisites",
-    "toPath": "/deploying-bold-bi/deploying-in-linux/installation-and-deployment/bold-bi-on-centos/#deployment-prerequisites"
+    "toPath": "/deploying-bold-bi/deploying-on-linux/installation-and-deployment/bold-bi-on-centos/#deployment-prerequisites"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-linux/installation-and-deployment/bold-bi-on-centos/#configuring-the-bold-bi-application",
-    "toPath": "/deploying-bold-bi/deploying-in-linux/installation-and-deployment/bold-bi-on-centos/#configuring-the-bold-bi-application"
+    "toPath": "/deploying-bold-bi/deploying-on-linux/installation-and-deployment/bold-bi-on-centos/#configuring-the-bold-bi-application"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-linux/installation-and-deployment/bold-bi-on-centos/#manually-configure-nginx",
-    "toPath": "/deploying-bold-bi/deploying-in-linux/installation-and-deployment/bold-bi-on-centos/#manually-configure-nginx"
+    "toPath": "/deploying-bold-bi/deploying-on-linux/installation-and-deployment/bold-bi-on-centos/#manually-configure-nginx"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-linux/installation-and-deployment/bold-bi-on-centos/#configure-ssl",
-    "toPath": "/deploying-bold-bi/deploying-in-linux/installation-and-deployment/bold-bi-on-centos/#configure-ssl"
+    "toPath": "/deploying-bold-bi/deploying-on-linux/installation-and-deployment/bold-bi-on-centos/#configure-ssl"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-linux/installation-and-deployment/bold-bi-on-centos/#next-steps",
-    "toPath": "/deploying-bold-bi/deploying-in-linux/installation-and-deployment/bold-bi-on-centos/#next-steps"
+    "toPath": "/deploying-bold-bi/deploying-on-linux/installation-and-deployment/bold-bi-on-centos/#next-steps"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-linux/installation-and-deployment/bold-bi-on-ubuntu/#deployment-prerequisites",
-    "toPath": "/deploying-bold-bi/deploying-in-linux/installation-and-deployment/bold-bi-on-ubuntu/#deployment-prerequisites"
+    "toPath": "/deploying-bold-bi/deploying-on-linux/installation-and-deployment/bold-bi-on-ubuntu/#deployment-prerequisites"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-linux/installation-and-deployment/bold-bi-on-ubuntu/#configuring-the-bold-bi-application",
-    "toPath": "/deploying-bold-bi/deploying-in-linux/installation-and-deployment/bold-bi-on-ubuntu/#configuring-the-bold-bi-application"
+    "toPath": "/deploying-bold-bi/deploying-on-linux/installation-and-deployment/bold-bi-on-ubuntu/#configuring-the-bold-bi-application"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-linux/installation-and-deployment/bold-bi-on-ubuntu/#manually-configure-nginx",
-    "toPath": "/deploying-bold-bi/deploying-in-linux/installation-and-deployment/bold-bi-on-ubuntu/#manually-configure-nginx"
+    "toPath": "/deploying-bold-bi/deploying-on-linux/installation-and-deployment/bold-bi-on-ubuntu/#manually-configure-nginx"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-linux/installation-and-deployment/bold-bi-on-ubuntu/#configure-ssl",
-    "toPath": "/deploying-bold-bi/deploying-in-linux/installation-and-deployment/bold-bi-on-ubuntu/#configure-ssl"
+    "toPath": "/deploying-bold-bi/deploying-on-linux/installation-and-deployment/bold-bi-on-ubuntu/#configure-ssl"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-linux/installation-and-deployment/bold-bi-on-ubuntu/#next-steps",
-    "toPath": "/deploying-bold-bi/deploying-in-linux/installation-and-deployment/bold-bi-on-ubuntu/#next-steps"
+    "toPath": "/deploying-bold-bi/deploying-on-linux/installation-and-deployment/bold-bi-on-ubuntu/#next-steps"
   },
   {
     "fromPath": "/embedded-bi/site-administration/sso/oauth-2.0-support/amazon-cognito/#how-to-register-the-bold-bi-application-in-amazon-cognito",
@@ -48593,39 +49065,39 @@
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-linux/installation-and-deployment/v4.1-or-older/bold-bi-on-centos/#deployment-prerequisites",
-    "toPath": "/deploying-bold-bi/deploying-in-linux/installation-and-deployment/v4.1-or-older/bold-bi-on-centos/#deployment-prerequisites"
+    "toPath": "/deploying-bold-bi/deploying-on-linux/installation-and-deployment/v4.1-or-older/bold-bi-on-centos/#deployment-prerequisites"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-linux/installation-and-deployment/v4.1-or-older/bold-bi-on-centos/#configuring-the-bold-bi-application",
-    "toPath": "/deploying-bold-bi/deploying-in-linux/installation-and-deployment/v4.1-or-older/bold-bi-on-centos/#configuring-the-bold-bi-application"
+    "toPath": "/deploying-bold-bi/deploying-on-linux/installation-and-deployment/v4.1-or-older/bold-bi-on-centos/#configuring-the-bold-bi-application"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-linux/installation-and-deployment/v4.1-or-older/bold-bi-on-centos/#configure-nginx",
-    "toPath": "/deploying-bold-bi/deploying-in-linux/installation-and-deployment/v4.1-or-older/bold-bi-on-centos/#configure-nginx"
+    "toPath": "/deploying-bold-bi/deploying-on-linux/installation-and-deployment/v4.1-or-older/bold-bi-on-centos/#configure-nginx"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-linux/installation-and-deployment/v4.1-or-older/bold-bi-on-centos/#next-steps",
-    "toPath": "/deploying-bold-bi/deploying-in-linux/installation-and-deployment/v4.1-or-older/bold-bi-on-centos/#next-steps"
+    "toPath": "/deploying-bold-bi/deploying-on-linux/installation-and-deployment/v4.1-or-older/bold-bi-on-centos/#next-steps"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-linux/installation-and-deployment/v4.1-or-older/bold-bi-on-ubuntu/#deployment-prerequisites",
-    "toPath": "/deploying-bold-bi/deploying-in-linux/installation-and-deployment/v4.1-or-older/bold-bi-on-ubuntu/#deployment-prerequisites"
+    "toPath": "/deploying-bold-bi/deploying-on-linux/installation-and-deployment/v4.1-or-older/bold-bi-on-ubuntu/#deployment-prerequisites"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-linux/installation-and-deployment/v4.1-or-older/bold-bi-on-ubuntu/#configuring-the-bold-bi-application",
-    "toPath": "/deploying-bold-bi/deploying-in-linux/installation-and-deployment/v4.1-or-older/bold-bi-on-ubuntu/#configuring-the-bold-bi-application"
+    "toPath": "/deploying-bold-bi/deploying-on-linux/installation-and-deployment/v4.1-or-older/bold-bi-on-ubuntu/#configuring-the-bold-bi-application"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-linux/installation-and-deployment/v4.1-or-older/bold-bi-on-ubuntu/#manually-configure-nginx",
-    "toPath": "/deploying-bold-bi/deploying-in-linux/installation-and-deployment/v4.1-or-older/bold-bi-on-ubuntu/#manually-configure-nginx"
+    "toPath": "/deploying-bold-bi/deploying-on-linux/installation-and-deployment/v4.1-or-older/bold-bi-on-ubuntu/#manually-configure-nginx"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-linux/installation-and-deployment/v4.1-or-older/bold-bi-on-ubuntu/#configure-ssl",
-    "toPath": "/deploying-bold-bi/deploying-in-linux/installation-and-deployment/v4.1-or-older/bold-bi-on-ubuntu/#configure-ssl"
+    "toPath": "/deploying-bold-bi/deploying-on-linux/installation-and-deployment/v4.1-or-older/bold-bi-on-ubuntu/#configure-ssl"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-linux/installation-and-deployment/v4.1-or-older/bold-bi-on-ubuntu/#next-steps",
-    "toPath": "/deploying-bold-bi/deploying-in-linux/installation-and-deployment/v4.1-or-older/bold-bi-on-ubuntu/#next-steps"
+    "toPath": "/deploying-bold-bi/deploying-on-linux/installation-and-deployment/v4.1-or-older/bold-bi-on-ubuntu/#next-steps"
   },
   {
     "fromPath": "/embedded-bi/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/c3-custom-widget/#publish-the-c3-custom-widget",
@@ -49414,5 +49886,218 @@
   {
     "fromPath": "/embedded-bi/rest-api-reference/site-administration/interact-with-rest-api/",
     "toPath": "/server-api-reference/interact-with-rest-api/"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-windows/prerequisites-windows/",
+    "toPath": "/deploying-bold-bi/deploying-on-windows/prerequisites-windows/"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-windows/",
+    "toPath": "/deploying-bold-bi/deploying-on-windows/"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-windows/recommended-system-configuration/",
+    "toPath": "/deploying-bold-bi/deploying-on-windows/recommended-system-configuration/"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-windows/installation-and-deployment/",
+    "toPath": "/deploying-bold-bi/deploying-on-windows/installation-and-deployment/"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-windows/upgrade-to-latest/",
+    "toPath": "/deploying-bold-bi/deploying-on-windows/upgrade-to-latest/"
+  },  
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-windows/install-when-bold-report-exist/",
+    "toPath": "/deploying-bold-bi/deploying-on-windows/install-when-bold-report-exist/"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-windows/silent-installation/",
+    "toPath": "/deploying-bold-bi/deploying-on-windows/silent-installation/"
+  },  
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-azure/",
+    "toPath": "/deploying-bold-bi/deploying-on-azure/"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-azure/prerequisites-azure-vm/",
+    "toPath": "/deploying-bold-bi/deploying-on-azure/prerequisites-azure-vm/"
+  },{
+    "fromPath": "/deploying-bold-bi/deploying-in-azure/vm-configuration/",
+    "toPath": "/deploying-bold-bi/deploying-on-azure/vm-configuration/"
+  },{
+    "fromPath": "/deploying-bold-bi/deploying-in-azure/self-deploy-azure-vm/",
+    "toPath": "/deploying-bold-bi/deploying-on-azure/self-deploy-azure-vm/"
+  },{
+    "fromPath": "/deploying-bold-bi/deploying-in-azure/new-azure-vm/",
+    "toPath": "/deploying-bold-bi/deploying-on-azure/new-azure-vm/"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-azure/update-azure-vm/",
+    "toPath": "/deploying-bold-bi/deploying-on-azure/update-azure-vm/"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-aws/",
+    "toPath": "/deploying-bold-bi/deploying-on-aws/"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-aws/prerequisites-aws-vm/",
+    "toPath": "/deploying-bold-bi/deploying-on-aws/prerequisites-aws-vm/"
+  },
+   {
+    "fromPath": "/deploying-bold-bi/deploying-in-aws/deploy-aws-vm/",
+    "toPath": "/deploying-bold-bi/deploying-on-aws/deploy-aws-vm/"
+  },
+   {
+    "fromPath": "/deploying-bold-bi/deploying-in-aws/update-aws-vm/",
+    "toPath": "/deploying-bold-bi/deploying-on-aws/update-aws-vm/"
+  },
+   {
+    "fromPath": "/deploying-bold-bi/deploying-in-azure-app-service/",
+    "toPath": "/deploying-bold-bi/deploying-on-azure-app-service/"
+  },
+   {
+    "fromPath": "/deploying-bold-bi/deploying-in-azure-app-service/prerequisites/",
+    "toPath": "/deploying-bold-bi/deploying-on-azure-app-service/prerequisites/"
+  },
+   {
+    "fromPath": "/deploying-bold-bi/deploying-in-azure-app-service/recommendations/",
+    "toPath": "/deploying-bold-bi/deploying-on-azure-app-service/recommendations/"
+  },
+   {
+    "fromPath": "/deploying-bold-bi/deploying-in-azure-app-service/using-arm-template/",
+    "toPath": "/deploying-bold-bi/deploying-on-azure-app-service/using-arm-template/"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-azure-app-service/upgrade/",
+    "toPath": "/deploying-bold-bi/deploying-on-azure-app-service/upgrade/"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-azure-app-service/upgrade/upgrade-to-latest/",
+    "toPath": "/deploying-bold-bi/deploying-on-azure-app-service/upgrade/upgrade-to-latest/"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-azure-app-service/upgrade/upgrade-to-v4.1/",
+    "toPath": "/deploying-bold-bi/deploying-on-azure-app-service/upgrade/upgrade-to-v4.1/"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-linux/",
+    "toPath": "/deploying-bold-bi/deploying-on-linux/"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-linux/prerequisites-linux/",
+    "toPath": "/deploying-bold-bi/deploying-on-linux/prerequisites-linux/"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-linux/recommended-system-configuration/",
+    "toPath": "/deploying-bold-bi/deploying-on-linux/recommended-system-configuration/"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-linux/installation-and-deployment/",
+    "toPath": "/deploying-bold-bi/deploying-on-linux/installation-and-deployment/"
+  },
+   {
+    "fromPath": "/deploying-bold-bi/deploying-in-linux/installation-and-deployment/v4.1-or-older/",
+    "toPath": "/deploying-bold-bi/deploying-on-linux/installation-and-deployment/v4.1-or-older/"
+  },
+   {
+    "fromPath": "/deploying-bold-bi/deploying-in-linux/installation-and-deployment/v4.1-or-older/bold-bi-on-ubuntu/",
+    "toPath": "/deploying-bold-bi/deploying-on-linux/installation-and-deployment/v4.1-or-older/bold-bi-on-ubuntu/"
+  },
+   {
+    "fromPath": "/deploying-bold-bi/deploying-in-linux/installation-and-deployment/v4.1-or-older/bold-bi-on-centos/",
+    "toPath": "/deploying-bold-bi/deploying-on-linux/installation-and-deployment/v4.1-or-older/bold-bi-on-centos/"
+  },
+   {
+    "fromPath": "/deploying-bold-bi/deploying-in-linux/installation-and-deployment/bold-bi-on-ubuntu/",
+    "toPath": "/deploying-bold-bi/deploying-on-linux/installation-and-deployment/bold-bi-on-ubuntu/"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-linux/installation-and-deployment/bold-bi-on-centos/",
+    "toPath": "/deploying-bold-bi/deploying-on-linux/installation-and-deployment/bold-bi-on-centos/"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-linux/installation-and-deployment/bold-bi-on-oracle/",
+    "toPath": "/deploying-bold-bi/deploying-on-linux/installation-and-deployment/bold-bi-on-oracle/"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-linux/installation-and-deployment/bold-bi-on-redhat/",
+    "toPath": "/deploying-bold-bi/deploying-on-linux/installation-and-deployment/bold-bi-on-redhat/"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-linux/installation-and-deployment/auto-deployment/",
+    "toPath": "/deploying-bold-bi/deploying-on-linux/installation-and-deployment/auto-deployment/"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-linux/installation-and-deployment/bold-bi-over-bold-reports/",
+    "toPath": "/deploying-bold-bi/deploying-on-linux/installation-and-deployment/bold-bi-over-bold-reports/"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-linux/deploy-bold-bi-using-apache-server/",
+    "toPath": "/deploying-bold-bi/deploying-on-linux/deploy-bold-bi-using-apache-server/"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-linux/deploy-bold-bi-using-apache-server/configure-apache-server-in-centos/",
+    "toPath": "/deploying-bold-bi/deploying-on-linux/deploy-bold-bi-using-apache-server/configure-apache-server-in-centos/"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-linux/deploy-bold-bi-using-apache-server/configure-apache-server-in-ubuntu/",
+    "toPath": "/deploying-bold-bi/deploying-on-linux/deploy-bold-bi-using-apache-server/configure-apache-server-in-ubuntu/"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-linux/install-optional-libraries/",
+    "toPath": "/deploying-bold-bi/deploying-on-linux/install-optional-libraries/"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-linux/install-optional-libraries/v5.2-or-above/",
+    "toPath": "/deploying-bold-bi/deploying-on-linux/install-optional-libraries/v5.2-or-above/"
+  },
+    {
+    "fromPath": "/deploying-bold-bi/deploying-in-linux/install-optional-libraries/v5.1/",
+    "toPath": "/deploying-bold-bi/deploying-on-linux/install-optional-libraries/v5.1/"
+  },
+    {
+    "fromPath": "/deploying-bold-bi/deploying-in-linux/install-optional-libraries/v4.2/",
+    "toPath": "/deploying-bold-bi/deploying-on-linux/install-optional-libraries/v4.2/"
+  },
+    {
+    "fromPath": "/deploying-bold-bi/deploying-in-linux/install-optional-libraries/v4.1-or-older/",
+    "toPath": "/deploying-bold-bi/deploying-on-linux/install-optional-libraries/v4.1-or-older/"
+  },
+    {
+    "fromPath": "/deploying-bold-bi/deploying-in-linux/upgrade-to-latest/",
+    "toPath": "/deploying-bold-bi/deploying-on-linux/upgrade-to-latest/"
+  },
+    {
+    "fromPath": "/deploying-bold-bi/deploying-in-kubernetes/",
+    "toPath": "/deploying-bold-bi/deploying-on-kubernetes/"
+  },
+    {
+    "fromPath": "/deploying-bold-bi/deploying-in-kubernetes/prerequisites-kubernetes/",
+    "toPath": "/deploying-bold-bi/deploying-on-kubernetes/prerequisites-kubernetes/"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-kubernetes/recommended-system-configuration/",
+    "toPath": "/deploying-bold-bi/deploying-on-kubernetes/recommended-system-configuration/"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-kubernetes/bold-bi-on-kubernetes/",
+    "toPath": "/deploying-bold-bi/deploying-on-kubernetes/bold-bi-on-kubernetes/"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-docker/",
+    "toPath": "/deploying-bold-bi/deploying-on-docker/"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-docker/deployment-prerequisites/",
+    "toPath": "/deploying-bold-bi/deploying-on-docker/deployment-prerequisites/"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-docker/recommended-system-configuration/",
+    "toPath": "/deploying-bold-bi/deploying-on-docker/recommended-system-configuration/"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/deploying-in-docker/bold-bi-in-docker/",
+    "toPath": "/deploying-bold-bi/deploying-on-docker/bold-bi-on-docker/"
   }
 ]

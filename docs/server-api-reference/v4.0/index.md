@@ -10,7 +10,7 @@ documentation: ug
 
 # REST API v4.0
 
-This section explains how to manage (retrieve, add, update, and delete) dashboard views, also to copy the dashboards, data sources, and update site setting in your Bold BI site.
+This section explains how to manage (retrieve, add, update, and delete) dashboard views. It also covers how to copy the dashboards, data sources, and update site settings in your Bold BI site.
 
 [Rest API - v4.0](/server-api-reference/v4.0/api-reference/)
 

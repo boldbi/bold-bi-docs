@@ -32,7 +32,7 @@ Once you click the data source, the NEW DATA SOURCE configuration panel opens.
 
     Example: `https://<:your_storage_account_name>.blob.core.windows.net<:your_end_point>`    
 
-3. Select **GET** method for the REST API in the **Method** combo box.
+3. Select the **GET** method for the REST API in the **Method** combo box.
 4. The default value for **x-ms-version** in the *Headers* section is **2014-02-14**. Refer to other [available versions](https://docs.microsoft.com/en-us/rest/api/storageservices/previous-azure-storage-service-versions#version-2012-02-12-and-later).
 5. Choose a time interval for **Refresh Settings** using the combo box to periodically trigger the REST API request to keep the data in sync with the dashboard. 
 6. Choose the data type based on the file extension (JSON / CSV / XML) that you have in the REST API endpoint.
@@ -59,7 +59,7 @@ You can also edit the connection information set here using the [Edit Connection
 Refresh Settings
 </td>
 <td>
-Period of time before next refresh call is triggered. This will automatically trigger a call for the API configured in the data source to keep the data up to date. If you do not want to sync your new data, choose ‘Never’.
+The period of time before the next refresh call is triggered. This will automatically trigger a call to the API configured in the data source to keep the data up to date. If you do not want to sync your new data, choose ‘Never’.
 </td>
 </tr>
 </table>
@@ -81,7 +81,7 @@ For more information on the API endpoints available for this data source, please
 `https://<:your_storage_account_name>.blob.core.windows.net/mycontainer/salesdata.xml`
 
 ### Preview and data import
-* Click **Preview & Connect** to connect with the configurations set.
+* Click **Preview & Connect** to connect with the configurations that have been set.
 * The Choose Schema(s) dialog opens. The schema represents the key fields of data retrieved from the Azure Blob Rest API request. This dialog displays a list of schemas in a treeview and its corresponding values in a grid for preview. Select the required schema(s) from the treeview to use in the designer and click **Connect**.
 
    ![Preview](/static/assets/working-with-datasource/data-connectors/images/common/Preview.png)

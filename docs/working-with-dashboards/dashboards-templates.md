@@ -38,13 +38,13 @@ The different templates we offer include:
 
 ## Azure DevOps Dashboard
 
-Check out <a href="https://www.boldbi.com/blog/monitoring-azure-devops-project-performance" target="_blank">this</a> article to learn how to analyze task details in the sprint and track sprint velocity, bug status and severity, task priority, and task status.
+Check out this <a href="https://www.boldbi.com/blog/monitoring-azure-devops-project-performance" target="_blank">blog</a> article to learn how to analyze task details in the sprint and track sprint velocity, bug status and severity, task priority, and task status.
 
 ![Azure DeveOps Dashboard](/static/assets/working-with-dashboards/images/azure-devops-dashboard.png)
 
 ## FreshBooks Dashboard
 
-Look at <a href="https://www.boldbi.com/blog/key-metrics-for-your-business-growth-with-freshbooks" target="_blank">this</a>
+Look at this <a href="https://www.boldbi.com/blog/key-metrics-for-your-business-growth-with-freshbooks" target="_blank">blog</a>
  blog post to learn how to view your business finances in a way that helps analyze your revenue and expenses, customer growth, and payment status.
 
 ![FreshBooks Dashboard](/static/assets/working-with-dashboards/images/freshbooks-dashboard.png)
@@ -61,7 +61,7 @@ Look at <a href="https://www.boldbi.com/blog/key-metrics-for-your-business-growt
 
 ![GitHub Dashboard](/static/assets/working-with-dashboards/images/github-dashboard.png)
 
-Check out <a href="https://www.boldbi.com/blog/analyze-and-visualize-your-github-repository-statistics-data" target="_blank">this</a>
+Check out this<a href="https://www.boldbi.com/blog/analyze-and-visualize-your-github-repository-statistics-data" target="_blank">blog</a>
  article to learn how to analyze and visualize your GitHub repository activity in the Bold BI dashboard.
 
 ## Infusionsoft Sales Dashboard
@@ -76,7 +76,7 @@ Check out <a href="https://www.boldbi.com/blog/analyze-and-visualize-your-github
 
 ![Jira Dashboard](/static/assets/working-with-dashboards/images/jira-dashboard.png)
 
-Look at <a href="https://www.boldbi.com/blog/jira-dashboard-example-with-bold-bi" target="_blank">this</a>
+Look at this <a href="https://www.boldbi.com/blog/jira-dashboard-example-with-bold-bi" target="_blank">blog</a>
  blog post to learn how to connect your Jira data with Bold BI Dashboard and visualize your project and team insights.
 
 ## MailChimp Dashboard
@@ -95,11 +95,11 @@ Look at <a href="https://www.boldbi.com/blog/jira-dashboard-example-with-bold-bi
 
 ![SendGrid Dashboard](/static/assets/working-with-dashboards/images/sendgrid-dashboard.png)
 
-<a href="https://www.boldbi.com/blog/sendgrid-email-stats-tracking-example-with-bold-bi" target="_blank">This</a> blog article helps you connect your SendGrid data with Bold BI Dashboards, allowing you to monitor and track email stats with ease.
+This <a href="https://www.boldbi.com/blog/sendgrid-email-stats-tracking-example-with-bold-bi" target="_blank">blog</a> article helps you connect your SendGrid data with Bold BI Dashboards, allowing you to monitor and track email stats with ease.
 
 ## ServiceNow Dashboard
 
-<a href="https://www.boldbi.com/blog/build-a-servicenow-incident-management-monitoring-dashboard-in-a-minute" target="_blank">This</a> blog is used to monitor incident details over a period and provide accurate information regarding the average resolution time for an incident and the status of incidents based on category and priority.
+This <a href="https://www.boldbi.com/blog/build-a-servicenow-incident-management-monitoring-dashboard-in-a-minute" target="_blank">blog</a> is used to monitor incident details over a period and provide accurate information regarding the average resolution time for an incident and the status of incidents based on category and priority.
 
 ![ServiceNow Dashboard](/static/assets/working-with-dashboards/images/servicenow-dashboard.png)
 
@@ -107,21 +107,21 @@ Look at <a href="https://www.boldbi.com/blog/jira-dashboard-example-with-bold-bi
 
 ![Twilio Dashboard](/static/assets/working-with-dashboards/images/twilio-dashboard.png)
 
-<a href="https://www.boldbi.com/blog/twilio-dashboard-example-with-bold-bi" target="_blank">This</a>
+This <a href="https://www.boldbi.com/blog/twilio-dashboard-example-with-bold-bi" target="_blank">blog</a>
  article helps you build a support tracker dashboard with Twilio data using Bold BI Dashboards.
 
 ## YouTube Dashboard
 
 ![YouTube Dashboard](/static/assets/working-with-dashboards/images/youtube-dashboard.png)
 
-Look at <a href="https://www.boldbi.com/blog/create-custom-youtube-dashboards-with-bold-bi" target="_blank">this</a>
+Look at this<a href="https://www.boldbi.com/blog/create-custom-youtube-dashboards-with-bold-bi" target="_blank">blog</a>
  blog post to learn how to build a simple analytics dashboard to show the key metrics of your YouTube channel all in one place using Bold BI.
 
 ## Zendesk Dashboard
 
 ![Zendesk Dashboard](/static/assets/working-with-dashboards/images/zendesk-dashboard.png)
 
-Check out <a href="https://www.boldbi.com/blog/zendesk-dashboard-example-for-monitoring-customer-service-performance-with-bold-bi" target="_blank">this</a> article to learn how to build a support team performance monitoring dashboard with Zendesk data using Bold BI.
+Check out this<a href="https://www.boldbi.com/blog/zendesk-dashboard-example-for-monitoring-customer-service-performance-with-bold-bi" target="_blank">blog</a> article to learn how to build a support team performance monitoring dashboard with Zendesk data using Bold BI.
 
 ## Related links
  <a href="https://www.boldbi.com/blog/introduction-to-bold-bi-creating-dashboards-with-pre-defined-templates-webinar-qa" target="_blank">Blog Post</a> 

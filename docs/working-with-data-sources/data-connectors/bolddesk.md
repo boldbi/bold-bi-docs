@@ -152,7 +152,7 @@ Not all BoldDesk resources support Incremental refresh; only the following resou
    ![RefreshPreview](/static/assets/working-with-datasource/data-connectors/images/BoldDesk/RefreshPreview.png)
 
 ### Preview and data import
-* Click **Preview & Connect** to connect with the configurations set.
+* Click **Preview & Connect** to connect with the configurations that have been set.
 * The Choose Table(s) dialog opens. The schema represents the key fields of JSON data retrieved from the BoldDesk Rest API request. This dialog displays a list of schemas in a tree view and its corresponding values in a grid for preview. Select the required schema(s) from the tree view to use in the designer and click **Connect**.
 
    ![Preview](/static/assets/working-with-datasource/data-connectors/images/common/Preview.png)

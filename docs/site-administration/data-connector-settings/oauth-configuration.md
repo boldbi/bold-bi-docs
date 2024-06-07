@@ -51,7 +51,7 @@ The *host* and *port* are the corresponding values on which your Bold BI service
 
 If you have not configured OAuth for WordPress in Bold BI, follow the steps below and then proceed to connect to this data source.
 1.	Enable the WordPress service.
-2.	You will need a developer account of the respective data source to generate Client ID and Client Secret. Use the Help link on the data source to navigate to the service provider’s developer/documentation site. For WordPress, https://developer.wordpress.com/docs/api/
+2.	You will need a developer account of the respective data source to generate Client ID and Client Secret. Use the Help link on the data source to navigate to the service provider’s developer/documentation site. For [WordPress](https://developer.wordpress.com/docs/api/).
     
     ![wordpress-icon](/static/assets/oauth/images/wordpress-icon.png)
 

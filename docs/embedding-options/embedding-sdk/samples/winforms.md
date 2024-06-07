@@ -93,7 +93,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/winforms-samp
 
 ## How this sample works
 
- 1. Based on the dashboard provided in the embed properties, you will authorize the server URL by calling the `GetEmbedDetails` function. function. Learn more about the authorize server [here](/security-configuration/authorize-server/)
+ 1. Based on the dashboard provided in the embed properties, you will authorize the server URL by calling the `GetEmbedDetails` function. function. Learn more about the the [authorization server](/security-configuration/authorize-server/).
     ![Get Embed Details](/static/assets/javascript/sample/images/winforms-authorize.png)
 
  2. In the authorization mentioned above, the `SignatureUrl` has been generated using the provided `EmbedSecret key` and the embed details have been validated in Bold BI. Once the details are validated, the dashboard begins to render.

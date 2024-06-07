@@ -6,7 +6,7 @@ documentation: ug
 ---
 
 # Connecting Bold BI to Quickbase data source
-The Bold BI dashboard designer supports connecting Quickbase web services through REST API. 
+The Bold BI dashboard designer supports connecting to Quickbase web services through the REST API. 
 
 ## Choose Quickbase data source
 
@@ -20,19 +20,19 @@ To configure the Quickbase data source, follow these steps:
 
    ![Choose data source](/static/assets/working-with-datasource/data-connectors/images/Quickbase/ChooseDS.png)
 
-   > **NOTE:** You can also create a data source from the home page by clicking the **Data Sources** menu from the left menu panel and **Create Data Source** from the data sources page.
+   > **NOTE:** You can also create a data source from the home page by clicking the **Data Sources** menu on the left menu panel and selecting **Create Data Source** from the data sources page.
 
    ![Choose data source from server](/static/assets/working-with-datasource/data-connectors/images/Quickbase/ChooseDS_Server.png)
 
 ## Create Quickbase data source
-Once you click the data source, the NEW DATA SOURCE configuration panel opens. Follow these steps to create a Quickbase data source:
+Once you click on the data source, the NEW DATA SOURCE configuration panel will open. Follow these steps to create a Quickbase data source:
 1. Enter a name and description (optional) for the data source.
 2. Enter the **QB-Realm-Hostname** for the connected account.
 3. Enter the **QB-USER-TOKEN** in **Authentication** text box for the connected account.
 4. Enter the **App Id** for the connected account.
 5. Click the **Table** dropdown box and choose the required table.
-6. In **Max Rows**, enter the maximum number of rows fetched from the Quickbase data source. This value is used to fetch the data from the Quickbase data source using the pagination.
-7. Choose a time interval for the **Refresh Settings** using the combo box to periodically trigger the Rest API request to keep the data in sync with your dashboard.
+6. In the **Max Rows** field, please enter the maximum number of rows to be fetched from the Quickbase data source. This value will be used to retrieve the data from the Quickbase data source by implementing pagination.
+7. Select a time interval for the **Refresh Settings** by using the combo box. This will allow the Rest API request to be triggered periodically in order to keep the data in sync with your dashboard.
 
    ![Data source preview](/static/assets/working-with-datasource/data-connectors/images/Quickbase/DataSourcesView.png)
 
@@ -61,8 +61,8 @@ Period of time before the next refresh call is triggered. This will automaticall
 
 ### Setting up the URL
 
-1. For entering the URL manually, click the **Custom URL** and select the relevant method type in **Method** combo box, then enter the URL. Refer to the [Quickbase API documentation](https://developer.quickbase.com/) for more details.
-2. For instance, if you need to get a list of App Events details, you need to replace your *appId* in the following API in Custom URL.
+1. To enter the URL manually, click on the **Custom URL** and select the relevant method type in the **Method** combo box, then enter the URL. Refer to the [Quickbase API documentation](https://developer.quickbase.com/) for more details.
+2. For example, if you need to obtain a list of App Events details, you must replace your appId in the following API in the Custom URL.
 3. Replace it in the URL to query particular conversations.
 
 `https://api.quickbase.com/v1/apps/<:appId>/events`
@@ -81,7 +81,7 @@ For more information on the API endpoints available for this data source, refer 
 
 
 ### Preview and data import
-* Click the **Preview & Connect** to connect with the configurations set.
+* Click the **Preview & Connect** to connect with the configurations that have been set.
 * The Choose Tables dialog opens. The schema represents the key fields of JSON data retrieved from the Quickbase Rest API request. This dialog displays a list of schema(s) in the treeview and their corresponding values in the grid for preview. Select required schemas from the treeview to use in the designer and click Connect.
 
    ![Preview](/static/assets/working-with-datasource/data-connectors/images/common/Preview.png)
@@ -94,7 +94,7 @@ For more information on the API endpoints available for this data source, refer 
 
 ### Connect using custom attribute and dashboard parameter
 
-We have added support for **custom attributes and dashboard parameters** to the data source connection. You can connect to the data source using custom attributes or dashboard parameters.
+We have added support for **custom attributes and dashboard parameters** in the data source connection. You can now connect to the data source using custom attributes or dashboard parameters.
 
 **Custom Attribute**
 
@@ -104,7 +104,7 @@ We have added support for **custom attributes and dashboard parameters** to the 
 
 ![Dashboard Parameter](/static/assets/working-with-datasource/data-connectors/images/Quickbase/Dashboardparameter.png)
 
->**Note:** Refer the [Dashboard Parameter Documentation](https://help.boldbi.com/working-with-data-sources/dashboard-parameter/) and [Custom Attributes Documentation](https://help.boldbi.com/working-with-data-sources/configuring-custom-attribute/) for more details.
+>**Note:** Refer to the [Dashboard Parameter Documentation](https://help.boldbi.com/working-with-data-sources/dashboard-parameter/) and [Custom Attributes Documentation](https://help.boldbi.com/working-with-data-sources/configuring-custom-attribute/) for more details.
 
 ## Related links
 [Data Transformation](/working-with-data-sources/data-modeling/joining-table/)

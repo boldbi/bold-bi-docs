@@ -23,7 +23,7 @@ To obtain the API token for Pipedrive, follow these steps:
 
 ## Connection Properties
 
-In a YAML file, the `config` section contains the following properties:
+The `config` section in a YAML file includes the following properties:
 
 ```yaml
 Connectorname: Pipedrive

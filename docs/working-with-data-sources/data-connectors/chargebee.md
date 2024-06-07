@@ -60,8 +60,7 @@ You can also edit the connection information set here by using the [Edit Connect
 Max Rows
 </td>
 <td>
-Most of the REST APIs return only fewer data on a single API request. To pull the amount of data you need, set a value in this field.  
-Pagination is handled internally and will fetch the amount of data you need.
+Most REST APIs return only a limited amount of data on a single API request. To retrieve the necessary amount of data, you can set a value in this field. Pagination is handled internally and will fetch the required data.
 </td>
 </tr>
 <tr>
@@ -69,7 +68,7 @@ Pagination is handled internally and will fetch the amount of data you need.
 Refresh Settings
 </td>
 <td>
-Period of time before next refresh call is triggered. This will automatically trigger a call for the API configured in the data source to keep the data up to date. If you do not want to sync your new data, choose ‘Never’.
+The period of time before the next refresh call is triggered. This will automatically trigger a call to the API configured in the data source to keep the data up to date. If you do not want to sync your new data, choose ‘Never’.
 </td>
 </tr>
 </table>
@@ -86,18 +85,18 @@ For more information on the API endpoints available for this data source, refer 
 
 **Customers**
 
-[https://your-site-82112337-test.chargebee.com/api/v2/customers](https://your-site-82112337-test.chargebee.com/api/v2/customers)
+`https://your-site-82112337-test.chargebee.com/api/v2/customers`
 
 **Invoices**
 
-[https://your-site-82112337-test.chargebee.com/api/v2/invoices](https://your-site-82112337-test.chargebee.com/api/v2/invoices)
+`https://your-site-82112337-test.chargebee.com/api/v2/invoices`
 
 **Subscriptions**
 
-[https://your-site-82112337-test.chargebee.com/api/v2/subscriptions](https://your-site-82112337-test.chargebee.com/api/v2/subscriptions)
+`https://your-site-82112337-test.chargebee.com/api/v2/subscriptions`
 
 ### Preview and data import
-* Click **Preview & Connect** to connect with the configurations set.
+* Click **Preview & Connect** to connect with the configurations that have been set.
 * The Choose Schema(s) dialog opens. The schema represents the key fields of JSON data retrieved from ActiveCampaign Rest API request. This dialog displays a list of schemas in treeview and its corresponding values in grid for preview. Select required schema(s) from treeview to use in designer and click **Connect**.
 
    ![Preview](/static/assets/working-with-datasource/data-connectors/images/common/Preview.png)

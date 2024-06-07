@@ -180,7 +180,7 @@ You need the following content and images to properly represent your branding wh
 | Screenshots for tablet <br>(Minimum 2 and maximum 8 screenshots). | <li>7-inch screenshot<li>10-inch screenshot | ![Screenshot for Phone](/static/assets/accessing-through-mobile-app/images/screenshot-for-tablet.png)|
 | Hi-res icon (App icon) | <li>512 x 512<li>32-bit PNG (with alpha) |  ![Hi Res Icon](/static/assets/accessing-through-mobile-app/images/hi-res-icon.png)|
 
-Please click on this [link](https://support.google.com/googleplay/android-developer/answer/1078870 ) for more details about screenshots and images.
+Please click on [this documentation](https://support.google.com/googleplay/android-developer/answer/1078870) for more details about screenshots and images.
 
 ## App Store Publishing
 

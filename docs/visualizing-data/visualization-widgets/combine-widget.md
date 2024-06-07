@@ -116,7 +116,7 @@ This enables or disables the `PDF export` option for the combine widget. Enablin
 
 ### Enable Comments
 
-This enables or disables `comment` for dashboard widget. For more details, refer to [link](/visualizing-data/working-with-widgets/commenting-widget/).
+This enables or disables `comment` for dashboard widget. For more details, refer to the [Commenting Widget](/visualizing-data/working-with-widgets/commenting-widget/).
 
 ### Pin widget
 

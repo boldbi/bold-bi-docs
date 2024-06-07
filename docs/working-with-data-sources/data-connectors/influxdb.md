@@ -7,7 +7,7 @@ documentation: ug
 ---
  
 # Connecting Bold BI to InfluxDB data source
-The Bold BI Dashboard Designer supports connecting InfluxDB database using SQL Live Query (C# API).
+The Bold BI dashboard designer supports connecting to an InfluxDB database using SQL Live Query (C# API).
 
 **Supported Server Version:** InfluxDB v1.8
 
@@ -22,13 +22,13 @@ To configure the InfluxDB data source, follow these steps:
 
    ![Choose data source](/static/assets/working-with-datasource/data-connectors/images/Influxdb/ChooseDS.png)
 
-> **NOTE:**  You can also create a data source from the home page by clicking the **Data Sources** menu from left menu panel and **Create Data Source** from the data sources page.
+> **NOTE:**  You can also create a data source from the home page by clicking on the **Data Sources** menu on the left menu panel and selecting **Create Data Source** from the data sources page.
 
    ![Choose data source from server](/static/assets/working-with-datasource/data-connectors/images/Influxdb/ChooseDS_server.png)
 
 ## Connect to InfluxDB
 ### Create InfluxDB data source
-After clicking the data source, the **NEW DATA SOURCE** configuration panel opens. Follow the given steps to create an InfluxDB data source: 
+After clicking on the data source, the **NEW DATA SOURCE** configuration panel opens. Follow the given steps to create an InfluxDB data source: 
 1. Enter a name and description (optional) for the data source. 
 2. Enter a valid InfluxDB server or host name in the **ServerName** text box.
 3. Enter the port, in which the server is running in the **Port** text box.
@@ -38,11 +38,11 @@ After clicking the data source, the **NEW DATA SOURCE** configuration panel open
 
    ![InfluxDB Connection](/static/assets/working-with-datasource/data-connectors/images/Influxdb/Influxdb_Connection.png)
 
-> **NOTE:**  To connect data source with **SSH**, enable the SSH check box in the **NEW DATA SOURCE** configuration panel and enter the required credentials.
+> **NOTE:**  To connect to a data source with **SSH**, enable the SSH checkbox in the **NEW DATA SOURCE** configuration panel and enter the necessary credentials.
 ![Enable SSH](/static/assets/working-with-datasource/images/enable-ssh.png#max-width=60%)
 
 ### Data Preview
-1. Click **Connect** to connect the InfluxDB server with configured details. 
+1. Click **Connect** to connect to the InfluxDB server with the configured details. 
 The schema represents the collection list retrieved from the InfluxDB server. This dialog displays a list of schemas in a tree view and their corresponding values. Measurements will be listed as tables.
 
    ![Treeview schema](/static/assets/working-with-datasource/data-connectors/images/Influxdb/Treeview_schema.png)
@@ -51,7 +51,7 @@ The schema represents the collection list retrieved from the InfluxDB server. Th
 
    ![Query designer](/static/assets/working-with-datasource/data-connectors/images/Influxdb/QueryEditor.png)
 
-    You can use the  Code View option for passing a query to display data.
+    You can use the Code View option for passing a query to display data.
 
    ![Codeview mode](/static/assets/working-with-datasource/data-connectors/images/Influxdb/CodeViewMode.png)
 
@@ -61,7 +61,7 @@ The schema represents the collection list retrieved from the InfluxDB server. Th
 
 ### Connect using custom attribute and dashboard parameter
 
-We have added support for **custom attributes and dashboard parameters** to the data source connection. You can connect to the data source using custom attributes or dashboard parameters.
+We have added support for **custom attributes and dashboard parameters** in the data source connection. You can now connect to the data source using custom attributes or dashboard parameters.
 
 **Custom Attribute**
 
@@ -71,15 +71,15 @@ We have added support for **custom attributes and dashboard parameters** to the 
 
 ![Dashboard Parameter](/static/assets/working-with-datasource/data-connectors/images/Influxdb/Dashboardparameter.png)
 
->**Note:** Refer the [Dashboard Parameter Documentation](https://help.boldbi.com/working-with-data-sources/dashboard-parameter/) and [Custom Attributes Documentation](https://help.boldbi.com/working-with-data-sources/configuring-custom-attribute/) for more details.
+>**Note:** Refer to the [Dashboard Parameter Documentation](https://help.boldbi.com/working-with-data-sources/dashboard-parameter/) and [Custom Attributes Documentation](https://help.boldbi.com/working-with-data-sources/configuring-custom-attribute/) for more details.
 
 ### Here is the Bold BI supported features in InfluxDB connector
-> **IMPORTANT:**  InfluxDB is a time series database, so few limitations for InfluxDB connector in Bold BI live mode connection.
+> **IMPORTANT:**  InfluxDB is a time series database, therefore there are few limitations for the InfluxDB connector in Bold BI's live mode connection.
 
 > **NOTE:**  Joins are not supported for InfluxDB data source in Bold BI.
 
 ### Group by and Order by
-InfluxDB is a time series database. The data can be ordered only by using the time column and can be grouped only by time intervals.
+InfluxDB is a time series database. The data can only be ordered using the time column and can only be grouped by time intervals.
 
    ![InfluxDB Group by](/static/assets/working-with-datasource/data-connectors/images/Influxdb/Influxdb_Groupby.png)
   
@@ -115,7 +115,7 @@ Expressions can be created for numeric field(s) and calculated field(s) in the s
    ![InfluxDB Expressions](/static/assets/working-with-datasource/data-connectors/images/Influxdb/Influxdb_Expressions.png)
 
 ### Filters
-You can only filter numeric columns in the query filters in query designer page.
+You can only filter numeric columns in the query filters on the query designer page.
 
    ![InfluxDB Filters](/static/assets/working-with-datasource/data-connectors/images/Influxdb/Influxdb_Filters.png)
 
@@ -131,7 +131,7 @@ You can filter data based on year, month, week, day, and hour for time column on
 > **NOTE:**  You cannot filter measure columns in the widget level filtering. 
 
 ### Top N filters
-The data can be applied in the top and bottom filters for time column based on the measure fields in the selected list.
+The data can be applied to the top and bottom filters for the time column based on the measure fields in the selected list.
 
    ![InfluxDB Top N](/static/assets/working-with-datasource/data-connectors/images/Influxdb/Influxdb_TopN.png)
 
@@ -143,7 +143,7 @@ The data can be applied in the top and bottom filters for time column based on t
 
 **Supported Server Version:** InfluxDB v1.8
 
-Type while creating the data source needs to be influxdb.
+The data source type needs to be InfluxDB when creating the data.
 
 [Rest API - v4.0](/server-api-reference/v4.0/api-reference/)
 
@@ -385,7 +385,7 @@ Type while creating the data source needs to be influxdb.
 
 ### Parameters for editing Data Source
 
-> **NOTE:**  For editing Data Source via API. All the parameters are optional. The parameter which needs to be changed can be provided.
+> **NOTE:**  To edit the Data Source via API, all parameters are optional. Only provide the parameter that needs to be changed.
 
 #### Parameters for modifying expressions when editing Data Source
    

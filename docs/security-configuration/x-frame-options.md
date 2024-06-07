@@ -24,4 +24,4 @@ If you enable X-Frame-Options, the pages will only be rendered in a frame if the
 
 ![Content Security Policy settings for font](/static/assets/security-configuration/images/enable-x-frame-options.png)
 
-> **Warning:** Please ensure that you do not use iframe-based embedding, as it will not function when the X-Frame-Options setting is enabled in Bold BI. Click [here](/embedding-options/iframe-embedding/)  to learn more about iframe based embedding.
+> **Warning:** Please ensure that you do not use iframe-based embedding, as it will not function when the X-Frame-Options setting is enabled in Bold BI. Click on the [iFrame Embedding](/embedding-options/iframe-embedding/) to learn more about iframe based embedding.

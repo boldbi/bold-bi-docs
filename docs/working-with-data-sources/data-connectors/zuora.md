@@ -7,7 +7,7 @@ documentation: ug
 ---
 
 # Connecting Bold BI to Zuora data source
-The Bold BI dashboard designer connects the Zuora web services through REST API. 
+The Bold BI dashboard designer connects the Zuora web services through the REST API. 
 
 ## Choose Zuora data source
 
@@ -26,7 +26,7 @@ To configure the Zuora data source, follow these steps:
    ![Choose data source from server](/static/assets/working-with-datasource/data-connectors/images/Zuora/ChooseDS_Server.png)
 
 ## Create Zuora data source
-Once you click the data source, the NEW DATA SOURCE configuration panel opens. Follow these steps to create a Zuora data source.
+Once you click on the data source, the NEW DATA SOURCE configuration panel will open. Follow these steps to create a Zuora data source.
 1. Enter a name and description (optional) for the data source.
 2. Enter the **HostName** for the connected account.
 3. Click the **API Endpoints** dropdown box and choose the required endpoint.
@@ -86,7 +86,7 @@ For more information on the API endpoints available for this data source, refer 
 
 
 ### Preview and data import
-* Click the **Preview & Connect** to connect with the configurations set.
+* Click the **Preview & Connect** to connect with the configurations that have been set.
 * The Choose Tables dialog opens. The schema represents the key fields of JSON data retrieved from the Zuora Rest API request. This dialog displays a list of schemas in the treeview and their corresponding values in the grid for preview. Select required schema(s) from the treeview to use in the designer and click Connect.
 
    ![Preview](/static/assets/working-with-datasource/data-connectors/images/common/Preview.png)
@@ -99,7 +99,7 @@ For more information on the API endpoints available for this data source, refer 
 
 ### Connect using custom attribute and dashboard parameter
 
-We have added support for **custom attributes and dashboard parameters** to the data source connection. You can connect to the data source using custom attributes or dashboard parameters.
+We have added support for **custom attributes and dashboard parameters** in the data source connection. You can now connect to the data source using custom attributes or dashboard parameters.
 
 **Custom Attribute**
 
@@ -109,7 +109,7 @@ We have added support for **custom attributes and dashboard parameters** to the 
 
 ![Dashboard Parameter](/static/assets/working-with-datasource/data-connectors/images/Zuora/Dashboardparameter.png)
 
->**Note:** Refer the [Dashboard Parameter Documentation](https://help.boldbi.com/working-with-data-sources/dashboard-parameter/) and [Custom Attributes Documentation](https://help.boldbi.com/working-with-data-sources/configuring-custom-attribute/) for more details.
+>**Note:** Refer to the [Dashboard Parameter Documentation](https://help.boldbi.com/working-with-data-sources/dashboard-parameter/) and [Custom Attributes Documentation](https://help.boldbi.com/working-with-data-sources/configuring-custom-attribute/) for more details.
 
 ## Related links
 [Data Transformation](/working-with-data-sources/data-modeling/joining-table/)

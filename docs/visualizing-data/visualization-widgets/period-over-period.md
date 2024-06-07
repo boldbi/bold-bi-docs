@@ -341,4 +341,4 @@ This option allows you to enable or disable the `widget title` of the Period ove
 
 #### Enable Comments
 
-This allows you to enable or disable `comments` for the dashboard widget. For more details, refer to this [link](/visualizing-data/working-with-widgets/commenting-widget/).
+This allows you to enable or disable `comments` for the dashboard widget. For more details, refer to the [Commenting Widget](/visualizing-data/working-with-widgets/commenting-widget/).

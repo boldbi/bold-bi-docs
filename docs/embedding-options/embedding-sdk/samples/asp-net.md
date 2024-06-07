@@ -108,7 +108,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/aspnet-web-fo
 
 ## How this sample works
 
-1. Based on the embedded details provided with the dashboard, authorize the server URL by calling the `GetEmbedDetails` function `(Default.aspx/GetEmbedDetails)` and passing the provided `EmbedProperties` values. Learn more about authorizing the server [here](/security-configuration/authorize-server/)
+1. Based on the embedded details provided with the dashboard, authorize the server URL by calling the `GetEmbedDetails` function `(Default.aspx/GetEmbedDetails)` and passing the provided `EmbedProperties` values. Learn more about the [authorization server](/security-configuration/authorize-server/).
 
     ![Authorize Server URL](/static/assets/javascript/sample/images/asp-net-api-v1.png)
     ![Get Embed Details](/static/assets/javascript/sample/images/asp-net-authorize-v1.png)

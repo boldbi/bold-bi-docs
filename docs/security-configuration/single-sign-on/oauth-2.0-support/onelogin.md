@@ -85,7 +85,7 @@ The fields that need to be saved in Bold BI in order to enable OneLogin for auth
 
 <tr>
 <td>Authorization Endpoint</td>
-<td>It should be in the format <span style="color:#0c9dd1">https://subdomain.onelogin.com/oidc/auth</span> <br>Please refer <a href="https://developers.onelogin.com/openid-connect/api/authorization-code">here</a> for more details.</td>
+<td>It should be in the format <span style="color:#0c9dd1">https://subdomain.onelogin.com/oidc/auth</span> <br>Please refer to the <a href="https://developers.onelogin.com/openid-connect/api/authorization-code">authorization code</a> for more details.</td>
 </tr>
 
 <tr>
@@ -95,7 +95,7 @@ The fields that need to be saved in Bold BI in order to enable OneLogin for auth
 
 <tr>
 <td>Token Endpoint</td>
-<td>It should be in the format <span style="color:#0c9dd1">https://subdomain.onelogin.com/oidc/token</span> <br>Please refer <a href="https://developers.onelogin.com/openid-connect/api/authorization-code-grant">here</a> for more details.</td>
+<td>It should be in the format <span style="color:#0c9dd1">https://subdomain.onelogin.com/oidc/token</span> <br>Please refer to the <a href="https://developers.onelogin.com/openid-connect/api/authorization-code-grant">authorization code grant</a> for more details.</td>
 </tr>
 
 <tr>
@@ -105,7 +105,7 @@ The fields that need to be saved in Bold BI in order to enable OneLogin for auth
 
 <tr>
 <td>User Information Endpoint</td>
-<td>It should be in the format <span style="color:#0c9dd1">https://subdomain.onelogin.com/oidc/me</span> <br>Please refer <a href="https://developers.onelogin.com/openid-connect/api/user-info">here</a> for more details.</td>
+<td>It should be in the format <span style="color:#0c9dd1">https://subdomain.onelogin.com/oidc/me</span> <br>Please refer <a href="https://developers.onelogin.com/openid-connect/api/user-info">user info</a> for more details.</td>
 </tr>
 
 <tr>
@@ -141,8 +141,7 @@ Configure the group import setting in Bold BI using OneLogin, as shown in the im
 
 ![OneLogin Group](/static/assets/site-administration/oauth-support/images/OneLogin-group.png)
 
-To generate the API client credentials, please follow the link below,
-https://developers.onelogin.com/api-docs/1/getting-started/working-with-api-credentials 
+To generate the API client credentials, please follow the link: [OneLogin API Credentials Guide](https://developers.onelogin.com/api-docs/1/getting-started/working-with-api-credentials)
 
 We use the client ID and client secret from the API client credentials to obtain a token for accessing the groups API. In order to access OneLogin APIs, we require the `Region` from the API Domain. Please refer to the image below for the region,
 

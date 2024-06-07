@@ -228,7 +228,7 @@ To embed the multi-tabbed dashboard, you can use either the dashboard ID or the 
 
 ## How to implement the authorize server with user email or user name
 
-1. You need to implement an authorization endpoint in your application. This will act as the bridge between your application and the Bold BI server. Additionally, you need to update the secure details, such as email and group-based access. To learn more about the authorization server, click [here](/security-configuration/authorize-server/).  
+1. You need to implement an authorization endpoint in your application. This will act as the bridge between your application and the Bold BI server. Additionally, you need to update the secure details, such as email and group-based access. To learn more about the [authorization server](/security-configuration/authorize-server/).
 
 2. To create the authorization-server action method, copy the following snippet into your controller. You can use the currently logged-in user's email at `user@domain.com` or `username`, but this user should have access to the dashboard. 
 
@@ -315,9 +315,9 @@ public string GetEmbedDetails(string embedQuerString, string dashboardServerApiU
 }
 ```
 
-* The `Dashboard Parameter` filter must be started with a double ampersand `&&` in the endpoint. Please refer to this [link](/working-with-data-sources/dashboard-parameter/configuring-dashboard-parameters/) for more details.   
+* The `Dashboard Parameter` filter must be started with a double ampersand `&&` in the endpoint. Please refer to the [configuring dashboard parameters](/working-with-data-sources/dashboard-parameter/configuring-dashboard-parameters/) for more details.
 
-* The `URL Parameter` filter must be started with a single ampersand `&` in the endpoint. Please refer to this [link](/working-with-dashboards/preview-dashboard/urlparameters/) for more details.     
+* The `URL Parameter` filter must be started with a single ampersand `&` in the endpoint. Please refer to the [URL Filter](/working-with-dashboards/preview-dashboard/urlparameters/) for more details.  
 
 Please refer to the table below for the values of the filter properties related to your filter.
 
@@ -347,7 +347,7 @@ Please refer to the table below for the values of the filter properties related 
 
 ## How to get Embed Secret key from Bold BI application
 
-You can obtain your Embed Secret key from the administrator's settings section. Please refer to this [link](/site-administration/embed-settings/) for further information.
+You can obtain your Embed Secret key from the administrator's settings section. Please refer to the [Embed Settings](/site-administration/embed-settings/) for further information.
 
 ## How to get common Embed Secret key from UMS
 

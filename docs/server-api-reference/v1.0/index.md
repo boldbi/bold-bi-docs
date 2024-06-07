@@ -9,7 +9,7 @@ documentation: ug
 
 # REST API v1.0
 
-This section explains how to manage(retrieve, add, update, and delete) groups and users in your Bold BI site.
+This section explains how to manage (retrieve, add, update, and delete) groups and users on your Bold BI site.
 
 [Rest API - v1.0](/server-api-reference/v1.0/api-reference/)
 

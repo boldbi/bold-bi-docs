@@ -9,11 +9,11 @@ documentation: ug
 
 # Oracle
 
-[Oracle Database](https://www.oracle.com/database/) is a relational database management system (RDBMS) from Oracle Corporation. This article provides a complete overview of the Oracle database, including features, history, and editions. Before discussing Oracle, let's first understand the basics of a database.
+[Oracle Database](https://www.oracle.com/database/) is a relational database management system (RDBMS) from Oracle Corporation. This article provides a complete overview of the Oracle database, including features, history, and editions. Before discussing Oracle, let’s first understand the basics of a database.
 
 ## Connection Properties
 
-In a YAML file, the `config` section contains the following properties:
+The `config` section in a YAML file includes the following properties:
 
 ```yaml
 Connectorname: Oracle
@@ -29,11 +29,11 @@ drivername: oracle+pyoracle
 In the select section, specify the table name list to load tables from the Oracle server.
 
 ## Metadata Properties
-In the metadata section, define the mode of data refresh. There are two modes: INCREMENTAL and FULL_TABLE. It only supports Date/DateTime datatype columns.
+In the metadata section, define the mode of data refresh. There are two modes: INCREMENTAL and FULL_TABLE.  It only supports Date/DateTime datatype columns.
 
 ## INCREMENTAL
 
-This mode fetches data from the date column mentioned in the replication key from the start date as mentioned in the replication value. Once it is scheduled, the replication value is updated automatically from the imported data.
+This mode fetches data from the date column mentioned in the replication key from the start date as mentioned in the replication value. Once scheduled, the replication value is updated automatically from the imported data.
 
 ```yaml
 metadata:

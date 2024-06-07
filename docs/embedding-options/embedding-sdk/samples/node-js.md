@@ -124,7 +124,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/nodejs-sample
      ```
 
 ## How this sample works
- 1. To authorize the server URL, call the `GetEmbedDetails` API (http://localhost:8080/embeddetail/get) with the provided `embedConfig` values, based on the `dashboardId` from the `embedConfig.json` file.
+ 1. To authorize the server URL, call the `GetEmbedDetails` API (`http://localhost:8080/embeddetail/get`) with the provided `embedConfig` values, based on the `dashboardId` from the `embedConfig.json` file.
     ![Get Embed Config Details](/static/assets/javascript/sample/images/nodejs-authorize.png)
 
  2. In the previous authorization, generate the `SignatureUrl` using the provided `EmbedSecret key` and validate the embed details in Bold BI. Once the details are validated, the dashboard will start to render in `index.html`.
@@ -308,5 +308,5 @@ A GitHub link has been provided to [get](https://github.com/boldbi/nodejs-sample
          node embed.js
       ```
 
-13.	Once you execute the command above, the sample will be hosted at http://localhost:8080/.
+13.	Once you execute the command above, the sample will be hosted at `http://localhost:8080/`.
  

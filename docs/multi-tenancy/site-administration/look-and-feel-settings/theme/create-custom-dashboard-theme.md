@@ -19,7 +19,7 @@ By using the given variables, we can customize the BoldBI dashboards to meet you
 ![darkvioletapplication](/static/assets/multi-tenancy/images/look-and-feel/darkvioletapplication.png)
 ![darkvioletcore](/static/assets/multi-tenancy/images/look-and-feel/darkvioletcore.png)
 
-4. Follow the steps provided in the `README.md` on the [Github repository](https://github.com/bold-bi/boldbi-themestudio) to generate `boldbi.theme.definition.min.css`.
+4. Follow the steps provided in the `README.md` on the [Github repository](https://github.com/boldbi/boldbi-themestudio) to generate `boldbi.theme.definition.min.css`.
 ![readmetext](/static/assets/multi-tenancy/images/look-and-feel/readmetheme.png)
 
 5. After running the command from the `README.md` file, you can find the theme files in the directory `{src directory}/assets/themes/{theme directory name}/boldbi.theme.definition.min.css`.

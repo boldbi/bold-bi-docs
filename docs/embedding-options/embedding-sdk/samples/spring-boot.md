@@ -397,4 +397,4 @@ A GitHub link has been provided to [get](https://github.com/boldbi/spring-boot-s
 
  14. Now, you can run the sample using the **Spring Boot Dashboard** in the Activity Bar on the side.
  
- 15. You can access your application by opening a web browser and navigating to this URL (http://localhost:8080).
+ 15. You can access your application by opening a web browser and navigating to this URL `http://localhost:8080`.

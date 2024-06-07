@@ -8,7 +8,7 @@ documentation: ug
 
 # Application Startup
 
-> **NOTE:** To configure Bold BI v4.2.68 or earlier versions, please refer [here](/application-startup/v4.2.68-or-earlier/).
+> **NOTE:** To configure Bold BI v4.2.68 or earlier versions, please refer to [v4.2.68 or earlier](/application-startup/v4.2.68-or-earlier/).
 
 ## License Activation
 
@@ -61,11 +61,11 @@ Once the unlock key has been uploaded, proceed to the next screen to configure t
 | Invalid File Type | Please upload a valid unlock key file (lic).    
 |  Unlock Key Expired    | Your unlock key date was expired. Please download the new unlock key file and upload.   |
 
-> **NOTE:** If you are facing any other issues, please contact us [here](https://www.boldbi.com/support).
+> **NOTE:** If you are experiencing any other issues, please [contact](https://www.boldbi.com/support) us.
 
 ## No Trial or New Account Request
 
-If you do not have a Bold BI account, you can request a new trial by clicking on this [link](https://www.boldbi.com/pricing).
+If you do not have a Bold BI account, you can request a new trial by clicking on the [pricing plans](https://www.boldbi.com/pricing).
 
 ![Activate the account with No Trail option](/static/assets/application-startup/images/application-startup-sign-up.png)
 
@@ -110,7 +110,7 @@ To connect to an existing server instance, you have the following options:
 
 ![SQL Server](/static/assets/application-startup/images/application-startup-step1.png)
 
-> **NOTE:** The credentials used to connect to the server instance must have the permissions that are specified [here](/faq/what-are-the-database-permissions-required-to-set-up-bold-bi-embedded/).
+> **NOTE:** The credentials used to connect to the server instance must have the permissions that are specified in [this documentation](/faq/what-are-the-database-permissions-required-to-set-up-bold-bi-embedded/).
 
 > **IMPORTANT:**  The Bold BI server will accept all connections that use Transport Layer Security (TLS 1.1/1.2) encryption and AES Cryptography (128 bits). To support encrypted data transfer, select the `Enable SSL` option when configuring the Bold BI Server.
 
@@ -150,7 +150,7 @@ The user can select the Blob Storage by providing the Azure Blob Credential in t
 
 ![Site Blob Storage](/static/assets/application-startup/images/blob-storage.png)  
 
-You can find the details on how to configure the Azure Blob [here](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal).
+You can find the details on how to configure the [Azure Blob](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal).
 
 ## Database Options
 
@@ -172,7 +172,7 @@ The Bold BI application requires specific collations based on the type of databa
 
 
 
-> **NOTE:** To connect to a PostgreSQL database, you need to install the PostgreSQL client library while installing the Bold BI Enterprise edition. Learn more [here](/deploying-bold-bi/deploying-in-windows/installation-and-deployment/#client-libraries).
+> **NOTE:** To connect to a PostgreSQL database, you need to install the PostgreSQL client library while installing the Bold BI Enterprise edition. Learn more [here](/deploying-bold-bi/deploying-on-windows/installation-and-deployment/#client-libraries).
 
 After clicking Next, the application will register and validate the site information. Once the process is completed, you will be able to:
 * Manage sites – where you can manage the permissions for the sites you have created. 

@@ -13,18 +13,18 @@ Google Analytics is a service for web analytics that tracks and provides data re
 
 ### Service Account Credential
 
-Service account credentials are better suited for server-to-server interactions.
+Service account credentials are more suitable for server-to-server interactions.
 
 ### Grab Google Service Account Credentials
 
-To get API credentials using a GCP service account, follow these steps:
+To obtain API credentials using a GCP service account, follow these steps:
 
 1. Sign in to [https://console.cloud.google.com](https://console.cloud.google.com).
-2. Create a service account if needed.
-3. Enable "Google Analytics API" (refer to Google documentation for comprehensive instructions).
+2. Create a service account if necessary.
+3. Enable the "Google Analytics API" (refer to Google documentation for detailed instructions).
 4. Generate credentials:
    - Navigate to IAM & Admin in the console's left panel, and then select Service Accounts.
-   - Identify the service account you intend to use, and click on the three-dot menu under the "Actions" column next to it.
+   - Find the service account you want to use and click on the three-dot menu under the "Actions" column.
    - Create a new JSON key by selecting "Manage Keys" > "ADD KEY" > "CREATE".
    - Download the ".json" file containing the necessary credentials for future use.
 
@@ -35,15 +35,15 @@ To get API credentials using a GCP service account, follow these steps:
 
 1. Log into your Google Analytics account.
 2. Choose the website property you wish to share.
-3. In the lower-left corner, select the "Admin" tab.
-4. In the "Account" column, navigate to "Account Access Management."
-5. Locate and click on the blue “+” icon in the top right corner of the screen.
-6. Choose “Add users” and input the email from the service account or OAuth authentication methods. Ensure to grant at least viewer privileges.
-7. Conclude the process by clicking “Add” in the top right corner.
+3. In the lower-left corner, click on the “Admin” tab.
+4. In the “Account” column, go to “Account Access Management.”
+5. Find and click on the blue “+” icon in the top right corner of the screen.
+6. Choose “Add users” and enter the email from the service account or OAuth authentication methods. Make sure to grant at least viewer privileges. Ensure to grant at least viewer privileges.
+7. Complete the process by clicking “Add” in the top right corner.
 
 ## Connection Properties
 
-In a YAML file, the `config` section contains the following properties:
+The `config` section in a YAML file includes the following properties:
 
 ```yaml
 Connectorname: Google_analytics

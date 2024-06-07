@@ -7,11 +7,11 @@ documentation: ug
 ---
 
 # Connecting Bold BI to Web data source
-Bold BI dashboard designer supports connecting almost all web services that has a REST API interface.
+The Bold BI dashboard designer supports connecting to almost all web services that has a REST API interface.
 
 ## Choose web data source
 To configure the web data source, follow the below steps:
-1. Click the **Data Sources** button in the configuration panel to add a new data connection.
+1. Click on the **Data Sources** button in the configuration panel to add a new data connection.
    ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/common/DataSourcesIcon.png)
    
 2. Click **CREATE NEW** to launch a new connection from the connection panel.
@@ -19,38 +19,38 @@ To configure the web data source, follow the below steps:
 
    ![Choose data source](/static/assets/working-with-datasource/data-connectors/images/Web/ChooseDS.png)
 
-> **NOTE:**  You can also create a data source from the home page by clicking the **Data Sources** menu from left menu panel and **Create Data Source** from the data sources page.
+> **NOTE:**  You can also create a data source from the home page by clicking on the **Data Sources** menu on the left menu panel and selecting **Create Data Source** from the data sources page.
 
    ![Choose data source](/static/assets/working-with-datasource/data-connectors/images/Web/ChooseDS_Server.png)
 
 ## Create web data source
-After clicking the data source, the NEW DATA SOURCE configuration panel opens. Follow the below steps to create web data source:
+After clicking the data source, the NEW DATA SOURCE configuration panel will open. Follow the below steps to create web data source:
 1. Enter a name and description (optional) for the data source.
 2. Enter a valid REST API endpoint in the URL text box.
-3. Choose one of the **Method Type** from the combo box for the provided REST API. Options are *GET* and *POST*.
-4. If required by the REST API, provide key value pairs in **Headers**. To get details about headers, refer to [Query Parameters](/working-with-data-sources/data-connectors/web/#query-parameters).
-5. Choose a time interval for **Refresh Settings** using the combo box to trigger the Rest API request periodically to keep the data in sync with our dashboard.  
-6. Choose a **Data Format** from the combo box based on the response of your provided REST API. Options are *JSON, CSV, and XML*.
-7. Choose an **Authentication Type** supported by the data source. Options are *Basic http authentication* and *None*. Learn more about [Authentication Types](/working-with-data-sources/data-connectors/web/#authentication-types).
+3. Choose one of the **Method Types** from the combo box for the provided REST API. Options include *GET* and *POST*.
+4. If required by the REST API, provide key-value pairs in **Headers**. For more details about headers, refer to [Query Parameters](/working-with-data-sources/data-connectors/web/#query-parameters).
+5. Choose a time interval for **Refresh Settings** using the combo box to trigger the REST API request periodically and keep the data in sync with our dashboard.
+6. Choose a **Data Format** from the combo box based on the response of your provided REST API. Options include *JSON*, *CSV*, and *XML*.
+7. Choose an **Authentication Type** supported by the data source. Options include *Basic http authentication* and *None*. Learn more about [Authentication Types](/working-with-data-sources/data-connectors/web/#authentication-types).
 8. Choose a **Pagination Type** supported by the data source from the combo box. 
       
 	  ![DataSourcesView](/static/assets/working-with-datasource/data-connectors/images/Web/DataSourcesView.png)
 	  
-Options are [*None*](/working-with-data-sources/data-connectors/web/#none), [*Offset*](/working-with-data-sources/data-connectors/web/#offset), [*Next Page*](/working-with-data-sources/data-connectors/web/#next-page), [*Next Token*](/working-with-data-sources/data-connectors/web/#next-token), and [*Next URL*](/working-with-data-sources/data-connectors/web/#next-url).
+Options include [*None*](/working-with-data-sources/data-connectors/web/#none), [*Offset*](/working-with-data-sources/data-connectors/web/#offset), [*Next Page*](/working-with-data-sources/data-connectors/web/#next-page), [*Next Token*](/working-with-data-sources/data-connectors/web/#next-token), and [*Next URL*](/working-with-data-sources/data-connectors/web/#next-url).
 
-You can also edit the connection information set here using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option. 
+You can also modify the connection information set here using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option. 
 
 ### Pagination types
 
 ### None
 
-It can be used when REST API does not need to be paginated. This will return first set of records alone.
+This can be used when the REST API does not require pagination. It will only return the first set of records.
 
 ### Offset
 
-Number of records to be skipped before start paginating.
+The number of records to be skipped before starting pagination
 
-For example, let's connect `OData` REST API in web data source with pagination parameters as follows:
+For example, let us connect to the `OData` REST API in the web data source with the following pagination parameters:
 
    <table>
    <tr>
@@ -132,7 +132,7 @@ For example, let's connect `OData` REST API in web data source with pagination p
 
 Number of Pages to be fetched with specific number of records per page.
 
-For example, let's connect `Smartsheet` REST API in web data source with pagination parameters as follows:
+For example, let's connect the `Smartsheet` REST API in the web data source with pagination parameters as follows:
 
    <table>
    <tr>
@@ -218,9 +218,9 @@ For example, let's connect `Smartsheet` REST API in web data source with paginat
 
 ### Next token
 
-Iterate next set of records using token.
+Iterate through the next set of records using the token.
 
-For example, let's connect `Google AdSense` REST API in web data source with pagination parameters as follows:
+For example, connect to the `Google AdSense` REST API in a web data source with pagination parameters as follows:
 
    <table>
    <tr>
@@ -282,9 +282,9 @@ For example, let's connect `Google AdSense` REST API in web data source with pag
 
 ### Next URL
 
-Iterate next set of records using url obtained from response.
+Iterate through the next set of records using the URL obtained from the response.
 
-For example, let's connect `GitHub` REST API in web data source with pagination parameters as follows:
+For example, let's connect to the `GitHub` REST API in a web data source with pagination parameters as follows:
 
    <table>
    <tr>
@@ -339,7 +339,7 @@ For example, let's connect `GitHub` REST API in web data source with pagination 
    </tr>
    </table> 
 
-> **NOTE:**   To do pagination, you must provide any one of the field values, either `Total Records Path` or `Data Indicator Path`. If both values are provided, `Total Records Path` will be considered. 
+> **NOTE:**   In order to implement pagination, you must provide one of the field values, either `Total Records Path` or `Data Indicator Path`. If both values are given, `Total Records Path` will be used. 
 
 #### Additional information
 <table width="600">
@@ -348,75 +348,75 @@ For example, let's connect `GitHub` REST API in web data source with pagination 
 Refresh Settings
 </td>
 <td>
-Period of time before next refresh call is triggered. This will automatically trigger a call for the API configured in the data source to keep the data up to date. If you do not want to sync your new data, choose ‘Never’.
+The period of time before the next refresh call is triggered. This will automatically trigger a call for the API configured in the data source to keep the data up to date. If you do not want to sync your new data, choose 'Never'.
 </td>
 </tr>
 </table>
 
 #### Query parameters
 
-1. If required by the Rest API, pass required values as key-value pairs in **Headers**.
-2. For **POST** method type, if required, pass required values as key-value pairs in **Parameter(s)**.
-3. Use either *Parameter(s)* or *Raw* for POST request.
+1. If the Rest API requires it, pass the necessary values as key-value pairs in the **Headers**.
+2. For the **POST** method, if necessary, pass the required values as key-value pairs in the **Parameter(s)**.
+3. Use either *Parameter(s)* or *Raw* for the POST request.
 
 #### Authentication types
 
-1. If your data source supports authentication directly through REST API URL, choose **None** under **Authentication Type**.
+1. If your data source supports authentication directly through the REST API URL, choose **None** under **Authentication Type**.
 2. If your data source supports API Key/API Token authentication, pass these values under **Header(s)** by clicking **+Add**. Choose **None** under **Authentication Type**.
 3. If your data source has Basic HTTP authentication, choose **Basic http Authentication** under **Authentication Type** and input the username and password.
 
 #### Connecting Web API data source with API Key Authentication
-API Key is one of the most commonly used authentication types for REST API. API Key will be assigned to a user by the provider at the time of user creation or when enabling the API Key authentication to access the data via REST API.
+The API Key is one of the most commonly used authentication types for REST APIs. The API Key will be assigned to a user by the provider at the time of user creation or when enabling API Key authentication to access data via REST API.
 
-API Key can be used in following places which have listed below.
+The API Key can be used in the following places, which are listed below.
 * Authorization/Custom Header (Basic or Bearer).
 * Query String.
 * Body Data.
 
 ##### Adding Authorization/Custom header for API Key
-To connect REST API for adding API Key in the header, you can follow below steps to connect the API in Bold BI. 
+To connect a REST API for adding an API Key in the header, you can follow the steps below to connect the API in Bold BI.
 
-* Add header in Web API data source as below.
+* Add a header to the Web API data source as follows:
     ![Header Bearer View](/static/assets/working-with-datasource/data-connectors/images/Web/Header_Bearer_View.png)
 
 * You need to select the Authentication Type as None.
     ![Authentication View](/static/assets/working-with-datasource/data-connectors/images/Web/Authentication_View.png)
 	
-* Header value can be either basic or bearer based on the application that you are connecting.
-* Most of the API Key authentication connect using Authorization header. You can also change the name of the header key as per your need.
+* The header value can be either basic or bearer, depending on the application to which you are connecting.
+* Most API Key authentication connections use the Authorization header. You can also change the name of the header key as needed.
     ![Header Basic View](/static/assets/working-with-datasource/data-connectors/images/Web/Header_Basic_View.png)
  
 ##### Adding API Key in Query String Parameter
-Query String parameter will be added within the URL, so you can access the REST API without adding any header or body.
+A query string parameter will be added to the URL, allowing you to access the REST API without the need to add any headers or body.
     ![Query String parameter View](/static/assets/working-with-datasource/data-connectors/images/Web/Query_String_parameter_View.png)
 	
-* No additional steps may require for connecting API using Query String type of API Key authentication. 
-* You need to select the Authentication Type as None since its API Key added in the Query String parameter.
+* No additional steps may be required for connecting to the API using Query String type of API Key authentication.
+* You need to select the Authentication Type as None since the API Key is added in the Query String parameter.
     ![Authentication Type View](/static/assets/working-with-datasource/data-connectors/images/Web/Authentication_Type_View.png)
 	
 ##### Adding API Key in the Body Data for Post method REST APIs
-Body Data usually be added for Post method API calls. If the application designed to send the API Key over the Body Data of REST API, you can follow the below steps.
+Body data is usually added for POST method API calls. If the application is designed to send the API Key over the body data of the REST API, you can follow the steps below.
     
-* Choose POST method in Web API data source to add Body Data and add the API Key as below with relevant property names.
+* Select the POST method in the Web API data source to include Body Data and then add the API Key with the relevant property names as shown below.
     ![Post method View](/static/assets/working-with-datasource/data-connectors/images/Web/Post_Method_View.png)
 
 * You need to select the Authentication Type as None since its API Key added as Body Data.
     ![Post Authentication Type View](/static/assets/working-with-datasource/data-connectors/images/Web/Post_Authentication_Type_View.png)
 
 ### Preview and data import
-* Click **Preview & Connect** to connect with the configurations set.
-* The Choose Schema(s) dialog opens. The schema represents the key fields of data retrieved from Web Rest API request. This dialog displays a list of schemas in treeview and its corresponding values in grid for preview. Select required schema(s) from treeview to use in designer and click **Connect**.
+* Click **Preview & Connect** to connect with the configurations that have been set.
+* The Choose Schema(s) dialog opens. The schema represents the key fields of data retrieved from Web Rest API request. This dialog displays a list of schemas in a treeview and its corresponding values in grid for preview. Select required schema(s) from treeview to use in designer and click **Connect**.
 
    ![Preview](/static/assets/working-with-datasource/data-connectors/images/common/Preview.png)
 
-* Now, the data design view page with selected table schema opens. Drag and drop the table.
+* Now, the data design view page with the selected table schema opens. Drag and drop the table.
    ![Query Editor](/static/assets/working-with-datasource/data-connectors/images/common/QueryEditor.png)
 
 * Click **Save** to save the data source with a relevant name.
 
 ## Configuring Date Parameters
 
-You can configure the URL of the API request with templates containing date queries. The queries will be updated with respective date values.
+You can configure the URL of the API request using templates that contain date queries. These queries will be updated with the corresponding date values.
 
 **Syntax**`{{:today()}}:`It is used for single calendar related method.
 
@@ -428,15 +428,15 @@ For example,a dummy API is used to explain here
 
 ![Showing configuration of relative date parameter with web url](/static/assets/working-with-datasource/data-connectors/images/Web/RelativeDateParsing.png)
 
-Now, this URL will be parsed, and templates will be matched, hence the templates will be replaced with dates accordingly. This helps you to fetch data between the start date and end date.
+Now, this URL will be parsed and templates will be matched, so the templates will be replaced with dates accordingly. This will help you fetch data between the start date and end date.
 
 ### Functions supported in date parameters
 
 You can configure parameters as numeric values for the following functions: AddMinutes, Addhours, AddDays, AddWeeks, AddMonths, AddYears, AddQuarters, SetDayStart, and SetMonthStart.
 
-All the Add methods should not have parameter as 0, the SetDayStart should have a numerical value between 0 and 6, and the SetMonthStart should have a numerical value between 1 and 12.
+All of the Add methods should not have a parameter of 0. The SetDayStart method should have a numerical value between 0 and 6, and the SetMonthStart method should have a numerical value between 1 and 12.
 
-String parameters are used in the next set of functions which are start, end, format, and SetTimeZone. Both start and end functions support four string parameters which are week, month, quarter, and year. The format function is used to change the format of date and time, and the parameter is matched with the date and time format supported in C#. A support for epoch time is also made available in the format function. The SetTimeZone is used to change the time zone of the date and the parameter is matched with TimeZoneInfo IDs present in C#.
+String parameters are utilized in the following set of functions: start, end, format, and SetTimeZone. Both the start and end functions support four string parameters: week, month, quarter, and year. The format function is used to modify the format of date and time, with the parameter being matched with the date and time format supported in C#. Support for epoch time is also available in the format function. The SetTimeZone function is used to adjust the time zone of the date, with the parameter being matched with TimeZoneInfo IDs present in C#.
 
 `Today` function does not hold any parameters.
 Here for example concern we are using `today()`as `11/16/2018 12:17`
@@ -550,7 +550,7 @@ Here for example concern we are using `today()`as `11/16/2018 12:17`
 </table>
 
 > **NOTE:**  Each template should mandatorily start with today function. 
-> For a template, if the format function is used, it should be the last function call.
+> For a template, if the format function is used, it should be the final function call.
 
 ## Related links
 [Data Transformation](/working-with-data-sources/data-modeling/joining-table/)

@@ -14,7 +14,7 @@ documentation: ug
 ## Grab Credentials
 
 1. Sign in to ``Matomo``.
-2. Hit the Administration settings icon, top right.
+2. Click on the Administration settings icon located at the top right.
 3. Navigate to "Personal > Security" on the left menu.
 4. Find and select "Auth Tokens > Create a New Token."
 5. Verify with your password.
@@ -27,7 +27,7 @@ documentation: ug
 
 ## Connection Properties
 
-In a YAML file, the `config` section contains the following properties:
+The `config` section in a YAML file includes the following properties:
 
 ```yaml
 connector_name: Matomo

@@ -14,7 +14,7 @@ We have created an Angular and ASP.NET Core application to achieve this embeddin
 
 ## How to run the sample
 
-1. Please download the Angular App with ASP.NET Core Application from [here](https://github.com/boldbi/samples/tree/master/v3.2.16/angular).
+1. Please download the [Angular App](https://github.com/boldbi/samples/tree/master/v3.2.16/angular) with ASP.NET Core Application.
 
 2. Here, the Angular application acts as the client and the ASP.NET Core application acts as the server. We need to set the following properties in the `app.component.ts` file as follows.
 ![AppComponent](/static/assets/javascript/sample/images/angular-app-comp.png)  
@@ -80,7 +80,7 @@ We have created an Angular and ASP.NET Core application to achieve this embeddin
 </table>
 
 
-4. You can obtain your Embed Secret key from the administrator settings section. Please refer to this [link](/site-administration/embed-settings/) for more details.   
+4. You can obtain your Embed Secret key from the administrator settings section. Please refer to the [Embed Settings](/site-administration/embed-settings/) for further information.  
 
 5. Then, run your ASP.NET Core application as well as the Angular App. 
 

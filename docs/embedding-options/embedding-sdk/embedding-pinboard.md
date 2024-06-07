@@ -161,7 +161,7 @@ Follow these steps to embed a pinboard in your application.
 
 ## How to implement the authorize server with user mail or user name
 
-1. You need to implement an authorization endpoint in your application. This endpoint will serve as the connection between your application and the Bold BI server. Additionally, you will need to update the secure details such as email and group-based access. To learn more about authorizing the server, please visit the following [link](/security-configuration/authorize-server/).  
+1. You need to implement an authorization endpoint in your application. This endpoint will serve as the connection between your application and the Bold BI server. Additionally, you will need to update the secure details such as email and group-based access. To learn more about authorizing the server, please visit the following [authorization server](/security-configuration/authorize-server/).
 
 2. To create an authorization server action method, please copy the following sample code into your controller. You can use the email of the currently logged-in user, which can be `user@domain.com` , or the `username`. However, please ensure that this user has write access to the pinboard.
 
@@ -248,9 +248,9 @@ public string GetEmbedDetails(string embedQuerString, string dashboardServerApiU
 }
 ```
 
-* The `Dashboard Parameter` filter must be started with a double ampersand `&&` in the endpoint. Please refer to this [link](/working-with-data-sources/dashboard-parameter/configuring-dashboard-parameters/) for more details.   
+* The `Dashboard Parameter` filter must be started with a double ampersand `&&` in the endpoint. Please refer to the [configuring dashboard parameters](/working-with-data-sources/dashboard-parameter/configuring-dashboard-parameters/) for more details.
 
-* The `URL Parameter`  filter must be started with a single ampersand `&` in the endpoint. Please refer to this [link](/working-with-dashboards/preview-dashboard/urlparameters/) for more details.     
+* The `URL Parameter` filter must be started with a single ampersand `&` in the endpoint. Please refer to the [URL Filter](/working-with-dashboards/preview-dashboard/urlparameters/) for more details.     
 
 Please refer to the following table for the value of the filter properties based on your filter.
 
@@ -282,7 +282,7 @@ Please refer to the following table for the value of the filter properties based
 
 ## How to get Embed Secret key from Bold BI application
 
-You can obtain your Embed Secret key from the administrator settings section. Please refer to this [link](/site-administration/embed-settings/) for additional information.
+You can obtain your Embed Secret key from the administrator settings section. Please refer to the [Embed Settings](/site-administration/embed-settings/) for further information.
 
 ## How to get common Embed Secret key from UMS
 
