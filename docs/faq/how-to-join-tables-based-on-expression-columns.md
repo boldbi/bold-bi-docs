@@ -8,22 +8,23 @@ documentation: ug
 
 # Joining tables based on expression column
 
-Bold BI allows for joining tables based on the expression columns that are created.
+Bold BI allows joining tables based on the expression columns created.
 
-1. Create an [expression](/working-with-data-sources/data-modeling/configuring-expression-columns/) for joining the tables and click `Save`. The expression below is used to split the employee name from the Email column in the Employee table and join the Employee table with the EmployeesProfile table.
 
-    ![create expression](/static/assets/faq/images/create-expression-for-join.png)
+1. Create an [expression](/embedded-bi/working-with-data-source/transforming-data/configuring-expression-columns) for joining the tables and click `Save`. The below expression used to split the employee name from Email column in the Employee table and joining the Employee table with EmployeesProfile table.
 
-2. Select the column created in the previous step under expression.
+    ![create expression](/bold-bi-docs/static/assets/embedded/faq/images/create-expression-for-join.png)
 
-    ![select expression column](/static/assets/faq/images/select-expression-columns.png)
+2. Select the column created in previous step under expression.
+
+    ![select expression column](/bold-bi-docs/static/assets/embedded/faq/images/select-expression-columns.png)
 
 3. Click `Merge` to join the tables.
 
-    ![click merge button](/static/assets/faq/images/click-merge-icon.png)
+    ![click merge button](/bold-bi-docs/static/assets/embedded/faq/images/click-merge-icon.png)
 
 4. Joined tables are displayed based on the Expression column when you click `Update` or `Data preview`.
 
-    ![joined columns are shown in table](/static/assets/faq/images/joined-columns-table.png)
+    ![joined columns are shown in table](/bold-bi-docs/static/assets/embedded/faq/images/joined-columns-table.png)
 
 > **Note**: When choosing the expression columns, aggregate expressions are restricted.

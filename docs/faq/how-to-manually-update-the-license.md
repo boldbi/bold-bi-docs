@@ -10,27 +10,22 @@ documentation: ug
 
 Please follow these steps to update the license manually in `Bold BI Embedded.` 
 
-1. Open your Bold BI application UMS URL and log in with the UMS site Administrator account.
-   **Sample URL:** {your_domain}/ums/sites
+1. Open your Bold BI application URL and login with the Site Administrator account.
 
-2. You will be redirected to the UMS Sites listing page.
-
-   ![Site Listing](/static/assets/faq/images/site_listing.png)
-
-3. Now, navigate to the `Settings` page and click on `Manage License` settings.
-
-   ![Manage License Settings](/static/assets/faq/images/manage_license_settings.png)
-
-4. On the Manage License Settings page, navigate to the **Embedded BI** tab and click on the `Refresh License` button to update the license.
+2. From the navigation menu, choose the `Manage Sites` option.
    
-   ![License Update Settings](/static/assets/faq/images/license-update-settings.png)
+   ![License Update](/bold-bi-docs/static/assets/embedded/faq/images/license-update-image.png)
 
-5. The following popup will appear below. The license can be refreshed in either online or offline mode.
-   ![Refresh License Popup](/static/assets/faq/images/refresh_license_popup.png)
+3. Navigate to the `Settings` -> `Manage License` 
 
-6. Refer to the below KB articles for updating license in both online and offline mode.
+4. From the Manage license page, click the `Check License` option.
+   
+   ![License Update Settings](/bold-bi-docs/static/assets/embedded/faq/images/license-update-settings.png)
 
-* [Updating License Online](https://support.boldbi.com/kb/article/14189/updating-bold-bi-license---online-and-offline-methods#updating-the-license-online)
-* [Updating License Offline](https://support.boldbi.com/kb/article/14189/updating-bold-bi-license---online-and-offline-methods#get-and-update-offline-license-key)
+5. From the login popup, please login with your Bold ID account linked with your Bold BI subscription.
+   
+   ![License Update Login Popup](/bold-bi-docs/static/assets/embedded/faq/images/license-update-login-popup.jpeg)
 
-If you are facing any difficulty, please [contact Bold BI support](https://support.boldbi.com/support/tickets/create) by creating a ticket.
+6. Once you logged in successfully, the license will be updated in the application.
+
+If you are still facing this issue, please [contact us](https://www.boldbi.com/support) to help you.

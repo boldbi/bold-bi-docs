@@ -7,6 +7,4 @@ documentation: ug
 ---
 # Localization
 
-This section explains how to generate localization files for your preferred language and apply them in either version [5.1.55 or later](/localization/latest/) or later, or version [4.2.69 or earlier](/localization/v4.2.69-or-earlier/) or earlier, of the Bold BI application deployed on your server.
-
-> **NOTE:** The localization feature is not available in Syncfusion Managed Cloud Server, but it is available in On-Premises Deployment.
+This section explains how to generate localization files for your preferred language and apply them in either [5.1.55 or later](/embedded-bi/localization/latest/) version (or) [4.2.69 or earlier](/embedded-bi/localization/v4.2.69-or-earlier/) version of the Bold BI application deployed on your server.

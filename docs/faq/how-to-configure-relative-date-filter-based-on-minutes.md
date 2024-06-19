@@ -8,15 +8,15 @@ documentation: ug
 
 # Configuring Relative Date Filter for date columns.
 
-The [relative date filter](/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-date-column) option is only applicable for Datetime columns. Click Settings icon to show drop down menu.
+The [relative date filter](/embedded-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-date-column) option is only applicable for Datetime columns. Click Settings icon to show drop down menu.
 
-   ![Relative date](/static/assets/faq/images/relative-date.png#max-width=100%)
+   ![Relative date](/bold-bi-docs/static/assets/embedded/faq/images/relative-date.png#max-width=100%)
 
-**Click** on the Relative Date filter option in the settings and edit the column function.
+**Click** Relative Date filter option in the settings and edit the column function.
 
-   ![Relative date window](/static/assets/faq/images/relative-date-window.png#max-width=100%)
+   ![Relative date window](/bold-bi-docs/static/assets/embedded/faq/images/relative-date-window.png#max-width=100%)
 
-This dialog allows you to configure a filter for the date-time column.
+This dialog allows you to configure filter for the date-time column.
 
 ## How to configure Relative date filter based on minutes
 
@@ -24,14 +24,14 @@ Relative date filter for minutes is only applicable for non-filter widgets.
 
 1. Choose minute under range drop down.
 
-   ![Relative date minute](/static/assets/faq/images/relative-date-minute.png#max-width=100%)
+   ![Relative date minute](/bold-bi-docs/static/assets/embedded/faq/images/relative-date-minute.png#max-width=100%)
 
 2. Apply filter based on the required period.
 
-   ![Relative date minute last](/static/assets/faq/images/relative-date-minute-last.png#max-width=80%)
+   ![Relative date minute last](/bold-bi-docs/static/assets/embedded/faq/images/relative-date-minute-last.png#max-width=80%)
 
 3. "Click Ok, the filter values are shown in the widget."
 
-   ![Relative date minute result](/static/assets/faq/images/relative-date-minute-result.png#max-width=40%)
+   ![Relative date minute result](/bold-bi-docs/static/assets/embedded/faq/images/relative-date-minute-result.png#max-width=40%)
 
 

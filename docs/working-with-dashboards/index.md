@@ -2,34 +2,33 @@
 layout: post
 title: Working with Dashboards – Embedded BI | Bold BI Docs
 description: Learn how to work with dashboards in using templates, dashboard filters, commenting, and refresh in Bold BI deployed in your server.
-canonical: "/working-with-dashboards/"
+canonical: "/cloud-bi/working-with-dashboards/"
 platform: bold-bi
 documentation: ug
-
 ---
 
 # Working with Dashboard
 
-This section explains how to create, edit, save, share, and preview a dashboard in the Bold BI Cloud, along with the additional features involved in it.
+This section explains how to create, edit, save, share, and preview dashboard in the Bold BI Cloud with the additional features involved in it.
 
-You can explore working with the dashboard in detail here:
+You can explore the working with dashboard in detail here,
 
-[Import Widgets](/working-with-dashboards/import-widgets/)
+[Import Widgets](/embedded-bi/working-with-dashboards/import-widgets/)
 
-[Edit Dashboard](/working-with-dashboards/edit-existing-dashboard/)
+[Edit Dashboard](/embedded-bi/working-with-dashboards/edit-existing-dashboard/)
 
-[Configuring Cross Filters](/working-with-dashboards/configuring-cross-filters/)
+[Configuring Dashboard Filters](/embedded-bi/working-with-dashboards/configuring-dashboard-filters/)
 
-[Commenting Dashboard](/working-with-dashboards/commenting-dashboard/)
+[Commenting Dashboard](/embedded-bi/working-with-dashboards/commenting-dashboard/)
 
-[Save Dashboard](/working-with-dashboards/publish-dashboard/)
+[Save Dashboard](/embedded-bi/working-with-dashboards/publish-dashboard/)
 
-[Data Cache](/working-with-dashboards/data-cache/)
+[Data Cache](/embedded-bi/working-with-dashboards/data-cache/)
 
-[Preview Dashboard](/working-with-dashboards/preview-dashboard/)
+[Preview Dashboard](/embedded-bi/working-with-dashboards/preview-dashboard/)
 
-[Refreshing Dashboard](/working-with-dashboards/preview-dashboard/refresh-dashboard/)
+[Refreshing Dashboard](/embedded-bi/working-with-dashboards/preview-dashboard/refresh-dashboard/)
 
-[Filtering Views using URL Parameters](/working-with-dashboards/preview-dashboard/urlparameters/)
+[Filtering Views using URL Parameters](/embedded-bi/working-with-dashboards/preview-dashboard/urlparameters/)
 
-[Share Dashboards](/working-with-dashboards/share-dashboards/)
+[Share Dashboards](/embedded-bi/working-with-dashboards/share-dashboards/)

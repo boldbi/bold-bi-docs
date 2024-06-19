@@ -8,14 +8,14 @@ documentation: ug
 ---
 
 # Debugging the Custom widget through designer
-* [Create a new Custom widget](/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/debugging-custom-widget/#create-a-custom-widget) 
-* [Add debugger in the source file](/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/debugging-custom-widget/#add-debugger-in-the-source-file) 
-* [Publish the Custom widget](/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/create-new-custom-widget/#publish-custom-widget) 
-* [Debug the custom widget](/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/debugging-custom-widget/#debug-the-custom-widget) 
+* [Create a new Custom widget](/embedded-bi/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/debugging-custom-widget/#create-a-custom-widget) 
+* [Add debugger in the source file](/embedded-bi/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/debugging-custom-widget/#add-debugger-in-the-source-file) 
+* [Publish the Custom widget](/embedded-bi/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/create-new-custom-widget/#publish-custom-widget) 
+* [Debug the custom widget](/embedded-bi/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/debugging-custom-widget/#debug-the-custom-widget) 
 
 ## create a custom widget 
 
- Follow the steps outlined in the [link](/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/create-new-custom-widget/#creating-a-new-widget) to create a new custom widget.
+ Follow the steps mentioned in the [link](/embedded-bi/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/create-new-custom-widget/#creating-a-new-widget) to create a new custom widget 
 
 ## Add debugger in the source file 
 
@@ -23,19 +23,19 @@ documentation: ug
 
 ## Publish the custom widget 
 
- Follow the steps in the [link](/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/create-new-custom-widget/#publish-custom-widget) to publish the custom widget.
+ Follow the steps mentioned in the [link](/embedded-bi/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/create-new-custom-widget/#publish-custom-widget) to publish the custom widget.
 
 ## Debug the custom widget 
 
  Navigate to the Bold BI Designer. 
 
- Right-click on the browser and select `Inspect`.
+ Right click on the browser and click on `Inspect`.
 
- Now, drag and drop the custom widget into the designer to debug the code, as shown in the image below.
+ Now drag and drop the custom widget in the designer to debug the code as in the image below:
 
- ![Custom_widget debugging](/static/assets/visualizing-data/visualization-widgets/images/custom-widget/Customwidget_Debugger_Updated.png)
+ ![Custom_widget debugging](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/custom-widget/Customwidget_Debugger_Updated.png)
 
- Now, we can debug the init and update methods in the custom widget. 
+ Now we can debug the init and update methods in the custom widget.  
 
-> **NOTE:** This feature is available in On-Premises Deployment but not in Syncfusion Managed Cloud Server.
+
 

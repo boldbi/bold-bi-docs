@@ -7,7 +7,7 @@ documentation: ug
 ---
 
 # How to reset the database of the Bold BI application?
-Resetting the application database details in the Bold BI application requires updating the database details in various locations.
+Resetting the application database details in the Bold BI application requires updating the application database details in different places. 
 
 1. Updating the database details for Bold BI Server.
 2. Updating the database details for Bold BI tenants.
@@ -15,23 +15,23 @@ Resetting the application database details in the Bold BI application requires u
 
 ## Steps to reset the Bold BI application database
 
-1. Follow the steps in the link below to reset the database of the Bold BI server.  
-    * [**Update Application Database**](/utilities/bold-bi-command-line-tools/reset-application-database/)
+1.	Follow the steps in below link to reset the database of the Bold BI server.  
+    * [**Update Application Database**](/embedded-bi/admin-utility/reset-application-database/)
 
-2. Once the database has been successfully updated, restart the application in IIS and log in to the site management portal using the link `{host:port}/ums/sites`
+2.	Once the database has been updated successfully, then restart the application in IIS and login to site management portal using the link `{host:port}/ums/sites`
 
-3.  Now, update the existing tenants database details using the edit option.  
+3.  Now, update the existing tenants database details using edit option.  
 
-    ![edit-site](/static/assets/faq/images/edit-site.png)  
+    ![edit-site](/bold-bi-docs/static/assets/embedded/faq/images/edit-site.png)  
 
 4.  Enter the database details and Click the update button.  
 
-    ![edit-site-db](/static/assets/faq/images/edit-site-db.png#width=30%)    
+    ![edit-site-db](/bold-bi-docs/static/assets/embedded/faq/images/edit-site-db.png#width=30%)    
 
     > **NOTE:**  You can only update the server name, user name and password in the tenant database details.
 
-5.  Now you can open your tenant site with the updated database.
+5.  Now, you can open your tenant site with updated database.
 
-6.  Once logged into the tenant application, you can update the data store settings if you have already configured them (this step is optional).
+6.  Once logged into tenant application, you can update the data store settings if you have already configured (this is optional step).
     
-    ![edit-datastore](/static/assets/faq/images/edit-datastore.png#width=45%)  
+    ![edit-datastore](/bold-bi-docs/static/assets/embedded/faq/images/edit-datastore.png#width=45%)  

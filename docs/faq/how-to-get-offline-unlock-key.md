@@ -12,8 +12,8 @@ documentation: ug
 
 2.	Expand the Subscriptions section.
 
-3.	Click Get Offline License Key File to download the offline key.
+3.	Click the Get Offline License Key File to download the offline key.
 
-    ![Offline License](/static/assets/faq/images/offline-license.png)
+    ![Offline License](/bold-bi-docs/static/assets/embedded/faq/images/offline-license.png)
  
 

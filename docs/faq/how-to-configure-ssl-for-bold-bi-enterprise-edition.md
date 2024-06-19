@@ -9,15 +9,15 @@ documentation: ug
 
 Bold BI allows you to deploy it in various environments and you can find the steps to enable SSL based on your environment using the following links:
 
-1. [Windows](/faq/how-to-change-binding-in-bold-bi-embedded/)
+1. [Windows](https://help.boldbi.com/embedded-bi/faq/how-to-change-binding-in-bold-bi-embedded/)
 2. Linux
    <ul><li>
 
-   [Ubuntu](/deploying-bold-bi/deploying-in-linux/installation-and-deployment/bold-bi-on-ubuntu/#configure-ssl) 
+   [Ubuntu](https://help.boldbi.com/embedded-bi/setup/deploying-in-linux/installation-and-deployment/bold-bi-on-ubuntu/#configure-ssl) 
    </li>
    <li>
 
-   [CentOS](/deploying-bold-bi/deploying-in-linux/installation-and-deployment/bold-bi-on-centos/#configure-ssl)
+   [CentOS](https://help.boldbi.com/embedded-bi/setup/deploying-in-linux/installation-and-deployment/bold-bi-on-centos/#configure-ssl)
    </li>
    </ul>
 

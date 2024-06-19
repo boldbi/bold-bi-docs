@@ -2,7 +2,7 @@
 layout: post
 title: Transpose the data columns and rows in SQL server| Bold BI Docs
 description: Learn the steps a user has to transpose the data columns and rows in SQL data source in Bold BI for embedded analytics.
-canonical: "/faq/how-to-transpose-the-data-columns-and-rows-in-sql-data-source/"
+canonical: "/cloud-bi/faq/how-to-transpose-the-data-columns-and-rows-in-sql-data-source/"
 platform: bold-bi
 documentation: ug
 ---
@@ -13,17 +13,17 @@ Bold BI allows you to transpose the data columns and rows using the Code view mo
 
 ## Transposing data columns and rows in Bold BI
 
-1.	Refer to the [Connecting Bold BI to the SQL data source](/working-with-data-sources/data-connectors/sql-data-source/#connecting-bold-bi-to-microsoft-sql-server-data-source) in order to successfully connect to it.
+1.	Refer to the [Connecting Bold BI to SQL data source](https://help.boldbi.com/embedded-bi/working-with-data-source/data-connectors/sql-data-source/#connecting-bold-bi-to-microsoft-sql-server-data-source) to successfully connect to it.
 
-2.	After dragging and dropping the required table onto the data design view page, switch to the code view mode in Bold BI as follows.
+2.	After dragging and dropping the required table in the data design view page, switch to code the view mode in Bold BI as follows.
 
-    ![Code view mode](/static/assets/faq/images/code-view.png)
+    ![Code view mode](/bold-bi-docs/static/assets/embedded/faq/images/code-view.png)
 
-3.	After switching to code view mode, you can locate the query designer page where you can modify the query to transpose the highlighted column below into rows.
+3.	After switching to the code view mode, you can find the query designer page in which you can alter the query to transpose the below highlighted column to rows.
 
-    ![Table rows](/static/assets/faq/images/table-column.png)
+    ![Table rows](/bold-bi-docs/static/assets/embedded/faq/images/table-column.png)
 
-4.	Alter the input query using `PIVOT()` to transpose the data columns and rows in code view mode as shown below.
+4.	Alter the input query with `PIVOT()`, to transpose the data columns and rows using the code view mode as follows.
 
       **Example query:**
 	
@@ -50,8 +50,8 @@ Bold BI allows you to transpose the data columns and rows using the Code view mo
 	
 5.	Click on the `Run` button to execute the altered query.
 
-    ![Run icon](/static/assets/faq/images/run-icon.png)
+    ![Run icon](/bold-bi-docs/static/assets/embedded/faq/images/run-icon.png)
 	
-6.	Click on the `Update` button to see the result where the row is changed to a column.
+6.	Click on the `Update` button and you can find the result where the row is changed to a column.
 
-    ![Transposed data](/static/assets/faq/images/transposed-rows.png)
+    ![Transposed data](/bold-bi-docs/static/assets/embedded/faq/images/transposed-rows.png)

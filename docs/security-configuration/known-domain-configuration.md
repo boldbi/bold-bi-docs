@@ -8,42 +8,40 @@ documentation: ug
 
 # Block Sending Data to Unknown Domain
 
-The callback URL will be present throughout a certain workflow within the application, allowing the operation status and other data to be delivered back to the program via that URL (e.g., publishing dashboard from one server to another server). What if a scammer changes the URL and manages to regain access to the encrypted data? This is a type of Server-side request forgery (SSRF) attack.
+The callback URL will be present throughout certain workflow within the application, allowing operation status and other data to be delivered back to the program via that URL (ex: Publishing dashboard from one server to another server). What if a scammer changes the URL and manages to regain access to the encrypted data? This is a kind of Server-side request forgery (SSRF) attack.
 
-A server-side request forgery (SSRF) attack is an attack that misuses server functionality to access or modify resources. By modifying the request URL, the attacker induces a server-side application to make requests to an unintended destination.
-
-> **NOTE:** Domain Configuration support is available in Bold BI Embedded Analytics, but it is not available in Cloud Analytics Server.
+A Server-side request forgery (SSRF) attack is an attack that misuses server functionality to access or modify resources. By modifying the request URL, the attacker induces a server-side application to make requests to an unintended destination.
 
 ## Avoid SSRF attack in Bold BI
 
-This attack can be avoided by configuring known domains in Bold BI using a known domain JSON file.
+This attack can be avoided by configuring known domains in Bold BI in a known domain JSON file.
 
 ### Steps to configure the Known Domain's
 
-1. Please go to the UMS Administration page in Bold BI and click on the `Configuration` tab. You can configure a list of known domains in a JSON file here.
+1. Go to the UMS Administration page in Bold BI and click on the `Configuration` tab. A list of known domains in a JSON file can be configured here.
 
-    ![UMS Settings](/static/assets/security-configuration/images/ums-settings.png#width=40%)
+    ![UMS Settings](/bold-bi-docs/static/assets/embedded/security-configuration/images/ums-settings.png#width=40%)
 
-2. Please select the `known_domains.json` file to configure the list of allowed and denied domains on this page.
+2. Select the `known_domains.json` file to configure the allowed and denied domain list on this page.
 
-    ![Known Domain Json](/static/assets/security-configuration/images/known-domain-json.png#width=40%)
+    ![Known Domain Json](/bold-bi-docs/static/assets/embedded/security-configuration/images/known-domain-json.png#width=40%)
 
 3. If you want to configure known domains in Bold BI, you must set the `Enabled` node to `true`.
 
-    ![Known Domain Json Enable](/static/assets/security-configuration/images/known-domain-json-enable.png#width=40%)
+    ![Known Domain Json Enable](/bold-bi-docs/static/assets/embedded/security-configuration/images/known-domain-json-enable.png#width=40%)
 
-4. You can add a list of denied domains to the `Deny` node. If you want to allow or deny all external domains, you can use the wildcard `*` in known domain JSON nodes. You can also use a wildcard with the subdomain, such as `(*.boldbi.com, *.*.boldbi.com)`.
+4. You can add a list of denied domains to the `Deny` node. If you want to allow or deny all external domains, you can use wildcard `*` in known domain JSON nodes. You can also use a wildcard with the subdomain `(*.boldbi.com, *.*.boldbi.com)`.
 
-    ![Denied Domains](/static/assets/security-configuration/images/denied-domains.png#width=40%)
+    ![Denied Domains](/bold-bi-docs/static/assets/embedded/security-configuration/images/denied-domains.png#width=40%)
 
-5. You can add a list of allowed domains to the `Allow` node. You can add more than one domain by using a comma.
+5. You can add a list of allowed domains to the `Allow` node. You can add more than one domain with a comma. 
 
-    ![Allowed Domains](/static/assets/security-configuration/images/allowed-domains.png#width=40%)
+    ![Allowed Domains](/bold-bi-docs/static/assets/embedded/security-configuration/images/allowed-domains.png#width=40%)
 
-> **Important:**  By default, internal Bold BI domains are allowed, meaning domains from Bold BI sites.
+> **Important:**  Internal Bold BI domains are allowed by default, i.e. domains from Bold BI sites.
 
-6. After configuring, click the `Save` button to update the Known Domain JSON file.
+6. Once configured, click the `Save` button to update the Known Domain JSON file.
 
-    ![Save Known Domain Json](/static/assets/security-configuration/images/save-known-domain-json.png#width=40%)
+    ![Save Known Domain Json](/bold-bi-docs/static/assets/embedded/security-configuration/images/save-known-domain-json.png#width=40%)
 
-> **Note:**  If you have configured the same domain in both the `Allow` and `Deny` lists, the domain will be denied as the denied list takes priority.
+> **Note:**  If you have configured the same domain in both `Allow` and `Deny`, the domain will be denied as the denied list takes first priority. 

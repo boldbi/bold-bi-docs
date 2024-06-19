@@ -10,16 +10,14 @@ documentation: ug
 
 This section explains how to configure Default Authentication, Azure AD, OAuth 2.0, OpenID, and JWT SSO in User Management Server.
 
-Here, you can explore authentication in detail.
+Here, you can explore the Authentication in detail.
 
-[Default Authentication](/multi-tenancy/site-administration/authentication/default-authentication/)
+[Default Authentication](/embedded-bi/multi-tenancy/site-administration/authentication/default-authentication/)
 
-[Azure Active Directory](/security-configuration/single-sign-on/azure-active-directory/)
+[Azure Active Directory](/embedded-bi/site-administration/sso/azure-active-directory/)
 
-[Azure B2C Settings](/multi-tenancy/site-administration/authentication/azure-b2c-settings/)
+[OAuth 2.0 Support](/embedded-bi/multi-tenancy/site-administration/authentication/oauth-2.0-support/)
 
-[OAuth 2.0 Support](/multi-tenancy/site-administration/authentication/oauth-2.0-support/)
+[OpenID Support](/embedded-bi/multi-tenancy/site-administration/authentication/openid-settings/)
 
-[OpenID Support](/multi-tenancy/site-administration/authentication/openid-settings/)
-
-[JWT SSO](/multi-tenancy/site-administration/authentication/json-web-token/)
+[JWT SSO](/embedded-bi/multi-tenancy/site-administration/authentication/json-web-token/)

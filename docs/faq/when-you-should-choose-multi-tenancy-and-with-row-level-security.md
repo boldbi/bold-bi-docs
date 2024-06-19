@@ -10,20 +10,21 @@ documentation: ug
 
 ## Multi-tenancy
 
-Multi-tenant support enables the administrator to deploy multiple tenants to serve multiple customers. If you want to establish the Bold BI application with your customers and share the admin privilege to manage the Dashboards and users from their end, you can utilize the multi-tenancy feature in Bold BI.
+Multi-tenant support allows the administrator to deploy multiple tenants to serve multiple customers.
+If you would like to establish the Bold BI application with your customers and share the admin privilege to manage the Dashboards and users from their end, you can make use of the multi-tenancy in Bold BI.
 
-For example, if your Bold BI Server is bound to the `company.com` domain, you can create multiple tenants for your customers with different sub domains like `client1.company.com` and `client2.company.com`. This will allow each customer to use their own databases to create the required dashboards.
+For Example, if your Bold BI Server is bound with the `company.com` domain and you can create multiple tenants to your customer with different sub domains like `client1.company.com` and `client2.company.com`. This will allow each customer to use their databases to create the required dashboards.
 
-Bold BI's multi-tenant support ensures the security of both the application and data. You can learn more about Multi-Tenancy [here](/multi-tenancy/).
+Bold BI multi-tenant support ensures the security to of both application and data. You can learn more about Multi-Tenancy [here](/embedded-bi/multi-tenancy/).
 
 ## Row-level Security
 
-If you would like to embed the Bold BI Dashboard into your application and distribute it to your customers, and you would like to filter the data based on your customers, then you can make use of Row-level security. Row-level security can be applied from multiple layers,
+If you would like to embed the Bold BI Dashboard into your application and distribute it to your customers and would like to filter the data based on your customers, then you can make use of the Row-level security. Row-level security can be applied from multiple layers,
 
-1. [Isolation code](/working-with-data-sources/configuring-isolation-code/) - The UMS admin can apply the isolation code to any site from the site settings.
-2. [Custom Attribute](/working-with-data-sources/configuring-custom-attribute/) - The Bold BI admin can set a custom attribute that can be applied at the data source query level based on the user and groups.
-3. [User-based filters(Row-level security)](/working-with-data-sources/user-filter/) - User-based filters can be configured when designing the dashboard.
+1. [Isolation code](/embedded-bi/working-with-data-source/configuring-isolation-code/) - The UMS admin can apply the isolation code on any site from the site settings.
+2. [Custom Attribute](/embedded-bi/working-with-data-source/configuring-custom-attribute/) - The Bold BI admin can set the custom attribute which can be applied in the data source query level based on the user and groups.
+3. [User-based filters(Row-level security)](/embedded-bi/working-with-data-source/user-filter/) - User-based filters can be configured when you design the dashboard.
 
-Row-level filtering can be applied within the hierarchy mentioned above.
+Row-level filtering can be applied in the above hierarchy.
 
 

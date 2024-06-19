@@ -7,11 +7,11 @@ documentation: ug
 ---
 
 # How to resolve Bold BI application pool crashing?
-In this post, we will explain how to resolve the issue of the Bold BI application pool crashing, which is caused by the Brotli Compression scheme.
+In this post, we are going to explain how to resolve Bold BI application pool crashing which occurred due to Brotli Compression scheme.
 
-Brotli is a compression algorithm developed by Google for text compression.
+Brotli is the compression algorithm developed by Google for text compressions.
 
-If you have installed the Brotli `Compression` HTTP module for IIS on your machine, the Brotli compression references will be added in the following three sections of your `ApplicationHost.config` file: 
+If you installed the `Brotli Compression` HTTP module for IIS in your machine, the brotli compression references would be added in below three sections in your `ApplicationHost.config` file, 
 
 * globalModules
 
@@ -19,13 +19,13 @@ If you have installed the Brotli `Compression` HTTP module for IIS on your machi
 
 * httpCompression
 
-The `Brotli Compression` is a 64-bit dll and it could cause the `Bold BI` 32-bit application to crash due to the bit difference. Therefore, you need to exclude the Brotli references for the Bold BI application.
+The `Brotli Compression` is a 64bit dll and it could stop the `Bold BI` 32bit application due to its bit difference. So you need to exclude the Brotli references for Bold BI application.
 
-To remove the `Brotli Compression` references, follow the steps below:
+Follow the below steps to remove the `Brotli Compression` references,
 
-1. Go to the location `C:\Windows\System32\inetsrv\Config\applicationHost.config`.
+1. Go to the `C:\Windows\System32\inetsrv\Config\applicationHost.config` location.
 
-2. Open the `applicationHost.config` file and locate the Brotli compression references added in the sections mentioned above.
+2. Open the `applicationHost.config` file and you can see the brotli compression references which are added in the below sections,
 
    **globalModules reference**
 
@@ -59,10 +59,10 @@ To remove the `Brotli Compression` references, follow the steps below:
 
       ```
 
-3. Now, you need to remove those references from your file and save it before running the BOLD BI application without any issues.
+3. Now, you have to remove those references from your file and then save it for running the BOLD BI application without any issues.
 
-4. Afterwards, manually start the `Application pool` in your IIS manager for the following,
-![Application pool](/static/assets/faq/images/application-pool-in-iis.png)
+4. Then manually start the `Application pool` in your IIS manager for the below,
+![Application pool](/bold-bi-docs/static/assets/embedded/faq/images/application-pool-in-iis.png)
 
 
 

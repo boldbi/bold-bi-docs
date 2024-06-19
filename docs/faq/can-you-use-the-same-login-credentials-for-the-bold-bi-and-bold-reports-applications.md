@@ -8,6 +8,6 @@ documentation: ug
 
 # Can you use the same login credentials for the Bold BI and Bold Reports applications
 
-Yes, Bold BI and Bold Reports applications can use the same login credentials. The Bold BI and Bold Reports applications are integrated with our **Identity Provider (IdP)**. Our IdP offers support for user management and Single Sign-On (SSO) for the Bold BI and Bold Reports products.
+Yes, Bold BI and Bold Reports applications can use the same login credentials. The Bold BI and Bold Reports applications are integrated with our **Identity Provider (IdP)**.  Our IdP offers support for user management and Single Sign-On (SSO) for the Bold BI and Bold Reports products.
 
-The user has access to the sites through the IdP. However, resource access permissions (such as Dashboards, Reports, and more) should be managed within the corresponding site.
+From the IdP, the user has access to the sites. However, resource access permissions (These are Dashboards, Reports, and more.) should be managed within the corresponding site.

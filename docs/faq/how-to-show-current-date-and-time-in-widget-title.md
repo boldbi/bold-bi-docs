@@ -8,29 +8,29 @@ documentation: ug
 
 # How to show Current Date and Time in Widget Title
 
-You can display the **current date and time** in widget’s title using the [Expression](/working-with-data-sources/data-modeling/configuring-expression-columns/) and [Label Parameter](/visualizing-data/working-with-widgets/configuring-label-parameters/) supported by Bold BI application.
+You can show the **current date and time** in widget’s title using [Expression](https://help.boldbi.com/embedded-bi/working-with-data-source/transforming-data/configuring-expression-columns/) and [Label Parameter](https://help.boldbi.com/cloud-bi/visualizing-data/working-with-widgets/configuring-label-parameters/) supported by Bold BI application.
 
-Follow these steps to meet this requirement:
+Follow these steps to achieve this requirement:
 
-1. Create and save a column with an expression using the `TODAY()` function.
+1. Create and save an expression column with `TODAY()` function.
 
-    ![Create Expression with Today function](/static/assets/faq/images/create-expression-with-today-function.png)
+    ![Create Expression with Today function](/bold-bi-docs/static/assets/embedded/faq/images/create-expression-with-today-function.png)
 
-2. In the widget title, use the expression column as the label parameter.
+2. In widget title, use expression column as a label parameter.
 
-    ![Use Today expression in widget title](/static/assets/faq/images/use-today-exp-in-widget-title.png)
+    ![Use Today expression in widget title](/bold-bi-docs/static/assets/embedded/faq/images/use-today-exp-in-widget-title.png)
 
-3. Preview the dashboard to help you view the current date and time in the widget title. 
+3. Preview the dashboard to help you view the current date and time on widget title. 
 
-    ![Today date in view mode](/static/assets/faq/images/today-date-in-view-mode.png#max-width=50%)
+    ![Today date in view mode](/bold-bi-docs/static/assets/embedded/faq/images/today-date-in-view-mode.png#max-width=50%)
 
-    By default, the current date and time will be shown when using the created expression column. You can also display a required date formatting, as well as the following.
+    By default, the current Date and Time will be shown while using the created expression column. You can also show a required date formatting as well as the following.
 
-    ![Label Parameter with Date Formatting](/static/assets/faq/images/label-parameter-with-date-formatting.png)
+    ![Label Parameter with Date Formatting](/bold-bi-docs/static/assets/embedded/faq/images/label-parameter-with-date-formatting.png)
 
-    ![Date Formatting review](/static/assets/faq/images/date-formatting-preview.png#max-width=50%)
+    ![Date Formatting review](/bold-bi-docs/static/assets/embedded/faq/images/date-formatting-preview.png#max-width=50%)
 
-The following is a list of supported date formatting types.
+The following is the list of supported date formatting types.
     
 <table>
    <tr>

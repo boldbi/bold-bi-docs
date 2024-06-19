@@ -22,7 +22,7 @@ documentation: ug
         <td align="left">Security</td>
         <td align="left">Allow embedding application to add more security control by implementing your own authorization server. 
 
-<a href="/security-configuration/authorize-server">https://help.boldbi.com/security-configuration/authorize-server</a></td>
+<a href="https://help.boldbi.com/embedded-bi/javascript-based/authorize-server">https://help.boldbi.com/embedded-bi/javascript-based/authorize-server</a></td>
         <td align="left">Uses the Bold BI login by default. Hence have to create user accounts in Bold BI too.</td>
     </tr>
     <tr>
@@ -53,7 +53,7 @@ Also, supports anonymous embedding for public dashboards which is not the prefer
 </ul>
 
 <B>Reference:</B>
-<a href= "/embedding-options/embedding-sdk/embedding-api-reference/">https://help.boldbi.com/embedding-options/embedding-sdk/embedding-api-reference</a>
+<a href= "https://help.boldbi.com/embedded-bi/javascript-based/api-reference">https://help.boldbi.com/embedded-bi/embedded-bi/javascript/api-reference</a>  
 </td>
         <td align="left">Not supported.</td>
     </tr>
@@ -83,12 +83,13 @@ We can embed below modules but user need to login each time due to cross site co
     </tr>
     <tr>
         <td align="left">Bold BI Pricing </td>
-        <td align="left" colspan="2">Embedding works on all plans - Check the <a href="https://www.boldbi.com/pricing">pricing plans</a></td>
+        <td align="left">Requires embedding plans - Check the <a href="https://www.boldbi.com/embedded/pricing">pricing plans</a></td>
+        <td align="left">Anonymous embedding works on all plans whereas secure embedding works only on embedding plans.</td>
     </tr>
     <tr>
         <td align="left">Embedding sample</td>
-        <td align="left">Component based sample <a href="/embedding-options/embedding-sdk/samples">here</a></td>
-        <td align="left">iFrame based sample <a href="/embedding-options/iframe-embedding/sample/">here</a></td>
+        <td align="left">Component based sample <a href="https://help.boldbi.com/embedded-bi/javascript-based/samples">here</a></td>
+        <td align="left">iFrame based sample <a href="https://help.boldbi.com/embedded-bi/iframe-based/sample">here</a></td>
     </tr>
   </tbody>
 </table>

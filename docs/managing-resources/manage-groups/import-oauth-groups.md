@@ -8,32 +8,32 @@ documentation: ug
 
 # Import Group for OAuth 2.0
 
-This section explains how to import single group or bulk groups from an OAuth provider and update the authentication settings of OAuth 2.0 in Bold BI.
+This section explains how to import single group or bulk groups from OAuth provider and update the authentication settings of OAuth 2.0 in Bold BI.
 
-Select the `Import from OAuth` option from the `New Group` drop-down list on the Groups homepage.
+Select the `Import from OAuth` option from `New Group` drop-down list on Groups homepage.
 
-![Import Oauth groups](/static/assets/managing-resources/manage-groups/images/import-Oauth-icon.png)
+![Import Oauth groups](/bold-bi-docs/static/assets/embedded/managing-resources/manage-groups/images/import-Oauth-icon.png)
 
-> **NOTE:**  Before importing an OAuth group, you need to configure the `Group Import settings` in the authentication settings page. Refer to this link on [how to configure OAuth Authorization Settings](/security-configuration/single-sign-on/oauth-2.0-support/). This feature is available in On-Premises Deployment but not in Syncfusion Managed Cloud Server.
+> **NOTE:**  Before you import an OAuth group, first you need to configure the `Group Import settings` in authentication settings page. Refer this link [how to configure OAuth Authorization Settings](/embedded-bi/site-administration/sso/oauth-2.0-support/).
 
 ## Import groups
 
 To import the OAuth 2.0 groups, you can use both Dashboard Server and User Management Servers authentication provider. Choose the provider from the drop-down list at the top left corner.
 
-![Select Provider](/static/assets/managing-resources/manage-groups/images/Oauth-select-provider.png#width=65%)
+![Select Provider](/bold-bi-docs/static/assets/embedded/managing-resources/manage-groups/images/Oauth-select-provider.png#width=65%)
 
-Select the groups from the list and click on `Import groups` at the top right corner.
+Choose the groups from the list and click the `Import groups` at the top right corner.
 
-![Import Oauth groups](/static/assets/managing-resources/manage-groups/images/Oauth-import-enable.png)
+![Import Oauth groups](/bold-bi-docs/static/assets/embedded/managing-resources/manage-groups/images/Oauth-import-enable.png)
 
-Bold BI will import the selected groups and a confirmation message will be displayed as shown in the following figure.
+Bold BI will import the chosen groups and a confirmation message will be displayed as shown in the following figure.
 
-![Success message after imported the Oauth groups](/static/assets/managing-resources/manage-groups/images/Oauth-import-success.png#width=70%)
+![Success message after imported the Oauth groups](/bold-bi-docs/static/assets/embedded/managing-resources/manage-groups/images/Oauth-import-success.png#width=70%)
 
-The success message box explains the status of the imported groups in Bold BI. Once you click on `OK` or the `Close Icon`, the list will be reloaded and the imported groups will disappear.
+The success message box explains the groups status, which were imported into the Bold BI. Once you click `OK` or `Close Icon`, list will be reloaded and imported groups will disappear.
 
 ## To update authentication settings
 
-If you wish to update the OAuth settings, select the `Provider` from the drop-down list and click on `Modify`. This will redirect you to the respective authentication settings page.
+If you want to update the OAuth settings, select the `Provider` from drop-down list and click the `Modify`. It will redirect to respective authentication settings page.
 
-![Oauth Authenticate setting page](/static/assets/managing-resources/manage-groups/images/Oauth-group-modify.png#width=65%)
+![Oauth Authenticate setting page](/bold-bi-docs/static/assets/embedded/managing-resources/manage-groups/images/Oauth-group-modify.png#width=65%)

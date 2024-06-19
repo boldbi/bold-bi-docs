@@ -2,45 +2,46 @@
 layout: post
 title: Import Users from Database – Embedded BI | Bold BI Learning
 description: Learn how to import users from database in Bold BI Embedded. Also know how to modify existing database connection.
-canonical: "/managing-resources/manage-users/import-database-users/"
+canonical: "/cloud-bi/managing-resources/manage-users/import-database-users/"
 platform: bold-bi
 documentation: ug
 ---
 
 # User Import from a Database
 
-This section explains how to import users from a database into Bold BI Embedded.
+This section explains how to import users from Database into the Bold BI Embedded.
 
-Only users belonging to the `System Administrator` group can import users from the database into Bold BI.
+Users belonging to the `System Administrator` group only can import users from database into the Bold BI.
 
 ## Listing Database Users
 
-To add new users to Bold BI, click on `New User` and then `Import from Database` from the User Management page.
+To add new users to the Bold BI, click on `New User` and then `Import from Database` from the User Management page.
 
-![Add New Users](/static/assets/managing-resources/manage-users/images/add-new-users.png#width=50%)
+![Add New Users](/bold-bi-docs/static/assets/embedded/managing-resources/manage-users/images/add-new-users.png#width=50%)
 
-The link will redirect to another page that will look like the following:
+The link will redirect to another page that will look like below.
 
-![Import Users from Database - Home](/static/assets/managing-resources/manage-users/images/import-users-home.png)
+![Import Users from Database - Home](/bold-bi-docs/static/assets/embedded/managing-resources/manage-users/images/import-users-home.png)
 
 
 ## Select Users and Import
 
-After selecting columns, the data retrieved from the database will be shown in the Grid. Select the users to be imported and click on `Import Selected Users` to import the selected users, or you can import all the users by clicking on the `Import All Users` button.
+After selecting columns the data retrieved from database will be shown in Grid. Select the users to be imported and click on `Import Users` to import the users.
 
-![Import Database Users](/static/assets/managing-resources/manage-users/images/import-from-database-users.png)
+![Import Selected Users](/bold-bi-docs/static/assets/embedded/managing-resources/manage-users/images/import-users-grid-selection-new.png)
 
+Bold BI will import the chosen users and a confirmation message will be displayed as shown in the below image.
 
-Bold BI will import the chosen users in the background as a job, and a confirmation dialog will be displayed as shown in the following figure.
+![Success message after imported the Database users](/bold-bi-docs/static/assets/embedded/managing-resources/manage-users/images/Database-User-imported-new.png#width=60%)
 
-![Confirmation dialog after import users started](/static/assets/managing-resources/manage-users/images/confirmation-dialogue-on-import-click.png#width=70%)
+## Duplicate Users
 
-You can view the status of the current import by clicking on the `View Status` button in the above confirmation dialog, and you will be navigated to the bulk import job details page where you can view the details of the current import job. Please learn more about the Bulk Import Result page [here](/managing-resources/manage-users/bulk-import-result/).
+ Existing database users who has the same username or email address as that of the Bold BI users(who are already present), will be marked as duplicate users and will not be allowed to import into Bold BI.
 
-![Bulk user import job details page](/static/assets/managing-resources/manage-users/images/import-job-details-page.png#width=70%)
+ ![Display Duplicated Users](/bold-bi-docs/static/assets/embedded/managing-resources/manage-users/images/Duplicated-existing-db-import-users.png)
 
 ## Modify Existing Database Connection
 
-To modify existing database configuration settings, click on the `Modify` link as shown below.
+To modify Existing Database configuration settings, click on the `Modify` link as below
 
-![Modify Database Configuration](/static/assets/managing-resources/manage-users/images/Modify-Database-settings-Configuration.png)
+![Modify Database Configuration](/bold-bi-docs/static/assets/embedded/managing-resources/manage-users/images/Modify-Database-settings-Configuration.png)

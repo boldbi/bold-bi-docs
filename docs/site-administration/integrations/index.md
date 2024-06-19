@@ -8,8 +8,8 @@ documentation: ug
 
 # Integrations
 
-The integration settings page is divided into two sections: the `General` tab lists all webhooks created by users on the Bold BI site, and the `Failure Logs` tab allows you to track the status of your webhook event calls from the Bold BI application.
+The integrations settings page is divided into two sections: the `General` tab will list all webhooks which are created by all the users on the Bold BI site, and in the `Failure Logs` tab you can track the status of your webhook event calls from the Bold BI application.
 
-[General](/site-administration/integrations/webhook-listing/)
+[General](/embedded-bi/site-administration/integrations/webhook-listing/)
 
-[Failure Logs](/site-administration/integrations/failure-logs/)
+[Failure Logs](/embedded-bi/site-administration/integrations/failure-logs/)

@@ -7,39 +7,39 @@ documentation: ug
 ---
 
 # Features to be enabled in IIS to run Bold BI in Windows Server OS
-The Bold BI Enterprise Edition can be hosted in both IIS Express and IIS. To run Bold BI in IIS, enable IIS along with its features and roles.
+Bold BI Enterprise Edition can be hosted in an IIS express and IIS. To run the Bold BI in IIS, enable the IIS along with IIS features and roles.
 
-> **NOTE:**  A pre-installed Bold BI Enterprise Edition and IIS configured Azure VM are available [here](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/syncfusion.bold-bi-enterprise-multi-tenant).
+> **NOTE:**  A pre-installed Bold BI Enterprise Edition and IIS configured Azure VM is available [here](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/syncfusion.bold-bi-enterprise-multi-tenant).
 
 ## Steps to enable the IIS and features that are needed to run the Bold BI Server in Windows Server OS
 
-1. Open `Server Manager` and click on `Manage > Add Roles and Features`. Then, click Next. 
+1. Open `Server Manager` and click `Manage > Add Roles and Features`. Click Next.  
 
-2. Select `Role-based or feature-based installation` and click on `Next`.    
+2. Select `Role-based or feature-based installation` and click `Next`.    
 
 3. Choose `Select a server from the server pool` and select the server in the Server Pool section, and then click `Next`.
 
 4. On `Server Roles`, enable the `Web Server (IIS)` in the Roles section.  
 
-5. Enable the following .NET Framework features on `Features` and then click `Next`.
+5. On `Features`, enable the below .NET Framework features and click `Next`.
 
-   > **NOTE:**  You should use Microsoft .NET Framework 4.5 or higher version. Learn more [here](/overview/).
+   > **NOTE:**  You should use Microsoft .NET Framework 4.5 or higher version. Learn more [here](/embedded-bi/overview/#prerequisites).
 
-   ![Roles and Features](/static/assets/faq/images/roles-features.png)
+   ![Roles and Features](/bold-bi-docs/static/assets/embedded/faq/images/roles-features.png)
 
 6. On the `Web Server Role (IIS)` dialog box, click Next.
 
-7. On the `Select role services` dialog box, verify that the required web server component listed [here](/faq/features-needed-to-enable-in-iis-to-run-bold-bi-in-win-server-os/#required-web-server-components) are enabled. Click `Next`.
+7. On the `Select role services` dialog box and verify that the required web server component listed [here](/embedded-bi/faq/features-needed-to-enable-in-iis-to-run-bold-bi-in-win-server-os/#required-web-server-components) are enabled. Click `Next`.
    
-   ![Roles and Features](/static/assets/faq/images/role-services.png)
+   ![Roles and Features](/bold-bi-docs/static/assets/embedded/faq/images/role-services.png)
 
-8. Verify that your settings are correct and then click `Install`.
+8. Verify that your settings are correct and click `Install`.
     
-9. When the installation is complete, click `Close` to exit the wizard.  
+9. When the installation completes, click `Close` to exit the wizard.  
 
 ## Required web server components
 
-The IIS components listed below meet the minimum requirements to run Bold BI. If other IIS components are enabled, they do not need to be removed. 
+The IIS components listed below satisfy the minimum requirements to run the Bold BI. If other IIS components are enabled, they do not need to be removed.  
 
 <meta charset="utf-8"/>
 <table>

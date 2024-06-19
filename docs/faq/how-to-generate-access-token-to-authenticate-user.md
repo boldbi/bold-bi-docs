@@ -6,29 +6,29 @@ platform: bold-bi
 documentation: ug
 ---
 # Generate access token based on user type
-When you sign in to Bold BI Embed, an access token is provided that should be attached to the request header (Authorization) for all subsequent API calls to authenticate the requests. Generate an access token based on the user type. Use **password authentication** for local account users and **embed secret authentication** for both local account users and third-party login users.
+When you sign in to the Bold BI Embed, an access token is provided that should be attached to the request header(Authorization) for all subsequent API calls to authenticate the requests. Generate an access token based on the user type. Use <b>password authentication</b> for local account users and <b>embed secret authentication</b> for both local account users and third party login users.
 
 ## When and How to generate access token using password authentication
-Use password authentication to generate an access token when the user's password is stored in the Bold BI Embed Application. The password will be stored in the Bold BI Embed application for **locally added users** who are created with a password in the Bold BI Embed application and for **users imported from CSV and Database**.
+Use password authentication to generate an access token when the user password is stored in the Bold BI Embed Application. The password will be stored in the Bold BI Embed application for <b>locally added users</b> who are created with a password in the Bold BI Embed application and <b>users imported from CSV and Database</b>.
 
-> **NOTE:** You cannot use password authentication for users from Azure AD, Windows AD, OAuth 2.0, OpenID Connect, and JWT if their passwords are not maintained in the Bold BI Embed application.
+> **NOTE:** You cannot use password authentication for the users from Azure AD, Windows AD, OAuth 2.0, OpenID Connect, and JWT whose password is not maintained in the Bold BI Embed application.
 
-Generate an access token with password authentication by using the `username`, `password`, and `grant_type`.
+Generate an access token with password authentication using the `username`, `password`, and `grant_type`.
 
-![Token Generation Body Password Auth](/static/assets/faq/images/access-token-body-pwd.png)
+![Token Generation Body Password Auth](/bold-bi-docs/static/assets/embedded/faq/images/access-token-body-pwd.png)
 
-Please refer to this [link](/server-api-reference/v4.0/api-reference/#tag/Password-Authentication) for detailed information on how to generate an access token for a Rest API using password authentication.
+Please refer to this [link](https://help.boldbi.com/embedded-bi/rest-api-reference/v4.0/api-reference/#tag/Password-Authentication) for detailed information on how to generate an access token for Rest API using password authentication.
 
 
 ## When and How to generate access token using embed secret authentication
-Utilize embedded secret authentication to create an access token for **all users of the Bold BI Embed application**.
+Use an embed secret authentication to generate an access token for <b>all users of the Bold BI Embed application</b>.
 
-> **NOTE:** The embedded secret authentication is particularly used for users from Azure AD, Windows AD, OAuth 2.0, OpenID Connect, and JWT whose password is not stored in the Bold BI Embed application.
+> **NOTE:** The embed secret authentication is particularly used for the users from Azure AD, Windows AD, OAuth 2.0, OpenID Connect, and JWT whose password is not maintained in the Bold BI Embed application.
 
-Generate an access token with an embedded secret authentication using the `username`, `embed_secret`, and `grant_type`.
+Generate an access token with an embed secret authentication using the `username`, `embed_secret`, and `grant_type`.
 
-![Token Generation Body Embed Auth](/static/assets/faq/images/access-token-body-embed.png)
+![Token Generation Body Embed Auth](/bold-bi-docs/static/assets/embedded/faq/images/access-token-body-embed.png)
 
-Please obtain the embed secret key from the embed settings page of the Bold BI Embed application. Refer to this [link](/site-administration/embed-settings/#get-embed-secret-code) to learn where to find the embed secret key.
+Get the embed secret key from the embed settings page of the Bold BI Embed application. Please refer to this [link](/embedded-bi/site-administration/embed-settings/#get-embed-secret-code) to know where to get an embed secret key.
 
-Please refer to this [link](/server-api-reference/v4.0/api-reference/#tag/Embed-Secret-Authentication) for detailed information on how to generate an access token for a Rest API using the embed secret authentication.
+Please refer to this [link](https://help.boldbi.com/embedded-bi/rest-api-reference/v4.0/api-reference/#tag/Embed-Secret-Authentication) for detailed information on how to generate an access token for Rest API using the embed secret authentication.

@@ -2,46 +2,46 @@
 layout: post
 title: Saving/Publishing a Dashboard – Embedded BI | Bold BI Docs
 description: Learn how to save your latest changes in an existing dashboard or save a new dashboard in Bold BI Embedded.
-canonical: "/working-with-dashboards/publish-dashboard/"
+canonical: "/cloud-bi/working-with-dashboards/publish-dashboard/"
 platform: bold-bi
 documentation: ug
 ---
 
 # Publishing a Dashboard
 
-A new dashboard or an existing dashboard can be published with the same or a different `Name` on the site. While publishing the dashboard, you can also add a `Description` if necessary.
+A new dashboard or an existing dashboard can be published with same or different `Name` in the site. While publishing the dashboard, you can also add the `Description` for the dashboard, if required.
 
-The publishing operation can be handled using the options in the tools pane of the design view items, such as `Publish` and `Publish As`.
+Publishing operation can be handled using the option in the tools pane of the design view items such as, `Publish` and `Publish As`
 
-![Publish dashboard icon](/static/assets/working-with-dashboards/images/publishdashboard_icon.png)
+![Publish dashboard icon](/bold-bi-docs/static/assets/embedded/working-with-dashboards/images/publishdashboard_icon.png)
 
-To publish, click on `Publish` in the tools panel. To `Publish As` an existing dashboard, click the down arrow near the publish icon and select `Publish As`.
+Click `Publish` in the tools panel. In order to `Publish As` the existing dashboard, click the down arrow near the publish icon and select `Publish As`. 
 
-The `Publish As Dashboard` dialog box will open, where you can select the category and name where the dashboard needs to be published.
+The `Publish As Dashboard` dialog box will be opened, on which category and name can be selected where the dashboard need to be published.
 
-![Publish dashboard dialog](/static/assets/working-with-dashboards/images/publishadashboard_window.png)
+![Publish dashboard dialog](/bold-bi-docs/static/assets/embedded/working-with-dashboards/images/publishadashboard_window.png)
 
 Enter the name and description for the dashboard.
 
-By selecting `Mark as public`, the dashboard will be saved as a public dashboard.
+On selecting `Mark as public`, the dashboard will be saved as public dashboard.
 
-Some special characters are not supported in the dashboard name when saving.
+While saving the dashboard, some special characters are not supported in the dashboard name.
 
-![Publish dashboard exception](/static/assets/working-with-dashboards/images/publishadashboard_exception.png)
+![Publish dashboard exception](/bold-bi-docs/static/assets/embedded/working-with-dashboards/images/publishadashboard_exception.png)
 
 Click `Publish` to save the dashboard.
 
-When saving for the first time, the `Publish As` dialog may appear even when clicking `Publish`.
+Saving the dashboard for the first time, will prompt the `Publish AS` dialog even when you click the `Publish`.
 
-If a dashboard with the same name already exists in the selected category, a `Confirm Publish Dashboard` dialog will prompt to replace the dashboard in the specified category. Selecting `Yes` will replace the dashboard.
+On publishing the dashboard, if same name already exist with the selected category, it will prompt `Confirm Publish Dashboard` dialog to replace the dashboard in the selected category. By selecting `Yes`, the dashboard will be replaced in the category specified.
 
-![Confirm Publish dashboard](/static/assets/working-with-dashboards/images/publishconfirmdashboard.png)
+![Confirm Publish dashboard](/bold-bi-docs/static/assets/embedded/working-with-dashboards/images/publishconfirmdashboard.png)
 
-After successfully publishing a dashboard, you will be prompted to view the published dashboard. Selecting `Yes` will navigate to view the subsequent dashboard.
+After publishing a dashboard successfully, it will prompt to view the published dashboard. By selecting `Yes`, the dashboard will be navigated to view the subsequent dashboard.
 
-![Confirm View dashboard](/static/assets/working-with-dashboards/images/publishconfirmviewdashboard.png)
+![Confirm View dashboard](/bold-bi-docs/static/assets/embedded/working-with-dashboards/images/publishconfirmviewdashboard.png)
 
-[Learn how to edit an existing dashboard](/working-with-dashboards/edit-existing-dashboard/)
+[Learn how to edit an existing dashboard](/embedded-bi/working-with-dashboards/edit-existing-dashboard/)
 
 ## Post your message
-If you are still unable to find the information you are looking for in the self-help resources mentioned above, please [contact us](https://www.boldbi.com/support) with your requirements.
+If you are still not able to find the information that you are looking for the self-help resources mentioned above, then please [contact us](https://www.boldbi.com/support) and send your requirements.

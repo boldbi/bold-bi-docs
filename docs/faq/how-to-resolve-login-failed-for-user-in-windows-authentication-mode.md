@@ -7,22 +7,22 @@ documentation: ug
 ---
  
 # Login failed for user in Windows Authentication mode
-When connecting to SQL Server using Windows Authentication mode in Bold BI, it will throw the following error.
-![login-failed](/static/assets/faq/images/login-failed-user.png)
+When connecting the SQL Server Windows Authentication mode in Bold BI, it will throw the following error
+![login-failed](/bold-bi-docs/static/assets/embedded/faq/images/login-failed-user.png)
  
 ## Why this issue occurred
-`NT AUTHORITY/SYSTEM` is not added to IIS/IIS EXPRESS for accessing SQL Server in Windows Authentication mode.
+`NT AUTHORITY/SYSTEM` is not added in IIS/IIS EXPRESS  to access SQL Server Windows Authentication mode.
  
 ### The steps for adding `NT AUTHORITY/SYSTEM` to access SQL Server Windows Authentication mode in IIS or IIS EXPRESS
  
-In Microsoft SQL Server Management Studio, please perform the following actions on the server.
+In Microsoft SQL Server Management Studio, do the following in the Server.
  
 1.  Right click on "Login" and select `New Login` to add respective login into SQL Server.
-    ![add-login](/static/assets/faq/images/add-new-login.png)
+    ![add-login](/bold-bi-docs/static/assets/embedded/faq/images/add-new-login.png)
  
-2.  Click on the "Search" button, then select `Advanced -> Find Now -> SYSTEM` in the newly opened window.  
-    ![login-search](/static/assets/faq/images/login-window.png)
+2.  Click on "Search" button, then select `Advanced -> Find Now -> SYSTEM` in the newly opened windows. 
+    ![login-search](/bold-bi-docs/static/assets/embedded/faq/images/login-window.png)
  
-    ![authority-system-add](/static/assets/faq/images/add-system.png)  
+    ![authority-system-add](/bold-bi-docs/static/assets/embedded/faq/images/add-system.png)  
  
-3.  Then click "OK" to add the login `NT AUTHORITY/SYSTEM`. Once it has been added, we will be able to access Windows authentication mode in Bold BI. 
+3.  Then click "OK" to add the login `NT AUTHORITY/SYSTEM`. Once it was added, we can access Windows authentication mode in Bold BI. 

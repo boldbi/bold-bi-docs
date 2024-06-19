@@ -8,30 +8,30 @@ documentation: ug
 
 # How to get the dashboard list based on group for the specific user
 
-Currently, we are able to obtain the list of dashboards available to users directly from the REST API. However, we do not have a direct API to retrieve the list of dashboards available to a group if a user is a member of that group.
+Right now, we could be able to get the list of dashboards available to the users from the REST API directly. But we do not have a direct API to get the list of dashboards available to the group if the user is present in it.
 
-Please follow these steps to obtain the list of dashboards, along with the permissions specific to the group if the user is a member of it.
+So, please follow these steps to get the list of dashboards along with the permissions specific to the group if the user is present in it.
 
-1. Generate the token using an email in the authorization server to impersonate the user. To access the API for generating the token, please visit this [link](/server-api-reference/v2.0/api-reference/). Once the authentication is successful, the token will be generated as shown in the following image.
+1. Generate the token with an email in the authorization server to impersonate the user. API to generate the token, please visit this <a href="https://help.boldbi.com/embedded-bi/rest-api-reference/v2.0/api-reference/#operation/Authentication">link</a>. Once the authentication succeeds, then the token will be generated as shown in the following image,
 
-    ![Token Generation](/static/assets/faq/images/access-token-generation.png)
+    ![Token Generation](/bold-bi-docs/static/assets/embedded/faq/images/access-token-generation.png)
 
-2. Once the token is generated, identify whether the user is present in the group or not by passing the token in the authorization header to the [GetGroupsOfUsersAPI](/server-api-reference/v2.0/api-reference/), which returns a list of groups for the user ID. From the list of groups, we can identify whether the expected group has been returned from the API or not.
+2. Once the token is generated, identify whether the user is present in the group or not. By passing the token in the authorization header to this <a href="https://help.boldbi.com/embedded-bi/rest-api-reference/v2.0/api-reference/#operation/Users_GetGroupsOfUser">GetGroupsOfUsersAPI</a> which returns list of groups for the user id. From the list of groups, we can identify whether the expected group has returned from the API or not.
 
-    ![Read Grouplist of the user](/static/assets/faq/images/group-list-of-the-user.png)
+    ![Read Grouplist of the user](/bold-bi-docs/static/assets/embedded/faq/images/group-list-of-the-user.png)
 
-3. Next, we need to obtain the list of permissions assigned to the group. To do this, you must call this [API](/server-api-reference/v2.0/api-reference/) and retrieve the list of permissions as depicted in the following image.
+3. Next, we must get the list of permissions assigned to the group. For this, you must invoke this <a href="https://help.boldbi.com/embedded-bi/rest-api-reference/v2.0/api-reference/#operation/Permission_GetGroupPermission">API</a> and get the list of permissions as shown in the following image.
 
-    ![Get Group permission list of the user](/static/assets/faq/images/group-permission-list.png)
+    ![Get Group permission list of the user](/bold-bi-docs/static/assets/embedded/faq/images/group-permission-list.png)
 
-4. Next, invoke this [API](/server-api-reference/v2.0/api-reference/) to retrieve the list of dashboards accessible to the user and compare it with the permission list mentioned above. By doing so, we can obtain the list of dashboards.
+4. Then, invoke this <a href="https://help.boldbi.com/embedded-bi/rest-api-reference/v2.0/api-reference/#operation/Items_GetItems">API</a> to get the list of dashboards accessible to the user and compare with the above permission list, and we can get the list of dashboards.
 
-    ![Read Userlist of the dashboard](/static/assets/faq/images/user-list-of-the-dashboard.png)
+    ![Read Userlist of the dashboard](/bold-bi-docs/static/assets/embedded/faq/images/user-list-of-the-dashboard.png)
 
-  The above API will return all the dashboards belonging to the user. If the group permission API returns the 'Specific Dashboard' as follows, we have to retrieve the list of item IDs with the same entity and filter out the same IDs from the result returned by the above API.
+   The above API will return all the dashboards belongs to the user. If the group permission API returns the ‘Specific Dashboard’ as follows, we have to get the list of item ids with the same entity and filter the same ids from the result returned from the above API.
 
-    ![Specific Dashboard list](/static/assets/faq/images/specific-dashboard-list.png)
+    ![Specific Dashboard list](/bold-bi-docs/static/assets/embedded/faq/images/specific-dashboard-list.png)
 
-  Once we compare both lists, we can then obtain the details of the permissions `(CanEdit/CanRead/CanDelete)` for the dashboard for the specific user belonging to the specific group.
+   Once we compared both lists, then we can get the details of the permission `(CanEdit/CanRead/CanDelete)` for the dashboard for the specific user belongs to the specific group.
 
 

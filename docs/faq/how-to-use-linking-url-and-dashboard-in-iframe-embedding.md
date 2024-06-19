@@ -7,28 +7,28 @@ documentation: ug
 ---
 
 # How to use linking URL and dashboard in iframe Embedding
-In iframe embedding, there is support for linking dashboard URLs, which allows you to open the specified dashboard in a popup window. It also supports opening any URL inside the popup using linking support.
+In iframe embedding, there is support for linking dashboard URLs, which helps you to open the specified dashboard in a popup window. Also, supporting to open any URL inside the popup using linking support.
 
 ## Please follow the steps for using Linking in Iframe
-1. In Bold BI Server, the user can edit the dashboard, select a widget, and click on the widget settings. They should then enable the Link feature, add the linked URL in the URL text box, select the `Popup` target, and add a `Title` for the popup. For further information, please refer [here](/visualizing-data/working-with-widgets/linking-urls-and-dashboards/#pop-up).
+1. In Bold BI Server, the user can edit the dashboard, select one widget and click the widget settings. Then should enable Link, add the linked URL in the URL text box, select `Popup` target and add `Title` for the popup. To learn more about this, refer [here](/cloud-bi/visualizing-data/working-with-widgets/linking-urls-and-dashboards/#pop-up).
 
-    ![EnableLinking](/static/assets/faq/images/enable_linking_propertypanel.png)
+    ![EnableLinking](/bold-bi-docs/static/assets/embedded/faq/images/enable_linking_propertypanel.png)
 
-2. Next, `publish` the changes and display the dashboard on the viewer page.
+2. Then, `Publish` the changes and render the dashboard on the viewer page.
 
-3. To render the desired dashboard in an iframe, click the `Share` option in the dashboard and select `Get Embed Code`.
+3. For rendering the desired dashboard in Iframe, click the `Share` option in the dashboard and choose `Get Embed Code`.
 
-    ![ShareOption](/static/assets/faq/images/click_share_option_dshboard.png) 
-    ![GetEmbedCode](/static/assets/faq/images/click_get_embed_code.png) 
+    ![ShareOption](/bold-bi-docs/static/assets/embedded/faq/images/click_share_option_dshboard.png) 
+    ![GetEmbedCode](/bold-bi-docs/static/assets/embedded/faq/images/click_get_embed_code.png) 
 
-4. Copy the embed URL by clicking the `copy` icon in the Embed Code dialog. Embed the copied code into your web application and then run the application.
+4. Copy the embed URL by clicking the `copy` icon from the Embed Code dialog. Embed the copied code into your web application and then run the application.
 
-    ![GetEmbedCode](/static/assets/faq/images/copy_embed_code_url.png)
+    ![GetEmbedCode](/bold-bi-docs/static/assets/embedded/faq/images/copy_embed_code_url.png)
 
-5.	Once the dashboard has been rendered in your application, click on the widget column to open the widget action context menu and select the Link option.
+5.	Once the dashboard is rendered in your application, click the widget column to open the widget action context menu and click the Link option.
 
-    ![LinkingDashboard](/static/assets/faq/images/click_linking_option_dashboard.png)
+    ![LinkingDashboard](/bold-bi-docs/static/assets/embedded/faq/images/click_linking_option_dashboard.png)
 
-6.	The linked dashboard will open in a `Popup` with a `Title` similar to the image below.
+6.	Linked dashboard will open in `Popup` with `Title` like the below image.
 
-    ![PopupDashboard](/static/assets/faq/images/get_popup_dashboard.png)
+    ![PopupDashboard](/bold-bi-docs/static/assets/embedded/faq/images/get_popup_dashboard.png)

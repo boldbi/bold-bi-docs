@@ -2,15 +2,14 @@
 layout: post
 title: Aggregating Value Columns – Embedded BI | Bold BI Learning
 description: Learn how to aggregate a value column based on an aggregation type in a widget in Bold BI Embedded dashboard.
-canonical: "/visualizing-data/working-with-widgets/aggregating-value-columns-based-on-type/"
+canonical: "/cloud-bi/visualizing-data/working-with-widgets/aggregating-value-columns-based-on-type/"
 platform: bold-bi
 documentation: ug
-
 ---
 
 # Aggregating Value Columns Based on Type
 
-Each value column configured for the widget can be aggregated individually based on the type you define. The following table illustrates the aggregation types and their respective uses.
+Each value column configured to widget can be aggregated individually based on the type you define. Following table illustrates the aggregation types and their use.
 
 <table>
 <tr>
@@ -37,6 +36,8 @@ Returns the highest value for all members.</td></tr>
 <td>
 Min</td><td>
 Returns the lowest value for all members.</td></tr>
+<tr>
+<td>
 <tr>
 <td>
 Median</td><td>

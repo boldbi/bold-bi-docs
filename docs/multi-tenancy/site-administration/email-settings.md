@@ -8,9 +8,9 @@ documentation: ug
 
 # Email Settings in User Management Server
 
-This section explains how to configure the [SMTP](https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol) details in the User Management Server in order to send emails.
+This section explains how to configure the [SMTP](https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol) details in the User Management Server to send emails. 
 
-SMTP email settings are necessary for the following operations:
+SMTP Email Settings are required to perform the following operations:
 
 **Account Activation** --- Sends user account activation email.
    
@@ -18,7 +18,7 @@ SMTP email settings are necessary for the following operations:
 	
 **Reset Password** --- Sends links to reset the password.
 
-The following SMTP details are needed to send emails from the User Management Server.
+The following SMTP details are required to send email from the User Management Server.
 
 <table>
 <tr>
@@ -60,4 +60,4 @@ Support two types of Authentications:
 </tr>
 </table>	
 	
-![Email Settings page](/static/assets/multi-tenancy/images/email-settings-page.png)
+![Email Settings page](/bold-bi-docs/static/assets/embedded/multi-tenancy/images/email-settings-page.png)

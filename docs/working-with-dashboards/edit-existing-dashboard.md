@@ -2,33 +2,33 @@
 layout: post
 title: Editing a Dashboard – Embedded BI | Bold BI Documentation
 description: Learn how to edit an existing dashboard by opening it in the WYSIWYG designer from list of dashboards in Bold BI Embedded.
-canonical: "/working-with-dashboards/edit-existing-dashboard/"
+canonical: "/cloud-bi/working-with-dashboards/edit-existing-dashboard/"
 platform: bold-bi
 documentation: ug
 ---
 # Edit Existing Dashboard
    
-   > **NOTE:**  To edit the existing dashboard, you will need permission from the administrator.
+   > **NOTE:**  You can edit the existing dashboard, if administrator gives permission for edit the dashboards.
    
-   Click on the `My Dashboards` button in the designer title pane.
+   Click `My Dashboards` button in the designer title pane. 
 
-   ![Dashboard](/static/assets/working-with-dashboards/images/mydashboard.png)
+   ![Dashboard](/bold-bi-docs/static/assets/embedded/working-with-dashboards/images/mydashboard.png)
 
-   Next, navigate to the dashboard listing page.
+   Now, navigates to dashboard listing page.
 
-   ![Listing page](/static/assets/working-with-dashboards/images/listpage.png)
+   ![Listing page](/bold-bi-docs/static/assets/embedded/working-with-dashboards/images/listpage.png)
    
    Select a dashboard from the left panel to edit in the designer.
 
-   Click on the `Edit` option from the context menu.
+   Click the highlighted icon like below
+
+   ![Menu icon](/bold-bi-docs/static/assets/embedded/working-with-dashboards/images/menuicon.png)
+
+   `Edit` option will listed in the menu list.
    
-   ![Edit option](/static/assets/working-with-dashboards/images/editoption.png#width=60%)
+   ![Edit option](/bold-bi-docs/static/assets/embedded/working-with-dashboards/images/editoption.png#width=60%)
 
-   Alternatively, you can click on the edit icon from the dashboard listing.
+   Selected Dashboard will be opened in the designer as shown below
 
-   ![Edit dashboard icon](/static/assets/working-with-dashboards/images/editdashboardicon.png#width=60%)
-
-   The selected dashboard will then be opened in the designer as shown below.
-
-   ![Edit dashboard](/static/assets/working-with-dashboards/images/editdashboard.png)
+   ![Edit dashboard](/bold-bi-docs/static/assets/embedded/working-with-dashboards/images/editdashboard.png)
        

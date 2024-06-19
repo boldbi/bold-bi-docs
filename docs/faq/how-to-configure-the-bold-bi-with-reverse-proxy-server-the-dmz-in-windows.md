@@ -2,7 +2,7 @@
 layout: post
 title: Configure a reverse proxy server in DMZ on Windows | Bold BI Docs
 description: Learn the prerequisites and steps to configure Bold BI with a reverse proxy server in the DMZ environment on a Windows server.
-canonical: "/faq/how-to-configure-bold-bi-with-reverse-proxy-server-in-dmz-environment/"
+canonical: "/cloud-bi/faq/how-to-configure-bold-bi-with-reverse-proxy-server-in-dmz-environment/"
 platform: bold-bi
 documentation: ug
 ---
@@ -22,15 +22,15 @@ You need the following prerequisites to Configure Bold BI with a reverse proxy s
 
 ## Follow the given steps to configure the Bold BI with a reverse proxy server in the DMZ in the windows server.
 
-1. You need to  [Install](/deploying-bold-bi/deploying-in-windows/installation-and-deployment/)  Bold BI on the windows server. After completing the [Application Setup](/application-startup/) create a [dashboard](/getting-started/creating-dashboard/).
+1. You need to  [Install](https://help.boldbi.com/embedded-bi/setup/deploying-in-windows/installation-and-deployment/) the Bold BI in the windows server, and after finishing the [Application Setup](https://help.boldbi.com/embedded-bi/application-startup/) create a [dashboard](https://help.boldbi.com/embedded-bi/getting-started/quick-start/).
 
 
-2. Then, you need to [Change the binding](/faq/how-to-change-binding-in-bold-bi-embedded/) from localhost to the IP address as shown below.
+2. Then need to [Change the binding](https://help.boldbi.com/embedded-bi/faq/how-to-change-binding-in-bold-bi-embedded/) from localhost to IP address as shown below.
 
-       ![Change Bindings](/static/assets/faq/images/change-binding.png)
+       ![Change Bindings](/bold-bi-docs/static/assets/embedded/faq/images/change-binding.png)
 
     
-3. You need to configure the reverse proxy server to proxy pass the Bold BI server. In this case, you are using Nginx as the reverse proxy server. Follow the provided steps to set up the proxy pass from Bold BI to the Nginx server.
+3. Need to proxy pass the Boldbi server to the reverse proxy server. Here you are considering the Nginx as a reverse proxy server. Follow the given steps to proxy pass the Bold BI to the Nginx server.
    
     1. Install [Nginx](https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-centos-8).
 
@@ -45,7 +45,7 @@ You need the following prerequisites to Configure Bold BI with a reverse proxy s
         sudo nano sites-available/default
         ~~~
 
-        ![nginx-proxy-pass](/static/assets/faq/images/nginx-proxy-pass.png)
+        ![nginx-proxy-pass](/bold-bi-docs/static/assets/embedded/faq/images/nginx-proxy-pass.png)
 
     4. You can reload the **Nginx** using the given command.
 
@@ -62,11 +62,11 @@ You need the following prerequisites to Configure Bold BI with a reverse proxy s
     6. Now, you can access the Bold BI using the reverse proxy IP inside the same network connection. 
 
    
-4. Then, set the inbound rule for the reverse proxy IP on the Bold BI server machine by following the steps below.
+4. Then, set the inbound rule for the reverse proxy IP in the Bold BI server machine by following the below steps.
 
-    1. Go to Start > Run and type `firewall.cpl`. The Windows Firewall window will open.
+    1. Go to Start > Run and type `firewall.cpl`. The Windows Firewall window opens.
 
-    2. Click on the `Advanced Settings` link on the left pane. The Windows Firewall with Advanced Security window will open.
+    2. Click on the `Advanced Settings` link on the left pane. The Windows Firewall with an Advanced Security window opens.
 
     3. Click on the `Inbound Rules` option.
 
@@ -78,17 +78,17 @@ You need the following prerequisites to Configure Bold BI with a reverse proxy s
 
     7. Select `TCP` and `specific local ports` options.
 
-        FYI: Here, you enter the port used by Bold BI on the server machine.
+        FYI: Here you enter the port used by Bold BI in the server machine.
 
-        ![specific-local-ports](/static/assets/faq/images/specific-local-ports.png)
+        ![specific-local-ports](/bold-bi-docs/static/assets/embedded/faq/images/specific-local-ports.png)
 
     8. Click next and add the reverse proxy IP address in the remote as shown.
 
         FYI: Here you enter your reverse proxy IP.
 
-        ![add-the-reverse-proxy-ip](/static/assets/faq/images/add-the-reverse-proxy-ip.png)
+        ![add-the-reverse-proxy-ip](/bold-bi-docs/static/assets/embedded/faq/images/add-the-reverse-proxy-ip.png)
 
-    9. Click next and select the option to `Allow the connection.`
+    9. Click next and select the option `Allow the connection.`
 
     10. Click next, do not change any option here, and click Next again.
 
@@ -97,13 +97,13 @@ You need the following prerequisites to Configure Bold BI with a reverse proxy s
     12. Click Finish.
 
 
-5. You need to embed the dashboards. Follow the given steps to run the embedded application on the React front-end machine.
+5. You need to embed the dashboards. Follow the given steps to run the embedded application in the react front-end machine.
 
     1. You can download the embedded sample [here](https://onpremise-demo.boldbi.com/getting-started/asp-net-core/sample.zip?_gl=1*6o0c72*_ga*NTYxNDY4NzE5LjE2NDczMjkxNDg.*_ga_SRXJZD7EME*MTY0NzM0MzA4OC4zLjAuMTY0NzM0MzA4OS4w).
 
-    2. Open the solution file in Visual Studio and set the following properties in the `EmbedProperties.cs` file as instructed.
+    2. Open the solution file in visual studio and you need to set the following properties in the `EmbedProperties.cs` file as follows.
 
-        ![set-embed-properties-vs](/static/assets/faq/images/set-embed-properties-vs.png)
+        ![set-embed-properties-vs](/bold-bi-docs/static/assets/embedded/faq/images/set-embed-properties-vs.png)
 
         <meta charset="utf-8"/>
             <table>
@@ -129,23 +129,23 @@ You need the following prerequisites to Configure Bold BI with a reverse proxy s
     
         FYI: Here our reverse proxy IP is 10.0.0.31 and the site name is site1.
         
-        ![set-embed-properties](/static/assets/faq/images/set-embed-properties.png)
+        ![set-embed-properties](/bold-bi-docs/static/assets/embedded/faq/images/set-embed-properties.png)
 
-    3. You can obtain your [Embed Secret key](/site-administration/embed-settings/) from the administrator setting section.
+    3. You can get your [Embed Secret key](https://help.boldbi.com/embedded-bi/site-administration/embed-settings/) from the administrator setting section.
 
-	4. Now, your application is ready to run. Before running the application, you need to change the `applicationUrl` to your machine's IP address with the port number in the `launchSettings.json` file as illustrated.
+	4. Now, your application is ready to run, before running the application need to change the `applicationUrl` with your machine IP with the port number in the `lanchSetting.json` file as shown.
 
         FYI: Here our machine IP is 10.0.0.11:8082.
 
-        ![change-applicationurl](/static/assets/faq/images/change-applicationurl.png)
+        ![change-applicationurl](/bold-bi-docs/static/assets/embedded/faq/images/change-applicationurl.png)
 
-	5. To view the output of the application, run it in your default web browser as shown below.
+	5. Run the application you can see the output in your default web browser shown below.
 
-        ![embed-application-output](/static/assets/faq/images/embed-application-output.png)
+        ![embed-application-output](/bold-bi-docs/static/assets/embedded/faq/images/embed-application-output.png)
 
-         > **NOTE:** If you are experiencing the following issue while running the application using your machine's IP address, please open the command prompt in administrator mode and execute the provided commands.
+         > **NOTE:** If you are facing the below issue while running the application with your machine IP, please open the command prompt in administered mode and run the given commands.
 
-        ![iis-express-error](/static/assets/faq/images/iis-express-error.png)
+        ![iis-express-error](/bold-bi-docs/static/assets/embedded/faq/images/iis-express-error.png)
 
         ~~~shell
         netsh http add urlacl url=http://{yourlocalhostIP:port}/ user=everyone
@@ -154,9 +154,9 @@ You need the following prerequisites to Configure Bold BI with a reverse proxy s
         ~~~
 
         
-6. You need to set the inbound rule for the React front end machine IP on the reverse proxy server by following the steps.
+6. You need to set the inbound rule for the react front end machine IP in the reverse proxy server by following the steps.
 
-	1. Run the following command with the IP address of the React front-end machine.
+	1. Run the following command with the react front end machine IP.
 
         ~~~shell
         sudo ufw allow from {react front end IP}
@@ -168,13 +168,13 @@ You need the following prerequisites to Configure Bold BI with a reverse proxy s
         sudo ufw status numbered
         ~~~
 
-        ![add-inbound-rule](/static/assets/faq/images/add-inbound-rule.png)
+        ![add-inbound-rule](/bold-bi-docs/static/assets/embedded/faq/images/add-inbound-rule.png)
 
-        > **NOTE:** Ensure that the React front-end machine's IP only accesses the reverse proxy machine.
+        > **NOTE:** Make sure the react front end machine IP only accesses the reverse proxy machine.
 
-    3. Finally, you can expose the React front-end server to the internet. In our case, we are exposing the private URL http://10.0.0.11:8082/ to the public URL http://182.72.161.150:58951/ as shown below.
+    3. Finally, you can expose react front-end server to the internet. In our case, we are exposing the private URL http://10.0.0.11:8082/ to Public URL http://182.72.161.150:58951/ as shown below.
 
-        ![expose-server-to-internet](/static/assets/faq/images/expose-server-to-internet.png)
+        ![expose-server-to-internet](/bold-bi-docs/static/assets/embedded/faq/images/expose-server-to-internet.png)
 
 
 

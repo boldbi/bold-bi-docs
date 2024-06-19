@@ -2,91 +2,72 @@
 layout: post
 title: Linking Dashboards and URLs – Embedded BI | Bold BI Learning
 description: Learn how to link dashboard and URL to a widget and show it as drill-down report in Bold BI Embedded dashboard.
-canonical: "/visualizing-data/working-with-widgets/linking-urls-and-dashboards/"
+canonical: "/cloud-bi/visualizing-data/working-with-widgets/linking-urls-and-dashboards/"
 platform: bold-bi
 documentation: ug
-
 ---
 
 # Linking URLs in dashboards
 
 URL linking allows you to link the dashboard with valid web URLs. 
 
-You can link URLs to a visualization widget by enabling the `Enable Link` property. 
+You can link URLs to a visualization widget by enabling the `Enable Link` property.
 
 The `Enable Link` option is available in the `Properties` tab of the widgets.
 
-![Link](/static/assets/visualizing-data/working-with-widgets/images/Link.PNG) 
+![Link](/bold-bi-docs/static/assets/embedded/visualizing-data/working-with-widgets/images/Link.PNG) 
 
-By default, the `Enable Link` property will remain unchecked.
+By default `Enable Link` property will remain unchecked.
 
-![Unchecked link property](/static/assets/visualizing-data/working-with-widgets/images/link1.PNG)
+![Unchecked link property](/bold-bi-docs/static/assets/embedded/visualizing-data/working-with-widgets/images/link1.PNG)
 
-To enable linking, select the `Enable Link` checkbox.
+To enable linking select the `Enable Link` checkbox.
 
-![Checked link property](/static/assets/visualizing-data/working-with-widgets/images/Link1a.PNG)
+![Checked link property](/bold-bi-docs/static/assets/embedded/visualizing-data/working-with-widgets/images/Link1a.PNG)
 
-Enter the Web URL in the `URL` text box. If you click on the column names listed in the `Append Column` name list, it will be appended to the URL entered in the URL text box.
+Enter the Web URL in the `URL` text box. If you click on the column names listed in the `Append Column` name list , it will be appended to the URL entered in the URL text box.
 
-![URL](/static/assets/visualizing-data/working-with-widgets/images/Linking06.PNG)
+![URL](/bold-bi-docs/static/assets/embedded/visualizing-data/working-with-widgets/images/Linking06.PNG)
 
-For the `Grid widget`, you can get a `URL` based on `Row` and `Column`.
+For `Grid widget`, you can get `URL` based on `Row` and `Column`.
 
 ### Row
 
-Enter the Web URL in the `URL` text box. If you click on the column names listed in the `Append Column` name list, it will be appended to the URL entered in the URL text box.
+Enter the Web URL in the `URL` text box. If you click on the column names listed in the
+`Append Column` name list , it will be appended to the URL entered in the URL text box.
 
-![Linking for grid](/static/assets/visualizing-data/working-with-widgets/images/Linking07.PNG)
+![Linking for grid](/bold-bi-docs/static/assets/embedded/visualizing-data/working-with-widgets/images/Linking07.PNG)
 
-You can preview the linked URL using the `URL preview` option. If you click the preview URL link, it will be opened in a browser. 
+You can preview the linked URL using the `URL preview` option. If you click the preview URL link,it will be opened in a browser.
 
 ### Column
 
 You can select the column.
 
-![Select column](/static/assets/visualizing-data/working-with-widgets/images/Linking08.PNG)
+![Select column](/bold-bi-docs/static/assets/embedded/visualizing-data/working-with-widgets/images/Linking08.PNG)
 
- Choose the field from the `Choose Field` property listed in the combo box.
+ Choose the field from `Choose Field` property listed in the combo box.
 
-![Choose field property](/static/assets/visualizing-data/working-with-widgets/images/Linking09.PNG)
+![Choose field property](/bold-bi-docs/static/assets/embedded/visualizing-data/working-with-widgets/images/Linking09.PNG)
 
 Add the web `Url` in the URL text box. 
 
-![Linking URL](/static/assets/visualizing-data/working-with-widgets/images/LinkingURL.PNG)
+![Linking URL](/bold-bi-docs/static/assets/embedded/visualizing-data/working-with-widgets/images/LinkingURL.PNG)
 
-![Add URL](/static/assets/visualizing-data/working-with-widgets/images/LinkingURL1.PNG)
+![Add URL](/bold-bi-docs/static/assets/embedded/visualizing-data/working-with-widgets/images/LinkingURL1.PNG)
 
-Click the Add button shown below to add the field.
+Click Add button shown as below to add the field.
 
-![Add button](/static/assets/visualizing-data/working-with-widgets/images/Linkingadd.PNG)
+![Add button](/bold-bi-docs/static/assets/embedded/visualizing-data/working-with-widgets/images/Linkingadd.PNG)
 
-Now, the field will be added with the URL.
+Now, the field will be added with URL.
 
-![Field added](/static/assets/visualizing-data/working-with-widgets/images/Linking10.PNG)
-
-## Dashboard Parameter support in URL Linking
-URL Linking allows you to use both the [Dashboard Parameter](/working-with-data-sources/dashboard-parameter/configuring-dashboard-parameters/) and [Default Parameter](/working-with-data-sources/dashboard-parameter/change-the-dashboard-parameter-value-in-url/#default-parameters). You can create a dynamic link based on the current domain, dashboard, and category by referring to the info icon placed at the right side of the URL text box.
-
-**Syntax** : `@{{:CURRENT.SITEURL}}/dashboards?dashboardName={dashboard_name}&categoryName={category_name}`
-
-  - `@{{:CURRENT.SITEURL}}` - This `Default parameter` will automatically populate the URL of the current site.
-  - `{dashboard_name}` - Specify the name of the dashboard you want to link.
-  - `{category_name}` - Specify the name of the category under which the dashboard has been published.
-
-For Example, the dynamic URL can be created as `@{{:CURRENT.SITEURL}}/dashboards?dashboardName=Sales Analysis Dashboard&categoryName=Sales`.
-
-Refer the URL info as shown in following image.
-
-![Dynamic URL](/static/assets/visualizing-data/working-with-widgets/images/LinkingURLInfo.png)
-
-Based on the above syntax, create the dynamic linking URL using the `Default parameter` and `Dashboard Parameter` as shown in the image.
-
-![Dashboard Parameter](/static/assets/visualizing-data/working-with-widgets/images/LinkingParametersInURL.png)
+![Field added](/bold-bi-docs/static/assets/embedded/visualizing-data/working-with-widgets/images/Linking10.PNG)
 
 ## Advanced Url Linking
 
 The linked url's target can be changed with the help of a drop down as shown in the following image.
-![Advanced target](/static/assets/visualizing-data/working-with-widgets/images/LinkingAdvancedTarget.png)
+![Advanced target](/bold-bi-docs/static/assets/embedded/visualizing-data/working-with-widgets/images/LinkingAdvancedTarget.png)
 
 The target can be changed from the `New tab`, `Same page`, `Current frame`, `Parent frame`, `Pop up` and  `New Window`.
 <table>
@@ -113,33 +94,33 @@ The target can be changed from the `New tab`, `Same page`, `Current frame`, `Par
 </table>
 
 ### Pop up
-This target type helps you to open the linked document inside a pop-up window. The title of the same pop-up window can also be set in the input box provided as shown in the following image.
+This target type helps you to open the linked document inside a pop up window. The title of the same pop window can also be set in the input box provided as shown in the following image.
 
-![Advanced title](/static/assets/visualizing-data/working-with-widgets/images/LinkingAdvancedTitle.png)
+![Advanced title](/bold-bi-docs/static/assets/embedded/visualizing-data/working-with-widgets/images/LinkingAdvancedTitle.png)
 
-When you open the linked document, it will appear as shown in the following image.
+On opening the linked document, it will open as shown in following image.
 
-![Advanced popup](/static/assets/visualizing-data/working-with-widgets/images/LinkingAdvancedPopup.png)
+![Advanced popup](/bold-bi-docs/static/assets/embedded/visualizing-data/working-with-widgets/images/LinkingAdvancedPopup.png)
 
 ### New Window
 This target type helps you to open the linked document in a separate browser window. The specific `Height` and `Width` of the required window can be updated as shown in the following image.
 
-![Advanced dimensions](/static/assets/visualizing-data/working-with-widgets/images/LinkingAdvancedDimensions.png)
+![Advanced dimensions](/bold-bi-docs/static/assets/embedded/visualizing-data/working-with-widgets/images/LinkingAdvancedDimensions.png)
 
-When you open the linked document with the above dimensions, it will appear as shown in the following image.
+On opening the linked document with the above dimensions, it will open as show in in the following image.
 
-![Advanced window](/static/assets/visualizing-data/working-with-widgets/images/LinkingAdvancedWindow.png)
+![Advanced window](/bold-bi-docs/static/assets/embedded/visualizing-data/working-with-widgets/images/LinkingAdvancedWindow.png)
 
 ## Encryption query Parameter
 
-This property, `Encrypt Parameters`, allows you to encrypt the filter parameter that will be used in the URL text area under the `Link` category in the `Properties` tab of the widget.
+This property `Encrypt Parameters` allows you to encrypt the filter parameter that will be used in the URL text area under `Link` category in the `Properties` tab of the widget.
 
-To enable this property, select the `Encrypt Parameters` checkbox as shown in the following image.
+To enable this property, select `Encrypt Parameters` checkbox in the following image.
 
-![Advanced window](/static/assets/visualizing-data/working-with-widgets/images/encryption-parameter.png#max-width=50%)
+![Advanced window](/bold-bi-docs/static/assets/embedded/visualizing-data/working-with-widgets/images/encryption-parameter.png#max-width=50%)
 
-Preview the dashboard, then click the `Link` option from the widget. After opening the linked dashboard, it will appear as shown in the following image.
+Preview the dashboard, then click `Link` option from widget. After opening the linked dashboard, it will open as shown in following image.
 
-![Advanced window](/static/assets/visualizing-data/working-with-widgets/images/linking-encryption.png#max-width=100%)
+![Advanced window](/bold-bi-docs/static/assets/embedded/visualizing-data/working-with-widgets/images/linking-encryption.png#max-width=100%)
 
-![Advanced window](/static/assets/visualizing-data/working-with-widgets/images/encryption-result.png#max-width=100%)
+![Advanced window](/bold-bi-docs/static/assets/embedded/visualizing-data/working-with-widgets/images/encryption-result.png#max-width=100%)

@@ -8,13 +8,13 @@ documentation: ug
 
 # How to restrict embedding Bold BI site using an iFrame?
 
-In order to prevent embedding a Bold BI site into another application using an iFrame, the X-Frame-Options must be set to Deny in the response header.
+To restrict embedding Bold BI site into another application using an iFrame, we have to set the X-Frame-Options as Deny in the response header.
 
- Currently, the [X-Frame-Options](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options) Header is not added in the Bold BI Application as [iFrame based embedding](/embedding-options/iframe-embedding/embedding-a-dashboard/) is one of the types of embedding solutions in our [Embedded BI](/overview/) to embed the dashboards into another application.
+At present [X-Frame-Options](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options) Header is not added in the Bold BI Application as [iFrame based embedding](/embedded-bi/iframe-based/dashboard-view-mode/) is one of the types of embedding solutions in our [Embedded BI](/embedded-bi/overview/) to embed the dashboards into another application.
 
-Follow the steps below to add the X-Frame-Options in the response headers of the Bold BI server.
+Follow the below step to add the X-Frame-Options in response headers of Bold BI server.
 
-1. Open the Web.config file and add an X-Frame-Options header as shown below within the `system.webServer` module.
+1. Open the Web.config file and add an X-Frame-Options header like below with in `system.webServer` module,
 
 ```js
     <system.webServer>
@@ -29,7 +29,7 @@ Follow the steps below to add the X-Frame-Options in the response headers of the
 
 ## Web.config Directories
 
-Since we have various distributed applications in Bold BI, we have to set the X-Frame-Options response header in the deployed applications below.
+Since we have various distributed applications in Bold BI, We have to set the X-Frame-Options response header in the below deployed applications.
 
 > **NOTE:** By default, the Bold BI is deployed in  "C:\BoldServices" for Windows.
 

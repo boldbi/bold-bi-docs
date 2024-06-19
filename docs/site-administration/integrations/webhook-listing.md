@@ -8,10 +8,10 @@ documentation: ug
 
 # Webhook Listing - Manage Webhooks
 
-This section lists the webhooks that are created by all users on the Bold BI site.
+This section lists the webhooks which are created by all the users on the Bold BI site. 
 
-The system administrator and users with permission to access the integration page can edit, delete, and deactivate all webhooks.
+The system administrator and the users who have permission to access the integration page can edit, delete, and deactivate all webhooks.
 
-![Webhook Listing](/static/assets/site-administration/images/webhook-listing.png#width=60%)
+![Webhook Listing](/bold-bi-docs/static/assets/embedded/site-administration/images/webhook-listing.png#width=60%)
 
-Please visit the [Manage Webhook](/manage-webhooks/) page for more information on how to edit, delete, and deactivate webhooks.
+Please visit [Manage Webhook](/embedded-bi/webhook/) for more information on how to edit, delete, and deactivate the webhooks.

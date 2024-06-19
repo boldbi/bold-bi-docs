@@ -8,10 +8,8 @@ documentation: ug
 
 # Email Settings
 
-The email settings page is divided into two sections: `Settings`, where you can configure your SMTP settings, and `Logs`, where you can track the status of your email delivery from the Bold BI application.
+The email settings page is divided into two sections: `Settings,` where you can configure your SMTP settings, and `Logs,` where you can track the status of your email delivery from the Bold BI application.
 
-[Configuration](/site-administration/email-settings/configuration/)
+[Email Settings Configuration](/embedded-bi/site-administration/email-settings/email-settings-configuration/)
 
-[Email Activity Logs](/site-administration/email-settings/email-activity-logs/)
-
-> **NOTE:** This email service configuration is applicable only for On-Premises Deployment.
+[Email Activity Logs](/embedded-bi/site-administration/email-settings/email-activity-logs/)

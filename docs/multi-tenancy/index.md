@@ -4,59 +4,59 @@ title: Multitenancy – Embedded BI | Bold BI Documentation
 description: Explore the multi-tenant support in Bold BI Enterprise that lets you deploy multiple tenants in same machine isolated from each other.
 platform: bold-bi
 documentation: ug
-
 ---
 
 # Overview 	
 
-Bold BI Enterprise Edition offers multi-tenant support, allowing administrators to deploy multiple tenants and manage their dashboards. Each tenant has its own database for managing dashboards and resources, isolating them from other tenants under a single Bold BI deployment.    
+Bold BI Enterprise Edition has multi-tenant support, which allows administrator to deploy multiple tenants and manage their dashboards. Each tenant has its own database for managing its dashboards and resources so they are isolated from each other tenant under single Bold BI deployment.    
 
 ## Architecture
 
-The architecture of the Bold BI multi-tenant solution is illustrated in the image provided. Each tenant is deployed with its own database and resources, ensuring data isolation between tenants.
+Architecture of the Bold BI multi-tenant solution is given in the following image. Each tenant has deployed with its own database and resource, which ensures the data isolation of one tenant from others.
 
-![MultiTenant Architecture](/static/assets/multi-tenancy/images/multi-tenant-architect.png)
+![MultiTenant Architecture](/bold-bi-docs/static/assets/embedded/multi-tenancy/images/multi-tenant-architect.png)
 
-To set up the multi-tenant solution, install and deploy the Bold BI Enterprise Edition, which will deploy the first tenant with the Identity Provider (IDP) application in an isolated database. Subsequently, other tenants can be deployed with their own databases.
+To setup multi-tenant solution, install and deploy the Bold BI Enterprise Edition, which will deploy the first tenant with Identity Provider (IDP) application in isolated database. Then, you can deploy many tenants with their own database. 
 
-The Identity Provider (IDP) application is a core component of the multi-tenant solution, managing tenant and user identity.
+The Identity Provider (IDP) application is a core application of multi-tenant solution, which manages the tenant and its user identity.
 
-> **NOTE:**  IDP can share the same database as the first BI tenant, but not with the two tenant applications.
+> **NOTE:**  IDP and first BI tenant can share the same database, but you cannot share same database between the two tenant applications.
 
 ## Security
 
-Bold BI's multi-tenant product provides security for both the application and data.
+Bold BI multi-tenant product provides the security for both application and data.
 
 ### Application security
 
-Every Bold BI product installation will generate unique private keys on the customer's machine. These private keys will be used to encrypt and store sensitive data such as passwords and connection strings.
+Every Bold BI product installation will generate unique private keys in customer machine. These private keys will be used to encrypt and store the sensitive data like password and connection string.
 
 ### Data security
 
-Each tenant user can only log in to their own tenant and access their resources. Each tenant has its own database and resources, ensuring that one tenant's data is not shared with another tenant.
+Every tenant user can only login to their tenant and access the resource. Each tenant has been deployed with its own database and resource, which ensures that one tenant data is not shared with other tenant.
 
-Users belonging to the same tenant can only see users from that same tenant and share dashboards with those users. Users must have the proper permissions to view and access the dashboards and resources created by other users within the same tenant. 
+Also, users belong to one tenant can only see the users belong to the same tenant and share a dashboard to that tenant users. Users must have permissions to view and access the dashboard and resources created by other user on same tenant.  
 
 ## Adding new tenant
 
-To deploy a new tenant in Bold BI Enterprise application, click the `Create Site` button on the site management page. The new tenant deployment will use its own database and resource storage that is completely separate from other tenants. Learn more about creating a new tenant [here](/multi-tenancy/create-new-site/).
+You can deploy new tenant in Bold BI Enterprise application by clicking the `Create Site` button in site management page. New tenant deployment will use own database and resource storage that is completely separated from other tenant. Learn more about creating new tenant [here](/embedded-bi/multi-tenancy/create-new-site/).
 
-![Create Site](/static/assets/multi-tenancy/images/create-button.png)
+![Create Site](/bold-bi-docs/static/assets/embedded/multi-tenancy/images/create-button.png)
 
 ## Add or invite users
 
-Users can only be added, edited, and deleted by users belonging to the System Administrator group. You can invite a user to your tenant from another tenant by adding the user with the same email address as an existing user. Additionally, an invitation email can be sent to that existing tenant user. The invited user can access resources in both tenants after the required permissions (Read/Write/Delete) for that resource are granted.
+Users can only be added, edited, and deleted by the users belonging to the System Administrator group. You can invite the user to your tenant from other tenant by adding the user with same email address of existing user. In addition, user inviting mail can be send to that existing tenant user. Invited user can access resource in both tenants after the required permission (Read/Write/Delete) for that resource is granted.  
 
-Learn more about adding a new user to a tenant [here](/managing-resources/manage-users/).   
+You can learn more about adding a new user to tenant [here](/embedded-bi/managing-resources/manage-users/).   
 
-> **NOTE:**  You can invite a user to a certain tenant from another tenant. 
+> **NOTE:**  You can invite the user to certain tenant from other tenant.  
 
 ## Sharing the dashboard to tenant user
 
 You can share the dashboard to user in same tenant or other tenant by two options:
-1.	Within the same tenant, you can share the dashboard with other users in the same tenant by granting read permission to that particular dashboard. Learn more about [Manage Permissions](/managing-resources/manage-permissions/) here. 
+1.	Within same tenant, you can share the dashboard to other user in same tenant by granting read permission to the particular dashboard. You can learn more about
+[Manage Permissions](/embedded-bi/working-with-dashboards/share-dashboards/manage-permissions/) here. 
 
-2.	If you want to share the dashboard with users from another tenant, make the dashboard public and share the dashboard link URL with users from the other tenant. Learn more [Share Dashboard](/working-with-dashboards/share-dashboards/public-dashboards/) here.
+2.	If you want to share the dashboard between other tenant by making the dashboard as public and share the dashboard link URL to users of other tenant. You can learn more about [Share Dashboard](/embedded-bi/working-with-dashboards/share-dashboards/public-dashboards/) here.
  
 ## Embedded BI
-Bold BI's Multi-tenant solution provides the option to embed resources (dashboards and data sources) within other applications. Learn more about the embedding solution [here](/overview/).
+Bold BI Multi-tenant solution provides option to embed resources (dashboard and data sources) inside the other applications. You can learn more about the embedding solution [here](/embedded-bi/overview/).

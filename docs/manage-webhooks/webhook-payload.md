@@ -80,4 +80,4 @@ Here is a list of payload property details used in `Time-Driven` and `Alert-Driv
 </tr>
 </table> 
 
-> **NOTE:**  The `Alert Info` payload property is only used in data alerts.
+> **NOTE:**  The `Alert Info` payload property is only used in data alert.

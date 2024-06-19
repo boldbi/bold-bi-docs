@@ -2,13 +2,13 @@
 layout: post
 title: Change the username on Linux - Embedded BI | Bold BI Docs
 description: Learn how to change the username after installation of embedded Bold BI, an analytical software on Linux machine using the instructions described in this page.
-canonical: "/faq/Change-the-user-after-installing-Bold-BI-on-Linux/"
+canonical: "/cloud-bi/faq/Change-the-user-after-installing-Bold-BI-on-Linux/"
 platform: bold-bi
 documentation: ug
 ---
 
 # How to Change the user after installing Bold Bi On Linux?
-1. To edit the service of Bold BI apps, use the following command:
+1. Edit the service of Bold BI apps using following command.
     
     `systemctl edit --full <boldbi-service-name>`
  
@@ -23,19 +23,19 @@ documentation: ug
  
 2. Change the username, you want to run your application in the user value and save the service file.
 
-    ![Change User After Installation](/static/assets/faq/images/change-user-after-installation.png)
+    ![Change User After Installation](/bold-bi-docs/static/assets/embedded/faq/images/change-user-after-installation.png)
 
 3. You can also change the user in the service files by running the following command. 
 
     `find "/etc/systemd/system/" -type f -name "*.service" -print0 | xargs -0 sed -i"s|$existing_user|$user_to_replace|g"`
 
-4. Check and provide read, write, or owner permissions for the Bold BI installed directory `(/var/www/boldbi-embedded)` to the newly updated user.
+4. Check and provide read and write or owner permission for the Bold BI installed directory `(/var/www/boldbi-embedded)` to the newly updated user.
  
 5. Run the following command. 
 
     `sudo systemctl daemon-reload`
 
-6. Restart the services by using the following command. 
+6. Restart the services using the following command. 
 
     `systemctl restart bold-*` 
 

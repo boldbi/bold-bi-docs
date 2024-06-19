@@ -8,10 +8,8 @@ documentation: ug
 
 # Data Process Settings
 
-This section explains the data process-related settings. The settings page is divided into two sections as follows:
+This section explains the data process-related settings, and this settings page is divided into two sections as follows.
 
-[Data Store Configuration](/site-administration/data-process-settings/datastore-settings/)
+[Data Store Configuration](/embedded-bi/site-administration/data-process-settings/datastore-settings/)
 
-[Data Cache Configuration](/site-administration/data-process-settings/data-cache-settings/)
-
-> **NOTE:** This feature is available in On-Premises Deployment but not in Syncfusion Managed Cloud Server.
+[Data Cache Configuration](/embedded-bi/site-administration/data-process-settings/data-cache-settings/)

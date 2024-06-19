@@ -5,11 +5,12 @@ var { platformOrder } = require('./config.js');
 const path = require('path');
 const config = JSON.parse(fs.readFileSync(path.resolve('./config.json'), 'utf8'));
 var argv = require('yargs').argv;
-var pathNames=['overview','deploying-bold-bi','application-startup',
-'getting-started','embedding-options',
-'working-with-data-sources','visualizing-data',
-'working-with-dashboards','security-configuration','site-administration','managing-resources', 'resource-migration',
-'manage-webhooks', 'localization', 'white-labeling-in-bold-bi', 'multi-tenancy','responsive-layout','mobile-app','server-api-reference','utilities','faq'];
+var pathNames=['overview','setup','application-startup',
+'getting-started','javascript-based', 'iframe-based',
+'working-with-data-source','visualizing-data', 'working-with-dashboards','multi-tenancy', 'oauth-configuration',
+'security', 'admin-utility', 'site-administration','managing-resources', 'manage-permissions', 'rebranding', 'migration-utility',
+'localization', 'user-interface-customization', 'data-security-configuration','security-configuration', 'manage-webhooks', 
+'accessing-through-mobile-app','white-labeling','rest-api-reference', 'responsive-visualizations', 'faq'];
 const isHtml = 'html';
 function generateToc() {
     let Files = glob.sync('./docs/summary.json');

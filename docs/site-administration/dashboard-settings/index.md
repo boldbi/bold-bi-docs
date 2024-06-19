@@ -8,20 +8,18 @@ documentation: ug
 
 # Managing Dashboard Settings
 
-This section explains how to manage dashboard settings such as auto-save filters, default views, theming, and usage analytics. It also covers how to deploy dashboards and make them public in Bold BI Embedded.
+This section explains how to manage dashboard settings like auto-save filter, default views, theming, and usage analytics, deployment dashboards, and also to make dashboard as public in the Bold BI Embedded.
 
-You can explore the dashboard settings in detail here:
+You can explore the dashboard settings in detail here,
 
-[Public Dashboards](/site-administration/dashboard-settings/public-dashboards/)
+[Public Dashboards](/embedded-bi/site-administration/dashboard-settings/public-dashboards/)
 
-[Auto Save Filter](/site-administration/dashboard-settings/auto-save-filter/)
+[Auto Save Filter](/embedded-bi/site-administration/dashboard-settings/auto-save-filter/)
 
-[Default Views](/site-administration/dashboard-settings/default-views/)
+[Default Views](/embedded-bi/site-administration/dashboard-settings/default-views/)
 
-[Theming](/site-administration/dashboard-settings/enable-or-disable-dashboard-theme/)
+[Theming](/embedded-bi/site-administration/dashboard-settings/enable-or-disable-dashboard-theme/)
 
-[Usage Analytics](/site-administration/dashboard-settings/usage-analytics/)
+[Usage Analytics](/embedded-bi/site-administration/dashboard-settings/usage-analytics/)
 
-[Deployment Dashboards](/site-administration/dashboard-settings/deployment-dashboard/)
-
-[Lock Resource Synchronization](/site-administration/dashboard-settings/lock-resource-synchronization/)
+[Deployment Dashboards](/embedded-bi/site-administration/dashboard-settings/deployment-dashboard/)

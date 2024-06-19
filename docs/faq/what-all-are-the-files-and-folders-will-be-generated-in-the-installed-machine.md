@@ -8,13 +8,13 @@ documentation: ug
 
 # What are the resources will be generated in the installed machine?
 ## Resources
-Dashboards, data sources, and widgets added in the Bold BI application are maintained here.
+Dashboards, Data Sources, Widgets that are added in the Bold BI application are maintained here.
 
 ## Scheduler Service
-Exported dashboards to be emailed and schedule configurations are maintained here.
+Exported Dashboards that are to be emailed and schedule configuration are maintained here.
 
 ## Content
-This folder contains profile pictures and application images.
+This folder holds profile pictures and application images.
 
 ## Logs
 You can log errors and debug information from the Bold BI application for troubleshooting.

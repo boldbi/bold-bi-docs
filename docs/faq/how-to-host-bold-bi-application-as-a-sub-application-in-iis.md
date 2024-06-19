@@ -8,27 +8,27 @@ documentation: ug
 
 # How to host Bold BI Application as a Sub Application in IIS
 
-The Bold BI Application can be hosted as a sub-application in IIS by following the steps below.
+Bold BI Application can be hosted as sub application in IIS by following the below steps.
 
 ## Steps to Create Application Pools for Bold BI as Sub Application inside IIS
 
-Each application in Bold BI will run on a separate application pool. To create an application pool, follow these steps:
+Each application in Bold BI will be run on a different application pool. To create an application pool, follow these steps:
 
-1. Click on `Application Pools` and then right-click to select `Add Application Pool`.
+1. Click `Application Pools` and then right-click to select `Add Application Pool`.
 
-   ![Add Application Pool](/static/assets/faq/images/add-application-pool.png)
+   ![Add Application Pool](/bold-bi-docs/static/assets/embedded/faq/images/add-application-pool.png)
 
-2. Name the application pool and then click `OK`.
+2. Name the application pool and click `OK`.
 
-   ![Add Application Pool](/static/assets/faq/images/name-application-pool.png#width=55%)
+   ![Add Application Pool](/bold-bi-docs/static/assets/embedded/faq/images/name-application-pool.png#width=55%)
 
 3. Right-click the newly created application pool and then select `Advanced Settings`.
 
-   ![Application Pool Advanced Settings](/static/assets/faq/images/application-pool-advanced-settings.png#width=55%)
+   ![Application Pool Advanced Settings](/bold-bi-docs/static/assets/embedded/faq/images/application-pool-advanced-settings.png#width=55%)
 
 4. Need to change the application pool type as `localSystem` as shown in the following image.
 
-   ![Applicaion Pool Local System](/static/assets/faq/images/application-pool-local-system.png#width=55%)
+   ![Applicaion Pool Local System](/bold-bi-docs/static/assets/embedded/faq/images/application-pool-local-system.png#width=55%)
 
 You need to repeat the same procedure for creating application pools for the following Bold BI sub-applications:
 
@@ -45,25 +45,25 @@ You need to repeat the same procedure for creating application pools for the fol
 
 Follow these steps to create a Bold BI sub-applications:
 
-1. Right-click on the required application hosted in IIS, under which Bold BI will be running as a sub-application, and select `Add Application` as shown in the following image.
+1. Right-click the required application hosted in IIS, under which Bold BI will be running as sub-application, and select `Add Application` as shown in the following image.
 
-   ![Add new Application](/static/assets/faq/images/add-new-application.png#width=65%)
+   ![Add new Application](/bold-bi-docs/static/assets/embedded/faq/images/add-new-application.png#width=65%)
 
-2. Fill out the following details and then click `Ok` as shown in the image below.
+2. Fill the following details and click `Ok` as shown in the following image.
 
-   * **Alias name** - Enter the name you would like to use as an alias for the domain.
+   * **Alias name** - Enter the name that you want to use as an alias for the domain.
 
    * **Application pool** - Application Pools are logical groupings of web applications that will execute in a common process.
 
-   * **Physical path** - In the Physical Path box, click `Browse` to navigate the file system and locate the IDP - Web from the Bold BI deployed location.
+   * **Physical path** - In the Physical path box, click `Browse` to navigate the file system to find the IDP - Web from Bold BI deployed location.
 
-    ![Saved new Application](/static/assets/faq/images/new-application-saved.png#width=65%)
+    ![Saved new Application](/bold-bi-docs/static/assets/embedded/faq/images/new-application-saved.png#width=65%)
 
 > **NOTE:** 
 > * `Alias` name should be in lowercase.
 > * By default, the Bold BI is deployed in "C:\BoldServices" location for Windows.
 
-3. Repeat the same procedure for the sub-application of Bold BI as given in the table below,
+3. Repeat the same procedure for sub application of Bold BI given in below table,
 
 | Application Name     | Under Sub Application      | Application Pool |           Physical Path                      |
 |-------------------   |-----------------------     |------------------|-------------------------------               |
@@ -76,26 +76,24 @@ Follow these steps to create a Bold BI sub-applications:
 | ums                  |  bold        | SubApp-BoldUMS       | **`{Deployed Location}`**\idp\ums                      |
 | windowsauthentication|  bold        | SubApp-BoldWinAuth   | **`{Deployed Location}`**\idp\windowsauthentication    |
 
-4. Ensure that the **BI** application has sub-applications, as shown in the following image.
+4. Ensure that **BI** application has sub-applications, as shown in the following image.
 
-   ![Application Under BI](/static/assets/faq/images/application-under-bi.png#width=45%)
+   ![Application Under BI](/bold-bi-docs/static/assets/embedded/faq/images/application-under-bi.png#width=45%)
 
-5. Finally, the sub-application structure has been successfully created, as shown in the following image.
+5. Finally, sub-application structure is created successfully, as shown in the following image.
 
-   ![final-structure](/static/assets/faq/images/final-sub-application.png#width=45%)
+   ![final-structure](/bold-bi-docs/static/assets/embedded/faq/images/final-sub-application.png#width=45%)
 
 ## Configure Bold BI to run as the sub-application
 
-1. Need to update the binding values in the configuration files at the deployed location.
+1. Need to update the binding values in the following configuration files in deployed location.
 
-2. Update the `Idp`, `Bi`, `BiDesigner`, and `Reports` values in the file located at.`{Deployed Location}\app_data\configuration\config.json`.
+2. Update the `Idp`, `Bi`, `BiDesigner`, and `Reports` values in the following file location.`{Deployed Location}\app_data\configuration\config.xml`.
 
-   >**Note:** Starting from version 6.19.14, use the config.json and config.xml for versions that came before this one.
+  ![Config File Change](/bold-bi-docs/static/assets/embedded/faq/images/config-file-change.png)
 
-   ![Config File Change](/static/assets/faq/images/config-file-change.png)
+3. Update the binding values in `product.json` file in following location. `{Deployed Location}\app_data\configuration\product.json`.
 
-3. Update the binding values in the `product.json` file located at the following location: `{Deployed Location}\app_data\configuration\product.json`.
+  ![product File Change](/bold-bi-docs/static/assets/embedded/faq/images/product-file-change.png#width=65%)
 
-   ![product File Change](/static/assets/faq/images/product-file-change.png#width=65%)
-
-> **IMPORTANT:**  Restart your site once all of the above steps have been completed.
+> **IMPORTANT:**  Restart your site once all the above steps are completed.

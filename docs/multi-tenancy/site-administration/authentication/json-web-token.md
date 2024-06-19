@@ -8,15 +8,15 @@ documentation: ug
 
 # How to set up JWT for SSO authentication in Bold BI
 
-This section explains how to perform Single Sign-On (SSO) for users with the Custom JSON Web Token (JWT) in the Bold BI application.
+This section explains how to perform Single Sign-On (SSO) for users with the Custom JSON Web Token (JWT) in Bold BI application.
 
 ## Steps to configure JWT in Bold BI
 
-1. Login with this URL `{Bold BI URL}/ums/administration` using the admin credentials.
+1. Login with this URL `{Bold BI URL}/ums/administration` using the admin credential.
 
-2. Click on `Authentication` and then `JWT`.
+2. Click `Authentication ` and then `JWT`.
 
-    ![JWT Configuration](/static/assets/multi-tenancy/images/jwt-configuration.png)
+    ![JWT Configuration](/bold-bi-docs/static/assets/embedded/multi-tenancy/images/jwt-configuration.png)
 
 3. Enable the JWT settings.
 
@@ -46,30 +46,30 @@ This section explains how to perform Single Sign-On (SSO) for users with the Cus
 
     </table>
 
-5. After the values are saved, the application will generate a `Signing Key`. This signing key must be used for signing JSON Web Tokens from your application.
+5. After the values are saved, the application will generate a `Signing Key`. This signing key has to be used for signing JSON Web Tokens from your application.  
 
-6. The `Signing Key` can be copied, viewed, and reset using the following options:
+6. The `Signing Key` will copy, view, and reset using the following options:
 
-    ![Copy](/static/assets/multi-tenancy/images/jwt-signingkey-options.png)
+    ![Copy](/bold-bi-docs/static/assets/embedded/multi-tenancy/images/jwt-signingkey-options.png)
 
 ## How JWT works with Bold BI   
 
-1. Once the JWT settings are configured, go to the Bold BI login page and click on the JWT login option.
-    ![JWT Login](/static/assets/multi-tenancy/images/jwt-login-option.png)
+1. Once configured the JWT settings, go to the Bold BI login page and click the JWT login option, it will redirects to configured application login URL.
+    ![JWT Login](/bold-bi-docs/static/assets/embedded/multi-tenancy/images/jwt-login-option.png)
 
 2. After that, the application will generate the JSON Web Token for user and it is redirected back to Bold BI call back URL `{Bold BI URL}/sso/jwt/callback?jwt={token}&site_identifier={site identifier}&redirect_to={redirecturl}` with the encoded JWT in a query string.
 
-3. The Bold BI application will validate the JWT and deserialize the user information from the token.
+3. Bold BI application will validate the JWT and deserialize the user information from the token.
 
-4. Based on the user information, the Bold BI application will check if the user's email already has access in the Bold BI application. If the user is already registered in Bold BI, they will be authenticated.
+4. From the user information, Bold BI application will check, if the user email has access in Bold BI application already. If the user is already available in Bold BI, it will authenticate the user.
 
-5. If the user is not yet registered in the Bold BI server, they will be added as a user and authenticated to access the Bold BI application
+5. If the user is not available in Bold BI server, it will add the user and authenticate to access Bold BI application.
 
 ## JWT Callback URL
 
-  The JWT callback URL will validate the JWT response from the configured application.
+  JWT callback URL will validate the JWT response from configured application.
 
-  After a user successfully logs into your configured application, you can redirect them to the specific URL provided.
+  After a user successful logs into your configured application, you can redirect them to the following specific URL.
  
  `{Bold BI URL}/sso/jwt/callback?jwt={token}&site_identifier={site identifier}&redirect_to={redirecturl}`
 
@@ -109,12 +109,12 @@ This section explains how to perform Single Sign-On (SSO) for users with the Cus
 
 ## Create JSON Web Token
 
-To create the JWT, use `HMAC-SHA256` as the signing algorithm. 
+To create the JWT, use `HMAC-SHA256` as signing algorithm.  
 
 
 ### What parameters can be passed in the payload of JWT
 
-A JWT should contain the following claims:
+JWT should contain the following claims:
 
    <table>
    <tr>
@@ -169,7 +169,7 @@ A JWT should contain the following claims:
 
 ### JSON Web Token sample
 
-Please refer to the following sample for instructions on how to generate the JWT.
+Please refer to the following sample for how to generate the JWT.
 
 ```c#
 private string GenerateJSONWebToken(UserModel userInfo)    

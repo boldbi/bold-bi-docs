@@ -2,49 +2,47 @@
 layout: post
 title: User Group Import from Azure AD – Embedded BI | Bold BI Docs
 description: Learn how to search and import user groups from Azure Active Directory into Bold BI Embedded. Only System Administrators can import Azure Active Directory groups.
-canonical: "/managing-resources/manage-groups/import-azure-active-directory-groups/"
+canonical: "/cloud-bi/managing-resources/manage-groups/import-azure-active-directory-groups/"
 platform: bold-bi
 documentation: ug
 ---
 
 # Azure Active Directory Group Import
 
-This section explains how to search for and import groups from Azure Active Directory into Bold BI.
+This section explain how to search and import groups from Azure Active Directory into the Bold BI.
 
-> **NOTE:**  A connection to Azure Active Directory must be configured in the [Azure Active Directory Settings](/site-administration/user-directory-settings/azure-active-directory/) on the `General` page in order to import groups.
+> **NOTE:**  Azure Active Directory connection has to be configured in the [Azure Active Directory Settings](/embedded-bi/site-administration/azure-active-directory/) in the `General` page for importing groups.
 
-Only users belonging to the `System Administrator` group can import Azure Active Directory groups into Bold BI.
+Users belonging to the `System Administrator` group only can import Azure Active Directory groups into the Bold BI.
 
 ## Search Groups
 
-Initially, Active Directory groups cannot be displayed through a simple search.
+Initially, any Active Directory groups cannot be displayed by searching for the group.
 
-Azure Active Directory groups can be searched using any of the following properties and selected for import into Bold BI:
+You can search the Azure Active Directory groups with any one of the below properties and choose them to import into Bold BI.
 
 * Group name
 
-A maximum of 1000 groups can be searched and pulled from Azure Active Directory in a single request.
+A maximum of 1000 groups will be searched and pulled from Azure Active Directory in a single request. 
 
-Bold BI will display the search results of the groups in a grid format.
+Bold BI will list the search results of the groups in the grid as shown in the following image.
 
-![Import groups from Azure Active Directory Server](/static/assets/managing-resources/manage-groups/images/azure-active-directory-group-search.png)
+![Import groups from Azure Active Directory Server](/bold-bi-docs/static/assets/embedded/managing-resources/manage-groups/images/Searched-azure-groups-list.png)
 
 ## Import Groups
 
-To import Azure Active Directory groups into the Bold BI application, you must select the groups from the list and click on `Import Selected Groups` at the top right corner in order to import the selected groups or click on `Import All Groups` at the top right corner in order to import all groups.
+To import the Azure Active Directory groups into the Bold BI, you have to choose the groups from the list and click `Import groups` at the top right corner.
 
-![Import Groups from Azure Active Directory](/static/assets/managing-resources/manage-groups/images/Azure-Group-import-page.png)
+![Import Groups from Azure Active Directory](/bold-bi-docs/static/assets/embedded/managing-resources/manage-groups/images/import-groups-from-azure-active-directory.png)
 
-Bold BI will import the chosen groups in the background as a job, and a confirmation dialog will be displayed as shown in the following figure.
+Bold BI will import the chosen groups and a confirmation message will be displayed as shown in the following image.
 
-![Confirmation dialog after import groups started](/static/assets/managing-resources/manage-groups/images/group-import-confirmation-dialog.png#width=70%)
+![Success message after imported the Azure Active Directory groups](/bold-bi-docs/static/assets/embedded/managing-resources/manage-groups/images/Azure-Active-Directory-group-import-success-window.png#width=70%)
 
-You can view the status of the current import by clicking the `View Status` button in the confirmation dialog above. You will be taken to the bulk import job details page below, where you can view the details of the current import job. Please learn more about the Bulk Import Result page [here](/managing-resources/manage-groups/bulk-import-result/).
-
-![Bulk user import job details page](/static/assets/managing-resources/manage-groups/images/group-import-result-active-directory.png#width=70%)
+The success message box explains about the imported and not imported users into the Bold BI.
 
 ## Duplicate Groups
 
-Azure Active Directory groups that have the same group name as those of the Bold BI groups (which are already present) will be identified as duplicate groups and will not be permitted to be imported into Bold BI.
+Azure Active Directory groups who has the same group name as that of the Bold BI groups(which are already present) will be marked as duplicate groups and will not be allowed to import into Bold BI.
 
-![Duplicated Azure Active Directory Groups](/static/assets/managing-resources/manage-groups/images/Azure-Active-Directory-Duplicate-group.png)
+![Duplicated Azure Active Directory Groups](/bold-bi-docs/static/assets/embedded/managing-resources/manage-groups/images/Azure-Active-Directory-Duplicate-group.png)

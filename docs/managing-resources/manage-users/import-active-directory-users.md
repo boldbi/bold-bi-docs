@@ -7,15 +7,15 @@ documentation: ug
 
 # Active Directory User Import
 
-This section explains how to search for and import users from Active Directory into the Bold BI application.
+This section explains how to search and import users from Active Directory into the Bold BI application.
 
-> **NOTE:**  An Active Directory connection must be configured in the [Active Directory Settings](/site-administration/user-directory-settings/active-directory/active-directory/) on the `General` page in order to import users. This feature is available in On-Premises Deployment but not in Syncfusion Managed Cloud Server.
+> **NOTE:**  Active Directory connection has to be configured in the [Active Directory Settings](/embedded-bi/site-administration/active-directory/active-directory/) in the `General` page for importing users.
 
-Only users belonging to the `System Administrator` group can import Active Directory users into the Bold BI application.
+Users belonging to the `System Administrator` group only can import Active Directory users into the Bold BI application.
 
 ## Search Users
 
-You can search for Active Directory users using any of the following properties and select them to import into the Bold BI application:
+You can search the Active Directory users with any one of the below properties and choose them to import into the Bold BI application. 
 
 * User name
 * First name
@@ -23,30 +23,32 @@ You can search for Active Directory users using any of the following properties 
 * Email Address
 * Display name
 
-A maximum of 1000 users will be searched and retrieved from Active Directory in a single request.
+A maximum of 1000 users will be searched and pulled from Active Directory in a single request. 
 
-The Bold BI application will search for users within the specified distinguished name provided in the Active Directory settings page and display the search results in the grid.
+Bold BI application will search the users within the specified distinguished name given in the Active Directory settings page and list the search results in the grid.
 
-![Import Users from Active Directory Server](/static/assets/managing-resources/manage-users/images/search-active-directory-user-import.png)
+![Import Users from Active Directory Server](/bold-bi-docs/static/assets/embedded/managing-resources/manage-users/images/Search-Active-Directory-User.png)
 
 ## Import Users
 
-To import Active Directory users into the Bold BI application, you need to select users from the list and click the `Import Selected Users` button to import the selected users or click the `Import All Users` button to import all users.
+To import the Active Directory users into the Bold BI application, you have to choose the users from the list and click `Import` button at the top right corner.
 
-![Import User from Active Directory](/static/assets/managing-resources/manage-users/images/import-user-from-window-ad.png)
+![Import User from Active Directory](/bold-bi-docs/static/assets/embedded/managing-resources/manage-users/images/import-user-from-active-directory.png)
 
-Bold BI will import the selected users in the background as a job, and a confirmation dialog will be shown as depicted in the following figure.
+Bold BI application will import the chosen users and a confirmation message will be displayed.
 
-![Confirmation dialog after import users started](/static/assets/managing-resources/manage-users/images/confirmation-dialogue-on-import-click.png#width=70%)
+![Success message after imported the Active Directory users](/bold-bi-docs/static/assets/embedded/managing-resources/manage-users/images/Active-Directory-User-imported.png#width=60%)
 
-You can view the status of the current import by clicking the `View Status` button in the confirmation dialog above. You will be taken to the bulk import job details page below, where you can view the details of the current import job. Please learn more about the Bulk Import Result page [here](/managing-resources/manage-users/bulk-import-result/).
+> **NOTE:**  Bold BI application will rely on user email for authentication purpose. If imported user doesn't have any email address, then Bold BI server will auto generate the email for that user. Example: if username is `john` and domain name is `example.com`, then user will be imported with auto generated email `john@example.com`
 
-![Bulk user import job details page](/static/assets/managing-resources/manage-users/images/import-job-details-page.png#width=70%)
+## Duplicate Users
 
-> **NOTE:**  The Bold BI application will rely on the user's email for authentication purposes. If the imported user does not have an email address, the Bold BI server will automatically generate an email for that user. For example, if the username is `John` and the domain name is `example.com`, then the user will be imported with the auto-generated email `john@example.com`.
+Active Directory users who has the same username or email address as that of the Bold BI application users (who are already present) will be marked as duplicate users and will not be allowed to import into Bold BI application. 
+
+![Duplicated Active Directory Users](/bold-bi-docs/static/assets/embedded/managing-resources/manage-users/images/Duplicated-Active-Directory-Users.png#width=60%)
 
 ## Modify Active Directory Connection
 
-To modify Active Directory configuration settings, click the `Modify` button below.
+To modify Active Directory configuration settings, click `Modify` button as below,
 
-![Modify Active Directory Configuration](/static/assets/managing-resources/manage-users/images/Modify-Active-Directory-Configuration.png)
+![Modify Active Directory Configuration](/bold-bi-docs/static/assets/embedded/managing-resources/manage-users/images/Modify-Active-Directory-Configuration.png)

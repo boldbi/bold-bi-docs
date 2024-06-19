@@ -9,19 +9,18 @@ documentation: ug
 
 # Create, Configure and Format the Custom Widget
 
-The Bold BI custom widget allows you to add any user-defined widget, d3 controls, Syncfusion controls, or any Javascript-based controls in a dashboard, and it performs like a normal widget.
+The Bold BI custom widget allows you to add any user-defined widget, d3 controls, Syncfusion controls, or any Javascript-based controls in a dashboard, and it performs like the normal widget.
 
-> **NOTE:** This feature is available in On-Premises Deployment, but not in Syncfusion Managed Cloud Server.
 
 ## Prerequisites and knowledge required for development of the custom widget
 
-This section explains the mandatory requirements for developing the custom widget.
+This section explains the mandatory requirements to develop the custom widget.
 
 <table class="params">
 <thead>
 <tr>
 <td><b>Development Environment</b></td>
-<td>Bold BI Enterprise Edition and any web browser as mentioned in the <a href="/deploying-bold-bi/overview/#software-requirements">link</a><br/> </td>
+<td>Bold BI Enterprise Edition and any web browser as mentioned in the <a href="/embedded-bi/setup/overview/#software-requirements">link</a><br/> </td>
             
 </tr>
 <tr>
@@ -35,35 +34,39 @@ This section explains the mandatory requirements for developing the custom widge
 
 To Create a new custom widget, follow the steps below:
 
-* [Create custom widget template using the utility](/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/create-new-custom-widget/#create-a-custom-widget-template)
+* [Create custom widget template using the utility](/embedded-bi/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/create-new-custom-widget/#create-a-custom-widget-template)
 
-* [Configure widget config file and source file](/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/create-new-custom-widget/#configuring-widget-configuration-file)
+* [Configure widget config file and source file](/embedded-bi/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/create-new-custom-widget/#configuring-widget-configuration-file)
 
-* [Convert the custom widget to *.bicw file](/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/create-new-custom-widget/#converting-the-widget-to-a-bicw-file)
+* [Convert the custom widget to *.bicw file](/embedded-bi/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/create-new-custom-widget/#converting-the-widget-to-a-bicw-file)
 
-* [Publish the Custom Widget](/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/create-new-custom-widget/#publish-custom-widget)
+* [Publish the Custom Widget](/embedded-bi/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/create-new-custom-widget/#publish-custom-widget)
 
 ## Create a custom widget template
 
-The BoldBI Custom Widget Utility (bicw.exe) is used to create the custom widget template. To create a new custom widget template, download the [Custom Widget Utility](https://files2.syncfusion.com/Installs/BoldBI/07-12-2023/Bicw+Utility.zip) and extract the zipped folder.
+BoldBI Custom Widget Utility (bicw.exe) is used to create the custom widget template 
 
-  ![bicw.exe downloaded file location](/static/assets/visualizing-data/visualization-widgets/images/custom-widget/bicw_exefile.png)
+To create a new custom widget template, download the [Custom Widget Utility](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Bicw_Utility1116107422)
 
-Please click on the bicw.exe file as shown in the snippet below:
+Extract the zipped folder 
 
-  ![bicw.exe file](/static/assets/visualizing-data/visualization-widgets/images/custom-widget/create-new-custom-widget.png)
+  ![bicw.exe downloaded file location](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/custom-widget/bicw_exefile.png)
 
-Using the [create command](/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/create-new-custom-widget/#format), you can create the widget template in the specified path with the provided name.
+Click on bicw.exe file as shown in the snippet below:
 
-  ![create command](/static/assets/visualizing-data/visualization-widgets/images/custom-widget/create-command.png)
+  ![bicw.exe file](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/custom-widget/create-new-custom-widget.png)
+
+Using the [create command](/embedded-bi/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/create-new-custom-widget/#format) you can create the widget template in the specified path with the provided name.
+
+  ![create command](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/custom-widget/create-command.png)
 
 #### Format
 
 create c:\widgets\SunburstChart
 
-After executing the create command, you will see the widget named folder that is created as shown below:
+After the create command execution, you can see the widget named folder that is created as below:
 
-  ![custom widget location](/static/assets/visualizing-data/visualization-widgets/images/custom-widget/custom-widget-template-sunburstchart.png)
+  ![custom widget location](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/custom-widget/custom-widget-template-sunburstchart.png)
 
 ## Configuring widget configuration file 
 
@@ -72,7 +75,7 @@ You can configure the widget by using the manifest file.
 
 The manifest file is used to specify the widget’s configuration. This file will be available in the custom widgets root directory with the name `widgetconfig.json`.
 
-The custom widget can be configured using the following settings. Please refer to the structure of `widgetconfig.json`:
+The custom widget can be configured using the following settings. Refer to the structure of `widgetconfig.json`
 
   ```js
 
@@ -97,7 +100,7 @@ The custom widget can be configured using the following settings. Please refer t
    }
 
   ```
-  > **NOTE:** In the above code, the GUID must be unique. Therefore, it should be updated whenever a new custom widget template is downloaded. For example, **guid**: “74926583-8493-3333-6382-863428678492”.
+  > **NOTE:** In the above code, the guid must be unique. So, it should be updated whenever a new custom widget template is downloaded. For example **guid**: "74926583-8493-3333-6382-863428678492"
    
    <table>
 <tbody>
@@ -253,185 +256,53 @@ dataFields:[
 
 ## Limitation
 
-  The jQuery reference (`jquery-1.10.2.min.js`) will be included as a built-in reference for the custom widget, so you will not be able to specify the jQuery files in dependencies.
+  jQuery reference (`jquery-1.10.2.min.js`) will be added as a built-in reference for the custom widget so that you are not allowed to specify the jQuery files in dependencies.
 
 ## Example 
 
-Below is an example code to configure the `widgetconfig.json` file for the Syncfusion SunburstChart Chart.
+Below is an example code to configure the `widgetconfig.json` file for the Syncfusion SunburstChart Chart
 
   ```js
   {
     "widgetName": "SunburstChart",
     "displayName": "Sunburst Chart",
     "guid": "b0d5348d-f625-4b78-8db9-c5ed9d38eb45",
-    "category": "Miscellaneous",
-	"version": "4.2.0.0",
-	"srcFile": "src/sunburst.js",
-    "dependencies": { "scripts": [ "src/ej.sunburstchart.min.js" ] },
-    "description": "Sunburst Chart is useful for visualizing hierarchical data. The center circle represents the root level in the hierarchy, with outer circles representing higher levels of the hierarchy.",
+    "category": "Relationship",
+	  "version": "1.0.0",
+	  "srcFile": "src/sunburst.js"
+    "dependencies": { 
+	     "scripts": [ 
+	        "src/ej.sunburstchart.min.js" ] 
+	  },
+    "description": "The Sunburst Chart is useful for visualizing hierarchical data. The center circle represents the root level in the hierarchy, with outer circles representing higher levels of the hierarchy.",
     "dataFields": [
-        { 
-			"displayName": "Value", 
-			"valueType": "measure", 
-			"name": "Value", 
-			"min": 1, 
-			"max": 1, 
-			"optional": false 
-		},
-        { 
-			"displayName": "Levels", 
-			"valueType": "dimension", 
-			"name": "Levels", 
-			"min": 1, 
-			"max": 4, 
-			"optional": false 
-		},
-		{ 
-			"displayName": "Tooltip(s)", 
-			"valueType": "measure", 
-			"name": "tooltip", 
-			"min": 1, 
-			"max": 5, 
-			"optional": true 
-		},
-		{ 
-			"displayName": "Filter(s)", 
-			"valueType": "dimension", 
-			"name": "filter", 
-			"min": 1, 
-			"max": 5, 
-			"optional": true 
-		}
-    ],
-	"functionalities": [
-		{
-		"header": "Basic Settings",
-		"properties": [
-		{
-          "displayName": "Enable Animation",
-          "controlType": "bool",
-          "name": "animation",
-          "defaultValue": "false"
-        },
-		{
-          "displayName": "Show Data Label",
-          "controlType": "bool",
-          "name": "showDataLabel",
-          "defaultValue": "true"
-        },
-		{
-          "displayName": "Data Label Rotation",
-          "controlType": "enumeration",
-          "name": "dlRotation",
-          "defaultValue": "Normal",
-		  "listItems": [
-            "Normal",
-            "Angle"
-          ]
-        },
-		{
-          "displayName": "Label Overflow Mode",
-          "controlType": "enumeration",
-          "name": "labelOverflowMode",
-          "defaultValue": "Trim",
-		  "listItems": [
-            "Hide",
-            "Trim"
-          ]
-        }
-      ]
-    },
-		{
-		"header": "Legend Settings",
-		"properties": [
-		{
-          "displayName": "Show Legend",
-          "controlType": "bool",
-          "name": "showLegend",
-          "defaultValue": "false"
-        },
-		{
-          "displayName": "Legend Position",
-          "controlType": "enumeration",
-          "name": "legendPosition",
-          "defaultValue": "Bottom",
-		  "listItems": [
-            "Top",
-            "Left",
-			"Right",
-			"Bottom"
-          ]
-        }
-      ]
-    },
-	{
-		"header": "Color Settings",
-		"properties": [
-		{
-          "displayName": "Point 1 color",
-          "controlType": "color",
-          "name": "p1Color",
-          "defaultValue": "#8d9aa2"
-        },
-		{
-          "displayName": "Point 2 color",
-          "controlType": "color",
-          "name": "p2Color",
-          "defaultValue": "#515e66"
-        },
-		{
-          "displayName": "Point 3 color",
-          "controlType": "color",
-          "name": "p3Color",
-          "defaultValue": "#0ebcd7"
-        },
-		{
-          "displayName": "Point 4 color",
-          "controlType": "color",
-          "name": "p4Color",
-          "defaultValue": "#6517c1"
-        },
-		{
-          "displayName": "Point 5 color",
-          "controlType": "color",
-          "name": "p5Color",
-          "defaultValue": "#b061fa"
-        },
-		{
-          "displayName": "Point 6 color",
-          "controlType": "color",
-          "name": "p6Color",
-          "defaultValue": "#826AF9"
-        },
-		{
-          "displayName": "Point 7 color",
-          "controlType": "color",
-          "name": "p7Color",
-          "defaultValue": "#2D99FF"
-        },
-		{
-          "displayName": "Point 8 color",
-          "controlType": "color",
-          "name": "p8Color",
-          "defaultValue": "#2CD9C5"
-        },
-		{
-          "displayName": "Point 9 color",
-          "controlType": "color",
-          "name": "p9Color",
-          "defaultValue": "#FF6C40"
-        },
-		{
-          "displayName": "Point 10 color",
-          "controlType": "color",
-          "name": "p10Color",
-          "defaultValue": "#FFE700"
-        }
-      ]
-    }
-	],
-    "filterSettings": { "masterFilter": { "visible": true, "defaultValue": false }, "ignoreMasterFilter": { "visible": true, "defaultValue": false } },
-}
+        {  
+        "displayName": "Value", 
+		    "valueType": "measure", 
+	      "name": "Value", 
+		    "min": 1, 
+		    "max": 1, 
+		    "optional": false 
+		   },
+      { 
+		    "displayName": "Levels", 
+		    "valueType": "dimension", 
+		    "name": "Levels", 
+		    "min": 1, 
+		    "max": 4, 
+		    "optional": false 
+		  }
+    ],    
+    "filterSettings": { 
+	     "masterFilter": { 
+	       "visible": true, 
+	       "defaultValue": true 
+	  }, 
+	 "ignoreMasterFilter": { 
+	    "visible": true, 
+	    "defaultValue": false 
+	  }} 
+ }
 
   ```
 ## Configuring the widget source file 
@@ -463,13 +334,13 @@ The source file is used to embed the user-defined widget within the dashboard. R
   ```
 ### Init method
 
- Once your widget is initialized through the init method, the update method will be called for widget updates such as data updates and resizing.
+ Once your widget is initialized through the init method, the update method will be called for widget updation like data update, widget resizing etc.
 
 ### Update method
 
- Once your widget is initialized through the init method, the update method will be called for widget updates such as data updates and widget resizing.
+ Once your widget is initialized through the init method, update method will called for widget updation like data update, widget resizing etc.
 
- The update method will be triggered for the following operations. Therefore, we perform these operations based on the update type (resize, refresh) by invoking the respective API of the widget.
+ The update method will be triggered for the below operations, so here we are performing the operations based on the update type(resize, refresh) by invoking the respective API of the widget.
 
    1) Resize
 
@@ -477,7 +348,7 @@ The source file is used to embed the user-defined widget within the dashboard. R
 
 ### Configuring the custom widget for interaction in the sourcefile
 
- The custom widget can participate in filter interaction like built-in widgets. Use the following APIs to facilitate communication between the widgets.
+ The custom widget can take part in the filter interaction like built-in widgets. Use the following APIs to perform the communication between the widgets.
 
 #### Format
 
@@ -516,7 +387,7 @@ Various conditions are available for the dimension column other than the DateTim
 
 #### Example
 
-The following code will filter the dimension values `India` and `China` in the other widgets.
+The following code will filter the dimension value "India" and "China" in the other widgets
 
 ```js
 
@@ -531,7 +402,7 @@ bbicustom.dashboard.filterData(that, selectedFilterInfos);
 
 ```
 
-> **NOTE:**  In the above code sample, pass the unique column name of a particular column from the variable `this.model.boundColumns` to filter the data in the other widgets. In this variable, all the bounded or configured data fields will be available with their bound value column name and unique column name.
+> **NOTE:**  In the above code sample, pass the unique column name of a particular column from the variable `this.model.boundColumns` to filter the data in the other widgets. In this variable all the bounded or configured data fields will be available with their bounded value column name and unique column name.
 
 Various conditions are available for the dimension column with the DateTime data type:
 
@@ -539,7 +410,7 @@ Various conditions are available for the dimension column with the DateTime data
 * **include**
 * **exclude**
 
-The following code is an example of filtering the data of the specified date range in the other widgets:
+The following code is the example to filter the data of the specified date range in the other widgets:
 
 ```js
 
@@ -556,7 +427,7 @@ bbicustom.dashboard.filterData(this, selectedFilterInfos);
 
 ### Measure type column
 
-To apply the filter based on the measure, the value type should be 'dimensionormeasure' for the data field, and the summary type of the measure should be set as none. Various condition types are available for the measure type column, as follows:
+To apply the filter based on the measure, the value type should be dimensionormeasure for the data field and the summary type of the measure should be set as none. Various condition types are available for the measure type column as follows:
 
  * **equals**
  * **notequals**
@@ -567,7 +438,7 @@ To apply the filter based on the measure, the value type should be 'dimensionorm
  * **isbetween**
  * **isnotbetween** 
 
-The following code is an example to filter the other widgets based on the measure value:
+The following code is the example to filter the other widgets based on the measure value:
 
 ```js
 
@@ -580,7 +451,7 @@ selectedFilterInfos.push(filterinfo);
 bbicustom.dashboard.filterData(this, selectedFilterInfos); 
 
 ```
-The following code is an example of how to filter the values between 10248 and 10251 in the other widgets.
+The following code is an example of how to filter the value between 10248 and 10251 in the other widgets.
 
 ```js
 
@@ -596,62 +467,27 @@ bbicustom.dashboard.filterData(this, selectedFilterInfos);
 
 ## Example
 
-Below is an example code to configure the `sourcefile.js` file for the Syncfusion SunburstChart Chart.
+Below is an example code to configure the `sourcefile.js` file for the Syncfusion SunburstChart Chart
 
   ```js
-     bbicustom.dashboard.registerWidget({
+     ej.dashboard.registerWidget({
 		
-		guid : "b0d5348d-f625-4b78-8db9-c5ed9d38eb45",
+		guid : "96031684-5f1c-4eb6-85f1-314a0be92961",
 		
 		pluginName : "SunburstChart",
 		
-		/* init method will be called when the widget is initialized */
 		init : function () {
-			this.content = document.createElement("div");
-			this.content.setAttribute("id", this.element.getAttribute("id") + "_hovContent");
-			$(this.content).css({'height':'30px','width':'30px','display':'none'});
-			this.element.appendChild(this.content);
-			
 			this.widget = document.createElement("div");
 			this.widget.setAttribute("id", this.element.getAttribute("id") + "_widget");
 			this.element.appendChild(this.widget);
-				this.designId = $(this.element).closest(".e-customwidget-item").attr("id").split("_" + this.model.widgetId)[0];
-				this.designerObj = $("#" + this.designId).data("BoldBIDashboardDesigner");
-				this.formattingInfo = {};
-				this.editedColumnNames = {};
-				var widgetInstance = $(this.element).closest(".e-customwidget-item").data("widgetInstance");
-				for(var j = 0; j<widgetInstance.dataGroupInfo.FieldContainers.length; j++){
-					if(widgetInstance.dataGroupInfo.FieldContainers[j].FieldInfos.length > 0 && widgetInstance.dataGroupInfo.FieldContainers[j].FieldInfos.length > 0){
-						var length = widgetInstance.dataGroupInfo.FieldContainers[j].FieldInfos.length;
-						for(var i = 0; i < length; i++){
-							this.editedColumnNames[widgetInstance.dataGroupInfo.FieldContainers[j].FieldInfos[i].UniqueColumnName] = widgetInstance.dataGroupInfo.FieldContainers[j].FieldInfos[i].IsDisplayNameEdited ? widgetInstance.dataGroupInfo.FieldContainers[j].FieldInfos[i].DisplayName : widgetInstance.dataGroupInfo.FieldContainers[j].FieldInfos[i].Name;
-							this.formattingInfo[widgetInstance.dataGroupInfo.FieldContainers[j].FieldInfos[i].UniqueColumnName] = widgetInstance.dataGroupInfo.FieldContainers[j].FieldInfos[i].MeasureFormatting;
-						}
-					}
-				}
 			this.renderSunburstChartWithDefaultData();
 		},
 		
-		/* update method will be called when any update needs to be performed in the widget. */
 		update : function (option) {
 			if(option.type == "resize") {
 				this.resizeWidget(option.size);
 			}
 			else if (option.type == "refresh") {
-				this.designId = $(this.element).closest(".e-customwidget-item").attr("id").split("_" + this.model.widgetId)[0];
-				this.designerObj = $("#" + this.designId).data("BoldBIDashboardDesigner");
-				this.formattingInfo = {};
-				this.editedColumnNames = {};
-				var widgetInstance = $(this.element).closest(".e-customwidget-item").data("widgetInstance");
-				for(var j = 0; j<widgetInstance.dataGroupInfo.FieldContainers.length; j++){
-					if(widgetInstance.dataGroupInfo.FieldContainers[j].FieldInfos.length > 0 && widgetInstance.dataGroupInfo.FieldContainers[j].FieldInfos.length > 0){
-						var length = widgetInstance.dataGroupInfo.FieldContainers[j].FieldInfos.length;
-						for(var i = 0; i < length; i++){
-							this.editedColumnNames[widgetInstance.dataGroupInfo.FieldContainers[j].FieldInfos[i].UniqueColumnName] = widgetInstance.dataGroupInfo.FieldContainers[j].FieldInfos[i].IsDisplayNameEdited ? widgetInstance.dataGroupInfo.FieldContainers[j].FieldInfos[i].DisplayName : widgetInstance.dataGroupInfo.FieldContainers[j].FieldInfos[i].Name;
-							this.formattingInfo[widgetInstance.dataGroupInfo.FieldContainers[j].FieldInfos[i].UniqueColumnName] = widgetInstance.dataGroupInfo.FieldContainers[j].FieldInfos[i].MeasureFormatting;
-						}
-					}
-				}
 				var widgetObj = $(this.widget).data("ejSunburstChart");	
 				if(this.model.boundColumns.Value.length > 0){
 					for (var i=0; i<this.model.dataSource.length; i++) {
@@ -671,164 +507,30 @@ Below is an example code to configure the `sourcefile.js` file for the Syncfusio
 				} else {
 					this.renderSunburstChartWithDefaultData();
 				}
-			} else if(option.type === "propertyChange"){
-				var widgetObj = $(this.widget).data("ejSunburstChart");
-				switch (option.property.name) {
-					case "showLegend":
-						widgetObj.model.legend.visible = this.model.properties.showLegend;
-					case "legendPosition":
-						widgetObj.model.legend.position = this.model.properties.legendPosition.toLowerCase();
-					case "p1Color":
-						widgetObj.model.palette[0] = this.model.properties.p1Color.slice(0,7);
-					case "p2Color":
-						widgetObj.model.palette[1] = this.model.properties.p2Color.slice(0,7);
-					case "p3Color":
-						widgetObj.model.palette[2] = this.model.properties.p3Color.slice(0,7);
-					case "p4Color":
-						widgetObj.model.palette[3] = this.model.properties.p4Color.slice(0,7);
-					case "p5Color":
-						widgetObj.model.palette[4] = this.model.properties.p5Color.slice(0,7);
-					case "p6Color":
-						widgetObj.model.palette[5] = this.model.properties.p6Color.slice(0,7);
-					case "p7Color":
-						widgetObj.model.palette[6] = this.model.properties.p7Color.slice(0,7);
-					case "p8Color":
-						widgetObj.model.palette[7] = this.model.properties.p8Color.slice(0,7);
-					case "p9Color":
-						widgetObj.model.palette[8] = this.model.properties.p9Color.slice(0,7);
-					case "p10Color":
-						widgetObj.model.palette[9] = this.model.properties.p10Color.slice(0,7);
-					case "showDataLabel":
-						widgetObj.model.dataLabelSettings.visible = this.model.properties.showDataLabel;
-					case "labelOverflowMode":
-						widgetObj.model.dataLabelSettings.labelOverflowMode = this.model.properties.labelOverflowMode.toLowerCase();
-					case "dlRotation":
-						widgetObj.model.dataLabelSettings.labelRotationMode = this.model.properties.dlRotation.toLowerCase();
-					case "animation":
-						widgetObj.model.enableAnimation = this.model.properties.animation;
-				}
-				widgetObj.redraw();
 			}			
 		},
 		
-		/*This method is called for rendering the chart*/
 		renderSunburstChartWithDefaultData : function () {			
 			$(this.widget).css({"width":$(this.element).width(), "height":$(this.element).height()});
 			var dataSource = [{ Item: "Item1", Value: 50 },{ Item: "Item2", Value: 60 },{ Item: "Item3", Value: 70 },{ Item: "Item4", Value: 80 },{ Item: "Item5", Value: 90 },{ Item: "Item6", Value: 90 },{ Item: "Item7", Value: 90 },{ Item: "Item8", Value: 90 },{ Item: "Item9", Value: 90 },{ Item: "Item10", Value: 90 },{ Item: "Item11", Value: 90 }];
 			var levels = [];
 			var valueMember = "Value";
 			levels = [ { groupMemberPath: "Item" }];
-			$(this.widget).ejSunburstChart({ 
-				dataSource: dataSource, 
-				valueMemberPath: valueMember, levels: levels,
-				palette: [this.model.properties.p1Color.slice(0,7), this.model.properties.p2Color.slice(0,7), this.model.properties.p3Color.slice(0,7), this.model.properties.p4Color.slice(0,7),this.model.properties.p5Color.slice(0,7), this.model.properties.p6Color.slice(0,7), this.model.properties.p7Color.slice(0,7), this.model.properties.p8Color.slice(0,7), this.model.properties.p9Color.slice(0,7), this.model.properties.p10Color.slice(0,7)],
-				tooltip: { visible: true},
-				margin: (this.marginVisibility())? { left: 10, top: 10, bottom: 10, right: 10} :{ left: 0, top: 0, bottom: 0, right: 0} ,
-				border: { width: (this.marginVisibility())? 2:0 },
-				load: $.proxy(this.sunburstChartLoad),
-				enableAnimation: false,
-				animationType: 'Rotation',
-				innerRadius: 0.2,
-				dataLabelSettings:{
-					visible:(this.model.properties.showDataLabel?this.dataLabelVisibility():false), 
-					labelOverflowMode:this.model.properties.labelOverflowMode.toLowerCase(),
-					labelRotationMode : this.model.properties.dlPosition,
-				},
-				size: { height: $(this.element).height(), width: $(this.element).width()},	 
-				legend: { visible:  (this.model.properties.showLegend ? this.legendVisibility():false) , position: this.model.properties.legendPosition.toLowerCase() },
-				highlightSettings: {enable: true},
-				selectionSettings: {enable: true, mode : "parent"},
-				pointRegionClick: $.proxy(this.pointRegionClick, this),
-				tooltipInitialize: $.proxy(this.tooltipInitialize, this),
-			});	
-		},
-		/*To render the tooltip*/
-		tooltipInitialize : function(args){
-			var widgetInstance = $(this.element).closest(".e-customwidget-item").data("widgetInstance");
-			var isTooltioCustomizationDone = false;
-			for(var i = 0; i < this.model.dataSource.length; i++){
-				for(var j = 0; j < args.model.levels.length; j++){
-					if(args.data.currentText.indexOf(this.model.dataSource[i][args.model.levels[j].groupMemberPath]) > -1){
-						if(this.model.boundColumns.tooltip.length > 0){
-							args.data.currentText = args.data.currentText.split(":")[0] + ": " + this.formatDataNumber(args.data.currentText.split(":")[1]);
-							for(var k = 0; k < this.model.boundColumns.tooltip.length; k++){
-								args.data.currentText += "</br>" + widgetInstance.dataColumnBindings[this.model.boundColumns.tooltip[k].uniqueColumnName] + " : " + this.formatTooltipNumber(k,this.model.dataSource[i][this.model.boundColumns.tooltip[k].uniqueColumnName]);
-							}
-						}
-						else{
-							args.data.currentText = args.data.currentText.split(":")[0]+ ": " + this.formatDataNumber(args.data.currentText.split(":")[1]);
-						}
-						isTooltioCustomizationDone = true;
-						break;
-					}
-				}if(isTooltioCustomizationDone){break;}
-			}
-		},
-		
-		/*formatTooltipNumber method is for formatting the measure values*/
-		formatTooltipNumber: function (index,number) {
-				var formatInfo = JSON.parse(JSON.stringify(this.formattingInfo[this.model.boundColumns.tooltip[index].uniqueColumnName]));
-				var number = BoldBIDashboard.DashboardUtil.formattedText(number, formatInfo.Culture, formatInfo.DecimalPoints, formatInfo.FormatType, formatInfo.DecimalSeparator, formatInfo.GroupSeparator, formatInfo.Prefix, formatInfo.Suffix, formatInfo.Unit, true, this.designerObj);
-			return number;
-		},
-		
-		/*formatDataNumber method is for formatting the measure values*/
-		formatDataNumber: function (number) {
-				var number = Number(number);
-				var formatInfo = this.formattingInfo[this.model.boundColumns.Value[0].uniqueColumnName];
-				number = BoldBIDashboard.DashboardUtil.formattedText(number, formatInfo.Culture, formatInfo.DecimalPoints, formatInfo.FormatType, formatInfo.DecimalSeparator, formatInfo.GroupSeparator, formatInfo.Prefix, formatInfo.Suffix, formatInfo.Unit, true, this.designerObj);
-			return number;
-		},
-		
-		pointRegionClick : function(e){
-			if(this.model.initMode == "runtime"){
-			var data = [];
-			var levels = [];
-			for(var k = 0; k < e.data.pointData[0].layerNumber; k++){
-				levels.push(e.model.levels[k]);
-			}
-			var layerNumber = e.data.pointData[0].layerNumber - 1;
-			for(var i = 0; i < this.model.dataSource.length; i++){
-				
-				if((e.data.pointData[0].x == this.model.dataSource[i][levels[levels.length-1].groupMemberPath]) && (e.model.points[e.data.pointData[0].legendIndex].x == this.model.dataSource[i][e.model.levels[0].groupMemberPath])){
-					for(var j = 0; j < levels.length; j++){
-						var temp = {};
-						temp[levels[j].groupMemberPath] = this.model.dataSource[i][levels[j].groupMemberPath];
-						data.push(temp);
-					}
-					for(var x = 0; x < this.model.boundColumns.filter.length; x++){
-						var temp = {};
-						temp[this.model.boundColumns.filter[x].uniqueColumnName] = this.model.dataSource[i][this.model.boundColumns.filter[x].uniqueColumnName];
-						data.push(temp);
-					}
-					break;
-				}
-			}
-			var zero = 0;
-			var selectedFilterInfos = [];
-			if (data.length > zero) {
-				for (i = 0; i < data.length; i++) {
-							var filterinfo = new bbicustom.dashboard.selectedColumnInfo();
-							filterinfo.condition = "include";
-							filterinfo.uniqueColumnName = Object.keys(data[i])[0];
-							filterinfo.values.push(data[i][Object.keys(data[i])[0]]);
-							selectedFilterInfos.push(filterinfo);
-				}
-			}
-			if (this.model.enableLinking) {
-				if (this.model.linkSettings.enableTabularUrlLinking) {
-					for (var i = 0; i < this.model.linkSettings.urlPatterns.length; i++) {
-						if (this.model.linkSettings.urlPatterns[i].uniqueColumnName === selectedFilterInfos[0].uniqueColumnName ) {
-							urlCaption = this.model.linkSettings.urlPatterns[i].urlLink;
-						}
-					}
-				}
-				bbicustom.dashboard.navigateThroughLinking(this,selectedFilterInfos,urlCaption);
-			}
-			else {
-				bbicustom.dashboard.filterData(this,selectedFilterInfos);
-			}
-			}
+			$(this.widget).ejSunburstChart({ dataSource: dataSource, 
+							valueMemberPath: valueMember, levels: levels, 
+							tooltip: { visible: true},
+							margin: (this.marginVisibility())? { left: 10, top: 10, bottom: 10, right: 10} :{ left: 0, top: 0, bottom: 0, right: 0} ,
+							border: { width: (this.marginVisibility())? 2:0 },
+							load: $.proxy(this.sunburstChartLoad),
+							enableAnimation: false,
+							animationType: 'Rotation',
+							innerRadius: 0.2,							
+							dataLabelSettings:{visible:false},
+							size: { height: $(this.element).height(), width: $(this.element).width()},	 
+							legend: { visible:  (this.legendVisibility()) , position: this.legendPosition() },
+							highlightSettings: {enable: true},
+							selectionSettings: {enable: true, mode : "parent"}
+							});	
 		},
 		sunburstChartLoad : function (e) {
 			this.elementSpacing = (this.element.width() > 200 && this.element.height() > 200) ? 10 : 0;
@@ -837,11 +539,12 @@ Below is an example code to configure the `sourcefile.js` file for the Syncfusio
 		resizeWidget : function (size) {
 			$(this.widget).css({"width": size.width, "height": size.height});
 			var sunburstObj = $(this.widget).data("ejSunburstChart");
-			sunburstObj.model.size.height = size.height-5;
+			sunburstObj.model.size.height = size.height;
 			sunburstObj.model.size.width = size.width; 
 			sunburstObj.model.margin =(this.marginVisibility())? { left: 10, top: 10, bottom: 10, right: 10} :{ left: 0, top: 0, bottom: 0, right: 0} ,
-			sunburstObj.model.legend.visible = this.model.properties.showLegend ? this.legendVisibility():false;
-			sunburstObj.model.legend.position = this.model.properties.legendPosition.toLowerCase();
+			sunburstObj.model.legend.visible = this.legendVisibility();
+			//sunburstObj.model.legend.visible = false;
+			sunburstObj.model.legend.position = this.legendPosition();
 			sunburstObj.model.dataLabelSettings.visible = this.dataLabelVisibility();	
 			sunburstObj.redraw();
 		},
@@ -856,6 +559,13 @@ Below is an example code to configure the `sourcefile.js` file for the Syncfusio
 		
 		dataLabelVisibility : function (e) {
 			return !($(this.element).width() < 300 || $(this.element).height() < 300);
+		},
+		
+		legendPosition : function (e) {
+			if ( $(this.element).width() > $(this.element).height())
+				return "right";
+			else 
+				return "top";
 		},
 		
 		getAnimationType : function(animationType) {
@@ -912,12 +622,12 @@ The variables used in the code sample above are explained below:
 
 ## Converting the widget to a *.bicw file 
 
- After configuring the widget, you can pack it using the custom widget utility.
+ After configuring the widget, you can pack the widget by using the custom widget utility.
 
- To import the custom widget in the Bold BI designer, you need to pack the widget in the *.bicw format. Follow the steps below to convert the custom widget to the *.bicw file:
+ To import the custom widget in the Bold Bi designer, you should pack the widget in the *.bicw format. Follow the steps below to convert the custom widget to the *.bicw file
 
-  * Run the custom widget utility by following the steps provided. 
-  * Run the [pack command](#format) to convert the widget to a *.bicw file.
+  * Run the custom widget utility by following the steps mentioned in the [link](/embedded-bi/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/create-new-custom-widget/#converting-the-widget-to-a-bicw-file) 
+  * Now run the [pack command](/embedded-bi/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/create-new-custom-widget/#format-2) to convert  the widget to *.bicw file 
 
 ### Format
 
@@ -925,45 +635,45 @@ The variables used in the code sample above are explained below:
 
  In the above command  `C:\widgets\SunburstChart` denotes the root path of the widget to be packed.
 
-  ![Custom widget Root Path](/static/assets/visualizing-data/visualization-widgets/images/custom-widget/pack-custom-widget.png)
+  ![Custom widget Root Path](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/custom-widget/pack-custom-widget.png)
 
-  ![Pack Command](/static/assets/visualizing-data/visualization-widgets/images/custom-widget/pack-command.png)
+  ![Pack Command](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/custom-widget/pack-command.png)
 
- The SunburstChart.bicw file will be created in the output folder.
+ The SunburstChart.bicw file will be created in the output folder as shown below:
 
-  ![Sunburst bicw](/static/assets/visualizing-data/visualization-widgets/images/custom-widget/Sunburst.png)
+  ![Sunburst bicw](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/custom-widget/Sunburst.png)
 
 ## Publish Custom Widget
 
- To import the custom widgets, click on the Settings icon in the Bold BI Server, as shown in the image below:
+ To import the custom widgets click on the Settings icon in the Bold BI Server as shown in the below image:
 
-  ![Dashboard Settings](/static/assets/visualizing-data/visualization-widgets/images/custom-widget/dashboard-settings.png#max-width=75%)
+  ![Dashboard Settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/custom-widget/dashboard-settings.png#max-width=75%)
 
- Click on the `Widgets` tab, as shown in the image below.
+ Click on the "Widgets" tab as shown in the image below:
 
-  ![Widgets Tab](/static/assets/visualizing-data/visualization-widgets/images/custom-widget/widgets-section.png)
+  ![Widgets Tab](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/custom-widget/widgets-section.png)
 
- Click on `Add New Widget`, as shown in the image below.
+ Click on "Add New Widget" as shown in the image below:
 
-  ![Add Custom widget button](/static/assets/visualizing-data/visualization-widgets/images/custom-widget/Add-custom-widget.png#max-width=75%)
+  ![Add Custom widget button](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/custom-widget/Add-custom-widget.png#max-width=75%)
 
- Browse to the custom widget file location and select the custom widget (*.bicw) to be added to the designer.
+ Browse the custom widget file location and select the custom widget(*.bicw) to be added to the designer.
 
-   ![browse button](/static/assets/visualizing-data/visualization-widgets/images/custom-widget/Browse-widget.png)
+   ![browse button](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/custom-widget/Browse-widget.png)
 
- The custom widget file selected should be in `bicw` format. Refer to this [link](/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/create-new-custom-widget/#converting-the-widget-to-a-bicw-file) for converting to "bicw" format.
+ The custom widget file selected should be in "bicw" format. Refer to this [link](/embedded-bi/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/create-new-custom-widget/#converting-the-widget-to-a-bicw-file) for converting to "bicw" format.
 
-  ![bicw formatted file image](/static/assets/visualizing-data/visualization-widgets/images/custom-widget/bicw-format-widget.png)
+  ![bicw formatted file image](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/custom-widget/bicw-format-widget.png)
 
-  ![upload button](/static/assets/visualizing-data/visualization-widgets/images/custom-widget/upload-widget.png)
+  ![upload button](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/custom-widget/upload-widget.png)
 
- Once the custom widget is uploaded, it will appear under the `Custom Widgets` category. 
+ Once the custom widget is uploaded, it will appear under the "Custom Widgets" category. 
 
- Now the custom widget will appear in the Bold BI Designer, as shown in the image below.
+ Now the custom widget will appear in the Bold BI Designer as shown in the image below:
 
-  ![Custom widget in Designer Dashboard](/static/assets/visualizing-data/visualization-widgets/images/custom-widget/custom-widget-dashboard.png)
+  ![Custom widget in Designer Dashboard](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/custom-widget/custom-widget-dashboard.png)
 
- > **NOTE:** The custom widget will be published within the particular tenant alone.
+ **NOTE:** The custom widget will be published within the particular tenant alone.
 
 
 

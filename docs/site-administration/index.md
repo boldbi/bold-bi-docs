@@ -4,45 +4,38 @@ title:  Site Administration – Embedded BI | Bold BI Documentation
 description: Learn how to configure data store, email, embed settings, SSO and custom identity provider for users and groups in Bold BI deployed in your server.
 platform: bold-bi
 documentation: ug
-
 ---
 
 # Site Administration
 
-This section explains how to configure datastore, email, account activation, and embed settings in the Bold BI Server, including the Single Sign-On, Active Directory, and Azure Active Directory settings.
+This section explains how to configure datastore, email, account activation, and embed settings in the Bold BI Server including the Single Sign-On, Active Directory, and Azure Active Directory settings.
 
-You can explore the Site Administration in detail here:
+You can explore the Site Administration in detail here,
 
-[Site Settings](/site-administration/site-settings/)
+[Site Settings](/embedded-bi/rebranding/)
 
-[Custom Domain in Cloud Analytics Server](/site-administration/custom-domain-in-cloud-bi/)
+[Look and Feel](/embedded-bi/site-administration/look-and-feel-settings/)
 
-[UI Customization](/site-administration/user-interface-customization/)
+[Embed Settings](/embedded-bi/site-administration/embed-settings/)
 
-[Look and Feel Settings in Cloud Analytics Server](/site-administration/look-and-feel-settings-in-cloud-bi/)
+[Data Process Settings](/embedded-bi/site-administration/data-process-settings/)
 
-[Look and Feel Settings in Embedded Analytics](/site-administration/look-and-feel-settings-in-embedded-analytics/)
+[Widget Settings](/embedded-bi/site-administration/widget-settings/)
 
-[Embed Settings](/site-administration/embed-settings/)
+[Widget Settings](/embedded-bi/site-administration/widget-settings/)
 
-[Data Process Settings](/site-administration/data-process-settings/)
+[Email Settings](/embedded-bi/site-administration/email-settings/)
 
-[Data Connector Settings](/site-administration/data-connector-settings/)
+[Account Settings](/embedded-bi/site-administration/account-settings/)
 
-[Widget Settings](/site-administration/widget-settings/)
+[Active Directory](/embedded-bi/site-administration/active-directory/)
 
-[Email Settings](/site-administration/email-settings/)
+[Azure Active Directory](/embedded-bi/site-administration/azure-active-directory/)
 
-[Account Settings](/site-administration/account-settings/)
+[Notification Settings](/embedded-bi/site-administration/notification-settings/)
 
-[Active Directory](/site-administration/user-directory-settings/active-directory/)
+[Security](/embedded-bi/security-configuration/cors-settings/)
 
-[Azure Active Directory](/site-administration/user-directory-settings/azure-active-directory/)
+[Integrations](/embedded-bi/site-administration/integrations/)
 
-[Notification Settings](/site-administration/notification-settings/)
-
-[Site Credentials](/site-administration/site-credentials/)
-
-[Security](/security-configuration/cors-settings/)
-
-[Integrations](/site-administration/integrations/)
+[SSO](/embedded-bi/site-administration/sso/)

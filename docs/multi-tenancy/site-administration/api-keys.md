@@ -10,6 +10,6 @@ documentation: ug
 
 This section provides the Client id and secret information that can be used for REST API authentication.
 
-To learn more about REST API, click [here](/server-api-reference/interact-with-rest-api/).
+To know more about REST API, Click [here](/embedded-bi/rest-api-reference/interact-with-rest-api/)
 
-![API Keys](/static/assets/multi-tenancy/images/api-keys.png)
+![API Keys](/bold-bi-docs/static/assets/embedded/multi-tenancy/images/api-keys.png)

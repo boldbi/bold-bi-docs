@@ -1,33 +1,27 @@
 ---
 layout: post
 title:  Admin Privileges in User Management Server | Bold BI Docs
-description: Learn the admin privileges such as, configuring email settings, embed settings, account settings, custom rebranding, API keys information, license update, and manage localization in the user management server.
+description: Learn the admin privileges such as, configuring email settings, embed settings, account settings, custom rebranding, API keys information and license update in the user management server.
 platform: bold-bi
 documentation: ug
 ---
 
 # Site Administration
 
-This section explains how to configure email, embed settings, account settings, custom rebranding, API keys information, license updates, and manage localization in the User Management Server.
+This section explains how to configure email, embed settings, account settings, custom rebranding, API keys information and license update in the User Management Server.
 
-You can explore the Site Administration details below:
+You can explore the Site Administration in detail here,
 
-[Rebranding](/multi-tenancy/site-administration/rebranding/)
+[Rebranding](/embedded-bi/multi-tenancy/site-administration/rebranding/)
 
-[Embed Settings](/site-administration/embed-settings/)
+[Embed Settings](/embedded-bi/site-administration/embed-settings/)
 
-[Email Settings](/multi-tenancy/site-administration/email-settings/)
+[Email Settings](/embedded-bi/multi-tenancy/site-administration/email-settings/)
 
-[Account Settings](/multi-tenancy/site-administration/account-settings/)
+[Account Settings](/embedded-bi/multi-tenancy/site-administration/account-settings/)
 
-[API Keys](/multi-tenancy/site-administration/api-keys/)
+[API Keys](/embedded-bi/multi-tenancy/site-administration/api-keys/)
 
-[Authentication](/multi-tenancy/site-administration/authentication/)
+[Authentication](/embedded-bi/multi-tenancy/site-administration/authentication/)
 
-[Manage License](/multi-tenancy/site-administration/manage-license/)
-
-[Manage Localization](/multi-tenancy/site-administration/manage-localization/)
-
-[Azure Active Directory B2C](/multi-tenancy/site-administration/authentication/azure-b2c-settings/)
-
-[API Reference](/multi-tenancy/api-reference/)
+[Manage License](/embedded-bi/multi-tenancy/site-administration/manage-license/)

@@ -10,10 +10,8 @@ documentation: ug
 
 This section describes how to enable or disable usage analytics in the dashboard settings.
 
-You can enable or disable usage analytics in the dashboard settings, and based on this, the `Usage Analytics` option will be available on the dashboard listing page. By default, usage analytics settings will be enabled.
+You can enable or disable usage analytics in the dashboard settings and based on this, `Usage Analytics` option will be available in the dashboard listing page. By default, usage analytics settings will be enabled.
 
-![Usage Analytics](/static/assets/site-administration/images/usage-analytics.png#width=60%)
+![Usage Analytics](/bold-bi-docs/static/assets/embedded/site-administration/images/usage-analytics.png#width=60%)
 
-![Usage Analytics Dashboard](/static/assets/site-administration/images/usage-analytics-dashboard.png#width=50%)
-
-> **NOTE:** This feature is available in On-Premises Deployment but not in Syncfusion Managed Cloud Server.
+![Usage Analytics Dashboard](/bold-bi-docs/static/assets/embedded/site-administration/images/usage-analytics-dashboard.png#width=50%)
