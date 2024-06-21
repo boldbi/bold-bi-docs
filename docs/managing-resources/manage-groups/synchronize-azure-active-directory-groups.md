@@ -17,17 +17,17 @@ This section explains how to synchronize the imported Azure Active Directory gro
 
 You can navigate to the group synchronization page from the groups page as shown in the following image.
 
-![Azure Active Directory Synchronization Link](/bold-bi-docs/static/assets/embedded/managing-resources/manage-groups/images/Azure-Group-Synchronization-navigation.png)
+![Azure Active Directory Synchronization Link](/static/assets/embedded/managing-resources/manage-groups/images/Azure-Group-Synchronization-navigation.png)
 
 ## Synchronize Groups
 
 Bold BI will list the Azure Active Directory groups that are already imported as shown in the following image.
 
-![Azure Active Directory Imported group list](/bold-bi-docs/static/assets/embedded/managing-resources/manage-groups/images/Azure-Active-Direcory-Group-list.png)
+![Azure Active Directory Imported group list](/static/assets/embedded/managing-resources/manage-groups/images/Azure-Active-Direcory-Group-list.png)
 
 Choose the groups you want to synchronize and click `Synchronize` at the top. 
 
-![Azure Active Directory Group Synchronize button](/bold-bi-docs/static/assets/embedded/managing-resources/manage-groups/images/Azure-Group-Synchronize-button.png)
+![Azure Active Directory Group Synchronize button](/static/assets/embedded/managing-resources/manage-groups/images/Azure-Group-Synchronize-button.png)
 
 ### Synchronization procedure
 
@@ -41,10 +41,10 @@ Choose the groups you want to synchronize and click `Synchronize` at the top.
 
 After synchronization is completed, the number of groups modified, deleted, and duplicated will be shown in the success message box as shown in the following image.
 
-![Synchronization confirmation window](/bold-bi-docs/static/assets/embedded/managing-resources/manage-groups/images/Synchronize-azure-group-success-window.png#width=70%)
+![Synchronization confirmation window](/static/assets/embedded/managing-resources/manage-groups/images/Synchronize-azure-group-success-window.png#width=70%)
 
 ## Duplicate Groups
 
 Azure Active Directory groups who has the same group name as that of the Bold BI groups(which are already present) will be marked as duplicate groups and will not be allowed to synchronize with Azure Active Directory.
 
-![Display Duplicated groups](/bold-bi-docs/static/assets/embedded/managing-resources/manage-groups/images/highlight-duplicate-azure-group.png)
+![Display Duplicated groups](/static/assets/embedded/managing-resources/manage-groups/images/highlight-duplicate-azure-group.png)

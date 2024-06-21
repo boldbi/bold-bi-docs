@@ -18,7 +18,7 @@ Follow these steps to install the Bold BI Enterprise Edition in silent mode:
 
 3. In the **Run** command box, type `%temp%` and press enter. The Temp folder will be opened. The **boldbienterpriseedition_(version)_(timestamp).exe** file will be present in one of the **is-xxxx** folder.
 
-    ![Temp Location](/bold-bi-docs/static/assets/embedded/faq/images/temp-location.png)
+    ![Temp Location](/static/assets/embedded/faq/images/temp-location.png)
 
 4. Copy the extracted **boldbienterpriseedition_(version)_(timestamp).exe** file in any of the local drive.
 
@@ -49,7 +49,7 @@ Follow these steps to install the Bold BI Enterprise Edition in silent mode:
    </table>
 
    **Example:**
-   ![Run Command with Parameters](/bold-bi-docs/static/assets/embedded/faq/images/run-command-with-parameters.png)
+   ![Run Command with Parameters](/static/assets/embedded/faq/images/run-command-with-parameters.png)
 
    Once the setup installation is completed, the Bold BI application will be configured, and ready to start dashboarding. 
 
@@ -70,6 +70,6 @@ Follow these steps to install the Bold BI Enterprise Edition in silent mode:
 
    **Example:**
 
-   ![Slient Start Up False](/bold-bi-docs/static/assets/embedded/faq/images/silen-start-up-false.png)
+   ![Slient Start Up False](/static/assets/embedded/faq/images/silen-start-up-false.png)
 
    Once the setup installation is completed, you can provide the configuration details in the Bold BI application UI. Refer to this [document](https://help.boldbi.com/embedded-bi/application-startup/latest/) to learn more about application startup

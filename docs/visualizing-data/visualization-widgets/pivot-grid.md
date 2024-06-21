@@ -12,7 +12,7 @@ documentation: ug
 
 Pivot grid allows you to display summarized data in cross tabular format i.e., in rows and columns.
 
-![pivot-grid](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/pivot-grid-demo.png)
+![pivot-grid](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/pivot-grid-demo.png)
 
 ## How to configure table data to pivot grid?
 
@@ -24,52 +24,52 @@ The following steps explain how to configure the data to a Pivot grid:
 
 1.  Drag and drop the pivot grid widget into a canvas and resize it to your required size.
 
-![pivot-grid_dragDrop](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/drop-widget.png)
+![pivot-grid_dragDrop](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/drop-widget.png)
 
 2.  To open the Property pane, click the `Properties` icon in the Configuration panel.
 
-![configurationPanel_propertyIcon](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/designerpropertiesbutton.png)
+![configurationPanel_propertyIcon](/static/assets/embedded/visualizing-data/visualization-widgets/images/designerpropertiesbutton.png)
 
 3.  In the property pane, switch to the `ASSIGN DATA` tab from the `PROPERTIES,` to assign data to the pivot grid data fields.
 
-![pivot-grid_properties](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/properties.png)
+![pivot-grid_properties](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/properties.png)
 
 4.  The `ASSIGN DATA` tab will be opened with available measures and dimensions from the connected data source. Also it contains `Value(s),` `Row(s),` and `Column(s)` field as mentioned earlier.
 
-![pivot-grid_assignData](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/assign-data.png)
+![pivot-grid_assignData](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/assign-data.png)
 
 #### Adding data to Value(s) field
 
 You can add more than one `Measures` into `Value(s)` field by drag and drop the required measure.
 
-![pivot-grid_bindValue](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/bindValue.png)
+![pivot-grid_bindValue](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/bindValue.png)
 
 
 Now the pivot grid will be rendered like this for single data
 
-![pivot-grid_valueRender](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/pivot-value-render.png)
+![pivot-grid_valueRender](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/pivot-value-render.png)
 
 Pivot grid will be rendered like this, if more than one data bind to `Value(s)`
 
-![pivot-grid_valueMultiRender](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/pivot-gridmultirender.png)
+![pivot-grid_valueMultiRender](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/pivot-gridmultirender.png)
 
 If more than one data is added to `Value(s)` field and then grid column is separated based on the number of data attached to `Value(s)` field, as shown in above image.
 
 Click the `Settings` option to change the name by using the `Rename` option and the required summary type from the available summary types shown in `Settings.`
 
-![pivot-grid_valueSettingIcon](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/settings-value.png)
+![pivot-grid_valueSettingIcon](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/settings-value.png)
 
 #### Filtering data 
 
 You can filter the data to be displayed in pivot grid by using filter. For more details, refer [filter](/embedded-bi/visualizing-data/working-with-widgets/configuring-widget-filters/).
 
-![pivot-grid_valueSettingFilter](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/pivot-gridfilter.png)
+![pivot-grid_valueSettingFilter](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/pivot-gridfilter.png)
 
 #### Formatting data
 
 You can format the data to be displayed in the pivot grid by using format option. For more details, refer [measure format](/embedded-bi/visualizing-data/working-with-widgets/formatting-measure-type-column/)
 
-![pivot-grid_valueSettingFormat](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/pivot-gridformat.png)
+![pivot-grid_valueSettingFormat](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/pivot-gridformat.png)
 
 
 You can add more than one column from `Dimensions` field into `Value(s)` field.
@@ -78,31 +78,31 @@ You can add more than one column from `Dimensions` field into `Value(s)` field.
 
 Adding single data to `Value(s)` and `Column(s)`
 
-![pivot-gridsingleValuesColumn](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/pivot-gridsinglevaluecolumn.png)
+![pivot-gridsingleValuesColumn](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/pivot-gridsinglevaluecolumn.png)
 
-![pivot-grid-singleValuesColumn](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/pivot-gridsinglevaluecolumn-change.png)
+![pivot-grid-singleValuesColumn](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/pivot-gridsinglevaluecolumn-change.png)
 
 You can change the `Settings`.
 
-![Settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/settings.png)
+![Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/settings.png)
 
 #### Renaming fields
 
 The configured field names can be edited by using the `Rename` option provided in the settings menu.
 
-![Rename](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/rename.png)
+![Rename](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/rename.png)
 
 #### Sorting data
 
 You can `Sort` the dimension data using `Sort` option under `Settings` menu list. To apply sorting for the data, refer [Sort](/embedded-bi/visualizing-data/working-with-widgets/advanced-sorting/#dimension-column).
 
-![Sort Settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/sortdimension.png)
+![Sort Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/sortdimension.png)
 
 #### Filtering data
 
 You can apply filters by selecting the filter in settings. For more details, refer to the [filter](/embedded-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column).
 
-![Configuring widget filters](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/configuring-widget-filters.png)
+![Configuring widget filters](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/configuring-widget-filters.png)
 
 
 Similarly, you can add the `Measures` and `Expressions` into the `column(s)` field.
@@ -111,7 +111,7 @@ Similarly, you can add the `Measures` and `Expressions` into the `column(s)` fie
 
 You can drag and drop the `Measure` or `Dimension` into the `Row(s)` field. 
 
-![pivot-grid_rowData](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/rowdata.png)
+![pivot-grid_rowData](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/rowdata.png)
 
 You can apply [filter](/embedded-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column) and [sort](/embedded-bi/visualizing-data/working-with-widgets/advanced-sorting/#dimension-column) option for the rows field, if required.
 
@@ -121,7 +121,7 @@ If more than one data is added to `Column(s)` field and then the arrow icon or n
 
 Adding Multiple data to `Column(s)` with single `Value(s)` and `Row(s)`
 
-![pivot-grid_multipleColumn](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/pivot-gridmultiplecolumn.png)
+![pivot-grid_multipleColumn](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/pivot-gridmultiplecolumn.png)
 
 
 #### Adding Multiple Row(s)
@@ -130,7 +130,7 @@ If more than one data is added to `Row(s)` field and then the arrow icon or node
 
 Adding Multiple data to `Row(s)` with single `Value(s)` and `Column(s)`
 
-![pivot-grid_multipleRow](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/pivot-gridmultiplerow.png)
+![pivot-grid_multipleRow](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/pivot-gridmultiplerow.png)
 
 #### Hidden column section
 
@@ -144,7 +144,7 @@ You can configure the `tooltip` section to showcase the additional information i
 
 To remove the added data from fields click the highlighted cross icon.
 
-![pivot-grid_valueRemove](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/pivot-remove.png)
+![pivot-grid_valueRemove](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/pivot-remove.png)
 
 > **Important** 
 
@@ -165,7 +165,7 @@ To format pivot grid follow the below steps
 
 The property window will be opened.
 
-![Property window](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/pivot-property-window.png)
+![Property window](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/pivot-property-window.png)
 
 You can see the list of properties available for the widget with default value.
 
@@ -173,53 +173,53 @@ You can see the list of properties available for the widget with default value.
 
 Name, Subtitle and Description for pivot-grid can be given through these properties.
 
-![Pivot grid property Name](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/property.png)
+![Pivot grid property Name](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/property.png)
 
 #### Name 
 
 This allows you to set `title` for this pivot-grid widget.
 
-![Pivot grid property Name](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/Name.png)
+![Pivot grid property Name](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/Name.png)
 
 #### Subtitle
 
 This allows you to set `subtitle` for this pivot-grid widget.
 
-![Pivot grid property Name](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/Subtitle.png)
+![Pivot grid property Name](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/Subtitle.png)
 
 #### Description
 
 This allows you to set brief explanation about this pivot-grid widget.
 
-![Pivot grid property Name](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/Description.png)
+![Pivot grid property Name](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/Description.png)
 
 ### Basic Settings
 
 `Basic Settings` contains the general property for pivot grid, which includes value sorting, collapsing and expanding nodes state, saving the state of nodes and wrapping the text. 
 
-![Basic Settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/basic-settings.png)
+![Basic Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/basic-settings.png)
 
 #### Show Tooltip
 
 This option allows you to toggle the visibility of tooltip in the pivot grid.
 
-![Pivot grid property Name](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/tooltip.png)
+![Pivot grid property Name](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/tooltip.png)
 
 #### Allow Value Sorting
 
 If we click the column header, the value field get sorted as ascending or descending when the property `Allow Value Sorting` is enabled.
 
-![pivot-grid_prop-basic-sorting](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/value-sorting.png)
+![pivot-grid_prop-basic-sorting](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/value-sorting.png)
 
 #### Expand Nodes by Default
 
 Nodes are expanded by default, if this property's checkbox is checked. 
 
-![pivot-grid_prop-basic-nodes](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/pivot-gridnodes.png)
+![pivot-grid_prop-basic-nodes](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/pivot-gridnodes.png)
 
 By enabling `Expand nodes` property, **Save Nodes state** property will be hidden.
 
-![pivot-grid_prop-basic-nodes](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/pivot-node.png)
+![pivot-grid_prop-basic-nodes](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/pivot-node.png)
 
 #### Save Nodes State
 
@@ -241,7 +241,7 @@ The columns in the pivot grid can be made to auto-size based on the length of th
 
 > **NOTE:** If you enable this property, **Column Width**, **Header Column Width** will be disabled.
 
-![pivot-grid_prop-basic-nodes](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/fits-content.png)
+![pivot-grid_prop-basic-nodes](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/fits-content.png)
 
 > **Note**: The `Virtualization` dynamically loads the given data when you scroll down the pivot grid. If any one of these properties **(Fit to content, allow text wrap, and allow column resize)** is enabled then the `virtualization` disables. Also, we do not recommend these properties **(Fit to content, allow text wrap, and allow column resize)** when using a large number of records.
 
@@ -249,7 +249,7 @@ The columns in the pivot grid can be made to auto-size based on the length of th
 
 It shows the values in rows.
 
-![pivot-grid_prop-basic-nodes](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/values-rows.png)
+![pivot-grid_prop-basic-nodes](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/values-rows.png)
 
 #### Hide Empty Headers
 
@@ -257,23 +257,23 @@ This option allows you to hide 'null' or ‘empty’ headers, if it is present i
 
 In the following image, the column headers have ‘(Null)’ values in data. 
 
-![pivot-grid empty header cell](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/pivot-null-headers.png)
+![pivot-grid empty header cell](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/pivot-null-headers.png)
 
 By enabling this option, the (Null) header column gets hidden.
 
-![Pivot-grid empty header cell hidden](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/pivot-null-headers-hidden.png)
+![Pivot-grid empty header cell hidden](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/pivot-null-headers-hidden.png)
 
 #### Empty Cell Content
 
 This option allows you to set value for the empty cells in the pivot grid.
 
-![Pivot-grid empty cell content value](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/pivot-empty-content-value.png)
+![Pivot-grid empty cell content value](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/pivot-empty-content-value.png)
 
 ### Content Settings
 
 This section allows you to customize the height and width of the pivot grid cells.
 
-![pivot-grid-content-settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/content-settings.png)
+![pivot-grid-content-settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/content-settings.png)
 
 #### Row Height
 
@@ -289,79 +289,79 @@ This option allows you to customize the width of row headers (first column) in t
 
 Pivot grid with default value.
 
-![Pivot content settings default](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/pivot-content-settings-default.png)
+![Pivot content settings default](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/pivot-content-settings-default.png)
 
 Pivot grid with customized value
 
-![Pivot content settings default](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/pivot-content-settings-customize.png)
+![Pivot content settings default](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/pivot-content-settings-customize.png)
 
 ### Group Bar Settings
 
 This section contains all the property related to group bar (i.e., row and column header), which includes show or hide, sorting and filtering properties for group bar.
 
-![pivot-grid_prop-groupBar](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/groupbar.png)
+![pivot-grid_prop-groupBar](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/groupbar.png)
 
 #### Show Group Bar
 
 If this property's checkbox is unchecked, and then the group bar (i.e., row and column header) is disabled as shown in below image. By checking this property the group bar will be displayed.
 
-![pivot-grid_prop-group-show](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/prop-group-show.png)
+![pivot-grid_prop-group-show](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/prop-group-show.png)
 
 #### Allow Sorting
 
 `Allow Sorting` allows user to enable and disable sorting property for group bar.
 
-![pivot-grid_prop-group-sorting](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/group-sorting.png)
+![pivot-grid_prop-group-sorting](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/group-sorting.png)
 
 #### Allow Filtering
 
 `Allow Filtering` allows user to enable and disable Filtering property for group bar.
 
-![pivot-grid_prop-group-filtering](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/group-filtering.png)
+![pivot-grid_prop-group-filtering](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/group-filtering.png)
 
 #### Grand Total Settings
 
 This section contain the show and hide properties for grand and sub totals of rows and columns.
 
-![pivot-grid_prop-grandTotal](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/grand-total.png)
+![pivot-grid_prop-grandTotal](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/grand-total.png)
 
 #### Show Row Grand Totals
 
 This property allows user to show or hide row's grand total. The row's grand total in the below image will be disabled if this property is unchecked.
 
-![pivot-grid_prop-grand-row](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/grand-total-row.png)
+![pivot-grid_prop-grand-row](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/grand-total-row.png)
 
 #### Show Column Grand Totals
 
 This property allows user to show or hide column's grand total. The column's grand total in the below image will be disabled if this property is unchecked.
 
-![pivot-grid_prop-grand-column](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/prop-grand-column.png)
+![pivot-grid_prop-grand-column](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/prop-grand-column.png)
 
 #### Show Row Sub Totals
 
 This property allows user to show or hide row's sub total. The below image is an example for disabled sub total for row.
 
-![pivot-grid_prop-grand-subRow](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/row-subtotals.png)
+![pivot-grid_prop-grand-subRow](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/row-subtotals.png)
 
 #### Show Column Sub Totals
 
 This property allows user to show or hide column's sub total. The below image is an example for disabled sub total for column.
 
-![pivot-grid_prop-grand-subColumn](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/subcolumntotal.png)
+![pivot-grid_prop-grand-subColumn](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/subcolumntotal.png)
 
 ### Edit Field Settings
 
 You can edit the field settings.
 
-![Edit Field Settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/edit-fieldsettings.png)
+![Edit Field Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/edit-fieldsettings.png)
 
-![Edit Field Settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/edit-field-settings-change.png)
+![Edit Field Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/edit-field-settings-change.png)
 
 #### Show No Data Item
 
 `Show No Data Item` displays the empty data cell of selected `Name` from `Edit Field Settings`. For example, if the ShipCity's `Show No Data Item` is checked and then it displays all the empty data points as empty cell similar to the below image.
 
-![pivot-grid_prop-edit-noDataItem](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/nodata.png)
+![pivot-grid_prop-edit-noDataItem](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/nodata.png)
 
 In the above image other than Campinas, all other cities have empty data and so it displayed as empty cells. 
 
@@ -369,7 +369,7 @@ In the above image other than Campinas, all other cities have empty data and so 
 
 This allows you to align Column header, Row header and Values to either left, right, or center.
 
-![pivot-alignment-settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/pivot-alignment-settings.png)
+![pivot-alignment-settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/pivot-alignment-settings.png)
 
 ***Row Header*** - You can align row header to either left, center, or right. By default, it will be Left.
 
@@ -381,33 +381,33 @@ This allows you to align Column header, Row header and Values to either left, ri
 
 This section explains how to format the pivot grid cells. 
 
-![Formatting properties](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/formatting-properties.png)
+![Formatting properties](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/formatting-properties.png)
 
 
 #### Group panel background color
 
 This allows you to select the color for the group panel’s background. The default value is `#e9e9e9`. 
 
-![Group panel background color](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/group-panel.png)
+![Group panel background color](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/group-panel.png)
 
 #### Header background color
 
 This allows you to select the color for the header row’s background. The default value is `#eeeeee`. 
 
-![Header background color](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/background-color.png)
+![Header background color](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/background-color.png)
 
 
 #### Header foreground color
 
 This allows you to select the color for the header row’s foreground. The default value is `#333333`. 
 
-![Header foreground color](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/foreground-color.png)
+![Header foreground color](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/foreground-color.png)
 
 #### Column representation
 
 You can define the column value represented as simple text or condition-based formatted text. This lists out the columns added to the pivot grid widget.
 
-![Columns list](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/columns-list.png)
+![Columns list](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/columns-list.png)
 
 #### Value 
 
@@ -417,43 +417,43 @@ Select value as display type to get the column values represented as it is.
 
 Select Advance setting to configure conditions and apply color to the cells based on that. Click [here](/embedded-bi/visualizing-data/visualization-widgets/grid/#how-to-apply-conditional-formatting-in-grid) for more details.  
 
-![Advanced settings  widget](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/advanced-settings-widget.png)
+![Advanced settings  widget](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/advanced-settings-widget.png)
 
 ### Pivot Grid as Heatmap
 
 Using the conditional formatting, you can customize the pivot grid as a Heatmap.
 
-![pivot grid As Heatmap](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/pivot-heatmap.png)
+![pivot grid As Heatmap](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/pivot-heatmap.png)
 
 ### How to configure pivot grid as a heatmap
 
 1. In the `properties` panel, under the `Formatting` section select the field name that configured in value, then click the `Advanced Setting` radio button.
 
-![Enable Advanced Settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/pivot-heatmap-field-selection.png)
+![Enable Advanced Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/pivot-heatmap-field-selection.png)
 
 2. Click the `Customize` button, now the `Advanced Setting` will open.
 
-![Advanced settings applied widget](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/advanced-settings.png)
+![Advanced settings applied widget](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/advanced-settings.png)
 
 3. Customize the colors as per your needs and click the save button.
 
-![Advanced Settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/pivot-heatmap-customized-conditional-formatting.png)
+![Advanced Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/pivot-heatmap-customized-conditional-formatting.png)
 
 ### Pivot Grid Datetime Hierarchy Fields
 
 It can be achieved by applying date formatting for configured fields.
 
-![Pivot Grid Datetime hierarchy](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/pivot-date-hierarchy.png)
+![Pivot Grid Datetime hierarchy](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/pivot-date-hierarchy.png)
 
 ### How to do pivot grid datetime hierarchy
 
 1. configure the date fields as follows,
 
-![Assign Data Section](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/pivot-date-hierarchy-row-section-before.png)
+![Assign Data Section](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/pivot-date-hierarchy-row-section-before.png)
 
 2. Click the settings menu icon and select the date format based on the hierarchy.
 
-![Assign Data settings menu](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/pivot-date-hierarchy-field-settings.png)
+![Assign Data settings menu](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/pivot-date-hierarchy-field-settings.png)
 
 3. Do the same for remaining fields.
 
@@ -461,11 +461,11 @@ It can be achieved by applying date formatting for configured fields.
 
 This section allows you to customize the height and width of the pivot grid content.
 
-![Font settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/font-settings.png)
+![Font settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/font-settings.png)
 
 Pivot grid with auto font-size.
 
-![Auto font size](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/auto-font-size.png)
+![Auto font size](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/auto-font-size.png)
 
 #### Header
 
@@ -473,7 +473,7 @@ Pivot grid with auto font-size.
 
 By default, the auto font size property is enabled. So, the font size of the headers will be rendered based on the resolution. If this property is unchecked, the font size of the header can be customizable.
 
-![Header Font settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/header-font-size.png)
+![Header Font settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/header-font-size.png)
 
 #### Content
 
@@ -481,19 +481,19 @@ By default, the auto font size property is enabled. So, the font size of the hea
 
 By default, the auto font size property is enabled. So, the font size of the pivot grid content elements will be calculated based on the resolution. If this property is unchecked, the font size can be customizable.
 
-![Content Font settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/content-font-size.png)
+![Content Font settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/content-font-size.png)
 
 ### Link
 
 To configure the linking to URL or dashboard with the widget through its settings. For more details, refer to [Linking](/embedded-bi/visualizing-data/working-with-widgets/linking-urls-and-dashboards/).
 
-![pivot-grid_prop-link](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/linking.png)
+![pivot-grid_prop-link](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/linking.png)
 
 ### Filter
 
 `Filter` allows you to apply the filtering based on data field.
 
-![Filter](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/filtering.png)
+![Filter](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/filtering.png)
 
 #### Act as Master Widget
 
@@ -517,17 +517,17 @@ In case, if you have the requirement to highlight any data based on some conditi
 
 1. In the `properties` pane, under the `Formatting` section, click the `Advanced Setting` radio button.
 
-![Enable advance settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/enableadvancesettings.png)
+![Enable advance settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/enableadvancesettings.png)
 
 2. This will open the `Conditional Formatting` dialog.
 
-![Conditional formatting window](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/formatting-window.png)
+![Conditional formatting window](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/formatting-window.png)
 
 3. Select the `mode` and enter the conditions as required and click the `Save` button to apply.
 
 4. Now, the widget visualization will be updated based on the conditions.
 
-![Widget after applying  conditions](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/applied-conditions.png)
+![Widget after applying  conditions](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/applied-conditions.png)
 
 Refer to the following sections for the detailed steps on using the [Gradient](/embedded-bi/visualizing-data/visualization-widgets/pivot-grid/#gradient-mode) and [Rule](/embedded-bi/visualizing-data/visualization-widgets/pivot-grid/#rule-based-condition-mode) modes. 
 
@@ -553,7 +553,7 @@ You can define your range by entering the low, mid, and high values.
 
 This allows you to customize the `cell colors and value font style` of the pivot grid cells based on one or more numerical / text conditions.
 
-![Rule mode](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/rulemode.png)
+![Rule mode](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/rulemode.png)
 
 #### Condition name
 
@@ -563,7 +563,7 @@ You can give a meaningful name to the applied conditions.
 
 Choose the condition for measure field from the highlighted conditions.
 
-![Condition type](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/condition-add.png)
+![Condition type](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/condition-add.png)
 
 #### Value
 
@@ -585,17 +585,17 @@ Allows you to choose the title font style. (`Bold, Italic, Underline, and Supers
 
 Click `Add Condition` to specify add new condition.
 
-![Add condition](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/condition-add-rule.png)
+![Add condition](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/condition-add-rule.png)
 
 #### Delete condition
 
 Click the delete button to remove the existing condition. 
 
-![Delete condition](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/deletecondition.png)
+![Delete condition](/static/assets/embedded/visualizing-data/visualization-widgets/images/pivot-grid/deletecondition.png)
 
 ### Container appearance
 
-![Container Appearance](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/container-appearance.png)
+![Container Appearance](/static/assets/embedded/visualizing-data/visualization-widgets/images/container-appearance.png)
 
 ### Title alignment
 
@@ -647,7 +647,7 @@ This allows you to toggle the visibility of the `shadow` surrounding the widget.
 
 ### Container actions
 
-![Container Actions](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/container-actions.png)
+![Container Actions](/static/assets/embedded/visualizing-data/visualization-widgets/images/container-actions.png)
 
 #### Show header
 

@@ -14,24 +14,24 @@ The following steps will help you achieve this:
 
 1. Create the `Literal` type of dashboard parameter with the required data type value as shown
 
-    ![Create Literal Dashboard Parameter](/bold-bi-docs/static/assets/embedded/faq/images/create-literal-dashboard-parameter.png)
+    ![Create Literal Dashboard Parameter](/static/assets/embedded/faq/images/create-literal-dashboard-parameter.png)
 
 2. Create an expression with created dashboard parameter and save the data source as shown in the following.
 
-    ![Create Expression with Dashboard Parameter](/bold-bi-docs/static/assets/embedded/faq/images/create-expression-with-dashboard-parameter.png)
+    ![Create Expression with Dashboard Parameter](/static/assets/embedded/faq/images/create-expression-with-dashboard-parameter.png)
 
 3. Bind the expression in a Number Card widget as shown.
 
-    ![Configure Number Card with Expression](/bold-bi-docs/static/assets/embedded/faq/images/configure-number-card-with-expression.png)
+    ![Configure Number Card with Expression](/static/assets/embedded/faq/images/configure-number-card-with-expression.png)
 
 4. In view mode, the widget will show values based on the default value of a parameter as shown.
 
-    ![Default Value of Param in View mode](/bold-bi-docs/static/assets/embedded/faq/images/view-mode-default-value-of-param.png)
+    ![Default Value of Param in View mode](/static/assets/embedded/faq/images/view-mode-default-value-of-param.png)
 
 5. Change the input value of a parameter in view mode through `Dashboard Parameters` pop-up window and click `Apply` button
 
-    ![Change the Parameter Value](/bold-bi-docs/static/assets/embedded/faq/images/change-parameter-value.png)
+    ![Change the Parameter Value](/static/assets/embedded/faq/images/change-parameter-value.png)
 
 6. Now, the widget will show values based on entered value of a parameter
 
-    ![Widget After Changing Dashboard Parameter Value](/bold-bi-docs/static/assets/embedded/faq/images/widget-after-changing-dp-value.png)
+    ![Widget After Changing Dashboard Parameter Value](/static/assets/embedded/faq/images/widget-after-changing-dp-value.png)

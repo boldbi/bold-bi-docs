@@ -15,17 +15,17 @@ The filters applied in the dashboard can be saved automatically and the dashboar
 
 1. Enable `Auto-save filter` and disable the `default-views` as shown in the following image.
 
-    ![Auto save filter enabled](/bold-bi-docs/static/assets/embedded/site-administration/images/auto-save.png)
+    ![Auto save filter enabled](/static/assets/embedded/site-administration/images/auto-save.png)
 
 2. Open a dashboard.
 
 3. Apply any filter and view the dashboard.
 
-    ![Apply filter](/bold-bi-docs/static/assets/embedded/site-administration/images/apply-filter.png#width=65%)
+    ![Apply filter](/static/assets/embedded/site-administration/images/apply-filter.png#width=65%)
 
 4. Again open the dashboard, the dashboard will be rendered with the last applied filter to the dashboard.
 
-    ![Applied filter](/bold-bi-docs/static/assets/embedded/site-administration/images/applied-filter.png#width=65%)
+    ![Applied filter](/static/assets/embedded/site-administration/images/applied-filter.png#width=65%)
 
 The auto-save filters can be controlled by both the administrator and the user. The following section explains the same. 
 
@@ -33,7 +33,7 @@ The auto-save filters can be controlled by both the administrator and the user. 
 
 The administrator can control the auto-save filters of the dashboard globally using the Dashboard Settings tab in the settings page. If the administrator has enabled the `Auto-save filter` in the Dashboard Settings page, then the user can control the action of saving the filters applied to the dashboard in the profile page.
 
-![Auto save filter enabled](/bold-bi-docs/static/assets/embedded/site-administration/images/auto-save-settings.png)
+![Auto save filter enabled](/static/assets/embedded/site-administration/images/auto-save-settings.png)
 
 ## User control over auto-save filters
 

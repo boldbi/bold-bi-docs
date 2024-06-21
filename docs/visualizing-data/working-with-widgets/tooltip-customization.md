@@ -14,10 +14,10 @@ Tooltips help the users to know the exact numerical representation of the data r
 Initially, the widgets show the configured data values and the category of the corresponding data points as the default tooltip information, when you hover the mouse as shown in the following screenshots.
 
 *Chart widget: Shows the total sales amount for the sold top 5 categories.* 
- ![Tooltip chart widget](/bold-bi-docs/static/assets/embedded/visualizing-data/working-with-widgets/images/Tooltip01.png)
+ ![Tooltip chart widget](/static/assets/embedded/visualizing-data/working-with-widgets/images/Tooltip01.png)
 
 *Map widget: Shows the total number of medals won by each country during the 2016 Summer Olympics.*
- ![Tooltip map widget](/bold-bi-docs/static/assets/embedded/visualizing-data/working-with-widgets/images/Tooltip02.png)
+ ![Tooltip map widget](/static/assets/embedded/visualizing-data/working-with-widgets/images/Tooltip02.png)
 
 You should showcase the additional information in the tooltip without affecting the visualization of the configured widget.
 
@@ -30,13 +30,13 @@ The following sections discuss about how to add additional tooltip fields and ho
 1.	Open the dashboard in the ` Dashboard Designer`. 
 2.	Select the  `widget` in the design layout in which you want to add additional tooltip fields. 
 3.	Click the `properties` icon as shown in the following screenshot.
- ![Click properties option](/bold-bi-docs/static/assets/embedded/visualizing-data/working-with-widgets/images/Tooltip03.png)
+ ![Click properties option](/static/assets/embedded/visualizing-data/working-with-widgets/images/Tooltip03.png)
 4.	Now, the properties pane opens. Click `ASSIGN DATA` to open the data pane. 
- ![Assign data click](/bold-bi-docs/static/assets/embedded/visualizing-data/working-with-widgets/images/Tooltip04.png)
+ ![Assign data click](/static/assets/embedded/visualizing-data/working-with-widgets/images/Tooltip04.png)
 5.	Drag the fields to the `Tooltip` section which you want to show in the widget’s tooltip as additional information.
- ![Configure tooltip section](/bold-bi-docs/static/assets/embedded/visualizing-data/working-with-widgets/images/Tooltip05.png)
+ ![Configure tooltip section](/static/assets/embedded/visualizing-data/working-with-widgets/images/Tooltip05.png)
 6.	Now, the widget will be rendered and on mouse hover, it will show the additional information as tooltip points for the configured measure. 
- ![Widget with tooltip](/bold-bi-docs/static/assets/embedded/visualizing-data/working-with-widgets/images/Tooltip06.png)
+ ![Widget with tooltip](/static/assets/embedded/visualizing-data/working-with-widgets/images/Tooltip06.png)
 
 > **IMPORTANT:** <br>
     1. Only measure fields are allowed as additional tooltip fields. If the Dimension field is added in the tooltip section, it will only act as a measure field.<br>
@@ -55,48 +55,48 @@ Using the `Rename` option provided in the `settings` menu, you can rename the to
 
 To rename the tooltip field, follow these steps:
 1.	Click the `Settings` menu and select the `Rename` option as shown in the following screenshot. 
- ![Field rename option](/bold-bi-docs/static/assets/embedded/visualizing-data/working-with-widgets/images/Tooltip07.png)
+ ![Field rename option](/static/assets/embedded/visualizing-data/working-with-widgets/images/Tooltip07.png)
 Now, the text will become editable. 
- ![Column rename option](/bold-bi-docs/static/assets/embedded/visualizing-data/working-with-widgets/images/Tooltip08.png)
+ ![Column rename option](/static/assets/embedded/visualizing-data/working-with-widgets/images/Tooltip08.png)
 2.	Enter the text you want, and press `Enter` to save the changes.
- ![Editing field display name](/bold-bi-docs/static/assets/embedded/visualizing-data/working-with-widgets/images/Tooltip09.png)
+ ![Editing field display name](/static/assets/embedded/visualizing-data/working-with-widgets/images/Tooltip09.png)
  
 Widget tooltip after modifying the field name
- ![Edited view](/bold-bi-docs/static/assets/embedded/visualizing-data/working-with-widgets/images/Tooltip10.png)
+ ![Edited view](/static/assets/embedded/visualizing-data/working-with-widgets/images/Tooltip10.png)
 
 ### Changing the aggregation type
 You can change the `summary type` of the measure field from the `settings` menu and refer to [this section](/embedded-bi/visualizing-data/working-with-widgets/aggregating-value-columns-based-on-type/) to learn more details on aggregation types.
- ![Change aggregation type](/bold-bi-docs/static/assets/embedded/visualizing-data/working-with-widgets/images/Tooltip11.png)
+ ![Change aggregation type](/static/assets/embedded/visualizing-data/working-with-widgets/images/Tooltip11.png)
 
  ### Changing the first or last value of the dimension field
 
  You can select `First` or `Last` option from the `settings` menu as follows. This option will be enabled for the dimension or date field.
 
-![First and Last Option](/bold-bi-docs/static/assets/embedded/visualizing-data/working-with-widgets/images/first-last-settings.png)
+![First and Last Option](/static/assets/embedded/visualizing-data/working-with-widgets/images/first-last-settings.png)
 
 When the `First` option is selected, the top value of the dimension or date field can be obtained based on the measure column, configured in the `Value(s)` section and displays the tooltip value as shown in the following screenshots.
 
-![First Settings Option](/bold-bi-docs/static/assets/embedded/visualizing-data/working-with-widgets/images/first-settings.png)
+![First Settings Option](/static/assets/embedded/visualizing-data/working-with-widgets/images/first-settings.png)
 
-![First Settings Option For Widgets](/bold-bi-docs/static/assets/embedded/visualizing-data/working-with-widgets/images/first-settings-widgets.png)
+![First Settings Option For Widgets](/static/assets/embedded/visualizing-data/working-with-widgets/images/first-settings-widgets.png)
 
 When the `Last` option is selected, the last value of the dimension or date field can be obtained based on the measure column, configured in the `Value(s)` section and displays the tooltip value as shown in the following screenshots.
 
-![Last Settings Option](/bold-bi-docs/static/assets/embedded/visualizing-data/working-with-widgets/images/last-settings.png)
+![Last Settings Option](/static/assets/embedded/visualizing-data/working-with-widgets/images/last-settings.png)
 
-![Last Settings Option For Widgets](/bold-bi-docs/static/assets/embedded/visualizing-data/working-with-widgets/images/last-settings-widget.png)
+![Last Settings Option For Widgets](/static/assets/embedded/visualizing-data/working-with-widgets/images/last-settings-widget.png)
 
 For date column, `First` or `Last` value will be shown in date time format as shown in the  following screenshot.
 
-![Last Option For Date Column](/bold-bi-docs/static/assets/embedded/visualizing-data/working-with-widgets/images/last-settings-date-column.png)
+![Last Option For Date Column](/static/assets/embedded/visualizing-data/working-with-widgets/images/last-settings-date-column.png)
 
 ### Measure formatting
 
 The measure value can be formatted by clicking the `Format` menu option from the `settings` menu. 
- ![Measure formatting option](/bold-bi-docs/static/assets/embedded/visualizing-data/working-with-widgets/images/Tooltip12.png)
+ ![Measure formatting option](/static/assets/embedded/visualizing-data/working-with-widgets/images/Tooltip12.png)
 
 You can refer to [this section](/embedded-bi/visualizing-data/working-with-widgets/formatting-measure-type-column/) to learn more details about formatting. 
 
 Screenshot of the widget with applied measure formatting
 
- ![After formatting](/bold-bi-docs/static/assets/embedded/visualizing-data/working-with-widgets/images/Tooltip13.png)
+ ![After formatting](/static/assets/embedded/visualizing-data/working-with-widgets/images/Tooltip13.png)

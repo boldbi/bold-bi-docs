@@ -21,7 +21,7 @@ Click the `Refresh Settings` option in the tool bar to open the `Refresh Setting
 
 Select `Enable Autorefresh`. Click `Apply`.
 
-![Refresh setting](/bold-bi-docs/static/assets/embedded/working-with-dashboards/preview-dashboards/images/refreshsetting.PNG)
+![Refresh setting](/static/assets/embedded/working-with-dashboards/preview-dashboards/images/refreshsetting.PNG)
 
 ## How to set the timer for automatic refresh?
 
@@ -31,7 +31,7 @@ Select `Enable Autorefresh` in `Refresh Settings` dialog.
 
 Set the time interval ranging from a minimum of `30 seconds`. Click `Apply`.
 
-![Time interval](/bold-bi-docs/static/assets/embedded/working-with-dashboards/preview-dashboards/images/refreshsetting_timeinterval.PNG)
+![Time interval](/static/assets/embedded/working-with-dashboards/preview-dashboards/images/refreshsetting_timeinterval.PNG)
 
 ## How to enable automatic refresh for particular widgets in a dashboard?
 
@@ -43,7 +43,7 @@ Select `Refresh Selected Widgets Only`. This will enable the widgets list below 
 
 Select the widgets that you need to get refreshed automatically. Click `Apply`.
 
-![Selected widget](/bold-bi-docs/static/assets/embedded/working-with-dashboards/preview-dashboards/images/refreshsetting_selectedwidget.PNG)
+![Selected widget](/static/assets/embedded/working-with-dashboards/preview-dashboards/images/refreshsetting_selectedwidget.PNG)
 
 ## How to enable automatic refresh only for any record insertion or deletion in the associated database?
 
@@ -55,5 +55,5 @@ Select `Refresh Selected Widgets Only` if required. This will enable the widgets
 
 Select `Refresh Only for Insertion/Deletion of Rows`. Click `Apply`.
 
-![Insert or delete rows](/bold-bi-docs/static/assets/embedded/working-with-dashboards/preview-dashboards/images/refreshsetting_insertionordeletingofrows.PNG)
+![Insert or delete rows](/static/assets/embedded/working-with-dashboards/preview-dashboards/images/refreshsetting_insertionordeletingofrows.PNG)
 

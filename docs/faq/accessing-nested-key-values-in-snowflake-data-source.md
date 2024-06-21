@@ -10,33 +10,33 @@ documentation: ug
 
 1.	Drag and drop the table which has the **Object** data type field in Bold BI as shown in the below image. 
 
-    ![Object Field](/bold-bi-docs/static/assets/embedded/faq/images/object-data-type-field.png)  
+    ![Object Field](/static/assets/embedded/faq/images/object-data-type-field.png)  
     > **NOTE:**  The object datatype will be hidden on data preview but can be accessed by creating expressions in Bold BI.
 
 2.	Save the data source and continue to create dashboard in Bold BI.
 
-    ![Save Datasource](/bold-bi-docs/static/assets/embedded/faq/images/save-datasource.png)
+    ![Save Datasource](/static/assets/embedded/faq/images/save-datasource.png)
 
 3.	Drag and drop the grid widget and click on the assign data section to start creating expressions.   
   
-    ![Create Expression](/bold-bi-docs/static/assets/embedded/faq/images/create-expression.png)
+    ![Create Expression](/static/assets/embedded/faq/images/create-expression.png)
    
 4.	Press on the expressions button and add the JSON path value as shown in the below image.
 
-    ![Expression Button](/bold-bi-docs/static/assets/embedded/faq/images/expression-button.png)
+    ![Expression Button](/static/assets/embedded/faq/images/expression-button.png)
   
     To remove double quotes from the parsed JSON values, you need to cast a data type along with the JSON path as shown in the following image.
     
-    ![JSON Path](/bold-bi-docs/static/assets/embedded/faq/images/json-path.png)  
+    ![JSON Path](/static/assets/embedded/faq/images/json-path.png)  
 
 5.	Assign values to the widget as shown in the below image.
     
-    ![Widget Value](/bold-bi-docs/static/assets/embedded/faq/images/widget-assign-value.png)
+    ![Widget Value](/static/assets/embedded/faq/images/widget-assign-value.png)
     
 
 6.	The final rendered widget on dashboard is as shown in the below image.
   
-    ![Render Widget](/bold-bi-docs/static/assets/embedded/faq/images/render-widget.png)
+    ![Render Widget](/static/assets/embedded/faq/images/render-widget.png)
 
 ## References:
 

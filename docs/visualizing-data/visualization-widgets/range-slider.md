@@ -12,7 +12,7 @@ documentation: ug
 
 Range Slider enables you to filter based on value or date range set through sliders. To configure a range slider, a minimum requirement of 1 column is needed.
 
-![Range Slider](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/range-slider/rangeslider.png)
+![Range Slider](/static/assets/embedded/visualizing-data/visualization-widgets/images/range-slider/rangeslider.png)
 
 ## How to configure table data to range slider?
 
@@ -20,45 +20,45 @@ The following procedure explains the data configuration of Range Slider.
 
 1.  Drag and drop the `Range Slider` control icon from the toolbox into design panel. You can find control by searching in the toolbox.
 
-![Drop Range Slider](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/range-slider/drop-widget.png)
+![Drop Range Slider](/static/assets/embedded/visualizing-data/visualization-widgets/images/range-slider/drop-widget.png)
 
 2.  Click the `Data Source` button in the configuration panel.
 
-![Data button](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/databutton.png)
+![Data button](/static/assets/embedded/visualizing-data/visualization-widgets/images/databutton.png)
 
 3.  Click the `CREATE NEW` button to launch a new connection from the connection type panel.
 
-![Data source button](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/datasourcebutton.png)
+![Data source button](/static/assets/embedded/visualizing-data/visualization-widgets/images/datasourcebutton.png)
 
 4.  In the connection type panel, click any one (Here, the `Microsoft Excel` Connection type is selected for demonstration) of the listed connection type button shown.
 
-![Data source list](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/datasourcelist.png)
+![Data source list](/static/assets/embedded/visualizing-data/visualization-widgets/images/datasourcelist.png)
 
 5.  In the `NEW DATA SOURCE` configuration panel, fill the connection type and related details. Click the `Connect` button.
 
-![Connect button](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/connectbutton.png)
+![Connect button](/static/assets/embedded/visualizing-data/visualization-widgets/images/connectbutton.png)
 
 6.  Drag your preferred table or view from the left pane from the data design view, click the `Save` button.
 
-![Virtual table](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/virtualtable.png)
+![Virtual table](/static/assets/embedded/visualizing-data/visualization-widgets/images/virtualtable.png)
 
 7.  Click the `Properties` button in the configuration panel, property pane opens. Now, switch to the `ASSIGN DATA` tab.
 
-![Designer properties button](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/designerpropertiesbutton.png)
+![Designer properties button](/static/assets/embedded/visualizing-data/visualization-widgets/images/designerpropertiesbutton.png)
 
-![Data tab](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/range-slider/rangesliderdatatab.png)
+![Data tab](/static/assets/embedded/visualizing-data/visualization-widgets/images/range-slider/rangesliderdatatab.png)
 
 8.  The data tab will be opened with available measures and dimensions from the connected data source.
 
-![Assign data](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/range-slider/rangesilderassigndata.png)
+![Assign data](/static/assets/embedded/visualizing-data/visualization-widgets/images/range-slider/rangesilderassigndata.png)
 
 9.  Bind column through drag and drop element from the sections to `Columns` section.
 
-![Configure Widget](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/range-slider/configure-widget.png)
+![Configure Widget](/static/assets/embedded/visualizing-data/visualization-widgets/images/range-slider/configure-widget.png)
 
 Here is an illustration,
 
-![Configured Widget](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/range-slider/configured-widget.png)
+![Configured Widget](/static/assets/embedded/visualizing-data/visualization-widgets/images/range-slider/configured-widget.png)
 
 
 ## How to format range slider?
@@ -67,29 +67,29 @@ You can format the Range Slider for better illustration of the view that you req
 
 ### General Settings
 
-![General Settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/range-slider/property.png)
+![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/range-slider/property.png)
 
 #### Name
 
 This allows you to set the `title` for this range slider widget.
 
-![General Settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/range-slider/Name.png)
+![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/range-slider/Name.png)
 
 #### Subtitle
 
 This allows you to set the `subtitle` for this range slider widget.
 
-![General Settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/range-slider/subtitle.png)
+![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/range-slider/subtitle.png)
 
 #### Description
 
 This allows you to set the brief explanation about this range slider widget.
 
-![General Settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/range-slider/Description.png)
+![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/range-slider/Description.png)
 
 #### Basic Settings
 
-![Basic Settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/range-slider/basic-settings.png)
+![Basic Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/range-slider/basic-settings.png)
 
 #### Range Selection
 
@@ -99,49 +99,49 @@ Single – Single value can be bounded, if you disable the `Range Selection` opt
 
 **Range Slider with Single Pointer**
 
-![Range Slider with Single Pointer](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/range-slider/single-pointer.png)
+![Range Slider with Single Pointer](/static/assets/embedded/visualizing-data/visualization-widgets/images/range-slider/single-pointer.png)
 
 Range – A range (two values) can be bounded, if you enable the `Range Selection` option.
 
 **Range Slider with Range Pointer**
 
-![Range Slider with Range Pointer](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/range-slider/range-pointer.png)
+![Range Slider with Range Pointer](/static/assets/embedded/visualizing-data/visualization-widgets/images/range-slider/range-pointer.png)
 
 #### Orientation
 
 This allows you to toggle the orientation type of `Vertical Orientation` and `Horizontal Orientation.`
 
-![Range Slider Orientation Type](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/range-slider/orientation-type.png)
+![Range Slider Orientation Type](/static/assets/embedded/visualizing-data/visualization-widgets/images/range-slider/orientation-type.png)
 
 Orientation will be set based on the widget resolutions in the`Auto` mode.
 
 #### Range Slider with Vertical Orientation
 
-![Range Slider with Vertical Orientation](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/range-slider/rangeslider-vertical.png)
+![Range Slider with Vertical Orientation](/static/assets/embedded/visualizing-data/visualization-widgets/images/range-slider/rangeslider-vertical.png)
 
 #### Range Slider with Horizontal Orientation
 
-![Range Slider with Horizontal Orientation](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/range-slider/range-pointer.png)
+![Range Slider with Horizontal Orientation](/static/assets/embedded/visualizing-data/visualization-widgets/images/range-slider/range-pointer.png)
 
 #### Label Color
 
 This allows you to customize the label color.
 
-![Range Slider with modified label color](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/range-slider/label-color-option.png)
+![Range Slider with modified label color](/static/assets/embedded/visualizing-data/visualization-widgets/images/range-slider/label-color-option.png)
 
-![Range Slider with modified label color](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/range-slider/label-color.png)
+![Range Slider with modified label color](/static/assets/embedded/visualizing-data/visualization-widgets/images/range-slider/label-color.png)
 
 #### Slider Color
 
 This allows you to customize the slider color.
 
-![Range Slider with modified slider color](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/range-slider/slider-color-option.png)
+![Range Slider with modified slider color](/static/assets/embedded/visualizing-data/visualization-widgets/images/range-slider/slider-color-option.png)
 
-![Range Slider with modified slider color](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/range-slider/slider-color.png)
+![Range Slider with modified slider color](/static/assets/embedded/visualizing-data/visualization-widgets/images/range-slider/slider-color.png)
 
 #### Filter
 
-![Filter](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/range-slider/filter.png)
+![Filter](/static/assets/embedded/visualizing-data/visualization-widgets/images/range-slider/filter.png)
 
 #### Act as Master Widget
 
@@ -159,7 +159,7 @@ When the `Enable Hierarchical Filtering` is enabled, the Top N will be applied f
 
 #### Container Appearance
 
-![Container Appearance](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/range-slider/container-appearance.png)
+![Container Appearance](/static/assets/embedded/visualizing-data/visualization-widgets/images/range-slider/container-appearance.png)
 
 #### Title Alignment
 
@@ -207,7 +207,7 @@ This allows you to toggle the visibility of the `shadow` surrounding the widget.
 
 #### Container actions
 
-![Container Actions](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/range-slider/container-actions.png)
+![Container Actions](/static/assets/embedded/visualizing-data/visualization-widgets/images/range-slider/container-actions.png)
 
 #### Show Header
 

@@ -17,8 +17,8 @@ This section explains how to share the current dashboard filtered view without s
 
 2. To share the current state of the dashboard, click on the `Get Link` option like below.
 
-      ![get-link-icon](/bold-bi-docs/static/assets/embedded/managing-resources/manage-dashboards/images/get-link-icon.png#width=50%)
+      ![get-link-icon](/static/assets/embedded/managing-resources/manage-dashboards/images/get-link-icon.png#width=50%)
 
 3. Get the URL of the dashboard from this dialog box. You can share the dashboard in its current state by copying the URL of the dashboard.     
     
-      ![get-link-copy](/bold-bi-docs/static/assets/embedded/managing-resources/manage-dashboards/images/get-link-copy.png#width=40%)
+      ![get-link-copy](/static/assets/embedded/managing-resources/manage-dashboards/images/get-link-copy.png#width=40%)

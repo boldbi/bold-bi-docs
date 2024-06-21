@@ -24,17 +24,17 @@ Follow these steps to create IF and THEN expression column:
 
 2.	Consider you have the following data from the sample table named `SalesOrderDetail` in the data source as shown in the following screenshot.
 
-    ![SalesOrderDetail table](/bold-bi-docs/static/assets/embedded/faq/images/SalesOrderDetail-table.PNG#width=359.5px;height=512.2px)
+    ![SalesOrderDetail table](/static/assets/embedded/faq/images/SalesOrderDetail-table.PNG#width=359.5px;height=512.2px)
 
 3.	For Example, consider above customer’s table that contains a field named `OrderQty`. In column, you want to denote whether the `OrderQty` is high when it is more than 15. Now, You need to create an [expression](/embedded-bi/working-with-data-source/transforming-data/configuring-expression-columns) by using the IF and THEN syntax.               
 
     **Sample Expression:** `IF([OrderQty]>15, 'High', 'Low')`
     
-    ![IF and THEN syntax](/bold-bi-docs/static/assets/embedded/faq/images/IF-and-THEN-syntax.PNG#width=359.5px;height=512.2px)
+    ![IF and THEN syntax](/static/assets/embedded/faq/images/IF-and-THEN-syntax.PNG#width=359.5px;height=512.2px)
 
 4. Now configure the created expression in the widget. From the following screenshot you can see the resultant values for each row.
     
-    ![Simple IF Expression](/bold-bi-docs/static/assets/embedded/faq/images/Simple-IF-Expression.PNG#width=359.5px;height=512.2px)
+    ![Simple IF Expression](/static/assets/embedded/faq/images/Simple-IF-Expression.PNG#width=359.5px;height=512.2px)
 
 ## Using Nested IF and THEN conditions
    
@@ -46,7 +46,7 @@ To continue with the preceding example, you might want to test for several diffe
 
 The text Medium is the false part argument of the innermost If and THEN function. Since each nested IF and THEN function is the false part argument of the IF and THEN function that contains it, the text Medium is only returned if all the expression arguments of all the IF and THEN functions evaluate to False which means the `OrderQty` is between 8 to 15.
     
-   ![Nested IF Expression](/bold-bi-docs/static/assets/embedded/faq/images/Nested-IF-Expression.PNG#width=359.5px;height=512.2px)
+   ![Nested IF Expression](/static/assets/embedded/faq/images/Nested-IF-Expression.PNG#width=359.5px;height=512.2px)
 
 ## Calculating the sum in the if condition
 
@@ -56,7 +56,7 @@ For [SUMIF function](https://support.microsoft.com/en-us/office/sumif-function-1
 
 After that using sum aggregation function in `HighOrderQty` in expression column we can achieve the Total `OrderQty` when `OrderQty` is High.
    
-   ![SUMIF Expression](/bold-bi-docs/static/assets/embedded/faq/images/SUMIF-Expression.PNG#width=359.5px;height=512.2px)
+   ![SUMIF Expression](/static/assets/embedded/faq/images/SUMIF-Expression.PNG#width=359.5px;height=512.2px)
 
 ## Using the Equals operators with the If in the expression condition
 
@@ -66,7 +66,7 @@ To proceed with the example, refer the following expression with Not Equal opera
  
  **Sample Expression:** `IF([Expression1] <>'Low', [OrderQty], '0')`
  
-   ![Not Equals Operator](/bold-bi-docs/static/assets/embedded/faq/images/Not-Equal-Operator.PNG#width=359.5px;height=512.2px)
+   ![Not Equals Operator](/static/assets/embedded/faq/images/Not-Equal-Operator.PNG#width=359.5px;height=512.2px)
 
 Refer the following sample expression to Equal operator function using IF condition:
 
@@ -80,7 +80,7 @@ When using Logical operators such as `AND` or `OR` in the expression argument of
 
  **Sample Expression:** `IF(([OrderQty]<15 AND [OrderQty]>8), 'Medium', (IF([OrderQty]>15, 'High',' low')))`
     
-   ![IF Expression Logical](/bold-bi-docs/static/assets/embedded/faq/images/IF-Expression-Logical.PNG#width=359.5px;height=512.2px)
+   ![IF Expression Logical](/static/assets/embedded/faq/images/IF-Expression-Logical.PNG#width=359.5px;height=512.2px)
 
 Refer the following syntax to create `OR` and `NOT` function using IF condition:
 

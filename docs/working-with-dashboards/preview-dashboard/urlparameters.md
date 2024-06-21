@@ -25,11 +25,11 @@ To append your query string made with parameters and values, to URL, add a prefi
 
 Here is a dashboard view illustrating the same with single-valued parameter.
 
-![URLFilter Single Parameter Value](/bold-bi-docs/static/assets/embedded/working-with-dashboards/preview-dashboards/images/urlsingleparameter.png)
+![URLFilter Single Parameter Value](/static/assets/embedded/working-with-dashboards/preview-dashboards/images/urlsingleparameter.png)
 
 Here is a dashboard view illustrating the same with multi-valued parameter.
 
-![URLFilter Multiple Parameter Values](/bold-bi-docs/static/assets/embedded/working-with-dashboards/preview-dashboards/images/urlmultipleparameters.png)
+![URLFilter Multiple Parameter Values](/static/assets/embedded/working-with-dashboards/preview-dashboards/images/urlmultipleparameters.png)
 
 
 ## Supported Operators 
@@ -175,7 +175,7 @@ parameter=INBETWEEN(value1,value2)</td>
 
 Here is a dashboard view illustrating the use of parameter with date & time function.
 
-![URLFilter Date Value](/bold-bi-docs/static/assets/embedded/working-with-dashboards/preview-dashboards/images/urldate.png)
+![URLFilter Date Value](/static/assets/embedded/working-with-dashboards/preview-dashboards/images/urldate.png)
 
 ## Measure Parameters Support
 You can define parameters with measure typed columns just as shown below
@@ -231,9 +231,9 @@ Comma separator is used in the condition to filter with the multiple values for 
 
 Here is a dashboard view illustrating the use of parameter with measure parameter values.
 
-![URLFilter Measure Value](/bold-bi-docs/static/assets/embedded/working-with-dashboards/preview-dashboards/images/urlmeasure.png)
+![URLFilter Measure Value](/static/assets/embedded/working-with-dashboards/preview-dashboards/images/urlmeasure.png)
 
-![URLFilter Parameter Value](/bold-bi-docs/static/assets/embedded/working-with-dashboards/preview-dashboards/images/urlmeasureIN.png)
+![URLFilter Parameter Value](/static/assets/embedded/working-with-dashboards/preview-dashboards/images/urlmeasureIN.png)
 
 ## Dimension Parameters Support
 
@@ -272,7 +272,7 @@ parameter=CONTAINS(value)</td>
 
 Here is a dashboard view illustrating the use of parameter with measure parameter values.
 
-![URLFilter Dimension Value](/bold-bi-docs/static/assets/embedded/working-with-dashboards/preview-dashboards/images/urldimension.png)
+![URLFilter Dimension Value](/static/assets/embedded/working-with-dashboards/preview-dashboards/images/urldimension.png)
 
 ## Passing Parameters with dataSource
 
@@ -282,7 +282,7 @@ You can pass parameter value along with datasource name to specifically filter t
 
 Here is a dashboard view illustrating the use of parameter with datasource.
 
-![URLFilter Data source](/bold-bi-docs/static/assets/embedded/working-with-dashboards/preview-dashboards/images/urldatasource.png)
+![URLFilter Data source](/static/assets/embedded/working-with-dashboards/preview-dashboards/images/urldatasource.png)
 
 Where <b>Northwind</b> is the required data source name.
 
@@ -294,6 +294,6 @@ You can pass more than one parameter within a URL introducing an ampersand (&) s
 
 Here is a dashboard view illustrating the same.
 
-![Two Different Parameter](/bold-bi-docs/static/assets/embedded/working-with-dashboards/preview-dashboards/images/urlmultipleparameter.png)
+![Two Different Parameter](/static/assets/embedded/working-with-dashboards/preview-dashboards/images/urlmultipleparameter.png)
 
 > **NOTE:**  Points to be considered,</br> <li> The parameter names and values are case-sensitive.</br><li> The operators and date & time function names are case-insensitive.</br><li> Characters like comma (,) and ampersand (&) in value should be prefixed and suffixed with tilde (~) symbol to differentiate itself from syntax elements. For example, `CompanyName=Syncfusion Inc~,~ ` </br><li> The invalid parameter name will get ignored from filter consideration.</br><li> The invalid parameter value will result in "No data available to display" in widgets. </br><li> Parameters are applicable for both live and extract mode in dynamic data source creation, but extract mode changes will be reflected only when the refresh setting is triggered.

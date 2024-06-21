@@ -9,6 +9,6 @@ documentation: ug
 
 # Do you need an internet connection to render sample dashboards?
 Since the data will be fetched from the `MS SQL Server` which reside under the public server machine, we need an internet connection to render the `Sample Dashboard`. If your internet connection is interrupted, you will get an error message as like below,
-![Error image](/bold-bi-docs/static/assets/embedded/faq/images/internet-error-mesaage.png)
+![Error image](/static/assets/embedded/faq/images/internet-error-mesaage.png)
 
 So, we recommend you to have a proper internet connection to render the sample dashboards.

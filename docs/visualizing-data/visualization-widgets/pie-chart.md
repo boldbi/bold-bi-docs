@@ -12,7 +12,7 @@ documentation: ug
 
 Pie chart allows you to showcase the proportionality of each item to the total in the form of pie-slices.
 
-![Pie Chart](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/pie-chart.png)
+![Pie Chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/pie-chart.png)
 
 ## How to configure table data in the Pie Chart
 
@@ -22,39 +22,39 @@ To configure data in the Pie Chart, follow these steps:
 
 1.  Drag and drop the `Pie Chart` to the canvas and resize it to your required size.
 
-![Adding widget](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/adding-widget.png)
+![Adding widget](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/adding-widget.png)
 
 2.  Click the `Data Source` icon in the configuration panel.
 
-![Data button](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/databutton.png)
+![Data button](/static/assets/embedded/visualizing-data/visualization-widgets/images/databutton.png)
 
 3.  Click `CREATE NEW` to launch a new connection from the connection-type panel.
 
-![Data source button](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/datasourcebutton.png)
+![Data source button](/static/assets/embedded/visualizing-data/visualization-widgets/images/datasourcebutton.png)
 
 4.  In the connection type panel, click any one of the listed connection type buttons shown. Here, the `Microsoft Excel` connection type is selected for demonstration.
 
-![Data source list](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/datasourcelist.png)
+![Data source list](/static/assets/embedded/visualizing-data/visualization-widgets/images/datasourcelist.png)
 
 5.  In the `NEW DATA SOURCE` configuration panel, choose the file path and click `Preview & Connect.`
 
-![Connect button](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/connectbutton.png)
+![Connect button](/static/assets/embedded/visualizing-data/visualization-widgets/images/connectbutton.png)
 
 6.  Drag your preferred table or view from the left pane from the data design view and click `Save.`
 
-![Virtual table](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/virtualtable.png)
+![Virtual table](/static/assets/embedded/visualizing-data/visualization-widgets/images/virtualtable.png)
 
 7.  Click the `Properties` icon in the configuration panel. The property pane opens.
 
-![Designer properties button](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/designerpropertiesbutton.png)
+![Designer properties button](/static/assets/embedded/visualizing-data/visualization-widgets/images/designerpropertiesbutton.png)
 
 8.  Now, switch to the `ASSIGN DATA` tab.
 
-![Assign data](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/assigndata.png)
+![Assign data](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/assigndata.png)
 
 9.  The `ASSIGN DATA` tab will be opened with available measures and dimensions from the connected data source.
 
-![Chart data](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/chartdata.png)
+![Chart data](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/chartdata.png)
 
 10. You can add the required data from the Measures and Dimensions sections to the required field.
 
@@ -62,59 +62,59 @@ To configure data in the Pie Chart, follow these steps:
 
 You can add more than one measure to the `Value(s)` field by dragging the required field.
 
-![Configure measures](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/configure-measures.png)
+![Configure measures](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/configure-measures.png)
 
 Now, the Pie chart will be rendered as follows.
 
-![Configured widget](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/configured-widget.png)
+![Configured widget](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/configured-widget.png)
 
 Click the `Settings` option to change the required summary type from the available summary types shown in the Settings.
 
-![Pie Chart settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/piechart-settings.png)
+![Pie Chart settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/piechart-settings.png)
 
 You can filter the data displayed in the Pie Chart by using the `Filter` option. For more details, refer to the[filter](/embedded-bi/visualizing-data/working-with-widgets/configuring-widget-filters/).
 
-![Widget filters](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/widget-filters.png)
+![Widget filters](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/widget-filters.png)
 
 You can format the data displayed in the Pie Chart by using the `Format` option. For more details, refer to the[measure format](/embedded-bi/visualizing-data/working-with-widgets/formatting-measure-type-column/).
 
-![Measure format](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/measure-format.png)
+![Measure format](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/measure-format.png)
 
 To remove the added value fields, click the highlighted button.
 
-![Remove fields](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/remove-fields.png)
+![Remove fields](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/remove-fields.png)
 
 ### Adding columns
 
 You can add data from the `Dimension` field to the `Column(s)` field.
 
-![Adding columns](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/adding-columns.png)
+![Adding columns](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/adding-columns.png)
 
 The pie chart will be rendered as follows.
 
-![Configured Pie Chart](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/pie-chart.png)
+![Configured Pie Chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/pie-chart.png)
 
 Add more than one value to the `Column(s)` field. The following alert message will open.
 
-![Drill alert](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/drillalert.png)
+![Drill alert](/static/assets/embedded/visualizing-data/visualization-widgets/images/drillalert.png)
 
 You can enable this option to get further details about the selected chart region. To enable drill down, click **Yes**.
 
-![Enable drill](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/enable-drill.png)
+![Enable drill](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/enable-drill.png)
 
 > **NOTE:**  If you click `No,` a single value will be added to the Columns field.
 
 The drilled view of the selected chart region will be as follows.
 
-![Pie Chart drilled view](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/piechartdrill.png)
+![Pie Chart drilled view](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/piechartdrill.png)
 
 You can change the Settings.
 
-![Pie Chart](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/columnsettings.png)
+![Pie Chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/columnsettings.png)
 
 You can sort the dimension data using the `Sort` option under the Settings menu list. To apply sorting for data, refer to the[Sort] (/embedded-bi/visualizing-data/working-with-widgets/advanced-sorting/#dimension-column).
 
-![Pie Chart dimension](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/sortoption.png)
+![Pie Chart dimension](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/sortoption.png)
 
 You can apply filters by selecting `Filter(s)` option in settings. For more details, refer to the[filter](/embedded-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column).
 
@@ -126,19 +126,19 @@ Similarly, you can add the Measures and Expressions Columns to the Columns field
 
 The configured field names can be edited by using the `Rename` option provided in the settings menu.
 
-![Rename](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/rename.png)
+![Rename](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/rename.png)
 
 ### Adding rows
 
 You can drag the `Dimension` field into the `Rows field.`
 
-![Pie Chart](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/chart-row.png)
+![Pie Chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/chart-row.png)
 
 You can apply the [filter](/embedded-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column) and [sort](/embedded-bi/visualizing-data/working-with-widgets/advanced-sorting/#dimension-column) options for the rows field, if required.
 
 This will render a pie chart in a series.
 
-![Pie Chart series](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/piechart-series.png)
+![Pie Chart series](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/piechart-series.png)
 
 Scroll down to see all the charts.  
 
@@ -154,51 +154,51 @@ To configure data in the pie chart, follow these steps:
 
 3. Focus the pie chart and click the Widget Settings icon.
 
-![Widget settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/piechart-settingsicon.png)
+![Widget settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/piechart-settingsicon.png)
 
 The property window will be opened as follows.
 
-![Pie Chart properties](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/property-window.png)
+![Pie Chart properties](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/property-window.png)
 
 You can see the list of properties available for the widget with default value.
 
 ### General Settings
 
-![General Settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/property.png)
+![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/property.png)
 
 ### Name
 
 Allows you to set the `title` for the Pie chart widget.
 
-![General Settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/Name.png)
+![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/Name.png)
 
 ### Subtitle
 
 Allows you to set the `subtitle` for the Pie chart widget.
 
-![General Settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/Subtitle.png)
+![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/Subtitle.png)
 
 ### Description
 
 Set a description for the Pie chart, whose visibility will be denoted by **i** icon, and hovering over it will display the `description` in a tooltip.
 
-![General Settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/Description.png)
+![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/Description.png)
 
 ### Basic settings
 
-![Basic Settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/basic-settings.png)
+![Basic Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/basic-settings.png)
 
 #### Show Tooltip
 
 This option allows you to toggle the visibility of tooltip in the pie chart.
 
-![General Settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/tooltip.png)
+![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/tooltip.png)
 
 **Chart type**
 
 Switch the widget view from the current chart type to another chart type.
 
-![Chart Type](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/widget-view.png)
+![Chart Type](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/widget-view.png)
 
 ### Enable animation
 
@@ -208,18 +208,18 @@ It animates the measure values when you enable the `Enable Animation.`
 
 It allows you to toggle the visibility of value labels.
 
-![Show Value Label](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/show-value-label.png)
+![Show Value Label](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/show-value-label.png)
 
 If you disable `Show Value Labels` properties, the dependent properties, which are **color**, **Value label position**, **Value label rotation** and **Value label suffix** will be hidden..
 
-![Show value label](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/value-label.png)
+![Show value label](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/value-label.png)
 ### Value Label Color
 
 This allows you to customize the value label's color.
 
-![Value label Color Option](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/data-label-color-option.png)
+![Value label Color Option](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/data-label-color-option.png)
 
-![Value label Color](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/data-label-color.png)
+![Value label Color](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/data-label-color.png)
 
 ### Data label
 
@@ -227,31 +227,31 @@ Defines the display format as a `category, value, percentage, category and value
 
 ### Category
 
-![Category](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/piechart-category.png)
+![Category](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/piechart-category.png)
 
 ### Value
 
-![Value](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/piechart-Value.png)
+![Value](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/piechart-Value.png)
 
 ### Percentage
 
-![Percentage](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/show-value-label.png)
+![Percentage](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/show-value-label.png)
 
 ### Category and value
 
-![Category and Value](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/piecatergoryandvalue.png)
+![Category and Value](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/piecatergoryandvalue.png)
 
 ### Category and percentage
 
-![Category and Percentage](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/piecatergoryandper.png)
+![Category and Percentage](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/piecatergoryandper.png)
 
 ### Value and percentage
 
-![Value and Percentage](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/pievalueandper.png)
+![Value and Percentage](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/pievalueandper.png)
 
 ### All details
 
-![Pie Chart](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/piechart-alldetails.png)
+![Pie Chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/piechart-alldetails.png)
 
 ### Value labels suffix
 
@@ -261,7 +261,7 @@ This allows you to show or hide the suffix value of value labels.
 
 This allows you to customize the suffix value of value labels.
 
-![Value Labels Suffix](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/labels-suffix.png)
+![Value Labels Suffix](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/labels-suffix.png)
 
 ### Chart Size
 
@@ -271,7 +271,7 @@ This allows you to customize the size of the pie chart. Values can be between 0.
 
 The `Series Settings` option is enabled only when you configure the **series** in the `Assigned Data` tab.
 
-![Series Settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/series-settings.png)
+![Series Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/series-settings.png)
 
 ### Fixed rows and columns 
 
@@ -285,41 +285,41 @@ By enabling the `Row Count`, you can set the count of the rows.
 
 By enabling the `Column Count,` you can set the column count.
 
-![Pie Series Settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/series-settingsfixed.png)
+![Pie Series Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/series-settingsfixed.png)
 
 >**Note**: If the invalid columns and rows are given, the rows and columns reset to their default value. For example: If you are given the number of rows as 6 and the number of columns as 5 but your data count is only 20. In this case, the rows and columns will reset to their default value.
 
 ### Legend Settings
 
-![Legend settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/legend-settings.png)
+![Legend settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/legend-settings.png)
 
 ### Show legend
 
 A Legend is a text used to describe the plotted data. It allows you to toggle the visibility of the legend in the chart and change the legend text position (selecting through combo box). Enabling the Custom Legend Text option will allow you to define a custom text (through the text area) to display for each legend series (selecting through the combo box) in the chart.
 
-![Show Legend](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/show-legend.png)
+![Show Legend](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/show-legend.png)
 
 ### Legend Label Color
 
 This allows you to change the chart legend title and label colors.
 
-![Chart Legend Color Option](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/legend-label-color-option.png)
+![Chart Legend Color Option](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/legend-label-color-option.png)
 
-![Chart Legend Color](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/legend-label-color.png)
+![Chart Legend Color](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/legend-label-color.png)
 
 ### Legend Customize 
 
 It allows you to customize the legends. When you click the `customize` button, the dialog box will be shown.
 
-![Chart Legend Customize](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/legend-customize.png)
+![Chart Legend Customize](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/legend-customize.png)
 
-![Chart Legend Customization](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/legend-customization.png)
+![Chart Legend Customization](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/legend-customization.png)
 
 ### Legend Position
 
 A Legend is a text used to describe the data plotted. This option allows you to place the legend at the position of **Left, Right, Top, and Bottom**.
 
-![Legend position](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/legent-position.png)
+![Legend position](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/legent-position.png)
 
 #### Legend Shape
 
@@ -329,19 +329,19 @@ This allows you change the **shape** of the legend.
 
 This option allows you to change the shape of the legend in a `Circle.`
 
-![Show Legend shape](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/pie-legend-shape.png)
+![Show Legend shape](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/pie-legend-shape.png)
 
 ***Series Type***
 
 This option allows you to change the shape of the legend in `Series.`
 
-![Show Legend shape Series](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/pie-legendshape-series.png)
+![Show Legend shape Series](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/pie-legendshape-series.png)
 
 ### Legend Title 
 
 This allows you to add the legend title for the chart. It will reflect with the `Show Legend.`
 
-![Show Legend Title](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/pie-legendtitle.png)
+![Show Legend Title](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/pie-legendtitle.png)
 
 #### Text Overflow
 
@@ -351,25 +351,25 @@ This option allows you to customize legend text based on the 'Text Width' proper
 
 This option allows you to render legend items without any wrap and trim.
 
-![Legend Overflow None in chart](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/chart_LegendNone.png)
+![Legend Overflow None in chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/chart_LegendNone.png)
 
 **Trim**
 
 This option allows you to trim the legend items if its legend exceeds the 'Text Width' value.
 
-![Legend Overflow Trim in chart](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/chart_Legendtrim.png)
+![Legend Overflow Trim in chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/chart_Legendtrim.png)
 
 **Wrap**
 
 This option allows you to wrap legend items based on the 'Text Width' value.
 
-![Legend Overflow Wrap in chart](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/chart_Legendwrap.png)
+![Legend Overflow Wrap in chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/chart_Legendwrap.png)
 
 #### Text Width
 
 This option allows you to set a maximum width for the Legend Items and it is applicable only if the text-overflow is set to Trim or Wrap.
 
-![Legend Text Width in chart](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/chart_Legendwidth.png)
+![Legend Text Width in chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/chart_Legendwidth.png)
 
 If you uncheck the `Show Legend` property in the property panel, the dependent properties **Legend color**, **Legend position**, **customization button** and **Legend title** are also hidden.
 
@@ -377,13 +377,13 @@ If you uncheck the `Show Legend` property in the property panel, the dependent p
 
 You can enable linking and configure navigating to a general URL with or without parameters. For more details, refer to the[Linking](/embedded-bi/visualizing-data/working-with-widgets/linking-urls-and-dashboards/).
 
-![Link](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/linking.png)
+![Link](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/linking.png)
 
 ### Series palette
 
 By toggling the `series palette,` you can able to customize the proportion series segments’ colors.
 
-![Use Series Palette](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/seriespallete.png)
+![Use Series Palette](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/seriespallete.png)
 
 ***Based On***
 
@@ -391,19 +391,19 @@ You can choose the field from the Based On section to apply the conditions.
 
 This section shows a palette of colors. By clicking the colored square, the color picker will open. You can choose a color and change the color by changing the corresponding hexadecimal value at the right.
 
-![Individual mode](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/column-chart-individual-mode.png)
+![Individual mode](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/column-chart-individual-mode.png)
 
 #### Color Mapping Type
 
 Using the Color Mapping type, you can apply the colors to the series either based on data or index.
 
-![Color Mapping Type option](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/column-chart-formatting-color-mapping-type-options.png)
+![Color Mapping Type option](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/column-chart-formatting-color-mapping-type-options.png)
 
 ***Data***
 
 It allows you to apply color for chart series based on data. If you want to apply a specific color to specific data, you can use Data based color mapping. By default, the Color Mapping Type will be `Data`.
 
-![Color Mapping Type Data](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/column-chart-individual-mode.png)
+![Color Mapping Type Data](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/column-chart-individual-mode.png)
 
 > **IMPORTANT:**  Only top 100 records will be listed in the 
 dialog. 
@@ -413,15 +413,15 @@ It allows you to apply color for chart series based on `Index`. Such that the co
 
 For example, If you are displaying the countries based on the increasing order of the case count, then the index-based color mapping will be useful to set the colors based on the rank. Say red color to the top, then the red color will be maintained for the country having the largest case count.
 
-![Color Mapping Type Index](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/column-chart-formatting-index-based-color.png)
+![Color Mapping Type Index](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/column-chart-formatting-index-based-color.png)
 
 **Note:** We prefer to use Index based color customization only for minimum data(upto 15 series).
 
-![Use Basedon Palette](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/column-chart-individual-mode.png)
+![Use Basedon Palette](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/column-chart-individual-mode.png)
 
-![Change Series color](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/series-color-palette-window.png)
+![Change Series color](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/series-color-palette-window.png)
 
-![Series color view](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/series-color-view.png)
+![Series color view](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/series-color-view.png)
 
 ### Use Default Palette
 
@@ -429,19 +429,19 @@ This option shows when you add more than one measure field to the Value(s).
 
 By toggle off the `Use Default Palette,` you can customize the proportion series segments' colors by clicking the colored squares.
 
-![Series color palette window](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/series-color-window.png)
+![Series color palette window](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/series-color-window.png)
 
 ### Font settings
 
 This section allows you to customize the font size of the chart elements.
 
-![Font settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/font-settings.png)
+![Font settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/font-settings.png)
 
 ### Filter
 
 This section allows you to handle the `filter` actions for the pie chart widget.
 
-![Filter](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/filter.png)
+![Filter](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/filter.png)
 
 ### Act as master widget
 
@@ -459,7 +459,7 @@ When the **Enable Hierarchical Filtering** option is enabled, the `Top N` will b
 
 ### Container Appearance
 
-![Container Appearance](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/container-appearance.png)
+![Container Appearance](/static/assets/embedded/visualizing-data/visualization-widgets/images/container-appearance.png)
 
 ### Title Alignment
 
@@ -519,7 +519,7 @@ This allows you to toggle the visibility of the `shadow` surrounding the widget.
 
 ### Container actions
 
-![Container Actions](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/container-actions.png)
+![Container Actions](/static/assets/embedded/visualizing-data/visualization-widgets/images/pie-chart/container-actions.png)
 
 #### Show Header
 

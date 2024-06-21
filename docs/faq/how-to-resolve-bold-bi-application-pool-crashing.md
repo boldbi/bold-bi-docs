@@ -62,7 +62,7 @@ Follow the below steps to remove the `Brotli Compression` references,
 3. Now, you have to remove those references from your file and then save it for running the BOLD BI application without any issues.
 
 4. Then manually start the `Application pool` in your IIS manager for the below,
-![Application pool](/bold-bi-docs/static/assets/embedded/faq/images/application-pool-in-iis.png)
+![Application pool](/static/assets/embedded/faq/images/application-pool-in-iis.png)
 
 
 

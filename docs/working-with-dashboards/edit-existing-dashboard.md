@@ -12,23 +12,23 @@ documentation: ug
    
    Click `My Dashboards` button in the designer title pane. 
 
-   ![Dashboard](/bold-bi-docs/static/assets/embedded/working-with-dashboards/images/mydashboard.png)
+   ![Dashboard](/static/assets/embedded/working-with-dashboards/images/mydashboard.png)
 
    Now, navigates to dashboard listing page.
 
-   ![Listing page](/bold-bi-docs/static/assets/embedded/working-with-dashboards/images/listpage.png)
+   ![Listing page](/static/assets/embedded/working-with-dashboards/images/listpage.png)
    
    Select a dashboard from the left panel to edit in the designer.
 
    Click the highlighted icon like below
 
-   ![Menu icon](/bold-bi-docs/static/assets/embedded/working-with-dashboards/images/menuicon.png)
+   ![Menu icon](/static/assets/embedded/working-with-dashboards/images/menuicon.png)
 
    `Edit` option will listed in the menu list.
    
-   ![Edit option](/bold-bi-docs/static/assets/embedded/working-with-dashboards/images/editoption.png#width=60%)
+   ![Edit option](/static/assets/embedded/working-with-dashboards/images/editoption.png#width=60%)
 
    Selected Dashboard will be opened in the designer as shown below
 
-   ![Edit dashboard](/bold-bi-docs/static/assets/embedded/working-with-dashboards/images/editdashboard.png)
+   ![Edit dashboard](/static/assets/embedded/working-with-dashboards/images/editdashboard.png)
        

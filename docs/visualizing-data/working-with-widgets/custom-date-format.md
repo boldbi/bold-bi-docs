@@ -14,11 +14,11 @@ Custom date format allows you to set the desired format for the date field impli
 ## Configuring custom date format to date field 
 The custom date format option is applicable only for the date-time type of dimension column. To configure the custom date format settings, open the `Date Settings` dialog from the `Settings` option by clicking `Settings icon`.
 
-![Create Custom Date](/bold-bi-docs/static/assets/embedded/visualizing-data/working-with-widgets/images/customdateformatoption.png#max-width=60%)
+![Create Custom Date](/static/assets/embedded/visualizing-data/working-with-widgets/images/customdateformatoption.png#max-width=60%)
 
 By clicking `Edit..` menu item, `Date Settings` dialog will open as follows.
 
-![Custom Date Dialog Box](/bold-bi-docs/static/assets/embedded/visualizing-data/working-with-widgets/images/customdateformatdialog.png#max-width=62%)
+![Custom Date Dialog Box](/static/assets/embedded/visualizing-data/working-with-widgets/images/customdateformatdialog.png#max-width=62%)
 
 `Date Settings` dialog have following options that allows you to customize date field with the applicable date format:
 1. [Predefined format](/embedded-bi/visualizing-data/working-with-widgets/custom-date-format/#format).
@@ -27,7 +27,7 @@ By clicking `Edit..` menu item, `Date Settings` dialog will open as follows.
 
 To clear the custom date format settings for date field, click `clear` in the settings drop-down menu. This menu item is enabled only when the date field is already configured with custom date settings.
 
-![Clear Custom Date](/bold-bi-docs/static/assets/embedded/visualizing-data/working-with-widgets/images/customdateformatclear.png#max-width=62%)
+![Clear Custom Date](/static/assets/embedded/visualizing-data/working-with-widgets/images/customdateformatclear.png#max-width=62%)
 
 ## How to customize date field with custom date format
 Date field can be customized by `Format` and `Fiscal year start` options provided in `Date Settings` dialog.
@@ -39,7 +39,7 @@ Follow these steps to apply predefined date format:
 1. Click `Format` dropdown.
 2. Choose any one of the predefined format option as follows.
 
-    ![Set Custom Date Format](/bold-bi-docs/static/assets/embedded/visualizing-data/working-with-widgets/images/customdateformatdropdown.png#max-width=62%)
+    ![Set Custom Date Format](/static/assets/embedded/visualizing-data/working-with-widgets/images/customdateformatdropdown.png#max-width=62%)
 
 The supported built-in date format types are provided in the following table.
 
@@ -148,11 +148,11 @@ Follow these steps to apply custom format:
 3. A textbox will be enabled which is named as `Custom Format`.
 4. Add desired formats which can be referred from supported format information while hovering over the `info icon`.
 
-    ![Set Custom for Date Field](/bold-bi-docs/static/assets/embedded/visualizing-data/working-with-widgets/images/customdatecustomformat.png#max-width=62%)
+    ![Set Custom for Date Field](/static/assets/embedded/visualizing-data/working-with-widgets/images/customdatecustomformat.png#max-width=62%)
 
 5. The preview of entered date format will be displayed under the text box.
 
-    ![Reference format](/bold-bi-docs/static/assets/embedded/visualizing-data/working-with-widgets/images/customdatereferenceformat.png#max-width=62%)
+    ![Reference format](/static/assets/embedded/visualizing-data/working-with-widgets/images/customdatereferenceformat.png#max-width=62%)
 
 > **NOTE:**  Custom Format is visible only for Date Time, Date, Year and Date Hour.
 
@@ -215,6 +215,6 @@ The supported custom format types are provided in the following table.
 ### Fiscal Year Start
 If you want to apply the custom format along with the fiscal year, use the `Fiscal Year Start` option from the `Date Settings` dialog as follows.
 
-![Set Custom Firmat](/bold-bi-docs/static/assets/embedded/visualizing-data/working-with-widgets/images/customdatefiscalyear.png#max-width=62%)
+![Set Custom Firmat](/static/assets/embedded/visualizing-data/working-with-widgets/images/customdatefiscalyear.png#max-width=62%)
 
 >**NOTE:** Filtering operation won't work when you are choosing the widget as a master where you are applying the Custom date format for the date column.

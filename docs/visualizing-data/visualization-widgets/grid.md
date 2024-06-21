@@ -12,7 +12,7 @@ documentation: ug
 
 `Grid` allows you to showcase the ranking relationship by the vertical arrangement of items ordered from top to bottom.
 
-![Grid widget](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/grid.png)
+![Grid widget](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/grid.png)
 
 ## How to configure the table data to Grid
 
@@ -26,35 +26,35 @@ The following steps explains data configuration of grid:
 
 1. Drag and drop the Grid control icon from the toolbox into the design panel. You can find control by searching in the toolbox.
 
-![Adding grid](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/adding-grid.png)
+![Adding grid](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/adding-grid.png)
 
 2. Resize the widget as required. 
 
-![Resizing widget](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/resizing.png)
+![Resizing widget](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/resizing.png)
 
 ### Step 2: Configuring data into the widget
 
 1. Click the `Properties` icon in the configuration panel.
 
-![Properties icon](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/designerpropertiesbutton.png)
+![Properties icon](/static/assets/embedded/visualizing-data/visualization-widgets/images/designerpropertiesbutton.png)
 
 2. The `properties` panel of the widget will be displayed as shown in the following screenshot. Now, switch to the `ASSIGN DATA` tab.
 
-![Assign data click](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/assign-data-click.png)
+![Assign data click](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/assign-data-click.png)
 
 3. The `ASSIGN DATA` tab will be opened with available columns from the connected data source.
 
-![Data pane](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/data-pane.png)
+![Data pane](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/data-pane.png)
 
 #### Column section
 
 Bind column by dragging and dropping element from `Measures` or `Dimension` section to `Columns` section.
 
-![Column section](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/column-section.png)
+![Column section](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/column-section.png)
 
 **Image: Visualization of grid widget after configuration.**
 
-![After adding column](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/configured-widgets.png)
+![After adding column](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/configured-widgets.png)
 
 > **NOTE:**  1000 records are displayed by default for the optimized Grid rendering performance (100 records in mobile view) and then additional rows will be scrolled virtually on-demand.
 
@@ -64,41 +64,41 @@ Bind column by dragging and dropping element from `Measures` or `Dimension` sect
 
 You can drag and drop the elements to `Hidden Columns` if required. Based on the hidden column elements, the values will be shown in grid widget.
 
-![Hidden column configuration](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/hidden-column.png)
+![Hidden column configuration](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/hidden-column.png)
 
 ### Step 3(Optional): Settings menu options
 
 You can `Rename,` `filter,` `format,` and `sort` the data displayed in the widget from the settings menu options.  To open the `settings menu,` click the `settings icon.`
 
-![Settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/settings-click.png)
+![Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/settings-click.png)
 
 #### Renaming fields
 
 The configured field names can be edited by using the `Rename` option provided in the settings menu.
 
-![Rename](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/rename-menu.png)
+![Rename](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/rename-menu.png)
 
 #### Changing the aggregation type
 
 You can change the aggregation type of the measure section from the settings menu as shown in the following screenshot. Refer to [this section](/embedded-bi/visualizing-data/working-with-widgets/aggregating-value-columns-based-on-type/) for more details.
 
-![Aggregation type](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/aggregation-type.png)
+![Aggregation type](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/aggregation-type.png)
 
 #### Filtering data
 
 You can use the filters to change the values by selecting the `Filter` option. For more details, refer to the [Measure filter](/embedded-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-measure-column) and [dimension filter](/embedded-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column).
 
-![Filter option](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/filter-option.png)
+![Filter option](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/filter-option.png)
 
 #### Measure formatting
 
 You can format the elements by selecting the `Format` option. For more details, refer to the [measure format](/embedded-bi/visualizing-data/working-with-widgets/formatting-measure-type-column/).
 
-![Measure format option](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/measure-format.png)
+![Measure format option](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/measure-format.png)
 
 **Image: Grid widget after applying the measure formatting**
 
-![Applied measure formatting](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/applied-measure-formatting.png)
+![Applied measure formatting](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/applied-measure-formatting.png)
 
 ## How to format grid widget
 
@@ -106,41 +106,41 @@ You can format the grid for better illustration of the view that you require usi
 
 ### General settings
 
-![General settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/property.png)
+![General settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/property.png)
 
 #### Name 
 
 This allows you to set `title` for this grid widget.
 
-![General settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/name.png)
+![General settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/name.png)
 
 #### Subtitle
 
 This allow you to set `subtitle` for this grid widget.
 
-![General settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/Subtitle.png)
+![General settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/Subtitle.png)
 
 #### Description
 
 This allows you to set a brief explanation about this grid widget.
 
-![General settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/description.png)
+![General settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/description.png)
 
 ### Basic settings
 
-![Basic settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/grid-basicsetting.png)
+![Basic settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/grid-basicsetting.png)
 
 #### Show Tooltip
 
 This option allows you to toggle the visibility of tooltip in a grid.
 
-![Basic settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/tooltip.png)
+![Basic settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/tooltip.png)
 
 #### Allow sorting
 
 You can toggle the interactive sorting of columns in grid control using this option. `It is enabled by default.`
 
-![Basic settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/allow-sorting.png)
+![Basic settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/allow-sorting.png)
 
 #### Fit to content
 
@@ -166,27 +166,27 @@ This allows you to enable or disable the border of the grid control. This option
 
 This allows you to differentiate `alternative rows` of the grid by the background color. If you enable this property, the alternative rows change their background color as `#F7F7F7` by default. It can be customized from the `Content Settings` section.
 
-![Grid Row Height](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/grid-alternativerowcolor.png)
+![Grid Row Height](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/grid-alternativerowcolor.png)
 
 ### Summary Row
 
 This Section allows you to add a summary row at end of the grid container
 
-![Summary Row](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/grid-summary-row.png)
+![Summary Row](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/grid-summary-row.png)
 
 If you enable the `Enable Summary Row` option, following window shows.
 
-![Summary Row window](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/grid-summary-rowwindow.png)
+![Summary Row window](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/grid-summary-rowwindow.png)
 
 Click on `Add Summary` to add a summary row
 
-![Summary Row Add](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/grid-summary-rowadd.png)
+![Summary Row Add](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/grid-summary-rowadd.png)
 
-![Summary Row Apply](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/grid-summary-rowapply.png)
+![Summary Row Apply](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/grid-summary-rowapply.png)
 
 You can customize each column in the grid to show a summary row
 
-![Summary Row Customize](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/grid-summary-rowcustomize.png)
+![Summary Row Customize](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/grid-summary-rowcustomize.png)
 
 ***Type***
 
@@ -206,7 +206,7 @@ This option allows you to customize the grid summary row font color.
 
 ***Format***
 
-![Summary Row Customize](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/grid-summary-rowformat.png)
+![Summary Row Customize](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/grid-summary-rowformat.png)
 
 This option allows you to measure the format of the summary value. For more details, refer to the [measure format](/embedded-bi/visualizing-data/working-with-widgets/formatting-measure-type-column/).
 
@@ -216,13 +216,13 @@ This option allows you to delete the summary row.
 
 ### Page Settings
 
-![Grid Row Height](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/grid-page-settings.png)
+![Grid Row Height](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/grid-page-settings.png)
 
 #### Allow Paging
 
 This option allows you to enable the pagination in a Grid. When this option is enabled, the pager is enabled in the footer part and you can see the option to navigate pages like previous, next, and text box for choosing a required page and a total record count of bounded columns result.
 
-![Grid Row Height](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/grid-allowpaging.png)
+![Grid Row Height](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/grid-allowpaging.png)
 
 #### Disable Virtual Loading
 
@@ -236,7 +236,7 @@ This option allows you to set a number of records that need to be fetched on the
 
 This section allows you to format the grid header visibility, color, and font-size.
 
-![Grid Row Height](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/grid-headersettings.png)
+![Grid Row Height](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/grid-headersettings.png)
 
 #### Show Header
 
@@ -244,7 +244,7 @@ This allows you to enable or disable the grid header. This option is enabled by 
 
 If we uncheck `Show Header`, dependent properties will be hidden which are **Foreground color**, **Background color**, **Row height**, **Auto font size**, **padding**.
 
-![Grid Row Height](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/header.png)
+![Grid Row Height](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/header.png)
 
 #### Foreground
 
@@ -262,7 +262,7 @@ You can customize the height of the grid header by increasing or decreasing the 
 
 This property picks auto font-size for grid header when it is enabled, otherwise it allows you to choose fixed font-size from `Font Size` property. This option is enabled by default.
 
-![Auto font size](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/font-size.png)
+![Auto font size](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/font-size.png)
 
 #### Font Size
 
@@ -272,15 +272,15 @@ You can enable this property by disabling `Auto Font Size,` which allows you to 
 
 You can increase or decrease the space between the border and the header by adjusting the `padding` option. The value can range between 1 and 20.
 
-![Header  Customization](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/grid-padding-change.png)
+![Header  Customization](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/grid-padding-change.png)
 
-![Header change Customization](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/grid-padding-change-value.png)
+![Header change Customization](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/grid-padding-change-value.png)
 
 ### Content Settings
 
 This section allows you to format the grid row height, color, and font-size.
 
-![Grid Row Height](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/grid-contentsetting.png)
+![Grid Row Height](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/grid-contentsetting.png)
 #### Foreground
 
 You can customize the font color. The default color of the font is `#000000.`
@@ -315,13 +315,13 @@ You can increase or decrease the space between the border and the header by adju
 
 **After customizing the content settings**
 
-![Content  Customization](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/grid-content-change.png)
+![Content  Customization](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/grid-content-change.png)
 
-![Content Customization color](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/grid-contentcustomized.png)
+![Content Customization color](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/grid-contentcustomized.png)
 
 ### Filter
 
-![Filter settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/filter-settings.png)
+![Filter settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/filter-settings.png)
 
 #### Allow filter
 
@@ -362,11 +362,11 @@ When the Hierarchical Filter option is enabled, the Top N will be applied for ea
 
 This section allows you to format the grid column based on alignment, width, and KPI customization.
 
-![Column settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/grid-columnSetting.png)
+![Column settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/grid-columnSetting.png)
 
 If you click the `Customize` button, the window will render like this. 
 
-![Column customize button](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/grid-columnalign.png)
+![Column customize button](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/grid-columnalign.png)
 
 ***Header Align*** - You can align the header of the column by left, right, and center alignment for each column.
 
@@ -384,11 +384,11 @@ A Key Performance Indicator changes each column color depending on its relation 
 
 1. Click the `+` button to create a new KPI column. 
 
-![Add KPI](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/add-kpi.png)
+![Add KPI](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/add-kpi.png)
 
 2. It will open the `KPI Expression` dialog. 
 
-![KPI Expression dialog](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/kpi-dialog.png)
+![KPI Expression dialog](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/kpi-dialog.png)
 
 3. From the `KPI Expression` dialog, you can specify the name of the KPI and the column whose values need to be considered as actual values, and the column that needs to be considered as a target.
 
@@ -406,29 +406,29 @@ A Key Performance Indicator changes each column color depending on its relation 
 
 The KPI column can be filtered based on the measure values bind to the KPI. You can set measure filter by clicking the filter icon button, which will open the Measure Filter dialog from where you can specify the column and the condition for filtering the data showcased.
 
-![Filter icon](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/filter-icon.png)
+![Filter icon](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/filter-icon.png)
 
-![Filtering dialog](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/filtering-dialog.png)
+![Filtering dialog](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/filtering-dialog.png)
 
 #### KPI Column measure formatting 
 
 The values showcased in KPI column can be formatted as any other measure column. You can open the Measure Formatting dialog box by clicking the `format` KPI column button. This allows you to handle different formatting options such as display type, representation, decimal places, and currency culture to the respective KPI column added.
 
-![Format icon](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/format-icon.png)
+![Format icon](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/format-icon.png)
 
-![Measure formatting dialog](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/formatting-dialog.png)
+![Measure formatting dialog](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/formatting-dialog.png)
 
 #### Editing the saved KPI column 
 
 You can Edit KPI column by clicking the `Edit` KPI column icon.
 
-![Edit KPI column](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/edit-kpi-column.png)
+![Edit KPI column](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/edit-kpi-column.png)
 
 #### Deleting a KPI column 
 
 You can delete KPI column by clicking the `Delete` KPI column.
 
-![Delete KPI column](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/delete-kpi-column.png)
+![Delete KPI column](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/delete-kpi-column.png)
 
 >This action cannot be undone. 
 
@@ -436,17 +436,17 @@ You can delete KPI column by clicking the `Delete` KPI column.
 
 You can define the column value represented as text, bar, or condition-based coloring. This lists out the columns, which are added to the grid widget. 
 
-![Column settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/formattingdatalist.png)
+![Column settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/formattingdatalist.png)
 
 For each of those columns, the value representation can be configured using the options displayed at the right side.
 
-![Configured columns](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/formattingradiofield.png)
+![Configured columns](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/formattingradiofield.png)
 
 #### Value 
 
 Select value as display type to get the column values represented as it is.
 
-![Value representation](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/value-representation.png)
+![Value representation](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/value-representation.png)
 
 #### Bar
 
@@ -456,7 +456,7 @@ To customize the progress bar, open the `Bar Settings` dialog by selecting the `
 
 Dialog can be opened by selecting the `Bar` radio button for initial configuration, thereafter, click the `Customize` button.
 
-![Bar setting](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/bar.png)
+![Bar setting](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/bar.png)
 
 ***Hide Bar Text*** Text of the progress bar can be able to enable or disable. By default, the text is enabled for the progress bar.
 
@@ -468,7 +468,7 @@ Dialog can be opened by selecting the `Bar` radio button for initial configurati
 
 ***Bar Style***  This property allows you to change bar shape. The dropdown contains two shapes `Cylinder` and `Rectangle`.
 
-![Bar shape](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/barshape.png)
+![Bar shape](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/barshape.png)
 
 ***Minimum*** The minimum property renders the progress bar from the given value. It contains two modes in the dropdown to configure the minimum value.
 
@@ -484,19 +484,19 @@ Dialog can be opened by selecting the `Bar` radio button for initial configurati
 
 Click the `OK` button to apply the changes to the grid.
 
-![Formatting progress bar](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/formattingdatabar.png)
+![Formatting progress bar](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/formattingdatabar.png)
 
 #### Advance setting
 
 Select Advance setting to configure conditions and apply color to the cells based on that. Click [here](/embedded-bi/visualizing-data/visualization-widgets/grid/#how-to-apply-conditional-formatting-in-grid) for more details. 
 
-![Advance settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/advance-settings.png)
+![Advance settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/advance-settings.png)
 
-![Advance settings Customization](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/advancesettings-customization.png)
+![Advance settings Customization](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/advancesettings-customization.png)
 
 ### Link
 
-![Linking](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/linking.png)
+![Linking](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/linking.png)
 
 To configure the linking to URL or dashboard with the widget using its settings. For more details, refer to the [Linking](/embedded-bi/visualizing-data/working-with-widgets/linking-urls-and-dashboards/).
 
@@ -508,11 +508,11 @@ If you have the requirement to highlight any data based on some conditions, you 
 
 In the `properties` pane, under the `Formatting section`, click the `Advanced Setting` radio button.
 
-![Enable Advanced Setting](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/advanced-setting.png)
+![Enable Advanced Setting](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/advanced-setting.png)
 
 This will open the `Conditional Formatting` dialog.
 
-![Conditional Formatting dialog](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/conditional-formatting-dialog.png)
+![Conditional Formatting dialog](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/conditional-formatting-dialog.png)
 
 ### Color types
 
@@ -526,19 +526,19 @@ This will open the `Conditional Formatting` dialog.
 
 You can choose the field from the Based-On section to apply the conditions from the highlighted drop-down.
 
-![based on field](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/based-on-field.png)
+![based on field](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/based-on-field.png)
 
 #### Summary type
 
 You can select the summary type for the selected measure field.
 
-![Aggregation type of based on field](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/summary-type.png)
+![Aggregation type of based on field](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/summary-type.png)
 
 #### Low, mid, and high values
 
 You can define your range by entering the low, mid, and high values. 
 
-![Condition values](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/condition-values.png)
+![Condition values](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/condition-values.png)
 
 > **NOTE:**  It is optional, if no value is entered, then the ranges will be auto calculated based on the minimum and maximum values from the data source. 
 
@@ -548,23 +548,23 @@ You can define your range by entering the low, mid, and high values.
 
 The value type drop-down allows you to choose whether to apply the direct value (specific number like three goals, order ID 10248) or percentage (values above 30% or 50 %).
 
-![Value type](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/value-type.png)
+![Value type](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/value-type.png)
 
 #### Condition name
 
 You can give a meaningful name to the applied conditions using the highlighted text box.
 
-![Condition name](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/condition-name.png)
+![Condition name](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/condition-name.png)
 
 #### Condition type
 
 Choose the condition for measure field from the highlighted conditions.
 
-![Numeric conditions](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/numeric-condition.png)
+![Numeric conditions](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/numeric-condition.png)
 
 If you have selected the dimension as a based-on field and want to use text condition, the following text-based conditions are available.
 
-![Text conditions](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/text-conditions.png)
+![Text conditions](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/text-conditions.png)
 
 > **NOTE:**  The text-based condition type will be enabled only when the dimension selected is used as the based-on field.
 
@@ -572,7 +572,7 @@ If you have selected the dimension as a based-on field and want to use text cond
 
 Enter the condition value.
 
-![Condition value](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/condition-value.png)
+![Condition value](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/condition-value.png)
 
 #### Font style
 
@@ -582,22 +582,22 @@ Allows you to choose the title font style. (`Bold, Italic, Underline, and Supers
 
 For the dimensions, the case sensitive option is provided to choose whether the entered value is case sensitive or not.
 
-![Case sensitivity](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/case-sensitivity.png)
+![Case sensitivity](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/case-sensitivity.png)
 
 #### Colors and icons 
 
 Select the checkbox provided near the options to customize the properties, similarly, click the font style icons for applying them as shown in the following screenshot.
 
-![Icons](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/icons.png)
+![Icons](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/icons.png)
 
 *Figure: Grid widget the applied customization*
 
-![Grid with conditional formatting](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/formatted-result.png)
+![Grid with conditional formatting](/static/assets/embedded/visualizing-data/visualization-widgets/images/grid/formatted-result.png)
 
 
 ### Container appearance
 
-![Container Appearance](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/container-appearance.png)
+![Container Appearance](/static/assets/embedded/visualizing-data/visualization-widgets/images/container-appearance.png)
 
 ### Title alignment
 
@@ -649,7 +649,7 @@ This allows you to toggle the visibility of the `shadow` surrounding the widget.
 
 ### Container actions
 
-![Container Actions](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/container-actions.png)
+![Container Actions](/static/assets/embedded/visualizing-data/visualization-widgets/images/container-actions.png)
 
 #### Show header
 

@@ -27,20 +27,20 @@ Please follow these steps:
 
    `Syntax: MAX(Parameter)`
 
-   ![Parameter in Expression](/bold-bi-docs/static/assets/embedded/faq/images/parameter-in-expression.png)
+   ![Parameter in Expression](/static/assets/embedded/faq/images/parameter-in-expression.png)
 
 3. Now, you can configure the chart widget with that created expression column as follows.
    
-   ![Configure Chart Widget with Expression](/bold-bi-docs/static/assets/embedded/faq/images/configure-chart-widget-with-expression.png) 
+   ![Configure Chart Widget with Expression](/static/assets/embedded/faq/images/configure-chart-widget-with-expression.png) 
 
 4. You can change the column type of Value as per the requirement from the `Chart Type & Axis` property of the chart widget but you have to set the threshold value chart type as Line as follows.
 
-   ![Threshold Chart Type](/bold-bi-docs/static/assets/embedded/faq/images/threshold-chart-type.png)
+   ![Threshold Chart Type](/static/assets/embedded/faq/images/threshold-chart-type.png)
 
 5. Also, you need to uncheck the `Show Marker` property to disable the marker of the line.
 
-   ![Uncheck Show Marker for Threshold](/bold-bi-docs/static/assets/embedded/faq/images/showmarker-threshold.png)
+   ![Uncheck Show Marker for Threshold](/static/assets/embedded/faq/images/showmarker-threshold.png)
 
 6. Now the widget will render as follows.
 
-   ![Threshold line in Chart](/bold-bi-docs/static/assets/embedded/faq/images/thresholdline-chart.png)
+   ![Threshold line in Chart](/static/assets/embedded/faq/images/thresholdline-chart.png)

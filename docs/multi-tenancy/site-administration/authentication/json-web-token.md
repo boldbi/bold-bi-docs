@@ -16,7 +16,7 @@ This section explains how to perform Single Sign-On (SSO) for users with the Cus
 
 2. Click `Authentication ` and then `JWT`.
 
-    ![JWT Configuration](/bold-bi-docs/static/assets/embedded/multi-tenancy/images/jwt-configuration.png)
+    ![JWT Configuration](/static/assets/embedded/multi-tenancy/images/jwt-configuration.png)
 
 3. Enable the JWT settings.
 
@@ -50,12 +50,12 @@ This section explains how to perform Single Sign-On (SSO) for users with the Cus
 
 6. The `Signing Key` will copy, view, and reset using the following options:
 
-    ![Copy](/bold-bi-docs/static/assets/embedded/multi-tenancy/images/jwt-signingkey-options.png)
+    ![Copy](/static/assets/embedded/multi-tenancy/images/jwt-signingkey-options.png)
 
 ## How JWT works with Bold BI   
 
 1. Once configured the JWT settings, go to the Bold BI login page and click the JWT login option, it will redirects to configured application login URL.
-    ![JWT Login](/bold-bi-docs/static/assets/embedded/multi-tenancy/images/jwt-login-option.png)
+    ![JWT Login](/static/assets/embedded/multi-tenancy/images/jwt-login-option.png)
 
 2. After that, the application will generate the JSON Web Token for user and it is redirected back to Bold BI call back URL `{Bold BI URL}/sso/jwt/callback?jwt={token}&site_identifier={site identifier}&redirect_to={redirecturl}` with the encoded JWT in a query string.
 

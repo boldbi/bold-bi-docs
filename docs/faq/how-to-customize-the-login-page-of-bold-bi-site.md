@@ -24,11 +24,11 @@ We did some customizations in the login page and provided the steps below to app
 
 * Copy and paste the IDP folder to the below Bold BI deployed location **`{Deployed Location}\IDP\`**.
 
-    ![Login screen](/bold-bi-docs/static/assets/embedded/faq/images/customized-login-page.png)
+    ![Login screen](/static/assets/embedded/faq/images/customized-login-page.png)
 
 * You can change the login page logo by the custom branding support in our settings option. Please refer the below help [link](https://help.syncfusion.com/bold-bi/rebranding/overview) for how to change the login screen logo.
 
-    ![Rebranding](/bold-bi-docs/static/assets/embedded/faq/images/rebranding.png)
+    ![Rebranding](/static/assets/embedded/faq/images/rebranding.png)
 
 ## Need more customization?
 
@@ -36,15 +36,15 @@ If you would like to customize the page from your end, you can update the below 
 
   * `_LoginForm.cshtml` file which is placed in `{Deployed Location}\IDP\Views\Shared\_LoginForm.cshtml` allows you to modify the login form UI elements which are present in the below screenshot,
 
-    ![LoginForm](/bold-bi-docs/static/assets/embedded/faq/images/loginform.png)
+    ![LoginForm](/static/assets/embedded/faq/images/loginform.png)
 
   * `_ExternalAuthentication.cshtml` file which is placed in `{Deployed Location}\IDP\Views\Shared\_ExternalAuthentication.cshtml` allows you to modify the advanced login options UI elements which are present in the below screenshot,
 
-    ![ExternalAuthentication](/bold-bi-docs/static/assets/embedded/faq/images/ext_authentication.png)
+    ![ExternalAuthentication](/static/assets/embedded/faq/images/ext_authentication.png)
 
   * `Login.cshtml` file which is placed in `{Deployed Location}\IDP\Views\Accounts\Login.cshtml` will act as a container and it has the common details of login information like below highlighted one,
 
-    ![Login](/bold-bi-docs/static/assets/embedded/faq/images/login.png)
+    ![Login](/static/assets/embedded/faq/images/login.png)
 
   * `_Layout.Accounts.cshtml` file which is placed in `{Deployed Location}\IDP\Views\Shared\_Layout.Accounts.cshtml` allows you to modify layout of the server login pages like header and footer.
 

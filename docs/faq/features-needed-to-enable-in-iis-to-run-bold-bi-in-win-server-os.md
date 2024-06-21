@@ -25,13 +25,13 @@ Bold BI Enterprise Edition can be hosted in an IIS express and IIS. To run the B
 
    > **NOTE:**  You should use Microsoft .NET Framework 4.5 or higher version. Learn more [here](/embedded-bi/overview/#prerequisites).
 
-   ![Roles and Features](/bold-bi-docs/static/assets/embedded/faq/images/roles-features.png)
+   ![Roles and Features](/static/assets/embedded/faq/images/roles-features.png)
 
 6. On the `Web Server Role (IIS)` dialog box, click Next.
 
 7. On the `Select role services` dialog box and verify that the required web server component listed [here](/embedded-bi/faq/features-needed-to-enable-in-iis-to-run-bold-bi-in-win-server-os/#required-web-server-components) are enabled. Click `Next`.
    
-   ![Roles and Features](/bold-bi-docs/static/assets/embedded/faq/images/role-services.png)
+   ![Roles and Features](/static/assets/embedded/faq/images/role-services.png)
 
 8. Verify that your settings are correct and click `Install`.
     

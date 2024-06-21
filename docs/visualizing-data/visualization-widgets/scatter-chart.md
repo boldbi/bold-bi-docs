@@ -11,11 +11,11 @@ documentation: ug
 
 `Scatter Chart` is a type of plot or mathematical diagram using Cartesian coordinates to display values for typically two variables for a set of data.
 
-![Default Scatter chart](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/scatter-chart-view.png)
+![Default Scatter chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/scatter-chart-view.png)
 
 A Bubble Chart is a variation of a scatter chart in which the data points are replaced with bubbles, and an additional dimension of the data is represented in the size of the bubbles.
 
-![Default Bubble chart](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/bubble-chart-view.png)
+![Default Bubble chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/bubble-chart-view.png)
 
 ## How to configure the table data to scatter chart
 
@@ -25,43 +25,43 @@ The following steps explain the data configuration of the Scatter Chart:
 
 1. Drag and drop the `Scatter chart control` icon from the tool box into design panel. You can find the control in tool box by search.
 
-    ![Adding Scatter chart](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/drop-widget.png)
+    ![Adding Scatter chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/drop-widget.png)
 
 2. Resize the widget as required.
 
-    ![Resizing Scatter chart](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/resize-widget.png)
+    ![Resizing Scatter chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/resize-widget.png)
 
 3. Click the `Data Source` button in the configuration panel.
 
-    ![Data Source](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/databutton.png)
+    ![Data Source](/static/assets/embedded/visualizing-data/visualization-widgets/images/databutton.png)
 
 4. Click the `CREATE NEW` button to launch a new connection from the connection type panel.
 
-    ![CREATE NEW](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/datasourcebutton.png)
+    ![CREATE NEW](/static/assets/embedded/visualizing-data/visualization-widgets/images/datasourcebutton.png)
 
 5. In the connection type panel, click any one (Here, the `Microsoft Excel` Connection type is selected for demonstration) of the listed connection type button.
 
-    ![Datasource list](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/datasourcelist.png)
+    ![Datasource list](/static/assets/embedded/visualizing-data/visualization-widgets/images/datasourcelist.png)
 
 6. In the `NEW DATA SOURCE` configuration panel, fill the connection type and related details. Click the `Preview & Connect` button.
 
-    ![Connect button](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/connectbutton.png)
+    ![Connect button](/static/assets/embedded/visualizing-data/visualization-widgets/images/connectbutton.png)
 
 7. Drag and drop your preferred table or view from the left pane from the data design view, and click the `Save` button.
 
-    ![Virtual table](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/virtualtable.png)
+    ![Virtual table](/static/assets/embedded/visualizing-data/visualization-widgets/images/virtualtable.png)
 
 8. Click the `Properties icon` in the configuration panel.
 
-    ![Click properties icon](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/designerpropertiesbutton.png)
+    ![Click properties icon](/static/assets/embedded/visualizing-data/visualization-widgets/images/designerpropertiesbutton.png)
 
 9. The `properties` panel of the widget will be displayed as shown in the following screenshot.
 
-    ![Properties pane](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/properties-pane.png)
+    ![Properties pane](/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/properties-pane.png)
 
 10. Now, switch to the `ASSIGN DATA` tab.
 
-    ![Assign Data section](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/assign-data.png)
+    ![Assign Data section](/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/assign-data.png)
 
 11. The `ASSIGN DATA` tab will be opened with the available columns from the connected data source.
 
@@ -69,7 +69,7 @@ The following steps explain the data configuration of the Scatter Chart:
 
 You can drag and drop the Measures field into the `Y-Axis` section.
 
-![Add Y-Axis field](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/add-y-axis.png)
+![Add Y-Axis field](/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/add-y-axis.png)
 
 **Note:** It is a mandatory section and only one value can be configured.
 
@@ -79,7 +79,7 @@ You can `filter` and `format` the data displayed in the widget from the settings
 
 The following screenshots shows the various settings menu options based on the type of field configured in the type of section. 
 
-![Numeric field settings menu](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/settings-menu.png)
+![Numeric field settings menu](/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/settings-menu.png)
 
 #### Renaming fields
 
@@ -89,31 +89,31 @@ The configured field names can be edited by using the `Rename` option provided i
 
 You can change the aggregation type of the measure section from the settings menu as shown in the following screenshot. Refer to [this section](/embedded-bi/visualizing-data/working-with-widgets/aggregating-value-columns-based-on-type/) for more details.
 
-![Changing the aggregation](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/settings.png)
+![Changing the aggregation](/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/settings.png)
 
 #### Filtering data
 
 You can use Filters to change the values by selecting the `Filter` option. For more details, refer to [Measure filter](/embedded-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-measure-column) and [dimension filter](/embedded-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column).
 
-![Filter option](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/filter-option.png)
+![Filter option](/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/filter-option.png)
 
 #### Measure formatting
 
 You can format the elements by selecting the `Format` option. For more details, refer to [measure format](/embedded-bi/visualizing-data/working-with-widgets/formatting-measure-type-column/).
 
-![Formatting option](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/format-option.png)
+![Formatting option](/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/format-option.png)
 
 #### Removing the fields
 
 To remove the added value fields, click the highlighted button.
 
-![Removing  Fields](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/remove-icon.png)
+![Removing  Fields](/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/remove-icon.png)
 
 ### Adding fields to X-Axis
 
 You can drag and drop the Measures or Dimensions field into the X-Axis section.
 
-![Add X-Axis field](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/add-x-axis.png)
+![Add X-Axis field](/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/add-x-axis.png)
 
 **Note:** It is a mandatory section and only one value can be configured.
 
@@ -121,39 +121,39 @@ You can drag and drop the Measures or Dimensions field into the X-Axis section.
 
 You can change the `Settings.`
 
-![Settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/x-axis-settings.png)
+![Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/x-axis-settings.png)
 
 #### Renaming fields
 
 The configured field names can be edited by using the `Rename` option provided in the settings menu.
 
-![Rename](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/rename.png)
+![Rename](/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/rename.png)
 
 #### Sorting
 
 You can Sort the dimension data using the `Sort` option under the Settings menu list. To apply sorting for the data, refer to the [Sort](/embedded-bi/visualizing-data/working-with-widgets/advanced-sorting/#dimension-column).
 
-![Sort Settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/sort-option.png)
+![Sort Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/sort-option.png)
 
 #### Filtering data
 
 You can apply filter by selecting the `Filter(s)` option in the settings. For more details, refer to the [filter](/embedded-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column).
 
-![Configuring filter for dimension column](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/x-axis-filter-option.png)
+![Configuring filter for dimension column](/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/x-axis-filter-option.png)
 
 The chart will be rendered like this,
 
-![Scatter chart](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/scatter-chart.png)
+![Scatter chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/scatter-chart.png)
 
 ### Adding fields to Label 
 
 You can drag and drop the Dimensions field into the Label section. 
 
-![Adding Label section](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/adding-label-section.png)
+![Adding Label section](/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/adding-label-section.png)
 
 The chart will be rendered like this,
 
-![Scatter chart with Label section](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/chart-with-label-section.png)
+![Scatter chart with Label section](/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/chart-with-label-section.png)
 
 **Note:**
 You can not bind field into Label section, when X-Axis section bind with Dimensions field.
@@ -164,19 +164,19 @@ You can not visualize data when X-Axis or Y-Axis summary type changed to as None
 
 Drag and drop the elements from sections to `Row.`
 
-![Adding row section](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/row-section.png)
+![Adding row section](/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/row-section.png)
 
-![Scatter chart with Row](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/chart-view-with-row.png)
+![Scatter chart with Row](/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/chart-view-with-row.png)
 
 ### Adding fields to Size section
 
 When you bind data to Size section, chart will render as bubble chart. You can drag and Drop the Measures field into the Size section.
 
-![Configure size section](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/adding-size-section.png)
+![Configure size section](/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/adding-size-section.png)
 
 Chart will render as shown,
 
-![Bubble chart](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/bubble-chart.png#max-width=50%)
+![Bubble chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/bubble-chart.png#max-width=50%)
 
 #### Adding tooltip fields
 
@@ -188,79 +188,79 @@ You can format the scatter chart for better illustration of the view that you re
 
 ### General settings
 
-![General settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/property.png)
+![General settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/property.png)
 
 #### Name
 
 This allows you to set `title` for this scatter chart widget.
 
-![General settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/Name.png)
+![General settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/Name.png)
 
 #### Subtitle
 
 This allows you to set `subtitle` for this scatter chart widget.
 
-![General settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/Subtitle.png)
+![General settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/Subtitle.png)
 
 #### Description
 
 This allows you to set `description` for this scatter chart widget.
 
-![General settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/Description.png)
+![General settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/Description.png)
 
 ### Basic settings
 
-![Basic Settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/basic-settings.png)
+![Basic Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/basic-settings.png)
 
 #### Show Tooltip
 
 This option allows you to toggle the visibility of tooltip in chart.
 
-![General settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/tooltip.png)
+![General settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/tooltip.png)
 
 #### Show Value Labels
 
 This allows you to toggle the visibility of value labels.
 
-![Value labels in chart](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/value-labels.png)
+![Value labels in chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/value-labels.png)
 
 #### Series Shape
 
 This allows you to change the shape of the series to **Circle**, **Rectangle**, **Triangle**, and **Diamond**.
 
-![Chart series shape](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/series-shape.png)
+![Chart series shape](/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/series-shape.png)
 
 **Note:** This option only enabled if Row is configured.
 
 ### Legend Settings
 
-![Legend settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/legend-settings.png)
+![Legend settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/legend-settings.png)
 
 #### Show legend
 
 A Legend is a text used to describe the data plotted. This allows you to toggle the visibility of legend in scatter chart.
 
-![chart legends](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/show-legend.png)
+![chart legends](/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/show-legend.png)
 
 #### Legend Position
 
 A Legend is a text used to describe the data plotted. This option allows you to place the legend at the position of **Left, Right, Top,** and **Bottom**.
 
-![Legend position bottom](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/legend-bottom.png)
+![Legend position bottom](/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/legend-bottom.png)
 
-![Legend position left](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/legend-left.png)
+![Legend position left](/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/legend-left.png)
 
-![Legend position right](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/legend-right.png)
+![Legend position right](/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/legend-right.png)
 
-![Legend position top](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/legend-top.png)
+![Legend position top](/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/legend-top.png)
 
 #### Customize
 
 You can customize the legend text through the `Custom Legend Settings` dialog. This dialog will show the legend text list as labels at left and corresponding text area at right to add the formatted text to display instead.
 
-![Legend customization](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/legendcustomize.png)
+![Legend customization](/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/legendcustomize.png)
 
-![Legend customization Change](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/legendcustomize-change.png)
+![Legend customization Change](/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/legendcustomize-change.png)
 
 If you uncheck the `Show Legend` property in the property panel, the dependent properties **Legend position**, **customization button** is also hidden.
 
@@ -268,113 +268,113 @@ If you uncheck the `Show Legend` property in the property panel, the dependent p
 
 This section allows you to customize the x-axis settings in scatter chart.
 
-![X-Axis settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/chart-x-axis-settings.png)
+![X-Axis settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/chart-x-axis-settings.png)
 
 #### Show X Axis
 
 This allows you to toggle the visibility of the category axis.
 
-![Category axis](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/category-axis.png)
+![Category axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/category-axis.png)
 
 #### Show Axis Title
 
 This allows you to toggle the visibility of the category axis title of scatter chart.
 
-![Category axis title](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/category-axis-title.png)
+![Category axis title](/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/category-axis-title.png)
 
 #### Axis Title
 
 This allows you to edit the category axis title. It will reflect in x-axis name of chart. 
 
-![Category axis title change](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/category-axis-title-changed.png)
+![Category axis title change](/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/category-axis-title-changed.png)
 
 #### Label Rotation
 
 This allows you to define the rotation angle for the category axis labels to display.
 
-![Category axis label rotated](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/label-rotation.png)
+![Category axis label rotated](/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/label-rotation.png)
 
 #### Axis Format
 
 This option allows you to format category axis values from the formatting details provided using 'Axis Format' button. For more details, refer to this [measure format](/embedded-bi/visualizing-data/working-with-widgets/formatting-measure-type-column/).
 
-![Formatting axis](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/category-axis-format.png)
+![Formatting axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/category-axis-format.png)
 
 ### Y-Axis Settings
 
 This section allows you to customize the x-axis settings in scatter chart.
 
-![X-Axis settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/chart-y-axis-settings.png)
+![X-Axis settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/chart-y-axis-settings.png)
 
 #### Show Y Axis
 
 This allows you to toggle the visibility of the primary axis.
 
-![Primary axis](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/primary-axis.png)
+![Primary axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/primary-axis.png)
 
 #### Show Axis Title
 
 This allows you to toggle the visibility of the primary axis title of scatter chart.
 
-![Primary axis title](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/primary-axis-title.png)
+![Primary axis title](/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/primary-axis-title.png)
 
 #### Axis Title
 
 This allows you to edit the primary axis title. It will reflect in y-axis name of chart. 
 
-![Primary axis title change](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/primary-axis-title-changed.png)
+![Primary axis title change](/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/primary-axis-title-changed.png)
 
 #### Axis Format
 
 This option allows you to format primary axis values from the formatting details provided using 'Axis Format' button. For more details, refer to this [measure format](/embedded-bi/visualizing-data/working-with-widgets/formatting-measure-type-column/).
 
-![Formatting axis](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/primary-axis-format.png)
+![Formatting axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/primary-axis-format.png)
 
 #### Opposed Axis
 
 This allows you to render the primary axis to the opposite side of its default position.
 
-![Opposed axis](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/opposed-axis.png)
+![Opposed axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/opposed-axis.png)
 
 ### Grid Lines
 
 You can toggle the visibility of the each axes gridlines using this property.
 
-![Grid Lines](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/grid-lines.png)
+![Grid Lines](/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/grid-lines.png)
 
 #### Category Axis
 
 This allows you to enable the `Category Axis` gridlines for the Scatter chart.
 
-![Category Axis Grid Lines](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/category-axis-grid-lines.png)
+![Category Axis Grid Lines](/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/category-axis-grid-lines.png)
 
 #### Primary Value Axis
 
 This allows you to enable the `Primary Axis` gridlines for the Scatter chart.
 
-![Primary Axis Grid Lines](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/primary-axis-grid-lines.png)
+![Primary Axis Grid Lines](/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/primary-axis-grid-lines.png)
 
 ### Series Palette
 
 This section will be shown only if the row is configured.
 
-![Series palette](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/series-color-palette.png)
+![Series palette](/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/series-color-palette.png)
 
 #### Use Default Palette
 
 By toggle off the `Use Default Palette,` you can customize the scatter chart series segments' colors by clicking the colored squares.
 
-![Series color palette window](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/series-color-window.png)
+![Series color palette window](/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/series-color-window.png)
 
 ### Formatting
 
 This allows you to change the `color` for the scatter chart. This section will shown only if row is not configured.
 
-![Formatting](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/formatting.png)
+![Formatting](/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/formatting.png)
 
 It will reflect in the scatter chart.
 
-![Formatting Applied](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/formatting-applied-scatter-chart.png)
+![Formatting Applied](/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/formatting-applied-scatter-chart.png)
 
 #### Advanced settings
 
@@ -390,15 +390,15 @@ Color in scatter chart widget can be customized using the color settings availab
 
 2. This will open the `Conditional Formatting` dialog.
 
-![Conditional formatting dialog](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/formatting-dialog.png)
+![Conditional formatting dialog](/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/formatting-dialog.png)
 
 3. Select the mode and enter the conditions as required and click the `save` button to apply.
 
-![Applying the conditions](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/apply-conditions.png)
+![Applying the conditions](/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/apply-conditions.png)
 
 4. Now, the widget visualization will be updated based on the conditions.
 
-![After applying conditional formatting](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/formatted-result.png)
+![After applying conditional formatting](/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/formatted-result.png)
 
 Refer to the following sections for the detailed steps on using the [Gradient](/embedded-bi/visualizing-data/visualization-widgets/scatter-chart/#gradient-mode), [Rule](/embedded-bi/visualizing-data/visualization-widgets/scatter-chart/#rule-based-condition-mode) and [individual](/embedded-bi/visualizing-data/visualization-widgets/scatter-chart/#individual-mode) modes. 
 
@@ -429,7 +429,7 @@ You can enter the title for the scatter chart legends.
 
 This allows you to customize the fill color of the scatter chart based on one or more numerical / text conditions.
 
-![rule mode](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/rule-mode.png)
+![rule mode](/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/rule-mode.png)
 
 #### Value type
 
@@ -443,11 +443,11 @@ You can give a meaningful name to the applied conditions.
 
 Choose the condition for measure field from the highlighted conditions.
 
-![numeric condition types](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/numeric-condition.png)
+![numeric condition types](/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/numeric-condition.png)
 
 If you selected the dimension as a `based-on field` and want to use text condition, the following text-based conditions are available.
 
-![text conditions](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/text-condition.png)
+![text conditions](/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/text-condition.png)
 
 > The text-based condition type will be enabled only when the dimension selected is used as the based-on field.
 
@@ -477,7 +477,7 @@ Using the `individual` mode, you can specify color for each record.
 
 > **IMPORTANT:**  Only top 100 records will be listed in the dialog. 
 
-![Individual mode](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/individual-mode.png)
+![Individual mode](/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/individual-mode.png)
 
 #### Color
 
@@ -491,13 +491,13 @@ To undo all the changes, click `reset.`
 
 To configure the linking to URL or dashboard with the widget using its settings. For more details, refer to [Linking](/embedded-bi/visualizing-data/working-with-widgets/linking-urls-and-dashboards/).
 
-![Link](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/linking.png)
+![Link](/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/linking.png)
 
 ### Filter
 
 This section allows you to handle the `filter` action for the scatter chart widget.
 
-![Filter](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/filter.png)
+![Filter](/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/filter.png)
 
 #### Act as master widget
 
@@ -517,7 +517,7 @@ When the `Hierarchical Filter option` is enabled, the Top N will be applied for 
 
 This sections allows you to customize the `Container Appearance` for the scatter chart widget.
 
-![Container Appearance](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/container-appearance.png)
+![Container Appearance](/static/assets/embedded/visualizing-data/visualization-widgets/images/scatter-chart/container-appearance.png)
 
 ### Title Alignment
 
@@ -579,7 +579,7 @@ This property allows you to toggle the visibility of `shadow` for scatter chart 
 
 This Section allows you to customize the **Container actions** for the scatter chart widget.
 
-![Container Actions](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/container-actions.png)
+![Container Actions](/static/assets/embedded/visualizing-data/visualization-widgets/images/container-actions.png)
 
 #### Show Header
 

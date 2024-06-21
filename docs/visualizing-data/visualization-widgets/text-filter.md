@@ -11,7 +11,7 @@ documentation: ug
 
 Text Filter enables you to filter the items based on value typing in text box. To configure text filter, a minimum requirement of 1 column is needed. 
 
-![TextFilter](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/text-filter/textfilter.png)
+![TextFilter](/static/assets/embedded/visualizing-data/visualization-widgets/images/text-filter/textfilter.png)
 
 ## How to configure table data to text filter?
 
@@ -19,51 +19,51 @@ The following procedure explains the data configuration of the Text filter:
 
 1.  Drag and drop the `Text Filter` widget from the toolbox into the design panel and resize it to your required size. You can find the widget in the toolbox by `search`.
 
-![TextFilter](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/text-filter/drop-widget.png)
+![TextFilter](/static/assets/embedded/visualizing-data/visualization-widgets/images/text-filter/drop-widget.png)
 
 2.  Click the `Data Source` button in the configuration panel.
 
-![Data button](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/databutton.png#max-width=79%)
+![Data button](/static/assets/embedded/visualizing-data/visualization-widgets/images/databutton.png#max-width=79%)
 
 3.  Click the `CREATE NEW` button to launch a new connection from the connection type panel.
 
-![Data source button](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/datasourcebutton.png)
+![Data source button](/static/assets/embedded/visualizing-data/visualization-widgets/images/datasourcebutton.png)
 
 4.  In the connection type panel, click any one (Here, the `Microsoft Excel` Connection type is selected for demonstration) of the listed connection type button shown.
 
-![Data source list](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/datasourcelist.png)
+![Data source list](/static/assets/embedded/visualizing-data/visualization-widgets/images/datasourcelist.png)
 
 5.  In the `NEW DATA SOURCE` configuration panel, fill the connection type and related details. Click the `Preview & Connect` button.
 
-![Connect button](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/connectbutton.png)
+![Connect button](/static/assets/embedded/visualizing-data/visualization-widgets/images/connectbutton.png)
 
 6.  Drag your preferred table or view from the left pane from the data design view, click the `Save` button.
 
-![Virtual table](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/virtualtable.png)
+![Virtual table](/static/assets/embedded/visualizing-data/visualization-widgets/images/virtualtable.png)
 
 7.  Click the `Properties` button in the configuration panel, property pane opens. 
 
-![Designer properties](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/designerpropertiesbutton.png)
+![Designer properties](/static/assets/embedded/visualizing-data/visualization-widgets/images/designerpropertiesbutton.png)
 
 8.  Now, switch to the `ASSIGN DATA` tab.
 
-![TextFilter Datatab](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/text-filter/textfilter-datatab.png)
+![TextFilter Datatab](/static/assets/embedded/visualizing-data/visualization-widgets/images/text-filter/textfilter-datatab.png)
 
 9. The `ASSIGN DATA` tab will be opened with the available dimensions from the connected data source.
 
-![TextFilter Assign Datatab](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/text-filter/textfilter-assigndata.png)
+![TextFilter Assign Datatab](/static/assets/embedded/visualizing-data/visualization-widgets/images/text-filter/textfilter-assigndata.png)
 
 ### Adding Values
 
 You can add the `Dimensions` to the `Column` section by dragging and dropping the required column.
 
-![TextFilter Assign Datatab](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/text-filter/configure-widget.png)
+![TextFilter Assign Datatab](/static/assets/embedded/visualizing-data/visualization-widgets/images/text-filter/configure-widget.png)
 
 ### Renaming field
 
 The configured field name can be edited by using the Rename option provided in the settings menu.
 
-![TextFilter Rename](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/text-filter/textfilter-renameoption.png)
+![TextFilter Rename](/static/assets/embedded/visualizing-data/visualization-widgets/images/text-filter/textfilter-renameoption.png)
 
 ## Filtering Options
 
@@ -75,7 +75,7 @@ It perform contains operation. By default, the text filter filtering option will
 
 Syntax: [text]
 
-![TextFilter contains](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/text-filter/contains-option.png)
+![TextFilter contains](/static/assets/embedded/visualizing-data/visualization-widgets/images/text-filter/contains-option.png)
 
 ***Starts With***
 
@@ -83,7 +83,7 @@ It performs starts with operation.
 
 Syntax: [text]*
 
-![TextFilter starts with option](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/text-filter/starts-with-option.png)
+![TextFilter starts with option](/static/assets/embedded/visualizing-data/visualization-widgets/images/text-filter/starts-with-option.png)
 
 ***Ends With***
 
@@ -91,11 +91,11 @@ It performs ends with operation.
 
 Syntax: *[text]
 
-![TextFilter ends with option](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/text-filter/ends-with-option.png)
+![TextFilter ends with option](/static/assets/embedded/visualizing-data/visualization-widgets/images/text-filter/ends-with-option.png)
 
 You can apply filter by initial selection.
 
-![TextFilter Initial Selection](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/text-filter/initial-selection.png)
+![TextFilter Initial Selection](/static/assets/embedded/visualizing-data/visualization-widgets/images/text-filter/initial-selection.png)
 
 ## How to format Text Filter?
 
@@ -103,29 +103,29 @@ You can format the text filter for a better illustration of the view that you re
 
 ### General Settings
 
-![General Settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/text-filter/property.png)
+![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/text-filter/property.png)
 
 #### Name
 
 This allows you to set the `title` for this text filter widget.
 
-![General Settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/text-filter/title.png)
+![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/text-filter/title.png)
 
 #### Subtitle
 
 This allows you to set the `subtitle` for this text filter widget.
 
-![General Settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/text-filter/subtitle.png)
+![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/text-filter/subtitle.png)
 
 #### Description
 
 This allows you to set the brief explanation about this text filter widget.
 
-![General Settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/text-filter/Description.png)
+![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/text-filter/Description.png)
 
 #### Filter
 
-![Filter](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/text-filter/filter.png)
+![Filter](/static/assets/embedded/visualizing-data/visualization-widgets/images/text-filter/filter.png)
 
 #### Act as Master Widget
 
@@ -143,7 +143,7 @@ When `Enable Hierarchical Filtering` is enabled, the Top N will be applied for e
 
 #### Container Appearance
 
-![Container Appearance](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/text-filter/container-appearance.png)
+![Container Appearance](/static/assets/embedded/visualizing-data/visualization-widgets/images/text-filter/container-appearance.png)
 
 #### Title Alignment
 
@@ -191,7 +191,7 @@ This property allows you to toggle the visibility of `shadow` for text filter wi
 
 #### Container actions
 
-![Container Actions](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/text-filter/container-actions.png)
+![Container Actions](/static/assets/embedded/visualizing-data/visualization-widgets/images/text-filter/container-actions.png)
 
 #### Show Header
 

@@ -33,7 +33,7 @@ documentation: ug
 
  Now drag and drop the custom widget in the designer to debug the code as in the image below:
 
- ![Custom_widget debugging](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/custom-widget/Customwidget_Debugger_Updated.png)
+ ![Custom_widget debugging](/static/assets/embedded/visualizing-data/visualization-widgets/images/custom-widget/Customwidget_Debugger_Updated.png)
 
  Now we can debug the init and update methods in the custom widget.  
 

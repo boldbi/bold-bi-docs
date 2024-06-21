@@ -10,8 +10,8 @@ documentation: ug
    
    You can get the maximized view of widget by clicking the maximize icon at right corner of the widget title section.
        
-   ![Maximize icon](/bold-bi-docs/static/assets/embedded/working-with-dashboards/preview-dashboards/widget-settings/images/maximizeicon.png)
+   ![Maximize icon](/static/assets/embedded/working-with-dashboards/preview-dashboards/widget-settings/images/maximizeicon.png)
        
    The maximized view will be displayed as follows.
        
-   ![Maximized view](/bold-bi-docs/static/assets/embedded/working-with-dashboards/preview-dashboards/widget-settings/images/maximizedview.png)
+   ![Maximized view](/static/assets/embedded/working-with-dashboards/preview-dashboards/widget-settings/images/maximizedview.png)

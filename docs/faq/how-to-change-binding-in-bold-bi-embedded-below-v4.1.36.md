@@ -15,16 +15,16 @@ Follow these steps to change the application binding information:
 
 1. Add a new binding to Bold BI Enterprise edition on IIS as shown in the following image.
     **`Example: 172.17.82.1`**
-![IIS Binding](/bold-bi-docs/static/assets/embedded/faq/images/add-binding.png#width=45%)
+![IIS Binding](/static/assets/embedded/faq/images/add-binding.png#width=45%)
 
 2. Update the new binding values in the following configuration files in deployed location.
     - Update the `InternalAppBIUrl` value in config file in the following location.
     `{Deployed Location}\IDP\App_Data\Configuration\config.xml` 
-    ![IDP Config File](/bold-bi-docs/static/assets/embedded/faq/images/idp-config.png#width=45%)
+    ![IDP Config File](/static/assets/embedded/faq/images/idp-config.png#width=45%)
     
     - Update the `InternalAppDataServiceUrl`, and `InternalAppIdpUrl` values in the config file in following location.  
     `{Deployed Location}\Dashboard Server\App_Data\Configuration\Config.xml`  
-    ![DS Config File](/bold-bi-docs/static/assets/embedded/faq/images/ds-config.png#width=45%)
+    ![DS Config File](/static/assets/embedded/faq/images/ds-config.png#width=45%)
     
     > **NOTE:** By default, Bold BI will be deployed on "C:\Bold BI".
 
@@ -32,11 +32,11 @@ Follow these steps to change the application binding information:
 
 4. Now, navigate to the site settings page of the UMS application using below new binding and update the new binding information as shown in the following image.  
 **`http://172.17.82.1/ums/en-us/administration`**  
-![IDP Base URL](/bold-bi-docs/static/assets/embedded/faq/images/idp-base-url.png#width=45%)  
+![IDP Base URL](/static/assets/embedded/faq/images/idp-base-url.png#width=45%)  
 
 5. Now, navigate to the site settings of your Bold BI application using below new binding and update the new binding information as shown in image below.  
 **`http://172.17.82.1/bi/en-us/site/site1/administration`**  
-![DS Base URL](/bold-bi-docs/static/assets/embedded/faq/images/ds-base-url.png#width=45%)
+![DS Base URL](/static/assets/embedded/faq/images/ds-base-url.png#width=45%)
 
 6. Now, Bold BI site can be browsed using the new binding.
 

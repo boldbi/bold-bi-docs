@@ -20,4 +20,4 @@ Follow these steps to add a custom theme in the Bold BI application deployed wit
 
     **Docker Deployment Location:** `bi/dataservice/dashboardthemes`
 
-![Applying custom theme](/bold-bi-docs/static/assets/embedded/faq/images/applying-custom-theme.png)
+![Applying custom theme](/static/assets/embedded/faq/images/applying-custom-theme.png)

@@ -17,7 +17,7 @@ This section explains on how to add, view, share, update and delete slideshows i
 
 Slideshows that are accessible by the user depending on the user’s permission will be displayed in the slideshows page.
 
-![Manage Slideshow](/bold-bi-docs/static/assets/embedded/managing-resources/images/manage-slideshow.png)
+![Manage Slideshow](/static/assets/embedded/managing-resources/images/manage-slideshow.png)
 
 ## Add Slideshows
 
@@ -27,37 +27,37 @@ This section explains on how to add a slideshow in the Bold BI Embedded. Slidesh
 
 1. Click on the `Create` button in the left side menu and select `Slideshow` to add a slideshow.
 
-	![Create Slideshow](/bold-bi-docs/static/assets/embedded/managing-resources/images/create-slideshow.png#width=55%)
+	![Create Slideshow](/static/assets/embedded/managing-resources/images/create-slideshow.png#width=55%)
 
     Otherwise, Click `Create Slideshow` from slideshows page.
 
-    ![Create Slideshow](/bold-bi-docs/static/assets/embedded/managing-resources/images/slideshow-page-create.png)
+    ![Create Slideshow](/static/assets/embedded/managing-resources/images/slideshow-page-create.png)
 
 2. Fill the form with Name and Duration for slideshow and click on the `Add Dashboards` in the Create Slideshow dialog box.
   
-	![Add Dashboard Button](/bold-bi-docs/static/assets/embedded/managing-resources/images/add-dashboard-button.png)
+	![Add Dashboard Button](/static/assets/embedded/managing-resources/images/add-dashboard-button.png)
 
 3. Select `Dashboards` from dropdown, then select the category from `Select Category` dropdown and corresponding dashboards under that selected category will be displayed in the `Select Dashboards` dropdown.
 
-	![Add Dashboard-Dropdown](/bold-bi-docs/static/assets/embedded/managing-resources/images/add-dashboard-dropdown.png)
+	![Add Dashboard-Dropdown](/static/assets/embedded/managing-resources/images/add-dashboard-dropdown.png)
 
-	![Add Category-Dropdown](/bold-bi-docs/static/assets/embedded/managing-resources/images/add-category-dropdown.png)
+	![Add Category-Dropdown](/static/assets/embedded/managing-resources/images/add-category-dropdown.png)
 
 4. After selecting the dashboards from Select Dashboards dropdown, `Add` button will enable. In the `Select Dashboards`, if `All` type is chosen, it will add all dashboards in that category.
 	   
-	![All Dashboards in Category](/bold-bi-docs/static/assets/embedded/managing-resources/images/all-dashboards-in-category.png)
+	![All Dashboards in Category](/static/assets/embedded/managing-resources/images/all-dashboards-in-category.png)
 
 5. Click on the `Add` button. 
 
-    ![Add Button](/bold-bi-docs/static/assets/embedded/managing-resources/images/add-button-slideshow.png)
+    ![Add Button](/static/assets/embedded/managing-resources/images/add-button-slideshow.png)
 
 6. Multiple Dashboards can be added for creating slideshow. It will display the added dashboards for slideshow as shown below,
     
-	![Display Added Dashboard](/bold-bi-docs/static/assets/embedded/managing-resources/images/display-added-dashboard.png)
+	![Display Added Dashboard](/static/assets/embedded/managing-resources/images/display-added-dashboard.png)
 
 7. After adding dashboards for slideshow. Click on the `Create` button, it will add the slideshow into Bold BI Embedded.
 
-    ![Create Button](/bold-bi-docs/static/assets/embedded/managing-resources/images/create-button-slideshow.png)
+    ![Create Button](/static/assets/embedded/managing-resources/images/create-button-slideshow.png)
 
 > **NOTE:**  `Read Write Delete` permission for that `Specific Slideshow` will be added for the user who created the slideshow.
 
@@ -67,13 +67,13 @@ This section explains on how to view slideshows in the Bold BI.
 
 Created slideshows can be viewed by clicking on either the `Actions` button in the slideshow grid context menu and select `Open` or the name from slideshow listing page.
 
-![Open Slideshow](/bold-bi-docs/static/assets/embedded/managing-resources/images/open-slideshow.png)
+![Open Slideshow](/static/assets/embedded/managing-resources/images/open-slideshow.png)
 
-![View Slideshow](/bold-bi-docs/static/assets/embedded/managing-resources/images/view-slideshow.png)
+![View Slideshow](/static/assets/embedded/managing-resources/images/view-slideshow.png)
 
 Once it is opened, selected dashboards are viewed as presentation, changing one another in given time interval like below,
 
-![Slideshow](/bold-bi-docs/static/assets/embedded/managing-resources/images/slideshow.png)
+![Slideshow](/static/assets/embedded/managing-resources/images/slideshow.png)
 
 Options to view the previous dashboard in presentation, to pause the presentation, to view the next dashboard in presentation and to view the presentation in full screen are provided.
 
@@ -91,15 +91,15 @@ This section explains on how to share slideshows with the other users in the Bol
 
 1. Click the `Actions` button in the slideshows grid context menu and select `Sharing Permissions` option.
 
-	![Sharing Permission Option](/bold-bi-docs/static/assets/embedded/managing-resources/images/sharing-permission-option.png)
+	![Sharing Permission Option](/static/assets/embedded/managing-resources/images/sharing-permission-option.png)
 
 2. Select the permission access and type in user or a group name whom you want to share the slideshow with.
   
-	![Share Slideshow](/bold-bi-docs/static/assets/embedded/managing-resources/images/share-slideshow.png#width=60%)
+	![Share Slideshow](/static/assets/embedded/managing-resources/images/share-slideshow.png#width=60%)
 
 3. After selecting the permission access and users or groups, click on the `Share` button.
 
-	![Add Slideshow Permission](/bold-bi-docs/static/assets/embedded/managing-resources/images/add-slideshow-permission.png#width=60%)
+	![Add Slideshow Permission](/static/assets/embedded/managing-resources/images/add-slideshow-permission.png#width=60%)
 	
 > **NOTE:**  Only the user who created the slideshow and the Administrator can share the slideshow with other Bold BI users.
 
@@ -109,19 +109,19 @@ The user who created the slideshow and the Administrator can remove the shared s
 
 1. Click the `Manage Access` button to see the users or groups and their permissions.
     
-	![Manage Access Slideshow](/bold-bi-docs/static/assets/embedded/managing-resources/images/manage-access-slideshow.png#width=60%)
+	![Manage Access Slideshow](/static/assets/embedded/managing-resources/images/manage-access-slideshow.png#width=60%)
 
 2. Then remove the permissions using the `Remove` option in the `Actions` column of the each permissions.
 
-    ![Remove Slideshow Permission](/bold-bi-docs/static/assets/embedded/managing-resources/images/remove-slideshow-permission.png#width=45%)
+    ![Remove Slideshow Permission](/static/assets/embedded/managing-resources/images/remove-slideshow-permission.png#width=45%)
 
 ## Information of Slideshow
 
 You can see the information of respective Slideshow in dialog box. Click `Actions` in the grid context menu and select `Info`.
 
-![Slideshow Info](/bold-bi-docs/static/assets/embedded/managing-resources/images/slideshow-info.png#width=60%)
+![Slideshow Info](/static/assets/embedded/managing-resources/images/slideshow-info.png#width=60%)
 
-![Slideshow Info Popup](/bold-bi-docs/static/assets/embedded/managing-resources/images/slideshow-info-popup.png#width=60%)
+![Slideshow Info Popup](/static/assets/embedded/managing-resources/images/slideshow-info-popup.png#width=60%)
 ## Link to Slideshows
 
 This section explains on how to get link to the Slideshows in the Bold BI Embedded.
@@ -134,11 +134,11 @@ Follow the below steps to get the link of a slideshow.
 
 1. Click on the context menu of the respective slideshow and choose `Get Link` option.
 
-    ![Get Link Option](/bold-bi-docs/static/assets/embedded/managing-resources/images/getlink-option.png#width=60%)
+    ![Get Link Option](/static/assets/embedded/managing-resources/images/getlink-option.png#width=60%)
 
 2. The `Get Link` dialog will be opened. Click `Copy` icon to get the link.
 
-    ![Get Link](/bold-bi-docs/static/assets/embedded/managing-resources/images/slideshow-getlink.png#width=60%)
+    ![Get Link](/static/assets/embedded/managing-resources/images/slideshow-getlink.png#width=60%)
 
 ## Update Slideshows
 
@@ -150,31 +150,31 @@ Name, Duration and the Dashboards listed for slideshow can be changed by using `
 
 1. Click on the `Edit` option in the context menu of the respective Slideshow.
 
-    ![Update Slideshow Option](/bold-bi-docs/static/assets/embedded/managing-resources/images/update-slideshow-option.png#width=60%)
+    ![Update Slideshow Option](/static/assets/embedded/managing-resources/images/update-slideshow-option.png#width=60%)
 
 2. Dashboards for the slideshow can be added or removed.    
 
     * To remove the listed dashboards added for the slideshow, click icon as shown below,
 
-       ![Remove Listed Dashboards](/bold-bi-docs/static/assets/embedded/managing-resources/images/remove-listed-dashboards.png)
+       ![Remove Listed Dashboards](/static/assets/embedded/managing-resources/images/remove-listed-dashboards.png)
 
     * To add the Dashboard for the slideshow, click `Add Dashboards` in the Edit Slideshow dialog box.
 
-	   ![Add Dashboard For Slideshow](/bold-bi-docs/static/assets/embedded/managing-resources/images/add-dashboard-for-slideshow.png)
+	   ![Add Dashboard For Slideshow](/static/assets/embedded/managing-resources/images/add-dashboard-for-slideshow.png)
 
       * Select `Dashboards` from dropdown, then select the category from `Select Category` dropdown and corresponding dashboards under that selected category will be displayed in the `Select Dashboards` dropdown.
 
-         ![Edit Dashboard-Dropdown](/bold-bi-docs/static/assets/embedded/managing-resources/images/edit-dashboard-dropdown.png)
+         ![Edit Dashboard-Dropdown](/static/assets/embedded/managing-resources/images/edit-dashboard-dropdown.png)
 
-	     ![Edit Category-Dropdown](/bold-bi-docs/static/assets/embedded/managing-resources/images/edit-category-dropdown.png)
+	     ![Edit Category-Dropdown](/static/assets/embedded/managing-resources/images/edit-category-dropdown.png)
 
       * After selecting the dashboards from Select Dashboards dropdown `Add` button will enable and click on the `Add` button. 
 
-         ![Edit Add Button](/bold-bi-docs/static/assets/embedded/managing-resources/images/edit-add-button.png)
+         ![Edit Add Button](/static/assets/embedded/managing-resources/images/edit-add-button.png)
 
 3. After making changes to the Name, Duration and Dashboards listed for slideshow, Click on the `Save` button in the `Update Slideshow` dialog box .
     
-    ![Save Button](/bold-bi-docs/static/assets/embedded/managing-resources/images/save-button-slideshow.png)
+    ![Save Button](/static/assets/embedded/managing-resources/images/save-button-slideshow.png)
 
 ## Delete Slideshows
 
@@ -182,4 +182,4 @@ Slideshow can also be deleted from the Bold BI when they are no longer required.
 
 Click the `Actions` button in the slideshows grid context menu and select `Delete` to delete the Slideshow.
 
-![Delete Slideshow](/bold-bi-docs/static/assets/embedded/managing-resources/images/delete-slideshow.png)
+![Delete Slideshow](/static/assets/embedded/managing-resources/images/delete-slideshow.png)

@@ -17,7 +17,7 @@ This document explains how to enable and configure forecast in your charts.
 
 1. To enable forecast settings, only one `Column` and one `Value` field has to be included in your chart.
 
-    ![Add Fields](/bold-bi-docs/static/assets/embedded/visualizing-data/working-with-widgets/images/forecastassigndata.png)
+    ![Add Fields](/static/assets/embedded/visualizing-data/working-with-widgets/images/forecastassigndata.png)
 
     Supported data types in Column field.    
     * Numeric
@@ -35,19 +35,19 @@ This document explains how to enable and configure forecast in your charts.
 
 2. After adding column and value in the chart, the `Forecast Settings` option will get displayed in the `Properties` panel.
 
-    ![Forecast Settings](/bold-bi-docs/static/assets/embedded/visualizing-data/working-with-widgets/images/forecastsettings.png)
+    ![Forecast Settings](/static/assets/embedded/visualizing-data/working-with-widgets/images/forecastsettings.png)
 
 3. Click `Enable` to apply forecast in Chart.
 
-    ![Forecast Enable button](/bold-bi-docs/static/assets/embedded/visualizing-data/working-with-widgets/images/forecastenablebutton.png)
+    ![Forecast Enable button](/static/assets/embedded/visualizing-data/working-with-widgets/images/forecastenablebutton.png)
 
 4. After enabling forecast, chart will be updated with forecast, upper and lower bound data points.
 
-    ![Forecast Chart](/bold-bi-docs/static/assets/embedded/visualizing-data/working-with-widgets/images/forecastchart.png)
+    ![Forecast Chart](/static/assets/embedded/visualizing-data/working-with-widgets/images/forecastchart.png)
 
 5. The following properties are used to configure forecast data points:
 
-    ![Forecast Properties](/bold-bi-docs/static/assets/embedded/visualizing-data/working-with-widgets/images/forecastproperties.png)
+    ![Forecast Properties](/static/assets/embedded/visualizing-data/working-with-widgets/images/forecastproperties.png)
 
    `Length` can be used to define number of forecast data points to be included in chart, by default length will be set to 10.
 
@@ -57,7 +57,7 @@ This document explains how to enable and configure forecast in your charts.
 
 6. The following properties are used to customize forecast design:
 
-    ![Forecast color customize](/bold-bi-docs/static/assets/embedded/visualizing-data/working-with-widgets/images/forecastcustomization.png)
+    ![Forecast color customize](/static/assets/embedded/visualizing-data/working-with-widgets/images/forecastcustomization.png)
 
     `Forecast` can be used to customize color of forecast line.
 

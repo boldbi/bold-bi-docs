@@ -27,17 +27,17 @@ A maximum of 1000 groups will be searched and pulled from Azure Active Directory
 
 Bold BI will list the search results of the groups in the grid as shown in the following image.
 
-![Import groups from Azure Active Directory Server](/bold-bi-docs/static/assets/embedded/managing-resources/manage-groups/images/Searched-azure-groups-list.png)
+![Import groups from Azure Active Directory Server](/static/assets/embedded/managing-resources/manage-groups/images/Searched-azure-groups-list.png)
 
 ## Import Groups
 
 To import the Azure Active Directory groups into the Bold BI, you have to choose the groups from the list and click `Import groups` at the top right corner.
 
-![Import Groups from Azure Active Directory](/bold-bi-docs/static/assets/embedded/managing-resources/manage-groups/images/import-groups-from-azure-active-directory.png)
+![Import Groups from Azure Active Directory](/static/assets/embedded/managing-resources/manage-groups/images/import-groups-from-azure-active-directory.png)
 
 Bold BI will import the chosen groups and a confirmation message will be displayed as shown in the following image.
 
-![Success message after imported the Azure Active Directory groups](/bold-bi-docs/static/assets/embedded/managing-resources/manage-groups/images/Azure-Active-Directory-group-import-success-window.png#width=70%)
+![Success message after imported the Azure Active Directory groups](/static/assets/embedded/managing-resources/manage-groups/images/Azure-Active-Directory-group-import-success-window.png#width=70%)
 
 The success message box explains about the imported and not imported users into the Bold BI.
 
@@ -45,4 +45,4 @@ The success message box explains about the imported and not imported users into 
 
 Azure Active Directory groups who has the same group name as that of the Bold BI groups(which are already present) will be marked as duplicate groups and will not be allowed to import into Bold BI.
 
-![Duplicated Azure Active Directory Groups](/bold-bi-docs/static/assets/embedded/managing-resources/manage-groups/images/Azure-Active-Directory-Duplicate-group.png)
+![Duplicated Azure Active Directory Groups](/static/assets/embedded/managing-resources/manage-groups/images/Azure-Active-Directory-Duplicate-group.png)

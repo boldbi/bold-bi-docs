@@ -12,7 +12,7 @@ documentation: ug
 
 Combination Chart allows you to compare values by combining multiple Cartesian charts (column, bar, stacked column, stacked bar, 100% stacked column, 100% stacked bar, spline, line, area, stacked area, 100% stacked area).
 
-![Combo Chart](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochart-view.png)
+![Combo Chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochart-view.png)
 
 ## How to configure table data to combo chart
 
@@ -22,99 +22,99 @@ The following steps explains to configure data into combo chart:
 
 1.  Click the `Data Source` button in the configure panel.
 
-![Data button](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/databutton.png)
+![Data button](/static/assets/embedded/visualizing-data/visualization-widgets/images/databutton.png)
 
 2.  Click the `CREATE NEW` button to launch a new connection from the connection type panel.
 
-![Data source button](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/datasourcebutton.png)
+![Data source button](/static/assets/embedded/visualizing-data/visualization-widgets/images/datasourcebutton.png)
 
 3.  In the connection type panel, click any one of the listed connection type button shown, here the `Microsoft Excel` Connection type is selected for demonstration.
 
-![Data source list](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/datasourcelist.png)
+![Data source list](/static/assets/embedded/visualizing-data/visualization-widgets/images/datasourcelist.png)
 
 4.  In the `NEW DATA SOURCE` configuration panel, fill the connection type and related details. Click the `Connect` button.
 
-![Connect button](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/connectbutton.png)
+![Connect button](/static/assets/embedded/visualizing-data/visualization-widgets/images/connectbutton.png)
 
 5.  Drag your preferred table or view from the left pane from the data design view, click the `Save` button.
 
-![virtualtable](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/virtualtable.png)
+![virtualtable](/static/assets/embedded/visualizing-data/visualization-widgets/images/virtualtable.png)
 
 6.  Drag and drop the combo chart into the canvas and resize it into the required size.
 
-![Combo Chart](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochart-drop.png)
+![Combo Chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochart-drop.png)
 
 7.  Click the `Properties` button in the configuration panel, property panel opens. Now, switch to the `ASSIGN DATA` tab.
 
-![Designer properties](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/designerpropertiesbutton.png)
+![Designer properties](/static/assets/embedded/visualizing-data/visualization-widgets/images/designerpropertiesbutton.png)
 
-![Assign data](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/property.png)
+![Assign data](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/property.png)
 
 8.  The data tab will be opened with available measures and dimensions from the connected data source.
 
-![Combo chart data](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/assign-data-section.png)
+![Combo chart data](/static/assets/embedded/visualizing-data/visualization-widgets/images/assign-data-section.png)
 
 #### Adding Primary and Secondary Values
 
 You can add more than one `measures` into `Primary Y Values` and `Secondary Y Values` field by dragging and dropping the required measure.
 
-![Combo chart Primary data](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/primaryvalue.png)
+![Combo chart Primary data](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/primaryvalue.png)
 
-![Combo chart Secondary data](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/secondaryvalue.png)
+![Combo chart Secondary data](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/secondaryvalue.png)
 
 Click the `Settings` option to change the name by using the `Rename` option and the required summary type from the available summary types shown in `Settings.`
 
-![Combo-chart Menu Settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/settings.png)
+![Combo-chart Menu Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/settings.png)
 
 #### Filtering data
 
 You can filter the data to be displayed in combo chart by using filter. For more details, refer to [filter](/embedded-bi/visualizing-data/working-with-widgets/configuring-widget-filters/)
 
-![Combo-chart Value filter settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/filter-option.png)
+![Combo-chart Value filter settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/filter-option.png)
 
 #### Formatting data
 
 You can format the data to be displayed in the combo chart by using format option. For more details, refer to [measure format](/embedded-bi/visualizing-data/working-with-widgets/formatting-measure-type-column/)
 
-![Combo-chart Primary value formatting](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/format-option.png)
+![Combo-chart Primary value formatting](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/format-option.png)
 
 #### Removing Fields
 
 To remove the added value fields click highlighted button.
 
-![Combo-chart secondary Value formatting](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/removebutton.png)
+![Combo-chart secondary Value formatting](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/removebutton.png)
 
 #### Adding Columns
 
 You can add more than one value to the `Columns` field.
 
-![Combo-chart Column Adding](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/adding-column.png)
+![Combo-chart Column Adding](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/adding-column.png)
 
 You can see Combo chart renders as follows,
 
-![Combo-chart Column data](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochart-view.png)
+![Combo-chart Column data](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochart-view.png)
 
 You can change the `Settings`.
 
-![Combo-chart Column settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/column-settings.png)
+![Combo-chart Column settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/column-settings.png)
 
 #### Renaming fields
 
 The configured field names can be edited by using the `Rename` option provided in the settings menu.
 
-![Rename](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/rename.png)
+![Rename](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/rename.png)
 
 #### Sorting data
 
 You can `Sort` the dimension data using `Sort` option under `Settings` menu list. To apply sorting for the data, refer [Sort](/embedded-bi/visualizing-data/working-with-widgets/advanced-sorting/#dimension-column).
 
-![Combo-chart Column sorting](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/columnsorting.png)
+![Combo-chart Column sorting](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/columnsorting.png)
 
 #### Filtering data
 
 You can apply filters by selecting filter in settings. For more details, refer to [filter](/embedded-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column).
 
-![Combo-chart Column Filtering](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/columnfilter.png)
+![Combo-chart Column Filtering](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/columnfilter.png)
 
 To show all records click `Clear`.
 
@@ -122,9 +122,9 @@ To show all records click `Clear`.
 
 Add more than one value to the `Columns` field. The drilled view of the Combo chart region is selected.
 
-![Combo-chart Column drilldown data](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/drillalert.png)
+![Combo-chart Column drilldown data](/static/assets/embedded/visualizing-data/visualization-widgets/images/drillalert.png)
 
-![Combo-chart Column drilldown data](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/drilldown.png)
+![Combo-chart Column drilldown data](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/drilldown.png)
 
 ## How to format Combo chart
 
@@ -138,51 +138,51 @@ Follow the below steps to format the combo chart
 
 3. Focus on the combo chart and click on Widget settings.
 
-![Click on Widget Settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/widgetsettings.png)
+![Click on Widget Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/widgetsettings.png)
 
 You can see property window opened.
 
-![Property panel](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/property.png)
+![Property panel](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/property.png)
 
 You can see the list of properties available for the widget with default value.
 
 #### General Settings
 
-![General settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/propertyname.png)
+![General settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/propertyname.png)
 
 #### Name
 
 This allows you to change the `title` for the combo chart widget.
 
-![General settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/Name.png)
+![General settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/Name.png)
 
 #### Subtitle
 
 This allows you to add the subtitle for the combo chart widget.
 
-![General settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/Subtitle.png)
+![General settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/Subtitle.png)
 
 #### Description
 
 This allows you to add description for the combo chart widget.
 
-![General settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/Description.png)
+![General settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/Description.png)
 
 #### Basic Settings
 
-![Basic Settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/basic-settings.png)
+![Basic Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/basic-settings.png)
 
 #### Show Tooltip
 
 This option allows you to toggle the visibility of tooltip in a combo chart.
 
-![General settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/tooltip.png)
+![General settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/tooltip.png)
 
 #### Chart type and axis
 
 Click the `Change` button to open the `Chart Type and Axis Settings` dialog. 
 
-![Change type and axis settings dialog](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/chart-type-and-axis.png)
+![Change type and axis settings dialog](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/chart-type-and-axis.png)
 
 **Chart Type**: This allows you to switch the widget view from the current chart type to another convertible chart type.
 
@@ -196,7 +196,7 @@ It animates the measure values when you toggle the `Enable Animation.`
 
 A Legend is a text used to describe the data plotted. This allows you to toggle the visibility of legend in chart and also change the legend text position (selecting through combo box).  
 
-![Legend Settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochart-legend.png)
+![Legend Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochart-legend.png)
 
 Enabling this option of **Customize Legend Text** will allow you to define a custom text (through the text area) to display for each legend series (selecting through the combo box) in chart.
 
@@ -204,7 +204,7 @@ Enabling this option of **Customize Legend Text** will allow you to define a cus
 
 You can customize the legend text through the Custom Legend Settings dialog. This dialog will show the legend text list as labels at left and corresponding text area at right to add the formatted text to display instead.
 
-![Legend customization](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochart-legendcustomize.png)
+![Legend customization](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochart-legendcustomize.png)
 
 #### Legend Position
 
@@ -218,57 +218,57 @@ This allows you change the **shape** of the legend.
 
 This option allows you to change the shape of the legend in a `Circle.`
 
-![Show Legend shape](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/legend-shape.png)
+![Show Legend shape](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/legend-shape.png)
 
 ***Series Type***
 
 This option allows you to change the shape of the legend in `Series.`
 
-![Show Legend shape Series](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/legend-series.png)
+![Show Legend shape Series](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/legend-series.png)
 
 #### Legend Title
 
 This allows you to add the legend title for the chart. It will reflect with the `Show Legend.`
 
-![Show Legend Title](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/legend-title.png)
+![Show Legend Title](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/legend-title.png)
 
 #### Show value labels
 
 This allows you to toggle the visibility of value labels.
 
-![Value labels in chart](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/value-label.png)
+![Value labels in chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/value-label.png)
 
 If you disable `Show Value Labels` properties, the dependent properties, which are **color**, **Value label position**, **Value label rotation** and **Value label suffix** will be hidden.
 
-![Show value label](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochart-value-label.png)
+![Show value label](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochart-value-label.png)
 
 #### Customize
 
 This allows you to customize the toggle visibility of value labels in each series.
 
-![Value labels customization change](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/color-customize.png)
+![Value labels customization change](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/color-customize.png)
 
-![Value labels customization](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/label-customize.png)
+![Value labels customization](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/label-customize.png)
 
 #### Value Label Color
 
 This allows you to customize the value label's color.
 
-![Value label Color Option](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/data-color.png)
+![Value label Color Option](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/data-color.png)
 
-![Value label Color](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/value-color.png)
+![Value label Color](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/value-color.png)
 
 #### Value Label Position
 
 This option allows you to customize the value label position in Cartesian charts. By default, it is set to ‘Auto,’ so the label position will be set based on the chart types (i.e. For stacked series, then position set as Middle and normal series the position set to Top).
 
-![Value label position](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/valuelabelposition.png)
+![Value label position](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/valuelabelposition.png)
 
 #### Value label rotation
 
 This allows you to define the `rotation angle for the value labels` to display.
 
-![Rotated labels](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/value-label-rotation.png)
+![Rotated labels](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/value-label-rotation.png)
 
 #### Value Label Suffix
 
@@ -278,7 +278,7 @@ This allows you to show/hide the suffix value of value labels.
 
 This allows you to customize the suffix value of value labels.
 
-![Labels with suffix](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/suffix-value.png)
+![Labels with suffix](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/suffix-value.png)
 
 **Note:** When Increased the height and number of data in chart the value label was hidden. Use label rotation property to visible the label.
 
@@ -286,29 +286,29 @@ This allows you to customize the suffix value of value labels.
 
 This allows you to toggle the visibility of marker from label to adorn each data point in chart series. Marker supports only for distribution type chart(line, spline, area, stacked area, 100% stacked area).
 
-![Show Marker](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochart-marker.png)
+![Show Marker](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochart-marker.png)
 
 #### Show items with no data
 
 This allows you to show data, which column does not have value.
 
-![Empty Mode](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/show-no-data.png)
+![Empty Mode](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/show-no-data.png)
 
 #### Column Width
 
 This option allows you to increase or decrease the width of the column by using `Column Width.`
 
-![Column Width Customization](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/column-width-customization.png)
+![Column Width Customization](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/column-width-customization.png)
 
-![Column Width](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combo-width.png)
+![Column Width](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combo-width.png)
 
 #### Column Spacing
 
 This option allows you to increase or decrease the space between the columns by using the `Column Spacing.`
 
-![Column Spacing Customization](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/column-spacing-customization.png)
+![Column Spacing Customization](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/column-spacing-customization.png)
 
-![Column Spacing](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/column-spacing.png)
+![Column Spacing](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/column-spacing.png)
 
 ### Enable Smooth Scroll
 
@@ -318,13 +318,13 @@ On enabling this support, the chart scroll bar thumb-size will be calculated bas
 
 ### Link
 
-![Link](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/linking.png)
+![Link](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/linking.png)
 
 To configure the linking to URL or dashboard with the widget through its settings. For more details, refer to [Linking](/embedded-bi/visualizing-data/working-with-widgets/linking-urls-and-dashboards/).
 
 ### Axis
 
-![Axis](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochart-axis.png)
+![Axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochart-axis.png)
 
 This section allow you to customize axis settings in combination chart.
 
@@ -332,31 +332,31 @@ This section allow you to customize axis settings in combination chart.
 
 This allows you to customize the axis title color.
 
-![Title color](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/title-color.png)
+![Title color](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/title-color.png)
 
 #### Label color
 
 This allows you to customize the axis label color.
 
-![Label color](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/label-color.png)
+![Label color](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/label-color.png)
 
 ### Show Category Axis
 
 This allows to enable the visibility of `Category Axis`.
 
-![Category Axis visibility](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochart-categoryaxis.png)
+![Category Axis visibility](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochart-categoryaxis.png)
 
 ### Show Category AXis Title
 
 This allows you to enable the visibility of `Category Axis` title.
 
-![Category Axis Title visibility](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/category-axistitle.png)
+![Category Axis Title visibility](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/category-axistitle.png)
 
 ### Category Axis Title
 
 This allows you to edit the `Category Axis` title for chart. It will reflect in x-axis name of chart.
 
-![Category Axis Title](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/edit-categoryaxis.png)
+![Category Axis Title](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/edit-categoryaxis.png)
 
 ### Label Overflow Mode
 
@@ -366,67 +366,67 @@ This allows you to handle the display mode of the overlapping labels in the `Cat
 
 This option trims the end of overlapping label in the axis.
 
-![Label overflow mode Trim](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/trim.png)
+![Label overflow mode Trim](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/trim.png)
 
 ***Hide***
 
 This option hides the overlapping label in the axis. 
 
-![Label overflow mode Hide](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/hide.png)
+![Label overflow mode Hide](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/hide.png)
 
 ### Category Axis Label Rotation
 
 This allows you to define the rotation angle for the category axis labels to display.
 
-![Category Axis Label Rotation](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/axis-labelrotation.png)
+![Category Axis Label Rotation](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/axis-labelrotation.png)
 
 #### Trim Axis Labels
 
 This option allows you to trim axis labels, based on the 'Maximum Label Width' property value.
 
-![Trimmed label](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/trimming-label-axis.png)
+![Trimmed label](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/trimming-label-axis.png)
 
 #### Maximum Label Width
 
 This option allows you to set maximum width for the axis labels, and also it can be made customizable when the trim axis label option is enabled.
 
-![Maximum label width](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/maximumlabelwidth.png)
+![Maximum label width](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/maximumlabelwidth.png)
 
 ### Primary Value Axis
 
 This allows you to enable the `Primary Value Axis` for chart. You can set interval of primary axis by `Edit Axis Range` button.
 
-![Primary Axis visibility](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochart-primaryaxis.png)
+![Primary Axis visibility](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/combochart-primaryaxis.png)
 
 ### Show Primary Value Axis Title
 
 This allows you to enable the visibility of `Primary Value Axis` title of chart.
 
-![Primary Axis Title visibility](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/primary-value-axis-title.png)
+![Primary Axis Title visibility](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/primary-value-axis-title.png)
 
 ### Primary Axis Title Value
 
 This allows you to edit the `Primary Value Axis` title. It will reflect in primary y-axis name of chart. 
 
-![Primary Axis Title value](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/edit-primaryaxis-title.png)
+![Primary Axis Title value](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/edit-primaryaxis-title.png)
 
 ### Secondary Value Axis
 
 This allows you to enable the `Secondary Value Axis` for chart. You can set interval of Secondary axis by `Edit Axis Range` button.
 
-![v Axis visibility](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/secondary-axis.png)
+![v Axis visibility](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/secondary-axis.png)
 
 ### Show Secondary Value Axis Title
 
 This allows you to enable the visibility of `Secondary Value Axis` title of chart.
 
-![Secondary Axis Title visibility](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/secondary-axis-title.png)
+![Secondary Axis Title visibility](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/secondary-axis-title.png)
 
 ### Secondary Axis Title Value
 
 This allows you to edit the `Secondary Value Axis` title. It will reflect in Secondary y-axis name of chart. 
 
-![Secondary Axis Title value](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/secondary-axis-title-edit.png)
+![Secondary Axis Title value](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/secondary-axis-title-edit.png)
 
 #### Axis Range Settings
 
@@ -436,33 +436,33 @@ This allows you to manually set the Minimum, Maximum, and Interval values of pri
 
 This option allows you to format primary and secondary axis values from the formatting details provided using 'Format' button. For more details, refer to this [measure format](/embedded-bi/visualizing-data/working-with-widgets/formatting-measure-type-column/).
 
-![Formatting option](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/formatting-button.png)
+![Formatting option](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/formatting-button.png)
 
 #### Grid Lines
 
-![Grid Lines](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/gridlines.png)
+![Grid Lines](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/gridlines.png)
 
 #### Primary value Axis
 
 This allows you to enable the `Primary Value Axis` gridlines for the Combination chart
 
-![Primary value Axis](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/primary-grid.png)
+![Primary value Axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/primary-grid.png)
 
 #### Secondary value Axis
 
 This allows you to enable the `Secondary Value Axis` gridlines for the Combination chart
 
-![Secondary value Axis](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/secondary-grid.png)
+![Secondary value Axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/secondary-grid.png)
 
 #### Category Axis
 
 This allows you to enable the `Category Axis` gridlines for the Combination chart.
 
-![Category Axis](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/category-grid.png)
+![Category Axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/category-grid.png)
 
 #### Trendline
 
-![Trendline](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/trendlinesettings.png)
+![Trendline](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/trendlinesettings.png)
 
 You can add more than one trendline to Cartesian charts except bar type series(Line, Column, Area, Spline) and stacked type of charts. You can add, edit and delete trendlines.
 
@@ -470,19 +470,19 @@ You can add more than one trendline to Cartesian charts except bar type series(L
 
 To add trendline, click highlighted button
 
-![Trendline Add](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/trendline-add.png)
+![Trendline Add](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/trendline-add.png)
 
 Now dialog will open as follows
 
-![Trendline Dialog](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/trendline-dialog.png)
+![Trendline Dialog](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/trendline-dialog.png)
 
 Click `OK` button to add trendline in combination chart. Now, chart renders as follows.
 
-![Trendline chart](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/trendline.png)
+![Trendline chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/trendline.png)
 
 To edit trendline select the one to be edited and click highlighted button.
 
-![Trendline Edit](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/trendline-edit.png)
+![Trendline Edit](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/trendline-edit.png)
 
 Again trendline dialog window opens, now.
 
@@ -510,21 +510,21 @@ You can change style of trendline by `Line Style` drop down option(Solid, Dot, D
 
 To delete trendline, select the one to be deleted and click highlighted button.
 
-![Trendline Delete](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/trendline-delete.png)
+![Trendline Delete](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/trendline-delete.png)
 
 #### Formatting 
 
-![Color Settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/formatting.png)
+![Color Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/formatting.png)
 
 This allows you to customize chart series color. This section renders with each series of default color. You can change its default color by color picker.
 
 If you apply changes, by clicking the `Apply` button, the chart renders as follows.
 
-![Default Color](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/format-color.png)
+![Default Color](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/format-color.png)
 
 #### Advanced Color
 
-![Advanced Color Button](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/advance-color.png)
+![Advanced Color Button](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/advance-color.png)
 
 This allows you to apply advance color customization to combination chart.
 
@@ -542,30 +542,30 @@ You can edit your gradient legend title by `Legend Title` text box.
 
 If you click save button, chart will render as follows
 
-![Gradient](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/gradient.png)
+![Gradient](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/gradient.png)
 
 ***Rule***
 
 You can select rule settings by clicking `Rule` radio button. Now, color customization window renders as follows
 
-![Rule](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/rule.png)
+![Rule](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/rule.png)
 
 You can change based on field and summary type as gradient type. `Value Type` can be change with Value or Percentage. 
 
 You can choose a series color with `Fill` color picker using multiple condition sets such as Greater than, Less than, Equal to, Not Equal to, Between, Not between, Greater than or equal to, Less than or equal to. You can also customize the legend name by providing necessary values inside condition name. You can add multiple conditions.
 
-![Rule Setings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/ruleset.png)
+![Rule Setings](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/ruleset.png)
 
 If you click save button, now chart widget renders as follows
 
-![Rule Setings changes](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/rule-color.png)
+![Rule Setings changes](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/rule-color.png)
 
 
 ***Individual***
 
 You can select rule settings by clicking `Individual` radio button. Now, color customization window renders as follows.
 
-![Individual](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/individual.png)
+![Individual](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/individual.png)
 
 This type renders with Individual default color for each point of series. You can change it's color by Individual color pickers.
 
@@ -575,7 +575,7 @@ You can save your changes by clicking the `Save` button. If you want to reset yo
 
 This section allows you to customize the font size of combo chart elements.
 
-![Font settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/font-settings.png)
+![Font settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/font-settings.png)
 
 #### Auto font Size and font size
 
@@ -583,7 +583,7 @@ By default, the 'Auto Font Size' property is enabled. Auto font size property us
 
 #### Filter
 
-![Filter](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/filter.png)
+![Filter](/static/assets/embedded/visualizing-data/visualization-widgets/images/combo-chart/filter.png)
 
 #### Act as Master Widget
 
@@ -601,7 +601,7 @@ When `Hierarchical Filter` option is enabled, the Top N will be applied for each
 
 ### Container appearance
 
-![Container appearance](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/container-appearance.png)
+![Container appearance](/static/assets/embedded/visualizing-data/visualization-widgets/images/container-appearance.png)
 
 #### Title Alignment
 
@@ -657,7 +657,7 @@ This allows you to toggle the visibility of the `shadow` surrounding the widget.
 
 ### Container actions
 
-![Container Actions](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/container-actions.png)
+![Container Actions](/static/assets/embedded/visualizing-data/visualization-widgets/images/container-actions.png)
 
 #### Show Header
 

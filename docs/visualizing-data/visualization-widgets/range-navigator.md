@@ -12,7 +12,7 @@ documentation: ug
 
 Range navigator control provides an effective interface for selecting a smaller range from a large collection. It is commonly used to filter the date range for which the data is visualized.
 
-![Range Navigator](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/range-navigator/range-navigator.png)
+![Range Navigator](/static/assets/embedded/visualizing-data/visualization-widgets/images/range-navigator/range-navigator.png)
 
 ## How to configure table data to range navigator?
 
@@ -22,77 +22,77 @@ The following procedure explains data configuration of Range Navigator:
 
 1.  Click the `Data Source` button in the configuration panel.
 
-![Data button](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/databutton.png)
+![Data button](/static/assets/embedded/visualizing-data/visualization-widgets/images/databutton.png)
 
 2.  Click the `CREATE NEW` button to launch a new connection from the connection type panel.
 
-![Data source button](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/datasourcebutton.png)
+![Data source button](/static/assets/embedded/visualizing-data/visualization-widgets/images/datasourcebutton.png)
 
 3.  In the connection type panel, click any one (Here, the `Microsoft Excel` Connection type is selected for demonstration) of the listed connection type button shown.
 
-![Data source list](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/datasourcelist.png)
+![Data source list](/static/assets/embedded/visualizing-data/visualization-widgets/images/datasourcelist.png)
 
 4.  In the `NEW DATA SOURCE` configuration panel, fill the connection type and related details. Click the `Connect` button.
 
-![Connect button](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/connectbutton.png)
+![Connect button](/static/assets/embedded/visualizing-data/visualization-widgets/images/connectbutton.png)
 
 5.  Drag your preferred table or view from the left panel from data design view, click the `Save` button.
 
-![Virtual table](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/virtualtable.png)
+![Virtual table](/static/assets/embedded/visualizing-data/visualization-widgets/images/virtualtable.png)
 
 6.  Drag and drop the `Range Navigator` control icon from the toolbox into the design panel. You can find control by searching in the toolbox.
 
-![Range Navigator](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/range-navigator/drag-drop.png)
+![Range Navigator](/static/assets/embedded/visualizing-data/visualization-widgets/images/range-navigator/drag-drop.png)
 
 7.  Click the `Properties` button in the configuration panel, property panel opens. Now, switch to the `ASSIGN DATA` tab.
 
-![Range Navigator properties button](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/designerpropertiesbutton.png)
+![Range Navigator properties button](/static/assets/embedded/visualizing-data/visualization-widgets/images/designerpropertiesbutton.png)
 
-![Data tab](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/range-navigator/range-assigndata.png)
+![Data tab](/static/assets/embedded/visualizing-data/visualization-widgets/images/range-navigator/range-assigndata.png)
 
 8.  The data tab will be opened with available measures and dimensions from the connected data source.
 
-![Range Navigator Assign data](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/range-navigator/navigator-assigndata.png)
+![Range Navigator Assign data](/static/assets/embedded/visualizing-data/visualization-widgets/images/range-navigator/navigator-assigndata.png)
 
 ### Adding value
 
 Bind column through drag and drop element from the `Measures` section to `Value.`
 
-![Range Navigator Value data](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/range-navigator/navigator-valuedata.png)
+![Range Navigator Value data](/static/assets/embedded/visualizing-data/visualization-widgets/images/range-navigator/navigator-valuedata.png)
 
 You can add more than one `Measures` into `Value.`
 
 Click the `Settings` option to change required summary type from the available summary types shown in `Settings.`
 
-![Range Navigator Summary type](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/range-navigator/navigator-sumtype.png)
+![Range Navigator Summary type](/static/assets/embedded/visualizing-data/visualization-widgets/images/range-navigator/navigator-sumtype.png)
 
 Drag and drop element from the `Dimensions` or `Measures` field into the `Argument` section.
 
-![Range Navigator Argument data](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/range-navigator/navigator-argdata.png)
+![Range Navigator Argument data](/static/assets/embedded/visualizing-data/visualization-widgets/images/range-navigator/navigator-argdata.png)
 
 `Dimensions` section is available only with date fields and icon in `Argument` section denotes the same.
 
-![Range Navigator Argument Icon Info](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/range-navigator/navigator-argicon.png)
+![Range Navigator Argument Icon Info](/static/assets/embedded/visualizing-data/visualization-widgets/images/range-navigator/navigator-argicon.png)
 
 Click the `Settings` option to change required date format. You can also set the `Relative Date Filter.`
 
 `Settings` icon is not applicable for `Measures` values.
 
-![Range Navigator date Format](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/range-navigator/navigatordate.png)
+![Range Navigator date Format](/static/assets/embedded/visualizing-data/visualization-widgets/images/range-navigator/navigatordate.png)
 
 Select the `Relative Date Filter` in the dropdown menu and click the `Edit` option to set relative date,
 
-![Range Navigator relative date](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/range-navigator/navigator-relativedate.png)
+![Range Navigator relative date](/static/assets/embedded/visualizing-data/visualization-widgets/images/range-navigator/navigator-relativedate.png)
 
 Following window opens,
 
-![Range Navigator relative date set](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/range-navigator/navigator-datefil.png)
+![Range Navigator relative date set](/static/assets/embedded/visualizing-data/visualization-widgets/images/range-navigator/navigator-datefil.png)
 
 In that window, you can set the `Range` and `Period` option. You can also set a Specific date by enabling the `Link to specific date` and click `OK` button.
 
 Here is an illustration,
 
-![Range Navigator](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/range-navigator/range-navigator.png)
+![Range Navigator](/static/assets/embedded/visualizing-data/visualization-widgets/images/range-navigator/range-navigator.png)
 
 ## How to format Range Navigator?
 
@@ -100,29 +100,29 @@ You can format the Range Navigator for better illustration of the view that you 
 
 ### General Settings
 
-![Range Navigator Name](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/range-navigator/property.png)
+![Range Navigator Name](/static/assets/embedded/visualizing-data/visualization-widgets/images/range-navigator/property.png)
 
 #### Name
 
 This allows you to set the `title` for this range navigator widget.
 
-![Range Navigator Name](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/range-navigator/Name.png)
+![Range Navigator Name](/static/assets/embedded/visualizing-data/visualization-widgets/images/range-navigator/Name.png)
 
 #### Subtitle
 
 This allows you to set the `subtitle` for this range navigator widget.
 
-![Subtitle](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/range-navigator/subtitle.png)
+![Subtitle](/static/assets/embedded/visualizing-data/visualization-widgets/images/range-navigator/subtitle.png)
 
 #### Description
 
 This allows you to set the brief explanation about this range navigator widget.
 
-![description](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/range-navigator/Description.png)
+![description](/static/assets/embedded/visualizing-data/visualization-widgets/images/range-navigator/Description.png)
 
 ### Color Settings
 
-![Range Navigator Color Settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/range-navigator/navigator-basic-setting.png)
+![Range Navigator Color Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/range-navigator/navigator-basic-setting.png)
 
 This allows you to customize Range chart series color.
 
@@ -130,25 +130,25 @@ This allows you to customize Range chart series color.
 
 This allows you to customize the label color.
 
-![Range Navigator Label Color Settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/range-navigator/label-color-option.png)
+![Range Navigator Label Color Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/range-navigator/label-color-option.png)
 
-![Range Navigator Label Color](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/range-navigator/label-color.png)
+![Range Navigator Label Color](/static/assets/embedded/visualizing-data/visualization-widgets/images/range-navigator/label-color.png)
 
 ### Axis Type Settings
 
-![Range Navigator Axis Type Settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/range-navigator/navigator-axis.png)
+![Range Navigator Axis Type Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/range-navigator/navigator-axis.png)
 
 You can change the range chart type as Area or Line or Step Line by dropdown.
 
-![Range Navigator Chart Type Settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/range-navigator/navigator-charttype.png)
+![Range Navigator Chart Type Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/range-navigator/navigator-charttype.png)
 
 Here is an illustration,
 
-![Range Navigator Line Type](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/range-navigator/navigator-line.png)
+![Range Navigator Line Type](/static/assets/embedded/visualizing-data/visualization-widgets/images/range-navigator/navigator-line.png)
 
 ### Filter
 
-![Range Navigator Filter Setting](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/range-navigator/navigatorfilter.png)
+![Range Navigator Filter Setting](/static/assets/embedded/visualizing-data/visualization-widgets/images/range-navigator/navigatorfilter.png)
 
 ### Act as Master Widget
 
@@ -166,7 +166,7 @@ When `Hierarchical Filter` option is enabled, the Top N will be applied for each
 
 #### Container Appearance
 
-![Container Appearance](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/range-navigator/container-appearance.png)
+![Container Appearance](/static/assets/embedded/visualizing-data/visualization-widgets/images/range-navigator/container-appearance.png)
 
 #### Title Alignment
 
@@ -214,7 +214,7 @@ This allows you to toggle the visibility of the `shadow` surrounding the widget.
 
 #### Container actions
 
-![Container Actions](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/range-navigator/container-actions.png)
+![Container Actions](/static/assets/embedded/visualizing-data/visualization-widgets/images/range-navigator/container-actions.png)
 
 #### Show Header
 

@@ -19,13 +19,13 @@ Anyone with access to a dashboard can write comments. When a comment is added to
 
 To post a new comment, open the dashboard and click the **comment** icon in the top-right corner as shown in the following image.
 
-![Click on comment icon](/bold-bi-docs/static/assets/embedded/working-with-dashboards/share-dashboards/images/comment-button.png)
+![Click on comment icon](/static/assets/embedded/working-with-dashboards/share-dashboards/images/comment-button.png)
 
 Type a comment in the text area and click `Post` to save the comment in the dashboard.
 
-![Post a comment](/bold-bi-docs/static/assets/embedded/working-with-dashboards/share-dashboards/images/comment-post.png)
+![Post a comment](/static/assets/embedded/working-with-dashboards/share-dashboards/images/comment-post.png)
 
-![Save comment](/bold-bi-docs/static/assets/embedded/working-with-dashboards/share-dashboards/images/comment-saved.png)
+![Save comment](/static/assets/embedded/working-with-dashboards/share-dashboards/images/comment-saved.png)
 
 > **NOTE:**  Clipboard images can also be added along with comments by simply copying an image and pasting it in the text area.
 
@@ -33,13 +33,13 @@ Type a comment in the text area and click `Post` to save the comment in the dash
 
 To reply to a comment, click the **Reply** icon in the comment as shown in the following image.
 
-![comment-reply-icon-click](/bold-bi-docs/static/assets/embedded/working-with-dashboards/share-dashboards/images/comment-reply-icon-click.png)
+![comment-reply-icon-click](/static/assets/embedded/working-with-dashboards/share-dashboards/images/comment-reply-icon-click.png)
 
 Type the reply in the text area and click `Reply` to save it in the dashboard.
 
-![comment-reply-button](/bold-bi-docs/static/assets/embedded/working-with-dashboards/share-dashboards/images/comment-reply-button.png)
+![comment-reply-button](/static/assets/embedded/working-with-dashboards/share-dashboards/images/comment-reply-button.png)
 
-![comment-reply-saved](/bold-bi-docs/static/assets/embedded/working-with-dashboards/share-dashboards/images/comment-reply-saved.png)
+![comment-reply-saved](/static/assets/embedded/working-with-dashboards/share-dashboards/images/comment-reply-saved.png)
 
 > **NOTE:**  You can also reply to a reply of a comment. This can be repeated any number of times.
 
@@ -48,29 +48,29 @@ Type the reply in the text area and click `Reply` to save it in the dashboard.
 To edit a comment, click `Actions` to see more options available to a comment or a reply and then click
  `Edit` as shown in the following image.
 
-![comment-edit-button](/bold-bi-docs/static/assets/embedded/working-with-dashboards/share-dashboards/images/comment-edit-button.png)
+![comment-edit-button](/static/assets/embedded/working-with-dashboards/share-dashboards/images/comment-edit-button.png)
 
 Edit the comments and click `Save` to save your changes.
 
-![comment-edited](/bold-bi-docs/static/assets/embedded/working-with-dashboards/share-dashboards/images/comment-edited.png)
+![comment-edited](/static/assets/embedded/working-with-dashboards/share-dashboards/images/comment-edited.png)
 
-![comment-edit-saved](/bold-bi-docs/static/assets/embedded/working-with-dashboards/share-dashboards/images/comment-edit-saved.png)
+![comment-edit-saved](/static/assets/embedded/working-with-dashboards/share-dashboards/images/comment-edit-saved.png)
 
 ## Delete a comment
 
 To delete a comment, click `Actions` button to see more options available to a comment or a reply and then click `Delete` as shown in the following image.
 
-![comment-delete-button](/bold-bi-docs/static/assets/embedded/working-with-dashboards/share-dashboards/images/comment-delete-button.png)
+![comment-delete-button](/static/assets/embedded/working-with-dashboards/share-dashboards/images/comment-delete-button.png)
 
 ## Show parent comment of a reply
 
 To see the parent comment of a reply or to see which comment a reply has been posted to, click `Actions` and then click `Show Parent` button as shown in the following image.
 
-![comment-show-parent-button](/bold-bi-docs/static/assets/embedded/working-with-dashboards/share-dashboards/images/comment-show-parent-button.png)
+![comment-show-parent-button](/static/assets/embedded/working-with-dashboards/share-dashboards/images/comment-show-parent-button.png)
 
 By clicking show parent, the parent comments of a reply are highlighted as follows.
 
-![comment-show-parent](/bold-bi-docs/static/assets/embedded/working-with-dashboards/share-dashboards/images/comment-show-parent.png)
+![comment-show-parent](/static/assets/embedded/working-with-dashboards/share-dashboards/images/comment-show-parent.png)
 
 ## Mention Users in comments
 
@@ -78,9 +78,9 @@ Users can be mentioned in comments to notify them about the comments by email.
 
 Type `@` followed by the user's name, and then select the user from the list of possible names to mention them in a comment. 
 
-![Mention Users on comment](/bold-bi-docs/static/assets/embedded/working-with-dashboards/share-dashboards/images/user-mention.png)
+![Mention Users on comment](/static/assets/embedded/working-with-dashboards/share-dashboards/images/user-mention.png)
 
-![Mentioned Users](/bold-bi-docs/static/assets/embedded/working-with-dashboards/share-dashboards/images/user-mentioned.png)
+![Mentioned Users](/static/assets/embedded/working-with-dashboards/share-dashboards/images/user-mentioned.png)
 
 > **NOTE:**  The previous options - Post a new comment, reply to a comment, edit a comment, delete a comment, and the show parent comment of a reply- apply to Widgets inside a dashboard. Click [here](/embedded-bi/working-with-dashboards/commenting-dashboard/) for more details about dashboard and Widget commenting.
 

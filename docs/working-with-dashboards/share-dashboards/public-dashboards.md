@@ -23,11 +23,11 @@ Follow the steps below to make the Dashboards accessible to anonymous users.
 
 1. Click on the context menu of the respective Dashboard and choose `Make Public` option.
 
-    ![Make public menu](/bold-bi-docs/static/assets/embedded/working-with-dashboards/share-dashboards/images/make-public-menu.png)
+    ![Make public menu](/static/assets/embedded/working-with-dashboards/share-dashboards/images/make-public-menu.png)
 
 2. Click on `Make Public` in the following confirmation dialog box.
 
-    ![Make public Dialog](/bold-bi-docs/static/assets/embedded/working-with-dashboards/share-dashboards/images/make-public-dialog.png)
+    ![Make public Dialog](/static/assets/embedded/working-with-dashboards/share-dashboards/images/make-public-dialog.png)
 
 Once the Dashboard is made public, dialog box with the Dashboard link is displayed. 
 
@@ -39,11 +39,11 @@ Follow the steps below to make the Dashboards accessible only to the users in th
 
 1. Click on the context menu of the respective Dashboard and choose `Make Private` option.
 
-    ![Make Private menu](/bold-bi-docs/static/assets/embedded/working-with-dashboards/share-dashboards/images/make-private-menu.png)
+    ![Make Private menu](/static/assets/embedded/working-with-dashboards/share-dashboards/images/make-private-menu.png)
 
 2. Click on `Make Private` in the following confirmation dialog box.
 
-    ![Make Private dialog](/bold-bi-docs/static/assets/embedded/working-with-dashboards/share-dashboards/images/make-private-dialog.png)
+    ![Make Private dialog](/static/assets/embedded/working-with-dashboards/share-dashboards/images/make-private-dialog.png)
 
 Once the Dashboard is made private, dialog box with the confirmation message is displayed.
 
@@ -51,6 +51,6 @@ Once the Dashboard is made private, dialog box with the confirmation message is 
 
 Public dashboards are listed under the public section as shown in the below image.
 
- ![Public Dashboards](/bold-bi-docs/static/assets/embedded/working-with-dashboards/share-dashboards/images/public-dashboards.png)
+ ![Public Dashboards](/static/assets/embedded/working-with-dashboards/share-dashboards/images/public-dashboards.png)
  
  

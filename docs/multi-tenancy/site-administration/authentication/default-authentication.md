@@ -14,7 +14,7 @@ This feature allows you to configure any third-party identity provider as your d
 
 You must configure any provider and enable one of the following identity providers to configure default authentication. Otherwise, you will be seeing the following options.
 
-![No configuration](/bold-bi-docs/static/assets/embedded/multi-tenancy/images/no-configuration.png) 
+![No configuration](/static/assets/embedded/multi-tenancy/images/no-configuration.png) 
 
 You can select any of the following provider as the default authentication provider: 
 
@@ -34,7 +34,7 @@ In settings page, click `Authentication` tab and select `General`.
 
 Check the **Enable Default Authentication** option and select any provider in default authentication. 
 
-![Disable default authentication](/bold-bi-docs/static/assets/embedded/multi-tenancy/images/enable-default-authentication.png) 
+![Disable default authentication](/static/assets/embedded/multi-tenancy/images/enable-default-authentication.png) 
 
 ## Disable Default Authentication 
 
@@ -42,7 +42,7 @@ When you disable the default authentication, then it directs you to the normal l
 
 Unchecking the **Enable Default Authentication** option and then clicking Save will disable the [OpenID Connect default authentication](/embedded-bi/multi-tenancy/site-administration/authentication/openid-settings/#set-openid-connect-as-default-authentication). 
 
-![Disable default authentication](/bold-bi-docs/static/assets/embedded/multi-tenancy/images/disable-default-authentication.png) 
+![Disable default authentication](/static/assets/embedded/multi-tenancy/images/disable-default-authentication.png) 
 
 > **NOTE:** If you want to skip default authentication after setting it, then use '`use_default_authentication=false`' in the login URL. (ex: https://testdomain.com/login?use_default_authentication=false).
 

@@ -122,8 +122,8 @@
       },
       "Dynamic Connection String": "dynamic-connection-string"
     },
-    "Working with Data Source": {
-      "Creating a New Data Source": "creating-a-new-data-source.md",
+    "Working With Data Source": {
+      "Creating a New Data Source": "creating-a-new-data-source",
       "Query Processing Modes": "classification-of-data-sources-queried-directly-and-extracted",
       "Bold BI Intermediate Database": "bold-bi-intermediate-database",
       "Custom Connector": {
@@ -156,7 +156,7 @@
         "CallRail": "callrail",
         "Campaign Monitor": "campaign-monitor",
         "CDATA": "cdata",
-		"Clickhouse":"clickhouse",
+		    "Clickhouse":"clickhouse",
         "Chargebee": "chargebee",
         "Chargify": "chargify",
         "Chart Beat": "chart-beat",
@@ -249,7 +249,7 @@
         "SEOmonitor": "seomonitor",
         "ServiceNow": "servicenow",
         "Shopify": "shopify",
-	"SingleStore": "single-store",
+	      "SingleStore": "single-store",
         "Slack": "slack",
         "Smartsheet": "smartsheet",
         "Snowflake": "snowflake",
@@ -443,6 +443,7 @@
       }
     },
     "Site Administration": {
+      "Site Settings": "site-settings",
       "Look and Feel Settings": "look-and-feel-settings",
       "Dashboard Settings": {
         "Public Dashboards": "public-dashboards",

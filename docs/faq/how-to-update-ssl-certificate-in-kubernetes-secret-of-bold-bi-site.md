@@ -23,7 +23,7 @@ Please follow the steps to update SSL certificate in the Kubernetes secret of Bo
 
       - Enter AWS Access Key ID, AWS Secret Access Key, Default region name, Default output format.
 
-        ![Update The SSL Certificate In The Kubernetes](/bold-bi-docs/static/assets/embedded/faq/images/update-the-ssl-certificate-in-the-kubernetes.png)
+        ![Update The SSL Certificate In The Kubernetes](/static/assets/embedded/faq/images/update-the-ssl-certificate-in-the-kubernetes.png)
 
       - Update kubeconfig using the following example.
 

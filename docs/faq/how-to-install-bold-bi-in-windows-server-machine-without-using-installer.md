@@ -28,19 +28,19 @@ documentation: ug
     
     1. Right-click the `Application Pools` and select `Add Application Pool`.
 
-        ![Add Application Pool](/bold-bi-docs/static/assets/embedded/faq/images/add-application-pool.png)
+        ![Add Application Pool](/static/assets/embedded/faq/images/add-application-pool.png)
 
     2. Name the application pool and click `OK`.
 
-        ![Add Application Pool](/bold-bi-docs/static/assets/embedded/faq/images/add-app-pool.png#width=55%)
+        ![Add Application Pool](/static/assets/embedded/faq/images/add-app-pool.png#width=55%)
 
     3. Right-click the newly created application pool and select `Advanced Settings` option.
 
-        ![Application Pool Advanced Settings](/bold-bi-docs/static/assets/embedded/faq/images/application-pool-advanced-settings.png#width=55%)
+        ![Application Pool Advanced Settings](/static/assets/embedded/faq/images/application-pool-advanced-settings.png#width=55%)
 
     4. Change the application pool type to `localSystem` as shown in the following image.
 
-        ![Applicaion Pool Local System](/bold-bi-docs/static/assets/embedded/faq/images/application-pool-local-system.png#width=55%)
+        ![Applicaion Pool Local System](/static/assets/embedded/faq/images/application-pool-local-system.png#width=55%)
 
         Repeat the same procedure for creating application pools for the following Bold BI applications.
 
@@ -55,7 +55,7 @@ documentation: ug
 
          Here, I’m showing all the created application pools.
     
-        ![created](/bold-bi-docs/static/assets/embedded/faq/images/created-application-pools.png#width=55%)
+        ![created](/static/assets/embedded/faq/images/created-application-pools.png#width=55%)
 
     5. Right-click the site then click Add Website and fill in the following details.
 
@@ -65,15 +65,15 @@ documentation: ug
 
         * **Physical path** : In the Physical path box, click `Browse` to navigate the file system to find the IDP - Web from Bold BI extracted location.
 
-        ![create-site](/bold-bi-docs/static/assets/embedded/faq/images/create-site.png#width=150%)
+        ![create-site](/static/assets/embedded/faq/images/create-site.png#width=150%)
         
         After clicking `OK` you can see the site and site dependencies as shown below.
 
-        ![created-site](/bold-bi-docs/static/assets/embedded/faq/images/created-site.png#width=55%)
+        ![created-site](/static/assets/embedded/faq/images/created-site.png#width=55%)
 
     6. Add services as an application under the created site. Right-click on the site name and select `Add Application` then enter the details shown in the following.
 
-        ![create-application](/bold-bi-docs/static/assets/embedded/faq/images/create-application.png)
+        ![create-application](/static/assets/embedded/faq/images/create-application.png)
 
         Repeat the same procedure for the applications of Bold BI given in the following table,
     
@@ -89,11 +89,11 @@ documentation: ug
 
     7. Ensure that the `BI` application has sub-applications, as shown in the following image.
     
-        ![bi-apps-ensure](/bold-bi-docs/static/assets/embedded/faq/images/bi-app-ensure.png#width=55%)
+        ![bi-apps-ensure](/static/assets/embedded/faq/images/bi-app-ensure.png#width=55%)
 
     8. Finally, the application structure is created successfully as shown in the following image.
        
-        ![final-application](/bold-bi-docs/static/assets/embedded/faq/images/final-application.png#width=55%)
+        ![final-application](/static/assets/embedded/faq/images/final-application.png#width=55%)
 		
 	9. Restart the site and access it with the mentioned port number in any browser.
 	

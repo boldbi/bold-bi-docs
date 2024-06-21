@@ -11,14 +11,14 @@ documentation: ug
 
  To delete the custom widget click on the Settings icon in the Bold BI Server as shown in the image below:
 
-   ![Dashboard Settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/custom-widget/dashboard-settings.png#max-width=75%)
+   ![Dashboard Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/custom-widget/dashboard-settings.png#max-width=75%)
 
  Click on the "Widgets" tab as shown in the image below:
 
-  ![Widgets Tab](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/custom-widget/widgets-section.png)
+  ![Widgets Tab](/static/assets/embedded/visualizing-data/visualization-widgets/images/custom-widget/widgets-section.png)
  
  You can delete the custom widget by clicking on the delete icon as shown in the image below:
 
-  ![Delete Icon](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/custom-widget/delete-icon.png)
+  ![Delete Icon](/static/assets/embedded/visualizing-data/visualization-widgets/images/custom-widget/delete-icon.png)
 
  > **NOTE:** The custom widget will be deleted only within the particular tenant alone.

@@ -12,7 +12,7 @@ documentation: ug
 
 `Column chart` allows you to compare values for a set of unordered items across categories through vertical bars ordered horizontally.
 
-![Default Column chart](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/column-chart-view.png)
+![Default Column chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/column-chart-view.png)
 
 ## How to configure the table data to column chart
 
@@ -22,43 +22,43 @@ The following steps explains the data configuration of column chart:
 
 1.	Drag and drop the `column chart control` icon from the tool box into design panel. You can find the control in tool box by search.
 
-![Adding column chart](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/drop-widget.png)
+![Adding column chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/drop-widget.png)
 
 2.	Resize the widget as required.
 
-![Resizing widget in design panel](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/resizing.png)
+![Resizing widget in design panel](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/resizing.png)
 
 3.  Click the `Data Source` button in the configuration panel.
 
-![Data Source](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/databutton.png)
+![Data Source](/static/assets/embedded/visualizing-data/visualization-widgets/images/databutton.png)
 
 4.  Click the `CREATE NEW` button to launch a new connection from the connection type panel.
 
-![CREATE NEW](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/datasourcebutton.png)
+![CREATE NEW](/static/assets/embedded/visualizing-data/visualization-widgets/images/datasourcebutton.png)
 
 5.  In the connection type panel, click any one (Here, the `Microsoft Excel` Connection type is selected for demonstration) of the listed connection type button.
 
-![Datasource list](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/datasourcelist.png)
+![Datasource list](/static/assets/embedded/visualizing-data/visualization-widgets/images/datasourcelist.png)
 
 6.  In the `NEW DATA SOURCE` configuration panel, fill the connection type and related details. Click the `Preview & Connect` button.
 
-![Connect button](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/connectbutton.png)
+![Connect button](/static/assets/embedded/visualizing-data/visualization-widgets/images/connectbutton.png)
 
 7.  Drag and drop your preferred table or view from the left pane from the data design view, and click the `Save` button.
 
-![Virtual table](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/virtualtable.png)
+![Virtual table](/static/assets/embedded/visualizing-data/visualization-widgets/images/virtualtable.png)
 
 8.	Click the `Properties icon` in the configuration panel.
 
-![Click properties icon](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/designerpropertiesbutton.png)
+![Click properties icon](/static/assets/embedded/visualizing-data/visualization-widgets/images/designerpropertiesbutton.png)
 
 9.	The `properties` panel of the widget will be displayed as shown in the following screenshot.
 
-![Properties pane](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/assign-data.png)
+![Properties pane](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/assign-data.png)
 
 10.  Now, switch to the `ASSIGN DATA` tab.
 
-![Properties pane](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/assign-data-section.png)
+![Properties pane](/static/assets/embedded/visualizing-data/visualization-widgets/images/assign-data-section.png)
 
 11.	The `ASSIGN DATA` tab will be opened with the available columns from the connected data source.
 
@@ -66,7 +66,7 @@ The following steps explains the data configuration of column chart:
 
 Bind column by dragging and dropping the element from the sections to `values.`
 
-![Add value field](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/add-measure.png)
+![Add value field](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/add-measure.png)
 
 > **IMPORTANT:**  
 * The field added in this section will act as a measure value. 
@@ -78,43 +78,43 @@ You can `filter` and `format` the data displayed in the widget from the settings
 
 The following screenshots shows the various settings menu options based on the type of field configured in the type of section. 
 
-![Numeric field settings menu](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/settings-menu.png)
+![Numeric field settings menu](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/settings-menu.png)
 
 #### Renaming fields
 
 The configured field names can be edited by using the `Rename` option provided in the settings menu.
 
-![Renaming field](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/rename.png)
+![Renaming field](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/rename.png)
 
 #### Changing the aggregation type
 
 You can change the aggregation type of the measure section from the settings menu as shown in the following screenshot. Refer to [this section](/embedded-bi/visualizing-data/working-with-widgets/aggregating-value-columns-based-on-type/) for more details.
 
-![Changing the aggregation](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/settings.png)
+![Changing the aggregation](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/settings.png)
 
 #### Filtering data
 
 You can use Filters to change the values by selecting the `Filter` option. For more details, refer to [Measure filter](/embedded-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-measure-column) and [dimension filter](/embedded-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column).
 
-![Filter option](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/filter-option.png)
+![Filter option](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/filter-option.png)
 
 #### Measure formatting
 
 You can format the elements by selecting the `Format` option. For more details, refer to [measure format](/embedded-bi/visualizing-data/working-with-widgets/formatting-measure-type-column/).
 
-![Formatting option](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/format-option.png)
+![Formatting option](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/format-option.png)
 
 #### Removing the fields
 
 To remove the added value fields, click the highlighted button.
 
-![Removing  Fields](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/removebutton.png)
+![Removing  Fields](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/removebutton.png)
 
 ### Adding fields to Column(s)
 
 Drag and drop the elements from sections to columns.
 
-![Add column field](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/adding-columns.png)
+![Add column field](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/adding-columns.png)
 
 > **IMPORTANT:**  
 * The field added in this section will act as a dimension value. 
@@ -124,29 +124,29 @@ Drag and drop the elements from sections to columns.
 
 You can change the `Settings.`
 
-![Settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/column-settings.png)
+![Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/column-settings.png)
 
 #### Renaming fields
 
 The configured field names can be edited by using the `Rename` option provided in the settings menu.
 
-![Renaming field](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/rename.png)
+![Renaming field](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/rename.png)
 
 #### Sorting
 
 You can Sort the dimension data using the `Sort` option under the Settings menu list. To apply sorting for the data, refer to the [Sort](/embedded-bi/visualizing-data/working-with-widgets/advanced-sorting/#dimension-column).
 
-![Sort Settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/sort-option.png)
+![Sort Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/sort-option.png)
 
 #### Filtering data
 
 You can apply filter by selecting the `Filter(s)` option in the settings. For more details, refer to the [filter](/embedded-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column).
 
-![Configuring filter for dimension column](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/filter-option-column.png)
+![Configuring filter for dimension column](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/filter-option-column.png)
 
 The chart will be rendered like this,
 
-![Adding column field](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/column-chart.png)
+![Adding column field](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/column-chart.png)
 
 Similarly, you can add the `Measures` and `Expression Columns` into the column field.
 
@@ -154,21 +154,21 @@ Similarly, you can add the `Measures` and `Expression Columns` into the column f
 
 On adding the second value to the Columns section, the alert message will be shown.
 
-![Drill confirmation alert](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/drillalert.png)
+![Drill confirmation alert](/static/assets/embedded/visualizing-data/visualization-widgets/images/drillalert.png)
 
 Click `Yes` to enable the option. If you click `No,` a single value will be added to the Columns section.
 
 *Figure: Chart with a drilled view of the selected region.*
 
-![Drilled view](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/drilled-view.png)
+![Drilled view](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/drilled-view.png)
 
 ### Adding fields to Row
 
 Drag and drop the elements from sections to `Row.`
 
-![Add row fields](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/chart-row.png)
+![Add row fields](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/chart-row.png)
 
-![Chart view with row configured](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/configured-widget.png)
+![Chart view with row configured](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/configured-widget.png)
 
 #### Adding tooltip fields
 
@@ -180,47 +180,47 @@ You can format the column chart for better illustration of the view that you req
 
 ### General settings
 
-![General settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/property.png)
+![General settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/property.png)
 
 #### Name
 
 This allows you to set `title` for this column chart widget.
 
-![General settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/Name.png)
+![General settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/Name.png)
 
 #### Subtitle
 
 This allows you to set `subtitle` for this column chart widget.
 
-![General settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/subtitle.png)
+![General settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/subtitle.png)
 
 #### Description
 
 This allows you to set `description` for this column chart widget.
 
-![General settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/description.png)
+![General settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/description.png)
 
 ### Basic settings
 
-![Basic Settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/basic-settings.png)
+![Basic Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/basic-settings.png)
 
 #### Show Tooltip
 
 This option allows you to toggle the visibility of tooltip in chart.
 
-![General settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/tooltip.png)
+![General settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/tooltip.png)
 
 #### Chart type and axis
 
 Click the `Change` button to open the `Chart Type and Axis Settings` dialog. 
 
-![Change type and axis settings dialog](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/chart-type-and-axis.png)
+![Change type and axis settings dialog](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/chart-type-and-axis.png)
 
 **Chart Type**: This allows you to switch the widget view from current chart type to another convertible chart type.
 
 **Secondary Axis**: By default, the configured field is plotted as the primary axis, if you enable this option, the selected field will be plotted as the secondary axis. 
 
-![Secondry axis in chart](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/secondary-axis.png)
+![Secondry axis in chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/secondary-axis.png)
 
 #### Enable animation
 
@@ -230,39 +230,39 @@ It animates the measure values when you toggle the `Enable Animation.`
 
 This allows you to toggle the visibility of value labels.
 
-![Value labels in chart](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/value-labels.png)
+![Value labels in chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/value-labels.png)
 
 If you Disable `Show Value Labels` properties, the dependent properties, which are **color**, **Value label position**, **Value label rotation** and **Value label suffix** will be hidden.
 
-![Show value label](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/show-label.png)
+![Show value label](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/show-label.png)
 
 #### Customize
 
 This allows you to customize the toggle visibility of value labels in each series.
 
-![Value labels customization change](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/value-label-customization.png)
+![Value labels customization change](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/value-label-customization.png)
 
-![Value labels customization](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/value-label-change.png)
+![Value labels customization](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/value-label-change.png)
 
 #### Value Label Color
 
 This allows you to customize the value label's color.
 
-![Value label Color Option](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/data-label-color-option.png)
+![Value label Color Option](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/data-label-color-option.png)
 
-![Value label Color](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/data-label-color.png)
+![Value label Color](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/data-label-color.png)
 
 ### Value Label Position
 
 This option allows you to customize the value label position in the chart. By default, it is set to ‘Auto,’ so the label position for the column chart will be set to Top.
 
-![Value label position](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/column-valuelabelposition.png)
+![Value label position](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/column-valuelabelposition.png)
 
 #### Value label rotation
 
 This allows you to define the `rotation angle for the value labels` to display.
 
-![Rotated labels](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/rotated-labels.png)
+![Rotated labels](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/rotated-labels.png)
 
 #### Value label suffix
 
@@ -272,7 +272,7 @@ This allows you to show or hide the suffix value of value labels.
 
 This allows you to customize the suffix value of value labels.
 
-![Labels with suffix](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/label-with-suffix.png)
+![Labels with suffix](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/label-with-suffix.png)
 
 **Note:** When Increased the height and number of data in chart the value label was hidden. Use label rotation property to visible the label.
 
@@ -280,48 +280,48 @@ This allows you to customize the suffix value of value labels.
 
 This allows you to show data, which column does not have value.
 
-![Empty Point Mode Gap](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/chart-gap.png)
+![Empty Point Mode Gap](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/chart-gap.png)
 
 ### Empty Point Mode
 
 This allows you to handle the display mode of the data point values is null or undefined when `Show Items With No Data` is enabled.
 
-![Empty Point Mode Gap](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/chart-gap.png)
+![Empty Point Mode Gap](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/chart-gap.png)
  
 ### Gap
 
 This option allows you to show the null or undefined values with gaps.
 
-![Empty Point Mode Gap](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/chart-gap.png)
+![Empty Point Mode Gap](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/chart-gap.png)
 
 ### Zero
 
 This option allows you to show the null or undefined values in the zero axis.
 
-![Empty Point Mode Zero](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/chart-zero.png)
+![Empty Point Mode Zero](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/chart-zero.png)
 
 ### Average
 
 This option displays the null or undefined values with the average value.
 
-![Empty Point Mode Average](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/chart-average.png)
+![Empty Point Mode Average](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/chart-average.png)
 
 
 #### Column Width
 
 This option allows you to increase or decrease the width of the column by using the `Column Width.`
 
-![Column Width Customization](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/column-width-customization.png)
+![Column Width Customization](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/column-width-customization.png)
 
-![Column Width](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/column-width.png)
+![Column Width](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/column-width.png)
 
 #### Column Spacing
 
 This option allows you to increase or decrease the space between the columns by using the `Column Spacing.`
 
-![Column Spacing Customization](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/column-spacing-customization.png)
+![Column Spacing Customization](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/column-spacing-customization.png)
 
-![Column Spacing](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/column-spacing.png)
+![Column Spacing](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/column-spacing.png)
 
 #### Enable Smooth Scroll
 
@@ -333,13 +333,13 @@ This option allows you to set number of records needs to be fetched on initial l
 
 ### Legend Settings
 
-![Legend settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/legend-settings.png)
+![Legend settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/legend-settings.png)
 
 #### Show legend
 
 A Legend is a text used to describe the data plotted. This allows you to toggle the visibility of legend in chart and also change the legend text position (selecting through combo box).
 
-![chart legends](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/show-legend.png)
+![chart legends](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/show-legend.png)
 
 Enabling this option of Custom Legend Text will allow you to define a custom text (through the text area) to display for each legend series (selecting through the combo box) in chart.
 
@@ -347,17 +347,17 @@ Enabling this option of Custom Legend Text will allow you to define a custom tex
 
 This allows you to change the chart legend title and label colors.
 
-![Chart Legend Color Option](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/legend-label-color-option.png)
+![Chart Legend Color Option](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/legend-label-color-option.png)
 
-![Chart Legend Color](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/legend-label-color.png)
+![Chart Legend Color](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/legend-label-color.png)
 
 #### Customize
 
 You can customize the legend text through the `Custom Legend Settings` dialog. This dialog will show the legend text list as labels at left and corresponding text area at right to add the formatted text to display instead.
 
-![Legend customization](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/legendcustomize.png)
+![Legend customization](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/legendcustomize.png)
 
-![Legend customization Change](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/legendcustomize-change.png)
+![Legend customization Change](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/legendcustomize-change.png)
 
 #### Legend Position
 
@@ -371,19 +371,19 @@ This allows you change the **shape** of the legend.
 
 This option allows you to change the shape of the legend in a `Circle.`
 
-![Show Legend shape](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/legend-shape.png)
+![Show Legend shape](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/legend-shape.png)
 
 ***Series Type***
 
 This option allows you to change the shape of the legend in `Series.`
 
-![Show Legend shape Series](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/legend-shape-series.png)
+![Show Legend shape Series](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/legend-shape-series.png)
 
 #### Legend Title
 
 This allows you to add the legend title for the chart. It will reflect with the `Show Legend.`
 
-![Show Legend Title](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/legend-title.png)
+![Show Legend Title](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/legend-title.png)
 
 #### Text Overflow
 
@@ -393,25 +393,25 @@ This option allows you to customize legend text based on the 'Text Width' proper
 
 This option allows you to render legend items without any wrap and trim.
 
-![Legend Overflow None in chart](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/ColumnChart_LegendNone.png)
+![Legend Overflow None in chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/ColumnChart_LegendNone.png)
 
 ***Trim***
 
 This option allows you to trim the legend items if its legend exceeds the 'Text Width' value.
 
-![Legend Overflow Trim in chart](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/ColumnChart_Legendtrim.png)
+![Legend Overflow Trim in chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/ColumnChart_Legendtrim.png)
 
 ***Wrap***
 
 This option allows you to wrap legend items based on the 'Text Width' value.
 
-![Legend Overflow Wrap in chart](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/ColumnChart_Legendwrap.png)
+![Legend Overflow Wrap in chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/ColumnChart_Legendwrap.png)
 
 #### Text Width
 
 This option allows you to set a maximum width for the Legend Items and it is applicable only if text-overflow set to Trim or Wrap.
 
-![Legend Text Width in chart](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/ColumnChart_Legendwidth.png)
+![Legend Text Width in chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/ColumnChart_Legendwidth.png)
 
 If you uncheck the `Show Legend` property in the property panel, the dependent properties, which are **Legend color**, **Legend position**, **customization button** and **Legend title** are also hidden.
 
@@ -421,58 +421,58 @@ If you uncheck the `Show Legend` property in the property panel, the dependent p
 
 This option allows you to format the primary and secondary axis values from the formatting details provided using the `Format` button. For more details, refer to this [measure format](/embedded-bi/visualizing-data/working-with-widgets/formatting-measure-type-column/).
 
-![Formatting Axis](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/axis-format.png)
+![Formatting Axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/axis-format.png)
 
 ### Link
 
 To configure the linking to URL or dashboard with the widget using its settings. For more details, refer to [Linking](/embedded-bi/visualizing-data/working-with-widgets/linking-urls-and-dashboards/).
 
-![Link](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/linking.png)
+![Link](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/linking.png)
 
 ### Axis settings
 
 This section allows you to customize the axis settings in chart.
 
-![Chart axis properties](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/axis-settings.png)
+![Chart axis properties](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/axis-settings.png)
 
 #### Title color
 
 This allows you to customize the axis title color.
 
-![Title color](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/title-color.png)
+![Title color](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/title-color.png)
 
 #### Label color
 
 This allows you to customize the axis label color.
 
-![Label color](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/label-color.png)
+![Label color](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/label-color.png)
 
 #### Show category axis
 
 This allows you to toggle the visibility of category axis.
 
-![Category axis](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/category-axis.png)
+![Category axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/category-axis.png)
 
 If you disable the `Show Category Axis` option, dependencies properties, which are **Show axis title**, **Axis title text**, **Trim overflow mode**, **Trim axis labels**, **Label Rotation** and **Auto Interval** option, will be hidden.
 
-![Show value label](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/show-axis.png)
+![Show value label](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/show-axis.png)
 
 #### Show category axis title
 
 This allows you to toggle the visibility of category axis title.
 
-![Category axis title visibility](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/show-category-axis.png)
+![Category axis title visibility](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/show-category-axis.png)
 
 #### Category axis title
 
 This allows you to edit the category axis title for chart. It will reflect in x-axis name of chart.
 
-![category axis title](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/category-axis-title.png)
+![category axis title](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/category-axis-title.png)
 
 
 If we uncheck the `Show Axis Title` property, the Axis title text box property will be hidden.
 
-![Show Category axis title](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/show-axis-title-prop.png)
+![Show Category axis title](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/show-axis-title-prop.png)
 
 #### Label overflow mode
 
@@ -482,13 +482,13 @@ This allows you to handle the display mode of the overlapping labels in the cate
 
 This option trims the end of overlapping label in the axis.
 
-![Trimmed label overflow](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/trimmed-label.png)
+![Trimmed label overflow](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/trimmed-label.png)
 
 #### Hide
 
 This option hides the overlapping label in the axis.
 
-![Hidden label overflow](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/hidden-label.png)
+![Hidden label overflow](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/hidden-label.png)
 
 #### Trim Axis Labels
 
@@ -498,45 +498,45 @@ This option allows you to trim the axis labels based on the `Maximum Label Width
 
 This option allows you to set a maximum width for the axis labels, and also it can be made customizable when the `trim axis label` option is enabled.
 
-![Label maximum width](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/maximum-label-width.png)
+![Label maximum width](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/maximum-label-width.png)
 
-![Trimmed label](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/trimming-label.png)
+![Trimmed label](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/trimming-label.png)
 
 #### Category axis label rotation
 
 This allows you to define the rotation angle for the category axis labels to display.
 
-![Rotated category axis labels](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/label-rotation.png)
+![Rotated category axis labels](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/label-rotation.png)
 
 #### Auto Interval and Interval
 
-![Axis interval](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/chart-auto-interval.png)
+![Axis interval](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/chart-auto-interval.png)
 
 By default, the 'Auto Interval' property is enabled. The Auto Interval property is used to set auto intervals based on the number of data points for category axis labels. If the user wants to customize the interval, then the user needs to disable the auto interval and set the required interval.
 
-![Axis interval Value](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/chart-interval.png)
+![Axis interval Value](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/chart-interval.png)
 
 #### Primary value axis
 
 This allows you to enable the primary value axis for chart.
 
-![Chart primary axis](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/primary-axis.png)
+![Chart primary axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/primary-axis.png)
 
 If you disable the `Show Primary Axis` option, dependencies properties, which are **Axis title**, **Axis title text**, **Axis type** and **Axis Format** properties will be hidden.
 
-![Show primary value axis](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/primary.png)
+![Show primary value axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/primary.png)
 
 #### Show primary axis title
 
 This allows you to enable the visibility of primary value axis title of chart.
 
-![Primary axis title visibility](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/show-primary-axis-title.png)
+![Primary axis title visibility](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/show-primary-axis-title.png)
 
 #### Primary axis title value
 
 This allows you to edit the primary value axis title. It will reflect in y-axis name of chart.
 
-![Primary axis title value](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/title-value.png)
+![Primary axis title value](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/title-value.png)
 
 ### Inverse Axis
 
@@ -544,7 +544,7 @@ By default, the chart axis showing positive values on the top and negative value
 
 On enabling this property the chart negative values will display on the top and positive values display on the bottom.
 
-![Inversed axis](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/inverseaxis.png)
+![Inversed axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/inverseaxis.png)
 
 ### Axis Type
 
@@ -562,65 +562,65 @@ This option allows you to handle the logarithmic axis that uses a logarithmic sc
 
 This allows you to manually set the Minimum, Maximum, and Interval values of primary value axis through the Axis Range Settings dialog.
 
-![Axis range settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/axis-range.png)
+![Axis range settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/axis-range.png)
 
 It will reflect in the primary value axis of the chart.
 
-![Modified ranges](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/modified-range.png)
+![Modified ranges](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/modified-range.png)
 
 #### Axis Format
 
 This option allows you to format the primary and secondary axis values from the formatting details provided using the `Format` button. For more details, refer to this [measure format](/embedded-bi/visualizing-data/working-with-widgets/formatting-measure-type-column/).
 
-![Formatting Axis](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/axis-format.png)
+![Formatting Axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/axis-format.png)
 
 ### Gridlines
 
 You can toggle the visibility of the each axes gridlines visibility using the property.
 
-![Grid line properties](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/chartgridlines.png)
+![Grid line properties](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/chartgridlines.png)
 
 #### Primary Value Axis
 
 This allows you to enable the `Primary Value Axis` gridlines for the column chart.
 
-![Primary Value Axis](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/primary-gridlines.png)
+![Primary Value Axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/primary-gridlines.png)
 
 #### Secondary value Axis
 
 This allows you to enable the `Secondary Value Axis` gridlines for the column chart.
 
-![Secondary value Axis](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/secondary-gridlines.png)
+![Secondary value Axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/secondary-gridlines.png)
 
 #### Category Axis
 
 This allows you to enable the `Category Axis` gridlines for the column chart.
 
-![Category Axis](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/category-gridlines.png)
+![Category Axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/category-gridlines.png)
 
 ### Trendline
 
 You can add more than one trendline to Cartesian charts except for bar type series(Line, Column, Area, Spline) and stacked type of charts. You can **add, edit,** and **delete** trendlines.
 
-![Trendline](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/trendline-settings.png)
+![Trendline](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/trendline-settings.png)
 
 ### Add Trendline and Edit Trendline
 
 To add the trendline, click the highlighted button.
 
-![Trendline Add](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/trendline-add.png)
+![Trendline Add](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/trendline-add.png)
 
 Now, the dialog will open as follows.
 
-![Trendline Dialog](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/trendlinedialog.png)
+![Trendline Dialog](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/trendlinedialog.png)
 
 Click the `OK` button to add trendline in a column chart. Now, the chart renders as follows.
 
-![Trendline chart](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/trendline.png)
+![Trendline chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/trendline.png)
 
 To edit the trendline select the one to be edited and click the highlighted button.
 
-![Trendline Edit](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/trendline-edit.png)
+![Trendline Edit](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/trendline-edit.png)
 
 Again, the trendline dialog window opens now.
 
@@ -648,7 +648,7 @@ You can change the style of the trendline by the `Line Style` drop down option(S
 
 To delete the trendline, select the one to be deleted and click the highlighted button.
 
-![Trendline Delete](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/trendline-delete.png)
+![Trendline Delete](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/trendline-delete.png)
 
 ### Formatting
 
@@ -656,17 +656,17 @@ To delete the trendline, select the one to be deleted and click the highlighted 
 
 This allows you to change the `color` for the column chart.
 
-![Format Colors](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/formatting-color.png)
+![Format Colors](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/formatting-color.png)
 
 It will reflect in the column chart.
 
-![Formating Data Colors](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/formatting-change-color.png)
+![Formating Data Colors](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/formatting-change-color.png)
 
 #### Advance settings
 
 The `Advance setting` option will be enabled when only one column and one row is configured. You can refer more details from [this section](/embedded-bi/visualizing-data/visualization-widgets/column-chart/#how-to-apply-conditional-formatting)
 
-![Advance color settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/advanced-colors.png)
+![Advance color settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/advanced-colors.png)
 
 ## How to apply conditional formatting
 
@@ -678,15 +678,15 @@ Color in column chart widget can be customized using the color settings availabl
 
 2. This will open the `Conditional Formatting` dialog.
 
-![Conditional formatting dialog](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/formatting-dialog.png)
+![Conditional formatting dialog](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/formatting-dialog.png)
 
 3. Select the mode and enter the conditions as required and click the `save` button to apply.
 
-![Applying the conditions](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/apply-conditions.png)
+![Applying the conditions](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/apply-conditions.png)
 
 4. Now, the widget visualization will be updated based on the conditions.
 
-![After applying conditional formatting](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/formatted-result.png)
+![After applying conditional formatting](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/formatted-result.png)
 
 Refer to the following sections for the detailed steps on using the [Gradient](/embedded-bi/visualizing-data/visualization-widgets/column-chart/#gradient-mode), [Rule](/embedded-bi/visualizing-data/visualization-widgets/column-chart/#rule-based- condition-mode) and [individual](/embedded-bi/visualizing-data/visualization-widgets/column-chart/#individual-mode.png) modes. 
 
@@ -717,7 +717,7 @@ You can enter the title for the column chart legends.
 
 This allows you to customize the fill color of the column chart based on one or more numerical / text conditions.
 
-![rule mode](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/rule-mode.png)
+![rule mode](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/rule-mode.png)
 
 #### Value type
 
@@ -732,11 +732,11 @@ You can give a meaningful name to the applied conditions.
 Choose the condition for measure field from the highlighted 
 conditions.
 
-![numeric condition types](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/numeric-condition.png)
+![numeric condition types](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/numeric-condition.png)
 
 If you selected the dimension as a `based-on field` and want to use text condition, the following text-based conditions are available.
 
-![text conditions](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/text-condition.png)
+![text conditions](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/text-condition.png)
 
 > The text-based condition type will be enabled only when the dimension selected is used as the based-on field.
 
@@ -767,19 +767,19 @@ Using the `individual` mode, you can specify color for each record.
 > **IMPORTANT:**  Only top 100 records will be listed in the 
 dialog. 
 
-![Individual mode](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/column-chart-individual-mode.png)
+![Individual mode](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/column-chart-individual-mode.png)
 
 #### Color Mapping Type
 
 Using the Color Mapping type, you can apply the colors to the series either based on data or index.
 
-![Color Mapping Type option](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/column-chart-formatting-color-mapping-type-options.png)
+![Color Mapping Type option](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/column-chart-formatting-color-mapping-type-options.png)
 
 ***Data***
 
 It allows you to apply color for chart series based on data. If you want to apply a specific color to specific data, you can use Data based color mapping. By default, the Color Mapping Type will be `Data`.
 
-![Color Mapping Type Data](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/column-chart-formatting-data-type-color.png)
+![Color Mapping Type Data](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/column-chart-formatting-data-type-color.png)
 
 ***Index***
 
@@ -787,7 +787,7 @@ It allows you to apply color for chart series based on `Index`. Such that the co
 
 For example, If you are displaying the countries based on the increasing order of the case count, then the index-based color mapping will be useful to set the colors based on the rank. Say red color to the top, then the red color will be maintained for the country having the largest case count.
 
-![Color Mapping Type Index](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/column-chart-formatting-index-based-color.png)
+![Color Mapping Type Index](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/column-chart-formatting-index-based-color.png)
 
 **Note:** We prefer to use Index based color customization only for minimum data(upto 15 series).
 
@@ -804,7 +804,7 @@ To undo all the changes, click `reset.`
 
 This allows you to apply color for chart series either by using a default palette or a custom color palette. By default, the colors will be applied using the default palette. This series of settings will be visible only if you configured the row section in the chart.
 
-![Series Palette](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/series-palette.png)
+![Series Palette](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/series-palette.png)
 
 #### Use Default Palette
 
@@ -812,19 +812,19 @@ This Option allows you to apply default color for chart series.
 
 By toggle off the `Use Default Palette` option, the `Color Mapping Type` will be shown.
 
-![Color Mapping option](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/color-mapping-type.png)
+![Color Mapping option](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/color-mapping-type.png)
 
 #### Color Mapping Type
 
 Using Color Mapping type, you can apply the colors to the series either based on data or index.
 
-![Color Mapping Type option](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/color-mapping-type-options.png)
+![Color Mapping Type option](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/color-mapping-type-options.png)
 
 ***Data***
 
 It allows you to apply color for chart series based on data. If you want to apply a specific color to specific data(i.e. Violet color for 2021, Sky Blue color for 2022, and green for 2020), you can use Data based color mapping. By default, the Color Mapping Type will be `Data`.
 
-![Color Mapping Type Data](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/column-chart-data-type-color.png)
+![Color Mapping Type Data](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/column-chart-data-type-color.png)
 
 ***Index***
 
@@ -832,7 +832,7 @@ It allows you to apply color for chart series based on `Index`. Such that the co
 
 For example, If you are displaying the countries based on the increasing order of the case count, then the index-based color mapping will be useful to set the colors based on the rank. Say red color to the top, then the red color will be maintained for the country having the largest case count.
 
-![Color Mapping Type Index](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/column-chart-index-based-color.png)
+![Color Mapping Type Index](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/column-chart-index-based-color.png)
 
 **Note:** We prefer to use Index based color customization only for minimum data(upto 15 series).
 
@@ -840,7 +840,7 @@ For example, If you are displaying the countries based on the increasing order o
 
 This section allows you to customize the font size of chart elements.
 
-![Font settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/font-settings.png)
+![Font settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/font-settings.png)
 
 #### Auto font Size and font size
 
@@ -851,7 +851,7 @@ By default, the 'Auto Font Size' property is enabled. the Auto font size propert
 
 This section allows you to handle the `filter` action for the spline area chart widget.
 
-![Filter](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/filter.png)
+![Filter](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/filter.png)
 
 #### Act as master widget
 
@@ -871,7 +871,7 @@ When the `Hierarchical Filter option` is enabled, the Top N will be applied for 
 
 This sections allows you to customize the `Container Appearance` for the column chart widget.
 
-![Container Appearance](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/container-appearance.png)
+![Container Appearance](/static/assets/embedded/visualizing-data/visualization-widgets/images/container-appearance.png)
 
 ### Title Alignment
 
@@ -933,7 +933,7 @@ This allows you to toggle the visibility of the `shadow` surrounding the widget.
 
 This Section allows you to customize the **Container actions** for the column chart widget.
 
-![Container Actions](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/container-actions.png)
+![Container Actions](/static/assets/embedded/visualizing-data/visualization-widgets/images/container-actions.png)
 
 #### Show Header
 
@@ -979,8 +979,8 @@ We hide the widget elements based on the size of the widget for better readabili
 
 When the chart has been placed with less than 7 columns chart Y-axis labels, Y-axis titles will be hidden.
 
-![Widget Element](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/Y-axis-label.png)
+![Widget Element](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/Y-axis-label.png)
 
 When the chart has been placed with less than 6 rows, chart X-axis labels, X-axis titles and gridlines will be hidden.
 
-![Widget Element](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/X-axis-label.png)
+![Widget Element](/static/assets/embedded/visualizing-data/visualization-widgets/images/column-chart/X-axis-label.png)

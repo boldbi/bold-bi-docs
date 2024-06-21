@@ -19,7 +19,7 @@ Please follow these steps:
 
 **Access Mode**: `Create`
 
-![Create All Dashboards Access](/bold-bi-docs/static/assets/embedded/faq/images/create-all-dashboards.png#width=400px;height=200px)
+![Create All Dashboards Access](/static/assets/embedded/faq/images/create-all-dashboards.png#width=400px;height=200px)
 
 2. After this, provide access to a particular data source with the `Read` permission alone, so that the user can use the existing data source for dashboard creation without modifying it.
 
@@ -29,4 +29,4 @@ Please follow these steps:
 
 **Access Mode**: `Read`
 
-![Provide Read Permission to User](/bold-bi-docs/static/assets/embedded/faq/images/provide-read-permission-to-ds.png#width=400px;height=200px)
+![Provide Read Permission to User](/static/assets/embedded/faq/images/provide-read-permission-to-ds.png#width=400px;height=200px)

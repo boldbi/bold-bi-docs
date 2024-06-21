@@ -14,12 +14,12 @@ Follow these steps to achieve this requirement.
 
 1.	Create an expression column with the required default value and save the data source.
 
-    ![Create Expression with default value](/bold-bi-docs/static/assets/embedded/faq/images/create-default-value-expression.png#max-width=60%)
+    ![Create Expression with default value](/static/assets/embedded/faq/images/create-default-value-expression.png#max-width=60%)
 
 2. Drag and drop the KPI card widget and bind the required value column in the `Actual Value` field, then bind the created expression column in the `Target Value` field and apply the `Max` function.
 
-    ![Assign Expression in KPI card widget](/bold-bi-docs/static/assets/embedded/faq/images/assign-expression-in-kpi-card.png)
+    ![Assign Expression in KPI card widget](/static/assets/embedded/faq/images/assign-expression-in-kpi-card.png)
 
 3. Now, you can apply the required formatting for values. 
 
-    ![KPI Card Preview](/bold-bi-docs/static/assets/embedded/faq/images/kpi-card-preview.png)
+    ![KPI Card Preview](/static/assets/embedded/faq/images/kpi-card-preview.png)

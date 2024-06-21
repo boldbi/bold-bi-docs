@@ -66,21 +66,21 @@ Database Engines
 
 1.	Connect your [Google Cloud SQL](https://help.boldbi.com/embedded-bi/working-with-data-source/data-connectors/google-cloud-sql/) data source with MySQL database engine as follows.
    
-	![Google Cloud SQL](/bold-bi-docs/static/assets/embedded/faq/images/cloud-mysql.png#max-width=60%)
+	![Google Cloud SQL](/static/assets/embedded/faq/images/cloud-mysql.png#max-width=60%)
 	
 2.	After connecting, you can work with the required tables, views, or stored procedures by dragging and dropping them into the data design view page.
 
 3.	Later, you can change the existing database engine of the Google Cloud SQL data source by clicking the `edit connection` button as follows.
 
-    ![Edit connection](/bold-bi-docs/static/assets/embedded/faq/images/edit-connection.png#max-width=100%)
+    ![Edit connection](/static/assets/embedded/faq/images/edit-connection.png#max-width=100%)
 	
 4.	After clicking, the edit connection dialog opens where you can change the database engine from `MySQL` to `PostgreSQL` and configure with the PostgreSQL credentials as follows and click `connect.`
 
-    ![Edit connection panel](/bold-bi-docs/static/assets/embedded/faq/images/edit-connection-panel.png#max-width=60%)
+    ![Edit connection panel](/static/assets/embedded/faq/images/edit-connection-panel.png#max-width=60%)
 	
 5.	You can work with the required tables, views, or stored procedures after connecting with the PostgreSQL database engine and click `Save` to save the data source with a relevant name to proceed with [designing a dashboard.](https://help.boldbi.com/embedded-bi/working-with-dashboards/)
 
-    ![Save option](/bold-bi-docs/static/assets/embedded/faq/images/save-google-cloud.png#max-width=100%)
+    ![Save option](/static/assets/embedded/faq/images/save-google-cloud.png#max-width=100%)
 	
 6.	Here, you have created a single instance with the Google Cloud SQL connector and connected it to different database engines .
 

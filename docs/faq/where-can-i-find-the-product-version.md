@@ -13,5 +13,5 @@ Go to any of your tenants in the Bold BI Embed application.
 
 Click the question mark icon on the navigation menu and find the `App` version and `Database` version mentioned under the `Version` section.
 
-![Product Version](/bold-bi-docs/static/assets/embedded/faq/images/build-version.png)
+![Product Version](/static/assets/embedded/faq/images/build-version.png)
 

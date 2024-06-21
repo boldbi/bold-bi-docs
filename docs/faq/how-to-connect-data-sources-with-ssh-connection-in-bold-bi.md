@@ -35,14 +35,14 @@ Bold BI application allows you to enable SSH for the supported data sources by f
 
 2.	For connecting to the data source with SSH connection, you need to enable the **Enable SSH** checkbox and enter the required SSH details along with the existing data source server details and click **Connect.**
 
-    ![SSH option in data source](/bold-bi-docs/static/assets/embedded/faq/images/ssh-option-faq.png#max-width=50%)
+    ![SSH option in data source](/static/assets/embedded/faq/images/ssh-option-faq.png#max-width=50%)
 
 In this way, you can enable SSL in the connection by passing the parameters in a connection string.
 
 3.	Drag and drop the table from the table schema in the data design view page.
 
-    ![Table schema](/bold-bi-docs/static/assets/embedded/faq/images/ssh-tables.png#max-width=100%)
+    ![Table schema](/static/assets/embedded/faq/images/ssh-tables.png#max-width=100%)
 
 4.	Click **Save** to save the data source with a relevant name to proceed with designing a dashboard.
 
-    ![Save option](/bold-bi-docs/static/assets/embedded/faq/images/ssh-save-option.png#max-width=100%)
+    ![Save option](/static/assets/embedded/faq/images/ssh-save-option.png#max-width=100%)

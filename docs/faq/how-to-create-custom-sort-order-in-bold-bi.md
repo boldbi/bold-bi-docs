@@ -15,11 +15,11 @@ Sometimes you do not prefer the existing order and you want to sort it in a diff
 
 To proceeding with this example, consider Bold BI is connected with `MS SQL data source` and the table named `ORDER DETAILS` is added as shown in the following screenshot.
 
-![Order Details datasource](/bold-bi-docs/static/assets/embedded/faq/images/order-details-datasource.png)
+![Order Details datasource](/static/assets/embedded/faq/images/order-details-datasource.png)
 
 In this example, we have configured a column chart to show the details of advance and order amounts for the respective months as below:
 
-![Order Details dashboard](/bold-bi-docs/static/assets/embedded/faq/images/order-details-dashboard.png)
+![Order Details dashboard](/static/assets/embedded/faq/images/order-details-dashboard.png)
 
 Here, we have March through July and it's formatted as text and does not date specific. So, it would not be sorted January through December. You can see in our sort it's sorted alphabetically by the first letter of the month. That's because it doesn't recognize this as actual month data. From, creating custom sort order function, you can control all of that.
 
@@ -31,19 +31,19 @@ Once the `Expression` is created, Sort the dimension value based on this express
 
 1. Click the Settings icon available in the `dimension` field which needs to be sort and select `Sort` option from the context menu like below.
 
-     ![Sort Icon](/bold-bi-docs/static/assets/embedded/faq/images/sort-icon.png)
+     ![Sort Icon](/static/assets/embedded/faq/images/sort-icon.png)
 
 2. The `Advanced Sorting` Options dialog will open as shown in the following image.
      
-     ![Advanced sorting dialogue](/bold-bi-docs/static/assets/embedded/faq/images/advanced-sorting.png)
+     ![Advanced sorting dialogue](/static/assets/embedded/faq/images/advanced-sorting.png)
 
 3. Configure Field based `sorting` to Orders the data based on the `Min` of the Expression field.
 
-     ![Field based sorting configuration](/bold-bi-docs/static/assets/embedded/faq/images/field-based-sorting.png)
+     ![Field based sorting configuration](/static/assets/embedded/faq/images/field-based-sorting.png)
 
 4. After click `Apply` option and you can see the sorted column March to July.
     
-     ![Custom sort dashboard](/bold-bi-docs/static/assets/embedded/faq/images/custom-sorted-dashboard.png)
+     ![Custom sort dashboard](/static/assets/embedded/faq/images/custom-sorted-dashboard.png)
 
 
 ## Related links     

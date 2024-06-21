@@ -26,7 +26,7 @@ You need to create a stored procedure with R scripts in the **Microsoft SQL Serv
 		
 2.  After executing the above queries, open `Services` and Right-click the `SQL Server`, and click `Restart` to restart the Microsoft SQL Server.
 
-    ![Restart SQL server](/bold-bi-docs/static/assets/embedded/faq/images/restart-sql-server.png#max-width=100%)
+    ![Restart SQL server](/static/assets/embedded/faq/images/restart-sql-server.png#max-width=100%)
 
 Now, you can create stored procedures with R scripts in the Microsoft SQL Server.
 
@@ -49,12 +49,12 @@ Now, you can create stored procedures with R scripts in the Microsoft SQL Server
 
 3.	While dragging the stored procedure, select the `Internal Cache` option in the `Parameters` window and click `OK.`
 
-    ![Internal cache option](/bold-bi-docs/static/assets/embedded/faq/images/internal-cache.png#max-width=65%)
+    ![Internal cache option](/static/assets/embedded/faq/images/internal-cache.png#max-width=65%)
 
 4.	You can view the fetched data in the data grid by clicking `Update.`
 
-    ![Update option](/bold-bi-docs/static/assets/embedded/faq/images/update-R-records.png#max-width=100%)
+    ![Update option](/static/assets/embedded/faq/images/update-R-records.png#max-width=100%)
 
 5.	Click `Save` to save the data source with a relevant name to proceed with [designing a dashboard.](https://help.boldbi.com/embedded-bi/working-with-dashboards/)
 
-    ![Save option](/bold-bi-docs/static/assets/embedded/faq/images/save-option-r.png#max-width=100%)
+    ![Save option](/static/assets/embedded/faq/images/save-option-r.png#max-width=100%)

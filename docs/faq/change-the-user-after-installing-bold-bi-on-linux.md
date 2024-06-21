@@ -23,7 +23,7 @@ documentation: ug
  
 2. Change the username, you want to run your application in the user value and save the service file.
 
-    ![Change User After Installation](/bold-bi-docs/static/assets/embedded/faq/images/change-user-after-installation.png)
+    ![Change User After Installation](/static/assets/embedded/faq/images/change-user-after-installation.png)
 
 3. You can also change the user in the service files by running the following command. 
 

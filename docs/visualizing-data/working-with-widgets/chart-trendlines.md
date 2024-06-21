@@ -14,25 +14,25 @@ Trendline helps to know the general pattern or overall direction of the data in 
 ## Add and edit trendline
 
 1. You can see the trendlines option under the `properties` tab of the applicable chart widgets. 
-![Trendline properties](/bold-bi-docs/static/assets/embedded/visualizing-data/working-with-widgets/images/trendLine-properties.png)
+![Trendline properties](/static/assets/embedded/visualizing-data/working-with-widgets/images/trendLine-properties.png)
 
 2. To add trendline, click the highlighted button. 
-![Add button click](/bold-bi-docs/static/assets/embedded/visualizing-data/working-with-widgets/images/add-trendLine.png)
+![Add button click](/static/assets/embedded/visualizing-data/working-with-widgets/images/add-trendLine.png)
 
 3. Now, the dialog will open as follows.
-![Trendline dialog](/bold-bi-docs/static/assets/embedded/visualizing-data/working-with-widgets/images/TrendLine-dialog.png)
+![Trendline dialog](/static/assets/embedded/visualizing-data/working-with-widgets/images/TrendLine-dialog.png)
 
 4. Click the `OK` button to add trendline in combination chart. 
-![ok click](/bold-bi-docs/static/assets/embedded/visualizing-data/working-with-widgets/images/click-ok-to-add-trendline.png)
+![ok click](/static/assets/embedded/visualizing-data/working-with-widgets/images/click-ok-to-add-trendline.png)
 
 5. Now, chart renders as follows. 
-![Chart with trendline](/bold-bi-docs/static/assets/embedded/visualizing-data/working-with-widgets/images/ChartTrendLines.png)
+![Chart with trendline](/static/assets/embedded/visualizing-data/working-with-widgets/images/ChartTrendLines.png)
 
 6. To edit trendline, select the one to be edited and click the highlighted button.
-![Edit trendline](/bold-bi-docs/static/assets/embedded/visualizing-data/working-with-widgets/images/edit-trendLine.png)
+![Edit trendline](/static/assets/embedded/visualizing-data/working-with-widgets/images/edit-trendLine.png)
 
 7. Again, trendline dialog window opens now.
-![Trendline dialog](/bold-bi-docs/static/assets/embedded/visualizing-data/working-with-widgets/images/TrendLine-window.png)
+![Trendline dialog](/static/assets/embedded/visualizing-data/working-with-widgets/images/TrendLine-window.png)
 
 ### Legend text
 
@@ -62,5 +62,5 @@ You can change the style of trendline by Line Style drop-down option (`Solid, Do
 
 To delete trendline, select the one to be deleted and click the highlighted button.
 
-![Delete trendline](/bold-bi-docs/static/assets/embedded/visualizing-data/working-with-widgets/images/delete-trendLine.png)
+![Delete trendline](/static/assets/embedded/visualizing-data/working-with-widgets/images/delete-trendLine.png)
 

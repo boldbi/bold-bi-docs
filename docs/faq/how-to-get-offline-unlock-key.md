@@ -14,6 +14,6 @@ documentation: ug
 
 3.	Click the Get Offline License Key File to download the offline key.
 
-    ![Offline License](/bold-bi-docs/static/assets/embedded/faq/images/offline-license.png)
+    ![Offline License](/static/assets/embedded/faq/images/offline-license.png)
  
 

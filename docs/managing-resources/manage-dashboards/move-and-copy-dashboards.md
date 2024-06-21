@@ -13,9 +13,9 @@ Dashboards can be moved or copied from one category to another category.
 ### Move Dashboards
 Moves the Dashboard from one to another category.
 
-![Move Dashboards](/bold-bi-docs/static/assets/embedded/managing-resources/manage-dashboards/images/move-dashboard.png#width=55%)
+![Move Dashboards](/static/assets/embedded/managing-resources/manage-dashboards/images/move-dashboard.png#width=55%)
 
 ### Copy Dashboards
 Copies the Dashboard from one to another category.
 
-![Copy Dashboards](/bold-bi-docs/static/assets/embedded/managing-resources/manage-dashboards/images/copy-dashboard.png#width=55%)
+![Copy Dashboards](/static/assets/embedded/managing-resources/manage-dashboards/images/copy-dashboard.png#width=55%)

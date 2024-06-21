@@ -19,7 +19,7 @@ For example, consider the following sample table named `demo table` in the `Micr
 
 Please find the screenshot of the sample table in the following screenshot:
 
-![no-data-database](/bold-bi-docs/static/assets/embedded/faq/images/no-data-database.png)
+![no-data-database](/static/assets/embedded/faq/images/no-data-database.png)
 
 Consider you have created a `data source` using this connection string and configuring any fields from this data source in your `Dashboard widgets` will be causing the no data to display alert. 
 
@@ -35,15 +35,15 @@ Another possible reason for the No data message in your visualizations is that y
 
 For example, consider the `Purchase Order Detail dashboard` shown in the following screenshot.
 
-![PurchaseOrderDetaildashboard](/bold-bi-docs/static/assets/embedded/faq/images/Purchase-Order-Detail-dashboard.png)
+![PurchaseOrderDetaildashboard](/static/assets/embedded/faq/images/Purchase-Order-Detail-dashboard.png)
 
 Here, `Master widget filter` has been configured for date value using the `date picker` widget with a date in the table and we can see the dashboard with filtered data.
 
-![MasteWidgetfilterConfiguration](/bold-bi-docs/static/assets/embedded/faq/images/Master-Widget-filter-Configuration.png)
+![MasteWidgetfilterConfiguration](/static/assets/embedded/faq/images/Master-Widget-filter-Configuration.png)
 
 When we have applied the `filter` value that contains no equivalent data in the table, it will be causing the no data to display.
 
-![No-data-displayed](/bold-bi-docs/static/assets/embedded/faq/images/No-data-displayed.png)
+![No-data-displayed](/static/assets/embedded/faq/images/No-data-displayed.png)
 
 To overcome the issue, Ensure that the filtered value matches the current dashboard data.
 
@@ -63,7 +63,7 @@ So, while applying the user filter, please make sure you have applied the filter
 
 `Isolation code` will be applied as follows.
 
-![Apply Isolation Code](/bold-bi-docs/static/assets/embedded/faq/images/isolation-code-apply-configuration.png)
+![Apply Isolation Code](/static/assets/embedded/faq/images/isolation-code-apply-configuration.png)
 
 The dashboard will be rendered based on the applied isolation code.`No data to be displayed` will be shown in the dashboard if the isolation code does not match the data source column.
 

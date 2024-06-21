@@ -13,19 +13,19 @@ Follow the below steps to reuse the widgets.
 
 1. Click the `Existing` tab in the widgets toolbox panel to view all dashboards that you have read-write permission.
 
-    ![Existing tab](/bold-bi-docs/static/assets/embedded/working-with-dashboards/images/default-and-existing.png)
+    ![Existing tab](/static/assets/embedded/working-with-dashboards/images/default-and-existing.png)
  
     Now, the existing panel with dashboards will be displayed.
 
-    ![Existing dashboard list](/bold-bi-docs/static/assets/embedded/working-with-dashboards/images/existing-dashboard-list.png)  
+    ![Existing dashboard list](/static/assets/embedded/working-with-dashboards/images/existing-dashboard-list.png)  
 
 2. Click the dashboard, all the widgets of the dashboard will be displayed.
 
-    ![Widgets list](/bold-bi-docs/static/assets/embedded/working-with-dashboards/images/widget-list.png)
+    ![Widgets list](/static/assets/embedded/working-with-dashboards/images/widget-list.png)
 
 3. You can drag the widgets from different dashboards to the current dashboard.
 
-    ![Imported widgets](/bold-bi-docs/static/assets/embedded/working-with-dashboards/images/import-widget.png)
+    ![Imported widgets](/static/assets/embedded/working-with-dashboards/images/import-widget.png)
 
     > **NOTE:**  The imported widgets are then independent and will not be affected when the original widgets are changed but it only shares the same data source.
 

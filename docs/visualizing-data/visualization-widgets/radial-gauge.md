@@ -12,7 +12,7 @@ documentation: ug
 
 `Radial Gauge` allows you measure the processing efficiency through the key performance indicator (KPI) like value and goal.
 
-![Radial gauge](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/radialgauge.png)
+![Radial gauge](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/radialgauge.png)
 
 ## How to configure data to Radial Gauge
 
@@ -22,39 +22,39 @@ Follow these steps to configure data to the Radial Gauge:
 
 1. Drag the Radial Gauge into the canvas and resize it to your required size.
 
-![Drag and drop](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/drop-widget.png)
+![Drag and drop](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/drop-widget.png)
 
 2. Click the `Data Source` button in the configuration panel.
 
-![Data source panel click](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/databutton.png)
+![Data source panel click](/static/assets/embedded/visualizing-data/visualization-widgets/images/databutton.png)
 
 3. Click `CREATE NEW` to launch a new connection from the connection type panel.
 
-![Create new click](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/datasourcebutton.png)
+![Create new click](/static/assets/embedded/visualizing-data/visualization-widgets/images/datasourcebutton.png)
 
 4.  In the `DATA SOURCES` panel, click any one of the listed connection type buttons as shown in the following. Here, the `Microsoft Excel` type is selected for demonstration.
 
-![Excel connection type](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/datasourcelist.png)
+![Excel connection type](/static/assets/embedded/visualizing-data/visualization-widgets/images/datasourcelist.png)
 
 5.  In the `NEW DATA SOURCE` configuration panel, enter the name and choose the file path, and then click `Preview & Connect.`
 
-![Select file path](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/connectbutton.png)
+![Select file path](/static/assets/embedded/visualizing-data/visualization-widgets/images/connectbutton.png)
 
 6.  Select the required tables from the `Choose Table(s)` dialog and click `Connect.`
 
-![Connect tables](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/choose-tables.png)
+![Connect tables](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/choose-tables.png)
 
 7.  Drag your preferred table or view from the left pane in the data design view and click `Save.`
 
-![Virtual tables](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/virtualtable.png)
+![Virtual tables](/static/assets/embedded/visualizing-data/visualization-widgets/images/virtualtable.png)
 
 8.  Click the `Properties` button in the configuration panel. The property pane opens.
 
-![Property pane open](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/propertypane.png)
+![Property pane open](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/propertypane.png)
 
 9.  Now, switch to the `ASSIGN DATA` tab.
 
-![Assign data click](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/data-pane.png)
+![Assign data click](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/data-pane.png)
 
 10. The data tab will be opened with available `Measures` and `Dimensions` from the connected data source.
 
@@ -62,31 +62,31 @@ Follow these steps to configure data to the Radial Gauge:
 
 Bind column by dragging any field from any section to `Actual Value.`
 
-![Actual Value](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/actualvalue.png)
+![Actual Value](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/actualvalue.png)
 
 ### Aggregate Function
 
 You can use the `aggregate function` to change the actual values of the Radial Gauge.
 
-![Settings menu](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/settings.png)
+![Settings menu](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/settings.png)
 
 #### Renaming fields
 
 The configured field names can be edited by using the `Rename` option provided in the settings menu.
 
-![Rename](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/rename.png)
+![Rename](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/rename.png)
 
 #### Filtering data
 
 You can use the `Filter` option to filter the data by specifying the filter condition. For more details, refer to the [filter](https://help.syncfusion.com/dashboard-embedded/visualize-data/configuring-widget-filters).
 
-![Measure filter](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/filter-option.png)
+![Measure filter](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/filter-option.png)
 
 #### Formatting data
 
 You can format the data to be displayed in the gauge by using the `Format` option.
 
-![Measure format](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/format-option.png)
+![Measure format](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/format-option.png)
 
 > **NOTE:**  Refer to this [link](/embedded-bi/visualizing-data/working-with-widgets/formatting-measure-type-column/) for more details on Measure formatting.
 
@@ -94,21 +94,21 @@ You can format the data to be displayed in the gauge by using the `Format` optio
 
 Similarly, drag any field from any section to `Target Value.`
 
-![Target value](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/targetvalue.png)
+![Target value](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/targetvalue.png)
 
 ### Series
 
 Drag any field from the Dimensions section to `Series.`
 
-![Series configuration](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/seriesconfiguration.png)
+![Series configuration](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/seriesconfiguration.png)
 
-![Series view](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/seriesview.png)
+![Series view](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/seriesview.png)
 
 ### Settings 
 
 You can apply the `Sort` and `Filter` options for the Series field, if required from the `settings` menu.
 
-![Settings menu options](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/sorting-settings.png)
+![Settings menu options](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/sorting-settings.png)
 
 **Sorting**: You can customize the sorting behavior of dimension fields in the Radial Gauge widget. You can order them based on alphabet or value, data source (default), or field. Refer to this [link](/embedded-bi/visualizing-data/working-with-widgets/advanced-sorting/) for the detailed steps.
 
@@ -118,17 +118,17 @@ You can apply the `Sort` and `Filter` options for the Series field, if required 
 
 Drag any field from the Measures section to `Minimum Value.` If the minimum value is configured, then this value will be the start range for the gauge widget.
 
-![Minimum Value](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/minimumvalue.png)
+![Minimum Value](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/minimumvalue.png)
 
-![Minimum Value](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/minimumvalue-change.png)
+![Minimum Value](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/minimumvalue-change.png)
 
 ### Maximum Value
 
 Drag any field from the Measures section to `Maximum Value.` If the maximum value is configured, it will act as the end range for the gauge widget.
 
-![Maximum Value](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/maximumvalue.png)
+![Maximum Value](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/maximumvalue.png)
 
-![Maximum Value](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/maximum-value-change.png)
+![Maximum Value](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/maximum-value-change.png)
 
 ## How to format the Radial Gauge
 
@@ -142,39 +142,39 @@ To format the Radial Gauge, follow the given steps:
 
 3.	Focus the Radial Gauge and click the `settings` icon.
 
-![Settings menu click](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/settings-menu-click.png)
+![Settings menu click](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/settings-menu-click.png)
 
 ### General Settings
 
-![General Settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/property.png)
+![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/property.png)
 
 #### Name
 
 This option allows you change the `title` for the Radial Gauge.
 
-![General Settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/Name.png)
+![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/Name.png)
 
 #### Subtitle
 
 Allows you provide `subtitle` for the Radial Gauge.
 
-![General Settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/subtitle.png)
+![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/subtitle.png)
 
 #### Description
 
 Allows you provide `description` about the Radial Gauge.
 
-![General Settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/Description.png)
+![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/Description.png)
 
 ### Basic Settings
  
-![Basic settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/radialgaugebasicsettings.png)
+![Basic settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/radialgaugebasicsettings.png)
 
 #### Show Tooltip
 
 This option allows you to toggle the visibility of tooltip in the radial gauge.
 
-![General Settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/tooltip.png)
+![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/tooltip.png)
 
 #### Gauge Type
 
@@ -184,13 +184,13 @@ Allows you to switch the widget view from the Half Circle type to Horse Shoe typ
 
 #### Half Circular Gauge
 
-![Half Circular Gauge](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/half-circle.png)
+![Half Circular Gauge](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/half-circle.png)
 
 ### Full circular Gauge
 
 You can change the type `Full Circle` to show a full circular gauge. If you change, the gauge will render like this. For full circular type, the difference value will not be shown, only the percentage of the difference value will be shown.
 
-![Full Circular Gauge](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/fullcirculargauge.png)
+![Full Circular Gauge](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/fullcirculargauge.png)
 
 For full circular gauge, some of the categories in property panel get hidden. If properties are applied before changing their type, which is not unnecessary to the full circular gauge, it will be reverted. Here, is the list of categories that do not support for full circular gauge.
 
@@ -223,15 +223,15 @@ You can enable the animation for gauge by setting this property to true. The def
 
 Allows you to hide or show the actual value in gauge by disabling or enabling the option. The default value of this property is true.
 
-![Actual Value](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/actualvalue-set.png)
+![Actual Value](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/actualvalue-set.png)
 
 #### Value Color 
 
 You can apply color for the Actual value displayed in the Radial Gauge. The default value is `#666666.`
 
-![Actual Value color](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/actualvalue-set-color.png)
+![Actual Value color](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/actualvalue-set-color.png)
 
-![Actual Value color](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/actualvalue-set-color-set.png)
+![Actual Value color](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/actualvalue-set-color-set.png)
 
 If you uncheck the `show actual value` property, its dependent property **Value color** will be hidden.
 
@@ -239,15 +239,15 @@ If you uncheck the `show actual value` property, its dependent property **Value 
 
 You can apply color for the Radial Gauge labels. The default value is `#000000.`
 
-![Actual Label color](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/actualvalue-set-color-label.png)
+![Actual Label color](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/actualvalue-set-color-label.png)
 
-![Actual Label color](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/actualvalue-set-color-label-change.png)
+![Actual Label color](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/actualvalue-set-color-label-change.png)
 
 #### Show Difference Value
 
 When you bind both actual and target values in gauge, this option will be shown. This allows you to hide or show the difference value of actual and target value with its percentage value. The default value of this property is true.
 
-![Show Difference Value](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/show-difference-value.png)
+![Show Difference Value](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/show-difference-value.png)
 
 #### Title Color
 
@@ -255,7 +255,7 @@ The Radial Gauge title color can be customized. The default value is #000000. Th
 
 ### Color Settings
 
-![Color Settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/colorsettings.png)
+![Color Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/colorsettings.png)
 
 #### Direction
 
@@ -265,7 +265,7 @@ From the provided color pickers, you can customize the color values for the **Hi
 
 ### Pointer Settings
 
-![Pointer settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/pointersettings.png)
+![Pointer settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/pointersettings.png)
 
 **Needle Pointer Color**
 
@@ -285,19 +285,19 @@ You change change the color for the `target pointer`.
 
 **Needle Pointer Customization**
 
-![Needle Pointer](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/needle-change.png)
+![Needle Pointer](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/needle-change.png)
  
 ### Range with Needle
 
 This is used to display the actual value by coloring the region and set the needle pointer up to the actual value in Radial Gauge.
 
-![Range Needle Pointer](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/rangeneedle-settings.png)
+![Range Needle Pointer](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/rangeneedle-settings.png)
 
-![Range Needle Pointer Customization](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/rangeneedle.png)
+![Range Needle Pointer Customization](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/rangeneedle.png)
 
 ### Scale Settings
 
-![Scale settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/scalesettings.png)
+![Scale settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/scalesettings.png)
 
 #### Scale Color
 
@@ -307,11 +307,11 @@ Allows you to set the color of the scale. The default value is `#e0e0e0.`
 
 Allows you displays the ticks for gauge scales. The default value is `false.` The interval between ticks will be auto-calculated.
 
-![Scale Ticks](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/show-ticks.png)
+![Scale Ticks](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/show-ticks.png)
 
 If you check the `Show Ticks` property, **Ticks Position**, **Ticks Height** and **Ticks Width** properties will be shown.
 
-![Scale Ticks](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/tick.png)
+![Scale Ticks](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/tick.png)
 
 #### Ticks Position
 
@@ -335,7 +335,7 @@ Allows you display the scale label of the gauge. The default value is `true.`
 
 By enabling this property, the **Scale label position** property will be shown.
 
-![Scale Ticks](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/scale.png)
+![Scale Ticks](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/scale.png)
 
 
 #### Scale Label Position
@@ -344,7 +344,7 @@ Allows you change the scale label position. The default value is `outside.` This
 
 ### Range Settings
 
-![Range Settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/range-settings.png)
+![Range Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/range-settings.png)
 
 #### Show Range
 
@@ -380,13 +380,13 @@ You can customize color for the Radial Gauge labels with the range color or defa
 
 You can enable linking and configure to navigate to a general URL with or without parameters. For more details, refer to the [linking URLs](/embedded-bi/visualizing-data/working-with-widgets/linking-urls-and-dashboards/).
 
-![Link](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/linking.png)
+![Link](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/linking.png)
 
 ### Font settings
 
 This section allows you to customize the font size of radial gauge elements.
 
-![Font settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/font-settings.png)
+![Font settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/font-settings.png)
 
 #### Auto font Size and font size
 
@@ -394,35 +394,35 @@ By default, the 'Auto Font Size' property is enabled. Auto font size property us
 
 ### Widget with Auto Font Size
 
-![Auto Font Size](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/auto-font-settings.png)
+![Auto Font Size](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/auto-font-settings.png)
 
 ### Scale Label Font Size
 
 This option allows you to customize font size of scale labels. While `Auto Font Size` option is enabled, font size will be applied based on resolution.
 
-![Customized Scale Label Font Size](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/scale-fontsize.png)
+![Customized Scale Label Font Size](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/scale-fontsize.png)
 
 ### Actual Value Font Size
 
 This option allows you to customize font size of Actual Value. While `Auto Font Size` option is enabled, font size will be applied based on gauge size.
 
-![Customized Actual Value Font Size](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/actualvaalue-fontsize.png)
+![Customized Actual Value Font Size](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/actualvaalue-fontsize.png)
 
 ### Difference Value Font Size
 
 This option allows you to customize font size of Actual Value. While `Auto Font Size` option is enabled, font size will be applied based on gauge size.
 
-![Customized Difference Value Font Size](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/differencevalue-fontsize.png)
+![Customized Difference Value Font Size](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/differencevalue-fontsize.png)
 
 ### Series Title Font Size
 
 This option allows you to customize font size of Series Title. While `Auto Font Size` option is enabled, font size will be applied based on resolution.
 
-![Customized Series Title Font Size](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/seriestitle-fontsize.png)
+![Customized Series Title Font Size](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/seriestitle-fontsize.png)
 
 ### Filter
 
-![Filter properties](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/filter.png)
+![Filter properties](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/filter.png)
 
 #### Ignore filter actions
 
@@ -444,11 +444,11 @@ In case, if you have the requirement to highlight any data based on some conditi
 
 In the properties pane, enable the `Advanced Setting` option provided under the formatting section.
 
-![Enable advance settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/enable-advance-settings.png)
+![Enable advance settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/enable-advance-settings.png)
 
 Now, the Conditional Formatting dialog opens. 
 
-![Conditional formatting dialog](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/formatting-dialog.png)
+![Conditional formatting dialog](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/formatting-dialog.png)
 
 #### Gradient based
 
@@ -458,13 +458,13 @@ If any widget data is not present in the given limit, then the property panel’
 
 After applying the gradient conditions
 
-![Gradient conditions](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/gradientconditions.png)
+![Gradient conditions](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/gradientconditions.png)
 
 #### Based On field and Summary Type
 
 From the Conditional Formatting dialog, you can choose the `based-on field` and the `summary type` to apply the conditions. 
 
-![Based on field](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/based-on-field.png)
+![Based on field](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/based-on-field.png)
 
 > **NOTE:**  Any field from the configured data source can be selected as the `Based-on field.`
 
@@ -490,25 +490,25 @@ You can customize more than one property using the rule-based conditional format
 > **NOTE:** 
 > **NOTE:**  If more than one condition is matched, the last applied condition will be applied. 
 
-![Rule dialog](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/ruledialog.png)
+![Rule dialog](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/ruledialog.png)
 
 #### Measure condition
 
 Conditional formatting condition: 
 
-![Measure conditon](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/conditon.png)
+![Measure conditon](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/conditon.png)
 
 After applying the conditional formatting: 
 
-![After applying](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/formatting-view.png)
+![After applying](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/formatting-view.png)
 
 #### Text condition
 
 You can also use the text-based matching for the configured series field as shown in the following screenshots. 
 
-![Text condition](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/text-condition.png)
+![Text condition](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/text-condition.png)
 
-![Rule applied view](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/rule-applied-view.png)
+![Rule applied view](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/rule-applied-view.png)
 
 #### Condition Type
 
@@ -531,7 +531,7 @@ Indicating whether the value is `case sensitive` or not.
 
 ### Container Appearance
 
-![Container Appearance](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/container-appearance.png)
+![Container Appearance](/static/assets/embedded/visualizing-data/visualization-widgets/images/container-appearance.png)
 
 ### Title Alignment
 
@@ -591,7 +591,7 @@ This allows you to toggle the visibility of the `shadow` surrounding the widget.
 
 ### Container actions
 
-![Container Actions](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/container-actions.png)
+![Container Actions](/static/assets/embedded/visualizing-data/visualization-widgets/images/container-actions.png)
 
 #### Show Header
 
@@ -637,4 +637,4 @@ We hide the widget elements based on the size of the widget for better readabili
 
 When the gauge is placed with below 150 pixels of height and width, labels and ticks will be hidden.
 
-![Widget Element](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/label.png)
+![Widget Element](/static/assets/embedded/visualizing-data/visualization-widgets/images/radial-gauge/label.png)

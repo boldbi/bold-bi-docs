@@ -18,21 +18,21 @@ Dashboards can be marked as favorite to view them in the `Favorite Dashboards` c
 To mark a Dashboard as favorite, click on the star icon near the Dashboard name. 
 On clicking, star icon is filled with color to indicate that it is added as favorite Dashboard.
 
-![Favorite Dashboard](/bold-bi-docs/static/assets/embedded/managing-resources/manage-dashboards/images/mark-favorite.png)
+![Favorite Dashboard](/static/assets/embedded/managing-resources/manage-dashboards/images/mark-favorite.png)
 
-![Favorite Dashboard From Viewer](/bold-bi-docs/static/assets/embedded/managing-resources/manage-dashboards/images/mark-favorite-from-viewer.png)
+![Favorite Dashboard From Viewer](/static/assets/embedded/managing-resources/manage-dashboards/images/mark-favorite-from-viewer.png)
 	
 ## Remove a Dashboard from favorites
 
 To remove a dashboard from favorites, click on the star icon near the Dashboard name.
 On clicking, star icon color is emptied to indicate that it is removed from favorites.
 
-![Remove Favorite Dashboard](/bold-bi-docs/static/assets/embedded/managing-resources/manage-dashboards/images/remove-favorite.png)
+![Remove Favorite Dashboard](/static/assets/embedded/managing-resources/manage-dashboards/images/remove-favorite.png)
 
-![Remove Favorite Dashboard From Viewer](/bold-bi-docs/static/assets/embedded/managing-resources/manage-dashboards/images/remove-favorites-from-viewer.png)
+![Remove Favorite Dashboard From Viewer](/static/assets/embedded/managing-resources/manage-dashboards/images/remove-favorites-from-viewer.png)
 
 ## Favorite Dashboards Category
 
 Dashboards that are marked as favorite can be viewed under `Favorite Dashboards` category.
 
-![Favorite Category](/bold-bi-docs/static/assets/embedded/managing-resources/manage-dashboards/images/favorite-category.png)
+![Favorite Category](/static/assets/embedded/managing-resources/manage-dashboards/images/favorite-category.png)

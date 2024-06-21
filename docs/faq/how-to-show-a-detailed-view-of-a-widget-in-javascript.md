@@ -14,11 +14,11 @@ Follow the below steps to achieve this
 
 1. First, you need to create and publish a main dashboard with required widgets in Bold BI server.
 
-    ![Main Dashboard](/bold-bi-docs/static/assets/embedded/faq/images/main-dashboard.png)
+    ![Main Dashboard](/static/assets/embedded/faq/images/main-dashboard.png)
 
 2. Then, create a detailed information dashboard with the required widgets and publish this dashboard. After this, copy this dashboard’s ID and use that dashboard ID in `URL` text box of `Link` Property of the corresponding widget in a main dashboard. Then choose the `Target` as `Pop up`.
 
-    ![Detailed Dashboard Id](/bold-bi-docs/static/assets/embedded/faq/images/detailed-dashboard-id.png)
+    ![Detailed Dashboard Id](/static/assets/embedded/faq/images/detailed-dashboard-id.png)
 
 3. After this, embed the main dashboard in your application using Dashboard ID by following the steps mentioned in this [section](https://help.boldbi.com/embedded-bi/javascript-based/getting-started/#embed-using-dashboard-id).
 
@@ -68,4 +68,4 @@ beforeNavigateUrlLinking: function (arg){
 
 5. After completing this, when you click on the corresponding widget, you can view the detailed information of a widget in pop-up window with the assigned Title like below screen shot
 
-    ![Detailed Info Pop-up](/bold-bi-docs/static/assets/embedded/faq/images/detailed-info-pop-up.png)
+    ![Detailed Info Pop-up](/static/assets/embedded/faq/images/detailed-info-pop-up.png)

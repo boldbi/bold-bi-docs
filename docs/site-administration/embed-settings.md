@@ -15,19 +15,19 @@ This section explains on how to enable the embed authentication and generate the
 
 1. Go to the settings page and click `Embed`. Enable the `Enable embed authentication` under that page.
 
-    ![Enable embed authentication](/bold-bi-docs/static/assets/embedded/site-administration/images/enable-embed-option.png)
+    ![Enable embed authentication](/static/assets/embedded/site-administration/images/enable-embed-option.png)
 
 2. Click `Generate Secret` button.
 
-    ![Generate secret code](/bold-bi-docs/static/assets/embedded/site-administration/images/generate-secret-code.png)
+    ![Generate secret code](/static/assets/embedded/site-administration/images/generate-secret-code.png)
 
 3. On clicking it, the secret code will be generated. Save the secret key safely, as it will not be able to retrieve or restore this generated secret.                    
 
-    ![Copy secret code](/bold-bi-docs/static/assets/embedded/site-administration/images/copy-secret-code.png)
+    ![Copy secret code](/static/assets/embedded/site-administration/images/copy-secret-code.png)
 
 4. Once the secret code is generated, it can be reset by clicking the `Regenerate` button.
 
-    ![Reset secret code](/bold-bi-docs/static/assets/embedded/site-administration/images/reset-secret-code.png)
+    ![Reset secret code](/static/assets/embedded/site-administration/images/reset-secret-code.png)
 
 > **Warning :** Resetting this code will break the previously working embedded dashboards.
 
@@ -37,11 +37,11 @@ This section explains on how to enable the embed authentication and generate the
 
 2. Click `Download` available in Embed Configuration option.
 
-    ![Embed Config file](/bold-bi-docs/static/assets/embedded/site-administration/images/embedconfig_file.png#max-width=65%)
+    ![Embed Config file](/static/assets/embedded/site-administration/images/embedconfig_file.png#max-width=65%)
 
 3. Once button is clicked, an Embed Configuration pop-up will be generated, from which you need to select the category and appropriate dashboard name. Then, click `Download Json File` at the bottom of the pop-up.
 
-    ![EmbedConfig popup](/bold-bi-docs/static/assets/embedded/site-administration/images/embedconfig_popup.png#max-width=65%)
+    ![EmbedConfig popup](/static/assets/embedded/site-administration/images/embedconfig_popup.png#max-width=65%)
 
 4. Copy the downloaded` embedConfig.json file`, which is generated from the embed settings page of the Bold BI server, and paste it into the App_Data folder of a sample  [application](https://github.com/boldbi/samples/tree/development/SDK%20Samples/C%23/ASP.NET%20Core).
 
@@ -94,22 +94,22 @@ This common embed secret code would help you to embed the dashboard from multipl
 
 1. Click the profile icon and select the `Manage sites(Admin access)` option, then it would open the UMS sites page in a new tab.
 
-    ![Navigate to sites](/bold-bi-docs/static/assets/embedded/site-administration/images/navigate-sites.png)
+    ![Navigate to sites](/static/assets/embedded/site-administration/images/navigate-sites.png)
 
 2. In UMS, go to the settings page and click `Embed.` Enable the `Enable embed authentication` under that page.
 
-    ![Enable embed authentication](/bold-bi-docs/static/assets/embedded/site-administration/images/ums-enable-embed.png)
+    ![Enable embed authentication](/static/assets/embedded/site-administration/images/ums-enable-embed.png)
 
 3. Click the `Generate Secret` button.
 
-    ![Generate secret code](/bold-bi-docs/static/assets/embedded/site-administration/images/ums-generate-secret-code.png)
+    ![Generate secret code](/static/assets/embedded/site-administration/images/ums-generate-secret-code.png)
 
 4. On clicking it, the secret code will be generated. Save the secret key safely as it will not be able to retrieve or restore this generated secret.                    
 
-    ![Copy secret code](/bold-bi-docs/static/assets/embedded/site-administration/images/ums-copy-secret-code.png)
+    ![Copy secret code](/static/assets/embedded/site-administration/images/ums-copy-secret-code.png)
 
 5. Once the secret code is generated, it can be reset by clicking the `Reset Secret` button.
 
-    ![Reset secret code](/bold-bi-docs/static/assets/embedded/site-administration/images/ums-reset-secret-code.png)
+    ![Reset secret code](/static/assets/embedded/site-administration/images/ums-reset-secret-code.png)
 
 > **Warning:** Resetting this common embed code will break previously working embedded dashboards across multiple sites.

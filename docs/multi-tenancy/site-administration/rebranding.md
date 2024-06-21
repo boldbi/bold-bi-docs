@@ -12,7 +12,7 @@ This section explains how to customize the Bold ID by changing the organization 
 
 User Management Server can be rebranded and white-labeled with the organization name, header logo, favorite icon, email logo, time zone, and date time format.
 
-![Site Settings](/bold-bi-docs/static/assets/embedded/multi-tenancy/images/site-settings-page.png)
+![Site Settings](/static/assets/embedded/multi-tenancy/images/site-settings-page.png)
 
 ## Organization Name
 Name of the User Management Server can be changed at any time and this is in the title bar of the browser.

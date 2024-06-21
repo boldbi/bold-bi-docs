@@ -17,21 +17,21 @@ You can view the profile, edit the profile details, and change the password.
 ### View profile
 You can view the profile details in this page.
 
-![View Profile](/bold-bi-docs/static/assets/embedded/managing-resources/images/view-user-profile.png#width=55%)
+![View Profile](/static/assets/embedded/managing-resources/images/view-user-profile.png#width=55%)
  
 ### Edit profile
 You can edit the profile details in Bold BI account. Click `Edit Account` in profile page, it will be redirected to IDP profile page where you can edit your profile.
 
-![Cloud Account](/bold-bi-docs/static/assets/embedded/managing-resources/images/syncfusion-cloud-account-button.png#width=55%)
+![Cloud Account](/static/assets/embedded/managing-resources/images/syncfusion-cloud-account-button.png#width=55%)
 
 Username, first name, last name, phone number and profile picture can be changed in the Bold BI profile page.
 
-![Edit Profile](/bold-bi-docs/static/assets/embedded/managing-resources/images/edit-user-profile.png)
+![Edit Profile](/static/assets/embedded/managing-resources/images/edit-user-profile.png)
 
 ## Settings
 The Application language, Data language, Default pinboard, and Autosave filter settings can be edited in Profile settings.
 
-![Profile Settings](/bold-bi-docs/static/assets/embedded/managing-resources/images/profile-settings.png#width=60%)
+![Profile Settings](/static/assets/embedded/managing-resources/images/profile-settings.png#width=60%)
 
 ### Language settings
 This section explains how to configure the language settings for application language and data language.
@@ -47,16 +47,16 @@ It will be redirected to IDP profile page where you can set your own language pr
 
 You can configure the settings as shown in the following images.
 
-![Profile Language Preference](/bold-bi-docs/static/assets/embedded/managing-resources/images/profile-language-preference.png)
+![Profile Language Preference](/static/assets/embedded/managing-resources/images/profile-language-preference.png)
 
-![Language Preference](/bold-bi-docs/static/assets/embedded/managing-resources/images/language-preference.png)
+![Language Preference](/static/assets/embedded/managing-resources/images/language-preference.png)
 
 > **NOTE:**  NOTE: Make sure the `Disable user language preference` option is disabled in the site settings for applying user preference language on your site. For more details, please visit [here](/embedded-bi/localization/#site-language-settings).
 
 ### Default pinboard
 Users can select a default pinboard by selecting one of the added pinboards from the drop-down.
 
-![Default Pinboard](/bold-bi-docs/static/assets/embedded/managing-resources/images/default-pinboard.png)
+![Default Pinboard](/static/assets/embedded/managing-resources/images/default-pinboard.png)
 
 Default Pinboard will be loaded by default when the user navigates to the Pinboard page. Click [here](/embedded-bi/managing-resources/manage-pinboards/) to know more about pinboards.
 
@@ -65,10 +65,10 @@ Default Pinboard will be loaded by default when the user navigates to the Pinboa
 The user can control auto-save filters of the dashboards using the Dashboard Settings on this page.
 
 The dashboards will be rendered with the last applied filters by the users.
-![Autosave Filter](/bold-bi-docs/static/assets/embedded/managing-resources/images/auto-save-filter.png)
+![Autosave Filter](/static/assets/embedded/managing-resources/images/auto-save-filter.png)
 
 If the administrator has restricted the AutoSave filter option in site settings, then the user cannot control the action of saving the filters applied to the dashboard.
-![Autosave Filter Disabled](/bold-bi-docs/static/assets/embedded/managing-resources/images/auto-save-filter-disabled.png)
+![Autosave Filter Disabled](/static/assets/embedded/managing-resources/images/auto-save-filter-disabled.png)
 
 > **NOTE:** If a dashboard has default views, it will not be rendered with the last applied filter in the dashboard. Hence, `Default Views` must be disabled on the Dashboard Settings page of the site settings.
 
@@ -77,7 +77,7 @@ If the administrator has restricted the AutoSave filter option in site settings,
 
 The user can configure their own notification preferences, but they can only enable or disable the options that have been enabled in the site notification settings.
 
-![Profile Notifications](/bold-bi-docs/static/assets/embedded/managing-resources/images/user-profile-notifications.png)
+![Profile Notifications](/static/assets/embedded/managing-resources/images/user-profile-notifications.png)
 
 There are two different types of notification.
 * Email Notifications
@@ -87,21 +87,21 @@ There are two different types of notification.
 
 Users will be notified of activities by email based on the settings configured here.
 
- ![Email notification settings](/bold-bi-docs/static/assets/embedded/managing-resources/images/profile-email-notification.png)
+ ![Email notification settings](/static/assets/embedded/managing-resources/images/profile-email-notification.png)
 
 ### System notifications
 
 System notifications will notify users of activity on comments based on the settings configured here.
 
-![System notification settings](/bold-bi-docs/static/assets/embedded/managing-resources/images/profile-system-notification.png)
+![System notification settings](/static/assets/embedded/managing-resources/images/profile-system-notification.png)
 
 System notifications will appear in the bottom left corner above the user's profile picture, as shown in the following image.
 
-![Notifications section](/bold-bi-docs/static/assets/embedded/managing-resources/images/notifications-icon.png)
+![Notifications section](/static/assets/embedded/managing-resources/images/notifications-icon.png)
 
 Users can navigate to the particular comment by clicking the dashboard name in the notification section. To configure the user notification settings, users can navigate to the profile page by clicking settings.
 
-![Notifications section page](/bold-bi-docs/static/assets/embedded/managing-resources/images/notifications-section.png)
+![Notifications section page](/static/assets/embedded/managing-resources/images/notifications-section.png)
 
 ### List of notifications
 
@@ -121,7 +121,7 @@ Autowatch will be enabled for a comment on dashboards whenever you add comments 
 
 Apart from autowatch on created and accessible items, you can also watch a specific item.
 
-![Specific watch](/bold-bi-docs/static/assets/embedded/site-administration/images/specific-watch.png)
+![Specific watch](/static/assets/embedded/site-administration/images/specific-watch.png)
 
 You can toggle between a watch and unwatch for a dashboard comment at any time.
 
@@ -141,22 +141,22 @@ Enabling this option will notify you via email about user synchronization schedu
 
 If a user wants to inherit the same settings as in the site notification settings, he or she can do so by checking the "Inherit from global settings" option in Email Notifications and System Notifications.
 
-![Inherit from global settings](/bold-bi-docs/static/assets/embedded/managing-resources/images/inherit-notification.png)
+![Inherit from global settings](/static/assets/embedded/managing-resources/images/inherit-notification.png)
 
 ### Disabled user notification preference
 If the `Disable User Preference` is enabled in site notification settings, then the user cannot modify the user notification preference settings.
 
-![Disabled in site notification](/bold-bi-docs/static/assets/embedded/managing-resources/images/notification-disabled-in-site.png)
+![Disabled in site notification](/static/assets/embedded/managing-resources/images/notification-disabled-in-site.png)
 
      
 ## Change Password
 Password to log in to the Bold BI can be changed in the Bold BI, change password page.
 
-![Change Password In Profile](/bold-bi-docs/static/assets/embedded/managing-resources/images/change-password-button.png)
+![Change Password In Profile](/static/assets/embedded/managing-resources/images/change-password-button.png)
 
 Click `Change Password`, it will be redirected to the IDP profile page where you can change your password.
 
-![Change Password](/bold-bi-docs/static/assets/embedded/managing-resources/images/edit-user-profile-password.png)
+![Change Password](/static/assets/embedded/managing-resources/images/edit-user-profile-password.png)
 
 > **NOTE:**  Administrator privileged users can change the password from UMS Site. For more details, please visit [here](/embedded-bi/managing-resources/manage-users/#change-password)
 
@@ -165,26 +165,26 @@ If you forgot the password, you can reset the password by following the below st
 
 1. Click Cannot access your account option on the login page.
 
-   ![Cannot access your account](/bold-bi-docs/static/assets/embedded/managing-resources/images/recover-account-option.png#width=60%)
+   ![Cannot access your account](/static/assets/embedded/managing-resources/images/recover-account-option.png#width=60%)
 
 2. Enter your email to get the reset password link. After enter your email, click `Send recovery link`.
 
-   ![Email Form](/bold-bi-docs/static/assets/embedded/managing-resources/images/recover-option.png#width=60%)
+   ![Email Form](/static/assets/embedded/managing-resources/images/recover-option.png#width=60%)
 
 3. After the confirmation page, you will receive an email to reset the password.
 
-   ![Email Link](/bold-bi-docs/static/assets/embedded/managing-resources/images/reset-password-mail.png#width=60%)
+   ![Email Link](/static/assets/embedded/managing-resources/images/reset-password-mail.png#width=60%)
 
 4. You can reset the password by clicking the link in the mail you received.
 
-   ![Reset Password](/bold-bi-docs/static/assets/embedded/managing-resources/images/reset-password-page.png#width=60%)
+   ![Reset Password](/static/assets/embedded/managing-resources/images/reset-password-page.png#width=60%)
 
    > **NOTE:**  Forgot password option restricted for third party user directories.
    
 ## My Permissions
 Users can view their access permission list for each resources like Dashboards, Data Sources, Widgets and Schedules in the Bold BI.
 
-![My Permissions](/bold-bi-docs/static/assets/embedded/managing-resources/images/my-permission.png)
+![My Permissions](/static/assets/embedded/managing-resources/images/my-permission.png)
 
 ## Connected Accounts
 You can manage the external OAuth accounts that you have granted access for in Bold BI. Please find more details on the [Connected accounts](/cloud-bi/working-with-data-source/working-with-connected-accounts/).
@@ -193,13 +193,13 @@ You can manage the external OAuth accounts that you have granted access for in B
 
 Add, edit, delete, and view the list of external sites on the connected sites page.
 
-![Connected sites](/bold-bi-docs/static/assets/embedded/managing-resources/images/connected-sites.png)
+![Connected sites](/static/assets/embedded/managing-resources/images/connected-sites.png)
 
 ## Add External BI Sites
 
 Add a site created in Bold BI servers as an external site on the `Connected Sites` page.
 
-![Add New Site](/bold-bi-docs/static/assets/embedded/managing-resources/images/add-new-site.png)
+![Add New Site](/static/assets/embedded/managing-resources/images/add-new-site.png)
 
 To add an external BI site, click `Add new site`, fill in the following details as shown in the following image, then click `Save`.
 
@@ -208,22 +208,22 @@ To add an external BI site, click `Add new site`, fill in the following details 
 * Client Secret - Enter the Client Secret of the site.
 * Site URL - Enter the URL of the site.
 
-![Add External sites](/bold-bi-docs/static/assets/embedded/managing-resources/images/add-external-bi-site.png)
+![Add External sites](/static/assets/embedded/managing-resources/images/add-external-bi-site.png)
 
 ## Edit External Site
 
 To edit an external site, click `Actions` and then select `Edit` from the site listing grid.
-![Edit External sites](/bold-bi-docs/static/assets/embedded/managing-resources/images/edit-external-site.png)
+![Edit External sites](/static/assets/embedded/managing-resources/images/edit-external-site.png)
 
 Edit the site details, then click `Save`. You need to re-enter the site's `Client Secret` to edit the connected site.
-![Edit External site Dialog](/bold-bi-docs/static/assets/embedded/managing-resources/images/edit-external-site-dialog.png)
+![Edit External site Dialog](/static/assets/embedded/managing-resources/images/edit-external-site-dialog.png)
 
 ## Delete External Site
 
 To delete an external site, click `Actions`, select `Delete` from the site listing grid, then click `Yes` in the `Delete Connected Site` dialog.
 
-![Delete External sites](/bold-bi-docs/static/assets/embedded/managing-resources/images/delete-external-site.png)
+![Delete External sites](/static/assets/embedded/managing-resources/images/delete-external-site.png)
 
-![Delete External sites Dialog](/bold-bi-docs/static/assets/embedded/managing-resources/images/delete-external-site-dialog.png)
+![Delete External sites Dialog](/static/assets/embedded/managing-resources/images/delete-external-site-dialog.png)
 
 

@@ -1,7 +1,3 @@
 User-agent: *
 Disallow: /$
-Disallow: /working-with-data-source/
-Disallow: /rebranding/
-Disallow: /security-configuration/sso/overview/
-Disallow: /utilities/openai-fine-tuning-utility/
 Sitemap: https://help.boldbi.com/sitemap-help.xml

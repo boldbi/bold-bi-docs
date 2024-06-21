@@ -127,42 +127,42 @@ Follow these steps to publish the modified data sources from one tenant to anoth
 
 1. First,you need to create a custom attribute with the required connection string in the source tenant.
 
-   ![Custom Attribute of Source Tenant](/bold-bi-docs/bold-bi-docs/static/assets/embedded/faq/images/custom-attribute-of-source-tenant.png)
+   ![Custom Attribute of Source Tenant](/static/assets/embedded/faq/images/custom-attribute-of-source-tenant.png)
 
 2. Edit the dashboard's corresponding data source, enable the Dynamic Connection String option, and click on the Configure button. 
   
-   ![Enable Dynamic Connection String](/bold-bi-docs/bold-bi-docs/static/assets/embedded/faq/images/enable-dynamic-connectionstring.png)
+   ![Enable Dynamic Connection String](/static/assets/embedded/faq/images/enable-dynamic-connectionstring.png)
 
 3. In that pop-up window, choose the Custom Attribute option, enter the created custom attribute key (Name) in the text box, select the Configuration Mode as Both if needed, and save the configuration. Finally, save that data source. 
 
    >**Note:** Refer to this [section](https://help.boldbi.com/embedded-bi/iframe-based/dynamic-connection-string/#how-to-configure-the-api-details-for-a-data-source) to learn more details about the Configuration Mode of Dynamic Connection String.
 
-   ![Configure Dynamic Connection String](/bold-bi-docs/bold-bi-docs/static/assets/embedded/faq/images/configure-dynamic-connectionstring.png)
+   ![Configure Dynamic Connection String](/static/assets/embedded/faq/images/configure-dynamic-connectionstring.png)
 
    Now, the dashboard will be rendered in the source tenant as shown in the following image.
 
-   ![Dashboard in Source Tenant](/bold-bi-docs/bold-bi-docs/static/assets/embedded/faq/images/dashboard-in-source-tenant.png) 
+   ![Dashboard in Source Tenant](/static/assets/embedded/faq/images/dashboard-in-source-tenant.png) 
 
 4. Then create the Custom Attribute with the required connection string details in the destination tenant with the same attribute key (Name) used on the source tenant as shown in the following image. 
 
-   ![Custom Attribute of Target Tenant](/bold-bi-docs/bold-bi-docs/static/assets/embedded/faq/images/custom-attribute-of-target-tenant.png) 
+   ![Custom Attribute of Target Tenant](/static/assets/embedded/faq/images/custom-attribute-of-target-tenant.png) 
 
 5. Now, publish the dashboard in the source tenant configured with the modified data source to the destination tenant using the Publish dashboard in the [internal site](https://help.boldbi.com/embedded-bi/managing-resources/manage-dashboards/publish-dashboards/#internal-site) support. And we can ensure it by checking the status of the published dashboard by clicking on the `Publish` icon in left sidebar.
   
-   ![How to publish dashboard in Target Tenant](/bold-bi-docs/bold-bi-docs/static/assets/embedded/faq/images/publish-dashboard-in-target-tenant.png)
+   ![How to publish dashboard in Target Tenant](/static/assets/embedded/faq/images/publish-dashboard-in-target-tenant.png)
 
    To `Synchronize` published dashboard to reflect dashboard changes in other sites, click `Synchronize` option then select `Yes` on the pop-window.
 
-   ![Synchronize Option](/bold-bi-docs/bold-bi-docs/static/assets/embedded/faq/images/synchronize-option.png)
+   ![Synchronize Option](/static/assets/embedded/faq/images/synchronize-option.png)
 
-   ![Synchronize Pop-up Window](/bold-bi-docs/bold-bi-docs/static/assets/embedded/faq/images/synchronize-pop-up.png)
+   ![Synchronize Pop-up Window](/static/assets/embedded/faq/images/synchronize-pop-up.png)
 
    You will receive the following highlighted notification
 
-   ![Synchronization Notification](/bold-bi-docs/bold-bi-docs/static/assets/embedded/faq/images/synchronized-notification.png)
+   ![Synchronization Notification](/static/assets/embedded/faq/images/synchronized-notification.png)
  
 6. Refresh the destination tenant and open the dashboard. Now, the dashboard will be rendered with the data of the connection string, which is added to the custom attribute of the tenant.
 
-   ![Dashboard in Target Tenant](/bold-bi-docs/bold-bi-docs/static/assets/embedded/faq/images/dashboard-in-target-tenant.png)
+   ![Dashboard in Target Tenant](/static/assets/embedded/faq/images/dashboard-in-target-tenant.png)
 
 >**NOTE:** The published dashboard will work properly only if the source site's data source schema matches the target site's schema.

@@ -22,7 +22,7 @@ The User Management Server can be configured to support OpenID Connect for Singl
 
 2. In the left side menu, click `Settings`, then `Authentication`, and finally `OpenID Connect`.
 
-    ![Authentication settings](/bold-bi-docs/static/assets/embedded/multi-tenancy/images/openid-auth-page.png)
+    ![Authentication settings](/static/assets/embedded/multi-tenancy/images/openid-auth-page.png)
 
 4. Provide the following details in the `OpenID Connect` settings page of User Management Server.
 
@@ -60,11 +60,11 @@ The User Management Server can be configured to support OpenID Connect for Singl
 
     </table>  
     
-    ![OpenId settings](/bold-bi-docs/static/assets/embedded/multi-tenancy/images/openid-auth-configuration.png)
+    ![OpenId settings](/static/assets/embedded/multi-tenancy/images/openid-auth-configuration.png)
 
 If you need to import the OpenID Connect groups, you must configure the group details while saving the OpenID authentication settings.  
 
-![OpenId Group setting](/bold-bi-docs/static/assets/embedded/site-administration/openid-support/images/OpenId-group-settings.png)
+![OpenId Group setting](/static/assets/embedded/site-administration/openid-support/images/OpenId-group-settings.png)
 
 The following list of OpenID Connect providers explain how to connect with the User Management Server. 
 
@@ -84,10 +84,10 @@ Follow these steps to configure default authentication:
 
 2. Enable the **Enable Default Authentication** option and select the **OpenID Connect** as default authentication provider, as shown in the following screenshot.  
 
-   ![Enable OpenID Default Authentication](/bold-bi-docs/static/assets/embedded/multi-tenancy/images/openid-default-authentication.png)
+   ![Enable OpenID Default Authentication](/static/assets/embedded/multi-tenancy/images/openid-default-authentication.png)
 
 ## Disabling OpenID connect settings
 
 Disabling the Enable Default Authentication option and then clicking `Save` will disable the [OpenID Connect default authentication](/embedded-bi/multi-tenancy/site-administration/authentication/openid-settings/#set-openid-connect-as-default-authentication).  
 
-![Disable Default Authentication](/bold-bi-docs/static/assets/embedded/multi-tenancy/images/disable-openid-settings.png)
+![Disable Default Authentication](/static/assets/embedded/multi-tenancy/images/disable-openid-settings.png)

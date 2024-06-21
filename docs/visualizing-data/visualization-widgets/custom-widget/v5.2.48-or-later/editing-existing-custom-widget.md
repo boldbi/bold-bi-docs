@@ -26,15 +26,15 @@ documentation: ug
 
  Rename the extension of the provided ‘.bicw’ into ‘.zip’ extension as shown in the image below:
 
-  ![Zipped Custom Widget](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/custom-widget/zipped-custom-widget.png)
+  ![Zipped Custom Widget](/static/assets/embedded/visualizing-data/visualization-widgets/images/custom-widget/zipped-custom-widget.png)
 
  Now right click on the renamed widget as in the image. Click ‘Extract All’ to view the source file.
 
-  ![Extract Custom Widget](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/custom-widget/extract-custom-widget.png)
+  ![Extract Custom Widget](/static/assets/embedded/visualizing-data/visualization-widgets/images/custom-widget/extract-custom-widget.png)
 
  You can find the unpacked Sunburst chart custom widget and it’s source file as in the image below:
 
-  ![Unpacked Custom Widget](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/custom-widget/unpacked-custom-widget.png)
+  ![Unpacked Custom Widget](/static/assets/embedded/visualizing-data/visualization-widgets/images/custom-widget/unpacked-custom-widget.png)
 
 ## Modify the custom widget and convert it to *.bicw file 
 
@@ -44,9 +44,9 @@ documentation: ug
  
  You can click on the edit icon as shown in the image below to add the updated custom widget.
   
-  ![Edit Icon](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/custom-widget/edit-icon.png)
+  ![Edit Icon](/static/assets/embedded/visualizing-data/visualization-widgets/images/custom-widget/edit-icon.png)
 
- > **NOTE:**  The edited custom widget guid ID and the updated custom widget guid ID should be the same. ![Same guid ID for edited Custom Widget](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/custom-widget/same-guid-ID.png)
+ > **NOTE:**  The edited custom widget guid ID and the updated custom widget guid ID should be the same. ![Same guid ID for edited Custom Widget](/static/assets/embedded/visualizing-data/visualization-widgets/images/custom-widget/same-guid-ID.png)
 
 
   

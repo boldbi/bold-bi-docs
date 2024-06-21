@@ -17,10 +17,10 @@ Please refer to your hosting environment’s documentation for how to restart th
 ## Windows
 
 1. Open the IIS Manager and use the site’s dropdown to find the Bold BI Embedded app. 
-![IIS Manager](/bold-bi-docs/static/assets/embedded/faq/images/iis-manager-site.png)
+![IIS Manager](/static/assets/embedded/faq/images/iis-manager-site.png)
 
 2. In Manage Websites in the IIS Manager, you can restart the application.
-![IIS Manager](/bold-bi-docs/static/assets/embedded/faq/images/iis-manager-restart.png)  
+![IIS Manager](/static/assets/embedded/faq/images/iis-manager-restart.png)  
 
 > **NOTE:** If the Bold BI Embedded and Bold Reports enterprise apps are installed with a common login, the site name will be `BoldAppsEnterpriseEdition`.
 
@@ -95,7 +95,7 @@ docker restart {container name}
 ## Azure App Service
 
 1. Go to the Azure Portal home page and choose `App Services`.
-![App Service Home](/bold-bi-docs/static/assets/embedded/faq/images/azure-app-home.png)
+![App Service Home](/static/assets/embedded/faq/images/azure-app-home.png)
 
 2. Select the hosted Bold BI Embedded application and use `Restart` like in the following. 
-![App Service Restart](/bold-bi-docs/static/assets/embedded/faq/images/azure-app-restart.png)
+![App Service Restart](/static/assets/embedded/faq/images/azure-app-restart.png)

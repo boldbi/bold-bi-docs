@@ -20,11 +20,11 @@ Bold BI allows you to get the specific data for a user based on an applied custo
 
 4. At the top of the dialog, there is a radio button to choose the **External API** or **Custom Attribute** for the Dynamic Connection Configuration.
 
-   ![Dynamic Connection String](/bold-bi-docs/static/assets/embedded/faq/images/customattribute.png)
+   ![Dynamic Connection String](/static/assets/embedded/faq/images/customattribute.png)
 
 5. Choose the **Custom Attribute** button for the  Custom Attribute in Dynamic Connection Configuration.
 
-   ![Dynamic Connection String](/bold-bi-docs/static/assets/embedded/faq/images/customattributeconfiguration.png)
+   ![Dynamic Connection String](/static/assets/embedded/faq/images/customattributeconfiguration.png)
 
 6. Enter the attribute name in the **Custom Attribute** section, which was created in **Site**. Make sure that the [custom attribute](https://help.boldbi.com/cloud-bi/working-with-data-source/configuring-custom-attribute/) was created in **Site** for different **Users**.
 

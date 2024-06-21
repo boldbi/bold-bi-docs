@@ -12,15 +12,11 @@ This section explains how to configure datastore, email, account activation, and
 
 You can explore the Site Administration in detail here,
 
-[Site Settings](/embedded-bi/rebranding/)
-
 [Look and Feel](/embedded-bi/site-administration/look-and-feel-settings/)
 
 [Embed Settings](/embedded-bi/site-administration/embed-settings/)
 
 [Data Process Settings](/embedded-bi/site-administration/data-process-settings/)
-
-[Widget Settings](/embedded-bi/site-administration/widget-settings/)
 
 [Widget Settings](/embedded-bi/site-administration/widget-settings/)
 

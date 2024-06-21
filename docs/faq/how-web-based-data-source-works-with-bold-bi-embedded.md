@@ -15,6 +15,6 @@ Refresh settings will be configured by users for periodic updates. Bold BI Cloud
 
 For example, when connecting a web-based data source the first time, assume you have 1000 records from an API and moved to the cloud storage and configured with refresh settings for every 15 minutes. At the next trigger, it will fetch available data from the same API and delete existing data and moved the new data, assume 1100 records. The new data will have both modified and new records. 
 
-   ![Jira Data Source Workflow ](/bold-bi-docs/static/assets/embedded/faq/images/bold-bi-extract-data-from-jira.png)
+   ![Jira Data Source Workflow ](/static/assets/embedded/faq/images/bold-bi-extract-data-from-jira.png)
 
 > **NOTE:** If you want to maintain the last one month record, you can use a relative filter in JQL so the Cloud Storage will contain the last month's data only. JQL example, `project = projectXYZ and updated > -30d`. 

@@ -10,9 +10,9 @@ documentation: ug
 
 1. While installing the `Bold BI Embedded`, if you are facing the below issues, please follow these steps to resolve them..
 
-    ![License Server Unreachable](/bold-bi-docs/static/assets/embedded/faq/images/license-server-unreachable.jpeg) 
+    ![License Server Unreachable](/static/assets/embedded/faq/images/license-server-unreachable.jpeg) 
 
-    ![License Server Error](/bold-bi-docs/static/assets/embedded/faq/images/license-server-error.png)   
+    ![License Server Error](/static/assets/embedded/faq/images/license-server-error.png)   
 
 2. The installation machine should have an active internet connection to fetch the Bold BI license from our license server. Please ensure that you are having an active internet connection.
 

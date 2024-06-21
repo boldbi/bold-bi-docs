@@ -18,19 +18,19 @@ From user listing page, select the users to assign the admin role. Use `CTRL + C
 
 Once, you have selected the users, you can choose `Make Admin` option.
 
-![Select Users from User Management page](/bold-bi-docs/static/assets/embedded/multi-tenancy/images/ums-user-management.png)
+![Select Users from User Management page](/static/assets/embedded/multi-tenancy/images/ums-user-management.png)
 
 After choosing the `Make Admin` option, the confirmation window will open and click `Yes` to assign admin role for the selected users.
 
-![Assign Admin Role Confirmation](/bold-bi-docs/static/assets/embedded/multi-tenancy/images/admin-role-confirmation.png)
+![Assign Admin Role Confirmation](/static/assets/embedded/multi-tenancy/images/admin-role-confirmation.png)
 
 
 ## Remove Admin Role
 
 You can select any user to remove their admin role with the admin credentials.
 
-![Admin Users confirmation](/bold-bi-docs/static/assets/embedded/multi-tenancy/images/remove-admin-option.png)
+![Admin Users confirmation](/static/assets/embedded/multi-tenancy/images/remove-admin-option.png)
 
 After choosing the `Remove Admin` option, the confirmation window will open and click `Yes` to remove admin role for the selected users.
 
-![Remove Admin Confirmation](/bold-bi-docs/static/assets/embedded/multi-tenancy/images/remove-admin-confirmation.png) 
+![Remove Admin Confirmation](/static/assets/embedded/multi-tenancy/images/remove-admin-confirmation.png) 

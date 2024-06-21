@@ -24,6 +24,6 @@ The following section explains how the default views are managed by administrato
 
 If the administrator has enabled the `Default views` in the Dashboard Settings page, then the user can set the default views for the dashboard either while saving the dashboard views or from the dashboard views listing panel.
 
-![Default views enabled](/bold-bi-docs/static/assets/embedded/site-administration/images/default-view-enabled.png)
+![Default views enabled](/static/assets/embedded/site-administration/images/default-view-enabled.png)
 
 Learn how to remove the default views for the dashboard [here](/embedded-bi/managing-resources/manage-dashboards/manage-dashboard-views/#remove-a-default-view-for-the-dashboard).

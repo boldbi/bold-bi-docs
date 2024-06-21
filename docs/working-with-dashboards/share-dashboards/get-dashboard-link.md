@@ -25,14 +25,14 @@ Follow the steps below to get the Dashboards link.
 
 1. Click on the context menu of the respective Dashboard and choose `Get Link` option.
 
-	![Get Link Menu](/bold-bi-docs/static/assets/embedded/working-with-dashboards/share-dashboards/images/get-link-menu.png)
+	![Get Link Menu](/static/assets/embedded/working-with-dashboards/share-dashboards/images/get-link-menu.png)
 
 2. Respective Dashboard link will be show in the `Get Link` dialog box.
 
     For Public Dashboards
 
-    ![Get Link Dialog](/bold-bi-docs/static/assets/embedded/working-with-dashboards/share-dashboards/images/get-link-public.png) 
+    ![Get Link Dialog](/static/assets/embedded/working-with-dashboards/share-dashboards/images/get-link-public.png) 
 
     For Private Dashboards
     
-    ![Get Link Dialog](/bold-bi-docs/static/assets/embedded/working-with-dashboards/share-dashboards/images/get-link-private.png)
+    ![Get Link Dialog](/static/assets/embedded/working-with-dashboards/share-dashboards/images/get-link-private.png)

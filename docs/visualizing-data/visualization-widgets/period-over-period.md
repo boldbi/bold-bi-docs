@@ -12,67 +12,67 @@ documentation: ug
 
 Period over Period support used to compare measure values for one period of time against the results from a previous or subsequent period of time. PoP widget used to choose two different time periods at a time.
 
-![period over period](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/pop.png)
+![period over period](/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/pop.png)
 
 ## How to configure table data to Period over Period?
 
 1.  Drag and drop the `Period Over Period` from the toolbox at left into the design canvas and resize it to your required size.
 
-![dragging period over period into canvas](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/pop-draganddrop.png)
+![dragging period over period into canvas](/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/pop-draganddrop.png)
 
 2.  Click the `Data Source` button in the configuration panel.
 
-![data source button](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/databutton.png)
+![data source button](/static/assets/embedded/visualizing-data/visualization-widgets/images/databutton.png)
 
 3.  Click the `CREATE NEW` button to launch a new connection from the connection type panel.
 
-![create new button](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/datasourcebutton.png)
+![create new button](/static/assets/embedded/visualizing-data/visualization-widgets/images/datasourcebutton.png)
 
 4.  In the connection type panel, click any one (Here, the `Microsoft Excel` Connection type is selected for demonstration) of the listed connection type button shown.
 
-![data source list](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/datasourcelist.png)
+![data source list](/static/assets/embedded/visualizing-data/visualization-widgets/images/datasourcelist.png)
 
 5.  In the `NEW DATA SOURCE` configuration panel, fill the connection type and related details. Click the `Connect` button.
 
-![data source page](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/connectbutton.png)
+![data source page](/static/assets/embedded/visualizing-data/visualization-widgets/images/connectbutton.png)
 
 6.  Drag your preferred table or view from the left pane from the data design view, click the `Save` button.
 
-![table dragged into table canvas](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/virtualtable.png)
+![table dragged into table canvas](/static/assets/embedded/visualizing-data/visualization-widgets/images/virtualtable.png)
 
 7.  Click the `Properties` button in the configuration panel, property pane opens. Now, switch to the `ASSIGN DATA` tab.
 
-![highlights widgets configuration button](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/designerpropertiesbutton.png)
+![highlights widgets configuration button](/static/assets/embedded/visualizing-data/visualization-widgets/images/designerpropertiesbutton.png)
 
-![period over period assign data tab](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/pop-assigndata.png)
+![period over period assign data tab](/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/pop-assigndata.png)
 
 8.  The data tab will be opened with available measures and dimensions from the connected data source.
 
-![assigning fields to period over period](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/fieldlists.png)
+![assigning fields to period over period](/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/fieldlists.png)
 
 9.  Drag and drop a date field from `Dimensions` into the `Columns` section.
 
-![dragging fields to configure data for period over period](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/configure-widget.png)
+![dragging fields to configure data for period over period](/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/configure-widget.png)
 
 ### Binding Fields
 On binding field to PoP widget, default date ranges calculated based on the bounded field and set as a selected filter.
 
-![default date range for period over period](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/pop-defaultdaterange-denote.png)
+![default date range for period over period](/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/pop-defaultdaterange-denote.png)
 
 By default, the PoP widget renders with some default filter value and which can not be discarded. We allow only to reset the filters to default if we made changes. The default date range is calculated based on the days' pan between min and max dates of the bounded field.
 
 You can select the Relative/Custom date ranges using the `Relative Combobox` or `Calendars.` We can select any date ranges irrespective of the bounded field. That field is used to calculate the default date ranges and filtering purposes.
 
-![popup dialog for period over period](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/pop-popup.png)
+![popup dialog for period over period](/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/pop-popup.png)
 
 
 The following relative items are displayed under the Date Range:
 
-![date range relative items for period over period](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/pop-daterange-relativeitems.png)
+![date range relative items for period over period](/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/pop-daterange-relativeitems.png)
 
 The following relative items are displayed under the Compare To:
 
-![date range relative items for period over period](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/pop-customrange-relativeitems.png)  
+![date range relative items for period over period](/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/pop-customrange-relativeitems.png)  
 
 In both relative items Combobox, the `Custom` will be selected automatically if you choose custom range from calendar or enter custom range manually using the `Combobox` input section.
 
@@ -104,65 +104,65 @@ Comparison types of charts like `Bar,` `Column,` `Stacked Bar,` `Stacked Column,
 
 Consider you configured `Column chart`, `Grid`, `KPICard.` You can change the `Column Chart`, `Grid`, `KPICard` as a slave for the `Period Over Period` widget by using the filter interaction window as shown below.
 
-![Chart as slave widget in filter configuration](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/pop-slavewidget.png)
+![Chart as slave widget in filter configuration](/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/pop-slavewidget.png)
 
 Once you configured, the `Chart` color palette will be changed using the `PoP` selection colors(blue and green). The red information icon denotes that the chart virtual column value will not get a display in the design mode.
 
-![chart color palette update for period over period](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/pop-chartcolors.png)
+![chart color palette update for period over period](/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/pop-chartcolors.png)
 
 Similarly, you can see an option to customize legend and palette for the virtual column which will be displayed in the Designer Preview/View Mode.
 
-![chart custom legend for period over period](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/pop-customlegend.png) 
+![chart custom legend for period over period](/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/pop-customlegend.png) 
 
-![chart color palette option for period over period](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/pop-colorpalette.png) 
+![chart color palette option for period over period](/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/pop-colorpalette.png) 
 
-![chart color palette option for period over period](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/pop-colorpalettech.png) 
+![chart color palette option for period over period](/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/pop-colorpalettech.png) 
 
 During interaction from the PoP widget, the chart will display two series. One having values filtered from `Date Range` and another one contains filtered values from `Compare To.`
 
-![period over period workflow](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/pop-workflow.png) 
+![period over period workflow](/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/pop-workflow.png) 
 
 The `Grid` color palette will be changed using the `PoP` selection colors(blue and green). The red information icon denotes that the chart virtual column value will not get a display in the design mode.
 
-![Grid color palette update for period over period](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/pop-gridcolors.png)
+![Grid color palette update for period over period](/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/pop-gridcolors.png)
 
 You can see a category to customize POP settings and palette for the grid which will be displayed in the Designer Preview/View Mode.
 
-![Grid pop settings update for period over period](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/pop-gridcolorpalette.png)
+![Grid pop settings update for period over period](/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/pop-gridcolorpalette.png)
 
 You can customize each column that is to be displayed in the Designer Preview/View Mode using the `Customize` option. If you click on the `Customize` option, the following window shows:
 
-![Grid pop settings update for period over period](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/pop-gridcustomize.png)
+![Grid pop settings update for period over period](/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/pop-gridcustomize.png)
 
 Please find the response of different type of charts as slave of PoP widgets.
 
 **Bar Chart**
 
-![Bar chart as slave widget](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/pop-barslave.png)
+![Bar chart as slave widget](/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/pop-barslave.png)
 
 **Line Chart**
 
-![Line chart as slave widget](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/pop-linechartslav.png)
+![Line chart as slave widget](/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/pop-linechartslav.png)
 
 **Area Chart**
 
-![Area chart as slave widget](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/pop-areaslave.png)
+![Area chart as slave widget](/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/pop-areaslave.png)
 
 **Spline Chart**
 
-![Spline chart as slave widget](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/pop-splineslave.png)
+![Spline chart as slave widget](/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/pop-splineslave.png)
 
 **Spline Area Chart**
 
-![Spline Area chart as slave widget](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/pop-splineareaslave.png)
+![Spline Area chart as slave widget](/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/pop-splineareaslave.png)
 
 **Stacked column Chart**
 
-![Stacked chart as slave widget](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/pop-slavestacked.png)
+![Stacked chart as slave widget](/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/pop-slavestacked.png)
 
 **Percent Stacked bar chart**
 
-![Percent Stacked bar chart as slave widget](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/pop-percentchartslave.png)
+![Percent Stacked bar chart as slave widget](/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/pop-percentchartslave.png)
 
 Consider you have configured the `Proportional Chart` as a slave for the `Period Over Period` widget. Like the column, the line chart's color palette will not be changed. The Red information icon denotes that the comparison of period visualization will not be shown in the design mode.
 
@@ -170,25 +170,25 @@ Consider you have configured the `Proportional Chart` as a slave for the `Period
 
 The `KPI Card` will be shown with the following information. You can visualize its value in Designer Preview/View Mode
 
-![KPI Card info update for period over period](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/pop-kpicard.png)
+![KPI Card info update for period over period](/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/pop-kpicard.png)
 
 During interaction from the PoP widget, the KPI Card will display two series. One has values filtered from `Date Range` which displays as `Actual Value` while another one contains filtered values from `Compare To` which displays as `Target Value.`
 
-![period over period kpicard workflow](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/pop-kpicardworkflow.png)
+![period over period kpicard workflow](/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/pop-kpicardworkflow.png)
 
 **Proportion chart**
 
-![Proportion chart update in design mode](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/pop-proportionalchart.png)
+![Proportion chart update in design mode](/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/pop-proportionalchart.png)
 
 During the interaction of Pop Widget, the proportional chart will display two series. One shows values filtered from `Date Range` another one contains filtered values from `Compare To.`
 
-![Proportional chart as slave widget](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/pop-proportional.png)
+![Proportional chart as slave widget](/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/pop-proportional.png)
 
 **Grid**
 
 During interaction with the PoP widget, the grid will display two series for each column which are a slave to the POP. One has values filtered from the `Date Range` while another one contains filtered values from `Compare To.`
 
-![period over period grid workflow](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/pop-gridworkflow.png)
+![period over period grid workflow](/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/pop-gridworkflow.png)
 
 ## How to format Period Over Period?
 
@@ -196,29 +196,29 @@ You can format the Period Over Period for better illustration of the view that y
 
 ### General Settings
 
-![period over period name](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/property.png)
+![period over period name](/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/property.png)
 
 #### Name 
 
 This option allows you to change the title for the Period Over Period.
 
-![period over period name](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/Name.png)
+![period over period name](/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/Name.png)
 
 #### Subtitle
 
 Allows you to provide subtitle for Period Over Period.
 
-![period over period name](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/subtitle.png)
+![period over period name](/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/subtitle.png)
 
 #### Description
 
 Allows you to provide a description about the Period Over Period.
 
-![period over period name](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/Description.png)
+![period over period name](/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/Description.png)
 
 ### Filter
 
-![filter configuration for period over period](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/filtersettings.png)
+![filter configuration for period over period](/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/filtersettings.png)
 
 ### Act as Master Widget 
 
@@ -227,7 +227,7 @@ This allows you to define this PoP as a master widget such that its filter actio
 
 #### Container Appearance
 
-![Container Appearance](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/container-appearance.png)
+![Container Appearance](/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/container-appearance.png)
 
 #### Title Alignment
 
@@ -275,7 +275,7 @@ This allows you to toggle the visibility of the `shadow` surrounding the widget.
 
 #### Container actions
 
-![Container Actions](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/container-actions.png)
+![Container Actions](/static/assets/embedded/visualizing-data/visualization-widgets/images/pop/container-actions.png)
 
 #### Show Header
 

@@ -12,17 +12,17 @@ This section explains how to synchronize the imported Active Directory users det
 
 You can navigate to the user synchronization page from users page.
 
-![Active Directory Synchronization Link](/bold-bi-docs/static/assets/embedded/managing-resources/manage-users/images/user-synchronisation-navigation-button.png#width=60%)
+![Active Directory Synchronization Link](/static/assets/embedded/managing-resources/manage-users/images/user-synchronisation-navigation-button.png#width=60%)
 
 ## Synchronize Users
 
 Bold BI Server will list the Active Directory users that are already imported.
 
-![Active Directory Imported user list](/bold-bi-docs/static/assets/embedded/managing-resources/manage-users/images/imported-user-list.png)
+![Active Directory Imported user list](/static/assets/embedded/managing-resources/manage-users/images/imported-user-list.png)
 
 Choose the users you want to synchronize and click on `Synchronize` at the top. 
 
-![Synchronize button](/bold-bi-docs/static/assets/embedded/managing-resources/manage-users/images/Synchronize-button.png)
+![Synchronize button](/static/assets/embedded/managing-resources/manage-users/images/Synchronize-button.png)
 
 ### Synchronization Procedure
 
@@ -32,10 +32,10 @@ Choose the users you want to synchronize and click on `Synchronize` at the top.
 
 After synchronization completes, the number of users modified, deleted, duplicated will be shown in the success message box.
 
-![Synchronization confirmation window](/bold-bi-docs/static/assets/embedded/managing-resources/manage-users/images/Synchronization-Confirmation-window.png#width=65%)
+![Synchronization confirmation window](/static/assets/embedded/managing-resources/manage-users/images/Synchronization-Confirmation-window.png#width=65%)
 
 ## Duplicate Users
 
 Active Directory users who has the same username or email address as that of the Bold BI Server users (who are already present) will be marked as duplicate users and will not be allowed to synchronize into Active Directory.
 
-![Display Duplicated users](/bold-bi-docs/static/assets/embedded/managing-resources/manage-users/images/display-duplicate-message.png)
+![Display Duplicated users](/static/assets/embedded/managing-resources/manage-users/images/display-duplicate-message.png)

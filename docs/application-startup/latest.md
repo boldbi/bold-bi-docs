@@ -16,13 +16,13 @@ This topic explains how to activate the account and also how to startup the Bold
 
 Bold BI application can be activated either by using your login credentials or by offline unlock key.
 
-> **NOTE:** If you have already installed Bold Reports in your machine, please go to the [this section](/embedded-bi/application-startup/#activate-bold-bi-license) to activate your Bold BI license.
+> **NOTE:** If you have already installed Bold Reports in your machine, please go to the [this section](/embedded-bi/application-startup/latest/#activate-bold-bi-license) to activate your Bold BI license.
 
 ## Using Login Credentials
 
 You can sign in with your registered email address to activate your subscription.
 
-![Activate the account page](/bold-bi-docs/bold-bi-docs/bold-bi-docs/static/assets/embedded/application-startup/images/application-startup-login.png) 
+![Activate the account page](/static/assets/embedded/application-startup/images/application-startup-login.png) 
 
 ### Select login option
 
@@ -32,27 +32,27 @@ From the login window, choose your account type and proceed to login.
 * Azure AD
 * Syncfusion Login Credentials
 
-![Application startup login form](/bold-bi-docs/bold-bi-docs/bold-bi-docs/static/assets/embedded/application-startup/images/login-option.png)
+![Application startup login form](/static/assets/embedded/application-startup/images/login-option.png)
 
 ### Select license
 
 If you are having multiple Bold BI licenses, then you will be getting this screen. To proceed with application startup, select the corresponding license. Otherwise, you will be automatically redirected to the application startup screen.
 
-![Select Portal License](/bold-bi-docs/bold-bi-docs/bold-bi-docs/static/assets/embedded/application-startup/images/choose-the-plan.png)
+![Select Portal License](/static/assets/embedded/application-startup/images/choose-the-plan.png)
 
 ## Offline Installation
 
 > **NOTE:** Offline unlock key is only available for selected customers. [Please contact us](https://www.boldbi.com/support) to get access to offline unlock key.
 
-![Activate the account with Unlock key option](/bold-bi-docs/bold-bi-docs/bold-bi-docs/static/assets/embedded/application-startup/images/application-startup-login-license.png)
+![Activate the account with Unlock key option](/static/assets/embedded/application-startup/images/application-startup-login-license.png)
 
 If you are installing the Bold BI in firewall restricted environments, you can use offline unlock key to activate the account. Please download your offline unlock key [here](https://www.boldbi.com/account/downloads/embedded).
 
-![Unlock key file page](/bold-bi-docs/bold-bi-docs/bold-bi-docs/static/assets/embedded/application-startup/images/offline-setup-page.png)
+![Unlock key file page](/static/assets/embedded/application-startup/images/offline-setup-page.png)
 
 Once the unlock key is uploaded, proceed to the next screen for configuring the application.
 
-![Select Unlcok key file ](/bold-bi-docs/bold-bi-docs/bold-bi-docs/static/assets/embedded/application-startup/images/offline-setup.png)
+![Select Unlcok key file ](/static/assets/embedded/application-startup/images/offline-setup.png)
 
 ### Possible errors cases and their solution
 
@@ -67,7 +67,7 @@ Once the unlock key is uploaded, proceed to the next screen for configuring the 
 
 If you do not have an account for Bold BI, you can request a new trial from this [link](https://www.boldbi.com/embedded/pricing).
 
-![Activate the account with No Trail option](/bold-bi-docs/bold-bi-docs/bold-bi-docs/static/assets/embedded/application-startup/images/application-startup-sign-up.png)
+![Activate the account with No Trail option](/static/assets/embedded/application-startup/images/application-startup-sign-up.png)
 
 ## Application Startup for Bold BI Enterprise
 
@@ -77,7 +77,7 @@ Application startup screen helps you to configure admin account setup, database 
 
 A new user should be created to access the Bold BI sites and dashboards with the details mentioned in the following image.
 
-![Admin User Registration](/bold-bi-docs/bold-bi-docs/bold-bi-docs/static/assets/embedded/application-startup/images/application-startup-admin.png)
+![Admin User Registration](/static/assets/embedded/application-startup/images/application-startup-admin.png)
 
 While creating this new user account, a new group called `System Administrator`  will be created, and this group will have following permissions:
 
@@ -108,7 +108,7 @@ You can connect to an existing server instance using the following options:
 * Create a new database.
 * Use an existing database.
 
-![SQL Server](/bold-bi-docs/bold-bi-docs/bold-bi-docs/static/assets/embedded/application-startup/images/application-startup-step1.png)
+![SQL Server](/static/assets/embedded/application-startup/images/application-startup-step1.png)
 
 > **NOTE:** The credentials used to connect to the server instance must have the permissions specified [here](/embedded-bi/faq/what-are-the-database-permissions-required-to-set-up-bold-bi-embedded/).
 
@@ -124,7 +124,7 @@ This configuration stores the user identities, sites details, dashboards, datast
 
 In Simple mode by default, the sites will be deployed in the local file system.
 
-![Simple Mode](/bold-bi-docs/bold-bi-docs/bold-bi-docs/static/assets/embedded/application-startup/images/simple-mode.png)
+![Simple Mode](/static/assets/embedded/application-startup/images/simple-mode.png)
 
 ### Advanced mode
 
@@ -136,19 +136,19 @@ Bold BI database stores dashboards, users, and their access permissions.
 
 The Data Store database stores the authentication information and data extracted from REST data sources.
 
-![Advanced Mode](/bold-bi-docs/bold-bi-docs/bold-bi-docs/static/assets/embedded/application-startup/images/advanced-mode.png)
+![Advanced Mode](/static/assets/embedded/application-startup/images/advanced-mode.png)
 
 #### Storage Configuration
 
 In advanced mode, the user can select the preferred storage type, either File Storage or Blob Storage, to store the resource in Bold ID and Bold BI.
 
-![Site File Storage](/bold-bi-docs/bold-bi-docs/bold-bi-docs/static/assets/embedded/application-startup/images/file-storage.png)  
+![Site File Storage](/static/assets/embedded/application-startup/images/file-storage.png)  
 
 > **NOTE:** By default storage type is `File Storage`.
 
 User can select the Blob Storage by giving Azure Blob Credential in the required field.  
 
-![Site Blob Storage](/bold-bi-docs/bold-bi-docs/bold-bi-docs/static/assets/embedded/application-startup/images/blob-storage.png)  
+![Site Blob Storage](/static/assets/embedded/application-startup/images/blob-storage.png)  
 
 You can find the details how to configure the Azure Blob [here](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal).
 
@@ -178,7 +178,7 @@ After clicking Next, the application will register and validate the site informa
 * Manage sites – where you can manage the permissions for the sites you have created. 
 * Go to Dashboards - where you can create, edit, update the dashboards and so on. 
 
-![Launch Bold BI Dashboards](/bold-bi-docs/bold-bi-docs/bold-bi-docs/static/assets/embedded/application-startup/images/launch-application.png)
+![Launch Bold BI Dashboards](/static/assets/embedded/application-startup/images/launch-application.png)
 
 ## Activate Bold BI license
 
@@ -188,27 +188,27 @@ Open the Manage License Page - `{domain}/ums/administration/license-settings`
 
 Then, choose the Embedded BI tab.
 
-![BoldBI Embedded tab](/bold-bi-docs/bold-bi-docs/bold-bi-docs/static/assets/embedded/application-startup/images/boldbi-embedded-tab.png)
+![BoldBI Embedded tab](/static/assets/embedded/application-startup/images/boldbi-embedded-tab.png)
 
 ### Activate Bold BI license using the login credential
 
 You can sign in with your registered email address to activate your subscription.
 
-![Account activate using login](/bold-bi-docs/bold-bi-docs/bold-bi-docs/static/assets/embedded/application-startup/images/activate-boldbi-account.png)
+![Account activate using login](/static/assets/embedded/application-startup/images/activate-boldbi-account.png)
 
 If you are having multiple Bold BI licenses, then you will be getting this screen and select the corresponding license to activate the Bold BI. Otherwise, your Bold BI license will be automatically activated.
 
-![Choose Bold BI License](/bold-bi-docs/bold-bi-docs/bold-bi-docs/static/assets/embedded/application-startup/images/choose-the-license.png) 
+![Choose Bold BI License](/static/assets/embedded/application-startup/images/choose-the-license.png) 
 
 ### Upload unlock key
 
 > **NOTE:** Offline unlock key is only available for selected customers. Please contact us(https://www.boldbi.com/support) to get access to the offline unlock key.
 
-![Unlock Key option](/bold-bi-docs/bold-bi-docs/bold-bi-docs/static/assets/embedded/application-startup/images/upload-unlock-key-option.png) 
+![Unlock Key option](/static/assets/embedded/application-startup/images/upload-unlock-key-option.png) 
 
 Once the unlock key is uploaded, click `Upload License` for activating the Bold BI License.
 
-![Updated Bold BI License](/bold-bi-docs/bold-bi-docs/bold-bi-docs/static/assets/embedded/application-startup/images/update-license.png)
+![Updated Bold BI License](/static/assets/embedded/application-startup/images/update-license.png)
 
 ### Create site
 

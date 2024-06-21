@@ -13,13 +13,13 @@ A new dashboard or an existing dashboard can be published with same or different
 
 Publishing operation can be handled using the option in the tools pane of the design view items such as, `Publish` and `Publish As`
 
-![Publish dashboard icon](/bold-bi-docs/static/assets/embedded/working-with-dashboards/images/publishdashboard_icon.png)
+![Publish dashboard icon](/static/assets/embedded/working-with-dashboards/images/publishdashboard_icon.png)
 
 Click `Publish` in the tools panel. In order to `Publish As` the existing dashboard, click the down arrow near the publish icon and select `Publish As`. 
 
 The `Publish As Dashboard` dialog box will be opened, on which category and name can be selected where the dashboard need to be published.
 
-![Publish dashboard dialog](/bold-bi-docs/static/assets/embedded/working-with-dashboards/images/publishadashboard_window.png)
+![Publish dashboard dialog](/static/assets/embedded/working-with-dashboards/images/publishadashboard_window.png)
 
 Enter the name and description for the dashboard.
 
@@ -27,7 +27,7 @@ On selecting `Mark as public`, the dashboard will be saved as public dashboard.
 
 While saving the dashboard, some special characters are not supported in the dashboard name.
 
-![Publish dashboard exception](/bold-bi-docs/static/assets/embedded/working-with-dashboards/images/publishadashboard_exception.png)
+![Publish dashboard exception](/static/assets/embedded/working-with-dashboards/images/publishadashboard_exception.png)
 
 Click `Publish` to save the dashboard.
 
@@ -35,11 +35,11 @@ Saving the dashboard for the first time, will prompt the `Publish AS` dialog eve
 
 On publishing the dashboard, if same name already exist with the selected category, it will prompt `Confirm Publish Dashboard` dialog to replace the dashboard in the selected category. By selecting `Yes`, the dashboard will be replaced in the category specified.
 
-![Confirm Publish dashboard](/bold-bi-docs/static/assets/embedded/working-with-dashboards/images/publishconfirmdashboard.png)
+![Confirm Publish dashboard](/static/assets/embedded/working-with-dashboards/images/publishconfirmdashboard.png)
 
 After publishing a dashboard successfully, it will prompt to view the published dashboard. By selecting `Yes`, the dashboard will be navigated to view the subsequent dashboard.
 
-![Confirm View dashboard](/bold-bi-docs/static/assets/embedded/working-with-dashboards/images/publishconfirmviewdashboard.png)
+![Confirm View dashboard](/static/assets/embedded/working-with-dashboards/images/publishconfirmviewdashboard.png)
 
 [Learn how to edit an existing dashboard](/embedded-bi/working-with-dashboards/edit-existing-dashboard/)
 

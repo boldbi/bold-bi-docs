@@ -17,31 +17,31 @@ Users belonging to the `System Administrator` group only can import users from d
 
 To add new users to the Bold BI, click on `New User` and then `Import from Database` from the User Management page.
 
-![Add New Users](/bold-bi-docs/static/assets/embedded/managing-resources/manage-users/images/add-new-users.png#width=50%)
+![Add New Users](/static/assets/embedded/managing-resources/manage-users/images/add-new-users.png#width=50%)
 
 The link will redirect to another page that will look like below.
 
-![Import Users from Database - Home](/bold-bi-docs/static/assets/embedded/managing-resources/manage-users/images/import-users-home.png)
+![Import Users from Database - Home](/static/assets/embedded/managing-resources/manage-users/images/import-users-home.png)
 
 
 ## Select Users and Import
 
 After selecting columns the data retrieved from database will be shown in Grid. Select the users to be imported and click on `Import Users` to import the users.
 
-![Import Selected Users](/bold-bi-docs/static/assets/embedded/managing-resources/manage-users/images/import-users-grid-selection-new.png)
+![Import Selected Users](/static/assets/embedded/managing-resources/manage-users/images/import-users-grid-selection-new.png)
 
 Bold BI will import the chosen users and a confirmation message will be displayed as shown in the below image.
 
-![Success message after imported the Database users](/bold-bi-docs/static/assets/embedded/managing-resources/manage-users/images/Database-User-imported-new.png#width=60%)
+![Success message after imported the Database users](/static/assets/embedded/managing-resources/manage-users/images/Database-User-imported-new.png#width=60%)
 
 ## Duplicate Users
 
  Existing database users who has the same username or email address as that of the Bold BI users(who are already present), will be marked as duplicate users and will not be allowed to import into Bold BI.
 
- ![Display Duplicated Users](/bold-bi-docs/static/assets/embedded/managing-resources/manage-users/images/Duplicated-existing-db-import-users.png)
+ ![Display Duplicated Users](/static/assets/embedded/managing-resources/manage-users/images/Duplicated-existing-db-import-users.png)
 
 ## Modify Existing Database Connection
 
 To modify Existing Database configuration settings, click on the `Modify` link as below
 
-![Modify Database Configuration](/bold-bi-docs/static/assets/embedded/managing-resources/manage-users/images/Modify-Database-settings-Configuration.png)
+![Modify Database Configuration](/static/assets/embedded/managing-resources/manage-users/images/Modify-Database-settings-Configuration.png)

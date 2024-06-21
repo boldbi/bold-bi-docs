@@ -17,13 +17,13 @@ Bold BI allows you to query the records using the Code view mode in the Snowflak
 
 2.  Drag and drop the table from the table schema in the data design view page. Switch to the code view by enabling the toggle option in the tools pane as shown in the following image.
     
-	![Code view mode](/bold-bi-docs/static/assets/embedded/faq/images/code-view-snowflake.png)
+	![Code view mode](/static/assets/embedded/faq/images/code-view-snowflake.png)
 	
 3.	You can find the query editor window in which you can alter the query to fetch the records from the Snowflake database. After entering your query, click the `Run` button in the tools pane.
     
-	![Alter query](/bold-bi-docs/static/assets/embedded/faq/images/alter-snowflake-query.png)
+	![Alter query](/static/assets/embedded/faq/images/alter-snowflake-query.png)
 	
 4.	You can view the data for your query at bottom of the Query Editor by clicking `Update.`
     
-	![Preview data](/bold-bi-docs/static/assets/embedded/faq/images/preview-snowflake-table.png)
+	![Preview data](/static/assets/embedded/faq/images/preview-snowflake-table.png)
 	

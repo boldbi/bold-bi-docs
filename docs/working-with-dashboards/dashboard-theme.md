@@ -14,17 +14,17 @@ The dashboard theme option is now available as a `preview feature` in the Bold B
 
 By default, the dashboards are rendered in the `light mode` and the theme option is shown in the header panel of the published dashboards as shown in the following image. 
 
- ![Theme option](/bold-bi-docs/static/assets/embedded/working-with-dashboards/images/DashboardTheme.png)
+ ![Theme option](/static/assets/embedded/working-with-dashboards/images/DashboardTheme.png)
 
 Clicking the `Theme` option will list out the available themes.
 
- ![Available themes](/bold-bi-docs/static/assets/embedded/working-with-dashboards/images/Available-Themes.png)
+ ![Available themes](/static/assets/embedded/working-with-dashboards/images/Available-Themes.png)
 
 You can switch the themes by clicking the required theme name from the list.
 
 The following image shows the dashboard view after applying the dark theme. 
 
- ![Dark theme applied view](/bold-bi-docs/static/assets/embedded/working-with-dashboards/images/custom-theme-dark.png)
+ ![Dark theme applied view](/static/assets/embedded/working-with-dashboards/images/custom-theme-dark.png)
 
 > **NOTE:** Theming will not be applied in few areas in the dashboard. Please check the  [limitations](/embedded-bi/working-with-dashboards/dashboard-theme/#limitations) section for details.
 
@@ -40,10 +40,10 @@ However, you can turn off the feature by changing the settings in the Bold BI ve
 
 1.	Open the `Web.config` file from the following location. 
 **[Installation Drive]: Bold BI \ Dashboard Designer\Web.config**
-![web config](/bold-bi-docs/static/assets/embedded/working-with-dashboards/images/web-config-file.png)
+![web config](/static/assets/embedded/working-with-dashboards/images/web-config-file.png)
 
 2.	You can find the key dashboard:theme:enable as shown in the following screenshot.
-![Turn off theme](/bold-bi-docs/static/assets/embedded/working-with-dashboards/images/off-theme.png)
+![Turn off theme](/static/assets/embedded/working-with-dashboards/images/off-theme.png)
 
 3.	Change the value for the key `dashboard:theme:enable` to **false**, and restart your server. 
 
@@ -78,34 +78,34 @@ Follow the steps to add a new custom theme in Bold BI Enterprise edition.
 
     *Dashboard themes folder:*
     
-    ![Dashboard themes folder](/bold-bi-docs/static/assets/embedded/working-with-dashboards/images/dashboard-themes-folder.png)
+    ![Dashboard themes folder](/static/assets/embedded/working-with-dashboards/images/dashboard-themes-folder.png)
 
 3. Open the theme file in any text editor to view the template and the color code values. 
 
     *Dashboard theme template json file:*
 
-    ![Theme template](/bold-bi-docs/static/assets/embedded/working-with-dashboards/images/light-theme-json.png)
+    ![Theme template](/static/assets/embedded/working-with-dashboards/images/light-theme-json.png)
 
 4. Create a new theme file with the template shown in the above theme file. You can modify the color for the properties in the hex format.
 
     *Prepared custom blue theme file contents:*
-    ![Custom theme template](/bold-bi-docs/static/assets/embedded/working-with-dashboards/images/custom-theme-json.png)
+    ![Custom theme template](/static/assets/embedded/working-with-dashboards/images/custom-theme-json.png)
 
     > **NOTE:** Set the custom theme name in the `name` property.
 
 5.  Now save the newly prepared theme file with the `[ThemeName].json` format.
 
-    ![Save custom theme template](/bold-bi-docs/static/assets/embedded/working-with-dashboards/images/adding-theme-file.png)
+    ![Save custom theme template](/static/assets/embedded/working-with-dashboards/images/adding-theme-file.png)
 
 6. Now open the dashboard in the browser and the theme will be list in the theme drop down. 
 
-    ![Applying custom theme](/bold-bi-docs/static/assets/embedded/working-with-dashboards/images/applying-custom-theme.png)
+    ![Applying custom theme](/static/assets/embedded/working-with-dashboards/images/applying-custom-theme.png)
 
 7. Select your custom theme and the theme will be applied to the dashboard. 
 
     The following image shows the dashboard view after applied the custom blue theme. 
 
-    ![Dashboard with applied custom theme](/bold-bi-docs/static/assets/embedded/working-with-dashboards/images/custom-theme-blue.png)
+    ![Dashboard with applied custom theme](/static/assets/embedded/working-with-dashboards/images/custom-theme-blue.png)
 
 
 ## Custom theme JSON file format
@@ -250,7 +250,7 @@ Here is an example to show how the dashboard banner is color and font customized
   }
 
 ```
-   ![Font customization dashboard banner](/bold-bi-docs/static/assets/embedded/working-with-dashboards/images/font-customization-banner.png)
+   ![Font customization dashboard banner](/static/assets/embedded/working-with-dashboards/images/font-customization-banner.png)
 
 You can find the list of classes that you can customize in the following sections:
 

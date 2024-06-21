@@ -22,11 +22,11 @@ To add a new user in UMS, click `New User` and then `Add User` from the User Man
 
 The `Add User` dialog will be shown as in the image below.
 
-![Add User Dialog Proceed](/bold-bi-docs/static/assets/embedded/multi-tenancy/images/add-user-dialog-proceed.png#max-width=95%)
+![Add User Dialog Proceed](/static/assets/embedded/multi-tenancy/images/add-user-dialog-proceed.png#max-width=95%)
 
-![Add User Dialog](/bold-bi-docs/static/assets/embedded/multi-tenancy/images/add-user-dialog-save.png#max-width=95%)
+![Add User Dialog](/static/assets/embedded/multi-tenancy/images/add-user-dialog-save.png#max-width=95%)
 
-![Add User Dialog](/bold-bi-docs/static/assets/embedded/multi-tenancy/images/add-user-success-prompt.png#max-width=95%)
+![Add User Dialog](/static/assets/embedded/multi-tenancy/images/add-user-success-prompt.png#max-width=95%)
 
 > **NOTE:**  
 > * If the account activation mode is Automatic, then the new user will be automatically activated. 
@@ -48,7 +48,7 @@ To automate the process of adding a large number of users to UMS, you can downlo
 
 In UMS, click `Import from csv`.
 
-![Import from CSV - Goto Import CSV users page](/bold-bi-docs/static/assets/embedded/multi-tenancy/images/goto-import-csv-users.png#max-width=95%)
+![Import from CSV - Goto Import CSV users page](/static/assets/embedded/multi-tenancy/images/goto-import-csv-users.png#max-width=95%)
 
 ### CSV file Requirements
 
@@ -66,19 +66,19 @@ Follow the below steps to add users using the CSV template
 
 1. Download CSV template.
 
-	![Import from CSV - Download CSV template](/bold-bi-docs/static/assets/embedded/multi-tenancy/images/download-csv-template.png#max-width=95%)
+	![Import from CSV - Download CSV template](/static/assets/embedded/multi-tenancy/images/download-csv-template.png#max-width=95%)
 
 2. Add users in the CSV. Save the file and upload it.
 
-	![Import from CSV - Add users into CSV file](/bold-bi-docs/static/assets/embedded/multi-tenancy/images/csv-import-add-users.png#max-width=95%)
+	![Import from CSV - Add users into CSV file](/static/assets/embedded/multi-tenancy/images/csv-import-add-users.png#max-width=95%)
 
 3. Once the file is uploaded the user details will be shown in the grid like in the below image. Click `Import Users` to add the users.
 
-	![Import from CSV - User detail in grid](/bold-bi-docs/static/assets/embedded/multi-tenancy/images/csv-import-proceed.png#max-width=95%)
+	![Import from CSV - User detail in grid](/static/assets/embedded/multi-tenancy/images/csv-import-proceed.png#max-width=95%)
 
 4. After uploaded the users in UMS the results are displayed as below.
 
-    ![Import from CSV - Success Message](/bold-bi-docs/static/assets/embedded/multi-tenancy/images/csv-import-success-prompt.png#max-width=95%)
+    ![Import from CSV - Success Message](/static/assets/embedded/multi-tenancy/images/csv-import-success-prompt.png#max-width=95%)
 	
 ### Password Requirement
 The password must meet the following requirements:
@@ -91,7 +91,7 @@ It must contain,
 * 1 numeric,
 * 1 special character.
 
-![Password Requirement](/bold-bi-docs/static/assets/embedded/multi-tenancy/images/user-add-dialog-password-validation.png#max-width=40%)
+![Password Requirement](/static/assets/embedded/multi-tenancy/images/user-add-dialog-password-validation.png#max-width=40%)
 
 ## Activate users
 Once the user is added new account will be created for the user and an account activation email will be sent to the email address with an activation link to activate the Bold BI account.
@@ -103,23 +103,23 @@ The account will be on inactive status till the user activates the account from 
 ## Edit users
 User profile details can be edited by the users edit page as shown in the below image.
 
-![Edit User](/bold-bi-docs/static/assets/embedded/multi-tenancy/images/edit-user-proceed.png#max-width=95%)
+![Edit User](/static/assets/embedded/multi-tenancy/images/edit-user-proceed.png#max-width=95%)
 
 Username, First Name, Last Name, Phone number and profile picture of the user can be edited.
 
-![Edit User Profile](/bold-bi-docs/static/assets/embedded/multi-tenancy/images/edit-user.png#max-width=95%)
+![Edit User Profile](/static/assets/embedded/multi-tenancy/images/edit-user.png#max-width=95%)
 
 ## Change Password 
 If the users forgot their password, Administrators can able to reset the password for the users by using this option.
 
 Please refer to [this](#password-requirement) section for password requirement.
 
-![Change Password](/bold-bi-docs/static/assets/embedded/multi-tenancy/images/change-password.png#max-width=95%)
+![Change Password](/static/assets/embedded/multi-tenancy/images/change-password.png#max-width=95%)
 
 ## Delete users
 Users can be deleted from the UMS when the user no longer requires the access. Users can be deleted from the user management page by the `System Administrator`.
 
-![Delete user by Admin](/bold-bi-docs/static/assets/embedded/multi-tenancy/images/delete-user.png#max-width=95%)
+![Delete user by Admin](/static/assets/embedded/multi-tenancy/images/delete-user.png#max-width=95%)
 
 > **Note:**  Once the user gets deleted by the `System Administrator` his access will be revoked from the sites that he belongs to.
 
@@ -127,16 +127,16 @@ Users can be deleted from the UMS when the user no longer requires the access. U
 
 You can select single or multiple users in user management and provide access to multiple sites.
 
-![Grant User Access](/bold-bi-docs/static/assets/embedded/multi-tenancy/images/grant-user-access-proceed.png#max-width=95%)
+![Grant User Access](/static/assets/embedded/multi-tenancy/images/grant-user-access-proceed.png#max-width=95%)
 
 Select the sites you need to provide access to the selected users and then select `Grant Access` button to proceed.
 
-![Grant Access Select Sites](/bold-bi-docs/static/assets/embedded/multi-tenancy/images/grant-access-select-site.png#max-width=95%)
+![Grant Access Select Sites](/static/assets/embedded/multi-tenancy/images/grant-access-select-site.png#max-width=95%)
 
 > **NOTE:**  If the selected user has already access to that site, the process will be skipped.
 
 After the process completion, you can see a detailed report on it. You can also download the report in CSV format.
 
-![Grant Access Select Sites](/bold-bi-docs/static/assets/embedded/multi-tenancy/images/grant-access-report.png#max-width=95%)
+![Grant Access Select Sites](/static/assets/embedded/multi-tenancy/images/grant-access-report.png#max-width=95%)
 
 You can revoke access to the site by referring [here](/embedded-bi/multi-tenancy/manage-sites/#revoke-access).

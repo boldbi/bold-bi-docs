@@ -30,19 +30,19 @@ The mode should be either `in-memory` or `redis`. The widget data will be cached
 
     The Data is cached in an external server named `Redis`. Redis is an open-source (BSD licensed), in-memory data structure store used as a database, cache, message broker, and streaming engine. Learn more about `Redis` and its installation [here](https://redis.io/).
 
-    ![DataCache configuration](/bold-bi-docs/static/assets/embedded/site-administration/images/datacache_configuration.png#max-width=100%)
+    ![DataCache configuration](/static/assets/embedded/site-administration/images/datacache_configuration.png#max-width=100%)
 
 2. In `Redis` mode, find the connection string and test connection options. It will help to check whether it is a valid connection string or not.
 
-    ![Redis test connection](/bold-bi-docs/static/assets/embedded/site-administration/images/Redis_Mode.png#max-width=70%)
+    ![Redis test connection](/static/assets/embedded/site-administration/images/Redis_Mode.png#max-width=70%)
 
 3. The data refreshed time is provided on the dashboard view page. Disable the data refreshed time by clicking the checkbox.
 
-    ![DataCache refreshed time](/bold-bi-docs/static/assets/embedded/site-administration/images/display_refresh_time.png#max-width=70%)
+    ![DataCache refreshed time](/static/assets/embedded/site-administration/images/display_refresh_time.png#max-width=70%)
 
 4. By clicking the clear cache option, all dashboard cached memory should be cleared when the data cache is in an ON state.
 
-    ![Clear datacache](/bold-bi-docs/static/assets/embedded/site-administration/images/clear_cache.png#max-width=70%)
+    ![Clear datacache](/static/assets/embedded/site-administration/images/clear_cache.png#max-width=70%)
 
 >**NOTE:** `Clear cache` option is visible only when the cache is present.
 

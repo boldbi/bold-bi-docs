@@ -14,7 +14,7 @@ This section briefly explains the steps involved in creating a new site in Bold 
 
 You can create another site in Bold BI Enterprise application by clicking the `Create Site` button in site management module.
 
-![Create Site](/bold-bi-docs/static/assets/embedded/multi-tenancy/images/create-button.png#max-width=95%)
+![Create Site](/static/assets/embedded/multi-tenancy/images/create-button.png#max-width=95%)
 
 This step holds the site details such as tenant type, name, domain, and identifier. The site identifier should be unique and it is a part of your site URL. You can create a site using custom domains too.
 
@@ -26,7 +26,7 @@ Based on branding chosen, following information will be copied to the tenant.
 
  Otherwise, default images and values will be used for the tenant branding.
 
-![Site Registration](/bold-bi-docs/static/assets/embedded/multi-tenancy/images/site-creation.png#max-width=45%)
+![Site Registration](/static/assets/embedded/multi-tenancy/images/site-creation.png#max-width=45%)
 
 ## Select database 
 
@@ -39,9 +39,9 @@ The Data Store database gathers data from over 120 connectors and stores it loca
 The following options can be used to connect to an existing SQL Server instance:
 
 * By creating new `Bold Bi Site` database.  
-![Select Database](/bold-bi-docs/static/assets/embedded/multi-tenancy/images/select-database.png#max-width=45%)
+![Select Database](/static/assets/embedded/multi-tenancy/images/select-database.png#max-width=45%)
 * By choosing one of the database from `Select a Database` drop down for creating Bold BI Server tables in that database.  
-![Select Database ExistingDb](/bold-bi-docs/static/assets/embedded/multi-tenancy/images/select-database-existing.png#max-width=45%)
+![Select Database ExistingDb](/static/assets/embedded/multi-tenancy/images/select-database-existing.png#max-width=45%)
 
 > **NOTE:**  The credentials that is given to connect to the SQL Server instance must have permissions to
 * Create Database 
@@ -61,7 +61,7 @@ Configure a single database for Bold BI and Data Store.
 
 The site's details, dashboards, data store, users, and their access permissions are all stored in a single database with this configuration.
 
-![Simple Mode](/bold-bi-docs/static/assets/embedded/multi-tenancy/images/simple-mode.png)
+![Simple Mode](/static/assets/embedded/multi-tenancy/images/simple-mode.png)
 
 ### Advanced mode
 
@@ -71,21 +71,21 @@ Dashboards, users, and their access permissions are all stored in the Bold BI da
 
 The authentication information and data collected from SQL and REST data sources are stored in the Data Store database.
 
-![Advanced Mode](/bold-bi-docs/static/assets/embedded/multi-tenancy/images/advanced-mode.png)
+![Advanced Mode](/static/assets/embedded/multi-tenancy/images/advanced-mode.png)
 
 ## Select storage
 
 You need to provide the storage type as either file storage or blob storage, in which Bold BI application will store the resources, contents, and logs. For more information, please refer to this [link](/embedded-bi/faq/what-all-are-the-files-and-folders-will-be-generated-in-the-installed-machine/).
 
-![File storage type](/bold-bi-docs/static/assets/embedded/multi-tenancy/images/select-storage-file.png#max-width=45%)
+![File storage type](/static/assets/embedded/multi-tenancy/images/select-storage-file.png#max-width=45%)
 
-![Blob storage type](/bold-bi-docs/static/assets/embedded/multi-tenancy/images/select-storage-blob.png#max-width=45%)
+![Blob storage type](/static/assets/embedded/multi-tenancy/images/select-storage-blob.png#max-width=45%)
 
 ## Configure Isolation code and Custom Attribute in site 
 
 You can skip this configuration directly by clicking `Next` button or you can configure the isolation code or custom attribute or can configure both and then proceed with the Next.
 
-![Skip configure Isolation code and Custom Attribute](/bold-bi-docs/static/assets/embedded/multi-tenancy/images/configure-isolation-and-attribute.png#max-width=45%)
+![Skip configure Isolation code and Custom Attribute](/static/assets/embedded/multi-tenancy/images/configure-isolation-and-attribute.png#max-width=45%)
 
 ### Isolation code
 
@@ -97,7 +97,7 @@ This can be set by the UMS admin for a site in the site details page. Learn more
 
 Attributes are name-value pairs that are associated with users, groups, and the sites (tenants).
 
-![Configure Custom Attribute](/bold-bi-docs/static/assets/embedded/multi-tenancy/images/custom-attribute.png#max-width=45%)
+![Configure Custom Attribute](/static/assets/embedded/multi-tenancy/images/custom-attribute.png#max-width=45%)
 
 Name – Name of the attribute.
 
@@ -122,6 +122,6 @@ The selected users have the following permissions:
 
 After selecting the user, proceed with `Create and launch site`.
 
-![Select Administrator](/bold-bi-docs/static/assets/embedded/multi-tenancy/images/select-administrator.png#max-width=45%)
+![Select Administrator](/static/assets/embedded/multi-tenancy/images/select-administrator.png#max-width=45%)
 
 The selected admin user(s) can access the resources and manage users, groups, and their permissions in the corresponding site alone.

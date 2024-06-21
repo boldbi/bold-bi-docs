@@ -19,41 +19,41 @@ Or
 
 For example, the name text of the Grid widget as: `Ship Country` - `{{:ShipCountry}}`.
 
-![Name property](/bold-bi-docs/static/assets/embedded/visualizing-data/working-with-widgets/images/configuringlabelparameters_header.PNG)
+![Name property](/static/assets/embedded/visualizing-data/working-with-widgets/images/configuringlabelparameters_header.PNG)
 
 Now, the dashboard will show the label parameter for all countries like `Ship Country - All`
 
-![All parameters](/bold-bi-docs/static/assets/embedded/visualizing-data/working-with-widgets/images/configuringlabelparameters_allparameters.PNG)
+![All parameters](/static/assets/embedded/visualizing-data/working-with-widgets/images/configuringlabelparameters_allparameters.PNG)
 
 You can select the required country to display by selecting the country name in the grid widget. Based on the selected country, the values will be displayed on the widget.
 
-![Particular name](/bold-bi-docs/static/assets/embedded/visualizing-data/working-with-widgets/images/configuringlabelparameters_particularname.PNG)
+![Particular name](/static/assets/embedded/visualizing-data/working-with-widgets/images/configuringlabelparameters_particularname.PNG)
 
 You can also use label widget to configure the label parameters.
 
 Drag and drop the label widget into the design pane and click the edit label to add the label parameters.
 
-![Edit label](/bold-bi-docs/static/assets/embedded/visualizing-data/working-with-widgets/images/configuringlabelparameters_editlabel.PNG)
+![Edit label](/static/assets/embedded/visualizing-data/working-with-widgets/images/configuringlabelparameters_editlabel.PNG)
 
 While previewing the dashboard, initially the parameter of the ship country will be shown as `All` in the label widget.
 
-![Label all](/bold-bi-docs/static/assets/embedded/visualizing-data/working-with-widgets/images/configuringlabelparameters_labelall.PNG)
+![Label all](/static/assets/embedded/visualizing-data/working-with-widgets/images/configuringlabelparameters_labelall.PNG)
 
 While selecting the particular country, it will show that country name in the label widget.
 
-![Label in specified data](/bold-bi-docs/static/assets/embedded/visualizing-data/working-with-widgets/images/configuringlabelparameters_labelinspecifieddata.PNG)
+![Label in specified data](/static/assets/embedded/visualizing-data/working-with-widgets/images/configuringlabelparameters_labelinspecifieddata.PNG)
 
 You can add the data source before the parameters in the `Name` of the properties tab, when more than one data source is present in the dashboard.
 
-![Using data source](/bold-bi-docs/static/assets/embedded/visualizing-data/working-with-widgets/images/configuringlabelparameters_usingdatasource.PNG)
+![Using data source](/static/assets/embedded/visualizing-data/working-with-widgets/images/configuringlabelparameters_usingdatasource.PNG)
 
 While previewing the dashboard, initially the values of parameters will be shown as `All`.
 
-![Result](/bold-bi-docs/static/assets/embedded/visualizing-data/working-with-widgets/images/configuringlabelparameters_result.PNG)
+![Result](/static/assets/embedded/visualizing-data/working-with-widgets/images/configuringlabelparameters_result.PNG)
 
 While selecting the particular country, you can show that country name in the widget.
 
-![Specified data](/bold-bi-docs/static/assets/embedded/visualizing-data/working-with-widgets/images/configuringlabelparameters_specifieddata.PNG)
+![Specified data](/static/assets/embedded/visualizing-data/working-with-widgets/images/configuringlabelparameters_specifieddata.PNG)
 
 ## Functions supported in label parameters
 

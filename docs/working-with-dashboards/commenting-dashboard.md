@@ -15,4 +15,4 @@ You can comment over a dashboard in the site. You can toggle this setting throug
 
 To enable comments on dashboard, go to the `Properties Tab` and enable the `Enable Commenting` option. By default, this option is enabled.
 
-![Enable Comments for Dashboard](/bold-bi-docs/static/assets/embedded/working-with-dashboards/images/commenttinganddashboardwidget_dashboardmenu.PNG)
+![Enable Comments for Dashboard](/static/assets/embedded/working-with-dashboards/images/commenttinganddashboardwidget_dashboardmenu.PNG)

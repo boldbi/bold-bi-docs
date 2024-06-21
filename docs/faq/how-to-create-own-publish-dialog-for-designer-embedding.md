@@ -16,7 +16,7 @@ Publish or Save dialog has been created and used in dashboard designer embedding
 
 2. Provide your embed properties details in the `EmbedProperties.cs` file, then run your application.
 
-    ![AddEmbedProperties](/bold-bi-docs/static/assets/embedded/faq/images/add_embed_properties.png)
+    ![AddEmbedProperties](/static/assets/embedded/faq/images/add_embed_properties.png)
 
     <meta charset="utf-8"/>
     <table>
@@ -50,38 +50,38 @@ Publish or Save dialog has been created and used in dashboard designer embedding
 
 3. To open your own Publish dialog, use the `actionBegin` event while creating the Bold BI object as follows.
 
-    ![DefineActionBegin](/bold-bi-docs/static/assets/embedded/faq/images/actionbegin_define.png)
+    ![DefineActionBegin](/static/assets/embedded/faq/images/actionbegin_define.png)
 
 4. While clicking the `Publish` button from the designer, the actionBegin event would be triggered with the type value as `PublishAsAction`, where the dialog has been created using EJ2 controls(Dropdown, Textbox, and Button).
 
-    ![ClickPublishDropdown](/bold-bi-docs/static/assets/embedded/faq/images/click_publish_dropdown.png)
+    ![ClickPublishDropdown](/static/assets/embedded/faq/images/click_publish_dropdown.png)
 
  5. To get the categories information such as category name and category id, the `getDashboardCategories()` method has been called as follows. For more information, see [getDashboardCategories()](/embedded-bi/javascript-based/api-reference/methods/#getdashboardcategories).
 
-    ![CreatePublishPanel](/bold-bi-docs/static/assets/embedded/faq/images/call_get_dashboard_category.png)
+    ![CreatePublishPanel](/static/assets/embedded/faq/images/call_get_dashboard_category.png)
 
 6. Once you get the category list, bind to the DropdownList of the `Select Category`, and it will appear as a selection option.
 
-    ![SelectCategoryDropDown](/bold-bi-docs/static/assets/embedded/faq/images/popup_select_category_dropdown.png)
+    ![SelectCategoryDropDown](/static/assets/embedded/faq/images/popup_select_category_dropdown.png)
 
-    ![ShowListCategory](/bold-bi-docs/static/assets/embedded/faq/images/select_category_dropdown.png)
+    ![ShowListCategory](/static/assets/embedded/faq/images/select_category_dropdown.png)
 
 7. A new popup has been created for creating a new category, which will appear when clicking the `add` icon in the publish dialog.
 
-     ![CreateNewpopup](/bold-bi-docs/static/assets/embedded/faq/images/click_add_button.png)
+     ![CreateNewpopup](/static/assets/embedded/faq/images/click_add_button.png)
          
 8. Get the inputs of the `category Name` and `Description` from creating category dialog and creating a new category using the `createDashboardCategory()` method available in Bold BI. For more information, see [createDashboardCategory()](/embedded-bi/javascript-based/api-reference/methods/#createdashboardcategory).
 
-    ![ClickSaveCategory](/bold-bi-docs/static/assets/embedded/faq/images/save_new_category.png)
+    ![ClickSaveCategory](/static/assets/embedded/faq/images/save_new_category.png)
 
-    ![SaveNewCategory](/bold-bi-docs/static/assets/embedded/faq/images/popup_add_category.png)
+    ![SaveNewCategory](/static/assets/embedded/faq/images/popup_add_category.png)
 
 9. For saving or publishing the dashboard with given details, call the `saveDashboard()` method by passing the `dashboardName`, `categoryId`, `categoryName`, and `description` as parameters as follows. For more information, see [saveDashboard()](/embedded-bi/javascript-based/api-reference/methods/#savedashboard).
 
-    ![SaveDashboard](/bold-bi-docs/static/assets/embedded/faq/images/popup_publish_button.png)
+    ![SaveDashboard](/static/assets/embedded/faq/images/popup_publish_button.png)
 
-    ![ClickPublish](/bold-bi-docs/static/assets/embedded/faq/images/publish_dashboard.png)
+    ![ClickPublish](/static/assets/embedded/faq/images/publish_dashboard.png)
 
 10. Now, your new dashboard will be published into a respective category. The same method will be used to `Publish` the existing dashboard and `PublishAs` the new dashboard from the existing one.
 
-    ![OpenPublishDialog](/bold-bi-docs/static/assets/embedded/faq/images/publish_dialog_open.png)
+    ![OpenPublishDialog](/static/assets/embedded/faq/images/publish_dialog_open.png)

@@ -8,7 +8,7 @@ documentation: ug
  
 # Login failed for user in Windows Authentication mode
 When connecting the SQL Server Windows Authentication mode in Bold BI, it will throw the following error
-![login-failed](/bold-bi-docs/static/assets/embedded/faq/images/login-failed-user.png)
+![login-failed](/static/assets/embedded/faq/images/login-failed-user.png)
  
 ## Why this issue occurred
 `NT AUTHORITY/SYSTEM` is not added in IIS/IIS EXPRESS  to access SQL Server Windows Authentication mode.
@@ -18,11 +18,11 @@ When connecting the SQL Server Windows Authentication mode in Bold BI, it will t
 In Microsoft SQL Server Management Studio, do the following in the Server.
  
 1.  Right click on "Login" and select `New Login` to add respective login into SQL Server.
-    ![add-login](/bold-bi-docs/static/assets/embedded/faq/images/add-new-login.png)
+    ![add-login](/static/assets/embedded/faq/images/add-new-login.png)
  
 2.  Click on "Search" button, then select `Advanced -> Find Now -> SYSTEM` in the newly opened windows. 
-    ![login-search](/bold-bi-docs/static/assets/embedded/faq/images/login-window.png)
+    ![login-search](/static/assets/embedded/faq/images/login-window.png)
  
-    ![authority-system-add](/bold-bi-docs/static/assets/embedded/faq/images/add-system.png)  
+    ![authority-system-add](/static/assets/embedded/faq/images/add-system.png)  
  
 3.  Then click "OK" to add the login `NT AUTHORITY/SYSTEM`. Once it was added, we can access Windows authentication mode in Bold BI. 

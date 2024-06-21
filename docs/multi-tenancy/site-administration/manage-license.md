@@ -23,11 +23,11 @@ Please choose your preferred mode to update the license.
 
 In the Manage license page, click `Check License`.
    
-   ![License Update Settings](/bold-bi-docs/static/assets/embedded/multi-tenancy/images/manage-license-page.png#max-width=95%)
+   ![License Update Settings](/static/assets/embedded/multi-tenancy/images/manage-license-page.png#max-width=95%)
 
 From the login pop-up, please login with your Bold ID account linked with your Bold BI subscription.
    
-   ![License Update Login Popup](/bold-bi-docs/static/assets/embedded/multi-tenancy/images/update-license-login-popup.png#max-width=95%)
+   ![License Update Login Popup](/static/assets/embedded/multi-tenancy/images/update-license-login-popup.png#max-width=95%)
 
 Once, you logged in successfully, the license will be updated in the application.
 
@@ -37,15 +37,15 @@ If you want to update the license in firewall restricted environments, you can u
 
 Click on `Upload` option to upload your license file.
 
-![Unlock key option](/bold-bi-docs/static/assets/embedded/multi-tenancy/images/license-upload-option.png#max-width=95%)
+![Unlock key option](/static/assets/embedded/multi-tenancy/images/license-upload-option.png#max-width=95%)
 
 Select your license file using the below option.
 
-![Select Unlcok key file ](/bold-bi-docs/static/assets/embedded/multi-tenancy/images/license-upload-dialog.png#max-width=95%)
+![Select Unlcok key file ](/static/assets/embedded/multi-tenancy/images/license-upload-dialog.png#max-width=95%)
 
 Once the unlock key is uploaded, click the **Update License** button for updating the license.
 
-![Upload License](/bold-bi-docs/static/assets/embedded/multi-tenancy/images/upload-license.png#max-width=95%)
+![Upload License](/static/assets/embedded/multi-tenancy/images/upload-license.png#max-width=95%)
 
 ### Possible errors cases and their solution:
 

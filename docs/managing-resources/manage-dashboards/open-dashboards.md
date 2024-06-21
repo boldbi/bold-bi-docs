@@ -17,6 +17,6 @@ Dashboards that are accessible by the user depending on the user's permission is
 
 Click on the Dashboard Name in the list to open it.
 
-![Manage Dashboards](/bold-bi-docs/static/assets/embedded/managing-resources/manage-dashboards/images/manage-Dashboards.png#width=65%)
+![Manage Dashboards](/static/assets/embedded/managing-resources/manage-dashboards/images/manage-Dashboards.png#width=65%)
 
 Dashboards are opened in our embedded Dashboard Viewer and Dashboards can also be exported in image format.

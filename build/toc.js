@@ -10,7 +10,7 @@ var pathNames=['overview','setup','application-startup',
 'working-with-data-source','visualizing-data', 'working-with-dashboards','multi-tenancy', 'oauth-configuration',
 'security', 'admin-utility', 'site-administration','managing-resources', 'manage-permissions', 'rebranding', 'migration-utility',
 'localization', 'user-interface-customization', 'data-security-configuration','security-configuration', 'manage-webhooks', 
-'accessing-through-mobile-app','white-labeling','rest-api-reference', 'responsive-visualizations', 'faq'];
+'accessing-through-mobile-app','white-label-boldbi-mobile-app','rest-api-reference', 'responsive-visualizations', 'faq'];
 const isHtml = 'html';
 function generateToc() {
     let Files = glob.sync('./docs/summary.json');

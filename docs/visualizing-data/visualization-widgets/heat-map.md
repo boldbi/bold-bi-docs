@@ -14,7 +14,7 @@ documentation: ug
 
 *Figure: Heatmap visualization after various customizations*
 
-![Customized Heatmap](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/formattedresult.png)
+![Customized Heatmap](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/formattedresult.png)
 
 ## How to configure the data table to Heatmap widget
 
@@ -28,23 +28,23 @@ The following steps explains about data configuration of the Heatmap.
 
 1.   Drag and drop the `Heatmap` control icon from the toolbox into the design panel. You can find control in a toolbox by search.
 
-![Adding Heatmap](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/drop-widget.png)
+![Adding Heatmap](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/drop-widget.png)
 
 2.	Resize the widget as required.
 
-![Resizing Heatmap](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/resizing.png)
+![Resizing Heatmap](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/resizing.png)
 
 3.	Click the `Properties` icon in the configuration panel.
 
-![Properties click](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/designerpropertiesbutton.png)
+![Properties click](/static/assets/embedded/visualizing-data/visualization-widgets/images/designerpropertiesbutton.png)
 
 4.	The properties panel of the widget will be displayed as shown in the following screenshot. Now, switch to the `ASSIGN DATA` tab.
 
-![Properties pane](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/propertypanel.png)
+![Properties pane](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/propertypanel.png)
 
 5.	The data tab will be opened with available columns from the connected data source.
 
-![Available fields list](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/assign-data.png)
+![Available fields list](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/assign-data.png)
 
 ### Step 2: Add a measures and dimensions in assign data. 
 
@@ -52,7 +52,7 @@ The following steps explains about data configuration of the Heatmap.
 
 Bind column by dragging and dropping the element from sections to `values.`
 
-![Value fields](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/field-value.png)
+![Value fields](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/field-value.png)
 
 > **NOTE:**  
 * The field added in this section will act as a measure value. 
@@ -62,7 +62,7 @@ Bind column by dragging and dropping the element from sections to `values.`
 
 Drag and drop the elements from sections to `X-Axis` section.
 
-![X Axis fields](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/x-field.png)
+![X Axis fields](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/x-field.png)
 
 > **NOTE:** 
 * The field added in this section will act as a dimension value. 
@@ -72,7 +72,7 @@ Drag and drop the elements from sections to `X-Axis` section.
 
 Drag and drop the elements from sections to `Y-Axis` section.
 
-![Y-Axis fields](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/y-field.png)
+![Y-Axis fields](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/y-field.png)
 
 > **NOTE:** 
 * The field added in this section will act as a dimension value. 
@@ -80,17 +80,17 @@ Drag and drop the elements from sections to `Y-Axis` section.
 
 *Image: Heatmap widget after configuring the mandatory fields.*
 
-![Configured Heatmap view](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/configure-heatmap.png)
+![Configured Heatmap view](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/configure-heatmap.png)
 
 #### Size section
 
 Drag and drop the elements from sections to `size` section. It will define the size of the bubble in the heatmap. Also, it is an optional section. 
 
-![Size fields](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/field-size.png)
+![Size fields](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/field-size.png)
 
 *Image: Heatmap widget after configuring the size field*
 
-![Size customized Heatmap](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/heatmap-size.png)
+![Size customized Heatmap](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/heatmap-size.png)
 
 #### Tooltip section 
 
@@ -104,48 +104,48 @@ The following screenshots shows the various settings menu options based on the t
 
 **Measure field in values**
 
-![Settings Menu - Measure fields](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/measure-field.png)
+![Settings Menu - Measure fields](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/measure-field.png)
 
 **Dimension field in value** 
 
-![Settings Menu - Dimensions](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/dimension-field.png)
+![Settings Menu - Dimensions](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/dimension-field.png)
 
 
 #### Renaming fields
 
 The configured field names can be edited by using the `Rename` option provided in the settings menu.
 
-![Rename ](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/rename.png)
+![Rename ](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/rename.png)
 
 #### Changing the aggregation type
 
 You can change the `aggregation type` of the `measure` section from the settings menu as shown in the following screenshot. Refer to [this section](/embedded-bi/visualizing-data/working-with-widgets/aggregating-value-columns-based-on-type/) for more details.
 
-![Changing the aggregation type](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/aggregation-type.png)
+![Changing the aggregation type](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/aggregation-type.png)
 
 #### Filtering data
 
 You can use Filters to change the values by selecting the `Filter` option. For more details, refer to the [Measure filter](/embedded-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-measure-column) and [dimension filter](/embedded-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column).
 
-![Filtering data](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/data-filter.png)
+![Filtering data](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/data-filter.png)
 
 #### Measure formatting
 
 You can format the elements by selecting the `Format` option. For more details, refer to the [measure format](/embedded-bi/visualizing-data/working-with-widgets/formatting-measure-type-column/).
 
-![Measure formatting](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/data-format.png)
+![Measure formatting](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/data-format.png)
 
 #### Drill Down
 
 When the second value is added to the x-axis or y-axis section, the alert message will be shown.
 
-![Drill confirmation alert](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/drillalert.png)
+![Drill confirmation alert](/static/assets/embedded/visualizing-data/visualization-widgets/images/drillalert.png)
 
 Click `Yes` to enable the option. If you click `No,` then a single value will be added to the respected section( x-axis or y-axis).
 
 *Figure: Heat Map with a drilled view of the selected region.*
 
-![Drilled view](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/drilled-view.png)
+![Drilled view](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/drilled-view.png)
 
 ## How to format Heatmap widget
 
@@ -153,75 +153,75 @@ You can format the `Heatmap` for better illustration of the view that you requir
 
 ### General settings
 
-![General settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/property.png)
+![General settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/property.png)
 
 #### Name
 
 This allows you to set `title` for this Heatmap widget.
 
-![General settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/Name.png)
+![General settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/Name.png)
 
 #### Subtitle
 
 This allows you to set `subtitle` for this Heatmap widget. 
 
-![General settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/Subtitle.png)
+![General settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/Subtitle.png)
 
 #### Description
 
 This allows you to set brief explanation about this Heatmap widget.
 
-![General settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/Description.png)
+![General settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/Description.png)
 
 ### Cell settings
 
-![Cell settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/cellsettings.png)
+![Cell settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/cellsettings.png)
 
 If we uncheck this property, the value label color property will be hidden.
 
-![Cell settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/value-label.png)
+![Cell settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/value-label.png)
 
 #### Show Tooltip
 
 This option allows you to toggle the visibility of tooltip in a heat map.
 
-![General settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/tooltip.png)
+![General settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/tooltip.png)
 
 #### Show label
 
 This allows you to toggle the visibility of value labels.
 
-![Label](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/show-label.png)
+![Label](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/show-label.png)
 
 #### Label Color
 
 This allows you to change the color of the label.
 
-![Label Color](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/show-label-color.png)
+![Label Color](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/show-label-color.png)
 
-![Label Color](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/show-label-color-change.png)
+![Label Color](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/show-label-color-change.png)
 
 #### Cell radius
 
 This allows you to apply the specified radius to cell corners. The value ranges from 0 to 10. `The Default value is 3.`
 
-![Cell radius](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/cell-radius-settings.png)
+![Cell radius](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/cell-radius-settings.png)
 
-![Cell radius](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/cellradius.png)
+![Cell radius](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/cellradius.png)
 
 #### Cell border
 
 This allows you to toggle the visibility of the border surrounding the cell. The value ranges from 0 to 10. `Default value is 1.`
 
-![Cell border](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/cellborder-settings.png)
+![Cell border](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/cellborder-settings.png)
 
-![Cell border](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/cellborder.png)
+![Cell border](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/cellborder.png)
 
 ### Formatting
 
 You can change the color of the widget.
 
-![Formatting Color](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/formatting-color-settings.png)
+![Formatting Color](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/formatting-color-settings.png)
 
 #### Monochromatic
 
@@ -229,19 +229,19 @@ This allows you to configure a single-color palette whose saturation will be var
 
 #### Types
 
-![Color Types](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/monochromatic-types.png)
+![Color Types](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/monochromatic-types.png)
 
 **Across Table**: Monochromatic color applied based on the whole table minimum and maximum data values.
 
-![Across Table](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/across-table.png)
+![Across Table](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/across-table.png)
 
 **Column Wise**:Monochromatic color applied based on the individual column wise minimum and maximum data values.
 
-![Column Wise](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/column-wise.png)
+![Column Wise](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/column-wise.png)
 
 **Row Wise**: Monochromatic color applied based on the individual row wise minimum and maximum data values.
 
-![Row Wise](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/row-wise.png)
+![Row Wise](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/row-wise.png)
 
 #### Advanced setting
 
@@ -249,13 +249,13 @@ Select Advance setting to configure conditions and apply color to the cells base
 
 ### Legend settings
 
-![Legend settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/legendsettings.png)
+![Legend settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/legendsettings.png)
 
 #### Show legend
 
 This allows you to toggle the visibility of legend in the heatmap. By default, it will be disabled. 
 
-![Legend settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/legendsettings-show.png)
+![Legend settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/legendsettings-show.png)
 
 #### Legend Position
 
@@ -263,40 +263,40 @@ This option allows you to place the legend at the position of **Left, Right, Top
 
 ### X-axis settings
 
-![X- axis label - Toggled off](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/x-axis-settings.png)
+![X- axis label - Toggled off](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/x-axis-settings.png)
 
 #### Show axis label
 
 This allows you to enable the visibility of x-axis labels.
 
-![Show axis label - Toggled off](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/showaxis-label.png)
+![Show axis label - Toggled off](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/showaxis-label.png)
 
 #### Label Color
 
 This allows you to change the x-axis label color.
 
-![Axis Label color](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/x-axis-label-color.png)
+![Axis Label color](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/x-axis-label-color.png)
 
-![Axis Label color Option](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/x-label-color-option.png)
+![Axis Label color Option](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/x-label-color-option.png)
 
 
 #### Show axis title
 
 This allows you to enable the visibility of x-axis title.
 
-![Axis title](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/axistitle.png)
+![Axis title](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/axistitle.png)
 
 #### Axis title
 
 This allows you to edit the x-axis title for the heatmap. It will reflect in the x-axis title of the heatmap.
 
-![Axis title](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/edit-axis-title.png)
+![Axis title](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/edit-axis-title.png)
 
 #### Label rotation
 
 This allows you to define the rotation angle for x-axis labels to display.
 
-![Label rotation](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/label-rotate.png)
+![Label rotation](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/label-rotate.png)
 
 #### Label intersect action
 
@@ -304,13 +304,13 @@ This allows you to define the rotation angle for x-axis labels to display.
 
 This option did not trim the end of overlapping label in the axis.
 
-![None](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/none.png)
+![None](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/none.png)
 
 **Trim**
 
 This option trims the end of overlapping label in the axis.
 
-![Trim](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/trim.png)
+![Trim](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/trim.png)
 
 #### Enable Trim
 
@@ -320,19 +320,19 @@ This option allows you to trim x-axis labels based on the 'Maximum Label Width' 
 
 This option allows you to set a maximum width for the x-axis labels, and also it can be made customizable when the trim axis label option is enabled.
 
-![Maximum label width](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/maximum-label-width.png)
+![Maximum label width](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/maximum-label-width.png)
 
 #### Inversed axis
 
 This allows you to change the axis label’s placement order from left to right in the x-axis.
 
-![Inversed axis](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/inversedaxis.png)
+![Inversed axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/inversedaxis.png)
 
 #### Opposed axis
 
 This allows you to change the axis position from bottom to top in the x-axis.
 
-![Opposed axis](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/opposedaxis.png)
+![Opposed axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/opposedaxis.png)
 
 #### Sorting
 
@@ -340,37 +340,37 @@ This option allows you to perform sorting both x-axis and y-axis at the same tim
 
 X-axis sorting with 'Ascending' value.
 
-![Sorting](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/x-axis-sorting.png)
+![Sorting](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/x-axis-sorting.png)
 
 ### Y-axis settings
 
-![axis label](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/y-settings.png)
+![axis label](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/y-settings.png)
 
 #### Show axis label
 
 This allows you to enable the visibility of y-axis labels.
 
-![axis label](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/y-axis-settings.png)
+![axis label](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/y-axis-settings.png)
 
 #### Label Color
 
 This allows you to change the y-axis label color.
 
-![Axis Label color Option](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/y-label-color-option.png)
+![Axis Label color Option](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/y-label-color-option.png)
 
-![Axis Label color](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/y-axis-label-color.png)
+![Axis Label color](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/y-axis-label-color.png)
 
 #### Show axis title
 
 This allows you to enable the visibility of y-axis title.
 
-![axis title](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/y-axis-title.png)
+![axis title](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/y-axis-title.png)
 
 #### Axis title
 
 This allows you to edit the x-axis title for the Heatmap. It will reflect in the y-axis title of the Heatmap.
 
-![axis title](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/y-axis-title-edit.png)
+![axis title](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/y-axis-title-edit.png)
 
 #### Enable Trim
 
@@ -380,19 +380,19 @@ This option allows you to trim y-axis labels based on the 'Maximum Label Width' 
 
 This option allows you to set the maximum width for the y-axis labels and also it can be made customizable when the trim axis label option is enabled.
 
-![Maximum label width](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/y-axis-maximum-label-width.png)
+![Maximum label width](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/y-axis-maximum-label-width.png)
 
 #### Inversed axis
 
 This allows you to change the axis label’s placement order from bottom to top in the y-axis.
 
-![Inversed y-axis](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/inversed-axis-y.png)
+![Inversed y-axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/inversed-axis-y.png)
 
 #### Opposed axis
 
 This allows you to change the axis position from left to right in the y-axis.
 
-![Opposed y-axis](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/opposed-axis-y.png)
+![Opposed y-axis](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/opposed-axis-y.png)
 
 #### Sorting
 
@@ -400,17 +400,17 @@ This option allows you to perform sorting on both the x-axis and y-axis at the s
 
 Y-axis sorting with the 'Descending' value.
 
-![Sorting](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/y-axis-sorting.png)
+![Sorting](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/y-axis-sorting.png)
 
 ### Link
 
 To configure the linking to URL or dashboard with the widget using its settings. For more details, refer to the [Linking](/embedded-bi/visualizing-data/working-with-widgets/linking-urls-and-dashboards/).
 
-![Link](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/link.png)
+![Link](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/link.png)
 
 ### Filter 
 
-![Filter](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/filter.png)
+![Filter](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/filter.png)
 
 #### Act as master widget
 
@@ -434,17 +434,17 @@ In case, if you have the requirement to highlight any data based on some conditi
 
 1. In the properties pane, under the `Formatting` section, click the `Advanced Setting` radio button.
 
-![Advanced setting enable](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/advanced-settings.png)
+![Advanced setting enable](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/advanced-settings.png)
 
 2. This will open the `Conditional Formatting` dialog.
 
-![Conditional formatting dialog](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/conditionalformatting-dialog.png)
+![Conditional formatting dialog](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/conditionalformatting-dialog.png)
 
 3. Select the `mode` and enter the conditions as required and click the `Save` button to apply.
 
 4. Now, the widget visualization will be updated based on the conditions.
 
-![Heatmap with conditional formatting](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/formattedresult.png)
+![Heatmap with conditional formatting](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/formattedresult.png)
 
 Refer to the following sections for the detailed steps on using the [`Gradient`](/embedded-bi/visualizing-data/visualization-widgets/heat-map/#gradient) and [`Rule`](/embedded-bi/visualizing-data/visualization-widgets/heat-map/#rule-based-condition-mode) modes. 
 
@@ -476,7 +476,7 @@ If the region of Heatmap value is out of the specified range, then the color spe
 
 This allows you to customize the fill color of the Heatmap based on one or more numerical / text conditions.
 
-![Rule mode](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/rulemode.png)
+![Rule mode](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/rulemode.png)
 
 #### Condition name
 
@@ -486,7 +486,7 @@ You can give a meaningful name to the applied conditions.
 
 Choose the condition for measure field from the highlighted conditions.
 
-![Condition type](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/conditiontype.png)
+![Condition type](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/conditiontype.png)
 
 #### Value
 
@@ -500,13 +500,13 @@ Select the fill color for that condition using the color picker.
 
 Click add condition to specify add new condition. 
 
-![Add rules](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/addrules.png)
+![Add rules](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/addrules.png)
 
 #### Delete condition
 
 Click the delete button to remove the existing condition. 
 
-![Delete rules](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/remove-rules.png)
+![Delete rules](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/remove-rules.png)
 
 ## Cohort Visualization
 
@@ -518,15 +518,15 @@ Cohort visualization examines the outcomes of predetermined groups, called cohor
 
 2. Go to the `Formatting section` and change the drop-down value to `Row Wise.`
 
-![Formatting Section](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/formatting-section.png)
+![Formatting Section](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/formatting-section.png)
 
-![Cohort Visualization](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/cohorot_visulization.png)
+![Cohort Visualization](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/cohorot_visulization.png)
 
 Above screenshot shows cohort visualization in heatmap widget.
 
 ### Container Appearance
 
-![Container Appearance](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/container-appearance.png)
+![Container Appearance](/static/assets/embedded/visualizing-data/visualization-widgets/images/container-appearance.png)
 
 ### Title Alignment
 
@@ -586,7 +586,7 @@ This allows you to toggle the visibility of the `shadow` surrounding the widget.
 
 ### Container actions
 
-![Container Actions](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/container-actions.png)
+![Container Actions](/static/assets/embedded/visualizing-data/visualization-widgets/images/container-actions.png)
 
 #### Show Header
 
@@ -632,12 +632,12 @@ We hide the widget elements based on the size of the widget for better readabili
 
 When the Heatmap has been placed with less than 20 columns chart y-axis title and y-axis label will be hidden.
 
-![Widget Element](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/Y-axis.png)
+![Widget Element](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/Y-axis.png)
 
 When the Heatmap is placed with less than 7 rows, the x-axis title and x-axis label, the legend will be hidden.
 
-![Widget Element](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/X-axis.png)
+![Widget Element](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/X-axis.png)
 
 When the Heatmap is placed with less than 16 columns and less than 7 rows, the legend will be hidden.
 
-![Widget Element](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/legend.png)
+![Widget Element](/static/assets/embedded/visualizing-data/visualization-widgets/images/heat-map/legend.png)

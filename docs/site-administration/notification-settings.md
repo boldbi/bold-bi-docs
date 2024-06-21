@@ -18,7 +18,7 @@ Notifications can be set up by the `System Administrator` in the notification se
 Admin can manage application notification preferences by enabling or disabling email and system notifications in site notification settings.
 If settings are disabled in the site notification settings, user notification settings will be disabled, and they cannot change their notification setting preference.
 
-![Site notification settings](/bold-bi-docs/static/assets/embedded/site-administration/images/admin-notification-settings.png)
+![Site notification settings](/static/assets/embedded/site-administration/images/admin-notification-settings.png)
 
 There are two different types of notification.
 * Email Notifications
@@ -28,22 +28,22 @@ There are two different types of notification.
 
  Users will be notified of activities by email based on the settings configured here.
 
- ![Admin email notification settings](/bold-bi-docs/static/assets/embedded/site-administration/images/admin-email-notifications.png)
+ ![Admin email notification settings](/static/assets/embedded/site-administration/images/admin-email-notifications.png)
 
 
 ### System notifications
 
 System notifications will notify users of activity on comments based on the settings configured here.
 
-![Admin system notification settings](/bold-bi-docs/static/assets/embedded/site-administration/images/admin-system-notifications.png)
+![Admin system notification settings](/static/assets/embedded/site-administration/images/admin-system-notifications.png)
 
 System notifications will appear in the bottom left corner above the user's profile picture, as shown in the following image.
 
-![Notifications section](/bold-bi-docs/static/assets/embedded/site-administration/images/notifications-icon.png)
+![Notifications section](/static/assets/embedded/site-administration/images/notifications-icon.png)
 
 Users can navigate to the particular comment by clicking the dashboard name in the notification section. To configure the user notification settings, users can navigate to the profile page by clicking settings.
 
-![Notifications section page](/bold-bi-docs/static/assets/embedded/site-administration/images/notifications-section.png)
+![Notifications section page](/static/assets/embedded/site-administration/images/notifications-section.png)
 
 ### List of notifications
 
@@ -63,7 +63,7 @@ Autowatch will be enabled for a comment on dashboards whenever you add comments 
 
 Apart from autowatch on created and accessible items, users can also watch a specific item.
 
-![Specific watch](/bold-bi-docs/static/assets/embedded/site-administration/images/specific-watch.png)
+![Specific watch](/static/assets/embedded/site-administration/images/specific-watch.png)
 
 Users can toggle between a watch and unwatch for a dashboard comment at any time.
 
@@ -82,7 +82,7 @@ Enabling this option will send an email to the user about user synchronization s
 ### Disable user preference
 Admin can choose whether to allow or restrict user notification preferences, found in the profile page `Notifications` tab. Enabling the `Disable User Preference ` will disable all user notification preference options and overrides them with application notification settings.
 
-![Disale user preference](/bold-bi-docs/static/assets/embedded/site-administration/images/disable-user-notification-preference.png#width=55%)
+![Disale user preference](/static/assets/embedded/site-administration/images/disable-user-notification-preference.png#width=55%)
 
 ## User notification settings
 

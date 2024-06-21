@@ -18,8 +18,8 @@ Follow these steps to render the HTML content inside the grid cell:
 
     Here, you can use any HTML tag instead of the paragraph tag.
 
-    ![html expression](/bold-bi-docs/static/assets/embedded/faq/images/html-expression.png)
+    ![html expression](/static/assets/embedded/faq/images/html-expression.png)
 
 2. Then, you need to [configure](https://help.boldbi.com/embedded-bi/working-with-data-source/transforming-data/configuring-expression-columns/#configuring-expression-column-in-widgets) this expression column to your grid widget. Once, you bind the generated expression in your grid, the HTML content is rendered correctly.
 
-    ![html output](/bold-bi-docs/static/assets/embedded/faq/images/html-output.png)
+    ![html output](/static/assets/embedded/faq/images/html-output.png)

@@ -15,17 +15,17 @@ Bold BI Enterprise Edition can be hosted in an IIS express and IIS. To run the B
 
 2. Enable `Internet Information Services`.
 
-   ![Control Panel](/bold-bi-docs/static/assets/embedded/faq/images/windows-features.png)  
+   ![Control Panel](/static/assets/embedded/faq/images/windows-features.png)  
 
 3. Expand the `.NET Framework 4.5 Advanced Services` and enable the ASP.NET 4.5 feature.
 
    > **NOTE:** You should use Microsoft .NET Framework 4.5 or higher version. Learn more [here](/bold-bi/on-premise/overview#prerequisites).  
 
-   ![Roles and Features](/bold-bi-docs/static/assets/embedded/faq/images/ms-framework.png)
+   ![Roles and Features](/static/assets/embedded/faq/images/ms-framework.png)
 
 4. Expand the `Internet Information Services` feature and verify that the required IIS component listed [here](/embedded-bi/faq/features-needed-to-enable-in-iis-to-run-bold-bi-in-win-client-os/#required-web-server-components) are selected. Click `OK`.
 
-   ![Roles and Features](/bold-bi-docs/static/assets/embedded/faq/images/iis-features-client.png)
+   ![Roles and Features](/static/assets/embedded/faq/images/iis-features-client.png)
 
 ## Required web server components
 

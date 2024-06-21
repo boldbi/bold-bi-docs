@@ -15,7 +15,7 @@ Use password authentication to generate an access token when the user password i
 
 Generate an access token with password authentication using the `username`, `password`, and `grant_type`.
 
-![Token Generation Body Password Auth](/bold-bi-docs/static/assets/embedded/faq/images/access-token-body-pwd.png)
+![Token Generation Body Password Auth](/static/assets/embedded/faq/images/access-token-body-pwd.png)
 
 Please refer to this [link](https://help.boldbi.com/embedded-bi/rest-api-reference/v4.0/api-reference/#tag/Password-Authentication) for detailed information on how to generate an access token for Rest API using password authentication.
 
@@ -27,7 +27,7 @@ Use an embed secret authentication to generate an access token for <b>all users 
 
 Generate an access token with an embed secret authentication using the `username`, `embed_secret`, and `grant_type`.
 
-![Token Generation Body Embed Auth](/bold-bi-docs/static/assets/embedded/faq/images/access-token-body-embed.png)
+![Token Generation Body Embed Auth](/static/assets/embedded/faq/images/access-token-body-embed.png)
 
 Get the embed secret key from the embed settings page of the Bold BI Embed application. Please refer to this [link](/embedded-bi/site-administration/embed-settings/#get-embed-secret-code) to know where to get an embed secret key.
 

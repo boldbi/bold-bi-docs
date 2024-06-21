@@ -11,7 +11,7 @@ documentation: ug
 
   You can preview the currently opened dashboard by clicking the `Preview` at right corner in the tools pane.
   
-  ![Preview](/bold-bi-docs/static/assets/embedded/working-with-dashboards/preview-dashboards/images/preview.png)
+  ![Preview](/static/assets/embedded/working-with-dashboards/preview-dashboards/images/preview.png)
   
   The preview button can be visible across all window tab views in the Dashboard Designer, and it allows you to preview the dashboard from anywhere within the application.
   
@@ -19,35 +19,35 @@ documentation: ug
 
    The dashboard can be previewed using built-in dashboard viewer that is opened in the default web browser.
    
-   ![Dashboard preview](/bold-bi-docs/static/assets/embedded/working-with-dashboards/preview-dashboards/images/dashboardpreview.png)
+   ![Dashboard preview](/static/assets/embedded/working-with-dashboards/preview-dashboards/images/dashboardpreview.png)
    
    The dashboard viewer can be split into two sections such as `Title` and `Content` as shown in the following screenshot.
    
-   ![Title and content](/bold-bi-docs/static/assets/embedded/working-with-dashboards/preview-dashboards/images/titleandcontent.png)
+   ![Title and content](/static/assets/embedded/working-with-dashboards/preview-dashboards/images/titleandcontent.png)
    
    The `Title` section holds the dashboard title and description (viewed by clicking the `i` icon near to the title) that are set in the Dashboard Designer before publish.
    
-   ![Dashboard title](/bold-bi-docs/static/assets/embedded/working-with-dashboards/preview-dashboards/images/dashboardtitle.png)
+   ![Dashboard title](/static/assets/embedded/working-with-dashboards/preview-dashboards/images/dashboardtitle.png)
    
    The update and export operations of the dashboard can be handled at runtime by using the below highlighted icon.
    
-   ![Update dashboard](/bold-bi-docs/static/assets/embedded/working-with-dashboards/preview-dashboards/images/updatedashboard.png)
+   ![Update dashboard](/static/assets/embedded/working-with-dashboards/preview-dashboards/images/updatedashboard.png)
    
    The `Content` section holds the complete content of the dashboard design area in Dashboard Designer.
    
-   ![Dashboard content](/bold-bi-docs/static/assets/embedded/working-with-dashboards/preview-dashboards/images/dashboardcontent.png)
+   ![Dashboard content](/static/assets/embedded/working-with-dashboards/preview-dashboards/images/dashboardcontent.png)
    
    You can interact with dashboard widgets in the viewer and apply filter on top of other widgets based on the dashboard filters configuration made in the dashboard through Dashboard Designer.
 
    Each widget in the dashboard viewer is split into two sections such as `Title` and `Content`.
    
-   ![Widget title and content](/bold-bi-docs/static/assets/embedded/working-with-dashboards/preview-dashboards/images/widgettitleandcontent.png)
+   ![Widget title and content](/static/assets/embedded/working-with-dashboards/preview-dashboards/images/widgettitleandcontent.png)
    
    You can edit the title of the widget before giving preview.
    
    It also holds maximize, drop-down menu, and filter status options at right end as follows:
    
-   ![Maximize filter icon](/bold-bi-docs/static/assets/embedded/working-with-dashboards/preview-dashboards/images/maximizefiltericon.png)
+   ![Maximize filter icon](/static/assets/embedded/working-with-dashboards/preview-dashboards/images/maximizefiltericon.png)
 
 
 [Learn how to save your designed dashboard](/embedded-bi/working-with-dashboards/publish-dashboard/)

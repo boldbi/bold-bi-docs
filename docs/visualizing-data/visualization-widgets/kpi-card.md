@@ -16,11 +16,11 @@ The visualization of the KPI card widget is customizable, and you can format the
 
 *KPI Card series view:* 
 
-![KPI Card Series view](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/series-view.png)
+![KPI Card Series view](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/series-view.png)
 
 *KPI card single view:*
 
-![Single KPI Card](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/single-card.png)
+![Single KPI Card](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/single-card.png)
 
 ## How to configure data into KPI card 
 
@@ -32,37 +32,37 @@ After creating a data source, follow the given steps to configure the data into 
 
 1. Drag the `KPI Card` control icon from the tool box into the design panel. You can find the control in the tool box by search.
 
-![Drag and drop](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/drop-widget.png)
+![Drag and drop](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/drop-widget.png)
 
 2.	Resize the widget as required. 
 
-![Resize card](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/resizing-widget.png)
+![Resize card](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/resizing-widget.png)
 
 3.	Click the `properties` button as shown in the following image. 
 
-![ASSIGN DATA](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/designerpropertiesbutton.png)
+![ASSIGN DATA](/static/assets/embedded/visualizing-data/visualization-widgets/images/designerpropertiesbutton.png)
 
 4.	Now, the `properties pane` opens. 
 
-![Properties pane](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/properties-pane.png)
+![Properties pane](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/properties-pane.png)
 
 5.	Click `ASSIGN DATA`. The data pane will be opened with the  list of available `measures` and `dimensions` from the added data sources. 
 
-![Assign data click](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/assign-data-tab.png)
+![Assign data click](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/assign-data-tab.png)
 
 ### Actual value
 
 Drag the required field into the `Actual Values` section. 
 
-![Configure actual value](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/configure-actual-value.png)
+![Configure actual value](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/configure-actual-value.png)
 
 You can change the `aggregation type`, `filter`, and `format` the data using the options provided in the settings menu. To open the `settings` menu, click the `settings` icon. 
 
-![Settings menu](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/settings-menu.png)
+![Settings menu](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/settings-menu.png)
 
 Now, the menu will be shown.
 
-![Settings menu items](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/menu-lists.png)
+![Settings menu items](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/menu-lists.png)
 
 **Changing the aggregation type**: 
 
@@ -80,11 +80,11 @@ Select `Format` option to define the display format for the values in the column
 
 Drag the required field into the `target value` section.
 
-![Configure Target](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/configure-target-value.png)
+![Configure Target](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/configure-target-value.png)
 
 Now the KPI card widget will be rendered. 
 
-![Card view](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/configured-widget.png)
+![Card view](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/configured-widget.png)
 
 > **NOTE:**  The measure formatting option is not provided in the Target Value’s settings menu and the measure formatting applied for the actual value will also be applied to the target value. 
 
@@ -92,15 +92,15 @@ Now the KPI card widget will be rendered.
 
 Drag a dimension field into the series section to render a series of KPI Cards.
 
-![Configure Series](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/configure-series-value.png)
+![Configure Series](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/configure-series-value.png)
 
 Now, the KPI card will be rendered as shown in the following image. 
 
-![Series view](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/configured-widget-series-view.png)
+![Series view](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/configured-widget-series-view.png)
 
 You can filter and sort the records using the settings menu items. 
 
-![Settings options](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/settings-option.png)
+![Settings options](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/settings-option.png)
 
 **Sorting**: You can customize the `sorting` behavior of dimension fields in the KPI Card widget. You can also order them based on **alphabet** or **value**, **data source (default)**, or **field**. Refer to [here](/embedded-bi/visualizing-data/working-with-widgets/advanced-sorting/), for the detailed steps.
 
@@ -114,9 +114,9 @@ Refer to this [page](/embedded-bi/visualizing-data/working-with-widgets/configur
 
 You can use the `Sparkline` section to showcase the variation of measurement in the KPI Card widget.
 
-![Configure Sparkline](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/configure-sparkline.png)
+![Configure Sparkline](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/configure-sparkline.png)
 
-![Card with Sparkline](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/card-with-sparkline.png)
+![Card with Sparkline](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/card-with-sparkline.png)
 
 ### Image
 
@@ -128,21 +128,21 @@ In the following example, each country flag is displayed in the KPI card by conf
 
 Data screenshot 
 
-![Example data](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/sample-widget.png)
+![Example data](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/sample-widget.png)
 
 Follow the given steps to show the country image in the KPI card series:
 
 1. Configure the `Country Image` field into the `Image` section.
 
-![Configure Image](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/configure-image.png)
+![Configure Image](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/configure-image.png)
 
 2.	Make sure whether the `pattern` text is properly updated in the `Properties` pane image section.
 
-![Pattern](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/image-pattern.png)
+![Pattern](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/image-pattern.png)
 
 3.	Now, the widget will be rendered with image data.
 
-![Widget with Image](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/widget-with-image.png)
+![Widget with Image](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/widget-with-image.png)
 
 #### Partial image data 
 
@@ -150,7 +150,7 @@ If your data source contains the partial data of the URL means you need to enter
 
 For an example, consider the following data source. 
 
-![Example data](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/sample-for-partial-image.png)
+![Example data](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/sample-for-partial-image.png)
 
 It contains the Players name and part of their image URL in the above columns. 
 The full image URL for `Cristiano Ronaldo` is `https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Cristiano_Ronaldo_2018.jpg/345px-Cristiano_Ronaldo_2018.jpg` and the Player Image Column contains the information is `commons/thumb/8/8c/Cristiano_Ronaldo_2018.jpg/345px-Cristiano_Ronaldo_2018.jpg`. So you need to enter the URL as `https://upload.wikimedia.org/wikipedia/{0}` Where the **{0}** indicates the first field in the Image
@@ -162,15 +162,15 @@ For example, if you try to show the goals of each team and configure the player 
 
 *Configure Image section:*
 
-![Configure Image](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/configure-image-field.png)
+![Configure Image](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/configure-image-field.png)
 
 *Ensure pattern*
 
-![Ensure pattern](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/ensure-pattern.png)
+![Ensure pattern](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/ensure-pattern.png)
 
 *Series view*
 
-![Series view](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/image-in-series.png)
+![Series view](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/image-in-series.png)
 
 > **NOTE:** The image will be hidden automatically if the width of the KPI card is low. An information icon will display the image as highlighted in the following image.
 
@@ -178,9 +178,9 @@ For example, if you try to show the goals of each team and configure the player 
 
 Like the image option, you can configure the background image of the KPI Card.
 
-![Configure background](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/configure-background.png)
+![Configure background](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/configure-background.png)
 
-![Card with background](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/card-with-background.png)
+![Card with background](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/card-with-background.png)
 
 ## How to format KPI card 
 
@@ -194,11 +194,11 @@ To format the KPI card, follow the given steps:
 
 3.	Focus the KPI card and click the settings icon.
 
-![Settings icon click](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/settings-icon-click.png)
+![Settings icon click](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/settings-icon-click.png)
 
 4.	Now, the Properties pane opens. 
 
-![Opening properties pane](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/open-properties-pane.png)
+![Opening properties pane](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/open-properties-pane.png)
 
 ### General properties
 
@@ -218,11 +218,11 @@ This option allows you to provide the `description` about the KPI Card.
 
 **Header properties**
 
-![KPI card title](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/title.png)
+![KPI card title](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/title.png)
 
 **KPI card with the customized title, subtitle and description**
 
-![KPI card subtitle](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/subtitle.png)
+![KPI card subtitle](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/subtitle.png)
 
 ### Basic Settings
 
@@ -230,17 +230,17 @@ This option allows you to provide the `description` about the KPI Card.
 
 This option allows you to toggle the visibility of tooltip in a card.
 
-![Direction](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/tooltip.png)
+![Direction](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/tooltip.png)
 
 ### Color properties
 
-![Direction](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/color-properties.png)
+![Direction](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/color-properties.png)
 
 #### Direction
 
 You can set the value label status to `High is Good` or `Low is Good`. The default setting is `High is Good`. This option is enabled only when you configured the actual value and target value.
 
-![Direction](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/direction.png)
+![Direction](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/direction.png)
 
 #### Direction colors
 
@@ -258,11 +258,11 @@ By enabling the `advanced settings` in formatting, you can customize the color, 
 
 In the properties pane, check the `Advanced Setting` check box, which is located under the `formatting` section.
 
-![Enable advance settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/enable-advance-settings.png)
+![Enable advance settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/enable-advance-settings.png)
 
 This will open the `Conditional Formatting` dialog box. 
 
-![Conditional formatting](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/conditional-formatting.png)
+![Conditional formatting](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/conditional-formatting.png)
 
 #### Properties
 
@@ -281,35 +281,35 @@ You can customize more than one property using the rule based conditional format
 
 You can choose the field from the Based On section to apply the conditions from the highlighted drop-down. 
 
-![Based on field](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/based-on-field.png)
+![Based on field](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/based-on-field.png)
 
 #### Summary type 
 
 You can select the summary type for the selected measure field. 
 
-![Summary type](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/summary-type.png)
+![Summary type](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/summary-type.png)
 
 #### Value type
 
 The value type drop-down allows you to choose whether you are going to apply the direct value (specific number like 3 goals, order ID 10248 ) or percentage (values above 30% or 50 %). 
 
-![Value type](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/value-type.png)
+![Value type](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/value-type.png)
 
 #### Condition name
 
 You can give a meaningful name to the applied conditions using the highlighted text box. 
 
-![Condition name](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/condition-name.png)
+![Condition name](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/condition-name.png)
 
 #### Condition type
 
 Choose the condition for measure field from the highlighted conditions. 
 
-![Condition type](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/condition-type.png)
+![Condition type](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/condition-type.png)
 
 If you have selected the dimension as a based on field and want to use text condition, the following text-based conditions are available.
 
-![Dimension condition](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/dimension-condition.png)
+![Dimension condition](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/dimension-condition.png)
 
 > **NOTE:** The text-based condition type will be enabled only when the dimension configured in the series field is used as the based on field. 
 
@@ -327,15 +327,15 @@ For the dimensions, `case-sensitive` option is provided to choose whether the en
 
 Select the checkbox provided near by the options to customize the properties, and similarly click Font Style icons for applying them, as shown in the following screenshot.
 
-![Select properties](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/customize-properties.png)
+![Select properties](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/customize-properties.png)
 
 Figure: *The KPI card series view with the applied conditional formatting*.
 
-![KPI card after conditional formatting](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/formatted-result.png)
+![KPI card after conditional formatting](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/formatted-result.png)
 
 ### Title properties
 
-![Title properties](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/title-properties.png)
+![Title properties](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/title-properties.png)
 
 #### Show title
 
@@ -345,13 +345,13 @@ Allows you to choose whether the title needs to be shown or not in the KPI Card.
 
 The following screenshot shows the `title` for single card. 
 
-![Series Card Customization](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/title-series.png)
+![Series Card Customization](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/title-series.png)
 
 ### Hide title
 
 It allows you to `hide the title` by unchecking the show title property.
 
-![Hide Title](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/hide-title.png)
+![Hide Title](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/hide-title.png)
 
 #### Show title for single card
 
@@ -371,31 +371,31 @@ If we have created a dashboard with KPI card which can be viewed by different cl
 
 ### Auto font size at 3840 x 2160
 
-![Auto Font Size](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/autofontsize-resolution.png)
+![Auto Font Size](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/autofontsize-resolution.png)
 
 ### Auto font size at 1366 x 768
 
-![Auto Font Size](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/autofontsize-diff.png)
+![Auto Font Size](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/autofontsize-diff.png)
 
 ### Auto font size at 1920 x 1080
 
-![Auto Font Size](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/autofontsize.png)
+![Auto Font Size](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/autofontsize.png)
 
 #### Font size
 
 You can customize the font size of the KPI card title by unchecking `Auto Font Size`.
 
-![Single Card Title](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/title-single-card-properties.png)
+![Single Card Title](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/title-single-card-properties.png)
 
 Figure: **KPI card with customized title color and font size.**
 
-![Single Card Customization](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/title-single-card.png)
+![Single Card Customization](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/title-single-card.png)
 
 ### Series settings
 
 The `Series settings` option enabled only when you configure the **series** in `Assigned Data` tab.
 
-![Series Settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/series-settings.png)
+![Series Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/series-settings.png)
 
 ### Fixed rows and columns 
 
@@ -413,7 +413,7 @@ By enabling the `Column Count,` you can set the column count.
 
 ### Animation settings
 
-![Animation Property](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/animation-property.png)
+![Animation Property](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/animation-property.png)
 
 #### Enable animation
 
@@ -425,7 +425,7 @@ Animation duration property specifies how long the animation cycle should last. 
 
 ### KPI value properties
 
-![KPI Values](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/kpi-value-properties.png)
+![KPI Values](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/kpi-value-properties.png)
 
 #### Show value
 
@@ -444,7 +444,7 @@ The type drop-down allows you to choose the value which needs to be shown as the
 
 Figure: *KPI card with different KPI types.*
 
-![KPI types](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/kpi-value-types.png)
+![KPI types](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/kpi-value-types.png)
 
 #### Color option
 
@@ -460,25 +460,25 @@ If we have created a dashboard with KPI card which can be viewed by different cl
 
 ### Auto font size at 3840 x 2160
 
-![Auto Font Size](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/autofontsize-resolution.png)
+![Auto Font Size](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/autofontsize-resolution.png)
 
 ### Auto font size at 1366 x 768
 
-![Auto Font Size](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/autofontsize-diff.png)
+![Auto Font Size](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/autofontsize-diff.png)
 
 ### Auto font size at 1920 x 1080
 
-![Auto Font Size](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/autofontsize.png)
+![Auto Font Size](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/autofontsize.png)
 
 #### Font Size
 
 Provides the option to change the KPI value font size by unchecking `Auto Font Size`.
 
-![KPI Customized Font Size](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/kpi-valuecustomized.png)
+![KPI Customized Font Size](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/kpi-valuecustomized.png)
 
 ### Indicator properties
 
-![Indicator Properties](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/indicator-properties.png)
+![Indicator Properties](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/indicator-properties.png)
 
 #### Show icon
 
@@ -498,11 +498,11 @@ You can customize the indicator for the `high, low and neutral` values from the 
 
 Figure: *Selecting the shape for the indicators.* 
 
-![Choose indicator](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/choose-indicator.png)
+![Choose indicator](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/choose-indicator.png)
 
 Figure: **After customizing the indicator**
 
-![Custom indicator](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/custom-indicator.png)
+![Custom indicator](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/custom-indicator.png)
 
 ### Auto Font Size
 
@@ -514,25 +514,25 @@ If we have created a dashboard with KPI card which can be viewed by different cl
 
 ### Auto font size at 3840 x 2160
 
-![Auto Font Size](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/autofontsize-resolution.png)
+![Auto Font Size](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/autofontsize-resolution.png)
 
 ### Auto font size at 1366 x 768
 
-![Auto Font Size](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/autofontsize-diff.png)
+![Auto Font Size](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/autofontsize-diff.png)
 
 ### Auto font size at 1920 x 1080
 
-![Auto Font Size](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/autofontsize.png)
+![Auto Font Size](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/autofontsize.png)
 
 #### Font size
 
 Provides the option to change the font size of the indicators by unchecking `Auto Font Size`. 
 
-![Indicator font size](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/indicator-fontsize.png)
+![Indicator font size](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/indicator-fontsize.png)
 
 ### Left value properties
 
-![Left Value Properties](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/left-value-properties.png)
+![Left Value Properties](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/left-value-properties.png)
 
 #### Type
 
@@ -571,21 +571,21 @@ If we have created a dashboard with KPI card which can be viewed by different cl
 
 ### Auto font size at 3840 x 2160
 
-![Auto Font Size](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/autofontsize-resolution.png)
+![Auto Font Size](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/autofontsize-resolution.png)
 
 ### Auto font size at 1366 x 768
 
-![Auto Font Size](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/autofontsize-diff.png)
+![Auto Font Size](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/autofontsize-diff.png)
 
 ### Auto font size at 1920 x 1080
 
-![Auto Font Size](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/autofontsize.png)
+![Auto Font Size](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/autofontsize.png)
 
 #### Font size
 
 The option to change the left value font size by unchecking `Auto Font Size`. 
 
-![Left Value font size](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/leftvalue-fontsize.png)
+![Left Value font size](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/leftvalue-fontsize.png)
 
 #### Show caption
 
@@ -613,29 +613,29 @@ If we have created a dashboard with KPI card which can be viewed by different cl
 
 ### Auto font size at 3840 x 2160
 
-![Auto Font Size](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/autofontsize-resolution.png)
+![Auto Font Size](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/autofontsize-resolution.png)
 
 ### Auto font size at 1366 x 768
 
-![Auto Font Size](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/autofontsize-diff.png)
+![Auto Font Size](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/autofontsize-diff.png)
 
 ### Auto font size at 1920 x 1080
 
-![Auto Font Size](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/autofontsize.png)
+![Auto Font Size](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/autofontsize.png)
 
 #### Caption font size
 
 The option to change the left value caption font size by unchecking `Auto Font Size`.
 
-![Left caption Properties](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/left-caption-fontsize.png)
+![Left caption Properties](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/left-caption-fontsize.png)
 
 *After customizing the Left Value in KPI card*
 
-![Left Value](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/left-value.png)
+![Left Value](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/left-value.png)
 
 ### Right value properties
 
-![Right Value Properties](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/right-value-properties.png)
+![Right Value Properties](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/right-value-properties.png)
 
 #### Type
 
@@ -674,21 +674,21 @@ If we have created a dashboard with KPI card which can be viewed by different cl
 
 ### Auto font size at 3840 x 2160
 
-![Auto Font Size](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/autofontsize-resolution.png)
+![Auto Font Size](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/autofontsize-resolution.png)
 
 ### Auto font size at 1366 x 768
 
-![Auto Font Size](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/autofontsize-diff.png)
+![Auto Font Size](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/autofontsize-diff.png)
 
 ### Auto font size at 1920 x 1080
 
-![Auto Font Size](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/autofontsize.png)
+![Auto Font Size](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/autofontsize.png)
 
 #### Font size
 
 The option to change the right value font size by unchecking `Auto Font Size`.
 
-![Right Value Properties](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/right-value-fontsize.png)
+![Right Value Properties](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/right-value-fontsize.png)
 
 #### Show caption
 
@@ -716,29 +716,29 @@ If we have created a dashboard with KPI card which can be viewed by different cl
 
 ### Auto font size at 3840 x 2160
 
-![Auto Font Size](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/autofontsize-resolution.png)
+![Auto Font Size](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/autofontsize-resolution.png)
 
 ### Auto font size at 1366 x 768
 
-![Auto Font Size](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/autofontsize-diff.png)
+![Auto Font Size](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/autofontsize-diff.png)
 
 ### Auto font size at 1920 x 1080
 
-![Auto Font Size](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/autofontsize.png)
+![Auto Font Size](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/autofontsize.png)
 
 #### Caption font size
 
 The option to change the right value caption font size by unchecking `Auto Font Size`.
 
-![Right caption Properties](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/right-caption-fontsize.png)
+![Right caption Properties](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/right-caption-fontsize.png)
 
 *After customizing the Right Value in KPI card*
 
-![Right Value](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/right-value.png)
+![Right Value](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/right-value.png)
 
 ### Image properties
 
-![Image Properties](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/image-properties.png)
+![Image Properties](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/image-properties.png)
 
 #### Show image
 
@@ -768,12 +768,12 @@ Provides three different options to select the image source:
 
 **After customizing the Image in KPI card**
 
-![Image Customization](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/image-customization.png)
+![Image Customization](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/image-customization.png)
 
 
 ### Background properties
 
-![Background Properties](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/background-properties.png)
+![Background Properties](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/background-properties.png)
 
 #### Show image
 
@@ -805,11 +805,11 @@ You can change the transparency of the color.
 
 **After customizing the Image in KPI card**
 
-![Background Customization](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/background-custom-properties.png)
+![Background Customization](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/background-custom-properties.png)
 
 ### Sparkline properties
 
-![Sparkline Properties](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/sparkline-custom-properties.png)
+![Sparkline Properties](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/sparkline-custom-properties.png)
 
 #### Show sparkline
 
@@ -823,14 +823,14 @@ Allows you to customize the sparkline color in the KPI Card.
 
 You can change the opacity of the sparkline color. 
 
-![Card with Sparkline](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/card-custom-spark-line.png)
+![Card with Sparkline](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/card-custom-spark-line.png)
 
 
 ### Link properties
 
 You can enable linking and configure to navigate to a general URL with or without parameters. For more details, refer to [linking URLs](/embedded-bi/visualizing-data/working-with-widgets/linking-urls-and-dashboards/).
 
-![Link Properties](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/link.png)
+![Link Properties](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/link.png)
 
 ### Filter properties
 
@@ -846,25 +846,25 @@ The following steps illustrates how to add the fixed value:
 
 1. Click the `fx expression` in the **Assign Data**.
 
-![Expression](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/expression.png)
+![Expression](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/expression.png)
 
 2. Add the name and expression, then click `Save`.
 
-![Expression Value](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/expression-value.png)
+![Expression Value](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/expression-value.png)
 
 3. You can view the added value in the measure section in assigned data tab. Drag the added measures in the `Value(s)` section.
 
-![Added Value](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/add-value.png)
+![Added Value](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/add-value.png)
 
 4. Change the aggregation type to Min or Max.
 
 **Fixed Value for Number card**
 
-![Fixed Value](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/maximum-value.png)
+![Fixed Value](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/maximum-value.png)
 
 ### Container appearance
 
-![Container Appearance](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/container-appearance.png)
+![Container Appearance](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/container-appearance.png)
 
 ### Title Auto Font Size
 
@@ -892,7 +892,7 @@ This allows you to apply the specified radius to the widget corners, if the `Sho
 
 ### Container actions
 
-![Container Actions](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/container-actions.png)
+![Container Actions](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/container-actions.png)
 
 #### Show header
 
@@ -942,12 +942,12 @@ Depending on the size of the widget, the card will be displayed either in Defaul
 
 When the card width is more than '447 px' and its height is less than '296 px', the card will be shown in a horizontal layout.
 
-![Widget Element](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/value.png)
+![Widget Element](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/value.png)
 
 When the card height is more than '296 px', the card will be shown in a vertical layout.
 
-![Widget Element](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/card-value.png)
+![Widget Element](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/card-value.png)
 
 If the size of the card does not have enough space to show all the elements, it will hide the elements with respect to the size based on the following order: Sparkline, Actual and Target value container. The card title is shown in the image.
 
-![Widget Element](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/priority.png)
+![Widget Element](/static/assets/embedded/visualizing-data/visualization-widgets/images/kpi-card/priority.png)

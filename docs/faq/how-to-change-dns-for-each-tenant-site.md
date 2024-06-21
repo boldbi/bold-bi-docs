@@ -18,20 +18,20 @@ Follow the below steps for changing a DNS for each site,
 
    You can add multiple binding to the Bold BI site in IIS.
 
-   ![New Binding](/bold-bi-docs/static/assets/embedded/faq/images/new-binding.png#width=50%)
+   ![New Binding](/static/assets/embedded/faq/images/new-binding.png#width=50%)
 
 2. Fill the `Host name` and click `OK`
 
-    ![Save Binding](/bold-bi-docs/static/assets/embedded/faq/images/save-binding.png#width=40%)
+    ![Save Binding](/static/assets/embedded/faq/images/save-binding.png#width=40%)
 
 3. Now, open the Bold BI ums site listing page and update the `site URL` for the site where you want to change the DNS.
 
-    ![UMS site listing](/bold-bi-docs/static/assets/embedded/faq/images/ums-site-listing.png#width=65%)
+    ![UMS site listing](/static/assets/embedded/faq/images/ums-site-listing.png#width=65%)
 
-    ![Update Site URL](/bold-bi-docs/static/assets/embedded/faq/images/update-site-url-in-ums.png#width=35%)
+    ![Update Site URL](/static/assets/embedded/faq/images/update-site-url-in-ums.png#width=35%)
 
 4. Click `Next` and you need to provide the `Password` of the database, which configured for the respective site.
 
-    ![Update Site Details](/bold-bi-docs/static/assets/embedded/faq/images/update-site-details.png#width=30%)
+    ![Update Site Details](/static/assets/embedded/faq/images/update-site-details.png#width=30%)
 
 5. Click `Update`, now your site will be running with updated site URL.

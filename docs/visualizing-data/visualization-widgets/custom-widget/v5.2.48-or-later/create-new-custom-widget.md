@@ -50,15 +50,15 @@ To create a new custom widget template, download the [Custom Widget Utility](htt
 
 Extract the zipped folder 
 
-  ![bicw.exe downloaded file location](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/custom-widget/bicw_exefile.png)
+  ![bicw.exe downloaded file location](/static/assets/embedded/visualizing-data/visualization-widgets/images/custom-widget/bicw_exefile.png)
 
 Click on bicw.exe file as shown in the snippet below:
 
-  ![bicw.exe file](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/custom-widget/create-new-custom-widget.png)
+  ![bicw.exe file](/static/assets/embedded/visualizing-data/visualization-widgets/images/custom-widget/create-new-custom-widget.png)
 
 Using the [create command](/embedded-bi/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/create-new-custom-widget/#format) you can create the widget template in the specified path with the provided name.
 
-  ![create command](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/custom-widget/create-command.png)
+  ![create command](/static/assets/embedded/visualizing-data/visualization-widgets/images/custom-widget/create-command.png)
 
 #### Format
 
@@ -66,7 +66,7 @@ create c:\widgets\SunburstChart
 
 After the create command execution, you can see the widget named folder that is created as below:
 
-  ![custom widget location](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/custom-widget/custom-widget-template-sunburstchart.png)
+  ![custom widget location](/static/assets/embedded/visualizing-data/visualization-widgets/images/custom-widget/custom-widget-template-sunburstchart.png)
 
 ## Configuring widget configuration file 
 
@@ -635,43 +635,43 @@ The variables used in the code sample above are explained below:
 
  In the above command  `C:\widgets\SunburstChart` denotes the root path of the widget to be packed.
 
-  ![Custom widget Root Path](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/custom-widget/pack-custom-widget.png)
+  ![Custom widget Root Path](/static/assets/embedded/visualizing-data/visualization-widgets/images/custom-widget/pack-custom-widget.png)
 
-  ![Pack Command](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/custom-widget/pack-command.png)
+  ![Pack Command](/static/assets/embedded/visualizing-data/visualization-widgets/images/custom-widget/pack-command.png)
 
  The SunburstChart.bicw file will be created in the output folder as shown below:
 
-  ![Sunburst bicw](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/custom-widget/Sunburst.png)
+  ![Sunburst bicw](/static/assets/embedded/visualizing-data/visualization-widgets/images/custom-widget/Sunburst.png)
 
 ## Publish Custom Widget
 
  To import the custom widgets click on the Settings icon in the Bold BI Server as shown in the below image:
 
-  ![Dashboard Settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/custom-widget/dashboard-settings.png#max-width=75%)
+  ![Dashboard Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/custom-widget/dashboard-settings.png#max-width=75%)
 
  Click on the "Widgets" tab as shown in the image below:
 
-  ![Widgets Tab](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/custom-widget/widgets-section.png)
+  ![Widgets Tab](/static/assets/embedded/visualizing-data/visualization-widgets/images/custom-widget/widgets-section.png)
 
  Click on "Add New Widget" as shown in the image below:
 
-  ![Add Custom widget button](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/custom-widget/Add-custom-widget.png#max-width=75%)
+  ![Add Custom widget button](/static/assets/embedded/visualizing-data/visualization-widgets/images/custom-widget/Add-custom-widget.png#max-width=75%)
 
  Browse the custom widget file location and select the custom widget(*.bicw) to be added to the designer.
 
-   ![browse button](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/custom-widget/Browse-widget.png)
+   ![browse button](/static/assets/embedded/visualizing-data/visualization-widgets/images/custom-widget/Browse-widget.png)
 
  The custom widget file selected should be in "bicw" format. Refer to this [link](/embedded-bi/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/create-new-custom-widget/#converting-the-widget-to-a-bicw-file) for converting to "bicw" format.
 
-  ![bicw formatted file image](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/custom-widget/bicw-format-widget.png)
+  ![bicw formatted file image](/static/assets/embedded/visualizing-data/visualization-widgets/images/custom-widget/bicw-format-widget.png)
 
-  ![upload button](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/custom-widget/upload-widget.png)
+  ![upload button](/static/assets/embedded/visualizing-data/visualization-widgets/images/custom-widget/upload-widget.png)
 
  Once the custom widget is uploaded, it will appear under the "Custom Widgets" category. 
 
  Now the custom widget will appear in the Bold BI Designer as shown in the image below:
 
-  ![Custom widget in Designer Dashboard](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/custom-widget/custom-widget-dashboard.png)
+  ![Custom widget in Designer Dashboard](/static/assets/embedded/visualizing-data/visualization-widgets/images/custom-widget/custom-widget-dashboard.png)
 
  **NOTE:** The custom widget will be published within the particular tenant alone.
 

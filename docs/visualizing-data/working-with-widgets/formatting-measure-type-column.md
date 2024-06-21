@@ -15,52 +15,52 @@ Measure type column values can be formatted based on the following different opt
 
 The value display type of measure column can be defined based on the displayed data. For example, if you display the sales amount column, then the type can be defined as `Currency`.
 
-![Type](/bold-bi-docs/static/assets/embedded/visualizing-data/working-with-widgets/images/formattingmeasuretypecolumn_type.PNG)
+![Type](/static/assets/embedded/visualizing-data/working-with-widgets/images/formattingmeasuretypecolumn_type.PNG)
 
 **Representation**
 
 The value display format can be defined by the representation. For example, by selecting thousands, the value 10,000 will be displayed as 10K.
 
-![Representation](/bold-bi-docs/static/assets/embedded/visualizing-data/working-with-widgets/images/formattingmeasuretypecolumn_representation.PNG)
+![Representation](/static/assets/embedded/visualizing-data/working-with-widgets/images/formattingmeasuretypecolumn_representation.PNG)
 
 **Lakhs and Crores support**
 
 Cultures from countries including India, Pakistan, Bangladesh, and Nepal have Lakhs and Crores support. For example, the value of 1,00,000 is displayed as 1L.
 
-![Lakhs Selection](/bold-bi-docs/static/assets/embedded/visualizing-data/working-with-widgets/images/lakhs-selection.png#max-width=50%)
+![Lakhs Selection](/static/assets/embedded/visualizing-data/working-with-widgets/images/lakhs-selection.png#max-width=50%)
 
-![Lakhs in widget](/bold-bi-docs/static/assets/embedded/visualizing-data/working-with-widgets/images/lakhs-reflected-in-grid.png#max-width=50%)
+![Lakhs in widget](/static/assets/embedded/visualizing-data/working-with-widgets/images/lakhs-reflected-in-grid.png#max-width=50%)
 
 When support culture is selected, there will be a checkbox that is needed to enable lakhs and crores along with auto representation. This helps in handling existing value.
 
-![Auto represenation checkbox](/bold-bi-docs/static/assets/embedded/visualizing-data/working-with-widgets/images/lakhsandcrores-auto-representation.png#max-width=50%)
+![Auto represenation checkbox](/static/assets/embedded/visualizing-data/working-with-widgets/images/lakhsandcrores-auto-representation.png#max-width=50%)
 
-![Auto enable Lakhs and Crores](/bold-bi-docs/static/assets/embedded/visualizing-data/working-with-widgets/images/auto-enable-lakhsandcrores.png#max-width=50%)
+![Auto enable Lakhs and Crores](/static/assets/embedded/visualizing-data/working-with-widgets/images/auto-enable-lakhsandcrores.png#max-width=50%)
 
 
 **Decimal places**
 
 You can set the decimal places explicitly when the representation is set with options other than `Auto`.
 
-![Decimal](/bold-bi-docs/static/assets/embedded/visualizing-data/working-with-widgets/images/formattingmeasuretypecolumn_decimal.PNG)
+![Decimal](/static/assets/embedded/visualizing-data/working-with-widgets/images/formattingmeasuretypecolumn_decimal.PNG)
 
 **Currency culture**
 
 You can set the currency value culture when the value display type is set as `Currency`.
 
-![Currency](/bold-bi-docs/static/assets/embedded/visualizing-data/working-with-widgets/images/formattingmeasuretypecolumn_currency.PNG)
+![Currency](/static/assets/embedded/visualizing-data/working-with-widgets/images/formattingmeasuretypecolumn_currency.PNG)
 
 **Append text**
 
 You can append text, character, number, or symbol either at start or at the end of the values.
 
-![Append text](/bold-bi-docs/static/assets/embedded/visualizing-data/working-with-widgets/images/formattingmeasuretypecolumn_appendtext.PNG)
+![Append text](/static/assets/embedded/visualizing-data/working-with-widgets/images/formattingmeasuretypecolumn_appendtext.PNG)
 
 **Preview**
 
 This field provides the preview of display value in the `Measure Formatting` dialog based on the settings.
 
-![Preview](/bold-bi-docs/static/assets/embedded/visualizing-data/working-with-widgets/images/formattingmeasuretypecolumn_preview.PNG)
+![Preview](/static/assets/embedded/visualizing-data/working-with-widgets/images/formattingmeasuretypecolumn_preview.PNG)
 
 
 

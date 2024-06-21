@@ -22,7 +22,7 @@ The User Management Server can be configured to support OAuth 2.0 for Single Sig
 
 2. In the left side menu, click `Settings`, then `Authentication`, and finally `OAuth 2.0`.
 
-    ![Authentication OAuth settings](/bold-bi-docs/static/assets/embedded/multi-tenancy/images/oauth-setting-page.png)
+    ![Authentication OAuth settings](/static/assets/embedded/multi-tenancy/images/oauth-setting-page.png)
 
 4. Provide the following details in the `OAuth 2.0` settings of User Management Server.
 
@@ -85,11 +85,11 @@ The User Management Server can be configured to support OAuth 2.0 for Single Sig
 
     </table>
 
-    ![OAuth settings](/bold-bi-docs/static/assets/embedded/multi-tenancy/images/oauth-setting-configuration.png)
+    ![OAuth settings](/static/assets/embedded/multi-tenancy/images/oauth-setting-configuration.png)
 
 If you need to import the OAuth 2.0 groups, you must configure the group details while saving the OAuth authentication settings.
 
-  ![OAuth setting provider option](/bold-bi-docs/static/assets/embedded/multi-tenancy/images/oauth-setting-provider-option.png)
+  ![OAuth setting provider option](/static/assets/embedded/multi-tenancy/images/oauth-setting-provider-option.png)
 
 The following list of OAuth 2.0 providers explains how to connect with the User Management Server. 
 
@@ -107,10 +107,10 @@ Follow these steps to configure default authentication:
 
 2. Enable the **Enable Default Authentication** option and select the **OAuth 2.0** as default authentication provider, as shown in the following screenshot.
 
-    ![Enable OAuth Default Authentication](/bold-bi-docs/static/assets/embedded/multi-tenancy/images/default-oauth.png)
+    ![Enable OAuth Default Authentication](/static/assets/embedded/multi-tenancy/images/default-oauth.png)
 
 ## Disabling OAuth 2.0 settings
 
 Disable the **Enable Default Authentication** option and then clicking `Save` will disable the [OAuth 2.0 default authentication](/embedded-bi/multi-tenancy/site-administration/authentication/oauth-2.0-support/#set-oauth-20-as-default-authentication).
 
-![Disable Default Authentication](/bold-bi-docs/static/assets/embedded/multi-tenancy/images/oauth-default-authentication.png)
+![Disable Default Authentication](/static/assets/embedded/multi-tenancy/images/oauth-default-authentication.png)

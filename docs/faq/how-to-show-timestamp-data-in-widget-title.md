@@ -50,16 +50,16 @@ Follow these steps to achieve this requirement:
 
 1. Configure any widget with the required fields. In this example, we have configured the KPI Card with the required fields in the **Assign Data** tab
 
-    ![Configure KPI Card widget](/bold-bi-docs/static/assets/embedded/faq/images/configure-kpi-card-widget.png#max-width=60%)
+    ![Configure KPI Card widget](/static/assets/embedded/faq/images/configure-kpi-card-widget.png#max-width=60%)
 
 2. Navigate to the **Properties** tab and in the widget title and add a label parameter with the timestamp column name.
 
     `Syntax: {{:ColumnName}}`
 
-    ![Timestamp Column in Datasource](/bold-bi-docs/static/assets/embedded/faq/images/timestamp-column-in-datasource.png#max-width=60%)
+    ![Timestamp Column in Datasource](/static/assets/embedded/faq/images/timestamp-column-in-datasource.png#max-width=60%)
 
-    ![Add Timestamp in Label Parameter](/bold-bi-docs/static/assets/embedded/faq/images/add-timestamp-label-parameter.png#max-width=60%)
+    ![Add Timestamp in Label Parameter](/static/assets/embedded/faq/images/add-timestamp-label-parameter.png#max-width=60%)
 
 3. In preview, you can view the data of a widget with the corresponding timestamp like the screenshot below:
 
-    ![KPI Card with Timestamp](/bold-bi-docs/static/assets/embedded/faq/images/kpi-card-with-timestamp.png#max-width=50%)
+    ![KPI Card with Timestamp](/static/assets/embedded/faq/images/kpi-card-with-timestamp.png#max-width=50%)

@@ -14,11 +14,11 @@ This part will explain how to restrict the dashboard based on domain and IP addr
 ## Steps to enable the security for embedding the dashboard
 1. In Bold BI Server, click the context menu of the respective dashboard and choose the `Security` option.
 
-    ![ClickSecurity](/bold-bi-docs/static/assets/embedded/faq/images/dashboard_security_option.png)
+    ![ClickSecurity](/static/assets/embedded/faq/images/dashboard_security_option.png)
 
 2. In the Security dialog, you could see the Apply these settings dropdown, select your security restriction.
 
-    ![RestrictionMethod](/bold-bi-docs/static/assets/embedded/faq/images/security_settings_dropdown.png)
+    ![RestrictionMethod](/static/assets/embedded/faq/images/security_settings_dropdown.png)
 
 
 3. The security restriction for the dashboard can be applied in the following three ways. To learn more about these, please refer to this [link](/cloud-bi/managing-resources/manage-dashboards/advanced-dashboard-security/#when-to-apply-these-settings).
@@ -29,32 +29,32 @@ This part will explain how to restrict the dashboard based on domain and IP addr
 
 4. For applying restrictions in embedding, you must select the `When the dashboard is embedded` option as follows.
 
-    ![AddDomain](/bold-bi-docs/static/assets/embedded/faq/images/security_settings_selection.png)
+    ![AddDomain](/static/assets/embedded/faq/images/security_settings_selection.png)
 
 
 5. Here, specify the allowed `domains` accessed or embedded from known embed application domains.
 
-    ![AddDomain](/bold-bi-docs/static/assets/embedded/faq/images/secured_domains.png)
+    ![AddDomain](/static/assets/embedded/faq/images/secured_domains.png)
 
 
 6. Here, specify the `device IP addresses` of the users allowed to embed the dashboard.
 
-    ![AddIP](/bold-bi-docs/static/assets/embedded/faq/images/secured_ipaddress.png)
+    ![AddIP](/static/assets/embedded/faq/images/secured_ipaddress.png)
 
 7. Once you have added the Security settings for the dashboard, get the embed code from the desired dashboard, which you want to embed in your website. Get more details from the [link](/embedded-bi/iframe-based/dashboard-view-mode/#steps-to-embed-dashboard-in-view-mode-using-url) to know how to `Get Embed Code` from the dashboard. Then, embed the dashboard in your application.
 
 8. The dashboard can be embedded only in `Domains` specified in the `Accept embedding requests from these websites` and the allowed `IP address` specified in `Allow dashboard access from these IP addresses`.
 
-    ![AllowedDomainAndIP](/bold-bi-docs/static/assets/embedded/faq/images/allowed_domains_ipaddresses.png)
+    ![AllowedDomainAndIP](/static/assets/embedded/faq/images/allowed_domains_ipaddresses.png)
 
 9. The embedded dashboard will show an error or blocked warning message if other than specified Domains and IP Addresses are in the security settings.
 
     While accessing from unknown domains:
 
-    ![BlockedDomain](/bold-bi-docs/static/assets/embedded/faq/images/restricted_domain_page.png)
+    ![BlockedDomain](/static/assets/embedded/faq/images/restricted_domain_page.png)
 
     While accessing from unknown IP Addresses:
 
-    ![BlockedDomain](/bold-bi-docs/static/assets/embedded/faq/images/restricted_ip_address.png)
+    ![BlockedDomain](/static/assets/embedded/faq/images/restricted_ip_address.png)
 
     >**Note:**  The public dashboard will also get blocked for restricted domains and IP addresses in iframe embedding.

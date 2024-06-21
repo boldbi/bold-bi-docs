@@ -17,7 +17,7 @@ Follow these steps to add the third-party widget(C3 Chart) as a custom widget fo
 
 * Refer to this [link](/embedded-bi/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/create-new-custom-widget/#creating-a-new-widget) to create a new custom widget files.
 
-  ![Custom_widget C3 chart](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/custom-widget/custom-widget-c3chart.png)
+  ![Custom_widget C3 chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/custom-widget/custom-widget-c3chart.png)
 
 * Configure the widget using the `widgetconfig.json` file.
 
@@ -103,7 +103,7 @@ Follow these steps to add the third-party widget(C3 Chart) as a custom widget fo
 
 * Then, configure the widget with the necessary data.
 
-  ![Custom_widget C3 chart](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/custom-widget/C3_Chart_Custom_widget_schema.png)
+  ![Custom_widget C3 chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/custom-widget/C3_Chart_Custom_widget_schema.png)
 
 * You can debug the custom widget by dragging and dropping it into the design canvas after placing the ‘debugger’ in `src/sourcefile.js`.
 
@@ -200,7 +200,7 @@ Follow these steps to add the third-party widget(C3 Chart) as a custom widget fo
 
 * The C3 Chart widget will be rendered as follows:
 
-  ![Custom widget C3 chart](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/custom-widget/custom_widget_C3_chart.png)
+  ![Custom widget C3 chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/custom-widget/custom_widget_C3_chart.png)
 
 
 * The update method will be triggered for the following operations, and we have to do the required changes by checking the update types (resize, refresh, and propertyChange), and the widget will be updated accordingly by invoking the respective API of the widget 

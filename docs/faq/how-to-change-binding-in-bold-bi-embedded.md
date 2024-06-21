@@ -15,19 +15,19 @@ Follow these steps to change the application binding information:
 
 1. Add a new binding to Bold BI Enterprise edition on IIS as shown in the following image.
    **`Example: 172.31.176.1`**
-![IIS Binding](/bold-bi-docs/static/assets/embedded/faq/images/add-iis-binding.png#width=50%)
+![IIS Binding](/static/assets/embedded/faq/images/add-iis-binding.png#width=50%)
 
 2. Now, navigate to the site settings page of the UMS application using below new binding and update the new binding information as shown in the following image.  
 **`http://172.31.176.1/ums/administration`** 
-![IDP Base URL](/bold-bi-docs/static/assets/embedded/faq/images/idp-url-binding.png#width=50%) 
+![IDP Base URL](/static/assets/embedded/faq/images/idp-url-binding.png#width=50%) 
 
 3. Now, navigate to the ums site listing page and edit the site using the following new binding and update the new binding information as shown in the following image.  
 **`http://172.31.176.1/ums/sites`** 
-![UMS site listing](/bold-bi-docs/static/assets/embedded/faq/images/ums-site-listing.png#width=60%)
-![DS Base URL](/bold-bi-docs/static/assets/embedded/faq/images/ds-url-binding-in-ums.png#width=35%)
+![UMS site listing](/static/assets/embedded/faq/images/ums-site-listing.png#width=60%)
+![DS Base URL](/static/assets/embedded/faq/images/ds-url-binding-in-ums.png#width=35%)
 
 4. Click `Next` and you need to provide a `Password` of the database, which configured for the respective site.
-![Update Site Details](/bold-bi-docs/static/assets/embedded/faq/images/update-site-details.png#width=35%)
+![Update Site Details](/static/assets/embedded/faq/images/update-site-details.png#width=35%)
 
 5. Click `Update`, now your site will be running with updated site URL.
 

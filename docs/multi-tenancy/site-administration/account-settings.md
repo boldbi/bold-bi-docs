@@ -26,7 +26,7 @@ The account will be in inactive status until the user activates the account from
 
 > **NOTE:** By default, the setting will be `Automatic`.
 
-![Accounts Settings](/bold-bi-docs/static/assets/embedded/multi-tenancy/images/account-automatic-settings.png)
+![Accounts Settings](/static/assets/embedded/multi-tenancy/images/account-automatic-settings.png)
 
 ## User email
 
@@ -44,4 +44,4 @@ When user email setting is set to `Not required` mode, an email address is not m
 
 > **NOTE:** By default, the setting will be `Required`.
 
-![Email Required Settings](/bold-bi-docs/static/assets/embedded/multi-tenancy/images/email-required.png)
+![Email Required Settings](/static/assets/embedded/multi-tenancy/images/email-required.png)

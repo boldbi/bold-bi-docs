@@ -20,28 +20,28 @@ This attack can be avoided by configuring known domains in Bold BI in a known do
 
 1. Go to the UMS Administration page in Bold BI and click on the `Configuration` tab. A list of known domains in a JSON file can be configured here.
 
-    ![UMS Settings](/bold-bi-docs/static/assets/embedded/security-configuration/images/ums-settings.png#width=40%)
+    ![UMS Settings](/static/assets/embedded/security-configuration/images/ums-settings.png#width=40%)
 
 2. Select the `known_domains.json` file to configure the allowed and denied domain list on this page.
 
-    ![Known Domain Json](/bold-bi-docs/static/assets/embedded/security-configuration/images/known-domain-json.png#width=40%)
+    ![Known Domain Json](/static/assets/embedded/security-configuration/images/known-domain-json.png#width=40%)
 
 3. If you want to configure known domains in Bold BI, you must set the `Enabled` node to `true`.
 
-    ![Known Domain Json Enable](/bold-bi-docs/static/assets/embedded/security-configuration/images/known-domain-json-enable.png#width=40%)
+    ![Known Domain Json Enable](/static/assets/embedded/security-configuration/images/known-domain-json-enable.png#width=40%)
 
 4. You can add a list of denied domains to the `Deny` node. If you want to allow or deny all external domains, you can use wildcard `*` in known domain JSON nodes. You can also use a wildcard with the subdomain `(*.boldbi.com, *.*.boldbi.com)`.
 
-    ![Denied Domains](/bold-bi-docs/static/assets/embedded/security-configuration/images/denied-domains.png#width=40%)
+    ![Denied Domains](/static/assets/embedded/security-configuration/images/denied-domains.png#width=40%)
 
 5. You can add a list of allowed domains to the `Allow` node. You can add more than one domain with a comma. 
 
-    ![Allowed Domains](/bold-bi-docs/static/assets/embedded/security-configuration/images/allowed-domains.png#width=40%)
+    ![Allowed Domains](/static/assets/embedded/security-configuration/images/allowed-domains.png#width=40%)
 
 > **Important:**  Internal Bold BI domains are allowed by default, i.e. domains from Bold BI sites.
 
 6. Once configured, click the `Save` button to update the Known Domain JSON file.
 
-    ![Save Known Domain Json](/bold-bi-docs/static/assets/embedded/security-configuration/images/save-known-domain-json.png#width=40%)
+    ![Save Known Domain Json](/static/assets/embedded/security-configuration/images/save-known-domain-json.png#width=40%)
 
 > **Note:**  If you have configured the same domain in both `Allow` and `Deny`, the domain will be denied as the denied list takes first priority. 

@@ -59,7 +59,7 @@ The following are the frequently asked questions in Bold BI Enterprise:
 
 [How to resolve Login failed for user in Windows Authentication mode?](/embedded-bi/faq/how-to-resolve-login-failed-for-user-in-windows-authentication-mode/)
 
-[How to manually update the license in Bold BI Build?](/embedded-bi/faq/on-premise/faq/how-to-manually-update-the-license/)
+[How to manually update the license in Bold BI Build?](/embedded-bi/faq/how-to-manually-update-the-license/)
 
 [How to resolve the issue - License server unreachable?](/embedded-bi/faq/how-to-resolve-license-server-unreachable-issue-in-bold-bi/)
 
@@ -109,7 +109,7 @@ The following are the frequently asked questions in Bold BI Enterprise:
 
 [How to apply Row-level Security in Elastic search data source](/embedded-bi/faq/how-to-apply-row-level-security-in-elastic-search-data-source/)
 
-[How to allow users to create dashboards without modifying the existing data sources?](/embedded-bi/faq//how-to-allow-users-to-create-dashboards-without-modifying-the-existing-data-sources/)
+[How to allow users to create dashboards without modifying the existing data sources?](/embedded-bi/faq/how-to-allow-users-to-create-dashboards-without-modifying-the-existing-data-sources/)
 
 [How to query Snowflake records using code view mode in Bold BI](/embedded-bi/faq/how-to-query-snowflake-records-using-code-view-mode-in-bold-bi/)
 
@@ -127,11 +127,11 @@ The following are the frequently asked questions in Bold BI Enterprise:
 
 [How to pass a parameter to Web API connector when view and embedding a dashboard?](/embedded-bi/faq/how-to-pass-a-parameter-to-web-api-connector-when-view-and-embedding-a-dashboard/)
 
-[How to get offline unlock key?](/embedded-bi/faq//how-to-get-offline-unlock-key/)
+[How to get offline unlock key?](/embedded-bi/faq/how-to-get-offline-unlock-key/)
 
 [How to update SSL certificate in the Kubernetes secret of Bold BI site](/embedded-bi/faq/how-to-update-ssl-certificate-in-kubernetes-secret-of-bold-bi-site/)
 
-[How to view first 7 days data of each month in dashboard](/embedded-bi/faq/how-to-view-first-7-days-data-of-each-month-in-dashboard)
+[How to view first 7 days data of each month in dashboard](/embedded-bi/faq/how-to-view-first-7-days-data-of-each-month-in-dashboard/)
 
 [How to deploy Bold BI as Offline deployment in Docker](/embedded-bi/faq/how-to-deploy-boldbi-as-offline-deployment-in-docker/)
 
@@ -152,11 +152,11 @@ The following are the frequently asked questions in Bold BI Enterprise:
 
 [How to authenticate Google Analytics for Bold BI](/embedded-bi/faq/how-to-authenticate-google-analytics-for-bold-bi/)
 
-[How the dashboard user can modify the input value of a parameter in view mode](/embedded-bi/faq/how-the-dashboard-user-can-modify-the-input-value-of-a-parameter-in-view-mode)
+[How the dashboard user can modify the input value of a parameter in view mode](/embedded-bi/faq/how-the-dashboard-user-can-modify-the-input-value-of-a-parameter-in-view-mode/)
 
-[What will happen during multiple users are editing the same dashboard or data source at the same time](/embedded-bi/faq/what-will-happen-during-multiple-users-are-editing-the-same-dashboard-or-data-source-at-the-same-time)
+[What will happen during multiple users are editing the same dashboard or data source at the same time](/embedded-bi/faq/what-will-happen-during-multiple-users-are-editing-the-same-dashboard-or-data-source-at-the-same-time/)
 
-[How to show Current Date and Time in Widget Title](/embedded-bi/faq/how-to-show-current-date-and-time-in-widget-title)
+[How to show Current Date and Time in Widget Title](/embedded-bi/faq/how-to-show-current-date-and-time-in-widget-title/)
 
 [How to Avoid Deployment Pending Problem after the Site Creation in Bold BI On-premises](/embedded-bi/faq/how-to-avoid-deployment-pending-problem-after-the-site-creation-in-bold-bi-on-premises/)
 
@@ -204,7 +204,7 @@ The following are the frequently asked questions in Bold BI Enterprise:
 
 [How to add custom theme into Azure app service deployment location](/embedded-bi/faq/how-to-add-custom-theme-into-azure-app-service-deployment-location/)
 
-[How to get the user specific data using dynamic connection string?](/embedded-bi/faq/how-to-get-user-specific-data-using-dynamic-connection-string.md)
+[How to get the user specific data using dynamic connection string?](/embedded-bi/faq/how-to-get-user-specific-data-using-dynamic-connection-string/)
 
 [Can you use the same login credentials for the Bold BI and Bold Reports applications](/embedded-bi/faq/can-you-use-the-same-login-credentials-for-the-bold-bi-and-bold-reports-applications/)
 
@@ -212,13 +212,13 @@ The following are the frequently asked questions in Bold BI Enterprise:
 
 [How to create custom sort order in Bold BI](/embedded-bi/faq/how-to-create-custom-sort-order-in-bold-bi/)
 
-[How to create different If condition-based expressions in Bold BI](/embedded-bi/faq/how-to-create-different-if-condition-based-expressions-in-bold-bi)
+[How to create different If condition-based expressions in Bold BI](/embedded-bi/faq/how-to-create-different-if-condition-based-expressions-in-bold-bi/)
 
 [How will the dashboard get affected while CSP enabled](/embedded-bi/faq/how-will-the-dashboard-get-affected-while-csp-enabled/)
 
 [How to install and deploy the Bold BI Enterprise Edition in silent mode](/embedded-bi/faq/how-to-install-and-deploy-the-bold-bi-enterprise-edition-in-silent-mode/)
 
-[How to use Pivot Tables in Bold BI Using PostgreSQL](/embedded-bi/faq/how-to-use-pivot-tables-in-bold-bi-using-postgresql.md)
+[How to use Pivot Tables in Bold BI Using PostgreSQL](/embedded-bi/faq/how-to-use-pivot-tables-in-bold-bi-using-postgresql/)
 
 [How to hide release alert banner in Bold BI](/embedded-bi/faq/how-to-hide-release-alert-banner-in-bold-bi-application/)
 

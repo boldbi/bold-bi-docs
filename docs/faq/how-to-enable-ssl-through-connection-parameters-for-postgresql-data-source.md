@@ -17,14 +17,14 @@ Bold BI application allows you to enable SSL through connection parameters in th
 
 2.	For connecting the [PostgreSQL](https://help.boldbi.com/embedded-bi/working-with-data-source/data-connectors/postgresql/) with SSL connection, you need to add the connection string **sslmode=Require;TrustServerCertificate=true** in the **Additional connection parameters** textbox along with the existing server details and click **Connect.**
 
-    ![Additional COnnection Parameters](/bold-bi-docs/static/assets/embedded/faq/images/additional-parameters.png#max-width=40%)
+    ![Additional COnnection Parameters](/static/assets/embedded/faq/images/additional-parameters.png#max-width=40%)
 
 In this way, you can enable SSL in the connection by passing parameters in the connection string.
 
 3.	Drag and drop the table from the table schema in the data design view page.
 
-    ![Table schema](/bold-bi-docs/static/assets/embedded/faq/images/ssh-tables.png#max-width=70%)
+    ![Table schema](/static/assets/embedded/faq/images/ssh-tables.png#max-width=70%)
 
 4.	Click **Save** to save the data source with a relevant name to proceed with designing a dashboard.
 
-    ![Save option](/bold-bi-docs/static/assets/embedded/faq/images/ssh-save-option.png#max-width=70%)
+    ![Save option](/static/assets/embedded/faq/images/ssh-save-option.png#max-width=70%)

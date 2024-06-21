@@ -12,7 +12,7 @@ documentation: ug
 
 Date Picker enables you to filter based on the single or range of date selection. 
 
-![date picker](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/date-picker/datepicker.png)
+![date picker](/static/assets/embedded/visualizing-data/visualization-widgets/images/date-picker/datepicker.png)
 
 ## How to configure table data to date picker?
 
@@ -20,85 +20,85 @@ The following steps explain to configure the table data to date picker:
 
 1.  Drag and drop the `Date Picker` from the toolbox at left into the design canvas and resize it to your required size.
 
-![dragging date picker into canvas](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/date-picker/drop-widgets.png)
+![dragging date picker into canvas](/static/assets/embedded/visualizing-data/visualization-widgets/images/date-picker/drop-widgets.png)
 
 2.  Click the `Data Source` button in the configuration panel.
 
-![data source button](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/databutton.png)
+![data source button](/static/assets/embedded/visualizing-data/visualization-widgets/images/databutton.png)
 
 3.  Click the `CREATE NEW` button to launch a new connection from the connection type panel.
 
-![create new button](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/datasourcebutton.png)
+![create new button](/static/assets/embedded/visualizing-data/visualization-widgets/images/datasourcebutton.png)
 
 4.  In the connection type panel, click any one (Here, the `Microsoft Excel` Connection type is selected for demonstration) of the listed connection type button shown.
 
-![data source list](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/datasourcelist.png)
+![data source list](/static/assets/embedded/visualizing-data/visualization-widgets/images/datasourcelist.png)
 
 5.  In the `NEW DATA SOURCE` configuration panel, fill the connection type and related details. Click the `Connect` button.
 
-![data source page](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/connectbutton.png)
+![data source page](/static/assets/embedded/visualizing-data/visualization-widgets/images/connectbutton.png)
 
 6.  Drag your preferred table or view from the left pane from the data design view, click the `Save` button.
 
-![table dragged into table canvas](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/virtualtable.png)
+![table dragged into table canvas](/static/assets/embedded/visualizing-data/visualization-widgets/images/virtualtable.png)
 
 7.  Click the `Properties` button in the configuration panel, property pane opens. Now, switch to the `ASSIGN DATA` tab.
 
-![highlights widgets configuration button](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/designerpropertiesbutton.png)
+![highlights widgets configuration button](/static/assets/embedded/visualizing-data/visualization-widgets/images/designerpropertiesbutton.png)
 
-![date picker assign data tab](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/date-picker/datepickerdatatab.png)
+![date picker assign data tab](/static/assets/embedded/visualizing-data/visualization-widgets/images/date-picker/datepickerdatatab.png)
 
 8.  The data tab will be opened with available measures and dimensions from the connected data source.
 
-![assigning fields to date picker](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/date-picker/datepickerassigndata.png)
+![assigning fields to date picker](/static/assets/embedded/visualizing-data/visualization-widgets/images/date-picker/datepickerassigndata.png)
 
 9.  Drag and drop a date field from `Dimensions` into the `Columns` section.
 
-![dragging fields to configure data for date picker](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/date-picker/configure-widget.png)
+![dragging fields to configure data for date picker](/static/assets/embedded/visualizing-data/visualization-widgets/images/date-picker/configure-widget.png)
 
 
 ## How to configure relative dates to DatePicker?
 
 Switch to the `Properties` pane and set the `Selection Type` as `Range`; Switch back to the `Data` pane; Click the `Settings` icon in the dropped date column and select `Relative Dates...` in the drop-down menu.
 
-![showing relative dates menu](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/date-picker/relativedatesdatepicker.png)
+![showing relative dates menu](/static/assets/embedded/visualizing-data/visualization-widgets/images/date-picker/relativedatesdatepicker.png)
 
 In the launched `Relative Date Options` window, configure the relative date and click Add. Repeat this process till the required set of relative dates are added.
 
-![relative date options window](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/date-picker/relativedatefilterwindow-datepicker.png)
+![relative date options window](/static/assets/embedded/visualizing-data/visualization-widgets/images/date-picker/relativedatefilterwindow-datepicker.png)
 
-![relative dates added in window](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/date-picker/relativedateoptionsadded-datepicker.png)
+![relative dates added in window](/static/assets/embedded/visualizing-data/visualization-widgets/images/date-picker/relativedateoptionsadded-datepicker.png)
 
 You can see the added relative dates in the DatePicker as follows.  
 
-![showcasing relative date options in date picker](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/date-picker/relativedateoptionsin-datepicker.png)
+![showcasing relative date options in date picker](/static/assets/embedded/visualizing-data/visualization-widgets/images/date-picker/relativedateoptionsin-datepicker.png)
 
 ## How to configure custom relative dates to the DatePicker?
 
 Switch to the  `Properties` pane and set the `Selection Type` as Range, and then switch back to the Data pane; Click the `Settings` icon in the dropped date column and select `Relative Dates...` in the drop-down menu.
 
-![showing relative date options](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/date-picker/relativedatesdatepicker.png)
+![showing relative date options](/static/assets/embedded/visualizing-data/visualization-widgets/images/date-picker/relativedatesdatepicker.png)
 
 In the launched `Relative Date Options` window, select the `Custom` option from the drop-down list.
 
-![selecting custom option in relative dates window](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/date-picker/customoptionin-relativedatefilter-datepicker.png)
+![selecting custom option in relative dates window](/static/assets/embedded/visualizing-data/visualization-widgets/images/date-picker/customoptionin-relativedatefilter-datepicker.png)
 
 Choose the start and end dates you like to set as custom range, set a name for the custom range, and then click `Add.` Repeat this process till the required set of custom relative dates are added.
 
 
-![setting range for custom option](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/date-picker/customdatelimits-relativedatefilter-datepicker.png)
+![setting range for custom option](/static/assets/embedded/visualizing-data/visualization-widgets/images/date-picker/customdatelimits-relativedatefilter-datepicker.png)
 
-![custom date option is added](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/date-picker/customdateadded-relativedat-datepicker.png)
+![custom date option is added](/static/assets/embedded/visualizing-data/visualization-widgets/images/date-picker/customdateadded-relativedat-datepicker.png)
 
 You can see the added custom relative dates in the DatePicker as follows.
 
-![custom date option is displayed in date picker](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/date-picker/customrelativedatefilterdisplayed-datepicker.png)
+![custom date option is displayed in date picker](/static/assets/embedded/visualizing-data/visualization-widgets/images/date-picker/customrelativedatefilterdisplayed-datepicker.png)
 
 ### Filtering data
 
 You can filter the data by using the `Filter` option.
 
-![date picker Filter](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/date-picker/filter-settings.png)
+![date picker Filter](/static/assets/embedded/visualizing-data/visualization-widgets/images/date-picker/filter-settings.png)
 
 ## How to format date picker?
 
@@ -106,29 +106,29 @@ You can format the Date Picker for a better illustration of the view that you re
 
 ### General Settings
 
-![date picker name](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/date-picker/property.png)
+![date picker name](/static/assets/embedded/visualizing-data/visualization-widgets/images/date-picker/property.png)
 
 #### Name
 
 This allows you to set the `title` for this date picker widget.
 
-![date picker name](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/date-picker/Title.png)
+![date picker name](/static/assets/embedded/visualizing-data/visualization-widgets/images/date-picker/Title.png)
 
 #### Subtitle
 
 This allows you to set the `subtitle` for this date picker widget.
 
-![date picker name](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/date-picker/Subtitle.png)
+![date picker name](/static/assets/embedded/visualizing-data/visualization-widgets/images/date-picker/Subtitle.png)
 
 #### Description
 
 This allows you to set the brief explanation about this date picker widget.
 
-![date picker name](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/date-picker/Description.png)
+![date picker name](/static/assets/embedded/visualizing-data/visualization-widgets/images/date-picker/Description.png)
 
 #### Basic Settings
 
-![basic settings of date picker](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/date-picker/basic-settings.png)
+![basic settings of date picker](/static/assets/embedded/visualizing-data/visualization-widgets/images/date-picker/basic-settings.png)
 
 #### Range
 
@@ -136,27 +136,27 @@ This allows you to toggle the selection type of Range.
 
 **Single** – Single date can be bounded, if you disable the `Range` selection option.
 
-![single date selction option](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/date-picker/single-selection.png)
+![single date selction option](/static/assets/embedded/visualizing-data/visualization-widgets/images/date-picker/single-selection.png)
 
 **Range** – A range of dates (two dates) can be bounded,if you enable the `Range` selection option.
 
-![range date selection option](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/date-picker/range-selection.png)
+![range date selection option](/static/assets/embedded/visualizing-data/visualization-widgets/images/date-picker/range-selection.png)
 
 #### Highlight Available Dates
 
 This allows you to enable the highlighting of available dates in the date picker.
 
-![showcasing date picker highlighted date option](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/date-picker/datepicker-high.png)
+![showcasing date picker highlighted date option](/static/assets/embedded/visualizing-data/visualization-widgets/images/date-picker/datepicker-high.png)
 
 #### Limit Dates
 
 This allows you to display only the limited dates (dates in the data source) in date picker, by default option will be enabled. If the option is enabled you can select the dates available in the data source.
 
-![date range limit selection](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/date-picker/datepicker-limit.png)
+![date range limit selection](/static/assets/embedded/visualizing-data/visualization-widgets/images/date-picker/datepicker-limit.png)
 
 If you disable the Limit Dates option, there is no limit for the date range.
 
-![disabling date range limit](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/date-picker/datepicker-limitless.png)
+![disabling date range limit](/static/assets/embedded/visualizing-data/visualization-widgets/images/date-picker/datepicker-limitless.png)
 
 #### Fixed Calendar Selection
 
@@ -172,7 +172,7 @@ The **show latest date** property shows the latest date in the datasource when y
 
 #### Filter
 
-![filter configuration for date picker](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/date-picker/filter.png)
+![filter configuration for date picker](/static/assets/embedded/visualizing-data/visualization-widgets/images/date-picker/filter.png)
 
 #### Act as Master Widget
 
@@ -190,7 +190,7 @@ When the `Enable Hierarchical Filtering` is enabled, the Top N will be applied f
 
 #### Container Appearance
 
-![Container Appearance](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/date-picker/container-appearance.png)
+![Container Appearance](/static/assets/embedded/visualizing-data/visualization-widgets/images/date-picker/container-appearance.png)
 
 #### Title Alignment
 
@@ -238,7 +238,7 @@ This allows you to toggle the visibility of the `shadow` surrounding the widget.
 
 #### Container actions
 
-![Container Actions](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/date-picker/container-actions.png)
+![Container Actions](/static/assets/embedded/visualizing-data/visualization-widgets/images/date-picker/container-actions.png)
 
 #### Show Header
 

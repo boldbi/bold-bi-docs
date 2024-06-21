@@ -15,11 +15,11 @@ If you want to pass the dashboard parameters when loading the dashboard, you can
 
 Here, your Dashboard parameter is named as "City", you have to pass the value as shown below inside the <b>renderDashboard</b> function,
 
-![parameter code](/bold-bi-docs/static/assets/embedded/faq/images/parameter-code.png)
+![parameter code](/static/assets/embedded/faq/images/parameter-code.png)
 
 Please find the filterParameters output dashboard as follows.
 
-![parameter dashboard1](/bold-bi-docs/static/assets/embedded/faq/images/parameter-dashboard1.png)
+![parameter dashboard1](/static/assets/embedded/faq/images/parameter-dashboard1.png)
 
 This could be changed depending on the [mode](https://help.boldbi.com/cloud-bi/working-with-data-source/configuring-dashboard-parameters/#modes) (Literal/List) you configured in the dashboard parameter.
 
@@ -38,4 +38,4 @@ instance.updateFilters("City=SOCORRO");
 
 Please find the following update filter parameters output dashboard.
 
-![parameter dashboard3](/bold-bi-docs/static/assets/embedded/faq/images/parameter-dashboard3.png)
+![parameter dashboard3](/static/assets/embedded/faq/images/parameter-dashboard3.png)

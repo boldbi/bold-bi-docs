@@ -60,4 +60,4 @@ Support two types of Authentications:
 </tr>
 </table>	
 	
-![Email Settings page](/bold-bi-docs/static/assets/embedded/multi-tenancy/images/email-settings-page.png)
+![Email Settings page](/static/assets/embedded/multi-tenancy/images/email-settings-page.png)

@@ -18,23 +18,23 @@ This section explains how to create a webhook in the Bold BI Embedded.
 
 1. Click the `Add Webhook` button at the top right of the Webhooks section of the profile page.
 
-	![Add Webhook](/bold-bi-docs/static/assets/embedded/webhook/images/add-webhook.png)
+	![Add Webhook](/static/assets/embedded/webhook/images/add-webhook.png)
 	
 2. Provide the required webhook details on the `Add Webhook page`.
 
    * Provide a suitable `Name` for the webhook and `Description`.
-   * Select the event to trigger the webhook. For more details click [here](/embedded-bi/webhook/#events).
+   * Select the event to trigger the webhook. For more details click [here](/embedded-bi/manage-webhooks/#events).
    * Select the content type in the format in which you want to send the data.
    * Enter the webhook endpoints where the webhook data will be received.
-   * Enable authentication to verify the webhook sent by the Bold BI. This is optional. For more details click [here](/embedded-bi/webhook/#webhook-authentication).
-   * Enable singing to verify the integrity of the payload at the receiver end. This is optional. For more details click [here](/embedded-bi/webhook/#webhook-signing).
-   * Select the payload of a event to send in webhook data. For more details click [here](/embedded-bi/webhook/#payload).
+   * Enable authentication to verify the webhook sent by the Bold BI. This is optional. For more details click [here](/embedded-bi/manage-webhooks/#webhook-authentication).
+   * Enable singing to verify the integrity of the payload at the receiver end. This is optional. For more details click [here](/embedded-bi/manage-webhooks/#webhook-signing).
+   * Select the payload of a event to send in webhook data. For more details click [here](/embedded-bi/manage-webhooks/webhook-payload/).
 
-	![Webhook Details Page](/bold-bi-docs/static/assets/embedded/webhook/images/webhook-details-page.png)
+	![Webhook Details Page](/static/assets/embedded/webhook/images/webhook-details-page.png)
 
 3. After providing the webhook details, Click on the `Save` button on the bottom of the page, it will add the webhook into Bold BI Embedded.
 
-    ![Save Webhook](/bold-bi-docs/static/assets/embedded/webhook/images/save-webhook.png)
+    ![Save Webhook](/static/assets/embedded/webhook/images/save-webhook.png)
 
 ## Edit Webhook
 
@@ -44,15 +44,15 @@ You can edit the created webhooks in the webhook section of the profile page, an
 
 1. Click the `Actions` button in the webhook grid context menu and select `Edit` to edit the Webhook.
 
-	![Edit Webhook](/bold-bi-docs/static/assets/embedded/webhook/images/edit-webhook.png)
+	![Edit Webhook](/static/assets/embedded/webhook/images/edit-webhook.png)
 	
 2. Modify the webhook details on the `Edit webhook page`.
 
-   ![Webhook Details Page](/bold-bi-docs/static/assets/embedded/webhook/images/webhook-details-page.png)
+   ![Webhook Details Page](/static/assets/embedded/webhook/images/webhook-details-page.png)
 	
 3. After providing the webhook details, click on the `Save` button to update the webhook.
 
-    ![Save Webhook](/bold-bi-docs/static/assets/embedded/webhook/images/save-webhook.png)
+    ![Save Webhook](/static/assets/embedded/webhook/images/save-webhook.png)
 
 ## Delete Webhook
 
@@ -60,7 +60,7 @@ Webhooks can also be deleted from the Bold BI when they are no longer required.
 
 Click the `Actions` button in the webhook grid context menu and select `Delete` to delete the Webhook.
 
-![Delete Webhook](/bold-bi-docs/static/assets/embedded/webhook/images/delete-webhook.png)
+![Delete Webhook](/static/assets/embedded/webhook/images/delete-webhook.png)
 
 ## Deactivate Webhook
 
@@ -68,7 +68,7 @@ If you want to stop a webhook temporarily without deleting the webhook permanent
 
 Click the `Actions` button in the webhook grid context menu and select `Deactive` to deactivate the Webhook.
 
-![Deactivate Webhok](/bold-bi-docs/static/assets/embedded/webhook/images/deactivate-webhook.png)
+![Deactivate Webhok](/static/assets/embedded/webhook/images/deactivate-webhook.png)
 
 ## Webhook Events, Headers, and Payload 
 
@@ -78,7 +78,7 @@ A webhook is triggered in Bold BI for the two events below only. You can create 
    * Time Driven Dashboard Export
    * Alert Driven Dashboard Export
 	
-   ![Webhook Event](/bold-bi-docs/static/assets/embedded/webhook/images/webhook-event.png)
+   ![Webhook Event](/static/assets/embedded/webhook/images/webhook-event.png)
 #### Time Driven Dashboard Export
 
 A Time Driven Dashboard Export webhook can be configured only for normal schedule export in Bold BI.
@@ -129,7 +129,7 @@ Custom headers are used to send additional information to the destination URL. F
 
 2. To remove the header, click the `Remove` icon.
 
-   ![Webhook Custom Headers](/bold-bi-docs/static/assets/embedded/webhook/images/webhook-custom-headers.png)
+   ![Webhook Custom Headers](/static/assets/embedded/webhook/images/webhook-custom-headers.png)
 
 ### Payload
 
@@ -137,11 +137,11 @@ The data of the selected event will be sent as a payload; you can send all of th
 
 When this option is enabled, all data will be sent in the payload.
 
-![Webhook All Payload](/bold-bi-docs/static/assets/embedded/webhook/images/webhook-payload-all.png)
+![Webhook All Payload](/static/assets/embedded/webhook/images/webhook-payload-all.png)
 
 If you selected a specific payload, then selected data will be sent in the payload.
 
-![Webhook Selected Payload](/bold-bi-docs/static/assets/embedded/webhook/images/webhook-selected-payload.png)
+![Webhook Selected Payload](/static/assets/embedded/webhook/images/webhook-selected-payload.png)
 
 ## Webhook Security
 
@@ -157,16 +157,16 @@ The following are the two methods for authenticating the webhook URL:
 
 When creating a webhook, you can use password authentication (**Basic Auth**) to provide the username and password. The credentials (**Username:Password**) will be Base64 encoded and sent in the Authorization header (**Authorization: Basic <Credential\>**).
 
-![Webhook Password Authentication](/bold-bi-docs/static/assets/embedded/webhook/images/webhook-password-authentication.png)
+![Webhook Password Authentication](/static/assets/embedded/webhook/images/webhook-password-authentication.png)
 
 ### API Key
 
 When creating a webhook, users can use API authentication (**Basic Auth**) to provide the API Key. The API key will be Base64 encoded and sent in the Authorization header (**Authorization: Basic <API Key\>**).
 
-![Webhook API key Authentication](/bold-bi-docs/static/assets/embedded/webhook/images/webhook-apikey-authentication.png)
+![Webhook API key Authentication](/static/assets/embedded/webhook/images/webhook-apikey-authentication.png)
 
 ### Webhook Signing
 
 When creating a webhook, you can use request signature authentication to provide the secret key. This secret key is used to sign the payload (**HMAC-SHA256**), generate a Base64 encoded signature, and send it in the header (**x-signature**). This can be used to validate the payload’s integrity at the receiver end (**X-Signature: <Signature\>**).
 
-![Webhook Signing Security](/bold-bi-docs/static/assets/embedded/webhook/images/webhook-signing-security.png)
+![Webhook Signing Security](/static/assets/embedded/webhook/images/webhook-signing-security.png)

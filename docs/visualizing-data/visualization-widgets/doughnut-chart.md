@@ -12,7 +12,7 @@ documentation: ug
 
 The Doughnut chart allows you to showcase the proportionality of each item to the total in the form of doughnut-slices. It works best to display data with a small number of categories.
 
-![Doughnut chart](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/doughnutchart-column.png)
+![Doughnut chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/doughnutchart-column.png)
 
 ## How to configure table data in the Doughnut Chart
 
@@ -22,39 +22,39 @@ Follow the below steps to configure the data to the doughnut chart.
 
 1. Drag and drop the Doughnut chart into the canvas and resize it to your required size.
 
-![Drag and drop](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/add-doughnutchart.png)
+![Drag and drop](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/add-doughnutchart.png)
 
 2. Click the **Data Source** icon in the configuration panel.
 
-![Data source button](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/databutton.png)
+![Data source button](/static/assets/embedded/visualizing-data/visualization-widgets/images/databutton.png)
 
 3. Click the **CREATE NEW** button to launch a new connection from the connection type panel.
 
-![Add data source](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/datasourcebutton.png)
+![Add data source](/static/assets/embedded/visualizing-data/visualization-widgets/images/datasourcebutton.png)
 
 4. In the connection type panel, click any one of the listed connection type buttons shown. Here, the `Microsoft Excel` connection type is selected for demonstration.
 
-![Data source list](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/datasourcelist.png)
+![Data source list](/static/assets/embedded/visualizing-data/visualization-widgets/images/datasourcelist.png)
 
 5. In the `NEW DATA SOURCE` configuration panel, choose the file path and click the **Preview & Connect** button.
 
-![Connect button](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/Connectbutton.png)
+![Connect button](/static/assets/embedded/visualizing-data/visualization-widgets/images/Connectbutton.png)
 
 6. Drag your preferred table or view from the left pane from the data design view and click the **Save** button.
 
-![Virtual table](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/virtualtable.png)
+![Virtual table](/static/assets/embedded/visualizing-data/visualization-widgets/images/virtualtable.png)
 
 7. Click the **Properties** icon in the configuration panel. The property pane opens.
 
-![Properties button](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/designerpropertiesbutton.png)
+![Properties button](/static/assets/embedded/visualizing-data/visualization-widgets/images/designerpropertiesbutton.png)
 
 8. Now, switch to the **ASSIGN DATA** tab.
 
-![Assign data](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/assigndata.png)
+![Assign data](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/assigndata.png)
 
 9.  The **ASSIGN DATA** tab will be opened with available measures and dimensions from the connected data source.
 
-![Chart data](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/chartdata.png)
+![Chart data](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/chartdata.png)
 
 10. You can add the required data from Measures and Dimensions sections to the required field.
 
@@ -62,63 +62,63 @@ Follow the below steps to configure the data to the doughnut chart.
 
 You can add more than one measures section to the `Value(s)` field by dragging the required data.
 
-![Add data to value](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/add-data.png)
+![Add data to value](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/add-data.png)
 
 Now, the doughnut chart will be rendered as follows.
 
-![Configured Doughnut chart](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/configured-doughnutchart.png)
+![Configured Doughnut chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/configured-doughnutchart.png)
 
 Click **Settings** to change the required summary type from the available summary types shown in the settings.
 
-![Settings option](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/doughnutchart-settings.png)
+![Settings option](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/doughnutchart-settings.png)
 
 You can filter the data displayed in the Doughnut Chart by using the Filter option. For more details, refer to the [filter](/embedded-bi/visualizing-data/working-with-widgets/configuring-widget-filters/).
 
-![Filter option](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/filter-option.png)
+![Filter option](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/filter-option.png)
 
 You can format the data displayed in the Doughnut Chart by using the Format option. For more details, refer to the [measure format](/embedded-bi/visualizing-data/working-with-widgets/formatting-measure-type-column/)
 
-![Format option](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/format-option.png)
+![Format option](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/format-option.png)
 
 To remove the added value fields, click **Remove**.
 
-![Remove button](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/remove-fields.png)
+![Remove button](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/remove-fields.png)
 
 **Adding columns**
 
 You can add data from the Dimension field to the `Column(s)` field.
 
-![Add data to column](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/add-column.png)
+![Add data to column](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/add-column.png)
 
 The Doughnut chart will be rendered as follows.
 
-![Doughnut chart with column field](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/doughnutchart-column.png)
+![Doughnut chart with column field](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/doughnutchart-column.png)
 
 Add more than one value to the Columns field. The following alert message will open.
 
-![Drill alert](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/drillalert.png)
+![Drill alert](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/drillalert.png)
 
 You can enable this option to get further details about the selected chart region. To enable drill down, click **Yes**.
 
-![Selecting chart region](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/select-region.png)
+![Selecting chart region](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/select-region.png)
 
 > **NOTE:**  If you click No, a single value will be added to the Columns field.
 
 The drilled view of the selected chart region will be as follows.
 
-![Drilled chart](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/doughnutdrill.png)
+![Drilled chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/doughnutdrill.png)
 
 You can change the Settings.
 
-![Column settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/columnsettings.png)
+![Column settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/columnsettings.png)
 
 You can sort the dimension data using the **Sort** option under the Settings menu list. To apply sorting for data, refer to the [Sort](/embedded-bi/visualizing-data/working-with-widgets/advanced-sorting/#dimension-column).
 
-![Sort option](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/sortoption.png)
+![Sort option](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/sortoption.png)
 
 You can apply filters by selecting the `filter` option in settings.
 
-![Sort option](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/filteroption.png)
+![Sort option](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/filteroption.png)
 
 For more details, refer to the [filter](/embedded-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column).	
 
@@ -130,19 +130,19 @@ Similarly, you can add the Measures and Expression Columns to the Column field.
 
 The configured field names can be edited by using the `Rename` option provided in the settings menu.
 
-![Rename](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/rename.png)
+![Rename](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/rename.png)
 
 **Assigning rows**
 
 You can drag and drop the `Dimension` field into the `Rows` field.
 
-![Add data to row](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/chart-row.png)
+![Add data to row](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/chart-row.png)
 
 You can apply [filter](/embedded-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column) and [sort](/embedded-bi/visualizing-data/working-with-widgets/advanced-sorting/#dimension-column) options for the rows field, if required.
 
 This will render a Doughnut chart in a series.
 
-![Doughnut chart](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/doughnutchart-series.png)
+![Doughnut chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/doughnutchart-series.png)
 
 Scroll down to see all charts.
 
@@ -158,51 +158,51 @@ To configure data in Doughnut Chart, follow these steps:
 
 3. Focus on the Doughnut chart and click the Widget Settings icon.
 
-![Widget settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/widget-settings.png)
+![Widget settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/widget-settings.png)
 
 The property window will be opened as follows.
 
-![Property window](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/property-window.png)
+![Property window](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/property-window.png)
 
 You can see the list of properties available for the widget with default value.
 
 ### General Settings
 
-![Title](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/property.png)
+![Title](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/property.png)
 
 #### Name
 
 Allows you to set a `title` for the Doughnut chart widget.
 
-![Title](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/Name.png)
+![Title](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/Name.png)
 
 #### Subtitle
 
 Allows you to set a `subtitle` for the Doughnut chart widget.
 
-![Title](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/Subtitle.png)
+![Title](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/Subtitle.png)
 
 #### Description
 
 Set a `description` for the Doughnut chart, whose visibility will be denoted by **i** icon, and hovering over it will display the description in a tooltip.
 
-![Title](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/Description.png)
+![Title](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/Description.png)
 
 ### Basic settings
 
-![Basic settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/basic-settings.png)
+![Basic settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/basic-settings.png)
 
 #### Show Tooltip
 
 This option allows you to toggle the visibility of tooltip in a chart.
 
-![Title](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/tooltip.png)
+![Title](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/tooltip.png)
 
 #### Chart type
 
 Switch the widget view from the current chart type to another chart type.
 
-![Chart Type](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/chart-type.png)
+![Chart Type](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/chart-type.png)
 
 #### Enable animation
 
@@ -212,19 +212,19 @@ It animates the measure values when you enable the `Enable Animation.`
 
 Toggle the visibility of value labels.
 
-![Show value labels](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/value-labels.png)
+![Show value labels](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/value-labels.png)
 
 If you disable `Show Value Labels` properties, the dependent properties, which are **color**, **Value label position**, **Value label rotation** and **Value label suffix** will be hidden.
 
-![Show value label](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/value-label.png)
+![Show value label](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/value-label.png)
 
 #### Value Label Color
 
 This allows you to customize the value label's color.
 
-![Value label Color Option](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/data-label-color-option.png)
+![Value label Color Option](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/data-label-color-option.png)
 
-![Value label Color](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/data-label-color.png)
+![Value label Color](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/data-label-color.png)
 
 #### Data label
 
@@ -232,31 +232,31 @@ You can define the display format as a `category, value, percentage, category an
 
 #### Category
 
-![Category](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/category.png)
+![Category](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/category.png)
 
 #### Value
 
-![Value](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/value.png)
+![Value](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/value.png)
 
 #### Percentage
 
-![Percentage](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/value-labels.png)
+![Percentage](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/value-labels.png)
 
 #### Category and Value
 
-![Category and Value](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/categoryandvalue.png)
+![Category and Value](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/categoryandvalue.png)
 
 #### Value and percentage
 
-![Value and percentage](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/doughnutchart-valueandpercent.png)
+![Value and percentage](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/doughnutchart-valueandpercent.png)
 
 #### Category and Percentage
 
-![Category and Percentage](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/categoryandpercentage.png)
+![Category and Percentage](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/categoryandpercentage.png)
 
 #### All Details
 
-![All](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/all.png)
+![All](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/all.png)
 
 #### Value labels suffix
 
@@ -266,7 +266,7 @@ This allows you to show or hide the suffix value of value labels.
 
 This allows you to customize the suffix value of value labels.
 
-![Value labels suffix](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/value-label-suffix.png)
+![Value labels suffix](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/value-label-suffix.png)
 
 ### Chart Size
 
@@ -276,13 +276,13 @@ This allows you to customize the size of the doughnut chart. Values can be betwe
 
 The `Series Settings` option is enabled only when you configure the **series** in the `Assigned Data` tab.
 
-![Series Settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/series-settings.png)
+![Series Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/series-settings.png)
 
 ### Fixed rows and columns 
 
 If you enable the Fixed rows and columns, you can customize the rows and columns. The rows and columns are fixed based on the container size and size of the doughnut chart.
 
-![Doughnut Series Settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/series-settingsdoughnutchart.png)
+![Doughnut Series Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/series-settingsdoughnutchart.png)
 
 ### Row count 
 
@@ -292,19 +292,19 @@ By enabling the `Row Count`, you can set the count of the rows.
 
 By enabling the `Column Count,` you can set the column count.
 
-![Doughnut Series Settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/series-settingsfixed.png)
+![Doughnut Series Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/series-settingsfixed.png)
 
 >**Note**: If the invalid columns and rows are given, the rows and columns reset to their default value. For example: If you are given the number of rows as 6 and the number of columns as 5 but your data count is only 20. In this case, the rows and columns will reset to their default value.
 
 ### Legend Settings
 
-![Legend settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/legend-settings.png)
+![Legend settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/legend-settings.png)
 
 #### Show legend
 
 A Legend is a text used to describe the plotted data. It allows you to toggle the visibility of the legend in the chart and change the legend text position (selecting through the combo box).
 
-![Show legend](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/show-legend.png)
+![Show legend](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/show-legend.png)
 
 Enabling the **Custom Legend Text** option will allow you to define a custom text (through the text area) to display for each legend series (selecting through the combo box) in the chart.
 
@@ -312,25 +312,25 @@ Enabling the **Custom Legend Text** option will allow you to define a custom tex
 
 This allows you to change the chart legend title and label colors.
 
-![Chart Legend Color Option](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/legend-label-color-option.png)
+![Chart Legend Color Option](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/legend-label-color-option.png)
 
-![Chart Legend Color](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/legend-label-color.png)
+![Chart Legend Color](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/legend-label-color.png)
 
 #### Customize
 
 You can customize the legend text through the Custom Legend Settings dialog. This dialog will show the legend text list as labels at left and corresponding text area at right to add the formatted text to display instead.
 
-![Legend customization](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/legend-custom.png)
+![Legend customization](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/legend-custom.png)
 
 *After customize the legend*
 
-![Legend customization](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/legend.png)
+![Legend customization](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/legend.png)
 
 ### Position
 
 You can able to change the position for the legend at `Top, Left, Right,` and `Bottom.`
 
-![Legend position](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/legend-position.png)
+![Legend position](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/legend-position.png)
 
 #### Shape
 
@@ -340,19 +340,19 @@ This allows you to change the **shape** of the legend.
 
 This option allows you to change the shape of the legend in a `Circle.`
 
-![Show Legend shape](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/doughnutlegend-shape.png)
+![Show Legend shape](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/doughnutlegend-shape.png)
 
 ***Series Type***
 
 This option allows you to change the shape of the legend in `Series.`
 
-![Show Legend shape Series](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/doughnut-legendshape-series.png)
+![Show Legend shape Series](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/doughnut-legendshape-series.png)
 
 #### Title
 
 This allows you to add the legend title for the chart. It will reflect with the `Show Legend.`
 
-![Show Legend Title](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/doughnut-legendtitle.png)
+![Show Legend Title](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/doughnut-legendtitle.png)
 
 #### Text Overflow
 
@@ -362,31 +362,31 @@ This option allows you to customize legend text based on the 'Text Width' proper
 
 This option allows you to render legend items without any wrap and trim.
 
-![Legend Overflow None in chart](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/chart_LegendNone.png)
+![Legend Overflow None in chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/chart_LegendNone.png)
 
 **Trim**
 
 This option allows you to trim the legend items if its legend exceeds the 'Text Width' value.
 
-![Legend Overflow Trim in chart](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/chart_Legendtrim.png)
+![Legend Overflow Trim in chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/chart_Legendtrim.png)
 
 **Wrap**
 
 This option allows you to wrap legend items based on 'Text Width' value.
 
-![Legend Overflow Wrap in chart](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/chart_Legendwrap.png)
+![Legend Overflow Wrap in chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/chart_Legendwrap.png)
 
 #### Text Width
 
 This option allows you to set maximum width for the Legend Items and it is applicable only if text overflow set as Trim or Wrap.
 
-![Legend Text Width in chart](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/chart_Legendwidth.png)
+![Legend Text Width in chart](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/chart_Legendwidth.png)
 
 If you uncheck the `Show Legend` property in the property panel, the dependent properties **Legend color**, **Legend position**, **customization button** and **Legend title** are also hidden.
 
 ### Filter
 
-![Filter](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/filter.png)
+![Filter](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/filter.png)
 
 #### Act as Master Widget
 
@@ -404,7 +404,7 @@ When the Hierarchical Filter option is enabled, the `Top N` will be applied for 
 
 ### Link
 
-![Link](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/link.png)
+![Link](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/link.png)
 
 You can enable linking and configure navigating to a general URL with or without parameters. For more details, refer to the [Linking](/embedded-bi/visualizing-data/working-with-widgets/linking-urls-and-dashboards/).
 
@@ -412,29 +412,29 @@ You can enable linking and configure navigating to a general URL with or without
 
 By toggling the `series palette,` you can customize the proportion series segments’ colors.
 
-![Series palette](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/seriespalette.png)
+![Series palette](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/seriespalette.png)
 
 ### Font settings
 
 This section allows you to customize font size of chart elements.
 
-![Font settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/font-settings.png)
+![Font settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/font-settings.png)
 
 #### Based On
 
-![Individual mode](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/column-chart-individual-mode.png)
+![Individual mode](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/column-chart-individual-mode.png)
 
 #### Color Mapping Type
 
 Using the Color Mapping type, you can apply the colors to the series either based on data or index.
 
-![Color Mapping Type option](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/column-chart-formatting-color-mapping-type-options.png)
+![Color Mapping Type option](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/column-chart-formatting-color-mapping-type-options.png)
 
 ***Data***
 
 It allows you to apply color for chart series based on data. If you want to apply a specific color to specific data, you can use Data based color mapping. By default, the Color Mapping Type will be `Data`.
 
-![Color Mapping Type Data](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/column-chart-individual-mode.png)
+![Color Mapping Type Data](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/column-chart-individual-mode.png)
 
 > **IMPORTANT:**  Only top 100 records will be listed in the 
 dialog. 
@@ -444,15 +444,15 @@ It allows you to apply color for chart series based on `Index`. Such that the co
 
 For example, If you are displaying the countries based on the increasing order of the case count, then the index-based color mapping will be useful to set the colors based on the rank. Say red color to the top, then the red color will be maintained for the country having the largest case count.
 
-![Color Mapping Type Index](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/column-chart-formatting-index-based-color.png)
+![Color Mapping Type Index](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/column-chart-formatting-index-based-color.png)
 
 **Note:** We prefer to use Index based color customization only for minimum data(upto 15 series).
 
-![Use Basedon Palette](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/column-chart-individual-mode.png)
+![Use Basedon Palette](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/column-chart-individual-mode.png)
 
-![Change Series color](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/seriescolor-palette-window.png)
+![Change Series color](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/seriescolor-palette-window.png)
 
-![Series palette Customization](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/color-customization.png)
+![Series palette Customization](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/color-customization.png)
 
 ### Use Default Palette
 
@@ -460,11 +460,11 @@ This option shows when you add more than one measure field to the Value(s).
 
 By toggle off the `Use Default Palette,` you can customize the proportion series segments' colors by clicking the colored squares.
 
-![Series color palette window](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/series-color-palette-window.png)
+![Series color palette window](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/series-color-palette-window.png)
 
 ### Container Appearance
 
-![Container Appearance](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/container-appearance.png)
+![Container Appearance](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/container-appearance.png)
 
 ### Title Alignment
 
@@ -524,7 +524,7 @@ This allows you to toggle the visibility of the `shadow` surrounding the widget.
 
 ### Container actions
 
-![Container Actions](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/container-actions.png)
+![Container Actions](/static/assets/embedded/visualizing-data/visualization-widgets/images/doughnut-chart/container-actions.png)
 
 #### Show Header
 

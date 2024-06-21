@@ -15,11 +15,11 @@ Follow these steps to split the first part of a name from the name column:
 
 1. First, you need to create an [expression](https://help.boldbi.com/embedded-bi/working-with-data-source/transforming-data/configuring-expression-columns/) by using the above syntax, and you can see how we separate the names using space in the following image.
 
-    ![split expression](/bold-bi-docs/static/assets/embedded/faq/images/split-expression.png)
+    ![split expression](/static/assets/embedded/faq/images/split-expression.png)
 
 2. Then, you need to [configure](https://help.boldbi.com/embedded-bi/working-with-data-source/transforming-data/configuring-expression-columns/#configuring-expression-column-in-widgets) this expression column to your grid widget. Once, you bind the generated expression in your grid, it will show the first name from the full name.
 
-    ![split output](/bold-bi-docs/static/assets/embedded/faq/images/split-output.png)
+    ![split output](/static/assets/embedded/faq/images/split-output.png)
 
 3. Similarly, you can able to split the second part of the name from the name column by using the following:
 

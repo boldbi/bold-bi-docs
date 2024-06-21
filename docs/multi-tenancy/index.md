@@ -14,7 +14,7 @@ Bold BI Enterprise Edition has multi-tenant support, which allows administrator 
 
 Architecture of the Bold BI multi-tenant solution is given in the following image. Each tenant has deployed with its own database and resource, which ensures the data isolation of one tenant from others.
 
-![MultiTenant Architecture](/bold-bi-docs/static/assets/embedded/multi-tenancy/images/multi-tenant-architect.png)
+![MultiTenant Architecture](/static/assets/embedded/multi-tenancy/images/multi-tenant-architect.png)
 
 To setup multi-tenant solution, install and deploy the Bold BI Enterprise Edition, which will deploy the first tenant with Identity Provider (IDP) application in isolated database. Then, you can deploy many tenants with their own database. 
 
@@ -40,7 +40,7 @@ Also, users belong to one tenant can only see the users belong to the same tenan
 
 You can deploy new tenant in Bold BI Enterprise application by clicking the `Create Site` button in site management page. New tenant deployment will use own database and resource storage that is completely separated from other tenant. Learn more about creating new tenant [here](/embedded-bi/multi-tenancy/create-new-site/).
 
-![Create Site](/bold-bi-docs/static/assets/embedded/multi-tenancy/images/create-button.png)
+![Create Site](/static/assets/embedded/multi-tenancy/images/create-button.png)
 
 ## Add or invite users
 

@@ -12,7 +12,7 @@ This section explains how to import single group or bulk groups from OpenID prov
 
 Select the `Import from OpenID` option from `New Group` drop-down list on Groups homepage.
 
-![Import OpenId groups](/bold-bi-docs/static/assets/embedded/managing-resources/manage-groups/images/import-OpenId-icon.png)
+![Import OpenId groups](/static/assets/embedded/managing-resources/manage-groups/images/import-OpenId-icon.png)
 
 > **NOTE:**  Before you import an OpenID group, first you need to configure the `Group Import settings` in authentication settings page. Refer this link [how to configure OpenID Authorization Settings](/embedded-bi/site-administration/sso/openid-support/). 
 
@@ -20,15 +20,15 @@ Select the `Import from OpenID` option from `New Group` drop-down list on Groups
 
 To import the OpenID connect groups, you can use the both Dashboard Server and User Management Servers authentication provider. Choose the provider from the drop-down list at the top left corner.
 
-![Select Provider](/bold-bi-docs/static/assets/embedded/managing-resources/manage-groups/images/Openid-select-provider.png#width=65%)
+![Select Provider](/static/assets/embedded/managing-resources/manage-groups/images/Openid-select-provider.png#width=65%)
 
 Choose the groups from the list and click the `Import groups` at the top right corner.
 
-![Import OpenId groups](/bold-bi-docs/static/assets/embedded/managing-resources/manage-groups/images/Openid-import-enable.png)
+![Import OpenId groups](/static/assets/embedded/managing-resources/manage-groups/images/Openid-import-enable.png)
 
 Bold BI will import the chosen groups and a confirmation message will be displayed as shown in the following figure.
 
-![Success message after imported the OpenId groups](/bold-bi-docs/static/assets/embedded/managing-resources/manage-groups/images/Openid-import-success.png#width=70%)
+![Success message after imported the OpenId groups](/static/assets/embedded/managing-resources/manage-groups/images/Openid-import-success.png#width=70%)
 
 The success message box explains the groups status, which were imported into the Bold BI. Once you click `OK` or `Close Icon`, list will be reloaded and imported groups will disappear.
 
@@ -36,4 +36,4 @@ The success message box explains the groups status, which were imported into the
 
 If you want to update the OpenID settings, select the `Provider` from drop-down list and click the `Modify`. It will redirect to respective authentication settings page.
 
-![OpenId Authenticate setting page](/bold-bi-docs/static/assets/embedded/managing-resources/manage-groups/images/Openid-group-modify.png#width=65%)
+![OpenId Authenticate setting page](/static/assets/embedded/managing-resources/manage-groups/images/Openid-group-modify.png#width=65%)

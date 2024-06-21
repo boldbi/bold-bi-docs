@@ -14,11 +14,11 @@ documentation: ug
 
 *Figure: Default Tree map visualization showing country wise stocks count.* 
 
-![Default Treemap visualization](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/tree-map-widget.png)
+![Default Treemap visualization](/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/tree-map-widget.png)
 
 *Figure: Tree map visualization after various customizations.*
 
-![Customized Treemap visualization](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/tree-map.png)
+![Customized Treemap visualization](/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/tree-map.png)
 
 ## How to configure the table data to tree map widget
 
@@ -32,31 +32,31 @@ The following steps explains data configuration of tree map.
 
 1.  Drag and drop the Tree Map control icon from the toolbox into the design panel. You can find the control in toolbox by search.
 
-![Adding a treemap](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/drop-widget.png)
+![Adding a treemap](/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/drop-widget.png)
 
 2.	Resize the widget as required.
 
-![Repositioning treemap widget](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/resizing-widget.png)
+![Repositioning treemap widget](/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/resizing-widget.png)
 
 ### Step 2: Configuring data into the widget
 
 1.   Click the `Properties` icon in the `configuration panel.`
 
-![Clikcing properties pane icon](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/designerpropertiesbutton.png)
+![Clikcing properties pane icon](/static/assets/embedded/visualizing-data/visualization-widgets/images/designerpropertiesbutton.png)
 
 2.	The `properties` panel of the widget will be displayed as shown in the following screenshot. Now, switch to the `ASSIGN DATA` tab.
 
-![Properties pane view](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/propertypanel.png)
+![Properties pane view](/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/propertypanel.png)
 
 3.	The data tab will be opened with the available columns from the connected data source.
 
-![Assign data pane](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/data-pane.png)
+![Assign data pane](/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/data-pane.png)
 
 ### Adding Value section 
 
 Bind column by dragging and dropping element from sections to `values.`
 
-![Adding value field](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/addingvalues.png)
+![Adding value field](/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/addingvalues.png)
 
 > **IMPORTANT:**  
 * The field added in this section will act as a measure value. 
@@ -67,20 +67,20 @@ You can `filter,` `format,` and `Rename` the data displayed in the widget from t
 
 The following screenshots shows the various settings menu options based on the type of field configured in the type of section. 
 
-![Settings Icon](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/field-settings.png)
+![Settings Icon](/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/field-settings.png)
 
 
 #### Renaming fields
 
 The configured field names can be edited by using the `Rename` option provided in the settings menu.
 
-![Rename](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/rename.png)
+![Rename](/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/rename.png)
 
 #### Changing the aggregation type
 
 You can change the aggregation type of the measure section from the settings menu as shown in the following screenshot.
 
-![Summary type changing](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/summary.png)
+![Summary type changing](/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/summary.png)
 
 Refer to this [ section ](/embedded-bi/visualizing-data/working-with-widgets/aggregating-value-columns-based-on-type/)for more details.
 
@@ -88,21 +88,21 @@ Refer to this [ section ](/embedded-bi/visualizing-data/working-with-widgets/agg
 
 You can use the `Filters` to change the values by selecting the Filter option. For more details, refer to the [Measure filter](/embedded-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-measure-column) and [dimension filter](/embedded-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column).
 
-![Filter menuitem](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/filter-value.png)
+![Filter menuitem](/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/filter-value.png)
 
 #### Measure formatting
 
 You can format the elements by selecting the `Format` option. For more details, refer to the [measure format](/embedded-bi/visualizing-data/working-with-widgets/formatting-measure-type-column/).
 
-![Formatting menu item](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/format-value.png)
+![Formatting menu item](/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/format-value.png)
 
 ### Adding Column section 
 
 Drag and drop the elements from sections to `columns.`
 
-![Configuring column](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/adding-column.png)
+![Configuring column](/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/adding-column.png)
 
-![Widget visualization after minimum configuration](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/configure-widget.png)
+![Widget visualization after minimum configuration](/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/configure-widget.png)
 
 > **IMPORTANT:**  
 * The field added in this section will act as a dimension value. 
@@ -112,7 +112,7 @@ Drag and drop the elements from sections to `columns.`
 
 You can change the `Settings.`
 
-![Settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/settings.png)
+![Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/settings.png)
 
 #### Renaming fields
 
@@ -122,7 +122,7 @@ The configured field names can be edited by using the `Rename` option provided i
 
 You can apply `filter` by selecting the `Filter(s)` option in the settings. For more details, refer to the [filter](/embedded-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column).
 
-![Configuring filter for dimension column](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/configuring-filter-column.png)
+![Configuring filter for dimension column](/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/configuring-filter-column.png)
 
 ### Tooltip section 
 
@@ -134,79 +134,79 @@ You can format the tree map for better illustration of the view that you require
 
 ### General settings
 
-![General Settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/property.png)
+![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/property.png)
 
 #### Name
 
 This allows you to set `title` for this tree map widget.
 
-![General Settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/title.png)
+![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/title.png)
 
 #### Subtitle
 
 This allows you to set `subtitle` for this tree map widget.
 
-![General Settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/Subtitle.png)
+![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/Subtitle.png)
 
 #### Description
 
 This allows you to set brief explanation about this grid widget.
 
-![General Settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/Description.png)
+![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/Description.png)
 
 ### Basic settings
 
-![Basic Settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/basic-settings.png)
+![Basic Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/basic-settings.png)
 
 #### Show Tooltip
 
 This option allows you to toggle the visibility of tooltip in the tree map.
 
-![General Settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/tooltip.png)
+![General Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/tooltip.png)
 
 #### Show legend
 
 This allows you to toggle the visibility of legend.
 
-![Legend enabled Treemap](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/showlegend.png)
+![Legend enabled Treemap](/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/showlegend.png)
 
 #### Label color
 
 This allows you to select the color for the tree map label. The default value is `#ffffff.`
 
-![After changing the label color](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/label-color.png)
+![After changing the label color](/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/label-color.png)
 
-![label color](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/label-color-change.png)
+![label color](/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/label-color-change.png)
 
 #### Show Value Label
 
 This allows you to toggle the visibility of `value labels.`
 
-![Value label](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/value-label.png)
+![Value label](/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/value-label.png)
 
 #### Enable drill-down
 
 In case of hierarchical view, multiple levels will get rendered in the same view. **This option will be visible, if you bind more than one column in the Columns section**. This can be switched to drill down view by enabling this setting.
 
-![Drill down Applied in Treemap](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/drilldown.png)
+![Drill down Applied in Treemap](/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/drilldown.png)
 
 ### Link
 
-![Linking](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/link.png)
+![Linking](/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/link.png)
 
 To configure linking to URL or dashboard with the widget using its settings. For more details, refer to the [Linking](/embedded-bi/visualizing-data/working-with-widgets/linking-urls-and-dashboards/).
 
 ### Formatting
 
-![Formatting color](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/formatting-settings.png)
+![Formatting color](/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/formatting-settings.png)
 
 #### Monochromatic
 
 This allows you to configure a single-color palette whose saturation will be varied based on the value density. The default value is `#f6727f.`
 
-![After changing the monochromatic color](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/applied-color.png)
+![After changing the monochromatic color](/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/applied-color.png)
 
-![After the monochromatic color](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/applied-color-change.png)
+![After the monochromatic color](/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/applied-color-change.png)
 
 #### Advanced setting
 
@@ -214,7 +214,7 @@ Select Advance setting to configure conditions and apply color to the cells base
 
 ### Filter
 
-![Filter properties](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/filter.png)
+![Filter properties](/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/filter.png)
 
 #### Act as master widget
 
@@ -238,19 +238,19 @@ In case, if you have the requirement to highlight any data based on some conditi
 
 1.	In the properties pane, under the Formatting section, click the Advanced Setting radio button.
 
-![Enable advance formatting](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/advance-formatting.png)
+![Enable advance formatting](/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/advance-formatting.png)
 
 2.	This will open the Conditional Formatting dialog.
 
-![Conditional Formatting dialog](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/format-dialog.png)
+![Conditional Formatting dialog](/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/format-dialog.png)
 
 3.	Select the mode and enter the conditions as required and click the Save button to apply. 
 
-![Apply conditions](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/applycondition.png)
+![Apply conditions](/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/applycondition.png)
 
 4.	Now, the widget visualization will be updated based on the conditions. 
 
-![Treemap with conditional formatting](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/formatting-result.png)
+![Treemap with conditional formatting](/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/formatting-result.png)
 
 Refer to the following sections for the detailed steps on using the [Gradient](/embedded-bi/visualizing-data/visualization-widgets/tree-map/#gradient-mode), [Rule](/embedded-bi/visualizing-data/visualization-widgets/tree-map/#rule-based-condition-mode), and [individual](/embedded-bi/visualizing-data/visualization-widgets/tree-map/#individual-mode) modes. 
 
@@ -284,7 +284,7 @@ If the region of tree map value is out of the specified range,then the color spe
 
 This allows you to customize the fill color of the tree map based on one or more numerical / text conditions.
 
-![Rule mode](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/rulemode.png)
+![Rule mode](/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/rulemode.png)
 
 #### Value type
 
@@ -298,11 +298,11 @@ You can give a meaningful name to the applied conditions.
 
 Choose the condition for measure field from the highlighted conditions.
 
-![Numeric condition types](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/numericcondition.png)
+![Numeric condition types](/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/numericcondition.png)
 
 If you selected the dimension as a based-on field and want to use text condition, the following text-based conditions are available.
 
-![Text condition types](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/textcondition.png)
+![Text condition types](/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/textcondition.png)
 
 > **NOTE:**  The text-based condition type will be enabled only when the dimension selected is used as the based-on field.
 
@@ -322,13 +322,13 @@ Select the fill color for that condition using the color picker.
 
 Click the `add condition` to specify add new condition. 
 
-![Add condition](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/addcondition.png)
+![Add condition](/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/addcondition.png)
 
 #### Delete condition
 
 Click the `delete` button to remove the existing condition. 
 
-![Remove conditions](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/delete-conditions.png)
+![Remove conditions](/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/delete-conditions.png)
 
 #### Individual mode
 
@@ -336,7 +336,7 @@ Using the `individual` mode, you can specify a color for each record.
 
 > **IMPORTANT:**  Only top 100 records will be listed in the dialog. 
 
-![Individual mode](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/individualmode.png)
+![Individual mode](/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/individualmode.png)
 
 #### Color
 
@@ -349,7 +349,7 @@ To undo all the changes, click `reset.`
 
 ### Container Appearance
 
-![Container Appearance](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/spline-area-chart/container-appearance.png)
+![Container Appearance](/static/assets/embedded/visualizing-data/visualization-widgets/images/spline-area-chart/container-appearance.png)
 
 ### Title Alignment
 
@@ -408,7 +408,7 @@ This allows you to toggle the visibility of  the `shadow` surrounding the widget
 
 ### Container actions
 
-![Container Actions](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/spline-area-chart/container-actions.png)
+![Container Actions](/static/assets/embedded/visualizing-data/visualization-widgets/images/spline-area-chart/container-actions.png)
 
 #### Show Header
 
@@ -454,4 +454,4 @@ We hide the widget elements based on the size of the widget for better readabili
 
 When the tree map has been placed with less than 7 columns legend will be hidden.
 
-![Widget Element](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/legend.png).
+![Widget Element](/static/assets/embedded/visualizing-data/visualization-widgets/images/tree-map/legend.png).

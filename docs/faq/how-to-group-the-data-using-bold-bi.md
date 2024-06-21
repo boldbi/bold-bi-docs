@@ -17,7 +17,7 @@ You can apply grouping based on specific fields either in the code view mode or 
 
 2.	Drag and drop the table from the table schema in the data design view page. Switch to the code view by enabling the toggle option in the tools pane, as shown in the following image.
 
-    ![Code view mode](/bold-bi-docs/static/assets/embedded/faq/images/patientdb-code-view.png#max-width=100%)
+    ![Code view mode](/static/assets/embedded/faq/images/patientdb-code-view.png#max-width=100%)
 
 3.	You can find the query editor window in which you can alter the query by using `GROUP BY` with the aggregate functions like SUM(), COUNT(), MAX(), MIN(), and more to group the records based on one or more columns. Here, the data is grouped based on the `PatientID` column.
 
@@ -38,11 +38,11 @@ You can apply grouping based on specific fields either in the code view mode or 
 
 4.	After entering your query, click the `Run` button in the tools pane.
 
-    ![Run icon](/bold-bi-docs/static/assets/embedded/faq/images/patientdb-run-icon.png#max-width=100%)
+    ![Run icon](/static/assets/embedded/faq/images/patientdb-run-icon.png#max-width=100%)
 	
 5.	You can view the data for your query at the bottom of the query editor by clicking `Update.`
 
-    ![Resulting data](/bold-bi-docs/static/assets/embedded/faq/images/patientdb-grouping-result.png#max-width=100%)
+    ![Resulting data](/static/assets/embedded/faq/images/patientdb-grouping-result.png#max-width=100%)
 	
 ## Grouping data using views:
 
@@ -66,10 +66,10 @@ You can apply grouping based on specific fields either in the code view mode or 
 
 2.	You can access the view by [Connecting Bold BI to the SQL data source.](https://help.boldbi.com/embedded-bi/working-with-data-source/data-connectors/sql-data-source/#connecting-bold-bi-to-microsoft-sql-server-data-source) After connecting to the data source, drag and drop the view from the views schema in the data design view page.
     
-    ![Drag view](/bold-bi-docs/static/assets/embedded/faq/images/drag-views.png#max-width=100%)
+    ![Drag view](/static/assets/embedded/faq/images/drag-views.png#max-width=100%)
 	
 3.	Click on the `Update`, and you can find the records based on the grouped column.
 
-    ![Resulting view data](/bold-bi-docs/static/assets/embedded/faq/images/view-data.png#max-width=100%)
+    ![Resulting view data](/static/assets/embedded/faq/images/view-data.png#max-width=100%)
 	
     

@@ -12,19 +12,19 @@ In the Bold BI application, use the required tables to create a Pivot table in t
 
 1. Products
 
-    ![Products Table](/bold-bi-docs/static/assets/embedded/faq/images/products-table.png#max-width=60%)
+    ![Products Table](/static/assets/embedded/faq/images/products-table.png#max-width=60%)
 
 2. Customers
 
-    ![Customers Table](/bold-bi-docs/static/assets/embedded/faq/images/customers-table.png#max-width=60%)
+    ![Customers Table](/static/assets/embedded/faq/images/customers-table.png#max-width=60%)
 
 3. Product_customers
 
-    ![Product and Cutomers Table](/bold-bi-docs/static/assets/embedded/faq/images/product-customers-table.png#max-width=60%)
+    ![Product and Cutomers Table](/static/assets/embedded/faq/images/product-customers-table.png#max-width=60%)
 
 4. V_product_customers
 
-    ![Product and Cutomers View](/bold-bi-docs/static/assets/embedded/faq/images/product-customers-view.png#max-width=60%)
+    ![Product and Cutomers View](/static/assets/embedded/faq/images/product-customers-view.png#max-width=60%)
 
 Follow these steps to create and use Pivot tables in Bold BI.
 
@@ -32,17 +32,17 @@ Follow these steps to create and use Pivot tables in Bold BI.
 
     **CREATE EXTENSION IF NOT EXISTS tablefunc;**
 
-    ![Create Extension](/bold-bi-docs/static/assets/embedded/faq/images/create-extension.png#max-width=60%) 
+    ![Create Extension](/static/assets/embedded/faq/images/create-extension.png#max-width=60%) 
 
 2. Connect to PostgreSQL data connection in Bold BI.
 
 3. Switch to the code view mode of a data source.
 
-    ![Pivot table in Bold BI](/bold-bi-docs/static/assets/embedded/faq/images/pivot-table-in-boldbi.png)
+    ![Pivot table in Bold BI](/static/assets/embedded/faq/images/pivot-table-in-boldbi.png)
 
 4. Write a query using the Crosstab function in the query designer page to use the required tables of a data source and click the following highlighted `Run` button to execute the query.
 
-    ![Prepare Query](/bold-bi-docs/static/assets/embedded/faq/images/prepare-query.png)
+    ![Prepare Query](/static/assets/embedded/faq/images/prepare-query.png)
 
 ```js    
 SELECT * FROM crosstab( 
@@ -66,4 +66,4 @@ AS ct(customers_name VARCHAR, Tweetholdar NUMERIC,Promuton NUMERIC,Transniollor 
 ```
 5. Now, click `Update` to view the query result of the pivot table. 
 
-    ![Cross tab query result](/bold-bi-docs/static/assets/embedded/faq/images/crosstab-query-result.png)
+    ![Cross tab query result](/static/assets/embedded/faq/images/crosstab-query-result.png)

@@ -16,11 +16,11 @@ The visualization of the number card widget is customizable, and you can format 
 
 a)  Single Number Card widget.
 
-![Number Card](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/single-card.png)
+![Number Card](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/single-card.png)
 
 b)	Series of Number Card widget.
 
-![Series Number card](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/series-card.png)
+![Series Number card](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/series-card.png)
 
 ## How to configure data into the Number Card widget
 
@@ -30,49 +30,49 @@ The following procedure illustrates data configuration of the card:
 
 1.	Drag the `Number Card` control icon from the tool box into the design panel. You can find the control in the tool box by search.
 
-![Drag and drop](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/drop-widget.png)
+![Drag and drop](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/drop-widget.png)
 
 2.	Click `Data Sources` icon in the configuration panel.
 
-![Data Source](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/databutton.png)
+![Data Source](/static/assets/embedded/visualizing-data/visualization-widgets/images/databutton.png)
 
 3.	Click `CREATE NEW` to launch a new connection from the connection-type panel.
 
-![New data source](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/datasourcebutton.png)
+![New data source](/static/assets/embedded/visualizing-data/visualization-widgets/images/datasourcebutton.png)
 
 4.	In the connection-type panel, click any one of the listed connection type buttons shown. Here, the `Microsoft Excel` connection type is selected for demonstration.
 
-![Datasource list](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/datasourcelist.png)
+![Datasource list](/static/assets/embedded/visualizing-data/visualization-widgets/images/datasourcelist.png)
 
 5.	In the `NEW DATA SOURCE` configuration panel, enter the required details.
 
-![Enter data source details](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/connectbutton.png)
+![Enter data source details](/static/assets/embedded/visualizing-data/visualization-widgets/images/connectbutton.png)
 
 6.	Click `Preview & Connect`. Now, the `Choose Table(s)` dialog will be shown.
 
-![Choose tables](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/choose-tables.png)
+![Choose tables](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/choose-tables.png)
 
 7.	After selecting the required tables, click `Connect`.
 
-![Click connect](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/connect-data-source.png)
+![Click connect](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/connect-data-source.png)
 
 8.	Drag your preferred table from the left pane to the data design view and click `Save`.
 
-![Save data source](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/save-data-source.png)
+![Save data source](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/save-data-source.png)
 
 Now, the data source is successfully created.
 
 9.	Click the `Properties` icon in the configuration panel.
 
-![Properties icon](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/properties-icon.png)
+![Properties icon](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/properties-icon.png)
 
 The properties panel of the widget will be displayed as shown in the following screenshot.
 
-![Properties pane](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/properties-panel.png)
+![Properties pane](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/properties-panel.png)
 
 10.	Now, switch to the `ASSIGN DATA` tab.
 
-![Assign Data click](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/assign-data-tab.png)
+![Assign Data click](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/assign-data-tab.png)
 
 The data pane lists the available `measures` and `dimensions` from the data source. 
 
@@ -80,15 +80,15 @@ The data pane lists the available `measures` and `dimensions` from the data sour
 
 Drop the measure field data into the `Measure` section.
 
-![Configure measure](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/configure-measures.png)
+![Configure measure](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/configure-measures.png)
 
 Now, the widget is rendered successfully with the default properties and formatting. 
 
-![Number card data](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/configured-widget.png)
+![Number card data](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/configured-widget.png)
 
 You can change the `aggregation type` of the measure section from the settings menu as shown in the following screenshot. Refer to [this section](/embedded-bi/visualizing-data/working-with-widgets/aggregating-value-columns-based-on-type/) for more details.
 
-![Change aggregation](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/change-aggregation.png)
+![Change aggregation](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/change-aggregation.png)
 
 > **NOTE:**  Refer to the following sections to learn more about how to filter and format data.
 > **NOTE:** [Measure filter](/embedded-bi/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-measure-column) 
@@ -99,17 +99,17 @@ You can change the `aggregation type` of the measure section from the settings m
 
 The Series section allows you to plot a `series` of cards over the dropped field. In this following example, the team-wise goals are displayed in the card.
 
-![Configure series](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/configure-series.png)
+![Configure series](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/configure-series.png)
 
 ### Sparkline
 
 You can use the `Sparkline` section to showcase the variation of measurement in the Number Card widget.
 
-![Configure sparkline](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/configure-sparkline.png)
+![Configure sparkline](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/configure-sparkline.png)
 
 Now, the card will be rendered with the sparkline. 
 
-![Sparkline view](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/sparkline-view.png)
+![Sparkline view](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/sparkline-view.png)
 
 ### Image
 
@@ -121,21 +121,21 @@ In the following example, each country flag is displayed in the number card by c
 
 **Data screenshot**
 
-![Example data](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/sample-data-url.png)
+![Example data](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/sample-data-url.png)
 
 Follow the given steps to show the country image in the Number card series:
 
 1.	Configure the Country Image field into the Image section.
 
-![Configure Image](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/configure-image.png)
+![Configure Image](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/configure-image.png)
 
 2.	Make sure whether the pattern text is properly updated.
 
-![Pattern text](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/pattern-text.png)
+![Pattern text](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/pattern-text.png)
 
 Now, the widget will be rendered with image data. 
 
-![Pattern Image](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/pattern-image.png)
+![Pattern Image](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/pattern-image.png)
 
 
 
@@ -145,7 +145,7 @@ If your data source contains the partial data of the URL, enter the URL text wit
 
 For example, consider the following data source. 
 
-![Example data](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/sample-image-data.png)
+![Example data](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/sample-image-data.png)
 
 It contains the Players name and part of their image URL in the above columns. 
 
@@ -159,43 +159,43 @@ For example, if you try to show the Goals of each team and configure the player 
 
 *Configure Image Section*
 
-![Configure Image source](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/configure-image-field.png)
+![Configure Image source](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/configure-image-field.png)
 
 *Update Image Pattern*
 
-![Update image pattern](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/update-image-pattern.png)
+![Update image pattern](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/update-image-pattern.png)
 
 *Final view* 
 
-![Series with image](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/image-in-series.png)
+![Series with image](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/image-in-series.png)
 
 > **NOTE:**  The image will be hidden automatically, if the width of the number card is low. An information icon will display the message as highlighted in the following image.
 
-![Information icon](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/info-icon.png)
+![Information icon](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/info-icon.png)
 
 #### Background image
 
 Like the image option, you can also configure the `background image` of the Number Card.
 
-![Background image](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/background-field.png)
+![Background image](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/background-field.png)
 
-![Background image](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/background-image.png)
+![Background image](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/background-image.png)
 
 ## How to format the Number Card widget
 
 To format the properties of the Number Card widget, switch to the `PROPERTIES` tab.
 
-![properties pane](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/switchto-properties-tab.png)
+![properties pane](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/switchto-properties-tab.png)
 
 ### General properties
 
 The following highlighted section in the image allows you to modify the widgets name, subtitle, and to add useful description.
 
-![general properties](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/general-properties.png)
+![general properties](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/general-properties.png)
 
 The following screenshot shows the Number Card widget, after modifying the header properties.
 
-![Header properties customized](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/header-properties.png)
+![Header properties customized](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/header-properties.png)
 
 ### Basic Settings
 
@@ -203,7 +203,7 @@ The following screenshot shows the Number Card widget, after modifying the heade
 
 This option allows you to toggle the visibility of tooltip in a card.
 
-![Header properties customized](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/tooltip.png)
+![Header properties customized](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/tooltip.png)
 
 ## How to apply conditional formatting in Number card
 
@@ -213,11 +213,11 @@ By enabling the advanced settings in formatting , you can customize the color, s
 
 In the properties pane, check the `Advanced Setting` check box provided under the `formatting` section. 
 
-![Enable advance settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/enable-advance-settings.png)
+![Enable advance settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/enable-advance-settings.png)
 
 This will open the `Conditional Formatting` dialog. 
 
-![Conditional formatting](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/conditional-formatting.png)
+![Conditional formatting](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/conditional-formatting.png)
 
 #### Properties
 
@@ -236,35 +236,35 @@ You can customize more than one property using the rule based conditional format
 
 To apply the conditions from the highlighted drop-down, choose the field from the `Based On` section. The drop-down contains the columns present in the data source.
 
-![Based on field](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/based-on-field.png)
+![Based on field](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/based-on-field.png)
 
 #### Summary type 
 
 You can select the summary type for the selected measure field. 
 
-![Summary type](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/summary-type.png)
+![Summary type](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/summary-type.png)
 
 #### Value type
 
 The value type drop-down allows you to choose whether you are going to apply the direct value (specific number like 3 goals, order ID 10248 ) or percentage (values above 30% or 50 %). 
 
-![Value type](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/value-type.png)
+![Value type](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/value-type.png)
 
 #### Condition name
 
 You can give a meaningful name to the applied conditions using the highlighted text box. 
 
-![Condition name](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/condition-name.png)
+![Condition name](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/condition-name.png)
 
 #### Condition type
 
 Choose the condition for measure field from the highlighted conditions. 
 
-![Condition type](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/condition-type.png)
+![Condition type](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/condition-type.png)
 
 The following text-based conditions are available, if you have selected the dimension as a based on field and want to use text condition.
 
-![Dimension condition](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/dimension-condition.png)
+![Dimension condition](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/dimension-condition.png)
 
 > **NOTE:**The text-based condition type will be enabled only when the dimension configured in the series field is used as the based on field. 
 
@@ -282,13 +282,13 @@ For the dimensions, case sensitive option is provided to choose whether the ente
 
 Select the checkbox next to the options to customize the properties, and similarly click `Font Style` icons to apply them, as shown in the following screenshot.
 
-![Select properties](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/customize-properties.png)
+![Select properties](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/customize-properties.png)
 
-![Format Customization](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/formatting-customization.png)
+![Format Customization](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/formatting-customization.png)
 
 ### Appearance settings
 
-![Appearance Settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/appearance-settings.png)
+![Appearance Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/appearance-settings.png)
 
 ### Horizontal alignment 
 
@@ -304,15 +304,15 @@ By enabling Auto Font Size option, the font size will be adjusted automatically,
 
 ### Auto font size at 3840 x 2160
 
-![Auto Font Size](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/autofontsize.png)
+![Auto Font Size](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/autofontsize.png)
 
 ### Auto font size at 1366 x 768
 
-![Auto Font Size](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/autofontsize-diff.png)
+![Auto Font Size](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/autofontsize-diff.png)
 
 ### Auto font size at 1920 x 1080
 
-![Auto Font Size](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/autofontsize-resolution.png)
+![Auto Font Size](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/autofontsize-resolution.png)
 
 ### Scaling factor
 
@@ -320,7 +320,7 @@ If the auto font size is enabled, scaling factor allows you to increase or decre
 
 #### Measure properties
 
-![Measure properties](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/measure-properties.png)
+![Measure properties](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/measure-properties.png)
 
 ### Show Measure
 
@@ -330,15 +330,15 @@ From the measure property section, you can customize the font size and color of 
 
 The following image shows the Number Card widget, after modifying the color and font size of the measure value.
 
-![Measure properties Color](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/measure-colors.png)
+![Measure properties Color](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/measure-colors.png)
 
-![Measure properties customized](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/properties-customized-widget.png)
+![Measure properties customized](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/properties-customized-widget.png)
 
 ### Measure hidden 
 
-![Measure hidden](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/hidden-measure-icon.png)
+![Measure hidden](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/hidden-measure-icon.png)
 
-![Measure hidden](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/hidden-measure.png)
+![Measure hidden](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/hidden-measure.png)
 
 ### Auto Font Size
 
@@ -350,21 +350,21 @@ If we have created a dashboard with number card which can be viewed by different
 
 ### Auto font size at 3840 x 2160
 
-![Auto Font Size](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/auto-fontsize.png)
+![Auto Font Size](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/auto-fontsize.png)
 
 ### Auto font size at 1366 x 768
 
-![Auto Font Size](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/auto-fontsize-diff.png)
+![Auto Font Size](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/auto-fontsize-diff.png)
 
 ### Auto font size at 1920 x 1080
 
-![Auto Font Size](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/auto-fontsize-resolution.png)
+![Auto Font Size](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/auto-fontsize-resolution.png)
 
 #### Font size
 
 You can customize the font size of the number card title by unchecking `Auto Font Size`.
 
-![number Card font size](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/single-card-measure-properties.png)
+![number Card font size](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/single-card-measure-properties.png)
 
 ### Title properties
 
@@ -372,13 +372,13 @@ You can customize the font color and size of the title. You can also enable or d
 
 The following image shows the Number Card widget after modifying the color and font size of the title value.
 
-![Title properties](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/title.png) 
+![Title properties](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/title.png) 
 
-![Show Title Series](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/title-series.png) 
+![Show Title Series](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/title-series.png) 
 
 The following image shows the Number Card widget after unchecking the title value.
 
-![Hide title](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/hide-title.png)
+![Hide title](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/hide-title.png)
 
 ### Title for single card
 
@@ -386,23 +386,23 @@ You can customize the font color and size of the title. You can also enable or d
 
 The following image shows the Number Card widget after modifying the color and font size of the title value.
 
-![Show Single Card Title](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/show-singlecard-titleproperties.png)
+![Show Single Card Title](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/show-singlecard-titleproperties.png)
 
-![Show Single title](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/show-single-title.png)
+![Show Single title](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/show-single-title.png)
 
 ### Text Wrap
 
 This option allows you to wrap Card Title based on ‘Card size ’.This option will be enabled only for single card. It wraps title only, if the space is not enough to show title in single line. 
 
-![Show Text Wrap title](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/show-singlecard-title-text-wrap.png)
+![Show Text Wrap title](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/show-singlecard-title-text-wrap.png)
 
 If card height is not enough to wrap title further it will trim the title.
 
-![Show Text trim title](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/show-singlecard-title-text-trim.png)
+![Show Text trim title](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/show-singlecard-title-text-trim.png)
 
 If the title doesn't contains space between words, it will not wrap. 
 
-![Title without space](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/show-singlecard-title-text-without-space.png)
+![Title without space](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/show-singlecard-title-text-without-space.png)
 
 ### Auto Font Size
 
@@ -414,27 +414,27 @@ If we have created a dashboard with number card which can be viewed by different
 
 ### Auto font size at 3840 x 2160
 
-![Auto Font Size](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/auto-fontsize-resolution.png)
+![Auto Font Size](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/auto-fontsize-resolution.png)
 
 ### Auto font size at 1366 x 768
 
-![Auto Font Size](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/autofontsize-diff.png)
+![Auto Font Size](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/autofontsize-diff.png)
 
 ### Auto font size at 1920 x 1080
 
-![Auto Font Size](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/auto-fontsize.png)
+![Auto Font Size](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/auto-fontsize.png)
 
 #### Font size
 
 You can customize the font size of the number card title by unchecking `Auto Font Size`.
 
-![number Card font size](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/single-card-title-fontsize.png)
+![number Card font size](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/single-card-title-fontsize.png)
 
 ### Series settings 
 
 Series settings enabled only when you configure the **series** in `Assigned Data` tab.
 
-![Series Settings](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/series.png)
+![Series Settings](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/series.png)
 
 #### Fixed rows and columns
 
@@ -452,7 +452,7 @@ By enabling the `Column Count,` you can set the column count.
 
 ### Animation settings
 
-![Show Animation](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/animation.png)
+![Show Animation](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/animation.png)
 
 ### Enable animation
 
@@ -468,7 +468,7 @@ This animation-duration property specifies how long the animation cycle should l
 
 If the Show Image check box is unchecked, then the image is not displayed in the Number Card.
 
-![Image properties](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/show-image.png)
+![Image properties](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/show-image.png)
 
 #### Image Mode
 
@@ -484,7 +484,7 @@ You can customize the image showcase style through the ode setting.
 
 ### Different Modes of Image
 
-![Image modes](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/image-modes.png)
+![Image modes](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/image-modes.png)
 
 #### Image
 
@@ -492,19 +492,19 @@ You can customize the image showcase style through the ode setting.
 
 You can browse the image from the local system.
 
-![Browse Image](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/browse-image.png)
+![Browse Image](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/browse-image.png)
 
 ### URL
 
 You can enter the direct URL of the image. 
 
-![URL text box](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/url-text-box.png)
+![URL text box](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/url-text-box.png)
 
 ### Pattern
 
 You can use the pattern as explained in the Image data section. 
 
-![Entered URL](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/enter-url.png)
+![Entered URL](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/enter-url.png)
 
 ### Background properties
 
@@ -516,9 +516,9 @@ The background image properties are same as the Number card’s image properties
 
 Allows you to set a solid color as the background and to change the transparency of the color.
 
-![Background color](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/background-color.png)
+![Background color](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/background-color.png)
 
-![Background color Customization](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/background-color-customization.png)
+![Background color Customization](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/background-color-customization.png)
 
 > **NOTE:** If both the background image and background color are enabled in the widget, then based on the transparency of the background image and the selected image mode, either the background image alone will appear in the widget or both the background color and image will appear in the Number Card.
 
@@ -526,15 +526,15 @@ Allows you to set a solid color as the background and to change the transparency
 
 Sparkline in the Number Card widget can be turned off by unchecking the Show Sparkline check box. The color of the sparkline and the transparency can be customized using the provided options.
 
-![Sparkline properties](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/sparkline-properties.png)
+![Sparkline properties](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/sparkline-properties.png)
 
-![Sparkline properties Customization](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/sparkline-properties-customization.png)
+![Sparkline properties Customization](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/sparkline-properties-customization.png)
 
 ### Link
 
 You can enable linking and configure it  to navigate to a general URL with or without parameters. For more information, refer [Linking](/embedded-bi/visualizing-data/working-with-widgets/linking-urls-and-dashboards/).
 
-![Link](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/link.png)
+![Link](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/link.png)
 
 ### Filter interaction properties
 
@@ -542,7 +542,7 @@ The Number Card widget can be set to act as a master widget by selecting the `Ac
 
 > **NOTE:**  Act as Master Widget check box will be enabled only when the Series section is configured.
 
-![Filter properties](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/filter-properties.png)
+![Filter properties](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/filter-properties.png)
 
 ### Number card with fixed measure
 
@@ -552,25 +552,25 @@ The following steps illustrates how to add the fixed value:
 
 1. Click the `fx expression` in the Data Source.
 
-![Expression](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/expression.png)
+![Expression](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/expression.png)
 
 2. Add the name and expression, then click `Save`.
 
-![Expression Value](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/expression-value.png)
+![Expression Value](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/expression-value.png)
 
 3. You can view the added value in the measure section in the assigned data tab. Drag the added measures in the `Value(s)` section.
 
-![Added Value](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/add-value.png)
+![Added Value](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/add-value.png)
 
 4. Change the aggregation type to Min or Max.
 
 **Fixed Value for Number card**
 
-![Fixed Value](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/maximum-value.png)
+![Fixed Value](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/maximum-value.png)
 
 ### Container appearance
 
-![Container Appearance](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/container-appearance.png)
+![Container Appearance](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/container-appearance.png)
 
 ### Title alignment
 
@@ -606,7 +606,7 @@ This allows you to apply the specified radius to the widget corners, if the `Sho
 
 ### Container actions
 
-![Container Actions](/bold-bi-docs/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/container-actions.png)
+![Container Actions](/static/assets/embedded/visualizing-data/visualization-widgets/images/number-card/container-actions.png)
 
 #### Show header
 

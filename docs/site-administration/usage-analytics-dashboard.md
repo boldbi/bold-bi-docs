@@ -12,15 +12,15 @@ The usage analytics dashboard is predefined and enables you to monitor dashboard
 
 The usage analytics dashboards are listed in the `Usage Analytics` category on the dashboard listing page.
 
-![Usage Analytics Dashboard](/bold-bi-docs/static/assets/embedded/site-administration/images/usage-analytics-dashboard.png#width=60%)
+![Usage Analytics Dashboard](/static/assets/embedded/site-administration/images/usage-analytics-dashboard.png#width=60%)
 
 You can show or hide the usage analytics category in the dashboard listing page based on [Usage analytics](/embedded-bi/site-administration/dashboard-settings/usage-analytics) option in the dashboard settings page.
 
 > **NOTE:**  The `Usage Analytics` option is available only to admin users, and usage analytics dashboards are read-only.
 
-![Dashboard Usage Analytics1](/bold-bi-docs/static/assets/embedded/site-administration/images/dashboard-usage-analytics1.png#width=60%)
+![Dashboard Usage Analytics1](/static/assets/embedded/site-administration/images/dashboard-usage-analytics1.png#width=60%)
 
-![Dashboard Usage Analytics2](/bold-bi-docs/static/assets/embedded/site-administration/images/dashboard-usage-analytics2.png#width=60%)
+![Dashboard Usage Analytics2](/static/assets/embedded/site-administration/images/dashboard-usage-analytics2.png#width=60%)
 
 
 ## Usage Analytics Dashboard Widgets Details

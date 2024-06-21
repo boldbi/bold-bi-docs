@@ -11,7 +11,7 @@ This documentation discusses common issues when you use Bold BI. If you encounte
 
 ## Error: Network related instance-specific error - SQL Server
 
-![Error image network related instance](/bold-bi-docs/static/assets/embedded/faq/images/error-network-related-instance.png)
+![Error image network related instance](/static/assets/embedded/faq/images/error-network-related-instance.png)
 
 The following are a few possible cases of this issue.<br/>
 
@@ -19,21 +19,21 @@ The following are a few possible cases of this issue.<br/>
 2. If the SQL server has any SSL enabled or verified the database name, the user credential has the proper permission to access that database.
 
 ## Error: Unable to convert MySQL datetime to System.DateTime
-![Error image unable to convert date time to system.datetime](/bold-bi-docs/static/assets/embedded/faq/images/error-unable-to-convert-date-time.png)
+![Error image unable to convert date time to system.datetime](/static/assets/embedded/faq/images/error-unable-to-convert-date-time.png)
 
 This issue arises if an additional connection parameter is not specified while connecting the data source.
 
 **Solution**<br>
-![Solution image unable to convert date time](/bold-bi-docs/static/assets/embedded/faq/images/solution-unable-to-convert-date-time.png)
+![Solution image unable to convert date time](/static/assets/embedded/faq/images/solution-unable-to-convert-date-time.png)
 
 ## Error: No active warehouse selected in the current session - Snowflake
-![Error image no active warehouse selected](/bold-bi-docs/static/assets/embedded/faq/images/error-no-active-warehouse.png)
+![Error image no active warehouse selected](/static/assets/embedded/faq/images/error-no-active-warehouse.png)
 
 This issue occurs when the active warehouse is not set in the snowflake instance.
 
 **Solution**<br>
 To resolve this issue, please add Warehouse=WarehouseName in the Additional connection parameters.<br/>
-![Solution image no active warehouse selected](/bold-bi-docs/static/assets/embedded/faq/images/solution-no-active-warehouse.png)
+![Solution image no active warehouse selected](/static/assets/embedded/faq/images/solution-no-active-warehouse.png)
 
 ## Error: dll not found
 
@@ -53,7 +53,7 @@ Please follow the instructions [here](https://help.boldbi.com/embedded-bi/faq/ho
 
 ## Error: Couldn't connect to server
 
-![Error image Couldn't connect to server](/bold-bi-docs/static/assets/embedded/faq/images/error-couldnot-connect-to-server.png)
+![Error image Couldn't connect to server](/static/assets/embedded/faq/images/error-couldnot-connect-to-server.png)
 
 The following factors led to this type of error:<br/>
 1. If any the IP addresses specified at [Bold BI Cloud IP addresses](https://help.boldbi.com/cloud-bi/working-with-data-source/white-list-ip-address-bold-bi-cloud/) weren't whitelisted.
@@ -63,11 +63,11 @@ The following factors led to this type of error:<br/>
 This problem can be fixed by including the pooling value in additional connection parameter when creating the data source. **Additional connection parameters: Pooling=True; Connection Reset=false** and whitelisting the IP addresses mentioned in [Bold BI Cloud IP addresses](https://help.boldbi.com/cloud-bi/working-with-data-source/white-list-ip-address-bold-bi-cloud/) 
 <br/>Please refer to the following image<br/>
 
-![Solution image Couldn't connect to server](/bold-bi-docs/static/assets/embedded/faq/images/solution-couldnot-connect-to-server.png)
+![Solution image Couldn't connect to server](/static/assets/embedded/faq/images/solution-couldnot-connect-to-server.png)
 
 ## Error: Command Time-out issue
 
-![Error image Command timeout](/bold-bi-docs/static/assets/embedded/faq/images/error-command-time-out.png)
+![Error image Command timeout](/static/assets/embedded/faq/images/error-command-time-out.png)
 
 The above-specified error arises when the query times out before the operation is completed.
 
@@ -79,14 +79,14 @@ Please follow these steps to increase the command timeout value in Bold BI.
 
 1. Give the server information on the page for data source connectivity.
 2. Increase the command timeout value.
-    ![Solution image Command timeout](/bold-bi-docs/static/assets/embedded/faq/images/solution-command-time-out1.png)
+    ![Solution image Command timeout](/static/assets/embedded/faq/images/solution-command-time-out1.png)
 
 **Using Nginx:**<br/>
 Please find the steps to increase the timeout value in the following Nginx.
 
 1. Edit the boldbi-nginx-config file in the /etc/nginx/sites-enabled directory.<br/>
 2. Edit all timeout values and save them.
-![Solution image Command timeout](/bold-bi-docs/static/assets/embedded/faq/images/solution-command-time-out2.png)
+![Solution image Command timeout](/static/assets/embedded/faq/images/solution-command-time-out2.png)
 3. Finally, restart nginx by running the following command.<br/>
 **sudo systemctl restart nginx**<br/>
 Refer to the document provided to change nginx
@@ -94,7 +94,7 @@ Refer to the document provided to change nginx
 
 ## Error: No space left on device
 
-![Error image writing file](/bold-bi-docs/static/assets/embedded/faq/images/error-writing-file.png)
+![Error image writing file](/static/assets/embedded/faq/images/error-writing-file.png)
 
 The above-specified error occurs when there is insufficient space to store temporary files requested by the MySQL server.
 
@@ -113,12 +113,12 @@ This error occurs when the SQL server's date format or culture is mismatched.<br
 2. If the date format in sqlserver is dmy, then change it to mdy and vice versa.<br/>
 Use the following commands to verify and change the settings.<br/>
 `DBCC useroptions`<br/>
-![Solution image varchar to date type 1](/bold-bi-docs/static/assets/embedded/faq/images/solution-varchar-to-date1.png)
+![Solution image varchar to date type 1](/static/assets/embedded/faq/images/solution-varchar-to-date1.png)
 `SET DATEFORMAT mdy`<br/>
-![Solution image varchar to date type 2](/bold-bi-docs/static/assets/embedded/faq/images/solution-varchar-to-date2.png)
+![Solution image varchar to date type 2](/static/assets/embedded/faq/images/solution-varchar-to-date2.png)
 
 ## Error: Unable to connect MySQL in SSL mode
-![Error image unable to connect MySQL in SSL mode](/bold-bi-docs/static/assets/embedded/faq/images/error-mysql-ssl.png)
+![Error image unable to connect MySQL in SSL mode](/static/assets/embedded/faq/images/error-mysql-ssl.png)
 
 This error occurs when Bold BI connects to a MySQL server over SSL without adding the SSL specification.<br/>
 
@@ -126,11 +126,11 @@ This error occurs when Bold BI connects to a MySQL server over SSL without addin
 1. Check if the IP addresses mentioned in the provided link [Bold BI Cloud IP addresses](https://help.boldbi.com/cloud-bi/working-with-data-source/white-list-ip-address-bold-bi-cloud/) are whitelisted.
 2. Verify whether the person who logs in can access the MySQL server.
 3. This issue can be resolved by including **SslMode=Required** in an additional connection parameter.
-![Solution image unable to connect MySQL in SSL mode](/bold-bi-docs/static/assets/embedded/faq/images/solution-mysql-ssl.png)
+![Solution image unable to connect MySQL in SSL mode](/static/assets/embedded/faq/images/solution-mysql-ssl.png)
 
 ## Error: Invalid parameter in expression for SSAS
 
-![Error image invalid parameter in expression](/bold-bi-docs/static/assets/embedded/faq/images/error-invalid-parameter-in-expression.png)
+![Error image invalid parameter in expression](/static/assets/embedded/faq/images/error-invalid-parameter-in-expression.png)
 
 A measure must be used for expressions like SUM, COUNT, and more. The issue in the following image may arise if a dimension was included in these expressions.
 

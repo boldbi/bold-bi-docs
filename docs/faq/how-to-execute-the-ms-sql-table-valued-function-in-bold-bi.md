@@ -40,13 +40,13 @@ Create a table-valued function in the `Microsoft SQL Server` before connecting t
 
 2.	After connecting to the data source, [switch to the code view](https://help.boldbi.com/embedded-bi/working-with-data-source/data-connectors/sql-data-source/#switch-to-code-view) by enabling the slider option in the tools pane in the data design view, and you can find the query editor window in which you can execute the custom queries as follows.
 
-	![Code view mode](/bold-bi-docs/static/assets/embedded/faq/images/tablevalued-code-view.png#max-width=100%)
+	![Code view mode](/static/assets/embedded/faq/images/tablevalued-code-view.png#max-width=100%)
 	
 3.	Here, you can enter the query to fetch the data from the `tableValuedReleases` table-valued function by passing the value for the `ReleaseId` parameter. After entering the query, click on the `Run` button to execute the query.
 
-	![Alter query](/bold-bi-docs/static/assets/embedded/faq/images/table-valued-query.png#max-width=100%)
+	![Alter query](/static/assets/embedded/faq/images/table-valued-query.png#max-width=100%)
 	
 4.	You can view the data for your query at the bottom of the query editor by clicking `Update.`
     
-	![Preview data](/bold-bi-docs/static/assets/embedded/faq/images/table-valued-data.png#max-width=100%)
+	![Preview data](/static/assets/embedded/faq/images/table-valued-data.png#max-width=100%)
 	
