@@ -443,7 +443,6 @@
       }
     },
     "Site Administration": {
-      "Site Settings": "site-settings",
       "Look and Feel Settings": "look-and-feel-settings",
       "Dashboard Settings": {
         "Public Dashboards": "public-dashboards",
