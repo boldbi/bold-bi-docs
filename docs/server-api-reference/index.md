@@ -16,6 +16,8 @@ For Bold BI Enterprise, the API path will be `https://{Domain}/bi/api/site/{Tena
 
 For example, `https://onpremise-demo.boldbi.com/bi/api/site/site1/token`
 
+For Bold BI UMS Site REST API references, refer to the following [link](/multi-tenancy/api-reference/)
+
 ## API Versions 
 
 <table>

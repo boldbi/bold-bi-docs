@@ -197,3 +197,20 @@ Total unique transaction count is, {{:dcount(InvoiceDate)}}</td>
 </table>
 
 > **NOTE:**  The function name of label parameters is `case insensitive`.
+
+## Limitation of Label Parameter in Card Widget
+
+The Label Parameter is designed to work with container titles of widgets. For Number and KPI Card widgets, a container title cannot be added without a series configuration. As a result, the Label Parameter cannot be used with single cards. To utilize the Label Parameter, users need to first set up the card with a series configuration, where the series consists of a single data point for the entire record. This will enable the title to be displayed on the card widget, enabling the Label Parameter to function properly.
+
+### Steps to Incorporate the Label Parameter in a Card Widget:
+1. Drag and drop the Number Card widget and bind the required columns in the Measure and Series section.
+
+    ![Configure Card Widget](/static/assets/visualizing-data/working-with-widgets/images/Configure-card-widget.png)
+
+2. Now, add the Label Parameter in the widget title for the required column.
+
+    ![Add Label Parameter](/static/assets/visualizing-data/working-with-widgets/images/add-label-parameter.png)
+
+3. In Preview, the value will be displayed on the widget based on the applied filter.
+
+    ![Laberl Parameter Preview Result](/static/assets/visualizing-data/working-with-widgets/images/label-parameter-preview-result.png)

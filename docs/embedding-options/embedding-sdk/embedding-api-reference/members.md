@@ -9,7 +9,7 @@ documentation: UG
 # Members
 <h2 class="doc-prop-wrapper" id="dashboardid" data-Path="dashboardid-dashboardId">
 <a href="#dashboardid" aria-hidden="true" class="anchor">
-<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
 <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
 </svg>
 </a><span class='doc-prop-name'>dashboardId</span>
@@ -39,7 +39,7 @@ dashboard.loadDashboard();
   
 <h2 class="doc-prop-wrapper" id="dashboardpath" data-Path="dashboardpath-dashboardPath">
 <a href="#dashboardpath" aria-hidden="true" class="anchor">
-<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
 <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
 </svg>
 </a><span class='doc-prop-name'>dashboardPath</span>
@@ -75,7 +75,7 @@ dashboard.loadDashboard();
 
 <h2 class="doc-prop-wrapper" id="dashboardids" data-Path="dashboardids-dashboardIds">
 <a href="#dashboardids" aria-hidden="true" class="anchor">
-<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
 <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
 </svg>
 </a><span class='doc-prop-name'>dashboardIds</span>
@@ -105,7 +105,7 @@ dashboard.loadMultitabDashboard();
 
 <h2 class="doc-prop-wrapper" id="dashboardpaths" data-Path="dashboardpaths-dashboardPaths">
 <a href="#dashboardpaths" aria-hidden="true" class="anchor">
-<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
 <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
 </svg>
 </a><span class='doc-prop-name'>dashboardPaths</span>
@@ -135,7 +135,7 @@ dashboard.loadMultitabDashboard();
 
 <h2 class="doc-prop-wrapper" id="disableautorecover" data-Path="disableautorecover-disableAutoRecover">
 <a href="#disableautorecover" aria-hidden="true" class="anchor">
-<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
 <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
 </svg>
 </a><span class='doc-prop-name'>disableAutoRecover</span>
@@ -166,7 +166,7 @@ dashboard.loadDesigner();
 
 <h2 class="doc-prop-wrapper" id="embedcontainerid" data-Path="embedcontainerid-embedContainerId">
 <a href="#embedcontainerid" aria-hidden="true" class="anchor">
-<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
 <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
 </svg>
 </a><span class='doc-prop-name'>embedContainerId</span>
@@ -200,7 +200,7 @@ The ID of a div element in which the dashboard will be initialized and rendered.
 
 <h2 class="doc-prop-wrapper" id="embedtype" data-Path="embedtype-embedType">
 <a href="#embedtype" aria-hidden="true" class="anchor">
-<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
 <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
 </svg>
 </a><span class='doc-prop-name'>embedType</span>
@@ -237,7 +237,7 @@ dashboard.loadDashboard();
 
 <h2 class="doc-prop-wrapper" id="environment" data-Path="environment-environment">
 <a href="#environment" aria-hidden="true" class="anchor">
-<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
 <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
 </svg>
 </a><span class='doc-prop-name'>environment</span>
@@ -272,9 +272,39 @@ var dashboard = BoldBI.create({
 dashboard.loadDashboard();
 ```
 
+<h2 class="doc-prop-wrapper" id="expirationtime" data-Path="expirationtime-expirationTime">
+<a href="#expirationtime" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
+<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+</svg>
+</a><span class='doc-prop-name'>expirationTime</span>
+
+<span class="doc-prop-type"> `number`
+</span>
+
+</h2>
+
+    
+Specifies the access token expiration time of the dashboard in seconds.
+
+<br>
+
+**Default value** 
+
+<li>86400</li><br>
+
+**Example** 
+   
+```js
+var dashboard = BoldBI.create({
+     expirationTime:100000,          
+});
+dashboard.loadDashboard();
+```
+
 <h2 class="doc-prop-wrapper" id="filterparameters" data-Path="filterparameters-filterParameters">
 <a href="#filterparameters" aria-hidden="true" class="anchor">
-<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
 <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
 </svg>
 </a><span class='doc-prop-name'>filterParameters</span>
@@ -289,7 +319,9 @@ This member supports filtering the dashboard in the following cases.
 
 1. Filtering with URL Parameter.
 2. Filtering with Dashboard Parameter.
-3. Filtering with Combination of URL Parameter and Dashboard Parameter and vice versa.
+3. Filtering with Multiple URL Parameters.
+4. Filtering with Multiple Dashboard Parameters.
+5. Filtering with Combination of URL Parameter and Dashboard Parameter and vice versa.
 
 <br>
 
@@ -331,11 +363,61 @@ dashboard.loadDashboard();
 <tr>
 <td><code>Dashboard Parameter</code></td>
 <td><code>{parameter_name}={parameter_value}</code></td>
-<td><code>
+
+<td> <code> For <b>Literals</b>
 
 ```js
 var dashboard = BoldBI.create({
      filterParameters: "Department_DP=Sales"
+});
+dashboard.loadDashboard();
+```
+```js
+var dashboard = BoldBI.create({
+     filterParameters: "Department_DP=Sales,Marketing"
+});
+dashboard.loadDashboard();
+```
+
+For <b>List</b>
+
+```js
+var dashboard = BoldBI.create({
+     filterParameters: "Department_DP=IN(Sales)"
+});
+dashboard.loadDashboard();
+```
+```js
+var dashboard = BoldBI.create({
+     filterParameters: "Department_DP=IN(Sales,Marketing)"
+});
+dashboard.loadDashboard();
+```
+
+</code></td>
+</tr>
+<tr>
+<td><code>Multiple URL Parameters</code></td>
+<td><code>{column_name1}={value1}&{column_name2}={value2}</code></td>
+<td><code>
+
+```js
+var dashboard = BoldBI.create({
+     filterParameters: "Continent=Asia&Direction=East"
+});
+dashboard.loadDashboard();
+```
+
+</code></td>
+</tr>
+<tr>
+<td><code>Multiple Dashboard Parameters</code></td>
+<td><code>{parameter_name}={parameter_value}&&{parameter_name1}={parameter_value1}</code></td>
+<td><code>
+
+```js
+var dashboard = BoldBI.create({
+     filterParameters: "Department_DP=Sales&&Feedback=Good"
 });
 dashboard.loadDashboard();
 ```
@@ -349,7 +431,7 @@ dashboard.loadDashboard();
 
 ```js
 var dashboard = BoldBI.create({
-     filterParameters: "Continent=Asia,Africa,Europe&Department_DP=Sales"
+     filterParameters: "Continent=Asia,Africa,Europe&&Department_DP=Sales"
 });
 dashboard.loadDashboard();
 ```
@@ -374,7 +456,7 @@ dashboard.loadDashboard();
 
 <h2 class="doc-prop-wrapper" id="height" data-Path="height-height">
 <a href="#height" aria-hidden="true" class="anchor">
-<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
 <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
 </svg>
 </a><span class='doc-prop-name'>height</span>
@@ -404,7 +486,7 @@ dashboard.loadDashboard();
 
 <h2 class="doc-prop-wrapper" id="isbingmaprequired" data-Path="isbingmaprequired-isBingMapRequired">
 <a href="#isbingmaprequired" aria-hidden="true" class="anchor">
-<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
 <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
 </svg>
 </a><span class='doc-prop-name'>isBingMapRequired</span>
@@ -435,7 +517,7 @@ dashboard.loadDashboard();
 
 <h2 class="doc-prop-wrapper" id="mode" data-Path="mode-mode">
 <a href="#mode" aria-hidden="true" class="anchor">
-<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
 <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
 </svg>
 </a><span class='doc-prop-name'>mode</span>
@@ -474,7 +556,7 @@ dashboard.loadDashboard();
 
 <h2 class="doc-prop-wrapper" id="nonce" data-Path="nonce-nonce">
 <a href="#nonce" aria-hidden="true" class="anchor">
-<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
 <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
 </svg>
 </a><span class='doc-prop-name'>nonce</span>
@@ -502,7 +584,7 @@ dashboard.loadDashboard();
 
 <h2 class="doc-prop-wrapper" id="pinboardname" data-Path="pinboardname-pinboardName">
 <a href="#pinboardname" aria-hidden="true" class="anchor">
-<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
 <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
 </svg>
 </a><span class='doc-prop-name'>pinboardName</span>
@@ -532,7 +614,7 @@ pinboard.loadPinboard();
 
 <h2 class="doc-prop-wrapper" id="serverurl" data-Path="serverurl-serverUrl">
 <a href="#serverurl" aria-hidden="true" class="anchor">
-<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
 <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
 </svg>
 </a><span class='doc-prop-name'>serverUrl</span>
@@ -562,7 +644,7 @@ dashboard.loadDashboard();
 
 <h2 class="doc-prop-wrapper" id="theme" data-Path="theme-theme">
 <a href="#theme" aria-hidden="true" class="anchor">
-<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
 <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
 </svg>
 </a><span class='doc-prop-name'>theme</span>
@@ -597,7 +679,7 @@ dashboard.loadDashboard();
 
 <h2 class="doc-prop-wrapper" id="viewid" data-Path="viewid-viewId">
 <a href="#viewid" aria-hidden="true" class="anchor">
-<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
 <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
 </svg>
 </a><span class='doc-prop-name'>viewId</span>
@@ -627,7 +709,7 @@ dashboard.loadView();
 
 <h2 class="doc-prop-wrapper" id="viewname" data-Path="viewname-viewName">
 <a href="#viewname" aria-hidden="true" class="anchor">
-<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
 <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
 </svg>
 </a><span class='doc-prop-name'>viewName</span>
@@ -657,7 +739,7 @@ dashboard.loadView();
 
 <h2 class="doc-prop-wrapper" id="widgetlist" data-Path="widgetlist-widgetList">
 <a href="#widgetlist" aria-hidden="true" class="anchor">
-<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
 <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
 </svg>
 </a><span class='doc-prop-name'>widgetList</span>
@@ -695,7 +777,7 @@ dashboard.loadMultipleWidgets();
 
 <h2 class="doc-prop-wrapper" id="width" data-Path="width-width">
 <a href="#width" aria-hidden="true" class="anchor">
-<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
 <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
 </svg>
 </a><span class='doc-prop-name'>width</span>
@@ -725,12 +807,12 @@ dashboard.loadDashboard();
 
 ## authorizationServer
 
-<h3 class="doc-prop-wrapper" id="authorizationserverheaders" data-Path="authorizationserverheaders-authorizationServer.headers">
-<a href="#authorizationserverheaders" aria-hidden="true" class="anchor">
-<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<h3 class="doc-prop-wrapper" id="headers" data-Path="authorizationserverheaders-authorizationServer.headers">
+<a href="#headers" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
 <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
 </svg>
-</a><span class='doc-prop-name'>authorizationServer.headers</span>
+</a><span class='doc-prop-name'>headers</span>
 
 <span class="doc-prop-type"> `object`
 </span>
@@ -759,12 +841,12 @@ var dashboard = BoldBI.create({
 dashboard.loadDashboard();
 ```
 
-<h3 class="doc-prop-wrapper" id="authorizationserverurl" data-Path="authorizationserverurl-authorizationServer.url">
-<a href="#authorizationserverurl" aria-hidden="true" class="anchor">
-<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<h3 class="doc-prop-wrapper" id="url" data-Path="authorizationserverurl-authorizationServer.url">
+<a href="#url" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
 <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
 </svg>
-</a><span class='doc-prop-name'>authorizationServer.url</span>
+</a><span class='doc-prop-name'>url</span>
 
 <span class="doc-prop-type"> `string`
 </span>
@@ -793,46 +875,16 @@ var dashboard = BoldBI.create({
 dashboard.loadDashboard();
 ```
 
-<h2 class="doc-prop-wrapper" id="expirationtime" data-Path="expirationtime-expirationTime">
-<a href="#expirationtime" aria-hidden="true" class="anchor">
-<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
-<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
-</svg>
-</a><span class='doc-prop-name'>expirationTime</span>
-
-<span class="doc-prop-type"> `number`
-</span>
-
-</h2>
-
-    
-Specifies the access token expiration time of the dashboard in seconds.
-
-<br>
-
-**Default value** 
-
-<li>86400</li><br>
-
-**Example** 
-   
-```js
-var dashboard = BoldBI.create({
-     expirationTime:100000,          
-});
-dashboard.loadDashboard();
-```
-
 ## autoRefreshSettings
 
 The auto refresh feature allows you to configure the scheduled refreshing process of the dashboard. It is used to refresh the data based on the specified time.
 
-<h3 class="doc-prop-wrapper" id="autorefreshsettingsenabled" data-Path="autorefreshsettingsenabled-autoRefreshSettings.enabled">
-<a href="#autorefreshsettingsenabled" aria-hidden="true" class="anchor">
-<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<h3 class="doc-prop-wrapper" id="enabled" data-Path="autorefreshsettingsenabled-autoRefreshSettings.enabled">
+<a href="#enabled" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
 <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
 </svg>
-</a><span class='doc-prop-name'>autoRefreshSettings.enabled</span>
+</a><span class='doc-prop-name'>enabled</span>
 
 <span class="doc-prop-type"> `boolean`
 </span>
@@ -861,12 +913,12 @@ dashboard.loadDashboard();
 
 ## autoRefreshSettings.hourlySchedule
 	
-<h3 class="doc-prop-wrapper" id="autorefreshsettingshourlyschedulehours" data-Path="autorefreshsettingshourlyschedulehours-autoRefreshSettings.hourlySchedule.hours">
-<a href="#autorefreshsettingshourlyschedulehours" aria-hidden="true" class="anchor">
-<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<h3 class="doc-prop-wrapper" id="hours" data-Path="autorefreshsettingshourlyschedulehours-autoRefreshSettings.hourlySchedule.hours">
+<a href="#hours" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
 <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
 </svg>
-</a><span class='doc-prop-name'>autoRefreshSettings.hourlySchedule.hours</span>
+</a><span class='doc-prop-name'>hours</span>
 
 <span class="doc-prop-type"> `number`
 </span>
@@ -896,12 +948,12 @@ var dashboard = BoldBI.create({
 dashboard.loadDashboard();
 ```
 
-<h3 class="doc-prop-wrapper" id="autorefreshsettingshourlyscheduleminutes" data-Path="autorefreshsettingshourlyscheduleminutes-autoRefreshSettings.hourlySchedule.minutes">
-<a href="#autorefreshsettingshourlyscheduleminutes" aria-hidden="true" class="anchor">
-<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<h3 class="doc-prop-wrapper" id="minutes" data-Path="autorefreshsettingshourlyscheduleminutes-autoRefreshSettings.hourlySchedule.minutes">
+<a href="#minutes" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
 <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
 </svg>
-</a><span class='doc-prop-name'>autoRefreshSettings.hourlySchedule.minutes</span>
+</a><span class='doc-prop-name'>minutes</span>
 
 <span class="doc-prop-type"> `number`
 </span>
@@ -931,12 +983,12 @@ var dashboard = BoldBI.create({
 dashboard.loadDashboard();
 ```
 	
-<h3 class="doc-prop-wrapper" id="autorefreshsettingshourlyscheduleseconds" data-Path="autorefreshsettingshourlyscheduleseconds-autoRefreshSettings.hourlySchedule.seconds">
-<a href="#autorefreshsettingshourlyscheduleseconds" aria-hidden="true" class="anchor">
-<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<h3 class="doc-prop-wrapper" id="seconds" data-Path="autorefreshsettingshourlyscheduleseconds-autoRefreshSettings.hourlySchedule.seconds">
+<a href="#seconds" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
 <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
 </svg>
-</a><span class='doc-prop-name'>autoRefreshSettings.hourlySchedule.seconds</span>
+</a><span class='doc-prop-name'>seconds</span>
 
 <span class="doc-prop-type"> `number`
 </span>
@@ -968,12 +1020,12 @@ dashboard.loadDashboard();
 
 ## dashboardSettings
 
-<h3 class="doc-prop-wrapper" id="dashboardsettingsdashboardname" data-Path="dashboardsettingsdashboardname-dashboardSettings.dashboardName">
-<a href="#dashboardsettingsdashboardname" aria-hidden="true" class="anchor">
-<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<h3 class="doc-prop-wrapper" id="dashboardname" data-Path="dashboardsettingsdashboardname-dashboardSettings.dashboardName">
+<a href="#dashboardname" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
 <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
 </svg>
-</a><span class='doc-prop-name'>dashboardSettings.dashboardName</span>
+</a><span class='doc-prop-name'>dashboardName</span>
 
 </h3>
 
@@ -1021,12 +1073,12 @@ var dashboard = BoldBI.create({
 dashboard.loadDashboard();
 ```
 
-<h3 class="doc-prop-wrapper" id="dashboardsettingsenablefilteroverview" data-Path="dashboardsettingsenablefilteroverview-dashboardSettings.enablefilteroverview">
-<a href="#dashboardsettingsenablefilteroverview" aria-hidden="true" class="anchor">
-<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<h3 class="doc-prop-wrapper" id="enablefilteroverview" data-Path="dashboardsettingsenablefilteroverview-dashboardSettings.enablefilteroverview">
+<a href="#enablefilteroverview" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
 <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
 </svg>
-</a><span class='doc-prop-name'>dashboardSettings.enableFilterOverview</span>
+</a><span class='doc-prop-name'>enableFilterOverview</span>
 
 <span class="doc-prop-type"> `boolean`
 </span>
@@ -1053,12 +1105,12 @@ var dashboard = BoldBI.create({
 dashboard.loadDashboard();
 ```
 	
-<h3 class="doc-prop-wrapper" id="dashboardsettingsenablefullscreen" data-Path="dashboardsettingsenablefullscreen-dashboardSettings.enablefullscreen">
-<a href="#dashboardsettingsenablefullscreen" aria-hidden="true" class="anchor">
-<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<h3 class="doc-prop-wrapper" id="enablefullscreen" data-Path="dashboardsettingsenablefullscreen-dashboardSettings.enablefullscreen">
+<a href="#enablefullscreen" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
 <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
 </svg>
-</a><span class='doc-prop-name'>dashboardSettings.enableFullScreen</span>
+</a><span class='doc-prop-name'>enableFullScreen</span>
 
 <span class="doc-prop-type"> `boolean`
 </span>
@@ -1085,12 +1137,12 @@ var dashboard = BoldBI.create({
 dashboard.loadDashboard();
 ```
 
-<h3 class="doc-prop-wrapper" id="dashboardsettingsenabletheme" data-Path="dashboardsettingsenabletheme-dashboardSettings.enabletheme">
-<a href="#dashboardsettingsenabletheme" aria-hidden="true" class="anchor">
-<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<h3 class="doc-prop-wrapper" id="enabletheme" data-Path="dashboardsettingsenabletheme-dashboardSettings.enabletheme">
+<a href="#enabletheme" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
 <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
 </svg>
-</a><span class='doc-prop-name'>dashboardSettings.enableTheme</span>
+</a><span class='doc-prop-name'>enableTheme</span>
 
 <span class="doc-prop-type"> `boolean`
 </span>
@@ -1117,12 +1169,12 @@ var dashboard = BoldBI.create({
 dashboard.loadDashboard();
 ```
 
-<h3 class="doc-prop-wrapper" id="dashboardsettingsfontfamily" data-Path="dashboardsettingsfontfamily-dashboardSettings.fontFamily">
-<a href="#dashboardsettingsfontfamily" aria-hidden="true" class="anchor">
-<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<h3 class="doc-prop-wrapper" id="fontfamily" data-Path="dashboardsettingsfontfamily-dashboardSettings.fontFamily">
+<a href="#fontfamily" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
 <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
 </svg>
-</a><span class='doc-prop-name'>dashboardSettings.fontFamily</span>
+</a><span class='doc-prop-name'>fontFamily</span>
 
 <span class="doc-prop-type"> `string`
 </span>
@@ -1149,12 +1201,12 @@ var dashboard = BoldBI.create({
 dashboard.loadDashboard();
 ```
 
-<h3 class="doc-prop-wrapper" id="dashboardsettingsshowdashboardparameter" data-Path="dashboardsettingsshowdashboardparameter-dashboardSettings.showdashboardparameter">
-<a href="#dashboardsettingsshowdashboardparameter" aria-hidden="true" class="anchor">
-<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<h3 class="doc-prop-wrapper" id="showdashboardparameter" data-Path="dashboardsettingsshowdashboardparameter-dashboardSettings.showdashboardparameter">
+<a href="#showdashboardparameter" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
 <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
 </svg>
-</a><span class='doc-prop-name'>dashboardSettings.showDashboardParameter</span>
+</a><span class='doc-prop-name'>showDashboardParameter</span>
 
 <span class="doc-prop-type"> `boolean`
 </span>
@@ -1181,12 +1233,12 @@ var dashboard = BoldBI.create({
 dashboard.loadDashboard();
 ```
 
-<h3 class="doc-prop-wrapper" id="dashboardsettingsshowexport" data-Path="dashboardsettingsshowexport-dashboardSettings.showExport">
-<a href="#dashboardsettingsshowexport" aria-hidden="true" class="anchor">
-<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<h3 class="doc-prop-wrapper" id="showexport" data-Path="dashboardsettingsshowexport-dashboardSettings.showExport">
+<a href="#showexport" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
 <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
 </svg>
-</a><span class='doc-prop-name'>dashboardSettings.showExport</span>
+</a><span class='doc-prop-name'>showExport</span>
 
 <span class="doc-prop-type"> `boolean`
 </span>
@@ -1213,12 +1265,12 @@ var dashboard = BoldBI.create({
 dashboard.loadDashboard();
 ```
 
-<h3 class="doc-prop-wrapper" id="dashboardsettingsshowheader" data-Path="dashboardsettingsshowheader-dashboardSettings.showHeader">
-<a href="#dashboardsettingsshowheader" aria-hidden="true" class="anchor">
-<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<h3 class="doc-prop-wrapper" id="showheader" data-Path="dashboardsettingsshowheader-dashboardSettings.showHeader">
+<a href="#showheader" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
 <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
 </svg>
-</a><span class='doc-prop-name'>dashboardSettings.showHeader</span>
+</a><span class='doc-prop-name'>showHeader</span>
 
 <span class="doc-prop-type"> `boolean`
 </span>
@@ -1245,12 +1297,12 @@ var dashboard = BoldBI.create({
 dashboard.loadDashboard();
 ```
 
-<h3 class="doc-prop-wrapper" id="dashboardsettingsshowmoreoption" data-Path="dashboardsettingsshowmoreoption-dashboardSettings.showMoreOption">
-<a href="#dashboardsettingsshowmoreoption" aria-hidden="true" class="anchor">
-<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<h3 class="doc-prop-wrapper" id="showmoreoption" data-Path="dashboardsettingsshowmoreoption-dashboardSettings.showMoreOption">
+<a href="#showmoreoption" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
 <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
 </svg>
-</a><span class='doc-prop-name'>dashboardSettings.showMoreOption</span>
+</a><span class='doc-prop-name'>showMoreOption</span>
 
 <span class="doc-prop-type"> `boolean`
 </span>
@@ -1277,12 +1329,12 @@ var dashboard = BoldBI.create({
 dashboard.loadDashboard();
 ```
 
-<h3 class="doc-prop-wrapper" id="dashboardsettingsshowpreviewas" data-Path="dashboardsettingsshowpreviewas-dashboardSettings.showPreviewAs">
-<a href="#dashboardsettingsshowpreviewas" aria-hidden="true" class="anchor">
-<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<h3 class="doc-prop-wrapper" id="showpreviewas" data-Path="dashboardsettingsshowpreviewas-dashboardSettings.showPreviewAs">
+<a href="#showpreviewas" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
 <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
 </svg>
-</a><span class='doc-prop-name'>dashboardSettings.showPreviewAs</span>
+</a><span class='doc-prop-name'>showPreviewAs</span>
 
 <span class="doc-prop-type"> `boolean`
 </span>
@@ -1308,12 +1360,12 @@ var dashboard = BoldBI.create({
 dashboard.loadDesigner();
 ```
 
-<h3 class="doc-prop-wrapper" id="dashboardsettingsshowrefresh" data-Path="dashboardsettingsshowrefresh-dashboardSettings.showRefresh">
-<a href="#dashboardsettingsshowrefresh" aria-hidden="true" class="anchor">
-<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<h3 class="doc-prop-wrapper" id="showrefresh" data-Path="dashboardsettingsshowrefresh-dashboardSettings.showRefresh">
+<a href="#showrefresh" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
 <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
 </svg>
-</a><span class='doc-prop-name'>dashboardSettings.showRefresh</span>
+</a><span class='doc-prop-name'>showRefresh</span>
 
 <span class="doc-prop-type"> `boolean`
 </span>
@@ -1342,12 +1394,12 @@ dashboard.loadDashboard();
 
 ## dashboardSettings.dataSourceConfig
 
-<h3 class="doc-prop-wrapper" id="dashboardsettingsdatasourceconfighidedatasourceconfig" data-Path="dashboardsettingsdatasourceconfighidedatasourceconfig-dashboardSettings.dataSourceConfig.hideDataSourceConfig">
-<a href="#dashboardsettingsdatasourceconfighidedatasourceconfig" aria-hidden="true" class="anchor">
-<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<h3 class="doc-prop-wrapper" id="hidedatasourceconfig" data-Path="dashboardsettingsdatasourceconfighidedatasourceconfig-dashboardSettings.dataSourceConfig.hideDataSourceConfig">
+<a href="#hidedatasourceconfig" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
 <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
 </svg>
-</a><span class='doc-prop-name'>dashboardSettings.dataSourceConfig.hideDataSourceConfig</span>
+</a><span class='doc-prop-name'>hideDataSourceConfig</span>
 
 <span class="doc-prop-type"> `boolean`
 </span>
@@ -1378,12 +1430,12 @@ dashboard.loadDesigner();
 
 ## dashboardSettings.filterOverviewSettings
 
-<h3 class="doc-prop-wrapper" id="dashboardsettingsfilteroverviewsettingsshowsaveasicon" data-Path="dashboardsettingsfilteroverviewsettingsshowsaveasicon-dashboardSettings.filterOverviewSettings.showSaveAsIcon">
-<a href="#dashboardsettingsfilteroverviewsettingsshowsaveasicon" aria-hidden="true" class="anchor">
-<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<h3 class="doc-prop-wrapper" id="showsaveasicon" data-Path="dashboardsettingsfilteroverviewsettingsshowsaveasicon-dashboardSettings.filterOverviewSettings.showSaveAsIcon">
+<a href="#showsaveasicon" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
 <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
 </svg>
-</a><span class='doc-prop-name'>dashboardSettings.filterOverviewSettings.showSaveAsIcon</span>
+</a><span class='doc-prop-name'>showSaveAsIcon</span>
 
 <span class="doc-prop-type"> `boolean`
 </span>
@@ -1411,12 +1463,12 @@ var dashboard = BoldBI.create({
 dashboard.loadDashboard();
 ```
 
-<h3 class="doc-prop-wrapper" id="dashboardsettingsfilteroverviewsettingsshowsaveicon" data-Path="dashboardsettingsfilteroverviewsettingsshowsaveicon-dashboardSettings.filterOverviewSettings.showSaveIcon">
-<a href="#dashboardsettingsfilteroverviewsettingsshowsaveicon" aria-hidden="true" class="anchor">
-<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<h3 class="doc-prop-wrapper" id="showsaveicon" data-Path="dashboardsettingsfilteroverviewsettingsshowsaveicon-dashboardSettings.filterOverviewSettings.showSaveIcon">
+<a href="#showsaveicon" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
 <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
 </svg>
-</a><span class='doc-prop-name'>dashboardSettings.filterOverviewSettings.showSaveIcon</span>
+</a><span class='doc-prop-name'>showSaveIcon</span>
 
 <span class="doc-prop-type"> `boolean`
 </span>
@@ -1444,12 +1496,12 @@ var dashboard = BoldBI.create({
 dashboard.loadDashboard();
 ```
 
-<h3 class="doc-prop-wrapper" id="dashboardsettingsfilteroverviewsettingsshowviewsavedfiltericon" data-Path="dashboardsettingsfilteroverviewsettingsshowviewsavedfiltericon-dashboardSettings.filterOverviewSettings.showViewSavedFilterIcon">
-<a href="#dashboardsettingsfilteroverviewsettingsshowviewsavedfiltericon" aria-hidden="true" class="anchor">
-<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<h3 class="doc-prop-wrapper" id="showviewsavedfiltericon" data-Path="dashboardsettingsfilteroverviewsettingsshowviewsavedfiltericon-dashboardSettings.filterOverviewSettings.showViewSavedFilterIcon">
+<a href="#showviewsavedfiltericon" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
 <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
 </svg>
-</a><span class='doc-prop-name'>dashboardSettings.filterOverviewSettings.showViewSavedFilterIcon</span>
+</a><span class='doc-prop-name'>showViewSavedFilterIcon</span>
 
 <span class="doc-prop-type"> `boolean`
 </span>
@@ -1492,7 +1544,7 @@ dashboard.loadDashboard();
 
 <h3 class="doc-prop-wrapper" id="dashboardsettingsfilteroverviewsettingsviewid" data-Path="dashboardsettingsfilteroverviewsettingsviewid-dashboardSettings.filterOverviewSettings.viewId">
 <a href="#dashboardsettingsfilteroverviewsettingsviewid" aria-hidden="true" class="anchor">
-<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
 <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
 </svg>
 </a><span class='doc-prop-name'>dashboardSettings.filterOverviewSettings.viewId</span>
@@ -1533,7 +1585,7 @@ dashboard.loadDashboard();
 
 <h3 class="doc-prop-wrapper" id="dashboardsettingsfilteroverviewsettingsviewname" data-Path="dashboardsettingsfilteroverviewsettingsviewname-dashboardSettings.filterOverviewSettings.viewName">
 <a href="#dashboardsettingsfilteroverviewsettingsviewname" aria-hidden="true" class="anchor">
-<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
 <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
 </svg>
 </a><span class='doc-prop-name'>dashboardSettings.filterOverviewSettings.viewName</span>
@@ -1570,12 +1622,12 @@ dashboard.loadDashboard();
 
 ## dashboardSettings.viewDataSettings
 
-<h3 class="doc-prop-wrapper" id="dashboardsettingsviewdatasettingsenablecolumnselection" data-Path="dashboardsettingsviewdatasettingsenablecolumnselection-dashboardSettings.viewDataSettings.enableColumnSelection">
-<a href="#dashboardsettingsviewdatasettingsenablecolumnselection" aria-hidden="true" class="anchor">
-<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<h3 class="doc-prop-wrapper" id="enablecolumnselection" data-Path="dashboardsettingsviewdatasettingsenablecolumnselection-dashboardSettings.viewDataSettings.enableColumnSelection">
+<a href="#enablecolumnselection" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
 <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
 </svg>
-</a><span class='doc-prop-name'>dashboardSettings.viewDataSettings.enableColumnSelection</span>
+</a><span class='doc-prop-name'>enableColumnSelection</span>
 
 <span class="doc-prop-type"> `boolean`
 </span>
@@ -1613,12 +1665,12 @@ var dashboard = BoldBI.create({
 dashboard.loadDashboard();
 ```
 
-<h3 class="doc-prop-wrapper" id="dashboardsettingsviewdatasettingsenableexporting" data-Path="dashboardsettingsviewdatasettingsenableexporting-dashboardSettings.viewDataSettings.enableExporting">
-<a href="#dashboardsettingsviewdatasettingsenableexporting" aria-hidden="true" class="anchor">
-<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<h3 class="doc-prop-wrapper" id="enableexporting" data-Path="dashboardsettingsviewdatasettingsenableexporting-dashboardSettings.viewDataSettings.enableExporting">
+<a href="#enableexporting" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
 <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
 </svg>
-</a><span class='doc-prop-name'>dashboardSettings.viewDataSettings.enableExporting</span>
+</a><span class='doc-prop-name'>enableExporting</span>
 
 <span class="doc-prop-type"> `boolean`
 </span>
@@ -1656,12 +1708,12 @@ var dashboard = BoldBI.create({
 dashboard.loadDashboard();
 ```
 
-<h3 class="doc-prop-wrapper" id="dashboardsettingsviewdatasettingsshowallcolumns" data-Path="dashboardsettingsviewdatasettingsshowallcolumns-dashboardSettings.viewDataSettings.showAllColumns">
-<a href="#dashboardsettingsviewdatasettingsshowallcolumns" aria-hidden="true" class="anchor">
-<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<h3 class="doc-prop-wrapper" id="showallcolumns" data-Path="dashboardsettingsviewdatasettingsshowallcolumns-dashboardSettings.viewDataSettings.showAllColumns">
+<a href="#showallcolumns" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
 <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
 </svg>
-</a><span class='doc-prop-name'>dashboardSettings.viewDataSettings.showAllColumns</span>
+</a><span class='doc-prop-name'>showAllColumns</span>
 
 <span class="doc-prop-type"> `boolean`
 </span>
@@ -1701,12 +1753,12 @@ dashboard.loadDashboard();
 
 ## dashboardSettings.widgetsPanel
 
-<h3 class="doc-prop-wrapper" id="dashboardsettingswidgetspanelexistingdashboards" data-Path="dashboardsettingswidgetspanelexistingdashboards-dashboardSettings.widgetsPanel.existingDashboards">
-<a href="#dashboardsettingswidgetspanelexistingdashboards" aria-hidden="true" class="anchor">
-<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<h3 class="doc-prop-wrapper" id="existingdashboards" data-Path="dashboardsettingswidgetspanelexistingdashboards-dashboardSettings.widgetsPanel.existingDashboards">
+<a href="#existingdashboards" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
 <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
 </svg>
-</a><span class='doc-prop-name'>dashboardSettings.widgetsPanel.existingDashboards</span>
+</a><span class='doc-prop-name'>existingDashboards</span>
 
 <span class="doc-prop-type"> `Array`
 </span>
@@ -1734,12 +1786,12 @@ var dashboard = BoldBI.create({
 dashboard.loadDesigner();
 ```
 
-<h3 class="doc-prop-wrapper" id="dashboardsettingswidgetspanelhidedefaultwidgets" data-Path="dashboardsettingswidgetspanelhidedefaultwidgets-dashboardSettings.widgetsPanel.hideDefaultWidgets">
-<a href="#dashboardsettingswidgetspanelhidedefaultwidgets" aria-hidden="true" class="anchor">
-<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<h3 class="doc-prop-wrapper" id="hidedefaultwidgets" data-Path="dashboardsettingswidgetspanelhidedefaultwidgets-dashboardSettings.widgetsPanel.hideDefaultWidgets">
+<a href="#hidedefaultwidgets" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
 <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
 </svg>
-</a><span class='doc-prop-name'>dashboardSettings.widgetsPanel.hideDefaultWidgets</span>
+</a><span class='doc-prop-name'>hideDefaultWidgets</span>
 
 <span class="doc-prop-type"> `boolean`
 </span>
@@ -1769,12 +1821,12 @@ var dashboard = BoldBI.create({
 dashboard.loadDesigner();
 ```
 
-<h3 class="doc-prop-wrapper" id="dashboardsettingswidgetspanelhideexistingwidgets" data-Path="dashboardsettingswidgetspanelhideexistingwidgets-dashboardSettings.widgetsPanel.hideExistingWidgets">
-<a href="#dashboardsettingswidgetspanelhideexistingwidgets" aria-hidden="true" class="anchor">
-<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<h3 class="doc-prop-wrapper" id="hideexistingwidgets" data-Path="dashboardsettingswidgetspanelhideexistingwidgets-dashboardSettings.widgetsPanel.hideExistingWidgets">
+<a href="#hideexistingwidgets" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
 <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
 </svg>
-</a><span class='doc-prop-name'>dashboardSettings.widgetsPanel.hideExistingWidgets</span>
+</a><span class='doc-prop-name'>hideExistingWidgets</span>
 
 <span class="doc-prop-type"> `boolean`
 </span>
@@ -1808,7 +1860,7 @@ dashboard.loadDesigner();
 
 <h3 class="doc-prop-wrapper" id="datasources" data-Path="datasources-datasources">
 <a href="#datasources" aria-hidden="true" class="anchor">
-<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
 <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
 </svg>
 </a><span class='doc-prop-name'>datasources</span>
@@ -1837,12 +1889,12 @@ dashboard.loadDesigner();
 
 ## designCanvasSettings
 
-<h3 class="doc-prop-wrapper" id="designcanvassettingsmargin" data-Path="designcanvassettingsmargin-designCanvasSettings.margin">
-<a href="#designcanvassettingsmargin" aria-hidden="true" class="anchor">
-<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<h3 class="doc-prop-wrapper" id="margin" data-Path="designcanvassettingsmargin-designCanvasSettings.margin">
+<a href="#margin" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
 <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
 </svg>
-</a><span class='doc-prop-name'>designCanvasSettings.margin</span>
+</a><span class='doc-prop-name'>margin</span>
 
 <span class="doc-prop-type"> `integer`
 </span>
@@ -1873,12 +1925,12 @@ dashboard.loadDashboard();
 
 The dashboard server provides a dynamic connection string feature for fetching the data used to render the dashboard.
 
-<h3 class="doc-prop-wrapper" id="dynamicconnectionidentity" data-Path="dynamicconnectionidentity-dynamicConnection.identity">
-<a href="#dynamicconnectionidentity" aria-hidden="true" class="anchor">
-<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<h3 class="doc-prop-wrapper" id="identity" data-Path="dynamicconnectionidentity-dynamicConnection.identity">
+<a href="#identity" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
 <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
 </svg>
-</a><span class='doc-prop-name'>dynamicConnection.identity</span>
+</a><span class='doc-prop-name'>identity</span>
 
 <span class="doc-prop-type"> `boolean`
 </span>
@@ -1906,12 +1958,12 @@ var dashboard = BoldBI.create({
 dashboard.loadDashboard();
 ```
 
-<h3 class="doc-prop-wrapper" id="dynamicconnectionisenabled" data-Path="dynamicconnectionisenabled-dynamicConnection.isEnabled">
-<a href="#dynamicconnectionisenabled" aria-hidden="true" class="anchor">
-<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<h3 class="doc-prop-wrapper" id="isenabled" data-Path="dynamicconnectionisenabled-dynamicConnection.isEnabled">
+<a href="#isenabled" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
 <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
 </svg>
-</a><span class='doc-prop-name'>dynamicConnection.isEnabled</span>
+</a><span class='doc-prop-name'>isEnabled</span>
 
 <span class="doc-prop-type"> `boolean`
 </span>
@@ -1940,12 +1992,12 @@ dashboard.loadDashboard();
 
 ## exportSettings
 
-<h3 class="doc-prop-wrapper" id="exportsettingsshowcsv" data-Path="exportsettingsshowcsv-exportSettings.showcsv">
-<a href="#exportsettingsshowcsv" aria-hidden="true" class="anchor">
-<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<h3 class="doc-prop-wrapper" id="showcsv" data-Path="exportsettingsshowcsv-exportSettings.showcsv">
+<a href="#showcsv" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
 <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
 </svg>
-</a><span class='doc-prop-name'>exportSettings.showCSV</span>
+</a><span class='doc-prop-name'>showCSV</span>
 
 <span class="doc-prop-type"> `boolean`
 </span>
@@ -1972,12 +2024,12 @@ var dashboard = BoldBI.create({
 dashboard.loadDashboard();
 ```
 
-<h3 class="doc-prop-wrapper" id="exportsettingsshowexcel" data-Path="exportsettingsshowexcel-exportSettings.showExcel">
-<a href="#exportsettingsshowexcel" aria-hidden="true" class="anchor">
-<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<h3 class="doc-prop-wrapper" id="showexcel" data-Path="exportsettingsshowexcel-exportSettings.showExcel">
+<a href="#showexcel" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
 <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
 </svg>
-</a><span class='doc-prop-name'>exportSettings.showExcel</span>
+</a><span class='doc-prop-name'>showExcel</span>
 
 <span class="doc-prop-type"> `boolean`
 </span>
@@ -2004,12 +2056,12 @@ var dashboard = BoldBI.create({
 dashboard.loadDashboard();
 ```
 	
-<h3 class="doc-prop-wrapper" id="exportsettingsshowimage" data-Path="exportsettingsshowimage-exportSettings.showImage">
-<a href="#exportsettingsshowimage" aria-hidden="true" class="anchor">
-<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<h3 class="doc-prop-wrapper" id="showimage" data-Path="exportsettingsshowimage-exportSettings.showImage">
+<a href="#showimage" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
 <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
 </svg>
-</a><span class='doc-prop-name'>exportSettings.showImage</span>
+</a><span class='doc-prop-name'>showImage</span>
 
 <span class="doc-prop-type"> `boolean`
 </span>
@@ -2036,12 +2088,12 @@ var dashboard = BoldBI.create({
 dashboard.loadDashboard();
 ```
 
-<h3 class="doc-prop-wrapper" id="exportsettingsshowpdf" data-Path="exportsettingsshowpdf-exportSettings.showPDF">
-<a href="#exportsettingsshowpdf" aria-hidden="true" class="anchor">
-<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<h3 class="doc-prop-wrapper" id="showpdf" data-Path="exportsettingsshowpdf-exportSettings.showPDF">
+<a href="#showpdf" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
 <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
 </svg>
-</a><span class='doc-prop-name'>exportSettings.showPDF</span>
+</a><span class='doc-prop-name'>showPDF</span>
 
 <span class="doc-prop-type"> `boolean`
 </span>
@@ -2072,12 +2124,12 @@ dashboard.loadDashboard();
 
 The locale allows you to change the localization of the dashboard. It is used to modify the data based on the specified localization.
 
-<h3 class="doc-prop-wrapper" id="localesettingsapplocale" data-Path="localesettingsapplocale-localesettings.applocale">
-<a href="#localesettingsapplocale" aria-hidden="true" class="anchor">
-<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<h3 class="doc-prop-wrapper" id="applocale" data-Path="localesettingsapplocale-localesettings.applocale">
+<a href="#applocale" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
 <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
 </svg>
-</a><span class='doc-prop-name'>localeSettings.appLocale</span>
+</a><span class='doc-prop-name'>appLocale</span>
 
 <span class="doc-prop-type"> `string`
 </span>
@@ -2106,12 +2158,12 @@ var dashboard = BoldBI.create({
 dashboard.loadDashboard();
 ```
 
-<h3 class="doc-prop-wrapper" id="localesettingsculture" data-Path="localesettingsculture-localesettings.culture">
-<a href="#localesettingsculture" aria-hidden="true" class="anchor">
-<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<h3 class="doc-prop-wrapper" id="culture" data-Path="localesettingsculture-localesettings.culture">
+<a href="#culture" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
 <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
 </svg>
-</a><span class='doc-prop-name'>localeSettings.culture</span>
+</a><span class='doc-prop-name'>culture</span>
 
 <span class="doc-prop-type"> `string`
 </span>
@@ -2161,12 +2213,12 @@ After this, the values in the widget will be displayed as follows within your ap
 
 ## pinboardSettings
 
-<h3 class="doc-prop-wrapper" id="pinboardsettingsenablepinboardheader" data-Path="pinboardsettingsenablepinboardheader-pinboardSettings.enablePinboardHeader">
-<a href="#pinboardsettingsenablepinboardheader" aria-hidden="true" class="anchor">
-<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<h3 class="doc-prop-wrapper" id="enablepinboardheader" data-Path="pinboardsettingsenablepinboardheader-pinboardSettings.enablePinboardHeader">
+<a href="#enablepinboardheader" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
 <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
 </svg>
-</a><span class='doc-prop-name'>pinboardSettings.enablePinboardHeader</span>
+</a><span class='doc-prop-name'>enablePinboardHeader</span>
 
 <span class="doc-prop-type"> `boolean`
 </span>
@@ -2193,12 +2245,12 @@ var dashboard = BoldBI.create({
 dashboard.loadPinboard();
 ```
 
-<h3 class="doc-prop-wrapper" id="pinboardsettingsenableunpinwidget" data-Path="pinboardsettingsenableunpinwidget-pinboardSettings.enableUnpinWidget">
-<a href="#pinboardsettingsenableunpinwidget" aria-hidden="true" class="anchor">
-<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<h3 class="doc-prop-wrapper" id="enableunpinwidget" data-Path="pinboardsettingsenableunpinwidget-pinboardSettings.enableUnpinWidget">
+<a href="#enableunpinwidget" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
 <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
 </svg>
-</a><span class='doc-prop-name'>pinboardSettings.enableUnpinWidget</span>
+</a><span class='doc-prop-name'>enableUnpinWidget</span>
 
 <span class="doc-prop-type"> `boolean`
 </span>
@@ -2229,12 +2281,12 @@ dashboard.loadPinboard();
 
 Predefined or preconfigured widgets are a list of widgets that appear under the `Default Widget Panel` when initializing the dashboard designer itself. To do this, you need to create a dashboard called a template dashboard and configure the widgets that will be considered as predefined widgets for your designer.
 
-<h3 class="doc-prop-wrapper" id="preconfiguredwidgetscategoryname" data-Path="preconfiguredwidgetscategoryname-preConfiguredWidgets.categoryName">
-<a href="#preconfiguredwidgetscategoryname" aria-hidden="true" class="anchor">
-<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<h3 class="doc-prop-wrapper" id="categoryname" data-Path="preconfiguredwidgetscategoryname-preConfiguredWidgets.categoryName">
+<a href="#categoryname" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
 <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
 </svg>
-</a><span class='doc-prop-name'>preConfiguredWidgets.categoryName</span>
+</a><span class='doc-prop-name'>categoryName</span>
 
 <span class="doc-prop-type"> `string`
 </span>
@@ -2267,7 +2319,7 @@ dashboard.loadDesigner();
 
 <h3 class="doc-prop-wrapper" id="preconfiguredwidgetsdashboardid" data-Path="preconfiguredwidgetsdashboardid-preConfiguredWidgets.dashboardId">
 <a href="#preconfiguredwidgetsdashboardid" aria-hidden="true" class="anchor">
-<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
 <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
 </svg>
 </a><span class='doc-prop-name'>preConfiguredWidgets.dashboardId</span>
@@ -2276,6 +2328,7 @@ dashboard.loadDesigner();
 </span>
 
 </h3>
+
 
 The preconfigured widgets will be listed from the mentioned dashboard ID within the embedded dashboard designer in your application.
 
@@ -2298,12 +2351,12 @@ dashboard.loadDesigner();
 
 ## widgetContainerSettings
 
-<h3 class="doc-prop-wrapper" id="widgetcontainersettingsboxshadow" data-Path="widgetcontainersettingsboxshadow-widgetContainerSettings.boxShadow">
-<a href="#widgetcontainersettingsboxshadow" aria-hidden="true" class="anchor">
-<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<h3 class="doc-prop-wrapper" id="boxshadow" data-Path="widgetcontainersettingsboxshadow-widgetContainerSettings.boxShadow">
+<a href="#boxshadow" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
 <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
 </svg>
-</a><span class='doc-prop-name'>widgetContainerSettings.boxShadow</span>
+</a><span class='doc-prop-name'>boxShadow</span>
 
 <span class="doc-prop-type"> `string`
 </span>
@@ -2332,7 +2385,7 @@ dashboard.loadDashboard();
 
 <h3 class="doc-prop-wrapper" id="widgetcontainersettingsmargin" data-Path="widgetcontainersettingsmargin-widgetContainerSettings.margin">
 <a href="#widgetcontainersettingsmargin" aria-hidden="true" class="anchor">
-<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
 <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
 </svg>
 </a><span class='doc-prop-name'>widgetContainerSettings.margin</span>
@@ -2368,7 +2421,7 @@ dashboard.loadDashboard();
 
 <h3 class="doc-prop-wrapper" id="widgetsettingsshowexport" data-Path="widgetsettingsshowexport-widgetSettings.showExport">
 <a href="#widgetsettingsshowexport" aria-hidden="true" class="anchor">
-<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
 <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
 </svg>
 </a><span class='doc-prop-name'>widgetSettings.showExport</span>
@@ -2398,12 +2451,12 @@ var dashboard = BoldBI.create({
 dashboard.loadDashboard();
 ```
 	
-<h3 class="doc-prop-wrapper" id="widgetsettingsshowfilter" data-Path="widgetsettingsshowfilter-widgetSettings.showFilter">
-<a href="#widgetsettingsshowfilter" aria-hidden="true" class="anchor">
-<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<h3 class="doc-prop-wrapper" id="showfilter" data-Path="widgetsettingsshowfilter-widgetSettings.showFilter">
+<a href="#showfilter" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
 <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
 </svg>
-</a><span class='doc-prop-name'>widgetSettings.showFilter</span>
+</a><span class='doc-prop-name'>showFilter</span>
 
 <span class="doc-prop-type"> `boolean`
 </span>
@@ -2430,12 +2483,12 @@ var dashboard = BoldBI.create({
 dashboard.loadDashboard();
 ```
 
-<h3 class="doc-prop-wrapper" id="widgetsettingsshowmaximize" data-Path="widgetsettingsshowmaximize-widgetSettings.showMaximize">
-<a href="#widgetsettingsshowmaximize" aria-hidden="true" class="anchor">
-<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<h3 class="doc-prop-wrapper" id="showmaximize" data-Path="widgetsettingsshowmaximize-widgetSettings.showMaximize">
+<a href="#showmaximize" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
 <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
 </svg>
-</a><span class='doc-prop-name'>widgetSettings.showMaximize</span>
+</a><span class='doc-prop-name'>showMaximize</span>
 
 <span class="doc-prop-type"> `boolean`
 </span>
@@ -2464,7 +2517,7 @@ dashboard.loadDashboard();
 
 <h3 class="doc-prop-wrapper" id="widgetsettingsshowmoreoption" data-Path="widgetsettingsshowmoreoption-widgetSettings.showMoreOption">
 <a href="#widgetsettingsshowmoreoption" aria-hidden="true" class="anchor">
-<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
 <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
 </svg>
 </a><span class='doc-prop-name'>widgetSettings.showMoreOption</span>

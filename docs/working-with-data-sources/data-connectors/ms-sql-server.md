@@ -28,7 +28,7 @@ In live mode, the Bold BI designer executes the query directly into the database
 
 ### Extract
 
- In extract mode, the Bold BI designer extracts data and stores it in an Azure SQL database, which Bold BI maintains for extracting data from REST data sources. The SQL query will execute in an intermediate database instead of executing in the actual database server to fetch data. Currently, the Bold BI designer extracts 50,000 records initially, and additional records will be extracted in the next iteration based on the [Refresh Settings](/working-with-data-sources/data-connectors/ms-sql-server/#sql-data-source-refresh-settings). 
+ In extract mode, the Bold BI designer extracts data and stores it in [Intermediate Database](https://help.boldbi.com/working-with-data-sources/bold-bi-intermediate-database/), which Bold BI maintains for extracting data from REST data sources. The SQL query will execute in an intermediate database instead of executing in the actual database server to fetch data. Currently, the Bold BI designer extracts 50,000 records initially, and additional records will be extracted in the next iteration based on the [Refresh Settings](/working-with-data-sources/data-connectors/ms-sql-server/#sql-data-source-refresh-settings). 
 
 ## How to create Microsoft SQL Server data source
 

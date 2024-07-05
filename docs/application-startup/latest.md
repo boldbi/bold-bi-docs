@@ -10,6 +10,8 @@ documentation: ug
 
 > **NOTE:** To configure Bold BI v4.2.68 or earlier versions, please refer to [v4.2.68 or earlier](/application-startup/v4.2.68-or-earlier/).
 
+If Bold BI is deployed in an air-gapped environment, meaning there is no internet connection on the machine where Bold BI is installed, errors will occur during startup and possibly after startup. To resolve this issue, offline mode needs to be enabled in Bold BI. For instructions and reasons for enabling Bold BI offline mode, please refer to the following KB article: [How to enable offline mode for Bold BI](https://support.boldbi.com/kb/article/990/enable-offline-mode-for-bold-bi-resolve-errors-when-internet-connection-is-not-available)
+
 ## License Activation
 
 This topic explains how to activate the account and also how to start up the Bold BI Enterprise Application.
@@ -18,29 +20,27 @@ The Bold BI application can be activated either by using your login credentials 
 
 > **NOTE:** If you have already installed Bold Reports on your machine, please go to [this section](#activate-bold-bi-license) to activate your Bold BI license.
 
-## Using Login Credentials
+### Using Login Credentials
 
 To activate your subscription, you can sign in using your registered email address.
 
 ![Activate the account page](/static/assets/application-startup/images/application-startup-login.png) 
 
-### Select login option
-
 From the login window, select your account type and proceed to login.
 
-* Bold BI Login Credentials
-* Azure AD
 * Syncfusion Login Credentials
+* Google
+* Microsoft
+* LinkedIn
+* Bold BI Login Credentials
 
 ![Application startup login form](/static/assets/application-startup/images/login-option.png)
-
-### Select license
 
 If you have multiple Bold BI licenses, then you will see this screen. To proceed with the application startup, select the corresponding license. Otherwise, you will be automatically redirected to the application startup screen.
 
 ![Select Portal License](/static/assets/application-startup/images/choose-the-plan.png)
 
-## Offline Installation
+### Offline Installation
 
 > **NOTE:** The offline unlock key will be available for download on your account page under the Active subscription section, by default.
 
@@ -54,7 +54,7 @@ Once the unlock key has been uploaded, proceed to the next screen to configure t
 
 ![Select Unlcok key file ](/static/assets/application-startup/images/offline-setup.png)
 
-### Possible errors cases and their solution
+Possible errors cases and their solution
 
 | Cases      | Solution                                            |
 |-------------------  |-----------------------------------------------------------  |

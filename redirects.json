@@ -2676,6 +2676,10 @@
     "toPath": "/multi-tenancy/site-administration/manage-localization/"
   },
   {
+    "fromPath": "/embedded-bi/multi-tenancy/site-administration/configuration/",
+    "toPath": "/multi-tenancy/site-administration/configuration/"
+  },
+  {
     "fromPath": "/embedded-bi/multi-tenancy/manage-sites/",
     "toPath": "/multi-tenancy/manage-sites/"
   },

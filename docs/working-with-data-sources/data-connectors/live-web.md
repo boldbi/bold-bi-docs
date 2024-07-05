@@ -457,6 +457,187 @@ Body data is typically added for POST method API calls. If the application is de
     ![Post Authentication Type View](/static/assets/working-with-datasource/data-connectors/images/LiveWeb/Post_Authentication_Type_View.png)
 
 
+## Connecting Bold BI to WEB Live Data Source via REST API
+
+### Prerequisites 
+
+Type while creating the data source needs to be Web.
+
+[Rest API - v4.0](/server-api-reference/v4.0/api-reference/)
+
+### Modes
+
+Only the **Live mode** WEB data source can be created through the REST API.
+
+### Parameters for creating Data Source
+
+<table>
+   <tr>
+   <th>Parameters</th>
+   <th>Details</th>
+   </tr>
+   <tr>
+   <td>Name</br></br>
+   <b>required</b> </td>
+  <td><code>string</code></br></br>
+   Name of the data source</td>
+   </tr>
+   <tr>
+   <td>Type</br></br>
+   <b>required</b> </td>
+  <td><code>string</code></br></br>
+   This is used to specify the Type of the data source.</br></br></td>
+   </tr>
+   <tr>
+   <td>URL</br></br>
+   <b>required</b>  </td>
+  <td><code>string</code></br></br>
+   Rest endpoint URL</td>
+   </tr>
+   <tr>
+   <td>MethodType</br></br>
+   <b>optional</b>  </td>
+  <td><code>string</code></br></br>
+   Request Type of the provided endpoint.</td>
+   </tr>
+   <tr>
+   <td>DataFormat</br></br>
+   <b>optional </b> </td>
+  <td><code>string</code></br></br>
+   Data format of the response for the provided Rest API</td>
+   </tr>
+   <tr>
+   <td>Headers</br></br>
+   <b>optional</b> </td>
+  <td><code>array</code></br></br>
+  Authorization Headers for the endpoint ,default as []</td>
+   </tr>
+   <tr>
+   <td>Parameters</br></br>
+   <b>optional</b> </td>
+  <td><code>array</code></br></br>
+  Parameters for the endpoint and support for Post MethodType</td>
+   </tr>
+   <tr>
+   <td>RawData</br></br>
+   <b>optional</b> </td>
+  <td><code>json</code></br></br>
+  Raw body of the endpoint and support for Post MethodType</td>
+   </tr>
+   <tr>
+   <td>Authentication Type</br></br>
+   <b>optional</b> </td>
+  <td><code>string</code></br></br>
+   To connect to the provided endpoint, use either None or BasicHttpAuthentication for proper authentication</td>
+   </tr>
+   <tr>
+   <td>Username</br></br>
+   <b>optional</b> </td>
+  <td><code>string</code></br></br>
+   To connect to the provided endpoint, provide the username for BasicHttpAuthentication</td>
+   </tr>
+   <tr>
+   <td>Password</br></br>
+   <b>optional</b> </td>
+  <td><code>string</code></br></br>
+   To connect to the provided endpoint, provide the password for BasicHttpAuthentication</td>
+   </tr>
+   <tr>
+   <td>RefreshInterval</br></br>
+   <b>optional </b> </td>
+  <td><code>string</code></br></br>
+   No schedule for live data source. By default, it is set to Never</td>
+   </tr>
+   <tr>
+   <td>Provider</br></br>
+   <b>optional</b> </td>
+  <td><code>string</code></br></br>
+   Type of the data source</td>
+   </tr>
+   <tr>
+   <td>ProviderType</br></br>
+   <b>optional</b> </td>
+  <td><code>string</code></br></br>
+   Enter a DataProvider as Web</td>
+   </tr>
+   <tr>
+   <td>Rows</br></br>
+   <b>optional</b> </td>
+  <td><code>string</code></br></br>
+  This is used to specify the data count.</td>
+   </tr>
+   <tr>
+
+   <td>Mode</br></br>
+   <b>optional</b> </td>
+  <td><code>string</code></br></br>
+   Mode of the data source is Live</td>
+   </tr>
+   <tr>
+   <td>DataProvider</br></br>
+   <b>optional</b> </td>
+  <td><code>string</code></br></br>
+   Enter a DataProvider as WEB</td>
+   </tr>
+   </table>
+
+ #### For creating connection:
+
+ ``` json
+ {
+  "Name": "string",
+  "Type": "Web",
+  "Connection": {
+    "Url": "string",
+    "MethodType": "string",
+    "DataFormat": "string",
+    "Headers":[],
+    "AuthenticationType": "string",
+    "RefreshInterval": "string",
+    "Provider": "WEB",
+    "ProviderType": "Web",
+    "Rows": "string",
+    "Mode": "Live",
+    "DataProvider": "WEB"
+  }
+}
+ ```
+ #### For creating a connection with Headers, Parameters, Raw Body, and Authentication:
+
+ ``` json
+ {
+  "Name": "string",
+  "Type": "Web",
+  "Connection": {
+    "Url": "string",
+    "MethodType": "string",
+    "DataFormat": "string",
+    "Headers": [
+      {
+        "key": "string",
+        "value": "string"
+      }
+    ],
+    "Parameters": [
+      {
+        "key": "string",
+        "value": "string"
+      }
+    ],
+    "RawData": "",
+    "AuthenticationType": "string",
+    "Username": "string",
+    "Password": "string",
+    "RefreshInterval": "Never",
+    "Provider": "WEB",
+    "ProviderType": "Web",
+    "Rows": "string",
+    "Mode": "Live",
+    "DataProvider": "WEB"
+  }
+}
+ ```
+ 
 ## Dashboard Parameter
 
 Utilize dashboard parameters in conjunction with a Live Web API connection.

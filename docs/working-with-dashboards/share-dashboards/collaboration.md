@@ -14,7 +14,7 @@ This section explains how to collaborate with other users in the Bold BI cloud b
 
 The Collaboration feature in Bold BI allows users to write comments on a dashboard to share with other users who have access to the dashboard. It is useful for tracking events and providing insights into those events. Users can also add links to other dashboards or any external websites.
 
-Anyone with access to a dashboard can write comments. When a comment is added to a dashboard, users who have notifications enabled in their profile will receive email and system notifications. You can learn more about the [Notifications](/working-with-dashboards/share-dashboards/notifications/) in documentation.
+Anyone with access to a dashboard can post, edit, reply, and delete comments, as well as mention users in those comments. When a comment is added to a dashboard, users who have notifications enabled in their profile will receive email and system notifications. You can learn more about notifications in [this](/working-with-dashboards/share-dashboards/notifications/) documentation.
 
 ## Post a new comment
 
@@ -56,11 +56,15 @@ Edit the comments and then click `Save` to save your changes.
 
 ![comment-edit-saved](/static/assets/working-with-dashboards/share-dashboards/images/comment-edit-saved.png)
 
+> **NOTE:**  Only the user who added the comments can update them.
+
 ## Delete a comment
 
 To delete a comment, click the `Actions` button to see more options available for a comment or a reply, and then click `Delete` as shown in the following image.
 
 ![comment-delete-button](/static/assets/working-with-dashboards/share-dashboards/images/comment-delete-button.png)
+
+> **NOTE:**  Only the admin and the comment owner can delete the comments.
 
 ## Show parent comment of a reply
 
@@ -79,6 +83,8 @@ Users can be mentioned in comments to notify them about the comments by email.
 To do this, type `@` followed by the user’s name, and then select the user from the list of possible names to mention them in a comment. 
 
 ![Mention Users on comment](/static/assets/working-with-dashboards/share-dashboards/images/user-mention.png)
+
+> **NOTE:**  Users with dashboard access can mention other users with access to the dashboard.
 
 ![Mentioned Users](/static/assets/working-with-dashboards/share-dashboards/images/user-mentioned.png)
 

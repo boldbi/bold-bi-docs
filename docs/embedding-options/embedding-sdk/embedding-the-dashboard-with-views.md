@@ -16,7 +16,7 @@ Follow these steps to embed a dashboard with view in your application.
 
     ```js
     <head>
-        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v7.8.18/boldbi-embed.js"></script>
+        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v7.9.50/boldbi-embed.js"></script>
     </head>
     ```
 
@@ -155,12 +155,12 @@ Follow these steps to embed a dashboard with view in your application.
 </tr></thead>
 <tbody>  
 <tr>            
-<td><code>v7.8.18(latest)</code></td>            
+<td><code>v7.9.50(latest)</code></td>            
 <td><code>
 
 ```js
 <head> 
-    <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v7.8.18/boldbi-embed.js"></script>
+    <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v7.9.50/boldbi-embed.js"></script>
 </head>
 ```
 

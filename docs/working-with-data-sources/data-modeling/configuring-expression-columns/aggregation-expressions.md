@@ -197,3 +197,21 @@ documentation: ug
         <td>TOTAL(SUM([UnitPrice]))</td>
     </tr>
 </table>
+
+### QUANTILEEXACT
+
+<table>
+    <tr>
+        <td><b>Syntax</b></td>
+        <td>QUANTILEEXACT(level, expression)</td>
+    </tr>
+    <tr>
+        <td><b>Description</b></td>
+        <td>Exactly computes the quantile of a numeric data sequence. Support is only provided for the ClickHouse Connector.</td>
+    </tr>
+    <tr>
+        <td><b>Example</b></td>
+        <td>QUANTILEEXACT(0.8, [UnitPrice])
+        </td>
+    </tr>
+</table>

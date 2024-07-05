@@ -28,6 +28,8 @@ You can explore the Site Administration details below:
 
 [Manage Localization](/multi-tenancy/site-administration/manage-localization/)
 
+[Configuration](/multi-tenancy/site-administration/configuration/)
+
 [Azure Active Directory B2C](/multi-tenancy/site-administration/authentication/azure-b2c-settings/)
 
 [API Reference](/multi-tenancy/api-reference/)

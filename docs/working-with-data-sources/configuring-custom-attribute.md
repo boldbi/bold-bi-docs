@@ -181,3 +181,26 @@ Syntax: `${{:Custom Attribute Name}}`
 ![Use custom attribute in Expression](/static/assets/working-with-datasource/custom-attribute/images/EX2.png)
 
 >**Note**: Please refer to this [Datasource connector page](/working-with-data-sources/data-connectors/) to create a datasource using a **custom attribute**.
+
+### 4. Benefits:
+
+1. Be able to use the same connection string for creating/modifying multiple data sources with a single credential.
+2. Configure different connection strings for different users in both design and view modes of dashboards.
+3. Effortlessly move dashboards with different connection strings between various environments, such as development, staging, and production.
+4. Download and upload the same dashboards with varied data for different servers.
+Publish dashboards across different tenants with different servers.
+5. Create a single dashboard template and use it for multiple tenants with different source credentials seamlessly.
+6. Maintain unique values for each user using user-level attributes.
+7. Maintain common values for specific user groups using group-level attributes.
+8. Maintain common values for all users at a site using site-level attributes.
+
+**Note** 
+
+1. The order of priority for custom attributes is as follows: user level = 1, group level = 2, site level = 3.
+2. When uploading a dashboard to another site or user level, ensure that the same custom attribute name is available at the new site or user level.
+3. When publishing a data source externally, verify that the same custom attribute name exists at the relevant site or user level.
+4. When granting access to User 1's dashboard to User 2, ensure that the same custom attribute is available at the user level or site level.
+
+**Limitation**
+
+ Do not allow the same custom attribute to be available in different groups if it is used in the data source.

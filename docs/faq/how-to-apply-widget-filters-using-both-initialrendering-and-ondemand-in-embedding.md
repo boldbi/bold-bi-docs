@@ -15,7 +15,7 @@ In JavaScript-based embedding, we have added support for applying filters to spe
 
 ## Steps to follow for applying filters into widgets,
 
-1. Please [download](https://github.com/boldbi/samples/tree/master/Scenario%20Based%20Samples/Widget%20Filtering%20Sample) the ASP.NET Core sample for a better understanding of the widget filtering support.
+1. Please [download](https://github.com/boldbi/samples/tree/master/Scenario%20Based%20Samples/Dashboard%20embedding%20with%20filters) the ASP.NET Core sample for a better understanding of the widget filtering support.
 
 2. In the Bold BI Server, load the `Agent Activity Dashboard` from the Sample Dashboards.
 

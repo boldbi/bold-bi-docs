@@ -13,4 +13,5 @@ Disallow: /deploying-bold-bi/deploying-in-azure/
 Disallow: /deploying-bold-bi/deploying-in-aws/
 Disallow: /deploying-bold-bi/deploying-in-gcp/
 Disallow: /deploying-bold-bi/deploying-in-azure-app-service/
+Disallow: /working-with-data-sources/data-connectors/sql-data-source/
 Sitemap: https://help.boldbi.com/sitemap-help.xml

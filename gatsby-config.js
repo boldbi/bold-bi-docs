@@ -11,7 +11,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-polyfill-io`,
       options: {
-        features: [`String.prototype.startsWith`, `String.prototype.includes`, `Array.prototype.includes`]
+        features: [`String.prototype.startsWith`, `String.prototype.includes`, `Array.prototype.includes`],
+        integrity: "sha384-Wr3l27q1bK61u689TZfFU9ZY5gqLFskmpQtEoXiM2BEoIWrnULp2zdvB0G4qVpWt",
+        crossorigin: "anonymous"
       },
     },
     {

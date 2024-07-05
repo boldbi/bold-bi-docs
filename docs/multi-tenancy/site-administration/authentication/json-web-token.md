@@ -135,7 +135,7 @@ A JWT should contain the following claims:
 
    <tr>
    <td>Email</td>
-   <td>emailaddress</td>
+   <td>email</td>
    <td>string</td>
    <td>Yes</td>
    <td>Email address of the user.</td>
@@ -175,7 +175,7 @@ Please refer to the following sample for instructions on how to generate the JWT
 private string GenerateJSONWebToken(UserModel userInfo)    
 {    
     var signingKey = "signingkey";// Signing key value will copy from JWT Settings page
-    var securityKey = new SymmetricSecurityKey(signingKey);
+    var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(signingKey));
     var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256Signature, SecurityAlgorithms.Sha256Digest);
 
     var claims = new[] {
