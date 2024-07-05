@@ -74,6 +74,352 @@ We have added support for **custom attributes and dashboard parameters** in the 
 
 >**Note:** Refer to the [Dashboard Parameter Documentation](https://help.boldbi.com/working-with-data-sources/dashboard-parameter/) and [Custom Attributes Documentation](https://help.boldbi.com/working-with-data-sources/configuring-custom-attribute/) for more details.
 
+## Connecting Bold BI to Mongodb Data Source via REST API
+
+### Prerequisites 
+
+Type while creating the data source needs to be MongoDB.
+
+[Rest API - v4.0](/server-api-reference/v4.0/api-reference/)
+
+### Modes
+
+Only the **Extract mode** MongoDB data source can be created through the REST API.
+
+### Parameters for creating Data Source
+
+<table>
+   <tr>
+   <th>Parameters</th>
+   <th>Details</th>
+   </tr>
+   <tr>
+   <td>Name</br></br>
+   <b>required</b> </td>
+  <td><code>string</code></br></br>
+   Name of the data source</td>
+   </tr>
+   <tr>
+   <td>Type</br></br>
+   <b>required</b> </td>
+  <td><code>string</code></br></br>
+   This is used to specify the Type of the data source.</br></br></td>
+   </tr>
+   <tr>
+   <td>AuthenticationDatabase</br></br>
+   <b>required</b>  </td>
+  <td><code>string</code></br></br>
+   This is used to specify Authentication Database</td>
+   </tr>
+   <tr>
+   <td>AuthenticationType</br></br>
+   <b>required</b>  </td>
+  <td><code>string</code></br></br>
+   This is used to specify Authentication mechanism, Provide None or SCRAM authentication in the Authentication Mechanism .</td>
+   </tr>
+   <tr>
+   <td>Database</br></br>
+   <b>required</b> </td>
+  <td><code>string</code></br></br>
+   Database which needs to be connected</td>
+   </tr>
+   <tr>
+   <td>CollectionName</br></br>
+   <b>required</b> </td>
+  <td><code>Array</code></br></br>
+   schema of the database</td>
+   </tr>
+   <tr>
+   <td>Provider</br></br>
+   <b>required</b> </td>
+  <td><code>string</code></br></br>
+   Type of the data source</td>
+   </tr>
+   <td>IsSelfSigned</br></br>
+   <b>optional </b> </td>
+  <td>`boolean`</br></br>
+   Enable or disable SSH. By default, it is false.</td>
+   </tr>
+   <tr>
+   <td>IsSslEnabled</br></br>
+   <b>required </b> </td>
+  <td>`boolean`</br></br>
+   Enable SSL </td>
+   </tr>
+   <tr>
+   <td>Password</br></br>
+   <b>required</b> </td>
+  <td><code>string</code></br></br>
+   A valid Password for the connection </td>
+   </tr>
+   <tr>
+   <td>Port</br></br>
+   <b>required</b> </td>
+  <td><code>string</code></br></br>
+   Enter a valid Port number  </td>
+   </tr>
+   <tr>
+   <td>RefreshInterval</br></br>
+   <b>optional</b> </td>
+  <td><code>string</code></br></br>
+   By default, it is never  </td>
+   </tr>
+   <tr>
+   <td>Username</br></br>
+   <b>required</b> </td>
+  <td><code>string</code></br></br>
+   Enter a valid Username  </td>
+   </tr>
+   <tr>
+   <td>ServerName</br></br>
+   <b>required</b> </td>
+  <td><code>string</code></br></br>
+   Server name or Host name of the connection  </td>
+   </tr>
+   <tr>
+   <td>IsSshConnection</br></br>
+   <b>optional</b> </td>
+  <td>`boolean`</br></br>
+   Enable or disable SSH. By default, it is false.  </td>
+   </tr>
+   <tr>
+   <td>IsSshConnection</br></br>
+   <b>optional</b> </td>
+   <td>`boolean`</br></br>
+   Enable or disable SSH. By default, it is false.</td>
+   </tr>
+   <tr>
+   <td>SshServerName</br></br>
+   <b>optional</b> </td>
+  <td><code>string</code></br></br>
+   Enter a valid Ssh Server name. By default, it is empty.</td>
+   </tr>
+   <tr>
+   <td>SshPort</br></br>
+   <b>optional</b> </td>
+   <td><code>string</code></br></br>
+   Enter a valid Ssh Port number.</td>
+   </tr>
+   <tr>
+   <td>SshUserName</br></br>
+   <b>optional</b> </td>
+  <td><code>string</code></br></br>
+   Enter a valid Ssh Username. By default, it is empty.</td>
+   </tr>
+   <tr>
+   <td>SshPassword</br></br>
+   <b>optional</b> </td>
+  <td><code>string</code></br></br>
+   Enter a valid Ssh Password. By default, it is empty.</td>
+   </tr>
+   <tr>
+   <td>SslCertificateData</br></br>
+   <b>optional</b> </td>
+  <td><code>object</code></br></br>
+   By default, it is Null.</td>
+   </tr>
+   <tr>
+   <td>SslCertificatePassword</br></br>
+   <b>optional</b> </td>
+  <td><code>string</code></br></br>
+   Enter a valid SslCertificatePassword Password. By default, it is empty.</td>
+   </tr>
+   <tr>
+   <td>DataProvider</br></br>
+   <b>required</b> </td>
+  <td><code>string</code></br></br>
+   Enter a DataProvider as MongoDB.</td>
+   </tr>
+   </table>
+
+   #### For creating connection:
+
+``` json
+{
+  "Name": "string",
+  "Type": "MongoDB",
+  "Connection": {
+    "authenticationDatabase": "string",
+    "authenticationType": "scram",
+    "database": "string",
+    "collectionName": [
+      "string",
+      "string",
+      "string"
+    ],
+    "provider": "MongoDB",
+    "isSelfSigned": false,
+    "isSslEnabled": true,
+    "password": "string",
+    "port": 27017,
+    "refreshInterval": "string",
+    "username": "string",
+    "serverName": "string",
+    "IsSshConnection": false,
+    "SshServerName": "",
+    "SshPort": "string",
+    "SshUsername": "",
+    "SshPassword": "",
+    "sslCertificateData": null,
+    "sslCertificatePassword": "",
+    "dataprovider": "MongoDB"
+  }
+}
+
+```
+   #### For schedule data source with Hourly refresh:
+
+To create a MongoDB data source through the REST API using an hourly refresh schedule.
+
+``` json
+{
+  "Name": "string",
+  "Type": "MongoDB",
+  "Connection": {
+    "authenticationDatabase": "string",
+    "authenticationType": "scram",
+    "database": "string",
+    "collectionName": [
+      "string",
+      "string",
+      "string"
+    ],
+    "provider": "MongoDB",
+    "isSelfSigned": false,
+    "isSslEnabled": true,
+    "password": "string",
+    "port": 27017,
+    "refreshInterval": "string",
+    "username": "string",
+    "serverName": "string",
+    "IsSshConnection": false,
+    "SshServerName": "",
+    "SshPort": "string",
+    "SshUsername": "",
+    "SshPassword": "",
+    "sslCertificateData": null,
+    "sslCertificatePassword": "",
+    "dataprovider": "MongoDB"
+  },
+  "RefreshSettings": {
+    "StartTime": "2024-06-06T06:08:00Z",
+    "NeverEnd": true,
+    "EndAfterOccurrence": 1,
+    "ScheduleType": "Hourly",
+    "HourlySchedule": {
+    "ScheduleInterval": "00:05"
+},
+    "IsEnabled": true,
+    "FailureNotificationToOwner": true
+  }
+}
+
+```
+
+#### For schedule data source with Daily refresh:
+
+To create a MongoDB data source through the REST API using an Daily refresh schedule.
+
+``` json
+
+"RefreshSettings": {
+    "StartTime": "2024-06-06T06:08:00Z",
+    "NeverEnd": true,
+    "EndAfterOccurrence": 1,
+    "ScheduleType": "DailySchedule",
+    "DailySchedule": {
+      "RecurrenceType": "string",
+      "EveryNdays": 0,
+      "EveryWeekday": true
+    },
+    "IsEnabled": true,
+    "FailureNotificationToOwner": true
+  }
+
+```
+#### For schedule data source with Weekly refresh:
+
+To create a MongoDB data source through the REST API using an Weekly refresh schedule.
+
+``` json
+{
+  "Name": "string",
+  "Type": "MongoDB",
+  "Connection": {
+    "authenticationDatabase": "string",
+    "authenticationType": "scram",
+    "database": "string",
+    "collectionName": [
+      "string",
+      "string",
+      "string"
+    ],
+    "provider": "MongoDB",
+    "isSelfSigned": false,
+    "isSslEnabled": true,
+    "password": "string",
+    "port": 27017,
+    "refreshInterval": "string",
+    "username": "string",
+    "serverName": "string",
+    "IsSshConnection": false,
+    "SshServerName": "",
+    "SshPort": "string",
+    "SshUsername": "",
+    "SshPassword": "",
+    "sslCertificateData": null,
+    "sslCertificatePassword": "",
+    "dataprovider": "MongoDB"
+  },
+  "RefreshSettings": {
+    "StartTime": "2024-09-21T09:40:00Z",
+    "NeverEnd": true,
+    "EndAfterOccurrence": 1,
+    "ScheduleType": "Weekly",
+    "WeeklySchedule": {
+      "RecurrenceWeeks": 1,
+      "RecurrenceDays": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ]
+    },
+    "IsEnabled": true,
+    "FailureNotificationToOwner": true
+  }
+}
+
+```
+
+#### For schedule data source with Monthly refresh:
+
+To create a MongoDB data source through the REST API using an Monthly refresh schedule.
+
+``` json
+
+"RefreshSettings": {
+    "StartTime": "2024-06-06T06:08:00Z",
+    "NeverEnd": true,
+    "EndAfterOccurrence": 1,
+    "ScheduleType": "MonthlySchedule",
+    "MonthlySchedule": {
+      "RecurrenceType": "string",
+      "DayRecurrence": {
+        "DayInterval": 0,
+        "MonthInterval": 0
+      },
+      "CustomRecurrence": {
+        "WeekOfMonth": "string",
+        "DayOfWeek": "string",
+        "MonthInterval": 0
+      }
+    },
+    "IsEnabled": true,
+    "FailureNotificationToOwner": true
+  }
+```
 
 ### Additional Information
 <table width="600">

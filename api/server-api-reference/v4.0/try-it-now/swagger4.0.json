@@ -810,7 +810,7 @@
           "Permission"
         ],
         "summary": "Add User Permission",
-        "description": "Administrators can add a new permission to a specific user by providing the permission details.<br /><br />To add a specific permission, you must provide the item ID (Category Id, Schedule Id, and Dashboard Id) for the permission entity (SpecificCategory, SpecificSchedule, and SpecificDashboard).",
+        "description": "Administrators can add a new permission to a specific user by providing the permission details.",
         "operationId": "Permission_AddUserPermission",
         "parameters": [
           {
@@ -946,7 +946,7 @@
           "Permission"
         ],
         "summary": "Add Group Permission",
-        "description": "Administrators can add a new permission to the specific group by providing permission details.<br /><br />To add a specific permission, you must provide the item ID (Category Id, Schedule Id, and Dashboard Id) for the permission entity (SpecificCategory, SpecificSchedule, and SpecificDashboard).",
+        "description": "Administrators can add a new permission to the specific group by providing permission details.",
         "operationId": "Permission_AddGroupPermission",
         "parameters": [
           {
@@ -1136,7 +1136,7 @@
             "name": "page",
             "in": "query",
             "required": false,
-            "description": "Page number",
+           "description": "Page number<br /> **Note**: For more details on pagination, refer to this [link](../api-reference/#section/Getting-Started/Pagination)",
             "x-nullable": true,
             "schema": {
               "type": "integer",
@@ -1149,7 +1149,7 @@
             "name": "page_size",
             "in": "query",
             "required": false,
-            "description": "Page size",
+           "description": "<br />\nPage size<br /> **Note**: For more details on pagination, refer to this [link](../api-reference/#section/Getting-Started/Pagination)",
             "x-nullable": true,
             "schema": {
               "type": "integer",
@@ -1358,7 +1358,7 @@
             "name": "page",
             "in": "query",
             "required": false,
-            "description": "Page number",
+            "description": "Page number<br /> **Note**: For more details on pagination, refer to this [link](../api-reference/#section/Getting-Started/Pagination)",
             "x-nullable": true,
             "schema": {
               "type": "integer",
@@ -1371,7 +1371,7 @@
             "name": "page_size",
             "in": "query",
             "required": false,
-            "description": "Page size",
+           "description": "Page size<br /> **Note**: For more details on pagination, refer to this [link](../api-reference/#section/Getting-Started/Pagination)",
             "x-nullable": true,
             "schema": {
               "type": "integer",
@@ -2398,7 +2398,7 @@
             "name": "page",
             "in": "query",
             "required": false,
-            "description": "Page number",
+            "description": "Page number<br /> **Note**: For more details on pagination, refer to this [link](../api-reference/#section/Getting-Started/Pagination)",
             "x-nullable": true,
             "schema": {
               "type": "integer",
@@ -2411,7 +2411,7 @@
             "name": "page_size",
             "in": "query",
             "required": false,
-            "description": "Page size",
+          "description": "Page size<br /> **Note**: For more details on pagination, refer to this [link](../api-reference/#section/Getting-Started/Pagination)",
             "x-nullable": true,
             "schema": {
               "type": "integer",
@@ -2522,7 +2522,7 @@
           "DataSource"
         ],
         "summary": "Update Data Source",
-        "description": "Update an existing data source on a specific site. \n\n Note: The Update data source API is only applicable for a live SQL data source.",
+        "description": "Update an existing data source on a specific site. \n\n **Note**: The Update data source API is only applicable for a live SQL data source.",
         "operationId": "DataSource_UpdateDataSource",
         "parameters": [
           {
@@ -2952,7 +2952,7 @@
             "name": "page",
             "in": "query",
             "required": false,
-            "description": "Page number",
+            "description": "Page number<br /> **Note**: For more details on pagination, refer to this [link](../api-reference/#section/Getting-Started/Pagination)",
             "x-nullable": true,
             "schema": {
               "type": "integer",
@@ -2965,7 +2965,7 @@
             "name": "page_size",
             "in": "query",
             "required": false,
-            "description": "Page size",
+         "description": "Page size<br /> **Note**: For more details on pagination, refer to this [link](../api-reference/#section/Getting-Started/Pagination)",
             "x-nullable": true,
             "schema": {
               "type": "integer",
@@ -3226,7 +3226,7 @@
             "name": "page",
             "in": "query",
             "required": false,
-            "description": "Page number",
+           "description": "Page number<br /> **Note**: For more details on pagination, refer to this [link](../api-reference/#section/Getting-Started/Pagination)",
             "x-nullable": true,
             "schema": {
               "type": "integer",
@@ -3239,7 +3239,7 @@
             "name": "page_size",
             "in": "query",
             "required": false,
-            "description": "Page size",
+          "description": "Page size<br /> **Note**: For more details on pagination, refer to this [link](../api-reference/#section/Getting-Started/Pagination)",
             "x-nullable": true,
             "schema": {
               "type": "integer",
@@ -3781,7 +3781,7 @@
           "Publish to another site"
         ],
         "summary": "Publish Dashboard",
-        "description": "Publish the dashboard from one site to other site(s).\n\n<B> **NOTE:** </B> This API is not available in Syncfusion Managed Cloud Server.",
+        "description": "Publish the dashboard from one site to other site(s).\n\n<B> **Note:** </B> This API is not available in Syncfusion Managed Cloud Server.",
         "operationId": "Publish_Dashboard",
         "parameters": [
           {
@@ -4334,7 +4334,7 @@
           "Publish to another site"
         ],
         "summary": "Add External Site",
-        "description": "Please provide the details of the external site.\n\n<B> **NOTE:** </B> This API is not available in Syncfusion Managed Cloud Server.",
+        "description": "Please provide the details of the external site.\n\n<B> **Note:** </B> This API is not available in Syncfusion Managed Cloud Server.",
         "operationId": "Add_External_Sites",
         "parameters": [
           {
@@ -4539,7 +4539,7 @@
           "Settings"
         ],
         "summary": "Update Email Settings",
-        "description": "Users who have admin rights permission to email settings are able to update the email settings.\n\n<B> **NOTE:** </B> This API is not available in Syncfusion Managed Cloud Server.",
+        "description": "Users who have admin rights permission to email settings are able to update the email settings.\n\n<B> **Note:** </B> This API is not available in Syncfusion Managed Cloud Server.",
         "operationId": "Administration_UpdateEmailSettings",
         "parameters": [
           {
@@ -4680,7 +4680,7 @@
           "Settings"
         ],
         "summary": "Get Account Settings",
-        "description": "Retrieve the account setting details of the specific site if the user has administrative rights for the account settings.\n\n<B> **NOTE:** </B> This API is not available in Syncfusion Managed Cloud Server.",
+        "description": "Retrieve the account setting details of the specific site if the user has administrative rights for the account settings.\n\n<B> **Note:** </B> This API is not available in Syncfusion Managed Cloud Server.",
         "operationId": "Administration_GetAccountSettings",
         "responses": {
           "200": {
@@ -4902,10 +4902,10 @@
           "description": "Specify ID of the dashboard.",
           "format": "guid"
         },
-        "ChildItemId": {
-          "type": "string",
-          "description": "Specify ID of the child dashboard.",
-          "format": "guid"
+        "ChildItemId" : {
+          "type" : "string",
+          "description" : "Specify the ID of the child dashboard if the provided ItemId is the ID of a multi-tab dashboard.",
+          "format" : "guid"
         },
         "QueryString": {
           "type": "string",
@@ -5060,11 +5060,11 @@
         },
         "IsPublic": {
           "type": "boolean",
-          "description": "Specify <i>true</i> to set the item as a public."
+          "description": "Specify <i>true</i> to set the item as a public to access dashboard anonymously, otherwise specify <i>false</i>."
         },
         "IsCopyDatasource": {
           "type": "boolean",
-          "description": "Copy the data source of dashboard based on this value "
+         "description": "Specify <i>true</i> to copy the data sources along with dashboard, otherwise specify <i>false<i>."
         }
       }
     },
@@ -5238,7 +5238,7 @@
         },
         "ShouldValidateSchema": {
           "type": "boolean",
-          "description": "Specify <i>false</i> t0 avoid the schema validation. Default value is <i>true</i>"
+          "description": "Specify <i>false</i> to avoid the schema validation. Default value is <i>true</i>"
         },
         "DataSources": {
           "properties": {
@@ -5448,7 +5448,7 @@
             },
             "NeverEnd": {
               "type": "boolean",
-              "description": "When set to true, it creates a schedule that never ends.<br><div style=margin-left:15px;>NOTE: The NeverEnd is true by default. To set the end time for the schedule, fill the properties of either EndAfterOccurrence or EndDate; otherwise, it remains empty.</strong>"
+              "description": "When set to true, it creates a schedule that never ends.<br><div style=margin-left:15px;>**Note**: The NeverEnd is true by default. To set the end time for the schedule, fill the properties of either EndAfterOccurrence or EndDate; otherwise, it remains empty.</strong>"
             },
             "EndAfterOccurrence": {
               "type": "integer",
@@ -5486,7 +5486,7 @@
               }
             }
           },
-          "description": "Refer to the JSON syntax below to configure Refresh settings.\n\n Note: Refresh settings is only applicable for the web extract type data source. It will not work for live connection mode data sources."
+          "description": "Refer to the JSON syntax below to configure Refresh settings.\n\n **Note**: Refresh settings is only applicable for the web extract type data source. It will not work for live connection mode data sources."
         }
       },
       "description": "Data Source details."
@@ -5775,7 +5775,7 @@
       "properties": {
         "SetDefault": {
           "type": "boolean",
-          "description": "Specify whether the pinboard should be set as default or removed from default.\n\n Note: If your pinboard is not a default pinboard, use null or true instead of false."
+          "description": "Specify whether the pinboard should be set as default or removed from default.\n\n **Note**: If your pinboard is not a default pinboard, use null or true instead of false."
         },
         "Pininfo": {
           "type": "array",
@@ -6080,6 +6080,10 @@
         "DirectoryType": {
           "$ref": "#/definitions/DirectoryType"
         },
+		  "ExternalProviderId": {
+          "type": "string",
+          "description": "User Id of the external providers OAuth2 and OpenIDConnect"
+        },
         "Avatar": {
           "type": "string",
           "description": "Profile picture of the user",
@@ -6123,11 +6127,11 @@
       "properties": {
         "Key": {
           "type": "string",
-          "description": "Site settings name. Valid keys: `OrganizationName` `SiteUrl` `LoginScreenLogo` `EmailLogo` `FavIcon` `ShowCopyrightInformation` \n\n `ShowPoweredBySyncfusion` `Use24HourFormat` `DisableUserPreference` `DataLanguage` `DateFormat` `TimeZone`."
+          "description": "Site settings name. Valid keys: `OrganizationName` `SiteUrl` `LoginScreenLogo` `EmailLogo` `HeaderLogo` `FooterLogo` `FavIcon` \n\n `ShowCopyrightInformation` `ShowPoweredBySyncfusion` `CopyrightInformation` `Use24HourFormat` `DisableUserPreference` `ApplicationLanguage` `DataLanguage` `DateFormat` `TimeZone`."
         },
         "Value": {
           "type": "string",
-          "description": "Site settings value.\n\n Valid values: `OrganizationName` `SiteUrl` `DataLanguage` `TimeZone` are in `string` \n\n `LoginScreenLogo` `EmailLogo` `EmailLogo` `FavIcon` are in `Base64EncodedString` \n\n `ShowCopyrightInformation` `ShowPoweredBySyncfusion` `Use24HourFormat` `DisableUserPreference` are in `true` or `false` \n\n `DateFormat` is in `MM/dd/yyyy` `dd/MM/yyyy` `d MMM, yyyy` `MMM d, yyyy`."
+           "description": "Site settings value.\n\n Valid values: `OrganizationName` `SiteUrl` `TimeZone` `CopyrightInformation` are in `string` \n\n `LoginScreenLogo` `EmailLogo` `HeaderLogo` `FooterLogo` `FavIcon` are in `Base64EncodedString` \n\n `ShowCopyrightInformation` `ShowPoweredBySyncfusion` `Use24HourFormat` `DisableUserPreference` are in `true` or `false` \n\n `DateFormat` is in `MM/dd/yyyy` `dd/MM/yyyy` `d MMM, yyyy` `MMM d, yyyy` \n\n `ApplicationLanguage` `DataLanguage` has language code in the following [link](https://learn.microsoft.com/en-us/openspecs/office_standards/ms-oe376/6c085406-a698-4e12-9d4d-c3b0ee3dbc4a)\n\n `TimeZone` has Timezone value from the following [link](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/default-time-zones?view=windows-11#time-zones)."
         },
         "FileFormat": {
           "type": "string",
@@ -6144,11 +6148,11 @@
       "properties": {
         "Key": {
           "type": "string",
-          "description": "Site settings name. Valid keys: `OrganizationName` `SiteUrl` `LoginScreenLogo` `EmailLogo` `FavIcon` `ShowCopyrightInformation` \n\n `ShowPoweredBySyncfusion` `Use24HourFormat` `DisableUserPreference` `DataLanguage` `DateFormat` `TimeZone`."
+          "description": "Site settings name. Valid keys: `OrganizationName` `SiteUrl` `LoginScreenLogo` `EmailLogo`  `HeaderLogo` `FooterLogo` `FavIcon` \n\n `ShowCopyrightInformation` `ShowPoweredBySyncfusion` `CopyrightInformation` `Use24HourFormat` `DisableUserPreference` `ApplicationLanguage` `DataLanguage` `DateFormat` `TimeZone`."
         },
         "Value": {
           "type": "string",
-          "description": "Site settings value.\n\n Valid values: `OrganizationName` `SiteUrl` `DataLanguage` `TimeZone` should be `string` \n\n `LoginScreenLogo` `EmailLogo` `EmailLogo` `FavIcon` should be `Base64EncodedString` \n\n `ShowCopyrightInformation` `ShowPoweredBySyncfusion` `Use24HourFormat` `DisableUserPreference` should be `true` or `false` \n\n `DateFormat` should be `MM/dd/yyyy` `dd/MM/yyyy` `d MMM, yyyy` `MMM d, yyyy`."
+          "description": "Site settings value.\n\n Valid values: `OrganizationName` `SiteUrl` `TimeZone` `CopyrightInformation` should be `string` \n\n `LoginScreenLogo` `EmailLogo` `HeaderLogo` `FooterLogo` `FavIcon` should be `Base64EncodedString` \n\n `ShowCopyrightInformation` `ShowPoweredBySyncfusion` `Use24HourFormat` `DisableUserPreference` should be `true` or `false` \n\n `DateFormat` should be `MM/dd/yyyy` `dd/MM/yyyy` `d MMM, yyyy` `MMM d, yyyy` \n\n `ApplicationLanguage` `DataLanguage` should be any language code in the following [link](https://learn.microsoft.com/en-us/openspecs/office_standards/ms-oe376/6c085406-a698-4e12-9d4d-c3b0ee3dbc4a) \n\n `TimeZone` should be any Timezone from the following [link](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/default-time-zones?view=windows-11#time-zones)."
         },
         "FileFormat": {
           "type": "string",
@@ -6692,6 +6696,10 @@
         },
         "DirectoryType": {
           "$ref": "#/definitions/DirectoryType"
+        },         
+        "ExternalProviderId": {
+          "type": "string",
+          "description": "User Id of the external providers OAuth2 and OpenIDConnect"
         },
         "Lastname": {
           "type": "string",
@@ -6936,40 +6944,40 @@
       "description": "User permission details.",
       "additionalProperties": false,
       "properties": {
-        "PermissionAccess": {
-          "type": "string",
-          "description": "Specify an access type for item. Valid values: `\"Create\"` `\"Read\"` `\"ReadWrite\"` `\"ReadWriteDelete\"` "
-        },
         "PermissionEntity": {
           "type": "string",
-          "description": "Specify an entity of item for permission. Valid values: `\"AllCategories\"` `\"SpecificCategory\"` `\"AllSchedules\"` `\"SpecificSchedule\"` <br /><br />`\"AllDashboards\"` `\"DashboardsInCategory\"` `\"SpecificDashboard\"`"
+          "description": "Specifies an entity of item for permission.<br /><br />Available permission entities are:<br /><br />`\"AllCategories\"` `\"AllDashboards\"` `\"AllDataSources\"` `\"AllSchedules\"` `\"AllSlideshow\"` `\"DashboardsInCategory\"` `\"SpecificCategory\"`<br /><br />`\"SpecificDashboard\"` `\"SpecificDataSource\"` `\"SpecificSchedule\"` `\"SpecificSlideshow\"` `\"AllGroups\"` `\"AllPermissions\"` `\"AllSettings\"`<br /><br />`\"SpecificGroup\"` `\"SpecificPermissions\"` `\"SpecificSettings\"` `\"UsersandGroups\"`<br /><br />"
+        },
+        "PermissionAccess": {
+          "type": "string",
+          "description": "Specifies an access type for item.<br /><br />Permission access values available for the permission entities:<br /><br />1. `\"AllCategories\"` `\"AllDataSources\"` `\"AllSchedules\"` `\"AllSlideshow\"` has `\"Create\"` `\"Read\"` `\"ReadWrite\"` `\"ReadWriteDelete\"` <br /><br />2. `\"AllDashboards\"` `\"DashboardsInCategory\"` has `\"Create\"` `\"Read\"` `\"ReadWrite\"` `\"ReadWriteDelete\"` `\"Download\"` <br /><br />3. `\"SpecificCategory\"` `\"SpecificDataSource\"` `\"SpecificSchedule\"` `\"SpecificSlideshow\"` has `\"Read\"` `\"ReadWrite\"` `\"ReadWriteDelete\"` <br /><br />4. `\"SpecificDashboard\"` has `\"Read\"` `\"ReadWrite\"` `\"ReadWriteDelete\"` `\"Download\"`<br /><br />5. `\"AllGroups\"` has `\"Create\"` <br /><br />6. `\"AllPermissions\"` `\"AllSettings\"` `\"SpecificGroup\"` `\"SpecificPermissions\"` `\"SpecificSettings\"` `\"UsersandGroups\"` has `\"Manage\"`<br /><br />"
         },
         "UserId": {
           "type": "integer",
-          "description": "User ID.",
+          "description": "Specifies the User ID to whom the permission has been added.<br /><br />",
           "format": "int32"
         },
         "GroupId": {
           "type": "integer",
-          "description": "Group ID.",
+          "description": "Specifies the Group ID if this permission is inherited from the group where the user is associated; otherwise, its value will be 0.<br /><br />",
           "format": "int32"
         },
         "InheritedFromGroup": {
           "type": "boolean",
-          "description": "Inherit from group."
+          "description": "Specifies the values as <code>true</code> if it is group permission where the user is associated; otherwise, the value will be <code>false</code>.<br /><br />"
         },
         "ItemName": {
           "type": "string",
-          "description": "Item name. Valid values: `\"Category name\"` `\"Dashboard name\"` `\"Schedule name\"`"
+          "description": "Specifies the Item name with respective to its permission entity.<br /><br />Item name available for permission entities:<br /><br />1. `\"SpecificSettings\"` has `\"Dashboard Settings\"` `\"Embed Settings\"` `\"Integrations\"` `\"Look and Feel\"` `\"Notification Settings\"` `\"Security\"`<br /><br />`\"Site Settings\"` `\"User Directory Settings\"` `\"Authentication Settings\"` `\"CORS Settings\"` `\"SiteCredentials\"` `\"Accounts Settings\"` `\"Connectors\"` `\"Data Process\"`<br /><br / `\"Email Settings\"` `\"Widgets\"`<br /><br />2. `\"SpecificPermissions\"` has `\"Category\"` `\"Dashboard\"` `\"Datasource\"` `\"Schedule\"` `\"Slideshow\"`<br /><br />3. `\"DashboardsInCategory\"` `\"SpecificCategory\"` has the Name of `\"Category\"`<br /><br />`\"SpecificDashboard\"` has the Name of `\"Dashboard\"`<br /><br />`\"SpecificSchedule\"` has the Name of `\"Schedule\"`<br /><br />`\"SpecificDataSource\"` has the Name of `\"Datasource\"`<br /><br />`\"SpecificSlideshow\"` has the Name of `\"Slideshow\"`<br /><br />4. `\"SpecificGroup\"` has Group Name.<br /><br />"
         },
         "PermissionId": {
           "type": "integer",
-          "description": "Permission ID.",
+          "description": "Specifies the Permission ID.<br /><br />",
           "format": "int32"
         },
         "ItemId": {
           "type": "string",
-          "description": "Item ID. Valid values: `\"CategoryId\"` `\"DashboardId\"` `\"ScheduleId\"`",
+          "description": "Specifies the item ID of particular item like Category, Dashboard, Datasource,Schedule, Slideshow.<br /><br />Item Id will be available for the following permission entities:<br /><br />`\"SpecificCategory\"`  `\"SpecificDashboard\"`  `\"SpecificDataSource\"`  `\"SpecificSchedule\"`  `\"SpecificSlideshow\"` `\"DashboardsInCategory\"`",
           "format": "guid",
           "nullable": true
         }
@@ -6980,31 +6988,31 @@
       "description": "Group Permission details.",
       "additionalProperties": false,
       "properties": {
-        "PermissionAccess": {
-          "type": "string",
-          "description": "Specify an access type for item. Valid values: `\"Create\"` `\"Read\"` `\"ReadWrite\"` `\"ReadWriteDelete\"` "
-        },
         "PermissionEntity": {
           "type": "string",
-          "description": "Specify an entity of item for permission. Valid values: `\"AllCategories\"` `\"SpecificCategory\"` `\"AllSchedules\"` `\"SpecificSchedule\"` <br /><br />`\"AllDashboards\"` `\"DashboardsInCategory\"` `\"SpecificDashboard\"`"
+          "description": "Specifies an entity of item for permission.<br /><br />Available permission entities are:<br /><br />`\"AllCategories\"` `\"AllDashboards\"` `\"AllDataSources\"` `\"AllSchedules\"` `\"AllSlideshow\"` `\"DashboardsInCategory\"` `\"SpecificCategory\"`<br /><br />`\"SpecificDashboard\"` `\"SpecificDataSource\"` `\"SpecificSchedule\"` `\"SpecificSlideshow\"` `\"AllGroups\"` `\"AllPermissions\"` `\"AllSettings\"`<br /><br />`\"SpecificGroup\"` `\"SpecificPermissions\"` `\"SpecificSettings\"` `\"UsersandGroups\"`<br /><br />"
+        },
+        "PermissionAccess": {
+          "type": "string",
+          "description": "Specifies an access type for item.<br /><br />Permission access values available for the permission entities:<br /><br />1. `\"AllCategories\"` `\"AllDataSources\"` `\"AllSchedules\"` `\"AllSlideshow\"` has `\"Create\"` `\"Read\"` `\"ReadWrite\"` `\"ReadWriteDelete\"` <br /><br />2. `\"AllDashboards\"` `\"DashboardsInCategory\"` has `\"Create\"` `\"Read\"` `\"ReadWrite\"` `\"ReadWriteDelete\"` `\"Download\"` <br /><br />3. `\"SpecificCategory\"`, `\"SpecificDataSource\"` `\"SpecificSchedule\"` `\"SpecificSlideshow\"` has `\"Read\"` `\"ReadWrite\"` `\"ReadWriteDelete\"` <br /><br />4. `\"SpecificDashboard\"` has `\"Read\"` `\"ReadWrite\"` `\"ReadWriteDelete\"` `\"Download\"`<br /><br />5. `\"AllGroups\"` has `\"Create\"` <br /><br />6. `\"AllPermissions\"` `\"AllSettings\"` `\"SpecificGroup\"` `\"SpecificPermissions\"` `\"SpecificSettings\"` `\"UsersandGroups\"` has `\"Manage\"`<br /><br />"
         },
         "GroupId": {
           "type": "integer",
-          "description": "Group ID.",
+          "description": "Specifies the Group ID to which the permission has been added.<br /><br />",
           "format": "int32"
         },
         "ItemName": {
           "type": "string",
-          "description": "Item name. Valid values: `\"Category name\"` `\"Dashboard name\"` `\"Schedule name\"`"
+          "description": "Specifies the Item name with respective to its permission entity.<br /><br />Item name available for permission entities:<br /><br />1. `\"SpecificSettings\"` has `\"Dashboard Settings\"` `\"Embed Settings\"` `\"Integrations\"` `\"Look and Feel\"` `\"Notification Settings\"` `\"Security\"`<br /><br />`\"Site Settings\"` `\"User Directory Settings\"` `\"Authentication Settings\"` `\"CORS Settings\"` `\"SiteCredentials\"` `\"Accounts Settings\"` `\"Connectors\"` `\"Data Process\"`<br /><br /> `\"Email Settings\"` `\"Widgets\"`<br /><br />2. `\"SpecificPermissions\"` has `\"Category\"` `\"Dashboard\"` `\"Datasource\"` `\"Schedule\"` `\"Slideshow\"`<br /><br />3. `\"DashboardsInCategory\"` `\"SpecificCategory\"` has the Name of `\"Category\"`<br /><br />`\"SpecificDashboard\"` has the Name of `\"Dashboard\"`<br /><br />`\"SpecificSchedule\"` has the Name of `\"Schedule\"`<br /><br />`\"SpecificDataSource\"` has the Name of `\"Datasource\"`<br /><br />`\"SpecificSlideshow\"` has the Name of `\"Slideshow\"`<br /><br />4. `\"SpecificGroup\"` has Group Name.<br /><br />"
         },
         "PermissionId": {
           "type": "integer",
-          "description": "Permission ID.",
+          "description": "Specifies the Permission ID.<br /><br />",
           "format": "int32"
         },
         "ItemId": {
           "type": "string",
-          "description": "Item ID. Valid values: `\"CategoryId\"` `\"DashboardId\"` `\"ScheduleId\"`\"",
+          "description": "Specifies the item ID of particular item like Category, Dashboard, Datasource,Schedule, Slideshow.<br /><br />Item Id will be available for the following permission entities:<br /><br />`\"SpecificCategory\"`  `\"SpecificDashboard\"`  `\"SpecificDataSource\"`  `\"SpecificSchedule\"`  `\"SpecificSlideshow\"` `\"DashboardsInCategory\"`",
           "format": "guid",
           "nullable": true
         }
@@ -7020,23 +7028,28 @@
         "PermissionEntity"
       ],
       "properties": {
+        "PermissionEntity": {
+          "type": "string",
+          "description": "Specify an entity of item for permission.<br /><br />Allowed permission entities are:<br /><br />`\"AllCategories\"` `\"AllDashboards\"` `\"AllDataSources\"` `\"AllSchedules\"` `\"AllSlideshow\"` `\"DashboardsInCategory\"`<br /><br />`\"SpecificCategory\"` `\"SpecificDashboard\"` `\"SpecificDataSource\"` `\"SpecificSchedule\"` `\"SpecificSlideshow\"`<br /><br />`\"AllGroups\"` `\"AllPermissions\"` `\"AllSettings\"` `\"SpecificGroup\"` `\"SpecificPermissions\"` `\"SpecificSettings\"`<br /><br />`\"UsersandGroups\"`<br /><br />"
+        },
         "PermissionAccess": {
           "type": "string",
-          "description": "Specify an access type for item. Valid values: `\"Create\"` `\"Read\"` `\"ReadWrite\"` `\"ReadWriteDelete\"` "
+          "description": "Specify an access type for item.<br /><br />Allowed permission access values for the permission entities: <br /><br />1. `\"AllCategories\"` `\"AllDataSources\"` `\"AllSchedules\"` `\"AllSlideshow\"` accepts `\"Create\"` `\"Read\"` `\"ReadWrite\"`<br /><br />`\"ReadWriteDelete\"` <br /><br />2. `\"AllDashboards\"` `\"DashboardsInCategory\"` accepts `\"Create\"` `\"Read\"` `\"ReadWrite\"` `\"ReadWriteDelete\"` `\"Download\"` <br /><br />3. `\"SpecificCategory\"` `\"SpecificDataSource\"` `\"SpecificSchedule\"` `\"SpecificSlideshow\"` accepts `\"Read\"` `\"ReadWrite\"`<br /><br />`\"ReadWriteDelete\"` <br /><br />4. `\"SpecificDashboard\"` accepts `\"Read\"` `\"ReadWrite\"` `\"ReadWriteDelete\"` `\"Download\"`<br /><br />5. `\"AllGroups\"` accepts `\"Create\"` <br /><br />6. `\"AllPermissions\"` `\"AllSettings\"` `\"SpecificGroup\"` `\"SpecificPermissions\"` `\"SpecificSettings\"` `\"UsersandGroups\"`<br /><br /> accepts `\"Manage\"`<br /><br />"
         },
         "UserId": {
           "type": "integer",
-          "description": "User ID.",
+          "description": "Specify the User ID to whom the permission needs to be added.<br /><br />",
           "format": "int32"
-        },
-        "PermissionEntity": {
-          "type": "string",
-          "description": "Specify an entity of item for permission. Valid values: `\"AllCategories\"` `\"SpecificCategory\"` `\"AllSchedules\"` <br /><br />`\"SpecificSchedule\"` `\"AllDashboards\"` `\"DashboardsInCategory\"` `\"SpecificDashboard\"`"
         },
         "ItemId": {
           "type": "string",
-          "description": "Specify the item ID while assigning permission to particular item. Valid values: `\"CategoryId\"` `\"DashboardId\"` `\"ScheduleId\"`",
+          "description": "Specify the item ID of particular item like Category, Dashboard, Datasource,Schedule, Slideshow.<br /><br />Item Id is required for the following permission entities:<br /><br />`\"SpecificCategory\"`  `\"SpecificDashboard\"`  `\"SpecificDataSource\"`  `\"SpecificSchedule\"`  `\"SpecificSlideshow\"` <br /><br /> `\"DashboardsInCategory\"`<br /><br />",
           "format": "guid",
+          "nullable": true
+		  },
+        "ScopeId": {
+          "type": "string",
+          "description": "Specify the name or Id of specific item based on the permission entities.<br /><br />Allowed Scope Id for permission entities: <br /><br />1. `\"SpecificPermissions\"` accepts `\"Category\"` `\"Dashboard\"` `\"Datasource\"` `\"Schedule\"` `\"Slideshow\"`<br /><br />2. `\"SpecificGroup\"` accepts Group Id<br /><br /><br />3. `\"SpecificSettings\"` accepts `\"AuthenticationSettings\"` `\"CORSPolicySettings\"` `\"DashboardSettings\"` `\"EmbedSettings\"`<br /><br />`\"Integrations\"` `\"LookAndFeel\"` `\"NotificationSettings\"` `\"Security\"` `\"SiteSettings\"`  `\"UserDirectorySettings\"`<br /><br />`\"SiteCredentials\"` `\"Accounts\"` `\"Connectors\"` `\"DataStoreSettings\"` `\"Email\"` `\"Widgets\"`",
           "nullable": true
         }
       }
@@ -7051,23 +7064,28 @@
         "PermissionEntity"
       ],
       "properties": {
+        "PermissionEntity": {
+          "type": "string",
+          "description": "Specify an entity of item for permission.<br /><br />Allowed permission entities are:<br /><br />`\"AllCategories\"` `\"AllDashboards\"` `\"AllDataSources\"` `\"AllSchedules\"` `\"AllSlideshow\"` `\"DashboardsInCategory\"`<br /><br />`\"SpecificCategory\"` `\"SpecificDashboard\"` `\"SpecificDataSource\"` `\"SpecificSchedule\"` `\"SpecificSlideshow\"`<br /><br />`\"AllGroups\"` `\"AllPermissions\"` `\"AllSettings\"` `\"SpecificGroup\"` `\"SpecificPermissions\"` `\"SpecificSettings\"`<br /><br />`\"UsersandGroups\"`<br /><br />"
+        },
         "PermissionAccess": {
           "type": "string",
-          "description": "Specify an access type for item. Valid values: `\"Create\"` `\"Read\"` `\"ReadWrite\"` `\"ReadWriteDelete\"` "
+          "description": "Specify an access type for item.<br /><br />Allowed permission access values for the permission entities: <br /><br />1. `\"AllCategories\"` `\"AllDataSources\"` `\"AllSchedules\"` `\"AllSlideshow\"` accepts `\"Create\"` `\"Read\"` `\"ReadWrite\"`<br /><br />`\"ReadWriteDelete\"` <br /><br />2. `\"AllDashboards\"` `\"DashboardsInCategory\"` accepts `\"Create\"` `\"Read\"` `\"ReadWrite\"` `\"ReadWriteDelete\"` `\"Download\"` <br /><br />3. `\"SpecificCategory\"` `\"SpecificDataSource\"` `\"SpecificSchedule\"` `\"SpecificSlideshow\"` accepts `\"Read\"` `\"ReadWrite\"`<br /><br />`\"ReadWriteDelete\"` <br /><br />4. `\"SpecificDashboard\"` accepts `\"Read\"` `\"ReadWrite\"` `\"ReadWriteDelete\"` `\"Download\"`<br /><br />5. `\"AllGroups\"` accepts `\"Create\"` <br /><br />6. `\"AllPermissions\"` `\"AllSettings\"` `\"SpecificGroup\"` `\"SpecificPermissions\"` `\"SpecificSettings\"` `\"UsersandGroups\"`<br /><br /> accepts `\"Manage\"`<br /><br />"
         },
         "GroupId": {
           "type": "integer",
           "description": "Group ID.",
           "format": "int32"
         },
-        "PermissionEntity": {
-          "type": "string",
-          "description": "Specify an entity of item for permission. Valid values: `\"AllCategories\"` `\"SpecificCategory\"` `\"AllSchedules\"` <br /><br />`\"SpecificSchedule\"` `\"AllDashboards\"` `\"DashboardsInCategory\"` `\"SpecificDashboard\"`"
-        },
         "ItemId": {
           "type": "string",
-          "description": "Specify the item ID while assigning permission to particular item. Valid values: `\"CategoryId\"` `\"DashboardId\"` `\"ScheduleId\"`",
+          "description": "Specify the item ID of particular item like Category, Dashboard, Datasource,Schedule, Slideshow.<br /><br />Item Id is required for the following permission entities:<br /><br />`\"SpecificCategory\"` `\"SpecificDashboard\"` `\"SpecificDataSource\"` `\"SpecificSchedule\"` `\"SpecificSlideshow\"` <br /><br /> `\"DashboardsInCategory\"`<br /><br />",
           "format": "guid",
+          "nullable": true
+		  },
+        "ScopeId": {
+          "type": "string",
+          "description": "Specify the name or Id of specific item based on the permission entities.<br /><br />Allowed Scope Id for permission entities: <br /><br />1. `\"SpecificPermissions\"` accepts `\"Category\"` `\"Dashboard\"` `\"Datasource\"` `\"Schedule\"` `\"Slideshow\"`<br /><br />2. `\"SpecificGroup\"` accepts Group Id<br /><br /><br />3. `\"SpecificSettings\"` accepts `\"AuthenticationSettings\"` `\"CORSPolicySettings\"` `\"DashboardSettings\"` `\"EmbedSettings\"`<br /><br />`\"Integrations\"` `\"LookAndFeel\"` `\"NotificationSettings\"` `\"Security\"` `\"SiteSettings\"`  `\"UserDirectorySettings\"`<br /><br />`\"SiteCredentials\"` `\"Accounts\"` `\"Connectors\"` `\"DataStoreSettings\"`<br /><br /> `\"Email\"` `\"Widgets\"`",
           "nullable": true
         }
       }
@@ -7148,7 +7166,7 @@
         },
         "NeverEnd": {
           "type": "boolean",
-          "description": "When set to true, it creates a schedule with no end.\n\n Note: By default, the NeverEnd is set to true. To set the end time for the schedule, fill the properties of either EndAfterOccurrence or EndDate; otherwise remains empty."
+          "description": "When set to true, it creates a schedule with no end.\n\n **Note**: By default, the NeverEnd is set to true. To set the end time for the schedule, fill the properties of either EndAfterOccurrence or EndDate; otherwise remains empty."
         },
         "EndAfterOccurrence": {
           "type": "integer",
@@ -7183,7 +7201,7 @@
         },
         "ScheduleType": {
           "type": "string",
-          "description": "Specifies the schedule type to schedule the dashboard. Valid values: `Hourly` `Daily` `Weekly` `Monthly` `Yearly`. \n\n Note: If you choose the schedule type as `Monthly`, provide a value to the `MonthlySchedule` property, and leave the (HourlySchedule, DailySchedule, WeeklySchedule and YearlySchedule) properties empty."
+          "description": "Specifies the schedule type to schedule the dashboard. Valid values: `Hourly` `Daily` `Weekly` `Monthly` `Yearly`. \n\n **Note**: If you choose the schedule type as `Monthly`, provide a value to the `MonthlySchedule` property, and leave the (HourlySchedule, DailySchedule, WeeklySchedule and YearlySchedule) properties empty."
         },
         "IsEnabled": {
           "type": "boolean",
@@ -7355,7 +7373,7 @@
       "properties": {
         "RecurrenceType": {
           "type": "string",
-          "description": "Specifies the recurrence type, whether the schedule recurs every day or every working day.<br /><br />Valid values: `EveryNdays` `EveryWeekday`. \n\n Note: If you choose the recurrence type as EveryNdays, provide a value to the `EveryNdays` property, and leave the (EveryWeekday) property empty."
+          "description": "Specifies the recurrence type, whether the schedule recurs every day or every working day.<br /><br />Valid values: `EveryNdays` `EveryWeekday`. \n\n **Note**: If you choose the recurrence type as EveryNdays, provide a value to the `EveryNdays` property, and leave the (EveryWeekday) property empty."
         },
         "EveryNdays": {
           "type": "integer",
@@ -7401,7 +7419,7 @@
       "properties": {
         "RecurrenceType": {
           "type": "string",
-          "description": "Specifies the recurrence type, whether the schedule recurs on a day basis or on the customized day basis.<br /><br />Valid values: `DayRecurrence` `CustomRecurrence` \n\n Note: If you choose the recurrence type as DayRecurrence, provide a value to the `DayRecurrence` property and leave the (CustomRecurrence) property empty."
+          "description": "Specifies the recurrence type, whether the schedule recurs on a day basis or on the customized day basis.<br /><br />Valid values: `DayRecurrence` `CustomRecurrence` \n\n **Note**: If you choose the recurrence type as DayRecurrence, provide a value to the `DayRecurrence` property and leave the (CustomRecurrence) property empty."
         },
         "DayRecurrence": {
           "description": "The schedule recurs on the day specified on the month interval.",
@@ -7483,7 +7501,7 @@
         },
         "RecurrenceType": {
           "type": "string",
-          "description": "Specifies the recurrence type, whether the schedule recurs on a month basis or on the customized month basis.<br /><br />Valid values: `MonthRecurrence` `CustomRecurrence`. \n\n Note: If you choose the recurrence type as `MonthRecurrence`, provide a value to the MonthRecurrence property, and leave the (CustomRecurrence) property empty."
+          "description": "Specifies the recurrence type, whether the schedule recurs on a month basis or on the customized month basis.<br /><br />Valid values: `MonthRecurrence` `CustomRecurrence`. \n\n **Note**: If you choose the recurrence type as `MonthRecurrence`, provide a value to the MonthRecurrence property, and leave the (CustomRecurrence) property empty."
         },
         "MonthRecurrence": {
           "description": "The schedule recurs on the month and number of years specified in `YearInterval` property.",
@@ -7611,7 +7629,7 @@
         },
         "NeverEnd": {
           "type": "boolean",
-          "description": "When set to true, it creates a schedule with no end.\n\n Note: By default, the NeverEnd is set to true. To set the end time for schedule, fill in the EndAfterOccurrence or EndDate properties; otherwise they remains empty."
+          "description": "When set to true, it creates a schedule with no end.\n\n **Note**: By default, the NeverEnd is set to true. To set the end time for schedule, fill in the EndAfterOccurrence or EndDate properties; otherwise they remains empty."
         },
         "EndAfterOccurrence": {
           "type": "integer",
@@ -7624,7 +7642,7 @@
         },
         "ScheduleType": {
           "type": "string",
-          "description": "Specifies the schedule type to schedule the dashboard. Valid values: `Hourly` `Daily` `Weekly` `Monthly` `Yearly`. \n\n Note: If you choose the schedule type as `Monthly`, provide a value to the `MonthlySchedule` property, and leave the (HourlySchedule, DailySchedule, WeeklySchedule and YearlySchedule) property empty."
+          "description": "Specifies the schedule type to schedule the dashboard. Valid values: `Hourly` `Daily` `Weekly` `Monthly` `Yearly`. \n\n **Note**: If you choose the schedule type as `Monthly`, provide a value to the `MonthlySchedule` property, and leave the (HourlySchedule, DailySchedule, WeeklySchedule and YearlySchedule) property empty."
         },
         "IsEnabled": {
           "type": "boolean",
@@ -7774,7 +7792,7 @@
         },
         "CategoryDescription": {
           "type": "string",
-          "description": "Category discription."
+          "description": "Category description."
         },
         "CreatedById": {
           "type": "integer",
@@ -7921,7 +7939,7 @@
         },
         "IsPublic": {
           "type": "boolean",
-          "description": "Returns true, if the item is public."
+         "description": "Returns true, if the dashboard is public to access anonymously, otherwise returns false."
         }
       }
     },
@@ -8644,7 +8662,7 @@
         },
         "NeverEnd": {
           "type": "boolean",
-          "description": "When set to true, it creates a schedule with no end.\n\n Note: By default, the NeverEnd is set to true. To set the end time for the schedule, fill the properties of either EndAfterOccurrence or EndDate; otherwise remains empty."
+          "description": "When set to true, it creates a schedule with no end.\n\n **Note**: By default, the NeverEnd is set to true. To set the end time for the schedule, fill the properties of either EndAfterOccurrence or EndDate; otherwise remains empty."
         },
         "EndAfterOccurrence": {
           "type": "integer",

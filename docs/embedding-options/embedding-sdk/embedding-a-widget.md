@@ -16,7 +16,7 @@ Follow these steps to embed a dashboard widget in your application.
 
     ```js
     <head> 
-        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v7.8.18/boldbi-embed.js"></script>
+        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v7.9.50/boldbi-embed.js"></script>
     </head>
     ```
 
@@ -177,12 +177,12 @@ Follow these steps to embed a dashboard widget in your application.
 </code></td>
 </tr>
 <tr>            
-<td><code>v7.8.18(latest)</code></td>            
+<td><code>v7.9.50(latest)</code></td>            
 <td><code>
 
 ```js
 <head> 
-    <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v7.8.18/boldbi-embed.js"></script>
+    <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v7.9.50/boldbi-embed.js"></script>
 </head>
 ```
 
@@ -330,8 +330,20 @@ Please refer to the table below for the values of the filter properties based on
 <td align="left">"&embed_datasource_filter=[{&Parameter=Value}]"</td>
 </tr>
 <tr>
+<td align="left">If passing multiple Dashboard Parameters </td>
+<td align="left">"&embed_datasource_filter=[{&&Parameter=Value&&Parameter1=Value1}]"</td>
+</tr>
+<tr>
+<td align="left">If passing multiple URL Parameters </td>
+<td align="left">"&embed_datasource_filter=[{&Parameter=Value&Parameter1=Value1}]"</td>
+</tr>
+<tr>
 <td align="left">If passing both Dashboard Parameter and URL Parameter</td>
 <td align="left">"&embed_datasource_filter=[{&&Parameter=Value&Parameter=Value}]"</td>
+</tr>
+<tr>
+<td align="left">If passing both URL Parameter and Dashboard Parameter</td>
+<td align="left">"&embed_datasource_filter=[{&Parameter=Value&&Parameter=Value}]"</td>
 </tr>
 </tbody>
 </table>

@@ -138,10 +138,7 @@ This section describes the list of possible changes required in the environment 
 
 To update the database connection string, please follow the guidance document below to reset the database connection for different environments.
 
-
-[Resetting the Bold BI application database for different environments](https://help.boldbi.com/utilities/bold-bi-command-line-tools/reset-application-database/#reset-application-database)
-
-**Note:** Use the startup database (restored database) information used during the initial deployment of Bold BI.
+[How to update database information in application and sites](https://support.boldbi.com/kb/article/14255/how-to-update-the-tenant-database-information-in-bulk-in-on-premise-deployments)
 
 ### 3. Change Domain Mapping or IP Binding
 

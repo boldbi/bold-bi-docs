@@ -15,6 +15,8 @@ For our application, the API path will be `https://{Domain}/api/{ApiEndpoint}`
 
 For example, `https://onpremise-demo.boldbi.com/api/token`
 
+For Bold BI tenant site REST API references, refer to the following [link](/server-api-reference/)
+
 ### API Versions 
 
 <table>

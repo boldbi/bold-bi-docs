@@ -88,6 +88,7 @@
 	"Embedding Options": {
 		"Application Embedding in Bold BI Enterprise": "application-embedding",
 		"Embedding SDK": {
+			"Embedding a dashboard with token" : "embedding-with-token",
 			"Embedding Dashboard Designer": "embedding-dashboard-designer",
 			"Embedding a Widget": "embedding-a-widget",
 			"Embedding a datasource": "embedding-a-datasource",
@@ -666,7 +667,8 @@
           "Import OpenID Connect Groups": "import-openid-groups",
 		  "Bulk Import Result": "bulk-import-result"
         },
-        "Manage Permissions":"manage-permissions"
+        "Manage Permissions":"manage-permissions",
+		"Manage System Administrator Access": "manage-system-administrator-access"
     },
 	"Resource Migration": {
 		"Migrate Dashboards Online" : "migrate-dashboards-online",
@@ -709,7 +711,8 @@
 				}
 			},
 			"Manage License": "manage-license",
-			"Manage Localization": "manage-localization"
+			"Manage Localization": "manage-localization",
+			"Configuration" : "configuration"
 		},
 		"Manage Sites": "manage-sites",
 		"Manage Users": "manage-users",

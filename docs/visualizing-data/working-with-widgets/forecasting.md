@@ -70,6 +70,20 @@ This document explains how to enable and configure forecasts in your charts.
     * `Line` will display upper and lower bound values with lines.
     * `Dot` will display upper and lower bound values with dotted lines.
 
+## Limitations on Forecasting
+Forecasting is a valuable tool for predicting future data trends, but it comes with specific limitations. These limitations are essential to understand to effectively use the forecasting feature in the `Line` and `Spline` chart widgets. Below are the detailed constraints:
 
-
-
+#### General Limitations
+- Forecasting is exclusively available for `Line` and `Spline` charts. Other chart types do not support the forecasting feature.
+- Forecasting can only be used when the data is configured with a single measure field and a single column field. It does not support the use of multiple measures, multiple columns, or single rows within this context.
+- The forecasting feature only supports specific date formats. The following date formats are not compatible with the forecasting functionality:
+     - Date and time
+     - Quarter
+     - Month
+     - Datehour
+     - Times (hour, minutes, seconds)
+- The Tooltip feature cannot be used for the forecast line. If a column is configured in the `Tooltip` container under the `Assign Data` section, the data from that column will not appear in the forecasting tooltip.
+- The `Drilldown` feature is not supported when using forecasting.
+- In the `Property` section, specifically within the `Legend` settings, it is not possible to customize the Legend text for forecast series.
+- It is not possible to disable Tooltip visibility for forecast series within the `Tooltip` settings in the `Property` section.
+- If the `Master` filter is activated, it will not function with the forecasting feature.

@@ -1014,6 +1014,59 @@
           }
         }
       }
+    },
+    "/v2.0/administration/branding/logos": {
+      "post": {
+        "tags": [
+          "Administration"
+        ],
+        "summary": "Update Branding logos ",
+        "description": "Add new images to branding logos",
+        "operationId": "update_branding_logos",
+        "requestBody": {
+          "description": "Update branding images request body.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateBrandings"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Branding images have been successfully updated.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UpdateBrandingsResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "The content of the request body is missing or incomplete.",
+            "content": {}
+          },
+          "401": {
+            "description": "Access denied.",
+            "content": {}
+          },
+          "405": {
+            "description": "Request type was not POST.",
+            "content": {}
+          },
+          "406": {
+            "description": "The content of the request body is invalid.",
+            "content": {}
+          },
+          "417": {
+            "description": "Failed to update branding images.",
+            "content": {}
+          }
+        }
+      }
     }
   },
   "components": {
@@ -1751,6 +1804,19 @@
           "Password": {
             "type": "string",
             "description": "The user's password. Depending on the activation mode, this field may not be required. For, Email activation mode password is not necessary. Automatic activation is password required. <br /><blockquote>Note: Password must meet the following requirements. It must contain,</blockquote><ul><li><code>At least 6 characters</code></li><li><code>1 uppercase character</code></li><li><code>1 lowercase character</code></li><li><code>1 numeric character</code></li><li><code>1 special character</code></li></ul> "
+          },
+          "AccountActivationMode": {
+            "type": "enum",
+            "default": null,
+            "enum": [
+              0,
+              1
+            ],
+            "x-enumNames": [
+              "AutomaticActivation",
+              "EmailActivation"
+            ],
+            "description": "Specify the mode of account activation.\n\n* 0 - AutomaticActivation\n* 1 - EmailActivation"
           }
         }
 	  },
@@ -2048,6 +2114,63 @@
           "CanEncrypt": {
             "type": "boolean",
             "description": "Decides to encrypt the site attribute data."
+          }
+        }
+      },
+      "UpdateBrandings": {
+        "type": "object",
+        "description": "Update branding object.",
+        "additionalProperties": false,
+        "properties": {
+          "Header": {
+            "$ref": "#/components/schemas/BrandingDetails"
+          },
+          "Login": {
+            "$ref": "#/components/schemas/BrandingDetails"
+          },
+          "Favicon": {
+            "$ref": "#/components/schemas/BrandingDetails"
+          },
+          "Email": {
+            "$ref": "#/components/schemas/BrandingDetails"
+          },
+          "PoweredBy": {
+            "$ref": "#/components/schemas/BrandingDetails"
+          }
+        }
+      },
+      "BrandingDetails": {
+        "description": "branding logos information to update. ",
+        "additionalProperties": false,
+        "properties": {
+          "LogoBytes": {
+            "type": "string",
+            "description": "Logo bytes of the image."
+          },
+          "LogoType": {
+            "type": "string",
+            "description": "Logo type of branding logos."
+          }
+        }
+      },
+      "UpdateBrandingsResponse": {
+        "type": "object",
+        "properties": {
+          "ApiStatus": {
+            "type": "boolean",
+            "description": "Returns the status from the API."
+          },
+          "Status": {
+            "type": "boolean",
+            "description": "Returns status of the API request."
+          },
+          "StatusMessage": {
+            "type": "string",
+            "description": "Returns the status message from the API."
+          },
+          "Message": {
+            "type": "string",
+            "description": "Returns the message from the API."
           }
         }
       }

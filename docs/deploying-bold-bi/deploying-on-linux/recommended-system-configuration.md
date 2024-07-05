@@ -35,7 +35,7 @@ RAM - 64 GB
 
 Core - 16 vCPU's  
 
-Disk Size - 1024 GB SSD
+Disk Size - 127 GB SSD
  </td>
  </tr>  
  <tr>
@@ -47,10 +47,10 @@ Disk Size - 1024 GB SSD
  </td>
  <td>
 
-RAM - 192 GB
+RAM - 128 GB
 
-Core - 24 vCPU's  
+Core - 32 vCPU's  
 
-Disk Size - 1024 GB SSD
+Disk Size - 127 GB SSD
  </td>
  </tr>

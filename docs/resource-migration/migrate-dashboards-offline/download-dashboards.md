@@ -160,26 +160,68 @@ As previously outlined, the steps for granting download permissions to a user ca
       44.ZohoCRM
       45.ZohoInvoice
 
-## Limitations of Google BigQuery 
+## Limitations of features During Dashboard Upload.
 
-* ### Access Token Validation for Dashboard Upload in Google BigQuery
+We have added some limitations(Unsupported features) in uploading dashboards.
 
-   * When uploading a dashboard to Google BigQuery, validating the access token's active status is important before uploading. You can successfully upload the dashboard by ensuring the access token is active.
+<table>
+   <tr>
+   <th>Modules</th>
+   <th>Limitation</th>
+   </tr>
+   <tr>
+   <td>Google BigQuery</br></br>
+   </td>
+  <td>Regularly monitor the access token's validity and generate new tokens to maintain a smooth uploading experience</br></br>
 
-   * Regularly monitor the access token's validity and generate new tokens to maintain a smooth uploading experience.
+  When uploading a Google BigQuery dashboard to other sites, it is essential to ensure that the respective sites have authorized access to the Google BigQuery data source</br></br>
 
-*  ### Authorization Requirement for Uploading Google BigQuery Dashboard to Other Sites
-
-   * When uploading a Google BigQuery dashboard to other sites, it is essential to ensure that the respective sites have authorized access to the Google BigQuery data source.
-
-   * This [authorization process](/working-with-data-sources/data-connectors/google-bigquery/#Choose-a-Google-BigQuery-data-source) guarantees secure and authorized sharing of data between Google BigQuery and external sites.
-
-##  Limitations of Changing SQL Data Sources Mode During Dashboard Upload
-
-* During the process of uploading a dashboard, attempting to change the mode of an SQL data source (e.g., from live to extract or extract to live) in the configuration editor will result in an exception.
-
-*  This exception prevents the successful upload of the dashboard. It is crucial to exercise caution when modifying the data source mode during the upload process to avoid encountering this limitation.
-
-## Inability to Upload Dashboard in SQLite Extract Mode
-
-* Currently, the download and upload feature does not support the SQLite data source in extract mode. However, you can successfully upload the dashboard using the live mode for SQLite.
+   This [authorization process](/working-with-data-sources/data-connectors/google-bigquery/#Choose-a-Google-BigQuery-data-source) guarantees secure and authorized sharing of data between Google BigQuery and external sites
+   </br></br>
+   </td>
+   </tr>
+   <tr>
+   <td>SQL</br></br>
+   </td>
+  <td>During the process of uploading a dashboard, attempting to change the mode of an SQL data source (e.g., from live to extract or extract to live) in the configuration editor will result in an exception</br></br>
+   </td>
+   </tr>
+   <tr>
+   <td>SQLite</br></br>
+   </td>
+  <td>Uploading a dashboard with SQLite data source in extract mode is not supported</br></br>
+   </td>
+   </tr>
+   <tr>
+   <td>Excel</br></br>
+   </td>
+  <td>Multiple Excel files are not supported</br></br>
+   </td>
+   </tr>
+   <tr>
+   <td>Combined data sources</br></br>
+   </td>
+  <td>Uploading a dashboard with Combined data sources is not supported</br></br>
+   </td>
+   </tr>
+   <tr>
+   <td>Shared data sources</br></br>
+   </td>
+  <td>Uploading a dashboard with shared table configured data sources is not supported</br></br>
+   </td>
+   </tr><tr>
+   <td>Common Features not supported</br></br>
+   </td>
+  <td>Code view mode data source is not uploading to a different IMDB (for on-premise only)</br></br>
+  Default dashboard parameters such as CURRENTUSER.EMAIL and CURRENTUSER.FULLNAME are not supported</br></br>
+  Customized expressions are not uploading to a different IMDB</br></br>
+  Custom attributes need to be configured on each site with the same names, otherwise, it fails</br></br>
+  Dashboards with renamed columns in the data source are not supported</br></br>
+  OAuth Data Sources require re-authorization on another site in the edit connection window</br></br>
+  Dashboard parameters with Custom query type are not supported</br></br>
+  Threshold and Data samplings are not supported</br></br>
+  Uploading a dashboard with shared table configured data sources is not supported</br></br>
+  Uploading a dashboard containing data sources in both live and extract modes is not supported</br></br>
+   </td>
+   </tr>
+   </table>

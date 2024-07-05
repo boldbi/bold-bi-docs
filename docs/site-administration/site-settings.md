@@ -15,7 +15,7 @@ The organization's name will be used in the application for both page titles and
 
 ![Organization Name](/static/assets/images/organization-name.png)
 
-### Resource Sorting
+## Resource Sorting
 The sorting configuration will determine the arrangement of application resources, including dashboards, views, data sources, schedules, and slideshows
 
 ![Resource Sorting](/static/assets/images/resource-sorting.png)

@@ -19,9 +19,15 @@ To get started, it is recommended to first read the following section of the doc
 * [Getting Started](/getting-started/embedding-in-your-application/)
 * [Authorization Server](/security-configuration/authorize-server/)
 
-Let's take a look at the configuration settings for OAuth 2.0 and OpenID import, importing the group, and granting access to that group.
+Let's take a look at the configuration settings for Azure AD, OAuth 2.0 and OpenID import, importing the group, and granting access to that group.
 
-1. To have support for OAuth 2.0 connect, you will need to configure OAuth 2.0 in the Bold BI server. Please follow the steps provided in the link.
+1. To have Azure AD connect support, you would need to configure the Azure AD in Bold BI server. Please follow these steps provided in the link.
+
+    The following link explains how to connect with the Bold BI application.
+
+    * [Azure Active Directory](/site-administration/user-directory-settings/azure-active-directory/#configure-azure-active-directory-details-in-bold-bi-to-import-users-and-groups)
+
+2. To have support for OAuth 2.0 connect, you will need to configure OAuth 2.0 in the Bold BI server. Please follow the steps provided in the link.
 
     The following is a list of a few OAuth 2.0 providers, and it explains how to connect with the Bold BI application.
 
@@ -30,20 +36,21 @@ Let's take a look at the configuration settings for OAuth 2.0 and OpenID import,
     * [Okta](/security-configuration/single-sign-on/oauth-2.0-support/okta/)
     * [OneLogin](/security-configuration/single-sign-on/oauth-2.0-support/onelogin/)
 
-2. For OpenID connect support, you would need to configure the OpenID in Bold BI server, follow these steps in the link.
+3. For OpenID connect support, you would need to configure the OpenID in Bold BI server, follow these steps in the link.
 
    The following is a list of a few OAuth 2.0 providers, and it explains how to connect with the Bold BI application.
     * [Auth0](/security-configuration/single-sign-on/openid-support/auth0/)
     * [Okta](/security-configuration/single-sign-on/openid-support/okta/)
     * [OneLogin](/security-configuration/single-sign-on/openid-support/onelogin/)
 
-3. After configuring your providers, you need to import your group into the Bold BI server. Follow these respective links to import the groups.
+4. After configuring your providers, you need to import your group into the Bold BI server. Follow these respective links to import the groups.
+    * [Import Azure AD Group](/managing-resources/manage-groups/import-azure-active-directory-groups/)
     * [Import OAuth 2.0 Group](/managing-resources/manage-groups/import-oauth-groups/)
     * [Import OpenID Connect Group](/managing-resources/manage-groups/import-openid-groups/)
 
-4. Then, you need to provide access to your imported group. Follow these steps in the link, which will help your users to access and embed the dashboard. 
+5. Then, you need to provide access to your imported group. Follow these steps in the link, which will help your users to access and embed the dashboard. 
 
-5. Now, you need to configure your authorization server to use group-based authorization by adding the marked parameters in the embedQuery.
+6. Now, you need to configure your authorization server to use group-based authorization by adding the marked parameters in the embedQuery.
 
     <meta charset="utf-8"/>
     <table>
@@ -59,18 +66,26 @@ Let's take a look at the configuration settings for OAuth 2.0 and OpenID import,
     <td align="left">This parameter needs to set as true to enable the group-based authorization.</td>
     </tr>
     <tr>
-    <td align="left">embed_auth_provider</td>
-    <td align="left">This parameter value indicates, which auth provider you are using in embedding.
-    <br>Example: `embed_auth_provider=GlobalOAuth`<br>
-    <br>Following the values for different auth providers.
-    <br>TenantOAuth – Set this, if you have configured OAuth in tenant level
-    <br>TenantOpenID – Set this, if you have configured OpenID in tenant level
-    <br>GlobalOAuth – Set this, if you have configured OAuth in global level
-    <br>GlobalOpenID – Set this, if you have configured OpenID in global level
-    <br>WindowsAD – Set this, if you have configured WindowsAD
-    <br>AzureAD – Set this, if you have configured AzureAD
-    <br>None – Set this, if you haven’t using any auth providers
+    <td align="left" rowspan="6">embed_auth_provider</td>
+    <td align="left">This parameter value indicates which auth provider you are using in embedding.
+      <br>Example: <code>embed_auth_provider=GlobalOAuth</code>
+      <br><br>Following are the values for different auth providers:
     </td>
+    </tr>
+    <tr>
+    <td align="left">AzureAD – Set this if you have configured AzureAD</td>
+    </tr>
+    <tr>
+    <td align="left">TenantOAuth – Set this if you have configured OAuth at the tenant level<br>TenantOpenID – Set this if you have configured OpenID at the tenant level</td>
+    </tr>
+    <tr>
+    <td align="left">GlobalOAuth – Set this if you have configured OAuth at the global level<br>GlobalOpenID – Set this if you have configured OpenID at the global level</td>
+    </tr>
+    <tr>
+    <td align="left">WindowsAD – Set this if you have configured WindowsAD</td>
+    </tr>
+    <tr>
+    <td align="left">None – Set this if you aren’t using any auth providers</td>
     </tr>
     <tr>
     <td align="left">embed_user_id</td>
@@ -89,9 +104,20 @@ Let's take a look at the configuration settings for OAuth 2.0 and OpenID import,
 
     > **NOTE:** The previous UserID and UserEmail would act as the password for users of each provider in Bold BI.
 
-    **Example:** `&embed_group_access=true&embed_auth_provider=GlobalOAuth&embed_user_id=1212121212&embed_user_email=user@domain.com`   
+    **Example:** 
+    For GlobalOAuth:
+    `&embed_group_access=true&embed_auth_provider=GlobalOAuth&embed_user_id=1212121212&embed_user_email=user@domain.com`   
 
-    ![Group Based Authorization](/static/assets/javascript/images/group-based-auth.png)  
+    ![Group Based Authorization for GlobalOAuth](/static/assets/javascript/images/group-based-Oauth.png)  
+    For GlobalOpenID:
+    `&embed_group_access=true&embed_auth_provider=GlobalOpenID&embed_user_id=auth0|5dbc1ac0835a7c0e18724875&embed_user_email=user@domain.com";`
+
+    ![Group Based Authorization for GlobalOpenID](/static/assets/javascript/images/group-based-openID.png)
+    For Azure AD:
+    
+    `&embed_group_access=true&embed_auth_provider=AzureAD&embed_user_id=cda791a1-3dec-4e52-a70c-38323aafe256&embed_user_email=user@domain.com`
+
+    ![Group Based Authorization for Azure AD](/static/assets/javascript/images/group-based-AzureAD.png)
 
     > **NOTE:** Please use your UserID and UserEmail as follows in the authorization server.
 

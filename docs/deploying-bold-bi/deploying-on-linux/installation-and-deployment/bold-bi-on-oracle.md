@@ -43,6 +43,10 @@ documentation: ug
     ```cmd
     export OPENSSL_CONF=/etc/ssl/
     ```
+8. Change the SELinux mode from targeted to permissive.
+     ```cmd
+    sudo setenforce 0
+    ```
 ## Deploying Bold BI Application
 
 1. Register and copy the Bold BI Linux package link from the [Overview and system requirements for Bold BI](/deploying-bold-bi/overview/).

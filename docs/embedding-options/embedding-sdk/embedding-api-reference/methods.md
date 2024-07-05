@@ -461,6 +461,22 @@ instance.updateWidgetFilters("container"); //container -> embed container id
 
 >**Note:** Please apply widget filters on both the initial rendering and on-demand in the dashboard using a web application. For more details, please refer to [this documentation](/faq/how-to-apply-widget-filters-using-both-initialrendering-and-ondemand-in-embedding/).
 
+## validateServerAndWrapperVersion()
+
+> **NOTE:** This method will work from Embed SDK release v7.9
+
+This method will be used to ensure that the BoldBI server and SDK versions match. The result message will be shown in the console. It helps to identify and resolve problems related to version mismatch functionality.
+
+**Example** 
+
+```js
+var instance = BoldBI.getInstance("container"); //container -> embed container id
+instance.validateServerAndWrapperVersion();   
+```
+1. If our BoldBI version is 7.9 and the SDK version is 7.9, then the following console message will be displayed: **Embedded SDK version matches with Bold BI Server version**
+
+2. If our BoldBI version is 7.9 and the SDK version is 7.8, then the following console message will be displayed: **Embedded SDK version does not match with Bold BI Server version**
+
 ## category
 
 ### createDashboardCategory()
@@ -1591,7 +1607,7 @@ var viewParameters = {
    ViewName: "Filter View", // view name
    ItemId: instance.embedOptions.dashboardId, // Get the dashboard ID from the embedOptions 
    QueryString: 'filterQuery=[{"ucn":"Column1","cn":"ProductName","rn":"ComboBox2","ir":false,"ims":false,"fi":"92884626db4ffba31a49504a4864e4","ipw":false,"dimfi":{"c":"Include","t":["Product A"]}}]', // Get the filter query string from the arguments of 'beforeSaveAsViewDialogOpen' event. For know more about the event, refer beforeSaveAsViewDialogOpen
-   ChildItemId: instance._getActiveChildDashboardId() // Get the active-tabbed child dashboard id from BoldBI instance
+   ChildItemId: instance.getActiveChildDashboardId() // Get the active-tabbed child dashboard id from BoldBI instance
 };
 instance.saveAsFilterView(viewParameters, "callBackFunc");
 
@@ -1713,7 +1729,7 @@ var viewParameters = {
    ViewName: "Filter View", // view name
    ItemId: instance.embedOptions.dashboardId, // Get the dashboard ID from the embedOptions 
    QueryString: 'filterQuery=[{"ucn":"Column1","cn":"ProductName","rn":"ComboBox2","ir":false,"ims":false,"fi":"92884626db4ffba31a49504a4864e4","ipw":false,"dimfi":{"c":"Include","t":["Product A"]}}]', // Get the filter query string from the arguments of 'beforeSaveViewDialogOpen' event. For know more about the event, refer beforeSaveViewDialogOpen
-   ChildItemId: instance._getActiveChildDashboardId(), // Get the active-tabbed child dashboard id from BoldBI instance
+   ChildItemId: instance.getActiveChildDashboardId(), // Get the active-tabbed child dashboard id from BoldBI instance
 };
 instance.saveFilterView(viewParameters, "callBackFunc");
 
@@ -1785,9 +1801,10 @@ This method will update the current filter view on the dashboard.
 
 ```js
 var instance = BoldBI.getInstance("dashboard"); // embedContainerID -> 'dashboard'
+var updateViewDashboardID = instance.isMultiTab ? instance.getActiveChildDashboardId() : instance.embedOptions.dashboardId; //For multitab, get the active-tabbed child dashboard ID.
 var viewParameters = { 
    ViewId: "78ed603f-7834-4fc7-b611-3fe7ffdea399", // Get the view id from the arguments of 'beforeSaveViewDialogOpen' event while updating the view. For know more about the event, refer beforeSaveViewDialogOpen
-   DashboardId: instance.embedOptions.dashboardId, // Get the dashboard ID from the embedOptions 
+   DashboardId: updateViewDashboardID,
    QueryString: 'filterQuery=[{"ucn":"Column1","cn":"ProductName","rn":"ComboBox2","ir":false,"ims":false,"fi":"92884626db4ffba31a49504a4864e4","ipw":false,"dimfi":{"c":"Include","t":["Product A"]}}]' // Get the filter query string from the arguments of 'beforeSaveViewDialogOpen' event. For know more about the event, refer beforeSaveViewDialogOpen
 };
 instance.updateFilterView(viewParameters, "callBackFunc");
@@ -1804,9 +1821,10 @@ function callBackFunc(view, status) {
 
 ```js
 var instance = BoldBI.getInstance("dashboard"); // embedContainerID -> 'dashboard'
+var updateViewDashboardID = instance.isMultiTab ? instance.getActiveChildDashboardId() : instance.embedOptions.dashboardId; //For multitab, get the active-tabbed child dashboard ID.
 var viewParameters = { 
    ViewId: "78ed603f-7834-4fc7-b611-3fe7ffdea399", // Get the view id from the arguments of 'beforeSaveViewDialogOpen' event while updating the view. For know more about the event, refer beforeSaveViewDialogOpen
-   DashboardId: instance.embedOptions.dashboardId, // Get the dashboard ID from the embedOptions 
+   DashboardId: updateViewDashboardID,
    QueryString: 'filterQuery=[{"ucn":"Column1","cn":"ProductName","rn":"ComboBox2","ir":false,"ims":false,"fi":"92884626db4ffba31a49504a4864e4","ipw":false,"dimfi":{"c":"Include","t":["Product A"]}}]', // Get the filter query string from the arguments of 'beforeSaveViewDialogOpen' event. For know more about the event, refer beforeSaveViewDialogOpen
    IsDefault: true // You can set your view as DefaultView after the default view option is enabled in dashboard settings in the Bold BI server. Otherwise, it will be false as the default value.
 };
@@ -1844,7 +1862,7 @@ function callBackFunc(view, status) {
    <tr>
    <td>ItemId</td>
    <td><code>string</code></td>
-   <td>gDefines the unique ID of the dashboard, and for multitab dashboards, it must define the active-tabbed child dashboard ID.</td>
+   <td>Defines the unique ID of the dashboard, and for multitab dashboards, it must define the active-tabbed child dashboard ID.</td>
    </tr>
    <tr>
    <td>QueryString</td>
