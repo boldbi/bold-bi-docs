@@ -826,6 +826,54 @@
         }
       }
     },
+    "/v2.0/users/{user}": {
+      "get": {
+        "tags": [
+          "Users"
+        ],
+        "summary": "Get a User by Email or Username",
+        "description": "Retrieves the particular user details.",
+        "operationId": "Users_GetUserDetail",
+        "parameters": [
+          {
+            "name": "user",
+            "in": "path",
+            "description": "Username or email address of the user.",
+            "required": true,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string",
+              "nullable": false
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "User info has been retrieved successfully.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiGetUserResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "User detail not found.",
+            "content": {}
+          },
+          "405": {
+            "description": "Request type was not Get.",
+            "content": {}
+          },
+          "417": {
+            "description": "Failed to get user detail.",
+            "content": {}
+          }
+        }
+      }
+    },
 	"/v2.0/users": {
       "get": {
         "tags": [
@@ -1063,6 +1111,51 @@
           },
           "417": {
             "description": "Failed to update branding images.",
+            "content": {}
+          }
+        }
+      }
+    },
+    "/v2.0/users/validate": {
+      "post": {
+        "tags": [
+          "Users"
+        ],
+        "summary": "Validate User",
+        "description": "Validate the user by email.",
+        "operationId": "validate_user",
+        "requestBody": {
+          "description": "Validate User request body.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ValidateUserApiRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Email address already exists.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiValidateUserResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Email address field is empty.",
+            "content": {}
+          },
+          "404": {
+            "description": "User detail not found.",
+            "content": {}
+          },
+          "405": {
+            "description": "Request type was not POST.",
             "content": {}
           }
         }
@@ -1565,12 +1658,12 @@
         ]
       },
       "DatabaseType": {
-		   "description": "0 - MSSQL, 1 - MySQL,2-PostgreSQL",
+		   "description": "0 - MSSQL, 1 - MySQL, 4 - PostgreSQL",
         "type": "enum",
         "enum": [
           0,
           1,
-          2
+          4
         ],
         "x-enumNames": [
           "MSSQL",
@@ -1820,6 +1913,20 @@
           }
         }
 	  },
+    "ValidateUserApiRequest":
+	  {
+		 "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "Email"
+        ],
+        "properties": {
+          "Email": {
+            "type": "string",
+            "description": "Email address of the user."
+          }
+        }
+	  },
 	  "GrantUser":
 	  {
 		 "type": "object",
@@ -1851,7 +1958,7 @@
             "type": "array",
             "description": "Response data from the API.",
             "items": {
-			"$ref": "#/components/schemas/GrantResponseData",
+			"$ref": "#/components/schemas/GrantResponseData"
             }
           },
           "Status": {
@@ -1874,11 +1981,11 @@
         "properties": {
           "tenant": {
            "description": "Response data from the tenant..",
-			"$ref": "#/components/schemas/TenantResponseData",
+			"$ref": "#/components/schemas/TenantResponseData"
           },
           "user": {
             "description": "Response data from the user..",
-			"$ref": "#/components/schemas/UserResponse",
+			"$ref": "#/components/schemas/UserResponse"
             }
         }
 	  },
@@ -1891,7 +1998,7 @@
           "FirstName",
           "UserName",
 		  "LastName",
-          "contact",
+          "contact"
         ],
         "properties": {
           "Email": {
@@ -1975,6 +2082,72 @@
           }
         }
       },
+      "GetUserResponse": {
+        "type": "object",
+        "properties": {
+          "user_id": {
+            "type": "string",
+            "description": "Returns the user ID from the API."
+          },
+          "user_name": {
+            "type": "string",
+            "description": "Returns the username from the API."
+          },
+          "email": {
+            "type": "string",
+            "description": "Returns the email address of the user from the API."
+          },
+          "first_name": {
+            "type": "string",
+            "description": "Returns the first name of the user from the API."
+          },
+          "last_name": {
+            "type": "string",
+            "description": "Returns the last name of the user from the API."
+          },
+          "display_name": {
+            "type": "string",
+            "description": "Returns the display name of the user from the API."
+          },
+          "phone": {
+            "type": "string",
+            "description": "Returns the contact number of the user from the API."
+          },
+          "company": {
+            "type": "string",
+            "description": "Returns the company name of the user from the API."
+          },
+          "email_verified": {
+            "type": "string",
+            "description": "Returns whether the email is verified or not from the API."
+          },
+          "avatar_url": {
+            "type": "string",
+            "description": "Returns the profile url of the user from the API."
+          },
+          "created_at": {
+            "type": "string",
+            "description": "Returns the created date of the user from the API."
+          },
+          "modified_at": {
+            "type": "string",
+            "description": "Returns the modified date of the user from the API."
+          },
+          "user_status": {
+            "type": "string",
+            "description": "Returns the status of the user from the API."
+          }
+        }
+      },
+      "ValidateUserResponse": {
+        "type": "object",
+        "properties": {
+          "user_id": {
+            "type": "string",
+            "description": "Returns the user ID from the API."
+          }
+        }
+      },
 	  "UpdateUserResponse": {
         "type": "object",
         "properties": {
@@ -2045,6 +2218,62 @@
             "description": "Response data from the API.",
             "items": {
             "$ref": "#/components/schemas/UserResponse"
+            }
+          },
+          "Status": {
+            "type": "boolean",
+            "description": "Returns status of the API request."
+          },
+          "StatusMessage": {
+            "type": "string",
+            "description": "Returns the status message from the API."
+          },
+          "Message": {
+            "type": "string",
+            "description": "Returns the message from the API."
+          }
+        }
+      },
+      "ApiGetUserResponse": {
+        "type": "object",
+        "properties": {
+          "ApiStatus": {
+            "type": "boolean",
+            "description": "Returns the status from the API."
+          },
+          "Data": {
+            "type": "array",
+            "description": "Response data from the API..",
+            "items": {
+            "$ref": "#/components/schemas/GetUserResponse"
+            }
+          },
+          "Status": {
+            "type": "boolean",
+            "description": "Returns status of the API request."
+          },
+          "StatusMessage": {
+            "type": "string",
+            "description": "Returns the status message from the API."
+          },
+          "Message": {
+            "type": "string",
+            "description": "Returns the message from the API."
+          }
+        }
+      },
+      "ApiValidateUserResponse": {
+        "type": "object",
+        "properties": {
+          "ApiStatus": {
+            "type": "boolean",
+            "description": "Returns the status from the API."
+          },
+          "Data": {
+            "type": "array",
+            "description": "Response data from the API..",
+            "items": {
+            "$ref": "#/components/schemas/ValidateUserResponse"
             }
           },
           "Status": {
@@ -2182,6 +2411,6 @@
         "scheme": "bearer",
         "bearerFormat": "JWT"
       }
-    },
+    }
   }
 }

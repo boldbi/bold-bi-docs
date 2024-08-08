@@ -12,6 +12,8 @@ This section explains how to use the Replace Value option in Bold BI Enterprise 
 
 You can explore the details of the replace value support here.
 
-[Replace value support in Datasource level](/working-with-data-sources/data-modeling/configuring-replace-value/datasource-level-support/)
+[Replace Value Support in Data Source Level](/working-with-data-sources/data-modeling/configuring-replace-value/datasource-level-support/)
 
-[Replace value support in Column level](/working-with-data-sources/data-modeling/configuring-replace-value/column-level-support/)
+[Replace Value Support in Column Level](/working-with-data-sources/data-modeling/configuring-replace-value/column-level-support/)
+
+[Limitations of Replace Value Support](/working-with-data-sources/data-modeling/configuring-replace-value/limitations-of-replace-value-support/)

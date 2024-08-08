@@ -11,8 +11,6 @@ keywords: isolation, isolation code, isolation filter, row level security, row l
 
 The `Data Sampling` feature in Bold BI will provide a better design experience by limiting the number of records when creating dashboards with millions of data. However, this limitation will not be applied during the preview or publishing of dashboards.
 
-> **Note:** This feature is available in On-Premises Deployment but not in Syncfusion Managed Cloud Server.
-
 ## Enabling Data sampling in Bold BI:
 
 To enable Data Sampling in Bold BI, please follow these steps:

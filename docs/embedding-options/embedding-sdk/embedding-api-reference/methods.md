@@ -356,7 +356,7 @@ var publishModel = {category: "Sales",categoryId: "e6ed2f36-7205-423e-81e0-38a8c
 instance.saveDashboard(publishModel, containerId);
 ```
 
-> **NOTE:** Please customize the `saveDashboard()` function in the dashboard designer using the web application. For more details, please refer to [this documentation](/faq/how-to-create-own-publish-dialog-for-designer-embedding/).
+> **NOTE:** Please customize the `saveDashboard()` function in the dashboard designer using the web application. For more details, please refer to [this documentation](https://support.boldbi.com/kb/article/16729/how-to-create-own-publish-dialog-for-designer-embedding).
 
 ## updateDatasource()
     
@@ -459,7 +459,7 @@ instance.getWidgetInstance(widgetId2).setFilterParameters(filtersValue2);
 instance.updateWidgetFilters("container"); //container -> embed container id
 ```
 
->**Note:** Please apply widget filters on both the initial rendering and on-demand in the dashboard using a web application. For more details, please refer to [this documentation](/faq/how-to-apply-widget-filters-using-both-initialrendering-and-ondemand-in-embedding/).
+>**Note:** Please apply widget filters on both the initial rendering and on-demand in the dashboard using a web application. For more details, please refer to [this documentation](https://support.boldbi.com/kb/article/16759/how-to-apply-widget-filters-using-both-initialrendering-and-ondemand-in-embedding).
 
 ## validateServerAndWrapperVersion()
 
@@ -523,7 +523,7 @@ function callBackFnc(args)
 </tr>
 </table>
 
-> **NOTE:** To customize the `createDashboardCategory()` in the dashboard designer using the web application, please refer to the details provided [this documentation](/faq/how-to-create-own-publish-dialog-for-designer-embedding/).
+> **NOTE:** To customize the `createDashboardCategory()` in the dashboard designer using the web application, please refer to the details provided [this documentation](https://support.boldbi.com/kb/article/16729/how-to-create-own-publish-dialog-for-designer-embedding).
 
 ### getDashboardCategories()
 
@@ -559,7 +559,7 @@ function callBackFnc(args)
 </tr>
 </table>
 
-> **NOTE:** Customize the `getDashboardCategories()` function in the dashboard designer using the web application. For more information, please refer to [this documentation](/faq/how-to-create-own-publish-dialog-for-designer-embedding/).
+> **NOTE:** Customize the `getDashboardCategories()` function in the dashboard designer using the web application. For more information, please refer to [this documentation](https://support.boldbi.com/kb/article/16729/how-to-create-own-publish-dialog-for-designer-embedding).
 
 ## comment
 

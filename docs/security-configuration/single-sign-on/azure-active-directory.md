@@ -30,7 +30,7 @@ This section explains how to perform Single Sign-On (SSO) for users in the Azure
 
     ![Azure Active Directory Settings](/static/assets/site-administration/images/enable-sso.png)  
 
-    > **NOTE:**  Please refer to the following link to register the [Bold BI web application](/faq/how-to-register-bold-bi-web-application-with-azure-active-directory/) and [Bold BI mobile application](/faq/how-to-register-bold-bi-mobile-application-with-azure-active-directory/) in Azure Active Directory.
+    > **NOTE:** Please refer to the following link to register the [Bold BI web application](https://support.boldbi.com/kb/article/16588/how-to-register-bold-bi-web-application-with-azure-active-directory) and [Bold BI mobile application](https://support.boldbi.com/kb/article/16599/how-to-register-bold-bi-mobile-application-with-azure-active-directory/) in Azure Active Directory.
 
    * **Application Id**: Please go to the registered application and click on `Overview`. Then, copy the `Application Id` and paste it.
 

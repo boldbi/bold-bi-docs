@@ -200,7 +200,7 @@ The Dashboard Service will pass the following arguments when triggering the API.
    </tr>
    <tr>
    <td>Oracle</td>
-   <td>ServerName,Port,InstanceName,Database,UserName,Password,AdvancedSettings,CommandTimeout</td>
+   <td>ServerName,Port,Service,Database,UserName,Password,AdvancedSettings,CommandTimeout</td>
    </tr>
    <tr>
    <td>PostgreSQL</td>
@@ -389,7 +389,6 @@ Please enter the data source connection string in JSON format in the Custom Attr
           "UserName": "",
           "Password": "",
           "Port": "",
-          "SslMode": "",
           "TrustServerCertificate": "",
           "AdvancedSettings": "",
           "CommandTimeout": "",
@@ -430,7 +429,7 @@ Please enter the data source connection string in JSON format in the Custom Attr
        
            "ServerName": "",
            "Port": "",
-           "InstanceName": "",
+           "Service": "",
            "Database": "",
            "UserName": "",
            "Password": "",

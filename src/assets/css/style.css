@@ -103,3 +103,22 @@
 .e-accordion .e-acrdn-item .e-content-hide {
     display: none;
 }
+.faq-link-section{
+  padding: 0px 34px 0px 12px !important;
+  line-height: 39px;
+  min-height: 40px;
+  overflow: hidden;
+  padding: 0 42px 0 12px;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  color: #283A5F;
+  font-size: 16px;
+  font-weight: bold;
+}
+.faq-link-section:hover{
+color: #283A5F; 
+}

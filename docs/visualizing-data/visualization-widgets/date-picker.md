@@ -143,6 +143,16 @@ This allows you to toggle the selection type of Range.
 
 ![range date selection option](/static/assets/visualizing-data/visualization-widgets/images/date-picker/range-selection.png)
 
+#### Select Today as Default
+
+This allows you to set today’s date as default selection in Date Picker, enabling users to quickly proceed with analyses on the current date. 
+
+![showcasing today date as default](/static/assets/visualizing-data/visualization-widgets/images/date-picker/today-date.png)
+
+Enabling the “Select Today as Default” option will hide the “Range” option, as the former is intended for choosing a single date, which “Today” represents and functions as a Relative Date Filter.
+
+![enabling today date as default option](/static/assets/visualizing-data/visualization-widgets/images/date-picker/enabletodayasdefault.png)
+
 #### Highlight Available Dates
 
 This allows you to enable the highlighting of available dates in the date picker.
@@ -151,7 +161,7 @@ This allows you to enable the highlighting of available dates in the date picker
 
 #### Limit Dates
 
-This allows you to display only the limited dates (dates in the data source) in the date picker. By default, this option will be enabled. If the option is enabled, you can select the dates available in the data source. 
+This allows you to display only the limited dates (dates in the data source) in the date picker. By enabling this option, you can select the dates available in the data source.
 
 ![date range limit selection](/static/assets/visualizing-data/visualization-widgets/images/date-picker/datepicker-limit.png)
 

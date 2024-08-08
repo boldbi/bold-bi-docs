@@ -90,6 +90,24 @@ export default class LayoutTemplate extends React.Component {
     this.configureHamburger();
     this.configureRightSideBar();        
     this.configureMobileSearch();
+    function faqAddLeftMenu() {
+      var newLink = Object.assign(document.createElement('a'), { 
+          href: "https://support.boldbi.com/kb/category/41",
+          target: "_blank", 
+          textContent: "FAQ",
+          className:"faq-link-section"
+      });
+  
+      document.getElementById('doc-left-toc').appendChild(newLink);
+    }
+    faqAddLeftMenu();
+    if (window.location.href.includes("/faq/")) {
+      window.location.href = "https://support.boldbi.com/kb/category/41";
+    }
+    var faq_link = document.querySelector('a.faq-link-section');
+    faq_link.onclick = function (){
+        faq_link.href = faq_link.href.split('?')[0];
+    }
     zoomOptionForImages();
     copyToClipboard();
     select('.doc-toc-search-icon').addEventListener('click', () => {
@@ -713,15 +731,16 @@ export default class LayoutTemplate extends React.Component {
       <Layout>
         <div>
             <Helmet>
-                    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-233131-36"></script>
+                    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SRXJZD7EME" integrity="sha384-zoB94gWmcep4wNjStSM5oNZXD6a6SnYtULN4SMsPpzCg5WPVK5N/ij/lqe2iiQ1q" crossorigin="anonymous" ></script>
                     <script>
                         {`
                         window.dataLayer = window.dataLayer || [];
                         function gtag(){dataLayer.push(arguments); }
                         gtag('js', new Date());
-                        gtag('config', 'UA-233131-36');
+                        gtag('config', 'G-SRXJZD7EME');
                        `}
                     </script>
+                    <script src="https://cdn.polyfill.io/v3/polyfill.min.js?features=String.prototype.startsWith,String.prototype.includes,Array.prototype.includes" integrity="sha384-Wr3l27q1bK61u689TZfFU9ZY5gqLFskmpQtEoXiM2BEoIWrnULp2zdvB0G4qVpWt" crossorigin="anonymous"></script>
             <title>{postNode.frontmatter.title}</title>
 			 {postNode.frontmatter.canonical ?
              <link rel="canonical" key={canonicalUrl} href={canonicalUrl} data-react-helmet="true" />

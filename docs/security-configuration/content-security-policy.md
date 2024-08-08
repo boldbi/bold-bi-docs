@@ -18,7 +18,7 @@ The Content Security Policy uses the `Content-Security-Policy` response header t
 
 Enabling Content Security Policy (CSP) will not affect dashboard rendering unless the resources loaded inside the dashboards are requested from unknown domains, and URLs are not excluded from the CSP settings. If you want to load resources for your dashboard from an external URL, you need to add that URL in the respective sources section of the CSP settings.
 
-To learn more about the areas that will be affected in dashboards when the [Content Security Policy (CSP)](/faq/how-will-the-dashboard-get-affected-while-csp-enabled/) is enabled in Bold BI.
+To learn more about the areas that will be affected in dashboards when the [Content Security Policy (CSP)](https://support.boldbi.com/kb/article/16736/how-will-the-dashboard-get-affected-while-csp-enabled) is enabled in Bold BI.
 
 ## Content Security Policy Configuration
 

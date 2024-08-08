@@ -87,6 +87,6 @@ In order to embed the dashboard with views using SSO, you will need an embed URL
 ![EmbedViews-LinkIcon](/static/assets/iFrame-based/images/EmbedViews-LinkIcon.png) 
 
 Then, follow the steps below to obtain the embed secret code and learn about the parameters needed to create the embed signature.
-* [Steps to Get Embed Secret Code](/embedding-options/iframe-embedding/embed-dashboards-with-sso-using-token/).
+* [Steps to Get Embed Secret Code](/embedding-options/iframe-embedding/dashboard-embedding-with-token-authentication/).
 
-Using the [sample](/embedding-options/iframe-embedding/embed-dashboards-with-sso-using-token/#sample-application-for-embed-dashboard-with-sso-using-token), you can embed the dashboard with views using SSO.
+Using the [sample](/embedding-options/iframe-embedding/dashboard-embedding-with-token-authentication/#sample-application-for-dashboard-embedding-with-token-authentication), you can embed the dashboard with views using SSO.

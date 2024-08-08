@@ -552,12 +552,12 @@
         ]
       },
       "DatabaseType": {
-		   "description": "0 - MSSQL, 1 - MySQL,2-PostgreSQL",
+		   "description": "0 - MSSQL, 1 - MySQL, 4 - PostgreSQL",
         "type": "enum",
         "enum": [
           0,
           1,
-          2
+          4
         ],
         "x-enumNames": [
           "MSSQL",

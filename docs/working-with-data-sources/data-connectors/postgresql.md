@@ -9,7 +9,7 @@ documentation: ug
 # Connecting Bold BI to PostgreSql data source
 The Bold BI dashboard designer supports connecting to PostgreSql database using the SQL Live Query (C# API).
 
-**Supported Server Versions:** PostgreSQL `(v9.5, v9.6, v10, v11, v12 and v15)`
+**Supported Server Versions:** PostgreSQL `(v9.5, v9.6, v10, v11, v12, v13, v14 and v15)`
 
 ## Choose PostgreSql data source
 To configure the PostgreSql data source, follow these steps: 
@@ -99,7 +99,7 @@ In this connection type, a data source is fetched from source periodically. Choo
 
 ### Preview and data import
 1. Click **Connect** to connect to the PostgreSql server with the configured details.
-2. The Extract data dialog opens. This dialog has two modes of connection either via Table or [Custom query](/faq/working-with-custom-query-extract-mode-in-bold-bi/). Under custom query option, write the required query and click **Connect**.
+2. The Extract Data dialog opens. This dialog has two modes of connection either via Table or [Custom query](https://support.boldbi.com/kb/article/16675/working-with-custom-query-extract-mode-in-bold-bi). Under custom query option, write the required query and click **Connect**.
 Under Table option, this dialog displays list of tables and views in a treeview. Select the required table(s) or view(s) from the treeview to use in the designer. [Incremental Update](/working-with-data-sources/data-connectors/ms-sql-server/#incremental-update) can be performed on both tables and views. 
 The option is available for configuring the incremental refresh column for the selected items in the right-side panel. 
       * The table must have a primary key column and date column to configure the incremental refresh option.
@@ -143,7 +143,7 @@ We have added support for **custom attributes and dashboard parameters** in the 
 
 ### Prerequisites 
 
-**Supported Server Versions:** PostgreSQL `(v9.5, v9.6, v10, v11, and v12)`
+**Supported Server Versions:** PostgreSQL `(v9.5, v9.6, v10, v11, v12, v13, v14 and v15)`
 
 Type while creating the data source needs to be postgresql.
 
@@ -678,17 +678,17 @@ Bold BI application allows you to enable SSL through connection parameters in th
 
 2.	For connecting the [PostgreSQL](/working-with-data-sources/data-connectors/postgresql/) with SSL connection, you need to add the connection string **sslmode=Require;TrustServerCertificate=true** in the **Additional connection parameters** textbox along with the existing server details and click **Connect.**
 
-    ![Additional COnnection Parameters](/static/assets/faq/images/additional-parameters.png#max-width=40%)
+    ![Additional COnnection Parameters](/static/assets/working-with-datasource/data-connectors/images/Postgresql/additional-parameters.png#max-width=40%)
 
 In this way, you can enable SSL in the connection by passing parameters in the connection string.
 
 3.	Drag and drop the table from the table schema in the data design view page.
 
-    ![Table schema](/static/assets/faq/images/ssh-tables.png#max-width=70%)
+    ![Table schema](/static/assets/working-with-datasource/data-connectors/images/Postgresql/ssh-tables.png#max-width=70%)
 
 4.	Click **Save** to save the data source with a relevant name to proceed with designing a dashboard.
 
-    ![Save option](/static/assets/faq/images/ssh-save-option.png#max-width=70%)
+    ![Save option](/static/assets/working-with-datasource/data-connectors/images/Postgresql/ssh-save-option.png#max-width=70%)
 
 
 ## Related links

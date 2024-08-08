@@ -228,9 +228,15 @@ Pass your filters to the `embed_datasource_filter` parameter in the iFrame URL a
 ## How to embed the dashboard in create mode using the URL
 
 1. To create a new dashboard, you need to change the embed URL as demonstrated in the image below.
-    ![EmbedDashboardCreate](/static/assets/iFrame-based/images/dashboard-create-embed-code.png#max-width=65%) 
+```js
+  <html>
+  <body>
+    <iframe src='http://localhost:51777/bi/site/site1/dashboard-designer?isembed=true' id='dashboard-iframe'width='100%' allowfullscreen frameborder='0'></iframe>
+  </html>
+  </body>
+```
 
-2. Please embed the above URL into any web application.  
+2. Please embed the above URL into any web application and change the site identifier and server URL. 
 
 3. To use the web application, run it. Depending on the type of dashboard, either the login window or the dashboard will be displayed. Click on the login option and enter valid user credentials. After that, the create page will automatically load.
     ![EmbedLogin](/static/assets/iFrame-based/images/iframeLoginPage.png#max-width=45%)  

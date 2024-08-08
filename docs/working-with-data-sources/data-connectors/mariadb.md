@@ -109,7 +109,7 @@ In this type of connection, data is retrieved periodically from a data source. S
 ### Preview and data import
 1. Click **Connect** to establish a connection with the MariaDB server using the configured details.
 
-2. The Extract data dialog will open. This dialog has two modes of connection either via Table or [Custom query](/faq/working-with-custom-query-extract-mode-in-bold-bi/). For the custom query option, input the necessary query and then click **Connect**.
+2. The Extract data dialog will open. This dialog has two modes of connection either via Table or [Custom query](https://support.boldbi.com/kb/article/16675/working-with-custom-query-extract-mode-in-bold-bi). For the custom query option, input the necessary query and then click **Connect**.
 Under Table option, This dialog displays a list of tables and views in treeview. Select the required table(s) or view(s) from treeview to use in the designer. [Incremental Update](/working-with-data-sources/data-connectors/ms-sql-server/#incremental-update) can be performed in both tables and views. 
 The option is available for configuring incremental refresh column for the selected items in the right-side panel. 
       * The table must have a primary key column and date column to configure the incremental refresh option.

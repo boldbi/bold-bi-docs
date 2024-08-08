@@ -65,7 +65,7 @@ In BoldBI, you can control users based on their permissions for data sources con
 
 Data Level Security enables the enforcement of different levels of data visibility. By sharing a single dashboard with multiple users, each user can access only the data relevant to their specific requirements. This approach not only reduces development efforts but also enhances security measures.
 
->**Note:** Row Level security grants the user and group permissions to show only specific rows in the data. For more information, please refer to the [How to apply Row-level Security in Elastic search data source](/faq/how-to-apply-row-level-security-in-elastic-search-data-source/).
+>**Note:** Row Level security grants the user and group permissions to show only specific rows in the data. For more information, please refer to the [How to apply Row-level Security in Elastic search data source](https://support.boldbi.com/kb/article/16645/how-to-apply-row-level-security-in-elastic-search-data-source).
 
 ## Application security
 Every Bold BI product installation will generate unique private keys on the customer's machine. These private keys will be used to encrypt and store sensitive data, such as passwords and database details. 

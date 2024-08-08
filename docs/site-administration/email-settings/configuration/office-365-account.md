@@ -10,7 +10,7 @@ documentation: ug
 
 This section explains how to configure the Microsoft Office 365 account to send emails from the Bold BI Server. This process requires creating an Azure app and granting it the necessary API permissions to access the email service. If needed, you can also restrict the app’s access to specific mailboxes.
 
-To learn [how to register an Azure app with mail-sending API permissions](/faq/how-to-register-an-azure-app-with-mail-sending-permissions/) and restrict access to specific mailboxes.
+To learn [how to register an Azure app with mail-sending API permissions](https://support.boldbi.com/kb/article/16770/how-to-register-an-azure-app-with-mail-sending-permissions) and restrict access to specific mailboxes.
 
 > **NOTE:** This email service configuration is only applicable for On-Premises Deployment.
 
@@ -54,5 +54,5 @@ To learn [how to register an Azure app with mail-sending API permissions](/faq/h
 ![Send Email](/static/assets/site-administration/images/send-email.png#width=35%)
 
 ### What happens if the sender email address does not have application access?
-If the sender email address used in the configuration does not have app access, the test email will fail, resulting in an `Access to OData disabled` error as shown below. Learn more about restricting app access to specific mailboxes [here](/faq/how-to-register-an-azure-app-with-mail-sending-permissions/#restricting-app-access-to-specific-mailboxes).
+If the sender email address used in the configuration does not have app access, the test email will fail, resulting in an `Access to OData disabled` error as shown below. Learn more about restricting app access to specific mailboxes [here](https://support.boldbi.com/kb/article/16770/how-to-register-an-azure-app-with-mail-sending-permissions#restricting-app-access-to-specific-mailboxes).
 ![Send Email failed](/static/assets/site-administration/images/error-without-app-access.png#width=35%)

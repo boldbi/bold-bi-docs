@@ -711,7 +711,7 @@
         }
       }
     },
-	"{domain}/api/v2.0/user/{user_Id}":{
+	"{domain}/api/v2.0/users/{user_Id}":{
       "get": {
         "tags": [
           "Users"
@@ -759,6 +759,58 @@
           },
           "417": {
             "description": "Failed to while get user information.",
+            "content": {}
+          }
+        }
+      }
+    },
+    "/v2.0/users/{user}":{
+      "get": {
+        "tags": [
+          "Users"
+        ],
+        "summary": "Get a User by UserName or Email",
+        "description": "Retrieves the particular user details.",
+        "operationId": "Users_GetUserDetail",
+        "parameters": [
+          {
+            "name": "user",
+            "in": "path",
+            "description": "Username or email address of the user.",
+            "required": true,
+            "style": "simple",
+            "explode": false,
+              "schema": {
+              "type": "string",
+              "nullable": false
+          }
+		  }
+        ],
+        "responses": {
+          "200": {
+            "description": "User info has been retrieved successfully.",
+                "schema": {
+                  "$ref": "#/definitions/ApiGetUserResponse"
+                }
+          },
+          "400": {
+            "description": "The content of the request body is missing or incomplete.",
+            "content": {}
+          },
+          "401": {
+            "description": "Access denied.",
+            "content": {}
+          },
+          "405": {
+            "description": "Request type was not POST.",
+            "content": {}
+          },
+          "406": {
+            "description": "The content of the request body is invalid.",
+            "content": {}
+          },
+          "417": {
+            "description": "Failed to get user detail.",
             "content": {}
           }
         }
@@ -1494,12 +1546,12 @@
         ]
       },
       "DatabaseType": {
-		   "description": "0 - MSSQL, 1 - MySQL,2-PostgreSQL",
+		   "description": "0 - MSSQL, 1 - MySQL, 4 - PostgreSQL",
         "type": "enum",
         "enum": [
           0,
           1,
-          2
+          4
         ],
         "x-enumNames": [
           "MSSQL",
@@ -1711,6 +1763,20 @@
           }
         }
 	  },
+    "ValidateUserApiRequest":
+	  {
+		 "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "Email"
+        ],
+        "properties": {
+          "Email": {
+            "type": "string",
+            "description": "Email address of the user."
+          }
+        }
+	  },
     "Site": {
       "type": "object",
       "additionalProperties": false,
@@ -1784,7 +1850,7 @@
             "type": "array",
             "description": "Response data from the API.",
             "items": {
-			"$ref": "#/definitions/GrantResponseData",
+			"$ref": "#/definitions/GrantResponseData"
             }
           },
           "Status": {
@@ -1807,11 +1873,11 @@
         "properties": {
           "tenant": {
            "description": "Response data from the tenant..",
-			"$ref": "#/definitions/TenantResponseData",
+			"$ref": "#/definitions/TenantResponseData"
           },
           "user": {
             "description": "Response data from the user..",
-			"$ref": "#/definitions/UserResponse",
+			"$ref": "#/definitions/UserResponse"
             }
         }
 	  },
@@ -1978,6 +2044,72 @@
         }
       }
     },
+    "GetUserResponse": {
+      "type": "object",
+      "properties": {
+        "user_id": {
+          "type": "string",
+          "description": "Returns the user ID from the API."
+        },
+        "user_name": {
+          "type": "string",
+          "description": "Returns the username from the API."
+        },
+        "email": {
+          "type": "string",
+          "description": "Returns the email address of the user from the API."
+        },
+        "first_name": {
+          "type": "string",
+          "description": "Returns the first name of the user from the API."
+        },
+        "last_name": {
+          "type": "string",
+          "description": "Returns the last name of the user from the API."
+        },
+        "display_name": {
+          "type": "string",
+          "description": "Returns the display name of the user from the API."
+        },
+        "phone": {
+          "type": "string",
+          "description": "Returns the contact number of the user from the API."
+        },
+        "company": {
+          "type": "string",
+          "description": "Returns the company name of the user from the API."
+        },
+        "email_verified": {
+          "type": "string",
+          "description": "Returns whether the email is verified or not from the API."
+        },
+        "avatar_url": {
+          "type": "string",
+          "description": "Returns the profile url of the user from the API."
+        },
+        "created_at": {
+          "type": "string",
+          "description": "Returns the created date of the user from the API."
+        },
+        "modified_at": {
+          "type": "string",
+          "description": "Returns the modified date of the user from the API."
+        },
+        "user_status": {
+          "type": "string",
+          "description": "Returns the status of the user from the API."
+        }
+      }
+    },
+    "ValidateUserResponse": {
+      "type": "object",
+      "properties": {
+        "user_id": {
+          "type": "string",
+          "description": "Returns the user ID from the API."
+        }
+      }
+    },
     "DirectoryType": {
       "type": "object",
       "properties": {
@@ -2003,6 +2135,62 @@
           "description": "Response data from the API.",
           "items": {
           "$ref": "#/definitions/UserResponse"
+          }
+        },
+        "Status": {
+          "type": "boolean",
+          "description": "Returns status of the API request."
+        },
+        "StatusMessage": {
+          "type": "string",
+          "description": "Returns the status message from the API."
+        },
+        "Message": {
+          "type": "string",
+          "description": "Returns the message from the API."
+        }
+      }
+    },
+    "ApiGetUserResponse": {
+      "type": "object",
+      "properties": {
+        "ApiStatus": {
+          "type": "boolean",
+          "description": "Returns the status from the API."
+        },
+        "Data": {
+          "type": "array",
+          "description": "Response data from the API..",
+          "items": {
+          "$ref": "#/definitions/GetUserResponse"
+          }
+        },
+        "Status": {
+          "type": "boolean",
+          "description": "Returns status of the API request."
+        },
+        "StatusMessage": {
+          "type": "string",
+          "description": "Returns the status message from the API."
+        },
+        "Message": {
+          "type": "string",
+          "description": "Returns the message from the API."
+        }
+      }
+    },
+    "ApiValidateUserResponse": {
+      "type": "object",
+      "properties": {
+        "ApiStatus": {
+          "type": "boolean",
+          "description": "Returns the status from the API."
+        },
+        "Data": {
+          "type": "array",
+          "description": "Response data from the API..",
+          "items": {
+          "$ref": "#/definitions/ValidateUserResponse"
           }
         },
         "Status": {

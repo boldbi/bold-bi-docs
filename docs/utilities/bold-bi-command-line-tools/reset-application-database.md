@@ -42,7 +42,7 @@ Syncfusion.Server.Commands.Utility.exe dbconfig -servername "localhost" -databas
   
 ![reset-command](/static/assets/admin-utility/images/reset-con-string-2.png)  
 
-3. Once the database has been updated successfully, restart the application by following this [link](/faq/how-to-restart-the-bold-bi-embedded-application/#windows).
+3. Once the database has been updated successfully, restart the application by following this [link](https://support.boldbi.com/kb/article/16634/how-to-restart-the-bold-bi-embedded-application#windows).
 
 ## Linux
    
@@ -68,7 +68,7 @@ cd /var/www/bold-services/application/utilities/adminutils/
   
 ![reset-command](/static/assets/admin-utility/images/linux-reset-con-string.png)  
 
-3. Once, the database has been updated successfully, then restart the application by following this [link](/faq/how-to-restart-the-bold-bi-embedded-application/#linux).
+3. Once, the database has been updated successfully, then restart the application by following this [link](https://support.boldbi.com/kb/article/16634/how-to-restart-the-bold-bi-embedded-application#linux).
 
 ## Docker
 

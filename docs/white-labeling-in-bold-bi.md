@@ -111,7 +111,7 @@ You can customize the domain in Bold BI to align your analytics platform by rein
 
 **Custom Domain in Embedded BI**
 
-You can customize your bindings with either an IP address or a domain. Please follow this [link](/faq/how-to-change-binding-in-bold-bi-embedded/) to learn how to set up a custom domain in Embedded BI.
+You can customize your bindings with either an IP address or a domain. Please follow this [link](https://support.boldbi.com/kb/article/16575/how-to-change-binding-in-bold-bi-embedded) to learn how to set up a custom domain in Embedded BI.
 
 **Custom Domain in Cloud BI**
 

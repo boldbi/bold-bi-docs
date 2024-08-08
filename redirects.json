@@ -629,7 +629,11 @@
   },
   {
     "fromPath": "/embedded-bi/iframe-based/dashboard-embedding-using-single-sign-on/",
-    "toPath": "/embedding-options/iframe-embedding/embedding-a-dashboard-with-sso/"
+    "toPath": "/embedding-options/iframe-embedding/dashboard-embedding-with-token-authentication/"
+  },
+  {
+    "fromPath": "/embedding-options/iframe-embedding/embed-dashboards-with-sso-using-token/",
+    "toPath": "/embedding-options/iframe-embedding/dashboard-embedding-with-token-authentication/"
   },
   {
     "fromPath": "/embedded-bi/iframe-based/embedding-a-dashboard-with-views/",
@@ -657,7 +661,11 @@
   },
   {
     "fromPath": "/embedded-bi/iframe-based/datasource-embedding-using-single-sign-on/",
-    "toPath": "/embedding-options/iframe-embedding/datasource-embedding-using-single-sign-on/"
+    "toPath": "/embedding-options/iframe-embedding/datasource-embedding-with-token-authentication/"
+  },
+  {
+    "fromPath":"/embedding-options/iframe-embedding/datasource-embedding-using-single-sign-on/",
+    "toPath": "/embedding-options/iframe-embedding/datasource-embedding-with-token-authentication/"
   },
   {
     "fromPath": "/embedded-bi/iframe-based/sample/",
@@ -3485,7 +3493,7 @@
   },
   {
     "fromPath": "/embedded-bi/faq/how-many-server-deployments-supported-in-a-single-bold-bi-license/",
-    "toPath": "/faq/how-many-server-deployments-supported-in-a-single-bold-bi-license/"
+    "toPath": "https://support.boldbi.com/kb/article/874/how-many-server-deployments-are-supported-by-a-single-bold-bi-license"
   },
   {
     "fromPath": "/embedded-bi/faq/how-to-get-the-dashboard-list-based-on-group-for-the-specific-user/",
@@ -7233,47 +7241,91 @@
   },
   {
     "fromPath": "/embedded-bi/iframe-based/dashboard-embedding-using-single-sign-on/#steps-to-embed-dashboards",
-    "toPath": "/embedding-options/iframe-embedding/embedding-a-dashboard-with-sso/#steps-to-embed-dashboards"
+    "toPath": "/embedding-options/iframe-embedding/dashboard-embedding-with-token-authentication/#steps-to-embed-dashboards"
+  },
+  {
+    "fromPath": "/embedding-options/iframe-embedding/embed-dashboards-with-sso-using-token/#steps-to-embed-dashboards",
+    "toPath": "/embedding-options/iframe-embedding/dashboard-embedding-with-token-authentication/#steps-to-embed-dashboards"
   },
   {
     "fromPath": "/embedded-bi/iframe-based/dashboard-embedding-using-single-sign-on/#get-embed-secret-code",
-    "toPath": "/embedding-options/iframe-embedding/embedding-a-dashboard-with-sso/#get-embed-secret-code"
+    "toPath": "/embedding-options/iframe-embedding/dashboard-embedding-with-token-authentication/#get-embed-secret-code"
+  },
+  {
+    "fromPath": "/embedded-options/iframe-based/embed-dashboards-with-sso-using-token/#get-embed-secret-code",
+    "toPath": "/embedding-options/iframe-embedding/dashboard-embedding-with-token-authentication/#get-embed-secret-code"
   },
   {
     "fromPath": "/embedded-bi/iframe-based/dashboard-embedding-using-single-sign-on/#creating-the-embed-url-for-view-mode",
-    "toPath": "/embedding-options/iframe-embedding/embedding-a-dashboard-with-sso/#creating-the-embed-url-for-view-mode"
+    "toPath": "/embedding-options/iframe-embedding/dashboard-embedding-with-token-authentication/#creating-the-embed-url-for-view-mode"
+  },
+  {
+    "fromPath": "/embedded-options/iframe-based/embed-dashboards-with-sso-using-token/#creating-the-embed-url-for-view-mode",
+    "toPath": "/embedding-options/iframe-embedding/dashboard-embedding-with-token-authentication/#creating-the-embed-url-for-view-mode"
   },
   {
     "fromPath": "/embedded-bi/iframe-based/dashboard-embedding-using-single-sign-on/#parameters-to-generate-the-signature-in-the-embed-url",
-    "toPath": "/embedding-options/iframe-embedding/embedding-a-dashboard-with-sso/#parameters-to-generate-the-signature-in-the-embed-url"
+    "toPath": "/embedding-options/iframe-embedding/dashboard-embedding-with-token-authentication/#parameters-to-generate-the-signature-in-the-embed-url"
+  },
+  {
+    "fromPath": "/embedded-options/iframe-based/embed-dashboards-with-sso-using-token/#parameters-to-generate-the-signature-in-the-embed-url",
+    "toPath": "/embedding-options/iframe-embedding/dashboard-embedding-with-token-authentication/#parameters-to-generate-the-signature-in-the-embed-url"
   },
   {
     "fromPath": "/embedded-bi/iframe-based/dashboard-embedding-using-single-sign-on/#generating-the-signature-for-the-embed-url",
-    "toPath": "/embedding-options/iframe-embedding/embedding-a-dashboard-with-sso/#generating-the-signature-for-the-embed-url"
+    "toPath": "/embedding-options/iframe-embedding/dashboard-embedding-with-token-authentication/#generating-the-signature-for-the-embed-url"
+  },
+  {
+    "fromPath": "/embedded-options/iframe-based/embed-dashboards-with-sso-using-token/#generating-the-signature-for-the-embed-url",
+    "toPath": "/embedding-options/iframe-embedding/dashboard-embedding-with-token-authentication/#generating-the-signature-for-the-embed-url"
   },
   {
     "fromPath": "/embedded-bi/iframe-based/dashboard-embedding-using-single-sign-on/#available-parameter",
-    "toPath": "/embedding-options/iframe-embedding/embedding-a-dashboard-with-sso/#available-parameter"
+    "toPath": "/embedding-options/iframe-embedding/dashboard-embedding-with-token-authentication/#available-parameter"
+  },
+  {
+    "fromPath": "/embedded-options/iframe-based/embed-dashboards-with-sso-using-token/#available-parameter",
+    "toPath": "/embedding-options/iframe-embedding/dashboard-embedding-with-token-authentication/#available-parameter"
   },
   {
     "fromPath": "/embedded-bi/iframe-based/dashboard-embedding-using-single-sign-on/#how-to-pass-the-dashboard-parameter-and-url-parameter-filters-in-embed-url",
-    "toPath": "/embedding-options/iframe-embedding/embedding-a-dashboard-with-sso/#how-to-pass-the-dashboard-parameter-and-url-parameter-filters-in-embed-url"
+    "toPath": "/embedding-options/iframe-embedding/dashboard-embedding-with-token-authentication/#how-to-pass-the-dashboard-parameter-and-url-parameter-filters-in-embed-url"
+  },
+  {
+    "fromPath": "/embedded-options/iframe-based/embed-dashboards-with-sso-using-token/#how-to-pass-the-dashboard-parameter-and-url-parameter-filters-in-embed-url",
+    "toPath": "/embedding-options/iframe-embedding/dashboard-embedding-with-token-authentication/#how-to-pass-the-dashboard-parameter-and-url-parameter-filters-in-embed-url"
   },
   {
     "fromPath": "/embedded-bi/iframe-based/dashboard-embedding-using-single-sign-on/#creating-the-embed-url-to-create-dashboard",
-    "toPath": "/embedding-options/iframe-embedding/embedding-a-dashboard-with-sso/#creating-the-embed-url-to-create-dashboard"
+    "toPath": "/embedding-options/iframe-embedding/dashboard-embedding-with-token-authentication/#creating-the-embed-url-to-create-dashboard"
+  },
+  {
+    "fromPath": "/embedded-options/iframe-based/embed-dashboards-with-sso-using-token/#creating-the-embed-url-to-create-dashboard",
+    "toPath": "/embedding-options/iframe-embedding/dashboard-embedding-with-token-authentication/#creating-the-embed-url-to-create-dashboard"
   },
   {
     "fromPath": "/embedded-bi/iframe-based/dashboard-embedding-using-single-sign-on/#creating-the-embed-url-for-edit-dashboard",
-    "toPath": "/embedding-options/iframe-embedding/embedding-a-dashboard-with-sso/#creating-the-embed-url-for-edit-dashboard"
+    "toPath": "/embedding-options/iframe-embedding/dashboard-embedding-with-token-authentication/#creating-the-embed-url-for-edit-dashboard"
+  },
+  {
+    "fromPath": "/embedded-options/iframe-based/embed-dashboards-with-sso-using-token/#creating-the-embed-url-for-edit-dashboard",
+    "toPath": "/embedding-options/iframe-embedding/dashboard-embedding-with-token-authentication/#creating-the-embed-url-for-edit-dashboard"
   },
   {
     "fromPath": "/embedded-bi/iframe-based/dashboard-embedding-using-single-sign-on/#parameters-to-generate-the-signature-in-the-embed-url",
-    "toPath": "/embedding-options/iframe-embedding/embedding-a-dashboard-with-sso/#parameters-to-generate-the-signature-in-the-embed-url"
+    "toPath": "/embedding-options/iframe-embedding/dashboard-embedding-with-token-authentication/#parameters-to-generate-the-signature-in-the-embed-url"
+  },
+  {
+    "fromPath": "/embedded-options/iframe-based/embed-dashboards-with-sso-using-token/#parameters-to-generate-the-signature-in-the-embed-url",
+    "toPath": "/embedding-options/iframe-embedding/dashboard-embedding-with-token-authentication/#parameters-to-generate-the-signature-in-the-embed-url"
   },
   {
     "fromPath": "/embedded-bi/iframe-based/dashboard-embedding-using-single-sign-on/#sample-to-embed-dashboard-using-sso-authentication",
-    "toPath": "/embedding-options/iframe-embedding/embedding-a-dashboard-with-sso/#sample-to-embed-dashboard-using-sso-authentication"
+    "toPath": "/embedding-options/iframe-embedding/dashboard-embedding-with-token-authentication/#sample-to-embed-dashboard-using-sso-authentication"
+  },
+  {
+    "fromPath": "/embedded-options/iframe-based/embed-dashboards-with-sso-using-token/#sample-to-embed-dashboard-using-sso-authentication",
+    "toPath": "/embedding-options/iframe-embedding/dashboard-embedding-with-token-authentication/#sample-to-embed-dashboard-using-sso-authentication"
   },
   {
     "fromPath": "/embedded-bi/iframe-based/embedding-a-dashboard-with-views/#steps-to-embed-dashboard-view-using-url",
@@ -7353,31 +7405,59 @@
   },
   {
     "fromPath": "/embedded-bi/iframe-based/datasource-embedding-using-single-sign-on/#steps-to-embed-data-source",
-    "toPath": "/embedding-options/iframe-embedding/datasource-embedding-using-single-sign-on/#steps-to-embed-data-source"
+    "toPath": "/embedding-options/iframe-embedding/datasource-embedding-with-token-authentication/#steps-to-embed-data-source"
+  },
+  {
+    "fromPath": "/embedding-options/iframe-embedding/datasource-embedding-using-single-sign-on/#steps-to-embed-data-source",
+    "toPath": "/embedding-options/iframe-embedding/datasource-embedding-with-token-authentication/#steps-to-embed-data-source"
   },
   {
     "fromPath": "/embedded-bi/iframe-based/datasource-embedding-using-single-sign-on/#get-embed-secret-code",
-    "toPath": "/embedding-options/iframe-embedding/datasource-embedding-using-single-sign-on/#get-embed-secret-code"
+    "toPath": "/embedding-options/iframe-embedding/datasource-embedding-with-token-authentication/#get-embed-secret-code"
+  },
+  {
+    "fromPath": "/embedding-options/iframe-embedding/datasource-embedding-using-single-sign-on/#get-embed-secret-code",
+    "toPath": "/embedding-options/iframe-embedding/datasource-embedding-with-token-authentication/#get-embed-secret-code"
   },
   {
     "fromPath": "/embedded-bi/iframe-based/datasource-embedding-using-single-sign-on/#creating-the-embed-url-to-create-data-source",
-    "toPath": "/embedding-options/iframe-embedding/datasource-embedding-using-single-sign-on/#creating-the-embed-url-to-create-data-source"
+    "toPath": "/embedding-options/iframe-embedding/datasource-embedding-with-token-authentication/#creating-the-embed-url-to-create-data-source"
+  },
+  {
+    "fromPath": "/embedding-options/iframe-embedding/datasource-embedding-using-single-sign-on/#creating-the-embed-url-to-create-data-source",
+    "toPath": "/embedding-options/iframe-embedding/datasource-embedding-with-token-authentication/#creating-the-embed-url-to-create-data-source"
   },
   {
     "fromPath": "/embedded-bi/iframe-based/datasource-embedding-using-single-sign-on/#creating-the-embed-url-to-edit-data-source",
-    "toPath": "/embedding-options/iframe-embedding/datasource-embedding-using-single-sign-on/#creating-the-embed-url-to-edit-data-source"
+    "toPath": "/embedding-options/iframe-embedding/datasource-embedding-with-token-authentication/#creating-the-embed-url-to-edit-data-source"
+  },
+  {
+    "fromPath": "/embedding-options/iframe-embedding/datasource-embedding-using-single-sign-on/#creating-the-embed-url-to-edit-data-source",
+    "toPath": "/embedding-options/iframe-embedding/datasource-embedding-with-token-authentication/#creating-the-embed-url-to-edit-data-source"
   },
   {
     "fromPath": "/embedded-bi/iframe-based/datasource-embedding-using-single-sign-on/#parameters-to-generate-the-signature-in-the-embed-url",
-    "toPath": "/embedding-options/iframe-embedding/datasource-embedding-using-single-sign-on/#parameters-to-generate-the-signature-in-the-embed-url"
+    "toPath": "/embedding-options/iframe-embedding/datasource-embedding-with-token-authentication/#parameters-to-generate-the-signature-in-the-embed-url"
+  },
+  {
+    "fromPath": "/embedding-options/iframe-embedding/datasource-embedding-using-single-sign-on/#parameters-to-generate-the-signature-in-the-embed-url",
+    "toPath": "/embedding-options/iframe-embedding/datasource-embedding-with-token-authentication/#parameters-to-generate-the-signature-in-the-embed-url"
   },
   {
     "fromPath": "/embedded-bi/iframe-based/datasource-embedding-using-single-sign-on/#generating-the-signature-for-the-embed-url",
-    "toPath": "/embedding-options/iframe-embedding/datasource-embedding-using-single-sign-on/#generating-the-signature-for-the-embed-url"
+    "toPath": "/embedding-options/iframe-embedding/datasource-embedding-with-token-authentication/#generating-the-signature-for-the-embed-url"
+  },
+  {
+    "fromPath": "/embedding-options/iframe-embedding/datasource-embedding-using-single-sign-on/#generating-the-signature-for-the-embed-url",
+    "toPath": "/embedding-options/iframe-embedding/datasource-embedding-with-token-authentication/#generating-the-signature-for-the-embed-url"
   },
   {
     "fromPath": "/embedded-bi/iframe-based/datasource-embedding-using-single-sign-on/#sample-to-embed-data-source-in-edit-mode-using-sso-authentication",
-    "toPath": "/embedding-options/iframe-embedding/datasource-embedding-using-single-sign-on/#sample-to-embed-data-source-in-edit-mode-using-sso-authentication"
+    "toPath": "/embedding-options/iframe-embedding/datasource-embedding-with-token-authentication/#sample-to-embed-data-source-in-edit-mode-using-token-authentication"
+  },
+  {
+    "fromPath": "/embedding-options/iframe-embedding/datasource-embedding-using-single-sign-on/#sample-to-embed-data-source-in-edit-mode-using-sso-authentication",
+    "toPath": "/embedding-options/iframe-embedding/datasource-embedding-with-token-authentication/#sample-to-embed-data-source-in-edit-mode-using-token-authentication"
   },
   {
     "fromPath": "/embedded-bi/iframe-based/datasource-embedding/#steps-to-embed-data-source-using-url",
@@ -13924,8 +14004,8 @@
     "toPath": "/visualizing-data/visualization-widgets/grid/#link"
   },
   {
-    "fromPath": "/cloud-bi/visualizing-data/visualization-widgets/grid/#how-to-apply-conditional-formatting-in-grid",
-    "toPath": "/visualizing-data/visualization-widgets/grid/#how-to-apply-conditional-formatting-in-grid"
+    "fromPath": "/cloud-bi/visualizing-data/visualization-widgets/grid/#how-to-apply-advanced-settings-in-grid",
+    "toPath": "/visualizing-data/visualization-widgets/grid/#how-to-apply-advanced-settings-in-grid"
   },
   {
     "fromPath": "/cloud-bi/visualizing-data/visualization-widgets/grid/#how-to-enable-advanced-formatting",
@@ -33372,8 +33452,8 @@
     "toPath": "/visualizing-data/visualization-widgets/grid/#link"
   },
   {
-    "fromPath": "/embedded-bi/visualizing-data/visualization-widgets/grid/#how-to-apply-conditional-formatting-in-grid",
-    "toPath": "/visualizing-data/visualization-widgets/grid/#how-to-apply-conditional-formatting-in-grid"
+    "fromPath": "/embedded-bi/visualizing-data/visualization-widgets/grid/#how-to-apply-advanced-settings-in-grid",
+    "toPath": "/visualizing-data/visualization-widgets/grid/#how-to-apply-advanced-settings-in-grid"
   },
   {
     "fromPath": "/embedded-bi/visualizing-data/visualization-widgets/grid/#how-to-enable-advanced-formatting",

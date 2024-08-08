@@ -136,9 +136,13 @@ This section describes the list of possible changes required in the environment 
 
 ### 2. Update Database Connection String
 
-To update the database connection string, please follow the guidance document below to reset the database connection for different environments.
+To update the database connection string, please refer to the guidance document below to reset the database connection for different environments.
 
-[How to update database information in application and sites](https://support.boldbi.com/kb/article/14255/how-to-update-the-tenant-database-information-in-bulk-in-on-premise-deployments)
+If you have backed up the database on another server and the database name remains the same, following this KB article is sufficient to update both the UMS and tenant databases. [How to update the tenant database information in bulk in on-premise deployments](https://support.boldbi.com/kb/article/14255/how-to-update-the-tenant-database-information-in-bulk-in-on-premise-deployments).
+
+If you have backed up the databases on another server with different names, you need to follow both the above KB article and the documentation below.
+
+[Reset Application Database](https://help.boldbi.com/utilities/bold-bi-command-line-tools/reset-application-database/).
 
 ### 3. Change Domain Mapping or IP Binding
 

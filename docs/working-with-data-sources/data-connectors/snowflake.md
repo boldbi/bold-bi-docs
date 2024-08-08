@@ -85,7 +85,7 @@ In this connection type, a data source is fetched from the source periodically. 
 
 ### Preview and data import
 1. Click **Connect** to establish a connection with the Snowflake server using the configured details.
-2. The Extract data dialog opens. This dialog has two modes of connection either via Table or [Custom query](/faq/working-with-custom-query-extract-mode-in-bold-bi/). Under custom query option, write the required query and click **Connect**.
+2. The Extract Data dialog opens. This dialog has two modes of connection either via Table or [Custom query](https://support.boldbi.com/kb/article/16675/working-with-custom-query-extract-mode-in-bold-bi). Under custom query option, write the required query and click **Connect**.
 Under Table option, this dialog displays list of tables and views in treeview. Select the required table(s) or view(s) from treeview to use in the designer. [Incremental Update](/working-with-data-sources/data-connectors/ms-sql-server/#incremental-update) can be performed in both tables and views. 
 The option is available for configuring incremental refresh column for the selected items in the right-side panel. 
       * The table must have a primary key column and date column to configure the incremental refresh option.
@@ -570,17 +570,17 @@ The Bold BI application allows you to filter the warehouse through connection pa
 
 2.	For connecting the [Snowflake](/working-with-data-sources/data-connectors/snowflake/) with warehouse connection, you need to add the connection string **Warehouse=WarehouseName** in the **Additional connection parameters** textbox along with the existing server details and click **Connect.**
 
-    ![Additional COnnection Parameters](/static/assets/faq/images/solution-no-active-warehouse.png)
+    ![Additional COnnection Parameters](/static/assets/working-with-datasource/data-connectors/images/Snowflake/solution-no-active-warehouse.png)
 
 In this way, you can filter the warehouse connection by passing parameters in the connection string.
 
 3.	Drag and drop the table from the table schema in the data design view page.
 
-    ![Table schema](/static/assets/faq/images/ssh-tables.png#max-width=70%)
+    ![Table schema](/static/assets/working-with-datasource/data-connectors/images/Snowflake/ssh-tables.png#max-width=70%)
 
 4.	Click **Save** to save the data source with a relevant name in order to proceed with designing a dashboard.
 
-    ![Save option](/static/assets/faq/images/ssh-save-option.png#max-width=70%)
+    ![Save option](/static/assets/working-with-datasource/data-connectors/images/Snowflake/ssh-save-option.png#max-width=70%)
 
 
 ## Related links

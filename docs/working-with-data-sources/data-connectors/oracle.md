@@ -389,7 +389,7 @@ Through the REST API, only the **live mode** data source can be created and edit
 {
 "Servername": "string",
 "Port": "string",
-"InstanceName": "string",
+"Service": "string",
 "Username": "string",
 "Password": "string",
 "Database": "string",
@@ -416,7 +416,7 @@ Through the REST API, only the **live mode** data source can be created and edit
 {
 "Servername": "string",
 "Port": "string",
-"InstanceName": "string",
+"Service": "string",
 "Username": "string",
 "Password": "string",
 "Database": "string",
@@ -474,7 +474,7 @@ Through the REST API, only the **live mode** data source can be created and edit
 {
 "Servername": "string",
 "Port": "string",
-"InstanceName": "string",
+"Service": "string",
 "Username": "string",
 "Password": "string",
 "Database": "string",
@@ -506,7 +506,7 @@ Through the REST API, only the **live mode** data source can be created and edit
 {
 "Servername": "string",
 "Port": "string",
-"InstanceName": "string",
+"Service": "string",
 "Username": "string",
 "Password": "string",
 "Database": "string",
@@ -530,7 +530,7 @@ Through the REST API, only the **live mode** data source can be created and edit
 "Connection":  {   
        "ServerName": "string",
        "Port": "string",
-       "InstanceName": "string",
+       "Service": "string",
        "Database": "string",
        "UserName": "string",
        "Password": "string",

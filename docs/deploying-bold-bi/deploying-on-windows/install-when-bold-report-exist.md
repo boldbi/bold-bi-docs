@@ -44,7 +44,7 @@ This topic explains the steps required to install Bold BI Enterprise:
     
     ![Installation Chromium Packages](/static/assets/installation-and-deployment/images/installation-chromium-packages.png)
    
-    > **NOTE:** If you encounter any issues with your internet connection or lack one, deselect the Chromium Packages download option and proceed with the installation. For manual installation of the Chromium Packages, refer to [this guide](/faq/how-to-install-chromium-packages-manually/).
+    > **NOTE:** If you encounter any issues with your internet connection or lack one, deselect the Chromium Packages download option and proceed with the installation. For manual installation of the Chromium Packages, refer to [this guide](https://support.boldbi.com/kb/article/16581/how-to-install-chromium-packages-manually).
 
 5. Then, Client libraries prompt will open. Read and accept the license to ship the selected client libraries and click INSTALL.
    

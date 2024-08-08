@@ -6,9 +6,9 @@ platform: bold-bi
 documentation: ug
 ---
 
-# Replace value support in Datasource level
+# Replace Value Support in Data Source Level
 
-Replace value support at the datasource level allows you to modify all column values in the datasource that are null or blank.
+Replace Value support at the datasource level allows you to modify all column values in the datasource that are null or blank.
 
   ![Replace icon](/static/assets/working-with-datasource/configuring-replace-value/images/sshot1.png)
 
@@ -32,4 +32,4 @@ After saving the datasource, the changes will be updated in the dashboard as fol
 
  ![Null value replace output](/static/assets/working-with-datasource/configuring-replace-value/images/sshot-6.png)
 
- **NOTE:** This feature is common for all the measures and dimension columns in the datasource.
+ **NOTE:** This feature is applicable to only string columns in the datasource.

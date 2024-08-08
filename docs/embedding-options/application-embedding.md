@@ -51,7 +51,7 @@ Please follow the steps below continuously, one by one, to embed the Bold BI app
 
 ## Controlling link navigation behavior in embedded application
 
-Once you have embedded the Bold BI application, some links within the application will open in a new tab instead of loading inside the configured iframe above. Therefore, we recommend enabling link navigation behavior to open on the same page by referring to the instructions provided in [this documentation](/faq/how-to-control-link-navigating-behavior/).
+Once you have embedded the Bold BI application, some links within the application will open in a new tab instead of loading inside the configured iframe above. Therefore, we recommend enabling link navigation behavior to open on the same page by referring to the instructions provided in [this documentation](https://support.boldbi.com/kb/article/16737/how-to-control-link-navigating-behavior).
 
 ## How Embed Bold BI application works
 
