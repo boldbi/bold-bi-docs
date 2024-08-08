@@ -25,9 +25,16 @@ Any widget from the dashboard can be embedded individually in any application us
 ## How to embed the widget using the URL
 
 1. Now, utilize the copied iframe code in the HTML page to display the specific widget of the dashboard in a concise manner.   
-![EmbedWidgetCode](/static/assets/iFrame-based/images/embed-widget-code.png)
+```js
+<html>
+<body>
+    <iframe src='http://localhost:53623/bi/site/site1/dashboards/5cfde98c-d352-4863-8a93-d6679263191b/Sales/Sales%20Analysis%20Dashboard?isembed=true&isWidgetMode=true&WidgetId=32ed09f7-49ef-4468-9c56-ccc376dbcaaa'
+    id='dashboard-frame' width='100%' height='600px' allowfullscreen frameborder='0'></iframe>
+</html>
+</body>
+```
 
-2. Please embed the provided URL into any web application.  
+2. Please embed the provided URL into any web application and change the site identifier and server URL.
 
 3. To use the web application, you need to run it. Depending on the type of dashboard, it will display either the login window or the dashboard itself. Click on the login option and enter the correct user credentials. Once you do that, the widget will automatically render.  
 ![EmbedLogin](/static/assets/iFrame-based/images/iframeLoginPage.png#max-width=45%)  

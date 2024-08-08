@@ -16,7 +16,9 @@ Here, you can find a detailed explanation of the deployment process for the Ente
 
 [Recommended Azure App service configuration](/deploying-bold-bi/deploying-on-azure-app-service/recommendations/)
 
-[Deploy Bold BI Azure web app using the ARM template](/deploying-bold-bi/deploying-on-azure-app-service/using-arm-template/)
+[Deploy Bold BI Azure web app using the ARM template](/deploying-bold-bi/deploying-on-azure-app-service/deploy-bold-bi-using-arm-template/)
+
+[Deploy Bold BI and Reports Azure web app using ARM template](/deploying-bold-bi/deploying-on-azure-app-service/deploy-bold-bi-and-reports-using-arm-template/)
 
 [Install Client libraries](/deploying-bold-bi/deploying-on-azure-app-service/install-client-libraries/)
 

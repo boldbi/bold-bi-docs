@@ -103,7 +103,7 @@ In this connection type, a data source is fetched from source periodically. Choo
 
 ### Preview and data import
 1. Click **Connect** to connect the MySQL server with configured details.
-2. The Extract data dialog opens. This dialog has two modes of connection either via Table or [Custom query](/faq/working-with-custom-query-extract-mode-in-bold-bi/). Under the custom query option, write required query and click **Connect**.
+2. The Extract data dialog opens. This dialog has two modes of connection either via Table or [Custom query](https://support.boldbi.com/kb/article/16675/working-with-custom-query-extract-mode-in-bold-bi). Under the custom query option, write required query and click **Connect**.
 Under Table option, this dialog displays a list of tables and views in a treeview. Select the required table(s) or view(s) from the treeview to use in the designer. [Incremental Update](/working-with-data-sources/data-connectors/ms-sql-server/#incremental-update) can be performed in both tables and views. The option is available for configuring the incremental refresh column for the selected items in the right-side panel.
       * The table must have a primary key column and date column to configure the incremental refresh option.
       * The Views must have a date column to configure the incremental refresh option and unique column(s) is optional which is used to update the modified records.
@@ -669,17 +669,17 @@ Bold BI application allows you to enable SSL through connection parameters in th
 
 2.	To connect [MySQL](/working-with-data-sources/data-connectors/mysql/) with SSL connection, you need to add the connection string **ssl-mode=Require** in the **Additional connection parameters** textbox along with the existing server details and click **Connect.**
 
-    ![Additional COnnection Parameters](/static/assets/faq/images/additional-parameters-mysql.png#max-width=40%)
+    ![Additional COnnection Parameters](/static/assets/working-with-datasource/data-connectors/images/Mysql/additional-parameters-mysql.png#max-width=40%)
 
 In this way, you can enable SSL in the connection by passing parameters in the connection string.
 
 3.	Drag and drop the table from the table schema onto the data design view page.
 
-    ![Table schema](/static/assets/faq/images/ssh-tables.png#max-width=70%)
+    ![Table schema](/static/assets/working-with-datasource/data-connectors/images/Mysql/ssh-tables.png#max-width=70%)
 
 4.	Click **Save** to save the data source with a relevant name in order to proceed with designing a dashboard.
 
-    ![Save option](/static/assets/faq/images/ssh-save-option.png#max-width=70%)
+    ![Save option](/static/assets/working-with-datasource/data-connectors/images/Mysql/ssh-save-option.png#max-width=70%)
 
 ## Related links
 [Data Transformation](/working-with-data-sources/data-modeling/joining-table/)

@@ -15,12 +15,15 @@ documentation: ug
 
 The `config` section in a YAML file includes the following properties:
 
-- ``connectorname``: MongoDB
-- ``connection_url``: MongoDB can be configured in multiple ways. Typically, the connection URL format is:
   ```yaml
-  connection_url: "mongodb://dbuser:passwd@host.or.ip:27017"
+  connectorname: MongoDB
+      config:
+        connection_url: mongodb://dbuser:passwd@host:port
+        database: databasenmae
+      select:
+        - tablename
   ```
-- ``database``: Database name
+
 
 Here are the typical ways to configure MongoDB and their connection URLs:
 
@@ -36,15 +39,70 @@ Here are the typical ways to configure MongoDB and their connection URLs:
 | Kubernetes          | Deploy on Kubernetes using Helm charts or operators.                                  | ``mongodb://dbuser:passwd@k8s.cluster:27017``      |
 | Manual Tarball      | Install directly from the official MongoDB tarball, typically on Linux.               | ``mongodb://dbuser:passwd@tarball.host:27017``      |
 
-## Select Properties
-In the select section, specify the table name list to load tables from the MongoDB server.
+
+## Configure the ETL to connect Web
+
+  1. Click the `Bold ETL` icon on the Navigation Pane.
+
+  ![MongoDB ETL- BoldBI](/static/assets/working-with-etl/images/mongodbetl_clicketl.png#max-width=100%)
+
+  2. Click `Add Project` and provide the new project's name.
+  
+   ![MongoDB ETL- BoldBI](/static/assets/working-with-etl/images/mongodbetl_addproject.png#max-width=100%)
+  
+  3. Select the newly created project and add the `MongoDB` template.
+
+  ![MongoDB ETL- BoldBI](/static/assets/working-with-etl/images/mongodbetl_addtemplete.png#max-width=100%)
+
+
+### Configuration Parameters
+
+|Parameters | Description          |
+|--------------------------|----------------------------------------------|
+| **Name:**                | MongoDB                                      |
+| **Connector Name:**      | MongoDB |
+| **Connection URL:**      | Specify the connection URL for the MongoDB server in the format `mongodb://dbuser:passwd@host:port`. |
+| **Database:**            | Specify the name of the MongoDB database from which data will be extracted. |
+| **Select**: | **Tablename(s):** Specify the table name list to load tables from the MongoDB server. |
+
+  4. Update the details required in the template. and save it to the BoldBI Data Store.
+
+  ![MongoDB ETL- BoldBI](/static/assets/working-with-etl/images/mongodbetl_updatetemplete.png#max-width=100%)
+
+### Schedule ETL Job
+
+1. Click `Schedules` and select the created `MongoDB` project.
+
+![MongoDB ETL- BoldBI](/static/assets/working-with-etl/images/mongodbetl_schedule.png#max-width=100%)
+
+2. For an on-demand refresh, click `Run Now`.
+
+![MongoDB ETL- BoldBI](/static/assets/working-with-etl/images/mongodbetl_run.png#max-width=100%)  
+
+3. After, Complete the on-demand refresh.
+
+![MongoDB ETL- BoldBI](/static/assets/working-with-etl/images/mongodbetl_runcomplete.png#max-width=100%)
+
+4. Click the `Schedule` option to schedule the refresh hourly.
+
+![MongoDB ETL- BoldBI](/static/assets/working-with-etl/images/mongodbetl_schedulerefresh.png#max-width=100%)  
+
+5. The data source was created by ETL in Bold BI.
+   
+![MongoDB ETL- BoldBI](/static/assets/working-with-etl/images/mongodbetl_newds.png#max-width=100%)
+
+6. Click `Edit DataSource` Option to view the created table(s), such as 'products' table.
+
+![MongoDB ETL- BoldBI](/static/assets/working-with-etl/images/mongodbetl_table.png#max-width=100%)
 
 ## Metadata Properties
+
 In the metadata section, define the mode of data refresh. There are two modes: INCREMENTAL and FULL_TABLE. It only supports Date/DateTime datatype columns.
 
 ## INCREMENTAL
 
 This mode fetches data from the date column mentioned in the replication key from the start date as mentioned in the replication value. Once it is scheduled, the replication value is updated automatically from the imported data.
+
 ```yaml
 metadata:
   TableName:
@@ -52,12 +110,13 @@ metadata:
     replication_key: Column name
     replication_value: column value that data starts from
 ```
+
 ## FULL_TABLE
 
-This mode fetches data from the date column mentioned in the replication key from the start date as mentioned in the replication value. Once it is scheduled, the replication value is updated based on the interval_type and interval_value from the imported data. For ex set interval_type as 'year' and intervalue value as '1'.In first schedule, will fetch the record from Jan 1, 2000 to Dec 31, 2000. In next schedule, will fetch the record from Jan 1, 2001 to Dec 31, 2001 and so on
-
+This mode fetches data from the date column mentioned in the replication key from the start date as mentioned in the replication value. Once it is scheduled, the replication value is updated based on the interval_type and interval_value from the imported data. For ex set interval_type as 'year' and intervalue value as '1'.In first schedule, will fetch the record from Jan 1, 2000 to Dec 31, 2000. In next schedule, will fetch the record from Jan 1, 2001 to Dec 31, 2001 and so on.
 
 ```yaml
+
 metadata:
   TableName:
     replication_method: FULL_TABLE
@@ -69,34 +128,21 @@ metadata:
 ```
 
 ### Example Configuration
-#### FULL_TABLE
+
 ```yaml
 version: 1
 encrypt_credentials: false
 plugins:
   extractors:
-    - name: tap_postgres
-      connectorname: PostgreSQL
+    - name: MongoDB
+      connectorname: MongoDB
       config:
-        connection_url: "<connectionurl>"
-        database: <databasename>
+        connection_url: mongodb://dbuser:passwd@host:port
+        database: databasename
       select:
-        - TABLE1
-        - TABLE2
-      metadata:
-        TABLE1:
-          replication_method: FULL_TABLE
-          replication_key: last_modified_on
-          replication_value: 2023-07-19 00:00:00
-          interval_type: days
-          interval_value: 6
-        TABLE2:
-          replication_method: FULL_TABLE
-          replication_key: last_modified_on
-          replication_value: 2023-07-19 00:00:00
-          interval_type: days
-          interval_value: 6
+        - tablename
 ```
+
 
 #### INCREMENTAL
 
@@ -124,5 +170,32 @@ plugins:
           replication_value: 2023-07-19 00:00:00
 ```
 
+#### FULL_TABLE
 
-
+```yaml
+version: 1
+encrypt_credentials: false
+plugins:
+  extractors:
+    - name: tap_postgres
+      connectorname: PostgreSQL
+      config:
+        connection_url: "<connectionurl>"
+        database: <databasename>
+      select:
+        - TABLE1
+        - TABLE2
+      metadata:
+        TABLE1:
+          replication_method: FULL_TABLE
+          replication_key: last_modified_on
+          replication_value: 2023-07-19 00:00:00
+          interval_type: days
+          interval_value: 6
+        TABLE2:
+          replication_method: FULL_TABLE
+          replication_key: last_modified_on
+          replication_value: 2023-07-19 00:00:00
+          interval_type: days
+          interval_value: 6
+```

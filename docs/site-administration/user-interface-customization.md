@@ -23,7 +23,7 @@ Steps to open and edit the `custom_ui.json` file to customize the user interface
 
     `Example: http://{yourdomain}/ums/administration`
 
-    ![UMS Settings](/static/assets/faq/images/ums-settings.png)
+![UMS Settings](/static/assets/user-interface-customization/images/ums-settings.png)
 
 2. Select the `Configuration` tab from the settings menu and choose `custom_ui.json` from the `Search your files` drop-down.
 
@@ -31,7 +31,7 @@ Steps to open and edit the `custom_ui.json` file to customize the user interface
 
 3. Fill in the required fields in the file and `Save.`
 
-4. Restart the application and access the site. Please refer to the instructions on [how to restart the Bold BI](/faq/how-to-restart-the-bold-bi-embedded-application/) for more information.
+4. Restart the application and access the site. Please refer to the instructions on [how to restart the Bold BI](https://support.boldbi.com/kb/article/16634/how-to-restart-the-bold-bi-embedded-application) for more information.
 
 **Custom UI JSON**
 

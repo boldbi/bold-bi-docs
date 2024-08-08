@@ -14,7 +14,7 @@ You can explore the iFrame based embedding in detail here,
 
 [Dashboard Embedding](/embedding-options/iframe-embedding/embedding-a-dashboard/)
 
-[Embed Dashboards with SSO using Token](/embedding-options/iframe-embedding/embed-dashboards-with-sso-using-token/)
+[Embed Dashboards with Token](/embedding-options/iframe-embedding/dashboard-embedding-with-token-authentication/)
 
 [Dashboard Embedding using external Single Sign-On](/embedding-options/iframe-embedding/dashboard-embedding-with-external-sso/)
 
@@ -24,13 +24,13 @@ You can explore the iFrame based embedding in detail here,
 
 [Widget Embedding](/embedding-options/iframe-embedding/embedding-a-widget/)
 
-[Embed Widgets with SSO using Token](/embedding-options/iframe-embedding/embed-widgets-with-sso-using-token/)
+[Embed Widgets with Token](/embedding-options/iframe-embedding/widget-embedding-with-token-authentication/)
 
 [Get Data source URL](/embedding-options/iframe-embedding/get-datasource-url/)
 
 [Datasource Embedding](/embedding-options/iframe-embedding/datasource-embedding/)
 
-[Datasource embedding using Single Sign-On](/embedding-options/iframe-embedding/datasource-embedding-using-single-sign-on/)
+[Datasource embedding with Token](/embedding-options/iframe-embedding/datasource-embedding-with-token-authentication/)
 
 [Dashboard Embedding Sample](/embedding-options/iframe-embedding/sample/dashboard-embedding/)
 

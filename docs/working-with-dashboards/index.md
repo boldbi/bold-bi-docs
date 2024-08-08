@@ -33,3 +33,5 @@ You can explore working with the dashboard in detail here:
 [Filtering Views using URL Parameters](/working-with-dashboards/preview-dashboard/urlparameters/)
 
 [Share Dashboards](/working-with-dashboards/share-dashboards/)
+
+[Dashboard Styles](/working-with-dashboards/dashboard-styles/)

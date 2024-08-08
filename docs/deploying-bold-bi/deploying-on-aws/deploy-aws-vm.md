@@ -64,7 +64,7 @@ The following steps guide you through deploying Bold BI on an AWS EC2 instance. 
 
 This section provides instructions on how to install and run the Bold BI server in a Windows virtual machine (VM).
 
-* Features to be enabled in IIS to run Bold BI in Windows Server OS. Refer to this [Windows Server OS](/faq/features-needed-to-enable-in-iis-to-run-bold-bi-in-win-server-os/).
+* Features to be enabled in IIS to run Bold BI in Windows Server OS. Refer to this [Windows Server OS](https://support.boldbi.com/kb/article/16584/features-needed-to-enable-in-iis-to-run-bold-bi-in-win-server-os).
 * Install the Bold BI server on the created Windows virtual machine (VM) in the AWS portal using [help link](https://help.boldbi.com/deploying-bold-bi/deploying-on-windows/)
   ![Start up](/static/assets/installation-and-deployment/images/boldbi-startup.png)
 *  Follow the steps in the link to do the [application startup](https://help.boldbi.com/application-startup/).

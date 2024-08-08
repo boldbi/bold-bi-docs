@@ -84,7 +84,7 @@ The authentication information and data collected from SQL and REST data sources
 
 ## Select storage
 
-You need to provide the storage type as either file storage or blob storage, in which Bold BI application will store the resources, contents, and logs. For more information, please refer to the [what are the resources will be generated in the installed machine](/faq/what-all-are-the-files-and-folders-will-be-generated-in-the-installed-machine/).
+You need to provide the storage type as either file storage or blob storage, in which Bold BI application will store the resources, contents, and logs. For more information, please refer to the [what are the resources will be generated in the installed machine](https://support.boldbi.com/kb/article/16571/what-all-are-the-files-and-folders-will-be-generated-in-the-installed-machine).
 
 ![File storage type](/static/assets/multi-tenancy/images/select-storage-file.png#max-width=45%)
 

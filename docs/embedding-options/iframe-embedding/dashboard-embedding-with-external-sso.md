@@ -60,7 +60,7 @@ The Bold BI application has been configured with the **OAuth 2.0**. The followin
 
 ## Embed using OpenID Connect Authentication
 
-The Bold BI application has been configured with **OpenID Connect**. . The following steps demonstrate how to obtain the embed code using the `OpenID SSO` Settings. Learn more about configuring [OpenID settings](/security-configuration/single-sign-on/openid-support/) in a concise manner.
+The Bold BI application has been configured with **OpenID Connect**. The following steps demonstrate how to obtain the embed code using the `OpenID SSO` Settings. Learn more about configuring [OpenID settings](/security-configuration/single-sign-on/openid-support/) in a concise manner.
 
 
 1. Click on the context menu of the respective dashboard and select `Get Embed code` option. 

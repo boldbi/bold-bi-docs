@@ -1388,7 +1388,7 @@ v6.1.8
 v6.2.7
 v6.3.3
 v6.4.6
-v7.9.50
+v7.10.16
 128-bit
 YYYY-MM-DDTHH
 2017-05-09T15
@@ -1635,3 +1635,14 @@ validateServerAndWrapperVersion
 v7.9
 Drilldown
 LoadView
+web_result
+Microsoft SQL Server
+strapi
+matomo
+mssql
+pyodbc
+FULL_TABLE
+ssl
+pymysql
+pg8000
+web_result

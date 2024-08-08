@@ -6,7 +6,7 @@ platform: bold-bi
 documentation: ug
 ---
 
-# Replace value support in column level
+# Replace Value Support in Column Level
 
 You can modify the specific column values in the datasource that contain null and blank by using the replace value support at the column level.
 
@@ -24,7 +24,7 @@ The column replace value takes precedence when we use both the data source level
 
 ![Column level support output](/static/assets/working-with-datasource/configuring-replace-value/images/sshot-9.png)
 
-## Configuring the Replace value in Column by Add rule option
+## Configuring the Replace Value in Column by Add rule option
 
 The addition of the rule feature in the replace value support allows you to modify any values in any column from the datasource, as well as customize null and blank values. 
 
@@ -76,4 +76,4 @@ After saving the datasource, the changes will be reflected in the dashboard.
 
 The Edit and Delete options can also be used to update values in the rule.
 
-**NOTE:** This feature is applicable to all measure and dimension columns in the datasource.
+**NOTE:** This feature is applicable to only string columns in the datasource.

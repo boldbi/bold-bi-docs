@@ -86,9 +86,16 @@ The Bold BI application has been configured with **OpenID Connect** for Single S
 ## How to embed the datasource in create mode using the URL
 
 1. Please change the embedded URL to the one provided below in order to create a new data source connection.   
-    ![EmbedDataSourceCreateCode](/static/assets/iFrame-based/images/embed-datasource-create-code.png#max-width=70%)
+```js
+    <html>
+    <body>
+        <iframe src='http://localhost:51777/bi/site/site1/datasource-designer/connection?isembed=true'
+        id='dashboard-frame' width='100%' height='100%' allowfullscreen frameborder='0'></iframe>
+    </body>
+    </html>
+```
 
-2. Please embed the aforementioned embed URL into any web application.   
+2. Please embed the aforementioned embed URL into any web application and change the site identifier and server URL.   
 
 3. To access the web application, run it and the login window will appear. Click on the login button and enter valid user credentials. This will automatically establish the data source connection, allowing you to utilize different connectors for connecting to the data source.
     ![EmbedLogin](/static/assets/iFrame-based/images/iframeLoginPage.png#max-width=45%)  

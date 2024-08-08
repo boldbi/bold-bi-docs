@@ -369,4 +369,23 @@ Here is a dashboard view illustrating the same.
 
 ![Two Different Parameter](/static/assets/working-with-dashboards/preview-dashboards/images/OR_AND_filter.png)
 
-> **NOTE:**  Points to be considered,</br> <li> The parameter names and values are case-sensitive.</br><li> The operators and date & time function names are case-insensitive.</br><li> Characters like comma (,), ampersand (&), and vertical bar (|) in the value should be prefixed and suffixed with a tilde (~) symbol to differentiate them from syntax elements.</br></br> For example, `CompanyName=Syncfusion Inc~,~ ` </br><li> The invalid parameter name will be ignored for filter consideration.</br><li> An invalid parameter value will result in `No data available to display` in widgets. </br><li> Parameters are applicable for both live and extract mode in dynamic DataSource creation, but changes in extract mode will only be reflected when the refresh setting is triggered.
+## Limitations of URL Parameter
+
+<li> The parameter names and values are case-sensitive.</br><li> The operators and date & time function names are case-insensitive.</br><li> Characters like comma (,), ampersand (&), and vertical bar (|) in the value should be prefixed and suffixed with a tilde (~) symbol to differentiate them from syntax elements.</br></br> <ol>
+
+For example, `CompanyName=Syncfusion Inc~,~ `</ol></br><li> An invalid parameter name will be ignored for filter consideration.</br><li> An invalid parameter value will result in `There is no data to be displayed` in widgets. </br><li> Parameters are applicable for both live and extract mode in dynamic DataSource creation, but changes in extract mode will only be reflected when the refresh setting is triggered.</br><li>When a user wants to apply a filter to a dashboard parameter by passing a URL parameter in the dashboard URL, the dashboard parameter name should be unique and not match any column name in the data source. If the dashboard parameter name matches a column name in the data source, the URL parameter will apply the filter to the data source column instead of the dashboard parameter.</br>
+<ol style="font-weight: bold;">
+Example Scenario:</br></ol><ol>
+Consider a scenario where a user creates a dashboard parameter named `ShipAddress` with the country name value and uses it in the code view of a data source.
+
+![Create Dashboard Parameter](/static/assets/working-with-dashboards/preview-dashboards/images/create-dashboard-param.png)
+
+![Use Dashboard Parameter in Query](/static/assets/working-with-dashboards/preview-dashboards/images/use-dashboard-param-in-query.png)
+
+However, the data source also contains a column named 'ShipAddress' with shipping address details.
+
+![Column in Data Source](/static/assets/working-with-dashboards/preview-dashboards/images/column-in-datasource.png)
+
+When applying a URL parameter like ‘Dashboard-URL?`ShipAddress=Austria`, it will filter the data source column `ShipAddress` instead of the dashboard parameter ` ShipAddress`. This will result in a `There is no data to be displayed` message in widgets.
+
+![Column in Data Source](/static/assets/working-with-dashboards/preview-dashboards/images/result-of-url-parameter.png)

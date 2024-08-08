@@ -110,7 +110,7 @@ To connect to an existing server instance, you have the following options:
 
 ![SQL Server](/static/assets/application-startup/images/application-startup-step1.png)
 
-> **NOTE:** The credentials used to connect to the server instance must have the permissions that are specified in [this documentation](/faq/what-are-the-database-permissions-required-to-set-up-bold-bi-embedded/).
+> **NOTE:** The credentials used to connect to the server instance must have the permissions that are specified in [this documentation](https://support.boldbi.com/kb/article/16632/what-are-the-database-permissions-required-to-set-up-bold-bi-embedded).
 
 > **IMPORTANT:**  The Bold BI server will accept all connections that use Transport Layer Security (TLS 1.1/1.2) encryption and AES Cryptography (128 bits). To support encrypted data transfer, select the `Enable SSL` option when configuring the Bold BI Server.
 

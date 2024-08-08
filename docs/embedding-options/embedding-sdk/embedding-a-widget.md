@@ -16,7 +16,7 @@ Follow these steps to embed a dashboard widget in your application.
 
     ```js
     <head> 
-        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v7.9.50/boldbi-embed.js"></script>
+        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v7.10.16/boldbi-embed.js"></script>
     </head>
     ```
 
@@ -177,12 +177,12 @@ Follow these steps to embed a dashboard widget in your application.
 </code></td>
 </tr>
 <tr>            
-<td><code>v7.9.50(latest)</code></td>            
+<td><code>v7.10.16(latest)</code></td>            
 <td><code>
 
 ```js
 <head> 
-    <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v7.9.50/boldbi-embed.js"></script>
+    <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v7.10.16/boldbi-embed.js"></script>
 </head>
 ```
 

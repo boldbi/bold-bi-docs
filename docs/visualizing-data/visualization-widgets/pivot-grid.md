@@ -460,25 +460,25 @@ You can define the column value represented as simple text or condition-based fo
 
 Select value as the display type to represent the column values as they are.
 
-#### Advance setting
+#### Advanced settings
 
-Select Advance setting to configure conditions and apply color to the cells based on those conditions. Click [here](/visualizing-data/visualization-widgets/grid/#how-to-apply-conditional-formatting-in-grid) for more details.  
+Select Advanced settings to configure conditions and apply color to the cells based on those conditions. Click [here](/visualizing-data/visualization-widgets/grid/#how-to-apply-advanced-settings-in-grid) for more details.  
 
 ![Advanced settings  widget](/static/assets/visualizing-data/visualization-widgets/images/pivot-grid/advanced-settings-widget.png)
 
 ### Pivot Grid as Heatmap
 
-Using conditional formatting, you can customize the pivot grid as a heatmap.
+Using advanced settings option, you can customize the pivot grid as a heatmap.
 
 ![pivot grid As Heatmap](/static/assets/visualizing-data/visualization-widgets/images/pivot-grid/pivot-heatmap.png)
 
 ### How to configure pivot grid as a heatmap
 
-1. In the `properties` panel, under the `Formatting` section, select the field name configured in the value, then click the `Advanced Setting` radio button.
+1. In the `properties` panel, under the `Formatting` section, select the field name configured in the value, then click the `Advanced Settings` radio button.
 
 ![Enable Advanced Settings](/static/assets/visualizing-data/visualization-widgets/images/pivot-grid/pivot-heatmap-field-selection.png)
 
-2. Click the `Customize` button to open the `Advanced Setting`.
+2. Click the `Customize` button to open the `Advanced Settings`.
 
 ![Advanced settings applied widget](/static/assets/visualizing-data/visualization-widgets/images/pivot-grid/advanced-settings.png)
 
@@ -556,19 +556,19 @@ Through this option, you can enable/disable hierarchical top N filtering. While 
 
 When the `Hierarchical Filter` option is enabled, the Top N will be applied to each individual column separately based on the number set for each column.
 
-## How to apply conditional formatting in pivot grid
+## How to apply advanced settings in pivot grid
 
-If you have the requirement to highlight data based on certain conditions, you can enable the advanced formatting option.
+If you have the requirement to highlight data based on certain conditions, you can enable the advanced settings option.
 
-### How to enable advanced formatting
+### How to enable advanced settings
 
-1. In the `properties` pane, under the `Formatting` section, click the `Advanced Setting` radio button.
+1. In the `properties` pane, under the `Formatting` section, click the `Advanced Settings` radio button.
 
 ![Enable advance settings](/static/assets/visualizing-data/visualization-widgets/images/pivot-grid/enableadvancesettings.png)
 
-2. This will open the `Conditional Formatting` dialog.
+2. This will open the `Advanced Settings` dialog.
 
-![Conditional formatting window](/static/assets/visualizing-data/visualization-widgets/images/pivot-grid/formatting-window.png)
+![Advanced Settings window](/static/assets/visualizing-data/visualization-widgets/images/pivot-grid/formatting-window.png)
 
 3. Select the `mode` and enter the conditions as required, then click the `Save` button to apply.
 
@@ -580,11 +580,11 @@ Refer to the following sections for detailed steps on using the [Gradient](/visu
 
 #### Gradient mode
 
-You can customize the background color of the pivot grid cells using the gradient-based conditional formatting. This is the default mode. 
+You can customize the background color of the pivot grid cells using the gradient-based advanced settings. This is the default mode. 
 
 #### Based on field
 
-The configured value fields. The "Based on Field" option cannot be changed in the conditional formatting dialog.
+The configured value fields. The "Based on Field" option cannot be changed in the advanced settings dialog.
 
 #### Summary type
 

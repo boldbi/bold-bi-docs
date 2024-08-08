@@ -59,7 +59,7 @@ Bind columns by dragging and dropping elements from the `Measures` or `Dimension
 
 > **NOTE:**  By default, 1000 records are displayed for optimized Grid rendering performance (100 records in mobile view), and additional rows will be scrolled virtually on-demand.
 
-> **NOTE:**  If any of the Grid columns have conditional formatting, bar template, or KPI applied, only 100 records will be fetched by default and then scrolled on-demand.
+> **NOTE:**  If any of the Grid columns have advanced settings, bar template, or KPI applied, only 100 records will be fetched by default and then scrolled on-demand.
 
 #### Hidden column section
 
@@ -553,13 +553,13 @@ Click the `OK` button to apply the changes to the grid.
 
 ![Formatting progress bar](/static/assets/visualizing-data/visualization-widgets/images/grid/formattingdatabar.png)
 
-#### Advance setting
+#### Advanced settings
 
-Select Advance setting to configure conditions and apply color to the cells based on that. Click [here](/visualizing-data/visualization-widgets/grid/#how-to-apply-conditional-formatting-in-grid) for more details. 
+Select Advanced settings to configure conditions and apply color to the cells based on that. Click [here](/visualizing-data/visualization-widgets/grid/#how-to-apply-advanced-settings-in-grid) for more details. 
 
-![Advance settings](/static/assets/visualizing-data/visualization-widgets/images/grid/advance-settings.png)
+![Advanced settings](/static/assets/visualizing-data/visualization-widgets/images/grid/advanced-settings.png)
 
-![Advance settings Customization](/static/assets/visualizing-data/visualization-widgets/images/grid/advancesettings-customization.png)
+![Advanced settings Customization](/static/assets/visualizing-data/visualization-widgets/images/grid/advancesettings-customization.png)
 
 ### Link
 
@@ -567,23 +567,23 @@ Select Advance setting to configure conditions and apply color to the cells base
 
 To configure the linking to URL or dashboard with the widget using its settings. For more details, refer to the [Linking](/visualizing-data/working-with-widgets/linking-urls-and-dashboards/).
 
-## How to apply conditional formatting in grid
+## How to apply advanced settings in grid
 
-If you have the requirement to highlight any data based on some conditions, you have to enable the advanced formatting option.
+If you have the requirement to highlight any data based on some conditions, you have to enable the advanced settings option.
 
-### How to enable advanced formatting
+### How to enable advanced settings
 
-In the `properties` pane, under the `Formatting section`, click the `Advanced Setting` radio button. 
+In the `properties` pane, under the `Formatting section`, click the `Advanced Settings` radio button. 
 
-![Enable Advanced Setting](/static/assets/visualizing-data/visualization-widgets/images/grid/advanced-setting.png)
+![Enable Advanced Settings](/static/assets/visualizing-data/visualization-widgets/images/grid/enable-advanced-settings.png)
 
-This will open the `Conditional Formatting` dialog.
+This will open the `Advanced Settings` dialog.
 
-![Conditional Formatting dialog](/static/assets/visualizing-data/visualization-widgets/images/grid/conditional-formatting-dialog.png)
+![Advanced Settings dialog](/static/assets/visualizing-data/visualization-widgets/images/grid/advanced-settings.png)
 
 ### Color types
 
-**Gradient:** You can customize the cell background color of the grid columns using gradient-based conditional formatting. This is the default mode.
+**Gradient:** You can customize the cell background color of the grid columns using gradient-based advanced settings. This is the default mode.
 
 **Rule based:** This allows you to customize the cell color and the text style of the grid columns.
 

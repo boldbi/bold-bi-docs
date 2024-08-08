@@ -38,7 +38,7 @@ You need to input the port number, location, and site name to host Bold BI Enter
 
 ![Installation Chromium Packages](/static/assets/installation-and-deployment/images/installation-chromium-packages.png)  
 
-> **NOTE:** If you encounter any issues with your internet connection or lack one, deselect the Chromium Packages download option and proceed with the installation. For manual installation of the Chromium Packages, refer to [this guide](/faq/how-to-install-chromium-packages-manually/).
+> **NOTE:** If you encounter any issues with your internet connection or lack one, deselect the Chromium Packages download option and proceed with the installation. For manual installation of the Chromium Packages, refer to [this guide](https://support.boldbi.com/kb/article/16581/how-to-install-chromium-packages-manually).
 
 ## Client libraries
 

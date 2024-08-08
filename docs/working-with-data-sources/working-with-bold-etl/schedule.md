@@ -19,7 +19,7 @@ Data refresh can be initiated on demand by selecting the **Run Now** option in t
 
 ![Source](/static/assets/working-with-etl/images/etl_s2.png)
 
- **Note:** ``Run Now`` option only works if we save the ``Project`` in ``Load`` tab.
+ > **Note:** ``Run Now`` option only works if we save the ``Project`` in ``Load`` tab.
 
 ## Interval Schedule:
 

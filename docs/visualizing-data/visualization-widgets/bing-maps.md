@@ -45,7 +45,7 @@ To enable Bing Maps in your enterprise build, follow these steps:
 
 Go to the UMS Configuration Settings page and choose `config.json` in the Search your files drop-down, using this URL `{domain_name}/ums/administration/config-editor`.
 
- ![Configuration Settings](/static/assets/faq/images/configuration-settings-page.png)
+![Configuration Settings](/static/assets/visualizing-data/visualization-widgets/images/bing-maps/configuration-settings-page.png)
 
 Set the value of the key `Widget:BingMap:Enable` to true.
 
@@ -55,13 +55,13 @@ Set your Bing Maps Key in the `key` field in `config.json`.
 
 ![Bing Map Configuration](/static/assets/visualizing-data/visualization-widgets/images/bing-maps/configjson-map-key.png)
 
-After completing the above changes, To learn [how to restart the Bold BI](/faq/how-to-restart-the-bold-bi-embedded-application/) application.
+After completing the above changes, To learn [how to restart the Bold BI](https://support.boldbi.com/kb/article/16634/how-to-restart-the-bold-bi-embedded-application) application.
 
 ### Bold BI version 5.1.55 or later
 
 Go to the UMS Configuration Settings page and select `config.xml` in the "Search your files" drop-down. Use this URL: `{domain_name}/ums/administration/config-editor`.
 
- ![Configuration Settings](/static/assets/faq/images/configurationxml-page.png)
+![Configuration Settings](/static/assets/visualizing-data/visualization-widgets/images/bing-maps/configurationxml-page.png)
 
 Set the value of the key `<widget><BingMap><Enable>` to true.
 
@@ -71,7 +71,7 @@ Set your Bing Maps Key in the `<key>` field in `config.xml`.
 
 ![Bing Map Configuration](/static/assets/visualizing-data/visualization-widgets/images/bing-maps/configxmlsettings-map-key.png)
 
-After completing the above changes, To learn [how to restart the Bold BI](/faq/how-to-restart-the-bold-bi-embedded-application/) application.
+After completing the above changes, To learn [how to restart the Bold BI](https://support.boldbi.com/kb/article/16634/how-to-restart-the-bold-bi-embedded-application) application.
 
 ### Bold BI version 4.2.68 or later
 

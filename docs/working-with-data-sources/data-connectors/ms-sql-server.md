@@ -93,7 +93,7 @@ To connect the SQL server database in [extract](/working-with-data-sources/data-
 5. Choose a relevant time interval from the **Refresh Settings** dropdown menu for refreshing the data source periodically.  Refer to [Refresh Settings](/working-with-data-sources/data-connectors/ms-sql-server/#sql-data-source-refresh-settings) to learn more.  
 ![Connect data source in Extract mode](/static/assets/working-with-datasource/data-connectors/images/SQLDataSource/connect-ds-in-extract.png)
 
-6. Click **Connect** Extract Data dialog opens. This dialog has two modes of connection either via Table or [Custom query](/faq/working-with-custom-query-extract-mode-in-bold-bi/). Under custom query option, write the required query and click **Connect**.
+6. Click **Connect** Extract Data dialog opens. This dialog has two modes of connection either via Table or [Custom query](https://support.boldbi.com/kb/article/16675/working-with-custom-query-extract-mode-in-bold-bi). Under custom query option, write the required query and click **Connect**.
 Under Table option, this dialog displays list of tables and views in treeview. Select the required table(s) or view(s) from treeview to use in the designer.
 ![Preview](/static/assets/working-with-datasource/data-connectors/images/common/Preview_Extract.png#max-width=100%)
 
