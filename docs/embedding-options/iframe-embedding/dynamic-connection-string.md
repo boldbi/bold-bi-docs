@@ -389,7 +389,6 @@ Please enter the data source connection string in JSON format in the Custom Attr
           "UserName": "",
           "Password": "",
           "Port": "",
-          "TrustServerCertificate": "",
           "AdvancedSettings": "",
           "CommandTimeout": "",
           "Schema":""    

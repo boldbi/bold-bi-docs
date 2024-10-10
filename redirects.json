@@ -50183,5 +50183,17 @@
   {
     "fromPath": "/deploying-bold-bi/deploying-in-docker/bold-bi-in-docker/",
     "toPath": "/deploying-bold-bi/deploying-on-docker/bold-bi-on-docker/"
+  },
+  {
+    "fromPath": "/multi-tenancy/site-administration/api-reference/",
+    "toPath": "/multi-tenancy/api-reference/"
+  },
+  {
+    "fromPath": "/artificial-intelligence-and-machine-learning/qna-widget/qna-widget/",
+    "toPath": "/artificial-intelligence-and-machine-learning/qna-widget/"
+  },
+  {
+    "fromPath": "/visualizing-data/visualization-widgets/qna-widget/",
+    "toPath": "/artificial-intelligence-and-machine-learning/qna-widget/"
   }
 ]

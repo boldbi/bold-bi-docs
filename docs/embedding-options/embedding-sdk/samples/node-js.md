@@ -154,7 +154,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/nodejs-sample
 
     ```js
     <head>  
-        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v7.10.16/boldbi-embed.js"></script>
+        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v8.1.41/boldbi-embed.js"></script>
     </head>
     <body onload="embedSample();">
         <div id="dashboard"></div>

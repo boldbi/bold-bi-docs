@@ -16,7 +16,7 @@ Please follow these steps to embed multiple dashboards and widgets in your appli
 
     ```js
     <head>  
-        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v7.10.16/boldbi-embed.js"></script>
+        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v8.1.41/boldbi-embed.js"></script>
     </head>
     ```
 
@@ -42,14 +42,9 @@ Please follow these steps to embed multiple dashboards and widgets in your appli
                     serverUrl: "http://localhost:51777/bi/site/site1",
                     dashboardPath: "/Sales/Sales Analysis Dashboard",               
                     embedContainerId: "dashboard_container",
-                    embedType: BoldBI.EmbedType.Component,
-                    mode: BoldBI.Mode.View,
-                    height: "800px",
-                    width: "1200px",
                     authorizationServer: {
                         url: "http://example.com/embeddetail/get"
-                    },
-                    expirationTime: "100000",
+                    }
                 });
                 dashboardInstance.loadDashboard();
 
@@ -57,14 +52,9 @@ Please follow these steps to embed multiple dashboards and widgets in your appli
                     serverUrl: "http://localhost:51777/bi/site/site1",
                     dashboardPath: "/Sales/Sales Analysis Dashboard",               
                     embedContainerId: "widget1_container",
-                    embedType: BoldBI.EmbedType.Component,
-                    mode: BoldBI.Mode.View,
-                    height: "800px",
-                    width: "1200px",
                     authorizationServer: {
                         url: "http://example.com/embeddetail/get"
-                    },
-                    expirationTime: "100000",
+                    }
                 });
                 widget1Instance.loadDashboardWidget("Top 10 Products By Sales");
 
@@ -72,14 +62,9 @@ Please follow these steps to embed multiple dashboards and widgets in your appli
                     serverUrl: "http://localhost:51777/bi/site/site1",
                     dashboardPath: "/Sales/Sales Analysis Dashboard",               
                     embedContainerId: "widget2_container",
-                    embedType: BoldBI.EmbedType.Component,
-                    mode: BoldBI.Mode.View,
-                    height: "800px",
-                    width: "1200px",
                     authorizationServer: {
                         url: "http://example.com/embeddetail/get"
-                    },
-                    expirationTime: "100000",
+                    }
                 });
                 widget2Instance.loadDashboardWidget("Sales By Country");
             }
@@ -116,11 +101,11 @@ Please follow these steps to embed multiple dashboards and widgets in your appli
     </tr>
     <tr>
     <td align="left">height</td>
-    <td align="left">Height of the dashboard designer in your page</td>
+    <td align="left">The height is an optional member of the API. If you do not specify a height for the API, it will automatically take the dimensions of your embedding container. If no value is provided, it will inherit the height from the dimensions of the parent container of the embedding. For more details please refer to this <a href="/embedding-options/embedding-sdk/embedding-api-reference/members/#height">link here.</a></td>
     </tr>
     <tr>
     <td align="left">width</td>
-    <td align="left">Width of the dashboard designer in your page</td>
+    <td align="left">The width is an optional member of the API. If you do not specify a width for the API, it will automatically take the dimensions of your embedding container. If no value is provided, it will inherit the width from the dimensions of the parent container of the embedding. For more details please refer to this <a href="/embedding-options/embedding-sdk/embedding-api-reference/members/#width">link here.</a></td>
     </tr>
     <tr>
     <td align="left">authorizationServer</td>
@@ -178,12 +163,12 @@ Please follow these steps to embed multiple dashboards and widgets in your appli
 </code></td>
 </tr>
 <tr>            
-<td><code>v7.10.16(latest)</code></td>             
+<td><code>v8.1.41(latest)</code></td>             
 <td><code>
 
 ```js
 <head> 
-    <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v7.10.16/boldbi-embed.js"></script>
+    <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v8.1.41/boldbi-embed.js"></script>
 </head>
 ```
 

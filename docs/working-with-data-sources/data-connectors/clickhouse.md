@@ -1,59 +1,58 @@
 ---
 layout: post
-title:     Clickhouse  –  Cloud BI Connector  |  Bold BI Docs
-description: Learn how to connect the clickhouse RDMS database with the Bold BI Cloud application in live mode and connect clickhouse data in the dashboard widget.
+title:     ClickHouse  –  Cloud BI Connector  |  Bold BI Docs
+description: Learn how to connect the ClickHouse RDMS database with the Bold BI Cloud application in live mode and connect ClickHouse data in the dashboard widget.
 canonical: "/working-with-data-sources/data-connectors/clickhouse/"
 platform: bold-bi
 documentation: ug
 ---
  
-# Connecting Bold BI to the Clickhouse Data Source
+# Connecting Bold BI to the ClickHouse Data Source
 
-The Bold BI Dashboard Designer supports connecting to the Clickhouse database using the SQL Query (C# API).
+The Bold BI designer allows you to connect with multiple ClickHouse data sources to visualize and analyze the data using interactive dashboards.
 
+## How to create ClickHouse data source
 
-## How to create Clickhouse data source
-
-To configure the Clickhouse data source, follow these steps: 
+To configure the ClickHouse data source, follow these steps: 
 
 1. Click on **Data Sources** in the configuration panel to add a new data connection.
 
-   ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/Clickhouse/DataSourcesIcon.png)
+   ![Data source icon](/static/assets/working-with-datasource/data-connectors/images/ClickHouse/DataSourcesIcon.png)
 
 2. Click on **CREATE NEW** to launch a new connection from the connection panel.
-3. Select the **Clickhouse** connection in the connection panel.
+3. Select the **ClickHouse** connection in the connection panel.
 
-   ![Choose data source](/static/assets/working-with-datasource/data-connectors/images/Clickhouse/ChooseDS.png)
+   ![Choose data source](/static/assets/working-with-datasource/data-connectors/images/ClickHouse/ChooseDS.png)
 
 > **NOTE:**  You can also create a data source from the home page by clicking on the **Data Sources** menu in the left menu panel and selecting **Create Data Source** from the data sources page.
 
-   ![Choose data source](/static/assets/working-with-datasource/data-connectors/images/Clickhouse/ChooseDS_server.png)
+   ![Choose data source](/static/assets/working-with-datasource/data-connectors/images/ClickHouse/ChooseDS_server.png)
 
-## Connect to Clickhouse
+## Connect to ClickHouse
 
-After clicking a data source, the NEW DATA SOURCE configuration panel opens. Follow the given steps to create the Clickhouse data source: 
+After clicking a data source, the NEW DATA SOURCE configuration panel opens. Follow the given steps to create the ClickHouse data source: 
 
 1. Enter a name and description (optional) for the data source.
 2. Enter a valid server or host name in the Server Name text box.
 3. Enter the username in the Username text box and the password in the Password text box.
 4. Enter the database name in the database text box.
-5. Click **Connect** to connect to the Clickhouse server with the configured details.
+5. Click **Connect** to connect to the ClickHouse server with the configured details.
 
-![Clickhouse Connection](/static/assets/working-with-datasource/data-connectors/images/Clickhouse/Clickhouse_Connection.png)
+![ClickHouse Connection](/static/assets/working-with-datasource/data-connectors/images/ClickHouse/Clickhouse_Connection.png)
 
 ### Data Preview
 
-1. The schema represents the collection list retrieved from the Clickhouse server. This dialog displays a list of schemas in the treeview and their corresponding values.
+1. The schema represents the collection list retrieved from the ClickHouse server. This dialog displays a list of schemas in the treeview and their corresponding values.
 
-   ![Treeview schema](/static/assets/working-with-datasource/data-connectors/images/Clickhouse/Treeview_schema.png)
+   ![Treeview schema](/static/assets/working-with-datasource/data-connectors/images/ClickHouse/Treeview_schema.png)
 
 2. Drag and drop any table and click the **update** button to preview the data.
 
-   ![Query designer](/static/assets/working-with-datasource/data-connectors/images/Clickhouse/QueryEditor_sql.png)
+   ![Query designer](/static/assets/working-with-datasource/data-connectors/images/ClickHouse/QueryEditor_sql.png)
 
 3. By default, the data design view opens with the design view. Switch to the code view by enabling the slider option in the tools pane in the data design view, as shown in the image below.
 
-   ![Codeview mode](/static/assets/working-with-datasource/data-connectors/images/Clickhouse/CodeViewMode.png)
+   ![Codeview mode](/static/assets/working-with-datasource/data-connectors/images/ClickHouse/CodeViewMode.png)
 
 4. Click **Save** to save the data source with a relevant name.
 
@@ -63,21 +62,21 @@ We have added support for **custom attributes and dashboard parameters** to the 
 
 **Custom Attribute**
 
-![Custom](/static/assets/working-with-datasource/data-connectors/images/Clickhouse/Custom.png)
+![Custom](/static/assets/working-with-datasource/data-connectors/images/ClickHouse/Custom.png)
 
 **Dashboard Parameter**
 
-![Dashboard Parameter](/static/assets/working-with-datasource/data-connectors/images/Clickhouse/Dashboardparameter.png)
+![Dashboard Parameter](/static/assets/working-with-datasource/data-connectors/images/ClickHouse/Dashboardparameter.png)
 
 >**Note:** Refer to the [Dashboard Parameter Documentation](https://help.boldbi.com/working-with-data-sources/dashboard-parameter/) and [Custom Attributes Documentation](https://help.boldbi.com/working-with-data-sources/configuring-custom-attribute/) for more details.
 
 > **NOTE:**  In future, you can edit the connection information using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 
-## Connecting Bold BI to Clickhouse Data Source via REST API
+## Connecting Bold BI to ClickHouse Data Source via REST API
 
 ### Prerequisites 
 
-The type while creating the data source needs to be clickhouse.
+The type while creating the data source needs to be ClickHouse.
 
 [Rest API - v4.0](/server-api-reference/v4.0/api-reference/)
 
@@ -100,7 +99,7 @@ The type while creating the data source needs to be clickhouse.
    <td>Port</br></br>
    <b>required</b> </td>
   <td><code>string</code></br></br>
-   Port number used to connect to clickhouse</br></br>
+   Port number used to connect to ClickHouse</br></br>
    </td>
    </tr>
    <tr>
@@ -225,7 +224,7 @@ The type while creating the data source needs to be clickhouse.
    <td>Port</br></br>
    <b>required</b> </td>
    <td><code>string</code></br></br>
-   Port number used to connect to clickhouse</br></br>
+   Port number used to connect to ClickHouse</br></br>
    </td>
    </tr>
    <tr>

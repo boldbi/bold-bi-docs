@@ -191,7 +191,7 @@ The sample has been provided in the following sections for `Blazor WebAssembly`,
 9. In the `Client project`, the following scripts and style sheets are mandatory to render the dashboard. Include the following code in your `\wwwroot\index.html` page of the `<head>` tag.
 
     ```js 
-    <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v7.10.16/boldbi-embed.js"></script>
+    <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v8.1.41/boldbi-embed.js"></script>
     ```
 
 10. Inside the `<body>` tag, create the DOM element with the id `dashboard` and implement a function to render the dashboard.

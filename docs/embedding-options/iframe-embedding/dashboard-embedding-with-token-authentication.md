@@ -140,6 +140,12 @@ If you want to set embed_expirationtime, you must set the embed_timestamp too in
 </tr>
 
 <tr>
+<td><code>hide_dashboard_edit</code></td>
+<td>Show/hide the dashboard edit icon. By default the icon will be shown only if user has the permission to edit the specific dashboard otherwise it doesn't shown.</td>
+<td>false</td>
+</tr>
+
+<tr>
 <td><code>embed_dashboard_favorite</code></td>
 <td>We have option to mark the dashboard as favorite. The default value is <strong>true</strong> and icon would show. To disable or hide the dashboard favorite icon from the toolbar, you can set the value of the <strong>embed_dashboard_favorite</strong> parameter to false.</td>
 <td>true</td>

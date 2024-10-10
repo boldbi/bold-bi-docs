@@ -14,7 +14,7 @@ This section explains how to collaborate with other users in the Bold BI cloud b
 
 The Collaboration feature in Bold BI allows users to write comments on a dashboard to share with other users who have access to the dashboard. It is useful for tracking events and providing insights into those events. Users can also add links to other dashboards or any external websites.
 
-Anyone with access to a dashboard can post, edit, reply, and delete comments, as well as mention users in those comments. When a comment is added to a dashboard, users who have notifications enabled in their profile will receive email and system notifications. You can learn more about notifications in [this](/working-with-dashboards/share-dashboards/notifications/) documentation.
+Anyone with access to a dashboard can post, edit, reply, and delete comments, as well as mention users in those comments. When a comment is added to a dashboard, users who have notifications enabled in their profile will receive email and system notifications. You can learn more about the [Notifications](/working-with-dashboards/share-dashboards/notifications/) in documentation.
 
 ## Post a new comment
 

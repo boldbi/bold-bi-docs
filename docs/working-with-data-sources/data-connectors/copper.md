@@ -30,7 +30,7 @@ Once you click the data source, the NEW DATA SOURCE configuration panel will ope
 1. Enter a name and description (optional) for the data source.
 2. Enter a valid Copper REST API endpoint in the URL textbox. Refer to the [Copper API documentation](https://developer.copper.com/?version=latest) for more details.
 
-    Example: [https://api.prosperworks.com/developer_api/v1/leads/search](https://api.prosperworks.com/developer_api/v1/leads/search)
+    Example: `https://api.prosperworks.com/developer_api/v1/leads/search`
 
 3. Select **POST** method for the REST API in **Method** combo box.
 4. Select either *Parameter(s)* or *Raw* under **Request Body**. Set *page_size* as key and set your page size value.

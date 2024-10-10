@@ -42,7 +42,9 @@ Bold BI cloud provides support for controlling which users can see specific dash
 Bold BI does not have access to the following information unless granted limited access by the customer for the purposes of support and troubleshooting:   
 •	Tenant and its user’s information  
 •	App configuration such as site setting, subscription details, and more.
-•	Data sources and dashboard details has been added to the Bold BI application.    
+•	Data sources and dashboard details has been added to the Bold BI application.
+
+>**Note:** Bold BI only requires the minimum necessary permissions to read customer data, strictly adhering to the principle of least privilege. This access is used solely for troubleshooting and support, which minimizes the risk of unauthorized access and ensures data protection.
 
 ### Azure database security
 Security is a major concern when it comes to managing databases, and it has always been a priority for Azure SQL Database. Azure SQL Database supports connection security through the use of firewall rules and connection encryption. All Azure SQL Databases are configured with a firewall rule that only allows connections from the Bold BI application.  

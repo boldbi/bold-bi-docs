@@ -42,7 +42,7 @@ The Bold BI supports the following data connection types such that the structure
             <br> <a href="/working-with-data-sources/data-connectors/mariadb/"> MariaDB</a>
             <br> <a href="/working-with-data-sources/data-connectors/ms-sql-server/"> Microsoft SQL</a>
             <br> <a href="/working-with-data-sources/data-connectors/mysql/"> MySQL</a>
-            <br> <a href="/working-with-data-sources/data-connectors/clickhouse/"> Clickhouse</a>
+            <br> <a href="/working-with-data-sources/data-connectors/clickhouse/"> ClickHouse</a>
             <br> <a href="/working-with-data-sources/data-connectors/oracle/"> Oracle</a>
             <br> <a href="/working-with-data-sources/data-connectors/postgresql/"> PostgreSQL</a>
             <br> <a href="/working-with-data-sources/data-connectors/presto/"> Presto</a>

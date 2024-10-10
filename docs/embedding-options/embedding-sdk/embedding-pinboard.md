@@ -16,7 +16,7 @@ Follow these steps to embed a pinboard in your application.
 
     ```js
     <head> 
-        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v7.10.16/boldbi-embed.js"></script>
+        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v8.1.41/boldbi-embed.js"></script>
     </head>
     ```
 
@@ -45,13 +45,11 @@ Follow these steps to embed a pinboard in your application.
                     serverUrl: "http://localhost:51777/bi/site/site1",
                     pinboardName: "pinboardName",                
                     embedContainerId: "pinboard_container",// This should be the container id where you want to embed the pinboard.
-                    embedType: BoldBI.EmbedType.Component,
                     height: "800px",
                     width: "1200px",
                     authorizationServer: {
                         url: "http://example.com/embeddetail/get"
                     },
-                    expirationTime: "100000",
                 });
                 boldbiEmbedInstance.loadPinboard();
             }
@@ -145,12 +143,12 @@ Follow these steps to embed a pinboard in your application.
 </code></td>
 </tr>
 <tr>            
-<td><code>v7.10.16(latest)</code></td>            
+<td><code>v8.1.41(latest)</code></td>            
 <td><code>
 
 ```js
 <head> 
-    <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v7.10.16/boldbi-embed.js"></script>
+    <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v8.1.41/boldbi-embed.js"></script>
 </head>
 ```
 

@@ -16,7 +16,7 @@ Follow these steps to embed a dashboard with view in your application.
 
     ```js
     <head>
-        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v7.10.16/boldbi-embed.js"></script>
+        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v8.1.41/boldbi-embed.js"></script>
     </head>
     ```
 
@@ -45,9 +45,7 @@ Follow these steps to embed a dashboard with view in your application.
                     serverUrl: "http://localhost:51777/bi/site/site1",
                     dashboardId : "755e99c7-f858-4058-958b-67577b283309",
                     viewId: "3ff6775c-d70d-492e-972a-4032a042a846",                
-                    embedContainerId: "dashboard_container",// This should be the container id where you want to embed the dashboard designer
-                    height: "800px",
-                    width: "1200px",
+                    embedContainerId: "dashboard_container",// This should be the container id where you want to embed the dashboard with view
                     authorizationServer: {
                         url: "http://example.com/embeddetail/get"
                     }
@@ -70,9 +68,7 @@ Follow these steps to embed a dashboard with view in your application.
                     serverUrl: "http://localhost:51777/bi/site/site1",
                     dashboardId : "755e99c7-f858-4058-958b-67577b283309",
                     viewName : "filtercountry",
-                    embedContainerId: "dashboard_container",// This should be the container id where you want to embed the dashboard designer
-                    height: "800px",
-                    width: "1200px",
+                    embedContainerId: "dashboard_container",// This should be the container id where you want to embed the dashboard with view
                     authorizationServer: {
                         url: "http://example.com/embeddetail/get"
                     }
@@ -128,11 +124,11 @@ Follow these steps to embed a dashboard with view in your application.
     </tr>
     <tr>
     <td align="left">height</td>
-    <td align="left">Height of the dashboard designer in your page</td>
+    <td align="left">The height is an optional member of the API. If you do not specify a height for the API, it will automatically take the dimensions of your embedding container. If no value is provided, it will inherit the height from the dimensions of the parent container of the embedding. For more details please refer to this <a href="/embedding-options/embedding-sdk/embedding-api-reference/members/#height">link here.</a></td>
     </tr>
     <tr>
     <td align="left">width</td>
-    <td align="left">Width of the dashboard designer in your page</td>
+    <td align="left">The width is an optional member of the API. If you do not specify a width for the API, it will automatically take the dimensions of your embedding container. If no value is provided, it will inherit the width from the dimensions of the parent container of the embedding. For more details please refer to this <a href="/embedding-options/embedding-sdk/embedding-api-reference/members/#width">link here.</a></td>
     </tr>
     <tr>
     <td align="left">authorizationServer</td>
@@ -155,12 +151,12 @@ Follow these steps to embed a dashboard with view in your application.
 </tr></thead>
 <tbody>  
 <tr>            
-<td><code>v7.10.16(latest)</code></td>            
+<td><code>v8.1.41(latest)</code></td>            
 <td><code>
 
 ```js
 <head> 
-    <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v7.10.16/boldbi-embed.js"></script>
+    <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v8.1.41/boldbi-embed.js"></script>
 </head>
 ```
 

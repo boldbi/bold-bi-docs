@@ -266,8 +266,8 @@ Below is an example code to configure the `widgetconfig.json` file for the Syncf
     "guid": "b0d5348d-f625-4b78-8db9-c5ed9d38eb45",
     "category": "Miscellaneous",
 	"version": "4.2.0.0",
-	"srcFile": "src/sunburst.js",
-    "dependencies": { "scripts": [ "src/ej.sunburstchart.min.js" ] },
+	"srcFile": "src/sourcefile.js",
+    "dependencies": { "scripts": [ "src/ej.widget.all.min.js" ] },
     "description": "Sunburst Chart is useful for visualizing hierarchical data. The center circle represents the root level in the hierarchy, with outer circles representing higher levels of the hierarchy.",
     "dataFields": [
         { 
@@ -434,6 +434,23 @@ Below is an example code to configure the `widgetconfig.json` file for the Syncf
 }
 
   ```
+
+### Adding Dependency Script Files
+
+To add the required dependency script file, visit [Essential JS 1 Custom Script Generator](https://csg.syncfusion.com/) where you can find the custom widget's min files. For example, you can select the `ejSunBurstChart` and download the script file as shown in the below image:
+
+![SunBurst Custom Script Generator](/static/assets/visualizing-data/visualization-widgets/images/custom-widget/sunburst-script-generator.png)
+
+> **NOTE:** Visit [Syncfusion Custom Resource Generator](https://crg.syncfusion.com/) where you can find the custom widget's min files for Syncfusion EJ2 Components.
+
+Once downloaded, extract the folder to locate the `ej.widget.all.min.js` file. Paste this `ej.widget.all.min.js` file inside the `src` folder which is available in the custom widgets root directory, as shown in the below image:
+
+![Sunburst min files](/static/assets/visualizing-data/visualization-widgets/images/custom-widget/sunburst-min-files.png)
+
+## Replace the Icon Image
+
+Replace the appropriate custom widget icon image located in the `icon` folder within the root directory of the custom widgets.
+
 ## Configuring the widget source file 
 
 The source file is used to embed the user-defined widget within the dashboard. Refer to the API available in the source file below.

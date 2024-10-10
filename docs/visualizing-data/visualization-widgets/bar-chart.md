@@ -157,6 +157,12 @@ Click `Yes` to enable the option. If you click `No`, a single value will be adde
 
 ![Drilled view](/static/assets/visualizing-data/visualization-widgets/images/bar-chart/drilled-view.png)
 
+#### Drill up
+
+Once you've drilled down, you can drill up to the previous view using the breadcrumb navigator located at the top of the widget.
+
+![Drill_up view](/static/assets/visualizing-data/visualization-widgets/images/bar-chart/drill_up-view.png)
+
 ### Adding fields to Row
 
 Please drag and drop the elements from the sections to the `Row`.

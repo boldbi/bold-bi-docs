@@ -140,3 +140,11 @@ Syntax: `@{{:ParameterName}}`
 When a simple dashboard is created here, data is retrieved based on the condition for column `id` as given in the dashboard parameter sectors.
 
 >**Note**: The dashboard parameters can be used for the creation of all data sources. Please refer to this [Datasource connector page](/working-with-data-sources/data-connectors/) to create a data source using a **dashboard parameter**.
+
+## Widgets
+
+Dashboard parameters can be directly assigned to the following widgets from the parameters section.
+- [Combo Box](/visualizing-data/visualization-widgets/combo-box/)
+- [Date Picker](/visualizing-data/visualization-widgets/date-picker/)
+
+For other widgets, we can create [expressions](/working-with-data-sources/dashboard-parameter/uses-of-dashboard-parameters/#expression) using the dashboard parameter and assign them to any widgets.

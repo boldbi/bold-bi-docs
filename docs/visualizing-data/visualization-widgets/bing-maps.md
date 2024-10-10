@@ -182,6 +182,12 @@ NOTE: If you click `No`, a single value will be added to the `Location Name` fie
 
 ![Drilled view](/static/assets/visualizing-data/visualization-widgets/images/bing-maps/drilled-view.png)
 
+#### Drill up
+
+Once you've drilled down, you can drill up to the previous view using the breadcrumb navigator located at the top of the widget.
+
+![Drill up](/static/assets/visualizing-data/visualization-widgets/images/bing-maps/drillup.png)
+
 ## Hidden Column
 
 Hidden columns are useful when we don't want certain fields to participate in the visualization, but only to be used for [linking](#linking), [filtering](#filtering) and [view data](#view-data). 

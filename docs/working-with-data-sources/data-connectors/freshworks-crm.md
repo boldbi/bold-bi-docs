@@ -78,7 +78,7 @@ The period of time before the next refresh call is triggered. This will automati
 
 Replace &lt;:your_domain&gt; with your Freshworks CRM domain.
 
-[https://your_domain.freshsales.io/leads/view/8000328940](https://your_domain.freshsales.io/leads/view/8000328940)   
+`https://your_domain.freshsales.io/leads/view/8000328940`
 
 ### Sample queries
 

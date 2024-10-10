@@ -16,7 +16,7 @@ Follow these steps to embed a dashboard widget in your application.
 
     ```js
     <head> 
-        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v7.10.16/boldbi-embed.js"></script>
+        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v8.1.41/boldbi-embed.js"></script>
     </head>
     ```
 
@@ -45,14 +45,9 @@ Follow these steps to embed a dashboard widget in your application.
                     serverUrl: "http://localhost:51777/bi/site/site1",
                     dashboardId: "9a4b8ddb-606f-4acd-8c53-8ccdcaa92a87",
                     embedContainerId: "dashboard-container",// This should be the container id where you want to embed the dashboard designer
-                    embedType: BoldBI.EmbedType.Component,
-                    mode: BoldBI.Mode.View,
-                    height: "800px",
-                    width: "1200px",
                     authorizationServer: {
                         url: "http://example.com/embeddetail/get"
-                    },
-                    expirationTime: "100000",
+                    }
                 });
                 boldbiEmbedInstance.loadDashboardWidget("Sales By Country"); // Pass widget name as argument to loadDashboardWidget function 
             }
@@ -72,15 +67,10 @@ Follow these steps to embed a dashboard widget in your application.
                 var boldbiEmbedInstance = BoldBI.create({
                     serverUrl: "http://localhost:51777/bi/site/site1",
                     dashboardId: "9a4b8ddb-606f-4acd-8c53-8ccdcaa92a87",
-                    embedContainerId: "dashboard-container",// This should be the container id where you want to embed the dashboard designer
-                    embedType: BoldBI.EmbedType.Component,
-                    mode: BoldBI.Mode.View,
-                    height: "800px",
-                    width: "1200px",
+                    embedContainerId: "dashboard-container",// This should be the container id where you want to embed the widget
                     authorizationServer: {
                         url: "http://example.com/embeddetail/get"
-                    },
-                    expirationTime: "100000",
+                    }
                 });
                 boldbiEmbedInstance.loadDashboardWidget("efbf2999-f7e7-4831-a492-53c4df394af0"); // To get widget id, please refer `How to get Widget ID`
             }
@@ -115,11 +105,11 @@ Follow these steps to embed a dashboard widget in your application.
     </tr>
     <tr>
     <td align="left">height</td>
-    <td align="left">Height of the dashboard designer in your page</td>
+    <td align="left">The height is an optional member of the API. If you do not specify a height for the API, it will automatically take the dimensions of your embedding container. If no value is provided, it will inherit the height from the dimensions of the parent container of the embedding. For more details please refer to this <a href="/embedding-options/embedding-sdk/embedding-api-reference/members/#height">link here.</a></td>
     </tr>
     <tr>
     <td align="left">width</td>
-    <td align="left">Width of the dashboard designer in your page</td>
+    <td align="left">The width is an optional member of the API. If you do not specify a width for the API, it will automatically take the dimensions of your embedding container. If no value is provided, it will inherit the width from the dimensions of the parent container of the embedding. For more details please refer to this <a href="/embedding-options/embedding-sdk/embedding-api-reference/members/#width">link here.</a></td>
     </tr>
     <tr>
     <td align="left">authorizationServer</td>
@@ -177,12 +167,12 @@ Follow these steps to embed a dashboard widget in your application.
 </code></td>
 </tr>
 <tr>            
-<td><code>v7.10.16(latest)</code></td>            
+<td><code>v8.1.41(latest)</code></td>            
 <td><code>
 
 ```js
 <head> 
-    <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v7.10.16/boldbi-embed.js"></script>
+    <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v8.1.41/boldbi-embed.js"></script>
 </head>
 ```
 

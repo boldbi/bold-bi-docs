@@ -67,7 +67,7 @@ This section will explore how to take backup and restore Bold BI persistent reso
 3. Azure Blob Storage
 4. ReadWriteMany Storage- SMB/NFS/EFS/File Store 
 
-### 1. Physical or Virtual Machine
+### Physical or Virtual Machine
 
 When using the App_Data storage type as File Storage, the App_Data information will be saved on the hosting machine itself. Therefore, it is important to take a backup of the App_Data location or the entire machine as needed. For a physical machine, you can take a backup from the following location:
 
@@ -84,11 +84,11 @@ If you are using a virtual machine (VM), you can either take a complete snapshot
 | Azure VM                    | Backup: [Snapshot and Copy Managed Disk](https://learn.microsoft.com/en-us/azure/virtual-machines/snapshot-copy-managed-disk?tabs=portal) <br> Restore: [Restoring a VM from Snapshot](https://learn.microsoft.com/en-us/azure/virtual-machines/snapshot-copy-managed-disk?tabs=portal) |
 | GCP VM                      | Backup: [Creating Windows Persistent Disk Snapshot](https://cloud.google.com/compute/docs/instances/windows/creating-windows-persistent-disk-snapshot) <br> Restore: [Restoring Snapshot](https://cloud.google.com/compute/docs/disks/restore-snapshot) |
 
-### 2. Database Server
+### Database Server
 
 For DB server backup and restore, refer to the following documentation link based on your DB kind and type.
 
-#### On-premise DB Server
+**On-premise DB Server**
 
 | Database Type               | Backup and Restore Documentation                                                     |
 |-----------------------------|-------------------------------------------------------------------------------------|
@@ -96,7 +96,7 @@ For DB server backup and restore, refer to the following documentation link base
 |  MS SQL         | [Backup and Restore of SQL Server Databases](https://learn.microsoft.com/en-us/sql/relational-databases/backup-restore/back-up-and-restore-of-sql-server-databases?view=sql-server-ver16)  |
 |  My SQL          | [Backup and Recovery Documentation](https://dev.mysql.com/doc/refman/8.0/en/backup-and-recovery.html) |
 
-#### Managed DB Server
+**Managed DB Server**
 
 | Managed Database   |  Database Type| Backup and Restore Documentation                                                     |
 |-----------------------------|-------------------------------------------------------------------------------------|----------------|
@@ -104,14 +104,14 @@ For DB server backup and restore, refer to the following documentation link base
 | Azure   | My SQL <br><br><br> MS SQL <br><br><br> PostgreSQL |Backup: [Backup MySQL Database](https://learn.microsoft.com/en-us/azure/backup/backup-azure-mysql-flexible-server) <br> Restore: [Restore MySQL Database](https://learn.microsoft.com/en-us/azure/backup/backup-azure-mysql-flexible-server-restore) <br><br> Backup: [Backup MSSQL Database](https://learn.microsoft.com/en-us/azure/backup/backup-sql-server-database-azure-vms) <br> Restore: [Restore MSSQL Database](https://learn.microsoft.com/en-us/azure/backup/restore-sql-database-azure-vm)<br><br>Backup: [Backup PostgreSQL Database](https://learn.microsoft.com/en-us/azure/backup/backup-azure-database-postgresql-flex) <br> Restore: [Restore PostgreSQL Database](https://learn.microsoft.com/en-us/azure/backup/restore-azure-database-postgresql-flex) |
 | GCP  | My SQL <br><br><br> MS SQL <br><br><br> PostgreSQL   | Backup: [Backup MySQL Database](https://cloud.google.com/sql/docs/mysql/backup-recovery/backing-up) <br> Restore: [Restore MySQL Database](https://cloud.google.com/sql/docs/mysql/backup-recovery/restoring)<br><br> Backup: [Backup MSSQL Database](https://cloud.google.com/sql/docs/sqlserver/backup-recovery/backups) <br> Restore: [Restore MSSQL Database](https://cloud.google.com/sql/docs/sqlserver/backup-recovery/restore)<br><br>Backup: [Backup PostgreSQL Database](https://cloud.google.com/sql/docs/postgres/backup-recovery/backups) <br> Restore: [Restore PostgreSQL Database](https://cloud.google.com/sql/docs/postgres/backup-recovery/restore) | 
 
-### 3. Azure Blob Storage
+### Azure Blob Storage
 
 If you have configured Azure Blob storage when setting up the site, it is necessary to back up the Azure Blob.
 | Azure Blob    |
 |-----------------------------|
 | Backup: [Configure and Manage Blob Backup](https://learn.microsoft.com/en-us/azure/backup/blob-backup-configure-manage) <br> Restore: [Blob Restore](https://learn.microsoft.com/en-us/azure/backup/blob-restore) |
 
-### 4. ReadWriteMany Storage
+### ReadWriteMany Storage
 
 For Kubernetes deployment, you need to mount the ReadWriteMany persistent volume to store Bold BI App_Data information. You can find the documentation link for backing up and restoring the ReadWriteMany storage volume based on your cloud provider.
 
@@ -125,7 +125,7 @@ For Kubernetes deployment, you need to mount the ReadWriteMany persistent volume
 
 This section describes the list of possible changes required in the environment and Bold BI application level for using restored persistent data resources.
 
-### 1. Restore the App_Data
+### Restore the App_Data
 
 | Deployed In    | Restore                                                                                   |
 |----------------|-------------------------------------------------------------------------------------------|
@@ -134,7 +134,7 @@ This section describes the list of possible changes required in the environment 
 | Docker          | Replace the backed-up files in the container-mounted host path.                              |
 | Kubernetes      | Replace the restored persistent volume Azure File Share/EFS filesystem/Google File-store details in the deployment manifest or Helm chart, and redeploy the application. |
 
-### 2. Update Database Connection String
+### Update Database Connection String
 
 To update the database connection string, please refer to the guidance document below to reset the database connection for different environments.
 
@@ -144,7 +144,7 @@ If you have backed up the databases on another server with different names, you 
 
 [Reset Application Database](https://help.boldbi.com/utilities/bold-bi-command-line-tools/reset-application-database/).
 
-### 3. Change Domain Mapping or IP Binding
+### Change Domain Mapping or IP Binding
 
 - If you use a domain name and restore the server from the snapshot, you can map the new IP with the same domain name.
 - If you are hosting the application using the IP address and the server IP has changed, you need to update the IP address in the UMS administration page. Navigate to `URL/ums/administration` in the browser and ensure that the new URL is updated. If not, update the new URL on the administration page and save the changes.

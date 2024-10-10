@@ -19,13 +19,9 @@ var dashboard = BoldBI.create({
      serverUrl: "http://localhost:51777/bi/site/site1",
      dashboardId: "755e99c7-f858-4058-958b-67577b283309",
      embedContainerId: "dashboard_container",// This should be the container id where you want to embed the dashboard
-     embedType: BoldBI.EmbedType.Component,
-     height: "800px",
-     width: "1200px",
      authorizationServer: {
      url: "http://example.come/authorize/server"
-     },
-     expirationTime: "100000",     
+     }    
 });   
 ```
 
@@ -227,18 +223,20 @@ This method will load multiple widgets of the current dashboard with a single in
 **Example** 
    
 ```js
-<div id="widget1"></div> 
-<div id="widget2"></div> 
-<div id="widget3"></div>     
+<div id="dashboard"></div>
+<div id="widget1" style="height:500px;width:500px"></div> 
+<div id="widget2" style="height:500px;width:500px"></div> 
+<div id="widget3" style="height:500px;width:500px"></div>    
 var dashboard = BoldBI.create({
    dashboardId: "5cb065f7-dabb-4b0c-9b45-c60a5730e963",
+   embedContainerId: "dashboard",
    widgetList: [{widgetName: "Medal details by Country", containerId: "widget1" },
    {widgetName: "Total Medals by Country", containerId: "widget2" },
    {widgetName: "Country", containerId: "widget3" }],
   });
 dashboard.loadMultipleWidgets();
 ```
->**Note:** To embed the necessary widgets, the client application should create a container where the widgets will be displayed.
+>**Note:** To embed the necessary widgets, the client application should create a container where the widgets will be displayed. Height and Width must be added within the widget container. We have enhanced the performance of loading multiple widgets in the javascript embedding. Please note that support will work and take effect if the embed SDK Wrapper and Bold BI Server are on the same version effectively from v8.1.41
 
 ## loadView()
     
@@ -368,6 +366,25 @@ This method will update the current data source page using the outside page.
 var instance = BoldBI.getInstance("container"); //container -> embed container id
 instance.updateDatasource();   
 ```
+## updateDashboardTheme()
+
+This method allows for updating the custom theme of the dashboard in the embedding without needing to reload the Bold BI instance. It is essential to provide the custom theme name as an argument.
+
+**Syntax**
+
+```js
+var instance = BoldBI.getInstance("container"); //container -> embed container id
+instance.updateDashboardTheme(dashboardtheme); //dashboardtheme -> name of the theme in BI server
+```
+
+**Example**
+
+```js
+var instance = BoldBI.getInstance("dashboard");
+instance.updateDashboardTheme("dark");
+```
+
+> **NOTE:** In order to set a custom theme, you should upload the custom theme files in Bold BI Server. Please refer to this [link](/site-administration/look-and-feel-settings-in-embedded-analytics/#custom-theme) for more information on how to upload custom theme files.
 
 ## updateFilters()
     

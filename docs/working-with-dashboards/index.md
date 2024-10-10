@@ -35,3 +35,5 @@ You can explore working with the dashboard in detail here:
 [Share Dashboards](/working-with-dashboards/share-dashboards/)
 
 [Dashboard Styles](/working-with-dashboards/dashboard-styles/)
+
+[Dynamic Translator](/working-with-dashboards/dynamic-translator/)

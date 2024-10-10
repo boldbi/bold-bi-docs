@@ -29,7 +29,7 @@ Once you click the data source, the NEW DATA SOURCE configuration panel will ope
 1. Enter a name and description (optional) for the data source.
 2. Enter a valid Insightly REST API endpoint in the URL textbox. Refer to the [Insightly API documentation](https://api.insightly.com/v3.0/Help) for more details.
 
-    Example: [https://api.insightly.com/v3.0/opportunities](https://api.insightly.com/v3.0/opportunities)
+    Example: `https://api.insightly.com/v3.0/opportunities`
 
 3. Select the **GET** method for the REST API in the **Method** combo box.
 4. In **Max Rows**, enter the maximum number of rows to be fetched from the Insightly data source. This value is used to fetch the data from Insightly data source via pagination.

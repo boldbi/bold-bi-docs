@@ -23,7 +23,7 @@ You may also watch the below video to learn more about embedding Bold BI dashboa
 
     ```js
     <head>  
-        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v7.10.16/boldbi-embed.js"></script>
+        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v8.1.41/boldbi-embed.js"></script>
     </head>
     ```
 
@@ -52,14 +52,9 @@ You may also watch the below video to learn more about embedding Bold BI dashboa
                     serverUrl: "http://localhost:51777/bi/site/site1",
                     dashboardId: "755e99c7-f858-4058-958b-67577b283309",                
                     embedContainerId: "dashboard_container",// This should be the container id where you want to embed the dashboard
-                    embedType: BoldBI.EmbedType.Component,
-                    mode: BoldBI.Mode.View,
-                    height: "800px",
-                    width: "1200px",
                     authorizationServer: {
                         url: "http://example.com/embeddetail/get"
-                    },
-                    expirationTime: "100000",
+                    }
                 });
                 boldbiEmbedInstance.loadDashboard();
             }
@@ -80,14 +75,9 @@ You may also watch the below video to learn more about embedding Bold BI dashboa
                     serverUrl: "http://localhost:51777/bi/site/site1",
                     dashboardPath: "/Sales/Sales Analysis Dashboard",
                     embedContainerId: "dashboard_container",// This should be the container id where you want to embed the dashboard
-                    embedType: BoldBI.EmbedType.Component,
-                    mode: BoldBI.Mode.View,
-                    height: "800px",
-                    width: "1200px",
                     authorizationServer: {
                         url: "http://example.com/embeddetail/get"
-                    },
-                    expirationTime: "100000",
+                    }
                 });
                 boldbiEmbedInstance.loadDashboard();
             }
@@ -122,11 +112,11 @@ You may also watch the below video to learn more about embedding Bold BI dashboa
     </tr>
     <tr>
     <td align="left">height</td>
-    <td align="left">Height of the dashboard in your page</td>
+    <td align="left">The height is an optional member of the API. If you do not specify a height for the API, it will automatically take the dimensions of your embedding container. If no value is provided, it will inherit the height from the dimensions of the parent container of the embedding. For more details please refer to this <a href="/embedding-options/embedding-sdk/embedding-api-reference/members/#height">link here.</a></td>
     </tr>
     <tr>
     <td align="left">width</td>
-    <td align="left">Width of the dashboard in your page</td>
+    <td align="left">The width is an optional member of the API. If you do not specify a width for the API, it will automatically take the dimensions of your embedding container. If no value is provided, it will inherit the width from the dimensions of the parent container of the embedding. For more details please refer to this <a href="/embedding-options/embedding-sdk/embedding-api-reference/members/#width">link here.</a></td>
     </tr>
     <tr>
     <td align="left">authorizationServer</td>
@@ -183,12 +173,12 @@ You may also watch the below video to learn more about embedding Bold BI dashboa
 </code></td>
 </tr>
 <tr>            
-<td><code>v7.10.16(latest)</code></td>
+<td><code>v8.1.41(latest)</code></td>
 <td><code>
 
 ```js
 <head> 
-   <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v7.10.16/boldbi-embed.js"></script>
+   <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v8.1.41/boldbi-embed.js"></script>
 </head>
 ```
 
@@ -211,14 +201,9 @@ To embed the multi-tabbed dashboard, you can use either the dashboard ID or the 
                 serverUrl: "http://localhost:51777/bi/site/site1",
                 dashboardId: "119c6622-62e7-42d2-955a-55c938ab8583",  // Multi-tabbed dashboard id              
                 embedContainerId: "dashboard_container",// This should be the container id where you want to embed the dashboard
-                embedType: BoldBI.EmbedType.Component,
-                mode: BoldBI.Mode.View,
-                height: "800px",
-                width: "1200px",
                 authorizationServer: {
                     url: "http://example.com/embeddetail/get"
-                },
-                expirationTime: "100000",
+                }
             });
             boldbiEmbedInstance.loadDashboard();
         }
@@ -400,14 +385,14 @@ ServerUrl - Combination of the `rootURL` and `siteIdentifier`.
  });
  boldbiEmbedInstance.loadDashboard();
 ```
-<code>rootURL</code> - https://example.boldbi.com/bi <br>
+<code>rootURL</code> - `https://example.boldbi.com/bi` <br>
 <code>siteIdentifier</code> - "site/site1"
 
 </td>
 </tr>
 <tr>
 <td align="left">Multi-tenancy <strong>disabled</strong> case</td>
-<td>https://example.boldbi.com/bi</td>
+<td>`https://example.boldbi.com/bi`</td>
 <td align="left">
 
 ```js
@@ -416,7 +401,7 @@ ServerUrl - Combination of the `rootURL` and `siteIdentifier`.
  });
  boldbiEmbedInstance.loadDashboard();
 ```
-<code>rootURL</code> - https://example.boldbi.com/bi  <br>
+<code>rootURL</code> - `https://example.boldbi.com/bi`  <br>
 
 </td>
 </tr>
@@ -432,8 +417,8 @@ ServerUrl - Combination of the `rootURL` and `siteIdentifier`.
  });
  boldbiEmbedInstance.loadDashboard();
 ```
-<code>rootURL</code> - https://example.boldbi.com/bi <br>
-<code>Main application</code> - https://example.boldbi.com/ <br>
+<code>rootURL</code> - `https://example.boldbi.com/bi` <br>
+<code>Main application</code> - `https://example.boldbi.com/` <br>
 <code>Sub application</code> - "bold/bi"<br>
 <code>siteIdentifier</code> - "site/site1"
 
@@ -450,8 +435,8 @@ ServerUrl - Combination of the `rootURL` and `siteIdentifier`.
  });
  boldbiEmbedInstance.loadDashboard();
 ```
-<code>rootURL</code> - https://example.boldbi.com/bi  <br>
-<code>Main application</code> - https://example.boldbi.com/" <br>
+<code>rootURL</code> - `https://example.boldbi.com/bi`  <br>
+<code>Main application</code> - `https://example.boldbi.com/` <br>
 <code>Sub application</code> - "bold/bi"
 
 </td>
@@ -467,8 +452,8 @@ ServerUrl - Combination of the `rootURL` and `siteIdentifier`.
  });
  boldbiEmbedInstance.loadDashboard();
 ```
-<code>rootURL</code> - https://example.boldbi.com/bold/test/bi <br>
-<code>Main application</code> -"https://example.boldbi.com/" <br>
+<code>rootURL</code> - `https://example.boldbi.com/bold/test/bi` <br>
+<code>Main application</code> -`https://example.boldbi.com/` <br>
 <code>Sub applications</code> - "bold/test/bi"<br>
 <code>siteIdentifier</code> - "site/site1"
 
@@ -485,8 +470,8 @@ ServerUrl - Combination of the `rootURL` and `siteIdentifier`.
  });
  boldbiEmbedInstance.loadDashboard();
 ```
-<code>rootURL</code> -  https://example.boldbi.com/bold/test/bi <br>
-<code>Main application</code> - https://example.boldbi.com/  <br>
+<code>rootURL</code> -  `https://example.boldbi.com/bold/test/bi` <br>
+<code>Main application</code> - `https://example.boldbi.com/`  <br>
 <code>Sub applications</code> - "bold/test/bi"
 
 </td>

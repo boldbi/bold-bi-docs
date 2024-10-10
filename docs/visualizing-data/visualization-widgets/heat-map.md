@@ -210,6 +210,12 @@ Click `Yes` to enable the option. If you click `No`, then a single value will be
 
 ![Drilled view](/static/assets/visualizing-data/visualization-widgets/images/heat-map/drilled-view.png)
 
+#### Drill Up
+
+Once you've drilled down, you can drill up to the previous view using the breadcrumb navigator located at the top of the widget.
+
+![Drill up view](/static/assets/visualizing-data/visualization-widgets/images/heat-map/drilled-view.png)
+
 ## How to format Heatmap widget
 
 You can format the `Heatmap` for better illustration of the view that you require using the settings available in the `Properties` tab.

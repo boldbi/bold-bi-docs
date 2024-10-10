@@ -135,6 +135,12 @@ The selected view of the chart region is drilled.
 
 ![Drilled view](/static/assets/visualizing-data/visualization-widgets/images/stacked-bar-chart/stackedbardrill.png)
 
+#### Drill up
+
+Once you've drilled down, you can drill up to the previous view using the breadcrumb navigator located at the top of the widget.
+
+![Drill up](/static/assets/visualizing-data/visualization-widgets/images/stacked-bar-chart/stackedbardrillup.png)
+
 #### Adding Rows
 
 You can drag and drop the `Dimension` into the `Rows` field.

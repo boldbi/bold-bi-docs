@@ -77,7 +77,7 @@ The period of time before the next refresh call is triggered. This will automati
 
 Replace &lt;:us_id&gt; with your Mailchimp domain.
 
-[https://your-domain.api.mailchimp.com/3.0/campaigns](https://your-domain.api.mailchimp.com/3.0/3.0/campaigns)
+`https://your-domain.api.mailchimp.com/3.0/campaigns`
 
 For more information on the API endpoints available for this data source, refer to their official [API Documentation](https://developer.mailchimp.com/documentation/mailchimp/guides/)
 

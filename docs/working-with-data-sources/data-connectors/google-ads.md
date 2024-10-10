@@ -49,7 +49,7 @@ After successful authentication, the configuration panel for the NEW DATA SOURCE
 3. Choose a specific **start date** and **end date** using the date picker controls. If you select the launch date option, the initial launch date of the Google Ads will be considered as the start date for the API. If no end date option is selected, the current date will be used as the end date to pull data up to date during data source creation and refresh.
 4. Select your **metrics** and **dimensions** or enter a valid URL in the **custom URL** text box. Refer to the [Google Ads API documentation](https://developers.google.com/analytics/devguides/config/mgmt/v3/mgmtReference/) for more details.
 
-    Example: [https://www.googleapis.com/analytics/v3/data/ga?ids=&lt;:id&gt;&start-date=&lt;:startDate&gt;&end-date=&lt;:endDate&gt;&metrics=ga:users,ga:sessions,ga:pageviews&dimensions=ga:month,ga:year&sort=-ga:month](https://www.googleapis.com/analytics/v3/data/ga?ids=%3c:id%3e&start-date=%3c:startDate%3e&end-date=%3c:endDate%3e&metrics=ga:users,ga:sessions,ga:pageviews&dimensions=ga:month,ga:year&sort=-ga:month)
+    Example: `https://www.googleapis.com/analytics/v3/data/ga?ids=%3c:id%3e&start-date=%3c:startDate%3e&end-date=%3c:endDate%3e&metrics=ga:users,ga:sessions,ga:pageviews&dimensions=ga:month,ga:year&sort=-ga:month`
 5. Select the **GET** method for the REST API in the **Method** combo box.
 6. Enter the maximum number of pages to be fetched from the Google Ads data source in the **In-Page(s)** field. This value is used for data retrieval via pagination.
 7. Choose a time interval for the **Refresh Settings** using the combo box, to trigger the Rest API request periodically to keep the data in sync with our dashboard.  

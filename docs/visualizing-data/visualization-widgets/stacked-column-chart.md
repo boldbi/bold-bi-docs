@@ -132,6 +132,12 @@ The selected view of the chart region is drilled.
 
 ![Stacked column chart drill](/static/assets/visualizing-data/visualization-widgets/images/stacked-column-chart/stackedcolumndrills.png)
 
+#### Drill up
+
+Once you've drilled down, you can drill up to the previous view using the breadcrumb navigator located at the top of the widget.
+
+![Stacked column chart drill up](/static/assets/visualizing-data/visualization-widgets/images/stacked-column-chart/stackedcolumndrillup.png)
+
 #### Adding Rows
 
 You can drag and drop the `Dimension` into the `Rows` field.

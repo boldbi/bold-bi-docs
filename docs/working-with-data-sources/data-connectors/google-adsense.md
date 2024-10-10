@@ -45,7 +45,7 @@ After successful authentication, the NEW DATA SOURCE configuration panel will op
 1. Enter a name and description (optional) for the data source.
 2. Enter a valid Google AdSense REST API endpoint in the URL textbox. Refer to the [Google AdSense API documentation](https://developers.google.com/adsense/management/v1.4/reference/) for more details.
 
-    Example: [https://developers.google.com/adsense/host/v4.1/](https://developers.google.com/adsense/host/v4.1/)    
+    Example: `https://developers.google.com/adsense/host/v4.1/`
 3. Select the **GET** method for the REST API in the **Method** combo box.
 4. In **Max Rows**, enter the maximum number of rows to be fetched from the Google AdSense data source. This value is used to fetch the data from Google AdSense data source via pagination.
 5. Choose a time interval for the **Refresh Settings** using the combo box, to periodically trigger the REST API request and keep the data in sync with our dashboard.  

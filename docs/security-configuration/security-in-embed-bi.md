@@ -54,18 +54,22 @@ Bold BI provides a comprehensive range of features for protecting your data and 
 </table>
 
 ### Object Level Security
-In BoldBI, you can control users based on their permissions. There are read, write, create, and delete permissions that can be assigned to users and groups. Without the read permission, no user can see your dashboards.
+In Bold BI, you can control users based on their permissions. There are read, write, create, and delete permissions that can be assigned to users and groups. Without the read permission, no user can see your dashboards.
 
-Object Level Security allows administrators to control access to different dashboards within the BoldBI server for various users and groups. This includes the ability to share dashboards at both the individual user and group levels, with options to manage access rights for all users and define whether users can edit the dashboard.
+Object Level Security allows administrators to control access to different dashboards within the Bold BI server for various users and groups. This includes the ability to share dashboards at both the individual user and group levels, with options to manage access rights for all users and define whether users can edit the dashboard.
 
 >**Note**: For more information on how to share the dashboard with other users, please refer to the [Share Dashboards](/managing-resources/manage-dashboards/share-dashboards/).
 
 ### Data Level Security
-In BoldBI, you can control users based on their permissions for data sources connected to live databases. There are read, write, create, and delete permissions that can be assigned to users and groups. Without the read permission, no user can see your data sources.
+In Bold BI, you can control users based on their permissions for data sources connected to live databases. There are read, write, create, and delete permissions that can be assigned to users and groups. Without the read permission, no user can see your data sources.
+
+>**Note:** Bold BI only requires the minimum necessary permissions to read customer data, strictly adhering to the principle of least privilege. This access is used solely for troubleshooting and support, which minimizes the risk of unauthorized access and ensures data protection.
 
 Data Level Security enables the enforcement of different levels of data visibility. By sharing a single dashboard with multiple users, each user can access only the data relevant to their specific requirements. This approach not only reduces development efforts but also enhances security measures.
 
 >**Note:** Row Level security grants the user and group permissions to show only specific rows in the data. For more information, please refer to the [How to apply Row-level Security in Elastic search data source](https://support.boldbi.com/kb/article/16645/how-to-apply-row-level-security-in-elastic-search-data-source).
+
+Bold BI also support offline installation process, that is it allows you to use the Bold BI application in environments where internet connectivity is not available. This is particularly beneficial for organizations that have strict data security policies and need to ensure that their data remains within their local network without any external access. By using an offline license key, you can activate and use Bold BI without needing to connect to the internet, thereby enhancing data security and compliance with internal policies. Additionally, the offline installation process ensures that sensitive data is not exposed to potential online threats, providing an extra layer of protection for your organization’s information. For more information, please refer to the [How to install Bold BI offline and activate it using an offline unlock key?](https://support.boldbi.com/kb/article/16076/how-to-install-bold-bi-offline-and-activate-it-using-an-offline-unlock-key).
 
 ## Application security
 Every Bold BI product installation will generate unique private keys on the customer's machine. These private keys will be used to encrypt and store sensitive data, such as passwords and database details. 

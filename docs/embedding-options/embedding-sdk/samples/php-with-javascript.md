@@ -142,7 +142,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/php-sample) g
 
  5. Refer to the mandatory CDN file in the `<head>` tag as follows.
      ```js
-    <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v7.10.16/boldbi-embed.js"></script>
+    <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v8.1.41/boldbi-embed.js"></script>
      ```
 
  6. In the `<body>` tag, create the DOM element with the id `dashboard` and initialize the `embedSample()` method. The `embedSample()` method is implemented in the `<script>` tag as follows.

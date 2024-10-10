@@ -34,4 +34,4 @@ If the user has `Read` permission for a specific dashboard and the permission to
 
     ![WithoutScheduleCreatePermission](/static/assets/working-with-dashboards/images/without_schedulecreatepremission.png)
 
-To know more about schedules, go through the following [link](/managing-resources/manage-schedules/)
+To know more about schedules, go through the following [schedules](/managing-resources/manage-schedules/) link.

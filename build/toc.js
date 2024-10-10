@@ -5,11 +5,11 @@ var { platformOrder } = require('./config.js');
 const path = require('path');
 const config = JSON.parse(fs.readFileSync(path.resolve('./config.json'), 'utf8'));
 var argv = require('yargs').argv;
-var pathNames=['overview','deploying-bold-bi','application-startup',
+var pathNames=['overview','embed-sandbox','deploying-bold-bi','application-startup',
 'getting-started','embedding-options',
 'working-with-data-sources','visualizing-data',
-'working-with-dashboards','security-configuration','site-administration','managing-resources', 'resource-migration',
-'manage-webhooks', 'localization', 'white-labeling-in-bold-bi', 'multi-tenancy','responsive-layout','mobile-app','server-api-reference','utilities'];
+'working-with-dashboards','artificial-intelligence-and-machine-learning','security-configuration','site-administration','managing-resources', 'resource-migration',
+'manage-webhooks', 'localization', 'white-labeling-in-bold-bi', 'multi-tenancy','responsive-layout','mobile-app','server-api-reference','utilities','monitoring','disaster-recovery'];
 const isHtml = 'html';
 function generateToc() {
     let Files = glob.sync('./docs/summary.json');

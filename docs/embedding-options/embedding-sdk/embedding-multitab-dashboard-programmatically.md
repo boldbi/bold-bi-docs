@@ -18,7 +18,7 @@ Follow these steps to embed a programmatically created multi-tab dashboard into 
 
     ```js
     <head> 
-        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v7.10.16/boldbi-embed.js"></script>
+        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v8.1.41/boldbi-embed.js"></script>
     </head>
     ```
 
@@ -47,13 +47,9 @@ Follow these steps to embed a programmatically created multi-tab dashboard into 
                     serverUrl: "https://boldbi/site/site1",
                     dashboardIds: ["9a4b8ddb-606f-4acd-8c53-8ccdcaa92a87","7f1ba4ee-2fcc-40f1-b2fc-a69de4dee522"], // The Ids of the dashboards that you want to embed.
                     embedContainerId: "dashboard_container",// This should be the container id where you want to embed the programmatically created multi-tab dashboard.
-                    environment: BoldBI.Environment.Enterprise,
-                    mode: BoldBI.Mode.View,
-                    height: "800px",
-                    width: "1200px",
                     authorizationServer: {
                         url: "https://boldbi/embeddetail/get"
-                    },
+                    }
                 });
                 boldbiEmbedInstance.loadMultitabDashboard();
             }
@@ -72,13 +68,9 @@ Follow these steps to embed a programmatically created multi-tab dashboard into 
                     serverUrl: "https://boldbi/site/site1",
                     dashboardPaths: ["/Sales/Market Sales Dashboard","/Support/Support Analysis Dashboard"], // The paths of the dashboard that you want to embed.
                     embedContainerId: "dashboard_container",// This should be the container id where you want to embed the programmatically created multi-tab dashboard.
-                    environment: BoldBI.Environment.Enterprise,
-                    mode: BoldBI.Mode.View,
-                    height: "800px",
-                    width: "1200px",
                     authorizationServer: {
                         url: "https://boldbi/embeddetail/get"
-                    },
+                    }
                 });
                 boldbiEmbedInstance.loadMultitabDashboard();
             }
@@ -86,6 +78,8 @@ Follow these steps to embed a programmatically created multi-tab dashboard into 
     </body>
     ```  
 >**Note:** Please ensure that dashboardIds only contains Ids of individual dashboard, dashboardPaths only contains paths of individual dashboard and do not provide the Id or path of an existing multi-tab dashboard.
+
+> **NOTE:** By default, `BoldBI.Environment.Enterprise` is used for the Environment API member. For Cloud sites, you must set the Environment member value to `BoldBI.Environment.Cloud`.  
 
 4. Refer to the following table for the value of the previous properties based on your application.  
 
@@ -114,11 +108,11 @@ Follow these steps to embed a programmatically created multi-tab dashboard into 
     </tr>
     <tr>
     <td align="left">height</td>
-    <td align="left">Height of the dashboard designer in your page</td>
+    <td align="left">The height is an optional member of the API. If you do not specify a height for the API, it will automatically take the dimensions of your embedding container. If no value is provided, it will inherit the height from the dimensions of the parent container of the embedding. For more details please refer to this <a href="/embedding-options/embedding-sdk/embedding-api-reference/members/#height">link here.</a></td>
     </tr>
     <tr>
     <td align="left">width</td>
-    <td align="left">Width of the dashboard designer in your page</td>
+    <td align="left">The width is an optional member of the API. If you do not specify a width for the API, it will automatically take the dimensions of your embedding container. If no value is provided, it will inherit the width from the dimensions of the parent container of the embedding. For more details please refer to this <a href="/embedding-options/embedding-sdk/embedding-api-reference/members/#width">link here.</a></td>
     </tr>
     <tr>
     <td align="left">authorizationServer</td>
@@ -140,12 +134,12 @@ Follow these steps to embed a programmatically created multi-tab dashboard into 
 </tr></thead>
 <tbody>        
 <tr>            
-<td><code>v7.10.16(latest)</code></td>            
+<td><code>v8.1.41(latest)</code></td>            
 <td><code>
 
 ```js
 <head> 
-    <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v7.10.16/boldbi-embed.js"></script>
+    <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v8.1.41/boldbi-embed.js"></script>
 </head>
 ```
 

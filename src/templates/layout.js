@@ -740,7 +740,6 @@ export default class LayoutTemplate extends React.Component {
                         gtag('config', 'G-SRXJZD7EME');
                        `}
                     </script>
-                    <script src="https://cdn.polyfill.io/v3/polyfill.min.js?features=String.prototype.startsWith,String.prototype.includes,Array.prototype.includes" integrity="sha384-Wr3l27q1bK61u689TZfFU9ZY5gqLFskmpQtEoXiM2BEoIWrnULp2zdvB0G4qVpWt" crossorigin="anonymous"></script>
             <title>{postNode.frontmatter.title}</title>
 			 {postNode.frontmatter.canonical ?
              <link rel="canonical" key={canonicalUrl} href={canonicalUrl} data-react-helmet="true" />

@@ -82,7 +82,7 @@ The period of time before the next refresh call is triggered. This will automati
 
 Replace it in the URL to query a particular calendar details:
 
-[https://www.googleapis.com/calendar/v3/calendars/&lt;:calendarId&gt;](https://www.googleapis.com/calendar/v3/calendars/%3c:calendarId%3e)
+`https://www.googleapis.com/calendar/v3/calendars/<:calendarId>`
 
 ### Sample queries
 **CalendarList**

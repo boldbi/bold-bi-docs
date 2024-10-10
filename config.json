@@ -317,7 +317,7 @@
 "Chargify",
 "chartbeat",
 "chartmogul",
-"Clickhouse",
+"ClickHouse",
 "ClubReady",
 "ExcelPreview",
 "Customconnector",
@@ -414,6 +414,15 @@
 "deploy",
 "Microsoft SQL Server",
 "strapi",
-"matomo"
+"matomo",
+"assistant",
+"designer",
+"view",
+"mode",
+"activate",
+"ai",
+"feature",
+"enable",
+"disable"
 ]
 }

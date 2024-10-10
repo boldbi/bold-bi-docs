@@ -2442,7 +2442,7 @@
                 }
             }
         },
-        "/V5.0/dashboards/{dashboardId}/public":{
+        "/v5.0/dashboards/{dashboardId}/public":{
             "put": {
                 "tags" : [
                     "Dashboard"
@@ -3166,6 +3166,78 @@
                     },
                     "417": {
                         "description": "Failed to move the dashboard.",
+                        "content": {}
+                    }
+                }
+            }
+        },
+        "/v5.0/dashboard/rename/{dashboardId}":{
+            "put": {
+                "tags" : [
+                    "Dashboard"
+                ],
+                "summary" : "Update Dashboard Name",
+                "description": "Users who have write access to the dashboard can update the name of the dashboard.",
+                "operationId": "Dashboards_UpdateDashboardName",
+                "parameters":[
+                    {
+                        "name": "dashboardId",
+                        "in": "path",
+                        "description": "Dashboard ID.",
+                        "required" : true,
+                        "style": "simple",
+                        "explode": false,
+                        "schema": {
+                            "type": "string",
+                            "format": "guid",
+                            "nullable": false
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "description": "The name details provided will be updated for the specified dashboard.",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/ApiUpdateDashboardName"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "DashboardName has been updated successfully.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ApiResponse"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description" : "The content of the request body is missing or incomplete.",
+                        "content": {}
+                    },
+                    "401": {
+                        "description": "Access denied",
+                        "content": {}
+                    },
+                    "404": {
+                        "description": "Item details not found.",
+                        "content": {}
+                    },
+                    "405": {
+                        "description": "Request type was not PUT.",
+                        "content": {}
+                    },
+                    "406": {
+                        "description": "The content of the request body is invalid.",
+                        "content": {}
+                    },
+                    "409": {
+                        "description": "Item name already exists.",
                         "content": {}
                     }
                 }
@@ -4231,6 +4303,236 @@
                 }
             }
         },
+        "/v5.0/datasource/getcolumns/{datasourceId}": {
+            "get": {
+                "tags": [
+                    "DataSource"
+                ],
+                "summary": "Get the Data Source columns by Id.",
+                "description": "Users who have read access to the data source can obtain details of the data source columns.",
+                "operationId": "DataSource_GetDataSourceColumns",
+                "parameters": [
+                    {
+                        "name": "datasourceId",
+                        "in": "path",
+                        "description": "Data source ID",
+                        "required": true,
+                        "style": "simple",
+                        "explode": false,
+                        "schema": {
+                            "type": "string",
+                            "format": "guid",
+                            "nullable": false
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Data source columns was retrieved successfully.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetDataSourceColumnsApiResponse"
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Access denied.",
+                        "content": {}
+                    },
+                    "405": {
+                        "description": "Request type was not GET.",
+                        "content": {}
+                    }
+                }
+            }
+        },
+        "/v5.0/datasources/?table_name={tablename}": {
+            "get": {
+                "tags": [
+                    "DataSource"
+                ],
+                "summary": "Obtain the linked data source(s) for a tables/views/stored procedure",
+                "description": "Fetch details about data sources linked to a specific tables/views/stored procedure.",
+                "operationId": "DataSource_GetDatasourceTables",
+                "parameters": [
+                    {
+                        "name": "tablename",
+                        "in": "path",
+                        "description": "Tables name, Views Name Or Stored Procedure name.<br> <b>Note:</b> Table can be retrieved in both live and extract mode.",
+                        "required": true,
+                        "style": "simple",
+                        "explode": false,
+                        "schema": {
+                            "type": "string",
+                            "format": "guid",
+                            "nullable": false
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Data Source details was retrieved successfully.",
+                        "content": {
+                            "application/json": {
+                              "schema": {
+                                "type": "array",
+                                "items": {
+                                  "$ref": "#/components/schemas/Api-Items"
+                                }
+                              }
+                            }
+                          }
+                    },
+                    "204": {
+                        "description": "No content.",
+                        "content": {}
+                    },
+                    "401": {
+                        "description": "Access denied.",
+                        "content": {}
+                    },
+                    "405": {
+                        "description": "Request type was not GET.",
+                        "content": {}
+                    }
+                }
+            }
+        },
+        "/v5.0/datasource/export": {
+            "post": {
+                "tags": [
+                    "DataSource"
+                ],
+                "summary": "Export Data Source",
+                "description": "Users who have read access to the data source can export it to various formats such as Excel, CSV, and Json. They will receive the exported data source as an array of bytes in response.",
+                "operationId": "DataSource_ExportDataSource",
+                "requestBody": {
+                    "description": "Details about the passed data source will be exported.",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/ApiExportDataSource"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "parameters": [
+                    {
+                        "name": "offSet",
+                        "in": "query",
+                        "required": false,
+                        "description": "Specifies the starting point in the dataset from which the export should begin.",
+                        "x-nullable": true,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        },
+                        "example": "  1 ",
+                        "default": 0
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "required": false,
+                        "description": "Specifies the maximum number of records to be included in the export.<br /> **Note**: The maximum value is 1000.",
+                        "x-nullable": true,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        },
+                        "example": "  10 ",
+                        "default": 1000,
+                        "maximum": 1000
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Data source exported successfully.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ApiExportDataSourceResponse"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "The content of the request body is missing or incomplete.",
+                        "content": {}
+                    },
+                    "401": {
+                        "description": "Access denied.",
+                        "content": {}
+                    },
+                    "405": {
+                        "description": "Request type was not POST.",
+                        "content": {}
+                    },
+                    "406": {
+                        "description": "The content of the request body is invalid.",
+                        "content": {}
+                    },
+                    "500": {
+                        "description": "Error while exporting the data source",
+                        "content": {}
+                    }
+                },
+                "x-codegen-request-body-name": "apiExportDataSource"
+            }
+        },
+        "/v5.0/datasources/columns":{
+            "put": {
+                "tags": [
+                    "DataSource"
+                ],
+                "summary": "Manage Data Source Columns",
+                "description": "Add, update, or delete data source columns.",
+                "operationId": "DataSource_UpdateOrDeleteColumns",
+                "requestBody": {
+                    "description": "Details about the passed data source columns will be added, updated, or deleted.",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/ApiUpdateOrDeleteDatasourceColumns"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "Bulk editing of dashboard and data source files has been completed successfully.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/UpdateOrDeleteDatasourceColumnsResponse"
+                                }
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Invalid item ID.",
+                        "content": {}
+                    },
+                    "401": {
+                        "description": "Access denied.",
+                        "content": {}
+                    },
+                    "405": {
+                        "description": "Request type was not PUT.",
+                        "content": {}
+                    },
+                    "412": {
+                        "description": "Data source ID is empty.",
+                        "content": {}
+                    }
+                },
+                "x-codegen-request-body-name": "apiUpdateOrDeleteDatasourceColumns"
+            }
+        },
         "/v5.0/items": {
           "get": {
             "tags": [
@@ -5195,7 +5497,7 @@
                 }
             }
         },
-        "/pinboard": {
+        "/v5.0/pinboard": {
           "post": {
             "tags": [
               "Pinboard"
@@ -5247,9 +5549,90 @@
               }
             },
             "x-codegen-request-body-name": "apiPinboardAdd"
+          },
+          "get": {
+            "tags": [
+                "Pinboard"
+            ],
+            "summary": "Get Pinbords",
+            "description": "Retrieve the list of pinboard details.",
+            "operationId": "Pinboard_GetPinboards",
+            "parameters": [
+                {
+                    "name": "page",
+                    "in": "query",
+                    "required": false,
+                    "description": "<br />Page number<br /> **Note**: For more details on pagination, refer to this [link](../api-reference/#section/Getting-Started/Pagination)",
+                    "x-nullable": true,
+                    "schema" : {
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    "example": "  1 ",
+                    "default": 1,
+                    "minimum": 1
+                },
+                {
+                    "name": "page_size",
+                    "in": "query",
+                    "required": false,
+                    "description": "<br />Page size<br /> **Note**: For more details on pagination, refer to this [link](../api-reference/#section/Getting-Started/Pagination)",
+                    "x-nullable": true,
+                    "schema": {
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    "example" : "  10 ",
+                     "default": 25,
+                     "minimum":1,
+                     "Maximum":100
+                },
+                {
+                    "type": "string",
+                    "name": "q",
+                    "in": "query",
+                    "required": false,
+                    "description": "<br />\nSearch Keyword<br />Keyword searched in <code>Name</code>",
+                    "x-nullable": true,
+                    "example": " Bold "
+                },
+                {
+                    "type": "string",
+                    "name": "sort",
+                    "in": "query",
+                    "required": false,
+                    "description": "<br />\nSorting type<br />Values allowed are <code>+(ascending), -(descending)</code>",
+                    "x-nullable": true,
+                    "example": "  + "
+                }
+            ],
+            "responses": {
+                "200": {
+                    "description": "List of pinboards has been retrieved successfully.",
+                    "content":{
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/ApiGetPinboardPaginatedResponse"
+                            }
+                        }
+                    }
+                },
+                "400": {
+                    "description": "Pinboard list is empty.",
+                    "content": {}
+                },
+                "401": {
+                    "description": "Access denied.",
+                    "content": {}
+                },
+                "405": {
+                    "description": "Request type was not GET.",
+                    "content": {}
+                }
+            }
           }
         },
-        "/pinboard/copy": {
+        "/v5.0/pinboard/copy": {
           "post": {
             "tags": [
               "Pinboard"
@@ -5303,90 +5686,7 @@
             "x-codegen-request-body-name": "apiPinboardCopy"
           }
         },
-        "/pinboards": {
-            "get": {
-                "tags": [
-                    "Pinboard"
-                ],
-                "summary": "Get Pinbords",
-                "description": "Retrieve the list of pinboard details.",
-                "operationId": "Pinboard_GetPinboards",
-                "parameters": [
-                    {
-                        "name": "page",
-                        "in": "query",
-                        "required": false,
-                        "description": "<br />Page number<br /> **Note**: For more details on pagination, refer to this [link](../api-reference/#section/Getting-Started/Pagination)",
-                        "x-nullable": true,
-                        "schema" : {
-                            "type": "integer",
-                            "format": "int32"
-                        },
-                        "example": "  1 ",
-                        "default": 1,
-                        "minimum": 1
-                    },
-                    {
-                        "name": "page_size",
-                        "in": "query",
-                        "required": false,
-                        "description": "<br />Page size<br /> **Note**: For more details on pagination, refer to this [link](../api-reference/#section/Getting-Started/Pagination)",
-                        "x-nullable": true,
-                        "schema": {
-                            "type": "integer",
-                            "format": "int32"
-                        },
-                        "example" : "  10 ",
-                         "default": 25,
-                         "minimum":1,
-                         "Maximum":100
-                    },
-                    {
-                        "type": "string",
-                        "name": "q",
-                        "in": "query",
-                        "required": false,
-                        "description": "<br />\nSearch Keyword<br />Keyword searched in <code>Name</code>",
-                        "x-nullable": true,
-                        "example": " Bold "
-                    },
-                    {
-                        "type": "string",
-                        "name": "sort",
-                        "in": "query",
-                        "required": false,
-                        "description": "<br />\nSorting type<br />Values allowed are <code>+(ascending), -(descending)</code>",
-                        "x-nullable": true,
-                        "example": "  + "
-                    }
-                ],
-                "responses": {
-                    "200": {
-                        "description": "List of pinboards has been retrieved successfully.",
-                        "content":{
-                            "application/json": {
-                                "schema": {
-                                    "$ref": "#/components/schemas/ApiGetPinboardPaginatedResponse"
-                                }
-                            }
-                        }
-                    },
-                    "400": {
-                        "description": "Pinboard list is empty.",
-                        "content": {}
-                    },
-                    "401": {
-                        "description": "Access denied.",
-                        "content": {}
-                    },
-                    "405": {
-                        "description": "Request type was not GET.",
-                        "content": {}
-                    }
-                }
-            }
-        },
-        "/pinboard/{name}": {
+        "/v5.0/pinboard/{name}": {
           "get": {
             "tags": [
               "Pinboard"
@@ -5550,7 +5850,7 @@
             }
           }
         },
-        "/pinboard/rename/{name}":{
+        "/v5.0/pinboard/rename/{name}":{
             "put": {
                 "tags": [
                     "Pinboard"
@@ -9600,6 +9900,162 @@
                     }
                 }
             },
+            "Api-Items": {
+                "type": "object",
+                "properties": {
+                    "Data": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "CanRead": {
+                                    "type": "boolean",
+                                    "description": "Specifies the read permission of the item."
+                                },
+                                "CanWrite": {
+                                    "type": "boolean",
+                                    "description": "Specifies the write permission of the item."
+                                },
+                                "CanDelete": {
+                                    "type": "boolean",
+                                    "description": "Specifies the delete permission of the item."
+                                },
+                                "CanDownload": {
+                                    "type": "boolean",
+                                    "description": "Specifies the download permission of the item."
+                                },
+                                "CanSchedule": {
+                                    "type": "boolean",
+                                    "description": "Specifies the schedule permission of the item."
+                                },
+                                "CanOpen": {
+                                    "type": "boolean",
+                                    "description": "Specifies the open permission of the item."
+                                },
+                                "CanMove": {
+                                    "type": "boolean",
+                                    "description": "Specifies the move permission of the item."
+                                },
+                                "CanCopy": {
+                                    "type": "boolean",
+                                    "description": "Specifies the copy permission of the item."
+                                },
+                                "CanClone": {
+                                    "type": "boolean",
+                                    "description": "Specifies the clone permission of the item."
+                                },
+                                "CanCreateItem": {
+                                    "type": "boolean",
+                                    "description": "Specifies the create permission of the item."
+                                },
+                                "Id": {
+                                    "type": "string",
+                                    "description": "Item ID.",
+                                    "format": "guid"
+                                },
+                                "ItemType": {
+                                    "type": "string",
+                                    "description": "Type of the item (e.g., Datasource)."
+                                },
+                                "Name": {
+                                    "type": "string",
+                                    "description": "Name of the item."
+                                },
+                                "Description": {
+                                    "type": "string",
+                                    "description": "Description of the item."
+                                },
+                                "CreatedById": {
+                                    "type": "integer",
+                                    "description": "ID of the user who created the item.",
+                                    "format": "int32"
+                                },
+                                "CreatedByDisplayName": {
+                                    "type": "string",
+                                    "description": "Display name of the user who created the item."
+                                },
+                                "ModifiedById": {
+                                    "type": "integer",
+                                    "description": "ID of the user who modified the item.",
+                                    "format": "int32"
+                                },
+                                "ModifiedByFullName": {
+                                    "type": "string",
+                                    "description": "Full name of the user who modified the item."
+                                },
+                                "CreatedDate": {
+                                    "type": "string",
+                                    "description": "Creation date of the item (string format)."
+                                },
+                                "ModifiedDate": {
+                                    "type": "string",
+                                    "description": "Modification date of the item (string format)."
+                                },
+                                "ItemModifiedDate": {
+                                    "type": "string",
+                                    "description": "Date the item was modified.",
+                                    "format": "date-time"
+                                },
+                                "ItemCreatedDate": {
+                                    "type": "string",
+                                    "description": "Date the item was created.",
+                                    "format": "date-time"
+                                },
+                                "IsMultiDashboard": {
+                                    "type": "boolean",
+                                    "description": "Indicates if the item is a multi-dashboard."
+                                },
+                                "IsFavorite": {
+                                    "type": "boolean",
+                                    "description": "Indicates if the item is marked as favorite."
+                                },
+                                "IsPublic": {
+                                    "type": "boolean",
+                                    "description": "Indicates if the item is public."
+                                },
+                                "IsLocked": {
+                                    "type": "boolean",
+                                    "description": "Indicates if the item is locked."
+                                },
+                                "IsUnlisted": {
+                                    "type": "boolean",
+                                    "description": "Indicates if the item is unlisted."
+                                },
+                                "ProviderType": {
+                                    "type": "string",
+                                    "description": "Specifies the provider type (e.g., postgresql)."
+                                }
+                            }
+                        }
+                    },
+                    "TotalResults": {
+                        "type": "integer",
+                        "description": "Total number of results in the API request.",
+                        "format": "int32"
+                    },
+                    "Links": {
+                        "type": "array",
+                        "description": "Array of pagination links.",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "Link": {
+                                    "type": "string",
+                                    "description": "URL of the pagination link."
+                                },
+                                "Rel": {
+                                    "type": "string",
+                                    "description": "Relationship type (e.g., first, last)."
+                                },
+                                "Type": {
+                                    "type": "string",
+                                    "description": "Type of the request (e.g., GET)."
+                                }
+                            }
+                        }
+                    }
+                }            
+            },
             "ApiItems": {
                 "type": "object",
                 "properties": {
@@ -9906,6 +10362,19 @@
                 },
                 "description" : "Details of the public or private dashboards item."
             },
+            "ApiUpdateDashboardName": {
+                "required":[
+                    "DashboardName"
+                ],
+                "type" : "object",
+                "properties": {
+                    "DashboardName": {
+                        "type" : "string",
+                        "description" : "New dashboard name."
+                    }
+                },
+                "description" : "Details of the dashboard name."
+            },
             "ApiTabDetail": {
                 "type": "object",
                 "properties": {
@@ -10057,6 +10526,44 @@
                     }
                 },
                 "description": "Details about the dashboard to be exported."
+            },
+            "ApiExportDataSource": {
+                "required": [
+                    "DataSourceId",
+                    "FileType",
+                    "Columns",
+                    "DashboardParameter"
+                ],
+                "type": "object",
+                "properties": {
+                    "DataSourceId": {
+                        "type": "string",
+                        "description": "Data source ID.",
+                        "format": "guid"
+                    },
+                    "FileType": {
+                        "type": "string",
+                        "description": "Export type.<br />Values allowed are <code>Excel, CSV, JSON</code>"
+                    },
+                    "Columns": {
+                        "type": "array",
+                        "description": "List of column names.",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "DashboardParameter": {
+                        "type": "object",
+                        "description": "Specify the dashboard parameter.\n\n**Note:**  To know more about dashboard parameter, refer to [this](/working-with-data-sources/dashboard-parameter/)."
+                    }
+                },
+                "description": "Details about the data source to be exported."
+            },
+            "ApiExportDataSourceResponse": {
+                "type": "string",
+                "pattern": "^(?:[A-Za-z0-9+/]{4})*(?:[A-Za-z0-9+/]{2}==|[A-Za-z0-9+/]{3}=)?$",
+                "description": "Returns the exported data source in an array of bytes.",
+                "format": "byte"
             },
             "ApiExportDashboardResponse": {
                 "type": "object",
@@ -12383,11 +12890,11 @@
             },
             "ApiPinboard": {
                 "required" : [
-                    "ItemName"
+                    "Name"
                 ],
                 "type": "object",
                 "properties": {
-                    "ItemName": {
+                    "Name": {
                         "type": "string",
                         "description": "New Pinboard name."
                     }
@@ -16057,6 +16564,123 @@
                         "description": "Returns true if the webhook is active."
                     }
                 }
+            },
+            "ApiUpdateOrDeleteDatasourceColumns": {
+                "type": "array",
+                "description": "Update or delete data source columns details.",
+                "items": {
+                  "$ref": "#/components/schemas/UpdateOrDeleteDatasourceColumns"
+                }
+            },
+            "UpdateOrDeleteDatasourceColumns": {
+                "required": [
+                  "DataSourceId",
+                  "ColumnInfo"
+                ],
+                "type": "object",
+                "properties": {
+                  "DataSourceId": {
+                    "type": "string",
+                    "description": "Data source ID."
+                  },
+                  "ActionType": {
+                    "type": "string",
+                    "description": "Specifies the action to perform on the data source columns.</br>The possible value is <code>Delete</code> \n\n **Note**: </br> <code>Delete</code> - Invoke the delete API </br> Without any value - Invoke the update API </br> <code>Add Data source</code> - For adding a data source, only <B>DataSourceId</B> is required."
+                  },
+                  "ColumnInfo": {
+                    "type": "array",
+                    "description": "Specifies the data source column details.",
+                    "items": {
+                        "$ref": "#/components/schemas/ApiDatasourceColumnInfo"
+                    }
+                  }
+                }
+            },
+            "ApiDatasourceColumnInfo":{
+                "type": "object",
+                "properties": {
+                   "Type": {
+                        "type": "string",
+                        "description":"Specifies the type of the data source column."
+                    },
+                    "TargetColumnName":{
+                        "type": "string",
+                        "description": "Specify the name of the data source column that needs to be deleted or updated."
+                    },
+                    "SourceTableName": {
+                        "type": "string",
+                        "description": "Specify the table name that needs to be updated.\n\n**Note:** This is applicable only for the update datsource columns API."
+                    }
+                }
+            },
+            "UpdateOrDeleteDatasourceColumnsResponse": {
+                "required": [
+                    "ApiStatus",
+                    "Status",
+                    "StatusMessage"
+                ],
+                "type": "object",
+                "properties": {
+                    "ApiStatus": {
+                        "type": "boolean",
+                        "description": "Returns the status of the API."
+                    },
+                    "Status": {
+                        "type": "boolean",
+                        "description": "Returns status of the API request."
+                    },
+                    "StatusMessage": {
+                        "type": "string",
+                        "description": "Returns the status message from the API."
+                    }
+                },
+                "description": "Response details of the update or delete data source columns."
+            },
+            "GetDataSourceColumnsApiResponse": {
+                "type": "object",
+                "properties": {
+                    "ApiStatus": {
+                        "type": "boolean",
+                        "description": "Returns the status of the API."
+                    },
+                    "Data": {
+                        "type": "array",
+                        "description": "Returns data from the API.",
+                        "items": {
+                            "$ref": "#/components/schemas/GetDataSourceColumnsResponse"
+                        }
+                    },
+                    "StatusMessage": {
+                        "type": "string",
+                        "description": "Returns the status message from the API."
+                    }
+                }
+            },
+            "GetDataSourceColumnsResponse": {
+                "type": "object",
+                "properties": {
+                    "Name": {
+                        "type": "string",
+                        "description": "Data source column name."
+                    },
+                    "DesiredType": {
+                        "type": "string",
+                        "description": "Data source column desired type."
+                    },
+                    "DataType": {
+                        "type": "string",
+                        "description": "Data source column data type."
+                    },
+                    "DefaultDataType": {
+                        "type": "string",
+                        "description": "Data source column default data type."
+                    },
+                    "IsVisible": {
+                        "type": "boolean",
+                        "description": "Returns true, if the data source column is visible."
+                    }
+                },
+                "description": "Data source columns details."
             }
         },
         "securitySchemes": {

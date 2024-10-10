@@ -28,14 +28,9 @@ dashboard.loadDashboard();
           serverUrl: "http://localhost:51777/bi/site/site1",
           dashboardId: "755e99c7-f858-4058-958b-67577b283309",
           embedContainerId: "dashboard-container",// This should be the container id where you want to embed the dashboard
-          embedType: BoldBI.EmbedType.Component,
-          environment: BoldBI.Environment.Enterprise,
-          height: "800px",
-          width: "1200px",
           authorizationServer: {
           url: "http://example.come/authorize/server"
-          },
-          expirationTime: "100000",     
+          }   
      });
      dashboard.loadDashboard();
 </script>

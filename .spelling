@@ -936,6 +936,7 @@ preConfiguredWidgets.categoryName
 loadDesigner
 loadDatasource
 updateDatasource
+updateDashboardTheme
 hidePopup
 preconfigured
 designCanvasSettings.margin
@@ -1388,7 +1389,7 @@ v6.1.8
 v6.2.7
 v6.3.3
 v6.4.6
-v7.10.16
+v8.1.41
 128-bit
 YYYY-MM-DDTHH
 2017-05-09T15
@@ -1443,6 +1444,7 @@ Fontfamily
 beforeSaveViewDialogOpen
 beforeSaveAsViewDialogOpen
 onViewSavedFiltersClick
+token
 viewId
 viewName
 saveFilterView
@@ -1646,3 +1648,12 @@ ssl
 pymysql
 pg8000
 web_result
+hideSampleDataSources
+Grafana
+Robusta
+Datadog
+4o
+LLMs
+hide_dashboard_edit
+v8.1
+v8.1.41

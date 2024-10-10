@@ -2,6 +2,9 @@
 	"Overview": {
 		"On-Premises vs. Managed Cloud" : "on-premises-vs-managed-cloud"
 	},
+	"Embed SandBox":{
+		"SandBox Overview":"sandbox-overview"
+	},
 	"Deploying Bold BI": {
 		"Overview": "overview",
 		"Deploying on Windows": {
@@ -220,7 +223,7 @@
 			"CallRail": "callrail",
 			"Campaign Monitor": "campaign-monitor",
 			"CDATA": "cdata",
-			"Clickhouse": "clickhouse",
+			"ClickHouse": "clickhouse",
 			"Chargebee": "chargebee",
 			"Chargify": "chargify",
 			"Chart Beat": "chart-beat",
@@ -456,7 +459,6 @@
 			"Image": "image",
 			"Text": "text",
 			"Tab Widget": "tab-widget",
-			"Q&A Widget": "qna-widget",
 			"Button Widget": "button-widget",
 			"Custom Widget": {
 				"v5.2.48 or later": {
@@ -507,6 +509,7 @@
 		"Dashboard Schedule":"dashboard-schedule",
 		"Dashboard Performance Metrics": "dashboard-performance-metrics",
 		"Dashboard Styles": "dashboard-styles",
+		"Dynamic Translate": "dynamic-translator",
 		"Preview Dashboard": {
 			"Maximizing Widget View": "maximizing-widget-view",
 			"Exporting Reports from dashboard": "dashboard-settings",
@@ -525,6 +528,19 @@
 			"Schedule Dashboards": "schedule-dashboards",
 			"Notifications": "notifications"
 		}
+	},
+	"AI and Machine Learning": {
+		"Activate AI Feature": "activate-ai-feature",
+		"Enable/Disable AI Feature": "enable-disable-ai-feature",
+		"AI Assistant": {
+			"Getting Started": "ai-assistant-getting-started",
+			"Architecture and Data Processing": "architecture-data-processing",
+			"AI Assistant in Dashboard Designer": "ai-assistant-dashboard-designer",
+			"AI Assistant in View Mode": "ai-assistant-view-mode",
+			"Best Practices and Limitations": "best-practices-and-limitations"
+		},
+		"Q&A Widget": "qna-widget",
+		"Forecasting": "time-series-forecasting"
 	},
 	"Security Configuration": {
 		"Authorization Server": "authorize-server",
@@ -783,5 +799,7 @@
 			"OpenAI": "openai",
 			"Azure OpenAI": "azure-openai"
 		}
-	}
+	},
+  "Monitoring": "monitoring",
+	"Disaster Recovery": "disaster-recovery"
 }

@@ -133,6 +133,12 @@ The selected view of the chart region is drilled.
 
 ![Hundred percent stacked bar drill](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-bar-chart/hundredstackedbardrill.png)
 
+#### Drill up
+
+Once you've drilled down, you can drill up to the previous view using the breadcrumb navigator located at the top of the widget.
+
+![Hundred percent stacked bar drill up](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-bar-chart/hundredstackedbardrillup.png)
+
 #### Adding Rows
 
 You can drag and drop the `Measure` or `Dimension` into the `Rows` field. 

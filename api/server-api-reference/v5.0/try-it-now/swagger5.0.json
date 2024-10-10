@@ -2004,7 +2004,7 @@
         }
       }
     },
-    "/V5.0/dashboards/{dashboardId}/public":{
+    "/v5.0/dashboards/{dashboardId}/public":{
       "put": {
           "tags" : [
               "Dashboard"
@@ -2504,6 +2504,67 @@
             "content": {}
           }
         }
+      }
+    },
+    "/v5.0/dashboard/rename/{dashboardId}":{
+      "put": {
+          "tags" : [
+              "Dashboard"
+          ],
+          "summary" : "Update Dashboard Name",
+          "description": "Users who have write access to the dashboard can update the name of the dashboard.",
+          "operationId": "Dashboards_UpdateDashboardName",
+          "parameters":[
+              {
+                "name": "dashboardId",
+                "in": "path",
+                "description": "Dashboard ID.",
+                "required" : true,
+                "style": "simple",
+                "explode": false,
+                "schema": {
+                    "type": "string",
+                    "format": "guid",
+                    "nullable": false
+                 },
+                 "x-nullable": true
+              },
+              {
+                "name": "ApiUpdateDashboardName",
+                "in": "body",
+                "required": true,
+                "description": "The name details provided will be updated for the specified dashboard.",
+               "schema":{
+                "$ref": "#/definitions/ApiUpdateDashboardName"
+               }
+              }
+          ],
+          "responses": {
+              "200": {
+                  "description": "DashboardName has been updated successfully.",
+                  "schema":{
+                    "$ref": "#/definitions/ApiResponse"
+                  }
+              },
+              "400": {
+                  "description" : "The content of the request body is missing or incomplete."
+              },
+              "401": {
+                  "description": "Access denied"
+              }, 
+              "404": {
+                "description": "Item details not found"
+              },
+              "405": {
+                "description": "Request type was not PUT"
+              },
+              "406": {
+                "description": "The content of the request body is invalid"
+              },
+              "409": {
+                "description": "Item name already exists."
+              }
+          }
       }
     },
     "/v5.0/multi-tab": {
@@ -3293,6 +3354,41 @@
         }
       }
     },
+    "/v5.0/datasource/getcolumns/{datasourceId}": {
+      "get": {
+        "tags": [
+          "DataSource"
+        ],
+        "summary": "Get the Data Source columns by Id.",
+        "description": "Users who have read access to the data source can obtain details of the data source columns.",
+        "operationId": "DataSource_GetDataSourceColumns",
+        "parameters": [
+          {
+            "type": "string",
+            "name": "datasourceId",
+            "in": "path",
+            "required": true,
+            "description": "Data source ID",
+            "format": "guid",
+            "x-nullable": false
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Data source columns was retrieved successfully.",
+            "schema": {
+              "$ref": "#/definitions/GetDataSourceColumnsApiResponse"
+            }
+          },
+          "401": {
+            "description": "Access denied."
+          },
+          "405": {
+            "description": "Request type was not GET."
+          }
+        }
+      }
+    },
     "/v5.0/data-sources/{datasourceId}/dashboards": {
       "get": {
         "tags": [
@@ -3330,6 +3426,128 @@
           },
           "405": {
             "description": "Request type was not GET."
+          }
+        }
+      }
+    },
+    "/v5.0/datasource/export": {
+      "post": {
+        "tags": [
+          "DataSource"
+        ],
+        "summary": "Export Data Source",
+        "description": "Users who have read access to the data source can export it to various formats such as Excel, CSV, and Json. They will receive the exported data source as an array of bytes in response.",
+        "operationId": "DataSource_ExportDataSource",
+        "parameters": [
+          {
+            "name": "apiExportDataSource",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/ApiExportDataSource"
+            },
+            "description": "Details about the passed data source will be exported.",
+            "x-nullable": true
+          },
+          {
+            "name": "offSet",
+            "in": "query",
+            "required": false,
+            "description": "Specifies the starting point in the dataset from which the export should begin.",
+            "x-nullable": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "default": 0
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "description": "Specifies the maximum number of records to be included in the export.<br /> **Note**: The maximum value is 1000.",
+            "x-nullable": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "default": 1000,
+            "maximum": 1000
+          }
+        ],
+        "responses": {
+          "200": {
+            "x-nullable": true,
+            "description": "Data source exported successfully.",
+            "schema": {
+              "$ref": "#/definitions/ApiExportDataSourceResponse"
+            }
+          },
+          "400": {
+            "description": "The content of the request body is missing or incomplete"
+          },
+          "401": {
+            "description": "Access denied"
+          },
+          "405": {
+            "description": "Request type was not POST"
+          },
+          "406": {
+            "description": "The content of the request body is invalid"
+          },
+          "500": {
+              "description": "Error while exporting the data source",
+              "content": {}
+          }
+        }
+      }
+    },
+    "/v5.0/datasources/columns": {
+      "put": {
+        "tags": [
+          "DataSource"
+        ],
+        "summary": "Update or Delete Data Source columns",
+        "description": "Updating or deleting data source columns.",
+        "operationId": "DataSource_UpdateOrDeleteColumns",
+        "parameters": [
+          {
+            "name": "apiUpdateDataSourceV4",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/ApiUpdateOrDeleteDatasourceColumns"
+            },
+            "description": "Details about the passed data source columns will be updated or deleted.",
+            "x-nullable": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Bulk editing of dashboard and data source files has been completed successfully.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/definitions/UpdateOrDeleteDatasourceColumnsResponse"
+                }
+              }
+            }
+          },
+          "400": {
+              "description": "Invalid item ID.",
+              "content": {}
+          },
+          "401": {
+            "description": " Access denied..",
+            "content": {}
+          },
+          "405": {
+            "description": "Request type was not PUT.",
+            "content": {}
+          },
+          "412": {
+            "description": "Data source ID is empty.",
+            "content": {}
           }
         }
       }
@@ -4122,7 +4340,7 @@
         }
       }
     },
-    "/pinboard": {
+    "/v5.0/pinboard": {
       "post": {
         "tags": [
           "Pinboard"
@@ -4169,58 +4387,7 @@
             "description": "Failed to add pinboard details."
           }
         }
-      }
-    },
-    "/pinboard/copy": {
-      "post": {
-        "tags": [
-          "Pinboard"
-        ],
-        "summary": "Copy Pinboard",
-        "description": "Copy the pinboard on the specific site.",
-        "operationId": "Pinboard_CopyEmbedPinBoard",
-        "parameters": [
-          {
-            "name": "apiEmbedPinbaord",
-            "in": "body",
-            "required": true,
-            "schema": {
-              "$ref": "#/definitions/ApiSiteCopyPinboard"
-            },
-            "description": "Details about the copy pinboard.",
-            "x-nullable": true
-          }
-        ],
-        "responses": {
-          "200": {
-            "x-nullable": true,
-            "description": "Pinboard has been copied successfully.",
-            "schema": {
-              "$ref": "#/definitions/ApiAddPinboardResponse"
-            }
-          },
-          "400": {
-            "description": "The content of the request body is missing or incomplete"
-          },
-          "401": {
-            "description": "Access denied"
-          },
-          "405": {
-            "description": "Request type was not POST"
-          },
-          "406": {
-            "description": "The content of the request body is invalid"
-          },
-          "409": {
-            "description": "Pinboard name already exists."
-          },
-          "417": {
-            "description": "Failed to copy pinboard details."
-          }
-        }
-      }
-    },
-    "/Pinboard": {
+      },
       "get": {
         "tags" : [
           "Pinboard"
@@ -4303,7 +4470,56 @@
         }
       }
     },
-    "/pinboard/{name}": {
+    "/v5.0/pinboard/copy": {
+      "post": {
+        "tags": [
+          "Pinboard"
+        ],
+        "summary": "Copy Pinboard",
+        "description": "Copy the pinboard on the specific site.",
+        "operationId": "Pinboard_CopyEmbedPinBoard",
+        "parameters": [
+          {
+            "name": "apiEmbedPinbaord",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/ApiSiteCopyPinboard"
+            },
+            "description": "Details about the copy pinboard.",
+            "x-nullable": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "x-nullable": true,
+            "description": "Pinboard has been copied successfully.",
+            "schema": {
+              "$ref": "#/definitions/ApiAddPinboardResponse"
+            }
+          },
+          "400": {
+            "description": "The content of the request body is missing or incomplete"
+          },
+          "401": {
+            "description": "Access denied"
+          },
+          "405": {
+            "description": "Request type was not POST"
+          },
+          "406": {
+            "description": "The content of the request body is invalid"
+          },
+          "409": {
+            "description": "Pinboard name already exists."
+          },
+          "417": {
+            "description": "Failed to copy pinboard details."
+          }
+        }
+      }
+    },
+    "/v5.0/pinboard/{name}": {
       "get": {
         "tags": [
           "Pinboard"
@@ -4441,7 +4657,7 @@
         }
       }
     },
-    "/pinboard/rename/{name}":{
+    "/v5.0/pinboard/rename/{name}":{
       "put": {
         "tags": [
           "Pinboard"
@@ -8472,6 +8688,19 @@
       },
       "description" : "Details of the public or private dashboards item."
     },
+    "ApiUpdateDashboardName": {
+      "required":[
+          "DashboardName"
+      ],
+      "type" : "object",
+      "properties": {
+          "DashboardName": {
+              "type" : "string",
+              "description" : "New dashboard name."
+          }
+      },
+      "description" : "Details of the dashboard name."
+    },
     "ApiFavoriteitems": {
       "type": "object",
       "description": "Details of favorite items.",
@@ -8595,6 +8824,55 @@
           "type": "string",
           "description": "Specify the filter parameter. \n\n**Note:**  To know more about supported operators and funtions in filter parameter, refer to [this](/working-with-dashboards/preview-dashboard/urlparameters/#supported-operators/).",
           "example": "Department= Cardiology & Year(Date)=2021"
+        }
+      }
+    },
+    "ApiExportDataSource": {
+      "type": "object",
+      "description": "Details about the data source to be exported.",
+      "additionalProperties": false,
+      "required": [
+        "DataSourceId",
+        "FileType",
+        "Columns",
+        "DashboardParameter"
+      ],
+      "properties": {
+        "DataSourceId": {
+          "type": "string",
+          "description": "Data source ID.",
+          "format": "guid"
+        },
+        "FileType": {
+          "type": "string",
+          "description": "Export type. Valid values: `\"Excel\"` `\"Json\"` `\"CSV\"`"
+        },
+        "Rows": {
+          "type": "integer",
+          "description": "Specify the number of rows to be exported. Default value is <i>1000</i>",
+          "format": "int32"
+        },
+        "Columns": {
+          "type": "array",
+          "description": "List of column names.",
+          "items": {
+            "type": "string"
+          }
+        },
+        "DashboardParameter": {
+          "type": "string",
+          "description": "Specify the dashboard parameter.\n\n**Note:** To know more about dashboard parameter, refer to [this](/working-with-data-sources/dashboard-parameter/)."
+        }
+      }
+    },
+    "ApiExportDataSourceResponse": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "FileContent": {
+          "type": "string",
+          "description": "Returns the exported data source in an array of bytes.",
+          "format": "byte"
         }
       }
     },
@@ -10902,11 +11180,11 @@
     },
     "ApiPinboard":{
       "required" : [
-        "ItemName"
+        "Name"
       ],
       "type": "object",
       "properties": {
-        "ItemName": {
+        "Name": {
             "type": "string",
             "description": "New Pinboard name."
           }
@@ -14335,7 +14613,124 @@
           "description": "Returns true if the webhook is active."
         }
       }
-  }
+    },
+    "ApiUpdateOrDeleteDatasourceColumns": {
+      "type": "array",
+      "description": "Update or delete data source columns details.",
+      "items": {
+          "$ref": "#/definitions/UpdateOrDeleteDatasourceColumns"
+      }
+    },
+    "UpdateOrDeleteDatasourceColumns": {
+      "required": [
+        "DataSourceId",
+        "ColumnInfo"
+      ],
+      "type": "object",
+      "properties": {
+        "DataSourceId": {
+          "type": "string",
+          "description": "Data source ID."
+        },
+        "ActionType": {
+          "type": "string",
+          "description": "Specifies the action to perform on the data source columns.</br>The possible value is <code>Delete</code> \n\n **Note**: </br> <code>Delete</code> - Invoke the delete API </br> Without any value - Invoke the update API </br>"
+        },
+        "ColumnInfo": {
+          "type": "array",
+          "description": "Specifies the data source column details.",
+          "items": {
+              "$ref": "#/definitions/ApiDatasourceColumnInfo"
+          }
+        }
+      }
+    },
+    "ApiDatasourceColumnInfo":{
+      "type": "object",
+        "properties":{
+          "Type": {
+            "type": "string",
+            "description":"Specifies the type of the data source column."
+        },
+        "TargetColumnName":{
+            "type": "string",
+            "description": "Specify the name of the data source column that needs to be deleted or updated."
+        },
+        "SourceTableName": {
+          "type": "string",
+          "description": "Specify the table name that needs to be updated.\n\n**Note:** This is applicable only for the update datsource columns API."
+        }
+      }
+    },
+    "UpdateOrDeleteDatasourceColumnsResponse": {
+      "type": "object",
+      "required": [
+        "ApiStatus",
+        "Status",
+        "StatusMessage"
+      ],
+      "properties": {
+        "ApiStatus": {
+          "type": "boolean",
+          "description": "Returns the status of the API."
+        },
+        "Status": {
+          "type": "boolean",
+          "description": "Returns status of the API request."
+        },
+        "StatusMessage": {
+          "type": "string",
+          "description": "Returns the status message from the API."
+        }
+      }
+    },
+    "GetDataSourceColumnsApiResponse": {
+      "type": "object",
+      "properties": {
+        "ApiStatus": {
+          "type": "boolean",
+          "description": "Returns the status of the API."
+        },
+        "Data": {
+          "type": "array",
+          "description": "Returns data from the API.",
+          "items": {
+            "$ref": "#/definitions/GetDataSourceColumnsResponse"
+          }
+        },
+        "StatusMessage": {
+          "type": "string",
+          "description": "Returns the status message from the API."
+        }
+      }
+    },
+    "GetDataSourceColumnsResponse": {
+      "type": "object",
+      "description": "Data Source columns details.",
+      "additionalProperties": false,
+      "properties": {
+        "Name": {
+          "type": "string",
+            "description": "Data source column name."
+        },
+        "DesiredType": {
+            "type": "string",
+            "description": "Data source column desired type."
+        },
+        "DataType": {
+            "type": "string",
+            "description": "Data source column data type."
+        },
+        "DefaultDataType": {
+            "type": "string",
+            "description": "Data source column default data type."
+        },
+        "IsVisible": {
+            "type": "boolean",
+            "description": "Returns true, if the data source column is visible."
+        }
+      }
+    }
   },
   "parameters": {},
   "responses": {}

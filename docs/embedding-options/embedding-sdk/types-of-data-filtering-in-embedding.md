@@ -58,7 +58,7 @@ To pass filters to the `embed_datasource_filter` parameter in the AuthorizeAPI e
       embedQuery += "&embed_user_email=" + “readonlyuser@abc.com”;
       double timeStamp = (int)DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1)).TotalSeconds;
       embedQuery += "&embed_datasource_filter=[{&ProductName=Alice Mutton}]";
-      var embedDetailsFilter = "/embed/authorize?" + embedQuery + "&embed_signature=" + GetSignatureUrl(embedQuery);
+      var embedDetailsUrl = "/embed/authorize?" + embedQuery + "&embed_signature=" + GetSignatureUrl(embedQuery);
       using (var client = new HttpClient())
       {
         client.BaseAddress = new Uri(embedClass.dashboardServerApiUrl);

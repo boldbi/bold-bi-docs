@@ -253,6 +253,12 @@ In case of hierarchical view, multiple levels will get rendered in the same view
 
 ![Drill down Applied in Treemap](/static/assets/visualizing-data/visualization-widgets/images/tree-map/drilldown.png)
 
+#### Drill up
+
+Once you've drilled down, you can drill up to the previous view using the breadcrumb navigator located at the top of the widget.
+
+![Drill up](/static/assets/visualizing-data/visualization-widgets/images/tree-map/drillup.png)
+
 ### Link
 
 ![Linking](/static/assets/visualizing-data/visualization-widgets/images/tree-map/link.png)

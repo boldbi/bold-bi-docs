@@ -413,6 +413,12 @@ By default, the state shapes in India are divided into districts. However, if yo
 
     ![drilldown shape file](/static/assets/visualizing-data/visualization-widgets/images/map/drilldown.png)
 
+### Drill up
+
+Once you've drilled down, you can drill up to the previous view using the breadcrumb navigator located at the top of the widget.
+
+![drillup shape file](/static/assets/visualizing-data/visualization-widgets/images/map/drillup.png)
+
 ### How to add customized shape in world map country
 
 If you want to view the customized India shape while drilling India on the world map, follow these steps:

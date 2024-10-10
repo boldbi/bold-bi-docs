@@ -164,22 +164,22 @@ documentation: ug
    <td>Google Drive</td>
    <td>email
 
-   https://www.googleapis.com/auth/userinfo.profile
+   `https://www.googleapis.com/auth/userinfo.profile`
 
-   https://www.googleapis.com/auth/drive.metadata.readonly
+   `https://www.googleapis.com/auth/drive.metadata.readonly`
 
-   https://www.googleapis.com/auth/drive.readonly </td>
+   `https://www.googleapis.com/auth/drive.readonly` </td>
 
 
    <tr>
    <td>Google Sheets</td>
    <td>email
 
-   https://www.googleapis.com/auth/userinfo.profile
+   `https://www.googleapis.com/auth/userinfo.profile`
 
-   https://www.googleapis.com/auth/drive.metadata.readonly
+   `https://www.googleapis.com/auth/drive.metadata.readonly`
 
-   https://www.googleapis.com/auth/drive.readonly
+   `https://www.googleapis.com/auth/drive.readonly`
 
    </td>
    </tr>
@@ -188,11 +188,11 @@ documentation: ug
    <td>
    email
 
-   https://www.googleapis.com/auth/userinfo.profile
+   `https://www.googleapis.com/auth/userinfo.profile`
 
-   https://www.googleapis.com/auth/adsense.readonly
+   `https://www.googleapis.com/auth/adsense.readonly`
 
-   https://www.googleapis.com/auth/adsensehost
+   `https://www.googleapis.com/auth/adsensehost`
 
    </td>
    </tr>
@@ -201,43 +201,43 @@ documentation: ug
    <td>Google Analytics</td>
    <td> email
 
-   https://www.googleapis.com/auth/userinfo.profile
+   `https://www.googleapis.com/auth/userinfo.profile`
 
-   https://www.googleapis.com/auth/analytics.readonly
+   `https://www.googleapis.com/auth/analytics.readonly`
 
-   https://www.googleapis.com/auth/adsense.readonly
+   `https://www.googleapis.com/auth/adsense.readonly`
 
-   https://www.googleapis.com/auth/youtube.readonly
+   `https://www.googleapis.com/auth/youtube.readonly`
 
-   https://www.googleapis.com/auth/youtubepartner 
+   `https://www.googleapis.com/auth/youtubepartner `
    </td>
    </tr>
    <tr>
    <td>Google Analytics V4</td>
-   <td> https://www.googleapis.com/auth/analytics.readonly 
+   <td> `https://www.googleapis.com/auth/analytics.readonly`
    </td>
    </tr>
    <tr>
    <td>Google Ads V4</td>
-   <td> https://www.googleapis.com/auth/adwords 
+   <td> `https://www.googleapis.com/auth/adwords `
    </td>
    </tr>
    <tr><td>Google Search Console</td>
    <td> email
 
-   https://www.googleapis.com/auth/userinfo.profile
+   `https://www.googleapis.com/auth/userinfo.profile`
 
-   https://www.googleapis.com/auth/webmasters.readonly 
+   `https://www.googleapis.com/auth/webmasters.readonly `
    </tr>
    <tr>
    </td><td>Google Calendar </td>
    <td> email
 
-   https://www.googleapis.com/auth/userinfo.profile
+   `https://www.googleapis.com/auth/userinfo.profile`
 
-   https://www.googleapis.com/auth/calendar.readonly
+   `https://www.googleapis.com/auth/calendar.readonly`
 
-   https://www.googleapis.com/auth/calendar.events.readonly
+   `https://www.googleapis.com/auth/calendar.events.readonly`
 
    </td></tr>
    </table>
@@ -294,49 +294,3 @@ documentation: ug
 [Editing a Data Connection](/working-with-data-sources/editing-a-data-connection/)   
 
 [Dashboard Designer Walkthrough](/getting-started/creating-dashboard/)
-
-   
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -465,21 +465,16 @@ dashboard.loadDashboard();
 </span>
 
 </h2>
-    
 
-Please specify the height of the Dashboard Viewer in either percentages or pixels.
+The height is an optional member of the API. You can define the height of the embedding module in either percentages or pixels, depending on your requirements. If you do not specify a height for the API, it will automatically take the dimensions of your embedding container. If no value is provided, it will inherit the height from the dimensions of the parent container of the embedding.
 
 <br>
 
-**Default value** 
-
-<li>768px</li><br>
-
 **Example** 
-   
+
 ```js
 var dashboard = BoldBI.create({
-     height:"768px",
+     height:"800px", //The dashboard is now rendered with a height of 800px
 });
 dashboard.loadDashboard();
 ```
@@ -677,6 +672,36 @@ var dashboard = BoldBI.create({
 dashboard.loadDashboard();
 ```
 
+<h2 class="doc-prop-wrapper" id="token" data-Path="token-token">
+<a href="#token" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
+<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+</svg>
+</a><span class='doc-prop-name'>token</span>
+
+<span class="doc-prop-type"> `string`
+</span>
+
+</h2>
+
+By using token API member, able to authenticate the dashboard in your application without implementing the AuthorizeAPI endpoint. Refer [token generation](/embedding-options/embedding-sdk/embedding-using-javascript/#token-generation) section for generating token in two different ways.
+
+<br>
+
+**Default value** : `empty`
+
+<li>""</li><br>
+
+**Example**
+
+```js  
+var dashboard = BoldBI.create({
+     token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRldm9wc0Bib2xkYmkuY29tIiwidXBuIjouYm9sZGJpZGVtby5jb20vYmkvc2l0ZS9zaXRlMSIsImF1ZCI6Imh0dHBzOi8vaG90Zml4LXdpbmRvd3MuYm9sZGJpZGVtby5jb20vYmkvc2l0ZS9zaXRlMSJ9.JzbqVr6Brv1mAEvnbHnE-FuShos", // Use the generated Access token
+});
+dashboard.loadDashboard();
+```  
+To learn about the available limited [supporting methods](/embedding-options/embedding-sdk/embedding-using-javascript/#following-embedding-modules-is-achievable-by-using-token-api-member) in embedding.
+
 <h2 class="doc-prop-wrapper" id="viewid" data-Path="viewid-viewId">
 <a href="#viewid" aria-hidden="true" class="anchor">
 <svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
@@ -760,13 +785,15 @@ This member will assist in loading the specific widgets of the single dashboard 
 
 **Example** 
    
-```js  
-<div id="widget1"></div> 
-<div id="widget2"></div> 
-<div id="widget3"></div> 
+```js 
+<div id="dashboard"></div>
+<div id="widget1" style="height:500px;width:500px"></div> 
+<div id="widget2" style="height:500px;width:500px"></div> 
+<div id="widget3" style="height:500px;width:500px"></div> 
 <script>  
 var dashboard = BoldBI.create({
       dashboardId: "5cb065f7-dabb-4b0c-9b45-c60a5730e963",
+      embedContainerId: "dashboard",
       widgetList: [{widgetName: "Medal details by Country", containerId: "widget1" },
                   {widgetName: "Total Medals by Country", containerId: "widget2" },
                   {widgetName: "Country", containerId: "widget3" }],
@@ -774,6 +801,8 @@ var dashboard = BoldBI.create({
 dashboard.loadMultipleWidgets();
 </script>
 ```
+
+> **NOTE:** We have enhanced the performance of loading multiple widgets in the javascript embedding. Please note that support will work and take effect if the embed SDK Wrapper and Bold BI Server are on the same version effectively from v8.1.41
 
 <h2 class="doc-prop-wrapper" id="width" data-Path="width-width">
 <a href="#width" aria-hidden="true" class="anchor">
@@ -787,20 +816,15 @@ dashboard.loadMultipleWidgets();
 
 </h2>
 
-    
-Please set the width of the Dashboard Viewer in percentage or in pixels.
+The width is an optional member of the API. You can define the width of the embedding module in either percentages or pixels, depending on your requirements. If you do not specify a width for the API, it will automatically take the dimensions of your embedding container. If no value is provided, it will inherit the width from the dimensions of the parent container of the embedding.
 
 <br>
-
-**Default value** 
-
-<li>1024px</li><br>
 
 **Example** 
    
 ```js
 var dashboard = BoldBI.create({
-     width:"1024px",
+     width:"1200px", //The dashboard is now rendered with a width of 1200px.
 });
 dashboard.loadDashboard();
 ```
@@ -1428,6 +1452,40 @@ var dashboard = BoldBI.create({
 dashboard.loadDesigner();
 ```
 
+<h3 class="doc-prop-wrapper" id="hidesampledatasources" data-Path="dashboardsettingsdatasourceconfighidesamplesatasources-dashboardSettings.dataSourceConfig.hideSampleDataSources">
+<a href="#hidesampledatasources" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
+<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+</svg>
+</a><span class='doc-prop-name'>hideSampleDataSources</span>
+
+<span class="doc-prop-type"> `boolean`
+</span>
+
+</h3>
+
+Please specify whether you want to display or hide the `Sample Datasources` option under the datasource configuration in the dashboard designer banner.
+
+<br>
+
+**Default value** 
+
+<li>false</li><br>
+
+**Example** 
+
+```js
+var dashboard = BoldBI.create({
+     mode: BoldBI.Mode.Design,
+     dashboardSettings: {
+          dataSourceConfig :{
+            hideSampleDataSources: false // By default, the sample datasource option is shown.
+          }
+     }
+});
+dashboard.loadDesigner();
+```
+
 ## dashboardSettings.filterOverviewSettings
 
 <h3 class="doc-prop-wrapper" id="showsaveasicon" data-Path="dashboardsettingsfilteroverviewsettingsshowsaveasicon-dashboardSettings.filterOverviewSettings.showSaveAsIcon">
@@ -1915,7 +1973,7 @@ Customize the margins of the dashboard using the corresponding integer values.
 ```js
 var dashboard = BoldBI.create({
      designCanvasSettings: {
-          margin: null,
+          margin: 30,
      }
 });
 dashboard.loadDashboard();
@@ -1932,7 +1990,7 @@ The dashboard server provides a dynamic connection string feature for fetching t
 </svg>
 </a><span class='doc-prop-name'>identity</span>
 
-<span class="doc-prop-type"> `boolean`
+<span class="doc-prop-type"> `string`
 </span>
 
 </h3>
@@ -2370,14 +2428,14 @@ Customize the box shadow of the widgets.
 
 **Default value** 
 
-<li>null</li><br>
+<li>""</li><br>
 
 **Example** 
    
 ```js
 var dashboard = BoldBI.create({
      widgetContainerSettings: {
-          boxShadow: null,
+          boxShadow: "10px 10px lightblue",
      }
 });
 dashboard.loadDashboard();
@@ -2411,7 +2469,7 @@ Customize the margins of the widget with the corresponding integer values.
 ```js
 var dashboard = BoldBI.create({
      widgetContainerSettings: {
-          margin: null,
+          margin: 20,
      }
 });
 dashboard.loadDashboard();

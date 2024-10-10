@@ -134,6 +134,12 @@ The selected region of the chart is displayed in a drilled view.
 
 ![Drilled View](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-column-chart/hundredstackedcolumndrill.png)
 
+#### Drill up
+
+Once you've drilled down, you can drill up to the previous view using the breadcrumb navigator located at the top of the widget.
+
+![Drill up](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-column-chart/hundredstackedcolumndrillup.png)
+
 #### Adding Rows
 
 You can drag and drop the `Dimension` into the `Rows` field. 

@@ -13,6 +13,9 @@ You can perform various widget actions such as `Filtering`, `Linking`, `Drill Do
 
 ![widget with all option](/static/assets/visualizing-data/working-with-widgets/images/widget_action_with_all_option.png)
 
+>Note: Once you've drilled down, you can drill up to the previous view using the breadcrumb navigator located at the top of the widget.
+>![widget with drill up option](/static/assets/visualizing-data/working-with-widgets/images/Drill_Up.png)
+
 For the `Chart` widget, by default, view data support is enabled for all applicable widgets. So, if you select a chart bar without enabling filtering and linking support, it will automatically open the underlying data popup.
 
 ![widget selection](/static/assets/visualizing-data/working-with-widgets/images/chart_widget_bar_selection.png)

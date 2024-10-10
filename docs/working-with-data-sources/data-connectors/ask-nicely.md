@@ -29,7 +29,7 @@ Once you click on the data source, the NEW DATA SOURCE configuration panel opens
 1. Enter a name and description (optional) for the data source.
 2. Enter a valid Ask Nicely REST API endpoint in the URL textbox. Refer to the [AskNicely API documentation](https://asknicely.asknice.ly/help/apidocs) for more details.
 
-    Example: [https://your_asknicely_domain.asknice.ly/datafeed/v1/line?apikey=your_api_key](https://your_asknicely_domain.asknice.ly/datafeed/v1/line?apikey=your_api_key)
+    Example: `https://your_asknicely_domain.asknice.ly/datafeed/v1/line?apikey=your_api_key`
 
 3. Select the **GET** method for the REST API in the **Method** combo box.
 4. Choose a time interval for **Refresh Settings** using the combo box to trigger the REST API request periodically to keep the data in sync with our dashboard.
@@ -69,7 +69,7 @@ The period of time before the next refresh call is triggered. This will automati
 
 **Historical stats**
 
-[https://your_asknicely_domain.asknice.ly/datafeed/v1/stats?apikey=your_api_key](https://your_asknicely_domain.asknice.ly/datafeed/v1/stats?apikey=your_api_key)
+`https://your_asknicely_domain.asknice.ly/datafeed/v1/stats?apikey=your_api_key`
 
 ### Preview and data import
 * Click **Preview & Connect** to connect with the configurations that have been set.

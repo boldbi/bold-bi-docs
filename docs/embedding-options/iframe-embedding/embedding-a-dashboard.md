@@ -71,7 +71,7 @@ A dashboard can be embedded in the create, edit, and view modes of any applicati
 
 5. Please embed the copied URL into other web applications.
 
-6. When the web application is run, it will display either the login window or the dashboard, depending on the type of dashboard. Once you click on "login" and successfully log in with valid user credentials, the dashboard will automatically load. To bypass the login process, use [single sign-on](/embedding-options/iframe-embedding/dashboard-embedding-with-external-sso/).
+6. When the web application is run, it will display either the login window or the dashboard, depending on the type of dashboard. Once you click on "login" and successfully log in with valid user credentials, the dashboard will automatically load. To bypass the login process, use [token based authentication](/embedding-options/iframe-embedding/dashboard-embedding-with-token-authentication/).
 	
 	![EmbedLogin](/static/assets/iFrame-based/images/iframeLoginPage.png#max-width=45%) 
 	![EmbedViewDashboard](/static/assets/iFrame-based/images/embed-dashboard-view.png#max-width=85%)   
@@ -139,6 +139,12 @@ You can control which websites, IP addresses, and applications can embed the das
       <td><code>boolean</code></td>
       <td>Show/hide dashboard export option</td>
       <td>Show/hide widget export option</td> 
+    </tr>
+    <tr>
+      <td><code>hide_dashboard_edit</code></td>
+      <td><code>boolean</code></td>
+      <td>Show/hide the dashboard edit icon. By default the icon will be shown only if user has the permission to edit the specific dashboard otherwise it doesn't shown.</td>
+      <td>NA</td> 
     </tr>
     <tr>
       <td><code>hide_header</code></td>
@@ -275,7 +281,6 @@ To avoid login, use the Single Sign-On.
 
 
 > **NOTE:** To access Single Sign-On, click on the context menu of the corresponding dashboard and select the `Get Embed code` option. In the Embed Code dialog box, choose `Edit` as the Mode value. Enable SSO and select one of the following authentication methods:`Windows Active Directory`, `Azure Active Directory`, `OAuth 2.0` and `OpenID Connect`. This is similar to the Single Sign-On view mode.
-
 
 ## Embedding dashboard with filter parameter
 You can pass parameters to a dashboard by including them in the dashboard URL when embedding it. By passing parameter values within the URL, filters will be applied to the dashboard upon initial load. For more detailed information, you can learn more [here](/working-with-dashboards/preview-dashboard/urlparameters/#passing-parameter-with-url).  

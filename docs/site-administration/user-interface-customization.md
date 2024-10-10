@@ -72,31 +72,36 @@ This section contains a list of default left side menu options and custom menus.
 			"Order": 2,
 			"Scheme": ""
 		  },
-		  "Schedules": {
+		  "BoldETL": {
 			"ShowMenu": true,
 			"Order": 3,
 			"Scheme": ""
 		  },
-		  "Slideshows": {
+		  "Schedules": {
 			"ShowMenu": true,
 			"Order": 4,
 			"Scheme": ""
 		  },
-		  "Pinboards": {
+		  "Slideshows": {
 			"ShowMenu": true,
-			"Order": 5
+			"Order": 5,
+			"Scheme": ""
 		  },
-		  "Publish": {
+		  "Pinboards": {
 			"ShowMenu": true,
 			"Order": 6
 		  },
-		  "Users": {
+		  "Publish": {
 			"ShowMenu": true,
 			"Order": 7
 		  },
-		  "Settings": {
+		  "Users": {
 			"ShowMenu": true,
 			"Order": 8
+		  },
+		  "Settings": {
+			"ShowMenu": true,
+			"Order": 9
 		  },
 		  "Notifications": {
 			"ShowMenu": true,

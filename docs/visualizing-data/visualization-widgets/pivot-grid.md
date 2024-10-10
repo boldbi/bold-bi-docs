@@ -15,6 +15,10 @@ The pivot grid allows you to display summarized data in a cross-tabular format, 
 
 ![pivot-grid](/static/assets/visualizing-data/visualization-widgets/images/pivot-grid/pivot-grid-demo.png)
 
+## Cross Tab Configuration
+
+A [cross-tab](https://support.boldbi.com/kb/article/17400/utilizing-cross-tab-in-bold-bi) layout is a powerful way to visualize data intersections, providing a detailed breakdown of how different data dimensions interact. In a Pivot Grid, you can configure cross-tabs by defining rows and columns based on different data dimensions, creating a grid-like structure that summarizes data across multiple axes.
+
 ## How to configure table data to pivot grid?
 
 > **NOTE:** Before adding the Pivot grid widget to the design layout, make sure to create the data source. You can refer to [this section](/working-with-data-sources/creating-a-new-data-source/) to learn how to create a new data source.

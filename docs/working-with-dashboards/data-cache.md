@@ -88,7 +88,7 @@ After installation, you should start the Redis server as shown in the following 
 The mode should be either `in-memory` or `Redis`; the widget data will be cached based on the selected mode.
 
 ### Cache configuration
-Go to the `Data Process` settings on the server page and select the `Data Cache Configuration` tab.
+1. Go to the `Data Process` settings on the server page and select the `Data Cache Configuration` tab.
 
     ![DataCache configuration](/static/assets/working-with-dashboards/images/datacache_configuration.png#max-width=100%)
 
