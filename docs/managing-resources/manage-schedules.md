@@ -53,6 +53,10 @@ Schedules can only be created if the user has the `Create All Schedules` permiss
 
     ![Select view](/static/assets/managing-resources/images/select-view.png)
 
+* Provide the valid parameter. For instructions on how to create parameters in Bold BI, please refer to this [link](/working-with-data-sources/dashboard-parameter/).
+
+![Provide parameter](/static/assets/managing-resources/images/parameter.png)
+
 ### Add schedule from dashboard viewer page
 
 If the user has `Read` permission for a specific dashboard and `Create` permission for the schedule, then they can create a schedule in that dashboard.
@@ -69,7 +73,7 @@ To learn about creating a schedule on the dashboard viewer page, please check [t
 
 	![Default Values](/static/assets/managing-resources/images/category-dashboard-preselect.png)
 
-> **NOTE:** Categories, Dashboards, Views, and Widgets can be changed from schedule dialog box itself.
+> **NOTE:** Categories, Dashboards, Views, Widgets and Parameter can be changed from schedule dialog box itself.
 
 * After adding schedule details, click `Next` in the schedule dialog. 
 

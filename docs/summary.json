@@ -54,6 +54,7 @@
 				"Bold BI on CentOS": "bold-bi-on-centos",
 				"Bold BI on Oracle": "bold-bi-on-oracle",
 				"Bold BI on RHEL": "bold-bi-on-redhat",
+				"Bold BI on SUSE 15 Linux": "bold-bi-on-open",
 				"Auto Deployment": "auto-deployment",
 				"Bold BI over Bold Reports": "bold-bi-over-bold-reports"
 			},
@@ -91,17 +92,13 @@
 	},
 	"Embedding Options": {
 		"Application Embedding in Bold BI Enterprise": "application-embedding",
+		"Embedding SDK VS iFrame Embedding":"embedding-sdk-vs-iframe-embedding",
 		"Embedding SDK": {
-			"Embedding a dashboard using javascript" : "embedding-using-javascript",
-			"Embedding Dashboard Designer": "embedding-dashboard-designer",
-			"Embedding a Widget": "embedding-a-widget",
-			"Embedding a datasource": "embedding-a-datasource",
-			"Embedding multiple dashboards and widgets": "embedding-multiple-dashboards-and-widgets",
-			"Embedding Pinboard": "embedding-pinboard",
-			"Embedding Dashboard with View": "embedding-the-dashboard-with-views",
+			"Embedding using javascript" : "embedding-using-javascript",
+			"Token Generation" : "token-generation",
+			"Guidelines for Single and Multi Site": "guidelines-for-single-site-multi-site",
 			"Custom Theme Embedding": "custom-theme-embedding",
 			"Types of Data Filtering": "types-of-data-filtering-in-embedding",
-			"Embedding Multitab Dashboard Programmatically": "embedding-multitab-dashboard-programmatically",
 			"Embedding API Reference": {
 				"Members": "members.md",
 				"Methods": "methods.md",
@@ -141,16 +138,10 @@
 			}
 		},
 		"iFrame Embedding": {
-			"Embedding a Dashboard": "embedding-a-dashboard",
-			"Dashboard Embedding with Token Authentication": "dashboard-embedding-with-token-authentication",
-			"Embedding a Dashboard with external SSO":"dashboard-embedding-with-external-sso",
-			"Embedding a Dashboard with Views": "embedding-a-dashboard-with-views",
-			"Embedding a widget": "embedding-a-widget",
-			"Widget Embedding with Token Authentication": "widget-embedding-with-token-authentication",
+			"Embedding with iframe" : "embedding-with-iframe",
+			"Embedding with Token Authentication": "embedding-with-token-authentication",
 			"Secured Embedding": "secured-embedding",			
 			"Get Data source URL": "get-datasource-url",
-			"Datasource Embedding": "datasource-embedding",
-			"Datasource embedding with Token Authentication": "datasource-embedding-with-token-authentication",
 			"Sample": {
 				"Dashboard Embedding": {
 					"ASP.NET MVC": "asp.net-mvc",
@@ -359,7 +350,7 @@
 		"Deleting a Data Source": "deleting-a-data-source",
 		"Renaming a Data Source": "renaming-a-data-source",
 		"Importing a Data Source": "using-an-existing-data-source",
-		"Combine Data Source": "combine-data-sources",
+		"Append Data Source": "append-data-sources",
 		"Editing a Data Connection": "editing-a-data-connection",
 		"Working With Connected Accounts": "working-with-connected-accounts",
 		"User Filter": {
@@ -368,7 +359,7 @@
 			"Query": "user-filter-advanced-query-mode"
 		},
 		
-		"Working with Bold ETL":{
+		"Working with Bold Data Hub":{
 			"Data Store": "data-store",
 		"Working with Projects": "working-with-projects",
 		"Transformation and Preview": "transformation-preview",
@@ -380,10 +371,10 @@
 			"GitHub": "github",
 			"Google Analytics": "google-analytics",
 			"Google Sheets": "google-sheets",			
-			"Matomo": "head-less",
+			"Matomo": "matomo",
 			"HubSpot": "hubspot",			
 			"Jira": "jira",			
-			"Microsoft SQL Server": "sql",
+			"Microsoft SQL Server": "microsoft-sql-server",
 			"MongoDB": "mongodb",
 			"Mux": "multiplexer",
 			"MySQL": "mysql",
@@ -397,7 +388,7 @@
 			"Slack": "slack",
 			"Web": "web",			
 			"Stripe": "strip",
-			"Strapi": "web-analytics",
+			"Strapi": "strapi",
 			"Workable": "workable",
 			"Zendesk Chart": "zendesk-chart",
 			"Zendesk Support": "zendesk-support",
@@ -566,6 +557,7 @@
 		"Known Domain Configuration": "known-domain-configuration",
 		"Content Security Policy Settings": "content-security-policy",
 		"X-Frame-Options Configuration": "x-frame-options",
+		"IP Whitelisting Configuration":"network-settings",
 		"Syncfusion Cloud Managed Service": "security-in-cloud-bi",
 		"Self Deployment": "security-in-embed-bi",
         "Group Based Authorization":"group-based-authorization",
@@ -594,6 +586,7 @@
 		  "Lock Resource Synchronization" : "lock-resource-synchronization"
         },
 		"Embed Settings": "embed-settings",
+		"Audit Logs": "audit-logs",
         "Email Settings": {
           "Configuration": {
 			  "SMTP": "smtp-account",
@@ -712,6 +705,7 @@
 		"Site Administration": {
 			"Rebranding": "rebranding",
 			"Email Settings": "email-settings",
+			"Audit Logs": "audit-logs",
 			"Account Settings": "account-settings",
 			"API Keys": "api-keys",
 			"Authentication": {

@@ -64,23 +64,10 @@ This section provides instructions for deploying Bold BI in Linux without manual
       sudo yum install epel-release </br>
       sudo yum install libgdiplus</b>
       </td>
-    </tr>
-    <tr>
-      <td>
-       4.
-      </td>
-      <td>
-      Install <b>pv</b> tool by running below command. </br> </br>
-      <b>sudo apt-get install pv</b>
-      </td>
-      <td>
-      Install <b>pv</b> tool by running below command. </br> </br>
-      <b>sudo yum install pv</b>
-      </td>
     </tr> 
     <tr>
       <td>
-       5.
+       4.
       </td>
       <td>
       Install the <b>Python3</b> for ETL service by running the following command:</br> </br>
@@ -94,7 +81,7 @@ This section provides instructions for deploying Bold BI in Linux without manual
     </tr> 
     <tr>
       <td>
-      6.
+      5.
       </td>
       <td>
       Install <b>python pip</b> by running the below command:</br> </br>
@@ -107,20 +94,20 @@ This section provides instructions for deploying Bold BI in Linux without manual
     </tr> 
     <tr>
       <td>
-       7.
+       6.
       </td>
       <td>
       Install pip dependency package for ETL service by running the following command: </br> </br>
-      <b>sudo pip install duckdb===0.9.2 dlt===0.4.2 pymysql pyodbc pg8000 poetry pandas===2.0.0 "dlt[parquet]" "dlt[filesystem]"</b>
+      <b>sudo pip install duckdb===1.0.0 dlt===0.5.4 pymysql pyodbc pg8000 poetry pandas===2.2.2 "dlt[parquet]" "dlt[filesystem]"</b>
       </td>
       <td>
       Install pip dependency package for ETL service by running the following command: </br> </br>
-      <b>python3.9 -m pip install duckdb===0.9.2 dlt===0.4.2 pymysql pyodbc pg8000 poetry pandas===2.0.0 "dlt[parquet]" "dlt[filesystem]"</b>
+      <b>python3.9 -m pip install duckdb===1.0.0 dlt===0.5.4 pymysql pyodbc pg8000 poetry pandas===2.2.2 "dlt[parquet]" "dlt[filesystem]"</b>
       </td>
     </tr> 
     <tr>
       <td>
-       8.
+       7.
       </td>
       <td>
       Add an <b>openssl conf</b> path in the environment, if does not exist. </br> </br>
@@ -186,7 +173,7 @@ The following variable is necessary to configure a startup application on the ba
        Yes
       </td>
       <td>
-      Installation type - Specifies whether it is a new or upgrade installation.
+      Installation type - Specify it as new.
       </td>
     </tr>
     <tr>
@@ -197,7 +184,7 @@ The following variable is necessary to configure a startup application on the ba
        Yes 
       </td>
       <td>
-        Installation type - Specifies whether it is a new or upgrade installation.
+        Specify the user or group that manages the service. Make sure this user exists on your Linux server.
       </td>
     </tr>
     <tr>
@@ -390,6 +377,28 @@ The following variable is necessary to configure a startup application on the ba
       If you want to customize the identifier name, enter the identifier name as a value. The default identifier name is <b>site1</b>
       </td>
     </tr> 
+    <tr>
+      <td>
+       <b> optionallibs </b>
+      </td>
+      <td>
+       No
+      </td>
+      <td>
+      To install the client libraries, provide the values as a comma-separated string. The client libraries used in Bold BI are "mongodb,influxdb,snowflake,mysql,oracle,google,clickhouse". You need to add the names only for the libraries, which you are consenting to use with Bold BI application.
+      </td>
+    </tr>
+    <tr>
+      <td>
+       <b> installdatahub </b>
+      </td>
+      <td>
+       No
+      </td>
+      <td>
+      By setting this value to "true," the ETL application will be installed automatically alongside Bold BI. If this parameter is not specified, a confirmation pop-up will prompt for the ETL installation. 
+      </td>
+    </tr>
     </table>
 
 Example for silent installation:

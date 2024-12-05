@@ -158,6 +158,12 @@
             "description":{
                 "$ref":"./../../common/api-reference/helperswagger.json#/webhooksdescription/getwebhooksdescription"
             }
+        },
+        {
+            "name": "Activity Logs",
+            "description":{
+                "$ref":"./../../common/api-reference/helperswagger.json#/activitydescription/getactivitydescription"
+            }
         }
     ],
     "paths": {
@@ -4353,7 +4359,7 @@
                 "tags": [
                     "DataSource"
                 ],
-                "summary": "Obtain the linked data source(s) for a tables/views/stored procedure",
+                "summary": "Get linked data source(s) for tables/views/stored procedure",
                 "description": "Fetch details about data sources linked to a specific tables/views/stored procedure.",
                 "operationId": "DataSource_GetDatasourceTables",
                 "parameters": [
@@ -4366,27 +4372,27 @@
                         "explode": false,
                         "schema": {
                             "type": "string",
-                            "format": "guid",
                             "nullable": false
                         }
                     }
                 ],
                 "responses": {
-                    "200": {
+                   "200": {
                         "description": "Data Source details was retrieved successfully.",
                         "content": {
                             "application/json": {
-                              "schema": {
-                                "type": "array",
-                                "items": {
-                                  "$ref": "#/components/schemas/Api-Items"
+                                "schema": {
+                                    "$ref": "#/components/schemas/PaginatedApi_Response"
                                 }
-                              }
                             }
-                          }
+                        }
                     },
                     "204": {
                         "description": "No content.",
+                        "content": {}
+                    },
+                    "400": {
+                        "description": "Bad Request.",
                         "content": {}
                     },
                     "401": {
@@ -6670,7 +6676,7 @@
               "Settings"
             ],
             "summary": "Update Dashboard Settings",
-            "description": "Users who have admin rights permissions to dashboard settings can update the dashboard settings.",
+            "description": "Users who have admin rights permissions to dashboard settings can update the dashboard settings.\n\n<B> **Note:** </B> Cannot set true or enable performance metrics/query metrics, when usage analytics is disabled.",
             "operationId": "Administration_UpdateDashboardSettings",
             "requestBody": {
               "description": "The details of the dashboard settings that have been passed will be updated.",
@@ -7515,6 +7521,83 @@
                     "401": {
                         "description": "Access denied",
                         "content": {}
+                    }
+                }
+            }
+        },
+        "/v5.0/settings/security/networking/ip-whitelist": {
+            "get": {
+                "tags": [
+                    "Settings"
+                ],
+                "summary": "Get IP whitelisting Settings",
+                "description": "Retrieve the IP whitelisting setting details of the particular site if the user has admin rights for the IP whitelisting settings.",
+                "operationId": "Administartion_GetIPWhitelistingSettings",
+                "responses": {
+                    "200": {
+                        "description": "IP whitelisting settings details have been retrieved successfully.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ApiIPWhitelistingSettings"
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Access denied",
+                        "content": {}
+                    },
+                    "405":{
+                        "description": "Request type was not get",
+                        "content": {}
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Settings"
+                ],
+                "summary": "Update IP whitelisting settings",
+                "description": "Users who have admin rights permissions for IP whitelisting settings can update the IP whitelisting settings.",
+                "operationId": "Administartion_UpdateIPWhitelistingSettings",
+                "requestBody": {
+                    "description": "The updated IP whitelisting settings that have been passed will be updated with the details.",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/IPWhitelistingResponse"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "IP whitelisting settings details has been updated successfully.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ApiResponse"
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Access denied",
+                        "content": {}
+                    },
+                    "405":{
+                        "description":"Request type was not post",
+                        "content": {}
+                    },
+                    "404":{
+                        "description":"Content of the request is empty or missing",
+                        "content": {}
+                    },
+                    "417":{
+                        "description":"Failed to update IP whitelisting setting",
+                         "content": {}
                     }
                 }
             }
@@ -9209,6 +9292,136 @@
                     }
                 }
             }
+        },
+        "/v5.0/settings/user-activity-logs":{
+            "get": {
+                "tags": [
+                    "Activity Logs"
+                ],
+                "summary": "Get Activity Logs",
+                "description": "Retrieve a list of activities performed in the item module. This endpoint allows site administrators to filter logs based on various parameters such as event category, event type, user email, tenant ID, app source, and date range.",
+                "operationId": "ActivityLogs_GetAllActivityLogs",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "name": "eventCategory",
+                        "in": "query",
+                        "required": false,
+                        "description": "Specify the category of the event. Allowed values are <code>User, Permission, Settings</code>.",
+                        "schema": {
+                            "type": "string",
+                            "nullable": false
+                        }
+                    },
+                    {
+                        "type": "string",
+                        "name": "eventType",
+                        "in": "query",
+                        "required": false,
+                        "description": "Specify the type of the event. Allowed values are <code>Added, Updated, Deleted</code>.",
+                        "schema": {
+                            "type": "string",
+                            "nullable": false
+                        }
+                    },
+                    {
+                        "type": "string",
+                        "name": "initiatedUserEmail",
+                        "in": "query",
+                        "required": false,
+                        "description": "Specify the email address of the user who initiated the event.",
+                        "schema": {
+                            "type": "string",
+                            "nullable": false
+                        }
+                    },
+                    {
+                        "type": "string",
+                        "name": "targetUserEmail",
+                        "in": "query",
+                        "required": false,
+                        "description": "Specify the email address of the user who was targeted by the event.",
+                        "schema": {
+                            "type": "string",
+                            "nullable": false
+                        }
+                    },
+                    {
+                        "type": "string",
+                        "name": "tenantId",
+                        "in": "query",
+                        "required": false,
+                        "description": "Specify the Tenant ID.",
+                        "schema": {
+                            "type": "string",
+                            "nullable": false
+                        }
+                    },
+                    {
+                        "type": "string",
+                        "name": "appSource",
+                        "in": "query",
+                        "required": false,
+                        "description": "Specify the source application of the event. Allowed values are <code>BI, UMS</code>.",
+                        "schema": {
+                            "type": "string",
+                            "nullable": false
+                        }
+                    },
+                    {
+                        "type": "string",
+                        "name": "eventStartDate",
+                        "in": "query",
+                        "required": false,
+                        "description": "Specify the UTC start date to filter logs within a specific date range. The format should be ISO 8601: `yyyy-MM-ddTHH:mm:ssZ`.",
+                        "format": "date-time",
+                        "schema": {
+                            "type": "string",
+                            "nullable": false
+                        }
+                    },
+                    {
+                        "type": "string",
+                        "name": "eventEndDate",
+                        "in": "query",
+                        "required": false,
+                        "description": "Specify the UTC end date to filter logs within a specific date range. The format should be ISO 8601: `yyyy-MM-ddTHH:mm:ssZ`.",
+                        "format": "date-time",
+                        "schema": {
+                            "type": "string",
+                            "nullable": false
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "The list of activity logs was retrieved successfully.",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ApiGetAuditlogsPaginatedResponse"
+                                }
+                            }
+                        }
+                    },
+                    "204":{
+                        "description": "Log is empty",
+                        "content": {}
+                    },
+                    "400": {
+                        "description": "Invalid log module",
+                        "content": {}
+                    },
+                    "401":{
+                        "description":"Access denied",
+                        "content":{}
+                    },
+                    "405": {
+                        "description": "Request type was not GET.",
+                        "content": {}
+                    }
+                }
+            }
         }
     },
     "components": {
@@ -9900,14 +10113,47 @@
                     }
                 }
             },
-            "Api-Items": {
+            "PaginatedApi_Response": {
                 "type": "object",
                 "properties": {
                     "Data": {
                         "type": "array",
+                        "description": "Returns data from the API.",
+                        "items": {
+                            "$ref": "#/components/schemas/Api-Items"
+                        }
+                    },
+			       "TotalResults": {
+                        "type": "integer",
+                        "description": "Returns items count of the API request.",
+                        "format": "int32"
+                    },
+                    "Links": {
+                        "type": "array",
+                        "description": "Returns pagination links.",
                         "items": {
                             "type": "object",
                             "properties": {
+                                "Link": {
+                                    "type": "string",
+                                    "description": "URL of the pagination link."
+                                },
+                                "Rel": {
+                                    "type": "string",
+                                    "description": "Relationship type (e.g., first, last)."
+                                },
+                                "Type": {
+                                    "type": "string",
+                                    "description": "Type of the request (e.g., GET)."
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "Api-Items": {
+                "type": "object",
+                  "properties": {
                                 "CanRead": {
                                     "type": "boolean",
                                     "description": "Specifies the read permission of the item."
@@ -10025,36 +10271,7 @@
                                     "type": "string",
                                     "description": "Specifies the provider type (e.g., postgresql)."
                                 }
-                            }
-                        }
-                    },
-                    "TotalResults": {
-                        "type": "integer",
-                        "description": "Total number of results in the API request.",
-                        "format": "int32"
-                    },
-                    "Links": {
-                        "type": "array",
-                        "description": "Array of pagination links.",
-                        "items": {
-                            "type": "object",
-                            "properties": {
-                                "Link": {
-                                    "type": "string",
-                                    "description": "URL of the pagination link."
-                                },
-                                "Rel": {
-                                    "type": "string",
-                                    "description": "Relationship type (e.g., first, last)."
-                                },
-                                "Type": {
-                                    "type": "string",
-                                    "description": "Type of the request (e.g., GET)."
-                                }
-                            }
-                        }
-                    }
-                }            
+                            }        
             },
             "ApiItems": {
                 "type": "object",
@@ -10355,7 +10572,7 @@
                         "type" : "boolean",
                         "description" : "Specify true to update the dashboard as public."
                     },
-                    "Unlisted": {
+                    "IsUnlisted": {
                         "type": "boolean",
                         "description" : "Specify true to update the dashboard as unlisted."
                     }
@@ -11222,6 +11439,11 @@
                     "Description": {
                         "type": "string",
                         "description": "Category description."
+                    },
+                    "ParentId": {
+                        "type": "string",
+                        "description": "Parent category's Id.",
+                        "format": "guid"
                     }
                 },
                 "description": "Category details."
@@ -11697,6 +11919,11 @@
                         "description": "Specifies the Widget ID to schedule that specific dashboard widget.",
                         "format": "guid"
                     },
+                    "Parameter":
+                    {
+                        "type":"string",
+                        "description": "Specifies the parameter."
+                    },
                     "ExportType": {
                         "type": "string",
                         "description": "Specifies the export type to schedule the dashboard.<br />Values allowed are <code>Excel, Pdf, Image</code>"
@@ -11817,9 +12044,187 @@
                                 "$ref": "#/components/schemas/ApiYearlySchedule"
                             }
                         ]
+                    },
+                    "EnableDataAlert": {
+                        "type": "boolean",
+                        "description": "Returns true, if schedule data alert is enabled."
+                    },
+                    "DashboardId": {
+                        "type": "string",
+                        "description": "ID of the dashboard (Required if data alert is enabled).",
+                        "format": "guid"
+                    },
+                    "DataSourceName": {
+                        "type": "string",
+                        "description": "Name of the data source (Required if data alert is enabled)."
+                    },
+                    "WidgetName": {
+                        "type": "string",
+                        "description": "Name of the widget (Required if data alert is enabled)."
+                    },
+                    "ConditionCategory": {
+                        "type": "string",
+                        "description": "Specifies the type of data alert trigger to export the dashboard.<br />Values allowed are <code>Value Changes, Increases, Continuously Increases, Decreases, Continuously Decreases</code> (Required if data alert is enabled)"
+                    },
+                    "ConditionalResult": {
+                        "type": "object",
+                        "description": "Specifies the result of the filter condition (Required if data alert is enabled).",
+                        "required": [
+                          "ConditionalInformations"
+                        ],
+                        "properties": {
+                            "ConditionalInformations": {
+                                "type": "object",
+                                "description": "Specifies the details of the filter condition.",
+                                "allOf": [
+                                    {
+                                        "$ref": "#/components/schemas/ConditionalInformations"
+                                    }
+                                ]
+                            }
+                        }
                     }
-                },
-                "description": "Details about the schedule that was passed will be added."
+                }
+            },
+            "ConditionalInformations": {
+                "required": [
+                    "ConditionalInfoColleciton"
+                ],
+                "properties": {
+                    "ConditionalInfoColleciton": {
+                        "type": "array",
+                        "description": "Specifies the filter configuration.",
+                        "required": [
+                          ""
+                        ],
+                        "items": {
+                            "$ref": "#/components/schemas/ConditionalInfoColleciton"
+                        }
+                    },
+                    "GlobalFilters": {
+                        "type": "array",
+                        "description": "Specifies the global filters, such as the WHERE condition.",
+                        "items": {
+                            "$ref": "#/components/schemas/GlobalFilters"
+                        }
+                    }
+                }
+            },
+            "ConditionalInfoColleciton": {
+                "required": [
+                    "ConditionJoinType",
+                    "RelationalOperators",
+                    "FilterName",
+                    "LeftOperand"
+                ],
+               "properties": {
+                    "ConditionJoinType": {
+                        "type": "string",
+                        "description": "Specifies the type of join for the column filter. Determines how multiple filter conditions should be combined.<br />Values allowed are <code>AND, OR, AND NOT, OR NOT</code>"
+                    },
+                    "RelationalOperators": {
+                        "type": "string",
+                        "description": "Specifies the type of relational operator to use for filtering values in a column.<br />Values allowed are <code>GREATERTHAN, GREATERTHANOREQUALS, LESSTHAN, LESSTHANOREQUALS, EQUALS, NOTEQUALS</code>"
+                    },
+                    "IsCustomValue": {
+                        "type": "boolean",
+                        "description": "Returns true, if custom filter is enabled."
+                    },
+                    "CustomValue": {
+                        "type": "string",
+                        "format": "int32",
+                        "description": "Specifies the custom value.\n\n**Note:** If IsCustomValue is set to true, a custom value must be provided."
+                    },
+                    "FilterId": {
+                        "type": "string",
+                        "description": "Specifies the filter Id.",
+                        "format": "guid"
+                    },
+                    "FilterName": {
+                        "type": "string",
+                        "description": "Specifies the filter name.\n\n**Note:** The syntax for the filter name is in the format Filter(count); for example, Filter1. You can increase the prefix count to add more filters."
+                    },
+                    "LeftOperand": {
+                        "type": "object",
+                        "description": "Specifies the details of the column to be used for the left-hand side of a filter condition.",
+                        "properties": {
+                            "ColumnName": {
+                                "type": "string",
+                                "description": "Specifies the column name."
+                            }
+                        }
+                    },
+                    "RightOperand": {
+                        "type": "object",
+                        "description": "Specifies the details of the column to be used for the right-hand side of a filter condition.\n\n**Note:** If IsCustomValue is set to false, then RightOperand is required.",
+                        "properties": {
+                            "ColumnName": {
+                                "type": "string",
+                                "description": "Specifies the column name."
+                            }
+                        }
+                    },
+                    "Filters": {
+                        "type": "array",
+                        "description": "Specifies a filter to be applied to a specific column.",
+                        "items": {
+                            "$ref": "#/components/schemas/GlobalFilters"
+                        }
+                    }
+                }
+            },
+            "GlobalFilters": {
+                "required": [
+                    "JoinType",
+                    "Field",
+                    "Condition"
+                ],
+                "properties": {
+                    "JoinType": {
+                        "type": "string",
+                        "description": "Specifies the type of join for the column filter. Determines how multiple filter conditions should be combined.<br />Values allowed are <code>AND, OR</code>"
+                    },
+                    "Field": {
+                        "type": "object",
+                        "description": "Specifies the structure and details of the columns used for filtering data.",
+                        "required": [
+                            "ColumnName"
+                        ],
+                        "properties": {
+                            "ColumnName": {
+                                "type": "string",
+                                "description": "Specifies the column name."
+                            }
+                        }
+                    },
+                    "Condition": {
+                        "type": "object",
+                        "description": "Specifies the details of the where condition used to filter data.",
+                        "required": [
+                            "ConditionType",
+                            "Conditions",
+                            "Values"
+                        ],
+                        "properties": {
+                            "ConditionType": {
+                                "type": "string",
+                                "description": "Specifies the type of condition being specified.<br />Values allowed are <code>ACTUAL, CUSTOM</code>"
+                            },
+                            "Conditions": {
+                                "type": "string",
+                                "description": "Specifies the condition to be applied on the column.<br />Values allowed are <code>CONTAINS, START WITH, ENDS WITH, NOT CONTAINS, INCLUDES, EXCLUDES</code>"
+                            },
+                            "Values": {
+                                "type": "array",
+                                "description": "Specifies the column values.",
+                                "items": {
+                                    "type": "string",
+                                    "format": "string"
+                                }
+                            }
+                        }
+                    }
+                }
             },
             "ScheduleExportFormat": {
                 "type": "object",
@@ -12422,6 +12827,10 @@
                     "RecurrenceType": {
                         "type": "string",
                         "description": "Specifies the recurrence type, whether the schedule recurs every day or every working day.<br />Values allowed are <code>EveryNdays, EveryWeekday</code>\n\n**Note:** If you choose the recurrence type as EveryNdays, provide a value to the `EveryNdays` property, and leave the (EveryWeekday) property empty."
+                    },
+                    "Parameter": {
+                        "type": "string",
+                        "description": "Specifies the parameter value."
                     }
                 },
                 "description": "Schedule item detail."
@@ -12456,6 +12865,10 @@
                         "type":"string",
                         "description": "Specifies the Widget ID to schedule that specific dashboard widget.",
                         "format": "guid"
+                    },
+                    "Parameter": {
+                        "type": "string",
+                        "description": "Specifies the parameter."
                     },
                     "ExportType": {
                         "type": "string",
@@ -12603,6 +13016,45 @@
                                 "$ref": "#/components/schemas/ApiYearlySchedule"
                             }
                         ]
+                    },
+                    "EnableDataAlert": {
+                        "type": "boolean",
+                        "description": "Returns true, if schedule data alert is enabled."
+                    },
+                    "DashboardId": {
+                        "type": "string",
+                        "description": "ID of the dashboard (Required if data alert is enabled).",
+                        "format": "guid"
+                    },
+                    "DataSourceName": {
+                        "type": "string",
+                        "description": "Name of the data source (Required if data alert is enabled)."
+                    },
+                    "WidgetName": {
+                        "type": "string",
+                        "description": "Name of the widget (Required if data alert is enabled)."
+                    },
+                    "ConditionCategory": {
+                        "type": "string",
+                        "description": "Specifies the type of data alert trigger to export the dashboard.<br />Values allowed are <code>Value Changes, Increases, Continuously Increases, Decreases, Continuously Decreases</code> (Required if data alert is enabled)"
+                    },
+                    "ConditionalResult": {
+                        "type": "object",
+                        "description": "Specifies the result of the filter condition (Required if data alert is enabled).",
+                        "required": [
+                          "ConditionalInformations"
+                        ],
+                        "properties": {
+                            "ConditionalInformations": {
+                                "type": "object",
+                                "description": "Specifies the details of the filter condition.",
+                                "allOf": [
+                                    {
+                                        "$ref": "#/components/schemas/ConditionalInformations"
+                                    }
+                                ]
+                            }
+                        }
                     }
                 },
                 "description": "Details about the schedule that was passed will be updated."
@@ -13187,6 +13639,14 @@
                 "UsageAnaylticsEnabled": {
                   "type": "boolean",
                   "description": "Returns true, if the usage analytics dashboard setting is enabled."
+                },
+                "PerformanceMetricsEnabled": {
+                    "type": "boolean",
+                    "description": "Returns true, if the performance metrics dashboard setting is enabled."
+                },
+                "QueryMetricsEnabled": {
+                    "type": "boolean",
+                    "description": "Returns true, if the query metrics dashboard setting is enabled."
                 }
               }
             },
@@ -13217,6 +13677,14 @@
                   "type": "boolean",
                   "description": "Specify true to enable usage analytics dashboard setting.",
                   "nullable": true
+                },
+                "PerformanceMetricsEnabled": {
+                    "type": "boolean",
+                    "description": "Specify true to enable the performance metrics dashboard setting."
+                },
+                "QueryMetricsEnabled": {
+                "type": "boolean",
+                "description": "Specify true to enable the query metrics dashboard setting."
                 }
               }
             },
@@ -14416,6 +14884,26 @@
                 },
                 "description": "Deployment dashboards details."
             },
+            "ApiIPWhitelistingSettings":{
+                "type": "object",
+                "properties":{
+                    "ApiStatus": {
+                        "type": "boolean",
+                        "description": "Returns the status of the API."
+                    },
+                    "Data": {
+                        "type": "array",
+                        "description": "Returns data from the API.",
+                        "items": {
+                            "$ref": "#/components/schemas/IPWhitelistingResponse"
+                        }
+                    },
+                    "StatusMessage": {
+                        "type": "string",
+                        "description": "Returns the status message from the API."
+                    }
+                }
+            },
             "ApiXFrameOptionsSettings ": {
                 "required":[
                     "IsXFrameOptionsEnabled"
@@ -14590,11 +15078,11 @@
             },
             "ApiUpdateDashboardUnlist": {
                 "required":[
-                    "Unlisted"
+                    "IsUnlisted"
                 ],
                 "type" : "object",
                 "properties": {
-                    "Unlisted": {
+                    "IsUnlisted": {
                         "type": "boolean",
                         "description" : "Specify true to update the dashboard as unlisted."  
                     }
@@ -15128,6 +15616,48 @@
                         "items": {
                             "$ref": "#/components/schemas/Links"
                         }
+                    }
+                }
+            },
+            "IPWhitelistingResponse": {
+                "required": [
+                    "IsEnabled",
+                    "IPWhitelistingRules"
+                ],
+                "type": "object",
+                "properties": {
+                    "IsEnabled": {
+                        "type": "boolean",
+                        "description":  "Specify true to enable the IP whitelisting settings."
+                    },
+                    "IPWhitelistingRules":{
+                        "type": "array",
+                        "description": "Specified IP whitelisting rules allows access to the application.",
+                        "items": {
+                            "$ref": "#/components/schemas/IPWhitelistingRulesResponse"
+                        }
+                    }
+                }
+            },
+            "IPWhitelistingRulesResponse":{
+                "required": [
+                    "RuleName",
+                    "IPAddress",
+                    "IPAddressType"
+                ],
+                "type":"object",
+                "properties":{
+                    "RuleName":{
+                        "type": "string",
+                        "description": "Specify rule name."
+                    },
+                    "IPAddress":{
+                        "type": "string",
+                        "description": "Specify IP address value."
+                    },
+                    "IPAddressType":{
+                        "type": "string",
+                        "description": "Specify IP address type."
                     }
                 }
             },
@@ -16681,7 +17211,172 @@
                     }
                 },
                 "description": "Data source columns details."
-            }
+            },
+            "ApiGetAuditlogsPaginatedResponse": {
+                "type": "object",
+                "properties": {
+                    "Data":{
+                        "type": "array",
+                        "description" : "Returns data from the API.",
+                        "items":{
+                            "$ref": "#/components/schemas/ApiGetAuditLog"
+                        }
+                    },
+                    "TotalResults": {
+                        "type": "integer",
+                        "description": "Returns items count of the API request.",
+                        "format": "int32"
+                    },
+                    "Links": {
+                        "type": "array",
+                        "description": "Returns pagination links.",
+                        "items": {
+                            "$ref": "#/components/schemas/Links"
+                        }
+                    }
+                }
+            },
+            "ApiGetAuditLog": {
+                "type": "object",
+                "properties": {
+                "EventTargetUserName": {
+                    "type": "string",
+                    "description": "The username of the individual targeted by the event in the activity log."
+                },
+                "EventTargetDisplayName": {
+                    "type": "string",
+                    "description": "The display name of the individual targeted by the event in the activity log."
+                },
+                "InitiatedUserName": {
+                    "type": "string",
+                    "description": "The username of the individual who initiated the event recorded in the activity log."
+                },
+                "InitiatedDisplayName": {
+                    "type": "string",
+                    "description": "The display name of the individual who initiated the event recorded in the activity log."
+                },
+                "EventDateformat": {
+                    "type": "string",
+                    "description": "The formatted string representing the date and time when the event was recorded in the activity log."
+                },
+                "InitiatedUserEmail": {
+                    "type": "string",
+                    "description": "The email address of the user who initiated the event recorded in the activity log."
+                },
+                "TargetUserEmail": {
+                    "type": "string",
+                    "description": "The email address of the individual targeted by the event in the activity log."
+                },
+                "EventDate": {
+                    "type": "string",
+                    "description": "The date and time when the event was recorded in the activity log."
+                },
+                "EventCategory": {
+                    "type": "integer",
+                    "description": "The numerical identifier representing the category of the event recorded in the activity log."
+                },
+                "EventType": {
+                    "type": "integer",
+                    "description": "The numerical identifier representing the specific type of event recorded in the activity log."
+                },
+                "AppSource": {
+                    "type": "string",
+                    "description": "The source application from which the event was generated in the activity log."
+                },
+                "AppType": {
+                    "type": "string",
+                    "description": "The type of application (e.g., API, Web) from which the event was generated in the activity log."
+                },
+                "EventCategoryString": {
+                    "type": "string",
+                    "description": "The string representation of the event category in the activity log."
+                },
+                "EventTypeString": {
+                    "type": "string",
+                    "description": "The string representation of the event type in the activity log."
+                },
+                "UserLogDetail": {
+                    "type": "object",
+                    "description": "Details about the user activity that was logged, including the IP address and user agent.",
+                    "allOf": [
+                    {
+                        "$ref": "#/components/schemas/UserLogDetails"
+                    }
+                    ]
+                },
+                "Summary": {
+                    "type": "string",
+                    "description": "A brief summary or description of the activity recorded in the log."
+                }
+              }
+            },
+            "UserLogDetails": {
+                "type": "object",
+                "properties": {
+                "IpAddress": {
+                    "type": "string",
+                    "description": "The IP address from which the activity was logged."
+                },
+                "EventLog": {
+                    "type": "object",
+                    "description": "Details of the event associated with the logged activity, including any changes made.",
+                    "allOf": [
+                    {
+                        "$ref": "#/components/schemas/EventLog"
+                    }
+                    ]
+                },
+                "UserAgent": {
+                    "type": "string",
+                    "description": "The user agent string that identifies the device and browser used during the logged activity."
+                }
+              }
+            },
+            "EventLog": {
+                "type": "object",
+                "properties": {
+                "ChangeLogCollection": {
+                    "type": "array",
+                    "description": "A collection of change logs that detail the specific changes made during the logged event.",
+                    "items": {
+                    "$ref": "#/components/schemas/ChangeLogCollection"
+                    }
+                }
+              }
+            },
+            "ChangeLogCollection": {
+                "type": "object",
+                "properties": {
+                "ChangedItem": {
+                    "type": "string",
+                    "description": "The name of the item that was changed during the logged event."
+                },
+                "ChangeLog": {
+                    "type": "array",
+                    "description": "A list of specific changes that were made to the `ChangedItem` during the logged event.",
+                    "items": {
+                    "$ref": "#/components/schemas/ChangeLog"
+                    }
+                }
+              }
+            },
+            "ChangeLog": {
+                "type": "object",
+                "properties": {
+                "ChangedItem": {
+                    "type": "string",
+                    "description": "The specific item that was altered during the logged event."
+                },
+                "From": {
+                    "type": "string",
+                    "description": "The original value of the item before the change was made."
+                },
+                "To": {
+                    "type": "string",
+                    "description": "The new value of the item after the change was made."
+                }
+              }
+            }    
         },
         "securitySchemes": {
           "bearer <token>": {

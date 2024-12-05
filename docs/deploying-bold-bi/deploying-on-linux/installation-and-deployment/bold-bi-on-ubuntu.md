@@ -54,7 +54,7 @@ documentation: ug
     
     * Install pip dependency packages for ETL service by running the following command:
         ~~~shell
-        sudo apt-get install python3-pip && sudo pip install duckdb===0.9.2 dlt===0.4.2 pymysql pyodbc pg8000 poetry pandas===2.0.0 "dlt[parquet]" "dlt[filesystem]"
+        sudo apt-get install python3-pip && sudo pip install duckdb===1.0.0 dlt===0.5.4 pymysql pyodbc pg8000 poetry pandas===2.2.2 "dlt[parquet]" "dlt[filesystem]"
         ~~~
 
 7. If it does not exist, add an `openssl conf` path to the environment by running the following command:

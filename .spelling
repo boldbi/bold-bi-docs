@@ -1389,7 +1389,6 @@ v6.1.8
 v6.2.7
 v6.3.3
 v6.4.6
-v8.1.41
 128-bit
 YYYY-MM-DDTHH
 2017-05-09T15
@@ -1649,6 +1648,7 @@ pymysql
 pg8000
 web_result
 hideSampleDataSources
+IPv6
 Grafana
 Robusta
 Datadog
@@ -1656,4 +1656,16 @@ Datadog
 LLMs
 hide_dashboard_edit
 v8.1
+v8.2.22
+SUSE-15
+optionallibs
+installdatahub
+Bigquery
+listed.Select
+installdatahub
+enableAiAssistant
+enable_ai_assistant
+languageSettings
+hideLanguageDropdown
+languageCode
 v8.1.41
