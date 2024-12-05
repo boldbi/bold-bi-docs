@@ -68,7 +68,7 @@ instance.getWidgetData(widgetName, clientFnc, dashboardId); // widgetName ->Defi
 
 ## getWidgetInstance()
 
-This method will be used to get an instance of that specific widget using its Id. To retrieve the widget details from a specific dashboard, please refer to this [REST API](/embedding-options/embedding-sdk/embedding-a-widget/#how-to-get-widget-id).
+This method will be used to get an instance of that specific widget using its Id. To retrieve the widget details from a specific dashboard, please refer to this [REST API](/embedding-options/embedding-sdk/embedding-using-javascript/#how-to-get-widget-id).
 
 **Example**
 
@@ -86,7 +86,7 @@ This method is used to set the filter parameters for the widget instance in the 
 * Filtering without column name.
 * Filtering with one column name.
 * Filtering with more than one column name.
-To learn about the widget ID of the specific widget, please refer to this [link](/embedding-options/embedding-sdk/embedding-a-widget/#how-to-get-widget-id).
+To learn about the widget ID of the specific widget, please refer to this [link](/embedding-options/embedding-sdk/embedding-using-javascript/#how-to-get-widget-id).
 
 To filter the widgets at `initial rendering`, you need to set filter parameters with widget instance like below.
 
@@ -214,7 +214,7 @@ dashboard.loadMultitabDashboard();
 ```
 >**Note:** To embed the multitab dashboard programmatically, either dashboardIds or dashboardPaths can be used.
 
-To access additional details, please click on the following [Embedded multitab dashboard programmatically](/embedding-options/embedding-sdk/embedding-multitab-dashboard-programmatically/).
+To access additional details, please click on the following [Embedded multitab dashboard programmatically](/embedding-options/embedding-sdk/embedding-using-javascript/#embed-a-multitab-dashboard-programmatically).
 
 ## loadMultipleWidgets()
 
@@ -226,7 +226,7 @@ This method will load multiple widgets of the current dashboard with a single in
 <div id="dashboard"></div>
 <div id="widget1" style="height:500px;width:500px"></div> 
 <div id="widget2" style="height:500px;width:500px"></div> 
-<div id="widget3" style="height:500px;width:500px"></div>    
+<div id="widget3" style="height:500px;width:500px"></div>     
 var dashboard = BoldBI.create({
    dashboardId: "5cb065f7-dabb-4b0c-9b45-c60a5730e963",
    embedContainerId: "dashboard",
@@ -259,7 +259,7 @@ var dashboard = BoldBI.create({
 dashboard.loadView();
 ```
 
-For more details, please click on the following [Embedded the dashboard with views](/embedding-options/embedding-sdk/embedding-the-dashboard-with-views/).
+For more details, please click on the following [Embedded the dashboard with views](/embedding-options/embedding-sdk/embedding-using-javascript/#embed-the-dashboard-with-view-in-your-application).
 
 ## refreshDashboard()
     

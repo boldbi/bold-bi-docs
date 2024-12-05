@@ -33,6 +33,8 @@ You can explore the Site Administration in detail here:
 
 [Email Settings](/site-administration/email-settings/)
 
+[Audit Logs](/site-administration/audit-logs/)
+
 [Account Settings](/site-administration/account-settings/)
 
 [Active Directory](/site-administration/user-directory-settings/active-directory/)

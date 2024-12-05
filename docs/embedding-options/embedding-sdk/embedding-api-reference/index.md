@@ -30,7 +30,7 @@ dashboard.loadDashboard();
           embedContainerId: "dashboard-container",// This should be the container id where you want to embed the dashboard
           authorizationServer: {
           url: "http://example.come/authorize/server"
-          }   
+          }
      });
      dashboard.loadDashboard();
 </script>

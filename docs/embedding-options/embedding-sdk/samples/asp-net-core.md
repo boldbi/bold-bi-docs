@@ -202,7 +202,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/aspnet-core-s
      ![Index.cshml Image](/static/assets/javascript/sample/images/CoreViewFolderProperties.png)
 
      ```js 
-       <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v8.1.41/boldbi-embed.js"></script>
+       <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v8.2.22/boldbi-embed.js"></script>
        <script type="text/javascript" src="~/js/Index.js"></script>
        <script type="text/javascript">
           var rootUrl = "@GlobalAppSettings.EmbedDetails.ServerUrl";

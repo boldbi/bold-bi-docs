@@ -114,6 +114,38 @@ You can configure the filter by dragging the required columns to the right side 
 
    ![Filter DragDrop](/static/assets/working-with-datasource/data-connectors/images/ssas/Filter_DragDrop.png)
 
+The condition can be defined based on two options:
+1. Custom
+2. Parameters
+3. Custom Attributes
+
+## Custom
+
+In Custom, The Values will be listed.Select the values and Configure.
+
+![Custom SSAS](/static/assets/working-with-datasource/data-connectors/images/ssas/Custom_ssas.png)
+
+## Parameters
+
+Filter the records based on the dashboard parameter values. This allows for dynamically changing the parameter values in both view and preview modes.
+
+Click on the `Parameters` option as shown below.
+
+![Parameters](/static/assets/working-with-datasource/data-connectors/images/ssas/parameters.png)
+   
+
+Select the desired parameter lists from the dropdown menu. The first parameter will be selected by default.
+
+![Parameters](/static/assets/working-with-datasource/data-connectors/images/ssas/parameter_values.png)
+
+To create parameters, follow the instructions provided in [configuring dashboard parameters](/working-with-data-sources/dashboard-parameter/configuring-dashboard-parameters/)
+
+## Custom Attributes
+
+Similar to the Parameters, we can configure the filters with Custom Attributes
+
+To create Custom Attributes, follow the instructions provided in [configuring custom attribute](/working-with-data-sources/configuring-custom-attribute/)
+
 ## Connecting through MDX query
 
 You can connect to the data source of specific data connections through a custom MDX Query. By default, the data design view opens in the design view. Switch to the code view by enabling the toggle option in the tools pane in the data design view, as shown in the following image.

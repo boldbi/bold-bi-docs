@@ -369,6 +369,17 @@ Here is a dashboard view illustrating the same.
 
 ![Two Different Parameter](/static/assets/working-with-dashboards/preview-dashboards/images/OR_AND_filter.png)
 
+## Grouped URL Parameters
+
+The Grouped URL Parameters feature allows users to filter values using multiple conditions combined with AND/OR operators. This is achieved by enclosing the conditions within parentheses to define the logical grouping, as shown below:
+
+`http://<servername>/<culturename>/dashboards/<dashboardid>/<category>/<dashboardname>?(((CustomerID=ALFKI&OrderID=10643)&City=Berlin)|(ProductName=Aniseed Syrup&Country=Austria, USA))`
+
+Below is a dashboard view illustrating this concept:
+![Grouped URL Parameters](/static/assets/working-with-dashboards/preview-dashboards/images/grouped-url_parameters.png)
+
+> **NOTE:** Parameters cannot be used within grouped URLs.
+
 ## Limitations of URL Parameter
 
 <li> The parameter names and values are case-sensitive.</br><li> The operators and date & time function names are case-insensitive.</br><li> Characters like comma (,), ampersand (&), and vertical bar (|) in the value should be prefixed and suffixed with a tilde (~) symbol to differentiate them from syntax elements.</br></br> <ol>

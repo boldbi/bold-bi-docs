@@ -2,7 +2,7 @@
   "openapi": "3.0.1",
   "info": {
     "title": "API Reference",
-	"description": {
+    "description": {
       "$ref": "./../../../../server-api-reference/common/site-administration/api-reference/introduction2.0.md"
     },
     "version": "2.0"
@@ -18,26 +18,32 @@
     }
   ],
   "tags": [
-     {
+    {
       "name": "Authentication",
-	  "description": {
+      "description": {
         "$ref": "./../../../../server-api-reference/common/site-administration/api-reference/helperswagger.json#/authentication/getauthenticationdescription"
       }
     },
     {
       "name": "Application Startup",
-	  "description": {
+      "description": {
         "$ref": "./../../../../server-api-reference/common/site-administration/api-reference/helperswagger.json#/startup/getstartupdescription"
       }
     },
     {
       "name": "Tenants",
-	  "description": "Creating, listing, viewing, and deleting tenants for Bold BI/Bold Reports using an API can be a powerful and efficient way to manage and organize your data. The request body should be in JSON format, and you can provide the tenant information in JSON format. Include the necessary headers for the API request, such as the Content-Type and Accept headers. To create, view, update, delete, and list the Bold BI/Bold Reports tenants, use the following corresponding endpoints."
+      "description": "Creating, listing, viewing, and deleting tenants for Bold BI/Bold Reports using an API can be a powerful and efficient way to manage and organize your data. The request body should be in JSON format, and you can provide the tenant information in JSON format. Include the necessary headers for the API request, such as the Content-Type and Accept headers. To create, view, update, delete, and list the Bold BI/Bold Reports tenants, use the following corresponding endpoints."
     },
     {
       "name": "Users",
-	  "description": {
+      "description": {
         "$ref": "./../../../../server-api-reference/common/site-administration/api-reference/helperswagger.json#/users/getusersdescription"
+      }
+    },
+    {
+      "name": "Activity Logs",
+      "description": {
+        "$ref": "./../../../../server-api-reference/common/site-administration/api-reference/helperswagger.json#/activity/getactivitydescription"
       }
     }
   ],
@@ -48,7 +54,7 @@
           "Authentication"
         ],
         "summary": "Authenticate Client",
-		"description" : "To call the token API, you will need to make a POST request to the API endpoint, typically in the format of `https://your-domain/api/token`. \n You will need to include the following parameters in the body of the request:\n\n - grant_type: client_credentials \n\n - client_id: your client ID \n\n - client_secret: your client secret\n\n You will also need to include the appropriate headers for the API, such as\n\n Content-Type: `application/x-www-form-urlencoded`.",
+        "description": "To call the token API, you will need to make a POST request to the API endpoint, typically in the format of `https://your-domain/api/token`. \n You will need to include the following parameters in the body of the request:\n\n - grant_type: client_credentials \n\n - client_id: your client ID \n\n - client_secret: your client secret\n\n You will also need to include the appropriate headers for the API, such as\n\n Content-Type: `application/x-www-form-urlencoded`.",
         "operationId": "client_authentication",
         "requestBody": {
           "content": {
@@ -305,7 +311,7 @@
             "description": "Request type was not POST.",
             "content": {}
           },
-         "404": {
+          "404": {
             "description": "Tenant details not found.",
             "content": {}
           },
@@ -451,7 +457,7 @@
         "summary": "List Tenants",
         "description": "List all the Bold BI and Bold Reports tenants available in the application. <br /><code>/v2.0/tenants</code> returns the first 25 tenants by default.<br /><blockquote style='display: inline;'>Note:</blockquote>By default, this API endpoint returns a list of 25 tenants. You can get more records (up to 100 records at a time) by using the <code>page</code> and <code>page_size</code> URI parameters. For example, refer to the following URLs:<br /><ul><li><code>/v2.0/tenants?page_size=30</code> returns the first 30 tenants.</li><li><code>/v2.0/tenants?page=2&page_size=30</code> returns the second group of 30 tenants.</li></ul><br /><blockquote>URI Parameters</blockquote><ul><li><code>page_size</code> the number of tenants to be returned per page.</li><li><code>page</code> the page number.</li></ul>",
         "operationId": "list_tenant",
-		"parameters": [
+        "parameters": [
           {
             "name": "page",
             "in": "path",
@@ -459,11 +465,11 @@
             "required": false,
             "style": "simple",
             "explode": false,
-			"schema": {
+            "schema": {
               "type": "string",
               "format": "int32",
               "nullable": false
-			}
+            }
           },
           {
             "name": "page_size",
@@ -472,11 +478,11 @@
             "required": false,
             "style": "simple",
             "explode": false,
-			"schema": {
+            "schema": {
               "type": "string",
               "format": "int32",
               "nullable": false
-			}
+            }
           }
         ],
         "responses": {
@@ -513,7 +519,7 @@
         }
       }
     },
-	"/v2.0/tenant/{tenant_id}/grant-access": {
+    "/v2.0/tenant/{tenant_id}/grant-access": {
       "post": {
         "tags": [
           "Tenants"
@@ -521,43 +527,43 @@
         "summary": "Grant User Access to Tenant ",
         "description": "Grant user access to the given tenant. ",
         "operationId": "grant_user_access",
-		"parameters": [
-		{
+        "parameters": [
+          {
             "name": "tenant_id",
             "in": "path",
             "description": "ID of the tenant.",
             "required": true,
             "style": "simple",
             "explode": false,
-			"schema": {
+            "schema": {
               "type": "string",
               "format": "uuid",
               "nullable": false
-			}
+            }
           }
-		  ],
-           "requestBody": {
-		   "description": "Grant user access request body.",
-            "required": true,
-			"content": {
-              "application/json": {
+        ],
+        "requestBody": {
+          "description": "Grant user access request body.",
+          "required": true,
+          "content": {
+            "application/json": {
               "schema": {
-              "$ref": "#/components/schemas/GrantUser"
-                }
-			  }
-			},
-            "x-nullable": true
+                "$ref": "#/components/schemas/GrantUser"
+              }
+            }
           },
+          "x-nullable": true
+        },
         "responses": {
           "200": {
             "description": "Granted site access to the user successfully.",
-			 "content": {
+            "content": {
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/GrantUserApiResponse"
                 }
-			  }
-			 }
+              }
+            }
           },
           "400": {
             "description": "The content of the request body is missing or incomplete.",
@@ -582,7 +588,7 @@
         }
       }
     },
-	"/v2.0/tenant/{tenant_id}/remove-access": {
+    "/v2.0/tenant/{tenant_id}/remove-access": {
       "post": {
         "tags": [
           "Tenants"
@@ -590,32 +596,32 @@
         "summary": "Remove User Access from Tenant ",
         "description": "Remove user access from the given tenant.",
         "operationId": "remove_user_access",
-		"parameters": [
-		{
+        "parameters": [
+          {
             "name": "tenant_id",
             "in": "path",
             "description": "ID of the tenant.",
             "required": true,
             "style": "simple",
             "explode": false,
-			"schema": {
+            "schema": {
               "type": "string",
               "format": "uuid",
               "nullable": false
-			}
+            }
           }
-		  ],
-           "requestBody": {
-            "required": true,
-			"content": {
-              "application/json": {
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
               "schema": {
-              "$ref": "#/components/schemas/GrantUser"
-                }
-			  }
-			},
-            "x-nullable": true
+                "$ref": "#/components/schemas/GrantUser"
+              }
+            }
           },
+          "x-nullable": true
+        },
         "responses": {
           "204": {
             "description": "No Content.",
@@ -625,7 +631,7 @@
             "description": "The content of the request body is missing or incomplete.",
             "content": {}
           },
-		  "412": {
+          "412": {
             "description": "Tenant id is invalid.",
             "content": {}
           },
@@ -648,7 +654,7 @@
         }
       }
     },
-	"/v2.0/user/add": {
+    "/v2.0/user/add": {
       "post": {
         "tags": [
           "Users"
@@ -701,7 +707,7 @@
         }
       }
     },
-	"/v2.0/user/{userId}": {
+    "/v2.0/user/{userId}": {
       "put": {
         "tags": [
           "Users"
@@ -769,7 +775,7 @@
         }
       }
     },
-	"/v2.0/user/{user_Id}": {
+    "/v2.0/user/{user_Id}": {
       "get": {
         "tags": [
           "Users"
@@ -874,7 +880,7 @@
         }
       }
     },
-	"/v2.0/users": {
+    "/v2.0/users": {
       "get": {
         "tags": [
           "Users"
@@ -944,7 +950,7 @@
         }
       }
     },
-	"/v2.0/users/{userId}": {
+    "/v2.0/users/{userId}": {
       "put": {
         "tags": [
           "Users"
@@ -1012,7 +1018,7 @@
         }
       }
     },
-	"/v2.0/user/{Id}": {
+    "/v2.0/user/{Id}": {
       "delete": {
         "tags": [
           "Users"
@@ -1020,7 +1026,7 @@
         "summary": "Delete User",
         "description": "Delete the user account.",
         "operationId": "delete_user",
-       "parameters": [
+        "parameters": [
           {
             "name": "userId",
             "in": "path",
@@ -1060,6 +1066,83 @@
             "description": "Failed to delete item.",
             "content": {}
           }
+        }
+      }
+    },
+    "v2.0/administration/security/networking/ip-whitelist":{
+      "get": {
+        "tags": [
+          "Administration"
+        ],
+        "summary": "Get IP whitelisting Settings",
+        "description": "Retrieve the IP whitelisting settings details.",
+        "operationId": "get_ipwhitelisting_settings",
+        "responses": {
+          "200": {
+              "description": "IP whitelisting settings details have been retrieved successfully.",
+              "content": {
+                  "application/json": {
+                      "schema": {
+                          "$ref": "#/components/schemas/ApiIPWhitelistingSettings"
+                      }
+                  }
+              }
+          },
+          "401": {
+              "description": "Access denied",
+              "content": {}
+          },
+          "405":{
+              "description": "Request type was not get",
+              "content": {}
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Administration"
+        ],
+        "summary": "Update IP whitelisting settings",
+        "description": "Users who have admin rights permissions for IP whitelisting settings can update the IP whitelisting settings.",
+        "operationId": "Update_IPWhitelisting_Settings",
+        "requestBody": {
+            "description": "The updated IP whitelisting settings that have been passed will be updated with the details.",
+            "content": {
+                "application/json": {
+                    "schema": {
+                        "$ref": "#/components/schemas/IPWhitelistingResponse"
+                    }
+                }
+            },
+            "required": true
+        },
+        "responses": {
+            "200": {
+                "description": "IP whitelisting settings details has been updated successfully.",
+                "content": {
+                    "application/json": {
+                        "schema": {
+                            "$ref": "#/components/schemas/ApiResponse"
+                        }
+                    }
+                }
+            },
+            "401": {
+                "description": "Access denied",
+                "content": {}
+            },
+            "405":{
+                "description":"Request type was not post",
+                "content": {}
+            },
+            "404":{
+                "description":"Content of the request is empty or missing",
+                "content": {}
+            },
+            "417":{
+                "description":"Failed to update IP whitelisting setting",
+                 "content": {}
+            }
         }
       }
     },
@@ -1116,6 +1199,137 @@
         }
       }
     },
+    "/v2.0/administration/embed/secrets/regenerate": {
+      "post": {
+        "tags": [
+          "Administration"
+        ],
+        "summary": "Regenerate Embed Secret.",
+        "description": "Returns the generated embed secret key.",
+        "operationId": "regenerate_embed_secret",
+        "responses": {
+          "200": {
+            "description": "Secret code has been regenerated successfully.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RegenerateEmbedSecret"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "The content of the request body is missing or incomplete.",
+            "content": {}
+          },
+          "401": {
+            "description": "Access denied.",
+            "content": {}
+          },
+          "405": {
+            "description": "Request type was not POST.",
+            "content": {}
+          },
+          "406": {
+            "description": "The content of the request body is invalid.",
+            "content": {}
+          },
+          "417": {
+            "description": "Failed to reset secret key.",
+            "content": {}
+          }
+        }
+      }
+    },
+    "/v2.0/administration/embed/configuration": {
+      "get": {
+        "tags": [
+          "Administration"
+        ],
+        "summary": "Get Embed Settings.",
+        "description": "Returns the embed configuration settings.",
+        "operationId": "get_embed_settings",
+        "responses": {
+          "200": {
+            "description": "Embed configuration setting has been fetched successfully.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/EmbedConfigurationResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "The content of the request body is missing or incomplete.",
+            "content": {}
+          },
+          "401": {
+            "description": "Access denied.",
+            "content": {}
+          },
+          "406": {
+            "description": "The content of the request body is invalid.",
+            "content": {}
+          },
+          "417": {
+            "description": "Failed to retrieve embed settings.",
+            "content": {}
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Administration"
+        ],
+        "summary": "Update Embed Settings.",
+        "description": "update the embed setting details.",
+        "operationId": "update_embed_settings",
+        "requestBody": {
+          "description": "Update branding images request body.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateEmbedSettings"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Settings have been uploaded successfully.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/EmbedConfigurationResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "The content of the request body is missing or incomplete.",
+            "content": {}
+          },
+          "401": {
+            "description": "Access denied.",
+            "content": {}
+          },
+          "405": {
+            "description": "Request type was not POST.",
+            "content": {}
+          },
+          "406": {
+            "description": "The content of the request body is invalid.",
+            "content": {}
+          },
+          "417": {
+            "description": "Embed configuration is not in a valid format.",
+            "content": {}
+          }
+        }
+      }
+    },
     "/v2.0/users/validate": {
       "post": {
         "tags": [
@@ -1156,6 +1370,346 @@
           },
           "405": {
             "description": "Request type was not POST.",
+            "content": {}
+          }
+        }
+      }
+    },
+    "/v2.0/user-activity-logs": {
+      "get": {
+        "tags": [
+          "Activity Logs"
+        ],
+        "summary": "Get Activity Logs",
+        "description": "Retrieve a list of activities performed in the item module. This endpoint allows site administrators to filter logs based on various parameters such as event category, event type, user email, tenant ID, app source, and date range.",
+        "operationId": "ActivityLogs_GetAllActivityLogs",
+        "parameters": [
+          {
+            "type": "string",
+            "name": "eventCategory",
+            "in": "query",
+            "required": false,
+            "description": "Specify the category of the event. Allowed values are <code>User, Permission, Settings</code>.",
+            "schema": {
+              "type": "string",
+              "nullable": false
+            }
+          },
+          {
+            "type": "string",
+            "name": "eventType",
+            "in": "query",
+            "required": false,
+            "description": "Specify the type of the event. Allowed values are <code>Added, Updated, Deleted</code>.",
+            "schema": {
+              "type": "string",
+              "nullable": false
+            }
+          },
+          {
+            "type": "string",
+            "name": "initiatedUserEmail",
+            "in": "query",
+            "required": false,
+            "description": "Specify the email address of the user who initiated the event.",
+            "schema": {
+              "type": "string",
+              "nullable": false
+            }
+          },
+          {
+            "type": "string",
+            "name": "targetUserEmail",
+            "in": "query",
+            "required": false,
+            "description": "Specify the email address of the user who was targeted by the event.",
+            "schema": {
+              "type": "string",
+              "nullable": false
+            }
+          },
+          {
+            "type": "string",
+            "name": "eventStartDate",
+            "in": "query",
+            "required": false,
+            "description": "Specify the UTC start date to filter logs within a specific date range. The format should be ISO 8601: `yyyy-MM-ddTHH:mm:ssZ`.",
+            "format": "date-time",
+            "schema": {
+              "type": "string",
+              "nullable": false
+            }
+          },
+          {
+            "type": "string",
+            "name": "eventEndDate",
+            "in": "query",
+            "required": false,
+            "description": "Specify the UTC end date to filter logs within a specific date range. The format should be ISO 8601: `yyyy-MM-ddTHH:mm:ssZ`.",
+            "format": "date-time",
+            "schema": {
+              "type": "string",
+              "nullable": false
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The list of activity logs was retrieved successfully.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiGetAuditlogsPaginatedResponse"
+                }
+              }
+            }
+          },
+          "204": {
+            "description": "Log is empty",
+            "content": {}
+          },
+          "400": {
+            "description": "Invalid log module",
+            "content": {}
+          },
+          "401": {
+            "description": "Access denied",
+            "content": {}
+          },
+          "405": {
+            "description": "Request type was not GET.",
+            "content": {}
+          }
+        }
+      }
+    },
+    "/v2.0/settings/authentication/oauth": {
+      "get": {
+        "tags": [
+          "Administration"
+        ],
+        "summary": "Get OAuth Settings",
+        "description": "Get the current OAuth authentication settings.",
+        "operationId": "get_oauth_settings",
+        "responses": {
+          "200": {
+            "description": "OAuth settings have been successfully retrieved.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetOAuthResponse"
+                }
+              }
+            }
+          },
+          "412": {
+            "description": "OAuth settings not configured.",
+            "content": {}
+          },
+          "417": {
+            "description": "Failed to retrieve OAuth settings.",
+            "content": {}
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Administration"
+        ],
+        "summary": "Add OAuth Settings",
+        "description": "Add the OAuth authentication settings.",
+        "operationId": "add_oauth_settings",
+        "requestBody": {
+          "description": "Add OAuth settings request body.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddOAuthRequestBody"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OAuth settings have been added successfully.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/OAuthResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "The content of the request body is missing or incomplete.",
+            "content": {}
+          },
+          "412": {
+            "description": "The content of the request body is invalid.",
+            "content": {}
+          },
+          "417": {
+            "description": "Failed to add OAuth settings.",
+            "content": {}
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Administration"
+        ],
+        "summary": "Update OAuth Settings",
+        "description": "Update the OAuth authentication settings.",
+        "operationId": "update_oauth_settings",
+        "requestBody": {
+          "description": "Update OAuth settings request body.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateOAuthRequestBody"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OAuth settings have been updated successfully.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/OAuthResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "The content of the request body is missing or incomplete.",
+            "content": {}
+          },
+          "412": {
+            "description": "The content of the request body is invalid.",
+            "content": {}
+          },
+          "417": {
+            "description": "Failed to update OAuth settings.",
+            "content": {}
+          }
+        }
+      }
+    },
+    "/v2.0/settings/authentication/openid": {
+      "get": {
+        "tags": [
+          "Administration"
+        ],
+        "summary": "Get OpenId Settings",
+        "description": "Get the current OpenId authentication settings.",
+        "operationId": "get_openid_settings",
+        "responses": {
+          "200": {
+            "description": "OpenId settings have been successfully retrieved.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetOpenIdResponse"
+                }
+              }
+            }
+          },
+          "412": {
+            "description": "OpenId settings not configured.",
+            "content": {}
+          },
+          "417": {
+            "description": "Falied to retrieve OpenId settings.",
+            "content": {}
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Administration"
+        ],
+        "summary": "Add OpenId Settings",
+        "description": "Add the OpenId authentication settings.",
+        "operationId": "add_openid_settings",
+        "requestBody": {
+          "description": "Add OpenId settings request body.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddOpenIdRequestBody"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OpenId settings have been added successfully.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/OpenIdResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "The content of the request body is missing or incomplete.",
+            "content": {}
+          },
+          "412": {
+            "description": "The content of the request body is invalid.",
+            "content": {}
+          },
+          "417": {
+            "description": "Failed to add OpenId settings.",
+            "content": {}
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Administration"
+        ],
+        "summary": "Update OpenId Settings",
+        "description": "Update the OpenId authentication settings.",
+        "operationId": "update_openid_settings",
+        "requestBody": {
+          "description": "Update OpenId settings request body.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateOpenIdRequestBody"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OpenId settings have been updated successfully.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/OpenIdResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "The content of the request body is missing or incomplete.",
+            "content": {}
+          },
+          "412": {
+            "description": "The content of the request body is invalid.",
+            "content": {}
+          },
+          "417": {
+            "description": "Failed to update OpenId settings.",
             "content": {}
           }
         }
@@ -1201,6 +1755,69 @@
           }
         },
         "x-typeName": "Response"
+      },
+
+      "IPWhitelistingResponse": {
+        "required": [
+            "IsEnabled",
+            "IPWhitelistingRules"
+        ],
+        "type": "object",
+        "properties": {
+            "IsEnabled": {
+                "type": "boolean",
+                "description":  "Specify true to enable the IP whitelisting settings."
+            },
+            "IPWhitelistingRules":{
+                "type": "array",
+                "description": "Specified IP whitelisting rules allows access to the application.",
+                "items": {
+                    "$ref": "#/components/schemas/IPWhitelistingRulesResponse"
+                }
+            }
+        }
+    },
+      "IPWhitelistingRulesResponse":{
+          "required": [
+              "RuleName",
+              "IPAddress",
+              "IPAddressType"
+          ],
+          "type":"object",
+          "properties":{
+              "RuleName":{
+                  "type": "string",
+                  "description": "Specify rule name."
+              },
+              "IPAddress":{
+                  "type": "string",
+                  "description": "Specify IP address value."
+              },
+              "IPAddressType":{
+                  "type": "string",
+                  "description": "Specify IP address type."
+              }
+          }
+      },
+      "ApiIPWhitelistingSettings":{
+          "type": "object",
+          "properties":{
+              "ApiStatus": {
+                  "type": "boolean",
+                  "description": "Returns the status of the API."
+              },
+              "Data": {
+                  "type": "array",
+                  "description": "Returns data from the API.",
+                  "items": {
+                      "$ref": "#/components/schemas/IPWhitelistingResponse"
+                  }
+              },
+              "StatusMessage": {
+                  "type": "string",
+                  "description": "Returns the status message from the API."
+              }
+          }
       },
       "ApiResponse": {
         "type": "object",
@@ -1263,7 +1880,7 @@
             "type": "array",
             "description": "Response data.",
             "items": {
-            "$ref": "#/components/schemas/TenantResponseData"
+              "$ref": "#/components/schemas/TenantResponseData"
             }
           },
           "Status": {
@@ -1311,15 +1928,14 @@
             "type": "string",
             "description": "Status of the tenant."
           },
-		  "use_site_identifier":{
-			  "type": "boolean",
+          "use_site_identifier": {
+            "type": "boolean",
             "description": "site identifier of the tenant."
-         },
-		 "is_master":
-		 {
-			 "type": "boolean",
+          },
+          "is_master": {
+            "type": "boolean",
             "description": "master site of the tenant."
-		 }
+          }
         }
       },
       "Authentication": {
@@ -1366,7 +1982,7 @@
         "type": "object",
         "description": "Add tenant object details.",
         "additionalProperties": false,
-		"required": [
+        "required": [
           "Email"
         ],
         "properties": {
@@ -1387,48 +2003,45 @@
         "description": "Update tenant object.",
         "additionalProperties": false,
         "properties": {
-          "Site": { 
-			 "$ref": "#/components/schemas/SiteDetails"
+          "Site": {
+            "$ref": "#/components/schemas/SiteDetails"
           },
           "Database": {
-			 "$ref": "#/components/schemas/DatabaseInformation"
+            "$ref": "#/components/schemas/DatabaseInformation"
           }
         }
       },
-	  "SiteDetails":
-	  {
-		 "type": "object",
+      "SiteDetails": {
+        "type": "object",
         "description": "site details.",
         "additionalProperties": false,
-		"properties": {
-          "SiteName": { 
-			 "type": "string",
+        "properties": {
+          "SiteName": {
+            "type": "string",
             "description": "Name of the site."
           },
           "SiteUrl": {
             "type": "string",
             "description": "URL of the site."
           },
-		  "SiteIdentifier":
-		  {
-			"type": "string",
+          "SiteIdentifier": {
+            "type": "string",
             "description": "Identifier of the site."
-		  }
+          }
         }
       },
-	  "DatabaseInformation":
-	  {
-		  "type": "object",
+      "DatabaseInformation": {
+        "type": "object",
         "description": "Database information.",
         "additionalProperties": false,
-		 "required": [
+        "required": [
           "ServerName",
           "DatabaseName",
           "UserName",
           "Password",
-		  "SslEnabled"
+          "SslEnabled"
         ],
-		"properties": {
+        "properties": {
           "ServerName": {
             "type": "string",
             "description": "Name of the database server."
@@ -1453,19 +2066,17 @@
             "type": "string",
             "description": "Port number of the database server.<br /><blockquote>Required only for <code>PostgreSQL</code> and <code>MySQL</code> database servers.</blockquote>"
           },
-           "SslEnabled":
-		  {
-			  "type": "boolean",
-			  "default": "false",
+          "SslEnabled": {
+            "type": "boolean",
+            "default": "false",
             "description": "Determines whether the encrypted connection to the database server is required. "
-		  },
-		   "AdditionalParameters": 
-		  {
-			"type": "string",
+          },
+          "AdditionalParameters": {
+            "type": "string",
             "description": "Additional parameters for connecting to the database server."
-		  }
-	  }
-	  },
+          }
+        }
+      },
       "DataStoreConfiguration": {
         "type": "object",
         "description": "Data store configuration of the site <blockquote>required to create <code>BoldBIOnPremise</code> tenants only.</blockquote>",
@@ -1511,17 +2122,15 @@
             "description": "Database type of the server.",
             "$ref": "#/components/schemas/DatabaseType"
           },
-		   "SslEnabled":
-		  {
-			  "type": "boolean",
-			  "default": "false",
+          "SslEnabled": {
+            "type": "boolean",
+            "default": "false",
             "description": "Determines whether the encrypted connection to the database server is required. "
-		  },
-		   "AdditionalParameters": 
-		  {
-			"type": "string",
+          },
+          "AdditionalParameters": {
+            "type": "string",
             "description": "Additional parameters for connecting to the database server."
-		  }
+          }
         }
       },
       "Database": {
@@ -1568,17 +2177,15 @@
             "description": "Database type of the server.",
             "$ref": "#/components/schemas/DatabaseType"
           },
-		   "SslEnabled":
-		  {
-			  "type": "boolean",
-			  "default": "false",
+          "SslEnabled": {
+            "type": "boolean",
+            "default": "false",
             "description": "Determines whether the encrypted connection to the database server is required. "
-		  },
-		   "AdditionalParameters": 
-		  {
-			"type": "string",
+          },
+          "AdditionalParameters": {
+            "type": "string",
             "description": "Additional parameters for connecting to the database server."
-		  }
+          }
         }
       },
       "UmsConfiguration": {
@@ -1646,7 +2253,7 @@
         }
       },
       "StorageType": {
-		  "description": "0 - FileStorage, 1 - AzureBlob",
+        "description": "0 - FileStorage, 1 - AzureBlob",
         "type": "enum",
         "enum": [
           0,
@@ -1658,7 +2265,7 @@
         ]
       },
       "DatabaseType": {
-		   "description": "0 - MSSQL, 1 - MySQL, 4 - PostgreSQL",
+        "description": "0 - MSSQL, 1 - MySQL, 4 - PostgreSQL",
         "type": "enum",
         "enum": [
           0,
@@ -1672,7 +2279,7 @@
         ]
       },
       "TenantType": {
-		  "description": "3 - BoldBIOnPremise, 4 - BoldReportsOnPremise",
+        "description": "3 - BoldBIOnPremise, 4 - BoldReportsOnPremise",
         "type": "enum",
         "enum": [
           3,
@@ -1683,7 +2290,7 @@
           "BoldReportsOnPremise"
         ]
       },
-	  "ApiUserDeleteResponse": {
+      "ApiUserDeleteResponse": {
         "type": "object",
         "properties": {
           "ApiStatus": {
@@ -1694,7 +2301,7 @@
             "type": "array",
             "description": "Response data from the API.",
             "items": {
-            "$ref": "#/components/schemas/UserDeleteResponse"
+              "$ref": "#/components/schemas/UserDeleteResponse"
             }
           },
           "Status": {
@@ -1711,9 +2318,8 @@
           }
         }
       },
-	  "UserDeleteResponse":
-	  {
-		   "type": "object",
+      "UserDeleteResponse": {
+        "type": "object",
         "properties": {
           "DatabaseDeleted": {
             "type": "string",
@@ -1724,7 +2330,7 @@
             "description": "SiteDeleted."
           }
         }
-	  },
+      },
       "AzureBlob": {
         "type": "object",
         "description": "Required only if the storage type is <code>AzureBlob</code>",
@@ -1795,8 +2401,8 @@
             "type": "array",
             "description": "Custom site attributes.<blockquote>Applicable to create <code>BoldBIOnPremise</code> tenants only.</blockquote>",
             "items": {
-            "$ref": "#/components/schemas/CustomAttribute"
-          }
+              "$ref": "#/components/schemas/CustomAttribute"
+            }
           },
           "TenantIsolation": {
             "description": "Tenant isolation code. <blockquote>Applicable to create <code>BoldBIOnPremise</code> tenants only.</blockquote>",
@@ -1806,7 +2412,7 @@
       },
       "TenantIsolation": {
         "type": "object",
-		"description": "Tenant isolation code. <blockquote>Applicable to create <code>BoldBIOnPremise</code> tenants only.</blockquote>",
+        "description": "Tenant isolation code. <blockquote>Applicable to create <code>BoldBIOnPremise</code> tenants only.</blockquote>",
         "additionalProperties": false,
         "properties": {
           "IsEnabled": {
@@ -1867,9 +2473,8 @@
           }
         }
       },
-	  "AddUser":
-	  {
-		 "type": "object",
+      "AddUser": {
+        "type": "object",
         "additionalProperties": false,
         "required": [
           "Email",
@@ -1912,10 +2517,9 @@
             "description": "Specify the mode of account activation.\n\n* 0 - AutomaticActivation\n* 1 - EmailActivation"
           }
         }
-	  },
-    "ValidateUserApiRequest":
-	  {
-		 "type": "object",
+      },
+      "ValidateUserApiRequest": {
+        "type": "object",
         "additionalProperties": false,
         "required": [
           "Email"
@@ -1926,10 +2530,9 @@
             "description": "Email address of the user."
           }
         }
-	  },
-	  "GrantUser":
-	  {
-		 "type": "object",
+      },
+      "GrantUser": {
+        "type": "object",
         "additionalProperties": false,
         "properties": {
           "UserName": {
@@ -1944,11 +2547,10 @@
             "type": "string",
             "description": "Id of the user."
           }
-	  }
-	  },
-	  "GrantUserApiResponse":
-	  {
-		  "type": "object",
+        }
+      },
+      "GrantUserApiResponse": {
+        "type": "object",
         "properties": {
           "ApiStatus": {
             "type": "boolean",
@@ -1958,7 +2560,7 @@
             "type": "array",
             "description": "Response data from the API.",
             "items": {
-			"$ref": "#/components/schemas/GrantResponseData"
+              "$ref": "#/components/schemas/GrantResponseData"
             }
           },
           "Status": {
@@ -1974,30 +2576,28 @@
             "description": "Returns the message from the API."
           }
         }
-	  },
-	   "GrantResponseData":
-	  {
-		 "type": "object",
+      },
+      "GrantResponseData": {
+        "type": "object",
         "properties": {
           "tenant": {
-           "description": "Response data from the tenant..",
-			"$ref": "#/components/schemas/TenantResponseData"
+            "description": "Response data from the tenant..",
+            "$ref": "#/components/schemas/TenantResponseData"
           },
           "user": {
             "description": "Response data from the user..",
-			"$ref": "#/components/schemas/UserResponse"
-            }
+            "$ref": "#/components/schemas/UserResponse"
+          }
         }
-	  },
-	  "UpdateUser":
-	  {
-		"type": "object",
+      },
+      "UpdateUser": {
+        "type": "object",
         "additionalProperties": false,
         "required": [
           "Email",
           "FirstName",
           "UserName",
-		  "LastName",
+          "LastName",
           "contact"
         ],
         "properties": {
@@ -2017,13 +2617,12 @@
             "type": "string",
             "description": "Last name of the user."
           },
-		  "contact":
-		  {
-			"type": "int32",
+          "contact": {
+            "type": "int32",
             "description": "Contact of the user."
-		  }
+          }
         }
-	  },
+      },
       "UpdatePassword": {
         "type": "object",
         "additionalProperties": false,
@@ -2148,7 +2747,7 @@
           }
         }
       },
-	  "UpdateUserResponse": {
+      "UpdateUserResponse": {
         "type": "object",
         "properties": {
           "user_id": {
@@ -2217,7 +2816,7 @@
             "type": "array",
             "description": "Response data from the API.",
             "items": {
-            "$ref": "#/components/schemas/UserResponse"
+              "$ref": "#/components/schemas/UserResponse"
             }
           },
           "Status": {
@@ -2245,7 +2844,7 @@
             "type": "array",
             "description": "Response data from the API..",
             "items": {
-            "$ref": "#/components/schemas/GetUserResponse"
+              "$ref": "#/components/schemas/GetUserResponse"
             }
           },
           "Status": {
@@ -2273,7 +2872,7 @@
             "type": "array",
             "description": "Response data from the API..",
             "items": {
-            "$ref": "#/components/schemas/ValidateUserResponse"
+              "$ref": "#/components/schemas/ValidateUserResponse"
             }
           },
           "Status": {
@@ -2290,9 +2889,8 @@
           }
         }
       },
-	  "ArrayUpdateUserResponse":
-	  {
-		  "type": "object",
+      "ArrayUpdateUserResponse": {
+        "type": "object",
         "properties": {
           "ApiStatus": {
             "type": "boolean",
@@ -2302,7 +2900,7 @@
             "type": "array",
             "description": "Response data from the API.",
             "items": {
-            "$ref": "#/components/schemas/UpdateUserResponse"
+              "$ref": "#/components/schemas/UpdateUserResponse"
             }
           },
           "Status": {
@@ -2318,7 +2916,7 @@
             "description": "Returns the message from the API."
           }
         }
-	  },
+      },
       "CustomAttribute": {
         "type": "object",
         "required": [
@@ -2402,9 +3000,1077 @@
             "description": "Returns the message from the API."
           }
         }
+      },
+      "RegenerateEmbedSecretResponse": {
+        "type": "object",
+        "properties": {
+          "reset_secret_code": {
+            "type": "string",
+            "description": "Returns the generated secret key from the API."
+          },
+          "is_enabled": {
+            "type": "boolean",
+            "description": "Enable or disable the embed settings."
+          }
+        }
+      },
+      "EmbedSettingsResponse": {
+        "type": "object",
+        "properties": {
+          "is_enabled": {
+            "type": "boolean",
+            "description": "Enable or disable the embed settings."
+          },
+          "config_data": {
+            "description": "Returns the embed settings data from the API.",
+            "$ref": "#/components/schemas/ConfigData"
+          },
+          "secret_key": {
+            "type": "string",
+            "description": "Returns the embed secret key from the API."
+          }
+        }
+      },
+      "ConfigData": {
+        "type": "object",
+        "properties": {
+          "is_configuration_base_embed": {
+            "type": "boolean",
+            "description": "Returns the configuration based embed or not."
+          },
+          "use_global_embed_secret": {
+            "type": "boolean",
+            "description": "Returns used by global embed secret or not."
+          },
+          "embedding_profile": {
+            "type": "array",
+            "description": "Returns embed profile data from the API.",
+            "items": {
+              "$ref": "#/components/schemas/EmbedProfile"
+            }
+          },
+          "users_profile": {
+            "type": "array",
+            "description": "Returns user profile data from the API.",
+            "items": {
+              "$ref": "#/components/schemas/UserProfile"
+            }
+          },
+          "groups_profile": {
+            "type": "array",
+            "description": "Returns group profile data from the API.",
+            "items": {
+              "$ref": "#/components/schemas/GroupProfile"
+            }
+          },
+          "sites_profile": {
+            "type": "array",
+            "description": "Returns sites profile data from the API.",
+            "items": {
+              "$ref": "#/components/schemas/SiteProfile"
+            }
+          },
+          "embed_secret": {
+            "type": "string",
+            "description": "Returns the embed secret code."
+          }
+        }
+      },
+      "EmbedConfiguration": {
+        "type": "object",
+        "description": "Embed setting details to update.",
+        "properties": {
+          "IsConfigurationBaseEmbed": {
+            "type": "boolean",
+            "description": "Returns the configuration based embed value from the API."
+          },
+          "EmbeddingProfile": {
+            "type": "array",
+            "description": "Returns embed profile data from the API.",
+            "items": {
+              "$ref": "#/components/schemas/EmbedProfile"
+            }
+          },
+          "UsersProfile": {
+            "type": "array",
+            "description": "Returns user profile data from the API.",
+            "items": {
+              "$ref": "#/components/schemas/UserProfile"
+            }
+          },
+          "GroupsProfile": {
+            "type": "array",
+            "description": "Returns group profile data from the API.",
+            "items": {
+              "$ref": "#/components/schemas/GroupProfile"
+            }
+          },
+          "SitesProfile": {
+            "type": "array",
+            "description": "Returns sites profile data from the API.",
+            "items": {
+              "$ref": "#/components/schemas/SiteProfile"
+            }
+          }
+        }
+      },
+      "EmbedProfile": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Returns embed profile name from the API."
+          },
+          "isolation": {
+            "description": "Returns embed profile isolation key from the API.",
+            "$ref": "#/components/schemas/EmbedSettingsKey"
+          },
+          "attributes": {
+            "description": "Returns embed profile attributes from the API.",
+            "$ref": "#/components/schemas/EmbedSettingsKey"
+          }
+        }
+      },
+      "UserProfile": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Returns user profile name from the API."
+          },
+          "profile": {
+            "type": "string",
+            "description": "Returns user profile from the API."
+          }
+        }
+      },
+      "GroupProfile": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Returns group profile name from the API."
+          },
+          "profile": {
+            "type": "string",
+            "description": "Returns group profile from the API."
+          }
+        }
+      },
+      "SiteProfile": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Returns sites profile name from the API."
+          },
+          "profile": {
+            "type": "string",
+            "description": "Returns site profile from the API."
+          },
+          "isIsolationCodeEnabled": {
+            "type": "boolean",
+            "description": "Enable or disable the isolation code."
+          }
+        }
+      },
+      "EmbedSettingsKey": {
+        "type": "object",
+        "properties": {
+          "key": {
+            "type": "string",
+            "description": "Returns key from the API."
+          }
+        }
+      },
+      "RegenerateEmbedSecret": {
+        "type": "object",
+        "properties": {
+          "ApiStatus": {
+            "type": "boolean",
+            "description": "Returns the status from the API."
+          },
+          "Data": {
+            "type": "array",
+            "description": "Response data from the API.",
+            "items": {
+              "$ref": "#/components/schemas/RegenerateEmbedSecretResponse"
+            }
+          },
+          "Status": {
+            "type": "boolean",
+            "description": "Returns status of the API request."
+          },
+          "StatusMessage": {
+            "type": "string",
+            "description": "Returns the status message from the API."
+          },
+          "Message": {
+            "type": "string",
+            "description": "Returns the message from the API."
+          }
+        }
+      },
+      "EmbedConfigurationResponse": {
+        "type": "object",
+        "properties": {
+          "ApiStatus": {
+            "type": "boolean",
+            "description": "Returns the status from the API."
+          },
+          "Data": {
+            "type": "array",
+            "description": "Response data from the API.",
+            "items": {
+              "$ref": "#/components/schemas/EmbedSettingsResponse"
+            }
+          },
+          "Status": {
+            "type": "boolean",
+            "description": "Returns status of the API request."
+          },
+          "StatusMessage": {
+            "type": "string",
+            "description": "Returns the status message from the API."
+          },
+          "Message": {
+            "type": "string",
+            "description": "Returns the message from the API."
+          }
+        }
+      },
+      "UpdateEmbedSettings": {
+        "type": "object",
+        "description": "Update Embed settings.",
+        "additionalProperties": false,
+        "properties": {
+          "IsEmbedEnabled": {
+            "type": "boolean",
+            "description": "Enable or disable the embed settings."
+          },
+          "EmbedConfigurations": {
+            "description": "Embed configuration details.",
+            "$ref": "#/components/schemas/EmbedConfiguration"
+          }
+        }
+      },
+      "ApiGetAuditlogsPaginatedResponse": {
+        "type": "object",
+        "properties": {
+          "ApiStatus": {
+            "type": "boolean",
+            "description": "Returns the status from the API."
+          },
+          "Data": {
+            "type": "array",
+            "description": "Response data from the API.",
+            "items": {
+              "$ref": "#/components/schemas/ApiGetAuditLog"
+            }
+          },
+          "StatusMessage": {
+            "type": "string",
+            "description": "Returns the status message from the API."
+          },
+          "Message": {
+            "type": "string",
+            "description": "Returns the message from the API."
+          }
+        }
+      },
+      "ApiGetAuditLog": {
+        "type": "object",
+        "properties": {
+          "target_user_name": {
+            "type": "string",
+            "description": "The username of the individual targeted by the event in the activity log."
+          },
+          "target_display_name": {
+            "type": "string",
+            "description": "The display name of the individual targeted by the event in the activity log."
+          },
+          "initiated_user_name": {
+            "type": "string",
+            "description": "The username of the individual who initiated the event recorded in the activity log."
+          },
+          "initiated_display_name": {
+            "type": "string",
+            "description": "The display name of the individual who initiated the event recorded in the activity log."
+          },
+          "event-date-format": {
+            "type": "string",
+            "description": "The formatted string representing the date and time when the event was recorded in the activity log."
+          },
+          "initiated_user_email": {
+            "type": "string",
+            "description": "The email address of the user who initiated the event recorded in the activity log."
+          },
+          "target_user_email": {
+            "type": "string",
+            "description": "The email address of the individual targeted by the event in the activity log."
+          },
+          "event_date": {
+            "type": "string",
+            "description": "The date and time when the event was recorded in the activity log."
+          },
+          "event_category": {
+            "type": "integer",
+            "description": "The numerical identifier representing the category of the event recorded in the activity log."
+          },
+          "event_type": {
+            "type": "integer",
+            "description": "The numerical identifier representing the specific type of event recorded in the activity log."
+          },
+          "app_source": {
+            "type": "string",
+            "description": "The source application from which the event was generated in the activity log."
+          },
+          "app_type": {
+            "type": "string",
+            "description": "The type of application (e.g., API, Web) from which the event was generated in the activity log."
+          },
+          "site": {
+            "type": "string",
+            "description": "The tenant name from which the event was generated in the activity log."
+          },
+          "event_category_string": {
+            "type": "string",
+            "description": "The string representation of the event category in the activity log."
+          },
+          "event_type_string": {
+            "type": "string",
+            "description": "The string representation of the event type in the activity log."
+          },
+          "user_log_details": {
+            "description": "Details about the user activity that was logged, including the IP address and user agent.",
+              "$ref": "#/components/schemas/user_log_details"
+          },
+          "summary": {
+            "type": "string",
+            "description": "A brief summary or description of the activity recorded in the log."
+          }
+        }
+      },
+      "user_log_details": {
+        "type": "object",
+        "properties": {
+          "ip_address": {
+            "type": "string",
+            "description": "The IP address from which the activity was logged."
+          },
+          "change_log": {
+            "description": "Details of the event associated with the logged activity, including any changes made.",
+              "$ref": "#/components/schemas/change_log"
+          },
+          "user_agent": {
+            "type": "string",
+            "description": "The user agent string that identifies the device and browser used during the logged activity."
+          }
+        }
+      },
+      "change_log": {
+        "type": "object",
+        "properties": {
+          "ChangeLogCollection": {
+            "type": "array",
+            "description": "A collection of change logs that detail the specific changes made during the logged event.",
+            "items": {
+              "$ref": "#/components/schemas/ChangeLogCollection"
+            }
+          }
+        }
+      },
+      "ChangeLogCollection": {
+        "type": "object",
+        "properties": {
+          "ChangedItem": {
+            "type": "string",
+            "description": "The name of the item that was changed during the logged event."
+          },
+          "ChangeLog": {
+            "type": "array",
+            "description": "A list of specific changes that were made to the `ChangedItem` during the logged event.",
+            "items": {
+              "$ref": "#/components/schemas/ChangeLog"
+            }
+          }
+        }
+      },
+      "ChangeLog": {
+        "type": "object",
+        "properties": {
+          "ChangedItem": {
+            "type": "string",
+            "description": "The specific item that was altered during the logged event."
+          },
+          "From": {
+            "type": "string",
+            "description": "The original value of the item before the change was made."
+          },
+          "To": {
+            "type": "string",
+            "description": "The new value of the item after the change was made."
+          }
+        }
+      },
+      "GetOAuthResponse": {
+        "type": "object",
+        "properties": {
+          "ApiStatus": {
+            "type": "boolean",
+            "description": "Returns the status from the API."
+          },
+          "Data": {
+            "type": "array",
+            "description": "Response data from the API.",
+            "items": {
+              "$ref": "#/components/schemas/OAuthSettings"
+            }
+          },
+          "Status": {
+            "type": "boolean",
+            "description": "Returns status of the API request."
+          },
+          "StatusMessage": {
+            "type": "string",
+            "description": "Returns the status message from the API."
+          }
+        }
+      },
+      "OAuthSettings": {
+        "type": "object",
+        "properties": {
+          "ProviderName": {
+            "type": "string",
+            "description": "Indicates the authentication provider name."
+          },
+          "Logo": {
+            "type": "string",
+            "description": "Image name with file format."
+          },
+          "AuthorizationEndPoint": {
+            "type": "string",
+            "description": "Authorization endpoint URL."
+          },
+          "TokenEndPoint": {
+            "type": "string",
+            "description": "Token endpoint URL."
+          },
+          "TokenEndPointMethod": {
+            "type": "string",
+            "description": "Method of the endpoint."
+          },
+          "UserInfoEndPoint": {
+            "type": "string",
+            "description": "User info endpoint URL."
+          },
+          "UserInfoEndPointMethod": {
+            "type": "string",
+            "description": "Method of the user info endpoint."
+          },
+          "ClientId": {
+            "type": "string",
+            "description": "OAuth authentication client id."
+          },
+          "ClientSecret": {
+            "type": "string",
+            "description": "OAuth authentication client secret."
+          },
+          "Scopes": {
+            "type": "string",
+            "description": "Scopes of the settings."
+          },
+          "UserInfoEmail": {
+            "type": "string",
+            "description": "User email address."
+          },
+          "UserInfoFirstname": {
+            "type": "string",
+            "description": "User first name."
+          },
+          "UserInfoLastname": {
+            "type": "string",
+            "description": "User last name."
+          },
+          "LogoutEndPoint": {
+            "type": "string",
+            "description": "Logout endpoint URL."
+          },
+          "GroupImportSettings": {
+            "type": "array",
+            "description": "Group import settings.",
+            "items": {
+              "$ref": "#/components/schemas/GroupImportSettings"
+            }
+          },
+          "CanCreateAccount": {
+            "type": "boolean",
+            "description": "Data of user can create account or not."
+          }
+        }
+      },
+      "GroupImportSettings": {
+        "type": "object",
+        "properties": {
+          "KnownProviderType": {
+            "description": "Provider type of the authentication.",
+            "$ref": "#/components/schemas/KnownProviderType"
+          },
+          "Cognito": {
+            "type": "array",
+            "description": "CognitoAWS settings.",
+            "items": {
+              "$ref": "#/components/schemas/CognitoSettings"
+            }
+          },
+          "Auth0": {
+            "type": "array",
+            "description": "Auth0 settings.",
+            "items": {
+              "$ref": "#/components/schemas/Auth0Settings"
+            }
+          },
+          "Okta": {
+            "type": "array",
+            "description": "Okta settings.",
+            "items": {
+              "$ref": "#/components/schemas/OktaSettings"
+            }
+          },
+          "OneLogin": {
+            "type": "array",
+            "description": "One login settings.",
+            "items": {
+              "$ref": "#/components/schemas/OneLoginSettings"
+            }
+          }
+        }
+      },
+      "KnownProviderType": {
+        "description": "0 - None, 1 - CognitoAWS, 2 - Auth0, 3 - Okta, 4 - OneLogin",
+        "type": "enum",
+        "enum": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "x-enumNames": [
+          "None",
+          "CognitoAWS",
+          "Auth0",
+          "Okta",
+          "OneLogin"
+        ]
+      },
+      "CognitoSettings": {
+        "type": "object",
+        "properties": {
+          "UserPoolId": {
+            "type": "string",
+            "description": "User id of cognito."
+          },
+          "AwsAccesskeyId": {
+            "type": "string",
+            "description": "Aws access key id."
+          },
+          "AwsAccesskeySecret": {
+            "type": "string",
+            "description": "Aws access key secret."
+          },
+          "Region": {
+            "type": "string",
+            "description": "Aws region value."
+          }
+        }
+      },
+      "Auth0Settings": {
+        "type": "object",
+        "properties": {
+          "Audience": {
+            "type": "string",
+            "description": "Audience value for auth0 settings."
+          },
+          "ExtensionURL": {
+            "type": "string",
+            "description": "Extension URL for auth0 settings."
+          }
+        }
+      },
+      "OktaSettings": {
+        "type": "object",
+        "properties": {
+          "ApiToken": {
+            "type": "string",
+            "description": "Api token of okta settings."
+          }
+        }
+      },
+      "OneLoginSettings": {
+        "type": "object",
+        "properties": {
+          "ApiClientId": {
+            "type": "string",
+            "description": "Api client id for one login settings."
+          },
+          "ApiClientSecret": {
+            "type": "string",
+            "description": "Api client secret for one login settings."
+          },
+          "Region": {
+            "type": "string",
+            "description": "Region value for one login settings."
+          }
+        }
+      },
+      "AddOAuthRequestBody": {
+        "required": [
+          "LogoBytes",
+          "OAuthAuthSettings"
+        ],
+        "type": "object",
+        "properties": {
+          "EnableAuthentication": {
+            "type": "string",
+            "description": "Set true or false to enable or disable settings."
+          },
+          "LogoBytes": {
+            "type": "string",
+            "description": "Provide image in bytes format."
+          },
+          "OAuthAuthSettings": {
+            "type": "array",
+            "description": "Auth settings details.",
+            "items": {
+              "$ref": "#/components/schemas/AddOAuthSettings"
+            }
+          }
+        }
+      },
+      "UpdateOAuthRequestBody": {
+        "type": "object",
+        "properties": {
+          "EnableAuthentication": {
+            "type": "string",
+            "description": "Set true or false to enable or disable settings."
+          },
+          "LogoBytes": {
+            "type": "string",
+            "description": "Provide image in bytes format."
+          },
+          "OAuthAuthSettings": {
+            "type": "array",
+            "description": "Auth settings details.",
+            "items": {
+              "$ref": "#/components/schemas/UpdateOAuthSettings"
+            }
+          }
+        }
+      },
+      "AddOAuthSettings": {
+        "required": [
+          "ProviderName",
+          "AuthorizationEndPoint",
+          "TokenEndPoint",
+          "TokenEndPointMethod",
+          "UserInfoEndPoint",
+          "UserInfoEndPointMethod",
+          "ClientId",
+          "ClientSecret",
+          "Scopes",
+          "UserInfoEmail"
+        ],
+        "type": "object",
+        "properties": {
+          "ProviderName": {
+            "type": "string",
+            "description": "Indicates the authentication provider name."
+          },
+          "AuthorizationEndPoint": {
+            "type": "string",
+            "description": "Authorization endpoint URL."
+          },
+          "TokenEndPoint": {
+            "type": "string",
+            "description": "Token endpoint URL."
+          },
+          "TokenEndPointMethod": {
+            "type": "string",
+            "description": "Method of the endpoint POST or GET."
+          },
+          "UserInfoEndPoint": {
+            "type": "string",
+            "description": "User info endpoint URL."
+          },
+          "UserInfoEndPointMethod": {
+            "type": "string",
+            "description": "Method of the user info endpoint POST or GET."
+          },
+          "ClientId": {
+            "type": "string",
+            "description": "OAuth authentication client id."
+          },
+          "ClientSecret": {
+            "type": "string",
+            "description": "OAuth authentication client secret."
+          },
+          "Scopes": {
+            "type": "string",
+            "description": "Scopes of the settings."
+          },
+          "UserInfoEmail": {
+            "type": "string",
+            "description": "email."
+          },
+          "UserInfoFirstName": {
+            "type": "string",
+            "description": "User first name."
+          },
+          "UserInfoLastName": {
+            "type": "string",
+            "description": "User last name."
+          },
+          "LogoutEndPoint": {
+            "type": "string",
+            "description": "logout end point url."
+          },
+          "GroupImportSettings": {
+            "type": "array",
+            "description": "Group import settings.",
+            "items": {
+              "$ref": "#/components/schemas/GroupImportSettings"
+            }
+          },
+          "EnableCanCreateAccount": {
+            "type": "string",
+            "description": "provide true or false to enable or disable can create account"
+          }
+        }
+      },
+      "UpdateOAuthSettings": {
+        "type": "object",
+        "properties": {
+          "ProviderName": {
+            "type": "string",
+            "description": "Indicates the authentication provider name."
+          },
+          "AuthorizationEndPoint": {
+            "type": "string",
+            "description": "Authorization endpoint URL."
+          },
+          "TokenEndPoint": {
+            "type": "string",
+            "description": "Token endpoint URL."
+          },
+          "TokenEndPointMethod": {
+            "type": "string",
+            "description": "Method of the endpoint POST or GET."
+          },
+          "UserInfoEndPoint": {
+            "type": "string",
+            "description": "User info endpoint URL."
+          },
+          "UserInfoEndPointMethod": {
+            "type": "string",
+            "description": "Method of the user info endpoint POST or GET."
+          },
+          "ClientId": {
+            "type": "string",
+            "description": "OAuth authentication client id."
+          },
+          "ClientSecret": {
+            "type": "string",
+            "description": "OAuth authentication client secret."
+          },
+          "Scopes": {
+            "type": "string",
+            "description": "Scopes of the settings."
+          },
+          "UserInfoEmail": {
+            "type": "string",
+            "description": "email."
+          },
+          "UserInfoFirstName": {
+            "type": "string",
+            "description": "User first name."
+          },
+          "UserInfoLastName": {
+            "type": "string",
+            "description": "User last name."
+          },
+          "LogoutEndPoint": {
+            "type": "string",
+            "description": "logout end point url."
+          },
+          "GroupImportSettings": {
+            "type": "array",
+            "description": "Group import settings.",
+            "items": {
+              "$ref": "#/components/schemas/GroupImportSettings"
+            }
+          },
+          "EnableCanCreateAccount": {
+            "type": "string",
+            "description": "provide true or false to enable or disable can create account"
+          }
+        }
+      },
+      "OAuthResponse": {
+        "type": "object",
+        "properties": {
+          "ApiStatus": {
+            "type": "boolean",
+            "description": "Returns the status from the API."
+          },
+          "Status": {
+            "type": "boolean",
+            "description": "Returns status of the API request."
+          },
+          "StatusMessage": {
+            "type": "string",
+            "description": "Returns the status message from the API."
+          },
+          "Message": {
+            "type": "string",
+            "description": "Returns the message from the API."
+          }
+        }
+      },
+      "GetOpenIdResponse": {
+        "type": "object",
+        "properties": {
+          "ApiStatus": {
+            "type": "boolean",
+            "description": "Returns the status from the API."
+          },
+          "Data": {
+            "type": "array",
+            "description": "Response data from the API.",
+            "items": {
+              "$ref": "#/components/schemas/OpenIdSettings"
+            }
+          },
+          "Status": {
+            "type": "boolean",
+            "description": "Returns status of the API request."
+          },
+          "StatusMessage": {
+            "type": "string",
+            "description": "Returns the status message from the API."
+          }
+        }
+      },
+      "OpenIdSettings": {
+        "type": "object",
+        "properties": {
+          "ProviderName": {
+            "type": "string",
+            "description": "Indicates the authentication provider name."
+          },
+          "Logo": {
+            "type": "string",
+            "description": "Image name with file format."
+          },
+          "Authority": {
+            "type": "string",
+            "description": "Authority endpoint URL."
+          },
+          "ClientId": {
+            "type": "string",
+            "description": "Openid authentication client id."
+          },
+          "ClientSecret": {
+            "type": "string",
+            "description": "Openid authentication client secret."
+          },
+          "Identifier": {
+            "type": "string",
+            "description": "Identifier of authentication."
+          },
+          "ResponseType": {
+            "type": "string",
+            "description": "Provide the response type value."
+          },
+          "LogoutURL": {
+            "type": "string",
+            "description": "Logout endpoint URL."
+          },
+          "GroupImportSettings": {
+            "type": "array",
+            "description": "Group import settings.",
+            "items": {
+              "$ref": "#/components/schemas/GroupImportSettings"
+            }
+          },
+          "CanCreateAccount": {
+            "type": "boolean",
+            "description": "Data of user can create account or not."
+          }
+        }
+      },
+      "AddOpenIdRequestBody": {
+        "required": [
+          "LogoBytes",
+          "OIDCAuthSettings"
+        ],
+        "type": "object",
+        "properties": {
+          "EnableAuthentication": {
+            "type": "string",
+            "description": "Set true or false to enable or disable settings."
+          },
+          "LogoBytes": {
+            "type": "string",
+            "description": "Provide image in bytes format."
+          },
+          "OIDCAuthSettings": {
+            "type": "array",
+            "description": "Auth settings details.",
+            "items": {
+              "$ref": "#/components/schemas/AddOpenIdSettings"
+            }
+          }
+        }
+      },
+      "UpdateOpenIdRequestBody": {
+        "type": "object",
+        "properties": {
+          "EnableAuthentication": {
+            "type": "string",
+            "description": "Set true or false to enable or disable settings."
+          },
+          "LogoBytes": {
+            "type": "string",
+            "description": "Provide image in bytes format."
+          },
+          "OIDCAuthSettings": {
+            "type": "array",
+            "description": "Auth settings details.",
+            "items": {
+              "$ref": "#/components/schemas/UpdateOpenIdSettings"
+            }
+          }
+        }
+      },
+      "AddOpenIdSettings": {
+        "required": [
+          "ProviderName",
+          "Authority",
+          "ClientId",
+          "ClientSecret",
+          "Identifier"
+        ],
+        "type": "object",
+        "properties": {
+          "ProviderName": {
+            "type": "string",
+            "description": "Indicates the authentication provider name."
+          },
+          "Authority": {
+            "type": "string",
+            "description": "Authority endpoint URL."
+          },
+          "ClientId": {
+            "type": "string",
+            "description": "Openid authentication client id."
+          },
+          "ClientSecret": {
+            "type": "string",
+            "description": "Openid authentication client secret."
+          },
+          "Identifier": {
+            "type": "string",
+            "description": "email."
+          },
+          "ResponseType": {
+            "type": "string",
+            "description": "Provide the response type value 'id_token' or 'code'."
+          },
+          "LogoutURL": {
+            "type": "string",
+            "description": "Logout endpoint URL."
+          },
+          "GroupImportSettings": {
+            "type": "array",
+            "description": "Group import settings.",
+            "items": {
+              "$ref": "#/components/schemas/GroupImportSettings"
+            }
+          },
+          "EnableCanCreateAccount": {
+            "type": "string",
+            "description": "provide true or false to enable or disable can create account"
+          }
+        }
+      },
+      "UpdateOpenIdSettings": {
+        "type": "object",
+        "properties": {
+          "ProviderName": {
+            "type": "string",
+            "description": "Indicates the authentication provider name."
+          },
+          "Authority": {
+            "type": "string",
+            "description": "Authority endpoint URL."
+          },
+          "ClientId": {
+            "type": "string",
+            "description": "Openid authentication client id."
+          },
+          "ClientSecret": {
+            "type": "string",
+            "description": "Openid authentication client secret."
+          },
+          "Identifier": {
+            "type": "string",
+            "description": "email."
+          },
+          "ResponseType": {
+            "type": "string",
+            "description": "Provide the response type value 'id_token' or 'code'."
+          },
+          "LogoutURL": {
+            "type": "string",
+            "description": "Logout endpoint URL."
+          },
+          "GroupImportSettings": {
+            "type": "array",
+            "description": "Group import settings.",
+            "items": {
+              "$ref": "#/components/schemas/GroupImportSettings"
+            }
+          },
+          "EnableCanCreateAccount": {
+            "type": "string",
+            "description": "provide true or false to enable or disable can create account"
+          }
+        }
+      },
+      "OpenIdResponse": {
+        "type": "object",
+        "properties": {
+          "ApiStatus": {
+            "type": "boolean",
+            "description": "Returns the status from the API."
+          },
+          "Status": {
+            "type": "boolean",
+            "description": "Returns status of the API request."
+          },
+          "StatusMessage": {
+            "type": "string",
+            "description": "Returns the status message from the API."
+          },
+          "Message": {
+            "type": "string",
+            "description": "Returns the message from the API."
+          }
+        }
       }
     },
-	"securitySchemes": {
+    "securitySchemes": {
       "Bearer <Token>": {
         "type": "http",
         "description": "JWT token Authentication",

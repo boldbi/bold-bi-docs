@@ -235,6 +235,43 @@ var dashboard = BoldBI.create({
 dashboard.loadDashboard();
 ```
 
+<h2 class="doc-prop-wrapper" id="enableaiassistant" data-Path="enableaiassistant-enableAiAssistant">
+<a href="#enableaiassistant" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
+<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+</svg>
+</a><span class='doc-prop-name'>enableAiAssistant</span>
+
+<span class="doc-prop-type"> `boolean`
+</span>
+
+</h2>
+
+
+The AI Assistant enables users to generate widgets and modify their properties using natural language queries, making data visualization more intuitive and accessible. It is designed to enhance the widget creation and customization experience by leveraging advanced AI models. It offers both Cloud and Enterprise editions of the dashboard application. It supports only for dashboard viewer and dashboard designer. Please refer [here](https://help.boldbi.com/artificial-intelligence-and-machine-learning/activate-ai-feature/) to know more about this feature.
+
+<br>
+
+**Default value** 
+
+<li>false</li><br>
+
+**Example** 
+
+```js
+var dashboard = BoldBI.create({
+     mode: BoldBI.Mode.View,
+     enableAiAssistant: true, //The AI Assistant option will be show in the dashboard viewer.   
+});
+dashboard.loadDashboard();
+
+var dashboard = BoldBI.create({
+     mode: BoldBI.Mode.Design,
+     enableAiAssistant: true, //The AI Assistant option will be show in the dashboard designer.       
+});
+dashboard.loadDesigner();
+```
+
 <h2 class="doc-prop-wrapper" id="environment" data-Path="environment-environment">
 <a href="#environment" aria-hidden="true" class="anchor">
 <svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
@@ -637,41 +674,6 @@ var dashboard = BoldBI.create({
 dashboard.loadDashboard();
 ```
 
-<h2 class="doc-prop-wrapper" id="theme" data-Path="theme-theme">
-<a href="#theme" aria-hidden="true" class="anchor">
-<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
-<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
-</svg>
-</a><span class='doc-prop-name'>theme</span>
-
-<span class="doc-prop-type"> `object`
-</span>
-
-</h2>
-
-    
-Bold BI provides support for dark theming in Dashboard Viewer, allowing users to choose their preferred theme.
-
-<br>
-
-**Default value** 
-
-<li>BoldBI.Theme.Light</li><br>
-
-**Possible values**
-
-<li>BoldBI.Theme.Light</li> 
-<li>BoldBI.Theme.Dark</li><br>
-
-**Example** 
-   
-```js
-var dashboard = BoldBI.create({
-     theme:BoldBI.Theme.Dark,
-});
-dashboard.loadDashboard();
-```
-
 <h2 class="doc-prop-wrapper" id="token" data-Path="token-token">
 <a href="#token" aria-hidden="true" class="anchor">
 <svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
@@ -684,7 +686,7 @@ dashboard.loadDashboard();
 
 </h2>
 
-By using token API member, able to authenticate the dashboard in your application without implementing the AuthorizeAPI endpoint. Refer [token generation](/embedding-options/embedding-sdk/embedding-using-javascript/#token-generation) section for generating token in two different ways.
+By using token API member, able to authenticate the dashboard in your application without implementing the AuthorizeAPI endpoint. Refer [token generation](/embedding-options/embedding-sdk/token-generation/) section for generating token in two different ways.
 
 <br>
 
@@ -700,7 +702,7 @@ var dashboard = BoldBI.create({
 });
 dashboard.loadDashboard();
 ```  
-To learn about the available limited [supporting methods](/embedding-options/embedding-sdk/embedding-using-javascript/#following-embedding-modules-is-achievable-by-using-token-api-member) in embedding.
+To learn about the available limited [supporting methods](/embedding-options/embedding-sdk/token-generation/#following-embedding-modules-is-achievable-by-using-token-api-member) in embedding.
 
 <h2 class="doc-prop-wrapper" id="viewid" data-Path="viewid-viewId">
 <a href="#viewid" aria-hidden="true" class="anchor">
@@ -785,11 +787,11 @@ This member will assist in loading the specific widgets of the single dashboard 
 
 **Example** 
    
-```js 
+```js  
 <div id="dashboard"></div>
 <div id="widget1" style="height:500px;width:500px"></div> 
 <div id="widget2" style="height:500px;width:500px"></div> 
-<div id="widget3" style="height:500px;width:500px"></div> 
+<div id="widget3" style="height:500px;width:500px"></div>  
 <script>  
 var dashboard = BoldBI.create({
       dashboardId: "5cb065f7-dabb-4b0c-9b45-c60a5730e963",
@@ -2173,6 +2175,76 @@ Specifies whether to show or hide the `PDF` export option.
 var dashboard = BoldBI.create({
      exportSettings: {
           showPDF: true,
+     }
+});
+dashboard.loadDashboard();
+```
+
+## languageSettings
+
+<h3 class="doc-prop-wrapper" id="hidelanguagedropdown" data-Path="languagesettingshidelanguagedropdown-languagesettings.hidelanguagedropdown">
+<a href="#hidelanguagedropdown" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
+<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+</svg>
+</a><span class='doc-prop-name'>hideLanguageDropdown</span>
+
+<span class="doc-prop-type"> `boolean`
+</span>
+
+</h3>
+
+
+This property will display or hide the dashboard localization dropdown in the dashboard banner.
+
+<br>
+
+**Default value** 
+
+<li>false</li><br>
+
+Before setting the dashboard localization at the embedding level, you should configure the `Localize Dashboard` option in the dashboard designer of your Bold BI Server. By default, the dashboard localization dropdown is visible in the dashboard banner. To hide it, use the `hideLanguageDropdown` API at the embedding level.
+
+**Example** 
+
+```js
+var dashboard = BoldBI.create({
+     languageSettings:{
+          hideLanguageDropdown: true,
+     }
+});
+dashboard.loadDashboard();
+```
+
+<h3 class="doc-prop-wrapper" id="languagecode" data-Path="languagesettingslanguagecode-languagesettings.languagecode">
+<a href="#languagecode" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
+<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+</svg>
+</a><span class='doc-prop-name'>languageCode</span>
+
+<span class="doc-prop-type"> `string`
+</span>
+
+</h3>
+
+
+This property contains the values that will be passed to the dashboard to change its localization during the initial rendering.
+
+<br>
+
+**Default value** 
+
+<li>""</li><br>
+
+Before setting the dashboard localization at the embedding level, you should configure the `Localize Dashboard` option in the dashboard designer of your Bold BI Server. After doing so, you will be able to change the language using the `languageCode` API at the embedding level.
+
+**Example**
+
+```js
+var dashboard = BoldBI.create({
+     languageSettings:{
+          languageCode: "fr-FR",
      }
 });
 dashboard.loadDashboard();

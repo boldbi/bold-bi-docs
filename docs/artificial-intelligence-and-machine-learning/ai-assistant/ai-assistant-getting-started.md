@@ -40,6 +40,34 @@ This helps you keep track of your AI consumption with ease.
 
 >**NOTE**: Usage costs include interactions with the Q&A widget except session usage.
 
+We provide an initial $3 credit for the AI Assistant, which is free of charge and will not be billed. The credits are reduced based on token-based usage, as shown below:
+
+<table>
+    <thead>
+        <tr>
+            <th>Model</th>
+            <th>Purpose</th>
+            <th>Pricing</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>GPT-4o Mini</td>
+            <td>Conversations in AI Assistant</td>
+            <td>$0.150 per 1M input tokens<br>$0.600 per 1M output tokens</td>
+        </tr>
+        <tr>
+            <td>Fine-tuned GPT-4o Mini model</td>
+            <td>Widget creation and widget property updates</td>
+            <td>$0.300 per 1M input tokens<br>$1.200 per 1M output tokens</td>
+        </tr>
+    </tbody>
+</table>
+
+Once the initial $3 credit is exhausted, you can request additional credits by contacting our support team. We will review and add credits upon validation.
+
+Please note, if your usage is frequent, you may be required to make a payment prior to adding further credits.
+
 ![AI-Assistant-Usage](/static/assets/artificial-intelligence-and-machine-learning/images/ai-assistant/ai-assistant-usage.png)
 
 ## Restarting a Session
