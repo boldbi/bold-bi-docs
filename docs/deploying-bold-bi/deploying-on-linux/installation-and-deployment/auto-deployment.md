@@ -98,11 +98,11 @@ This section provides instructions for deploying Bold BI in Linux without manual
       </td>
       <td>
       Install pip dependency package for ETL service by running the following command: </br> </br>
-      <b>sudo pip install duckdb===1.0.0 dlt===0.5.4 pymysql pyodbc pg8000 poetry pandas===2.2.2 "dlt[parquet]" "dlt[filesystem]"</b>
+      <b>sudo pip install duckdb===1.1.2 dlt===0.5.4 pymysql pyodbc pg8000 poetry pandas===2.2.2 "dlt[parquet]" "dlt[filesystem]"</b>
       </td>
       <td>
       Install pip dependency package for ETL service by running the following command: </br> </br>
-      <b>python3.9 -m pip install duckdb===1.0.0 dlt===0.5.4 pymysql pyodbc pg8000 poetry pandas===2.2.2 "dlt[parquet]" "dlt[filesystem]"</b>
+      <b>python3.9 -m pip install duckdb===1.1.2 dlt===0.5.4 pymysql pyodbc pg8000 poetry pandas===2.2.2 "dlt[parquet]" "dlt[filesystem]"</b>
       </td>
     </tr> 
     <tr>

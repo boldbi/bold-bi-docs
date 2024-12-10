@@ -9,9 +9,11 @@ documentation: ug
 ---
 
 # Activate AI Feature
-To activate AI feature, follow these steps:
+Watch our latest video tutorial to learn how to activate the AI feature in Bold BI. Follow step-by-step instructions and helpful tips to get the most out of this powerful functionality!<br/>
 
-## Steps
+<iframe class="helpsite-video-section" src="https://www.youtube.com/embed/oeHEcOVd634" frameborder="0" allowfullscreen></iframe>
+
+## Steps to activate AI feature
 
 1. Click on the AI Assistant feature icon located at the bottom right of the dashboard designer or viewer.
 
@@ -52,3 +54,5 @@ To activate AI feature, follow these steps:
 9. You will be directed to a page confirming that the AI Feature has been activated.
 
 ![Welcome Page](/static/assets/artificial-intelligence-and-machine-learning/images/activate-ai-feature/Welcome_Page.png)
+
+>**NOTE**: These activation steps apply only to existing license keys. For new license keys, activation will be completed at license registration itself.

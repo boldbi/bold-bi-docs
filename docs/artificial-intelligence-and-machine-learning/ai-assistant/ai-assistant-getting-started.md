@@ -8,6 +8,9 @@ documentation: ug
 ---
 
 # Getting Started with the AI Assistant
+We recommend watching the following video, which offers essential insights on effectively getting started with the AI Assistant in Bold BI.<br/>
+
+<iframe class="helpsite-video-section" src="https://www.youtube.com/embed/6KfzY3tpOG8" frameborder="0" allowfullscreen></iframe>
 
 1. The AI Assistant is conveniently located at the bottom-right corner of your window of your dashboard designer and dashboard viewer only.
 
@@ -58,8 +61,13 @@ We provide an initial $3 credit for the AI Assistant, which is free of charge an
         </tr>
         <tr>
             <td>Fine-tuned GPT-4o Mini model</td>
-            <td>Widget creation and widget property updates</td>
+            <td>Widget property updates</td>
             <td>$0.300 per 1M input tokens<br>$1.200 per 1M output tokens</td>
+        </tr>
+        <tr>
+            <td>GPT-4o model</td>
+            <td>Widget creation</td>
+            <td>$2.50 per 1M input tokens<br>$10.00 per 1M output tokens</td>
         </tr>
     </tbody>
 </table>

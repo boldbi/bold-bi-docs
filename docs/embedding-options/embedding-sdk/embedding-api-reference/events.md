@@ -1930,9 +1930,61 @@ var dashboard = BoldBI.create({
                //        });
                //   }
                // });
+          }
      }
 });
 dashboard.loadDesigner();  
+```
+
+### beforeWidgetLayoutRender
+This event will be triggered before the widget layout is rendered in the mobile view. You will be able to resize a specific widgets or all widget item using the event.
+<table class="params">
+<thead>
+<tr>
+<th style="width: 20%;">Name</th>
+<th style="width: 20%;">Type</th>
+<th style="width: 60%;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">category</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Specifies which category the widget belongs to, like Filters or Cards.</td>
+</tr>
+<td class="name">Id</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Holds the current widget id.</td>
+<tr>
+<td class="name">model</td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type"><a href=/embedding-options/embedding-sdk/embedding-api-reference/events/#dashboardproperties>object</a></span></td>
+<td class="description">Holds the dashboard viewer's object.</td>
+</tr>
+<td class="name">Name</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Holds the current widget name.</td>
+<tr>
+<td class="name">size.MobileHeightFactor</td>
+<td class="type"><span class="param-type">int</span></td>
+<td class="description">Defines the scaling factor for widget height as a percentage.</td>
+</tr>
+</tbody>
+</table>
+
+**Example** 
+```js
+var dashboard = BoldBI.create({
+     widgetSettings: { 
+          beforeWidgetLayoutRender: function (args) {
+               // Write a code block to operate before widget layout renderd in the mobile view.
+               // if (args.category === 'Filters') {
+               // This doubles the height of the widget by setting MobileHeightFactor to 2
+               //     args.size.MobileHeightFactor = 2;
+               //}               
+          }
+     }
+});
+dashboard.loadDashboard();  
 ```
 
 ### widgetSettings.beforeIconRender
