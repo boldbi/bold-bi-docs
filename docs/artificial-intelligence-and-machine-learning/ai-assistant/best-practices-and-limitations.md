@@ -19,7 +19,7 @@ documentation: ug
  
 ## Limitations
  
-1. Currently, the AI Assistant does not support the following chart types: `Scatter chart`, `Radar polar`, all charts in the `Relationship widget` category except for `grid chart`, `KPI card`, and charts in the `Deviation`, `Filters`, `Composition`, and `Miscellaneous categories`.
+1. Currently, the AI Assistant does not support the following types: `Pivot Grid` and `Heat Map` in the `Relationship widget` category, `Radar polar`, `KPI card` and charts in the `Deviation`, `Filters`, `Composition`, and `Miscellaneous categories`.
  
 2. Dashboard parameters or custom attributes cannot be utilized with the AI Assistant.
  

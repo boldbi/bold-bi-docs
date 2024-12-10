@@ -112,6 +112,7 @@
 				"React with ASP.NET Core": "react-core",
 				"React with Node.js": "react-with-node-js",
 				"React with Go": "react-with-go",
+				"React with Python": "react-with-python",
 				"Node.js": "node-js",
 				"Blazor WebAssembly": "blazor-web-assembly",
 				"Blazor with JavaScript": "blazor-with-javascript",

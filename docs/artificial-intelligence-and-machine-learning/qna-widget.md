@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 # About Q&A Widget
-The BoldBI Q&A widget is an AI-powered tool that simplifies the process of converting data into visual charts by using natural language commands. It employs fine-tuned AI models using the AI Assistant service to comprehend your queries and crafts relevant charts, streamlining the process of data investigation and dashboard creation.
+The BoldBI Q&A widget is an AI-powered tool that simplifies the process of converting data into visual charts by using natural language commands. It employs AI models using the AI Assistant service to comprehend your queries and crafts relevant charts, streamlining the process of data investigation and dashboard creation.
 
 >**Breaking Changes:** Starting from Bold BI v8.1, the Q&A widget will integrate with our dedicated AI service. As a result, no fine-tuning process or initial configuration setup is required on your end to utilize the Q&A widget. 
 For versions prior to Bold BI v8.1, fine-tuning your data is necessary to use the Q&A widget. Please refer to the [Fine-Tuning Guide](/utilities/fine-tuning-utility/) for more details.

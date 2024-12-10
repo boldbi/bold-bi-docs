@@ -441,6 +441,8 @@ Upon initial connection, MongoDB will extract a maximum of 10,000 records. By co
 </tr>
 </table>
 
+**NOTE:** MongoDB provides a BI connector tool that allows you to connect MongoDB servers directly through an ODBC connector or MySQL connector, without the need for any intermediate database. Please refer to this KB article for more information. [How to connect MongoDB by direct query mode in Bold BI](https://www.boldbi.com/kb/faq/how-to-connect-mongodb-by-direct-query-mode-in-bold-bi).
+
 ## Related links
 [Blog post](https://www.boldbi.com/blog/connect-mongodb-workloads-migrated-to-azure-cosmos-db)
 

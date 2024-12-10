@@ -27,6 +27,17 @@ var dashboard = BoldBI.create({
 
 > **NOTE:** By default, `BoldBI.Environment.Enterprise` is used for the Environment API member. For Cloud sites, you must set the Environment member value to `BoldBI.Environment.Cloud`.
 
+## clearAllFilter()
+
+This method will clear all filters applied in the current dashboard.
+
+**Example** 
+
+```js        
+var instance = BoldBI.getInstance("container"); //container -> embed container id
+instance.clearAllFilter();
+```
+
 ## destroy()
     
 This method will destroy the dashboard based on the provided dashboard object when calling the create method.
