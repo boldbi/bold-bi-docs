@@ -2270,6 +2270,19 @@
                             "type": "boolean"
                         },
                         "example": "  True "
+                    },
+                    {
+                        "type": "integer",
+                        "name": "createdBy",
+                        "in": "query",
+                        "required": false,
+                        "description": "<br />\nSpecifies the User ID to filter the dashboards based on the user who created them.<br />",
+                        "x-nullable": true,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int32"
+                        },
+                        "example": "  1 "
                     }
                 ],
                 "responses": {
@@ -4574,7 +4587,20 @@
                 "description": "<br />`\"/\"` + `\"Category name\"`",
                 "x-nullable": true,
                 "example": " /sales "
-              }
+            },
+            {
+              "type": "integer",
+              "name": "createdBy",
+              "in": "query",
+              "required": false,
+              "description": "<br />\nSpecifies the User ID to filter the items based on the user who created them.<br />",
+              "x-nullable": true,
+              "schema": {
+                  "type": "integer",
+                  "format": "int32"
+              },
+              "example": "  1 "
+           }
             ],
             "responses": {
               "200": {
