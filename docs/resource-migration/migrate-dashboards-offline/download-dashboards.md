@@ -75,6 +75,12 @@ If any dashboard fails to download, you can view the reason for the failure by c
 
 > **NOTE:** If you come across a download failure error message associated with the download permission, it means that you do not have the required permission to download it. Please refer to the [download permission](/resource-migration/migrate-dashboards-offline/download-dashboards/#download-permissions) section to understand how to grant the download permission.
 
+## Remove the download dashboard file from the offline page
+
+Downloaded dashboard files can be removed from the Bold BI site by hovering over the respective file row and clicking the `Remove` option.
+
+![Remove Download Dashboard Logs](/static/assets/resource-migration/migrate-dashboards-offline/images/remove-download-dashboard-logs.png)
+
 ## Download Permissions
 
 By default, a user can only download their own dashboards. However, an administrator or a user with permission to delegate other permissions can grant download permission to other users for all dashboards, dashboards in a category, or specific dashboards. After the permission is granted, the user(s) will be able to download the dashboards from the tenants in Bold BI.

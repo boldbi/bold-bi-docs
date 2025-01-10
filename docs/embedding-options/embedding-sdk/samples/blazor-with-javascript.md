@@ -195,7 +195,7 @@ The sample has been provided in the following sections for `Blazor Server`, whic
      ```js 
        <div id="dashboard"></div>
        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-       <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v8.2.22/boldbi-embed.js"></script>
+       <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v8.3.17/boldbi-embed.js"></script>
        <script type="text/javascript">
              var rootUrl = "@GlobalAppSettings.EmbedDetails.ServerUrl";
              var siteIdentifier = "@GlobalAppSettings.EmbedDetails.SiteIdentifier";

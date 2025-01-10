@@ -1656,7 +1656,7 @@ Datadog
 LLMs
 hide_dashboard_edit
 v8.1
-v8.2.22
+v8.3.17
 SUSE-15
 optionallibs
 installdatahub
@@ -1687,3 +1687,4 @@ restrict_mobile_view
 hide_language_dropdown
 U.A.E
 language_code
+embed_custom_attribute

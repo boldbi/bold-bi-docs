@@ -43,6 +43,8 @@ You can explore the Site Administration in detail here:
 
 [Notification Settings](/site-administration/notification-settings/)
 
+[API Key](/site-administration/api-key/)
+
 [Site Credentials](/site-administration/site-credentials/)
 
 [Security](/security-configuration/cors-settings/)

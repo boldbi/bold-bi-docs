@@ -1,7 +1,5 @@
 {
-	"Overview": {
-		"On-Premises vs. Managed Cloud" : "on-premises-vs-managed-cloud"
-	},
+	"Overview": "overview",
 	"Embed SandBox":{
 		"SandBox Overview":"sandbox-overview"
 	},
@@ -98,6 +96,7 @@
 			"Token Generation" : "token-generation",
 			"Guidelines for Single and Multi Site": "guidelines-for-single-site-multi-site",
 			"Custom Theme Embedding": "custom-theme-embedding",
+			"Custom Attribute": "custom-attribute",
 			"Types of Data Filtering": "types-of-data-filtering-in-embedding",
 			"Embedding API Reference": {
 				"Members": "members.md",
@@ -552,7 +551,8 @@
 			  "Auth0": "auth0",
 			  "Keycloak": "keycloak",
 			  "RedHat": "redhat"
-			}
+			},
+			"JWT Support": "json-web-token"
 		  },
 		"CORS Settings": "cors-settings",
 		"Known Domain Configuration": "known-domain-configuration",
@@ -593,7 +593,8 @@
 			  "SMTP": "smtp-account",
 			  "Microsoft Office 365": "office-365-account"
 		  },
-          "Email Activity Logs": "email-activity-logs"
+          "Email Activity Logs": "email-activity-logs",
+		  "Email Template": "email-template"
         },
         "Account Settings": "account-settings",
         "Data Process Settings": {
@@ -618,6 +619,7 @@
 			  }
 		},
         "Notification Settings": "notification-settings",
+		"API Key": "api-key",
 		"Site Credentials": "site-credentials",
         "Integrations": {
           "Webhook Listing": "webhook-listing",
@@ -705,7 +707,14 @@
 		"Create A Tenant": "create-new-site",
 		"Site Administration": {
 			"Rebranding": "rebranding",
-			"Email Settings": "email-settings",
+			"Email Settings": {
+				"Configuration": {
+					"SMTP": "smtp-account",
+					"Microsoft Office 365": "office-365-account"
+				},
+				"Email Activity Logs": "email-activity-logs",
+				"Email Template": "email-template"
+			},
 			"Audit Logs": "audit-logs",
 			"Account Settings": "account-settings",
 			"API Keys": "api-keys",

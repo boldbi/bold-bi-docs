@@ -1785,6 +1785,18 @@
             "schema": {
               "type": "boolean"
             }
+          },
+          {
+            "type": "integer",
+            "name": "createdBy",
+            "in": "query",
+            "required": false,
+            "description": "<br />\nSpecifies the User ID to filter the dashboards based on the user who created them.<br />",
+            "x-nullable": true,
+            "schema": {
+                "type": "integer",
+                "format": "int32"
+            }
           }
         ],
         "responses": {
@@ -3578,6 +3590,18 @@
             "in": "query",
             "description": "`\"/\"` + `\"Category name\"`",
             "x-nullable": true
+          },
+          {
+            "type": "integer",
+            "name": "createdBy",
+            "in": "query",
+            "required": false,
+            "description": "<br />\nSpecifies the User ID to filter the items based on the user who created them.<br />",
+            "x-nullable": true,
+            "schema": {
+                "type": "integer",
+                "format": "int32"
+            }
           }
         ],
         "responses": {

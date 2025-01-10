@@ -15,7 +15,7 @@ Follow these steps to embed the dashboard using the token API member. Previously
 
     ```js
     <head>  
-        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v8.2.22/boldbi-embed.js"></script>
+        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v8.3.17/boldbi-embed.js"></script>
     </head>
     ```
 

@@ -2944,6 +2944,10 @@
     "toPath": "/embedded-bi/security-configuration/single-sign-on/overview/"
   },
   {
+    "fromPath": "/embedded-bi/site-administration/sso/json-web-token/",
+    "toPath": "/security-configuration/single-sign-on/json-web-token/"
+  },
+  {
     "fromPath": "/embedded-bi/security-configuration/single-sign-on/overview/",
     "toPath": "/security-configuration/single-sign-on/overview/"
   },
