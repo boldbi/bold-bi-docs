@@ -90,17 +90,23 @@ Custom attributes are applied to an embedded Bold BI dashboard, the rendered out
   <thead>
     <tr>
       <th>Parameter</th>
-      <th>Type</th>
       <th>Syntax</th>
       <th>Example</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td><code>embed_custom_attribute</code></td>
-      <td><code>string</code></td>
-      <td>"[{Attribute_Name: Value}]"</td>
-      <td>embed_custom_attribute=[{"sales_analysis_db": "alpha_electronics_sales_analysis"}]</td>
+      <td rowspan="3"><code>embed_custom_attribute</code></td>
+      <td>"[{\"Attribute_Name\":\"Value\"}]"</td>
+      <td>embed_custom_attribute=[{\"sales_analysis_db\":\"alpha_electronics_sales_analysis\"}]</td>
+    </tr>
+    <tr>
+      <td>"[{\"Attribute_Name\":\"IN('Value1','Value2')\"}]"</td>
+      <td>embed_custom_attribute=[{\"department\":\"IN('CSE','EEE')\"}]</td>
+    </tr>
+    <tr>
+      <td>"[{\"Attribute_Name1\":\"Value1\",\"Attribute_Name2\":\"Value2\"}]"</td>
+      <td>"&embed_custom_attribute=[{\"department\":\"IT\",\"name\":\"David\"}]";</td>
     </tr>
   </tbody>
 </table>
@@ -125,7 +131,7 @@ public string GetEmbedDetails(string embedQueryString, string dashboardServerApi
     embedQueryString += "&embed_user_email=user@domain.com";
 
     // Adding custom attributes for the logged-in user.
-    embedQueryString += "&embed_custom_attribute=" + "[{Attribute_Name: Value}]";
+    embedQueryString += "&embed_custom_attribute=" + "[{\"Attribute_Name\":\"Value\"}]";
 
     // To set embed_server_timestamp to overcome EmbedCodeValidation failures when using different time zones in the client application.
     double timeStamp = (int)DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1)).TotalSeconds;
@@ -218,7 +224,7 @@ Please follow these steps to use custom attributes in the embedded dashboard:
        embedQueryString += "&embed_user_email=user@domain.com";
 
        // Adding custom attributes for the logged-in user.
-       embedQueryString += "&embed_custom_attribute=" + "[{Attribute_Name: Value}]";
+       embedQueryString += "&embed_custom_attribute=" + "[{\"department\":\"EEE\"}]";
 
        // Use the logged-in user's information for filtering.
        // This ensures data is filtered dynamically based on the login user.

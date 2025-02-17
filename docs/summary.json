@@ -23,6 +23,8 @@
 		"Deploying on AWS": {
 			"Prerequisites": "prerequisites-aws-vm",
 			"Self-deploy a Bold BI Server on AWS VM": "deploy-aws-vm",
+			"Deploy a Bold BI Server on EKS": "deploy-aws-eks",
+			"Deploy a Bold BI Server on ecs fargate": "deploy-aws-ecs",
 			"Upgrade VM to latest version": "update-aws-vm"
 		},
 		"Deploying on GCP": {
@@ -97,6 +99,7 @@
 			"Guidelines for Single and Multi Site": "guidelines-for-single-site-multi-site",
 			"Custom Theme Embedding": "custom-theme-embedding",
 			"Custom Attribute": "custom-attribute",
+			"Anonymous User": "anonymous-user-embedding",
 			"Types of Data Filtering": "types-of-data-filtering-in-embedding",
 			"Embedding API Reference": {
 				"Members": "members.md",
@@ -178,7 +181,6 @@
 		},
 		"Creating a New Data Source": "creating-a-new-data-source.md",
 		"How Bold BI handles queries from multiple widgets in a dashboard": "how-boldbi-handles-queries-from-multiple-widgets-in-a-dashboard.md",
-		"Query Processing Modes": "classification-of-data-sources-queried-directly-and-extracted",
 		"Bold BI Intermediate Database": "bold-bi-intermediate-database",
 		"Connection Settings":{
 			"Enable Disable Connections":"enable-disable-connections.md"
@@ -360,10 +362,11 @@
 		},
 		
 		"Working with Bold Data Hub":{
-			"Data Store": "data-store",
-		"Working with Projects": "working-with-projects",
+	    "Data Store": "data-store",
+		"Working with Pipelines": "working-with-pipelines",
 		"Transformation and Preview": "transformation-preview",
 		"Scheduling ETL Jobs": "schedule",
+		"Relationship Between Bold Data Hub and Bold BI Data Sources": "relationship-between-bold-data-hub-pipeline-and-associated-data-sources-in-boldbi",
 		"Data Connectors": 
 		{
 			"Facebook Ads": "facebook-ads",
@@ -488,7 +491,6 @@
 		"Widget Capabilities": "widget-capabilities"
 	},
 	"Working with Dashboards": {
-		"Dashboard Templates": "dashboards-templates",
 		"Dashboard Themes": "dashboard-theme",
 		"Import Widgets": "import-widgets",
 		"Edit Dashboard": "edit-existing-dashboard",
@@ -501,6 +503,7 @@
 		"Dashboard Performance Metrics": "dashboard-performance-metrics",
 		"Dashboard Styles": "dashboard-styles",
 		"Dynamic Translate": "dynamic-translator",
+		"Fixed Layout": "fixed-layout",
 		"Preview Dashboard": {
 			"Maximizing Widget View": "maximizing-widget-view",
 			"Exporting Reports from dashboard": "dashboard-settings",
@@ -522,16 +525,21 @@
 	},
 	"AI and Machine Learning": {
 		"Activate AI Feature": "activate-ai-feature",
+		"Configure AI": "configure-ai",
 		"Enable/Disable AI Feature": "enable-disable-ai-feature",
 		"AI Assistant": {
-			"Getting Started": "ai-assistant-getting-started",
+			"Getting Started": "ai-copilot-getting-started",
 			"Architecture and Data Processing": "architecture-data-processing",
-			"AI Assistant in Dashboard Designer": "ai-assistant-dashboard-designer",
-			"AI Assistant in View Mode": "ai-assistant-view-mode",
+			"AI Copilot in Dashboard Designer": "ai-copilot-dashboard-designer",
+			"AI Agent in View Mode": "ai-agent-view-mode",
+			"AI Data Processing": "ai-data-processing",
 			"Best Practices and Limitations": "best-practices-and-limitations"
 		},
 		"Q&A Widget": "qna-widget",
-		"Forecasting": "time-series-forecasting"
+		"Forecasting": "time-series-forecasting",
+		"AI Feature Visiblity": "ai-feature-visibility",
+		"Dashboard Summary": "dashboard-summary",
+        "Widget Insights": "widget-insights"
 	},
 	"Security Configuration": {
 		"Authorization Server": "authorize-server",

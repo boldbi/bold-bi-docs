@@ -16,4 +16,8 @@ You can explore the deployment of Enterprise BI in AWS in detail here:
 
 [Self-deploy a Bold BI Server on aws instance](/deploying-bold-bi/deploying-on-aws/deploy-aws-vm/)
 
+[Deploy a Bold BI Server on EKS](/deploying-bold-bi/deploying-on-aws/deploy-aws-eks/)
+
+[Deploy a Bold BI Server on ecs fargate](/deploying-bold-bi/deploying-on-aws/deploy-aws-ecs/)
+
 [Upgrade VM to latest version](/deploying-bold-bi/deploying-on-aws/update-aws-vm/)

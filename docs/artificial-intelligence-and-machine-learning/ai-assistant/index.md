@@ -16,6 +16,12 @@ Say goodbye to manual widget creation! With the new AI Assistant in Bold BI, cre
 
 2. **Customize your widgets** with ease. Need to change the title, description, background color, or labels? Just tell the assistant, and it will update everything for you.
 
+3. **Select your data sources** either a single or multiple data sources in the AI Chat Assistant, which supports queries related to the selected data sources. Enter the `@` character to display a list of available data sources for selection.
+
+![Datasource Popup](/static/assets/artificial-intelligence-and-machine-learning/images/datasource-popup-feature/Datasource_popup.png)
+
+![Type Query](/static/assets/artificial-intelligence-and-machine-learning/images/datasource-popup-feature/Type_query.png)
+
 ### Example:
  - Want to create a bar chart? Just say, `Create a bar chart showing sales by region.` The AI Assistant will generate it instantly!
 
@@ -23,12 +29,12 @@ Say goodbye to manual widget creation! With the new AI Assistant in Bold BI, cre
 
 The below section tells you more about the AI Assistant
 
-[Getting Started](/artificial-intelligence-and-machine-learning/ai-assistant/ai-assistant-getting-started/)
+[Getting Started](/artificial-intelligence-and-machine-learning/ai-assistant/ai-copilot-getting-started/)
 
 [Architecture and Data Processing](/artificial-intelligence-and-machine-learning/ai-assistant/architecture-data-processing/)
 
-[AI Assistant in Dashboard Designer](/artificial-intelligence-and-machine-learning/ai-assistant/ai-assistant-dashboard-designer/)
+[AI Copilot in Dashboard Designer](/artificial-intelligence-and-machine-learning/ai-assistant/ai-copilot-dashboard-designer/)
 
-[AI Assistant in View Mode](/artificial-intelligence-and-machine-learning/ai-assistant/ai-assistant-view-mode/)
+[AI Agent in View Mode](/artificial-intelligence-and-machine-learning/ai-assistant/ai-agent-view-mode/)
 
 [Best Practices and Limitations](/artificial-intelligence-and-machine-learning/ai-assistant/best-practices-and-limitations/)

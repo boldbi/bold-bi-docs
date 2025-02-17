@@ -141,6 +141,13 @@ If you want to set embed_expirationtime, you must set the embed_timestamp too in
 </tr>
 
 <tr>
+<td><code>embed_widget_comments</code></td>
+<td>The actions related to comments such as post, edit, delete, reply, watch, un-watch, posting the image, and user mention list options can be performed in the dashboard based on this value. The default value is <strong>false</strong>. To show the widget comments icon, you can set the value of the <strong>embed_widget_comments</strong> parameter to true.
+</td>
+<td>true</td>
+</tr>
+
+<tr>
 <td><code>hide_dashboard_edit</code></td>
 <td>Show/hide the dashboard edit icon. By default the icon will be shown only if user has the permission to edit the specific dashboard otherwise it doesn't shown.</td>
 <td>false</td>
@@ -150,6 +157,26 @@ If you want to set embed_expirationtime, you must set the embed_timestamp too in
 <td><code>enable_ai_assistant</code></td>
 <td>Show/hide the AI Assistant icon. By default, the icon is not displayed, and the value is <strong>false</strong>. To enable the AI Assistant icon, you can set the value of the <strong>enable_ai_assistant</strong> parameter to true.</td>
 <td>true</td> 
+</tr>
+
+<tr>
+<td><code>enable_ai_summary</code></td>
+<td>This value allows you to show the AI summary icons in the dashboard and widget. To hide specific dashboard summary or widget summary icons, you can set the value for the "enable_ai_summary" parameter with predefined values given below.<br><strong>Note:</strong> To enable this, it is mandatory to use the "enable_ai_assistant" parameter. <br/>
+
+<b>Note:</b> Predefined values: <code>`ds-Dashboard Summary,ws-Widget Summary`</code></td>
+<td>string. <code>
+
+```js
+Example:
+enable_ai_summary= "ds,ws".
+```
+</code></td>
+<tr>
+
+<tr>
+<td><code>hide_aidata_usage</code></td>
+<td>This value allows you to show the AI Data Usage icon in the AI Assistant window. The default value is <strong>false</strong>. To hide the data usage option, you can set the value of the <strong>hide_aidata_usage</strong> parameter to true.<br><strong>Note:</strong> To enable this, it is mandatory to use the enable_ai_assistant parameter.</td>
+<td>false</td>
 </tr>
 
 <tr>
@@ -165,15 +192,21 @@ If you want to set embed_expirationtime, you must set the embed_timestamp too in
 </tr>
 
 <tr>
+<td><code>hide_metrics</code></td>
+<td>This value allows you to show the metrics option in the dashboard banner. The default value is <strong>false</strong>. To hide the metrics option, you can set the value of the <strong>hide_metrics</strong> parameter to true.</td>
+<td>false</td> 
+</tr>
+
+<tr>
 <td><code>hide_tool</code></td>
 <td>This value allows you to show the dashboard icons in the toolbar. To hide specific dashboard icons from the toolbar, you can set the value for the "hide_tool" parameter with predefined values that corresponds to each icon in the toolbar. <br/>
 
-<b>Note:</b> Predefined values: <code>`dp-Dashboard Parameter,fo-Filter Overview,fs-FullScreen,rf-Refresh,om-Option Menu`</code></td>
+<b>Note:</b> Predefined values: <code>`dp-Dashboard Parameter,fo-Filter Overview,fs-FullScreen,rf-Refresh,om-Option Menu,sh-Schedule`</code></td>
 <td>string. <code>
 
 ```js
 Example:
-hide_tool= "dp,fo,fs,rf,om".
+hide_tool= "dp,fo,fs,rf,om,sh".
 ```
 </code></td>
 <tr>

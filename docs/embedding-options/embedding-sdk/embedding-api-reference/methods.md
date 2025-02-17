@@ -127,6 +127,7 @@ var widgetId = "32ed09f7-49ef-4468-9c56-ccc376dbcaaa";
 var filtersValue = ["Product=Carnarvon Tigers","Company=Hanari Carnes" ]; 
 var widgetInstance = instance.getWidgetInstance(widgetId).setFilterParameters(filtersValue);
 ```
+> **Note:** To remove the specific widget instance, please check the [removeWidgetInstance](https://help.boldbi.com/embedding-options/embedding-sdk/embedding-api-reference/methods/#removewidgetinstance) method.
 
 ## hidePopup()
     
@@ -292,6 +293,17 @@ This method will refresh the specific widgets within the current dashboard.
 ```js
 var instance = BoldBI.getInstance("container"); //container -> embed container id
 instance.refreshWidgetData(widgetNames, hideLoader, dashboardId); // widgetnames ->Define the name of the widget to be Refresh , hideLoader -> Define whether to show or hide loading indicator while processing , dashboardId -> Define the unique id of the dashboard if it is present within the multitab dashboard.
+```
+
+## removeWidgetInstance()
+
+This method will remove the existing widget instance from the embedded widget. If you are using the `getWidgetInstance` method along with `setFilterParameters`, and you subsequently want to destroy the instance, you can use this method.
+
+**Example**
+
+```js
+var instance = BoldBI.getInstance("container"); //container -> embed container id
+instance.removeWidgetInstance(widgetId); // widgetId ->Define the unique id of the widget.
 ```
 
 ## resizeDashboard()
@@ -1214,7 +1226,7 @@ instance.exportDashboardAsImage(exportInformation);
 </tr>
 <tr>
 <td><code>showAppliedFilters</code></td>
-<td>Define whether you need to export the dashboard with or without a filter, and it is an optional parameter of Boolean type.</td>
+<td>Define whether you need to export the dashboard with or without a filter information, and it is an optional parameter of Boolean type.</td>
 </tr>
 </table>
 
@@ -1258,7 +1270,7 @@ instance.exportDashboardAsPdf(exportInformation);
 
 <tr>
 <td><code>showAppliedFilters</code></td>
-<td>Define whether you need to export the dashboard with or without a filter, and it is an optional parameter of Boolean type.</td>
+<td>Define whether you need to export the dashboard with or without a filter information, and it is an optional parameter of Boolean type.</td>
 </tr>
 </table>
 
@@ -1368,7 +1380,7 @@ instance.exportWidgetAsImage(exportInformation);
 </tr>
 <tr>
 <td><code>showAppliedFilters</code></td>
-<td>Define whether you need to export the dashboard with or without a filter, and it is an optional parameter of Boolean type.</td>
+<td>Define whether you need to export the dashboard with or without a filter information, and it is an optional parameter of Boolean type.</td>
 </tr>
 </table>
 
@@ -1411,7 +1423,7 @@ instance.exportWidgetAsPdf(exportInformation);
 </tr>
 <tr>
 <td><code>showAppliedFilters</code></td>
-<td>Define whether you need to export the dashboard with or without a filter, and it is an optional parameter of Boolean type.</td>
+<td>Define whether you need to export the dashboard with or without a filter information, and it is an optional parameter of Boolean type.</td>
 </tr>
 </table>
 

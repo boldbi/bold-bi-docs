@@ -6943,7 +6943,7 @@
     "/v5.0/activity-logs":{
       "get":{
         "tags":[
-          "Audit Logs"
+          "Activity Logs"
         ],
         "summary": "All Activity Logs",
         "description": "With this endpoint, the site administrator can retrieve a list of all activities performed on the site.",
@@ -7000,7 +7000,7 @@
     "/v5.0/activity-logs?activitymodule=group":{
       "get":{
           "tags":[
-              "Audit Logs"
+              "Activity Logs"
           ],
           "summary": "Group Activity Logs",
           "description": "With this endpoint, the site administrator can retrieve the list of activities performed in the group module.",
@@ -7068,7 +7068,7 @@
   "/v5.0/activity-logs?activitymodule=grouppermission":{
       "get":{
           "tags":[
-              "Audit Logs"
+              "Activity Logs"
           ],
           "summary": "Group Permission Activity Logs",
           "description": "With this endpoint, the site administrator can retrieve the list of activities performed in the group permission module.",
@@ -7136,7 +7136,7 @@
   "/v5.0/activity-logs?activitymodule=user":{
       "get":{
           "tags":[
-              "Audit Logs"
+              "Activity Logs"
           ],
           "summary": "User Activity Logs",
           "description": "With this endpoint, the site administrator can retrieve the list of activities performed in the user module.",
@@ -7204,7 +7204,7 @@
   "/v5.0/activity-logs?activitymodule=userpermission":{
       "get":{
           "tags":[
-              "Audit Logs"
+              "Activity Logs"
           ],
           "summary": "User Permission Activity Logs",
           "description": "With this endpoint, the site administrator can retrieve the list of activities performed in the user permission module.",
@@ -7272,7 +7272,7 @@
   "/v5.0/activity-logs?activitymodule=comment":{
     "get":{
         "tags":[
-            "Audit Logs"
+            "Activity Logs"
         ],
         "summary": "Comment Activity Logs",
         "description": "With this endpoint, the site administrator can retrieve the list of activities performed in the dashboard comment module.",
@@ -7339,7 +7339,7 @@
   "/v5.0/activity-logs?activitymodule=schedule":{
     "get":{
         "tags":[
-            "Audit Logs"
+            "Activity Logs"
         ],
         "summary": "Schedule Activity Logs",
         "description": "With this endpoint, the site administrator can retrieve the list of activities performed in the schedule module.",
@@ -7407,7 +7407,7 @@
   "/v5.0/activity-logs?activitymodule=system":{
       "get":{
           "tags":[
-              "Audit Logs"
+              "Activity Logs"
           ],
           "summary": "System Activity Logs",
           "description": "With this endpoint, the site administrator can retrieve the list of activities performed in the system settings module.",
@@ -7475,7 +7475,7 @@
   "/v5.0/activity-logs?activitymodule=item":{
       "get":{
           "tags":[
-              "Audit Logs"
+              "Activity Logs"
           ],
           "summary": "Item Activity Logs",
           "description": "With this endpoint, the site administrator can retrieve the list of activities performed in the item module.",
@@ -7622,10 +7622,10 @@
    "/v5.0/settings/user-activity-logs":{
     "get": {
       "tags": [
-          "Activity Logs"
+          "Audit Logs"
         ],
-        "summary": "Get Activity Logs",
-        "description": "Retrieve a list of activities performed in the item module. This endpoint allows site administrators to filter logs based on various parameters such as event category, event type, user email, tenant ID, app source, and date range.",
+        "summary": "Get Audit Logs",
+        "description": "This endpoint allows site administrators to retrieve a list of audit logs. Administrators can filter logs based on various parameters such as event category, event type, user email, tenant ID, app source, and date range. This helps in tracking user and administrative activities for security, compliance, and troubleshooting purposes.",
         "operationId": "ActivityLogs_GetAllActivityLogs",
         "parameters": [
           {
@@ -11865,11 +11865,11 @@
       "properties": {
         "Key": {
           "type": "string",
-          "description": "Site settings name. Valid keys: `OrganizationName` `SiteUrl` `LoginScreenLogo` `EmailLogo` `HeaderLogo` `FooterLogo` `FavIcon` \n\n `ShowCopyrightInformation` `ShowPoweredBySyncfusion` `CopyrightInformation` `Use24HourFormat` `DisableUserPreference` `ApplicationLanguage` `DataLanguage` `DateFormat` `TimeZone`."
+          "description": "Site settings name. Valid keys: `OrganizationName` `SiteUrl` `LoginScreenLogo` `EmailLogo` `HeaderLogo` `FooterLogo` `FavIcon` `AILogo` \n\n `ShowCopyrightInformation` `ShowPoweredBySyncfusion` `CopyrightInformation` `Use24HourFormat` `DisableUserPreference` `ApplicationLanguage` `DataLanguage` `DateFormat` `TimeZone`."
         },
         "Value": {
           "type": "string",
-          "description": "Site settings value.\n\n Valid values: `OrganizationName` `SiteUrl` `TimeZone` `CopyrightInformation` are in `string` \n\n `LoginScreenLogo` `EmailLogo` `HeaderLogo` `FooterLogo` `FavIcon` are in `Base64EncodedString` \n\n `ShowCopyrightInformation` `ShowPoweredBySyncfusion` `Use24HourFormat` `DisableUserPreference` are in `true` or `false` \n\n `DateFormat` is in `MM/dd/yyyy` `dd/MM/yyyy` `d MMM, yyyy` `MMM d, yyyy` \n\n `ApplicationLanguage` `DataLanguage` has language code in the following [link](https://learn.microsoft.com/en-us/openspecs/office_standards/ms-oe376/6c085406-a698-4e12-9d4d-c3b0ee3dbc4a)\n\n `TimeZone` has Timezone value from the following [link](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/default-time-zones?view=windows-11#time-zones)."
+          "description": "Site settings value.\n\n Valid values: `OrganizationName` `SiteUrl` `TimeZone` `CopyrightInformation` are in `string` \n\n `LoginScreenLogo` `EmailLogo` `HeaderLogo` `FooterLogo` `FavIcon` `AILogo` are in `Base64EncodedString` \n\n `ShowCopyrightInformation` `ShowPoweredBySyncfusion` `Use24HourFormat` `DisableUserPreference` are in `true` or `false` \n\n `DateFormat` is in `MM/dd/yyyy` `dd/MM/yyyy` `d MMM, yyyy` `MMM d, yyyy` \n\n `ApplicationLanguage` `DataLanguage` has language code in the following [link](https://learn.microsoft.com/en-us/openspecs/office_standards/ms-oe376/6c085406-a698-4e12-9d4d-c3b0ee3dbc4a)\n\n `TimeZone` has Timezone value from the following [link](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/default-time-zones?view=windows-11#time-zones)."
         },
         "FileFormat": {
           "type": "string",
@@ -11886,11 +11886,11 @@
       "properties": {
         "Key": {
           "type": "string",
-          "description": "Site settings name. Valid keys: `OrganizationName` `SiteUrl` `LoginScreenLogo` `EmailLogo`  `HeaderLogo` `FooterLogo` `FavIcon` \n\n `ShowCopyrightInformation` `ShowPoweredBySyncfusion` `CopyrightInformation` `Use24HourFormat` `DisableUserPreference` `ApplicationLanguage` `DataLanguage` `DateFormat` `TimeZone`."
+          "description": "Site settings name. Valid keys: `OrganizationName` `SiteUrl` `LoginScreenLogo` `EmailLogo`  `HeaderLogo` `FooterLogo` `FavIcon` `AILogo` \n\n `ShowCopyrightInformation` `ShowPoweredBySyncfusion` `CopyrightInformation` `Use24HourFormat` `DisableUserPreference` `ApplicationLanguage` `DataLanguage` `DateFormat` `TimeZone`."
         },
         "Value": {
           "type": "string",
-          "description": "Site settings value.\n\n Valid values: `OrganizationName` `SiteUrl` `TimeZone` `CopyrightInformation` should be `string` \n\n `LoginScreenLogo` `EmailLogo` `HeaderLogo` `FooterLogo` `FavIcon` should be `Base64EncodedString` \n\n `ShowCopyrightInformation` `ShowPoweredBySyncfusion` `Use24HourFormat` `DisableUserPreference` should be `true` or `false` \n\n `DateFormat` should be `MM/dd/yyyy` `dd/MM/yyyy` `d MMM, yyyy` `MMM d, yyyy` \n\n `ApplicationLanguage` `DataLanguage` should be any language code in the following [link](https://learn.microsoft.com/en-us/openspecs/office_standards/ms-oe376/6c085406-a698-4e12-9d4d-c3b0ee3dbc4a) \n\n `TimeZone` should be any Timezone from the following [link](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/default-time-zones?view=windows-11#time-zones)."
+          "description": "Site settings value.\n\n Valid values: `OrganizationName` `SiteUrl` `TimeZone` `CopyrightInformation` should be `string` \n\n `LoginScreenLogo` `EmailLogo` `HeaderLogo` `FooterLogo` `FavIcon` `AILogo` should be `Base64EncodedString` \n\n `ShowCopyrightInformation` `ShowPoweredBySyncfusion` `Use24HourFormat` `DisableUserPreference` should be `true` or `false` \n\n `DateFormat` should be `MM/dd/yyyy` `dd/MM/yyyy` `d MMM, yyyy` `MMM d, yyyy` \n\n `ApplicationLanguage` `DataLanguage` should be any language code in the following [link](https://learn.microsoft.com/en-us/openspecs/office_standards/ms-oe376/6c085406-a698-4e12-9d4d-c3b0ee3dbc4a) \n\n `TimeZone` should be any Timezone from the following [link](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/default-time-zones?view=windows-11#time-zones)."
         },
         "FileFormat": {
           "type": "string",

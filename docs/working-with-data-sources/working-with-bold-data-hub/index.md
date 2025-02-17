@@ -11,7 +11,7 @@ documentation: ug
 
 ## Overview
 
-The primary objective of the Bold Data Hub application is to facilitate the extraction, transformation, and loading of data from diverse sources such as ``PostgreSQL``, ``MSSQL``, ``MySQL``,``Oracle``, ``Google BigQuery ``, ``Snowflake`` and ``Apache Doris`` and ``Bold BI Data Store`` database. we can conveniently schedule recurring jobs to retrieve data from these sources and utilize SQL scripts for data transformation purposes.
+The primary objective of the Bold Data Hub application is to facilitate the extraction, transformation, and loading of data from diverse sources such as file types and web, SQL, and NoSQL data sources. please refer to [Working With Data Hub Connectors](https://help.boldbi.com/working-with-data-sources/working-with-bold-data-hub/data-connectors/). we can conveniently schedule recurring jobs to retrieve data from these sources and utilize SQL scripts for data transformation purposes.
 
 ## Integrated Bold Data Hub Architecture
 ![Source](/static/assets/working-with-etl/images/archietecture.png)
@@ -48,10 +48,11 @@ This section explains how to work with projects, schedule jobs, and create Bold 
 
 For more details on working with Bold Data Hub, click here.
 
+[Relationship Between Bold Data Hub and Bold BI Data Sources ](/working-with-data-sources/working-with-bold-data-hub/relationship-between-bold-data-hub-pipeline-and-associated-data-sources-in-boldbi/)
 
 [Data Store](/working-with-data-sources/working-with-bold-data-hub/data-store/)
 
-[Working with Projects](/working-with-data-sources/working-with-bold-data-hub/working-with-projects/)
+[Working with Pipelines](/working-with-data-sources/working-with-bold-data-hub/working-with-pipelines/)
 
 [Transformation and Preview](/working-with-data-sources/working-with-bold-data-hub/transformation-preview/)
 

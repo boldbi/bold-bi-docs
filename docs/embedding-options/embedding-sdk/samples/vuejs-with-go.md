@@ -143,7 +143,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/vue-with-go-s
      mounted: function() {
     var scripts = [
       "https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js",
-      "https://cdn.boldbi.com/embedded-sdk/v8.3.17/boldbi-embed.js"
+      "https://cdn.boldbi.com/embedded-sdk/v10.1.18/boldbi-embed.js"
     ];
     scripts.forEach(script => {
       let tag = document.createElement("script");

@@ -35,7 +35,7 @@ Failure to follow this procedure and instead attempting to install the Data Hub 
 
 
 
-## UnInstall Data Hub in Bold BI / Bold Reports.
+## Uninstall Data Hub in Bold BI / Bold Reports.
 1. To properly remove the Data Hub Application, users are recommended to access the system registry and locate the ``Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall``` key associated with the application for uninstallation.  
 ![Source](/static/assets/working-with-etl/images/etl_install2.png)
 

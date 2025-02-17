@@ -25,7 +25,6 @@ documentation: ug
 [MySQL](/working-with-data-sources/working-with-bold-data-hub/data-connectors/mysql/)<br>
 [Notion](/working-with-data-sources/working-with-bold-data-hub/data-connectors/notion/)<br>
 [Oracle](/working-with-data-sources/working-with-bold-data-hub/data-connectors/oracle/)<br>
-[Personio](/working-with-data-sources/working-with-bold-data-hub/data-connectors/person/)<br>
 [Pipedrive](/working-with-data-sources/working-with-bold-data-hub/data-connectors/pipedrive/)<br>
 [PostgreSQL](/working-with-data-sources/working-with-bold-data-hub/data-connectors/postgresql/)<br>
 [FileSystem](/working-with-data-sources/working-with-bold-data-hub/data-connectors/file-system/)<br>

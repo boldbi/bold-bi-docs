@@ -280,7 +280,7 @@ You can also pass parameter values with special characters to filter. To use a v
 
 `http://<servername>/<culturename>/dashboards/<dashboardid>/<category>/<dashboardname>?DimensionTypeParameter=[value"!@"]`
 
-<table style="margin-right: 100%; width: 30%;">
+<table style="margin: 14px 0px; width: 30%;">
 <tr><td><b>Special Characters</b></td></tr>
 <tr><td>!</td></tr>
 <tr><td>%</td></tr>
@@ -317,7 +317,7 @@ The following keywords are used for our internal purposes. If you have any of th
 
 `http://<servername>/<culturename>/dashboards/<dashboardid>/<category>/<dashboardname>?[Keywords]=value`
 
-<table style="margin-right: 100%; width: 30%;">
+<table style="margin: 14px 0px; width: 30%;">
 <tr><td><b>Keywords</b></td></tr>
 <tr><td>Id</td></tr>
 <tr><td>Comment</td></tr>
