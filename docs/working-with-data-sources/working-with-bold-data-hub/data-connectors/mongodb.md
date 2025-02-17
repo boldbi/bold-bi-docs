@@ -1,7 +1,7 @@
 ---
 layout: post
-title: MongoDB ETL/Data Hub Connector – Embedded BI | Bold BI Learning
-description: Learn how to use the MongoDB ETL/Bold Data Hub connectors in Bold BI Enterprise Edition. Discover simple steps to integrate data smoothly and make the most of your analytics.
+title: MongoDB Data Hub Connector – Embedded BI | Bold BI Learning
+description: Learn how to use the MongoDB Bold Data Hub connectors in Bold BI Enterprise Edition. Discover simple steps to integrate data smoothly and make the most of your analytics.
 platform: bold-bi
 documentation: ug
 
@@ -44,15 +44,15 @@ Here are the typical ways to configure MongoDB and their connection URLs:
 
   1. Click the `Data Hub` icon on the Navigation Pane.
 
-  ![MongoDB ETL- BoldBI](/static/assets/working-with-etl/images/clickdatahub.png#max-width=100%)
+  ![MongoDB Data Hub- BoldBI](/static/assets/working-with-etl/images/clickdatahub.png#max-width=100%)
 
   2. Click `Add Project` and provide the new project's name.
   
-   ![MongoDB ETL- BoldBI](/static/assets/working-with-etl/images/mongodbetl_addprojectDataHub.png#max-width=100%)
+   ![MongoDB Data Hub- BoldBI](/static/assets/working-with-etl/images/addpipeline.png#max-width=100%)
   
   3. Select the newly created project and add the `MongoDB` template.
 
-  ![MongoDB ETL- BoldBI](/static/assets/working-with-etl/images/mongodbetl_addtempleteDataHub.png#max-width=100%)
+  ![MongoDB Data Hub- BoldBI](/static/assets/working-with-etl/images/mongo_addtemplate.png#max-width=100%)
 
 
 ### Configuration Parameters
@@ -65,35 +65,34 @@ Here are the typical ways to configure MongoDB and their connection URLs:
 | **Database:**            | Specify the name of the MongoDB database from which data will be extracted. |
 | **Select**: | **Tablename(s):** Specify the table name list to load tables from the MongoDB server. |
 
-  4. Update the details required in the template. and save it to the BoldBI Data Store.
+  4. Update the details required in the template and Click Save, choose the desired destination to save the pipeline.
 
-  ![MongoDB ETL- BoldBI](/static/assets/working-with-etl/images/mongodbetl_updatetempleteDataHub.png#max-width=100%)
+  ![MongoDB Data Hub- BoldBI](/static/assets/working-with-etl/images/mongo_yaml.png#max-width=100%)
+  
+  5. Creating a Pipeline in Bold Data Hub automatically creates a Data Source in Bold BI. The Bold BI Data Source is a live data source to the destination database used in Bold Data Hub. For more information on the relationship between Bold Data Hub Pipeline and the associated Data Sources in Bold BI , please refer to [Relationship between Bold Data Hub Pipeline and Associated Data Sources in Bold BI](https://help.boldbi.com/working-with-data-sources/working-with-bold-data-hub/relationship-between-bold-data-hub-pipeline-and-associated-data-sources-in-boldbi/)
 
 ### Schedule Bold Data Hub Job
 
-1. Click `Schedules` and select the created `MongoDB` project.
+1. To configure interval-based scheduling, click on the schedules tab and select the created pipeline and click on the schedule icon and configure it.
 
-![MongoDB ETL- BoldBI](/static/assets/working-with-etl/images/mongodbetl_scheduleDataHub.png#max-width=100%)
+![GitHub - BoldBI](/static/assets/working-with-etl/images/schedule_schedules.png#max-width=100%)
 
-2. For an on-demand refresh, click `Run Now`.
+![GitHub - BoldBI](/static/assets/working-with-etl/images/schedule_scheduledialog.png#max-width=100%)
 
-![MongoDB ETL- BoldBI](/static/assets/working-with-etl/images/mongodbetl_runDataHub.png#max-width=100%)  
+2. For on-demand refresh, click `Run Now` button.
 
-3. After, Complete the on-demand refresh.
+![GitHub - BoldBI](/static/assets/working-with-etl/images/schedule_runnow.png#max-width=100%).
 
-![MongoDB ETL- BoldBI](/static/assets/working-with-etl/images/mongodbetl_runcompleteDataHub.png#max-width=100%)
+3. The Schedule history can be checked using the history option as well as logs.
 
-4. Click the `Schedule` option to schedule the refresh hourly.
+![GitHub - BoldBI](/static/assets/working-with-etl/images/schedule_history.png#max-width=100%)
 
-![MongoDB ETL- BoldBI](/static/assets/working-with-etl/images/mongodbetl_schedulerefresh.png#max-width=100%)  
+4. Click on Logs to see if the run is completed and data source is created in Bold BI. 
 
-5. The data source was created by Data Hub in Bold BI.
-   
-![MongoDB ETL- BoldBI](/static/assets/working-with-etl/images/mongodbetl_newdsDataHub.png#max-width=100%)
+![GitHub - BoldBI](/static/assets/working-with-etl/images/pipeline_DsCreated.png#max-width=100%)
 
-6. Click `Edit DataSource` Option to view the created table(s), such as 'products' table.
 
-![MongoDB ETL- BoldBI](/static/assets/working-with-etl/images/mongodbetl_tableDataHub.png#max-width=100%)
+5. Click `Edit DataSource` Option to view the created tables.
 
 ## Metadata Properties
 
@@ -286,6 +285,6 @@ plugins:
 
 [Extract Data from MongoDB using query in Bold Data hub](https://support.boldbi.com/kb/article/15953/extracting-data-from-mongodb-using-query-in-bold-etl)
 
-[Flatten MongoDB objects in Bold BI using Bold ETL](https://support.boldbi.com/kb/article/16161/flattening-mongodb-objects-in-bold-bi-using-bold-etl)
+[Flatten MongoDB objects in Bold BI using Bold Data Hub](https://support.boldbi.com/kb/article/16161/flattening-mongodb-objects-in-bold-bi-using-bold-etl)
 
-[Connect MongoDB with SSH Tunneling and Passwordless using in Bold ETL](https://support.boldbi.com/kb/article/16555/connect-mongodb-with-ssh-tunneling-passwordless-using-bold-etl)
+[Connect MongoDB with SSH Tunneling and Passwordless using in Bold Data Hub](https://support.boldbi.com/kb/article/16555/connect-mongodb-with-ssh-tunneling-passwordless-using-bold-etl)

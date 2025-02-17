@@ -18,7 +18,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/react-with-go
 * [Visual Studio Code](https://code.visualstudio.com/download)
 * [Node.js](https://nodejs.org/en/)
 
-> **NOTE:** Node.js versions 14.16 through 18.18 are supported.
+> **NOTE:** Node.js versions 18.17 to 20.15 are supported.
 
 ## How to run the sample
 

@@ -14,7 +14,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/aspnet-core-s
 
 ## Prerequisites
 
-* [.NET Core 6.0](https://dotnet.microsoft.com/download/dotnet-core)
+* [.NET Core 8.0](https://dotnet.microsoft.com/download/dotnet-core)
 * [Visual Studio Code](https://code.visualstudio.com/download)
 
 ## How to run the sample
@@ -202,7 +202,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/aspnet-core-s
      ![Index.cshml Image](/static/assets/javascript/sample/images/CoreViewFolderProperties.png)
 
      ```js 
-       <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v8.3.17/boldbi-embed.js"></script>
+       <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v10.1.18/boldbi-embed.js"></script>
        <script type="text/javascript" src="~/js/Index.js"></script>
        <script type="text/javascript">
           var rootUrl = "@GlobalAppSettings.EmbedDetails.ServerUrl";

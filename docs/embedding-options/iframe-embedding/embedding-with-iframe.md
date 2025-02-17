@@ -133,6 +133,12 @@ A dashboard can be embedded in the create, edit, and view modes of any applicati
       <td>NA</td> 
     </tr>
     <tr>
+      <td><code>hide_metrics</code></td>
+      <td><code>boolean</code></td>
+      <td>Show metrics option in the dashboard banner with the default value set to <strong>false</strong>. To hide the metrics option, you can set the value of the <strong>hide_metrics</strong> parameter to true.</td>
+      <td>NA</td> 
+    </tr>
+    <tr>
       <td><code>hide_dashboard_edit</code></td>
       <td><code>boolean</code></td>
       <td>Show/hide the dashboard edit icon. By default the icon will be shown only if user has the permission to edit the specific dashboard otherwise it doesn't shown.</td>
@@ -141,7 +147,7 @@ A dashboard can be embedded in the create, edit, and view modes of any applicati
     <tr>
       <td><code>hide_tool</code></td>
       <td><code>string</code></td>
-      <td>Show/hide the dashboard options with Predefined values:<br>dp-Dashboard Parameter,<br>fo-Filter Overview,<br>fs-FullScreen,<br>rf-Refresh,<br>om-Option Menu<br><br><code>Example</code>:<br>&hide_tool=fo,fs,dp,rf,om</td>
+      <td>Show/hide the dashboard options with Predefined values:<br>dp-Dashboard Parameter,<br>fo-Filter Overview,<br>fs-FullScreen,<br>rf-Refresh,<br>om-Option Menu,<br>sh-Schedule<br><br><code>Example</code>:<br>&hide_tool=fo,fs,dp,rf,om,sh</td>
       <td>NA</td>
     </tr>
     <tr>
@@ -154,6 +160,18 @@ A dashboard can be embedded in the create, edit, and view modes of any applicati
       <td><code>enable_ai_assistant</code></td>
       <td><code>boolean</code></td>
       <td>Show/hide the AI Assistant icon</td>
+      <td>NA</td> 
+    </tr>
+    <tr>
+      <td><code>enable_ai_summary</code></td>
+      <td><code>string</code></td>
+      <td>Show/hide the AI Dashboard Summary icon with predefined value:<br>ds-Dashboard Summary<br><br><code>Example</code>:<br>&enable_ai_summary=ds<br><strong>Note:</strong> To enable this, it is mandatory to use the enable_ai_assistant parameter.</td>
+      <td>Show/hide the AI Widget Summary icon with predefined value:<br>ws-Widget Summary<br><br><code>Example</code>:<br>&enable_ai_summary=ws<br><strong>Note:</strong> To enable this, it is mandatory to use the enable_ai_assistant parameter.</td> 
+    </tr>
+    <tr>
+      <td><code>hide_aidata_usage</code></td>
+      <td><code>boolean</code></td>
+      <td>Show/hide the AI Data Usage icon in AI Assistant window.<br><strong>Note:</strong> To enable this, it is mandatory to use the enable_ai_assistant parameter.</td>
       <td>NA</td> 
     </tr>
     <tr>

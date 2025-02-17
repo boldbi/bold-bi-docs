@@ -15,7 +15,7 @@ Follow these steps to embed the dashboard using the token API member. Previously
 
     ```js
     <head>  
-        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v8.3.17/boldbi-embed.js"></script>
+        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v10.1.18/boldbi-embed.js"></script>
     </head>
     ```
 
@@ -33,7 +33,7 @@ Follow these steps to embed the dashboard using the token API member. Previously
 
     You can embed the dashboard using the dashboard ID and [token](/embedding-options/embedding-sdk/embedding-api-reference/members/#token) like in below samples.
 
-    ### Embed using dashboard ID
+    ### Embed using dashboard ID with Personal Access Token
 
     ```js
     <body onload="embedSample();">
@@ -44,7 +44,26 @@ Follow these steps to embed the dashboard using the token API member. Previously
                     serverUrl: "http://localhost:51777/bi/site/site1",
                     dashboardId: "755e99c7-f858-4058-958b-67577b283309",                
                     embedContainerId: "dashboard_container",// This should be the container id where you want to embed the dashboard
-                    token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRldm9wc0Bib2xkYmkuY29tIiwidXBuIjouYm9sZGJpZGVtby5jb20vYmkvc2l0ZS9zaXRlMSIsImF1ZCI6Imh0dHBzOi8vaG90Zml4LXdpbmRvd3MuYm9sZGJpZGVtby5jb20vYmkvc2l0ZS9zaXRlMSJ9.JzbqVr6Brv1mAEvnbHnE-FuShos", // Use the generated Access token by any one of the below methods.
+                    token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRldm9wc0Bib2xkYmkuY29tIiwidXBuIjouYm9sZGJpZGVtby5jb20vYmkvc2l0ZS9zaXRlMSIsImF1ZCI6Imh0dHBzOi8vaG90Zml4LXdpbmRvd3MuYm9sZGJpZGVtby5jb20vYmkvc2l0ZS9zaXRlMSJ9.JzbqVr6Brv1mAEvnbHnE-FuShos", // Use the generated personal access token.
+                });
+                boldbiEmbedInstance.loadDashboard();
+            }
+        </script>
+    </body>
+    ```  
+
+    ### Embed using dashboard ID with API Key
+
+    ```js
+    <body onload="embedSample();">
+        <div id="dashboard_container"></div>
+        <script>
+            function embedSample() {
+                var boldbiEmbedInstance = BoldBI.create({
+                    serverUrl: "http://localhost:51777/bi/site/site1",
+                    dashboardId: "755e99c7-f858-4058-958b-67577b283309",                
+                    embedContainerId: "dashboard_container",// This should be the container id where you want to embed the dashboard
+                    token: "NjQ2ZDgwZjgtN2Q3MS00ZDQwLWFkNTItYTdkNDRhOGE2NmVi", // Use the generated API key.
                 });
                 boldbiEmbedInstance.loadDashboard();
             }
@@ -90,34 +109,40 @@ Follow these steps to embed the dashboard using the token API member. Previously
 
 The following methods can be utilized to generate an access token for an embedding application.
 
- 1.    [Through Bold BI server user interface](/embedding-options/embedding-sdk/token-generation/#steps-to-generate-the-token-from-bold-bi-server-ui).
- 2.    [Through REST API](/embedding-options/embedding-sdk/token-generation/#generate-token-using-rest-api).
+ 1.    [API Key through Bold BI server user interface](/embedding-options/embedding-sdk/token-generation/#steps-to-generate-the-api-key-from-bold-bi-server-ui).
+ 2.    [Personal Access Token through REST API](/embedding-options/embedding-sdk/token-generation/#generate-personal-access-token-using-rest-api).
 
-### Steps to generate the token from Bold BI server UI
+### Steps to generate the API key from Bold BI server UI
 
-The access token can be generated from the Bold BI server UI, which provides the flexibility to set the token's expiration period from a minimum of 7 days to a maximum of 45 days. For this, Follow the below steps.
+The API key can be generated from the Bold BI server UI, which provides the flexibility to set the token's expiration period. To learn more about the API key, please refer to this [link](https://help.boldbi.com/site-administration/api-key). Follow the below steps to generate API Key.
  
    1. Click on the `profile` icon located at the top right corner of the Bold BI server.
 
        ![User profile](/static/assets/javascript/images/User_Profile.png)
 
-   2. In `My Profile` click the `personal Access Token Tab` and Select the required duration from the dropdown for token expiration.
+   2. In `My Profile` click the `API Key` tab.
 
-       ![Access Token Tab](/static/assets/javascript/images/Access_token_tab.png)
+       ![API Key Tab](/static/assets/managing-resources/images/api-key-tab.png)
 
-   3. Click the `Generate Token` button, and in the confirmation dialog, choose `Yes`.
+   3. Click the `Generate API Key` button, and provide a name for the API Key. By enabling the API Key Expiration toggle, you can set an expiration time. By default, there will be no expiration for infinity period. After that, click `Create API Key`.
 
-       ![Token Dialog](/static/assets/javascript/images/Access_token_dialog.png)
+       ![Generate API Key](/static/assets/managing-resources/images/generate-api-key.png)
+       
+       ![Token Dialog](/static/assets/javascript/images/apikey-dialog.png)
 
-   4. An access token is generated. Now, you can copy and use the token for embedding.
+       > **NOTE:** For security breaches, if you feel that the API key generated without an expiration should no longer be used once it is deleted.
 
-       ![Token generation](/static/assets/javascript/images/token_generation.png)
+   4. An API key has been generated. Now, you can copy and use it for embedding.
 
-### Generate token using REST API
+       ![Token generation](/static/assets/javascript/images/apikey-copy.png)
+
+        > **NOTE:** You can generate up to 2 API keys, but they should be stored securely. Once you navigate away from this page, we will not be able to retrieve or restore this token.
+    
+### Generate Personal Access Token using REST API
 
 Generate an access token using token [REST API](https://support.boldbi.com/kb/article/16716/how-to-generate-access-token-to-authenticate-user/). By this approach the expiration time will be set to 7 days as default. Once you have generated the token, you cannot expire it.
 
-> **NOTE:** Once you have generated the token, it will valid till its expiration period. If you happen to lose the token, you can generate a new one. Both tokens will function properly without any problems till its expiration time.
+> **NOTE:** Once you have generated the token, it will remain valid until its specified expiration period. If you happen to lose the token, you can generate a new one. Both tokens will function properly without any issues until their expiration times.
 
 ## Following embedding modules is achievable by using token API member
 

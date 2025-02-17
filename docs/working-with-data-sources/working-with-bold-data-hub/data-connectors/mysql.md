@@ -1,7 +1,7 @@
 ---
 layout: post
-title: MySQL ETL/Data Hub Connector – Embedded BI | Bold BI Learning
-description: Learn how to use the MySQL ETL/Bold Data Hub connectors in Bold BI Enterprise Edition. Discover simple steps to integrate data smoothly and make the most of your analytics.
+title: MySQL Data Hub Connector – Embedded BI | Bold BI Learning
+description: Learn how to use the MySQL Bold Data Hub connectors in Bold BI Enterprise Edition. Discover simple steps to integrate data smoothly and make the most of your analytics.
 platform: bold-bi
 documentation: ug
 
@@ -29,15 +29,15 @@ drivername: mysql+pymysql
 
   1. Click the `Data Hub` icon on the Navigation Pane.
 
-  ![MySQL ETL- BoldBI](/static/assets/working-with-etl/images/clickdatahub.png#max-width=100%)
+  ![MySQL Data Hub- BoldBI](/static/assets/working-with-etl/images/clickdatahub.png#max-width=100%)
 
   2. Click `Add Project` and provide the new project's name.
   
-   ![MySQL ETL- BoldBI](/static/assets/working-with-etl/images/mysqletl_addprojectDataHub.png#max-width=100%)
+   ![MySQL Data Hub- BoldBI](/static/assets/working-with-etl/images/addpipeline.png#max-width=100%)
   
   3. Select the newly created project and add the `MySQL` template.
 
-  ![MySQL ETL- BoldBI](/static/assets/working-with-etl/images/mysqletl_addTempleteDataHub.png#max-width=100%)
+  ![MySQL Data Hub- BoldBI](/static/assets/working-with-etl/images/mysql_addtemplate.png#max-width=100%)
   
 ### Configuration Parameters
   
@@ -54,35 +54,35 @@ drivername: mysql+pymysql
 || **Replication Key:**   Specify the replication key for incremental replication. This key helps in identifying new or updated records.| 
 || **Replication Value:**  Specify the replication value to start the incremental replication from a particular point. |
 
-  4. Update the details required in the template and save it to the BoldBI Data Store.
+  4. Update the details required in the template and Click Save, choose the desired destination to save the pipeline.
 
-  ![MySQL ETL- BoldBI](/static/assets/working-with-etl/images/mysqletl_updateDataHub.png#max-width=100%)
+  ![MySQL Data Hub- BoldBI](/static/assets/working-with-etl/images/mysql_yaml.png#max-width=100%)
+  
+ 5. Creating a Pipeline in Bold Data Hub automatically creates a Data Source in Bold BI. The Bold BI Data Source is a live data source to the destination database used in Bold Data Hub. For more information on the relationship between Bold Data Hub Pipeline and the associated Data Sources in Bold BI , please refer to [Relationship between Bold Data Hub Pipeline and Associated Data Sources in Bold BI](https://help.boldbi.com/working-with-data-sources/working-with-bold-data-hub/relationship-between-bold-data-hub-pipeline-and-associated-data-sources-in-boldbi/)
+
 
 ### Schedule Bold Data Hub Job
+1. To configure interval-based scheduling, click on the schedules tab and select the created pipeline and click on the schedule icon and configure it.
 
-1. Click `Schedules` and select the created `mysql` project.
+![MySql - BoldBI](/static/assets/working-with-etl/images/schedule_schedules.png#max-width=100%)
 
-![MySQL ETL- BoldBI](/static/assets/working-with-etl/images/mysqletl_scheduleDataHub.png#max-width=100%)
+![MySql - BoldBI](/static/assets/working-with-etl/images/schedule_scheduledialog.png#max-width=100%)
 
-2. For an on-demand refresh, click `Run Now`.
+2. For on-demand refresh, click `Run Now` button.
 
-![MySQL ETL- BoldBI](/static/assets/working-with-etl/images/mysqletl_runDataHub.png#max-width=100%)  
+![MySql - BoldBI](/static/assets/working-with-etl/images/schedule_runnow.png#max-width=100%).
 
-3. After, Complete the on-demand refresh.
+3. The Schedule history can be checked using the history option as well as logs.
 
-![MySQL ETL- BoldBI](/static/assets/working-with-etl/images/mysqletl_refreshcompleteDataHub.png#max-width=100%) 
+![MySql - BoldBI](/static/assets/working-with-etl/images/schedule_history.png#max-width=100%)
 
-4. Click the `Schedule` option to schedule the refresh hourly.
+4. Click on Logs to see if the run is completed and data source is created in Bold BI. 
 
-![MySQL ETL- BoldBI](/static/assets/working-with-etl/images/mysqletl_schedulerefresh.png#max-width=100%)  
+![MySql - BoldBI](/static/assets/working-with-etl/images/pipeline_DsCreated.png#max-width=100%)
 
-5. The data source was created by ETL in Bold BI.
 
-![MySQL ETL- BoldBI](/static/assets/working-with-etl/images/mysqletl_newdsDataHub.png#max-width=100%)
+5. Click `Edit DataSource` Option to view the created tables.
 
-6. Click the `Edit DataSource` Option to view the created table(s), such as the 'votes' table.
-
-![MySQL ETL- BoldBI](/static/assets/working-with-etl/images/mysqletl_tableDataHub.png#max-width=100%)
 
 ## Metadata Properties
 

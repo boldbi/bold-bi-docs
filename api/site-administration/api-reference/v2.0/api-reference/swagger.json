@@ -1714,6 +1714,191 @@
           }
         }
       }
+    },
+    "/v2.0/administration/look-and-feel/resources": {
+      "get": {
+        "tags": [
+          "Administration"
+        ],
+        "summary": "Get font and theme",
+        "description": "Get the font and theme file details",
+        "operationId": "get_font_and_themes",
+        "responses": {
+          "200": {
+            "description": "Resources retrieved successfully.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetThemeFileDetails"
+                }
+              }
+            }
+          },
+          "417": {
+            "description": "Failed to get the resources.",
+            "content": {}
+          }
+        }
+      }
+    },
+    "/v2.0/administration/look-and-feel/upload": {
+      "post": {
+        "tags": [
+          "Administration"
+        ],
+        "summary": "Upload font and theme",
+        "description": "Upload the font and theme files",
+        "operationId": "upload_font_and_themes",
+        "requestBody": {
+          "description": "Upload font and theme request body.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UploadThemeRequestBody"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "New resources uploaded successfully.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetThemeFileDetails"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Request details empty.",
+            "content": {}
+          },
+          "412": {
+            "description": "The content of the request body is invalid.",
+            "content": {}
+          },
+          "417": {
+            "description": "Failed to get the look and feel settings.",
+            "content": {}
+          }
+        }
+      }
+    },
+    "/v2.0/administration/look-and-feel": {
+      "get": {
+        "tags": [
+          "Administration"
+        ],
+        "summary": "Get look and feel settings",
+        "description": "Get the current look and feel settings",
+        "operationId": "get_look_and_feel_settings",
+        "responses": {
+          "200": {
+            "description": "Look and feel settings have been retrieved successfully.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetLookAndFeelResponse"
+                }
+              }
+            }
+          },
+          "417": {
+            "description": "Failed to get the look and feel settings.",
+            "content": {}
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Administration"
+        ],
+        "summary": "Update look and feel settings",
+        "description": "Update the look and feel settings",
+        "operationId": "update_look_and_feel_settings",
+        "requestBody": {
+          "description": "Update look and feel request body.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateLookAndFeelRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "The look and feel settings have been updated successfully.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetLookAndFeelResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Request details empty.",
+            "content": {}
+          },
+          "412": {
+            "description": "The content of the request body is invalid.",
+            "content": {}
+          },
+          "417": {
+            "description": "Failed to update the look and feel settings.",
+            "content": {}
+          }
+        }
+      }
+    },
+    "/v2.0/user/activation": {
+      "post": {
+        "tags": [
+          "Users"
+        ],
+        "summary": "Activate user",
+        "description": "Activate the user",
+        "operationId": "activate_user",
+        "requestBody": {
+          "description": "Activate user request body.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ActivateUserRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "User already activated.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ActivateUserResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Request details empty.",
+            "content": {}
+          },
+          "412": {
+            "description": "The content of the request body is invalid.",
+            "content": {}
+          },
+          "417": {
+            "description": "Failed to activate the user.",
+            "content": {}
+          }
+        }
+      }
     }
   },
   "components": {
@@ -2963,6 +3148,9 @@
           },
           "PoweredBy": {
             "$ref": "#/components/schemas/BrandingDetails"
+          },
+          "AI": {
+            "$ref": "#/components/schemas/BrandingDetails"
           }
         }
       },
@@ -2976,7 +3164,7 @@
           },
           "LogoType": {
             "type": "string",
-            "description": "Logo type of branding logos."
+            "description": "Logo type of branding logos (Header - mainscreenlogo, Login - loginlogo, Favicon - favicon, Email - emaillogo, PoweredBy - poweredbylogo, AI - ailogo)."
           }
         }
       },
@@ -4066,6 +4254,215 @@
           "Message": {
             "type": "string",
             "description": "Returns the message from the API."
+          }
+        }
+      },
+      "GetThemeFileDetails": {
+        "type": "object",
+        "properties": {
+          "ApiStatus": {
+            "type": "boolean",
+            "description": "Returns the status from the API."
+          },
+          "Data": {
+            "type": "array",
+            "description": "Returns the data of theme files.",
+            "items": {
+              "$ref": "#/components/schemas/ThemeDetails"
+            }
+          },
+          "Status": {
+            "type": "boolean",
+            "description": "Returns status of the API request."
+          },
+          "StatusMessage": {
+            "type": "string",
+            "description": "Returns the status message from the API."
+          }
+        }
+      },
+      "ThemeDetails": {
+        "type": "object",
+        "properties": {
+          "Fonts": {
+            "type": "string",
+            "description": "Returns the fonts list details."
+          },
+          "ApplicationThemes": {
+            "type": "string",
+            "description": "Returns the application themes list details."
+          },
+          "DashboardThemes": {
+            "type": "string",
+            "description": "Returns the dashboard themes list details."
+          }
+        }
+      },
+      "GetLookAndFeelResponse": {
+        "type": "object",
+        "properties": {
+          "ApiStatus": {
+            "type": "boolean",
+            "description": "Returns the status from the API."
+          },
+          "Data": {
+            "type": "array",
+            "description": "Returns the data of look and feel settings.",
+            "items": {
+              "$ref": "#/components/schemas/LookAndFeelSettings"
+            }
+          },
+          "Status": {
+            "type": "boolean",
+            "description": "Returns status of the API request."
+          },
+          "StatusMessage": {
+            "type": "string",
+            "description": "Returns the status message from the API."
+          }
+        }
+      },
+      "LookAndFeelSettings": {
+        "type": "object",
+        "properties": {
+          "FontFamily": {
+            "type": "string",
+            "description": "Returns the current font name in the application."
+          },
+          "Theme": {
+            "type": "array",
+            "description": "Returns the current theme details.",
+            "items": {
+              "$ref": "#/components/schemas/CurrentTheme"
+            }
+          }
+        }
+      },
+      "CurrentTheme": {
+        "type": "object",
+        "properties": {
+          "Appearance": {
+            "type": "string",
+            "description": "Returns the current appearance theme."
+          },
+          "ApplicationTheme": {
+            "type": "string",
+            "description": "Returns the current application theme."
+          },
+          "DashboardTheme": {
+            "type": "string",
+            "description": "Return the current dashboard theme."
+          }
+        }
+      },
+      "UploadThemeRequestBody": {
+        "type": "object",
+        "properties": {
+          "FileType": {
+            "type": "enum",
+            "$ref": "#/components/schemas/ThemeFileType"
+          },
+          "Name": {
+            "type": "string",
+            "description": "Provide the name of the file."
+          },
+          "Content": {
+            "type": "string",
+            "description": "Please provide the base64 byte details of the theme file."
+          }
+        }
+      },
+      "ThemeFileType": {
+        "description": "1 - Font, 2 - ApplicationTheme, 3 - DashboardTheme",
+        "type": "enum",
+        "enum": [
+          1,
+          2,
+          3
+        ],
+        "x-enumNames": [
+          "Font",
+          "ApplicationTheme",
+          "DashboardTheme"
+        ]
+      },
+      "UpdateLookAndFeelRequest": {
+        "type": "object",
+        "properties": {
+          "Font": {
+            "type": "string",
+            "description": "Provide the font name to update."
+          },
+          "Theme": {
+            "type": "array",
+            "description": "Provide the theme details to update.",
+            "$ref": "#/components/schemas/ThemeDetail"
+          }
+        }
+      },
+      "ThemeDetail": {
+        "type": "object",
+        "properties": {
+          "Mode": {
+            "type": "enum",
+            "$ref": "#/components/schemas/FontType"
+          },
+          "Application": {
+            "type": "string",
+            "description": "Provide the application theme name."
+          },
+          "Dashboard": {
+            "type": "string",
+            "description": "Provide the dashboard theme name."
+          }
+        }
+      },
+      "FontType": {
+        "description": "0 - Light, 1 - Dark",
+        "type": "enum",
+        "enum": [
+          0,
+          1
+        ],
+        "x-enumNames": [
+          "Light",
+          "Dark"
+        ]
+      },
+      "ActivateUserRequest": {
+        "required": [
+          "EmailId"
+        ],
+        "type": "object",
+        "properties": {
+          "EmailId": {
+            "type": "string",
+            "description": "Provide email id of the user needs to be activated."
+          },
+          "Password": {
+            "type": "string",
+            "description": "Provide the password for the user.(Password is required for email activation type.)"
+          }
+        }
+      },
+      "ActivateUserResponse": {
+        "type": "object",
+        "properties": {
+          "ApiStatus": {
+            "type": "boolean",
+            "description": "Returns the status from the API."
+          },
+          "Data": {
+            "type": "array",
+            "description": "Returns the data of user activation method."
+          },
+          "Status": {
+            "type": "boolean",
+            "description": "Returns status of the API request."
+          },
+          "StatusMessage": {
+            "type": "string",
+            "description": "Returns the status message from the API."
           }
         }
       }
