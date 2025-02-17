@@ -18,7 +18,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/nodejs-sample
  * [Visual Studio Code](https://code.visualstudio.com/download)
  * [Python 3.8](https://www.python.org/downloads/release/python-383/)
 
-> **NOTE:** Node.js v12.13 to v18.18 are supported
+> **NOTE:** Node.js versions 18.18 to 20.15 are supported.
 
 ## How to run the sample
 
@@ -154,7 +154,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/nodejs-sample
 
     ```js
     <head>  
-        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v8.2.22/boldbi-embed.js"></script>
+        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v10.1.18/boldbi-embed.js"></script>
     </head>
     <body onload="embedSample();">
         <div id="dashboard"></div>

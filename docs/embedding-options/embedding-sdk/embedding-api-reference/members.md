@@ -235,43 +235,6 @@ var dashboard = BoldBI.create({
 dashboard.loadDashboard();
 ```
 
-<h2 class="doc-prop-wrapper" id="enableaiassistant" data-Path="enableaiassistant-enableAiAssistant">
-<a href="#enableaiassistant" aria-hidden="true" class="anchor">
-<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
-<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
-</svg>
-</a><span class='doc-prop-name'>enableAiAssistant</span>
-
-<span class="doc-prop-type"> `boolean`
-</span>
-
-</h2>
-
-
-The AI Assistant enables users to generate widgets and modify their properties using natural language queries, making data visualization more intuitive and accessible. It is designed to enhance the widget creation and customization experience by leveraging advanced AI models. It offers both Cloud and Enterprise editions of the dashboard application. It supports only for dashboard viewer and dashboard designer. Please refer [here](https://help.boldbi.com/artificial-intelligence-and-machine-learning/activate-ai-feature/) to know more about this feature.
-
-<br>
-
-**Default value** 
-
-<li>false</li><br>
-
-**Example** 
-
-```js
-var dashboard = BoldBI.create({
-     mode: BoldBI.Mode.View,
-     enableAiAssistant: true, //The AI Assistant option will be show in the dashboard viewer.   
-});
-dashboard.loadDashboard();
-
-var dashboard = BoldBI.create({
-     mode: BoldBI.Mode.Design,
-     enableAiAssistant: true, //The AI Assistant option will be show in the dashboard designer.       
-});
-dashboard.loadDesigner();
-```
-
 <h2 class="doc-prop-wrapper" id="environment" data-Path="environment-environment">
 <a href="#environment" aria-hidden="true" class="anchor">
 <svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
@@ -644,6 +607,36 @@ var pinboard = BoldBI.create({
 pinboard.loadPinboard();
 ```
 
+<h2 class="doc-prop-wrapper" id="restrictmobileview" data-Path="restrictmobileview-restrictMobileView">
+<a href="#restrictmobileview" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
+<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+</svg>
+</a><span class='doc-prop-name'>restrictMobileView</span>
+
+<span class="doc-prop-type"> `boolean`
+</span>
+
+</h2>
+
+
+This property allows users to restrict the mobile view on desktop when the browser width reaches a specified pixel threshold.
+
+<br>
+
+**Default value** 
+
+<li>false</li><br>
+
+**Example** 
+
+```js
+var dashboard = BoldBI.create({
+     restrictMobileView: true,  
+});
+dashboard.loadDashboard();
+```
+
 <h2 class="doc-prop-wrapper" id="serverurl" data-Path="serverurl-serverUrl">
 <a href="#serverurl" aria-hidden="true" class="anchor">
 <svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
@@ -686,7 +679,7 @@ dashboard.loadDashboard();
 
 </h2>
 
-By using token API member, able to authenticate the dashboard in your application without implementing the AuthorizeAPI endpoint. Refer [token generation](/embedding-options/embedding-sdk/token-generation/) section for generating token in two different ways.
+By using token API member, able to authenticate the dashboard in your application without implementing the AuthorizeAPI endpoint. Refer [token generation](/embedding-options/embedding-sdk/token-generation/) section for generating 2 different tokens.
 
 <br>
 
@@ -698,10 +691,16 @@ By using token API member, able to authenticate the dashboard in your applicatio
 
 ```js  
 var dashboard = BoldBI.create({
-     token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRldm9wc0Bib2xkYmkuY29tIiwidXBuIjouYm9sZGJpZGVtby5jb20vYmkvc2l0ZS9zaXRlMSIsImF1ZCI6Imh0dHBzOi8vaG90Zml4LXdpbmRvd3MuYm9sZGJpZGVtby5jb20vYmkvc2l0ZS9zaXRlMSJ9.JzbqVr6Brv1mAEvnbHnE-FuShos", // Use the generated Access token
+     token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRldm9wc0Bib2xkYmkuY29tIiwidXBuIjouYm9sZGJpZGVtby5jb20vYmkvc2l0ZS9zaXRlMSIsImF1ZCI6Imh0dHBzOi8vaG90Zml4LXdpbmRvd3MuYm9sZGJpZGVtby5jb20vYmkvc2l0ZS9zaXRlMSJ9.JzbqVr6Brv1mAEvnbHnE-FuShos", // Use the generated Personal Access token
 });
 dashboard.loadDashboard();
-```  
+
+var dashboard = BoldBI.create({
+     token: "NjQ2ZDgwZjgtN2Q3MS00ZDQwLWFkNTItYTdkNDRhOGE2NmVi", // Use the generated API key
+});
+dashboard.loadDashboard();
+```
+
 To learn about the available limited [supporting methods](/embedding-options/embedding-sdk/token-generation/#following-embedding-modules-is-achievable-by-using-token-api-member) in embedding.
 
 <h2 class="doc-prop-wrapper" id="viewid" data-Path="viewid-viewId">
@@ -1323,6 +1322,38 @@ var dashboard = BoldBI.create({
 dashboard.loadDashboard();
 ```
 
+<h3 class="doc-prop-wrapper" id="showmetrics" data-Path="dashboardsettingsshowmetrics-dashboardSettings.showMetrics">
+<a href="#showmetrics" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
+<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+</svg>
+</a><span class='doc-prop-name'>showMetrics</span>
+
+<span class="doc-prop-type"> `boolean`
+</span>
+
+</h3>
+
+
+Specifies whether to show or hide the `Metrics` option in the dashboard banner.
+
+<br>
+
+**Default value** 
+
+<li>true</li><br>
+
+**Example** 
+
+```js
+var dashboard = BoldBI.create({
+     dashboardSettings: {
+          showMetrics: true,
+     }
+});
+dashboard.loadDashboard();
+```
+
 <h3 class="doc-prop-wrapper" id="showmoreoption" data-Path="dashboardsettingsshowmoreoption-dashboardSettings.showMoreOption">
 <a href="#showmoreoption" aria-hidden="true" class="anchor">
 <svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
@@ -1488,6 +1519,76 @@ var dashboard = BoldBI.create({
 dashboard.loadDesigner();
 ```
 
+<h3 class="doc-prop-wrapper" id="hidedatasourcelist" data-Path="dashboardsettingsdatasourceconfighidedatasourcelist-dashboardSettings.dataSourceConfig.hideDataSourceList">
+<a href="#hidedatasourcelist" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+</svg>
+</a><span class='doc-prop-name'>hideDataSourceList</span>
+
+<span class="doc-prop-type"> `boolean`
+</span>
+
+</h3>
+
+
+Specify whether to show or hide the `Data source List` dropdown configuration in the dashboard designer banner.
+
+<br>
+
+**Default value** 
+
+<li>false</li><br>
+
+**Example** 
+
+```js
+var dashboard = BoldBI.create({
+     mode: BoldBI.Mode.Design,
+     dashboardSettings: {
+          dataSourceConfig :{
+            hideDataSourceList: false // By default, the datasource list dropdown is shown.
+          }
+     }
+});
+dashboard.loadDesigner();
+```
+
+<h3 class="doc-prop-wrapper" id="hideexpression" data-Path="dashboardsettingsdatasourceconfighideexpression-dashboardSettings.dataSourceConfig.hideExpression">
+<a href="#hideexpression" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+</svg>
+</a><span class='doc-prop-name'>hideExpression</span>
+
+<span class="doc-prop-type"> `boolean`
+</span>
+
+</h3>
+
+
+Specify whether to show or hide the `Hide Expression` configuration button in the dashboard designer banner.
+
+<br>
+
+**Default value** 
+
+<li>false</li><br>
+
+**Example** 
+
+```js
+var dashboard = BoldBI.create({
+     mode: BoldBI.Mode.Design,
+     dashboardSettings: {
+          dataSourceConfig :{
+            hideExpression: false // By default, the add expression button is shown.
+          }
+     }
+});
+dashboard.loadDesigner();
+```
+
 ## dashboardSettings.filterOverviewSettings
 
 <h3 class="doc-prop-wrapper" id="showsaveasicon" data-Path="dashboardsettingsfilteroverviewsettingsshowsaveasicon-dashboardSettings.filterOverviewSettings.showSaveAsIcon">
@@ -1585,17 +1686,8 @@ var dashboard = BoldBI.create({
             showViewSavedFilterIcon: true,// To enable view saved filters option in filter overview
           },
           onViewSavedFiltersClick: function(args) {
-            // embedContainerID -> 'dashboard'
-            var instance = BoldBI.getInstance('dashboard');
-
-            // Determine the active-tabbed child dashboard ID if it's a multi-tab dashboard
-            // Get the dashboard id from the embed options.
-            var dashboardId = instance.isMultiTab ? instance._getActiveChildDashboardId() : instance.embedOptions.dashboardId;
-
-            /* Add custom functionality for getting views from the dashboard. */
-
-            // Call the API method ('getViewsByDashboardId') for getting the views and specify a callback function ('callBackFunction') to handle the response and perform further actions.
-            instance.getViewsByDashboardId(dashboardId, 'callBackFunction');
+            // Retrieves the array of view information from 'args.viewInfos' and perform further actions.
+             console.log(args.viewInfos); //The 'args.viewInfos' contains a list of views in the form of an array.
           },
      }
 });
@@ -2046,6 +2138,74 @@ var dashboard = BoldBI.create({
      dynamicConnection: {
           isEnabled: false,
      }
+});
+dashboard.loadDashboard();
+```
+
+## embedAiAssistant
+
+<h2 class="doc-prop-wrapper" id="enableaiassistant" data-Path="enableaiassistant-enableAiAssistant">
+<a href="#enableaiassistant" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
+<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+</svg>
+</a><span class='doc-prop-name'>enableAiAssistant</span>
+
+<span class="doc-prop-type"> `boolean`
+</span>
+
+</h2>
+
+
+The AI Assistant enables users to generate widgets and modify their properties using natural language queries, making data visualization more intuitive and accessible. It is designed to enhance the widget creation and customization experience by leveraging advanced AI models. It offers both Cloud and Enterprise editions of the dashboard application. It supports only for dashboard viewer, dashboard designer, single widget, and pinboard embeddings. Please refer [here](https://help.boldbi.com/artificial-intelligence-and-machine-learning/activate-ai-feature/) to know more about this feature.
+
+<br>
+
+**Default value** 
+
+<li>false</li><br>
+
+**Example** 
+
+```js
+var dashboard = BoldBI.create({
+     embedAiAssistant: {
+          enableAiAssistant: true
+     }   
+});
+dashboard.loadDashboard();
+```
+> **Note** Until version 9.1.73, the AI Assistant could be enabled by initializing the `enableAiAssistant` property directly in the [create](https://help.boldbi.com/embedding-options/embedding-sdk/embedding-api-reference/methods/#create) method. Starting from version 10.1.18, the `enableAiAssistant` property must be initialized within the `embedAiAssistant` property.
+
+<h2 class="doc-prop-wrapper" id="hideaidatausage" data-Path="hideaidatausage-hideAiDataUsage">
+<a href="#hideaidatausage" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
+<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+</svg>
+</a><span class='doc-prop-name'>hideAiDataUsage</span>
+
+<span class="doc-prop-type"> `boolean`
+</span>
+
+</h2>
+
+
+This specifies whether to show or hide the `AI Data Usage` icon in the AI Assistant window. To enable this, it is mandatory to use the [enableAiAssistant](https://help.boldbi.com/embedding-options/embedding-sdk/embedding-api-reference/members/#enableaiassistant) member API.
+
+<br>
+
+**Default value** 
+
+<li>false</li><br>
+
+**Example** 
+
+```js
+var dashboard = BoldBI.create({
+     embedAiAssistant: {
+          enableAiAssistant: true,
+          hideAiDataUsage: true
+     }   
 });
 dashboard.loadDashboard();
 ```

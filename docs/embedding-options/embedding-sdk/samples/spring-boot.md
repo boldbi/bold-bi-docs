@@ -124,11 +124,11 @@ A GitHub link has been provided to [get](https://github.com/boldbi/spring-boot-s
 
  3. The `renderDashboard(data)` function renders the dashboard using the retrieved data from the `getEmbedConfig()`.
 
-    ![spring-boot-renderDashboard](/static/assets/javascript/sample/images/spring-boot-renderDashboard.png)
+    ![spring-boot-renderDashboard](/static/assets/javascript/sample/images/springboot-renderDashboard.png)
 
  4. Before rendering, the `authorizationUrl` is called. This `authorizationUrl` redirects to the `authorizationServer` action in the `HomeController`. The `HomeController` then generates the `EmbedSignature` using the embed secret from the `embedConfig.json` file.
 
-    ![spring-boot-authorizationserver](/static/assets/javascript/sample/images/spring-boot-authorizationServer.png)
+    ![spring-boot-authorizationserver](/static/assets/javascript/sample/images/springboot-authorizationServer.png)
 
  5. These details will be sent to the Bold BI server and validated there. Once the details are validated, the dashboard starts to render.
 
@@ -298,16 +298,12 @@ A GitHub link has been provided to [get](https://github.com/boldbi/spring-boot-s
         }
         function renderDashboard(data)
         {
-            var dashboard = BoldBI.create({
+             var dashboard = BoldBI.create({
                 serverUrl: data.serverUrl + "/" + data.siteIdentifier,
                 dashboardId: data.dashboardId,
                 embedContainerId: "dashboard",
-                embedType: BoldBI.EmbedType.Component,
-                environment:data.environment,
-                width: window.innerWidth + "px",
+                width: "100%",
                 height: window.innerHeight + "px",
-                mode: BoldBI.Mode.View,
-                expirationTime: 100000,
                 authorizationServer: {
                     url: "/authorizationServer" 
                 }
@@ -324,7 +320,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/spring-boot-s
       <dependency>
         <groupId>com.google.code.gson</groupId>
         <artifactId>gson</artifactId>
-        <version>2.8.2</version>
+        <version>2.8.9</version>
       </dependency>
      ```
     
@@ -352,13 +348,20 @@ A GitHub link has been provided to [get](https://github.com/boldbi/spring-boot-s
             String embedQuery = embedQueryString.getEmbedQuerString();
             embedQuery += "&embed_user_email=" + embedProperties.getUserEmail();
             String embedDetailsUrl = "/embed/authorize?" + embedQuery + "&embed_signature=" + GetSignatureUrl(embedQuery);
-            RestTemplate restTemplate = new RestTemplate();
-            DefaultUriBuilderFactory defaultUriBuilderFactory = new DefaultUriBuilderFactory();
-            defaultUriBuilderFactory.setEncodingMode(DefaultUriBuilderFactory.EncodingMode.NONE);
-            restTemplate.setUriTemplateHandler(defaultUriBuilderFactory);
             String baseAddressString = embedQueryString.getDashboardServerApiUrl();
-            String result = restTemplate.getForObject(baseAddressString + embedDetailsUrl, String.class);
-            return result;
+            String fullUrl = baseAddressString + embedDetailsUrl;
+            URL url = new URL(fullUrl);
+            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+            connection.setRequestMethod("GET");
+            connection.setRequestProperty("Accept", "application/json");
+            BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+            String inputLine;
+            StringBuilder response = new StringBuilder();
+            while ((inputLine = in.readLine()) != null) {
+                response.append(inputLine);
+            }
+            in.close();
+            return response.toString();
         }
 
         public String GetSignatureUrl(String queryString) throws Exception {
@@ -377,9 +380,15 @@ A GitHub link has been provided to [get](https://github.com/boldbi/spring-boot-s
  13. Include these import statements in `HomeController.java`.
 
      ```js
+        import java.io.BufferedReader;
         import java.io.IOException;
+        import java.io.InputStreamReader;
+        import java.net.HttpURLConnection;
+        import java.net.URL;
         import java.nio.charset.StandardCharsets;
         import java.util.Base64;
+        import java.util.HashMap;
+        import java.util.Map;
         import javax.crypto.Mac;
         import javax.crypto.spec.SecretKeySpec;
         import org.springframework.core.io.ClassPathResource;
@@ -390,8 +399,6 @@ A GitHub link has been provided to [get](https://github.com/boldbi/spring-boot-s
         import org.springframework.web.bind.annotation.RequestBody;
         import org.springframework.web.bind.annotation.RequestMapping;
         import org.springframework.web.bind.annotation.RestController;
-        import org.springframework.web.client.RestTemplate;
-        import org.springframework.web.util.DefaultUriBuilderFactory;
         import com.google.gson.Gson;
      ```
 

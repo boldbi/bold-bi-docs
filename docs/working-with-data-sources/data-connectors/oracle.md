@@ -24,10 +24,8 @@ documentation: ug
    
    ![Oracle button](/static/assets/working-with-datasource/data-connectors/images/oracle/Oracle-button.png)
    
-   Set the `server Name` and `port number` where the Oracle service is running. 
+   Set the `server Name` and `port number` and `Service Instance Name` where the Oracle service is running. 
    
-   The `Service Instance Name` is an optional parameter. Set the Service Instance Name if you have a specific name for the Oracle service: otherwise, the Oracle connection will be launched with the default service name
-
    > **NOTE:**  What is the Service Instance Name – The Service Instance Name is a name given to an Oracle Cloud Service. For more details refer [Service Instance Name](https://docs.oracle.com/en/cloud/paas/data-integrator-cloud/user/creating-oracle-database-cloud-service-instance.html)
 
    Enter the `user name` and `password` to connect to the Oracle.

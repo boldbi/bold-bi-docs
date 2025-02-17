@@ -15,5 +15,7 @@ This section explores how Artificial Intelligence and Machine Learning are integ
 
 [Q&A Widget](/artificial-intelligence-and-machine-learning/qna-widget/)
 
+[AI Feature visibility](/artificial-intelligence-and-machine-learning/ai-feature-visibility/)
+
 [Forecasting](/artificial-intelligence-and-machine-learning/time-series-forecasting/)
 

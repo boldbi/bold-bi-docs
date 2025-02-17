@@ -14,7 +14,7 @@ The sample has been provided in the following sections for `Blazor Server`, whic
 
 ## Prerequisites
 
- * [.NET Core 6.0 or later](https://dotnet.microsoft.com/en-us/download/dotnet-core)
+ * [.NET Core 8.0](https://dotnet.microsoft.com/en-us/download/dotnet-core)
  * [Visual Studio Code](https://code.visualstudio.com/download)
 
 ## How to run Blazor Server sample
@@ -195,7 +195,7 @@ The sample has been provided in the following sections for `Blazor Server`, whic
      ```js 
        <div id="dashboard"></div>
        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-       <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v8.2.22/boldbi-embed.js"></script>
+       <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v10.1.18/boldbi-embed.js"></script>
        <script type="text/javascript">
              var rootUrl = "@GlobalAppSettings.EmbedDetails.ServerUrl";
              var siteIdentifier = "@GlobalAppSettings.EmbedDetails.SiteIdentifier";

@@ -9,15 +9,17 @@ documentation: ug
 ---
 
 # Activate AI Feature
-To activate AI feature, follow these steps:
+Watch our latest video tutorial to learn how to activate the AI feature in Bold BI. Follow step-by-step instructions and helpful tips to get the most out of this powerful functionality!<br/>
 
-## Steps
+<iframe class="helpsite-video-section" src="https://www.youtube.com/embed/oeHEcOVd634" frameborder="0" allowfullscreen></iframe>
 
-1. Click on the AI Assistant feature icon located at the bottom right of the dashboard designer or viewer.
+## Steps to activate AI feature
+
+1. Click on the AI Copilot feature icon located at the bottom right of the dashboard designer or viewer.
 
 ![AI Icon](/static/assets/artificial-intelligence-and-machine-learning/images/activate-ai-feature/AI_Icon.png)
 
-2. After clicking the icon, AI Assistant Activation page will appear.
+2. After clicking the icon, AI Copilot Activation page will appear.
 
 ![Activate Page](/static/assets/artificial-intelligence-and-machine-learning/images/activate-ai-feature/Activate_Page.png)
 
@@ -25,11 +27,11 @@ To activate AI feature, follow these steps:
 
 ![Click Activate](/static/assets/artificial-intelligence-and-machine-learning/images/activate-ai-feature/Click_Activate.png)
 
-4. Before continuing, to update the license with AI features enabled in the On-Premise environment, click on `Manage License` to navigate to the license management page.
+4. Before continuing, to update the license with AI features enabled in the cloud environment, click on `Manage License` to navigate to the license management page.
 
 ![Activation Success](/static/assets/artificial-intelligence-and-machine-learning/images/activate-ai-feature/Activation_Success.png)
 
-5. To include the updated license key with AI features enabled in the On-Premise environment, click the `Refresh License` button.
+5. To include the updated license key with AI features enabled in the cloud environment, click the `Refresh License` button.
 
 ![Refresh License](/static/assets/artificial-intelligence-and-machine-learning/images/activate-ai-feature/Refresh_License.png)
 
@@ -43,12 +45,14 @@ To activate AI feature, follow these steps:
 
 ![Offline Activation](/static/assets/artificial-intelligence-and-machine-learning/images/activate-ai-feature/Offline_Activation.png)
 
->**NOTE** : The steps from 4 to 7 are only relevant for On-Premise users.
-
 8. After the activation is complete, click the `Continue` button.
 
 ![Click Continue](/static/assets/artificial-intelligence-and-machine-learning/images/activate-ai-feature/Click_Continue.png)
 
-9. You will be directed to a page confirming that the AI Feature has been activated.
+9. You will be directed to a confirmation page indicating that the AI feature has been activated. If activating a fresh build, the release notes page will appear; otherwise, the AI chat page will be displayed.
 
-![Welcome Page](/static/assets/artificial-intelligence-and-machine-learning/images/activate-ai-feature/Welcome_Page.png)
+![Chat Page](/static/assets/artificial-intelligence-and-machine-learning/images/activate-ai-feature/chat-page.png)
+
+![Release Page](/static/assets/artificial-intelligence-and-machine-learning/images/activate-ai-feature/release-page.png)
+
+>**NOTE**: These activation steps apply only to existing license keys. For new license keys, activation will be completed at license registration itself.

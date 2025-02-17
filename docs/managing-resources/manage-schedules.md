@@ -81,11 +81,19 @@ To learn about creating a schedule on the dashboard viewer page, please check [t
 	
 * Customize the email content that needs to be sent during the schedule.
 
-* The schedule email content page will have default content as shown in the following image.
+* The scheduled email content page will feature default content based on the selected system template, as shown in the following image. Additionally, users are not permitted to customize the default system template content.
 
-  ![Default Schedule Mail](/static/assets/managing-resources/images/default-mail-content.png#width=85%)
+  ![Default Schedule Mail](/static/assets/managing-resources/images/default-mail-content.png)
 
-* Use the default email subject or customize it using the variables in the drop-down next to the subject field. Once you select a variable from the variables drop-down, the default subject content will be reset.
+* You can also create a new template and select it from the dropdown menu to customize the email content.
+
+  ![Choose template](/static/assets/managing-resources/images/choose-template.png)
+
+* To customize the subject and body content of an email, you can enable the `Email Customization` toggle button.
+
+  ![Customize Schedule Mail](/static/assets/managing-resources/images/customize-schedule-mail.png)
+
+* To customize the subject, use the variables in the drop-down menu next to the subject field. Once you select a variable from the drop-down, the default subject content will be reset.
 
   ![Customize Mail Subject](/static/assets/managing-resources/images/customize-mail-subject.png#width=85%)
 

@@ -90,6 +90,9 @@ The favicon for the Bold BI site can be changed, with the preferred image size b
 ### Email logo
 The email logo image can be changed, with the preferred image size being `200 x 40` pixels. The Bold BI site will have the Bold BI email logo as the default.
 
+### AI Logo
+The AI logo image can be changed, with the preferred image size being `40 x 40` pixels. The Bold BI site will have the Bold BI AI logo as the default.
+
 ### Powered by Syncfusion
 You can either change the powered by logo image with the preferred image size of `100 x 25`, or disable it by unchecking the option for Embedded BI. Cloud BI users can only disable it by unchecking the option.
 

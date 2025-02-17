@@ -59,7 +59,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/wpf-sample) t
             <!DOCTYPE html>
         <html><head><meta http-equiv='X-UA-Compatible' content='IE=Edge' />
         <script src='https://cdn.polyfill.io/v2/polyfill.min.js'></script>
-        <script type='text/javascript' src='https://cdn.boldbi.com/embedded-sdk/v8.2.22/boldbi-embed.js'></script>" +
+        <script type='text/javascript' src='https://cdn.boldbi.com/embedded-sdk/v10.1.18/boldbi-embed.js'></script>" +
         "<script type='text/javascript'>$(document).ready(function() " +
         "{this.dashboard = BoldBI.create({ serverUrl:'" + EmbedProperties.RootUrl + EmbedProperties.SiteIdentifier + "', dashboardId:'" + EmbedProperties.DashboardId + "',embedContainerId: 'dashboard',embedType:'" + BoldBI.EmbedType.Component + "',environment:'" + BoldBI.Environment.Enterprise, /* If Cloud, you should use BoldBI.Environment.Cloud */ + "'mode: '" + BoldBI.Mode.Design + "',width: window.innerWidth - 20 + 'px',height: window.innerHeight - 20 + 'px',expirationTime: 100000,authorizationServer:{url: '', data:" + resultContent + "}});this.dashboard.loadDesigner();});</script>" +
         "</head>" +
@@ -210,7 +210,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/wpf-sample) t
                 <!DOCTYPE html>
         <html><head><meta http-equiv='X-UA-Compatible' content='IE=Edge' />
         <script src='https://cdn.polyfill.io/v2/polyfill.min.js'></script>
-        <script type='text/javascript' src='https://cdn.boldbi.com/embedded-sdk/v8.2.22/boldbi-embed.js'></script>" +
+        <script type='text/javascript' src='https://cdn.boldbi.com/embedded-sdk/v10.1.18/boldbi-embed.js'></script>" +
         "<script type='text/javascript'>$(document).ready(function() " +
         "{this.dashboard = BoldBI.create({ serverUrl:'" + EmbedProperties.RootUrl + EmbedProperties.SiteIdentifier + "', dashboardId:'" + EmbedProperties.DashboardId + "',embedContainerId: 'dashboard',embedType:'" + BoldBI.EmbedType.Component + "',environment:'" + BoldBI.Environment.Enterprise, /* If Cloud, you should use BoldBI.Environment.Cloud */ + "'mode: '" + BoldBI.Mode.View + "',width: window.innerWidth - 20 + 'px',height: window.innerHeight - 20 + 'px',expirationTime: 100000,authorizationServer:{url: '', data:" + resultContent + "}});this.dashboard.loadDashboard();});</script>" +
         "</head>" +

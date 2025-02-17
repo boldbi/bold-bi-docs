@@ -29,7 +29,7 @@ documentation: ug
 
     * Install `python pip` and the following pip packages by running the following command.
         ~~~shell
-        sudo yum -y install python3-pip && python3.9 -m pip install duckdb===1.0.0 dlt===0.5.4 pymysql pyodbc pg8000 poetry pandas===2.2.2 "dlt[parquet]" "dlt[filesystem]"
+        sudo yum -y install python3-pip && python3.9 -m pip install duckdb===1.1.2 dlt===0.5.4 pymysql pyodbc pg8000 poetry pandas===2.2.2 "dlt[parquet]" "dlt[filesystem]"
        ~~~
 4. Add an `openssl conf` path to the environment if does not exist:
 
