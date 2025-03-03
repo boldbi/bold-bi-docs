@@ -63,4 +63,4 @@ The Questions and Answers feature can be deployed on the dashboard, enabling end
 
 >**NOTE:** The Q&A widget utilizes the AI Assistant service, and its usage is deducted from the AI Assistant's available credits.
 
-> **IMPORTANT:** Please find the best practices and limitations from this link [Best Practices and Limitations](/artificial-intelligence-and-machine-learning/ai-assistant/best-practices-and-limitations/) to get a seamless experience with the Q&A widget 
+> **IMPORTANT:** Please find the best practices and limitations from this link [Best Practices and Limitations](/artificial-intelligence-and-machine-learning/generative-ai/best-practices-and-limitations/) to get a seamless experience with the Q&A widget 

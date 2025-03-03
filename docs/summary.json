@@ -395,8 +395,9 @@
 			"Workable": "workable",
 			"Zendesk Chart": "zendesk-chart",
 			"Zendesk Support": "zendesk-support",
-			"Zendesk Talk": "zendesk-talk"
-			
+			"Zendesk Talk": "zendesk-talk",
+			"MongoDBSSH": "mongodbssh",
+			"MySQLSSH": "mysqlssh"
 		}
 		}		
 		,
@@ -527,19 +528,19 @@
 		"Activate AI Feature": "activate-ai-feature",
 		"Configure AI": "configure-ai",
 		"Enable/Disable AI Feature": "enable-disable-ai-feature",
-		"AI Assistant": {
+		"Generative AI": {
 			"Getting Started": "ai-copilot-getting-started",
-			"Architecture and Data Processing": "architecture-data-processing",
-			"AI Copilot in Dashboard Designer": "ai-copilot-dashboard-designer",
-			"AI Agent in View Mode": "ai-agent-view-mode",
+			"Architecture": "architecture",
+			"AI Copilot": "ai-copilot",
+			"AI Agent": "ai-agent",
 			"AI Data Processing": "ai-data-processing",
-			"Best Practices and Limitations": "best-practices-and-limitations"
+			"Best Practices and Limitations": "best-practices-and-limitations",
+			"Dashboard Summary": "dashboard-summary",
+        	"Widget Insights": "widget-insights"
 		},
 		"Q&A Widget": "qna-widget",
 		"Forecasting": "time-series-forecasting",
-		"AI Feature Visiblity": "ai-feature-visibility",
-		"Dashboard Summary": "dashboard-summary",
-        "Widget Insights": "widget-insights"
+		"AI Feature Visiblity": "ai-feature-visibility"
 	},
 	"Security Configuration": {
 		"Authorization Server": "authorize-server",
@@ -585,6 +586,7 @@
 		"UI Customization":"user-interface-customization",
         "Look and Feel Settings In Embedded Analytics": "look-and-feel-settings-in-embedded-analytics",
         "Dashboard Settings": {
+		  "Default Dashboard": "default-dashboard",
           "Public Dashboards": "public-dashboards",
           "Default views": "default-views",
           "Auto-save filter": "auto-save-filter",
@@ -813,5 +815,60 @@
 		}
 	},
   "Monitoring": "monitoring",
-	"Disaster Recovery": "disaster-recovery"
+	"Disaster Recovery": "disaster-recovery",
+	"Transformation Use Cases": {
+		"Data Cleaning and Standardization": {
+			"Removing Duplicates": "removing-duplicates",
+			"Data Type Conversion": "data-type-conversion",
+			"Removing Invalida Data": "remove-invalid-data",
+			"Null Value Handling": "null-value-handling"
+		},
+		"Date and Time Adjustments":{
+			"Calculate Service Duration": "calculate-service-duration",
+			"Convert Timestamps": "convert-timestamps",
+			"Generate Time Intervals": "generate-time-intervals",
+			"Hour Of Day Segementation": "hour-of-day-segmentation"
+
+		},
+		"Categorization and Mapping": {
+			"Categorizing Ticket Types": "categorizing-ticket-types",
+			"Mapping Customer Regions": "mapping-customer-regions",
+			"Mapping Proiority Levels": "mapping-priority-levels"
+
+		},
+		"Enriching Data": {
+			"Geo Location Lookup": "geolocation-lookup",
+			"Join External Customer Data": "join-external-customer-data",
+			"Merge Historical Data": "merge-historical-data"
+
+		},
+		"Aggregation and Summarization":{
+			"Customer Satisfaction Summary":"customer-satisfaction-summary",
+			"Resolution Time Summary":"resolution-time-summary",
+			"Service Level Adherence":"service-level-adherence",
+			"Ticket Count Aggregation":"ticket-count-aggregation"
+
+		},
+		"Data Validation and Transformation Rules": {
+			"Compliance Validation": "compliance-validation",
+			"Flagging Suspicious Data": "flagging-suspicious-data",
+			"Ticket Status Validation": "ticket-status-validation"
+
+		},
+		"Data Pivoting and Reshaping": {
+			"Create Derived Columns": "create-derived-columns",
+			"Flatten Nested Data": "flatten-nested-data",
+			"Pivot Tables": "pivot-tables"
+
+		},
+		"Handling Data Anomalies": {
+			"Anomaly Flagging": "anomaly-flagging",
+			"Data Smoothing": "data-smoothing",
+			"Outlier Detection": "outlier-detection"
+		},
+		"Customer Journey Analysis": {
+			"Churn Prediction Feature": "churn-prediction-feature",
+			"Create Customer Journey Map": "create-a-customer-journey-map"
+		}
+	}
 }

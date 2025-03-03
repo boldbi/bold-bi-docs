@@ -45,7 +45,7 @@ Schedules can only be created if the user has the `Create All Schedules` permiss
 
 	![Select dashboard](/static/assets/managing-resources/images/select-dashboard.png)
 
-* Select the desired widget from the dropdown.
+* Select the desired widget from the dropdown. You can also select multiple widgets.
 
     ![Select widget](/static/assets/managing-resources/images/select-widget.png)
     

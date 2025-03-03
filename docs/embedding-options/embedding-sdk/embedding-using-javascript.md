@@ -431,6 +431,7 @@ You can embed the programmatic multi-tab dashboard using either [dashboard IDs](
     </script>
 </body>
 ```
+>**Note:** To embed the multitab dashboard using Bold BI Server version 10.1.18, it is necessary to use the corresponding CDN link: https://cdn.boldbi.com/embedded-sdk/v10.1.18/boldbi-embed.js. If you are using a Bold BI Server version lower than 10.1.18, you can use the CDN link: https://cdn.boldbi.com/embedded-sdk/v9.1.73/boldbi-embed.js.
 
 ## How to implement the authorize server with user mail or user name
 

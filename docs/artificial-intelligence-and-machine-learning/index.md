@@ -11,7 +11,7 @@ documentation: ug
 
 This section explores how Artificial Intelligence and Machine Learning are integrated into Bold BI, enhancing data analysis, visualization, and automation. Below are the key features powered by AI and Machine Learning, enabling smarter, faster insights within Bold BI.
 
-[AI Assistant](/artificial-intelligence-and-machine-learning/ai-assistant/)
+[Generative AI](/artificial-intelligence-and-machine-learning/generative-ai/)
 
 [Q&A Widget](/artificial-intelligence-and-machine-learning/qna-widget/)
 

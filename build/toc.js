@@ -9,7 +9,7 @@ var pathNames=['overview','embed-sandbox','deploying-bold-bi','application-start
 'getting-started','embedding-options',
 'working-with-data-sources','visualizing-data',
 'working-with-dashboards','artificial-intelligence-and-machine-learning','security-configuration','site-administration','managing-resources', 'resource-migration',
-'manage-webhooks', 'localization', 'white-labeling-in-bold-bi', 'multi-tenancy','responsive-layout','mobile-app','server-api-reference','utilities','monitoring','disaster-recovery'];
+'manage-webhooks', 'localization', 'white-labeling-in-bold-bi', 'multi-tenancy','responsive-layout','mobile-app','server-api-reference','utilities','monitoring','disaster-recovery', 'transformation-use-cases'];
 const isHtml = 'html';
 function generateToc() {
     let Files = glob.sync('./docs/summary.json');
