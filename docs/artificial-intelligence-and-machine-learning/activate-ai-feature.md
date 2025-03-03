@@ -7,13 +7,31 @@ platform: bold-bi
 documentation: ug
 
 ---
+# Activating AI Feature
 
-# Activate AI Feature
+## For On-Premises Users (10.1 and Later)
+
+- Starting from the 10.1 release, on-premises users can activate AI features by globally enabling the `Enable AI Agent`. If the enable AI Agent is disabled, users will not be able to configure or use any AI-related features.
+
+![AI Agent](/static/assets/artificial-intelligence-and-machine-learning/images/activate-ai-feature/enable-ai-agent.png)
+
+For detailed instructions on configuring AI, refer to the Configure AI documentation [Configure AI Feature Guide](/artificial-intelligence-and-machine-learning/configure-ai/).
+
+-  To utilize Widget Insights, Dashboard Summary, and Textual Responses, ensure that the `Enable Widget Insights and Dashboard Summary` option is enabled. Disabling this option will prevent access to these AI-powered features.
+
+![Summarization](/static/assets/artificial-intelligence-and-machine-learning/images/activate-ai-feature/enable-disable-summarize.png)
+
+>**Note**: For details on the data used for widget insights and dashboard summaries, refer to the [Data Processing Feature Guide](/artificial-intelligence-and-machine-learning/generative-ai/ai-data-processing/).
+
+## For Cloud Users and On-Premises Users (Below 10.1)
+Cloud users and on-premises users on builds below 10.1 need to manually activate AI.
+
+## Activate AI Feature
 Watch our latest video tutorial to learn how to activate the AI feature in Bold BI. Follow step-by-step instructions and helpful tips to get the most out of this powerful functionality!<br/>
 
 <iframe class="helpsite-video-section" src="https://www.youtube.com/embed/oeHEcOVd634" frameborder="0" allowfullscreen></iframe>
 
-## Steps to activate AI feature
+### Steps to activate AI feature
 
 1. Click on the AI Copilot feature icon located at the bottom right of the dashboard designer or viewer.
 

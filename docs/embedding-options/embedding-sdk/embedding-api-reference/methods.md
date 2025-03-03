@@ -170,6 +170,7 @@ This method will display the dashboard based on the dashboard options provided w
 var dashboard = BoldBI.create(options);
 dashboard.loadDashboard();   
 ```
+>**Note:** To embed the multitab dashboard using Bold BI Server version 10.1.18, it is necessary to use the corresponding CDN link: https://cdn.boldbi.com/embedded-sdk/v10.1.18/boldbi-embed.js. If you are using a Bold BI Server version lower than 10.1.18, you can use the CDN link: https://cdn.boldbi.com/embedded-sdk/v9.1.73/boldbi-embed.js.
 
 ## loadDashboardWidget()
     
@@ -224,7 +225,9 @@ var dashboard = BoldBI.create({
 }); 
 dashboard.loadMultitabDashboard();
 ```
->**Note:** To embed the multitab dashboard programmatically, either dashboardIds or dashboardPaths can be used.
+> **NOTE:**
+> 1. To embed the multitab dashboard programmatically, either dashboardIds or dashboardPaths can be used.
+> 2. To embed the multitab dashboard using Bold BI Server version 10.1.18, it is necessary to use the corresponding CDN link: https://cdn.boldbi.com/embedded-sdk/v10.1.18/boldbi-embed.js. If you are using a Bold BI Server version lower than 10.1.18, you can use the CDN link: https://cdn.boldbi.com/embedded-sdk/v9.1.73/boldbi-embed.js.
 
 To access additional details, please click on the following [Embedded multitab dashboard programmatically](/embedding-options/embedding-sdk/embedding-using-javascript/#embed-a-multitab-dashboard-programmatically).
 

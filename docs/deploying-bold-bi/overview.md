@@ -22,7 +22,7 @@ The following hardware requirements are necessary to run the Bold BI Enterprise 
 ### Software requirements
 The following software requirements are necessary to run the Bold BI Enterprise edition:
 * **Framework:** [Microsoft .NET Framework 4.5](https://www.microsoft.com/en-in/download/details.aspx?id=30653)
-* **Database:** Microsoft SQL Server 2012+ \| PostgreSQL \| MySQL
+* **Database:** Microsoft SQL Server 2012+ \| PostgreSQL \| MySQL \| Oracle
 * **Web Server:** [Internet Information Services (IIS) 7.0+](https://en.wikipedia.org/wiki/Internet_Information_Services)
 * **Web Browser:** Microsoft Edge, Mozilla Firefox, and Chrome.
 
@@ -41,7 +41,7 @@ The following hardware requirements are necessary to run the Bold BI Enterprise 
 
 ### Software requirements
 The following software requirements are necessary to run the Bold BI Enterprise edition:
-* **Database:** Microsoft SQL Server 2012+ | PostgreSQL | MySQL
+* **Database:** Microsoft SQL Server 2012+ | PostgreSQL | MySQL | Oracle
 * **Web Server:** [Nginx](https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/linux-nginx?view=aspnetcore-3.1#install-nginx)  or [Apache](https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/linux-apache?view=aspnetcore-3.1)
 * **Web Browser:** Microsoft Edge, Mozilla Firefox, and Chrome.
 

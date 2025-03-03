@@ -344,6 +344,10 @@
     "toPath": "/deploying-bold-bi/deploying-on-windows/silent-installation/#silent-installation-alone-without-providing-the-application-startup-details"
   },
   {
+    "fromPath": "/deploying-bold-bi/deploying-in-windows/silent-installation/#execute-a-silent-installation-of-Bold-BI-as-sub-application",
+    "toPath": "/deploying-bold-bi/deploying-on-windows/silent-installation/#execute-a-silent-installation-of-Bold-BI-as-sub-application"
+  },
+  {
     "fromPath": "/deploying-bold-bi/deploying-in-windows/upgrade-to-latest/#upgrading-guidelines",
     "toPath": "/deploying-bold-bi/deploying-on-windows/upgrade-to-latest/#upgrading-guidelines"
   },
@@ -2758,6 +2762,10 @@
   {
     "fromPath": "/embedded-bi/site-administration/dashboard-settings/",
     "toPath": "/site-administration/dashboard-settings/"
+  },
+  {
+    "fromPath": "/embedded-bi/site-administration/dashboard-settings/default-dashboard/",
+    "toPath": "/site-administration/dashboard-settings/default-dashboard/"
   },
   {
     "fromPath": "/embedded-bi/site-administration/dashboard-settings/public-dashboards/",
@@ -28642,6 +28650,10 @@
   {
     "fromPath": "/embedded-bi/setup/deploying-in-windows/silent-installation/#silent-installation-alone-without-providing-the-application-startup-details",
     "toPath": "/deploying-bold-bi/deploying-on-windows/silent-installation/#silent-installation-alone-without-providing-the-application-startup-details"
+  },
+  {
+    "fromPath": "/embedded-bi/setup/deploying-in-windows/silent-installation/#execute-a-silent-installation-of-Bold-BI-as-sub-application",
+    "toPath": "/deploying-bold-bi/deploying-on-windows/silent-installation/#execute-a-silent-installation-of-Bold-BI-as-sub-application"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-windows/upgrade-to-latest/#upgrading-guidelines",

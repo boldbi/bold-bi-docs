@@ -21,8 +21,10 @@ documentation: ug
 [Matomo](/working-with-data-sources/working-with-bold-data-hub/data-connectors/matomo/)<br>
 [Microsoft SQL Server](/working-with-data-sources/working-with-bold-data-hub/data-connectors/microsoft-sql-server/)<br>
 [MongoDB](/working-with-data-sources/working-with-bold-data-hub/data-connectors/mongodb/)<br>
+[MongoDBSSH](/working-with-data-sources/working-with-bold-data-hub/data-connectors/mongodbssh/)<br>
 [Mux](/working-with-data-sources/working-with-bold-data-hub/data-connectors/multiplexer/)<br>
 [MySQL](/working-with-data-sources/working-with-bold-data-hub/data-connectors/mysql/)<br>
+[MySQLSSH](/working-with-data-sources/working-with-bold-data-hub/data-connectors/mysqlssh/)<br>
 [Notion](/working-with-data-sources/working-with-bold-data-hub/data-connectors/notion/)<br>
 [Oracle](/working-with-data-sources/working-with-bold-data-hub/data-connectors/oracle/)<br>
 [Pipedrive](/working-with-data-sources/working-with-bold-data-hub/data-connectors/pipedrive/)<br>

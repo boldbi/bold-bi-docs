@@ -423,6 +423,12 @@
 "ai",
 "feature",
 "enable",
-"disable"
+"disable",
+"outlier",
+"detection",
+"geolocation",
+"lookup",
+"mongodbssh",
+"mysqlssh"
 ]
 }

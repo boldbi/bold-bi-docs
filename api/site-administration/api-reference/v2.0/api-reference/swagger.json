@@ -1855,12 +1855,12 @@
         }
       }
     },
-    "/v2.0/user/activation": {
-      "post": {
+    "/v2.0/administration/user-activation": {
+      "put": {
         "tags": [
-          "Users"
+          "Administration"
         ],
-        "summary": "Activate user",
+        "summary": "Activate the user",
         "description": "Activate the user",
         "operationId": "activate_user",
         "requestBody": {
