@@ -414,21 +414,6 @@
 "deploy",
 "Microsoft SQL Server",
 "strapi",
-"matomo",
-"assistant",
-"designer",
-"view",
-"mode",
-"activate",
-"ai",
-"feature",
-"enable",
-"disable",
-"outlier",
-"detection",
-"geolocation",
-"lookup",
-"mongodbssh",
-"mysqlssh"
+"matomo"
 ]
 }

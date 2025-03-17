@@ -130,7 +130,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/ruby-on-rails
      ```js
         <head>
             <title>Demo</title>
-            <%= javascript_include_tag "https://cdn.boldbi.com/embedded-sdk/v10.1.18/boldbi-embed.js", "data-turbolinks-track" => true  %>
+            <%= javascript_include_tag "https://cdn.boldbi.com/embedded-sdk/v7.11.24/boldbi-embed.js", "data-turbolinks-track" => true  %>
         </head>
 
         <body onload="embedSample();">

@@ -63,9 +63,5 @@
   "webhooksdescription": 
   {
     "getwebhooksdescription": "To retrieve a list of webhooks and delete a specific webhook in Bold BI, use the following corresponding endpoints." 
-  },
-  "activitydescription":
-  {
-    "getactivitydescription": "Use the following corresponding endpoints to retrieve a list of activities performed in the Bold BI."
   }
 }

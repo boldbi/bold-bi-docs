@@ -154,7 +154,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/xamarin-sampl
 
      ```
 
- 4. Please create a folder for the script and include the most recent wrapper [file](https://cdn.boldbi.com/embedded-sdk/v10.1.18/boldbi-embed.js).
+ 4. Please create a folder for the script and include the most recent wrapper [file](https://cdn.boldbi.com/embedded-sdk/v7.11.24/boldbi-embed.js).
 
  5. Please open the `MainPage.xaml.cs` file and initialize the `GetHtmlString()` method. In this method, you should declare the HTML contents along with the necessary scripts to render the dashboard.
 

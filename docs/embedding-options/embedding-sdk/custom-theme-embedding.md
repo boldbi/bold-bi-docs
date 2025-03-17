@@ -59,7 +59,7 @@ Please follow the steps to apply the custom theme to the embedded dashboard.
 
     ```js
     <head>
-        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v10.1.18/boldbi-embed.js"></script>
+        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v7.11.24/boldbi-embed.js"></script>
     </head>
      ```
 
@@ -156,8 +156,7 @@ The dashboard is rendered in the dark theme as specified in the `appearance` opt
 
      ```js
     <head>  
-        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v10.1.18/boldbi-embed.js"></script>
-        <link rel="stylesheet" href="/path/to/theme/file/darkviolet.css">
+        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v7.11.24/boldbi-embed.js"></script>
     </head>
      ```     
 

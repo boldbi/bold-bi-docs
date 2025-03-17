@@ -12,7 +12,7 @@ This section explains the process of upgrading the Bold BI Linux package to the 
 
 > **NOTE:** Upgrading to the latest version does not require a license key. However, our services will retrieve the license from the backend after the upgrade is completed.
 
-1. Download the latest Bold BI Linux package from this [link](https://www.boldbi.com/account/downloads).
+1. Register and download the latest Bold BI Linux package from this [link](/deploying-bold-bi/overview/#registration-and-download).
 
 2. Install the `pv` tool by executing the following command:
 
@@ -31,7 +31,7 @@ This section explains the process of upgrading the Bold BI Linux package to the 
 
         | Ubuntu                                               | CentOS                                               |
         |------------------------------------------------------|------------------------------------------------------|
-        | `sudo apt-get install python3-pip` <br> <br>  `sudo pip install duckdb===1.1.2 dlt===0.5.4 pymysql pyodbc pg8000 poetry pandas===2.2.2 "dlt[parquet]" "dlt[filesystem]` | `sudo yum -y install python3-pip` <br> <br> `python3.9 -m pip install duckdb===1.1.2 dlt===0.5.4 pymysql pyodbc pg8000 poetry pandas===2.2.2 "dlt[parquet]" "dlt[filesystem]"`                    |
+        | `sudo apt-get install python3-pip` <br> <br>  `sudo pip install duckdb===0.9.2 dlt===0.4.2 pymysql pyodbc pg8000 poetry pandas===2.0.0 "dlt[parquet]" "dlt[filesystem]` | `sudo yum -y install python3-pip` <br> <br> `python3.9 -m pip install duckdb===0.9.2 dlt===0.4.2 pymysql pyodbc pg8000 poetry pandas===2.0.0 "dlt[parquet]" "dlt[filesystem]"`                    |
         > Note: If ETL is already installed, there is no need to follow this step.
 4. Download the latest Bold BI Linux package by running this command:
 

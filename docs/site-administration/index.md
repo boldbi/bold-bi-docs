@@ -33,8 +33,6 @@ You can explore the Site Administration in detail here:
 
 [Email Settings](/site-administration/email-settings/)
 
-[Audit Logs](/site-administration/audit-logs/)
-
 [Account Settings](/site-administration/account-settings/)
 
 [Active Directory](/site-administration/user-directory-settings/active-directory/)
@@ -42,8 +40,6 @@ You can explore the Site Administration in detail here:
 [Azure Active Directory](/site-administration/user-directory-settings/azure-active-directory/)
 
 [Notification Settings](/site-administration/notification-settings/)
-
-[API Key](/site-administration/api-key/)
 
 [Site Credentials](/site-administration/site-credentials/)
 

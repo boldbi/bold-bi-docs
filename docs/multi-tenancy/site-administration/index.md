@@ -16,8 +16,6 @@ You can explore the Site Administration details below:
 
 [Embed Settings](/site-administration/embed-settings/)
 
-[Audit Logs](/multi-tenancy/site-administration/audit-logs/)
-
 [Email Settings](/multi-tenancy/site-administration/email-settings/)
 
 [Account Settings](/multi-tenancy/site-administration/account-settings/)

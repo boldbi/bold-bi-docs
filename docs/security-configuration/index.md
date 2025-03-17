@@ -21,8 +21,6 @@ This section explains CORS (Cross-Origin Resource Sharing) and the Allow Known D
 
 [X-Frame-Options Configuration](/security-configuration/x-frame-options/)
 
-[IP Whitelisting Configuration](/security-configuration/network-settings/)
-
 [Security in Cloud BI](/security-configuration/security-in-cloud-bi/)
 
 [Security in Embed BI](/security-configuration/security-in-embed-bi/)
