@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Export Dashboard to PDF, Image, PowerPoint & Excel | Bold BI Docs
-description: Learn how to enable settings to export a dashboard at runtime to PDF, Image, PowerPoint or Excel files in Bold BI Embedded.
+title: Exporting Dashboard to PDF, Image and Excel | Bold BI Docs
+description: Learn how to enable settings to export a dashboard at runtime to PDF, Image or Excel files in Bold BI Embedded.
 canonical: "/working-with-dashboards/preview-dashboard/dashboard-settings/"
 platform: bold-bi
 documentation: ug
@@ -133,46 +133,6 @@ The following steps explain how to customize the Page Size and Orientation in th
 
    4.	The selected Page Size options and Orientation can be seen when previewing or viewing the dashboard.
    ![enable output](/static/assets/working-with-dashboards/preview-dashboards/page-size/enableoutput.png)
-
-## Exporting dashboard to PowerPoint
-
-   Exporting the dashboard to PowerPoint can be done by clicking the `Export to PowerPoint` option in the drop-down menu at the right corner of the title section.
-   
-   ![Export to PowerPoint](/static/assets/working-with-dashboards/preview-dashboards/images/exporttopowerpoint.png)
-
-   By clicking `Export to PowerPoint`, a pop-up will be shown as follows. Set the `File Name` field with a preferred value to replace the default one.
-   
-   ![Export to PowerPoint Dialog](/static/assets/working-with-dashboards/preview-dashboards/images/exporttopowerpointdialog.png)
-   
-   ### Export all widgets on a single slide as a PowerPoint
-   
-   The `Dashboard` option is selected by default, and all the widgets in the dashboard will be exported as a single slide PowerPoint file.
-   
-   ![PowerPoint Dashboard Option](/static/assets/working-with-dashboards/preview-dashboards/images/dashboardpowerpointexport.png)
-
-   ### Export all widgets on a separate slides as PowerPoint
-
-   By choosing the `Widgets` option, the user can export each widget present in the dashboard onto individual slides in a PowerPoint presentation.
-
-   ![PowerPoint Widget option](/static/assets/working-with-dashboards/preview-dashboards/images/widgetspowerpointexport.png)
-
-   The exported PowerPoint file will look like the one below.
-
-   ![PowerPoint Exported File](/static/assets/working-with-dashboards/preview-dashboards/images/exportedpptfile.png)
-
-   ### Export the user selected widgets as PowerPoint
-
-   By choosing the `Widgets` option, the dropdown will be displayed on the right side of the popup. By clicking the dropdown, all widgets in the dashboard will be displayed (excluding Filter Widgets). Users can choose the widgets required and click on Export to export selected widgets into a PowerPoint presentation.
-
-   ![PowerPoint Specific Widgets](/static/assets/working-with-dashboards/preview-dashboards/images/specificwidgetspowerpointexport.png)
-   
-   By clicking `Export`, the data in the dashboard will be downloaded with each widget on an separate slide. 
-   
-   ![PowerPoint Export Option](/static/assets/working-with-dashboards/preview-dashboards/images/powerpointexportoption.png)
-   
-   By clicking `Reset`, the default values will be restored in the pop-up.
-
-   ![PowerPoint Reset](/static/assets/working-with-dashboards/preview-dashboards/images/powerpointexportreset.png)
 
 ## Exporting dashboard to Excel
 

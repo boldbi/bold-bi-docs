@@ -32,10 +32,10 @@ Please follow the steps below continuously, one by one, to embed the Bold BI app
     {Bold BI URL}/sso/jwt/callback?jwt={token}&site_identifier={site identifier}
     ```
 
-3.	Please implement the iframe code in your application at the location where you would like to embed the Bold BI application.
+3.	Please implement the Iframe code in your application to load the Bold BI tenant URL where you would like to embed the Bold BI application.
 
     ```c#
-    <iframe src='{Remote Login URL}'></iframe>
+    <iframe src='http://{your_domain}/bi/site/{site_identifier}'></iframe>
     ```
 4.	After completing the above steps, your application is now ready.
 
@@ -68,4 +68,4 @@ Once you have embedded the Bold BI application, some links within the applicatio
 
 1. Please refer to the document for additional information regarding [authentication](/multi-tenancy/site-administration/authentication/) settings.
 
-2. Please refer to this [Embedding Sample](https://github.com/boldbi/samples/tree/master/Scenario%20Based%20Samples/Iframe%20Full%20Server%20Embedding) link for a sample external application that can be used to embed Bold BI site.
+2. Please refer to this [Embedding Sample](https://www.syncfusion.com/downloads/support/directtrac/general/ze/EmbeddingSample211738849) link for a sample external application that can be used to embed Bold BI site.

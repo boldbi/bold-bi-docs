@@ -1155,8 +1155,7 @@ div#doc-body-cont {
   width: auto;
   padding: 0px;
   overflow: hidden;
-  width: -webkit-fill-available;
-  width: -moz-available;
+  width: -webkit-fill-available;	
 }
 
 #md-cnt a.anchor {

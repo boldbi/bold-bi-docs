@@ -72,19 +72,3 @@ Follow these steps to upgrade the Bold BI Azure App service to the latest versio
 13. Then, click **Start** in the **Overview** section to start the Bold BI Azure App service.
 
     ![Start Bold BI Azure App Service](/static/assets/installation-and-deployment/images/start-app-service.png)
-
-14. > **Breaking Changes:** This step is applicable only for upgrading Azure App Service from version 9.x to latest.
-     * In your Web app, navigate to **Settings --> Configuration --> Path Mapping**.
-       
-       ![Path mapping](/static/assets/installation-and-deployment/images/pathmapping.png)
-
-    * Click on the **New virtual application or directory** option and add the below Physical Path in **Path Mappings** and **Save** the settings.
-
-      |                  Virtual Path                        |                    Physical Path                     |
-      |------------------------------------------------------|------------------------------------------------------|
-      | /aiservice                                           | site\wwwroot\ai\aiservice                            |
-
-      ![Path mapping](/static/assets/installation-and-deployment/images/pathdetails.png)
-      ![Path mapping](/static/assets/installation-and-deployment/images/pathofservice.png)
-
-15. Refer to this guide on [Integrating Bold Data Hub with Bold BI](https://support.boldbi.com/kb/article/18581/integrating-etl-with-bold-bi-or-bold-reports-in-azure-app-service). This article provides step-by-step instructions to ensure a successful integration of Bold Data Hub with Bold BI.

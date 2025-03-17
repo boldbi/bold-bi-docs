@@ -337,7 +337,7 @@ In Code View Mode, Bold BI issues the custom SQL query as a subquery to the data
 
 ## SQL data source refresh settings
 
-The refresh settings for SQL data source is available only in extract mode. When we refresh the data source in Bold BI, the most recent data from the original source connection is retrieved and updated in the data store. Users have the flexibility to manually refresh the data or schedule it according to their requirements. By keeping the data up-to-date, users can rely on accurate and current information for their analyses and visualizations. There are two types of data source refresh available for SQL data sources:
+The refresh settings for SQL data source is available only in [extract](/working-with-data-sources/classification-of-data-sources-queried-directly-and-extracted/) mode. When we refresh the data source in Bold BI, the most recent data from the original source connection is retrieved and updated in the data store. Users have the flexibility to manually refresh the data or schedule it according to their requirements. By keeping the data up-to-date, users can rely on accurate and current information for their analyses and visualizations. There are two types of data source refresh available for SQL data sources:
 
 1. Full load
 2. Incremental update

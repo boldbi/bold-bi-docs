@@ -19,24 +19,17 @@ var dashboard = BoldBI.create({
      serverUrl: "http://localhost:51777/bi/site/site1",
      dashboardId: "755e99c7-f858-4058-958b-67577b283309",
      embedContainerId: "dashboard_container",// This should be the container id where you want to embed the dashboard
+     embedType: BoldBI.EmbedType.Component,
+     height: "800px",
+     width: "1200px",
      authorizationServer: {
      url: "http://example.come/authorize/server"
-     }    
+     },
+     expirationTime: "100000",     
 });   
 ```
 
 > **NOTE:** By default, `BoldBI.Environment.Enterprise` is used for the Environment API member. For Cloud sites, you must set the Environment member value to `BoldBI.Environment.Cloud`.
-
-## clearAllFilter()
-
-This method will clear all filters applied in the current dashboard.
-
-**Example** 
-
-```js        
-var instance = BoldBI.getInstance("container"); //container -> embed container id
-instance.clearAllFilter();
-```
 
 ## destroy()
     
@@ -79,7 +72,7 @@ instance.getWidgetData(widgetName, clientFnc, dashboardId); // widgetName ->Defi
 
 ## getWidgetInstance()
 
-This method will be used to get an instance of that specific widget using its Id. To retrieve the widget details from a specific dashboard, please refer to this [REST API](/embedding-options/embedding-sdk/embedding-using-javascript/#how-to-get-widget-id).
+This method will be used to get an instance of that specific widget using its Id. To retrieve the widget details from a specific dashboard, please refer to this [REST API](/embedding-options/embedding-sdk/embedding-a-widget/#how-to-get-widget-id).
 
 **Example**
 
@@ -97,7 +90,7 @@ This method is used to set the filter parameters for the widget instance in the 
 * Filtering without column name.
 * Filtering with one column name.
 * Filtering with more than one column name.
-To learn about the widget ID of the specific widget, please refer to this [link](/embedding-options/embedding-sdk/embedding-using-javascript/#how-to-get-widget-id).
+To learn about the widget ID of the specific widget, please refer to this [link](/embedding-options/embedding-sdk/embedding-a-widget/#how-to-get-widget-id).
 
 To filter the widgets at `initial rendering`, you need to set filter parameters with widget instance like below.
 
@@ -127,7 +120,6 @@ var widgetId = "32ed09f7-49ef-4468-9c56-ccc376dbcaaa";
 var filtersValue = ["Product=Carnarvon Tigers","Company=Hanari Carnes" ]; 
 var widgetInstance = instance.getWidgetInstance(widgetId).setFilterParameters(filtersValue);
 ```
-> **Note:** To remove the specific widget instance, please check the [removeWidgetInstance](https://help.boldbi.com/embedding-options/embedding-sdk/embedding-api-reference/methods/#removewidgetinstance) method.
 
 ## hidePopup()
     
@@ -170,7 +162,6 @@ This method will display the dashboard based on the dashboard options provided w
 var dashboard = BoldBI.create(options);
 dashboard.loadDashboard();   
 ```
->**Note:** To embed the multitab dashboard using Bold BI Server version 10.1.18, it is necessary to use the corresponding CDN link: https://cdn.boldbi.com/embedded-sdk/v10.1.18/boldbi-embed.js. If you are using a Bold BI Server version lower than 10.1.18, you can use the CDN link: https://cdn.boldbi.com/embedded-sdk/v9.1.73/boldbi-embed.js.
 
 ## loadDashboardWidget()
     
@@ -225,11 +216,9 @@ var dashboard = BoldBI.create({
 }); 
 dashboard.loadMultitabDashboard();
 ```
-> **NOTE:**
-> 1. To embed the multitab dashboard programmatically, either dashboardIds or dashboardPaths can be used.
-> 2. To embed the multitab dashboard using Bold BI Server version 10.1.18, it is necessary to use the corresponding CDN link: https://cdn.boldbi.com/embedded-sdk/v10.1.18/boldbi-embed.js. If you are using a Bold BI Server version lower than 10.1.18, you can use the CDN link: https://cdn.boldbi.com/embedded-sdk/v9.1.73/boldbi-embed.js.
+>**Note:** To embed the multitab dashboard programmatically, either dashboardIds or dashboardPaths can be used.
 
-To access additional details, please click on the following [Embedded multitab dashboard programmatically](/embedding-options/embedding-sdk/embedding-using-javascript/#embed-a-multitab-dashboard-programmatically).
+To access additional details, please click on the following [Embedded multitab dashboard programmatically](/embedding-options/embedding-sdk/embedding-multitab-dashboard-programmatically/).
 
 ## loadMultipleWidgets()
 
@@ -238,20 +227,18 @@ This method will load multiple widgets of the current dashboard with a single in
 **Example** 
    
 ```js
-<div id="dashboard"></div>
-<div id="widget1" style="height:500px;width:500px"></div> 
-<div id="widget2" style="height:500px;width:500px"></div> 
-<div id="widget3" style="height:500px;width:500px"></div>     
+<div id="widget1"></div> 
+<div id="widget2"></div> 
+<div id="widget3"></div>     
 var dashboard = BoldBI.create({
    dashboardId: "5cb065f7-dabb-4b0c-9b45-c60a5730e963",
-   embedContainerId: "dashboard",
    widgetList: [{widgetName: "Medal details by Country", containerId: "widget1" },
    {widgetName: "Total Medals by Country", containerId: "widget2" },
    {widgetName: "Country", containerId: "widget3" }],
   });
 dashboard.loadMultipleWidgets();
 ```
->**Note:** To embed the necessary widgets, the client application should create a container where the widgets will be displayed. Height and Width must be added within the widget container. We have enhanced the performance of loading multiple widgets in the javascript embedding. Please note that support will work and take effect if the embed SDK Wrapper and Bold BI Server are on the same version effectively from v8.1.41
+>**Note:** To embed the necessary widgets, the client application should create a container where the widgets will be displayed.
 
 ## loadView()
     
@@ -274,7 +261,7 @@ var dashboard = BoldBI.create({
 dashboard.loadView();
 ```
 
-For more details, please click on the following [Embedded the dashboard with views](/embedding-options/embedding-sdk/embedding-using-javascript/#embed-the-dashboard-with-view-in-your-application).
+For more details, please click on the following [Embedded the dashboard with views](/embedding-options/embedding-sdk/embedding-the-dashboard-with-views/).
 
 ## refreshDashboard()
     
@@ -296,17 +283,6 @@ This method will refresh the specific widgets within the current dashboard.
 ```js
 var instance = BoldBI.getInstance("container"); //container -> embed container id
 instance.refreshWidgetData(widgetNames, hideLoader, dashboardId); // widgetnames ->Define the name of the widget to be Refresh , hideLoader -> Define whether to show or hide loading indicator while processing , dashboardId -> Define the unique id of the dashboard if it is present within the multitab dashboard.
-```
-
-## removeWidgetInstance()
-
-This method will remove the existing widget instance from the embedded widget. If you are using the `getWidgetInstance` method along with `setFilterParameters`, and you subsequently want to destroy the instance, you can use this method.
-
-**Example**
-
-```js
-var instance = BoldBI.getInstance("container"); //container -> embed container id
-instance.removeWidgetInstance(widgetId); // widgetId ->Define the unique id of the widget.
 ```
 
 ## resizeDashboard()
@@ -1229,7 +1205,7 @@ instance.exportDashboardAsImage(exportInformation);
 </tr>
 <tr>
 <td><code>showAppliedFilters</code></td>
-<td>Define whether you need to export the dashboard with or without a filter information, and it is an optional parameter of Boolean type.</td>
+<td>Define whether you need to export the dashboard with or without a filter, and it is an optional parameter of Boolean type.</td>
 </tr>
 </table>
 
@@ -1273,7 +1249,7 @@ instance.exportDashboardAsPdf(exportInformation);
 
 <tr>
 <td><code>showAppliedFilters</code></td>
-<td>Define whether you need to export the dashboard with or without a filter information, and it is an optional parameter of Boolean type.</td>
+<td>Define whether you need to export the dashboard with or without a filter, and it is an optional parameter of Boolean type.</td>
 </tr>
 </table>
 
@@ -1383,7 +1359,7 @@ instance.exportWidgetAsImage(exportInformation);
 </tr>
 <tr>
 <td><code>showAppliedFilters</code></td>
-<td>Define whether you need to export the dashboard with or without a filter information, and it is an optional parameter of Boolean type.</td>
+<td>Define whether you need to export the dashboard with or without a filter, and it is an optional parameter of Boolean type.</td>
 </tr>
 </table>
 
@@ -1426,7 +1402,7 @@ instance.exportWidgetAsPdf(exportInformation);
 </tr>
 <tr>
 <td><code>showAppliedFilters</code></td>
-<td>Define whether you need to export the dashboard with or without a filter information, and it is an optional parameter of Boolean type.</td>
+<td>Define whether you need to export the dashboard with or without a filter, and it is an optional parameter of Boolean type.</td>
 </tr>
 </table>
 

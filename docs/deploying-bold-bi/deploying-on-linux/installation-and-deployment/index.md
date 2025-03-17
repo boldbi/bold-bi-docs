@@ -20,8 +20,6 @@ Bold BI Linux is compatible with Ubuntu, CentOS, Oracle, and RedHat operating sy
 
 [Bold BI on Oracle](/deploying-bold-bi/deploying-on-linux/installation-and-deployment/bold-bi-on-oracle/)
 
-[Bold BI on SUSE-15](/deploying-bold-bi/deploying-on-linux/installation-and-deployment/bold-bi-on-open/)
-
 [Auto Deployment](/deploying-bold-bi/deploying-on-linux/installation-and-deployment/auto-deployment/)
 
 [Bold BI over Bold Reports](/deploying-bold-bi/deploying-on-linux/installation-and-deployment/bold-bi-over-bold-reports/)

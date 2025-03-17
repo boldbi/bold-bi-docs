@@ -10,7 +10,7 @@ documentation: ug
 
 An attacker may attempt to deliver malicious scripts and inject unwanted data into your site using cross-site scripting (XSS) and data injection attacks. The browser will execute all sources from any origin without restriction, as it does not know whether the source is trusted or not. The malicious script can then access any cookies, session tokens, or other sensitive information stored by the browser. Therefore, to protect your site from this type of attack, the Content Security Policy includes a standardized set of directives that guide the browser on which content sources are allowed and which should be restricted.
 
-## How it works?
+## How its work?
 
 The Content Security Policy uses the `Content-Security-Policy` response header to restrict resource loading from unknown domains and allows resources only from the configured list of domains for each source. To restrict the execution of malicious resources, including style, script, font, image, connect, and frame sources, from other domains on your site, configure the Content Security Policy with the specific directive in Bold BI.
 

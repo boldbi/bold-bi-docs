@@ -1785,18 +1785,6 @@
             "schema": {
               "type": "boolean"
             }
-          },
-          {
-            "type": "integer",
-            "name": "createdBy",
-            "in": "query",
-            "required": false,
-            "description": "<br />\nSpecifies the User ID to filter the dashboards based on the user who created them.<br />",
-            "x-nullable": true,
-            "schema": {
-                "type": "integer",
-                "format": "int32"
-            }
           }
         ],
         "responses": {
@@ -3590,18 +3578,6 @@
             "in": "query",
             "description": "`\"/\"` + `\"Category name\"`",
             "x-nullable": true
-          },
-          {
-            "type": "integer",
-            "name": "createdBy",
-            "in": "query",
-            "required": false,
-            "description": "<br />\nSpecifies the User ID to filter the items based on the user who created them.<br />",
-            "x-nullable": true,
-            "schema": {
-                "type": "integer",
-                "format": "int32"
-            }
           }
         ],
         "responses": {
@@ -5682,7 +5658,7 @@
           "Settings"
         ],
         "summary": "Get Dashboard Settings",
-        "description": "Users who have admin rights permissions to dashboard settings can update the dashboard settings.\n\n<B> **Note:** </B> Cannot set true or enable performance metrics/query metrics, when usage analytics is disabled.",
+        "description": "Retrieve the dashboard settings details of the specific site if the user has admin rights for the dashboard settings.",
         "operationId": "Administration_GetDashboardSettings",
         "responses": {
           "200": {
@@ -6405,77 +6381,6 @@
         }
       }
     },
-    "/v5.0/settings/security/networking/ip-whitelist": {
-      "get": {
-          "tags": [
-              "Settings"
-          ],
-          "summary": "Get IP whitelisting Settings",
-          "description": "Retrieve the IP whitelisting setting details.",
-          "operationId": "Administartion_GetIPWhitelistingSettings",
-          "responses": {
-              "200": {
-                  "description": "IP whitelisting settings details have been retrieved successfully.",
-                  "schema": {
-                      "$ref": "#/definitions/ApiIPWhitelistingSettings"
-                  }
-              },
-              "401": {
-                  "description": "Access denied",
-                  "content": {}
-              },
-              "405":{
-                  "description": "Request type was not get",
-                  "content": {}
-              }
-          }
-      },
-      "post": {
-          "tags": [
-              "Settings"
-          ],
-          "summary": "Update IP whitelisting settings",
-          "description": "Users who have admin rights permissions for IP whitelisting settings can update the IP whitelisting settings.",
-          "operationId": "Administartion_UpdateIPWhitelistingSettings",
-
-            "parameters": [
-              {
-                "name": "IPWhitelistingSettings",
-                "in": "body",
-                "required": true,
-                "description": "The updated IP whitelisting settings that have been passed will be updated with the details.",            
-                "schema": {
-                  "$ref": "#/definitions/IPWhitelistingResponse"
-                },
-                "x-nullable": false
-              }
-            ],
-            "responses": {
-              "200": {
-                "description": "IP whitelisting settings details has been updated successfully.",
-                "schema": {
-                  "$ref": "#/definitions/ApiResponse"
-                }
-              },
-              "401": {
-                  "description": "Access denied",
-                  "content": {}
-              },
-              "405":{
-                  "description":"Request type was not post",
-                  "content": {}
-              },
-              "404":{
-                  "description":"Content of the request is empty or missing",
-                  "content": {}
-              },
-              "417":{
-                  "description":"Failed to update IP whitelisting setting",
-                   "content": {}
-              }
-          }
-      }
-  },
     "/v5.0/settings/security/csp": {
       "get": {
         "tags": [
@@ -6943,7 +6848,7 @@
     "/v5.0/activity-logs":{
       "get":{
         "tags":[
-          "Activity Logs"
+          "Audit Logs"
         ],
         "summary": "All Activity Logs",
         "description": "With this endpoint, the site administrator can retrieve a list of all activities performed on the site.",
@@ -7000,7 +6905,7 @@
     "/v5.0/activity-logs?activitymodule=group":{
       "get":{
           "tags":[
-              "Activity Logs"
+              "Audit Logs"
           ],
           "summary": "Group Activity Logs",
           "description": "With this endpoint, the site administrator can retrieve the list of activities performed in the group module.",
@@ -7068,7 +6973,7 @@
   "/v5.0/activity-logs?activitymodule=grouppermission":{
       "get":{
           "tags":[
-              "Activity Logs"
+              "Audit Logs"
           ],
           "summary": "Group Permission Activity Logs",
           "description": "With this endpoint, the site administrator can retrieve the list of activities performed in the group permission module.",
@@ -7136,7 +7041,7 @@
   "/v5.0/activity-logs?activitymodule=user":{
       "get":{
           "tags":[
-              "Activity Logs"
+              "Audit Logs"
           ],
           "summary": "User Activity Logs",
           "description": "With this endpoint, the site administrator can retrieve the list of activities performed in the user module.",
@@ -7204,7 +7109,7 @@
   "/v5.0/activity-logs?activitymodule=userpermission":{
       "get":{
           "tags":[
-              "Activity Logs"
+              "Audit Logs"
           ],
           "summary": "User Permission Activity Logs",
           "description": "With this endpoint, the site administrator can retrieve the list of activities performed in the user permission module.",
@@ -7272,7 +7177,7 @@
   "/v5.0/activity-logs?activitymodule=comment":{
     "get":{
         "tags":[
-            "Activity Logs"
+            "Audit Logs"
         ],
         "summary": "Comment Activity Logs",
         "description": "With this endpoint, the site administrator can retrieve the list of activities performed in the dashboard comment module.",
@@ -7339,7 +7244,7 @@
   "/v5.0/activity-logs?activitymodule=schedule":{
     "get":{
         "tags":[
-            "Activity Logs"
+            "Audit Logs"
         ],
         "summary": "Schedule Activity Logs",
         "description": "With this endpoint, the site administrator can retrieve the list of activities performed in the schedule module.",
@@ -7407,7 +7312,7 @@
   "/v5.0/activity-logs?activitymodule=system":{
       "get":{
           "tags":[
-              "Activity Logs"
+              "Audit Logs"
           ],
           "summary": "System Activity Logs",
           "description": "With this endpoint, the site administrator can retrieve the list of activities performed in the system settings module.",
@@ -7475,7 +7380,7 @@
   "/v5.0/activity-logs?activitymodule=item":{
       "get":{
           "tags":[
-              "Activity Logs"
+              "Audit Logs"
           ],
           "summary": "Item Activity Logs",
           "description": "With this endpoint, the site administrator can retrieve the list of activities performed in the item module.",
@@ -7617,129 +7522,6 @@
               "description": "Failed to delete webhook."
           }
       }
-    }
-   },
-   "/v5.0/settings/user-activity-logs":{
-    "get": {
-      "tags": [
-          "Audit Logs"
-        ],
-        "summary": "Get Audit Logs",
-        "description": "This endpoint allows site administrators to retrieve a list of audit logs. Administrators can filter logs based on various parameters such as event category, event type, user email, tenant ID, app source, and date range. This helps in tracking user and administrative activities for security, compliance, and troubleshooting purposes.",
-        "operationId": "ActivityLogs_GetAllActivityLogs",
-        "parameters": [
-          {
-            "type": "string",
-            "name": "eventCategory",
-            "in": "query",
-            "required": false,
-            "description": "Specify the category of the event. Allowed values are <code>User, Permission, Settings</code>.",
-            "schema": {
-                "type": "string",
-                "nullable": false
-            }
-        },
-        {
-            "type": "string",
-            "name": "eventType",
-            "in": "query",
-            "required": false,
-            "description": "Specify the type of the event. Allowed values are <code>Added, Updated, Deleted</code>.",
-            "schema": {
-                "type": "string",
-                "nullable": false
-            }
-        },
-        {
-            "type": "string",
-            "name": "initiatedUserEmail",
-            "in": "query",
-            "required": false,
-            "description": "Specify the email address of the user who initiated the event.",
-            "schema": {
-                "type": "string",
-                "nullable": false
-            }
-        },
-        {
-            "type": "string",
-            "name": "targetUserEmail",
-            "in": "query",
-            "required": false,
-            "description": "Specify the email address of the user who was targeted by the event.",
-            "schema": {
-                "type": "string",
-                "nullable": false
-            }
-        },
-        {
-            "type": "string",
-            "name": "tenantId",
-            "in": "query",
-            "required": false,
-            "description": "Specify the Tenant ID.",
-            "schema": {
-                "type": "string",
-                "nullable": false
-            }
-        },
-        {
-            "type": "string",
-            "name": "appSource",
-            "in": "query",
-            "required": false,
-            "description": "Specify the source application of the event. Allowed values are <code>BI, UMS</code>.",
-            "schema": {
-                "type": "string",
-                "nullable": false
-            }
-        },
-        {
-            "type": "string",
-            "name": "eventStartDate",
-            "in": "query",
-            "required": false,
-            "description": "Specify the UTC start date to filter logs within a specific date range. The format should be ISO 8601: `yyyy-MM-ddTHH:mm:ssZ`.",
-            "format": "date-time",
-            "schema": {
-                "type": "string",
-                "nullable": false
-            }
-        },
-        {
-            "type": "string",
-            "name": "eventEndDate",
-            "in": "query",
-            "required": false,
-            "description": "Specify the UTC end date to filter logs within a specific date range. The format should be ISO 8601: `yyyy-MM-ddTHH:mm:ssZ`.",
-            "format": "date-time",
-            "schema": {
-                "type": "string",
-                "nullable": false
-            }
-        }
-        ],
-        "responses":{
-            "200":{
-                "x-nullable": true,
-                "description": "The list of activity logs was retrieved successfully.",
-                "schema":{
-                    "$ref": "#/definitions/ApiGetAuditlogsPaginatedResponse"
-                 }
-            },
-            "204":{
-              "description": "Log is empty"
-            },
-            "400": {
-              "description": "Invalid log module"
-            },
-            "401":{
-              "description":"Access denied"
-            },
-            "405": {
-              "description": "Request type was not GET."
-            }
-        }
     }
    }
   },
@@ -7895,50 +7677,6 @@
         }
       }
     },
-    "IPWhitelistingResponse": {
-      "required": [
-        "IsEnabled",
-        "IPWhitelistingRules"
-      ],
-      "type": "object",
-      "properties": {
-          "IsEnabled": {
-              "type": "boolean",
-              "description": "Specify true to enable the IP whitelisting settings."
-          },
-          "IPWhitelistingRules":{
-              "type": "array",
-              "description": "Specified IP whitelisting rules allows access to the application.",
-              "items":
-                {
-                  "$ref": "#/definitions/IPWhitelistingRulesResponse"
-                }
-          }
-      }
-  },
-
-  "IPWhitelistingRulesResponse":{
-    "required": [
-      "RuleName",
-      "IPAddress",
-      "IPAddressType"
-      ],
-      "type":"object",
-      "properties":{
-          "RuleName":{
-              "type": "string",
-              "description": "Specify rule name."
-          },
-          "IPAddress":{
-              "type": "string",
-              "description": "Specify IP address value."
-          },
-          "IPAddressType":{
-              "type": "string",
-              "description": "Specify IP address type."
-          }
-      }
-  },
     "ApiAzureGroupImportResponse": {
       "type": "object",
       "description": "List of groups",
@@ -8943,7 +8681,7 @@
               "type" : "boolean",
               "description" : "Specify true to update the dashboard as public."
           },
-          "IsUnlisted": {
+          "Unlisted": {
               "type": "boolean",
               "description" : "Specify true to update the dashboard as unlisted."
           }
@@ -9791,11 +9529,6 @@
         "Description": {
           "type": "string",
           "description": "Category description."
-        },
-        "ParentId": {
-          "type": "string",
-          "description": "Parent category's Id.",
-          "format": "guid"
         }
       }
     },
@@ -10262,11 +9995,6 @@
           "description": "Specifies the Widget ID to schedule that specific dashboard widget.",
           "format": "guid"
         },
-        "Parameter":
-        {
-          "type":"string",
-          "description": "Specifies the parameter."
-        },
         "ExportType": {
           "type": "string",
           "description": "Specifies the export type to schedule the dashboard. Valid values: `Excel` `Image` `Pdf`."
@@ -10382,161 +10110,6 @@
               "$ref": "#/definitions/ApiYearlySchedule"
             }
           ]
-        },
-        "EnableDataAlert": {
-          "type": "boolean",
-          "description": "Returns true, if schedule data alert is enabled."
-        },
-        "DashboardId": {
-          "type": "string",
-          "description": "ID of the dashboard (Required if data alert is enabled).",
-          "format": "guid"
-        },
-        "DataSourceName": {
-          "type": "string",
-          "description": "Name of the data source (Required if data alert is enabled)."
-        },
-        "WidgetName": {
-          "type": "string",
-          "description": "Name of the widget (Required if data alert is enabled)."
-        },
-        "ConditionCategory": {
-          "type": "string",
-          "description": "Specifies the type of data alert trigger to export the dashboard.<br />Values allowed are <code>Value Changes, Increases, Continuously Increases, Decreases, Continuously Decreases</code> (Required if data alert is enabled)"
-        },
-        "ConditionalResult": {
-          "type": "object",
-          "description": "Specifies the result of the filter condition (Required if data alert is enabled).",
-          "required": [
-            "ConditionalInformations"
-          ],
-          "properties": {
-            "ConditionalInformations": {
-              "type": "object",
-              "description": "Specifies the details of the filter condition.",
-              "allOf": [
-	              {
-	                "$ref": "#/definitions/ConditionalInfoColleciton"
-	              }
-              ]
-            }
-          }
-        }
-      }
-    },
-    "ConditionalInfoColleciton": {
-      "required": [
-        "ConditionJoinType",
-        "RelationalOperators",
-        "FilterName",
-        "LeftOperand"
-      ],
-      "properties": {
-        "ConditionJoinType": {
-          "type": "string",
-          "description": "Specifies the type of join for the column filter. Determines how multiple filter conditions should be combined.<br />Values allowed are <code>AND, OR, AND NOT, OR NOT</code>"
-        },
-        "RelationalOperators": {
-          "type": "string",
-          "description": "Specifies the type of relational operator to use for filtering values in a column.<br />Values allowed are <code>GREATERTHAN, GREATERTHANOREQUALS, LESSTHAN, LESSTHANOREQUALS, EQUALS, NOTEQUALS</code>"
-        },
-        "IsCustomValue": {
-          "type": "boolean",
-          "description": "Returns true, if custom filter is enabled."
-        },
-        "CustomValue": {
-          "type": "string",
-          "format": "int32",
-          "description": "Specifies the custom value.\n\n**Note:** If IsCustomValue is set to true, a custom value must be provided."
-        },
-        "FilterId": {
-          "type": "string",
-          "description": "Specifies the filter Id.",
-          "format": "guid"
-        },
-        "FilterName": {
-          "type": "string",
-          "description": "Specifies the filter name.\n\n**Note:** The syntax for the filter name is in the format Filter(count); for example, Filter1. You can increase the prefix count to add more filters."
-        },
-        "LeftOperand": {
-          "type": "object",
-          "description": "Specifies the details of the column to be used for the left-hand side of a filter condition.",
-          "properties": {
-            "ColumnName": {
-              "type": "string",
-              "description": "Specifies the column name."
-            }
-          }
-        },
-        "RightOperand": {
-          "type": "object",
-          "description": "Specifies the details of the column to be used for the right-hand side of a filter condition.\n\n**Note:** If IsCustomValue is set to false, then RightOperand is required.",
-          "properties": {
-            "ColumnName": {
-              "type": "string",
-              "description": "Specifies the column name."
-            }
-          }
-        },
-        "Filters": {
-          "type": "array",
-          "description": "Specifies a filter to be applied to a specific column.",
-          "items": {
-            "$ref": "#/definitions/GlobalFilters"
-          }
-        }
-      }
-    },
-    "GlobalFilters": {
-      "required": [
-          "JoinType",
-          "Field",
-          "Condition"
-      ],
-      "properties": {
-        "JoinType": {
-          "type": "string",
-          "description": "Specifies the type of join for the column filter. Determines how multiple filter conditions should be combined.<br />Values allowed are <code>AND, OR</code>"
-        },
-        "Field": {
-          "type": "object",
-          "description": "Specifies the structure and details of the columns used for filtering data.",
-          "required": [
-            "ColumnName"
-          ],
-          "properties": {
-            "ColumnName": {
-              "type": "string",
-              "description": "Specifies the column name."
-            }
-          }
-        },
-        "Condition": {
-          "type": "object",
-          "description": "Specifies the details of the where condition used to filter data.",
-          "required": [
-            "ConditionType",
-            "Conditions",
-            "Values"
-          ],
-          "properties": {
-            "ConditionType": {
-              "type": "string",
-              "description": "Specifies the type of condition being specified.<br />Values allowed are <code>ACTUAL, CUSTOM</code>"
-            },
-            "Conditions": {
-              "type": "string",
-              "description": "Specifies the condition to be applied on the column.<br />Values allowed are <code>CONTAINS, START WITH, ENDS WITH, NOT CONTAINS, INCLUDES, EXCLUDES</code>"
-            },
-            "Values": {
-              "type": "array",
-              "description": "Specifies the column values.",
-              "items": {
-                  "type": "string",
-                  "format": "string"
-              }
-            }
-          }
         }
       }
     },
@@ -10892,10 +10465,6 @@
           "description": "Specifies the Widget ID to schedule that specific dashboard widget.",
           "format": "guid"
         },
-        "Parameter": {
-          "type": "string",
-          "description": "Specifies the parameter."
-        },
         "ExportType": {
           "type": "string",
           "description": "Specifies the export type to schedule the report. Valid values: `Excel` `Image` `Pdf`."
@@ -11037,45 +10606,6 @@
               "$ref": "#/definitions/ApiYearlySchedule"
             }
           ]
-        },
-        "EnableDataAlert": {
-          "type": "boolean",
-          "description": "Returns true, if schedule data alert is enabled."
-        },
-        "DashboardId": {
-          "type": "string",
-          "description": "ID of the dashboard (Required if data alert is enabled).",
-          "format": "guid"
-        },
-        "DataSourceName": {
-          "type": "string",
-          "description": "Name of the data source (Required if data alert is enabled)."
-        },
-        "WidgetName": {
-          "type": "string",
-          "description": "Name of the widget (Required if data alert is enabled)."
-        },
-        "ConditionCategory": {
-          "type": "string",
-          "description": "Specifies the type of data alert trigger to export the dashboard.<br />Values allowed are <code>Value Changes, Increases, Continuously Increases, Decreases, Continuously Decreases</code> (Required if data alert is enabled)"
-        },
-        "ConditionalResult": {
-          "type": "object",
-          "description": "Specifies the result of the filter condition (Required if data alert is enabled).",
-          "required": [
-            "ConditionalInformations"
-          ],
-          "properties": {
-            "ConditionalInformations": {
-              "type": "object",
-              "description": "Specifies the details of the filter condition.",
-              "allOf": [
-	              {
-	                "$ref": "#/definitions/ConditionalInfoColleciton"
-	              }
-              ]
-            }
-          }
         }
       }
     },
@@ -11369,10 +10899,6 @@
         "ScheduleExportLocation": {
           "description": "Schedule export location information.",
           "$ref": "#/definitions/ScheduleExportLocationResponse"
-        },
-        "Parameter": {
-          "type": "string",
-          "description": "Specifies the parameter value."
         }
       }
     },
@@ -11865,11 +11391,11 @@
       "properties": {
         "Key": {
           "type": "string",
-          "description": "Site settings name. Valid keys: `OrganizationName` `SiteUrl` `LoginScreenLogo` `EmailLogo` `HeaderLogo` `FooterLogo` `FavIcon` `AILogo` \n\n `ShowCopyrightInformation` `ShowPoweredBySyncfusion` `CopyrightInformation` `Use24HourFormat` `DisableUserPreference` `ApplicationLanguage` `DataLanguage` `DateFormat` `TimeZone`."
+          "description": "Site settings name. Valid keys: `OrganizationName` `SiteUrl` `LoginScreenLogo` `EmailLogo` `HeaderLogo` `FooterLogo` `FavIcon` \n\n `ShowCopyrightInformation` `ShowPoweredBySyncfusion` `CopyrightInformation` `Use24HourFormat` `DisableUserPreference` `ApplicationLanguage` `DataLanguage` `DateFormat` `TimeZone`."
         },
         "Value": {
           "type": "string",
-          "description": "Site settings value.\n\n Valid values: `OrganizationName` `SiteUrl` `TimeZone` `CopyrightInformation` are in `string` \n\n `LoginScreenLogo` `EmailLogo` `HeaderLogo` `FooterLogo` `FavIcon` `AILogo` are in `Base64EncodedString` \n\n `ShowCopyrightInformation` `ShowPoweredBySyncfusion` `Use24HourFormat` `DisableUserPreference` are in `true` or `false` \n\n `DateFormat` is in `MM/dd/yyyy` `dd/MM/yyyy` `d MMM, yyyy` `MMM d, yyyy` \n\n `ApplicationLanguage` `DataLanguage` has language code in the following [link](https://learn.microsoft.com/en-us/openspecs/office_standards/ms-oe376/6c085406-a698-4e12-9d4d-c3b0ee3dbc4a)\n\n `TimeZone` has Timezone value from the following [link](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/default-time-zones?view=windows-11#time-zones)."
+          "description": "Site settings value.\n\n Valid values: `OrganizationName` `SiteUrl` `TimeZone` `CopyrightInformation` are in `string` \n\n `LoginScreenLogo` `EmailLogo` `HeaderLogo` `FooterLogo` `FavIcon` are in `Base64EncodedString` \n\n `ShowCopyrightInformation` `ShowPoweredBySyncfusion` `Use24HourFormat` `DisableUserPreference` are in `true` or `false` \n\n `DateFormat` is in `MM/dd/yyyy` `dd/MM/yyyy` `d MMM, yyyy` `MMM d, yyyy` \n\n `ApplicationLanguage` `DataLanguage` has language code in the following [link](https://learn.microsoft.com/en-us/openspecs/office_standards/ms-oe376/6c085406-a698-4e12-9d4d-c3b0ee3dbc4a)\n\n `TimeZone` has Timezone value from the following [link](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/default-time-zones?view=windows-11#time-zones)."
         },
         "FileFormat": {
           "type": "string",
@@ -11886,11 +11412,11 @@
       "properties": {
         "Key": {
           "type": "string",
-          "description": "Site settings name. Valid keys: `OrganizationName` `SiteUrl` `LoginScreenLogo` `EmailLogo`  `HeaderLogo` `FooterLogo` `FavIcon` `AILogo` \n\n `ShowCopyrightInformation` `ShowPoweredBySyncfusion` `CopyrightInformation` `Use24HourFormat` `DisableUserPreference` `ApplicationLanguage` `DataLanguage` `DateFormat` `TimeZone`."
+          "description": "Site settings name. Valid keys: `OrganizationName` `SiteUrl` `LoginScreenLogo` `EmailLogo`  `HeaderLogo` `FooterLogo` `FavIcon` \n\n `ShowCopyrightInformation` `ShowPoweredBySyncfusion` `CopyrightInformation` `Use24HourFormat` `DisableUserPreference` `ApplicationLanguage` `DataLanguage` `DateFormat` `TimeZone`."
         },
         "Value": {
           "type": "string",
-          "description": "Site settings value.\n\n Valid values: `OrganizationName` `SiteUrl` `TimeZone` `CopyrightInformation` should be `string` \n\n `LoginScreenLogo` `EmailLogo` `HeaderLogo` `FooterLogo` `FavIcon` `AILogo` should be `Base64EncodedString` \n\n `ShowCopyrightInformation` `ShowPoweredBySyncfusion` `Use24HourFormat` `DisableUserPreference` should be `true` or `false` \n\n `DateFormat` should be `MM/dd/yyyy` `dd/MM/yyyy` `d MMM, yyyy` `MMM d, yyyy` \n\n `ApplicationLanguage` `DataLanguage` should be any language code in the following [link](https://learn.microsoft.com/en-us/openspecs/office_standards/ms-oe376/6c085406-a698-4e12-9d4d-c3b0ee3dbc4a) \n\n `TimeZone` should be any Timezone from the following [link](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/default-time-zones?view=windows-11#time-zones)."
+          "description": "Site settings value.\n\n Valid values: `OrganizationName` `SiteUrl` `TimeZone` `CopyrightInformation` should be `string` \n\n `LoginScreenLogo` `EmailLogo` `HeaderLogo` `FooterLogo` `FavIcon` should be `Base64EncodedString` \n\n `ShowCopyrightInformation` `ShowPoweredBySyncfusion` `Use24HourFormat` `DisableUserPreference` should be `true` or `false` \n\n `DateFormat` should be `MM/dd/yyyy` `dd/MM/yyyy` `d MMM, yyyy` `MMM d, yyyy` \n\n `ApplicationLanguage` `DataLanguage` should be any language code in the following [link](https://learn.microsoft.com/en-us/openspecs/office_standards/ms-oe376/6c085406-a698-4e12-9d4d-c3b0ee3dbc4a) \n\n `TimeZone` should be any Timezone from the following [link](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/default-time-zones?view=windows-11#time-zones)."
         },
         "FileFormat": {
           "type": "string",
@@ -11941,14 +11467,6 @@
         "UsageAnaylticsEnabled": {
           "type": "boolean",
           "description": "Returns true, if the usage analytics dashboard setting is enabled."
-        },
-        "PerformanceMetricsEnabled": {
-          "type": "boolean",
-          "description": "Returns true, if the performance metrics dashboard setting is enabled."
-        },
-        "QueryMetricsEnabled": {
-          "type": "boolean",
-          "description": "Returns true, if the query metrics dashboard setting is enabled."
         }
       }
     },
@@ -11979,14 +11497,6 @@
           "type": "boolean",
           "description": "Specify true to enable usage analytics dashboard setting.",
           "nullable": true
-        },
-        "PerformanceMetricsEnabled": {
-          "type": "boolean",
-          "description": "specify true to enable performance metrics dashboard setting."
-        },
-        "QueryMetricsEnabled": {
-          "type": "boolean",
-          "description": "specify true to enable query metrics dashboard setting."
         }
       }
     },
@@ -13051,7 +12561,7 @@
     "ApiUpdateDashboardUnlist": {
       "type" : "object",
       "properties": {
-          "IsUnlisted": {
+          "Unlisted": {
               "type": "boolean",
               "description" : "Specify true to update the dashboard as unlisted."  
           }
@@ -13261,27 +12771,6 @@
               "type": "boolean",
               "description": "Specify true to enable X-Frame-Options settings."
            }
-        }
-    },
-      "ApiIPWhitelistingSettings":{
-        "type": "object",
-        "properties":{
-            "ApiStatus": {
-                "type": "boolean",
-                "description": "Returns the status of the API."
-            },
-            "Data": {
-                "type": "array",
-                "description": "Returns data from the API.",
-                "items":
-                  {
-                    "$ref": "#/definitions/IPWhitelistingResponse"
-                  }
-            },
-            "StatusMessage": {
-                "type": "string",
-                "description": "Returns the status message from the API."
-            }
         }
     },
     "ApiCSPSecuritySettings": {
@@ -15240,171 +14729,6 @@
             "type": "boolean",
             "description": "Returns true, if the data source column is visible."
         }
-      }
-    },
-    "ApiGetAuditlogsPaginatedResponse": {
-      "type": "object",
-      "properties": {
-          "Data":{
-              "type": "array",
-              "description" : "Returns data from the API.",
-              "items":{
-                  "$ref": "#/definitions/ApiGetAuditLog"
-              }
-          },
-          "TotalResults": {
-              "type": "integer",
-              "description": "Returns items count of the API request.",
-              "format": "int32"
-          },
-          "Links": {
-              "type": "array",
-              "description": "Returns pagination links.",
-              "items": {
-                  "$ref": "#/definitions/Links"
-              }
-          }
-      }
-  },
-    "ApiGetAuditLog": {
-      "type": "object",
-      "properties": {
-      "EventTargetUserName": {
-          "type": "string",
-          "description": "The username of the individual targeted by the event in the activity log."
-      },
-      "EventTargetDisplayName": {
-          "type": "string",
-          "description": "The display name of the individual targeted by the event in the activity log."
-      },
-      "InitiatedUserName": {
-          "type": "string",
-          "description": "The username of the individual who initiated the event recorded in the activity log."
-      },
-      "InitiatedDisplayName": {
-          "type": "string",
-          "description": "The display name of the individual who initiated the event recorded in the activity log."
-      },
-      "EventDateformat": {
-          "type": "string",
-          "description": "The formatted string representing the date and time when the event was recorded in the activity log."
-      },
-      "InitiatedUserEmail": {
-          "type": "string",
-          "description": "The email address of the user who initiated the event recorded in the activity log."
-      },
-      "TargetUserEmail": {
-          "type": "string",
-          "description": "The email address of the individual targeted by the event in the activity log."
-      },
-      "EventDate": {
-          "type": "string",
-          "description": "The date and time when the event was recorded in the activity log."
-      },
-      "EventCategory": {
-          "type": "integer",
-          "description": "The numerical identifier representing the category of the event recorded in the activity log."
-      },
-      "EventType": {
-          "type": "integer",
-          "description": "The numerical identifier representing the specific type of event recorded in the activity log."
-      },
-      "AppSource": {
-          "type": "string",
-          "description": "The source application from which the event was generated in the activity log."
-      },
-      "AppType": {
-          "type": "string",
-          "description": "The type of application (e.g., API, Web) from which the event was generated in the activity log."
-      },
-      "EventCategoryString": {
-          "type": "string",
-          "description": "The string representation of the event category in the activity log."
-      },
-      "EventTypeString": {
-          "type": "string",
-          "description": "The string representation of the event type in the activity log."
-      },
-      "UserLogDetail": {
-          "type": "object",
-          "description": "Details about the user activity that was logged, including the IP address and user agent.",
-          "allOf": [
-          {
-              "$ref": "#/definitions/UserLogDetails"
-          }
-          ]
-      },
-      "Summary": {
-          "type": "string",
-          "description": "A brief summary or description of the activity recorded in the log."
-      }
-      }
-  },
-  "UserLogDetails": {
-      "type": "object",
-      "properties": {
-      "IpAddress": {
-          "type": "string",
-          "description": "The IP address from which the activity was logged."
-      },
-      "EventLog": {
-          "type": "object",
-          "description": "Details of the event associated with the logged activity, including any changes made.",
-          "allOf": [
-          {
-              "$ref": "#/definitions/EventLog"
-          }
-          ]
-      },
-      "UserAgent": {
-          "type": "string",
-          "description": "The user agent string that identifies the device and browser used during the logged activity."
-      }
-      }
-  },
-  "EventLog": {
-      "type": "object",
-      "properties": {
-      "ChangeLogCollection": {
-          "type": "array",
-          "description": "A collection of change logs that detail the specific changes made during the logged event.",
-          "items": {
-          "$ref": "#/definitions/ChangeLogCollection"
-          }
-      }
-      }
-  },
-  "ChangeLogCollection": {
-      "type": "object",
-      "properties": {
-      "ChangedItem": {
-          "type": "string",
-          "description": "The name of the item that was changed during the logged event."
-      },
-      "ChangeLog": {
-          "type": "array",
-          "description": "A list of specific changes that were made to the `ChangedItem` during the logged event.",
-          "items": {
-          "$ref": "#/definitions/ChangeLog"
-          }
-      }
-      }
-  },
-  "ChangeLog": {
-      "type": "object",
-      "properties": {
-      "ChangedItem": {
-          "type": "string",
-          "description": "The specific item that was altered during the logged event."
-      },
-      "From": {
-          "type": "string",
-          "description": "The original value of the item before the change was made."
-      },
-      "To": {
-          "type": "string",
-          "description": "The new value of the item after the change was made."
-      }
       }
     }
   },
