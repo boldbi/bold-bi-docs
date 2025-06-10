@@ -22,4 +22,6 @@ You can explore Single Sign-On in detail here.
 
 [OpenID Support](/security-configuration/single-sign-on/openid-support/)
 
+[JWT Support](/security-configuration/single-sign-on/json-web-token/)
+
 > **NOTE:** This feature is available in Bold BI Embedded Analytics, but not in Cloud Analytics Server.

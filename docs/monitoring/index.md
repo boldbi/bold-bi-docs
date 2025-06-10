@@ -61,10 +61,10 @@ By using the above endpoints, you can ensure that the services are online and fu
 
 To enable monitoring for the Bold BI application based on your specific use case, refer to the following articles:
 
-- [How to Monitor and Alert Bold BI Using Grafana and Prometheus in Kubernetes](https://support.boldbi.com/agent/kb/624)
-- [Configure Robusta for Alerting and Monitoring Bold BI](https://support.boldbi.com/agent/kb/590)
-- [Monitoring Bold BI Application with Datadog](https://support.boldbi.com/agent/kb/16191)
-- [Monitoring the Query Execution Performance of Bold BI with Grafana](https://support.boldbi.com/agent/kb/16393)
-- [Monitoring and Alerting Bold BI in Windows Using Grafana and Prometheus](https://support.boldbi.com/agent/kb/592)
+- [How to Monitor and Alert Bold BI Using Grafana and Prometheus in Kubernetes](https://support.boldbi.com/kb/article/624/how-to-monitor-and-alert-bold-bi-using-grafana-and-prometheus-in-kubernetes)
+- [Configure Robusta for Alerting and Monitoring Bold BI](https://support.boldbi.com/kb/article/590/configure-robusta-for-alerting-and-monitoring-bold-bi)
+- [Monitoring Bold BI Application with Datadog](https://support.boldbi.com/kb/article/16191/monitoring-bold-bi-application-with-datadog)
+- [Monitoring the Query Execution Performance of Bold BI with Grafana](https://support.boldbi.com/kb/article/16393/monitoring-the-query-execution-performance-of-bold-bi-with-grafana)
+- [Monitoring and Alerting Bold BI in Windows Using Grafana and Prometheus](https://support.boldbi.com/kb/article/592/monitoring-and-alerting-bold-bi-in-windows-using-grafana-and-prometheus)
 
 If you require integration with a specific monitoring tool that is not covered here, please reach out to our support team for assistance.

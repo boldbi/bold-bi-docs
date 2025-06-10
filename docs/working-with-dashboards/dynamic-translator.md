@@ -18,6 +18,7 @@ The Dynamic Translator feature in Bold BI allows you to customize dashboard cont
 4. Title of the Chart Axis  
 5. Header of the Tab  
 6. Tooltips
+7. Custom Legend Settings
 
 ## Accessing the Dynamic Translator
 
@@ -64,3 +65,20 @@ When you select a different language from the dropdown menu, the content will au
 ![Language Changed Dashboard](/static/assets/working-with-dashboards/images/after-language-change.png)
 
 With the Dynamic Translator, you can effortlessly handle multilingual content in your dashboards, providing users with a smooth experience in their preferred language.
+
+## Dynamic Translator Support in Legend Customization
+
+You can customize the legend content (both individual and group) for chart widgets based on the dynamic languages applied in the Dynamic Translator window at the dashboard level.
+
+The applied dynamic languages are listed in the dropdown menu within the Legend customization dialog, and you can modify the legend content by inputting text that corresponds to the English text as follows.
+
+![Legend Customization Dialog](/static/assets/working-with-dashboards/images/LegendCustomizationDialog.png)
+
+![Language Individual Option](/static/assets/working-with-dashboards/images/LegendIndividual.png)
+
+![Language Group Option ](/static/assets/working-with-dashboards/images/LegendGroup.png)
+
+
+Save the customized text and preview or publish the dashboard. You'll see a dropdown menu that allows you to switch between languages, with the default language set to en-US. Switching between the different languages automatically refreshes the widget's legend content.
+
+![Legend applied Dashboard](/static/assets/working-with-dashboards/images/LegendDashboard.png)

@@ -450,6 +450,79 @@ var dashboard = BoldBI.create({
 dashboard.loadDashboard();
 ```
 
+## beforeViewdataIconRender
+
+`beforeViewdataIconRender`
+    
+This event will be triggered before the viewdata banner icons are rendered.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Access</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">type</td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">enum</span></td>
+<td class="access">get</td>
+<td class="description">Will holds the current event type that triggered the event</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type"><a href=/embedding-options/embedding-sdk/embedding-api-reference/events/#dashboardproperties>object</a></span></td>
+<td class="access">get</td>
+<td class="description">Holds the dashboard viewer's object.</td>
+</tr>
+<tr>
+<td class="name">iconsinformation</td>
+<td class="type"><span class="param-type">array</span></td>
+<td class="access">set</td>
+<td class="description">Holds the information about the list of icons to be rendered in the Dashboard.</td>
+</tr>
+<tr>
+<td class="name">dashboardPath</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="access">get</td>
+<td class="description">Holds the current dashboard path value.</td>
+</tr>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="access">set</td>
+<td class="description">Holds the cancel value of the current operation.</td>
+</tr>
+</tbody>
+</table>
+
+**Example** 
+   
+```js
+var dashboard = BoldBI.create({
+	  beforeViewdataIconRender: function (args) {
+		// Write a code block to perform an operation before the dashboard banner icons were rendered
+		// var icon = $("<div/>", {
+          //      "class": "su su-nav-schedule",
+          //      "data-tooltip": "NewCustomIcon",
+          //      "data-name": "schedule",
+          //      "data-event": true,
+          //      css: {
+          //          "font-size": "15px", "padding": "4px 4px", "margin": "14px 8px", "float": "left",
+          //          "line-height": "20px"
+          //      }
+          //  }).on("click", function () {
+          //      alert("Icon is triggered")
+          //  });
+          //  args.iconsinformation[0].items.push(icon);
+     }  
+});
+dashboard.loadDashboard();        
+```
+
 ## onError
 
 This event is used to catch any errors that may occur during the embedding process.
@@ -565,7 +638,7 @@ This event will be triggered before the datasource toolbar buttons are rendered.
 
 ```js
 var dashboard = BoldBI.create({
-     mode: BoldBI.Mode.Datasource,
+     mode: BoldBI.Mode.DataSource,
      dashboardSettings: {
           beforeDatasourceToolbarButtonsRendered: function (args) {
                // Write a code block to add a new button before the datasource toolbar buttons were rendered.
@@ -585,7 +658,7 @@ dashboard.loadDatasource();
 
 ```js
 var dashboard = BoldBI.create({
-     mode: BoldBI.Mode.Connection,
+     mode: BoldBI.Mode.DataSource,
      dashboardSettings: {
           beforeDatasourceToolbarButtonsRendered: function (args) {
                //  Write a code block to remove an existing button before the datasource tool toolbar buttons were rendered.
@@ -634,7 +707,7 @@ This event will be triggered before the datasource toolbar icons are rendered. Y
 
 ```js
 var dashboard = BoldBI.create({
-     mode: BoldBI.Mode.Datasource,
+     mode: BoldBI.Mode.DataSource,
      dashboardSettings: {
           beforeDatasourceToolbarIconsRendered: function (args) {
                // Write a code block to add an external icon other than Bold BI before the data source toolbar icons are rendered.
@@ -654,7 +727,7 @@ dashboard.loadDatasource();
 
 ```js
 var dashboard = BoldBI.create({
-     mode: BoldBI.Mode.Datasource,
+     mode: BoldBI.Mode.DataSource,
      dashboardSettings: {
           beforeDatasourceToolbarIconsRendered: function (args) {
                //  Write a code block to remove an existing button before the datasource toolbar icons were rendered.
@@ -1015,6 +1088,10 @@ var dashboard = BoldBI.create({
     }
 });
 dashboard.loadDashboard();
+
+function callBackFunction() {
+    //To perform any further actions.
+}
 ```
 
 ### beforeSaveViewDialogOpen
@@ -1106,6 +1183,10 @@ var dashboard = BoldBI.create({
     }
 });
 dashboard.loadDashboard();
+
+function callBackFunction() {
+    //To perform any further actions.
+}
 ```
 
 **Example for updating the existing view** 
@@ -1141,7 +1222,11 @@ var dashboard = BoldBI.create({
           }
      }
 });
-dashboard.loadDashboard();        
+dashboard.loadDashboard();
+
+function callBackFunction() {
+    //To perform any further actions.
+}
 ```
 
 ### onIconClick
@@ -1317,6 +1402,12 @@ This event will be triggered when the "view saved filters" icon in the filter ov
 <td class="description">Holds the dashboard viewer's object.</td>
 </tr>
 <tr>
+<td class="name">viewInfos</td>
+<td class="type"><span class="param-type">array</span></td>
+<td class="access">get</td>
+<td class="description">Retrieves the array of views information.</td>
+</tr>
+<tr>
 <td class="name">data</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="access">get</td>
@@ -1343,17 +1434,8 @@ This event will be triggered when the "view saved filters" icon in the filter ov
 var dashboard = BoldBI.create({
      dashboardSettings: {
           onViewSavedFiltersClick: function(args) {
-               // embedContainerID -> 'dashboard'
-               var instance = BoldBI.getInstance('dashboard');
-
-               // Determine the active-tabbed child dashboard ID if it's a multi-tab dashboard
-               // Get the dashboard id from the embed options
-               var dashboardId = instance.isMultiTab ? instance._getActiveChildDashboardId() : instance.embedOptions.dashboardId;
-
-               /* Add custom functionality for getting views from the dashboard */
-
-               // Call the API method ('getViewsByDashboardId') for getting the views and specify a callback function ('callBackFunction') to handle the response and perform further actions.
-               instance.getViewsByDashboardId(dashboardId, 'callBackFunction');
+               // Retrieves the array of view information from 'args.viewInfos' and perform further actions.
+               console.log(args.viewInfos); //The 'args.viewInfos' contains a list of views in the form of an array.
           }
      }
 });
@@ -1488,7 +1570,7 @@ This event will be triggered after the save action of the data source is called.
    
 ```js
 var dashboard = BoldBI.create({
-     mode: BoldBI.Mode.Datasource,
+     mode: BoldBI.Mode.DataSource,
      afterDatasourceSave: function (args) {
           // Write a code block to perform an operation after the data source save action is called
      } 
@@ -1541,7 +1623,7 @@ This event will be triggered before the save action of the data source is called
    
 ```js
 var dashboard = BoldBI.create({
-     mode: BoldBI.Mode.Datasource,
+     mode: BoldBI.Mode.DataSource,
      beforeDatasourceSave: function (args) {
           // Write a code block to perform an operation before the data source save action is called 
      } 
@@ -1930,9 +2012,64 @@ var dashboard = BoldBI.create({
                //        });
                //   }
                // });
+          }
      }
 });
 dashboard.loadDesigner();  
+```
+
+### beforeWidgetLayoutRender
+
+This event will be triggered before the layout of widget is rendered in the mobile view. You will be able to resize a specific widgets or all widget item using the event.
+
+<table class="params">
+<thead>
+<tr>
+<th style="width: 20%;">Name</th>
+<th style="width: 20%;">Type</th>
+<th style="width: 60%;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">category</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Specifies which category the widget belongs to, like Filters or Cards.</td>
+</tr>
+<td class="name">Id</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Holds the current widget id.</td>
+<tr>
+<td class="name">model</td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type"><a href=/embedding-options/embedding-sdk/embedding-api-reference/events/#dashboardproperties>object</a></span></td>
+<td class="description">Holds the dashboard viewer's object.</td>
+</tr>
+<td class="name">Name</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Holds the current widget name.</td>
+<tr>
+<td class="name">size.MobileHeightFactor</td>
+<td class="type"><span class="param-type">int</span></td>
+<td class="description">Defines the scaling factor for widget height as a percentage.</td>
+</tr>
+</tbody>
+</table>
+
+**Example** 
+
+```js
+var dashboard = BoldBI.create({
+     widgetSettings: { 
+          beforeWidgetLayoutRender: function (args) {
+               // Write a code block to operate before widget layout renderd in the mobile view.
+               // if (args.category === 'Filters') {
+               // This doubles the height of the widget by setting MobileHeightFactor to 2
+               //     args.size.MobileHeightFactor = 2;
+               //}               
+          }
+     }
+});
+dashboard.loadDashboard();  
 ```
 
 ### widgetSettings.beforeIconRender
@@ -2024,7 +2161,7 @@ dashboard.loadDashboard();
 
 ### widgetSettings.beforeWidgetControlMenuOpen
 
-This event will be triggered after clicking on any option from the control menu icon.
+This event will be triggered after clicking the control menu icon from the widget banner.
 
 <table class="params">
 <thead>
@@ -2175,7 +2312,7 @@ dashboard.loadDashboard();
 
 ### widgetSettings.onWidgetControlMenuClick
 
-This event will be triggered after clicking any option from the control menu icon.
+This event will be triggered after clicking any option from the control menu icon in the widget banner.
 
 <table class="params">
 <thead>

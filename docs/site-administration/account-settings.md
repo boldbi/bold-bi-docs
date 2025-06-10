@@ -45,3 +45,11 @@ When the user email setting is set to `Not required` mode, an email address is n
 > **NOTE:** By default, the setting will be `Required`. This setting option is available in On-Premises Deployment but not in Syncfusion Managed Cloud Server.
 
 ![Email Settings](/static/assets/site-administration/images/email-required-settings.png#width=60%)
+
+## Default Group
+
+This setting ensures that users are automatically added to a selected group by default when they are added to the site. It simplifies user management by streamlining group assignments, ensuring consistent access permissions, and reducing manual configuration.
+
+![Default Group](/static/assets/site-administration/images/default-group-settings.png#width=60%)
+
+> **NOTE:** If you need to disable the settings select `None` for the dropdown and save the settings.

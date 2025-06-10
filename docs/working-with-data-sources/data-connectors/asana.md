@@ -27,12 +27,6 @@ To choose Asana as a data source, follow the steps below:
 
    ![Choose data source from server](/static/assets/working-with-datasource/data-connectors/images/asana/ChooseDS_server.png)
 
-## Advanced
-In the Advanced category, it will redirect to the Bold ETL. Please refer to the [Bold ETL](/managing-resources/manage-data-sources/#advanced-category) for more information.
-
-## Basic
-In the Basic category, it will act as a connector in Bold BI. Follow the steps below:
-
 ### How to Obtain the Asana Client ID and Client Secret
 > **Note:** Asana OAuth credentials are required for the On-Premises Deployment, but they are not needed in Syncfusion Managed Cloud Server.
 1. Login to your Asana account by clicking on  [Asana Login](https://app.asana.com/-/login).

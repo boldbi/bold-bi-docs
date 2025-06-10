@@ -38,6 +38,16 @@ After clicking the data source, the NEW DATA SOURCE configuration panel will ope
 	  
 Options include [*None*](/working-with-data-sources/data-connectors/web/#none), [*Offset*](/working-with-data-sources/data-connectors/web/#offset), [*Next Page*](/working-with-data-sources/data-connectors/web/#next-page), [*Next Token*](/working-with-data-sources/data-connectors/web/#next-token), and [*Next URL*](/working-with-data-sources/data-connectors/web/#next-url).
 
+## Extract Engine
+You can connect to the data source using one of the following extract methods:
+- **Bold BI Extract**: Data will be extracted and managed directly within Bold BI.
+- **Data Hub**: Data extraction is handled through the Data Hub. An equivalent pipeline is created, utilizing the Data Hub’s Extract, Transform, Load (ETL) capabilities to filter, optimize, or transform the data, and to generate new tables.
+- To view the equivalent pipeline created for data extraction, navigate to the Query Designer page and click on View Pipeline.
+
+    ![Refresh Setting](/static/assets/working-with-datasource/images/View_Pipeline.png)
+
+- When the data refresh is configured for data sources that uses the Data Hub Extract Engine, the refresh will be managed within the Data Hub.
+
 You can also modify the connection information set here using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option. 
 
 ### Pagination types

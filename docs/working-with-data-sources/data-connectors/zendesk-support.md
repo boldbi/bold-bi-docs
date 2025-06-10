@@ -27,17 +27,28 @@ To configure the Zendesk Support data source, follow these steps:
 ## Create Zendesk Support data source
 Once you click on the data source, the NEW DATA SOURCE configuration panel will open. Follow these steps to create a Zendesk Support data source.
 1. Enter a name and description (optional) for the data source.
-2. Enter the **HostName** for the connected account.
-3. Click the **API Endpoints** dropdown box and choose the required endpoint.
-4. Click the **Custom Url** to enter the URL manually. Refer to the [Zendesk Support API documentation](https://developer.zendesk.com/rest_api/docs/zendesk-apis/resources) for more details. 
-5. Select the **GET** method for the REST API in the **Method** combo box.
-6. In **Max Rows**, enter the maximum number of rows to be fetched from the Zendesk Support data source. This value is used to fetch the data from the Zendesk Sunshine data source using the pagination.
-7. Choose a time interval for the **Refresh Settings** using the combo box to trigger the Rest API request periodically to keep the data in sync with your dashboard.  
-8. Select the **JSON** data type in the **Data Format** combo box.
-9. Choose **Basic HTTP Authentication** in the **Authentication Type** combo box.
-10. Enter a valid Zendesk Support **Username** and **Password** to access the endpoints.
+2. Choose The Extract Engine.
+3. Enter the **HostName** for the connected account.
+4. Click the **API Endpoints** dropdown box and choose the required endpoint.
+5. Click the **Custom Url** to enter the URL manually. Refer to the [Zendesk Support API documentation](https://developer.zendesk.com/rest_api/docs/zendesk-apis/resources) for more details. 
+6. Select the **GET** method for the REST API in the **Method** combo box.
+7. In **Max Rows**, enter the maximum number of rows to be fetched from the Zendesk Support data source. This value is used to fetch the data from the Zendesk Sunshine data source using the pagination.
+8. Choose a time interval for the **Refresh Settings** using the combo box to trigger the Rest API request periodically to keep the data in sync with your dashboard.  
+9. Select the **JSON** data type in the **Data Format** combo box.
+10. Choose **Basic HTTP Authentication** in the **Authentication Type** combo box.
+11. Enter a valid Zendesk Support **Username** and **Password** to access the endpoints.
 
 ![Data source preview](/static/assets/working-with-datasource/data-connectors/images/ZendeskSupport/DataSourcesView.png)
+
+## Extract Engine
+You can connect to the data source using one of the following extract methods:
+- **Bold BI Extract**: Data will be extracted and managed directly within Bold BI.
+- **Data Hub**: Data extraction is handled through the Data Hub. An equivalent pipeline is created, utilizing the Data Hub’s Extract, Transform, Load (ETL) capabilities to filter, optimize, or transform the data, and to generate new tables.
+- To view the equivalent pipeline created for data extraction, navigate to the Query Designer page and click on View Pipeline.
+
+    ![Refresh Setting](/static/assets/working-with-datasource/images/View_Pipeline.png)
+
+- When the data refresh is configured for data sources that uses the Data Hub Extract Engine, the refresh will be managed within the Data Hub.
 
 You can also edit the connection information set using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 

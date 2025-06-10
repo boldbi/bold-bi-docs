@@ -18,4 +18,11 @@ Disallow: /working-with-data-sources/working-with-the-bold-extract/
 Disallow: */faq/*
 Disallow: /embedding-options/iframe-embedding/datasource-embedding-using-single-sign-on/
 Disallow: /embedding-options/embedding-sdk/embedding-with-token/
+Disallow: /embedding-options/embedding-sdk/embedding-a-datasource/
+Disallow: /embedding-options/embedding-sdk/embedding-a-widget/
+Disallow: /embedding-options/embedding-sdk/embedding-dashboard-designer/
+Disallow: /embedding-options/embedding-sdk/embedding-pinboard/
+Disallow: /embedding-options/iframe-embedding/dashboard-embedding-with-external-sso/
+Disallow: /embedding-options/iframe-embedding/embedding-a-dashboard/
+Disallow: /working-with-dashboards/dashboards-templates/
 Sitemap: https://help.boldbi.com/sitemap-help.xml

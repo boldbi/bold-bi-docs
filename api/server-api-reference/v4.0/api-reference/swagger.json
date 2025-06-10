@@ -7976,7 +7976,7 @@
           },
 		  "ScopeId": {
             "type": "string",
-            "description": "Specify the name or Id of specific item based on the permission entities.<br />Allowed Scope Id for permission entities: <br />1. <code>SpecificPermissions</code> accepts <code>Category, Dashboard, Datasource, Schedule, Slideshow</code><br /><br />2. <code>SpecificGroup</code> accepts Group Id<br /><br />3. <code>SpecificSettings</code> accepts <code>AuthenticationSettings, CORSPolicySettings, DashboardSettings, EmbedSettings, Integrations, LookAndFeel, NotificationSettings, Security, SiteSettings, UserDirectorySettings, SiteCredentials, Accounts, Connectors, DataStoreSettings, Email, Widgets</code>",
+            "description": "This defines the name or ID of a specific item for managing permissions. It allows administrators and authorized users to delegate permission management, as well as the management of settings and users/groups. This enables users to share access to resources, such as dashboards, with other users, and to manage groups and settings.<br />Allowed Scope Id for permission entities: <br />1. <code>SpecificPermissions</code> accepts <code>Category, Dashboard, Datasource, Schedule, Slideshow</code><br /><br />2. <code>SpecificGroup</code> accepts Group Id<br /><br />3. <code>SpecificSettings</code> accepts <code>AuthenticationSettings, CORSPolicySettings, DashboardSettings, EmbedSettings, Integrations, LookAndFeel, NotificationSettings, Security, SiteSettings, UserDirectorySettings, SiteCredentials, Accounts, Connectors, DataStoreSettings, Email, Widgets</code>",
             "nullable": true
           }
         },
@@ -8011,7 +8011,7 @@
 			 },
           "ScopeId": {
             "type": "string",
-            "description": "Specify the name or Id of specific item based on the permission entities.<br />Allowed Scope Id for permission entities: <br />1. <code>SpecificPermissions</code> accepts <code>Category, Dashboard, Datasource, Schedule, Slideshow</code><br /><br />2. <code>SpecificGroup</code> accepts Group Id<br /><br />3. <code>SpecificSettings</code> accepts <code>AuthenticationSettings, CORSPolicySettings, DashboardSettings, EmbedSettings, Integrations, LookAndFeel, NotificationSettings, Security, SiteSettings, UserDirectorySettings, SiteCredentials, Accounts, Connectors, DataStoreSettings, Email, Widgets</code>",
+            "description": "This defines the name or ID of a specific item for managing permissions. It allows administrators and authorized users to delegate permission management, as well as the management of settings and users/groups. This enables users to share access to resources, such as dashboards, with other users, and to manage groups and settings.<br />Allowed Scope Id for permission entities: <br />1. <code>SpecificPermissions</code> accepts <code>Category, Dashboard, Datasource, Schedule, Slideshow</code><br /><br />2. <code>SpecificGroup</code> accepts Group Id<br /><br />3. <code>SpecificSettings</code> accepts <code>AuthenticationSettings, CORSPolicySettings, DashboardSettings, EmbedSettings, Integrations, LookAndFeel, NotificationSettings, Security, SiteSettings, UserDirectorySettings, SiteCredentials, Accounts, Connectors, DataStoreSettings, Email, Widgets</code>",
             "nullable": true
           }
         },

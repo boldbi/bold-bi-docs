@@ -71,16 +71,17 @@ The schema represents the collection list retrieved from the PostgreSql server. 
 
 ## Extract mode connection 
 
-To Connect to Bold ETL from postgres, switch to extract mode. Refer [Bold ETL](/managing-resources/manage-data-sources/#advanced-category)
-1. switch to Extract mode, Redirect dialog will pop up.
-  ![etl Redirect Dialog](/static/assets/working-with-datasource/data-connectors/images/SQLDataSource/etlRedirectDialog.png)
+1. Switching to Extract mode, Extract Engine will become visible.
 
-2. Click on the **Redirect to Bold ETL** button to be redirect to Bold ETL. Or
-3. To continue with Bold BI, click on **Continue with connector**.
+    ![Extract Engine](/static/assets/working-with-datasource/images/Extract_Engine.png)
 
-In this connection type, a data source is fetched from source periodically. Choose the **Extract** mode option for this connection.
+2. In Bold BI Extract, The data will be extracted in Bold BI itself.
+3. When switching to Data Hub, the data is extracted using the Data Hub. An equivalent pipeline is created, which can leverage the Data Hub’s Extract, Transform, Load (ETL) capabilities to filter or optimize the data and generate new tables.
+4. To view the equivalent pipeline created for data extraction, navigate to the Query Designer page and click on View Pipeline.
 
-![Extract Connection](/static/assets/working-with-datasource/data-connectors/images/Postgresql/Postgresql_Extract_Connection.png)
+    ![Refresh Setting](/static/assets/working-with-datasource/images/View_Pipeline.png)
+
+5. When the data refresh is configured for data sources that uses the Data Hub Extract Engine, the refresh will be managed within the Data Hub.
 
 > **NOTE:**  Initially, data will be extracted based on the Max Rows selected in order to proceed with data model creation. The remaining records (there is no limit) will be extracted during the next refresh.  <br /> 
  ![Max rows option](/static/assets/working-with-datasource/data-connectors/images/Postgresql/maxRowOption.png#max-width=60%)

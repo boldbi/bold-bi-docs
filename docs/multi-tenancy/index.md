@@ -9,19 +9,43 @@ documentation: ug
 
 # Overview 	
 
-Bold BI Enterprise Edition offers multi-tenant support, allowing administrators to deploy multiple tenants and manage their dashboards. Each tenant has its own database for managing dashboards and resources, isolating them from other tenants under a single Bold BI deployment.    
+Bold BI Enterprise Edition offers both single-site and multi-site support. The multi-site feature allows administrators to deploy multiple sites and manage their dashboards. Each site has its own database for managing dashboards and resources, isolating them from other sites within a single Bold BI deployment. This also allows organizations to create separate data views for different users. This is particularly useful for B2B2C companies, where data needs to be segmented for partners (B) and their customers (C).
 
 ## Architecture
 
-The architecture of the Bold BI multi-tenant solution is illustrated in the image provided. Each tenant is deployed with its own database and resources, ensuring data isolation between tenants.
+### Single Site
 
-![MultiTenant Architecture](/static/assets/multi-tenancy/images/multi-tenant-architect.png)
+The architecture of the Bold BI single-site solution is illustrated in the image provided. When using a single-site architecture, all the pre-configured dashboards and customer-created dashboards are saved in the single site.
 
-To set up the multi-tenant solution, install and deploy the Bold BI Enterprise Edition, which will deploy the first tenant with the Identity Provider (IDP) application in an isolated database. Subsequently, other tenants can be deployed with their own databases.
+![Singlesite Architecture](/static/assets/multi-tenancy/images/signle-site-architect.png)
 
-The Identity Provider (IDP) application is a core component of the multi-tenant solution, managing tenant and user identity.
+### Multi Site
 
-> **NOTE:**  IDP can share the same database as the first BI tenant, but not with the two tenant applications.
+When using a multi-site architecture, the pre-configured dashboards and customer-created dashboards are saved in a separate site dedicated to each tenant or organization.
+
+The architecture of the Bold BI multi-site solution is illustrated in the image provided. Each site is deployed with its own database and resources, ensuring data isolation between sites.
+
+![Multisite Architecture](/static/assets/multi-tenancy/images/multi-site-architect.png)
+
+To set up the multi-site solution, install and deploy the Bold BI Enterprise Edition, which will deploy the first site with the Identity Provider (IDP) application in an isolated database. Subsequently, other sites can be deployed with their own databases.
+
+The Identity Provider (IDP) application is a core component of the multi-site solution, managing site and user identity.
+
+> **NOTE:**  IDP can share the same database as the first BI site, but not with the two site applications.
+
+### Which Option Should You Choose?
+
+**Single-Site**
+
+* Simple to manage Bold BI sites since only one site is used for all tenants and organizations.
+
+* Suitable for customers who want to dynamically pass user session data and populate dashboard data.
+
+**Multi-Site**
+
+* Streamline the organization of custom dashboards created by customers.
+* More involved maintenance of sites in Bold BI.
+* Suitable for customers who need to create users in Bold BI and manage permissions.
 
 ## Security
 

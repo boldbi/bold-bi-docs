@@ -32,12 +32,6 @@ To choose an Elastic Search data source, follow these steps:
 
 ![Select data source](/static/assets/working-with-datasource/data-connectors/images/Elastic-search/Selectdatasource.png#max-width=85%)
 
-## Advanced
-In the Advanced category, It will Redirect to the Bold ETL. Refer to [Bold ETL](/managing-resources/manage-data-sources/#advanced-category).
-
-## Basic
-In the Basic Category, It will act as the connector in Bold BI. And need to follow the below steps.
-
 ## Connect to Elastic Search
 An Elastic Search data source can be accessed in Bold BI using the live connection mode.
 
@@ -94,6 +88,20 @@ There are two connection types available in a data source
 7.	Click `Connect` to connect the Elastic Search server with the configured details.
 
 ![Data source connection](/static/assets/working-with-datasource/data-connectors/images/Elastic-search/elasticsearchextract.png#max-width=100%)
+
+## Extract mode connection 
+
+1. Switching to Extract mode, Extract Engine will become visible.
+
+    ![Extract Engine](/static/assets/working-with-datasource/images/Extract_Engine.png)
+
+2. In Bold BI Extract, The data will be extracted in Bold BI itself.
+3. When switching to Data Hub, Data extraction is handled through the Data Hub. An equivalent pipeline is created, utilizing the Data Hub’s Extract, Transform, Load (ETL) capabilities to filter, optimize, or transform the data, and to generate new tables.
+4. To view the equivalent pipeline created for data extraction, navigate to the Query Designer page and click on View Pipeline.
+
+    ![Refresh Setting](/static/assets/working-with-datasource/images/View_Pipeline.png)
+
+5. When the data refresh is configured for data sources that uses the Data Hub Extract Engine, the refresh will be managed within the Data Hub.
 
 ### Connect using Open Distro connection type
 

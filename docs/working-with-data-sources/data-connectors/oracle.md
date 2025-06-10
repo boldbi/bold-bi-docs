@@ -24,10 +24,8 @@ documentation: ug
    
    ![Oracle button](/static/assets/working-with-datasource/data-connectors/images/oracle/Oracle-button.png)
    
-   Set the `server Name` and `port number` where the Oracle service is running. 
+   Set the `server Name` and `port number` and `Service Instance Name` where the Oracle service is running. 
    
-   The `Service Instance Name` is an optional parameter. Set the Service Instance Name if you have a specific name for the Oracle service: otherwise, the Oracle connection will be launched with the default service name
-
    > **NOTE:**  What is the Service Instance Name – The Service Instance Name is a name given to an Oracle Cloud Service. For more details refer [Service Instance Name](https://docs.oracle.com/en/cloud/paas/data-integrator-cloud/user/creating-oracle-database-cloud-service-instance.html)
 
    Enter the `user name` and `password` to connect to the Oracle.
@@ -39,13 +37,28 @@ documentation: ug
    > **NOTE:**  Initially, data will be extracted based on the Max Rows selected in order to proceed with data model creation. The remaining records (there is no limit) will be extracted during the next refresh.  <br /> 
    ![Max rows option](/static/assets/working-with-datasource/data-connectors/images/oracle/maxRowOption.png#max-width=45%)
 
+   ## Extract mode connection 
+
+1. Switching to Extract mode, Extract Engine will become visible.
+
+    ![Extract Engine](/static/assets/working-with-datasource/images/Extract_Engine.png)
+
+2. In Bold BI Extract, The data will be extracted in Bold BI itself.
+3. When switching to Data Hub, the data is extracted using the Data Hub. An equivalent pipeline is created, which can leverage the Data Hub’s Extract, Transform, Load (ETL) capabilities to filter or optimize the data and generate new tables.
+4. To view the equivalent pipeline created for data extraction, navigate to the Query Designer page and click on View Pipeline.
+
+    ![Refresh Setting](/static/assets/working-with-datasource/images/View_Pipeline.png)
+
+5. When the data refresh is configured for data sources that uses the Data Hub Extract Engine, the refresh will be managed within the Data Hub.
+
+
    The selected database will be opened in the data design view window.
 
    ![Oracle database](/static/assets/working-with-datasource/data-connectors/images/oracle/Oracle-database.png)
 
    Drag and drop the table from table list, and click `Save` button to save the data source with valid name.
 
-   >**Note:** After a successful connection, the Query Designer will list `Tables`, `Views`, and `Stored procedure`. Materialized views will be listed under the `Tables` section.
+>**Note:** After a successful connection, the Query Designer will list `Tables`, `Views`, and `Stored procedure`. Materialized views will be listed under the `Tables` section.
 
 ### Connect using custom attribute and dashboard parameter
 

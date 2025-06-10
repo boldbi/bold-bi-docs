@@ -25,15 +25,10 @@ To configure the Slack data source, follow the below steps:
 
    ![Choose data source from server](/static/assets/working-with-datasource/data-connectors/images/Slack/ChooseDS_Server.png)
 
-## Advanced
-In the Advanced category, It will Redirect to the Bold ETL. Refer [Bold ETL](/managing-resources/manage-data-sources/#advanced-category).
-
-## Basic
-In the Basic Category, It will act as the connector in Bold BI. And need to follow the below steps.
-
 ## Create Slack data source
 Once you click on the data source, the NEW DATA SOURCE configuration panel will open. Follow the below steps to create Slack data source.
 1. Enter a name and description (optional) for the data source.
+2. Choose The Extract Engine.
 2. Click on the **API Endpoints** down drop box and choose the required endpoint.
 3. Enter a valid REST API endpoint in the URL textbox. Refer to the [Slack API documentation](https://api.slack.com/methods) for more details.
 4. Click on **Custom Url** to enter the URL manually.
@@ -43,6 +38,16 @@ Once you click on the data source, the NEW DATA SOURCE configuration panel will 
 8. The authentication type will automatically be set to **Slack** since OAuth is used for authenticating with the Slack account.
 
 ![Data source preview](/static/assets/working-with-datasource/data-connectors/images/Slack/DataSourcesView.png)
+
+## Extract Engine
+You can connect to the data source using one of the following extract methods:
+- **Bold BI Extract**: Data will be extracted and managed directly within Bold BI.
+- **Data Hub**: Data extraction is handled through the Data Hub. An equivalent pipeline is created, utilizing the Data Hub’s Extract, Transform, Load (ETL) capabilities to filter, optimize, or transform the data, and to generate new tables.
+- To view the equivalent pipeline created for data extraction, navigate to the Query Designer page and click on View Pipeline.
+
+    ![Refresh Setting](/static/assets/working-with-datasource/images/View_Pipeline.png)
+
+- When the data refresh is configured for data sources that uses the Data Hub Extract Engine, the refresh will be managed within the Data Hub.
 
 You can also edit the connection information set here using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 

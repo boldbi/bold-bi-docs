@@ -219,7 +219,7 @@ This allows you to provide a brief explanation about the grid widget.
 
 ### Basic settings
 
-![Basic Settings](/static/assets/visualizing-data/visualization-widgets/images/tree-map/basic-settings.png)
+![Basic Settings](/static/assets/visualizing-data/visualization-widgets/images/tree-map/Treemap-basic-setting.png)
 
 #### Show Tooltip
 
@@ -246,6 +246,12 @@ This allows you to select the color for the tree map label. The default value is
 This allows you to toggle the visibility of `value labels`.
 
 ![Value label](/static/assets/visualizing-data/visualization-widgets/images/tree-map/value-label.png)
+
+#### Enable Text Wrap
+
+This option allows you to wrap the `Lable text`.
+
+![label text wrap](/static/assets/visualizing-data/visualization-widgets/images/tree-map/Treemap-text-wrap.png)
 
 #### Enable drill-down
 

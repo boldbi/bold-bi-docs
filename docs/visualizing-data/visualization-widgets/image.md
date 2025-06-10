@@ -50,7 +50,7 @@ The following steps represent how to add an Image to the dashboard:
 
 ![Data tab](/static/assets/visualizing-data/visualization-widgets/images/image/imagedatatab.png)
 
-## How to configure the data to Image widget?
+## Configuring Data Input for the Image Widget
 
 You can browse the image or bind a data source column containing the image URL.
 
@@ -176,7 +176,7 @@ EX: http://flagpedia.net/data/flags/normal/{0}.png
 
 ![Filter](/static/assets/visualizing-data/visualization-widgets/images/image/filter.png)
 
-### IgnoreFilterActions
+### Ignore Filter Actions
 
 You can ignore the filter actions by enabling the IgnoreFilterActions property. Browse Image will not act as a slave widget.
 
@@ -186,7 +186,7 @@ You can ignore the filter actions by enabling the IgnoreFilterActions property. 
 
 Configure the linking to URL or dashboard with the widget using its settings. For more details, refer to the [Linking](/visualizing-data/working-with-widgets/linking-urls-and-dashboards/).
 
-### Container actions
+### Container Actions
 
 ![Container Actions](/static/assets/visualizing-data/visualization-widgets/images/image/pin-icon.png)
 

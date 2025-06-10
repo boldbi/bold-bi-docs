@@ -165,6 +165,29 @@ This allows you to differentiate `alternative rows` of the grid by the backgroun
 
 ![Grid Row Height](/static/assets/visualizing-data/visualization-widgets/images/grid/grid-alternativerowcolor.png)
 
+#### Allow Cell Selection
+
+You can enable or disable the selection of values in grid cells, allowing you to select the desired cells and use the `CTRL + C` to copy the data efficiently.
+
+#### Enable Column Chooser
+
+This option allows you to show or hide columns within the configured fields of the Grid widget.
+
+![Grid Column Chooser](/static/assets/visualizing-data/visualization-widgets/images/grid/grid-column-chooser-property.png)
+
+For example, you can hide specific columns by deselecting the corresponding fields in the Grid widget.
+![Grid Column Chooser](/static/assets/visualizing-data/visualization-widgets/images/grid/grid-column-chooser.png)
+
+#### Allow Column Reorder
+
+This option allows you to rearrange the columns within the configured fields of the Grid widget only if the `Allow Paging` is enabled.
+
+![Grid Reorder Default](/static/assets/visualizing-data/visualization-widgets/images/grid/grid-reorder-property.png)
+
+For example, the `ProductName` column in the grid can be reordered by dragging it to a new position.
+
+![Grid Reorder](/static/assets/visualizing-data/visualization-widgets/images/grid/grid-reorder.png)
+
 ### Summary Row
 
 This section allows you to add a summary row at the end of the grid container.

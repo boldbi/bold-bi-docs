@@ -21,12 +21,6 @@ To establish this connection, follow the steps below:
 
 3. Click **Google Sheets** connection button in the connection panel.![Google Sheets icon](/static/assets/working-with-datasource/data-connectors/images/GoogleSheets/Sheetsicon.png)
 
-## Advanced
-In the Advanced category, it will redirect to the Bold ETL. Please refer to the [Bold ETL](/managing-resources/manage-data-sources/#advanced-category).
-
-## Basic
-In the Basic category, it will serve as the connector in Bold BI. You will need to follow the steps outlined below.
-
 4. A new window will appear. Here, you can select your account or click on **Connect New Account** if the window opens.![Connect to account](/static/assets/working-with-datasource/data-connectors/images/GoogleSheets/createaccount_googleSheets.png)
    
 5. The login window opens to authorize the user. Please enter the appropriate username and password for the account you wish to use to access the **Google Sheets** data.
