@@ -1,6 +1,12 @@
 {
 	"Overview": {
-		"On-Premises vs. Managed Cloud" : "on-premises-vs-managed-cloud"
+		"Self Service Analytics":"self-service-analytics",
+		"Embedded Analytics": "embedded-analytics",
+		"Architecture of Bold BI" : "architecture"
+	},
+	"Evaluation Quick Start": {
+		"Help Resources": "help-resources",
+		"Sample Dashboards": "sample-dashboards"
 	},
 	"Deploying Bold BI": {
 		"Overview": "overview",
@@ -22,6 +28,8 @@
 		"Deploying on AWS": {
 			"Prerequisites": "prerequisites-aws-vm",
 			"Self-deploy a Bold BI Server on AWS VM": "deploy-aws-vm",
+			"Deploy a Bold BI Server on EKS": "deploy-aws-eks",
+			"Deploy a Bold BI Server on ecs fargate": "deploy-aws-ecs",
 			"Upgrade VM to latest version": "update-aws-vm"
 		},
 		"Deploying on GCP": {
@@ -51,6 +59,7 @@
 				"Bold BI on CentOS": "bold-bi-on-centos",
 				"Bold BI on Oracle": "bold-bi-on-oracle",
 				"Bold BI on RHEL": "bold-bi-on-redhat",
+				"Bold BI on SUSE 15 Linux": "bold-bi-on-open",
 				"Auto Deployment": "auto-deployment",
 				"Bold BI over Bold Reports": "bold-bi-over-bold-reports"
 			},
@@ -76,6 +85,8 @@
 			"Recommended System Configuration": "recommended-system-configuration",
 			"Bold BI on Docker": "bold-bi-on-docker"
 		},
+		"Deploying On Cloud Platform Using Terraform": {
+		},
 	"Upgrade Guidelines":"upgrade-guidelines"
 	},
 	"Application Startup": {
@@ -88,17 +99,16 @@
 	},
 	"Embedding Options": {
 		"Application Embedding in Bold BI Enterprise": "application-embedding",
+		"Embedding SDK VS iFrame Embedding":"embedding-sdk-vs-iframe-embedding",
 		"Embedding SDK": {
-			"Embedding a dashboard using javascript" : "embedding-using-javascript",
-			"Embedding Dashboard Designer": "embedding-dashboard-designer",
-			"Embedding a Widget": "embedding-a-widget",
-			"Embedding a datasource": "embedding-a-datasource",
-			"Embedding multiple dashboards and widgets": "embedding-multiple-dashboards-and-widgets",
-			"Embedding Pinboard": "embedding-pinboard",
-			"Embedding Dashboard with View": "embedding-the-dashboard-with-views",
+			"Embedding using javascript" : "embedding-using-javascript",
+			"Token Generation" : "token-generation",
+			"Guidelines for Single and Multi Site": "guidelines-for-single-site-multi-site",
 			"Custom Theme Embedding": "custom-theme-embedding",
+			"Custom Attribute": "custom-attribute",
+			"Anonymous User": "anonymous-user-embedding",
+			"Row Level Security": "how-to-achieve-row-level-security-embedding.md",
 			"Types of Data Filtering": "types-of-data-filtering-in-embedding",
-			"Embedding Multitab Dashboard Programmatically": "embedding-multitab-dashboard-programmatically",
 			"Embedding API Reference": {
 				"Members": "members.md",
 				"Methods": "methods.md",
@@ -112,6 +122,7 @@
 				"React with ASP.NET Core": "react-core",
 				"React with Node.js": "react-with-node-js",
 				"React with Go": "react-with-go",
+				"React with Python": "react-with-python",
 				"Node.js": "node-js",
 				"Blazor WebAssembly": "blazor-web-assembly",
 				"Blazor with JavaScript": "blazor-with-javascript",
@@ -138,16 +149,10 @@
 			}
 		},
 		"iFrame Embedding": {
-			"Embedding a Dashboard": "embedding-a-dashboard",
-			"Dashboard Embedding with Token Authentication": "dashboard-embedding-with-token-authentication",
-			"Embedding a Dashboard with external SSO":"dashboard-embedding-with-external-sso",
-			"Embedding a Dashboard with Views": "embedding-a-dashboard-with-views",
-			"Embedding a widget": "embedding-a-widget",
-			"Widget Embedding with Token Authentication": "widget-embedding-with-token-authentication",
+			"Embedding with iframe" : "embedding-with-iframe",
+			"Embedding with Token Authentication": "embedding-with-token-authentication",
 			"Secured Embedding": "secured-embedding",			
 			"Get Data source URL": "get-datasource-url",
-			"Datasource Embedding": "datasource-embedding",
-			"Datasource embedding with Token Authentication": "datasource-embedding-with-token-authentication",
 			"Sample": {
 				"Dashboard Embedding": {
 					"ASP.NET MVC": "asp.net-mvc",
@@ -159,7 +164,9 @@
 			},
 			"Dynamic Connection String": "dynamic-connection-string"
 		},
-		"Embedding using NPM Package": "embedding-using-npm-package"
+		"Embedding using NPM Package": "embedding-using-npm-package",
+		"Group-Based Authorization": "group-based-authorization",
+		"Enabling User Import with Group-Based Authorization": "enabling-user-import-with-group-based-authorization"
 	},
 	"Working with Data Sources": {
 		"Data Modeling": {
@@ -184,7 +191,6 @@
 		},
 		"Creating a New Data Source": "creating-a-new-data-source.md",
 		"How Bold BI handles queries from multiple widgets in a dashboard": "how-boldbi-handles-queries-from-multiple-widgets-in-a-dashboard.md",
-		"Query Processing Modes": "classification-of-data-sources-queried-directly-and-extracted",
 		"Bold BI Intermediate Database": "bold-bi-intermediate-database",
 		"Connection Settings":{
 			"Enable Disable Connections":"enable-disable-connections.md"
@@ -340,6 +346,7 @@
 			"Xero WorkflowMax": "xero-workflowmax",
 			"Youtube": "youtube",
 			"Zendesk": "zendesk",
+			"Microsoft Fabric":"microsoft-fabric",
 			"Zendesk Sell": "zendesk-sell",
 			"Zendesk Sunshine": "zendesk-sunshine",
 			"Zendesk Support": "zendesk-support",
@@ -356,7 +363,7 @@
 		"Deleting a Data Source": "deleting-a-data-source",
 		"Renaming a Data Source": "renaming-a-data-source",
 		"Importing a Data Source": "using-an-existing-data-source",
-		"Combine Data Source": "combine-data-sources",
+		"Append Data Source": "append-data-sources",
 		"Editing a Data Connection": "editing-a-data-connection",
 		"Working With Connected Accounts": "working-with-connected-accounts",
 		"User Filter": {
@@ -365,22 +372,25 @@
 			"Query": "user-filter-advanced-query-mode"
 		},
 		
-		"Working with Bold ETL":{
-			"Data Store": "data-store",
-		"Working with Projects": "working-with-projects",
+		"Working with Bold Data Hub":{
+	    "Data Store": "data-store",
+		"Working with Pipelines": "working-with-pipelines",
 		"Transformation and Preview": "transformation-preview",
 		"Scheduling ETL Jobs": "schedule",
+		"Email Settings": "email-settings",
+		"Relationship Between Bold Data Hub and Bold BI Data Sources": "relationship-between-bold-data-hub-pipeline-and-associated-data-sources-in-boldbi",
 		"Data Connectors": 
 		{
 			"Facebook Ads": "facebook-ads",
 			"FileSystem": "file-system",
 			"GitHub": "github",
 			"Google Analytics": "google-analytics",
+			"Google Ads": "google-ads",
 			"Google Sheets": "google-sheets",			
-			"Matomo": "head-less",
+			"Matomo": "matomo",
 			"HubSpot": "hubspot",			
 			"Jira": "jira",			
-			"Microsoft SQL Server": "sql",
+			"Microsoft SQL Server": "microsoft-sql-server",
 			"MongoDB": "mongodb",
 			"Mux": "multiplexer",
 			"MySQL": "mysql",
@@ -394,12 +404,13 @@
 			"Slack": "slack",
 			"Web": "web",			
 			"Stripe": "strip",
-			"Strapi": "web-analytics",
+			"Strapi": "strapi",
 			"Workable": "workable",
 			"Zendesk Chart": "zendesk-chart",
 			"Zendesk Support": "zendesk-support",
-			"Zendesk Talk": "zendesk-talk"
-			
+			"Zendesk Talk": "zendesk-talk",
+			"MongoDBSSH": "mongodbssh",
+			"MySQLSSH": "mysqlssh"
 		}
 		}		
 		,
@@ -456,7 +467,6 @@
 			"Image": "image",
 			"Text": "text",
 			"Tab Widget": "tab-widget",
-			"Q&A Widget": "qna-widget",
 			"Button Widget": "button-widget",
 			"Custom Widget": {
 				"v5.2.48 or later": {
@@ -495,7 +505,6 @@
 		"Widget Capabilities": "widget-capabilities"
 	},
 	"Working with Dashboards": {
-		"Dashboard Templates": "dashboards-templates",
 		"Dashboard Themes": "dashboard-theme",
 		"Import Widgets": "import-widgets",
 		"Edit Dashboard": "edit-existing-dashboard",
@@ -508,6 +517,7 @@
 		"Dashboard Performance Metrics": "dashboard-performance-metrics",
 		"Dashboard Styles": "dashboard-styles",
 		"Dynamic Translate": "dynamic-translator",
+		"Fixed Layout": "fixed-layout",
 		"Preview Dashboard": {
 			"Maximizing Widget View": "maximizing-widget-view",
 			"Exporting Reports from dashboard": "dashboard-settings",
@@ -527,6 +537,26 @@
 			"Notifications": "notifications"
 		}
 	},
+	"AI and Machine Learning": {
+		"Getting Started": "ai-copilot-getting-started",
+		"Architecture": "architecture",
+		"Configure AI": {
+			"UMS Level": "ums-level",
+			"Site Settings Configuration":"site-settings-configuration"
+		},
+		"Activate AI Feature": "activate-ai-feature",
+		"Enable/Disable AI Feature": "enable-disable-ai-feature",
+		"AI Data Processing": "ai-data-processing",
+		"Best Practices and Limitations": "best-practices-and-limitations",
+		"Generative AI": {
+			"AI Copilot": "ai-copilot",
+			"AI Agent": "ai-agent",
+			"Dashboard Summary": "dashboard-summary",
+        	"Widget Insights": "widget-insights"
+		},
+		"Q&A Widget": "qna-widget",
+		"Forecasting": "time-series-forecasting"
+	},
 	"Security Configuration": {
 		"Authorization Server": "authorize-server",
 		"Single Sign-On": {
@@ -537,7 +567,8 @@
 			  "Okta": "okta",
 			  "OneLogin": "onelogin",
 			  "Amazon Cognito": "amazon-cognito",
-			  "Auth0": "auth0"
+			  "Auth0": "auth0",
+			  "Microsoft Entra ID Azure AD": "microsoft-entra-azure-ad"
 			},
 			"OpenID Support": {
 			  "Okta": "okta",
@@ -545,16 +576,19 @@
 			  "Auth0": "auth0",
 			  "Keycloak": "keycloak",
 			  "RedHat": "redhat"
-			}
+			},
+			"JWT Support": "json-web-token"
 		  },
 		"CORS Settings": "cors-settings",
 		"Known Domain Configuration": "known-domain-configuration",
 		"Content Security Policy Settings": "content-security-policy",
 		"X-Frame-Options Configuration": "x-frame-options",
+		"IP Whitelisting Configuration":"network-settings",
 		"Syncfusion Cloud Managed Service": "security-in-cloud-bi",
 		"Self Deployment": "security-in-embed-bi",
-        "Group Based Authorization":"group-based-authorization",
-        "Data Security Configuration":"data-security-configuration"
+        "Data Security Configuration":"data-security-configuration",
+		"Audit Logs": "audit-logs",
+		"Concierge Support Settings": "concierge-support-settings"
 	},
     "Site Administration": {
 		"Site Settings": "site-settings",
@@ -569,6 +603,7 @@
 		"UI Customization":"user-interface-customization",
         "Look and Feel Settings In Embedded Analytics": "look-and-feel-settings-in-embedded-analytics",
         "Dashboard Settings": {
+		  "Default Dashboard": "default-dashboard",
           "Public Dashboards": "public-dashboards",
           "Default views": "default-views",
           "Auto-save filter": "auto-save-filter",
@@ -584,7 +619,8 @@
 			  "SMTP": "smtp-account",
 			  "Microsoft Office 365": "office-365-account"
 		  },
-          "Email Activity Logs": "email-activity-logs"
+          "Email Activity Logs": "email-activity-logs",
+		  "Email Template": "email-template"
         },
         "Account Settings": "account-settings",
         "Data Process Settings": {
@@ -609,6 +645,7 @@
 			  }
 		},
         "Notification Settings": "notification-settings",
+		"API Key": "api-key",
 		"Site Credentials": "site-credentials",
         "Integrations": {
           "Webhook Listing": "webhook-listing",
@@ -696,7 +733,15 @@
 		"Create A Tenant": "create-new-site",
 		"Site Administration": {
 			"Rebranding": "rebranding",
-			"Email Settings": "email-settings",
+			"Email Settings": {
+				"Configuration": {
+					"SMTP": "smtp-account",
+					"Microsoft Office 365": "office-365-account"
+				},
+				"Email Activity Logs": "email-activity-logs",
+				"Email Template": "email-template"
+			},
+			"Audit Logs": "audit-logs",
 			"Account Settings": "account-settings",
 			"API Keys": "api-keys",
 			"Authentication": {
@@ -786,5 +831,60 @@
 		}
 	},
   "Monitoring": "monitoring",
-	"Disaster Recovery": "disaster-recovery"
+	"Disaster Recovery": "disaster-recovery",
+	"Transformation Use Cases": {
+		"Data Cleaning and Standardization": {
+			"Filtering Duplicates": "filtering-duplicate-data",
+			"Data Type Conversion": "data-type-conversion",
+			"Filtering Invalid Entries": "filtering-invalid-data",
+			"Handling Null Values": "handling-null-values"
+		},
+		"Date and Time Processing":{
+			"Calculate Service Duration": "calculate-service-duration",
+			"Timestamp Conversion": "timestamp-conversion",
+			"Generate Time Intervals": "generate-time-intervals",
+			"Time-based Segmentation": "time-based-segmentation"
+
+		},
+		"Categorization and Mapping": {
+			"Classifying Data": "classifying-data",
+			"Geographical Mapping": "geographical-mapping",
+			"Mapping Priority Levels": "mapping-priority-levels"
+
+		},
+		"Enriching Data": {
+			"Geo Location Lookup": "geolocation-lookup",
+			"Integrating External Data": "integrating-external-data",
+			"Merging Historical Records": "merging-historical-records"
+
+		},
+		"Aggregation and Summarization":{
+			"Summarizing Metrics":"summarizing-metrics",
+			"Computing Performance KPIs":"computing-performance-kpis",
+			"Service Level Analysis":"service-level-analysis",
+			"Data Volume Aggregation":"data-volume-aggregation"
+
+		},
+		"Data Validation and Transformation Rules": {
+			"Compliance Validation": "compliance-validation",
+			"Flagging Suspicious Data": "flagging-suspicious-data",
+			"Status Verification": "status-verification"
+
+		},
+		"Data Reshaping and Pivoting": {
+			"Create Derived Columns": "create-derived-columns",
+			"Flatten Nested Data": "flatten-nested-data",
+			"Pivot Data": "pivot-data"
+
+		},
+		"Anomaly Detection and Smoothing": {
+			"Anomaly Flagging": "anomaly-flagging",
+			"Data Smoothing": "data-smoothing",
+			"Outlier Detection": "outlier-detection"
+		},
+		"Behavioral and Journey Analysis": {
+			"Churn Prediction Feature": "churn-prediction-feature",
+			"Mapping User Journeys": "mapping-user-journeys"
+		}
+	}
 }

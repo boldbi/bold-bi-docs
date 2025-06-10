@@ -14,36 +14,36 @@ Bold BI is an all-inclusive solution designed for creating, managing, and sharin
 
 ### Hardware requirements
 The following hardware requirements are necessary to run the Bold BI Enterprise edition:
-* **Operating System:**  Windows Client OS 8+ and Windows Server OS 2012 R2+.
+* **Operating System:**  Windows Client 10+ | Windows Server 2022+.
 * **CPU:** 2-core, 2.4 GHz or faster, and 32-bit or 64-bit processor.
 * **Memory:** 8 GB RAM for 32-bit or 64-bit.
-* **Hard drive:** 1.2 GB of free space (only installation files).
+* **Hard drive:** 10 GB of free space (only installation files).
 
 ### Software requirements
 The following software requirements are necessary to run the Bold BI Enterprise edition:
 * **Framework:** [Microsoft .NET Framework 4.5](https://www.microsoft.com/en-in/download/details.aspx?id=30653)
-* **Database:** Microsoft SQL Server 2012+ \| PostgreSQL \| MySQL
-* **Web Server:** [Internet Information Services (IIS) 7.0+](https://en.wikipedia.org/wiki/Internet_Information_Services)
-* **Web Browser:** Microsoft Edge, Mozilla Firefox, and Chrome.
+* **Database:** PostgreSQL 13.0+| Microsoft SQL Server 2016+ | MySQL 8.0+ | Oracle Database 19c+
+* **Web Server:** [Internet Information Services (IIS) 10.0+](https://en.wikipedia.org/wiki/Internet_Information_Services)
+* **Web Browser:** Microsoft Edge | Chrome | Mozilla Firefox.
 
 ## Prerequisites for Linux
 
 ### Hardware requirements
 The following hardware requirements are necessary to run the Bold BI Enterprise edition:
 * **Operating System:**  Bold BI Linux can run on different Linux distributions. It has been verified on the following operating systems:
-    * Ubuntu 
-    * CentOS
-    * Oracle 9.2 
-    * RHEL 9.3
+    * Ubuntu 20.04+
+    * Cent OS Stream 9+
+    * Oracle Linux 9.2+
+    * Red Hat Enterprise Linux (RHEL) 9.3+
 * **CPU:** 2-core.
-* **Memory:** 4 GB RAM.
-* **Disk Space:** 5 GB or more.
+* **Memory:** 8 GB RAM.
+* **Disk Space:** 10 GB or more.
 
 ### Software requirements
 The following software requirements are necessary to run the Bold BI Enterprise edition:
-* **Database:** Microsoft SQL Server 2012+ | PostgreSQL | MySQL
+* **Database:** PostgreSQL 13.0+| Microsoft SQL Server 2016+ | MySQL 8.0+ | Oracle Database 19c+
 * **Web Server:** [Nginx](https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/linux-nginx?view=aspnetcore-3.1#install-nginx)  or [Apache](https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/linux-apache?view=aspnetcore-3.1)
-* **Web Browser:** Microsoft Edge, Mozilla Firefox, and Chrome.
+* **Web Browser:** Mozilla Firefox | Chrome | Microsoft Edge.
 
 ## Registration and Download Process:
 

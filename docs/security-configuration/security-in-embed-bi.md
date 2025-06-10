@@ -10,6 +10,18 @@ documentation: ug
 
 Security is an important aspect of every software. This document explains the important security features provided by Bold BI Software to customers, such as authentication, authorization, data security, network security, and more.
 
+## Enhancing Deployment and Data Security
+
+When it comes to Business Intelligence solutions, deployment flexibility and data security are paramount. Bold BI is engineered for multi-cloud compatibility, allowing seamless hosting on leading cloud providers like Azure, AWS, and Google Cloud (GCP).
+
+## Deployment Flexibility
+
+Whether you choose to deploy within your preferred cloud environment or opt for on-premises hosting, Bold BI ensures that all data and services operate securely. Its versatility supports organizations with diverse infrastructure needs, adapting to their unique requirements.
+
+## Offline Licensing for Secure Self-Hosting
+
+Bold BI offers offline licensing, enabling self-hosted environments to operate independently of Bold BI servers. This means your data never leaves your servers, ensuring maximum security and full control over your business-critical information.
+
 ## Authentication 
 Authentication verifies the user's identity. To access and manage resources such as dashboards and data sources, users must be registered users of the Bold BI Server. The Bold BI server can use local authentication or external authentication methods to validate user authenticity.
 

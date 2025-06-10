@@ -24,12 +24,6 @@ To configure the Zendesk data source, follow the below steps:
 
    ![Choose data source from server](/static/assets/working-with-datasource/data-connectors/images/Zendesk/ChooseDS_Server.png)
 
-## Advanced
-In Advanced category, It will Redirect to the Bold ETL. Refer [Bold ETL](/managing-resources/manage-data-sources/#advanced-category).
-
-## Basic
-In the Basic Category, It will act as the connector in Bold BI. And need to follow the below steps.
-
 ## Create Zendesk data source
 Once you click on the data source, the NEW DATA SOURCE configuration panel will open. Follow the below steps to create Zendesk data source.
 1. Enter a name and description (optional) for the data source.

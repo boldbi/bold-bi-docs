@@ -344,6 +344,10 @@
     "toPath": "/deploying-bold-bi/deploying-on-windows/silent-installation/#silent-installation-alone-without-providing-the-application-startup-details"
   },
   {
+    "fromPath": "/deploying-bold-bi/deploying-in-windows/silent-installation/#execute-a-silent-installation-of-Bold-BI-as-sub-application",
+    "toPath": "/deploying-bold-bi/deploying-on-windows/silent-installation/#execute-a-silent-installation-of-Bold-BI-as-sub-application"
+  },
+  {
     "fromPath": "/deploying-bold-bi/deploying-in-windows/upgrade-to-latest/#upgrading-guidelines",
     "toPath": "/deploying-bold-bi/deploying-on-windows/upgrade-to-latest/#upgrading-guidelines"
   },
@@ -2101,11 +2105,11 @@
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/combine-data-sources/",
-    "toPath": "/working-with-data-sources/combine-data-sources/"
+    "toPath": "/working-with-data-sources/append-data-sources/"
   },
   {
     "fromPath": "/working-with-data-source/combine-data-sources/",
-    "toPath": "/working-with-data-sources/combine-data-sources/"
+    "toPath": "/working-with-data-sources/append-data-sources/"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/editing-a-data-connection/",
@@ -2760,6 +2764,10 @@
     "toPath": "/site-administration/dashboard-settings/"
   },
   {
+    "fromPath": "/embedded-bi/site-administration/dashboard-settings/default-dashboard/",
+    "toPath": "/site-administration/dashboard-settings/default-dashboard/"
+  },
+  {
     "fromPath": "/embedded-bi/site-administration/dashboard-settings/public-dashboards/",
     "toPath": "/site-administration/dashboard-settings/public-dashboards/"
   },
@@ -2942,6 +2950,10 @@
   {
     "fromPath": "/security-configuration/sso/overview/",
     "toPath": "/embedded-bi/security-configuration/single-sign-on/overview/"
+  },
+  {
+    "fromPath": "/embedded-bi/site-administration/sso/json-web-token/",
+    "toPath": "/security-configuration/single-sign-on/json-web-token/"
   },
   {
     "fromPath": "/embedded-bi/security-configuration/single-sign-on/overview/",
@@ -3178,6 +3190,10 @@
   {
     "fromPath": "/embedded-bi/security/x-frame-options/",
     "toPath": "/security-configuration/x-frame-options/"
+  },
+  {
+    "fromPath": "/embedded-bi/security/network-settings/",
+    "toPath": "/security-configuration/network-settings/"
   },
   {
     "fromPath": "/embedded-bi/manage-webhooks/",
@@ -4477,7 +4493,7 @@
   },
   {
     "fromPath": "/cloud-bi/working-with-data-source/combine-data-sources/",
-    "toPath": "/working-with-data-sources/combine-data-sources/"
+    "toPath": "/working-with-data-sources/append-data-sources/"
   },
   {
     "fromPath": "/cloud-bi/working-with-data-source/editing-a-data-connection/",
@@ -28636,6 +28652,10 @@
     "toPath": "/deploying-bold-bi/deploying-on-windows/silent-installation/#silent-installation-alone-without-providing-the-application-startup-details"
   },
   {
+    "fromPath": "/embedded-bi/setup/deploying-in-windows/silent-installation/#execute-a-silent-installation-of-Bold-BI-as-sub-application",
+    "toPath": "/deploying-bold-bi/deploying-on-windows/silent-installation/#execute-a-silent-installation-of-Bold-BI-as-sub-application"
+  },
+  {
     "fromPath": "/embedded-bi/setup/deploying-in-windows/upgrade-to-latest/#upgrading-guidelines",
     "toPath": "/deploying-bold-bi/deploying-on-windows/upgrade-to-latest/#upgrading-guidelines"
   },
@@ -50187,5 +50207,89 @@
   {
     "fromPath": "/multi-tenancy/site-administration/api-reference/",
     "toPath": "/multi-tenancy/api-reference/"
+  },
+  {
+    "fromPath": "/artificial-intelligence-and-machine-learning/qna-widget/qna-widget/",
+    "toPath": "/artificial-intelligence-and-machine-learning/qna-widget/"
+  },
+  {
+    "fromPath": "/visualizing-data/visualization-widgets/qna-widget/",
+    "toPath": "/artificial-intelligence-and-machine-learning/qna-widget/"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/overview/#registration-and-download",
+    "toPath": "/deploying-bold-bi/overview/#registration-and-download-process"
+  },
+  {
+    "fromPath": "/embed-sandbox/",
+    "toPath": "/evaluation-quick-start/"
+  },
+  {
+    "fromPath": "/getting-started/help-resources/",
+    "toPath": "/evaluation-quick-start/help-resources/"
+  },
+  {
+    "fromPath": "/getting-started/sample-dashboard/",
+    "toPath": "/evaluation-quick-start/sample-dashboard/"
+  },
+  {
+    "fromPath": "/embedding-options/iframe-embedding/dashboard-embedding-with-token-authentication/",
+    "toPath": "/embedding-options/iframe-embedding/embedding-with-token-authentication/#dashboard-embedding-with-token-authentication"
+  },
+  {
+    "fromPath": "/embedding-options/iframe-embedding/embedding-a-dashboard/",
+    "toPath": "/embedding-options/iframe-embedding/embedding-with-iframe/#embed-the-dashboard-in-an-iframe"
+  },
+  {
+    "fromPath": "/embedding-options/iframe-embedding/dashboard-embedding-with-external-sso/",
+    "toPath": "/embedding-options/iframe-embedding/embedding-with-iframe/#embed-dashboards-using-external-sso-authentication"
+  },
+  {
+    "fromPath": "/embedding-options/iframe-embedding/embedding-a-dashboard-with-views/",
+    "toPath": "/embedding-options/iframe-embedding/embedding-with-iframe/#embedding-the-dashboard-with-views"
+  },
+  {
+    "fromPath": "/embedding-options/iframe-embedding/widget-embedding-with-token-authentication/",
+    "toPath": "/embedding-options/iframe-embedding/embedding-with-token-authentication/#widget-embedding-with-token-authentication"
+  },
+  {
+    "fromPath": "/embedding-options/iframe-embedding/datasource-embedding/",
+    "toPath": "/embedding-options/iframe-embedding/embedding-with-iframe/#embed-the-data-source-using-the-iframe"
+  },
+  {
+    "fromPath": "/embedding-options/iframe-embedding/datasource-embedding-with-token-authentication/",
+    "toPath": "/embedding-options/iframe-embedding/embedding-with-token-authentication/#embed-data-source-with-token-in-bold-bi"
+  },
+  {
+    "fromPath": "/embedding-options/embedding-sdk/embedding-dashboard-designer/",
+    "toPath": "/embedding-options/embedding-sdk/embedding-using-javascript/#embed-dashboard-designer-in-your-application"
+  },
+  {
+    "fromPath": "/embedding-options/embedding-sdk/embedding-a-widget/",
+    "toPath": "/embedding-options/embedding-sdk/embedding-using-javascript/#embed-the-dashboard-widget-in-your-application"
+  },
+  {
+    "fromPath": "/embedding-options/embedding-sdk/embedding-a-datasource/",
+    "toPath": "/embedding-options/embedding-sdk/embedding-using-javascript/#embed-the-data-source-in-your-application"
+  },
+  {
+    "fromPath": "/embedding-options/embedding-sdk/embedding-multiple-dashboards-and-widgets/",
+    "toPath": "/embedding-options/embedding-sdk/embedding-using-javascript/#embed-the-multiple-dashboard-and-widgets-in-your-application"
+  },
+  {
+    "fromPath": "/embedding-options/embedding-sdk/embedding-pinboard/",
+    "toPath": "/embedding-options/embedding-sdk/embedding-using-javascript/#embed-the-pinboard-in-your-application"
+  },
+  {
+    "fromPath": "/embedding-options/embedding-sdk/embedding-the-dashboard-with-views/",
+    "toPath": "/embedding-options/embedding-sdk/embedding-using-javascript/#embed-the-dashboard-with-view-in-your-application"
+  },
+  {
+    "fromPath": "/embedding-options/embedding-sdk/embedding-multitab-dashboard-programmatically/",
+    "toPath": "/embedding-options/embedding-sdk/embedding-using-javascript/#embed-a-multitab-dashboard-programmatically"
+  },
+  {
+    "fromPath": "/security-configuration/group-based-authorization/",
+    "toPath": "/embedding-options/group-based-authorization/"
   }
 ]

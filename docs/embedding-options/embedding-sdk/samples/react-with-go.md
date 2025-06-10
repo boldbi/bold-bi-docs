@@ -18,7 +18,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/react-with-go
 * [Visual Studio Code](https://code.visualstudio.com/download)
 * [Node.js](https://nodejs.org/en/)
 
-> **NOTE:** Node.js versions 14.16 through 18.18 are supported.
+> **NOTE:** Node.js versions 18.17 to 20.15 are supported.
 
 ## How to run the sample
 
@@ -140,7 +140,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/react-with-go
  
    ![Render Dashboard](/static/assets/javascript/sample/images/react-go-renderDashboard.png)
 
-3. Before rendering, the `authorizationUrl` is called, which redirects to the `AuthorizationServer` action. This action generates the `EmbedSignature` using the embed secret from the `embedConfig.json`.
+3. Before rendering, the `authorizationUrl` is called, which redirects to the `authorizationServer` action. This action generates the `EmbedSignature` using the embed secret from the `embedConfig.json`.
     ![Authorization Server](/static/assets/javascript/sample/images/react-go-authorizeserver.png)  
   
 4. These details will be sent to the Bold BI server and will be validated there. After the details are validated, the dashboard starts to render.
@@ -164,7 +164,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/react-with-go
 
 5. Please copy the downloaded `embedConfig.json` file and paste it into the designated [location](https://github.com/boldbi/react-with-go-sample/tree/master/Go) within the application. Please make sure you have placed it in the application as shown in the following image.
 
-    ![EmbedConfig Location Image](/static/assets/javascript/sample/images/react-go-embed-setting.png)
+    ![EmbedConfig Location Image](/static/assets/javascript/sample/images/react-go-embedconfig.png)
 
 6. Create a new file called `main.go`. Next, include the provided code to retrieve data from `embedConfig.json`.
 
@@ -175,7 +175,8 @@ A GitHub link has been provided to [get](https://github.com/boldbi/react-with-go
       "crypto/sha256"
       "encoding/base64"
       "encoding/json"
-      "io/ioutil"
+      "os"
+      "io"
       "log"
       "net/http"
       "strconv"
@@ -183,27 +184,20 @@ A GitHub link has been provided to [get](https://github.com/boldbi/react-with-go
       "time"
       "fmt"
     )
-
+    var embedConfig map[string]interface{}
     type EmbedConfig struct {
       DashboardId    string `json:"DashboardId"`
       ServerUrl      string `json:"ServerUrl"`
-      UserEmail      string `json:"UserEmail"`
-      EmbedSecret    string `json:"EmbedSecret"`
       EmbedType      string `json:"EmbedType"`
       Environment    string `json:"Environment"`
-      ExpirationTime string `json:"ExpirationTime"`
       SiteIdentifier string `json:"SiteIdentifier"`
     }
 
-    // Create an instance of EmbedConfig struct
-    var config EmbedConfig
-
     func main() {
-      fmt.Println("Go server is running on port 8086")
       http.HandleFunc("/authorizationServer", authorizationServer)
       http.HandleFunc("/getServerDetails", getServerDetails)
-      log.Fatal(http.ListenAndServe(":8086", nil))	
-
+      fmt.Println("Go server is running on port 8086")
+      log.Fatal(http.ListenAndServe(":8086", nil))
     }
 
     func getServerDetails(w http.ResponseWriter, r *http.Request) {
@@ -212,147 +206,131 @@ A GitHub link has been provided to [get](https://github.com/boldbi/react-with-go
       w.Header().Set("Access-Control-Allow-Methods", "GET")
       w.Header().Set("Access-Control-Allow-Headers", "Content-Type")
 
-      data, err := ioutil.ReadFile("embedConfig.json")
+      data, err := os.ReadFile("embedConfig.json")
       if err != nil {
         log.Fatal("Error: embedConfig.json file not found.")
       }
 
-      err = json.Unmarshal(data, &config)
-      response, err := json.Marshal(config)
-      w.Write(response)
+      err = json.Unmarshal(data, &embedConfig)
+
+      // Create a custom struct to hold the specific properties you want to return.
+      clientEmbedConfigData := EmbedConfig{
+        DashboardId:    embedConfig["DashboardId"].(string),
+        ServerUrl:      embedConfig["ServerUrl"].(string),
+        SiteIdentifier: embedConfig["SiteIdentifier"].(string),
+        EmbedType:      embedConfig["EmbedType"].(string),
+        Environment:    embedConfig["Environment"].(string),
+      }
+
+      jsonResponse, err := json.Marshal(clientEmbedConfigData)
+      w.Write(jsonResponse)
     }
     ```  
 
-7. In `main.go`, include the following code and create a function called `authorizationServer()` that utilizes the `GetSignatureUrl()` method to generate the algorithm. Within this function, append the `embedQueryString`, `userEmail`, and the value obtained from the `GetSignatureUrl()` method as query parameters in the URL to retrieve details of a specific dashboard.
+7. In `main.go`, include the following code and create a function called `authorizationServer()` that utilizes the `getSignatureUrl()` method to generate the algorithm. Within this function, append the `embedQueryString`, `userEmail`, and the value obtained from the `getSignatureUrl()` method as query parameters in the URL to retrieve details of a specific dashboard.
 
     ```js
-     func authorizationServer(w http.ResponseWriter, r *http.Request) {
-          w.Header().Set("Context-Type", "application/x-www-form-urlencoded")
-          w.Header().Set("Access-Control-Allow-Origin", "*")
-          w.Header().Set("Access-Control-Allow-Methods", "POST")
-          w.Header().Set("Access-Control-Allow-Headers", "Content-Type")
-          body, err := ioutil.ReadAll(r.Body)
+    func authorizationServer(w http.ResponseWriter, r *http.Request) {
+      w.Header().Set("Context-Type", "application/x-www-form-urlencoded")
+      w.Header().Set("Access-Control-Allow-Origin", "*")
+      w.Header().Set("Access-Control-Allow-Methods", "POST")
+      w.Header().Set("Access-Control-Allow-Headers", "Content-Type")
+      body, err := io.ReadAll(r.Body)
+      if err != nil {
+        log.Fatalln(err)
+      }
+      if len(body) > 0 {
+        if queryString, err := unmarshal(string(body)); err != nil {
+          log.Println("error converting", err)
+        } else {
+          userEmail := embedConfig["UserEmail"].(string)
+          serverAPIUrl := queryString.(map[string]interface{})["dashboardServerApiUrl"].(string)
+          embedQueryString := queryString.(map[string]interface{})["embedQuerString"].(string)
+          embedQueryString += "&embed_user_email=" + userEmail
+          timeStamp := time.Now().Unix()
+          embedQueryString += "&embed_server_timestamp=" + strconv.FormatInt(timeStamp, 10)
+          signatureString, err := getSignatureUrl(embedQueryString)
+          embedDetails := "/embed/authorize?" + embedQueryString + "&embed_signature=" + signatureString
+          query := serverAPIUrl + embedDetails
+          result, err := http.Get(query)
+          if err != nil {
+            log.Println(err)
+          }
+          response, err := io.ReadAll(result.Body)
           if err != nil {
             log.Fatalln(err)
           }
-          if len(body) > 0 {
-            if queryString, err := unmarshal(string(body)); err != nil {
-              log.Println("error converting", err)
-            } else {
-              serverAPIUrl := queryString.(map[string]interface{})["dashboardServerApiUrl"].(string)
-              embedQueryString := queryString.(map[string]interface{})["embedQuerString"].(string)
-              embedQueryString += "&embed_user_email=" + config.UserEmail
-              timeStamp := time.Now().Unix()
-              embedQueryString += "&embed_server_timestamp=" + strconv.FormatInt(timeStamp, 10)
-              signatureString, err := getSignatureUrl(embedQueryString)
-              embedDetails := "/embed/authorize?" + embedQueryString + "&embed_signature=" + signatureString
-              query := serverAPIUrl + embedDetails
-              result, err := http.Get(query)
-              if err != nil {
-                log.Println(err)
-              }
-              response, err := ioutil.ReadAll(result.Body)
-              if err != nil {
-                log.Fatalln(err)
-              }
-              w.Write(response)
-            }
-          }
+          w.Write(response)
         }
+      }
+    }
 
-        func getSignatureUrl(queryData string) (string, error) {
-          encoding := ([]byte(config.EmbedSecret))
-          messageBytes := ([]byte(queryData))
-          hmacsha1 := hmac.New(sha256.New, encoding)
-          hmacsha1.Write(messageBytes)
-          sha := base64.StdEncoding.EncodeToString(hmacsha1.Sum(nil))
-          return sha, nil
-        }
+    func getSignatureUrl(queryData string) (string, error) {
+      embedSecret := embedConfig["EmbedSecret"].(string)
+      encoding := ([]byte(embedSecret))
+      messageBytes := ([]byte(queryData))
+      hmacsha1 := hmac.New(sha256.New, encoding)
+      hmacsha1.Write(messageBytes)
+      sha := base64.StdEncoding.EncodeToString(hmacsha1.Sum(nil))
+      return sha, nil
+    }
 
-        func unmarshal(data string) (interface{}, error) {
-          var iface interface{}
-          decoder := json.NewDecoder(strings.NewReader(data))
-          decoder.UseNumber()
-          if err := decoder.Decode(&iface); err != nil {
-            return nil, err
-          }
-          return iface, nil
-        }
-
-     ```
-
-8. Please create another file called `launch.json` and include the code provided below.
-    ```js
-    {
-      // Use IntelliSense to learn about possible attributes.
-      // Hover to view descriptions of existing attributes.
-      // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-      "version": "0.2.0",
-      "configurations": [
-          {
-              "name": "Launch",
-              "type": "go",
-              "request": "launch",
-              "mode": "debug",
-              "program": "${workspaceRoot}",
-              "env": {"FLASH_PORT": 8086},
-              "args": [],
-              "showLog": true
-          }
-        ]
+    func unmarshal(data string) (interface{}, error) {
+      var iface interface{}
+      decoder := json.NewDecoder(strings.NewReader(data))
+      decoder.UseNumber()
+      if err := decoder.Decode(&iface); err != nil {
+        return nil, err
+      }
+      return iface, nil
     }
     ```
 
-9. Create a folder in the desired location and open it in **Visual Studio Code**. 
+8. Create a folder in the desired location and open it in **Visual Studio Code**. 
 
-10. To create a new React project as the front-end, we need to run this command in the terminal and navigate to the directory.
+9. To create a new React project as the front-end, we need to run this command in the terminal and navigate to the directory.
     ```js
       npx create-react-app .
     ```
 
-11. Open the `src` folder. Within the `src` folder, create a new folder named `DashboardListing`. Inside the `DashboardListing` folder, create a file named `DashboardListing.js`. In the `DashboardListing.js` file, define the mandatory properties and implement the methods `renderDashboard()` to render the dashboard, `render()` to create the DOM elements, and `componentDidMount()` to contact the server as follows:
+10. Open the `src` folder. Within the `src` folder, create a new folder named `Dashboard`. Inside the `Dashboard` folder, create a file named `Dashboard.js`. In the `Dashboard.js` file, define the mandatory properties and implement the methods `renderDashboard()` to render the dashboard, `render()` to create the DOM elements, and `componentDidMount()` to contact the server as follows:
 
      ```js
-
       import React from 'react';
       import '../index';
       import { BoldBI } from '@boldbi/boldbi-embedded-sdk';
 
-      //Url of the authorizationserver action in the Go application(http://localhost:8086/authorizationserver). 
+      //Url of the authorizationserver action in the Go application(http://localhost:8086/authorizationserver).
       const authorizationUrl = "http://localhost:8086/authorizationServer";
 
-      var BoldBiObj;
-
-      class DashboardListing extends React.Component {
+      class Dashboard extends React.Component {
         constructor(props) {
           super(props);
           this.state = { toke: undefined, items: [] };
           this.BoldBiObj = new BoldBI();
         };
       }
-      export default DashboardListing;
-
+      export default Dashboard;
      ```
-12. Inside the `DashboardListing.js` file, add the code below to render the dashboard.
+
+11. Inside the `Dashboard.js` file, add the code below to render the dashboard.
     ```js
       renderDashboard(embedConfig) {
-          this.dashboard = BoldBI.create({
-            serverUrl: embedConfig.ServerUrl + "/" + embedConfig.SiteIdentifier,
-            dashboardId: embedConfig.DashboardId,
-            embedContainerId: "dashboard",
-            embedType: embedConfig.EmbedType,
-            environment: embedConfig.Environment,
-            width: "100%",
-            height: window.innerHeight + 'px',
-            expirationTime: 100000,
-            authorizationServer: {
-              url: authorizationUrl
-            }
-          });
-          this.dashboard.loadDashboard();
-        }
+        this.dashboard = BoldBI.create({
+          serverUrl: embedConfig.ServerUrl + "/" + embedConfig.SiteIdentifier,
+          dashboardId: embedConfig.DashboardId,
+          embedContainerId: "dashboard",
+          width: "100%",
+          height: window.innerHeight + 'px',
+          authorizationServer: {
+            url: authorizationUrl
+          }
+        });
+        this.dashboard.loadDashboard();
+      }
     ```
-13. Inside the `DashboardListing.js` file, add the following code: Create a DOM element with the ID `dashboard`. This element will be used in the `renderDashboard()` method to render the dashboard within it.
+
+12. Inside the `Dashboard.js` file, add the following code: Create a DOM element with the ID `dashboard`. This element will be used in the `renderDashboard()` method to render the dashboard within it.
     ```js
      render() {
           return (
@@ -365,63 +343,71 @@ A GitHub link has been provided to [get](https://github.com/boldbi/react-with-go
         }
     ```
 
-14. Inside the `DashboardListing.js` file, add the following code: The `componentDidMount()` method contacts the server to retrieve the token. With this token, specific dashboard details are collected and passed to the `renderDashboard()` method for rendering.
+13. Inside the `Dashboard.js` file, add the following code: The `componentDidMount()` method contacts the server to retrieve the token. With this token, specific dashboard details are collected and passed to the `renderDashboard()` method for rendering.
 
-    ![Dashboard](/static/assets/javascript/sample/images/react-go-dashboardListing.png)
+    ![Dashboard](/static/assets/javascript/sample/images/react-go-dashboard.png)
     ```js
        async componentDidMount() {
-          try {
-            const response = await fetch('http://localhost:8086/getServerDetails');
-            const data = await response.json();
-            this.setState({ embedConfig: data });
-            const embedConfig = this.state.embedConfig;
-            this.renderDashboard(embedConfig);
-          } catch (error) {
-            console.log("Error: embedConfig.json file not found.");
-            this.setState({ toke: "error", items: "error" });
-          }
+       try {
+          const response = await fetch('http://localhost:8086/getServerDetails');
+          const embedConfig = await response.json();
+          this.renderDashboard(embedConfig);  
+        } catch (error) {
+          console.log("Error: embedConfig.json file not found.");
+          this.setState({ toke: "error", items: "error" });
         }
+      }
     ```
-15. Open the `App.js` folder and replace the following code: The code imports the necessary modules, defines the `App` component, renders the `DashboardListing` component, and exports it for use in other files.
+
+14. Open the `App.js` folder and replace the following code: The code imports the necessary modules, defines the `App` component, renders the `Dashboard` component, and exports it for use in other files.
 
     ```js
       import React from 'react';
       import './App.css';
-      import DashboardListing from './DashboardListing/DashboardListing';
+      import Dashboard from './Dashboard/Dashboard';
 
       class App extends React.Component {
         render() {
           return (
             <div>
-            <DashboardListing/>
+            <Dashboard/>
             </div>
           );
         }
       }
+
       export default App;
     ```
-16.  Open the `Index.js` file and replace the following code: These lines of code import the necessary modules `React` and `ReactDOM`.They also import the `App` component and use `ReactDOM.render` to render the App component into the specified HTML element.
+
+15.  Open the `index.js` file and replace the following code: These lines of code import the necessary modules `React` and `createRoot`. They also import the `App` component and use `createRoot.render` to render the App component into the specified HTML element.
       
       ```js
       import React from 'react';
-      import ReactDOM from 'react-dom';
+      import {createRoot } from 'react-dom/client';
       import App from './App';
+      import * as serviceWorker from './serviceWorker';
 
-      ReactDOM.render(<App />, document.getElementById('root'));
+      createRoot(document.getElementById('root')).render(<App />);
+
+      // If you want your app to work offline and load faster, you can change
+      // unregister() to register() below. Note this comes with some pitfalls.
+      // Learn more about service workers: https://bit.ly/CRA-PWA
+      serviceWorker.unregister();
       ```
-17. Please replace the code in `package.json` with the `packages` listed in the following dependencies section. Installing these packages is essential.
+
+16. Please replace the code in `package.json` with the `packages` listed in the following dependencies section. Installing these packages is essential.
    
       ```js
-        {
-        "name": "react-sample",
+      {
+        "name": "embedded-bi-react",
         "version": "0.1.0",
         "private": true,
         "dependencies": {
-          "@boldbi/boldbi-embedded-sdk": "6.11.10",
+          "@boldbi/boldbi-embedded-sdk": "^12.1.5",
           "@testing-library/jest-dom": "^5.17.0",
           "@testing-library/react": "^13.4.0",
           "@testing-library/user-event": "^13.5.0",
-          "axios": "^0.19.2",
+          "axios": "^0.28.0",
           "jquery": "^3.5.1",
           "react": "^18.2.0",
           "react-dom": "^18.2.0",
@@ -454,6 +440,6 @@ A GitHub link has been provided to [get](https://github.com/boldbi/react-with-go
       }
       ```
 
- 18. Next, execute the `Go` application by running the command `go main.go`.
+ 17. Next, execute the `Go` application by running the command `go run main.go`.
 
- 19. To begin, open the `React` application and install the required dependencies using the command `npm install`. After installation, run the sample by executing the command `npm run serve` to render the dashboard.
+ 18. To begin, open the `React` application and install the required dependencies using the command `npm install`. After installation, run the sample by executing the command `npm start` to render the dashboard.

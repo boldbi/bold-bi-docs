@@ -402,7 +402,7 @@ This option allows you to set the number of records that need to be fetched on i
 
 ### Legend Settings
 
-![Legend settings](/static/assets/visualizing-data/visualization-widgets/images/column-chart/legend-settings.png)
+![Legend settings](/static/assets/visualizing-data/visualization-widgets/images/column-chart/chart-legend-setting.png)
 
 #### Show legend
 
@@ -452,6 +452,47 @@ This option will hide the legends in the chart area, resulting in increased char
 The chart legend dropdown option can be used to simplify viewing complex charts with multiple data sources. For example, if you have a chart displaying sales data for the different years, you can use the legend dropdown to deselect all other years and focus only on a specific year.
 
 ![Legend item as dropdown](/static/assets/visualizing-data/visualization-widgets/images/column-chart/legend-as-dropdown.png)
+
+#### Legend Alignment
+
+The Legend Alignment allows you to adjust the alignment of the legend within its designated area. You can choose from four alignment options: **Near, Center, Far,** and **None**.
+
+For further legend's placement details are in the below table.
+
+<table>
+<tr><td>
+<b>Alignment
+</b></td><td><b>
+Description</b></td>
+</tr><tr><td>
+Near</td>
+<td>
+Aligns the legend to the start (top or left, depending on position).</td>
+</tr><tr><td>
+Center</td>
+<td>
+Positions the legend in the middle of the available space.</td>
+</tr><tr><td>
+Far</td>
+<td>
+Aligns the legend to the end (bottom or right, depending on position).</td>
+</tr><tr><td>
+None</td>
+<td>
+Leaves the legend unaligned, allowing default rendering.</td>
+</tr></table>
+
+This enhancement allows users to control both the position and alignment of the legend, providing greater flexibility in customizing the chart’s appearance to meet specific design or layout needs.
+
+When Position is set to `Auto` and Alignment is set to `None`, the legend will appear as shown in the image below.
+
+![Legend Alignment Customization](/static/assets/visualizing-data/visualization-widgets/images/column-chart/chart-legend-custom1.png)
+
+When Position is set to `Top` and Alignment is set to `Near`, the legend will appear as shown in the image below.
+
+![Legend Alignment Customization](/static/assets/visualizing-data/visualization-widgets/images/column-chart/chart-legend-custom2.png)
+
+You can similarly customize position and alignment in various scenarios.
 
 #### Legend Shape
 
@@ -544,6 +585,12 @@ This enables you to personalize the color of the axis title.
 This feature allows you to customize the color of the axis labels.
 
 ![Label color](/static/assets/visualizing-data/visualization-widgets/images/column-chart/label-color.png)
+
+#### Show Axis Border
+
+This option allows you to enable or disable the axis border of the chart.
+
+![Show axis border](/static/assets/visualizing-data/visualization-widgets/images/column-chart/show-axis-border.png)
 
 #### Show category axis
 

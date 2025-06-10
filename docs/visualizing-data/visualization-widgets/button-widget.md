@@ -126,10 +126,59 @@ There is an option to rotate the background image in the Button widget according
 
 ## Link
 
-The Link option in the button widget allows the user to add a link that will be navigated when the widget is clicked.
+The Link option in the button widget allows users to navigate to a specified link or dashboard when the widget is clicked.
+
+There are two options available:
+1. Dashboard
+2. URL
+
+### Dashboard
+
+In the dashboard section, users can select the dashboard they wish to navigate to using the button widget. The selected dashboard will be rendered using the same instance as the parent dashboard. Users can also pass filter details from the parent dashboard to the target dashboard.
+
+**How to configure**
+
+In the properties of the button widget, where you will find the "Select Dashboard" option under the "Link" category. Clicking on "Select Dashboard" will open a dialog box displaying relevant categories and dashboards based on user permissions. Users can either double-click a dashboard file to select it or choose the dashboard and click the "Apply" button at the bottom of the dialog. 
+
+![Select button](/static/assets/visualizing-data/visualization-widgets/images/button-widget/select_button.png)
+
+![Select dashboard](/static/assets/visualizing-data/visualization-widgets/images/button-widget/select_dashboard.png)
+
+**Pass Filter Details**
+
+While navigating between dashboards, you can pass filter information from one dashboard to the target dashboard. For example, consider a combo box filter widget filtering the country values to Brazil. After navigation, the same filter will be applied to the child dashboard.
+
+![Parent dashboard](/static/assets/visualizing-data/visualization-widgets/images/button-widget/filter-image-one.png)
+
+![Child dashboard](/static/assets/visualizing-data/visualization-widgets/images/button-widget/filter-image-two.png)
+
+If no filter widgets are present in the child dashboard to receive filters from the parent dashboard, the passed filter will act as a URL filter to filter the child dashboard.
+
+![Filtering URL](/static/assets/visualizing-data/visualization-widgets/images/button-widget/filter-image-url.png)
+
+> **NOTE:**
+> 1. To pass filters between dashboards, users must configure the same data source for all dashboards.
+> 2. If a URL filter is applied to the navigating dashboard, only the filter is applied; the URL will not change.
+
+### URL
 
 ![Link URL](/static/assets/visualizing-data/visualization-widgets/images/button-widget/link-url.png)
 
 The URL to be navigated should be entered in the `URL` text box, after which the `Mode` can be selected. This selection determines how the added URL will be displayed: in a `New Tab`, `Same Page`, `Current Frame`, `Parent Frame`, `Pop Up`, or `New Window`. Based on the selected mode, the URL entered in the text box will be rendered when the button widget is clicked.
 
+### Include Master Widget Filters
+
+This option allows the selected filter values from the chosen master widget to be automatically passed to the navigated dashboard via the `URL parameters`, without the need to manually append parameters. It applies to both `Dashboard` and `URL` navigation types.
+
+![Include Master Widget Filters](/static/assets/visualizing-data/visualization-widgets/images/button-widget/IncludeMasterWidgetsFilter.png)
+
+You can select the master widgets from the `Choose Master Widgets` dropdown. It will display the configured master widgets in the current dashboard. By default, all widgets are selected.
+
+![Choose Master Widgets](/static/assets/visualizing-data/visualization-widgets/images/button-widget/Choosemasterwidgets.png)
+
+For example, in the dashboard shown below, the Year-configured filter widget is used as the chosen master widget for the slave widget, with 2024 selected as the value. Upon navigation, the selected value is automatically passed to the destination dashboard via a `URL parameter`.
+
+![Example Passing Filter](/static/assets/visualizing-data/visualization-widgets/images/button-widget/examplefilterurl.png)
+
+> **NOTE:** If the selected master widgets are not filtered, then no values should be passed to the `Dashboard` or `URL`.
 

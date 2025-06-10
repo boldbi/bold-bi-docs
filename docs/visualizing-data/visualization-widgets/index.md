@@ -90,6 +90,4 @@ You can explore working with the dashboard in detail here:
 
 [Tab Widget](/visualizing-data/visualization-widgets/tab-widget/)
 
-[Q&A widget](/visualizing-data/visualization-widgets/qna-widget/)
-
 [Button Widget](/visualizing-data/visualization-widgets/button-widget/)

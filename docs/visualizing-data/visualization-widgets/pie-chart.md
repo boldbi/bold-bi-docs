@@ -405,6 +405,10 @@ The chart legend dropdown option can be used to simplify viewing complex charts 
 
 ![Legend item as dropdown](/static/assets/visualizing-data/visualization-widgets/images/pie-chart/legend-as-dropdown.png)
 
+### Legend Alignment
+
+Legend Alignment enables you to control how the legend is positioned within its allocated space. For detailed guidance, refer to the [Legend Alignment](/visualizing-data/visualization-widgets/column-chart/#legend-alignment) section.
+
 #### Legend Shape
 
 This allows you change the **shape** of the legend.

@@ -14,7 +14,7 @@ This section explains how to install and deploy Bold BI Enterprise.
 
 This topic outlines the steps necessary for installing Bold BI Enterprise.
 
-To view the system requirements for deploying Bold BI Enterprise in a business setting, refer to the [System Requirements](/deploying-bold-bi/overview/#prerequisites).
+To view the system requirements for deploying Bold BI Enterprise in a business setting, refer to the [System Requirements](/deploying-bold-bi/deploying-on-windows/prerequisites-windows/).
 
 Run the Bold BI Enterprise Installer.
 
@@ -39,6 +39,14 @@ You need to input the port number, location, and site name to host Bold BI Enter
 ![Installation Chromium Packages](/static/assets/installation-and-deployment/images/installation-chromium-packages.png)  
 
 > **NOTE:** If you encounter any issues with your internet connection or lack one, deselect the Chromium Packages download option and proceed with the installation. For manual installation of the Chromium Packages, refer to [this guide](https://support.boldbi.com/kb/article/16581/how-to-install-chromium-packages-manually).
+
+## Bold Data Hub
+
+> **IMPORTANT:** Bold Data Hub is designed to load data from various sources into the Bold BI Data Store database, and other databases such as PostgreSQL, MSSQL, MySQL, Apache Doris and Apache Doris. It offers flexible scheduling options to automate data extraction at regular intervals and supports data transformation using SQL scripts.
+
+![Installation Bold Data Hub](/static/assets/installation-and-deployment/images/installation-bold-datahub.png)
+
+> **NOTE:** By default, Python 3.11 is installed with Bold Data Hub if the same version of Python is not already installed.
 
 ## Client libraries
 

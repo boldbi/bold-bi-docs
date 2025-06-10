@@ -14,11 +14,11 @@ A GitHub link has been provided to [get](https://github.com/boldbi/react-with-as
 
 ## Prerequisites
 
- * [.NET Core 6.0 or later](https://dotnet.microsoft.com/en-us/download/dotnet-core)
+ * [.NET Core 8.0](https://dotnet.microsoft.com/en-us/download/dotnet-core)
  * [Node.js](https://nodejs.org/en/)
  * [Visual Studio Code](https://code.visualstudio.com/download)
 
-> **NOTE:** Node.js versions 14.16 to 18.18 are supported.
+> **NOTE:** Node.js versions 18.18 to 20.15 are supported.
 
 ## How to run the sample
 

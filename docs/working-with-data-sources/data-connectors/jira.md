@@ -7,7 +7,7 @@ documentation: ug
 ---
 
 # Connecting Bold BI to Jira data source
-The Bold BI dashboard designer supports connecting to Jira web services through the REST API. 
+The Bold BI dashboard designer supports connecting to both Jira and Jira Service Management (JSM) web services through the REST API.
 
 ## Choose Jira data source
 To configure the Jira data source, follow the below steps:
@@ -23,12 +23,6 @@ To configure the Jira data source, follow the below steps:
 > **NOTE:** You can also create a data source from the home page by clicking the **Data Sources** menu on the left menu panel and selecting **Create Data Source** from the data sources page.
 
    ![Choose data source from server](/static/assets/working-with-datasource/data-connectors/images/Jira/ChooseDS_Server.png)
-
-## Advanced
-In Advanced category, It will Redirect to the Bold ETL. Refer [Bold ETL](/managing-resources/manage-data-sources/#advanced-category).
-
-## Basic
-In the Basic Category, It will act as the connector in Bold BI. And need to follow the below steps.
 
 ## Create Jira data source
 Once you click the data source, the NEW DATA SOURCE configuration panel will open. Follow the steps below to create a Jira data source.

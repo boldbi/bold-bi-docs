@@ -8,6 +8,10 @@ documentation: ug
 
 # Dashboard Performance Metrics
 
+The Dashboard allows you to enable or disable specific dashboard metrics options in the dashboard properties section. By default, metrics options is enabled.
+
+![Metrics Option](/static/assets/working-with-dashboards/images/enable-metrics-settings.png)
+
 The Dashboard Performance Metrics pop-up allows you to view detailed performance metrics for overall layout rendering and parsing times as well as the processing times for individual widgets. The `Metrics` option is available in the drop-down menu located in the upper right corner of the dashboard title section.
 
 ![Metrics Option](/static/assets/working-with-dashboards/images/mertics-option.png)

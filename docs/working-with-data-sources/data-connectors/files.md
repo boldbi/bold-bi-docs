@@ -28,7 +28,19 @@ To configure the Files data source, follow the below steps:
 ## Create Files (JSON, XML, CSV) data source
 Once you click on the data source, the NEW DATA SOURCE configuration panel will open. Follow the steps below to create the data source.
 1. Enter a name and description (optional) for the data source.
-2. Upload a file based on selected file type data source.
+2. Choose the Extract Engine
+3. Upload a file based on selected file type data source.
+
+## Extract Engine
+You can connect to the data source using one of the following extract methods:
+   
+   ![Extract Engine](/static/assets/working-with-datasource/images/Extract_Engine.png)
+   
+- **Bold BI Extract**: Data will be extracted and managed directly within Bold BI.
+- **Data Hub**: Data extraction is handled through the Data Hub. An equivalent pipeline is created, utilizing the Data Hub’s Extract, Transform, Load (ETL) capabilities to filter, optimize, or transform the data, and to generate new tables.
+- To view the equivalent pipeline created for data extraction, navigate to the Query Designer page and click on View Pipeline.
+
+    ![Refresh Setting](/static/assets/working-with-datasource/images/View_Pipeline.png)
 
 > **NOTE:** You can preview data with a file size less than or equal to `200 megabytes`.
 

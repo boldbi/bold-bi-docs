@@ -278,9 +278,15 @@ Here is a dashboard view illustrating the use of parameters with measure paramet
 
 You can also pass parameter values with special characters to filter. To use a value with special characters, you can pass the value inside square brackets as shown below:
 
+**Syntax for a single value**
+
 `http://<servername>/<culturename>/dashboards/<dashboardid>/<category>/<dashboardname>?DimensionTypeParameter=[value"!@"]`
 
-<table style="margin-right: 100%; width: 30%;">
+**Syntax for multiple values**
+
+`http://<servername>/<culturename>/dashboards/<dashboardid>/<category>/<dashboardname>?DimensionTypeParameter=IN([value1"!@"],[value2"!@"])`
+
+<table style="margin: 14px 0px; width: 30%;">
 <tr><td><b>Special Characters</b></td></tr>
 <tr><td>!</td></tr>
 <tr><td>%</td></tr>
@@ -309,7 +315,9 @@ You can also pass parameter values with special characters to filter. To use a v
 
 Here is a dashboard view illustrating the use of parameters with special characters.
 
-![Special Characters](/static/assets/working-with-dashboards/preview-dashboards/images/Special_char.png)
+![Special Characters For Single Value](/static/assets/working-with-dashboards/preview-dashboards/images/Special_char.png)
+
+![Special Characters For Multiple Value](/static/assets/working-with-dashboards/preview-dashboards/images/MultiSpecial_char.png)
 
 ## Passing Keywords with URL
 
@@ -317,7 +325,7 @@ The following keywords are used for our internal purposes. If you have any of th
 
 `http://<servername>/<culturename>/dashboards/<dashboardid>/<category>/<dashboardname>?[Keywords]=value`
 
-<table style="margin-right: 100%; width: 30%;">
+<table style="margin: 14px 0px; width: 30%;">
 <tr><td><b>Keywords</b></td></tr>
 <tr><td>Id</td></tr>
 <tr><td>Comment</td></tr>
@@ -368,6 +376,17 @@ You can pass more than one parameter within a URL by introducing an ampersand (&
 Here is a dashboard view illustrating the same.
 
 ![Two Different Parameter](/static/assets/working-with-dashboards/preview-dashboards/images/OR_AND_filter.png)
+
+## Grouped URL Parameters
+
+The Grouped URL Parameters feature allows users to filter values using multiple conditions combined with AND/OR operators. This is achieved by enclosing the conditions within parentheses to define the logical grouping, as shown below:
+
+`http://<servername>/<culturename>/dashboards/<dashboardid>/<category>/<dashboardname>?(((CustomerID=ALFKI&OrderID=10643)&City=Berlin)|(ProductName=Aniseed Syrup&Country=Austria, USA))`
+
+Below is a dashboard view illustrating this concept:
+![Grouped URL Parameters](/static/assets/working-with-dashboards/preview-dashboards/images/grouped-url_parameters.png)
+
+> **NOTE:** Parameters cannot be used within grouped URLs.
 
 ## Limitations of URL Parameter
 

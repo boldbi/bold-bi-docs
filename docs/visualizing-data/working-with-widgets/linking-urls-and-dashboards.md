@@ -143,3 +143,36 @@ Preview the dashboard, then click the `Link` option from the widget. After openi
 ![Advanced window](/static/assets/visualizing-data/working-with-widgets/images/linking-encryption.png#max-width=100%)
 
 ![Advanced window](/static/assets/visualizing-data/working-with-widgets/images/encryption-result.png#max-width=100%)
+
+## Include Master Widget Filters
+
+This option allows the selected filter values from the chosen master widget to be automatically passed to the navigated dashboard via the `URL parameters`, without the need to manually append parameters.
+
+![Include Master Widget Filters](/static/assets/visualizing-data/working-with-widgets/images/IncludeMasterWidgetsFilter.png)
+
+You can select the master widgets from the `Choose Master Widgets` dropdown. It will display the configured master widgets in the current dashboard. By default, all widgets are selected.
+
+![Choose Master Widgets](/static/assets/visualizing-data/working-with-widgets/images/Choosemasterwidgets.png)
+
+For example, in the dashboard shown below, the Year-configured filter widget is used as the chosen master widget for the slave widget, with 2024 selected as the value. Upon navigation, the selected value is automatically passed to the destination dashboard via a `URL parameter`.
+
+![Example Passing Filter](/static/assets/visualizing-data/working-with-widgets/images/examplefilterurl.png)
+
+> **NOTE:** If the selected master widgets are not filtered, then no values should be passed to the `URL`.
+
+## URL Query Parameter Mapping
+
+This allows you to replace the long query parameters with mapped key, which is used in the URL text area under the `Link` category in the `Properties` tab of the widget.
+
+To enable this property, select the `URL Query Parameter Mapping` checkbox as shown in the following image.
+
+![URL Mapping Link property](/static/assets/visualizing-data/working-with-widgets/images/mappingURLProperty.png)
+
+Open the dashboard and click the `Link` option on the widget. The linked dashboard will then open and appear as shown in the image below.
+
+![URL Mapping Link option](/static/assets/visualizing-data/working-with-widgets/images/mapPreviewLink.png)
+
+![URL Mapping Link](/static/assets/visualizing-data/working-with-widgets/images/mappingURL.png)
+
+
+>**NOTE:** This is applicable only when the dashboard is in view mode.
