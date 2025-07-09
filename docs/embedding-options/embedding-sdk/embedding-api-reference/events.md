@@ -413,6 +413,12 @@ This event will be triggered before the URL linking navigations are called.
 <td class="description">Will holds the linking information</td>
 </tr>
 <tr>
+<td class="name">masterWidgetInfo</td>
+<td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type">object</span></td>
+<td class="access">get</td>
+<td class="description">Will holds the master widget information, which includes the widget name, unique widget name, and filter information. The filter information contains the filter value, column name, and column type.</td>
+</tr>
+<tr>
 <td class="name">model</td>
 <td class="type"><ts ref="ej.DashboardViewer.Model"/><span class="param-type"><a href=/embedding-options/embedding-sdk/embedding-api-reference/events/#dashboardproperties>object</a></span></td>
 <td class="access">get</td>

@@ -60,24 +60,28 @@ Publish the dashboard to the sites created in the same Bold BI server.
 
    ![Make Public Dashboard](/static/assets/resource-migration/migrate-dashboards-online/images/make-public-in-destination-site.png#width=55%)
 
-9. You can choose the owner (who has permission to create a dashboard, data source, and category) of the dashboard in the published site using the `Advanced` option. If you do not, it will publish the dashboard with a random user (who has permission to create the dashboard, data source, and category).
+9. Select the `Skip All Data Source Publishing on the Target Site to Use Existing Data Sources` checkbox to avoid publishing data sources that are already published on the target site.
+
+   ![Skip Data Source Publish](/static/assets/managing-resources/manage-dashboards/images/skip-datasource-publish.png#width=55%)
+
+10. You can choose the owner (who has permission to create a dashboard, data source, and category) of the dashboard in the published site using the `Advanced` option. If you do not, it will publish the dashboard with a random user (who has permission to create the dashboard, data source, and category).
 
    ![Select Owner in Advanced](/static/assets/resource-migration/migrate-dashboards-online/images/advanced-owner.png#width=55%)
 
-10. You can individually configure the fields in the `Advanced` window.
+11. You can individually configure the fields in the `Advanced` window.
 
    ![Advanced Fields](/static/assets/resource-migration/migrate-dashboards-online/images/advanced-field.png#width=55%)
 
-11. To publish the dashboard in the same category from the source site to the destination site, check the `Use souce category name` box and select a category from the dropdown menu using the `Advanced` option.
+12. To publish the dashboard in the same category from the source site to the destination site, check the `Use souce category name` box and select a category from the dropdown menu using the `Advanced` option.
 
-![Use Source Category](/static/assets/resource-migration/migrate-dashboards-online/images/use-source-category-enabled.png#width=55%)
+   ![Use Source Category](/static/assets/resource-migration/migrate-dashboards-online/images/use-source-category-enabled.png#width=55%)
 
-12. If you want to publish in a different category, uncheck the box and enter the category name in the text field to which need to be published.
+13. If you want to publish in a different category, uncheck the box and enter the category name in the text field to which need to be published.
 
    ![Use Source Category disabled](/static/assets/resource-migration/migrate-dashboards-online/images/use-source-category-disabled.png#width=55%)
 
 
-13. By submitting the form, the publishing process will be started and you can check the status of the publishing in the **Published Resources** page.
+14. By submitting the form, the publishing process will be started and you can check the status of the publishing in the **Published Resources** page.
 
     ![Submit Publish](/static/assets/resource-migration/migrate-dashboards-online/images/submit-publish.png#width=55%)
 

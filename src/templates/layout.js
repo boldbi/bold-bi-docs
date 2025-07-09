@@ -1022,9 +1022,11 @@ function helpBotChat() {
 					        '</div>';
 
 	document.body.insertAdjacentHTML('beforeend', helpbot);
-	document.querySelector(".helpbot-chat-button").addEventListener("click", function () {
-		window.open("https://helpbot.boldbi.com/", "_blank");
-	});
+document.querySelectorAll(".helpbot-chat-button").forEach(function(button) {
+    button.addEventListener("click", function() {
+        window.open("https://helpbot.boldbi.com/", "_blank");
+    });
+});
 }
 
 const RightToc = styled.div`

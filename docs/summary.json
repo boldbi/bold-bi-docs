@@ -59,6 +59,7 @@
 				"Bold BI on CentOS": "bold-bi-on-centos",
 				"Bold BI on Oracle": "bold-bi-on-oracle",
 				"Bold BI on RHEL": "bold-bi-on-redhat",
+				"Bold BI on RHEL Using RPM": "bold-bi-using-rpm",
 				"Bold BI on SUSE 15 Linux": "bold-bi-on-open",
 				"Auto Deployment": "auto-deployment",
 				"Bold BI over Bold Reports": "bold-bi-over-bold-reports"
@@ -298,6 +299,7 @@
 			"ODBC": "odbc",
 			"Optimizely": "optimizely",
 			"Oracle": "oracle",
+			"Oracle NetSuite": "oracle-netsuite",
 			"Origami": "origami",
 			"Pipeline Deals": "pipeline-deals",
 			"Pipedrive": "pipedrive",
@@ -381,15 +383,18 @@
 		"Relationship Between Bold Data Hub and Bold BI Data Sources": "relationship-between-bold-data-hub-pipeline-and-associated-data-sources-in-boldbi",
 		"Data Connectors": 
 		{
+			"Asana": "asana",
 			"Facebook Ads": "facebook-ads",
 			"FileSystem": "file-system",
 			"GitHub": "github",
 			"Google Analytics": "google-analytics",
 			"Google Ads": "google-ads",
-			"Google Sheets": "google-sheets",			
+			"Google Sheets": "google-sheets",
+			"Google BigQuery": "google-bigquery",			
 			"Matomo": "matomo",
 			"HubSpot": "hubspot",			
-			"Jira": "jira",			
+			"Jira": "jira",	
+			"MariaDB": "mariadb",		
 			"Microsoft SQL Server": "microsoft-sql-server",
 			"MongoDB": "mongodb",
 			"Mux": "multiplexer",
@@ -401,6 +406,7 @@
 			"Pipedrive": "pipedrive",
 			"PostgreSQL": "postgresql",
 			"Salesforce": "salesforce",
+			"SQLite": "sqlite",
 			"Slack": "slack",
 			"Web": "web",			
 			"Stripe": "strip",
@@ -552,7 +558,8 @@
 			"AI Copilot": "ai-copilot",
 			"AI Agent": "ai-agent",
 			"Dashboard Summary": "dashboard-summary",
-        	"Widget Insights": "widget-insights"
+        	"Widget Insights": "widget-insights",
+			"Prompt To Dashboard": "dashboard-creation"
 		},
 		"Q&A Widget": "qna-widget",
 		"Forecasting": "time-series-forecasting"
@@ -588,7 +595,8 @@
 		"Self Deployment": "security-in-embed-bi",
         "Data Security Configuration":"data-security-configuration",
 		"Audit Logs": "audit-logs",
-		"Concierge Support Settings": "concierge-support-settings"
+		"Concierge Support Settings": "concierge-support-settings",
+		"Enable CHIPS for Cross-Site IFrame Embedding": "enable-chips-for-iframe-embedding"
 	},
     "Site Administration": {
 		"Site Settings": "site-settings",
@@ -733,6 +741,7 @@
 		"Create A Tenant": "create-new-site",
 		"Site Administration": {
 			"Rebranding": "rebranding",
+			"Proxy Settings": "proxy-settings",
 			"Email Settings": {
 				"Configuration": {
 					"SMTP": "smtp-account",

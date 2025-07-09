@@ -2380,12 +2380,15 @@ dashboard.loadDashboard();
 ```js
 var dashboard = BoldBI.create({
     embedAiAssistant: {
-        enabled: true
+        enabled: true,
+         summary: {
+          }
     }
 });
 dashboard.loadDashboard();
 ```
 
+> **Note:** To enable the AI Assistant, it is necessary to provide a summary block, as this is a known issue in version 12.1.5.
 
 <h2 class="doc-prop-wrapper" id="name" data-Path="name-name">
 <a href="#name" aria-hidden="true" class="anchor">
@@ -2413,12 +2416,16 @@ Using the API to customize the title of AI assistant as we desired. To use this,
 ```js
 var dashboard = BoldBI.create({
      embedAiAssistant: {
-          enabled: true
-          name: "Embeded AI"
+          enabled: true,
+          name: "Embedded AI",
+          summary: {
+          }
      }   
 });
 dashboard.loadDashboard();
 ```
+
+> **Note:** To customize the title of AI Assistant, it is necessary to provide a summary block, as this is a known issue in version 12.1.5.
 
 <h2 class="doc-prop-wrapper" id="enableaisummary" data-Path="enableaisummary-enableAiSummary">
   <a href="#enableaisummary" aria-hidden="true" class="anchor">

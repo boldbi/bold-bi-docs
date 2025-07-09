@@ -107,7 +107,7 @@ Example: To fetch the value of the **project -> name** field, add `project` to t
 2. Select **GET** method for the REST API in **Method** combo box.
 
 #### How do I get API Token for connecting Jira data source?
-1. Log in to [Generate an API Token](https://id.atlassian.com/manage/api-tokens).
+1. Log in to [Generate an API Token](https://id.atlassian.com/manage-profile/security/api-tokens).
 2. Click Create API token.
 3. From the dialog that appears, enter a memorable and concise Label for your token and click **Create**.
 4. Click Copy to clipboard, then paste the token to your script, or elsewhere to save.

@@ -169,11 +169,15 @@ In advanced mode, the user can select the preferred storage type, either File St
 
 > **NOTE:** The default storage type is `File Storage`.
 
-The user can select the Blob Storage by providing the Azure Blob Credential in the required field.  
+The user can select the desired storage option from the `Storage Type` dropdown by providing the required credentials in the respective fields.
 
-![Site Blob Storage](/static/assets/application-startup/images/blob-storage.png)  
+Supported storage options include:
 
-You can find the details on how to configure the [Azure Blob](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal).
+* **Azure Blob Storage:** Provide the Azure Blob credentials in the required field. You can find the details on how to configure the [Azure Blob](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal).
+* **Oracle Cloud Infrastructure (OCI) Object Storage:** Provide the required Oracle credentials such as OCI Access Key, Secret Key, and Bucket Name, Root Folder Name, Region, NameSpace.
+* **Amazon S3:** Enter the AWS Access Key, Secret Key, and Bucket Name, Root Folder Name, Region details to configure S3 storage. You can find the details on how to configure the [Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/creating-bucket.html).
+
+![Site Blob Storage](/static/assets/application-startup/images/storage-selection.png)
 
 ## Database Options
 

@@ -47,45 +47,47 @@ The following software requirements are necessary to run the Bold BI Enterprise 
 
 ## Registration and Download Process:
 
-1. Visit the [Pricing Page](https://www.boldbi.com/pricing) to register and download the Bold BI Enterprise application. On this page, you can view two types of plans. Depending on your needs, you can choose the plan that suits you best.
+1. Visit the [Pricing Page](https://www.boldbi.com/pricing/) to register and download the Bold BI Enterprise application, where you can view two types of plans. The platform offers simple and transparent pricing tailored to every business need. You can choose between:
 
-    1.  **Self Service BI** - Used for deployment as a stand-alone BI platform for internal and external users.
+    1. **On Premise** - Deploy within your own infrastructure for full control over data and environment security.
 
         ![Bold BI pricing page](/static/assets/installation-and-deployment/embedded-edition-overview-images/bold-bi-pricing-page.png)
 
-    2. **Embedded BI** - Used for embedding as a complete BI solution within your software applications.
+    2. **Cloud** - Access and scale easily with cloud services, focusing on efficient, hardware-free analytics.
 
-        ![Bold BI pricing page](/static/assets/installation-and-deployment/embedded-edition-overview-images/bold-bi-pricing-page-embedded.png)
+        ![Bold BI pricing page](/static/assets/installation-and-deployment/embedded-edition-overview-images/bold-bi-pricing-cloud.png)
 
-2. Based on your selected plan, you can view cost details in the total summary column.
+2. Based on your selected plan, you can view the cost details in the plan summary:
 
-    ![Try it for Free](/static/assets/installation-and-deployment/embedded-edition-overview-images/total-summary-details.png)
+    ![Try it for Free](/static/assets/installation-and-deployment/embedded-edition-overview-images/plan-details.png)
  
-2. To start a new trial, select `TRY FOR FREE`.
+3. To start a new trial, select `Start Free Trial`.
 
     ![Try it for Free](/static/assets/installation-and-deployment/embedded-edition-overview-images/try-for-free.png)
 
-3. Provide your email address on the registration page and select `Download Free Trial`.
+4. Click `Start with Bold BI` to sign up using Google, Microsoft, or Syncfusion, or enter your details manually to begin your free 30 day trial and agree to the terms.
 
-    ![Try Bold BI Free](/static/assets/installation-and-deployment/embedded-edition-overview-images/try-bold-bi-free-page.png)
+    ![Try Bold BI Free](/static/assets/installation-and-deployment/embedded-edition-overview-images/30-day-free-trial.png)
 
-4. `Verify your email address` by clicking on the link sent to your email.
+6. Simultaneously, you will be redirected to the next page. You can automatically retrieve account information for your name and email ID. Entering your work email address and company is optional. Then, click `Proceed to complete`.
 
-     ![Email Verification Mail](/static/assets/installation-and-deployment/embedded-edition-overview-images/email-verification-mail-page.png)
+     ![Verify Email Address](/static/assets/installation-and-deployment/embedded-edition-overview-images/proceed-to-complete-page.png)
 
-     ![Verify Email Address](/static/assets/installation-and-deployment/embedded-edition-overview-images/verify-email-address-page.png)
-    
-5. On the **Create Password** Page, enter a new password for your account and click `Continue`.
+7. Wait for the trial registration to complete. 
 
-     ![Create Password](/static/assets/installation-and-deployment/embedded-edition-overview-images/create-password.png)
+    ![Verify Email Address](/static/assets/installation-and-deployment/embedded-edition-overview-images/processing-page.png)
 
-6. Fill out the necessary information and select `Proceed to Download`.
+6. You'll be redirected to the `Cloud BI Dashboard page` to explore Bold BI’s features, where you can explore and manage your dashboards. 
 
-     ![Proceed to Download](/static/assets/installation-and-deployment/embedded-edition-overview-images/proceed-to-download-page.png)
+     ![Verify Email Address](/static/assets/installation-and-deployment/embedded-edition-overview-images/cloud-bi-page.png)
+
+7. Click on your profile icon at the top right, then select **View Account** to navigate to the account management page.
+
+     ![Verify Email Address](/static/assets/installation-and-deployment/embedded-edition-overview-images/account-navigation.png)
  
-7. You will now be redirected to the [downloads](https://www.boldbi.com/account/downloads) page. To download and install Bold BI from this page, choose the file type and click the `Download` icon.
+8. You will now be redirected to the [downloads](https://www.boldbi.com/account/downloads) page. To download and install Bold BI from this page, choose the file type and click the `Download` icon.
 
-    ![Bold BI Download Page](/static/assets/installation-and-deployment/embedded-edition-overview-images/bold-bi-download-page.png)
+    ![Bold BI Download Page](/static/assets/installation-and-deployment/embedded-edition-overview-images/download-page.png)
 
 ## See Also
 

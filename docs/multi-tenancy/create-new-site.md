@@ -82,14 +82,6 @@ The authentication information and data collected from SQL and REST data sources
 
 ![Advanced Mode](/static/assets/multi-tenancy/images/advanced-mode.png#max-width=45%)
 
-## Select storage
-
-You need to provide the storage type as either file storage or blob storage, in which Bold BI application will store the resources, contents, and logs. For more information, please refer to the [what are the resources will be generated in the installed machine](https://support.boldbi.com/kb/article/16571/what-all-are-the-files-and-folders-will-be-generated-in-the-installed-machine).
-
-![File storage type](/static/assets/multi-tenancy/images/select-storage-file.png#max-width=45%)
-
-![Blob storage type](/static/assets/multi-tenancy/images/select-storage-blob.png#max-width=45%)
-
 ## Configure Isolation code and Custom Attribute in site 
 
 You can skip this configuration directly by clicking the `Next` button, or you can configure the isolation code, custom attribute, or both before proceeding with the Next.

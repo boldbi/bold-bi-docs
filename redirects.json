@@ -50291,5 +50291,13 @@
   {
     "fromPath": "/security-configuration/group-based-authorization/",
     "toPath": "/embedding-options/group-based-authorization/"
+  },
+  {
+    "fromPath": "/working-with-data-sources/working-with-bold-etl/",
+    "toPath": "/working-with-data-sources/working-with-bold-data-hub/"
+  },
+  {
+    "fromPath": "/working-with-data-sources/working-with-bold-data-hub/working-with-projects/",
+    "toPath": "/working-with-data-sources/working-with-bold-data-hub/working-with-pipelines/"
   }
 ]

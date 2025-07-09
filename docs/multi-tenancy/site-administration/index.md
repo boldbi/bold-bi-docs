@@ -14,6 +14,8 @@ You can explore the Site Administration details below:
 
 [Rebranding](/multi-tenancy/site-administration/rebranding/)
 
+[Proxy Settings](/multi-tenancy/site-administration/proxy-settings/)
+
 [Embed Settings](/site-administration/embed-settings/)
 
 [Audit Logs](/multi-tenancy/site-administration/audit-logs/)

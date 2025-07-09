@@ -654,6 +654,70 @@
         }
       }
     },
+     "/v2.0/tenant/{tenantId}/inherit-settings": {
+      "put": {
+        "tags": [
+          "Tenants"
+        ],
+        "summary": "Update Tenant Inherited Global Settings",
+        "description": "Update tenant inherited global settings.",
+        "operationId": "inherit_global_settings",
+        "parameters": [
+          {
+            "name": "tenantId",
+            "in": "path",
+            "description": "TenantID of the tenant.",
+            "required": true,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string",
+              "format": "uuid",
+              "nullable": false
+            }
+          }
+        ],
+        "requestBody": {
+          "description": "Payload containing the settings to update the tenant's global inheritance configuration.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateIheritGlobalAppSettingsForTenant"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Tenant settings were updated successfully.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "The content of the request body is missing or incomplete.",
+            "content": {}
+          },
+          "401": {
+            "description": "Access denied.",
+            "content": {}
+          },
+          "405": {
+            "description": "Request type was not PUT.",
+            "content": {}
+          },
+          "417": {
+            "description": "Failed to update tenant settings.",
+            "content": {}
+          }
+        }
+      }
+    },
     "/v2.0/user/add": {
       "post": {
         "tags": [
@@ -4779,6 +4843,22 @@
             "type": "array",
             "description": "Provide the theme details to update.",
             "$ref": "#/components/schemas/ThemeDetail"
+          }
+        }
+      },
+      "UpdateIheritGlobalAppSettingsForTenant": {
+        "type": "object",
+        "properties": {
+          "EnableInheritSettings": {
+            "type": "boolean",
+            "description": "Specify true to enable inheritance of global settings for the tenant."
+          },
+          "GlobalSettingsOptions": {
+            "type": "array",
+            "description": "List of global settings to inherit for the tenant's site.<br /><blockquote>Allowed values: <code>DateTime, LookAndFeel, Branding, Email, Language and Account</code>.</blockquote>",
+            "items": {
+              "type": "string"
+            }
           }
         }
       },

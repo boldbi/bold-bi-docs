@@ -35,4 +35,6 @@ This section explains CORS (Cross-Origin Resource Sharing) and the Allow Known D
 
 [Concierge Support Settings](/security-configuration/concierge-support-settings/)
 
+[Enable CHIPS for Cross-Site IFrame Embedding](/security-configuration/enable-chips-for-iframe-embedding/)
+
 [Microsoft Entra Azure AD](/security-configuration/single-sign-on/oauth-2.0-support/microsoft-entra-azure-ad/)

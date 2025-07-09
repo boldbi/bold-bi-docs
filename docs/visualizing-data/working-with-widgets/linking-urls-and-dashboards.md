@@ -158,6 +158,16 @@ For example, in the dashboard shown below, the Year-configured filter widget is 
 
 ![Example Passing Filter](/static/assets/visualizing-data/working-with-widgets/images/examplefilterurl.png)
 
+### Preserving URL Filters Across Dashboard Navigation
+
+By using this option, you can pass `URL parameter` filter values to the navigated dashboard. As a result, users can transfer the parent dashboard's filter information to all subsequently navigated dashboards via `URL parameters`.
+
+For example, in the dashboard shown below, a country filter has been applied using the filter widget, and an additional filter has been applied via `URL parameters`. After navigation, the second dashboard will be rendered with both filters applied, as shown in the second image. If you navigate to a third dashboard, these filters will continue to be passed along.
+
+![First dashboard Filter](/static/assets/visualizing-data/working-with-widgets/images/firstdashboardlink_URL.png)
+
+![Second dashboard Passing Filter](/static/assets/visualizing-data/working-with-widgets/images/Seconddashboard_URL.png)
+
 > **NOTE:** If the selected master widgets are not filtered, then no values should be passed to the `URL`.
 
 ## URL Query Parameter Mapping

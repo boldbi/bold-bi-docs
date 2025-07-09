@@ -2839,6 +2839,53 @@
                 }
             }
         },
+        "/v5.0/dashboards/by-group-permissions": {
+            "get": {
+                "tags": [
+                  "Dashboard"
+                ],
+                "summary": "Get Groups Dashboard Details By Group Names",
+                "description": "Administrators can obtain the list of dashboard details for the specific groups.",
+                "operationId": "Dashboards_DashboardsDetailsByGroupPermissions",
+                "parameters": [
+                  {
+                    "name": "GroupName",
+                    "in": "query",
+                    "description": "One or more group names, separated by commas (,).",
+                    "required": true,
+                    "style": "simple",
+                    "explode": false,
+                    "schema": {
+                        "type": "string",
+                        "nullable": false
+                    }
+                  }
+                ],
+                "responses": {
+                  "200": {
+                    "description": "List of dashbaord details has been retrieved successfully.",
+                    "content": {
+                      "application/json": {
+                        "schema": {
+                          "type": "array",
+                          "items": {
+                            "$ref": "#/components/schemas/ApiGetDashboardDetailsByGroupnamesApiResponse"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "401": {
+                    "description": "Access denied.",
+                    "content": {}
+                  },
+                  "405": {
+                    "description": "Request type was not GET.",
+                    "content": {}
+                  }
+                }
+            }
+        },
         "/v5.0/dashboards/download/job": {
             "post": {
                 "tags": [
@@ -14668,7 +14715,186 @@
                         }
                     }
                 }
-}, 
+            },
+            "ApiGetDashboardDetailsByGroupnamesApiResponse":{
+                "type": "object",
+                "properties": {
+                    "Dashboards": {
+                        "type": "array",
+                        "description": "Returns the dashboard details for the valid provided groups.",
+                        "items": {
+                            "$ref": "#/components/schemas/GetDashboardByGroupApiResponse"
+                        }
+                    },
+                    "InvalidGroups": {
+                        "type": "array",
+                        "description": "List of invalid group names.",
+                        "items": {
+                        "type": "string"
+                        }
+                    },
+                    "UnAuthorizedGroups": {
+                        "type": "array",
+                        "description": "List of unauthorized group names.",
+                        "items": {
+                        "type": "string"
+                        }
+                    },
+                    "ValidGroups": {
+                        "type": "array",
+                        "description": "List of valid group names.",
+                        "items": {
+                        "type": "string"
+                        }
+                    }
+                }
+            },
+            "GetDashboardByGroupApiResponse": {
+                "type": "object",
+                "properties": {
+                    "Group": {
+                        "type": "string",
+                        "description": "Specifies the group name."
+                    },
+                    "DashboardDetails": {
+                        "type": "array",
+                        "description": "Specifies the group dashboard details.",
+                        "items":{
+                            "$ref":"#/components/schemas/GroupsDashboardDetails"
+                        }
+                    }
+                }
+            },
+            "GroupsDashboardDetails": {
+                "type": "object",
+                "properties": {
+                    "CanRead": {
+                        "type": "boolean",
+                        "description": "Specifies the read permission of the item."
+                    },
+                    "CanWrite": {
+                        "type": "boolean",
+                        "description": "Specifies the write permission of the item."
+                    },
+                    "CanDelete": {
+                        "type": "boolean",
+                        "description": "Specifies the delete permission of the item."
+                    },
+                    "CanDownload": {
+                        "type": "boolean",
+                        "description": "Specifies the download permission of the item."
+                    },
+                    "CanSchedule": {
+                        "type": "boolean",
+                        "description": "Specifies the schedule permission of the item."
+                    },
+                    "CanOpen": {
+                        "type": "boolean",
+                        "description": "Specifies the open permission of the item."
+                    },
+                    "CanMove": {
+                        "type": "boolean",
+                        "description": "Specifies the move permission of the item."
+                    },
+                    "CanCopy": {
+                        "type": "boolean",
+                        "description": "Specifies the copy permission of the item."
+                    },
+                    "CanClone": {
+                        "type": "boolean",
+                        "description": "Specifies the clone permission of the item."
+                    },
+                    "CanCreateItem": {
+                        "type": "boolean",
+                        "description": "Specifies the create permission of the item."
+                    },
+                    "Id": {
+                        "type": "string",
+                        "description": "Item ID.",
+                        "format": "guid"
+                    },
+                    "ItemType": {
+                        "type": "string",
+                        "description": "Item type.<br />Values allowed are <code>Dashboard</code>"
+                    },
+                    "Name": {
+                        "type": "string",
+                        "description": "Item name."
+                    },
+                    "Description": {
+                        "type": "string",
+                        "description": "Item description."
+                    },
+                    "ItemLocation": {
+                        "type": "string",
+                        "description": "Item location."
+                    },
+                    "CreatedById": {
+                        "type": "integer",
+                        "description": "Specifies the user ID of the item creator.",
+                        "format": "int32"
+                    },
+                    "CreatedByDisplayName": {
+                        "type": "string",
+                        "description": "Specifies the display name of the user who created the item."
+                    },
+                    "ModifiedById": {
+                        "type": "integer",
+                        "description": "Specifies the user ID of the item modifier.",
+                        "format": "int32"
+                    },
+                    "ModifiedByFullName": {
+                        "type": "string",
+                        "description": "Specifies the full name of the user who modified the item."
+                    },
+                    "CategoryId": {
+                        "type": "string",
+                        "description": "Category ID.",
+                        "format": "guid"
+                    },
+                    "CategoryName": {
+                        "type": "string",
+                        "description": "Category name."
+                    },
+                    "CreatedDate": {
+                        "type": "string",
+                        "description": "Date created of item in string format."
+                    },
+                    "ModifiedDate": {
+                        "type": "string",
+                        "description": "Date modified of item in string format."
+                    },
+                    "ItemModifiedDate": {
+                        "type": "string",
+                        "description": "Date modified of item in date format.",
+                        "format": "date-time"
+                    },
+                    "ItemCreatedDate": {
+                        "type": "string",
+                        "description": "Date created of item in date format.",
+                        "format": "date-time"
+                    },
+                    "IsMultiDashboard": {
+                        "type": "boolean",
+                        "description": "Returns true, if the dashboard is multi-dashboard."
+                    },
+                    "IsFavorite": {
+                        "type": "boolean",
+                        "description": "Returns true, if it is a favorite item."
+                    },
+                    "IsPublic": {
+                        "type": "boolean",
+                        "description": "Returns true, if the item is public."
+                    },
+                    "TabDetail": {
+                        "type": "array",
+                        "description": "Specifies the details of the tab in a multi-tabbed dashboard.",
+                        "items": {
+                            "$ref": "#/components/schemas/ApiTabDetail"
+                        }
+                    }
+                }
+            },
             "ApiGetUsersPaginatedApiResponse": {
                 "type": "object",
                 "properties": {
