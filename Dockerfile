@@ -24,7 +24,7 @@ RUN rm /etc/nginx/sites-available/default
 
 # Copy your static files and custom nginx config
 COPY /public /home/boldbi-doc/
-COPY default /etc/nginx/sites-available/default
+COPY boldbi-doc-nginx.conf /etc/nginx/sites-available/default
 
 # Start nginx in the foreground
 CMD ["nginx", "-g", "daemon off;"]
