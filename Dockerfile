@@ -18,6 +18,7 @@ RUN mkdir -p /home/boldbi-doc
 
 # Expose port 80 for web traffic
 EXPOSE 80
+EXPOSE 443
 
 # Remove default nginx site config
 RUN rm /etc/nginx/sites-available/default
