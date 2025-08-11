@@ -14,7 +14,7 @@ The sample has been provided in the following sections for `Blazor Server`, whic
 
 ## Prerequisites
 
- * [.NET Core 8.0](https://dotnet.microsoft.com/en-us/download/dotnet-core)
+ * [.NET Core 6.0 or later](https://dotnet.microsoft.com/en-us/download/dotnet-core)
  * [Visual Studio Code](https://code.visualstudio.com/download)
 
 ## How to run Blazor Server sample
@@ -188,53 +188,46 @@ The sample has been provided in the following sections for `Blazor Server`, whic
     }
     ```
 
- 9. The following script is mandatory to render the dashboard. Set the `Layout = null` at the top and the following code in your `\EmbedData\_Host.cshtml` page of the `<body>` tag. This ready function can be used to render the dashboard.
+ 9. The following script is mandatory to render the dashboard. Set the `Layout = null` at the top and the following code in your `\Pages\_Host.cshtml` page of the `<body>` tag. This ready function can be used to render the dashboard.
 
-     ![Index.cshtml Image](/static/assets/javascript/sample/images/ViewFolderProperties-blazor.png)
+     ![Index.cshml Image](/static/assets/javascript/sample/images/ViewFolderProperties-blazor.png)
 
      ```js 
-       <head>
-         <title>BoldBI Blazor Embed</title>
-         <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/latest/boldbi-embed.js"></script>
-         <script type="text/javascript" src="~/js/Index.js"></script>
-         <link rel="stylesheet" href="~/css/site.css" />
-         <script type="text/javascript">
-            var rootUrl = "@ViewBag.ServerUrl";
-            var dashboardId = "@ViewBag.DashboardId";
-            var siteIdentifier = "@ViewBag.SiteIdentifier";
-            var environment = "@ViewBag.Environment";
-            var embedType = "@ViewBag.EmbedType";
-            var authorizationServerUrl = "@Url.Action("AuthorizationServer", "EmbedData")";
-         </script>
-      </head>
-
-      <body onload="renderDashboard(dashboardId)">
-         <div id="viewer-section" style="width: 100%";>
-            <div id="dashboard"></div>
-         </div>
-      </body>
-     ```
-
+       <div id="dashboard"></div>
+       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+       <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v7.11.24/boldbi-embed.js"></script>
+       <script type="text/javascript">
+             var rootUrl = "@GlobalAppSettings.EmbedDetails.ServerUrl";
+             var siteIdentifier = "@GlobalAppSettings.EmbedDetails.SiteIdentifier";
+             var dashboardId = "@GlobalAppSettings.EmbedDetails.DashboardId";
+             var embedType = "@GlobalAppSettings.EmbedDetails.EmbedType";
+             var environment = "@GlobalAppSettings.EmbedDetails.Environment";
+             var authorizationServerUrl = "/AuthorizationServer";
+       </script>
+     ``` 
  10. In the `renderDashboard()` method, an instance is created and called the `loadDashboard()` method to render the dashboard.
-      ```js
-      function renderDashboard(dashboardId) {
-         this.dashboard = BoldBI.create({
-            serverUrl: rootUrl + "/" + siteIdentifier,
-            dashboardId: dashboardId,
-            embedContainerId: "dashboard",
-            width: "100%",
-            height: "100%",
-            authorizationServer: {
-                  url: authorizationServerUrl  
-            }
-         });
+        ```js
+        <script>
+               $(document).ready(function () {
+              this.dashboard = BoldBI.create({
+                serverUrl: rootUrl + "/" + siteIdentifier,
+                dashboardId: dashboardId,
+                embedContainerId: "dashboard",
+                embedType: embedType,
+                environment: environment,
+                width: window.innerWidth + "px",
+                height: window.innerHeight + "px",
+                expirationTime: 100000,
+                authorizationServer: {
+                    url: authorizationServerUrl
+                }
+            });
+            this.dashboard.loadDashboard();
+        });
+        </script>
+       ```
 
-         console.log(this.dashboard);
-         this.dashboard.loadDashboard();
-      };
-      ```
-
- 11. Create a new folder called `Controllers`. To create a new controller and name it `EmbedDataController.cs`. In the `Controllers\EmbedDataController.cs`. To get particular dashboard details, define an API `AuthorizationServer()` using the `GetSignatureUrl()` method to generate the algorithm. 
+ 11. Create a new folder called `Controllers`. To create a new controller and name it `HomeController.cs`. In the `Controllers\HomeController.cs`. To get particular dashboard details, define an API `AuthorizationServer()` using the `GetSignatureUrl()` method to generate the algorithm. 
  
      In this API, the `embedQuerString`,`userEmail` and the value from the `GetSignatureUrl()` method are appended as the query parameters in the URL to authorization server of particular dashboard. 
  
@@ -278,21 +271,12 @@ The sample has been provided in the following sections for `Blazor Server`, whic
         }
      ```
 
- 12. Open the `Program.cs` file and add the following code snippet before `app.Run()`. 
-   
-      ```js
-      app.MapControllerRoute(
-         name: "default",
-         pattern: "{controller=EmbedData}/{action=EmbedConfigErrorLog}/{id?}");
-      ```
+ 12. Open the `Program.cs` file and add the following code snippet before `app.UseHttpsRedirection()`. To read the `embedConfig.json` file to utilize it in the controller. Ensure that the `Newtonsoft.Json` and `models` files are added to the namespaces within the `Program.cs` file.
 
- 13. To read the `embedConfig.json` file to utilize it in the EmbedConfigErrorLog method in EmbedDataController. Ensure that the `Newtonsoft.Json` and `models` files are added to the namespaces within the `Program.cs` file.
-     ![EmbedDataController.cs Image](/static/assets/javascript/sample/images/blazor-controller.png)
-
-      ```js
-      string basePath = AppDomain.CurrentDomain.BaseDirectory;
-      string jsonString = System.IO.File.ReadAllText(Path.Combine(basePath, "embedConfig.json"));
-      GlobalAppSettings.EmbedDetails = JsonConvert.DeserializeObject<EmbedDetails>(jsonString);
-      ```
+        ```js
+            app.MapControllerRoute(name: "default", pattern: "{controller=Home}/{action=Index}/{id?}");
+            string basePath = AppDomain.CurrentDomain.BaseDirectory;
+            string jsonString = System.IO.File.ReadAllText(Path.Combine(basePath, "embedConfig.json"));GlobalAppSettings.EmbedDetails = JsonConvert.DeserializeObject<EmbedDetails>(jsonString);
+        ```
         
- 14. To run the application, use the command `dotnet watch run` in the terminal. After executing the command, the application will automatically launch in the default browser. You can access it at the specified port number (e.g., `https://localhost:5001`).
+ 13. To run the application, use the command `dotnet watch run` in the terminal. After executing the command, the application will automatically launch in the default browser. You can access it at the specified port number (e.g., `https://localhost:5001`).

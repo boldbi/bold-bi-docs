@@ -284,10 +284,6 @@ You can customize the legend text through the Custom Legend Settings dialog. Thi
 
 A legend is used to describe the plotted data. This option allows you to position the legend on the **Left, Right, Top,** and **Bottom**.
 
-### Legend Alignment
-
-Legend Alignment enables you to control how the legend is positioned within its allocated space. For detailed guidance, refer to the [Legend Alignment](/visualizing-data/visualization-widgets/column-chart/#legend-alignment) section.
-
 #### Legend Shape
 
 This allows you change the **shape** of the legend.

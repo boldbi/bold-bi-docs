@@ -24,6 +24,12 @@ To configure the MongoDB data source, follow the below steps:
 
    ![Choose data source from server](/static/assets/working-with-datasource/data-connectors/images/mongodb/ChooseDS_server.png)
 
+## Advanced
+In Advanced category, It will Redirect to the Bold ETL. Refer [Bold ETL](/managing-resources/manage-data-sources/#advanced-category).
+
+## Basic
+In the Basic Category, It will act as the connector in Bold BI. And need to follow the below steps.
+
 ## Create MongoDB data source
 Once you click the data source, the NEW DATA SOURCE configuration panel will open. Follow the below steps to create MongoDB data source.
 1. Enter a name and description (optional) for the data source.
@@ -35,21 +41,11 @@ Once you click the data source, the NEW DATA SOURCE configuration panel will ope
 
 5. Choose **None** or **SCRAM** authentication in the **Authentication Mechanism** combo box.
 6. If you choose SCRAM *Authentication Mechanism*, enter valid SCRAM credentials in the **Username** and **Password** text boxes.
-
-7. Choose the **Extract Engine**.<br>
-You can connect to the data source using one of the following extract methods:
-- **Bold BI Extract**: Data will be extracted and managed directly within Bold BI.
-- **Data Hub**: Data extraction is handled through the Data Hub. An equivalent pipeline is created, utilizing the Data Hub’s Extract, Transform, Load (ETL) capabilities to filter, optimize, or transform the data, and to generate new tables.
-- To view the equivalent pipeline created for data extraction, navigate to the Query Designer page and click on View Pipeline.
-
-    ![Refresh Setting](/static/assets/working-with-datasource/images/View_Pipeline.png)
-
-- When the data refresh is configured for data sources that uses the Data Hub Extract Engine, the refresh will be managed within the Data Hub.
-8. Select the database you want to query in the listed databases associated with the given MongoDB Server in the **Database** combo box.
+7. Select the database you want to query in the listed databases associated with the given MongoDB Server in the **Database** combo box.
 
    > **NOTE:**  If your MongoDB server reside inside a firewall, contact Bold BI support to get the list of IP addresses to be white-listed.
    
-9. Choose a time interval for **Refresh Settings** using the combo box, to trigger a request to MongoDB server periodically to keep the data in sync with our dashboard.  
+8. Choose a time interval for **Refresh Settings** using the combo box, to trigger a request to MongoDB server periodically to keep the data in sync with our dashboard.  
 
 You can also edit the connection information set here using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 
@@ -444,8 +440,6 @@ Upon initial connection, MongoDB will extract a maximum of 10,000 records. By co
 </td>
 </tr>
 </table>
-
-**NOTE:** MongoDB provides a BI connector tool that allows you to connect MongoDB servers directly through an ODBC connector or MySQL connector, without the need for any intermediate database. Please refer to this KB article for more information. [How to connect MongoDB by direct query mode in Bold BI](https://www.boldbi.com/kb/faq/how-to-connect-mongodb-by-direct-query-mode-in-bold-bi).
 
 ## Related links
 [Blog post](https://www.boldbi.com/blog/connect-mongodb-workloads-migrated-to-azure-cosmos-db)

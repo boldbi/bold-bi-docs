@@ -1155,8 +1155,7 @@ div#doc-body-cont {
   width: auto;
   padding: 0px;
   overflow: hidden;
-  width: -webkit-fill-available;
-  width: -moz-available;
+  width: -webkit-fill-available;	
 }
 
 #md-cnt a.anchor {
@@ -2368,40 +2367,5 @@ table#on-premises-vs-cloud-table>tbody>tr:hover td, table#on-premises-vs-cloud-t
 }
 
 .copy-button:hover .copy-button-tooltip {
-  display: block !important;
-}
-
-.helpbot-chat-container {
-  position: fixed;
-  bottom: 80px;
-  right: 20px;
-  z-index: 1000
-}
-
-button.helpbot-chat-button {
-  display: flex;
-  align-items: center;
-  gap:10px;
-  padding: 6px 13px;
-  height: 58px;
-  border:none !important;
-  border-radius: 50px;
-  background: #0050eb;
-  cursor: pointer;
-}
-
-button.helpbot-chat-button:hover {
-  background: #0050eb;
-  padding: 20px
-}
-
-.helpbot-chat-content {
-  display: none;
-  font-weight: 500;
-  font-size: 14px;
-  color: #fff;
-}
-
-button.helpbot-chat-button:hover .helpbot-chat-content {
   display: block !important;
 }

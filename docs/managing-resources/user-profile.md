@@ -137,9 +137,6 @@ Enabling this option will notify you via email whenever you are granted permissi
 #### User synchronization notification
 Enabling this option will notify you via email about user synchronization schedule.
 
-#### Enable notification for API key expiration
-Enabling this option will notify you via email and system notification when the token validity for the API key has expired or is about to expire.
-
 ### Inherit from global settings
 
 If a user wants to inherit the same settings as in the site notification settings, he or she can do so by checking the "Inherit from global settings" option in Email Notifications and System Notifications.
@@ -173,57 +170,7 @@ Personal access token serves the same purpose as an OAuth access token. It enabl
 ![Generated Token Copy](/static/assets/managing-resources/images/copy-icon.png)
 
  > **NOTE:**  The logged-in user's credentials are utilized to produce the access token.
-
-## API Key
-API key authentication is a basic authentication mechanism. It is straightforward and can serve as an alternative to OAuth for connecting to and authenticating the Bold BI API service, as well as for securely embedding the dashboard viewer and designer within your application.
-
-![API Key List](/static/assets/managing-resources/images/api-key-list.png)
-
-### Steps to generate the API key from the dashboard server UI
-
-1. On the Profile page, click the `API Key` tab.
-
-   ![API Key Tab](/static/assets/managing-resources/images/api-key-tab.png)
-
-2. Click on `Generate API Key`. You will need to provide a name for the key and specify its validity period if expiration is required.
-
-   ![Generate API Key](/static/assets/managing-resources/images/generate-api-key.png)
-
-   ![Add API Key](/static/assets/managing-resources/images/add-api-key.png)
-
-3. Click the `Create API` Key button. The API key will be generated, and you can then copy it for use in the HTTP request header from your application.
-
-   ![Create API Key Button](/static/assets/managing-resources/images/create-api-key-button.png)
-
- > **NOTE:**
- > 1. The credentials of the logged-in user are used to generate the access token.
- > 2. Each user is allowed to add a maximum of two API keys per site.
-
- ### Edit API Key
-
-You can edit the name of the generated API key in both the API Key section of your profile page and the API Key section of the admin page.
-
-1. Click the `Actions` button in the API key grid context menu and select `Edit` to modify the API key.
-
-   ![Edit Key Menu](/static/assets/managing-resources/images/edit-key-menu.png)
-
-2. After editing the name, `Save` the modified changes.
-
-   ![Edit Key Dialog](/static/assets/managing-resources/images/edit-key-dialog.png)
-
- ### Delete API Key
-
-1. An API key can be deleted from Bold BI when it is no longer required.
-
-2. Click the `Actions` button in the API key grid context menu and select `Delete` to API key the Webhook.
-
-  ![Delete API key](/static/assets/managing-resources/images/delete-api-key.png)
-
-### API Key Usage
-To make an HTTP request with API Key, the request header must include the API key. Use the generated API key in the following format.
-
-![API Key Authorization](/static/assets/managing-resources/images/use-api-key.png)
-
+     
 ## Change Password
 The password to log in to Bold BI can be changed on the Bold BI change password page.
 

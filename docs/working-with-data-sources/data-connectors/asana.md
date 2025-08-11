@@ -27,6 +27,12 @@ To choose Asana as a data source, follow the steps below:
 
    ![Choose data source from server](/static/assets/working-with-datasource/data-connectors/images/asana/ChooseDS_server.png)
 
+## Advanced
+In the Advanced category, it will redirect to the Bold ETL. Please refer to the [Bold ETL](/managing-resources/manage-data-sources/#advanced-category) for more information.
+
+## Basic
+In the Basic category, it will act as a connector in Bold BI. Follow the steps below:
+
 ### How to Obtain the Asana Client ID and Client Secret
 > **Note:** Asana OAuth credentials are required for the On-Premises Deployment, but they are not needed in Syncfusion Managed Cloud Server.
 1. Login to your Asana account by clicking on  [Asana Login](https://app.asana.com/-/login).
@@ -66,16 +72,15 @@ To authenticate with the Asana web service, follow these steps:
 ### Create Asana data source
 After successful authentication, the NEW DATA SOURCE configuration panel will open. Follow these steps to create an Asana data source:
 1. Enter a name and optional description for the data source.
-2. Choose the [Extract Engine](/managing-resources/manage-data-sources/#extract-mode-connection)
-3. Enter a valid Asana REST API endpoint in the URL textbox. Refer to the [Asana API documentation](https://asana.com/developers/documentation/getting-started/quick-start) for more details.
+2. Enter a valid Asana REST API endpoint in the URL textbox. Refer to the [Asana API documentation](https://asana.com/developers/documentation/getting-started/quick-start) for more details.
 
    Example: `https://app.asana.com/api/1.0/projects`
 
-4. Select **GET** method for the REST API in the **Method** combo box.
-5. In **Max Rows**, enter the maximum number of rows to be fetched from the Asana data source. This value is used to fetch the data from Asana data source via pagination. And This option is only applicable to Bold BI Extract.
-6. Choose a time interval for **Refresh Settings** using the combo box to trigger the Rest API request periodically to keep the data in sync with our dashboard.
-7. Select **JSON** data type in the **Data Format** combo box.
-8. The authentication type will be set to **Asana** automatically since OAuth is used for authenticating with the Asana account.
+3. Select **GET** method for the REST API in the **Method** combo box.
+4. In **Max Rows**, enter the maximum number of rows to be fetched from the Asana data source. This value is used to fetch the data from Asana data source via pagination.
+5. Choose a time interval for **Refresh Settings** using the combo box to trigger the Rest API request periodically to keep the data in sync with our dashboard.
+6. Select **JSON** data type in the **Data Format** combo box.
+7. The authentication type will be set to **Asana** automatically since OAuth is used for authenticating with the Asana account.
 
     ![DataSourcesView](/static/assets/working-with-datasource/data-connectors/images/asana/DataSourcesView.png)
 

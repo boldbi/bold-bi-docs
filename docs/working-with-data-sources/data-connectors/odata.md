@@ -134,26 +134,6 @@ We have added support for **custom attributes and dashboard parameters** in the 
 
 >**Note:** Refer to the [Dashboard Parameter Documentation](https://help.boldbi.com/working-with-data-sources/dashboard-parameter/) and [Custom Attributes Documentation](https://help.boldbi.com/working-with-data-sources/configuring-custom-attribute/) for more details.
 
-## How to connect ODATA live in Bold BI
-The Bold BI dashboard designer supports connecting to OData live web services through the REST API.
-
-Please refer this documentation for more information [Generic Web Connector](https://help.boldbi.com/working-with-data-sources/data-connectors/live-web/)
-
-You can also check the sample OData queries here:
-[Sample Queries](/working-with-data-sources/data-connectors/odata/#sample-queries)
-
-![DataSourcesView](/static/assets/working-with-datasource/data-connectors/images/OData/Web-Live.png)
-
-### Pagination
-
-By default, OData supports Offset-based pagination in Bold BI.
-
-![offset image](/static/assets/working-with-datasource/data-connectors/images/OData/offset.png)
-
-For more details, refer to the documentation:
-[Pagination types](/working-with-data-sources/data-connectors/web/#pagination-types)
-
-
 ## Related links
 [Data Transformation](/working-with-data-sources/data-modeling/joining-table/)
 

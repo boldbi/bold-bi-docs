@@ -45,17 +45,13 @@ Schedules can only be created if the user has the `Create All Schedules` permiss
 
 	![Select dashboard](/static/assets/managing-resources/images/select-dashboard.png)
 
-* Select the desired widget from the dropdown. You can also select multiple widgets.
+* Select the desired widget from the dropdown.
 
     ![Select widget](/static/assets/managing-resources/images/select-widget.png)
     
 * Select the desired view form the dropdown.
 
     ![Select view](/static/assets/managing-resources/images/select-view.png)
-
-* Provide the valid parameter. For instructions on how to create parameters in Bold BI, please refer to this [link](/working-with-data-sources/dashboard-parameter/).
-
-![Provide parameter](/static/assets/managing-resources/images/parameter.png)
 
 ### Add schedule from dashboard viewer page
 
@@ -73,7 +69,7 @@ To learn about creating a schedule on the dashboard viewer page, please check [t
 
 	![Default Values](/static/assets/managing-resources/images/category-dashboard-preselect.png)
 
-> **NOTE:** Categories, Dashboards, Views, Widgets and Parameter can be changed from schedule dialog box itself.
+> **NOTE:** Categories, Dashboards, Views, and Widgets can be changed from schedule dialog box itself.
 
 * After adding schedule details, click `Next` in the schedule dialog. 
 
@@ -81,19 +77,11 @@ To learn about creating a schedule on the dashboard viewer page, please check [t
 	
 * Customize the email content that needs to be sent during the schedule.
 
-* The scheduled email content page will feature default content based on the selected system template, as shown in the following image. Additionally, users are not permitted to customize the default system template content.
+* The schedule email content page will have default content as shown in the following image.
 
-  ![Default Schedule Mail](/static/assets/managing-resources/images/default-mail-content.png)
+  ![Default Schedule Mail](/static/assets/managing-resources/images/default-mail-content.png#width=85%)
 
-* You can also create a new template and select it from the dropdown menu to customize the email content.
-
-  ![Choose template](/static/assets/managing-resources/images/choose-template.png)
-
-* To customize the subject and body content of an email, you can enable the `Email Customization` toggle button.
-
-  ![Customize Schedule Mail](/static/assets/managing-resources/images/customize-schedule-mail.png)
-
-* To customize the subject, use the variables in the drop-down menu next to the subject field. Once you select a variable from the drop-down, the default subject content will be reset.
+* Use the default email subject or customize it using the variables in the drop-down next to the subject field. Once you select a variable from the variables drop-down, the default subject content will be reset.
 
   ![Customize Mail Subject](/static/assets/managing-resources/images/customize-mail-subject.png#width=85%)
 
@@ -145,7 +133,7 @@ Supports sending schedule failure notifications to the schedule owner and recipi
 Additionally, Bold BI application deactivates the export schedule after a limited number of consecutive failures and sends a disable notification to the owner and recipients.
 
 ## Configure Schedule with Export Format
-You can configure the export formats in the schedule. Here, you have the option to select multiple export format and export the dashboard or widget in your chosen format.
+You can configure the export formats in the schedule.
 
 ![Schedule Image Export](/static/assets/managing-resources/images/export-image.png)
 

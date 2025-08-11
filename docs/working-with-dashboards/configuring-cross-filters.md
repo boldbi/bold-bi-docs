@@ -32,7 +32,7 @@ When selecting a widget, its associated filter profiles and listener widgets are
 
 To remove a selected widget from the master widgets section, use the `delete` option in its header.
 
-> **NOTE:** Filter type widgets are automatically added for user convenience by default but can be removed if not needed. For the filter type widgets such as Combo Box and Date Picker with the [dashboard parameter](/working-with-data-sources/dashboard-parameter/) configuration, cross-filtering can be used.
+> **NOTE:** Filter type widgets are automatically added for user convenience by default but can be removed if not needed.
 
 **Filter profiles**
 

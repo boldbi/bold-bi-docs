@@ -26,6 +26,12 @@ To configure the Facebook Ads data source, follow the below steps:
 
 > **NOTE:** To obtain the client ID and client secret for Facebook Ads, Refer to the [Facebook Ads get configuration](/working-with-data-sources/data-connectors/facebook/#how-to-obtain-the-facebook-client-id-and-client-secret) for more details.
 
+## Advanced
+In Advanced category, It will Redirect to the Bold ETL. Refer to [Bold ETL](/managing-resources/manage-data-sources/#advanced-category).
+
+## Basic
+In the Basic Category, It will act as the connector in Bold BI. And need to follow the below steps.
+
 ## Authentication with Facebook Ads
 Use the following steps to authenticate with the Facebook Ads web service:
 

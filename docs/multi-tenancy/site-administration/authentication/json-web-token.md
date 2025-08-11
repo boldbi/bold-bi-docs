@@ -52,24 +52,12 @@ This section explains how to perform Single Sign-On (SSO) for users with the Cus
 
     ![Copy](/static/assets/multi-tenancy/images/jwt-signingkey-options.png)
 
-7. You can enable JWT token encryption by selecting `Enable Encryption`. Once activated, a public key is generated, which is used to encrypt the JWT token. This enhances security by ensuring that token payloads remain confidential and protected from unauthorized access. By default, encryption remains disabled
-
-    ![Enable Encryption](/static/assets/multi-tenancy/images/enable-jwt-encryption.png)
-
-8. The `JWT Encryption Key` can be copied, viewed, and reset using the following options:
-
-    ![Copy Encryption Key](/static/assets/multi-tenancy/images/jwt-encryption-menu.png)
-
 ## How JWT works with Bold BI   
 
 1. Once the JWT settings are configured, go to the Bold BI login page and click on the JWT login option.
-    ![JWT Login](/static/assets/multi-tenancy/images/jwt_login_page.png)
+    ![JWT Login](/static/assets/multi-tenancy/images/jwt-login-option.png)
 
-2. After that, the application will generate the JSON Web Token for user and it will be submitted via an HTTP Form POST to the Bold BI callback URL https://{Bold BI URL}/sso/jwt/callback. The form POST will include the following parameters:
-
-    * jwt
-    * site_identifier
-    * redirect_to
+2. After that, the application will generate the JSON Web Token for user and it is redirected back to Bold BI call back URL `{Bold BI URL}/sso/jwt/callback?jwt={token}&site_identifier={site identifier}&redirect_to={redirecturl}` with the encoded JWT in a query string.
 
 3. The Bold BI application will validate the JWT and deserialize the user information from the token.
 

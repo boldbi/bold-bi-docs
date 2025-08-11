@@ -110,27 +110,9 @@ Username, First Name, Last Name, Phone number, and profile picture of the user c
 ![Edit User Profile](/static/assets/multi-tenancy/images/edit-user.png#max-width=95%)
 
 ## Change Password 
-If users forget their password or want to create a new one, administrators can reset or create a password for them using this option.
+If users forget their password, administrators can reset the password for the users using this option. 
 
 Please refer to [this](#password-requirement) section for password requirements.
-
-The password change functionality is available for the following types of users:
-
-	- **Local Users** – Users created and managed within Bold BI.
-	- **Windows Active Directory (AD) Users** – Users imported from a configured Windows AD domain.
-
-#### Change Password for Local Users
-
-Local users can change their password directly from the **User Profile** section in the application.
-
-#### Change Password for Windows AD Users
-
-Starting from **version 12.1.5**, **Bold BI** also supports changing the password for **Windows AD users** within the application.
-
-- AD users can now **set or update their password** using the same interface used by local users.
-- Once a new password is created or updated, it can be used to log in to the Bold BI application directly.
-
-> **Note:** The newly created password for a Windows AD user is used **only within the Bold BI application** and does **not update the password in the actual Active Directory domain**.
 
 ![Change Password](/static/assets/multi-tenancy/images/change-password.png#max-width=95%)
 

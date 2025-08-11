@@ -28,19 +28,7 @@ In live mode, the Bold BI designer executes the query directly into the database
 
 ### Extract
 
- In extract mode, the Bold BI designer extracts data and stores it in [Intermediate Database](https://help.boldbi.com/working-with-data-sources/bold-bi-intermediate-database/), which Bold BI maintains for extracting data from REST data sources. The SQL query will execute in an intermediate database instead of executing in the actual database server to fetch data. Currently, the Bold BI designer extracts 50,000 records initially, and additional records will be extracted in the next iteration based on the [Refresh Settings](/working-with-data-sources/data-connectors/ms-sql-server/#sql-data-source-refresh-settings).
-
- 1. Switching to Extract mode, Extract Engine will become visible.
-
-    ![Extract Engine](/static/assets/working-with-datasource/images/Extract_Engine.png)
-
-2. In Bold BI Extract, The data will be extracted in Bold BI itself.
-3. When switching to Data Hub, the data is extracted using the Data Hub. An equivalent pipeline is created, which can leverage the Data Hub’s Extract, Transform, Load (ETL) capabilities to filter or optimize the data and generate new tables.
-4. To view the equivalent pipeline created for data extraction, navigate to the Query Designer page and click on View Pipeline.
-
-    ![Refresh Setting](/static/assets/working-with-datasource/images/View_Pipeline.png)
-
-5. When the data refresh is configured for data sources that uses the Data Hub Extract Engine, the refresh will be managed within the Data Hub.
+ In extract mode, the Bold BI designer extracts data and stores it in [Intermediate Database](https://help.boldbi.com/working-with-data-sources/bold-bi-intermediate-database/), which Bold BI maintains for extracting data from REST data sources. The SQL query will execute in an intermediate database instead of executing in the actual database server to fetch data. Currently, the Bold BI designer extracts 50,000 records initially, and additional records will be extracted in the next iteration based on the [Refresh Settings](/working-with-data-sources/data-connectors/ms-sql-server/#sql-data-source-refresh-settings). 
 
 ## How to create Microsoft SQL Server data source
 
@@ -82,6 +70,13 @@ To connect to the SQL server database in [live](/working-with-data-sources/data-
 
 ### Create Microsoft SQL Server data source in extract mode
 
+To Connect to Bold ETL from sql server, switch to extract mode. Refer to [Bold ETL](/managing-resources/manage-data-sources/#advanced-category)
+1. switch to Extract mode, Redirect dialog will pop up.
+  ![etl Redirect Dialog](/static/assets/working-with-datasource/data-connectors/images/SQLDataSource/etlRedirectDialog.png)
+
+2. Click on the Redirect to Bold ETL button to redirect to Bold ETL. Or
+3. To continue with Bold BI, click on 'Continue with connector.
+
 To connect the SQL server database in [extract](/working-with-data-sources/data-connectors/ms-sql-server/#extract) mode, follow these steps:
 
 1. Set the **server name** on which the Microsoft SQL server runs.  
@@ -91,21 +86,12 @@ To connect the SQL server database in [extract](/working-with-data-sources/data-
 3. Choose the **Extract** mode radio button to enable extract mode for creating a data source. Refer to [Extract](/working-with-data-sources/data-connectors/ms-sql-server/#extract) mode to learn more. 
 
 > **NOTE:**  Initially, data will be extracted based on the maximum number of rows selected in order to proceed with data model creation. The remaining records (with no limit) will be extracted during the next refresh. 
-
  ![Max rows option](/static/assets/working-with-datasource/data-connectors/images/SQLDataSource/maxRowOption.png#max-width=60%)					                    
 
 4. Select the database name from the dropdown text box from which the tables are to be extracted.  
 
-5. Steps to configure the data source refresh settings:
-  - Click Refresh Settings in the configuration panel.
-
-      ![Refresh Setting](/static/assets/working-with-datasource/data-connectors/images/SQLDataSource/Mssql_Refresh_Setting.png)
-
-  - Select the recurrence type, recurrence start and end dates in the **Refresh Setting** dialog box.
-    * Data refresh can be scheduled hourly, daily, weekly, and monthly.
-    * Application Time Zone is displayed below the date picker. Start time of the schedule is converted to the client Time Zone and shown in the right side for users convenience. After selecting, click **Schedule**.
-
-    ![Save Schedule](/static/assets/working-with-datasource/data-connectors/images/common/RefreshSetting.png)
+5. Choose a relevant time interval from the **Refresh Settings** dropdown menu for refreshing the data source periodically.  Refer to [Refresh Settings](/working-with-data-sources/data-connectors/ms-sql-server/#sql-data-source-refresh-settings) to learn more.  
+![Connect data source in Extract mode](/static/assets/working-with-datasource/data-connectors/images/SQLDataSource/connect-ds-in-extract.png)
 
 6. Click **Connect** Extract Data dialog opens. This dialog has two modes of connection either via Table or [Custom query](https://support.boldbi.com/kb/article/16675/working-with-custom-query-extract-mode-in-bold-bi). Under custom query option, write the required query and click **Connect**.
 Under Table option, this dialog displays list of tables and views in treeview. Select the required table(s) or view(s) from treeview to use in the designer.
@@ -351,7 +337,7 @@ In Code View Mode, Bold BI issues the custom SQL query as a subquery to the data
 
 ## SQL data source refresh settings
 
-The refresh settings for SQL data source is available only in extract mode. When we refresh the data source in Bold BI, the most recent data from the original source connection is retrieved and updated in the data store. Users have the flexibility to manually refresh the data or schedule it according to their requirements. By keeping the data up-to-date, users can rely on accurate and current information for their analyses and visualizations. There are two types of data source refresh available for SQL data sources:
+The refresh settings for SQL data source is available only in [extract](/working-with-data-sources/classification-of-data-sources-queried-directly-and-extracted/) mode. When we refresh the data source in Bold BI, the most recent data from the original source connection is retrieved and updated in the data store. Users have the flexibility to manually refresh the data or schedule it according to their requirements. By keeping the data up-to-date, users can rely on accurate and current information for their analyses and visualizations. There are two types of data source refresh available for SQL data sources:
 
 1. Full load
 2. Incremental update

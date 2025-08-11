@@ -31,6 +31,12 @@ To connect an Excel file from local storage, follow the below steps:
 3. Select the `Excel` data source from the connection panel.
 ![Choose excel](/static/assets/working-with-datasource/data-connectors/images/Excel/choose-excel.png)
 
+## Advanced
+In Advanced category, It will Redirect to the Bold ETL. Refer to [Bold ETL](/managing-resources/manage-data-sources/#advanced-category).
+
+## Basic
+In the Basic Category, It will act as the connector in Bold BI. And need to follow the below steps.
+
 4. Now, the Excel connection window will open. Provide a unique name for the data source.
  ![Add excel datasource](/static/assets/working-with-datasource/data-connectors/images/Excel/add-excel-datasource.png)
 

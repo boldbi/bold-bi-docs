@@ -101,9 +101,3 @@ Refer to [this section](/visualizing-data/working-with-widgets/formatting-measur
 Screenshot of the widget with applied measure formatting.
 
  ![After formatting](/static/assets/visualizing-data/working-with-widgets/images/Tooltip13.png)
-
- ### Enable RTL 
- 
-This option allows you to display fields and their data from right to left.
-
-![Tooltip RTL](/static/assets/visualizing-data/working-with-widgets/images/tooltip-rtl.png)

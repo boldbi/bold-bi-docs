@@ -23,42 +23,32 @@ Before integrating Azure AD B2C with Bold BI, ensure the [Configure Azure AD B2C
 
     <tr>
     <td>Organization Name</td>
-    <td>The name of your organization to be displayed on the login page.</td>
+    <td>It represents the name of the Oganization that will be displayed in the login page.</td>
     </tr>
 
     <tr>
     <td>Organization Logo</td>
-    <td>The logo of your organization to be displayed on the login page.</td>
+    <td>It represents the logo of the Organization that will be displayed in the login page.</td>
     </tr>
 
     <tr>
     <td>Application Id</td>
-    <td>A unique identifier for the Enterprise BI web application registered in Azure AD B2C.</td>
+    <td>A unique identifier of the Embedded BI web app created in Azure AD B2C.</td>
     </tr>
 
     <tr>
     <td>Tenant Name</td>
-    <td>The name of your Azure AD B2C tenant, representing a dedicated instance of the Azure AD B2C service.</td>
+    <td>A dedicated instance of the Azure AD B2C service.</td>
     </tr>
 
     <tr>
-    <td>Tenant ID</td>
-    <td>The unique identifier (GUID) of your Azure AD B2C tenant.</td>
+    <td>Sign in Polciy</td>
+    <td>The name of the Sign in/Sign up user flow created in Azure AD B2C.</td>
     </tr>
 
     <tr>
-    <td>Client Secret</td>
-    <td>The secret key generated for the Azure AD B2C application, used to authenticate secure communication.</td>
-    </tr>
-
-    <tr>
-    <td>Sign-in Policy</td>
-    <td>The name of the user flow (sign-in/sign-up policy) configured in Azure AD B2C for managing user authentication.</td>
-    </tr>
-
-    <tr>
-    <td>Enable Single Sign-Out</td>
-    <td>Enables single sign-out functionality, ensuring users are logged out of all connected applications when they sign out.</td>
+    <td>Enable single sign out</td>
+    <td>The name of the Sign in/Sign up user flow created in Azure AD B2C.</td>
     </tr>
 
     </table>  
@@ -70,13 +60,6 @@ Before integrating Azure AD B2C with Bold BI, ensure the [Configure Azure AD B2C
 
 * Select the registered application, obtain the application ID, and provide the created user flow.
     ![Azure AD B2C settings application id](/static/assets/multi-tenancy/images/azure-ad-b2c-setting-application-id.png)
-
-* Select the registered application, obtain the Tenant ID.
-
-    ![Azure AD B2C settings tenant id](/static/assets/multi-tenancy/images/azure-ad-b2c-setting-tenant-id.png)
-
-* Select the registered application, under `Manage`, click the `Certificates & secrets` and copy the value of `Client Secret`.
-    ![Azure AD B2C settings client secret](/static/assets/multi-tenancy/images/azure-ad-b2c-setting-client-secret.png)
 
 ## Set Azure AD B2C as default authentication
 
@@ -171,54 +154,3 @@ After creating an Azure AD B2C tenant, please follow these steps to register a n
 
 4. Select the policy and the `application claims` on the left side. Then, ensure that the following items are selected. If they are not, make sure to select and save the changes.
     ![Azure B2C select overview](/static/assets/multi-tenancy/images/azure-b2c-application-claims.png)
-
-### Create Client Secret
-
-> **NOTE:** The client secret is a credential used by your Bold BI application to securely authenticate with Azure AD B2C.
-
-1. Go to `Azure AD B2C`, select `App registrations`, and choose the application you registered (for example, `Boldbi-auth`).
-
-2. In the left panel, click `Certificates & secrets`, then under the **Client secrets** tab, click `+ New client secret`.
-
-3. In the **Add a client secret** pane, configure the following:
-
-   - **Description**: Enter a meaningful description (e.g., `Bold BI Client Secret`).
-   - **Expires**: Select a suitable expiry period (e.g., 6 months, 12 months, or 24 months).
-
-4. Click the `Add` button to generate the secret.
-
-![Azure B2C create client secret](/static/assets/multi-tenancy/images/azure-ad-b2c-setting-client-secret-add.png)
-
-5. After creation, **copy the Value immediately**. This is your **Client Secret**, which should be added to the Bold BI Azure B2C settings.
-
-   > ⚠️ **Important:** The client secret value is visible only once, immediately after creation. Save it securely in a password manager or secure vault.
-
-   ![Azure B2C copy client secret](/static/assets/multi-tenancy/images/azure-ad-b2c-setting-client-secret-value.png)
-
-### Add `User.Read.All` Permission to Azure AD B2C App
-
-Follow the steps below to add the `User.Read.All` permission in Azure AD B2C through the Azure portal:
-
-1. Go to `Azure AD B2C`, select `App registrations`, and choose the application you registered (for example, `Boldbi-auth`).
-2. In the left pane, select **API permissions**.
-3. Click on **+ Add a permission**.
-4. In the right pane, choose **Microsoft Graph**.
-
-![Azure B2C microsoft group](/static/assets/multi-tenancy/images/azure-ad-b2c-setting-microsoft-graph.png)
-
-5. Choose **Application permissions**.
-
-![Azure B2C microsoft applicaiton permission](/static/assets/multi-tenancy/images/azure-ad-b2c-setting-microsoft-graph-application-permission.png)
-
-8. In the search box, type `user.read`.
-9. Expand the **User** section.
-10. Check the box for **User.Read.All** - "Read all users' full profiles".
-11. Click on **Add permissions**.
-
-![Azure B2C microsoft group](/static/assets/multi-tenancy/images/azure-ad-b2c-setting-microsoft-graph-user-read.png)
-
-12. After adding, click **Grant admin consent for your tenant name** and confirm to apply the permissions.
-
-![Azure B2C microsoft group](/static/assets/multi-tenancy/images/azure-ad-b2c-setting-microsoft-graph-user-read-grant.png)
-
-> ✅ The `User.Read.All` permission requires admin consent. Ensure that it is granted after adding.

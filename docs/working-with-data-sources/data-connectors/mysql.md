@@ -73,26 +73,21 @@ If the table name is provided in the Additional connection parameters text box, 
 
 3. Click **Save** to save the data source with a relevant name.
 
+## Extract mode connection 
+
+To Connect to Bold ETL from the MySQL server, switch to extract mode. Refer to [Bold ETL](/managing-resources/manage-data-sources/#advanced-category)
+1. Switch to Extract mode, and the Redirect dialog will pop up.
+  ![etl Redirect Dialog](/static/assets/working-with-datasource/data-connectors/images/SQLDataSource/etlRedirectDialog.png)
+
+2. Click on the `Redirect to Bold ETL` button to be redirected to Bold ETL, or
+3. To continue with Bold BI, click on `Continue with connector`.
+
 In this connection type, a data source is fetched from source periodically. Choose the **Extract** mode option for this connection.
 
 ![Extract Connection](/static/assets/working-with-datasource/data-connectors/images/Mysql/Mysql_Extract_Connection.png)
 
 > **NOTE:**  Initially, data will be extracted based on the Max Rows selected in order to proceed with data model creation. The remaining records, for which there is no limit, will be extracted during the next refresh.  <br /> 
-![Max rows option](/static/assets/working-with-datasource/data-connectors/images/Mysql/maxRowOption.png#max-width=60%)
-
-## Extract mode connection 
-
-1. Switching to Extract mode, Extract Engine will become visible.
-
-    ![Extract Engine](/static/assets/working-with-datasource/images/Extract_Engine.png)
-
-2. In Bold BI Extract, The data will be extracted in Bold BI itself.
-3. When switching to Data Hub, the data is extracted using the Data Hub. An equivalent pipeline is created, which can leverage the Data Hub’s Extract, Transform, Load (ETL) capabilities to filter or optimize the data and generate new tables.
-4. To view the equivalent pipeline created for data extraction, navigate to the Query Designer page and click on View Pipeline.
-
-    ![Refresh Setting](/static/assets/working-with-datasource/images/View_Pipeline.png)
-
-5. When the data refresh is configured for data sources that uses the Data Hub Extract Engine, the refresh will be managed within the Data Hub.
+ ![Max rows option](/static/assets/working-with-datasource/data-connectors/images/Mysql/maxRowOption.png#max-width=60%)	
 
 ### Refresh Settings
 #### Steps to configure the data source refresh settings:
