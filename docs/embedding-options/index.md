@@ -19,7 +19,3 @@ You can explore the embedding options in detail on this page.
 [Embedding SDK](/embedding-options/embedding-sdk/)
 
 [Embedding using NPM package](/embedding-options/embedding-using-npm-package/)
-
-[Group-Based Authorization](/embedding-options/group-based-authorization/)
-
-[Enabling User Import with Group-Based Authorization](/embedding-options/enabling-user-import-with-group-based-authorization/)

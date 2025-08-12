@@ -25,13 +25,7 @@ We can connect to the existing SQL Server instance with the following options:
 * In this method, a new database is created to store the extracted data sources and files. 
 * Select server type, enter the server instance name, credentials, and choose the `New Database` option.
 * Enter your database name and click the `Save` button.  
-![Data store settings](/static/assets/site-administration/images/datastore-settings.png#width=65%)
-
-**NOTE:** 
->  1. When selecting Oracle as the database type, users cannot create a new database for storing extracted data sources.
->  2. Changing the database type to Oracle from another database will result in the loss of all previously stored data.
-
-![Oracle data store settings](/static/assets/site-administration/images/oracle-database-settings.png#width=65%)
+![Data store settings](/static/assets/site-administration/images/datastore-settings.png#width=65%)  
 
 ### Existing database
 * In this method, an existing database is used to store the extracted data sources and files.       

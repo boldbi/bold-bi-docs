@@ -286,23 +286,6 @@ Now, the dashboard preview can be visualized like below.
 
 You can design any number of dashboards by following the steps given above.
 
-### Publishing Dashboards with Comments
-Once the datasource and widget are configured in the dashboard, there are two primary methods to publish the dashboard with comments.
-
-#### Publish and Publish AS
-When adding the dashboard using the `Publish` or `Publish As` option, you can provide comments in the designated comments text area. This allows you to include relevant notes or updates regarding the dashboard at the time of its initial publication.
-
-![Publish As](/static/assets/getting-started/images/publish-as.png)
-
-#### Publish With Comment
-If you need to update an existing dashboard and wish to modify the comments, you can use the `Publish With Comment` option. This allows you to add new comments or update existing ones associated with the dashboard.
-
-![Publish with comment](/static/assets/getting-started/images/publish-with-comment.png)
-
-![Publish with comment Dialog](/static/assets/getting-started/images/publish-comment-dialog.png)
-
-> **NOTE:**   If you choose to publish while updating the dashboard without using the `Publish With Comment` option, the previous version's comments will automatically be included in the version history comments.
-
 ## Related links
 [Blog Post on Getting Started](https://www.boldbi.com/blog/create-business-dashboards-online-with-bold-bi)
 

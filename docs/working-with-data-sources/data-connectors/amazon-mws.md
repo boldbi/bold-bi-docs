@@ -86,9 +86,9 @@ The period of time before the next refresh call is triggered. This will automati
 
     ![product paramter](/static/assets/working-with-datasource/data-connectors/images/AmazonMWS/Product_parameter.png)
 
-3. You can create a custom URL using the [Amazon Scratchpad](https://mws.amazonservices.com/scratchpad/index.html).
+3. You can create a custom URL using the [Amazon Scratchpad](https://docs.developer.amazonservices.com/en_UK/scratchpad/Scratchpad_Using.html).
 
-For more information on the API endpoints available for this data source, refer to their official [API Documentation](https://developer-docs.amazon.com/sp-api/docs/welcome)
+For more information on the API endpoints available for this data source, refer to their official [API Documentation]( http://docs.developer.amazonservices.com/en_US/dev_guide/index.html)
 
 ### Preview and data import
 * Click **Preview & Connect** to establish a connection with the configured settings.

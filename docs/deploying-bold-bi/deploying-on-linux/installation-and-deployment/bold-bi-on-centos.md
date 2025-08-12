@@ -29,7 +29,7 @@ documentation: ug
 
     * Install `python pip` and the following pip packages by running the following command.
         ~~~shell
-        sudo yum -y install python3-pip && python3.9 -m pip install duckdb===1.1.2 dlt===0.5.4 pymysql pyodbc pg8000 poetry pandas===2.2.2 "dlt[parquet]" "dlt[filesystem]"
+        sudo yum -y install python3-pip && python3.9 -m pip install duckdb===0.9.2 dlt===0.4.2 pymysql pyodbc pg8000 poetry pandas===2.0.0 "dlt[parquet]" "dlt[filesystem]"
        ~~~
 4. Add an `openssl conf` path to the environment if does not exist:
 
@@ -87,9 +87,7 @@ Once the installation is completed, open the host URL in the browser and continu
 
 ## Manually Configure Nginx
 
-To configure Nginx as a reverse proxy to forward requests to the Bold BI app, modify `/etc/nginx/nginx.conf` file.
-
-1. Open it in a text editor and add the following code.
+To configure Nginx as a reverse proxy to forward requests to the Bold BI app, modify `/etc/nginx/nginx.conf.` Open it in a text editor and add the following code.
 
 ~~~shell
 #server {
@@ -99,19 +97,15 @@ To configure Nginx as a reverse proxy to forward requests to the Bold BI app, mo
 #}
 
 server {
-		listen       80 default_server;
-		listen       [::]:80 default_server;
+		listen        80 default_server;
 		
 		#server_name   example.com;
 		
 		#listen 443 ssl;
+		#ssl on;
 		#ssl_certificate /path/to/certificate/file/domain.crt;
 		#ssl_certificate_key /path/to/key/file/domain.key;
 		
-		proxy_buffer_size   128k;
-		proxy_buffers   4 256k;
-		proxy_busy_buffers_size   256k;
-		large_client_header_buffers 4 16k;		
 		proxy_read_timeout 300;
 		proxy_connect_timeout 300;
 		proxy_send_timeout 300;
@@ -124,7 +118,7 @@ server {
         proxy_http_version 1.1;
         proxy_set_header   Upgrade $http_upgrade;
         proxy_set_header   Connection keep-alive;
-        proxy_set_header   Host $http_host;
+        proxy_set_header   Host $host;
         proxy_cache_bypass $http_upgrade;
         proxy_set_header   X-Forwarded-For $proxy_add_x_forwarded_for;
         proxy_set_header   X-Forwarded-Proto $scheme;
@@ -136,7 +130,7 @@ server {
         proxy_http_version 1.1;
         proxy_set_header   Upgrade $http_upgrade;
         proxy_set_header   Connection keep-alive;
-        proxy_set_header   Host $http_host;
+        proxy_set_header   Host $host;
 		proxy_cache_bypass $http_upgrade;
         proxy_set_header   X-Forwarded-For $proxy_add_x_forwarded_for;
         proxy_set_header   X-Forwarded-Proto $scheme;
@@ -147,19 +141,38 @@ server {
         proxy_http_version 1.1;
         proxy_set_header   Upgrade $http_upgrade;
         proxy_set_header   Connection keep-alive;
-        proxy_set_header   Host $http_host;
+        proxy_set_header   Host $host;
         proxy_cache_bypass $http_upgrade;
         proxy_set_header   X-Forwarded-For $proxy_add_x_forwarded_for;
         proxy_set_header   X-Forwarded-Proto $scheme;
     }
-	# Start of bi locations
+	location /ums/signalr/progresshub { 
+        proxy_pass         http://localhost:6502/ums/signalr/progresshub;
+        proxy_http_version 1.1;
+        proxy_set_header   Upgrade $http_upgrade;
+        proxy_set_header   Connection "upgrade";
+        proxy_set_header   Host $host;
+        proxy_cache_bypass $http_upgrade;
+        proxy_set_header   X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header   X-Forwarded-Proto $scheme;
+    }
 	location /bi { 
 		root               /var/www/bold-services/application/bi/web/wwwroot;
         proxy_pass         http://localhost:6504/bi;
         proxy_http_version 1.1;
         proxy_set_header   Upgrade $http_upgrade;
         proxy_set_header   Connection keep-alive;
-        proxy_set_header   Host $http_host;
+        proxy_set_header   Host $host;
+        proxy_cache_bypass $http_upgrade;
+        proxy_set_header   X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header   X-Forwarded-Proto $scheme;
+    }
+	location /bi/messageHub { 
+        proxy_pass         http://localhost:6504/bi/messageHub;
+        proxy_http_version 1.1;
+        proxy_set_header   Upgrade $http_upgrade;
+        proxy_set_header   Connection "upgrade";
+        proxy_set_header   Host $host;
         proxy_cache_bypass $http_upgrade;
         proxy_set_header   X-Forwarded-For $proxy_add_x_forwarded_for;
         proxy_set_header   X-Forwarded-Proto $scheme;
@@ -169,7 +182,7 @@ server {
         proxy_http_version 1.1;
         proxy_set_header   Upgrade $http_upgrade;
         proxy_set_header   Connection keep-alive;
-        proxy_set_header   Host $http_host;
+        proxy_set_header   Host $host;
         proxy_cache_bypass $http_upgrade;
         proxy_set_header   X-Forwarded-For $proxy_add_x_forwarded_for;
         proxy_set_header   X-Forwarded-Proto $scheme;
@@ -179,7 +192,7 @@ server {
 		proxy_http_version 1.1;
         proxy_set_header   Upgrade $http_upgrade;
         proxy_set_header   Connection keep-alive;
-        proxy_set_header   Host $http_host;
+        proxy_set_header   Host $host;
         proxy_cache_bypass $http_upgrade;
         proxy_set_header   X-Forwarded-For $proxy_add_x_forwarded_for;
         proxy_set_header   X-Forwarded-Proto $scheme;
@@ -190,7 +203,7 @@ server {
         proxy_http_version 1.1;
         proxy_set_header   Upgrade $http_upgrade;
         proxy_set_header   Connection keep-alive;
-        proxy_set_header   Host $http_host;
+        proxy_set_header   Host $host;
         proxy_cache_bypass $http_upgrade;
         proxy_set_header   X-Forwarded-For $proxy_add_x_forwarded_for;
         proxy_set_header   X-Forwarded-Proto $scheme;
@@ -200,60 +213,19 @@ server {
         proxy_http_version 1.1;
         proxy_set_header Upgrade $http_upgrade;
         proxy_set_header Connection "upgrade";
-        proxy_set_header Host $http_host;
+        proxy_set_header Host $host;
         proxy_cache_bypass $http_upgrade;
         proxy_set_header   X-Forwarded-For $proxy_add_x_forwarded_for;
         proxy_set_header   X-Forwarded-Proto $scheme;
     }
-    location /aiservice {
-        proxy_pass http://localhost:6510/aiservice;
-        proxy_http_version 1.1;
-        proxy_set_header Upgrade $http_upgrade;
-        proxy_set_header Connection "upgrade";
-        proxy_set_header Host $http_host;
-        proxy_cache_bypass $http_upgrade;
-        proxy_set_header   X-Forwarded-For $proxy_add_x_forwarded_for;
-        proxy_set_header   X-Forwarded-Proto $scheme;
-    }
-	# End of bi locations
 }
-~~~
-
-2. If you need to configure the `Bold Data Hub` along with the Bold BI, you need to add the below syntax to the `nginx.conf` file after aiservice block.
-
-~~~shell
-    location /etlservice/ {
-	    root               /var/www/bold-services/application/etl/etlservice/wwwroot;
-	    proxy_pass http://localhost:6509/;
-	    proxy_http_version 1.1;
-	    proxy_set_header   Upgrade \$http_upgrade;
-	    proxy_set_header   Connection "upgrade";
-	    proxy_set_header   Host \$http_host;
-	    proxy_cache_bypass \$http_upgrade;
-	    proxy_set_header   X-Forwarded-For \$proxy_add_x_forwarded_for;
-	    proxy_set_header   X-Forwarded-Proto \$scheme;
-    }
-    location /etlservice/_framework/blazor.server.js {
-	    root               /var/www/bold-services/application/etl/etlservice/wwwroot;
-	    proxy_pass http://localhost:6509/_framework/blazor.server.js;
-	    proxy_http_version 1.1;
-	    proxy_set_header   Upgrade \$http_upgrade;
-	    proxy_set_header   Connection "upgrade";
-	    proxy_set_header   Host \$http_host;
-	    proxy_cache_bypass \$http_upgrade;
-	    proxy_set_header   X-Forwarded-For \$proxy_add_x_forwarded_for;
-	    proxy_set_header   X-Forwarded-Proto \$scheme;
-    }
-
 ~~~
 
 Once the Nginx configuration is established, run `sudo nginx -t` to verify the syntax of the configuration files. If the configuration file test is successful, force Nginx to pick up the changes by running `sudo nginx -s reload`.
 
 ## Configure SSL
 If you have an SSL certificate for your domain and need to configure the site with it, follow these steps or you can skip this:
-
 1. Navigate to `/etc/nginx/conf.d`. Open the `boldbi-nginx-config.conf` file in a text editor.
-
 2. Uncomment the following marked lines in the Nginx config file.
 
     ![ssl configuration uncomment](/static/assets/installation-and-deployment/images/linux-ssl-configuration-uncomment.png)

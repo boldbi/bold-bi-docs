@@ -108,7 +108,6 @@ export default class LayoutTemplate extends React.Component {
     faq_link.onclick = function (){
         faq_link.href = faq_link.href.split('?')[0];
     }
-    helpBotChat();
     zoomOptionForImages();
     copyToClipboard();
     select('.doc-toc-search-icon').addEventListener('click', () => {
@@ -1011,22 +1010,6 @@ function copyToClipboard() {
           });
       });
   });
-}
-
-function helpBotChat() {
-	const helpbot = '<div class="helpbot-chat-container">' +
-                    '<button type="button" class="helpbot-chat-button">' +
-                      '<img src="https://cdn.syncfusion.com/helpbot/staging/images/ai_start_new_page.svg" alt="helpbot icon" class="helpbot-chat-icon">' +
-                      '<p class="helpbot-chat-content">Bold BI HelpBot</p>' +
-                    '</button>' +
-					        '</div>';
-
-	document.body.insertAdjacentHTML('beforeend', helpbot);
-document.querySelectorAll(".helpbot-chat-button").forEach(function(button) {
-    button.addEventListener("click", function() {
-        window.open("https://helpbot.boldbi.com/", "_blank");
-    });
-});
 }
 
 const RightToc = styled.div`

@@ -11,15 +11,15 @@ documentation: ug
 ## Hardware requirements
      
 The following hardware requirements are necessary to run the Bold BI Enterprise edition:
-* **Operating System:**  Windows Client 10+ | Windows Server 2022+ .
-* **CPU:** CPU	2- Core, 2.4 GHz or Faster, and 32-bit or 64-bit processor.
+* **Operating System:**  Windows Client OS 8+ and Windows Server OS 2012 R2+.
+* **CPU:** 2-core, 2.4 GHz or faster, and 32-bit or 64-bit processor.
 * **Memory:** 8 GB RAM for 32-bit or 64-bit.
-* **Hard drive:** 10 GB of free space (only installation files).
+* **Hard drive:** 1.2 GB of free space (only installation files).
 
 ## Software requirements
 
 The following software requirements are necessary to run the Bold BI Enterprise edition:
-* **Framework:** [Microsoft .NET Framework 4.5 and above](https://www.microsoft.com/en-in/download/details.aspx?id=30653)
-* **Database:** PostgreSQL 13.0+| Microsoft SQL Server 2016+ | MySQL 8.0+ | Oracle Database 19c+
-* **Web Server:** [Internet Information Services (IIS) 10.0+](https://en.wikipedia.org/wiki/Internet_Information_Services)
-* **Web Browser:** Microsoft Edge | Chrome | Mozilla Firefox.
+* **Framework:** [Microsoft .NET Framework 4.5](https://www.microsoft.com/en-in/download/details.aspx?id=30653)
+* **Database:** Microsoft SQL Server 2012+ \| PostgreSQL \| MySQL
+* **Web Server:** [Internet Information Services (IIS) 7.0+](https://en.wikipedia.org/wiki/Internet_Information_Services)
+* **Web Browser:** Microsoft Edge, Mozilla Firefox, and Chrome.

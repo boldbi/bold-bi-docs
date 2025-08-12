@@ -93,29 +93,6 @@ By default, the newly created user account is assigned to this group.
 
 ## Database Configuration
 
-### Database Mode Selection
-
-Before configuring the database, determine the mode for managing tenant data in Bold BI. Your selection impacts how tenant data is stored, secured, and maintained.
-
-![Bold BI<sup>®</sup> Server](/static/assets/application-startup/images/database-selection.png)
-
-#### Shared Database Mode
-
-In this mode, all tenants share a single database, with data logically separated using unique identifiers. This approach optimizes resource utilization, reduces infrastructure costs, and simplifies maintenance while maintaining data segregation. It is well-suited for scalability and efficient management.
-**Supported Database:** PostgreSQL
-
-![Bold BI<sup>®</sup> Server](/static/assets/application-startup/images/shared-database.png)
-
-#### Separate Database Mode
-
-With this mode, each tenant has a dedicated database, ensuring complete physical data separation. This provides enhanced security, independent management, and optimized performance for each tenant. However, it requires greater infrastructure investment and ongoing maintenance.
-
-**Supported Databases:** MSSQL, PostgreSQL, MySQL, Oracle
-
-![Bold BI<sup>®</sup> Server](/static/assets/application-startup/images/separate-database.png)
-
-Once you select the preferred database mode, click Next to proceed to the database configuration step, where you will enter the required connection details.
-
 This configuration helps you configure single or individual databases for Bold ID, Bold BI, and Data Store configuration.
 
 The `Bold ID` database stores user identities, site details, and access information.
@@ -169,15 +146,11 @@ In advanced mode, the user can select the preferred storage type, either File St
 
 > **NOTE:** The default storage type is `File Storage`.
 
-The user can select the desired storage option from the `Storage Type` dropdown by providing the required credentials in the respective fields.
+The user can select the Blob Storage by providing the Azure Blob Credential in the required field.  
 
-Supported storage options include:
+![Site Blob Storage](/static/assets/application-startup/images/blob-storage.png)  
 
-* **Azure Blob Storage:** Provide the Azure Blob credentials in the required field. You can find the details on how to configure the [Azure Blob](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal).
-* **Oracle Cloud Infrastructure (OCI) Object Storage:** Provide the required Oracle credentials such as OCI Access Key, Secret Key, and Bucket Name, Root Folder Name, Region, NameSpace.
-* **Amazon S3:** Enter the AWS Access Key, Secret Key, and Bucket Name, Root Folder Name, Region details to configure S3 storage. You can find the details on how to configure the [Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/creating-bucket.html).
-
-![Site Blob Storage](/static/assets/application-startup/images/storage-selection.png)
+You can find the details on how to configure the [Azure Blob](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal).
 
 ## Database Options
 

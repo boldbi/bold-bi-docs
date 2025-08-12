@@ -9,13 +9,12 @@ documentation: ug
 # Prerequisites for using Bold BI on Microsoft Azure App Service
 
 This section explains the requirements for using Bold BI on Microsoft Azure App Service.
+1. You need a Microsoft Azure subscription. If you don't have one already, you can use the free trial available on this [website](https://azure.microsoft.com/en-us/free/).
 
-* **App Service Plan:** SS3+(Budget-Friendly for Testing)) | P2V3+(Same as Production but Lower Cost in Dev/Test Subscription) | I1v2+ (For High-Security & Compliance Needs)
-    >**Note:** You can choose any plan which has more than 4 Core+ and 14 GB+.
-* **Subscriptions:** Microsoft Azure Subscription. If you don't already have one, you can sign up for a free trial on this [website](https://azure.microsoft.com/en-us/free/).
+2. You need a Bold BI Enterprise Edition license.
 
-* **Deployment Type:** ARM Template
-* **File Storage:** Azure Blob Storage
-* **Web Browser:** Microsoft Edge | Mozilla Firefox | Chrome
-* **Storage:** 10 GB or more
-* **Database:** PostgreSQL 13.0+ | Microsoft SQL Server 2016+ | MySQL 8.0+ | Oracle Database 19c+
+3. You need to have one of the following supported databases configured for the Bold BI application:
+    
+    * Microsoft SQL Server 2012+
+    * PostgreSQL
+    * MySQL

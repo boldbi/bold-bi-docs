@@ -30,6 +30,4 @@ Here, you can delve into the detailed prerequisites and deployment processes:
 
 [Deploying in Docker](/deploying-bold-bi/deploying-on-docker/)
 
-[Deploying in Cloud Platform Using Terraform](/deploying-bold-bi/deploying-on-cloud-platform-using-terraform/)
-
 [Upgrade Guidelines](/deploying-bold-bi/upgrade-guidelines/)

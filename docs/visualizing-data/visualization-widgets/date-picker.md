@@ -181,28 +181,6 @@ And you can only select a start date from the left calendar and the end date fro
 
 The **Show Latest Date** property shows the latest date in the data source when you open the date picker popup.
 
-#### Limit Date Selection
-
-If you enable the `Range` option, the `Limit Date Selection` will be shown.
-
-Activating `Limit Date Selection` displays the following additional settings:
-- Date Selection Mode
-- Custom Limit Days
-
->**NOTE:** The `Custom Limit Days` numeric textbox is enabled only when the Custom option is selected from the `Date Selection Mode dropdown`.
-The `Date Selection Mode` has three options as follows,
-1. Weekly - Allows selection of dates within the week of the selected start date.
-
-![Weekly Date Selection Mode](/static/assets/visualizing-data/visualization-widgets/images/date-picker/weeklyDate.png)
-
-2. Monthly - Allows selection of dates within the month of the selected start date.
-
-![Monthly Date Selection Mode](/static/assets/visualizing-data/visualization-widgets/images/date-picker/monthlyDate.png)
-
-3. Custom - Allows selection of a custom range of days based on the number specified in the `Custom Limit Days` textbox.
-
-![Custom Date Selection Mode](/static/assets/visualizing-data/visualization-widgets/images/date-picker/customDate.png)
-
 #### Filter
 
 ![filter configuration for date picker](/static/assets/visualizing-data/visualization-widgets/images/date-picker/filter.png)

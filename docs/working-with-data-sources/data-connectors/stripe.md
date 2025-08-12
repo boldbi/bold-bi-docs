@@ -24,29 +24,24 @@ To configure the Stripe data source, follow the below steps:
 
    ![Choose data source from server](/static/assets/working-with-datasource/data-connectors/images/Stripe/ChooseDS_Server.png)
 
+## Advanced
+In the Advanced category, It will Redirect to the Bold ETL. Refer [Bold ETL](/managing-resources/manage-data-sources/#advanced-category).
+
+## Basic
+In the Basic Category, It will act as the connector in Bold BI. And need to follow the below steps.
+
 ## Create Stripe data source
 Once you click on the data source, the NEW DATA SOURCE configuration panel will open. Follow the below steps to create Stripe data source.
 1. Enter a name and description (optional) for the data source.
-2. Choose The Extract Engine.
-3. Click the **API Endpoints** down drop box and choose the required endpoint.
-4. Click **Custom Url** to enter the URL manually. Refer to the [Stripe API documentation](https://stripe.com/docs/api) for more details.
-5. Select the **GET** method for the REST API in the **Method** combo box.
-6. In **Max Rows**, enter the maximum number of rows to be fetched from the Stripe data source. This value is used to fetch the data from Stripe data source via pagination.
-7. Choose a time interval for the **Refresh Settings** using the combo box, to periodically trigger the REST API request and keep the data in sync with our dashboard.  
-8. Select **JSON** data type in **Data Format** combo box.
-9. Choose **Basic http Authentication** under **Authentication Type** and input a valid **Account Key**.
+2. Click the **API Endpoints** down drop box and choose the required endpoint.
+3. Click **Custom Url** to enter the URL manually. Refer to the [Stripe API documentation](https://stripe.com/docs/api) for more details.
+4. Select the **GET** method for the REST API in the **Method** combo box.
+5. In **Max Rows**, enter the maximum number of rows to be fetched from the Stripe data source. This value is used to fetch the data from Stripe data source via pagination.
+6. Choose a time interval for the **Refresh Settings** using the combo box, to periodically trigger the REST API request and keep the data in sync with our dashboard.  
+7. Select **JSON** data type in **Data Format** combo box.
+8. Choose **Basic http Authentication** under **Authentication Type** and input a valid **Account Key**.
 
   ![Data Source Preview](/static/assets/working-with-datasource/data-connectors/images/Stripe/DataSourcesView.png)
-
-## Extract Engine
-You can connect to the data source using one of the following extract methods:
-- **Bold BI Extract**: Data will be extracted and managed directly within Bold BI.
-- **Data Hub**: Data extraction is handled through the Data Hub. An equivalent pipeline is created, utilizing the Data Hub’s Extract, Transform, Load (ETL) capabilities to filter, optimize, or transform the data, and to generate new tables.
-- To view the equivalent pipeline created for data extraction, navigate to the Query Designer page and click on View Pipeline.
-
-    ![Refresh Setting](/static/assets/working-with-datasource/images/View_Pipeline.png)
-
-- When the data refresh is configured for data sources that uses the Data Hub Extract Engine, the refresh will be managed within the Data Hub.
 
 You can also edit the connection information set here using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 

@@ -436,10 +436,6 @@ The chart legend dropdown option can be used to simplify viewing complex charts 
 
 ![Legend item as dropdown](/static/assets/visualizing-data/visualization-widgets/images/stacked-bar-chart/legend-as-dropdown.png)
 
-### Legend Alignment
-
-Legend Alignment enables you to control how the legend is positioned within its allocated space. For detailed guidance, refer to the [Legend Alignment](/visualizing-data/visualization-widgets/column-chart/#legend-alignment) section.
-
 #### Legend Shape
 
 This allows you to change the **shape** of the legend.
@@ -529,12 +525,6 @@ This feature allows you to customize the color of the axis title.
 This feature allows you to customize the color of the axis label.
 
 ![Labelcolor](/static/assets/visualizing-data/visualization-widgets/images/stacked-bar-chart/label-color.png)
-
-#### Show Axis Border
-
-This option allows you to enable or disable the axis border of the chart.
-
-![Show axis border](/static/assets/visualizing-data/visualization-widgets/images/stacked-bar-chart/show-axis-border.png)
 
 #### Show Category Axis
 

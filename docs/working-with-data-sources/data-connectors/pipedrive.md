@@ -24,30 +24,26 @@ To configure the Pipedrive data source, follow the below steps:
 
    ![Choose data source](/static/assets/working-with-datasource/data-connectors/images/Pipedrive/ChooseDS_server.png)
 
+## Advanced
+In Advanced category, It will Redirect to the Bold ETL. Refer [Bold ETL](/managing-resources/manage-data-sources/#advanced-category).
+
+## Basic
+In the Basic Category, It will act as the connector in Bold BI. And need to follow the below steps.
+
 ## Create Pipedrive data source
 Once you click on the data source, the NEW DATA SOURCE configuration panel will open. Follow the below steps to create Pipedrive data source.
 1. Enter a name and description (optional) for the data source.
-2. Select The Extract Engine.
-3. Enter the **HostName** for the connected account.
-4. Click the **API Endpoints** dropdown box and choose the required endpoint.
-5. Enter a valid Pipedrive **API Token** to access the endpoints.
-6. Click the **Custom Url** to enter the URL manually. Refer to the [Pipedrive API documentation](https://app.pipelinedeals.com/7. Select the **GET** method for the REST API in the **Method** combo box.
-8. In **Max Rows**, enter the maximum number of rows to be fetched from the Pipedrive data source. This value is used to fetch the data from the Pipedrive data source using the pagination.
-9. Choose a time interval for the **Refresh Settings** using the combo box to trigger the Rest API request periodically to keep the data in sync with your dashboard.  
-10. Select the **JSON** data type in the **Data Format** combo box.
-11. Choose **None** in the **Authentication Type** combo box.
+2. Enter the **HostName** for the connected account.
+3. Click the **API Endpoints** dropdown box and choose the required endpoint.
+4. Enter a valid Pipedrive **API Token** to access the endpoints.
+5. Click the **Custom Url** to enter the URL manually. Refer to the [Pipedrive API documentation](https://app.pipelinedeals.com/api/docs) for more details. 
+6. Select the **GET** method for the REST API in the **Method** combo box.
+7. In **Max Rows**, enter the maximum number of rows to be fetched from the Pipedrive data source. This value is used to fetch the data from the Pipedrive data source using the pagination.
+8. Choose a time interval for the **Refresh Settings** using the combo box to trigger the Rest API request periodically to keep the data in sync with your dashboard.  
+9. Select the **JSON** data type in the **Data Format** combo box.
+10. Choose **None** in the **Authentication Type** combo box.
 
 ![Data source preview](/static/assets/working-with-datasource/data-connectors/images/Pipedrive/DataSourcesView.png)
-
-## Extract Engine
-You can connect to the data source using one of the following extract methods:
-- **Bold BI Extract**: Data will be extracted and managed directly within Bold BI.
-- **Data Hub**: Data extraction is handled through the Data Hub. An equivalent pipeline is created, utilizing the Data Hub’s Extract, Transform, Load (ETL) capabilities to filter, optimize, or transform the data, and to generate new tables.
-- To view the equivalent pipeline created for data extraction, navigate to the Query Designer page and click on View Pipeline.
-
-    ![Refresh Setting](/static/assets/working-with-datasource/images/View_Pipeline.png)
-
-- When the data refresh is configured for data sources that uses the Data Hub Extract Engine, the refresh will be managed within the Data Hub.
 
 You can also edit the connection information set here using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 

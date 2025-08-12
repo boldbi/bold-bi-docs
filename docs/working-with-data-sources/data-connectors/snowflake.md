@@ -123,68 +123,6 @@ We have added support for **custom attributes and dashboard parameters** in the 
 
 >**Note:** Refer to the [Dashboard Parameter Documentation](https://help.boldbi.com/working-with-data-sources/dashboard-parameter/) and [Custom Attributes Documentation](https://help.boldbi.com/working-with-data-sources/configuring-custom-attribute/) for more details.
 
-## Connecting Bold BI to Snowflake using Session Variables
-
-In Bold BI, support for Snowflake session variables has been extended to ensure that user-defined values can be set dynamically before query execution. This enhancement allows more flexible and secure parameter usage during runtime.
-
-Steps to Configure Session Variables in Snowflake Data Source:
-
-**1. Create Data Source with Custom Attribute**
-
-a) When configuring the Snowflake Live connector, include the custom attribute in the Parameters field.
-![Connect Using Session Parameter](/static/assets/working-with-datasource/data-connectors/images/Snowflake/ConnectDS_session_param.png)
-
-**2. Add Custom Attribute**
-
-Add a custom attribute in the form of a key-value pair under the data source configuration. This attribute defines session variables that will be passed during query execution.
-![Add Custom Attribute](/static/assets/working-with-datasource/data-connectors/images/Snowflake/Add_custom_attribute.png)
-
-**3. Use JSON Template Syntax**
-
-Use the following JSON format with Custom Attribute to define the session variables: 
-   ```
-   {
-    "set_variables": {
-        "${{:paramKey}}": "${{:paramValue}}"
-        }
-    }
-   ```
-**4. Preview the Data**
-
-a) Once configured, Connect and continue to dashboard page to ensure that the variable is correctly passed and the query executes as expected.
-![Preview the data](/static/assets/working-with-datasource/data-connectors/images/Snowflake/preview_snowflake.png)
-
-### For Example - Using Session Variables in Views 
-You can also create Snowflake views that reference session variables, as shown below: 
-
-```
-//Drop View  
-
-DROP VIEW orderview; 
-
-//SET PARAM  
-
-SET SHIPNAMEPARAM = 'Express'; 
-
-//Check view with SET PARAM 
-
-Create or replace View orderview AS SELECT "ORDERS"."ORDERDATE" AS "ORDERDATE", "ORDERS"."SHIPVIA" AS "SHIPVIA", "ORDERS"."FREIGHT" AS "FREIGHT", "ORDERS"."ORDERID" AS "ORDERID", "ORDERS"."SHIPCOUNTRY" AS "SHIPCOUNTRY", "ORDERS"."SHIPNAME" AS "SHIPNAME" FROM "NULLSCHEMA"."ORDERS" AS "ORDERS" WHERE SHIPNAME = $SHIPNAMEPARAM; 
-
-//Check query with SET PARAM 
-
-SELECT "ORDERS"."ORDERDATE" AS "ORDERDATE", "ORDERS"."SHIPVIA" AS "SHIPVIA", "ORDERS"."FREIGHT" AS "FREIGHT", "ORDERS"."ORDERID" AS "ORDERID", "ORDERS"."SHIPCOUNTRY" AS "SHIPCOUNTRY", "ORDERS"."SHIPNAME" AS "SHIPNAME" FROM "NULLSCHEMA"."ORDERS" AS "ORDERS" WHERE SHIPNAME = $SHIPNAMEPARAM; 
-```
-#### Sample JSON response  
-```
-{ 
-
-    "set_variables": { 
-
-    "SHIPNAME": "SHIPNAMEPARAM" 
-    }
-}
-```
-
 ## Connecting Bold BI to Snowflake Data Source via REST API
 
 ### Prerequisites 

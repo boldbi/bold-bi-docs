@@ -19,7 +19,7 @@ documentation: ug
       * `127.0.0.1`
       * `121.1.0.11`
 
-2. Please find the embed code for the dashboard that you want to include on your website. [Dashboard Embedding](/embedding-options/iframe-embedding/embedding-with-iframe/#Embed the dashboard in an iframe) is a guide on how to obtain the dashboard embed code.
+2. Please find the embed code for the dashboard that you want to include on your website. [Dashboard Embedding](/embedding-options/iframe-embedding/embedding-a-dashboard/) is a guide on how to obtain the dashboard embed code.
 
 3. The dashboards can only be embedded on the domains that are listed in the `Accept embedding requests from these websites` section.
 

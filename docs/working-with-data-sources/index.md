@@ -18,27 +18,10 @@ In Bold BI, users have the flexibility to connect to SQL data sources through tw
  
 Within extract mode, users can choose between two methods of connecting to the data source:
  
-**Bold BI Extract:** 
-  
-1. With Bold BI Extract, data is extracted from the source and transferred to the intermediate storage without any modification or optimization. This approach prioritizes speed and simplicity, performing a direct transfer of data. Performance differences between Live Mode and Bold BI Extract are primarily attributed to factors such as server load and resource availability, rather than the extraction process itself.
-
-2. **Use Case:** Suitable for scenarios where a straightforward, unmodified copy of the data is required for analysis or visualization.
-
-- **Data Hub:** 
-
-1. The Data Hub option provides users with the capability to transform and aggregate data during the extraction process. This method offers enhanced flexibility in shaping the data to meet specific analytical requirements. Users can leverage the Extract, Transform, Load (ETL) capabilities of Bold BI to optimize the extracted data.
-This includes operations such as:
-
-    Filtering:  Selecting specific subsets of data.
-
-    Cleansing:  Correcting or removing inaccurate or irrelevant data.
-
-    Summarization:  Aggregating data to a higher level (e.g., calculating sums, averages).
-
-2. By applying these transformations, users can streamline analysis workflows, improve query performance, and derive more meaningful insights from the data.
-
-3. **Use Case:** Ideal for scenarios where data requires preparation before analysis, such as combining data from multiple sources, removing noise, or calculating key metrics.
-
+  1. **Basic:** In basic extract mode, data extraction occurs without any optimization. The extracted data is transferred to the intermediate database as-is, without any additional processing or transformation. Any differences in performance between live mode and basic extract mode are typically attributed to server load and resource availability.
+ 
+  2. **Advanced:** Advanced extract mode offers users the ability to perform data transformation and aggregation before transferring it to the intermediate database. This allows for greater flexibility in shaping the data to meet specific analysis requirements, such as filtering, cleansing, or summarizing datasets. Users can leverage the transformation capabilities provided by Bold ETL (Extract, Transform, Load) to optimize the extracted data and enhance its suitability for analysis. By applying transformations, users can streamline their analysis workflows and derive deeper insights from the data.
+ 
 In summary, Bold BI provides users with two distinct modes for connecting to SQL data sources, each offering unique benefits depending on the nature of the analysis and the requirements of the user. Whether opting for real-time access through live mode or leveraging the efficiency of extract mode, users can access and analyze SQL data effectively to drive informed decision-making and achieve their analytical objectives.
 
 You can explore the data source in detail here:

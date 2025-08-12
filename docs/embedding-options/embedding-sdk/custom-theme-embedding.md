@@ -59,7 +59,7 @@ Please follow the steps to apply the custom theme to the embedded dashboard.
 
     ```js
     <head>
-        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v12.1.5/boldbi-embed.js"></script>
+        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v7.11.24/boldbi-embed.js"></script>
     </head>
      ```
 
@@ -151,15 +151,14 @@ The dashboard is rendered in the dark theme as specified in the `appearance` opt
 
 ## How to refer the custom theme file as external in your embedded application
 
-1. In the .html page of your application, you need to add the `boldbi.theme.definition.min.css` as a custom theme file and the following dependent script in the head tag of your page. <br>
-    To demonstrate, we have set the `darkviolet` theme as a custom theme.
+1. In the .html page of your application, you need to add the `boldbi.theme.definition.min.css` as a custom theme file and the following dependent script in the head tag of your page.
+ To demonstrate, we have set the `dark` theme as a custom theme.
 
-    ```js
+     ```js
     <head>  
-        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v12.1.5/boldbi-embed.js"></script>
-        <link rel="stylesheet" href="/path/to/theme/file/darkviolet.css">
+        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v7.11.24/boldbi-embed.js"></script>
     </head>
-    ```     
+     ```     
 
 2. The `isLocalTheme` option should be set to `true` when referencing the custom theme file as an external file.
 

@@ -1,37 +1,27 @@
 {
-  "swagger": "2.0",
-  "info": {
-    "title": "API Reference",
-    "version": "2.0"
+  "swagger" : "2.0",
+  "info" : {
+    "title" : "API Reference",
+    "version" : "2.0"
   },
-  "host": "onpremise-demo.boldbi.com",
-  "basePath": "/api",
-  "schemes": [
-    "https"
-  ],
-  "consumes": [
-    "application/json"
-  ],
-  "produces": [
-    "application/json"
-  ],
-  "tags": [
-    {
-      "name": "Authentication"
-    }
-  ],
-  "securityDefinitions": {
-    "Bearer": {
-      "type": "apiKey",
-      "name": "Authorization",
-      "in": "header"
+  "host" : "onpremise-demo.boldbi.com",
+  "basePath" : "/api",
+  "schemes" : [ "https" ],
+  "consumes" : [ "application/json" ],
+  "produces" : [ "application/json" ],
+  "tags" : [ {
+    "name" : "Authentication"
+  } ],
+  "securityDefinitions" : {
+    "Bearer" : {
+      "type" : "apiKey",
+      "name" : "Authorization",
+      "in" : "header"
     }
   },
-  "security": [
-    {
-      "Bearer": []
-    }
-  ],
+  "security" : [ {
+    "Bearer" : [ ]
+  } ],
   "paths": {
     "/token": {
       "post": {
@@ -39,37 +29,31 @@
           "Authentication"
         ],
         "summary": "Authenticate Client",
-        "description": "For information on how to retrieve the client ID and secret for the REST API, please refer to [this](/multi-tenancy/site-administration/api-keys/) documentation.",
+		"description": "For information on how to retrieve the client ID and secret for the REST API, please refer to [this](/multi-tenancy/site-administration/api-keys/) documentation.",
         "operationId": "client_authentication",
-        "consumes": [
-          "application/x-www-form-urlencoded"
-        ],
-        "parameters": [
-          {
-            "type": "string",
-            "name": "grant_type",
-            "in": "formData",
-            "required": true,
-            "x-nullable": false,
-            "description": "The type of credentials used to authorize the request for an access token.<br />Value allowed is <code>client_credentials</code>"
-          },
-          {
-            "type": "string",
-            "name": "client_id",
-            "in": "formData",
-            "required": true,
-            "x-nullable": false,
-            "description": "Client ID of the internal app."
-          },
-          {
-            "type": "string",
-            "name": "client_secret",
-            "in": "formData",
-            "required": true,
-            "x-nullable": false,
-            "description": "Client secret of the internal app."
-          }
-        ],
+        "consumes" : [ "application/x-www-form-urlencoded" ],
+        "parameters" : [ {
+          "type" : "string",
+          "name" : "grant_type",
+          "in" : "formData",
+          "required" : true,
+          "x-nullable" : false,
+          "description" : "The type of credentials used to authorize the request for an access token.<br />Value allowed is <code>client_credentials</code>"
+        }, {
+          "type" : "string",
+          "name" : "client_id",
+          "in" : "formData",
+          "required" : true,
+          "x-nullable" : false,
+          "description" : "Client ID of the internal app."
+        }, {
+          "type" : "string",
+          "name" : "client_secret",
+          "in" : "formData",
+          "required" : true,
+          "x-nullable" : false,
+          "description" : "Client secret of the internal app."
+        } ],
         "responses": {
           "200": {
             "description": "Successfully retrived access token.",
@@ -113,9 +97,9 @@
         "responses": {
           "200": {
             "description": "Tenant added successfully.",
-            "schema": {
-              "$ref": "#/definitions/ApiResponse"
-            }
+                "schema": {
+                  "$ref": "#/definitions/ApiResponse"
+                }
           },
           "400": {
             "description": "The content of the request body is missing or incomplete.",
@@ -164,9 +148,9 @@
         "responses": {
           "200": {
             "description": "Tenant added successfully.",
-            "schema": {
-              "$ref": "#/definitions/ApiResponse"
-            }
+                "schema": {
+                  "$ref": "#/definitions/ApiResponse"
+                }
           },
           "400": {
             "description": "The content of the request body is missing or incomplete.",
@@ -227,9 +211,9 @@
         "responses": {
           "200": {
             "description": "Tenant isolation code added successfully.",
-            "schema": {
-              "$ref": "#/definitions/TenantIsolationResponse"
-            }
+                "schema": {
+                  "$ref": "#/definitions/TenantIsolationResponse"
+                }
           },
           "400": {
             "description": "The content of the request body is missing or incomplete.",
@@ -280,9 +264,10 @@
         "responses": {
           "200": {
             "description": "operation is successful.",
-            "schema": {
-              "$ref": "#/definitions/TenantResponse"
-            }
+            
+                "schema": {
+                  "$ref": "#/definitions/TenantResponse"
+                }
           },
           "400": {
             "description": "The content of the request body is missing or incomplete.",
@@ -342,9 +327,9 @@
         "responses": {
           "200": {
             "description": "Tenant details updated successfully.",
-            "schema": {
-              "$ref": "#/definitions/TenantResponse"
-            }
+                "schema": {
+                  "$ref": "#/definitions/TenantResponse"
+                }
           },
           "400": {
             "description": "The content of the request body is missing or incomplete.",
@@ -397,8 +382,8 @@
           "200": {
             "description": "Site has been deleted successfully.",
             "schema": {
-              "$ref": "#/definitions/ApiUserDeleteResponse"
-            }
+                  "$ref": "#/definitions/ApiUserDeleteResponse"
+                }
           },
           "400": {
             "description": "Tenant id invalid.",
@@ -431,7 +416,7 @@
         "summary": "List Tenants",
         "description": "List all the Bold BI and Bold Reports tenants available in the application. <br /><code>/v2.0/tenants</code> returns the first 25 tenants by default.<br /><blockquote style='display: inline;'>Note:</blockquote>By default, this API endpoint returns a list of 25 tenants. You can get more records (up to 100 records at a time) by using the <code>page</code> and <code>page_size</code> URI parameters. For example, refer to the following URLs:<br /><ul><li><code>/v2.0/tenants?page_size=30</code> returns the first 30 tenants.</li><li><code>/v2.0/tenants?page=2&page_size=30</code> returns the second group of 30 tenants.</li></ul><br /><blockquote>URI Parameters</blockquote><ul><li><code>page_size</code> the number of tenants to be returned per page.</li><li><code>page</code> the page number.</li></ul>",
         "operationId": "list_tenant",
-        "parameters": [
+		 "parameters": [
           {
             "name": "page",
             "in": "path",
@@ -439,11 +424,11 @@
             "required": false,
             "style": "simple",
             "explode": false,
-            "schema": {
+			"schema": {
               "type": "string",
               "format": "int32",
               "nullable": false
-            }
+			}
           },
           {
             "name": "page_size",
@@ -452,19 +437,19 @@
             "required": false,
             "style": "simple",
             "explode": false,
-            "schema": {
+			"schema": {
               "type": "string",
               "format": "int32",
               "nullable": false
-            }
+			}
           }
         ],
         "responses": {
           "200": {
             "description": "Operation success.",
-            "schema": {
-              "$ref": "#/definitions/ArrayTenantResponse"
-            }
+                "schema": {
+                  "$ref": "#/definitions/ArrayTenantResponse"
+                }
           },
           "400": {
             "description": "The content of the request body is missing or incomplete.",
@@ -489,7 +474,7 @@
         }
       }
     },
-    "/v2.0/tenant/{tenant_id}/grant-access": {
+	"/v2.0/tenant/{tenant_id}/grant-access": {
       "post": {
         "tags": [
           "Tenants"
@@ -497,37 +482,37 @@
         "summary": "Grant User Access to Tenant ",
         "description": "Grant user access to the given tenant. ",
         "operationId": "grant_user_access",
-        "parameters": [
-          {
+		"parameters": [
+		{
             "name": "tenant_id",
             "in": "path",
             "description": "ID of the tenant.",
             "required": true,
             "style": "simple",
             "explode": false,
-            "schema": {
+			"schema": {
               "type": "string",
               "format": "uuid",
               "nullable": false
-            }
+			}
           },
           {
-            "name": "grant-access",
-            "in": "body",
-            "description": "Grant user access request body.",
+			"name": "grant-access",
+            "in": "body",		
+		    "description": "Grant user access request body.",
             "required": true,
-            "schema": {
+              "schema": {
               "$ref": "#/definitions/GrantUser"
-            },
+                },
             "x-nullable": true
           }
-        ],
+		  ],
         "responses": {
           "200": {
             "description": "Granted site access to the user successfully.",
-            "schema": {
-              "$ref": "#/definitions/GrantUserApiResponse"
-            }
+                "schema": {
+                  "$ref": "#/definitions/GrantUserApiResponse"
+                }
           },
           "400": {
             "description": "The content of the request body is missing or incomplete.",
@@ -552,7 +537,7 @@
         }
       }
     },
-    "/v2.0/tenant/{tenant_id}/remove-access": {
+	"/v2.0/tenant/{tenant_id}/remove-access": {
       "post": {
         "tags": [
           "Tenants"
@@ -560,31 +545,31 @@
         "summary": "Remove User Access from Tenant ",
         "description": "Remove user access from the given tenant.",
         "operationId": "remove_user_access",
-        "parameters": [
-          {
+		"parameters": [
+		{
             "name": "tenant_id",
             "in": "path",
             "description": "ID of the tenant.",
             "required": true,
             "style": "simple",
             "explode": false,
-            "schema": {
+			"schema": {
               "type": "string",
               "format": "uuid",
               "nullable": false
-            }
+			}
           },
           {
-            "name": "grant-access",
-            "in": "body",
-            "description": "Grant user access request body.",
+			 "name": "grant-access",
+              "in": "body",		
+		   "description": "Grant user access request body.",
             "required": true,
-            "schema": {
+              "schema": {
               "$ref": "#/definitions/GrantUser"
-            },
+                },
             "x-nullable": true
           }
-        ],
+		  ],
         "responses": {
           "204": {
             "description": "No Content.",
@@ -594,7 +579,7 @@
             "description": "The content of the request body is missing or incomplete.",
             "content": {}
           },
-          "412": {
+		  "412": {
             "description": "Tenant id is invalid.",
             "content": {}
           },
@@ -617,64 +602,7 @@
         }
       }
     },
-    "/v2.0/tenant/{tenantId}/inherit-settings": {
-      "put": {
-        "tags": [
-          "Tenants"
-        ],
-        "summary": "Update Tenant Inherited Global Settings",
-        "description": "Update tenant inherited global settings.",
-        "operationId": "inherit_global_settings",
-        "parameters": [
-          {
-            "name": "tenantId",
-            "in": "path",
-            "description": "TenantID of the tenant.",
-            "required": true,
-            "schema": {
-              "type": "string",
-              "format": "uuid",
-              "nullable": false
-            }
-          },
-          {
-            "name": "UpdateTenantInheritGlobalSettings",
-            "in": "body",
-            "description": "Payload containing the settings to update the tenant's global inheritance configuration.",
-            "required": true,
-            "schema": {
-              "$ref": "#/definitions/UpdateIheritGlobalAppSettingsForTenant"
-            },
-            "x-nullable": false
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Tenant settings were updated successfully.",
-            "schema": {
-              "$ref": "#/definitions/ApiResponse"
-            }
-          },
-          "400": {
-            "description": "The content of the request body is missing or incomplete.",
-            "content": {}
-          },
-          "401": {
-            "description": "Access denied.",
-            "content": {}
-          },
-          "405": {
-            "description": "Request type was not PUT.",
-            "content": {}
-          },
-          "417": {
-            "description": "Failed to update tenant settings.",
-            "content": {}
-          }
-        }
-      }
-    },
-    "{domain}/api/v2.0/user/add": {
+	"{domain}/api/v2.0/user/add": {
       "post": {
         "tags": [
           "Users"
@@ -682,22 +610,22 @@
         "summary": "Add User ",
         "description": "Add new user account in UMS.",
         "operationId": "add_user",
-        "parameters": [
-          {
-            "name": "add user",
-            "in": "body",
-            "schema": {
-              "$ref": "#/definitions/AddUser"
-            },
-            "required": true
-          }
-        ],
+		"parameters": [
+        {
+			"name" : "add user",
+			  "in" : "body",
+              "schema": {
+                "$ref": "#/definitions/AddUser"
+              },
+          "required": true
+        }
+		],
         "responses": {
           "200": {
             "description": "User has been added and activated successfully.",
-            "schema": {
-              "$ref": "#/definitions/ArrayUserResponse"
-            }
+                "schema": {
+                  "$ref": "#/definitions/ArrayUserResponse"
+                }
           },
           "400": {
             "description": "The content of the request body is missing or incomplete.",
@@ -722,7 +650,7 @@
         }
       }
     },
-    "/v2.0/user/{userId}": {
+	"/v2.0/user/{userId}": {
       "put": {
         "tags": [
           "Users"
@@ -738,27 +666,27 @@
             "required": true,
             "style": "simple",
             "explode": false,
-            "schema": {
+			 "schema": {
               "type": "string",
               "format": "uuid",
               "nullable": false
-            }
+			 }
           },
-          {
-            "name": "update user",
-            "in": "body",
-            "schema": {
-              "$ref": "#/definitions/UpdateUser"
-            },
-            "required": true
-          }
-        ],
+        {
+			"name" : "update user",
+			"in" : "body",
+              "schema": {
+                "$ref": "#/definitions/UpdateUser"
+              },
+          "required": true
+        }
+	  ],
         "responses": {
           "200": {
             "description": "User has been updated successfully.",
-            "schema": {
-              "$ref": "#/definitions/ArrayUpdateUserResponse"
-            }
+                "schema": {
+                  "$ref": "#/definitions/ArrayUpdateUserResponse"
+                }
           },
           "400": {
             "description": "The content of the request body is missing or incomplete.",
@@ -783,7 +711,7 @@
         }
       }
     },
-    "{domain}/api/v2.0/users/{user_Id}": {
+	"{domain}/api/v2.0/users/{user_Id}":{
       "get": {
         "tags": [
           "Users"
@@ -799,19 +727,19 @@
             "required": true,
             "style": "simple",
             "explode": false,
-            "schema": {
+              "schema": {
               "type": "string",
               "format": "uuid",
               "nullable": false
-            }
           }
+		  }
         ],
         "responses": {
           "200": {
             "description": "Get user information successfully.",
-            "schema": {
-              "$ref": "#/definitions/ArrayUserResponse"
-            }
+                "schema": {
+                  "$ref": "#/definitions/ArrayUserResponse"
+                }
           },
           "400": {
             "description": "The content of the request body is missing or incomplete.",
@@ -836,7 +764,7 @@
         }
       }
     },
-    "/v2.0/users/{user}": {
+    "/v2.0/users/{user}":{
       "get": {
         "tags": [
           "Users"
@@ -852,18 +780,18 @@
             "required": true,
             "style": "simple",
             "explode": false,
-            "schema": {
+              "schema": {
               "type": "string",
               "nullable": false
-            }
           }
+		  }
         ],
         "responses": {
           "200": {
             "description": "User info has been retrieved successfully.",
-            "schema": {
-              "$ref": "#/definitions/ApiGetUserResponse"
-            }
+                "schema": {
+                  "$ref": "#/definitions/ApiGetUserResponse"
+                }
           },
           "400": {
             "description": "The content of the request body is missing or incomplete.",
@@ -958,7 +886,7 @@
         }
       }
     },
-    "/v2.0/users/{userId}": {
+  "/v2.0/users/{userId}": {
       "put": {
         "tags": [
           "Users"
@@ -994,10 +922,10 @@
         "responses": {
           "200": {
             "description": "Password has been changed successfully.",
-            "schema": {
-              "$ref": "#/definitions/ArrayUserResponse"
-            }
-          },
+                "schema": {
+                  "$ref": "#/definitions/ArrayUserResponse"
+                }
+          }, 
           "400": {
             "description": "The content of the request body is missing or incomplete.",
             "content": {}
@@ -1021,7 +949,7 @@
         }
       }
     },
-    "/v2.0/user/{Id}": {
+	"/v2.0/user/{Id}": {
       "delete": {
         "tags": [
           "Users"
@@ -1029,7 +957,7 @@
         "summary": "Delete User",
         "description": "Delete the user account.",
         "operationId": "delete_user",
-        "parameters": [
+       "parameters": [
           {
             "name": "userId",
             "in": "path",
@@ -1037,9 +965,9 @@
             "required": true,
             "style": "simple",
             "explode": false,
-            "type": "string",
-            "format": "uuid",
-            "nullable": false
+              "type": "string",
+              "format": "uuid",
+              "nullable": false
           }
         ],
         "responses": {
@@ -1070,77 +998,6 @@
         }
       }
     },
-    "v2.0/administration/security/networking/ip-whitelist":{
-      "get": {
-        "tags": [
-          "Administration"
-        ],
-        "summary": "Get IP whitelisting Settings",
-        "description": "Retrieve the IP whitelisting setting details.",
-        "operationId": "adminstration_IP_Whitelisting_settings",
-        "responses": {
-          "200": {
-            "description": "IP whitelisting settings details have been retrieved successfully.",
-               "schema": {
-                  "$ref": "#/definitions/ApiIPWhitelistingSettings"
-                }
-          },
-          "401": {
-            "description": "Access denied",
-            "content": {}
-          },
-          "405":{
-              "description": "Request type was not get",
-              "content": {}
-          }
-        }
-      },
-      "post": {
-        "tags": [
-          "Administration"
-        ],
-        "summary": "Update IP whitelisting settings",
-        "description": "Users who have admin rights permissions for IP whitelisting settings can update the IP whitelisting settings.",
-        "operationId": "Administartion_UpdateIPWhitelistingSettings",
-        "parameters": [
-          {
-            "name": "IPWhitelistingSettings",
-            "in": "body",
-            "required": true,
-            "description": "The updated IP whitelisting settings that have been passed will be updated with the details.",            
-            "schema": {
-              "$ref": "#/definitions/IPWhitelistingResponse"
-            },
-            "x-nullable": false
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "IP whitelisting settings details has been updated successfully.",
-              "schema": {
-                "$ref": "#/definitions/ApiResponse"
-              }
-            },
-            "401": {
-                "description": "Access denied",
-                "content": {}
-            },
-            "405":{
-                "description":"Request type was not post",
-                "content": {}
-            },
-            "404":{
-                "description":"Content of the request is empty or missing",
-                "content": {}
-            },
-            "417":{
-                "description":"Failed to update IP whitelisting setting",
-                "content": {}
-            }
-        }
-      }
-
-    },
     "/v2.0/administration/branding/logos": {
       "post": {
         "tags": [
@@ -1151,8 +1008,8 @@
         "operationId": "update_branding_logos",
         "parameters": [
           {
-            "name": "update branding logos",
-            "in": "body",
+            "name" : "update branding logos",
+            "in" : "body",
             "schema": {
               "$ref": "#/definitions/UpdateBrandings"
             },
@@ -1162,9 +1019,9 @@
         "responses": {
           "200": {
             "description": "Branding images have been successfully updated.",
-            "schema": {
-              "$ref": "#/definitions/UpdateBrandingsResponse"
-            }
+                "schema": {
+                  "$ref": "#/definitions/UpdateBrandingsResponse"
+                }
           },
           "400": {
             "description": "The content of the request body is missing or incomplete.",
@@ -1184,748 +1041,6 @@
           },
           "417": {
             "description": "Failed to update branding images.",
-            "content": {}
-          }
-        }
-      }
-    },
-    "/v2.0/administration/embed/secrets/regenerate": {
-      "post": {
-        "tags": [
-          "Administration"
-        ],
-        "summary": "Regenerate Embed Secret.",
-        "description": "Returns the generated embed secret key.",
-        "operationId": "regenerate_embed_secret",
-        "responses": {
-          "200": {
-            "description": "Secret code has been regenerated successfully.",
-            "schema": {
-              "$ref": "#/definitions/RegenerateEmbedSecret"
-            }
-          },
-          "400": {
-            "description": "The content of the request body is missing or incomplete.",
-            "content": {}
-          },
-          "401": {
-            "description": "Access denied.",
-            "content": {}
-          },
-          "405": {
-            "description": "Request type was not POST.",
-            "content": {}
-          },
-          "406": {
-            "description": "The content of the request body is invalid.",
-            "content": {}
-          },
-          "417": {
-            "description": "Failed to reset secret key.",
-            "content": {}
-          }
-        }
-      }
-    },
-    "/v2.0/administration/embed/configuration": {
-      "get": {
-        "tags": [
-          "Administration"
-        ],
-        "summary": "Get Embed Settings.",
-        "description": "Returns the embed configuration settings.",
-        "operationId": "get_embed_settings",
-        "responses": {
-          "200": {
-            "description": "Embed configuration setting has been fetched successfully.",
-            "schema": {
-              "$ref": "#/definitions/EmbedConfigurationResponse"
-            }
-          },
-          "400": {
-            "description": "The content of the request body is missing or incomplete.",
-            "content": {}
-          },
-          "401": {
-            "description": "Access denied.",
-            "content": {}
-          },
-          "406": {
-            "description": "The content of the request body is invalid.",
-            "content": {}
-          },
-          "417": {
-            "description": "Failed to retrieve embed settings.",
-            "content": {}
-          }
-        }
-      },
-      "post": {
-        "tags": [
-          "Administration"
-        ],
-        "summary": "Update Embed Settings.",
-        "description": "update the embed setting details.",
-        "operationId": "update_embed_settings",
-        "parameters": [
-          {
-            "name" : "Update branding images request body.",
-            "in" : "body",
-            "schema": {
-              "$ref": "#/definitions/UpdateEmbedSettings"
-            },
-            "required": true
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Settings have been uploaded successfully.",
-            "schema": {
-              "$ref": "#/definitions/EmbedConfigurationResponse"
-            }
-          },
-          "400": {
-            "description": "The content of the request body is missing or incomplete.",
-            "content": {}
-          },
-          "401": {
-            "description": "Access denied.",
-            "content": {}
-          },
-          "405": {
-            "description": "Request type was not POST.",
-            "content": {}
-          },
-          "406": {
-            "description": "The content of the request body is invalid.",
-            "content": {}
-          },
-          "417": {
-            "description": "Embed configuration is not in a valid format.",
-            "content": {}
-          }
-        }
-      }
-    },
-    "/v2.0/user-activity-logs": {
-      "get": {
-        "tags": [
-          "Activity Logs"
-        ],
-        "summary": "Get Activity Logs",
-        "description": "Retrieve a list of activities performed in the item module. This endpoint allows site administrators to filter logs based on various parameters such as event category, event type, user email, tenant ID, app source, and date range.",
-        "operationId": "ActivityLogs_GetAllActivityLogs",
-        "parameters": [
-          {
-            "type": "string",
-            "name": "eventCategory",
-            "in": "query",
-            "required": false,
-            "description": "Specify the category of the event. Allowed values are <code>User, Permission, Settings</code>.",
-            "schema": {
-              "type": "string",
-              "nullable": false
-            }
-          },
-          {
-            "type": "string",
-            "name": "eventType",
-            "in": "query",
-            "required": false,
-            "description": "Specify the type of the event. Allowed values are <code>Added, Updated, Deleted</code>.",
-            "schema": {
-              "type": "string",
-              "nullable": false
-            }
-          },
-          {
-            "type": "string",
-            "name": "initiatedUserEmail",
-            "in": "query",
-            "required": false,
-            "description": "Specify the email address of the user who initiated the event.",
-            "schema": {
-              "type": "string",
-              "nullable": false
-            }
-          },
-          {
-            "type": "string",
-            "name": "targetUserEmail",
-            "in": "query",
-            "required": false,
-            "description": "Specify the email address of the user who was targeted by the event.",
-            "schema": {
-              "type": "string",
-              "nullable": false
-            }
-          },
-          {
-            "type": "string",
-            "name": "eventStartDate",
-            "in": "query",
-            "required": false,
-            "description": "Specify the UTC start date to filter logs within a specific date range. The format should be ISO 8601: `yyyy-MM-ddTHH:mm:ssZ`.",
-            "format": "date-time",
-            "schema": {
-              "type": "string",
-              "nullable": false
-            }
-          },
-          {
-            "type": "string",
-            "name": "eventEndDate",
-            "in": "query",
-            "required": false,
-            "description": "Specify the UTC end date to filter logs within a specific date range. The format should be ISO 8601: `yyyy-MM-ddTHH:mm:ssZ`.",
-            "format": "date-time",
-            "schema": {
-              "type": "string",
-              "nullable": false
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "The list of activity logs was retrieved successfully.",
-            "schema": {
-              "$ref": "#/definitions/ApiGetAuditlogsPaginatedResponse"
-            },
-            "204": {
-              "description": "Log is empty",
-              "content": {}
-            },
-            "400": {
-              "description": "Invalid log module",
-              "content": {}
-            },
-            "401": {
-              "description": "Access denied",
-              "content": {}
-            },
-            "405": {
-              "description": "Request type was not GET.",
-              "content": {}
-            }
-          }
-        }
-      }
-    },
-    "/v2.0/settings/authentication/oauth": {
-      "get": {
-        "tags": [
-          "Administration"
-        ],
-        "summary": "Get OAuth Settings",
-        "description": "Get the current OAuth authentication settings.",
-        "operationId": "get_oauth_settings",
-        "responses": {
-          "200": {
-            "description": "OAuth settings have been successfully retrieved.",
-            "schema": {
-              "$ref": "#/definitions/GetOAuthResponse"
-            }
-          },
-          "412": {
-            "description": "OAuth settings not configured.",
-            "content": {}
-          },
-          "417": {
-            "description": "Failed to retrieve OAuth settings.",
-            "content": {}
-          }
-        }
-      },
-      "post": {
-        "tags": [
-          "Administration"
-        ],
-        "summary": "Add OAuth Settings",
-        "description": "Add the OAuth authentication settings.",
-        "operationId": "add_oauth_settings",
-        "parameters": [
-          {
-            "name" : "add oauth settings",
-            "in" : "body",
-            "schema": {
-              "$ref": "#/definitions/AddOAuthRequestBody"
-            },
-            "required": true
-          }  
-        ],
-        "responses": {
-          "200": {
-            "description": "OAuth settings have been added successfully.",
-            "schema": {
-              "$ref": "#/definitions/OAuthResponse"
-            }
-          },
-          "400": {
-            "description": "The content of the request body is missing or incomplete.",
-            "content": {}
-          },
-          "412": {
-            "description": "The content of the request body is invalid.",
-            "content": {}
-          },
-          "417": {
-            "description": "Failed to add OAuth settings.",
-            "content": {}
-          }
-        }
-      },
-      "put": {
-        "tags": [
-          "Administration"
-        ],
-        "summary": "Update OAuth Settings",
-        "description": "Update the OAuth authentication settings.",
-        "operationId": "update_oauth_settings",
-        "parameters": [
-          {
-            "name" : "update oauth settings",
-            "in" : "body",
-            "schema": {
-              "$ref": "#/definitions/UpdateOAuthRequestBody"
-            },
-            "required": true
-          }  
-        ],
-        "responses": {
-          "200": {
-            "description": "OAuth settings have been updated successfully.",
-            "schema": {
-              "$ref": "#/definitions/OAuthResponse"
-            }
-          },
-          "400": {
-            "description": "The content of the request body is missing or incomplete.",
-            "content": {}
-          },
-          "412": {
-            "description": "The content of the request body is invalid.",
-            "content": {}
-          },
-          "417": {
-            "description": "Failed to update OAuth settings.",
-            "content": {}
-          }
-        }
-      }
-    },
-    "/v2.0/settings/authentication/jwt": {
-      "get": {
-        "tags": [
-          "Administration"
-        ],
-        "summary": "Get JWT Settings",
-        "description": "Get the current JWT authentication settings.",
-        "operationId": "get_JWT_settings",
-        "responses": {
-          "200": {
-            "description": "JWT settings have been successfully retrieved.",
-            "schema": {
-              "$ref": "#/definitions/GetJWTResponse"
-            }
-          },
-          "412": {
-            "description": "JWT settings not configured.",
-            "content": {}
-          },
-          "417": {
-            "description": "Failed to retrieve JWT settings.",
-            "content": {}
-          }
-        }
-      },
-      "post": {
-        "tags": [
-          "Administration"
-        ],
-        "summary": "Add JWT Settings",
-        "description": "Add the JWT authentication settings.",
-        "operationId": "add_JWT_settings",
-        "parameters": [
-          {
-            "name" : "add JWT settings",
-            "in" : "body",
-            "schema": {
-              "$ref": "#/definitions/AddJWTRequestBody"
-            },
-            "required": true
-          }  
-        ],
-        "responses": {
-          "200": {
-            "description": "JWT settings have been added successfully.",
-            "schema": {
-              "$ref": "#/definitions/JWTResponse"
-            }
-          },
-          "400": {
-            "description": "The content of the request body is missing or incomplete.",
-            "content": {}
-          },
-          "412": {
-            "description": "The content of the request body is invalid.",
-            "content": {}
-          },
-          "417": {
-            "description": "Failed to add JWT settings.",
-            "content": {}
-          }
-        }
-      },
-      "put": {
-        "tags": [
-          "Administration"
-        ],
-        "summary": "Update JWT Settings",
-        "description": "Update the JWT authentication settings.",
-        "operationId": "update_JWT_settings",
-        "parameters": [
-          {
-            "name" : "update JWT settings",
-            "in" : "body",
-            "schema": {
-              "$ref": "#/definitions/UpdateJWTRequestBody"
-            },
-            "required": true
-          }  
-        ],
-        "responses": {
-          "200": {
-            "description": "JWT settings have been updated successfully.",
-            "schema": {
-              "$ref": "#/definitions/JWTResponse"
-            }
-          },
-          "400": {
-            "description": "The content of the request body is missing or incomplete.",
-            "content": {}
-          },
-          "412": {
-            "description": "The content of the request body is invalid.",
-            "content": {}
-          },
-          "417": {
-            "description": "Failed to update JWT settings.",
-            "content": {}
-          }
-        }
-      }
-    },
-    "/v2.0/settings/authentication/regenerate-signing-key": {
-      "post": {
-        "tags": [
-          "Administration"
-        ],
-        "summary": "Regenerate JWT signing key.",
-        "description": "Returns the generated JWT signing key.",
-        "operationId": "regenerate_signing_key",
-        "responses": {
-          "200": {
-            "description": "Signing key has been generated successfully.",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/definitions/RegenerateSigningKey"
-                }
-              }
-            }
-          },
-          "405": {
-            "description": "Request type was not POST.",
-            "content": {}
-          }
-        }
-      }
-    },
-    "/v2.0/settings/authentication/regenerate-encryption-key": {
-      "post": {
-        "tags": [
-          "Administration"
-        ],
-        "summary": "Regenerate JWT encryption key.",
-        "description": "Returns the generated JWT encryption key.",
-        "operationId": "regenerate_encryption_key",
-        "responses": {
-          "200": {
-            "description": "Encryption key has been generated successfully.",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/definitions/RegenerateEncryptionKey"
-                }
-              }
-            }
-          },
-          "405": {
-            "description": "Request type was not POST.",
-            "content": {}
-          }
-        }
-      }
-    },
-    "/v2.0/settings/authentication/openid": {
-      "get": {
-        "tags": [
-          "Administration"
-        ],
-        "summary": "Get OpenId Settings",
-        "description": "Get the current OpenId authentication settings.",
-        "operationId": "get_openid_settings",
-        "responses": {
-          "200": {
-            "description": "OpenId settings have been successfully retrieved.",
-            "schema": {
-              "$ref": "#/definitions/GetOpenIdResponse"
-            }
-          },
-          "412": {
-            "description": "OpenId settings not configured.",
-            "content": {}
-          },
-          "417": {
-            "description": "Falied to retrieve OpenId settings.",
-            "content": {}
-          }
-        }
-      },
-      "post": {
-        "tags": [
-          "Administration"
-        ],
-        "summary": "Add OpenId Settings",
-        "description": "Add the OpenId authentication settings.",
-        "operationId": "add_openid_settings",
-        "parameters": [
-          {
-            "name" : "add openid settings",
-            "in" : "body",
-            "schema": {
-              "$ref": "#/definitions/AddOpenIdRequestBody"
-            },
-            "required": true
-          }  
-        ],
-        "responses": {
-          "200": {
-            "description": "OpenId settings have been added successfully.",
-            "schema": {
-              "$ref": "#/definitions/OpenIdResponse"
-            }
-          },
-          "400": {
-            "description": "The content of the request body is missing or incomplete.",
-            "content": {}
-          },
-          "412": {
-            "description": "The content of the request body is invalid.",
-            "content": {}
-          },
-          "417": {
-            "description": "Failed to add OpenId settings.",
-            "content": {}
-          }
-        }
-      },
-      "put": {
-        "tags": [
-          "Administration"
-        ],
-        "summary": "Update OpenId Settings",
-        "description": "Update the OpenId authentication settings.",
-        "operationId": "update_openid_settings",
-        "parameters": [
-          {
-            "name" : "update openid settings",
-            "in" : "body",
-            "schema": {
-              "$ref": "#/definitions/UpdateOpenIdRequestBody"
-            },
-            "required": true
-          }  
-        ],
-        "responses": {
-          "200": {
-            "description": "OpenId settings have been updated successfully.",
-            "schema": {
-              "$ref": "#/definitions/OpenIdResponse"
-            }
-          },
-          "400": {
-            "description": "The content of the request body is missing or incomplete.",
-            "content": {}
-          },
-          "412": {
-            "description": "The content of the request body is invalid.",
-            "content": {}
-          },
-          "417": {
-            "description": "Failed to update OpenId settings.",
-            "content": {}
-          }
-        }
-      }
-    },
-    "/v2.0/administration/look-and-feel/resources": {
-      "get": {
-        "tags": [
-          "Administration"
-        ],
-        "summary": "Get font and theme",
-        "description": "Get the font and theme file details",
-        "operationId": "get_font_and_themes",
-        "responses": {
-          "200": {
-            "description": "Resources retrieved successfully.",
-            "schema": {
-              "$ref": "#/definitions/GetThemeFileDetails"
-            }
-          },
-          "417": {
-            "description": "Failed to get the resources.",
-            "content": {}
-          }
-        }
-      }
-    },
-    "/v2.0/administration/look-and-feel/upload": {
-      "post": {
-        "tags": [
-          "Administration"
-        ],
-        "summary": "Upload font and theme",
-        "description": "Upload the font and theme files",
-        "operationId": "upload_font_and_themes",
-        "parameters": [
-          {
-            "name" : "Upload font and theme.",
-            "in" : "body",
-            "schema": {
-              "$ref": "#/definitions/UploadThemeRequestBody"
-            },
-            "required": true
-          }  
-        ],
-        "responses": {
-          "200": {
-            "description": "New resources uploaded successfully.",
-            "schema": {
-              "$ref": "#/definitions/GetThemeFileDetails"
-            }
-          },
-          "400": {
-            "description": "Request details empty.",
-            "content": {}
-          },
-          "412": {
-            "description": "The content of the request body is invalid.",
-            "content": {}
-          },
-          "417": {
-            "description": "Failed to get the look and feel settings.",
-            "content": {}
-          }
-        }
-      }
-    },
-    "/v2.0/administration/look-and-feel": {
-      "get": {
-        "tags": [
-          "Administration"
-        ],
-        "summary": "Get look and feel settings",
-        "description": "Get the current look and feel settings",
-        "operationId": "get_look_and_feel_settings",
-        "responses": {
-          "200": {
-            "description": "Look and feel settings have been retrieved successfully.",
-            "schema": {
-              "$ref": "#/definitions/GetLookAndFeelResponse"
-            }
-          },
-          "417": {
-            "description": "Failed to get the look and feel settings.",
-            "content": {}
-          }
-        }
-      },
-      "post": {
-        "tags": [
-          "Administration"
-        ],
-        "summary": "Update look and feel settings",
-        "description": "Update the look and feel settings",
-        "operationId": "update_look_and_feel_settings",
-        "parameters": [
-          {
-            "name" : "Update look and feel",
-            "in" : "body",
-            "schema": {
-              "$ref": "#/definitions/UpdateLookAndFeelRequest"
-            },
-            "required": true
-          }  
-        ],
-        "responses": {
-          "200": {
-            "description": "The look and feel settings have been updated successfully.",
-            "schema": {
-              "$ref": "#/definitions/GetLookAndFeelResponse"
-            }
-          },
-          "400": {
-            "description": "Request details empty.",
-            "content": {}
-          },
-          "412": {
-            "description": "The content of the request body is invalid.",
-            "content": {}
-          },
-          "417": {
-            "description": "Failed to update the look and feel settings.",
-            "content": {}
-          }
-        }
-      }
-    },
-    "/v2.0/administration/user-activation": {
-      "put": {
-        "tags": [
-          "Administration"
-        ],
-        "summary": "Activate the user",
-        "description": "Activate the user",
-        "operationId": "activate_user",
-        "parameters": [
-          {
-            "name" : "Activate user",
-            "in" : "body",
-            "schema": {
-              "$ref": "#/definitions/ActivateUserRequest"
-            },
-            "required": true
-          }  
-        ],
-        "responses": {
-          "200": {
-            "description": "User already activated.",
-            "schema": {
-              "$ref": "#/definitions/ActivateUserResponse"
-            }
-          },
-          "400": {
-            "description": "Request details empty.",
-            "content": {}
-          },
-          "412": {
-            "description": "The content of the request body is invalid.",
-            "content": {}
-          },
-          "417": {
-            "description": "Failed to activate the user.",
             "content": {}
           }
         }
@@ -2036,7 +1151,7 @@
           "type": "array",
           "description": "Response data.",
           "items": {
-            "$ref": "#/definitions/TenantResponseData"
+          "$ref": "#/definitions/TenantResponseData"
           }
         },
         "Status": {
@@ -2084,14 +1199,15 @@
           "type": "string",
           "description": "Status of the tenant."
         },
-        "use_site_identifier": {
-          "type": "boolean",
-          "description": "site identifier of the tenant."
-        },
-        "is_master": {
-          "type": "boolean",
-          "description": "master site of the tenant."
-        }
+		"use_site_identifier":{
+			  "type": "boolean",
+            "description": "site identifier of the tenant."
+         },
+		 "is_master":
+		 {
+			 "type": "boolean",
+            "description": "master site of the tenant."
+		 }
       }
     },
     "Authentication": {
@@ -2138,9 +1254,9 @@
       "type": "object",
       "description": "Add tenant object details.",
       "additionalProperties": false,
-      "required": [
-        "Email"
-      ],
+	   "required": [
+          "Email"
+        ],
       "properties": {
         "Email": {
           "type": "string",
@@ -2154,103 +1270,90 @@
         }
       }
     },
-    "UpdateIheritGlobalAppSettingsForTenant": {
-      "type": "object",
-      "description": "Update tenant inherit global Settings.",
-      "additionalProperties": false,
-      "properties": {
-        "EnableInheritSettings": {
-          "type": "boolean",
-            "description": "Specify true to enable inheritance of global settings for the tenant."
-        },
-        "GlobalSettingsOptions": {
-          "type": "array",
-            "description": "List of global settings to inherit for the tenant's site.<br /><blockquote>Allowed values: <code>DateTime, LookAndFeel, Branding, Email, Language and Account</code>.</blockquote>",
-            "items": {
-              "type": "string"
-            }
-        }
-      }
-    },
     "UpdateTenant": {
-      "type": "object",
-      "description": "Update tenant object.",
-      "additionalProperties": false,
-      "properties": {
-        "Site": {
-          "$ref": "#/definitions/SiteDetails"
-        },
-        "Database": {
-          "$ref": "#/definitions/DatabaseInformation"
+     "type": "object",
+        "description": "Update tenant object.",
+        "additionalProperties": false,
+        "properties": {
+          "Site": { 
+			 "$ref": "#/definitions/SiteDetails"
+          },
+          "Database": {
+			 "$ref": "#/definitions/DatabaseInformation"
+          }
         }
-      }
     },
-    "SiteDetails": {
-      "type": "object",
-      "description": "Site information to be updated. ",
-      "additionalProperties": false,
-      "properties": {
-        "SiteName": {
-          "type": "string",
-          "description": "Name of the site."
-        },
-        "SiteUrl": {
-          "type": "string",
-          "description": "URL of the site."
-        },
-        "SiteIdentifier": {
-          "type": "string",
-          "description": "Identifier of the site."
+	 "SiteDetails":
+	  {
+		 "type": "object",
+        "description": "Site information to be updated. ",
+        "additionalProperties": false,
+		"properties": {
+          "SiteName": { 
+			 "type": "string",
+            "description": "Name of the site."
+          },
+          "SiteUrl": {
+            "type": "string",
+            "description": "URL of the site."
+          },
+		  "SiteIdentifier":
+		  {
+			"type": "string",
+            "description": "Identifier of the site."
+		  }
         }
-      }
-    },
-    "DatabaseInformation": {
-      "type": "object",
-      "description": "Database information.",
-      "additionalProperties": false,
-      "required": [
-        "ServerName",
-        "DatabaseName",
-        "UserName",
-        "Password",
-        "SslEnabled"
-      ],
-      "properties": {
-        "ServerName": {
-          "type": "string",
-          "description": "Name of the database server."
-        },
-        "DatabaseName": {
-          "type": "string",
-          "description": "Name of the database."
-        },
-        "UserName": {
-          "type": "string",
-          "description": "Username of the database server.  <br /> <blockquote>Check the permission required for the database users [here](/faq/what-are-the-database-permissions-required-to-set-up-bold-bi-embedded/)</blockquote>"
-        },
-        "Password": {
-          "type": "string",
-          "description": "Password of the database user."
-        },
-        "MaintenanceDatabase": {
-          "type": "string",
-          "description": "Maintenance database of the database server.<br /> <blockquote>Required only for <code>PostgreSQL</code> database server.</blockquote>"
-        },
-        "Port": {
-          "type": "string",
-          "description": "Port number of the database server.<br /><blockquote>Required only for <code>PostgreSQL</code> and <code>MySQL</code> database servers.</blockquote>"
-        },
-        "SslEnabled": {
-          "type": "boolean",
-          "default": "false",
-          "description": "Determines whether the encrypted connection to the database server is required. "
-        },
-        "AdditionalParameters": {
-          "type": "string",
-          "description": "Additional parameters for connecting to the database server."
-        }
-      }
-    },
+      },
+	  "DatabaseInformation":
+	  {
+		 "type": "object",
+        "description": "Database information.",
+        "additionalProperties": false,
+		 "required": [
+          "ServerName",
+          "DatabaseName",
+          "UserName",
+          "Password",
+		  "SslEnabled"
+        ],
+		"properties": {
+          "ServerName": {
+            "type": "string",
+            "description": "Name of the database server."
+          },
+          "DatabaseName": {
+            "type": "string",
+            "description": "Name of the database."
+          },
+          "UserName": {
+            "type": "string",
+            "description": "Username of the database server.  <br /> <blockquote>Check the permission required for the database users [here](/faq/what-are-the-database-permissions-required-to-set-up-bold-bi-embedded/)</blockquote>"
+          },
+          "Password": {
+            "type": "string",
+            "description": "Password of the database user."
+          },
+          "MaintenanceDatabase": {
+            "type": "string",
+            "description": "Maintenance database of the database server.<br /> <blockquote>Required only for <code>PostgreSQL</code> database server.</blockquote>"
+          },
+          "Port": {
+            "type": "string",
+            "description": "Port number of the database server.<br /><blockquote>Required only for <code>PostgreSQL</code> and <code>MySQL</code> database servers.</blockquote>"
+          },
+           "SslEnabled":
+		  {
+			  "type": "boolean",
+			  "default": "false",
+            "description": "Determines whether the encrypted connection to the database server is required. "
+		  },
+		   "AdditionalParameters": 
+		  {
+			"type": "string",
+            "description": "Additional parameters for connecting to the database server."
+		  }
+	  }
+	  },
     "DataStoreConfiguration": {
       "type": "object",
       "description": "Data store configuration of the site <blockquote>required to create <code>BoldBIOnPremise</code> tenants only.</blockquote>",
@@ -2296,15 +1399,17 @@
           "description": "Database type of the server.",
           "$ref": "#/definitions/DatabaseType"
         },
-        "SslEnabled": {
-          "type": "boolean",
-          "default": "false",
-          "description": "Determines whether the encrypted connection to the database server is required. "
-        },
-        "AdditionalParameters": {
-          "type": "string",
-          "description": "Additional parameters for connecting to the database server."
-        }
+		"SslEnabled":
+		  {
+			  "type": "boolean",
+			  "default": "false",
+            "description": "Determines whether the encrypted connection to the database server is required. "
+		  },
+		   "AdditionalParameters": 
+		  {
+			"type": "string",
+            "description": "Additional parameters for connecting to the database server."
+		  }
       }
     },
     "Database": {
@@ -2351,15 +1456,17 @@
           "description": "Database type of the server.",
           "$ref": "#/definitions/DatabaseType"
         },
-        "SslEnabled": {
-          "type": "boolean",
-          "default": "false",
-          "description": "Determines whether the encrypted connection to the database server is required. "
-        },
-        "AdditionalParameters": {
-          "type": "string",
-          "description": "Additional parameters for connecting to the database server."
-        }
+		"SslEnabled":
+		  {
+			  "type": "boolean",
+			  "default": "false",
+            "description": "Determines whether the encrypted connection to the database server is required. "
+		  },
+		   "AdditionalParameters": 
+		  {
+			"type": "string",
+            "description": "Additional parameters for connecting to the database server."
+		  }
       }
     },
     "UmsConfiguration": {
@@ -2427,43 +1534,43 @@
       }
     },
     "StorageType": {
-      "description": "0 - FileStorage, 1 - AzureBlob",
-      "type": "enum",
-      "enum": [
-        0,
-        1
-      ],
-      "x-enumNames": [
-        "FileStorage",
-        "AzureBlob"
-      ]
-    },
-    "DatabaseType": {
-      "description": "0 - MSSQL, 1 - MySQL, 4 - PostgreSQL",
-      "type": "enum",
-      "enum": [
-        0,
-        1,
-        4
-      ],
-      "x-enumNames": [
-        "MSSQL",
-        "MySQL",
-        "PostgreSQL"
-      ]
-    },
-    "TenantType": {
-      "description": "3 - BoldBIOnPremise, 4 - BoldReportsOnPremise",
-      "type": "enum",
-      "enum": [
-        3,
-        4
-      ],
-      "x-enumNames": [
-        "BoldBIOnPremise",
-        "BoldReportsOnPremise"
-      ]
-    },
+		  "description": "0 - FileStorage, 1 - AzureBlob",
+        "type": "enum",
+        "enum": [
+          0,
+          1
+        ],
+        "x-enumNames": [
+          "FileStorage",
+          "AzureBlob"
+        ]
+      },
+      "DatabaseType": {
+		   "description": "0 - MSSQL, 1 - MySQL, 4 - PostgreSQL",
+        "type": "enum",
+        "enum": [
+          0,
+          1,
+          4
+        ],
+        "x-enumNames": [
+          "MSSQL",
+          "MySQL",
+          "PostgreSQL"
+        ]
+      },
+      "TenantType": {
+		  "description": "3 - BoldBIOnPremise, 4 - BoldReportsOnPremise",
+        "type": "enum",
+        "enum": [
+          3,
+          4
+        ],
+        "x-enumNames": [
+          "BoldBIOnPremise",
+          "BoldReportsOnPremise"
+        ]
+      },
     "AzureBlob": {
       "type": "object",
       "description": "Required only if the storage type is <code>AzureBlob</code>",
@@ -2501,170 +1608,175 @@
         }
       }
     },
-    "UpdateUser": {
-      "type": "object",
-      "additionalProperties": false,
-      "required": [
-        "Email",
-        "FirstName",
-        "UserName",
-        "LastName",
-        "contact"
-      ],
-      "properties": {
-        "Email": {
-          "type": "string",
-          "description": "Email address of the user."
-        },
-        "FirstName": {
-          "type": "string",
-          "description": "First name of the user."
-        },
-        "UserName": {
-          "type": "string",
-          "description": "Username of the user."
-        },
-        "LastName": {
-          "type": "string",
-          "description": "Last name of the user."
-        },
-        "contact": {
-          "type": "int",
-          "description": "Contact of the user."
+	"UpdateUser":
+	  {
+		"type": "object",
+        "additionalProperties": false,
+        "required": [
+          "Email",
+          "FirstName",
+          "UserName",
+		  "LastName",
+          "contact"
+        ],
+        "properties": {
+          "Email": {
+            "type": "string",
+            "description": "Email address of the user."
+          },
+          "FirstName": {
+            "type": "string",
+            "description": "First name of the user."
+          },
+          "UserName": {
+            "type": "string",
+            "description": "Username of the user."
+          },
+          "LastName": {
+            "type": "string",
+            "description": "Last name of the user."
+          },
+		  "contact":
+		  {
+			"type": "int",
+            "description": "Contact of the user."
+		  }
         }
-      }
-    },
-    "ArrayUpdateUserResponse": {
-      "type": "object",
-      "properties": {
-        "ApiStatus": {
-          "type": "boolean",
-          "description": "Returns the status from the API."
-        },
-        "Data": {
-          "type": "array",
-          "description": "Response data from the API.",
-          "items": {
+	  },
+	  "ArrayUpdateUserResponse":
+	  {
+		  "type": "object",
+        "properties": {
+          "ApiStatus": {
+            "type": "boolean",
+            "description": "Returns the status from the API."
+          },
+          "Data": {
+            "type": "array",
+            "description": "Response data from the API.",
+            "items": {
             "$ref": "#/definitions/UpdateUserResponse"
+            }
+          },
+          "Status": {
+            "type": "boolean",
+            "description": "Returns status of the API request."
+          },
+          "StatusMessage": {
+            "type": "string",
+            "description": "Returns the status message from the API."
+          },
+          "Message": {
+            "type": "string",
+            "description": "Returns the message from the API."
           }
-        },
-        "Status": {
-          "type": "boolean",
-          "description": "Returns status of the API request."
-        },
-        "StatusMessage": {
-          "type": "string",
-          "description": "Returns the status message from the API."
-        },
-        "Message": {
-          "type": "string",
-          "description": "Returns the message from the API."
         }
-      }
-    },
-    "UpdateUserResponse": {
-      "type": "object",
-      "properties": {
-        "user_id": {
-          "type": "string",
-          "description": "Returns the user ID from the API."
-        },
-        "user_name": {
-          "type": "string",
-          "description": "Returns the username from the API."
-        },
-        "email": {
-          "type": "string",
-          "description": "Returns the email address of the user from the API."
-        },
-        "first_name": {
-          "type": "string",
-          "description": "Returns the first name of the user from the API."
-        },
-        "last_name": {
-          "type": "string",
-          "description": "Returns the last name of the user from the API."
-        },
-        "display_name": {
-          "type": "string",
-          "description": "Returns the display name of the user from the API."
-        },
-        "contact": {
-          "type": "string",
-          "description": "Returns the contact number of the user from the API."
-        },
-        "email_verified": {
-          "type": "string",
-          "description": "Returns whether the email is verified or not from the API."
-        },
-        "user_status": {
-          "type": "string",
-          "description": "Returns the status of the user from the API."
-        },
-        "directory_type": {
-          "description": "Returns directory type response data from the API.",
-          "$ref": "#/definitions/DirectoryType"
+	  },
+	  "UpdateUserResponse": {
+        "type": "object",
+        "properties": {
+          "user_id": {
+            "type": "string",
+            "description": "Returns the user ID from the API."
+          },
+          "user_name": {
+            "type": "string",
+            "description": "Returns the username from the API."
+          },
+          "email": {
+            "type": "string",
+            "description": "Returns the email address of the user from the API."
+          },
+          "first_name": {
+            "type": "string",
+            "description": "Returns the first name of the user from the API."
+          },
+          "last_name": {
+            "type": "string",
+            "description": "Returns the last name of the user from the API."
+          },
+          "display_name": {
+            "type": "string",
+            "description": "Returns the display name of the user from the API."
+          },
+          "contact": {
+            "type": "string",
+            "description": "Returns the contact number of the user from the API."
+          },
+          "email_verified": {
+            "type": "string",
+            "description": "Returns whether the email is verified or not from the API."
+          },
+          "user_status": {
+            "type": "string",
+            "description": "Returns the status of the user from the API."
+          },
+          "directory_type": {
+            "description": "Returns directory type response data from the API.",
+            "$ref": "#/definitions/DirectoryType"
+          }
         }
-      }
-    },
-    "AddUser": {
-      "type": "object",
-      "additionalProperties": false,
-      "required": [
-        "Email",
-        "FirstName",
-        "UserName",
-        "Password"
-      ],
-      "properties": {
-        "Email": {
-          "type": "string",
-          "description": "Email address of the user. This value may be required based on the user accounts configuration. "
-        },
-        "FirstName": {
-          "type": "string",
-          "description": "First name of the user."
-        },
-        "UserName": {
-          "type": "string",
-          "description": "Username of the user."
-        },
-        "LastName": {
-          "type": "string",
-          "description": "Last name of the user."
-        },
-        "Password": {
-          "type": "string",
-          "description": "The user's password. Depending on the activation mode, this field may not be required. For, Email activation mode password is not necessary. Automatic activation is password required. <br /><blockquote>Note: Password must meet the following requirements. It must contain,</blockquote><ul><li><code>At least 6 characters</code></li><li><code>1 uppercase character</code></li><li><code>1 lowercase character</code></li><li><code>1 numeric character</code></li><li><code>1 special character</code></li></ul> "
-        },
-        "AccountActivationMode": {
-          "type": "enum",
-          "default": null,
-          "enum": [
-            0,
-            1
-          ],
-          "x-enumNames": [
-            "AutomaticActivation",
-            "EmailActivation"
-          ],
-          "description": "Specify the mode of account activation.\n\n* 0 - AutomaticActivation\n* 1 - EmailActivation"
+      },
+	"AddUser":
+	  {
+		 "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "Email",
+          "FirstName",
+          "UserName",
+          "Password"
+        ],
+        "properties": {
+          "Email": {
+            "type": "string",
+            "description": "Email address of the user. This value may be required based on the user accounts configuration. "
+          },
+          "FirstName": {
+            "type": "string",
+            "description": "First name of the user."
+          },
+          "UserName": {
+            "type": "string",
+            "description": "Username of the user."
+          },
+          "LastName": {
+            "type": "string",
+            "description": "Last name of the user."
+          },
+          "Password": {
+            "type": "string",
+            "description": "The user's password. Depending on the activation mode, this field may not be required. For, Email activation mode password is not necessary. Automatic activation is password required. <br /><blockquote>Note: Password must meet the following requirements. It must contain,</blockquote><ul><li><code>At least 6 characters</code></li><li><code>1 uppercase character</code></li><li><code>1 lowercase character</code></li><li><code>1 numeric character</code></li><li><code>1 special character</code></li></ul> "
+          },
+          "AccountActivationMode": {
+            "type": "enum",
+            "default": null,
+            "enum": [
+              0,
+              1
+            ],
+            "x-enumNames": [
+              "AutomaticActivation",
+              "EmailActivation"
+            ],
+            "description": "Specify the mode of account activation.\n\n* 0 - AutomaticActivation\n* 1 - EmailActivation"
+          }
         }
-      }
-    },
-    "ValidateUserApiRequest": {
-      "type": "object",
-      "additionalProperties": false,
-      "required": [
-        "Email"
-      ],
-      "properties": {
-        "Email": {
-          "type": "string",
-          "description": "Email address of the user."
+	  },
+    "ValidateUserApiRequest":
+	  {
+		 "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "Email"
+        ],
+        "properties": {
+          "Email": {
+            "type": "string",
+            "description": "Email address of the user."
+          }
         }
-      }
-    },
+	  },
     "Site": {
       "type": "object",
       "additionalProperties": false,
@@ -2698,8 +1810,8 @@
           "type": "array",
           "description": "Custom site attributes.",
           "items": {
-            "$ref": "#/definitions/CustomAttribute"
-          }
+          "$ref": "#/definitions/CustomAttribute"
+        }
         },
         "TenantIsolation": {
           "description": "Tenant isolation code.",
@@ -2707,106 +1819,110 @@
         }
       }
     },
-    "GrantUser": {
-      "type": "object",
-      "additionalProperties": false,
-      "properties": {
-        "UserName": {
-          "type": "string",
-          "description": "Username of the user."
-        },
-        "Email": {
-          "type": "string",
-          "description": "Email address of the user."
-        },
-        "user_id": {
-          "type": "string",
-          "description": "Id of the user."
-        }
-      }
-    },
-    "GrantUserApiResponse": {
-      "type": "object",
-      "properties": {
-        "ApiStatus": {
-          "type": "boolean",
-          "description": "Returns the status from the API."
-        },
-        "Data": {
-          "type": "array",
-          "description": "Response data from the API.",
-          "items": {
-            "$ref": "#/definitions/GrantResponseData"
+	"GrantUser":
+	  {
+		 "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "UserName": {
+            "type": "string",
+            "description": "Username of the user."
+          },
+          "Email": {
+            "type": "string",
+            "description": "Email address of the user."
+          },
+          "user_id": {
+            "type": "string",
+            "description": "Id of the user."
           }
-        },
-        "Status": {
-          "type": "boolean",
-          "description": "Returns status of the API request."
-        },
-        "StatusMessage": {
-          "type": "string",
-          "description": "Returns the status message from the API."
-        },
-        "Message": {
-          "type": "string",
-          "description": "Returns the message from the API."
+	  }
+	  },
+	  "GrantUserApiResponse":
+	  {
+		  "type": "object",
+        "properties": {
+          "ApiStatus": {
+            "type": "boolean",
+            "description": "Returns the status from the API."
+          },
+          "Data": {
+            "type": "array",
+            "description": "Response data from the API.",
+            "items": {
+			"$ref": "#/definitions/GrantResponseData"
+            }
+          },
+          "Status": {
+            "type": "boolean",
+            "description": "Returns status of the API request."
+          },
+          "StatusMessage": {
+            "type": "string",
+            "description": "Returns the status message from the API."
+          },
+          "Message": {
+            "type": "string",
+            "description": "Returns the message from the API."
+          }
         }
-      }
-    },
-    "GrantResponseData": {
-      "type": "object",
-      "properties": {
-        "tenant": {
-          "description": "Response data from the tenant..",
-          "$ref": "#/definitions/TenantResponseData"
-        },
-        "user": {
-          "description": "Response data from the user..",
-          "$ref": "#/definitions/UserResponse"
+	  },
+	   "GrantResponseData":
+	  {
+		 "type": "object",
+        "properties": {
+          "tenant": {
+           "description": "Response data from the tenant..",
+			"$ref": "#/definitions/TenantResponseData"
+          },
+          "user": {
+            "description": "Response data from the user..",
+			"$ref": "#/definitions/UserResponse"
+            }
         }
-      }
-    },
-    "ApiUserDeleteResponse": {
-      "type": "object",
-      "properties": {
-        "ApiStatus": {
-          "type": "boolean",
-          "description": "Returns the status from the API."
-        },
-        "Data": {
-          "type": "array",
-          "description": "Response data from the API.",
-          "items": {
+	  },
+	"ApiUserDeleteResponse": {
+        "type": "object",
+        "properties": {
+          "ApiStatus": {
+            "type": "boolean",
+            "description": "Returns the status from the API."
+          },
+          "Data": {
+            "type": "array",
+            "description": "Response data from the API.",
+            "items": {
             "$ref": "#/definitions/UserDeleteResponse"
+            }
+          },
+          "Status": {
+            "type": "boolean",
+            "description": "Returns status of the API request."
+          },
+          "StatusMessage": {
+            "type": "string",
+            "description": "Returns the status message from the API."
+          },
+          "Message": {
+            "type": "string",
+            "description": "Returns the message from the API."
           }
-        },
-        "Status": {
-          "type": "boolean",
-          "description": "Returns status of the API request."
-        },
-        "StatusMessage": {
-          "type": "string",
-          "description": "Returns the status message from the API."
-        },
-        "Message": {
-          "type": "string",
-          "description": "Returns the message from the API."
         }
-      }
-    },
-    "UserDeleteResponse": {
-      "type": "object",
-      "properties": {
-        "DatabaseDeleted": {
-          "type": "string",
-          "description": "DatabaseDeleted."
-        },
-        "IsSiteDeleted": {
-          "type": "boolean",
-          "description": "SiteDeleted."
+      },
+	  "UserDeleteResponse":
+	  {
+		   "type": "object",
+        "properties": {
+          "DatabaseDeleted": {
+            "type": "string",
+            "description": "DatabaseDeleted."
+          },
+          "IsSiteDeleted": {
+            "type": "boolean",
+            "description": "SiteDeleted."
+          }
         }
-      }
-    },
+	  },
     "TenantIsolation": {
       "type": "object",
       "additionalProperties": false,
@@ -3018,7 +2134,7 @@
           "type": "array",
           "description": "Response data from the API.",
           "items": {
-            "$ref": "#/definitions/UserResponse"
+          "$ref": "#/definitions/UserResponse"
           }
         },
         "Status": {
@@ -3046,7 +2162,7 @@
           "type": "array",
           "description": "Response data from the API..",
           "items": {
-            "$ref": "#/definitions/GetUserResponse"
+          "$ref": "#/definitions/GetUserResponse"
           }
         },
         "Status": {
@@ -3063,68 +2179,6 @@
         }
       }
     },
-       "IPWhitelistingResponse": {
-      "required": [
-          "IsEnabled",
-          "IPWhitelistingRules"
-      ],
-      "type": "object",
-      "properties": {
-          "IsEnabled": {
-              "type": "boolean",
-              "description":  "Specify true to enable the IP whitelisting settings."
-          },
-          "IPWhitelistingRules":{
-              "type": "array",
-              "description": "Specified IP whitelisting rules allows access to the application.",
-              "items": {
-                  "$ref": "#/definitions/IPWhitelistingRulesResponse"
-              }
-          }
-      }
-  },
-    "ApiIPWhitelistingSettings":{
-        "type": "object",
-        "properties":{
-            "ApiStatus": {
-                "type": "boolean",
-                "description": "Returns the status of the API."
-            },
-            "Data": {
-                "type": "array",
-                "description": "Returns data from the API.",
-                "items": {
-                    "$ref": "#/definitions/IPWhitelistingResponse"
-                }
-            },
-            "StatusMessage": {
-                "type": "string",
-                "description": "Returns the status message from the API."
-            }
-        }
-    },
-    "IPWhitelistingRulesResponse":{
-      "required": [
-          "RuleName",
-          "IPAddress",
-          "IPAddressType"
-      ],
-      "type":"object",
-      "properties":{
-          "RuleName":{
-              "type": "string",
-              "description": "Specify rule name."
-          },
-          "IPAddress":{
-              "type": "string",
-              "description": "Specify IP address value."
-          },
-          "IPAddressType":{
-              "type": "string",
-              "description": "Specify IP address type."
-          }
-      }
-  },
     "ApiValidateUserResponse": {
       "type": "object",
       "properties": {
@@ -3136,7 +2190,7 @@
           "type": "array",
           "description": "Response data from the API..",
           "items": {
-            "$ref": "#/definitions/ValidateUserResponse"
+          "$ref": "#/definitions/ValidateUserResponse"
           }
         },
         "Status": {
@@ -3199,9 +2253,6 @@
         },
         "PoweredBy": {
           "$ref": "#/definitions/BrandingDetails"
-        },
-        "AI": {
-          "$ref": "#/definitions/BrandingDetails"
         }
       }
     },
@@ -3215,7 +2266,7 @@
         },
         "LogoType": {
           "type": "string",
-          "description": "Logo type of branding logos (Header - mainscreenlogo, Login - loginlogo, Favicon - favicon, Email - emaillogo, PoweredBy - poweredbylogo, AI - ailogo)."
+          "description": "Logo type of branding logos."
         }
       }
     },
@@ -3237,1507 +2288,6 @@
         "Message": {
           "type": "string",
           "description": "Returns the message from the API."
-        }
-      }
-    },
-    "EmbedConfigurationResponse": {
-      "type": "object",
-      "properties": {
-        "ApiStatus": {
-          "type": "boolean",
-          "description": "Returns the status from the API."
-        },
-        "Data": {
-          "type": "array",
-          "description": "Response data from the API.",
-          "items": {
-          "$ref": "#/definitions/EmbedSettingsResponse"
-          }
-        },
-        "Status": {
-          "type": "boolean",
-          "description": "Returns status of the API request."
-        },
-        "StatusMessage": {
-          "type": "string",
-          "description": "Returns the status message from the API."
-        },
-        "Message": {
-          "type": "string",
-          "description": "Returns the message from the API."
-        }
-      }
-    },
-    "RegenerateEmbedSecret": {
-      "type": "object",
-      "properties": {
-        "ApiStatus": {
-          "type": "boolean",
-          "description": "Returns the status from the API."
-        },
-        "Data": {
-          "type": "array",
-          "description": "Response data from the API.",
-          "items": {
-          "$ref": "#/definitions/RegenerateEmbedSecretResponse"
-          }
-        },
-        "Status": {
-          "type": "boolean",
-          "description": "Returns status of the API request."
-        },
-        "StatusMessage": {
-          "type": "string",
-          "description": "Returns the status message from the API."
-        },
-        "Message": {
-          "type": "string",
-          "description": "Returns the message from the API."
-        }
-      }
-    },
-    "RegenerateSigningKey": {
-      "type": "object",
-      "properties": {
-        "ApiStatus": {
-          "type": "boolean",
-          "description": "Returns the status from the API."
-        },
-        "Data": {
-          "type": "array",
-          "description": "Response data key from the API."
-        },
-        "Status": {
-          "type": "boolean",
-          "description": "Returns status of the API request."
-        },
-        "StatusMessage": {
-          "type": "string",
-          "description": "Returns the status message from the API."
-        }
-      }
-    },
-    "RegenerateEncryptionKey": {
-      "type": "object",
-      "properties": {
-        "ApiStatus": {
-          "type": "boolean",
-          "description": "Returns the status from the API."
-        },
-        "Data": {
-          "type": "array",
-          "description": "Response data key from the API."
-        },
-        "Status": {
-          "type": "boolean",
-          "description": "Returns status of the API request."
-        },
-        "StatusMessage": {
-          "type": "string",
-          "description": "Returns the status message from the API."
-        }
-      }
-    },
-    "UpdateEmbedSettings": {
-      "type": "object",
-      "description": "Update Embed settings.",
-      "additionalProperties": false,
-      "properties": {
-        "IsEmbedEnabled": {
-          "type": "boolean",
-          "description": "Enable or disable the embed settings."
-        },
-        "EmbedConfigurations": {
-          "description": "Embed configuration details.",
-          "$ref": "#/definitions/EmbedConfiguration"
-        }
-      }
-    },
-    "RegenerateEmbedSecretResponse": {
-      "type": "object",
-      "properties": {
-        "reset_secret_code": {
-          "type": "string",
-          "description": "Returns the generated secrrt key from the API."
-        },
-        "is_enabled": {
-          "type": "boolean",
-          "description": "Enable or disable the embed settings."
-        }
-      }
-    },
-    "EmbedSettingsResponse": {
-      "type": "object",
-      "properties": {
-        "is_enabled": {
-          "type": "boolean",
-          "description": "Enable or disable the embed settings."
-        },
-        "config_data": {
-          "description": "Returns the embed settings data from the API.",
-          "$ref": "#/definitions/ConfigData"
-        },
-        "secret_key": {
-          "type": "string",
-          "description": "Returns the embed secret key from the API."
-        }
-      }
-    },
-    "EmbedConfiguration": {
-      "type": "object",
-      "description": "Embed setting details to update.",
-      "properties": {
-        "IsConfigurationBaseEmbed": {
-          "type": "boolean",
-          "description": "Returns the configuration based embed value from the API."
-        },
-        "EmbeddingProfile": {
-          "type": "array",
-          "description": "Returns embed profile data from the API.",
-          "items": {
-            "$ref": "#/definitions/EmbedProfile"
-          }
-        },
-        "UsersProfile": {
-          "type": "array",
-          "description": "Returns user profile data from the API.",
-          "items": {
-            "$ref": "#/definitions/UserProfile"
-          }
-        },
-        "GroupsProfile": {
-          "type": "array",
-          "description": "Returns group profile data from the API.",
-          "items": {
-            "$ref": "#/definitions/GroupProfile"
-          }
-        },
-        "SitesProfile": {
-          "type": "array",
-          "description": "Returns sites profile data from the API.",
-          "items": {
-            "$ref": "#/definitions/SiteProfile"
-          }
-        }
-      }
-    },
-    "ConfigData": {
-      "type": "object",
-      "properties": {
-        "is_configuration_base_embed": {
-          "type": "boolean",
-          "description": "Returns the configuration based embed from API."
-        },
-        "use_global_embed_secrete": {
-          "type": "boolean",
-          "description": "Returns the use global embed secrete from API."
-        },
-        "embedding_profile": {
-          "type": "array",
-          "description": "Returns embed profile data from the API.",
-          "items": {
-            "$ref": "#/definitions/EmbedProfile"
-          }
-        },
-        "users_profile": {
-          "type": "array",
-          "description": "Returns user profile data from the API.",
-          "items": {
-            "$ref": "#/definitions/UserProfile"
-          }
-        },
-        "groups_profile": {
-          "type": "array",
-          "description": "Returns group profile data from the API.",
-          "items": {
-            "$ref": "#/definitions/GroupProfile"
-          }
-        },
-        "sites_profile": {
-          "type": "array",
-          "description": "Returns sites profile data from the API.",
-          "items": {
-            "$ref": "#/definitions/SiteProfile"
-          }
-        },
-        "embed_secret": {
-          "type": "string",
-          "description": "Returns the embed secret code."
-        }
-      }
-    },
-    "EmbedProfile": {
-      "type": "object",
-      "properties": {
-        "name": {
-          "type": "string",
-          "description": "Returns embed profile name from the API."
-        },
-        "isolation": {
-          "description": "Returns embed profile isolation key from the API.",
-          "$ref": "#/definitions/EmbedSettingsKey"
-        },
-        "attributes": {
-          "description": "Returns embed profile attributes from the API.",
-          "$ref": "#/definitions/EmbedSettingsKey"
-        }
-      }
-    },
-    "UserProfile": {
-      "type": "object",
-      "properties": {
-        "name": {
-          "type": "string",
-          "description": "Returns user profile name from the API."
-        },
-        "profile": {
-          "type": "string",
-          "description": "Returns user profile from the API."
-        }
-      }
-    },
-    "GroupProfile": {
-      "type": "object",
-      "properties": {
-        "name": {
-          "type": "string",
-          "description": "Returns group profile name from the API."
-        },
-        "profile": {
-          "type": "string",
-          "description": "Returns group profile from the API."
-        }
-      }
-    },
-    "SiteProfile": {
-      "type": "object",
-      "properties": {
-        "name": {
-          "type": "string",
-          "description": "Returns sites profile name from the API."
-        },
-        "profile": {
-          "type": "string",
-          "description": "Returns site profile from the API."
-        },
-        "isIsolationCodeEnabled": {
-          "type": "boolean",
-          "description": "Enable or disable the isolation code."
-        }
-      }
-    },
-    "EmbedSettingsKey": {
-      "type": "object",
-      "properties": {
-        "key": {
-          "type": "string",
-          "description": "Returns key from the API."
-        }
-      }
-    },
-    "ApiGetAuditlogsPaginatedResponse": {
-      "type": "object",
-      "properties": {
-        "ApiStatus": {
-          "type": "boolean",
-          "description": "Returns the status from the API."
-        },
-        "Data": {
-          "type": "array",
-          "description": "Response data from the API..",
-          "items": {
-            "$ref": "#/definitions/ApiGetAuditLog"
-          }
-        },
-        "Status": {
-          "type": "boolean",
-          "description": "Returns status of the API request."
-        },
-        "StatusMessage": {
-          "type": "string",
-          "description": "Returns the status message from the API."
-        },
-        "Message": {
-          "type": "string",
-          "description": "Returns the message from the API."
-        }
-      }
-    },
-    "ApiGetAuditLog": {
-      "type": "object",
-      "properties": {
-        "target_user_name": {
-          "type": "string",
-          "description": "The username of the individual targeted by the event in the activity log."
-        },
-        "target_display_name": {
-          "type": "string",
-          "description": "The display name of the individual targeted by the event in the activity log."
-        },
-        "initiated_user_name": {
-          "type": "string",
-          "description": "The username of the individual who initiated the event recorded in the activity log."
-        },
-        "initiated_display_name": {
-          "type": "string",
-          "description": "The display name of the individual who initiated the event recorded in the activity log."
-        },
-        "event-date-format": {
-          "type": "string",
-          "description": "The formatted string representing the date and time when the event was recorded in the activity log."
-        },
-        "initiated_user_email": {
-          "type": "string",
-          "description": "The email address of the user who initiated the event recorded in the activity log."
-        },
-        "target_user_email": {
-          "type": "string",
-          "description": "The email address of the individual targeted by the event in the activity log."
-        },
-        "event_date": {
-          "type": "string",
-          "description": "The date and time when the event was recorded in the activity log."
-        },
-        "event_category": {
-          "type": "integer",
-          "description": "The numerical identifier representing the category of the event recorded in the activity log."
-        },
-        "event_type": {
-          "type": "integer",
-          "description": "The numerical identifier representing the specific type of event recorded in the activity log."
-        },
-        "app_source": {
-          "type": "string",
-          "description": "The source application from which the event was generated in the activity log."
-        },
-        "app_type": {
-          "type": "string",
-          "description": "The type of application (e.g., API, Web) from which the event was generated in the activity log."
-        },
-        "Site": {
-          "type": "string",
-          "description": "The tenant name from which the event was generated in the activity log."
-        },
-        "event_category_string": {
-          "type": "string",
-          "description": "The string representation of the event category in the activity log."
-        },
-        "event_type_string": {
-          "type": "string",
-          "description": "The string representation of the event type in the activity log."
-        },
-        "user_log_details": {
-          "type": "object",
-          "description": "Details about the user activity that was logged, including the IP address and user agent.",
-          "items": {
-            "$ref": "#/definitions/user_log_details"
-          }
-        },
-        "Summary": {
-          "type": "string",
-          "description": "A brief summary or description of the activity recorded in the log."
-        }
-      }
-    },
-    "user_log_details": {
-      "type": "object",
-      "properties": {
-        "ip_address": {
-          "type": "string",
-          "description": "The IP address from which the activity was logged."
-        },
-        "change_log": {
-          "type": "object",
-          "description": "Details of the event associated with the logged activity, including any changes made.",
-          "items": {
-            "$ref": "#/definitions/change_log"
-          }
-        },
-        "user_agent": {
-          "type": "string",
-          "description": "The user agent string that identifies the device and browser used during the logged activity."
-        }
-      }
-    },
-    "change_log": {
-      "type": "object",
-      "properties": {
-        "ChangeLogCollection": {
-          "type": "array",
-          "description": "A collection of change logs that detail the specific changes made during the logged event.",
-          "items": {
-            "$ref": "#/definitions/ChangeLogCollection"
-          }
-        }
-      }
-    },
-    "ChangeLogCollection": {
-      "type": "object",
-      "properties": {
-        "ChangedItem": {
-          "type": "string",
-          "description": "The name of the item that was changed during the logged event."
-        },
-        "ChangeLog": {
-          "type": "array",
-          "description": "A list of specific changes that were made to the `ChangedItem` during the logged event.",
-          "items": {
-            "$ref": "#/definitions/ChangeLog"
-          }
-        }
-      }
-    },
-    "ChangeLog": {
-      "type": "object",
-      "properties": {
-        "ChangedItem": {
-          "type": "string",
-          "description": "The specific item that was altered during the logged event."
-        },
-        "From": {
-          "type": "string",
-          "description": "The original value of the item before the change was made."
-        },
-        "To": {
-          "type": "string",
-          "description": "The new value of the item after the change was made."
-        }
-      }
-    },
-    "GetOAuthResponse": {
-      "type": "object",
-      "properties": {
-        "ApiStatus": {
-          "type": "boolean",
-          "description": "Returns the status from the API."
-        },
-        "Data": {
-          "type": "array",
-          "description": "Response data from the API.",
-          "items": {
-            "$ref": "#/definitions/OAuthSettings"
-          }
-        },
-        "Status": {
-          "type": "boolean",
-          "description": "Returns status of the API request."
-        },
-        "StatusMessage": {
-          "type": "string",
-          "description": "Returns the status message from the API."
-        }
-      }
-    },
-    "OAuthSettings": {
-      "type": "object",
-      "properties": {
-        "ProviderName": {
-          "type": "string",
-          "description": "Indicates the authentication provider name."
-        },
-        "Logo": {
-          "type": "string",
-          "description": "Image name with file format."
-        },
-        "AuthorizationEndPoint": {
-          "type": "string",
-          "description": "Authorization endpoint URL."
-        },
-        "TokenEndPoint": {
-          "type": "string",
-          "description": "Token endpoint URL."
-        },
-        "TokenEndPointMethod": {
-          "type": "string",
-          "description": "Method of the endpoint."
-        },
-        "UserInfoEndPoint": {
-          "type": "string",
-          "description": "User info endpoint URL."
-        },
-        "UserInfoEndPointMethod": {
-          "type": "string",
-          "description": "Method of the user info endpoint."
-        },
-        "ClientId": {
-          "type": "string",
-          "description": "OAuth authentication client id."
-        },
-        "ClientSecret": {
-          "type": "string",
-          "description": "OAuth authentication client secret."
-        },
-        "Scopes": {
-          "type": "string",
-          "description": "Scopes of the settings."
-        },
-        "UserInfoEmail": {
-          "type": "string",
-          "description": "User email address."
-        },
-        "UserInfoFirstname": {
-          "type": "string",
-          "description": "User first name."
-        },
-        "UserInfoLastname": {
-          "type": "string",
-          "description": "User last name."
-        },
-        "LogoutEndPoint": {
-          "type": "string",
-          "description": "Logout endpoint URL."
-        },
-        "GroupImportSettings": {
-          "type": "array",
-          "description": "Group import settings.",
-          "items": {
-            "$ref": "#/definitions/GroupImportSettings"
-          }
-        },
-        "CanCreateAccount": {
-          "type": "boolean",
-          "description": "Data of user can create account or not."
-        }
-      }
-    },
-    "GroupImportSettings": {
-      "type": "object",
-      "properties": {
-        "KnownProviderType": {
-          "description": "Provider type of the authentication.",
-          "$ref": "#/definitions/KnownProviderType"
-        },
-        "Cognito": {
-          "type": "array",
-          "description": "CognitoAWS settings.",
-          "items": {
-            "$ref": "#/definitions/CognitoSettings"
-          }
-        },
-        "Auth0": {
-          "type": "array",
-          "description": "Auth0 settings.",
-          "items": {
-            "$ref": "#/definitions/Auth0Settings"
-          }
-        },
-        "Okta": {
-          "type": "array",
-          "description": "Okta settings.",
-          "items": {
-            "$ref": "#/definitions/OktaSettings"
-          }
-        },
-        "OneLogin": {
-          "type": "array",
-          "description": "One login settings.",
-          "items": {
-            "$ref": "#/definitions/OneLoginSettings"
-          }
-        }
-      }
-    },
-    "GetJWTResponse": {
-      "type": "object",
-      "properties": {
-        "ApiStatus": {
-          "type": "boolean",
-          "description": "Returns the status from the API."
-        },
-        "Data": {
-          "type": "array",
-          "description": "Response data from the API.",
-          "items": {
-            "$ref": "#/definitions/JWTSettings"
-          }
-        },
-        "Status": {
-          "type": "boolean",
-          "description": "Returns status of the API request."
-        },
-        "StatusMessage": {
-          "type": "string",
-          "description": "Returns the status message from the API."
-        }
-      }
-    },
-    "JWTSettings": {
-      "type": "object",
-      "properties": {
-          "Logo": {
-            "type": "string",
-            "description": "Image name with file format."
-          },
-          "IsEnableEncryption": {
-            "type": "boolean",
-            "description": "Returns the true value if encryption is enabled for the JWT token."
-          },
-          "JwtSettings": {
-            "type": "array",
-            "description": "JWT settings.",
-            "items": {
-              "$ref": "#/definitions/JWTFieldSettings"
-            }
-          }
-        }
-    },
-    "JWTFieldSettings": {
-      "type": "object",
-      "properties": {
-        "Name": {
-          "type": "string",
-          "description": "Indicates the authentication provider name."
-        },
-        "LoginUrl": {
-            "type": "string",
-            "description": "Specify Login URL of the JWT application."
-        },
-        "LogOutUrl": {
-          "type": "string",
-          "description": "Specify Logout URL of the JWT application."
-        }
-      }
-    },
-    "KnownProviderType": {
-      "description": "0 - None, 1 - CognitoAWS, 2 - Auth0, 3 - Okta, 4 - OneLogin",
-      "type": "enum",
-      "enum": [
-        0,
-        1,
-        2,
-        3,
-        4
-      ],
-      "x-enumNames": [
-        "None",
-        "CognitoAWS",
-        "Auth0",
-        "Okta",
-        "OneLogin"
-      ]
-    },
-    "CognitoSettings": {
-      "type": "object",
-      "properties": {
-        "UserPoolId": {
-          "type": "string",
-          "description": "User id of cognito."
-        },
-        "AwsAccesskeyId": {
-          "type": "string",
-          "description": "Aws access key id."
-        },
-        "AwsAccesskeySecret": {
-          "type": "string",
-          "description": "Aws access key secret."
-        },
-        "Region": {
-          "type": "string",
-          "description": "Aws region value."
-        }
-      }
-    },
-    "Auth0Settings": {
-      "type": "object",
-      "properties": {
-        "Audience": {
-          "type": "string",
-          "description": "Audience value for auth0 settings."
-        },
-        "ExtensionURL": {
-          "type": "string",
-          "description": "Extension URL for auth0 settings."
-        }
-      }
-    },
-    "OktaSettings": {
-      "type": "object",
-      "properties": {
-        "ApiToken": {
-          "type": "string",
-          "description": "Api token of okta settings."
-        }
-      }
-    },
-    "OneLoginSettings": {
-      "type": "object",
-      "properties": {
-        "ApiClientId": {
-          "type": "string",
-          "description": "Api client id for one login settings."
-        },
-        "ApiClientSecret": {
-          "type": "string",
-          "description": "Api client secret for one login settings."
-        },
-        "Region": {
-          "type": "string",
-          "description": "Region value for one login settings."
-        }
-      }
-    },
-    "AddOAuthRequestBody": {
-      "required": [
-        "LogoBytes",
-        "OAuthAuthSettings"
-      ],
-      "type": "object",
-      "properties": {
-        "EnableAuthentication": {
-          "type": "string",
-          "description": "Set true or false to enable or disable settings."
-        },
-        "LogoBytes": {
-          "type": "string",
-          "description": "Provide image in bytes format."
-        },
-        "OAuthAuthSettings": {
-          "type": "array",
-          "description": "Auth settings details.",
-          "items": {
-            "$ref": "#/definitions/AddOAuthSettings"
-          }
-        }
-      }
-    },
-    "UpdateOAuthRequestBody": {
-      "type": "object",
-      "properties": {
-        "EnableAuthentication": {
-          "type": "string",
-          "description": "Set true or false to enable or disable settings."
-        },
-        "LogoBytes": {
-          "type": "string",
-          "description": "Provide image in bytes format."
-        },
-        "OAuthAuthSettings": {
-          "type": "array",
-          "description": "Auth settings details.",
-          "items": {
-            "$ref": "#/definitions/UpdateOAuthSettings"
-          }
-        }
-      }
-    },
-    "AddOAuthSettings": {
-      "required": [
-        "ProviderName",
-        "AuthorizationEndPoint",
-        "TokenEndPoint",
-        "TokenEndPointMethod",
-        "UserInfoEndPoint",
-        "UserInfoEndPointMethod",
-        "ClientId",
-        "ClientSecret",
-        "Scopes",
-        "UserInfoEmail"
-      ],
-      "type": "object",
-      "properties": {
-        "ProviderName": {
-          "type": "string",
-          "description": "Indicates the authentication provider name."
-        },
-        "AuthorizationEndPoint": {
-          "type": "string",
-          "description": "Authorization endpoint URL."
-        },
-        "TokenEndPoint": {
-          "type": "string",
-          "description": "Token endpoint URL."
-        },
-        "TokenEndPointMethod": {
-          "type": "string",
-          "description": "Method of the endpoint POST or GET."
-        },
-        "UserInfoEndPoint": {
-          "type": "string",
-          "description": "User info endpoint URL."
-        },
-        "UserInfoEndPointMethod": {
-          "type": "string",
-          "description": "Method of the user info endpoint POST or GET."
-        },
-        "ClientId": {
-          "type": "string",
-          "description": "OAuth authentication client id."
-        },
-        "ClientSecret": {
-          "type": "string",
-          "description": "OAuth authentication client secret."
-        },
-        "Scopes": {
-          "type": "string",
-          "description": "Scopes of the settings."
-        },
-        "UserInfoEmail": {
-          "type": "string",
-          "description": "email."
-        },
-        "UserInfoFirstname": {
-          "type": "string",
-          "description": "User first name."
-        },
-        "UserInfoLastname": {
-          "type": "string",
-          "description": "User last name."
-        },
-        "LogoutEndPoint": {
-          "type": "string",
-          "description": "Logout endpoint URL."
-        },
-        "GroupImportSettings": {
-          "type": "array",
-          "description": "Group import settings.",
-          "items": {
-            "$ref": "#/definitions/GroupImportSettings"
-          }
-        },
-        "EnableCanCreateAccount": {
-          "type": "string",
-          "description": "provide true or false to enable or disable can create account"
-        }
-      }
-    },
-    "UpdateOAuthSettings": {
-      "type": "object",
-      "properties": {
-        "ProviderName": {
-          "type": "string",
-          "description": "Indicates the authentication provider name."
-        },
-        "AuthorizationEndPoint": {
-          "type": "string",
-          "description": "Authorization endpoint URL."
-        },
-        "TokenEndPoint": {
-          "type": "string",
-          "description": "Token endpoint URL."
-        },
-        "TokenEndPointMethod": {
-          "type": "string",
-          "description": "Method of the endpoint POST or GET."
-        },
-        "UserInfoEndPoint": {
-          "type": "string",
-          "description": "User info endpoint URL."
-        },
-        "UserInfoEndPointMethod": {
-          "type": "string",
-          "description": "Method of the user info endpoint POST or GET."
-        },
-        "ClientId": {
-          "type": "string",
-          "description": "OAuth authentication client id."
-        },
-        "ClientSecret": {
-          "type": "string",
-          "description": "OAuth authentication client secret."
-        },
-        "Scopes": {
-          "type": "string",
-          "description": "Scopes of the settings."
-        },
-        "UserInfoEmail": {
-          "type": "string",
-          "description": "email."
-        },
-        "UserInfoFirstname": {
-          "type": "string",
-          "description": "User first name."
-        },
-        "UserInfoLastname": {
-          "type": "string",
-          "description": "User last name."
-        },
-        "LogoutEndPoint": {
-          "type": "string",
-          "description": "Logout endpoint URL."
-        },
-        "GroupImportSettings": {
-          "type": "array",
-          "description": "Group import settings.",
-          "items": {
-            "$ref": "#/definitions/GroupImportSettings"
-          }
-        },
-        "EnableCanCreateAccount": {
-          "type": "string",
-          "description": "provide true or false to enable or disable can create account"
-        }
-      }
-    },
-    "OAuthResponse": {
-      "type": "object",
-      "properties": {
-        "ApiStatus": {
-          "type": "boolean",
-          "description": "Returns the status from the API."
-        },
-        "Status": {
-          "type": "boolean",
-          "description": "Returns status of the API request."
-        },
-        "StatusMessage": {
-          "type": "string",
-          "description": "Returns the status message from the API."
-        },
-        "Message": {
-          "type": "string",
-          "description": "Returns the message from the API."
-        }
-      }
-    },
-    "AddJWTRequestBody": {
-      "required": [
-        "LogoBytes",
-        "JwtSettings"
-      ],
-      "type": "object",
-      "properties": {
-        "EnableAuthentication": {
-          "type": "string",
-          "description": "Set true or false to enable or disable settings."
-        },
-        "LogoBytes": {
-          "type": "string",
-          "description": "Provide image in bytes format."
-        },
-        "IsEnableEncryption": {
-          "type": "string",
-          "description": "Set true or false to enable or disable encryption."
-        },
-        "JwtSettings": {
-          "type": "array",
-          "description": "Auth settings details.",
-          "items": {
-            "$ref": "#/definitions/AddJWTSettings"
-          }
-        }
-      }
-    },
-    "UpdateJWTRequestBody": {
-      "type": "object",
-      "properties": {
-        "EnableAuthentication": {
-          "type": "string",
-          "description": "Set true or false to enable or disable settings."
-        },
-        "LogoBytes": {
-          "type": "string",
-          "description": "Provide image in bytes format."
-        },
-        "IsEnableEncryption": {
-          "type": "string",
-          "description": "Set true or false to enable or disable encryption."
-        },
-        "JwtSettings": {
-          "type": "array",
-          "description": "JWT settings details.",
-          "items": {
-            "$ref": "#/definitions/UpdateJWTSettings"
-          }
-        }
-      }
-    },
-    "AddJWTSettings": {
-      "required": [
-          "Name",
-          "LoginUrl"
-      ],
-      "type": "object",
-      "properties": {
-        "Name": {
-          "type": "string",
-          "description": "Indicates the authentication provider name."
-        },
-        "LoginUrl": {
-          "type": "string",
-          "description": "Login URL of the JWT application."
-        },
-        "LogOutUrl": {
-          "type": "string",
-          "description": "Logout URL of the JWT application."
-        }  
-      }
-    },
-    "UpdateJWTSettings": {
-      "type": "object",
-      "properties": {
-        "Name": {
-          "type": "string",
-          "description": "Indicates the authentication provider name."
-        },
-        "LoginUrl": {
-          "type": "string",
-          "description": "Login URL of the JWT application."
-        },
-        "LogOutUrl": {
-          "type": "string",
-          "description": "Logout URL of the JWT application."
-        }   
-      }
-    },
-    "JWTResponse": {
-      "type": "object",
-      "properties": {
-        "ApiStatus": {
-          "type": "boolean",
-          "description": "Returns the status from the API."
-        },
-        "Status": {
-          "type": "boolean",
-          "description": "Returns status of the API request."
-        },
-        "StatusMessage": {
-          "type": "string",
-          "description": "Returns the status message from the API."
-        },
-        "Message": {
-          "type": "string",
-          "description": "Returns the message from the API."
-        }
-      }
-    },
-    "GetOpenIdResponse": {
-      "type": "object",
-      "properties": {
-        "ApiStatus": {
-          "type": "boolean",
-          "description": "Returns the status from the API."
-        },
-        "Data": {
-          "type": "array",
-          "description": "Response data from the API.",
-          "items": {
-            "$ref": "#/definitions/OpenIdSettings"
-          }
-        },
-        "Status": {
-          "type": "boolean",
-          "description": "Returns status of the API request."
-        },
-        "StatusMessage": {
-          "type": "string",
-          "description": "Returns the status message from the API."
-        }
-      }
-    },
-    "OpenIdSettings": {
-      "type": "object",
-      "properties": {
-        "ProviderName": {
-          "type": "string",
-          "description": "Indicates the authentication provider name."
-        },
-        "Logo": {
-          "type": "string",
-          "description": "Image name with file format."
-        },
-        "Authority": {
-          "type": "string",
-          "description": "Authority endpoint URL."
-        },
-        "ClientId": {
-          "type": "string",
-          "description": "Openid authentication client id."
-        },
-        "ClientSecret": {
-          "type": "string",
-          "description": "Openid authentication client secret."
-        },
-        "Identifier": {
-          "type": "string",
-          "description": "Identifier of authentication."
-        },
-        "ResponseType": {
-          "type": "string",
-          "description": "Provide the response type value."
-        },
-        "LogoutURL": {
-          "type": "string",
-          "description": "Logout endpoint URL."
-        },
-        "GroupImportSettings": {
-          "type": "array",
-          "description": "Group import settings.",
-          "items": {
-            "$ref": "#/definitions/GroupImportSettings"
-          }
-        },
-        "CanCreateAccount": {
-          "type": "boolean",
-          "description": "Data of user can create account or not."
-        }
-      }
-    },
-    "AddOpenIdRequestBody": {
-      "required": [
-        "LogoBytes",
-        "OIDCAuthSettings"
-      ],
-      "type": "object",
-      "properties": {
-        "EnableAuthentication": {
-          "type": "string",
-          "description": "Set true or false to enable or disable settings."
-        },
-        "LogoBytes": {
-          "type": "string",
-          "description": "Provide image in bytes format."
-        },
-        "OIDCAuthSettings": {
-          "type": "array",
-          "description": "Auth settings details.",
-          "items": {
-            "$ref": "#/definitions/AddOpenIdSettings"
-          }
-        }
-      }
-    },
-    "UpdateOpenIdRequestBody": {
-      "type": "object",
-      "properties": {
-        "EnableAuthentication": {
-          "type": "string",
-          "description": "Set true or false to enable or disable settings."
-        },
-        "LogoBytes": {
-          "type": "string",
-          "description": "Provide image in bytes format."
-        },
-        "OIDCAuthSettings": {
-          "type": "array",
-          "description": "Auth settings details.",
-          "items": {
-            "$ref": "#/definitions/UpdateOpenIdSettings"
-          }
-        }
-      }
-    },
-    "AddOpenIdSettings": {
-      "required": [
-        "ProviderName",
-        "Authority",
-        "ClientId",
-        "ClientSecret",
-        "Identifier"
-      ],
-      "type": "object",
-      "properties": {
-        "ProviderName": {
-          "type": "string",
-          "description": "Indicates the authentication provider name."
-        },
-        "Authority": {
-          "type": "string",
-          "description": "Authority endpoint URL."
-        },
-        "ClientId": {
-          "type": "string",
-          "description": "Openid authentication client id."
-        },
-        "ClientSecret": {
-          "type": "string",
-          "description": "Openid authentication client secret."
-        },
-        "Identifier": {
-          "type": "string",
-          "description": "email."
-        },
-        "ResponseType": {
-          "type": "string",
-          "description": "Provide the response type value 'id_token' or 'code'."
-        },
-        "LogoutURL": {
-          "type": "string",
-          "description": "Logout endpoint URL."
-        },
-        "GroupImportSettings": {
-          "type": "array",
-          "description": "Group import settings.",
-          "items": {
-            "$ref": "#/definitions/GroupImportSettings"
-          }
-        },
-        "EnableCanCreateAccount": {
-          "type": "string",
-          "description": "provide true or false to enable or disable can create account"
-        }
-      }
-    },
-    "UpdateOpenIdSettings": {
-      "type": "object",
-      "properties": {
-        "ProviderName": {
-          "type": "string",
-          "description": "Indicates the authentication provider name."
-        },
-        "Authority": {
-          "type": "string",
-          "description": "Authority endpoint URL."
-        },
-        "ClientId": {
-          "type": "string",
-          "description": "Openid authentication client id."
-        },
-        "ClientSecret": {
-          "type": "string",
-          "description": "Openid authentication client secret."
-        },
-        "Identifier": {
-          "type": "string",
-          "description": "email."
-        },
-        "ResponseType": {
-          "type": "string",
-          "description": "Provide the response type value 'id_token' or 'code'."
-        },
-        "LogoutURL": {
-          "type": "string",
-          "description": "Logout endpoint URL."
-        },
-        "GroupImportSettings": {
-          "type": "array",
-          "description": "Group import settings.",
-          "items": {
-            "$ref": "#/definitions/GroupImportSettings"
-          }
-        },
-        "EnableCanCreateAccount": {
-          "type": "string",
-          "description": "provide true or false to enable or disable can create account"
-        }
-      }
-    },
-    "OpenIdResponse": {
-      "type": "object",
-      "properties": {
-        "ApiStatus": {
-          "type": "boolean",
-          "description": "Returns the status from the API."
-        },
-        "Status": {
-          "type": "boolean",
-          "description": "Returns status of the API request."
-        },
-        "StatusMessage": {
-          "type": "string",
-          "description": "Returns the status message from the API."
-        },
-        "Message": {
-          "type": "string",
-          "description": "Returns the message from the API."
-        }
-      }
-    },
-    "GetThemeFileDetails": {
-      "type": "object",
-      "properties": {
-        "ApiStatus": {
-          "type": "boolean",
-          "description": "Returns the status from the API."
-        },
-        "Data": {
-          "type": "array",
-          "description": "Returns the data of theme files.",
-          "items": {
-            "$ref": "#/definitions/ThemeDetails"
-          }
-        },
-        "Status": {
-          "type": "boolean",
-          "description": "Returns status of the API request."
-        },
-        "StatusMessage": {
-          "type": "string",
-          "description": "Returns the status message from the API."
-        }
-      }
-    },
-    "ThemeDetails": {
-      "type": "object",
-      "properties": {
-        "Fonts": {
-          "type": "string",
-          "description": "Returns the fonts list details."
-        },
-        "ApplicationThemes": {
-          "type": "string",
-          "description": "Returns the application themes list details."
-        },
-        "DashboardThemes": {
-          "type": "string",
-          "description": "Returns the dashboard themes list details."
-        }
-      }
-    },
-    "GetLookAndFeelResponse": {
-      "type": "object",
-      "properties": {
-        "ApiStatus": {
-          "type": "boolean",
-          "description": "Returns the status from the API."
-        },
-        "Data": {
-          "type": "array",
-          "description": "Returns the data of look and feel settings.",
-          "items": {
-            "$ref": "#/definitions/LookAndFeelSettings"
-          }
-        },
-        "Status": {
-          "type": "boolean",
-          "description": "Returns status of the API request."
-        },
-        "StatusMessage": {
-          "type": "string",
-          "description": "Returns the status message from the API."
-        }
-      }
-    },
-    "LookAndFeelSettings": {
-      "type": "object",
-      "properties": {
-        "FontFamily": {
-          "type": "string",
-          "description": "Returns the current font name in the application."
-        },
-        "Theme": {
-          "type": "array",
-          "description": "Returns the current theme details.",
-          "items": {
-            "$ref": "#/definitions/CurrentTheme"
-          }
-        }
-      }
-    },
-    "CurrentTheme": {
-      "type": "object",
-      "properties": {
-        "Appearance": {
-          "type": "string",
-          "description": "Returns the current appearance theme."
-        },
-        "ApplicationTheme": {
-          "type": "string",
-          "description": "Returns the current application theme."
-        },
-        "DashboardTheme": {
-          "type": "string",
-          "description": "Return the current dashboard theme."
-        }
-      }
-    },
-    "UploadThemeRequestBody": {
-      "type": "object",
-      "properties": {
-        "FileType": {
-          "type": "enum",
-          "$ref": "#/definitions/ThemeFileType"
-        },
-        "Name": {
-          "type": "string",
-          "description": "Provide the name of the file."
-        },
-        "Content": {
-          "type": "string",
-          "description": "Please provide the base64 byte details of the theme file."
-        }
-      }
-    },
-    "ThemeFileType": {
-      "description": "1 - Font, 2 - ApplicationTheme, 3 - DashboardTheme",
-      "type": "enum",
-      "enum": [
-        1,
-        2,
-        3
-      ],
-      "x-enumNames": [
-        "Font",
-        "ApplicationTheme",
-        "DashboardTheme"
-      ]
-    },
-    "UpdateLookAndFeelRequest": {
-      "type": "object",
-      "properties": {
-        "Font": {
-          "type": "string",
-          "description": "Provide the font name to update."
-        },
-        "Theme": {
-          "type": "array",
-          "description": "Provide the theme details to update.",
-          "$ref": "#/definitions/ThemeDetail"
-        }
-      }
-    },
-    "ThemeDetail": {
-      "type": "object",
-      "properties": {
-        "Mode": {
-          "type": "enum",
-          "$ref": "#/definitions/FontType"
-        },
-        "Application": {
-          "type": "string",
-          "description": "Provide the application theme name."
-        },
-        "Dashboard": {
-          "type": "string",
-          "description": "Provide the dashboard theme name."
-        }
-      }
-    },
-    "FontType": {
-      "description": "0 - Light, 1 - Dark",
-      "type": "enum",
-      "enum": [
-        0,
-        1
-      ],
-      "x-enumNames": [
-        "Light",
-        "Dark"
-      ]
-    },
-    "ActivateUserRequest": {
-      "required": [
-        "EmailId"
-      ],
-      "type": "object",
-      "properties": {
-        "EmailId": {
-          "type": "string",
-          "description": "Provide email id of the user needs to be activated."
-        },
-        "Password": {
-          "type": "string",
-          "description": "Provide the password for the user.(Password is required for email activation type.)"
-        }
-      }
-    },
-    "ActivateUserResponse": {
-      "type": "object",
-      "properties": {
-        "ApiStatus": {
-          "type": "boolean",
-          "description": "Returns the status from the API."
-        },
-        "Data": {
-          "type": "array",
-          "description": "Returns the data of user activation method."
-        },
-        "Status": {
-          "type": "boolean",
-          "description": "Returns status of the API request."
-        },
-        "StatusMessage": {
-          "type": "string",
-          "description": "Returns the status message from the API."
         }
       }
     }

@@ -12,9 +12,7 @@ The following steps guide you through deploying Bold BI on an AWS EC2 instance. 
 
 
 1. [Deploying Bold BI on an AWS Windows EC2 instance](/deploying-bold-bi/deploying-on-aws/deploy-aws-vm/#deploying-bold-bi-on-an-aws-windows-ec2-instance)
-2. [Deploying Bold BI on an AWS Linux Ubuntu EC2 instance](/deploying-bold-bi/deploying-on-aws/deploy-aws-vm/#deploying-bold-bi-on-an-aws-linux-ubuntu-ec2-instance)
-3. [Deploying Bold BI on an AWS Linux CentOS EC2 instance](/deploying-bold-bi/deploying-on-aws/deploy-aws-vm/#deploying-bold-bi-on-an-aws-linux-centos-ec2-instance)
-4. [Deploying Bold BI on an AWS Linux RedHat EC2 instance](/deploying-bold-bi/deploying-on-aws/deploy-aws-vm/#deploying-bold-bi-on-an-aws-linux-redhat-ec2-instance)
+2. [Deploying Bold BI on an AWS Linux EC2 instance](/deploying-bold-bi/deploying-on-aws/deploy-aws-vm/#deploying-bold-bi-on-an-aws-linux-ec2-instance)
 
 </ul>
 
@@ -71,9 +69,9 @@ This section provides instructions on how to install and run the Bold BI server 
   ![Start up](/static/assets/installation-and-deployment/images/boldbi-startup.png)
 *  Follow the steps in the link to do the [application startup](https://help.boldbi.com/application-startup/).
 
-## Deploying Bold BI on an AWS Linux Ubuntu EC2 instance
+## Deploying Bold BI on an AWS Linux EC2 instance
 
-### Set up an AWS Linux Ubuntu EC2 instance
+### Set up an AWS Linux EC2 instance
 
 * Sign into the [aws portal](https://console.aws.amazon.com/ec2/.).
 * From the EC2 console dashboard, choose "Launch instance" from the options that appear.
@@ -106,7 +104,7 @@ This section provides instructions on how to install and run the Bold BI server 
 
   ![Review and Launch](/static/assets/installation-and-deployment/images/aws-create-ubuntu.png)
 
-### Connect to Linux Ubuntu EC2 Instance
+### Connect to Linux EC2 Instance
 
 To connect to an EC2 instance running Linux using SSH, you need to follow these steps:
 
@@ -123,7 +121,7 @@ To connect to an EC2 instance running Linux using SSH, you need to follow these 
 
 * Other methods are available for connecting to your Linux instance. Please refer to the documentation on [connecting to your Linux instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/connect-to-linux-instance.html) for more information.
 
-### Installing and running the Bold BI Server on Linux Ubuntu
+### Installing and running the Bold BI Server on Linux
 
 This section provides instructions on how to install and run the Bold BI server on a Linux virtual machine (VM).
 
@@ -134,10 +132,5 @@ This section provides instructions on how to install and run the Bold BI server 
   
 * Follow the steps in the link to do the [application startup](https://help.boldbi.com/application-startup/).
 
-## Deploying Bold BI on an AWS Linux CentOS EC2 instance
 
-To deploy Bold BI on an AWS CentOS EC2 instance, refer to the guide on [Deploying Bold BI on an AWS CentOS EC2 instance](https://support.boldbi.com/kb/article/13683/how-to-install-bold-bi-on-an-aws-centos-ec2-instance). This article provides step-by-step instructions to ensure a successful installation and configuration of Bold BI on a CentOS environment.
 
-## Deploying Bold BI on an AWS Linux RedHat EC2 instance
-
-To deploy Bold BI on an AWS RedHat EC2 instance, refer to the guide on [Deploying Bold BI on an AWS RedHat EC2 instance](https://support.boldbi.com/kb/article/599/bold-bi-installation-and-deployment-on-rhel-9-on-aws-ec2-instance). This article provides step-by-step instructions to ensure a successful installation and configuration of Bold BI on a RedHat environment.

@@ -32,7 +32,7 @@ Once you click on the Alma data source, the Alma data source configuration panel
 3.  Enter the **Application key** for the connected account.
 4.  Click on the **Resources** dropdown box and choose the required endpoint.
 5.  Enter the **API KEY** and **Auth Secret** for the connected account in the textbox.
-6.  Click on Custom URL to manually enter the URL. For more details, refer to this documentation `https://developers.exlibrisgroup.com/alma/apis/`.
+6.  Click on Custom URL to manually enter the URL. For more details, refer to this documentation `https://dev.api.getalma.com/docs/api/v2/`.
 7.  Select the **Method** from the method drop-down box.
 8.  In **Max Rows**, enter the maximum number of rows fetched from the Alma data source. This value is used to fetch the data from the Alma data source using pagination.
 9.  Choose a time interval for the **Refresh Settings** using the combo box to periodically trigger the Rest API request and keep the data in sync with your dashboard.
@@ -70,7 +70,7 @@ A period will pass before the next refresh call is triggered. This will automati
 
    `https://yourhostname/v2/<:application>/parents`
 
-For more information on the available API endpoints for this data source, refer to their official [API Documentation](https://developers.exlibrisgroup.com/alma/apis/)
+For more information on the available API endpoints for this data source, refer to their official [API Documentation](https://dev.api.getalma.com/docs/api/v2/)
    
 
 ### Sample queries

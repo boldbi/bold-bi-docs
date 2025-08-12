@@ -240,16 +240,6 @@ This option allows you to toggle the visibility of the tooltip in the pivot grid
 
 ![Pivot grid property Name](/static/assets/visualizing-data/visualization-widgets/images/pivot-grid/tooltip.png)
 
-#### Enable Classic Pivot
-
-The classic layout in the Pivot widget offers a structured, tabular presentation of data, improving both readability and usability. In this layout, fields in the row axis are displayed side by side in separate columns, making data interpretation and analysis easier.
-
-This option allows you to switch the pivot grid from Compact to Tabular layout.
-
-> **NOTE:** Enabling the `Enable Clasic Pivot` property will disable the `Allow Text Wrap`, `Allow Column Resize` and `Fit To Content` property in the basic settings.
-
-![classic-pivot-grid](/static/assets/visualizing-data/visualization-widgets/images/pivot-grid/classic-pivot-grid.png)
-
 #### Allow Value Sorting
 
 If we click the column header, the value field get sorted as ascending or descending when the property `Allow Value Sorting` is enabled.
@@ -313,44 +303,6 @@ By enabling this option, the (Null) header column gets hidden.
 This option allows you to set a value for empty cells in the pivot grid.
 
 ![Pivot-grid empty cell content value](/static/assets/visualizing-data/visualization-widgets/images/pivot-grid/pivot-empty-content-value.png)
-
-### Pivot Chart Settings
-
-This section allows you to switch to pivot chart from pivot grid.
-
-![pivot-chart-settings](/static/assets/visualizing-data/visualization-widgets/images/pivot-grid/pivot-chart-settings.png)
-
-In pivot grid widget, pivot chart would act as an additional visualization component with its basic and important characteristics like drill down and drill up, series customization, axis customization, legend customization, export, print, and tooltip. Its main purpose is to show the pivot data in graphical format.
-
-#### Enable Pivot Charts
-
-Enabling this option allows you to view `Pivot Charts` or `Pivot Table` in the visualization.
-
-![pivot-charts](/static/assets/visualizing-data/visualization-widgets/images/pivot-grid/pivot-charts.png)
-
-#### Charts types
-
-1. **Column:** Displays data as vertical bars, making it easy to compare different values across categories.
-
-2. **Bar:** Similar to column charts but with horizontal bars, useful for displaying comparative data.
-
-3. **Line:** Uses points connected by lines to display trends over time or categories.
-
-4. **Area:** Similar to line charts, but the area below the line is filled to emphasize magnitude.
-
-5. **Spline:** A smooth line that connects data points, ideal for showing data trends smoothly.
-
-#### Show Stripe Line
-
-The stripe line feature highlights a specific range on the chart for better data visualization and analysis.
-
-1. **Start Value of StripeLine:** Defines where the stripe line starts on the y-axis (e.g., 5000).
-
-2. **End Value of StripeLine:** Defines where the stripe line ends on the y-axis (e.g., 5200).
-
-3. **Stripe Line Color:** Allows customization of the stripe line's color for better visual distinction.
-
-4. **Stripe Line Text:** Lets you add descriptive text to the stripe line, providing context or additional information.
 
 ### Content Settings
 

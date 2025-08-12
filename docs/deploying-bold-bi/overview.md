@@ -14,80 +14,78 @@ Bold BI is an all-inclusive solution designed for creating, managing, and sharin
 
 ### Hardware requirements
 The following hardware requirements are necessary to run the Bold BI Enterprise edition:
-* **Operating System:**  Windows Client 10+ | Windows Server 2022+.
+* **Operating System:**  Windows Client OS 8+ and Windows Server OS 2012 R2+.
 * **CPU:** 2-core, 2.4 GHz or faster, and 32-bit or 64-bit processor.
 * **Memory:** 8 GB RAM for 32-bit or 64-bit.
-* **Hard drive:** 10 GB of free space (only installation files).
+* **Hard drive:** 1.2 GB of free space (only installation files).
 
 ### Software requirements
 The following software requirements are necessary to run the Bold BI Enterprise edition:
 * **Framework:** [Microsoft .NET Framework 4.5](https://www.microsoft.com/en-in/download/details.aspx?id=30653)
-* **Database:** PostgreSQL 13.0+| Microsoft SQL Server 2016+ | MySQL 8.0+ | Oracle Database 19c+
-* **Web Server:** [Internet Information Services (IIS) 10.0+](https://en.wikipedia.org/wiki/Internet_Information_Services)
-* **Web Browser:** Microsoft Edge | Chrome | Mozilla Firefox.
+* **Database:** Microsoft SQL Server 2012+ \| PostgreSQL \| MySQL
+* **Web Server:** [Internet Information Services (IIS) 7.0+](https://en.wikipedia.org/wiki/Internet_Information_Services)
+* **Web Browser:** Microsoft Edge, Mozilla Firefox, and Chrome.
 
 ## Prerequisites for Linux
 
 ### Hardware requirements
 The following hardware requirements are necessary to run the Bold BI Enterprise edition:
 * **Operating System:**  Bold BI Linux can run on different Linux distributions. It has been verified on the following operating systems:
-    * Ubuntu 20.04+
-    * Cent OS Stream 9+
-    * Oracle Linux 9.2+
-    * Red Hat Enterprise Linux (RHEL) 9.3+
+    * Ubuntu 
+    * CentOS
+    * Oracle 9.2 
+    * RHEL 9.3
 * **CPU:** 2-core.
-* **Memory:** 8 GB RAM.
-* **Disk Space:** 10 GB or more.
+* **Memory:** 4 GB RAM.
+* **Disk Space:** 5 GB or more.
 
 ### Software requirements
 The following software requirements are necessary to run the Bold BI Enterprise edition:
-* **Database:** PostgreSQL 13.0+| Microsoft SQL Server 2016+ | MySQL 8.0+ | Oracle Database 19c+
+* **Database:** Microsoft SQL Server 2012+ | PostgreSQL | MySQL
 * **Web Server:** [Nginx](https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/linux-nginx?view=aspnetcore-3.1#install-nginx)  or [Apache](https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/linux-apache?view=aspnetcore-3.1)
-* **Web Browser:** Mozilla Firefox | Chrome | Microsoft Edge.
+* **Web Browser:** Microsoft Edge, Mozilla Firefox, and Chrome.
 
 ## Registration and Download Process:
 
-1. Visit the [Pricing Page](https://www.boldbi.com/pricing/) to register and download the Bold BI Enterprise application, where you can view two types of plans. The platform offers simple and transparent pricing tailored to every business need. You can choose between:
+1. Visit the [Pricing Page](https://www.boldbi.com/pricing) to register and download the Bold BI Enterprise application. On this page, you can view two types of plans. Depending on your needs, you can choose the plan that suits you best.
 
-    1. **On Premise** - Deploy within your own infrastructure for full control over data and environment security.
+    1.  **Self Service BI** - Used for deployment as a stand-alone BI platform for internal and external users.
 
         ![Bold BI pricing page](/static/assets/installation-and-deployment/embedded-edition-overview-images/bold-bi-pricing-page.png)
 
-    2. **Cloud** - Access and scale easily with cloud services, focusing on efficient, hardware-free analytics.
+    2. **Embedded BI** - Used for embedding as a complete BI solution within your software applications.
 
-        ![Bold BI pricing page](/static/assets/installation-and-deployment/embedded-edition-overview-images/bold-bi-pricing-cloud.png)
+        ![Bold BI pricing page](/static/assets/installation-and-deployment/embedded-edition-overview-images/bold-bi-pricing-page-embedded.png)
 
-2. Based on your selected plan, you can view the cost details in the plan summary:
+2. Based on your selected plan, you can view cost details in the total summary column.
 
-    ![Try it for Free](/static/assets/installation-and-deployment/embedded-edition-overview-images/plan-details.png)
+    ![Try it for Free](/static/assets/installation-and-deployment/embedded-edition-overview-images/total-summary-details.png)
  
-3. To start a new trial, select `Start Free Trial`.
+2. To start a new trial, select `TRY FOR FREE`.
 
     ![Try it for Free](/static/assets/installation-and-deployment/embedded-edition-overview-images/try-for-free.png)
 
-4. Click `Start with Bold BI` to sign up using Google, Microsoft, or Syncfusion, or enter your details manually to begin your free 30 day trial and agree to the terms.
+3. Provide your email address on the registration page and select `Download Free Trial`.
 
-    ![Try Bold BI Free](/static/assets/installation-and-deployment/embedded-edition-overview-images/30-day-free-trial.png)
+    ![Try Bold BI Free](/static/assets/installation-and-deployment/embedded-edition-overview-images/try-bold-bi-free-page.png)
 
-6. Simultaneously, you will be redirected to the next page. You can automatically retrieve account information for your name and email ID. Entering your work email address and company is optional. Then, click `Proceed to complete`.
+4. `Verify your email address` by clicking on the link sent to your email.
 
-     ![Verify Email Address](/static/assets/installation-and-deployment/embedded-edition-overview-images/proceed-to-complete-page.png)
+     ![Email Verification Mail](/static/assets/installation-and-deployment/embedded-edition-overview-images/email-verification-mail-page.png)
 
-7. Wait for the trial registration to complete. 
+     ![Verify Email Address](/static/assets/installation-and-deployment/embedded-edition-overview-images/verify-email-address-page.png)
+    
+5. On the **Create Password** Page, enter a new password for your account and click `Continue`.
 
-    ![Verify Email Address](/static/assets/installation-and-deployment/embedded-edition-overview-images/processing-page.png)
+     ![Create Password](/static/assets/installation-and-deployment/embedded-edition-overview-images/create-password.png)
 
-6. You'll be redirected to the `Cloud BI Dashboard page` to explore Bold BI’s features, where you can explore and manage your dashboards. 
+6. Fill out the necessary information and select `Proceed to Download`.
 
-     ![Verify Email Address](/static/assets/installation-and-deployment/embedded-edition-overview-images/cloud-bi-page.png)
-
-7. Click on your profile icon at the top right, then select **View Account** to navigate to the account management page.
-
-     ![Verify Email Address](/static/assets/installation-and-deployment/embedded-edition-overview-images/account-navigation.png)
+     ![Proceed to Download](/static/assets/installation-and-deployment/embedded-edition-overview-images/proceed-to-download-page.png)
  
-8. You will now be redirected to the [downloads](https://www.boldbi.com/account/downloads) page. To download and install Bold BI from this page, choose the file type and click the `Download` icon.
+7. You will now be redirected to the [downloads](https://www.boldbi.com/account/downloads) page. To download and install Bold BI from this page, choose the file type and click the `Download` icon.
 
-    ![Bold BI Download Page](/static/assets/installation-and-deployment/embedded-edition-overview-images/download-page.png)
+    ![Bold BI Download Page](/static/assets/installation-and-deployment/embedded-edition-overview-images/bold-bi-download-page.png)
 
 ## See Also
 

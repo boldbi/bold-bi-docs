@@ -24,6 +24,12 @@ To configure the Salesforce data source, follow the below steps:
 
    ![Choose data source from server](/static/assets/working-with-datasource/data-connectors/images/Salesforce/ChooseDS_Server.png)
 
+## Advanced
+In the Advanced category, It will Redirect to the Bold ETL. Refer to [Bold ETL](/managing-resources/manage-data-sources/#advanced-category).
+
+## Basic
+In the Basic Category, It will act as the connector in Bold BI and need to follow the below steps.
+
 ## Authentication with Salesforce
 To authenticate with the Salesforce web service, follow these steps:
 

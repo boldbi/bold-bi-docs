@@ -50,7 +50,7 @@ The following steps represent how to add an Image to the dashboard:
 
 ![Data tab](/static/assets/visualizing-data/visualization-widgets/images/image/imagedatatab.png)
 
-## Configuring Data Input for the Image Widget
+## How to configure the data to Image widget?
 
 You can browse the image or bind a data source column containing the image URL.
 
@@ -156,7 +156,7 @@ By using the parameter `{1}` in the Parameterized URL pattern, you get the 1st v
   
 ***Forming URI through placeholder***
 
-EX: [http://flagpedia.net/data/flags/normal/{0}.png](http://flagpedia.net/data/flags/normal/au.png)
+EX: http://flagpedia.net/data/flags/normal/{0}.png
 
 * `{0}` - Represents the 1st field of the column section and gets the 1st value of that field for the image widget.
 * If the 1st value of the `{0}` parameter is `au`, the URL will be framed as `http://flagpedia.net/data/flags/normal/au.png`. This will be used as the image source.
@@ -176,7 +176,7 @@ EX: [http://flagpedia.net/data/flags/normal/{0}.png](http://flagpedia.net/data/f
 
 ![Filter](/static/assets/visualizing-data/visualization-widgets/images/image/filter.png)
 
-### Ignore Filter Actions
+### IgnoreFilterActions
 
 You can ignore the filter actions by enabling the IgnoreFilterActions property. Browse Image will not act as a slave widget.
 
@@ -186,7 +186,7 @@ You can ignore the filter actions by enabling the IgnoreFilterActions property. 
 
 Configure the linking to URL or dashboard with the widget using its settings. For more details, refer to the [Linking](/visualizing-data/working-with-widgets/linking-urls-and-dashboards/).
 
-### Container Actions
+### Container actions
 
 ![Container Actions](/static/assets/visualizing-data/visualization-widgets/images/image/pin-icon.png)
 
