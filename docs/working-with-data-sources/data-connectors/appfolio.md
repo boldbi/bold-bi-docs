@@ -29,15 +29,16 @@ To choose the AppFolio data source, follow these steps:
 ## Create AppFolio data source
 Once you click on the data source, the NEW DATA SOURCE configuration panel will open. Follow these steps to create an AppFolio data source:
 1. Enter a name and description (optional) for the data source.
-2. Enter the **HostName** for the connected account.
-3. Click on the **API Endpoints** dropdown box and choose the required endpoint.
-4. Click on the **Custom Url** to manually enter the URL. Refer to the [AppFolio API documentation](https://help.appfolio.com/s/article/Requesting-Data-from-AppFolio-Data-API-V1) for more details. 
-5. Select the **GET** method for the REST API in the **Method** combo box.
-6. In **Max Rows**, enter the maximum number of rows to be fetched from the AppFolio data source. This value is used to fetch the data from the AppFolio data source using the pagination.
-7. Choose a time interval for **Refresh Settings** using the combo box to trigger the Rest API request periodically to keep the data in sync with your dashboard.  
-8. Select the **JSON** data type in the **Data Format** combo box.
-9. Choose **Basic HTTP Authentication** in the **Authentication Type** combo box.
-10. Enter a valid AppFolio **Client ID** and **Client Secret** to access the endpoints.
+2. Choose the [Extract Engine](/managing-resources/manage-data-sources/#extract-mode-connection)
+3. Enter the **HostName** for the connected account.
+4. Click on the **API Endpoints** dropdown box and choose the required endpoint.
+5. Click on the **Custom Url** to manually enter the URL. Refer to the [AppFolio API documentation](https://help.appfolio.com/s/article/Requesting-Data-from-AppFolio-Data-API-V1) for more details. 
+6. Select the **GET** method for the REST API in the **Method** combo box.
+7. In **Max Rows**, enter the maximum number of rows to be fetched from the AppFolio data source. This value is used to fetch the data from the AppFolio data source using the pagination. And This option is only applicable to Bold BI Extract.
+8. Choose a time interval for **Refresh Settings** using the combo box to trigger the Rest API request periodically to keep the data in sync with your dashboard.  
+9. Select the **JSON** data type in the **Data Format** combo box.
+10. Choose **Basic HTTP Authentication** in the **Authentication Type** combo box.
+11. Enter a valid AppFolio **Client ID** and **Client Secret** to access the endpoints.
 
 ![Data source preview](/static/assets/working-with-datasource/data-connectors/images/AppFolio/DataSourcesView.png)
 

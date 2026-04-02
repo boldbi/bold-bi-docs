@@ -148,7 +148,7 @@ Not all BoldDesk resources support Incremental refresh; only the following resou
    </tr>
 </table>
 
->**NOTE:**  If the incremental identifier columns are not included in the data sources, then incremental refresh cannot be processed, and a full refresh occurs at that time.
+>**NOTE:**  If the incremental identifier columns are not included in the data source, incremental refresh cannot be performed, and a full refresh will occur every time. During the initial data creation, only the schema is created. The entire data set is loaded during the first refresh, and subsequent new or updated data changes are loaded in the next refresh cycles.
    ![RefreshPreview](/static/assets/working-with-datasource/data-connectors/images/BoldDesk/RefreshPreview.png)
 
 ### Preview and data import

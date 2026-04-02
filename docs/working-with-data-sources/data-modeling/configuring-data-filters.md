@@ -101,7 +101,7 @@ Filter the records based on the dashboard parameter values. This allows for dyna
 
    ![Parmeters List](/static/assets/working-with-datasource/images/parameterlists.png)
 
-   The following example displays data where the selected table column is equal to the chosen dashboard parameter. To create parameters, follow the instructions provided in [configuring dashboard parameters](/working-with-data-sources/dashboard-parameter/configuring-dashboard-parameters/)
+   The following example displays data where the selected table column is equal to the chosen dashboard parameter. To create parameters, follow the instructions provided in [configuring dashboard parameters](/working-with-data-sources/dashboard-parameter/configuring-dashboard-parameter/)
 
    ![Data Preview](/static/assets/working-with-datasource/images/datapreview.png)
 

@@ -85,6 +85,67 @@ We have added support for **custom attributes and dashboard parameters** in the 
 
 ![Dashboard Parameter](/static/assets/working-with-datasource/data-connectors/images/LiveWeb/Dashboardparameter.png)
 
+**Connecting to DataSource using REST API with Custom Attributes**
+
+ ### For example, we configure a Web-Live DataSource using a REST API.
+
+Configuring a Web-Live DataSource connection using **custom attributes** via an API involves setting up:
+
+Configure the following properties:
+
+1. URL.
+2. Header(s).
+3. Parameter(s).
+4. Raw.
+5. Username.
+6. Password.
+7. Servername.
+8. Database.
+9. APItokenbearer.
+10. Apikey.
+11. Hostname.
+12. Authtoken.
+13. Accesstoken.
+14. Authsecret.
+15. Authid.
+16. Accountid.
+17. AppId.
+18. Authentication.
+19. Sitetoken.
+20. Chainid.
+21. Cloudtoken.
+
+### Creating the Connection
+To create a connection, use the following JSON structure:
+```
+{
+  "Name": "${{:DB_Name}}",
+  "Type": "Web",
+  "Description": "DS Description_WODS_20250203161109",
+  "Connection": {
+    "Url": "${{:DB_URL}}",
+    "Method": "Post",
+    "DataFormat": "Json",
+    "Headers": [
+      {
+        "key": "Authorization",
+        "value": "${{:DB_Authorization_Value}}"
+      }
+    ],
+    "Parameters": [
+      {
+        "key": "cliente",
+        "value": "${{:DB_Parameter_Value}}"
+      }
+    ],
+    "Provider": "WEB",
+    "ProviderType": "Web",
+    "SecurityType": "None"
+  }
+}
+```
+To know more about [Connecting Bold BI to WEB Live Data Source via REST API](/working-with-data-sources/data-connectors/live-web/#Connecting-Bold-BI-to-WEB-Live-Data-Source-via-REST-API)
+
 >**Note:** Refer to the [Dashboard Parameter Documentation](https://help.boldbi.com/working-with-data-sources/dashboard-parameter/) and [Custom Attributes Documentation](https://help.boldbi.com/working-with-data-sources/configuring-custom-attribute/) for more details.
 
 ## Pagination Types
@@ -652,7 +713,7 @@ Follow these steps to use the feature.
 1.	Connect the REST API to the live web data source.
 `https://services.odata.org/V4/OData/OData.svc/Products`
    ![Data preview](/static/assets/working-with-datasource/data-connectors/images/LiveWeb/web1.png)
-2. Once you have connected the data source, create the StartDate and EndDate under the [Literal Mode](/working-with-data-sources/dashboard-parameter/configuring-dashboard-parameters/) dashboard parameters.
+2. Once you have connected the data source, create the StartDate and EndDate under the [Literal Mode](/working-with-data-sources/dashboard-parameter/configuring-dashboard-parameter/) dashboard parameters.
    ![Data preview](/static/assets/working-with-datasource/data-connectors/images/LiveWeb/web2.png)
 3. Save the data source first. Then, click on the Edit Data Source button to reconnect the dashboard parameter URL provided, and save the changes.
    Example:`http://services.odata.org/V4/OData/OData.svc/Products?%24filter=ReleaseDate%20gt%20@{{:LiteralDS.StartDate}}T00:00:00Z%20and%20ReleaseDate%20lt%20@{{:LiteralDS.EndDate}}T00:00:00Z`

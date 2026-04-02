@@ -89,11 +89,11 @@ plugins:
 
   ![GitHub Data Hub - BoldBI](/static/assets/working-with-etl/images/boldbi_panel.png#max-width=100%)
 
-  2. Click `Add Project` and provide the name for the new project.
+  2. Click `Add Pipeline` and provide the name for the new pipeline.
   
    ![GitHub](/static/assets/working-with-etl/images/addpipeline.png#max-width=100%)
   
-  3. Select the newly created project and add the `GitHub` template.
+  3. Select the newly created pipeline and add the `GitHub` template.
 
   ![GitHub Data Hub - BoldBI](/static/assets/working-with-etl/images/githubaddtemplate.png#max-width=100%)
   

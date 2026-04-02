@@ -14,7 +14,7 @@ The sample has been provided in the following sections for `Blazor WebAssembly`,
 
 ## Prerequisites
 
- * [.NET Core 7.0](https://dotnet.microsoft.com/en-us/download/dotnet-core)
+ * [.NET Core 8.0](https://dotnet.microsoft.com/en-us/download/dotnet-core)
  * [Visual Studio Code](https://code.visualstudio.com/download)
 
 ## How to run Blazor WebAssembly sample
@@ -28,7 +28,7 @@ The sample has been provided in the following sections for `Blazor WebAssembly`,
    ![EmbedSettings image](/static/assets/javascript/sample/images/embed-settings-download.png)
    ![EmbedConfig Properties](/static/assets/javascript/sample/images/prop-core.png)
 
-4. Please copy the downloaded `embedConfig.json` file and paste it into the `Server folder` [location](https://github.com/boldbi/blazor-webassembly-sample/tree/master/BlazorWebAssembly/Server) within the application. Please ensure you have placed it in the application, as shown in the following image. 
+4. Please copy the downloaded `embedConfig.json` file and paste it into the `Server` folder [location](https://github.com/boldbi/blazor-webassembly-sample/tree/master/BlazorWebAssembly/Server) within the application. Please ensure you have placed it in the application, as shown in the following image. 
 
    ![EmbedConfig image](/static/assets/javascript/sample/images/blazor-webassembly-embed-config.png)
 
@@ -72,55 +72,16 @@ The sample has been provided in the following sections for `Blazor WebAssembly`,
 
 7. To run the application, use the command `dotnet watch run` in the Visual Studio Code terminal.
 
-8. You can edit the dashboard in design mode and create a new dashboard with the following changes in the `renderDashboard()` method.
-
-    <meta charset="utf-8"/>
-    <table>
-    <tbody>
-    <tr>
-    <td align="left">dashboardId</td>
-    <td align="left">Provide the dashboard ID of the dashboard you want to embed in view or edit mode. In order to create a new dashboard, please exclude this specific property.</td>
-    </tr>
-    <tr>
-    <td align="left">mode</td>
-    <td align="left">In which mode do you want to render the dashboard? It can either be 'BoldBI.Mode.View' or 'BoldBI.Mode.Design' mode. </td>
-    </tr>
-    <tr>
-    <td align="left">authorizationServer</td>
-    <td align="left">Url of the 'authorizationServerAPI' action in the application.</td>
-    </tr>
-    </tbody>
-    </table>
-
-    ```js
-        function renderDashboard() {
-          this.dashboard = BoldBI.create({
-                serverUrl: data.ServerUrl + "/" + data.SiteIdentifier,
-                dashboardId: data.DashboardId,
-                embedContainerId: "dashboard",
-                embedType: data.EmbedType,
-                environment: data.Environment,
-                mode: BoldBI.Mode.Design,
-                width: window.innerWidth - 300 + "px",
-                height: window.innerHeight - 100 + "px",
-                expirationTime: 100000,
-                authorizationServer: {
-                    url: authorizationServerUrl
-                },
-            });
-            dashboard.loadDesigner();
-        };
-     ```
-
 ## How the Blazor WebAssembly sample works
+    
+ 1. The application checks if `embedConfig.json` is available; if it is, it `deserializes` and stores the content in `EmbedDetails`. Otherwise, it throws an error.
+    ![EmbedProperties](/static/assets/javascript/sample/images/blazor-web-getconfig.png#max-width=70%)
 
- 1. Based on the dashboard provided in the `index.html`, authorize the server URL by calling the `AuthorizationServer` function as follows.
-    ![Authorization Server](/static/assets/javascript/sample/images/blazor-authorize.png#max-width=95%)
+ 2. To generate an access token, call the `TokenGeneration` API with the provided `embedConfig` values.
+    ![Get token Details](/static/assets/javascript/sample/images/blazor-web-token.png)
 
- 2. In the above authorization, generate the `SignatureUrl` using the provided `EmbedSecret key` and validate the authorization in Bold BI. Once the authorization is validated, the dashboard will begin to render.
-
- 3. In the `embedConfig.json` file, modify the dashboard ID of the respective dashboard as desired for embedding.
-    ![EmbedProperties](/static/assets/javascript/sample/images/prop-core.png#max-width=70%)
+ 3. Once the token is generated, it will be returned to the `index.html` file and the dashboard will start to render it.
+    ![Render dashboard](/static/assets/javascript/sample/images/blazor-web-dashboard.png)
 
 ## Steps to create new Blazor WebAssembly application to embed dashboard
 
@@ -132,7 +93,7 @@ The sample has been provided in the following sections for `Blazor WebAssembly`,
  3. In order to create a new project, we must execute the following command in the terminal.
 
     ```js
-         dotnet new blazorwasm --hosted
+        dotnet new blazorwasm --hosted
     ```
 
  4. Please make sure that you have enabled embed authentication on the `embed settings` page. If it is not currently enabled, please refer to the image or detailed [instructions](/site-administration/embed-settings/#get-embed-secret-code) provided.
@@ -146,9 +107,9 @@ The sample has been provided in the following sections for `Blazor WebAssembly`,
 
     ![EmbedConfig image](/static/assets/javascript/sample/images/blazor-webassembly-embed-config.png)
 
- 7. In the `Shared project`, create a new folder called `Models`. Create a model class as `DataClass.cs` to define the following properties. These properties are used to retrieve the dashboard details from the server.
+ 7. In the `Shared project`, create a model class as `EmbedClass.cs` to define the following properties. These properties are used to retrieve the dashboard details from the server.
 
-    Open the terminal and navigate to the `Shared project` directory using the cd command(e.g., `cd C:\BlazorProject\Shared`). Execute the following commands in the terminal to add the necessary references to the project: `dotnet add package Newtonsoft.Json` and `dotnet add package System.Runtime.Serialization.Primitives`. Make sure to include `System.Runtime.Serialization` and `Newtonsoft.Json` namespaces are in the `DataClass.cs` model file.
+    Open the terminal and navigate to the `Shared project` directory using the cd command(e.g., `cd C:\BlazorProject\Shared`). Ensure that you include the necessary packages, such as `System`, `System.Collections.Generic`, `System.Runtime.Serialization`, `System.Linq`, `System.Text` and `System.Threading.Tasks`, in the `EmbedClass.cs` model file.
 
     ```js
     [DataContract]
@@ -188,13 +149,13 @@ The sample has been provided in the following sections for `Blazor WebAssembly`,
     }
     ```
 
-9. In the `Client project`, the following scripts and style sheets are mandatory to render the dashboard. Include the following code in your `\wwwroot\index.html` page of the `<head>` tag.
+9. In the `Client project`, the following scripts and style sheets are mandatory to render the dashboard. Include the following script tag in your `\wwwroot\index.html` page.
 
     ```js 
-    <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v7.11.24/boldbi-embed.js"></script>
+    <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v15.2.6/boldbi-embed.js"></script>
     ```
 
-10. Inside the `<body>` tag, create the DOM element with the id `dashboard` and implement a function to render the dashboard.
+10. Inside the `<body>` tag, implement a function to render the dashboard.
 
     ```js
         <script>
@@ -204,7 +165,15 @@ The sample has been provided in the following sections for `Blazor WebAssembly`,
             try {
                 const response = await fetch('/api/EmbedData/GetConfig');
                 const embedConfig = await response.json();
-                data = embedConfig;
+                // Transform camelCase keys to PascalCase
+                const transformedEmbedConfigData = {
+                    DashboardId: embedConfig.dashboardId,
+                    EmbedType: embedConfig.embedType,
+                    Environment: embedConfig.environment,
+                    ServerUrl: embedConfig.serverUrl,
+                    SiteIdentifier: embedConfig.siteIdentifier
+                };
+                data = transformedEmbedConfigData;
             } catch (error) {
                 window.location.href = 'api/EmbedData/EmbedConfigErrorLog';
             }
@@ -214,24 +183,20 @@ The sample has been provided in the following sections for `Blazor WebAssembly`,
         function renderDashboard() {
             this.dashboard = BoldBI.create({
                 serverUrl: data.ServerUrl + "/" + data.SiteIdentifier,
-                dashboardId: data.DashboardId, // Provide the item id here to render the dashboard in design mode or to create dashboard don't initialize this property
+                dashboardId: data.DashboardId,
                 embedContainerId: "dashboard",
-                embedType: data.EmbedType,
-                environment: data.Environment,
-                mode: BoldBI.Mode.View,
                 width: "100%",
-                height: window.innerHeight - 20 + "px",
-                expirationTime: 100000,
+                height: window.innerHeight + "px",
                 authorizationServer: {
                     url: authorizationServerUrl
-                },
+                }
             });
             this.dashboard.loadDashboard();
         }
         </script>
     ```
 
- 11. Open the `Index.razor` file in the `Client project` and implement the code as shown to invoke the `renderDashboard()` method.
+ 11. Open the `Index.razor` file in the `Client project`, create the DOM element with the id `dashboard` and implement the code as shown to invoke the `renderDashboard()` method.
 
      ```js
         @page "/"
@@ -251,19 +216,19 @@ The sample has been provided in the following sections for `Blazor WebAssembly`,
  12. Open the `MainLayout.razor` file in the `Client project` and replace the code mentioned below.
 
      ```js
-          @inherits LayoutComponentBase
-          <div class="page">
-          <main>
-             <article class="content px-4">
-             @Body
-             </article>
-          </main>
-          </div>
+        @inherits LayoutComponentBase
+        <div class="page">
+            <main>
+                <article class="content px-4" style="padding-left: 0px !important; padding-right: 0px !important;">
+                    @Body
+                </article>
+            </main>
+        </div>
      ```
 
- 13. In the `Server project`, create the `EmbedDataController.cs` controller under the controller folder. To obtain specific dashboard details, define an API called `AuthorizationServer()` which utilizes the `GetSignatureUrl()` method to generate the algorithm. In this API, append the `embedQueryString`, `userEmail`, and the value from the `GetSignatureUrl()` method as query parameters in the URL to the authorization server of the specific dashboard.
+ 13. In the `Server project`, create the `EmbedDataController.cs` controller under the Controllers folder. To obtain specific dashboard details, define an API called `AuthorizationServer()` which utilizes the `GetSignatureUrl()` method to generate the signature. In this API, append the `embedQueryString`, `userEmail`, and the value from the `GetSignatureUrl()` method as query parameters in the URL to the authorization server of the specific dashboard.
 
-     Open the terminal and navigate to the `Server project` directory using the cd command (e.g., `cd C:\BlazorProject\Server`). Execute the following commands in the terminal to add the necessary reference to the project: `dotnet add package Newtonsoft.Json`. Include the namespaces for the `Newtonsoft.Json`, `System.Security.Cryptography`, `System.Net.Http`, `Microsoft.AspNetCore.Mvc`, and `Models` folders.
+     Open the terminal and navigate to the `Server project` directory using the cd command (e.g., `cd C:\BlazorProject\Server`). Ensure that you include the necessary packages, such as `Microsoft.AspNetCore.Http`, `Microsoft.AspNetCore.Mvc`, `System`, `System.Collections.Generic`, `System.Net.Http`, `System.Linq`, `System.Text`, `System.Threading.Tasks`, `Newtonsoft.Json`, `BlazorWebAssembly.Shared`, and `BlazorWebAssembly.Client.Pages`, in the `EmbedDataController.cs` controller file.
 
      ```js
         [Route("api/[controller]")]
@@ -278,7 +243,15 @@ The sample has been provided in the following sections for `Blazor WebAssembly`,
             string basePath = AppDomain.CurrentDomain.BaseDirectory;
             string jsonString = System.IO.File.ReadAllText(Path.Combine(basePath, "embedConfig.json"));
             GlobalAppSettings.EmbedDetails = JsonConvert.DeserializeObject<EmbedDetails>(jsonString);
-            return Ok(jsonData);
+            
+            return Json(new
+            {
+                DashboardId = GlobalAppSettings.EmbedDetails.DashboardId,
+                ServerUrl = GlobalAppSettings.EmbedDetails.ServerUrl,
+                EmbedType = GlobalAppSettings.EmbedDetails.EmbedType,
+                Environment = GlobalAppSettings.EmbedDetails.Environment,
+                SiteIdentifier = GlobalAppSettings.EmbedDetails.SiteIdentifier
+            });
         }
         [HttpPost("[action]")]
         [Route("AuthorizationServer")]

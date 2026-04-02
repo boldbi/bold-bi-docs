@@ -219,13 +219,7 @@ This allows you to provide a brief explanation about the grid widget.
 
 ### Basic settings
 
-![Basic Settings](/static/assets/visualizing-data/visualization-widgets/images/tree-map/basic-settings.png)
-
-#### Show Tooltip
-
-This option allows you to toggle the visibility of tooltip in the tree map.
-
-![General Settings](/static/assets/visualizing-data/visualization-widgets/images/tree-map/tooltip.png)
+![Basic Settings](/static/assets/visualizing-data/visualization-widgets/images/tree-map/Treemap-basic-setting.png)
 
 #### Show legend
 
@@ -247,6 +241,12 @@ This allows you to toggle the visibility of `value labels`.
 
 ![Value label](/static/assets/visualizing-data/visualization-widgets/images/tree-map/value-label.png)
 
+#### Enable Text Wrap
+
+This option allows you to wrap the `Lable text`.
+
+![label text wrap](/static/assets/visualizing-data/visualization-widgets/images/tree-map/Treemap-text-wrap.png)
+
 #### Enable drill-down
 
 In case of hierarchical view, multiple levels will get rendered in the same view. **This option will be visible, if you bind more than one column in the Columns section**. This can be switched to drill down view by enabling this setting.
@@ -258,6 +258,30 @@ In case of hierarchical view, multiple levels will get rendered in the same view
 Once you've drilled down, you can drill up to the previous view using the breadcrumb navigator located at the top of the widget.
 
 ![Drill up](/static/assets/visualizing-data/visualization-widgets/images/tree-map/drillup.png)
+
+### Tooltip Settings
+
+The Tooltip Settings section allows you to customize the appearance and behavior of tooltips in widget visualizations.
+
+![Basic Settings](/static/assets/visualizing-data/visualization-widgets/images/tree-map/tooltip-settings.png)
+
+#### Show Tooltip
+
+This option allows you to toggle the visibility of the tooltip in the tree map.
+
+![General Settings](/static/assets/visualizing-data/visualization-widgets/images/tree-map/tooltip.png)
+
+#### Customize Tooltip
+
+This option allows you to customize which columns are visible in the map's tooltip.
+
+![General Settings](/static/assets/visualizing-data/visualization-widgets/images/tree-map/customize-tooltip-settings.png)
+
+#### Enable RTL
+
+This option allows you to display fields and their data from right to left.
+
+![Tooltip RTL](/static/assets/visualizing-data/visualization-widgets/images/tree-map/rtl-tooltip.png)
 
 ### Link
 
@@ -298,6 +322,10 @@ This allows you to define this tree map widget to ignore responding to the filte
 Using this option, you can enable or disable hierarchical `top N` filtering. While applying `top N` filter with multiple dimension columns, the returned data can be customized based on whether the filtering needs to be done flat or based on the hierarchy of dimension columns added.
 
 When the `Hierarchical Filter` option is enabled, the top N will be applied for each individual column separately based on the number set for each column.
+
+#### Show Filter
+
+This feature allows you to toggle the visibility of the `Filter` icon for the Treemap widget when the `Act as Master Widget` option is enabled.
 
 ## How to apply conditional formatting in tree map
 
@@ -458,7 +486,7 @@ This allows you to toggle the visibility of the `border` surrounding the widget.
 
 ### Corner Radius
 
-This allows you to apply a specified `radius` to the widget corners if **Show Border** is enabled. The value can be between 0 and 10.
+This allows you to apply a specified `radius` to the widget corners if **Show Border** is enabled. The value can be between 0 and 100.
 
 ### Show Background Image
 
@@ -473,7 +501,14 @@ This allows you to set the **background color** for the tree map widget.
 This property allows you to specify the **transparency** for the `background color.`
 
 ### Show Shadow
+
 This allows you to toggle the visibility of  the `shadow` surrounding the widget.
+
+### Mobile Height Factor
+
+This option allows you to resize widgets specifically for mobile view.
+
+![Mobile Height Factor](/static/assets/visualizing-data/visualization-widgets/images/mobile-height-factor.png)
 
 ### Container actions
 

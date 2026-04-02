@@ -40,7 +40,7 @@ After clicking the data source, the NEW DATA SOURCE configuration panel opens. F
 In future, you can edit the connection information using [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 
 > **NOTE:**  To connect a data source with **SSH**, enable the SSH check box in the **NEW DATA SOURCE** configuration panel and enter the required credentials.
-![Enable SSH](/static/assets/working-with-datasource/images/enable-ssh.png#max-width=60%)
+![Enable SSH](/static/assets/working-with-datasource/data-connectors/images/Presto/ssh_presto.png#max-width=60%)
 
 ### Data Preview
 1. Click **Connect** to connect the Presto server with configured details.

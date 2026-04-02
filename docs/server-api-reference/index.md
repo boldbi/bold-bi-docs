@@ -87,4 +87,15 @@ For Bold BI UMS Site REST API references, refer to the following [API Reference]
        Manage(retrieve, add, update and delete) groups, users and permissions in your Bold BI site.
 	</td>
   </tr>
+  <tr>
+    <td>
+        <a href="/server-api-reference/v6.0/api-reference/">Rest API-v6.0</a>
+    </td>
+    <td>
+        <a href="/server-api-reference/v6.0/try-it-now/">Try It Now-v6.0</a>
+    </td>
+    <td>
+       Manage(retrieve, add, update and delete) groups, users and permissions in your Bold BI site.
+	</td>
+  </tr>
 </table>

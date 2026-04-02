@@ -92,11 +92,11 @@ plugins:
 
   ![Google Sheets - Data Hub](/static/assets/working-with-etl/images/boldbi_panel.png#max-width=100%)
 
-  2. Click `Add Project` and provide the name for the new project.
+  2. Click `Add Pipeline` and provide the name for the new pipeline.
   
    ![Google Sheets - Data Hub](/static/assets/working-with-etl/images/addpipeline.png#max-width=100%)
   
-  3. Select the newly created project and add the `Google Sheets` template.
+  3. Select the newly created pipeline and add the `Google Sheets` template.
 
   ![Google Sheets - Data Hub](/static/assets/working-with-etl/images/sheets_service_template.png#max-width=100%)
   

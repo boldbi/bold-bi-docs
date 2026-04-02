@@ -12,106 +12,76 @@ A GitHub link has been provided to [get](https://github.com/boldbi/ruby-on-rails
 
 > **NOTE:** The best way to get started would be to read the [Getting Started](/getting-started/embedding-in-your-application/) Started section of the documentation first. The `Getting Started` guide provides you with enough information that you need to know before working on the sample.
 
-    
+## Prerequisites
+
+ * [Node.js](https://nodejs.org/en/)
+ * [Ruby installer](https://rubyinstaller.org/)
+ * [Visual Studio Code](https://code.visualstudio.com/download)
+
 ## How to run the sample
 
- 1. Please [get](https://github.com/boldbi/ruby-on-rails-sample) the Ruby on Rails sample.    
+1. Please [get](https://github.com/boldbi/ruby-on-rails-sample) the Ruby on Rails sample.    
 
- 2. You need to set the details of your embed property in the `Index.html.erb` and `Authorizes_Controller.rb`.
-    ![Embed Properties](/static/assets/javascript/sample/images/ruby-index-props.png)
-    ![Embed Properties In Authorize Controller](/static/assets/javascript/sample/images/ruby-authorize-props.png)
-    <meta charset="utf-8"/>
-    <table>
-    <tbody>
-    <tr>
-        <td align="left">ServerUrl</td>
-        <td align="left">Bold BI Server URL (ex: http://localhost:5000/bi/site/site1, http://dashboard.syncfusion.com/bi/site/site1)</td>
-    </tr>
-    <tr>
-        <td align="left">DashboardID</td>
-        <td align="left">Provide the dashboard id of the dashboard you want to embed.</td>
-    </tr>
-    <tr>
-        <td align="left">authorizationUrl</td>
-        <td align="left">URL pointing to AuthorizeServer API file. We are running ruby sample in 3000 port(http://localhost:3000/api/v1/authorizes).</td>
-    </tr>
-    <tr>
-        <td align="left">EmbedSecret</td>
-        <td align="left">You could get your EmbedSecret key from Embed tab by enabling Enable embed authentication in <a href ='/site-administration/embed-settings/'>Administration page</a></td>
-    </tr>
-    <tr>
-        <td align="left">UserEmail</td>
-        <td align="left">UserEmail of the Admin in your Bold BI, which would be used to authorize the server </td>
-    </tr>
-    </tbody>
-    </table>
+2. Please ensure that you have enabled embed authentication on the `embed settings` settings page. If it is not currently enabled, please refer to the provided image or detailed [instructions](/site-administration/embed-settings/#get-embed-secret-code) to enable it.
 
- 3. Please get the item ID of the dashboard from the BI server. Kindly refer to this [link](/working-with-dashboards/share-dashboards/get-dashboard-link/#get-link) and the screenshot provided below.
-    ![Get Dashboard Id](/static/assets/javascript/sample/images/get-dashboard-id.png)
+   ![Embed Settings](/static/assets/javascript/sample/images/embed-settings.png)
 
- 4. Then, run your Ruby on Rails sample.
+3. To download the `embedConfig.json` file, please follow this [link](/site-administration/embed-settings/#get-embed-configuration-file) for reference. Additionally, you can refer to the image below for visual guidance.
 
- 5. The dashboard can be rendered in design mode or created with the following changes in the `embedSample()` method.
+   ![EmbedSettings image](/static/assets/javascript/sample/images/embed-settings-download.png)
+   ![EmbedConfig Properties](/static/assets/javascript/sample/images/prop-core.png)
+ 
+4. Please copy the downloaded `embedConfig.json` file and paste it into the designated [location](https://github.com/boldbi/ruby-on-rails-sample/tree/master) within the application. Make sure that you have placed it correctly in the application, as shown in the image.
 
-     ```js
-     function embedSample() {
-            var boldbiEmbedInstance = BoldBI.create({
-            serverUrl: "http://localhost:5000/bi/site/site1",
-            dashboardId: "", //Provide item id to render it in design mode,to create dashboard remove this property
-            embedContainerId: "dashboard",
-            embedType: BoldBI.EmbedType.Component,
-            environment: BoldBI.Environment.Enterprise, // If Cloud, you should use BoldBI.Environment.Cloud
-            mode: BoldBI.Mode.Design,
-            height: "800px",
-            width: "1200px",
-            authorizationServer: {
-                url: "http://localhost:3000/api/v1/authorizes"
-            },
-            expirationTime: "100000",
-        });
-        boldbiEmbedInstance.loadDesigner();
-    }
-     ```
+   ![EmbedConfig image](/static/assets/javascript/sample/images/ruby-embed-config.png)
 
     <meta charset="utf-8"/>
-    <table>
-    <tbody>
-    <tr>
-    <td align="left">serverUrl</td>
-    <td align="left">Dashboard Server BI URL (ex: http://localhost:5000/bi/site/site1, http://dashboard.syncfusion.com/bi/site/site1)</td>
-    </tr>
-    <tr>
-    <td align="left">dashboardId</td>
-    <td align="left">Provide the dashboard id of the dashboard you want to embed in view or edit mode. Ignore this property to create new dashboard.</td>
-    </tr>
-    <tr>
-    <td align="left">embedContainerId</td>
-    <td align="left">Container Id in which dashboard renders.It should not contain hypen.</td>
-    </tr>
-    <tr>
-    <td align="left">mode</td>
-    <td align="left">In which mode you want to render dashboard. It can either be 'View' or 'Design' mode. </td>
-    </tr>
-    <tr>
-    <td align="left">expirationTime</td>
-    <td align="left">Set the duration for the token to be alive.</td>
-    </tr>
-    <tr>
-    <td align="left">authorizationServer</td>
-    <td align="left">Url of the 'GetEmbedDetails' action in the application.</td>
-    </tr>
-    </tbody>
-    </table>
+       <table>
+       <tbody>
+       <tr>
+          <td align="left">ServerUrl</td>
+          <td align="left">Dashboard Server BI URL (ex: http://localhost:5000/bi, https://demo.boldbi.com/bi)</td>
+       </tr>
+       <tr>
+          <td align="left">SiteIdentifier</td>
+          <td align="left">For the Bold BI Enterprise edition, it should be like site/site1. For Bold BI Cloud, it should be an empty string.</td>
+       </tr>
+       <tr>
+          <td align="left">UserEmail</td>
+          <td align="left">UserEmail of the Admin in your Bold BI, which would be used to get the dashboard list.</td>
+       </tr>
+       <tr>
+          <td align="left">EmbedSecret</td>
+          <td align="left">Get your EmbedSecret key from the Embed tab by enabling the <code>Enable embed authentication</code> in the <a href='/site-administration/embed-settings/'>Administration page</a> </td>
+       </tr>
+       <tr>
+          <td align="left">Environment</td>
+          <td align="left">Your Bold BI application environment. (If it is a cloud analytics server, use `BoldBI.Environment.Cloud`; if it is your server, use `BoldBI.Environment.Enterprise`)</td>
+       </tr>
+       <tr>
+          <td align="left">DashboardId</td>
+          <td align="left">Item ID of the dashboard to be embedded in your application.</td>
+       </tr>
+       <tr>
+          <td align="left">ExpirationTime</td>
+          <td align="left">Token expiration time. (In the EmbedConfig.json file, the default token expiration time is 10000 seconds)</td>
+       </tr>
+       </tbody>
+       </table>
+
+5. To install all dependent packages by using the following command `bundle install`.
+
+6. Then, run your Ruby on Rails sample using the following command `rails s`.
 
 ## How this sample works
 
- 1. To authorize the server URL, you will call the GetEmbedDetails function using the API (`http://localhost:3000/api/v1/authorizes`) with the provided EmbedProperties values, based on the dashboard provided in the embed properties.
-    ![Get Embed Details](/static/assets/javascript/sample/images/ruby-authorize.png)
+ 1. The `renderDashboard` method will be invoked based on the configured embedConfig values in the `index.html.erb` file.
+    ![render dashboard](/static/assets/javascript/sample/images/ruby_dashboard.png)
 
- 2. In the previous authorization, the `SignatureUrl` has been generated using the provided `EmbedSecret key` and the embed details have been validated in Bold BI. After the details are validated, the dashboard starts to render in the `index.html.erb` file.
+ 2. Before rendering, call the `tokenGenerationUrl`, which redirects to the `token_generation` action in the `home_controller.rb`. This action generates the access token using the provided `embedDetails`.
+    ![Get Embed Details](/static/assets/javascript/sample/images/ruby-authorize.png)  
 
- 3. In the `Index.html.erb`, change the dashboard ID of the respective dashboard as you wish to embed.
-    ![Set Dashboard Id](/static/assets/javascript/sample/images/ruby-dashboard.png)
+ 3. Once the token is generated, it will be returned to the `index.html.erb` file and the dashboard will start to render it.
 
 ## Steps to create new Ruby on Rails application to embed dashboard
 
@@ -130,7 +100,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/ruby-on-rails
      ```js
         <head>
             <title>Demo</title>
-            <%= javascript_include_tag "https://cdn.boldbi.com/embedded-sdk/v7.11.24/boldbi-embed.js", "data-turbolinks-track" => true  %>
+            <%= javascript_include_tag "https://cdn.boldbi.com/embedded-sdk/v15.2.6/boldbi-embed.js", "data-turbolinks-track" => true  %>
         </head>
 
         <body onload="embedSample();">

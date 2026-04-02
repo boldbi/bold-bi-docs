@@ -82,6 +82,11 @@ After clicking downward arrow icon, `Feedback Report` tab moves to bottom of the
 
 ![Overlapping widgets](/static/assets/visualizing-data/visualization-widgets/images/tab-widget/overlapping-tab-widget.png#max-width=87%)
 
+#### Apply Stack Order
+
+This allows you to stack entire widgets on top of each other.
+
+![Apply Stack Order](/static/assets/visualizing-data/visualization-widgets/images/tab-widget/apply-stack-order-tab.png)
 
 #### Hide Tab Header
 When the `Hide Tab Header` checkbox is enabled, the tab header will be disabled.
@@ -93,6 +98,18 @@ The color of the tab header can be changed by choosing a color from `Header Colo
 
 #### Active Tab
 `Active Tab` sets the selected tab as default when the dashboard is rendered.
+
+#### Enable RTL
+
+This option allows tab header to be displayed from right to left.
+
+![Enable RTL](/static/assets/visualizing-data/visualization-widgets/images/tab-widget/RTL.png)
+
+#### Enable Lazy Load
+
+This option improves dashboard performance by rendering only the widgets in the active tab during initial load. Widgets in other tabs are rendered only when you switch to them (if they have not already been rendered).
+
+![Enable Lazy Load](/static/assets/visualizing-data/visualization-widgets/images/tab-widget/enable-lazy-load.png)
 
 ### Container Appearance
 ![Container Appearance](/static/assets/visualizing-data/visualization-widgets/images/tab-widget/container-appearance-tab-widget.png#max-width=60%)
@@ -108,7 +125,7 @@ This allows you to customize the padding of the widget container if **Auto Paddi
 This allows you to toggle the visibility of the `border` surrounding the widget.
 
 #### Corner Radius
-This allows you to apply the specified radius to the widget corners if Show Border is enabled. The value can be between 0 and 10.
+This allows you to apply the specified radius to the widget corners if Show Border is enabled. The value can be between 0 and 100.
 
 #### Show Background Image
 This allows you to set the background image for the tab widget.
@@ -122,10 +139,18 @@ This property allows you to specify the transparency for the background color.
 #### Show Shadow
 This allows you to toggle the visibility of the `shadow` surrounding the widget.
 
+#### Mobile Height Factor
+
+This option allows you to resize widgets specifically for mobile view.
+
+![Mobile Height Factor](/static/assets/visualizing-data/visualization-widgets/images/mobile-height-factor.png)
+
 ### Export
-Export the tab widget as an **image** and **PDF** format. Currently, the active tab with widgets will get exported.
+You can export the tab widget in various formats, including **Image**, **PDF**, **PowerPoint**, **Excel** and **CSV**.
 
 ![Export Tab Widget](/static/assets/visualizing-data/visualization-widgets/images/tab-widget/export-tab-widget.png)
+
+>**NOTE:** For Image, PDF, and PowerPoint exports, only the active tab and its widgets will be exported at this time.
 
 ## Inter widget linking support for the Tab widget
 Inter widget linking support helps to link a few widgets (master widget) with a tab widget and switch the tabs in the tab widget based on the selected index value of the master widget. It also filters the data inside the tab widget while switching the required tab. For example, when selecting the second value from a combo box, the second value is filtered inside the tab widget, and the second tab is also switched.
@@ -177,3 +202,36 @@ This allows you to switch the tab based on the specific index which can be enter
 
 ![Custom result in Inter widget linking](/static/assets/visualizing-data/visualization-widgets/images/tab-widget/InterWidgetLinking-Custom-Result.png)
 
+## Switching Tabs with URL Parameters
+
+You can now control which tab is displayed in a Tab Widget by passing a URL parameter that specifies the tab name. This is useful for linking from other dashboards or embedding scenarios.
+
+### Syntax
+
+``` 
+&widgetName.Tab=TabName
+```
+
+- `widgetName`: Name of the Tab Widget in the dashboard (for example, `TabWidget1`).
+- `Tab`: Literal keyword that triggers the tab-switch action.
+- `TabName`: Display name of the tab that should open.
+
+### Examples
+
+1. **Direct viewer link**
+
+   `http://<servername>/<culturename>/dashboards/<dashboardid>/<category>/<dashboardname>?student details.Tab=Academic`
+
+   ![Custom result in Inter widget linking](/static/assets/visualizing-data/visualization-widgets/images/tab-widget/tab-switch-tab.png)
+
+2. **Combined with other parameters**  
+
+   `http://<servername>/<culturename>/dashboards/<dashboardid>/<category>/<dashboardname>?student details.Tab=Contact&Branch=English`
+
+   ![Custom result in Inter widget linking](/static/assets/visualizing-data/visualization-widgets/images/tab-widget/tab-switch-combine.png)
+
+### Behavior and tips
+
+- Tab names and widget names are not case-sensitive.
+- If the specified tab is not found, the widget loads its default tab.
+- You can include multiple widget parameters in the same URL when deep-linking to different widgets on the dashboard.

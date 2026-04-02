@@ -24,12 +24,6 @@ To configure the Shopify data source, follow these steps:
 
    ![Choose data source from server](/static/assets/working-with-datasource/data-connectors/images/Shopify/ChooseDS_Server.png)
 
-## Advanced
-In the Advanced category, It will Redirect to the Bold ETL. Refer to the [Bold ETL](/managing-resources/manage-data-sources/#advanced-category).
-
-## Basic
-In the Basic Category, It will act as the connector in Bold BI and need to follow the below steps.
-
 ## Create a Shopify data source
 Once you click on the data source, the NEW DATA SOURCE configuration panel will open. Follow these steps to create a Shopify data source.
 1. Enter a name and description (optional) for the data source.

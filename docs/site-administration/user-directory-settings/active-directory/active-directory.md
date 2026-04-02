@@ -17,7 +17,7 @@ You will need the following Active Directory details to configure Bold BI with y
 
 * Username and Password - username and password of the user present in the Active Directory domain.
 
-* LDAP URL - IP or DNS name of the Windows Server where you have Active Directory Domain Services enabled. For example, `LDAP://192.168.1.1`
+* LDAP URL - IP or DNS name of the Windows Server where you have Active Directory Domain Services enabled. For example, `LDAPS://ldap.company.com`
 
 * Distinguished Name - FQDN of the Active Directory.   
 

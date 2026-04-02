@@ -28,6 +28,8 @@ You can explore resource management in detail here:
 
 [Manage Groups](/managing-resources/manage-groups/)
 
+[Manage Permissions](/managing-resources/manage-permissions/)
+
 [Manage System Administrator Access](/managing-resources/manage-system-administrator-access/)
 
 [User Profile](/managing-resources/user-profile/)

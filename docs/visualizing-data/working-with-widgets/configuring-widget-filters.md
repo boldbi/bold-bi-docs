@@ -112,6 +112,31 @@ documentation: ug
 
    Click `Cancel` in the filters dialog to ignore the changes if required.
 
+   The table below describes the available summary types for each field type
+   
+   <table>
+   <tr>
+      <th><b>Field Type</b></th>
+      <th><b>Available Summary Types</b></th>
+   </tr>
+   <tr>
+      <td>Measure</td>
+      <td>Sum, Avg, Count, Max, Min, Median, Distinct Count, Var</td>
+   </tr>
+   <tr>
+      <td>Dimension</td>
+      <td>COUNT, COUNTD, FIRST, LAST</td>
+   </tr>
+   <tr>
+      <td>Date</td>
+      <td>COUNT, COUNTD, FIRST, LAST</td>
+   </tr>
+   <tr>
+      <td>Date ("Based on Date and Time" option chosen)</td>
+      <td>Date, Date Time, Year, Quarter, Month, Quarter Year, Month Year, Week Year, Day of Week, Week of Year, Day, Hours, Minutes, Seconds, Time</td>
+   </tr>
+   </table>
+
    > **NOTE:**  When all these three filters are configured and applied, the records that satisfy the criteria of three filters will be considered by the widget.
 
 ## Configuring filter for date column

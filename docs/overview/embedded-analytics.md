@@ -11,7 +11,7 @@ documentation: ug
 
 Embedded Analytics in Bold BI enables organizations to integrate dashboards directly into their applications, SaaS platforms, or web portals. This provides users with in-context insights, enhancing decision-making without switching between multiple tools.
 
-> **Note:** Refer to the [Embedding Options](/embedding-options/#embedding-options) section for detailed explanation on the different embedding options available in the Bold BI dashboard.
+> **Note:** Refer to the [Embedding Options](/embedding-options/#embedding-dashboards-in-bold-bi) section for detailed explanation on the different embedding options available in the Bold BI dashboard.
 
 ## When to Choose Embedded Analytics?
 
@@ -39,4 +39,4 @@ Leverage our powerful [JavaScript SDK](https://help.boldbi.com/embedding-options
 
 ### Comparison
 Explore the detailed comparison to determine which embedding method aligns best with your needs:
-[Comparison between Embedding SDK vs iFrame Embedding](/embedding-options/embedding-sdk-vs-iframe-embedding/)
+[Comparison between Embedding SDK vs iFrame Embedding](/embedding-options/#feature-comparison-between-javascript-sdk-vs-iframe-embedding)

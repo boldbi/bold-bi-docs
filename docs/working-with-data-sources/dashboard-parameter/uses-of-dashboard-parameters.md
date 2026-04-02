@@ -22,7 +22,7 @@ Select the parameter from the `Column Settings` or use the following syntax to c
 
 ![Use dashboard parameter in expression column](/static/assets/working-with-datasource/dashboard-parameter/images/dashboard-parameter-in-expression.png)
 
-> **NOTE:** Those parameters, which are created using the [list mode](/working-with-data-sources/dashboard-parameter/configuring-dashboard-parameters/#list-mode), will not be used in expression.
+> **NOTE:** Those parameters, which are created using the [list mode](/working-with-data-sources/dashboard-parameter/configuring-dashboard-parameter/#list-mode), will not be used in expression.
 
 ## Stored Procedure
 

@@ -603,6 +603,10 @@ Using this option, you can enable or disable hierarchical `top N` filtering. Whe
 
 When the Hierarchical Filter option is enabled, the `Top N` will be applied for each individual column separately based on the number set for each column.
 
+#### Show Filter
+
+This feature allows you to toggle the visibility of the `Filter` icon for the 100% stacked area chart widget when the `Act as Master Widget` option is enabled.
+
 ### Container appearance
 
 This section contains the property for bing maps container's layout.
@@ -647,7 +651,7 @@ This allows you to toggle the visibility of the `border` surrounding the widget.
 
 ### Corner Radius
 
-This allows you to apply the specified `radius` to the widget corners if the **Show Border** is enabled. The value can be between 0 and 10.
+This allows you to apply the specified `radius` to the widget corners if the **Show Border** is enabled. The value can be between 0 and 100.
 
 ### Show Background Image
 
@@ -664,6 +668,12 @@ This property allows you to change the transparency from 0.0 to 1.0.
 ### Show Shadow
 
 This allows you to toggle the visibility of the `shadow` surrounding the widget.
+
+### Mobile Height Factor
+
+This option allows you to resize widgets specifically for mobile view.
+
+![Mobile Height Factor](/static/assets/visualizing-data/visualization-widgets/images/mobile-height-factor.png)
 
 ### Container actions
 

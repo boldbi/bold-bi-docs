@@ -251,12 +251,6 @@ Set a description for the Pie chart, which can be viewed by hovering over the **
 
 ![Basic Settings](/static/assets/visualizing-data/visualization-widgets/images/pie-chart/basic-settings.png)
 
-#### Show Tooltip
-
-This option allows you to toggle the visibility of tooltip in the pie chart.
-
-![General Settings](/static/assets/visualizing-data/visualization-widgets/images/pie-chart/tooltip.png)
-
 **Chart type**
 
 Switch the widget view from the current chart type to another chart type.
@@ -352,6 +346,30 @@ By enabling the `Column Count,` you can set the column count.
 
 >**Note**: If invalid columns and rows are given, the rows and columns will reset to their default value. For example, if you are given the number of rows as 6 and the number of columns as 5 but your data count is only 20, the rows and columns will reset to their default value.
 
+### Tooltip Settings
+
+The Tooltip Settings section allows you to customize the appearance and behavior of tooltips in widget visualizations.
+
+![Basic Settings](/static/assets/visualizing-data/visualization-widgets/images/pie-chart/tooltip-settings.png)
+
+#### Show Tooltip
+
+This option allows you to toggle the visibility of the tooltip in the pie chart.
+
+![General Settings](/static/assets/visualizing-data/visualization-widgets/images/pie-chart/tooltip.png)
+
+#### Customize Tooltip
+
+This option allows you to customize which columns are visible in the chart's tooltip.
+
+![General Settings](/static/assets/visualizing-data/visualization-widgets/images/pie-chart/customize-tooltip-settings.png)
+
+#### Enable RTL
+
+This option allows you to display fields and their data from right to left.
+
+![Tooltip RTL](/static/assets/visualizing-data/visualization-widgets/images/pie-chart/rtl-tooltip.png)
+
 ### Legend Settings
 
 ![Legend settings](/static/assets/visualizing-data/visualization-widgets/images/pie-chart/legend-settings.png)
@@ -404,6 +422,10 @@ This option will hide the legends in the chart area, resulting in increased char
 The chart legend dropdown option can be used to simplify viewing complex charts with multiple data sources. For example, if you have a chart displaying sales data for the different years, you can use the legend dropdown to deselect all other years and focus only on a specific year.
 
 ![Legend item as dropdown](/static/assets/visualizing-data/visualization-widgets/images/pie-chart/legend-as-dropdown.png)
+
+### Legend Alignment
+
+Legend Alignment enables you to control how the legend is positioned within its allocated space. For detailed guidance, refer to the [Legend Alignment](/visualizing-data/visualization-widgets/column-chart/#legend-alignment) section.
 
 #### Legend Shape
 
@@ -548,6 +570,10 @@ Through this option, you can enable or disable hierarchical `Top N` filtering. W
 
 When the **Enable Hierarchical Filtering** option is enabled, the `Top N` filter will be applied for each individual column separately based on the number set for each column.
 
+### Show Filter
+
+This feature allows you to toggle the visibility of the `Filter` icon for the pie chart widget when the `Act as Master Widget` option is enabled.
+
 ### Container Appearance
 
 ![Container Appearance](/static/assets/visualizing-data/visualization-widgets/images/container-appearance.png)
@@ -590,7 +616,7 @@ This allows you to toggle the visibility of the `border` surrounding the widget.
 
 ### Corner Radius
 
-This allows you to apply a specified `radius` to the widget corners if **Show Border** is enabled. The value can range from 0 to 10.
+This allows you to apply a specified `radius` to the widget corners if **Show Border** is enabled. The value can range from 0 to 100.
 
 ### Show Background Image
 
@@ -607,6 +633,12 @@ This property allows you to specify the **transparency** for the `background col
 ### Show Shadow
 
 This allows you to toggle the visibility of the `shadow` surrounding the widget.
+
+### Mobile Height Factor
+
+This option allows you to resize widgets specifically for mobile view.
+
+![Mobile Height Factor](/static/assets/visualizing-data/visualization-widgets/images/mobile-height-factor.png)
 
 ### Container actions
 

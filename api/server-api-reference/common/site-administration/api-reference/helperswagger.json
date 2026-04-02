@@ -13,5 +13,8 @@
   },
   "administration": {
     "getadministartiondescription": "Configuring and viewing the administration settings using Rest API in User Management Server. The request body should be in JSON format and include the necessary headers for the API request, such as the Content-Type, Authorization, and Accept headers. Use the following endpoints to manage administration settings in User Management Server."
+  },
+  "activity":{
+    "getactivitydescription": "Retrieving a list of activities performed in Bold BI allows you to monitor and audit user actions, system events, and operational changes. The API provides access to detailed logs, including user creations, updates, deletions, and modifications to reports. This data can help ensure compliance, track administrative changes, and improve system transparency. The request body should be in JSON format, and the necessary headers, such as Content-Type, Authorization, and Accept, must be included. Use the corresponding endpoints to fetch the activity logs and ensure accurate tracking of events in the Bold BI platform."
   }
 }

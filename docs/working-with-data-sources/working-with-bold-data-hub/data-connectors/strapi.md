@@ -55,11 +55,11 @@ plugins:
 
   ![Strapi Data Hub - BoldBI](/static/assets/working-with-etl/images/boldbi_panel.png#max-width=100%)
 
-  2. Click `Add Project` and provide the name for the new project.
+  2. Click `Add Pipeline` and provide the name for the new pipeline.
   
    ![Strapi Data Hub - BoldBI](/static/assets/working-with-etl/images/addpipeline.png#max-width=100%)
   
-  3. Select the newly created project and add the `Strapi` template.
+  3. Select the newly created pipeline and add the `Strapi` template.
 
   ![Strapi Data Hub - BoldBI](/static/assets/working-with-etl/images/strapi_addtemplate.png#max-width=100%)
   

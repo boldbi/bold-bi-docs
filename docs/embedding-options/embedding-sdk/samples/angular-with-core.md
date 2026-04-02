@@ -8,17 +8,17 @@ documentation: ug
 
 # Bold BI Dashboards embedding in Angular using Embedded SDK
 
-A GitHub link has been provided to [get](https://github.com/boldbi/angular-with-aspnet-core-sample) the sample application, which demonstrates the rendering of a dashboard with a list of dashboards available on your Bold BI server. This is followed by steps to create your own embedding application in `Angular`. 
+A GitHub link has been provided to [get](https://github.com/boldbi/angular-with-aspnet-core-sample) the sample application, which demonstrates the rendering of the dashboard available on your Bold BI server. This is followed by steps to create your own embedding application in `Angular`. 
 
 > **NOTE:** The best way to get started would be to read the [Getting Started](/getting-started/embedding-in-your-application/) section of the documentation first. The `Getting Started` guide provides you with enough information that you need to know before working on the sample. To explore the Angular embedding sample in Bold BI v3.2.16, please refer to the [Angular with ASP.NET Core](/embedding-options/embedding-sdk/samples/v3.2.16/angular/) for more details.
 
 ## Prerequisites
 
- * [.NET Core 6.0](https://dotnet.microsoft.com/en-us/download/dotnet-core)
+ * [.NET Core 8.0](https://dotnet.microsoft.com/en-us/download/dotnet-core)
  * [Node.js](https://nodejs.org/en/)
  * [Visual Studio Code](https://code.visualstudio.com/download)
 
-> **NOTE:** Node.js versions 14.16 to 20.14 are supported.
+> **NOTE:** Node.js versions 18.18 to 20.15 are supported.
 
 ## How to run the sample
 
@@ -42,7 +42,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/angular-with-
        <tbody>
        <tr>
           <td align="left">ServerUrl</td>
-          <td align="left">Dashboard Server BI URL (ex: http://localhost:5000/bi, https://demo.boldbi.com/bi)</td>
+          <td align="left">Dashboard Server BI URL (eg: http://localhost:5000/bi, https://demo.boldbi.com/bi)</td>
        </tr>
        <tr>
           <td align="left">SiteIdentifier</td>
@@ -66,7 +66,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/angular-with-
        </tr>
        <tr>
           <td align="left">ExpirationTime</td>
-          <td align="left">Token expiration time. (In the EmbedConfig.json file, the default token expiration time is 10000 seconds)</td>
+          <td align="left">Token expiration time. (In the 'EmbedConfig.json' file, the default token expiration time is 10000 seconds)</td>
        </tr>
        </tbody>
     </table>
@@ -80,60 +80,15 @@ A GitHub link has been provided to [get](https://github.com/boldbi/angular-with-
 
 8. Run your Angular with ASP.NET Core sample by using the command `dotnet run` in Visual Studio Code.
 
-9. The dashboard can be edited in design mode and a new dashboard can be created with the following changes in the `renderDashboard()` method.
-
-    <meta charset="utf-8"/>
-    <table>
-    <tbody>
-    <tr>
-    <td align="left">dashboardId</td>
-    <td align="left">Provide the dashboard ID of the dashboard you want to embed in view or edit mode. In order to create a new dashboard, please exclude this specific property.</td>
-    </tr>
-    <tr>
-    <td align="left">mode</td>
-    <td align="left">In which mode do you want to render the dashboard? It can either be 'BoldBI.Mode.View' or 'BoldBI.Mode.Design' mode. </td>
-    </tr>
-    <tr>
-    <td align="left">authorizationServer</td>
-    <td align="left">Url of the 'authorizationServerAPI' action in the application.</td>
-    </tr>
-    </tbody>
-    </table>
-
-    ```js
-        renderDashboard(dashboard: Item) {
-        this.dashboard= BoldBI.create({
-        serverUrl: this._appComponent.baseUrl,
-        dashboardId: dashboard.Id,
-        embedContainerId: "dashboard",
-        embedType: this.dashboardService.embedConfig.EmbedType,
-        environment: this.dashboardService.embedConfig.Environment,
-        width:"100%",
-        height:"100%",
-        expirationTime:100000,
-        authorizationServer: {
-            url:this._appComponent.apiHost + this._appComponent.authorizationUrl
-            }
-        });
-        this.dashboard.loadDashboard();        
-        }
-
-     ```
-
 ## How this sample works
- 1. According to the configured embedConfig values in the `app.component.ts` file, the `GetDashboards()` method will be called from the `ngOnInit()` function in the `dashboard-listing.component.ts`.  
-    ![Get Dashboards](/static/assets/javascript/sample/images/angular-get-dashboards.png)
 
- 2. Above the `GetDashboards()` method, the `GetDashboards` action in the `BoldBIEmbedController` of the ASP.NET Core server module would be called.
-    ![Get Dashboards Controller](/static/assets/javascript/sample/images/angular-home-controller.png)
+ 1. The `renderDashboard` method will be invoked from the `ngOnInit()` function based on the configured embedConfig values in the `dashboard.component.ts` file.
+    ![render dashboard](/static/assets/javascript/sample/images/angular-dash-render.png)
 
- 3. By default, the first dashboard is rendered from the list using the `renderDashboard()` method in the `dashboards-listing.component.ts` file. This render method is implemented with the Bold BI SDK component code.
-    ![Dashboard Rendering](/static/assets/javascript/sample/images/angular-dash-render.png)
+ 2. Before rendering, call the `tokenGenerationUrl`, which redirects to the `TokenGeneration` action in the `BoldBIEmbedController`. This action generates the access token using the provided `embedDetails` of the ASP.NET Core application.    
+    ![Get Embed Details](/static/assets/javascript/sample/images/angular-get-details.png)  
 
- 4. Before rendering, the `authorizationUrl` is called, which redirects to the `AuthorizationServer` action in the `BoldBIEmbedController`. This action generates the `EmbedSignature` using the embed secret provided in the `embedConfig.json` file of the ASP.NET Core application. 
-    ![Get Embed Details](/static/assets/javascript/sample/images/angular-get-details.png)
-
- 5. These details will be sent to the Bold BI server and validated there. Once the details are validated, the dashboard starts to render.
+ 3. Once the token is generated, it will be returned to the `dashboard.component.ts` file and the dashboard will start to render it. 
 
 ## Steps to create new Angular application to embed dashboard
 

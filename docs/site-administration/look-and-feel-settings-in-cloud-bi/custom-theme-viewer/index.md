@@ -108,7 +108,7 @@ For example, here the color in the banner variable has been customized,
 
 ### Data color palette
 
-Defines the color palette for the widgets. 
+Defines the color palette for the widgets. The Data color palette supports both data-based and index-based color assignment.
 
 Click the [Data color palette](https://github.com/boldbi/boldbi-themestudio/blob/main/themes/light/boldbi.data.colorpalette.defintion.css) to navigate the template file.
 ```css3
@@ -129,13 +129,27 @@ For example, here the color in the data color palette variable has been customiz
 ```css3
 
 :root {
-    --designer-data-color-palette1: #0000FF; // #0000FF - Blue Color
-    --designer-data-color-palette2: #000000; // #000000 - Black Color
+    --designer-data-color-palette1: #4E79A7; // #4E79A7 - Soft Blue 
+    --designer-data-color-palette2: #F28E2B; // #F28E2B - Orange 
+    --designer-data-color-palette3: #E15759; // #E15759 - Red 
+    --designer-data-color-palette4: #76B7B2; // #76B7B2 - Teal 
+    --designer-data-color-palette5: #59A14F; // #59A14F - Green 
+    --designer-data-color-palette6: #EDC948; // #EDC948 - Yellow 
+    --designer-data-color-palette7: #B07AA1; // #B07AA1 - Purple 
 }
 
 ```
+The color assignment behavior (data-based or index-based) can be configured using the `Use Palette Color` property under the [Common Widget Settings](https://help.boldbi.com/working-with-dashboards/common-widget-settings/) section in the dashboard property panel.
+
+When the `Use Palette Color` property is disabled, widget colors are rendered based on unique data values. When enabled, widget colors are applied based on the the order of the data series (e.g., the first series uses palette1, the second uses palette2, and so on).
+
+The following example demonstrates how colors are rendered based on data values in a dashboard.
 
 ![Data Palette](/static/assets/site-administration/dashboard-themes/images/Color_Palette.png)
+
+The following example demonstrates how colors are rendered based on the index of the data series in a dashboard.
+
+![Index Palette](/static/assets/site-administration/dashboard-themes/images/Index_Color_Palette.png)
 
 ## Dashboard widgets
 

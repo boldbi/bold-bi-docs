@@ -178,9 +178,15 @@ enable_ai_summary= "ds,ws".
 <tr>
 
 <tr>
-<td><code>hide_aidata_usage</code></td>
-<td>This value allows you to show the AI Data Usage icon in the AI Assistant window. The default value is <strong>false</strong>. To hide the data usage option, you can set the value of the <strong>hide_aidata_usage</strong> parameter to true.<br><strong>Note:</strong> To enable this, it is mandatory to use the enable_ai_assistant parameter.</td>
-<td>false</td>
+<td><code>hide_ai_icons</code></td>
+<td>Show/hide the AI icon in AI Assistant window.<br>du-Data usage<br><code>Example</code>:<br>&hide_ai_icons=du<br><br>Show/hide the AI Chat Help icon in AI Assistant window.<br>ch-Chat help<br><code>Example</code>:<br>&hide_ai_icons=ch<br><br><strong>Note:</strong> To enable this, it is mandatory to use the enable_ai_assistant parameter.</td>
+<td>string. <code>
+
+```js
+Example:
+hide_ai_icons= "du,ch"
+```
+</code></td>
 </tr>
 <tr>
    <td><code>customize_ai_name</code></td>
@@ -303,18 +309,26 @@ Please get the [Dashboard Embedding with Token Authentication](https://github.co
    1. To obtain the **embed URL**, click on the context menu of the corresponding dashboard and select the option `Get Embed code`.  
       ![EmbedCodeOption](/static/assets/iFrame-based/images/embed-option.png#max-width=75%)  
 
-   2. Enable Embed signature button and Choose the mode value as `View` to render a dashboard in View mode.
+   2. Choose the mode value as `View` and enable Embed signature button to render a dashboard in View mode.
 
 	   ![ModeOption](/static/assets/iFrame-based/images/enable-embed-signature-option.png#max-width=45%)
 
-   3. By default, some options in the dashboard banner are disabled. To enable these options, simply click the button provided in the embed dialog.
+   3. Once the `Embed Signature` button is enabled, the `Expiration Time` dropdown will appear, allowing you to select an expiration time ranging from 1 to 7 days. By default, it will be set to 7 days.
+   	
+      ![ExpirationTimeOption](/static/assets/iFrame-based/images/expiration-time-option.png#max-width=45%)
+
+   4. By default, some options in the dashboard banner are disabled. To enable these options, simply click the button provided in the embed dialog.
 	
       ![EnableOption](/static/assets/iFrame-based/images/enable-option-embed-signature.png#max-width=45%)  
 
-   4. Please copy the embed URL by clicking the copy icon in the Embed Code dialog. 
+   5. Please copy the iframe URL by clicking the copy icon in the Embed Code dialog. 
 	   ![CopyEmbedCode](/static/assets/iFrame-based/images/copy-embedcode-embedsignature.png#max-width=45%)
 
-   5. Please embed the copied URL into other web applications.
+   6. Please embed the copied URL into other web applications.
+
+   7. You can also copy the embed URL alone in the Embed Code dialog by clicking the `Copy Embed URL` option.
+
+   	   ![CopyEmbedUrl](/static/assets/iFrame-based/images/copy-embedurl-embedsignature.png#max-width=45%)
 
    > **NOTE:** Applying filters support is not provided UI level. For this Please sample application. Please refer this [link](/embedding-options/iframe-embedding/embedding-with-token-authentication/#how-to-pass-the-dashboard-parameter-and-url-parameter-filters-in-embed-url) to know more.
 ### Create the embed URL to Edit Dashboard 
@@ -395,17 +409,26 @@ The following embed URL is the formation of the <strong>dashboard edit URL</stro
    1. To obtain the **embed URL**, click on the context menu of the corresponding dashboard and select the option `Get Embed code`.  
 	   ![EmbedCodeOption](/static/assets/iFrame-based/images/embed-option.png#max-width=75%)  
 
-   2. Enable Embed signature button and Choose the mode value as `Edit` to render a dashboard in Edit mode.
+   2. Choose the mode value as `Edit` and enable Embed signature button to render a dashboard in Edit mode.
+
 	   ![ModeOption](/static/assets/iFrame-based/images/select-mode-design-embed-signature.png#max-width=45%)
 
-   3. By default, some options in the dashboard banner are disabled. To enable these options, simply click the button provided in the embed dialog.
-	
-      ![EnableOption](/static/assets/iFrame-based/images/enable-option-design-embed-signature.png#max-width=45%)  
+   3. Once the `Embed Signature` button is enabled, the `Expiration Time` dropdown will appear, allowing you to select an expiration time ranging from 1 to 7 days. By default, it will be set to 7 days.
+   	
+      ![ExpirationTimeOption](/static/assets/iFrame-based/images/enable-design-embedsignature-option.png#max-width=45%)
 
-   4. Please copy the embed URL by clicking the copy icon in the Embed Code dialog. 
+   4. By default, some options in the dashboard banner are disabled. To enable these options, simply click the button provided in the embed dialog.
+	
+      ![EnableOption](/static/assets/iFrame-based/images/enable-option-design-embedsignature.png#max-width=45%)  
+
+   5. Please copy the embed URL by clicking the copy icon in the Embed Code dialog. 
 	   ![CopyEmbedCode](/static/assets/iFrame-based/images/copy-embedcode-design-embedsignature.png#max-width=45%)
 
-   5. Please embed the copied URL into other web applications.
+   6. Please embed the copied URL into other web applications.
+
+   7. You can also copy the embed URL alone in the Embed Code dialog by clicking the `Copy Embed URL` option.
+
+      ![CopyEmbedUrl](/static/assets/iFrame-based/images/copy-embedurl-designer-embedsignature.png#max-width=45%)
 
 ### Create the embed URL to Create Dashboard 
 
@@ -506,7 +529,7 @@ Pass your filters to the `embed_datasource_filter=&&dashboardparameter1=value1&u
 </table>
 
 
-* In the embed URL, the dashboard parameter filter must be started with a double ampersand `&&`. For more details, Refer to the [configuring dashboard parameters](/working-with-data-sources/dashboard-parameter/configuring-dashboard-parameters/).
+* In the embed URL, the dashboard parameter filter must be started with a double ampersand `&&`. For more details, Refer to the [configuring dashboard parameters](/working-with-data-sources/dashboard-parameter/configuring-dashboard-parameter/).
 
 * In the embed URL, the URL filter parameter must be started with a single ampersand `&`. For more details, please refer to the [URL Filter](/working-with-dashboards/preview-dashboard/urlparameters/).
 
@@ -586,10 +609,18 @@ Please find the details of the parameter in the URL as follows.
    1. To obtain the **embed URL**, click on the context menu of the corresponding datasource and select the option `Get Embed code`.
 	   ![EmbedCodeOption](/static/assets/iFrame-based/images/EmbedCode-DataSource.png#max-width=75%)  
 
-   2. Enable Embed signature button and copy the embed URL by clicking the copy icon in the Embed Code dialog.
+   2. Once the `Embed Signature` button is enabled, the `Expiration Time` dropdown will appear, allowing you to select an expiration time ranging from 1 to 7 days. By default, it will be set to 7 days.
+   	
+      ![ExpirationTimeOption](/static/assets/iFrame-based/images/enable-datasource-embedsignature-option.png#max-width=45%)
+
+   3. Copy the embed URL by clicking the copy icon in the Embed Code dialog.
 	   ![ModeOption](/static/assets/iFrame-based/images/copy-embedcode-datasource-embedsignature.png#max-width=45%)
 
-   3. Please embed the copied URL into other web applications.
+   4. Please embed the copied URL into other web applications.
+
+   5. You can also copy the embed URL alone in the Embed Code dialog by clicking the `Copy Embed URL` option.
+
+      ![CopyEmbedUrl](/static/assets/iFrame-based/images/copy-embedurl-datasource-embedsignature.png#max-width=45%)
 
 ## Widget Embedding with Token Authentication
 
@@ -601,7 +632,11 @@ Bold BI supports embedding widgets with iFrame using token-based authentication.
    ![InspectElement](/static/assets/iFrame-based/images/Widget-GetEmbedCode.png)
 
 2. Copy the iframe code from the embed code pop-up page. 
-   ![InspectElement](/static/assets/iFrame-based/images/WidgetId.png) 
+   ![InspectElement](/static/assets/iFrame-based/images/copy-iframeurl-widget-embedsignature.png) 
+
+3. You can also copy the embed URL alone in the Embed Code dialog by clicking the `Copy Embed URL` option.
+
+   ![CopyEmbedUrl](/static/assets/iFrame-based/images/copy-embedurl-widget-embedsignature.png#max-width=45%)
 
 ### Create the embed URL to View Dashboard
 

@@ -26,7 +26,7 @@ documentation: ug
 
 ## Configuring the Bold BI application
 
-1. Register and download the Bold BI Linux package from this [link](/deploying-bold-bi/overview/#registration-and-download).
+1. Register and download the Bold BI Linux package from this [link](/deploying-bold-bi/overview/#how-to-register-start-a-free-trial-and-download-bold-bi).
 
 2. Update the highlighted URLs in the `product.json` file, located in `{extracted location}/boldbi/app_data/configuration/`. 
 

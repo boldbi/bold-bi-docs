@@ -16,117 +16,78 @@ A GitHub link has been provided to [get](https://github.com/boldbi/vue-with-go-s
 
  1. Please [get](https://github.com/boldbi/vue-with-go-sample) the VueJS with Go Application.       
 
- 2. Here, the VueJS application acts as a client, and the Go application acts as a server since you need to set the following properties in the `App.vue` file in the VueJS app as follows.
-    ![Embed Properties in VueJS](/static/assets/javascript/sample/images/vuejs-go-props.png)  
+ 2. Please ensure that you have enabled embed authentication on the `embed settings` page. If it is not enabled, please follow the provided [instructions](/site-administration/embed-settings/#get-embed-secret-code) or refer to the image below for guidance on how to enable it.
 
-    <meta charset="utf-8"/>
-    <table>
-    <tbody>
-      <tr>
-          <td align="left">siteIdentifier</td>
-          <td align="left">For Bold BI Enterprise edition, it should be like <code>site/site1</code>. For Bold BI Cloud, it should be an empty string.</td>
-      </tr>
-      <tr>
-          <td align="left">rootUrl</td>
-          <td align="left">Dashboard Server BI URL (ex: http://localhost:5000/bi, http://demo.boldbi.com/bi)</td>
-      </tr>
-      <tr>
-          <td align="left">authorizationUrl</td>
-          <td align="left">Url of the GetDetails action in the Go application(http://localhost:8086/getDetails). Learn more about authorize server in this link: <a href='/security-configuration/authorize-server/'>Authorized Server Information.</a></td>
-      </tr>
-      <tr>
-          <td align="left">environment</td>
-          <td align="left">Your Bold BI application environment. (If Cloud, you should use <code>cloud</code>, if  Enterprise, you should use <code>on-premise</code>)</td>
-      </tr>
-      <tr>
-          <td align="left">DashboardId</td>
-          <td align="left">Set the item id of the dashboard to embed from the BI server.</td>
-      </tr>
-    </tbody>
-    </table>
+    ![Embed Settings](/static/assets/javascript/sample/images/embed-settings.png)
 
- 3. Please obtain the item ID of the dashboard from the BI server. Kindly refer to this [link](/working-with-dashboards/share-dashboards/get-dashboard-link/#get-link) and the accompanying screenshot. 
-    ![Get Dashboard Id](/static/assets/javascript/sample/images/get-dashboard-id.png#max-width=55%)
+ 3. Please use this [link](/site-administration/embed-settings/#get-embed-configuration-file) as a reference to download the `embedConfig.json` file. Additionally, you can refer to the following image for visual guidance.
+     
+    ![EmbedSettings image](/static/assets/javascript/sample/images/embed-settings-download.png) 
+    ![EmbedConfig Properties](/static/assets/javascript/sample/images/prop-core.png)
 
- 4. In the `main.go` file of the Go application, you need to set the UserEmail and EmbedSecret properties. 
-    ![Embed Properties in GO](/static/assets/javascript/sample/images/react-go-main.png)
+  4. Please copy the downloaded `embedConfig.json` file and paste it into the designated [location](https://github.com/boldbi/vue-with-nodejs-sample/tree/master/Nodejs) within the application. Please ensure that you have placed it in the application as shown in the following image.
 
-    <meta charset="utf-8"/>
-    <table>
+     ![EmbedConfig Location Image](/static/assets/javascript/sample/images/vue-node-embedconfig.png)
+
+      <meta charset="utf-8"/>
+      <table>
       <tbody>
-        <tr>
-            <td align="left">UserEmail</td>
-            <td align="left">UserEmail of the Admin in your Bold BI, which would be used to get the dashboard details from the BI server</td>
-        </tr>
-        <tr>
-            <td align="left">EmbedSecret</td>
-            <td align="left">You could get your EmbedSecret key from the Embed tab by enabling the Enable embed authentication in the  <a href='/site-administration/embed-settings/'> Administration page</a></td>
-        </tr>
+      <tr>
+      <td align="left">ServerUrl</td> 
+      <td align="left">Dashboard Server BI URL (ex: http://localhost:5000/bi, http://demo.boldbi.com/bi)</td>
+      </tr>
+      <tr>
+      <td align="left">SiteIdentifier</td>
+      <td align="left">For Bold BI Enterprise edition, it should be like <code>site/site1</code>. For Bold BI Cloud, it should be empty string.</td>
+      </tr>
+      <tr>
+      <td align="left">Environment</td>
+      <td align="left">Your Bold BI application environment. (If it is cloud analytics server, use <code>BoldBI.Environment.Cloud</code>; if it is your own server, use <code>BoldBI.Environment.Enterprise</code>).</td>
+      </tr>
+      <tr>
+      <td align="left">DashboardId</td>
+      <td align="left">Item id of the dashboard to be embedded in your application.</td>
+      </tr>
+      <tr>
+      <td align="left">EmbedSecret</td>
+      <td align="left">Get your EmbedSecret key from the Embed tab by enabling the <code>Enable embed authentication</code> in the <a href='/site-administration/embed-settings/'>Administration page</a></td>
+      </tr>
+      <tr>
+      <td align="left">UserEmail</td>
+      <td align="left">UserEmail of the Admin in your Bold BI, which would be used to get the dashboard</td>
+      </tr>
+      <tr>
+      <td align="left">ExpirationTime</td>
+      <td align="left">Token expiration time. (In the EmbedConfig.json file, the default token expiration time is 10000 seconds)</td>
+      </tr>
       </tbody>
-    </table>
+      </table>
     
- 5. Then, run your Go application as well as the VueJS App.
+ 5.  Open the `Go` sample in **Visual Studio Code**.
 
- 6. The dashboard can be rendered in design mode or created with the following changes in the `App.Vue` method.
+ 6. To run the back-end `Go` sample, use the following command `go run tokengeneration.go`.
 
-    ```js
-    let dashboard = BoldBI.create({
-      serverUrl: rootUrl + siteIdentifier,
-      dashboardId: dashboardId,//Provide item id to render it in design mode,to create dashboard remove this property
-      embedContainerId: "dashboard",
-      embedType: BoldBI.EmbedType.Component,
-      environment: BoldBI.Environment.Enterprise, // If Cloud, you should use BoldBI.Environment.Cloud
-      mode: BoldBI.Mode.Design,
-      width: "100%",
-      height: window.innerHeight + "px",
-      expirationTime: 100000,
-      authorizationServer: {
-        url: authorizationUrl
-      }
-    });
-    dashboard.loadDesigner(); 
-    ```
+ 7. Open the `Vue` sample in a new window of **Visual Studio Code**.
 
-    <meta charset="utf-8"/>
-    <table>
-    <tbody>
-    <tr>
-    <td align="left">serverUrl</td>
-    <td align="left">Dashboard Server BI URL (ex: http://localhost:5000/bi/site/site1, http://dashboard.syncfusion.com/bi/site/site1)</td>
-    </tr>
-    <tr>
-    <td align="left">dashboardId</td>
-    <td align="left">Provide the dashboard id of the dashboard you want to embed in view or edit mode. Ignore this property to create new dashboard.</td>
-    </tr>
-    <tr>
-    <td align="left">embedContainerId</td>
-    <td align="left">Container Id in which dashboard renders.It should not contain hypen.</td>
-    </tr>
-    <tr>
-    <td align="left">mode</td>
-    <td align="left">In which mode you want to render dashboard. It can either be 'View' or 'Design' mode. </td>
-    </tr>
-    <tr>
-    <td align="left">expirationTime</td>
-    <td align="left">Set the duration for the token to be alive.</td>
-    </tr>
-    <tr>
-    <td align="left">authorizationServer</td>
-    <td align="left">Url of the 'GetEmbedDetails' action in the go application.</td>
-    </tr>
-    </tbody>
-    </table>
+ 8. To install all dependent packages, use the following command: `npm install`.
+
+ 9. Please run your `Vue` sample using the following command: `npm run serve`.
 
 ## How this sample works
 
- 1. Based on the `dashboard` provided in the `App.vue`, you will authorize the server by calling the GetEmbedDetails function using the `AuthorizeURL (http://localhost:8086/getDetails)` with the provided `EmbedProperties` values. 
-    ![Get Embed Details](/static/assets/javascript/sample/images/react-go-authorize.png)
+1. When the `mounted` function is triggered in a front-end React application, it invokes the `/getdetails` endpoint. This endpoint fetches data from the `embedConfig.json` file. If the JSON file cannot be found, an error message will be shown.
 
- 2. In the above authorization, the `SignatureURL` has been generated using the provided `EmbedSecret key` and embed details. This SignatureURL can be validated in the Bold BI Server API, which will return a token. The dashboard will then start to render based on this token. 
-    ![Get Signature Url](/static/assets/javascript/sample/images/react-go-signature.png)
+    ![GetServerDetails](/static/assets/javascript/sample/images/vue-go-getdetails.png)
 
- 3. In the `App.vue`, change the dashboard ID of the respective dashboard based on your requirement. 
-    ![Set Dashboard Id](/static/assets/javascript/sample/images/vuejs-go-dashboard.png)  
+2. The dashboard will be rendered using the data obtained from the `/getdetails` endpoint.
+ 
+   ![Render Dashboard](/static/assets/javascript/sample/images/vuejs-core-getseverdetails.png)
+
+3. Before rendering, the `tokenGenerationUrl` is called, which redirects to the `tokenGeneration` action. This action generates the response of dashboard details with token.
+
+    ![Authorization Server](/static/assets/javascript/sample/images/react-go-authorizeserver.png)  
+  
+4. Once the token is generated, it will be returned to the `App.vue` file and the dashboard will start to render it.
 
  ## Steps to create new VueJs with Go application to embed dashboard
 
@@ -143,7 +104,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/vue-with-go-s
      mounted: function() {
     var scripts = [
       "https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js",
-      "https://cdn.boldbi.com/embedded-sdk/v7.11.24/boldbi-embed.js"
+      "https://cdn.boldbi.com/embedded-sdk/v15.2.6/boldbi-embed.js"
     ];
     scripts.forEach(script => {
       let tag = document.createElement("script");

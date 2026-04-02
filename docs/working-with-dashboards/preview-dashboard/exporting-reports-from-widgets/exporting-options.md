@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Exporting Options for Dashboard Widget | Bold BI Embedded
-description: Learn how to enable settings to export a dashboard widget at runtime to PDF, Image, CSV or Excel files in Bold BI Embedded.
+description: Learn how to enable settings to export a dashboard widget at runtime to PDF, Image, PowerPoint, CSV or Excel files in Bold BI Embedded.
 canonical: "/working-with-dashboards/preview-dashboard/exporting-reports-from-widgets/exporting-options/"
 platform: bold-bi
 documentation: ug
@@ -82,16 +82,50 @@ documentation: ug
    Click `Reset` to restore the default values in the pop-up.
    
    ![PDF reset](/static/assets/working-with-dashboards/preview-dashboards/widget-settings/images/widgetPDFReset.png)
+
+## Exporting widget to PowerPoint
+
+   You can export the widget view as a PowerPoint presentation by clicking on `Export to PowerPoint` in the drop-down menu at the right corner of the title section.
+
+   ![Widget PowerPoint](/static/assets/working-with-dashboards/preview-dashboards/widget-settings/images/widgetPowerPoint.png)
+
+   When you click on `Export to PowerPoint`, a pop-up will appear. Set the `File Name` field with your preferred value to replace the default one.
+
+   ![Widget PowerPoint Popup](/static/assets/working-with-dashboards/preview-dashboards/widget-settings/images/widgetPowerPointPopup.png)   
+
+   Click `Export` to display the current view of the widget in the PowerPoint format with the applied settings.
+
+   ![Widget PowerPoint Export](/static/assets/working-with-dashboards/preview-dashboards/widget-settings/images/widgetPowerPointExport.png)   
    
+   After clicking `Export`, a notification pop-up will appear as shown below.
+
+   ![Widget PowerPoint Export Request](/static/assets/working-with-dashboards/preview-dashboards/widget-settings/images/widgetPowerPointExportRequest.png)     
+
+   Once the widget has been exported, a success notification pop-up will appear, including a link to manually download the files.
+ 
+   ![Widget PowerPoint Success](/static/assets/working-with-dashboards/preview-dashboards/widget-settings/images/widgetPowerPointExportSuccess.png)
+
+   Click `Reset` to restore the default values in the pop-up.
+
+   ![Widget PowerPoint Reset](/static/assets/working-with-dashboards/preview-dashboards/widget-settings/images/widgetPowerPointExportReset.png)     
+
 ## Exporting widget to CSV
 
    You can obtain the aggregated data showcased in the widget by exporting it to CSV format. This can be achieved by clicking `Export to CSV` in the drop-down menu at the right corner of the title section.
     
    ![Export CSV](/static/assets/working-with-dashboards/preview-dashboards/widget-settings/images/exportwidgettocsv.png)
 
-   Set the `File Name` and click `Export` to display the data in the widget in CSV file format.
+   Set the `File Name` field with a preferred value to replace the default one.
 
    ![CSV Export](/static/assets/working-with-dashboards/preview-dashboards/widget-settings/images/csvfilename.png)
+
+   By enabling `Disable Double Quotes`, a dropdown will appear displaying the column names that bound in the widget. Based on the selected columns, double quotes will be excluded from those fields in the exported file.
+
+   ![CSV Export](/static/assets/working-with-dashboards/preview-dashboards/widget-settings/images/csvdisabledoublequotes.png)
+
+   Click `Export` to display the data in the widget in the chosen CSV format.
+   
+   ![CSV Export](/static/assets/working-with-dashboards/preview-dashboards/widget-settings/images/csvexport.png)
 
    After clicking `Export`, a request notification pop-up will be shown.
    

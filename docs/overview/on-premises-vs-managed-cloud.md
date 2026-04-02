@@ -50,11 +50,11 @@ Explore the distinct features that set our on-premises and managed cloud edition
             <td>Yes</td>
             <td>No</td>
         </tr>
-        <tr>
+        <!-- <tr>
             <td><a href="/working-with-dashboards/dashboards-templates/">Dashboard Templates</a></td>
             <td>No</td>
             <td>Yes</td>
-        </tr>
+       </tr> -->
         <tr>
             <td><a href="/site-administration/data-process-settings/data-cache-settings/">Data Cache Configuration</a></td>
             <td>Yes</td>

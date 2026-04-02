@@ -23,11 +23,17 @@ This section explores how Artificial Intelligence and Machine Learning are integ
 
 [AI Data Processing](/artificial-intelligence-and-machine-learning/ai-data-processing/)
 
+[Language Support](/artificial-intelligence-and-machine-learning/language-support/)
+
 [Best Practices and Limitations](/artificial-intelligence-and-machine-learning/best-practices-and-limitations/)
 
 [Generative AI](/artificial-intelligence-and-machine-learning/generative-ai/)
 
 [Q&A Widget](/artificial-intelligence-and-machine-learning/qna-widget/)
+
+[Synonyms](/artificial-intelligence-and-machine-learning/synonyms/)
+
+[Summary Scheduling](/artificial-intelligence-and-machine-learning/schedule-summary/)
 
 [Forecasting](/artificial-intelligence-and-machine-learning/time-series-forecasting/)
 

@@ -18,4 +18,6 @@ Bold BI has single sign-on (SSO) support for the following login providers:
 
 * [Configure SSO with OpenID Connect](/security-configuration/single-sign-on/openid-support/)
 
+* [Configure SSO with JWT](/security-configuration/single-sign-on/json-web-token/)
+
 > **NOTE:** This feature is available in Bold BI Embedded Analytics but not in Cloud Analytics Server.

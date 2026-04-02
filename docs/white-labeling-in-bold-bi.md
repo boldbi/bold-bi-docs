@@ -51,6 +51,11 @@ Favicon for the Bold BI site can be customized (ideal size: `40 x 40`). It will 
 The email logo can be customized (ideal size: `200 x 40`). It will be used in the emails sent from your Bold BI site, as shown in the following image.
 ![Email Logo](/static/assets/white-label/images/email-logo.png)
 
+**AI Logo**
+
+The AI logo can be customized (ideal size: `40 x 40`). It will be used on the dashboard rendering page as logo for AI service, as shown in the following image.
+![AI Logo](/static/assets/white-label/images/ai-logo.png)
+
 Please refer to this [link](/site-administration/site-settings/#branding) to learn more about customizing the logo in Bold BI.
 
 ## Powered by Information Customization

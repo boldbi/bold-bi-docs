@@ -123,6 +123,12 @@ This allows you to set a brief explanation about this text filter widget.
 
 ![General Settings](/static/assets/visualizing-data/visualization-widgets/images/text-filter/Description.png)
 
+#### Place Holder
+
+The `Placeholder` property of a text filter provides context for the user's input. By default, the placeholder text in the text filter is set to `Search`.
+
+![Place Holder](/static/assets/visualizing-data/visualization-widgets/images/text-filter/textfilter-placeholder.png)
+
 #### Filter
 
 ![Filter](/static/assets/visualizing-data/visualization-widgets/images/text-filter/filter.png)
@@ -140,6 +146,10 @@ This allows you to define this text filter widget to ignore responding to the fi
 Using this option, you can enable or disable hierarchical top N filtering. When applying the Top N filter with multiple dimension columns, the data returned can be customized based on whether the filtering needs to be done as flat or based on the hierarchy of dimension columns added.
 
 When `Enable Hierarchical Filtering` is enabled, the Top N will be applied for each individual column separately based on the number set for each column.
+
+#### Show Filter
+
+This feature allows you to toggle the visibility of the `Filter` icon for the text filter widget when the `Act as Master Widget` option is enabled.
 
 #### Container Appearance
 
@@ -175,7 +185,7 @@ This allows you to toggle the visibility of the `border` surrounding the widget.
 
 #### Corner Radius
 
-This allows you to apply the specified `radius` to the widget corners if the **Show Border** is enabled. The value can be between 0 and 10.
+This allows you to apply the specified `radius` to the widget corners if the **Show Border** is enabled. The value can be between 0 and 100.
 
 #### Background Color
 
@@ -188,6 +198,12 @@ This property allows you to specify the **transparency** for the `background col
 #### Show Shadow
 
 This property allows you to toggle the visibility of the `shadow` for the text filter widget.
+
+#### Mobile Height Factor
+
+This option allows you to resize widgets specifically for mobile view.
+
+![Mobile Height Factor](/static/assets/visualizing-data/visualization-widgets/images/mobile-height-factor.png)
 
 #### Container actions
 

@@ -105,7 +105,7 @@ plugins:
   
    ![Facebook ADs](/static/assets/working-with-etl/images/addpipeline.png#max-width=100%)
   
-  3. Select the newly created project and add the `Facebook Ads` template.
+  3. Select the newly created pipeline and add the `Facebook Ads` template.
 
   ![Facebook ADs](/static/assets/working-with-etl/images/fbads_Template.png#max-width=100%)
   

@@ -32,6 +32,49 @@ Enter the Web URL in the `URL` text box. If you click on the column names listed
 
 For the `Grid widget`, you can get a `URL` based on `Row` and `Column`.
 
+There are two options available:
+1. Dashboard
+2. URL
+
+## Dashboard
+
+In the dashboard section, users can select the dashboard they wish to navigate to using the link. The selected dashboard will be rendered using the same instance as the source dashboard. Users can also pass filter details from the source dashboard to the target dashboard.
+
+![Dashboard Initial](/static/assets/visualizing-data/working-with-widgets/images/Initial_stage.png)
+
+### Row and Column
+
+In the properties of the current widget, where you will find the "Select Dashboard" option under the "Link" category. Clicking on "Select Dashboard" will open a dialog box displaying relevant categories and dashboards based on user permissions.
+
+![Select dashboard initial](/static/assets/visualizing-data/working-with-widgets/images/SelectDashboard_main.png)
+
+Users can either double-click a dashboard file to select it or choose the dashboard and click the "Apply" button at the bottom of the dialog. 
+
+![Dashboard Select Main](/static/assets/visualizing-data/working-with-widgets/images/SelectDashboard.png)
+
+### Query Parameter
+
+When you click on a column name from the list in the `Append Column` section, it will be added to the `Query Parameter` entered in the `Query Parameter` text box. During navigation, the provided parameter will be passed to the target dashboard.
+
+![Dashboard Select Main](/static/assets/visualizing-data/working-with-widgets/images/Queryparameter.png)
+
+**Pass Filter Details**
+
+While navigating between dashboards, you can pass filter information from one dashboard to the target dashboard. For example, consider a combo box filter widget filtering the country values to Brazil. After navigation, the same filter will be applied to the target dashboard.
+
+![Source dashboard](/static/assets/visualizing-data/working-with-widgets/images/filter-image-one.png)
+
+![Target dashboard](/static/assets/visualizing-data/working-with-widgets/images/filter-image-two.png)
+
+If no filter widgets are present in the target dashboard to receive filters from the source dashboard, the passed filter will act as a URL filter to filter the target dashboard.
+
+![Filtering URL](/static/assets/visualizing-data/working-with-widgets/images/filter-image-url.png)
+
+> **NOTE:**
+> 1. To pass filters between dashboards, users must configure the same data source for all dashboards.
+> 2. If a URL filter is applied to the navigating dashboard, only the filter is applied; the URL will not change.
+
+## URL
 ### Row
 
 Enter the Web URL in the `URL` text box. If you click on the column names listed in the `Append Column` name list, it will be appended to the URL entered in the URL text box.
@@ -65,7 +108,7 @@ Now, the field will be added with the URL.
 ![Field added](/static/assets/visualizing-data/working-with-widgets/images/Linking10.PNG)
 
 ## Dashboard Parameter support in URL Linking
-URL Linking allows you to use both the [Dashboard Parameter](/working-with-data-sources/dashboard-parameter/configuring-dashboard-parameters/) and [Default Parameter](/working-with-data-sources/dashboard-parameter/change-the-dashboard-parameter-value-in-url/#default-parameters). You can create a dynamic link based on the current domain, dashboard, and category by referring to the info icon placed at the right side of the URL text box.
+URL Linking allows you to use both the [Dashboard Parameter](/working-with-data-sources/dashboard-parameter/configuring-dashboard-parameter/) and [Default Parameter](/working-with-data-sources/dashboard-parameter/change-the-dashboard-parameter-value-in-url/#default-parameters). You can create a dynamic link based on the current domain, dashboard, and category by referring to the info icon placed at the right side of the URL text box.
 
 **Syntax** : `@{{:CURRENT.SITEURL}}/dashboards?dashboardName={dashboard_name}&categoryName={category_name}`
 
@@ -130,6 +173,28 @@ When you open the linked document with the above dimensions, it will appear as s
 
 ![Advanced window](/static/assets/visualizing-data/working-with-widgets/images/LinkingAdvancedWindow.png)
 
+## Escape Special Characters
+The `Escape Special Characters` property is used to handle special characters in URL query parameters within widgets. It is found under the `Link` category in the `Properties` tab of a widget.
+
+When enabled the property, any special characters in the URL query parameters are automatically replaced with a tilde (~) symbol. This ensures that the data is filtered correctly, avoiding errors or unexpected behavior caused by special characters.
+
+![Special Characters](/static/assets/visualizing-data/working-with-widgets/images/escape-special-character.png)
+
+After enabling the `Escape Special Characters` checkbox, follow the steps below:
+1. Navigate to Preview mode.
+2. Click the Link option from the widget.
+3. When the linked dashboard opens, it displays data based on the special character value filtered through the URL link.
+
+![Special Characters](/static/assets/visualizing-data/working-with-widgets/images/special-character-navigation.png)
+
+![Special Characters](/static/assets/visualizing-data/working-with-widgets/images/special-character-url.png)
+
+> **Note**: Only the following special characters are supported for escaping:  
+> `&`  
+> `,`   
+> `#`  
+> `|`
+
 ## Encryption query Parameter
 
 This property, `Encrypt Parameters`, allows you to encrypt the filter parameter that will be used in the URL text area under the `Link` category in the `Properties` tab of the widget.
@@ -143,3 +208,46 @@ Preview the dashboard, then click the `Link` option from the widget. After openi
 ![Advanced window](/static/assets/visualizing-data/working-with-widgets/images/linking-encryption.png#max-width=100%)
 
 ![Advanced window](/static/assets/visualizing-data/working-with-widgets/images/encryption-result.png#max-width=100%)
+
+## Include Master Widget Filters
+
+This option allows the selected filter values from the chosen master widget to be automatically passed to the navigated dashboard via the `URL parameters`, without the need to manually append parameters.
+
+![Include Master Widget Filters](/static/assets/visualizing-data/working-with-widgets/images/IncludeMasterWidgetsFilter.png)
+
+You can select the master widgets from the `Choose Master Widgets` dropdown. It will display the configured master widgets in the current dashboard. By default, all widgets are selected.
+
+![Choose Master Widgets](/static/assets/visualizing-data/working-with-widgets/images/Choosemasterwidgets.png)
+
+For example, in the dashboard shown below, the Year-configured filter widget is used as the chosen master widget for the slave widget, with 2024 selected as the value. Upon navigation, the selected value is automatically passed to the destination dashboard via a `URL parameter`.
+
+![Example Passing Filter](/static/assets/visualizing-data/working-with-widgets/images/examplefilterurl.png)
+
+### Preserving URL Filters Across Dashboard Navigation
+
+By using this option, you can pass `URL parameter` filter values to the navigated dashboard. As a result, users can transfer the parent dashboard's filter information to all subsequently navigated dashboards via `URL parameters`.
+
+For example, in the dashboard shown below, a country filter has been applied using the filter widget, and an additional filter has been applied via `URL parameters`. After navigation, the second dashboard will be rendered with both filters applied, as shown in the second image. If you navigate to a third dashboard, these filters will continue to be passed along.
+
+![First dashboard Filter](/static/assets/visualizing-data/working-with-widgets/images/firstdashboardlink_URL.png)
+
+![Second dashboard Passing Filter](/static/assets/visualizing-data/working-with-widgets/images/Seconddashboard_URL.png)
+
+> **NOTE:** If the selected master widgets are not filtered, then no values should be passed to the `URL`.
+
+## URL Query Parameter Mapping
+
+This allows you to replace the long query parameters with mapped key, which is used in the URL text area under the `Link` category in the `Properties` tab of the widget.
+
+To enable this property, select the `URL Query Parameter Mapping` checkbox as shown in the following image.
+
+![URL Mapping Link property](/static/assets/visualizing-data/working-with-widgets/images/mappingURLProperty.png)
+
+Open the dashboard and click the `Link` option on the widget. The linked dashboard will then open and appear as shown in the image below.
+
+![URL Mapping Link option](/static/assets/visualizing-data/working-with-widgets/images/mapPreviewLink.png)
+
+![URL Mapping Link](/static/assets/visualizing-data/working-with-widgets/images/mappingURL.png)
+
+
+>**NOTE:** This is applicable only when the dashboard is in view mode.

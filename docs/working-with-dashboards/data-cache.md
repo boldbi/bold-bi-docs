@@ -84,6 +84,14 @@ Data is cached in an external server named `Redis`. Redis is an open source (BSD
 After installation, you should start the Redis server as shown in the following image:
 ![DataCache Redis server](/static/assets/working-with-dashboards/images/DataCache-Redis-server.png#max-width=70%)
 
+#### How to Choose a Specific Database on Redis
+`Redis` allows you to connect to a specific database by using a connection string. You can specify various parameters, including the database index, through this connection string. To choose a specific database when connecting, you can add the `defaultDatabase` parameter in the connection string.
+
+>**Connection String Format:** `<Servername>:<Port>,password=<Password>,ssl=<True or False>,abortConnect=False,defaultDatabase=<Specific_db(Optional)>`
+
+**Default Database** </br>
+The defaultDatabase parameter is optional. If you don't include it in your connection string, `Redis` will default to `database 0` for caching. By default, `Redis` provides 16 databases, indexed from 0 to 15. You can choose a different database by specifying the `defaultDatabase` parameter.
+
 ## Mode selection
 The mode should be either `in-memory` or `Redis`; the widget data will be cached based on the selected mode.
 

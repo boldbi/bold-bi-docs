@@ -278,12 +278,6 @@ This allows you to set a brief explanation about the map widget.
 
 ![Basic Settings](/static/assets/visualizing-data/visualization-widgets/images/map/basicsettings.png)
 
-#### Show Tooltip
-
-This option allows you to toggle the visibility of the tooltip in a map.
-
-![General settings](/static/assets/visualizing-data/visualization-widgets/images/map/tooltip.png)
-
 #### Map type
 
 You can choose the map type as choropleth or bubble map.
@@ -434,6 +428,30 @@ If you want to view the customized India shape while drilling India on the world
 4. Save it and refresh the dashboard. Configure the drill down with any data. Click the India shape on the world map, and the customized shape will be rendered.
 
     ![worldmap file](/static/assets/visualizing-data/visualization-widgets/images/map/worldmap.png)
+
+### Tooltip Settings
+
+The Tooltip Settings section allows you to customize the appearance and behavior of tooltips in widget visualizations.
+
+![Basic Settings](/static/assets/visualizing-data/visualization-widgets/images/map/tooltip-settings.png)
+
+#### Show Tooltip
+
+This option allows you to toggle the visibility of the tooltip in a map.
+
+![General Settings](/static/assets/visualizing-data/visualization-widgets/images/map/tooltip.png)
+
+#### Customize Tooltip
+
+This option allows you to customize which columns are visible in the map's tooltip.
+
+![General Settings](/static/assets/visualizing-data/visualization-widgets/images/map/customize-tooltip-settings.png)
+
+#### Enable RTL
+
+This option allows you to display fields and their data from right to left.
+
+![Tooltip RTL](/static/assets/visualizing-data/visualization-widgets/images/map/rtl-tooltip.png)
 
 ### Legend Settings
 
@@ -703,6 +721,10 @@ Through this option, you can enable or disable hierarchical the `Top N` filterin
 
 When the Hierarchical Filter option is enabled, the `Top N` will be applied for each individual column separately based on the number set for each column.
 
+#### Show Filter
+
+This feature allows you to toggle the visibility of the `Filter` icon for the map widget when the `Act as Master Widget` option is enabled.
+
 ### Container Appearance
 
 ![Container Appearance](/static/assets/visualizing-data/visualization-widgets/images/container-appearance.png)
@@ -745,7 +767,7 @@ This allows you to toggle the visibility of the `border` surrounding the widget.
 
 ### Corner Radius
 
-This allows you to apply the specified `radius` to the widget corners if the **Show Border** is enabled. Value can be between 0 and 10.
+This allows you to apply the specified `radius` to the widget corners if the **Show Border** is enabled. Value can be between 0 and 100.
 
 ### Show Background Image
 
@@ -762,6 +784,12 @@ This property allows you to change the transparency from 0.0 to 1.0.
 ### Show Shadow
 
 This allows you to toggle the visibility of the `shadow` surrounding the widget.
+
+### Mobile Height Factor
+
+This option allows you to resize widgets specifically for mobile view.
+
+![Mobile Height Factor](/static/assets/visualizing-data/visualization-widgets/images/mobile-height-factor.png)
 
 ### Container actions
 

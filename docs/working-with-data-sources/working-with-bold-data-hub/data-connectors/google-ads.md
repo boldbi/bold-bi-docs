@@ -43,11 +43,11 @@ customer_id: customer id
 
   ![Google Ads ETL- BoldBI](/static/assets/working-with-etl/images/clickdatahub.png#max-width=100%)
 
-  2. Click Plus icon and provide the new project's name.
+  2. Click Plus icon and provide the new pipeline's name.
   
   ![Google Ads ETL- BoldBI](/static/assets/working-with-etl/images/googleads_addprojectDataHub.png#max-width=100%)
   
-  3. Select the newly created project
+  3. Select the newly created pipeline
   
   ![Google Ads ETL- BoldBI](/static/assets/working-with-etl/images/googleads_oauthconfiguration.png#max-width=100%)
 
@@ -73,7 +73,7 @@ customer_id: customer id
 
 ### Schedule Bold Data Hub Job
 
-1. Click `Schedules` and select the created `googleads` project.
+1. Click `Schedules` and select the created `googleads` pipeline.
 
 ![Google Ads ETL- BoldBI](/static/assets/working-with-etl/images/googleads_scheduleDataHub.png#max-width=100%)
 

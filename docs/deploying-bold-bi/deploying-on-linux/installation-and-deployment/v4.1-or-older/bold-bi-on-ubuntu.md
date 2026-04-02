@@ -40,7 +40,7 @@ documentation: ug
 
 ## Configuring the Bold BI application
 
-1. Register and download the Bold BI Linux package from this [link](/deploying-bold-bi/overview/#registration-and-download).
+1. Register and download the Bold BI Linux package from this [link](/deploying-bold-bi/overview/#how-to-register-start-a-free-trial-and-download-bold-bi).
 
 2. Download the Bold BI Linux package by running the following command:
 

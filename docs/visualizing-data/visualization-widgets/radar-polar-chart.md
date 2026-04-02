@@ -222,12 +222,6 @@ This allows you to add a description for the Radar/Polar chart widget.
 
 ![Basic Settings](/static/assets/visualizing-data/visualization-widgets/images/radar-polar-chart/basic-settings.png)
 
-#### Show Tooltip
-
-This option allows you to toggle the visibility of tooltip in the radar polar chart.
-
-![Basic Settings](/static/assets/visualizing-data/visualization-widgets/images/radar-polar-chart/tooltip.png)
-
 #### Enable Animation
 
 It animates the measure values when you toggle the `Enable Animation.`
@@ -253,6 +247,30 @@ This allows you to change the draw type of the widget. By default, the `draw typ
 ![Polar Chart](/static/assets/visualizing-data/visualization-widgets/images/radar-polar-chart/polar-chart.png)
 
 ![Radar Chart](/static/assets/visualizing-data/visualization-widgets/images/radar-polar-chart/radar-chart.png)
+
+### Tooltip Settings
+
+The Tooltip Settings section allows you to customize the appearance and behavior of tooltips in widget visualizations.
+
+![Basic Settings](/static/assets/visualizing-data/visualization-widgets/images/radar-polar-chart/tooltip-settings.png)
+
+#### Show Tooltip
+
+This option allows you to toggle the visibility of tooltip in the radar polar chart.
+
+![Basic Settings](/static/assets/visualizing-data/visualization-widgets/images/radar-polar-chart/tooltip.png)
+
+#### Customize Tooltip
+
+This option allows you to customize which columns are visible in the chart's tooltip.
+
+![General Settings](/static/assets/visualizing-data/visualization-widgets/images/radar-polar-chart/customize-tooltip-settings.png)
+
+#### Enable RTL
+
+This option allows you to display fields and their data from right to left.
+
+![Tooltip RTL](/static/assets/visualizing-data/visualization-widgets/images/radar-polar-chart/rtl-tooltip.png)
 
 #### Chart Type
 
@@ -388,6 +406,10 @@ Using this option, you can enable or disable hierarchical top N filtering. When 
 
 When the `Hierarchical Filter option` is enabled, the `Top N` will be applied for each individual column separately based on the number set for each column.
 
+#### Show Filter
+
+This feature allows you to toggle the visibility of the `Filter` icon for the radar polar chart widget when the `Act as Master Widget` option is enabled.
+
 #### Link
 
 ![Link](/static/assets/visualizing-data/visualization-widgets/images/radar-polar-chart/linking.png)
@@ -439,7 +461,7 @@ This option allows you to toggle the visibility of the `border` surrounding the 
 
 ### Corner Radius
 
-This option allows you to apply the specified `radius` to the widget corners if the **Show Border** is enabled. The value can be between 0 and 10.
+This option allows you to apply the specified `radius` to the widget corners if the **Show Border** is enabled. The value can be between 0 and 100.
 
 ### Show Background Image
 
@@ -456,6 +478,12 @@ This property allows you to specifies the **transparency** for the `background c
 ### Show Shadow
 
 This option allows you to toggle the visibility of the `shadow` surrounding the widget.
+
+### Mobile Height Factor
+
+This option allows you to resize widgets specifically for mobile view.
+
+![Mobile Height Factor](/static/assets/visualizing-data/visualization-widgets/images/mobile-height-factor.png)
 
 ### Container actions
 

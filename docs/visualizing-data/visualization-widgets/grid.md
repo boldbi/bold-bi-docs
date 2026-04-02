@@ -165,6 +165,29 @@ This allows you to differentiate `alternative rows` of the grid by the backgroun
 
 ![Grid Row Height](/static/assets/visualizing-data/visualization-widgets/images/grid/grid-alternativerowcolor.png)
 
+#### Allow Cell Selection
+
+You can enable or disable the selection of values in grid cells, allowing you to select the desired cells and use the `CTRL + C` to copy the data efficiently.
+
+#### Enable Column Chooser
+
+This option allows you to show or hide columns within the configured fields of the Grid widget.
+
+![Grid Column Chooser](/static/assets/visualizing-data/visualization-widgets/images/grid/grid-column-chooser-property.png)
+
+For example, you can hide specific columns by deselecting the corresponding fields in the Grid widget.
+![Grid Column Chooser](/static/assets/visualizing-data/visualization-widgets/images/grid/grid-column-chooser.png)
+
+#### Allow Column Reorder
+
+This option allows you to rearrange the columns within the configured fields of the Grid widget only if the `Allow Paging` is enabled.
+
+![Grid Reorder Default](/static/assets/visualizing-data/visualization-widgets/images/grid/grid-reorder-property.png)
+
+For example, the `ProductName` column in the grid can be reordered by dragging it to a new position.
+
+![Grid Reorder](/static/assets/visualizing-data/visualization-widgets/images/grid/grid-reorder.png)
+
 ### Summary Row
 
 This section allows you to add a summary row at the end of the grid container.
@@ -392,9 +415,19 @@ You can increase or decrease the space between the border and the header by adju
 
 #### Allow filter
 
-This allows you to enable a filter box for each column in the grid for easy data filtering.
+This allows you to enable a filter type  for each column in the grid for easy data filtering.
 
-The following filtering options are supported in` Allow Filtering`:
+![Filter settings](/static/assets/visualizing-data/visualization-widgets/images/grid/allow-filter-types.png)
+
+#### Filter Type
+
+This option allows you to choose how the data can be filtered within the grid. The filter types are  **Bar, Menu, or Excel**.
+
+### Bar
+
+The `Bar` filter type displays a text box under each column header that allows users to filter values.
+
+The following filtering options are supported in` Bar`:
 
 For Measure Fields
 
@@ -411,6 +444,21 @@ For Dimensional Fields
 * `*[text]` - It performs ends with operation
 * `[text1],[text2]` - search multiple text by using `,`
 
+### Menu
+
+The `Menu` filter type displays a filter icon in the column header, allowing you to filter values using available filter conditions based on the field type.
+
+* For Dimension fields, it provides text-based conditions such as StartsWith, EndsWith, Contains, Equal, and NotEqual.
+* For Measure fields, it provides numeric conditions such as LessThan, GreaterThan, LessThanOrEqual, GreaterThanOrEqual, Equal, and NotEqual.
+
+This filtering option is supported for Measure and Dimension fields (excluding Date fields).
+
+### Excel
+
+The `Excel` filter type displays a filter icon in the column header. It provides a list of available values, allowing you to select one or more items to filter the data.
+
+This filtering option is only supported for Dimension fields (including Date fields).
+
 #### Act as master widget
 
 This allows you to define this grid widget as a master widget so that its filter action can be listened to by other widgets in the dashboard.
@@ -424,6 +472,10 @@ This allows you to define this grid widget to ignore responding to filter action
 Using this option, you can enable or disable hierarchical top N filtering. When applying a Top N filter with multiple dimension columns, the data returned can be customized based on whether the filtering needs to be done flat or based on the hierarchy of the dimension columns added.
 
 When the Hierarchical Filter option is enabled, the Top N will be applied for each individual column separately based on the number set for each column.
+
+#### Show Filter
+
+This feature allows you to toggle the visibility of the `Filter` icon for the grid widget when the `Act as Master Widget` option is enabled.
 
 #### Column Settings
 
@@ -704,7 +756,7 @@ This allows you to toggle the visibility of the border surrounding the widget.
 
 ### Corner Radius
 
-This allows you to apply a specified radius to the widget corners if the Show Border is enabled. The value can range between 0 and 10.
+This allows you to apply a specified radius to the widget corners if the Show Border is enabled. The value can range between 0 and 100.
 
 ### Transparency
 
@@ -713,6 +765,12 @@ You can adjust the transparency from 0 to 1.
 ### Show Shadow
 
 This allows you to toggle the visibility of the `shadow` surrounding the widget.
+
+### Mobile Height Factor
+
+This option allows you to resize widgets specifically for mobile view.
+
+![Mobile Height Factor](/static/assets/visualizing-data/visualization-widgets/images/mobile-height-factor.png)
 
 ### Container actions
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Bold BI Deployment on Docker | Bold BI Documentation
-description: Learn how to deploy Bold BI application on Docker Environment and know its prerequisites, recommended specifications, and upgrading to the latest version.
+title: Bold BI Deployment on Docker| Bold BI Documentation
+description: Learn how to deploy Bold BI application on Docker Environment and know its prerequisites, recommended specifications and upgrading to the latest version.
 platform: bold-bi
 documentation: ug
 ---

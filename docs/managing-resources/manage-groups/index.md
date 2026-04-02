@@ -30,7 +30,14 @@ Group Information can be edited on the group's edit page.
 
 ![Edit Group](/static/assets/managing-resources/manage-groups/images/edit-group.png)
 
-The group name and description can be edited on the group edit page. Additionally, users can be assigned or removed from the group on this page.
+The group name, profile picture of the group and description can be edited on the group edit page. Additionally, users can be assigned or removed from the group on this page.
+
+You can update or delete the group’s profile picture. If no profile picture is provided, a default avatar will be automatically applied as the group’s logo.
+
+![Edit Group Picture](/static/assets/managing-resources/manage-groups/images/edit-group-logo.png)
+
+![Edit Group Picture Dialog](/static/assets/managing-resources/manage-groups/images/edit-group-logo-dialog.png)
+
 
 ## Delete group
 Groups can be deleted if they are no longer needed. You cannot delete the `System Administrator` group.

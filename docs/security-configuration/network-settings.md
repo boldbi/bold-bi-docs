@@ -39,6 +39,8 @@ To add an IP address, click the `Add IP Address` button, which will open the `Ad
 
 `IP Address`: Specify the valid IP Address based on the IP type you choose.
 
+`Subnet`: Specify the valid Subnet IP Address based on the IP type you choose.
+
 `Add Rule`: Once you have provided all required details, please click the `Add Rule` button. Once the rule is added, the values will be displayed in the grid.
 
 ![Content Security Policy settings for font](/static/assets/security-configuration/images/add-rule.png)

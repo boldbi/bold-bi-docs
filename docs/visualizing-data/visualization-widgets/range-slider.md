@@ -166,6 +166,10 @@ Using this option, you can enable or disable the hierarchical top N filtering. W
 
 When the `Enable Hierarchical Filtering` is enabled, the Top N will be applied for each individual column separately based on the number set for each column.
 
+#### Show Filter
+
+This feature allows you to toggle the visibility of the `Filter` icon for the range slider widget when the `Act as Master Widget` option is enabled.
+
 #### Container Appearance
 
 ![Container Appearance](/static/assets/visualizing-data/visualization-widgets/images/range-slider/container-appearance.png)
@@ -200,7 +204,7 @@ You can toggle the visibility of the `border` surrounding the widget using this 
 
 #### Corner Radius
 
-This setting allows you to specify the `radius` for the widget corners if the **Show Border** is enabled. The value can be between 0 and 10.
+This setting allows you to specify the `radius` for the widget corners if the **Show Border** is enabled. The value can be between 0 and 100.
 
 #### Background Color
 
@@ -213,6 +217,12 @@ This property allows you to specify the **transparency** for the `background col
 ### Show Shadow
 
 Toggle the visibility of the `shadow` surrounding the widget with this option.
+
+### Mobile Height Factor
+
+This option allows you to resize widgets specifically for mobile view.
+
+![Mobile Height Factor](/static/assets/visualizing-data/visualization-widgets/images/mobile-height-factor.png)
 
 #### Container actions
 

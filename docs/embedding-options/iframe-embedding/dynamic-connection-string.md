@@ -292,7 +292,7 @@ The Dashboard Service will pass the following arguments when triggering the API.
 
 1. The custom identity can only be passed to the viewer when the dashboard is embedded using the [Dashboard Embedding feature](/embedding-options/embedding-sdk/).
 
-2. The custom identity should be passed through the [dynamicConnection](/embedding-options/embedding-sdk/embedding-api-reference/members/#dynamicconnection) API.
+2. The custom identity should be passed through the [dynamicConnection](/embedding-options/embedding-sdk/component-api-v2.0/dashboard/dashboard-members/#dynamicconnection) API.
 
 **Example**
 

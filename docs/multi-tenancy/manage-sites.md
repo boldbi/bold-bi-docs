@@ -30,6 +30,7 @@ We are able to update the following information for the site using the `Edit` Si
 
 * Site Name
 * Site Domain
+* Lock site URL and prevent automatic updates from reverse proxy requests
 * Site Identifier
 * Database User Credential
 
@@ -37,9 +38,9 @@ You can edit the site by clicking the `Edit` option in the menu.
 
 ![Edit Site Button](/static/assets/multi-tenancy/images/edit-site-button.png#max-width=95%)
 
-After clicking the `Edit` option, the Edit Site dialog will open. Enter the site name, site domain, and site identifier in the next step and click the `Next` button to update the database user credential.
+After clicking the `Edit` option, the Edit Site dialog will open. Enter the site name, site domain, and site identifier in the next step and click the `Next` button to update the database user credential. If you want the site domain to remain fixed and prevent it from being automatically modified when the site is accessed through reverse proxy domains, enable the Lock Site URL and Prevent Automatic Updates from Reverse Proxy Requests option.
 
-![Edit Site](/static/assets/multi-tenancy/images/edit-site.png#max-width=45%)
+![Edit Site](/static/assets/multi-tenancy/images/edit-site-lock-url.png#max-width=45%)
 
 After entering your database credentials, click the `Update` button to update the site details.
 

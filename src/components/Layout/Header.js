@@ -6,8 +6,8 @@ class MainHeader extends React.Component {
     constructor() {
         super();
         this.state = {
-            blogPath: "https://www.boldbi.com/blog",
-            demosPath: "https://samples.boldbi.com/embed"
+            forumPath: "https://www.boldbi.com/forums/",
+            kbPath: "https://support.boldbi.com/kb"
         }
     }
     render() {
@@ -17,11 +17,10 @@ class MainHeader extends React.Component {
                 <a className="doc-logo-link" href="https://www.boldbi.com/documentation"><div className="doc-logo"></div></a>
                 <div className="doc-header-platform">Documentation</div>
                 <div className="doc-header-links">
-                    <a href={this.state.demosPath} target="_blank"><div className="doc-header-link doc-demos-link">Demos</div></a>
-                    <a href="https://www.boldbi.com/support" target="_blank"><div className="doc-header-link doc-support-link">Support</div></a>
-                    <a href={this.state.blogPath} target="_blank"><div className="doc-header-link doc-forum-link">Blog</div></a>
+                    <a href={this.state.forumPath} target="_blank"><div className="doc-header-link doc-forum-link">Forum</div></a>
+                    <a href={this.state.kbPath} target="_blank"><div className="doc-header-link doc-demos-link">KB</div></a>
                     <div id="doc-content-search"></div>
-                    <a href="https://app.boldid.net/bi/embedded/register?plan=192&evaluation=v2&leadsource=www.boldbi.com&gclid=&referrerroriginurl=https://www.boldbi.com/page-sitemap1.xml&secondaryreferraloriginurl=https://help.boldbi.com/&host=server&quantity=1&_gl=1*1fncaio*_gcl_au*MjA5NDgyNDY2OS4xNjg5NjU4OTEx*_ga*NDcwNjgzMjYxLjE2ODk1NjkyMjk.*_ga_SRXJZD7EME*MTY5MDI3NDMwNy40MC4xLjE2OTAyNzg3ODEuMC4wLjA." target="_blank" role="button"><div class="header-demo-link">Start Free Trial</div></a>
+                    <a href="https://app.boldid.net/register/bi/embedded?evaluation=v2" target="_blank" role="button"><div class="header-demo-link">Try it Free</div></a>
                 </div>
             </SiteContainer>
         )
@@ -29,8 +28,8 @@ class MainHeader extends React.Component {
     updatePlatform(name) {
         if (name == "cloud-bi") {
             this.setState({
-                blogPath: "https://www.boldbi.com/blog",
-                demosPath: "https://samples.boldbi.com/"
+                forumPath: "https://www.boldbi.com/forums/",
+                kbPath: "https://support.boldbi.com/kb"
             })
         }
     }

@@ -31,16 +31,244 @@ To configure the Snowflake data source, follow these steps:
 After clicking the data source, the NEW DATA SOURCE configuration panel opens. Follow the given steps to create a Snowflake data source:
 1. Enter a name and description (optional) for the data source.
 2. Enter a valid Snowflake server or host name in the Server Name text box.
+
 For example, `https://dum421.west-europe.azure.snowflakecomputing.com` 
-3. Enter a valid Snowflake user name in the User Name text box.
-4. Enter a valid Snowflake password in the Password text box.
-5. Enter a valid Snowflake database name in the Database text box.
 
    ![Snowflake Connection](/static/assets/working-with-datasource/data-connectors/images/Snowflake/Snowflake_newconnection.png)
+
+3. Select the Authentication type from the authentication mechanism dropdown.
+
+Supported authentication types: 
+* Basic authentication
+* Private key file authentication.
+
+For more details on the available options, see [Authentication Mechanisms](/working-with-data-sources/data-connectors/snowflake/##Authentication-Mechanism)
+
+4. Enter a valid Snowflake database name in the Database text box.
 
 There are two connection types in a data source:
 * Live mode
 * Extract mode
+
+## Authentication Mechanisms
+
+<table>
+    <tr>
+        <th>Environment</th>
+        <th>Supported Authentication Types</th>
+    </tr>
+    <tr>
+        <td>
+            <b>Cloud-supported</b>
+        </td>
+        <td>Basic HTTP Authentication</td>
+    </tr>
+    <tr>
+        <td>
+            <b>On-premises-supported</b>
+        </td>
+        <td>Basic HTTP Authentication, Key Pair Authentication & PEM Certificate Authentication</td>
+    </tr>
+</table>
+
+### Basic Authentication
+
+Basic Authentication uses a username and password to connect to Snowflake.
+It is simple to configure and is recommended for cloud-based environments or manual connections.
+
+![Snowflake Basic Authentication](/static/assets/working-with-datasource/data-connectors/images/Snowflake/Basic-authentication.png)
+
+- Enter a valid Snowflake user name in the User Name text box.
+- Enter a valid Snowflake password in the Password text box.
+
+You can achieve [Key Pair Authentication](/working-with-data-sources/data-connectors/snowflake/####Key-Pair-Authentication) and [PEM Certificate Authentication](/working-with-data-sources/data-connectors/snowflake/####PEM-Certificate-Authentication) by using the Additional Parameters option with basic authentication type. You need to pass the following details in the additional parameters section.
+
+**Additional connection parameters:**
+
+#### Key Pair Authentication
+```format
+authenticator=snowflake_jwt;private_key='-----BEGIN PRIVATE KEY----- MIIEvA.... -----END PRIVATE KEY-----';warehouse=warehouse_name;
+```
+
+#### PEM Certificate Authentication
+```format
+authenticator=snowflake_jwt;private_key='-----BEGIN ENCRYPTED PRIVATE KEY----- MIIEvA.... -----END ENCRYPTED PRIVATE KEY-----';private_key_pwd:pem_password;warehouse=warehouse_name;
+```
+
+
+### Key Pair Authentication
+![Snowflake Basic Authentication](/static/assets/working-with-datasource/data-connectors/images/Snowflake/Key-Pair-authentication.png)
+
+- Choose the `.p8` file from local storage by clicking the browse button and then file will be uploaded.
+- Enter a valid Snowflake user name in the User Name text box.
+- Enter a valid Snowflake warehouse name in the warehouse text box.
+
+### PEM Certificate Authentication
+![Snowflake Basic Authentication](/static/assets/working-with-datasource/data-connectors/images/Snowflake/PEM-Certificate-authentication.png)
+
+- Choose the `.pem` file from local storage by clicking the browse button and then file will be uploaded.
+- Enter a valid Snowflake user name in the User Name text box.
+- Enter a valid Snowflake password in the Password text box.
+- Enter a valid Snowflake warehouse name in the warehouse text box.
+
+### Private Key File Authentication
+In Bold BI, we support two types of authentication mechanisms for secure key-based access:
+1. Key Pair Authentication – Uses RSA private/public key pair.
+2. PEM Certificate Authentication – Uses an encrypted PEM certificate.
+
+**Prerequisites**
+
+**1. Snowflake Setup (Users, Roles, Grants)**
+Run as an admin role (e.g., ACCOUNTADMIN). Replace placeholders:
+```markdown
+<username>, <role_name>, <warehouse_name>, <database_name>, <schema_name>
+```
+
+**Delete the user if it exists (optional)**
+```sql
+-- Removes the user if it already exists (to avoid conflicts when recreating)
+DROP USER IF EXISTS <username>;
+```
+
+**Create a new user**
+```sql
+CREATE USER <username>
+  PASSWORD = '<ComplexPassword>'
+  DEFAULT_ROLE = ACCOUNTADMIN
+  MUST_CHANGE_PASSWORD = false;  -- user does not need to change the password on first login
+```
+
+- Creates a new Snowflake user.
+- Sets an initial password and default role.
+
+**Allow role to modify authentication methods**
+
+Grant the ability to modify authentication methods (e.g., add the RSA public key) to a powerful role such as ACCOUNTADMIN, or to a custom admin role.
+
+```sql
+GRANT MODIFY PROGRAMMATIC AUTHENTICATION METHODS ON USER <username>
+TO ROLE ACCOUNTADMIN;
+```
+
+This lets the role update how the user logs in (e.g., key-based auth).
+
+**Delete and recreate a role (optional)**
+```sql
+-- Clean up if the role exists
+DROP ROLE IF EXISTS <role_name>;
+
+-- Create the role
+CREATE ROLE <role_name>;
+```
+
+**Grant privileges to the role**
+
+Adjust database/schema names to your environment.
+
+```sql
+-- Basic USAGE on account-level objects
+GRANT USAGE ON WAREHOUSE <warehouse_name> TO ROLE <role_name>;
+GRANT USAGE ON DATABASE <database_name> TO ROLE <role_name>;
+GRANT USAGE ON SCHEMA <database_name>.<schema_name> TO ROLE <role_name>;
+
+-- Select/operate within schema
+GRANT SELECT ON ALL VIEWS IN SCHEMA <database_name>.<schema_name> TO ROLE <role_name>;
+GRANT SELECT ON ALL TABLES IN SCHEMA <database_name>.<schema_name> TO ROLE <role_name>;
+
+-- Optionally, future grants
+GRANT SELECT ON FUTURE TABLES IN SCHEMA <database_name>.<schema_name> TO ROLE <role_name>;
+GRANT SELECT ON FUTURE VIEWS IN SCHEMA <database_name>.<schema_name> TO ROLE <role_name>;
+```
+
+**Assign the role to the user**
+```sql
+GRANT ROLE <role_name> TO USER <username>;
+```
+---
+
+**2. Generate Keys with OpenSSL**
+
+Install OpenSSL on your machine. Then open a terminal `(Command Prompt/PowerShell on Windows, or shell on macOS/Linux)` and run the commands below. Replace paths and file names as needed.
+ 
+This guide shows how to generate RSA keys and PEM certificates using OpenSSL on Windows.
+
+**Prerequisites**
+- Install OpenSSL(Latest version). 
+- Choose an output directory.
+
+> Example output directory: `D:/Snow/` (create it if it doesn’t exist)
+
+> **Reference**  
+> Please refer to the official Snowflake documentation: [Key-pair authentication and key-pair rotation](https://docs.snowflake.com/en/user-guide/key-pair-auth)
+
+**Navigate to OpenSSL binaries**
+```cmd
+cd "C:\Program Files\OpenSSL-Win64\bin"
+```
+---
+
+**Key Pair Authentication**
+
+You can generate an `unencrypted` RSA private key and extract its corresponding public key for authentication.
+
+Use the following command to generate a `2048-bit` RSA private key in `PKCS#8` format without encryption:
+
+```cmd
+openssl genrsa 2048 | openssl pkcs8 -topk8 -inform PEM -out D:/Snow/rsa_key.p8 -nocrypt
+```
+
+**Generate a public key**
+
+From the command line, generate the public key by referencing the private key. The following command assumes the private key is encrypted and contained in the file named `rsa_key.p8`.
+
+```cmd
+openssl rsa -in D:/Snow/rsa_key.p8 -pubout -out D:/Snow/rsa_key.pub
+```
+
+The command generates the public key in PEM format.
+
+```format
+-----BEGIN PUBLIC KEY-----
+MIIBIj...
+-----END PUBLIC KEY-----
+```
+---
+
+**PEM Certificate Authentication**
+
+Generate an encrypted PEM private key using `AES-256` with a passphrase.
+
+```cmd
+openssl genpkey -algorithm RSA -out D:/Snow/private_key.pem -aes256 -pass pass:admin@123
+```
+
+**Generate the Corresponding Public Key**
+
+```cmd
+openssl rsa -pubout -in D:/Snow/private_key.pem -out D:/Snow/public_key.pub
+```
+
+The command generates the public key in PEM format.
+
+```format
+-----BEGIN PUBLIC KEY-----
+MIIBIj...
+-----END PUBLIC KEY-----
+```
+---
+
+**3. Assign the public key to a Snowflake user**
+
+Snowflake supports key pair authentication using RSA keys. Depending on the authentication method, the public key to register differs:
+
+- Key Pair Authentication `(PKCS#8)`: Use the public key derived from the   `unencrypted private key (rsa_key.pub)`.
+
+- PEM Certificate Authentication `(Encrypted private key)`: Use the public key extracted from the PEM certificate `(public_key.pub)`.
+
+```sql
+-- Set initial public key
+ALTER USER <username> SET RSA_PUBLIC_KEY = 'MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8A...<snip>...QIDAQAB';
+```
 
 ## Live mode connection
 In this type of connection, data is directly fetched from the source. Select the Live mode option for this connection.
@@ -122,6 +350,68 @@ We have added support for **custom attributes and dashboard parameters** in the 
 ![Dashboard Parameter](/static/assets/working-with-datasource/data-connectors/images/Snowflake/Dashboardparameter.png)
 
 >**Note:** Refer to the [Dashboard Parameter Documentation](https://help.boldbi.com/working-with-data-sources/dashboard-parameter/) and [Custom Attributes Documentation](https://help.boldbi.com/working-with-data-sources/configuring-custom-attribute/) for more details.
+
+## Connecting Bold BI to Snowflake using Session Variables
+
+In Bold BI, support for Snowflake session variables has been extended to ensure that user-defined values can be set dynamically before query execution. This enhancement allows more flexible and secure parameter usage during runtime.
+
+Steps to Configure Session Variables in Snowflake Data Source:
+
+**1. Create Data Source with Custom Attribute**
+
+a) When configuring the Snowflake Live connector, include the custom attribute in the Parameters field.
+![Connect Using Session Parameter](/static/assets/working-with-datasource/data-connectors/images/Snowflake/ConnectDS_session_param.png)
+
+**2. Add Custom Attribute**
+
+Add a custom attribute in the form of a key-value pair under the data source configuration. This attribute defines session variables that will be passed during query execution.
+![Add Custom Attribute](/static/assets/working-with-datasource/data-connectors/images/Snowflake/Add_custom_attribute.png)
+
+**3. Use JSON Template Syntax**
+
+Use the following JSON format with Custom Attribute to define the session variables: 
+   ```
+   {
+    "set_variables": {
+        "${{:paramKey}}": "${{:paramValue}}"
+        }
+    }
+   ```
+**4. Preview the Data**
+
+a) Once configured, Connect and continue to dashboard page to ensure that the variable is correctly passed and the query executes as expected.
+![Preview the data](/static/assets/working-with-datasource/data-connectors/images/Snowflake/preview_snowflake.png)
+
+### For Example - Using Session Variables in Views 
+You can also create Snowflake views that reference session variables, as shown below: 
+
+```
+//Drop View  
+
+DROP VIEW orderview; 
+
+//SET PARAM  
+
+SET SHIPNAMEPARAM = 'Express'; 
+
+//Check view with SET PARAM 
+
+Create or replace View orderview AS SELECT "ORDERS"."ORDERDATE" AS "ORDERDATE", "ORDERS"."SHIPVIA" AS "SHIPVIA", "ORDERS"."FREIGHT" AS "FREIGHT", "ORDERS"."ORDERID" AS "ORDERID", "ORDERS"."SHIPCOUNTRY" AS "SHIPCOUNTRY", "ORDERS"."SHIPNAME" AS "SHIPNAME" FROM "NULLSCHEMA"."ORDERS" AS "ORDERS" WHERE SHIPNAME = $SHIPNAMEPARAM; 
+
+//Check query with SET PARAM 
+
+SELECT "ORDERS"."ORDERDATE" AS "ORDERDATE", "ORDERS"."SHIPVIA" AS "SHIPVIA", "ORDERS"."FREIGHT" AS "FREIGHT", "ORDERS"."ORDERID" AS "ORDERID", "ORDERS"."SHIPCOUNTRY" AS "SHIPCOUNTRY", "ORDERS"."SHIPNAME" AS "SHIPNAME" FROM "NULLSCHEMA"."ORDERS" AS "ORDERS" WHERE SHIPNAME = $SHIPNAMEPARAM; 
+```
+#### Sample JSON response  
+```
+{ 
+
+    "set_variables": { 
+
+    "SHIPNAME": "SHIPNAMEPARAM" 
+    }
+}
+```
 
 ## Connecting Bold BI to Snowflake Data Source via REST API
 
@@ -591,4 +881,3 @@ In this way, you can filter the warehouse connection by passing parameters in th
 [Dashboard Designer Walkthrough](/getting-started/creating-dashboard/)
 
 [Snowflake Integration](https://www.boldbi.com/integrations/snowflake?utm_source=syncfusion&utm_medium=documentation&utm_campaign=boldbisnowflakeintegration)
-

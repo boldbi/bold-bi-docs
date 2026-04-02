@@ -11,7 +11,6 @@ var apiTypeRegex = /`[^\`]+`/g;
 var apiAndRegex = /&#124;/g;
 var apiSpanRegex = /<span class='doc-prop-name'>/;
 const redirects = require("./redirects.json")
-//let releaseNotes = [/#(.*) Bug Fixes/, /#(.*) New Features/, /#(.*) Breaking Changes/, /#(.*) Upgrade/];
 
 exports.onCreateWebpackConfig = ({ actions, stage }) => {
     if (stage === 'build-javascript') {
@@ -112,19 +111,48 @@ exports.createPages = ({ graphql, actions }) => {
 }
 
 let getHeader = (headers) => {
-    var toc = '';
-    if (headers && headers.length && headers.length !== 1) {
-        toc = '<div id="doc-right-toc"><span>Contents</span>\n<ul>';
-        for (var header of headers) {
-            //if (!(isReleaseNotes && releaseNotes.some((exp) => header.match(exp)))) {
-                var hLevel = header.match(/#/g) ? header.match(/#/g).length : 3;
-                var hName = header.trim().replace(apiSpanRegex, '').replace(/[#]+ /, '').replace(apiLinkRegex, '').replace(apiTypeRegex, '')
-                    .replace(apiAndRegex, '').replace(specialRegex, '').replace(mdLinkRegex, '').replace(typeRegex, '').replace(separateRegex, '').trim();
-                var hId = hName.toLowerCase().replace(/[ ]+/g, '-');
-                toc += `\n  <li class="doc-anchor-h${hLevel}"><a href="#${hId}">${hName}</a></li>`;
-            //}
+    if (!headers || headers.length <= 1) return '';
+
+    const regexes = [apiSpanRegex, apiLinkRegex, apiTypeRegex, apiAndRegex, specialRegex, mdLinkRegex, typeRegex, separateRegex];
+    let toc = ['<div id="doc-right-toc"><span>Contents</span>\n<ul>'];
+    let levels = [1]; // Track open UL levels, starting with a dummy level 1
+    let lastLevel = 2; // Last processed header level
+
+    for (let header of headers) {
+        let hLevel = header.match(/#/g)?.length || 3;
+        if (hLevel >= 5) continue;
+
+        let hName = header.trim();
+        for (let regex of regexes) hName = hName.replace(regex, '');
+        hName = hName.replace(/[#]+ /, '').trim();
+        if (!hName) continue;
+
+        let hId = hName.toLowerCase().replace(/\s+/g, '-');
+        let capitalizedName = hName.charAt(0).toUpperCase() + hName.slice(1);
+
+        if (hLevel > lastLevel) {
+            toc.push('<ul>'.repeat(hLevel - lastLevel));
+            for (let i = lastLevel; i < hLevel; i++) levels.push(i);
+        } else if (hLevel < lastLevel) {
+            toc.push('</li></ul>'.repeat(lastLevel - hLevel));
+            levels.length = levels.findLastIndex(l => l < hLevel) + 1;
+        } else {
+            toc.push('</li>');
         }
-        toc += '\n</ul></div>';
+
+        toc.push(`\n <li class="doc-anchor-h${hLevel}"><a href="#${hId}">${capitalizedName}</a>`);
+        lastLevel = hLevel;
     }
-    return toc;
-}
+
+    toc.push('</li></ul>'.repeat(levels.length - 1), '</ul>');
+    // ⭐ Add Support block AFTER the TOC
+    toc.push(`
+        <div class="support-box">
+            <p class="support-title">Having trouble getting help?</p>
+            <a href="https://support.boldbi.com/create" class="support-btn">Contact Support</a>
+        </div>
+    `);
+
+    toc.push('</div>'); // Close #doc-right-toc
+    return toc.join('');
+};

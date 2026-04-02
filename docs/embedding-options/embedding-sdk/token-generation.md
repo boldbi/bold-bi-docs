@@ -1,155 +1,257 @@
 ---
 layout: post
-title:  Token Member - JavaScript Embedding | Bold BI Docs
-description: Learn how to embed dashboard with help of token API member in the JavaScript embedding of Bold BI in any business application.
+title: Bold BI Dashboard - JavaScript Embedding | Bold BI Docs
+description: Learn how to securely embed Bold BI dashboards into your application using the SDK and embed token authentication from v14.1.
 platform: bold-bi
 documentation: ug
-
 ---
 
-# Steps to embed Bold BI dashboard using javascript
+# Embed Token Generation
 
-Follow these steps to embed the dashboard using the token API member. Previously, the details were authenticated using the AuthorizeAPI endpoint. Additionally, we provided authentication support using the token without the AuthorizeAPI endpoint.
+> **Note:** This is the enhanced approach to token generation. If you need a lower version below 14.1 of the token generation approach, please refer to this [link](/embedding-options/embedding-sdk/authorization-options/token-generation-lower-version/).
 
-1. In your .html page, you need to add the following Embed SDK URL in the head tag of your page.
+To embed a Bold BI dashboard securely in your application, you must generate an Embed Token. From Bold BI v14.1, we introduced an object model structure to generate a token by calling the token generation endpoint via a POST API call, which makes it easier to provide the necessary details.
 
-    ```js
-    <head>  
-        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v12.1.5/boldbi-embed.js"></script>
-    </head>
-    ```
+The generated Embed Token authorizes access and ensures that only permitted users can view or interact with the dashboard.
 
-2. In the body tag, you need to create the div element with your own id name. This element will be used for dashboard embedding.
+The following diagram illustrates the token generation flow:
 
-    ```js
-    <body>
-        <div id="dashboard_container"></div>
-    </body>
-    ```
-    
-    >**NOTE:** If you use hyphens in ID, your code may become more prone to errors and be harder to read while using Jquery. Instead, use underscores or camelCase if you are in control of the ID.
+![Token Generation v14 diagram](/static/assets/javascript/images/v14-token-diagram.png)
 
-3. In the body tag, you need to add the function to create BoldBI instance with following properties and call that function in the body using the `onload` attribute as follows. Also, call the `loadDashboard()` function.
+:::TABS
+:::TAB ['active'] ['Node.js'] ['tokengeneration.js']
+```js
+var http = require("http");
+var https = require("https");
+var express = require('express');
+var cors = require('cors');
+var app = express();
 
-    You can embed the dashboard using the dashboard ID and [token](/embedding-options/embedding-sdk/embedding-api-reference/members/#token) like in below samples.
+app.use(cors());
+// Parse JSON bodies (as sent by API clients)
+app.use(express.json());
 
-    ### Embed using dashboard ID with Personal Access Token
+app.post('/tokenGeneration', function (request, response) {
+  const embedDetails = {
+    serverurl: "<Bold BI Server URL>",
+    siteidentifier: "<Site Identifier>",
+    email: "<User Email>",
+    embedsecret: "<Embed Secret Key>",
+    dashboard: { // Dashboard ID property is mandatory only when using BoldBI version 14.1.11.
+      id: "<Dashboard Id>"
+    }
+  }
 
-    ```js
-    <body onload="embedSample();">
-        <div id="dashboard_container"></div>
-        <script>
-            function embedSample() {
-                var boldbiEmbedInstance = BoldBI.create({
-                    serverUrl: "http://localhost:51777/bi/site/site1",
-                    dashboardId: "755e99c7-f858-4058-958b-67577b283309",                
-                    embedContainerId: "dashboard_container",// This should be the container id where you want to embed the dashboard
-                    token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRldm9wc0Bib2xkYmkuY29tIiwidXBuIjouYm9sZGJpZGVtby5jb20vYmkvc2l0ZS9zaXRlMSIsImF1ZCI6Imh0dHBzOi8vaG90Zml4LXdpbmRvd3MuYm9sZGJpZGVtby5jb20vYmkvc2l0ZS9zaXRlMSJ9.JzbqVr6Brv1mAEvnbHnE-FuShos", // Use the generated personal access token.
-                });
-                boldbiEmbedInstance.loadDashboard();
-            }
-        </script>
-    </body>
-    ```  
+  const parsedUrl = new URL(embedDetails.serverurl);
+  const postData = JSON.stringify(embedDetails);
+  const client = parsedUrl.protocol === 'https:' ? https : http;
+  const options = {
+    hostname: parsedUrl.hostname,
+    port: parsedUrl.port || (parsedUrl.protocol === 'https:' ? 443 : 80),
+    path: `${parsedUrl.pathname}/api/${embedDetails.siteidentifier}/embed/authorize`,
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Content-Length': Buffer.byteLength(postData)
+    }
+  };
 
-    ### Embed using dashboard ID with API Key
+  const authRequest = client.request(options, authResponse => {
+    let result = '';
+    authResponse.setEncoding('utf8');
+    authResponse.on('data', chunk => result += chunk);
+    authResponse.on('end', () => {
+      const resultparse = JSON.parse(result);
+      response.send(resultparse?.Data?.access_token);
+    });
+  });
 
-    ```js
-    <body onload="embedSample();">
-        <div id="dashboard_container"></div>
-        <script>
-            function embedSample() {
-                var boldbiEmbedInstance = BoldBI.create({
-                    serverUrl: "http://localhost:51777/bi/site/site1",
-                    dashboardId: "755e99c7-f858-4058-958b-67577b283309",                
-                    embedContainerId: "dashboard_container",// This should be the container id where you want to embed the dashboard
-                    token: "NjQ2ZDgwZjgtN2Q3MS00ZDQwLWFkNTItYTdkNDRhOGE2NmVi", // Use the generated API key.
-                });
-                boldbiEmbedInstance.loadDashboard();
-            }
-        </script>
-    </body>
-    ```  
+  authRequest.on('error', (e) => {
+    console.error("Error fetching embed token:", e.message);
+  });
 
-4. Download the [embed configuration](https://help.boldbi.com/site-administration/embed-settings/#get-embed-configuration-file) file from there to obtain the server URL, site identifier, and dashboard Id values.
+  authRequest.write(postData);
+  authRequest.end();
+});
+```
+:::ENDTAB
+:::TAB ['.NET'] ['TokenController.cs']
+```cs
+[HttpPost]
+[Route("TokenGeneration")]
+public string TokenGeneration()
+{
+    var embedDetails = new
+    {
+      serverurl = "<Bold BI Server URL>",
+      siteidentifier = "<Site Identifier>",
+      email = "<User Email>",
+      embedsecret = "<Embed Secret Key>",
+      dashboard= new { // Dashboard ID property is mandatory only when using BoldBI version 14.1.11.
+        id = "<Dashboard Id>"
+      }
+    };
 
-5. Please refer to the following table for the value of the previous properties based on your application. 
+    //Post call to Bold BI server
+    var client = new HttpClient();
+    var requestUrl = $"{embedDetails.serverurl}/api/{embedDetails.siteidentifier}/embed/authorize";
 
-    <meta charset="utf-8"/>
-    <table>
-    <tbody>
+    var jsonPayload = JsonConvert.SerializeObject(embedDetails);
+    var httpContent = new StringContent(jsonPayload, Encoding.UTF8, "application/json");
+
+    var result = client.PostAsync(requestUrl, httpContent).Result;
+    var resultContent = result.Content.ReadAsStringAsync().Result;
+
+    return JsonConvert.DeserializeObject<dynamic>(resultContent).Data.access_token;
+}
+```
+:::ENDTAB
+<!-- ```py
+@api_view(['POST'])
+def TokenGeneration(request):
+    embed_details = {
+        "serverurl": "<Bold BI Server URL>",
+        "siteidentifier": "<Site Identifier>",
+        "email": "<User Email>",
+        "embedsecret": "<Embed Secret Key>",
+        "dashboard": {  # Dashboard ID property is mandatory only when using BoldBI version 14.1.11.
+            "id": "<Dashboard Id>" 
+        }
+    }
+
+    request_url = f"{embed_details['serverurl']}/api/{embed_details['siteidentifier']}/embed/authorize"
+    headers = {"Content-Type": "application/json"}
+
+    result = requests.post(request_url, headers=headers, data=json.dumps(embed_details), timeout=30)
+    result.raise_for_status()
+
+    data = result.json()
+    try:
+        return HttpResponse(data["Data"]["access_token"])
+    except (KeyError, TypeError):
+        return HttpResponse(f"Unexpected response format: {data}", status=502)
+``` -->
+:::TAB ['PHP'] ['tokengeneration.php']
+```php
+<?php
+echo getToken();
+
+function getToken() {
+  $embedDetails = [
+    "serverurl" => "<Bold BI Server URL>",
+    "siteidentifier" => "<Site Identifier>",
+    "email" => "<User Email>",
+    "embedsecret" => "<Embed Secret Key>",
+    "dashboard" => [ // Dashboard ID property is mandatory only when using BoldBI version 14.1.11.
+      "id" => "<Dashboard Id>"
+    ]
+  ];
+
+  // Send POST request to Bold BI server
+  $ch = curl_init();
+  curl_setopt($ch, CURLOPT_URL, $embedDetails["serverurl"] . "/api/" . $embedDetails["siteidentifier"] . "/embed/authorize");
+  curl_setopt($ch, CURLOPT_POST, true);
+  curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+  curl_setopt($ch, CURLOPT_HTTPHEADER, [
+    'Content-Type: application/json'
+  ]);
+  curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($embedDetails));
+  curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
+  curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
+
+  $response = curl_exec($ch);
+  
+  if (curl_errno($ch)) {
+    curl_close($ch);
+    return "Error: " . curl_error($ch);
+  }
+
+  curl_close($ch);
+
+  // Decode JSON and extract token
+  $decoded = json_decode($response, true);
+  return $decoded['Data']['access_token'] ?? "Error: Token not found";
+}
+?>
+```
+:::ENDTAB
+:::ENDTABS
+
+> **Note:** Here we are generating a token based on the provider user permission. This token can be used for all other supported types of embedding. The dashboard ID is a mandatory valid property that should be used when using the Bold BI version 14.1.11 only. After that version, we removed the dashboard ID as a mandatory requirement to generate the token.
+
+> **Note:** The supported embeddings are dashboard viewer, dashboard designer, create dashboard, datasource designer, connection, and pinboard.
+
+The following mandatory values must be configured in your backend application to generate an embed token.
+
+<meta charset="utf-8" />
+<table>
+  <thead>
     <tr>
-    <td align="left">serverUrl</td>
-    <td align="left">Use your Bold BI server url (http://localhost:[portno]/bi/site/site1)</td>
+      <th style="width: 15%;" align="left">Parameter</th>
+      <th style="width: 70%;" align="left">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="left"><code>serverurl</code></td>
+      <td align="left">
+        Base URL of your Bold BI application (e.g.,
+        <code>https://your-company.boldbi.com/bi</code>).
+      </td>
     </tr>
     <tr>
-    <td align="left">dashboardId</td>
-    <td align="left">Use item id of the dashboard, which needs to be viewed in your application.</td>
+      <td align="left"><code>siteidentifier</code></td>
+      <td align="left">Unique site/tenant identifier in Bold BI (e.g., site/tenant)</td>
     </tr>
     <tr>
-    <td align="left">embedContainerId</td>
-    <td align="left">Id of the created div element in your body.</td>
+      <td align="left"><code>dashboard: { id: }</code></td>
+      <td align="left">
+        Unique ID of the dashboard<br />
+        <b>How To get:</b> Open the dashboard in BI application and copy the ID from the browser's URL.
+      </td>
     </tr>
     <tr>
-    <td align="left">token</td>
-    <td align="left">Token which is used to authenticate the user, for generating the token<a href="/embedding-options/embedding-sdk/embedding-using-javascript/#token-generation"> refer here.</a></td>
+      <td align="left"><code>useremail</code></td>
+      <td align="left">
+        Email of the user viewing the dashboard. The user must exist in Bold BI and have permission to access it.
+      </td>
     </tr>
     <tr>
-    <td align="left">height</td>
-    <td align="left">The height is an optional member of the API. If you do not specify a height for the API, it will automatically take the dimensions of your embedding container. If no value is provided, it will inherit the height from the dimensions of the parent container of the embedding. For more details please refer to this <a href="/embedding-options/embedding-sdk/embedding-api-reference/members/#height">link here.</a></td>
-    </tr>
-    <tr>
-    <td align="left">width</td>
-    <td align="left">The width is an optional member of the API. If you do not specify a width for the API, it will automatically take the dimensions of your embedding container. If no value is provided, it will inherit the width from the dimensions of the parent container of the embedding. For more details please refer to this <a href="/embedding-options/embedding-sdk/embedding-api-reference/members/#width">link here.</a></td>
-    </tr>
-    </tbody>
-    </table>
+      <td align="left"><code>embedsecret</code></td>
+      <td align="left">
+        Secret key used to sign authorization requests.<br />
+        <b>How To get:</b> Retrieve this from the
+        <a href="/site-administration/embed-settings/"> Bold BI settings page</a
+        >.<br />
+        </td> 
+    </tr>    
+  </tbody>
+</table>
 
-## Token Generation
+> **Important:** Never expose `embedSecret` to the client. Generate tokens only on your backend and return `access_token` to the browser.
 
-The following methods can be utilized to generate an access token for an embedding application.
+> **Note:** This newer approach supports Row-Level Security (RLS) in the token generation, which you can refer to in this [link](/embedding-options/embedding-sdk/row-level-security/).
 
- 1.    [API Key through Bold BI server user interface](/embedding-options/embedding-sdk/token-generation/#steps-to-generate-the-api-key-from-bold-bi-server-ui).
- 2.    [Personal Access Token through REST API](/embedding-options/embedding-sdk/token-generation/#generate-personal-access-token-using-rest-api).
+## Token Generation Response (JSON)
 
-### Steps to generate the API key from Bold BI server UI
+The Bold BI server returns the response in JSON format, including the `access_token` and dashboard details, if the request is valid. Please find the below image of the resultContent.
 
-The API key can be generated from the Bold BI server UI, which provides the flexibility to set the token's expiration period. To learn more about the API key, please refer to this [link](https://help.boldbi.com/site-administration/api-key). Follow the below steps to generate API Key.
- 
-   1. Click on the `profile` icon located at the top right corner of the Bold BI server.
-
-       ![User profile](/static/assets/javascript/images/User_Profile.png)
-
-   2. In `My Profile` click the `API Key` tab.
-
-       ![API Key Tab](/static/assets/managing-resources/images/api-key-tab.png)
-
-   3. Click the `Generate API Key` button, and provide a name for the API Key. By enabling the API Key Expiration toggle, you can set an expiration time. By default, there will be no expiration for infinity period. After that, click `Create API Key`.
-
-       ![Generate API Key](/static/assets/managing-resources/images/generate-api-key.png)
-       
-       ![Token Dialog](/static/assets/javascript/images/apikey-dialog.png)
-
-       > **NOTE:** For security breaches, if you feel that the API key generated without an expiration should no longer be used once it is deleted.
-
-   4. An API key has been generated. Now, you can copy and use it for embedding.
-
-       ![Token generation](/static/assets/javascript/images/apikey-copy.png)
-
-        > **NOTE:** You can generate up to 2 API keys, but they should be stored securely. Once you navigate away from this page, we will not be able to retrieve or restore this token.
-    
-### Generate Personal Access Token using REST API
-
-Generate an access token using token [REST API](https://support.boldbi.com/kb/article/16716/how-to-generate-access-token-to-authenticate-user/). By this approach the expiration time will be set to 7 days as default. Once you have generated the token, you cannot expire it.
-
-> **NOTE:** Once you have generated the token, it will remain valid until its specified expiration period. If you happen to lose the token, you can generate a new one. Both tokens will function properly without any issues until their expiration times.
-
-## Following embedding modules is achievable by using token API member
-
-<li>Designer</li>
-<li>Data source</li>
-<li>Connection</li>
-<li>Widget</li>
-<li>LoadView</li>
-
-> **NOTE:** For token API member is applicable to identifiers such as Dashboard ID, Datasource ID, Widget ID, and View ID.
+:::TABS
+:::TAB ['active'] ['JSON'] ['Response']
+```json
+{
+  "ApiStatus": true,
+  "Data": {
+    "email": "test@boldbi.com",
+    "username": "testuser",
+    "access_token": "eyJhbGciSI6IjE3NTY4OTEwMDYiLCJjdXN0b21fYXR0cmlidXRlIjOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFudWFiYXJuYS5iQHN5bmNmdXNpb24uY29tIiwidXBuIjoiYW51YWJhcm5hIiwibmFtZWlkIjoiMSIsInVuaXF1ZV9uYW1lIjoiNmUxMmVhNjYtMWU3My00NDVmLWJlMzMtNDY5OTg0ZjVkODNiIiwiSVAiOiI6OjEiLCJpc3N1ZWRfZGF0Zoie30iLCJuYmYiOjE3NTYMiOiJodHRwOi8vbG9jYWxob3N0OjYwNTE1L2JpL3NpdGUvc2l0ZTEiLCJ4OTEwMDYsImV4cCI6MTc1Njk3NzQwNiwiaWF0IjoxNzU2ODkxMDA2LCJpc3hdWQiOiJodHRwOi8vbG9jYWxob3N0OjYwNTE1L2JpL3NpdGUvc2l0ZTEifQ.O1SqPb4gpcwCnqKHC1LtAdVWvdMnMKzDt8iz3vmIG-o",
+    "token_type": "bearer",
+    ".expires":"2/12/2026 12:29:05 PM",
+    "UserDetail": "{\"DisplayName\":\"Test user B\",\"Email\":\"test@boldbi.com\",\"Username\":\"testuser\",\"FirstName\":\"Test user\"...}",
+    "ItemDetail": "{\"CanClone\":false,\"CanCopy\":false,\"CanCreateItem\":false,\"CanDelete\":false,\"CanWrite\":true,\"CategoryDescription\":null,\"CategoryId\":\"3ae74984-a689-4997-88b9-3c4e77f10dda\",\"CategoryName\":\"Getting Started Tutorial\",\"CreatedByDisplayName\":\"Test user B\",\"CreatedById\":1,\"CreatedDate\":\"08/08/2025 11:18 AM\",\"FailureOccurence\":0,\"Description\":\"This supply chain performance dashboard helps to effectively track supply chain KPIs related to the efficiency of sales orders processing.\",\"Id\":\"c5bab292-0ee6-4ee7-9dfa-d6b3cffed7ff\",\"ItemLocation\":\"c5bab292-0ee6-4ee7-9dfa-d6b3cffed7ff/1\",\"Name\":\"Supply Chain Performance Dashboard\"...}"
+  },
+  "Status": true
+}
+```
+:::ENDTAB
+:::ENDTABS

@@ -94,9 +94,26 @@ The Bold BI application can be configured to support OAuth 2.0 for Single Sign-O
     <td>This must be the field name in which email will be present when deserializing the token.</td>
     </tr>
 
+    <tr>
+    <td>Enable User and Group mapping</td>
+    <td>Allows the system to fetch the group claim value from the authentication token and dynamically map users to groups during login.</td>
+    </tr>
+
+    <tr>
+    <td>Un-map Existing Groups of User and map to new group</td>
+    <td>Clears all previously assigned groups for the user and maps them to the new group received in the claim.</td>
+    </tr>
+
+    <tr>
+    <td>Group Claim Name</td>
+    <td>Optional field to specify the name of the claim that contains group identifiers used for mapping. Users will only be mapped if a matching group name exists on the site.</td>
+    </tr>
+
     </table>
 
     ![OAuth settings](/static/assets/site-administration/oauth-support/images/OAuth-settings.png#width=50%)
+
+    ![OAuth group claim](/static/assets/site-administration/oauth-support/images/OAuth-group-claim.png)
 
     ![OAuth user data](/static/assets/site-administration/oauth-support/images/OAuth-user-data.png)
     
@@ -112,6 +129,8 @@ The following is a list of a few OAuth 2.0 providers and an explanation of how t
 * [Auth0](/security-configuration/single-sign-on/oauth-2.0-support/auth0/)
 * [Okta](/security-configuration/single-sign-on/oauth-2.0-support/okta/)
 * [OneLogin](/security-configuration/single-sign-on/oauth-2.0-support/onelogin/)
+* [Microsoft Entra Azure AD](/security-configuration/single-sign-on/oauth-2.0-support/microsoft-entra-azure-ad/)
+* [Fusion Auth](/security-configuration/single-sign-on/oauth-2.0-support/fusionauth/)
 
 OAuth 2.0 support is provided in both the Bold BI sites and User Management Server. This support can be handled for each site individually on the settings page by disabling the option, as shown in the following screenshot.
 

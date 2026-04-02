@@ -50,7 +50,7 @@ The following steps represent how to add an Image to the dashboard:
 
 ![Data tab](/static/assets/visualizing-data/visualization-widgets/images/image/imagedatatab.png)
 
-## How to configure the data to Image widget?
+## Configuring Data Input for the Image Widget
 
 You can browse the image or bind a data source column containing the image URL.
 
@@ -156,7 +156,7 @@ By using the parameter `{1}` in the Parameterized URL pattern, you get the 1st v
   
 ***Forming URI through placeholder***
 
-EX: http://flagpedia.net/data/flags/normal/{0}.png
+EX: [http://flagpedia.net/data/flags/normal/{0}.png](http://flagpedia.net/data/flags/normal/au.png)
 
 * `{0}` - Represents the 1st field of the column section and gets the 1st value of that field for the image widget.
 * If the 1st value of the `{0}` parameter is `au`, the URL will be framed as `http://flagpedia.net/data/flags/normal/au.png`. This will be used as the image source.
@@ -170,15 +170,30 @@ EX: http://flagpedia.net/data/flags/normal/{0}.png
 
 `Show Tooltip `allows you to toggle the visibility of a tooltip on an image. The text box below the Show Tooltip option allows you to set the text that appears in the tooltip.
 
+![Showtooltip](/static/assets/visualizing-data/visualization-widgets/images/image/tooltip-settings.png)
+
 ![Showtooltip](/static/assets/visualizing-data/visualization-widgets/images/image/Show-tool-tip.png)
+
+
+### Container Appearance 
+
+#### Mobile Height Factor
+
+This option allows you to resize widgets specifically for mobile view.
+
+![Mobile Height Factor](/static/assets/visualizing-data/visualization-widgets/images/mobile-height-factor.png)
 
 ### Filter Settings
 
 ![Filter](/static/assets/visualizing-data/visualization-widgets/images/image/filter.png)
 
-### IgnoreFilterActions
+### Ignore Filter Actions
 
 You can ignore the filter actions by enabling the IgnoreFilterActions property. Browse Image will not act as a slave widget.
+
+### Show Filter
+
+This feature allows you to toggle the visibility of the `Filter` icon for the image widget when the `Act as Master Widget` option is enabled.
 
 ### Link
 
@@ -186,7 +201,7 @@ You can ignore the filter actions by enabling the IgnoreFilterActions property. 
 
 Configure the linking to URL or dashboard with the widget using its settings. For more details, refer to the [Linking](/visualizing-data/working-with-widgets/linking-urls-and-dashboards/).
 
-### Container actions
+### Container Actions
 
 ![Container Actions](/static/assets/visualizing-data/visualization-widgets/images/image/pin-icon.png)
 

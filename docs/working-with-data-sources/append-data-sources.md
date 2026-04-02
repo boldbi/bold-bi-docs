@@ -59,3 +59,5 @@ To save the data source, click on `Save and Exit`.
 Now, the appended data source has been created successfully. On the server page, the `Data Refresh Status` will be shown.
 
 ![Append data source refresh](/static/assets/working-with-datasource/combine-ds-and-isolation-code/images/combine-ds-refresh-status.png)
+
+> **Note:** Online sales and store sales data are being merged using the Append Data feature to present a complete view of whole sales.

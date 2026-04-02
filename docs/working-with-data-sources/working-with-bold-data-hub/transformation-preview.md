@@ -20,9 +20,23 @@ In ``Tranformation`` page, convert extracted data into a suitable format for ana
 
 ![Transform3](/static/assets/working-with-etl/images/plus-circle.png)
 
-3. Input the desired table name into the designated field labeled "Table Name." If necessary, primary key values can be provided in a comma-separated manner for further customization in Unique Column Name(s) text box.
+3. Input the desired table name into the field labeled "Table Name." If necessary, you can provide primary key values in a comma-separated format in the "Unique Column Name(s)" text box for further customization. 
 
-![Transform2](/static/assets/working-with-etl/images/etl_t2.png)
+### Drop Table and Unique Columns usage:
+
+Check the 'Drop Table' checkbox if you want the existing table to be dropped and recreated during each extraction. This helps to avoid data duplication by recreating the transform table for every schedule. 
+Click "Save" to apply changes or "Close" to cancel.
+
+![Transform2](/static/assets/working-with-etl/images/transform_popup.png)
+
+#### DATA DUPLICATION WARNING :
+
+If the user does not select the "Drop Table" option and does not specify any Primary Key, the system will display a warning popup.
+![Transform2](/static/assets/working-with-etl/images/duplication_warning.png)
+
+##### OPTIONS:  
+    Proceed: Continue with the current settings (duplicates may occur)
+    Cancel: Go back and configure either Primary Key as Unique Column Name(s) or enable the "Drop Table" option to avoid duplication.
 
 4. The data will initially be transferred to the `DuckDB` database within the designated `{project_name}` schema before undergoing transformation for integration into the target databases. As an illustration, in the case of a project named "datasync_pipeline", the data will be relocated to the `datasync_pipeline` table schema.
 
@@ -54,21 +68,32 @@ Note: The Transform Tables and Extracted Tables can be minimized to utilize the 
 
 ### Transformation Capabilities: 
 
-1. In the Transform section, users have the capability to incorporate multiple tables into their projects. 
-
-2. Drag and drop the transform tables to reorder the sequence in which the transform tables should be executed, as well as reuse these tables for future analyses.
-
-2. When users desire to incorporate Primary keys into the transform tables, they should input the primary key values during the process of adding or editing the tables.
+1. In the Transform section, users have the capability to incorporate multiple tables into their projects.
 
 ![Transform5](/static/assets/working-with-etl/images/datahub_edit_transformtable.png)
 
-![Transform5](/static/assets/working-with-etl/images/etl_t2.png)
+2. Edit/Delete Table Confirmation Popup :
 
-3. After finishing the transformation, users should click the ``Save and Transform`` button. The tables will be transferred to the destination database during this process. Now the data will be transformed and moved to the destination
+When a user clicks Edit or Delete, a confirmation popup appears: Deleting/Editing the table will affect dashboards and reports that depend on it. Are you sure you want to proceed?
+    Proceed: Continue with edit or delete.    
+    Cancel: Abort the action.
+![Transform](/static/assets/working-with-etl/images/edit_warning.png)
+
+3. Drag and drop the transform tables to reorder the sequence in which the transform tables should be executed, as well as reuse these tables for future analyses.
+
+4. When users desire to incorporate Primary keys into the transform tables, they should input the primary key values during the process of adding or editing the tables.
+
+![Transform5](/static/assets/working-with-etl/images/transform_popup.png)
+
+> **IMPORTANT:** If a primary key is added, it must also be referenced in the SQL query.If the primary key is missing in the query, an error popup appears 
+
+![Transform](/static/assets/working-with-etl/images/missing_primary_key.png)
+
+5. After finishing the transformation, users should click the ``Save and Transform`` button. The tables will be transferred to the destination database during this process. Now the data will be transformed and moved to the destination
  
  ![Transform](/static/assets/working-with-etl/images/datahub_transform_save.png)
  
-4. ``Save as Draft`` can be used to switch between transform and other tabs without losing the transformation query. 
+6. ``Save as Draft`` can be used to switch between transform and other tabs without losing the transformation query. 
 
 > **IMPORTANT:** After finishing the transformation, users can see the results in Destination tab.
 

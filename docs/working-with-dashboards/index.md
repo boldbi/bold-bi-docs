@@ -37,3 +37,11 @@ You can explore working with the dashboard in detail here:
 [Dashboard Styles](/working-with-dashboards/dashboard-styles/)
 
 [Dynamic Translator](/working-with-dashboards/dynamic-translator/)
+
+[Fixed Layout](/working-with-dashboards/fixed-layout/)
+
+[Common Widget Settings](/working-with-dashboards/common-widget-settings/)
+
+[Accessibility](/working-with-dashboards/accessibility/)
+
+[Dashboard Properties](/working-with-dashboards/dashboard-properties/)

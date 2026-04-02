@@ -253,12 +253,6 @@ Allows you to provide a `description` about this spline area chart widget.
 
 ![Basic Settings](/static/assets/visualizing-data/visualization-widgets/images/line-chart/basic-settings.png)
 
-#### Show Tooltip
-
-This option allows you to toggle the visibility of the tooltip in a chart.
-
-![General Settings](/static/assets/visualizing-data/visualization-widgets/images/line-chart/tooltip.png)
-
 #### Chart Type and axis
 
 Click the `Change` button to open the `Chart Type and Axis Settings` dialog. 
@@ -413,6 +407,36 @@ Click `OK` to add a custom line style settings in a line chart. Now, the chart r
 
 > **Note:** The Line Style property is only visible if you have Line or Spline chart.
 
+### Tooltip Settings
+
+The Tooltip Settings section allows you to customize the appearance and behavior of tooltips in widget visualizations.
+
+![Basic Settings](/static/assets/visualizing-data/visualization-widgets/images/tooltip-settings.png)
+
+#### Show Tooltip
+
+This option allows you to toggle the visibility of the tooltip in the chart.
+
+![General Settings](/static/assets/visualizing-data/visualization-widgets/images/line-chart/tooltip.png)
+
+#### Customize Tooltip
+
+This option allows you to customize which columns are visible in the chart's tooltip.
+
+![General Settings](/static/assets/visualizing-data/visualization-widgets/images/line-chart/customize-tooltip-settings.png)
+
+#### Enable RTL
+
+This option allows you to display fields and their data from right to left.
+
+![Tooltip RTL](/static/assets/visualizing-data/visualization-widgets/images/line-chart/rtl-tooltip.png)
+
+#### Apply Legend Color
+
+This option allows you to display tooltip text and value colors that correspond with the legend colors.
+
+![Tooltip RTL](/static/assets/visualizing-data/visualization-widgets/images/line-chart/legend-tooltip.png)
+
 ### Legend Settings
 
 ![Legend settings](/static/assets/visualizing-data/visualization-widgets/images/line-chart/legend-settings.png)
@@ -481,6 +505,10 @@ This option will hide the legends in the chart area, resulting in increased char
 The chart legend dropdown option can be used to simplify viewing complex charts with multiple data sources. For example, if you have a chart displaying sales data for the different years, you can use the legend dropdown to deselect all other years and focus only on a specific year.
 
 ![Legend item as dropdown](/static/assets/visualizing-data/visualization-widgets/images/line-chart/legend-as-dropdown.png)
+
+### Legend Alignment
+
+Legend Alignment enables you to control how the legend is positioned within its allocated space. For detailed guidance, refer to the [Legend Alignment](/visualizing-data/visualization-widgets/column-chart/#legend-alignment) section.
 
 #### Legend Shape
 
@@ -561,6 +589,12 @@ This allows you to customize the axis title color.
 #### Label color
 
 This allows you to customize the axis label color.
+
+#### Show Axis Border
+
+This option allows you to enable or disable the axis border of the chart.
+
+![Show axis border](/static/assets/visualizing-data/visualization-widgets/images/line-chart/show-axis-border.png)
 
 #### Show Category Axis
 
@@ -678,7 +712,7 @@ This allows you to dynamically set the Minimum, Maximum, and Interval values of 
 2. Range parameter value.
 3. Data source field based parameter values.
 
-For more details about dashboard parameter, refer to the [Dashboard parameter documentation](/working-with-data-sources/dashboard-parameter/configuring-dashboard-parameters/).
+For more details about dashboard parameter, refer to the [Dashboard parameter documentation](/working-with-data-sources/dashboard-parameter/configuring-dashboard-parameter/).
 
 ### Single Parameter Value:
 
@@ -894,6 +928,10 @@ Through this option, you can enable/disable the hierarchical top `N` filtering. 
 
 When the `Hierarchical Filter` option is enabled, the Top N will be applied for each individual column separately based on the number set for each column.
 
+#### Show Filter
+
+This feature allows you to toggle the visibility of the `Filter` icon for the line chart widget when the `Act as Master Widget` option is enabled.
+
 ### Container Appearance
 
 ![Container Appearance](/static/assets/visualizing-data/visualization-widgets/images/container-appearance.png)
@@ -936,7 +974,7 @@ You can toggle the visibility of the `border` surrounding the widget.
 
 ### Corner Radius
 
-This allows you to apply the specified `radius` to the widget corners if the **Show Border** is enabled. Value can be between 0 and 10.
+This allows you to apply the specified `radius` to the widget corners if the **Show Border** is enabled. Value can be between 0 and 100.
 
 ### Show Background Image
 
@@ -953,6 +991,12 @@ This property allows you to specifies the **transparency** for the `background c
 ### Show Shadow
 
 You can toggle the visibility of the `shadow` surrounding the widget.
+
+### Mobile Height Factor
+
+This option allows you to resize widgets specifically for mobile view.
+
+![Mobile Height Factor](/static/assets/visualizing-data/visualization-widgets/images/mobile-height-factor.png)
 
 ### Container actions
 

@@ -168,4 +168,5 @@ To add the notes and important type of predefined blockquote use the below synta
 
 # General Markdown Syntax Reference
 
-* Refer [General Markdown Syntax](https://kramdown.gettalong.org/syntax.html) here. 
+* Refer [General Markdown Syntax](https://kramdown.gettalong.org/syntax.html) here.
+

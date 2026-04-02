@@ -188,6 +188,11 @@ This property can be customized to suit the needs of your dashboard. For example
 
 ![Filter](/static/assets/visualizing-data/visualization-widgets/images/combo-box/combox-placeholder-customize.png)
 
+#### Enable RTL
+This option allows data to be displayed from right to left.
+
+![RTL](/static/assets/visualizing-data/visualization-widgets/images/combo-box/rtl.png)
+
 #### Filter
 
 ![Filter](/static/assets/visualizing-data/visualization-widgets/images/combo-box/filter.png)
@@ -205,6 +210,22 @@ This allows you to define this combo box widget to ignore responding to the filt
 Using this option, you can enable or disable hierarchical top N filtering. While applying the Top N filter with multiple dimension columns, the data returned can be customized based on whether the filtering needs to be done as flat or based on the hierarchy of dimension columns added.
 
 When `Enable Hierarchical Filtering` is enabled, the Top N will be applied for each individual column separately based on the number set for each column.
+
+#### Apply Field Filters
+
+This allows you to apply filters from the configured field in the Combo Box Widget to its listener widgets
+
+![Apply Field Filters](/static/assets/visualizing-data/visualization-widgets/images/combo-box/ApplyFieldFilters.png)
+
+#### Limitations of Apply Field Filters
+
+1) Only item-based filtering applied in the Combo Box widget will be passed to its listener widgets. Condition-based filtering and rank-based filtering are not supported for this property.
+
+2) Filters applied using this property will not be reflected in exported files, as export support is not currently available for this property.
+
+#### Show Filter
+
+This feature allows you to toggle the visibility of the `Filter` icon for the Combobox widget when the `Act as Master Widget` option is enabled.
 
 #### Container Appearance
 
@@ -240,7 +261,7 @@ This allows you to toggle the visibility of the `border` surrounding the widget.
 
 #### Corner Radius
 
-This allows you to apply the specified `radius` to the widget corners if the **Show Border** is enabled. Value can be between 0 and 10.
+This allows you to apply the specified `radius` to the widget corners if the **Show Border** is enabled. Value can be between 0 and 100.
 
 #### Background Color
 
@@ -253,6 +274,12 @@ This property allows you to specify the **transparency** for the `background col
 #### Show Shadow
 
 This allows you to toggle the visibility of the `shadow` surrounding the widget.
+
+#### Mobile Height Factor
+
+This option allows you to resize widgets specifically for mobile view.
+
+![Mobile Height Factor](/static/assets/visualizing-data/visualization-widgets/images/mobile-height-factor.png)
 
 #### Container actions
 

@@ -21,12 +21,6 @@ To establish this connection, follow the steps below:
 
 3. Click **Google Sheets** connection button in the connection panel.![Google Sheets icon](/static/assets/working-with-datasource/data-connectors/images/GoogleSheets/Sheetsicon.png)
 
-## Advanced
-In the Advanced category, it will redirect to the Bold ETL. Please refer to the [Bold ETL](/managing-resources/manage-data-sources/#advanced-category).
-
-## Basic
-In the Basic category, it will serve as the connector in Bold BI. You will need to follow the steps outlined below.
-
 4. A new window will appear. Here, you can select your account or click on **Connect New Account** if the window opens.![Connect to account](/static/assets/working-with-datasource/data-connectors/images/GoogleSheets/createaccount_googleSheets.png)
    
 5. The login window opens to authorize the user. Please enter the appropriate username and password for the account you wish to use to access the **Google Sheets** data.
@@ -34,7 +28,7 @@ In the Basic category, it will serve as the connector in Bold BI. You will need 
 
 6. The authorization window will open. Click **Allow** here to authorize the Bold BI application to download your **Google Sheets** files and view the metadata for your files.![Allow Access](/static/assets/working-with-datasource/data-connectors/images/GoogleSheets/allow_access.png)
 
-7. Now, the Google Sheets window appears. Set a data source name and choose the file as shown in the following image. ![File Storage](/static/assets/working-with-datasource/data-connectors/images/GoogleSheets/file_storage.png)
+7. Now, the Google Sheets window appears. Set a data source name, Choose the [Extract Engine](/managing-resources/manage-data-sources/#extract-mode-connection) and choose the file as shown in the following image. ![File Storage](/static/assets/working-with-datasource/data-connectors/images/GoogleSheets/file_storage.png)
 
 8. You can schedule refreshes to keep the data on your dashboard up to date by using the **Refresh Settings** option. click [here](/working-with-data-sources/data-connectors/excel/#refreshing-cloud-excel-data-source) to learn more.![Refresh Settings](/static/assets/working-with-datasource/data-connectors/images/GoogleSheets/refresh_settings.png)
 

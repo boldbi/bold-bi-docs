@@ -80,7 +80,12 @@ You can publish the data source to sites created on other Bold BI servers.
 
 3. After adding the external site, choose it from the drop-down menu, and follow the same steps mentioned for publishing the data source in the internal site.
   
-> **NOTE:** Data sources cannot be locked when publishing to external sites, so the options to `Lock data source editing in the published` site and `Lock linked data source editing in the published site` will not be available for External Sites.
+> **NOTE:**<br>
+> •	Data sources cannot be locked when publishing to external sites, so the options to `Lock data source editing in the published` site and `Lock linked data source editing in the published site` will not be available for External Sites.<br>
+> •	Admin users can view all the external sites added by any user, which will be listed in the "Select Site" dropdown, since admins can publish any dashboard and data sources.
+
+   ![View all sites](/static/assets/resource-migration/migrate-data-sources-online/images/view-all-sites.png)
+
 
 ## Manage published data sources
 

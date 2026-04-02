@@ -43,8 +43,13 @@ Follow these steps to authenticate with the Salesforce Reports web service:
 ### Create Salesforce Reports data source
 After successful authentication, the NEW DATA SOURCE configuration panel will open. Follow the below steps to create Salesforce Reports data source.
 1. Enter a name and description (optional) for the data source.
-2. Reports that exist in your account will be listed in the dropdown. Select the report from the list. You can also use the search box to filter the reports.
-3. Choose a time interval for **Refresh Settings** using the combo box to trigger the Rest API request periodically to keep the data in sync with our dashboard.
+2. Choose the [Extract Engine](/managing-resources/manage-data-sources/#extract-mode-connection)
+3. Reports that exist in your account will be listed in the dropdown. Select the report from the list. You can also use the search box to filter the reports.
+4. Choose a time interval for **Refresh Settings** using the combo box to trigger the Rest API request periodically to keep the data in sync with our dashboard.
+
+ ![Salesforce Limit](/static/assets/working-with-datasource/data-connectors/images/SalesforceReports/Limit.png)
+
+
 
 > **NOTE:**  Supported report types are - Tabular, Matrix and Summary.
 

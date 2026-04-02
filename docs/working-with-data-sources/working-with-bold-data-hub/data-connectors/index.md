@@ -40,4 +40,13 @@ documentation: ug
 [Zendesk Support](/working-with-data-sources/working-with-bold-data-hub/data-connectors/zendesk-support/)<br>
 [Zendesk Talk](/working-with-data-sources/working-with-bold-data-hub/data-connectors/zendesk-talk/)<br>
 [Web](/working-with-data-sources/working-with-bold-data-hub/data-connectors/web/)<br>
-[OpenAPI](/working-with-data-sources/working-with-bold-data-hub/data-connectors/open-api/)
+[OpenAPI](/working-with-data-sources/working-with-bold-data-hub/data-connectors/open-api/)<br>
+[Bing Ads](/working-with-data-sources/working-with-bold-data-hub/data-connectors/bing-ads/)<br>
+[PythonScript](/working-with-data-sources/working-with-bold-data-hub/data-connectors/python-script/)<br>
+[Salesforce Reports](/working-with-data-sources/working-with-bold-data-hub/data-connectors/salesforce-reports/)<br>
+[DynamoDB](/working-with-data-sources/working-with-bold-data-hub/data-connectors/dynamodb/)<br>
+[Elastic Search](/working-with-data-sources/working-with-bold-data-hub/data-connectors/elastic-search/)<br>
+[Excel](/working-with-data-sources/working-with-bold-data-hub/data-connectors/excel/)<br>
+[CSV](/working-with-data-sources/working-with-bold-data-hub/data-connectors/csv/)<br>
+[JSON](/working-with-data-sources/working-with-bold-data-hub/data-connectors/json/)<br>
+[Yaml](/working-with-data-sources/working-with-bold-data-hub/data-connectors/yaml/)<br>

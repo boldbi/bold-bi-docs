@@ -166,9 +166,11 @@ documentation: ug
 
    `https://www.googleapis.com/auth/userinfo.profile`
 
-   `https://www.googleapis.com/auth/drive.metadata.readonly`
+   `https://www.googleapis.com/auth/drive.file`
 
-   `https://www.googleapis.com/auth/drive.readonly` </td>
+   `https://www.googleapis.com/auth/drive.readonly`
+ </td>
+
 
 
    <tr>
@@ -177,7 +179,7 @@ documentation: ug
 
    `https://www.googleapis.com/auth/userinfo.profile`
 
-   `https://www.googleapis.com/auth/drive.metadata.readonly`
+   `https://www.googleapis.com/auth/drive.file` 
 
    `https://www.googleapis.com/auth/drive.readonly`
 
@@ -214,12 +216,18 @@ documentation: ug
    </tr>
    <tr>
    <td>Google Analytics V4</td>
-   <td> `https://www.googleapis.com/auth/analytics.readonly`
+   <td> 
+
+   `https://www.googleapis.com/auth/analytics.readonly`
+
    </td>
    </tr>
    <tr>
    <td>Google Ads V4</td>
-   <td> `https://www.googleapis.com/auth/adwords `
+   <td> 
+
+   `https://www.googleapis.com/auth/adwords `
+
    </td>
    </tr>
    <tr><td>Google Search Console</td>
