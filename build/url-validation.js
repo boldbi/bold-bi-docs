@@ -1,6 +1,5 @@
 var gulp = require('gulp');
 var glob = require('glob');
-var request = require('request-promise');
 var fs = require('fs');
 let routerData;
 const path = require('path');
@@ -11,7 +10,6 @@ var internalBrokenUrl = [];
 var fileNotAvail = [];
 var { generateToc } = require('./toc.js');
 var urlfilepath = './urlfile';
-var toc ='./build.js';
 var urls =fs.readFileSync(urlfilepath,'utf8');
 
 gulp.task('url-validation', async function (done) {
@@ -116,5 +114,4 @@ function printError(done) {
         return;
     }
     process.exit(1);
-    done();
 }

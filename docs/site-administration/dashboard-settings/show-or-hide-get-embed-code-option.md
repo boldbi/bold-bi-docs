@@ -9,7 +9,7 @@ documentation: ug
 
 This section describes how to show or hide the Get Embed Code option for dashboards and widgets in the dashboard settings on the administration page.
 
-## Get Embed Code for Dashboards
+## Get Embed Code or Embed URL for Dashboards
 
 1. By default, the option to show `Get Embed Code for dashboards` is enabled on the dashboard settings page.
 
@@ -20,6 +20,14 @@ This section describes how to show or hide the Get Embed Code option for dashboa
     ![Embed code option for dashboard](/static/assets/site-administration/images/embed-option-dashboard-listing-page.png#width=60%)
 
     ![Embed code option for dashboard](/static/assets/site-administration/images/embed-option-dashboard-view-page.png#width=60%)
+
+3. Click `Copy` to get the embed code with the `<iframe>` tag.
+
+    ![Embed code option dialog](/static/assets/site-administration/images/embed-code-dashboard-view-page.png#width=60%)
+
+4. Click `Copy Embed URL` to get the direct URL without the `<iframe>` tag.
+
+    ![Embed code option dialog](/static/assets/site-administration/images/embed-url-dashboard-view-page.png#width=60%)   
 
 ## Get Embed Code for Widgets
 

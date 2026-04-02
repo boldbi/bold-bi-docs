@@ -344,6 +344,10 @@
     "toPath": "/deploying-bold-bi/deploying-on-windows/silent-installation/#silent-installation-alone-without-providing-the-application-startup-details"
   },
   {
+    "fromPath": "/deploying-bold-bi/deploying-in-windows/silent-installation/#execute-a-silent-installation-of-Bold-BI-as-sub-application",
+    "toPath": "/deploying-bold-bi/deploying-on-windows/silent-installation/#execute-a-silent-installation-of-Bold-BI-as-sub-application"
+  },
+  {
     "fromPath": "/deploying-bold-bi/deploying-in-windows/upgrade-to-latest/#upgrading-guidelines",
     "toPath": "/deploying-bold-bi/deploying-on-windows/upgrade-to-latest/#upgrading-guidelines"
   },
@@ -664,7 +668,7 @@
     "toPath": "/embedding-options/iframe-embedding/datasource-embedding-with-token-authentication/"
   },
   {
-    "fromPath":"/embedding-options/iframe-embedding/datasource-embedding-using-single-sign-on/",
+    "fromPath": "/embedding-options/iframe-embedding/datasource-embedding-using-single-sign-on/",
     "toPath": "/embedding-options/iframe-embedding/datasource-embedding-with-token-authentication/"
   },
   {
@@ -1752,10 +1756,6 @@
     "toPath": "/working-with-data-sources/data-connectors/smartsheet/"
   },
   {
-    "fromPath": "i/working-with-data-source/data-connectors/smartsheet/",
-    "toPath": "/working-with-data-sources/data-connectors/smartsheet/"
-  },
-  {
     "fromPath": "/embedded-bi/working-with-data-source/data-connectors/snowflake/",
     "toPath": "/working-with-data-sources/data-connectors/snowflake/"
   },
@@ -1996,6 +1996,18 @@
     "toPath": "/working-with-data-sources/data-modeling/joining-table/"
   },
   {
+    "fromPath": "/embedded-bi/working-with-data-source/transforming-data/configuring-data-relationship/",
+    "toPath": "/working-with-data-sources/data-modeling/configuring-data-relationship/"
+  },
+  {
+    "fromPath": "/working-with-data-sources/transforming-data/configuring-data-relationship/",
+    "toPath": "/working-with-data-sources/data-modeling/configuring-data-relationship/"
+  },
+  {
+    "fromPath": "/working-with-data-source/transforming-data/configuring-data-relationship/",
+    "toPath": "/working-with-data-sources/data-modeling/configuring-data-relationship/"
+  },
+  {
     "fromPath": "/embedded-bi/working-with-data-source/transforming-data/formatting-column/",
     "toPath": "/working-with-data-sources/data-modeling/formatting-column/"
   },
@@ -2101,11 +2113,11 @@
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/combine-data-sources/",
-    "toPath": "/working-with-data-sources/combine-data-sources/"
+    "toPath": "/working-with-data-sources/append-data-sources/"
   },
   {
     "fromPath": "/working-with-data-source/combine-data-sources/",
-    "toPath": "/working-with-data-sources/combine-data-sources/"
+    "toPath": "/working-with-data-sources/append-data-sources/"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/editing-a-data-connection/",
@@ -2496,6 +2508,14 @@
     "toPath": "/visualizing-data/working-with-widgets/widget-action/"
   },
   {
+    "fromPath": "/embedded-bi/visualizing-data/working-with-widgets/saving-user-interacted-widgets/",
+    "toPath": "/visualizing-data/working-with-widgets/saving-user-interacted-widgets/"
+  },
+  {
+    "fromPath": "/embedded-bi/visualizing-data/working-with-widgets/saving-user-interacted-widgets/grid",
+    "toPath": "/visualizing-data/working-with-widgets/saving-user-interacted-widgets/grid"
+  },
+  {
     "fromPath": "/embedded-bi/working-with-dashboards/",
     "toPath": "/working-with-dashboards/"
   },
@@ -2526,6 +2546,10 @@
   {
     "fromPath": "/embedded-bi/working-with-dashboards/publish-dashboard/",
     "toPath": "/working-with-dashboards/publish-dashboard/"
+  },
+  {
+    "fromPath": "/embedded-bi/working-with-dashboards/dashboard-properties/",
+    "toPath": "/working-with-dashboards/dashboard-properties/"
   },
   {
     "fromPath": "/embedded-bi/working-with-dashboards/data-alerts/",
@@ -2744,8 +2768,8 @@
     "toPath": "/utilities/bold-bi-command-line-tools/v3.3-or-older/reset-application-database/"
   },
   {
-	"fromPath": "/utilities/openai-fine-tuning-utility/",
-	"toPath": "/utilities/fine-tuning-utility/"
+    "fromPath": "/utilities/openai-fine-tuning-utility/",
+    "toPath": "/utilities/fine-tuning-utility/"
   },
   {
     "fromPath": "/embedded-bi/site-administration/",
@@ -2758,6 +2782,10 @@
   {
     "fromPath": "/embedded-bi/site-administration/dashboard-settings/",
     "toPath": "/site-administration/dashboard-settings/"
+  },
+  {
+    "fromPath": "/embedded-bi/site-administration/dashboard-settings/default-dashboard/",
+    "toPath": "/site-administration/dashboard-settings/default-dashboard/"
   },
   {
     "fromPath": "/embedded-bi/site-administration/dashboard-settings/public-dashboards/",
@@ -2777,7 +2805,11 @@
   },
   {
     "fromPath": "/embedded-bi/site-administration/dashboard-settings/usage-analytics/",
-    "toPath": "/site-administration/dashboard-settings/usage-analytics/"
+    "toPath": "/site-administration/dashboard-settings/enterprise-insights/"
+  },
+  {
+    "fromPath": "/site-administration/usage-analytics-dashboard/",
+    "toPath": "/site-administration/enterprise-insights-dashboard/"
   },
   {
     "fromPath": "/embedded-bi/site-administration/dashboard-settings/deployment-dashboard/",
@@ -2944,12 +2976,20 @@
     "toPath": "/embedded-bi/security-configuration/single-sign-on/overview/"
   },
   {
+    "fromPath": "/embedded-bi/site-administration/sso/json-web-token/",
+    "toPath": "/security-configuration/single-sign-on/json-web-token/"
+  },
+  {
     "fromPath": "/embedded-bi/security-configuration/single-sign-on/overview/",
     "toPath": "/security-configuration/single-sign-on/overview/"
   },
   {
     "fromPath": "/embedded-bi/site-administration/usage-analytics-dashboard/",
-    "toPath": "/site-administration/usage-analytics-dashboard/"
+    "toPath": "/site-administration/enterprise-insights-dashboard/"
+  },
+  {
+    "fromPath": "/site-administration/dashboard-settings/usage-analytics/",
+    "toPath": "/site-administration/dashboard-settings/enterprise-insights/"
   },
   {
     "fromPath": "/embedded-bi/managing-resources/",
@@ -3178,6 +3218,10 @@
   {
     "fromPath": "/embedded-bi/security/x-frame-options/",
     "toPath": "/security-configuration/x-frame-options/"
+  },
+  {
+    "fromPath": "/embedded-bi/security/network-settings/",
+    "toPath": "/security-configuration/network-settings/"
   },
   {
     "fromPath": "/embedded-bi/manage-webhooks/",
@@ -4436,6 +4480,14 @@
     "toPath": "/working-with-data-sources/data-modeling/joining-table/"
   },
   {
+    "fromPath": "/cloud-bi/working-with-data-source/transforming-data/configuring-data-relationship/",
+    "toPath": "/working-with-data-sources/data-modeling/configuring-data-relationship/"
+  },
+  {
+    "fromPath": "/working-with-data-source/configuring-data-relationship/",
+    "toPath": "/working-with-data-sources/data-modeling/configuring-data-relationship/"
+  },
+  {
     "fromPath": "/cloud-bi/working-with-data-source/transforming-data/formatting-column/",
     "toPath": "/working-with-data-sources/data-modeling/formatting-column/"
   },
@@ -4477,7 +4529,7 @@
   },
   {
     "fromPath": "/cloud-bi/working-with-data-source/combine-data-sources/",
-    "toPath": "/working-with-data-sources/combine-data-sources/"
+    "toPath": "/working-with-data-sources/append-data-sources/"
   },
   {
     "fromPath": "/cloud-bi/working-with-data-source/editing-a-data-connection/",
@@ -4786,6 +4838,10 @@
   {
     "fromPath": "/cloud-bi/working-with-dashboards/publish-dashboard/",
     "toPath": "/working-with-dashboards/publish-dashboard/"
+  },
+    {
+    "fromPath": "/cloud-bi//working-with-dashboards/dashboard-properties/",
+    "toPath": "/working-with-dashboards/dashboard-properties/"
   },
   {
     "fromPath": "/cloud-bi/working-with-dashboards/preview-dashboard/",
@@ -5452,28 +5508,56 @@
     "toPath": "/security-configuration/data-security-configuration/#sites-profile"
   },
   {
+    "fromPath": "/embedded-bi/manage-permissions/",
+    "toPath": "/managing-resources/manage-permissions/manage-resources-permission/"
+  },
+  {
     "fromPath": "/embedded-bi/manage-permissions/#entity",
-    "toPath": "/managing-resources/manage-permissions/#entity"
+    "toPath": "/managing-resources/manage-permissions/manage-resources-permission/#entity"
+  },
+  {
+    "fromPath": "/managing-resources/manage-permissions/#entity",
+    "toPath": "/managing-resources/manage-permissions/manage-resources-permission/#entity"
   },
   {
     "fromPath": "/embedded-bi/manage-permissions/#scope",
-    "toPath": "/managing-resources/manage-permissions/#scope"
+     "toPath": "/managing-resources/manage-permissions/manage-resources-permission/#scope"
+  },
+  {
+    "fromPath": "/managing-resources/manage-permissions/#scope",
+    "toPath": "/managing-resources/manage-permissions/manage-resources-permission/#scope" 
   },
   {
     "fromPath": "/embedded-bi/manage-permissions/#access-mode",
-    "toPath": "/managing-resources/manage-permissions/#access-mode"
+    "toPath": "/managing-resources/manage-permissions/manage-resources-permission/#access-mode"
+  },
+  {
+    "fromPath": "/managing-resources/manage-permissions/#access-mode",
+    "toPath": "/managing-resources/manage-permissions/manage-resources-permission/#access-mode"
   },
   {
     "fromPath": "/embedded-bi/manage-permissions/#add-permissions",
-    "toPath": "/managing-resources/manage-permissions/#add-permissions"
+    "toPath": "/managing-resources/manage-permissions/manage-resources-permission/#add-permissions"
+  },
+  {
+    "fromPath": "/managing-resources/manage-permissions/#add-permissions",
+    "toPath": "/managing-resources/manage-permissions/manage-resources-permission/#add-permissions"
   },
   {
     "fromPath": "/embedded-bi/manage-permissions/#all-resources",
-    "toPath": "/managing-resources/manage-permissions/#all-resources"
+     "toPath": "/managing-resources/manage-permissions/manage-resources-permission/#all-resources"
+  },
+  {
+    "fromPath": "/managing-resources/manage-permissions/#all-resources",
+    "toPath": "/managing-resources/manage-permissions/manage-resources-permission/#all-resources"
   },
   {
     "fromPath": "/embedded-bi/manage-permissions/#specific-resources",
-    "toPath": "/managing-resources/manage-permissions/#specific-resources"
+    "toPath": "/managing-resources/manage-permissions/manage-resources-permission/#specific-resources"
+   },
+  {
+    "fromPath": "/managing-resources/manage-permissions/#specific-resources",
+    "toPath": "/managing-resources/manage-permissions/manage-resources-permission/#specific-resources"  
   },
   {
     "fromPath": "/embedded-bi/manage-permissions/#all-settings",
@@ -5864,8 +5948,8 @@
     "toPath": "/faq/how-to-group-the-data-using-bold-bi/#grouping-data-using-the-code-view-mode"
   },
   {
-    "fromPath": "/cloud-bi/faq/how-to-group-the-data-using-bold-bi/#grouping-data-using-views:",
-    "toPath": "/faq/how-to-group-the-data-using-bold-bi/#grouping-data-using-views:"
+    "fromPath": "/cloud-bi/faq/how-to-group-the-data-using-bold-bi/#grouping-data-using-views",
+    "toPath": "/faq/how-to-group-the-data-using-bold-bi/#grouping-data-using-views"
   },
   {
     "fromPath": "/cloud-bi/faq/how-to-pass-dashboard-parameter-in-iframe-embedding-a-dashboard/#passing-dashboard-parameter-with-iframe",
@@ -5900,8 +5984,8 @@
     "toPath": "/faq/how-to-use-median-aggregation-in-bold-bi/#steps-to-use-the-median-aggregation-in-bold-bi"
   },
   {
-    "fromPath": "/cloud-bi/faq/working-with-custom-query-extract-mode-in-bold-bi/#how-to-connect-custom-query-in-extract-mode:",
-    "toPath": "/faq/working-with-custom-query-extract-mode-in-bold-bi/#how-to-connect-custom-query-in-extract-mode:"
+    "fromPath": "/cloud-bi/faq/working-with-custom-query-extract-mode-in-bold-bi/#how-to-connect-custom-query-in-extract-mode",
+    "toPath": "/faq/working-with-custom-query-extract-mode-in-bold-bi/#how-to-connect-custom-query-in-extract-mode"
   },
   {
     "fromPath": "/cloud-bi/getting-started/quick-start/#opening-dashboard-designer",
@@ -6656,8 +6740,8 @@
     "toPath": "/application-startup/v4.2.68-or-earlier/#offline-installation"
   },
   {
-    "fromPath": "/embedded-bi/application-startup/v4.2.68-or-earlier/#possible-errors-cases-and-their-solution:",
-    "toPath": "/application-startup/v4.2.68-or-earlier/#possible-errors-cases-and-their-solution:"
+    "fromPath": "/embedded-bi/application-startup/v4.2.68-or-earlier/#possible-errors-cases-and-their-solution",
+    "toPath": "/application-startup/v4.2.68-or-earlier/#possible-errors-cases-and-their-solution"
   },
   {
     "fromPath": "/embedded-bi/application-startup/v4.2.68-or-earlier/#application-startup-for-bold-bi-enterprise",
@@ -6720,16 +6804,8 @@
     "toPath": "/application-startup/v4.2.68-or-earlier/#create-site"
   },
   {
-    "fromPath": "/embedded-bi/faq/features-needed-to-enable-in-iis-to-run-bold-bi-in-win-client-os/#steps-to-enable-the-iis-and-features-that-are-needed-to-run-the-bold-bi-server-in-windows-client-os:",
-    "toPath": "/faq/features-needed-to-enable-in-iis-to-run-bold-bi-in-win-client-os/#steps-to-enable-the-iis-and-features-that-are-needed-to-run-the-bold-bi-server-in-windows-client-os:"
-  },
-  {
     "fromPath": "/embedded-bi/faq/features-needed-to-enable-in-iis-to-run-bold-bi-in-win-client-os/#required-web-server-components",
     "toPath": "/faq/features-needed-to-enable-in-iis-to-run-bold-bi-in-win-client-os/#required-web-server-components"
-  },
-  {
-    "fromPath": "/embedded-bi/faq/features-needed-to-enable-in-iis-to-run-bold-bi-in-win-server-os/#steps-to-enable-the-iis-and-features-that-are-needed-to-run-the-bold-bi-server-in-windows-server-os",
-    "toPath": "/faq/features-needed-to-enable-in-iis-to-run-bold-bi-in-win-server-os/#steps-to-enable-the-iis-and-features-that-are-needed-to-run-the-bold-bi-server-in-windows-server-os"
   },
   {
     "fromPath": "/embedded-bi/faq/features-needed-to-enable-in-iis-to-run-bold-bi-in-win-server-os/#required-web-server-components",
@@ -6756,8 +6832,8 @@
     "toPath": "/faq/how-to-apply-row-level-security-in-elastic-search-data-source/#row-level-security-in-elastic-search-data-source"
   },
   {
-    "fromPath": "/embedded-bi/faq/how-to-apply-widget-filters-using-both-initialrendering-and-ondemand-in-embedding/#steps-to-follow-for-applying-filters-into-widgets,",
-    "toPath": "/faq/how-to-apply-widget-filters-using-both-initialrendering-and-ondemand-in-embedding/#steps-to-follow-for-applying-filters-into-widgets,"
+    "fromPath": "/embedded-bi/faq/how-to-apply-widget-filters-using-both-initialrendering-and-ondemand-in-embedding/#steps-to-follow-for-applying-filters-into-widgets",
+    "toPath": "/faq/how-to-apply-widget-filters-using-both-initialrendering-and-ondemand-in-embedding/#steps-to-follow-for-applying-filters-into-widgets"
   },
   {
     "fromPath": "/embedded-bi/faq/how-to-apply-widget-filters-using-both-initialrendering-and-ondemand-in-embedding/#how-the-sample-works",
@@ -6780,16 +6856,8 @@
     "toPath": "/faq/how-to-configure-the-bold-bi-with-reverse-proxy-server-in-the-dmz-in-linux/#prerequisites"
   },
   {
-    "fromPath": "/embedded-bi/faq/how-to-configure-the-bold-bi-with-reverse-proxy-server-in-the-dmz-in-linux/#follow-the-given-steps-to-configure-the-bold-bi-with-a-reverse-proxy-server-in-the-dmz-on-a-linux-server",
-    "toPath": "/faq/how-to-configure-the-bold-bi-with-reverse-proxy-server-in-the-dmz-in-linux/#follow-the-given-steps-to-configure-the-bold-bi-with-a-reverse-proxy-server-in-the-dmz-on-a-linux-server"
-  },
-  {
     "fromPath": "/embedded-bi/faq/how-to-configure-the-bold-bi-with-reverse-proxy-server-the-dmz-in-windows/#prerequisites",
     "toPath": "/faq/how-to-configure-the-bold-bi-with-reverse-proxy-server-the-dmz-in-windows/#prerequisites"
-  },
-  {
-    "fromPath": "/embedded-bi/faq/how-to-configure-the-bold-bi-with-reverse-proxy-server-the-dmz-in-windows/#follow-the-given-steps-to-configure-the-bold-bi-with-a-reverse-proxy-server-in-the-dmz-in-the-windows-server",
-    "toPath": "/faq/how-to-configure-the-bold-bi-with-reverse-proxy-server-the-dmz-in-windows/#follow-the-given-steps-to-configure-the-bold-bi-with-a-reverse-proxy-server-in-the-dmz-in-the-windows-server"
   },
   {
     "fromPath": "/embedded-bi/faq/how-to-connect-a-live-xml-or-json-or-csv-or-excel-file-in-bold-bi-dashboard/#steps-to-connect-a-live-filecsv/json/xml/excel-using-web-services",
@@ -6864,32 +6932,32 @@
     "toPath": "/faq/how-to-customize-side-bar-menu/#steps-to-customize-side-bar-menu-option-based-on-user-permission"
   },
   {
-    "fromPath": "/embedded-bi/faq/how-to-customize-side-bar-menu/#dashboard-dependent-menus:",
-    "toPath": "/faq/how-to-customize-side-bar-menu/#dashboard-dependent-menus:"
+    "fromPath": "/embedded-bi/faq/how-to-customize-side-bar-menu/#dashboard-dependent-menus",
+    "toPath": "/faq/how-to-customize-side-bar-menu/#dashboard-dependent-menus"
   },
   {
     "fromPath": "/embedded-bi/faq/how-to-deploy-bold-bi-using-load-balancer-with-n-windows-servers/#prerequisites",
-    "toPath": "/faq/how-to-deploy-bold-bi-using-load-balancer-with-n-windows-servers/#prerequisites:"
+    "toPath": "/faq/how-to-deploy-bold-bi-using-load-balancer-with-n-windows-servers/#prerequisites"
   },
   {
     "fromPath": "/embedded-bi/faq/how-to-deploy-bold-bi-using-load-balancer-with-n-windows-servers/#create-azure-blob-in-the-azure-cloud-service",
-    "toPath": "/faq/how-to-deploy-bold-bi-using-load-balancer-with-n-windows-servers/#create-azure-blob-in-the-azure-cloud-service:"
+    "toPath": "/faq/how-to-deploy-bold-bi-using-load-balancer-with-n-windows-servers/#create-azure-blob-in-the-azure-cloud-service"
   },
   {
     "fromPath": "/embedded-bi/faq/how-to-deploy-bold-bi-using-load-balancer-with-n-windows-servers/#deploy-bold-bi-in-any-one-of-the-machine",
-    "toPath": "/faq/how-to-deploy-bold-bi-using-load-balancer-with-n-windows-servers/#deploy-bold-bi-in-any-one-of-the-machine:"
+    "toPath": "/faq/how-to-deploy-bold-bi-using-load-balancer-with-n-windows-servers/#deploy-bold-bi-in-any-one-of-the-machine"
   },
   {
     "fromPath": "/embedded-bi/faq/how-to-deploy-bold-bi-using-load-balancer-with-n-windows-servers/#configure-startup-with-azure-blob",
-    "toPath": "/faq/how-to-deploy-bold-bi-using-load-balancer-with-n-windows-servers/#configure-startup-with-azure-blob:"
+    "toPath": "/faq/how-to-deploy-bold-bi-using-load-balancer-with-n-windows-servers/#configure-startup-with-azure-blob"
   },
   {
     "fromPath": "/embedded-bi/faq/how-to-deploy-bold-bi-using-load-balancer-with-n-windows-servers/#configure-network-load-balancer",
-    "toPath": "/faq/how-to-deploy-bold-bi-using-load-balancer-with-n-windows-servers/#configure-network-load-balancer:"
+    "toPath": "/faq/how-to-deploy-bold-bi-using-load-balancer-with-n-windows-servers/#configure-network-load-balancer"
   },
   {
     "fromPath": "/embedded-bi/faq/how-to-deploy-bold-bi-using-load-balancer-with-n-windows-servers/#configure-network-load-balancer-cluster",
-    "toPath": "/faq/how-to-deploy-bold-bi-using-load-balancer-with-n-windows-servers/#configure-network-load-balancer-cluster:"
+    "toPath": "/faq/how-to-deploy-bold-bi-using-load-balancer-with-n-windows-servers/#configure-network-load-balancer-cluster"
   },
   {
     "fromPath": "/embedded-bi/faq/how-to-deploy-boldbi-as-offline-deployment-in-docker/#steps-to-deploy-offline-bold-bi-in-docker",
@@ -6936,8 +7004,8 @@
     "toPath": "/faq/how-to-group-the-data-using-bold-bi/#grouping-data-using-the-code-view-mode"
   },
   {
-    "fromPath": "/embedded-bi/faq/how-to-group-the-data-using-bold-bi/#grouping-data-using-views:",
-    "toPath": "/faq/how-to-group-the-data-using-bold-bi/#grouping-data-using-views:"
+    "fromPath": "/embedded-bi/faq/how-to-group-the-data-using-bold-bi/#grouping-data-using-views",
+    "toPath": "/faq/how-to-group-the-data-using-bold-bi/#grouping-data-using-views"
   },
   {
     "fromPath": "/embedded-bi/faq/how-to-hide-release-alert-banner-in-bold-bi-application/#release-alert-banner",
@@ -6962,10 +7030,6 @@
   {
     "fromPath": "/embedded-bi/faq/how-to-install-bold-bi-in-windows-server-machine-without-using-installer/#prerequisites",
     "toPath": "/faq/how-to-install-bold-bi-in-windows-server-machine-without-using-installer/#prerequisites"
-  },
-  {
-    "fromPath": "/embedded-bi/faq/how-to-install-bold-bi-in-windows-server-machine-without-using-installer/#follow-the-below-steps-to-deploy-bold-bi-on-a-windows-server-machine-without-using-the-installer",
-    "toPath": "/faq/how-to-install-bold-bi-in-windows-server-machine-without-using-installer/#follow-the-below-steps-to-deploy-bold-bi-on-a-windows-server-machine-without-using-the-installer"
   },
   {
     "fromPath": "/embedded-bi/faq/how-to-pass-dashboard-parameter-in-iframe-embedding-a-dashboard/#passing-dashboard-parameter-with-iframe",
@@ -7004,24 +7068,20 @@
     "toPath": "/faq/how-to-resolve-login-failed-for-user-in-windows-authentication-mode/#why-this-issue-occurred"
   },
   {
-    "fromPath": "/embedded-bi/faq/how-to-resolve-login-failed-for-user-in-windows-authentication-mode/#the-steps-for-adding-`nt-authority/system`-to-access-sql-server-windows-authentication-mode-in-iis-or-iis-express",
-    "toPath": "/faq/how-to-resolve-login-failed-for-user-in-windows-authentication-mode/#the-steps-for-adding-`nt-authority/system`-to-access-sql-server-windows-authentication-mode-in-iis-or-iis-express"
-  },
-  {
     "fromPath": "/embedded-bi/faq/how-to-resolve-no-data-to-be-displayed-alert/#no-data-available-in-the-database-itself",
     "toPath": "/faq/how-to-resolve-no-data-to-be-displayed-alert/#no-data-available-in-the-database-itself"
   },
   {
-    "fromPath": "/embedded-bi/faq/how-to-resolve-no-data-to-be-displayed-alert/#applying-filter-values:",
-    "toPath": "/faq/how-to-resolve-no-data-to-be-displayed-alert/#applying-filter-values:"
+    "fromPath": "/embedded-bi/faq/how-to-resolve-no-data-to-be-displayed-alert/#applying-filter-values",
+    "toPath": "/faq/how-to-resolve-no-data-to-be-displayed-alert/#applying-filter-values"
   },
   {
-    "fromPath": "/embedded-bi/faq/how-to-resolve-no-data-to-be-displayed-alert/#user-restrictions:",
-    "toPath": "/faq/how-to-resolve-no-data-to-be-displayed-alert/#user-restrictions:"
+    "fromPath": "/embedded-bi/faq/how-to-resolve-no-data-to-be-displayed-alert/#user-restrictions",
+    "toPath": "/faq/how-to-resolve-no-data-to-be-displayed-alert/#user-restrictions"
   },
   {
-    "fromPath": "/embedded-bi/faq/how-to-resolve-no-data-to-be-displayed-alert/#isolation-code-in-site-level:",
-    "toPath": "/faq/how-to-resolve-no-data-to-be-displayed-alert/#isolation-code-in-site-level:"
+    "fromPath": "/embedded-bi/faq/how-to-resolve-no-data-to-be-displayed-alert/#isolation-code-in-site-level",
+    "toPath": "/faq/how-to-resolve-no-data-to-be-displayed-alert/#isolation-code-in-site-level"
   },
   {
     "fromPath": "/embedded-bi/faq/how-to-restart-the-bold-bi-embedded-application/#windows",
@@ -7112,10 +7172,6 @@
     "toPath": "/faq/troubleshoot-gateways-boldbi/#error-login-failed-for-user---sql-server-windows-authentication"
   },
   {
-    "fromPath": "/embedded-bi/faq/troubleshoot-gateways-boldbi/#error-couldn't-connect-to-server",
-    "toPath": "/faq/troubleshoot-gateways-boldbi/#error-couldn't-connect-to-server"
-  },
-  {
     "fromPath": "/embedded-bi/faq/troubleshoot-gateways-boldbi/#error-command-time-out-issue",
     "toPath": "/faq/troubleshoot-gateways-boldbi/#error-command-time-out-issue"
   },
@@ -7184,8 +7240,8 @@
     "toPath": "/faq/where-can-i-find-the-error-and-debug-log-files/#bold-bi-version-below-4.1.36"
   },
   {
-    "fromPath": "/embedded-bi/faq/working-with-custom-query-extract-mode-in-bold-bi/#how-to-connect-custom-query-in-extract-mode:",
-    "toPath": "/faq/working-with-custom-query-extract-mode-in-bold-bi/#how-to-connect-custom-query-in-extract-mode:"
+    "fromPath": "/embedded-bi/faq/working-with-custom-query-extract-mode-in-bold-bi/#how-to-connect-custom-query-in-extract-mode",
+    "toPath": "/faq/working-with-custom-query-extract-mode-in-bold-bi/#how-to-connect-custom-query-in-extract-mode"
   },
   {
     "fromPath": "/embedded-bi/getting-started/creating-dashboard/#opening-dashboard-designer",
@@ -7720,10 +7776,6 @@
     "toPath": "/getting-started/embedding-in-your-application/#how-to-implement-the-authorize-server-with-user-mail-or-user-name"
   },
   {
-    "fromPath": "/embedded-bi/javascript-based/getting-started/#how-to-pass-the-dashboard-parameter-and-url-filter-parameter-in-the-authorization-end-point-dynamically",
-    "toPath": "/getting-started/embedding-in-your-application/#how-to-pass-the-dashboard-parameter-and-url-filter-parameter-in-the-authorization-end-point-dynamically"
-  },
-  {
     "fromPath": "/embedded-bi/javascript-based/getting-started/#how-to-get-embed-secret-key-from-bold-bi-application",
     "toPath": "/getting-started/embedding-in-your-application/#how-to-get-embed-secret-key-from-bold-bi-application"
   },
@@ -7754,10 +7806,6 @@
   {
     "fromPath": "/embedded-bi/javascript-based/embedding-multiple-dashboards-and-widget-embedding/#how-to-implement-the-authorize-server-with-user-mail-or-user-name",
     "toPath": "/embedding-opions/embedding-sdk/embedding-multiple-dashboards-and-widget-embedding/#how-to-implement-the-authorize-server-with-user-mail-or-user-name"
-  },
-  {
-    "fromPath": "/embedded-bi/javascript-based/embedding-multiple-dashboards-and-widget-embedding/#how-to-pass-the-dashboard-parameter-and-url-filter-parameter-in-the-authorization-end-point-dynamically",
-    "toPath": "/embedding-opions/embedding-sdk/embedding-multiple-dashboards-and-widget-embedding/#how-to-pass-the-dashboard-parameter-and-url-filter-parameter-in-the-authorization-end-point-dynamically"
   },
   {
     "fromPath": "/embedded-bi/javascript-based/embedding-multiple-dashboards-and-widget-embedding/#how-to-get-embed-secret-key-from-bold-bi-application",
@@ -7810,10 +7858,6 @@
   {
     "fromPath": "/embedded-bi/javascript-based/widget-embedding/#how-to-implement-the-authorize-server-with-user-mail-or-user-name",
     "toPath": "/embedding-opions/embedding-sdk/embedding-a-widget/#how-to-implement-the-authorize-server-with-user-mail-or-user-name"
-  },
-  {
-    "fromPath": "/embedded-bi/javascript-based/widget-embedding/#how-to-pass-the-dashboard-parameter-and-url-parameter-filters-in-the-authorization-end-point-dynamically",
-    "toPath": "/embedding-opions/embedding-sdk/embedding-a-widget/#how-to-pass-the-dashboard-parameter-and-url-parameter-filters-in-the-authorization-end-point-dynamically"
   },
   {
     "fromPath": "/embedded-bi/javascript-based/widget-embedding/#how-to-get-embed-secret-key-from-bold-bi-application",
@@ -7998,10 +8042,6 @@
   {
     "fromPath": "/embedded-bi/managing-resources/manage-schedules/#add-schedule-from-schedules-page",
     "toPath": "/managing-resources/manage-schedules/#add-schedule-from-schedules-page"
-  },
-  {
-    "fromPath": "/embedded-bi/managing-resources/manage-schedules/#add-schedule-from-`+`-button-menu",
-    "toPath": "/managing-resources/manage-schedules/#add-schedule-from-`+`-button-menu"
   },
   {
     "fromPath": "/embedded-bi/managing-resources/manage-schedules/#add-schedule-from-context-menu-of-the-respective-dashboards",
@@ -8480,16 +8520,8 @@
     "toPath": "/security-configuration/known-domain-configuration/#avoid-ssrf-attack-in-bold-bi"
   },
   {
-    "fromPath": "/embedded-bi/security/known-domain-configuration/#steps-to-configure-the-known-domain's",
-    "toPath": "/security-configuration/known-domain-configuration/#steps-to-configure-the-known-domain's"
-  },
-  {
     "fromPath": "/embedded-bi/security/x-frame-options/#enabling-x-frame-options",
     "toPath": "/security-configuration/x-frame-options/#enabling-x-frame-options"
-  },
-  {
-    "fromPath": "/embedded-bi/setup/deploying-in-kubernetes/#deployments-and-it's-usages",
-    "toPath": "/deploying-bold-bi/deploying-on-kubernetes/#deployments-and-it's-usages"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-kubernetes/#how-to-achieve-high-availability-in-bold-bi-using-kubernetes",
@@ -8502,10 +8534,6 @@
   {
     "fromPath": "/embedded-bi/setup/deploying-in-kubernetes/#how-to-deploy-bold-bi-in-kubernetes",
     "toPath": "/deploying-bold-bi/deploying-on-kubernetes/#how-to-deploy-bold-bi-in-kubernetes"
-  },
-  {
-    "fromPath": "/deploying-bold-bi/deploying-in-kubernetes/#deployments-and-it's-usages",
-    "toPath": "/deploying-bold-bi/deploying-on-kubernetes/#deployments-and-it's-usages"
   },
   {
     "fromPath": "/deploying-bold-bi/deploying-in-kubernetes/#how-to-achieve-high-availability-in-bold-bi-using-kubernetes",
@@ -8545,7 +8573,7 @@
   },
   {
     "fromPath": "/embedded-bi/setup/overview/#registration-and-download",
-    "toPath": "/deploying-bold-bi/overview/#registration-and-download"
+    "toPath": "/deploying-bold-bi/overview/#how-to-register-start-a-free-trial-and-download-bold-bi"
   },
   {
     "fromPath": "/embedded-bi/site-administration/account-settings/#account-activation-modes",
@@ -8677,7 +8705,7 @@
   },
   {
     "fromPath": "/embedded-bi/site-administration/usage-analytics-dashboard/#usage-analytics-dashboard-widgets-details",
-    "toPath": "/site-administration/usage-analytics-dashboard/#usage-analytics-dashboard-widgets-details"
+    "toPath": "/site-administration/enterprise-insights-dashboard/#enterprise-insights-dashboard-widgets-details"
   },
   {
     "fromPath": "/embedded-bi/site-administration/widget-settings/#add-new-custom-widget",
@@ -9266,10 +9294,6 @@
   {
     "fromPath": "/cloud-bi/managing-resources/manage-dashboards/share-dashboards/#remove-permission",
     "toPath": "/managing-resources/manage-dashboards/share-dashboards/#remove-permission"
-  },
-  {
-    "fromPath": "/cloud-bi/managing-resources/manage-dashboards/share-filtered-dashboards-without-save-views/#steps-to-be-followed-for-sharing-the-filtered-dashboard-without-saving-it-as-view",
-    "toPath": "/managing-resources/manage-dashboards/share-filtered-dashboards-without-save-views/#steps-to-be-followed-for-sharing-the-filtered-dashboard-without-saving-it-as-view"
   },
   {
     "fromPath": "/cloud-bi/managing-resources/manage-dashboards/version-history-of-dashboards/#versions",
@@ -16312,10 +16336,6 @@
     "toPath": "/visualizing-data/visualization-widgets/period-over-period/#binding-fields"
   },
   {
-    "fromPath": "/cloud-bi/visualizing-data/visualization-widgets/period-over-period/#how-'compare-to'-relative-items-range-calculated",
-    "toPath": "/visualizing-data/visualization-widgets/period-over-period/#how-'compare-to'-relative-items-range-calculated"
-  },
-  {
     "fromPath": "/cloud-bi/visualizing-data/visualization-widgets/period-over-period/#how-the-pop-filtering-works-in-slave-widget",
     "toPath": "/visualizing-data/visualization-widgets/period-over-period/#how-the-pop-filtering-works-in-slave-widget"
   },
@@ -21888,12 +21908,12 @@
     "toPath": "/working-with-data-sources/data-connectors/amazon-athena/#connection-sample-for-table-mode"
   },
   {
-    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/amazon-athena/#for-creating-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/amazon-athena/#for-creating-connection:"
+    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/amazon-athena/#for-creating-connection",
+    "toPath": "/working-with-data-sources/data-connectors/amazon-athena/#for-creating-connection"
   },
   {
-    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/amazon-athena/#for-editing-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/amazon-athena/#for-editing-connection:"
+    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/amazon-athena/#for-editing-connection",
+    "toPath": "/working-with-data-sources/data-connectors/amazon-athena/#for-editing-connection"
   },
   {
     "fromPath": "/cloud-bi/working-with-data-source/data-connectors/amazon-athena/#connection-sample-for-code-view-mode",
@@ -21940,8 +21960,8 @@
     "toPath": "/working-with-data-sources/data-connectors/amazon-aurora/#refresh-settings"
   },
   {
-    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/amazon-aurora/#steps-to-configure-the-data-source-refresh-settings:",
-    "toPath": "/working-with-data-sources/data-connectors/amazon-aurora/#steps-to-configure-the-data-source-refresh-settings:"
+    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/amazon-aurora/#steps-to-configure-the-data-source-refresh-settings",
+    "toPath": "/working-with-data-sources/data-connectors/amazon-aurora/#steps-to-configure-the-data-source-refresh-settings"
   },
   {
     "fromPath": "/cloud-bi/working-with-data-source/data-connectors/amazon-aurora/#preview-and-import-data",
@@ -21980,12 +22000,12 @@
     "toPath": "/working-with-data-sources/data-connectors/amazon-aurora/#connection-sample-for-table-mode"
   },
   {
-    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/amazon-aurora/#for-creating-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/amazon-aurora/#for-creating-connection:"
+    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/amazon-aurora/#for-creating-connection",
+    "toPath": "/working-with-data-sources/data-connectors/amazon-aurora/#for-creating-connection"
   },
   {
-    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/amazon-aurora/#for-editing-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/amazon-aurora/#for-editing-connection:"
+    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/amazon-aurora/#for-editing-connection",
+    "toPath": "/working-with-data-sources/data-connectors/amazon-aurora/#for-editing-connection"
   },
   {
     "fromPath": "/cloud-bi/working-with-data-source/data-connectors/amazon-aurora/#connection-sample-for-code-view-mode",
@@ -22060,8 +22080,8 @@
     "toPath": "/working-with-data-sources/data-connectors/amazon-rds/#refresh-settings"
   },
   {
-    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/amazon-rds/#steps-to-configure-the-data-source-refresh-settings:",
-    "toPath": "/working-with-data-sources/data-connectors/amazon-rds/#steps-to-configure-the-data-source-refresh-settings:"
+    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/amazon-rds/#steps-to-configure-the-data-source-refresh-settings",
+    "toPath": "/working-with-data-sources/data-connectors/amazon-rds/#steps-to-configure-the-data-source-refresh-settings"
   },
   {
     "fromPath": "/cloud-bi/working-with-data-source/data-connectors/amazon-rds/#preview-and-data-import",
@@ -22100,12 +22120,12 @@
     "toPath": "/working-with-data-sources/data-connectors/amazon-rds/#connection-sample-for-table-mode"
   },
   {
-    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/amazon-rds/#for-creating-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/amazon-rds/#for-creating-connection:"
+    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/amazon-rds/#for-creating-connection",
+    "toPath": "/working-with-data-sources/data-connectors/amazon-rds/#for-creating-connection"
   },
   {
-    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/amazon-rds/#for-editing-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/amazon-rds/#for-editing-connection:"
+    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/amazon-rds/#for-editing-connection",
+    "toPath": "/working-with-data-sources/data-connectors/amazon-rds/#for-editing-connection"
   },
   {
     "fromPath": "/cloud-bi/working-with-data-source/data-connectors/amazon-rds/#connection-sample-for-code-view-mode",
@@ -22128,8 +22148,8 @@
     "toPath": "/working-with-data-sources/data-connectors/amazon-redshift/#refresh-settings"
   },
   {
-    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/amazon-redshift/#steps-to-configure-the-data-source-refresh-settings:",
-    "toPath": "/working-with-data-sources/data-connectors/amazon-redshift/#steps-to-configure-the-data-source-refresh-settings:"
+    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/amazon-redshift/#steps-to-configure-the-data-source-refresh-settings",
+    "toPath": "/working-with-data-sources/data-connectors/amazon-redshift/#steps-to-configure-the-data-source-refresh-settings"
   },
   {
     "fromPath": "/cloud-bi/working-with-data-source/data-connectors/amazon-redshift/#preview-and-data-import",
@@ -22168,12 +22188,12 @@
     "toPath": "/working-with-data-sources/data-connectors/amazon-redshift/#connection-sample-for-table-mode"
   },
   {
-    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/amazon-redshift/#for-creating-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/amazon-redshift/#for-creating-connection:"
+    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/amazon-redshift/#for-creating-connection",
+    "toPath": "/working-with-data-sources/data-connectors/amazon-redshift/#for-creating-connection"
   },
   {
-    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/amazon-redshift/#for-editing-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/amazon-redshift/#for-editing-connection:"
+    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/amazon-redshift/#for-editing-connection",
+    "toPath": "/working-with-data-sources/data-connectors/amazon-redshift/#for-editing-connection"
   },
   {
     "fromPath": "/cloud-bi/working-with-data-source/data-connectors/amazon-redshift/#connection-sample-for-code-view-mode",
@@ -22368,12 +22388,12 @@
     "toPath": "/working-with-data-sources/data-connectors/aws-opensearch/#connection-sample"
   },
   {
-    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/aws-opensearch/#for-creating-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/aws-opensearch/#for-creating-connection:"
+    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/aws-opensearch/#for-creating-connection",
+    "toPath": "/working-with-data-sources/data-connectors/aws-opensearch/#for-creating-connection"
   },
   {
-    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/aws-opensearch/#for-editing-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/aws-opensearch/#for-editing-connection:"
+    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/aws-opensearch/#for-editing-connection",
+    "toPath": "/working-with-data-sources/data-connectors/aws-opensearch/#for-editing-connection"
   },
   {
     "fromPath": "/cloud-bi/working-with-data-source/data-connectors/aws-opensearch/#related-links",
@@ -22532,12 +22552,12 @@
     "toPath": "/working-with-data-sources/data-connectors/azure-synapse-analytics/#connection-sample-for-table-mode"
   },
   {
-    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/azure-synapse-analytics/#for-creating-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/azure-synapse-analytics/#for-creating-connection:"
+    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/azure-synapse-analytics/#for-creating-connection",
+    "toPath": "/working-with-data-sources/data-connectors/azure-synapse-analytics/#for-creating-connection"
   },
   {
-    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/azure-synapse-analytics/#for-editing-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/azure-synapse-analytics/#for-editing-connection:"
+    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/azure-synapse-analytics/#for-editing-connection",
+    "toPath": "/working-with-data-sources/data-connectors/azure-synapse-analytics/#for-editing-connection"
   },
   {
     "fromPath": "/cloud-bi/working-with-data-source/data-connectors/azure-synapse-analytics/#connection-sample-for-code-view-mode",
@@ -22736,8 +22756,8 @@
     "toPath": "/working-with-data-sources/data-connectors/cdata/#refresh-settings"
   },
   {
-    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/cdata/#steps-to-configure-the-data-source-refresh-settings:",
-    "toPath": "/working-with-data-sources/data-connectors/cdata/#steps-to-configure-the-data-source-refresh-settings:"
+    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/cdata/#steps-to-configure-the-data-source-refresh-settings",
+    "toPath": "/working-with-data-sources/data-connectors/cdata/#steps-to-configure-the-data-source-refresh-settings"
   },
   {
     "fromPath": "/cloud-bi/working-with-data-source/data-connectors/cdata/#preview-and-data-import",
@@ -22776,12 +22796,12 @@
     "toPath": "/working-with-data-sources/data-connectors/cdata/#connection-sample-for-table-mode"
   },
   {
-    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/cdata/#for-creating-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/cdata/#for-creating-connection:"
+    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/cdata/#for-creating-connection",
+    "toPath": "/working-with-data-sources/data-connectors/cdata/#for-creating-connection"
   },
   {
-    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/cdata/#for-editing-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/cdata/#for-editing-connection:"
+    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/cdata/#for-editing-connection",
+    "toPath": "/working-with-data-sources/data-connectors/cdata/#for-editing-connection"
   },
   {
     "fromPath": "/cloud-bi/working-with-data-source/data-connectors/cdata/#connection-sample-for-code-view-mode",
@@ -22904,12 +22924,12 @@
     "toPath": "/working-with-data-sources/data-connectors/clickhouse/#connection-sample-for-table-mode"
   },
   {
-    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/clickhouse/#for-creating-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/clickhouse/#for-creating-connection:"
+    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/clickhouse/#for-creating-connection",
+    "toPath": "/working-with-data-sources/data-connectors/clickhouse/#for-creating-connection"
   },
   {
-    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/clickhouse/#for-editing-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/clickhouse/#for-editing-connection:"
+    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/clickhouse/#for-editing-connection",
+    "toPath": "/working-with-data-sources/data-connectors/clickhouse/#for-editing-connection"
   },
   {
     "fromPath": "/cloud-bi/working-with-data-source/data-connectors/clickhouse/#connection-sample-for-code-view-mode",
@@ -23008,8 +23028,8 @@
     "toPath": "/working-with-data-sources/data-connectors/cosmosdb/#configuring-cosmos-db-data-source"
   },
   {
-    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/cosmosdb/#choose-mongodb-data-source-by-following-the-given-steps:",
-    "toPath": "/working-with-data-sources/data-connectors/cosmosdb/#choose-mongodb-data-source-by-following-the-given-steps:"
+    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/cosmosdb/#choose-mongodb-data-source-by-following-the-given-steps",
+    "toPath": "/working-with-data-sources/data-connectors/cosmosdb/#choose-mongodb-data-source-by-following-the-given-steps"
   },
   {
     "fromPath": "/cloud-bi/working-with-data-source/data-connectors/cosmosdb/#create-cosmos-db-data-source-via-mongodb-data-source",
@@ -23156,12 +23176,12 @@
     "toPath": "/working-with-data-sources/data-connectors/elastic-search/#connection-sample"
   },
   {
-    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/elastic-search/#for-creating-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/elastic-search/#for-creating-connection:"
+    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/elastic-search/#for-creating-connection",
+    "toPath": "/working-with-data-sources/data-connectors/elastic-search/#for-creating-connection"
   },
   {
-    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/elastic-search/#for-editing-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/elastic-search/#for-editing-connection:"
+    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/elastic-search/#for-editing-connection",
+    "toPath": "/working-with-data-sources/data-connectors/elastic-search/#for-editing-connection"
   },
   {
     "fromPath": "/cloud-bi/working-with-data-source/data-connectors/elastic-search/#related-links",
@@ -23712,16 +23732,16 @@
     "toPath": "/working-with-data-sources/data-connectors/google-analytics/#related-links"
   },
   {
-    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/google-bigquery/#authentication-types:",
-    "toPath": "/working-with-data-sources/data-connectors/google-bigquery/#authentication-types:"
+    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/google-bigquery/#authentication-types",
+    "toPath": "/working-with-data-sources/data-connectors/google-bigquery/#authentication-types"
   },
   {
-    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/google-bigquery/#connecting-with-service-authentication:",
-    "toPath": "/working-with-data-sources/data-connectors/google-bigquery/#connecting-with-service-authentication:"
+    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/google-bigquery/#connecting-with-service-authentication",
+    "toPath": "/working-with-data-sources/data-connectors/google-bigquery/#connecting-with-service-authentication"
   },
   {
-    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/google-bigquery/#connecting-with-oauth:",
-    "toPath": "/working-with-data-sources/data-connectors/google-bigquery/#connecting-with-oauth:"
+    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/google-bigquery/#connecting-with-oauth",
+    "toPath": "/working-with-data-sources/data-connectors/google-bigquery/#connecting-with-oauth"
   },
   {
     "fromPath": "/cloud-bi/working-with-data-source/data-connectors/google-bigquery/#choose-a-google-bigquery-data-source",
@@ -23824,8 +23844,8 @@
     "toPath": "/working-with-data-sources/data-connectors/google-cloud-sql/#refresh-settings"
   },
   {
-    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/google-cloud-sql/#steps-to-configure-the-data-source-refresh-settings:",
-    "toPath": "/working-with-data-sources/data-connectors/google-cloud-sql/#steps-to-configure-the-data-source-refresh-settings:"
+    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/google-cloud-sql/#steps-to-configure-the-data-source-refresh-settings",
+    "toPath": "/working-with-data-sources/data-connectors/google-cloud-sql/#steps-to-configure-the-data-source-refresh-settings"
   },
   {
     "fromPath": "/cloud-bi/working-with-data-source/data-connectors/google-cloud-sql/#preview-and-data-import",
@@ -23864,12 +23884,12 @@
     "toPath": "/working-with-data-sources/data-connectors/google-cloud-sql/#connection-sample-for-table-mode"
   },
   {
-    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/google-cloud-sql/#for-creating-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/google-cloud-sql/#for-creating-connection:"
+    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/google-cloud-sql/#for-creating-connection",
+    "toPath": "/working-with-data-sources/data-connectors/google-cloud-sql/#for-creating-connection"
   },
   {
-    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/google-cloud-sql/#for-editing-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/google-cloud-sql/#for-editing-connection:"
+    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/google-cloud-sql/#for-editing-connection",
+    "toPath": "/working-with-data-sources/data-connectors/google-cloud-sql/#for-editing-connection"
   },
   {
     "fromPath": "/cloud-bi/working-with-data-source/data-connectors/google-cloud-sql/#connection-sample-for-code-view-mode",
@@ -24120,12 +24140,12 @@
     "toPath": "/working-with-data-sources/data-connectors/influxdb/#connection-sample-for-table-mode"
   },
   {
-    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/influxdb/#for-creating-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/influxdb/#for-creating-connection:"
+    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/influxdb/#for-creating-connection",
+    "toPath": "/working-with-data-sources/data-connectors/influxdb/#for-creating-connection"
   },
   {
-    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/influxdb/#for-editing-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/influxdb/#for-editing-connection:"
+    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/influxdb/#for-editing-connection",
+    "toPath": "/working-with-data-sources/data-connectors/influxdb/#for-editing-connection"
   },
   {
     "fromPath": "/cloud-bi/working-with-data-source/data-connectors/influxdb/#connection-sample-for-code-view-mode",
@@ -24596,8 +24616,8 @@
     "toPath": "/working-with-data-sources/data-connectors/mariadb/#refresh-settings"
   },
   {
-    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/mariadb/#steps-to-configure-the-data-source-refresh-settings:",
-    "toPath": "/working-with-data-sources/data-connectors/mariadb/#steps-to-configure-the-data-source-refresh-settings:"
+    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/mariadb/#steps-to-configure-the-data-source-refresh-settings",
+    "toPath": "/working-with-data-sources/data-connectors/mariadb/#steps-to-configure-the-data-source-refresh-settings"
   },
   {
     "fromPath": "/cloud-bi/working-with-data-source/data-connectors/mariadb/#preview-and-data-import",
@@ -24636,12 +24656,12 @@
     "toPath": "/working-with-data-sources/data-connectors/mariadb/#connection-sample-for-table-mode"
   },
   {
-    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/mariadb/#for-creating-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/mariadb/#for-creating-connection:"
+    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/mariadb/#for-creating-connection",
+    "toPath": "/working-with-data-sources/data-connectors/mariadb/#for-creating-connection"
   },
   {
-    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/mariadb/#for-editing-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/mariadb/#for-editing-connection:"
+    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/mariadb/#for-editing-connection",
+    "toPath": "/working-with-data-sources/data-connectors/mariadb/#for-editing-connection"
   },
   {
     "fromPath": "/cloud-bi/working-with-data-source/data-connectors/mariadb/#connection-sample-for-code-view-mode",
@@ -24808,8 +24828,8 @@
     "toPath": "/working-with-data-sources/data-connectors/mysql/#refresh-settings"
   },
   {
-    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/mysql/#steps-to-configure-the-data-source-refresh-settings:",
-    "toPath": "/working-with-data-sources/data-connectors/mysql/#steps-to-configure-the-data-source-refresh-settings:"
+    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/mysql/#steps-to-configure-the-data-source-refresh-settings",
+    "toPath": "/working-with-data-sources/data-connectors/mysql/#steps-to-configure-the-data-source-refresh-settings"
   },
   {
     "fromPath": "/cloud-bi/working-with-data-source/data-connectors/mysql/#preview-and-data-import",
@@ -24848,12 +24868,12 @@
     "toPath": "/working-with-data-sources/data-connectors/mysql/#connection-sample-for-table-mode"
   },
   {
-    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/mysql/#for-creating-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/mysql/#for-creating-connection:"
+    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/mysql/#for-creating-connection",
+    "toPath": "/working-with-data-sources/data-connectors/mysql/#for-creating-connection"
   },
   {
-    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/mysql/#for-editing-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/mysql/#for-editing-connection:"
+    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/mysql/#for-editing-connection",
+    "toPath": "/working-with-data-sources/data-connectors/mysql/#for-editing-connection"
   },
   {
     "fromPath": "/cloud-bi/working-with-data-source/data-connectors/mysql/#connection-sample-for-code-view-mode",
@@ -25080,12 +25100,12 @@
     "toPath": "/working-with-data-sources/data-connectors/oracle/#connection-sample-for-table-mode"
   },
   {
-    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/oracle/#for-creating-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/oracle/#for-creating-connection:"
+    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/oracle/#for-creating-connection",
+    "toPath": "/working-with-data-sources/data-connectors/oracle/#for-creating-connection"
   },
   {
-    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/oracle/#for-editing-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/oracle/#for-editing-connection:"
+    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/oracle/#for-editing-connection",
+    "toPath": "/working-with-data-sources/data-connectors/oracle/#for-editing-connection"
   },
   {
     "fromPath": "/cloud-bi/working-with-data-source/data-connectors/oracle/#connection-sample-for-code-view-mode",
@@ -25268,8 +25288,8 @@
     "toPath": "/working-with-data-sources/data-connectors/postgresql/#refresh-settings"
   },
   {
-    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/postgresql/#steps-to-configure-the-data-source-refresh-settings:",
-    "toPath": "/working-with-data-sources/data-connectors/postgresql/#steps-to-configure-the-data-source-refresh-settings:"
+    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/postgresql/#steps-to-configure-the-data-source-refresh-settings",
+    "toPath": "/working-with-data-sources/data-connectors/postgresql/#steps-to-configure-the-data-source-refresh-settings"
   },
   {
     "fromPath": "/cloud-bi/working-with-data-source/data-connectors/postgresql/#preview-and-data-import",
@@ -25308,12 +25328,12 @@
     "toPath": "/working-with-data-sources/data-connectors/postgresql/#connection-sample-for-table-mode"
   },
   {
-    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/postgresql/#for-creating-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/postgresql/#for-creating-connection:"
+    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/postgresql/#for-creating-connection",
+    "toPath": "/working-with-data-sources/data-connectors/postgresql/#for-creating-connection"
   },
   {
-    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/postgresql/#for-editing-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/postgresql/#for-editing-connection:"
+    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/postgresql/#for-editing-connection",
+    "toPath": "/working-with-data-sources/data-connectors/postgresql/#for-editing-connection"
   },
   {
     "fromPath": "/cloud-bi/working-with-data-source/data-connectors/postgresql/#connection-sample-for-code-view-mode",
@@ -25368,12 +25388,12 @@
     "toPath": "/working-with-data-sources/data-connectors/presto/#connection-sample-for-table-mode"
   },
   {
-    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/presto/#for-creating-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/presto/#for-creating-connection:"
+    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/presto/#for-creating-connection",
+    "toPath": "/working-with-data-sources/data-connectors/presto/#for-creating-connection"
   },
   {
-    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/presto/#for-editing-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/presto/#for-editing-connection:"
+    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/presto/#for-editing-connection",
+    "toPath": "/working-with-data-sources/data-connectors/presto/#for-editing-connection"
   },
   {
     "fromPath": "/cloud-bi/working-with-data-source/data-connectors/presto/#connection-sample-for-code-view-mode",
@@ -25888,8 +25908,8 @@
     "toPath": "/working-with-data-sources/data-connectors/single-store/#refresh-settings"
   },
   {
-    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/single-store/#steps-to-configure-the-data-source-refresh-settings:",
-    "toPath": "/working-with-data-sources/data-connectors/single-store/#steps-to-configure-the-data-source-refresh-settings:"
+    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/single-store/#steps-to-configure-the-data-source-refresh-settings",
+    "toPath": "/working-with-data-sources/data-connectors/single-store/#steps-to-configure-the-data-source-refresh-settings"
   },
   {
     "fromPath": "/cloud-bi/working-with-data-source/data-connectors/single-store/#preview-and-data-import",
@@ -25928,12 +25948,12 @@
     "toPath": "/working-with-data-sources/data-connectors/single-store/#connection-sample-for-table-mode"
   },
   {
-    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/single-store/#for-creating-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/single-store/#for-creating-connection:"
+    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/single-store/#for-creating-connection",
+    "toPath": "/working-with-data-sources/data-connectors/single-store/#for-creating-connection"
   },
   {
-    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/single-store/#for-editing-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/single-store/#for-editing-connection:"
+    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/single-store/#for-editing-connection",
+    "toPath": "/working-with-data-sources/data-connectors/single-store/#for-editing-connection"
   },
   {
     "fromPath": "/cloud-bi/working-with-data-source/data-connectors/single-store/#connection-sample-for-code-view-mode",
@@ -26040,8 +26060,8 @@
     "toPath": "/working-with-data-sources/data-connectors/snowflake/#refresh-settings"
   },
   {
-    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/snowflake/#steps-to-configure-the-data-source-refresh-settings:",
-    "toPath": "/working-with-data-sources/data-connectors/snowflake/#steps-to-configure-the-data-source-refresh-settings:"
+    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/snowflake/#steps-to-configure-the-data-source-refresh-settings",
+    "toPath": "/working-with-data-sources/data-connectors/snowflake/#steps-to-configure-the-data-source-refresh-settings"
   },
   {
     "fromPath": "/cloud-bi/working-with-data-source/data-connectors/snowflake/#preview-and-data-import",
@@ -26080,12 +26100,12 @@
     "toPath": "/working-with-data-sources/data-connectors/snowflake/#connection-sample-for-table-mode"
   },
   {
-    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/snowflake/#for-creating-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/snowflake/#for-creating-connection:"
+    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/snowflake/#for-creating-connection",
+    "toPath": "/working-with-data-sources/data-connectors/snowflake/#for-creating-connection"
   },
   {
-    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/snowflake/#for-editing-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/snowflake/#for-editing-connection:"
+    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/snowflake/#for-editing-connection",
+    "toPath": "/working-with-data-sources/data-connectors/snowflake/#for-editing-connection"
   },
   {
     "fromPath": "/cloud-bi/working-with-data-source/data-connectors/snowflake/#connection-sample-for-code-view-mode",
@@ -26248,12 +26268,12 @@
     "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#connection-sample-for-table-mode"
   },
   {
-    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/sql-data-source/#for-creating-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#for-creating-connection:"
+    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/sql-data-source/#for-creating-connection",
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#for-creating-connection"
   },
   {
-    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/sql-data-source/#for-editing-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#for-editing-connection:"
+    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/sql-data-source/#for-editing-connection",
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#for-editing-connection"
   },
   {
     "fromPath": "/cloud-bi/working-with-data-source/data-connectors/sql-data-source/#connection-sample-for-code-view-mode",
@@ -26388,12 +26408,12 @@
     "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#connection-sample-for-table-mode"
   },
   {
-    "fromPath": "/working-with-data-sources/data-connectors/sql-data-source/#for-creating-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#for-creating-connection:"
+    "fromPath": "/working-with-data-sources/data-connectors/sql-data-source/#for-creating-connection",
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#for-creating-connection"
   },
   {
-    "fromPath": "/working-with-data-sources/data-connectors/sql-data-source/#for-editing-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#for-editing-connection:"
+    "fromPath": "/working-with-data-sources/data-connectors/sql-data-source/#for-editing-connection",
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#for-editing-connection"
   },
   {
     "fromPath": "/working-with-data-sources/data-connectors/sql-data-source/#connection-sample-for-code-view-mode",
@@ -26508,12 +26528,12 @@
     "toPath": "/working-with-data-sources/data-connectors/ssas/#connection-sample-for-table-mode"
   },
   {
-    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/ssas/#for-creating-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/ssas/#for-creating-connection:"
+    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/ssas/#for-creating-connection",
+    "toPath": "/working-with-data-sources/data-connectors/ssas/#for-creating-connection"
   },
   {
-    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/ssas/#for-editing-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/ssas/#for-editing-connection:"
+    "fromPath": "/cloud-bi/working-with-data-source/data-connectors/ssas/#for-editing-connection",
+    "toPath": "/working-with-data-sources/data-connectors/ssas/#for-editing-connection"
   },
   {
     "fromPath": "/cloud-bi/working-with-data-source/data-connectors/ssas/#connection-sample-for-code-view-mode",
@@ -27332,6 +27352,10 @@
     "toPath": "/working-with-data-sources/data-modeling/joining-table/#updating-a-join-condition"
   },
   {
+    "fromPath": "/cloud-bi/working-with-data-source/transforming-data/configuring-data-relationship/#data-relationships",
+    "toPath": "/working-with-data-sources/data-modeling/configuring-data-relationship/#data-relationships"
+  },
+  {
     "fromPath": "/cloud-bi/working-with-data-source/user-filter/#configuring-user-filter",
     "toPath": "/working-with-data-sources/user-filter/#configuring-user-filter"
   },
@@ -27944,10 +27968,6 @@
     "toPath": "/managing-resources/manage-dashboards/share-dashboards/#remove-permission"
   },
   {
-    "fromPath": "/embedded-bi/managing-resources/manage-dashboards/share-filtered-dashboards-without-save-views/#steps-to-be-followed-for-sharing-the-filtered-dashboard-without-saving-it-as-view",
-    "toPath": "/managing-resources/manage-dashboards/share-filtered-dashboards-without-save-views/#steps-to-be-followed-for-sharing-the-filtered-dashboard-without-saving-it-as-view"
-  },
-  {
     "fromPath": "/embedded-bi/managing-resources/manage-dashboards/unlisted-dashboards/#steps-to-unlist-a-dashboard",
     "toPath": "/managing-resources/manage-dashboards/unlisted-dashboards/#steps-to-unlist-a-dashboard"
   },
@@ -28316,8 +28336,8 @@
     "toPath": "/multi-tenancy/site-administration/manage-license/#update-license-from-license-file"
   },
   {
-    "fromPath": "/embedded-bi/multi-tenancy/site-administration/manage-license/#possible-errors-cases-and-their-solution:",
-    "toPath": "/multi-tenancy/site-administration/manage-license/#possible-errors-cases-and-their-solution:"
+    "fromPath": "/embedded-bi/multi-tenancy/site-administration/manage-license/#possible-errors-cases-and-their-solution",
+    "toPath": "/multi-tenancy/site-administration/manage-license/#possible-errors-cases-and-their-solution"
   },
   {
     "fromPath": "/embedded-bi/multi-tenancy/site-administration/manage-localization/#add-language",
@@ -28336,8 +28356,8 @@
     "toPath": "/multi-tenancy/site-administration/manage-localization/#set-localization-in-application"
   },
   {
-    "fromPath": "/embedded-bi/multi-tenancy/site-administration/manage-localization/#possible-errors-cases-and-their-solution:",
-    "toPath": "/multi-tenancy/site-administration/manage-localization/#possible-errors-cases-and-their-solution:"
+    "fromPath": "/embedded-bi/multi-tenancy/site-administration/manage-localization/#possible-errors-cases-and-their-solution",
+    "toPath": "/multi-tenancy/site-administration/manage-localization/#possible-errors-cases-and-their-solution"
   },
   {
     "fromPath": "/embedded-bi/multi-tenancy/site-administration/rebranding/#organization-name",
@@ -28634,6 +28654,10 @@
   {
     "fromPath": "/embedded-bi/setup/deploying-in-windows/silent-installation/#silent-installation-alone-without-providing-the-application-startup-details",
     "toPath": "/deploying-bold-bi/deploying-on-windows/silent-installation/#silent-installation-alone-without-providing-the-application-startup-details"
+  },
+  {
+    "fromPath": "/embedded-bi/setup/deploying-in-windows/silent-installation/#execute-a-silent-installation-of-Bold-BI-as-sub-application",
+    "toPath": "/deploying-bold-bi/deploying-on-windows/silent-installation/#execute-a-silent-installation-of-Bold-BI-as-sub-application"
   },
   {
     "fromPath": "/embedded-bi/setup/deploying-in-windows/upgrade-to-latest/#upgrading-guidelines",
@@ -35812,10 +35836,6 @@
     "toPath": "/visualizing-data/visualization-widgets/period-over-period/#binding-fields"
   },
   {
-    "fromPath": "/embedded-bi/visualizing-data/visualization-widgets/period-over-period/#how-'compare-to'-relative-items-range-calculated",
-    "toPath": "/visualizing-data/visualization-widgets/period-over-period/#how-'compare-to'-relative-items-range-calculated"
-  },
-  {
     "fromPath": "/embedded-bi/visualizing-data/visualization-widgets/period-over-period/#how-the-pop-filtering-works-in-slave-widget",
     "toPath": "/visualizing-data/visualization-widgets/period-over-period/#how-the-pop-filtering-works-in-slave-widget"
   },
@@ -41316,8 +41336,8 @@
     "toPath": "/working-with-data-sources/custom-connector/create-custom-connector/#create-custom-connector-in-bold-bi"
   },
   {
-    "fromPath": "/embedded-bi/working-with-data-source/custom-connector/create-custom-connector/#json-template-syntax-:",
-    "toPath": "/working-with-data-sources/custom-connector/create-custom-connector/#json-template-syntax-:"
+    "fromPath": "/embedded-bi/working-with-data-source/custom-connector/create-custom-connector/#json-template-syntax-",
+    "toPath": "/working-with-data-sources/custom-connector/create-custom-connector/#json-template-syntax-"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/custom-connector/create-custom-connector/#syntax-explanation",
@@ -41352,12 +41372,12 @@
     "toPath": "/working-with-data-sources/custom-connector/create-custom-connector/#authentication"
   },
   {
-    "fromPath": "/embedded-bi/working-with-data-source/custom-connector/create-custom-connector/#none:",
-    "toPath": "/working-with-data-sources/custom-connector/create-custom-connector/#none:"
+    "fromPath": "/embedded-bi/working-with-data-source/custom-connector/create-custom-connector/#none",
+    "toPath": "/working-with-data-sources/custom-connector/create-custom-connector/#none"
   },
   {
-    "fromPath": "/embedded-bi/working-with-data-source/custom-connector/create-custom-connector/#basic-authentication:",
-    "toPath": "/working-with-data-sources/custom-connector/create-custom-connector/#basic-authentication:"
+    "fromPath": "/embedded-bi/working-with-data-source/custom-connector/create-custom-connector/#basic-authentication",
+    "toPath": "/working-with-data-sources/custom-connector/create-custom-connector/#basic-authentication"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/custom-connector/create-custom-connector/#dataformat",
@@ -41376,8 +41396,8 @@
     "toPath": "/working-with-data-sources/custom-connector/create-custom-connector/#parameters"
   },
   {
-    "fromPath": "/embedded-bi/working-with-data-source/custom-connector/create-custom-connector/#header:",
-    "toPath": "/working-with-data-sources/custom-connector/create-custom-connector/#header:"
+    "fromPath": "/embedded-bi/working-with-data-source/custom-connector/create-custom-connector/#header",
+    "toPath": "/working-with-data-sources/custom-connector/create-custom-connector/#header"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/custom-connector/create-custom-connector/#pagination",
@@ -41388,8 +41408,8 @@
     "toPath": "/working-with-data-sources/custom-connector/create-custom-connector/#icon"
   },
   {
-    "fromPath": "/embedded-bi/working-with-data-source/custom-connector/create-custom-connector/#sample-json-template-for-custom-connector,",
-    "toPath": "/working-with-data-sources/custom-connector/create-custom-connector/#sample-json-template-for-custom-connector,"
+    "fromPath": "/embedded-bi/working-with-data-source/custom-connector/create-custom-connector/#sample-json-template-for-custom-connector",
+    "toPath": "/working-with-data-sources/custom-connector/create-custom-connector/#sample-json-template-for-custom-connector"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/custom-connector/#you-can-explore-about-custom-connector-in-detail-here",
@@ -41644,12 +41664,12 @@
     "toPath": "/working-with-data-sources/data-connectors/amazon-athena/#connection-sample-for-table-mode"
   },
   {
-    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/amazon-athena/#for-creating-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/amazon-athena/#for-creating-connection:"
+    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/amazon-athena/#for-creating-connection",
+    "toPath": "/working-with-data-sources/data-connectors/amazon-athena/#for-creating-connection"
   },
   {
-    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/amazon-athena/#for-editing-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/amazon-athena/#for-editing-connection:"
+    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/amazon-athena/#for-editing-connection",
+    "toPath": "/working-with-data-sources/data-connectors/amazon-athena/#for-editing-connection"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/data-connectors/amazon-athena/#connection-sample-for-code-view-mode",
@@ -41696,8 +41716,8 @@
     "toPath": "/working-with-data-sources/data-connectors/amazon-aurora/#refresh-settings"
   },
   {
-    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/amazon-aurora/#steps-to-configure-the-data-source-refresh-settings:",
-    "toPath": "/working-with-data-sources/data-connectors/amazon-aurora/#steps-to-configure-the-data-source-refresh-settings:"
+    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/amazon-aurora/#steps-to-configure-the-data-source-refresh-settings",
+    "toPath": "/working-with-data-sources/data-connectors/amazon-aurora/#steps-to-configure-the-data-source-refresh-settings"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/data-connectors/amazon-aurora/#preview-and-import-data",
@@ -41736,12 +41756,12 @@
     "toPath": "/working-with-data-sources/data-connectors/amazon-aurora/#connection-sample-for-table-mode"
   },
   {
-    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/amazon-aurora/#for-creating-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/amazon-aurora/#for-creating-connection:"
+    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/amazon-aurora/#for-creating-connection",
+    "toPath": "/working-with-data-sources/data-connectors/amazon-aurora/#for-creating-connection"
   },
   {
-    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/amazon-aurora/#for-editing-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/amazon-aurora/#for-editing-connection:"
+    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/amazon-aurora/#for-editing-connection",
+    "toPath": "/working-with-data-sources/data-connectors/amazon-aurora/#for-editing-connection"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/data-connectors/amazon-aurora/#connection-sample-for-code-view-mode",
@@ -41816,8 +41836,8 @@
     "toPath": "/working-with-data-sources/data-connectors/amazon-rds/#refresh-settings"
   },
   {
-    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/amazon-rds/#steps-to-configure-the-data-source-refresh-settings:",
-    "toPath": "/working-with-data-sources/data-connectors/amazon-rds/#steps-to-configure-the-data-source-refresh-settings:"
+    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/amazon-rds/#steps-to-configure-the-data-source-refresh-settings",
+    "toPath": "/working-with-data-sources/data-connectors/amazon-rds/#steps-to-configure-the-data-source-refresh-settings"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/data-connectors/amazon-rds/#preview-and-data-import",
@@ -41856,12 +41876,12 @@
     "toPath": "/working-with-data-sources/data-connectors/amazon-rds/#connection-sample-for-table-mode"
   },
   {
-    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/amazon-rds/#for-creating-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/amazon-rds/#for-creating-connection:"
+    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/amazon-rds/#for-creating-connection",
+    "toPath": "/working-with-data-sources/data-connectors/amazon-rds/#for-creating-connection"
   },
   {
-    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/amazon-rds/#for-editing-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/amazon-rds/#for-editing-connection:"
+    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/amazon-rds/#for-editing-connection",
+    "toPath": "/working-with-data-sources/data-connectors/amazon-rds/#for-editing-connection"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/data-connectors/amazon-rds/#connection-sample-for-code-view-mode",
@@ -41884,8 +41904,8 @@
     "toPath": "/working-with-data-sources/data-connectors/amazon-redshift/#refresh-settings"
   },
   {
-    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/amazon-redshift/#steps-to-configure-the-data-source-refresh-settings:",
-    "toPath": "/working-with-data-sources/data-connectors/amazon-redshift/#steps-to-configure-the-data-source-refresh-settings:"
+    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/amazon-redshift/#steps-to-configure-the-data-source-refresh-settings",
+    "toPath": "/working-with-data-sources/data-connectors/amazon-redshift/#steps-to-configure-the-data-source-refresh-settings"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/data-connectors/amazon-redshift/#preview-and-data-import",
@@ -41924,12 +41944,12 @@
     "toPath": "/working-with-data-sources/data-connectors/amazon-redshift/#connection-sample-for-table-mode"
   },
   {
-    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/amazon-redshift/#for-creating-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/amazon-redshift/#for-creating-connection:"
+    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/amazon-redshift/#for-creating-connection",
+    "toPath": "/working-with-data-sources/data-connectors/amazon-redshift/#for-creating-connection"
   },
   {
-    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/amazon-redshift/#for-editing-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/amazon-redshift/#for-editing-connection:"
+    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/amazon-redshift/#for-editing-connection",
+    "toPath": "/working-with-data-sources/data-connectors/amazon-redshift/#for-editing-connection"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/data-connectors/amazon-redshift/#connection-sample-for-code-view-mode",
@@ -42152,12 +42172,12 @@
     "toPath": "/working-with-data-sources/data-connectors/aws-opensearch/#connection-sample"
   },
   {
-    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/aws-opensearch/#for-creating-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/aws-opensearch/#for-creating-connection:"
+    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/aws-opensearch/#for-creating-connection",
+    "toPath": "/working-with-data-sources/data-connectors/aws-opensearch/#for-creating-connection"
   },
   {
-    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/aws-opensearch/#for-editing-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/aws-opensearch/#for-editing-connection:"
+    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/aws-opensearch/#for-editing-connection",
+    "toPath": "/working-with-data-sources/data-connectors/aws-opensearch/#for-editing-connection"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/data-connectors/aws-opensearch/#related-links",
@@ -42320,12 +42340,12 @@
     "toPath": "/working-with-data-sources/data-connectors/azure-synapse-analytics/#connection-sample-for-table-mode"
   },
   {
-    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/azure-synapse-analytics/#for-creating-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/azure-synapse-analytics/#for-creating-connection:"
+    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/azure-synapse-analytics/#for-creating-connection",
+    "toPath": "/working-with-data-sources/data-connectors/azure-synapse-analytics/#for-creating-connection"
   },
   {
-    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/azure-synapse-analytics/#for-editing-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/azure-synapse-analytics/#for-editing-connection:"
+    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/azure-synapse-analytics/#for-editing-connection",
+    "toPath": "/working-with-data-sources/data-connectors/azure-synapse-analytics/#for-editing-connection"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/data-connectors/azure-synapse-analytics/#connection-sample-for-code-view-mode",
@@ -42560,8 +42580,8 @@
     "toPath": "/working-with-data-sources/data-connectors/cdata/#refresh-settings"
   },
   {
-    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/cdata/#steps-to-configure-the-data-source-refresh-settings:",
-    "toPath": "/working-with-data-sources/data-connectors/cdata/#steps-to-configure-the-data-source-refresh-settings:"
+    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/cdata/#steps-to-configure-the-data-source-refresh-settings",
+    "toPath": "/working-with-data-sources/data-connectors/cdata/#steps-to-configure-the-data-source-refresh-settings"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/data-connectors/cdata/#preview-and-data-import",
@@ -42600,12 +42620,12 @@
     "toPath": "/working-with-data-sources/data-connectors/cdata/#connection-sample-for-table-mode"
   },
   {
-    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/cdata/#for-creating-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/cdata/#for-creating-connection:"
+    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/cdata/#for-creating-connection",
+    "toPath": "/working-with-data-sources/data-connectors/cdata/#for-creating-connection"
   },
   {
-    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/cdata/#for-editing-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/cdata/#for-editing-connection:"
+    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/cdata/#for-editing-connection",
+    "toPath": "/working-with-data-sources/data-connectors/cdata/#for-editing-connection"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/data-connectors/cdata/#connection-sample-for-code-view-mode",
@@ -42728,12 +42748,12 @@
     "toPath": "/working-with-data-sources/data-connectors/clickhouse/#connection-sample-for-table-mode"
   },
   {
-    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/clickhouse/#for-creating-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/clickhouse/#for-creating-connection:"
+    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/clickhouse/#for-creating-connection",
+    "toPath": "/working-with-data-sources/data-connectors/clickhouse/#for-creating-connection"
   },
   {
-    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/clickhouse/#for-editing-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/clickhouse/#for-editing-connection:"
+    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/clickhouse/#for-editing-connection",
+    "toPath": "/working-with-data-sources/data-connectors/clickhouse/#for-editing-connection"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/data-connectors/clickhouse/#connection-sample-for-code-view-mode",
@@ -42832,8 +42852,8 @@
     "toPath": "/working-with-data-sources/data-connectors/cosmosdb/#configuring-cosmos-db-data-source"
   },
   {
-    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/cosmosdb/#choose-mongodb-data-source-by-following-the-given-steps:",
-    "toPath": "/working-with-data-sources/data-connectors/cosmosdb/#choose-mongodb-data-source-by-following-the-given-steps:"
+    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/cosmosdb/#choose-mongodb-data-source-by-following-the-given-steps",
+    "toPath": "/working-with-data-sources/data-connectors/cosmosdb/#choose-mongodb-data-source-by-following-the-given-steps"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/data-connectors/cosmosdb/#create-cosmos-db-data-source-via-mongodb-data-source",
@@ -42980,12 +43000,12 @@
     "toPath": "/working-with-data-sources/data-connectors/elastic-search/#connection-sample"
   },
   {
-    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/elastic-search/#for-creating-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/elastic-search/#for-creating-connection:"
+    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/elastic-search/#for-creating-connection",
+    "toPath": "/working-with-data-sources/data-connectors/elastic-search/#for-creating-connection"
   },
   {
-    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/elastic-search/#for-editing-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/elastic-search/#for-editing-connection:"
+    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/elastic-search/#for-editing-connection",
+    "toPath": "/working-with-data-sources/data-connectors/elastic-search/#for-editing-connection"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/data-connectors/elastic-search/#related-links",
@@ -43584,16 +43604,16 @@
     "toPath": "/working-with-data-sources/data-connectors/google-bigquery/#prerequisites-for-embedded-bi-version"
   },
   {
-    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/google-bigquery/#authentication-types:",
-    "toPath": "/working-with-data-sources/data-connectors/google-bigquery/#authentication-types:"
+    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/google-bigquery/#authentication-types",
+    "toPath": "/working-with-data-sources/data-connectors/google-bigquery/#authentication-types"
   },
   {
-    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/google-bigquery/#connecting-with-service-authentication:",
-    "toPath": "/working-with-data-sources/data-connectors/google-bigquery/#connecting-with-service-authentication:"
+    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/google-bigquery/#connecting-with-service-authentication",
+    "toPath": "/working-with-data-sources/data-connectors/google-bigquery/#connecting-with-service-authentication"
   },
   {
-    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/google-bigquery/#connecting-with-oauth:",
-    "toPath": "/working-with-data-sources/data-connectors/google-bigquery/#connecting-with-oauth:"
+    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/google-bigquery/#connecting-with-oauth",
+    "toPath": "/working-with-data-sources/data-connectors/google-bigquery/#connecting-with-oauth"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/data-connectors/google-bigquery/#choose-a-google-bigquery-data-source",
@@ -43696,8 +43716,8 @@
     "toPath": "/working-with-data-sources/data-connectors/google-cloud-sql/#refresh-settings"
   },
   {
-    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/google-cloud-sql/#steps-to-configure-the-data-source-refresh-settings:",
-    "toPath": "/working-with-data-sources/data-connectors/google-cloud-sql/#steps-to-configure-the-data-source-refresh-settings:"
+    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/google-cloud-sql/#steps-to-configure-the-data-source-refresh-settings",
+    "toPath": "/working-with-data-sources/data-connectors/google-cloud-sql/#steps-to-configure-the-data-source-refresh-settings"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/data-connectors/google-cloud-sql/#preview-and-data-import",
@@ -43736,12 +43756,12 @@
     "toPath": "/working-with-data-sources/data-connectors/google-cloud-sql/#connection-sample-for-table-mode"
   },
   {
-    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/google-cloud-sql/#for-creating-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/google-cloud-sql/#for-creating-connection:"
+    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/google-cloud-sql/#for-creating-connection",
+    "toPath": "/working-with-data-sources/data-connectors/google-cloud-sql/#for-creating-connection"
   },
   {
-    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/google-cloud-sql/#for-editing-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/google-cloud-sql/#for-editing-connection:"
+    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/google-cloud-sql/#for-editing-connection",
+    "toPath": "/working-with-data-sources/data-connectors/google-cloud-sql/#for-editing-connection"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/data-connectors/google-cloud-sql/#connection-sample-for-code-view-mode",
@@ -44000,12 +44020,12 @@
     "toPath": "/working-with-data-sources/data-connectors/influxdb/#connection-sample-for-table-mode"
   },
   {
-    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/influxdb/#for-creating-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/influxdb/#for-creating-connection:"
+    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/influxdb/#for-creating-connection",
+    "toPath": "/working-with-data-sources/data-connectors/influxdb/#for-creating-connection"
   },
   {
-    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/influxdb/#for-editing-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/influxdb/#for-editing-connection:"
+    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/influxdb/#for-editing-connection",
+    "toPath": "/working-with-data-sources/data-connectors/influxdb/#for-editing-connection"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/data-connectors/influxdb/#connection-sample-for-code-view-mode",
@@ -44460,8 +44480,8 @@
     "toPath": "/working-with-data-sources/data-connectors/live-web/#parameters-for-creating-data-source"
   },
   {
-    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/live-web/#json-template-syntax:",
-    "toPath": "/working-with-data-sources/data-connectors/live-web/#json-template-syntax:"
+    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/live-web/#json-template-syntax",
+    "toPath": "/working-with-data-sources/data-connectors/live-web/#json-template-syntax"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/data-connectors/live-web/#limitation-information",
@@ -44540,8 +44560,8 @@
     "toPath": "/working-with-data-sources/data-connectors/mariadb/#refresh-settings"
   },
   {
-    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/mariadb/#steps-to-configure-the-data-source-refresh-settings:",
-    "toPath": "/working-with-data-sources/data-connectors/mariadb/#steps-to-configure-the-data-source-refresh-settings:"
+    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/mariadb/#steps-to-configure-the-data-source-refresh-settings",
+    "toPath": "/working-with-data-sources/data-connectors/mariadb/#steps-to-configure-the-data-source-refresh-settings"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/data-connectors/mariadb/#preview-and-data-import",
@@ -44580,12 +44600,12 @@
     "toPath": "/working-with-data-sources/data-connectors/mariadb/#connection-sample-for-table-mode"
   },
   {
-    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/mariadb/#for-creating-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/mariadb/#for-creating-connection:"
+    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/mariadb/#for-creating-connection",
+    "toPath": "/working-with-data-sources/data-connectors/mariadb/#for-creating-connection"
   },
   {
-    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/mariadb/#for-editing-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/mariadb/#for-editing-connection:"
+    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/mariadb/#for-editing-connection",
+    "toPath": "/working-with-data-sources/data-connectors/mariadb/#for-editing-connection"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/data-connectors/mariadb/#connection-sample-for-code-view-mode",
@@ -44668,8 +44688,8 @@
     "toPath": "/working-with-data-sources/data-connectors/mongodb/#parameters-for-creating-data-source"
   },
   {
-    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/mongodb/#json-template-syntax:",
-    "toPath": "/working-with-data-sources/data-connectors/mongodb/#json-template-syntax:"
+    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/mongodb/#json-template-syntax",
+    "toPath": "/working-with-data-sources/data-connectors/mongodb/#json-template-syntax"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/data-connectors/mongodb/#live-connection",
@@ -44772,8 +44792,8 @@
     "toPath": "/working-with-data-sources/data-connectors/mysql/#refresh-settings"
   },
   {
-    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/mysql/#steps-to-configure-the-data-source-refresh-settings:",
-    "toPath": "/working-with-data-sources/data-connectors/mysql/#steps-to-configure-the-data-source-refresh-settings:"
+    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/mysql/#steps-to-configure-the-data-source-refresh-settings",
+    "toPath": "/working-with-data-sources/data-connectors/mysql/#steps-to-configure-the-data-source-refresh-settings"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/data-connectors/mysql/#preview-and-data-import",
@@ -44812,12 +44832,12 @@
     "toPath": "/working-with-data-sources/data-connectors/mysql/#connection-sample-for-table-mode"
   },
   {
-    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/mysql/#for-creating-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/mysql/#for-creating-connection:"
+    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/mysql/#for-creating-connection",
+    "toPath": "/working-with-data-sources/data-connectors/mysql/#for-creating-connection"
   },
   {
-    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/mysql/#for-editing-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/mysql/#for-editing-connection:"
+    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/mysql/#for-editing-connection",
+    "toPath": "/working-with-data-sources/data-connectors/mysql/#for-editing-connection"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/data-connectors/mysql/#connection-sample-for-code-view-mode",
@@ -45024,16 +45044,16 @@
     "toPath": "/working-with-data-sources/data-connectors/odbc/#connection-sample-for-table-mode"
   },
   {
-    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/odbc/#for-creating-connection-using-driver:",
-    "toPath": "/working-with-data-sources/data-connectors/odbc/#for-creating-connection-using-driver:"
+    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/odbc/#for-creating-connection-using-driver",
+    "toPath": "/working-with-data-sources/data-connectors/odbc/#for-creating-connection-using-driver"
   },
   {
-    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/odbc/#for-creating-connection-using-dsn:",
-    "toPath": "/working-with-data-sources/data-connectors/odbc/#for-creating-connection-using-dsn:"
+    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/odbc/#for-creating-connection-using-dsn",
+    "toPath": "/working-with-data-sources/data-connectors/odbc/#for-creating-connection-using-dsn"
   },
   {
-    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/odbc/#for-editing-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/odbc/#for-editing-connection:"
+    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/odbc/#for-editing-connection",
+    "toPath": "/working-with-data-sources/data-connectors/odbc/#for-editing-connection"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/data-connectors/odbc/#connection-sample-for-code-view-mode",
@@ -45128,12 +45148,12 @@
     "toPath": "/working-with-data-sources/data-connectors/oracle/#connection-sample-for-table-mode"
   },
   {
-    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/oracle/#for-creating-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/oracle/#for-creating-connection:"
+    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/oracle/#for-creating-connection",
+    "toPath": "/working-with-data-sources/data-connectors/oracle/#for-creating-connection"
   },
   {
-    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/oracle/#for-editing-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/oracle/#for-editing-connection:"
+    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/oracle/#for-editing-connection",
+    "toPath": "/working-with-data-sources/data-connectors/oracle/#for-editing-connection"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/data-connectors/oracle/#connection-sample-for-code-view-mode",
@@ -45348,8 +45368,8 @@
     "toPath": "/working-with-data-sources/data-connectors/postgresql/#refresh-settings"
   },
   {
-    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/postgresql/#steps-to-configure-the-data-source-refresh-settings:",
-    "toPath": "/working-with-data-sources/data-connectors/postgresql/#steps-to-configure-the-data-source-refresh-settings:"
+    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/postgresql/#steps-to-configure-the-data-source-refresh-settings",
+    "toPath": "/working-with-data-sources/data-connectors/postgresql/#steps-to-configure-the-data-source-refresh-settings"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/data-connectors/postgresql/#preview-and-data-import",
@@ -45388,12 +45408,12 @@
     "toPath": "/working-with-data-sources/data-connectors/postgresql/#connection-sample-for-table-mode"
   },
   {
-    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/postgresql/#for-creating-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/postgresql/#for-creating-connection:"
+    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/postgresql/#for-creating-connection",
+    "toPath": "/working-with-data-sources/data-connectors/postgresql/#for-creating-connection"
   },
   {
-    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/postgresql/#for-editing-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/postgresql/#for-editing-connection:"
+    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/postgresql/#for-editing-connection",
+    "toPath": "/working-with-data-sources/data-connectors/postgresql/#for-editing-connection"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/data-connectors/postgresql/#connection-sample-for-code-view-mode",
@@ -45448,12 +45468,12 @@
     "toPath": "/working-with-data-sources/data-connectors/presto/#connection-sample-for-table-mode"
   },
   {
-    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/presto/#for-creating-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/presto/#for-creating-connection:"
+    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/presto/#for-creating-connection",
+    "toPath": "/working-with-data-sources/data-connectors/presto/#for-creating-connection"
   },
   {
-    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/presto/#for-editing-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/presto/#for-editing-connection:"
+    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/presto/#for-editing-connection",
+    "toPath": "/working-with-data-sources/data-connectors/presto/#for-editing-connection"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/data-connectors/presto/#connection-sample-for-code-view-mode",
@@ -45928,8 +45948,8 @@
     "toPath": "/working-with-data-sources/data-connectors/single-store/#refresh-settings"
   },
   {
-    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/single-store/#steps-to-configure-the-data-source-refresh-settings:",
-    "toPath": "/working-with-data-sources/data-connectors/single-store/#steps-to-configure-the-data-source-refresh-settings:"
+    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/single-store/#steps-to-configure-the-data-source-refresh-settings",
+    "toPath": "/working-with-data-sources/data-connectors/single-store/#steps-to-configure-the-data-source-refresh-settings"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/data-connectors/single-store/#preview-and-data-import",
@@ -45968,12 +45988,12 @@
     "toPath": "/working-with-data-sources/data-connectors/single-store/#connection-sample-for-table-mode"
   },
   {
-    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/single-store/#for-creating-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/single-store/#for-creating-connection:"
+    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/single-store/#for-creating-connection",
+    "toPath": "/working-with-data-sources/data-connectors/single-store/#for-creating-connection"
   },
   {
-    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/single-store/#for-editing-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/single-store/#for-editing-connection:"
+    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/single-store/#for-editing-connection",
+    "toPath": "/working-with-data-sources/data-connectors/single-store/#for-editing-connection"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/data-connectors/single-store/#connection-sample-for-code-view-mode",
@@ -46080,8 +46100,8 @@
     "toPath": "/working-with-data-sources/data-connectors/snowflake/#refresh-settings"
   },
   {
-    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/snowflake/#steps-to-configure-the-data-source-refresh-settings:",
-    "toPath": "/working-with-data-sources/data-connectors/snowflake/#steps-to-configure-the-data-source-refresh-settings:"
+    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/snowflake/#steps-to-configure-the-data-source-refresh-settings",
+    "toPath": "/working-with-data-sources/data-connectors/snowflake/#steps-to-configure-the-data-source-refresh-settings"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/data-connectors/snowflake/#preview-and-data-import",
@@ -46120,12 +46140,12 @@
     "toPath": "/working-with-data-sources/data-connectors/snowflake/#connection-sample-for-table-mode"
   },
   {
-    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/snowflake/#for-creating-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/snowflake/#for-creating-connection:"
+    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/snowflake/#for-creating-connection",
+    "toPath": "/working-with-data-sources/data-connectors/snowflake/#for-creating-connection"
   },
   {
-    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/snowflake/#for-editing-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/snowflake/#for-editing-connection:"
+    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/snowflake/#for-editing-connection",
+    "toPath": "/working-with-data-sources/data-connectors/snowflake/#for-editing-connection"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/data-connectors/snowflake/#connection-sample-for-code-view-mode",
@@ -46208,12 +46228,12 @@
     "toPath": "/working-with-data-sources/data-connectors/sparksql/#connection-sample-for-table-mode"
   },
   {
-    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/sparksql/#for-creating-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/sparksql/#for-creating-connection:"
+    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/sparksql/#for-creating-connection",
+    "toPath": "/working-with-data-sources/data-connectors/sparksql/#for-creating-connection"
   },
   {
-    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/sparksql/#for-editing-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/sparksql/#for-editing-connection:"
+    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/sparksql/#for-editing-connection",
+    "toPath": "/working-with-data-sources/data-connectors/sparksql/#for-editing-connection"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/data-connectors/sparksql/#connection-sample-for-code-view-mode",
@@ -46352,12 +46372,12 @@
     "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#connection-sample-for-table-mode"
   },
   {
-    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/sql-data-source/#for-creating-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#for-creating-connection:"
+    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/sql-data-source/#for-creating-connection",
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#for-creating-connection"
   },
   {
-    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/sql-data-source/#for-editing-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#for-editing-connection:"
+    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/sql-data-source/#for-editing-connection",
+    "toPath": "/working-with-data-sources/data-connectors/ms-sql-server/#for-editing-connection"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/data-connectors/sql-data-source/#connection-sample-for-code-view-mode",
@@ -46452,8 +46472,8 @@
     "toPath": "/working-with-data-sources/data-connectors/ssas/#supported-expression-list"
   },
   {
-    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/ssas/#examples-for-ssas-supported-expressions:",
-    "toPath": "/working-with-data-sources/data-connectors/ssas/#examples-for-ssas-supported-expressions:"
+    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/ssas/#examples-for-ssas-supported-expressions",
+    "toPath": "/working-with-data-sources/data-connectors/ssas/#examples-for-ssas-supported-expressions"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/data-connectors/ssas/#query-filters-or-initial-filters",
@@ -46464,8 +46484,8 @@
     "toPath": "/working-with-data-sources/data-connectors/ssas/#connecting-through-mdx-query"
   },
   {
-    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/ssas/#features-limitations:",
-    "toPath": "/working-with-data-sources/data-connectors/ssas/#features-limitations:"
+    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/ssas/#features-limitations",
+    "toPath": "/working-with-data-sources/data-connectors/ssas/#features-limitations"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/data-connectors/ssas/#connecting-bold-bi-to-microsoft-sql-server-analysis-servicesssas-via-rest-api",
@@ -46496,12 +46516,12 @@
     "toPath": "/working-with-data-sources/data-connectors/ssas/#connection-sample-for-table-mode"
   },
   {
-    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/ssas/#for-creating-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/ssas/#for-creating-connection:"
+    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/ssas/#for-creating-connection",
+    "toPath": "/working-with-data-sources/data-connectors/ssas/#for-creating-connection"
   },
   {
-    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/ssas/#for-editing-connection:",
-    "toPath": "/working-with-data-sources/data-connectors/ssas/#for-editing-connection:"
+    "fromPath": "/embedded-bi/working-with-data-source/data-connectors/ssas/#for-editing-connection",
+    "toPath": "/working-with-data-sources/data-connectors/ssas/#for-editing-connection"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/data-connectors/ssas/#connection-sample-for-code-view-mode",
@@ -47300,8 +47320,8 @@
     "toPath": "/working-with-data-sources/data-modeling/configuring-expression-columns/#related-links"
   },
   {
-    "fromPath": "/embedded-bi/working-with-data-source/transforming-data/data-sampling/#enabling-data-sampling-in-bold-bi:",
-    "toPath": "/working-with-data-sources/data-modeling/data-sampling/#enabling-data-sampling-in-bold-bi:"
+    "fromPath": "/embedded-bi/working-with-data-source/transforming-data/data-sampling/#enabling-data-sampling-in-bold-bi",
+    "toPath": "/working-with-data-sources/data-modeling/data-sampling/#enabling-data-sampling-in-bold-bi"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/transforming-data/formatting-column/#renaming-column",
@@ -47318,6 +47338,10 @@
   {
     "fromPath": "/embedded-bi/working-with-data-source/transforming-data/joining-table/#updating-a-join-condition",
     "toPath": "/working-with-data-sources/data-modeling/joining-table/#updating-a-join-condition"
+  },
+  {
+    "fromPath": "/embedded-bi/working-with-data-source/transforming-data/configuring-data-relationship/#data-relationships",
+    "toPath": "/working-with-data-sources/data-modeling/configuring-data-relationship/#data-relationships"
   },
   {
     "fromPath": "/embedded-bi/working-with-data-source/user-filter/#configuring-user-filter",
@@ -48420,10 +48444,6 @@
     "toPath": "/deploying-bold-bi/deploying-on-linux/installation-and-deployment/auto-deployment/#configuring-the-bold-bi-application"
   },
   {
-    "fromPath": "/embedded-bi/setup/deploying-in-linux/installation-and-deployment/auto-deployment/#environment-variable-and-it's-usage",
-    "toPath": "/deploying-bold-bi/deploying-on-linux/installation-and-deployment/auto-deployment/#environment-variable-and-it's-usage"
-  },
-  {
     "fromPath": "/embedded-bi/setup/deploying-in-linux/installation-and-deployment/bold-bi-on-centos/#deployment-prerequisites",
     "toPath": "/deploying-bold-bi/deploying-on-linux/installation-and-deployment/bold-bi-on-centos/#deployment-prerequisites"
   },
@@ -48776,8 +48796,8 @@
     "toPath": "/visualizing-data/visualization-widgets/custom-widget/v4.1.36-or-below/#example"
   },
   {
-    "fromPath": "/embedded-bi/visualizing-data/visualization-widgets/custom-widget/v4.1.36-or-below/#rules:",
-    "toPath": "/visualizing-data/visualization-widgets/custom-widget/v4.1.36-or-below/#rules:"
+    "fromPath": "/embedded-bi/visualizing-data/visualization-widgets/custom-widget/v4.1.36-or-below/#rules",
+    "toPath": "/visualizing-data/visualization-widgets/custom-widget/v4.1.36-or-below/#rules"
   },
   {
     "fromPath": "/embedded-bi/visualizing-data/visualization-widgets/custom-widget/v4.1.36-or-below/#setting-dependency-files-for-the-widget",
@@ -48850,10 +48870,6 @@
   {
     "fromPath": "/embedded-bi/visualizing-data/visualization-widgets/custom-widget/v4.1.36-or-below/#step-1-download-the-below-attached-custom-widget-template-for-developing",
     "toPath": "/visualizing-data/visualization-widgets/custom-widget/v4.1.36-or-below/#step-1-download-the-below-attached-custom-widget-template-for-developing"
-  },
-  {
-    "fromPath": "/embedded-bi/visualizing-data/visualization-widgets/custom-widget/v4.1.36-or-below/#step-2-configure-the-widget-through-the-`widgetconfig.json`-file",
-    "toPath": "/visualizing-data/visualization-widgets/custom-widget/v4.1.36-or-below/#step-2-configure-the-widget-through-the-`widgetconfig.json`-file"
   },
   {
     "fromPath": "/embedded-bi/visualizing-data/visualization-widgets/custom-widget/v4.1.36-or-below/#configuring-custom-widget-for-interaction",
@@ -48976,8 +48992,8 @@
     "toPath": "/visualizing-data/visualization-widgets/custom-widget/v4.2.68-or-later/#example"
   },
   {
-    "fromPath": "/embedded-bi/visualizing-data/visualization-widgets/custom-widget/v4.2.68-or-later/#rules:",
-    "toPath": "/visualizing-data/visualization-widgets/custom-widget/v4.2.68-or-later/#rules:"
+    "fromPath": "/embedded-bi/visualizing-data/visualization-widgets/custom-widget/v4.2.68-or-later/#rules",
+    "toPath": "/visualizing-data/visualization-widgets/custom-widget/v4.2.68-or-later/#rules"
   },
   {
     "fromPath": "/embedded-bi/visualizing-data/visualization-widgets/custom-widget/v4.2.68-or-later/#setting-dependency-files-for-the-widget",
@@ -49050,10 +49066,6 @@
   {
     "fromPath": "/embedded-bi/visualizing-data/visualization-widgets/custom-widget/v4.2.68-or-later/#step-1-download-the-below-attached-custom-widget-template-for-developing",
     "toPath": "/visualizing-data/visualization-widgets/custom-widget/v4.2.68-or-later/#step-1-download-the-below-attached-custom-widget-template-for-developing"
-  },
-  {
-    "fromPath": "/embedded-bi/visualizing-data/visualization-widgets/custom-widget/v4.2.68-or-later/#step-2-configure-the-widget-through-the-`widgetconfig.json`-file",
-    "toPath": "/visualizing-data/visualization-widgets/custom-widget/v4.2.68-or-later/#step-2-configure-the-widget-through-the-`widgetconfig.json`-file"
   },
   {
     "fromPath": "/embedded-bi/visualizing-data/visualization-widgets/custom-widget/v4.2.68-or-later/#configuring-custom-widget-for-interaction",
@@ -49188,10 +49200,6 @@
     "toPath": "/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/c3-custom-widget/#publish-the-c3-custom-widget"
   },
   {
-    "fromPath": "/embedded-bi/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/create-new-custom-widget/#prerequisites-and-knowledge-required-for-development-of-the-custom-widget",
-    "toPath": "/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/create-new-custom-widget/#prerequisites-and-knowledge-required-for-development-of-the-custom-widget"
-  },
-  {
     "fromPath": "/embedded-bi/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/create-new-custom-widget/#creating-a-new-widget",
     "toPath": "/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/create-new-custom-widget/#creating-a-new-widget"
   },
@@ -49256,7 +49264,7 @@
     "toPath": "/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/create-new-custom-widget/#example"
   },
   {
-    "fromPath": "/embedded-bi/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/create-new-custom-widget/#converting-the-widget-to-a-*.bicw-file",
+    "fromPath": "/embedded-bi/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/create-new-custom-widget/",
     "toPath": "/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/create-new-custom-widget/#converting-the-widget-to-a-bicw-file"
   },
   {
@@ -49292,8 +49300,8 @@
     "toPath": "/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/editing-existing-custom-widget/#steps-to-unpack-the-custom-widget"
   },
   {
-    "fromPath": "/embedded-bi/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/editing-existing-custom-widget/#modify-the-custom-widget-and-convert-it-to-*.bicw-file",
-    "toPath": "/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/editing-existing-custom-widget/#modify-the-custom-widget-and-convert-it-to-*.bicw-file"
+    "fromPath": "/embedded-bi/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/editing-existing-custom-widget/",
+    "toPath": "/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/editing-existing-custom-widget/"
   },
   {
     "fromPath": "/embedded-bi/visualizing-data/visualization-widgets/custom-widget/v5.2.48-or-later/editing-existing-custom-widget/#upload-the-edited-widget-in-the-widget-settings",
@@ -49904,10 +49912,6 @@
     "toPath": "/working-with-data-sources/data-connectors/azure-data-explorer/"
   },
   {
-    "fromPath": "/javascript-based/getting-started/#how-to-pass-the-dashboard-parameter-and-url-filter-parameter-in-the-authorization-end-point-dynamically",
-    "toPath": "/getting-started/embedding-in-your-application/#how-to-pass-the-dashboard-parameter-and-url-filter-parameter-in-the-authorization-endpoint-dynamically"
-  },
-  {
     "fromPath": "/getting-started/embedding-in-your-application/#how-to-implement-the-authorize-server-with-user-mail-or-user-name",
     "toPath": "/getting-started/embedding-in-your-application/#how-to-implement-the-authorize-server-with-user-email-or-user-name"
   },
@@ -49990,7 +49994,7 @@
   {
     "fromPath": "/deploying-bold-bi/deploying-in-windows/upgrade-to-latest/",
     "toPath": "/deploying-bold-bi/deploying-on-windows/upgrade-to-latest/"
-  },  
+  },
   {
     "fromPath": "/deploying-bold-bi/deploying-in-windows/install-when-bold-report-exist/",
     "toPath": "/deploying-bold-bi/deploying-on-windows/install-when-bold-report-exist/"
@@ -49998,7 +50002,7 @@
   {
     "fromPath": "/deploying-bold-bi/deploying-in-windows/silent-installation/",
     "toPath": "/deploying-bold-bi/deploying-on-windows/silent-installation/"
-  },  
+  },
   {
     "fromPath": "/deploying-bold-bi/deploying-in-azure/",
     "toPath": "/deploying-bold-bi/deploying-on-azure/"
@@ -50006,13 +50010,16 @@
   {
     "fromPath": "/deploying-bold-bi/deploying-in-azure/prerequisites-azure-vm/",
     "toPath": "/deploying-bold-bi/deploying-on-azure/prerequisites-azure-vm/"
-  },{
+  },
+  {
     "fromPath": "/deploying-bold-bi/deploying-in-azure/vm-configuration/",
     "toPath": "/deploying-bold-bi/deploying-on-azure/vm-configuration/"
-  },{
+  },
+  {
     "fromPath": "/deploying-bold-bi/deploying-in-azure/self-deploy-azure-vm/",
     "toPath": "/deploying-bold-bi/deploying-on-azure/self-deploy-azure-vm/"
-  },{
+  },
+  {
     "fromPath": "/deploying-bold-bi/deploying-in-azure/new-azure-vm/",
     "toPath": "/deploying-bold-bi/deploying-on-azure/new-azure-vm/"
   },
@@ -50028,27 +50035,27 @@
     "fromPath": "/deploying-bold-bi/deploying-in-aws/prerequisites-aws-vm/",
     "toPath": "/deploying-bold-bi/deploying-on-aws/prerequisites-aws-vm/"
   },
-   {
+  {
     "fromPath": "/deploying-bold-bi/deploying-in-aws/deploy-aws-vm/",
     "toPath": "/deploying-bold-bi/deploying-on-aws/deploy-aws-vm/"
   },
-   {
+  {
     "fromPath": "/deploying-bold-bi/deploying-in-aws/update-aws-vm/",
     "toPath": "/deploying-bold-bi/deploying-on-aws/update-aws-vm/"
   },
-   {
+  {
     "fromPath": "/deploying-bold-bi/deploying-in-azure-app-service/",
     "toPath": "/deploying-bold-bi/deploying-on-azure-app-service/"
   },
-   {
+  {
     "fromPath": "/deploying-bold-bi/deploying-in-azure-app-service/prerequisites/",
     "toPath": "/deploying-bold-bi/deploying-on-azure-app-service/prerequisites/"
   },
-   {
+  {
     "fromPath": "/deploying-bold-bi/deploying-in-azure-app-service/recommendations/",
     "toPath": "/deploying-bold-bi/deploying-on-azure-app-service/recommendations/"
   },
-   {
+  {
     "fromPath": "/deploying-bold-bi/deploying-in-azure-app-service/using-arm-template/",
     "toPath": "/deploying-bold-bi/deploying-on-azure-app-service/using-arm-template/"
   },
@@ -50080,19 +50087,19 @@
     "fromPath": "/deploying-bold-bi/deploying-in-linux/installation-and-deployment/",
     "toPath": "/deploying-bold-bi/deploying-on-linux/installation-and-deployment/"
   },
-   {
+  {
     "fromPath": "/deploying-bold-bi/deploying-in-linux/installation-and-deployment/v4.1-or-older/",
     "toPath": "/deploying-bold-bi/deploying-on-linux/installation-and-deployment/v4.1-or-older/"
   },
-   {
+  {
     "fromPath": "/deploying-bold-bi/deploying-in-linux/installation-and-deployment/v4.1-or-older/bold-bi-on-ubuntu/",
     "toPath": "/deploying-bold-bi/deploying-on-linux/installation-and-deployment/v4.1-or-older/bold-bi-on-ubuntu/"
   },
-   {
+  {
     "fromPath": "/deploying-bold-bi/deploying-in-linux/installation-and-deployment/v4.1-or-older/bold-bi-on-centos/",
     "toPath": "/deploying-bold-bi/deploying-on-linux/installation-and-deployment/v4.1-or-older/bold-bi-on-centos/"
   },
-   {
+  {
     "fromPath": "/deploying-bold-bi/deploying-in-linux/installation-and-deployment/bold-bi-on-ubuntu/",
     "toPath": "/deploying-bold-bi/deploying-on-linux/installation-and-deployment/bold-bi-on-ubuntu/"
   },
@@ -50136,27 +50143,27 @@
     "fromPath": "/deploying-bold-bi/deploying-in-linux/install-optional-libraries/v5.2-or-above/",
     "toPath": "/deploying-bold-bi/deploying-on-linux/install-optional-libraries/v5.2-or-above/"
   },
-    {
+  {
     "fromPath": "/deploying-bold-bi/deploying-in-linux/install-optional-libraries/v5.1/",
     "toPath": "/deploying-bold-bi/deploying-on-linux/install-optional-libraries/v5.1/"
   },
-    {
+  {
     "fromPath": "/deploying-bold-bi/deploying-in-linux/install-optional-libraries/v4.2/",
     "toPath": "/deploying-bold-bi/deploying-on-linux/install-optional-libraries/v4.2/"
   },
-    {
+  {
     "fromPath": "/deploying-bold-bi/deploying-in-linux/install-optional-libraries/v4.1-or-older/",
     "toPath": "/deploying-bold-bi/deploying-on-linux/install-optional-libraries/v4.1-or-older/"
   },
-    {
+  {
     "fromPath": "/deploying-bold-bi/deploying-in-linux/upgrade-to-latest/",
     "toPath": "/deploying-bold-bi/deploying-on-linux/upgrade-to-latest/"
   },
-    {
+  {
     "fromPath": "/deploying-bold-bi/deploying-in-kubernetes/",
     "toPath": "/deploying-bold-bi/deploying-on-kubernetes/"
   },
-    {
+  {
     "fromPath": "/deploying-bold-bi/deploying-in-kubernetes/prerequisites-kubernetes/",
     "toPath": "/deploying-bold-bi/deploying-on-kubernetes/prerequisites-kubernetes/"
   },
@@ -50187,5 +50194,857 @@
   {
     "fromPath": "/multi-tenancy/site-administration/api-reference/",
     "toPath": "/multi-tenancy/api-reference/"
+  },
+  {
+    "fromPath": "/artificial-intelligence-and-machine-learning/qna-widget/qna-widget/",
+    "toPath": "/artificial-intelligence-and-machine-learning/qna-widget/"
+  },
+  {
+    "fromPath": "/visualizing-data/visualization-widgets/qna-widget/",
+    "toPath": "/artificial-intelligence-and-machine-learning/qna-widget/"
+  },
+  {
+    "fromPath": "/deploying-bold-bi/overview/#registration-and-download",
+    "toPath": "/deploying-bold-bi/overview/#how-to-register-start-a-free-trial-and-download-bold-bi/"
+  },
+  {
+    "fromPath": "/embed-sandbox/",
+    "toPath": "/evaluation-quick-start/"
+  },
+  {
+    "fromPath": "/getting-started/help-resources/",
+    "toPath": "/evaluation-quick-start/help-resources/"
+  },
+  {
+    "fromPath": "/getting-started/sample-dashboard/",
+    "toPath": "/evaluation-quick-start/sample-dashboard/"
+  },
+  {
+    "fromPath": "/embedding-options/iframe-embedding/dashboard-embedding-with-token-authentication/",
+    "toPath": "/embedding-options/iframe-embedding/embedding-with-token-authentication/#dashboard-embedding-with-token-authentication"
+  },
+  {
+    "fromPath": "/embedding-options/iframe-embedding/embedding-a-dashboard/",
+    "toPath": "/embedding-options/iframe-embedding/embedding-with-iframe/#embed-the-dashboard-in-an-iframe"
+  },
+  {
+    "fromPath": "/embedding-options/iframe-embedding/dashboard-embedding-with-external-sso/",
+    "toPath": "/embedding-options/iframe-embedding/embedding-with-iframe/#embed-dashboards-using-external-sso-authentication"
+  },
+  {
+    "fromPath": "/embedding-options/iframe-embedding/embedding-a-dashboard-with-views/",
+    "toPath": "/embedding-options/iframe-embedding/embedding-with-iframe/#embedding-the-dashboard-with-views"
+  },
+  {
+    "fromPath": "/embedding-options/iframe-embedding/widget-embedding-with-token-authentication/",
+    "toPath": "/embedding-options/iframe-embedding/embedding-with-token-authentication/#widget-embedding-with-token-authentication"
+  },
+  {
+    "fromPath": "/embedding-options/iframe-embedding/datasource-embedding/",
+    "toPath": "/embedding-options/iframe-embedding/embedding-with-iframe/#embed-the-data-source-using-the-iframe"
+  },
+  {
+    "fromPath": "/embedding-options/iframe-embedding/datasource-embedding-with-token-authentication/",
+    "toPath": "/embedding-options/iframe-embedding/embedding-with-token-authentication/#embed-data-source-with-token-in-bold-bi"
+  },
+  {
+    "fromPath": "/embedding-options/embedding-sdk/embedding-dashboard-designer/",
+    "toPath": "/embedding-options/embedding-sdk/embedding-using-javascript/#embed-dashboard-designer-in-your-application"
+  },
+  {
+    "fromPath": "/embedding-options/embedding-sdk/embedding-a-widget/",
+    "toPath": "/embedding-options/embedding-sdk/embedding-using-javascript/#embed-the-dashboard-widget-in-your-application"
+  },
+  {
+    "fromPath": "/embedding-options/embedding-sdk/embedding-a-datasource/",
+    "toPath": "/embedding-options/embedding-sdk/embedding-using-javascript/#embed-the-data-source-in-your-application"
+  },
+  {
+    "fromPath": "/embedding-options/embedding-sdk/embedding-multiple-dashboards-and-widgets/",
+    "toPath": "/embedding-options/embedding-sdk/embedding-using-javascript/#embed-the-multiple-dashboard-and-widgets-in-your-application"
+  },
+  {
+    "fromPath": "/embedding-options/embedding-sdk/embedding-pinboard/",
+    "toPath": "/embedding-options/embedding-sdk/embedding-using-javascript/#embed-the-pinboard-in-your-application"
+  },
+  {
+    "fromPath": "/embedding-options/embedding-sdk/embedding-the-dashboard-with-views/",
+    "toPath": "/embedding-options/embedding-sdk/embedding-using-javascript/#embed-the-dashboard-with-view-in-your-application"
+  },
+  {
+    "fromPath": "/embedding-options/embedding-sdk/embedding-multitab-dashboard-programmatically/",
+    "toPath": "/embedding-options/embedding-sdk/embedding-using-javascript/#embed-a-multitab-dashboard-programmatically"
+  },
+  {
+    "fromPath": "/security-configuration/group-based-authorization/",
+    "toPath": "/embedding-options/group-based-authorization/"
+  },
+  {
+    "fromPath": "/working-with-data-sources/working-with-bold-etl/",
+    "toPath": "/working-with-data-sources/working-with-bold-data-hub/"
+  },
+  {
+    "fromPath": "/working-with-data-sources/working-with-bold-data-hub/working-with-projects/",
+    "toPath": "/working-with-data-sources/working-with-bold-data-hub/working-with-pipelines/"
+  },
+  {
+    "fromPath": "/embedding-options/embedding-sdk/embedding-using-javascript/",
+    "toPath": "/embedding-options/embedding-sdk/embed-viewer-dashboard/"
+  },
+  {		
+    "fromPath": "/embedding-options/embedding-sdk/generate-embed-token/",
+    "toPath": "/embedding-options/embedding-sdk/token-generation/"
+  },
+  {
+    "fromPath": "/embedding-options/embedding-sdk/guidelines-for-single-site-multi-site/",
+    "toPath": ""
+  },
+  {
+    "fromPath": "/embedding-options/embedding-sdk/custom-theme-embedding/",
+    "toPath": "/embedding-options/embedding-sdk/component-api-v2.0/dashboard/dashboard-members/#themes"
+  },
+  {
+    "fromPath": "/embedding-options/embedding-sdk/custom-attribute/",
+    "toPath": "/embedding-options/embedding-sdk/row-level-security/#custom-attribute"
+  },
+  {
+    "fromPath": "/embedding-options/embedding-sdk/how-to-achieve-row-level-security-embedding/",
+    "toPath": "/embedding-options/embedding-sdk/row-level-security/#row-level-security"
+  },
+  {
+    "fromPath": "/embedding-options/embedding-sdk/types-of-data-filtering-in-embedding/",
+    "toPath": "/embedding-options/embedding-sdk/row-level-security/#data-filter"
+  },
+  {
+    "fromPath": "/embedding-options/embedding-sdk/embedding-api-reference/",
+    "toPath": "/embedding-options/embedding-sdk/component-api-v2.0/"
+  },
+  {
+    "fromPath": "/embedding-options/embedding-sdk/embedding-api-reference/members/",
+    "toPath": "/embedding-options/embedding-sdk/component-api-v2.0/dashboard/dashboard-members/"
+  },
+  {
+    "fromPath": "/embedding-options/embedding-sdk/embedding-api-reference/methods/",
+    "toPath": "/embedding-options/embedding-sdk/component-api-v2.0/dashboard/dashboard-methods/"
+  },
+  {
+    "fromPath": "/embedding-options/embedding-sdk/embedding-api-reference/events/",
+    "toPath": "/embedding-options/embedding-sdk/component-api-v2.0/dashboard/dashboard-events/"
+  },
+  {
+    "fromPath": "/embedding-options/embedding-sdk/embedding-using-javascript/#embed-dashboard-designer-in-your-application",
+    "toPath": "/embedding-options/embedding-sdk/component-api-v2.0/designer/"
+  },
+  {
+    "fromPath": "/embedding-options/embedding-sdk/embedding-using-javascript/#embed-the-dashboard-widget-in-your-application",
+    "toPath": "/embedding-options/embedding-sdk/different-components/embed-dashboard-widget/"
+  },
+  {
+    "fromPath": "/embedding-options/embedding-sdk/embedding-using-javascript/#embed-the-data-source-in-your-application",
+    "toPath": "/embedding-options/embedding-sdk/different-components/embed-datasource/"
+  },
+  {
+    "fromPath": "/embedding-options/embedding-sdk/embedding-using-javascript/#embed-the-pinboard-in-your-application",
+    "toPath": "/embedding-options/embedding-sdk/different-components/embed-pinboard/"
+  },
+  {
+    "fromPath": "/embedding-options/embedding-sdk/embedding-using-javascript/#embed-the-dashboard-with-view-in-your-application",
+    "toPath": "/embedding-options/embedding-sdk/different-components/embed-view/"
+  },
+  {
+    "fromPath": "/embedding-options/embedding-sdk/embedding-using-javascript/#embed-a-multitab-dashboard-programmatically",
+    "toPath": "/embedding-options/embedding-sdk/different-components/embed-multi-tab-dashboard/#embed-a-multitab-dashboard-programmatically"
+  },
+  {
+    "fromPath": "/embedding-options/group-based-authorization/",
+    "toPath": "/embedding-options/embedding-sdk/authorization-options/group-based-authorization/"
+  },
+  {
+    "fromPath": "/embedding-options/enabling-user-import-with-group-based-authorization/",
+    "toPath": "/embedding-options/embedding-sdk/authorization-options/enabling-user-import-with-group-based-authorization/"
+  },
+  {
+    "fromPath": "/embedding-options/embedding-sdk-vs-iframe-embedding/",
+    "toPath": "/embedding-options/#feature-comparison-between-javascript-sdk-vs-iframe-embedding"
+  },
+  {
+    "fromPath": "/embedding-options/#embedding-options",
+    "toPath": "/embedding-options/#embedding-dashboards-in-bold-bi"
+  },
+  {
+    "fromPath": "/embedding-options/embedding-sdk/embedding-api-reference/",
+    "toPath": "/embedding-options/embedding-sdk/component-api-v2.0/"
+  },
+  {
+    "fromPath": "/embedded-bi/security-configuration/cors-settings/",
+    "toPath": "/security-configuration/cors-settings/"
+  },
+  {
+    "fromPath": "/artificial-intelligence-and-machine-learning/ai-assistant/dashboard-summary/",
+    "toPath": "/artificial-intelligence-and-machine-learning/generative-ai/dashboard-summary/"
+  },
+  {
+    "fromPath": "/artificial-intelligence-and-machine-learning/dashboard-summary/",
+    "toPath": "/artificial-intelligence-and-machine-learning/generative-ai/dashboard-summary/"
+  },
+  {
+    "fromPath": "/embedding-options/embedding-sdk/sdk-reference/viewer-events/",
+    "toPath": "/embedding-options/embedding-sdk/component-api-v2.0/dashboard/dashboard-events/"
+  },
+  {
+    "fromPath": "/embedding-options/embedding-sdk/v2.0-sdk-reference/viewer-events/",
+    "toPath": "/embedding-options/embedding-sdk/component-api-v2.0/dashboard/dashboard-events/"
+  },
+  {
+    "fromPath": "/embedding-options/embedding-sdk/v2.0-sdk-reference/widget/widget-events/",
+    "toPath": "/embedding-options/embedding-sdk/component-api-v2.0/widget/widget-events/"
+  },
+  {
+    "fromPath": "/embedding-options/embedding-sdk/v2.0-sdk-reference/datasource/",
+    "toPath": "/embedding-options/embedding-sdk/component-api-v2.0/datasource/"
+  },
+  {
+    "fromPath": "/embedding-options/embedding-sdk/v2.0-sdk-reference/datasource/datasource-events/",
+    "toPath": "/embedding-options/embedding-sdk/component-api-v2.0/datasource/datasource-events/"
+  },
+  {
+    "fromPath": "/embedding-options/embedding-sdk/v2.0-sdk-reference/designer/",
+    "toPath": "/embedding-options/embedding-sdk/component-api-v2.0/designer/"
+  },
+  {
+    "fromPath": "/embedding-options/embedding-sdk/v2.0-sdk-reference/designer/designer-events/",
+    "toPath": "/embedding-options/embedding-sdk/component-api-v2.0/designer/designer-events/"
+  },
+  {
+    "fromPath": "/embedding-options/embedding-sdk/v2.0-sdk-reference/designer/designer-members/",
+    "toPath": "/embedding-options/embedding-sdk/component-api-v2.0/designer/designer-members/"
+  },
+  {
+    "fromPath": "/embedding-options/embedding-sdk/v2.0-sdk-reference/designer/designer-methods/",
+    "toPath": "/embedding-options/embedding-sdk/component-api-v2.0/designer/designer-methods/"
+  },
+  {
+    "fromPath": "/embedding-options/embedding-sdk/v2.0-sdk-reference/multi-tab/multi-tab-events/",
+    "toPath": "/embedding-options/embedding-sdk/component-api-v2.0/multi-tab/multi-tab-events/"
+  },
+  {
+    "fromPath": "/embedding-options/embedding-sdk/v2.0-sdk-reference/pinboard/",
+    "toPath": "/embedding-options/embedding-sdk/component-api-v2.0/pinboard/"
+  },
+  {
+    "fromPath": "/embedding-options/embedding-sdk/v2.0-sdk-reference/pinboard/pinboard-events/",
+    "toPath": "/embedding-options/embedding-sdk/component-api-v2.0/pinboard/pinboard-events/"
+  },
+  {
+    "fromPath": "/embedding-options/embedding-sdk/v2.0-sdk-reference/pinboard/pinboard-methods/",
+    "toPath": "/embedding-options/embedding-sdk/component-api-v2.0/pinboard/pinboard-methods/"
+  },
+  {
+    "fromPath": "/embedding-options/embedding-sdk/v2.0-sdk-reference/viewer/",
+    "toPath": "/embedding-options/embedding-sdk/component-api-v2.0/dashboard/"
+  },
+  {
+    "fromPath": "/embedding-options/embedding-sdk/v2.0-sdk-reference/viewer/viewer-events/",
+    "toPath": "/embedding-options/embedding-sdk/component-api-v2.0/dashboard/dashboard-events/"
+  },
+  {
+    "fromPath": "/embedding-options/embedding-sdk/v2.0-sdk-reference/viewer/viewer-methods/",
+    "toPath": "/embedding-options/embedding-sdk/component-api-v2.0/dashboard/dashboard-methods/"
+  },
+  {
+    "fromPath": "/embedding-options/embedding-sdk/v2.0-sdk-reference/widget/widget-methods/",
+    "toPath": "/embedding-options/embedding-sdk/component-api-v2.0/widget/widget-methods/"
+  },
+    {
+    "fromPath": "/embedding-options/embedding-sdk/v2.0-sdk-reference/viewer/viewer-members/",
+    "toPath": " /embedding-options/embedding-sdk/component-api-v2.0/dashboard/dashboard-members/"
+  },
+  {
+    "fromPath": "/embedding-options/embedding-sdk/v2.0-sdk-reference/",
+    "toPath": "/embedding-options/embedding-sdk/component-api-v2.0/"
+  },
+  {
+    "fromPath": "/embedding-options/embedding-sdk/v2.0-sdk-reference/datasource/datasource-members/",
+    "toPath": "/embedding-options/embedding-sdk/component-api-v2.0/datasource/datasource-members/"
+  },
+  {
+    "fromPath": "/embedding-options/embedding-sdk/v2.0-sdk-reference/multi-tab/",
+    "toPath": " /embedding-options/embedding-sdk/component-api-v2.0/multi-tab/"
+  },
+  {
+    "fromPath": "/embedding-options/embedding-sdk/v2.0-sdk-reference/multi-tab/multi-tab-members/",
+    "toPath": " /embedding-options/embedding-sdk/component-api-v2.0/multi-tab/multi-tab-members/"
+  },
+  {
+    "fromPath": "/embedding-options/embedding-sdk/v2.0-sdk-reference/multi-tab/multi-tab-methods/",
+    "toPath": "/embedding-options/embedding-sdk/component-api-v2.0/multi-tab/multi-tab-methods/"
+  },
+  {
+    "fromPath": "/embedding-options/embedding-sdk/v2.0-sdk-reference/pinboard/pinboard-members/",
+    "toPath": "/embedding-options/embedding-sdk/component-api-v2.0/pinboard/pinboard-members/"
+  },
+  {
+    "fromPath": "/embedding-options/embedding-sdk/v2.0-sdk-reference/widget/",
+    "toPath": " /embedding-options/embedding-sdk/component-api-v2.0/widget/"
+  },
+  {
+    "fromPath": "/embedding-options/embedding-sdk/v2.0-sdk-reference/widget/widget-members/",
+    "toPath": "/embedding-options/embedding-sdk/component-api-v2.0/widget/widget-members/"
+  },
+  {
+    "fromPath": "/embedding-options/application-embedding/",
+    "toPath": "/embedding-options/iframe-embedding/full-server-embedding/"
+  },
+  {
+    "fromPath": "/faq/",
+    "toPath": "https://support.boldbi.com/kb/category/41"
+  },
+  {
+    "fromPath": "/faq/what-all-are-the-files-and-folders-will-be-generated-in-the-installed-machine/",
+    "toPath": "https://support.boldbi.com/kb/article/16571/what-all-are-the-files-and-folders-will-be-generated-in-the-installed-machine"
+  },
+  {
+    "fromPath": "/faq/change-the-user-after-installing-bold-bi-on-linux/",
+    "toPath": "https://support.boldbi.com/kb/article/16572/change-the-user-after-installing-bold-bi-on-linux"
+  },
+  {
+    "fromPath": "/faq/how-to-change-binding-in-bold-bi-embedded/",
+    "toPath": "https://support.boldbi.com/kb/article/16575/how-to-change-binding-in-bold-bi-embedded"
+  },
+  {
+    "fromPath": "/faq/how-to-change-binding-in-bold-bi-embedded-v4.1.36/",
+    "toPath": "https://support.boldbi.com/kb/article/16576/how-to-change-binding-in-bold-bi-embedded-v4-1-36"
+  },
+  {
+    "fromPath": "/faq/how-to-change-binding-in-bold-bi-embedded-below-v4.1.36/",
+    "toPath": "https://support.boldbi.com/kb/article/16577/how-to-change-binding-in-bold-bi-embedded-versions-below-4136"
+  },
+  {
+    "fromPath": "/faq/how-to-install-phantomjs-manually/",
+    "toPath": "https://support.boldbi.com/kb/article/16580/how-to-install-phantomjs-manually"
+  },
+  {
+    "fromPath": "/faq/how-to-install-chromium-packages-manually/",
+    "toPath": "https://support.boldbi.com/kb/article/16581/how-to-install-chromium-packages-manually"
+  },
+  {
+    "fromPath": "/faq/features-needed-to-enable-in-iis-to-run-bold-bi-in-win-client-os/",
+    "toPath": "https://support.boldbi.com/kb/article/16583/features-needed-to-enable-in-iis-to-run-bold-bi-in-win-client-os"
+  },
+  {
+    "fromPath": "/faq/features-needed-to-enable-in-iis-to-run-bold-bi-in-win-server-os/",
+    "toPath": "https://support.boldbi.com/kb/article/16584/features-needed-to-enable-in-iis-to-run-bold-bi-in-win-server-os"
+  },
+  {
+    "fromPath": "/faq/where-can-i-find-the-error-and-debug-log-files/",
+    "toPath": "https://support.boldbi.com/kb/article/16578/where-can-i-find-the-error-and-debug-log-files"
+  },
+  {
+    "fromPath": "/faq/how-to-reset-database-for-bold-bi-application/",
+    "toPath": "https://support.boldbi.com/kb/article/16579/how-to-reset-database-for-bold-bi-application"
+  },
+  {
+    "fromPath": "/faq/http-error-500-19-can-not-logon-locally/",
+    "toPath": "https://support.boldbi.com/kb/article/16585/http-error-500-19-can-not-logon-locally"
+  },
+  {
+    "fromPath": "/faq/how-to-restrict-the-bold-bi-site-embed-into-iframe/",
+    "toPath": "https://support.boldbi.com/kb/article/16587/how-to-restrict-the-bold-bi-site-embed-into-iframe"
+  },
+  {
+    "fromPath": "/faq/how-to-register-bold-bi-web-application-with-azure-active-directory/",
+    "toPath": "https://support.boldbi.com/kb/article/16588/how-to-register-bold-bi-web-application-with-azure-active-directory"
+  },
+  {
+    "fromPath": "/faq/how-to-register-bold-bi-mobile-application-with-azure-active-directory/",
+    "toPath": "https://support.boldbi.com/kb/article/16599/how-to-register-bold-bi-mobile-application-with-azure-active-directory"
+  },
+  {
+    "fromPath": "/faq/how-to-apply-the-filter-for-any-column-value-based-on-the-multiple-words/",
+    "toPath": "https://support.boldbi.com/kb/article/16600/how-to-apply-the-filter-for-any-column-value-based-on-the-multiple-words"
+  },
+  {
+    "fromPath": "/faq/how-to-customize-the-login-page-of-bold-bi-site/",
+    "toPath": "https://support.boldbi.com/kb/article/16601/how-to-customize-the-login-page-of-bold-bi-site"
+  },
+  {
+    "fromPath": "/faq/how-to-connect-a-live-xml-or-json-or-csv-or-excel-file-in-bold-bi-dashboard/",
+    "toPath": "https://support.boldbi.com/kb/article/16602/how-to-connect-a-live-xml-or-json-or-csv-or-excel-file-in-bold-bi-dashboard"
+  },
+  {
+    "fromPath": "/faq/how-to-resolve-bold-bi-application-pool-crashing/",
+    "toPath": "https://support.boldbi.com/kb/article/16603/how-to-resolve-bold-bi-application-pool-crashing"
+  },
+  {
+    "fromPath": "/faq/how-the-data-is-loaded-while-rendering-the-dashboard/",
+    "toPath": "https://support.boldbi.com/kb/article/16604/how-the-data-is-loaded-while-rendering-the-dashboard"
+  },
+  {
+    "fromPath": "/faq/do-you-need-an-internet-to-render-sample-dashboards-in-bold-bi/",
+    "toPath": "https://support.boldbi.com/kb/article/16605/do-you-need-an-internet-to-render-sample-dashboards-in-bold-bi"
+  },
+  {
+    "fromPath": "/faq/comparison-between-javascript-embedding-vs-iframe-embedding/",
+    "toPath": "https://support.boldbi.com/kb/article/16606/comparison-between-javascript-embedding-vs-iframe-embedding"
+  },
+  {
+    "fromPath": "/faq/how-to-host-bold-bi-application-as-a-sub-application-in-iis/",
+    "toPath": "https://support.boldbi.com/kb/article/16607/how-to-host-bold-bi-application-as-a-sub-application-in-iis"
+  },
+  {
+    "fromPath": "/faq/how-to-resolve-login-failed-for-user-in-windows-authentication-mode/",
+    "toPath": "https://support.boldbi.com/kb/article/16608/how-to-resolve-login-failed-for-user-in-windows-authentication-mode"
+  },
+  {
+    "fromPath": "/faq/how-to-manually-update-the-license/",
+    "toPath": "https://support.boldbi.com/kb/article/16609/how-to-manually-update-the-license"
+  },
+  {
+    "fromPath": "/faq/how-to-resolve-license-server-unreachable-issue-in-bold-bi/",
+    "toPath": "https://support.boldbi.com/kb/article/16610/how-to-resolve-license-server-unreachable-issue-in-bold-bi"
+  },
+  {
+    "fromPath": "/faq/how-to-change-dns-for-each-tenant-site/",
+    "toPath": "https://support.boldbi.com/kb/article/16611/how-to-change-dns-for-each-tenant-site"
+  },
+  {
+    "fromPath": "/faq/how-to-change-dns-for-each-tenant-site-v4.1.36-or-below/",
+    "toPath": "https://support.boldbi.com/kb/article/16612/how-to-change-dns-for-each-tenant-site-v4-1-36-or-below"
+  },
+  {
+    "fromPath": "/faq/how-to-create-a-separate-axis-for-the-multiple-series-charts/",
+    "toPath": "https://support.boldbi.com/kb/article/16614/how-to-create-a-separate-axis-for-the-multiple-series-charts"
+  },
+  {
+    "fromPath": "/faq/how-to-get-the-dashboard-list-based-on-group-for-the-specific-user/",
+    "toPath": "https://support.boldbi.com/kb/article/16616/how-to-get-the-dashboard-list-based-on-group-for-the-specific-user"
+  },
+  {
+    "fromPath": "/faq/purpose-of-the-databases-used-in-the-bold-bi/",
+    "toPath": "https://support.boldbi.com/kb/article/16617/purpose-of-the-databases-used-in-the-bold-bi"
+  },
+  {
+    "fromPath": "/faq/how-web-based-data-source-works-with-bold-bi-embedded/",
+    "toPath": "https://support.boldbi.com/kb/article/16619/how-web-based-data-source-works-with-bold-bi-embedded"
+  },
+  {
+    "fromPath": "/faq/when-you-should-choose-multi-tenancy-and-with-row-level-security/",
+    "toPath": "https://support.boldbi.com/kb/article/16621/when-you-should-choose-multi-tenancy-and-with-row-level-security"
+  },
+  {
+    "fromPath": "/faq/how-to-speed-up-the-data-access-in-sql-server/",
+    "toPath": "https://support.boldbi.com/kb/article/16622/how-to-speed-up-the-data-access-in-sql-server"
+  },
+  {
+    "fromPath": "/faq/how-the-interactions-can-be-made-between-the-bold-bi-and-external-application/",
+    "toPath": "https://support.boldbi.com/kb/article/16623/how-the-interactions-can-be-made-between-the-bold-bi-and-external-application"
+  },
+  {
+    "fromPath": "/faq/dashboard-authorized-access/",
+    "toPath": "https://support.boldbi.com/kb/article/16624/dashboard-authorized-access"
+  },
+  {
+    "fromPath": "/faq/accessing-nested-key-values-in-snowflake-data-source/",
+    "toPath": "https://support.boldbi.com/kb/article/16625/accessing-nested-key-values-in-snowflake-data-source"
+  },
+  {
+    "fromPath": "/faq/how-to-add-a-new-data-connector-under-bold-bi/",
+    "toPath": "https://support.boldbi.com/kb/article/16626/how-to-add-a-new-data-connector-under-bold-bi"
+  },
+  {
+    "fromPath": "/faq/how-to-add-threshold-to-a-chart-widget/",
+    "toPath": "https://support.boldbi.com/kb/article/16627/how-to-add-threshold-to-a-chart-widget"
+  },
+  {
+    "fromPath": "/faq/how-to-use-groups-in-bold-bi/",
+    "toPath": "https://support.boldbi.com/kb/article/16658/how-to-use-groups-in-bold-bi"
+  },
+  {
+    "fromPath": "/faq/how-to-customize-side-bar-menu/",
+    "toPath": "https://support.boldbi.com/kb/article/16660/how-to-customize-side-bar-menu"
+  },
+  {
+    "fromPath": "/faq/how-to-pass-dashboard-parameter-in-iframe-embedding-a-dashboard/",
+    "toPath": "https://support.boldbi.com/kb/article/16636/how-to-pass-dashboard-parameter-in-iframe-embedding-a-dashboard"
+  },
+  {
+    "fromPath": "/faq/how-to-connect-data-sources-with-ssh-connection-in-bold-bi/",
+    "toPath": "https://support.boldbi.com/kb/article/16637/how-to-connect-data-sources-with-ssh-connection-in-bold-bi"
+  },
+  {
+    "fromPath": "/faq/how-to-enable-threshold-through-code-view-mode-data-source/",
+    "toPath": "https://support.boldbi.com/kb/article/16639/how-to-enable-threshold-through-code-view-mode-data-source"
+  },
+  {
+    "fromPath": "/faq/how-to-enable-ssl-through-connection-parameters-for-postgresql-data-source/",
+    "toPath": "https://support.boldbi.com/kb/article/16640/how-to-enable-ssl-through-connection-parameters-for-postgresql-data-source"
+  },
+  {
+    "fromPath": "/faq/how-to-transpose-the-data-columns-and-rows-in-sql-data-source/",
+    "toPath": "https://support.boldbi.com/kb/article/16641/how-to-transpose-the-data-columns-and-rows-in-sql-data-source"
+  },
+  {
+    "fromPath": "/faq/how-to-access-the-custom-json-data-using-postgresql-data-source/",
+    "toPath": "https://support.boldbi.com/kb/article/16642/how-to-access-the-custom-json-data-using-postgresql-data-source"
+  },
+  {
+    "fromPath": "/faq/how-to-convert-timestamp-column-from-one-timezone-to-another-in-the-postgresql-datasource/",
+    "toPath": "https://support.boldbi.com/kb/article/16643/how-to-convert-timestamp-column-from-one-timezone-to-another-in-the-postgresql-datasource"
+  },
+  {
+    "fromPath": "/faq/how-to-apply-row-level-security-in-elastic-search-data-source/",
+    "toPath": "https://support.boldbi.com/kb/article/16645/how-to-apply-row-level-security-in-elastic-search-data-source"
+  },
+  {
+    "fromPath": "/faq/how-to-allow-users-to-create-dashboards-without-modifying-the-existing-data-sources/",
+    "toPath": "https://support.boldbi.com/kb/article/16646/how-to-allow-users-to-create-dashboards-without-modifying-the-existing-data-sources"
+  },
+  {
+    "fromPath": "/faq/how-to-query-snowflake-records-using-code-view-mode-in-bold-bi/",
+    "toPath": "https://support.boldbi.com/kb/article/16647/how-to-query-snowflake-records-using-code-view-mode-in-bold-bi"
+  },
+  {
+    "fromPath": "/faq/how-to-execute-r-language-scripts-using-ms-sql-datasource-in-bold-bi/",
+    "toPath": "https://support.boldbi.com/kb/article/16650/how-to-execute-r-language-scripts-using-ms-sql-datasource-in-bold-bi"
+  },
+  {
+    "fromPath": "/faq/how-to-execute-the-ms-sql-table-valued-function-in-bold-bi/",
+    "toPath": "https://support.boldbi.com/kb/article/16648/how-to-execute-the-ms-sql-table-valued-function-in-bold-bi"
+  },
+  {
+    "fromPath": "/faq/how-to-connect-google-cloud-sql-data-source-with-jdbc-connection-string/",
+    "toPath": "https://support.boldbi.com/kb/article/16649/how-to-connect-google-cloud-sql-data-source-with-jdbc-connection-string"
+  },
+  {
+    "fromPath": "/faq/how-to-connect-polymorphic-databases-in-bold-bi/",
+    "toPath": "https://support.boldbi.com/kb/article/16662/how-to-connect-polymorphic-databases-in-bold-bi"
+  },
+  {
+    "fromPath": "/faq/how-to-group-the-data-using-bold-bi/",
+    "toPath": "https://support.boldbi.com/kb/article/16663/how-to-group-the-data-using-bold-bi"
+  },
+  {
+    "fromPath": "/faq/how-to-overwrite-the-existing-dashboard/",
+    "toPath": "https://support.boldbi.com/kb/article/16664/how-to-overwrite-the-existing-dashboard"
+  },
+  {
+    "fromPath": "/faq/how-to-pass-a-parameter-to-web-api-connector-when-view-and-embedding-a-dashboard/",
+    "toPath": "https://support.boldbi.com/kb/article/16665/how-to-pass-a-parameter-to-web-api-connector-when-view-and-embedding-a-dashboard"
+  },
+  {
+    "fromPath": "/faq/how-to-get-offline-unlock-key/",
+    "toPath": "https://support.boldbi.com/kb/article/16666/how-to-get-offline-unlock-key"
+  },
+  {
+    "fromPath": "/faq/how-to-update-ssl-certificate-in-kubernetes-secret-of-bold-bi-site/",
+    "toPath": "https://support.boldbi.com/kb/article/16667/how-to-update-ssl-certificate-in-kubernetes-secret-of-bold-bi-site"
+  },
+  {
+    "fromPath": "/faq/how-to-view-first-7-days-data-of-each-month-in-dashboard/",
+    "toPath": "https://support.boldbi.com/kb/article/16668/how-to-view-first-7-days-data-of-each-month-in-dashboard"
+  },
+  {
+    "fromPath": "/faq/how-to-deploy-boldbi-as-offline-deployment-in-docker/",
+    "toPath": "https://support.boldbi.com/kb/article/16669/how-to-deploy-boldbi-as-offline-deployment-in-docker"
+  },
+  {
+    "fromPath": "/faq/how-to-configure-ssl-for-bold-bi-enterprise-edition/",
+    "toPath": "https://support.boldbi.com/kb/article/16671/how-to-configure-ssl-for-bold-bi-enterprise-edition"
+  },
+  {
+    "fromPath": "/faq/how-to-show-a-detailed-view-of-a-widget-in-javascript/",
+    "toPath": "https://support.boldbi.com/kb/article/16672/how-to-show-a-detailed-view-of-a-widget-in-javascript"
+  },
+  {
+    "fromPath": "/faq/how-to-use-median-aggregation-in-bold-bi/",
+    "toPath": "https://support.boldbi.com/kb/article/16670/how-to-use-median-aggregation-in-bold-bi"
+  },
+  {
+    "fromPath": "/faq/how-to-publish-modified-data-source-from-one-tenant-to-another/",
+    "toPath": "https://support.boldbi.com/kb/article/16673/how-to-publish-modified-data-source-from-one-tenant-to-another"
+  },
+  {
+    "fromPath": "/faq/working-with-custom-query-extract-mode-in-bold-bi/",
+    "toPath": "https://support.boldbi.com/kb/article/16675/working-with-custom-query-extract-mode-in-bold-bi"
+  },
+  {
+    "fromPath": "/faq/how-to-configure-relative-date-filter-based-on-minutes/",
+    "toPath": "https://support.boldbi.com/kb/article/16676/how-to-configure-relative-date-filter-based-on-minutes"
+  },
+  {
+    "fromPath": "/faq/how-to-configure-the-bold-bi-with-reverse-proxy-server-the-dmz-in-windows/",
+    "toPath": "https://support.boldbi.com/kb/article/16678/how-to-configure-the-bold-bi-with-reverse-proxy-server-the-dmz-in-windows"
+  },
+  {
+    "fromPath": "/faq/how-to-configure-the-bold-bi-with-reverse-proxy-server-in-the-dmz-in-linux/",
+    "toPath": "https://support.boldbi.com/kb/article/16687/how-to-configure-the-bold-bi-with-reverse-proxy-server-in-the-dmz-in-linux"
+  },
+  {
+    "fromPath": "/faq/how-to-authenticate-google-analytics-for-bold-bi/",
+    "toPath": "https://support.boldbi.com/kb/article/16688/how-to-authenticate-google-analytics-for-bold-bi"
+  },
+  {
+    "fromPath": "/faq/how-the-dashboard-user-can-modify-the-input-value-of-a-parameter-in-view-mode/",
+    "toPath": "https://support.boldbi.com/kb/article/16689/how-the-dashboard-user-can-modify-the-input-value-of-a-parameter-in-view-mode"
+  },
+  {
+    "fromPath": "/faq/what-will-happen-during-multiple-users-are-editing-the-same-dashboard-or-data-source-at-the-same-time/",
+    "toPath": "https://support.boldbi.com/kb/article/16690/what-will-happen-during-multiple-users-are-editing-the-same-dashboard-or-data-source-at-the-same-time"
+  },
+  {
+    "fromPath": "/faq/how-to-show-current-date-and-time-in-widget-title/",
+    "toPath": "https://support.boldbi.com/kb/article/16691/how-to-show-current-date-and-time-in-widget-title"
+  },
+  {
+    "fromPath": "/faq/how-to-avoid-deployment-pending-problem-after-the-site-creation-in-bold-bi-on-premises/",
+    "toPath": "https://support.boldbi.com/kb/article/16692/how-to-avoid-deployment-pending-problem-after-the-site-creation-in-bold-bi-on-premises"
+  },
+  {
+    "fromPath": "/faq/how-to-install-bold-bi-in-windows-server-machine-without-using-installer/",
+    "toPath": "https://support.boldbi.com/kb/article/16695/how-to-install-bold-bi-in-windows-server-machine-without-using-installer"
+  },
+  {
+    "fromPath": "/faq/how-to-split-the-first-part-of-a-name-from-the-name-column/",
+    "toPath": "https://support.boldbi.com/kb/article/16696/how-to-split-the-first-part-of-a-name-from-the-name-column"
+  },
+  {
+    "fromPath": "/faq/how-to-render-the-html-data-inside-the-grid-cell/",
+    "toPath": "https://support.boldbi.com/kb/article/16697/how-to-render-the-html-data-inside-the-grid-cell"
+  },
+  {
+    "fromPath": "/faq/how-to-pass-the-dashboard-parameter-from-client-end-in-embedded-bi/",
+    "toPath": "https://support.boldbi.com/kb/article/16698/how-to-pass-the-dashboard-parameter-from-client-end-in-embedded-bi"
+  },
+  {
+    "fromPath": "/faq/how-to-resolve-http-error-500.19-internal-server-error/",
+    "toPath": "https://support.boldbi.com/kb/article/16699/how-to-resolve-http-error-500-19-internal-server-error"
+  },
+  {
+    "fromPath": "/faq/how-to-show-a-specific-column-based-on-users/",
+    "toPath": "https://support.boldbi.com/kb/article/16700/how-to-show-a-specific-column-based-on-users"
+  },
+  {
+    "fromPath": "/faq/how-to-show-raw-data-in-grid-widget/",
+    "toPath": "https://support.boldbi.com/kb/article/16702/how-to-show-raw-data-in-grid-widget"
+  },
+  {
+    "fromPath": "/faq/how-to-configure-current-and-last-month-in-relative-date-filter/",
+    "toPath": "https://support.boldbi.com/kb/article/16705/how-to-configure-current-and-last-month-in-relative-date-filter"
+  },
+  {
+    "fromPath": "/faq/how-to-join-tables-based-on-expression-columns/",
+    "toPath": "https://support.boldbi.com/kb/article/16706/how-to-join-tables-based-on-expression-columns"
+  },
+  {
+    "fromPath": "/faq/how-to-add-custom-theme-in-docker-container-application/",
+    "toPath": "https://support.boldbi.com/kb/article/16707/how-to-add-custom-theme-in-docker-container-application"
+  },
+  {
+    "fromPath": "/faq/troubleshoot-gateways-boldbi/",
+    "toPath": "https://support.boldbi.com/kb/article/16709/troubleshoot-gateways-boldbi"
+  },
+  {
+    "fromPath": "/faq/how-to-use-linking-url-and-dashboard-in-iframe-embedding/",
+    "toPath": "https://support.boldbi.com/kb/article/16711/how-to-use-linking-url-and-dashboard-in-iframe-embedding"
+  },
+  {
+    "fromPath": "/faq/how-to-add-fixed-target-value-in-kpi-card-widget/",
+    "toPath": "https://support.boldbi.com/kb/article/16712/how-to-add-fixed-target-value-in-kpi-card-widget"
+  },
+  {
+    "fromPath": "/faq/how-to-secure-the-dashboard-in-iframe-embedding/",
+    "toPath": "https://support.boldbi.com/kb/article/16714/how-to-secure-the-dashboard-in-iframe-embedding"
+  },
+  {
+    "fromPath": "/faq/how-to-generate-access-token-to-authenticate-user/",
+    "toPath": "https://support.boldbi.com/kb/article/16716/how-to-generate-access-token-to-authenticate-user"
+  },
+  {
+    "fromPath": "/faq/what-are-the-various-types-of-data-filtering-in-an-embedded-dashboard/",
+    "toPath": "https://support.boldbi.com/kb/article/16719/what-are-the-various-types-of-data-filtering-in-an-embedded-dashboard"
+  },
+  {
+    "fromPath": "/faq/where-can-i-find-the-product-version/",
+    "toPath": "https://support.boldbi.com/kb/article/16720/where-can-i-find-the-product-version"
+  },
+  {
+    "fromPath": "/faq/how-to-apply-the-filter-in-the-grid-widget-based-on-the-string-presented-in-the-string-column/",
+    "toPath": "https://support.boldbi.com/kb/article/16721/how-to-apply-the-filter-in-the-grid-widget-based-on-the-string-presented-in-the-string-column"
+  },
+  {
+    "fromPath": "/faq/how-to-resolve-no-data-to-be-displayed-alert/",
+    "toPath": "https://support.boldbi.com/kb/article/16724/how-to-resolve-no-data-to-be-displayed-alert"
+  },
+  {
+    "fromPath": "/faq/how-to-show-timestamp-data-in-widget-title/",
+    "toPath": "https://support.boldbi.com/kb/article/16725/how-to-show-timestamp-data-in-widget-title"
+  },
+  {
+    "fromPath": "/faq/how-to-migrate-ecs-to-eks-instance/",
+    "toPath": "https://support.boldbi.com/kb/article/16727/how-to-migrate-ecs-to-eks-instance"
+  },
+  {
+    "fromPath": "/faq/how-to-create-own-publish-dialog-for-designer-embedding/",
+    "toPath": "https://support.boldbi.com/kb/article/16729/create-your-own-savepublish-dialog-for-embedded-designer-in-js"
+  },
+  {
+    "fromPath": "/faq/how-to-add-custom-theme-into-azure-app-service-deployment-location/",
+    "toPath": "https://support.boldbi.com/kb/article/16730/how-to-add-custom-theme-into-azure-app-service-deployment-location"
+  },
+  {
+    "fromPath": "/faq/how-to-get-user-specific-data-using-dynamic-connection-string/",
+    "toPath": "https://support.boldbi.com/kb/article/16732/how-to-get-user-specific-data-using-dynamic-connection-string"
+  },
+  {
+    "fromPath": "/faq/can-you-use-the-same-login-credentials-for-the-bold-bi-and-bold-reports-applications/",
+    "toPath": "https://support.boldbi.com/kb/article/16731/can-you-use-the-same-login-credentials-for-the-bold-bi-and-bold-reports-applications"
+  },
+  {
+    "fromPath": "/faq/how-to-export-underlying-data-of-the-widget-instead-of-summarized-data/",
+    "toPath": "https://support.boldbi.com/kb/article/16733/how-to-export-underlying-data-of-the-widget-instead-of-summarized-data"
+  },
+  {
+    "fromPath": "/faq/how-to-create-custom-sort-order-in-bold-bi/",
+    "toPath": "https://support.boldbi.com/kb/article/16734/how-to-create-custom-sort-order-in-bold-bi"
+  },
+  {
+    "fromPath": "/faq/how-to-create-different-if-condition-based-expressions-in-bold-bi/",
+    "toPath": "https://support.boldbi.com/kb/article/16735/how-to-create-different-if-condition-based-expressions-in-bold-bi"
+  },
+  {
+    "fromPath": "/faq/how-will-the-dashboard-get-affected-while-csp-enabled/",
+    "toPath": "https://support.boldbi.com/kb/article/16736/impact-of-enabling-content-security-policy-on-existing-dashboards"
+  },
+  {
+    "fromPath": "/faq/how-to-control-link-navigating-behavior/",
+    "toPath": "https://support.boldbi.com/kb/article/16743/how-to-control-link-navigating-behavior"
+  },
+  {
+    "fromPath": "/faq/how-to-install-and-deploy-the-bold-bi-enterprise-edition-in-silent-mode/",
+    "toPath": "https://support.boldbi.com/kb/article/16743/how-to-control-link-navigating-behavior"
+  },
+  {
+    "fromPath": "/faq/how-to-use-pivot-tables-in-bold-bi-using-postgresql/",
+    "toPath": "https://support.boldbi.com/kb/article/16745/how-to-use-pivot-tables-in-bold-bi-using-postgresql"
+  },
+  {
+    "fromPath": "/faq/how-to-hide-release-alert-banner-in-bold-bi-application/",
+    "toPath": "https://support.boldbi.com/kb/article/16747/how-to-hide-release-alert-banner-in-bold-bi-application"
+  },
+  {
+    "fromPath": "/faq/how-to-hide-sample-dashboards-option-in-bold-bi-application/",
+    "toPath": "https://support.boldbi.com/kb/article/16751/how-to-hide-sample-dashboards-option-in-bold-bi-application"
+  },
+  {
+    "fromPath": "/faq/how-to-change-schema-while-upload-dashboard-via-api/",
+    "toPath": "https://support.boldbi.com/kb/article/16760/how-to-change-schema-while-upload-dashboard-via-api"
+  },
+  {
+    "fromPath": "/faq/how-to-deploy-bold-bi-using-load-balancer-with-n-windows-servers/",
+    "toPath": "https://support.boldbi.com/kb/article/16757/how-to-deploy-bold-bi-using-load-balancer-with-n-windows-servers"
+  },
+  {
+    "fromPath": "/faq/how-to-apply-widget-filters-using-both-initialrendering-and-ondemand-in-embedding/",
+    "toPath": "https://support.boldbi.com/kb/article/16759/apply-widget-filters-during-initial-load-and-on-demand-in-embedding"
+  },
+  {
+    "fromPath": "/faq/how-to-restart-the-bold-bi-embedded-application/",
+    "toPath": "https://support.boldbi.com/kb/article/16634/how-to-restart-the-bold-bi-embedded-application"
+  },
+  {
+    "fromPath": "/faq/how-to-register-an-azure-app-with-mail-sending-permissions/",
+    "toPath": "https://support.boldbi.com/kb/article/16770/register-azure-app-with-mail-api-and-limit-access-to-specific-mailboxes"
+  },
+  {
+    "fromPath": "/faq/what-are-the-different-request-object-properties-of-group-imports-setting-for-each-oauth-and-openid-provider-type/",
+    "toPath": "https://support.boldbi.com/kb/article/16771/group-import-request-properties-for-each-oauth-and-openid-provider-type"
+  },
+  {
+    "fromPath": "/faq/how-to-integrate-bold-bi-dashboards-with-git/",
+    "toPath": "https://support.boldbi.com/kb/article/16772/how-to-integrate-bold-bi-dashboards-with-git"
+  },
+  {
+    "fromPath": "/faq/customizing-the-start-day-of-the-week-in-bold-bi/",
+    "toPath": "https://support.boldbi.com/kb/article/16778/customizing-the-start-day-of-the-week-in-bold-bi"
+  },
+  {
+    "fromPath": "/faq/ways-to-securely-access-data-behind-firewall-in-bold-bi/",
+    "toPath": "https://support.boldbi.com/kb/article/16775/ways-to-securely-access-data-behind-firewall-in-bold-bi"
+  },
+  {
+    "fromPath":"/multitenancy/",
+    "toPath":"/multi-tenancy/"
+  },
+  {
+    "fromPath":"/artificial-intelligence-and-machine-learning/unified-ai-agent/scheduling-ai-summary/",
+    "toPath":"/artificial-intelligence-and-machine-learning/schedule-summary/"
+  },
+  {
+    "fromPath":"/artificial-intelligence-and-machine-learning/ai-assistant/ai-copilot-dashboard-designer/",
+    "toPath":"/artificial-intelligence-and-machine-learning/generative-ai/ai-copilot/"
+  },
+  {
+    "fromPath":"/artificial-intelligence-and-machine-learning/ai-assistant/ai-agent-view-mode/",
+    "toPath":"/artificial-intelligence-and-machine-learning/generative-ai/ai-agent/"
+  },
+  {
+    "fromPath":"/artificial-intelligence-and-machine-learning/ai-assistant/best-practices-and-limitations/",
+    "toPath":"/artificial-intelligence-and-machine-learning/best-practices-and-limitations/"
+  },
+  {
+    "fromPath":"/artificial-intelligence-and-machine-learning/ai-assistant/getting-started/",
+    "toPath":"/artificial-intelligence-and-machine-learning/ai-copilot-getting-started/"
+  },
+  {
+    "fromPath":"/artificial-intelligence-and-machine-learning/ai-assistant/ai-copilot-getting-started/",
+    "toPath":"/artificial-intelligence-and-machine-learning/ai-copilot-getting-started/"
+  },
+  {
+    "fromPath": "/embedding-options/embedding-sdk/anonymous-user-embedding/",
+    "toPath": "/embedding-options/embedding-sdk/anonymous-user/"
+  },
+  {
+    "fromPath": "/embedding-options/embedding-sdk/different-components/",
+    "toPath": "/embedding-options/embedding-sdk/embed-different-components/"
+  },
+  {
+    "fromPath": "/embedding-options/embedding-sdk/different-components/embed-datasource/",
+    "toPath": "/embedding-options/embedding-sdk/embed-different-components/embed-datasource/"
+  },
+  {
+    "fromPath": "/embedding-options/embedding-sdk/different-components/embed-draft-dashboard/",
+    "toPath": "/embedding-options/embedding-sdk/embed-different-components/embed-new-dashboard/"
+  },
+  {
+    "fromPath": "/embedding-options/embedding-sdk/different-components/embed-multi-tab-dashboard/",
+    "toPath": "/embedding-options/embedding-sdk/embed-different-components/embed-multi-tab-dashboard/"
+  },
+  {
+    "fromPath": "/embedding-options/embedding-sdk/different-components/embed-pinboard/",
+    "toPath": "/embedding-options/embedding-sdk/embed-different-components/embed-pinboard/"
+  },
+  {
+    "fromPath": "/embedding-options/embedding-sdk/different-components/embed-dashboard-widget/",
+    "toPath": "/embedding-options/embedding-sdk/embed-different-components/embed-dashboard-widget/"
+  },
+  {
+    "fromPath": "/embedding-options/embedding-sdk/different-components/embed-view/",
+    "toPath": "/embedding-options/embedding-sdk/embed-different-components/embed-view/"
+  },
+  {
+    "fromPath": "/embedding-options/embedding-sdk/token-generation/v13/",
+    "toPath": "/embedding-options/embedding-sdk/authorization-options/token-generation-lower-version/"
+  },
+  {
+    "fromPath": "/embedding-options/embedding-sdk/anonymous-user/v13/",
+    "toPath": "/embedding-options/embedding-sdk/anonymous-user/"
+  },
+  {
+    "fromPath": "/embedding-options/embedding-sdk/row-level-security/v13/",
+    "toPath": "/embedding-options/embedding-sdk/row-level-security/"
+  },
+  {
+    "fromPath": "/embedding-options/embedding-sdk/samples/asp-net/",
+    "toPath": "/embedding-options/embedding-sdk/samples/asp-net-web-forms/"
   }
 ]

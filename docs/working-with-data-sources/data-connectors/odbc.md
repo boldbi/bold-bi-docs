@@ -67,6 +67,10 @@ After clicking the data source, the NEW DATA SOURCE configuration panel opens. T
 * FileMaker
 * Firebird
 * Azure Databricks (Supported only in DSN Connection Type)
+* Sybase (Supported only in DSN Connection Type)
+* ProgressDB
+* MongoDB Atlas
+* Neo4j
 
 Follow the given steps to create an ODBC data source: 
 1. Enter a name and description (optional) for the data source.
@@ -112,6 +116,18 @@ The schema represents the collection list that is retrieved from the ODBC server
    ![Codeview mode](/static/assets/working-with-datasource/data-connectors/images/Odbc/odbc-code-view-mode.png#max-width=100%)
 
 3. Click **Save** to save the data source with a relevant name.
+
+### Limitations
+
+<table>
+    <tr>
+        <th>ODBC Connector</th>
+        <th>Limitations</th>
+    </tr>
+    <tr>
+        <td>Sybase</td>
+        <td>1. Stored procedures are not supported in Bold BI.</td>
+</table>
 
 ### Connect using custom attribute and dashboard parameter
 
@@ -629,8 +645,75 @@ Type while creating the data source needs to be ODBC.
       "schema": "string",
       "AdvancedSettings": "string",
       "CommandTimeout": "string"
-  } 
+  }
 ```
+
+### Driver Installation and Configuration Guide
+
+#### Neo4j ODBC Connector
+
+**1. Download the Neo4j BI Connector**
+
+Download the Windows BI connector installation package from Neo4j.
+
+Download link:
+
+[https://neo4j.com/download-thanks-bi-connector/?version=1.1.2.1009&flavour=windows](https://neo4j.com/download-thanks-bi-connector/?version=1.1.2.1009&flavour=windows)
+
+**2. Extract the Installation Files**
+
+1. Locate the file: `Neo4j-BI-Connector-ODBC-1.1.2.1009-windows.zip`
+2. Extract the contents.
+3. Navigate to:
+
+```folder
+Neo4j-BI-Connector-ODBC-1.1.2.1009-windows\Neo4j-BI-Connector-ODBC-1.1.2.1009-Windows\
+```
+
+**3. Install the ODBC Driver**
+
+1. Double-click the MSI installer.
+2. Follow on-screen instructions to install the Simba Neo4j 1.1 64-bit ODBC Driver.
+
+**4. Open ODBC Data Source Administrator**
+
+1. Open Windows Search → type ODBC.
+2. Launch:
+   - ODBC Data Source Administrator (64-bit)
+
+**5. Create a System DSN**
+
+   1. Navigate to the System DSN tab.
+   2. Select Add.
+
+![System DSN](/static/assets/working-with-datasource/data-connectors/images/Odbc/system-dsn.png#max-width=60%)
+
+   3. Choose Simba Neo4j ODBC Driver.
+   4. Click Finish.
+
+![Driver Selection](/static/assets/working-with-datasource/data-connectors/images/Odbc/driver-selection.png#max-width=60%)
+
+**6. Enter Connection Configuration**
+
+Populate the DSN configuration fields:
+   - Hostname
+   - Port
+   - Username
+   - Password (optional depending on config)
+   - Additional authentication/security options as required
+
+![Configuration Dialog](/static/assets/working-with-datasource/data-connectors/images/Odbc/configuration-dialog.png#max-width=60%)
+
+**7. Test and Save the DSN**
+
+   1. Click Test to validate the connection.
+   2. Click OK to save DSN if successful.
+
+![Test Connection](/static/assets/working-with-datasource/data-connectors/images/Odbc/test-Connection-result.png#max-width=60%)
+
+**8. Confirm DSN Availability**
+
+Ensure that the new DSN appears in the System DSN list.
 
 ## Related links
 [Data Transformation](/working-with-data-sources/data-modeling/joining-table/)

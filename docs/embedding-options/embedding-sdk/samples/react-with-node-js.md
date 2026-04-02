@@ -21,7 +21,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/react-with-no
 
  ## How to run the sample
 
- 1. Please get the [React with Node.js](https://github.com/boldbi/react-with-nodejs-sample)  sample from GitHub.
+ 1. Please get the [React with Node.js](https://github.com/boldbi/react-with-nodejs-sample) sample from GitHub.
 
  2. Please make sure that you have enabled embed authentication on the `embed settings` page. If it is not currently enabled, please refer to the provided image or detailed [instructions](/site-administration/embed-settings/#get-embed-secret-code) for enabling it.
 
@@ -82,43 +82,6 @@ A GitHub link has been provided to [get](https://github.com/boldbi/react-with-no
           npm start
      ```
 
-7. The dashboard can be edited in design mode and a new dashboard can be created with the following changes in the `renderDashboard()` method.
-
-    <meta charset="utf-8"/>
-    <table>
-    <tbody>
-    <td align="left">mode</td>
-    <td align="left">In which mode do you want to render the dashboard? It can either be 'BoldBI.Mode.View' or 'BoldBI.Mode.Design' mode. </td>
-    </tr>
-    <tr>
-    <td align="left">authorizationServer</td>
-    <td align="left">Url of the 'authorizationServerAPI' action in the application.</td>
-    </tr>
-    </tbody>
-    </table>
-
-    ```js
-          renderDashboard(data) {
-                this.dashboard= BoldBI.create({
-                serverUrl: data.ServerUrl+"/" + data.SiteIdentifier,
-                dashboardId: data.DashboardId,
-                embedContainerId: "dashboard",
-                embedType: data.EmbedType,
-                environment: data.Environment,
-                mode:BoldBI.Mode.View,
-                width:"100%",
-                height: window.innerHeight + 'px',
-                expirationTime:100000,
-                authorizationServer: {
-                    url: apiHost + authorizationUrl
-                }
-            });
-
-            this.dashboard.loadDashboard();                     
-        }
-
-     ```
-
 > **NOTE:** If you are using a React version lower than v18.0, you can update the `index.js` file by adding the following line. Make sure to replace the existing `createRoot` line with the following line.</br>
 
   ```js
@@ -128,15 +91,11 @@ A GitHub link has been provided to [get](https://github.com/boldbi/react-with-no
 
 ## How this sample works
 
- 1. Based on the configured embedConfig values in the `Dashboard.js` file, the `renderDashboard` method will be invoked from the `componentDidMount()` function.
+ 1. To generate an access token, call the `TokenGeneration` API with the provided `embedConfig` values.
+    ![Get Embed Details](/static/assets/javascript/sample/images/react-node-js-authorize.png)
 
+ 2. Once the token is generated, it will be returned to the `Dashboard.js` file and the dashboard will start to render it.
     ![render dashboard](/static/assets/javascript/sample/images/react-nodejs-dashboard.png)
-
- 2. Before rendering, authorize the server URL by making a call to the `AuthorizationServer` API (`http://localhost:8080/authorizationserver/get`) with the provided `embedConfig` values.
-
-    ![Get Embed Details](/static/assets/javascript/sample/images/react-node-js-authorize.png)  
-
- 3. These details will be sent to the Bold BI server and will be validated there. Once the details are validated, the dashboard will start to render.
 
  ## Steps to create new React with Node.js application to embed dashboard
 

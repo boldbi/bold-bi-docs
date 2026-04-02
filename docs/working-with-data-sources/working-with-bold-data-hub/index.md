@@ -17,11 +17,75 @@ The primary objective of the Bold Data Hub application is to facilitate the extr
 ![Source](/static/assets/working-with-etl/images/archietecture.png)
 
 
-For Windows OS, Python 3.9 version is required along with Bold BI or Bold Reports  for Data Hub. If Python 3.9 version is already installed, please specify the Python path in ``{Drive}:\BoldServices\etl\etlservice\appsettings.json`` and restart the app in IIS server.
+## Python Requirement for ETL Server
+For Windows OS, Python 3.11 is required to run ETL scripts in Bold BI or Bold Reports Data Hub.
+You may use either:
 
-```  
-"PythonPath": "<Drive>:\\BoldServices\\Python39" 
+   - A system-wide Python 3.11 installation, or
+
+   - A Python 3.11 Virtual Environment (venv) created specifically for ETL
+
+If Python 3.11 is already installed (either globally or inside a venv), you must specify the correct Python path in: ``{Drive}:\BoldServices\etl\etlservice\appsettings.json``
+
+
+1. Using System-Wide Python 3.11
+
+If you installed Python normally on Windows:
 ```
+"PythonPath": "<Drive>:\\BoldServices\\Python311"
+```
+
+2. Using Python 3.11 with Virtual Environment (venv)
+If you prefer to use a dedicated venv environment:
+
+```
+"isVirtualEnvironmentAdded": true
+"PythonPath": "C:\\BoldServices\\Python311Env\\Scripts"
+```
+
+#### Manually Creating a Python Virtual Environment on Windows
+
+1. Ensure **Python** is Installed **Python 3.11 (64-bit)** and ensure **Add Python to PATH** is selected.
+2. Create a directory:
+   ```
+   C:\BoldServices\Python311Env
+   ```
+3. Create the virtual environment:
+   ```bash
+   python -m venv C:\BoldServices\Python311Env
+   ```
+4. Verify:
+   ```
+   C:\BoldServices\Python311Env\Scripts\python.exe
+   ```
+4. Update `appsettings.json`:
+   ```json
+   "isVirtualEnvironmentAdded": true,
+   "PythonPath": "C:\\BoldServices\\Python311Env\\Scripts"
+   ```
+---
+
+#### Using Python 3.11 with Virtual Environment (venv) on Linux
+
+1. Create the virtual environment:
+   ```bash
+   sudo apt update
+   sudo apt install -y python3 python3-venv python3-pip
+   python3 -m venv /var/www/bold-services/python311env
+
+   ```
+2. Verify:
+   ```bash
+   /var/www/bold-services/python311env/bin/python --version
+   ```
+3. Update `appsettings.json`:
+   ```json
+   "isVirtualEnvironmentAdded": true,
+   "PythonPath": "/var/www/bold-services/python311env/bin"
+   ```
+
+---
+
 
 
 ## Using the Bold Data Hub Application In Bold BI / Bold Reports
@@ -51,6 +115,8 @@ For more details on working with Bold Data Hub, click here.
 [Relationship Between Bold Data Hub and Bold BI Data Sources ](/working-with-data-sources/working-with-bold-data-hub/relationship-between-bold-data-hub-pipeline-and-associated-data-sources-in-boldbi/)
 
 [Data Store](/working-with-data-sources/working-with-bold-data-hub/data-store/)
+
+[FAQ](/working-with-data-sources/working-with-bold-data-hub/faq/)
 
 [Working with Pipelines](/working-with-data-sources/working-with-bold-data-hub/working-with-pipelines/)
 

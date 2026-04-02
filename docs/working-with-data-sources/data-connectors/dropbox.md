@@ -9,6 +9,53 @@ documentation: ug
 # Connecting Bold BI to Dropbox data source
 The Bold BI dashboard designer supports connecting to Dropbox web services through the REST API. 
 
+### Prerequisites with Dropbox data source 
+
+1. Create the Dropbox App
+
+   * Go to [Dropbox Developers](https://www.dropbox.com/developers)
+
+   * Click “Create app” and choose appropriate permissions (e.g., scoped access).
+ 
+   * Note the generated Client ID and Client Secret.
+
+   ![Explorer View](/static/assets/working-with-datasource/data-connectors/images/Dropbox/Client.png)
+
+
+2. Configure in Bold BI
+
+   * Open Bold BI and go to Data Sources or Connections.
+
+   * Select Dropbox as the source and input the Client ID and Client Secret.
+
+   > **NOTE:** Save the Client ID and Client secret in Bold BI by following the [OAuth Configuration](/site-administration/data-connector-settings/oauth-configuration/).
+
+3. Automatic Folder Creation
+
+   * Once connected, it will create a folder in your Dropbox as mentioned in the App.
+
+   * This folder will be used for uploading relevant files or data.
+
+   ![Explorer View](/static/assets/working-with-datasource/data-connectors/images/Dropbox/Client2.png)
+
+   >**Note:** Automatic folder creation is applicable only to the application selected in the APP folder under scope access. If the access type is Fully Dropbox, it will display all the files available in Dropbox.
+
+4. Upload Your Files
+
+* Upload files directly to the created Dropbox folder.
+
+* Make sure the files are formatted correctly and named consistently.
+
+   ![Explorer View](/static/assets/working-with-datasource/data-connectors/images/Dropbox/Client4.png)
+
+
+5. Reconnect to Bold BI
+
+* After uploading, go back to Bold BI and reconnect the Dropbox source.
+* This refreshes the connection and allows Bold BI to fetch the newly uploaded files.
+
+  ![Explorer View](/static/assets/working-with-datasource/data-connectors/images/Dropbox/Client3.png)
+  
 ## Choose Dropbox data source
 To configure the Dropbox data source, follow the below steps:
 1. Click on the **Data Sources** button in the configuration panel to add a new data connection.

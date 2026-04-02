@@ -8,7 +8,7 @@ documentation: ug
 
 # Bold BI Dashboards embedding in ASP.NET Web Forms using Embedded SDK
 
-A GitHub link has been provided to [get](https://github.com/boldbi/aspnet-web-forms-sample) the sample application, which demonstrates the rendering of the dashboard with a list of available dashboards on your Bold BI server. This is followed by steps to create a new embedding application in `ASP.NET Web Forms` on your own.    
+A GitHub link has been provided to [get](https://github.com/boldbi/aspnet-web-forms-sample) the sample application,  which demonstrates the rendering of the dashboard available on your Bold BI server. This is followed by steps to create a new embedding application in `ASP.NET Web Forms` on your own.    
 
 > **NOTE:** The best way to get started would be to read the [Getting Started](/getting-started/embedding-in-your-application/) section of the documentation first. The `Getting Started` guide provides you with enough information that you need to know before working on the sample. 
 
@@ -72,67 +72,19 @@ A GitHub link has been provided to [get](https://github.com/boldbi/aspnet-web-fo
 
    > **NOTE:** If you are facing an error related to the `bin\roslyn\csc.ex`, it indicates that performing a `clean build` and `rebuild` is necessary.
 
- 6.	The dashboard can be edited in design mode and a new dashboard can be created with the following changes in the `Init()` method.
-     
-       <meta charset="utf-8"/>
-       <table>
-       <tbody>
-       <tr>
-       <td align="left">dashboardId</td>
-       <td align="left">Provide the dashboard id of the dashboard you want to embed in view or edit mode. This property no need to create a new dashboard.</td>
-       </tr>
-       <tr>
-       <td align="left">mode</td>
-       <td align="left">In which mode you want to render dashboard. It can either be <code>BoldBI.Mode.View</code> or <code>BoldBI.Mode.Design</code> mode.</td>
-       </tr>
-       <tr>
-       <td align="left">authorizationServer</td>
-       <td align="left">Url of the <code>authorizationServerAPI</code> action in the application.</td>
-       </tr>
-        <tr>
-         <td align="left">RenderDesigner</td>
-         <td align="left">loadDesigner()</td>
-        </tr>
-       </tbody>
-       </table>
-     
-      ```js
-       function Init() {
-            this.dashboard = BoldBI.create({
-                serverUrl: rootUrl + "/" + siteIdentifier,
-                //Provide an item id to render it in the design mode. To create a dashboard, remove this property.
-                dashboardId: dashboardId,
-                embedContainerId: "dashboard",
-                embedType: embedType,
-                // If Cloud, you should use the BoldBI.Environment.Cloud.
-                environment: environment,
-                width: "100%",
-                height: "100%",
-                mode: BoldBI.Mode.View,
-                expirationTime: 100000,
-                authorizationServer: {
-                    url: "Default.aspx/AuthorizationServer"
-                }
-            });
-            this.dashboard.loadDashboard();
-        };
-     ```
-
 ## How this sample works
 
  1. The application checks if the `embedConfig.json` is available; if so, it `deserializes` and stores the content in `EmbedDetails`. Otherwise, it throws an error.
 
     ![Parsing embed Config](/static/assets/javascript/sample/images/asp-net-webforms-parse-json.png)
 
- 2. The `Init()` function renders the dashboard by using the data retrieved from the `embedConfig.json` file.
+ 2. To generate an access token, call the `TokenGeneration` API with the provided `embedConfig` values.
+
+     ![Authorize Server URL](/static/assets/javascript/sample/images/asp-net-webforms-authorize.png)
+
+ 3. Once the token is generated, it will be returned to the `Site.Master` file and the dashboard will start to render it.
 
     ![Dashboard rendering](/static/assets/javascript/sample/images/asp-net-webforms-renderdashboard.png)
-
- 3. Before rendering, the `authorizationUrl` is called, which redirects to the `AuthorizationServer` action in the `Default.aspx` page. This action generates the `EmbedSignature` using the embed secret from the `embedConfig.json` file.
-        
-    ![Authorize Server URL](/static/assets/javascript/sample/images/asp-net-webforms-authorize.png)
-
- 4. These details will be sent to the Bold BI server and validated there. Once the details are validated, the dashboard will start to render.
 
 ## Steps to create new ASP.NET Web Forms application to embed dashboard
 

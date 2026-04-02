@@ -24,3 +24,5 @@ You can explore more about data modeling in detail here.
 [Data Sampling](/working-with-data-sources/data-modeling/data-sampling/)
 
 [Configuring Replace Value](/working-with-data-sources/data-modeling/configuring-replace-value/)
+
+[Configuring Data Relationship](/working-with-data-sources/data-modeling/configuring-data-relationship/)

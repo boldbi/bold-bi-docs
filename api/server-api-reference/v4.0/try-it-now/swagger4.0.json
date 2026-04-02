@@ -5215,63 +5215,118 @@
       },
       "description": "Details about the dashboard file content."
     },
-    "ApiMetaInfo": {
-      "type": "object",
-      "properties": {
-        "Name": {
-          "type": "string",
-          "description": "Dashboard name."
-        },
-        "Description": {
-          "type": "string",
-          "description": "Dashboard description."
-        },
-        "Id": {
-          "type": "string",
-          "description": "Dashboard ID.",
-          "format": "guid"
-        },
-        "CategoryId": {
-          "type": "string",
-          "description": "Category ID.",
-          "format": "guid"
-        },
-        "ShouldValidateSchema": {
-          "type": "boolean",
-          "description": "Specify <i>false</i> to avoid the schema validation. Default value is <i>true</i>"
-        },
-        "DataSources": {
-          "properties": {
-            "Name": {
-              "type": "string",
-              "description": "Data source name."
-            },
-            "Description": {
-              "type": "string",
-              "description": "Data source description."
-            },
-            "Type": {
-              "type": "string",
-              "description": "Data source type."
-            },
-            "Id": {
-              "type": "string",
-              "description": "Data source ID.",
-              "format": "guid"
-            },
-            "Connector": {
-              "type": "string",
-              "description": "Connector information"
-            },
-            "Connection": {
-              "type": "object",
-              "description": "Connection object for the data source."
-            }
+    "ApiMetaInforesponse": {
+        "properties": {
+          "Name": {
+            "type": "string",
+            "description": "Represents the name of the dashboard as stored in the file content."
           },
-          "description": "Details about the data sources."
-        }
-      }
-    },
+          "Description": {
+            "type": "string",
+            "description": "Represents the description of the dashboard as stored in the file content."
+          },
+          "Id": {
+            "type": "string",
+            "description": "The unique identifier of the downloaded dashboard file.",
+            "format": "guid"
+          },
+          "CategoryId": {
+            "type": "string",
+            "description": "Represents the category of the dashboard in the file.",
+            "format": "guid"
+          },
+          "ShouldValidateSchema": {
+            "type": "boolean",
+            "description": "Specify <i>false</i> to avoid the schema validation. Default value is <i>true</i>"
+          },
+          "DataSources": {
+            "properties": {
+              "Name": {
+                "type": "string",
+                "description": "Represents the name of the data source for the associated downloaded dashboard file."
+              },
+              "Description": {
+                "type": "string",
+                "description": "Represents the description of the data source for the associated downloaded dashboard file."
+              },
+              "Type": {
+                "type": "string",
+                "description": "Represents the type of the data source."
+              },
+              "Id": {
+                "type": "string",
+                "description": "Represents the identifier for the data source linked to the dashboard.",
+                "format": "guid"
+              },
+              "Connector": {
+                "type": "string",
+                "description": "Represents the data source connector information."
+              },
+              "Connection": {
+                "type": "object",
+                "description": "Represents the data source connection information as object."
+              }
+            }
+          }
+        },
+        "description": "Details about the downloaded dashboard file meta information."
+      },
+    "ApiMetaInfo": {
+        "properties": {
+          "Name": {
+            "type": "string",
+            "description": "Specify the name for the uploaded dashboard."
+          },
+          "Description": {
+            "type": "string",
+            "description": "Specify the description of the dashboard."
+          },
+          "Id": {
+            "type": "string",
+            "description": "Specify the unique identifier assigned to the dashboard during upload.",
+            "format": "guid"
+          },
+          "CategoryId": {
+            "type": "string",
+            "description": "Specify the target category ID where the dashboard should be uploaded.",
+            "format": "guid"
+          },
+          "ShouldValidateSchema": {
+            "type": "boolean",
+            "description": "Specify <i>false</i> to avoid the schema validation. Default value is <i>true</i>"
+          },
+          "DataSources": {
+            "properties": {
+              "Name": {
+                "type": "string",
+                "description": "Specify the data source name to be used in the uploaded dashboard."
+              },
+              "Description": {
+                "type": "string",
+                "description": "Specify the data source description to be used in the uploaded dashboard."
+              },
+              "Type": {
+                "type": "string",
+                "description": "Specify the type of the data source."
+              },
+              "Id": {
+                "type": "string",
+                "description": "Specify the identifier for the data source linked to the dashboard.",
+                "format": "guid"
+              },
+              "Connector": {
+                "type": "string",
+                "description": "Specify the data source connector information."
+              },
+              "Connection": {
+                "type": "object",
+                "description": "Specify the data source connection information as object."
+              }
+            }
+          }
+        },
+        "description": "Details about the data sources."
+      },
     "ApiGetMetaInfoResponse": {
       "type": "object",
       "required": [
@@ -5306,7 +5361,9 @@
       "description": "Details about the dashboard for upload.",
       "required": [
         "ItemContent",
-        "ItemExtension"
+          "ItemExtension",
+          "CategoryId",
+          "ItemMetaInfo"
       ],
       "properties": {
         "ItemContent": {
@@ -7049,7 +7106,7 @@
 		  },
         "ScopeId": {
           "type": "string",
-          "description": "Specify the name or Id of specific item based on the permission entities.<br /><br />Allowed Scope Id for permission entities: <br /><br />1. `\"SpecificPermissions\"` accepts `\"Category\"` `\"Dashboard\"` `\"Datasource\"` `\"Schedule\"` `\"Slideshow\"`<br /><br />2. `\"SpecificGroup\"` accepts Group Id<br /><br /><br />3. `\"SpecificSettings\"` accepts `\"AuthenticationSettings\"` `\"CORSPolicySettings\"` `\"DashboardSettings\"` `\"EmbedSettings\"`<br /><br />`\"Integrations\"` `\"LookAndFeel\"` `\"NotificationSettings\"` `\"Security\"` `\"SiteSettings\"`  `\"UserDirectorySettings\"`<br /><br />`\"SiteCredentials\"` `\"Accounts\"` `\"Connectors\"` `\"DataStoreSettings\"` `\"Email\"` `\"Widgets\"`",
+          "description": "This defines the name or ID of a specific item for managing permissions. It allows administrators and authorized users to delegate permission management, as well as the management of settings and users/groups. This enables users to share access to resources, such as dashboards, with other users, and to manage groups and settings.<br /><br />Allowed Scope Id for permission entities: <br /><br />1. `\"SpecificPermissions\"` accepts `\"Category\"` `\"Dashboard\"` `\"Datasource\"` `\"Schedule\"` `\"Slideshow\"`<br /><br />2. `\"SpecificGroup\"` accepts Group Id<br /><br /><br />3. `\"SpecificSettings\"` accepts `\"AuthenticationSettings\"` `\"CORSPolicySettings\"` `\"DashboardSettings\"` `\"EmbedSettings\"`<br /><br />`\"Integrations\"` `\"LookAndFeel\"` `\"NotificationSettings\"` `\"Security\"` `\"SiteSettings\"`  `\"UserDirectorySettings\"`<br /><br />`\"SiteCredentials\"` `\"Accounts\"` `\"Connectors\"` `\"DataStoreSettings\"` `\"Email\"` `\"Widgets\"`",
           "nullable": true
         }
       }
@@ -7085,7 +7142,7 @@
 		  },
         "ScopeId": {
           "type": "string",
-          "description": "Specify the name or Id of specific item based on the permission entities.<br /><br />Allowed Scope Id for permission entities: <br /><br />1. `\"SpecificPermissions\"` accepts `\"Category\"` `\"Dashboard\"` `\"Datasource\"` `\"Schedule\"` `\"Slideshow\"`<br /><br />2. `\"SpecificGroup\"` accepts Group Id<br /><br /><br />3. `\"SpecificSettings\"` accepts `\"AuthenticationSettings\"` `\"CORSPolicySettings\"` `\"DashboardSettings\"` `\"EmbedSettings\"`<br /><br />`\"Integrations\"` `\"LookAndFeel\"` `\"NotificationSettings\"` `\"Security\"` `\"SiteSettings\"`  `\"UserDirectorySettings\"`<br /><br />`\"SiteCredentials\"` `\"Accounts\"` `\"Connectors\"` `\"DataStoreSettings\"`<br /><br /> `\"Email\"` `\"Widgets\"`",
+          "description": "This defines the name or ID of a specific item for managing permissions. It allows administrators and authorized users to delegate permission management, as well as the management of settings and users/groups. This enables users to share access to resources, such as dashboards, with other users, and to manage groups and settings.<br /><br />Allowed Scope Id for permission entities: <br /><br />1. `\"SpecificPermissions\"` accepts `\"Category\"` `\"Dashboard\"` `\"Datasource\"` `\"Schedule\"` `\"Slideshow\"`<br /><br />2. `\"SpecificGroup\"` accepts Group Id<br /><br /><br />3. `\"SpecificSettings\"` accepts `\"AuthenticationSettings\"` `\"CORSPolicySettings\"` `\"DashboardSettings\"` `\"EmbedSettings\"`<br /><br />`\"Integrations\"` `\"LookAndFeel\"` `\"NotificationSettings\"` `\"Security\"` `\"SiteSettings\"`  `\"UserDirectorySettings\"`<br /><br />`\"SiteCredentials\"` `\"Accounts\"` `\"Connectors\"` `\"DataStoreSettings\"`<br /><br /> `\"Email\"` `\"Widgets\"`",
           "nullable": true
         }
       }

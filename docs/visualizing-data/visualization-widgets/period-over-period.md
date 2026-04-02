@@ -282,7 +282,6 @@ This option allows you to change the description about the Period Over Period wi
 
 This allows you to define this PoP as a master widget such that its filter action can be made to listen by other widgets in the dashboard.
 
-
 #### Container Appearance
 
 ![Container Appearance](/static/assets/visualizing-data/visualization-widgets/images/pop/container-appearance.png)
@@ -317,7 +316,7 @@ This option allows you to toggle the visibility of the `border` surrounding the 
 
 #### Corner Radius
 
-This option allows you to apply the specified `radius` to the widget corners if the **Show Border** is enabled. Value can be between 0 and 10.
+This option allows you to apply the specified `radius` to the widget corners if the **Show Border** is enabled. Value can be between 0 and 100.
 
 #### Background Color
 
@@ -330,6 +329,12 @@ This option allows you to specify the **transparency** for the `background color
 #### Show Shadow
 
 This option allows you to toggle the visibility of the `shadow` surrounding the widget.
+
+#### Mobile Height Factor
+
+This option allows you to resize widgets specifically for mobile view.
+
+![Mobile Height Factor](/static/assets/visualizing-data/visualization-widgets/images/mobile-height-factor.png)
 
 #### Container actions
 

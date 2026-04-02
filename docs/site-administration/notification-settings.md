@@ -79,6 +79,9 @@ Enabling this option will send an email to the user whenever they are granted pe
 #### User synchronization notification
 Enabling this option will send an email to the user about the user synchronization schedule.
 
+#### Enable notification for API key expiration
+Enabling this option will notify you via email and system notification when the token validity for the API key has expired or is about to expire.
+
 ### Disable user preference
 Admins can choose to allow or restrict user notification preferences found on the profile page `Notifications` tab. Enabling the `Disable User Preference` will disable all user notification preference options and override them with application notification settings.
 

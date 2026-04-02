@@ -32,6 +32,8 @@ You can explore working with the dashboard in detail here:
 
 [Bing Maps](/visualizing-data/visualization-widgets/bing-maps/)
 
+[Azure Maps](/visualizing-data/visualization-widgets/azure-maps/)
+
 [Grid](/visualizing-data/visualization-widgets/grid/)
 
 [Pivot Grid](/visualizing-data/visualization-widgets/pivot-grid/)
@@ -89,7 +91,5 @@ You can explore working with the dashboard in detail here:
 [Text](/visualizing-data/visualization-widgets/text/)
 
 [Tab Widget](/visualizing-data/visualization-widgets/tab-widget/)
-
-[Q&A widget](/visualizing-data/visualization-widgets/qna-widget/)
 
 [Button Widget](/visualizing-data/visualization-widgets/button-widget/)

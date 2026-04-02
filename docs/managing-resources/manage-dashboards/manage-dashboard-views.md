@@ -45,7 +45,9 @@ Dashboard Views are opened in our embedded Dashboard Viewer itself as Dashboards
 4. Click on the `saved views` shown in the Dashboard Views panel to display the filters applied in that view as an accordion.
    ![View Dashboard Views](/static/assets/managing-resources/manage-dashboards/images/applied-filters-accordion.png)
 
-> **NOTE:**  `Read, Write, and Delete` permissions for the `specific Dashboard View` are added to the users by the person who created the Dashboard View.
+> **NOTE:**
+> 1. `Read, Write, and Delete` permissions for the `specific Dashboard View` are added to the users by the person who created the Dashboard View.
+> 2. Refer to this [link](/visualizing-data/working-with-widgets/saving-user-interacted-widgets/) to configure and save the `Interaction Widgets` to `Dashboard Views`.
 
 ## Create a Schedule with Dashboard Views
 

@@ -281,6 +281,11 @@
         },
         "DataStoreConfiguration": {
           "$ref": "#/definitions/DataStoreConfiguration"
+        },
+        "UseSingleTenantDb": {
+          "type": "boolean",
+          "default": "false",
+          "description": "Specifies whether to use a shared database for each tenant. When set to true, a shared database is used, there is no need to configure 'serverConfiguration' and 'datastoreConfiguration' separately."
         }
       }
     },

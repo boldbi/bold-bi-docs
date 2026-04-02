@@ -39,6 +39,12 @@ If the padding is set as 0, the RTE widget will render as shown below.
 
 ### Container Appearance
 
+#### Mobile Height Factor
+
+This option allows you to resize widgets specifically for mobile view.
+
+![Mobile Height Factor](/static/assets/visualizing-data/visualization-widgets/images/mobile-height-factor.png)
+
 ### Show Background Image
 
 This option allows you to enable an image for the background.

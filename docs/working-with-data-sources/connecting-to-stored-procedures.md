@@ -51,3 +51,163 @@ In Internal Cache mode, Bold BI executes the stored procedure completely and mov
 4. The Dashboard Designer allows you to edit the supplied parameters by using the edit parameters available in the created table.
 
    ![Stored procedure settings](/static/assets/working-with-datasource/images/storedprocedure_settings.png)
+
+## Understanding Stored Procedure Execution Modes
+
+Bold BI supports two execution modes for stored procedures—**OpenQuery Mode** and **Internal Cache Mode**. Understanding these modes helps you optimize dashboard performance and manage MSSQL server load effectively.
+
+---
+## 1. OpenQuery Mode
+
+In **OpenQuery Mode**, Bold BI® executes the stored procedure **directly on the linked MSSQL server** for **every widget query**.
+
+Each widget generates its own query based on the widget configuration, and Bold BI executes these queries on the MSSQL server.  
+As a result, every dashboard load or user interaction triggers a **fresh execution** of the stored procedure on the server.
+
+
+### Example
+
+If the dashboard contains **20 widgets**:
+
+* On dashboard load → **20 individual stored procedure executions** occur.
+* If the user applies sorting or Top N filtering → additional stored procedure executions are triggered for the affected widgets.
+* Each interaction (filters, sorting, refresh, parameter changes) re-executes the stored procedure on the MSSQL server.
+
+
+### When to Use OpenQuery Mode
+
+Use OpenQuery Mode when:
+
+* You need real-time/live data for every interaction.
+* The number of users accessing the dashboard is limited.
+* The MSSQL server can handle multiple stored procedure executions.
+* Data must be accurate and refreshed up-to-the-second.
+
+---
+## 2. Internal Cache Mode
+
+In **Internal Cache Mode**, Bold BI® executes the stored procedure **once during dashboard load**.  
+The result is then stored in a **temporary table** inside the Bold BI® data store (MSSQL, PostgreSQL, or MySQL).
+
+All widget interactions—such as filtering, sorting, and grouping—operate on this temporary table instead of re-executing the stored procedure on the MSSQL server.
+
+### Example
+
+If your dashboard contains **20 widgets**:
+
+* The stored procedure runs **only once** on the MSSQL server during the initial load.
+* All 20 widgets retrieve data from the cached temporary table.
+* This drastically reduces the load on the MSSQL server.
+
+
+### When to Use Internal Cache Mode
+
+Use Internal Cache Mode when:
+
+* Many users access the dashboard simultaneously.
+* You want to reduce load on the MSSQL server.
+* Real-time data is not required for every interaction.
+* The dataset can be safely stored in the Bold BI® internal database.
+
+---
+
+
+## 3. Choosing the Right Mode
+
+### Choose OpenQuery Mode If:
+
+* You need live data during filtering or interactions.
+* The number of users is limited.
+* Database load is not a concern.
+* You need up-to-date data for every action.
+
+### Choose Internal Cache Mode If:
+
+* Your dashboard has high user traffic.
+* You want to reduce MSSQL database load.
+* Fetching fresh data only during initial load is acceptable.
+* Faster user interactions (sorting/filtering) are required.
+
+---
+
+## 4. Performance Considerations
+
+### OpenQuery Mode
+
+**Pros**
+
+* Real-time data for every request  
+* Always reflects the most updated values  
+
+**Cons**
+
+* High load on the MSSQL server  
+* Not suitable for dashboards with many concurrent users  
+
+---
+
+### Internal Cache Mode
+
+**Pros**
+
+* Significantly reduces database load  
+* Faster widget interactions since operations occur within Bold BI®  
+* Ideal for dashboards with heavy traffic  
+
+**Cons**
+
+* Data is refreshed only during initial load  
+* Initial dashboard load time may be higher due to temp table creation  
+* Requires temporary storage in Bold BI® data store  
+
+---
+
+
+## 5. Summary Table
+
+<table>
+    <tr>
+        <th>Feature / Requirement</th>
+        <th>OpenQuery Mode</th>
+        <th>Internal Cache Mode</th>
+    </tr>
+    <tr>
+        <td>Live data on every interaction</td>
+        <td>Yes</td>
+        <td>No</td>
+   </tr>
+    <tr>
+        <td>Best for high user load</td>
+        <td>No</td>
+        <td>Yes</td>
+    </tr>
+    <tr>
+        <td>DB server utilization</td>
+        <td>High</td>
+        <td>Low</td>
+    </tr>
+    <tr>
+        <td>Interaction performance</td>
+        <td>High (few users)</td>
+        <td>High (many users)</td>
+    </tr>
+    <tr>
+        <td>Data refreshed</td>
+        <td>Every action</td>
+        <td>Initial load only</td>
+    </tr>
+    <tr>
+        <td>Source Connection Hit</td>
+        <td>Yes (Every widget rendering)</td>
+        <td>Yes (Initial dashboard loading only)</td>
+    </tr>
+</table>
+
+---
+
+Selecting the correct mode impacts both performance and data freshness:
+
+* **Choose OpenQuery** when real-time data is required.
+* **Choose Internal Cache** when scalability and reduced DB load are the priorities.
+
+Both modes serve different needs—select the one that best aligns with your dashboard usage and performance expectations.

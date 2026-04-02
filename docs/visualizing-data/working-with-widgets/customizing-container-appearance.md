@@ -35,7 +35,7 @@ This allows you to toggle the visibility of the border surrounding the widget.
 
 ### Corner radius
 
-This allows you to apply the specified radius to the widget corners. The `value can be between 0 and 10`.
+This allows you to apply the specified radius to the widget corners. The `value can be between 0 and 100`.
 
 ![Custmized Corner radius](/static/assets/visualizing-data/working-with-widgets/images/ContainerAppearance4.png)
 

@@ -10,6 +10,8 @@ documentation: ug
 
 This section explains how to manage dashboard settings such as auto-save filters, default views, theming, and usage analytics. It also covers how to deploy dashboards and make them public in Bold BI Embedded.
 
+[Default Dashboards](/site-administration/dashboard-settings/default-dashboard/)
+
 You can explore the dashboard settings in detail here:
 
 [Public Dashboards](/site-administration/dashboard-settings/public-dashboards/)
@@ -20,7 +22,7 @@ You can explore the dashboard settings in detail here:
 
 [Theming](/site-administration/dashboard-settings/enable-or-disable-dashboard-theme/)
 
-[Usage Analytics](/site-administration/dashboard-settings/usage-analytics/)
+[Enterprise Insights](/site-administration/dashboard-settings/enterprise-insights/)
 
 [Deployment Dashboards](/site-administration/dashboard-settings/deployment-dashboard/)
 

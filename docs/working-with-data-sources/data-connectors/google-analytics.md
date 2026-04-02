@@ -24,12 +24,6 @@ To configure the Google Analytics data source, follow the below steps:
 
    ![Choose data source from server](/static/assets/working-with-datasource/data-connectors/images/GoogleAnalytics/ChooseDS_Server.png)
 
-## Advanced
-In Advanced category, It will Redirect to the Bold ETL. Refer [Bold ETL](/managing-resources/manage-data-sources/#advanced-category).
-
-## Basic
-In the Basic category, it will act as the connector in Bold BI and needs to follow the steps below.
-
 ## Authentication with Google Analytics
 Use the following steps to authenticate with the Google Analytics web service:
 

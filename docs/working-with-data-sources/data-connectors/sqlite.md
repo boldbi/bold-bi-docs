@@ -64,13 +64,6 @@ The schema represents the collection list retrieved from the SQLite server. This
 
 ## Extract mode connection 
 
-To Connect to Bold ETL from sqlite, switch to extract mode. Refer [Bold ETL](/managing-resources/manage-data-sources/#advanced-category)
-1. switch to Extract mode, Redirect dialog will pop up.
-  ![etl Redirect Dialog](/static/assets/working-with-datasource/data-connectors/images/SQLDataSource/etlRedirectDialog.png)
-
-2. Click on **Redirect to Bold ETL** button to redirect to Bold ETL. Or
-3. To continue with Bold BI, click on **Continue with connector**.
-
 In this type of connection, a data source is fetched from the source periodically. Select the **Extract** mode option for this connection. In this extract mode, upload the SQLite database file using the **File Path** upload box.
 
 ![Extract Connection](/static/assets/working-with-datasource/data-connectors/images/Sqlite/Sqlite_Extract_Connection.png)

@@ -17,9 +17,16 @@ You can create another site in the Bold BI Enterprise application by clicking th
 
 ![Create Site](/static/assets/multi-tenancy/images/create-button.png#max-width=95%)
 
-This step includes the site details such as tenant type, name, domain, and identifier. The site identifier should be unique and is a part of your site URL. Custom domains can also be used for site creation. Additionally, you have the option to inherit settings from UMS to your tenant by using the `Inherit Global Settings` option.
+This step includes the site details such as tenant type, name, domain, and identifier. The site identifier should be unique and is a part of your site URL. Custom domains can also be used for site creation. You can enable the Lock site URL and prevent automatic updates from reverse proxy requests option to keep the configured domain fixed during site creation and prevent it from being changed automatically by proxy requests. Additionally, you have the option to inherit settings from UMS to your tenant by using the `Inherit Global Settings` option.
 
-![Site Registration](/static/assets/multi-tenancy/images/site-creation.png#max-width=45%)
+The site identifier is generated automatically when a site is created. It follows the format siteN, where N is one more than the current number of active sites for that product. The identifier is included in the site URL and applies to both Bold BI and Bold Reports, with numbering maintained separately per product.
+
+> **NOTE:** 
+> * The site identifier is unique within each product (Bold BI and Bold Reports).
+> * Numbering is determined per product based on the count of active sites.
+> * Example (Bold BI): If there are 3 active sites, the next identifier will be site4. The identifier appears in the site URL after creation.
+
+![Site Registration](/static/assets/multi-tenancy/images/site-Identifier-lock-url.png#max-width=45%)
 
 To inherit settings, simply click the drop-down menu and select the `Select all` option to access all global settings from UMS when creating a new site. If you prefer to inherit selected settings from UMS, choose the specific settings you require from the global settings in UMS.
 
@@ -81,14 +88,6 @@ Dashboards, users, and their access permissions are all stored in the Bold BI da
 The authentication information and data collected from SQL and REST data sources are stored in the Data Store database.
 
 ![Advanced Mode](/static/assets/multi-tenancy/images/advanced-mode.png#max-width=45%)
-
-## Select storage
-
-You need to provide the storage type as either file storage or blob storage, in which Bold BI application will store the resources, contents, and logs. For more information, please refer to the [what are the resources will be generated in the installed machine](https://support.boldbi.com/kb/article/16571/what-all-are-the-files-and-folders-will-be-generated-in-the-installed-machine).
-
-![File storage type](/static/assets/multi-tenancy/images/select-storage-file.png#max-width=45%)
-
-![Blob storage type](/static/assets/multi-tenancy/images/select-storage-blob.png#max-width=45%)
 
 ## Configure Isolation code and Custom Attribute in site 
 

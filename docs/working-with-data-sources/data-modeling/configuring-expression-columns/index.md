@@ -58,6 +58,8 @@ documentation: ug
 
 [Row Expression](/working-with-data-sources/data-modeling/configuring-expression-columns/row-expressions/)
 
+[Level Of Detail Expression](/working-with-data-sources/data-modeling/configuring-expression-columns/level-of-detail-expressions/)
+
 ## Deleting an expression column
 
    Select an expression column in left pane.

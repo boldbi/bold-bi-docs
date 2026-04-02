@@ -24,27 +24,31 @@ To configure the GitHub data source, follow the below steps:
 
    ![Choose data source from server](/static/assets/working-with-datasource/data-connectors/images/github/ChooseDS_server.png)
 
-## Advanced
-In Advanced category, It will Redirect to the Bold ETL. Refer to the [Bold ETL](/managing-resources/manage-data-sources/#advanced-category).
-
-## Basic
-In the Basic Category, It will act as the connector in Bold BI. Need to follow the below steps.
-
 ## Create GitHub data source
 Once you click the data source, the NEW DATA SOURCE configuration panel will open. Follow the below steps to create GitHub data source.
 1. Enter a name and description (optional) for the data source.
-2. Enter a valid GitHub REST API endpoint in the URL textbox. Refer to the [GitHub API documentation](https://developer.github.com/v3/) for more details.
+2. Select The Extract Engine.
+3. Enter a valid GitHub REST API endpoint in the URL textbox. Refer to the [GitHub API documentation](https://developer.github.com/v3/) for more details.
 
     Example: `https://api.github.com/user/repos`    
 
-3. Select the **GET** method for the REST API in the **Method** combo box.
-4. In **Max Rows**, enter the maximum number of rows to be fetched from the GitHub data source. This value is used to fetch the data from GitHub data source via pagination.
-5. Choose a time interval for the **Refresh Settings** using the combo box, to periodically trigger the REST API request and keep the data in sync with our dashboard.  
-6. Select **JSON** data type in **Data Format** combo box.
-7. Choose **Basic HTTP Authentication** in Authentication Type combo box.
-8. Enter a valid **User Name** and **Personal Access Token** to access the endpoint in your account.
+4. Select the **GET** method for the REST API in the **Method** combo box.
+5. In **Max Rows**, enter the maximum number of rows to be fetched from the GitHub data source. This value is used to fetch 6. Choose a time interval for the **Refresh Settings** using the combo box, to periodically trigger the REST API request and keep the data in sync with our dashboard.  
+7. Select **JSON** data type in **Data Format** combo box.
+8. Choose **Basic HTTP Authentication** in Authentication Type combo box.
+9. Enter a valid **User Name** and **Personal Access Token** to access the endpoint in your account.
 
    ![Data source preview](/static/assets/working-with-datasource/data-connectors/images/github/DataSourcesView.png)
+
+## Extract Engine
+You can connect to the data source using one of the following extract methods:
+- **Bold BI Extract**: Data will be extracted and managed directly within Bold BI.
+- **Data Hub**: Data extraction is handled through the Data Hub. An equivalent pipeline is created, utilizing the Data Hub’s Extract, Transform, Load (ETL) capabilities to filter, optimize, or transform the data, and to generate new tables.
+- To view the equivalent pipeline created for data extraction, navigate to the Query Designer page and click on View Pipeline.
+
+    ![Refresh Setting](/static/assets/working-with-datasource/images/View_Pipeline.png)
+
+- When the data refresh is configured for data sources that uses the Data Hub Extract Engine, the refresh will be managed within the Data Hub.
 
 You can also edit the connection information set here using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 

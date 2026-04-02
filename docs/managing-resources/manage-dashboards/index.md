@@ -28,6 +28,8 @@ You can explore the management of dashboards in detail here:
 
 [Move and Copy Dashboards](/managing-resources/manage-dashboards/move-and-copy-dashboards/)
 
+[Move Bulk Dashboards](/managing-resources/manage-dashboards/move-bulk-dashboards/)
+
 [Version History of Dashboards](/managing-resources/manage-dashboards/version-history-of-dashboards/)
 
 [Delete Dashboards](/managing-resources/manage-dashboards/delete-dashboards/)

@@ -21,21 +21,34 @@ Starting from Bold BI<sup>®</sup> version 11.3.24, we now provide support for i
 * Run the following command to configure the Bold BI<sup>®</sup> YUM repository:
 
     ```sh
-    dnf install https://rpm.boldbi.com/RPM/repo/boldbi-repo-1.0-1.noarch.rpm
+    sudo dnf install https://rpm.boldbi.com/RPM/repo/boldbi-repo-1.0-1.noarch.rpm
     ```
 
 * Once the repository is configured, install the Bold BI<sup>®</sup> package using the following command:
 
     ```sh
-    dnf install boldbi
+    sudo dnf install boldbi
     ```
 
 * After the package is installed, ensure that Nginx is enabled and started by running the following commands.
 
     ```sh
-    systemctl  enable nginx
-    systemctl start nginx
+    sudo systemctl enable nginx
+    sudo systemctl start nginx
     ```
+
+* If a firewall is running on the system, allow HTTP and HTTPS traffic by running the following commands.
+
+	```sh
+	sudo firewall-cmd --permanent --add-service=http
+	sudo firewall-cmd --permanent --add-service=https
+	sudo firewall-cmd --reload
+	```
+* Change the SELinux mode from targeted to permissive.
+	
+	```sh
+	sudo setenforce 0
+	```
 
 * Then, navigate to **/opt/boldbi/boldbi-package/** and run the following command to install Bold BI<sup>®</sup>.
 
@@ -51,7 +64,7 @@ Starting from Bold BI<sup>®</sup> version 11.3.24, we now provide support for i
 * Run the following command to upgrade Bold BI<sup>®</sup> and wait until the script completes the upgrade process:
 
     ```sh
-    dnf upgrade or dnf upgrade boldbi
+    sudo dnf upgrade or sudo dnf upgrade boldbi
     ```
 
 * Once the package is successfully upgraded, a confirmation message will be displayed. After that, you can log in to the site.

@@ -12,7 +12,7 @@ This section explains the process of upgrading the Bold BI Linux package to the 
 
 > **NOTE:** Upgrading to the latest version does not require a license key. However, our services will retrieve the license from the backend after the upgrade is completed.
 
-1. Register and download the latest Bold BI Linux package from this [link](/deploying-bold-bi/overview/#registration-and-download).
+1. Download the latest Bold BI Linux package from this [link](https://www.boldbi.com/account/downloads).
 
 2. Install the `pv` tool by executing the following command:
 
@@ -31,7 +31,7 @@ This section explains the process of upgrading the Bold BI Linux package to the 
 
         | Ubuntu                                               | CentOS                                               |
         |------------------------------------------------------|------------------------------------------------------|
-        | `sudo apt-get install python3-pip` <br> <br>  `sudo pip install duckdb===0.9.2 dlt===0.4.2 pymysql pyodbc pg8000 poetry pandas===2.0.0 "dlt[parquet]" "dlt[filesystem]` | `sudo yum -y install python3-pip` <br> <br> `python3.9 -m pip install duckdb===0.9.2 dlt===0.4.2 pymysql pyodbc pg8000 poetry pandas===2.0.0 "dlt[parquet]" "dlt[filesystem]"`                    |
+        | `sudo apt-get install python3-pip` <br> <br>  `sudo pip install duckdb===1.1.2 dlt===0.5.4 pymysql pyodbc pg8000 poetry pandas===2.2.2 "dlt[parquet]" "dlt[filesystem]` | `sudo yum -y install python3-pip` <br> <br> `python3.9 -m pip install duckdb===1.1.2 dlt===0.5.4 pymysql pyodbc pg8000 poetry pandas===2.2.2 "dlt[parquet]" "dlt[filesystem]"`                    |
         > Note: If ETL is already installed, there is no need to follow this step.
 4. Download the latest Bold BI Linux package by running this command:
 
@@ -51,27 +51,16 @@ This section explains the process of upgrading the Bold BI Linux package to the 
     cd BoldBIEnterpriseEdition-Linux
     ~~~ 
  
-7. Execute the following command to deploy Bold BI on your Linux machine:
+7. Execute the following command to upgrade the Bold BI that is deployed on your Linux machine:
  
-    ~~~shell
-    sudo bash install-boldbi.sh -i {upgrade}
-    ~~~
- 
-
-* **i :** Installation type - Specifies either it is a new or upgrade installation. 
-
-* **u :** Specify the user or group that manages the service. Please ensure that this user exists on your Linux server. 
-
-* **h :** Domain or IP address of the machine with http protocol.  
-
-    Example for upgrading the installation:
-
     ~~~shell
     sudo bash install-boldbi.sh -i upgrade
-    ~~~ 
+    ~~~
 
-7. Refer to this [Install Optional Libraries](/deploying-bold-bi/deploying-on-linux/install-optional-libraries/) and install the optional client libraries, after the installation completed.
+8. If you do not have optional client libraries installed during initial deployment of Bold BI, then refer to this [Install Optional Libraries](/deploying-bold-bi/deploying-on-linux/install-optional-libraries/) and install the optional client libraries, after the upgrade process is completed.
 
-8. Now, you can open the host URL in the browser and enjoy the latest features of Bold BI.
+>**NOTE:** You can skip this step if you have already installed the optional client libraries during initial deployment of Bold BI itself.
+
+9. Now, you can open the host URL in the browser and enjoy the latest features of Bold BI.
 
 >**NOTE:** The backup file for the Bold BI Linux package will be available in the following location: `/var/www/`

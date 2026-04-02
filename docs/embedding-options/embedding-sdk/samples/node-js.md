@@ -18,7 +18,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/nodejs-sample
  * [Visual Studio Code](https://code.visualstudio.com/download)
  * [Python 3.8](https://www.python.org/downloads/release/python-383/)
 
-> **NOTE:** Node.js v12.13 to v18.18 are supported
+> **NOTE:** Node.js versions 18.18 to 20.15 are supported.
 
 ## How to run the sample
 
@@ -79,55 +79,16 @@ A GitHub link has been provided to [get](https://github.com/boldbi/nodejs-sample
  6. To run the samples, please use the following command.
 
      ```js
-          node embed.js
-     ```
-
-7.	The dashboard can be edited in design mode and can create a new dashboard with the following changes in the `embedSample()` method.
-
-    <meta charset="utf-8"/>
-    <table>
-    <tbody>
-    <tr>
-    <td align="left">dashboardId</td>
-    <td align="left">Provide the dashboard id of the dashboard you want to embed in view or edit mode.     This property no need to create a new dashboard.</td>
-    </tr>
-    <tr>
-    <td align="left">mode</td>
-    <td align="left">In which mode you want to render dashboard. It can either be 'BoldBI.Mode.View' or 'BoldBI.Mode.Design' mode. 
-    </td>
-    </tr>
-    <tr>
-    <td align="left">authorizationServer</td>
-    <td align="left">Url of the 'embedDetails' method in the 'embed.js' file.</td>
-    </tr>
-    </tbody>
-    </table>
-
-     ```js
-            function embedSample() {
-                var boldbiEmbedInstance = BoldBI.create({
-                    serverUrl: rootUrl + "/" + siteIdentifier,
-                    dashboardId: dashboardId,//Provide item id to render it in design mode,to create dashboard remove this property                
-                    embedContainerId: "dashboard",// This should be the container id where you want to embed the dashboard
-                    embedType: embedType,
-                    environment: environment,
-                    mode: BoldBI.Mode.Design,
-                    height: "800px",
-                    width: "1200px",
-                    authorizationServer: {
-                        url: "http://localhost:8080/embeddetail/get"
-                    },
-                    expirationTime: "100000",
-                });
-                boldbiEmbedInstance.loadDesigner();
-            }
+          node tokengeneration.js
      ```
 
 ## How this sample works
- 1. To authorize the server URL, call the `GetEmbedDetails` API (`http://localhost:8080/embeddetail/get`) with the provided `embedConfig` values, based on the `dashboardId` from the `embedConfig.json` file.
-    ![Get Embed Config Details](/static/assets/javascript/sample/images/nodejs-authorize.png)
 
- 2. In the previous authorization, generate the `SignatureUrl` using the provided `EmbedSecret key` and validate the embed details in Bold BI. Once the details are validated, the dashboard will start to render in `index.html`.
+ 1. To generate an access token, call the `TokenGeneration` API (`http://localhost:8080/TokenGeneration`) with the provided `embedConfig` values.
+    ![Get token Details](/static/assets/javascript/sample/images/nodejs-token.png)
+
+ 2. Once the token is generated, it will be returned to the `index.html` file and the dashboard will start to render it.
+    ![Render dashboard](/static/assets/javascript/sample/images/nodejs-dashboard.png)
 
 ## Steps to create new Node.js application to embed dashboard
 
@@ -154,7 +115,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/nodejs-sample
 
     ```js
     <head>  
-        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v7.11.24/boldbi-embed.js"></script>
+        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v15.2.6/boldbi-embed.js"></script>
     </head>
     <body onload="embedSample();">
         <div id="dashboard"></div>

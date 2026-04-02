@@ -87,5 +87,4 @@ function printError(done) {
         console.log(checkedFiles.upperCase.toString().split(',').join('\n'));
     }
     process.exit(1);
-    done();
 }

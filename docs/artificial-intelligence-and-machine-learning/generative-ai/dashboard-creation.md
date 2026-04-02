@@ -49,5 +49,5 @@ Based on this prompt, the system will:
 - Works only on empty dashboards.
 - Exactly six widgets are generated per prompt—no more, no less—regardless of the data provided.
 - Available only in Design Mode, not in View or Preview modes.
-- dashboard creation is not available if the dashboard already contains widgets.
+- Dashboard creation is not available if the dashboard already contains widgets.
 - Supported widget types: Bar, Column, Pie, Doughnut, Line, Spline, Spline Area, Grid, and Map.

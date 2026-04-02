@@ -15,20 +15,6 @@ Data sources that are accessible by the user, depending on the user’s permissi
 
 ![Manage Data Sources](/static/assets/managing-resources/images/manage-data-sources.png)
 
-There are two categories available for data sources:
-
-* Advanced
-* Basic
-
-## Advanced Category
-We are currently transitioning our extract mode connectors to Bold ETL, an advanced ETL solution. This change is aimed at enhancing the user experience when creating data sources in extract mode. The new system offers various features such as scheduling, incremental data refresh, and data transformation. Additionally, Bold ETL supports Apache Doris as a destination data store, known for its high performance and ability to enable real-time data analytics with columnar storage. Currently, only a few connectors are available in this new format, but we plan to migrate all extract mode connectors from Bold BI to Bold ETL in the near future.
-
-## Basic Category (Original Bold BI Connectors)
-If you are familiar with the existing Bold BI connectors, you can continue using them, now classified as `Basic`. However, if you work with large datasets, we recommend trying out the Advanced Bold ETL-based connectors for a more efficient experience.
-
-### Important Note
-This update will not affect your current connectors. You can continue using them as you have been. The introduction of Bold ETL-based connectors is an additional option designed to offer a better and more advanced experience.
-
 There are two connection types available in Data Source:
 
 * Live mode
@@ -43,6 +29,30 @@ In this connection type, data sources are directly fetched from the source, exam
 ## Extract mode connection 
 
 In this connection type, data sources are fetched from the source periodically, examples include CSV, JSON, etc.
+
+Within extract mode, users can choose between two methods of connecting to the data source:
+
+![Extract Engine](/static/assets/working-with-datasource/images/Extract_Engine.png)
+	
+- **Bold BI Extract:** In Bold BI Extract, The data will be extracted in using Bold BI Engine and the data will be moved to configured datastore in Bold BI.
+ 
+- **Data Hub:** When switching to Data Hub, Data extraction is handled through the Data Hub. An equivalent pipeline is created, utilizing the Data Hub’s Extract, Transform, Load (ETL) capabilities to filter, optimize, or transform the data, and to generate new tables.
+
+- To view the equivalent pipeline created using **Data Hub** for data extraction, navigate to the Query Designer page and click on View Pipeline.
+
+![View Pipeline](/static/assets/working-with-datasource/images/View_Pipeline.png)
+
+- When the data refresh is configured for data sources that uses the Data Hub Extract Engine, the refresh will be managed within the Data Hub.
+
+ > **NOTE:**: Initially, The Data Hub extracts 1000 records for sql connectors, and additional records will be extracted in the next iteration based on the Refresh Settings.
+
+- **Limitations:** The following options are not supported when using the Data Hub method:
+	1. Max rows
+	2. Additional Connection Parameters
+	3. Dynamic Connection String
+	4. ssl/ssh
+ 
+In summary, Bold BI provides users with two distinct modes for connecting to SQL data sources, each offering unique benefits depending on the nature of the analysis and the requirements of the user. Whether opting for real-time access through live mode or leveraging the efficiency of extract mode, users can access and analyze SQL data effectively to drive informed decision-making and achieve their analytical objectives.
 
 Users can see the data source refresh status and the number of occupied data rows count on this page.
 
@@ -86,12 +96,16 @@ You can also see failure information by clicking the failed link in the run hist
 
 ![Refresh Failure Info](/static/assets/managing-resources/images/refresh-failure-info.png#width=55%)
 
+If the data source refresh fails due to consecutive failures, a disabled status will be displayed on the listing page. You can check the history using the option below the status.
+
+![Disable Refresh Logs](/static/assets/managing-resources/images/disable-refresh-view-logs.png)
+
 > **NOTE:**  Only the data source created with extract mode will have this refresh history option.
 
 ## Refresh Logs
 The refresh log provides a comprehensive overview of the refresh activities, including the corresponding timestamp of each event.
 
-To access the refresh logs, click the `View` option in the grid. This will open the refresh log in the Advanced tab.
+To access the refresh logs, click the `View` option in the grid. This will open the refresh log in the New tab.
 
 ![Refresh Logs Info](/static/assets/managing-resources/images/refresh-view-logs.png)
 ![Success Logs Info](/static/assets/managing-resources/images/Success-logs.png)
@@ -99,6 +113,12 @@ To access the refresh logs, click the `View` option in the grid. This will open 
 > **NOTE:**
 > * The refresh log will display tooltip information indicating whether it has been deleted after a certain period from its creation time or if it is unavailable due to being an older refresh request.
 > * The logs for each refresh will be automatically deleted after 15 days from their respective creation time.
+
+## Row Level Security
+
+Row-level security for the data used to create dashboards allows us to restrict the data visible to each user. If row-level security is applied to a data source, it will be indicated in the listing grid. [Know More](/working-with-data-sources/user-filter/)
+
+![Row-level Security](/static/assets/managing-resources/images/row-level-security.png)
 
 ## View Linked Dashboards
 You can view the dashboard(s) created with the corresponding data source using the `View Linked Dashboards` option in the data source grid context menu.

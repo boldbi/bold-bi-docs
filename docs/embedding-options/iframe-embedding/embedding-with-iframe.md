@@ -30,7 +30,11 @@ A dashboard can be embedded in the create, edit, and view modes of any applicati
 
 5. Please embed the copied URL into other web applications.
 
-6. When the web application is run, it will display either the login window or the dashboard, depending on the type of dashboard. Once you click on "login" and successfully log in with valid user credentials, the dashboard will automatically load. To bypass the login process, use [Embed Signature](/embedding-options/iframe-embedding/embedding-with-token-authentication/).
+6. You can also copy the embed URL alone in the Embed Code dialog by clicking the `Copy Embed URL` option.
+
+    ![CopyEmbedUrl](/static/assets/iFrame-based/images/copy-embedurl-view.png#max-width=45%)
+
+7. When the web application is run, it will display either the login window or the dashboard, depending on the type of dashboard. Once you click on "login" and successfully log in with valid user credentials, the dashboard will automatically load. To bypass the login process, use [Embed Signature](/embedding-options/iframe-embedding/embedding-with-token-authentication/).
 	
 	![EmbedLogin](/static/assets/iFrame-based/images/iframeLoginPage.png#max-width=45%) 
 	![EmbedViewDashboard](/static/assets/iFrame-based/images/embed-dashboard-view.png#max-width=85%)
@@ -133,9 +137,9 @@ A dashboard can be embedded in the create, edit, and view modes of any applicati
       <td>Show/hide the AI Widget Summary icon with predefined value:<br>ws-Widget Summary<br><br><code>Example</code>:<br>&enable_ai_summary=ws<br><strong>Note:</strong> To enable this, it is mandatory to use the enable_ai_assistant parameter.</td> 
     </tr>
     <tr>
-      <td><code>hide_aidata_usage</code></td>
-      <td><code>boolean</code></td>
-      <td>Show/hide the AI Data Usage icon in AI Assistant window.<br><strong>Note:</strong> To enable this, it is mandatory to use the enable_ai_assistant parameter.</td>
+      <td><code>hide_ai_icons</code></td>
+      <td><code>string</code></td>
+      <td>Show/hide the AI icon in AI Assistant window.<br>du-Data usage<br><code>Example</code>:<br>&hide_ai_icons=du<br><br>Show/hide the AI Chat Help icon in AI Assistant window.<br>ch-Chat help<br><code>Example</code>:<br>&hide_ai_icons=ch<br><br><strong>Note:</strong> To enable this, it is mandatory to use the enable_ai_assistant parameter.</td>
       <td>NA</td> 
     </tr>    
    <tr>
@@ -206,13 +210,13 @@ A dashboard can be embedded in the create, edit, and view modes of any applicati
 ### How to embed the dashboard in create mode using the URL
 
 1. To create a new dashboard, you need to change the embed URL as demonstrated in the image below.
-```js
-  <html>
-  <body>
-    <iframe src='http://localhost:51777/bi/site/site1/dashboard-designer?isembed=true' id='dashboard-iframe'width='100%' allowfullscreen frameborder='0'></iframe>
-  </html>
-  </body>
-```
+    ```js
+      <html>
+      <body>
+        <iframe src='http://localhost:51777/bi/site/site1/dashboard-designer?isembed=true' id='dashboard-iframe'width='100%' allowfullscreen frameborder='0'></iframe>
+      </html>
+      </body>
+    ```
 
 2. Please embed the above URL into any web application and change the site identifier and server URL. 
 
@@ -228,7 +232,7 @@ A dashboard can be embedded in the create, edit, and view modes of any applicati
 2. Select the mode value as `Edit` for rendering a dashboard to edit or design.
 	![ModeOption](/static/assets/iFrame-based/images/select-mode-design.png#max-width=45%) 
 
-3. 3. By default, AI assistant options are disabled. To enable these options, simply click the button provided in the embed dialog.	
+3. By default, AI assistant options are disabled. To enable these options, simply click the button provided in the embed dialog.	
     ![EnableOption](/static/assets/iFrame-based/images/enable-option-design.png#max-width=45%) 
 
 4. Please copy the embed URL by clicking on the copy icon in the embed code dialog. 
@@ -236,10 +240,14 @@ A dashboard can be embedded in the create, edit, and view modes of any applicati
 
 5. Please embed the copied URL into other web applications.
 
-6. When the web application is run, it will display either the login window or the designer dashboard. Upon clicking the login button and logging in with valid user credentials, the dashboard designer will be rendered automatically.
+6. You can also copy the embed URL alone in the Embed Code dialog by clicking the `Copy Embed URL` option.
+
+    ![CopyEmbedUrl](/static/assets/iFrame-based/images/copy-embedurl-design.png#max-width=45%)
+
+7. When the web application is run, it will display either the login window or the designer dashboard. Upon clicking the login button and logging in with valid user credentials, the dashboard designer will be rendered automatically.
 To avoid login, use [Embed Signature](/embedding-options/iframe-embedding/embedding-with-token-authentication/).
-![EmbedLogin](/static/assets/iFrame-based/images/iframeLoginPage-design.png#max-width=45%) 
-![EmbedDesignDashboard](/static/assets/iFrame-based/images/embedded-design.png#max-width=90%) 
+  ![EmbedLogin](/static/assets/iFrame-based/images/iframeLoginPage-design.png#max-width=45%) 
+  ![EmbedDesignDashboard](/static/assets/iFrame-based/images/embedded-design.png#max-width=90%) 
 
 
 ### Embedding dashboard with filter parameter
@@ -272,10 +280,10 @@ A data source can be created and edited in any application using the URL. In the
 ### Steps to embed data source using URL 
 
 1. To obtain the embed URL, click on the `More` option icon of the desired data source from the data source listing. Then, select the `Get Embed Code` option from the drop-down menu.
-![DataSourceUrl](/static/assets/iFrame-based/images/EmbedCode-DataSource.png#max-width=90%)
+    ![DataSourceUrl](/static/assets/iFrame-based/images/EmbedCode-DataSource.png#max-width=90%)
 
 2. The SSO options are disabled by default. To enable this option, slide the button provided in the embed dialog.  
-![EnableOption](/static/assets/iFrame-based/images/enable-option-datasource.png#max-width=45%)  
+    ![EnableOption](/static/assets/iFrame-based/images/enable-option-datasource.png#max-width=45%)  
 <table>
     <tr>
       <td>
@@ -292,16 +300,20 @@ A data source can be created and edited in any application using the URL. In the
 
 4. Embed the copied URL into other web applications.
 
-5. To access the web application, run it and the login window will appear. Click on the login button and enter the correct user credentials. This will automatically load the data source design page. Alternatively, you can use embed signature to bypass the login process.
-![EmbedLogin](/static/assets/iFrame-based/images/iframeLoginPage-datasource.png#max-width=45%)  
-![EmbedEditDataSource](/static/assets/working-with-datasource/images/editthedatasource.png#max-width=90%) 
+5. You can also copy the embed URL alone in the Embed Code dialog by clicking the `Copy Embed URL` option.
+
+    ![CopyEmbedUrl](/static/assets/iFrame-based/images/copy-embedurl-datasource.png#max-width=45%)
+
+6. To access the web application, run it and the login window will appear. Click on the login button and enter the correct user credentials. This will automatically load the data source design page. Alternatively, you can use embed signature to bypass the login process.
+    ![EmbedLogin](/static/assets/iFrame-based/images/iframeLoginPage-datasource.png#max-width=45%)  
+    ![EmbedEditDataSource](/static/assets/working-with-datasource/images/editthedatasource.png#max-width=90%) 
 
 ### Embed data source using external SSO authentication
 
 Bold BI supports embedding the data source into other web applications using external Single Sign-On authentication in iframe-based embedding. The Bold BI application can be configured to support [Windows Active Directory](/site-administration/user-directory-settings/active-directory/active-directory/), [Azure Active Directory](/security-configuration/single-sign-on/azure-active-directory/), [OAuth 2.0 settings](/security-configuration/single-sign-on/oauth-2.0-support/) and [OpenID Support](/security-configuration/single-sign-on/openid-support/) authentications. Follow these steps to obtain the embed code with the Authentication Provider.
 
 1. To access the respective data source's context menu, click on it and select the `Get Embed code` option. In the Embed Code dialog box, enable the `SSO` feature and choose respective Authentication Provider in the option, similar to what is illustrated in the provided image.
-![EmbedSSOWindows](/static/assets/iFrame-based/images/embed-sso-windows-datasource.png#max-width=45%)
+    ![EmbedSSOWindows](/static/assets/iFrame-based/images/embed-sso-windows-datasource.png#max-width=45%)
 
 2. To copy the embed URL, click on the copy icon located in the Embed Code dialog. Then, paste it into a web application.
 
@@ -310,14 +322,14 @@ Bold BI supports embedding the data source into other web applications using ext
 ### How to embed the datasource in create mode using the URL
 
 1. Please change the embedded URL to the one provided below in order to create a new data source connection.   
-```js
-    <html>
-    <body>
-        <iframe src='http://localhost:51777/bi/site/site1/datasource-designer/connection?isembed=true'
-        id='dashboard-frame' width='100%' height='100%' allowfullscreen frameborder='0'></iframe>
-    </body>
-    </html>
-```
+    ```js
+        <html>
+        <body>
+            <iframe src='http://localhost:51777/bi/site/site1/datasource-designer/connection?isembed=true'
+            id='dashboard-frame' width='100%' height='100%' allowfullscreen frameborder='0'></iframe>
+        </body>
+        </html>
+    ```
 
 2. Please embed the aforementioned embed URL into any web application and change the site identifier and server URL.   
 
@@ -335,29 +347,32 @@ Any widget from the dashboard can be embedded individually in any application us
 ### How to get the Embed Widget Url
 
 1. To open the desired dashboard and choose the widget you want to embed, select the `More` option. Next, from the drop-down menu, select `Get Embed Code`.
-![InspectElement](/static/assets/iFrame-based/images/Widget-GetEmbedCode.png)
+    ![InspectElement](/static/assets/iFrame-based/images/Widget-GetEmbedCode.png)
 
 2. Please copy the iframe code from the pop-up page that displays the embed code. 
-![InspectElement](/static/assets/iFrame-based/images/Widget-EmbedCode.png) 
+    ![InspectElement](/static/assets/iFrame-based/images/copy-iframeurl-widget-embedsignature.png)
 
+3. You can also copy the embed URL alone in the Embed Code dialog by clicking the `Copy Embed URL` option.
+
+    ![CopyEmbedUrl](/static/assets/iFrame-based/images/copy-embedurl-widget-embedsignature.png#max-width=45%)
 
 ### How to embed the widget using the URL
 
 1. Now, utilize the copied iframe code in the HTML page to display the specific widget of the dashboard in a concise manner.   
-```js
-<html>
-<body>
-    <iframe src='http://localhost:53623/bi/site/site1/dashboards/5cfde98c-d352-4863-8a93-d6679263191b/Sales/Sales%20Analysis%20Dashboard?isembed=true&isWidgetMode=true&WidgetId=32ed09f7-49ef-4468-9c56-ccc376dbcaaa'
-    id='dashboard-frame' width='100%' height='600px' allowfullscreen frameborder='0'></iframe>
-</html>
-</body>
-```
+    ```js
+    <html>
+    <body>
+        <iframe src='http://localhost:53623/bi/site/site1/dashboards/5cfde98c-d352-4863-8a93-d6679263191b/Sales/Sales%20Analysis%20Dashboard?isembed=true&isWidgetMode=true&WidgetId=32ed09f7-49ef-4468-9c56-ccc376dbcaaa'
+        id='dashboard-frame' width='100%' height='600px' allowfullscreen frameborder='0'></iframe>
+    </html>
+    </body>
+    ```
 
 2. Please embed the provided URL into any web application and change the site identifier and server URL.
 
 3. To use the web application, you need to run it. Depending on the type of dashboard, it will display either the login window or the dashboard itself. Click on the login option and enter the correct user credentials. Once you do that, the widget will automatically render.  
-![EmbedLogin](/static/assets/iFrame-based/images/iframeLoginPage.png#max-width=45%)  
-![EmbedViewDashboard](/static/assets/iFrame-based/images/embedded-widget.png)  
+    ![EmbedLogin](/static/assets/iFrame-based/images/iframeLoginPage.png#max-width=45%)  
+    ![EmbedViewDashboard](/static/assets/iFrame-based/images/embedded-widget.png)  
 
 > **NOTE:**  You can make the dashboard public and access it anonymously without the need for logging in.
 
@@ -368,21 +383,25 @@ A dashboard can have saved filter views embedded in any application using a URL.
 ### Steps to embed dashboard view using URL
 
 * To obtain the embedded URL, click on the `Share` icon for the saved views.
-![EmbedViews-ShareIcon](/static/assets/iFrame-based/images/EmbedViews-ShareIcon.png) 
+  ![EmbedViews-ShareIcon](/static/assets/iFrame-based/images/EmbedViews-ShareIcon.png) 
 
 * Please click on the `Get Embed Code` link located in the share dialog box.
-![EmbedViews-GetEmbedCode](/static/assets/iFrame-based/images/EmbedViews-GetEmbedCode.png#width=60%)
+  ![EmbedViews-GetEmbedCode](/static/assets/iFrame-based/images/EmbedViews-GetEmbedCode.png#width=60%)
 
 * Please copy the embed URL by clicking the copy icon in the Embed Code dialog.
-![EmbedViews-EmbedURL](/static/assets/iFrame-based/images/EmbedViews-EmbedURL.png#width=55%)
+  ![EmbedViews-EmbedURL](/static/assets/iFrame-based/images/EmbedViews-EmbedURL.png#width=55%)
 
 * Please embed the copied URL into another web application.
 
+* You can also copy the embed URL alone in the Embed Code dialog by clicking the `Copy Embed URL` option.
+
+  ![CopyEmbedUrl](/static/assets/iFrame-based/images/copy-embedurl-view-iframe.png#max-width=45%)
+
 * To access the web application, if the dashboard is not available as a public dashboard, run it. The login page will then be displayed. Proceed by clicking the login button and entering valid user credentials. The dashboard will automatically be rendered for you.
-![EmbedViews-EmbedLogin](/static/assets/iFrame-based/images/iframeLoginPage.png#max-width=45%)
+  ![EmbedViews-EmbedLogin](/static/assets/iFrame-based/images/iframeLoginPage.png#max-width=45%)
 
 For example, below image represents that our dashboard embedded in `http://example.com/` website.
-![EmbedViews-EmbedSample](/static/assets/iFrame-based/images/EmbedViews-EmbedSample.png)
+    ![EmbedViews-EmbedSample](/static/assets/iFrame-based/images/EmbedViews-EmbedSample.png)
 
 
 ### Public embedding

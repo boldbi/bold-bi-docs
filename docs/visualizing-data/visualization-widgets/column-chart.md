@@ -273,12 +273,6 @@ This feature enables you to set a `description` for the column chart widget.
 
 ![Basic Settings](/static/assets/visualizing-data/visualization-widgets/images/column-chart/basic-settings.png)
 
-#### Show Tooltip
-
-This option enables you to toggle the visibility of the tooltip in the chart.
-
-![General settings](/static/assets/visualizing-data/visualization-widgets/images/column-chart/tooltip.png)
-
 #### Chart type and axis
 
 Click the `Change` button to open the `Chart Type and Axis Settings` dialog.
@@ -400,9 +394,39 @@ When this support is enabled, the size of the chart scroll bar thumb will be cal
 
 This option allows you to set the number of records that need to be fetched on initial load.
 
+### Tooltip Settings
+
+The Tooltip Settings section allows you to customize the appearance and behavior of tooltips in widget visualizations.
+
+![Basic Settings](/static/assets/visualizing-data/visualization-widgets/images/tooltip-settings.png)
+
+#### Show Tooltip
+
+This option allows you to toggle the visibility of the tooltip in the chart.
+
+![General Settings](/static/assets/visualizing-data/visualization-widgets/images/column-chart/column-tooltip.png)
+
+#### Customize Tooltip
+
+This option allows you to customize which columns are visible in the chart's tooltip.
+
+![General Settings](/static/assets/visualizing-data/visualization-widgets/images/column-chart/column-customize-tooltip-settings.png)
+
+#### Enable RTL
+
+This option allows you to display fields and their data from right to left.
+
+![Tooltip RTL](/static/assets/visualizing-data/visualization-widgets/images/column-chart/column-rtl-tooltip.png)
+
+#### Apply Legend Color
+
+This option allows you to display tooltip text and value colors that correspond with the legend colors.
+
+![Tooltip RTL](/static/assets/visualizing-data/visualization-widgets/images/column-chart/column-legend-tooltip.png)
+
 ### Legend Settings
 
-![Legend settings](/static/assets/visualizing-data/visualization-widgets/images/column-chart/legend-settings.png)
+![Legend settings](/static/assets/visualizing-data/visualization-widgets/images/column-chart/chart-legend-setting.png)
 
 #### Show legend
 
@@ -452,6 +476,47 @@ This option will hide the legends in the chart area, resulting in increased char
 The chart legend dropdown option can be used to simplify viewing complex charts with multiple data sources. For example, if you have a chart displaying sales data for the different years, you can use the legend dropdown to deselect all other years and focus only on a specific year.
 
 ![Legend item as dropdown](/static/assets/visualizing-data/visualization-widgets/images/column-chart/legend-as-dropdown.png)
+
+#### Legend Alignment
+
+The Legend Alignment allows you to adjust the alignment of the legend within its designated area. You can choose from four alignment options: **Near, Center, Far,** and **None**.
+
+For further legend's placement details are in the below table.
+
+<table>
+<tr><td>
+<b>Alignment
+</b></td><td><b>
+Description</b></td>
+</tr><tr><td>
+Near</td>
+<td>
+Aligns the legend to the start (top or left, depending on position).</td>
+</tr><tr><td>
+Center</td>
+<td>
+Positions the legend in the middle of the available space.</td>
+</tr><tr><td>
+Far</td>
+<td>
+Aligns the legend to the end (bottom or right, depending on position).</td>
+</tr><tr><td>
+None</td>
+<td>
+Leaves the legend unaligned, allowing default rendering.</td>
+</tr></table>
+
+This enhancement allows users to control both the position and alignment of the legend, providing greater flexibility in customizing the chart’s appearance to meet specific design or layout needs.
+
+When Position is set to `Auto` and Alignment is set to `None`, the legend will appear as shown in the image below.
+
+![Legend Alignment Customization](/static/assets/visualizing-data/visualization-widgets/images/column-chart/chart-legend-custom1.png)
+
+When Position is set to `Top` and Alignment is set to `Near`, the legend will appear as shown in the image below.
+
+![Legend Alignment Customization](/static/assets/visualizing-data/visualization-widgets/images/column-chart/chart-legend-custom2.png)
+
+You can similarly customize position and alignment in various scenarios.
 
 #### Legend Shape
 
@@ -544,6 +609,12 @@ This enables you to personalize the color of the axis title.
 This feature allows you to customize the color of the axis labels.
 
 ![Label color](/static/assets/visualizing-data/visualization-widgets/images/column-chart/label-color.png)
+
+#### Show Axis Border
+
+This option allows you to enable or disable the axis border of the chart.
+
+![Show axis border](/static/assets/visualizing-data/visualization-widgets/images/column-chart/show-axis-border.png)
 
 #### Show category axis
 
@@ -674,7 +745,7 @@ This feature enables you to dynamically set the minimum, maximum, and interval v
 2. Range parameter value.
 3. Data source field based parameter values.
 
-For more details about dashboard parameter, refer to the [Dashboard parameter documentation](/working-with-data-sources/dashboard-parameter/configuring-dashboard-parameters/).
+For more details about dashboard parameter, refer to the [Dashboard parameter documentation](/working-with-data-sources/dashboard-parameter/configuring-dashboard-parameter/).
 
 ### Single Parameter Value:
 
@@ -873,6 +944,17 @@ This feature enables you to customize the fill color of the column chart based o
 
 ![rule mode](/static/assets/visualizing-data/visualization-widgets/images/column-chart/rule-mode.png)
 
+#### Inherit Drill down color
+
+Enabling this option allows series at subsequent levels to inherit colors from the first level during drill-down, as illustrated in the image below.
+
+![Inherit Drill color Checkbox](/static/assets/visualizing-data/visualization-widgets/images/column-chart/inherit-drillcolor-checkbox.png)
+
+For example, when drilling down on a 'Retail' point, the next level of series will inherit the 'Retail' point's color as shown in the following image.
+
+![Drilling down color](/static/assets/visualizing-data/visualization-widgets/images/column-chart/drilling-column-color.png)
+![Rendering inherited color](/static/assets/visualizing-data/visualization-widgets/images/column-chart/inherited-column-color.png)
+
 #### Value type
 
 The value type drop-down allows you to choose whether you are going to apply the direct value (a specific number like 3 goals or order ID 10248) or a percentage (values above 30% or 50%).
@@ -1019,6 +1101,10 @@ This option allows you to enable or disable hierarchical top N filtering. When a
 
 When the `Hierarchical Filter` option is enabled, the Top N will be applied to each individual column separately, based on the number set for each column.
 
+#### Show Filter
+
+This feature allows you to toggle the visibility of the `Filter` icon for the column chart widget when the `Act as Master Widget` option is enabled.
+
 ### Container Appearance
 
 This sections allows you to customize the `Container Appearance` for the column chart widget.
@@ -1063,7 +1149,7 @@ This feature allows you to toggle the visibility of the **border** surrounding t
 
 ### Corner Radius
 
-This allows you to apply the specified **radius** to the widget corners if the **Show Border** is enabled. Value can be between 0 and 10.
+This allows you to apply the specified **radius** to the widget corners if the **Show Border** is enabled. Value can be between 0 and 100.
 
 ### Show Background Image
 
@@ -1080,6 +1166,12 @@ This property allows you to specifies the **transparency** for the **background 
 ### Show Shadow
 
 This feature allows you to switch the visibility of the `shadow` surrounding the widget.
+
+### Mobile Height Factor
+
+This option allows you to resize widgets specifically for mobile view.
+
+![Mobile Height Factor](/static/assets/visualizing-data/visualization-widgets/images/mobile-height-factor.png)
 
 ### Container actions
 

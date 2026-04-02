@@ -31,7 +31,6 @@ gulp.task('seo-validation', (done) => {
     printError(done);
 });
 
-
 function validateDescLength(filePath) {
     let content = readFileSync(filePath, 'utf8');
     let metadata, metaPattern = /\n-{3}/g;
@@ -99,15 +98,27 @@ function validateDescLength(filePath) {
 }
 
 function validateImage() {
-    const fileNames = sync('./static/assets/**/*.**');
+    const fileNames = sync('./static/assets/**/*.*');
+    const allowedExt = new Set(['png', 'jpeg', 'jpg', 'svg', 'gif']);
+
     for (let i = 0; i < fileNames.length; i++) {
-        if (statSync(fileNames[i]).isDirectory()) continue;
-        let exe = fileNames[i].split('.')[2];
-        if ((exe !== 'png' && exe !== 'jpeg' && exe !== 'svg' && exe !== 'PNG' && exe !== 'JPEG' && exe !== 'SVG' && exe !== 'gif')) {
-            invalidImgExtension.push(fileNames[i]);
+        const filePath = fileNames[i];
+
+        if (statSync(filePath).isDirectory()) continue;
+
+        // get extension safely (no path module)
+        const lastDot = filePath.lastIndexOf('.');
+        const ext = lastDot !== -1 ? filePath.slice(lastDot + 1).toLowerCase() : '';
+
+        if (!allowedExt.has(ext)) {
+            invalidImgExtension.push(filePath);
         }
-        if (mdImage[fileNames[i]] === undefined) {
-            notUsedImg.push(fileNames[i]);
+
+        // normalize path to match markdown image references
+        const normalizedPath = './' + filePath.replace(/\\/g, '/');
+
+        if (mdImage[normalizedPath] === undefined) {
+            notUsedImg.push(filePath);
         }
     }
 }
@@ -245,5 +256,4 @@ function printError(done) {
     }
 
     process.exit(1);
-    done();
 }

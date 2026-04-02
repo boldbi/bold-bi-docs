@@ -32,12 +32,6 @@ To choose an Elastic Search data source, follow these steps:
 
 ![Select data source](/static/assets/working-with-datasource/data-connectors/images/Elastic-search/Selectdatasource.png#max-width=85%)
 
-## Advanced
-In the Advanced category, It will Redirect to the Bold ETL. Refer to [Bold ETL](/managing-resources/manage-data-sources/#advanced-category).
-
-## Basic
-In the Basic Category, It will act as the connector in Bold BI. And need to follow the below steps.
-
 ## Connect to Elastic Search
 An Elastic Search data source can be accessed in Bold BI using the live connection mode.
 
@@ -94,6 +88,20 @@ There are two connection types available in a data source
 7.	Click `Connect` to connect the Elastic Search server with the configured details.
 
 ![Data source connection](/static/assets/working-with-datasource/data-connectors/images/Elastic-search/elasticsearchextract.png#max-width=100%)
+
+## Extract mode connection 
+
+1. Switching to Extract mode, Extract Engine will become visible.
+
+    ![Extract Engine](/static/assets/working-with-datasource/images/Extract_Engine.png)
+
+2. In Bold BI Extract, The data will be extracted in Bold BI itself.
+3. When switching to Data Hub, Data extraction is handled through the Data Hub. An equivalent pipeline is created, utilizing the Data Hub’s Extract, Transform, Load (ETL) capabilities to filter, optimize, or transform the data, and to generate new tables.
+4. To view the equivalent pipeline created for data extraction, navigate to the Query Designer page and click on View Pipeline.
+
+    ![Refresh Setting](/static/assets/working-with-datasource/images/View_Pipeline.png)
+
+5. When the data refresh is configured for data sources that uses the Data Hub Extract Engine, the refresh will be managed within the Data Hub.
 
 ### Connect using Open Distro connection type
 
@@ -152,6 +160,37 @@ Please follow these steps to connect using the Open Distro connection type.
 •	The Top N option in initial filters is unsupported, as the join command is not supported.  <br />
 •	Expressions that use the today() and now() functions are unsupported in widgets.  <br />
 •	The data sampling feature is restricted, as applying a limit in a subquery is not supported. <br />
+
+### Using `IncludeFilterKey` in URL Filters
+
+In Elasticsearch, `.keyword` fields are used for exact-match filtering and offer better performance compared to analyzed text fields. Bold BI supports applying these sub-fields dynamically using the `IncludeFilterKey` property in embed URL filters.
+
+### How It Works
+
+When you add `IncludeFilterKey=<subField>` in the URL, the specified sub-field is automatically applied to every column included in the filter.
+
+### Syntax
+`IncludeFilterKey=<subField>&&columnName=value`
+
+ For Elasticsearch .keyword fields:
+
+`IncludeFilterKey=keyword`
+
+### Example – Embed URL Filter
+`IncludeFilterKey=keyword&&(column4=item5|| column1=A00003)||column4=item99`
+This will be interpreted as:
+- `column4.keyword = item5`
+- `column1.keyword = A00003`
+- `column4.keyword = item99`
+
+![Keyword](/static/assets/working-with-datasource/data-connectors/images/Elastic-search/keyword.png#max-width=100%)
+
+### Supported Values
+You can use built-in Elasticsearch sub-fields such as `keyword`, `raw`, `exact` or any other sub-field defined in your index mapping.
+
+> **NOTE:**
+> When a field uses the text data type, Elasticsearch breaks the value into tokens for full-text search. Because of this, exact comparisons using `=` in IF conditions will fail.
+> If you need to compare the exact value, change the field type to keyword (or use the `.keyword` subfield if it already exists).
 
 ### Connect using custom attribute and dashboard parameter
 

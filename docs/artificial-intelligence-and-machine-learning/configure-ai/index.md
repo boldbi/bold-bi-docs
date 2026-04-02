@@ -13,20 +13,18 @@ documentation: ug
 - Starting from Bold BI v10.1, on-premise users can configure their own AI models with credentials for AI features.
 
 ## BOLD AI Service
+Once users configure the Bold AI Service, we manage AI functionalities on our end seamlessly. it requires no credentials and operates on a cloud-based service.
 
-- Once users configure the Bold AI Service, we can manage AI functionalities on our end seamlessly.
+- Versions up to 13: Works with your existing Bold BI license.
+- Version 14+: Runs per-tenant with 1.5 million free tokens monthly, zero billing.
+- We provide 1.5 million tokens every month per tenant, which is free of charge and will not be billed.
 
-- It requires no credentials and operates on a cloud-based service.
+### How are the Tokens Applied for Bold BI Service Tenants?
 
-- We provide an initial 1 million tokens for the Bold BI AI Copilot, which is free of charge and will not be billed.
-
-### How Are the 1 Million Tokens Applied for Bold BI Service Tenants?
-
-- Each Bold BI tenant receives its own separate 1 million token allocation, which cannot be shared or transferred between tenants.
-
-- Whether you have 10 users or 100 embedded users within a single tenant, all AI-related usage will consume tokens from the same 1 million token pool assigned to that tenant. 
-
-- Once the initial 1 million tokens are exhausted, you can request additional tokens by contacting our support team. We will review your request and add tokens upon validation.
+- Each tenant has its own dedicated 1.5 million token pool per month.  
+- Tokens cannot be shared or transferred between tenants.  
+- All AI usage regardless of the number of users (e.g., 10 or 100 embedded users) is deducted from the same monthly tenant token pool.  
+- The full 1.5 million tokens are automatically reset on the first day of every month.
 
 ## Understanding Token Usage
 AI token usage varies based on the datasource size, column count, and complexity of the query. It is not constant and can differ notably across dashboards and operations. For example, in a Sales Dashboard Analysis scenario

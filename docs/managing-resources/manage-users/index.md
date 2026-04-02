@@ -127,6 +127,27 @@ Bold BI will import the selected users in the background as a job, and a confirm
 
   ![Bulk user import job details page](/static/assets/managing-resources/manage-users/images/import-job-details-page.png#width=70%)
 
+#### Adding Custom Attributes During CSV User Import
+
+When importing the users in addition to the standard user details such as Username, Email, Display Name, and Password, administrators can now include custom attributes for each user in the CSV template.
+
+When adding attributes to the CSV template, please adhere to the following guidelines:
+
+- **Column Naming**: Attribute column names must start with the word "Attribute".
+- **Naming Convention**: After "Attribute", any combination of characters or numbers can be used (e.g., Attribute1, AttributeA, AttributeCustom).
+- **Key-Value Format**: Each attribute should follow the key=value format (e.g., role=admin, department=sales).
+ 
+> **NOTE:** A maximum of 10 custom attributes can be added for each user during import. Duplicate attributes will be added only once.
+
+**Example CSV Format with Attributes**
+
+Here is an example of how the CSV format should look when including custom attributes:
+
+| UserName | Email | DisplayName | Password | AttributeRole | AttributeDept |
+| ------ | ------ | ------ | ------ | ------ | ------ |
+| testuser@boldbi.com | testuser@boldbi.com | Test User | Test@12345| role=Admin | department=sales |
+
+
 ## Edit users
 User profile details can be edited from the user's edit page, as shown in the image below.
 

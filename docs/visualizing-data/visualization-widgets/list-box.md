@@ -152,6 +152,12 @@ You can select multiple items in the list box.
 
 ![Multiple Selection](/static/assets/visualizing-data/visualization-widgets/images/list-box/multi-selection.png)
 
+#### Enable RTL
+
+This option allows data to be displayed from right to left.
+
+![Enable RTL](/static/assets/visualizing-data/visualization-widgets/images/list-box/RTL.png)
+
 ### Filter
 
 ![Filter](/static/assets/visualizing-data/visualization-widgets/images/list-box/filter.png)
@@ -169,6 +175,10 @@ This allows you to define this list box widget to ignore responding to the filte
 Using this option, you can enable or disable the hierarchical `Top N` filtering. When the hierarchical filter option is enabled, the `Top N` will be applied for each individual column separately based on the number set for each column.
 
 When the hierarchical filter option is enabled, the `Top N` will be applied for each individual column separately based on the number set for each column.
+
+#### Show Filter
+
+This feature allows you to toggle the visibility of the `Filter` icon for the `Listbox` widget when the `Act as Master Widget` option is enabled.
 
 #### Container Appearance
 
@@ -204,7 +214,7 @@ This feature allows you to show or hide the `border` around the widget.
 
 #### Corner Radius
 
-This feature allows you to set the `radius` for the corners of the widget if the **Show Border** is enabled. The value can range from 0 to 10.
+This feature allows you to set the `radius` for the corners of the widget if the **Show Border** is enabled. The value can range from 0 to 100.
 
 #### Background Color
 
@@ -217,6 +227,12 @@ This property allows you to adjust the **transparency** of the `background color
 #### Show Shadow
 
 This feature allows you to show or hide the `shadow` around the widget.
+
+#### Mobile Height Factor
+
+This option allows you to resize widgets specifically for mobile view.
+
+![Mobile Height Factor](/static/assets/visualizing-data/visualization-widgets/images/mobile-height-factor.png)
 
 #### Container actions
 

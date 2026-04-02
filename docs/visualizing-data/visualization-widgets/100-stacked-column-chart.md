@@ -276,16 +276,6 @@ Click the `Change` button to open the `Chart Type` and `Axis Settings` dialog.
 
 ![Chart Type Secondary Axis ](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-column-chart/secondaryaxis.png)
 
-### Show Tooltip
-
-This option allows you to toggle the visibility of the tooltip in a chart.
-
-![General Settings](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-column-chart/Showtooltip.png)
-
-### Show Value in Tooltip
-
-When you hover over the chart, values will be displayed as percentages since it is a percentage type. If you enable this option, the tooltip will show the value.
-
 #### Enable Animation
 
 It animates the measure values by toggling the `Enable Animation.`
@@ -394,6 +384,42 @@ When this support is enabled, the size of the chart scroll bar thumb will be cal
 
 This option allows you to set the number of records that need to be fetched on initial load.
 
+### Tooltip Settings
+
+The Tooltip Settings section allows you to customize the appearance and behavior of tooltips in widget visualizations.
+
+![Basic Settings](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-column-chart/tooltip-settings.png)
+
+#### Show Tooltip
+
+This option allows you to toggle the visibility of the tooltip in the chart.
+
+![General Settings](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-column-chart/Showtooltip.png)
+
+### Show Value in Tooltip
+
+When you hover over the chart, values will be displayed as percentages since it is a percentage type. If you enable this option, the tooltip will show the value.
+
+![General Settings](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-column-chart/tooltip-value.png)
+
+#### Customize Tooltip
+
+This option allows you to customize which columns are visible in the chart's tooltip.
+
+![General Settings](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-column-chart/customize-tooltip-settings.png)
+
+#### Enable RTL
+
+This option allows you to display fields and their data from right to left.
+
+![Tooltip RTL](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-column-chart/rtl-tooltip.png)
+
+#### Apply Legend Color
+
+This option allows you to display tooltip text and value colors that correspond with the legend colors.
+
+![Tooltip RTL](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-column-chart/legend-tooltip.png)
+
 ## Legend Settings
 
 ![Legend settings](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-column-chart/legend-settings.png)
@@ -446,6 +472,10 @@ This option will hide the legends in the chart area, resulting in increased char
 The chart legend dropdown option can be used to simplify viewing complex charts with multiple data sources. For example, if you have a chart displaying sales data for the different years, you can use the legend dropdown to deselect all other years and focus only on a specific year.
 
 ![Legend item as dropdown](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-column-chart/legend-as-dropdown.png)
+
+### Legend Alignment
+
+Legend Alignment enables you to control how the legend is positioned within its allocated space. For detailed guidance, refer to the [Legend Alignment](/visualizing-data/visualization-widgets/column-chart/#legend-alignment) section.
 
 #### Legend Shape
 
@@ -532,6 +562,12 @@ This feature enables you to customize the color of the axis title.
 This feature enables you to customize the color of the axis labels.
 
 ![label color](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-column-chart/label-color.png)
+
+#### Show Axis Border
+
+This option allows you to enable or disable the axis border of the chart.
+
+![Show axis border](/static/assets/visualizing-data/visualization-widgets/images/100-stacked-column-chart/show-axis-border.png)
 
 #### Show Category Axis
 
@@ -633,7 +669,7 @@ This allows you to dynamically set the minimum, maximum, and interval values of 
 2. Range parameter value.
 3. Data source field based parameter values.
 
-For more details about dashboard parameter, refer to the [Dashboard parameter documentation](/working-with-data-sources/dashboard-parameter/configuring-dashboard-parameters/).
+For more details about dashboard parameter, refer to the [Dashboard parameter documentation](/working-with-data-sources/dashboard-parameter/configuring-dashboard-parameter/).
 
 ### Single Parameter Value:
 
@@ -771,6 +807,10 @@ You can use this option to enable or disable hierarchical top `N` filtering. Whe
 
 When `Hierarchical Filter` option is enabled, the Top N will be applied for each individual column separately based on the number set for each column.
 
+#### Show Filter
+
+This feature allows you to toggle the visibility of the `Filter` icon for the 100% Stacked Column Chart widget when the `Act as Master Widget` option is enabled.
+
 ### Container Appearance
 
 ![Container Appearance](/static/assets/visualizing-data/visualization-widgets/images/container-appearance.png)
@@ -813,7 +853,7 @@ This feature enables you to switch the visibility of the `border` that surrounds
 
 ### Corner Radius
 
-This allows you to apply the specified `radius` to the widget corners if the **Show Border** is enabled. The value can be between 0 and 10.
+This allows you to apply the specified `radius` to the widget corners if the **Show Border** is enabled. The value can be between 0 and 100.
 
 ### Show Background Image
 
@@ -830,6 +870,12 @@ This property allows you to specify the **transparency** for the `background col
 ### Show Shadow
 
 This feature enables you to toggle the visibility of the `shadow` surrounding the widget.
+
+### Mobile Height Factor
+
+This option allows you to resize widgets specifically for mobile view.
+
+![Mobile Height Factor](/static/assets/visualizing-data/visualization-widgets/images/mobile-height-factor.png)
 
 ### Container actions
 

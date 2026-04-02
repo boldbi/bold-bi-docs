@@ -16,6 +16,8 @@ You can explore the details of visualizing widgets here,
 
 [Visualization Widgets](/visualizing-data/visualization-widgets/)
 
+[Visualization V2 Widgets](/visualizing-data/visualization-v2-widgets/)
+
 [Working with Widgets](/visualizing-data/working-with-widgets/)
 
 [Widget Capabilities](/visualizing-data/widget-capabilities/)

@@ -274,12 +274,6 @@ This allows you to set a `description` for this scatter chart widget.
 
 ![Basic Settings](/static/assets/visualizing-data/visualization-widgets/images/scatter-chart/basic-settings.png)
 
-#### Show Tooltip
-
-This option allows you to toggle the visibility of the tooltip in the chart.
-
-![General settings](/static/assets/visualizing-data/visualization-widgets/images/scatter-chart/tooltip.png)
-
 #### Show Value Labels
 
 This allows you to toggle the visibility of value labels.
@@ -293,6 +287,30 @@ This allows you to change the shape of the series to **Circle**, **Rectangle**, 
 ![Chart series shape](/static/assets/visualizing-data/visualization-widgets/images/scatter-chart/series-shape.png)
 
 **Note:** This option only enabled if Row is configured.
+
+### Tooltip Settings
+
+The Tooltip Settings section allows you to customize the appearance and behavior of tooltips in widget visualizations.
+
+![Basic Settings](/static/assets/visualizing-data/visualization-widgets/images/scatter-chart/tooltip-settings.png)
+
+#### Show Tooltip
+
+This option allows you to toggle the visibility of the tooltip in the chart.
+
+![General Settings](/static/assets/visualizing-data/visualization-widgets/images/scatter-chart/tooltip.png)
+
+#### Customize Tooltip
+
+This option allows you to customize which columns are visible in the chart's tooltip.
+
+![General Settings](/static/assets/visualizing-data/visualization-widgets/images/scatter-chart/customize-tooltip-settings.png)
+
+#### Enable RTL
+
+This option allows you to display fields and their data from right to left.
+
+![Tooltip RTL](/static/assets/visualizing-data/visualization-widgets/images/scatter-chart/rtl-tooltip.png)
 
 ### Legend Settings
 
@@ -453,7 +471,7 @@ This allows you to dynamically set the Minimum, Maximum, and Interval values of 
 2. Range parameter value.
 3. Data source field based parameter values.
 
-For more details about dashboard parameter, refer to the [Dashboard parameter documentation](/working-with-data-sources/dashboard-parameter/configuring-dashboard-parameters/).
+For more details about dashboard parameter, refer to the [Dashboard parameter documentation](/working-with-data-sources/dashboard-parameter/configuring-dashboard-parameter/).
 
 ### Single Parameter Value:
 
@@ -684,6 +702,10 @@ Using this option, you can enable or disable the hierarchical top N filtering. W
 
 When the `Hierarchical Filter option` is enabled, the Top N will be applied for each individual column separately based on the number set for each column.
 
+#### Show Filter
+
+This feature allows you to toggle the visibility of the `Filter` icon for the scatter chart widget when the `Act as Master Widget` option is enabled.
+
 ### Container Appearance
 
 This sections allows you to customize the `Container Appearance` for the scatter chart widget.
@@ -728,7 +750,7 @@ This feature allows you to toggle the visibility of the **border** surrounding t
 
 ### Corner Radius
 
-This feature allows you to apply the specified **radius** to the widget corners if **Show Border** is enabled. The value can range between 0 and 10.
+This feature allows you to apply the specified **radius** to the widget corners if **Show Border** is enabled. The value can range between 0 and 100.
 
 ### Show Background Image
 
@@ -745,6 +767,12 @@ This property allows you to specify the **transparency** for the **background co
 #### Show Shadow
 
 This property allows you to toggle the visibility of the `shadow` for the scatter chart widget.
+
+#### Mobile Height Factor
+
+This option allows you to resize widgets specifically for mobile view.
+
+![Mobile Height Factor](/static/assets/visualizing-data/visualization-widgets/images/mobile-height-factor.png)
 
 ### Container actions
 

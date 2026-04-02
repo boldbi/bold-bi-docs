@@ -1,84 +1,198 @@
-var glob = require('glob');
-var fs = require('fs');
-var path = require('path');
+const { marked } = require("marked");
+const Prism = require("prismjs");
+const loadLanguages = require("prismjs/components/index.js");
 
-var prismObj = {
-    'html': 'html',
-    'js': 'js',
-    'ts': 'typescript',
-    'css': 'css',
-    'scss': 'scss',
-    'tsx': 'tsx',
-    'jsx': 'jsx',
-    'cs': ' csharp',
-    'cshtml': 'html',
-    'json': 'json'
-}
-var tabObj = {
-    tabRegex: /{% tab [^\0]*?{% endtab %}/gm,
-    tabHeaderRegex: /({% tab ([^>]+) %}\r?\n|\r)|({% tab ([^>]+)%}\r?\n|\r)/,
-    tabItemRegex: /{% tabItem [^\0]*?{% endtabItem %}/gm,
-    tabItemContentRegex: /{% tabItem [^>]* %}((.|[\n\r])*){% endtabItem %}/,
-    tabItemHeaderRegex: /({% tabItem ([^>]+) %}\r?\n|\r)|({% tabItem ([^>]+)%}\r?\n|\r)/
+// Load Prism Languages
+loadLanguages([
+    "javascript",
+    "typescript",
+    "bash",
+    "html",
+    "css",
+    "csharp",
+    "php",
+    "java",
+    "python",
+    "ruby",
+    "powershell",
+    "json",
+    "yaml",
+    "sql",
+    "cpp",
+    "c",
+    "clike"
+]);
+
+// Language Aliases
+const LANGUAGE_ALIASES = {
+    sh: "bash",
+    shell: "bash",
+    cmd: "bash",
+    js: "javascript",
+    node: "javascript",
+    ts: "typescript",
+    py: "python",
+    rb: "ruby",
+    yml: "yaml",
+    cs: "csharp",
+    "c#": "csharp",
+    dotnet: "csharp"
 };
 
-function createTab(mdcontent) {
-    let tabContents = mdcontent.match(tabObj.tabRegex) ? mdcontent.match(tabObj.tabRegex) : [];
-    for (let i = 0; i < tabContents.length; i++) {
-        let tabHeader = tabContents[i].match(tabObj.tabHeaderRegex)[0].trim();
-        let templatePath = tabHeader.match(/demoPath="([^"]+)|demoPath= "([^"]+)/)[1];
-        let samplePath = './static/demos/' + templatePath;
-        let sourceFiles = [];
-        let filesGlob = tabHeader.match(/files="([^"]+)/)[1];
-        let filesCollection = filesGlob.split(',').map((file) => { return file.trim() }), sampleFiles = [];
-        for (let j = 0; j < filesCollection.length; j++) {
-            sampleFiles.push(samplePath + '/' + filesCollection[j]);
-        }
-        let patternString = sampleFiles.toString();
-        let globPattern = sampleFiles.length > 1 ? '{' + patternString + '}' : patternString;
-        sourceFiles = glob.sync(globPattern, {
-            nosort: true
-        });
-        mdcontent = mdcontent.replace(tabContents[i], createTabContent(tabContents[i], sourceFiles, samplePath, filesCollection));
-    }
-    return mdcontent;
+// Normalize Language
+function normalizeLanguage(lang) {
+    if (!lang) return "javascript";
+    return lang.toLowerCase().replace(/\./g, "").split(/\s+/)[0];
 }
 
-function createTabContent(innerTabContent, sourceFiles, samplePath, filesCollection) {
-    let tab = `<div class="doc-tab" data-sample="${samplePath.replace('./static/', '/') + '/'}">`;
-    let tabHeader = '<div class="e-tab-header">';
-    let tabContent = '<div class="e-content">';
-    let tabItems = {};
-    let tabItemContents = innerTabContent.match(tabObj.tabItemRegex) ? innerTabContent.match(tabObj.tabItemRegex) : [];
-    sourceFiles.forEach((file) => {
-        let fileContent = fs.readFileSync(file, 'utf8');
-        let fileExt = path.basename(file).split('.');
-        let language = fileExt[fileExt.length - 1];
-        let name = file.replace(samplePath + '/', '').trim();
-        let highlighted = '\n\n```' + prismObj[language] + '\n' + fileContent.trim() + '\n```\n\n'
-        tabItems[name] = highlighted;
-    });
-    tabItemContents.forEach((content) => {
-        let tabHeaderRegex = content.match(tabObj.tabItemHeaderRegex)[0].trim();
-        let name = tabHeaderRegex.match(/header="([^"]+)/)[1];
-        tabItems[name] = content.match(tabObj.tabItemContentRegex)[1]
-    });
+// Custom Marked Renderer for Prism Highlighting
+const customRenderer = new marked.Renderer();
 
-    let itemKeys = Object.keys(tabItems);
-    let filteredKeys = filesCollection.filter(key => {
-        if (itemKeys.indexOf(key) !== -1) {
-            return 1;
-        }
-    });
-    for (let i = 0; i < filteredKeys.length; i++) {
-        tabHeader += '<div>' + filteredKeys[i] + '</div>';
-        tabContent += '<div>' + tabItems[filteredKeys[i]] + '</div>';
+customRenderer.code = (codeBlock, language) => {
+    // Ensure codeBlock is always a string (Marked v5+)
+    if (typeof codeBlock !== "string") {
+        codeBlock = codeBlock?.text || String(codeBlock);
     }
 
-    tabHeader += '</div>';
-    tabContent += '</div>';
-    tab += tabHeader + tabContent + '</div>'
-    return tab;
+ const normalizedLang = normalizeLanguage(language);
+    const prismLang = LANGUAGE_ALIASES[normalizedLang] || normalizedLang;
+    if (!Prism.languages[prismLang]) {
+        return `<pre><code>${codeBlock}</code></pre>`;
+    }
+    const highlightedCode = Prism.highlight(codeBlock, Prism.languages[prismLang], prismLang);
+    return `
+<pre class="language-${prismLang}">
+  <code class="language-${prismLang}">
+${highlightedCode}
+  </code>
+</pre>`;
+};
+// Marked Configuration
+marked.setOptions({
+    renderer: customRenderer,
+    gfm: true,
+    headerIds: false,
+    mangle: false
+});
+// Process Markdown inside a Tab
+function processTabMarkdown(content) {
+    return marked.parse(content);
+}
+function convertSingleTabsBlock(tabsBlock, tabGroupIndex) {
+  const tabMatches = [...tabsBlock.matchAll(
+    /:::TAB\s*(?:\[\s*['"](active)['"]\s*\])?\s*\[\s*['"]([^'"\n]+)['"]\s*\]\s*(?:\[\s*['"]([^'"\n]+)['"]\s*\])?\s*\n([\s\S]*?):::ENDTAB/g
+  )];
+
+  if (!tabMatches.length) return "";
+
+  // Determine first [active] tab (fallback to first tab)
+  let defaultActiveIndex = 1;
+  for (let i = 0; i < tabMatches.length; i++) {
+    if (tabMatches[i][1] === 'active') {
+      defaultActiveIndex = i + 1; // 1-based index
+      break;
+    }
+  }
+
+  let tabHeadersHtml = "";
+  let tabContentsHtml = "";
+  let tabIndex = 0;
+
+  let initialFileName = "";
+  let groupLangForIcon = "";
+
+  // Use first tab language as icon hint
+  for (let i = 0; i < tabMatches.length; i++) {
+    const [, , langRaw] = tabMatches[i];
+    if (!groupLangForIcon) groupLangForIcon = (langRaw || "").trim().toLowerCase();
+  }
+
+  for (const match of tabMatches) {
+    tabIndex++;
+
+    const [, , langRaw, fileRaw, tabContentRaw] = match;
+    const isMarkedActive = match[1] === 'active'; // comes from ['active']
+const isActive = tabIndex === defaultActiveIndex ? "active" : "";
+const activeClass = isMarkedActive ? "active-marked" : "";
+
+    const tabId = `tab-${tabGroupIndex}-${tabIndex}`;
+    const lang = (langRaw || "").trim();
+    const fileName = (fileRaw || "").trim();
+
+    if (isActive) {
+      initialFileName = fileName || "";
+    }
+
+    // Tab header
+    tabHeadersHtml += `
+<li class="tab ${isActive}  ${activeClass}"
+    data-tab="${tabId}"
+    data-lang="${lang.toLowerCase()}"
+    data-file="${escapeHtmlAttr(fileName)}"
+    role="tab"
+    aria-selected="${isActive ? "true" : "false"}"
+    tabindex="${isActive ? "0" : "-1"}">
+  ${escapeHtml(lang)}
+</li>`.trim();
+
+    // Tab content
+    tabContentsHtml += `
+<div class="tab-content ${isActive}"
+     id="${tabId}"
+     role="tabpanel"
+     aria-hidden="${isActive ? "false" : "true"}">
+  ${processTabMarkdown((tabContentRaw || "").trim())}
+</div>`.trim();
+  }
+
+  return `
+<div class="tab-container" data-tab-group="${tabGroupIndex}">
+  <div class="tab-header">
+    <div class="tab-file-header" data-lang="${escapeHtmlAttr(groupLangForIcon)}">
+      <span class="file-icon"></span>
+      <span class="file-name">${escapeHtml(initialFileName)}</span>
+    </div>
+    <ul class="tabs" role="tablist">
+      ${tabHeadersHtml}
+    </ul>
+  </div>
+  <div class="tab-contents">
+    ${tabContentsHtml}
+  </div>
+</div>`.trim();
 }
 
-exports.createTab = createTab;
+// --- helper to escape text nodes ---
+function escapeHtml(text) {
+  return String(text)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;");
+}
+
+// --- helper to escape attribute values ---
+function escapeHtmlAttr(text) {
+  return String(text)
+    .replace(/&/g, "&amp;")
+    .replace(/"/g, "&quot;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;");
+}
+
+/**
+ * Convert all :::TABS blocks in content
+ */
+function createTab(markdownContent) {
+  if (!markdownContent.includes(":::TABS")) return markdownContent;
+
+  let tabGroupCounter = 0;
+  return markdownContent.replace(
+    /:::TABS[\s\S]*?:::ENDTABS/gm,
+    (tabsBlock) => {
+      tabGroupCounter++;
+      return convertSingleTabsBlock(tabsBlock, tabGroupCounter);
+    }
+  );
+}
+// Exports
+module.exports = { createTab };

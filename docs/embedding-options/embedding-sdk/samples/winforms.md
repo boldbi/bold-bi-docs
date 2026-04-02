@@ -12,97 +12,85 @@ A GitHub link has been provided to [get](https://github.com/boldbi/winforms-samp
 
 > **NOTE:** The best way to get started would be to read the [Getting Started](/getting-started/embedding-in-your-application/) section of the documentation first. The `Getting Started` guide provides you with enough information that you need to know before working on the sample. 
 
+## Prerequisites
+
+ * [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/)
+ * [.NET Framework 4.8](https://dotnet.microsoft.com/en-us/download/dotnet-framework)
+
 ## How to run the sample
 
- 1. Please [get](https://github.com/boldbi/winforms-sample) the Windows Forms sample.    
+1. Please [get](https://github.com/boldbi/winforms-sample) the Windows Forms sample.    
 
- 2. You need to specify the details of your embed property in the `EmbedProperties.cs` file.
-     ![Embed Properties](/static/assets/javascript/sample/images/winforms-props.png)
+2. Please ensure that you have enabled embed authentication on the `embed settings` settings page. If it is not currently enabled, please refer to the provided image or detailed [instructions](/site-administration/embed-settings/#get-embed-secret-code) to enable it.
 
-    <meta charset="utf-8"/>
-    <table>
-    <tbody>
-        <tr>
-            <td align="left">RootUrl</td>
-            <td align="left">Dashboard Server BI URL (ex: http://localhost:5000/bi/site/site1, http://demo.boldbi.com/bi/site/site1)</td>
-        </tr>
-        <tr>
-            <td align="left">SiteIdentifier</td>
-            <td align="left">For Bold BI Enterprise edition, it should be like site/site1. For Bold BI Cloud, it should be empty string.</td>
-        </tr>
-        <tr>
-            <td align="left">Environment</td>
-            <td align="left">Your Bold BI application environment. (If Cloud, you should use Cloud, if  Enterprise, you should use OnPremise)</td>
-        </tr>
-        <tr>
-            <td align="left">DashboardId</td>
-            <td align="left">Set the item id of the dashboard to embed from BI server.</td>
-        </tr>
-            <tr>
-            <td align="left">UserEmail</td>
-            <td align="left">UserEmail of the Admin in your Bold BI, which would be used to authorize the server.</td>
-        </tr>
-        <tr>
-            <td align="left">EmbedSecret</td>
-            <td align="left">You could get your EmbedSecret key from Embed tab by enabling Enable embed authentication in Administration page</td>
-        </tr>
-    </tbody>
-    </table>
+   ![Embed Settings](/static/assets/javascript/sample/images/embed-settings.png)
 
- 3. Please obtain the item ID of the dashboard from the BI server. For reference, please consult this [link](/working-with-dashboards/share-dashboards/get-dashboard-link/#get-link) and refer to the screenshot provided below. 
-    ![Get Dashboard Id](/static/assets/javascript/sample/images/get-dashboard-id.png#max-width=55%)
+3. To download the `embedConfig.json` file, please follow this [link](/site-administration/embed-settings/#get-embed-configuration-file) for reference. Additionally, you can refer to the image below for visual guidance.
 
- 4. Then, run your Windows Forms sample.
+   ![EmbedSettings image](/static/assets/javascript/sample/images/embed-settings-download.png)
+   ![EmbedConfig Properties](/static/assets/javascript/sample/images/prop-core.png)
+ 
+4. Please copy the downloaded `embedConfig.json` file and paste it into the designated [location](https://github.com/boldbi/winforms-sample/tree/master/BoldBI.Winforms) within the application. Make sure that you have placed it correctly in the application, as shown in the image.
 
- 5. The dashboard can be rendered in design mode or created with the aforementioned changes.
+   ![EmbedConfig image](/static/assets/javascript/sample/images/winforms-embed-config.png)
 
-     ```js
-     var htmlString = new StringBuilder();
-     htmlString.Append("<!DOCTYPE html><html><head><link rel='stylesheet' href='" + System.AppDomain.CurrentDomain.BaseDirectory.Replace("bin\\x64\\Debug\\", "") + "content\\chromium.css'/><script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script><script src='https://cdn.polyfill.io/v2/polyfill.min.js'></script><script type='text/javascript' src='" + System.AppDomain.CurrentDomain.BaseDirectory.Replace("bin\\x64\\Debug\\", "") + "scripts\\EmbedBiWrapper.js'></script></script><script type='text/javascript'>$(document).ready(function() {this.dashboard = BoldBI.create({ serverUrl:'" + EmbedProperties.RootUrl + EmbedProperties.SiteIdentifier + "', dashboardId:'" + EmbedProperties.DashboardId + "',embedContainerId: 'dashboard',embedType:'" + EmbedProperties.EmbedType + "',environment:'" + EmbedProperties.Environment + "',width: window.innerWidth - 20 + 'px',height: window.innerHeight - 20 + 'px',expirationTime: 100000,authorizationServer:{url: '', data:" + resultContent + "},dashboardSettings:{showExport: false,showRefresh: false,showMoreOption: false}});console.log(this.dashboard);this.dashboard.loadDashboard();});</script></head><body style='background-color: white'><div id ='viewer-section' style='background-color: white'><div id ='dashboard'></div></div></body></html>");
-     ```
+<meta charset="utf-8"/>
+<table>
+<tbody>
+<tr>
+    <td align="left">ServerUrl</td>
+    <td align="left">Dashboard Server BI URL (ex: http://localhost:5000/bi, https://demo.boldbi.com/bi)</td>
+</tr>
+<tr>
+    <td align="left">SiteIdentifier</td>
+    <td align="left">For the Bold BI Enterprise edition, it should be like site/site1. For Bold BI Cloud, it should be an empty string.</td>
+</tr>
+<tr>
+    <td align="left">UserEmail</td>
+    <td align="left">UserEmail of the Admin in your Bold BI, which would be used to get the dashboard list.</td>
+</tr>
+<tr>
+    <td align="left">EmbedSecret</td>
+    <td align="left">Get your EmbedSecret key from the Embed tab by enabling the <code>Enable embed authentication</code> in the <a href='/site-administration/embed-settings/'>Administration page</a> </td>
+</tr>
+<tr>
+    <td align="left">Environment</td>
+    <td align="left">Your Bold BI application environment. (If it is a cloud analytics server, use `BoldBI.Environment.Cloud`; if it is your server, use `BoldBI.Environment.Enterprise`)</td>
+</tr>
+<tr>
+    <td align="left">DashboardId</td>
+    <td align="left">Item ID of the dashboard to be embedded in your application.</td>
+</tr>
+<tr>
+    <td align="left">ExpirationTime</td>
+    <td align="left">Token expiration time. (In the EmbedConfig.json file, the default token expiration time is 10000 seconds)</td>
+</tr>
+</tbody>
+</table>
 
-    <meta charset="utf-8"/>
-    <table>
-    <tbody>
-    <tr>
-    <td align="left">serverUrl</td>
-    <td align="left">Dashboard Server BI URL (ex: http://localhost:5000/bi/site/site1, http://dashboard.syncfusion.com/bi/site/site1)</td>
-    </tr>
-    <tr>
-    <td align="left">dashboardId</td>
-    <td align="left">Provide the dashboard id of the dashboard you want to embed in view or edit mode. Ignore this property to create new dashboard.</td>
-    </tr>
-    <tr>
-    <td align="left">embedContainerId</td>
-    <td align="left">Container Id in which dashboard renders.It should not contain hypen.</td>
-    </tr>
-    <tr>
-    <td align="left">mode</td>
-    <td align="left">In which mode you want to render dashboard. It can either be 'View' or 'Design' mode. </td>
-    </tr>
-    <tr>
-    <td align="left">expirationTime</td>
-    <td align="left">Set the duration for the token to be alive.</td>
-    </tr>
-    <tr>
-    <td align="left">authorizationServer</td>
-    <td align="left">Url of the 'GetEmbedDetails' action in the application.</td>
-    </tr>
-    </tbody>
-    </table>
+ 5. Then, run your Windows Forms sample.
 
 ## How this sample works
 
- 1. Based on the dashboard provided in the embed properties, you will authorize the server URL by calling the `GetEmbedDetails` function. function. Learn more about the the [authorization server](/security-configuration/authorize-server/).
-    ![Get Embed Details](/static/assets/javascript/sample/images/winforms-authorize.png)
+ 1. To generate an access token, call the `GetEmbedDetails` API with the provided `embedConfig` values in `embedDetails`.
+    ![Get token Details](/static/assets/javascript/sample/images/winforms-authorize.png)
 
- 2. In the authorization mentioned above, the `SignatureUrl` has been generated using the provided `EmbedSecret key` and the embed details have been validated in Bold BI. Once the details are validated, the dashboard begins to render.
+ 2. Once the token is generated, it will be append to the htmlString and the dashboard will start to render it.
 
- 3. In the `EmbedProperties.cs`, change the dashboard Id of the respective dashboard as you wish to embed.
-    ![Set Dashboard Id](/static/assets/javascript/sample/images/winforms-dashboard.png)
+    ```js
+        var htmlString = new StringBuilder();
+        var serverUrlForJs = EmbedConfigProvider.Current.ServerUrl.TrimEnd('/') + "/" + EmbedConfigProvider.Current.SiteIdentifier;
+        var environment = EmbedConfigProvider.Current.Environment;
 
+        var cssPath = System.AppDomain.CurrentDomain.BaseDirectory.Replace("bin\\x64\\Debug\\", "") + "content\\chromium.css";
+        htmlString.Append("<!DOCTYPE html><html><head><link rel='stylesheet' href='" + cssPath + "'/><script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script><script src='https://cdn.polyfill.io/v2/polyfill.min.js'></script><script type='text/javascript' src='https://cdn.boldbi.com/embedded-sdk/latest/boldbi-embed.js'></script>");
+
+        // Use JsonConvert.ToString(accessToken) to ensure the token is properly escaped as a JS string literal
+        htmlString.Append("<script type='text/javascript'>$(document).ready(function() {this.dashboard = BoldBI.create({ serverUrl:'" + serverUrlForJs + "', dashboardId:'" + EmbedConfigProvider.Current.DashboardId + "', embedContainerId: 'dashboard', embedToken: " + JsonConvert.ToString(accessToken) + ", environment:'" + environment + "', width: window.innerWidth - 20 + 'px', height: window.innerHeight - 20 + 'px' "  + "}); this.dashboard.loadDashboard(); });</script></head><body style='background-color: white'><div id ='viewer-section' style='background-color: white'><div id ='dashboard'></div></div></body></html>");
+    ```
 
 ## Steps to create new Windows Forms application to embed dashboard
+
  1. Start Visual Studio and click on `Create a new project`.
 
  2. Choose Windows Forms Application (.NET Framework), then click `Next`.

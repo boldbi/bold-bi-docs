@@ -73,21 +73,26 @@ If the table name is provided in the Additional connection parameters text box, 
 
 3. Click **Save** to save the data source with a relevant name.
 
-## Extract mode connection 
-
-To Connect to Bold ETL from the MySQL server, switch to extract mode. Refer to [Bold ETL](/managing-resources/manage-data-sources/#advanced-category)
-1. Switch to Extract mode, and the Redirect dialog will pop up.
-  ![etl Redirect Dialog](/static/assets/working-with-datasource/data-connectors/images/SQLDataSource/etlRedirectDialog.png)
-
-2. Click on the `Redirect to Bold ETL` button to be redirected to Bold ETL, or
-3. To continue with Bold BI, click on `Continue with connector`.
-
 In this connection type, a data source is fetched from source periodically. Choose the **Extract** mode option for this connection.
 
 ![Extract Connection](/static/assets/working-with-datasource/data-connectors/images/Mysql/Mysql_Extract_Connection.png)
 
 > **NOTE:**  Initially, data will be extracted based on the Max Rows selected in order to proceed with data model creation. The remaining records, for which there is no limit, will be extracted during the next refresh.  <br /> 
- ![Max rows option](/static/assets/working-with-datasource/data-connectors/images/Mysql/maxRowOption.png#max-width=60%)	
+![Max rows option](/static/assets/working-with-datasource/data-connectors/images/Mysql/maxRowOption.png#max-width=60%)
+
+## Extract mode connection 
+
+1. Switching to Extract mode, Extract Engine will become visible.
+
+    ![Extract Engine](/static/assets/working-with-datasource/images/Extract_Engine.png)
+
+2. In Bold BI Extract, The data will be extracted in Bold BI itself.
+3. When switching to Data Hub, the data is extracted using the Data Hub. An equivalent pipeline is created, which can leverage the Data Hub’s Extract, Transform, Load (ETL) capabilities to filter or optimize the data and generate new tables.
+4. To view the equivalent pipeline created for data extraction, navigate to the Query Designer page and click on View Pipeline.
+
+    ![Refresh Setting](/static/assets/working-with-datasource/images/View_Pipeline.png)
+
+5. When the data refresh is configured for data sources that uses the Data Hub Extract Engine, the refresh will be managed within the Data Hub.
 
 ### Refresh Settings
 #### Steps to configure the data source refresh settings:
@@ -134,6 +139,54 @@ We have added support for **custom attributes and dashboard parameters** in the 
 **Dashboard Parameter**
 
 ![Dashboard Parameter](/static/assets/working-with-datasource/data-connectors/images/Mysql/Dashboardparameter.png)
+
+**Connecting to DataSource using REST API with Custom Attributes**
+
+ ### For example, we configure a MySQL DataSource using a REST API.
+
+Configuring a MySQL DataSource connection using **custom attributes** via an API involves setting up:
+
+Configure the following properties:
+
+1. Username.
+2. Password.
+3. Servername.
+4. Port.
+5. Database.
+6. Maxrows.
+7. CommandTimeout.
+8. AdvancedSettings.
+
+### Creating the Connection
+To create a connection, use the following JSON structure:
+```
+"Connection":
+{
+"Servername": "${{:DB_Server_Name}},
+"Port": "string",
+"Username": "${{:DB_User_Name}},
+"Password": "${{:DB_Password}},
+"Database": "Sample_Database",
+"Schemaname": "sample_schema",
+"Tablename": "${{:DB_Table_Name}},
+"AdvancedSettings": "string",
+"CommandTimeout": "string",
+"IsSshConnection": "false",
+"SshServerName": "string",
+"SshPort": 0,
+"SshUsername": "string",
+"SshPassword": "string",
+"Expressions" : [{
+"Name": "Expression1",
+"Expression" : "SUM(numeric expression)"
+    },
+    {
+"Name": "Expression2",
+"Expression" :  "UPPER(string expression)"
+}]
+}
+```
+To know more about [Connecting Bold BI to MySQL Data Source via REST API](/working-with-data-sources/data-connectors/mysql/#Connecting-Bold-BI-to-MySQL-Data-Source-via-REST-API)
 
 >**Note:** Refer to the [Dashboard Parameter Documentation](https://help.boldbi.com/working-with-data-sources/dashboard-parameter/) and [Custom Attributes Documentation](https://help.boldbi.com/working-with-data-sources/configuring-custom-attribute/) for more details.
 

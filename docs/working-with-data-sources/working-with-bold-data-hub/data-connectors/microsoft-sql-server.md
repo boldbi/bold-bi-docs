@@ -35,11 +35,11 @@ drivername: mssql+pyodbc
 
   ![sql Data Hub- BoldBI](/static/assets/working-with-etl/images/clickdatahub.png#max-width=100%)
 
-  2. Click `Add Project` and provide the new project's name.
+  2. Click `Add Pipeline` and provide the new pipeline's name.
   
    ![sql Data Hub- BoldBI](/static/assets/working-with-etl/images/addpipeline.png#max-width=100%)
   
-  3. Select the newly created project and add the `MSSQL` template.
+  3. Select the newly created pipeline and add the `MSSQL` template.
 
   ![sql Data Hub- BoldBI](/static/assets/working-with-etl/images/sql_addtemplate.png#max-width=100%)
   
@@ -58,6 +58,7 @@ drivername: mssql+pyodbc
 | [**Metadata**](#metadata-properties)  (Optional) |  **Replication Method:** Specify the replication method for the table(s). Options include FULL or INCREMENTAL. |
 || **Replication Key:** Specify the replication key for incremental replication. This key helps in identifying new or updated records. |
 || **Replication Value:**  Specify the replication value to start the incremental replication from a particular point. |
+|| **Primary Key:**  Column(s) that uniquely identify each record in the source table. Used to ensure data consistency during replication. |
 
   4. Update the details required in the template and Click Save, choose the desired destination to save the pipeline.
 
@@ -96,14 +97,14 @@ In the metadata section, define the mode of data refresh. There are two modes: `
 
 ### INCREMENTAL
 
-This mode fetches data from the date column mentioned in the replication key from the start date as mentioned in the replication value. Once it is scheduled, the replication value is updated automatically from the imported data.
+In this configuration, data replication is handled using both the primary_key and the replication_key. The replication_key refers to a column that contains date or timestamp values, which is used to determine the point from which incremental data fetching should begin. The primary_key ensures each record is uniquely identified. During each sync, the system uses the date from the replication_key to fetch only the records that are newer than the last imported data, while the primary_key helps maintain data integrity and avoid duplication.
 
 ```yaml
 metadata:
   TableName:
     replication_method: INCREMENTAL
-    replication_key: Column name
-    replication_value: column value that data starts from
+    replication_key: <Date Column name>
+    primary_key: <Primary key column name>
 ```
 
 ### FULL_TABLE
@@ -147,11 +148,11 @@ plugins:
         TABLE1:
           replication_method: INCREMENTAL
           replication_key: last_modified_on
-          replication_value: 2023-07-19 00:00:00
+          primary_key: id
         TABLE2:
           replication_method: INCREMENTAL
           replication_key: last_modified_on
-          replication_value: 2023-07-19 00:00:00
+          primary_key: id
 ```
 
 
@@ -189,4 +190,81 @@ plugins:
           replication_value: 2023-07-19 00:00:00
           interval_type: days
           interval_value: 6
+```
+## WORKING WITH CUSTOM QUERY 
+
+1. To execute a custom SQL query during extraction, add the query field under the properties section.
+
+2. When a custom query is used, the select parameter does not extract data from the table name specified. Instead, the name provided in select is used only to create the destination table where the query result will be stored.
+
+3. Add Query under Properties and include the query. Please note that when using Query in the template, the Select parameter is used to create the table for storing the query result instead of extracting the data from the name given in it.
+![sql Data Hub- BoldBI](/static/assets/working-with-etl/images/custom_query.png#max-width=100%)
+Note: When using a custom query, data is not extracted from the table name specified. Instead, the query result is used to create and populate the table.
+
+### Example Configuration
+
+```yaml
+version: 1.0.1
+encrypt_credentials: false
+direct_target_import: false
+union_all_tables: true
+add_dbname_column: false
+direct_load_to_destination: true
+plugins:
+ extractors:
+   - name: MSSQL
+     connectorname: MSSQL
+     schemaname: dbo
+     config:
+       host: 
+       port: 1433
+       username: sa
+       database: Retail
+       password: 
+       drivername: mssql+pyodbc
+       driver: ODBC+Driver+17+for+SQL+Server
+     properties:
+       query: SELECT AVG(unit_cost) AS average_unit_cost FROM [Retail].[dbo].[Product_Details];
+     metadata: 
+     select:
+     - aggregated_table 
+```
+
+### Incremental Refresh with Custom Query
+When using the INCREMENTAL method with a custom query:
+  - Ensure the query includes the replication_key column (typically a date or timestamp).
+  - The system will apply incremental logic based on the replication_key to fetch only new or updated records.
+  - The primary_key ensures uniqueness and prevents duplication.
+
+#### Example Configuration
+
+```yaml
+version: 1.0.1
+encrypt_credentials: false
+direct_target_import: false
+union_all_tables: true
+add_dbname_column: false
+direct_load_to_destination: true
+plugins:
+  extractors:
+    - name: MSSQL
+      connectorname: MSSQL
+      schemaname: dbo
+      config:
+        host: 
+        port: 1433
+        username: sa
+        database: Retail
+        password: 
+        drivername: mssql+pyodbc
+        driver: ODBC+Driver+17+for+SQL+Server
+      properties:
+        query: SELECT id, last_modified_on, product_name FROM [Retail].[dbo].[Product_Details];
+      metadata: 
+        aggregated_table:
+          replication_method: INCREMENTAL
+          replication_key: last_modified_on
+          primary_key: id
+      select:
+        - aggregated_table
 ```

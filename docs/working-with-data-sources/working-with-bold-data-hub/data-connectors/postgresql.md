@@ -30,11 +30,11 @@ drivername: postgresql+pg8000
 
   ![PostgreSQL Data Hub- BoldBI](/static/assets/working-with-etl/images/clickdatahub.png#max-width=100%)
 
-  2. Click `Add Project` and provide the new project's name.
+  2. Click `Add Pipeline` and provide the new pipeline's name.
   
    ![PostgreSQL Data Hub- BoldBI](/static/assets/working-with-etl/images/addpipeline.png#max-width=100%)
   
-  3. Select the newly created project and add the `PostgreSQL` template.
+  3. Select the newly created pipeline and add the `PostgreSQL` template.
 
   ![PostgreSQL Data Hub- BoldBI](/static/assets/working-with-etl/images/postgres_yaml.png#max-width=100%)
   
@@ -113,7 +113,7 @@ metadata:
     replication_method: FULL_TABLE
     replication_key: Column name
     replication_value: column value that data starts from
-    interval_type: days/hours/minutes/year/month
+    interval_type: days/hours/minutes/years/months
     interval_value: integer value to add in the interval type
 
 ```

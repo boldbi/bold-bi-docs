@@ -102,3 +102,15 @@ function changeUrl() {
         $(this).text(text.replace('v5.O', 'v5.0'));
     });
 };
+
+document.addEventListener('DOMContentLoaded', function () {
+  sitevisitorLoad();
+});
+
+function sitevisitorLoad() {
+  const script = document.createElement("script");
+  script.src = "/js/sitevisitor-tracking.js";
+  script.defer = true;
+  script.async = true;
+  document.body.appendChild(script);
+}

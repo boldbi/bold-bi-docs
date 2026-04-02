@@ -215,3 +215,39 @@ documentation: ug
         </td>
     </tr>
 </table>
+
+### PERCENTILE_CONT
+
+<table>
+    <tr>
+        <td><b>Syntax</b></td>
+        <td>PERCENTILE_CONT(percentile, numeric_column)</td>
+    </tr>
+    <tr>
+        <td><b>Description</b></td>
+        <td>Computes exact values at one or more specified percentiles (quantiles) of a numeric dataset using continuous distribution. This is useful for statistical analysis such as finding the median, quartiles, or custom percentiles. Currently supported only with the Postgres Connector.</td>
+    </tr>
+    <tr>
+        <td><b>Example</b></td>
+        <td>PERCENTILE_CONT(0.8, [UnitPrice])
+        </td>
+    </tr>
+</table>
+
+
+### MODE
+
+<table>
+    <tr>
+        <td><b>Syntax</b></td>
+        <td>MODE(expression)</td>
+    </tr>
+    <tr>
+        <td><b>Description</b></td>
+        <td>Returns the most frequently occurring (modal) value of the given expression. Null values are ignored.</td>
+    </tr>
+    <tr>
+        <td><b>Example</b></td>
+        <td>MODE([UnitPrice])</td>
+    </tr>
+</table>

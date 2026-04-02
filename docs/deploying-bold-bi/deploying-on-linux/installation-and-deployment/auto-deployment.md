@@ -64,23 +64,10 @@ This section provides instructions for deploying Bold BI in Linux without manual
       sudo yum install epel-release </br>
       sudo yum install libgdiplus</b>
       </td>
-    </tr>
-    <tr>
-      <td>
-       4.
-      </td>
-      <td>
-      Install <b>pv</b> tool by running below command. </br> </br>
-      <b>sudo apt-get install pv</b>
-      </td>
-      <td>
-      Install <b>pv</b> tool by running below command. </br> </br>
-      <b>sudo yum install pv</b>
-      </td>
     </tr> 
     <tr>
       <td>
-       5.
+       4.
       </td>
       <td>
       Install the <b>Python3</b> for ETL service by running the following command:</br> </br>
@@ -94,7 +81,7 @@ This section provides instructions for deploying Bold BI in Linux without manual
     </tr> 
     <tr>
       <td>
-      6.
+      5.
       </td>
       <td>
       Install <b>python pip</b> by running the below command:</br> </br>
@@ -107,20 +94,20 @@ This section provides instructions for deploying Bold BI in Linux without manual
     </tr> 
     <tr>
       <td>
-       7.
+       6.
       </td>
       <td>
       Install pip dependency package for ETL service by running the following command: </br> </br>
-      <b>sudo pip install duckdb===0.9.2 dlt===0.4.2 pymysql pyodbc pg8000 poetry pandas===2.0.0 "dlt[parquet]" "dlt[filesystem]"</b>
+      <b>sudo pip install duckdb===1.1.2 dlt===0.5.4 pymysql pyodbc pg8000 poetry pandas===2.2.2 "dlt[parquet]" "dlt[filesystem]"</b>
       </td>
       <td>
       Install pip dependency package for ETL service by running the following command: </br> </br>
-      <b>python3.9 -m pip install duckdb===0.9.2 dlt===0.4.2 pymysql pyodbc pg8000 poetry pandas===2.0.0 "dlt[parquet]" "dlt[filesystem]"</b>
+      <b>python3.9 -m pip install duckdb===1.1.2 dlt===0.5.4 pymysql pyodbc pg8000 poetry pandas===2.2.2 "dlt[parquet]" "dlt[filesystem]"</b>
       </td>
     </tr> 
     <tr>
       <td>
-       8.
+       7.
       </td>
       <td>
       Add an <b>openssl conf</b> path in the environment, if does not exist. </br> </br>
@@ -158,7 +145,7 @@ This section provides instructions for deploying Bold BI in Linux without manual
 5. Execute the following command to deploy Bold BI in your Linux machine:
 
     ~~~cmd
-    sudo bash install-boldbi.sh -i {new} -u {user} -h {host URL} -n {true} -license {License Key} -databasetype {databasetype} -databasehost {Database server name} -databaseport {database port} -maintaindb {default database} -databaseuser {database username} -databasepwd {database password} -databasename {database name} -email {email address} -emailpwd {Password} -mainlogo {main logo} -loginlogo {login logo} -emaillogo {email logo} -favicon {header logo} -footerlogo {footer logo} -sitename {site name} -siteidentifier {site identifier}
+    sudo bash install-boldbi.sh -i {new} -u {user} -h {host URL} -n {true} --ssl-cert {ssl certificate path} --ssl-key {ssl key path} -databasetype {databasetype} -databasehost {Database server name} -databaseport {database port} -maintaindb {default database} -databaseuser {database username} -databasepwd {database password} -databasename {database name} -email {email address} -emailpwd {Password}
     ~~~
 
 
@@ -186,7 +173,7 @@ The following variable is necessary to configure a startup application on the ba
        Yes
       </td>
       <td>
-      Installation type - Specifies whether it is a new or upgrade installation.
+      Installation type - Specify it as new.
       </td>
     </tr>
     <tr>
@@ -197,7 +184,7 @@ The following variable is necessary to configure a startup application on the ba
        Yes 
       </td>
       <td>
-        Installation type - Specifies whether it is a new or upgrade installation.
+        Specify the user or group that manages the service. Make sure this user exists on your Linux server.
       </td>
     </tr>
     <tr>
@@ -224,10 +211,32 @@ The following variable is necessary to configure a startup application on the ba
     </tr> 
     <tr>
       <td>
+       <b> ssl-cert </b>
+      </td>
+      <td>
+      Yes
+      </td>
+      <td>
+      Specify the path in which the SSL certificate is present.
+      </td>
+    </tr>
+    <tr>
+      <td>
+       <b> ssl-key </b>
+      </td>
+      <td>
+      Yes
+      </td>
+      <td>
+      Specify the path in which the SSL key is present.
+      </td>
+    </tr>
+    <tr>
+      <td>
        <b>license</b>  
       </td>
       <td>
-       Yes
+       No
       </td>
       <td>
       License key of Bold BI
@@ -362,7 +371,7 @@ The following variable is necessary to configure a startup application on the ba
        <b>footerlogo</b>
       </td>
       <td>
-       Yes
+       No
       </td>
       <td>
       If you want to upload the custom image as a logo of the site, you can use these variables. If this environment variable is not present, Bold BI will use its default logo.<br /><br /> Type : URL <br /> <br /> Example : https://cdn.boldbi.com/wp/pages/boldbi-header-menu-logo.svg <br /> <br /> Format : png, svg, jpg, jpeg <br /> <br /> <b>Note:</b> Enter the image URL for all the variables. If the value is given to any of the variables, you must consider other variables also a required field.
@@ -373,7 +382,7 @@ The following variable is necessary to configure a startup application on the ba
        <b>sitename</b> 
       </td>
       <td>
-       Yes
+       No
       </td>
       <td>
       If you want to customize the site name, enter the site name as a value. The default site name is <b> Bold BI Enterprise Dashboards</b>
@@ -384,16 +393,38 @@ The following variable is necessary to configure a startup application on the ba
        <b>siteidentifier</b> 
       </td>
       <td>
-       Yes
+       No
       </td>
       <td>
       If you want to customize the identifier name, enter the identifier name as a value. The default identifier name is <b>site1</b>
       </td>
     </tr> 
+    <tr>
+      <td>
+       <b> optionallibs </b>
+      </td>
+      <td>
+       No
+      </td>
+      <td>
+      To install the client libraries, provide the values as a comma-separated string. The client libraries used in Bold BI are "mongodb,influxdb,snowflake,mysql,oracle,google,clickhouse". You need to add the names only for the libraries, which you are consenting to use with Bold BI application.
+      </td>
+    </tr>
+    <tr>
+      <td>
+       <b> installdatahub </b>
+      </td>
+      <td>
+       No
+      </td>
+      <td>
+      By setting this value to "true," the ETL application will be installed automatically alongside Bold BI. If this parameter is not specified, a confirmation pop-up will prompt for the ETL installation. 
+      </td>
+    </tr>
     </table>
 
 Example for silent installation:
 
 ~~~cmd 
-sudo bash install-boldbi.sh -i new -u root -h http://linux.example.com -n true -license Bold_BI_license_key -databasetype postgresql -databasehost localhost -maintaindb defaultdb -databaseuser doadmin -databasepwd boldbi@123 -databasename testing -databaseport 25060 -email admin@boldbi.com -emailpwd Admin@123 -mainlogo https://cdn.boldbi.com/wp/pages/boldbi-header-menu-logo.svg -loginlogo https://cdn.boldbi.com/wp/pages/boldbi-header-menu-logo.svg -emaillogo https://cdn.boldbi.com/wp/pages/boldbi-header-menu-logo.svg -favicon https://cdn.boldbi.com/wp/pages/boldbi-header-menu-logo.svg -footerlogo https://cdn.boldbi.com/wp/pages/boldbi-header-menu-logo.svg -sitename Autodeployment -siteidentifier Branding
+sudo bash install-boldbi.sh -i new -u root -h http://linux.example.com -n true --ssl-cert /etc/ssl/domain.crt --ssl-key /etc/ssl/domain.key -databasetype postgresql -databasehost localhost -maintaindb defaultdb -databaseuser doadmin -databasepwd boldbi@123 -databasename testing -databaseport 25060 -email admin@boldbi.com -emailpwd Admin@123 
 ~~~

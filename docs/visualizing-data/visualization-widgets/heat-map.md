@@ -250,12 +250,6 @@ If we uncheck this property, the value label color property will be hidden.
 
 ![Cell settings](/static/assets/visualizing-data/visualization-widgets/images/heat-map/value-label.png)
 
-#### Show Tooltip
-
-This option allows you to toggle the visibility of tooltip in a heat map.
-
-![General settings](/static/assets/visualizing-data/visualization-widgets/images/heat-map/tooltip.png)
-
 #### Show label
 
 This allows you to toggle the visibility of value labels.
@@ -285,6 +279,30 @@ This allows you to toggle the visibility of the border surrounding the cell. The
 ![Cell border](/static/assets/visualizing-data/visualization-widgets/images/heat-map/cellborder-settings.png)
 
 ![Cell border](/static/assets/visualizing-data/visualization-widgets/images/heat-map/cellborder.png)
+
+### Tooltip Settings
+
+The Tooltip Settings section allows you to customize the appearance and behavior of tooltips in widget visualizations.
+
+![Basic Settings](/static/assets/visualizing-data/visualization-widgets/images/heat-map/tooltip-settings.png)
+
+#### Show Tooltip
+
+This option allows you to toggle the visibility of the tooltip in a heat map.
+
+![General Settings](/static/assets/visualizing-data/visualization-widgets/images/heat-map/tooltip.png)
+
+#### Customize Tooltip
+
+This option allows you to customize which columns are visible in the map's tooltip.
+
+![General Settings](/static/assets/visualizing-data/visualization-widgets/images/heat-map/customize-tooltip-settings.png)
+
+#### Enable RTL
+
+This option allows you to display fields and their data from right to left.
+
+![Tooltip RTL](/static/assets/visualizing-data/visualization-widgets/images/heat-map/rtl-tooltip.png)
 
 ### Formatting
 
@@ -348,6 +366,11 @@ This allows you to change the x-axis label color.
 
 ![Axis Label color Option](/static/assets/visualizing-data/visualization-widgets/images/heat-map/x-label-color-option.png)
 
+#### Title Color
+
+This allows you to change the x-axis title color.
+
+![Axis title](/static/assets/visualizing-data/visualization-widgets/images/heat-map/x-axis-title-color.png)
 
 #### Show axis title
 
@@ -435,6 +458,12 @@ This allows you to enable the visibility of y-axis title.
 
 ![axis title](/static/assets/visualizing-data/visualization-widgets/images/heat-map/y-axis-title.png)
 
+#### Title Color
+
+This allows you to change the y-axis title color.
+
+![Axis title](/static/assets/visualizing-data/visualization-widgets/images/heat-map/y-axis-title-color.png)
+
 #### Axis title
 
 This allows you to edit the Y-axis title for the Heatmap. It will reflect in the Y-axis title of the Heatmap.
@@ -494,6 +523,10 @@ This allows you to define the Heatmap widget to ignore responding to filter acti
 Using this option, you can enable or disable the hierarchical Top N filtering. While applying Top N filter with multiple dimension columns, the returned data can be customized based on whether the filtering needs to be done as a flat or hierarchy of added dimension columns. 
 
 When the hierarchical filter option is enabled, the Top N will be applied for each individual column separately based on the number set for each column.
+
+#### Show Filter
+
+This feature allows you to toggle the visibility of the `Filter` icon for the heatmap widget when the `Act as Master Widget` option is enabled.
 
 ## How to apply conditional formatting in Heatmap
 
@@ -635,7 +668,7 @@ This allows you to toggle the visibility of the `border` surrounding the widget.
 
 ### Corner Radius
 
-This allows you to apply the specified `radius` to the widget corners if the **Show Border** is enabled. The value can be between 0 and 10.
+This allows you to apply the specified `radius` to the widget corners if the **Show Border** is enabled. The value can be between 0 and 100.
 
 ### Show Background Image
 
@@ -652,6 +685,12 @@ This property allows you to specify the **transparency** for the `background col
 ### Show Shadow
 
 This allows you to toggle the visibility of the `shadow` surrounding the widget.
+
+### Mobile Height Factor
+
+This option allows you to resize widgets specifically for mobile view.
+
+![Mobile Height Factor](/static/assets/visualizing-data/visualization-widgets/images/mobile-height-factor.png)
 
 ### Container actions
 

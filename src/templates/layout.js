@@ -15,7 +15,6 @@ import Layout from "../components/layout";
 import * as toc from '../../left-toc.json';
 import { isNullOrUndefined } from "util";
 
-
 var setInt;
 var feedback;
 var feedBackDownResponse;
@@ -31,6 +30,215 @@ var gcseInit = true;
 if (typeof window !== 'undefined') {
   isNotIE = !Browser.isIE;
 }
+// --- Tabs runtime: header filename sync + responsive dropdown on <= 920px (in tab-header) ---
+function initDocTabsRuntime(retry = 0) {
+  if (typeof window === 'undefined' || typeof document === 'undefined') return;
+
+  function updateActiveTab(tabEl) {
+    const container = tabEl.closest('.tab-container');
+    if (!container) return;
+
+    const allTabs = container.querySelectorAll('.tab-header .tabs .tab');
+    const allPanels = container.querySelectorAll('.tab-contents .tab-content');
+    const fileNameSpan = container.querySelector('.tab-file-header .file-name');
+    const fileIcon = container.querySelector('.tab-file-header .file-icon');
+    const selectEl = container.querySelector('.tab-header .tab-dropdown-wrap select.tab-dropdown');
+
+    // Deactivate all
+    allTabs.forEach(t => {
+      t.classList.remove('active');
+      if (!container.__hasMultipleMarkedActive) {
+        t.classList.remove('active-marked');
+      }
+      t.setAttribute('aria-selected', 'false');
+      t.setAttribute('tabindex', '-1');
+    });
+    allPanels.forEach(p => {
+      p.classList.remove('active');
+      p.setAttribute('aria-hidden', 'true');
+    });
+
+    // Activate selected
+    tabEl.classList.add('active');
+    tabEl.setAttribute('aria-selected', 'true');
+    tabEl.setAttribute('tabindex', '0');
+
+    const targetId = tabEl.getAttribute('data-tab');
+    const targetPanel = container.querySelector(`#${CSS.escape(targetId)}`);
+    if (targetPanel) {
+      targetPanel.classList.add('active');
+      targetPanel.setAttribute('aria-hidden', 'false');
+    }
+
+    // Update filename from the active tab's data-file
+    const fileName = tabEl.getAttribute('data-file') || '';
+    if (fileNameSpan) fileNameSpan.textContent = fileName;
+
+    // Sync dropdown to the active tab
+    if (selectEl) {
+      const tabsArr = Array.from(allTabs);
+      const idx = tabsArr.indexOf(tabEl);
+      if (idx > -1) selectEl.value = String(idx);
+    }
+    // Update icon based on language (shell vs others)
+    const rawLang = (tabEl.getAttribute('data-lang') || '')
+      .toLowerCase()
+      .trim();
+
+    // Shell / command-line languages
+    const shellLangs = ['sh', 'shell', 'bash', 'cmd', 'powershell'];
+
+    // Decide icon
+    const iconClass = shellLangs.includes(rawLang)
+      ? 'icon-terminal'
+      : 'icon-doc';
+
+    if (fileIcon) {
+      fileIcon.className = 'file-icon ' + iconClass;
+    }
+  }
+
+  function buildDropdownInHeader(container) {
+    if (container.querySelector('.tab-header .custom-dropdown')) return;
+
+    const header = container.querySelector('.tab-header');
+    const tabs = container.querySelectorAll('.tab-header .tabs .tab');
+    if (!header || !tabs.length) return;
+
+    const wrap = document.createElement('div');
+    wrap.className = 'tab-dropdown-wrap';
+
+    const dropdown = document.createElement('div');
+    dropdown.className = 'custom-dropdown';
+
+    const selected = document.createElement('div');
+    selected.className = 'custom-dropdown-selected';
+    // Find the first active tab
+    const firstActiveTab = Array.from(tabs).find(t => t.classList.contains('active')) || tabs[0];
+    selected.textContent = firstActiveTab.textContent.trim();
+
+    const ul = document.createElement('ul');
+    ul.className = 'custom-dropdown-options';
+
+    tabs.forEach((tab, idx) => {
+      const li = document.createElement('li');
+      li.textContent = tab.textContent.trim();
+      li.dataset.index = idx;
+
+      // Set active class if tab is active
+      if (tab.classList.contains('active')) li.classList.add('active');
+
+      li.addEventListener('click', () => {
+        updateActiveTab(tab);
+        dropdown.classList.remove('open'); // close dropdown
+
+        // Remove active from all and add to the clicked one
+        ul.querySelectorAll('li').forEach(o => o.classList.remove('active'));
+        li.classList.add('active');
+
+        selected.textContent = li.textContent;
+      });
+
+      ul.appendChild(li);
+    });
+
+    selected.addEventListener('click', (e) => {
+      e.stopPropagation();
+      dropdown.classList.toggle('open'); // toggle arrow rotation
+    });
+
+    dropdown.appendChild(selected);
+    dropdown.appendChild(ul);
+    wrap.appendChild(dropdown);
+    header.appendChild(wrap);
+
+    // Close dropdown if clicked outside
+    document.addEventListener('click', () => dropdown.classList.remove('open'));
+  }
+
+  function wireTabGroup(container) {
+    if (container.__tabsWired) return;   // ✅ ADD THIS
+    container.__tabsWired = true;
+    const tabs = container.querySelectorAll('.tab-header .tabs .tab');
+    if (!tabs.length) return;
+    const markedActiveTabs = container.querySelectorAll(
+      '.tab-header .tabs .tab.active-marked'
+    );
+    container.__hasMultipleMarkedActive = markedActiveTabs.length > 1;
+
+    // Build dropdown once per group (in header)
+    buildDropdownInHeader(container);
+
+    // Track handlers for cleanup
+    const handlers = new Map();
+
+    tabs.forEach(tab => {
+      const onClick = () => updateActiveTab(tab);
+      const onKeyDown = (e) => {
+        const key = e.key;
+        const tabsArr = Array.from(tabs);
+        const idx = tabsArr.indexOf(tab);
+
+        if (key === 'ArrowRight' || key === 'ArrowLeft') {
+          e.preventDefault();
+          const nextIdx = key === 'ArrowRight'
+            ? (idx + 1) % tabsArr.length
+            : (idx - 1 + tabsArr.length) % tabsArr.length;
+          tabsArr[nextIdx].focus();
+          updateActiveTab(tabsArr[nextIdx]);
+        } else if (key === 'Home') {
+          e.preventDefault();
+          tabsArr[0].focus();
+          updateActiveTab(tabsArr[0]);
+        } else if (key === 'End') {
+          e.preventDefault();
+          tabsArr[tabsArr.length - 1].focus();
+          updateActiveTab(tabsArr[tabsArr.length - 1]);
+        } else if (key === 'Enter' || key === ' ') {
+          e.preventDefault();
+          updateActiveTab(tab);
+        }
+      };
+
+      tab.addEventListener('click', onClick);
+      tab.addEventListener('keydown', onKeyDown);
+      handlers.set(tab, { onClick, onKeyDown });
+    });
+
+    // Ensure filename & dropdown reflect the active tab initially
+    const active = container.querySelector('.tab-header .tabs .tab.active') || tabs[0];
+    if (active) updateActiveTab(active);
+
+    container.__tabHandlers = handlers;
+  }
+
+  function wireAll() {
+    document.querySelectorAll('.tab-container').forEach(wireTabGroup);
+  }
+
+  // Run now (DOM already hydrated in Gatsby when componentDidMount fires)
+  wireAll();
+
+  // Cleanup for unmount / route change
+  window.__cleanupDocTabsRuntime = function () {
+    document.querySelectorAll('.tab-container').forEach(container => {
+      const handlers = container.__tabHandlers;
+      if (handlers) {
+        handlers.forEach((h, tab) => {
+          tab.removeEventListener('click', h.onClick);
+          tab.removeEventListener('keydown', h.onKeyDown);
+        });
+        delete container.__tabHandlers;
+      }
+      // Remove any header dropdowns we added
+      const wrap = container.querySelector('.tab-header .tab-dropdown-wrap');
+      if (wrap && wrap.parentNode) wrap.parentNode.removeChild(wrap);
+      // Just in case an older build inserted content dropdowns:
+      const old = container.querySelector('.tab-contents .tab-dropdown-wrap');
+      if (old && old.parentNode) old.parentNode.removeChild(old);
+    });
+  };
+}
 
 export default class LayoutTemplate extends React.Component {
   treeData;
@@ -45,14 +253,14 @@ export default class LayoutTemplate extends React.Component {
   temp;
   leftSideBar;
   rightSideBar;
-    pathPrefix;
-    platformReference;
+  pathPrefix;
+  platformReference;
 
-    constructor() {
-        super();
-        this.platformReference = React.createRef();
+  constructor() {
+    super();
+    this.platformReference = React.createRef();
 
-    }
+  }
   componentDidMount() {
     this.treeData = toc.treeData;
     this.accordionData = toc.accData;
@@ -69,47 +277,38 @@ export default class LayoutTemplate extends React.Component {
         tocActive.classList.remove('e-toc-active');
       }
       //this.renderToc();
-      };
-      var indexpath = window.location.origin;
-      if (indexpath !== "https://help.boldbi.com") {
-          var noindex = document.createElement('meta');
-          noindex.setAttribute('name', 'robots');
-          noindex.content = 'noindex';
-          document.getElementsByTagName('head')[0].appendChild(noindex);
-      }
+    };
+    var indexpath = window.location.origin;
+    if (indexpath !== "https://help.boldbi.com") {
+      var noindex = document.createElement('meta');
+      noindex.setAttribute('name', 'robots');
+      noindex.content = 'noindex';
+      document.getElementsByTagName('head')[0].appendChild(noindex);
+    }
     let path = window.location.pathname.split('/')[1];
     this.platformReference.current.updatePlatform(path);
     this.renderToc();
     this.renderTab();
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        initDocTabsRuntime();
+      });
+    });
     createCustomSearch();
     this.expandAccordion(this.expandedNode(this.getPathName()));
     this.setNavContent();
-    this.rightTocSelect();
     this.renderBreadCrumb();
     this.selectedToc();
     this.configureHamburger();
-    this.configureRightSideBar();        
+    this.configureRightSideBar();
     this.configureMobileSearch();
-    function faqAddLeftMenu() {
-      var newLink = Object.assign(document.createElement('a'), { 
-          href: "https://support.boldbi.com/kb/category/41",
-          target: "_blank", 
-          textContent: "FAQ",
-          className:"faq-link-section"
-      });
-  
-      document.getElementById('doc-left-toc').appendChild(newLink);
-    }
-    faqAddLeftMenu();
-    if (window.location.href.includes("/faq/")) {
-      window.location.href = "https://support.boldbi.com/kb/category/41";
-    }
-    var faq_link = document.querySelector('a.faq-link-section');
-    faq_link.onclick = function (){
-        faq_link.href = faq_link.href.split('?')[0];
-    }
+    helpBotChat();
+    sitevisitorLoad();
+    // boldDeskLiveChat();
+    tabClick();
     zoomOptionForImages();
     copyToClipboard();
+    rightSideBarFunctionality();
     select('.doc-toc-search-icon').addEventListener('click', () => {
       let leftTocSearch = select('#auto-complete');
       if (leftTocSearch && leftTocSearch.value && leftTocSearch.ej2_instances) {
@@ -135,7 +334,10 @@ export default class LayoutTemplate extends React.Component {
     setTimeout(() => {
       this.ScrollToc();
       if (window.location.hash) {
-        select(window.location.hash).click();
+        const targetElement = select(window.location.hash);
+        if (targetElement) {
+          targetElement.click();
+        }
       }
       this.removeOverlay();
       this.dispatchResizeEvent();
@@ -187,11 +389,11 @@ export default class LayoutTemplate extends React.Component {
     this.navToPath(args.nodeData.id);
   }
 
-    navToPath(navPath) {
-        if (navPath.split('#').length > 1) {
-            let headerPath = navPath.split('#')[1].replace('/', '');
-            document.body.setAttribute('headerPathReference', '#' + headerPath)
-        }
+  navToPath(navPath) {
+    if (navPath.split('#').length > 1) {
+      let headerPath = navPath.split('#')[1].replace('/', '');
+      document.body.setAttribute('headerPathReference', '#' + headerPath)
+    }
     if (this.routerData[navPath].isDemo) {
       window.open(`${this.pathPrefix + navPath}`, '_blank')
     } else {
@@ -255,9 +457,9 @@ export default class LayoutTemplate extends React.Component {
     let breadCrumbData = this.routerData[this.getPathName()];
     let firstTitle = breadCrumbData.title[0];
     let secondTitle = breadCrumbData.title[1];
-      let breadCrumbElem = document.getElementById('doc-bread-crumb');
-      let nextIconHtml = '<span style="padding:0 5px"> ></span> ';
-      let breadCrumInnerHtml = `${secondTitle ? `<a class="doc-bread-nav" href="${this.pathPrefix ? `${this.pathPrefix}>` : '/'}${this.indexPageMapper[firstTitle]}/">${firstTitle}</a> ${nextIconHtml}${secondTitle}` : firstTitle}`;
+    let breadCrumbElem = document.getElementById('doc-bread-crumb');
+    let nextIconHtml = '<span style="padding:0 5px"> ></span> ';
+    let breadCrumInnerHtml = `${secondTitle ? `<a class="doc-bread-nav" href="${this.pathPrefix ? `${this.pathPrefix}>` : '/'}${this.indexPageMapper[firstTitle]}/">${firstTitle}</a> ${nextIconHtml}${secondTitle}` : firstTitle}`;
     breadCrumbElem.innerHTML = breadCrumInnerHtml;
   }
 
@@ -274,35 +476,33 @@ export default class LayoutTemplate extends React.Component {
   }
 
   accClick(e) {
-      let accordionItem = closest(e.originalEvent.srcElement, '.e-acrdn-item')
-      let isCommon = accordionItem && accordionItem.classList.contains('e-select') ? false : true;
-      let path = accordionItem ? accordionItem.querySelector('.acc-path').getAttribute("data") : "";
-      let hrefPath = document.body.getAttribute('headerPathReference');
-      let tocnodes = document.getElementById('toc');
-      if (!isNullOrUndefined(hrefPath)) {
-          window.location.href = window.location.href.split('#')[0] + hrefPath;
-          document.body.removeAttribute('headerPathReference');
-      }
-      if(!isNullOrUndefined(document.querySelector('.e-toc-active'))) {
-        this.selectedToc(); 
-        if((!isNullOrUndefined(tocnodes.querySelector("[data='" + e.originalEvent.srcElement.getAttribute("data") + "']")))||(isNullOrUndefined(e.originalEvent.srcElement.getAttribute("data"))&&isNullOrUndefined(tocnodes.querySelector("[data-uid='" + e.originalEvent.srcElement.getAttribute("data") + "']"))&&!e.originalEvent.srcElement.classList.contains("e-fullrow")&&!e.originalEvent.srcElement.classList.contains('interaction')))
-       {
+    let accordionItem = closest(e.originalEvent.srcElement, '.e-acrdn-item')
+    let isCommon = accordionItem && accordionItem.classList.contains('e-select') ? false : true;
+    let path = accordionItem ? accordionItem.querySelector('.acc-path').getAttribute("data") : "";
+    let hrefPath = document.body.getAttribute('headerPathReference');
+    let tocnodes = document.getElementById('toc');
+    if (!isNullOrUndefined(hrefPath)) {
+      window.location.href = window.location.href.split('#')[0] + hrefPath;
+      document.body.removeAttribute('headerPathReference');
+    }
+    if (!isNullOrUndefined(document.querySelector('.e-toc-active'))) {
+      this.selectedToc();
+      if ((!isNullOrUndefined(tocnodes.querySelector("[data='" + e.originalEvent.srcElement.getAttribute("data") + "']"))) || (isNullOrUndefined(e.originalEvent.srcElement.getAttribute("data")) && isNullOrUndefined(tocnodes.querySelector("[data-uid='" + e.originalEvent.srcElement.getAttribute("data") + "']")) && !e.originalEvent.srcElement.classList.contains("e-fullrow") && !e.originalEvent.srcElement.classList.contains('interaction'))) {
         this.navToPath(path);
-        }  
-              
-      }     
-      if (isCommon) {
+      }
+
+    }
+    if (isCommon) {
       this.navToPath(path);
     }
   }
 
-    selectedToc() {
-      
+  selectedToc() {
+
     let path = this.getPathName();
-    
-    if(window.location.hash !== "")
-    {
-      path = path + window.location.hash + '/'; 
+
+    if (window.location.hash !== "") {
+      path = path + window.location.hash + '/';
     }
     let toc = document.getElementById('toc');
     let selectTree = toc.querySelector(`[data-uid='${path}']`);
@@ -310,22 +510,22 @@ export default class LayoutTemplate extends React.Component {
     if (selectAcrdn) {
       closest(selectAcrdn, '.e-acrdn-item').classList.add('e-toc-active');
       //if((!isNullOrUndefined(tocnodes.querySelector("[data='" + e.originalEvent.srcElement.getAttribute("data") + "']")))||(isNullOrUndefined(e.originalEvent.srcElement.getAttribute("data"))&&isNullOrUndefined(tocnodes.querySelector("[data-uid='" + e.originalEvent.srcElement.getAttribute("data") + "']"))&&!e.originalEvent.srcElement.classList.contains("e-fullrow")&&!e.originalEvent.srcElement.classList.contains('interaction')))
-       // {
-           this.navToPath(path);
-       // }     
+      // {
+      this.navToPath(path);
+      // }     
     } else if (selectTree) {
       let previousSelection = toc.querySelectorAll('.e-toc-active');
-      for(var element of previousSelection) {
+      for (var element of previousSelection) {
         element.classList.remove('e-toc-active')
-     }
+      }
       selectTree.classList.add('e-toc-active');
       selectTree.querySelector('.e-fullrow').classList.add('e-toc-active');
       selectTree.querySelector('.e-text-content').classList.add('e-toc-active')
     }
   }
 
-    renderToc() {
-      this.accordionInstance = new Accordion({
+  renderToc() {
+    this.accordionInstance = new Accordion({
       expandMode: 'Single',
       expanding: this.expand.bind(this),
       clicked: this.accClick.bind(this),
@@ -517,47 +717,9 @@ export default class LayoutTemplate extends React.Component {
     this.rightSideBar.hide();
   }
 
-  rightTocSelect() {
-    var rightToc = document.getElementById('doc-right-toc');
-    if (!rightToc) {
-      return;
-    }
-    var activeElem = rightToc.querySelector('.active');
-    if (rightToc) {
-      var ele = rightToc.querySelector(`[href="#${window.location.href.split('#')[1]}"]`);
-      if (ele) {
-        if (activeElem) {
-          activeElem.classList.remove('active');
-        }
-        ele.parentElement.classList.add('active');
-      }
-    }
-  }
-
   searchSelect(e) {
     if (e.item && e.item.id) {
       this.navToPath(e.item.id);
-    }
-  }
-
-  rightTocHighlight() {
-    if (document.getElementById('doc-right-toc')) {
-      var mdContent = document.getElementById('md-content');
-      var rightToc = document.getElementById('doc-right-toc');
-      var selctedElem = rightToc.querySelector('.select');
-      var headers = mdContent.querySelectorAll('h2,h3,h4,h5,h6');
-      for (var hEle of headers) {
-        if (this.checkVisibilty(hEle, mdContent)) {
-          var headEle = rightToc.querySelector(`[href='#${hEle.id}']`);
-          if (headEle) {
-            if (selctedElem) {
-              selctedElem.classList.remove('select');
-            }
-            headEle.parentNode.classList.add('select');
-          }
-          return;
-        }
-      }
     }
   }
 
@@ -720,40 +882,40 @@ export default class LayoutTemplate extends React.Component {
   render() {
     const { header } = this.props.pageContext;
     const postNode = this.props.data.postBySlug;
-	const canonicalUrl = postNode.frontmatter.canonical ? 'https://help.boldbi.com' + postNode.frontmatter.canonical : '';
+    const canonicalUrl = postNode.frontmatter.canonical ? 'https://help.boldbi.com' + postNode.frontmatter.canonical : '';
     var mdContentClass = "e-view";
     if (!header) {
       mdContentClass += " doc-no-right-toc";
     }
     const currentYear = new Date().getFullYear();
-      var metaRobot = { name: 'robots', content: 'follow' }
+    var metaRobot = { name: 'robots', content: 'follow' }
     return (
       <Layout>
         <div>
-            <Helmet>
-                    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SRXJZD7EME" integrity="sha384-zoB94gWmcep4wNjStSM5oNZXD6a6SnYtULN4SMsPpzCg5WPVK5N/ij/lqe2iiQ1q" crossorigin="anonymous" ></script>
-                    <script>
-                        {`
+          <Helmet>
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-SRXJZD7EME"></script>
+            <script>
+              {`
                         window.dataLayer = window.dataLayer || [];
                         function gtag(){dataLayer.push(arguments); }
                         gtag('js', new Date());
                         gtag('config', 'G-SRXJZD7EME');
                        `}
-                    </script>
+            </script>
             <title>{postNode.frontmatter.title}</title>
-			 {postNode.frontmatter.canonical ?
-             <link rel="canonical" key={canonicalUrl} href={canonicalUrl} data-react-helmet="true" />
-             : []}
+            {postNode.frontmatter.canonical ?
+              <link rel="canonical" key={canonicalUrl} href={canonicalUrl} data-react-helmet="true" />
+              : []}
             <meta name="description" content={postNode.frontmatter.description} />
             <meta name="keywords" content={postNode.frontmatter.keywords} />
             <meta name={metaRobot.name} content={metaRobot.content} />
-                                        
-            </Helmet>
+
+          </Helmet>
           <div id="doc-body" className={"e-view"}>
             <div hidden id="reports-analytics" data-queue={`Bold BI - Documentation`}></div>
-                    <HeaderContainer className="e-view">
-                        <SiteHeader ref={this.platformReference} />
-                    </HeaderContainer>
+            <HeaderContainer className="e-view">
+              <SiteHeader ref={this.platformReference} />
+            </HeaderContainer>
             <div id="doc-body-container" className="e-view">
               <SidebarComponent id="doc-left-sidebar" enableGestures={false} width="265px" type="Over" target="#doc-body-container" ref={Sidebar => this.leftSideBar = Sidebar}>
                 <LeftPane id="doc-left-pane" className="e-view">
@@ -779,7 +941,7 @@ export default class LayoutTemplate extends React.Component {
                 </div>
                 <div id="doc-mobile-content-search" className="doc-hide e-view"></div>
                 <div className="doc-body-content">
-                  <div id="md-content" className="e-view" onScroll={this.rightTocHighlight.bind(this)}>
+                  <div id="md-content" className="e-view">
                     <div id="md-cnt" dangerouslySetInnerHTML={{ __html: postNode.html }} />
                     {/*isNotIE ?
                       <div id="footer-feedback">
@@ -944,7 +1106,7 @@ function createCustomSearch() {
       callback: gcseCallback
     };
     (function () {
-        var cx = '182ea3577790a69c1';
+      var cx = '182ea3577790a69c1';
       var gcse = document.createElement('script');
       gcse.type = 'text/javascript';
       gcse.async = true;
@@ -961,11 +1123,11 @@ function createCustomSearch() {
 
 function zoomOptionForImages() {
   var imageZoom = '<div id="zoom-image-container">' +
-                    '<div id="zoom-image-center">' +
-                        '<span id="zoom-image-close">&#10006;</span>' +
-                        '<img id="zoom-image">' +
-                    '</div>'
-                  '</div>';
+    '<div id="zoom-image-center">' +
+    '<span id="zoom-image-close">&#10006;</span>' +
+    '<img id="zoom-image">' +
+    '</div>'
+  '</div>';
   document.body.insertAdjacentHTML('beforeend', imageZoom);
 
   var getImage = document.querySelectorAll("#doc-body-cont img");
@@ -974,43 +1136,286 @@ function zoomOptionForImages() {
   var zoomImageClose = document.getElementById("zoom-image-close");
 
   Array.from(getImage).forEach(getImage => {
-      getImage.onclick = function () {
-          zoomImageContainer.style.display = "block";
-          zoomImage.src = this.src;
-      }
+    getImage.onclick = function () {
+      zoomImageContainer.style.display = "block";
+      zoomImage.src = this.src;
+    }
   });
 
   zoomImageClose.onclick = function () {
-      zoomImageContainer.style.display = "none";
+    zoomImageContainer.style.display = "none";
   }
 }
 
 function copyToClipboard() {
   const copyButton = '<div class="copy-button">' +
-                        '<span class="copy-button-tooltip">Copy</span>' +
-                        '<svg class="copy-button-icon" xmlns="http://www.w3.org/2000/svg" fill="#000" width="24" height="27" viewBox="0 0 27 27"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M17.875 5.844l3.281 3.406c0.313 0.344 0.594 1.063 0.594 1.531v10.094c0 0.469-0.375 0.906-0.875 0.906h-5.844v-1.531h4.906c0.156 0 0.281-0.125 0.281-0.281v-8.5c0-0.156-0.125-0.281-0.281-0.281h-3.625c-0.156 0-0.313-0.125-0.313-0.281v-3.875c0-0.156-0.125-0.281-0.281-0.281h-5.938c-0.156 0-0.313 0.125-0.313 0.281v2.156c-0.313-0.125-0.719-0.188-1.031-0.188h-0.469v-2.906c0-0.5 0.406-0.875 0.875-0.875h7.563c0.469 0 1.156 0.281 1.469 0.625zM17.813 9.656h1.313c0.156 0 0.188-0.094 0.094-0.219l-1.5-1.531c-0.094-0.125-0.188-0.094-0.188 0.063v1.406c0 0.156 0.125 0.281 0.281 0.281zM9.938 10.844l3.25 3.438c0.344 0.344 0.594 1.031 0.594 1.5v10.094c0 0.5-0.375 0.906-0.844 0.906h-12.031c-0.5 0-0.906-0.406-0.906-0.906v-14.781c0-0.469 0.406-0.906 0.906-0.906h7.531c0.469 0 1.156 0.313 1.5 0.656zM1.813 25.25h10.156c0.156 0 0.313-0.125 0.313-0.281v-8.5c0-0.156-0.156-0.281-0.313-0.281h-3.625c-0.156 0-0.281-0.125-0.281-0.281v-3.875c0-0.156-0.125-0.281-0.281-0.281h-5.969c-0.156 0-0.281 0.125-0.281 0.281v12.938c0 0.156 0.125 0.281 0.281 0.281zM11.25 14.469l-1.469-1.594c-0.125-0.125-0.219-0.031-0.219 0.125v1.375c0 0.156 0.156 0.281 0.313 0.281h1.281c0.156 0 0.219-0.094 0.094-0.188z"></path></svg>' +
-                      '</div>';
+    '<span class="copy-button-tooltip">Copy</span>' +
+    '<svg class="copy-button-icon" xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none">' +
+    '<path d="M16 12.9V17.1C16 20.6 14.6 22 11.1 22H6.9C3.4 22 2 20.6 2 17.1V12.9C2 9.4 3.4 8 6.9 8H11.1C14.6 8 16 9.4 16 12.9Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>' +
+    '<path opacity="0.4" d="M22 6.9V11.1C22 14.6 20.6 16 17.1 16H16V12.9C16 9.4 14.6 8 11.1 8H8V6.9C8 3.4 9.4 2 12.9 2H17.1C20.6 2 22 3.4 22 6.9Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>' +
+    '</svg>' +
+
+    '<svg class="copy-button-icon success" width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">' +
+    '<path opacity="0.4" d="M22 11.1V6.9C22 3.4 20.6 2 17.1 2H12.9C9.4 2 8 3.4 8 6.9V8H11.1C14.6 8 16 9.4 16 12.9V16H17.1C20.6 16 22 14.6 22 11.1Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>' +
+    '<path d="M16 17.1V12.9C16 9.4 14.6 8 11.1 8H6.9C3.4 8 2 9.4 2 12.9V17.1C2 20.6 3.4 22 6.9 22H11.1C14.6 22 16 20.6 16 17.1Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>' +
+    '<path d="M6.08008 14.9998L8.03008 16.9498L11.9201 13.0498" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>' +
+    '</svg>' +
+    '</div>';
+
   document.querySelectorAll("pre").forEach((pre) => {
-      pre.insertAdjacentHTML("beforebegin", copyButton);
+    pre.insertAdjacentHTML("beforebegin", copyButton);
   });
-
-  document.querySelectorAll(".copy-button").forEach((button) => {
-      button.addEventListener("click", function() {
-          const pre = this.nextElementSibling;
-          const text = pre.innerText;
-          const tooltip = this.querySelector(".copy-button-tooltip");
-
-          navigator.clipboard.writeText(text).then(() => {
-              tooltip.innerText = "Copied!";
-              setTimeout(() => {
-                  tooltip.innerText = "Copy";
-              }, 5000);
-          }).catch((err) => {
-              console.error("Failed to copy: ", err);
-          });
-      });
+  document.addEventListener("click", (event) => {
+    const copyButton = event.target.closest(".copy-button");
+    if (!copyButton || copyButton.dataset.locked) return;
+    const codeContainer = copyButton.nextElementSibling;
+    if (!codeContainer) return;
+    copyButton.dataset.locked = "true";
+    const textToCopy = codeContainer.innerText;
+    const tooltip = copyButton.querySelector(".copy-button-tooltip");
+    const successIcon = copyButton.querySelector(".copy-button-icon.success");
+    const defaultIcon = copyButton.querySelector(".copy-button-icon:not(.success)");
+    navigator.clipboard.writeText(textToCopy).then(() => {
+      if (defaultIcon) defaultIcon.style.display = "none";
+      if (successIcon) successIcon.style.display = "inline-block";
+      if (tooltip) tooltip.textContent = "Copied!";
+    }).finally(() => {
+      setTimeout(() => {
+        if (defaultIcon) defaultIcon.style.display = "";
+        if (successIcon) successIcon.style.display = "none";
+        if (tooltip) tooltip.textContent = "Copy";
+        delete copyButton.dataset.locked;
+      }, 2000);
+    });
   });
 }
+
+function helpBotChat() {
+  const helpbot = '<div class="helpbot-chat-container">' +
+    '<button type="button" class="helpbot-chat-button">' +
+    '<img src="https://cdn.syncfusion.com/helpbot/staging/images/ai_start_new_page.svg" alt="helpbot icon" class="helpbot-chat-icon">' +
+    '<p class="helpbot-chat-content">Bold BI HelpBot</p>' +
+    '</button>' +
+    '</div>';
+
+  document.body.insertAdjacentHTML('beforeend', helpbot);
+  document.querySelectorAll(".helpbot-chat-button").forEach(function (button) {
+    button.addEventListener("click", function () {
+      window.open("https://helpbot.boldbi.com/", "_blank");
+    });
+  });
+}
+
+function tabClick() {
+  document.querySelectorAll(".tab-container").forEach(container => {
+    const tabs = container.querySelectorAll(".tab");
+    const contents = container.querySelectorAll(".tab-content");
+    tabs.forEach(tab => {
+      tab.addEventListener("click", () => {
+        // Remove active from all tabs
+        tabs.forEach(t => t.classList.remove("active"));
+        contents.forEach(c => c.classList.remove("active"));
+        // Activate clicked tab
+        tab.classList.add("active");
+        const contentId = tab.getAttribute("data-tab");
+        const content = container.querySelector("#" + contentId);
+        if (content) content.classList.add("active");
+      });
+    });
+  });
+}
+
+function boldDeskLiveChat() {
+  if (window.__boldDeskLoaded || document.getElementById('boldchat-widget')) return;
+  const script = document.createElement("script");
+  script.src = "https://support.boldbi.com/chatwidget-api/widget/v1/240f11f3-ccc2-4755-8fc5-5a7fa9bc9b1e";
+  script.defer = true;
+  script.async = true;
+
+  document.body.appendChild(script);
+  window.__boldDeskLoaded = true;
+}
+
+function sitevisitorLoad() {
+  if (!window.__sitevisitorLoad) {
+    const script = document.createElement("script");
+    script.src = "/js/sitevisitor-tracking.js";
+    script.defer = true;
+    script.async = true;
+    document.body.appendChild(script);
+    window.__sitevisitorLoad = true;
+  } else {
+    setlocalstorage();
+    append_query_string();
+    storageExpriedate();
+    append_query_string_access_demo_link();
+    append_request_demo_form_lead_details();
+  }
+}
+
+function rightSideBarFunctionality() {
+
+  document.querySelectorAll('h2, h3, h4').forEach(h => {
+    if (h.id) {
+      // Convert the ID: lowercase, replace spaces and special characters with '-'
+      const newId = h.id
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, '-') // everything except letters/numbers → '-'
+        .replace(/^-+|-+$/g, '');   // remove leading/trailing '-'
+      h.id = newId;
+    }
+  });
+
+  const toc = document.getElementById('doc-right-toc');
+  if (!toc) return;
+
+  const anchors = toc.querySelectorAll('.doc-anchor-h2, .doc-anchor-h3, .doc-anchor-h4');
+
+  // === 1️⃣ INITIAL SETUP ===
+  anchors.forEach(anchor => {
+    const subUl = anchor.querySelector('ul');
+    if (subUl) subUl.style.display = 'none'; // hide all sub-levels initially
+  });
+
+  // === 2️⃣ TOGGLE FUNCTIONALITY ===
+  anchors.forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.stopPropagation();
+
+      const subUl = anchor.querySelector('ul');
+      const level = getLevel(anchor);
+
+      if (level === 2) {
+        // Toggle H3s
+        anchors.forEach(a => {
+          if (a !== anchor && getLevel(a) === 2) {
+            const ul = a.querySelector('ul');
+            if (ul) ul.style.display = 'none';
+          }
+        });
+        if (subUl) subUl.style.display = subUl.style.display === 'none' ? '' : 'none';
+      } else if (level === 3) {
+        // Toggle H4s
+        anchors.forEach(a => {
+          if (a !== anchor && getLevel(a) === 3) {
+            const ul = a.querySelector('ul');
+            if (ul) ul.style.display = 'none';
+          }
+        });
+        if (subUl) subUl.style.display = subUl.style.display === 'none' ? '' : 'none';
+      } else if (level === 4) {
+        // H4 click — keep everything open
+        showBranch(anchor);
+      }
+    });
+  });
+
+  // === 3️⃣ SCROLL-ACTIVE HIGHLIGHTING ===
+  const container = document.getElementById('md-content');
+  if (!container) return;
+
+  // Prepare headings with positions relative to container
+  const headings = Array.from(container.querySelectorAll('h2, h3, h4'))
+    .filter(h => h.id)
+    .map(h => ({
+      el: h,
+      id: h.id,
+      level: h.tagName.toLowerCase() === 'h2' ? 2 :
+        h.tagName.toLowerCase() === 'h3' ? 3 : 4
+    }));
+
+  const topOffset = 30; // height of sticky header
+
+  function onScroll() {
+    const scrollY = container.scrollTop + topOffset;
+
+    let active = null;
+    for (let i = headings.length - 1; i >= 0; i--) {
+      const headingTop = headings[i].el.offsetTop;
+      if (scrollY >= headingTop) {
+        active = headings[i];
+        break;
+      }
+    }
+
+    anchors.forEach(a => {
+      a.classList.remove('active');
+      const ul = a.querySelector('ul');
+      if (ul) ul.style.display = 'none';
+    });
+
+    if (!active) return;
+
+    const activeLink = toc.querySelector(`a[href="#${CSS.escape(active.id)}"]`);
+    if (!activeLink) return;
+
+    const li = activeLink.closest('li');
+    if (!li) return;
+
+    li.classList.add('active');
+
+    if (active.level === 2) {
+      const subUl = li.querySelector('ul');
+      if (subUl) subUl.style.display = '';
+    }
+
+    if (active.level === 3) {
+      const parentH2 = li.closest('.doc-anchor-h2');
+      if (parentH2) {
+        parentH2.classList.add('active');
+        const ul = parentH2.querySelector('ul');
+        if (ul) ul.style.display = '';
+      }
+      const subUl = li.querySelector('ul');
+      if (subUl) subUl.style.display = '';
+    }
+
+    if (active.level === 4) {
+      const parentH3 = li.closest('.doc-anchor-h3');
+      if (parentH3) {
+        parentH3.classList.add('active');
+        const ul = parentH3.querySelector('ul');
+        if (ul) ul.style.display = '';
+      }
+      const parentH2 = li.closest('.doc-anchor-h2');
+      if (parentH2) {
+        parentH2.classList.add('active');
+        const ul = parentH2.querySelector('ul');
+        if (ul) ul.style.display = '';
+      }
+    }
+  }
+
+  // Initialize
+  onScroll();
+
+  // Listen to scroll of the container
+  container.addEventListener('scroll', onScroll);
+
+  // Recalculate heading positions on resize
+  window.addEventListener('resize', () => {
+    headings.forEach(h => h.top = h.el.offsetTop);
+    onScroll();
+  });
+
+  // === 4️⃣ HELPER FUNCTIONS ===
+  function getLevel(el) {
+    if (el.classList.contains('doc-anchor-h2')) return 2;
+    if (el.classList.contains('doc-anchor-h3')) return 3;
+    if (el.classList.contains('doc-anchor-h4')) return 4;
+    return 0;
+  }
+
+  function showBranch(el) {
+    let parent = el.parentElement;
+    while (parent && parent !== toc) {
+      if (parent.tagName.toLowerCase() === 'ul') parent.style.display = '';
+      parent = parent.parentElement;
+    }
+  }
+
+}
+
 
 const RightToc = styled.div`
 `

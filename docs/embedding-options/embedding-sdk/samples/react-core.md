@@ -14,11 +14,11 @@ A GitHub link has been provided to [get](https://github.com/boldbi/react-with-as
 
 ## Prerequisites
 
- * [.NET Core 6.0 or later](https://dotnet.microsoft.com/en-us/download/dotnet-core)
+ * [.NET Core 8.0](https://dotnet.microsoft.com/en-us/download/dotnet-core)
  * [Node.js](https://nodejs.org/en/)
  * [Visual Studio Code](https://code.visualstudio.com/download)
 
-> **NOTE:** Node.js versions 14.16 to 18.18 are supported.
+> **NOTE:** Node.js versions 18.18 to 20.15 are supported.
 
 ## How to run the sample
 
@@ -75,50 +75,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/react-with-as
 
 6. Execute the command `dotnet restore` to restore the necessary packages. Once the packages have been restored, use the `dotnet build` command to build the project.
 
-6. Run your React with ASP.NET Core sample by using the command `dotnet run` in Visual Studio Code.
-
-7. The dashboard can be edited in design mode and a new dashboard can be created with the following changes in the `renderDashboard()` method.
-
-    <meta charset="utf-8"/>
-    <table>
-    <tbody>
-    <tr>
-    <td align="left">dashboardId</td>
-    <td align="left">Provide the dashboard ID of the dashboard you want to embed in view or edit mode. In order to create a new dashboard, please exclude this specific property.</td>
-    </tr>
-    <tr>
-    <td align="left">mode</td>
-    <td align="left">In which mode do you want to render the dashboard? It can either be 'BoldBI.Mode.View' or 'BoldBI.Mode.Design' mode. </td>
-    </tr>
-    <tr>
-    <td align="left">authorizationServer</td>
-    <td align="left">Url of the 'authorizationServerAPI' action in the application.</td>
-    </tr>
-    </tbody>
-    </table>
-
-    ```js
-           renderDashboard(data) {
-              this.dashboard = BoldBI.create({
-              serverUrl: data.ServerUrl + "/" + data.SiteIdentifier,
-              dashboardId: data.DashboardId,
-              embedContainerId: "dashboard",
-              embedType: data.EmbedType,
-              environment: data.Environment,
-              mode: BoldBI.Mode.View,
-              width: "100%",
-              height: window.innerHeight + 'px',
-              expirationTime: 100000,
-              authorizationServer: {
-                  url: apiHost + authorizationUrl
-              },
-            });
-
-            console.log(this.dashboard);
-            this.dashboard.loadDashboard();
-           }
-
-     ```
+7. Run your React with ASP.NET Core sample by using the command `dotnet run` in Visual Studio Code.
 
 > **NOTE:** 
 > 1. If you are experiencing issues with the validity of the ASP.NET Core developer certificate, you can try the following commands to resolve it: `dotnet dev-certs https --clean`, `dotnet dev-certs https` and `dotnet dev-certs https --trust`.
@@ -130,13 +87,13 @@ A GitHub link has been provided to [get](https://github.com/boldbi/react-with-as
   ```
 
 ## How this sample works
- 1. The `renderDashboard` method will be invoked from the `componentDidMount()` function based on the configured embedConfig values in the `DashboardListing.js` file.
+ 1. The `renderDashboard` method will be invoked from the `componentDidMount()` function based on the configured embedConfig values in the `Dashboard.js` file.
     ![render dashboard](/static/assets/javascript/sample/images/react-dash-render.png)
 
- 2. Before rendering, call the `authorizationUrl`, which redirects to the `AuthorizationServer` action in the `BoldBIEmbedController`. This action generates the `EmbedSignature` using the embed secret provided in the `embedConfig.json` of the ASP.NET Core application.    
-    ![Get Embed Details](/static/assets/javascript/sample/images/angular-get-details.png)  
+ 2. Before rendering, call the `tokenGenerationUrl`, which redirects to the `TokenGeneration` action in the `BoldBIEmbedController`. This action generates the access token using the provided `embedDetails` of the ASP.NET Core application.    
+    ![Get Embed Details](/static/assets/javascript/sample/images/react-get-details.png)  
 
- 3. These details will be sent to the Bold BI server and will be validated there. Once the details are validated, the dashboard will start to render.  
+ 3. Once the token is generated, it will be returned to the `Dashboard.js` file and the dashboard will start to render it. 
 
 ## Steps to create new React with ASP.NET Core application to embed dashboard
 

@@ -24,6 +24,8 @@ documentation: ug
 	>13. IBMDB2
 	>14. Azure Synapse
 	>15. Amazon RedShift
+    >16. MinIO
+    >17. Star Rocks
 
 We can configure multiple data store destinations with the same server type and load data into them. This is common in scenarios where we might have multiple databases of the same type (for example, multiple MySQL or PostgreSQL databases) for different environments like development, testing, staging, or production, or for different segments of business operations.
 
@@ -311,8 +313,11 @@ Enter the credentials for Amazon RedShift:
 
 For faster data transfers with large datasets, it's recommended to use s3 blob. When staging is not set, isDirectImport property is not supported.
 
-
-9. When using staging enter the Bucket Name, Key Name,Role,Secret Access Key,Access Key ID,Region
+9. Use S3 blob staging for faster data transfers with large dataset
+10. If Anonymous Access is selected, enter Bucket Name, Key Name, Region, and Role only.
+11. If Anonymous Access is not selected, enter Bucket Name, Key Name, Region, Access Key ID, Secret Access Key, and Role (if needed).
+12. Click Save to store the credentials and complete the setup.
+![Source](/static/assets/working-with-etl/images/Redshift_destination.png)
 
 
 Click on Save to save the credentials.
@@ -331,5 +336,22 @@ Enter the credentials for MinIO:
 8. Bucket Name: Provide the MinIO bucket name where the data will be stored. 
 
 ![Source](/static/assets/working-with-etl/images/Minio_destination.png)
+
+Click on Save to save the credentials.
+
+## Star Rocks
+
+Enter the credentials for StarRocks:
+
+1. Select the server type as StarRocks.
+2. Fill in your StarRocks connection details as follows:
+3. Datastore Name: Enter a meaningful name; this is how the StarRocks credentials will be stored in Bold Data Hub.
+4. Server: Enter the Server Name.
+5. Port Number: Specify the port where StarRocks is hosted.
+6. Enter the user name.
+7. Enter the password.
+8. Enter the database Name.
+
+![Source](/static/assets/working-with-etl/images/starrocks_destination.png)
 
 Click on Save to save the credentials.

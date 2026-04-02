@@ -66,6 +66,13 @@ Now, the combo box widget is at the bottom of the combine widget and cannot be s
 
 ![combo box with lowest z-index](/static/assets/visualizing-data/visualization-widgets/images/combine-widgets/combine_widgets_less_z-index.png)
 
+### Apply Stack Order
+
+This allows you to stack entire widgets on top of each other.
+
+![Apply Stack Order](/static/assets/visualizing-data/visualization-widgets/images/combine-widgets/apply-stack-order-combine.png)
+
+
 ## Container Appearance
 
 This section customize `Container Appearance` for combine widget.
@@ -78,7 +85,7 @@ This toggles the visibility of **border** surrounding the widget.
 
 ### Corner Radius
 
-This apply specified **radius** to the widget corners if **Show Border** is enabled. Value can be between 0 and 10.
+This apply specified **radius** to the widget corners if **Show Border** is enabled. Value can be between 0 and 100.
 
 ### Show Background Image
 
@@ -96,6 +103,12 @@ This property specify **transparency** for `background color.`
 
 This property give **shadow** around the combine widget.
 
+### Mobile Height Factor
+
+This option allows you to resize widgets specifically for mobile view.
+
+![Mobile Height Factor](/static/assets/visualizing-data/visualization-widgets/images/mobile-height-factor.png)
+
 ## Container actions
 
 This section customize **Container actions** for combine widget.
@@ -105,14 +118,6 @@ This section customize **Container actions** for combine widget.
 ### Allow Maximize View
 
 This enables or disables **maximized mode** of the combine widget. The visibility of the maximize icon in the widget header will be defined based on the setting of the viewer.
-
-### Allow Image Export
-
-This enables or disables `Image export` option for the combine widget. Enabling this allows you to export view of the widget to image format `(.jpg), (.png), or (.bmp)` in the viewer.
-
-### Allow pdf Export
-
-This enables or disables the `PDF export` option for the combine widget. Enabling this export view of widget to pdf format in the viewer.
 
 ### Enable Comments
 
@@ -124,11 +129,9 @@ This allows you pin the widget.
 
 ## Export
 
-Export the combine widget as image and PDF format.
+The combine widget supports export to **Image**, **PDF**, **PowerPoint**, **Excel**, and **CSV** formats. The individual widgets within the combine widget also support exporting capabilities.
 
 ![export of combine widgets](/static/assets/visualizing-data/visualization-widgets/images/combine-widgets/combine_widgets_export.png)
-
-Widgets inside combine widgets has also exporting support, in order to export the specific widget into image, PDF, CSV and Excel formats.
 
 ## Pin combine widget
 

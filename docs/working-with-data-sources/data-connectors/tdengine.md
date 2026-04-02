@@ -41,7 +41,7 @@ Once you click the TDengine data source, the TDengine data source configuration 
 6. Click on the **Table** dropdown box and choose the required table from your connected database.
 7. Click on the **Relative Date** dropdown box and choose the required relative date range such as Today, Past Week, Past Month, Custom, etc.
 8. If the Custom option is selected in the **Relative Date** dropdown, select the **Start** date and **End** date value from the date picker.
-9. Click on the **Custom Url** to enter the URL manually. For more details refer to this documentation [TDengine API documentation](https://docs.tdengine.com/reference/rest-api/#installation).
+9. Click on the **Custom Url** to enter the URL manually. For more details refer to this documentation [TDengine API documentation](https://docs.tdengine.com/tdengine-reference/client-libraries/rest-api/).
 10. Choose a time interval for the **Refresh Settings** using the combo box to periodically trigger the Rest API request to keep the data in sync with your dashboard.
 
     ![Data source preview](/static/assets/working-with-datasource/data-connectors/images/TDengine/tdenginepreview.png)  
@@ -62,7 +62,7 @@ Period before the next refresh call is triggered. This will automatically start 
 
 ### Setting up the URL
 
-1. To enter the URL manually, click on **Custom URL** and then enter the URL. Refer to the  [TDengine API documentation](https://docs.tdengine.com/reference/rest-api/#installation/) for more details.
+1. To enter the URL manually, click on **Custom URL** and then enter the URL. Refer to the  [TDengine API documentation](https://docs.tdengine.com/tdengine-reference/client-libraries/rest-api/) for more details.
 
 2. For example, if you need to change the URL, replace your URL in the Custom URL section of the API.
 
@@ -70,7 +70,7 @@ Period before the next refresh call is triggered. This will automatically start 
 
     `https://<:your-Hostname>/rest/sql/<:your-Database>?token=<:your-CloudToken>`
 
-For more information on the API available for this data source, refer to their official [API Documentation](https://docs.tdengine.com/reference/rest-api/#installation/)
+For more information on the API available for this data source, refer to their official [API Documentation](https://docs.tdengine.com/tdengine-reference/client-libraries/rest-api/)
 
 ### Preview and data import
 * Click the **Preview & Connect** to connect with the configurations that have been set.
@@ -105,4 +105,4 @@ We have added support for **custom attributes and dashboard parameters** in the 
 
 [Dashboard Designer Walkthrough](/getting-started/creating-dashboard/)
 
-[TDengine API Documentation](https://docs.tdengine.com/reference/rest-api/)
+[TDengine API Documentation](https://docs.tdengine.com/tdengine-reference/client-libraries/rest-api/)

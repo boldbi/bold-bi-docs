@@ -49,3 +49,5 @@ You can explore the available features in detail here:
 [Gridlines](/visualizing-data/working-with-widgets/chart-gridlines/)
 
 [Widget Actions](/visualizing-data/working-with-widgets/widget-action/)
+
+[Interaction Widgets](/visualizing-data/working-with-widgets/saving-user-interacted-widgets/)

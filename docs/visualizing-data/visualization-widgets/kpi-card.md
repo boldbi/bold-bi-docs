@@ -229,13 +229,27 @@ This option allows you to provide the `description` about the KPI Card.
 
 ### Tooltip Settings
 
-![Tooltip settings](/static/assets/visualizing-data/visualization-widgets/images/kpi-card/Tooltip-Settings.png)
+The Tooltip Settings section allows you to customize the appearance and behavior of tooltips in widget visualizations.
 
-### Show Tooltip
+![Basic Settings](/static/assets/visualizing-data/visualization-widgets/images/kpi-card/Tooltip-Settings.png)
+
+#### Show Tooltip
 
 This option allows you to toggle the visibility of the tooltip in a card.
 
-![Direction](/static/assets/visualizing-data/visualization-widgets/images/kpi-card/kpi-tooltip.png)
+![General Settings](/static/assets/visualizing-data/visualization-widgets/images/kpi-card/tooltip.png)
+
+#### Customize Tooltip
+
+This option allows you to customize the columns that are visible in the card tooltip.
+
+![General Settings](/static/assets/visualizing-data/visualization-widgets/images/kpi-card/customize-tooltip-settings.png)
+
+#### Enable RTL
+
+This option allows you to display fields and their data from right to left.
+
+![Tooltip RTL](/static/assets/visualizing-data/visualization-widgets/images/kpi-card/rtl-tooltip.png)
 
 ### Color properties
 
@@ -871,6 +885,12 @@ The following steps illustrates how to add the fixed value:
 
 ![Container Appearance](/static/assets/visualizing-data/visualization-widgets/images/kpi-card/container-appearance.png)
 
+#### Mobile Height Factor
+
+This option allows you to resize widgets specifically for mobile view.
+
+![Mobile Height Factor](/static/assets/visualizing-data/visualization-widgets/images/mobile-height-factor.png)
+
 ### Title Auto Font Size
 
 On enabling Auto Font size, the font size of the title will be adjusted automatically if the resolution of the screen varies.
@@ -893,7 +913,7 @@ This allows you to toggle the visibility of the border that surrounds the widget
 
 ### Corner Radius
 
-This allows you to apply the specified radius to the widget corners, if the `Show Border` is enabled. The value ranges between 0 and 10.
+This allows you to apply the specified radius to the widget corners, if the `Show Border` is enabled. The value ranges between 0 and 100.
 
 ### Container actions
 

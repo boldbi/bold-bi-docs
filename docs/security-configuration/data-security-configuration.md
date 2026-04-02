@@ -32,17 +32,13 @@ Go to the settings page in UMS and click on `Embed` to enable the global embed c
 
 2. By clicking on it, the secret code will be generated. Save the secret key safely, as it cannot be retrieved or restored.                   
 
-    ![Copy secret code](/static/assets/data-security-configuration/images/copy-secret-code.png#width=55%)
+    ![Copy secret code](/static/assets/data-security-configuration/images/ums-copy-secret-code.png#width=55%)
 
 3. Once the secret code has been generated, it can be reset by clicking the `Reset Secret` button.
 
-    ![Reset secret code](/static/assets/data-security-configuration/images/reset-secret-code.png#width=55%)
+    ![Reset secret code](/static/assets/data-security-configuration/images/ums-reset-secret-code.png#width=55%)
 
 > **Warning :** Resetting this code would cause the previously functioning embedded dashboards to stop working.
-
-You can download the sample template file to generate the embed configuration file using the `Download` button.
-
-![Download template](/static/assets/data-security-configuration/images/embed-configuration.png#width=55%)
 
 ## How to use embed configuration file
 

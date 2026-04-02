@@ -6,7 +6,7 @@ var glob = require('glob');
 
 gulp.task('clean', done =>{
     let staticFiles = glob.sync('./static/*', {
-        ignore: ['./static/favicon.ico', './static/robots.txt', './static/assets', './static/404', './static/404.html']
+        ignore: ['./static/favicon.ico', './static/robots.txt', './static/assets', './static/404', './static/404.html','./static/js']
     });
     if (staticFiles.length) shelljs.rm('-rf', staticFiles);
     shelljs.rm('-rf', ['./.cache', './public', './src/pages']);
@@ -25,11 +25,6 @@ gulp.task('copy', done => {
 
 gulp.task('toc', done => {
     generateToc();
-    done();
-});
-
-gulp.task('postinstall', done => {
-    shelljs.rm('-rf', './node_modules/gatsby/node_modules/gatsby-cli');
     done();
 });
 

@@ -32,6 +32,7 @@ Through the following areas, you will gain insight into evaluating core features
 |-------------------------|----------------------------------------------------------------------------------------------------------------------|
 | [**Sample Dashboards**](/evaluation-quick-start/sample-dashboards/)   | Discover a library of ready-to-use dashboards curated across different industries and roles. These examples serve to illustrate best practices in data visualization, layout organization, widget usage, and KPI design. You can use them to compare expected outputs with your own business metrics or use them as templates when you move to full implementation. |
 | [**Help Resources**](/evaluation-quick-start/help-resources/)| Access a comprehensive set of self help resources including product documentation, troubleshooting guides, knowledge base articles, release notes, community forums, and support contact points. This ensures that even during evaluation, users can independently resolve queries or explore advanced topics such as security configuration, performance tuning, or deployment modes. |
+| [**Start Free Cloud Trial**](/evaluation-quick-start/start-free-cloud-trial/)| Start evaluating Bold BI with a free Cloud trial by registering your account and accessing a fully hosted analytics environment. You can create dashboards, connect data sources, and test embedded analytics features without any local installation, making it easy to validate your reporting and business intelligence requirements quickly.  |
 
 ## Comparing Bold BI with Other BI Platforms
 

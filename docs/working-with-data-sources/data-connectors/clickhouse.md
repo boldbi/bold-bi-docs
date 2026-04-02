@@ -40,6 +40,14 @@ After clicking a data source, the NEW DATA SOURCE configuration panel opens. Fol
 
 ![ClickHouse Connection](/static/assets/working-with-datasource/data-connectors/images/ClickHouse/Clickhouse_Connection.png)
 
+## Configuring ClickHouse Server in HTTPS Mode
+For establishing a ClickHouse Server HTTPS Mode, the following two changes are required along with the connection credentials:
+
+1. Change the **port number to 8443**
+2. Include **Protocol=HTTPS** in the Additional Parameter
+
+![ClickHouse HTTPS Connection](/static/assets/working-with-datasource/data-connectors/images/ClickHouse/clickhouse_https.png)
+
 ### Data Preview
 
 1. The schema represents the collection list retrieved from the ClickHouse server. This dialog displays a list of schemas in the treeview and their corresponding values.

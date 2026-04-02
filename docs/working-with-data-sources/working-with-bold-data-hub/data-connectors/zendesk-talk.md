@@ -133,11 +133,11 @@ plugins:
 
   ![Zendesk Talk Data Hub - BoldBI](/static/assets/working-with-etl/images/boldbi_panel.png#max-width=100%)
 
-  2. Click `Add Project` and provide the name for the new project.
+  2. Click `Add Pipeline` and provide the name for the new pipeline.
   
    ![Zendesk Talk Data Hub - BoldBI](/static/assets/working-with-etl/images/addpipeline.png#max-width=100%)
   
-  3. Select the newly created project and add the `Zendesk Talk` template.
+  3. Select the newly created pipeline and add the `Zendesk Talk` template.
 
   ![Zendesk Talk Data Hub - BoldBI](/static/assets/working-with-etl/images/talk_addtemplate.png#max-width=100%)
   

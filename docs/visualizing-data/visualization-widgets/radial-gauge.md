@@ -231,12 +231,6 @@ Allows you to provide a `description` about the Radial Gauge.
  
 ![Basic settings](/static/assets/visualizing-data/visualization-widgets/images/radial-gauge/radialgaugebasicsettings.png)
 
-#### Show Tooltip
-
-This option allows you to toggle the visibility of tooltip in the radial gauge.
-
-![General Settings](/static/assets/visualizing-data/visualization-widgets/images/radial-gauge/tooltip.png)
-
 #### Gauge Type
 
 Allows you to switch the widget view from the Half Circle type to Horse Shoe type or Full circular gauge, or vice versa. The default type is `Horse Shoe`.
@@ -323,6 +317,30 @@ Customize the Radial Gauge title color. The default value is #000000. This optio
 Set the value label status to High is Good or Low is Good. The default setting is High is Good. This option is enabled only when configuring the actual value and target value.
 
 Customize the color values for the **High**, **Medium**, and **low** colors from the provided color pickers.
+
+### Tooltip Settings
+
+The Tooltip Settings section allows you to customize the appearance and behavior of tooltips in widget visualizations.
+
+![Basic Settings](/static/assets/visualizing-data/visualization-widgets/images/radial-gauge/tooltip-settings.png)
+
+#### Show Tooltip
+
+This option allows you to toggle the visibility of the tooltip in the radial gauge.
+
+![General Settings](/static/assets/visualizing-data/visualization-widgets/images/radial-gauge/tooltip.png)
+
+#### Customize Tooltip
+
+This option allows you to customize which columns are visible in the radial gauge tooltip.
+
+![General Settings](/static/assets/visualizing-data/visualization-widgets/images/radial-gauge/customize-tooltip-settings.png)
+
+#### Enable RTL
+
+This option allows you to display fields and their data from right to left.
+
+![Tooltip RTL](/static/assets/visualizing-data/visualization-widgets/images/radial-gauge/rtl-tooltip.png)
 
 ### Pointer Settings
 
@@ -495,6 +513,10 @@ The Radial Gauge widget can be set to act as a master widget by checking the `Ac
 
 >**NOTE:** The Act as Master Widget option will be enabled only when the Series section is configured.
 
+#### Show Filter
+
+This feature allows you to toggle the visibility of the `Filter` icon for the radial gauge widget when the `Act as Master Widget` option is enabled.
+
 ## How to apply advanced conditional formatting
 
 The color of various properties in the Radial gauge can be customized from the corresponding properties section, as explained in the formatting section. This will apply the same color for all records.
@@ -630,7 +652,7 @@ This allows you to toggle the visibility of the `border` surrounding the widget.
 
 ### Corner Radius
 
-This allows you to apply the specified `radius` to the widget corners if **Show Border** is enabled. The value can be between 0 and 10.
+This allows you to apply the specified `radius` to the widget corners if **Show Border** is enabled. The value can be between 0 and 100.
 
 ### Show Background Image
 
@@ -647,6 +669,12 @@ This property allows you to specify the **transparency** for the `background col
 ### Show Shadow
 
 This allows you to toggle the visibility of the `shadow` surrounding the widget.
+
+### Mobile Height Factor
+
+This option allows you to resize widgets specifically for mobile view.
+
+![Mobile Height Factor](/static/assets/visualizing-data/visualization-widgets/images/mobile-height-factor.png)
 
 ### Container actions
 

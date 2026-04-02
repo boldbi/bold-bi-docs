@@ -74,6 +74,16 @@ You can see the added relative dates in the DatePicker as follows.
 
 ![showcasing relative date options in date picker](/static/assets/visualizing-data/visualization-widgets/images/date-picker/relativedateoptionsin-datepicker.png)
 
+### Show Custom Option
+
+This option allows you to show or hide the custom option when relative dates are configured.
+
+![show custom option](/static/assets/visualizing-data/visualization-widgets/images/date-picker/show-custom-option.png)
+
+For example, In the Date Picker widget, the `OrderDate` field is bound and configured with relative date options such as `Last 1 year` and `Last 2 years`. By default, the `Show Custom Option` setting is enabled, so the custom date selector is visible. If you disable this setting, the custom date selector will no longer appear in the Date Picker.
+
+![custom date](/static/assets/visualizing-data/visualization-widgets/images/date-picker/show-custom-date.png)
+
 ## How to configure custom relative dates to the DatePicker?
 
 Switch to the  `Properties` pane and set the `Selection Type` as Range, and then switch back to the Data pane; Click the `Settings` icon in the dropped date column and select `Relative Dates...` in the drop-down menu.
@@ -181,6 +191,42 @@ And you can only select a start date from the left calendar and the end date fro
 
 The **Show Latest Date** property shows the latest date in the data source when you open the date picker popup.
 
+#### Limit Date Selection
+
+If you enable the `Range` option, the `Limit Date Selection` will be shown.
+
+Activating `Limit Date Selection` displays the following additional settings:
+- Date Selection Mode
+- Custom Limit Days
+
+>**NOTE:** The `Custom Limit Days` numeric textbox is enabled only when the Custom option is selected from the `Date Selection Mode dropdown`.
+The `Date Selection Mode` has three options as follows,
+1. Weekly - Allows selection of dates within the week of the selected start date.
+
+![Weekly Date Selection Mode](/static/assets/visualizing-data/visualization-widgets/images/date-picker/weeklyDate.png)
+
+2. Monthly - Allows selection of dates within the month of the selected start date.
+
+![Monthly Date Selection Mode](/static/assets/visualizing-data/visualization-widgets/images/date-picker/monthlyDate.png)
+
+3. Custom - Allows selection of a custom range of days based on the number specified in the `Custom Limit Days` textbox.
+
+![Custom Date Selection Mode](/static/assets/visualizing-data/visualization-widgets/images/date-picker/customDate.png)
+
+#### Show Latest Date As Default
+
+Selecting this option automatically sets the latest date as the default value in the date picker widget. This feature is useful for filtering dashboards based on the most recent date available in the data source.
+
+![Show Latest Date as Default](/static/assets/visualizing-data/visualization-widgets/images/date-picker/show-latest-param-date.png)
+
+> **Note:** This option is applicable only for List-type dashboard parameters with a Single date selection. It is not available for Range date selections. For more details about dashboard parameter, refer to this [link](/working-with-data-sources/dashboard-parameter/configuring-dashboard-parameter/).
+
+#### Place Holder
+
+The `Placeholder` property of a date picker provides context for the user's input. By default, the placeholder text in the date picker is set to `Select Date`.
+
+![Place Holder](/static/assets/visualizing-data/visualization-widgets/images/date-picker/datepicker-placeholder.png)
+
 #### Filter
 
 ![filter configuration for date picker](/static/assets/visualizing-data/visualization-widgets/images/date-picker/filter.png)
@@ -198,6 +244,10 @@ This allows you to define this date picker widget to ignore responding to the fi
 Using this option, you can enable or disable hierarchical top N filtering. While applying the Top N filter with multiple dimension columns, the data returned can be customized based on whether the filtering needs to be done as flat or based on the hierarchy of dimension columns added. 
 
 When the `Enable Hierarchical Filtering` is enabled, the Top N will be applied for each individual column separately based on the number set for each column.
+
+#### Show Filter
+
+This feature allows you to toggle the visibility of the `Filter` icon for the datepicker widget when the `Act as Master Widget` option is enabled.
 
 #### Container Appearance
 
@@ -233,7 +283,7 @@ This allows you to toggle the visibility of the `border` surrounding the widget.
 
 #### Corner Radius
 
-This allows you to apply the specified `radius` to the widget corners if **Show Border** is enabled. The value can be between 0 and 10.
+This allows you to apply the specified `radius` to the widget corners if **Show Border** is enabled. The value can be between 0 and 100.
 
 #### Background Color
 
@@ -246,6 +296,12 @@ This property allows you to specify the **transparency** for the `background col
 ### Show Shadow
 
 This allows you to toggle the visibility of the `shadow` surrounding the widget.
+
+### Mobile Height Factor
+
+This option allows you to resize widgets specifically for mobile view.
+
+![Mobile Height Factor](/static/assets/visualizing-data/visualization-widgets/images/mobile-height-factor.png)
 
 #### Container actions
 

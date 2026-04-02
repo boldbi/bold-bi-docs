@@ -11,6 +11,31 @@ The Bold BI Dashboard designer connects the SparkSQL database using the SQL Live
 
 > **Note:** SparkSQL data source is available in On-Premises Deployment, but not in the Syncfusion Managed Cloud Server.
 
+## Setting UP and Starting Spark Thrift Server:
+1. Add below properties to **/home/user/spark/conf/hive-site xml** and **/home/user/apachehive/conf/hive-site.xml**
+
+   ```
+    <property> 
+    <name> hive.server2.transport.mode </name> 
+    <value> http </value> 
+    </property><property> 
+    <name> hive.server2.thrift.http.port </name> 
+    <value> 10001 </value> 
+    </property><property> 
+    <name>  hive.server2.http.endpoint </name> 
+    <value> cliservice </value> 
+    </property> 
+    ``` 
+2. **Start hive metastore => start hive => start spark thriftserver** The commands are available below 
+   ```
+   cd /home/user/apachehive/bin/  //get into the directory of hive
+   ./hive --service metastore&    //start metastore
+   ./hive                         //to start hive 
+   cd /home/user/spark/sbin/      //get into the directory of spark
+   ./start-thriftserver           //to start spark thrift server
+   ```
+**Note:** To know more about the [Setting Up and Starting Spark Thrift](https://spark.apache.org/docs/latest/sql-distributed-sql-engine.html)
+
 ## Choose the SparkSQL data source
 To configure the SparkSQL data source, follow these steps: 
 1. Click the **Data Sources** in the configuration panel to add a new data connection.

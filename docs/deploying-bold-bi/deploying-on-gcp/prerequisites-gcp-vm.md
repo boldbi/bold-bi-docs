@@ -11,7 +11,7 @@ This section explains the requirement to use the Bold BI server on the GCP porta
 
 1. GCP subscription with required privileges.
 
-2. You need Bold BI Enterprise Edition. Please ensure you have the appropriate license and download the build by following the instructions provided in this help link. [help link](/deploying-bold-bi/overview/#registration-and-download).
+2. You need Bold BI Enterprise Edition. Please ensure you have the appropriate license and download the build by following the instructions provided in this help link. [help link](/deploying-bold-bi/overview/#how-to-register-start-a-free-trial-and-download-bold-bi).
               
 3. Remote Desktop must be installed on your computer. This is necessary to sign in to the Virtual Machine (VM) where the Bold BI Server is installed. Note that Remote Desktop comes pre-installed on Windows-based operating systems. 
 

@@ -157,11 +157,11 @@ plugins:
 
   ![Zendesk Support Data Hub - BoldBI](/static/assets/working-with-etl/images/boldbi_panel.png#max-width=100%)
 
-  2. Click `Add Project` and provide the name for the new project.
+  2. Click `Add Pipeline` and provide the name for the new pipeline.
   
    ![Zendesk Support Data Hub - BoldBI](/static/assets/working-with-etl/images/addpipeline.png#max-width=100%)
   
-  3. Select the newly created project and add the `Zendesk Support` template.
+  3. Select the newly created pipeline and add the `Zendesk Support` template.
 
   ![Zendesk Support Data Hub - BoldBI](/static/assets/working-with-etl/images/support_addtemplate.png#max-width=100%)
   

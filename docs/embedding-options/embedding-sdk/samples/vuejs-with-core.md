@@ -17,7 +17,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/vue-with-aspn
  * [Visual Studio Code](https://code.visualstudio.com/download)
  * [Node.js](https://nodejs.org/en/)
 
- > **NOTE:** Node.js versions 12.13 to 18.18 are supported.
+ > **NOTE:** Node.js versions 18.17 to 20.15 are supported.
 
 ## How to run the sample
 
@@ -70,78 +70,32 @@ A GitHub link has been provided to [get](https://github.com/boldbi/vue-with-aspn
       </tbody>
       </table>
 
- 5. Please open your `ASP.NET Core` sample in **Visual Studio Code.**
+ 5. Please open your `ASP.NET Core` sample in **Visual Studio Code**.
     
  6. To run the back-end `ASP.NET Core` sample, use the following command: `dotnet run`.
 
- 7. Please open the `Vue` sample in a new window of **Visual Studio Code.**
+ 7. Please open the `Vue` sample in a new window of **Visual Studio Code**.
 
- 8. To install all dependent packages, use the following command: `npm install.`.
+ 8. To install all dependent packages, use the following command: `npm install`.
 
  9. To run your `Vue` sample, use the following command: `npm run serve`.
-
- 10. The dashboard can be edited in design mode. Please create a new dashboard with the following changes in the `renderDashboard()` method.
-
-     <meta charset="utf-8"/>
-     <table>
-     <tbody>
-     <td align="left">mode</td>
-     <td align="left">In which mode do you want to render the dashboard? It can either be 'BoldBI.Mode.View' or 'BoldBI.Mode.Design' mode.         </td>
-     </tr>
-     <tr>
-     <td align="left">authorizationServer</td>
-     <td align="left">Url of the 'authorizationServerAPI' action in the application.</td>
-     </tr>
-      <tr>
-      <td align="left">RenderDesigner</td>
-      <td align="left">loadDesigner()</td>
-        </tr>
-     </tbody>
-     </table>
-
-     ```js
-           renderDashboard(data) {
-                 this.dashboard= BoldBI.create({
-                 serverUrl: data.ServerUrl+"/" + data.SiteIdentifier,
-                 dashboardId: data.DashboardId,
-                 embedContainerId: "dashboard",
-                 embedType: data.EmbedType,
-                 environment: data.Environment,
-                 mode:BoldBI.Mode.View,
-                 width:"100%",
-                 height: window.innerHeight + 'px',
-                 expirationTime:100000,
-                 authorizationServer: {
-                     url: authorizationUrl
-                 }
-             });
- 
-             this.dashboard.loadDashboard();                     
-         }
- 
-      ```
       
 ## How this sample works
 
  1. The application checks if `embedConfig.json` is available; if it is, it `deserializes` and stores the content in `EmbedDetails`. Otherwise, it throws an error.
-
     ![embedconfig](/static/assets/javascript/sample/images/vuejs-core-embedconfigerror.png)
  
- 2. The dashboard will be rendered using the data obtained by utilizing the `/getserverdetails` endpoint, which retrieves data from the `asp.net core` front-end.
+ 2. To generate an access token, call the `TokenGeneration` API with the provided `embedConfig` values.
+    ![Authorize Server URL](/static/assets/javascript/sample/images/vuejs-core-authentication.png)
 
+ 3. Once the token is generated, it will be returned to the `App.vue` file and the dashboard will start to render it.
     ![Get server details](/static/assets/javascript/sample/images/vuejs-core-getseverdetails.png)
- 
- 3. Before rendering, the `authorizationUrl` is called, which redirects to the `AuthorizationServer` action in `Default.aspx`. This action generates the `EmbedSignature` using the embed secret from `embedConfig.json`.
-        
-     ![Authorize Server URL](/static/assets/javascript/sample/images/vuejs-core-authentication.png)
-    
- 4. These details will be sent to the Bold BI server and validated there. Once the details are validated, the dashboard starts to render.
 
 ## Steps to create new Vue.js with ASP.NET Core application to embed dashboard
 
  1. Please create a folder in the desired location and open it in **Visual Studio Code**. 
 
- 2. Open the terminal in **Visual Studio Code.** Please refer to the image below.
+ 2. Open the terminal in **Visual Studio Code**. Please refer to the image below.
  
      ![Terminal Image](/static/assets/javascript/sample/images/vuejs-core-terminal.png)
 

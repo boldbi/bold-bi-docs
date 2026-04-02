@@ -68,9 +68,26 @@ The Bold BI application can be configured to support OpenID Connect for Single S
     <td>It is an end point that logout the thrid-party provider.</td>
     </tr>
 
+    <tr>
+    <td>Enable User and Group mapping</td>
+    <td>Allows the system to fetch the group claim value from the authentication token and dynamically map users to groups during login.</td>
+    </tr>
+
+    <tr>
+    <td>Un-map Existing Groups of User and map to new group</td>
+    <td>Clears all previously assigned groups for the user and maps them to the new group received in the claim.</td>
+    </tr>
+
+    <tr>
+    <td>Group Claim Name</td>
+    <td>Optional field to specify the name of the claim that contains group identifiers used for mapping. Users will only be mapped if a matching group name exists on the site.</td>
+    </tr>
+
     </table>
 
     ![OpenId settings](/static/assets/site-administration/openid-support/images/openid-settings.png#width=55%)
+
+    ![OpenId group claim](/static/assets/site-administration/openid-support/images/openid-group-claim.png#width=55%)
 
 If we need to import the OpenID Connect groups, we must configure the group details when saving the OpenID authentication settings.
 
@@ -83,6 +100,7 @@ Here is a list of a few OpenID Connect providers, along with an explanation of h
 * [Auth0](/security-configuration/single-sign-on/openid-support/auth0/)
 * [Okta](/security-configuration/single-sign-on/openid-support/okta/)
 * [OneLogin](/security-configuration/single-sign-on/openid-support/onelogin/)
+* [Fusion Auth](/security-configuration/single-sign-on/openid-support/fusionauth/)
 
 OpenID Connect support is provided in both the Bold BI sites and User Management Server. This support can be managed individually for each site on the settings page by disabling the option, as shown in the following screenshot.
 

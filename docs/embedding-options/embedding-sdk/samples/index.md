@@ -18,8 +18,6 @@ You can explore the available samples in detail here,
 
 [Angular with ASP.NET Core](/embedding-options/embedding-sdk/samples/angular-with-core/)
 
-[ASP.NET](/embedding-options/embedding-sdk/samples/asp-net/)
-
 [React with ASP.NET Core](/embedding-options/embedding-sdk/samples/react-core/)
 
 [React with Node.js](/embedding-options/embedding-sdk/samples/react-with-node-js/)

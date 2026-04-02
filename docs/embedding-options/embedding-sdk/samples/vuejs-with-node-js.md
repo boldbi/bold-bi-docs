@@ -65,70 +65,32 @@ A GitHub link has been provided to [get](https://github.com/boldbi/vue-with-node
       </tr>
       <tr>
       <td align="left">ExpirationTime</td>
-      <td align="left">Token expiration time. (In the EmbedConfig.json file, the default token expiration time is 10000 seconds).</td>
+      <td align="left">Token expiration time. (In the EmbedConfig.json file, the default token expiration time is 10000 seconds)</td>
       </tr>
       </tbody>
       </table>
 
- 5. Open your `Nodejs` sample in **Visual Studio Code.**
+ 5. Open your `Nodejs` sample in **Visual Studio Code**.
     
- 6. To install all dependencies, use the command `npm install.`
+ 6. To install all dependencies, use the command `npm install`.
  
  7. Please run the back-end `Nodejs` sample by using the command `node embed.js`.
 
- 8. Open the `vue` sample in a new window of **Visual Studio Code.**
+ 8. Open the `vue` sample in a new window of **Visual Studio Code**.
 
- 9. To install all dependent packages, use the following command: `npm install.`
+ 9. To install all dependent packages, use the following command: `npm install`.
 
  10. Please run your `vue` sample using the following command: `npm run serve`.
 
- 11. The dashboard can be edited in design mode and a new dashboard can be created with the following changes in the `renderDashboard()` method.
-
-     <meta charset="utf-8"/>
-     <table>
-     <tbody>
-     <td align="left">mode</td>
-     <td align="left">In which mode do you want to render the dashboard? It can either be <code>BoldBI.Mode.View</code> or <code>BoldBI.Mode.Design</code> mode.</td>
-     </tr>
-     <tr>
-     <td align="left">authorizationServer</td>
-     <td align="left">Url of the <code>authorizationServerAPI</code> action in the application.</td>
-     </tr>
-      <tr>
-      <td align="left">RenderDesigner</td>
-      <td align="left">loadDesigner()</td>
-        </tr>
-     </tbody>
-     </table>
-
-     ```js
-        renderDashboard(data) {
-            let dashboard = BoldBI.create({
-            serverUrl: data.ServerUrl + '/' + data.SiteIdentifier,
-            dashboardId: data.DashboardId,
-            embedContainerId: 'dashboard',
-            embedType: BoldBI.EmbedType.Component,
-            environment: data.Environment,
-            width: '100%',
-            height: window.innerHeight + 'px',
-            expirationTime: 100000,
-            authorizationServer: {
-            url: authorizationUrl,
-            },
-        })
-        dashboard.loadDashboard();
-        }
- 
-      ```
 ## How this sample works
  
  1. The dashboard will be rendered using data fetched from the `embedconfig.json` file through the `/getdetails` endpoint in the back-end `Node.js`.
-    ![embedconfig](/static/assets/javascript/sample/images/vue-node-getdetails.png)
-
- 2. Before rendering, the `authorizationUrl` is invoked, redirecting to the `AuthorizationServer` action within `embed.js`. This action generates the `EmbedSignature` using the embed secret from the `embedConfig.json`.
+    
+ 2. To generate an access token, call the `TokenGeneration` API with the provided `embedConfig` values.
     ![Authorization server](/static/assets/javascript/sample/images/vue-node-authorization.png)
 
- 3. These details will be sent to the Bold BI server for validation. Once the details have been validated, the dashboard will begin to render.
+ 3. Once the token is generated, it will be returned to the `App.vue` file and the dashboard will start to render it.
+    ![embedconfig](/static/assets/javascript/sample/images/vue-node-getdetails.png)
 
 ## Steps to create new Vue.js with Node.js application to embed dashboard
 

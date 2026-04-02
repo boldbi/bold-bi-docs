@@ -35,11 +35,11 @@ ssh_private_key_path: privatekey
 
   ![MySQLSSH Data Hub- BoldBI](/static/assets/working-with-etl/images/clickdatahub.png#max-width=100%)
 
-  2. Click `Add Project` and provide the new project's name.
+  2. Click `Add Pipeline` and provide the new pipeline's name.
   
    ![MySQLSSH Data Hub- BoldBI](/static/assets/working-with-etl/images/addpipeline.png#max-width=100%)
   
-  3. Select the newly created project and add the `MySQLSSH` template.
+  3. Select the newly created pipeline and add the `MySQLSSH` template.
 
   ![MySQLSSH Data Hub- BoldBI](/static/assets/working-with-etl/images/mysqlssh_addtemplate.png#max-width=100%)
   

@@ -8,7 +8,7 @@ documentation: ug
 
 # Red Hat support for SSO authentication
 
-Red Hat Single Sign-On (RH-SSO) is based on the Keycloak project and allows you to secure your web applications by providing web single sign-on (SSO) capabilities based on popular standards like SAML 2.0, OpenID Connect, and OAuth 2.0.
+Red Hat Single Sign-On (RH-SSO) is based on the Keycloak project and allows you to secure your web applications by providing web single sign-on (SSO) capabilities based on popular standards like OpenID Connect, and OAuth 2.0.
 
 > **NOTE:** This feature is available in Bold BI Embedded Analytics, but not in Cloud Analytics Server.
 

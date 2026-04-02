@@ -234,11 +234,15 @@ The `Basic Settings` section contains general properties for the pivot grid, inc
 
 ![Basic Settings](/static/assets/visualizing-data/visualization-widgets/images/pivot-grid/basic-settings.png)
 
-#### Show Tooltip
+#### Enable Classic Pivot
 
-This option allows you to toggle the visibility of the tooltip in the pivot grid.
+The classic layout in the Pivot widget offers a structured, tabular presentation of data, improving both readability and usability. In this layout, fields in the row axis are displayed side by side in separate columns, making data interpretation and analysis easier.
 
-![Pivot grid property Name](/static/assets/visualizing-data/visualization-widgets/images/pivot-grid/tooltip.png)
+This option allows you to switch the pivot grid from Compact to Tabular layout.
+
+> **NOTE:** Enabling the `Enable Clasic Pivot` property will disable the `Allow Text Wrap`, `Allow Column Resize` and `Fit To Content` property in the basic settings.
+
+![classic-pivot-grid](/static/assets/visualizing-data/visualization-widgets/images/pivot-grid/classic-pivot-grid.png)
 
 #### Allow Value Sorting
 
@@ -303,6 +307,110 @@ By enabling this option, the (Null) header column gets hidden.
 This option allows you to set a value for empty cells in the pivot grid.
 
 ![Pivot-grid empty cell content value](/static/assets/visualizing-data/visualization-widgets/images/pivot-grid/pivot-empty-content-value.png)
+
+#### Horizontal Grid Lines
+
+Use this option to enable or disable horizontal grid lines in the Pivot Grid control.
+
+![Horizontal-lines](/static/assets/visualizing-data/visualization-widgets/images/pivot-grid/horizontal-grid-lines.png)
+
+#### Vertical Grid Lines
+
+Use this option to enable or disable vertical grid lines in the Pivot Grid control.
+
+![Vertical-lines](/static/assets/visualizing-data/visualization-widgets/images/pivot-grid/vertical-grid-lines.png)
+
+### Pivot Chart Settings
+
+This section allows you to switch to pivot chart from pivot grid.
+
+![pivot-chart-settings](/static/assets/visualizing-data/visualization-widgets/images/pivot-grid/pivot-chart-settings.png)
+
+In pivot grid widget, pivot chart would act as an additional visualization component with its basic and important characteristics like drill down and drill up, series customization, axis customization, legend customization, export, print, and tooltip. Its main purpose is to show the pivot data in graphical format.
+
+#### Enable Pivot Charts
+
+Enabling this option allows you to view `Pivot Charts` or `Pivot Table` in the visualization.
+
+![pivot-charts](/static/assets/visualizing-data/visualization-widgets/images/pivot-grid/pivot-charts.png)
+
+#### Charts types
+
+1. **Column:** Displays data as vertical bars, making it easy to compare different values across categories.
+
+2. **Bar:** Similar to column charts but with horizontal bars, useful for displaying comparative data.
+
+3. **Line:** Uses points connected by lines to display trends over time or categories.
+
+4. **Area:** Similar to line charts, but the area below the line is filled to emphasize magnitude.
+
+5. **Spline:** A smooth line that connects data points, ideal for showing data trends smoothly.
+
+6. **Spline Area:** Combines the smooth curves of a spline chart with the filled area of an area chart, highlighting both trends and magnitude.
+
+7. **Stacking Column:** Displays data in vertical bars stacked on top of each other, making it easy to compare the total and individual contributions across categories.
+
+8. **Stacking Area:** Similar to area charts but with multiple data series stacked, showing how each contributes to the total over time or categories.
+
+9. **Stacking Bar:** Like stacking column charts but with horizontal bars, useful for comparing parts of a whole across different categories.
+
+10. **Bubble:** Uses bubbles of varying sizes to represent data values in a scatter plot format, ideal for visualizing relationships between three variables.
+
+11. **Scatter:** Plots individual data points on a Cartesian plane, useful for identifying correlations or distributions between two variables.
+
+12. **100% Stacking Column:** Similar to stacking column charts, but each stack is normalized to 100%, emphasizing the percentage contribution of each series.
+
+13. **100% Stacking Bar:** Like 100% stacking column charts but with horizontal bars, showing relative percentage contributions across categories.
+
+14. **100% Stacking Area:** Displays the percentage contribution of each data series over time or categories, with areas stacked to total 100%.
+
+15. **Polar:** Plots data in a circular graph using angles and radii, suitable for showing cyclic patterns or directional data.
+
+16. **Radar:** Displays multivariate data in a circular layout with axes starting from the same point, ideal for comparing multiple variables.
+
+17. **Pie:** Represents data as slices of a circle, showing the proportion of each category relative to the whole.
+
+18. **Doughnut:** Similar to pie charts but with a blank center, allowing for additional labeling or aesthetics.
+
+19. **Funnel:** Visualizes data in progressively decreasing segments, often used to represent stages in a process like sales or conversions.
+
+20. **Pyramid:** Similar to funnel charts but shaped like a pyramid, useful for hierarchical or layered data representation.
+
+#### Show Stripe Line
+
+The stripe line feature highlights a specific range on the chart for better data visualization and analysis.
+
+1. **Start Value of StripeLine:** Defines where the stripe line starts on the y-axis (e.g., 5000).
+
+2. **End Value of StripeLine:** Defines where the stripe line ends on the y-axis (e.g., 5200).
+
+3. **Stripe Line Color:** Allows customization of the stripe line's color for better visual distinction.
+
+4. **Stripe Line Text:** Lets you add descriptive text to the stripe line, providing context or additional information.
+
+### Tooltip Settings
+
+The Tooltip Settings section allows you to customize the appearance and behavior of tooltips in widget visualizations.
+
+![Basic Settings](/static/assets/visualizing-data/visualization-widgets/images/pivot-grid/tooltip-settings.png)
+
+#### Show Tooltip
+
+This option allows you to toggle the visibility of the tooltip in the pivot grid.
+
+![General Settings](/static/assets/visualizing-data/visualization-widgets/images/pivot-grid/tooltip.png)
+
+#### Customize Tooltip
+
+This option allows you to customize the columns that are visible in the pivot grid tooltip.
+
+![General Settings](/static/assets/visualizing-data/visualization-widgets/images/pivot-grid/customize-tooltip-settings.png)
+
+#### Enable RTL
+
+This option allows you to display fields and their data from right to left.
+
+![Tooltip RTL](/static/assets/visualizing-data/visualization-widgets/images/pivot-grid/rtl-tooltip.png)
 
 ### Content Settings
 
@@ -560,6 +668,9 @@ Through this option, you can enable/disable hierarchical top N filtering. While 
 
 When the `Hierarchical Filter` option is enabled, the Top N will be applied to each individual column separately based on the number set for each column.
 
+#### Show Filter
+This feature allows you to toggle the visibility of the `Filter` icon for the pivot grid widget when the `Act as Master Widget` option is enabled.
+
 ## How to apply advanced settings in pivot grid
 
 If you have the requirement to highlight data based on certain conditions, you can enable the advanced settings option.
@@ -686,7 +797,7 @@ This option allows you to toggle the visibility of the border surrounding the wi
 
 ### Corner Radius
 
-This option allows you to apply a specific radius to the widget corners if the `Show Border` is enabled. The value can range between 0 and 10.
+This option allows you to apply a specific radius to the widget corners if the `Show Border` is enabled. The value can range between 0 and 100.
 
 ### Transparency
 
@@ -695,6 +806,12 @@ You can adjust the transparency from 0 to 1.
 ### Show Shadow
 
 This option allows you to toggle the visibility of the `shadow` surrounding the widget.
+
+### Mobile Height Factor
+
+This option allows you to resize widgets specifically for mobile view.
+
+![Mobile Height Factor](/static/assets/visualizing-data/visualization-widgets/images/mobile-height-factor.png)
 
 ### Container actions
 

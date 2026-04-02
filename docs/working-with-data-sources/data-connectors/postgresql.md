@@ -71,16 +71,17 @@ The schema represents the collection list retrieved from the PostgreSql server. 
 
 ## Extract mode connection 
 
-To Connect to Bold ETL from postgres, switch to extract mode. Refer [Bold ETL](/managing-resources/manage-data-sources/#advanced-category)
-1. switch to Extract mode, Redirect dialog will pop up.
-  ![etl Redirect Dialog](/static/assets/working-with-datasource/data-connectors/images/SQLDataSource/etlRedirectDialog.png)
+1. Switching to Extract mode, Extract Engine will become visible.
 
-2. Click on the **Redirect to Bold ETL** button to be redirect to Bold ETL. Or
-3. To continue with Bold BI, click on **Continue with connector**.
+    ![Extract Engine](/static/assets/working-with-datasource/images/Extract_Engine.png)
 
-In this connection type, a data source is fetched from source periodically. Choose the **Extract** mode option for this connection.
+2. In Bold BI Extract, The data will be extracted in Bold BI itself.
+3. When switching to Data Hub, the data is extracted using the Data Hub. An equivalent pipeline is created, which can leverage the Data Hub’s Extract, Transform, Load (ETL) capabilities to filter or optimize the data and generate new tables.
+4. To view the equivalent pipeline created for data extraction, navigate to the Query Designer page and click on View Pipeline.
 
-![Extract Connection](/static/assets/working-with-datasource/data-connectors/images/Postgresql/Postgresql_Extract_Connection.png)
+    ![Refresh Setting](/static/assets/working-with-datasource/images/View_Pipeline.png)
+
+5. When the data refresh is configured for data sources that uses the Data Hub Extract Engine, the refresh will be managed within the Data Hub.
 
 > **NOTE:**  Initially, data will be extracted based on the Max Rows selected in order to proceed with data model creation. The remaining records (there is no limit) will be extracted during the next refresh.  <br /> 
  ![Max rows option](/static/assets/working-with-datasource/data-connectors/images/Postgresql/maxRowOption.png#max-width=60%)
@@ -136,6 +137,54 @@ We have added support for **custom attributes and dashboard parameters** in the 
 **Dashboard Parameter**
 
 ![Dashboard Parameter](/static/assets/working-with-datasource/data-connectors/images/Postgresql/Dashboardparameter.png)
+
+ **Connecting to DataSource using REST API with Custom Attributes**
+
+ ### For example, we configure a PostgreSQL DataSource using a REST API.
+
+Configuring a PostgreSQL DataSource connection using **custom attributes** via an API involves setting up:
+
+Configure the following properties:
+
+1. Username.
+2. Password.
+3. Servername.
+4. Port.
+5. Database.
+6. Maxrows.
+7. CommandTimeout.
+8. AdvancedSettings.
+
+### Creating the Connection
+To create a connection, use the following JSON structure:
+```
+"Connection":
+{
+"Servername": "${{:DB_Server_Name}},
+"Port": "",
+"Username": "${{:DB_User_Name}},
+"Password": "${{:DB_Password}},
+"Database": "Sample_Database",
+"Schemaname": "sample_schema",
+"Tablename": "${{:DB_Table_Name}},
+"AdvancedSettings": "string",
+"CommandTimeout": "string",
+"IsSshConnection": "false",
+"SshServerName": "string",
+"SshPort": 0,
+"SshUsername": "string",
+"SshPassword": "string",
+"Expressions" : [{
+"Name": "Expression1",
+"Expression" : "SUM(numeric expression)"
+    },
+    {
+"Name": "Expression2",
+"Expression" :  "UPPER(string expression)"
+}]
+}
+```
+To know more about [Connecting Bold BI to PostgreSQL Data Source via REST API](/working-with-data-sources/data-connectors/postgresql/#Connecting-Bold-BI-to-PostgreSQL-Data-Source-via-REST-API)
 
 >**Note:** Refer to the [Dashboard Parameter Documentation](https://help.boldbi.com/working-with-data-sources/dashboard-parameter/) and [Custom Attributes Documentation](https://help.boldbi.com/working-with-data-sources/configuring-custom-attribute/) for more details.
 

@@ -100,12 +100,3 @@ You will need the following Azure Active Directory details to configure Bold BI 
 * **Client Secret Code**: It is the secure key of the Bold BI application you created in your Azure Active Directory. Go to `Certificates & secrets` and search for the Keys you saved for the application, then choose the `Value`.
 
     ![Properties](/static/assets/site-administration/images/keys.png)
-
-## Set Azure Active Directory as Default Authentication
-Azure Active Directory can be set as the default authentication when [Azure Active Directory](/site-administration/user-directory-settings/azure-active-directory/#configure-azure-active-directory-details-in-bold-bi-to-import-users-and-groups) is enabled and saved. Follow these steps:
-
-1. In the settings page, click on the **Authentication** tab and select **General**.
-
-2. Enable the **Enable Default Authentication** option and select **Azure Active Directory** as the default authentication provider as shown in the following screenshot.
-
-    ![Enable  Azure Active Directory Default Authentication](/static/assets/site-administration/images/enable-azure-active-directory.png)

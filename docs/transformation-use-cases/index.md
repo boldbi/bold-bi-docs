@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ETL/Dat Hub Transformation Use Cases in Bold Data Hub
+title: ETL/Data Hub Transformation Use Cases for Bold Data Hub
 description: Learn how to use the ETL/Data Hub Transformation section in Bold BI Enterprise Edition. Discover simple steps to integrate data smoothly and make the most of your analytics.
 platform: bold-bi
 documentation: ug

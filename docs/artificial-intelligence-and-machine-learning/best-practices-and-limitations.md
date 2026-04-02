@@ -43,6 +43,12 @@ documentation: ug
 
 11. Conditional formatting is currently supported only for  `Grid` in the `Relationship widget` category, `Bar`,  `Column`,  `Scatter` and  `Proportion` charts.
 
+12. Response time of AI varies by question complexity and data size; complex ones take a few seconds longer.
+
+13. AI memory remembers every message in this session to keep context flowing.
+
+14. Cache made for AI never reuses previous responses; every response is freshly generated.
+
 ## Rate Limit
 
 1. A single tenant can send up to 100 messages per minute to the AI Assistant. If the limit is exceeded, they will need to wait or contact support to request an increase in the limit.

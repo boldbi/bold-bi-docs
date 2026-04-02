@@ -28,19 +28,23 @@ To add deployment dashboards, follow these steps:
 
     ![deployment dashboard dialog](/static/assets/site-administration/images/deployment-dashboard-dialog.png#width=60%)
 
-4. Provide a category, name, description, and select the dashboard you need to deploy to each site, as shown in the following image.
+4. Select the category and dashboard that you need to deploy to each site. Provide a category name, dashboard name, and description to be used on the deployed sites, as shown in the following image.
 
     ![Fill the deployment dashboard dialog](/static/assets/site-administration/images/fill-deployment-dashboard-dialog.png#width=60%)
 
-5. You can publish a dashboard with public accessibility by checking the Make Dashboard Public option. This allows anonymous users who have access to the Dashboard link to access it.
+5. Select the checkbox `Use category and dashboard name`. If you want to publish the dashboard with the source category name and dashboard on the destination sites.
+
+    ![Use category and dashboard name](/static/assets/site-administration/images/use-category-dashboard-name.png#width=60%)
+
+6. You can publish a dashboard with public accessibility by checking the Make Dashboard Public option. This allows anonymous users who have access to the Dashboard link to access it.
 
     ![Make public the deployment dashboard dialog](/static/assets/site-administration/images/make-public-deployment-dashboard-dialog.png#width=60%)
 
-6. By selecting the lock option, you can lock your dashboard and data source, making it not editable and adding it to the deployment dashboard.
+7. By selecting the lock option, you can lock your dashboard and data source, making it not editable and adding it to the deployment dashboard.
     
     ![Lock Option in deployment dashboard dialog](/static/assets/site-administration/images/lock-deployment-dashboard.png#width=60%)
 
-7. You can view the added deployment dashboards in the grid and receive a success message.
+8. You can view the added deployment dashboards in the grid and receive a success message.
 
     ![deployment dashboards in grid view](/static/assets/site-administration/images/deployment-dashboards-grid-view.png)
 
