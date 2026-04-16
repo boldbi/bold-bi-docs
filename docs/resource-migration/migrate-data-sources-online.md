@@ -6,11 +6,12 @@ platform: bold-bi
 documentation: ug
 ---
 
+# Migrate Data Sources Online
+
 Migrating a data source online refers to the process of publishing a data source in the Bold BI application to multiple tenants, either on the same server or on different instances. By doing so, you can easily share data sources across multiple sites.
 
 > **Note:** This feature is available in On-Premises Deployment, but not in Syncfusion Managed Cloud Server.
 
-# Migrate Data Sources Online
 To migrate a data source online, follow these steps:
 
 1. Click on `Actions` in the data source grid context menu and select `Publish` to publish the corresponding data source.

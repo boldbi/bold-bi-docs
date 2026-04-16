@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="56"
+     height="56"
+     viewBox="0 0 56 56"
+     fill="none">
+
+  <!-- Circular background (no border) -->
+  <circle
+    cx="28"
+    cy="28"
+    r="28"
+    fill="#2e8b57" /> <!-- medium green -->
+
+  <!-- Icon group: centered & padded -->
+  <g
+    transform="translate(28 28) scale(0.52) translate(-28 -28)"
+    stroke="white"
+    fill=""
+    stroke-width="3"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  >
+
+    <path d="M32.1708 39.9908H5.11834C3.83251 39.9908 2.79014 38.9484 2.79014 37.6626V11.5393C2.79014 10.2534 3.83251 9.21106 5.11835 9.21106H50.8288C52.1146 9.21106 53.157 10.2534 53.157 11.5393V23.2018"/>
+
+    <path d="M13.9828 45.587H43.1411"/>
+
+    <circle
+      cx="40.577"
+      cy="28.9554"
+      r="9.79355"
+      transform="rotate(-40.0027 40.577 28.9554)" />
+
+    <path d="M53.7911 45.3231L46.8743 37.0808L47.686 36.3996L54.6028 44.6419"/>
+
+    <path d="M8.38646 28.7981H17.7136"/>
+    <path d="M8.38646 17.6055H20.9782"/>
+
+  </g>
+</svg>

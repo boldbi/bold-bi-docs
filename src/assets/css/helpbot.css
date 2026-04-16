@@ -1,0 +1,334 @@
+/* HelpBot Assistant CSS */
+#helpbot-container {
+  box-sizing: border-box;
+}
+
+.hb-hidden {
+  display: none !important;
+}
+
+.hb-panel {
+  width: 380px;
+  max-width: calc(100% - 24px);
+  background: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 8px 24px rgba(16, 24, 40, 0.12);
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.hb-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px;
+  background: #f5f7fa;
+  border-bottom: 1px solid #e6e9ef;
+  z-index: 2
+}
+
+.hb-title {
+  font-weight: 600;
+  font-size: 14px;
+  color: #111827;
+}
+
+.hb-actions {
+  display: flex;
+  gap: 6px;
+}
+
+.hb-btn {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 6px;
+    position: relative;
+    color: #667085;
+}
+
+.hb-body {
+  flex: 1;
+  overflow: auto;
+  padding: 12px;
+  background: #ffffff;
+}
+
+.hb-messages {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.hb-msg {
+  display: flex;
+}
+
+.hb-msg-content {
+  max-width: 78%;
+  padding: 8px 12px;
+  border-radius: 10px;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.hb-user {
+  justify-content: flex-end;
+}
+
+.hb-user .hb-msg-content {
+  background: #0b5fff;
+  color: #fff;
+  border-bottom-right-radius: 2px;
+}
+
+.hb-assistant {
+  justify-content: flex-start;
+}
+
+.hb-assistant .hb-msg-content {
+  background: #f1f5f9;
+  color: #0f172a;
+}
+
+.hb-input {
+  display: flex;
+  gap: 8px;
+  padding: 10px;
+  border-top: 1px solid #e6e9ef;
+  background: #fafafa;
+}
+
+.hb-text {
+  flex: 1;
+  padding: 8px 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  outline: none;
+  font-size: 13px;
+}
+
+.hb-text:focus {
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.12);
+}
+
+.hb-send {
+  background: #0b5fff;
+  color: #fff;
+  border: 0;
+  padding: 8px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  position: relative; /* for tooltip positioning */
+}
+
+/* HelpBot button tooltips (matches focus-mode-btn visual style) */
+.hb-btn[data-tooltip]::after,
+.hb-send[data-tooltip]::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 8px;
+  background: #111827; /* dark background for light theme */
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 13px;
+  white-space: nowrap;
+  box-shadow: 0 4px 12px rgba(16,24,40,0.12);
+  z-index: 10001;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 120ms ease;
+}
+
+/* Arrow */
+.hb-btn[data-tooltip]::before,
+.hb-send[data-tooltip]::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  z-index: 10001;
+  opacity: 0;
+  transition: opacity 120ms ease;
+}
+
+/* show on hover/focus */
+.hb-btn[data-tooltip]:hover::after,
+.hb-btn[data-tooltip]:focus::after,
+.hb-btn[data-tooltip]:hover::before,
+.hb-btn[data-tooltip]:focus::before,
+.hb-send[data-tooltip]:hover::after,
+.hb-send[data-tooltip]:focus::after,
+.hb-send[data-tooltip]:hover::before,
+.hb-send[data-tooltip]:focus::before {
+  opacity: 1;
+}
+
+/* Placement: delete/close -> tooltip below the element */
+.hb-btn[data-tooltip]::after {
+  top: calc(100% + 8px);
+}
+.hb-btn[data-tooltip]::before {
+  top: calc(100% + 2px);
+  border-bottom: 8px solid #111827; /* match dark tooltip bg */
+}
+
+/* Placement: send -> tooltip above the element */
+.hb-send[data-tooltip]::after {
+  bottom: calc(100% + 8px);
+}
+.hb-send[data-tooltip]::before {
+  bottom: calc(100% + 2px);
+  border-top: 8px solid #111827; /* match dark tooltip bg */
+}
+
+.hb-send:disabled,
+.hb-text[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.hb-processing {
+  font-style: italic;
+  color: #6b7280;
+}
+
+.hb-dots {
+  display: inline-block;
+  width: 20px;
+}
+
+@keyframes hb-dots {
+  0% {
+    content: '.';
+  }
+
+  33% {
+    content: '..';
+  }
+
+  66% {
+    content: '...';
+  }
+
+  100% {
+    content: '';
+  }
+}
+
+.hb-dots::after {
+  content: '';
+  animation: hb-dots 1s steps(3, end) infinite;
+}
+
+/* Code styling */
+.hb-code {
+  background: #0b1120;
+  color: #e6edf3;
+  padding: 45px 64px 12px 12px;
+  border-radius: 6px;
+  overflow: auto;
+}
+
+.hb-inline {
+  background: #eef2ff;
+  color:#000;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: monospace;
+}
+
+/* placement: fixed overlay on right side (sticky) */
+#helpbot-container {
+  position: relative;
+}
+
+/* Ask AI button */
+.helpbot-ask-btn {
+  margin-left: 12px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  background: #fff;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+#helpbot-container.hb-fixed {
+  position: fixed;
+  right: 0px;
+  transform: translateX(25px);
+  top: 55px;
+  height: calc(100vh - 55px);
+  z-index: 9999;
+  display: flex;
+}
+
+/* When the site is in focus mode, pin HelpBot to the very top and use full height */
+body.focus-mode #helpbot-container.hb-fixed {
+  top: 0px;
+  height: calc(100vh - 0px);
+}
+
+#helpbot-container.hb-fixed .hb-panel {
+  height: 100%;
+}
+
+#helpbot-container.hb-fixed .hb-body {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.hb-ai-note {
+  font-size: 12px;
+  color: #9aa0a6;
+  padding: 10px 22px;
+  text-align: center;
+}
+
+.hb-msg-content img {
+  width: 100%;
+  cursor: zoom-in;
+}
+
+/* Copy button for code blocks injected by helpbot.js */
+.hb-copy-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  color: #CECFD2;
+  background: rgb(50 49 53);
+  padding: 5px 8px;
+  border-radius: 4px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 2147483647;
+  opacity: 1; /* always visible */
+  transition: transform 160ms ease, opacity 160ms ease;
+}
+
+.hb-close{
+  top:-1px;
+}
+
+code[class*=language-]{
+  color:#CECFD2;
+  text-shadow: none;
+}

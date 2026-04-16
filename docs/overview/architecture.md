@@ -20,9 +20,9 @@ The architecture consists of several core components that work together to provi
 ### 1. Bold ID
 
 Bold ID is the identity and access management service that ensures secure authentication and authorization.
+
 - **Identity Service** – Manages user authentication and access control.
 - **Site Catalog** – Stores site-specific configurations and user access information.
-
 
 ### 2. Load Balancer
 
@@ -34,20 +34,17 @@ The Metadata Server maintains site-related configurations and settings.
 - Stores metadata for different sites (e.g., Site A, Site B).
 - Handles read/update requests for site configurations.
 
-
 ### 4. Dashboard Server
 
 The central component responsible for rendering dashboards and handling user interactions.
 - Retrieves metadata and data for dashboards.
 - Manages user dashboard requests and visualization rendering.
 
-
 ### 5. Data Store Server
 
 The primary storage system for structured data.
 - Stores and retrieves data specific to different sites.
 - Supports read and write operations for Site A and Site B.
-
 
 ### 6. Data Viewer Service
 
@@ -76,7 +73,7 @@ A critical component for data transformation and optimization.
 ### 10. Relational Database
 
 Stores raw and processed data from various sources.
-- Supports structured storage in formats like flat files, XML files, and external databases.
+- Supports structured storage and integrations with sources such as flat files, XML files, and external databases.
 
 ### 11. External Data Sources
 
@@ -109,7 +106,6 @@ This section outlines the typical flow of user interaction, data processing, and
         - REST APIs
 		- Relational data sources
 - Refreshed data is stored in the Data Store for quick access during dashboard rendering.
-
 
 
 ### 3. ETL and Data Preparation with Bold Data Hub

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
+
+  <!-- Circle background -->
+  <rect x="0.75" y="0.75" width="54.5" height="54.5" rx="27.25" fill="blueviolet" stroke="#ffffff" stroke-width="2"/>
+
+  <!-- Icon group -->
+  <g stroke="white" fill="" transform="translate(28 28) scale(0.55) translate(-28 -28)">
+    <path d="M50.9679 46.6752C43.7495 39.0654 38.3006 42.4405 34.611 46.4297C34.2983 46.7678 34.3182 47.2717 34.6534 47.6107C42.1135 55.1538 47.7694 51.2436 50.9903 47.848C51.3052 47.5161 51.2927 47.0176 50.9679 46.6752Z" stroke-width="2"/>
+
+    <ellipse cx="2.26392" cy="2.2253" rx="2.26392" ry="2.2253" transform="matrix(1.05013 0.0154822 0.0158199 0.944647 40.3867 44.8929)"/>
+
+    <path d="M29 50H15C11.2288 50 9.34315 50 8.17157 48.8284C7 47.6569 7 45.7712 7 42V15C7 11.2288 7 9.34315 8.17157 8.17157C9.34315 7 11.2288 7 15 7H35C38.7712 7 40.6569 7 41.8284 8.17157C43 9.34315 43 11.2288 43 15V35.5" stroke-width="2"/>
+
+    <path d="M12 21.5H21.5" stroke-width="2" stroke-linecap="round"/>
+
+    <path d="M12 29.5H30.5" stroke-width="2" stroke-linecap="round"/>
+
+    <path d="M11.9961 37.75H28.0039" stroke-width="2" stroke-linecap="round"/>
+  </g>
+</svg>

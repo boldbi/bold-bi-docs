@@ -12,15 +12,28 @@ var pathNames=['overview','evaluation-quick-start','deploying-bold-bi','applicat
 'manage-webhooks', 'localization', 'white-labeling-in-bold-bi', 'multi-tenancy','responsive-layout','mobile-app','server-api-reference','utilities','monitoring','disaster-recovery', 'transformation-use-cases'];
 const isHtml = 'html';
 function generateToc() {
-    let Files = glob.sync('./docs/summary.json');
+    // collect all summary files (support split summaries like summary-admin.json etc.)
+    let Files = glob.sync('./docs/summary*.json');
+    if (!Files || Files.length === 0) {
+        Files = glob.sync('./docs/summary.json');
+    }
     let fileContent = {};
     indexPageMapper = {};
-    let jsonObj = JSON.parse(fs.readFileSync('./docs/summary.json', 'utf8'));
-    let keys = Object.keys(jsonObj);
-        for(let i=0;i<=keys.length;i++){
-            indexPageMapper[keys[i]] = pathNames[i];
-        }
-        fileContent = Object.assign(jsonObj, fileContent);
+
+    // preserve order of top-level keys as they appear across files
+    let mergedKeysOrder = [];
+    Files.forEach(filePath => {
+        const jsonObj = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+        Object.keys(jsonObj).forEach(k => {
+            if (mergedKeysOrder.indexOf(k) === -1) mergedKeysOrder.push(k);
+        });
+        fileContent = Object.assign(fileContent, jsonObj);
+    });
+
+    // map each top-level key to a pathName (fallback to a slugified key)
+    for (let i = 0; i < mergedKeysOrder.length; i++) {
+        indexPageMapper[mergedKeysOrder[i]] = pathNames[i] || mergedKeysOrder[i].trim().split(' ').join('-').toLowerCase();
+    }
     let allTreeData = getTreeData(fileContent, indexPageMapper);
     let stringified = JSON.stringify(allTreeData, null, 4);
     fs.writeFileSync('./left-toc.json', stringified, 'utf8');
@@ -87,10 +100,24 @@ function getTreeData(data, indexPageMapper) {
 function generateTreeData(data, parentIns, firstLevelKey) {
     let keys = Object.keys(data);
     for (let i = 0; i < keys.length; i++) {
-        let keyValue = data[keys[i]];
+        let keyName = keys[i];
+        let keyValue = data[keyName];
+
+        // skip metadata keys and treat `pages` as a transparent container
+        if (keyName === 'slug') {
+            continue;
+        }
+        if (keyName === 'pages') {
+            // do not create a "pages" segment in the URL - iterate its children
+            generateTreeData(keyValue, parentIns, firstLevelKey);
+            continue;
+        }
         if (keyValue instanceof Object) {
-            let obj = generateTreeObj(keys[i]);
-            let formattedName = obj.name.trim().split(' ').join('-').toLowerCase()
+            let obj = generateTreeObj(keyName);
+            // prefer explicit slug in the object when available
+            let formattedName = (keyValue.slug && typeof keyValue.slug === 'string')
+                ? removeMisc(keyValue.slug)
+                : obj.name.trim().split(' ').join('-').toLowerCase();
             obj['routerPath'] = parentIns ? `${parentIns.routerPath}/${formattedName}` : formattedName;
             let routerPath = `${indexPageMapper[firstLevelKey]}/${obj['routerPath']}`;
             obj.id = `/${routerPath}/`;
@@ -111,7 +138,7 @@ function generateTreeData(data, parentIns, firstLevelKey) {
             generateTreeData(keyValue, obj, firstLevelKey);
             routerData[`/${routerPath}/`]['nextPath'] = paths[previousPathIndex + 1];
         } else {
-            let obj = generateTreeObj(keys[i]);
+            let obj = generateTreeObj(keyName);
             let formattedName = removeMisc(keyValue);
             obj['routerPath'] = parentIns ? `${parentIns.routerPath}/${formattedName}` : formattedName;
             let routerPath = `${indexPageMapper[firstLevelKey]}/${obj['routerPath']}`;
@@ -158,5 +185,6 @@ function generateTreeObj(name) {
     };
 }
 function removeMisc(fname) {
-    return removeQueryString(fname.replace('.md', '').trim());
+    const cleaned = removeQueryString(fname.replace('.md', '').trim());
+    return cleaned.replace(/^\/+|\/+$/g, '');
 }

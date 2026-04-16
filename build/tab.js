@@ -54,7 +54,7 @@ customRenderer.code = (codeBlock, language) => {
         codeBlock = codeBlock?.text || String(codeBlock);
     }
 
- const normalizedLang = normalizeLanguage(language);
+    const normalizedLang = normalizeLanguage(language);
     const prismLang = LANGUAGE_ALIASES[normalizedLang] || normalizedLang;
     if (!Prism.languages[prismLang]) {
         return `<pre><code>${codeBlock}</code></pre>`;

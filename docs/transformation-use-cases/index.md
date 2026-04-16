@@ -7,17 +7,17 @@ documentation: ug
 
 ---
 
-# Transformation Use cases
+# Transformation Use Cases
 
 ## Overview
 
-Data transformation is a crucial step in ETL (Extract, Transform, Load) pipeline, enabling businesses to convert raw data into meaningful insights. DataHub provides a flexible and scalable environment to handle transformation processes efficiently.
+Data transformation is a crucial step in an ETL (Extract, Transform, Load) pipeline, enabling businesses to convert raw data into meaningful insights. Bold Data Hub provides a flexible and scalable environment to handle transformation processes efficiently.
 
 When working with unstructured data, Bold Data Hub helps ensure that data is cleansed, standardized, enriched, and structured for accurate analysis and reporting.
 
 Below are some typical transformation use cases you can consider:
 
-## List of transformation
+## List of Transformations
 
 [Data Cleaning and Standardization](/transformation-use-cases/data-cleaning-and-standardization/)<br>
 [Date and Time Adjustments](/transformation-use-cases/date-and-time-processing/)<br>
@@ -28,3 +28,6 @@ Below are some typical transformation use cases you can consider:
 [Data Pivoting and Reshaping](/transformation-use-cases/data-reshaping-and-pivoting/)<br>
 [Handling Data Anomalies](/transformation-use-cases/anomaly-detection-and-smoothing/)<br>
 [Customer Journey Analysis](/transformation-use-cases/behavioral-and-journey-analysis/)<br>
+
+
+

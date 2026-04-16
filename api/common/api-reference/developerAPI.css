@@ -101,12 +101,13 @@ h1.sc-furvIG.sc-GEcJY.fPdyNs.eLjYMx {
 }
 
 h1.sc-furvIG.fPdyNs {
-    color: #283A5F !important;
-    font-size: 21px !important;
-    font-weight: 800 !important;
+    color: #1C1017 !important;
+    font-size: 28px !important;
+    font-weight: 600 !important;
     font: caros !important;
     margin-top: 32px !important;
     margin-bottom: 0px !important;
+    font-family: "Inter", "Roboto", "open sans", sans-serif, "-apple-system", BlinkMacSystemFont !important;
 }
 
 .sc-hKwCoD.kOJmuK {
@@ -117,13 +118,20 @@ h1.sc-furvIG.fPdyNs {
     padding: 0px 20px !important;
 }
 
+.kHgvvo{
+    font-family: "Inter", "Roboto", "open sans", sans-serif, "-apple-system", BlinkMacSystemFont !important;
+}
+
 .cpKEfw {
-    font: Caros !important;
+    font-family: "Inter", "Roboto", "open sans", sans-serif, "-apple-system", BlinkMacSystemFont !important;
     font-weight: 400 !important;
     font-style: normal !important;
     font-size: 14px !important;
-    color: #283A5F !important;
+    color: #344054 !important;
     line-height: 26px !important;
+}
+.cpKEfw a:hover{
+    text-decoration: underline;
 }
 
 .cpKEfw ul, .cpKEfw ol {
@@ -137,21 +145,26 @@ h1.sc-furvIG.fPdyNs {
     font-size: 14px;
     line-height: 26px;
 }
-
+.sc-iAKVOt.sc-cNKpQo.jRMZyJ.cpKEfw.redoc-markdown ul li a:hover{
+    text-decoration: underline;
+}
 .sc-iAKVOt.sc-cNKpQo.jRMZyJ.cpKEfw.redoc-markdown p {
     margin-top: 12px !important;
     margin-bottom: 20px !important;
+    font-family: "Inter", "Roboto", "open sans", sans-serif, "-apple-system", BlinkMacSystemFont !important;
 }
 
 .sc-iAKVOt.sc-cNKpQo.jRMZyJ.cpKEfw.redoc-markdown p:nth-child(3) {
     margin-bottom: 8px !important;
+    font-family: "Inter", "Roboto", "open sans", sans-serif, "-apple-system", BlinkMacSystemFont !important;
 }
 
 .dmAHft {
-    color: #283A5F !important;
-    font-size: 18px !important;
+    color: #1C1017 !important;
+    font-size: 24px !important;
     line-height: 25px !important;
-    font-weight: bold !important;
+    font-weight: 600 !important;
+    font-family: "Inter", "Roboto", "open sans", sans-serif, "-apple-system", BlinkMacSystemFont !important;
 }
 
 h2.sc-pVTma.dmAHft {
@@ -167,7 +180,7 @@ sc-hKwCoD.gZlYXm h3 {
 .sc-dkYRiW.jTjaYG.-depth1 {
     font-size: 14px !important;
     line-height: 17px !important;
-    color: #283A5F !important;
+    color: #4f5157 !important;
     font-weight: normal !important;
 }
 
@@ -258,7 +271,7 @@ h3.sc-kDThTU.iGYrlt {
 }
 
 .active {
-    color: #283A5F !important;
+    color: #344054 !important;
     font-size: 14px !important;
     line-height: 17px !important;
     font-weight: 700 !important;
@@ -274,6 +287,7 @@ h3.sc-kDThTU.iGYrlt {
 .sc-XxOsz.khYPRO {
     position: relative;
     right: -30px;
+    font-family: "Inter", "Roboto", "open sans", sans-serif, "-apple-system", BlinkMacSystemFont !important;
 }
 
 .sc-egiSv.ekRynv {
@@ -301,6 +315,14 @@ h3.sc-kDThTU.iGYrlt {
     margin: 6px !important;
     margin-bottom: 4px !important;
     margin-top: 17px !important;
+    margin-left: 23px !important;
+    margin-right: 23px !important;
+}
+
+.sc-gslxyl:focus {
+    border-color: #002bff !important;
+    box-shadow: 0 1px 2px 0 rgba(16, 24, 40, .05), 0 0 0 4px rgba(5, 101, 255, 0.24) !important;
+    border-radius: 8px !important;
 }
 
 .yrhAb {
@@ -312,26 +334,36 @@ h3.sc-kDThTU.iGYrlt {
 }
 
 .bxQUIg {
-    font-size: 16px !important;
-    border-bottom-color: #FFFFFF !important;
+    font-size: 14px !important;
+    border: none !important;
     margin: 0px 15px !important;
     font-weight: 400 !important;
     padding: 5px 10px 5px 0px !important;
+    width: 95% !important;
+    font-family: "Inter", "Roboto", "open sans", sans-serif, "-apple-system", BlinkMacSystemFont !important;
+}
+.sc-gslxyl.yrhAb:focus{
+    border-radius: 8px;
+    border-color: rgb(0, 43, 255) !important;
+    box-shadow: rgba(16, 24, 40, 0.05) 0px 1px 2px 0px, rgba(5, 101, 255, 0.24) 0px 0px 0px 4px !important;
 }
 
 .sc-iAKVOt.sc-cNKpQo.jRMZyJ.cpKEfw.redoc-markdown h3 {
     margin-bottom: 5px !important;
 }
 
+.cpKEfw code{
+    font-family: "Inter", "Roboto", "open sans", sans-serif, "-apple-system", BlinkMacSystemFont !important;
+}
 
 .hxRxFr {
     position: absolute;
-    right: 20px !important;
+    right: 32px !important;
     height: 1.3em !important;
-    width: 20px !important;
+    width: 14px !important;
     left: unset !important;
     opacity: 0.6;
-    top: 25px !important;
+    top: 22px !important;
 }
 
 
@@ -369,13 +401,14 @@ div#section\/Getting-Started\/Authentication {
 body {
     margin: 0;
     padding: 0;
+    font-family: "Inter", "Roboto", "open sans", sans-serif, "-apple-system", BlinkMacSystemFont !important;
 }
 
 #nav-header-style {
     background: #fafafa;
     color: black;
     font-weight: 500;
-    font-family: "roboto";
+    font-family: "Inter", "Roboto", "open sans", sans-serif, "-apple-system", BlinkMacSystemFont !important;
     height: 35px;
     padding-left: 10px;
     padding-top: 12px;
@@ -387,7 +420,7 @@ body {
     background-color: rgb(36, 143, 178);
     color: rgb(255, 255, 255);
     text-transform: uppercase;
-    font-family: Montserrat, sans-serif;
+    font-family: "Inter", "Roboto", "open sans", sans-serif, "-apple-system", BlinkMacSystemFont !important;
     padding: 3px 10px;
     margin: 0px;
     text-decoration: none;
@@ -425,6 +458,9 @@ body {
 
 .euKCrk .token.boolean {
     color: rgb(160, 251, 170) !important;
+}
+.ifwede{
+    font-family: "Inter", "Roboto", "open sans", sans-serif, "-apple-system", BlinkMacSystemFont !important;
 }
 .ifwede.get {
     background-color: #1AAA55 !important;
@@ -513,10 +549,13 @@ body {
     font-size: 14px !important;
 }
 .iSaGJa {
-    color: #283A5F !important;
+    color: #344054  !important;
+}
+.iyimRk *{
+        font-family: "Inter", "Roboto", "open sans", sans-serif, "-apple-system", BlinkMacSystemFont !important;
 }
 .iyimRk{
-    color : #283A5F !important;
+    color: #344054  !important;
 }
 .iSaGJa{
     padding : 1px 5px !important;
@@ -567,7 +606,7 @@ body {
     background-color: #2B2C35 !important;
 }
 .bcRvbG code{
-    color : #283A5F !important;
+    color: #344054  !important;
     font-weight : normal !important;
 }
 .bcRvbG span {
@@ -591,10 +630,22 @@ body {
 }
 
 .jAudhj, .ehRoAS, .kMugIr, .dONVW, .bcRvbG blockquote, .ciuLQT button, .cpKEfw blockquote {
-    color: #283A5F !important;
+    color: #344054  !important;
 }
 
 div#operation\/client_authentication .sc-iCfLBT .sc-hKwCoD .sc-gjNGvZ, div#operation\/application_startup .sc-iCfLBT .sc-hKwCoD .sc-gjNGvZ
 {
 	display: none !important;
+}
+#copyright{
+    font-family: "Inter", "Roboto", "open sans", sans-serif, "-apple-system", BlinkMacSystemFont !important;
+}
+
+.sc-gslxyl.yrhAb:focus-within
+{
+    border-color: #002bff !important;
+    box-shadow: 0 1px 2px rgba(16,24,40,0.05), 0 0 0 4px rgba(5,101,255,0.24) !important;
+    border-radius: 8px !important;
+    z-index: 9999 !important;
+    outline: none !important;
 }

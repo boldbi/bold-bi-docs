@@ -2,7 +2,7 @@
 layout: post
 title: Resources Feature Permissions in Embedded BI | Bold BI Docs
 description: Learn how to manage and control feature-level permissions for users and groups across all dashboards in Bold BI Embedded. 
-canonical: "/managing-resources/resources-feature-permission/"
+canonical: "/managing-resources/manage-permissions/manage-resources-feature-permission/"
 platform: bold-bi
 documentation: ug
 ---

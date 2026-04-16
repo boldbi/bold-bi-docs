@@ -90,7 +90,7 @@ plugins:
 
 3. Select the newly created pipeline and add the **ElasticSearch** template.
 
-  ![elastic search Data Hub - BoldBI](/static/assets/working-with-etl/images/elasticSearch_addtemplate.png#max-width=100%)
+  ![elastic search Data Hub - BoldBI](/static/assets/working-with-etl/images/elastic_search_addtemplate.png#max-width=100%)
 
 4. Enter the ElasticSearch connection and authentication details.
     * Host - ElasticSearch host URL.

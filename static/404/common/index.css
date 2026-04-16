@@ -209,7 +209,6 @@ div#docerror-search-result .search-content-close > span::before {
 }
 
 .e-error-container {
-    top: 60px;
     bottom: 0;
     margin-top: 0;
     max-width: 100%;
@@ -408,3 +407,8 @@ div#docerror-search-result div.gsc-selected-option {
     text-align: left;
     padding-left: 5px;
 }
+
+#gsc-i-id1::placeholder {
+  text-indent: 40px; /* adjust value as needed */
+}
+

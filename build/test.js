@@ -102,11 +102,10 @@ gulp.task('platform-order-validation', (done) => {
     done();
 });
 
-gulp.task('test', gulp.series('typo', 'file-validation','seo-validation','js-lint', 'html-lint','url-validation', function(done){
+gulp.task('test', gulp.series('build', 'typo', 'file-validation','seo-validation', 'js-lint', 'html-lint','url-validation', function(done) {
     done();
 }));
 
 gulp.task('ci-test', gulp.series('platform-order-validation', 'redirect-validation', 'test',function(done) {
     done();
 }));
-

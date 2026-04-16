@@ -699,12 +699,12 @@ Below is a categorized list of sample dashboards. Each category contains multipl
   <tr>
     <td>Retail Store Performance Dashboard</td>
     <td>This retail store performance dashboard presents key metrics and KPIs: sales revenue, gross margin, conversion rate, foot traffic, inventory turnover, customer retention rate, and employee productivity. The dashboard provides a comprehensive view of the store's performance and helps identify opportunities for improvement.</td>
-    <td><a href="https://samples.boldbi.com/solutions/retail/store-performance-dashboard">Retail Store Performance Demo – Retail Dashboards | Bold BI®</a></td>
+    <td><a href="https://samples.boldbi.com/solutions/retail/retail-store-performance-dashboard">Retail Store Performance Demo – Retail Dashboards | Bold BI®</a></td>
   </tr>
   <tr>
     <td>Retail Inventory Management Dashboard</td>
     <td>Our retail inventory management dashboard provides key metrics and KPIs to help managers and owners effectively manage their inventory. By tracking inventory turnover, stock-out rate, GMROI, sell-through rates, the order fill rate, and other important metrics, the dashboard helps to optimize inventory levels and increase profitability.</td>
-    <td><a href="https://samples.boldbi.com/solutions/retail/inventory-management-dashboard">Retail Inventory Management Demo – Retail Dashboards | Bold BI®</a></td>
+    <td><a href="https://samples.boldbi.com/solutions/retail/retail-inventory-management-dashboard">Retail Inventory Management Demo – Retail Dashboards | Bold BI®</a></td>
   </tr>
 </table>
 
@@ -929,7 +929,7 @@ Below is a categorized list of sample dashboards. Each category contains multipl
     <tr>
         <td>Stack Overflow Developer Survey 2022 Dashboard</td>
         <td>The Stack Overflow Developer Survey is an annual survey of developers worldwide that provides information about their demographics, career goals, and technology usage. The dashboard visually represents this data and investigates long-term trends such as changes in programming language popularity and remote work.</td>
-        <td><a href="https://samples.boldbi.com/solutions/survey-analysis/developer-survey-2022-dashboard">Stack Overflow Developer Survey 2022 – Survey Analysis Dashboards | Bold BI®</a></td>
+        <td><a href="https://samples.boldbi.com/solutions/survey-analysis/developer-survey-2024-dashboard">Stack Overflow Developer Survey 2022 – Survey Analysis Dashboards | Bold BI®</a></td>
     </tr>
     <tr>
         <td>Business Survey Analysis Dashboard</td>

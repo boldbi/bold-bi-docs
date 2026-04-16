@@ -1,70 +1,71 @@
 ---
 layout: post
-title:  Monitoring the Health of Bold BI Services | Bold BI Docs
-description: Learn how to monitor the health of Bold BI application services and includes reference links for detailed steps
+title: Monitoring the Health of Bold BI Services | Bold BI Docs
+description: Learn how to monitor the health of Bold BI application services and includes reference links for detailed steps.
 platform: bold-bi
 documentation: ug
 ---
+
 # Monitoring Bold BI Application
 
-This documentation outlines how to monitor the health of Bold BI application services and includes reference links for detailed steps on enabling monitoring using tools such as Datadog, Prometheus, and Grafana. Follow the steps and guidelines provided in this documentation to effectively monitor your Bold BI application.
+This article describes how to monitor the health of Bold BI application services and provides reference links with detailed steps for enabling monitoring using tools such as Datadog, Prometheus, and Grafana.
 
 ## Bold BI Services Health Check Endpoints
 
-By default, Bold BI provides health information for its services through the `/api/health-check` endpoint at the hosted URL. These endpoints can be used to monitor the health of the services.
+By default, Bold BI exposes health information for its services through health check endpoints at the hosted URL (for example, `/api/health-check`). These endpoints can be used to monitor service health.
 
 ### Service Health Check Endpoints
 
 Use the following endpoints to check the status of all services or individual services:
 
-- **All Services Status:** 
-
+- **All Services Status:**
+  
   `https://your-domain.com/api/status`
 
 For individual service health checks, use these endpoints:
 
-- **IDP-WEB:**  
-
+- **IDP-WEB:**
+  
   `https://your-domain.com/health-check`
 
-- **IDP-API:**  
-
+- **IDP-API:**
+  
   `https://your-domain.com/api/health-check`
 
-- **IDP-UMS:** 
-
+- **IDP-UMS:**
+  
   `https://your-domain.com/ums/health-check`
 
-- **BI-WEB:**  
-
+- **BI-WEB:**
+  
   `https://your-domain.com/bi/health-check`
 
-- **BI-API:** 
-
+- **BI-API:**
+  
   `https://your-domain.com/bi/api/health-check`
 
-- **BI-JOBS:**  
-
+- **BI-JOBS:**
+  
   `https://your-domain.com/bi/jobs/health-check`
 
-- **BI-DESIGNER:** 
-
+- **BI-DESIGNER:**
+  
   `https://your-domain.com/bi/designer/health-check`
 
-- **BI-ETL:**  
-
+- **BI-ETL:**
+  
   `https://your-domain.com/etlservice/health-check`
-
-By using the above endpoints, you can ensure that the services are online and functioning correctly.
+  
+By using the above endpoints, you can verify that the services are online and functioning correctly.
 
 ### Documentation for Enabling Monitoring with Various Tools
 
-To enable monitoring for the Bold BI application based on your specific use case, refer to the following articles:
+To enable monitoring for the Bold BI application based on your use case, refer to the following articles:
 
 - [How to Monitor and Alert Bold BI Using Grafana and Prometheus in Kubernetes](https://support.boldbi.com/kb/article/624/how-to-monitor-and-alert-bold-bi-using-grafana-and-prometheus-in-kubernetes)
 - [Configure Robusta for Alerting and Monitoring Bold BI](https://support.boldbi.com/kb/article/590/configure-robusta-for-alerting-and-monitoring-bold-bi)
-- [Monitoring Bold BI Application with Datadog](https://support.boldbi.com/kb/article/16191/monitoring-bold-bi-application-with-datadog)
+- [Monitoring Bold BI Application with Datadog](https://support.boldbi.com/kb/article/16191/monitoring-boldbi-application-with-datadog)
 - [Monitoring the Query Execution Performance of Bold BI with Grafana](https://support.boldbi.com/kb/article/16393/monitoring-the-query-execution-performance-of-bold-bi-with-grafana)
 - [Monitoring and Alerting Bold BI in Windows Using Grafana and Prometheus](https://support.boldbi.com/kb/article/592/monitoring-and-alerting-bold-bi-in-windows-using-grafana-and-prometheus)
 
-If you require integration with a specific monitoring tool that is not covered here, please reach out to our support team for assistance.
+If you require integration with a specific monitoring tool that is not covered here, contact the support team for assistance.

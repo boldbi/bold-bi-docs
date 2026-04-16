@@ -1,0 +1,174 @@
+{
+	"Deployment": {
+		"slug": "deploying-bold-bi",
+		"pages": {
+			"Overview": "overview",
+			"Deploy on Windows": {
+				"slug": "deploying-on-windows",
+				"pages": {
+					"Prerequisites": "prerequisites-windows",
+					"System Configuration": "recommended-system-configuration",
+					"Install and Deploy": "installation-and-deployment",
+					"Version Upgrade": "upgrade-to-latest",
+					"Install Bold BI over Bold Reports": "install-when-bold-report-exist",
+					"Silent Installation": "silent-installation"
+				}
+			},
+			"Deploy on Azure": {
+				"slug": "deploying-on-azure",
+				"pages": {
+					"Prerequisites": "prerequisites-azure-vm",
+					"Recommended Azure VM Configuration": "vm-configuration",
+					"Self-deploy on Microsoft Azure": "self-deploy-azure-vm",
+					"Azure Marketplace Deployment": "new-azure-vm",
+					"Upgrade VM": "update-azure-vm"
+				}
+			},
+			"Deploy on AWS": {
+				"slug": "deploying-on-aws",
+				"pages": {
+					"Prerequisites": "prerequisites-aws-vm",
+					"Self-deploy on AWS VM": "deploy-aws-vm",
+					"Deploy on EKS": "deploy-aws-eks",
+					"Deploy on ECS Fargate": "deploy-aws-ecs",
+					"Upgrade VM": "update-aws-vm"
+				}
+			},
+			"Deploy on GCP": {
+				"slug": "deploying-on-gcp",
+				"pages": {
+					"Prerequisites": "prerequisites-gcp-vm",
+					"Self-deploy on GCP VM": "deploy-gcp-vm"
+				}
+			},
+			"Deploy on Azure App Service": {
+				"slug": "deploying-on-azure-app-service",
+				"pages": {
+					"Prerequisites": "prerequisites",
+					"Recommendations": "recommendations",
+					"Deploy Using the ARM Template": "deploy-bold-bi-using-arm-template",
+					"Deploy Bold BI and Reports using ARM Template": "deploy-bold-bi-and-reports-using-arm-template",
+					"Install Client Libraries": "install-client-libraries"
+				},
+				"Upgrade": {
+					"slug": "upgrade",
+					"pages": {
+						"Upgrade to Latest": "upgrade-to-latest",
+						"Upgrade to v4.1": "upgrade-to-v4.1"
+					}
+				}
+			},
+			"Deploy on Linux": {
+				"slug": "deploying-on-linux",
+				"pages": {
+					"Prerequisites": "prerequisites-linux",
+					"System Configuration": "recommended-system-configuration"
+				},
+				"Install and Deploy": {
+					"slug": "installation-and-deployment",
+					"pages": {
+						"v4.1 or Older": {
+							"slug": "v4.1-or-older",
+							"pages": {
+								"Ubuntu": "bold-bi-on-ubuntu",
+								"CentOS": "bold-bi-on-centos"
+							}
+						},
+						"Ubuntu": "bold-bi-on-ubuntu",
+						"CentOS": "bold-bi-on-centos",
+						"Oracle": "bold-bi-on-oracle",
+						"RHEL": "bold-bi-on-redhat",
+						"RHEL Using RPM": "bold-bi-using-rpm",
+						"SUSE 15 Linux": "bold-bi-on-open",
+						"Auto Deployment": "auto-deployment",
+						"Install over Bold Reports": "bold-bi-over-bold-reports"
+					}
+				},
+				"Deploy Using Apache Server": {
+					"slug": "deploy-bold-bi-using-apache-server",
+					"pages": {
+						"CentOS": "configure-apache-server-in-centos",
+						"Ubuntu": "configure-apache-server-in-ubuntu"
+					}
+				},
+				"Install Optional Libraries": {
+					"slug": "install-optional-libraries",
+					"pages": {
+						"v5.2 or Above": "v5.2-or-above",
+						"v5.1": "v5.1",
+						"v4.2": "v4.2",
+						"v4.1 or Older": "v4.1-or-older"
+					}
+				},
+				"Upgrade Linux Server": {
+					"slug": "upgrade-to-latest"
+				}
+			},
+			"Deploy on Kubernetes": {
+				"slug": "deploying-on-kubernetes",
+				"pages": {
+					"Prerequisites": "prerequisites-kubernetes",
+					"System Configuration": "recommended-system-configuration",
+					"Bold BI on Kubernetes": "bold-bi-on-kubernetes"
+				}
+			},
+			"Deploy on Docker": {
+				"slug": "deploying-on-docker",
+				"pages": {
+					"Prerequisites": "deployment-prerequisites",
+					"System Configuration": "recommended-system-configuration"
+				},
+				"Docker Deployment": {
+					"slug": "bold-bi-on-docker",
+					"pages": {
+						"Docker Single Container": "bold-bi-on-single-container",
+						"Docker Multi Container": "bold-bi-on-multi-container",
+						"Evaluation Deployment": "bold-bi-eval-on-single-container",
+						"Configure SSL": "how-to-configure-ssl-for-docker-compose",
+						"Upgrade Docker Deployment": "upgrade-image-in-docker-deployment"
+					}
+				}
+			},
+			"Deploy Cloud Platform Using Terraform": "deploying-on-cloud-platform-using-terraform",
+			"Upgrade Guidelines": "upgrade-guidelines"
+		}
+	},
+	"Application Startup": {
+		"slug": "application-startup",
+		"pages": {
+			"Latest": "latest",
+			"v4.2.68 or Earlier": "v4.2.68-or-earlier"
+		}
+	},
+	"Utilities": {
+		"slug": "utilities",
+		"pages": {
+			"Command Line Tools": {
+				"slug": "bold-bi-command-line-tools",
+				"pages": {
+					"Reset Password": "reset-password",
+					"Reset Application Database": "reset-application-database",
+					"Reset Two-Factor Authentication": "reset-2fa",
+					"Version 3.3 or Earlier": {
+						"slug": "v3.3-or-older",
+						"pages": {
+							"Reset Password (v3.3 or Earlier)": "reset-password",
+							"RReset Application Database (v3.3 or Earlier)": "reset-application-database"
+						}
+					}
+				}
+			},
+			"Classic Dashboard Migration Tool": "classic-dashboard-migration-tool",
+			"Fine-Tuning Utility": {
+				"slug": "fine-tuning-utility",
+				"pages": {
+					"OpenAI": "openai",
+					"Azure OpenAI": "azure-openai"
+				}
+			}
+		}
+	},
+	"Disaster Recovery": {
+		"slug": "disaster-recovery"
+	}
+}

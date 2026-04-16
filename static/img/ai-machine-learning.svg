@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="56"
+     height="56"
+     viewBox="0 0 56 56"
+     fill="none">
+
+  <!-- Circular background -->
+  <circle
+    cx="28"
+    cy="28"
+    r="28"
+    fill="#af32dd" /> <!-- medium violet -->
+
+  <!-- Icon group: centered & padded -->
+  <g
+    transform="translate(28 28) scale(0.48) translate(-32 -32)"
+    stroke="white"
+    fill=""
+    stroke-width="3"
+    stroke-linecap="round"
+    stroke-linejoin="round">
+
+    <!-- Star / highlight -->
+    <path d="M49.5013 37.7059L52.6141 44.8959L61.1281 48.8805L52.6141 53.3173L49.9536 60.5073L46.8408 53.3173L38.3267 49.3327L45.5167 46.2199L49.5013 37.7059"/>
+
+    <!-- Document -->
+    <path d="M34.2133 52.83H11.2528C9.19641 52.83 7.52942 51.163 7.52942 49.1067V11.2528
+             C7.52942 9.19642 9.19641 7.52942 11.2528 7.52942H47.245
+             C49.3013 7.52942 50.9683 9.19641 50.9683 11.2528V32.3517"/>
+
+    <!-- Top bar -->
+    <path d="M8.47058 12.2354H49.8823"/>
+
+    <!-- Content / text -->
+    <path d="M21.0855 39.8955H17.5561L23.9822 21.6424H28.0642L34.4991 39.8955H30.9697L26.0945
+             25.3857H25.9519L21.0855 39.8955Z"/>
+
+    <path d="M21.2014 32.7386H30.8271V35.3946H21.2014Z"/>
+    <path d="M40.2099 21.6424V39.8955"/>
+
+  </g>
+</svg>

@@ -1,0 +1,175 @@
+{
+	"Embedding Options": {
+		"slug": "embedding-options",
+		"pages": {
+			"Embedding SDK": {
+				"slug": "embedding-sdk",
+				"pages": {
+					"Token Generation": "token-generation",
+					"Embed Dashboard": "embed-viewer-dashboard",
+					"Embed Designer": "embed-designer-dashboard",
+					"Row Level Security": "row-level-security",
+					"Anonymous User": "anonymous-user",
+					"Retrieve Dashboard Listing": "retrieve-dashboard-listing",
+					"Component API v2.0": {
+						"slug": "component-api-v2.0",
+						"pages": {
+							"Dashboard": {
+								"slug": "dashboard",
+								"pages": {
+									"Members": "dashboard-members.md",
+									"Methods": "dashboard-methods.md",
+									"Events": "dashboard-events.md"
+								}
+							},
+							"Designer": {
+								"slug": "designer",
+								"pages": {
+									"Members": "designer-members",
+									"Methods": "designer-methods",
+									"Events": "designer-events"
+								}
+							},
+							"Multi-Tab": {
+								"slug": "multi-tab",
+								"pages": {
+									"Members": "multi-tab-members",
+									"Methods": "multi-tab-methods",
+									"Events": "multi-tab-events"
+								}
+							},
+							"Datasource": {
+								"slug": "datasource",
+								"pages": {
+									"Members": "datasource-members",
+									"Methods": "datasource-methods",
+									"Events": "datasource-events"
+								}
+							},
+							"AI Assistant": {
+								"slug": "ai-assistant",
+								"pages": {
+									"Members": "ai-assistant-members",
+									"Methods": "ai-assistant-methods"
+								}
+							},
+							"Widget": {
+								"slug": "widget",
+								"pages": {
+									"Members": "widget-members",
+									"Methods": "widget-methods",
+									"Events": "widget-events"
+								}
+							},
+							"Pinboard": {
+								"slug": "pinboard",
+								"pages": {
+									"Members": "pinboard-members",
+									"Methods": "pinboard-methods",
+									"Events": "pinboard-events"
+								}
+							}
+						}
+					},
+					"Authorization Options": {
+						"slug": "authorization-options",
+						"pages": {
+							"Token Generation (v13 and below)": "token-generation-lower-version",
+							"API Key Authentication": "api-key-authentication",
+							"Authorization Server URL Workflow": "authorization-server-url-work-flow",
+							"Group-Based Authorization": "group-based-authorization",
+							"Enable User Import with Group-Based Authorization": "enabling-user-import-with-group-based-authorization"
+						}
+					},
+					"Embed Components": {
+						"slug": "embed-different-components",
+						"pages": {
+							"Data Source": "embed-datasource",
+							"Create Dashboard": "embed-new-dashboard",
+							"Multi-Tab Dashboard": "embed-multi-tab-dashboard",
+							"AI Assistant": "embed-ai-assistant",
+							"Pinboard": "embed-pinboard",
+							"Dashboard Widget": "embed-dashboard-widget",
+							"Dashboard Views": "embed-view"
+						}
+					},
+					"Component API v1.0": {
+						"slug": "component-api-v1.0",
+						"pages": {
+							"Members": "members",
+							"Methods": "methods",
+							"Events": "events"
+						}
+					},
+					"Samples": {
+						"slug": "samples",
+						"pages": {
+							"ASP.NET Core": "asp-net-core",
+							"ASP.NET MVC": "asp-net-mvc",
+							"Angular with ASP.NET Core": "angular-with-core",
+							"React with ASP.NET Core": "react-core",
+							"React with Node.js": "react-with-node-js",
+							"React with Go": "react-with-go",
+							"React with Python": "react-with-python",
+							"Node.js": "node-js",
+							"Blazor WebAssembly": "blazor-web-assembly",
+							"Blazor with JavaScript": "blazor-with-javascript",
+							"ASP.NET WebForms": "asp-net-web-forms",
+							"VueJS with ASP.NET Core": "vuejs-with-core",
+							"VueJS with Go": "vuejs-with-go",
+							"VueJS with Node.js": "vuejs-with-node-js",
+							"PHP with JavaScript": "php-with-javascript",
+							"Java Servlet": "java-servlet",
+							"Django": "django",
+							"WinForms": "winforms",
+							"Ruby on Rails": "ruby-on-rails",
+							"WPF": "wpf",
+							"Xamarin": "xamarin",
+							"Flutter with JavaScript": "flutter-with-javascript",
+							"ColdFusion": "cold-fusion",
+							"Ionic with ASP.NET Core": "ionic-with-core",
+							"Spring Boot": "spring-boot"
+						},
+						"v3.2.16": {
+							"slug": "v3.2.16",
+							"pages": {
+								"ASP.NET Core": "asp-net-core",
+								"ASP.NET MVC": "asp-net-mvc",
+								"Angular": "angular"
+							}
+						}
+					}
+				}
+			},
+			"iFrame Embedding": {
+				"slug": "iframe-embedding",
+				"pages": {
+					"Embedding with iframe": "embedding-with-iframe",
+					"Embedding with Token Authentication": "embedding-with-token-authentication",
+					"Full Server Embedding": "full-server-embedding",
+					"Secured Embedding": "secured-embedding",
+					"Get Data source URL": "get-datasource-url",
+					"Sample": {
+						"slug": "sample",
+						"pages": {
+							"Dashboard Embedding": {
+								"slug": "dashboard-embedding",
+								"pages": {
+									"ASP.NET MVC": "asp.net-mvc",
+									"Javascript": "javascript"
+								}
+							},
+							"Data source Embedding": {
+								"slug": "data-source-embedding",
+								"pages": {
+									"Javascript": "javascript"
+								}
+							}
+						}
+					},
+					"Dynamic Connection String": "dynamic-connection-string"
+				}
+			}
+		}
+	}
+}

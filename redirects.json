@@ -51046,5 +51046,21 @@
   {
     "fromPath": "/embedding-options/embedding-sdk/samples/asp-net/",
     "toPath": "/embedding-options/embedding-sdk/samples/asp-net-web-forms/"
+  },
+  {
+    "fromPath": "/working-with-data-sources/working-with-bold-data-hub/data-connectors/person/",
+    "toPath": "/working-with-data-sources/working-with-bold-data-hub/data-connectors/"
+  },
+  {
+    "fromPath": "/working-with-data-sources/working-with-bold-data-hub/data-connectors/stripe/",
+    "toPath": "/working-with-data-sources/working-with-bold-data-hub/data-connectors/"
+  },
+  {
+    "fromPath": "/working-with-data-sources/working-with-bold-data-hub/data-connectors/strip/",
+    "toPath": "/working-with-data-sources/working-with-bold-data-hub/data-connectors/"
+  },
+  {
+    "fromPath": "/working-with-data-sources/working-with-bold-data-hub/data-connectors/zendesk-chart/",
+    "toPath": "/working-with-data-sources/working-with-bold-data-hub/data-connectors/"
   }
 ]

@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Responsive Design – Overview - Embedded BI | Bold BI Docs
-description: Know how Bold BI Embedded site supports responsiveness for different layouts in desktop, mobile and tablet devices.
+title: Responsive Design Overview - Embedded BI | Bold BI Docs
+description: Learn how the Bold BI Embedded site supports responsive layouts for desktop, mobile, and tablet devices.
 platform: bold-bi
 documentation: ug
 
@@ -9,16 +9,19 @@ documentation: ug
 
 # Responsive behavior in Bold BI
 
-Generally, a responsive design on a website allows users to have a great experience regardless of the size of the device used to view the site.
+Responsive design allows a website to adapt its layout based on the device screen size.
 
-Our `Bold BI` site also supports responsiveness for different layouts on various devices.
+Bold BI supports responsive layouts across different devices.
 
-Bold BI allows you to view the dashboard in three kinds of layouts,
+Bold BI supports the following dashboard layouts:
 
 * Desktop
 * Mobile
 * Tablet
 
-You can see the responsive visualizations of the Bold BI Dashboard in [Responsive Layout](/responsive-layout/responsive-design-bold-bi-dashboard/).
+You can see the responsive layouts for the Bold BI dashboard in [Responsive Layout](/responsive-layout/responsive-design-bold-bi-dashboard/).
 
-Additionally, you can see the responsive visualizations of the Bold BI Server in [Responsive Layout](/responsive-layout/responsive-design-bold-bi-server/).
+Additionally, you can see the responsive layouts for the Bold BI server in [Responsive Layout](/responsive-layout/responsive-design-bold-bi-server/).
+
+
+
