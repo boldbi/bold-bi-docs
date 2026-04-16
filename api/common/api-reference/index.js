@@ -14,7 +14,7 @@ $(window).on('load', function() {
             }
         });
         var currentyear = new Date().getFullYear();
-        $(".api-content" ).append("<div id='doc-footer'><div id='footer-copyright'><a id='copyright' target='_blank' href='https://www.boldbi.com/copyright'>Copyright © 2001 - <span id='copyright-year'>"+ currentyear+"</span> Syncfusion Inc. All Rights Reserved</a></div><div id='footer-powered_by'></div></div>");
+        $(".api-content" ).append("<div id='doc-footer'><div id='footer-copyright'><a id='copyright' target='_blank' href='https://www.boldbi.com/copyright'>Copyright © 2001 - <span id='copyright-year'>"+ currentyear+"</span> Syncfusion Inc. All Rights Reserved</a></div><div class='footer-links-container'><a class='footer-links' href='https://www.boldbi.com/legal/terms-of-use/'>Terms of Use</a><a class='footer-links' href='https://www.boldbi.com/legal/privacy/'>Privacy Policy</a><a class='footer-links' href='https://www.boldbi.com/legal/cookie-policy/'>Cookie Policy</a></div></div>");
     }, 2000);
 });
 

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="56"
+     height="56"
+     viewBox="0 0 56 56"
+     fill="none">
+
+  <!-- Circular background (no border) -->
+  <circle
+    cx="28"
+    cy="28"
+    r="28"
+    fill="#d63384" /> <!-- dark pink -->
+
+  <!-- Icon group: centered & padded -->
+  <g
+    transform="translate(28 28) scale(0.52) translate(-28 -28)"
+    stroke="white"
+    fill=""
+    stroke-width="3"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  >
+    <path d="M42 55.3636C42 55.3636 50 51.2909 50 45.1818V38.0545L42 35L34 38.0545V45.1818C34 51.2909 42 55.3636 42 55.3636Z"/>
+
+    <path d="M39 45.1816L41 47.218L45 43.1452"/>
+
+    <path d="M29 50H15C11.2288 50 9.34315 50 8.17157 48.8284C7 47.6569 7 45.7712 7 42V15C7 11.2288 7 9.34315 8.17157 8.17157C9.34315 7 11.2288 7 15 7H35C38.7712 7 40.6569 7 41.8284 8.17157C43 9.34315 43 11.2288 43 15V28.5"/>
+
+    <path d="M12 21.5H21.5"/>
+    <path d="M12 29.5H30.5"/>
+    <path d="M11.9961 37.75H28.0039"/>
+  </g>
+</svg>

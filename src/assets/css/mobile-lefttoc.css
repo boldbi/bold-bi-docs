@@ -1,0 +1,469 @@
+/* Mobile left TOC overlay styles and slide animation */
+.mobile-lefttoc-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.3);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 220ms ease, visibility 220ms ease;
+  z-index: 1200;
+}
+.mobile-lefttoc-backdrop.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Backdrop close button (white circular button top-right) */
+.mobile-lefttoc-backdrop-close {
+  position: fixed;
+  top: 12px;
+  right: 12px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  color: #0f172a;
+  /* box-shadow: 0 4px 12px rgba(16,24,40,0.12); */
+  z-index: 1300; /* above the aside (1250) */
+  cursor: pointer;
+  margin-top: 60px; ;
+  padding-bottom: 3px;
+}
+.mobile-lefttoc-backdrop-close:focus {
+  outline: 2px solid rgba(37,99,235,0.24);
+  outline-offset: 2px;
+}
+
+.mobile-lefttoc {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 320px;
+  max-width: 85%;
+  background: #fff;
+  transform: translateX(-100%);
+  transition: transform 260ms cubic-bezier(.2,.8,.2,1);
+  box-shadow: 2px 0 12px rgba(0,0,0,0.2);
+  z-index: 1250;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.mobile-lefttoc.open { transform: translateX(0); }
+
+.mobile-lefttoc-header { padding: 12px; border-bottom: 1px solid #eee; margin-top: 60px; }
+.mobile-lefttoc-brandrow { display:flex; align-items:center; justify-content:space-between; padding: 8px 12px; }
+.mobile-lefttoc-brand { display:flex; align-items:center; }
+.mobile-lefttoc-brand img.header-logo { height: 28px; width: auto; display:block; }
+.mobile-lefttoc-brand-actions { display:flex; align-items:center; }
+.mobile-theme-btn { background:transparent; border:0; padding:6px; display:none; align-items:center; justify-content:center; }
+.mobile-theme-btn img.theme-toggle-icon { height:18px; width:18px; display:block; }
+.mobile-lefttoc-top { display:flex; gap:8px; align-items:center; padding:0px 15px 0px 15px; }
+.mobile-lefttoc-dropdown { flex:1; padding:8px; font-size:14px; }
+.mobile-lefttoc-close { background:transparent; border:0; font-size:20px; line-height:1; padding:6px; }
+/* Wrapper for custom arrow */
+.mobile-lefttoc-dropdown-wrapper {
+  position: relative;
+  width: 100%;
+  padding: 0 14px 0 14px;
+}
+
+/* Main dropdown */
+.mobile-lefttoc-dropdown {
+  width: 100%;
+  padding: 8px 40px 8px 10px;
+  font-size: 14px;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  background: #f9fafb;
+  color: #111827;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Focus effect (like image) */
+.mobile-lefttoc-dropdown:focus {
+  border-color: #2563eb;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+/* Custom arrow */
+.mobile-lefttoc-dropdown-wrapper::after {
+  content: '';
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  width: 6px;
+  height: 6px;
+  border-right: 2px solid #6b7280;
+  border-bottom: 2px solid #6b7280;
+  transform: translateY(-50%) rotate(45deg); /* DOWN */
+  transition: transform 0.2s ease;
+  pointer-events: none;
+}
+
+/* Arrow UP when open */
+.mobile-lefttoc-dropdown-wrapper.open::after {
+  transform: translateY(-50%) rotate(-135deg); /* UP */
+}
+.mobile-lefttoc-dropdown option {
+  padding: 10px 14px;
+  font-size: 14px;
+  line-height: 1.4;
+  background: #ffffff;
+  color: #111827;
+}
+
+/* Improve option hover / focus / selected visuals where supported by the UA */
+.mobile-lefttoc-dropdown option:hover,
+.mobile-lefttoc-dropdown option:focus {
+  background: #f8fafc;
+  color: #16181E;
+}
+.mobile-lefttoc-dropdown option:checked,
+.mobile-lefttoc-dropdown option[selected] {
+  background: #e6f0ff;
+  color: #002bff;
+}
+
+/* Selected option (best effort) */
+.mobile-lefttoc-dropdown option:checked {
+  color: #ef4444; /* red like image */
+}
+
+.mobile-lefttoc-search {
+  /* match left TOC search container spacing */
+  padding: 15px 0px 0px 15px;
+}
+.mobile-lefttoc-search { position: relative; }
+.mobile-lefttoc-search input[type="search"]::-webkit-search-cancel-button { display: none; -webkit-appearance:none; appearance:none; }
+.mobile-lefttoc-search .search-clear-btn {
+  position: absolute;
+  /* use a fixed pixel offset so the button doesn't shift when
+     the suggestions dropdown changes height */
+  right: 20px;
+  top: 18px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 1px solid #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 20px;
+  color: #374151;
+  z-index: 80;
+  padding: 0;
+  transform: none;
+}
+.mobile-lefttoc-search input#auto-complete {
+  width: 95%;
+  padding: 8px 10px 8px 10px;
+  padding-right: 40px;
+  font-size: 14px;
+  border: 1px solid #d0d5dd;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #374151;
+  box-sizing: border-box;
+  outline: none;
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24'><path d='M21 21l-4.35-4.35' stroke='%23667085' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' fill='none'/><circle cx='10.5' cy='10.5' r='6' stroke='%23667085' stroke-width='2' fill='none'/></svg>");
+}
+.mobile-lefttoc-search input#auto-complete:focus {
+  border-color: #002bff;
+  box-shadow: 0 1px 2px 0 rgba(16, 24, 40, .05), 0 0 0 4px rgba(5, 101, 255, 0.24);
+  border-radius: 8px;
+}
+.mobile-left-toc-search-suggestions {
+  margin: 8px 0 0 0;
+  padding: 0;
+  list-style: none;
+  max-height: 220px;
+  overflow: auto;
+  border: 1px solid #d0d5dd;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0 6px 12px rgba(16, 24, 40, 0.06);
+  z-index: 60;
+  width: 95%;
+}
+.mobile-left-toc-search-suggestions li {
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #374151;
+  border-bottom: 1px solid #f3f4f6;
+}
+.mobile-search-suggestion{
+  background-color: transparent !important;
+  border: none !important;
+  text-align: left !important;
+  line-height: 22px !important;
+}
+.mobile-left-toc-search-suggestions li:last-child { border-bottom: none; }
+.mobile-left-toc-search-suggestions li:hover, .mobile-left-toc-search-suggestions li:focus { background: #f8fafc; color: #0f172a; }
+
+.mobile-lefttoc-nav { padding:12px; }
+.mobile-lefttoc-nav ul { list-style:none; margin:0; padding:0; }
+.mobile-toc-item { margin-bottom:6px; }
+.mobile-toc-link, .mobile-toc-section-link { display:block; width:100%; text-align:left; border:0; background:transparent; }
+
+/* Match desktop left TOC colors/spacing/font */
+.mobile-toc-section-link {
+  color: #4F5157;
+  font-weight: 400;
+  text-decoration: none;
+  font-size: 14px;
+  display: block;
+  padding-left: 8px;
+}
+.mobile-toc-section-link:hover { font-weight: 500; color: #16181E; }
+.mobile-toc-link { color: #6F7177; font-size: 14px; padding-left: 20px; }
+.mobile-toc-link:hover { font-weight: 500; color: #16181E; }
+
+/* Additional rules to more closely match desktop left TOC structure */
+.mobile-lefttoc .mobile-toc-children {
+  list-style: none;
+  padding-left: 8px;
+  margin: 6px 0 0 25px;
+  position: relative;
+  line-height: 28px;
+}
+.mobile-lefttoc .mobile-toc-children::before {
+  content: '';
+  position: absolute;
+  left: -11px;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: #e6e9ee;
+}
+.mobile-lefttoc .mobile-toc-subchildren {
+  list-style: none;
+  padding-left: 5px;
+  margin: 6px 0 0 25px;
+  position: relative;
+}
+.mobile-lefttoc .mobile-toc-group-title {
+  font-size: 12px;
+  font-weight: 600;
+  color: #6b7280;
+  padding: 0 12px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+.mobile-lefttoc a[aria-current="page"],
+.mobile-lefttoc .mobile-toc-link.active {
+  color: #002bff;
+  font-weight: 500;
+}
+.mobile-lefttoc .mobile-toc-section-link[aria-current="page"] {
+  color: #2563eb;
+  font-weight: 600;
+}
+.mobile-lefttoc .mobile-toc-children a[aria-current="page"]::before,
+.mobile-lefttoc .mobile-toc-subchildren a[aria-current="page"]::before {
+  content: '';
+  position: absolute;
+  left: -19px;
+  top: -6px;
+  bottom: -6px;
+  width: 2px;
+  background: #2563eb;
+  border-radius: 2px;
+  z-index: 2;
+}
+
+/* Ensure spacing and colors for leaf links mirror desktop */
+.mobile-lefttoc .mobile-toc-link {
+  color: #6F7177;
+  font-size: 14px;
+  display: block;
+  padding-left: 20px;
+  font-weight: 400;
+}
+
+/* Use desktop toggle button styles inside mobile overlay */
+.mobile-lefttoc .left-toc-section-header,
+.mobile-lefttoc .left-toc-subsection-header {
+  display: flex;
+  align-items: center;
+  justify-content: normal;
+}
+
+.mobile-lefttoc .left-toc-section-toggle {
+  order: -1;
+  background: transparent;
+  border: none;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.mobile-lefttoc .left-toc-subtoggle {
+  order: -1;
+  background: transparent;
+  border: none;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.mobile-lefttoc .left-toc-section-toggle .caret,
+.mobile-lefttoc .left-toc-subtoggle .caret {
+  font-size: 14px;
+  color: #374151;
+}
+
+
+/* Breadcrumb toggle visibility only on small/medium screens (now up to 1024px) */
+.breadcrumb-toggle { display:none; background:transparent; border:0; padding:6px 6px 6px 0px; margin-right:6px; }
+@media (max-width: 1100px) {
+  .breadcrumb-toggle { display:inline-flex; align-items:center; justify-content:center; }
+}
+
+/* Hide mobile TOC markup on larger screens */
+@media (min-width: 1101px) {
+  .mobile-lefttoc-backdrop,
+  .mobile-lefttoc {
+    display: none !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+  }
+}
+
+/* Hide overlay theme button on larger screens */
+@media (min-width: 1101px) {
+  .mobile-lefttoc .mobile-theme-btn { display: none !important; }
+}
+
+/* prevent body scroll when mobile TOC open */
+.mobile-toc-open { overflow: hidden; }
+
+/* Hide the desktop category JSON on small/medium screens (mobile/tablet) */
+@media (max-width: 1100px) {
+  .docs-tab-wrap {
+    display: none !important;
+  }
+}
+@media (max-width: 1100px) {
+  #layout-container {
+    margin-top: 0px !important;
+  }
+}
+
+/* Custom dropdown trigger (replaces select) */
+.mobile-lefttoc-dropdown-trigger {
+  width: 100%;
+  padding: 6px 40px 6px 10px;
+  font-size: 14px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: #f3f4f6;
+  color: #111827;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+/* Focus/active */
+.mobile-lefttoc-dropdown-trigger:hover {
+  background: #f9fafb;
+}
+
+.mobile-lefttoc-dropdown-wrapper.open .mobile-lefttoc-dropdown-trigger {
+  background: #ffffff;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+/* Dropdown menu */
+.mobile-lefttoc-dropdown-menu {
+  margin-top: 8px;
+  padding-top: 6px;
+  list-style: none;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+  max-height: 260px;
+  overflow-y: auto;
+}
+
+/* Each item */
+.mobile-lefttoc-dropdown-item {
+  padding: 10px 14px;
+  font-size: 14px;
+  color: #111827;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.mobile-lefttoc-dropdown-item:hover {
+  background: #f9fafb;
+}
+
+/* Active (selected like image) */
+.mobile-lefttoc-dropdown-item.active {
+  color: #0058e6;
+  font-weight: 600;
+}
+
+/* Check icon */
+.mobile-lefttoc-dropdown-item .check {
+  font-size: 14px;
+  color: #0058e6;
+}
+/* REMOVE this (important) */
+.mobile-lefttoc-dropdown-wrapper::after {
+  display: none;
+}
+
+/* ADD arrow to trigger instead */
+.mobile-lefttoc-dropdown-trigger {
+  position: relative; /* required */
+}
+
+/* Arrow */
+.mobile-lefttoc-dropdown-trigger::after {
+  content: '';
+  position: absolute;
+  right: 16px;
+  top: 45%;
+  width: 6px;
+  height: 6px;
+  border-right: 2px solid #6b7280;
+  border-bottom: 2px solid #6b7280;
+  transform: translateY(-50%) rotate(45deg);
+  transform-origin: center;
+  transition: transform 0.2s ease;
+  pointer-events: none;
+}
+
+/* Rotate when open */
+.mobile-lefttoc-dropdown-wrapper.open 
+.mobile-lefttoc-dropdown-trigger::after {
+  transform: translateY(-50%) rotate(-135deg);
+}

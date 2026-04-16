@@ -1,0 +1,332 @@
+{
+	"Overview": {
+		"slug": "overview",
+		"pages": {
+			"Self-Service Analytics": "self-service-analytics",
+			"Embedded Analytics": "embedded-analytics",
+			"Architecture": "architecture"
+		}
+	},
+	"Quick Start": {
+		"slug": "evaluation-quick-start",
+		"pages": {
+			"Help Resources": "help-resources",
+			"Sample Dashboards": "sample-dashboards",
+			"Start Cloud Trial": "start-free-cloud-trial"
+		}
+	},
+	"Getting Started": {
+		"slug": "getting-started",
+		"pages": {
+			"Create a Dashboard": "creating-dashboard",
+			"Embed in Your Application": "embedding-in-your-application"
+		}
+	},
+	"Visualizations": {
+		"slug": "visualizing-data",
+		"pages": {
+			"Visualization Widgets": {
+				"slug": "visualization-widgets",
+				"pages": {
+					"Bar Chart": "bar-chart",
+					"Column Chart": "column-chart",
+					"Stacked Bar Chart": "stacked-bar-chart",
+					"Stacked Column Chart": "stacked-column-chart",
+					"100% Stacked Bar Chart": "100-stacked-bar-chart",
+					"100% Stacked Column Chart": "100-stacked-column-chart",
+					"Area Chart": "area-chart",
+					"Stacked Area Chart": "stacked-area-chart",
+					"100% Stacked Area Chart": "100-stacked-area-chart",
+					"Radar Polar Chart": "radar-polar-chart",
+					"Maps": "map",
+					"Bing Maps": "bing-maps",
+					"Azure Maps": "azure-maps",
+					"Grid": "grid",
+					"Pivot Grid": "pivot-grid",
+					"Tree Map": "tree-map",
+					"Heat Map": "heat-map",
+					"KPI Card": "kpi-card",
+					"Number Card": "number-card",
+					"Radial Gauge": "radial-gauge",
+					"Pie Chart": "pie-chart",
+					"Doughnut Chart": "doughnut-chart",
+					"Pyramid Chart": "pyramid-chart",
+					"Funnel Chart": "funnel-chart",
+					"Scatter Chart": "scatter-chart",
+					"Line Chart": "line-chart",
+					"Spline Area Chart": "spline-area-chart",
+					"Spline Chart": "spline-chart",
+					"Combination Chart": "combo-chart",
+					"List Box": "list-box",
+					"Text Filter": "text-filter",
+					"Combo Box": "combo-box",
+					"Range Navigator": "range-navigator",
+					"Range Slider": "range-slider",
+					"Date Picker": "date-picker",
+					"Period Over Period": "period-over-period",
+					"Image": "image",
+					"Text": "text",
+					"Tab Widget": "tab-widget",
+					"Button Widget": "button-widget",
+					"Custom Widget": {
+						"slug": "custom-widget",
+						"pages": {
+							"v5.2.48 or later": {
+								"slug": "v5.2.48-or-later",
+								"pages": {
+									"Custom Widget Creation": "create-new-custom-widget",
+									"Edit Custom Widget": "editing-existing-custom-widget",
+									"Delete Custom Widget": "delete-custom-widget",
+									"Debug Custom Widget": "debugging-custom-widget",
+									"Migrate Lower Version Custom Widget": "migrate-custom-widgets-from-lower-version",
+									"C3 Custom Widget": "c3-custom-widget"
+								}
+							},
+							"v4.2.68 or later": "v4.2.68-or-later",
+							"v4.1.36 or below": "v4.1.36-or-below"
+						}
+					},
+					"Combine Widget ": "combine-widget"
+				}
+			},
+			"Visualization V2 Widgets": {
+				"slug": "visualization-v2-widgets",
+				"pages": {
+					"Bar Chart": "bar-chart",
+					"Column Chart": "column-chart",
+					"Stacked Bar Chart": "stacked-bar-chart",
+					"Stacked Column Chart": "stacked-column-chart",
+					"100% Stacked Bar Chart": "100-stacked-bar-chart",
+					"100% Stacked Column Chart": "100-stacked-column-chart",
+					"Area Chart": "area-chart",
+					"Stacked Area Chart": "stacked-area-chart",
+					"100% Stacked Area Chart": "100-stacked-area-chart",
+					"Line Chart": "line-chart",
+					"Spline Area Chart": "spline-area-chart",
+					"Spline Chart": "spline-chart",
+					"Grid": "grid"
+				}
+			},
+			"Working with Widgets": {
+				"slug": "working-with-widgets",
+				"pages": {
+					"Filtering": "configuring-widget-filters",
+					"Manual Filtering": "manual-filters",
+					"Virtual Scrolling": "virtual-scrolling",
+					"Sorting": "advanced-sorting",
+					"Linking": "linking-urls-and-dashboards",
+					"Configuring Label Parameters": "configuring-label-parameters",
+					"Aggregating Value Columns": "aggregating-value-columns-based-on-type",
+					"Formatting Measure Type Column": "formatting-measure-type-column",
+					"Customizing Tooltip": "tooltip-customization",
+					"Customizing Container Settings": "customizing-container-appearance",
+					"Commenting a Widget": "commenting-widget",
+					"Viewing underlying data": "view-data",
+					"Forecasting": "forecasting",
+					"Trendlines": "chart-trendlines",
+					"Gridlines": "chart-gridlines",
+					"Custom and Auto Hierarchy": "custom-and-auto-hierarchy",
+					"Custom Date Format": "custom-date-format",
+					"Widget Actions": "widget-action",
+					"Saving User Interacted Widgets": {
+						"slug": "saving-user-interacted-widgets",
+						"pages": {
+							"Grid": "grid"
+						}
+					}
+				}
+			},
+			"Widget Capabilities": "widget-capabilities"
+		}
+	},
+	"Dashboards": {
+		"slug": "working-with-dashboards",
+		"pages": {
+			"Accessibility": {
+				"slug": "accessibility",
+				"pages": {
+					"Keyboard Navigation": "keyboard-navigation",
+					"Screen Reader Support": "screen-reader"
+				}
+			},
+			"Dashboard Themes": "dashboard-theme",
+			"Import Widgets": "import-widgets",
+			"Edit Dashboards": "edit-existing-dashboard",
+			"Configure Cross Filters": "configuring-cross-filters",
+			"Dashboard Comments": "commenting-dashboard",
+			"Data Alerts": "data-alerts",
+			"Data Cache": "data-cache",
+			"Publish Dashboards": "publish-dashboard",
+			"Schedule Dashboards": "dashboard-schedule",
+			"Dashboard Performance Metrics": "dashboard-performance-metrics",
+			"Dashboard Styles": "dashboard-styles",
+			"Dynamic Translation": "dynamic-translator",
+			"Fixed Layout": "fixed-layout",
+			"Common Widget Settings": "common-widget-settings",
+			"Dashboard Properties": "dashboard-properties",
+			"Preview Dashboards": {
+				"slug": "preview-dashboard",
+				"pages": {
+					"Maximize Widget View": "maximizing-widget-view",
+					"Export Reports from Dashboards": "dashboard-settings",
+					"Export Reports from Widgets": {
+						"slug": "exporting-reports-from-widgets",
+						"pages": {
+							"Export Options": "exporting-options"
+						}
+					},
+					"Refresh Dashboards": "refresh-dashboard",
+					"Filter Views Using URL Parameters": "urlparameters",
+					"Customize Export at Server Level": "custom-export"
+				}
+			},
+			"Share Dashboards": {
+				"slug": "share-dashboards",
+				"pages": {
+					"Get Dashboard Links": "get-dashboard-link",
+					"Manage Permissions": "manage-permissions",
+					"Public Dashboards": "public-dashboards",
+					"Collaboration": "collaboration",
+					"Schedule Dashboard": "schedule-dashboards",
+					"Notifications": "notifications"
+				}
+			}
+		}
+	},
+	"AI and Machine Learning": {
+		"slug": "artificial-intelligence-and-machine-learning",
+		"pages": {
+			"Getting Started": "ai-copilot-getting-started",
+			"Architecture": "architecture",
+			"Configure AI": {
+				"slug": "configure-ai",
+				"pages": {
+					"UMS Level": "ums-level",
+					"Site Settings Configuration": "site-settings-configuration"
+				}
+			},
+			"Activate AI Features": "activate-ai-feature",
+			"Enable or Disable AI Features": "enable-disable-ai-feature",
+			"AI Data Processing": "ai-data-processing",
+			"Language Support": "language-support",
+			"Best Practices and Limitations": "best-practices-and-limitations",
+			"Generative AI": {
+				"slug": "generative-ai",
+				"pages": {
+					"AI Copilot": "ai-copilot",
+					"AI Agent": "ai-agent",
+					"Dashboard Summary": "dashboard-summary",
+					"Widget Insights": "widget-insights",
+					"Prompt To Dashboard": "dashboard-creation"
+				}
+			},
+			"Unified AI Agent": {
+				"slug": "unified-ai-agent",
+				"pages": {
+					"Data": "data",
+					"Dashboard": "dashboard",
+					"Chat History": "chat-history"
+				}
+			},
+			"Q&A Widget": "qna-widget",
+			"Synonyms": "synonyms",
+			"Summary Scheduling": "schedule-summary",
+			"Forecasting": "time-series-forecasting"
+		}
+	},
+	"Responsive Layout": {
+		"slug": "responsive-layout",
+		"pages": {
+			"Dashboard Responsiveness": "responsive-design-bold-bi-dashboard",
+			"Server Responsiveness": "responsive-design-bold-bi-server"
+		}
+	},
+	"Mobile App": {
+		"slug": "mobile-app",
+		"pages": {
+			"Getting Started": "getting-started",
+			"Dashboard": "dashboard",
+			"Settings": "settings",
+			"White Labeling": "white-label-boldbi-mobile-app"
+		}
+	},
+	"Transformation Use Cases": {
+		"slug": "transformation-use-cases",
+		"pages": {
+			"Data Cleaning and Standardization": {
+				"slug": "data-cleaning-and-standardization",
+				"pages": {
+					"Filter Duplicates": "filtering-duplicate-data",
+					"Convert Data Types": "data-type-conversion",
+					"Filter Invalid Entries": "filtering-invalid-data",
+					"Handle Null Values": "handling-null-values"
+				}
+			},
+			"Date and Time Processing": {
+				"slug": "date-and-time-processing",
+				"pages": {
+					"Calculate Service Duration": "calculate-service-duration",
+					"Convert Timestamps": "timestamp-conversion",
+					"Generate Time Intervals": "generate-time-intervals",
+					"Time-Based Segmentation": "time-based-segmentation"
+				}
+			},
+			"Categorization and Mapping": {
+				"slug": "categorization-and-mapping",
+				"pages": {
+					"Classify Data": "classifying-data",
+					"Geographic Mapping": "geographical-mapping",
+					"Map Priority Levels": "mapping-priority-levels"
+				}
+			},
+			"Data Enrichment": {
+				"slug": "enriching-data",
+				"pages": {
+					"Geolocation Lookup": "geolocation-lookup",
+					"Integrate External Data": "integrating-external-data",
+					"Merge Historical Records": "merging-historical-records"
+				}
+			},
+			"Aggregation and Summarization": {
+				"slug": "aggregation-and-summarization",
+				"pages": {
+					"Summarize Metrics": "summarizing-metrics",
+					"Compute Performance KPIs": "computing-performance-kpis",
+					"Service Level Analysis": "service-level-analysis",
+					"Aggregate Data Volume": "data-volume-aggregation"
+				}
+			},
+			"Validation Rules": {
+				"slug": "data-validation-and-transformation-rules",
+				"pages": {
+					"Compliance Validation": "compliance-validation",
+					"Flag Suspicious Data": "flagging-suspicious-data",
+					"Verify Status": "status-verification"
+				}
+			},
+			"Data Reshaping and Pivoting": {
+				"slug": "data-reshaping-and-pivoting",
+				"pages": {
+					"Create Derived Columns": "create-derived-columns",
+					"Flatten Nested Data": "flatten-nested-data",
+					"Pivot Data": "pivot-data"
+				}
+			},
+			"Anomaly Detection and Smoothing": {
+				"slug": "anomaly-detection-and-smoothing",
+				"pages": {
+					"Flag Anomalies": "anomaly-flagging",
+					"Smooth Data": "data-smoothing",
+					"Detect Outliers": "outlier-detection"
+				}
+			},
+			"Behavior and Journey Analysis": {
+				"slug": "behavioral-and-journey-analysis",
+				"pages": {
+					"Churn Prediction Feature": "churn-prediction-feature",
+					"Map User Journeys": "mapping-user-journeys"
+				}
+			}
+		}
+	}
+}

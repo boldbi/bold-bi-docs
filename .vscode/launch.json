@@ -1,0 +1,65 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Gitea - CI Test",
+			"type": "node",
+			"request": "launch",
+			"runtimeExecutable": "npm",
+			"args": [
+				"run",
+				"test"
+			],
+			"cwd": "${workspaceFolder}",
+			"console": "integratedTerminal"
+		},
+		{
+			"name": "Gatsby - Run in Local",
+			"type": "node",
+			"request": "launch",
+			"runtimeExecutable": "npm",
+			"args": [
+				"run",
+				"serve"
+			],
+			"cwd": "${workspaceFolder}",
+			"console": "integratedTerminal"
+		},
+		{
+			"name": "Gatsby - Production Build",
+			"type": "node",
+			"request": "launch",
+			"runtimeExecutable": "npm",
+			"args": [
+				"run",
+				"production-build"
+			],
+			"cwd": "${workspaceFolder}",
+			"console": "integratedTerminal"
+		},
+		{
+			"name": "Gatsby - Production Preview",
+			"type": "node",
+			"request": "launch",
+			"runtimeExecutable": "npm",
+			"args": [
+				"run",
+				"production-preview"
+			],
+			"cwd": "${workspaceFolder}",
+			"console": "integratedTerminal"
+		},
+		{
+			"name": "Gatsby - Production Build and Preview",
+			"type": "node",
+			"request": "launch",
+			"runtimeExecutable": "npm",
+			"args": [
+				"run",
+				"production-build-and-preview"
+			],
+			"cwd": "${workspaceFolder}",
+			"console": "integratedTerminal"
+		},
+	]
+}

@@ -11,7 +11,7 @@ Embedding the designer enables your users to <b>create</b> and <b>modify</b> das
 
 ### Prerequisites
 <ul style="margin:0; padding-left:20px;">
-  <li> First learn how to generate an <a href="/embedding-options/embedding-sdk/generate-embed-token/">Embed Authorization Token</a> and review <a href="/embedding-options/embedding-sdk/embed-viewer-dashboard/">Embedding Dashboard</a> in <b>view mode</b>.</li>
+  <li> First learn how to generate an <a href="/embedding-options/embedding-sdk/token-generation/">Embed Authorization Token</a> and review <a href="/embedding-options/embedding-sdk/embed-viewer-dashboard/">Embedding Dashboard</a> in <b>view mode</b>.</li>
    <li style="margin-top: 15px; line-height: 25px;">The <b>Embed Token</b> must always be generated <b>on the backend server side</b>. The <code>embedSecret</code> is highly sensitive and should never be exposed in frontend code, browsers, or client applications.</li>
 </ul>
 

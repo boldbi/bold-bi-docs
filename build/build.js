@@ -6,7 +6,7 @@ var glob = require('glob');
 
 gulp.task('clean', done =>{
     let staticFiles = glob.sync('./static/*', {
-        ignore: ['./static/favicon.ico', './static/robots.txt', './static/assets', './static/404', './static/404.html','./static/js']
+        ignore: ['./static/favicon.ico', './static/robots.txt', './static/assets', './static/404', './static/404.html', './static/js', './static/img','./static/index.html', './static/css','./static/favicon-32x32.png','./static/favicon-192x192.png','./static/favicon-180x180.png','./static/favicon-270x270.png']
     });
     if (staticFiles.length) shelljs.rm('-rf', staticFiles);
     shelljs.rm('-rf', ['./.cache', './public', './src/pages']);

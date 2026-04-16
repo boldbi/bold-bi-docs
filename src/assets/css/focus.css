@@ -1,0 +1,262 @@
+/* Focus button CSS -- START HERE (migrated from ask- to focus-) */
+.focus-container {
+    position: relative;
+    width: auto;
+}
+
+.focus-container.right-side {
+    right: 260px;
+}
+
+.focus-split-button *,
+.focus-dropdown * {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+
+
+.focus-split-button {
+    display: flex;
+    align-items: center;
+    border: 1px solid #d0d5dd;
+    border-radius: 8px;
+    /* background: #ffffff; */
+    background: #f5f7fa;
+    overflow: hidden;
+    margin-right: 10px;
+    transition: background 160ms ease;
+    gap: 0px !important
+}
+
+.focus-main {
+    display: flex;
+    border: none;
+    background-color: transparent;
+    padding: 6px 10px;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    color: #344054;
+}
+
+/* Ensure SVG icon has no border and precise spacing */
+.focus-mode-btn .theme-focus-icon {
+  border: none !important;
+  margin: 0px !important;
+}
+.focus-main::before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-image: url("/img/ask-btn-icon.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 5px;
+    margin-top: 2px;
+}
+
+.focus-toggle {
+    font-size: 12px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    width: 32px;
+    height: 36px;
+}
+
+.focus-toggle::after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+    background-image: url("/img/arrow-down-icon.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: transform 0.2s ease;
+}
+
+.focus-toggle.focus-arrow-up::after {
+    transform: rotate(180deg);
+}
+
+.focus-main:hover,
+.focus-toggle:hover {
+    background: #ffffff;
+}
+
+/* Hover effect for the whole split button */
+.focus-mode-btn:hover {
+    background: #f2f4f7 !important;
+}
+
+.focus-mode-btn.active{
+    background-color: #f2f4f7 !important;
+}
+.focus-main:focus,
+.focus-toggle:focus {
+    outline: none;
+}
+
+.focus-dropdown {
+    display: none;
+    width: 280px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    padding: 6px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.focus-dropdown.right-side-show {
+    right: auto;
+}
+
+.focus-dropdown.is-open {
+    display: block;
+    position: absolute !important;
+    z-index: 1;
+}
+
+.focus-item {
+    position: relative;
+    /* increase left padding to accommodate the icon background */
+    padding: 10px 0px 10px 56px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.focus-item:hover {
+    background: #f2f4f7;
+    border-radius: 6px;
+}
+
+.focus-item.active {
+    background: #eef2f7;
+    border-radius: 8px;
+    margin: 4px;
+}
+
+.focus-arrow-up {
+    background-color: #EAEcF0 !important;
+    border-radius: 0px !important;
+}
+
+.focus-item .focus-title::before {
+    content: "";
+    display: block;
+    position: absolute;
+    /* place a soft background behind the icon and center it vertically between title/desc */
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 36px;
+    height: 36px;
+    background-color: #f9fafb;
+    border-radius: 6px;
+    background-size: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 0.2s ease;
+}
+
+.focus-helpbot .focus-title::before {
+    background-image: url("/img/ask-btn-icon.svg");
+    background-size: 18px !important;
+}
+
+.focus-copy-md .focus-title::before {
+    background-image: url("/img/copy-icon.svg");
+    background-size: 16px !important;
+}
+
+.focus-view-md .focus-title::before {
+    background-image: url("/img/markdown-icon.svg");
+}
+
+.focus-open-chatgpt .focus-title::before {
+    background-image: url("/img/chatgpt-icon.svg");
+}
+
+.focus-open-claude .focus-title::before {
+    background-image: url("/img/claude-icon.svg");
+}
+
+.focus-connect-with-mcp .focus-title::before {
+    background-image: url("/img/mcp-icon.svg");
+}
+
+.focus-item.focus-view-md .focus-title::after,
+.focus-item.focus-open-chatgpt .focus-title::after,
+.focus-item.focus-open-claude .focus-title::after {
+    background-image: url(/img/navigation-arrow.svg);
+    margin-top: 3px;
+    content: "";
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    margin-left: 6px;
+}
+
+.focus-title {
+    font-size: 14px;
+    font-weight: 500;
+    color: #111827;
+}
+
+.focus-desc {
+    font-size: 12px;
+    color: #6c7786;
+    font-weight: 500;
+}
+
+.focus-divider {
+    height: 1px;
+    background: #e5e7eb;
+    margin: 6px 0;
+}
+
+.focus-mode-btn .theme-focus-icon {
+    border: none !important;
+    margin: 0px;
+    margin-bottom: 2px;
+
+}
+.custom-tooltip {
+  position: fixed; /* VERY IMPORTANT */
+  background: black;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+
+  z-index: 9999;
+}
+
+/* Arrow */
+.custom-tooltip::after {
+  content: '';
+  position: absolute;
+  bottom: 100%; /* 👈 move arrow to top */
+  left: 50%;
+  transform: translateX(-50%);
+  border: 6px solid transparent;
+  border-bottom-color: black; /* 👈 arrow pointing up */
+}
+.custom-tooltip {
+  pointer-events: none; /* VERY IMPORTANT */
+}
+/* Focus button CSS -- ENDS HERE */

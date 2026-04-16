@@ -1,0 +1,1166 @@
+/* Center MD content (article) - Bold BI KB style */
+#doc-right-side .doc-body-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  height: 90%;
+}
+
+/* Main article column */
+#doc-right-side .doc-body-content>.e-view {
+  flex: 1 1 0;
+  min-width: 320px;
+  max-width: 980px;
+  order: 1;
+}
+
+/* Right TOC column should remain a fixed-width column and sit on same row */
+#doc-right-side .doc-body-content>.right-toc,
+#doc-right-side .doc-body-content>#doc-right-toc {
+  flex: 0 0 260px;
+  order: 1;
+}
+
+#md-content {
+  color: #374151;
+  box-sizing: border-box;
+  font-family: "Inter", "Roboto", "open sans", sans-serif, "-apple-system", BlinkMacSystemFont !important;
+}
+
+#md-content h1,
+#md-content h2,
+#md-content h3,
+#md-content h4 {
+  padding: 0;
+}
+
+#md-content h1,
+#md-content h2,
+#md-content h3,
+#md-content h4 {
+  scroll-margin-top: 28px;
+}
+
+/* Reduce top scroll margin in focus mode (header is hidden) so headings sit closer to top */
+body.focus-mode #md-content h1,
+body.focus-mode #md-content h2,
+body.focus-mode #md-content h3,
+body.focus-mode #md-content h4{
+  scroll-margin-top: -35px;
+}
+
+/*h2 directly after h1 */
+#md-content h1+h2 {
+  margin-top: 0px;
+  padding-top: 12px;
+}
+
+/*h2 after read-time (your real case) */
+#md-content h1+.read-time+h2 {
+  margin-top: 0px;
+  padding-top: 12px;
+}
+
+#md-content>:first-child {
+  margin-top: 0;
+}
+
+#md-content h1 {
+  color: #1C1017;
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: -.48px;
+  line-height: 40px;
+  margin-bottom: 12px;
+  overflow-wrap: break-word;
+  margin-top: 48px;
+}
+
+#md-content .read-time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  color: #475467;
+  font-size: 14px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #e9ebee;
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+#md-content .read-time .read-time-left {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+}
+
+#md-content .read-time .read-time-right {
+  display: inline-flex;
+  align-items: center;
+}
+
+#md-content .focus-mode-placeholder {
+  display: inline-flex;
+  align-items: center;
+}
+
+#md-content .read-time .read-time-icon {
+  font-size: 14px;
+  line-height: 1;
+}
+
+#md-content .read-time-text {
+  padding-right: 12px;
+}
+
+#md-content h2 {
+  color: #1C1017;
+  font-size: 24px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  margin-bottom: 0;
+  letter-spacing: -.5px;
+  text-transform: initial;
+  margin-top: 40px;
+}
+
+#md-content h3 {
+  color: #1C1017;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  margin-bottom: 0;
+  letter-spacing: 0;
+  margin-top: 25px;
+}
+
+#md-content h4 {
+  color: #1C1017;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  margin-bottom: 0;
+  letter-spacing: 0;
+  margin-top: 20px;
+}
+
+#md-content h5 {
+  color: #1C1017;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 28px;
+  margin-bottom: 0;
+  letter-spacing: 0;
+  margin-top: 20px;
+}
+
+#md-content h6 {
+  color: #1C1017;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  margin-bottom: 0;
+  letter-spacing: 0;
+  margin-top: 20px;
+}
+
+#md-content p {
+  color: #344054;
+  line-height: 28px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 0;
+  margin-top: 16px;
+  word-break: break-word;
+  font-family: "Inter", "Roboto", "open sans", sans-serif, "-apple-system", BlinkMacSystemFont !important;
+}
+
+#md-content li {
+  color: #344054;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 8px;
+  min-height: 26px;
+  font-family: "Inter", "Roboto", "open sans", sans-serif, "-apple-system", BlinkMacSystemFont !important;
+}
+
+#md-content td>li {
+  color: #344054;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  margin-left: 8px;
+  min-height: 26px;
+  font-family: "Inter", "Roboto", "open sans", sans-serif, "-apple-system", BlinkMacSystemFont !important;
+}
+
+#md-content li>p {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+#md-content ul,
+#md-content ol {
+  display: block;
+  font-size: 16px;
+  margin: 16px 0 0px 24px;
+  padding: 0 0 0 20px;
+}
+
+#md-content a {
+  color: #002bff;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 28px;
+  margin: 2px 0;
+  text-decoration: none;
+}
+
+#md-content a:hover {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  text-underline-offset: 3px;
+}
+
+/* copy page button area similar to KB */
+.doc-copy-page {
+  float: right;
+  margin-top: -8px;
+}
+
+/* code blocks and pre */
+#md-content pre,
+#md-content code {
+  padding: 4px;
+  border-radius: 4px;
+  overflow: auto;
+  font-family: Inter, Roboto, "open sans", sans-serif, "-apple-system", BlinkMacSystemFont !important;
+  font-size: 14px;
+  color: #344054;
+  line-height: 20px;
+}
+
+#md-content pre {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  overflow: auto;
+  font-family: Inter, Roboto, "open sans", sans-serif, "-apple-system", BlinkMacSystemFont !important;
+  font-size: 16px;
+  color: #344054;
+  border: 1px solid #eaecf0 !important;
+  line-height: 28px !important;
+}
+
+.language-javascript {
+  line-height: 28px !important;
+}
+
+/* responsive */
+@media (max-width: 1100px) {
+  #md-content {
+    padding: 20px;
+  }
+
+  #doc-right-side .doc-body-content {
+    gap: 14px;
+  }
+}
+
+/* If there's no right TOC, let the MD content expand to fill available space */
+#doc-right-side.doc-no-right-toc .doc-body-content>.e-view {
+  max-width: none;
+  width: 100%;
+}
+
+
+/* Markdown tables: visible borders and responsive handling
+   Make tables scroll horizontally when columns need more space, and
+   ensure the first column has a sensible min-width so labels don't stack vertically. */
+#md-content table {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  /* allow the table to scroll horizontally on overflow */
+  display: block;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Keep table semantics but allow cells to wrap content instead of forcing narrow columns */
+#md-content th,
+#md-content td {
+  border: 1px solid #e5e7eb;
+  /* subtle gray */
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+  vertical-align: top;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Inter", "Roboto", "open sans", sans-serif, "-apple-system", BlinkMacSystemFont !important;
+  white-space: normal;
+  /* allow wrapping */
+}
+
+/* Ensure the first column (labels) keeps a readable width instead of collapsing */
+#md-content th:first-child,
+#md-content td:first-child {
+  min-width: 120px;
+}
+
+/* If the table still needs more horizontal room, users can scroll; on small screens reduce min-width */
+@media (max-width: 800px) {
+
+  #md-content th:first-child,
+  #md-content td:first-child {
+    min-width: 80px;
+  }
+}
+
+#md-content thead th {
+  background: #f9fafb;
+  border-color: #d0d5dd;
+  color: #344054;
+  font-weight: 500;
+  height: auto;
+  line-height: 20px;
+  text-align: left;
+}
+
+#md-content td {
+  background: #ffffff;
+}
+
+#md-content td a,
+#md-content td p,
+#md-content thead th a,
+#md-content thead th p {
+  font-size: 14px !important;
+}
+
+#md-content table caption {
+  caption-side: bottom;
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin-top: 0.5rem;
+}
+
+#on-premises-vs-cloud-table {
+  display: table !important;
+}
+
+/* Ensure images inside markdown content fit the container and are responsive */
+#md-content img {
+  border: 1px solid #e0e0e0;
+  display: block;
+  margin: 16px 0 30px;
+  max-width: 75%;
+}
+
+/* Make iframes embedded in markdown responsive: fit container and keep aspect ratio */
+#md-content iframe {
+  margin-top: 20px;
+  display: block;
+  width: 100% !important;
+  max-width: 80%;
+  aspect-ratio: 16/9;
+  height: auto !important;
+  min-height: 240px;
+  border: none;
+}
+
+#md-content iframe.responsive-4-3 {
+  aspect-ratio: 4/3;
+}
+
+/* Center images that are inside figure or have alignment helpers */
+#md-content figure,
+#md-content .image,
+#md-content .align-center {
+  text-align: center;
+}
+
+#md-content .align-center img,
+#md-content figure img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Prevent very large images from causing horizontal scroll on smaller viewports */
+#md-content {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Make the markdown content a column flex container so footer/nav sit at bottom */
+#md-content {
+  display: flex;
+  flex-direction: column;
+  /* Leave space for header/top chrome; adjust if needed */
+  min-height: calc(100vh - 120px);
+}
+
+/* The inner HTML content should take available space so nav/footer sit at the bottom */
+#md-content #md-cnt {
+  flex: 1 1 auto;
+  padding-bottom: 100px !important;
+}
+
+#zoom-image-container {
+  display: none;
+}
+
+/* Image wrapper & hover zoom icon inside markdown content */
+.md-image-wrap {
+  position:relative;
+  display: inline-block;
+  line-height: 0;
+  cursor: zoom-in;
+}
+.md-image-wrap img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.md-image-zoom-icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 160ms ease, transform 160ms ease;
+  background: rgba(0,0,0,0.45);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.md-image-zoom-icon .bd-icon-zoom {
+  width: 18px; height: 18px; display: inline-block; background-size: contain; background-repeat: no-repeat; background-position: center;
+}
+.md-image-zoom-icon {
+  display: none !important;
+}
+.md-image-wrap:hover .md-image-zoom-icon {
+  opacity: 0 !important;
+  transform: none !important;
+}
+
+/* Fullscreen overlay for zoomed image */
+#zoom-image-container {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.75);
+  /* Needs to sit above header/helpbot which use up to z-index:10000 */
+  z-index: 11000;
+}
+#zoom-image-center {
+  position: relative;
+  /* limit image to a comfortable zoom size (not full width) */
+  max-width: 80vw;
+  max-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#zoom-image-center img#zoom-image {
+  max-width: 80%;
+  max-height: 80%;
+  width: auto;
+  height: auto;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.6);
+  border-radius: 6px;
+}
+/* Show a visible, thin scrollbar on the zoomed image container so users can
+   discover scrollable content when the image exceeds the max height. */
+#zoom-image-center {
+  /* let the browser render a sensible scrollbar */
+  -ms-overflow-style: auto; /* IE and Edge */
+  scrollbar-width: thin; /* Firefox */
+}
+#zoom-image-center::-webkit-scrollbar { width: 10px; }
+#zoom-image-center::-webkit-scrollbar-track { background: transparent; }
+#zoom-image-center::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.28); border-radius: 8px; }
+#zoom-image-center img { display: block; max-width: 100%; }
+/* Close button placed at overlay (viewport) corner */
+#zoom-image-close {
+  position: fixed;
+  top: 18px;
+  right: 18px;
+  /* Ensure close sits above the overlay itself */
+  z-index: 11050;
+  background: #ffffff;
+  color: #111827;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+}
+#zoom-image-close:focus { outline: 2px solid #3b82f6; }
+
+/* When zoom overlay open, prevent body scroll */
+body.zoom-image-open { overflow: hidden; }
+
+/* Code block wrapper and copy button */
+.code-block-wrapper {
+  position: relative;
+}
+
+.copy-button {
+  position: absolute;
+  top: 5px;
+  right: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  padding: 4px 6px;
+
+}
+
+.copy-button-icon {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+}
+
+.copy-button.copied .copy-button-tooltip {
+  display: inline-block;
+}
+
+/* Refined tab container and header to match provided design */
+.tab-container {
+  border: 1px solid #e6e9ee;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 0 0 1rem 0;
+  background: #ffffff;
+}
+
+.tab-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f2f4f7 !important;
+  padding: 0px 16px !important;
+  height: 45px;
+
+}
+
+.tab-file-header {
+  display: flex;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.tab-file-header .file-name {
+  font-size: 16px;
+  color: #374151;
+  font-weight: 600;
+}
+
+.tabs {
+  display: flex !important;
+  gap: 25px;
+  align-items: center;
+}
+
+.tab {
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #6b7280;
+  background: transparent;
+  border: none;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.tab-header .tabs > .tab.active:not(:only-child) {
+  font-weight: 600 !important;
+  height: 38px;
+  padding: 10px 0px 0px 0px;
+  color: #0078d4 !important;
+  border-radius: 2.1px;
+  border-bottom: 2px solid #0078d4;
+}
+
+/* Single-tab visual: when there's only one tab,no active border */
+.tab-header .tabs > .tab:only-child {
+  color: #374151 !important;
+  border: none !important;
+  font-weight: 600 !important;
+  cursor: default;
+}
+.tab-header .tabs > .tab.active:not(:only-child):hover{
+  color:#002bff !important;
+  border-color: #002bff;
+}
+.tab:hover {
+  background: transparent;
+}
+
+.tab-contents {
+  padding: 12px 12px 10px 12px;
+  background: #f2f4f7 !important
+}
+
+.tab-contents .tab-content {
+  display: none;
+}
+
+.tab-contents .tab-content.active {
+  display: block;
+}
+
+.tab-contents .tab-content .code-block-wrapper {
+  margin: 0;
+}
+
+.tab-contents .tab-content pre {
+  background: #ffffff !important;
+  padding: 20px !important;
+  border-radius: 6px;
+  color: #344054;
+  box-shadow: none;
+}
+
+
+/* visual refinements to match screenshot */
+.tab-header {
+  padding: 10px 14px;
+}
+
+.tab-file-header .file-icon::before {
+  content: '\1F4C4';
+  /* 📄 */
+  display: inline-block;
+  text-align: center;
+  line-height: 18px;
+  font-size: 16px;
+}
+
+.tabs .tab {
+  position: relative;
+  font-size: 16px !important;
+  height: 38px;
+  padding: 10px 0px 0px 0px;
+  margin-bottom: 0px !important;
+}
+
+.tabs .tab:hover{
+  color:#101828 !important;
+  font-weight: 500  !important;
+}
+
+.tabs .tab::before,
+.tabs .tab::after,
+.tabs .tab::marker {
+  content: none !important;
+  display: none !important;
+}
+
+.tab-dropdown-wrap {
+  display: none !important;
+}
+
+/* Responsive: switch tabs to dropdown under 767px */
+@media (max-width: 767px) {
+  /* hide horizontal tabs only when a dropdown is present (keep single-tab groups visible) */
+  .tab-header.has-dropdown .tabs { display: none !important; }
+  .tab-dropdown-wrap { display: flex !important; align-items: center; gap: 12px; }
+
+  .custom-dropdown { position: relative; display: inline-block; }
+  .custom-dropdown-selected {
+    margin-top: 20px;
+    padding: 8px 12px;
+    border: 1px solid #e6e9ee;
+    background: #ffffff;
+    border-radius: 8px;
+    cursor: pointer;
+    min-width: 100px;
+    box-shadow: 0 4px 12px rgba(16,24,40,0.06);
+    color: #374151;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+  }
+
+  /* dropdown arrow icon */
+  .custom-dropdown-selected::after {
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-image: url('/img/arrow-down-icon.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: rotate(0deg);
+    transition: transform 0.18s ease;
+    margin-left: 8px;
+  }
+
+  /* show options when opened via JS (.open) or keyboard focus */
+  .custom-dropdown .custom-dropdown-options {
+    display: none !important;
+    position: absolute;
+    right: 0;
+    /* top: calc(100% + 8px); */
+    background: #ffffff;
+    border: 1px solid #e6e9ee;
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgba(2,6,23,0.08);
+    list-style: none;
+    padding: 0 !important;
+    margin-top: 7px !important;
+    z-index: 11150;
+    min-width: 140px;
+    /* max-height: 60vh; */
+    overflow: auto;
+  }
+  .custom-dropdown.open .custom-dropdown-options,
+  .custom-dropdown:focus-within .custom-dropdown-options { display: block !important; }
+  .custom-dropdown.open .custom-dropdown-selected::after,
+  .custom-dropdown:focus-within .custom-dropdown-selected::after { transform: rotate(180deg); }
+
+  .custom-dropdown-options li { padding: 10px 14px; cursor: pointer; white-space: nowrap; color: #374151; margin-bottom: 0 !important; }
+  .custom-dropdown-options li:hover { background: #f3f4f7; }
+  .custom-dropdown-options li.active { background: #eef2ff; color: #0b5fff; font-weight: 600; }
+  /* make sure dropdown doesn't push header height */
+  .tab-header { align-items: center; }
+}
+@media (max-width: 320px) {
+  .tab-file-header {
+    gap: 0px !important;
+  }
+  .file-name {
+    font-size: 15px !important;
+  }
+  .custom-dropdown-selected {
+    font-size: small;
+    padding: 6px !important;
+    min-width: 80px !important;
+    gap: 5px !important;
+  }
+  .custom-dropdown-selected::after{
+    width: 20px !important;
+    height: 20px !important;
+    margin-left: 0 !important;
+  }
+}
+
+/* Force all code/token text to the requested color */
+#md-content pre,
+#md-content code,
+.code-block-wrapper pre,
+.tab-contents .tab-content pre,
+pre[class*="language-"],
+code[class*="language-"] {
+  color: #344054;
+  font-family: Consolas, Courier, Apple SD 산돌고딕 Neo, -apple-system, Lucida Grande, Apple SD Gothic Neo, 맑은 고딕, Malgun Gothic, Segoe UI, 돋움, dotum, sans-serif !important;
+}
+
+
+.copy-button {
+  position: absolute;
+  top: 5px;
+  right: 8px;
+  width: 34px;
+  height: 34px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #6b7280;
+  /* icon stroke color */
+}
+
+/* draw the two overlapping squares */
+.copy-button::before,
+.copy-button::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border: 1.5px solid currentColor;
+  border-radius: 3px;
+  background: transparent;
+}
+/* back square */
+.copy-button::before {
+  top: 9px;
+  left: 9px;
+}
+
+/* front square */
+.copy-button::after {
+  top: 5px;
+  left: 5px;
+  background: #ffffff;
+  /* matches your code block bg */
+}
+
+/* hover */
+
+/* copied state */
+.copy-button.copied {
+  color: #065f46;
+}
+
+/* tooltip */
+.copy-button-tooltip {
+  position: absolute;
+  top: calc(100% + 0px);
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(16, 24, 40, 0.06);
+  background-color: #000;
+  color: #FFF;
+  white-space: nowrap;
+  z-index: 5;
+  overflow: visible;
+}
+
+.copy-button-tooltip::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 8px solid #000;
+}
+
+.copy-button.copied .copy-button-tooltip {
+  display: block;
+}
+
+.copy-button:hover .copy-button-tooltip {
+  display: block;
+}
+
+#md-content p code {
+  color: #A31515 !important;
+  background-color: #FFFAeb !important;
+}
+
+blockquote {
+  padding: 16px;
+  border: 1px solid #D1E9FF;
+  background-color: #EFF8FF;
+  color: #101828;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  /* margin: 16px 0; */
+  margin-top: 16px;
+  /* padding: var(--info-box-padding) !important; */
+  position: relative;
+}
+
+blockquote p {
+  margin-top: 0px !important;
+  font-size: 14px !important;
+  color: #101828 !important;
+}
+
+blockquote p a {
+  margin-top: 0px !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+}
+
+#md-content a>strong {
+  font-weight: 400 !important;
+}
+
+.doc-bread-home:active {
+  color: #002bff !important
+}
+
+/* Nudge breadcrumb home icon slightly down for visual alignment */
+.doc-bread-home,
+.doc-bread-home svg {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  top: 0.5px;
+  /* move down a few pixels */
+}
+
+/* === Gatsby code block card background (exact screenshot match) === */
+.gatsby-highlight {
+  background: #f3f4f7;
+  /* card background */
+  border-radius: 12px;
+  padding: 5px 8.5px;
+  margin: 24px 0;
+}
+
+/* Wrapper should not add borders */
+.gatsby-highlight .code-block-wrapper {
+  background: transparent;
+  border: none !important;
+  border-radius: 12px;
+  position: relative;
+}
+
+/* Inner code area (white surface) */
+.gatsby-highlight pre {
+  background: #ffffff !important;
+  border: none !important;
+  border-radius: 12px;
+  padding: 20px !important;
+  margin: 0;
+  box-shadow: none;
+}
+
+/* Ensure code text stays correct */
+.gatsby-highlight code {
+  background: transparent !important;
+  color: #344054 !important;
+}
+
+/* Copy button positioning relative to white code */
+.gatsby-highlight .copy-button {
+  top: 0px;
+  right: 0px;
+}
+
+
+:not(pre)>code[class*=language-] {
+  background-color: #FFFAeb !important;
+  color: #A31515 !important;
+}
+
+#md-content h1, #md-content h2, #md-content h3, #md-content h4, #md-content h5, #md-content h6{
+  opacity: 0.9;
+}
+
+@media (min-width: 1201px) and (max-width: 1300px) {
+  #right-sidebar{
+    right: 32px !important;
+    width: 210px !important;
+  }
+  #right-sidebar-container {
+    width: 250px !important;
+    padding-left: 0px !important;
+    /* padding-right: 10px !important; */
+  }
+  #doc-right-toc{
+    width:250px !important; 
+  }
+  #left-sidebar{
+    width: 280px !important;
+    left: 16px !important;
+  }
+  #left-side{
+    width: 265px !important;
+  }
+  #doc-right-toc {
+    padding: 16px 0 50px 6px;
+  }
+  .left-toc  .left-toc-search-suggestions{
+    width: 228px !important; 
+  }
+}
+
+@media (max-width: 1100px) {
+    #layout-container {
+      padding:0px !important;
+    }
+    #md-content {
+        padding: 0px !important;
+    }
+    #md-content h1{
+      font-size: 26px;
+    }
+    #md-content h2{
+      font-size: 20px;
+    }
+    #md-content h3{
+      font-size: 18px;
+    }
+    #md-content h4{
+      font-size: 16px;
+    }
+}
+
+@media (max-width: 600px){
+  #md-content .read-time{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+@media (max-width: 480px) {
+    .focus-mode-btn .theme-focus-icon{
+      margin-bottom: 0px !important;
+    }
+    #md-content .read-time-text {
+      padding-right: 26px;
+    }
+}
+@media (max-width: 426px) {
+    #content-container {
+        padding: 74px 16px 0px !important;
+    }
+    #md-content h1{
+      font-size: 24px;
+    }
+    #md-content h2{
+      font-size: 21px;
+    }
+    #md-content h3{
+      font-size: 17px;
+    }
+    #md-content h4{
+      font-size: 15px;
+    }
+    .read-time-text , .last-updated-text{
+      font-size: 12px !important;
+    }
+    #md-content p , #md-content a , #md-content li{
+      font-size:15px;
+    }
+}
+
+/* HelpBot: render as full-width bottom overlay on small screens */
+@media (max-width: 768px) {
+  /* Position the fixed container at the bottom and center the panel */
+  #helpbot-container.hb-fixed {
+    position: fixed;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    top: auto !important;
+    transform: translateY(0); 
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: auto;
+    z-index: 10000;
+  }
+  
+  @media (max-width: 768px) {
+  #helpbot-container.hb-fixed {
+    transform: translateX(0) !important;
+  }
+  #helpbot-container.hb-fixed .hb-panel{
+    height: 90% !important;
+  }
+}
+  /* Make the panel fill the width and slide from bottom */
+  #helpbot-container.hb-fixed .hb-panel {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    border-radius: 12px 12px 0 0 !important; /* round top corners */
+    box-shadow: 0 -8px 24px rgba(16, 24, 40, 0.12);
+    transition: transform 320ms cubic-bezier(.2,.9,.2,1), opacity 200ms ease;
+    transform: translateY(100%);
+    height: 85vh;
+    max-height: 85vh;
+    overflow: hidden;
+  }
+
+  /* When the container is visible (not .hb-hidden) slide the panel up */
+  #helpbot-container:not(.hb-hidden).hb-fixed .hb-panel {
+    transform: translateY(0);
+  }
+
+  /* Ensure header corners stay rounded and body scrolls within panel */
+  #helpbot-container.hb-fixed .hb-header {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+
+  #helpbot-container.hb-fixed .hb-body {
+    max-height: calc(85vh - 110px);
+    overflow-y: auto;
+  }
+
+  /* Make input area sticky at bottom of panel so it's always reachable */
+  #helpbot-container.hb-fixed .hb-input {
+    position: sticky;
+    bottom: 0;
+    background: #fafafa;
+    z-index: 2;
+  }
+
+  /* Dark translucent backdrop behind the HelpBot panel (mobile) */
+  #helpbot-container.hb-fixed {
+    /* create a stacking context for the pseudo-element */
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  #helpbot-container.hb-fixed::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(2,6,23,0.6); /* dark translucent overlay */
+    backdrop-filter: blur(2px);
+    opacity: 0;
+    transition: opacity 220ms ease;
+    z-index: 1; /* sit below the panel but above page content */
+    pointer-events: auto;
+  }
+
+  /* Show overlay when the chat is open */
+  #helpbot-container.hb-fixed:not(.hb-hidden)::before {
+    opacity: 1;
+  }
+
+  /* Ensure panel floats above the pseudo overlay */
+  #helpbot-container.hb-fixed .hb-panel {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+/* Breadcrumb: change home title color when hovering the home icon */
+.breadcrumb-home { cursor: pointer; }
+.breadcrumb-home:hover + .breadcrumb-home-title a,
+.breadcrumb-home .bd-icon.bd-icon-home-agent:hover + .breadcrumb-home-title a,
+.breadcrumb-home:hover ~ .breadcrumb-home-title a {
+  color: #16181E !important;
+}
+
+/* When either the Home icon or the Home text is hovered, add a class
+   to the breadcrumb container so both elements highlight together. */
+#doc-breadcrumb.doc-breadcrumb-hover .bd-icon-home-agent,
+#doc-breadcrumb.doc-breadcrumb-hover .breadcrumb-home-title a {
+  color: #16181E !important;
+}

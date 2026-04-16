@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap);
+
 .ej-doc-header {
     background-color: #fff;
     box-shadow: 0 8px 11px -6px rgba(0, 0, 0, 0.12);
@@ -7,11 +9,10 @@
     position: fixed;
     z-index: 1;
     justify-content: space-between;
-    font-family: 'Caros',sans-serif;
+    font-family: "Inter", "Roboto", "open sans", sans-serif, "-apple-system", BlinkMacSystemFont !important;
     font-size: 24px;
-    color: #FF4801;
     float: left;
-    top: 0;
+    padding: 0px 32px;
 }
 
 .ej-doc-header .ej-doc-left-side {
@@ -21,10 +22,9 @@
 }
 
 .ej-doc-header .ej-doc-left-side .ej-doc-syncfusion-logo {
-    margin-left: 20px;
-    height: 41px;
-    width: 150px;
-    background-image: url('../logo.svg');
+    height: 37px;
+    width: 109px;
+    background-image: url('../boldbi-logo.svg');
     background-repeat: no-repeat;
     font-size: 40px;
     cursor: pointer;
@@ -37,35 +37,60 @@
 
 .ej-doc-header .ej-doc-left-side .ej-doc-divider {
     border-left: 1px solid rgb(196, 196, 196);
-    height: 40px;
+    height: 23px;
 
 }
 .ej-doc-header .ej-doc-left-side .ej-doc-platform-name {
-    font-family: 'Caros',sans-serif;
-    font-size: 21px;
-    opacity: 1;
-    margin-left: 19px;
-    padding-top: 3px;
+    text-decoration: none !important;
+    color: #0058e6 !important;
+    font-size: 14px;
+    padding: 8px 14px;
+    background-color: #f2f4f7;
+    border-radius: 6px;
+    font-weight: 500 !important;
+    cursor: pointer !important;
+    margin-left: 14px;
+    font-family: "Inter", "Roboto", "open sans", sans-serif, "-apple-system", BlinkMacSystemFont !important;
+    letter-spacing: 0.4px;
+}
+
+.ej-doc-header .ej-doc-left-side .ej-doc-platform-name a {
+    color: #0058e6 !important;
+}
+
+.ej-doc-header .ej-doc-left-side .ej-doc-platform-name:hover{
+        background-color: rgb(231, 234, 237) !important;
 }
 
 .ej-doc-header .ej-doc-right-side {
     height: inherit;
     display: flex;
     align-items: center;
+    gap: 10px;
 }
 
 .ej-doc-header .ej-doc-right-side a {
-    font-family: 'Caros',sans-serif;
+    font-family: "Inter", "Roboto", "open sans", sans-serif, "-apple-system", BlinkMacSystemFont !important;
     font-size: 14px;
     cursor: pointer;
     text-decoration: none;
-    margin: 0 20px 0px 0;
-    color: #283A5F;
+    margin: 0 6px 0px 0;
+    color: #344054;
     opacity: 1;
+    padding: 6px 8px;
+    border-radius: 6px;
 }
 
 .ej-doc-header .ej-doc-right-side a:hover {
-    color: #FF4801;
+    background: #f2f4f7;
+}
+
+.ej-doc-header a:last-of-type{
+    background: none !important;
+}
+
+.ej-doc-header .header-demo-link :hover{
+    background: #004ECC;
 }
 
 .ej-doc-header .ej-doc-right-side a.ej-doc-button {
@@ -78,7 +103,7 @@
     cursor: pointer;
     background-color: #3C78EF;
     color: #ffffff;
-    border-radius: 2px;
+    border-radius: 6px;
 }
 
 .ej-doc-header .ej-doc-right-side a.ej-doc-button:hover {
@@ -87,19 +112,24 @@
 
 .header-demo-link {
     color: #fff;
-    background-color: #ff4801;
-    height: 36px;
-    width: 260px;
+    background: #0058e6;
     text-align: center;
     padding-top: 5px;
-    font-family: caros,sans-serif;
-    font-size: 17px;
+    font-family: "Inter", "Roboto", "open sans", sans-serif, "-apple-system", BlinkMacSystemFont !important;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 4px 26px;
     letter-spacing: 1px;
     line-height: 26px;
     cursor: pointer;
     text-decoration: none;
     opacity: 1;
-    border-radius: 4px;
+    border-radius: 7px;
+    border: none;
+}
+
+.header-demo-link:hover{
+    background-color: #004ECC;
 }
 
 @media only screen and (max-width: 768px) {
@@ -192,16 +222,25 @@ div#doc-footer {
     text-decoration: none;
 }
 
-#footer-powered_by {
+.footer-links-container {
     float: right;
     display: flex;
     align-items: center;
-    width: 160px;
     height: 30px;
-    margin-top: 8px;
+    margin-top: 12px;
     margin-right: 318px;
-    background-image: url('../powered-by-syncfusion.svg');
-    background-repeat: no-repeat;
+    gap: 15px;
+}
+
+.footer-links-container a {
+    text-decoration: none;
+    color: #686868;
+    font-size: 12px;
+}
+
+.footer-links-container a:hover,
+#footer-copyright a:hover {
+    text-decoration: underline !important;
 }
 
 .doc-hide {

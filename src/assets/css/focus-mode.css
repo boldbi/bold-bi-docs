@@ -1,0 +1,144 @@
+/* Focus mode styles: hide header and footer, expand content to fill space */
+body.focus-mode {
+  padding-top: 0 !important;
+}
+
+/* hide header and footer; hide breadcrumb children except focus controls */
+body.focus-mode #header,
+body.focus-mode #doc-footer {
+  display: none !important;
+}
+
+/* allow layout to use full viewport */
+body.focus-mode #layout-container {
+  padding-left: 32px; /* keep left spacing */
+}
+
+/* make main content take full height */
+body.focus-mode #md-content {
+  min-height: 100vh !important;
+}
+
+/* Focus button styling */
+.focus-mode-btn {
+  border: 1px solid #d1d5db;
+  color: #344054;
+  padding:5px 10px;
+  border-radius: 8px;
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  cursor: pointer;
+  font-size: 15px;
+  background: #fff;
+}
+.focus-mode-btn:hover{
+  background: #f5f7fa;
+}
+.focus-mode-btn .bd-icon-focus::before {
+  content: '\25A1'; /* simple square icon fallback */
+}
+.focus-mode-btn.active {
+  background: #f3f4f7;
+}
+
+/* size the focus icon image */
+.focus-mode-btn .theme-focus-icon {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  cursor: pointer !important;
+}
+
+/* hide label on very small screens */
+@media (max-width:480px) {
+  .focus-mode-btn .focus-mode-label { display: block; }
+}
+
+/* Visual merge: make the Focus split control look like the Ask split button */
+.focus-split-button, .focus-split-button .focus-mode-btn, .focus-split-button .focus-toggle {
+  box-sizing: border-box;
+}
+.focus-split-button {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #d0d5dd;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #ffffff;
+  height: 31px; /* match Ask button height */
+}
+.focus-split-button .focus-mode-btn {
+  border: none;
+  background: transparent;
+  padding: 6px 10px; /* reduced vertical padding */
+  font-size: 14px;
+  color: #344054;
+  border-right: 1px solid #d0d5dd;
+  border-radius: 0px;
+  line-height: 1;
+  height: 100%;
+  display: inline-flex;
+  align-items: center;
+}
+.focus-split-button .focus-toggle {
+  width: 26px;
+  height: 31px;
+  border-left: 1px solid #d0d5dd;
+  /* display: inline-flex; */
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+}
+.focus-split-button .focus-toggle::after {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-left: 0;
+  background-image: url('/img/arrow-down-icon.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.focus-toggle:hover{
+  background-color: #f2f4f7 !important;
+  border-radius: 0px !important;
+}
+
+/* Adjust sidebars and layout spacing while in focus mode */
+body.focus-mode #left-sidebar {
+  top: 50px !important;
+}
+
+body.focus-mode #right-sidebar,
+body.focus-mode #doc-right-toc,
+body.focus-mode .right-toc {
+  top: 50px !important;
+}
+@media (min-width: 1100px) {
+  body.focus-mode #layout-container {
+    margin-top: 48px !important;
+  }
+}
+
+/* Ensure docs tabs remain visible in focus mode and pin to the top */
+body.focus-mode .docs-tab-wrap {
+  top: 0px !important;
+}
+
+/* Mobile left TOC header/backdrop: reduce top gap in focus mode */
+body.focus-mode .mobile-lefttoc-header,
+body.focus-mode .mobile-lefttoc-backdrop-close {
+  margin-top: 10px !important;
+}
+
+/* Reduce spacing for collapsed left label when focus mode is active */
+body.focus-mode .left-collapsed-label-text {
+  margin-top: 0px !important;
+}
+
+/* When left TOC is hidden in focus mode, nudge the floating toggle down */
+body.focus-mode.left-hidden .left-toc-floating-toggle {
+  top: 70px !important;
+}

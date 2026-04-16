@@ -129,25 +129,86 @@ Here, the sample converted locale file will appear as follows:
 
 7. Change the downloaded file name to `messages.po` and paste it into the respective application folder inside the `app_data\locale\[language-folder]\`.
 
-## How to generate the locale JS file for bi-DataService
+## How to Generate Locale Files for Bold BI Services
 
-1. Download the locale [Utility](https://cdn.boldbi.com/downloads/utilities/BoldBI.Locale.Utility.zip). Once the download is completed, extract the `.Zip` file.
+### 1. Download the Locale Utility
+Download the locale utility from the GitHub repository: https://github.com/boldbi/localization-creation by cloning the repository or downloading it as a ZIP and extracting it locally.
 
-2. Open the `appsettings.json` file in an editor and modify the `boldbi_custom_locale_path` as the deployed path of the application designer locale files and `boldbi_locale_path` locale as the deployed path of default designer locale files.
+### 2. Prepare Source Locale Files
+Copy the required source locale files from your BoldServices build folders and paste them into the localization-creation folder.
 
-   ![locale-utility-appsettings](/static/assets/localization/images/custom-locale-path.png)
+**Example source files:**
 
-3. Run the `BoldBI.Locale.Utility.exe` file.
+- Copy `/bi/dataservice/locale/en-us/locale.js` → keep the name as `locale.js`
+- Copy `/bi/web/locale/en-US/messages.po` → rename to `bi.po`
+- Copy `/idp/ums/locale/en-us/messages.po` → rename to `ums.po`
 
-   ![locale-utility-file](/static/assets/localization/images/locale-utility-file.png)
+> **NOTE:** By default, Bold BI is deployed in `C:\BoldServices` for Windows and `/var/www/bold-services/application` for Linux.
 
-4. After running the utility, a `locale.js` file will be generated in the newly created localized folder path of the designer locale `app_data\locale\[language-folder]\bi-dataservice\`.
+### 3. Configure Azure Translator
+Update the `config.json` file in the sample folder with your Azure Translator details.
 
-   ![localizationgeneratefile](/static/assets/localization/images/localizationgeneratefile.png)
+**Example configuration:**
 
-5. Open the `appsettings.json` file in an editor from the location `{Deployed Location}\bi\dataservice` and change the locale path as the app data location `../../app_data/locale` in the property `locale-path.`
+```json
+{
+  "Translator": {
+    "Endpoint": "https://api.cognitive.microsofttranslator.com/",
+    "SubscriptionKey": "YOUR_SUBSCRIPTION_KEY",
+    "Region": "YOUR_RESOURCE_REGION",
+    "Culture": ["fr-FR"],
+    "IsServerAndUMS": true
+  }
+}
+```
+
+### 4. Start the Localization Process
+Execute the localization application:
+
+```
+Localization.exe
+```
+
+- The utility calls the Azure Translator API
+- Generates translated locale files for all languages specified in `Translator.Culture`
+
+### 5. Output Structure
+The generated files will be placed inside the `Translated_locale` folder.
+
+**Example structure:**
+
+```
+Translated_locale/
+  └── fr-FR/
+      ├── bi/
+      ├── bi-dataservice/
+      └── ums/
+```
+
+### 6. Deploy Locale Files
+Move the generated culture folder into your application directory:
+
+```
+app_data\locale\fr-FR
+```
+
+**Final structure:**
+
+- `app_data\locale\fr-FR\bi\`
+- `app_data\locale\fr-FR\bi-dataservice\`
+- `app_data\locale\fr-FR\ums\`
+
+### 7. Update Locale Path Configuration
+Open the `appsettings.json` file in an editor from the location `{Deployed Location}\bi\dataservice` and change the locale path as the app data location `../../app_data/locale` in the property `locale-path.`
 
    ![appsettings locale path](/static/assets/localization/images/appsettings-locale-path.png)
+
+### 8. Restart Services
+Restart the Bold BI site/services to apply the new localization changes.
+
+> **NOTE:**<br>
+> - Ensure `SubscriptionKey` and `Region` are set when using Azure Translator.
+> - The utility will generate locale files for every language in the `Translator.Culture` array.
 
 ## Where to change the localization in the application
 

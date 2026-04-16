@@ -19,3 +19,46 @@
 .swagger-ui .version-stamp {
     display: none !important;
 }
+
+.swagger-ui .info .title {
+    color: #1C1017;;
+    font-family: 'inter';
+    font-size: 28px;
+    margin: 0;
+}
+.swagger-ui .info .base-url {
+    color: #475467;
+    font-family: 'inter';
+    font-size: 12px;
+    font-weight: 300 !important;
+    font-weight: 600;
+    margin: 0;
+}
+.swagger-ui .scheme-container .schemes>.schemes-server-container>label{
+    color: #1C1017;
+    font-family: 'inter';
+}
+.swagger-ui select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 2px solid #41444e;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .25);
+    color: #1C1017;
+    font-family: 'inter';
+    font-size: 14px;
+    font-weight: 700;
+    padding: 5px 40px 5px 10px;
+}
+
+.swagger-ui .opblock-tag{
+    font-family: 'inter';
+    color: #1C1017;
+}
+.swagger-ui .opblock .opblock-section-header h4{
+    font-family: 'inter';
+
+}
+#copyright , .swagger-ui .opblock .opblock-summary-method , .swagger-ui .model-title, .swagger-ui .btn , .swagger-ui .opblock .opblock-summary-operation-id, .swagger-ui .opblock .opblock-summary-path, .swagger-ui .opblock .opblock-summary-path__deprecated , .swagger-ui .opblock .opblock-summary-description , .swagger-ui button, .swagger-ui input, .swagger-ui optgroup, .swagger-ui select, .swagger-ui textarea  {
+    font-family: 'inter' !important;
+}

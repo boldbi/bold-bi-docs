@@ -1,0 +1,49 @@
+.docs-tab-wrap {
+    background: #FBFBFC;
+    border-bottom: 1px solid #e6e6e6;
+    height: var(--docs-tab-height);
+    position: fixed;
+    top: var(--header-height);
+    width: 100%;
+    left: 0px;
+    padding: 0px 32px;
+    display: flex;
+    align-items: center; /* vertically center inner container */
+    z-index: 999;
+}
+.docs-tab-container {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    height: var(--docs-tab-height);
+}
+.docs-tab-bar {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    height: 100%;
+}
+.docs-tab {
+    background: transparent;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size:14px;
+    cursor: pointer;
+    font-weight: 600;
+    color: #667085;
+    transition: background 160ms ease, color 160ms ease, box-shadow 160ms ease;
+    border-radius: 6px;
+}
+.docs-tab.active {
+    color: #0078d4;
+    /* subtle filled background and rounded box highlight */
+    background: rgba(0, 120, 212, 0.06);
+    border-radius: 6px;
+    /* Use a box-shadow ring to simulate a full border without changing layout */
+    box-shadow: 0 0 0 2px rgba(0,120,212,0.16) inset;
+}
+
+.docs-tab:hover {
+    background: rgba(0,120,212,0.04);
+    color: #005ea6;
+}

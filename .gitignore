@@ -1,9 +1,11 @@
 .cache/
-.vscode
 .git
 .vs
 .v15
 sitemap-help.xml
+.env
+.vscode/*
+!.vscode/launch.json
 
 # dist
 public/
@@ -29,3 +31,10 @@ static/*
 !static/404.html
 !static/404
 !static/js
+!static/img
+!static/index.html
+!static/css
+!static/favicon-32x32.png
+!static/favicon-180x180.png
+!static/favicon-192x192.png
+!static/favicon-270x270.png

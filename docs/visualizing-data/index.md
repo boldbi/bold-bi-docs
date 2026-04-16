@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Visualizing Data – Embedded BI | Bold BI Documentation
-description: Learn how to visualize data through widgets of Bold BI deployed in your server, configuring interactive functionalities and use them in dashboard.
+title: Visualizing Data - Embedded BI | Bold BI Documentation
+description: Learn how to visualize data through widgets of Bold BI deployed on your server, configure interactive functionality, and use them in a dashboard.
 canonical: "/visualizing-data/"
 platform: bold-bi
 documentation: ug
@@ -10,9 +10,9 @@ documentation: ug
 
 # Visualizing Widgets
 
-This section explains each available widget and its features in the Bold BI Enterprise.
+This section explains each available widget and its features in Bold BI Enterprise Edition.
 
-You can explore the details of visualizing widgets here,
+For details about visualizing widgets, refer to the following pages:
 
 [Visualization Widgets](/visualizing-data/visualization-widgets/)
 
@@ -21,3 +21,6 @@ You can explore the details of visualizing widgets here,
 [Working with Widgets](/visualizing-data/working-with-widgets/)
 
 [Widget Capabilities](/visualizing-data/widget-capabilities/)
+
+
+

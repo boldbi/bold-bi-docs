@@ -1,0 +1,629 @@
+/* Left TOC styles matching the provided design screenshot */
+.bd-icon-collapsible::before,
+.bd-icon-expandable::before {
+    content: "\e724";
+    font-size: 20px;
+    color: #667085;
+}
+
+.bd-icon-expandable {
+    transform: rotate(90deg);
+}
+
+/* Collapse icon for left TOC toggle */
+.bd-icon-collapse-1::before {
+    content: "\e77f";
+    font-size: 21px;
+    color: #667085;
+}
+
+.bd-icon-expand-1::before {
+    content: "\e77b";
+    font-size: 21px;
+    color: #667085;
+}
+
+#doc-left-side {
+    border-right: 1px solid #eaecf0;
+}
+
+.left-toc {
+    position: relative;
+    border-radius: 6px;
+    box-shadow: none;
+    font-size: 14px;
+}
+
+
+.left-toc-list {
+    position: sticky;
+    top: 72px;
+    max-height: calc(100vh - 180px);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-right: 10px !important;
+    /* keep extra bottom padding so last headings are not hidden behind footer */
+    padding-bottom: var(--footer-height) !important;
+}
+
+/* Group wrapper for every two top-level sections in Docs tab */
+.left-toc-group {
+    padding: 12px 0 12px 0;
+    border-bottom: 1px solid #e6e9ee;
+    margin-bottom: 4px;
+}
+
+.left-toc-group-title {
+    font-size: 12px;
+    font-weight: 600;
+    color: #6b7280;
+    padding: 0 12px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.left-toc-group-list {
+    list-style: none;
+    margin: 0;
+    padding: 0 12px;
+}
+
+/* Remove bottom border for the last group so it doesn't show a dividing line */
+.left-toc-group:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 8px;
+}
+
+/* full-height blue indicator bar close to the left edge */
+.left-toc::before {
+    content: '';
+    position: absolute;
+    left: 14px;
+    top: 10px;
+    bottom: 10px;
+    width: 4px;
+    border-radius: 2px;
+}
+
+.left-toc-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.left-toc-item {
+    margin: 0 0 6px 0;
+}
+
+/* Top-level section header: bold and black, caret sits to the left visually */
+.left-toc-section-header {
+    display: flex;
+    align-items: center;
+    justify-content: normal;
+}
+
+.left-toc-section-toggle {
+    order: -1;
+    background: transparent;
+    border: none;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.left-toc-section-toggle .caret {
+    font-size: 14px;
+    color: #374151;
+}
+
+.left-toc-section-link {
+    color: #4F5157;
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    padding-left: 8px;
+}
+
+.left-toc-section-link:hover {
+    color: #16181E;
+}
+
+/* Child lists */
+.left-toc-children {
+    list-style: none;
+    padding-left: 8px;
+    margin: 6px 0 0 25px;
+    position: relative;
+    line-height: 28px;
+}
+
+.left-toc-children::before {
+    content: '';
+    position: absolute;
+    left: -11px;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: #e6e9ee;
+}
+
+.left-toc-child {
+    margin: 6px 0;
+}
+
+.left-toc-sublink {
+    color: #6F7177;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    padding-left: 20px;
+    font-weight: 400;
+}
+
+.left-toc-sublink:hover {
+    color: #16181E;
+}
+
+.left-toc-sublink.subsection {
+    font-weight: 400;
+    color: #1c1917;
+}
+
+/* Subsection header (matches main header layout) */
+.left-toc-subsection-header {
+    display: flex;
+    align-items: center;
+    justify-content: normal;
+}
+
+.left-toc-subtoggle {
+    order: -1;
+    background: transparent;
+    border: none;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.left-toc-subtoggle .caret {
+    font-size: 14px;
+    color: #6b7280;
+}
+
+.left-toc-subchildren {
+    list-style: none;
+    padding-left: 5px;
+    margin: 6px 0 0 25px;
+    position: relative;
+}
+
+.left-toc-subchild {
+    margin: 4px 0;
+    position: relative;
+    z-index: 1;
+}
+
+/* continuous vertical guide for inner subsection groups */
+.left-toc-subchildren::before {
+    content: '';
+    position: absolute;
+    left: -15px;
+    top: 0;
+    bottom: 0;
+    width: 0.3px;
+    background: #e6e9ee;
+    z-index: 0;
+}
+
+/* Active/current page link styling (Gatsby sets aria-current="page") */
+.left-toc a[aria-current="page"],
+.left-toc a.active {
+    color: #002bff;
+    font-weight: 500;
+}
+
+/* Ensure section heading links show active state */
+.left-toc-section-link[aria-current="page"] {
+    color: #2563eb;
+    font-weight: 600;
+}
+
+/* Ensure subsection links show active state */
+.left-toc-sublink[aria-current="page"] {
+    color: #2563eb;
+    font-weight: 600;
+}
+
+.left-toc a[aria-current="page"]::before {
+    content: '';
+    position: absolute;
+    left: -19px;
+    /* extend slightly above/below link for a taller indicator */
+    top: -6px;
+    bottom: -6px;
+    width: 1px;
+    background: #2563eb;
+    border-radius: 2px;
+    z-index: 0;
+}
+
+.left-toc-children a,
+.left-toc-subchildren a,
+.left-toc-children .left-toc-sublink {
+    position: relative;
+    display: block;
+    padding-left: 20px;
+}
+
+.left-toc-children a[aria-current="page"]::before {
+    content: '';
+    position: absolute;
+    left: -19px;
+    /* extend slightly above/below link for a taller indicator */
+    top: -6px;
+    bottom: -6px;
+    width: 2px;
+    background: #2563eb;
+    border-radius: 2px;
+    z-index: 2;
+}
+
+.left-toc-subchildren a[aria-current="page"]::before {
+    content: '';
+    position: absolute;
+    left: -19px;
+    /* extend slightly above/below link for a taller indicator */
+    top: -6px;
+    bottom: -6px;
+    width: 1px;
+    background: #2563eb;
+    border-radius: 2px;
+    z-index: 2;
+}
+
+
+.left-toc-subsection-header>a[aria-current="page"]::before,
+.left-toc-subsection-header>.left-toc-sublink[aria-current="page"]::before,
+.left-toc-section-header>a[aria-current="page"]::before,
+.left-toc-section-header>.left-toc-section-link[aria-current="page"]::before {
+    display: none;
+}
+
+
+/* Search box inside left TOC */
+.left-toc-search {
+    padding: 15px 35px 25px 5px;
+    position: relative;
+}
+
+.left-toc-search input#auto-complete {
+    width: 95%;
+    padding: 8px 10px 8px 10px;
+    /* add space on the right for the search icon */
+    padding-right: 40px;
+    font-size: 14px;
+    border: 1px solid #d0d5dd;
+    border-radius: 6px;
+    background: #ffffff;
+    color: #374151;
+    box-sizing: border-box;
+    outline: none;
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24'><path d='M21 21l-4.35-4.35' stroke='%23667085' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' fill='none'/><circle cx='10.5' cy='10.5' r='6' stroke='%23667085' stroke-width='2' fill='none'/></svg>");
+}
+
+.left-toc-search input#auto-complete:focus {
+    border-color: #002bff;
+    box-shadow: 0 1px 2px 0 rgba(16, 24, 40, .05), 0 0 0 4px rgba(5, 101, 255, 0.24);
+    border-radius: 8px;
+}
+
+.left-toc-search-suggestions {
+    margin: 8px 0 0 0;
+    padding: 0;
+    list-style: none;
+    max-height: 220px;
+    overflow: auto;
+    border: 1px solid #d0d5dd;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0 6px 12px rgba(16, 24, 40, 0.06);
+    z-index: 60;
+    width: 257px;
+}
+
+.left-toc-search-suggestions li {
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #374151;
+    border-bottom: 1px solid #f3f4f6;
+}
+
+.search-suggestion-btn{
+    background-color: transparent !important;
+    border: none !important;
+    text-align: left !important;
+    line-height: 22px !important;
+    cursor: pointer;
+}
+
+.left-toc-search-suggestions li:last-child {
+    border-bottom: none;
+}
+
+.left-toc-search-suggestions li:hover,
+.left-toc-search-suggestions li:focus {
+    background: #f8fafc;
+    color: #0f172a;
+}
+
+/* Collapse button shown inside the search bar */
+.left-toc-collapse-btn {
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    width: 25px;
+    height: 25px;
+    border: none !important;
+    background: #FBFBFC;
+    display: inline-flex;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 70;
+}
+
+.left-toc-collapse-btn .collapse-icon {
+    font-size: 16px;
+    color: #667085;
+}
+
+/* When hiding, add a class to body; remove left pane from layout so content can expand */
+body.left-hidden #left-side,
+body.left-hidden #left-sidebar,
+body.left-hidden #doc-left-side,
+body.left-hidden #left-pane {
+    display: none !important;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
+
+/* Expand main containers to use available width when left pane hidden */
+body.left-hidden #doc-body-container,
+body.left-hidden #doc-body-cont,
+body.left-hidden #doc-right-side,
+body.left-hidden #md-content {
+    /* Reserve space for the collapsed vertical label (100px) so content
+         does not sit underneath it. This makes the content slightly narrower
+         when the left TOC is collapsed. */
+    width: calc(100% - 0px) !important;
+}
+
+/* Floating toggle appended to body (created by JS) */
+.left-toc-floating-toggle {
+    position: fixed;
+    left: 12px;
+    top: calc(var(--header-height) + var(--docs-tab-height) + 8px);
+    width: 25px;
+    height: 25px;
+    background: transparent;
+    display: none;
+    border: none !important;
+    justify-content: center;
+    z-index: 1200;
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+.left-toc-floating-toggle .collapse-icon {
+    font-size: 18px;
+    color: #667085;
+    transform: rotate(180deg);
+}
+
+body.left-hidden .left-toc-floating-toggle {
+    display: inline-flex;
+    top: calc(var(--header-height) + var(--docs-tab-height) + 20px);
+    left: 40px;
+}
+
+body.left-hidden .left-toc-collapse-btn {
+    display: none;
+}
+
+
+/* Small responsive tweaks */
+@media (max-width: 900px) {
+    .left-toc {
+        padding-left: 22px;
+    }
+
+    .left-toc-section-link {
+        font-size: 10px;
+    }
+}
+
+
+.left-toc-list::-webkit-scrollbar,
+#left-sidebar::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+
+.left-toc-list,
+#left-sidebar {
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE 10+ */
+}
+
+/* Custom overlay scrollbar track + thumb (positioned inside #left-sidebar) */
+.left-custom-scroll-track {
+    position: absolute;
+    right: 0px;
+    top: 72px;
+    /* match left-toc-list top offset */
+    width: 8px;
+    /* height: calc(100vh - 180px); */
+    border-radius: 8px;
+    background: transparent;
+    z-index: 9998;
+    pointer-events: none;
+    /* allow clicks through track unless thumb grabbed */
+}
+
+.left-custom-scroll-thumb {
+    position: absolute;
+    left: 0;
+    width: 8px;
+    height: 56px;
+    /* will be set dynamically */
+    background: #e6e9ee;
+    border-radius: 8px;
+    box-shadow: none;
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+.left-custom-scroll-thumb:hover {
+    background: #cbd5e1;
+}
+
+/* Ensure no horizontal scrollbar */
+.left-toc-list,
+#left-sidebar {
+    overflow-x: hidden;
+}
+
+#left-collapsed-label {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: calc(var(--header-height) + var(--docs-tab-height));
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    pointer-events: auto;
+    /* allow clicks on label to expand */
+    z-index: 1200;
+    cursor: pointer;
+}
+
+body.left-hidden #left-collapsed-label {
+    display: flex;
+}
+
+.left-collapsed-label-text {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-weight: 500;
+    color: #667085;
+    padding: 14px 16px;
+    pointer-events: auto;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    margin-inline-end: auto;
+    margin-top: 55px;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+}
+
+@media (min-width: 1100px) {
+    body.left-hidden main {
+        border-left: 1px solid #d0d5dd !important;
+        margin-left: 68px;
+    }
+}
+
+/* Make the left sidebar fixed beneath the header + docs tab so it stays visible on scroll.
+   Keep the parent `#left-side` width intact so layout doesn't shift. */
+#left-sidebar {
+    position: fixed !important;
+    top: calc(var(--header-height) + var(--docs-tab-height));
+    left: 32px;
+    /* matches container padding-left used in layout */
+    width: 310px;
+    /* allow the sidebar to reach the page bottom; content gets extra padding so items stay above footer */
+    bottom: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 70;
+}
+
+/* Small responsive tweak: when viewport is narrow, revert to non-fixed behavior */
+@media (max-width: 900px) {
+    #left-sidebar {
+        position: relative !important;
+        width: auto;
+        left: auto;
+        height: auto;
+    }
+}
+
+/* Hide desktop left TOC on small screens (<=768px) */
+@media (max-width: 1100px) {
+    /* hide the left sidebar and related left TOC elements completely */
+    #left-sidebar,
+    .left-toc,
+    #left-side,
+    #doc-left-side,
+    #left-pane,
+    .left-toc-floating-toggle,
+    #left-collapsed-label {
+        display: none !important;
+        visibility: hidden !important;
+        pointer-events: none !important;
+        opacity: 0 !important;
+    }
+
+    /* ensure body.left-hidden adjustments don't affect narrow layouts */
+    body.left-hidden #doc-body-container,
+    body.left-hidden #doc-body-cont,
+    body.left-hidden #doc-right-side,
+    body.left-hidden #md-content {
+        width: auto !important;
+    }
+}
+
+/* hide native search cancel on WebKit so we show our styled clear control */
+.left-toc-search input[type="search"]::-webkit-search-cancel-button { display: none; -webkit-appearance:none; appearance:none; }
+
+/* custom clear button inside left TOC search (positioned left of collapse button) */
+.left-toc-search { position: relative; }
+.left-toc-search .search-clear-btn {
+    position: absolute;
+    /* fixed pixel top keeps the button aligned with the input field
+       even when the suggestions dropdown changes the container height */
+    right: 53px;
+    top: 17.3px;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: #ffffff;
+    border: 1px solid #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 20px;
+    color: #374151;
+    z-index: 80;
+    padding: 0;
+    transform: none;
+}

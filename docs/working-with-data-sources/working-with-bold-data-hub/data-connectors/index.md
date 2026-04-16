@@ -34,9 +34,8 @@ documentation: ug
 [Salesforce](/working-with-data-sources/working-with-bold-data-hub/data-connectors/salesforce/)<br>
 [Slack](/working-with-data-sources/working-with-bold-data-hub/data-connectors/slack/)<br>
 [Strapi](/working-with-data-sources/working-with-bold-data-hub/data-connectors/strapi/)<br>
-[Stripe](/working-with-data-sources/working-with-bold-data-hub/data-connectors/strip/)<br>
 [Workable](/working-with-data-sources/working-with-bold-data-hub/data-connectors/workable/)<br>
-[Zendesk Chart](/working-with-data-sources/working-with-bold-data-hub/data-connectors/zendesk-chart/)<br>
+[Zendesk Chat](/working-with-data-sources/working-with-bold-data-hub/data-connectors/zendesk-chat/)<br>
 [Zendesk Support](/working-with-data-sources/working-with-bold-data-hub/data-connectors/zendesk-support/)<br>
 [Zendesk Talk](/working-with-data-sources/working-with-bold-data-hub/data-connectors/zendesk-talk/)<br>
 [Web](/working-with-data-sources/working-with-bold-data-hub/data-connectors/web/)<br>

@@ -6,12 +6,14 @@
     <meta http-equiv="Content-Security-Policy"  script-src="https://cdnjs.cloudflare.com">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-    <link rel="icon" href="/favicon.png" type="image/png" />
+    <link rel="icon" href="/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" href="/favicon-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="/favicon-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://help.boldbi.com/favicon-270x270.png" />
     <meta name="description" content="The documentation page you are looking for is not available. It may have been moved to a new location or been removed.">
     <link rel="stylesheet" href="/404/common/index.css">
     <link rel="stylesheet" href="/404/common/style.css">
+    <link rel="stylesheet" href="/css/home.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js" integrity="sha384-aBL3Lzi6c9LNDGvpHkZrrm3ZVsIwohDD7CDozL0pk8FwCrfmV7H9w8j3L7ikEv6h" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" integrity="sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb" crossorigin="anonymous"></script>
@@ -19,20 +21,36 @@
 
 <body>
 
-    <div class="ej-doc-header">
-        <div class="ej-doc-left-side">
-            <a href="https://help.boldbi.com">
-                <div class="ej-doc-syncfusion-logo"></div>
-            </a>
-            <div class="ej-doc-divider"></div>
-            <div class="ej-doc-platform-name">Documentation</div>
-        </div>
-        <div class="ej-doc-right-side">
-            <a href="https://www.boldbi.com/forums/" target="_blank">Forum</a>
-            <a href="https://support.boldbi.com/kb" target="_blank">KB</a>
-			<a href="https://app.boldid.net/register/bi/embedded?evaluation=v2" target="_blank" role="button"><div class="header-demo-link">Try it Free</div></a>
-        </div>
-    </div>
+        <header class="br-header" role="banner" aria-label="Bold BI Docs Header">
+            <div class="br-container">
+                <!-- Left: Brand + Divider + Section Title -->
+                <a class="br-brand" href="https://help.boldbi.com/" aria-label="Bold BI Home">
+                    <img src="/img/boldbi-logo.svg">
+                    <span class="br-divider" aria-hidden="true"></span>
+                   <span class="br-section" style="text-decoration: none !important;"><a href="/">Documentation</a></span>
+                </a>
+
+                <!-- Right: Nav -->
+                <nav class="br-nav" aria-label="Primary">
+                    <ul class="br-navlist">
+                        <li><a href="https://www.boldbi.com/forums/" target="_blank" style="text-decoration: none !important;">Forum</a></li>
+                        <li><a href="https://support.boldbi.com/kb" target="_blank" style="text-decoration: none !important;">KB</a></li>
+                    </ul>
+                    <a class="br-cta" href="https://app.boldid.net/register/bi/embedded?evaluation=v2" target="_blank">Try it Free</a>
+                </nav>
+
+                <!-- Mobile menu button (optional, no JS required for this static example) -->
+                <button class="br-menu" aria-label="Toggle menu" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+                <!-- Mobile Slide Menu -->
+                <div class="mobile-menu-panel">
+                    <a href="https://www.boldbi.com/forums/" className="header-menu-link" target="_blank">Forum</a>
+				    <a href="https://support.boldbi.com/kb" className="header-menu-link" target="_blank">KB</a>
+                    <a class="mobile-cta" href="https://app.boldid.net/register/bi/embedded?evaluation=v2">Try it Free</a>
+                </div>
+            </div>
+        </header>
     <div class="e-error-container" id="error-container">
         <div class="container">
             <div class="row mb-4">
@@ -44,19 +62,24 @@
             <div id="docerror-search-result" class="doc-hide"></div>
             <div class="mb-4">
                 <div class="e-contact-content row">
-                    <p class="h4 m-auto" style="font-size: 21px;">You may also <a href="https://www.boldbi.com/support" target="_blank" style="font-size: 21px; color: #ff4801;">contact us</a> if you are not able to find the information you are looking for.</p>
+                    <p class="h4 m-auto" style="font-size:18px;">You may also <a href="https://www.boldbi.com/support" target="_blank" style="font-size: 18px; color: #0058E6;">contact us</a> if you are not able to find the information you are looking for.</p>
                 </div>
             </div>
 
         </div>
-        <div id="doc-footer">
-            <div id="footer-copyright">
-                <a id="copyright" target="_blank" href="https://www.boldbi.com/copyright">Copyright © 2001 - <span id="copyright-year"> 2024</span> Syncfusion Inc. All Rights Reserved</a>
-            </div>
-            <div id="footer-powered_by"></div>
-        </div>
+                <div class="copyright-footer">
+                    <div class="footer-inner-container">
+                        <span class="copyright-description" >
+                            <a href="https://www.boldbi.com/copyright/"> 2001 - 2026 Syncfusion Inc. All Rights Reserved.</a>
+                        </span>
+                        <div class="footer-links-container" aria-label="Legal">
+                            <a class="footer-links" href="https://www.boldbi.com/legal/terms-of-use/">Terms of Use</a>
+                            <a class="footer-links" href="https://www.boldbi.com/legal/privacy/">Privacy Policy</a>
+                            <a class="footer-links" href="https://www.boldbi.com/legal/cookie-policy/">Cookie Policy</a>
+                        </div>
+                    </div>
+                </div>
     </div>
-    <script src="https://support.boldbi.com/chatwidget-api/widget/v1/240f11f3-ccc2-4755-8fc5-5a7fa9bc9b1e" defer async></script>
 </body>
 <style>
     body {
@@ -65,7 +88,7 @@
         margin: auto;
         background: #f8f8f8;
         font-family: 'Caros', sans-serif;
-        font-size: 14px;
+        font-size: 18px;
     }
 
     #header {
@@ -91,7 +114,7 @@
         text-align: center;
         font-weight: 500;
         font-family: 'Caros', sans-serif;
-        font-size: 21px;
+        font-size: 18px;
         padding-right: 15px;
     }
 
@@ -104,7 +127,7 @@
     @media (max-width: 900px) {
         #error-text,
         p.h4 m-auto {
-            font-size: 21px;
+            font-size: 18px;
         }
     }
 

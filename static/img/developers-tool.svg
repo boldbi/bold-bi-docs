@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="56"
+     height="56"
+     viewBox="0 0 56 56"
+     fill="none">
+
+  <!-- Circular background (no border) -->
+  <circle
+    cx="28"
+    cy="28"
+    r="28"
+    fill="#f28c28" /> <!-- medium orange -->
+
+  <!-- Icon group: centered & padded -->
+  <g
+    transform="translate(28 28) scale(0.56) translate(-25 -25)"
+    stroke="white"
+    fill=""
+    stroke-width="3"
+    stroke-linecap="round"
+  >
+    <path d="M4.5 38V31.4336C4.5 28.1725 7.14365 25.5288 10.4048 25.5288H26.4482"/>
+
+    <circle cx="19.1723" cy="13.0517" r="8.3017"/>
+
+    <path d="M35.2354 30L33.5884 37.8234"/>
+    <path d="M30.4054 31.0684L27.1448 33.6044C27.0697 33.6628 27.0664 33.7751 27.138 33.8377L30.027 36.3656"/>
+    <path d="M37.5946 31.4465L40.8552 33.9825C40.9303 34.0409 40.9336 34.1533 40.862 34.2159L37.973 36.7438"/>
+
+    <circle cx="34" cy="34" r="11.25"/>
+  </g>
+</svg>

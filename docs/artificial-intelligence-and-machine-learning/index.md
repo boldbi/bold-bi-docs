@@ -9,31 +9,9 @@ documentation: ug
 
 # Artificial Intelligence and Machine Learning
 
-This section explores how Artificial Intelligence and Machine Learning are integrated into Bold BI, enhancing data analysis, visualization, and automation. Below are the key features powered by AI and Machine Learning, enabling smarter, faster insights within Bold BI.
-
-[Getting Started](/artificial-intelligence-and-machine-learning/ai-copilot-getting-started/)
-
-[Architecture](/artificial-intelligence-and-machine-learning/architecture/)
-
-[Configure AI](/artificial-intelligence-and-machine-learning/configure-ai/)
-
-[Activate AI Feature](/artificial-intelligence-and-machine-learning/activate-ai-feature/)
-
-[Enable Disable AI Feature](/artificial-intelligence-and-machine-learning/enable-disable-ai-feature/)
-
-[AI Data Processing](/artificial-intelligence-and-machine-learning/ai-data-processing/)
-
-[Language Support](/artificial-intelligence-and-machine-learning/language-support/)
-
-[Best Practices and Limitations](/artificial-intelligence-and-machine-learning/best-practices-and-limitations/)
-
-[Generative AI](/artificial-intelligence-and-machine-learning/generative-ai/)
+This section explains how Artificial Intelligence (AI) and Machine Learning (ML) are integrated into Bold BI, enhancing data analysis, visualization, and automation. The following pages describe the key AI and ML features available in Bold BI.
 
 [Q&A Widget](/artificial-intelligence-and-machine-learning/qna-widget/)
-
-[Synonyms](/artificial-intelligence-and-machine-learning/synonyms/)
-
-[Summary Scheduling](/artificial-intelligence-and-machine-learning/schedule-summary/)
 
 [Forecasting](/artificial-intelligence-and-machine-learning/time-series-forecasting/)
 

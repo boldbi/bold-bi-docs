@@ -1,0 +1,537 @@
+/* Header Ask AI styles (moved from ask.css) */
+.ask-split-button {
+	display: flex;
+	align-items: center;
+	background: #f5f7fa;
+	border: 1px solid #d1d5db;
+	overflow: hidden;
+	margin-right: 12px;
+	border-radius: 6px;
+}
+
+.ask-main {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	padding: 8px 9px;
+	font-size: 14px;
+	font-weight: 500;
+	color: #344054;
+	cursor: pointer;
+	height: 31px;
+	overflow: hidden;
+	border: none;
+	background: transparent;
+}
+
+.ask-main::before {
+	content: "";
+	display: block;
+	width: 16px;
+	height: 16px;
+	background: url("/img/ask-btn-icon.svg") no-repeat center;
+}
+
+.ask-split-button:hover {
+	background-color: #ffff;
+}
+
+.ask-container-mobile {
+	display: none;
+}
+
+/* Header search box and suggestions (align with left TOC styles) */
+.search-box {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 12px;
+}
+
+/* Hide native clear button so our custom control is consistent */
+.search-box input[type="search"]::-webkit-search-cancel-button {
+	-webkit-appearance: none;
+	appearance: none;
+}
+
+/* Custom clear button inside inputs */
+.search-clear-btn {
+	position: absolute;
+	right: 8px;
+	top: 47%;
+	transform: translateY(-50%);
+	background: #ffffff;
+	border: 1px solid #fff;
+	width: 28px;
+	height: 28px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	font-size: 20px;
+	color: #374151;
+	z-index: 1300;
+	padding: 0;
+}
+
+.search-box {
+	position: relative;
+}
+
+.search-box input[type="search"] {
+	width: 280px;
+	padding: 8px 36px 8px 10px;
+	font-size: 14px;
+	border: 1px solid #d0d5dd;
+	border-radius: 6px;
+	background: #fff;
+	color: #374151;
+	outline: none;
+	box-sizing: border-box;
+}
+
+.search-box input[type="search"]:focus {
+	border-color: #5b26ee;
+	box-shadow: 0 1px 2px 0 rgba(16, 24, 40, .05), 0 0 0 4px rgba(105, 57, 239, 0.12);
+}
+
+/* suggestions popup reused styles from left-toc but positioned under header */
+.header-search-suggestions {
+	position: absolute;
+	left: 0;
+	/* top: calc(100% + 8px); */
+	max-height: 260px;
+	overflow: auto;
+	text-align: left;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	border: 1px solid #d0d5dd;
+	border-radius: 8px;
+	background: #fff;
+	box-shadow: 0 8px 24px rgba(16, 24, 40, 0.08);
+	z-index: 1200;
+	width: 100% !important;
+}
+
+.header-search-suggestions li {
+	padding: 8px 12px;
+	cursor: pointer;
+	font-size: 14px;
+	color: #374151;
+	border-bottom: 1px solid #f3f4f6;
+}
+
+.header-search-suggestions li:last-child {
+	border-bottom: none;
+}
+
+.header-search-suggestions li:hover,
+.header-search-suggestions li:focus {
+	background: #f8fafc;
+	color: #0f172a;
+}
+
+/* make the search icon align inside the input */
+.search-box .search-icon {
+	position: absolute;
+	right: 10px;
+	top: 14px;
+	transform: translateY(-50%);
+	color: #667085;
+	pointer-events: none;
+}
+
+.theme-switch-btn:hover {
+	background-color: #dbe0e9a3;
+}
+
+/* ensure header theme toggle is visible at all screen sizes */
+.theme-switch-btn {
+	display: inline-flex !important;
+	align-items: center;
+	justify-content: center;
+}
+
+/* header links (Forum/KB) - show on wide screens, hide on small screens */
+.header-links {
+	display: inline-flex;
+	gap: 10px;
+	align-items: center;
+	margin-right: 8px;
+}
+
+.header-links .header-menu-link {
+	text-decoration: none;
+	color: #344054;
+	font-size: 14px;
+	padding: 6px 8px;
+	border-radius: 6px;
+}
+
+.header-links .header-menu-link:hover {
+	background: #f2f4f7;
+}
+
+@media (max-width: 1100px) {
+	.header-links {
+		display: none !important;
+	}
+
+	.ask-container {
+		display: none;
+	}
+
+	.ask-container-mobile {
+		display: block;
+	}
+}
+
+/* extra icon shown after theme-toggle on narrower viewports */
+.theme-toggle-extra {
+	display: none;
+}
+
+@media (max-width: 1100px) {
+	.theme-toggle-extra {
+		display: inline-flex;
+		width: 18px;
+		height: 18px;
+		margin-left: 8px;
+		background-image: url('/img/moon-icon.svg');
+		background-repeat: no-repeat;
+		background-size: contain;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+@media (max-width: 900px) {
+	.search-box input[type="search"] {
+		width: 180px;
+	}
+
+	.header-search-suggestions {
+		width: 240px;
+	}
+}
+
+/* hide input,show icon*/
+@media (max-width: 1100px) {
+
+	.search-box input {
+		display: none;
+	}
+
+	@media (max-width: 900px) {
+		.nav {
+			display: none;
+		}
+	}
+
+	.search-box {
+		width: auto;
+		display: flex;
+		align-items: center;
+	}
+
+	.search-icon {
+		position: static;
+		font-size: 18px;
+		cursor: pointer;
+		padding: 6px;
+		left: -14px;
+		padding-bottom: 20px;
+	}
+}
+
+/* popup style*/
+.mobile-search-popup {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #fff;
+	z-index: 10000;
+	padding: 16px;
+}
+
+.mobile-search-header {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.mobile-search-header input {
+	flex: 1;
+}
+
+.mobile-search-close {
+	border: none;
+	background: none;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+/* suggestions */
+.mobile-search-suggestions {
+	margin-top: 15px;
+	list-style: none;
+	padding: 0;
+}
+
+.mobile-search-suggestions li {
+	padding: 10px;
+	border-bottom: 1px solid #eee;
+}
+
+.mobile-search-suggestions button {
+	background: none;
+	border: none;
+	width: 100%;
+	text-align: left;
+}
+
+/* Overlay (dark transparent background) */
+.menu-popup-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.3);
+	/* lighter overlay */
+	z-index: 10000;
+}
+
+/* Popup box → move to top-right */
+.menu-popup-box {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+
+	background: #fff;
+	border-radius: 12px;
+	padding: 40px 16px 16px 16px;
+	width: 240px;
+
+	box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+
+	position: absolute;
+	/* ensure relative parent */
+}
+
+/* Close button */
+.menu-popup-close {
+	position: absolute;
+	top: 10px;
+	right: 12px;
+
+	border: none;
+	background: none;
+	font-size: 18px;
+	cursor: pointer;
+
+	line-height: 1;
+	padding: 4px;
+}
+
+/* Menu items */
+.menu-popup-item {
+	background: #f2f4f7;
+	border-radius: 10px;
+	padding: 12px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.menu-popup-item a {
+	text-decoration: none;
+	color: #344054;
+	font-size: 14px;
+	font-weight: 500;
+	display: block;
+}
+
+/* Hover */
+.menu-popup-item:hover {
+	background: #e5e7eb;
+}
+
+/* 3-dot button */
+.menu-icon-btn {
+	border: none;
+	background: transparent;
+	font-size: 20px;
+	cursor: pointer;
+	padding: 6px 0px 6px 6px;
+}
+
+/* header menu button (three-line) hidden by default; show at 1024px and below */
+.header-menu-btn {
+	display: none;
+}
+
+@media (max-width: 1100px) {
+	.header-menu-btn {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	/* hide top nav links on smaller screens (they move into popup) */
+	.nav {
+		display: none !important;
+	}
+
+	/* hide header search entirely on small screens */
+	.search-box {
+		display: none !important;
+	}
+}
+
+/* Ask button responsive tweaks */
+.ask-main .ask-logo {
+	display: none;
+	height: 20px;
+	width: auto;
+}
+
+.ask-main .ask-ai-label {
+	display: none;
+}
+
+@media (max-width: 1100px) {
+	.ask-split-button {
+		margin-right: 0px !important;
+	}
+}
+
+@media (max-width: 426px) {
+    .ask-main {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        padding: 5px 5px;
+        font-size: 13px;
+        font-weight: 500;
+        color: #344054;
+        cursor: pointer;
+        height: 31px;
+        overflow: hidden;
+        border: none;
+        background: transparent;
+    }
+ 
+    .ask-main .ask-logo {
+        display: inline-block;
+    }
+ 
+    .ask-main .ask-ai-label {
+        display: inline-block;
+        font-weight: 600;
+        font-size: 12px;
+    }
+}
+
+/* hamburger menu icon (three horizontal bars) */
+.menu-hamburger {
+	display: inline-flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 18px;
+}
+
+.menu-hamburger i {
+	display: block;
+	width: 18px;
+	height: 2px;
+	background: currentColor;
+	margin: 3px 0;
+	border-radius: 2px;
+}
+
+@media (prefers-color-scheme: dark) {
+	.menu-hamburger i {
+		background: #fff;
+	}
+}
+
+@media (max-width: 560px) {
+	.header-try-it-free-btn {
+		display: none !important;
+	}
+}
+
+/* HD vertical icon: hidden by default, visible on 1100px and below */
+#article-options-wrap {
+	display: none;
+}
+
+@media (max-width: 1100px) {
+	#article-options-wrap {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+/* Hide the popup CTA on wider screens (>=561px). From 1024->561px we only show forum/KB.
+   For 560px and below show a popup-styled Try It Free button (different from desktop CTA). */
+@media (min-width: 561px) {
+
+	.menu-popup-box .menu-cta,
+	.menu-popup-box .menu-cta-item {
+		display: none !important;
+	}
+}
+
+/* ensure popup CTA is visible on small screens (<=560px) and styled like menu items */
+@media (max-width: 560px) {
+
+	.menu-popup-box .menu-cta,
+	.menu-popup-box .menu-cta-item {
+		display: block !important;
+	}
+
+	/* make popup CTA button use full width inside popup and style like other menu items */
+	.menu-popup-box .menu-try-it-free-btn,
+	.menu-popup-box .menu-cta-item .menu-try-it-free-btn {
+		display: block !important;
+		width: 100%;
+		text-align: center;
+	}
+
+	.menu-popup-box .menu-try-it-free-btn {
+		background: #0058EC;
+		border-radius: 10px;
+		padding: 12px;
+		margin-bottom: 10px;
+		color: #FFFFFF;
+		font-size: 14px;
+		font-weight: 500;
+		text-decoration: none;
+		display: block;
+	}
+}
+
+/*hide documentation title in header when mobile*/
+@media (max-width: 680px) {
+	.header-docs-text {
+		display: none;
+	}
+}
+
+/* reduce gap between ask AI and menu button for very small screens */
+@media (max-width: 426px) {
+	#header {
+		padding: 0px 16px !important;
+	}
+}
+
+/* Header docs link: subtle hover effect */
+.header-docs-text a:hover {
+	background-color: #e7eaed;
+}

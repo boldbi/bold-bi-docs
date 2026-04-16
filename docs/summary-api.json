@@ -1,0 +1,50 @@
+{
+	"Server API Reference": {
+		"slug": "server-api-reference",
+		"pages": {
+			"Interact with REST API": "interact-with-rest-api",
+			"v1.0": {
+				"slug": "v1.0",
+				"pages": {
+					"API Reference": "api-reference?html=true",
+					"Try it now": "try-it-now?html=true"
+				}
+			},
+			"v2.0": {
+				"slug": "v2.0",
+				"pages": {
+					"API Reference": "api-reference?html=true",
+					"Try it now": "try-it-now?html=true"
+				}
+			},
+			"v3.0": {
+				"slug": "v3.0",
+				"pages": {
+					"API Reference": "api-reference?html=true",
+					"Try it now": "try-it-now?html=true"
+				}
+			},
+			"v4.0": {
+				"slug": "v4.0",
+				"pages": {
+					"API Reference": "api-reference?html=true",
+					"Try it now": "try-it-now?html=true"
+				}
+			},
+			"v5.0": {
+				"slug": "v5.0",
+				"pages": {
+					"API Reference": "api-reference?html=true",
+					"Try it now": "try-it-now?html=true"
+				}
+			},
+			"v6.0": {
+				"slug": "v6.0",
+				"pages": {
+					"API Reference": "api-reference?html=true",
+					"Try it now": "try-it-now?html=true"
+				}
+			}
+		}
+	}
+}

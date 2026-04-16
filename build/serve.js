@@ -2,7 +2,7 @@ var gulp = require('gulp');
 var shelljs = require('shelljs');
 
 gulp.task('gatsbydevelop', done=> {
-    shelljs.exec('gatsby develop');
+    shelljs.exec('gatsby develop --open');
     done();
 });
 

@@ -1,0 +1,368 @@
+{
+	"Site Administration": {
+		"slug": "site-administration",
+		"pages": {
+			"Site Settings": "site-settings",
+			"Custom Domain (Cloud Analytics Server)": "custom-domain-in-cloud-bi",
+			"Look and Feel (Cloud BI)": {
+				"slug": "look-and-feel-settings-in-cloud-bi",
+				"pages": {
+					"Create Custom Application Theme": "create-custom-application-theme",
+					"Create Custom Dashboard Theme": "create-custom-dashboard-theme",
+					"Custom Theme Viewer": {
+						"slug": "custom-theme-viewer",
+						"pages": {
+							"Migrate JSON Properties to Theme Variables": "migrate-json-property-to-theme-variable"
+						}
+					}
+				}
+			},
+			"UI Customization": "user-interface-customization",
+			"Look and Feel (Embedded Analytics)": "look-and-feel-settings-in-embedded-analytics",
+			"Dashboard Settings": {
+				"slug": "dashboard-settings",
+				"pages": {
+					"Default Dashboard": "default-dashboard",
+					"Public Dashboards": "public-dashboards",
+					"Default Views": "default-views",
+					"Auto-Save Filters": "auto-save-filter",
+					"Dashboard Theming": "enable-or-disable-dashboard-theme",
+					"Enterprise Insights": "enterprise-insights",
+					"Deployment Dashboards": "deployment-dashboard",
+					"Get Embed Code": "show-or-hide-get-embed-code-option",
+					"Lock Resource Synchronization": "lock-resource-synchronization"
+				}
+			},
+			"Embed Settings": "embed-settings",
+			"Email Settings": {
+				"slug": "email-settings",
+				"pages": {
+					"Configuration": {
+						"slug": "configuration",
+						"pages": {
+							"SMTP Configuration": "smtp-account",
+							"Microsoft 365 Configuration": "office-365-account"
+						}
+					},
+					"Email Activity Logs": "email-activity-logs",
+					"Email Templates": "email-template"
+				}
+			},
+			"Account Settings": "account-settings",
+			"Data Process Settings": {
+				"slug": "data-process-settings",
+				"pages": {
+					"Data Store Configuration": "datastore-settings",
+					"Data Cache Configuration": "data-cache-settings"
+				}
+			},
+			"Data Connector Settings": {
+				"slug": "data-connector-settings",
+				"pages": {
+					"OAuth Configuration": "oauth-configuration"
+				}
+			},
+			"Widget Settings": "widget-settings",
+			"User Directory Settings": {
+				"slug": "user-directory-settings",
+				"pages": {
+					"Active Directory": {
+						"slug": "active-directory",
+						"pages": {
+							"Active Directory Settings": "active-directory",
+							"Synchronization Schedule": "active-directory-synchronization-schedule"
+						}
+					},
+					"Azure Active Directory": {
+						"slug": "azure-active-directory",
+						"pages": {
+							"Synchronization Schedule": "azure-active-directory-synchronization-schedule"
+						}
+					},
+					"Existing Database": {
+						"slug": "existing-database",
+						"pages": {
+							"Database Settings": "database-settings",
+							"Synchronization Schedule": "imported-database-users-synchronization-schedule"
+						}
+					}
+				}
+			},
+			"Notification Settings": "notification-settings",
+			"API Key": "api-key",
+			"Site Credentials": "site-credentials",
+			"Integrations": {
+				"slug": "integrations",
+				"pages": {
+					"Webhook Listing": "webhook-listing",
+					"Failure Logs": "failure-logs"
+				}
+			},
+			"Login Disclaimer": "login-disclaimer",
+			"Payments": {
+				"slug": "payments",
+				"pages": {
+					"Error Codes": "error-codes"
+				}
+			},
+			"Subscription": "subscription",
+			"Enterprise Insights Dashboard": "enterprise-insights-dashboard"
+		}
+	},
+	"Resource Management": {
+		"slug": "managing-resources",
+		"pages": {
+			"Manage Dashboards": {
+				"slug": "manage-dashboards",
+				"pages": {
+					"Open Dashboards": "open-dashboards",
+					"Add Dashboards": "add-dashboards",
+					"Favorite Dashboards": "favorite-dashboards",
+					"Manage Dashboard Views": "manage-dashboard-views",
+					"Manage Multi-Tab Dashboards": "manage-multi-tabbed-dashboards",
+					"Share Filtered Dashboards Without Saving Views": "share-filtered-dashboards-without-save-views",
+					"Move and Copy Dashboards": "move-and-copy-dashboards",
+					"Move Dashboards in Bulk": "move-bulk-dashboards",
+					"Dashboard Version History": "version-history-of-dashboards",
+					"Delete Dashboards": "delete-dashboards",
+					"Share Dashboards": "share-dashboards",
+					"Publish Dashboards": "publish-dashboards",
+					"Advanced Dashboard Security": "advanced-dashboard-security",
+					"Enable Tab Security": "enable-tab-security",
+					"Unlisted Dashboards": "unlisted-dashboards"
+				}
+			},
+			"Data Sources": {
+				"slug": "manage-data-sources"
+			},
+			"Manage Pinboards": {
+				"slug": "manage-pinboards",
+				"pages": {
+					"Rename Pinboards": "rename-pinboards",
+					"Duplicate Pinboards": "duplicate-pinboards",
+					"Delete Pinboards": "delete-pinboards",
+					"Set Default Pinboards": "set-default-pinboards",
+					"Pin Widgets": "pin-widgets",
+					"Unpin Widgets": "unpin-widgets",
+					"Edit Layout": "edit-layout",
+					"Drag and Drop Widgets": "drag-and-drop",
+					"Go to Dashboard": "go-to-dashboard",
+					"Navigate to Another Pinboard": "navigate-another-pinboard"
+				}
+			},
+			"Manage Schedules": {
+				"slug": "manage-schedules"
+			},
+			"Manage Slideshows": {
+				"slug": "manage-slideshows"
+			},
+			"User Profile": {
+				"slug": "user-profile"
+			},
+			"Manage Users": {
+				"slug": "manage-users",
+				"pages": {
+					"Import Users from Existing Database": "import-database-users",
+					"Synchronize Existing Database Users": "synchronization-imported-users-from-exisiting-database",
+					"Import Active Directory Users": "import-active-directory-users",
+					"Synchronize Active Directory Users": "synchronize-active-directory-users",
+					"Import Azure Active Directory Users": "import-azure-active-directory-users",
+					"Synchronize Azure Active Directory Users": "synchronize-azure-active-directory-users",
+					"Bulk Import Results": "bulk-import-result",
+					"Profile": "profile"
+				}
+			},
+			"Manage Groups": {
+				"slug": "manage-groups",
+				"pages": {
+					"Import Active Directory Groups": "import-active-directory-groups",
+					"Synchronize Active Directory Groups": "synchronize-active-directory-groups",
+					"Import Azure Active Directory Groups": "import-azure-active-directory-groups",
+					"Synchronize Azure Active Directory Groups": "synchronize-azure-active-directory-groups",
+					"Import OAuth 2.0 Groups": "import-oauth-groups",
+					"Import OpenID Connect Groups": "import-openid-groups",
+					"Bulk Import Results": "bulk-import-result"
+				}
+			},
+			"Manage Permissions": {
+				"slug": "manage-permissions",
+				"pages": {
+					"Manage Resource Permissions": "manage-resources-permission",
+					"Manage Resource Feature Permissions": "manage-resources-feature-permission"
+				}
+			},
+			"Manage System Administrator Access": {
+				"slug": "manage-system-administrator-access"
+			}
+		}
+	},
+	"Security Configuration": {
+		"slug": "security-configuration",
+		"pages": {
+			"Authorization Server": "authorize-server",
+			"Single Sign-On": {
+				"slug": "single-sign-on",
+				"pages": {
+					"Overview": "overview",
+					"Office 365 support": "office-365-support",
+					"Azure Active Directory": "azure-active-directory",
+					"OAuth 2.0 Support": {
+						"slug": "oauth-2.0-support",
+						"pages": {
+							"Okta": "okta",
+							"OneLogin": "onelogin",
+							"Amazon Cognito": "amazon-cognito",
+							"Auth0": "auth0",
+							"Microsoft Entra ID Azure AD": "microsoft-entra-azure-ad",
+							"Fusion Auth": "fusionauth"
+						}
+					},
+					"OpenID Support": {
+						"slug": "openid-support",
+						"pages": {
+							"Okta": "okta",
+							"OneLogin": "onelogin",
+							"Auth0": "auth0",
+							"Keycloak": "keycloak",
+							"RedHat": "redhat",
+							"Fusion Auth": "fusionauth"
+						}
+					},
+					"JWT Support": "json-web-token"
+				}
+			},
+			"CORS Settings": "cors-settings",
+			"Known Domain Configuration": "known-domain-configuration",
+			"Content Security Policy Settings": "content-security-policy",
+			"X-Frame-Options Configuration": "x-frame-options",
+			"IP Whitelisting Configuration": "network-settings",
+			"Syncfusion Cloud Managed Service": "security-in-cloud-bi",
+			"Self Deployment": "security-in-embed-bi",
+			"Data Security Configuration": "data-security-configuration",
+			"Audit Logs": "audit-logs",
+			"Concierge Support Settings": "concierge-support-settings",
+			"Enable CHIPS for Cross-Site IFrame Embedding": "enable-chips-for-iframe-embedding"
+		}
+	},
+	"Multi-Tenancy": {
+		"slug": "multi-tenancy",
+		"pages": {
+			"Create a Tenant": "create-new-site",
+			"Site Administration": {
+				"slug": "site-administration",
+				"pages": {
+					"Rebranding": "rebranding",
+					"Proxy Settings": "proxy-settings",
+					"Email Settings": {
+						"slug": "email-settings",
+						"pages": {
+							"Configuration": {
+								"slug": "configuration",
+								"pages": {
+									"SMTP Configuration": "smtp-account",
+									"Microsoft 365 Configuration": "office-365-account"
+								}
+							},
+							"Email Activity Logs": "email-activity-logs",
+							"Email Templates": "email-template"
+						}
+					},
+					"Audit Logs": "audit-logs",
+					"Account Settings": "account-settings",
+					"API Keys": "api-keys",
+					"Authentication": {
+						"slug": "authentication",
+						"pages": {
+							"Default Authentication": "default-authentication",
+							"Azure B2C Settings": "azure-b2c-settings",
+							"OAuth 2.0 Support": "oauth-2.0-support",
+							"OpenID Support": "openid-settings",
+							"JSON Web Token": "json-web-token"
+						}
+					},
+					"Look and Feel Settings": {
+						"slug": "look-and-feel-settings",
+						"pages": {
+							"Fonts": "font",
+							"Themes": {
+								"slug": "theme",
+								"pages": {
+									"Create Custom Application Theme": "create-custom-application-theme",
+									"Create Custom Dashboard Theme": "create-custom-dashboard-theme",
+									"Custom Theme Viewer": {
+										"slug": "custom-theme-viewer",
+										"pages": {
+											"Migrate JSON Properties to Theme Variables": "migrate-json-property-to-theme-variable"
+										}
+									}
+								}
+							}
+						}
+					},
+					"Manage License": "manage-license",
+					"Manage Localization": "manage-localization",
+					"Configuration": "configuration"
+				}
+			},
+			"Manage Sites": "manage-sites",
+			"Manage Users": "manage-users",
+			"Manage Admin Access": "manage-ums-administrator",
+			"Two Factor Authentication": "two-factor-authentication",
+			"API Reference": {
+				"slug": "api-reference",
+				"pages": {
+					"v1.0": {
+						"slug": "v1.0",
+						"pages": {
+							"API Reference": "api-reference?html=true",
+							"Try It Now": "try-it-now?html=true"
+						}
+					},
+					"v2.0": {
+						"slug": "v2.0",
+						"pages": {
+							"API Reference": "api-reference?html=true",
+							"Try It Now": "try-it-now?html=true"
+						}
+					},
+					"Interact with REST API": {
+						"slug": "interact-with-rest-api"
+					}
+				}
+			}
+		}
+	},
+	"White Labeling": {
+		"slug": "white-labeling-in-bold-bi"
+	},
+	"Localization": {
+		"slug": "localization",
+		"pages": {
+			"Latest": "latest",
+			"v4.2.69 or earlier": "v4.2.69-or-earlier"
+		}
+	},
+	"Webhooks": {
+		"slug": "manage-webhooks",
+		"pages": {
+			"Payload": "webhook-payload"
+		}
+	},
+	"Monitoring": {
+		"slug": "monitoring"
+	},
+	"Resource Migration": {
+		"slug": "resource-migration",
+		"pages": {
+			"Migrate Dashboards Online": "migrate-dashboards-online",
+			"Migrate Data Sources Online": "migrate-data-sources-online",
+			"Migrate Dashboards Offline": {
+				"slug": "migrate-dashboards-offline",
+				"pages": {
+					"Download Dashboards": "download-dashboards",
+					"Upload Dashboards": "upload-dashboards"
+				}
+			}
+		}
+	}
+}

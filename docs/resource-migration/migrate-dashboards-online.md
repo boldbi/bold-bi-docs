@@ -6,9 +6,9 @@ platform: bold-bi
 documentation: ug
 ---
 
-Migrating a dashboard online involves the process of publishing a dashboard in the Bold BI application to multiple tenants, whether on the same server or different instances. This allows for easy sharing of dashboards across various sites.
-
 # Publish Dashboards Online in the Bold BI application
+
+Migrating a dashboard online involves the process of publishing a dashboard in the Bold BI application to multiple tenants, whether on the same server or different instances. This allows for easy sharing of dashboards across various sites.
 
 To publish a dashboard to other site(s), follow these steps:
 
