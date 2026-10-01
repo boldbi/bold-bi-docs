@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Embedding Options – Embedded BI | Bold BI Documentation
-description: Learn how to embed dashboards using the Embedding SDK and iFrame-based embedding in Bold BI deployed on your server.
+description: Learn how to embed dashboards using the Embed SDK and iFrame-based embedding in Bold BI deployed on your server.
 platform: bold-bi
 documentation: ug
 ---

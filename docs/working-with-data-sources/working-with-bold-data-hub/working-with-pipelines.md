@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Working with Pipeline – Embedded BI | Bold BI Learning
-description: Learn how to Working with Pipeline in ETL application in Bold BI Enterprise Edition. Discover simple steps to integrate data smoothly and make the most of your analytics.
+description: Learn how to Working with Pipeline in ETL application in Bold BI Server. Discover simple steps to integrate data smoothly and make the most of your analytics.
 platform: bold-bi
 documentation: ug
 
@@ -41,35 +41,35 @@ The source data source connector can be configured in a **YAML** file format. Th
 Example: Configuration File
 
 ```yaml
-version: 1
+version: 1.0.1
 encrypt_credentials: false
 plugins:
   extractors:
-  - name: MySQL
-    connectorname: MySQL
-    schemaname: 
-    config:
-      host: localhost
-      port: 3306
-      username: root
-      database: sakila
-      password: +NQCHLZ1l/RaR1L0HK+0jg==
-      drivername: mysql+pymysql
-    select:
-    - inventory
-    - payment
-  - name: PostgreSQL
-    connectorname: PostgreSQL
-    schemaname: test
-    config:
-      host: localhost
-      port: 5438
-      username: postgres
-      database: demo
-      password: +NQCHLZ1l/RaR1L0HK+0jg==
-      drivername: postgresql+pg8000
-    select:
-    - ticket_metrics
+    - name: MySQL
+      connectorname: MySQL
+      schemaname:
+      config:
+        host: localhost
+        port: 3306
+        username: root
+        database: sakila
+        password: +NQCHLZ1l/RaR1L0HK+0jg==
+        drivername: mysql+pymysql
+      select:
+        - inventory
+        - payment
+    - name: PostgreSQL
+      connectorname: PostgreSQL
+      schemaname: test
+      config:
+        host: localhost
+        port: 5438
+        username: postgres
+        database: demo
+        password: +NQCHLZ1l/RaR1L0HK+0jg==
+        drivername: postgresql+pg8000
+      select:
+        - ticket_metrics
 ```
 
 After clicking the Save button, a popup window will appear. Within this window, locate and click on the dropdown menu labeled Select ``Destination``. From the options provided, choose the specific ``DataStoreName`` that has been previously configured in the Data Store settings page.
@@ -102,7 +102,7 @@ Controls whether existing tables in the destination are dropped and recreated du
 - Dropping tables helps handle breaking schema changes by recreating tables with updated structures.
 
 **Note:**
-- Applied across all supported datatores.
+- Applied across all supported datastores.
 - This property is not applicable when a primary key is explicitly defined, as existing tables are updated through upsert operations instead of being dropped and recreated.
 - In some versions (e.g., pre - 1.0.21), this was not configurable -always check version compatibility.
 
@@ -119,7 +119,7 @@ Determines the data flow path: whether data should be moved from a staging layer
 - Set to false when you want to keep only the transformed data in staging (DuckDB) and avoid automatic movement to the destination.
 
 **Note:**
-Applied across all supported datatores.
+Applied across all supported datastores.
 
 ### Direct target import
 
@@ -156,29 +156,29 @@ Use this when importing from sources that often lack explicit primary keys (CSV,
 - Caution: A column that contains no nulls may still be non-unique — promoting such a column to a primary key can cause correctness or constraint errors in the destination.
 
 **Note:**
-| Supported Datastores | Not Supported Datastores |
+| Supported Datastores | Not Supported Datastores  |
 |-----------------------|--------------------------|
-| Apache Doris          | Amazon Redshift          |
-| Google BigQuery       | Azure Synapse            |
-| MySQL                 | ClickHouse               |
-| Oracle                | Firebolt                 |
-| PostgreSQL            | IBM DB2                  |
-| SQL Server            | MinIO                    |
-| Snowflake             | SAP HANA Cloud           |
-|                       | Teradata                 |
+| Amazon Redshift       | Azure Synapse            |
+| Apache Doris          | ClickHouse               |
+| Google BigQuery       | Firebolt                 |
+| MySQL                 | IBM DB2                  |
+| Oracle                | MinIO                    |
+| PostgreSQL            | SAP HANA Cloud           |
+| SQL Server            | Teradata                 |
+| Snowflake             |                          |
 
 ## Configuring Primary Keys for Connectors
 The primary_keys property in the extractor's properties section allows you to define custom primary keys for the tables being extracted. This property specifies which column(s) should be used as primary key(s) in the destination table.
 
 **Syntax:**
-```
+```yaml
 properties:
   primary_keys: '{table_name_1}: {key_1}, {key_2}; {table_name_2}: {key_3}'
 ```
 
 
 **Example:**
-```
+```yaml
 properties:
   primary_keys: 'customers: customerId, firstName;orders: orderId'
 ```
@@ -195,16 +195,16 @@ For the orders table: primary key is orderId
 **Important:** Ensure the column names are correct and present in the table schema. Mismatched columns may cause data extraction errors.
 
 **Note:**
-| Supported Datastores | Not Supported Datastores |
+| Supported Datastores | Not Supported Datastores  |
 |-----------------------|--------------------------|
-| Apache Doris          | Amazon Redshift          |
-| Google BigQuery       | Azure Synapse            |
-| MySQL                 | ClickHouse               |
-| Oracle                | Firebolt                 |
-| PostgreSQL            | IBM DB2                  |
-| SQL Server            | MinIO                    |
-| Snowflake             | SAP HANA Cloud           |
-|                       | Teradata                 |
+| Amazon Redshift       | Azure Synapse            |
+| Apache Doris          | ClickHouse               |
+| Google BigQuery       | Firebolt                 |
+| MySQL                 | IBM DB2                  |
+| Oracle                | MinIO                    |
+| PostgreSQL            | SAP HANA Cloud           |
+| SQL Server            | Teradata                 |
+| Snowflake             |                          |
 
 **Example:**
 **MySQL Connector with Primary Keys**
@@ -221,7 +221,7 @@ plugins:
   extractors:
     - name: MySQL
       connectorname: MySQL
-      schemaname: 
+      schemaname:
       config:
         host: localhost
         port: 3306
@@ -229,7 +229,7 @@ plugins:
         database: work
         password: <password>
         drivername: mysql+pymysql
-      properties: 
+      properties:
         primary_keys: 'customers: customerId, firstName;orders: orderId'
       select:
         - customers

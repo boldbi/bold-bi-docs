@@ -47,8 +47,8 @@ To deploy the Bold BI Azure web app using the ARM template, follow these steps:
      - `P1V3_2Core_8GB_DEV`
      - `P2V3_4Core_16GB_PROD`
      - `P3V3_8Core_32GB_PROD`
-   - **Storage Account Name** — Unique name (3-24 characters, lowercase letters and numbers only). Optional for **File storage**, mandatory for **Blob storage**.
-   - **Storage Account Type** — Choose the type (e.g., `Standard_LRS`). Optional for **File storage**, mandatory for **Blob storage**.[Learn more](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-overview)
+   - **Storage Account Name** — Unique name (3-24 characters, lowercase letters and numbers only) for **Blob storage**.
+   - **Storage Account Type** — Choose the type (e.g., `Standard_LRS`) for **Blob storage**.[Learn more](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-overview)
 
    **Required for auto-deployment mode** (provide these to enable full automatic configuration of database connection and admin user — without manual steps after deployment)
    - **User Email** — Initial administrator email

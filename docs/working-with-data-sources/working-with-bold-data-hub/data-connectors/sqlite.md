@@ -1,7 +1,7 @@
 ---
 layout: post
 title: SQLite Data Hub Connector – Bold BI Integration Guide & Tutorial
-description: Learn how to use the SQLite Data Hub connectors in Bold BI Enterprise Edition. Discover simple steps to connect, import, and analyze your SQLite database files with ease.
+description: Learn how to use the SQLite Data Hub connectors in Bold BI Server. Discover simple steps to connect, import, and analyze your SQLite database files with ease.
 platform: bold-bi
 documentation: ug
 
@@ -40,11 +40,11 @@ plugins:
   extractors:
     - name: SQLite
       connectorname: SQLite
-      schemaname: 
+      schemaname:
       config:
         filePath: <Path-to-your-SQLite-file>
-      properties: 
-      metadata: 
+      properties:
+      metadata:
       select:
         - tablename
 ```
@@ -85,7 +85,7 @@ plugins:
   
   7. Creating a Pipeline in Bold Data Hub automatically creates a Data Source in Bold BI. The Bold BI Data Source is a live data source to the destination database used in Bold Data Hub. For more information on the relationship between Bold Data Hub Pipeline and the associated Data Sources in Bold BI , please refer to [Relationship between Bold Data Hub Pipeline and Associated Data Sources in Bold BI](https://help.boldbi.com/working-with-data-sources/working-with-bold-data-hub/relationship-between-bold-data-hub-pipeline-and-associated-data-sources-in-boldbi/).
 
-   ![SQLite - BoldBI](/static/assets/working-with-etl/images/pipeline_DScreated.png#max-width=100%)
+   ![SQLite - BoldBI](/static/assets/working-with-etl/images/pipeline_DsCreated.png#max-width=100%)
 
 ### Schedule Data Hub Job
 
@@ -105,7 +105,6 @@ plugins:
 
 4. Click on Logs to see if the run is completed and data source is created in Bold BI. 
 
-![SQLite - BoldBI](/static/assets/working-with-etl/images/pipeline_DScreated.png#max-width=100%)
-
+![SQLite - BoldBI](/static/assets/working-with-etl/images/pipeline_DsCreated.png#max-width=100%)
 
 5. Click `Edit DataSource` Option to view the created tables.

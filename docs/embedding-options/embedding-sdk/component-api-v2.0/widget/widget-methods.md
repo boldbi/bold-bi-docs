@@ -120,7 +120,7 @@ var dashboard = BoldBI.create({
   });
 dashboard.loadWidgets();
 ```
->**Note:** To embed the necessary widgets, the client application should create a container where the widgets will be displayed. Height and Width must be added within the widget container. We have enhanced the performance of loading multiple widgets in the javascript embedding. Please note that support will work and take effect if the embed SDK Wrapper and Bold BI Server are on the same version effectively from v8.1.41
+> **Note:** To embed the necessary widgets, the client application should create a container where the widgets will be displayed. Height and width must be added within the widget container. We have enhanced the performance of loading multiple widgets in JavaScript embedding. This support takes effect only when the Embed SDK Wrapper and Bold BI Server are on the same version, starting from v8.1.41. This feature is supported for the [authorization server](/embedding-options/embedding-sdk/authorization-options/authorization-server-url-work-flow/).
 
 ## refresh()
 
@@ -536,7 +536,7 @@ This method will export the widget as an image.
 ```js
 var instance = BoldBI.getInstance("container"); //container -> embed container
 
-var exportInformation ={'dashboardId':"",'widgetName':"",'fileName':"",'exportImageFormat':"",'resolutionDpi':"",'showAppliedFilters':};
+var exportInformation ={'dashboardId':"",'widgetName':"",'fileName':"",'exportImageFormat':"",'resolutionDpi':"",'showAppliedFilters':""};
 
 instance.viewer.exportAsImage(exportInformation);
 ```
@@ -579,7 +579,7 @@ This method will export widget as PDF.
 ```js
 var instance = BoldBI.getInstance("container"); //container -> embed container
 
-var exportInformation ={'dashboardId':"",'widgetName':"",'fileName':"",'pageSize':"",'pageOrientation':"",'showAppliedFilters':};
+var exportInformation ={'dashboardId':"",'widgetName':"",'fileName':"",'pageSize':"",'pageOrientation':"",'showAppliedFilters':""};
 
 instance.viewer.exportAsPdf(exportInformation);
 ```

@@ -498,13 +498,37 @@ This property allows users to modify the text for column grand totals. The defau
 
 #### Show Row Sub Totals
 
-This property allows users to show or hide the row's subtotals. The image below is an example of a disabled subtotal for the row.
+This option controls whether subtotals are displayed for row fields in the pivot grid. By default, the **Show Row Sub Totals** checkbox is selected, so subtotals are displayed for all row fields.
+
+**When Enabled**
+
+* A dropdown appears listing all configured row fields (for example, `Year`, `Quarter`, and `Month`, as shown in the image).
+* By default, all fields are selected, displaying subtotals for every row field.
+* You can clear specific fields (for example, `Quarter`) to hide subtotals only for those fields while keeping them visible for the others. The pivot grid updates accordingly — in the example shown, unchecking `Quarter` in the dropdown removes the subtotal row for `Quarter 1`, while higher-level summaries for the remaining fields remain intact.
+
+**When Disabled**
+
+* When the **Show Row Sub Totals** checkbox is cleared, the dropdown is hidden and subtotals are not displayed for any row fields in the pivot grid.
+
+The image below is an example of a disabled subtotal for the row.
 
 ![pivot-grid_prop-grand-subRow](/static/assets/visualizing-data/visualization-widgets/images/pivot-grid/row-subtotals.png)
 
 #### Show Column Sub Totals
 
-This property allows users to show or hide the column's subtotals. The image below is an example of a disabled subtotal for the column.
+This option controls whether subtotals are displayed for column fields in the pivot grid. By default, the **Show Column Sub Totals** checkbox is selected, so subtotals are displayed for all column fields.
+
+**When Enabled**
+
+* A dropdown appears listing all configured column fields (for example, `Country`, `City`, and `Product Name`, as shown in the image).
+* By default, all fields are selected, displaying subtotals for every column field.
+* You can clear specific fields (for example, `City`) to hide subtotals only for those fields while keeping them visible for the others. The pivot grid updates accordingly — in the example shown, unchecking `City` in the dropdown removes the subtotal column for that field, while higher-level summaries for the remaining fields remain intact.
+
+**When Disabled**
+
+* When the **Show Column Sub Totals** checkbox is cleared, the dropdown is hidden and subtotals are not displayed for any column fields in the pivot grid.
+
+The image below is an example of a disabled subtotal for the column.
 
 ![pivot-grid_prop-grand-subColumn](/static/assets/visualizing-data/visualization-widgets/images/pivot-grid/subcolumntotal.png)
 
@@ -647,6 +671,14 @@ By default, the auto font size property is enabled, so the font size of the pivo
 To configure the linking to a URL or dashboard with the widget through its settings, refer to [Linking](/visualizing-data/working-with-widgets/linking-urls-and-dashboards/) for more details.
 
 ![pivot-grid_prop-link](/static/assets/visualizing-data/visualization-widgets/images/pivot-grid/linking.png)
+
+#### Enable Summary Link
+
+This option allows you to show or hide hyperlinks for summary value cells, such as parent totals, when `Enable Link` is enabled. When this option is disabled, child value cells remain linked.
+
+By default, the `Enable Summary Link` option is enabled.
+
+![Enable Summary Link](/static/assets/visualizing-data/visualization-widgets/images/pivot-grid/enable-summary-link.png)
 
 ### Filter
 

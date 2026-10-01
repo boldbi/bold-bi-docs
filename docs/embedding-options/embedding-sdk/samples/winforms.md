@@ -6,7 +6,7 @@ platform: bold-bi
 documentation: ug
 ---
 
-# Bold BI Dashboards embedding in Windows Forms using Embedded SDK
+# Bold BI Dashboards embedding in Windows Forms using Embed SDK
 
 A GitHub link has been provided to [get](https://github.com/boldbi/winforms-sample) the sample application, which demonstrates the rendering of dashboard available in your Bold BI server and followed by steps to create a new embedding application in the `Windows Forms` on your own.
 

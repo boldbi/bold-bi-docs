@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Facebook Ads Data Hub Connector – Embedded BI | Bold BI Learning
-description: Learn how to use the Facebook Ads Data Hub connectors in Bold BI Enterprise Edition. Discover simple steps to integrate data smoothly and make the most of your analytics.
+description: Learn how to use the Facebook Ads Data Hub connectors in Bold BI Server. Discover simple steps to integrate data smoothly and make the most of your analytics.
 platform: bold-bi
 documentation: ug
 
@@ -37,20 +37,20 @@ Facebook Ads is the advertising platform that allows businesses and individuals 
 The `config` section in a YAML file includes the following properties:
 
 ```yaml
-Connectorname**: FacebookAds
-Access_token**: FacebookAds access token
-Client_id**: Client’s id
-Client_secret**: Client’s secret
-Account_id**: FacebookAds Account ID
+Connectorname: FacebookAds
+Access_token: FacebookAds access token
+Client_id: Client’s id
+Client_secret: Client’s secret
+Account_id: FacebookAds Account ID
 ```
 ## Incremental Mode:
 The Facebook ads doesn’t support incremental mode and Facebook insights supports incremental mode.
 ```yaml
 properties:
-        type: insights
-        initial_load_past_days: 30
-        attribution_window_days_lag: 7
-        time_increment_days: 1
+  type: insights
+  initial_load_past_days: 30
+  attribution_window_days_lag: 7
+  time_increment_days: 1
 ```
 The incremental mode loads the new data instead of loading the entire dataset. In the given example, the initial load is set to 30 days. It loads the data for the past 30 days, which is incremented daily since the time increment day is set to one. The attribution is how far the system should go back to consider data attribution.
 
@@ -59,8 +59,9 @@ The incremental mode loads the new data instead of loading the entire dataset. I
 ## Facebook ads
 
 ```yaml
-version: 1
+version: 1.0.1
 encrypt_credentials: false
+
 plugins:
   extractors:
     - name: fb_data
@@ -78,7 +79,7 @@ plugins:
 ## Facebook insights
 
 ```yaml
-version: 1
+version: 1.0.1
 encrypt_credentials: false
 plugins:
   extractors:
@@ -146,13 +147,9 @@ The available resources are supported in Facebook Ads
 
 ![Facebook ADs](/static/assets/working-with-etl/images/schedule_history.png#max-width=100%)
 
-4. Click on Logs to see if the run is completed and data source is created in Bold BI. 
+4. Click on Logs to see if the run is completed and data source is created in Bold BI.
 
-![Facebook ADs](/static/assets/working-with-etl/images/fbads_EditDatasource.png#max-width=100%)
-
-5. Click `Edit DataSource` Option to view the created tables.
-
-![Facebook ADs](/static/assets/working-with-etl/images/fbads_DsCreated.png#max-width=100%)  
+![Facebook ADs](/static/assets/working-with-etl/images/fbads_DsCreated.png#max-width=100%)
 
 6. Click `Edit DataSource` Option to view the created tables, such as 'Campaigns' and 'Adsets' tables.
 

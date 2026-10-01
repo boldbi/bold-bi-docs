@@ -1,17 +1,17 @@
 ---
 layout: post
 title: FileSystem(Csv,Excel,Json,Yaml) Data Hub Connectors – Embedded BI
-description: Learn how to use the Reader source and FileSystem Data Hub connectors in Bold BI Enterprise Edition. Discover simple steps to integrate data smoothly and make the most of your analytics.
+description: Learn how to use the Reader source and FileSystem Data Hub connectors in Bold BI Server. Discover simple steps to integrate data smoothly and make the most of your analytics.
 platform: bold-bi
 documentation: ug
 
 ---
 
-# ``FileSystem``:
+# FileSystem:
 
 This data source can easily stream files from the local ``filesystem`` using the reader source.
 
-***The Reader source supports three types of file extension:**
+**The Reader source supports three types of file extension:**
 - Csv files
 - Excel files
 - Json files
@@ -20,7 +20,7 @@ This data source can easily stream files from the local ``filesystem`` using the
 ## Example Configuration
 
 ```yaml
-version: 1
+version: 1.0.1
 encrypt_credentials: false
 plugins:
   extractors:
@@ -86,14 +86,10 @@ plugins:
 
 ![FileSystem - BoldBI](/static/assets/working-with-etl/images/schedule_history.png#max-width=100%)
 
-4. Click on Logs to see if the run is completed and data source is created in Bold BI. 
+4. Click on Logs to see if the run is completed and data source is created in Bold BI.
 
 ![FileSystem - BoldBI](/static/assets/working-with-etl/images/pipeline_DsCreated.png#max-width=100%)
 
-
 5. Click `Edit DataSource` Option to view the created tables.
 
-![FileSystem - BoldBI](/static/assets/working-with-etl/images/editdatasource.png#max-width=100%)  
-
-
-
+![FileSystem - BoldBI](/static/assets/working-with-etl/images/editdatasource.png#max-width=100%)

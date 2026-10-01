@@ -32,7 +32,17 @@ function generateToc() {
 
     // map each top-level key to a pathName (fallback to a slugified key)
     for (let i = 0; i < mergedKeysOrder.length; i++) {
-        indexPageMapper[mergedKeysOrder[i]] = pathNames[i] || mergedKeysOrder[i].trim().split(' ').join('-').toLowerCase();
+        const topKey = mergedKeysOrder[i];
+        const topVal = fileContent[topKey];
+        // prefer explicit top-level `slug` when available (keep stable URLs despite title changes)
+        if (topVal && typeof topVal === 'object' && typeof topVal.slug === 'string') {
+            // normalize slug similar to removeMisc(): strip .md, query string and surrounding slashes
+            let s = topVal.slug.split('?')[0].replace('.md', '').trim();
+            s = s.replace(/^\/+|\/+$/g, '');
+            indexPageMapper[topKey] = s;
+        } else {
+            indexPageMapper[topKey] = pathNames[i] || mergedKeysOrder[i].trim().split(' ').join('-').toLowerCase();
+        }
     }
     let allTreeData = getTreeData(fileContent, indexPageMapper);
     let stringified = JSON.stringify(allTreeData, null, 4);

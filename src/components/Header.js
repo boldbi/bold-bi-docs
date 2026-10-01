@@ -6,58 +6,33 @@ import summaryDeployment from '../../docs/summary-deployment.json';
 import summaryApi from '../../docs/summary-api.json';
 import summaryConnect from '../../docs/summary-connect.json';
 import summaryEmbedding from '../../docs/summary-embedding.json';
-import { initDarkThemeToggle } from './darktheme';
-import '../assets/css/dark-mode.css';
 import '../assets/css/tabs.css';
 import '../assets/css/focus.css';
 import '../assets/css/header.css';
 import FocusButton from "../components/FocusButton";
 
 class MainHeader extends React.Component {
-	// Tooltip helpers (match FocusMode behavior)
-	showTooltip(e, id) {
-		const tip = typeof document !== 'undefined' && document.getElementById(id);
-		if (!tip) return;
-		// If this is the theme tooltip, update text based on current theme
-		try {
-			if (id === 'theme_tooltip') {
-				const isDark = typeof document !== 'undefined' && document.body && document.body.classList.contains('dark-mode');
-				tip.textContent = isDark ? 'Light theme' : 'Dark theme';
-			}
-		} catch (_) { }
-		const offset = 24;
-		tip.style.left = (e.clientX) + "px";
-		tip.style.top = (e.clientY + offset) + "px";
-		tip.style.transform = "translateX(-38%)";
-		tip.style.opacity = "1";
-	}
 
-    hideTooltip(id) {
-        const tip = typeof document !== 'undefined' && document.getElementById(id);
-        if (tip) tip.style.opacity = "0";
-    }
-    componentDidMount() {
-        // ensure the dark-theme toggle is wired when header mounts
-        try { initDarkThemeToggle('.theme-switch-btn'); } catch (_) { }
-        // build combined search index
-        try {
-            const map = {
-                'Docs': summaryDocs,
-                'Deploy & Setup': summaryDeployment,
-                'Connect Data': summaryConnect,
-                'Embedding': summaryEmbedding,
-                'Admin': summaryAdmin,
-                'API Reference': summaryApi,
-            };
-            const toc = this.generateToc(map);
-            const flattened = [];
-            function walk(node) {
-                if (!node) return;
-                if (node.title && node.path) flattened.push({ title: node.title, path: node.path });
-                if (node.children && node.children.length) node.children.forEach(walk);
-            }
-            toc.forEach(t => walk(t));
-            this.setState({ searchIndex: flattened });
+	componentDidMount() {
+		// build combined search index
+		try {
+			const map = {
+				'Docs': summaryDocs,
+				'Deploy & Setup': summaryDeployment,
+				'Connect Data': summaryConnect,
+				'Embedding': summaryEmbedding,
+				'Admin': summaryAdmin,
+				'API Reference': summaryApi,
+			};
+			const toc = this.generateToc(map);
+			const flattened = [];
+			function walk(node) {
+				if (!node) return;
+				if (node.title && node.path) flattened.push({ title: node.title, path: node.path });
+				if (node.children && node.children.length) node.children.forEach(walk);
+			}
+			toc.forEach(t => walk(t));
+			this.setState({ searchIndex: flattened });
 			// Determine active tab from current pathname so refresh highlights correct section
 			try {
 				const pathname = (typeof window !== 'undefined' && window.location && window.location.pathname) ? window.location.pathname : '/';
@@ -83,7 +58,7 @@ class MainHeader extends React.Component {
 					try { window.dispatchEvent(new CustomEvent('docsTabChanged', { detail: matched })); } catch (e) { }
 				}
 			} catch (e) { /* ignore */ }
-        } catch (e) { this.setState({ searchIndex: [] }); }
+		} catch (e) { this.setState({ searchIndex: [] }); }
 
 		// click outside to close popup
 		this._onDocClick = (e) => {
@@ -97,15 +72,19 @@ class MainHeader extends React.Component {
 			}
 		};
 		window.addEventListener('click', this._onDocClick);
+		// allow Escape to close BoldAgent panel
+		try { window.addEventListener('keydown', this._onAgentKeyDown); } catch (e) { }
 	}
 
 	componentWillUnmount() {
 		if (this._onDocClick) window.removeEventListener('click', this._onDocClick);
+		try { window.removeEventListener('keydown', this._onAgentKeyDown); } catch (e) { }
 	}
 
 	constructor(props) {
 		super(props);
 		this.state = {
+			agentOpen: false,
 			activeTab: (typeof window !== 'undefined' && window.localStorage.getItem('docsTab')) || 'Docs',
 			query: '',
 			suggestions: [],
@@ -114,6 +93,29 @@ class MainHeader extends React.Component {
 		};
 		this._searchWrap = null;
 		this._articleOptionsWrap = null;
+	}
+
+	// Toggle the right-side BoldAgent iframe panel
+	toggleAgentPanel = (e) => {
+		if (e && e.stopPropagation) {
+			// Prevent existing document-level click handlers from also handling this
+			e.stopPropagation();
+			if (e.nativeEvent && e.nativeEvent.stopImmediatePropagation) e.nativeEvent.stopImmediatePropagation();
+		}
+		this.setState((s) => ({ agentOpen: !s.agentOpen }));
+	}
+
+	// Close the agent panel (used by close button)
+	closeAgentPanel = (e) => {
+		if (e && e.stopPropagation) {
+			e.stopPropagation();
+		}
+		this.setState({ agentOpen: false });
+	}
+
+	// Close panel on Escape
+	_onAgentKeyDown = (e) => {
+		if (e.key === 'Escape' && this.state.agentOpen) this.setState({ agentOpen: false });
 	}
 
 	toggleArticleOptions = (state) => {
@@ -210,7 +212,7 @@ class MainHeader extends React.Component {
 			try {
 				const input = this._searchWrap && this._searchWrap.querySelector('input[type="search"]');
 				if (input) input.focus();
-			} catch (_) {}
+			} catch (_) { }
 		});
 	}
 
@@ -225,137 +227,131 @@ class MainHeader extends React.Component {
 	render() {
 		const tabs = ['Docs', 'Deploy & Setup', 'Connect Data', 'Embedding', 'Admin', 'API Reference'];
 		return (
-			<header id="header">
-				<div className="container">
+			<>
+				<header id="header-container">
+					<div className="container">
 
-					{/* Logo */}
-					<div id="header-left-side">
-						<a href='/' className='header-home-link'><img className='header-logo' src="/img/boldbi-logo.svg" alt="Bold BI Logo" /></a>
-						<span className='header-docs-text'><a href="/">Documentation</a></span>
-					</div>
+						{/* Logo */}
+						<div id="header-left-side">
+							<a href='/' className='header-home-link'><img className='header-logo' src="/img/boldbi-logo.svg" alt="Bold BI Logo" /></a>
+							<span className='header-docs-text'><a href="/">Documentation</a></span>
+						</div>
 
-					{/* Search and ASK button*/}
-					<div id="header-middle-side">					
-						<div className="search-box" ref={(el) => { this._searchWrap = el; }}>
-							<span className="bd-icon bd-icon-search search-icon"></span>
-							<input
-								type="search"
-								placeholder="Search..."
-								value={this.state.query}
-								onChange={this.onSearchChange}
-								onKeyDown={this.onSearchKeyDown}
-								aria-label="Search documentation"
-							/>
-							{this.state.query && (
-								<button
-									type="button"
-									className="search-clear-btn"
-									aria-label="Clear search"
-									onClick={this.clearHeaderSearch}
+						{/* Search and ASK button*/}
+						<div id="header-middle-side">
+							<div className="search-box" ref={(el) => { this._searchWrap = el; }}>
+								<span className="bd-icon bd-icon-search search-icon"></span>
+								<input
+									type="search"
+									placeholder="Search..."
+									value={this.state.query}
+									onChange={this.onSearchChange}
+									onKeyDown={this.onSearchKeyDown}
+									aria-label="Search documentation"
+								/>
+								{this.state.query && (
+									<button
+										type="button"
+										className="search-clear-btn"
+										aria-label="Clear search"
+										onClick={this.clearHeaderSearch}
+									>
+										×
+									</button>
+								)}
+								{(this.state.suggestions && this.state.suggestions.length > 0) || (this.state.query && this.state.query.trim() !== '') ? (
+									<ul className="left-toc-search-suggestions header-search-suggestions">
+										{this.state.suggestions && this.state.suggestions.length > 0 ? (
+											this.state.suggestions.map(s => (
+												<li key={s.path}>
+													<button
+														className="search-suggestion-btn"
+														role="option"
+														aria-selected={false}
+														onClick={() => this.onSuggestionClick(s.path)}
+														onKeyDown={(e) => { if (e.key === 'Enter') this.onSuggestionClick(s.path); }}
+													>
+														{s.title}
+													</button>
+												</li>
+											))
+										) : (
+											<li className="no-results">No results</li>
+										)}
+									</ul>
+								) : null}
+							</div>
+						</div>
+
+						<div id="header-right-side">
+							<div className="ask-container ask-container-mobile">
+								<div className="ask-split-button">
+									<button className="ask-main" onClick={(e) => this.toggleAgentPanel(e)} aria-expanded={this.state.agentOpen}>Ask AI</button>
+								</div>
+							</div>
+
+							{/* Forum / KB links (visible on wide screens >=1025px) */}
+							<div className="header-links">
+								<a href="https://www.boldbi.com/forums/" className="header-menu-link" target="_blank">Forum</a>
+								<a href="https://support.boldbi.com/kb" className="header-menu-link" target="_blank">KB</a>
+							</div>
+							<div className="ask-container">
+								<div className="ask-split-button">
+									<button className="ask-main" onClick={(e) => this.toggleAgentPanel(e)} aria-expanded={this.state.agentOpen}>Ask AI</button>
+								</div>
+							</div>
+							<a href="https://www.boldbi.com/register/bi?evaluation=v2" className="header-try-it-free-btn" target="_blank">Try it Free</a>
+
+							<div id="article-options-wrap" ref={(el) => { this._articleOptionsWrap = el; }}>
+
+								<div
+									id="article-options"
+									role="button"
+									tabIndex={0}
+									aria-label="Open menu"
+									onClick={() => this.toggleArticleOptions()}
+									onKeyDown={(e) => { if (e.key === 'Enter') this.toggleArticleOptions(); }}
 								>
-									×
-								</button>
-							)}
-							{(this.state.suggestions && this.state.suggestions.length > 0) || (this.state.query && this.state.query.trim() !== '') ? (
-								<ul className="left-toc-search-suggestions header-search-suggestions">
-									{this.state.suggestions && this.state.suggestions.length > 0 ? (
-										this.state.suggestions.map(s => (
-											<li key={s.path}>
-												<button
-													className="search-suggestion-btn"
-													role="option"
-													aria-selected={false}
-													onClick={() => this.onSuggestionClick(s.path)}
-													onKeyDown={(e) => { if (e.key === 'Enter') this.onSuggestionClick(s.path); }}
-												>
-													{s.title}
-												</button>
-											</li>
-										))
-									) : (
-										<li className="no-results">No results</li>
-									)}
-								</ul>
-							) : null}
-						</div>
-
-						<div className="ask-container">
-							<div className="ask-split-button">
-								<button className="ask-main">Ask AI</button>
-							</div>
-						</div>
-					</div>
-
-					<div id="header-right-side">
-						<div className="ask-container ask-container-mobile">
-							<div className="ask-split-button">
-								<button className="ask-main">Ask AI</button>
-							</div>
-						</div>
-
-						{/* Forum / KB links (visible on wide screens >=1025px) */}
-						<div className="header-links">
-							<a href="https://www.boldbi.com/forums/" className="header-menu-link" target="_blank">Forum</a>
-							<a href="https://support.boldbi.com/kb" className="header-menu-link" target="_blank">KB</a>
-						</div>
-						<a href="https://app.boldid.net/register/bi/embedded?evaluation=v2" className="header-try-it-free-btn" target="_blank">Try it Free</a>
-
-						{/* Theme icon */}
-						<button
-							className="theme-switch-btn"
-							aria-label="Toggle theme"
-							aria-describedby="theme_tooltip"
-							data-tooltip-id="theme_tooltip"
-							onMouseMove={(e) => this.showTooltip(e, 'theme_tooltip')}
-							onMouseLeave={() => this.hideTooltip('theme_tooltip')}
-						>
-							<img className="theme-toggle-icon" src="/img/moon-icon.svg" alt="Toggle theme" width="16" height="16" />
-						</button>
-
-								<div id="article-options-wrap" ref={(el) => { this._articleOptionsWrap = el; }}>
-									
-<div
-  id="article-options"
-  role="button"
-  tabIndex={0}
-  aria-label="Open menu"
-  onClick={() => this.toggleArticleOptions()}
-  onKeyDown={(e) => { if (e.key === 'Enter') this.toggleArticleOptions(); }}
->
-<svg
-    width="18"
-    height="18"
-    viewBox="0 0 24 24"
-    aria-hidden="true"
-  >
-    <circle cx="12" cy="5" r="2.4" fill="#667085" />
-    <circle cx="12" cy="12" r="2.4" fill="#667085" />
-    <circle cx="12" cy="19" r="2.4" fill="#667085" />
-  </svg>
+									<svg
+										width="18"
+										height="18"
+										viewBox="0 0 24 24"
+										aria-hidden="true"
+									>
+										<circle cx="12" cy="5" r="2.4" fill="#667085" />
+										<circle cx="12" cy="12" r="2.4" fill="#667085" />
+										<circle cx="12" cy="19" r="2.4" fill="#667085" />
+									</svg>
 
 
-</div>
-									{this.state.showArticleOptions && (
-										<div className="menu-popup-overlay" onClick={() => this.toggleArticleOptions(false)}>
-											<div className="menu-popup-box" onClick={(e) => e.stopPropagation()}>
-												<button className="menu-popup-close" aria-label="Close" onClick={() => this.toggleArticleOptions(false)}>×</button>
-												<div className="menu-popup-item"><a href="https://www.boldbi.com/forums/">Forum</a></div>
-												<div className="menu-popup-item"><a href="https://support.boldbi.com/kb">KB</a></div>
-												<div className="menu-cta">
-													<div className="menu-cta-item">
-														<a href="https://app.boldid.net/register/bi/embedded?evaluation=v2" className="menu-try-it-free-btn">Try it Free</a>
-													</div>
+								</div>
+								{this.state.showArticleOptions && (
+									<div className="menu-popup-overlay" onClick={() => this.toggleArticleOptions(false)}>
+										<div className="menu-popup-box" onClick={(e) => e.stopPropagation()}>
+											<button className="menu-popup-close" aria-label="Close" onClick={() => this.toggleArticleOptions(false)}>×</button>
+											<div className="menu-popup-item"><a href="https://www.boldbi.com/forums/">Forum</a></div>
+											<div className="menu-popup-item"><a href="https://support.boldbi.com/kb">KB</a></div>
+											<div className="menu-cta">
+												<div className="menu-cta-item">
+													<a href="https://www.boldbi.com/register/bi?evaluation=v2" className="menu-try-it-free-btn">Try it Free</a>
 												</div>
 											</div>
 										</div>
-									)}
-								</div>
-						{/* Tooltip for theme toggle (mirrors FocusMode tooltip) */}
-						<div id="theme_tooltip" className="custom-tooltip">Dark theme</div>
+									</div>
+								)}
+							</div>
+						</div>
 					</div>
-				</div>
 
-			</header>
+				</header>
+				{/* Right-side BoldAgent iframe panel */}
+				<aside className={"iframe-panel" + (this.state.agentOpen ? ' open' : '')} aria-hidden={!this.state.agentOpen} onKeyDown={this._onAgentKeyDown}>
+					<button className="agent-close-btn" aria-label="Close assistant" onClick={(e) => this.closeAgentPanel(e)}>×</button>
+					<div className="panel-body">
+						<iframe src="https://syncfusion.boldagent.ai/widgetscript-api/v1/widgets/bf108c37-c3f5-4933-8bd3-4a04c5fb4530/iframe" allow="microphone" width="100%" style={{ height: '100%' }} frameBorder="0" title="BoldAgent"></iframe>
+					</div>
+				</aside>
+			</>
 		)
 	}
 }

@@ -6,7 +6,7 @@ platform: bold-bi
 documentation: ug
 ---
 
-# Bold BI Dashboards embedding in Angular with ASP.NET Core using Embedded SDK
+# Bold BI Dashboards embedding in Angular with ASP.NET Core using Embed SDK
 
 We have created an Angular and ASP.NET Core application to achieve this embedding. In this setup, the Angular app serves as the client while the Core app serves as the server. With this environment, we are able to list the dashboards and render them on it. 
 

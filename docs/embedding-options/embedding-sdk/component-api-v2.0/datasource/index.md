@@ -7,7 +7,7 @@ documentation: ug
 keywords: Bold BI, embedding, Datasource
 ---
 
-# Bold BI Embedding SDK for Datasource
+# Bold BI Embed SDK for Datasource
 
 The Bold BI Embed SDK allows you to seamlessly integrate and visualize datasources published on your Bold BI server within your web applications. By specifying the **server URL**, **datasource Id**, **mode**, and **embed token**, you can securely embed and manage the datasource experience.
 

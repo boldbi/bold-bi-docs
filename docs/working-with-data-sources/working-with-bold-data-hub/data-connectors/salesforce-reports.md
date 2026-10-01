@@ -1,7 +1,7 @@
 ---
 layout: post
 title: SalesforceReports Bold Data Hub Connector – Bold BI Learning
-description: Learn how to use the Salesforce Reports ETL/Bold Data Hub connectors in Bold BI Enterprise Edition. Discover simple steps to integrate data smoothly and make the most of your analytics.
+description: Learn how to use the Salesforce Reports ETL/Bold Data Hub connectors in Bold BI Server. Discover simple steps to integrate data smoothly and make the most of your analytics.
 platform: bold-bi
 documentation: ug
 

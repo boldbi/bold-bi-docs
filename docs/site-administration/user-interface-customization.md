@@ -160,6 +160,23 @@ You can add new menu items that you want to display in the left side menu along 
 
 ![Custom menus](/static/assets/user-interface-customization/images/custom-menu.png#width=40%)
 
+**Navigation menu syntax**
+
+```json
+	
+	"CustomMenus": [
+		{
+			"Name": "CustomMenuSamplel",
+			"Display": "Help",
+			"Order": 5,
+			"ImageLink": "http://localhost:58908/bi/cdn/images/application/boldbi/main_logo.svg",
+			"OpenLink": "https://www.boldbi.com/documentation/",
+			"OpenBehavior":"_blank", //_blank, _self, _parent,
+			"ShowMenu": true
+		}
+	]
+```
+
 * **Name:** Specify the name of the scheme. This can be used to identify the scheme in the profiles.
 
 * **Display:** Name that should be shown in the menu item.
@@ -186,6 +203,40 @@ Here, we have changed the order of each side menu and applied support for same p
 
 Different schemes have been provided for dashboards, datasources, schedules, and slideshows.
 
+```json
+
+	"Schemes": [
+		{
+			"Name": "scheme1",
+			"Open": true,
+			"Favorite": true,
+			"ContextMenu": true,
+			"Edit": true,
+			"Makepublic": true,
+			"Makeprivate": true,
+			"Getlink": true,
+			"Views": true,
+			"Viewschedules": true,
+			"Info": true,
+			"Security": true,
+			"Move": true,
+			"Createschedule": true,
+		},
+		{
+			"Name": "scheme4",
+			"Open": false,
+			"Favorite": true,
+			"ContextMenu": true,
+			"Edit": true,
+			"Makepublic": true,
+			"Makeprivate": true,
+			"Getlink": true,
+			"Views": true,
+		}
+	]
+
+```
+
 ![Sample schemes](/static/assets/user-interface-customization/images/sample-example3.png#width=35%)
 
 For example, the `Open` option will be visible in the dashboard context menu and hidden in the slideshow context menu.
@@ -195,6 +246,38 @@ For example, the `Open` option will be visible in the dashboard context menu and
 ![Slideshow scheme](/static/assets/user-interface-customization/images/slideshow-scheme.png)
 
 Two different custom menu options have been provided.
+
+```json
+
+	"CustomMenu": [
+		{
+			"Name": "CustomMenuSamplel"
+		},
+		{
+			"Name": "CustomMenuSample2"
+		}
+	],
+	"CustomMenus": [
+		{
+			"Name": "CustomMenuSamplel",
+			"Display": "Help",
+			"Order": 5,
+			"ImageLink": "http://localhost:58908/bi/cdn/images/application/boldbi/main_logo.svg",
+			"OpenLink": "https://www.boldbi.com/documentation/",
+			"OpenBehavior": "blank",
+			"ShowMenu": true
+		}
+		{
+			"Name": "CustomMenuSample2", "Display": "Online Help",
+			"Order": 5,
+			"ImageLink": "http://localhost:58908/images/boldid/application/main_logo.svg",
+			"OpenLink": "https://www.boldbi.com/documentation/",
+			"OpenBehavior":"_blank",
+			"ShowMenu": true
+		}
+	]
+
+```
 
 ![Custom menu details](/static/assets/user-interface-customization/images/custom-menu-example2.png)
 

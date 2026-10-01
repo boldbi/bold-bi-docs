@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Google sheets Bold Data Hub Connector – Bold BI Learning
-description: Learn how to use the Google sheets Bold Data Hub connectors in Bold BI Enterprise Edition. Discover simple steps to integrate data smoothly and make the most of your Sheets.
+description: Learn how to use the Google sheets Bold Data Hub connectors in Bold BI Server. Discover simple steps to integrate data smoothly and make the most of your Sheets.
 platform: bold-bi
 documentation: ug
 
@@ -21,6 +21,9 @@ Service account credentials are better suited for server-to-server interactions.
 To get API credentials using a GCP service account, follow these steps:
 
 1. Sign in to [https://console.cloud.google.com](https://console.cloud.google.com).
+
+![Google Sheets - BoldBI](/static/assets/working-with-etl/images/gcloudconsole.png#max-width=100%)
+
 2. Create a service account if needed.
 3. Enable "Google Sheets API" (refer to Google documentation for comprehensive instructions).
 4. Generate credentials:
@@ -47,18 +50,18 @@ spreadsheet_identifier: `spreadsheet_identifier = "https://docs.google.com/sprea
 ### Example Configuration
 
 ```yaml
-version: 1
+version: 1.0.1
 encrypt_credentials: false
 plugins:
   extractors:
     - name: Google Sheets
       connectorname: Google Sheets
       config:
-        project_id: 
-        client_email: 
-        private_key: 
+        project_id:
+        client_email:
+        private_key:
       properties:
-        spreadsheet_url_or_id: 
+        spreadsheet_url_or_id:
         # range_names value should be range_names: "range_name1", "range_name2"
         range_names:
 ```
@@ -80,9 +83,7 @@ plugins:
 
   ![Google Sheets - Data Hub](/static/assets/working-with-etl/images/sheets_auth_template.png#max-width=100%)
   
-5. Creating a Pipeline in Bold Data Hub automatically creates a Data Source in Bold BI. The Bold BI Data Source is a live data source to the destination database used in Bold Data Hub. For more information on the relationship between Bold Data Hub Pipeline and the associated Data Sources in Bold BI , please refer to [Relationship between Bold Data Hub Pipeline and Associated Data Sources in Bold BI]
-
-(https://help.boldbi.com/working-with-data-sources/working-with-bold-data-hub/relationship-between-bold-data-hub-pipeline-and-associated-data-sources-in-boldbi/)
+5. Creating a Pipeline in Bold Data Hub automatically creates a Data Source in Bold BI. The Bold BI Data Source is a live data source to the destination database used in Bold Data Hub. For more information on the relationship between Bold Data Hub Pipeline and the associated Data Sources in Bold BI , please refer to [Relationship between Bold Data Hub Pipeline and Associated Data Sources in Bold BI](https://help.boldbi.com/working-with-data-sources/working-with-bold-data-hub/relationship-between-bold-data-hub-pipeline-and-associated-data-sources-in-boldbi/)
 
  ![Google Sheets - Data Hub](/static/assets/working-with-etl/images/pipeline_DsCreated.png#max-width=100%)
 
@@ -124,9 +125,8 @@ plugins:
 
 ![Google Sheets - BoldBI](/static/assets/working-with-etl/images/schedule_history.png#max-width=100%)
 
-4. Click on Logs to see if the run is completed and data source is created in Bold BI. 
+4. Click on Logs to see if the run is completed and data source is created in Bold BI.
 
 ![Google Sheets - BoldBI](/static/assets/working-with-etl/images/pipeline_DsCreated.png#max-width=100%)
-
 
 5. Click `Edit DataSource` Option to view the created tables.

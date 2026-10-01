@@ -49,10 +49,9 @@ Set this redirect URI in your app. The protocol, host, and port are the respecti
 
 For example:
 
-http://localhost:12345/bi/designer/v1.0/oauth/agent
+`http://localhost:12345/bi/designer/v1.0/oauth/agent`
 
-https://testboldbi:12345/bi/designer/v1.0/oauth/agent
-
+`https://testboldbi:12345/bi/designer/v1.0/oauth/agent`
 
 ## Steps to configure OAuth for WordPress
 
@@ -66,7 +65,7 @@ If you have not configured OAuth for WordPress in Bold BI, follow the steps belo
     
     ![wordpress-home](/static/assets/oauth/images/wordpress-home.png)
 
-4.	The Redirect URL for this app should be the Bold BI service. Get the host and port number of the Bold BI Application and replace it in the following URL: http://[host:port]/bi/designer/v1.0/oauth/agent   
+4.	The Redirect URL for this app should be the Bold BI service. Get the host and port number of the Bold BI Application and replace it in the following URL: `http://[host:port]/bi/designer/v1.0/oauth/agent`
 5.	Select the app you want to connect and get its corresponding OAuth information.
     
     ![wordpress-oauth](/static/assets/oauth/images/wordpress-oauth.png)

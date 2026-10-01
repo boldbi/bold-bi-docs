@@ -1,0 +1,330 @@
+/* =========================================
+   AI SUMMARY
+========================================= */
+ 
+.ai-summary {
+    width: 100%;
+	margin-bottom: 20px;
+}
+ 
+/* =========================================
+   SUMMARIZE BUTTON
+========================================= */
+
+.ai-summary-button {
+    display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	height: 40px;
+	padding: 0 16px;
+	border-radius: 10px;
+	background: #fff;
+	cursor: pointer;
+	width: fit-content;
+    border: 0.95px solid #D6BBFB;
+    background: linear-gradient(270deg, #DEEBFF 0%, #E5ECFC 25%, #EAEDFB 50%, #E6E1FC 75%, #E8DEFC 100%);
+}
+
+/* =========================================
+   BUTTON ICON
+========================================= */
+ .ai-summary-button__icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    background: url("/img/ask-ai-button.svg") no-repeat center;
+    background-size: contain;
+}
+
+.ai-summary-button__text {
+    white-space: nowrap;
+}
+ 
+/* =========================================
+   SUMMARY CARD
+========================================= */
+ 
+.ai-summary-card {
+    width: 100%;
+    margin-top: 8px;
+    background: #f8f8fc;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #e5e7eb; 
+}
+
+button.ai-summary-hide-button:hover {
+    color: #2D3742;
+}
+
+.ai-summary-placeholder + h2 {
+    margin-top: 5px !important;
+}
+ 
+/* =========================================
+   CARD HEADER
+========================================= */
+ 
+.ai-summary-card__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 20px;
+    border-bottom: 1px solid #eaecf0;
+}
+#ai-summary-title{
+	margin-top: 0px !important;
+	font-size: 14px !important;
+}
+.ai-summary-card__title {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    color: #1d2939;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+}
+ 
+.ai-summary-card__title-icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 7px;
+    flex-shrink: 0;
+    background: url("/img/ask-ai-button.svg") no-repeat center;
+    background-size: contain;
+}
+ 
+/* =========================================
+   HIDE BUTTON
+========================================= */
+ 
+.ai-summary-hide-button {
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: #475467;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 20px;
+    cursor: pointer;
+}
+ 
+.ai-summary-hide-button:focus-visible {
+    outline: 2px solid #6366f1;
+    outline-offset: 2px;
+}
+ 
+/* =========================================
+   CARD CONTENT
+========================================= */
+#ai-summary-content h2{
+	margin: 0 0 6px !important;
+    font-size: 16px !important;
+}
+.ai-summary-card__content p{
+	font-size: 14px !important;
+	margin-top: 0px !important;
+	margin-bottom: 10px !important;
+}
+.ai-summary-card__content ul{
+	font-size: 14px !important;
+    line-height: 1.6 !important;
+    margin: 0px !important;
+    padding-left: 20px !important;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.ai-summary-card__content li{
+	font-size: 14px !important;
+	margin-bottom: 0px !important;
+}
+.ai-summary-card__content {
+    padding: 20px;
+}
+ 
+.ai-summary-card__text {
+    color: #344054;
+    font-size: 14px;
+    line-height: 1.5;
+}
+ 
+.ai-summary-card__text h1,
+.ai-summary-card__text h2,
+.ai-summary-card__text h3 {
+    margin: 16px 0 8px;
+    color: #1d2939;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+}
+ 
+.ai-summary-card__text h1:first-child,
+.ai-summary-card__text h2:first-child,
+.ai-summary-card__text h3:first-child {
+    margin-top: 0;
+}
+ 
+.ai-summary-card__text p {
+    margin: 0 0 10px;
+}
+ 
+.ai-summary-card__text p:last-child {
+    margin-bottom: 0;
+}
+ 
+.ai-summary-card__text ul {
+    margin: 0 0 10px;
+    padding-left: 20px;
+}
+ 
+.ai-summary-card__text li {
+    margin-bottom: 4px;
+    line-height: 1.5;
+}
+ 
+.ai-summary-card__text li:last-child {
+    margin-bottom: 0;
+}
+ 
+/* =========================================
+   CARD FOOTER
+========================================= */
+ 
+.ai-summary-card__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 14px;
+    padding-top: 14px;
+    border-top: 1px solid #eaecf0;
+}
+ 
+.ai-summary-card__disclaimer {
+    color: #667085;
+ 
+    font-size: 12px;
+    line-height: 18px;
+}
+ 
+.ai-summary-card__disclaimer a {
+    color: inherit;
+    text-decoration: underline;
+}
+ 
+/* =========================================
+   FEEDBACK
+========================================= */
+ 
+.ai-summary-feedback {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    flex-shrink: 0;
+}
+ 
+.ai-summary-feedback__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    padding: 0;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    background: transparent;
+    font-size: 14px;
+    cursor: pointer;
+}
+ 
+.ai-summary-feedback__button:hover {
+    background: #eaecf0;
+}
+ 
+.ai-summary-feedback__button.is-selected {
+    background: #e4e7ec;
+}
+ 
+/* =========================================
+   ERROR
+========================================= */
+ 
+.ai-summary-error {
+    margin-top: 8px;
+    padding: 10px 12px;
+    border: 1px solid #fecdca;
+    border-radius: 8px;
+    background: #fef3f2;
+    color: #b42318;
+    font-size: 14px;
+    line-height: 20px;
+}
+ 
+ 
+/* =========================================
+   MOBILE
+========================================= */
+ 
+@media screen and (max-width: 600px) {
+    .ai-summary-card__footer {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+ 
+    .ai-summary-feedback {
+        align-self: flex-end;
+    }
+ 
+    .ai-summary-button {
+        max-width: 100%;
+    }
+ 
+    .ai-summary-button__text {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+ 
+ 
+/* =========================================
+   PRINT
+========================================= */
+ 
+@media print {
+    .ai-summary {
+        display: none !important;
+    }
+}
+
+/* generating text effect*/
+.ai-summary-card__loading {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #667085;
+    background: linear-gradient(
+        90deg,
+        #667085 0%,
+        #d0d5dd 50%,
+        #667085 100%
+    );
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: ai-shimmer 1.5s linear infinite;
+}
+
+@keyframes ai-shimmer {
+    from {
+        background-position: 200% center;
+    }
+    to {
+        background-position: -200% center;
+    }
+}

@@ -56,10 +56,10 @@ documentation: ug
     sudo unzip {Bold BI Linux package zip file}
     ~~~ 
 
-4. Change the directory to `BoldBIEnterpriseEdition-Linux` by running the following command:
+4. Change the directory to `BoldBIServer-Linux` by running the following command:
 
     ~~~shell
-    cd BoldBIEnterpriseEdition-Linux
+    cd BoldBIServer-Linux
     ~~~ 
  
 5. Execute the following command to deploy Bold BI on your Linux machine:

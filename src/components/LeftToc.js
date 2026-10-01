@@ -6,6 +6,7 @@ import summaryDeployment from '../../docs/summary-deployment.json';
 import summaryApi from '../../docs/summary-api.json';
 import summaryConnect from '../../docs/summary-connect.json';
 import summaryEmbedding from '../../docs/summary-embedding.json';
+import redirects from '../../redirects.json';
 
 import '../assets/css/lefttoc.css';
 
@@ -13,6 +14,33 @@ function removeMisc(s) {
 	if (!s) return '';
 	if (typeof s !== 'string') return '';
 	return s.split('?')[0].replace(/\.md$/, '').trim();
+}
+
+function normalizePath(path) {
+	if (!path) return '/';
+	const normalized = path.replace(/\/+/g, '/');
+	if (normalized === '/') return '/';
+	return normalized.endsWith('/') ? normalized : `${normalized}/`;
+}
+
+function getEquivalentPaths(pathname) {
+	const normalizedPath = normalizePath(pathname);
+	const paths = new Set([normalizedPath]);
+
+	redirects.forEach((redirect) => {
+		const fromPath = normalizePath(redirect.fromPath);
+		const toPath = normalizePath(redirect.toPath);
+		if (fromPath === normalizedPath) paths.add(toPath);
+		if (toPath === normalizedPath) paths.add(fromPath);
+	});
+
+	return Array.from(paths);
+}
+
+function getResolvedPath(pathname) {
+	const normalizedPath = normalizePath(pathname);
+	const redirect = redirects.find((item) => normalizePath(item.fromPath) === normalizedPath);
+	return redirect ? normalizePath(redirect.toPath) : normalizedPath;
 }
 
 // Build a normalized node structure recursively so we can render arbitrary depth
@@ -114,7 +142,8 @@ export default function LeftToc() {
 
 
 	//const toc = useMemo(() => generateToc((summaryMap[activeTab] || {}) ), [activeTab]);
-	const pathname = (typeof window !== 'undefined' && window.location && window.location.pathname) ? window.location.pathname : '/';
+	const pathname = (typeof window !== 'undefined' && window.location && window.location.pathname) ? normalizePath(window.location.pathname) : '/';
+	const equivalentPaths = useMemo(() => getEquivalentPaths(pathname), [pathname]);
 
 	const topLevelPaths = useMemo(() => toc.filter((t) => t.type === 'section').map((t) => t.path), [toc]);
 
@@ -151,10 +180,10 @@ export default function LeftToc() {
 		if (activeTab === 'Docs') {
 			const defs = [
 
-				{ title: 'GETTING STARTED', keys: ['Overview', 'Quick Start'] },
+				{ title: 'GETTING STARTED', keys: ['Introduction', 'Overview', 'Quick Start'] },
 				{ title: 'CREATING DASHBOARDS', keys: ['Getting Started', 'Visualizations'] },
 				{ title: 'WORKING WITH DASHBOARDS', keys: ['Dashboards'] },
-				{ title: 'AI AND MACHINE LEARNING', keys: ['AI and Machine Learning'] },
+				{ title: 'AI AND MACHINE LEARNING', keys: ['AI and Machine Learning', 'MCP Integration'] },
 				{ title: 'RESPONSIVE AND MOBILE ACCESS', keys: ['Responsive Layout', 'Mobile App'] },
 				{ title: 'USE CASES', keys: ['Transformation Use Cases'] },
 			];
@@ -194,13 +223,14 @@ export default function LeftToc() {
 		function visit(node) {
 			if (!node || !node.path) return;
 			if (node.children && node.children.length) {
-				m[node.path] = Boolean(pathname.startsWith(node.path));
+				const nodePath = normalizePath(node.path);
+				m[node.path] = equivalentPaths.some((currentPath) => currentPath.startsWith(nodePath));
 				node.children.forEach(visit);
 			}
 		}
 		toc.forEach((t) => { if (t.type === 'section') visit(t); });
 		return m;
-	}, [toc, pathname]);
+	}, [toc, equivalentPaths]);
 
 	const [openMap, setOpenMap] = useState(initialOpen);
 
@@ -402,7 +432,7 @@ export default function LeftToc() {
 				// ignore
 			}
 		}, 120);
-	}, [pathname, activeTab]);
+	}, [pathname, activeTab, equivalentPaths]);
 
 	// handle clicks from the floating button/label by toggling collapsed state reliably
 	useEffect(() => {
@@ -523,6 +553,9 @@ export default function LeftToc() {
 	}, []);
 	const TocItem = ({ node, level = 0 }) => {
 		const hasChildren = node.children && node.children.length;
+		const nodePath = normalizePath(node.path);
+		const isActive = equivalentPaths.some((currentPath) => currentPath === nodePath);
+		const linkPath = getResolvedPath(node.path);
 		return (
 			<li className={`left-toc-item level-${level}`} key={node.path}>
 				{hasChildren ? (
@@ -540,7 +573,13 @@ export default function LeftToc() {
 									: (<span className="bd-icon bd-icon-collapsible"></span>)
 								}
 							</button>
-							<Link to={node.path} className={level === 0 ? 'left-toc-section-link' : 'left-toc-sublink'}>{node.title}</Link>
+							<Link
+								to={linkPath}
+								className={`${level === 0 ? 'left-toc-section-link' : 'left-toc-sublink'}${isActive ? ' active' : ''}`}
+								aria-current={isActive ? 'page' : undefined}
+							>
+								{node.title}
+							</Link>
 						</div>
 						{openMap[node.path] && (
 							<ul className={level === 0 ? 'left-toc-children' : 'left-toc-subchildren'}>
@@ -551,7 +590,13 @@ export default function LeftToc() {
 						)}
 					</>
 				) : (
-					<Link to={node.path} className={level === 0 ? 'left-toc-section-link' : 'left-toc-sublink'}>{node.title}</Link>
+					<Link
+						to={linkPath}
+						className={`${level === 0 ? 'left-toc-section-link' : 'left-toc-sublink'}${isActive ? ' active' : ''}`}
+						aria-current={isActive ? 'page' : undefined}
+					>
+						{node.title}
+					</Link>
 				)}
 			</li>
 		);
@@ -645,7 +690,7 @@ export default function LeftToc() {
 								<ul className="left-toc-group-list">
 									{g.items.map((item) => (
 										item.type === 'link'
-											? (<li key={item.path} className="left-toc-item link"><Link to={item.path} className="left-toc-link">{item.title}</Link></li>)
+											? (<li key={item.path} className="left-toc-item link"><Link to={getResolvedPath(item.path)} className={`left-toc-link${equivalentPaths.some((currentPath) => currentPath === normalizePath(item.path)) ? ' active' : ''}`} aria-current={equivalentPaths.some((currentPath) => currentPath === normalizePath(item.path)) ? 'page' : undefined}>{item.title}</Link></li>)
 											: (<TocItem key={item.path} node={item} level={0} />)
 									))}
 								</ul>
@@ -655,7 +700,7 @@ export default function LeftToc() {
 						// Default rendering for other tabs
 						toc.map((item) => (
 							item.type === 'link'
-								? (<li key={item.path} className="left-toc-item link"><Link to={item.path} className="left-toc-link">{item.title}</Link></li>)
+								? (<li key={item.path} className="left-toc-item link"><Link to={getResolvedPath(item.path)} className={`left-toc-link${equivalentPaths.some((currentPath) => currentPath === normalizePath(item.path)) ? ' active' : ''}`} aria-current={equivalentPaths.some((currentPath) => currentPath === normalizePath(item.path)) ? 'page' : undefined}>{item.title}</Link></li>)
 								: (<TocItem key={item.path} node={item} level={0} />)
 						))
 					)}

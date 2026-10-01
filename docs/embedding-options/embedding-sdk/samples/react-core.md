@@ -6,7 +6,7 @@ platform: bold-bi
 documentation: ug
 ---
 
-# Bold BI Dashboards embedding in React with ASP.NET Core using Embedded SDK
+# Bold BI Dashboards embedding in React with ASP.NET Core using Embed SDK
 
 A GitHub link has been provided to [get](https://github.com/boldbi/react-with-aspnet-core-sample) the sample application that demonstrates the rendering of the dashboard on your Bold BI server. This will be followed by steps to create a new embedding application in `React` with `ASP.NET Core` on your own.
 

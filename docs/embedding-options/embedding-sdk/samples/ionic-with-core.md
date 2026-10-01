@@ -6,7 +6,7 @@ platform: bold-bi
 documentation: ug
 ---
 
-# Bold BI Dashboards embedding in Ionic with ASP.NET core using Embedded SDK
+# Bold BI Dashboards embedding in Ionic with ASP.NET core using Embed SDK
 
 A GitHub link has been provided to [get](https://github.com/boldbi/ionic-with-aspnet-core-sample) the sample application, which demonstrates the rendering of the dashboard available on your Bold BI server. This is followed by step-by-step instructions on creating a new embedding application in `Ionic` with `ASP.NET Core` on your own.
 

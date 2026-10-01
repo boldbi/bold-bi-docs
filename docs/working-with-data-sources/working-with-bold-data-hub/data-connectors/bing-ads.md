@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Microsoft Ads ETL Connector – Bold BI Embedded Guide
-description: Learn how to use the Microsoft (Bing) Ads ETL connector in Bold BI Enterprise Edition. Discover simple steps to integrate data smoothly and make the most of your analytics.
+description: Learn how to use the Microsoft (Bing) Ads ETL connector in Bold BI Server. Discover simple steps to integrate data smoothly and make the most of your analytics.
 platform: bold-bi
 documentation: ug
 ---
@@ -23,8 +23,11 @@ To connect, you’ll need a Microsoft Advertising account with API access and an
 ### Register an Azure AD Application (Client ID and Secret)
 
 1. Go to Azure Portal: https://portal.azure.com
+
+![Bing ADs](/static/assets/working-with-etl/images/bingadsCredential.png#max-width=100%)
+
 2. Navigate to Azure Active Directory > App registrations > New registration.
-3. Name the app, choose supported account types, and set a redirect URI (e.g., https://localhost or your app’s redirect URL).
+3. Name the app, choose supported account types, and set a redirect URI (e.g., `https://localhost` or your app’s redirect URL).
 4. After creating, copy the Application (client) ID.
 5. Go to Certificates & secrets > New client secret. Copy the Client Secret value.
 
@@ -37,12 +40,12 @@ In the Microsoft Advertising UI, use the account switcher or Account settings pa
 The `config` section in a YAML file includes the following properties:
 
 ```yaml
-Connectorname**: Bing Ads
-Client_id**: Azure AD Application (client) ID
-Client_secret**: Azure AD client secret
-Developer_token**: Microsoft Advertising Developer Token
-Customer_id**: Microsoft Advertising Customer ID
-Account_id**: Microsoft Advertising Account ID
+Connectorname: Bing Ads
+Client_id: Azure AD Application (client) ID
+Client_secret: Azure AD client secret
+Developer_token: Microsoft Advertising Developer Token
+Customer_id: Microsoft Advertising Customer ID
+Account_id: Microsoft Advertising Account ID
 ```
 
 Incremental mode (reports)
@@ -129,11 +132,24 @@ plugins:
 ### Schedule Data Hub Job
 
 1. To configure interval-based scheduling, click on the schedules tab and select the created pipeline and click on the schedule icon and configure it.
-2. For an on-demand refresh, click Run Now.
-3. After completion, verify the run status.
-4. To automate refreshes (e.g., hourly), click Schedule and choose the cadence and time zone.
-5. The data source is created by ETL in Bold BI.
-6. Click Edit DataSource to view created tables such as Campaign Performance and any additional report tables you configured.
+
+![Bing Ads - BoldBI](/static/assets/working-with-etl/images/schedule_schedules.png#max-width=100%)
+
+![Bing Ads - BoldBI](/static/assets/working-with-etl/images/schedule_scheduledialog.png#max-width=100%)
+
+2. For on-demand refresh, click `Run Now` button.
+
+![Bing Ads - BoldBI](/static/assets/working-with-etl/images/schedule_runnow.png#max-width=100%)
+
+3. The Schedule history can be checked using the history option as well as logs.
+
+![Bing Ads - BoldBI](/static/assets/working-with-etl/images/schedule_history.png#max-width=100%)
+
+4. Click on Logs to see if the run is completed and data source is created in Bold BI.
+
+![Bing Ads - BoldBI](/static/assets/working-with-etl/images/pipeline_DsCreated.png#max-width=100%)
+
+5. Click `Edit DataSource` Option to view the created tables.
 
 ## Reference
 

@@ -28,7 +28,7 @@ To configure the HelpScout data source, follow the below steps:
   ![Choose data source from server](/static/assets/working-with-datasource/data-connectors/images/help-scout/ChooseDS.png)
 
 ## Authentication with Help Scout
-For the BoldBI enterprise version, the site admin should obtain the [OAuth credentials(Client ID and Client secret)](#steps-to-generate-client-id-and-secret) from Help Scout and [set up OAuth](/site-administration/data-connector-settings/oauth-configuration/) for the HelpScout connector in BoldBI.
+For the BoldBI Server version, the site admin should obtain the [OAuth credentials(Client ID and Client secret)](#steps-to-generate-client-id-and-secret) from Help Scout and [set up OAuth](/site-administration/data-connector-settings/oauth-configuration/) for the HelpScout connector in BoldBI.
 
 Use the following steps to authenticate with the Help Scout web service:
 

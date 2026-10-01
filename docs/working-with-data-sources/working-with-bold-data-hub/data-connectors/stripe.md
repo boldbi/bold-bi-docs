@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Stripe ETL/Data Hub Connector – Embedded BI | Bold BI Learning
-description: Learn how to use the Stripe ETL/Bold Data Hub connectors in Bold BI Enterprise Edition. Discover simple steps to integrate data smoothly and make the most of your analytics.
+description: Learn how to use the Stripe ETL/Bold Data Hub connectors in Bold BI Server. Discover simple steps to integrate data smoothly and make the most of your analytics.
 platform: bold-bi
 documentation: ug
 
@@ -14,6 +14,9 @@ Stripe is an online payment platform that enables businesses to securely process
 ## Grab Credentials
 
 1. Log in to your Stripe account.
+
+![Stripe Data Hub - BoldBI](/static/assets/working-with-etl/images/stripe.png#max-width=100%)
+
 2. Click on Settings in the top right corner.
 3. Navigate to Developers in the top menu.
 4. Choose "API Keys".
@@ -45,10 +48,10 @@ In this section, define the mode of data refresh. There are two modes: `INCREMEN
 
 ```yaml
 metadata:
-    TableName:
-        replication_method: INCREMENTAL
-        replication_key: Column name
-        replication_value: column value that data starts from
+  TableName:
+    replication_method: INCREMENTAL
+    replication_key: Column name
+    replication_value: column value that data starts from
 ```
 </td>
         <td>This mode will retrieve data from the date column specified in the replication key starting from the date indicated in the replication value. Once it is scheduled, the replication value will be automatically updated based on the imported data.</td>
@@ -58,13 +61,13 @@ metadata:
         <td>
 
 ```yaml
-      metadata:
-    TableName:
-        replication_method: FULL_TABLE
-        replication_key: Column name
-        replication_value: column value that data starts from
-        interval_type: days/hours/minutes/year/month
-        interval_value: integer value to add in interval type
+metadata:
+  TableName:
+    replication_method: FULL_TABLE
+    replication_key: Column name
+    replication_value: column value that data starts from
+    interval_type: days/hours/minutes/year/month
+    interval_value: integer value to add in interval type
 
 ```
 </td>
@@ -73,10 +76,10 @@ metadata:
 </table>
 
 ## Example
-## ``FULL_TABLE``
+## FULL_TABLE
 
 ```yaml
-version: 1
+version: 1.0.1
 encrypt_credentials: false
 plugins:
   extractors:
@@ -85,8 +88,8 @@ plugins:
       config:
         stripe_secret_key: <SECRET KEY>
       select:
-         - TABLE1
-         - TABLE2
+        - TABLE1
+        - TABLE2
       metadata:
         TABLE1:
           replication_method: FULL_TABLE
@@ -105,7 +108,7 @@ plugins:
 ## INCREMENTAL
 
 ```yaml
-version: 1
+version: 1.0.1
 encrypt_credentials: false
 plugins:
   extractors:
@@ -114,8 +117,8 @@ plugins:
       config:
         stripe_secret_key: <SECRET KEY>
       select:
-         - TABLE1
-         - TABLE2
+        - TABLE1
+        - TABLE2
       metadata:
         TABLE1:
           replication_method: FULL_TABLE
@@ -184,6 +187,5 @@ The available resources are supported in Stripe
 4. Click on Logs to see if the run is completed and data source is created in Bold BI. 
 
 ![Stripe - BoldBI](/static/assets/working-with-etl/images/pipeline_DsCreated.png#max-width=100%)
-
 
 5. Click `Edit DataSource` Option to view the created tables.

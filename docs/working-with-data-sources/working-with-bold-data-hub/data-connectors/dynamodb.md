@@ -16,12 +16,12 @@ Amazon DynamoDB is a fully managed NoSQL database service that offers fast and p
 In a YAML file, the `config` section contains the following properties:
 
 ```yaml
- access_key_id: <your access key>
- secret_access_key: <your secret key>
- region: <region>
- column_name: <column-name>
- date: <date>
- limit: <limit>
+access_key_id: <your access key>
+secret_access_key: <your secret key>
+region: <region>
+column_name: <column-name>
+date: <date>
+limit: <limit>
 ```
 
 ### Example Configuration

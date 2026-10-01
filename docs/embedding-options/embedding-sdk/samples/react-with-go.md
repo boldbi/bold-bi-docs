@@ -6,7 +6,7 @@ platform: bold-bi
 documentation: ug
 ---
 
-# Bold BI Dashboards embedding in React with Go using Embedded SDK
+# Bold BI Dashboards embedding in React with Go using Embed SDK
 
 A GitHub link has been provided to [get](https://github.com/boldbi/react-with-go-sample) the sample application, which demonstrates the rendering of a dashboard available on your Bold BI server. This is followed by a series of steps to create a new embedding application in `React` with `Go` on your own.
 

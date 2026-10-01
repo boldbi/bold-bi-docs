@@ -9,7 +9,7 @@ documentation: ug
 
 # Working with Widgets
 
-This section explains how to work with the available widgets in Bold BI Enterprise and also explains various features involved in designing a dashboard with the widgets.
+This section explains how to work with the available widgets in Bold BI Server and also explains various features involved in designing a dashboard with the widgets.
 
 You can explore the available features in detail here:
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Multitenancy - Embedded BI | Bold BI Documentation
-description: Explore the multi-tenant support in Bold BI Enterprise that lets you deploy multiple tenants on the same machine, isolated from each other.
+description: Explore the multi-tenant support in Bold BI Server that lets you deploy multiple tenants on the same machine, isolated from each other.
 platform: bold-bi
 documentation: ug
 
@@ -9,7 +9,7 @@ documentation: ug
 
 # Overview
 
-Bold BI Enterprise Edition offers both single-site and multi-site support. The multi-site feature allows administrators to deploy multiple sites and manage their dashboards. Each site has its own database for managing dashboards and resources, isolating it from other sites within a single Bold BI deployment. This also allows organizations to create separate data views for different users. This is particularly useful for B2B2C companies, where data needs to be segmented for partners (B) and their customers (C).
+Bold BI Server offers both single-site and multi-site support. The multi-site feature allows administrators to deploy multiple sites and manage their dashboards. Each site has its own database for managing dashboards and resources, isolating it from other sites within a single Bold BI deployment. This also allows organizations to create separate data views for different users. This is particularly useful for B2B2C companies, where data needs to be segmented for partners (B) and their customers (C).
 
 ## Architecture
 
@@ -27,7 +27,7 @@ The architecture of the Bold BI multi-site solution is illustrated in the image 
 
 ![Multi-site architecture](/static/assets/multi-tenancy/images/multi-site-architect.png)
 
-To set up the multi-site solution, install and deploy the Bold BI Enterprise Edition. This deploys the first site with the Identity Provider (IDP) application in an isolated database. Subsequently, other sites can be deployed with their own databases.
+To set up the multi-site solution, install and deploy the Bold BI Server. This deploys the first site with the Identity Provider (IDP) application in an isolated database. Subsequently, other sites can be deployed with their own databases.
 
 The Identity Provider (IDP) application is a core component of the multi-site solution and manages site and user identity.
 
@@ -62,7 +62,7 @@ Users belonging to the same tenant can only see users from that tenant and share
 
 ## Add a new tenant
 
-To deploy a new tenant in the Bold BI Enterprise application, click the `Create Site` button on the site management page. The new tenant deployment uses its own database and resource storage that is completely separate from other tenants. Learn more about creating a [new tenant](/multi-tenancy/create-new-site/).
+To deploy a new tenant in the Bold BI Server application, click the `Create Site` button on the site management page. The new tenant deployment uses its own database and resource storage that is completely separate from other tenants. Learn more about creating a [new tenant](/multi-tenancy/create-new-site/).
 
 ![Create Site](/static/assets/multi-tenancy/images/create-button.png)
 

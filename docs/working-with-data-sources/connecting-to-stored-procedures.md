@@ -52,6 +52,7 @@ In Internal Cache mode, Bold BI executes the stored procedure completely and mov
 
    ![Stored procedure settings](/static/assets/working-with-datasource/images/storedprocedure_settings.png)
 
+
 ## Understanding Stored Procedure Execution Modes
 
 Bold BI supports two execution modes for stored procedures—**OpenQuery Mode** and **Internal Cache Mode**. Understanding these modes helps you optimize dashboard performance and manage MSSQL server load effectively.
@@ -211,3 +212,33 @@ Selecting the correct mode impacts both performance and data freshness:
 * **Choose Internal Cache** when scalability and reduced DB load are the priorities.
 
 Both modes serve different needs—select the one that best aligns with your dashboard usage and performance expectations.
+
+## Connecting to Stored Procedure in Extract Mode
+
+Bold BI also allows you to use stored procedures in **Extract** mode.
+
+1. Connect to the SQL Server database. To learn more, refer to the [Extract](https://help.boldbi.com/working-with-data-sources/data-connectors/ms-sql-server/#extract) mode documentation.
+
+2. In **Extract** mode, expand the **Stored Procedures** node, select the required stored procedure, and click **Connect**.
+
+   ![Stored Procedure](/static/assets/working-with-datasource/images/choose_sp.png)
+
+3. Select the stored procedure that you want to use.
+
+   ![Choose Stored Procedure](/static/assets/working-with-datasource/images/stored_sp.png)
+
+4. Configure the required input parameters for the stored procedure. The following parameter types are supported:
+
+   - **Custom Value** – Enter a fixed value manually.
+   - **Dashboard Parameter** – Bind the parameter to a dashboard parameter.
+   - **Custom Attribute** – Use a custom attribute value.
+   - **Null** – Pass a `NULL` value to the stored procedure parameter.
+
+   ![Stored Procedure Parameters](/static/assets/working-with-datasource/images/stored_procedure.png)
+
+   >**Note:** Refer to the [Dashboard Parameter Documentation](https://help.boldbi.com/working-with-data-sources/dashboard-parameter/) and [Custom Attributes Documentation](https://help.boldbi.com/working-with-data-sources/configuring-custom-attribute/) for more details.
+
+5. Save the data source. During each extract refresh, Bold BI executes the stored procedure using the configured parameter values and stores the returned data in the extract.
+<br><br>
+
+> **NOTE:** **OpenQuery** and **Internal Cache** execution modes are supported **only for Live connections**. These options are **not available** in **Extract** mode. In Extract mode, the stored procedure is executed only during data refresh, and the extracted data is used for dashboard rendering.

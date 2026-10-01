@@ -23,8 +23,8 @@ To get the `User Token` follow the below steps:
      * [v2.0](/server-api-reference/v2.0/try-it-now/)
      * [v3.0](/server-api-reference/v3.0/try-it-now/)
      * [v4.0](/server-api-reference/v4.0/try-it-now/)
-     * [v5.0](/server-api-reference/v5.0/try-it-now)
-     * [v6.0](/server-api-reference/v6.0/try-it-now)
+     * [v5.0](/server-api-reference/v5.0/try-it-now/)
+     * [v6.0](/server-api-reference/v6.0/try-it-now/)
 2. Expand the `Authentication` section and then click `Try it out`.
 ![Authentication](/static/assets/rest-api-reference/images/authentication.png)
 3. We have already hosted the Bold BI Server for a public demo on [this](https://onpremise-demo.boldbi.com/) domain. To access the public demo, you need to obtain the access token using the sample credentials provided below.

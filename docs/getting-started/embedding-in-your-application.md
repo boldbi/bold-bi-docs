@@ -23,7 +23,7 @@ You may also watch the below video to learn more about embedding Bold BI dashboa
 
     ```js
     <head>  
-        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v15.2.6/boldbi-embed.js"></script>
+        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v16.3.5/boldbi-embed.js"></script>
     </head>
     ```
 
@@ -178,7 +178,7 @@ You may also watch the below video to learn more about embedding Bold BI dashboa
 
 ```js
 <head> 
-   <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v15.2.6/boldbi-embed.js"></script>
+   <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v16.3.5/boldbi-embed.js"></script>
 </head>
 ```
 

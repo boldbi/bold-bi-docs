@@ -6,7 +6,7 @@ platform: bold-bi
 documentation: ug
 ---
 
-# Bold BI Dashboards embedding in ColdFusion using Embedded SDK
+# Bold BI Dashboards embedding in ColdFusion using Embed SDK
 
 A GitHub link has been provided to [get](https://github.com/boldbi/coldfusion-sample) the sample application, which demonstrates the rendering of a dashboard available on your Bold BI server. The next steps will guide you through creating a new embedding application in `ColdFusion` on your own. 
 

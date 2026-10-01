@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Microsoft SQL Server Bold Data Hub Connector – Bold BI
-description: Learn how to use the Microsoft SQL Server Bold Data Hub connectors in Bold BI Enterprise Edition. Discover simple steps to integrate data smoothly and make the most of your analytics.
+description: Learn how to use the Microsoft SQL Server Bold Data Hub connectors in Bold BI Server. Discover simple steps to integrate data smoothly and make the most of your analytics.
 platform: bold-bi
 documentation: ug
 
@@ -9,7 +9,7 @@ documentation: ug
 
 # Microsoft SQL Server
 
-Structured Query Language (SQL) is a programming language for storing and processing information in a relational database. A relational database stores information in tabular form, with rows and columns representing different data attributes and the various relationships between the data values.
+Microsoft SQL Server is a proprietary relational database management system developed by Microsoft using Structured Query Language. It stores information in tabular form, with rows and columns representing different data attributes and the various relationships between the data values.
 
 ## Prerequisite
 
@@ -64,9 +64,7 @@ drivername: mssql+pyodbc
 
   ![sql Data Hub- BoldBI](/static/assets/working-with-etl/images/sql_yaml.png#max-width=100%)
 
-  5. Creating a Pipeline in Bold Data Hub automatically creates a Data Source in Bold BI. The Bold BI Data Source is a live data source to the destination database used in Bold Data Hub. For more information on the relationship between Bold Data Hub Pipeline and the associated Data Sources in Bold BI , please refer to [Relationship between Bold Data Hub Pipeline and Associated Data Sources in Bold BI]
-
-(https://help.boldbi.com/working-with-data-sources/working-with-bold-data-hub/relationship-between-bold-data-hub-pipeline-and-associated-data-sources-in-boldbi/)
+  5. Creating a Pipeline in Bold Data Hub automatically creates a Data Source in Bold BI. The Bold BI Data Source is a live data source to the destination database used in Bold Data Hub. For more information on the relationship between Bold Data Hub Pipeline and the associated Data Sources in Bold BI , please refer to [Relationship between Bold Data Hub Pipeline and Associated Data Sources in Bold BI](https://help.boldbi.com/working-with-data-sources/working-with-bold-data-hub/relationship-between-bold-data-hub-pipeline-and-associated-data-sources-in-boldbi/)
 
 ### Schedule Bold Data Hub Job
 
@@ -126,7 +124,7 @@ metadata:
 #### Incremental
 
 ```yaml
-version: 1
+version: 1.0.1
 encrypt_credentials: false
 plugins:
   extractors:
@@ -140,7 +138,7 @@ plugins:
         database: Database
         drivername: mssql+pyodbc
         #if ODBC Driver 18 for SQL Server is installed, use the following driver: ODBC+Driver+18+for+SQL+Server
-        driver: ODBC+Driver+17+for+SQL+Server 
+        driver: ODBC+Driver+17+for+SQL+Server
       select:
         - TABLE1
         - TABLE2
@@ -159,7 +157,7 @@ plugins:
 #### FULLTABLE
 
 ```yaml
-version: 1
+version: 1.0.1
 encrypt_credentials: false
 plugins:
   extractors:
@@ -173,7 +171,7 @@ plugins:
         database: Database
         drivername: mssql+pyodbc
         #if ODBC Driver 18 for SQL Server is installed, use the following driver: ODBC+Driver+18+for+SQL+Server
-        driver: ODBC+Driver+17+for+SQL+Server 
+        driver: ODBC+Driver+17+for+SQL+Server
       select:
         - TABLE1
         - TABLE2
@@ -211,23 +209,23 @@ union_all_tables: true
 add_dbname_column: false
 direct_load_to_destination: true
 plugins:
- extractors:
-   - name: MSSQL
-     connectorname: MSSQL
-     schemaname: dbo
-     config:
-       host: 
-       port: 1433
-       username: sa
-       database: Retail
-       password: 
-       drivername: mssql+pyodbc
-       driver: ODBC+Driver+17+for+SQL+Server
-     properties:
-       query: SELECT AVG(unit_cost) AS average_unit_cost FROM [Retail].[dbo].[Product_Details];
-     metadata: 
-     select:
-     - aggregated_table 
+  extractors:
+    - name: MSSQL
+      connectorname: MSSQL
+      schemaname: dbo
+      config:
+        host:
+        port: 1433
+        username: sa
+        database: Retail
+        password:
+        drivername: mssql+pyodbc
+        driver: ODBC+Driver+17+for+SQL+Server
+      properties:
+        query: SELECT AVG(unit_cost) AS average_unit_cost FROM [Retail].[dbo].[Product_Details];
+      metadata:
+      select:
+        - aggregated_table
 ```
 
 ### Incremental Refresh with Custom Query
@@ -251,16 +249,16 @@ plugins:
       connectorname: MSSQL
       schemaname: dbo
       config:
-        host: 
+        host:
         port: 1433
         username: sa
         database: Retail
-        password: 
+        password:
         drivername: mssql+pyodbc
         driver: ODBC+Driver+17+for+SQL+Server
       properties:
         query: SELECT id, last_modified_on, product_name FROM [Retail].[dbo].[Product_Details];
-      metadata: 
+      metadata:
         aggregated_table:
           replication_method: INCREMENTAL
           replication_key: last_modified_on

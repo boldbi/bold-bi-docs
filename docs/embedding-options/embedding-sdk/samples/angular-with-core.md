@@ -6,7 +6,7 @@ platform: bold-bi
 documentation: ug
 ---
 
-# Bold BI Dashboards embedding in Angular using Embedded SDK
+# Bold BI Dashboards embedding in Angular using Embed SDK
 
 A GitHub link has been provided to [get](https://github.com/boldbi/angular-with-aspnet-core-sample) the sample application, which demonstrates the rendering of the dashboard available on your Bold BI server. This is followed by steps to create your own embedding application in `Angular`. 
 

@@ -6,6 +6,7 @@ function updateContent(mdcontent, routerPath) {
         mdcontent = processImages(mdcontent, toc);
         return createTab(mdcontent, routerPath);
     }
+    return mdcontent;
 }
 
 function isRegisterdFile(routerPath, toc) {

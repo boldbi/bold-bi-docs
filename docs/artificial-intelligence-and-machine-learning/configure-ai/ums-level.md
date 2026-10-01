@@ -40,8 +40,26 @@ You can enable or disable AI features and configure AI settings at the UMS level
 
 ![Open Ai](/static/assets/artificial-intelligence-and-machine-learning/images/configure-ai-feature/Open_ai.png)
 
-8. If you select Azure AI, enter the model name, deployment name, resource name, and API key for configuration.
+8. If you select Anthropic as the provider, enter the valid Anthropic API Key.
+
+![Anthropic](/static/assets/artificial-intelligence-and-machine-learning/images/configure-ai-feature/Anthropic.png)
+
+> **Note:** Multiple model selection is currently not available. The default model is `Claude Opus 4.8`. Support for selecting multiple models will be available in a future release.
+
+9. If you select Azure AI as the provider, you can configure and use models deployed through Azure AI Foundry.
+
+    To complete the configuration, provide the following details:
+
+    - Model Name
+    - Deployment Name
+    - Resource Name
+    - Azure AI API Key
+
 
 ![Azure Ai](/static/assets/artificial-intelligence-and-machine-learning/images/configure-ai-feature/Azure_ai.png)
+
+> **Note:** Supported Azure AI Foundry models include `GPT-4o`, `GPT-4o-mini`, `GPT-5.1`, `GPT-5.2`, `GPT-5.4`, `GPT-5.5`, `DeepSeek-V4-Flash`, `DeepSeek-V4-Pro`, `Grok-4.3`, and `Mistral-Large-3`. The selected model must be deployed in your Azure AI Foundry resource, and the deployment name specified in the configuration must exactly match the deployment name created in Azure.
+
+10. After configuring the AI provider, click **Save** to apply the configuration or **Cancel** to discard the changes.
 
 >**NOTE:** This feature is available exclusively for on-premise users.

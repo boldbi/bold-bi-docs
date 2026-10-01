@@ -389,7 +389,7 @@
 	}
 	async function callApi(query) {
 		try {
-			const resp = await fetch("https://staginghelp.boldbi.com/dev/assistant", {
+			const resp = await fetch("https://help.boldbi.com/prod/assistant", {
 				method: 'POST',
 				headers: {
 					'Content-Type': 'application/json',

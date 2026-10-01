@@ -17,7 +17,7 @@ This section outlines the use case for embedding Bold BI dashboards using `embed
 
     ```js
     <head>
-        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v15.2.6/boldbi-embed.js"></script>
+        <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v16.3.5/boldbi-embed.js"></script>
     </head>
     <body>
         <div id="dashboard_container"></div>

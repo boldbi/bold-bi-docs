@@ -9,25 +9,35 @@ documentation: ug
 # Destination
 
 >To set the destination credentials navigate to the settings tab in the Bold Data Hub. Bold Data Hub supports below destinations,
-    >1.	 Bold IMDB Datastore
-    >2.	 PostgreSQL
-    >3.	 Apache Doris
-    >4.	 SQL server
-    >5.	 MySQL
-    >6.  Google BigQuery
-    >7.  Snow Flake
-    >8.  Oracle
-	>9.  ClickHouse
-	>10. Firebolt
-	>11. Teradata
-	>12. SAP HANA Cloud
-	>13. IBMDB2
-	>14. Azure Synapse
-	>15. Amazon RedShift
-    >16. MinIO
-    >17. Star Rocks
+>1. Bold IMDB Datastore
+>2. PostgreSQL
+>3. Apache Doris
+>4. SQL server
+>5. MySQL
+>6. Google BigQuery
+>7. Snow Flake
+>8. Oracle
+>9. ClickHouse
+>10. Firebolt
+>11. Teradata
+>12. SAP HANA Cloud
+>13. IBMDB2
+>14. Azure Synapse
+>15. Amazon RedShift
+>16. MinIO
+>17. Star Rocks
 
 We can configure multiple data store destinations with the same server type and load data into them. This is common in scenarios where we might have multiple databases of the same type (for example, multiple MySQL or PostgreSQL databases) for different environments like development, testing, staging, or production, or for different segments of business operations.
+
+>**Note:** Currently data source creation is not supported for the following.
+>1. Teradata
+>2. SAP HANA Cloud
+>3. IBMDB2
+>4. Firebolt
+>5. GoogleBigQuery
+>6. MinIO
+
+## Steps to Create a DataStore
 
 Step 1 : Click on the settings.
 
@@ -185,8 +195,7 @@ Enter the credentials for ClickHouse:
 1. Select the server type as Clickhouse.
 2. Fill in your Clickhouse credentials as follows:
 3. Datastore Name: Enter a meaningful name; this is how the Clickhouse credentials will be stored in Bold Data Hub.
-4. Server: Enter the server name.
-Example: service.region.clickhouse.cloud or private ip
+4. Server: Enter the server name. Example: service.region.clickhouse.cloud or private ip
 5. Secure Connection: Enter your connection type as Insecure (HTTP) or Secure (HTTPS)
 6. Http Port number: Enter your Http and Tcp port number.
 7. Username: Enter your Clickhouse username.
@@ -208,8 +217,7 @@ Enter the credentials for Firebolt:
 1. Select the server type as Firebolt.
 2. Fill in your Firebolt credentials as follows:
 3. Datastore Name: Enter a meaningful name; this is how the Firebolt credentials will be stored in Bold Data Hub.
-4. Account: Enter the Account Name.
-Example: account-1
+4. Account: Enter the Account Name. Example: account-1
 5. Enter your Client ID and Client Secret.
 6. Enter your Engine Name.
 7. Database: Enter your Clickhouse database name.
@@ -220,6 +228,8 @@ Click on Save to save the credentials.
 
 If all the given credentials are valid, the “Datastore settings are saved successfully” message will appear near the save button.
 
+>**Note:** Currently Bold Data Hub does not support creating a data source in Bold BI when using Firebolt as the data store.
+
 ## Teradata
 
 Enter the credentials for Teradata:
@@ -227,8 +237,7 @@ Enter the credentials for Teradata:
 1. Select the server type as Teradata.
 2. Fill in your Teradata credentials as follows:
 3. Datastore Name: Enter a meaningful name; this is how the Teradata credentials will be stored in Bold Data Hub.
-4. Server: Enter the Server Name.
-Example: teradataenv-u043k14.env.clearscape.teradata.com
+4. Server: Enter the Server Name. Example: teradataenv-u043k14.env.clearscape.teradata.com
 5. Username: Enter your Teradata username.
 6. Password: Input your Teradata password.
 7. Database: Enter your Teradata database name.
@@ -239,6 +248,8 @@ Click on Save to save the credentials.
 
 If all the given credentials are valid, the “Datastore settings are saved successfully” message will appear near the save button.
 
+>**Note:** Currently Bold Data Hub does not support creating a data source in Bold BI when using Teradata as the data store.
+
 ## SAP HANA Cloud
 
 Enter the credentials for SAP HANA Cloud:
@@ -246,8 +257,7 @@ Enter the credentials for SAP HANA Cloud:
 1. Select the server type as SAP HANA Cloud.
 2. Fill in your SAP HANA credentials as follows:
 3. Datastore Name: Enter a meaningful name; this is how the SAP HANA credentials will be stored in Bold Data Hub.
-4. Server: Enter the Server Name.
-Example: 042a9310-1f79-4d80-ab0b-06277ca7c54a.hana.trial-us10.hanacloud.ondemand.com
+4. Server: Enter the Server Name. Example: 042a9310-1f79-4d80-ab0b-06277ca7c54a.hana.trial-us10.hanacloud.ondemand.com
 5. Username: Enter your SAP HANA username.
 6. Password: Input your SAP HANA password.
 7. Database: Enter your SAP HANA database name.
@@ -257,6 +267,8 @@ Example: 042a9310-1f79-4d80-ab0b-06277ca7c54a.hana.trial-us10.hanacloud.ondemand
 Click on Save to save the credentials.
 
 If all the given credentials are valid, the “Datastore settings are saved successfully” message will appear near the save button.
+
+>**Note:** Currently Bold Data Hub does not support creating a data source in Bold BI when using SAP HANA Cloud as the data store.
 
 ## IBMDB2
 
@@ -274,6 +286,8 @@ Enter the credentials for IBMDB2:
 ![Source](/static/assets/working-with-etl/images/ibmdb2_destination.png)
 
 Click on Save to save the credentials.
+
+>**Note:** Currently Bold Data Hub does not support creating a data source in Bold BI when using IBMDB2 as the data store.
 
 ## Azure Synapse
 
@@ -338,6 +352,8 @@ Enter the credentials for MinIO:
 ![Source](/static/assets/working-with-etl/images/Minio_destination.png)
 
 Click on Save to save the credentials.
+
+>**Note:** Currently Bold Data Hub does not support creating a data source in Bold BI when using MinIO as the data store.
 
 ## Star Rocks
 

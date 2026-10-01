@@ -6,7 +6,7 @@ platform: bold-bi
 documentation: ug
 ---
 
-# Embedding Bold BI Dashboards in Flutter using the Embedded SDK
+# Embedding Bold BI Dashboards in Flutter using the Embed SDK
 
 A GitHub link is provided to [access](https://github.com/boldbi/flutter-sample) the sample application, demonstrating the rendering of a dashboard on your Bold BI server. Following are the steps to create your own embedding application in `Flutter`.
 

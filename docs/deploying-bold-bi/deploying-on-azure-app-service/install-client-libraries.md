@@ -8,7 +8,7 @@ documentation: ug
 
 # Install client libraries 
 
-Bold BI Enterprise Edition utilizes client libraries such as Oracle, MySQL, Snowflake, and MongoDB to establish connections with their respective SQL database variants. To install these client libraries, it is necessary to read and accept the licenses associated with each one.
+Bold BI Server utilizes client libraries such as Oracle, MySQL, Snowflake, and MongoDB to establish connections with their respective SQL database variants. To install these client libraries, it is necessary to read and accept the licenses associated with each one.
 
 Please follow the provided steps to proceed with the installation of the client libraries:
 

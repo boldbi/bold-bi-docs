@@ -104,7 +104,7 @@ Publish the dashboard to the sites created in other Bold BI servers and to the i
 
   ![External Dialog](/static/assets/resource-migration/migrate-dashboards-online/images/external-site-dialog.png#width=55%)
 
-  For the Bold BI Enterprise server, get the site's Client Id and Client Secret values from the [site details page](/multi-tenancy/manage-sites/#general). 
+  For the Bold BI Server, get the site's Client Id and Client Secret values from the [site details page](/multi-tenancy/manage-sites/#general). 
   
   ![General Details](/static/assets/resource-migration/migrate-dashboards-online/images/general-details.png)
 

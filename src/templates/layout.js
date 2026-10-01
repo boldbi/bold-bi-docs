@@ -13,6 +13,63 @@ import "../assets/css/style.css";
 import "../assets/css/prism.css";
 import toc from '../../left-toc.json';
 
+export const visitorUidScript = `
+function getCookie(name) {
+	const nameEQ = name + "=";
+	const cookies = document.cookie.split(";");
+	for (let cookie of cookies) {
+		cookie = cookie.trim();
+		if (cookie.indexOf(nameEQ) === 0) {
+			return decodeURIComponent(cookie.substring(nameEQ.length));
+		}
+	}
+	return null;
+}
+
+function setCookie(name, value, expiryDays = 30) {
+	if (!value) return;
+
+	const expiryDate = new Date();
+	expiryDate.setTime(expiryDate.getTime() + expiryDays * 24 * 60 * 60 * 1000);
+
+	const cookieString = name + "=" + encodeURIComponent(value) + "; path=/; domain=.boldbi.com; expires=" + expiryDate.toUTCString();
+	document.cookie = cookieString;
+}
+
+function generateVisitorUid() {
+	const now = new Date();
+	const jan = new Date(now.getFullYear(), 0, 1);
+	const jul = new Date(now.getFullYear(), 6, 1);
+
+	const estOffset = (Math.max(jan.getTimezoneOffset(), jul.getTimezoneOffset()) <= now.getTimezoneOffset() ? -4 : -5) * 3600000;
+	const loadTimeOffset = now.getTimezoneOffset() * 60000;
+	const timestamp = now.getTime() + loadTimeOffset + estOffset;
+	const random = Math.floor(Math.random() * 1000) + 1;
+
+	return "" + random + timestamp;
+}
+
+function getVisitorUid() {
+	const cookieUuid = getCookie("_uid");
+
+	if (cookieUuid) return cookieUuid;
+
+	const newUuid = generateVisitorUid();
+	setCookie('_uid', newUuid, 365);
+
+	return newUuid;
+}
+
+const visitorUid = getVisitorUid() || "";
+
+if (visitorUid) {
+	window.dataLayer = window.dataLayer || [];
+	window.dataLayer.push({
+		'visitor_uid': visitorUid
+	});
+}
+`;
+
 export default class LayoutTemplate extends React.Component {
 	treeData;
 	indexPageMapper;
@@ -56,8 +113,8 @@ export default class LayoutTemplate extends React.Component {
 			noindex.content = 'noindex';
 			document.getElementsByTagName('head')[0].appendChild(noindex);
 		}
-		sitevisitorLoad();
-		helpBotLoad();
+		loadTrackingScript();
+		// helpBotLoad();
 		// boldDeskLiveChat();
 		askButtonLoad();
 
@@ -100,7 +157,7 @@ export default class LayoutTemplate extends React.Component {
 	/* eslint-disable */
 	render() {
 		const postNode = this.props.pageContext;
-		const domain = 'https://staginghelp.boldbi.com';
+		const domain = 'https://help.boldbi.com';
 		const canonicalUrl = postNode.frontmatter.canonical ? domain + postNode.frontmatter.canonical : domain + postNode.slug;
 		var metaRobot = { name: 'robots', content: 'follow' }
 		return (
@@ -138,15 +195,26 @@ export default class LayoutTemplate extends React.Component {
 					<meta name="twitter:description" content={postNode.frontmatter.description} />
 					<meta name="twitter:image" content={domain + "/img/og-img.png"} />
 
+                    {/* UUID Passing to GTM */}
+					<script>{visitorUidScript}</script>
+
 					{/* Google Tag Manager */}
-					<script async src="https://www.googletagmanager.com/gtag/js?id=G-SRXJZD7EME"></script>
 					<script>
-						{`
-                            window.dataLayer = window.dataLayer || [];
-                            function gtag(){ dataLayer.push(arguments); }
-                            gtag('js', new Date());
-                            gtag('config', 'G-SRXJZD7EME');
-                        `}
+					{`
+						(function(w, d, s, l, i) {
+							w[l] = w[l] || [];
+							w[l].push({
+								'gtm.start': new Date().getTime(),
+								event: 'gtm.js'
+							});
+							var f = d.getElementsByTagName(s)[0],
+								j = d.createElement(s),
+								dl = l != 'dataLayer' ? '&l=' + l : '';
+							j.async = true;
+							j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+							f.parentNode.insertBefore(j, f);
+						})(window, document, 'script', 'dataLayer', 'GTM-5PHX5HL');
+					`}
 					</script>
 				</Helmet>
 
@@ -224,19 +292,9 @@ function askButtonLoad() {
 	}
 }
 
-function sitevisitorLoad() {
-	if (!window.__sitevisitorLoad) {
-		const script = document.createElement("script");
-		script.src = "/js/sitevisitor-tracking.js";
-		script.defer = true;
-		script.async = true;
-		document.body.appendChild(script);
-		window.__sitevisitorLoad = true;
-	} else {
-		setlocalstorage();
-		append_query_string();
-		storageExpriedate();
-		append_query_string_access_demo_link();
-		append_request_demo_form_lead_details();
-	}
+function loadTrackingScript() {
+    const script = document.createElement("script");
+    script.src = `https://cdn.boldbi.com/website/js/tracking.js?v=${Date.now()}`;
+    script.async = true;
+    document.head.appendChild(script);
 }

@@ -19,18 +19,81 @@ documentation: ug
 
    ![Data filters](/static/assets/working-with-datasource/images/datafilters.png)
 
-   Add a filter condition by clicking the `Add` button in the `Data Filters` window.
-
-   ![Filters wizard](/static/assets/working-with-datasource/images/filterswizard.png)
-
    Now, a filter condition will be added by default as shown below:
 
    ![Filter condition](/static/assets/working-with-datasource/images/filtercondition.png)
+
+   You can add Add a filter condition by clicking the `Add Group` button in the `Data Filters` window.
+
+   ![Filters wizard](/static/assets/working-with-datasource/images/filterswizard.png)
+
+  
    
    You can filter values with or without `Null` by checking or unchecking the `Include Null` option. If you check this option, only `Equals` and `Does Not Equal` conditions will be shown. Based on these conditions, you may filter values with or without `Null`.
    
-   ![Null values condition](/static/assets/working-with-datasource/images/nullvaluescondition.PNG)
-   
+   ![Null values condition](/static/assets/working-with-datasource/images/nullvaluecondition.png)
+
+### Nested Groups and Conditions
+
+The Data Filters feature allows you to organize filter conditions into nested groups to configure complex filtering requirements. Each group can contain multiple conditions and additional nested groups.
+
+You can combine conditions and groups using the AND/OR operators to define how the filter conditions are evaluated.
+
+#### Adding Nested Groups and Conditions
+
+Click the `+` icon within a group to display the available options.
+
+- **Add Group:** Adds a nested group within the selected group.
+- **Add Condition:** Adds another filter condition within the selected group.
+
+![Null values condition](/static/assets/working-with-datasource/images/addgroup.png)
+
+You can add multiple conditions within a group and combine them using the AND/OR operators.
+
+#### Understanding Nested Groups
+
+Nested groups allow you to organize related conditions and control how they are evaluated.
+
+For example, to retrieve orders shipped to London or Berlin where the freight is greater than 500 or the shipping method is 2, configure the following conditions:
+
+**Filter configuration:**
+ ![Null values condition](/static/assets/working-with-datasource/images/nested2.png)
+
+
+### Configuring Maximum Nested Group Depth
+
+By default, Data Filters supports a  nested group depth of 3.
+
+When the configured nesting depth is reached, the `Add Group` option will no longer be displayed. You can continue adding filter conditions within the existing group.
+
+The default value of `DataFiltersMaxDepth` is **3**, and the maximum supported value is **8**.
+
+#### Modifying the Maximum Nested Group Depth
+
+To increase the maximum nesting depth, modify the `DataFiltersMaxDepth` property in the `config.json` file.
+
+Follow these steps:
+
+1. Navigate to the Bold BI administration page.
+2. Open **Settings → Configuration**.
+3. Select the `config.json` file.
+4. Locate the `DataFiltersMaxDepth` property.
+5. Update the value to the required maximum nesting depth.
+6. Click **Save** to save the configuration.
+
+For example, to increase the maximum nesting depth to 4, configure the following property:
+
+```json
+{
+  "DataFiltersMaxDepth": "4"
+}
+```
+
+In this example, users can configure nested groups up to the configured depth of 4.
+
+**Note:** When the configured maximum nesting depth is reached, the `Add Group` option will be hidden, while the `Add Condition` option will remain available. The maximum supported nesting depth is 8.
+
+
    Modify the condition as needed and define the criteria. The condition can be defined based on two options:
    1. Custom
    2. Parameters
@@ -80,9 +143,9 @@ documentation: ug
    
    ![Example date time column](/static/assets/working-with-datasource/images/examplefordatetimecolumn.png)
 
-   To add more than one condition, click the `Add` button.
+   To add more than one condition, click the `Add Group` button.
 
-   ![Selected filters condition](/static/assets/working-with-datasource/images/selectedfilterscondition.PNG#max-width=100%)
+   ![Selected filters condition](/static/assets/working-with-datasource/images/selectfilter.png)
 
    > **NOTE:**  By default, the AND operation will be used between two conditions. The operator can be changed to OR if necessary. 
 
@@ -113,9 +176,14 @@ Filter the records based on the dashboard parameter values. This allows for dyna
 
 ### Deleting a filter condition
 
-   Remove a filter condition by clicking the highlighted icon on the right of the respective filter condition.
+   Remove a filter condition by clicking the highlighted icon to its right, and then click Apply Filter to apply the changes.
 
-   ![Delete filter condition](/static/assets/working-with-datasource/images/deletefiltercondition.png)
+   ![Delete filter condition](/static/assets/working-with-datasource/images/deletefliter.png)
+
+   ![Delete filter condition](/static/assets/working-with-datasource/images/deletefliter1.png)
+
+   
+   ![Delete filter condition](/static/assets/working-with-datasource/images/deletefliter2.png)
 
 
  

@@ -15,48 +15,39 @@ documentation: ug
 ## BOLD AI Service
 Once users configure the Bold AI Service, we manage AI functionalities on our end seamlessly. it requires no credentials and operates on a cloud-based service.
 
-- Versions up to 13: Works with your existing Bold BI license.
-- Version 14+: Runs per-tenant with 1.5 million free tokens monthly, zero billing.
-- We provide 1.5 million tokens every month per tenant, which is free of charge and will not be billed.
+- We provide 500 AI Credits every month per license, which is free of charge and will not be billed.
 
-### How are the Tokens Applied for Bold BI Service Tenants?
+### How are the Credits Applied for Bold BI Service License?
 
-- Each tenant has its own dedicated 1.5 million token pool per month.  
-- Tokens cannot be shared or transferred between tenants.  
-- All AI usage regardless of the number of users (e.g., 10 or 100 embedded users) is deducted from the same monthly tenant token pool.  
-- The full 1.5 million tokens are automatically reset on the first day of every month.
+- Each license has its own dedicated pool of 500 AI Credits every month.
+- AI Credits cannot be shared or transferred between licenses.
+- All AI usage, regardless of the number of users (for example, 10 or 100 embedded users), is deducted from - the same license credit balance.
+- The free 500 AI Credits are automatically reset at the beginning of each billing period.
 
-## Understanding Token Usage
-AI token usage varies based on the datasource size, column count, and complexity of the query. It is not constant and can differ notably across dashboards and operations. For example, in a Sales Dashboard Analysis scenario
+## Understanding Credits Usage
+AI token and credit usage varies based on the datasource size, column count, and complexity of the query. It is not constant and can differ notably across dashboards and operations. For example, in a Sales Dashboard Analysis scenario
 
 - Dashboard: Sales analysis Dashboard
 - Datasource: Sales
 - Number of Columns: 43
 
-<table>
-    <thead>
-        <tr>
-            <th>Purpose</th>
-            <th>Average Token Usage (Min - Max)</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>AI Summarization</td>
-            <td>0.6K – 0.75K tokens</td>
-        </tr>
-        <tr>
-            <td>Widget property updates</td>
-            <td>4K – 5K tokens</td>
-        </tr>
-        <tr>
-            <td>Widget creation</td>
-            <td>8.90K – 9.1K tokens</td>
-        </tr>
-    </tbody>
-</table>
+<table> <thead> <tr> <th>Purpose</th> <th>Average Token Usage (Min - Max)</th> <th>Average Credit Usage</th> </tr> </thead> <tbody> <tr> <td>AI Summarization</td> <td>0.6K – 0.7K tokens</td> <td>0.03 - 0.04 credits</td> </tr> <tr> <td>Widget property updates</td> <td>4K – 5K tokens</td> <td>0.1 - 0.2 credits</td> </tr> <tr> <td>Widget creation</td> <td>11K – 12K tokens</td> <td>0.27 - 0.33 credits</td> </tr> </tbody> </table>
 
->**NOTE:**  Token usage estimates may vary based on data size, structure, and query complexity. If usage is high or frequent, additional tokens may require prior payment.
+### AI Credit Plans & Purchase Options
+
+In addition to the monthly free credits, we offer flexible plans for higher usage.
+
+If you exceed the monthly quota, you can purchase additional AI credits through our available plans. These plans are designed to scale with your needs and ensure uninterrupted AI service.
+
+We offer two credit options:
+
+- Subscription Plan – Credits are provided monthly based on the subscribed tier and expire at the end of each billing cycle if unused.
+
+- Add-on Credits – Extra credits that can be purchased separately and carried forward to the next month. Add-on credits require an active subscription plan.
+
+For more information about AI Credits, including credit allocation, subscriptions, add-on credits, purchasing, and usage tracking, refer to the [AI Credits](https://help.boldbi.com/artificial-intelligence-and-machine-learning/ai-credits) documentation.
+
+>**NOTE:**  credit usage estimates may vary based on data size, structure, and query complexity. If usage is high or frequent, additional credits may require prior payment.
 
 ## Open AI
 

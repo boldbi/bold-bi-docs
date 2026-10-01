@@ -45,10 +45,10 @@ This section explains the process of upgrading the Bold BI Linux package to the 
     sudo unzip {Bold BI Linux package zip file}
     ~~~ 
 
-6. Change the directory to `BoldBIEnterpriseEdition-Linux` by running this command:
+6. Change the directory to `BoldBIServer-Linux` by running this command:
 
     ~~~shell
-    cd BoldBIEnterpriseEdition-Linux
+    cd BoldBIServer-Linux
     ~~~ 
  
 7. Execute the following command to upgrade the Bold BI that is deployed on your Linux machine:

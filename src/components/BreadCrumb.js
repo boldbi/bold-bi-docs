@@ -34,11 +34,9 @@ export default class BreadCrumb extends React.Component {
 	renderBreadcrumbContent() {
 		const { routerData, pathName, indexPageMapper, pathPrefix, treeData } = this.props;
 
-		if (!routerData || !routerData[pathName]) {
-			return null;
-		}
-
-		const breadCrumbData = routerData[pathName];
+		// Allow rendering a minimal breadcrumb (toggle + home) even when
+		// there's no routerData entry for the current path (e.g. homepage).
+		const breadCrumbData = routerData && routerData[pathName] ? routerData[pathName] : null;
 		const basePrefix = pathPrefix ? pathPrefix : '';
 
 		const toggleButton = (
@@ -58,7 +56,7 @@ export default class BreadCrumb extends React.Component {
 		const separator = <span className="bd-icon bd-icon-chevronright"></span>;
 
 		// Try to derive a full trail from treeData (preferred), fallback to routerData.title
-		const trail = this.findTrailInTree(treeData, pathName) || (Array.isArray(breadCrumbData.title) ? breadCrumbData.title.map(t => ({ name: t, id: null })) : []);
+		const trail = this.findTrailInTree(treeData, pathName) || (breadCrumbData && Array.isArray(breadCrumbData.title) ? breadCrumbData.title.map(t => ({ name: t, id: null })) : []);
 
 		const items = [
 			<React.Fragment key="toggle">{toggleButton}</React.Fragment>,

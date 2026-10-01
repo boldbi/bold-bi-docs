@@ -26,6 +26,11 @@
 	list-style-type: none;
 }
 
+.header-lists ul ul {
+	margin: 0;
+	padding-left: 0;
+}
+
 li.doc-anchor-h2 {
 	padding: 6px 16px;
 }
@@ -59,16 +64,134 @@ li.doc-anchor-h4 a {
 	text-decoration: none;
 }
 
-#doc-right-toc li.active>a {
+#doc-right-toc li.current-active>a,
+#doc-right-toc a.current-active-link {
 	color: #002bff;
 }
 
-#doc-right-toc li.active{
+#doc-right-toc li.current-active{
 	border-left: 2px solid #002bff;
 }
 
 .doc-anchor-h2 a:hover,.doc-anchor-h3 a:hover,.doc-anchor-h4 a:hover{
 	color:#16181E;
+}
+
+#doc-right-toc.modern-right-toc li.modern-group {
+	padding: 0;
+}
+
+#doc-right-toc.modern-right-toc .righttoc-group-row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 16px;
+	gap: 12px;
+}
+
+#doc-right-toc.modern-right-toc li.doc-anchor-h2.modern-group > ul > li.doc-anchor-h3.modern-group > .righttoc-group-row,
+#doc-right-toc.modern-right-toc li.doc-anchor-h2.modern-group > ul > li.doc-anchor-h3:not(.modern-group) > a {
+	padding-left: 28px;
+}
+
+#doc-right-toc.modern-right-toc li.doc-anchor-h3.modern-group > ul > li.doc-anchor-h4.modern-group > .righttoc-group-row,
+#doc-right-toc.modern-right-toc li.doc-anchor-h3.modern-group > ul > li.doc-anchor-h4:not(.modern-group) > a {
+	padding-left: 44px;
+}
+
+#doc-right-toc.modern-right-toc li.doc-anchor-h2:not(.modern-group),
+#doc-right-toc.modern-right-toc li.doc-anchor-h3:not(.modern-group),
+#doc-right-toc.modern-right-toc li.doc-anchor-h4:not(.modern-group) {
+	padding-top: 0;
+	padding-right: 0;
+	padding-bottom: 0;
+	padding-left: 0;
+}
+
+#doc-right-toc.modern-right-toc li.doc-anchor-h2:not(.modern-group) > a,
+#doc-right-toc.modern-right-toc li.doc-anchor-h3:not(.modern-group) > a,
+#doc-right-toc.modern-right-toc li.doc-anchor-h4:not(.modern-group) > a {
+	display: block;
+	padding: 10px 16px;
+}
+
+#doc-right-toc.modern-right-toc .righttoc-group-row > a {
+	flex: 1;
+	padding: 0;
+	text-decoration: none;
+}
+
+#doc-right-toc.modern-right-toc li.doc-anchor-h2 > .righttoc-group-row > a {
+	color: #4F5157;
+}
+
+#doc-right-toc.modern-right-toc li.doc-anchor-h3 > .righttoc-group-row > a {
+	color: #6F7177;
+}
+
+#doc-right-toc.modern-right-toc li.doc-anchor-h4 > .righttoc-group-row > a {
+	color: #8c8d90;
+}
+
+#doc-right-toc.modern-right-toc .righttoc-group-toggle {
+	border: 0;
+	background: transparent;
+	color: #667085;
+	cursor: pointer;
+	font-size: 18px;
+	line-height: 1;
+	padding: 0;
+	width: 20px;
+	height: 20px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#doc-right-toc.modern-right-toc .righttoc-group-toggle:hover {
+	color: #16181E;
+}
+
+#doc-right-toc.modern-right-toc li.doc-anchor-h3 > a {
+	color: #6F7177;
+	text-decoration: none;
+}
+
+#doc-right-toc.modern-right-toc li.doc-anchor-h4 > a {
+	color: #8c8d90;
+	text-decoration: none;
+}
+
+#doc-right-toc.modern-right-toc li.doc-anchor-h2:not(.active) > .righttoc-group-row > a,
+#doc-right-toc.modern-right-toc li.doc-anchor-h3:not(.active) > .righttoc-group-row > a,
+#doc-right-toc.modern-right-toc li.doc-anchor-h4:not(.active) > .righttoc-group-row > a,
+#doc-right-toc.modern-right-toc li.doc-anchor-h3:not(.active):not(.modern-group) > a,
+#doc-right-toc.modern-right-toc li.doc-anchor-h4:not(.active):not(.modern-group) > a {
+	color: inherit;
+}
+
+#doc-right-toc.modern-right-toc li.doc-anchor-h2.current-active,
+#doc-right-toc.modern-right-toc li.doc-anchor-h3.current-active,
+#doc-right-toc.modern-right-toc li.doc-anchor-h4.current-active {
+	border-left: 2px solid #002bff;
+}
+
+#doc-right-toc.modern-right-toc li.doc-anchor-h2.current-active > .righttoc-group-row > a,
+#doc-right-toc.modern-right-toc li.doc-anchor-h3.current-active > .righttoc-group-row > a,
+#doc-right-toc.modern-right-toc li.doc-anchor-h4.current-active > .righttoc-group-row > a,
+#doc-right-toc.modern-right-toc li.doc-anchor-h3.current-active:not(.modern-group) > a,
+#doc-right-toc.modern-right-toc li.doc-anchor-h4.current-active:not(.modern-group) > a,
+#doc-right-toc.modern-right-toc a.current-active-link {
+	color: #002bff;
+}
+
+#doc-right-toc.modern-right-toc li.doc-anchor-h2:not(.current-active) {
+	border-left: 0;
+}
+
+#doc-right-toc.modern-right-toc li.doc-anchor-h3:not(.current-active),
+#doc-right-toc.modern-right-toc li.doc-anchor-h4:not(.current-active) {
+	border-left: 0;
 }
 
 @media (max-width: 1200px) {

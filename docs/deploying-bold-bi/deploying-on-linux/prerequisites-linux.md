@@ -10,10 +10,10 @@ documentation: ug
 
 ## Hardware requirements
      
-The following hardware requirements are necessary to run the Bold BI Enterprise edition:
+The following hardware requirements are necessary to run the Bold BI Server:
 
 * **Operating System:**  Bold BI Linux can run on different Linux distributions. It has been verified on the following operating systems:
-    * Ubuntu 20.04+
+    * Ubuntu 22.04+
     * Cent OS Stream 9+
     * Oracle Linux 9.2+
     * Red Hat Enterprise Linux (RHEL) 9.3+
@@ -23,7 +23,7 @@ The following hardware requirements are necessary to run the Bold BI Enterprise 
 
 ## Software requirements
 
-The following software requirements are necessary to run the Bold BI Enterprise edition:
+The following software requirements are necessary to run the Bold BI Server:
 * **Database:** PostgreSQL 13.0+| Microsoft SQL Server 2016+ | MySQL 8.0+ | Oracle Database 19c+
 * **Web Server:** [Nginx](https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/linux-nginx?view=aspnetcore-3.1#install-nginx)  or [Apache](https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/linux-apache?view=aspnetcore-3.1)
 * **Web Browser:** Mozilla Firefox | Chrome | Microsoft Edge.

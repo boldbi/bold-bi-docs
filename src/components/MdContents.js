@@ -1,13 +1,17 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import FocusMode from './FocusMode';
+import AISummary from './AISummary';
 import '../assets/css/content.css';
+
+const AI_SUMMARY_MIN_WORDS = 300;
 
 class MdContents extends React.Component {
 
 	componentDidMount() {
 		this.initHeaderClicks();
 		this.insertReadTime();
+		this.mountAISummary();
 		// run inline code->tabs transformer safely (can be disabled via window.__disableInlineCodeTabs)
 		try {
 			if (typeof window === 'undefined' || !window.__disableInlineCodeTabs) this.initInlineCodeTabs();
@@ -75,9 +79,31 @@ class MdContents extends React.Component {
 			if (h1.nextSibling) h1.parentNode.insertBefore(el, h1.nextSibling);
 			else h1.parentNode.appendChild(el);
 
+			// place the AI summary immediately after the read-time block
+			const aiSummaryWrap = document.createElement('div');
+			aiSummaryWrap.className = 'ai-summary-placeholder';
+			if (el.nextSibling) el.parentNode.insertBefore(aiSummaryWrap, el.nextSibling);
+			else el.parentNode.appendChild(aiSummaryWrap);
+
 			// mount FocusMode into placeholder
 			try {
 				const placeholder = el.querySelector('.focus-mode-placeholder');
+				if (aiSummaryWrap && AISummary) {
+					try {
+						const aiSummaryRoot = createRoot(aiSummaryWrap);
+						aiSummaryRoot.render(React.createElement(AISummary, {
+							pageUrl: typeof window !== 'undefined' ? window.location.href : '',
+							pageTitle: h1 && h1.textContent ? h1.textContent.trim() : '',
+						}));
+						this.__cleanups = (this.__cleanups || []).concat([() => {
+							try {
+								Promise.resolve().then(() => aiSummaryRoot.unmount());
+							} catch (_) { }
+							if (aiSummaryWrap.parentNode) aiSummaryWrap.parentNode.removeChild(aiSummaryWrap);
+						}]);
+					} catch (_) { /* ignore */ }
+				}
+
 				if (placeholder && FocusMode) {
 					try {
 						const root = createRoot(placeholder);
@@ -98,6 +124,61 @@ class MdContents extends React.Component {
 			}
 		} catch (err) {
 			if (typeof console !== 'undefined') console.warn('insertReadTime error', err);
+		}
+	}
+
+	mountAISummary() {
+		if (typeof document === 'undefined') return;
+		const mdCnt = document.getElementById('md-content');
+		if (!mdCnt) return;
+
+		try {
+			const text = (mdCnt.innerText || '').trim();
+			const words = text ? text.split(/\s+/).length : 0;
+			const isShortPage = words < AI_SUMMARY_MIN_WORDS;
+
+			if (isShortPage) {
+				const existing = mdCnt.querySelector('.ai-summary-placeholder');
+				if (existing && existing.parentNode) existing.parentNode.removeChild(existing);
+				const readTimeEl = mdCnt.querySelector('.read-time');
+				if (readTimeEl) readTimeEl.classList.add('ai-summary-hidden-short-page');
+				return;
+			}
+
+			const existing = mdCnt.querySelector('.ai-summary-placeholder');
+			if (existing) existing.parentNode.removeChild(existing);
+			const readTimeEl = mdCnt.querySelector('.read-time');
+			if (readTimeEl) readTimeEl.classList.remove('ai-summary-hidden-short-page');
+
+			const readTime = mdCnt.querySelector('.read-time');
+			if (!readTime || !readTime.parentNode) return;
+
+			const h1 = mdCnt.querySelector('h1');
+			const aiSummaryWrap = document.createElement('div');
+			aiSummaryWrap.className = 'ai-summary-placeholder';
+
+			if (readTime.nextSibling) {
+				readTime.parentNode.insertBefore(aiSummaryWrap, readTime.nextSibling);
+			} else {
+				readTime.parentNode.appendChild(aiSummaryWrap);
+			}
+
+			if (!AISummary) return;
+
+			const aiSummaryRoot = createRoot(aiSummaryWrap);
+			aiSummaryRoot.render(React.createElement(AISummary, {
+				pageUrl: typeof window !== 'undefined' ? window.location.href : '',
+				pageTitle: h1 && h1.textContent ? h1.textContent.trim() : '',
+			}));
+
+			this.__cleanups = (this.__cleanups || []).concat([() => {
+				try {
+					Promise.resolve().then(() => aiSummaryRoot.unmount());
+				} catch (_) { }
+				if (aiSummaryWrap.parentNode) aiSummaryWrap.parentNode.removeChild(aiSummaryWrap);
+			}]);
+		} catch (err) {
+			if (typeof console !== 'undefined') console.warn('mountAISummary error', err);
 		}
 	}
 
@@ -516,7 +597,7 @@ class MdContents extends React.Component {
 		
 		document.body.insertAdjacentHTML('beforeend', imageZoom);
 
-		var getImage = document.querySelectorAll("#md-content img");
+		var getImage = document.querySelectorAll("#md-content img:not(.no-zoom)");
 		var zoomImageContainer = document.getElementById("zoom-image-container");
 		var zoomImage = document.getElementById("zoom-image");
 		var zoomImageClose = document.getElementById("zoom-image-close");

@@ -11,7 +11,7 @@ documentation: ug
 
 Self-Service Analytics in Bold BI enables users to build, customize, and share dashboards effortlessly—without writing code. The intuitive drag-and-drop designer simplifies data exploration, empowering users to gain insights quickly and make informed decisions.
 
-> **Note:** Refer to the [Getting Started](/getting-started/#getting-started) section which explains how to get started with the Bold BI Enterprise application and create a dashboard by connecting data with the features involved in this process.
+> **Note:** Refer to the [Getting Started](/getting-started/#getting-started) section which explains how to get started with the Bold BI Server application and create a dashboard by connecting data with the features involved in this process.
 
 ## When to Choose Self-Service Analytics?
 

@@ -6,7 +6,7 @@ platform: bold-bi
 documentation: ug
 ---
 
-# Bold BI Dashboards Embedding in ASP.NET MVC Sample with Embedded SDK
+# Bold BI Dashboards Embedding in ASP.NET MVC Sample with Embed SDK
 
 A GitHub link has been provided to [get](https://github.com/boldbi/aspnet-mvc-sample) the sample application, which demonstrates the rendering of a single dashboard and a list of dashboards in your Bold BI server. This is followed by steps to create a new embedding application in `ASP.NET MVC `on your own.
 
@@ -457,7 +457,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/aspnet-mvc-sa
      ```js
      <head>
      <link rel="stylesheet" href="~/Content/Site.css" />
-      <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v15.2.6/boldbi-embed.js"></script>
+      <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v16.3.5/boldbi-embed.js"></script>
       <script type="text/javascript" src="~/Scripts/Embed/Index.js"></script>
       <script type="text/javascript">
          var rootUrl = "@GlobalAppSettings.EmbedDetails.ServerUrl";

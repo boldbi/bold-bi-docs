@@ -13,6 +13,16 @@ gulp.task('sitemap', done => {
 
     <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     \n`;
+    
+    // include the homepage explicitly
+    xmlContent += `        <url>
+
+        <loc>${baseUrl + '/'}</loc>
+
+        <lastmod>${lastModified}</lastmod>
+        
+    </url>\n`;
+
     paths.forEach((path) => {
         xmlContent += `        <url>
 

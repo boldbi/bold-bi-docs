@@ -1,7 +1,7 @@
 ---
 layout: post
 title: PythonScript Bold Data Hub Connector – Bold BI Learning
-description: Learn how to use the PythonScript Bold Data Hub connector in Bold BI Enterprise Edition. Discover simple steps to integrate data smoothly and make the most of your analytics.
+description: Learn how to use the PythonScript Bold Data Hub connector in Bold BI Server. Discover simple steps to integrate data smoothly and make the most of your analytics.
 platform: bold-bi
 documentation: ug
 
@@ -20,14 +20,14 @@ add_dbname_column: false
 use_snake_casing: true
 plugins:
   extractors:
-  - name: pyscript1
-    connectorname: PythonScript
-    schemaname:
-    config:
-      filePath: C:\BoldServices\app_data\elt\connectors\csvreaders.py
-    properties:
-    metadata:
-    select:
+    - name: pyscript1
+      connectorname: PythonScript
+      schemaname:
+      config:
+        filePath: C:\BoldServices\app_data\elt\connectors\csvreaders.py
+      properties:
+      metadata:
+      select:
 ```
 
 ## Configure the Bold Data Hub to connect PythonScript

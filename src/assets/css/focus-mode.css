@@ -4,7 +4,7 @@ body.focus-mode {
 }
 
 /* hide header and footer; hide breadcrumb children except focus controls */
-body.focus-mode #header,
+body.focus-mode #header-container,
 body.focus-mode #doc-footer {
   display: none !important;
 }

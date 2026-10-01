@@ -110,6 +110,16 @@ The fields that need to be saved in Bold BI in order to enable Keycloak for auth
 </tr>
 
 <tr>
+<td>Use PKCE</td>
+<td>Enable PKCE (Proof Key for Code Exchange) to enhance the security of the OAuth 2.0 Authorization Code flow and protect against authorization code interception attacks. This is especially important when integrating with Keycloak to obtain access tokens for storage within the application. This capability is currently leveraged for data connector API interactions.</td>
+</tr>
+
+<tr>
+<td>Enable Token Storage</td>
+<td>Enable Token Storage to securely store the access token within the application during the login process and use it for subsequent OpenID Connect (OIDC) API requests. This capability is currently leveraged for data connector API interactions.</td>
+</tr>
+
+<tr>
 <td>Logout Endpoint</td>
 <td>It is the endpoint in the Keycloak website that signs the user out.</td>
 </tr>

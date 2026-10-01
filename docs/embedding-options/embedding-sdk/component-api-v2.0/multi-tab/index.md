@@ -7,7 +7,7 @@ documentation: ug
 keywords: Bold BI, embedding, Multi-Tab Dashboard
 ---
 
-# Bold BI Embedding SDK for Multi-Tab Dashboard
+# Bold BI Embed SDK for Multi-Tab Dashboard
 
 The Bold BI Embed SDK enables you to visualize and interact with multiple dashboards within a single embedded view. By including the **server URL**, **dashboard IDs**, and **authorization server details** in your application, you can securely embed and manage the multi-tab dashboard experience.
 

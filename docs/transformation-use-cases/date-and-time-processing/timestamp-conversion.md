@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Transformation Converting Timestamps | Bold Data Hub
-description: Learn how to use the ETL/Data Hub Transformation section in Bold BI Enterprise Edition. Discover simple steps to convert time stamps to date time column and make the most of your analytics.
+description: Learn how to use the ETL/Data Hub Transformation section in Bold BI Server. Discover simple steps to convert time stamps to date time column and make the most of your analytics.
 platform: bold-bi
 documentation: ug
 

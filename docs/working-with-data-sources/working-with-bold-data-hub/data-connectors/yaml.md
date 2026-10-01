@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Yaml Bold Data Hub Connector – Embedded BI | Bold BI Learning
-description: Learn how to use the yaml Bold Data Hub connector in Bold BI Enterprise Edition. Discover simple steps to integrate data smoothly and make the most of your analytics.
+description: Learn how to use the yaml Bold Data Hub connector in Bold BI Server. Discover simple steps to integrate data smoothly and make the most of your analytics.
 platform: bold-bi
 documentation: ug
 
@@ -20,7 +20,7 @@ add_dbname_column: false
 use_snake_casing: true
 plugins:
   extractors:
-  - name: FileSystem
+    - name: FileSystem
       connectorname: FileSystem
       schemaname:
       config:

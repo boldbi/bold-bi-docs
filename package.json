@@ -65,14 +65,27 @@
 	},
 	"overrides": {
 		"@parcel/reporter-dev-server": "2.16.4",
-		"markdown-it": "14.1.1",
+		"markdown-it": "14.2.0",
 		"braces": "3.0.3",
 		"micromatch": "4.0.8",
+		"lodash": "4.18.1",
+		"minimatch": "3.1.5",
+		"cookie": "0.7.2",
+		"decode-uri-component": "0.5.0",
+		"file-type": "21.3.1",
+		"sharp": "0.35.3",
+		"immutable": "5.1.8",
+		"@tootallnate/once": "3.0.1",
+		"path-to-regexp": "0.1.13",
+		"qs": "6.16.0",
+		"serialize-javascript": "7.0.5",
+		"uuid": "13.0.1",
+		"webpack": "5.104.1",
 		"external-editor": {
-			"tmp": "0.2.5"
+			"tmp": "0.2.6"
 		},
 		"yurnalist": {
-			"tmp": "0.2.5"
+			"tmp": "0.2.6"
 		}
 	}
 }

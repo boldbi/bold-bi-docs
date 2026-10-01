@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script src="../../../../common/try-it-now/visitor-uid.js"></script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-SRXJZD7EME"></script>
 <script>
@@ -113,7 +114,7 @@ _atrk_opts = { atrk_acct:"vHAUs1FYxz20cv", domain:"boldbi.com",dynamic: true};
         <div class="ej-doc-right-side">
             <a href="https://www.boldbi.com/forums/" target="_blank">Forum</a>
             <a href="https://support.boldbi.com/kb" target="_blank">KB</a>
-			<a href="https://app.boldid.net/register/bi/embedded?evaluation=v2" target="_blank" role="button"><div class="header-demo-link">Try it Free</div></a>
+			<a href="https://www.boldbi.com/register/bi?evaluation=v2" target="_blank" role="button"><div class="header-demo-link">Try it Free</div></a>
         </div>
     </div>
     <h1 class="page-heading">Rest API Reference version 2.0</h1>
@@ -126,9 +127,16 @@ _atrk_opts = { atrk_acct:"vHAUs1FYxz20cv", domain:"boldbi.com",dynamic: true};
     </div>
     <script src="../../../../common/try-it-now/swagger-ui-bundle.js"></script>
     <script src="../../../../common/try-it-now/swagger-ui-standalone-preset.js"></script>
-    
-    <script src="/js/sitevisitor-tracking.js"></script>
-    <script>
+	<script>
+		function loadTrackingScript() {
+			const script = document.createElement("script");
+			script.src = `https://cdn.boldbi.com/website/js/tracking.js?v=${Date.now()}`;
+			script.async = true;
+			document.head.appendChild(script);
+		}
+
+		loadTrackingScript();
+
         window.onload = function () {
             // Begin Swagger UI call region
             const ui = SwaggerUIBundle({

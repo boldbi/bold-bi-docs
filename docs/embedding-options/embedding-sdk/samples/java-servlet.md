@@ -6,7 +6,7 @@ platform: bold-bi
 documentation: ug
 ---
 
-# Bold BI Dashboards embedding in Java Servlet using Embedded SDK
+# Bold BI Dashboards embedding in Java Servlet using Embed SDK
 
 A GitHub link has been provided to [get](https://github.com/boldbi/java-servlet-sample) the sample application, which demonstrates the rendering of the dashboard available on your Bold BI server. This is followed by steps to create a new embedding application in `Java Servlet` on your own. 
 

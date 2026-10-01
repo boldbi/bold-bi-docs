@@ -3,33 +3,34 @@
 	display: flex;
 	align-items: center;
 	background: #f5f7fa;
-	border: 1px solid #d1d5db;
 	overflow: hidden;
-	margin-right: 12px;
 	border-radius: 6px;
 }
 
 .ask-main {
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	gap: 6px;
-	padding: 8px 9px;
-	font-size: 14px;
-	font-weight: 500;
-	color: #344054;
 	cursor: pointer;
-	height: 31px;
-	overflow: hidden;
-	border: none;
-	background: transparent;
+	font-size: 13.3px;
+	font-weight: 600;
+	line-height: 19px;
+	color: #344054;
+	position: relative;
+	width: 95px;
+	height: 34px;
+	border-radius: 7.6px;
+	border: 0.95px solid #D6BBFB;
+	background: linear-gradient(270deg, #DEEBFF 0%, #E5ECFC 25%, #EAEDFB 50%, #E6E1FC 75%, #E8DEFC 100%);
 }
 
 .ask-main::before {
 	content: "";
 	display: block;
-	width: 16px;
-	height: 16px;
-	background: url("/img/ask-btn-icon.svg") no-repeat center;
+	width: 19px;
+	height: 19px;
+	background: url("/img/ask-ai-button.svg") no-repeat center;
 }
 
 .ask-split-button:hover {
@@ -410,18 +411,7 @@
 
 @media (max-width: 426px) {
     .ask-main {
-        display: flex;
-        align-items: center;
-        gap: 4px;
-        padding: 5px 5px;
-        font-size: 13px;
-        font-weight: 500;
-        color: #344054;
-        cursor: pointer;
         height: 31px;
-        overflow: hidden;
-        border: none;
-        background: transparent;
     }
  
     .ask-main .ask-logo {
@@ -526,7 +516,7 @@
 
 /* reduce gap between ask AI and menu button for very small screens */
 @media (max-width: 426px) {
-	#header {
+	#header-container {
 		padding: 0px 16px !important;
 	}
 }
@@ -534,4 +524,21 @@
 /* Header docs link: subtle hover effect */
 .header-docs-text a:hover {
 	background-color: #e7eaed;
+}
+
+/* Right-side slide-in panel on wide screens; mobile slides up from bottom. */
+:root{--panel-width:350px;--panel-bg:#fff;--panel-border:#e5e7eb}
+.iframe-panel{position:fixed;top:56px;right:0;width:0;height:calc(100vh - 56px);overflow:hidden;background:var(--panel-bg);z-index:1500;transition:width .28s ease, opacity .2s ease;border-left:0 solid var(--panel-border);box-shadow:-8px 0 24px rgba(0,0,0,0.06);opacity:0;visibility:hidden;pointer-events:none}
+.iframe-panel.open{width:var(--panel-width);border-left-width:1px;opacity:1;visibility:visible;pointer-events:auto}
+.iframe-panel .panel-body{height:100%;position:relative}
+.iframe-panel iframe{width:100%;height:calc(100% - 4px);border:0;box-sizing:border-box;border-top:1px solid var(--panel-border)}
+.with-panel{margin-right:var(--panel-width)}
+.iframe-panel .agent-close-btn{position:absolute;top:15px;right:8px;width:32px;height:32px;border-radius:6px;border:none;background:none;color:#111;font-size:24px;cursor:pointer;z-index:1600;padding: 0 8px 3px}
+.iframe-panel .agent-close-btn:hover{background:#00000033}
+@media (max-width:769px){
+  .iframe-panel{top:auto;right:0;left:0;bottom:0;width:100vw;height:50vh;transform:translateY(100%);border-left:none;border-radius:12px 12px 0 0;box-shadow:0 -8px 24px rgba(0,0,0,0.06);z-index:9999}
+  .iframe-panel.open{transform:translateY(0);width:100vw}
+  .iframe-panel .panel-body{height:50vh}
+  .iframe-panel iframe{height:100%}
+  .with-panel{margin-right:0}
 }

@@ -15,6 +15,8 @@ To start, open the User Filter Dialog by following the steps mentioned [here](/w
 
 In the manual mode UI, we will first select the column to be used as the filter. In this case, we will choose the **Region** column. A name can also be set for the filter for better user understanding when multiple filters are created for the same dashboard.
 
+> **Note:** When configuring Row-Level Security, only **String**, **DateTime**, and **Boolean** columns are supported. **Integer** columns are not supported and will not appear in the **Data Column** selection list.
+
 ![User Filter Manual Mode Select Column](/static/assets/working-with-datasource/user-filter/images/user-filter-dlg-manual-select-column.png)
 
 Once the column is selected, the User Group section and the Fields section will be enabled. The user can do the mapping for the user or group here.

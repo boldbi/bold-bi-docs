@@ -73,7 +73,7 @@
             <li><a href="https://www.boldbi.com/forums/" target="_blank">Forum</a></li>
             <li><a href="https://support.boldbi.com/kb" target="_blank">KB</a></li>
           </ul>
-          <a class="br-cta" href="https://app.boldid.net/register/bi/embedded?evaluation=v2" target="_blank">Try it Free</a>
+          <a class="br-cta" href="https://www.boldbi.com/register/bi?evaluation=v2" target="_blank">Try it Free</a>
         </nav>
 
         <!-- Mobile menu button (optional, no JS required for this static example) -->
@@ -84,7 +84,7 @@
         <div class="mobile-menu-panel">
           <li><a href="https://www.boldbi.com/forums/" target="_blank">Forum</a></li>
           <li><a href="https://support.boldbi.com/kb" target="_blank">KB</a></li>
-          <a class="mobile-cta" href="https://app.boldid.net/register/bi/embedded?evaluation=v2">Try it Free</a>
+          <a class="mobile-cta" href="https://www.boldbi.com/register/bi?evaluation=v2">Try it Free</a>
         </div>
       </div>
     </header>
@@ -187,7 +187,7 @@
             <article class="doc-card" aria-labelledby="embed-title">
               <h3 id="embed-title" class="doc-card__title">Embedding Options</h3>
               <ul class="doc-card__links">
-                <li><a href="/embedding-options/embedding-sdk/">Embedding SDK</a></li>
+                <li><a href="/embedding-options/embedding-sdk/">Embed SDK</a></li>
                 <li><a href="/embedding-options/iframe-embedding/">IFrame Embedding</a></li>
               </ul>
             </article>
@@ -279,7 +279,7 @@
         <h1 class="cta-heading">Start Building AI-Powered Embedded Analytics with Bold BI</h1>
         <p class="cta-heading-description">Connect data, design dashboards visually, explore trends with AI-powered insights, monitor performance in real time, and share securely across teams.</p>
         <div class="cta-button">
-          <a class="cta-try-free-link" href="https://app.boldid.net/register/bi/embedded?evaluation=v2"
+          <a class="cta-try-free-link" href="https://www.boldbi.com/register/bi?evaluation=v2"
             aria-label="Try it free for 30 days" target="_blank">
             Try It Free for 30 days
           </a>
@@ -429,18 +429,14 @@
       });
     })();
 
-    document.addEventListener('DOMContentLoaded', function () {
-      sitevisitorLoad();
-    });
+	function loadTrackingScript() {
+		const script = document.createElement("script");
+		script.src = `https://cdn.boldbi.com/website/js/tracking.js?v=${Date.now()}`;
+		script.async = true;
+		document.head.appendChild(script);
+	}
 
-    function sitevisitorLoad() {
-      const script = document.createElement("script");
-      script.src = "/js/sitevisitor-tracking.js";
-      script.defer = true;
-      script.async = true;
-
-      document.body.appendChild(script);
-    }
+	loadTrackingScript();
   </script>
 </body>
 

@@ -1,39 +1,39 @@
 ---
 layout: post
-title: Install Bold BI Enterprise Edition in Silent Mode | Bold BI Docs
-description: Read this documentation to learn how to install the Bold BI Enterprise Edition in silent mode into another installer and embed the dashboards in an application.
+title: Install Bold BI Server in Silent Mode | Bold BI Docs
+description: Read this documentation to learn how to install the Bold BI Server in silent mode into another installer and embed the dashboards in an application.
 platform: bold-bi
 documentation: ug
 ---
 
-# Install the Bold BI Enterprise Edition in silent mode
+# Install the Bold BI Server in silent mode
  
-This section outlines how to install and deploy the Bold BI Enterprise Edition in silent mode. This silent installer can be integrated into your existing installation process.
+This section outlines how to install and deploy the Bold BI Server in silent mode. This silent installer can be integrated into your existing installation process.
 
-## Installing the Bold BI Enterprise Edition in command line
+## Installing the Bold BI Server in command line
 
-To install the Bold BI Enterprise Edition in silent mode, follow the steps below.
+To install the Bold BI Server in silent mode, follow the steps below.
 
-1.	First, download the `BoldBIEnterpriseEdition.exe` from your [account](https://www.boldbi.com/account/).  
+1.	First, download the `BoldBIServerInstaller_x64.exe` from your [account](https://www.boldbi.com/account/).  
 
-2.  Run the downloaded `BoldBIEnterpriseEdition.exe` by double-clicking it. The installer wizard automatically opens and extracts the package into the `%temp%` folder.
+2.  Run the downloaded `BoldBIServerInstaller_x64.exe` by double-clicking it. The installer wizard automatically opens and extracts the package into the `%temp%` folder.
 
-3.	The file `boldbienterpriseedition`_(version)_(timestamp).exe file will be extracted into the `%temp%` directory.
+3.	The file `boldbiserverinstaller_x64`_(version)_(timestamp).exe file will be extracted into the `%temp%` directory.
 
-4.	Run `%temp%.` The Temp folder will be opened. The `boldbienterpriseedition`(version)(timestamp).exe file will be present in one of the temp folders. The folder name will start as `is`.
+4.	Run `%temp%.` The Temp folder will be opened. The `boldbiserverinstaller_x64`(version)(timestamp).exe file will be present in one of the temp folders. The folder name will start as `is`.
 
     ![Temp-folder](/static/assets/installation-and-deployment/images/temp-folder.png)
 
-5. Copy the extracted `boldbienterpriseedition`_(version)_(timestamp).exe file to any local drive, then exit the Wizard.
+5. Copy the extracted `boldbiserverinstaller_x64`_(version)_(timestamp).exe file to any local drive, then exit the Wizard.
 
-6.	Now, run the windows command prompt in **Administrator** mode and pass the following arguments in the command line to the `Bold BI Enterprise Edition` installer to install it in silent mode.
+6.	Now, run the windows command prompt in **Administrator** mode and pass the following arguments in the command line to the `Bold BI Server` installer to install it in silent mode.
 
       **parameters:**
      ~~~
-    boldbienterpriseedition_(version)_(timestamp).exe /Install Silent /InstallPath:{Location to install} /IISPortNo:{Port_No}/IISSiteName:{siteName} /IsSetFirewall:{true/false} /IsDesktopShortcut:{true/false} /IsStartMenuShortcut:{true/false}  /IsSilentStartUp:{true/false} /JsonFilePath:{Location of the Startup JSON file path}
+    boldbiserverinstaller_x64(version)_(timestamp).exe /Install Silent /InstallPath:{Location to install} /IISPortNo:{Port_No}/IISSiteName:{siteName} /IsSetFirewall:{true/false} /IsDesktopShortcut:{true/false} /IsStartMenuShortcut:{true/false}  /IsSilentStartUp:{true/false} /JsonFilePath:{Location of the Startup JSON file path}
     ~~~
 
-7.	You can install the Bold BI Enterprise Edition installer in three ways.
+7.	You can install the Bold BI Server installer in three ways.
 
      a. [Configuring the application startup details during the installation](#configuring-the-application-startup-details-during-the-installation)
 
@@ -80,7 +80,7 @@ To install Bold BI as a sub-application silently without providing the applicati
 
 **parameters:**
 
-     boldbienterpriseedition_(version)_(timestamp).exe /InstallPath:{Location to install} /DeploymentPath:{Deployment path} /IISSiteName:{siteName} /IISSubAppName:{Sub app name} /IISSubAppDomainName:{Sub app domain name} /IsSetFirewall:{true/false} /IsUpgrade:FALSE /IsDesktopShortcut:{true/false} /IsStartMenuShortcut:{true/false} /IsSilentStartUp:{true/false}
+     boldbiserverinstaller_x64_(version)_(timestamp).exe /InstallPath:{Location to install} /DeploymentPath:{Deployment path} /IISSiteName:{siteName} /IISSubAppName:{Sub app name} /IISSubAppDomainName:{Sub app domain name} /IsSetFirewall:{true/false} /IsUpgrade:FALSE /IsDesktopShortcut:{true/false} /IsStartMenuShortcut:{true/false} /IsSilentStartUp:{true/false}
 
 
 - **IISSiteName** – Name of the site was already present in IIS. BoldBI will hosted as child site of this site.
@@ -99,7 +99,7 @@ If you are hosting the Bold BI over Bold Reports and wants to host in common log
 
 This command is for installing a BoldBI application in a specific environment, where each parameter tailors the installation process to the user's needs. Here's a breakdown of each parameter:
 
-- **boldbienterpriseedition_(version)_(timestamp).exe** – This is the executable file for installing the software. The version and timestamp are dynamically added, which suggests the file has a version number and a timestamp to uniquely identify it for each build.  
+- **boldbiserverinstaller_x64_(version)_(timestamp).exe** – This is the executable file for installing the software. The version and timestamp are dynamically added, which suggests the file has a version number and a timestamp to uniquely identify it for each build.  
 - **/InstallPath:{Location to install}** - Specifies the directory where the application should be installed. Replace {Location to install} with the actual path (e.g., C:\Program Files\My Application). It defines the installation directory for the software.
 - **/IISPortNo:{Port No}** – Sets the port number for IIS (Internet Information Services), a web server on Windows. This parameter assigns a custom port for the web application to run on. Replace {Port No} with the desired port (e.g., 8080).   
 

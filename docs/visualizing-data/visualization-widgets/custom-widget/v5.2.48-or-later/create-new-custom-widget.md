@@ -21,7 +21,7 @@ This section explains the mandatory requirements for developing the custom widge
 <thead>
 <tr>
 <td><b>Development Environment</b></td>
-<td>Bold BI Enterprise Edition and any web browser as mentioned in the <a href="/deploying-bold-bi/overview/#software-requirements">link</a><br/> </td>
+<td>Bold BI Server and any web browser as mentioned in the <a href="/deploying-bold-bi/overview/#software-requirements">link</a><br/> </td>
             
 </tr>
 <tr>
@@ -437,7 +437,7 @@ Below is an example code to configure the `widgetconfig.json` file for the Syncf
 
 ### Adding Dependency Script Files
 
-To add the required dependency script file, visit [Essential JS 1 Custom Script Generator](https://csg.syncfusion.com/) where you can find the custom widget's min files. For example, you can select the `ejSunBurstChart` and download the script file as shown in the below image:
+To add the required dependency script file, visit [Essential JS 1 Custom Script Generator](https://help.boldbi.com/visualizing-data/visualization-widgets/custom-widget/v4.2.68-or-later/) where you can find the custom widget's min files. For example, you can select the `ejSunBurstChart` and download the script file as shown in the below image:
 
 ![SunBurst Custom Script Generator](/static/assets/visualizing-data/visualization-widgets/images/custom-widget/sunburst-script-generator.png)
 

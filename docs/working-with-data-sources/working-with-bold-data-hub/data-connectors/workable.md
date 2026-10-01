@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Workable ETL/Data Hub Connector | Bold BI Learning
-description: Learn how to use the Workable ETL/Bold Data Hub connectors in Bold BI Enterprise Edition. Discover simple steps to integrate data smoothly and make the most of your analytics.
+description: Learn how to use the Workable ETL/Bold Data Hub connectors in Bold BI Server. Discover simple steps to integrate data smoothly and make the most of your analytics.
 platform: bold-bi
 documentation: ug
 
@@ -32,7 +32,7 @@ Workable is an online platform for posting jobs and managing the hiring process.
 
 ### Without Type: Start date
 ```yaml
-version: 1
+version: 1.0.1
 encrypt_credentials: false
 plugins:
   extractors:
@@ -42,17 +42,16 @@ plugins:
         access_token: <ACCESS TOKEN>
         sub_domain: <SUB DOMAIN>
       select:
-       -Table1
-       -Table2
+        - Table1
+        - Table2
       properties:
         since_timestamp: <>
-      
 ```
 
 ### With Type: Start date
 
 ```yaml
-version: 1
+version: 1.0.1
 encrypt_credentials: false
 plugins:
   extractors:
@@ -62,11 +61,10 @@ plugins:
         access_token: <ACCESS TOKEN>
         sub_domain: <SUB DOMAIN>
       select:
-       -Table1
-       -Table2
+        - Table1
+        - Table2
       properties:
         since_timestamp: <>
-      
 ```
 
 ## Configure the Data Hub to connect Workable
@@ -123,9 +121,8 @@ The available resources are supported in Workable
 
 ![Workable - BoldBI](/static/assets/working-with-etl/images/schedule_history.png#max-width=100%)
 
-4. Click on Logs to see if the run is completed and data source is created in Bold BI. 
+4. Click on Logs to see if the run is completed and data source is created in Bold BI.
 
 ![Workable - BoldBI](/static/assets/working-with-etl/images/pipeline_DsCreated.png#max-width=100%)
-
 
 5. Click `Edit DataSource` Option to view the created tables.

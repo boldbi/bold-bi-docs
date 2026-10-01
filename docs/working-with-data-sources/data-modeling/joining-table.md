@@ -13,7 +13,7 @@ Joining tables is necessary when using more than one table in your data source d
 
 ![Join table icon](/static/assets/working-with-datasource/images/clickjointableicon.PNG)
 
-It will become enabled once you drop the second table.
+Once you drag and add the second table, the Join condition pop-up opens. Configure the join condition as shown in the following steps. Once configured, the Join relationship is displayed as a line between the tables, with an icon indicating the configured join type.
 
 ![Join editor icon](/static/assets/working-with-datasource/images/joineditoricon.PNG)
 
@@ -26,6 +26,10 @@ If the subsequent table being dropped has a column that is a foreign key in any 
 In the screenshot above, `LeftTable` shows the list of tables already dropped, while `RightTable` shows the table you recently dropped that needs a relation with a previously dropped table. The drop-down list represents the join condition, and you can add multiple join conditions by clicking the `Add Field` button.
 
 The join type, compare operator, and relational operator used to establish a relationship between two tables can be defined through the options available in the join editor.
+
+After configuring a join, it is displayed as a line between the tables, with an icon indicating the configured join type. 
+
+![New join editor wizard](/static/assets/working-with-datasource/images/icontype.png)
 
 **Join Types**
 
@@ -134,9 +138,10 @@ Additionally, you can create a condition using a constant value instead of selec
 
 To update an existing join condition, select it in the top table and then edit the mapping between columns by interacting with the columns list, join type, and comparison operator.
 
-If you are not in the join editor, you can access it by clicking the highlighted icon below in the data design view.
+If you are not in the join editor, you can access it by clicking the highlighted icon below in the data design view or You can edit the join configuration by double-clicking the line.
 
-![Join editor icon](/static/assets/working-with-datasource/images/joineditoricon.PNG)
+
+![Join editor icon](/static/assets/working-with-datasource/images/joinedit.png)
 
 > **NOTE:**  Updating an existing join condition will allow you to edit the column mapping only between those two tables.
 

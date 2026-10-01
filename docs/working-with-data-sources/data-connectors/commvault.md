@@ -31,7 +31,7 @@ Once you click on the data source, the NEW DATA SOURCE configuration panel will 
 1. Enter a name and description (optional) for the data source.
 2. Enter the **HostName** for the connected account.
 3. Click on the **API Endpoints** down drop box and choose the required endpoint.
-4. Enter a valid REST API endpoint in the URL textbox. Refer to the [Commvault API documentation](https://documentation.commvault.com/v11/essential/rest_api_overview.html) for more details.
+4. Enter a valid REST API endpoint in the URL textbox. Refer to the [Commvault API documentation](https://documentation.commvault.com/v11/software/rest_api_overview.html) for more details.
 5. Click on **Custom Url** to enter the URL manually.
 6. Select the **GET** method for the REST API in the **Method** combo box.
 7. Choose a time interval for the **Refresh Settings** using the combo box, to periodically trigger the REST API request and keep the data in sync with our dashboard.  
@@ -64,7 +64,7 @@ Replace it in the URL to query a particular conversations:
 
 `http://<yourhostname>/SearchSvc/CVWebService.svc/Schedules?clientId=<:client_id>`
 
-For more information on the API endpoints available for this data source, refer to their official [API Documentation](https://documentation.commvault.com/commvault/v11/article?p=45540.htm)
+For more information on the API endpoints available for this data source, refer to their official [API Documentation](https://documentation.commvault.com/v11/software/rest_api_overview.htmlhttps://documentation.commvault.com/v11/software/rest_api_overview.html)
 
 ### Sample queries
 

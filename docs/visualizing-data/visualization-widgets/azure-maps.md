@@ -46,11 +46,11 @@ To obtain `keys`, follow these steps:
 
 8. You will see Primary Key and Secondary Key.
 
-9. Copy the Primary Key to enable Azure Maps in your enterprise application.
+9. Copy the Primary Key to enable Azure Maps in your Server application.
 
-## How to enable Azure Maps in Enterprise
+## How to enable Azure Maps in Server
 
-To enable Azure Maps in your enterprise build, follow these steps:
+To enable Azure Maps in your Server build, follow these steps:
 
 1. Navigate to the dashboards page and click on the settings icon.
 

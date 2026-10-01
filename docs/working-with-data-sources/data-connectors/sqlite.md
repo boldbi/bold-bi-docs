@@ -44,7 +44,7 @@ In this type of connection, the data source is directly fetched from the source.
 
 ![Live Connection](/static/assets/working-with-datasource/data-connectors/images/Sqlite/Sqlite_Live_Connection.png)
 
-> **NOTE:**  In this live mode connection, the given **File Path** location should be the physical location of the machine where the Bold BI On-Premises Enterprise build has been installed.
+> **NOTE:**  In this live mode connection, the given **File Path** location should be the physical location of the machine where the Bold BI On-Premises Server build has been installed.
 
 ### Data Preview
 1. Click **Connect** to connect the SQLite server with the configured details. 

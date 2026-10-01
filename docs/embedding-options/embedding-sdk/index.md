@@ -6,7 +6,7 @@ platform: bold-bi
 documentation: UG
 keywords: Bold BI,embedding,Dashboard
 ---
-# Embedding SDK
+# Embed SDK
 This section explains the different embedding options available in the SDK based Bold BI dashboard.
 
 You can explore the embedding options in detail on this page.
@@ -21,8 +21,8 @@ You can explore the embedding options in detail on this page.
 
 [Anonymous User](/embedding-options/embedding-sdk/anonymous-user/)
 
-[Embedding SDK API Reference](/embedding-options/embedding-sdk/component-api-v2.0/)
+[Embed SDK API Reference](/embedding-options/embedding-sdk/component-api-v2.0/)
 
 [Embedding Scenarios with JavaScript SDK](/embedding-options/embedding-sdk/embed-different-components/)
 
-[Embedded SDK Samples](/embedding-options/embedding-sdk/samples/)
+[Embed SDK Samples](/embedding-options/embedding-sdk/samples/)

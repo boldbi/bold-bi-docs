@@ -1,16 +1,17 @@
 ---
 layout: post
-title: Data Visualization Widgets – Embedded BI | Bold BI Learning
-description: Explore different widgets available in dashboard and know how to configure data to each of them in Bold BI deployed in your server.
+title: Classic Dashboard Widgets Overview | Bold BI Documentation
+description: Explore the Classic widgets available in Bold BI dashboards and learn when to use them, how to configure data, and how to apply widget properties.
 canonical: "/visualizing-data/visualization-widgets/"
 platform: bold-bi
 documentation: ug
-
 ---
 
-# Visualization Widgets
+# Classic Widgets
 
-This section explains how to configure and format the available widgets in Bold BI Enterprise. It also provides information about the various properties in each widget.
+Classic widgets use Bold BI's established visualization architecture and property model. Use them when maintaining existing dashboards that were created with the Classic widget set or when a required visualization is currently available only in the Classic panel.
+
+In the dashboard designer, select the **Classic** tab in the widget panel to view the available Classic widgets. The following pages explain how to bind data and configure the properties of each widget.
 
 You can explore working with the dashboard in detail here:
 

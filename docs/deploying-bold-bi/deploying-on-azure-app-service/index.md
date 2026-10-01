@@ -8,9 +8,9 @@ documentation: ug
 
 # Deploying Bold BI Application on Azure App Service
 
-This section provides instructions on how to deploy our Bold BI Enterprise edition in Azure App Service. It also explains how to upgrade the application to the latest version using the ARM template.
+This section provides instructions on how to deploy our Bold BI Server in Azure App Service. It also explains how to upgrade the application to the latest version using the ARM template.
 
-Here, you can find a detailed explanation of the deployment process for the Enterprise Bold BI in Azure App Service.
+Here, you can find a detailed explanation of the deployment process for the Bold BI Server in Azure App Service.
 
 [Prerequisites](/deploying-bold-bi/deploying-on-azure-app-service/prerequisites/)
 

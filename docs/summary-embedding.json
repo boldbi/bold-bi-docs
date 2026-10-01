@@ -2,12 +2,24 @@
 	"Embedding Options": {
 		"slug": "embedding-options",
 		"pages": {
-			"Embedding SDK": {
+			"Embed SDK": {
 				"slug": "embedding-sdk",
 				"pages": {
 					"Token Generation": "token-generation",
 					"Embed Dashboard": "embed-viewer-dashboard",
 					"Embed Designer": "embed-designer-dashboard",
+					"Embed Components": {
+						"slug": "embed-different-components",
+						"pages": {
+							"Data Source": "embed-datasource",
+							"Create Dashboard": "embed-new-dashboard",
+							"Multi-Tab Dashboard": "embed-multi-tab-dashboard",
+							"AI Assistant": "embed-ai-assistant",
+							"Pinboard": "embed-pinboard",
+							"Embed Widget": "embed-dashboard-widget",
+							"Embed Views": "embed-view"
+						}
+					},
 					"Row Level Security": "row-level-security",
 					"Anonymous User": "anonymous-user",
 					"Retrieve Dashboard Listing": "retrieve-dashboard-listing",
@@ -79,18 +91,6 @@
 							"Authorization Server URL Workflow": "authorization-server-url-work-flow",
 							"Group-Based Authorization": "group-based-authorization",
 							"Enable User Import with Group-Based Authorization": "enabling-user-import-with-group-based-authorization"
-						}
-					},
-					"Embed Components": {
-						"slug": "embed-different-components",
-						"pages": {
-							"Data Source": "embed-datasource",
-							"Create Dashboard": "embed-new-dashboard",
-							"Multi-Tab Dashboard": "embed-multi-tab-dashboard",
-							"AI Assistant": "embed-ai-assistant",
-							"Pinboard": "embed-pinboard",
-							"Dashboard Widget": "embed-dashboard-widget",
-							"Dashboard Views": "embed-view"
 						}
 					},
 					"Component API v1.0": {

@@ -10,13 +10,13 @@ documentation: ug
 
 # Visualizing Widgets
 
-This section explains each available widget and its features in Bold BI Enterprise Edition.
+This section explains each available widget and its features in Bold BI Server.
 
 For details about visualizing widgets, refer to the following pages:
 
-[Visualization Widgets](/visualizing-data/visualization-widgets/)
+[Classic Widgets](/visualizing-data/visualization-widgets/)
 
-[Visualization V2 Widgets](/visualizing-data/visualization-v2-widgets/)
+[Modern Widgets](/visualizing-data/visualization-v2-widgets/)
 
 [Working with Widgets](/visualizing-data/working-with-widgets/)
 

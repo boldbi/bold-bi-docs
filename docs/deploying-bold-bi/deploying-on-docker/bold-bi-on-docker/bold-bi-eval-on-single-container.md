@@ -24,7 +24,7 @@ The Bold BI Evaluation Image is specifically designed to streamline the Bold BI 
 
    ![docker-compose-up](/static/assets/installation-and-deployment/images/docker-compose-up.png)
 
-3. Now, access the Bold BI application by entering the URL as <http://localhost:8085> or <http://host-ip:8085> in the browser. When you open this URL, the application will configure its startup in the background   and   display the license activation page below within a few seconds. You can either activate your license using the available option or try the trial version by selecting the Proceed with 30 Days Trial    option.
+3. Now, access the Bold BI application by entering the URL as `http://localhost:8085` or `http://host-ip:8085` in the browser. When you open this URL, the application will configure its startup in the background   and   display the license activation page below within a few seconds. You can either activate your license using the available option or try the trial version by selecting the Proceed with 30 Days Trial    option.
 
    ![registration-page](/static/assets/installation-and-deployment/images/registration-page-docker.png)
 

@@ -10,18 +10,18 @@ Amazon Redshift is a cloud-based data warehouse from AWS that uses SQL to analyz
 ## Connection Properties
 In a YAML file, the `config` section contains the following properties:
 ```yaml
- connectorname: RedShift
- schemaname: <>
- host: <>
- port: <>
- username: <>
- database: <>
- password: <>
+connectorname: RedShift
+schemaname: <>
+host: <>
+port: <>
+username: <>
+database: <>
+password: <>
 ```
 ### Example Configuration
 ```yaml
 version: 1.0.1
-destination: 
+destination:
 plugins:
   extractors:
     - name: RedShift
@@ -53,12 +53,13 @@ plugins:
   |Parameters |    Description                                          |
 |--------------------------|----------------------------------------------|
 | **Host:**                | Specify the hostname of the Amazon Redshift server.    |
-| **Port:**                | Specify the port number of the Amazon Redshift server (default is 3306). |
+| **Port:**                | Specify the port number of the Amazon Redshift server (default is 5439). |
 | **Username:**            | Provide the username to authenticate with the Amazon Redshift server. |
 | **Password:**            | Provide the password to authenticate with the Amazon Redshift server. |
 | **Database:**            | Specify the name of the Amazon Redshift database from which data will be extracted. |
 | **Schema Name:**         | Specify the Schema name for connecting to Amazon Redshift. |
 | **Select:**            | **Tablename(s):**  Specify the table name list to load tables from the Amazon Redshift server.|
+
   4. Update the details required in the template and Click Save, choose the desired destination to save the pipeline.
   ![Amazon Redshift Hub- BoldBI](/static/assets/working-with-etl/images/Redshift_yaml.png#max-width=100%)
   

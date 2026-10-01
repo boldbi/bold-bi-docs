@@ -72,6 +72,15 @@ Follow the steps below to add users using the CSV template:
 
 	![Import from CSV - Add users into CSV file](/static/assets/multi-tenancy/images/csv-import-add-users.png#max-width=95%)
 
+```csv
+
+Username,Email,Fullname,Password
+abc123,abc123@gmail.com,ABC,Admin@123
+xyz234,xyz234@gmail.com,XYZ,Admin@123
+testuser,testuser@gmail.com,TestUser,Admin@123
+
+```
+
 3. Once the file is uploaded, the user details will be displayed in the grid, as shown in the image below. Click `Import Users` to add the users.
 
 	![Import from CSV - User detail in grid](/static/assets/multi-tenancy/images/csv-import-proceed.png#max-width=95%)

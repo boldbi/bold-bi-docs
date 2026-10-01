@@ -8,9 +8,9 @@ documentation: ug
 
 # Deploying on AWS
 
-This section provides detailed instructions on how to deploy Bold BI Enterprise Edition in AWS resources. It also offers a recommended configuration for your AWS EC2 instances.
+This section provides detailed instructions on how to deploy Bold BI Server in AWS resources. It also offers a recommended configuration for your AWS EC2 instances.
 
-You can explore the deployment of Enterprise BI in AWS in detail here:
+You can explore the deployment of Bold BI Server in AWS in detail here:
 
 [Prerequisites](/deploying-bold-bi/deploying-on-aws/prerequisites-aws-vm/)
 

@@ -1,48 +1,88 @@
 ---
 layout: post
 title: Connecting Bold BI application to Data Sampling feature
-description: This section describes how to enable the data sampling feature for data sources in Bold BI Embedded.
+description: This section describes how to enable and configure the Data Sampling feature for data sources in Bold BI Embedded.
 platform: bold-bi
 documentation: ug
-keywords: isolation, isolation code, isolation filter, row level security, row level
+keywords:  isolation, isolation code, isolation filter, row level security, row level ,data sampling, preview row limit, sampling strategy, accurate, balanced, fast
 ---
 
 # Data Sampling feature in Bold BI
 
-The `Data Sampling` feature in Bold BI will provide a better design experience by limiting the number of records when creating dashboards with millions of data. However, this limitation will not be applied during the preview or publishing of dashboards.
+The **Data Sampling** feature in Bold BI improves the dashboard design experience by limiting the amount of data retrieved while designing dashboards. This helps reduce query execution time and improves responsiveness when working with large datasets.
 
-## Enabling Data sampling in Bold BI:
+Data Sampling is applied **only during dashboard design and data source preview**. When the dashboard is previewed or published, Bold BI automatically retrieves the complete dataset to ensure accurate results.
 
-To enable Data Sampling in Bold BI, please follow these steps:
+## Sampling Strategies
 
-1. Connect to a data source by providing valid credentials.
+| Strategy | Description |
+|----------|-------------|
+| **Accurate** | Applies the configured row limit after all joins, providing the most representative preview data. |
+| **Balanced** | Allows separate row limits to be configured for the selected Primary and Secondary tables, balancing preview accuracy and performance. |
+| **Fast** | Applies the configured row limit to each table before joins, providing the fastest preview performance. |
 
-2. Drag and drop the table inside the query designer page.
+## Enable Data Sampling
 
-3. Click on the `Data sampling` button as shown in the following image.
+To configure Data Sampling in Bold BI, follow these steps:
 
-![Data sampling icon](/static/assets/working-with-datasource/data-sampling/datasamplingicon.png)
- 
-4. The `Data sampling` dialog will be disabled by default.
+1. Connect to a supported data source using valid credentials.
 
-![Data sampling enable](/static/assets/working-with-datasource/data-sampling/enabledatasampling.png)
+2. Drag and drop one or more tables into the Query Designer.
 
-5. Click on the `checkbox` to enable and enter the number of records needed when creating a dashboard.
+3. Click the **Data Sampling** button.
 
-![Data sampling enable](/static/assets/working-with-datasource/data-sampling/enableandapplylimit.png)
+   ![Data Sampling icon](/static/assets/working-with-datasource/data-sampling/datasamplingicon.png)
 
-> **NOTE:** The Data Sampling button will be disabled when switching to the code view mode in Bold BI.
+4. By default, **Enable Data Sampling** is disabled.
 
-6. Select `OK` and click on preview to ensure that `Data Sampling` has been applied to the data source as shown in the following image.
+   ![Enable Data Sampling](/static/assets/working-with-datasource/data-sampling/Enable2.png)
 
-![Data sampling table preview](/static/assets/working-with-datasource/data-sampling/datasampledtablepreview.png)
+5. Select the **Enable Data Sampling** checkbox.
 
-7. Data sources enabled with `Data Sampling` can be identified using the icon as shown in the following image.
+   Once enabled, the following options become available:
 
-![Data sampling enabled](/static/assets/working-with-datasource/data-sampling/datasampleenabledicon.png#width=453px;height=544.9px)
+   - **Preview Row Limit** – Specifies the maximum number of rows retrieved during preview.
+   - **Sampling Strategy** – Select one of the following strategies:
+     - **Accurate**
+     - **Balanced**
+     - **Fast**
 
-8. While designing dashboards in Bold BI, the `Data Sampling` limit will be applied to all widgets.<br/> However, during the preview or publishing of the dashboard, `Data Sampling` will be automatically disabled to ensure data integrity.
+   ![Configure Data Sampling](/static/assets/working-with-datasource/data-sampling/sample.png)
 
-![Data sample dashboard](/static/assets/working-with-datasource/data-sampling/datasampledashboard.png)
+6. Configure the **Preview Row Limit** and choose the appropriate **Sampling Strategy**.
 
-> **NOTE:** Data Sampling is not supported for the following data sources: **SSAS**, **SparkSQL**, **AWS OpenSearch**, **Elasticsearch**,**Influx DB** and **ODBC**.
+   ### Accurate
+
+   Select **Accurate** when you want the preview data to closely represent the final query result. The configured row limit is applied **after all joins** are completed, providing the most representative preview.
+
+   ![Accurate Sampling](/static/assets/working-with-datasource/data-sampling/accurate.png)
+
+   ### Balanced
+
+   Select **Balanced** to balance preview accuracy and performance. Configure separate **Primary Tables** and **Secondary Tables** along with their respective **Row Limits**. The specified row limits are applied before the join operation, reducing the amount of data processed while maintaining a representative preview.
+
+   ![Balanced Sampling](/static/assets/working-with-datasource/data-sampling/enable3.png)
+
+   ### Fast
+
+   Select **Fast** when you need the quickest preview. The configured row limit is applied to **each table before joins**, minimizing the amount of data processed and providing the fastest preview generation.
+
+   ![Fast Sampling](/static/assets/working-with-datasource/data-sampling/sample.png)
+
+7. Click **Apply**, then click **Preview** to verify that Data Sampling has been applied.
+
+   ![Data Sampling Preview](/static/assets/working-with-datasource/data-sampling/maxirow.png)
+
+8. Data sources with Data Sampling enabled are identified using the Data Sampling icon.
+
+   ![Data Sampling Enabled](/static/assets/working-with-datasource/data-sampling/datasampleenabledicon.png#width=453px;height=544.9px)
+
+9. During dashboard design, the configured Data Sampling settings are applied to improve performance. During dashboard preview or publishing, Data Sampling is automatically ignored so that all widgets use the complete dataset.
+
+   ![Dashboard Preview](/static/assets/working-with-datasource/data-sampling/datasampledashboard.png)
+
+> **NOTE:** When **Enable Data Sampling** is unchecked, all Data Sampling settings are disabled and no sampling configuration is applied.
+
+> **NOTE:** The **Data Sampling** button is unavailable when the Query Designer is switched to **Code View**.
+
+> **NOTE:** Data Sampling is not supported for the following data sources: **SSAS**, **SparkSQL**, **AWS OpenSearch**, **Elasticsearch**, **InfluxDB**, and **ODBC**.

@@ -9986,7 +9986,7 @@
                         "type": "array",
                         "description": "Data sources",
                         "items": {
-                            "$ref": "#/components/schemas/ApiDataSources"
+                            "$ref": "#/definitions/ApiDataSources"
                         }
                     }
                 },
@@ -10020,7 +10020,7 @@
           "type": "array",
           "description": "Data sources",
           "items": {
-            "$ref": "#/components/schemas/ApiDataSources"
+            "$ref": "#/definitions/ApiDataSources"
           }
         }
       },
@@ -13264,7 +13264,7 @@
                 "type": "array",
                 "description": "Specifies the group dashboard details.",
                 "items":{
-                    "$ref":"#/components/schemas/GroupsDashboardDetails"
+                    "$ref":"#/definitions/GroupsDashboardDetails"
                 }
             }
         }
@@ -13394,7 +13394,7 @@
               "type": "array",
               "description": "Specifies the details of the tab in a multi-tabbed dashboard.",
               "items": {
-                  "$ref": "#/components/schemas/ApiTabDetail"
+                  "$ref": "#/definitions/ApiTabDetail"
               }
           }
       }
@@ -14138,6 +14138,11 @@
           "type": "object",
           "description": "Details for group import settings.",
           "$ref": "#/definitions/OAuthGroupImportSettings"
+        },
+        "GroupClaim": {
+          "type": "object",
+          "description": "Defines the configuration for mapping group information from the authentication token to tenant site groups during user login. It controls whether group-based assignment is enabled, identifies the token claim containing group names, and determines how existing group memberships are handled.",
+          "$ref": "#/definitions/OAuthGroupClaimSettings"
         }
       }
     },
@@ -14231,6 +14236,11 @@
             "type": "object",
             "description": "Specify the group import settings details.",
             "$ref": "#/definitions/OAuthGroupImportSettings"
+        },
+        "GroupClaim": {
+          "type": "object",
+          "description": "Defines the configuration for mapping group information from the authentication token to tenant site groups during user login. It controls whether group-based assignment is enabled, identifies the token claim containing group names, and determines how existing group memberships are handled.",
+          "$ref": "#/definitions/OAuthGroupClaimSettings"
         }
       }
     },
@@ -14307,6 +14317,23 @@
       }
       }
     },
+    "OpenIDGroupClaimSettings":{
+      "type": "object",
+      "properties": {
+        "EnableGroupClaims": {
+          "type": "boolean",
+          "description": "Specify true if the group claim settings need to be enabled."
+        },
+        "GroupClaimName": {
+          "type": "string",
+          "description": "Specify the claim name from the authentication token that contains the list of group names. If present, these groups will be used to add the user, upon login, to the corresponding tenant groups."
+        },
+        "RemoveExistGroupMapping": {
+          "type": "boolean",
+          "description": "Specify true to remove the user from existing groups and add them to the new groups in the tenant site, as defined by the claim specified in the GroupClaimName property."
+        }
+      }
+    },
     "OAuthGroupImportSettings":{
       "type": "object",
       "properties": {
@@ -14317,6 +14344,23 @@
           "Setting": {
               "type": "object",
               "description": "Group import settings details. Please refer to the link [here](/faq/what-are-the-different-request-object-properties-of-group-imports-setting-for-each-oauth-and-openid-provider-type/) to learn about the details of each provider type's group import settings."
+            }
+      }
+    },
+    "OAuthGroupClaimSettings":{
+      "type": "object",
+      "properties": {
+          "EnableGroupClaims": {
+              "type": "boolean",
+              "description": "Specify true if the group claim settings need to be enabled."
+          },
+          "GroupClaimName": {
+              "type": "string",
+              "description": "Specify the claim name from the authentication token that contains the list of group names. If present, these groups will be used to add the user, upon login, to the corresponding tenant groups."
+            },
+            "RemoveExistGroupMapping": {
+              "type": "boolean",
+              "description": "Specify true to remove the user from existing groups and add them to the new groups in the tenant site, as defined by the claim specified in the GroupClaimName property."
             }
       }
     },
@@ -14371,6 +14415,11 @@
           "type": "object",
           "description": "Details for group import settings.",
           "$ref": "#/definitions/OpenIDGroupImportSettings"
+        },
+        "GroupClaim": {
+          "type": "object",
+          "description": "Defines the configuration for mapping group information from the authentication token to tenant site groups during user login. It controls whether group-based assignment is enabled, identifies the token claim containing group names, and determines how existing group memberships are handled.",
+          "$ref": "#/definitions/OpenIDGroupClaimSettings"
         }
       }
     },
@@ -14431,6 +14480,11 @@
           "type": "object",
           "description": "Specified the groupimportsettings details.",
           "$ref": "#/definitions/OpenIDGroupImportSettings"
+        },
+        "GroupClaim": {
+          "type": "object",
+          "description": "Defines the configuration for mapping group information from the authentication token to tenant site groups during user login. It controls whether group-based assignment is enabled, identifies the token claim containing group names, and determines how existing group memberships are handled.",
+          "$ref": "#/definitions/OpenIDGroupClaimSettings"
         }
       }
     },

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: MongoDB Data Hub Connector with SSH Support | Bold Data Hub
-description: Learn how to use the MongoDB with SSH, Bold Data Hub connectors in Bold BI Enterprise Edition. Discover simple steps to integrate data smoothly and make the most of your analytics.
+description: Learn how to use the MongoDB with SSH, Bold Data Hub connectors in Bold BI Server. Discover simple steps to integrate data smoothly and make the most of your analytics.
 platform: bold-bi
 documentation: ug
 
@@ -28,6 +28,25 @@ The `config` section in a YAML file includes the following properties:
         - tablename
   ```
 
+### Example Configuration
+
+```yaml
+version: 1.0.1
+encrypt_credentials: false
+plugins:
+  extractors:
+    - name: MongoDBSSH
+      connectorname: MongoDBSSH
+      config:
+        connection_url: mongodb://dbuser:passwd@host:port
+        database: databasename
+        ssh_host: ssh_hostname
+        ssh_port: ssh_port
+        ssh_user: ssh_username
+        ssh_private_key_path: privatekey
+      select:
+        - tablename
+```
 
 Here are the typical ways to configure MongoDB and their connection URLs:
 
@@ -35,17 +54,15 @@ Here are the typical ways to configure MongoDB and their connection URLs:
 
 | Name                | Description                                                                           | Connection URL Example                            | SSH Considerations |
 | ------------------- | ------------------------------------------------------------------------------------- | ------------------------------------------------- | ------------------- |
-| Local Installation  | Install on `Windows`, `macOS`, `Linux` using official packages.                      | `mongodb://dbuser:passwd@host.or.ip:27017`        | Not needed if local |
+| Local Installation  | Install on `Windows`, `macOS`, `Linux` using official packages.                      | `mongodb://dbuser:passwd@host.or.ip:27017`      | Not needed if local |
 | Docker              | Deploy using the MongoDB Docker image.                                                | `mongodb://dbuser:passwd@docker.host:27017`      | Use SSH to access a remote Docker host |
 | MongoDB Atlas       | MongoDB’s managed service on AWS, Azure, and Google Cloud.                           | `mongodb+srv://dbuser:passwd@cluster.mongodb.net` | SSH is not required (TLS used) |
 | Managed Cloud       | AWS `DocumentDB`, `Azure Cosmos DB`, and others offer `MongoDB` as a managed database. | `mongodb://dbuser:passwd@managed.cloud:27017`     | Typically accessed via VPC; SSH if required |
-| Configuration Tools | Use `Ansible`, `Chef`, or `Puppet` for automated setup and configuration.             | `mongodb://dbuser:passwd@config.tool:27017`      | SSH may be required for remote execution |
+| Configuration Tools | Use `Ansible`, `Chef`, or `Puppet` for automated setup and configuration.             | `mongodb://dbuser:passwd@config.tool:27017`    | SSH may be required for remote execution |
 | Replica Set         | Set up for high availability with data replication across multiple MongoDB instances. | `mongodb://dbuser:passwd@replica.set:27017`      | SSH needed for secure remote access |
 | Sharded Cluster    | Scalable distribution of datasets across multiple MongoDB instances.                  | `mongodb://dbuser:passwd@shard.cluster:27017`     | SSH needed for secure remote access |
 | Kubernetes          | Deploy on Kubernetes using Helm charts or operators.                                  | `mongodb://dbuser:passwd@k8s.cluster:27017`      | Use `kubectl port-forward` or SSH to cluster nodes |
 | Manual Tarball      | Install directly from the official MongoDB tarball, typically on Linux.               | `mongodb://dbuser:passwd@tarball.host:27017`     | SSH typically required for remote servers |
-
-
 
 
 ## Configure the Bold Data Hub to connect MongoDB via SSH
@@ -83,9 +100,7 @@ Here are the typical ways to configure MongoDB and their connection URLs:
 
   ![MongoDBSSH Data Hub- BoldBI](/static/assets/working-with-etl/images/mongossh_yaml.png#max-width=100%)
   
-  5. Creating a Pipeline in Bold Data Hub automatically creates a Data Source in Bold BI. The Bold BI Data Source is a live data source to the destination database used in Bold Data Hub. For more information on the relationship between Bold Data Hub Pipeline and the associated Data Sources in Bold BI , please refer to [Relationship between Bold Data Hub Pipeline and Associated Data Sources in Bold BI]
-
-(https://help.boldbi.com/working-with-data-sources/working-with-bold-data-hub/relationship-between-bold-data-hub-pipeline-and-associated-data-sources-in-boldbi/)
+  5. Creating a Pipeline in Bold Data Hub automatically creates a Data Source in Bold BI. The Bold BI Data Source is a live data source to the destination database used in Bold Data Hub. For more information on the relationship between Bold Data Hub Pipeline and the associated Data Sources in Bold BI , please refer to [Relationship between Bold Data Hub Pipeline and Associated Data Sources in Bold BI](https://help.boldbi.com/working-with-data-sources/working-with-bold-data-hub/relationship-between-bold-data-hub-pipeline-and-associated-data-sources-in-boldbi/)
 
 ### Schedule Bold Data Hub Job
 
@@ -103,35 +118,13 @@ Here are the typical ways to configure MongoDB and their connection URLs:
 
 ![MongoDBSSH - BoldBI](/static/assets/working-with-etl/images/schedule_history.png#max-width=100%)
 
-4. Click on Logs to see if the run is completed and data source is created in Bold BI. 
+4. Click on Logs to see if the run is completed and data source is created in Bold BI.
 
 ![MongoDBSSH - BoldBI](/static/assets/working-with-etl/images/pipeline_DsCreated.png#max-width=100%)
 
-
 5. Click `Edit DataSource` Option to view the created tables.
 
-**Note:** `isdatapersist` and `previous_intervalmin` are not applicable in mongodb.
-
-
-### Example Configuration
-
-```yaml
-version: 1
-encrypt_credentials: false
-plugins:
-  extractors:
-    - name: MongoDBSSH
-      connectorname: MongoDBSSH
-      config:
-        connection_url: mongodb://dbuser:passwd@host:port
-        database: databasename
-        ssh_host: ssh_hostname
-        ssh_port: ssh_port
-        ssh_user: ssh_username
-        ssh_private_key_path: privatekey
-      select:
-        - tablename
-```
+>**Note:** `isdatapersist` and `previous_intervalmin` are not applicable in mongodb.
 
 ## Related Links
 

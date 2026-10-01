@@ -6,7 +6,7 @@ platform: bold-bi
 documentation: ug
 ---
 
-# Embedding Bold BI Dashboards in Blazor using the Embedded SDK
+# Embedding Bold BI Dashboards in Blazor using the Embed SDK
 
 The sample has been provided in the following sections for `Blazor Server`, which demonstrates the dashboard rendering available on your Bold BI server. It is followed by steps to create a new embedding application in `Blazor Server` on your own. 
 

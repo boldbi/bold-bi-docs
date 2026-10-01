@@ -226,6 +226,7 @@ We have added some limitations(Unsupported features) in uploading dashboards.
   OAuth Data Sources require re-authorization on another site in the edit connection window</br></br>
   Dashboard parameters with Custom query type are not supported</br></br>
   Threshold and Data samplings are not supported</br></br>
+  Dashboard Expressions are not supported in the download and upload flow in Bold BI.</br></br>
   Uploading a dashboard with shared table configured data sources is not supported</br></br>
   Uploading a dashboard containing data sources in both live and extract modes is not supported</br></br>
    </td>

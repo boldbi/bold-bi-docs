@@ -28,21 +28,21 @@ These credentials are typically provided in JSON format. You can copy them direc
 In a YAML file, the `config` section contains the following properties:
 
 ```yaml
- connectorname: IBM Db2
- schemaname: public
- host: hostname
- port: 5000 
- username: user
- password: password
- database: database
- client_lib_path : file_path
+connectorname: IBM Db2
+schemaname: public
+host: hostname
+port: 5000
+username: user
+password: password
+database: database
+client_lib_path: file_path
 ```
 
 ### Example Configuration
 
 ```yaml
 version: 1.0.1
-destination: 
+destination:
 plugins:
   extractors:
     - name: IBM Db2
@@ -50,11 +50,11 @@ plugins:
       schemaname: public
       config:
         host: hostname
-        port: 5000 
+        port: 5000
         username: user
         password: password
         database: database
-		client_lib_path : file_path
+        client_lib_path : file_path
       select:
         - tablename
 ```

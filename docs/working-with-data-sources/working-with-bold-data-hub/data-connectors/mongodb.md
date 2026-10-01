@@ -1,7 +1,7 @@
 ---
 layout: post
 title: MongoDB Data Hub Connector – Embedded BI | Bold BI Learning
-description: Learn how to use the MongoDB Bold Data Hub connectors in Bold BI Enterprise Edition. Discover simple steps to integrate data smoothly and make the most of your analytics.
+description: Learn how to use the MongoDB Bold Data Hub connectors in Bold BI Server. Discover simple steps to integrate data smoothly and make the most of your analytics.
 platform: bold-bi
 documentation: ug
 
@@ -144,7 +144,7 @@ metadata:
 ### Example Configuration
 
 ```yaml
-version: 1
+version: 1.0.1
 encrypt_credentials: false
 plugins:
   extractors:
@@ -159,7 +159,7 @@ plugins:
 
 #### INCREMENTAL
 
-##### UTC FORMAT
+#### UTC FORMAT
 
 ```yaml
 version: 1
@@ -167,7 +167,7 @@ encrypt_credentials: false
 plugins:
   extractors:
     - name: tap_postgres
-      connectorname: PostgreSQL
+      connectorname: MongoDB
       config:
         connection_url: "<connectionurl>"
         database: <databasename>
@@ -187,7 +187,7 @@ plugins:
           timezone: UTC
 ```
 
-##### UNIX FORMAT
+#### UNIX FORMAT
 
 ```yaml
 version: 1
@@ -195,7 +195,7 @@ encrypt_credentials: false
 plugins:
   extractors:
     - name: tap_postgres
-      connectorname: PostgreSQL
+      connectorname: MongoDB
       config:
         connection_url: "<connectionurl>"
         database: <databasename>
@@ -213,19 +213,19 @@ plugins:
           replication_key: last_modified_on
           replication_value: 1689748200
           timezone: UNIX
-          
+
 ```
 
 #### FULL_TABLE
 
-##### UTC FORMAT
+#### UTC FORMAT
 ```yaml
 version: 1
 encrypt_credentials: false
 plugins:
   extractors:
     - name: tap_postgres
-      connectorname: PostgreSQL
+      connectorname: MongoDB
       config:
         connection_url: "<connectionurl>"
         database: <databasename>
@@ -249,7 +249,7 @@ plugins:
           timezone: UTC
 ```
 
-##### UNIX FORMAT
+#### UNIX FORMAT
 
 ```yaml
 version: 1
@@ -257,7 +257,7 @@ encrypt_credentials: false
 plugins:
   extractors:
     - name: tap_postgres
-      connectorname: PostgreSQL
+      connectorname: MongoDB
       config:
         connection_url: "<connectionurl>"
         database: <databasename>

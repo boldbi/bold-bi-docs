@@ -25,6 +25,18 @@ These headers are the pre-flight response:
 * Access-Control-Expose-Headers
 * Access-Control-Max-Age
 
+**Example: Server Response (CORS Headers)**
+```
+
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: https://yourapp.com
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE
+Access-Control-Allow-Headers: Content-Type, Authorization
+Access-Control-Allow-Credentials: true
+Access-Control-Max-Age: 86400
+
+```
+
 Based on the header values, the browser determines whether to send the actual request or not. Otherwise, the browser will throw a CORS error and will not send the actual request.
 
 > **Important:** Bold BI uses CORS for `XMLHttpRequest` or `Fetch` requests to avoid the risks of cross-origin HTTP requests. This will not affect the iFrame-based embedding since this request will be considered as a document request, not an `XMLHttpRequest` or `Fetch` request.

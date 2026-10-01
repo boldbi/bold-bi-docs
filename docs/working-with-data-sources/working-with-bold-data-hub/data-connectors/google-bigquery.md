@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Google BigQuery Data Hub Connector Bold BI Learning
-description: Learn how to use the Google BigQuery Data Hub connectors in Bold BI Enterprise Edition. Discover simple steps to integrate and analyze your BigQuery datasets with ease.
+description: Learn how to use the Google BigQuery Data Hub connectors in Bold BI Server. Discover simple steps to integrate and analyze your BigQuery datasets with ease.
 platform: bold-bi
 documentation: ug
 
@@ -20,6 +20,9 @@ Service account credentials are more suitable for server-to-server interactions.
 To obtain API credentials using a GCP service account, follow these steps:
 
 1. Sign in to [https://console.cloud.google.com](https://console.cloud.google.com).
+
+![Google Bigquery ETL- BoldBI](/static/assets/working-with-etl/images/gcloudconsole.png#max-width=100%)
+
 2. Create a service account if necessary.
 3. Enable the **BigQuery API** (refer to Google documentation for detailed instructions).
 4. Generate credentials:
@@ -48,8 +51,8 @@ To obtain API credentials using a GCP service account, follow these steps:
 The `config` section in a YAML file includes the following properties:
 
 ```yaml
-credentials_path: Path to your service account JSON file  
-project_id: ID of your Google Cloud project  
+credentials_path: Path to your service account JSON file
+project_id: ID of your Google Cloud project
 dataset_id: ID of the dataset in BigQuery
 ```
 
@@ -85,7 +88,7 @@ plugins:
   
    ![Google Bigquery - BoldBI](/static/assets/working-with-etl/images/addpipeline.png#max-width=100%)
   
-  3. Select the newly created pipeline and choose the google Bigquery connector. Double click or Click on Add Template option to add template.
+  3. Select the newly created pipeline and choose the `Google Bigquery` connector. Double click or Click on Add Template option to add template.
 
   ![Google Bigquery - BoldBI](/static/assets/working-with-etl/images/google_bigquery_yaml.png#max-width=100%)
 
@@ -144,9 +147,8 @@ plugins:
 
 ![Google Bigquery - BoldBI](/static/assets/working-with-etl/images/schedule_history.png#max-width=100%)
 
-4. Click on Logs to see if the run is completed and data source is created in Bold BI. 
+4. Click on Logs to see if the run is completed and data source is created in Bold BI.
 
 ![Google Bigquery - BoldBI](/static/assets/working-with-etl/images/pipeline_bigquery_created.png#max-width=100%)
-
 
 5. Click `Edit DataSource` Option to view the created tables.

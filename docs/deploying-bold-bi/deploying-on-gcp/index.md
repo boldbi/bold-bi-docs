@@ -8,9 +8,9 @@ documentation: ug
 
 # Deploying on GCP
 
-This section provides detailed instructions on how to deploy Bold BI Enterprise Edition in GCP resources. It also offers a recommended configuration for your GCP instances.
+This section provides detailed instructions on how to deploy Bold BI Server in GCP resources. It also offers a recommended configuration for your GCP instances.
 
-You can explore the deployment of Enterprise BI in GCP in detail here:
+You can explore the deployment of Bold BI Server in GCP in detail here:
 
 [Prerequisites](/deploying-bold-bi/deploying-on-gcp/prerequisites-gcp-vm/)
 

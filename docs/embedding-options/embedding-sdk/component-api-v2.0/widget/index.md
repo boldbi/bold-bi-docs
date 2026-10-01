@@ -7,7 +7,7 @@ documentation: ug
 keywords: Bold BI, embedding, Widget
 ---
 
-# Bold BI Embedding SDK for Widget
+# Bold BI Embed SDK for Widget
 
 The Bold BI Embed SDK enables you to visualize a specific widget from a dashboard published on your Bold BI server by including the **server URL**, **Widget ID**, **dashboard ID**, and **embed token** in your application.  
 
