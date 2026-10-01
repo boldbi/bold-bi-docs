@@ -6,7 +6,7 @@ platform: bold-bi
 documentation: ug
 ---
 
-# Bold BI Dashboards embedding in React with Node.js using Embedded SDK
+# Bold BI Dashboards embedding in React with Node.js using Embed SDK
 
 A GitHub link has been provided to [get](https://github.com/boldbi/react-with-nodejs-sample/tree/master) the sample application, which demonstrates the dashboard rendering in your Bold BI server and followed by steps to create a new embedding application in `React` with `Node.js` on your own.  
 

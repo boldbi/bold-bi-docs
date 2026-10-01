@@ -21,6 +21,7 @@ The Bold BI supports the following data connection types such that the structure
 | [Amazon RDS](https://help.boldbi.com/working-with-data-sources/data-connectors/amazon-rds/) | Amazon RDS makes it easy to set up, operate, and scale a relational database in the AWS Cloud. |
 | [Amazon Redshift](https://help.boldbi.com/working-with-data-sources/data-connectors/amazon-redshift/) | Amazon Redshift is a fast, scalable data warehouse that makes it simple and cost-effective to analyze large datasets. |
 | [Azure Data Explorer](https://help.boldbi.com/working-with-data-sources/data-connectors/azure-data-explorer/) | Azure Data Explorer is a fast, fully managed data analytics service for real-time analysis on large volumes of data. |
+| [Azure Databricks](https://help.boldbi.com/working-with-data-sources/data-connectors/azure-databricks/) | Azure Databricks is a unified analytics platform for data engineering, machine learning, and AI workloads.|
 | [Azure Synapse Analytics](https://help.boldbi.com/working-with-data-sources/data-connectors/azure-synapse-analytics/) | Azure Synapse Analytics is a cloud-based enterprise data warehouse service from Microsoft. |
 | [CDATA](https://help.boldbi.com/working-with-data-sources/data-connectors/cdata/) | CDATA is a distributed, highly-scalable SQL database that can run anywhere. |
 | [Google Cloud SQL](https://help.boldbi.com/working-with-data-sources/data-connectors/google-cloud-sql/) | Google Cloud SQL is a managed database service that helps you set up, maintain, manage, and administer your relational databases. |

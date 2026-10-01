@@ -6,7 +6,7 @@ platform: bold-bi
 documentation: ug
 ---
 
-# Dashboard Themes Using CSS3 variables in Bold BI Enterprise edition
+# Dashboard Themes Using CSS3 variables in Bold BI Server
 
 The theme feature allows you to customize the appearance of the Bold BI Application. Switch the application’s theme from light to dark mode and vice versa under the `Look and Feel Settings`.
 

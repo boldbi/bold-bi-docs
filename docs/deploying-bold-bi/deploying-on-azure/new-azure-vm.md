@@ -10,16 +10,16 @@ documentation: ug
 This section explains how to use Bold BI in the Azure portal to select and create the Bold BI Server virtual machine.
 
 ## Pre-configured image via Azure Marketplace
-One of the fastest ways to get Bold BI Server up and running in Azure is based on the pre-configured server image through the Azure [Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/syncfusion.bold-bi-enterprise-multi-tenant). 
+One of the fastest ways to get Bold BI Server up and running in Azure is based on the pre-configured server image through the Azure [Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/syncfusion.bold-bi-server-multi-tenant). 
 
 * Sign in to the [Azure portal](https://portal.azure.com/).
 * Click the `Create a resource` option in the upper left side.
 
     ![New resource in Azure portal](/static/assets/installation-and-deployment/images/portal-new.png)
-* Search for “Bold BI Enterprise”.
+* Search for “Bold BI Server.
 
     ![Search Bold BI server in Azure portal](/static/assets/installation-and-deployment/images/portal-search.png)
-* Select the Bold BI Enterprise - Multi-tenant and click the `Create` button.
+* Select the Bold BI Server - Multi-tenant and click the `Create` button.
 
     ![Click on Create button](/static/assets/installation-and-deployment/images/click-create.png)
 
@@ -74,13 +74,13 @@ The settings blade requests storage and network options. You can accept the defa
 When all the changes are completed, click the `Review and Create` button.
 
 ## Review and create
-* On the review and create page, click `Create` to start the Bold BI Enterprise - Multi-tenant server virtual machine deployment.
+* On the review and create page, click `Create` to start the Bold BI Server - Multi-tenant server virtual machine deployment.
 
     ![Bold BI Server VM details validation](/static/assets/installation-and-deployment/images/vm-detail.png)
 
     ![Deploying Bold BI Server](/static/assets/installation-and-deployment/images/vm-deploy.png)
 
-## Connect to Bold BI Enterprise Multi-tenant Server virtual machine
+## Connect to Bold BI Server Multi-tenant Server virtual machine
 
 Once the deployment progress is completed, Bold BI Server VM can be connected through a Remote Desktop Connection (RDP).
 Follow the below steps to connect to the virtual machine:

@@ -46,12 +46,6 @@ documentation: ug
         sudo apt-get install -y python3
         ~~~
 
-        **Ubuntu Version:20.04** :
-
-        ~~~shell
-        sudo apt update && sudo apt install wget software-properties-common && sudo add-apt-repository ppa:deadsnakes/ppa && sudo apt update && sudo apt install python3.9
-        ~~~
-    
     * Install pip dependency packages for ETL service by running the following command:
         ~~~shell
         sudo apt-get install python3-pip && sudo pip install duckdb===1.1.2 dlt===0.5.4 pymysql sqlalchemy pyodbc pg8000 poetry pandas===2.2.2 pymongo "dlt[parquet]" "dlt[filesystem]"
@@ -79,10 +73,10 @@ documentation: ug
     sudo unzip {Bold BI Linux package zip file}
     ~~~ 
 
-4. Change the directory to `BoldBIEnterpriseEdition-Linux` by running the following command:
+4. Change the directory to `BoldBIServer-Linux` by running the following command:
 
     ~~~shell
-    cd BoldBIEnterpriseEdition-Linux
+    cd BoldBIServer-Linux
     ~~~ 
  
 5. Execute the following command to deploy Bold BI on your Linux machine based on the type of host URL you are using for deployment:

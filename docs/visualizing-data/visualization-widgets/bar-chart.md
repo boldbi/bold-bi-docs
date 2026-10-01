@@ -389,6 +389,20 @@ When this support is enabled, the thumb size of the chart scroll bar will be cal
 
 This option allows you to set the number of records that need to be fetched on initial load.
 
+#### Invert Scroll
+
+This option controls the direction of the scroll bar in the chart.
+By default, the Invert Scroll option is disabled, and the scroll bar behaves in the standard direction.
+
+**When Enabled**
+
+The scroll bar direction is reversed.
+For example, in bar charts, the scroll bar moves from top to bottom instead of the default bottom to top direction.
+
+**When Disabled**
+
+The scroll bar follows the default scrolling direction.
+
 ### Tooltip Settings
 
 The Tooltip Settings section allows you to customize the appearance and behavior of tooltips in widget visualizations.

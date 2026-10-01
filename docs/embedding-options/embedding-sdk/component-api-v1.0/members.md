@@ -2760,7 +2760,7 @@ This member needs to be set as true when directly referring to the theme file in
 **Example** 
 ```js
  <head>  
-     <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v15.2.6/boldbi-embed.js"></script>
+     <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v16.3.5/boldbi-embed.js"></script>
      <link rel="stylesheet" href="/path/to/theme/file/darkviolet.css">
 </head>
 

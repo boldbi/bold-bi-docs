@@ -37,9 +37,9 @@ To obtain `keys`, follow these steps:
 
 ![Bing Maps Keys List](/static/assets/visualizing-data/visualization-widgets/images/bing-maps/bing-mapkeylist.png)
 
-## How to enable Bing Maps by configuring the web config file in Enterprise
+## How to enable Bing Maps by configuring the web config file in Server
 
-To enable Bing Maps in your enterprise build, follow these steps:
+To enable Bing Maps in your Server build, follow these steps:
 
 ### Bold BI version 6.19.14 or later
 
@@ -75,7 +75,7 @@ After completing the above changes, To learn [how to restart the Bold BI](https:
 
 ### Bold BI version 4.2.68 or later
 
-Open the mentioned file in your enterprise build location,
+Open the mentioned file in your Server build location,
  [`Installed_Directory`\ BoldServices\app_data\configuration\config.xml]
 
 Set `<widget><BingMap><Enable>` key value as true.
@@ -88,7 +88,7 @@ Set your Bing Maps Key in the `<key>` field in `config.xml`.
 
 ### Bold BI version 4.1.36 or later
 
-Open the below mentioned file in your enterprise build location,
+Open the below mentioned file in your Server build location,
 
 [`Installed_Directory` \BoldServices\bi\dataservice\appsettings.json].
 
@@ -100,7 +100,7 @@ Then, launch your build and you will find Bing Maps in the design panel.
 
 ### Bold BI version below 4.1.36
 
-1.  Open the following file in your enterprise build location,
+1.  Open the following file in your Server build location,
 
 [`Installed_Directory`\ Bold BI\Dashboard Designer\Web.config]
 

@@ -15,7 +15,7 @@ To create a custom connector, you need to prepare a JSON file and upload it to B
 
 ## Configuring Custom connector 
 
-This section explains how to configure a custom connector using a [JSON file](/working-with-data-sources/custom-connector/create-custom-connector/) in Bold BI enterprises.
+This section explains how to configure a custom connector using a [JSON file](/working-with-data-sources/custom-connector/create-custom-connector/) in Bold BI Server.
 
   [Add](#add-custom-connector)
   

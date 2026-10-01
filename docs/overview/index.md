@@ -15,7 +15,7 @@ The platform uses a modern data architecture model and includes inbuilt capabili
 
 Bold BI also offers [**flexible deployment options**](/deploying-bold-bi/). You can use the Syncfusion Cloud Managed service, or deploy Bold BI in your own cloud environment or on-premises servers.
 
-Whichever deployment you choose, integration is supported through two methods: [**JavaScript Embedding**](/embedding-options/embedding-sdk/) and [**iframe Embedding**](/embedding-options/iframe-embedding/). JavaScript Embedding is recommended for website integration and is delivered through the [**Embedded SDK APIs**](/embedding-options/embedding-sdk/component-api-v2.0/). This method supports a consistent user experience for embedded analytics.
+Whichever deployment you choose, integration is supported through two methods: [**JavaScript Embedding**](/embedding-options/embedding-sdk/) and [**iframe Embedding**](/embedding-options/iframe-embedding/). JavaScript Embedding is recommended for website integration and is delivered through the [**Embed SDK APIs**](/embedding-options/embedding-sdk/component-api-v2.0/). This method supports a consistent user experience for embedded analytics.
 
 ## Bold BI: Designed for Everyone
 
@@ -83,7 +83,7 @@ Bold BI supports self-service and embedded analytics for teams across industries
 
 ### Seamless Embedding & API Integration
 
-- [**Embedded Analytics SDK**](/embedding-options/embedding-sdk/) - Integrate dashboards into applications using [**iframe**](/embedding-options/iframe-embedding/), [**JavaScript**](/embedding-options/embedding-sdk/token-generation/), or [**full server-side embedding**](). Use the SDK to embed dashboard designers, viewers, or specific widgets into applications built with [**Angular**](/embedding-options/embedding-sdk/samples/angular-with-core/), [**React**](/embedding-options/embedding-sdk/samples/react-core/), [**.NET Core**](/embedding-options/embedding-sdk/samples/asp-net-core/), and other [popular frameworks](/embedding-options/embedding-sdk/samples/).
+- [**Embed SDK**](/embedding-options/embedding-sdk/) - Integrate dashboards into applications using [**iframe**](/embedding-options/iframe-embedding/), [**JavaScript**](/embedding-options/embedding-sdk/token-generation/), or [**full server-side embedding**](). Use the SDK to embed dashboard designers, viewers, or specific widgets into applications built with [**Angular**](/embedding-options/embedding-sdk/samples/angular-with-core/), [**React**](/embedding-options/embedding-sdk/samples/react-core/), [**.NET Core**](/embedding-options/embedding-sdk/samples/asp-net-core/), and other [popular frameworks](/embedding-options/embedding-sdk/samples/).
 
 - [**Powerful API Integration**](/server-api-reference/interact-with-rest-api/) - Use APIs, SDKs, and code samples for application integration.
 

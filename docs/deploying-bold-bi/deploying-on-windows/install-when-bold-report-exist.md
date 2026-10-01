@@ -8,25 +8,25 @@ documentation: ug
 
 # Install Bold BI when Bold Reports exists
 
-This section explains how to install and deploy Bold BI Enterprise Edition when Bold Reports is already installed on the same machine.
+This section explains how to install and deploy Bold BI Server when Bold Reports is already installed on the same machine.
 
 ## Installation
 
-This topic explains the steps required to install Bold BI Enterprise:
+This topic explains the steps required to install Bold BI Server:
 
-1. Run the Bold BI Enterprise Installer. 
+1. Run the Bold BI Server Installer. 
     
     ![Installer Prompt](/static/assets/installation-and-deployment/images/boldbi-enterprise-installer.png)
 
-2. You can check the License Agreement of the Bold BI Enterprise edition by clicking the `License Terms and Conditions` and clicking `Next`.
+2. You can check the License Agreement of the Bold BI Server by clicking the `License Terms and Conditions` and clicking `Next`.
     
     ![Installation Prompt](/static/assets/installation-and-deployment/images/installation-prompt.png) 
 
-3. Then a prompt will appear to proceed whether you are going to use the existing Bold ID for Bold BI Enterprise Edition.
+3. Then a prompt will appear to proceed whether you are going to use the existing Bold ID for Bold BI Server.
     
     ![Bold ID prompt](/static/assets/installation-and-deployment/images/boldid-prompt.png)
     
-    If you select `No` to proceed the installation without common login, then Bold BI Enterprise installation will be cancelled.
+    If you select `No` to proceed the installation without common login, then Bold BI Server installation will be cancelled.
     
     ![Cancel prompt](/static/assets/installation-and-deployment/images/canceled-prompt.png)
     
@@ -50,7 +50,7 @@ This topic explains the steps required to install Bold BI Enterprise:
    
     ![Installation ClientLibraries](/static/assets/installation-and-deployment/images/installation-clientlibraries.png)
    
-    > **IMPORTANT:** Bold BI Enterprise edition uses client libraries such as Oracle, PostgreSQL, MySQL, and MongoDB to connect with their respective SQL database variants. Check the license of each library to give consent for installation. Only the selected client libraries installed.
+    > **IMPORTANT:** Bold BI Server uses client libraries such as Oracle, PostgreSQL, MySQL, and MongoDB to connect with their respective SQL database variants. Check the license of each library to give consent for installation. Only the selected client libraries installed.
 
 6. Once the installation is complete, you can launch the application by clicking `Launch Application` and set up your Bold BI site.
     

@@ -6,7 +6,7 @@ platform: bold-bi
 documentation: ug
 ---
 
-# Bold BI Dashboards embedding in React with Python using Embedded SDK
+# Bold BI Dashboards embedding in React with Python using Embed SDK
 
 A GitHub link has been provided to [get](https://github.com/boldbi/react-with-python) the sample application,  which demonstrates the rendering of a single dashboard and a list of dashboards in your Bold BI server and followed by steps to create a new embedding application in `React` with `Python` on your own.
 

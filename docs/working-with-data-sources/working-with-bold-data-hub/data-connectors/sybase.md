@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sybase Connector – Bold Data Hub Embedded Learning
-description: Learn how to connect and use the Sybase data connector in Bold BI Enterprise Edition. Follow simple steps to integrate your Sybase data seamlessly and unlock powerful dashboards and visualizations from your enterprise database.
+description: Learn how to connect and use the Sybase data connector in Bold BI Server. Follow simple steps to integrate your Sybase data seamlessly and unlock powerful dashboards and visualizations from your Server database.
 platform: bold-bi
 documentation: ug
 ---
@@ -40,15 +40,24 @@ password: <>
 
 ```yaml
 version: 1.0.1
-destination: 
+encrypt_credentials: false
+direct_target_import: false
+union_all_tables: true
+add_dbname_column: false
+direct_load_to_destination: true
+use_snake_casing: true
+set_not_null_as_primary_key: false
 plugins:
   extractors:
     - name: Sybase
       connectorname: Sybase
+      schemaname:
       config:
         dsn: <>
         username: <>
         password: <>
+      properties:
+      metadata:
       select:
         - tablename
 ```
@@ -71,7 +80,7 @@ plugins:
 | **Username:**                |  Provide the username to authenticate with the Sybase server.    |
 | **Password:**            | 	Provide the password associated with the Sybase username. |
 | **DSN Name:**            | Specify the ODBC Data Source Name configured for the Sybase database |
-|    **Select:**     |                                  **Tablename(s):**       Specify the list of tables to load data from the Sybase server.|
+| **Select:**     |           **Tablename(s):**    Specify the list of tables to load data from the Sybase server.|
 
   ![Sybase - BoldBI](/static/assets/working-with-etl/images/Sybase_final_template.png#max-width=100%)
 
@@ -99,8 +108,8 @@ plugins:
 
 ![Sybase - BoldBI](/static/assets/working-with-etl/images/schedule_history.png#max-width=100%)
 
-4. Click on Logs to see if the run is completed and data source is created in Bold BI. 
+4. Click on Logs to see if the run is completed and data source is created in Bold BI.
 
-![Sybase - BoldBI](/static/assets/working-with-etl/images/pipeline_DScreated.png#max-width=100%)
+![Sybase - BoldBI](/static/assets/working-with-etl/images/pipeline_DsCreated.png#max-width=100%)
 
 5. Click `Edit DataSource` Option to view the created tables.

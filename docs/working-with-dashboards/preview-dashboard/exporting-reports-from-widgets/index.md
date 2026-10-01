@@ -9,7 +9,7 @@ documentation: ug
 
 # Exporting Widgets
 
-This section explains how to export widgets in various formats within the Bold BI Enterprise.
+This section explains how to export widgets in various formats within the Bold BI Server.
 
 You can explore the details of widget exporting here:
 

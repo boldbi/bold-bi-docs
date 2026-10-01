@@ -18,70 +18,70 @@ The primary objective of the Bold Data Hub application is to facilitate the extr
 
 
 ## Python Requirement for ETL Server
-For Windows OS, Python 3.11 is required to run ETL scripts in Bold BI or Bold Reports Data Hub.
+For Windows OS, Python 3.13 is required to run ETL scripts in Bold BI or Bold Reports Data Hub.
 You may use either:
 
-   - A system-wide Python 3.11 installation, or
+   - A system-wide Python 3.13 installation, or
 
-   - A Python 3.11 Virtual Environment (venv) created specifically for ETL
+   - A Python 3.13 Virtual Environment (venv) created specifically for ETL
 
-If Python 3.11 is already installed (either globally or inside a venv), you must specify the correct Python path in: ``{Drive}:\BoldServices\etl\etlservice\appsettings.json``
+If Python 3.13 is already installed (either globally or inside a venv), you must specify the correct Python path in: ``{Drive}:\BoldServices\etl\etlservice\appsettings.json``
 
 
-1. Using System-Wide Python 3.11
+1. Using System-Wide Python 3.13
 
 If you installed Python normally on Windows:
-```
-"PythonPath": "<Drive>:\\BoldServices\\Python311"
+```json
+"PythonPath": "<Drive>:\\BoldServices\\Python313"
 ```
 
-2. Using Python 3.11 with Virtual Environment (venv)
+2. Using Python 3.13 with Virtual Environment (venv)
 If you prefer to use a dedicated venv environment:
 
-```
+```json
 "isVirtualEnvironmentAdded": true
-"PythonPath": "C:\\BoldServices\\Python311Env\\Scripts"
+"PythonPath": "C:\\BoldServices\\Python313Env\\Scripts"
 ```
 
 #### Manually Creating a Python Virtual Environment on Windows
 
-1. Ensure **Python** is Installed **Python 3.11 (64-bit)** and ensure **Add Python to PATH** is selected.
+1. Ensure **Python** is Installed **Python 3.13 (64-bit)** and ensure **Add Python to PATH** is selected.
 2. Create a directory:
    ```
-   C:\BoldServices\Python311Env
+   C:\BoldServices\Python313Env
    ```
 3. Create the virtual environment:
    ```bash
-   python -m venv C:\BoldServices\Python311Env
+   python -m venv C:\BoldServices\Python313Env
    ```
 4. Verify:
    ```
-   C:\BoldServices\Python311Env\Scripts\python.exe
+   C:\BoldServices\Python313Env\Scripts\python.exe
    ```
 4. Update `appsettings.json`:
    ```json
    "isVirtualEnvironmentAdded": true,
-   "PythonPath": "C:\\BoldServices\\Python311Env\\Scripts"
+   "PythonPath": "C:\\BoldServices\\Python313Env\\Scripts"
    ```
 ---
 
-#### Using Python 3.11 with Virtual Environment (venv) on Linux
+#### Using Python 3.13 with Virtual Environment (venv) on Linux
 
 1. Create the virtual environment:
    ```bash
    sudo apt update
    sudo apt install -y python3 python3-venv python3-pip
-   python3 -m venv /var/www/bold-services/python311env
+   python3 -m venv /var/www/bold-services/python313env
 
    ```
 2. Verify:
    ```bash
-   /var/www/bold-services/python311env/bin/python --version
+   /var/www/bold-services/python313env/bin/python --version
    ```
 3. Update `appsettings.json`:
    ```json
    "isVirtualEnvironmentAdded": true,
-   "PythonPath": "/var/www/bold-services/python311env/bin"
+   "PythonPath": "/var/www/bold-services/python313env/bin"
    ```
 
 ---

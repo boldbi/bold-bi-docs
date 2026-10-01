@@ -33,7 +33,7 @@ Before integrating Azure AD B2C with Bold BI, ensure the [Configure Azure AD B2C
 
     <tr>
     <td>Application Id</td>
-    <td>A unique identifier for the Enterprise BI web application registered in Azure AD B2C.</td>
+    <td>A unique identifier for the Bold BI Server web application registered in Azure AD B2C.</td>
     </tr>
 
     <tr>

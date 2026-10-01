@@ -6,7 +6,7 @@ platform: bold-bi
 documentation: ug
 ---
 
-# Upgrade to latest Bold BI Enterprise Edition latest version
+# Upgrade to latest Bold BI Server latest version
 
 To upgrade the Bold BI Server VM to the latest source from older versions, follow these steps:
 

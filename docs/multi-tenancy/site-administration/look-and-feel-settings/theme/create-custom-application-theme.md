@@ -20,6 +20,15 @@ The value represents the hexadecimal representation of the color code that you w
 
 ![CSS3 variable](/static/assets/multi-tenancy/images/look-and-feel/css-variable.png)
 
+```css3
+
+--primary-branding-color: #1ab394;
+--primary-branding-border-color: var (--primary-branding-color); 
+--primary-text-normal-color: #333333;
+--primary-text-hover-color: var (--primary-text-normal-color);
+
+```
+
 ### **Points to be noted while editing and uploading custom theme file.**
 
 * To avoid errors in the color assignment, please check this [online color picker tool](https://www.google.com/search?si=AC1wQDAoyjQYg3jwXlqSN_ppczo9wBVbeISr-8vCGaPybowwliJXfryD9GkUWlNo3uTq29yH5Z2Khp5AXSpKSRTZXtkDq1HDAQ%3D%3D&hl=en-IN&kgs=4b27e3cf717a5fe4&shndl=21&source=sh/x/fbx/1&entrypoint=sh/x/fbx&fbxst=CgkKByM2ZTZhNjA) to get the hex value for the color you wish to use in the template file.
@@ -162,6 +171,54 @@ You can customize the **primary button**, **secondary button**, and **link butto
 Once you customize the template file with advanced customization, it will resemble the image shown below.
 
 ![Customized template file](/static/assets/multi-tenancy/images/look-and-feel/customize-template-file.png)
+
+```css3
+
+:root {
+    --primary-branding-color: #9c63ff;
+    --primary-branding-border-color: var (--primary-branding-color);
+    --primary-text-normal-color: #ffffff;
+    --primary-text-hover-color: #eeeeee;
+    --secondary-text-normal-color: var (--grey-700);
+    --hyper-link-normal-color: #9c63ff;
+    --hyper-link-hover-color: #9c63ff;
+    --primary-btn-bg-normal-color: #9c63ff;
+    --primary-btn-bg-hover-color: #9c63ff99;
+    --primary-btn-bg-disable-color: #333842;
+    --primary-btn-border-normal-color: var (--primary-btn-bg-normal-color);
+    --primary-btn-border-disable-color: #56546a;
+    --primary-btn-text-normal-color: #fff;
+    --primary-btn-text-hover-color: #fff;
+    --primary-btn-text-disable-color: #7b828e;
+    --secondary-btn-bg-normal-color: #303038;
+    --secondary-btn-bg-hover-color: #393943;
+    --secondary-btn-bg-disable-color: #333842;
+    --secondary-btn-border-normal-color: #9e9ec54d;
+    --secondary-btn-border-disable-color: #56546a;
+    --secondary-btn-text-normal-color: #fff;
+    --secondary-btn-text-hover-color: #fff;
+    --secondary-btn-text-disable-color: #7b828e;
+    --link-btn-bg-normal-color: #222733;
+    --link-btn-bg-hover-color: #9c63ff;
+    --link-btn-text-normal-color: #fff;
+    --link-btn-text-hover-color: #fff;
+    --link-btn-border-normal-color: #9c63ff;
+    --link-btn-border-hover-color: #9c63ff;
+    --hover-bg-normal-color: #414152;
+    --active-bg-normal-color: #9c63ff75;
+    --active-text-normal-color: #ffffff;
+    --nav-menu-main-color: #9c63££;
+    --nav-menu-bg-normal-color: #4C545F;
+    --nav-menu-bg-hover-color: #0000001a;
+    --nav-menu-bg-active-color: #cccccc;
+    --nav-menu-pri-text-normal-color: #cccccc;
+    --nav-menu-pri-text-hover-color: #ffffff;
+    --nav-menu-pri-text-active-color: #9c63££; 
+    --nav-menu-hyper-link-normal-color: #9c63ff;
+    --nav-menu-hyper-link-hover-color: #ffffff;
+}
+
+```
 
 <div style = "display:none">
 ![Branding color](/static/assets/multi-tenancy/images/look-and-feel/branding-color-images.png)

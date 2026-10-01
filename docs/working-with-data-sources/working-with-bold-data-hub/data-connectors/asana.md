@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Complete Guide to Asana Data Integration in Bold BI
-description: Learn how to use the Asana Data Hub connector in Bold BI Enterprise Edition. Discover simple steps to connect your Asana projects and tasks for seamless tracking and analysis.
+description: Learn how to use the Asana Data Hub connector in Bold BI Server. Discover simple steps to connect your Asana projects and tasks for seamless tracking and analysis.
 platform: bold-bi
 documentation: ug
 ---
@@ -14,6 +14,9 @@ Asana is a work management tool that helps teams plan, organize, and track their
 ### Grab Access Token
 To generate a Personal Access Token in Asana:
 1. Go to https://app.asana.com/0/developer-console.
+
+![Asana - BoldBI](/static/assets/working-with-etl/images/asana.png#max-width=100%)
+
 2. Click "+ New Access Token".
 3. Provide a name (e.g., "Bold BI Integration") and Click Create Token
 4. Copy and securely save the token. Use this value for access_token in your YAML
@@ -46,6 +49,7 @@ The `config` section in a YAML file includes the following properties:
  workspace_id: <your_workspace_id>
  project_id: <optional_project_id>
  task_id: <optional_task_id>
+ opt_fields: <optional_fields>
 ```
 
 
@@ -66,6 +70,7 @@ plugins:
         workspace_id: your-workspace-id
         project_id: your-project-id
         task_id: your-task-id
+        opt_fields: id, name, completed, due_date
       properties:
           metadata:
       select:
@@ -94,6 +99,7 @@ plugins:
 | **Workspace ID:**                 | Specify the workspace ID in Asana where your project is located. |
 | **Project ID:**             |(Optional) Provide the specific project ID within the workspace whose tasks and sections you want to access. |
 | **Task  ID:**             |(Optional) Specify a particular task ID if you want to fetch data for a stories. |
+| **Opt Fields:**             |(Optional) Specify the comma-separated list of fields you want to retrieve from Asana. Only the fields mentioned in this parameter will be displayed in the result. If not specified, all available fields will be retrieved. |
 | **Select:**                  |    **Tablename(s):**         Provide one object. Valid values are: projects, tasks, sections, stories, tags, teams, users. |
   
  
@@ -107,10 +113,10 @@ plugins:
   
   7. Creating a Pipeline in Bold Data Hub automatically creates a Data Source in Bold BI. The Bold BI Data Source is a live data source to the destination database used in Bold Data Hub. For more information on the relationship between Bold Data Hub Pipeline and the associated Data Sources in Bold BI , please refer to [Relationship between Bold Data Hub Pipeline and Associated Data Sources in Bold BI](https://help.boldbi.com/working-with-data-sources/working-with-bold-data-hub/relationship-between-bold-data-hub-pipeline-and-associated-data-sources-in-boldbi/).
 
-   ![Asana - BoldBI](/static/assets/working-with-etl/images/pipeline_DScreated.png#max-width=100%)
+   ![Asana - BoldBI](/static/assets/working-with-etl/images/pipeline_DsCreated.png#max-width=100%)
 
 >**Note:**
-  For tasks and sections projectID is required. 
+  For tasks and sections projectID is required.
   For stories taskID is required.
 
 ### Schedule Data Hub Job
@@ -129,9 +135,8 @@ plugins:
 
 ![Asana - BoldBI](/static/assets/working-with-etl/images/schedule_history.png#max-width=100%)
 
-4. Click on Logs to see if the run is completed and data source is created in Bold BI. 
+4. Click on Logs to see if the run is completed and data source is created in Bold BI.
 
 ![Asana - BoldBI](/static/assets/working-with-etl/images/pipeline_bigquery_created.png#max-width=100%)
-
 
 5. Click `Edit DataSource` Option to view the created tables.

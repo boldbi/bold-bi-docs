@@ -7,7 +7,7 @@ documentation: ug
 keywords: Bold BI, embedding, Dashboard
 ---
 
-# Bold BI Embedding SDK for Viewer
+# Bold BI Embed SDK for Viewer
 
 The Bold BI Embed SDK allows you to seamlessly integrate and visualize dashboards published on your Bold BI server within your web applications. By specifying the **server URL**, **dashboard ID**, and **embed token**, you can securely embed and display dashboards inside your application.
 

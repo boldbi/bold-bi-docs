@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Transformation and Preview – Embedded BI | Bold BI Learning
-description: Learn how to Transformation and preview in ETL application in Bold BI Enterprise Edition. Discover simple steps to integrate data smoothly and make the most of your analytics.
+description: Learn how to Transformation and preview in ETL application in Bold BI Server. Discover simple steps to integrate data smoothly and make the most of your analytics.
 platform: bold-bi
 documentation: ug
 
@@ -34,8 +34,9 @@ Click "Save" to apply changes or "Close" to cancel.
 If the user does not select the "Drop Table" option and does not specify any Primary Key, the system will display a warning popup.
 ![Transform2](/static/assets/working-with-etl/images/duplication_warning.png)
 
-##### OPTIONS:  
-    Proceed: Continue with the current settings (duplicates may occur)
+#### OPTIONS:
+
+    Proceed: Continue with the current settings (duplicates may occur).    
     Cancel: Go back and configure either Primary Key as Unique Column Name(s) or enable the "Drop Table" option to avoid duplication.
 
 4. The data will initially be transferred to the `DuckDB` database within the designated `{project_name}` schema before undergoing transformation for integration into the target databases. As an illustration, in the case of a project named "datasync_pipeline", the data will be relocated to the `datasync_pipeline` table schema.
@@ -49,14 +50,20 @@ If the user does not select the "Drop Table" option and does not specify any Pri
 
 Sample Transformation scripts:
 
-```SQL
-select date_part('year', SalesDate) as "year", date_part('month',SalesDate) as "month", sum(Amount) as "TotalAmount" from datasync_pipeline.sales
-group by date_part('year',SalesDate),date_part('month',SalesDate)
+```sql
+SELECT
+  date_part('year', SalesDate) AS "year",
+  date_part('month', SalesDate) AS "month",
+  sum(Amount) AS "TotalAmount"
+FROM datasync_pipeline.sales
+GROUP BY
+  date_part('year', SalesDate),
+  date_part('month', SalesDate)
 ```
 
 ![Transform4](/static/assets/working-with-etl/images/etl_t6.png)
 
-Note: The Transform Tables and Extracted Tables can be minimized to utilize the code editor area fully.
+>**Note:** The Transform Tables and Extracted Tables can be minimized to utilize the code editor area fully.
 
 ## Preview:
 
@@ -81,6 +88,8 @@ When a user clicks Edit or Delete, a confirmation popup appears: Deleting/Editin
 
 3. Drag and drop the transform tables to reorder the sequence in which the transform tables should be executed, as well as reuse these tables for future analyses.
 
+![Transform](/static/assets/working-with-etl/images/dragdrop.png)
+
 4. When users desire to incorporate Primary keys into the transform tables, they should input the primary key values during the process of adding or editing the tables.
 
 ![Transform5](/static/assets/working-with-etl/images/transform_popup.png)
@@ -100,4 +109,3 @@ When a user clicks Edit or Delete, a confirmation popup appears: Deleting/Editin
  ![Transform](/static/assets/working-with-etl/images/transform_results.png)
  
  ![Transform](/static/assets/working-with-etl/images/transform_results_destination.png)
- 

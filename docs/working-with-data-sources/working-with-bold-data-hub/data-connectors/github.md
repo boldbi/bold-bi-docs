@@ -1,7 +1,7 @@
 ---
 layout: post
 title: GitHub Data Hub Connector – Embedded BI | Bold BI Learning
-description: Learn how to use the GitHub Data Hub connector in Bold BI Enterprise Edition. Discover simple steps to integrate data smoothly and make the most of your analytics.
+description: Learn how to use the GitHub Data Hub connector in Bold BI Server. Discover simple steps to integrate data smoothly and make the most of your analytics.
 platform: bold-bi
 documentation: ug
 
@@ -51,7 +51,7 @@ Max_items: Maximum number of items
 **`Repo_events:`**
 
 ```yaml
-version: 1
+version: 1.0.1
 encrypt_credentials: false
 plugins:
   extractors:
@@ -66,7 +66,7 @@ plugins:
 **`Reactions:`**
 
 ```yaml
-version: 1
+version: 1.0.1
 encrypt_credentials: false
 plugins:
   extractors:
@@ -126,9 +126,8 @@ plugins:
 
 ![GitHub - BoldBI](/static/assets/working-with-etl/images/schedule_history.png#max-width=100%)
 
-4. Click on Logs to see if the run is completed and data source is created in Bold BI. 
+4. Click on Logs to see if the run is completed and data source is created in Bold BI.
 
 ![GitHub - BoldBI](/static/assets/working-with-etl/images/pipeline_DsCreated.png#max-width=100%)
-
 
 5. Click `Edit DataSource` Option to view the created tables.

@@ -204,6 +204,7 @@
         "ravendb",
         "amazon",
         "rds",
+        "databricks",
         "proofhub",
         "zoho",
         "invoice",
@@ -224,6 +225,7 @@
         "winforms",
         "appfolio",
         "online",
+        "trendline",
         "trendlines",
         "gridlines",
         "clubready",
@@ -501,6 +503,8 @@
         "redshift",
         "maps",
         "dynamodb",
-        "yaml"
+        "yaml",
+        "mcp",
+        "azure-databricks"
     ]
 }

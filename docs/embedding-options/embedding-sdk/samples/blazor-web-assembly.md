@@ -6,7 +6,7 @@ platform: bold-bi
 documentation: ug
 ---
 
-# Embedding Bold BI Dashboards in Blazor using the Embedded SDK
+# Embedding Bold BI Dashboards in Blazor using the Embed SDK
 
 The sample has been provided in the following sections for `Blazor WebAssembly`, which demonstrates the dashboard rendering available on your Bold BI server. It is followed by steps to create a new embedding application in `Blazor WebAssembly` on your own.
 
@@ -152,7 +152,7 @@ The sample has been provided in the following sections for `Blazor WebAssembly`,
 9. In the `Client project`, the following scripts and style sheets are mandatory to render the dashboard. Include the following script tag in your `\wwwroot\index.html` page.
 
     ```js 
-    <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v15.2.6/boldbi-embed.js"></script>
+    <script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v16.3.5/boldbi-embed.js"></script>
     ```
 
 10. Inside the `<body>` tag, implement a function to render the dashboard.

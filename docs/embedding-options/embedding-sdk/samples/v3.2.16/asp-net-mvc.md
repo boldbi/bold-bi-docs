@@ -6,9 +6,9 @@ platform: bold-bi
 documentation: ug
 ---
 
-# Bold BI Dashboards Embedding in ASP.NET MVC Sample with Embedded SDK
+# Bold BI Dashboards Embedding in ASP.NET MVC Sample with Embed SDK
 
-We have created an ASP.NET MVC sample with the Embedded SDK. Here, we can list the dashboards and render the dashboard based on your selection after passing the authorization.
+We have created an ASP.NET MVC sample with the Embed SDK. Here, we can list the dashboards and render the dashboard based on your selection after passing the authorization.
 
 > **NOTE:**  The best way to get started would be to read the [Getting Started](/getting-started/embedding-in-your-application/) section of the documentation before using it for the first time. The [Getting Started](/getting-started/embedding-in-your-application/) guide provides just enough information that you need to know before working on the sample.
 

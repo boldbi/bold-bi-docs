@@ -6,7 +6,7 @@ platform: bold-bi
 documentation: ug
 ---
 
-# Embedding Bold BI Dashboards in WPF using the Embedded SDK
+# Embedding Bold BI Dashboards in WPF using the Embed SDK
 
 A GitHub link has been provided to [get](https://github.com/boldbi/wpf-sample) the sample application that demonstrates the rendering of the dashboard available on your Bold BI server. This will be followed by steps to create a new embedding application in `WPF` on your own.  
 
@@ -59,7 +59,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/wpf-sample) t
             <!DOCTYPE html>
         <html><head><meta http-equiv='X-UA-Compatible' content='IE=Edge' />
         <script src='https://cdn.polyfill.io/v2/polyfill.min.js'></script>
-        <script type='text/javascript' src='https://cdn.boldbi.com/embedded-sdk/v15.2.6/boldbi-embed.js'></script>" +
+        <script type='text/javascript' src='https://cdn.boldbi.com/embedded-sdk/v16.3.5/boldbi-embed.js'></script>" +
         "<script type='text/javascript'>$(document).ready(function() " +
         "{this.dashboard = BoldBI.create({ serverUrl:'" + EmbedProperties.RootUrl + EmbedProperties.SiteIdentifier + "', dashboardId:'" + EmbedProperties.DashboardId + "',embedContainerId: 'dashboard',embedType:'" + BoldBI.EmbedType.Component + "',environment:'" + BoldBI.Environment.Enterprise, /* If Cloud, you should use BoldBI.Environment.Cloud */ + "'mode: '" + BoldBI.Mode.Design + "',width: window.innerWidth - 20 + 'px',height: window.innerHeight - 20 + 'px',expirationTime: 100000,authorizationServer:{url: '', data:" + resultContent + "}});this.dashboard.loadDesigner();});</script>" +
         "</head>" +
@@ -210,7 +210,7 @@ A GitHub link has been provided to [get](https://github.com/boldbi/wpf-sample) t
                 <!DOCTYPE html>
         <html><head><meta http-equiv='X-UA-Compatible' content='IE=Edge' />
         <script src='https://cdn.polyfill.io/v2/polyfill.min.js'></script>
-        <script type='text/javascript' src='https://cdn.boldbi.com/embedded-sdk/v15.2.6/boldbi-embed.js'></script>" +
+        <script type='text/javascript' src='https://cdn.boldbi.com/embedded-sdk/v16.3.5/boldbi-embed.js'></script>" +
         "<script type='text/javascript'>$(document).ready(function() " +
         "{this.dashboard = BoldBI.create({ serverUrl:'" + EmbedProperties.RootUrl + EmbedProperties.SiteIdentifier + "', dashboardId:'" + EmbedProperties.DashboardId + "',embedContainerId: 'dashboard',embedType:'" + BoldBI.EmbedType.Component + "',environment:'" + BoldBI.Environment.Enterprise, /* If Cloud, you should use BoldBI.Environment.Cloud */ + "'mode: '" + BoldBI.Mode.View + "',width: window.innerWidth - 20 + 'px',height: window.innerHeight - 20 + 'px',expirationTime: 100000,authorizationServer:{url: '', data:" + resultContent + "}});this.dashboard.loadDashboard();});</script>" +
         "</head>" +

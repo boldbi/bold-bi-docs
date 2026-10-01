@@ -26,7 +26,7 @@ Embedding the designer enables your users to <b>create</b> and <b>modify</b> das
 ## Steps to Embed the Designer
 
 <ul style="list-style-type: decimal; padding-left:20px; margin-top: 15px;">
-  <li style="margin-top: 15px;">Install the Bold BI Embedded SDK (via NPM or CDN).</li>
+  <li style="margin-top: 15px;">Install the Bold BI Embed SDK (via NPM or CDN).</li>
   <li style="margin-top: 15px;">Add a container <code>&lt;div&gt;</code> in your frontend where the AI Assistant will load.</li>
   <li style="margin-top: 15px;">Create a Bold BI instance with the required properties and call <code>loadDesigner()</code>.</li>
 </ul>

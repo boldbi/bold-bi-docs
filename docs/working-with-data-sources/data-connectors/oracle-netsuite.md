@@ -58,7 +58,7 @@ To configure the Oracle NetSuite data source, follow the below steps:
 **7.** Enable the **Authorization Code Grant** under OAuth 2.0 and enable **REST Web Services** and **RESTLETS**.
    ![Enable Oauth 2.0](/static/assets/working-with-datasource/data-connectors/images/oracle-netsuite/Enable_Oauth.png)
 
-**8.** Provide the **Redirect URL** (e.g., https://localhost) as shown in the image.
+**8.** Provide the **Redirect URL** (e.g., `https://localhost`) as shown in the image.
    ![Provide Redirect URL](/static/assets/working-with-datasource/data-connectors/images/oracle-netsuite/Provide_redirect_url.png)
 
 **9.** Finally **Save** it.

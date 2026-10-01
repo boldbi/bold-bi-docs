@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Google Analytics Data Hub Connector Bold BI Learning
-description: Learn how to use the Google Analytics Data Hub connectors in Bold BI Enterprise Edition. Discover simple steps to integrate data smoothly and make the most of your analytics.
+description: Learn how to use the Google Analytics Data Hub connectors in Bold BI Server. Discover simple steps to integrate data smoothly and make the most of your analytics.
 platform: bold-bi
 documentation: ug
 
@@ -20,6 +20,9 @@ Service account credentials are more suitable for server-to-server interactions.
 To obtain API credentials using a GCP service account, follow these steps:
 
 1. Sign in to [https://console.cloud.google.com](https://console.cloud.google.com).
+
+![Google Analytics ETL- BoldBI](/static/assets/working-with-etl/images/gcloudconsole.png#max-width=100%)
+
 2. Create a service account if necessary.
 3. Enable the "Google Analytics API" (refer to Google documentation for detailed instructions).
 4. Generate credentials:
@@ -65,18 +68,18 @@ union_all_tables: true
 add_dbname_column: false
 direct_load_to_destination: true
 plugins:
- extractors:
-   - name: <NAME>
-     connectorname: Google Analytics
-     config:
-       project_id: <PROJECT ID>
-       client_email: <CLIENT EMAIL>
-       private_key:  <PRIVATE KEY>
-       type: Service
-     properties:
-       property_id: <PROPERTY ID>
-       queries: "[{'resource_name':'sample_analytics_data1','dimensions':['browser','city'],'metrics':['totalUsers','transactions']},{'resource_name':'sample_analytics_data2','dimensions':['browser','city','dateHour'],'metrics':['totalUsers']}]"
-       start_date: <START DATE>
+  extractors:
+    - name: <NAME>
+      connectorname: Google Analytics
+      config:
+        project_id: <PROJECT ID>
+        client_email: <CLIENT EMAIL>
+        private_key: <PRIVATE KEY>
+        type: Service
+      properties:
+        property_id: <PROPERTY ID>
+        queries: "[{'resource_name':'sample_analytics_data1','dimensions':['browser','city'],'metrics':['totalUsers','transactions']},{'resource_name':'sample_analytics_data2','dimensions':['browser','city','dateHour'],'metrics':['totalUsers']}]"
+        start_date: <START DATE>
 ```
 
 <b> For OAuth Account : </b>
@@ -89,18 +92,18 @@ union_all_tables: true
 add_dbname_column: false
 direct_load_to_destination: true
 plugins:
- extractors:
-   - name: <NAME>
-     connectorname: Google Analytics
-     config:
-       project_id: <PROJECT ID>
-       client_id: <CLIENT ID>
-       client_secret: <CLIENT SECRET>
-       type: OAuth
-     properties:
-       property_id: <PROPERTY ID>
-       queries: "[{'resource_name':'sample_analytics_data1','dimensions':['browser','city'],'metrics':['totalUsers','transactions']},{'resource_name':'sample_analytics_data2','dimensions':['browser','city','dateHour'],'metrics':['totalUsers']}]"
-       start_date: <START DATE>
+  extractors:
+    - name: <NAME>
+      connectorname: Google Analytics
+      config:
+        project_id: <PROJECT ID>
+        client_id: <CLIENT ID>
+        client_secret: <CLIENT SECRET>
+        type: OAuth
+      properties:
+        property_id: <PROPERTY ID>
+        queries: "[{'resource_name':'sample_analytics_data1','dimensions':['browser','city'],'metrics':['totalUsers','transactions']},{'resource_name':'sample_analytics_data2','dimensions':['browser','city','dateHour'],'metrics':['totalUsers']}]"
+        start_date: <START DATE>
 ```
 
 ## Configure the Data Hub to connect Google Analytics
@@ -121,9 +124,7 @@ plugins:
 
   ![Google Analytics Data Hub - BoldBI](/static/assets/working-with-etl/images/analytics_auth_template.png#max-width=100%)
   
-5. Creating a Pipeline in Bold Data Hub automatically creates a Data Source in Bold BI. The Bold BI Data Source is a live data source to the destination database used in Bold Data Hub. For more information on the relationship between Bold Data Hub Pipeline and the associated Data Sources in Bold BI , please refer to [Relationship between Bold Data Hub Pipeline and Associated Data Sources in Bold BI]
-
-(https://help.boldbi.com/working-with-data-sources/working-with-bold-data-hub/relationship-between-bold-data-hub-pipeline-and-associated-data-sources-in-boldbi/)
+5. Creating a Pipeline in Bold Data Hub automatically creates a Data Source in Bold BI. The Bold BI Data Source is a live data source to the destination database used in Bold Data Hub. For more information on the relationship between Bold Data Hub Pipeline and the associated Data Sources in Bold BI , please refer to [Relationship between Bold Data Hub Pipeline and Associated Data Sources in Bold BI](https://help.boldbi.com/working-with-data-sources/working-with-bold-data-hub/relationship-between-bold-data-hub-pipeline-and-associated-data-sources-in-boldbi/)
 
    ![FileSystem - BoldBI](/static/assets/working-with-etl/images/pipeline_DsCreated.png#max-width=100%)
 

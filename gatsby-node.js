@@ -3,7 +3,41 @@ const Promise = require('bluebird')
 const { execSync } = require('child_process');
 const { updateContent } = require('./build/content.js');
 const path = require('path')
+const fs = require('fs')
 const redirects = require("./redirects.json")
+
+function getApiDirectoryRedirects(dir = path.resolve('./api')) {
+    if (!fs.existsSync(dir)) {
+        return []
+    }
+
+    const redirects = []
+
+    function walk(currentDir) {
+        fs.readdirSync(currentDir, { withFileTypes: true }).forEach(entry => {
+            const fullPath = path.join(currentDir, entry.name)
+
+            if (entry.isDirectory()) {
+                walk(fullPath)
+                return
+            }
+
+            if (entry.isFile() && entry.name === 'index.html') {
+                const relativeDir = path.relative(dir, currentDir).split(path.sep).join('/')
+
+                if (relativeDir) {
+                    redirects.push({
+                        fromPath: `/${relativeDir}`,
+                        toPath: `/${relativeDir}/`,
+                    })
+                }
+            }
+        })
+    }
+
+    walk(dir)
+    return redirects
+}
 
 exports.onCreateWebpackConfig = ({ actions, stage }) => {
     if (stage === 'build-javascript') {
@@ -87,11 +121,14 @@ exports.createPages = ({ graphql, actions }) => {
                     const previous = index === posts.length - 1 ? null : posts[index + 1].node;
                     const next = index === 0 ? null : posts[index - 1].node;
 
+                    const postSlug = (post.node.fields && post.node.fields.slug) ? post.node.fields.slug : '/';
+                    const component = (postSlug === '/' || postSlug === '/index/') ? path.resolve('./src/index.js') : layout;
+
                     createPage({
-                        path: post.node.fields.slug,
-                        component: layout,
+                        path: postSlug,
+                        component: component,
                         context: {
-                            slug: post.node.fields.slug,
+                            slug: postSlug,
                             html: post.node.html,
                             frontmatter: post.node.frontmatter,
                             lastUpdated: post.node.fields.lastUpdated,
@@ -100,9 +137,20 @@ exports.createPages = ({ graphql, actions }) => {
                         },
                     })
                 })
+
+                 // Ensure a root page exists at '/' — render with our src/index.js component
+                try {
+                    createPage({
+                        path: '/',
+                        component: path.resolve('./src/index.js'),
+                        context: { slug: '/' }
+                    });
+                } catch (e) {
+                    console.warn('createPage for root failed', e);
+                }
             })
         )
-        redirects.forEach(redirect =>
+        redirects.concat(getApiDirectoryRedirects()).forEach(redirect =>
             createRedirect({
                 fromPath: redirect.fromPath,
                 toPath: redirect.toPath,

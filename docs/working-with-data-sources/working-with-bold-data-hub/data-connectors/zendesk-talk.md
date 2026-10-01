@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Zendesk Talk ETL/Bold Data Hub Connector – Bold BI Learning
-description: Learn how to use the Zendesk Talk ETL/Bold Data Hub connectors in Bold BI Enterprise Edition. Discover simple steps to integrate data smoothly and make the most of your analytics.
+description: Learn how to use the Zendesk Talk ETL/Bold Data Hub connectors in Bold BI Server. Discover simple steps to integrate data smoothly and make the most of your analytics.
 platform: bold-bi
 documentation: ug
 
@@ -67,8 +67,8 @@ metadata:
 
 #### FULL_TABLE
 
-```YAML
-version: 1
+```yaml
+version: 1.0.1
 encrypt_credentials: false
 plugins:
   extractors:
@@ -99,8 +99,8 @@ plugins:
 
 ```
 #### INCREMENTAL
-```YAML
-version: 1
+```yaml
+version: 1.0.1
 encrypt_credentials: false
 plugins:
   extractors:
@@ -147,9 +147,8 @@ plugins:
   
   5. Creating a Pipeline in Bold Data Hub automatically creates a Data Source in Bold BI. The Bold BI Data Source is a live data source to the destination database used in Bold Data Hub. For more information on the relationship between Bold Data Hub Pipeline and the associated Data Sources in Bold BI , please refer to [Relationship between Bold Data Hub Pipeline and Associated Data Sources in Bold BI](https://help.boldbi.com/working-with-data-sources/working-with-bold-data-hub/relationship-between-bold-data-hub-pipeline-and-associated-data-sources-in-boldbi/)
 
-<table>
-<tr>
-The available resources are supported in Zendesk Support 
+The available resources are supported in Zendesk Talk
+```js
 - calls 
 - addresses 
 - greeting_categories 
@@ -159,8 +158,7 @@ The available resources are supported in Zendesk Support
 - settings
 - lines
 - agents_activity 
-</tr>
-</table>
+```
 
 >**Warning:**
     1. The <b> Encrypt_Credentials </b> property should be set to false when updating the new access token on the template. If you have modified other properties, such as 'select' or 'account id', the <b> Encrypt_Credentials </b> property must be set to true.  

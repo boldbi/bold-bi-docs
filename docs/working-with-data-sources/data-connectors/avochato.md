@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to create data source for Avochato Web Service | Bold BI Docs
-description: Learn how to connect Avochato web service through basic HTTP authentication with Bold BI and create a data source for the dashboards in Enterprise application.
+description: Learn how to connect Avochato web service through basic HTTP authentication with Bold BI and create a data source for the dashboards in Server application.
 platform: bold-bi
 documentation: ug
 ---

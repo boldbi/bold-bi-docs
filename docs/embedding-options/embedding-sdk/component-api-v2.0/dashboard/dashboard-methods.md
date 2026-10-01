@@ -669,7 +669,7 @@ This method will export the dashboard as an image.
 ```js
 var instance = BoldBI.getInstance("container"); //container -> embed container
 
-var exportInformation ={'dashboardId':"",'fileName':"",'exportImageFormat':"",'resolutionDpi':"",'showAppliedFilters':};
+var exportInformation ={'dashboardId':"",'fileName':"",'exportImageFormat':"",'resolutionDpi':"",'showAppliedFilters':""};
 
 instance.viewer.exportAsImage(exportInformation);
 ```
@@ -708,7 +708,7 @@ This method will export the dashboard as a PDF.
 ```js
 var instance = BoldBI.getInstance("container"); //container -> embed container
 
-var exportInformation ={'dashboardId':"",'fileName':"",'pageSize':"",'pageOrientation':"",'showAppliedFilters':};
+var exportInformation ={'dashboardId':"",'fileName':"",'pageSize':"",'pageOrientation':"",'showAppliedFilters':""};
 
 instance.viewer.exportAsPdf(exportInformation);
 ```

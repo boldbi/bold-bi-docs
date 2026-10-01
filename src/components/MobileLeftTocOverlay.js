@@ -6,6 +6,7 @@ import summaryDeployment from '../../docs/summary-deployment.json';
 import summaryApi from '../../docs/summary-api.json';
 import summaryConnect from '../../docs/summary-connect.json';
 import summaryEmbedding from '../../docs/summary-embedding.json';
+import redirects from '../../redirects.json';
 
 import '../assets/css/mobile-lefttoc.css';
 import '../assets/css/lefttoc.css';
@@ -14,6 +15,33 @@ function removeMisc(s) {
     if (!s) return '';
     if (typeof s !== 'string') return '';
     return s.split('?')[0].replace(/\.md$/, '').trim();
+}
+
+function normalizePath(path) {
+    if (!path) return '/';
+    const normalized = path.replace(/\/+/g, '/');
+    if (normalized === '/') return '/';
+    return normalized.endsWith('/') ? normalized : `${normalized}/`;
+}
+
+function getEquivalentPaths(pathname) {
+    const normalizedPath = normalizePath(pathname);
+    const paths = new Set([normalizedPath]);
+
+    redirects.forEach((redirect) => {
+        const fromPath = normalizePath(redirect.fromPath);
+        const toPath = normalizePath(redirect.toPath);
+        if (fromPath === normalizedPath) paths.add(toPath);
+        if (toPath === normalizedPath) paths.add(fromPath);
+    });
+
+    return Array.from(paths);
+}
+
+function getResolvedPath(pathname) {
+    const normalizedPath = normalizePath(pathname);
+    const redirect = redirects.find((item) => normalizePath(item.fromPath) === normalizedPath);
+    return redirect ? normalizePath(redirect.toPath) : normalizedPath;
 }
 
 function buildNode(title, node, parentBase) {
@@ -66,6 +94,8 @@ function generateToc(json) {
 export default function MobileLeftTocOverlay({ open, onClose }) {
     const [activeTab, setActiveTab] = useState('Docs');
     const [openMap, setOpenMap] = useState({});
+    const pathname = (typeof window !== 'undefined' && window.location) ? normalizePath(window.location.pathname) : '/';
+    const equivalentPaths = useMemo(() => getEquivalentPaths(pathname), [pathname]);
 
     const summaryMap = {
         'Docs': summaryDocs,
@@ -120,10 +150,10 @@ export default function MobileLeftTocOverlay({ open, onClose }) {
         if (activeTab === 'Docs') {
             const defs = [
 
-                { title: 'GETTING STARTED', keys: ['Overview', 'Quick Start'] },
+                { title: 'GETTING STARTED', keys: ['Introduction', 'Overview', 'Quick Start'] },
                 { title: 'CREATING DASHBOARDS', keys: ['Getting Started', 'Visualizations'] },
                 { title: 'WORKING WITH DASHBOARDS', keys: ['Dashboards'] },
-                { title: 'AI AND MACHINE LEARNING', keys: ['AI and Machine Learning'] },
+                { title: 'AI AND MACHINE LEARNING', keys: ['AI and Machine Learning', 'MCP Integration'] },
                 { title: 'RESPONSIVE AND MOBILE ACCESS', keys: ['Responsive Layout', 'Mobile App'] },
                 { title: 'USE CASES', keys: ['Transformation Use Cases'] },
             ];
@@ -180,7 +210,7 @@ export default function MobileLeftTocOverlay({ open, onClose }) {
     useEffect(() => {
         if (!open) return;
         try {
-            const pathname = (typeof window !== 'undefined' && window.location) ? window.location.pathname : '/';
+            const pathname = (typeof window !== 'undefined' && window.location) ? normalizePath(window.location.pathname) : '/';
             let matched = 'Docs';
             Object.keys(summaryMap).forEach((k) => {
                 const json = summaryMap[k] || {};
@@ -192,7 +222,10 @@ export default function MobileLeftTocOverlay({ open, onClose }) {
                     if (n.children && n.children.length) n.children.forEach(walk);
                 }
                 t.forEach(walk);
-                if (paths.some(p => p && (pathname === p || pathname.startsWith(p)))) matched = k;
+                if (paths.some(p => {
+                    const nodePath = normalizePath(p);
+                    return equivalentPaths.some((currentPath) => currentPath === nodePath || currentPath.startsWith(nodePath));
+                })) matched = k;
             });
             setActiveTab(matched);
             setQuery('');
@@ -200,26 +233,26 @@ export default function MobileLeftTocOverlay({ open, onClose }) {
         } catch (e) {
             // ignore
         }
-    }, [open]);
+    }, [open, equivalentPaths]);
 
     // mobile overlay no longer includes its own theme toggle (header handles theme)
 
     // initialize open state for sections whose path is a prefix of current pathname
     useEffect(() => {
         try {
-            const pathname = (typeof window !== 'undefined' && window.location) ? window.location.pathname : '/';
             const m = {};
             function visit(node) {
                 if (!node || !node.path) return;
                 if (node.children && node.children.length) {
-                    m[node.path] = pathname.startsWith(node.path);
+                    const nodePath = normalizePath(node.path);
+                    m[node.path] = equivalentPaths.some((currentPath) => currentPath.startsWith(nodePath));
                     node.children.forEach(visit);
                 }
             }
             toc.forEach(t => { if (t && t.type === 'section') visit(t); });
             setOpenMap(m);
         } catch (_) {}
-    }, [toc]);
+    }, [toc, equivalentPaths]);
 
     const toggleOpen = (path, level = 0) => {
         setOpenMap((prev) => {
@@ -239,12 +272,16 @@ export default function MobileLeftTocOverlay({ open, onClose }) {
     function handleNavigate(path) {
         if (!path) return;
         onClose && onClose();
+        const targetPath = getResolvedPath(path);
         // use navigate for SPA routing
-        try { navigate(path); } catch (_) { window.location.href = path; }
+        try { navigate(targetPath); } catch (_) { window.location.href = targetPath; }
     }
 
     const RenderNode = ({ node, level = 0 }) => {
         const hasChildren = node.children && node.children.length;
+        const nodePath = normalizePath(node.path);
+        const isActive = equivalentPaths.some((currentPath) => currentPath === nodePath);
+        const linkPath = getResolvedPath(node.path);
         return (
             <li className={`mobile-toc-item level-${level}`} key={node.path}>
                 {hasChildren ? (
@@ -262,7 +299,14 @@ export default function MobileLeftTocOverlay({ open, onClose }) {
                                     : (<span className="bd-icon bd-icon-collapsible"></span>)
                                 }
                             </button>
-                            <Link to={node.path} className={level === 0 ? 'left-toc-section-link mobile-toc-section-link' : 'left-toc-sublink mobile-toc-link'} onClick={() => onClose && onClose()}>{node.title}</Link>
+                            <Link
+                                to={linkPath}
+                                className={`${level === 0 ? 'left-toc-section-link mobile-toc-section-link' : 'left-toc-sublink mobile-toc-link'}${isActive ? ' active' : ''}`}
+                                aria-current={isActive ? 'page' : undefined}
+                                onClick={() => onClose && onClose()}
+                            >
+                                {node.title}
+                            </Link>
                         </div>
                         {openMap[node.path] && (
                             <ul className={level === 0 ? 'mobile-toc-children left-toc-children' : 'mobile-toc-subchildren left-toc-subchildren'}>
@@ -271,7 +315,14 @@ export default function MobileLeftTocOverlay({ open, onClose }) {
                         )}
                     </>
                     ) : (
-                    <Link to={node.path} className="mobile-toc-link left-toc-sublink" onClick={() => onClose && onClose()}>{node.title}</Link>
+                    <Link
+                        to={linkPath}
+                        className={`mobile-toc-link left-toc-sublink${isActive ? ' active' : ''}`}
+                        aria-current={isActive ? 'page' : undefined}
+                        onClick={() => onClose && onClose()}
+                    >
+                        {node.title}
+                    </Link>
                 )}
             </li>
         );
@@ -348,7 +399,7 @@ export default function MobileLeftTocOverlay({ open, onClose }) {
                             onKeyDown={(e) => {
                                 if (e.key === 'Enter' && suggestions.length) {
                                     e.preventDefault();
-                                    handleNavigate(suggestions[0].path);
+                                    handleNavigate(getResolvedPath(suggestions[0].path));
                                 }
                                 if (e.key === 'Escape') {
                                     setQuery('');
@@ -387,7 +438,18 @@ export default function MobileLeftTocOverlay({ open, onClose }) {
                                     <ul className="left-toc-group-list">
                                         {g.items.map((item) => (
                                             item.type === 'link'
-                                                ? (<li key={item.path} className="left-toc-item link"><Link to={item.path} className="left-toc-link" onClick={() => onClose && onClose()}>{item.title}</Link></li>)
+                                                ? (
+                                                    <li key={item.path} className="left-toc-item link">
+                                                        <Link
+                                                            to={getResolvedPath(item.path)}
+                                                            className={`left-toc-link${equivalentPaths.some((currentPath) => currentPath === normalizePath(item.path)) ? ' active' : ''}`}
+                                                            aria-current={equivalentPaths.some((currentPath) => currentPath === normalizePath(item.path)) ? 'page' : undefined}
+                                                            onClick={() => onClose && onClose()}
+                                                        >
+                                                            {item.title}
+                                                        </Link>
+                                                    </li>
+                                                )
                                                 : (<RenderNode key={item.path} node={item} level={0} />)
                                         ))}
                                     </ul>
@@ -396,7 +458,18 @@ export default function MobileLeftTocOverlay({ open, onClose }) {
                         ) : (
                             toc.map((item) => (
                                 item.type === 'link'
-                                    ? (<li key={item.path} className="left-toc-item link"><Link to={item.path} className="left-toc-link" onClick={() => onClose && onClose()}>{item.title}</Link></li>)
+                                    ? (
+                                        <li key={item.path} className="left-toc-item link">
+                                            <Link
+                                                to={getResolvedPath(item.path)}
+                                                className={`left-toc-link${equivalentPaths.some((currentPath) => currentPath === normalizePath(item.path)) ? ' active' : ''}`}
+                                                aria-current={equivalentPaths.some((currentPath) => currentPath === normalizePath(item.path)) ? 'page' : undefined}
+                                                onClick={() => onClose && onClose()}
+                                            >
+                                                {item.title}
+                                            </Link>
+                                        </li>
+                                    )
                                     : (<RenderNode key={item.path} node={item} level={0} />)
                             ))
                         )}
@@ -406,3 +479,4 @@ export default function MobileLeftTocOverlay({ open, onClose }) {
         </div>
     );
 }
+ 

@@ -1,19 +1,22 @@
 ---
 layout: post
 title: Matomo Data Hub Connector – Embedded BI | Bold BI Learning
-description: Learn how to use the Matomo Bold Data Hub connectors in Bold BI Enterprise Edition. Discover simple steps to integrate data smoothly and make the most of your analytics.
+description: Learn how to use the Matomo Bold Data Hub connectors in Bold BI Server. Discover simple steps to integrate data smoothly and make the most of your analytics.
 platform: bold-bi
 documentation: ug
 
 ---
 
-# ``Matomo``
+# Matomo
 
 ``Matomo`` is a free and open-source web analytics platform that provides detailed insights into website and application performance with features like visitor maps, site search analytics, real-time visitor tracking, and custom reports.
 
 ## Grab Credentials
 
 1. Sign in to ``Matomo``.
+
+![Matamo - Datahub](/static/assets/working-with-etl/images/matamo.png#max-width=100%)
+
 2. Click on the Administration settings icon located at the top right.
 3. Navigate to "Personal > Security" on the left menu.
 4. Find and select "Auth Tokens > Create a New Token."
@@ -42,7 +45,7 @@ Live_events_site_id: ID of the Live events site
 ### Example Configuration
 
 ```yaml
-version: 1
+version: 1.0.1
 encrypt_credentials: false
 plugins:
   extractors:
@@ -80,9 +83,7 @@ The available resources are supported in Matomo
 - matomo_reports 
 - matomo_visits
  ```
-   5. Creating a Pipeline in Bold Data Hub automatically creates a Data Source in Bold BI. The Bold BI Data Source is a live data source to the destination database used in Bold Data Hub. For more information on the relationship between Bold Data Hub Pipeline and the associated Data Sources in Bold BI , please refer to [Relationship between Bold Data Hub Pipeline and Associated Data Sources in Bold BI]
-
-(https://help.boldbi.com/working-with-data-sources/working-with-bold-data-hub/relationship-between-bold-data-hub-pipeline-and-associated-data-sources-in-boldbi/)
+   5. Creating a Pipeline in Bold Data Hub automatically creates a Data Source in Bold BI. The Bold BI Data Source is a live data source to the destination database used in Bold Data Hub. For more information on the relationship between Bold Data Hub Pipeline and the associated Data Sources in Bold BI , please refer to [Relationship between Bold Data Hub Pipeline and Associated Data Sources in Bold BI](https://help.boldbi.com/working-with-data-sources/working-with-bold-data-hub/relationship-between-bold-data-hub-pipeline-and-associated-data-sources-in-boldbi/)
 
 >**Warning:**
     1. The `Encrypt_Credentials` property should be set to false when updating the new access token on the template. If you have modified other properties, such as 'select' or 'account id', the `Encrypt_Credentials` property must be set to true.  
@@ -104,9 +105,8 @@ The available resources are supported in Matomo
 
 ![Matomo - BoldBI](/static/assets/working-with-etl/images/schedule_history.png#max-width=100%)
 
-4. Click on Logs to see if the run is completed and data source is created in Bold BI. 
+4. Click on Logs to see if the run is completed and data source is created in Bold BI.
 
 ![Matomo - BoldBI](/static/assets/working-with-etl/images/pipeline_DsCreated.png#max-width=100%)
-
 
 5. Click `Edit DataSource` Option to view the created tables.

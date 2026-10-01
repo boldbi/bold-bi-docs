@@ -4,12 +4,6 @@ module.exports = {
 	pathPrefix: toc.pathPrefix ? toc.pathPrefix : '/',
 	plugins: [
 		{
-			resolve: `gatsby-plugin-google-tagmanager`,
-			options: {
-				id: "GTM-5PHX5HL"
-			}
-		},
-		{
 			resolve: 'gatsby-plugin-html-attributes',
 			options: {
 				lang: 'en-US'

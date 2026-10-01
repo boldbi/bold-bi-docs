@@ -12,7 +12,7 @@ This section explains how to upgrade the Bold BI Server from any version to the 
 
 Bold BI releases several major versions in a year. Each version includes new features, bug fixes, and other improvements.
 
-The Bold BI Enterprise Edition can be manually upgraded to the latest version at any time, and there are no automatic updates for the Bold BI Server. Before upgrading, you can refer to the features and enhancements from the [Release Notes](https://www.boldbi.com/release-history/).
+The Bold BI Server can be manually upgraded to the latest version at any time, and there are no automatic updates for the Bold BI Server. Before upgrading, you can refer to the features and enhancements from the [Release Notes](https://www.boldbi.com/release-history/).
 
 > **NOTE:** Upgrading to the latest version does not require a license key. On the other hand, our services will retrieve the license in the backend after upgrading to the latest version.
 
@@ -40,15 +40,15 @@ Before upgrading the Bold BI to the latest version, make sure to take the backup
 ## Proceeding with upgrade
 Bold BI updates the database schema of your current version to the latest version. The upgrade process will retain all the resources and settings from the previous deployment.
 
-You can download the latest version of the Bold BI Enterprise Edition under your [account](https://www.boldbi.com/account/) page.
+You can download the latest version of the Bold BI Server under your [account](https://www.boldbi.com/account/) page.
 
 ### Unlock the setup
 
-Run the Bold BI Enterprise Installer.
+Run the Bold BI Server Installer.
 
 ![installation with registered e-mail](/static/assets/installation-and-deployment/images/installation-prompt.png)
 
-You can check the License Agreement of Bold BI Enterprise Edition by clicking the `License Terms and Conditions`.
+You can check the License Agreement of Bold BI Server by clicking the `License Terms and Conditions`.
 
 Then, the upgrading prompt will be shown, click `Yes` to proceed with the installation.
 
@@ -56,7 +56,7 @@ Then, the upgrading prompt will be shown, click `Yes` to proceed with the instal
 
 ### Hosting type
 
-Then, click `Next` to upgrade the Bold BI Enterprise using the existing server hosting type, location, and port number.
+Then, click `Next` to upgrade the Bold BI Server using the existing server hosting type, location, and port number.
 
 > **NOTE:** Starting from v4.1, if you have already configured the Bold BI in IIS Express, it will be automatically migrated to IIS.
 
@@ -70,7 +70,7 @@ Then, click `Next` to upgrade the Bold BI Enterprise using the existing server h
 
 ### Client libraries
 
-> **IMPORTANT:** The Bold BI Enterprise Edition uses client libraries such as Oracle, PostgreSQL, MySQL, and MongoDB to connect with their respective SQL database variants. Check the license of each library to give consent for installation. Only the selected client libraries installed.
+> **IMPORTANT:** The Bold BI Server uses client libraries such as Oracle, PostgreSQL, MySQL, and MongoDB to connect with their respective SQL database variants. Check the license of each library to give consent for installation. Only the selected client libraries installed.
 
 ![Installation Client Libraries](/static/assets/installation-and-deployment/images/installation-clientlibraries.png)
 

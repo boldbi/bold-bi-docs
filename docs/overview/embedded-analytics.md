@@ -29,7 +29,7 @@ Choose Embedded Analytics if:
 
 ## Choosing the Right Embedding Option
 
-Bold BI offers two primary embedding methods: [**iFrame Embedding**](https://help.boldbi.com/embedding-options/iframe-embedding/) and [**Embedding SDK**](https://help.boldbi.com/embedding-options/embedding-sdk/). Selecting the right approach depends on your business requirements, level of customization, and security needs.
+Bold BI offers two primary embedding methods: [**iFrame Embedding**](https://help.boldbi.com/embedding-options/iframe-embedding/) and [**Embed SDK**](https://help.boldbi.com/embedding-options/embedding-sdk/). Selecting the right approach depends on your business requirements, level of customization, and security needs.
 
 ### iFrame Embedding
 Quickly embed interactive dashboards into your web pages with minimal setup and configuration using [iFrame Embedding](/embedding-options/iframe-embedding/). Ideal for fast deployment without extensive coding efforts.
@@ -39,4 +39,4 @@ Leverage our powerful [JavaScript SDK](https://help.boldbi.com/embedding-options
 
 ### Comparison
 Explore the detailed comparison to determine which embedding method aligns best with your needs:
-[Comparison between Embedding SDK vs iFrame Embedding](/embedding-options/#feature-comparison-between-javascript-sdk-vs-iframe-embedding)
+[Comparison between Embed SDK vs iFrame Embedding](/embedding-options/#feature-comparison-between-javascript-sdk-vs-iframe-embedding)

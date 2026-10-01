@@ -7,7 +7,7 @@ documentation: ug
 keywords: Bold BI, embedding, Pinboard
 ---
 
-# Bold BI Embedding SDK for Pinboard
+# Bold BI Embed SDK for Pinboard
 
 The Bold BI Embed SDK allows you to seamlessly integrate and visualize pinboards published on your Bold BI server within your web applications. By specifying the **server URL**, **pinboard name**, and **embed token**, you can securely embed and manage the pinboard experience.
 

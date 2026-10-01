@@ -9,8 +9,8 @@ documentation: ug
 # Embed a Dashboard using an Embed token
 Once an [embed authorization token](/embedding-options/embedding-sdk/token-generation/) has been generated on the backend server side, use it on the frontend to securely render a Bold BI dashboard.
 
-## Install the Bold BI Embedded SDK
-You can install the Bold BI Embedded SDK in two ways:
+## Install the Bold BI Embed SDK
+You can install the Bold BI Embed SDK in two ways:
 
 ### Using NPM
 To install the SDK, use the npm package manager by executing the command below in your command-line interface. Using npm is advised as it allows convenient access to the latest SDK updates when they are released.
@@ -31,7 +31,7 @@ import {BoldBI} from '@boldbi/boldbi-embedded-sdk';
 If your application does not use npm or a package manager, include the minified SDK via CDN:
 
 ```html
-<script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v15.2.6/boldbi-embed.js"></script>
+<script type="text/javascript" src="https://cdn.boldbi.com/embedded-sdk/v16.3.5/boldbi-embed.js"></script>
 ```
 
 ## Embed the Bold BI Dashboard

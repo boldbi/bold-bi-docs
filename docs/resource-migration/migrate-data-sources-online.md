@@ -75,7 +75,7 @@ You can publish the data source to sites created on other Bold BI servers.
 
   ![External Dialog](/static/assets/resource-migration/migrate-data-sources-online/images/external-site-dialog.png#width=55%)
 
-  For the Bold BI Enterprise server, you can obtain the site's Client Id and Client Secret values from the site details page.
+  For the Bold BI Server, you can obtain the site's Client Id and Client Secret values from the site details page.
 
   ![General Details](/static/assets/resource-migration/migrate-dashboards-online/images/general-details.png)
 

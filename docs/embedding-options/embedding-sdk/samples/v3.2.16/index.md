@@ -1,14 +1,14 @@
 ---
 layout: post
 title:  Embed SDK Samples for MVC, Angular and more | Bold BI Docs
-description: Explore the Bold BI Embedded SDK Sample applications for ASP.NET MVC, ASP.NET Core, Angular and more.
+description: Explore Bold BI Embed SDK sample applications for ASP.NET MVC, ASP.NET Core, Angular, and more with setup guidance.
 platform: bold-bi
 documentation: ug
 ---
 
-# Embedded SDK Samples
+# Embed SDK Samples
 
-The Embedded SDK is a JavaScript library that allows you to embed your BoldBI dashboards in various applications, such as ASP.NET MVC, ASP.NET Core, Angular, and React. This embedding feature helps to reduce the amount of code and effort needed to embed the dashboards and widgets. Sample applications for ASP.NET Core, ASP.NET MVC, and Angular are available. You can download and embed your dashboards and widgets using the links provided.
+The Embed SDK is a JavaScript library that allows you to embed your BoldBI dashboards in various applications, such as ASP.NET MVC, ASP.NET Core, Angular, and React. This embedding feature helps to reduce the amount of code and effort needed to embed the dashboards and widgets. Sample applications for ASP.NET Core, ASP.NET MVC, and Angular are available. You can download and embed your dashboards and widgets using the links provided.
 
 ## Available samples
 

@@ -103,14 +103,11 @@ function changeUrl() {
     });
 };
 
-document.addEventListener('DOMContentLoaded', function () {
-  sitevisitorLoad();
-});
-
-function sitevisitorLoad() {
-  const script = document.createElement("script");
-  script.src = "/js/sitevisitor-tracking.js";
-  script.defer = true;
-  script.async = true;
-  document.body.appendChild(script);
+function loadTrackingScript() {
+    const script = document.createElement("script");
+    script.src = `https://cdn.boldbi.com/website/js/tracking.js?v=${Date.now()}`;
+    script.async = true;
+    document.head.appendChild(script);
 }
+
+loadTrackingScript();

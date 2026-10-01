@@ -7,9 +7,9 @@ documentation: ug
 
 ---
 
-# Dashboard Themes in Bold BI Enterprise edition
+# Dashboard Themes in Bold BI Server
 
-The dashboard theme option is now available as a `preview feature` in the Bold BI Enterprise edition. This feature allows you to apply a different theme for the dashboard. Currently, we have provided light and dark themes.
+The dashboard theme option is now available as a `preview feature` in the Bold BI Server. This feature allows you to apply a different theme for the dashboard. Currently, we have provided light and dark themes.
 
 **NOTE:** You can customize themes for the BoldBI application using CSS variables. Refer to the [Custom Theme Viewer](/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/) section to learn more about creating and uploading customized themes in the BoldBI application. In the future, the dashboard theme using the JSON property will be deprecated. Instead of the JSON property, you can use theme variables to customize the BoldBI application. Refer to the [Theme Variable](/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/) section to find the equivalent theme variable for the JSON property.
 
@@ -33,9 +33,9 @@ The following image shows the dashboard view after applying the dark theme.
 
 The browser will remember the last applied theme and all dashboards will be rendered with that theme.
 
-## How to enable or disable the dashboard theme option in the Bold BI Enterprise edition
+## How to enable or disable the dashboard theme option in the Bold BI Server
 
-By default, the dashboard theme is enabled in the Bold BI Enterprise edition dashboards.
+By default, the dashboard theme is enabled in the Bold BI Enterprise dashboards.
 
 [Theming](/site-administration/dashboard-settings/enable-or-disable-dashboard-theme/) document section explains how to enable or disable the dashboard theme option in the Bold BI version 4.1.36 or later.
 
@@ -68,7 +68,7 @@ Custom theme allows you to customize the appearance of the Bold BI dashboard vie
 
 ## How to create and apply a new custom theme
 
-Follow the steps to add a new custom theme in Bold BI Enterprise edition:
+Follow the steps to add a new custom theme in Bold BI Server:
 
 1. Navigate to the Bold BI deployment location. 
 

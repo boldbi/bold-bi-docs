@@ -16682,6 +16682,15 @@
                                "$ref": "#/components/schemas/OAuthGroupImportSettings"
                             }
                         ]
+                    },
+                    "GroupClaim": {
+                        "type": "object",
+                        "description": "Defines the configuration for mapping group information from the authentication token to tenant site groups during user login. It controls whether group-based assignment is enabled, identifies the token claim containing group names, and determines how existing group memberships are handled.",
+                        "allOf": [
+                            {
+                               "$ref": "#/components/schemas/OAuthGroupClaimSettings"
+                            }
+                        ]
                     }
                 }
             },
@@ -16779,6 +16788,15 @@
                               "$ref": "#/components/schemas/OAuthGroupImportSettings"
                             }
                         ]
+                    },
+                    "GroupClaim": {
+                        "type": "object",
+                        "description": "Defines the configuration for mapping group information from the authentication token to tenant site groups during user login. It controls whether group-based assignment is enabled, identifies the token claim containing group names, and determines how existing group memberships are handled.",
+                        "allOf": [
+                            {
+                              "$ref": "#/components/schemas/OAuthGroupClaimSettings"
+                            }
+                        ]
                     }
                 }
             },
@@ -16792,6 +16810,23 @@
                     "Setting": {
                         "type": "object",
                         "description": "Group import settings details. Please refer to the link [here](/faq/what-are-the-different-request-object-properties-of-group-imports-setting-for-each-oauth-and-openid-provider-type/) to learn about the details of each provider type's group import settings."
+                    }
+                }
+            },
+            "OAuthGroupClaimSettings":{
+                "type": "object",
+                "properties": {
+                    "EnableGroupClaims": {
+                        "type": "boolean",
+                        "description": "Specify true if the group claim settings need to be enabled."
+                    },
+                    "GroupClaimName": {
+                        "type": "string",
+                        "description": "Specify the claim name from the authentication token that contains the list of group names. If present, these groups will be used to add the user, upon login, to the corresponding tenant groups."
+                    },
+                    "RemoveExistGroupMapping": {
+                        "type": "boolean",
+                        "description": "Specify true to remove the user from existing groups and add them to the new groups in the tenant site, as defined by the claim specified in the GroupClaimName property."
                     }
                 }
             },
@@ -16848,6 +16883,15 @@
                         "allOf": [
                             {
                               "$ref": "#/components/schemas/OpenIDGroupImportSettings"
+                            }
+                        ]
+                    },
+                    "GroupClaim": {
+                        "type": "object",
+                        "description": "Defines the configuration for mapping group information from the authentication token to tenant site groups during user login. It controls whether group-based assignment is enabled, identifies the token claim containing group names, and determines how existing group memberships are handled.",
+                        "allOf": [
+                            {
+                              "$ref": "#/components/schemas/OpenIDGroupClaimSettings"
                             }
                         ]
                     }
@@ -16914,6 +16958,15 @@
                         "$ref": "#/components/schemas/OpenIDGroupImportSettings"
                             }
                         ]
+                    },
+                    "GroupClaim": {
+                        "type": "object",
+                        "description": "Defines the configuration for mapping group information from the authentication token to tenant site groups during user login. It controls whether group-based assignment is enabled, identifies the token claim containing group names, and determines how existing group memberships are handled.",
+                        "allOf": [
+                            {
+                        "$ref": "#/components/schemas/OpenIDGroupClaimSettings"
+                            }
+                        ]
                     }
                 }
             },
@@ -16927,6 +16980,23 @@
                     "Setting": {
                         "type": "object",
                         "description": "Group import settings details. Please refer to the link [here](/faq/what-are-the-different-request-object-properties-of-group-imports-setting-for-each-oauth-and-openid-provider-type/) to learn about the details of each provider type's group import settings."
+                    }
+                }
+            },
+            "OpenIDGroupClaimSettings":{
+                "type": "object",
+                "properties": {
+                    "EnableGroupClaims": {
+                        "type": "boolean",
+                        "description": "Specify true if the group claim settings need to be enabled."
+                    },
+                    "GroupClaimName": {
+                        "type": "string",
+                        "description": "Specify the claim name from the authentication token that contains the list of group names. If present, these groups will be used to add the user, upon login, to the corresponding tenant groups."
+                    },
+                    "RemoveExistGroupMapping": {
+                        "type": "boolean",
+                        "description": "Specify true to remove the user from existing groups and add them to the new groups in the tenant site, as defined by the claim specified in the GroupClaimName property."
                     }
                 }
             },

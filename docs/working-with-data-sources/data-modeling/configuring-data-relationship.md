@@ -12,7 +12,7 @@ documentation: ug
 In data modeling, relationships between tables are essential for organizing and analyzing data effectively. A `Data Relationship` defines how data in one table connects to data in another, enabling seamless integration and accurate reporting. By configuring relationships such as One-to-Many, Many-to-One, and Many-to-Many, users can build more dynamic and scalable dashboards. These relationships eliminate the need for complex joins and improve query performance, making it easier to visualize and interpret data across multiple sources
 
 ## Data Relationships
-In addition to traditional joins, Bold BI Embedded now supports One-to-Many, Many-to-One and Many-to-Many relationships between tables.
+In addition to traditional joins, Bold BI Embedded now supports One-to-Many, Many-to-One relationships between tables.
 
   ![Relation toggle disable](/static/assets/working-with-datasource/images/relationToggleIcon.png)
  
@@ -30,6 +30,10 @@ In the Data Design View, the Join icon in the tools pane will be disabled if onl
  ![Relation double table](/static/assets/working-with-datasource/images/twoTablesRelationIcon.png)
 
 
+ Attempting to add the same table again in the Query Designer displays an alert message because self-referencing relationships are not supported in Bold BI.
+
+   ![Relation double table](/static/assets/working-with-datasource/images/SelfReferenceDialog.jpg)
+
 > **NOTE:** If the Relation toggle is disabled, dragging and dropping two tables will allow the Join icon to function as a Join tool, not a Relation tool.
 
 ### Why Use Relationships in Tables?
@@ -44,7 +48,6 @@ Relationships help:
 Currently Bold BI supports Relationship
 * One-to-Many Relationship
 * Many-to-One Relationship
-* Many-to-Many Relationship
 
 ### One-to-Many Relationship
 
@@ -65,14 +68,14 @@ One record in Table A can be related to many records in Table B, But each record
 
 * Click on the "New Relationship" button to begin creating a relationship between tables.
 
+
 * Choose the "From Table" and "To Table" to define the direction of the relationship.
-
-* Validate the relationship columns by selecting the appropriate key columns from each table that define the connection.
-
-* Choose the cardinality (e.g., One-to-Many, Many-to-One, Many-to-Many) based on the nature of the data.
 
   ![Relation create](/static/assets/working-with-datasource/images/onetomanyCreateDialog.png)
 
+* Validate the relationship columns by selecting the appropriate key columns from each table that define the connection.
+
+* Relationship cardinality is automatically determined using the first 1,000 records from the selected tables. You can review and adjust the cardinality manually if required..
 
   ![Relation cardinality](/static/assets/working-with-datasource/images/relationCardinality.png)
 
@@ -80,7 +83,7 @@ One record in Table A can be related to many records in Table B, But each record
 
 * The relationship will then be saved and managed within the Manage Relationships window.
 
-* From there, you can edit, or delete existing relationships as needed.
+* From there, you can edit or delete existing relationships, or view their status as needed.
 
   ![Relation status](/static/assets/working-with-datasource/images/savedRelationsOneToMany.png)
 
@@ -89,6 +92,10 @@ One record in Table A can be related to many records in Table B, But each record
 * Proceed to design the dashboard using appropriate widgets.
 
 * Use the related tables to bind data to widgets and visualize meaningful insights.
+
+* After configuring a relationship, it is represented by a line between the tables. Hover over the line to view the columns used to form the relationship.
+![Relation status](/static/assets/working-with-datasource/images/linerepresent.png)
+
 
 ### Demonstrating Data Differences: Join vs Relationship
 
@@ -127,7 +134,8 @@ Steps to Set Up in Bold BI
 
 1. Load the Tables
 Import all three tables (Students, Departments, StudentDepartment) into Bold BI.
-  ![Relation three table](/static/assets/working-with-datasource/images/manytoManythreeTables.png)
+
+![Relation three table](/static/assets/working-with-datasource/images/manytoManythreeTables.png)
 
 2. Define Relationships
 Go to Manage relationship by clicking the join icon in Bold BI BI and create the following relationships:
@@ -153,10 +161,19 @@ The data differences between Join and Relationship have been demonstrated using 
 ### How to Edit and Delete Relationships in Bold BI
 
 * Click on the Join icon to open the Manage Relationships dialog.
+* Select the relationship you want to edit or delete.
 * To edit a relationship, click the Edit icon next to the relationship entry.
+
+* You can edit the relationship by also double clicking the line between the tables
+ ![Relation delete icon](/static/assets/working-with-datasource/images/lineedit.png)
 * To delete a relationship, click the Delete icon (trash bin) next to the relationship entry.
 
   ![Relation delete icon](/static/assets/working-with-datasource/images/deleteEditIcon.png)
+
+* Attempting to add a duplicate relationship in Data Relationships displays an alert message, as duplicate relationships are not supported in Bold BI.
+
+  ![Relation delete icon](/static/assets/working-with-datasource/images/DuplicateRelationIcon.png)
+
 
 
 ### How to Switch the Relationships in Bold BI
@@ -179,14 +196,44 @@ The view will return to its initial state.
 The popup will be closed.
 All existing relationships and tables will remain unchanged, preserving the current configuration.
 
-### Limitations
+### Viewing Table and Column Mapping in Designer
 
-* Currently, Bold BI does not support expression creation directly based on data relationships. Users cannot build calculated fields or expressions that rely on relational logic between tables.
+In the Bold BI Dashboard Designer, all fields are displayed along with their corresponding table names across the **Measures**, **Dimensions**, and **Column** sections. This helps users clearly understand how each field is sourced and how it relates to the underlying data model.
+
+Each field is shown in the format:
+
+`ColumnName (TableName)`
+
+#### Examples
+
+- `OrderID (Orders)`
+- `CustomerID (Orders)`
+- `OrderID (Order Details)`
+
+This representation ensures that even if multiple tables contain columns with the same name, users can easily distinguish between them.
+
+#### Where This is Visible
+
+#### Measures Panel
+Numeric and aggregated fields display their associated table names, helping users identify the source of calculated values.
+
+#### Dimensions Panel
+Categorical fields also include table names, making it easier to group and filter data accurately.
+
+#### Column Section (Assign Data Panel)
+When dragging and dropping fields into widgets, the table name is retained alongside the column name to avoid ambiguity.
+
+![Column Mapping in Designer](/static/assets/working-with-datasource/images/columnmappingdesigner.png)
+
+
+
+### Limitations
 
 * Bold BI does not support direct many-to-many relationships. However, this can be achieved manually using the Join option in the data design view.
 
-* Bold BI does not auto-detect cardinality between tables. Users must manually define the cardinality (e.g., one-to-many, many-to-one) when configuring relationships. This requires careful attention to the structure and uniqueness of key columns in each table.
+* Bold BI automatically detects the relationship cardinality based on the first 1,000 records of the related tables. If the detected cardinality does not match the actual data relationship, you can manually modify it to the appropriate type (for example, one-to-many or many-to-one).
 
-* Relationship has been not supported for the code view mode.
+
+* Relationship has been not supported for the code view mode and data preview.
 
 > **NOTE:** Based on the relationships, data can be fetched from the server. For example, if there are three tables and two relationships among them, and a widget is configured with three aggregation columns from each table, then distinct related columns can be fetched separately, and multiple columns can be retrieved independently. As a result, two or more queries will be executed.

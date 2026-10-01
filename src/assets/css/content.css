@@ -83,9 +83,7 @@ body.focus-mode #md-content h4{
   gap: 8px;
   color: #475467;
   font-size: 14px;
-  margin-bottom: 12px;
-  border-bottom: 1px solid #e9ebee;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
   width: 100%;
 }
 
@@ -113,14 +111,17 @@ body.focus-mode #md-content h4{
 #md-content .read-time-text {
   padding-right: 12px;
 }
-
+#md-content .read-time.ai-summary-hidden-short-page {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e9ebee;
+  margin-bottom: 12px;
+}
 #md-content h2 {
   color: #1C1017;
   font-size: 24px;
   font-size: 24px;
   font-weight: 600;
-  line-height: 32px;
-  margin-bottom: 0;
+  line-height: 32px;  margin-bottom: 0;
   letter-spacing: -.5px;
   text-transform: initial;
   margin-top: 40px;
@@ -1051,103 +1052,6 @@ blockquote p a {
     #md-content p , #md-content a , #md-content li{
       font-size:15px;
     }
-}
-
-/* HelpBot: render as full-width bottom overlay on small screens */
-@media (max-width: 768px) {
-  /* Position the fixed container at the bottom and center the panel */
-  #helpbot-container.hb-fixed {
-    position: fixed;
-    left: 0 !important;
-    right: 0 !important;
-    bottom: 0 !important;
-    top: auto !important;
-    transform: translateY(0); 
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    height: auto;
-    z-index: 10000;
-  }
-  
-  @media (max-width: 768px) {
-  #helpbot-container.hb-fixed {
-    transform: translateX(0) !important;
-  }
-  #helpbot-container.hb-fixed .hb-panel{
-    height: 90% !important;
-  }
-}
-  /* Make the panel fill the width and slide from bottom */
-  #helpbot-container.hb-fixed .hb-panel {
-    width: 100% !important;
-    max-width: 100% !important;
-    margin: 0 !important;
-    border-radius: 12px 12px 0 0 !important; /* round top corners */
-    box-shadow: 0 -8px 24px rgba(16, 24, 40, 0.12);
-    transition: transform 320ms cubic-bezier(.2,.9,.2,1), opacity 200ms ease;
-    transform: translateY(100%);
-    height: 85vh;
-    max-height: 85vh;
-    overflow: hidden;
-  }
-
-  /* When the container is visible (not .hb-hidden) slide the panel up */
-  #helpbot-container:not(.hb-hidden).hb-fixed .hb-panel {
-    transform: translateY(0);
-  }
-
-  /* Ensure header corners stay rounded and body scrolls within panel */
-  #helpbot-container.hb-fixed .hb-header {
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-  }
-
-  #helpbot-container.hb-fixed .hb-body {
-    max-height: calc(85vh - 110px);
-    overflow-y: auto;
-  }
-
-  /* Make input area sticky at bottom of panel so it's always reachable */
-  #helpbot-container.hb-fixed .hb-input {
-    position: sticky;
-    bottom: 0;
-    background: #fafafa;
-    z-index: 2;
-  }
-
-  /* Dark translucent backdrop behind the HelpBot panel (mobile) */
-  #helpbot-container.hb-fixed {
-    /* create a stacking context for the pseudo-element */
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-  }
-
-  #helpbot-container.hb-fixed::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: rgba(2,6,23,0.6); /* dark translucent overlay */
-    backdrop-filter: blur(2px);
-    opacity: 0;
-    transition: opacity 220ms ease;
-    z-index: 1; /* sit below the panel but above page content */
-    pointer-events: auto;
-  }
-
-  /* Show overlay when the chat is open */
-  #helpbot-container.hb-fixed:not(.hb-hidden)::before {
-    opacity: 1;
-  }
-
-  /* Ensure panel floats above the pseudo overlay */
-  #helpbot-container.hb-fixed .hb-panel {
-    position: relative;
-    z-index: 2;
-  }
 }
 
 /* Breadcrumb: change home title color when hovering the home icon */

@@ -8,12 +8,12 @@ documentation: ug
 ---
 
 # Connecting Bold BI to ODBC data source
-Bold BI Dashboard designer (Enterprise) supports connecting to datasources through Open Database Connectivity (ODBC).
+Bold BI Dashboard designer (Server) supports connecting to datasources through Open Database Connectivity (ODBC).
 
 > **Note:** The ODBC Connector is available in On-Premises Deployment but not in the Syncfusion Managed Cloud Server.
 
 ## Choose an ODBC data source
-The Dashboard Designer (Enterprise) supports connecting to ODBC data sources through the following two connection modes.
+The Dashboard Designer (Server) supports connecting to ODBC data sources through the following two connection modes.
 
 •	Data Source Name (DSN).
 

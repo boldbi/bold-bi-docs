@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Web Bold Data Hub Connector – Embedded BI | Bold BI Learning
-description: Learn how to use the Web Data Hub connectors in Bold BI Enterprise Edition. Discover simple steps to integrate data smoothly and make the most of your analytics.
+description: Learn how to use the Web Data Hub connectors in Bold BI Server. Discover simple steps to integrate data smoothly and make the most of your analytics.
 platform: bold-bi
 documentation: ug
 
@@ -26,7 +26,26 @@ password: Password
 type: HHTP method either GET/POST
 headers: Header parameters
 params: Query Paramaeter value
-data: Data value 
+data: Data value
+```
+
+### Example Configuration
+
+```yaml
+version: 1
+encrypt_credentials: false
+plugins:
+  extractors:
+    - name: web
+      #Json Response only supported
+      connectorname: Web
+      config:
+        url: url
+        # Basic Authentication
+        username: username
+        password: password
+        type: get
+        headers: { 'ContentType': 'application/json' }
 ```
 
 ## Configure the Bold Data Hub to connect Web
@@ -60,8 +79,7 @@ data: Data value
   
   5. Creating a Pipeline in Bold Data Hub automatically creates a Data Source in Bold BI. The Bold BI Data Source is a live data source to the destination database used in Bold Data Hub. For more information on the relationship between Bold Data Hub Pipeline and the associated Data Sources in Bold BI , please refer to [Relationship between Bold Data Hub Pipeline and Associated Data Sources in Bold BI](https://help.boldbi.com/working-with-data-sources/working-with-bold-data-hub/relationship-between-bold-data-hub-pipeline-and-associated-data-sources-in-boldbi/)
 
-  
- 
+
 ### Schedule Bold Data Hub Job
 
 1. To configure interval-based scheduling, click on the schedules tab and select the created pipeline and click on the schedule icon and configure it.
@@ -78,28 +96,8 @@ data: Data value
 
 ![Web - BoldBI](/static/assets/working-with-etl/images/schedule_history.png#max-width=100%)
 
-4. Click on Logs to see if the run is completed and data source is created in Bold BI. 
+4. Click on Logs to see if the run is completed and data source is created in Bold BI.
 
 ![Web - BoldBI](/static/assets/working-with-etl/images/pipeline_DsCreated.png#max-width=100%)
 
-
 5. Click `Edit DataSource` Option to view the created tables.
-
-### Example Configuration
-
-```yaml
-version: 1
-encrypt_credentials: false
-plugins:
-  extractors:
-    - name: web
-      #Json Response only supported
-      connectorname: Web
-      config:
-        url: url
-        # Basic Authentication
-        username: username 
-        password: password
-        type: get 
-        headers: { 'ContentType': 'application/json' } 
-```

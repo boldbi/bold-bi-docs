@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Transformation Customer Satisfaction Summary | Bold Data Hub
-description: Learn how to use the ETL/Data Hub Transformation section in Bold BI Enterprise Edition. Discover simple steps to summarize the customer satisfaction and make the most of your analytics.
+description: Learn how to use the ETL/Data Hub Transformation section in Bold BI Server. Discover simple steps to summarize the customer satisfaction and make the most of your analytics.
 platform: bold-bi
 documentation: ug
 

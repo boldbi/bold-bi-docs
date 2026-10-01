@@ -306,6 +306,24 @@ This allows you to enable the visibility of `Data Labels.`
 
 ![Show Labels](/static/assets/visualizing-data/visualization-widgets/images/map/show-labels.png)
 
+#### Value Type
+
+The **Value Type** option controls what information is displayed as a data label on each region of the map. You can choose one of the following options from the Value Type drop-down: `Location Value`, `Location Name`, or `Location Name And Value`.
+
+![ValueType](/static/assets/visualizing-data/visualization-widgets/images/map/choroplethmap-valuetype.png)
+
+**Location Value**
+
+Select this option to display only the numeric or measure value (e.g., sales amount, population count) as the data label on each map region. Use this when the focus is on the quantitative data rather than the region's name.
+
+**Location Name**
+
+Select this option to display only the name of the geographic region (e.g., country name, state name) as the data label. Use this when you need to identify regions by name without being distracted by numeric values.
+
+**Location Name And Value**
+
+Select this option to display both the region name and its corresponding numeric value together as the data label. Use this when you want to provide complete context, helping viewers identify the region and understand its value at a glance.
+
 #### Label Color
 
 This allows you to customize the color of the data labels.

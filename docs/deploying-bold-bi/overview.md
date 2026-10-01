@@ -13,14 +13,14 @@ Bold BI is an all-inclusive solution designed for creating, managing, and sharin
 ## Prerequisites for Windows
 
 ### Hardware requirements
-The following hardware requirements are necessary to run the Bold BI Enterprise edition:
+The following hardware requirements are necessary to run the Bold BI Server:
 * **Operating System:**  Windows Client 10+ | Windows Server 2022+.
 * **CPU:** 2-core, 2.4 GHz or faster, and 32-bit or 64-bit processor.
 * **Memory:** 8 GB RAM for 32-bit or 64-bit.
 * **Hard drive:** 10 GB of free space (only installation files).
 
 ### Software requirements
-The following software requirements are necessary to run the Bold BI Enterprise edition:
+The following software requirements are necessary to run the Bold BI Server:
 * **Framework:** [Microsoft .NET Framework 4.5](https://www.microsoft.com/en-in/download/details.aspx?id=30653)
 * **Database:** PostgreSQL 13.0+| Microsoft SQL Server 2016+ | MySQL 8.0+ | Oracle Database 19c+
 * **Web Server:** [Internet Information Services (IIS) 10.0+](https://en.wikipedia.org/wiki/Internet_Information_Services)
@@ -29,7 +29,7 @@ The following software requirements are necessary to run the Bold BI Enterprise 
 ## Prerequisites for Linux
 
 ### Hardware requirements
-The following hardware requirements are necessary to run the Bold BI Enterprise edition:
+The following hardware requirements are necessary to run the Bold BI Server:
 * **Operating System:**  Bold BI Linux can run on different Linux distributions. It has been verified on the following operating systems:
     * Ubuntu 20.04+
     * Cent OS Stream 9+
@@ -40,7 +40,7 @@ The following hardware requirements are necessary to run the Bold BI Enterprise 
 * **Disk Space:** 10 GB or more.
 
 ### Software requirements
-The following software requirements are necessary to run the Bold BI Enterprise edition:
+The following software requirements are necessary to run the Bold BI Server:
 * **Database:** PostgreSQL 13.0+| Microsoft SQL Server 2016+ | MySQL 8.0+ | Oracle Database 19c+
 * **Web Server:** [Nginx](https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/linux-nginx?view=aspnetcore-3.1#install-nginx)  or [Apache](https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/linux-apache?view=aspnetcore-3.1)
 * **Web Browser:** Mozilla Firefox | Chrome | Microsoft Edge.

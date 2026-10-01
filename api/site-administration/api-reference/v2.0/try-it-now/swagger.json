@@ -1769,6 +1769,84 @@
         }
       }
     },
+    "/v2.0/settings/authentication/default-authentication": {
+      "get": {
+        "tags": [
+          "Administration"
+        ],
+        "summary": "Get Default Authentication",
+        "description": "Get Default Authentication via a single GET API to explicitly enable or disable it across Server without impacting existing flows.",
+        "operationId": "Get_DefaultAuthentication",
+        "requestBody": {
+          "description": "Details about the get authentication that was passed will be added.",
+          "content": {},
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Default authentication settings have been successfully retrieved.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DefaultAuthenticationResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Access denied.",
+            "content": {}
+          },
+          "404": {
+            "description": "Item details not found.",
+            "content": {}
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Administration"
+        ],
+        "summary": "Update Default Authentication",
+        "description": "Update Default Authentication via a single PUT API to explicitly enable or disable it across Server without impacting existing flows.",
+        "operationId": "Update_DefaultAuthentication",
+        "requestBody": {
+          "description": "Details about the update authentication that was passed will be added.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DefaultAuthenticationRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "The schedule was created successfully.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UpdateDefaultAuthenticationResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "The provided auth provider settings are not configured.",
+            "content": {}
+          },
+          "401": {
+            "description": "Access denied.",
+            "content": {}
+          },
+          "404": {
+            "description": "Item details not found.",
+            "content": {}
+          }
+        }
+      }
+    },
     "/v2.0/administration/look-and-feel/resources": {
       "get": {
         "tags": [
@@ -4859,8 +4937,79 @@
           "description": "Returns the status message from the API."
         }
       }
-    }
-  },
+    },
+    "DefaultAuthenticationRequest": {
+        "required": [
+          "IsDefaultAuthenticationEnabled"
+        ],
+        "type": "object",
+        "properties": {
+          "IsDefaultAuthenticationEnabled": {
+            "type": "boolean",
+            "description": "When set to false, the system continues with the existing authentication behavior. "
+            },
+            "AuthProvider": {
+              "type": "integer",
+              "description": "Specifies which authentication provider should be used as the default when Default Authentication is enabled. Applicable only when IsDefaultAuthenticationEnabled = true; 1 - Custom OAuth, 2 - Custom OIDC, 3 - Azure AD, 4 - JWT SSO, 5 - Windows AD, 6 - Azure AD B2C"
+            }
+        }
+      },
+    "DefaultAuthenticationResponse": {
+        "type": "object",
+        "properties": {
+          "ApiStatus": {
+            "type": "boolean",
+            "description": "Returns the status of the API."
+          },
+          "Data": {
+            "type": "array",
+            "description": "Returns data from the API.",
+            "items": {
+              "$ref": "#/components/schemas/GetDefaultAuthenticationResponse"
+            }
+          },
+          "Status": {
+            "type": "boolean",
+            "description": "Returns status of the API request."
+          },
+          "StatusMessage": {
+            "type": "string",
+            "description": "Returns the status message from the API."
+          }
+        }
+      },      
+    "GetDefaultAuthenticationResponse": {
+        "type": "object",
+        "properties": {
+          "IsDefaultAuthenticationEnabled": {
+            "type": "boolean",
+            "description": "Data source column name."
+          },
+          "EnabledProvidername": {
+            "type": "string",
+            "description": "Data source column desired type."
+          }
+        },
+        "description": "Data source columns details."
+      },
+    "UpdateDefaultAuthenticationResponse": {
+        "type": "object",
+        "properties": {
+          "ApiStatus": {
+            "type": "boolean",
+            "description": "Returns the status of the API."
+          },
+          "Status": {
+            "type": "boolean",
+            "description": "Returns status of the API request."
+          },
+          "StatusMessage": {
+            "type": "string",
+            "description": "Default authentication settings have been updated successfully."
+          }
+        }
+      }
+    },
   "parameters": {},
   "responses": {}
 }

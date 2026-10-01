@@ -1,7 +1,7 @@
 ---
 layout: post
 title: MySQL Data Hub Connector – Embedded BI | Bold BI Learning
-description: Learn how to use the MySQL Bold Data Hub connectors in Bold BI Enterprise Edition. Discover simple steps to integrate data smoothly and make the most of your analytics.
+description: Learn how to use the MySQL Bold Data Hub connectors in Bold BI Server. Discover simple steps to integrate data smoothly and make the most of your analytics.
 platform: bold-bi
 documentation: ug
 
@@ -120,7 +120,7 @@ metadata:
 ### INCREMENTAL
 
 ```yaml
-version: 1
+version: 1.0.1
 encrypt_credentials: false
 plugins:
   extractors:
@@ -150,7 +150,7 @@ plugins:
 ### FULL_TABLE
 
 ```yaml
-version: 1
+version: 1.0.1
 encrypt_credentials: false
 plugins:
   extractors:

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Notion Data Hub Connector – Embedded BI | Bold BI Learning
-description: Learn how to use the Notion Bold Data Hub connectors in Bold BI Enterprise Edition. Discover simple steps to integrate data smoothly and make the most of your analytics.
+description: Learn how to use the Notion Bold Data Hub connectors in Bold BI Server. Discover simple steps to integrate data smoothly and make the most of your analytics.
 platform: bold-bi
 documentation: ug
 
@@ -14,6 +14,9 @@ documentation: ug
 ## Grab Credentials
 
 1. If you don't have a Notion account, please create one.
+
+![Notion Data Hub - BoldBI](/static/assets/working-with-etl/images/notion.png#max-width=100%)
+
 2. Access your Notion account and navigate to My Integrations.
 3. Click on "New Integration" on the left and name it appropriately.
 4. Finally, click on "Submit" located at the bottom of the page.
@@ -36,7 +39,7 @@ api_key: API key
 ### Example Configuration
 
 ```yaml
-version: 1
+version: 1.0.1
 encrypt_credentials: false
 plugins:
   extractors:
@@ -64,9 +67,7 @@ plugins:
   
   4. Update the api key in the template. Also, Update the resources on the `select` property and Click Save, choose the desired destination to save the pipeline.
   
-  5. Creating a Pipeline in Bold Data Hub automatically creates a Data Source in Bold BI. The Bold BI Data Source is a live data source to the destination database used in Bold Data Hub. For more information on the relationship between Bold Data Hub Pipeline and the associated Data Sources in Bold BI , please refer to [Relationship between Bold Data Hub Pipeline and Associated Data Sources in Bold BI]
-
-(https://help.boldbi.com/working-with-data-sources/working-with-bold-data-hub/relationship-between-bold-data-hub-pipeline-and-associated-data-sources-in-boldbi/)
+  5. Creating a Pipeline in Bold Data Hub automatically creates a Data Source in Bold BI. The Bold BI Data Source is a live data source to the destination database used in Bold Data Hub. For more information on the relationship between Bold Data Hub Pipeline and the associated Data Sources in Bold BI , please refer to [Relationship between Bold Data Hub Pipeline and Associated Data Sources in Bold BI](https://help.boldbi.com/working-with-data-sources/working-with-bold-data-hub/relationship-between-bold-data-hub-pipeline-and-associated-data-sources-in-boldbi/)
 
 
 >**Warning:**

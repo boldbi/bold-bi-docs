@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Transformation - Customer Journey Analysis in Bold Data Hub
-description: Learn how to use the Data Hub Transformation section in Bold Data Hub Enterprise Edition. Discover simple steps to analyze the customer journey and make the most of your analytics.
+description: Learn how to use the Data Hub Transformation section in Bold Data Hub Server. Discover simple steps to analyze the customer journey and make the most of your analytics.
 platform: bold-bi
 documentation: ug
 

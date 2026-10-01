@@ -8,9 +8,9 @@ documentation: ug
 
 # Deploying on Windows
 
-This section provides comprehensive guidelines on how to deploy the Enterprise edition of Bold BI and how to install Bold BI in the presence of Bold Reports.
+This section provides comprehensive guidelines on how to deploy the Bold BI Server and how to install Bold BI in the presence of Bold Reports.
 
-Explore the detailed procedure of the Enterprise BI installation and deployment below:
+Explore the detailed procedure of the Bold BI Server installation and deployment below:
 
 [Prerequisites](/deploying-bold-bi/deploying-on-windows/prerequisites-windows/)
 

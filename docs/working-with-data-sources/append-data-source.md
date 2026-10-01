@@ -8,7 +8,7 @@ documentation: ug
 
 # Append Data Source in Bold BI:
 
-This section explains how to use the `Append Data` option in Bold BI Enterprise.
+This section explains how to use the `Append Data` option in Bold BI Server.
 
 ![Append data icon](/static/assets/working-with-datasource/append-data-from-file/images/append-ds-icon.png)
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ElasticSearch Data Hub Connector – Embedded BI | Bold BI Learning
-description: Learn how to use the ElasticSearch Bold Data Hub connector in Bold BI Enterprise Edition. Discover simple steps to integrate ElasticSearch data smoothly and make the most of your analytics.
+description: Learn how to use the ElasticSearch Bold Data Hub connector in Bold BI Server. Discover simple steps to integrate ElasticSearch data smoothly and make the most of your analytics.
 platform: bold-bi
 documentation: ug
 ---
@@ -61,7 +61,7 @@ plugins:
   extractors:
     - name: es
       connectorname: ElasticSearch
-      schemaname: 
+      schemaname:
       config:
         host: https://e7024573e1574eaf8f2677593082e16e9.us-central1.gcp.cloud.es.io
         port: 443
@@ -71,8 +71,8 @@ plugins:
         # password: password@123
         index_name: index
         page_size: 10000
-      properties: 
-      metadata: 
+      properties:
+      metadata:
       select:
 
 ```

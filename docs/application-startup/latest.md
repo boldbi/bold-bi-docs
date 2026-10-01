@@ -14,7 +14,7 @@ If Bold BI is deployed in an air-gapped environment, meaning there is no interne
 
 ## License Activation
 
-This topic explains how to activate the account and also how to start up the Bold BI Enterprise Application.
+This topic explains how to activate the account and also how to start up the Bold BI Server Application.
 
 The Bold BI application can be activated either by using your login credentials or an offline unlock key.
 
@@ -69,7 +69,7 @@ If you do not have a Bold BI account, you can request a new trial by clicking on
 
 ![Activate the account with No Trail option](/static/assets/application-startup/images/application-startup-sign-up.png)
 
-## Application Startup for Bold BI Enterprise
+## Application Startup for Bold BI Server
 
 The application startup screen helps you configure the admin account setup, database configuration, and storage configuration.
 
@@ -199,7 +199,7 @@ The Bold BI application requires specific collations based on the type of databa
 
 
 
-> **NOTE:** To connect to a PostgreSQL database, you need to install the PostgreSQL client library while installing the Bold BI Enterprise edition. Learn more [here](/deploying-bold-bi/deploying-on-windows/installation-and-deployment/#client-libraries).
+> **NOTE:** To connect to a PostgreSQL database, you need to install the PostgreSQL client library while installing the Bold BI Server. Learn more [here](/deploying-bold-bi/deploying-on-windows/installation-and-deployment/#client-libraries).
 
 After clicking Next, the application will register and validate the site information. Once the process is completed, you will be able to:
 * Manage sites – where you can manage the permissions for the sites you have created. 

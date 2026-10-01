@@ -7,7 +7,7 @@ documentation: ug
 keywords: Bold BI, embedding, AI Assistant
 ---
 
-# Bold BI Embedding SDK for AI Assistant
+# Bold BI Embed SDK for AI Assistant
 
 The Bold BI Embed SDK enables you to render the **AI Assistant** by specifying the **server URL**, **mode** and **embed token** within your application.
 

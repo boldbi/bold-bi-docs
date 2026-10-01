@@ -6,7 +6,7 @@ platform: bold-bi
 documentation: ug
 ---
 
-# Bold BI Dashboards embedding in Vue.js with Node.js using Embedded SDK
+# Bold BI Dashboards embedding in Vue.js with Node.js using Embed SDK
 
 A GitHub link has been provided to [get](https://github.com/boldbi/vue-with-nodejs-sample) the sample application, which showcases the rendering of the dashboard that is accessible on your Bold BI server. Following this, there are instructions on how to create a new embedding application in `Vue.js` with `Node.js` on your own.
 

@@ -83,7 +83,7 @@ Also, we can continue the restoring process by using the `Proceed to Restore` bu
 
 In this module, the exported dashboards and datasets will be imported to the target Bold BI site using the backup file (*.sybak). 
 
-> **NOTE:**  For `Bold BI Enterprise`, the Migration utility needs to be run from the machine where the Bold BI Enterprise server is installed.
+> **NOTE:**  For `Bold BI Server`, the Migration utility needs to be run from the machine where the Bold BI Server is installed.
 
 ### Steps to restore the Dashboards and Data sources
 

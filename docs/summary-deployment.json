@@ -129,6 +129,13 @@
 					}
 				}
 			},
+			"Bold BI Upgrade Center": {
+				"slug": "upgrade-center",
+				"pages": {
+					"Upgrade Center on Kubernetes": "upgrade-center-on-kubernetes"
+				}
+			},
+		
 			"Deploy Cloud Platform Using Terraform": "deploying-on-cloud-platform-using-terraform",
 			"Upgrade Guidelines": "upgrade-guidelines"
 		}

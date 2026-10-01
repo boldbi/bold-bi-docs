@@ -7,7 +7,7 @@ documentation: ug
 keywords: Bold BI, embedding, Dashboard
 ---
 
-# Bold BI Embedding SDK for Designer
+# Bold BI Embed SDK for Designer
 
 The Bold BI Embed SDK allows you to seamlessly integrate and visualize dashboards in design mode from your Bold BI server within your web applications. By specifying the **server URL**, **dashboard ID**, **mode**, and **embed token**, you can securely embed the dashboard designer experience.
 

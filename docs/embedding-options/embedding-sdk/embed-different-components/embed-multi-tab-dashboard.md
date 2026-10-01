@@ -17,7 +17,7 @@ Embed a **multi-tab dashboard** programmatically from a Bold BI dashboard using 
 ## Steps to Embed a Multi-Tab Dashboard Programmatically
 
 <ul style="list-style-type: decimal; padding-left:20px; margin-top: 15px;">
-  <li style="margin-top: 15px;">Install the Bold BI Embedded SDK (via NPM or CDN).</li>
+  <li style="margin-top: 15px;">Install the Bold BI Embed SDK (via NPM or CDN).</li>
   <li style="margin-top: 15px;">Add a container <code>&lt;div&gt;</code> in your frontend where the multi-tab dashboard will load.</li>
 </ul>
 

@@ -51,7 +51,7 @@ app.post('/tokenGeneration', function (request, response) {
       {
           name: "Region",
           value: ["North", "East"],
-          operator: "IN" // optional
+          operator: "IN"
       }
     ],
     dashboardparameters: [
@@ -83,7 +83,7 @@ public string TokenGeneration()
         new {
             name = "Region",
             value = new[] { "North", "East" },
-            @operator = ""  // Optional
+            @operator = "IN"  
         }
     },
     dashboardparameters = new List<object>
@@ -112,7 +112,7 @@ def TokenGeneration(request):
         {
           "name": "Region",
           "value": ["North", "East"],
-          "operator": "IN"  # Optional
+          "operator": "IN"
         }
       ],
       "dashboardparameters": [
@@ -141,7 +141,7 @@ function getToken() {
       [
         "name" => "Region",
         "value" => ["North", "East"],
-        "operator" => ""  // optional
+        "operator" => "IN"  
       ]
     ],
     "dashboardparameters" => [
@@ -194,7 +194,7 @@ app.post('/tokenGeneration', function (request, response) {
         {
             name: "department",
             value: ["ECE", "IT"],
-            operator: "IN"  // optional
+            operator: "IN"
         }
     ]
  }
@@ -219,7 +219,7 @@ public string TokenGeneration()
         new {
             name = "department",
             value = new[] {"ECE", "IT"},
-            @operator = "IN"  // optional
+            @operator = "IN"
         }
     }
   };
@@ -240,7 +240,7 @@ def TokenGeneration(request):
         {
           "name": "department",
           "value": ["ECE", "IT"],
-          "operator: "IN"  # Optional
+          "operator: "IN"
         }
       ]
     }
@@ -262,7 +262,7 @@ function getToken() {
       [
         "name" => "department",
         "value" => ["ECE", "IT"],
-        "operator" = "IN"  // optional
+        "operator" = "IN"
       ]
     ]
   ];
@@ -277,7 +277,7 @@ function getToken() {
   <li> <b>Multi-Tenant Efficiency</b>: Reuse a single dashboard template across multiple tenants with different databases.</li>
 </ul>
 
-> **Note:** As of now, we provide the following operator supports only: =, IN, and NOT IN. The operator property is optional for = and IN cases alone and is case-insensitive.
+> **Note:** Currently, we support only the following operators: =, IN, and NOT IN. The operator property is optional only for the = and IN operators and is case-insensitive before version 16.1. From version 16.1 onwards, the IN operator is required.
 
 ## Decision Matrix: Data Filters vs Custom Attributes
 <table>

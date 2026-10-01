@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Strapi ETL/Data Hub Connector – Embedded BI | Bold BI Learning
-description: Learn how to use the Strapi ETL/Bold Data Hub connectors in Bold BI Enterprise Edition. Discover simple steps to integrate data smoothly and make the most of your analytics.
+description: Learn how to use the Strapi ETL/Bold Data Hub connectors in Bold BI Server. Discover simple steps to integrate data smoothly and make the most of your analytics.
 platform: bold-bi
 documentation: ug
 
 ---
 
-# ``Strapi``
+# Strapi
 
 Strapi is a headless CMS (Content Management System) that allows developers to create API-driven content management systems without writing much custom code.
 
@@ -35,7 +35,7 @@ Domain: Domain
 ### Example
 
 ```yaml
-version: 1
+version: 1.0.1
 encrypt_credentials: false
 plugins:
   extractors:
@@ -91,6 +91,5 @@ plugins:
 4. Click on Logs to see if the run is completed and data source is created in Bold BI. 
 
 ![Strapi - BoldBI](/static/assets/working-with-etl/images/pipeline_DsCreated.png#max-width=100%)
-
 
 5. Click `Edit DataSource` Option to view the created tables.

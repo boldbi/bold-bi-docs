@@ -1,19 +1,22 @@
 ---
 layout: post
 title: Mux Bold Data Hub Connector – Embedded BI | Bold BI Learning
-description: Learn how to use the Mux Bold Data Hub connectors in Bold BI Enterprise Edition. Discover simple steps to integrate data smoothly and make the most of your analytics.
+description: Learn how to use the Mux Bold Data Hub connectors in Bold BI Server. Discover simple steps to integrate data smoothly and make the most of your analytics.
 platform: bold-bi
 documentation: ug
 
 ---
 
-# ``Mux``
+# Mux
 
 ``Mux `` is a video technology platform that provides infrastructure and tools for developers to build and stream high-quality video content.
 
 ## Grab Credentials
 
 1. Sign in to ``mux.com``.
+
+![Mux Data Hub - BoldBII](/static/assets/working-with-etl/images/mux.png#max-width=100%)
+
 2. Click on "Settings" at the bottom left, then select "Access Token".
 3. Select "Generate new token".
 4. Assign read permissions for `Mux` videos and data, and give the token a name.
@@ -34,7 +37,7 @@ mux_api_secret_key: API secret key
 ### Example Configuration
 
 ```yaml
-version: 1
+version: 1.0.1
 encrypt_credentials: false
 plugins:
   extractors:
@@ -44,7 +47,7 @@ plugins:
         mux_api_access_token: <API TOKEN>
         mux_api_secret_key: <SECRET KEY>
       select:
-       -views/assets
+        -views/assets
 ```
 
 ## Configure the Data Hub to connect Mux
@@ -96,9 +99,8 @@ The available resources are supported in Mux
 
 ![Mux - BoldBI](/static/assets/working-with-etl/images/schedule_history.png#max-width=100%)
 
-4. Click on Logs to see if the run is completed and data source is created in Bold BI. 
+4. Click on Logs to see if the run is completed and data source is created in Bold BI.
 
 ![Mux - BoldBI](/static/assets/working-with-etl/images/pipeline_DsCreated.png#max-width=100%)
-
 
 5. Click `Edit DataSource` Option to view the created tables.

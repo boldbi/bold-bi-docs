@@ -32,7 +32,7 @@ To configure the Optimizely data source, follow the below steps:
 
 Once you click the Optimizely data source, the NEW DATA SOURCE configuration panel will open. Follow the below steps to create Optimizely data source.
 1. Enter a name and description (optional) for the data source.
-2. Enter a valid Optimizely REST API endpoint in the URL textbox. Refer to the [Optimizely API documentation](https://developers.optimizely.com/classic/rest/v1/) for more details.
+2. Enter a valid Optimizely REST API endpoint in the URL textbox. Refer to the [Optimizely API documentation](https://docs.developers.optimizely.com/web-experimentation/reference/overview) for more details.
 
    Example: `https://%3cyour-account%3e.api-us1.com/api/3/connections`
 
@@ -83,7 +83,7 @@ The period of time before the next refresh call is triggered. This will automati
 Replace it in the URL to query a particular experiments:
 `https://api.optimizely.com/v2/projects/15269830028/experiments/`
 
-For more information on the API endpoints available for this data source, refer to their official [API Documentation](https://developers.optimizely.com/classic/rest/v1/)
+For more information on the API endpoints available for this data source, refer to their official [API Documentation](https://docs.developers.optimizely.com/web-experimentation/reference/overview)
 
 ### Sample queries
 

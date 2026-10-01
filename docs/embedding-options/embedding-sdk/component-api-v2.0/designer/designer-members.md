@@ -924,6 +924,37 @@ var dashboard = BoldBI.create({
 dashboard.loadDesigner();
 ```
 
+## customErrorMessage
+ 
+<h3 class="doc-prop-wrapper" id="customerrormessage" data-Path="customerrormessage-customErrorMessage.customMessage">
+<a href="#customerrormessage" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
+<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+</svg>
+</a><span class='doc-prop-name'>customMessage</span>
+ 
+<span class="doc-prop-type"> `string`
+</span>
+ 
+</h3>
+ 
+The customErrorMessage option allows you to display a custom message along with the dashboard's error message. This can be used to provide users with additional context, guidance, or troubleshooting information when an error occurs. 
+
+- **Default value**: `empty`
+ 
+**Example**
+ 
+```js
+var dashboard = BoldBI.create({
+    settings: {
+        customErrorMessage: {
+            customMessage: "Contact Support Team"
+        }
+    }
+});
+dashboard.loadDashboard();
+```
+
 ## designCanvas
 
 <h3 class="doc-prop-wrapper" id="margin" data-Path="designcanvasmargin-designCanvas.margin">
@@ -1678,6 +1709,80 @@ dashboard.loadDesigner();
 ```
 
 ## widgetsPanel
+
+<h3 class="doc-prop-wrapper" id="enablemodernlayout" data-Path="designerwidgetspanelenablemodernlayout-designer.widgetsPanel.enableModernLayout">
+<a href="#enablemodernlayout" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
+<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+</svg>
+</a><span class='doc-prop-name'>enableModernLayout</span>
+
+<span class="doc-prop-type"> `boolean`
+</span>
+
+</h3>
+
+Enables the modern widget panel experience in the dashboard designer, including enhanced layouts, improved styling, and modern widget browsing capabilities. This introduces a Modern panel alongside the existing panel and enhances the UI to clearly differentiate between Classic and Modern widgets.
+
+
+- **Default**: `true`
+- **Note**: This feature is available from Bold BI version 16.1 onwards. When `enableModernLayout` is set to `true`, Classic and Modern widgets are organized into separate tabs, each displaying their respective widget groups. When `enableModernLayout` is set to `false`, both Classic and Modern widgets are displayed together in a single view without tab separation. In this mode, the `displayMode` property is not applicable.
+
+**Example** 
+
+```js
+var dashboard = BoldBI.create({
+    mode: BoldBI.Mode.Design,
+    settings: {
+        designer: {
+            widgetsPanel: {
+                enableModernLayout: true
+            }
+        }
+    }
+});
+dashboard.loadDesigner();
+```
+
+<h3 class="doc-prop-wrapper" id="displaymode" data-Path="designerwidgetspaneldisplaymode-designer.widgetsPanel.displayMode">
+<a href="#displaymode" aria-hidden="true" class="anchor">
+<svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16" style="display: none;">
+<path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 .72-2 .25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 .5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 3h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+</svg>
+</a><span class='doc-prop-name'>displayMode</span>
+
+<span class="doc-prop-type"> `enum`
+</span>
+
+</h3>
+
+Controls which widget categories are displayed in the widget panel.
+
+
+
+- **Supported Values**:
+  - `BoldBI.WidgetPanelDisplayMode.Classic`: Displays Classic widgets.
+  - `BoldBI.WidgetPanelDisplayMode.Modern`: Displays Modern widgets.
+  - `BoldBI.WidgetPanelDisplayMode.Both`: Displays both Classic and Modern categories and allows users to switch between them.
+- **Default**: `BoldBI.WidgetPanelDisplayMode.Both`
+- **Note**: This feature is available from Bold BI version 16.1 onwards. This property works only when `enableModernLayout` is set to `true`.
+
+**Example** 
+
+```js
+var dashboard = BoldBI.create({
+    mode: BoldBI.Mode.Design,
+    settings: {
+        designer: {
+            widgetsPanel: {
+                enableModernLayout: true,
+                displayMode: BoldBI.WidgetPanelDisplayMode.Both
+            }
+        }
+    }
+});
+dashboard.loadDesigner();
+```
 
 <h3 class="doc-prop-wrapper" id="existingdashboards" data-Path="designerwidgetspanelexistingdashboards-designer.widgetsPanel.existingDashboards">
 <a href="#existingdashboards" aria-hidden="true" class="anchor">

@@ -12,7 +12,7 @@ Starting from Bold BI<sup>®</sup> version 11.3.24, we now provide support for i
 
 ## Installation Steps
 
-* Before installing Bold BI<sup>®</sup>, ensure that the **EPEL (Extra Packages for Enterprise Linux)** repository is installed on your machine. If it is not installed, run the following command:
+* Before installing Bold BI<sup>®</sup>, ensure that the **EPEL (Extra Packages for Server Linux)** repository is installed on your machine. If it is not installed, run the following command:
 
     ```sh
     sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm

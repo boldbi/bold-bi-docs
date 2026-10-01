@@ -3308,6 +3308,10 @@
     "toPath": "/site-administration/api-reference/v1.0/api-reference/"
   },
   {
+    "fromPath": "/multi-tenancy/site-administration/api-reference/v1.0/api-reference",
+    "toPath": "/site-administration/api-reference/v1.0/api-reference/"
+  },
+  {
     "fromPath": "/multi-tenancy/site-administration/api-reference/v1.0/try-it-now/",
     "toPath": "/site-administration/api-reference/v1.0/try-it-now/"
   },
@@ -3317,6 +3321,10 @@
   },
   {
     "fromPath": "/multi-tenancy/site-administration/api-reference/v2.0/api-reference/",
+    "toPath": "/site-administration/api-reference/v2.0/api-reference/"
+  },
+  {
+    "fromPath": "/multi-tenancy/site-administration/api-reference/v2.0/api-reference",
     "toPath": "/site-administration/api-reference/v2.0/api-reference/"
   },
   {
@@ -49912,6 +49920,10 @@
     "toPath": "/working-with-data-sources/data-connectors/azure-data-explorer/"
   },
   {
+    "fromPath": "/working-with-data-source/data-connectors/azure-databricks/",
+    "toPath": "/working-with-data-sources/data-connectors/azure-databricks/"
+  },
+  {
     "fromPath": "/getting-started/embedding-in-your-application/#how-to-implement-the-authorize-server-with-user-mail-or-user-name",
     "toPath": "/getting-started/embedding-in-your-application/#how-to-implement-the-authorize-server-with-user-email-or-user-name"
   },
@@ -51062,5 +51074,233 @@
   {
     "fromPath": "/working-with-data-sources/working-with-bold-data-hub/data-connectors/zendesk-chart/",
     "toPath": "/working-with-data-sources/working-with-bold-data-hub/data-connectors/"
+  },
+  {
+    "fromPath": "/mcp-server/",
+    "toPath": "/mcp-integration/mcp-for-help-documentation/"
+  },
+  {
+    "fromPath": "/visualizing-data/visualization-v2-widgets/bar-chart/",
+    "toPath": "/visualizing-data/visualization-v2-widgets/comparison/bar-chart/"
+  },
+  {
+    "fromPath": "/visualizing-data/visualization-v2-widgets/column-chart/",
+    "toPath": "/visualizing-data/visualization-v2-widgets/comparison/column-chart/"
+  },
+  {
+    "fromPath": "/visualizing-data/visualization-v2-widgets/stacked-bar-chart/",
+    "toPath": "/visualizing-data/visualization-v2-widgets/comparison/stacked-bar-chart/"
+  },
+  {
+    "fromPath": "/visualizing-data/visualization-v2-widgets/stacked-column-chart/",
+    "toPath": "/visualizing-data/visualization-v2-widgets/comparison/stacked-column-chart/"
+  },
+  {
+    "fromPath": "/visualizing-data/visualization-v2-widgets/100-stacked-bar-chart/",
+    "toPath": "/visualizing-data/visualization-v2-widgets/comparison/100-stacked-bar-chart/"
+  },
+  {
+    "fromPath": "/visualizing-data/visualization-v2-widgets/100-stacked-column-chart/",
+    "toPath": "/visualizing-data/visualization-v2-widgets/comparison/100-stacked-column-chart/"
+  },
+  {
+    "fromPath": "/visualizing-data/visualization-v2-widgets/radar-polar-chart/",
+    "toPath": "/visualizing-data/visualization-v2-widgets/comparison/radar-polar-chart/"
+  },
+  {
+    "fromPath": "/visualizing-data/visualization-v2-widgets/properties/comparison-chart-properties/",
+    "toPath": "/visualizing-data/visualization-v2-widgets/comparison/properties/comparison-chart-properties/"
+  },
+  {
+    "fromPath": "/visualizing-data/visualization-v2-widgets/map/",
+    "toPath": "/visualizing-data/visualization-v2-widgets/relationship/map/"
+  },
+  {
+    "fromPath": "/visualizing-data/visualization-v2-widgets/azure-maps/",
+    "toPath": "/visualizing-data/visualization-v2-widgets/relationship/azure-maps/"
+  },
+  {
+    "fromPath": "/visualizing-data/visualization-v2-widgets/grid/",
+    "toPath": "/visualizing-data/visualization-v2-widgets/relationship/grid/"
+  },
+  {
+    "fromPath": "/visualizing-data/visualization-v2-widgets/pivot-grid/",
+    "toPath": "/visualizing-data/visualization-v2-widgets/relationship/pivot-grid/"
+  },
+  {
+    "fromPath": "/visualizing-data/visualization-v2-widgets/heat-map/",
+    "toPath": "/visualizing-data/visualization-v2-widgets/relationship/heat-map/"
+  },
+  {
+    "fromPath": "/visualizing-data/visualization-v2-widgets/tree-map/",
+    "toPath": "/visualizing-data/visualization-v2-widgets/relationship/tree-map/"
+  },
+  {
+    "fromPath": "/visualizing-data/visualization-v2-widgets/number-card/",
+    "toPath": "/visualizing-data/visualization-v2-widgets/cards/number-card/"
+  },
+  {
+    "fromPath": "/visualizing-data/visualization-v2-widgets/kpi-card/",
+    "toPath": "/visualizing-data/visualization-v2-widgets/cards/kpi-card/"
+  },
+  {
+    "fromPath": "/visualizing-data/visualization-v2-widgets/radial-gauge/",
+    "toPath": "/visualizing-data/visualization-v2-widgets/deviation/radial-gauge/"
+  },
+  {
+    "fromPath": "/visualizing-data/visualization-v2-widgets/pie-chart/",
+    "toPath": "/visualizing-data/visualization-v2-widgets/proportion/pie-chart/"
+  },
+  {
+    "fromPath": "/visualizing-data/visualization-v2-widgets/doughnut-chart/",
+    "toPath": "/visualizing-data/visualization-v2-widgets/proportion/doughnut-chart/"
+  },
+  {
+    "fromPath": "/visualizing-data/visualization-v2-widgets/funnel-chart/",
+    "toPath": "/visualizing-data/visualization-v2-widgets/proportion/funnel-chart/"
+  },
+  {
+    "fromPath": "/visualizing-data/visualization-v2-widgets/pyramid-chart/",
+    "toPath": "/visualizing-data/visualization-v2-widgets/proportion/pyramid-chart/"
+  },
+  {
+    "fromPath": "/visualizing-data/visualization-v2-widgets/properties/proportion-chart-properties/",
+    "toPath": "/visualizing-data/visualization-v2-widgets/proportion/properties/proportion-chart-properties/"
+  },
+  {
+    "fromPath": "/visualizing-data/visualization-v2-widgets/area-chart/",
+    "toPath": "/visualizing-data/visualization-v2-widgets/distribution/area-chart/"
+  },
+  {
+    "fromPath": "/visualizing-data/visualization-v2-widgets/stacked-area-chart/",
+    "toPath": "/visualizing-data/visualization-v2-widgets/distribution/stacked-area-chart/"
+  },
+  {
+    "fromPath": "/visualizing-data/visualization-v2-widgets/100-stacked-area-chart/",
+    "toPath": "/visualizing-data/visualization-v2-widgets/distribution/100-stacked-area-chart/"
+  },
+  {
+    "fromPath": "/visualizing-data/visualization-v2-widgets/line-chart/",
+    "toPath": "/visualizing-data/visualization-v2-widgets/distribution/line-chart/"
+  },
+  {
+    "fromPath": "/visualizing-data/visualization-v2-widgets/spline-chart/",
+    "toPath": "/visualizing-data/visualization-v2-widgets/distribution/spline-chart/"
+  },
+  {
+    "fromPath": "/visualizing-data/visualization-v2-widgets/spline-area-chart/",
+    "toPath": "/visualizing-data/visualization-v2-widgets/distribution/spline-area-chart/"
+  },
+  {
+    "fromPath": "/visualizing-data/visualization-v2-widgets/scatter-chart/",
+    "toPath": "/visualizing-data/visualization-v2-widgets/distribution/scatter-chart/"
+  },
+  {
+    "fromPath": "/visualizing-data/visualization-v2-widgets/properties/distribution-chart-properties/",
+    "toPath": "/visualizing-data/visualization-v2-widgets/distribution/properties/distribution-chart-properties/"
+  },
+  {
+    "fromPath": "/visualizing-data/visualization-v2-widgets/combo-chart/",
+    "toPath": "/visualizing-data/visualization-v2-widgets/composition/combo-chart/"
+  },
+  {
+    "fromPath": "/visualizing-data/visualization-v2-widgets/combo-box/",
+    "toPath": "/visualizing-data/visualization-v2-widgets/filters/combo-box/"
+  },
+  {
+    "fromPath": "/visualizing-data/visualization-v2-widgets/list-box/",
+    "toPath": "/visualizing-data/visualization-v2-widgets/filters/list-box/"
+  },
+  {
+    "fromPath": "/visualizing-data/visualization-v2-widgets/date-picker/",
+    "toPath": "/visualizing-data/visualization-v2-widgets/filters/date-picker/"
+  },
+  {
+    "fromPath": "/visualizing-data/visualization-v2-widgets/text-filter/",
+    "toPath": "/visualizing-data/visualization-v2-widgets/filters/text-filter/"
+  },
+  {
+    "fromPath": "/visualizing-data/visualization-v2-widgets/range-navigator/",
+    "toPath": "/visualizing-data/visualization-v2-widgets/filters/range-navigator/"
+  },
+  {
+    "fromPath": "/visualizing-data/visualization-v2-widgets/range-slider/",
+    "toPath": "/visualizing-data/visualization-v2-widgets/filters/range-slider/"
+  },
+  {
+    "fromPath": "/visualizing-data/visualization-v2-widgets/period-over-period/",
+    "toPath": "/visualizing-data/visualization-v2-widgets/filters/period-over-period/"
+  },
+  {
+    "fromPath": "/visualizing-data/visualization-v2-widgets/image/",
+    "toPath": "/visualizing-data/visualization-v2-widgets/miscellaneous/image/"
+  },
+  {
+    "fromPath": "/visualizing-data/visualization-v2-widgets/tab-widget/",
+    "toPath": "/visualizing-data/visualization-v2-widgets/miscellaneous/tab-widget/"
+  },
+  {
+    "fromPath": "/visualizing-data/visualization-v2-widgets/combine-widget/",
+    "toPath": "/visualizing-data/visualization-v2-widgets/miscellaneous/combine-widget/"
+  },
+  {
+    "fromPath": "/visualizing-data/visualization-v2-widgets/text/",
+    "toPath": "/visualizing-data/visualization-v2-widgets/miscellaneous/text/"
+  },
+  {
+    "fromPath": "/visualizing-data/visualization-v2-widgets/line-widget/",
+    "toPath": "/visualizing-data/visualization-v2-widgets/miscellaneous/line-widget/"
+  },
+  {
+    "fromPath": "/visualizing-data/visualization-v2-widgets/q-and-a-widget/",
+    "toPath": "/visualizing-data/visualization-v2-widgets/miscellaneous/q-and-a-widget/"
+  },
+  {
+    "fromPath": "/visualizing-data/visualization-v2-widgets/button-widget/",
+    "toPath": "/visualizing-data/visualization-v2-widgets/miscellaneous/button-widget/"
+  },
+  {
+    "fromPath": "/visualizing-data/visualization-v2-widgets/properties/container-appearance/",
+    "toPath": "/visualizing-data/visualization-v2-widgets/properties/widget-container-customization/"
+  },
+  {
+    "fromPath": "/cloud-bi/visualizing-data/visualization-v2-widgets/properties/container-appearance/",
+    "toPath": "/visualizing-data/visualization-v2-widgets/properties/widget-container-customization/"
+  },
+  {
+    "fromPath": "/embedded-bi/visualizing-data/visualization-v2-widgets/properties/container-appearance/",
+    "toPath": "/visualizing-data/visualization-v2-widgets/properties/widget-container-customization/"
+  },
+  {
+    "fromPath":"/artificial-intelligence-and-machine-learning/ai-assistant/",
+    "toPath":"/embedding-options/embedding-sdk/embed-different-components/embed-ai-assistant/"
+  },
+  {
+    "fromPath":"/artificial-intelligence-and-machine-learning/ai-assistant/ai-assistant-dashboard-designer/",
+    "toPath":"/artificial-intelligence-and-machine-learning/generative-ai/dashboard-summary/"
+  },
+  {
+    "fromPath":"/artificial-intelligence-and-machine-learning/ai-assistant/ai-assistant-view-mode/",
+    "toPath":"/artificial-intelligence-and-machine-learning/"
+  },
+  {
+    "fromPath":"/artificial-intelligence-and-machine-learning/ai-assistant/ai-data-processing/",
+    "toPath":"/artificial-intelligence-and-machine-learning/"
+  },
+  {
+    "fromPath":"/artificial-intelligence-and-machine-learning/ai-assistant/architecture-data-processing/",
+    "toPath":"/artificial-intelligence-and-machine-learning/"
+  },
+  {
+    "fromPath":"/embedding-options/embedding-sdk/guidelines-for-single-tenant-multi-tenant/",
+    "toPath":"/multi-tenancy/"
+  },
+  {
+    "fromPath":"/embedding-options/iframe-embedding/embed-widgets-with-sso-using-token/",
+    "toPath":"/embedding-options/iframe-embedding/embedding-with-token-authentication/"
+  },
+  {
+    "fromPath":"/embedding-options/iframe-embedding/embedding-a-widget/",
+    "toPath":"/embedding-options/iframe-embedding/embedding-with-iframe/"
   }
 ]

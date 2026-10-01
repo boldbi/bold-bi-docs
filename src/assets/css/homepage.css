@@ -1,0 +1,111 @@
+/* Homepage categories section styles */
+.home-layout-container #categories {
+  margin-top: 20px;
+}
+
+.home-layout-container .categories-card a{
+  text-decoration: none !important;
+  padding: 20px;
+  width: 100% !important;
+}
+
+.home-layout-container #categories h2 {
+  font-size: 24px;
+  margin-bottom: 8px;
+  margin-top: 0 !important;
+}
+
+.home-layout-container #categories .categories-desc {
+  color: #6b7280;
+  max-width: 900px;
+  margin-bottom: 20px;
+}
+
+.home-layout-container .categories-cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 30px;
+}
+
+.home-layout-container .categories-card {
+  flex: 1 1 260px;
+  border: 1px solid #ececec;
+  border-radius: 12px;
+  min-width: 220px;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+  max-width: 50%;
+}
+
+.home-layout-container .categories-card:hover {
+  border-color: #002bff;
+}
+
+.home-layout-container .categories-card h3 {
+  margin: 0 0 8px 0;
+  font-size: 18px !important;
+  margin-top: 20px !important;
+}
+
+.home-layout-container .categories-card p {
+  margin: 0;
+  color: #6b7280;
+  margin-top: 10px !important;
+}
+
+@media (max-width: 700px) {
+  .home-layout-container .categories-cards {
+    align-items: stretch;
+    justify-content: flex-start;
+  }
+  .home-layout-container .categories-card {
+    max-width: none;
+    width: 100%;
+  }
+}
+
+.home-layout-container .read-time {
+  display: none !important;
+}
+
+@media (min-width: 1101px) {
+  .home-layout-container #breadcrumb-container{
+    display: none !important;
+  }
+}
+
+.home-layout-container .breadcrumb-home,
+.home-layout-container .breadcrumb-home-title,
+.home-layout-container .seperator-line {
+  display: none !important;
+}
+
+.home-layout-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+	background: #FBFBFC;
+	padding-left: 32px;
+  margin-top:48px;
+}
+
+@media (max-width: 1100px) {
+  .home-layout-container {
+    padding:0px !important;
+    margin-top: 0px !important;
+  }
+}
+
+.home-layout-container h1 {
+  margin-top: 10px !important;
+}
+
+.home-layout-container .home-card-icon img{
+  width: 36px !important;
+  height: 36px !important;
+  border: none !important;
+  margin: 0 !important;
+  cursor: pointer !important;
+}

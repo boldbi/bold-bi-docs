@@ -7,13 +7,13 @@ documentation: ug
 
 ---
 
-# Creating a New Site in Bold BI Enterprise Edition
+# Creating a New Site in Bold BI Server
 
-This section briefly explains the steps involved in creating a new site in Bold BI Enterprise multi-tenant application.
+This section briefly explains the steps involved in creating a new site in Bold BI Server multi-tenant application.
 
 ## Site creation
 
-You can create another site in the Bold BI Enterprise application by clicking the `Create Site` button in the site management module.
+You can create another site in the Bold BI Server application by clicking the `Create Site` button in the site management module.
 
 ![Create Site](/static/assets/multi-tenancy/images/create-button.png#max-width=95%)
 

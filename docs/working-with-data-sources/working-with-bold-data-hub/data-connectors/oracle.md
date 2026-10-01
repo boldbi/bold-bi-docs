@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Oracle Data Hub Connector – Embedded BI | Bold BI Learning
-description: Learn how to use the Oracle Bold Data Hub connectors in Bold BI Enterprise Edition. Discover simple steps to integrate data smoothly and make the most of your analytics.
+description: Learn how to use the Oracle Bold Data Hub connectors in Bold BI Server. Discover simple steps to integrate data smoothly and make the most of your analytics.
 platform: bold-bi
 documentation: ug
 
@@ -9,7 +9,7 @@ documentation: ug
 
 # Oracle
 
-[Oracle Database](https://www.oracle.com/database/) is a relational database management system (RDBMS) from Oracle Corporation. This article provides a complete overview of the Oracle database, including features, history, and editions. Before discussing Oracle, let’s first understand the basics of a database.
+[Oracle Database](https://www.oracle.com/database/) is a relational database management system (RDBMS) from Oracle Corporation. It is designed to efficiently store, retrieve, and manage large amounts of structured data.
 
 ## Connection Properties
 
@@ -23,8 +23,11 @@ username: Username
 password: Password
 database: Database
 service_name: servicename
-drivername: oracle+pyoracle
+protocol: tcps (when TCPS is enabled)
+drivername: oracle+oracledb
 ```
+
+Use `protocol: tcps` when TCPS is enabled for the Oracle connection. Otherwise, omit the `protocol` property.
 
 ## Configure the Bold Data Hub to connect Oracle
 
@@ -50,7 +53,8 @@ drivername: oracle+pyoracle
 | **Password:**            | Provide the password to authenticate with the Oracle server. |
 | **Database:** (Optional)           | Specify the name of the Oracle database from which data will be extracted. |
 | **Service Name:** (Optional)           | Specify the Service name of the Oracle server. |
-| **Driver Name:**         | Specify the driver name for connecting to Oracle (e.g., oracle+oracledb). |
+| **Protocol:** (Optional)         | Specify `tcps` when TCPS is enabled for the Oracle connection. Omit this property for a standard connection. |
+| **Driver Name:**         | Specify the driver name for connecting to Oracle (e.g., `oracle+oracledb`). |
 | **Select:**                  |    **Tablename(s):**         Specify the name list to load tables from the Oracle server. |
 | [**Metadata:**](#metadata-properties)  (Optional)             |   **Replication Method:** Specify the replication method for the table(s). Options include FULL or INCREMENTAL. |
 || **Replication Key:**     Specify the replication key for incremental replication. This key helps in identifying new or updated records. |
@@ -117,7 +121,7 @@ metadata:
 ### Example Configuration
 #### FULLTABLE
 ```yaml
-version: 1
+version: 1.0.1
 encrypt_credentials: false
 plugins:
   extractors:
@@ -152,7 +156,7 @@ plugins:
 #### INCREMENTAL
 
 ```yaml
-version: 1
+version: 1.0.1
 encrypt_credentials: true
 plugins:
   extractors:

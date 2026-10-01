@@ -127,7 +127,7 @@ To Create a new Credentials (Client ID, Client Secret), use the following link.
 
    ![Google BigQuery Credentials Create](/static/assets/working-with-datasource/data-connectors/images/GoogleBigQuery/GoogleBQ_CredentialsCreate.png)
  
-After creating the credentials, open the corresponding credentials and add your Bold BI Enterprises build hosted URL in the following sample URL format.
+After creating the credentials, open the corresponding credentials and add your Bold BI Server build hosted URL in the following sample URL format.
 
 `http://localhost:<boldbi-running port>/bi/designer/v1.0/oauth/agent`
 
@@ -283,4 +283,4 @@ We have added support for **custom attributes and dashboard parameters** in the 
 
 [Linking Google BigQuery with Google Analytics](https://support.google.com/analytics/answer/3416092?hl=en)
 
-[Google BigQuery Integration](https://www.boldbi.com/integrations/google-big-query?utm_source=syncfusion&utm_medium=documentation&utm_campaign=boldbigoolglebigqueryintegration)
+[Google BigQuery Integration](https://www.boldbi.com/resources/integrations/google-big-query?utm_source=syncfusion&utm_medium=documentation&utm_campaign=boldbigoolglebigqueryintegration)

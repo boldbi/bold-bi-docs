@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Validation and Transformation Rules | Bold Data Hub
-description: Learn how to use the ETL/Data Hub Transformation section in Bold BI Enterprise Edition. Discover simple steps to validate the data and make the most of your analytics.
+description: Learn how to use the ETL/Data Hub Transformation section in Bold BI Server. Discover simple steps to validate the data and make the most of your analytics.
 platform: bold-bi
 documentation: ug
 

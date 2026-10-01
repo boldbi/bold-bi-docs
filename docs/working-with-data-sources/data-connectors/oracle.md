@@ -29,13 +29,16 @@ documentation: ug
    > **NOTE:**  What is the Service Instance Name – The Service Instance Name is a name given to an Oracle Cloud Service. For more details refer [Service Instance Name](https://docs.oracle.com/en/cloud/paas/data-integrator-cloud/user/creating-oracle-database-cloud-service-instance.html)
 
    Enter the `user name` and `password` to connect to the Oracle.
+
+   If the Oracle server requires a secure connection, select the Enable SSL checkbox to `enable SSL/TLS mode` for the connection.
    
    Select a database from the drop-down list and click the `Connect` button to connect the Oracle.
 
    ![Oracle connect](/static/assets/working-with-datasource/data-connectors/images/oracle/Oracle-connect.png)
    
-   > **NOTE:**  Initially, data will be extracted based on the Max Rows selected in order to proceed with data model creation. The remaining records (there is no limit) will be extracted during the next refresh.  <br /> 
-   ![Max rows option](/static/assets/working-with-datasource/data-connectors/images/oracle/maxRowOption.png#max-width=45%)
+   > **NOTE:**  Initially, data will be extracted based on the Max Rows selected in order to proceed with data model creation. The remaining records (there is no limit) will be extracted during the next refresh.  <br />
+
+   ![Max rows option](/static/assets/working-with-datasource/data-connectors/images/oracle/maxRowOption.png)
 
    ## Extract mode connection 
 
@@ -283,65 +286,43 @@ Through the REST API, only the **live mode** data source can be created and edit
    Enter a valid Timeout for connection. By default, it is 300</td>
    </tr>
    <tr>
-   <td>IsSshConnection</br></br>
+   <td>Enable SSL/TCPS</br></br>
    <b>optional</b> </td>
-   <td>`boolean`</br></br>
-   Enable or disable SSH. By default, it is false.</td>
+   <td>boolean</br></br>
+   Enable or disable SSL. By default, it is false.</td>
    </tr>
-   <tr>
-   <td>SshServerName</br></br>
-   <b>optional</b> </td>
-   <td><code>string</code></br></br>
-   Enter a valid Ssh Server name. By default, it is empty.</td>
-   </tr>
-   <tr>
-   <td>SshPort</br></br>
-   <b>optional</b> </td>
-   <td>`integer`</br></br>
-   Enter a valid Ssh Port number.</td>
-   </tr>
-   <tr>
-   <td>SshUserName</br></br>
-   <b>optional</b> </td>
-   <td><code>string</code></br></br>
-   Enter a valid Ssh Username. By default, it is empty.</td>
-   </tr>
-   <tr>
-   <td>SshPassword</br></br>
-   <b>optional</b> </td>
-   <td><code>string</code></br></br>
-   Enter a valid Ssh Password. By default, it is empty.</td>
-    </tr>
    </table>
 
 #### Parameters for adding expressions when creating Data Source
-   
-   <table>
-   <tr>
-   <th>Parameters</th>
-   <th>Details</th>
-   </tr>
-   <tr>
-   <td>Name</br></br>
-   <b>required</b> </br></br>
-   </td>
-  <td><code>string</code></br></br>
-   Name of the Expression</br></br>
-   </td>
-   </tr>
-   <tr>
-   <td>Expression</br></br></br></br>
-   <b>required</b> </br></br>
-   </td>
-  <td><code>string</code></br></br>
-   <a href="/working-with-data-sources/data-modeling/configuring-expression-columns/">
-    <div style="height:100%;width:100%">
-      Expression
-    </div>
-   </a> </br></br>
-   </td>
-   </tr>
-   </table>
+
+  <table>
+  <tr>
+    <th>Parameters</th>
+    <th>Details</th>
+  </tr>
+  <tr>
+    <td>
+      Name<br><br>
+      <b>required</b><br><br>
+    </td>
+    <td>
+      <code>string</code><br><br>
+      Name of the Expression<br><br>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Expression<br><br>
+      <b>required</b><br><br>
+    </td>
+    <td>
+      <code>string</code><br><br>
+      <a href="/working-with-data-sources/data-modeling/configuring-expression-columns/">
+        Expression
+      </a><br><br>
+    </td>
+  </tr>
+</table>
 
 ### Parameters for editing Data Source
 
@@ -410,6 +391,7 @@ Through the REST API, only the **live mode** data source can be created and edit
 "Tablename": "string",
 "AdvancedSettings": "string",
 "CommandTimeout": "string",
+"IsEnableSSL": "boolean",
 "Expressions" : [{
 "Name": "Expression1",
 "Expression" : "SUM(numeric expression)"
@@ -468,6 +450,7 @@ Through the REST API, only the **live mode** data source can be created and edit
         ],
 "AdvancedSettings": "string",
 "CommandTimeout": "string",
+"IsEnableSSL": "boolean",
 "Expressions" : [{
 "Name": "Expression1",
 "Expression" : "SUM(numeric expression)"
@@ -495,6 +478,7 @@ Through the REST API, only the **live mode** data source can be created and edit
 "Tablename": "string",
 "AdvancedSettings": "string",
 "CommandTimeout": "string",
+"IsEnableSSL": "boolean",
 "Expressions" : [{
 "Name": "Expression1",
 "Expression" : "SUM(numeric expression)",
@@ -526,6 +510,7 @@ Through the REST API, only the **live mode** data source can be created and edit
 "Query": "string",
 "AdvancedSettings": "string",
 "CommandTimeout": "string",
+"IsEnableSSL": "boolean",
 "Expressions" : [{
 "Name": "Expression1",
 "Expression" : "SUM(numeric expression)"
@@ -548,7 +533,8 @@ Through the REST API, only the **live mode** data source can be created and edit
        "UserName": "string",
        "Password": "string",
        "AdvancedSettings": "string",
-       "CommandTimeout": "string"  
+       "CommandTimeout": "string" ,
+       "IsEnableSSL": "boolean"
   } 
 ```
 

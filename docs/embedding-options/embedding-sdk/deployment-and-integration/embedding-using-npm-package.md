@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Embedded Analytics using Embedded SDK NPM package | Bold BI
-description: Embed analytical dashboards into JavaScript-based applications using the Bold BI embedded SDK NPM package, a zipped version of dependent scripts and assets.
+title:  Embedded Analytics using Embed SDK NPM package | Bold BI
+description: Embed analytical dashboards into JavaScript-based applications using the Bold BI Embed SDK NPM package, a zipped version of dependent scripts and assets.
 platform: bold-bi
 documentation: ug
 ---
@@ -10,11 +10,11 @@ documentation: ug
 
 Follow these steps to embed a dashboard in your application.
 
-> **NOTE:** The Bold BI Embedded SDK NPM package will provide support for JavaScript framework applications starting from Bold BI Embedded Edition `v4.2.68`. If you use the same version of the NPM package, Bold BI Embedded Edition will work fine.
+> **NOTE:** The Bold BI Embed SDK NPM package will provide support for JavaScript framework applications starting from Bold BI Embedded Edition `v4.2.68`. If you use the same version of the NPM package, Bold BI Embedded Edition will work fine.
 
-## How to install Bold BI Embedded SDK NPM package
+## How to install Bold BI Embed SDK NPM package
 
-1. To install the Bold BI Embedded SDK package, use the following command.
+1. To install the Bold BI Embed SDK package, use the following command.
 
     ```js
     npm install -save @boldbi/boldbi-embedded-sdk
@@ -26,7 +26,7 @@ Follow these steps to embed a dashboard in your application.
     yarn add @boldbi/boldbi-embedded-sdk
     ```
 
-## How to use Bold BI Embedded SDK NPM package into application
+## How to use Bold BI Embed SDK NPM package into application
 
 1. Import the `@boldbi/boldbi-embedded-sdk` package into the application where you want to embed the Bold BI Dashboard. Use the fol-lowing command, which shows the proper syntax for importing `BoldBI` with braces because it is an ECMAScript six structure and a non-default export.
 

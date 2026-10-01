@@ -107,6 +107,21 @@ Follow the steps below to add users using the CSV template:
 
 	![Import from CSV - Add users into CSV file](/static/assets/managing-resources/manage-users/images/csv-import-add-users.png#width=40%)
 
+  ```csv
+
+    Username,Email,Fullname,Password
+    csvuser1,csvuser1@boldbi.com,csv1,Abcd@1234
+    csvuser2,csvuser2@boldbi.com,csv2,Abcd@1234
+    csvuser3,csvuser3@boldbi.com,csv3,Abcd@1235
+    csvuser4,csvuser4@boldbi.com,csv4,Abcd@1236
+    csvuser5,csvuser5@boldbi.com,csv5,Abcd@1237
+    csvuser6,csvuser6@boldbi.com,csv6,Abcd@1238
+    csvuser7,csvuser7@boldbi.com,csv7,Abcd@1239
+    csvuser8,csvuser8@boldbi.com,csv8,Abcd@1240
+    csvuser9,csvuser9@boldbi.com,csv9,Abcd@1241
+
+  ```
+
 3. Save the CSV file and upload it.
 
 	![Import from CSV - Upload CSV file](/static/assets/managing-resources/manage-users/images/csv-import-upload.png#width=60%)

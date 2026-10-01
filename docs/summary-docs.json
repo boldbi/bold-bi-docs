@@ -1,4 +1,7 @@
 {
+	"Introduction": {
+		"slug": "/"
+	},
 	"Overview": {
 		"slug": "overview",
 		"pages": {
@@ -25,7 +28,7 @@
 	"Visualizations": {
 		"slug": "visualizing-data",
 		"pages": {
-			"Visualization Widgets": {
+			"Classic Widgets": {
 				"slug": "visualization-widgets",
 				"pages": {
 					"Bar Chart": "bar-chart",
@@ -60,8 +63,8 @@
 					"List Box": "list-box",
 					"Text Filter": "text-filter",
 					"Combo Box": "combo-box",
-					"Range Navigator": "range-navigator",
 					"Range Slider": "range-slider",
+					"Range Navigator": "range-navigator",
 					"Date Picker": "date-picker",
 					"Period Over Period": "period-over-period",
 					"Image": "image",
@@ -89,22 +92,120 @@
 					"Combine Widget ": "combine-widget"
 				}
 			},
-			"Visualization V2 Widgets": {
+			"Modern Widgets": {
 				"slug": "visualization-v2-widgets",
 				"pages": {
-					"Bar Chart": "bar-chart",
-					"Column Chart": "column-chart",
-					"Stacked Bar Chart": "stacked-bar-chart",
-					"Stacked Column Chart": "stacked-column-chart",
-					"100% Stacked Bar Chart": "100-stacked-bar-chart",
-					"100% Stacked Column Chart": "100-stacked-column-chart",
-					"Area Chart": "area-chart",
-					"Stacked Area Chart": "stacked-area-chart",
-					"100% Stacked Area Chart": "100-stacked-area-chart",
-					"Line Chart": "line-chart",
-					"Spline Area Chart": "spline-area-chart",
-					"Spline Chart": "spline-chart",
-					"Grid": "grid"
+					"Comparison": {
+						"slug": "comparison",
+						"pages": {
+							"Bar Chart": "bar-chart",
+							"Column Chart": "column-chart",
+							"Stacked Bar Chart": "stacked-bar-chart",
+							"Stacked Column Chart": "stacked-column-chart",
+							"100% Stacked Bar Chart": "100-stacked-bar-chart",
+							"100% Stacked Column Chart": "100-stacked-column-chart",
+							"Radar Polar Chart": "radar-polar-chart",
+							"Properties": "properties/comparison-chart-properties"
+						}
+					},
+					"Relationship": {
+						"slug": "relationship",
+						"pages": {
+							"Map": "map",
+							"Azure Maps": "azure-maps",
+							"Grid": "grid",
+							"Pivot Grid": "pivot-grid",
+							"Heatmap": "heat-map",
+							"Treemap": "tree-map"
+						}
+					},
+					"Cards": {
+						"slug": "cards",
+						"pages": {
+							"Number Card": "number-card",
+							"KPI Card": "kpi-card"
+						}
+					},
+					"Deviation": {
+						"slug": "deviation",
+						"pages": {
+							"Radial Gauge": "radial-gauge"
+						}
+					},
+					"Proportion": {
+						"slug": "proportion",
+						"pages": {
+							"Pie Chart": "pie-chart",
+							"Doughnut Chart": "doughnut-chart",
+							"Funnel Chart": "funnel-chart",
+							"Pyramid Chart": "pyramid-chart",
+							"Properties": "properties/proportion-chart-properties"
+						}
+					},
+					"Distribution": {
+						"slug": "distribution",
+						"pages": {
+							"Area Chart": "area-chart",
+							"Stacked Area Chart": "stacked-area-chart",
+							"100% Stacked Area Chart": "100-stacked-area-chart",
+							"Line Chart": "line-chart",
+							"Spline Chart": "spline-chart",
+							"Spline Area Chart": "spline-area-chart",
+							"Scatter Chart": "scatter-chart",
+							"Properties": "properties/distribution-chart-properties"
+						}
+					},
+					"Composition": {
+						"slug": "composition",
+						"pages": {
+							"Combo Chart": "combo-chart"
+						}
+					},
+					"Filters": {
+						"slug": "filters",
+						"pages": {
+							"Combo Box": "combo-box",
+							"List Box": "list-box",
+							"Date Picker": "date-picker",
+							"Text Filter": "text-filter",
+							"Range Navigator": "range-navigator",
+							"Period Over Period": "period-over-period"
+						}
+					},
+					"Miscellaneous": {
+						"slug": "miscellaneous",
+						"pages": {
+							"Image": "image",
+							"Tab": "tab-widget",
+							"Combined Widget": "combine-widget",
+							"Rich Text Editor": "text",
+							"Line": "line-widget",
+							"Q&A": "q-and-a-widget",
+							"Button": "button-widget"
+						}
+					},
+					"Properties": {
+						"slug": "properties",
+						"pages": {
+							"Data Configuration": "data-configuration",
+							"Tooltip Settings": "tooltip-settings",
+							"Legend Settings": "legend-settings",
+							"Axis Settings": "axis-settings",
+							"Axis Range Settings": "axis-range-settings",
+							"Gridlines": "gridlines",
+							"Forecast Settings": "forecast-settings",
+							"Trendline Settings": "trendline-settings",
+							"Conditional Formatting": "conditional-formatting",
+							"Value Formatting": "value-formatting",
+							"Font Settings": "font-settings",
+							"Filter Settings": "filter-settings",
+							"Linking": "linking",
+							"Inter-Widget Linking": "inter-widget-linking",
+							"Widget Container Customization": "widget-container-customization",
+							"Export Options": "export-options",
+							"Responsive Behavior": "responsive-behavior"
+						}
+					}
 				}
 			},
 			"Working with Widgets": {
@@ -215,7 +316,12 @@
 				"pages": {
 					"AI Copilot": "ai-copilot",
 					"AI Agent": "ai-agent",
-					"Dashboard Summary": "dashboard-summary",
+					 "Dashboard Summary": {
+                       "slug": "dashboard-summary",
+                       "pages": {
+                            "Custom Prompt": "custom-prompt"
+                        }
+                      },
 					"Widget Insights": "widget-insights",
 					"Prompt To Dashboard": "dashboard-creation"
 				}
@@ -229,9 +335,17 @@
 				}
 			},
 			"Q&A Widget": "qna-widget",
+			"AI Credits": "ai-credits",
 			"Synonyms": "synonyms",
 			"Summary Scheduling": "schedule-summary",
 			"Forecasting": "time-series-forecasting"
+		}
+	},
+	"MCP Integration": {
+		"slug": "mcp-integration",
+		"pages": {
+			"MCP For Bold BI Analytics": "mcp-for-bold-bi-analytics",
+			"MCP For Help Documentation": "mcp-for-help-documentation"
 		}
 	},
 	"Responsive Layout": {
@@ -330,3 +444,4 @@
 		}
 	}
 }
+

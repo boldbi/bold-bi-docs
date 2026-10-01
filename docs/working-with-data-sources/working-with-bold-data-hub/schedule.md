@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Scheduling ETL/Data Hub Jobs – Embedded BI | Bold BI Learning
-description: Learn how to Scheduling ETL Jobs in Bold BI Enterprise Edition. Discover simple steps to integrate data smoothly and make the most of your analytics.
+description: Learn how to Scheduling ETL Jobs in Bold BI Server. Discover simple steps to integrate data smoothly and make the most of your analytics.
 platform: bold-bi
 documentation: ug
 
@@ -29,9 +29,28 @@ Data refresh can be initiated on demand by selecting the **Run Now** option.
 
 ![Zendesk Support - BoldBI](/static/assets/working-with-etl/images/schedule_schedules.png#max-width=100%)
 
-2. Select the recurrence type, recurrence, start date, and end date in the Refresh Setting dialog box.
+2. By default, the Active toggle is disabled. Enable the Active toggle to activate and configure the schedule.
+> **Note:** The schedule will not run unless the **Active** toggle is enabled.
+3. Select the recurrence type, recurrence, start date, and end date in the Refresh Setting dialog box. Scheduling supports two recurrence types: ``Daily`` and ``Weekly``
 
-![Zendesk Support - BoldBI](/static/assets/working-with-etl/images/schedule_scheduledialog.png#max-width=100%)
+### Daily 
+
+The Daily recurrence type allows the schedule to run at regular daily intervals.
+You can choose one of the following options:
+
+1. Every N day(s): Runs the schedule once every specified number of days. Example: Every 3 days.
+2. Every Weekday: Runs the schedule Monday to Friday only.
+
+![Zendesk Support - BoldBI](/static/assets/working-with-etl/images/scheduleDaily.png#max-width=100%)
+
+### Hourly
+
+The Hourly recurrence type allows the schedule to run at fixed intervals based on hours and minutes.
+
+Recur every H hour(s) and M minute(s): Runs the schedule after the specified number of hours and minutes have passed.
+Example: Every 0 hours and 5 minutes (runs every 5 minutes).
+
+![Zendesk Support - BoldBI](/static/assets/working-with-etl/images/schedulehourly.png#max-width=100%)
 
 3. The Schedule history can be checked using the history option as well as logs.
 

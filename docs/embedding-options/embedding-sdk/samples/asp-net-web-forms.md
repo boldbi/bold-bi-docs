@@ -6,7 +6,7 @@ platform: bold-bi
 documentation: ug
 ---
 
-# Bold BI Dashboards embedding in ASP.NET Web Forms using Embedded SDK
+# Bold BI Dashboards embedding in ASP.NET Web Forms using Embed SDK
 
 A GitHub link has been provided to [get](https://github.com/boldbi/aspnet-web-forms-sample) the sample application,  which demonstrates the rendering of the dashboard available on your Bold BI server. This is followed by steps to create a new embedding application in `ASP.NET Web Forms` on your own.    
 

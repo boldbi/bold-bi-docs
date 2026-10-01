@@ -27,11 +27,12 @@ The intermediate database is configured during the installation of the on-premis
 
 ![Bold BI Intermediate Database Structure](/static/assets/working-with-datasource/images/boldbiintermediatedatabase.png)
          
-The following intermediate databases are supported in the Bold BI Enterprise platform:
+The following intermediate databases are supported in the Bold BI Server platform:
  * Microsoft SQL Server/ Azure SQL
  * PostgreSQL/ Azure PostgreSQL
  * MySQL/ Azure MySQL
+ * Oracle/ Azure Oracle 
  
-> **NOTE:** For MySQL/ Azure MySQL, a new database will be created as a schema whenever an extract data source is created. The schema and database are the [same](https://dev.mysql.com/doc/refman/8.0/en/system-schema.html) in MySQL.
+**NOTE:** For MySQL/ Azure MySQL, a new database will be created as a schema whenever an extract data source is created. The schema and database are the [same](https://dev.mysql.com/doc/refman/8.0/en/system-schema.html) in MySQL. Extract connections are not supported for Oracle/Azure Oracle Database.
 
  Please refer to this section for details on the [Software Requirements](/deploying-bold-bi/overview/#software-requirements).

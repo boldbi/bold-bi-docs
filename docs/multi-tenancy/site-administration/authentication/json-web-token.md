@@ -65,7 +65,7 @@ This section explains how to perform Single Sign-On (SSO) for users with the Cus
 1. Once the JWT settings are configured, go to the Bold BI login page and click on the JWT login option.
     ![JWT Login](/static/assets/multi-tenancy/images/jwt_login_page.png)
 
-2. After that, the application will generate the JSON Web Token for user and it will be submitted via an HTTP Form POST to the Bold BI callback URL https://{Bold BI URL}/sso/jwt/callback. The form POST will include the following parameters:
+2. After that, the application will generate the JSON Web Token for user and it will be submitted via an HTTP Form POST to the Bold BI callback URL `https://{Bold BI URL}/sso/jwt/callback`. The form POST will include the following parameters:
 
     * jwt
     * site_identifier
@@ -118,6 +118,24 @@ This section explains how to perform Single Sign-On (SSO) for users with the Cus
    </tr>
    </table>
 
+## Enable JWT Callback with HTTP GET (Optional)
+
+> **Note:** Enabling GET requests may increase the risk of token exposure because JWT values can be recorded in browser history, URLs, and various logging mechanisms. It is strongly recommended to use HTTP POST whenever possible and enable GET support only when required for legacy workflow compatibility.
+
+By default, the JWT callback endpoint accepts only HTTP POST requests to enhance security. Using POST helps prevent JWT tokens from being exposed in browser history, web server logs, proxy logs, and URL query parameters. 
+
+For backward compatibility, organizations that need to continue using the legacy (old) workflow can enable HTTP GET request support through the application configuration. When this option is enabled, the JWT callback endpoint will accept JWT tokens provided through URL parameters, allowing existing integrations to continue operating without modification.
+
+1. Go to {domain}/ums/administration
+2. Open [**Configuration**](https://help.boldbi.com/multi-tenancy/site-administration/configuration/) in settings page.
+3. Select the dropdown and open `config.json` and then locate `PreferSecureHttpVerbs`.
+4. Set the `PreferSecureHttpVerbs` node to `false`. If the `PreferSecureHttpVerbs` node is not present, create it and configure it as `false`.
+
+![Enable JWT Callback Get](/static/assets/multi-tenancy/images/enable-jwt-http-get-callback.png)
+
+5. After updating the configuration, save the changes and [restart](https://support.boldbi.com/kb/article/16634/how-to-restart-the-bold-bi-embedded-application) the application to apply the updated settings.
+
+After the application is restarted, the JWT callback endpoint will accept **HTTP GET** requests for all tenant sites, enabling support for the legacy (old) workflow.
 
 ## Create JSON Web Token
 

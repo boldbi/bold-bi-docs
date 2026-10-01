@@ -76,6 +76,46 @@ If you need an existing embed configuration file, please refer to the `template.
 
 ![Sample embed config](/static/assets/data-security-configuration/images/sample-embed-config.png#width=45%)
 
+```json
+
+{
+  "IsConfigurationBaseEmbed": true,
+  "EmbeddingProfile": [
+    {
+      "Name": "Test",
+      "Isolation": {
+        "Sectors": "IN ('Commercial', 'Industrial')"
+      },
+      "Attributes": [
+        {
+          "Month": "MONTH(Date) IN (1, 2)"
+        }
+      ]
+    }
+  ],
+  "UsersProfile": [
+    {
+      "Name": "test@syncfusion.com",
+      "Profile": "Test"
+    }
+  ],
+  "GroupsProfile": [
+    {
+      "Name": "Industrial",
+      "Profile": "Test"
+    }
+  ],
+  "SitesProfile": [
+    {
+      "Name": "Site1",
+      "Profile": "Test",
+      "IsIsolationCodeEnabled": true
+    }
+  ]
+}
+
+```
+
 **IsConfigurationBaseEmbed:**  It is used to enable or disable the configuration-based embedding. If it is true, the dashboard uses the attributes and isolation code defined in the embed configuration file. Otherwise, the dashboard uses the values from the site's user and group profile pages.
 
 **EmbeddingProfile:** Attributes and isolation code can be defined in the embedding profile. It is possible to create multiple embedding profiles with different names.
@@ -102,16 +142,144 @@ The user's email and the defined embedding profile name are provided. When the m
 
 ![Users profile](/static/assets/data-security-configuration/images/users-profile.png#width=45%)
 
+```json
+
+{
+  "IsConfigurationBaseEmbed": true,
+  "EmbeddingProfile": [
+    {
+      "Name": "Profile1",
+      "Isolation": {
+        "Sectors": "IN ('Commercial', 'Industrial')"
+      },
+      "Attributes": [
+        {
+          "Month": "MONTH(Date) IN (1, 2)"
+        }
+      ]
+    },
+    {
+      "Name": "Profile2",
+      "Isolation": {
+        "Sectors": "IN ('Traffic', 'Commercial')"
+      },
+      "Attributes": [
+        {
+          "Month": "MONTH(Date) IN (7, 8)"
+        }
+      ]
+    }
+  ],
+  "UsersProfile": [
+    {
+      "Name": "test@syncfusion.com",
+      "Profile": "Profile1"
+    },
+    {
+      "Name": "demo@syncfusion.com",
+      "Profile": "Profile2"
+    }
+  ]
+}
+
+```
+
 ## Groups Profile
 
 The group name and the defined embedding profile name are provided. When a user from the mentioned group renders the dashboard, the attributes and isolation code defined in the embedding profiles will be used to render the dashboard.
 
 ![Groups profile](/static/assets/data-security-configuration/images/groups-profile.png#width=45%)
 
+```json
+
+{
+  "IsConfigurationBaseEmbed": true,
+  "EmbeddingProfile": [
+    {
+      "Name": "Profile1",
+      "Isolation": {
+        "Sectors": "IN ('Commercial', 'Industrial')"
+      },
+      "Attributes": [
+        {
+          "Month": "MONTH(Date) IN (1, 2)"
+        }
+      ]
+    },
+    {
+      "Name": "Profile2",
+      "Isolation": {
+        "Sectors": "IN ('Traffic', 'Commercial')"
+      },
+      "Attributes": [
+        {
+          "Month": "MONTH(Date) IN (7, 8)"
+        }
+      ]
+    }
+  ],
+  "GroupsProfile": [
+    {
+      "Name": "System Administrator",
+      "Profile": "Profile1"
+    },
+    {
+      "Name": "Group2",
+      "Profile": "Profile2"
+    }
+  ]
+}
+
+```
+
 ## Sites Profile
 
 The site name and the defined embedding profile name are provided. When the user from the mentioned site renders the dashboard, the attributes and isolation code defined in the embedding profiles will be used to render the dashboard.
 
 ![Sites profile](/static/assets/data-security-configuration/images/sites-profile.png#width=45%)
+
+```json
+
+{
+  "IsConfigurationBaseEmbed": true,
+  "EmbeddingProfile": [
+    {
+      "Name": "Profile1",
+      "Isolation": {
+        "Sectors": "IN ('Commercial', 'Industrial')"
+      },
+      "Attributes": [
+        {
+          "Month": "MONTH(Date) IN (1, 2)"
+        }
+      ]
+    },
+    {
+      "Name": "Profile2",
+      "Isolation": {
+        "Sectors": "IN ('Traffic', 'Commercial')"
+      },
+      "Attributes": [
+        {
+          "Month": "MONTH(Date) IN (7, 8)"
+        }
+      ]
+    }
+  ],
+  "SitesProfile": [
+    {
+      "Name": "Site1",
+      "Profile": "Profile1",
+      "IsIsolationCodeEnabled": true
+    },
+    {
+      "Name": "Site2",
+      "Profile": "Profile2",
+      "IsIsolationCodeEnabled": true
+    }
+  ]
+}
+
+```
 
 According to the hierarchy mentioned above, the system will choose the embedding profile and update the dashboard accordingly. The priority order will be `Users Profile`, `Groups Profile` and the `Sites profile`.

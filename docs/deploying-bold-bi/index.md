@@ -30,6 +30,8 @@ Use the following pages for prerequisites and deployment steps:
 
 [Deploying in Docker](/deploying-bold-bi/deploying-on-docker/)
 
+[Bold BI Upgrade Center](/deploying-bold-bi/upgrade-center/)
+
 [Deploying in Cloud Platform Using Terraform](/deploying-bold-bi/deploying-on-cloud-platform-using-terraform/)
 
 [Upgrade Guidelines](/deploying-bold-bi/upgrade-guidelines/)

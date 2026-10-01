@@ -8,27 +8,27 @@ documentation: ug
 
 # Installation and Deployment 
 
-This section explains how to install and deploy Bold BI Enterprise.
+This section explains how to install and deploy Bold BI Server.
 
 ## Unlock the setup
 
-This topic outlines the steps necessary for installing Bold BI Enterprise.
+This topic outlines the steps necessary for installing Bold BI Server.
 
-To view the system requirements for deploying Bold BI Enterprise in a business setting, refer to the [System Requirements](/deploying-bold-bi/deploying-on-windows/prerequisites-windows/).
+To view the system requirements for deploying Bold BI Server in a business setting, refer to the [System Requirements](/deploying-bold-bi/deploying-on-windows/prerequisites-windows/).
 
-Run the Bold BI Enterprise Installer.
+Run the Bold BI Server Installer.
 
 ![installation with registered e-mail](/static/assets/installation-and-deployment/images/installation-step-1.png)
 
-You can review the license agreement for the Bold BI Enterprise edition by clicking on the `License Terms and Conditions`.
+You can review the license agreement for the Bold BI Server by clicking on the `License Terms and Conditions`.
 
 ## Hosting type
 
-You have been provided with the Bold BI Enterprise Edition for hosting in the IIS web-server type.
+You have been provided with the Bold BI Server for hosting in the IIS web-server type.
 
 ### IIS
 
-You need to input the port number, location, and site name to host Bold BI Enterprise in the IIS.
+You need to input the port number, location, and site name to host Bold BI Server in the IIS.
 
 ![Installation Location, IIS Port Changes and Site Name](/static/assets/installation-and-deployment/images/installation-IIS.png)
 
@@ -50,7 +50,7 @@ You need to input the port number, location, and site name to host Bold BI Enter
 
 ## Client libraries
 
-> **IMPORTANT:** Bold BI Enterprise Edition uses client libraries such as Oracle, PostgreSQL, MySQL, Snowflake, and MongoDB to connect with their respective SQL database variants. Review and accept the license for each library to consent to its installation. Only the selected client libraries installed.
+> **IMPORTANT:** Bold BI Server uses client libraries such as Oracle, PostgreSQL, MySQL, Snowflake, and MongoDB to connect with their respective SQL database variants. Review and accept the license for each library to consent to its installation. Only the selected client libraries installed.
 
 ![Installation Client Libraries](/static/assets/installation-and-deployment/images/installation-clientlibraries.png)
 
@@ -62,7 +62,7 @@ Once the installation is complete, you can launch the application by clicking `L
 
 If you didn't install the client libraries during this installation, you can do so later using the `ClientLibrary.msi` setup after installing the Bold BI setup. Follow these steps to install the client libraries:
 
-1.	Navigate to the location `C:\Program Files (x86)\Bold BI Enterprise Edition\Client Library` and double-click the setup file named `ClientLibrary.msi`.
+1.	Navigate to the location `C:\Program Files (x86)\Bold BI Server\Client Library` and double-click the setup file named `ClientLibrary.msi`.
 
     ![Installation Client Libraries Setup](/static/assets/installation-and-deployment/images/installation-clientlibraries_setup.png)
 

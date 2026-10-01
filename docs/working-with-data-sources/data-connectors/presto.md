@@ -37,10 +37,21 @@ After clicking the data source, the NEW DATA SOURCE configuration panel opens. F
 
    ![Presto Connection](/static/assets/working-with-datasource/data-connectors/images/Presto/Presto_Connection.png)
 
+There are two connection types available in a data source:
+
+	* Live mode
+	* Extract mode
+
 In future, you can edit the connection information using [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
 
 > **NOTE:**  To connect a data source with **SSH**, enable the SSH check box in the **NEW DATA SOURCE** configuration panel and enter the required credentials.
 ![Enable SSH](/static/assets/working-with-datasource/data-connectors/images/Presto/ssh_presto.png#max-width=60%)
+
+## Live mode connection
+
+In this type of connection, a data source is directly fetched from source. Choose the **Live** mode option for this connection.
+
+![Live Connection](/static/assets/working-with-datasource/data-connectors/images/Presto/Presto_Live_Connection.png)
 
 ### Data Preview
 1. Click **Connect** to connect the Presto server with configured details.
@@ -57,6 +68,61 @@ The schema represents the collection list that is retrieved from the Presto serv
    ![Codeview mode](/static/assets/working-with-datasource/data-connectors/images/common/CodeViewMode.png)
 
 3. Click **Save** to save the data source with a relevant name.
+
+## Extract mode connection 
+
+1. Switching to Extract mode, Extract Engine will become visible.
+
+    ![Extract Engine](/static/assets/working-with-datasource/images/Extract_Engine.png)
+
+2. In Bold BI Extract, The data will be extracted in Bold BI itself.
+3. When switching to Data Hub, the data is extracted using the Data Hub. To view the equivalent pipeline created for data extraction, navigate to the Query Designer page and click on View Pipeline.
+
+    ![Refresh Setting](/static/assets/working-with-datasource/images/View_Pipeline.png)
+
+
+> **NOTE:**  Initially, data will be extracted based on the Max Rows selected in order to proceed with data model creation. The remaining records (there is no limit) will be extracted during the next refresh.  <br /> 
+ ![Max rows option](/static/assets/working-with-datasource/data-connectors/images/Presto/maxRowOption.png#max-width=60%)
+ 
+### Refresh Settings
+#### Steps to configure the data source refresh settings:
+1. Click Refresh Settings in the configuration panel.
+
+    ![Refresh Setting](/static/assets/working-with-datasource/data-connectors/images/Presto/Presto_Refresh_Setting.png)
+
+2. Select the recurrence type, recurrence start, and end dates in the **Refresh Setting** dialog box.
+	* Data refresh can be scheduled hourly, daily, weekly, and monthly.
+	* Application Time Zone is displayed below the date picker. The Start time of the schedule is converted to the client Time Zone and shown at the right-side for users convenience. After making your selections, click **Schedule**.
+
+	![Save Schedule](/static/assets/working-with-datasource/data-connectors/images/common/RefreshSetting.png)
+
+### Preview and data import
+1. Click **Connect** to connect to the PostgreSql server with the configured details.
+2. The Extract Data dialog opens. This dialog has two modes of connection either via Table or [Custom query](https://support.boldbi.com/kb/article/16675/working-with-custom-query-extract-mode-in-bold-bi). Under custom query option, write the required query and click **Connect**.
+Under Table option, this dialog displays list of tables and views in a treeview. Select the required table(s) or view(s) from the treeview to use in the designer. [Incremental Update](/working-with-data-sources/data-connectors/ms-sql-server/#incremental-update) can be performed on both tables and views. 
+The option is available for configuring the incremental refresh column for the selected items in the right-side panel. 
+      * The table must have a primary key column and date column to configure the incremental refresh option.
+      * The Views must have a date column to configure the incremental refresh option and unique column(s) are optional which is used to update the modified records.
+  
+   If you configure it, the data source will work on [Incremental update](/working-with-data-sources/data-connectors/ms-sql-server/#incremental-update), otherwise, it will work on [Full load](/working-with-data-sources/data-connectors/ms-sql-server/#full-load) concept. Finally, click **Connect**.
+
+
+   ![Preview](/static/assets/working-with-datasource/data-connectors/images/common/Preview_Extract.png#max-width=100%)
+
+
+3. Now, the data design view page with the selected table schema opens. Drag the table.
+
+   ![Query Editor](/static/assets/working-with-datasource/data-connectors/images/common/QueryEditor_Extract.png)
+    
+    You can use the Code View option for passing query to display data.
+
+   ![Codeview mode](/static/assets/working-with-datasource/data-connectors/images/common/CodeViewMode_Extract.png)
+
+4. Click **Save** to save the data source with a relevant name.
+
+> **NOTE:**  In future, you can edit the connection information for both live and extract mode connections using the [Edit Connection](/working-with-data-sources/editing-a-data-connection/) option.
+
+>**Note:** After a successful connection, Query Designer will list `tables`, `views`, and `stored procedures`. Materialized views will be listed under the `Views` section.
 
 ### Connect using custom attribute and dashboard parameter
 

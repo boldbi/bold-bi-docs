@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Pipedrive ETL/Data Hub Connector – Embedded BI | Bold BI Learning
-description: Learn how to use the Pipedrive ETL/Bold Data Hub connectors in Bold BI Enterprise Edition. Discover simple steps to integrate data smoothly and make the most of your analytics.
+description: Learn how to use the Pipedrive ETL/Bold Data Hub connectors in Bold BI Server. Discover simple steps to integrate data smoothly and make the most of your analytics.
 platform: bold-bi
 documentation: ug
 
@@ -33,7 +33,7 @@ Pipedrive_api_key: Pipedrive API key
 ### Example Configuration
 
 ```yaml
-version: 1
+version: 1.0.1
 encrypt_credentials: false
 plugins:
   extractors:
@@ -103,6 +103,5 @@ The available resources are supported in Pipedrive
 4. Click on Logs to see if the run is completed and data source is created in Bold BI. 
 
 ![Pipedrive - BoldBI](/static/assets/working-with-etl/images/pipeline_DsCreated.png#max-width=100%)
-
 
 5. Click `Edit DataSource` Option to view the created tables.

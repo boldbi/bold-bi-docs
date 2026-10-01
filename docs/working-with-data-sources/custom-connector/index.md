@@ -8,7 +8,7 @@ documentation: ug
 
 # Custom Connector in Bold BI
 
-This section explains how to create and configure a custom connector in the Bold BI Enterprise.
+This section explains how to create and configure a custom connector in the Bold BI Server.
 
 ## You can explore about Custom Connector in detail here
 

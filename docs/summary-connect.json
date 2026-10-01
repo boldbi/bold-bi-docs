@@ -68,6 +68,7 @@
 					"Appfolio": "appfolio",
 					"Ask Nicely": "ask-nicely",
 					"Azure Data Explorer": "azure-data-explorer",
+					"Azure Databricks": "azure-databricks",
 					"Azure Synapse Analytics": "azure-synapse-analytics",
 					"Azure DevOps": "azure-devops",
 					"Azure Blob": "azure-blob",
@@ -248,6 +249,7 @@
 							"Bing Ads": "bing-ads",
 							"CSV": "csv",
 							"DynamoDB": "dynamodb",
+							"Elastic Search": "elastic-search",
 							"Excel": "excel",
 							"Facebook Ads": "facebook-ads",
 							"FileSystem": "file-system",
@@ -275,6 +277,7 @@
 							"Personio": "person",
 							"Pipedrive": "pipedrive",
 							"PostgreSQL": "postgresql",
+							"Presto": "presto",
 							"PythonScript": "python-script",
 							"Salesforce": "salesforce",
 							"Salesforce Reports": "salesforce-reports",
@@ -290,8 +293,7 @@
 							"Yaml": "yaml",
 							"Zendesk Chat": "zendesk-chat",
 							"Zendesk Support": "zendesk-support",
-							"Zendesk Talk": "zendesk-talk",
-							"Elastic Search": "elastic-search"
+							"Zendesk Talk": "zendesk-talk"
 						}
 					}
 				}

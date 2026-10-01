@@ -306,7 +306,38 @@ LASTVALUE([orderdate], PartitionBy := [salesrep], OrderBy := [orderdate])
 
  ![LastValuePartition](/static/assets/data-modeling/configuring-expression-columns/lastvaluepartition.png)
 
+## Inline Expressions for Window Expressions
 
+Window expressions support using either an existing expression field or an inline expression directly as the value argument for the following functions:
+
+- `COUNTPARTITION()`
+- `SUMPARTITION()`
+- `AVGPARTITION()`
+- `MINPARTITION()`
+- `MAXPARTITION()`
+- `FIRSTVALUE()`
+- `LASTVALUE()`
+
+### Using an Inline Expression
+
+Instead of creating a separate expression, you can directly use an inline expression as the value argument:
+
+```text
+FIRSTVALUE(CONCAT([SalesRep], [Region]), PartitionBy := [Region], OrderBy := [OrderDate])
+```
+### Using an Existing Expression
+
+First, create an expression:
+
+```text
+Expression1 = CONCAT([SalesRep], [Region])
+```
+
+Then reference the expression in a window function:
+
+```text
+FIRSTVALUE(Expression1, PartitionBy := [Region], OrderBy := [OrderDate])
+```
 
 ## Limitations
 

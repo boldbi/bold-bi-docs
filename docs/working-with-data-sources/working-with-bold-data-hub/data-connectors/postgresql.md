@@ -1,7 +1,7 @@
 ---
 layout: post
 title: PostgresSQL Bold Data Hub Connector – Bold BI Learning
-description: Learn how to use the PostgresSQL Bold Data Hub connectors in Bold BI Enterprise Edition. Discover simple steps to integrate data smoothly and make the most of your analytics.
+description: Learn how to use the PostgresSQL Bold Data Hub connectors in Bold BI Server. Discover simple steps to integrate data smoothly and make the most of your analytics.
 platform: bold-bi
 documentation: ug
 
@@ -36,7 +36,7 @@ drivername: postgresql+pg8000
   
   3. Select the newly created pipeline and add the `PostgreSQL` template.
 
-  ![PostgreSQL Data Hub- BoldBI](/static/assets/working-with-etl/images/postgres_yaml.png#max-width=100%)
+  ![PostgreSQL Data Hub- BoldBI](/static/assets/working-with-etl/images/PostgresqlTemplate.png#max-width=100%)
   
 ### Configuration Parameters
 
@@ -55,7 +55,7 @@ drivername: postgresql+pg8000
 
   4. Update the details required in the template and Click Save, choose the desired destination to save the pipeline.
 
-  ![PostgreSQL Data Hub- BoldBI](/static/assets/working-with-etl/images/pgetl_updateDataHub.png#max-width=100%)
+  ![PostgreSQL Data Hub- BoldBI](/static/assets/working-with-etl/images/postgres_yaml.png#max-width=100%)
   
   5. Creating a Pipeline in Bold Data Hub automatically creates a Data Source in Bold BI. The Bold BI Data Source is a live data source to the destination database used in Bold Data Hub. For more information on the relationship between Bold Data Hub Pipeline and the associated Data Sources in Bold BI , please refer to [Relationship between Bold Data Hub Pipeline and Associated Data Sources in Bold BI](https://help.boldbi.com/working-with-data-sources/working-with-bold-data-hub/relationship-between-bold-data-hub-pipeline-and-associated-data-sources-in-boldbi/)
 
@@ -128,7 +128,7 @@ metadata:
 #### Incremental
 
 ```yaml
-version: 1
+version: 1.0.1
 encrypt_credentials: false
 plugins:
   extractors:
@@ -157,7 +157,7 @@ plugins:
 #### FULLTABLE
 
 ```yaml
-version: 1
+version: 1.0.1
 encrypt_credentials: false
 plugins:
   extractors:

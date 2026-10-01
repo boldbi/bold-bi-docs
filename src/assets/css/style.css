@@ -148,7 +148,7 @@ body {
 	gap: 10px;
 }
 
-#header {
+#header-container {
 	padding: 0px 32px;
 	border-bottom: 1px solid #E9EBEE;
 	background: #fff;
@@ -160,7 +160,7 @@ body {
 	z-index: 9999;
 }
 
-#header .container {
+#header-container .container {
 	display: flex;
 	align-items: center;
 	gap: 0;
@@ -514,8 +514,10 @@ body {
 }
  
 /* show bottom border only when page is scrolled */
-#breadcrumb-container.scrolled {
-	border-bottom: 1px solid #E9EBEE;
+@media (max-width:1100px){
+	#breadcrumb-container.scrolled {
+		border-bottom: 1px solid #E9EBEE;
+	}
 }
 
 #md-content img {
@@ -544,4 +546,9 @@ body {
     max-width: 100%;
     overflow: hidden auto;
     max-height: 90vh;
+}
+
+#bold-agent-chat-host {
+	position: sticky !important;
+	z-index: 15000;
 }

@@ -6,7 +6,7 @@ platform: bold-bi
 documentation: ug
 ---
 
-# Bold BI Dashboards Embedding in Java using Spring Boot Sample with Embedded SDK
+# Bold BI Dashboards Embedding in Java using Spring Boot Sample with Embed SDK
 
 A GitHub link has been provided to [get](https://github.com/boldbi/spring-boot-sample) the sample application, which demonstrates the dashboard rendering functionality available in your Bold BI server. This is followed by steps to create a new embedding application using `Spring Boot` on your own.
 

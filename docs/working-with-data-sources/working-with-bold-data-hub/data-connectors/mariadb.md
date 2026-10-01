@@ -1,7 +1,7 @@
 ---
 layout: post
 title: MariaDB Data Hub Connector – Bold BI Embedded Learning
-description: Learn how to use the MariaDB Bold Data Hub connectors in Bold BI Enterprise Edition. Discover simple steps to integrate data smoothly and make the most of your analytics.
+description: Learn how to use the MariaDB Bold Data Hub connectors in Bold BI Server. Discover simple steps to integrate data smoothly and make the most of your analytics.
 platform: bold-bi
 documentation: ug
 
@@ -37,7 +37,7 @@ plugins:
   extractors:
     - name: MariaDB
       connectorname: MariaDB
-      schemaname: 
+      schemaname:
       config:
         host: hostname
         port: 3306
@@ -45,8 +45,8 @@ plugins:
         database: database
         password: password
         drivername: mysql+pymysql
-      properties: 
-      metadata: 
+      properties:
+      metadata:
       select:
         - tablename
 ```
@@ -60,7 +60,7 @@ plugins:
   
    ![MariaDB Hub- BoldBI](/static/assets/working-with-etl/images/addpipeline.png#max-width=100%)
   
-  3. Select the newly created pipeline and add the `MySQL` template.
+  3. Select the newly created pipeline and add the `MariaDB` template.
 
   ![MariaDB Hub- BoldBI](/static/assets/working-with-etl/images/mariadb_template.png#max-width=100%)
   
@@ -145,7 +145,7 @@ metadata:
 ### INCREMENTAL
 
 ```yaml
-version: 1
+version: 1.0.1
 encrypt_credentials: false
 plugins:
   extractors:
@@ -175,7 +175,7 @@ plugins:
 ### FULL_TABLE
 
 ```yaml
-version: 1
+version: 1.0.1
 encrypt_credentials: false
 plugins:
   extractors:

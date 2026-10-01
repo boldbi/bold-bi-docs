@@ -8,7 +8,7 @@ documentation: ug
 
 # Application Startup
 
-This section explains how to configure the installed Bold BI Enterprise application, including the admin account, database, and data storage settings.
+This section explains how to configure the installed Bold BI Server application, including the admin account, database, and data storage settings.
 
 Select the applicable version:
 

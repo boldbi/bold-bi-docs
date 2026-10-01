@@ -25,7 +25,7 @@ Users have the option to install the Data Hub Application in conjunction with Bo
     Bold Reports & Bold BI Locations: 
     ```
     “C:\Program Files (x86) \Bold Reports\Enterprise Reporting\BoldETL>BoldETL.msi”
-    “C:\Program Files (x86) \Bold BI Enterprise Edition\BoldETL>BoldETL.msi”
+    “C:\Program Files (x86) \Bold BI Server\BoldETL>BoldETL.msi”
     ```
 ---
 
