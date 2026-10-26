@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Dashboards Styles – Embedded BI | Bold BI Learning
-description: Learn how to change the Dashboard Styles like Background color Background Image in the Bold BI Embedded.
+title: Dashboard Styles – Embedded BI | Bold BI Learning
+description: Learn how to change the dashboard styles, like background color and background image, in the Bold BI Embedded.
 canonical: "/working-with-dashboards/dashboard-styles/"
 platform: bold-bi
 documentation: ug
@@ -19,19 +19,19 @@ The `Canvas Style` section in the designer properties allows users to customize 
  
 ## Background Color
 
-By enabling the `Enable Background Color` option in the properties panel and selecting a background color using the `Background Color` setting, users can modify the dashboard's background color on the design page. This change will be visible in both preview and view modes. By default, this option is disabled.
+By enabling the `Enable Background Color` option in the properties panel and selecting a background color using the `Background Color` setting, users can modify the dashboard's background color on the design page. This change is visible in both preview and view modes. By default, this option is disabled.
 
-The design mode of the dashboard will display the selected background color, as shown below.
+The design mode of the dashboard displays the selected background color, as shown below.
 
 ![Canvas background color in design mode of the Dashboard](/static/assets/working-with-dashboards/images/design-canvas-bgcolor.png)
 
-Similarly, both the preview and view modes will reflect the selected background color, as illustrated.
+Similarly, both the preview and view modes reflect the selected background color, as illustrated.
 
 ![Canvas background color in view mode of the Dashboard](/static/assets/working-with-dashboards/images/Publish-bgcolor.png)
  
 ## Background Image
 
-Enabling the `Enable Background Image` option in the properties panel allows users to set a background image for the dashboard on the design page. This change will be visible in both preview and view modes. This option is disabled by default. Users can apply a background image by selecting one of the following image types:
+Enabling the `Enable Background Image` option in the properties panel allows users to set a background image for the dashboard on the design page. This change is visible in both preview and view modes. This option is disabled by default. Users can apply a background image by selecting one of the following image types:
 
 1. `Local`: Users can browse and select an image from their local device to use as the background image.
 
@@ -41,7 +41,7 @@ Enabling the `Enable Background Image` option in the properties panel allows use
 
 ![Background URL Image](/static/assets/working-with-dashboards/images/Background-URL-Image.png)
 
-Based on the selected image type, the background image will be applied to the design, preview, and view modes of the dashboard.
+Based on the selected image type, the background image is applied to the design, preview, and view modes of the dashboard.
 
 ![Canvas background image in view mode Dashboard](/static/assets/working-with-dashboards/images/view-bgimage.png)
 
@@ -61,7 +61,7 @@ The Mode setting in the properties panel allows users to customize the display o
 
 The Banner Panel Style option allows users to change the background and foreground colors of the Banner panel. By enabling the Enable Background Color and Enable Foreground Color options and selecting the desired colors, users can visualize these changes in the Preview and View modes of the dashboard. By default, these options are disabled.
 
-The changes to the background and foreground colors of the Banner panel will be displayed as shown below:
+The changes to the background and foreground colors of the Banner panel are displayed as shown below:
 
 ## Background Color
 
