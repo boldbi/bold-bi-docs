@@ -22,7 +22,7 @@ The multi-tabbed dashboard feature enables the user to display two or more dashb
 
 ## Create a Multi-Tabbed Dashboard
 
-To create a multi-tabbed dashboard, the user must have access to dashboards. An admin user can utilize any dashboard to create a multi-tabbed dashboard, while other users can only use their own dashboards or shared dashboards with write permission.
+To create a multi-tabbed dashboard, the user must have access to dashboards. An admin user can use any dashboard to create a multi-tabbed dashboard, while other users can only use their own dashboards or shared dashboards with write permission.
 
 ### Steps to Create a Multi-Tabbed Dashboard
 
