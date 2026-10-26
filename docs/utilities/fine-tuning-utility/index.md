@@ -13,7 +13,7 @@ To enable AI functionalities within the Q&A widget for Bold BI Embedded, users a
 
 For the fine-tuning process of the GPT 3.5 model tailored to Bold BI's requirements, the OpenAI fine-tuning utility is utilized.
 
-This approach ensures that the Q&A widget seamlessly integrates with Bold BI Embedded by using the finely tuned GPT 3.5 model, enhancing its AI capabilities.
+This approach ensures that the Q&A widget integrates with Bold BI Embedded by using the finely tuned GPT 3.5 model, enhancing its AI capabilities.
 
 This section provides instructions on how to execute the Fine-Tuning Utility.
 
