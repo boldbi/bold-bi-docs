@@ -1,15 +1,15 @@
 ---
 layout: post
-title:  How to Remove 2FA using Admin Utility | Bold BI Docs
-description: Learn how to use the command line interface to reset the Two-Factor Authentication (2FA) of any user in Bold BI Embedded using their email address or user name.
+title: How to Remove 2FA Using Admin Utility | Bold BI Docs
+description: Learn how to use the command line interface to reset the two-factor authentication (2FA) of any user in Bold BI Embedded using their email address or username.
 platform: bold-bi
 documentation: ug
 
 ---
 
-# Reset Two Factor Authentication
+# Reset Two-Factor Authentication
 
-Please refer to your operating system’s documentation for resetting the Two-Factor Authentication of any user using their email address or username.
+Please refer to your operating system’s documentation for resetting the two-factor authentication of any user using their email address or username.
 
 [Windows](/utilities/bold-bi-command-line-tools/reset-2fa/#windows)
 
@@ -23,13 +23,13 @@ cd C:\BoldServices\utilities\adminutils
 ~~~
 ![command](/static/assets/admin-utility/images/reset2fa-path.png)
  
-2. After changing the directory, run the following command to reset the Two-Factor Authentication:  
+2. After changing the directory, run the following command to reset the two-factor authentication:  
 ~~~
 Syncfusion.Server.Commands.Utility.exe reset2fa -u 'user email or username here'
 ~~~  
 ![reset command](/static/assets/admin-utility/images/reset2fa-cmd.png) 
 
-3. Once the Two-Factor Authentication has been successfully reset, the user can log in without Two-Factor Authentication.
+3. Once the two-factor authentication has been successfully reset, the user can log in without two-factor authentication.
 
 ## Linux
   
@@ -39,10 +39,10 @@ cd /var/www/bold-services/application/utilities/adminutils/
 ~~~
 ![command linux](/static/assets/admin-utility/images/reset2fa-linux.png)
  
-2. After changing the directory, run the following command to reset the Two-Factor Authentication:
+2. After changing the directory, run the following command to reset the two-factor authentication:
 ~~~
 ../../../dotnet/dotnet Syncfusion.Server.Commands.Utility.dll reset2fa -u 'user email or username here'
 ~~~  
 ![reset command linum](/static/assets/admin-utility/images/reset2fa-cmd-linux.png) 
 
-3. Once the Two-Factor Authentication has been successfully reset, the user can log in without it.
+3. Once the two-factor authentication has been successfully reset, the user can log in without it.
