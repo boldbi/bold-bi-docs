@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Proxy Settings – On-Premises & Embedded | Bold BI Docs
-description: Learn how to configure proxy settings in Bold BI to route traffic securely and update domain and site configurations.
+description: "Learn how to configure proxy settings in Bold BI to route application traffic securely, and how to update the domain and site configuration after changes."
 platform: bold-bi
 documentation: ug
 ---
