@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Filtering Views with Parameters in URL | Bold BI Embedded
-description: Learn how to use parameters in Dashboard URL to apply filters on its initial loading in Bold BI Embedded.
+description: "Learn how to add parameters to a dashboard URL in Bold BI to apply filters when the dashboard first loads, so users open it already filtered to their data."
 canonical: "/working-with-dashboards/preview-dashboard/urlparameters/"
 platform: bold-bi
 documentation: ug
 ---
 # Filtering Views through URL Parameters
 
-## Passing Parameter With URL
+## Passing Parameter with URL
 
 You can pass parameters to a dashboard by including them in the dashboard URL. Passing parameter values within the URL will apply filters in the dashboard on initial load itself.
 
@@ -19,7 +19,7 @@ To set a dashboard parameter within a URL, use the following syntax:
 where the `parameter` represents the column name. 
 The parameter can be single-valued or multiple-valued.
 
-To append your query string made with parameters and values to the URL, add a prefix (?) to the query string. If (?) is already present in the URL, add a prefix(&) to the query string.
+To append your query string made with parameters and values to the URL, add a prefix (?) to the query string. If (?) is already present in the URL, add a prefix (&) to the query string.
 
 `http://<servername>/<culturename>/dashboards/<dashboardid>/<category>/<dashboardname>?ProductName=Chang`
 
@@ -146,7 +146,7 @@ WEEKOFYEAR(parameter)=value1, value2, …, valueN</td>
 </tr>
 </table>
 
-List of operators supported in date and time functions. For example, for illustrative purposes, we are using the year date and time function.
+List of operators supported in date and time functions. For example, for illustrative purposes, the year date and time function is used.
 
 <table>
 <tr><td>
@@ -171,14 +171,14 @@ INBETWEEN</td>
 parameter=INBETWEEN(value1,value2)</td>
 </tr></table>
 
-> **NOTE:**  The between and inbetween operators, the value must be in the format **M/d/yyyy h:mm tt**. Additionally, no date time function is required for this.
+> **NOTE:** For the between and inbetween operators, the value must be in the format **M/d/yyyy h:mm tt**. Additionally, no date time function is required for this.
 
 Here is a dashboard view illustrating the use of parameters with date and time functions.
 
 ![URLFilter Date Value](/static/assets/working-with-dashboards/preview-dashboards/images/urldate.png)
 
 ## Measure Parameters Support
-You can define parameters with measure-typed columns just as shown below:
+You can define parameters with measure-typed columns just:
 
 `http://<servername>/<culturename>/dashboards/<dashboardid>/<category>/<dashboardname>?MeasureTypeParameter=value`
 
@@ -227,7 +227,7 @@ parameter>=value</td>
 
 Comma separator is used in the condition to filter with multiple values for the measure column, like `parameter=value1, value2, value3, ..., valueN`.
 
-> **NOTE:**  You are only allowed to pass one parameter value, except for between and not between which require 2 parameter values.
+> **NOTE:** You are only allowed to pass one parameter value, except for between and not between which require 2 parameter values.
 
 Here is a dashboard view illustrating the use of parameters with measure values.
 
@@ -276,7 +276,7 @@ Here is a dashboard view illustrating the use of parameters with measure paramet
 
 ## Special Characters Support
 
-You can also pass parameter values with special characters to filter. To use a value with special characters, you can pass the value inside square brackets as shown below:
+You can also pass parameter values with special characters to filter. To use a value with special characters, you can pass the value inside square brackets:
 
 **Syntax for a single value**
 
@@ -321,7 +321,7 @@ Here is a dashboard view illustrating the use of parameters with special charact
 
 ## Passing Keywords with URL
 
-The following keywords are used for our internal purposes. If you have any of these keywords as column names, you can specify them inside square brackets as shown below:
+The following keywords are used for our internal purposes. If you have any of these keywords as column names, you can specify them inside square brackets:
 
 `http://<servername>/<culturename>/dashboards/<dashboardid>/<category>/<dashboardname>?[Keywords]=value`
 
@@ -355,9 +355,9 @@ Here is a dashboard view illustrating the use of parameters with the mentioned k
 
 ![Keywords](/static/assets/working-with-dashboards/preview-dashboards/images/Keywords.png)
 
-## Passing Parameters with dataSource
+## Passing Parameters with DataSource
 
-You can pass a parameter value along with the DataSource name to specifically filter the data. For this purpose, you can pass the URL as shown below:
+You can pass a parameter value along with the DataSource name to specifically filter the data. For this purpose, you can pass the URL:
 
 `http://<servername>/<culturename>/dashboards/<dashboardid>/<category>/<dashboardname>?DataSourceName.ParameterName=value`
 
@@ -367,7 +367,7 @@ Here is a dashboard view illustrating the use of parameters with DataSource.
 
 Where <b>Northwind</b> is the required data source name.
 
-## Passing Multiple Parameters With URL
+## Passing Multiple Parameters with URL
 
 You can pass more than one parameter within a URL by introducing an ampersand (& or &&) or vertical bar (| or ||) symbol in between them to differentiate, like below:
 
@@ -379,7 +379,7 @@ Here is a dashboard view illustrating the same.
 
 ## Grouped URL Parameters
 
-The Grouped URL Parameters feature allows users to filter values using multiple conditions combined with AND/OR operators. This is achieved by enclosing the conditions within parentheses to define the logical grouping, as shown below:
+The Grouped URL Parameters feature allows users to filter values using multiple conditions combined with AND/OR operators. This is achieved by enclosing the conditions within parentheses to define the logical grouping:
 
 `http://<servername>/<culturename>/dashboards/<dashboardid>/<category>/<dashboardname>?(((CustomerID=ALFKI&OrderID=10643)&City=Berlin)|(ProductName=Aniseed Syrup&Country=Austria, USA))`
 
