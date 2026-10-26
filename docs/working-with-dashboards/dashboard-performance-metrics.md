@@ -8,7 +8,7 @@ documentation: ug
 
 # Dashboard Performance Metrics
 
-The Dashboard allows you to enable or disable specific dashboard metrics options in the dashboard properties section. By default, metrics options is enabled.
+The Dashboard allows you to enable or disable specific dashboard metrics options in the dashboard properties section. By default, metrics options are enabled.
 
 ![Metrics Option](/static/assets/working-with-dashboards/images/enable-metrics-settings.png)
 
@@ -16,7 +16,7 @@ The Dashboard Performance Metrics pop-up allows you to view detailed performance
 
 ![Metrics Option](/static/assets/working-with-dashboards/images/mertics-option.png)
 
-By clicking `Metrics` option, Performance Metrics pop-up will be displayed as follows.
+By clicking `Metrics` option, Performance Metrics pop-up is displayed as follows.
 
 ![Metrics Pop-Up](/static/assets/working-with-dashboards/images/metrics-pop-up.png)
 
@@ -28,17 +28,17 @@ For the mobile view mode, the option is included as shown below.
 
 ## Performance Metrics Details
 
-### Parsing time
+### Parsing Time
 
 Parsing time is measured from the initial load until the successful completion of the load dashboard API method call.
 
-### Layout time
+### Layout Time
 
 Layout time is calculated from the beginning of the layout render action until just before the widget data fetching call action.
 
 ### Widget Processing Metrics
 
-In this section, you can view the processing time for each widget. The overall widget processing time is calculated as the sum of data fetching and rendering time. The total widget processing time will be displayed alongside the widget name.
+In this section, you can view the processing time for each widget. The overall widget processing time is calculated as the sum of data fetching and rendering time. The total widget processing time is displayed alongside the widget name.
 
 ![Widget Processing Time](/static/assets/working-with-dashboards/images/widget-processing-time.png)
 
@@ -54,5 +54,5 @@ This displays the querying time at the moment of a particular widget’s data fe
 
 Rendering time is measured from the completion of the data fetching action to the point when the data is bound and displayed in the user interface.
 
->NOTE: The metrics data may vary depending on the data bindings and server responses, and it may also be affected by system performance.
+> **NOTE:** The metrics data may vary depending on the data bindings and server responses, and it may also be affected by system performance.
 
