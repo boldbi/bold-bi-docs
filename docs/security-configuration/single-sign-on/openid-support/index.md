@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Single Sign-On with OpenID Connect | Bold BI Embedded
-description: Enable seamless and straightforward authentication within the Bold BI application by configuring OpenID through both the intuitive application user interface (UI) and the powerful REST API.
+description: "Learn how to configure OpenID Connect single sign-on in Bold BI through the application interface or the REST API, so users sign in with your provider."
 platform: bold-bi
 documentation: ug
 
