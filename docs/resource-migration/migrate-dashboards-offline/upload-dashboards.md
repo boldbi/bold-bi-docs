@@ -6,11 +6,11 @@ platform: bold-bi
 documentation: ug
 ---
 
-# Upload dashboards in the Bold BI application
+# Upload Dashboards in the Bold BI Application
 
 To upload dashboards to the Bold BI application, you can use the bbix file in Bold BI Embedded. Here is a step-by-step guide on how to upload dashboards to sites in Bold BI:
 
-## Prepare dashboards for uploading
+## Prepare Dashboards for Uploading
 
 To upload the dashboard(s) from site(s), follow these steps:
 
@@ -40,13 +40,13 @@ To upload the dashboard(s) from site(s), follow these steps:
 
 > **NOTE:** Only files that have been successfully uploaded will be considered for the uploading process. If any files do not display the message `Uploaded successfully`, they will not be uploaded and will be discarded. Therefore, ensure that all dashboard files have been successfully uploaded before proceeding to the next step.
 
-## Updating the dashboard files for uploading
+## Updating the Dashboard Files for Uploading
 
 After successfully uploading the required dashboard files, a new user interface will be displayed to update the details of the uploaded dashboards. The updated interface will appear as shown below.
 
 ![Upload Second](/static/assets/resource-migration/migrate-dashboards-offline/images/upload-second.png)
 
-## Updating the dashboard information
+## Updating the Dashboard Information
 
 The following information can be updated in the uploaded dashboards:
 
@@ -65,7 +65,7 @@ The following information can be updated in the uploaded dashboards:
 
     ![Upload NameDesc](/static/assets/resource-migration/migrate-dashboards-offline/images/upload-name-desc.png)
     
-## Updating the data source information
+## Updating the Data Source Information
 
 1. The uploaded dashboard will have data sources that will be in a `Pending` or `Completed` state based on the configuration completed for that particular data source.
 The following are two data sources with different configuration states:
@@ -73,7 +73,7 @@ The following are two data sources with different configuration states:
    ![Upload DsCompleted](/static/assets/resource-migration/migrate-dashboards-offline/images/upload-ds-complete.png)
    ![Upload DsPending](/static/assets/resource-migration/migrate-dashboards-offline/images/upload-ds-pending.png)
    
-   > **NOTE:**  Dashboards downloaded by enabling the `Include sensitive information` will have all data sources in the `Completed` state. If not, they will all be in the `Pending` state.
+   > **NOTE:** Dashboards downloaded by enabling the `Include sensitive information` will have all data sources in the `Completed` state. If not, they will all be in the `Pending` state.
 
 2. To change the Pending state, you need to click the data source list as shown below.
    ![Upload DsList](/static/assets/resource-migration/migrate-dashboards-offline/images/upload-ds-list.png)
@@ -84,13 +84,13 @@ The following are two data sources with different configuration states:
 
    * [Map to an existing data source](#map-to-an-existing-data-source)
 
-### Configure the data source
+### Configure the Data Source
     
 This will provide an option to alter the details of the data source, as shown below.
 
 ![Upload DsConfig](/static/assets/resource-migration/migrate-dashboards-offline/images/upload-ds-config.png)
 
-To configure the Extract data sources, follow the below steps:
+To configure the Extract data sources, follow the following steps:
 
    * [Configure the web data source](#configure-the-web-data-source)
 
@@ -100,36 +100,36 @@ To configure the Extract data sources, follow the below steps:
 
    * [Configure the drive data source](#configure-the-drive-data-source)
 
->**NOTE:** Choosing the file or URL for the reconnecting data source should have the same file name and column as the existing data source configured in the dashboard. Otherwise, it will show the error message `New schema differs from existing data source` in the UI.
+> **NOTE:** Choosing the file or URL for the reconnecting data source should have the same file name and columns as the existing data source configured in the dashboard. Otherwise, it will show the error message `New schema differs from existing data source` in the UI.
 
-After the details are updated and the `Done` button is clicked the data source will be validated.
+After the details are updated and the `Done` button is clicked, the data source will be validated.
 The data source configuration status will be updated as `Completed` as shown below.
 
 ![Upload DsConfigCompleted](/static/assets/resource-migration/migrate-dashboards-offline/images/upload-ds-configcompleted.png)
 
-### Map to an existing data source
+### Map to an Existing Data Source
 
 This will provide the option to link the current data source to a data source that is already present in the same tenant, as shown below.
 
 ![Upload DsConfigCompleted](/static/assets/resource-migration/migrate-dashboards-offline/images/upload-ds-existing.png)
 
-After selecting the data source and clicking on the `Done` button the data source will be validated.
+After selecting the data source and clicking on the `Done` button, the data source will be validated.
 The data source configuration status will be updated as `Completed` as shown below.
 
 
 > **NOTE:** The data source schemas should match in both of the above options.
 
-### User interface indications
+### User Interface Indications
 
 You may find that on the left side of the user interface within the `Dashboard List`, one of the dashboards is in the `Needs Attention` state and `Configuration Completed` state, as shown below.
 
 ![Upload Second](/static/assets/resource-migration/migrate-dashboards-offline/images/upload-second.png)
 
-After all of the data sources present in a dashboard are configured and updated as `Completed`, then only the dashboard listing will be updated as `Configuration Completed`.
+After all of the data sources present in a dashboard are configured and updated as `Completed`, only the dashboard listing will be updated as `Configuration Completed`.
 
-For example, in the above image, you have `HR Dashboard` in `Needs Attention` state, since the only data source present in the dashboard is still in pending state. If the dashboard has more than one data source, all of them should be in `Completed` state so that the dashboard will be updated as` Configuration Completed`.
+For example, in the above image, you have `HR Dashboard` in `Needs Attention` state, since the only data source present in the dashboard is still in pending state. If the dashboard has more than one data source, all of them should be in `Completed` state so that the dashboard will be updated as ` Configuration Completed`.
 
-Similarly, You will be updating the bottom of the page with the updated information regarding the dashboard status as shown below.
+Similarly, you will be updating the bottom of the page with the updated information regarding the dashboard status as shown below.
 
 ![Upload Bottom Footer](/static/assets/resource-migration/migrate-dashboards-offline/images/upload-bottom-footer.png)
 
@@ -143,7 +143,7 @@ After completion of the data source configuration, the user interface will look 
 
 
 
-### Working with upload drafts
+### Working with Upload Drafts
 
 Throughout this process, you can close the dialog box by clicking on the close button or cross icon displayed below.
 
@@ -153,19 +153,19 @@ Throughout this process, you can close the dialog box by clicking on the close b
 
 ![Upload Dialog Close Confirm](/static/assets/resource-migration/migrate-dashboards-offline/images/upload-dialog-closeconfirm.png)
 
-The uploaded files will be visible on the upload-drafts page. Once redirected to the page, the user interface will be displayed as follows:
+The uploaded files will be visible on the Upload Drafts page. Once redirected to the page, the user interface will be displayed as follows:
 
 ![Upload Drafts Page](/static/assets/resource-migration/migrate-dashboards-offline/images/upload-drafts-page.png)
 
-You can select multiple dashboards from the upload-drafts page to resume where you left off. To proceed, select the multiple dashboards and click the `Complete Upload` button, as shown below.
+You can select multiple dashboards from the Upload Drafts page to resume where you left off. To proceed, select the multiple dashboards and click the `Complete Upload` button, as shown below.
 
 ![Upload Drafts Continue](/static/assets/resource-migration/migrate-dashboards-offline/images/upload-drafts-continue.png)
 
 This action will display the user interface to upload the dashboards.
 
-### Uploading the dashboards.
+### Uploading the Dashboards
 
-> **NOTE:** The dashboards that have been marked as `Configuration Completed` will be only considered for uploading.
+> **NOTE:** The dashboards that have been marked as `Configuration Completed` will only be considered for uploading.
 
 Upon clicking the `Upload` button, the dashboards will be uploaded, and the user interface will appear as shown once the process is completed.
 
@@ -173,19 +173,19 @@ Upon clicking the `Upload` button, the dashboards will be uploaded, and the user
 
 You can find the uploaded dashboards in the tenant, among any other existing dashboards.
 
-### Configure the web data source
+### Configure the Web Data Source
 
 Here, you have the option to provide credentials for the web data source you are uploading as follows.
 
 ![Web data source](/static/assets/resource-migration/migrate-dashboards-offline/images/web-datasource-page.png)
 
-### Configure the file type data source
+### Configure the File Type Data Source
 
 `Upload` a file with the same file name and columns as the existing data source configured in the dashboard to create the data source.
 
 ![File data source](/static/assets/resource-migration/migrate-dashboards-offline/images/file-datasource-page.png)
 
-### Configure web data source with OAuth2 authentication
+### Configure Web Data Source with OAuth2 Authentication
 
 To configure the data source for the OAuth type, you must first complete the OAuth authentication process on the site.
 
@@ -199,7 +199,7 @@ Click the `Connect` button and add a new data connection.
 
 ![Connect button](/static/assets/resource-migration/migrate-dashboards-offline/images/oauth-connect-button.png)
 
-### Configure the drive data source
+### Configure the Drive Data Source
 
 To configure the data source for the OAuth drive type, you must first complete the OAuth authentication process on the site.
 
@@ -225,11 +225,11 @@ Now, the drive window will be populated with the available files. Choose the fil
 
 Click on the `Select` button to create the data source with the new connection details.
 
-### Auto-map data source
+### Auto-Map Data Source
 
-Auto mapping of data sources can save you a lot of time and effort by eliminating the need to set up the same data source which is used across different dashboards.
+Auto mapping of data sources can save you a lot of time and effort by eliminating the need to set up the same data source that is used across different dashboards.
 
-**How to use auto mapping in BoldBI:**
+**How to use auto mapping in Bold BI:**
 
 1. Upload a set of dashboards that have a common data source used across them.
 
@@ -243,13 +243,13 @@ Auto mapping of data sources can save you a lot of time and effort by eliminatin
 
    ![Configured dashboards](/static/assets/resource-migration/migrate-dashboards-offline/images/auto-map-configured-dashboard-list.png)
 
- > **NOTE:** In order for this functionality to work, please ensure that the dashboards are downloaded again and that the BoldBI version is greater than 6.7.
+ > **NOTE:** In order for this functionality to work, please ensure that the dashboards are downloaded again and that the Bold BI version is greater than 6.7.
 
- ### Bulk category update
+ ### Bulk Category Update
 
 This feature enables you to update categories for selected dashboards seamlessly and perform bulk deletion.
 
-**How to use bulk category update in BoldBI:**
+**How to use bulk category update in Bold BI:**
 
 1. Select the uploaded dashboards as follows:
 
@@ -299,9 +299,9 @@ This feature enables you to update categories for selected dashboards seamlessly
 
    ![Bulk category remove selection](/static/assets/resource-migration/migrate-dashboards-offline/images/bulk-remove-selection.png)
 	
- > **NOTE:** This functionality will only work on BoldBI version 6.13 or higher.
+ > **NOTE:** This functionality will only work on Bold BI version 6.13 or higher.
 
- ### Schema mismatch override on data source
+ ### Schema Mismatch Override on Data Source
 
 While uploading a dashboard with a data source that has columns missing in the new connection, the upload process will fail with a schema error. You can now override the error and continue with the data source and dashboard upload.
 
@@ -335,7 +335,7 @@ There will be multiple errors thrown while uploading, as explained below.
 
         ![Error dialog](/static/assets/resource-migration/migrate-dashboards-offline/images/schema_errorpopup.png)
 
-      * By clicking `I accept`, the schema mismatched data sources will be published, while the remaining errors can be manually cleared.
+      * By clicking `I accept`, the schema-mismatched data sources will be published, while the remaining errors can be manually cleared.
 
         ![Schema ds accept](/static/assets/resource-migration/migrate-dashboards-offline/images/schema_errorpopup_iaccept.png)
 
@@ -343,4 +343,4 @@ There will be multiple errors thrown while uploading, as explained below.
 
         ![Upload button](/static/assets/resource-migration/migrate-dashboards-offline/images/schema_uploadbutton.png)
 
-> **NOTE:** This functionality will only work on BoldBI version 6.19 or higher.
+> **NOTE:** This functionality will only work on Bold BI version 6.19 or higher.
