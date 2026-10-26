@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Managing User Directory – AD Synchronization | Bold BI
-description: Learn how to manage user directory synchronization with Windows Active Directory in Bold BI deployed in your server.
+description: "Learn how to manage user directory synchronization with Windows Active Directory in Bold BI deployed on your server, to keep imported users and groups current."
 documentation: ug
 ---
 
