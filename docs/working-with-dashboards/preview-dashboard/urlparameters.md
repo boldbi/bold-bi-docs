@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Filtering Views with Parameters in URL | Bold BI Embedded
-description: Learn how to use parameters in Dashboard URL to apply filters on its initial loading in Bold BI Embedded.
+description: "Learn how to add parameters to a dashboard URL in Bold BI to apply filters when the dashboard first loads, so users open it already filtered to their data."
 canonical: "/working-with-dashboards/preview-dashboard/urlparameters/"
 platform: bold-bi
 documentation: ug
