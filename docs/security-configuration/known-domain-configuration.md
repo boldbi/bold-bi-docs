@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Configure Allow Known Domain List & Avoid SSRF | Bold BI Docs
-description: Learn about how to configure the known domain list in the Bold BI application to avoid server-side request forgery (SSRF) attacks.
+description: "Learn how to configure the known domain list in Bold BI to allow only trusted domains and protect the application against server-side request forgery attacks."
 platform: bold-bi
 documentation: ug
 ---
