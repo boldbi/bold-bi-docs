@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Creating a Schedule – Embedded BI | Bold BI Learning
-description: Learn how to open, create, and save views in Bold BI Embedded. Users without permission to create schedules cannot create schedules.
+description: "Learn how to schedule a dashboard in Bold BI to email it to users at set times. Users without permission to create schedules cannot create a dashboard schedule."
 canonical: "/working-with-dashboards/dashboard-schedule/"
 platform: bold-bi
 documentation: ug
@@ -12,9 +12,9 @@ documentation: ug
 
 If the user has `Read` permission for a specific dashboard and the permission to create a schedule, then only the user can create a schedule in that dashboard.
 
-### Steps to create a Schedule
+### Steps to Create a Schedule
 
-1. Open the dashboard and click on `Schedule this view` option on the dashboard header to initiate the schedule creation process
+1. Open the dashboard and click on `Schedule this view` option on the dashboard header to initiate the schedule creation process.
 
     ![Contect Menu](/static/assets/working-with-dashboards/images/create_schedule.png#width=40%)
 
@@ -30,7 +30,7 @@ If the user has `Read` permission for a specific dashboard and the permission to
 
     ![UnSaved Filter](/static/assets/working-with-dashboards/images/unsaved-filter.png)
 
-5. If the user does not have permission to create schedule, a dialog box with specific content will be displayed instead of the schedule dialog box when attempting to create a schedule.
+5. If the user does not have permission to create a schedule, a dialog box with specific content will be displayed instead of the schedule dialog box when attempting to create a schedule.
 
     ![WithoutScheduleCreatePermission](/static/assets/working-with-dashboards/images/without_schedulecreatepremission.png)
 
