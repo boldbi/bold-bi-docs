@@ -9,7 +9,7 @@ documentation: ug
 
 # Dashboard Themes in Bold BI Server
 
-The dashboard theme option is now available as a `preview feature` in the Bold BI Server. This feature allows you to apply a different theme for the dashboard. Currently, we have provided light and dark themes.
+The dashboard theme option is now available as a `preview feature` in the Bold BI Server. This feature allows you to apply a different theme for the dashboard. , we have provided light and dark themes.
 
 **NOTE:** You can customize themes for the Bold BI application using CSS variables. Refer to the [Custom Theme Viewer](/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/) section to learn more about creating and uploading customized themes in the Bold BI application. In the future, the dashboard theme using the JSON property will be deprecated. Instead of the JSON property, you can use theme variables to customize the Bold BI application. Refer to the [Theme Variable](/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/) section to find the equivalent theme variable for the JSON property.
 
@@ -54,7 +54,7 @@ However, you can turn off the feature by changing the settings in the Bold BI ve
 
 ## Limitations
  
-The dashboard theme is currently a preview feature. The following items are not supported with the dark theme:
+The dashboard theme is a preview feature. The following items are not supported with the dark theme:
 
 1.	Dialogs (`Export, View, Info, Share and Comments, Dashboard parameter, and newly implemented dialogs`).
 
