@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Export Customization in Server Level | Bold BI Docs
-description: Learn how to enable settings to customize the export of a dashboard or widget at runtime to PDF, image, Excel, or CSV files in Bold BI Embedded.
+description: "Learn how to enable custom export settings in Bold BI, so users can customize how a dashboard or widget is exported at runtime to PDF, image, Excel, or CSV."
 canonical: "/working-with-dashboards/preview-dashboard/custom-export/"
 platform: bold-bi
 documentation: ug
