@@ -60,7 +60,7 @@ Explore **pre-built dashboard templates** categorized by industry and department
 
 ### Embedding Showcase  
  
-Check out Bold BI’s **embedding capabilities** with live demos that show how analytics can be seamlessly integrated into your applications.  
+Check out Bold BI’s **embedding capabilities** with live demos that show how analytics can be integrated into your applications.  
 
 - [**View Embedding Showcase**](https://samples.boldbi.com/embed/)  
 
