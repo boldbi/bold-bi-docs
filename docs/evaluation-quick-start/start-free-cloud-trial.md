@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  Start Your Free Cloud Trial | Bold BI Documentation
+title: Start Your Free Cloud Trial | Bold BI Documentation
 description: Get started with the Bold BI Cloud free trial by registering your account, setting up your environment, and exploring dashboards, data sources, and embedded analytics features.
 canonical: "/evaluation-quick-start/start-free-cloud-trial/"
 platform: bold-bi
 documentation: ug
 ---
 
-# How to Register, start a Free Trial, and Download Bold BI
+# How to Register, Start a Free Trial, and Download Bold BI
 
 Start your Bold BI free Cloud trial in just a few minutes and explore interactive dashboards, embedded analytics capabilities, and powerful data visualization tools without installing anything locally. This guide walks you through the complete process, from registration to accessing your Cloud workspace and optional downloads. 
 
@@ -69,7 +69,7 @@ This environment allows you to fully evaluate Bold BI’s reporting and analytic
 
 **Step 6: Access Account Management and Downloads**
 
-`Note`: Downloads are required only if you plan to deploy Bold BI on-premise or using Docker. Cloud trial users can continue working directly from the browser without installing anything. 
+`Note`: Downloads are required only if you plan to deploy Bold BI on-premises or using Docker. Cloud trial users can continue working directly from the browser without installing anything. 
 
    To download the Bold BI installer:
 
@@ -83,7 +83,7 @@ This environment allows you to fully evaluate Bold BI’s reporting and analytic
    2. Click the `Download` icon.
    3. Follow the provided installation instructions to complete setup 
 
-   This allows you to deploy Bold BI in your own infrastructure if required
+   This allows you to deploy Bold BI in your own infrastructure if required.
 
    ![Bold BI Downloads Page](/static/assets/start-free-cloud-trial/bold-bi-download-process.png)
 
