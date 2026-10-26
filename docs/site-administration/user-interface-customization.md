@@ -15,7 +15,7 @@ This section explains how to customize the Bold BI application user interface by
 
 You can make your own selections about what you want to see or set preferences for how information is organized or displayed.
 
-## Configuration for layout customization
+## Configuration for Layout Customization
 
 Steps to open and edit the `custom_ui.json` file to customize the user interface:
 
@@ -51,7 +51,7 @@ You need to provide the site name and matching profile name that you want to cus
 
 ### **Profiles**
 
-This section contains a list of default left side menu options and custom menus.
+This section contains a list of default left-side menu options and custom menus.
 
 ![profiles](/static/assets/user-interface-customization/images/profiles-example.png#width=40%)
 
@@ -128,13 +128,13 @@ This section contains a list of default left side menu options and custom menus.
 
 * **Name:** Provide the name of the profile that will be used to specify the profile on the sites.
 
-* **ShowMenu:** Determines whether that specific left side menu option should be shown or hidden.
+* **ShowMenu:** Determines whether that specific left-side menu option should be shown or hidden.
 
 * **Order:** Determines the position of the specific menu option.
 
-* **Scheme:** Provide the matching scheme name. The scheme will be used to customize the options in the item listing and the context menu.
+* **Scheme:** Provide the matching scheme name. The scheme is used to customize the options in the item listing and the context menu.
 
-### **Preview pane**
+### **Preview Pane**
 
 You can preview the dashboards on the right side of the dashboard listing by using the `SamePagePreview` property in the configuration file.
 
@@ -152,9 +152,9 @@ For example, you can display the `Get Link` option in the context menu by settin
 
 ![Show context menu items](/static/assets/user-interface-customization/images/context-menu.png#width=35%)
 
-### **Navigation menu customization**
+### **Navigation Menu Customization**
 
-You can add new menu items that you want to display in the left side menu along with the default side menu items.
+You can add new menu items that you want to display in the left-side menu along with the default side menu items.
 
 ![Sample custom menus](/static/assets/user-interface-customization/images/custom-menu-example1.png)
 
@@ -181,7 +181,7 @@ You can add new menu items that you want to display in the left side menu along 
 
 * **Display:** Name that should be shown in the menu item.
 
-* **Order:** Position of the menu item when displayed in the left side menu bar.
+* **Order:** Position of the menu item when displayed in the left-side menu bar.
 
 * **ImageLink:** URL of the image to be displayed in the menu item.
 
@@ -191,13 +191,13 @@ You can add new menu items that you want to display in the left side menu along 
 
 * **ShowMenu:** Determines whether the custom menu is visible or hidden.
 
-## Sample UI customization
+## Sample UI Customization
 
 Let's customize `site1` using the profile `profile1` and scheme `scheme1`.
 
 ![Sample profile in config](/static/assets/user-interface-customization/images/sample-example1.png#width=35%)
 
-Here, we have changed the order of each side menu and applied support for same page preview.
+Here, we have changed the order of each side menu and applied support for same-page preview.
 
 ![Sample profile](/static/assets/user-interface-customization/images/sample-example2.png)
 
@@ -239,7 +239,7 @@ Different schemes have been provided for dashboards, datasources, schedules, and
 
 ![Sample schemes](/static/assets/user-interface-customization/images/sample-example3.png#width=35%)
 
-For example, the `Open` option will be visible in the dashboard context menu and hidden in the slideshow context menu.
+For example, the `Open` option is visible in the dashboard context menu and hidden in the slideshow context menu.
 
 ![Dashboard scheme](/static/assets/user-interface-customization/images/dashboard-scheme.png#width=35%)
 
