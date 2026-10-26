@@ -6,14 +6,14 @@ platform: bold-bi
 documentation: ug
 ---
 
-# Deployment dashboards
+# Deployment Dashboards
 You can publish one or more dashboards to a site while creating that site by setting the deployment dashboards.
 
 > **NOTE:** This feature is available in On-Premises Deployment but not in Syncfusion Managed Cloud Server.
 
 This section explains how to add dashboards to each site while deploying that site in the Bold BI application.
 
-## Add deployment dashboards
+## Add Deployment Dashboards
 To add deployment dashboards, follow these steps:
 
 1. Click the `gear` icon and go to the dashboard setting page, as shown in the following image.
@@ -32,11 +32,11 @@ To add deployment dashboards, follow these steps:
 
     ![Fill the deployment dashboard dialog](/static/assets/site-administration/images/fill-deployment-dashboard-dialog.png#width=60%)
 
-5. Select the checkbox `Use category and dashboard name`. If you want to publish the dashboard with the source category name and dashboard on the destination sites.
+5. Select the checkbox `Use category and dashboard name` if you want to publish the dashboard with the source category name and dashboard on the destination sites.
 
     ![Use category and dashboard name](/static/assets/site-administration/images/use-category-dashboard-name.png#width=60%)
 
-6. You can publish a dashboard with public accessibility by checking the Make Dashboard Public option. This allows anonymous users who have access to the Dashboard link to access it.
+6. You can publish a dashboard with public accessibility by checking the Make Dashboard Public option. This allows anonymous users who have access to the dashboard link to access it.
 
     ![Make public the deployment dashboard dialog](/static/assets/site-administration/images/make-public-deployment-dashboard-dialog.png#width=60%)
 
@@ -52,7 +52,7 @@ To add deployment dashboards, follow these steps:
 
 > **NOTE:** You are not allowed to add a dashboard more than once in the deployment dashboards.
 
-## Remove the deployment dashboards
+## Remove the Deployment Dashboards
 
 You can remove the deployment dashboards by clicking the remove icon and then selecting delete.
 
@@ -60,9 +60,9 @@ You can remove the deployment dashboards by clicking the remove icon and then se
 
 ![Removed deployment dashboard message](/static/assets/site-administration/images/remove-deployment-dashboard-message.png)
 
-## Deployment dashboards in other sites
+## Deployment Dashboards in Other Sites
 
-When creating a new site, the deployment dashboards will be added to that site.
+When creating a new site, the deployment dashboards are added to that site.
 
 You can view the deployment dashboards in other sites as shown in the following image.
 
