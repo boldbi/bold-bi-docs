@@ -28,7 +28,7 @@ documentation: ug
 
    ![Edit dashboard icon](/static/assets/working-with-dashboards/images/editdashboardicon.png#width=60%)
 
-   The selected dashboard will then be opened in the designer as shown below.
+   The selected dashboard will then be opened in the designer.
 
    ![Edit dashboard](/static/assets/working-with-dashboards/images/editdashboard.png)
        
