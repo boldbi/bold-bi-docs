@@ -11,7 +11,7 @@ documentation: ug
 
 This section explains how to search for and import groups from Azure Active Directory into Bold BI.
 
-> **NOTE:** A connection to Azure Active Directory must be configured in the [Azure Active Directory Settings](/site-administration/user-directory-settings/azure-active-directory/) on the `General` page in order to import groups.
+> **NOTE:** A connection to Azure Active Directory must be configured in the [Azure Active Directory Settings](/site-administration/user-directory-settings/azure-active-directory/) on the `General` page to import groups.
 
 Only users belonging to the `System Administrator` group can import Azure Active Directory groups into Bold BI.
 
@@ -31,7 +31,7 @@ Bold BI displays the search results of the groups in a grid format.
 
 ## Import Groups
 
-To import Azure Active Directory groups into the Bold BI application, you must select the groups from the list and click on `Import Selected Groups` at the top-right corner in order to import the selected groups or click on `Import All Groups` at the top-right corner in order to import all groups.
+To import Azure Active Directory groups into the Bold BI application, you must select the groups from the list and click on `Import Selected Groups` at the top-right corner to import the selected groups or click on `Import All Groups` at the top-right corner to import all groups.
 
 ![Import Groups from Azure Active Directory](/static/assets/managing-resources/manage-groups/images/Azure-Group-import-page.png)
 
