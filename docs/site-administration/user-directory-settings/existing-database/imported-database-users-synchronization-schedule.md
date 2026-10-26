@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Scheduling DB Synchronization - Embedded BI | Bold BI Docs
-description: Learn how to schedule the synchronization of users from existing database with the users in Bold BI Embedded.
+description: Learn how to schedule the synchronization of users from the existing database with the users in Bold BI Embedded.
 canonical: "/site-administration/existing-database/imported-database-users-synchronization-schedule/"
 platform: bold-bi
 documentation: ug
@@ -11,7 +11,7 @@ documentation: ug
 
 This section explains how to schedule the synchronization of users from the Existing Database with the users in Bold BI Embedded.
 
-> **NOTE:**  Please configure the [Database Settings](/site-administration/user-directory-settings/existing-database/database-settings/) before scheduling the synchronization of Existing Database users.   
+> **NOTE:** Please configure the [Database Settings](/site-administration/user-directory-settings/existing-database/database-settings/) before scheduling the synchronization of Existing Database users.   
 
 ![Imported Database Users Synchronization Schedule](/static/assets/site-administration/images/import-database-user-schedule-synchronization.png)
 
@@ -25,5 +25,5 @@ Please find more details on the synchronization of users from the Existing Datab
 
 Once a scheduled recurrence of synchronization is completed, the users in the `System Administrator` group will be notified through email about the synchronization status.
 
-## Enable/Disable Synchronization schedule 
+## Enable/Disable Synchronization Schedule
 The synchronization schedule can be enabled or disabled at any time using the top checkbox.
