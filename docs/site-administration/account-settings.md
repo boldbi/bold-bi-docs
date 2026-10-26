@@ -10,21 +10,21 @@ documentation: ug
 
 This section explains the configuration needed to activate user accounts and user email in the Bold BI Server.
 
-## Account activation modes
+## Account Activation Modes
 
 There are two account activation modes available:
 
-### Automatic activation
+### Automatic Activation
 
-When user activation is set to `Automatic Activation` mode, user accounts will be activated automatically when adding users in the Bold BI Server. However, account activation emails will not be sent.
+When user activation is set to `Automatic Activation` mode, user accounts are activated automatically when adding users in the Bold BI Server. However, account activation emails are not sent.
 
-### Email activation
+### Email Activation
 
-When user activation is set to `Email Activation` mode, user accounts will not be activated when adding users in the Bold BI Server. Instead, an account activation email will be sent to the email address with an activation link to activate the user account. 
+When user activation is set to `Email Activation` mode, user accounts will not be activated when adding users in the Bold BI Server. Instead, an account activation email is sent to the email address with an activation link to activate the user account. 
 
 The account will remain in inactive status until the user activates the account from the activation email.
 
-> **NOTE:** By default, the setting will be `Automatic`.
+> **NOTE:** By default, the setting is `Automatic`.
 
 ![Accounts Settings](/static/assets/site-administration/images/account-settings.png#width=60%)
 
@@ -32,17 +32,17 @@ The account will remain in inactive status until the user activates the account 
 
 This setting controls whether an email address is required for creating new users or not.
 
-### Email required
+### Email Required
 
 When the user email setting is set to `Required` mode, an email address is mandatory for adding users in the Bold BI server.
 
 > **NOTE:** If the account activation preference is email, an email address is mandatory for activating the account.
 
-### Email not required
+### Email Not Required
 
 When the user email setting is set to `Not required` mode, an email address is not mandatory for adding users in the Bold BI server.
 
-> **NOTE:** By default, the setting will be `Required`. This setting option is available in On-Premises Deployment but not in Syncfusion Managed Cloud Server.
+> **NOTE:** By default, the setting is `Required`. This setting option is available in On-Premises Deployment but not in Syncfusion Managed Cloud Server.
 
 ![Email Settings](/static/assets/site-administration/images/email-required-settings.png#width=60%)
 
