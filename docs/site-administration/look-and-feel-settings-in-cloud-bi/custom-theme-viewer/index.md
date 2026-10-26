@@ -6,13 +6,13 @@ platform: bold-bi
 documentation: ug
 ---
 
-# Dashboard Themes Using CSS3 variables in Bold BI Server
+# Dashboard Themes Using CSS3 Variables in Bold BI Server
 
-The theme feature allows you to customize the appearance of the Bold BI Application. Switch the application’s theme from light to dark mode and vice versa under the `Look and Feel Settings`.
+The theme feature allows you to customize the appearance of the Bold BI application. Switch the application’s theme from light to dark mode and vice versa under the `Look and Feel Settings`.
 
-## How to apply Theme in application 
+## How to Apply Theme in Application
 
-### Site theme settings
+### Site Theme Settings
 
    Change the Theme in the site settings under the `Look and Feel Settings`. If you want to change the `Theme` in the site settings, switch to the desired `Custom Theme` and `Dashboard Theme` after generating and uploading the `Theme` file for the `BI and Designer Service`.
  
@@ -26,7 +26,7 @@ The following items are not supported with the dashboard theme:
 
 2. Deprecated widgets such as `Card and Maps` – Syncfusion will not provide support for these in the future.
 
-## How to create custom Theme using CSS3 Variable 
+## How to Create Custom Theme Using CSS3 Variable
 
 Create the custom theme in two ways:
 1. Refer to [this](/site-administration/look-and-feel-settings-in-cloud-bi/create-custom-application-theme/#how-to-create-custom-application-theme) to create the application custom theme.
@@ -34,7 +34,7 @@ Create the custom theme in two ways:
 
 Similarly, customize the `Theme` for widgets in the dashboard using the provided variables according to your requirements. Follow these steps to create a custom theme file:
       
-1. Download the default `light` and `dark` files from the [Github](https://github.com/boldbi/boldbi-themestudio/releases) release page and extract them.
+1. Download the default `light` and `dark` files from the [GitHub](https://github.com/boldbi/boldbi-themestudio/releases) release page and extract them.
 
     ![Download github image](/static/assets/site-administration/dashboard-themes/images/download-github-link.png)
 
@@ -49,7 +49,7 @@ Similarly, customize the `Theme` for widgets in the dashboard using the provided
 	  ![Widgets file](/static/assets/site-administration/dashboard-themes/images/widgetsfile.png)
       
 
-> **NOTE:**  If the property value is left blank, the default value will be used.
+> **NOTE:** If the property value is left blank, the default value will be used.
  
 ### Designer Font
 
@@ -64,7 +64,7 @@ Allows you to customize the font family for all the text elements in the dashboa
 
 ```
 
-### Dashboard banner
+### Dashboard Banner
 
 Allows you to customize the color and font of the dashboard header panel, the dashboard header text, and icons. 
 
@@ -92,7 +92,7 @@ Click the [Dashboard banner](https://github.com/boldbi/boldbi-themestudio/blob/m
 }
 
 ```
-For example, here the color in the banner variable has been customized,
+For example, here the color in the banner variable has been customized:
 
 ```css3
 
@@ -106,9 +106,9 @@ For example, here the color in the banner variable has been customized,
 
 ![Banner Color](/static/assets/site-administration/dashboard-themes/images/Banner_Color.png)
 
-### Data color palette
+### Data Color Palette
 
-Defines the color palette for the widgets. The Data color palette supports both data-based and index-based color assignment.
+Defines the color palette for the widgets. The data color palette supports both data-based and index-based color assignment.
 
 Click the [Data color palette](https://github.com/boldbi/boldbi-themestudio/blob/main/themes/light/boldbi.data.colorpalette.defintion.css) to navigate the template file.
 ```css3
@@ -124,7 +124,7 @@ Click the [Data color palette](https://github.com/boldbi/boldbi-themestudio/blob
 }
 
 ```
-For example, here the color in the data color palette variable has been customized,
+For example, here the color in the data color palette variable has been customized:
 
 ```css3
 
@@ -141,7 +141,7 @@ For example, here the color in the data color palette variable has been customiz
 ```
 The color assignment behavior (data-based or index-based) can be configured using the `Use Palette Color` property under the [Common Widget Settings](https://help.boldbi.com/working-with-dashboards/common-widget-settings/) section in the dashboard property panel.
 
-When the `Use Palette Color` property is disabled, widget colors are rendered based on unique data values. When enabled, widget colors are applied based on the the order of the data series (e.g., the first series uses palette1, the second uses palette2, and so on).
+When the `Use Palette Color` property is disabled, widget colors are rendered based on unique data values. When enabled, widget colors are applied based on the order of the data series (e.g., the first series uses palette1, the second uses palette2, and so on).
 
 The following example demonstrates how colors are rendered based on data values in a dashboard.
 
@@ -151,13 +151,13 @@ The following example demonstrates how colors are rendered based on the index of
 
 ![Index Palette](/static/assets/site-administration/dashboard-themes/images/Index_Color_Palette.png)
 
-## Dashboard widgets
+## Dashboard Widgets
 
 The `boldbi.widgets.core.definition.css` section allows you to configure the widget container properties like the container background, title or sub-title color and font, icon color and font, and the widget level properties like the axis properties, legend properties, and the data label properties.
 
-### Widget common level properties
+### Widget Common Level Properties
 
-The color codes and font settings defined under the `boldbi.widgets.core.definition.css` section will be applied to all the applicable widgets unless they have been overridden at the widget-specific level.
+The color codes and font settings defined under the `boldbi.widgets.core.definition.css` section are applied to all the applicable widgets unless they have been overridden at the widget-specific level.
 
 **Widgets core file Variables:**
 
@@ -191,7 +191,7 @@ Click the [Widget core](https://github.com/boldbi/boldbi-themestudio/blob/main/t
 
 ```
 
-### Widget specific level properties
+### Widget Specific Level Properties
   The `widgets` section allows you to customize the properties of a specific widget.
  
 #### Chart Variables
@@ -1097,7 +1097,7 @@ Click the [Period Over Period](https://github.com/boldbi/boldbi-themestudio/blob
 
 ```
 
-#### Tab widget Variables
+#### Tab Widget Variables
 
 Click on the [Tab widget](https://github.com/bold-bi/boldbi-themestudio/blob/main/themes/light/widgets/boldbi.tab.widget.definition.css) to navigate the template file.
 ```css3
@@ -1141,7 +1141,7 @@ Click on the [Text Filter](https://github.com/boldbi/boldbi-themestudio/blob/mai
 
 ```
 
-#### Scatter widget variables
+#### Scatter Widget Variables
 
 Click on the [Scatter](https://github.com/boldbi/boldbi-themestudio/blob/main/themes/light/widgets/boldbi.scatter.widgets.definition.css) to navigate the template file.
 ```css3
@@ -1182,7 +1182,7 @@ Click on the [Scatter](https://github.com/boldbi/boldbi-themestudio/blob/main/th
 
 ```
 
-#### RTE widget variables
+#### RTE Widget Variables
 
 Click on the [RTE](https://github.com/boldbi/boldbi-themestudio/blob/main/themes/light/widgets/boldbi.rte.widgets.definition.css) to navigate the template file.
 ```css3
@@ -1196,7 +1196,7 @@ Click on the [RTE](https://github.com/boldbi/boldbi-themestudio/blob/main/themes
 
 ```
 
-#### Filter Overview variables
+#### Filter Overview Variables
 
 Click on the [Filter overview](https://github.com/boldbi/boldbi-themestudio/blob/main/themes/light/widgets/boldbi.filteroverview.definition.css) button to navigate through the template file.
 ```css3
@@ -1227,7 +1227,7 @@ Click on the [Filter overview](https://github.com/boldbi/boldbi-themestudio/blob
 
 ```
 
-#### Dashboard Menu variables
+#### Dashboard Menu Variables
 
 Click on the [Dashboard Menu](https://github.com/boldbi/boldbi-themestudio/blob/main/themes/light/widgets/boldbi.designer.menualertdialog.definition.css) to navigate to the template file.
 ```css3
@@ -1250,7 +1250,7 @@ Click on the [Dashboard Menu](https://github.com/boldbi/boldbi-themestudio/blob/
 
 ```
 
-#### Dashboard Tooltip variables
+#### Dashboard Tooltip Variables
 
 Click on the [Dashboard Tooltip](https://github.com/boldbi/boldbi-themestudio/blob/main/themes/light/widgets/boldbi.tooltip.definition.css) to navigate to the template file.
 ```css3
@@ -1267,7 +1267,7 @@ Click on the [Dashboard Tooltip](https://github.com/boldbi/boldbi-themestudio/bl
 
 ```
 
-#### Dashboard Error dialog variables
+#### Dashboard Error Dialog Variables
 
 Click on the [Dashboard Error dialog](https://github.com/boldbi/boldbi-themestudio/blob/main/themes/light/widgets/boldbi.designer.menualertdialog.definition.css) to navigate to the template file.
 ```css3
