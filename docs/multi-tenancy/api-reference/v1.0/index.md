@@ -1,7 +1,7 @@
 ---
 layout: post
 title: REST API v1.0 – Site Administration | Bold BI Docs
-description: Explore the REST API v1.0 reference to configure the application startup and create a tenant in your Bold BI or Bold Reports applications.
+description: "Explore the REST API v1.0 reference to automate application startup and create tenants in Bold BI or Bold Reports, with endpoints, parameters, and examples."
 canonical: "/server-api-reference/v1.0/"
 platform: bold-bi
 documentation: ug
