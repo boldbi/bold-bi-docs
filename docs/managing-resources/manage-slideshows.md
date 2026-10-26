@@ -155,7 +155,7 @@ Name, duration, and the dashboards listed for the slideshow can be changed using
 
 2. Dashboards can be added or removed for the slideshow.   
 
-    * To remove the listed dashboards added for the slideshow, click the icon as shown below:
+    * To remove the listed dashboards added for the slideshow, click the icon:
 
        ![Remove Listed Dashboards](/static/assets/managing-resources/images/remove-listed-dashboards.png)
 
