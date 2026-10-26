@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Publish Dashboards across Multiple Tenants | Bold BI
-description: Learn how to publish dashboards across multiple tenants in Bold BI deployed in your server either in same machine or in different instance.
+title: Publish Dashboards Across Multiple Tenants | Bold BI
+description: Learn how to publish dashboards across multiple tenants in Bold BI deployed on your server, either on the same machine or in a different instance.
 platform: bold-bi
 documentation: ug
 ---
 
-# Publish Dashboards in the Bold BI application
+# Publish Dashboards in the Bold BI Application
 
 To publish a dashboard to other site(s), follow these steps:
 
@@ -14,16 +14,16 @@ To publish a dashboard to other site(s), follow these steps:
 
    ![Publish Menu](/static/assets/managing-resources/manage-dashboards/images/publish-menu.png)
 	
-2. For the master site, the dialog will be shown with the options of `Internal Site` and `External Site`. 
+2. For the master site, the dialog is shown with the options of `Internal Site` and `External Site`. 
    Select either `Internal Site` or `External Site` for publishing the dashboard in the publish dialog and proceed to `Next`.
 
    ![Select Site](/static/assets/managing-resources/manage-dashboards/images/select-site.png#width=55%)
 
-   For non-master sites, the [external site publish](/managing-resources/manage-dashboards/publish-dashboards/#external-site) dialog will be shown directly. Also, publish the dashboard to the internal sites using the external site publish option for the non-master sites.
+   For non-master sites, the [external site publish](/managing-resources/manage-dashboards/publish-dashboards/#external-site) dialog is shown directly. Also, publish the dashboard to the internal sites using the external site publish option for the non-master sites.
 
    > **NOTE:** The master site is the first site created during startup in Bold BI, and all other sites are considered non-master sites.
 
-## Internal site
+## Internal Site
 
 Publish the dashboard to the sites created on the same Bold BI server.
 
@@ -47,15 +47,15 @@ Publish the dashboard to the sites created on the same Bold BI server.
 
    ![Publish Dashboard Description](/static/assets/managing-resources/manage-dashboards/images/publish-description.png#width=55%)
 
-6. Select the check box `Lock dashboard editing in published site` if you do not want the published dashboard to be edited on published sites.
+6. Select the checkbox `Lock dashboard editing in published site` if you do not want the published dashboard to be edited on published sites.
 
    ![Lockdown Dashboard](/static/assets/managing-resources/manage-dashboards/images/lockdown-dashboard.png#width=55%)
 
-7. Select the check box `Lock data source editing in published site` if you do not want the published data source to be edited on published sites.
+7. Select the checkbox `Lock data source editing in published site` if you do not want the published data source to be edited on published sites.
 
    ![Lockdown Datasource](/static/assets/managing-resources/manage-dashboards/images/lockdown-datasource.png#width=55%)
 
-8. Select the check box `Make dashboard as public in published site` if you want the published dashboard to be public on published sites.
+8. Select the checkbox `Make dashboard as public in published site` if you want the published dashboard to be public on published sites.
 
    ![Make Public Dashboard](/static/assets/managing-resources/manage-dashboards/images/make-public-in-destination-site.png#width=55%)
 
@@ -63,7 +63,7 @@ Publish the dashboard to the sites created on the same Bold BI server.
 
 ![Skip Data Source Publish](/static/assets/managing-resources/manage-dashboards/images/skip-datasource-publish.png#width=55%)
 
-10. You can choose the owner (who has permission to create dashboard, data source, and category) of the dashboard on the published site using the `Advanced` option. If you do not, it will publish the dashboard with a random user (who has permission to create dashboard, data source, and category).
+10. You can choose the owner (who has permission to create dashboard, data source, and category) of the dashboard on the published site using the `Advanced` option. If you do not, it publishes the dashboard with a random user (who has permission to create dashboard, data source, and category).
 
    ![Select Owner in Advanced](/static/assets/managing-resources/manage-dashboards/images/advanced-owner.png#width=55%)
 
@@ -75,15 +75,15 @@ Publish the dashboard to the sites created on the same Bold BI server.
 
    ![Use Source Category](/static/assets/managing-resources/manage-dashboards/images/use-source-category-enabled.png#width=55%)
 
-13. If you want to publish in a different category, uncheck the box and enter the category name in the text field to which need to be published.
+13. If you want to publish in a different category, uncheck the box and enter the category name in the text field to which it needs to be published.
 
    ![Use Source Category disabled](/static/assets/managing-resources/manage-dashboards/images/use-source-category-disabled.png#width=55%)
 
-14. By submitting the form, the publishing process will be started, and you can check the status of the publishing on the **Published Resources** page.
+14. After you submit the form, the publishing process starts, and you can check the status of the publishing on the **Published Resources** page.
 
     ![Submit Publish](/static/assets/managing-resources/manage-dashboards/images/submit-publish.png#width=55%)
 
-## External site
+## External Site
 
 Publish the dashboard to the sites created in other Bold BI servers and to the internal sites created in the same Bold BI server for the non-master sites using the external site publish option.
 
@@ -93,8 +93,8 @@ Publish the dashboard to the sites created in other Bold BI servers and to the i
  
 2. Fill in the following details as shown in the image below:
 
-   * **Name** - Enter the name that you want for external site.
-   * **Client ID** - Enter the Client Id of the site. 
+   * **Name** - Enter the name that you want for the external site.
+   * **Client ID** - Enter the Client ID of the site. 
    * **Client Secret** - Enter the Client Secret of the site.
    * **Site URL** - Enter the URL of the site.
 
@@ -109,12 +109,12 @@ Publish the dashboard to the sites created in other Bold BI servers and to the i
 3. After adding the external site, select the external site from the drop-down menu and follow the same steps mentioned for the internal site to publish the dashboard.
 
 > **NOTE:**<br>
-> •	The dashboards or the data sources cannot be locked while publishing to the external sites. So, the `Lock dashboard editing in published site` and `Lock data source editing in published site` check box options will not be shown for `External Site`.<br>
-> •	Admin users can view all the external sites added by any user, which will be listed in the "Select Site" dropdown, since admins can publish any dashboard and data sources.
+> •	The dashboards or the data sources cannot be locked while publishing to the external sites. So, the `Lock dashboard editing in published site` and `Lock data source editing in published site` checkbox options are not shown for `External Site`.<br>
+> •	Admin users can view all the external sites added by any user, which are listed in the "Select Site" dropdown, since admins can publish any dashboard and data sources.
 
    ![View all sites](/static/assets/managing-resources/manage-dashboards/images/view-all-sites.png)
 
-## Manage published dashboards
+## Manage Published Dashboards
 
 You can view the status of published dashboards on the **Published Resources** page. The published resources are listed in the grid and grouped by the dashboard by default.
 
@@ -122,13 +122,13 @@ You can view the status of published dashboards on the **Published Resources** p
 
 ![Publish Page](/static/assets/managing-resources/manage-dashboards/images/publish-page.png)
 
-### Synchronize dashboard
+### Synchronize Dashboard
 
 When you make changes to the original dashboard, you can synchronize those changes to the published site using the synchronize published resource option.
 
 ![Publish Synchronize](/static/assets/managing-resources/manage-dashboards/images/publish-synchronize.png)
 
-### Information of published dashboard
+### Information of Published Dashboard
 
 You can view the publishing information of the respective dashboard in a dialog box. Click on `Actions` in the grid context menu and select `Info`.
 
@@ -136,7 +136,7 @@ You can view the publishing information of the respective dashboard in a dialog 
 
 ![Publish Info Dialog](/static/assets/managing-resources/manage-dashboards/images/publish-info-dialog.png#width=55%)
 
-### Publish history
+### Publish History
 
 You can view the publishing history of the corresponding dashboard. Click on `Actions` in the grid context menu and select `Publish History`.
 
@@ -144,7 +144,7 @@ You can view the publishing history of the corresponding dashboard. Click on `Ac
 
 ![Publish History Dialog](/static/assets/managing-resources/manage-dashboards/images/publish-history-dialog.png)
 
-### Remove publish dashboard
+### Remove Publish Dashboard
 
 Published dashboards can also be removed from Bold BI when they are no longer needed. 
 
