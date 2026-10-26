@@ -21,7 +21,7 @@ To create a new dashboard in `Bold BI`, click on the option below.
 
 ![Create Dashboard Option](/static/assets/getting-started/images/newdashboard.png)
 
-You can either start creating the dashboard from scratch or use templates, as shown below.
+You can either start creating the dashboard from scratch or use templates.
 
 ![Ways of Creating Dashboards](/static/assets/getting-started/images/create-dashboard-options.png#width=30%)
 
@@ -82,7 +82,7 @@ Now, the following view will be displayed.
 
 ![tables and views for the connected database](/static/assets/getting-started/images/datadesignview.png)
 
-The left pane displays the tables and views associated with the connected database. Drag the preferred table or view from the left pane and drop it into the center pane labeled `Drag and Drop table here....` Then, click `Update` in the bottom pane to view the data in the data preview grid, as shown below.
+The left pane displays the tables and views associated with the connected database. Drag the preferred table or view from the left pane and drop it into the center pane labeled `Drag and Drop table here....` Then, click `Update` in the bottom pane to view the data in the data preview grid.
 
 ![dropped table in canvas](/static/assets/getting-started/images/virtualtable.png)
 
@@ -90,7 +90,7 @@ To automatically update the data in the data preview grid, enable the Toggle Opt
 
 ![dropped table in canvas](/static/assets/getting-started/images/datapreviewautoupdate.png)
 
-The data type of each column will be represented nearby, as shown below.
+The data type of each column will be represented nearby.
 
 ![representing the datatype of each column](/static/assets/getting-started/images/datatypeicon.png)
 
@@ -258,7 +258,7 @@ Navigate to the `PROPERTIES` pane in the properties tab.
 
 ![properties pane in design tab](/static/assets/getting-started/images/properties.png)
 
-From the dashboard design tab, you can navigate to the properties pane by placing the focus on the widget as shown below.
+From the dashboard design tab, you can navigate to the properties pane by placing the focus on the widget.
 
 Click the `Settings` in the top right corner of the widget. The focus moves to the data design view tab and opens the `PROPERTIES` pane.
 
@@ -266,7 +266,7 @@ Click the `Settings` in the top right corner of the widget. The focus moves to t
 
 This pane holds some general settings and some specific to the widget. Configure the desired settings and refer to the `Properties Configuration` widget-wise for more details.
 
-You can add more widgets by following the same procedure to create a dashboard as shown below.
+You can add more widgets by following the same procedure to create a dashboard.
 
 Once you are done with the dashboard, `Publish` it by clicking the `Publish As` button in the tools pane.
 
