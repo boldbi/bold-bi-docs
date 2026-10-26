@@ -110,7 +110,7 @@ The Bold BI Cloud database contains the most important data because it connects 
 ## Application Monitoring
 
 ### Logging and Monitoring 
-Since we are utilizing Azure infrastructure, it is able to monitor and analyze information that is collected from our services, internal network traffic, and the usage of devices and terminals. We record this information in the form of event logs, audit logs, fault logs, administrator logs, and operator logs. These logs are then stored in a secure server that is isolated from complete system access. This is done in order to centrally manage access control and verify availability.
+Since we are utilizing Azure infrastructure, it is able to monitor and analyze information that is collected from our services, internal network traffic, and the usage of devices and terminals. We record this information in the form of event logs, audit logs, fault logs, administrator logs, and operator logs. These logs are then stored in a secure server that is isolated from complete system access. This is done to centrally manage access control and verify availability.
 
 ### Malware and Spam Protection 
 Microsoft Antimalware for Azure is a single-agent solution for applications and tenant environments. It is designed to run in the background without human intervention. Protection can be deployed based on the needs of application workloads, with options for basic secure-by-default or advanced custom configuration, including antimalware monitoring. 
