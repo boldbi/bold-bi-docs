@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with Mobile BI - Embedded | Bold BI Docs
-description: Learn how to get started with Mobile BI to list and view the Bold BI Embedded dashboards through mobile app.
+description: "Learn how to get started with the Bold BI mobile app: install it, sign in to your Bold BI site, and browse and view your dashboards on a phone or tablet."
 canonical: "/accessing-through-mobile-app/getting-started/"
 platform: bold-bi
 documentation: ug
@@ -11,7 +11,7 @@ documentation: ug
 
 You need the Bold BI site URL to list and view the dashboards in the Bold BI Dashboard Mobile app.
 
-## How to access Bold BI outside of Machine
+## How to Access Bold BI Outside of Machine
 
 ### Bold BI Cloud
 
@@ -21,11 +21,11 @@ The Bold BI Cloud tenant can generally be accessed from anywhere. Please refer t
 
 The Bold BI Embedded Analytics Server should be accessed from outside the machine using a public IP or a domain to connect with the mobile application. The mobile device and the Bold BI deployed machine should be on the same network if the connection is within an intranet. If the public IP or domain is available, please refer to [this](https://support.boldbi.com/kb/article/12442/) article on how to set it up in the Bold BI Embedded application. Then, refer to the following section for instructions on accessing the site in the mobile application.
 
-**Note:** Please refer to [this](https://support.boldbi.com/kb/article/13254/) article for proper URL usage and protocol methods for the Bold BI Mobile application.
+**NOTE:** Please refer to [this](https://support.boldbi.com/kb/article/13254/) article for proper URL usage and protocol methods for the Bold BI Mobile application.
 
-## Configure and Login in Bold BI Dashboard Mobile app
+## Configure and Login in Bold BI Dashboard Mobile App
 
-If this is your first time logging in, type in the server URL as shown below and then enter your username and password to login.
+If this is your first time logging in, type in the server URL and then enter your username and password to log in.
 <table>
  <tr>
     <td>
