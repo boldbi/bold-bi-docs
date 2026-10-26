@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Mapping User Directory Database – Embedded BI | Bold BI Docs
-description: Learn how to configure the user directory database and map the required columns to pull user details into Bold BI Embedded.
+description: "Learn how to configure an existing database as a user directory in Bold BI and map the required columns, so user details are pulled into the application."
 canonical: "/site-administration/existing-database/database-settings/"
 platform: bold-bi
 documentation: ug
@@ -17,7 +17,7 @@ To import users into Bold BI Embedded from an Existing Database, configure the e
 
 ![Import Users from Database - Home](/static/assets/site-administration/images/import-users-home-page-new.png#width=60%)
 
-Users can be imported from the following types of Databases:
+Users can be imported from the following types of databases:
 
 1. SQL Server
 2. PostgreSQL
@@ -48,7 +48,7 @@ Once the connection details are filled, click `Next` to retrieve the schema of t
 
 ## Map Database Columns
 
-The page will appear as shown below once the database has been connected.
+The page will appear once the database has been connected.
 
 ![Select Column](/static/assets/site-administration/images/database-select-columns-new.png)
 
@@ -58,7 +58,7 @@ Select the corresponding columns from the database schema for Username, First na
 
 If the columns are selected from different tables, the following scenarios will occur:
 
-* If the tables have a single relationship - A join will be made with that specific relationship.
+* If the tables have a single relationship - A join is made with that specific relationship.
 
 * If the tables have multiple relationships - The relationship can be selected from the list of relationships and then click on `Apply`.
 
@@ -68,7 +68,7 @@ If the columns are selected from different tables, the following scenarios will 
 
 ![Form Table Relation](/static/assets/site-administration/images/form-relation.png#width=60%)
 
-After selecting all columns, click on `Save` to retain the database details. Based on these saved details, users will be pulled from the configured Database.
+After selecting all columns, click on `Save` to retain the database details. Based on these saved details, users will be pulled from the configured database.
 
 ![Saving database details](/static/assets/site-administration/images/save-database-details.png)
 
