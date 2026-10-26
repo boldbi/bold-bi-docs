@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Authentication provider – Bold ID | Bold BI Documentation
+title: Authentication Provider – Bold ID | Bold BI Documentation
 description: Learn how to configure Default Authentication, Azure AD, OAuth 2.0, OpenID, and JWT SSO in User Management Server.
 platform: bold-bi
 documentation: ug
