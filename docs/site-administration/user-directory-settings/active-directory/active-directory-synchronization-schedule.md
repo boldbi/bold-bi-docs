@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Active Directory User Groups Synchronization | Bold BI Docs 
+title: Active Directory User Groups Synchronization | Bold BI Docs
 description: Learn how to schedule the synchronization of users and groups from Active Directory with the users and groups in the Bold BI Server.
 platform: bold-bi
 documentation: ug
@@ -10,7 +10,7 @@ documentation: ug
 
 This section explains how to schedule the synchronization of users and groups from Active Directory with the users and groups in the Bold BI Server.
 
-> **NOTE:**  Please configure [Active Directory Settings](/site-administration/user-directory-settings/active-directory/active-directory/) before scheduling the synchronization of Active Directory users and groups. This feature is available in On-Premises Deployment but not in Syncfusion Managed Cloud Server.
+> **NOTE:** Please configure [Active Directory Settings](/site-administration/user-directory-settings/active-directory/active-directory/) before scheduling the synchronization of Active Directory users and groups. This feature is available in On-Premises Deployment but not in Syncfusion Managed Cloud Server.
  
 
 ![Active Directory Synchronization Schedule](/static/assets/site-administration/images/active-directory-schedule-synchronization.png)
@@ -21,7 +21,7 @@ Active Directory Synchronization can be done for the following objects:
 1. Users
 2. Groups   
 
-During the synchronization process, users will be removed or added in the Bold BI Server based on their availability in the specified distinguished name from Active Directory.
+During the synchronization process, users are removed or added in the Bold BI Server based on their availability in the specified distinguished name from Active Directory.
 
 For more details on synchronizing users and groups from Active Directory with the Bold BI Server, please refer to the following links:
 
@@ -33,6 +33,6 @@ For more details on synchronizing users and groups from Active Directory with th
 
 Once a scheduled recurrence of synchronization is completed, users in the `System Administrator` group will be notified through email about the synchronization status.
 
-## Enable/Disable Synchronization schedule 
+## Enable/Disable Synchronization Schedule
 
 The synchronization schedule can be enabled or disabled at any time using the top checkbox.
