@@ -113,7 +113,7 @@ This section outlines the typical flow of user interaction, data processing, and
 - Data is collected from various input sources.
 - The Bold Data Hub processes the data by extracting, transforming, and loading it.
 - Structured data is then loaded into the Data Warehouse, ready for analytics and visualization.
-Bold BI’s architecture ensures a seamless, secure, and efficient data analysis experience. By integrating various data sources, optimizing storage, and automating refresh cycles, the platform provides real-time analytics capabilities for users across different domains.
+Bold BI’s architecture ensures a , secure, and efficient data analysis experience. By integrating various data sources, optimizing storage, and automating refresh cycles, the platform provides real-time analytics capabilities for users across different domains.
 
 
 
