@@ -69,7 +69,7 @@ Configure the settings in Bold BI as in the following screenshot to enable the a
 
 ![OneLogin settings](/static/assets/site-administration/openid-support/images/onelogin-sample-value.png#width=55%)
 
-The fields that need to be saved in Bold BI in order to enable OneLogin for authentication are explained as follows.
+The fields that need to be saved in Bold BI to enable OneLogin for authentication are explained as follows.
 
 <table>
 
@@ -118,6 +118,6 @@ Configure the group import setting in Bold BI using OneLogin, as shown in the im
 
 To generate the API client credentials, please follow the link: [OneLogin API Credentials Guide](https://developers.onelogin.com/api-docs/1/getting-started/working-with-api-credentials)
 
-We use the client ID and client secret from the API client credentials to obtain a token for accessing the groups API. In order to access OneLogin APIs, we require the `Region` from the API Domain. Please refer to the image below for the region.
+We use the client ID and client secret from the API client credentials to obtain a token for accessing the groups API. to access OneLogin APIs, we require the `Region` from the API Domain. Please refer to the image below for the region.
 
 ![OneLogin Region](/static/assets/site-administration/openid-support/images/OneLogin-region.png)
