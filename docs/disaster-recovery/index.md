@@ -12,7 +12,7 @@ documentation: ug
 
 Disaster recovery (DR) is a critical part of Bold BI Server applications, ensuring business continuity and reducing downtime during unexpected events like hardware failures, software crashes, or natural disasters. Therefore, having a disaster recovery (DR) plan for Bold BI applications is essential. One of the key aspects of DR is ensuring that you have an efficient backup and restore process. 
 
-This guide outlines the steps for creating backups, restoring data, and reconfiguring the BI application to point to restored resources. It emphasizes the importance of regularly backing up application data, metadata, and the IMDB database to ensure seamless recovery in the event of a disaster. Understanding where Bold BI stores its persistent data is crucial for developing effective backup strategies. The diagram below illustrates the infrastructure architecture of Bold BI, providing a clear overview of how components like the load balancer, services, app data storage, and database server interact within the system.
+This guide outlines the steps for creating backups, restoring data, and reconfiguring the BI application to point to restored resources. It emphasizes the importance of regularly backing up application data, metadata, and the IMDB database to ensure recovery in the event of a disaster. Understanding where Bold BI stores its persistent data is crucial for developing effective backup strategies. The diagram below illustrates the infrastructure architecture of Bold BI, providing a clear overview of how components like the load balancer, services, app data storage, and database server interact within the system.
 
   ![Architecture of Bold BI](/static/assets/installation-and-deployment/images/architecture-bold-bi.png)
 
