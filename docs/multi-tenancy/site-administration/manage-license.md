@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Managing Licenses – On-Premises & Embedded | Bold BI Docs
-description: Learn how to update Bold BI license yourself using the Bold account linked with your subscription in Bold BI application.
+description: Learn how to update Bold BI license yourself using the Bold account linked with your subscription in the Bold BI application.
 platform: bold-bi
 documentation: ug
 ---
 
-# Manage license in Bold BI
+# Manage License in Bold BI
 
 This topic explains how to update the license manually in `Bold BI Embedded`.
 
@@ -19,7 +19,7 @@ Please select your preferred method for updating the license.
   
   2. [Update license from License file](#update-license-from-license-file)
 
-## Update license from Online
+## Update License from Online
 
 In the Manage License page, click on `Refresh License`.
    
@@ -31,7 +31,7 @@ From the login pop-up, please log in with your Bold ID account that is linked to
 
 Once you have successfully logged in, the license will be updated in the application.
 
-## Update license from License file
+## Update License from License File
 
 To update the license from a license file, you can use the offline unlock key to activate the account. Please download your offline unlock key [here](https://www.boldbi.com/account/downloads/embedded).
 
@@ -47,7 +47,7 @@ Once the unlock key is uploaded, click on the **Update License** button to updat
 
 ![Upload License](/static/assets/multi-tenancy/images/upload-license.png#max-width=95%)
 
-### Possible errors cases and their solution:
+### Possible Errors Cases and Their Solution
 
 | Cases      | Solution                                            |
 |-------------------  |-----------------------------------------------------------  |
@@ -73,9 +73,9 @@ The warning icon is displayed in the following cases:
 - When the **license has expired**.
 - When the **trial period has ended**.
 
-### License warning icon behavior
+### License Warning Icon Behavior
 
-- Clicking the warning icon will display a popup with the below message. The **“here”** link redirects the user to the **Manage License** page.
+- Clicking the warning icon will display a popup with the following message. The **“here”** link redirects the user to the **Manage License** page.
 
 - This allows users to take action such as renewing or activating their license.
 
