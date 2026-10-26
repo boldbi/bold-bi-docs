@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Start Your Free Cloud Trial | Bold BI Documentation
-description: Get started with the Bold BI Cloud free trial by registering your account, setting up your environment, and exploring dashboards, data sources, and embedded analytics features.
+description: "Learn how to start a Bold BI Cloud free trial: register your account, set up your site, and explore dashboards, data sources, and embedded analytics."
 canonical: "/evaluation-quick-start/start-free-cloud-trial/"
 platform: bold-bi
 documentation: ug
