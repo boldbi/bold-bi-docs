@@ -10,7 +10,7 @@ documentation: ug
 
 An attacker may attempt to deliver malicious scripts and inject unwanted data into your site using cross-site scripting (XSS) and data injection attacks. The browser will execute all sources from any origin without restriction, as it does not know whether the source is trusted or not. The malicious script can then access any cookies, session tokens, or other sensitive information stored by the browser. Therefore, to protect your site from this type of attack, the Content Security Policy includes a standardized set of directives that guide the browser on which content sources are allowed and which should be restricted.
 
-## How it works?
+## How It Works?
 
 The Content Security Policy uses the `Content-Security-Policy` response header to restrict resource loading from unknown domains and allows resources only from the configured list of domains for each source. To restrict the execution of malicious resources, including style, script, font, image, connect, and frame sources, from other domains on your site, configure the Content Security Policy with the specific directive in Bold BI.
 
@@ -34,7 +34,7 @@ If you enable the `Content-Security-Policy` option, the Content-Security-Policy 
 
 ![Enabled Content Security Policy settings](/static/assets/security-configuration/images/enable-csp.png#width=55%)
 
-## Policy configuration for Style Source
+## Policy Configuration for Style Source
 
 The `style-src` directive allows only the style sheets from URLs that are added in the `Style Source` field and restricts style sheets from other URLs.
 
@@ -45,7 +45,7 @@ The permitted URLs will be added to the `Content-Security-Policy` for the style 
 `Content-Security-Policy: style-src 'self' http://example.com`
 
 
-## Policy configuration for Script Source
+## Policy Configuration for Script Source
 
 The `script-src` directive allows only JavaScript sources from URLs that are added in the `Script Source` field, and it restricts script sources from other URLs.
 
@@ -56,7 +56,7 @@ The allowed URLs will be added to the `Content-Security-Policy` for the script s
 `Content-Security-Policy: script-src 'self' https://test.boldbi.com http://example.com`
 
 
-## Policy configuration for Font Source
+## Policy Configuration for Font Source
 
 The `font-src` directive allows font sources only from URLs that are added in the `Font Source` field and restricts font sources from other URLs.
 
@@ -67,7 +67,7 @@ The permitted URLs will be added to the `Content-Security-Policy` for the font s
 `Content-Security-Policy: font-src 'self' https://test.boldbi.com`
 
 
-## Policy configuration for Image Source
+## Policy Configuration for Image Source
 
 The `img-src` directive allows only the images from URLs that are added in the `Image Source` field and restricts image sources from other URLs.
 
@@ -78,7 +78,7 @@ The permitted URLs will be added to the `Content-Security-Policy` for the image 
 `Content-Security-Policy: img-src 'self' http://localhost:62833`
 
 
-## Policy configuration for Connect Source
+## Policy Configuration for Connect Source
 
 The `connect-src` directive allows the source to make Fetch/XHR requests only from URLs that are added in the `Connect Source` field and restricts sources that make Fetch/XHR requests from other URLs.
 
@@ -89,7 +89,7 @@ The permitted URLs will be added to the `Content-Security-Policy` for the connec
 `Content-Security-Policy: connect-src 'self' http://localhost:62833`
 
 
-## Policy configuration for Frame Source
+## Policy Configuration for Frame Source
 
 The `frame-src` directive allows the sources for the nested document to use elements such as `<frame>` and `<iframe>` only from URLs that are added in the `Frame Source` field, and it restricts sources from other URLs.
 
@@ -99,7 +99,7 @@ The permitted URLs will be added to the `Content-Security-Policy` for the frame 
 
 `Content-Security-Policy: frame-src 'self' http://example.com`
 
-## Policy configuration for Frame Ancestors 
+## Policy Configuration for Frame Ancestors 
 
 The `Frame-Ancestors` directive specifies valid parent domains that may embed a dashboard or complete application using `<iframe>` only from URLs added in the `Frame-Ancestors` field. However, the CSP header will not apply this directive if the `X-Frame-Options` has already been enabled.
 
