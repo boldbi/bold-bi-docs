@@ -12,7 +12,7 @@ This section explains how to add, apply, and remove the localization files for t
 
 Localization involves adapting a website into different linguistic and cultural contexts, which goes beyond simple text translation.
 
-## Add language
+## Add Language
 
 To add a language file to the application, please follow these steps:
 
@@ -28,13 +28,13 @@ To add a language file to the application, please follow these steps:
 
    ![Localization-select-file](/static/assets/multi-tenancy/images/localization-select-file.png#max-width=95%)
 
-4. After uploading the file, Click `Upload`, and the language will be added to the application.
+4. After uploading the file, click `Upload`, and the language is added to the application.
   
    ![Localization-dialog-box](/static/assets/multi-tenancy/images/localization-dialog-box.png)
 
->**Note:** The file should include all the Bold BI service folders and `message.po` for all services.
+> **NOTE:** The file should include all the Bold BI service folders and `message.po` for all services.
 
-### Localization file structure
+### Localization File Structure
 
 1. Create application folders with the following names for each service:
     * bi
@@ -45,13 +45,13 @@ To add a language file to the application, please follow these steps:
 
 2. To create a locale file `messages.po` from `messages.pot`, you can either use manual editing or an online tool for the `BI` and `UMS` services. Refer to [this](/localization/latest/#how-to-generate-the-localization-file-for-another-language) for instructions.
 
-3. To create a locale file `messages.po` from `default.po`  you can either use manual editing or an online tool for the `Designer` service. Refer to [this](/localization/latest/#how-to-generate-the-localization-file-for-another-language) for instructions.
+3. To create a locale file `messages.po` from `default.po`, you can either use manual editing or an online tool for the `Designer` service. Refer to [this](/localization/latest/#how-to-generate-the-localization-file-for-another-language) for instructions.
 
 4. After completing the above steps, please convert the service folders into a zip file and upload them to the application.
 
    ![Localization-zip-folder](/static/assets/multi-tenancy/images/localization-zip-folder.png)
 
-## Delete language
+## Delete Language
 
 To remove a language, `Select` the language and `Click` the `Remove` option. You have the option to remove single or multiple languages.
 
@@ -59,15 +59,15 @@ To remove a language, `Select` the language and `Click` the `Remove` option. You
 
 > **NOTE:** You cannot delete the current application language. If you want to remove a language, change the application language to `English` and then delete it.
 
-## Set localization in application
+## Set Localization in Application
 
-To set localization in the application, by default, the application will be in English. You can change the language at the global, site, or user level.
+To set localization in the application, by default, the application is in English. You can change the language at the global, site, or user level.
 
 Please refer to [this](/localization/latest/#where-to-change-the-localization-in-the-application) for instructions on setting localization.
 
-## Possible errors cases and their solution:
+## Possible Errors Cases and Their Solution
 
 | Cases      | Solution                                            |
 |-------------------  |-----------------------------------------------------------  |
-| Invalid File Type | Please ensure to upload the valid zip file (zip).  
+| Invalid File Type | Please ensure that you upload the valid zip file (zip).  
 | Invalid File Error | Please refer [here](#localization-file-structure) to form the localization file structure.
