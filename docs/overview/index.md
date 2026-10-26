@@ -83,7 +83,7 @@ Bold BI supports self-service and embedded analytics for teams across industries
 
 ### Seamless Embedding & API Integration
 
-- [**Embed SDK**](/embedding-options/embedding-sdk/) - Integrate dashboards into applications using [**iframe**](/embedding-options/iframe-embedding/), [**JavaScript**](/embedding-options/embedding-sdk/token-generation/), or [**full server-side embedding**](). Use the SDK to embed dashboard designers, viewers, or specific widgets into applications built with [**Angular**](/embedding-options/embedding-sdk/samples/angular-with-core/), [**React**](/embedding-options/embedding-sdk/samples/react-core/), [**.NET Core**](/embedding-options/embedding-sdk/samples/asp-net-core/), and other [popular frameworks](/embedding-options/embedding-sdk/samples/).
+- [**Embed SDK**](/embedding-options/embedding-sdk/) - Integrate dashboards into applications using [**iframe**](/embedding-options/iframe-embedding/), [**JavaScript**](/embedding-options/embedding-sdk/token-generation/), or [**full server-side embedding**](/embedding-options/embedding-sdk/getting-started/embed-token-authentication-for-the-dashboard-viewer/). Use the SDK to embed dashboard designers, viewers, or specific widgets into applications built with [**Angular**](/embedding-options/embedding-sdk/samples/angular-with-core/), [**React**](/embedding-options/embedding-sdk/samples/react-core/), [**.NET Core**](/embedding-options/embedding-sdk/samples/asp-net-core/), and other [popular frameworks](/embedding-options/embedding-sdk/samples/).
 
 - [**Powerful API Integration**](/server-api-reference/interact-with-rest-api/) - Use APIs, SDKs, and code samples for application integration.
 
