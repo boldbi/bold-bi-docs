@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Single Sign-On with Office 365 Users and Groups | Bold BI
-description: Learn how to configure user directory with Office 365 AD for SSO authentication to share dashboards and email reports with them.
+description: "Learn how to configure Office 365 Azure AD as a user directory for single sign-on in Bold BI, so you can share dashboards and email reports with those users."
 platform: bold-bi
 documentation: ug
 
 ---
 
-# Office 365 support for authentication
+# Office 365 Support for Authentication
 
 Bold BI Cloud supports the addition of Office 365 users and groups, along with your own users and groups. This allows you to share dashboards and email reports with them.
 
@@ -17,7 +17,7 @@ Bold BI Cloud supports importing Azure Active Directory users and allowing them 
 
 Bold BI Cloud supports the following features from the Azure Active Directory.
 
-[Setup Azure Active Directory](/security-configuration/single-sign-on/azure-active-directory/) settings with the Bold BI Cloud.
+[Set up Azure Active Directory](/security-configuration/single-sign-on/azure-active-directory/) settings with the Bold BI Cloud.
 
 [Import users](/managing-resources/manage-users/import-azure-active-directory-users/) from the Azure Active Directory.
 
@@ -27,4 +27,4 @@ Bold BI Cloud supports the following features from the Azure Active Directory.
 
 [Synchronize group details and its users](/managing-resources/manage-groups/synchronize-active-directory-groups/) with the Azure Active Directory.
 
-[Schedule the synchronization of user and groups](/site-administration/user-directory-settings/azure-active-directory/azure-active-directory-synchronization-schedule/) between the Bold BI and the Azure Active Directory.
+[Schedule the synchronization of users and groups](/site-administration/user-directory-settings/azure-active-directory/azure-active-directory-synchronization-schedule/) between the Bold BI and the Azure Active Directory.
