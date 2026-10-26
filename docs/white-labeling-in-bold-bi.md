@@ -1,15 +1,15 @@
 ---
 layout: post
-title: How to white label Bold BI | Bold BI Documentation
-description: Learn how to white label Bold BI to match your application's branding, including logos, site name, copyright information, "powered by" information, themes, fonts, languages, date and time display formats, and domain.
+title: How to White-Label Bold BI | Bold BI Documentation
+description: Learn how to white-label Bold BI to match your application's branding, including logos, site name, copyright information, "powered by" information, themes, fonts, languages, date and time display formats, and domain.
 platform: bold-bi
 documentation: ug
 ---
 
-# White labeling in Bold BI
-Bold BI can be white-labeled to align with your application's branding. Your application will be prominently featured, ensuring that your clients enjoy a consistent and integrated experience with every engagement. Site administrators or users with permission to manage the settings can perform white-labeling.
+# White-Labeling in Bold BI
+Bold BI can be white-labeled to align with your application's branding. Your application is prominently featured, ensuring that your clients enjoy a consistent and integrated experience with every engagement. Site administrators or users with permission to manage the settings can perform white-labeling.
 
-## What areas in Bold BI can be white-labeled?
+## What Areas in Bold BI Can Be White-Labeled?
 * [Site Name](/white-labeling-in-bold-bi/#site-name-customization)
 * [Site Logo](/white-labeling-in-bold-bi/#site-logo-customization)
 * [Powered by Information](/white-labeling-in-bold-bi/#powered-by-information-customization)
@@ -22,38 +22,38 @@ Bold BI can be white-labeled to align with your application's branding. Your app
 * [Use Your Own Credentials for Login](/white-labeling-in-bold-bi/#use-your-own-credentials-for-login)
 
 ## Site Name Customization
-Name of the Bold BI site can be changed at any time on the `Site Settings` page under the `General` section. This will be shown in the title of the browser and email template content.
+The name of the Bold BI site can be changed at any time on the `Site Settings` page under the `General` section. It is shown in the title of the browser and in the email template content.
 ![General Settings](/static/assets/images/general-settings.png#width=65%)
 
 Please refer to this [link](/site-administration/site-settings/#organization-name) to learn more about customizing the site name in Bold BI.
 
 ## Site Logo Customization
-You can customize the Login screen logo, Header logo, Email logo, and Favicon in the Bold BI on the `Site Settings` page under the `Branding` section to match your application's branding. The default Bold BI logos will be displayed on Bold BI sites unless customized.
+You can customize the Login screen logo, Header logo, Email logo, and Favicon in Bold BI on the `Site Settings` page under the `Branding` section to match your application's branding. The default Bold BI logos are displayed on Bold BI sites unless customized.
 ![White label logos](/static/assets/white-label/images/white-label-logo.png)
 
 **Login Screen Logo**
 
-The login page logo can be customized (ideal size: `200 x 40`). It will be used on the site's login page, as shown in the following image.
+The login page logo can be customized (ideal size: `200 x 40`). It is used on the site's login page, as shown in the following image.
 ![Login Logo](/static/assets/white-label/images/login-logo.png)
 
 **Header Logo**
 
-The header logo can be customized (ideal size: `40 x 40`). It will be used at the top of the side navigation menu, as shown in the following image.
+The header logo can be customized (ideal size: `40 x 40`). It is used at the top of the side navigation menu, as shown in the following image.
 ![Header Logo](/static/assets/white-label/images/header-logo.png)
         
 **Favicon**
 
-Favicon for the Bold BI site can be customized (ideal size: `40 x 40`). It will be used in the title of the browser, as shown in the following image.
+The favicon for the Bold BI site can be customized (ideal size: `40 x 40`). It is used in the title of the browser, as shown in the following image.
 ![Favicon](/static/assets/white-label/images/favicon.png)
 
 **Email Logo**
 
-The email logo can be customized (ideal size: `200 x 40`). It will be used in the emails sent from your Bold BI site, as shown in the following image.
+The email logo can be customized (ideal size: `200 x 40`). It is used in the emails sent from your Bold BI site, as shown in the following image.
 ![Email Logo](/static/assets/white-label/images/email-logo.png)
 
 **AI Logo**
 
-The AI logo can be customized (ideal size: `40 x 40`). It will be used on the dashboard rendering page as logo for AI service, as shown in the following image.
+The AI logo can be customized (ideal size: `40 x 40`). It is used on the dashboard rendering page as the logo for the AI service, as shown in the following image.
 ![AI Logo](/static/assets/white-label/images/ai-logo.png)
 
 Please refer to this [link](/site-administration/site-settings/#branding) to learn more about customizing the logo in Bold BI.
@@ -70,7 +70,7 @@ Copyright details can be changed or disabled for Embedded BI on the `Site Settin
 
 ![White label copyright](/static/assets/white-label/images/copyright.png)
 
-The "Powered by" logo and copyright information will be shown at the bottom of the site pages, as shown in the following image.
+The "Powered by" logo and copyright information are shown at the bottom of the site pages, as shown in the following image.
 ![Copyright and Poweredby](/static/assets/white-label/images/copyright-poweredby.png)
 
 Please refer to this [link](/site-administration/site-settings/#branding) to learn more about customizing the copyright information in Bold BI.
@@ -80,7 +80,7 @@ You can customize the language settings for application language and data langua
 
 **Application Language Customization**
 
-You can localize the Bold BI application to any culture by changing the language in the `Application language` section. Please click on the [localization](/localization/) to learn how to add a new localization or edit the existing localization in the Bold BI application. This language will be applied to the application user interface, including menu items, dialog boxes, toolboxes, and more.
+You can localize the Bold BI application to any culture by changing the language in the `Application language` section. Please see the [localization](/localization/) section to learn how to add a new localization or edit the existing localization in the Bold BI application. This language is applied to the application user interface, including menu items, dialog boxes, toolboxes, and more.
 
 ![Application Language](/static/assets/images/site-application-language.png)
 
@@ -97,22 +97,22 @@ You can customize the time zone, date format, and time format of Bold BI on the 
 
 **Time Zone Customization**
 
-The time zone for the Bold BI site can be customized. The Bold BI site sets the default time zone based on the time zone of the machine where Bold BI is deployed. By selecting `Inherit from browser time zone`, the Bold BI site will use the time zone from the browser.
+The time zone for the Bold BI site can be customized. The Bold BI site sets the default time zone based on the time zone of the machine where Bold BI is deployed. By selecting `Inherit from browser time zone`, the Bold BI site uses the time zone from the browser.
 
 **Date Format Customization**
 
-The date format of the Bold BI site can be customized. The default date format for the Bold BI site will be `MM/DD/YYYY`. By selecting `Inherit from browser locale`, the Bold BI site will use the date format from the browser.
+The date format of the Bold BI site can be customized. The default date format for the Bold BI site is `MM/DD/YYYY`. By selecting `Inherit from browser locale`, the Bold BI site uses the date format from the browser.
 
 **Time Format Customization**
 
-The time format of the Bold BI site can be customized. The default time format for the Bold BI site will be `12-hour`. By selecting `Inherit from browser locale`, the Bold BI site will use the time format from the browser.
+The time format of the Bold BI site can be customized. The default time format for the Bold BI site is `12-hour`. By selecting `Inherit from browser locale`, the Bold BI site uses the time format from the browser.
 
 ![Date and Time Settings](/static/assets/images/date-and-time-settings.png#width=55%)
 
 Please refer to this [link](/site-administration/site-settings/#date-and-time) to learn more about customizing the date and time display formats in Bold BI.
 
 ## Site Domain Customization
-You can customize the domain in Bold BI to align your analytics platform by reinforcing brand recognition and credibility.
+You can customize the domain in Bold BI to align your analytics platform with your brand, reinforcing brand recognition and credibility.
 
 **Custom Domain in Embedded BI**
 
@@ -120,34 +120,34 @@ You can customize your bindings with either an IP address or a domain. Please fo
 
 **Custom Domain in Cloud BI**
 
-By default, the domain of the cloud site will be the subdomain of `boldbi.com` (e.g. https://demo.boldbi.com/). You can customize it on the `Site Settings` page under the `Domain` section. To set up the custom vanity domain, you will need a domain from a DNS provider, and Bold BI will provide an SSL certificate for your domain. Please follow the [Custom Domain in Cloud Analytics Server](/site-administration/custom-domain-in-cloud-bi/) to learn how to set up a custom domain in Cloud BI.
+By default, the domain of the cloud site is a subdomain of `boldbi.com` (for example, https://demo.boldbi.com/). You can customize it on the `Site Settings` page under the `Domain` section. To set up the custom vanity domain, you will need a domain from a DNS provider, and Bold BI will provide an SSL certificate for your domain. Please follow the [Custom Domain in Cloud Analytics Server](/site-administration/custom-domain-in-cloud-bi/) documentation to learn how to set up a custom domain in Cloud BI.
 ![Administration Page](/static/assets/site-administration/images/administration-page.png)
 
-Please refer to the [Custom Domain in Cloud Analytics Server](/site-administration/custom-domain-in-cloud-bi/) to learn more about customizing the domain in Bold BI.
+Please refer to the [Custom Domain in Cloud Analytics Server](/site-administration/custom-domain-in-cloud-bi/) documentation to learn more about customizing the domain in Bold BI.
 
-> **Note**: The logos, site name, copyright information, "powered by" information, languages, date and time display formats, and domain customizations can be updated on the `Site Settings` page by administrators or users with permission to manage the site settings.
+> **NOTE:** The logos, site name, copyright information, "powered by" information, languages, date and time display formats, and domain customizations can be updated on the `Site Settings` page by administrators or users with permission to manage the site settings.
 
 ## Theme and Branding Colors Customization 
-You can switch the application and dashboard theme from **light** to **dark mode** and vice versa, under the `Look and Feel` settings. Additionally, you can change the **text color**, **active state**, and **hover state background color**. Furthermore, you can also customize components like **switches**, **radio buttons**, **check boxes**, and **numeric text boxes** by using **branding color** to align with your application's interface.
+You can switch the application and dashboard theme from **light** to **dark mode** and vice versa, under the `Look and Feel` settings. Additionally, you can change the **text color**, **active state**, and **hover state background color**. Furthermore, you can also customize components like **switches**, **radio buttons**, **checkboxes**, and **numeric text boxes** by using **branding color** to align with your application's interface.
 
-Here is a sample image after customizing theme branding color using a green variant in light mode.
+Here is a sample image after customizing the theme branding color using a green variant in light mode.
 
 ![Light custom image](/static/assets/site-administration/images/light-custom-image.png#width=45%)
 
-Here is a sample image after customizing theme branding color using a violet variant in dark mode.
+Here is a sample image after customizing the theme branding color using a violet variant in dark mode.
 
 ![Dark custom image](/static/assets/site-administration/images/dark-custom-image.png)
 
 **Please find the links below to learn more about custom themes.**
 
-[How to create custom application theme](/site-administration/look-and-feel-settings-in-cloud-bi/create-custom-application-theme/)
+[How to create a custom application theme](/site-administration/look-and-feel-settings-in-cloud-bi/create-custom-application-theme/)
 
-[How to create custom dashboard theme](/site-administration/look-and-feel-settings-in-cloud-bi/create-custom-dashboard-theme/)
+[How to create a custom dashboard theme](/site-administration/look-and-feel-settings-in-cloud-bi/create-custom-dashboard-theme/)
 
 [How to upload custom theme files for Embedded BI on the UMS site settings page](/multi-tenancy/site-administration/look-and-feel-settings/)
 
 ## Site Font Customization
-You can customize the font style to match your application's interface under the `Look and Feel` settings in the Bold BI.
+You can customize the font style to match your application's interface under the `Look and Feel` settings in Bold BI.
 
 Here is the sample image after applying the font.
 
@@ -156,15 +156,15 @@ Here is the sample image after applying the font.
 
 **Font Customization in Embedded BI**
 
-The font styles uploaded in **UMS site settings** will be listed in the `Fonts` drop-down list. The selected font style will be applied throughout your site.
+The font styles uploaded in **UMS site settings** are listed in the `Fonts` drop-down list. The selected font style is applied throughout your site.
 
 ![Font Settings Embedded BI](/static/assets/white-label/images/custom-font.png#width=45%)
 
-Please click on the [Font](/multi-tenancy/site-administration/look-and-feel-settings/font/) to learn how to upload font styles on the **UMS site settings** page.
+Please see the [Font](/multi-tenancy/site-administration/look-and-feel-settings/font/) page to learn how to upload font styles on the **UMS site settings** page.
 
 **Font Customization in Cloud BI**
 
-You can upload your preferred font styles in `Look and Feel` settings and it will be listed in the `Fonts` drop-down list. The selected font style will be applied throughout your site.
+You can upload your preferred font styles in the `Look and Feel` settings, and they are listed in the `Fonts` drop-down list. The selected font style is applied throughout your site.
 ![Font Settings Cloud BI](/static/assets/white-label/images/white-label-font-cloud.png)
 
 
@@ -174,11 +174,11 @@ You can upload your preferred font styles in `Look and Feel` settings and it wil
 
 [Look and Feel Settings in Embedded Analytics](/site-administration/look-and-feel-settings-in-embedded-analytics/)
 
-> **Note**: The font and theme customizations can be updated on the `Look And Feel` settings page by administrators or users with permission to manage the look and feel settings.
+> **NOTE:** The font and theme customizations can be updated on the `Look And Feel` settings page by administrators or users with permission to manage the look and feel settings.
 
 ## Use Your Own Credentials for Login
 
-You have the option to configure third-party identity providers within the site and select one as the default authentication provider for logging in to the BI site. Once the default authentication is established, the Bold BI application will automatically redirect users to the login page of the selected authentication provider instead of the default Bold BI login page. This way, you can use your own credentials for login.
+You have the option to configure third-party identity providers within the site and select one as the default authentication provider for logging in to the BI site. Once the default authentication is established, the Bold BI application automatically redirects users to the login page of the selected authentication provider instead of the default Bold BI login page. This way, you can use your own credentials for login.
 
 To configure default authentication, it is necessary to set up a provider and enable one of the following identity providers. Otherwise, you will see a "No default Authentication Available" message in the drop-down.
 
@@ -194,9 +194,9 @@ You can configure and choose any of the following providers as the default authe
 
 ![Default Authentication provider](/static/assets/white-label/images/default-auth.png)
 
-> **NOTE:** If you want to skip default authentication after setting it, then use '`use_default_authentication=false`' in the login URL. (ex: `https://{yourdomain}/{site}/{site_identifier}login?use_default_authentication=false`).
+> **NOTE:** If you want to skip default authentication after setting it, use `use_default_authentication=false` in the login URL (for example, `https://{yourdomain}/{site}/{site_identifier}login?use_default_authentication=false`).
 
-## Common branding for multi-tenants
+## Common Branding for Multi-Tenants
 
 You can inherit the branding and settings configured in UMS for your BI sites using the `Inherit Global Settings` option. This allows you to maintain common branding and settings across your multi-tenant application.
 
