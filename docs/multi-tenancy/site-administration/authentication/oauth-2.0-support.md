@@ -6,7 +6,7 @@ platform: bold-bi
 documentation: ug
 ---
 
-# OAuth 2.0 support in User Management Server
+# OAuth 2.0 Support in User Management Server
 
 The User Management Server can be configured to support OAuth 2.0 for Single Sign-On (SSO), allowing users to log in directly to the User Management Server after authenticating using OAuth 2.0.
 
@@ -16,7 +16,7 @@ The User Management Server can be configured to support OAuth 2.0 for Single Sig
 
 2. Register the User Management Server in the OAuth 2.0 provider.
 
-## Steps to configure OAuth 2.0 in User Management Server
+## Steps to Configure OAuth 2.0 in User Management Server
 
 1. Log in to the User Management Server with the admin credentials.
 
@@ -24,7 +24,7 @@ The User Management Server can be configured to support OAuth 2.0 for Single Sig
 
     ![Authentication OAuth settings](/static/assets/multi-tenancy/images/oauth-setting-page.png)
 
-4. Provide the following details in the `OAuth 2.0` settings of User Management Server.
+3. Provide the following details in the `OAuth 2.0` settings of User Management Server.
 
     <table>
 
@@ -75,7 +75,7 @@ The User Management Server can be configured to support OAuth 2.0 for Single Sig
 
     <tr>
     <td>Scopes</td>
-    <td>It is comma separated lists of identifiers that specifies the access privileges that are being requested from the provider.</td>
+    <td>It is a comma-separated list of identifiers that specify the access privileges that are being requested from the provider.</td>
     </tr>
 
     <tr>
@@ -98,7 +98,7 @@ The following list of OAuth 2.0 providers explains how to connect with the User 
 * [Okta](/security-configuration/single-sign-on/oauth-2.0-support/okta/)
 * [OneLogin](/security-configuration/single-sign-on/oauth-2.0-support/onelogin/)
 
-## Set OAuth 2.0 as default authentication
+## Set OAuth 2.0 as Default Authentication
 OAuth 2.0 can be set as the default authentication when [OAuth 2.0 settings](/multi-tenancy/site-administration/authentication/oauth-2.0-support/#steps-to-configure-oauth-2.0-in-user-management-server) are enabled.
 
 Follow these steps to configure default authentication:
@@ -109,7 +109,7 @@ Follow these steps to configure default authentication:
 
     ![Enable OAuth Default Authentication](/static/assets/multi-tenancy/images/default-oauth.png)
 
-## Disabling OAuth 2.0 settings
+## Disabling OAuth 2.0 Settings
 
 Disabling the **Enable Default Authentication** option and then clicking `Save` will disable the default [OAuth 2.0 default authentication](/multi-tenancy/site-administration/authentication/oauth-2.0-support/#set-oauth-2.0-as-default-authentication).
 
