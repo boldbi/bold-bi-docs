@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Embedded BI – A Basic Walkthrough | Bold BI Documentation
-description: Get a complete walkthrough of using Embedded BI from start to end. Know the features involved in-between the processes.
+description: "Follow an end-to-end walkthrough for creating your first dashboard in Bold BI, from connecting a data source to designing widgets and publishing the result."
 canonical: "/getting-started/creating-dashboard/"
 platform: bold-bi
 documentation: ug
