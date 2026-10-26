@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Working with API – Site Administration | Bold BI Documentation
-description: Work with Site Administration REST APIs through the interactive API documentation. Just get the access token to authenticate the API endpoint and get the response.
+description: "Learn how to use the interactive API documentation for Bold BI Site Administration REST APIs: get an access token, authenticate, and test endpoint responses."
 canonical: "/multi-tenancy/site-administration/api-reference/interact-with-rest-api/"
 platform: bold-bi
 documentation: ug
