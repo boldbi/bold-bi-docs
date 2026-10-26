@@ -53,7 +53,7 @@ This section explains how to perform Single Sign-On for users in Auth0 with the 
     
 Please fill in the details and save the changes.
 
-After successfully registering with Auth0, save these settings on the Bold BI settings page in order to enable this authentication.
+After successfully registering with Auth0, save these settings on the Bold BI settings page to enable this authentication.
 
 ## Enable Auth0 Support for Authentication in Bold BI
 
@@ -61,7 +61,7 @@ Configure the settings in Bold BI, as shown in the following snapshot, to enable
 
 ![Auth0 settings](/static/assets/site-administration/oauth-support/images/auth0-sample-value.png)
 
-The fields that need to be saved in Bold BI in order to enable Auth0 for authentication are explained as follows:
+The fields that need to be saved in Bold BI to enable Auth0 for authentication are explained as follows:
 
 <table>
 
