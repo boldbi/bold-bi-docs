@@ -178,7 +178,7 @@ The following section explains the purpose of each widget in the dashboard.
 
 ## Performance Monitoring Dashboard
 
-The performance monitoring dashboard is predefined and allows you to monitor the performance of each dashboard in order to better understand which dashboard is affecting performance.
+The performance monitoring dashboard is predefined and allows you to monitor the performance of each dashboard to better understand which dashboard is affecting performance.
 
 ![Performance Monitoring Dashboard](/static/assets/site-administration/images/Performance_monitoring.png#width=60%)
 
