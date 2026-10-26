@@ -15,7 +15,7 @@ You can white label the Bold BI mobile application by following these requiremen
 * App Store Publishing
 
 ## Application White Labeling
-Utilize the `Content` and `Images` to showcase the Bold BI branding in the mobile application, incorporating the following details.
+use the `Content` and `Images` to showcase the Bold BI branding in the mobile application, incorporating the following details.
 
 ### Required Content for White Labeling
 
