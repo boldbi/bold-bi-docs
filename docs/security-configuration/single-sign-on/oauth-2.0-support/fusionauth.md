@@ -59,7 +59,7 @@ Configure the settings in Bold BI as in the following snap to enable the authent
 
 ![Fusion Auth settings](/static/assets/site-administration/oauth-support/images/fusion-auth-sample-value.png)
 
-The fields that need to be saved in Bold BI in order to enable Fusion Auth for authentication are explained as follows.
+The fields that need to be saved in Bold BI to enable Fusion Auth for authentication are explained as follows.
 
 <table>
 
