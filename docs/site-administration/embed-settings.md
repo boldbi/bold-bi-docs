@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Embed Settings – Embedded BI | Bold BI Documentation
-description: Learn how to enable the embed authentication and generate the secret code using the embed settings in the Bold BI server.
+description: "Learn how to enable embed authentication in Bold BI and generate the embed secret key in embed settings, so you can securely embed dashboards in your app."
 canonical: "/site-administration/embed-settings/"
 platform: bold-bi
 documentation: ug
