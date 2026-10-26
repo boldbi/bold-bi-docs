@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Multi-Tenancy – Adding a New Tenant – Embedded BI | Bold BI
-description: Learn how to add another site as part of multi-tenancy and configure separate database and data store with Bold BI Embedded.
+description: "Learn how to create a new site in Bold BI multi-tenancy, with its own database and data store, so each tenant’s dashboards and data stay fully isolated."
 platform: bold-bi
 documentation: ug
 
