@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Error Codes – Payment Failure – Cloud BI | Bold BI Docs
-description: Learn the error codes shown for any payment failure happened along with the step to proceed further in Bold BI.
+description: "Learn what each Bold BI Cloud payment error code means when a payment fails, and the steps to take to resolve the error and complete your subscription payment."
 platform: bold-bi
 documentation: ug
 ---
 # Payment Decline Codes
 
-This section will explain the error code details for payment failure, along with the next steps to resolve the issue.
+This section explains the error code details for payment failure, along with the next steps to resolve the issue.
 
 <table>
 <tr>
@@ -39,7 +39,7 @@ The customer should contact their card issuer for more information. </td></tr>
 <td>
 currency_not_supported</td><td>
 The card does not support the specified currency. </td><td>
-The customer needs check with the issuer that the card can be used for the type of currency specified. </td></tr>
+The customer needs to check with the issuer that the card can be used for the type of currency specified. </td></tr>
 <tr id="do_not_honor">
 <td>
 do_not_honor </td><td>
@@ -113,7 +113,7 @@ The customer should try again using the correct CVC. </td></tr>
 <tr id="invalid_expiry_year">
 <td>
 invalid_expiry_year </td><td>
-The expiration year invalid. </td><td>
+The expiration year is invalid. </td><td>
 The customer should try again using the correct expiration date. </td></tr>
 <tr id="invalid_number">
 <td>
