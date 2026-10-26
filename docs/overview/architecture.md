@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Bold BI High-Level Architecture | Bold BI Documentation
-description: Study the overview of the system architecture, highlighting key components and their roles in the data flow process.
+description: "Learn about the Bold BI system architecture, including its key components, the role each component plays, and how data flows from data sources to dashboards."
 canonical: "/overview/"
 platform: bold-bi
 documentation: ug
