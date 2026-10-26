@@ -1,7 +1,7 @@
 ---
 layout: post
 title: SSO with OneLogin Provider of OpenID Connect | Bold BI
-description: Learn how to configure Bold BI Embedded with OneLogin identity provider for Single Sign-On authentication using OpenID Connect.
+description: "Learn how to configure OneLogin as an OpenID Connect identity provider for single sign-on in Bold BI, so users can sign in with their OneLogin accounts."
 platform: bold-bi
 documentation: ug
 ---
