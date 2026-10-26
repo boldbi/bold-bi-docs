@@ -1,17 +1,17 @@
 ---
 layout: post
-title: How to lock the dashboard resource synchronization | Bold BI Docs
+title: How to Lock the Dashboard Resource Synchronization | Bold BI Docs
 description: Find out how to use the Bold BI application to allow or disable lock synchronization of dashboards, data sources, and other resources from other websites.
 canonical: "/site-administration/dashboard-settings/lock-resource-synchronization/"
 platform: bold-bi
 documentation: ug
 ---
 
-# Enable lock synchronization for the dashboard and datasources
+# Enable Lock Synchronization for the Dashboard and Datasources
 
 This section explains how to enable or disable the synchronization of dashboards and data sources from external sites. Using this feature in the dashboard settings allows you to control whether changes or updates are allowed on the dashboards and data sources from these external sites.
 
-## Enable or Disable lock synchronization
+## Enable or Disable Lock Synchronization
 
 The `Lock Resource Synchronization` option is disabled by default on the dashboard settings page.
 
@@ -21,4 +21,4 @@ If the user chooses to enable `Lock Resource Synchronization`, the synchronizati
 
 ![Lock Synchronization enabled](/static/assets/site-administration/images/enable-lock-synchronization.png)
 
-> **NOTE:** This option will not be available in the cloud because publishing to other site features is not available in the cloud.
+> **NOTE:** This option is not available in the cloud because publishing to other site features is not available in the cloud.
