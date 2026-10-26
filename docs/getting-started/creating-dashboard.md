@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Embedded BI – A Basic Walkthrough | Bold BI Documentation
-description: Get a complete walkthrough of using Embedded BI from start to end. Know the features involved in-between the processes.
+description: "Follow an end-to-end walkthrough for creating your first dashboard in Bold BI, from connecting a data source to designing widgets and publishing the result."
 canonical: "/getting-started/creating-dashboard/"
 platform: bold-bi
 documentation: ug
@@ -15,13 +15,13 @@ You may watch this video first. This video describes how to create a marketing p
 
 <iframe class="helpsite-video-section" src="https://www.youtube.com/embed/k6yeUz0NqQ4?start=708" frameborder="0" allowfullscreen></iframe>
 
-## Opening dashboard designer
+## Opening Dashboard Designer
 
 To create a new dashboard in `Bold BI`, click on the option below.
 
 ![Create Dashboard Option](/static/assets/getting-started/images/newdashboard.png)
 
-You can either start creating the dashboard from scratch or use templates, as shown below.
+You can either start creating the dashboard from scratch or use templates.
 
 ![Ways of Creating Dashboards](/static/assets/getting-started/images/create-dashboard-options.png#width=30%)
 
@@ -50,11 +50,11 @@ When new rows are added, the dashboard will become scrollable, allowing for the 
 
 ![scrollable dashboard](/static/assets/getting-started/images/scroll_created.png)
 
-## Connecting to data
+## Connecting to Data
 
 To establish a data connection, you need to add a new data source using one of the supported data connection types, as described below.
 
-### Setting up connection
+### Setting Up Connection
 
 Click the `Data Source` button in the configuration panel.
 
@@ -68,7 +68,7 @@ In the list of data sources, click on one of the listed data sources. For demons
 
 ![list of available connections](/static/assets/getting-started/images/datasourcelist.png)
 
-## Configuring tables and views
+## Configuring Tables and Views
 
 In the `NEW DATA SOURCE` configuration panel, please provide the connection type and its related details.
 
@@ -82,7 +82,7 @@ Now, the following view will be displayed.
 
 ![tables and views for the connected database](/static/assets/getting-started/images/datadesignview.png)
 
-The left pane displays the tables and views associated with the connected database. Drag the preferred table or view from the left pane and drop it into the center pane labeled `Drag and Drop table here....` Then, click `Update` in the bottom pane to view the data in the data preview grid, as shown below.
+The left pane displays the tables and views associated with the connected database. Drag the preferred table or view from the left pane and drop it into the center pane labeled `Drag and Drop table here....` Then, click `Update` in the bottom pane to view the data in the data preview grid.
 
 ![dropped table in canvas](/static/assets/getting-started/images/virtualtable.png)
 
@@ -90,13 +90,13 @@ To automatically update the data in the data preview grid, enable the Toggle Opt
 
 ![dropped table in canvas](/static/assets/getting-started/images/datapreviewautoupdate.png)
 
-The data type of each column will be represented nearby, as shown below.
+The data type of each column will be represented nearby.
 
 ![representing the datatype of each column](/static/assets/getting-started/images/datatypeicon.png)
 
-Add more than one table, if you prefer, by following the same drag and drop operation. This is subjected to [joining](/working-with-data-sources/data-modeling/joining-table/) of tables.
+Add more than one table, if you prefer, by following the same drag-and-drop operation. This is subjected to [joining](/working-with-data-sources/data-modeling/joining-table/) of tables.
 
-## Transforming data
+## Transforming Data
 
 You can `Rename` a column as required by selecting the options in the `Settings` drop-down menu or by double-clicking the column to enable edit mode.
 
@@ -126,13 +126,13 @@ Click `Save` in the tools pane in the data design view to save the changes and n
 
 ![button for saving the data source](/static/assets/getting-started/images/finishbutton.png)
 
-## Creating dashboard
+## Creating Dashboard
 
 Now, the dashboard design view will open after the table has been successfully configured.
 
 ![new dashboard](/static/assets/getting-started/images/newdashboardwithdatasource.png)
 
-## Adding a widget to design view
+## Adding a Widget to Design View
 
 The left toolbox pane consists of data visualization, filtering, and miscellaneous widgets to design an interactive dashboard.
 
@@ -156,9 +156,9 @@ This will adjust the size of the widget. The blue border indicates the occupied 
 
 ![resizing the widget using corners in widget](/static/assets/getting-started/images/resizedwidgets.png)
 
-## Assigning data to widget
+## Assigning Data to Widget
 
-> **NOTE:**  This step is only applicable to widgets that do not belong to the miscellaneous category, except for the `Image` widget.
+> **NOTE:** This step is only applicable to widgets that do not belong to the miscellaneous category, except for the `Image` widget.
 
 To bind data to a widget placed in the design area, focus on that widget.
 
@@ -208,7 +208,7 @@ To group the added column element by a column, add the respective non-numeric co
 
 ![rendering chart with row data](/static/assets/getting-started/images/chartwithrowdata.png)
 
-If needed, you can format the measure column values by clicking the `Settings` icon and selecting the `Format` option to open the Measure `Measure Formatting` dialog.
+If needed, you can format the measure column values by clicking the `Settings` icon and selecting the `Format` option to open the `Measure Formatting` dialog.
 
 ![formatting option in settings popup](/static/assets/getting-started/images/formatvalues.png)
 
@@ -218,7 +218,7 @@ The `Measure Formatting` dialog will open as follows.
 
 In the Measure Formatting dialog, make the necessary changes and click `OK` to save the changes or `Cancel` to discard them.
 
-You can also filter the data for a particular widget using the `Measure Filter` or  `Dimension Filter`option in the `Settings` drop down menu.
+You can also filter the data for a particular widget using the `Measure Filter` or `Dimension Filter` option in the `Settings` drop-down menu.
 
 ### Measure Filter
 
@@ -240,7 +240,7 @@ The `Dimension Filter` dialog will open as follows:
 
 Refer to [filter](/visualizing-data/working-with-widgets/configuring-widget-filters/#configuring-filter-for-dimension-column) to make required changes and click `OK` to save the changes.
 
-You can customize the sorting behavior of dimension and measure fields in each widget using the `Sort` option shown in the `Settings` drop down menu.
+You can customize the sorting behavior of dimension and measure fields in each widget using the `Sort` option shown in the `Settings` drop-down menu.
 
 ### Dimension Sorting
 
@@ -252,13 +252,13 @@ The `Dimension Sorting` dialog will open as follows:
 
 Refer to the [sort](/visualizing-data/working-with-widgets/advanced-sorting/#dimension-column) to make required changes and click `Apply` to save the changes. 
 
-## Configuring properties to widget
+## Configuring Properties to Widget
 
 Navigate to the `PROPERTIES` pane in the properties tab.
 
 ![properties pane in design tab](/static/assets/getting-started/images/properties.png)
 
-From the dashboard design tab, you can navigate to the properties pane by placing the focus on the widget as shown below.
+From the dashboard design tab, you can navigate to the properties pane by placing the focus on the widget.
 
 Click the `Settings` in the top right corner of the widget. The focus moves to the data design view tab and opens the `PROPERTIES` pane.
 
@@ -266,7 +266,7 @@ Click the `Settings` in the top right corner of the widget. The focus moves to t
 
 This pane holds some general settings and some specific to the widget. Configure the desired settings and refer to the `Properties Configuration` widget-wise for more details.
 
-You can add more widgets by following the same procedure to create a dashboard as shown below.
+You can add more widgets by following the same procedure to create a dashboard.
 
 Once you are done with the dashboard, `Publish` it by clicking the `Publish As` button in the tools pane.
 
@@ -289,7 +289,7 @@ You can design any number of dashboards by following the steps given above.
 ### Publishing Dashboards with Comments
 Once the datasource and widget are configured in the dashboard, there are two primary methods to publish the dashboard with comments.
 
-#### Publish and Publish AS
+#### Publish and Publish As
 When adding the dashboard using the `Publish` or `Publish As` option, you can provide comments in the designated comments text area. This allows you to include relevant notes or updates regarding the dashboard at the time of its initial publication.
 
 ![Publish As](/static/assets/getting-started/images/publish-as.png)
@@ -301,9 +301,9 @@ If you need to update an existing dashboard and wish to modify the comments, you
 
 ![Publish with comment Dialog](/static/assets/getting-started/images/publish-comment-dialog.png)
 
-> **NOTE:**   If you choose to publish while updating the dashboard without using the `Publish With Comment` option, the previous version's comments will automatically be included in the version history comments.
+> **NOTE:** If you choose to publish while updating the dashboard without using the `Publish With Comment` option, the previous version's comments will automatically be included in the version history comments.
 
-## Related links
+## Related Links
 [Blog Post on Getting Started](https://www.boldbi.com/blog/create-business-dashboards-online-with-bold-bi)
 
 [Blog Post on Features Overview](https://www.boldbi.com/blog/bold-bi-overview-a-complete-walkthrough-of-the-bold-bi-features-webinar-qa)
