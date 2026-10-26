@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Managing Dashboard Views – Embedded BI | Bold BI Docs
-description: Learn how to open, add, update, share, and delete dashboard views and mark a dashboard view as public in Bold BI Embedded.
+description: "Learn how to open, add, update, share, and delete saved dashboard views in Bold BI, and how to mark a view as public so other users can access it as well."
 canonical: "/managing-resources/manage-dashboards/manage-dashboard-views/" 
 platform: bold-bi
 documentation: ug
