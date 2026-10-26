@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Creating a Schedule – Embedded BI | Bold BI Learning
-description: Learn how to open, create, and save views in Bold BI Embedded. Users without permission to create schedules cannot create schedules.
+description: "Learn how to schedule a dashboard in Bold BI to email it to users at set times. Users without permission to create schedules cannot create a dashboard schedule."
 canonical: "/working-with-dashboards/dashboard-schedule/"
 platform: bold-bi
 documentation: ug
