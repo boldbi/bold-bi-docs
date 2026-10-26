@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Automatic Refresh on Dashboards – Embedded BI | Bold BI
-description: Learn how to enable automatic refresh of a dashboard at scheduled intervals to get the latest data in Bold BI Embedded.
+description: "Learn how to enable automatic dashboard refresh in Bold BI at scheduled intervals, so users always see the latest data without reloading the dashboard by hand."
 canonical: "/working-with-dashboards/preview-dashboard/refresh-dashboard/"
 platform: bold-bi
 documentation: ug
