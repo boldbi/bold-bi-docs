@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Active Directory Users Synchronization | Bold BI Embedded
-description: Learn how to synchronize imported user details such as first name, last name, email address, and contact number from Windows Active Directory in Bold BI Embedded.
+description: "Learn how to synchronize imported user details such as name, email address, and contact number from Windows Active Directory to Bold BI to keep them current."
 platform: bold-bi
 documentation: ug
 ---
