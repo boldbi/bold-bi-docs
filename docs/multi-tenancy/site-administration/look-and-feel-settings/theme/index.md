@@ -62,7 +62,7 @@ Follow these steps to upload the generated custom theme file:
 3. The uploaded custom theme file appears in the `Dashboard Theme` drop-down, as listed below. In the `Dashboard Theme` drop-down menu, choose the uploaded theme, then save the settings.
 ![Select dashboard theme](/static/assets/multi-tenancy/images/look-and-feel/select-dashboard-theme.png)
 
-4. The dashboard is rendered according to your customized theme file. For example, the `darkviolet` theme is rendered as shown below.
+4. The dashboard is rendered according to your customized theme file. For example, the `darkviolet` theme is rendered.
 ![Dashboard custom image](/static/assets/multi-tenancy/images/look-and-feel/dashboard-custom-image.png)
 
 
