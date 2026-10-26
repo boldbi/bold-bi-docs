@@ -31,7 +31,7 @@ A **reverse proxy** is a server that sits between client devices and your backen
 
 ### Detected Current Site URL (Effective)
 - This shows the URL automatically detected from incoming requests.
-- It helps confirm what the system currently identifies as the active site address.
+- It helps confirm what the system identifies as the active site address.
 
 ![Detected Current Site URL](/static/assets/multi-tenancy/images/Detected-Site-URL.png#width=55%)
 
