@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Distinct Features - On-Premises vs. Managed Cloud | Bold BI
-description: This page explores the list of distinct features that set on-premises and managed cloud editions of Bold BI apart.
+description: "Compare the Bold BI On-Premises Edition and Managed Private Cloud, and see the features, hosting responsibilities, and differences that set the two apart."
 canonical: "/overview/on-premises-vs-managed-cloud/"
 platform: bold-bi
 documentation: ug
