@@ -6,7 +6,7 @@ platform: bold-bi
 documentation: ug
 ---
 
-# How to create custom application theme
+# How to Create Custom Application Theme
 
 Once you have extracted the template file downloaded from the link in the `Manage Application Theme` dialog, you can manually edit the CSS variables and assign color codes in the template file to customize the theme.
 
@@ -20,11 +20,11 @@ The value represents the hexadecimal representation of the color code that you w
 
 ![CSS3 variable](/static/assets/site-administration/images/css-variable.png)
 
-### **Points to be noted while editing and uploading custom theme file.**
+### **Points to Be Noted While Editing and Uploading Custom Theme File**
 
 * To avoid errors in color assignment, please use this [online color picker tool](https://www.google.com/search?si=AC1wQDAoyjQYg3jwXlqSN_ppczo9wBVbeISr-8vCGaPybowwliJXfryD9GkUWlNo3uTq29yH5Z2Khp5AXSpKSRTZXtkDq1HDAQ%3D%3D&hl=en-IN&kgs=4b27e3cf717a5fe4&shndl=21&source=sh/x/fbx/1&entrypoint=sh/x/fbx&fbxst=CgkKByM2ZTZhNjA) to get the hex value for the color you want to use in the template file.
 
-* Make sure to use appropriate color codes that are suitable for the mode you are customizing. For example, use **light based colors** in **dark mode** and **dark based colors** in **light mode** to ensure clear visibility.
+* Make sure to use appropriate color codes that are suitable for the mode you are customizing. For example, use **light-based colors** in **dark mode** and **dark-based colors** in **light mode** to ensure clear visibility.
 
 * A custom theme can only be created for either the dark or light mode, not both. Please select a custom theme based on your current application mode. To reset the custom theme, choose the default value.
 
@@ -32,7 +32,7 @@ The value represents the hexadecimal representation of the color code that you w
 
 * Before uploading the custom theme file, make sure it is valid by using this [online validation helper](https://jigsaw.w3.org/css-validator/#validate_by_upload).
 
-## Assign color code to variables in template file
+## Assign Color Code to Variables in Template File
 
 ### **Simple Customization**
 
@@ -103,7 +103,7 @@ You can customize the **hover background** and **active background** colors acro
 
 <a>Buttons Customization</a>
 
-You can customize the **primary button**, **secondary button**, and **link button colors**, by changing the color codes on the below variables for normal, hover, and disabled state.
+You can customize the **primary button**, **secondary button**, and **link button colors** by changing the color codes on the following variables for normal, hover, and disabled state.
 
 <table>
     <tr>
