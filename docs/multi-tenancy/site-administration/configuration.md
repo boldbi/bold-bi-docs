@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Update the Configuration in Embedded BI Apps | Bold BI Docs
-description: Learn how to make your own configuration changes by following these guidelines to your embedded BI application.
+description: "Learn how to change the configuration settings of your Bold BI embedded analytics deployment, and follow the guidelines to apply your custom changes safely."
 platform: bold-bi
 documentation: ug
 ---
