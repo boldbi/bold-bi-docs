@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Fixed Layout Configuration – Embedded BI | Bold BI Learning
+title: Fixed Layout Configuration – Embedded BI | Bold BI Learning
 description: Discover how to modify your dashboard layout effortlessly using the Fixed Layout feature in Bold BI Embedded, ensuring a seamless user experience.
 canonical: "/working-with-dashboards/fixed-layout/"
 platform: bold-bi
@@ -22,13 +22,13 @@ In the dashboard properties, navigate to the `Size` section, where you can selec
 
 When the `Fixed` option is selected from the type dropdown menu, additional cells are added to both rows and columns to match the dashboard's height and width. The `Fixed` category offers three options:
 
-1. Default dimensions.
+1. Default dimensions
 2. Custom
 3. Cell margin
 
-### Default dimensions
+### Default Dimensions
 
-Currently, we provide multiple default dimension values for the dashboard layout, each specifying its width and height. Users can select the appropriate dimension based on these default options.
+, we provide multiple default dimension values for the dashboard layout, each specifying its width and height. Users can select the appropriate dimension based on these default options.
 
 <table style="margin: 14px 0px; width: 30%;">
 <tr><td><b>Default dimensions</b></td></tr>
@@ -64,7 +64,7 @@ For example, if we choose the `Full Screen (1024 x 768)` option from the default
 
 ### Custom
 
-You can select the custom option from the Fixed dropdown section or by changing the width and height using the numeric text box it'll considered as the custom option. By default, the layout is set to `Custom`, with a cell margin of `5` and the height and width adjusted based on the browser's dimensions.
+You can select the custom option from the Fixed dropdown section or by changing the width and height using the numeric text box, it'll be considered as the custom option. By default, the layout is set to `Custom`, with a cell margin of `5` and the height and width adjusted based on the browser's dimensions.
 
 ![Fixed Layout Dropdown Select](/static/assets/working-with-dashboards/images/fixed_dropdown_select.png)
 
@@ -98,7 +98,7 @@ The image below shows the dashboard at 75% zoom size:
 
 ![Layout Upon Resize](/static/assets/working-with-dashboards/images/fixed_layout_upon_resize.png)
 
-## Limitations:
+## Limitations
 
 1. PDF export at the dashboard level, pinboards, widget embedding, and `loadMultipleWidgets` embedding are not supported.
-2. Increasing or decreasing the layout size will add or remove the corresponding rows and columns. If reducing the width or height affects any widgets, an alert message will notify the user to specify the number of rows or columns being removed or to reconfigure the affected widgets, as shown in the image below. Increasing the width or height will add the respective rows or columns while keeping the configured widgets unchanged.![Restriction Window](/static/assets/working-with-dashboards/images/restriction_window.png)
+2. Increasing or decreasing the layout size will add or remove the corresponding rows and columns. If reducing the width or height affects any widgets, an alert message will notify the user to specify the number of rows or columns being removed or to reconfigure the affected widgets, as shown in the image below. Increasing the width or height will add the respective rows or columns while keeping the configured widgets unchanged. ![Restriction Window](/static/assets/working-with-dashboards/images/restriction_window.png)
