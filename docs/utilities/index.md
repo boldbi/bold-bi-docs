@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Admin Utility and Command Line Tools | Bold BI Docs
-description: This section explains how to use the Bold BI command line tools and classic dashboard migration tool in Bold BI.
+description: This section explains how to use the Bold BI command line tools and the classic dashboard migration tool in Bold BI.
 platform: bold-bi
 documentation: ug
 ---
