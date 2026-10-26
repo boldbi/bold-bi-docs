@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Monitoring the Health of Bold BI Services | Bold BI Docs
-description: Learn how to monitor the health of Bold BI application services and includes reference links for detailed steps.
+description: Learn how to monitor the health of Bold BI application services, with reference links for detailed steps.
 platform: bold-bi
 documentation: ug
 ---
