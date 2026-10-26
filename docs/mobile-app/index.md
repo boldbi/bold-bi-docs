@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Mobile Business Intelligence - Embedded | Bold BI Docs
-description: Learn about the Mobile BI app for accessing Bold BI Embedded dashboards and its key features. Get insights into your data and stay up to date with the latest data.
+description: "Learn about the Bold BI mobile app and its key features for viewing dashboards on the go, so you can explore your data and stay current from any mobile device."
 platform: bold-bi
 documentation: ug
 
