@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to Configure IP Whitelisting in Embedded BI| Bold BI Docs
-description: Learn about how to enable IP Whitelisting and allow only specified IP addresses to access Bold BI embedded application.
+description: "Learn how to enable IP whitelisting in Bold BI network settings, so only the IP addresses you specify can access your embedded analytics application and site."
 platform: bold-bi
 documentation: ug
 ---
