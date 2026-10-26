@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Data Security Configuration – Embedded BI | Bold BI Docs
-description: Learn how to enable data security through global embed configuration and access custom attribute, isolation code using configuration based embed support.
+title: Data Security Configuration – Embedded BI | Bold BI Docs
+description: Learn how to enable data security through global embed configuration and access custom attribute, isolation code using configuration-based embed support.
 platform: bold-bi
 documentation: ug
 ---
@@ -12,7 +12,7 @@ This section explains how to enable global embed configuration and embed the das
 
 > **NOTE:** The Data Security Configuration is not available in Cloud Analytics Server, but it is available in Bold BI Embedded Analytics.
 
-## Enable global embed configuration
+## Enable Global Embed Configuration
 
 Go to the settings page in UMS and click on `Embed` to enable the global embed configuration within that page.
 
@@ -24,7 +24,7 @@ Go to the settings page in UMS and click on `Embed` to enable the global embed c
 
 * **Embed secret:** Dashboards from any site can be embedded using the embed secret.
 
-## Get an embed secret code
+## Get an Embed Secret Code
 
 1. Click `Generate Secret` button.
 
@@ -38,9 +38,9 @@ Go to the settings page in UMS and click on `Embed` to enable the global embed c
 
     ![Reset secret code](/static/assets/data-security-configuration/images/ums-reset-secret-code.png#width=55%)
 
-> **Warning :** Resetting this code would cause the previously functioning embedded dashboards to stop working.
+> **WARNING:** Resetting this code would cause the previously functioning embedded dashboards to stop working.
 
-## How to use embed configuration file
+## How to Use Embed Configuration File
 
 The embed configuration file can be used to globally set the [attributes](/working-with-data-sources/configuring-custom-attribute/#uses-of-custom-attribute) and [isolation code](/working-with-data-sources/configuring-isolation-code/) for all sites in a common place. 
 
@@ -126,7 +126,7 @@ If you need an existing embed configuration file, please refer to the `template.
 
 * **Attributes:** Please provide the attributes for the embedding profile. Please refer to [this page](/working-with-data-sources/configuring-custom-attribute/#uses-of-custom-attribute) to learn about the attributes. 
 
-## Embedding scope hierarchy
+## Embedding Scope Hierarchy
 
 Embedding scope can be defined at three levels:
 
