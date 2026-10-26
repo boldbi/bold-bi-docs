@@ -59,7 +59,7 @@ To enable authentication using Auth0, configure the settings in Bold BI as shown
 
 ![Auth0 settings](/static/assets/site-administration/openid-support/images/auth0-sample-value.png#width=55%)
 
-The fields that need to be saved in Bold BI in order to enable Auth0 for authentication are explained as follows.
+The fields that need to be saved in Bold BI to enable Auth0 for authentication are explained as follows.
 
 <table>
 
