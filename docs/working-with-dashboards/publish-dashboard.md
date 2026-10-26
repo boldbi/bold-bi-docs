@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Saving/Publishing a Dashboard – Embedded BI | Bold BI Docs
-description: Learn how to save your latest changes in an existing dashboard or save a new dashboard in Bold BI Embedded.
+description: "Learn how to publish a dashboard in Bold BI by saving your latest changes to an existing dashboard or saving a new dashboard to a category for others to view."
 canonical: "/working-with-dashboards/publish-dashboard/"
 platform: bold-bi
 documentation: ug
@@ -43,5 +43,5 @@ After successfully publishing a dashboard, you will be prompted to view the publ
 
 [Learn how to edit an existing dashboard](/working-with-dashboards/edit-existing-dashboard/)
 
-## Post your message
+## Post Your Message
 If you are still unable to find the information you are looking for in the self-help resources mentioned above, please [contact us](https://www.boldbi.com/support) with your requirements.
