@@ -12,7 +12,7 @@ Security is an important aspect of every software. This document explains the im
 
 ## Enhancing Deployment and Data Security
 
-When it comes to Business Intelligence solutions, deployment flexibility and data security are paramount. Bold BI is engineered for multi-cloud compatibility, allowing seamless hosting on leading cloud providers like Azure, AWS, and Google Cloud (GCP).
+When it comes to Business Intelligence solutions, deployment flexibility and data security are paramount. Bold BI is engineered for multi-cloud compatibility, allowing hosting on leading cloud providers like Azure, AWS, and Google Cloud (GCP).
 
 ## Deployment Flexibility
 
