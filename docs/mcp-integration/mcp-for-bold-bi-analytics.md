@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Bold BI MCP Tool User Guide for AI Assistants | Bold BI
-description: Configure and use the Bold BI MCP Tool to access dashboards, data sources, users, schedules, exports, and analytics through AI assistants.
+description: "Learn how to configure and use the Bold BI MCP tool so AI assistants can work with your dashboards, data sources, users, schedules, exports, and analytics."
 canonical: "/mcp-integration/mcp-for-bold-bi-analytics/"
 platform: bold-bi
 documentation: ug
