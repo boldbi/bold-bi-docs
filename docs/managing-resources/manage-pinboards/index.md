@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Managing Pinboards – Embedded BI | Bold BI Documentation
-description: Learn how to add, rename, duplicate, and delete pinboards and pin/unpin widgets in Bold BI deployed on your server.
+description: "Learn how to add, rename, duplicate, and delete pinboards in Bold BI, and how to pin or unpin widgets to keep key insights from many dashboards in one view."
 canonical: "/managing-resources/manage-pinboards/"
 platform: bold-bi
 documentation: ug
