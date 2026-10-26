@@ -7,9 +7,9 @@ platform: bold-bi
 documentation: ug
 ---
 
-# Set Default dashboard
+# Set Default Dashboard
 
-This section explains how to configure a default dashboard that users will see upon logging into the application.
+This section explains how to configure a default dashboard that users will see upon logging in to the application.
 
 1. Navigate to the **Site Settings** page and go to the **Dashboard Settings** tab.
 
@@ -19,7 +19,7 @@ This section explains how to configure a default dashboard that users will see u
 
    ![Default dashboard dropdown](/static/assets/site-administration/images/default-dashboard.png#width=60%)
 
-3. Upon the next login, users will be automatically redirected to the selected default dashboard.
+3. Upon the next login, users are automatically redirected to the selected default dashboard.
 
 ## Removing the Default Dashboard
 
