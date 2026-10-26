@@ -1,18 +1,18 @@
 ---
 layout: post
 title: Exporting Options for Dashboard Widget | Bold BI Embedded
-description: Learn how to enable settings to export a dashboard widget at runtime to PDF, Image, PowerPoint, CSV or Excel files in Bold BI Embedded.
+description: "Learn how to enable widget export settings in Bold BI, so users can export a widget at runtime to PDF, image, PowerPoint, CSV, or Excel files from the viewer."
 canonical: "/working-with-dashboards/preview-dashboard/exporting-reports-from-widgets/exporting-options/"
 platform: bold-bi
 documentation: ug
 ---
-# Exporting widget to Image
+# Exporting Widget to Image
 
    You can export the widget view in the form of an image by clicking on `Export to Image` in the drop-down menu at the right corner of the title section.
     
    ![Widget image](/static/assets/working-with-dashboards/preview-dashboards/widget-settings/images/WidgetImage.png)
    
-   By clicking on `Export to Image`, a pop-up will be shown as follows.
+   By clicking on `Export to Image`, a pop-up is shown as follows.
    
    ![Widget image popup](/static/assets/working-with-dashboards/preview-dashboards/widget-settings/images/WidgetImagepopup.png)
    
@@ -32,20 +32,20 @@ documentation: ug
    
    ![Reset](/static/assets/working-with-dashboards/preview-dashboards/widget-settings/images/WidgetImageReset.png)
   
-   After clicking `Export`, a notification pop-up will be shown as follows.
+   After clicking `Export`, a notification pop-up is shown as follows.
 
    
    ![Export-message](/static/assets/working-with-dashboards/preview-dashboards/widget-settings/images/export-msg1.PNG#max-width=95%)
 
-   After the dashboard or widgets have been exported, a success notification pop-up will be shown with an included link to manually download the files.
+   After the dashboard or widgets have been exported, a success notification pop-up is shown with an included link to manually download the files.
  
    ![Export-downloaded-file-message](/static/assets/working-with-dashboards/preview-dashboards/widget-settings/images/exportdownload.PNG#max-width=95%)
 
    Click `Reset` to restore the default values in the pop-up.
    
-   > **NOTE:**  In Windows, Safari browser does not support the `Export to Image` functionality. Mac OS or iOS, with Safari browser version 6+ support this functionality.
+   > **NOTE:** In Windows, Safari browser does not support the `Export to Image` functionality. Mac OS or iOS, with Safari browser version 6+ support this functionality.
    
-## Exporting widget to PDF
+## Exporting Widget to PDF
 
    You can obtain the data showcased in the widget by exporting it in PDF format. This can be achieved by clicking on `Export to PDF` in the drop-down menu at the right corner of the title section.
    
@@ -83,7 +83,7 @@ documentation: ug
    
    ![PDF reset](/static/assets/working-with-dashboards/preview-dashboards/widget-settings/images/widgetPDFReset.png)
 
-## Exporting widget to PowerPoint
+## Exporting Widget to PowerPoint
 
    You can export the widget view as a PowerPoint presentation by clicking on `Export to PowerPoint` in the drop-down menu at the right corner of the title section.
 
@@ -97,7 +97,7 @@ documentation: ug
 
    ![Widget PowerPoint Export](/static/assets/working-with-dashboards/preview-dashboards/widget-settings/images/widgetPowerPointExport.png)   
    
-   After clicking `Export`, a notification pop-up will appear as shown below.
+   After clicking `Export`, a notification pop-up will appear.
 
    ![Widget PowerPoint Export Request](/static/assets/working-with-dashboards/preview-dashboards/widget-settings/images/widgetPowerPointExportRequest.png)     
 
@@ -109,7 +109,7 @@ documentation: ug
 
    ![Widget PowerPoint Reset](/static/assets/working-with-dashboards/preview-dashboards/widget-settings/images/widgetPowerPointExportReset.png)     
 
-## Exporting widget to CSV
+## Exporting Widget to CSV
 
    You can obtain the aggregated data showcased in the widget by exporting it to CSV format. This can be achieved by clicking `Export to CSV` in the drop-down menu at the right corner of the title section.
     
@@ -119,7 +119,7 @@ documentation: ug
 
    ![CSV Export](/static/assets/working-with-dashboards/preview-dashboards/widget-settings/images/csvfilename.png)
 
-   By enabling `Disable Double Quotes`, a dropdown will appear displaying the column names that bound in the widget. Based on the selected columns, double quotes will be excluded from those fields in the exported file.
+   By enabling `Disable Double Quotes`, a dropdown will appear displaying the column names that are bound in the widget. Based on the selected columns, double quotes are excluded from those fields in the exported file.
 
    ![CSV Export](/static/assets/working-with-dashboards/preview-dashboards/widget-settings/images/csvdisabledoublequotes.png)
 
@@ -127,11 +127,11 @@ documentation: ug
    
    ![CSV Export](/static/assets/working-with-dashboards/preview-dashboards/widget-settings/images/csvexport.png)
 
-   After clicking `Export`, a request notification pop-up will be shown.
+   After clicking `Export`, a request notification pop-up is shown.
    
    ![Export-message](/static/assets/working-with-dashboards/preview-dashboards/widget-settings/images/export-msg1.PNG#max-width=95%)
    
-   After the dashboard or widgets have been exported, a success notification pop-up will be shown with an included link to manually download files.
+   After the dashboard or widgets have been exported, a success notification pop-up is shown with an included link to manually download files.
 
    ![Export-downloaded-csv-file-message](/static/assets/working-with-dashboards/preview-dashboards/widget-settings/images/export-csv-download.PNG#max-width=95%)
    
@@ -139,7 +139,7 @@ documentation: ug
    
    ![CSV reset](/static/assets/working-with-dashboards/preview-dashboards/widget-settings/images/csvreset.png)
    
-## Exporting widget to Excel
+## Exporting Widget to Excel
 
    You can export the widget in the form of Microsoft Excel by clicking on `Export to Excel` in the drop-down menu at the right corner of the title section.
    
@@ -157,19 +157,19 @@ documentation: ug
    
    Click `Export` to display the data from the widget in Excel format.
 
-   After clicking `Export`, a notification pop-up will be shown as follows.
+   After clicking `Export`, a notification pop-up is shown as follows.
    
    ![Export-message](/static/assets/working-with-dashboards/preview-dashboards/widget-settings/images/export-msg1.PNG#max-width=95%) 
  
-   Once the dashboard or widgets have been exported, a success notification pop-up will be displayed with a link included to manually download the files.
+   Once the dashboard or widgets have been exported, a success notification pop-up is displayed with a link included to manually download the files.
 
    ![Export-downloaded-excel-file-message](/static/assets/working-with-dashboards/preview-dashboards/widget-settings/images/export-xlsx-download.PNG#max-width=95%)
    
-   After clicking `Export`, a notification pop-up will be shown as follows.
+   After clicking `Export`, a notification pop-up is shown as follows.
    
    ![Export-message](/static/assets/working-with-dashboards/preview-dashboards/widget-settings/images/export-msg1.PNG#max-width=95%) 
  
-   After the dashboard or widgets have been exported, a success notification pop-up will be shown with an included link to manually download files.
+   After the dashboard or widgets have been exported, a success notification pop-up is shown with an included link to manually download files.
 
    ![Export-downloaded-excel-file-message](/static/assets/working-with-dashboards/preview-dashboards/widget-settings/images/export-xlsx-download.PNG#max-width=95%)
    
@@ -177,9 +177,9 @@ documentation: ug
    
    Click `Reset` to restore the default values in the pop-up.
 
-## Exporting restriction
+## Exporting Restriction
 
-   You can explore the exporting restriction in detail here,
+   You can explore the exporting restriction in detail here:
 
    [Exporting Restriction](/working-with-dashboards/preview-dashboard/dashboard-settings/#exporting-restriction)
       
