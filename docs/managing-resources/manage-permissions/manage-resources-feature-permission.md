@@ -113,7 +113,7 @@ For example, if actions such as **Export**, **View Underlying Data**, and **Get 
 ![Result of Applied Feature Permissions](/static/assets/images/resources-feature-permission-result.jpg)
 
 
-> **NOTE:** If a feature permission is already assigned, attempting to add the same permission again displays an error message, as shown below.
+> **NOTE:** If a feature permission is already assigned, attempting to add the same permission again displays an error message.
 ![Dashboards in Category](/static/assets/images/resources-feature-permission-error.png)
 
 ## Permission Precedence
