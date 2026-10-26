@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Understanding Bold BI Security – Cloud BI | Bold BI
-description: Learn about the security of Bold BI Cloud in terms of authentication, authorization, data security, disaster recovery, and more.
+description: "Learn how Bold BI Cloud protects your data with authentication, authorization, data encryption, network security, disaster recovery, and compliance controls."
 platform: bold-bi
 documentation: ug
 ---
