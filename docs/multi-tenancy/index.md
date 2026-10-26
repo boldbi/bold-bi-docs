@@ -70,7 +70,7 @@ To deploy a new tenant in the Bold BI Server application, click the `Create Site
 
 Users can only be added, edited, and deleted by users belonging to the System Administrator group. You can invite a user to your tenant from another tenant by adding the user with the same email address as an existing user. Additionally, an invitation email can be sent to that existing tenant user. The invited user can access resources in both tenants after the required permissions (Read/Write/Delete) for that resource are granted.
 
-Learn more about how to add a new user to a tenant in order to [Manage Users](/managing-resources/manage-users/).
+Learn more about how to add a new user to a tenant to [Manage Users](/managing-resources/manage-users/).
 
 > **NOTE:** You can invite a user to a tenant from another tenant.
 
