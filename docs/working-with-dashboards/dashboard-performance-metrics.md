@@ -22,7 +22,7 @@ By clicking `Metrics` option, Performance Metrics pop-up is displayed as follows
 
 ## Mobile View Mode
 
-For the mobile view mode, the option is included as shown below.
+For the mobile view mode, the option is included.
 
 ![Metrics Option in Mobile View](/static/assets/working-with-dashboards/images/mobile-view-mode-metrics.png)
 
