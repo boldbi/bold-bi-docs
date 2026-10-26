@@ -1,26 +1,26 @@
 ---
 layout: post
 title: Single Sign-On with Azure AD Users | Bold BI Embedded
-description: Learn how to setup Azure Active Directory for Single Sign-on authentication in Bold BI. This configuration must be done in Azure portal.
+description: Learn how to set up Azure Active Directory for Single Sign-On authentication in Bold BI. This configuration must be done in the Azure portal.
 platform: bold-bi
 documentation: ug
 
 ---
 
-# How to set up Azure Active Directory for SSO authentication in Bold BI
+# How to Set up Azure Active Directory for SSO Authentication in Bold BI
 
 This section explains how to perform Single Sign-On (SSO) for users in the Azure Active Directory with the Bold BI application.
 
-> **NOTE:**  This configuration has to be done in the [Azure Portal.](https://portal.azure.com/) This feature is available in Bold BI Embedded Analytics but not in Cloud Analytics Server. 
+> **NOTE:** This configuration has to be done in the [Azure Portal](https://portal.azure.com/). This feature is available in Bold BI Embedded Analytics but not in Cloud Analytics Server. 
 
 ## Prerequisites
 
 * An Azure account with Active Directory support is required.
 * Please install the Bold BI application and log in with an administrator account.
 
-### Steps to set up Bold BI to perform Single Sign-On 
+### Steps to Set up Bold BI to Perform Single Sign-On 
 
-1. Login to the URL `{Bold BI URL}/ums/administration/sso?view=azure-ad-settings` using the admin credentials.
+1. Log in to the URL `{Bold BI URL}/ums/administration/sso?view=azure-ad-settings` using the admin credentials.
 
 2. Click `Settings` in the left menu.
 
