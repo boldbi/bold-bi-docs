@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dashboard Performance Metrics – Embedded BI | Bold BI Docs
-description: Learn how to view detailed performance metrics for overall layout rendering and the processing times for individual widgets of a Dashboard.
+description: "Learn how to view dashboard performance metrics in Bold BI, including overall layout rendering time and the processing time of each widget, to find slow parts."
 platform: bold-bi
 documentation: ug
 ---
