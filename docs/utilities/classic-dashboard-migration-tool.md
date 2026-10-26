@@ -11,7 +11,7 @@ documentation: ug
 
 This section explains how to migrate Syncfusion **Dashboard Platform dashboards and data sources** to the `Bold BI` site using the Dashboard Migration Utility.
 
-> **NOTE:** The Dashboard Migration Utility can only be used to migrate dashboards from the Syncfusion Dashboard Server to the Bold BI server. This utility cannot be used to migrate dashboards from one Bold BI instance to another. Instead, you can utilize the **Publish** module for this purpose. Please refer to this [section](https://help.boldbi.com/working-with-dashboards/publish-dashboard/) for instructions on publishing a dashboard from one Bold BI instance to another. It is not suitable for migrating dashboards from the Syncfusion Dashboard Server to the Syncfusion Managed Cloud Server.
+> **NOTE:** The Dashboard Migration Utility can only be used to migrate dashboards from the Syncfusion Dashboard Server to the Bold BI server. This utility cannot be used to migrate dashboards from one Bold BI instance to another. Instead, you can use the **Publish** module for this purpose. Please refer to this [section](https://help.boldbi.com/working-with-dashboards/publish-dashboard/) for instructions on publishing a dashboard from one Bold BI instance to another. It is not suitable for migrating dashboards from the Syncfusion Dashboard Server to the Syncfusion Managed Cloud Server.
 
 ## Instruction to Use the Migration Utility
 
@@ -105,7 +105,7 @@ In this module, the exported dashboards and datasets are imported to the target 
 
 > **NOTE:** You can skip the entire Datasets or Dashboards option in the restore module by clicking the `Skip` button at the bottom.
 
-Currently, only live data source connections `(SQL, PostgreSQL)` can be imported to Bold BI, while Extract type connections or other connection types are considered `unsupported` as of now. If an unsupported data source connection type exists, an alert with the following message is displayed, and you won't be able to choose that unsupported item in the restoration process.
+, only live data source connections `(SQL, PostgreSQL)` can be imported to Bold BI, while Extract type connections or other connection types are considered `unsupported` as of now. If an unsupported data source connection type exists, an alert with the following message is displayed, and you won't be able to choose that unsupported item in the restoration process.
 
 ![Alert for unsupported connection](/static/assets/migration-utility/images/Migration_Utility_Alert-for-unsupported-connection.png)
 
@@ -127,7 +127,7 @@ If the dashboard is created from the `desktop designer`, some data sources, widg
 
 ![Alert for existing file](/static/assets/migration-utility/images/Migration_Utility_Alert-for-existing-file.png)
 
-* Once the restoration process is complete, a success message is displayed as shown below.
+* Once the restoration process is complete, a success message is displayed.
 
 ![Success message for restore completion](/static/assets/migration-utility/images/Migration_Utility_Success-message.png)
 
