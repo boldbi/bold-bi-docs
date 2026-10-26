@@ -10,7 +10,7 @@ documentation: ug
 
 This section explains how to configure the [SMTP](https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol) details in the User Management Server to send emails.
 
-**The User Management Server requires the following SMTP details in order to send emails.**
+**The User Management Server requires the following SMTP details to send emails.**
 
 <table>
 <tr>
