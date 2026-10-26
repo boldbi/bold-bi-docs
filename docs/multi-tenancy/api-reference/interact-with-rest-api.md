@@ -37,8 +37,8 @@ To obtain the `Client Token`, follow these steps:
 5. Now, you need to add the `access_token` for further API calls as an Authorization header.<br/>
 6. Click the `Authorize` button, located in the top-right corner of the page.
 ![Authorize button](/static/assets/rest-api-reference/images/site-administration/authorize-button.png)
-7. A dialog will open; enter the access token in the `Value` box with this format: **'Bearer' + access_token**, then click the `Authorize` button.
+7. A dialog opens; enter the access token in the `Value` box with this format: **'Bearer' + access_token**, then click the `Authorize` button.
 ![Authorize dialog](/static/assets/rest-api-reference/images/site-administration/authorization-dialog.png)
 8. You can now interact with the other REST APIs using the necessary parameters specified in each API.
 
-> **NOTE:**  API responses and their code descriptions are mentioned in this interactive document.
+> **NOTE:** API responses and their code descriptions are mentioned in this interactive document.
