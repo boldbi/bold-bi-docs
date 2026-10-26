@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Managing User Permissions in Embedded BI | Bold BI Docs
-description: Learn how to manage the permissions of the users and groups with the needed scope to the corresponding entities in Bold BI Embedded.
+description: "Learn how to assign resource permissions to users and groups in Bold BI with the right scope for dashboards, data sources, categories, schedules, and more."
 canonical: "/managing-resources/manage-permissions/manage-resources-permission"
 platform: bold-bi
 documentation: ug
