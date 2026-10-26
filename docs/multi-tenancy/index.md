@@ -13,13 +13,13 @@ Bold BI Server offers both single-site and multi-site support. The multi-site fe
 
 ## Architecture
 
-### Single-site
+### Single-Site
 
 The architecture of the Bold BI single-site solution is illustrated in the image provided. When using a single-site architecture, all the pre-configured dashboards and customer-created dashboards are saved in the single site.
 
 ![Single-site architecture](/static/assets/multi-tenancy/images/signle-site-architect.png)
 
-### Multi-site
+### Multi-Site
 
 When using a multi-site architecture, the pre-configured dashboards and customer-created dashboards are saved in a separate site dedicated to each tenant or organization.
 
@@ -33,7 +33,7 @@ The Identity Provider (IDP) application is a core component of the multi-site so
 
 > **NOTE:** The IDP application can share the same database as the first BI site. It cannot share a database with other BI site applications.
 
-### Which option should you choose?
+### Which Option Should You Choose?
 
 **Single-site**
 
@@ -50,23 +50,23 @@ The Identity Provider (IDP) application is a core component of the multi-site so
 
 Bold BI's multi-tenant product provides security for both the application and data.
 
-### Application security
+### Application Security
 
 Every Bold BI product installation generates unique private keys on the customer's machine. These private keys are used to encrypt and store sensitive data such as passwords and connection strings.
 
-### Data security
+### Data Security
 
 Each tenant user can only log in to their own tenant and access their resources. Each tenant has its own database and resources, ensuring that one tenant's data is not shared with another tenant.
 
 Users belonging to the same tenant can only see users from that tenant and share dashboards with those users. Users must have the proper permissions to view and access the dashboards and resources created by other users within the same tenant.
 
-## Add a new tenant
+## Add a New Tenant
 
 To deploy a new tenant in the Bold BI Server application, click the `Create Site` button on the site management page. The new tenant deployment uses its own database and resource storage that is completely separate from other tenants. Learn more about creating a [new tenant](/multi-tenancy/create-new-site/).
 
 ![Create Site](/static/assets/multi-tenancy/images/create-button.png)
 
-## Add or invite users
+## Add or Invite Users
 
 Users can only be added, edited, and deleted by users belonging to the System Administrator group. You can invite a user to your tenant from another tenant by adding the user with the same email address as an existing user. Additionally, an invitation email can be sent to that existing tenant user. The invited user can access resources in both tenants after the required permissions (Read/Write/Delete) for that resource are granted.
 
@@ -74,7 +74,7 @@ Learn more about how to add a new user to a tenant in order to [Manage Users](/m
 
 > **NOTE:** You can invite a user to a tenant from another tenant.
 
-## Share dashboards with tenant users
+## Share Dashboards with Tenant Users
 
 You can share a dashboard with users in the same tenant or in another tenant using the following options:
 
