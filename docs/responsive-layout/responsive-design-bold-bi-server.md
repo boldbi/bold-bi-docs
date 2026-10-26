@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Responsive Application – Embedded BI | Bold BI Documentation
-description: Know about the responsiveness of Bold BI Embedded server pages in desktop, mobile and tablet devices for different screen sizes and orientations.
+title: Responsive Application – Embedded BI | Bold BI Documentation
+description: Know about the responsiveness of Bold BI Embedded server pages in desktop, mobile, and tablet devices for different screen sizes and orientations.
 canonical: "/responsive-layout/responsive-design-bold-bi-server/"
 platform: bold-bi
 documentation: ug
@@ -26,10 +26,10 @@ The default screen size for the mobile layout is `360 * 640` pixels.
 
 Any overflowed content on mobile devices will be hidden and displayed with an `ellipsis (…)`.
 
-The Bold BI Server page is displayed in `Portrait` orientation for mobile layout as shown below.
+The Bold BI Server page is displayed in `Portrait` orientation for mobile layout.
 ![Server mobile view portrait](/static/assets/responsive-visualizations/images/server_mobile_view-portrait.png)
 
-The Bold BI Server page is displayed in Landscape orientation for mobile layout as shown below.
+The Bold BI Server page is displayed in Landscape orientation for mobile layout.
 ![Server mobile view landscape](/static/assets/responsive-visualizations/images/server-mobile-view-landscape.png)
 
 ## Tablet Layout in Bold BI Server
@@ -39,10 +39,10 @@ In tablet view, various operations such as Data sources, Pinboard, Slideshows, P
 
 The default screen size for the tablet layout is `768 * 1024` pixels.
 
-The Bold BI Server page is displayed in `Portrait` orientation for tablet layout as shown below.
+The Bold BI Server page is displayed in `Portrait` orientation for tablet layout.
 ![Server tablet view portrait](/static/assets/responsive-visualizations/images/server_tablet_view-portrait.png)
 
-The Bold BI Server page is displayed in `Landscape` orientation for tablet layout as shown below.
+The Bold BI Server page is displayed in `Landscape` orientation for tablet layout.
 ![Server tablet view landscape](/static/assets/responsive-visualizations/images/server_tablet_view-landscape.png)
 
 
