@@ -12,11 +12,11 @@ This section explains the [Azure Active Directory](https://azure.microsoft.com/e
 
 > **NOTE:** This feature is available in On-Premises Deployment but not in Syncfusion Managed Cloud Server.
 
-## Steps to register Bold BI application in Azure Active Directory to import users and groups
+## Steps to Register Bold BI Application in Azure Active Directory to Import Users and Groups
 
-1. Login to the [Azure Portal](https://portal.azure.com).
+1. Log in to the [Azure Portal](https://portal.azure.com).
 
-2. Go to the respective Azure Active Directory. Click on `App registrations` in the left side menu and then click on `New registration` to add a new application.
+2. Go to the respective Azure Active Directory. Click on `App registrations` in the left-side menu and then click on `New registration` to add a new application.
 
     ![Create new application](/static/assets/site-administration/images/add-application.png) 
 
@@ -27,9 +27,9 @@ This section explains the [Azure Active Directory](https://azure.microsoft.com/e
 
     ![Application type](/static/assets/site-administration/images/add-application-type.png)
 
-    The application will be added to the directory and you can view the details of the application in the `App registrations`.
+    The application is added to the directory and you can view the details of the application in the `App registrations`.
 
-4. Select `Branding` in the left side menu, enter the `Home page URL`, and click `Save`.
+4. Select `Branding` in the left-side menu, enter the `Home page URL`, and click `Save`.
 
     ![Save homepage](/static/assets/site-administration/images/azurehomepageurl.png)
 
@@ -37,7 +37,7 @@ This section explains the [Azure Active Directory](https://azure.microsoft.com/e
 
     ![Secret code](/static/assets/site-administration/images/certificates.png)
 
-    > **NOTE:**  Save the client secret value generated.
+    > **NOTE:** Save the client secret value generated.
 
 6. Go to `API permissions`,
 
@@ -55,7 +55,7 @@ This section explains the [Azure Active Directory](https://azure.microsoft.com/e
 
     ![Application Permissions](/static/assets/site-administration/images/application-permission.png)
 
-    In search option, find the `Directory`, expand the `Directory` option, and select `Read directory data`.
+    In the search option, find the `Directory`, expand the `Directory` option, and select `Read directory data`.
 
     ![Application Permissions - Directory](/static/assets/site-administration/images/directory-application-permission.png)
 
@@ -81,7 +81,7 @@ This section explains the [Azure Active Directory](https://azure.microsoft.com/e
  
     ![Grant admin consent](/static/assets/site-administration/images/grant-admin-consent.png)
 
-## Configure Azure Active Directory details in Bold BI to import users and groups
+## Configure Azure Active Directory Details in Bold BI to Import Users and Groups
 
 You will need the following Azure Active Directory details to configure Bold BI with your Azure Active Directory.
 
@@ -93,10 +93,10 @@ You will need the following Azure Active Directory details to configure Bold BI 
 
     ![Tenant name](/static/assets/site-administration/images/tenant-name.png)
  
-* **Client ID**: It is the Client Id of the Bold BI application in your Azure Active Directory. Go to the registered application and copy the `Application Id` in the `Overview` and paste it here.
+* **Client ID**: It is the Client ID of the Bold BI application in your Azure Active Directory. Go to the registered application and copy the `Application Id` in the `Overview` and paste it here.
 
     ![Client ID](/static/assets/site-administration/images/app-id.png)
  
-* **Client Secret Code**: It is the secure key of the Bold BI application you created in your Azure Active Directory. Go to `Certificates & secrets` and search for the Keys you saved for the application, then choose the `Value`.
+* **Client Secret Code**: It is the secure key of the Bold BI application you created in your Azure Active Directory. Go to `Certificates & secrets` and search for the keys you saved for the application, then choose the `Value`.
 
     ![Properties](/static/assets/site-administration/images/keys.png)
