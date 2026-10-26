@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Restrict Access to Tabs in Multi-Tab Dashboard | Bold BI Docs
-description: Learn how to grant a multi-tab dashboard's tabs restricted access with a specified permission and view those tabs in the Bold BI application.
+description: "Learn how to secure individual tabs of a multi-tab dashboard in Bold BI by assigning tab permissions, so users only see the tabs they are allowed to access."
 canonical: "/managing-resources/manage-dashboards/enable-tab-security/"
 platform: bold-bi
 documentation: ug
