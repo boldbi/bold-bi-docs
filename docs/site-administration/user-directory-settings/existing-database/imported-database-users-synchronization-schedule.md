@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Scheduling DB Synchronization - Embedded BI | Bold BI Docs
-description: Learn how to schedule the synchronization of users from the existing database with the users in Bold BI Embedded.
+description: "Learn how to schedule synchronization of users imported from an existing database in Bold BI, so their user details stay updated automatically over time."
 canonical: "/site-administration/existing-database/imported-database-users-synchronization-schedule/"
 platform: bold-bi
 documentation: ug
