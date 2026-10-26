@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Look and Feel Settings for Apps & Dashboards | Bold BI Docs
-description: Learn how to customize font and theme preferences for your site by choosing preferred options on look and feel settings in Bold BI.
+description: "Learn how to customize the font and theme of your Bold BI site in look and feel settings, so the application and its dashboards match your company branding."
 platform: bold-bi
 documentation: ug
 ---
@@ -12,13 +12,13 @@ This page explains how to customize font and theme preferences for your site in 
 
 ## Inherit from Global Settings
 
-By default, the `Inherit from Global Settings` option is enabled, and the `Look and Feel` settings will be inherited from the **UMS site settings**.
+By default, the `Inherit from Global Settings` option is enabled, and the `Look and Feel` settings are inherited from the **UMS site settings**.
 
-The font and theme preferences will be applied the same as in the **UMS site settings**.
+The font and theme preferences are applied the same as in the **UMS site settings**.
 
 ![Inherit look and feel settings](/static/assets/site-administration/images/look-and-feel-inherit.png#width=45%)
 
-## Customize look and feel settings
+## Customize Look and Feel Settings
 
 To customize font and theme preferences on your site, uncheck the `Inherit from Global Settings` option and select the preferred font and theme options in the "Look and Feel" settings page.
 
@@ -29,7 +29,7 @@ Here is a sample image after applying the dark default custom theme.
 ## Font
 You can choose your preferred font style for your site by following these steps.
 
-The font styles that have been uploaded in the **UMS site settings** will be listed in the `Fonts` drop-down list. Simply select your preferred font style option and click `Save`. The selected font style will then be applied throughout your site, and a preview will be shown for the selected font style.
+The font styles that have been uploaded in the **UMS site settings** are listed in the `Fonts` drop-down list. Simply select your preferred font style option and click `Save`. The selected font style is then applied throughout your site, and a preview is shown for the selected font style.
 
 ![Custom Font Settings](/static/assets/site-administration/images/custom-font.png#width=45%)
 
@@ -47,7 +47,7 @@ The application theme mode can be switched to either **light** or **dark mode**.
 
 You can change the **branding color**, **text color**, **active state**, and **hover state background colors**, as well as switch between light and dark modes. The background and surface areas are not customized and will always follow the selected mode.
 
-The custom theme files uploaded in **UMS site settings** will be listed in the `Custom Theme` drop-down list. Select the uploaded theme in the `Custom Theme` drop-down, then `save` the settings.
+The custom theme files uploaded in **UMS site settings** are listed in the `Custom Theme` drop-down list. Select the uploaded theme in the `Custom Theme` drop-down, then `save` the settings.
  ![Select app theme](/static/assets/site-administration/images/select-app-theme.png#width=45%)
 
 Here is a sample image after applying the custom theme on your site.
@@ -60,9 +60,9 @@ Please click on the [Create application custom theme](/multi-tenancy/site-admini
 
 ## Dashboard Theme
 
-You can customize the dashboard theme, which will be applied to dashboards in the dashboard view mode.
+You can customize the dashboard theme, which is applied to dashboards in the dashboard view mode.
 
-The custom theme files uploaded in **UMS site settings** will be listed in the `Dashboard Theme` drop-down list. Select the uploaded theme in the `Dashboard Theme`, then `save` the settings.
+The custom theme files uploaded in **UMS site settings** are listed in the `Dashboard Theme` drop-down list. Select the uploaded theme in the `Dashboard Theme`, then `save` the settings.
 ![dashboardthemedarkviolet](/static/assets/site-administration/images/dashboardthemeselect.png#width=45%)
 
 Here is a sample image after applying the custom theme for dashboards on your site.
