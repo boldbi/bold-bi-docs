@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Manage Font Style in Site Administration | Bold BI Docs
-description: Learn how to upload and change the font style(s) of the Bold BI application in site administration settings.
+description: "Learn how to upload custom fonts and change the font style of the Bold BI application in site administration, so the interface matches your company branding."
 platform: bold-bi
 documentation: ug
 ---
