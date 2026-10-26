@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Renaming a Pinboard – Embedded BI | Bold BI Documentation
-description: Learn how to rename a pinboard in Bold BI Embedded. Pinboard is a collection of widgets from various dashboards pinned to it.
+description: "Learn how to rename a pinboard in Bold BI so it is easy to find. A pinboard is a collection of widgets pinned from different dashboards in a single view."
 canonical: "/managing-resources/manage-pinboards/rename-pinboards/"
 platform: bold-bi
 documentation: ug
