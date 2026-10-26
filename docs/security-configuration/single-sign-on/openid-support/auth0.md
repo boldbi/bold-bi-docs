@@ -1,7 +1,7 @@
 ---
 layout: post
 title: SSO with Auth0 Provider of OpenID Connect | Bold BI Embedded
-description: Learn how to configure Bold BI Embedded with Auth0 identity provider for Single Sign-On authentication using OpenID Connect.
+description: "Learn how to configure Auth0 as an OpenID Connect identity provider for single sign-on in Bold BI, so users can sign in with their Auth0 accounts easily."
 platform: bold-bi
 documentation: ug
 ---
