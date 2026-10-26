@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview - Admin Utility | Bold BI Embedded Learning
-description: This section explains an overview of the admin utility, list of available commands, and how to use those commands in the admin utility. 
+description: This section provides an overview of the admin utility, the list of available commands, and how to use those commands in the admin utility. 
 platform: bold-bi
 documentation: ug
 
@@ -17,13 +17,13 @@ Please refer to the appropriate operating system documentation to learn how to u
 
 * [Linux](/utilities/bold-bi-command-line-tools/#linux)
 
- >**NOTE:** If you have installed Bold BI version 3.3 or older, please refer to [this section](/utilities/bold-bi-command-line-tools/v3.3-or-older/). The admin utility is not applicable for use in Syncfusion Managed Cloud Server.
+ > **NOTE:** If you have installed Bold BI version 3.3 or older, please refer to [this section](/utilities/bold-bi-command-line-tools/v3.3-or-older/). The admin utility is not applicable for use in Syncfusion Managed Cloud Server.
  
 ## Windows
 
-1. Please switch the admin utility location to `{Deployed Location}`\utilities\adminutils. 
+1. Please switch to the admin utility location `{Deployed Location}`\utilities\adminutils. 
 ![folder](/static/assets/admin-utility/images/folderpath.png)  
-> **NOTE:** By default, Bold BI will be deployed on `C:\BoldServices`.
+> **NOTE:** By default, Bold BI is deployed in `C:\BoldServices`.
 
 2. Please open the command prompt.
 ![cmd-window](/static/assets/admin-utility/images/cmdpmpt1.png) 
@@ -44,6 +44,6 @@ cd /var/www/bold-services/application/utilities/adminutils/
 
 ## Available Commands
 
-Please find below the list of commands available in the admin utility currently: 
+Please find the following list of commands currently available in the admin utility: 
 * [**Reset Password**](/utilities/bold-bi-command-line-tools/reset-password/)
 * [**Update Application Database**](/utilities/bold-bi-command-line-tools/reset-application-database/)
