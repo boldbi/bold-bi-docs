@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Reset a User Password – Admin Utility | Bold BI Embedded
-description: Learn how to use the command line interface to reset the current password of any user in Bold BI Embedded using their email address or user name.
+title: Reset a User Password – Admin Utility | Bold BI Embedded
+description: Learn how to use the command line interface to reset the current password of any user in Bold BI Embedded using their email address or username.
 platform: bold-bi
 documentation: ug
 ---
@@ -48,7 +48,7 @@ cd /var/www/bold-services/application/utilities/adminutils/
 
 ## Docker
 
-### Single image
+### Single Image
 
 1. Open the command prompt and Bash the container, then change the directory to the admin utility location.
 ~~~
@@ -65,14 +65,14 @@ dotnet Syncfusion.Server.Commands.Utility.dll reset -u 'user email or username h
 ~~~  
 ![Database-reset](/static/assets/admin-utility/images/reset-password-docker.png)
 
-3. Once the password has been updated successfully, then restart the application by using the below command:
+3. Once the password has been updated successfully, restart the application by using the following command:
 
 ~~~
 docker restart <container ID or container name>
 ~~~
-### Multi container Image
+### Multi-Container Image
 
-1. Open the command prompt and Bash the <b>id_web_container</b> container then change the directory to the admin utility location.
+1. Open the command prompt and Bash the <b>id_web_container</b> container, then change the directory to the admin utility location.
 ~~~
 docker exec -it <Container ID or Container name>
 ~~~
@@ -88,7 +88,7 @@ dotnet Syncfusion.Server.Commands.Utility.dll reset -u 'user email or username h
 
 ![Database-reset](/static/assets/admin-utility/images/reset-password-docker.png)
 
-3. Once the password has been updated successfully, then restart all containers by using the below command:
+3. Once the password has been updated successfully, restart all containers by using the following commands:
 
 ~~~
 docker ps 
@@ -98,4 +98,4 @@ docker ps
 docker restart <container ID or container name>
 ~~~
 
->**Note**: Restart all seven containers using the above command one by one from the container name or ID.
+> **NOTE:** Restart all seven containers one by one using the above command with the container name or ID.
