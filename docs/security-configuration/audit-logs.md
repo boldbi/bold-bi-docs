@@ -10,11 +10,11 @@ documentation: ug
 
 The Audit Logs page allows administrators to track and review various user actions and changes within the system for a particular tenant. These logs help maintain accountability and transparency by providing a record of who performed what actions and when. The logs contain details about each activity, including the **User, Date and Time, Event Category, Event Type, Summary** and any associated Details.
 
-> **NOTE:** This activity logs is applicable only for On-Premises Deployment.
+> **NOTE:** This activity log is applicable only for On-Premises Deployment.
 
    ![Activity Logs](/static/assets/security-configuration/images/activity-logs.png#width=40%)
 
-> **Note:** The Audit Logs are only visible to admin users. The settings and actions displayed in the logs are tenant-specific, meaning each tenant will only see activities relevant to their environment.
+> **NOTE:** The Audit Logs are only visible to admin users. The settings and actions displayed in the logs are tenant-specific, meaning each tenant will only see activities relevant to their environment.
 
 ### How to Filter and View Activity Logs
 
