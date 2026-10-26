@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Email Template Guide– UMS - Create, Use & Manage | Bold BI Doc
+title: Email Template Guide – UMS - Create, Use & Manage | Bold BI Doc
 description: Learn to create, edit, and manage custom email templates on the User Management Server, using secure default templates for tailored on-premises notifications.
 platform: bold-bi
 documentation: ug
@@ -46,7 +46,7 @@ Bold BI provides default templates for each module. These templates can be custo
 
    ![Copy template](/static/assets/multi-tenancy/images/copy-template.png)
 
-2. A dialog will appear to confirm and proceed with copying the template.
+2. A dialog appears to confirm and proceed with copying the template.
 
    ![Copy templates Dialog](/static/assets/multi-tenancy/images/copy-template-dialog.png)
 
