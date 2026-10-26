@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Look and Feel Settings for Apps & Dashboards | Bold BI Docs
-description: Learn how to customize font and theme preferences for your site by choosing preferred options on look and feel settings in Bold BI.
+description: "Learn how to customize the font and theme of your Bold BI site in look and feel settings, so the application and its dashboards match your company branding."
 platform: bold-bi
 documentation: ug
 ---
