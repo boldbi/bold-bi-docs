@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Managing User Directory DB – Embedded BI | Bold BI Docs
-description: Learn how to manage user directory mapping and synchronization with existing database in Bold BI Embedded.
+description: "Learn how to manage user directory mapping and synchronization with an existing database in Bold BI, so users from your own database can sign in to the site."
 platform: bold-bi
 documentation: ug
 ---
