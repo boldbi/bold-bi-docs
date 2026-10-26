@@ -1,12 +1,12 @@
 ---
 layout: post
-title: White label User Management Server Interface | Bold BI Docs
-description: Learn how to white label / rebrand user management server interface by changing organization name, logo, fav icon, email logo, and date time display formats.
+title: White Label User Management Server Interface | Bold BI Docs
+description: Learn how to white label / rebrand User Management Server interface by changing organization name, logo, favicon, email logo, and date time display formats.
 platform: bold-bi
 documentation: ug
 ---
 
-# Custom Rebranding / White labeling User Management Server
+# Custom Rebranding / White Labeling User Management Server
 
 This section explains how to customize the Bold ID by changing the organization name, header logo, favorite icon, email logo, time zone, and date/time display formats.
 
@@ -22,13 +22,13 @@ The email logo image can be changed, with the preferred image size being `200 x 
 		
 ## Display
 
-### Time zone
+### Time Zone
 The time zone for the User Management Server can be changed. The User Management Server sets the Coordinated Universal Time (UTC) as the default time zone.
 
-### Date format
+### Date Format
 The date format of the User Management Server can be changed, with the default date format being `MM/dd/yyyy`.
 
-### Time format
+### Time Format
 The time format of the Bold BI site can be changed, with the default time format being `12 hour`.
 
 ## Language
@@ -51,7 +51,7 @@ The favicon for the User Management Server can be changed, with the preferred im
 The email logo image can be changed, with the preferred image size being `200 x 40` pixels. The User Management Server will have the Bold ID email logo as the default email logo.
 
 ### AI Logo
-The AI logo can be changed, with the preferred image size being `40 x 40` pixels. The User Management Server will have the Bold ID  AI logo as the default AI logo.
+The AI logo can be changed, with the preferred image size being `40 x 40` pixels. The User Management Server will have the Bold ID AI logo as the default AI logo.
 
 ### Powered by Syncfusion
 There is an option to show or hide `Powered by Syncfusion` in the footer of the User Management Server, with it being shown by default.
