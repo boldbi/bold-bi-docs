@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Removing Widget from Pinboard – Embedded BI | Bold BI Docs
-description: Learn how to remove a visual from a pinboard in Bold BI Embedded. Pinboard is a collection of widgets from various dashboards pinned to it.
+description: "Learn how to unpin a widget and remove it from a pinboard in Bold BI. A pinboard is a collection of widgets pinned from different dashboards in one view."
 canonical: "/managing-resources/manage-pinboards/unpin-widgets/"
 platform: bold-bi
 documentation: ug
