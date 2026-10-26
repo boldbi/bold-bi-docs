@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Webhook Failure Handling and Logs – Embedded BI | Bold BI Docs
-description: Learn how to handle webhook failures and how to read failure logs, which can be used to determine the cause of a webhook failure in Bold BI application.
+description: Learn how to handle webhook failures and how to read failure logs, which can be used to determine the cause of a webhook failure in the Bold BI application.
 platform: bold-bi
 documentation: ug
 ---
 # Webhook Failure Handling
 
-## Webhook retry
+## Webhook Retry
 
 The webhook is sent up to five times by the retry mechanism before failing with exponential backoff.
 
@@ -24,11 +24,11 @@ Webhook failure logs contain details about failed webhook attempts. If a webhook
 
 To view webhook failure logs for a specific event and date, follow these steps:
 
-1. Open the dropdown highlighted below and select any of the events you want. By default, all webhook event failure logs will be shown.
+1. Open the dropdown highlighted below and select any of the events you want. By default, all webhook event failure logs are shown.
 
     ![Webhook Event Dropdown](/static/assets/site-administration/images/webhook-event-dropdown.png#width=50%)
 
-2. Open the **Date Picker** Calendar to select a specific date range. Select the certain date range you want to filter. Click the `Apply` option to apply that date range.
+2. Open the **Date Picker** calendar to select a specific date range. Select the certain date range you want to filter. Click the `Apply` option to apply that date range.
 
     ![Webhook Failur Logs Date Range](/static/assets/site-administration/images/webhook-failure-log-date-range-dialog.png#width=50%)
 
@@ -44,7 +44,7 @@ To view webhook failure logs for a specific event and date, follow these steps:
 
     ![Webhook Failure Logs Reset](/static/assets/site-administration/images/webhook-failure-logs-reset.png#width=50%)
 	
-6. You can see detailed failure log details by clicking the `View` link option in the grid. It will display the Request Details of the webhook call as well as the Response Details received.
+6. You can see detailed failure log details by clicking the `View` link option in the grid. It displays the Request Details of the webhook call as well as the Response Details received.
 
     ![Webhook Failure Logs View](/static/assets/site-administration/images/webhook-failure-logs-view.png#width=50%)
 
