@@ -43,5 +43,5 @@ After successfully publishing a dashboard, you will be prompted to view the publ
 
 [Learn how to edit an existing dashboard](/working-with-dashboards/edit-existing-dashboard/)
 
-## Post your message
+## Post Your Message
 If you are still unable to find the information you are looking for in the self-help resources mentioned above, please [contact us](https://www.boldbi.com/support) with your requirements.
