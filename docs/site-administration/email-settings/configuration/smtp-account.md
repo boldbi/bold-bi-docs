@@ -12,7 +12,7 @@ This section explains how to configure the [SMTP](https://en.wikipedia.org/wiki/
 
 > **NOTE:** This email service configuration is only applicable for On-Premises Deployment.
 
-**The Bold BI Server requires the following SMTP details in order to send emails.**
+**The Bold BI Server requires the following SMTP details to send emails.**
 
 <table>
 <tr>
