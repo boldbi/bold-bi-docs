@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Email Template Guide - Generate, use & Manage | Bold BI Docs
+title: Email Template Guide - Generate, Use & Manage | Bold BI Docs
 description: Learn to create, edit, and manage custom email templates on Bold BI, perfect for on-premises. Secure default templates for tailored notifications.
 platform: bold-bi
 documentation: ug
@@ -44,7 +44,7 @@ Bold BI provides default templates for each module. These templates can be custo
 <td>My Dashboard Comment Deleted</td>
 <td>Notify when someone else deletes a comment that you wrote on a dashboard.<br>
 
-**For Example:** If you wrote a comment and an admin deletes it, you will receives an email notification using this template saying your comment was removed.
+**For Example:** If you wrote a comment and an admin deletes it, you will receive an email notification using this template saying your comment was removed.
 </td>
 </tr>
 
@@ -132,7 +132,7 @@ Bold BI provides default templates for each module. These templates can be custo
 <td>Failed Timed Dashboard Export</td>
 <td>Notify when a dashboard export fails at a scheduled time.<br>
 
-**For Example:** If a dashboard is set to export every Monday ,but dashboard export is failed then users added in dashboard schedule will be notified using this template.
+**For Example:** If a dashboard is set to export every Monday, but dashboard export fails, then users added in dashboard schedule will be notified using this template.
 </td>
 </tr>
 
@@ -148,7 +148,7 @@ Bold BI provides default templates for each module. These templates can be custo
 <td>Failed Data Refresh</td>
 <td>Notify when data refresh fails for a data source.<br>
 
-**For Example:** If user enables automatic data source refresh, but if it fails then you will be notified using this template.
+**For Example:** If a user enables automatic data source refresh, but if it fails then you will be notified using this template.
 </td>
 </tr>
 
