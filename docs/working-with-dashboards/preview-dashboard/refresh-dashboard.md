@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Automatic Refresh on Dashboards – Embedded BI | Bold BI
-description: Learn how to enable automatic refresh of dashboard at scheduled intervals to get latest data in Bold BI Embedded.
+description: Learn how to enable automatic refresh of a dashboard at scheduled intervals to get the latest data in Bold BI Embedded.
 canonical: "/working-with-dashboards/preview-dashboard/refresh-dashboard/"
 platform: bold-bi
 documentation: ug
@@ -12,7 +12,7 @@ documentation: ug
 
 Bold BI allows you to configure the scheduled refresh of a dashboard. Either the entire dashboard or specific widgets within a dashboard can be automatically refreshed based on a timer.
 
-## How to enable automatic refresh for a dashboard?
+## How to Enable Automatic Refresh for a Dashboard?
 
 To enable automatic refresh for a dashboard:
 
@@ -24,9 +24,9 @@ Select `Enable Autorefresh` and click `OK`.
 
 ![Refresh setting](/static/assets/working-with-dashboards/preview-dashboards/images/refreshsetting.png)
 
-## How to set the timer for automatic refresh at common time interval?
+## How to Set the Timer for Automatic Refresh at Common Time Interval?
 
-Automatic refresh at a common time interval will be set to 30 seconds by default. To set a different time interval,
+Automatic refresh at a common time interval will be set to 30 seconds by default. To set a different time interval:
 
 Please select `Enable Autorefresh` in the `Refresh Settings` dialog.
 
@@ -36,7 +36,7 @@ Set the time interval to a minimum of `30 seconds`. Then, click `OK`.
 
 ![Common time interval](/static/assets/working-with-dashboards/preview-dashboards/images/refreshsetting_timeinterval.png)
 
-## How to enable automatic refresh at common time interval for particular widgets in a dashboard?
+## How to Enable Automatic Refresh at Common Time Interval for Particular Widgets in a Dashboard?
 
 Automatic refresh at a `Common Time Interval` for specific widgets can be configured through the `Refresh Settings` dialog.
 
@@ -50,7 +50,7 @@ Select the widgets that you want to be automatically refreshed. Click `OK`.
 
 ![Selected widget](/static/assets/working-with-dashboards/preview-dashboards/images/refreshsetting_selectedwidget.png)
 
-## How to enable automatic refresh at differed time interval for particular widgets in a dashboard?
+## How to Enable Automatic Refresh at Differed Time Interval for Particular Widgets in a Dashboard?
 
 Automatic refresh at `Differed Time Interval` for specific widgets can be configured through the `Refresh Settings` dialog.
 
@@ -64,11 +64,11 @@ The default interval is set to `30 seconds`. You can adjust the time interval, w
 
 ![Differed time interval](/static/assets/working-with-dashboards/preview-dashboards/images/refreshsetting_differedtimeinterval.png)
 
-## How to enable automatic refresh only for any record insertion or deletion in the associated database?
+## How to Enable Automatic Refresh Only for Any Record Insertion or Deletion in the Associated Database?
 
-Automatic refresh will keep track of changes in data, even if it is an update to an existing record. To refresh only on new insertions or deletions of records, 
+Automatic refresh will keep track of changes in data, even if it is an update to an existing record. To refresh only on new insertions or deletions of records: 
 
-select `Enable Autorefresh` in the dialog.
+Select `Enable Autorefresh` in the dialog.
 
 Select `Refresh Selected Widgets Only` at `Common Time Interval` if required. This will enable the widgets listed below to automatically refresh at a common time. Select the widgets that you need to be refreshed automatically.
 
@@ -78,7 +78,7 @@ Select `Refresh Only for Insertion or Deletion of Rows` and click `OK`.
 
 ![Insert or delete rows](/static/assets/working-with-dashboards/preview-dashboards/images/refreshsetting_insertionordeletingofrows.png)
 
-## How to hide loading indicator for automatic refresh?
+## How to Hide Loading Indicator for Automatic Refresh?
 
 Select `Enable Autorefresh` in the dialog.
 
@@ -86,7 +86,7 @@ Select `Hide Loading Indicator` to hide the loading indicator while refreshing w
 
 ![Hide loading indicator](/static/assets/working-with-dashboards/preview-dashboards/images/refreshsettingloadingindicator.png)
 
-## Refresh time updation in UI.
+## Refresh Time Updation in UI
 
 1. In dashboard banner:
 
@@ -120,4 +120,4 @@ Select `Hide Loading Indicator` to hide the loading indicator while refreshing w
 
       ![Select particular widgets](/static/assets/working-with-dashboards/preview-dashboards/images/select_particularwidgets.png)
 
- > **NOTE:** This functionality will only work on BoldBI version 6.19 or higher.
+ > **NOTE:** This functionality will only work on Bold BI version 6.19 or higher.
