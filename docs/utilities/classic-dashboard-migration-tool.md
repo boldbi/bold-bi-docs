@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dashboard Migration Utility - Embedded | Bold BI Learning
-description: Learn how to migrate the classic platform dashboards and data sources into Bold BI Embedded supported formats using the migration utility.
+description: "Learn how to use the migration utility to move classic platform dashboards and data sources into formats that Bold BI supports, with the steps to run it."
 canonical: "/migration-utility/"
 platform: bold-bi
 documentation: ug
