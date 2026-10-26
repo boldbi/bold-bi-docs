@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Alerts & Notifications | Bold BI Documentation
-description: Learn how to configure data alerts that help track threshold limits and notify certain recipients when it is reached.
+description: "Learn how to configure data alerts in Bold BI that track threshold limits in your dashboard data and notify the chosen recipients when a threshold is reached."
 platform: bold-bi
 documentation: ug
 ---
