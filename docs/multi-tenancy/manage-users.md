@@ -1,5 +1,5 @@
 ---
-title: Manage users in Multi-tenancy of Embedded BI | Bold BI Docs
+title: Manage Users in Multi-Tenancy of Embedded BI | Bold BI Docs
 description: Learn here how to add, update, activate, delete users, grant access to the site and more in User Management Server of Embedded Bold BI.
 canonical: "/multi-tenancy/manage-users/"
 platform: bold-bi
@@ -12,15 +12,15 @@ This section explains how to add, update, activate, and delete users.
 
 Users can only be added, edited, or deleted by those who have UMS admin access.
 
-## Add new users
+## Add New Users
 
 To add new users, they can be added individually or in bulk using CSV import.
 
-### Add individual users
+### Add Individual Users
  
 To add an individual user in UMS, click on `New User` and then `Add User` from the User Management page. 
 
-The `Add User` dialog will be displayed as shown in the image below.
+The `Add User` dialog is displayed as shown in the image below.
 
 ![Add User Dialog Proceed](/static/assets/multi-tenancy/images/add-user-dialog-proceed.png#max-width=95%)
 
@@ -30,27 +30,27 @@ The `Add User` dialog will be displayed as shown in the image below.
 
 > **NOTE:**  
 > * If the account activation mode is Automatic, the new user will be automatically activated. 
-> * If the activation type is Email, the user will receive an email to activate their account. The user account will be activated after verifying the email. By default, the Account Activation Mode is Automatic.
+> * If the activation type is Email, the user will receive an email to activate their account. The user account will be activated after verifying the email. By default, the account activation mode is Automatic.
 > * Please refer to the [Account settings](/site-administration/account-settings/) page for more details.
 
 **Automatic activation**|**Email activation**
 -----|-----
-1. Fill the form with a Username, Email address, First name, Last name and password and then click on `Add`.|1. Fill the form with a Username, Email address, First name and Last name and then click on `Add`.
+1. Fill the form with a Username, Email address, First name, Last name, and password and then click on `Add`.|1. Fill the form with a Username, Email address, First name, and Last name and then click on `Add`.
 2. Please refer to [this](#password-requirement) section for password requirement.|2. To activate the user, please check [Activate Users](#activate-users) section for more details.
 
-### Import users from CSV
+### Import Users from CSV
 
 To automate the process of adding a large number of users to UMS, you can download the CSV template file, add the users to it, and then import the file.
 
-> **NOTE:**  This section will explain how to import users from a CSV file, which can be downloaded from the location below in UMS.
+> **NOTE:** This section explains how to import users from a CSV file, which can be downloaded from the location below in UMS.
 
-#### Add users from CSV file
+#### Add Users from CSV File
 
 In UMS, click `Import from csv`.
 
 ![Import from CSV - Goto Import CSV users page](/static/assets/multi-tenancy/images/goto-import-csv-users.png#max-width=95%)
 
-### CSV file Requirements
+### CSV File Requirements
 
 The first row in the CSV template should contain the column headings. UMS will assume that the data starting from the second line in the file represents the user information.
 
@@ -81,11 +81,11 @@ testuser,testuser@gmail.com,TestUser,Admin@123
 
 ```
 
-3. Once the file is uploaded, the user details will be displayed in the grid, as shown in the image below. Click `Import Users` to add the users.
+3. Once the file is uploaded, the user details are displayed in the grid, as shown in the image below. Click `Import Users` to add the users.
 
 	![Import from CSV - User detail in grid](/static/assets/multi-tenancy/images/csv-import-proceed.png#max-width=95%)
 
-4. After uploading the users in UMS, the results will be displayed as shown below.
+4. After uploading the users in UMS, the results are displayed as shown below.
 
     ![Import from CSV - Success Message](/static/assets/multi-tenancy/images/csv-import-success-prompt.png#max-width=95%)
 	
@@ -102,14 +102,14 @@ It must contain:
 
 ![Password Requirement](/static/assets/multi-tenancy/images/user-add-dialog-password-validation.png#max-width=40%)
 
-## Activate users
-Once the user is added, a new account will be created for the user and an account activation email will be sent to the email address with an activation link to activate the Bold BI account.
+## Activate Users
+Once the user is added, a new account is created for the user and an account activation email is sent to the email address with an activation link to activate the Bold BI account.
 
 The activation link sent to the user will be valid for only 2 days. If the user does not activate within the 2 days, a new activation link can be sent to the user from the user edit page.
 
 The account will remain inactive until the user activates the account from the activation email.
 
-## Edit users
+## Edit Users
 User profile details can be edited on the user edit page, as shown in the image below.
 
 ![Edit User](/static/assets/multi-tenancy/images/edit-user-proceed.png#max-width=95%)
@@ -139,15 +139,15 @@ Starting from **version 12.1.5**, **Bold BI** also supports changing the passwor
 - AD users can now **set or update their password** using the same interface used by local users.
 - Once a new password is created or updated, it can be used to log in to the Bold BI application directly.
 
-> **Note:** The newly created password for a Windows AD user is used **only within the Bold BI application** and does **not update the password in the actual Active Directory domain**.
+> **NOTE:** The newly created password for a Windows AD user is used **only within the Bold BI application** and does **not update the password in the actual Active Directory domain**.
 
 ![Change Password](/static/assets/multi-tenancy/images/change-password.png#max-width=95%)
 
-## Two Factor Authentication
+## Two-Factor Authentication
 Users can enable [2FA](/managing-resources/manage-users/profile/#two-factor-authentication) for their account. If the user loses the recovery code or authenticator application, the admin can disable the 2FA or regenerate a new set of codes for the user. This can be done using the Two-Factor Authentication tab in the `security` section.
 
-### Regenerate Recovery code for user
-To regenerate the recovery code for the user, view the user details and click on `Regenerate Recovery Code` in the Two Factor Authentication tab. 
+### Regenerate Recovery Code for User
+To regenerate the recovery code for the user, view the user details and click on `Regenerate Recovery Code` in the Two-Factor Authentication tab. 
 
 ![2FA admin regenerate recovery code](/static/assets/multi-tenancy/images/regenerate-recovery-code-admin.png#max-width=95%)
 
@@ -155,20 +155,20 @@ Then, click `yes` to generate a recovery code. `Copy` the newly generated code a
 
 ![2FA admin recovery code regenerated](/static/assets/multi-tenancy/images/recovery-code-regenerated-admin.png#max-width=95%)
 
-### Disable Two Factor Authentication for user
+### Disable Two-Factor Authentication for User
 
 To disable the Two-Factor Authentication for the user, click on the `Remove Two-Factor Authentication` option and proceed with `yes`.
 
-## Delete users
-Users can be deleted from the UMS when they no longer require access. Users can be deleted from the user management page by the `System Administrator`.
+## Delete Users
+Users can be deleted from the UMS when they no longer require access. Users can be deleted from the User Management page by the `System Administrator`.
 
 ![Delete user by Admin](/static/assets/multi-tenancy/images/delete-user.png#max-width=95%)
 
-> **Note:**  Once a user is deleted by the `System Administrator`, their access will be revoked from the sites they belong to.
+> **NOTE:** Once a user is deleted by the `System Administrator`, their access will be revoked from the sites they belong to.
 
-## Grant user access to multiple sites
+## Grant User Access to Multiple Sites
 
-You can select single or multiple users in user management and provide access to multiple sites.
+You can select single or multiple users in User Management and provide access to multiple sites.
 
 ![Grant User Access](/static/assets/multi-tenancy/images/grant-user-access-proceed.png#max-width=95%)
 
@@ -176,7 +176,7 @@ Select the sites you need to provide access to the selected users and then click
 
 ![Grant Access Select Sites](/static/assets/multi-tenancy/images/grant-access-select-site.png#max-width=95%)
 
-> **NOTE:**  If the selected user already has access to that site, the process will be skipped.
+> **NOTE:** If the selected user already has access to that site, the process will be skipped.
 
 After the process is completed, a detailed report will be available. You can also download the report in CSV format.
 
