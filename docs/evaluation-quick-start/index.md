@@ -11,7 +11,7 @@ documentation: ug
 
 Welcome to the **Evaluation Quick Start guide**, your first step in exploring the platform’s core capabilities.
 
-This guide is designed specifically for new users, decision-makers, and developers who are evaluating the platform during the free trial period. Whether you're assessing our [**self-service**](/overview/self-service-analytics/) capabilities or testing [**embedded analytics**](/overview/embedded-analytics/) scenarios, this quick start guide will help you make the most of your time. These resources help you review real-world scenarios. They also help you assess whether the platform aligns with your organizational needs.
+This guide is designed specifically for new users, decision-makers, and developers who are evaluating the platform during the free trial period. Whether you're assessing our [**self-service**](/overview/self-service-analytics/) capabilities or testing [**embedded analytics**](/overview/embedded-analytics/) scenarios, this quick-start guide will help you make the most of your time. These resources help you review real-world scenarios. They also help you assess whether the platform aligns with your organizational needs.
 
 The purpose of this guide is to:
 
