@@ -6,7 +6,7 @@ platform: bold-bi
 documentation: ug
 ---
 
-# Publish Dashboards Online in the Bold BI application
+# Publish Dashboards Online in the Bold BI Application
 
 Migrating a dashboard online involves the process of publishing a dashboard in the Bold BI application to multiple tenants, whether on the same server or different instances. This allows for easy sharing of dashboards across various sites.
 
@@ -16,15 +16,15 @@ To publish a dashboard to other site(s), follow these steps:
 
    ![Publish Menu](/static/assets/resource-migration/migrate-dashboards-online/images/publish-menu.png)
 	
-2. For the master site, the dialog will be shown as follows with the options for `Internal Site` and `External Site`. Please select either `Internal Site` or `External Site` for publishing the dashboard in the publish dialog, and proceed to the `Next` step.
+2. For the master site, the dialog is shown as follows with the options for `Internal Site` and `External Site`. Please select either `Internal Site` or `External Site` for publishing the dashboard in the publish dialog, and proceed to the `Next` step.
 
    ![Select Site](/static/assets/resource-migration/migrate-dashboards-online/images/select-site.png#width=55%)
 
-   For non-master sites, the [external site publish](/resource-migration/migrate-dashboards-online/#external-site) dialog will be shown directly. Additionally, publish the dashboard to the internal sites using the external site publish option for the non-master sites.
+   For non-master sites, the [external site publish](/resource-migration/migrate-dashboards-online/#external-site) dialog is shown directly. Additionally, publish the dashboard to the internal sites using the external site publish option for the non-master sites.
 
    > **NOTE:** The master site is the first site created during startup in Bold BI, and later you can set any other sites as the master site.
 
-## Internal site
+## Internal Site
 
 Publish the dashboard to the sites created in the same Bold BI server.
 
@@ -76,16 +76,16 @@ Publish the dashboard to the sites created in the same Bold BI server.
 
    ![Use Source Category](/static/assets/resource-migration/migrate-dashboards-online/images/use-source-category-enabled.png#width=55%)
 
-13. If you want to publish in a different category, uncheck the box and enter the category name in the text field to which need to be published.
+13. If you want to publish in a different category, uncheck the box and enter the category name in the text field to which it needs to be published.
 
    ![Use Source Category disabled](/static/assets/resource-migration/migrate-dashboards-online/images/use-source-category-disabled.png#width=55%)
 
 
-14. By submitting the form, the publishing process will be started and you can check the status of the publishing in the **Published Resources** page.
+14. By submitting the form, the publishing process starts and you can check the status of the publishing in the **Published Resources** page.
 
     ![Submit Publish](/static/assets/resource-migration/migrate-dashboards-online/images/submit-publish.png#width=55%)
 
-## External site
+## External Site
 
 Publish the dashboard to the sites created in other Bold BI servers and to the internal sites created in the same Bold BI server for the non-master sites using the external site publish option.
 
@@ -95,29 +95,29 @@ Publish the dashboard to the sites created in other Bold BI servers and to the i
  
 2. Fill in the following details as shown in the following image:
 
-   * **Name** - Enter the name that you want for external site.
-   * **Client ID** - Enter the Client Id of the site. 
-   * **Client Secret** - Enter the Client Secret of the site.
-   * **Site URL** - Enter the URL of the site.
+   * **Name** – Enter the name that you want for the external site.
+   * **Client ID** – Enter the Client ID of the site. 
+   * **Client Secret** – Enter the Client Secret of the site.
+   * **Site URL** – Enter the URL of the site.
 
-   You can add both internal and external site's client ID and client secret here.
+   You can add both internal and external sites' client ID and client secret here.
 
   ![External Dialog](/static/assets/resource-migration/migrate-dashboards-online/images/external-site-dialog.png#width=55%)
 
-  For the Bold BI Server, get the site's Client Id and Client Secret values from the [site details page](/multi-tenancy/manage-sites/#general). 
+  For the Bold BI Server, get the site's Client ID and Client Secret values from the [site details page](/multi-tenancy/manage-sites/#general). 
   
   ![General Details](/static/assets/resource-migration/migrate-dashboards-online/images/general-details.png)
 
 3. After the external site is added, choose the external site in the drop-down and follow the same steps mentioned for publishing the dashboard in the internal site.
   
 > **NOTE:**<br>
-> •	The dashboards or the data sources cannot be locked while publishing to the external sites. So, the `Lock dashboard editing in published site` and `Lock data source editing in published site` check box options will not be shown for `External Site`.<br>
-> •	Admin users can view all the external sites added by any user, which will be listed in the "Select Site" dropdown, since admins can publish any dashboard and data sources.
+> •	The dashboards or the data sources cannot be locked while publishing to the external sites. So, the `Lock dashboard editing in published site` and `Lock data source editing in published site` check box options are not shown for `External Site`.<br>
+> •	Admin users can view all the external sites added by any user, which are listed in the "Select Site" dropdown, since admins can publish any dashboard and data sources.
 
    ![View all sites](/static/assets/resource-migration/migrate-dashboards-online/images/view-all-sites.png)
 
 
-## Manage published dashboards
+## Manage Published Dashboards
 
 You can view the status of the published dashboards on the **Published Resources** page. The published resources are listed in the grid and grouped by the dashboard by default.
 
@@ -125,13 +125,13 @@ You can view the status of the published dashboards on the **Published Resources
 
 ![Publish Page](/static/assets/resource-migration/migrate-dashboards-online/images/publish-page.png)
 
-### Synchronize dashboard
+### Synchronize Dashboard
 
 When you make changes to the original dashboard, you can move the changes to the published site using the synchronize published resource option.
 
 ![Publish Synchronize](/static/assets/resource-migration/migrate-dashboards-online/images/publish-synchronize.png)
 
-### Synchronize dashboard with or without datasource
+### Synchronize Dashboard with or Without Datasource
 
 When changes are made to the original dashboard's data source, they are automatically reflected to the published site using the Synchronize Published Resource option. This happens by default, without needing to enable any additional settings.
 
@@ -143,7 +143,7 @@ If you want to prevent data source updates on the published site, enable the `Ig
 
 > **NOTE:** This support is not available for bulk dashboard synchronization and data source synchronization.
 
-### Information of published dashboard
+### Information of Published Dashboard
 
 You can see the publishing information of the respective dashboard in the dialog box. Click `Actions` in the grid context menu and select `Info`.
 
@@ -151,7 +151,7 @@ You can see the publishing information of the respective dashboard in the dialog
 
 ![Publish Info Dialog](/static/assets/resource-migration/migrate-dashboards-online/images/publish-info-dialog.png#width=55%)
 
-### Publish history
+### Publish History
 
 You can view the publish history of the corresponding dashboard. Click `Actions` in the grid context menu and select `Publish History`.
 
@@ -159,7 +159,7 @@ You can view the publish history of the corresponding dashboard. Click `Actions`
 
 ![Publish History Dialog](/static/assets/resource-migration/migrate-dashboards-online/images/publish-history-dialog.png)
 
-### Remove publish dashboard
+### Remove Publish Dashboard
 
 Published dashboards can also be removed from Bold BI when they are no longer required.
 
@@ -167,7 +167,7 @@ Click `Actions` in the grid context menu and select `Remove` to remove the publi
 
 ![Remove Publish Action](/static/assets/resource-migration/migrate-dashboards-online/images/publish-remove-action.png)
 
-### Lock and unlock publish dashboard
+### Lock and Unlock Publish Dashboard
 
 The edit option for published dashboards can be locked or unlocked. Unlock previously locked published dashboards and lock them again.
 
@@ -179,7 +179,7 @@ Click `Actions` in the grid context menu and select `Unlock Edit` to unlock the 
 
 ![Unlock Edit Action](/static/assets/resource-migration/migrate-dashboards-online/images/publish-unlockedit.png)
 
-### Disable Synchronization of publish dashboard
+### Disable Synchronization of Publish Dashboard
 
 The synchronization of published dashboards from the source site can be disabled by enabling the `Lock Resource Synchronization` in the dashboard settings on the target site. 
 
@@ -189,6 +189,6 @@ Once these settings are enabled on the target site, synchronization of the publi
 
 ![Failed-status-grid](/static/assets/resource-migration/migrate-dashboards-online/images/grid-failed-status.png)
 
-The failure reason will be displayed as `Resource synchronization is locked on the target site` when clicking on the `Failed` status in the publish history dialog.
+The failure reason is displayed as `Resource synchronization is locked on the target site` when clicking on the `Failed` status in the publish history dialog.
 
 ![Failure-info](/static/assets/resource-migration/migrate-dashboards-online/images/failure-info-history.png)
