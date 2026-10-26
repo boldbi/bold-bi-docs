@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Exploring Bold BI - An Overview | Bold BI Documentation
-description: Study the overview of Bold BI and learn about its two embedding methods, JavaScript-based embedding and iframe-based embedding.
+description: "Get an overview of Bold BI embedded analytics and learn about its two embedding methods: JavaScript-based embedding with the SDK and iframe-based embedding."
 canonical: "/overview/"
 platform: bold-bi
 documentation: ug
