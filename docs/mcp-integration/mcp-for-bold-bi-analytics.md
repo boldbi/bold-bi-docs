@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Bold BI MCP Tool User Guide for AI Assistants | Bold BI
-description: Configure and use the Bold BI MCP Tool to access dashboards, data sources, users, schedules, exports, and analytics through AI assistants.
+description: "Learn how to configure and use the Bold BI MCP tool so AI assistants can work with your dashboards, data sources, users, schedules, exports, and analytics."
 canonical: "/mcp-integration/mcp-for-bold-bi-analytics/"
 platform: bold-bi
 documentation: ug
@@ -81,13 +81,13 @@ Your client must support:
 
 The MCP service forwards the `Authorization` header it receives to the Bold BI REST API. Authenticate requests using a Bold BI API key.
 
->Generate an API key form your Bold BI profile. For instructions, see [Generate a Bold BI API Key](https://help.boldbi.com/managing-resources/user-profile/#api-key).
+> Generate an API key from your Bold BI profile. For instructions, see [Generate a Bold BI API Key](https://help.boldbi.com/managing-resources/user-profile/#api-key).
 
 | Form | Example | Notes |
 |---|---|---|
-| API key | `Authorization: <bold-bi-api-key>` | Use a valid API key generated form your Bold BI profile. |
+| API key | `Authorization: <bold-bi-api-key>` | Use a valid API key generated from your Bold BI profile. |
 
-### Required headers
+### Required Headers
 
 | Header | Required | Description |
 |---|---|---|
@@ -127,7 +127,7 @@ Every tool call that reaches Bold BI must include the `Authorization` and `Servi
 
 The Bold BI MCP service exposes **51 tools**, organized into 11 functional categories.
 
-### Dashboard tools (15)
+### Dashboard Tools (15)
 
 | Tool | Purpose | Type |
 |---|---|---|
@@ -147,21 +147,21 @@ The Bold BI MCP service exposes **51 tools**, organized into 11 functional categ
 | `dashboard_download_status_get` | Retrieves the status of a prepared download. | Export |
 | `dashboard_upload_status_get` | Retrieves the status of a dashboard upload. | Read |
 
-### Dashboard settings tools (2)
+### Dashboard Settings Tools (2)
 
 | Tool | Purpose | Type |
 |---|---|---|
 | `dashboard_settings_get` | Retrieves global dashboard configuration settings. | Read |
 | `deployment_dashboard_list` | Lists dashboards available in a deployment. | Read |
 
-### Category tools (2)
+### Category Tools (2)
 
 | Tool | Purpose | Type |
 |---|---|---|
 | `category_list` | Lists available categories. | Read |
 | `category_get` | Retrieves details for a specific category. | Read |
 
-### Data source tools (6)
+### Data Source Tools (6)
 
 | Tool | Purpose | Type |
 |---|---|---|
@@ -172,7 +172,7 @@ The Bold BI MCP service exposes **51 tools**, organized into 11 functional categ
 | `datasource_export` | Exports data source content. | Export |
 | `datasource_activity_get` | Retrieves recent activity for a data source. | Audit |
 
-### User tools (8)
+### User Tools (8)
 
 | Tool | Purpose | Type |
 |---|---|---|
@@ -185,7 +185,7 @@ The Bold BI MCP service exposes **51 tools**, organized into 11 functional categ
 | `user_import_job_status_get` | Retrieves the status of a user import job. | Read |
 | `user_import_failed_list` | Lists records that failed during a user import. | Read |
 
-### Group tools (5)
+### Group Tools (5)
 
 | Tool | Purpose | Type |
 |---|---|---|
@@ -195,7 +195,7 @@ The Bold BI MCP service exposes **51 tools**, organized into 11 functional categ
 | `group_attributes_get` | Retrieves attributes assigned to a group. | Read |
 | `group_permissions_get` | Retrieves permissions assigned to a group. | Read |
 
-### Item and pinboard tools (6)
+### Item and Pinboard Tools (6)
 
 | Tool | Purpose | Type |
 |---|---|---|
@@ -206,28 +206,28 @@ The Bold BI MCP service exposes **51 tools**, organized into 11 functional categ
 | `pinboard_get` | Retrieves details for a specific pinboard. | Read |
 | `pinboard_name_exists_check` | Checks whether a pinboard name already exists. | Read |
 
-### Published content tools (2)
+### Published Content Tools (2)
 
 | Tool | Purpose | Type |
 |---|---|---|
 | `published_item_list` | Lists items published externally. | Read |
 | `external_publish_site_list` | Lists configured external publish sites. | Read |
 
-### Schedule tools (2)
+### Schedule Tools (2)
 
 | Tool | Purpose | Type |
 |---|---|---|
 | `schedule_list` | Lists schedules configured on the site. | Read |
 | `schedule_get` | Retrieves details for a specific schedule. | Read |
 
-### Slideshow tools (2)
+### Slideshow Tools (2)
 
 | Tool | Purpose | Type |
 |---|---|---|
 | `slideshow_list` | Lists slideshows configured on the site. | Read |
 | `slideshow_get` | Retrieves details for a specific slideshow. | Read |
 
-### Webhook tools (1)
+### Webhook Tools (1)
 
 | Tool | Purpose | Type |
 |---|---|---|
@@ -235,55 +235,55 @@ The Bold BI MCP service exposes **51 tools**, organized into 11 functional categ
 
 ## Common Use Cases
 
-### Explore and summarize dashboards
+### Explore and Summarize Dashboards
 
 **Example prompts:** "List all dashboards." · "Get the widgets for this dashboard." · "Export the Sales Analysis dashboard as a PDF."
 
 **Tools used:** `dashboard_list`, `dashboard_get`, `dashboard_widgets_list`, `dashboard_view_list`, `dashboard_export`
 
-### Inspect dashboard output and downloads
+### Inspect Dashboard Output and Downloads
 
 **Example prompts:** "Show the access history for this dashboard." · "Prepare a downloadable copy of the export." · "Check the status of a dashboard upload."
 
 **Tools used:** `dashboard_access_history_get`, `dashboard_download_prepare`, `dashboard_download_status_get`, `dashboard_upload_status_get`, `dashboard_draft_list`, `deployment_dashboard_list`
 
-### Share content with users and groups
+### Share Content with Users and Groups
 
 **Example prompts:** "Show which dashboards are accessible by the Operations group." · "List the groups a user belongs to." · "Show the permissions a user has on dashboards."
 
 **Tools used:** `group_list`, `group_get`, `group_users_list`, `group_permissions_get`, `user_list`, `user_get`, `user_groups_list`, `user_permissions_get`, `dashboard_by_group_permissions_list`, `dashboard_permissions_get`
 
-### Manage data sources
+### Manage Data Sources
 
 **Example prompts:** "List all data sources and identify which dashboards depend on each one." · "Export this data source as CSV with selected columns." · "Show recent activity on a data source."
 
 **Tools used:** `datasource_list`, `datasource_get`, `datasource_columns_list`, `datasource_linked_dashboards_list`, `datasource_export`, `datasource_activity_get`
 
-### Provision and audit users
+### Provision and Audit Users
 
 **Example prompts:** "Look up a user and list the groups they belong to." · "Inspect the attributes assigned to a user or group." · "Download the CSV template for bulk user import and check job status."
 
 **Tools used:** `user_list`, `user_get`, `user_attributes_get`, `user_groups_list`, `user_permissions_get`, `group_attributes_get`, `user_csv_template_download`, `user_import_job_status_get`, `user_import_failed_list`
 
-### Schedule and monitor reports
+### Schedule and Monitor Reports
 
 **Example prompts:** "List the schedules configured for this site." · "Get the details of a specific schedule."
 
 **Tools used:** `schedule_list`, `schedule_get`
 
-### Audit activity and governance
+### Audit Activity and Governance
 
 **Example prompts:** "Show dashboard activity for the last 7 days." · "Show recent access history for a dashboard." · "Summarize data source activity for compliance review."
 
 **Tools used:** `dashboard_access_history_get`, `datasource_activity_get`, `dashboard_public_list`, `dashboard_favorite_list`
 
-### Discover content, pinboards, and published sites
+### Discover Content, Pinboards, and Published Sites
 
 **Example prompts:** "List pinboards available on this site." · "Find an item by name to avoid duplicates." · "List published items and the configured publish sites."
 
 **Tools used:** `item_list`, `item_get`, `item_name_exists_check`, `pinboard_list`, `pinboard_get`, `pinboard_name_exists_check`, `published_item_list`, `external_publish_site_list`, `slideshow_list`, `slideshow_get`, `webhook_list`
 
-### Inspect dashboard settings
+### Inspect Dashboard Settings
 
 **Example prompts:** "Show the current global dashboard settings."
 
