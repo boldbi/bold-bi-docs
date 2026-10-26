@@ -9,7 +9,7 @@ documentation: ug
 
 # How to Register, Start a Free Trial, and Download Bold BI
 
-Start your Bold BI free Cloud trial in just a few minutes and explore interactive dashboards, embedded analytics capabilities, and powerful data visualization tools without installing anything locally. This guide walks you through the complete process, from registration to accessing your Cloud workspace and optional downloads. 
+Start your Bold BI free Cloud trial in just a few minutes and explore interactive dashboards, embedded analytics capabilities, and data visualization tools without installing anything locally. This guide walks you through the complete process, from registration to accessing your Cloud workspace and optional downloads. 
 
 **Step 1: Start Your Free Trial**
 
