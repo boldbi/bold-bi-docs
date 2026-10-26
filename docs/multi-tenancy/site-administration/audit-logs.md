@@ -10,7 +10,7 @@ documentation: ug
 
 The Audit Logs page allows administrators to track and review various user actions and changes within the system for all tenants, including activities specific to the UMS (User Management System) page. This comprehensive view helps maintain accountability and transparency by providing a detailed record of who performed what actions and when. The logs contain information about each activity, including the **User, Date and Time, Event Category, Event Type, Summary** and any associated Details.
 
-> **Note:** The Audit Logs are visible only to admin users. They include records for all tenants within the system and UMS activities, ensuring a complete overview of user actions and system changes across different environments.
+> **NOTE:** The Audit Logs are visible only to admin users. They include records for all tenants within the system and UMS activities, ensuring a complete overview of user actions and system changes across different environments.
 
    ![Activity Logs](/static/assets/multi-tenancy/images/activity-logs.png#width=60%)
 
@@ -46,7 +46,7 @@ The Audit Logs page allows administrators to track and review various user actio
 
 ### Viewing Detailed Log Information
 
-1. Click the `View` button on an activity log entry to open a dialog box displaying more detailed information about that specific  log. The dialog box includes data such as the exact changes made, the user involved, and a timestamp. 
+1. Click the `View` button on an activity log entry to open a dialog box displaying more detailed information about that specific log. The dialog box includes data such as the exact changes made, the user involved, and a timestamp. 
 
    ![Activity Logs view](/static/assets/multi-tenancy/images/activity-log-view.png#width=80%)
    ![Activity Log Details](/static/assets/multi-tenancy/images/activity-log-view-details.png#width=40%)
