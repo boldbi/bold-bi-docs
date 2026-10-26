@@ -11,7 +11,7 @@ documentation: ug
 
 This section explains how to search for and import groups from Active Directory into the Bold BI application.
 
-> **NOTE:** An Active Directory connection must be configured in the [Active Directory Settings](/site-administration/user-directory-settings/active-directory/) on the `General` page in order to import groups. This feature is available in On-Premises Deployment but not in Syncfusion Managed Cloud Server.
+> **NOTE:** An Active Directory connection must be configured in the [Active Directory Settings](/site-administration/user-directory-settings/active-directory/) on the `General` page to import groups. This feature is available in On-Premises Deployment but not in Syncfusion Managed Cloud Server.
 
 Only users belonging to the `System Administrator` group can import Active Directory groups into the Bold BI application.
 
@@ -30,7 +30,7 @@ Bold BI Server searches for groups within the specified distinguished name provi
 
 ## Import Groups
 
-To import Active Directory groups into the Bold BI application, you must select the groups from the list and click on `Import Selected Groups` at the top-right corner in order to import the selected groups or click on `Import All Groups` at the top-right corner in order to import all groups.
+To import Active Directory groups into the Bold BI application, you must select the groups from the list and click on `Import Selected Groups` at the top-right corner to import the selected groups or click on `Import All Groups` at the top-right corner to import all groups.
 
 ![Import Groups from Active Directory](/static/assets/managing-resources/manage-groups/images/active-directory-group-import-page.png)
 
