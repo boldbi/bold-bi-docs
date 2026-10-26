@@ -21,7 +21,7 @@ The `Canvas Style` section in the designer properties allows users to customize 
 
 By enabling the `Enable Background Color` option in the properties panel and selecting a background color using the `Background Color` setting, users can modify the dashboard's background color on the design page. This change is visible in both preview and view modes. By default, this option is disabled.
 
-The design mode of the dashboard displays the selected background color, as shown below.
+The design mode of the dashboard displays the selected background color.
 
 ![Canvas background color in design mode of the Dashboard](/static/assets/working-with-dashboards/images/design-canvas-bgcolor.png)
 
@@ -61,7 +61,7 @@ The Mode setting in the properties panel allows users to customize the display o
 
 The Banner Panel Style option allows users to change the background and foreground colors of the Banner panel. By enabling the Enable Background Color and Enable Foreground Color options and selecting the desired colors, users can visualize these changes in the Preview and View modes of the dashboard. By default, these options are disabled.
 
-The changes to the background and foreground colors of the Banner panel are displayed as shown below:
+The changes to the background and foreground colors of the Banner panel are displayed:
 
 ## Background Color
 
