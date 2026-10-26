@@ -1,6 +1,6 @@
 ---
 title: Active Directory Settings – Embedded BI | Bold BI Learning
-description: Learn the required Active Directory details and how to configure Active Directory with Bold BI Server.
+description: "Learn which Active Directory details you need and how to configure Active Directory as a user directory in the Bold BI server to import users and groups."
 platform: bold-bi
 documentation: ug
 ---
