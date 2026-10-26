@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Managing Licenses – On-Premises & Embedded | Bold BI Docs
-description: Learn how to update Bold BI license yourself using the Bold account linked with your subscription in the Bold BI application.
+description: "Learn how to update your Bold BI license yourself in the application by signing in with the Bold account linked to your subscription and applying the new plan."
 platform: bold-bi
 documentation: ug
 ---
