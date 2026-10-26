@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Handling Enterprise Insights – Embedded BI | Bold BI Docs
-description: Learn how to handle the enterprise insights at the administrator level in Bold BI Embedded and for users to monitor dashboard activities.
+description: "Learn how administrators enable and manage enterprise insights in Bold BI, so users can monitor dashboard activity and see how dashboards are being used."
 platform: bold-bi
 documentation: ug
 ---
