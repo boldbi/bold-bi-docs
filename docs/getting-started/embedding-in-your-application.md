@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Embedding Analytics Using SDK – Getting Started | Bold BI
-description: Get started with JavaScript-based analytics embedding by knowing how to use Bold BI inside your HTML page, implement the authorize server and get the embed secret key.
+description: "Learn how to embed Bold BI dashboards in your HTML page with the JavaScript SDK, implement the authorization server, and get the embed secret key to begin."
 platform: bold-bi
 documentation: ug
 
