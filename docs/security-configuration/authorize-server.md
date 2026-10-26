@@ -21,7 +21,7 @@ Any application that embeds the Bold BI dashboard and widget needs to be authent
 
 2. The Authorization Server, which receives details from the embed instance, will update the secure information such as user email, group details, and embed signature. This information will be sent to the Bold BI server for authorization.
 
-3. The Bold BI server will utilize the user's email, dashboard path, and embed signature to authenticate the provided information.
+3. The Bold BI server will use the user's email, dashboard path, and embed signature to authenticate the provided information.
     * Whether dashboard is valid or not.
     * Whether user is valid or not.
     * Whether user has access to that dashboard or not.
