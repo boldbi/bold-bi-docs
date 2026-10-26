@@ -97,7 +97,7 @@ documentation: ug
 
    ![Widget PowerPoint Export](/static/assets/working-with-dashboards/preview-dashboards/widget-settings/images/widgetPowerPointExport.png)   
    
-   After clicking `Export`, a notification pop-up will appear as shown below.
+   After clicking `Export`, a notification pop-up will appear.
 
    ![Widget PowerPoint Export Request](/static/assets/working-with-dashboards/preview-dashboards/widget-settings/images/widgetPowerPointExportRequest.png)     
 
