@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Single Sign-On with Okta Provider of OAuth 2.0 | Bold BI
-description: Learn how to configure Bold BI Embedded with Okta identity provider for Single Sign-On authentication using OAuth 2.0.
+description: "Learn how to configure Okta as an OAuth 2.0 identity provider for single sign-on in Bold BI, so users can sign in to dashboards with their Okta accounts."
 platform: bold-bi
 documentation: ug
 ---
