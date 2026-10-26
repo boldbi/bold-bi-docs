@@ -13,7 +13,7 @@ documentation: ug
 
 Bold BI empowers businesses with **seamless data visualization and embedded analytics**, helping decision-makers turn data into actionable insights. 
 
-Bold BI provides a comprehensive set of resources to help you explore, learn, and integrate powerful business intelligence solutions into your workflow. Whether you need guidance on best practices, want to stay updated on product developments, or explore real-world use cases, this guide organizes all available resources in one place. Whether you are:  
+Bold BI provides a comprehensive set of resources to help you explore, learn, and integrate business intelligence solutions into your workflow. Whether you need guidance on best practices, want to stay updated on product developments, or explore real-world use cases, this guide organizes all available resources in one place. Whether you are:  
 
 - **A business leader** evaluating BI solutions,  
 - **A technical team** looking to embed analytics into your applications,  
