@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bold BI High Level Architecture | Bold BI Documentation
+title: Bold BI High-Level Architecture | Bold BI Documentation
 description: Study the overview of the system architecture, highlighting key components and their roles in the data flow process.
 canonical: "/overview/"
 platform: bold-bi
@@ -111,7 +111,7 @@ This section outlines the typical flow of user interaction, data processing, and
 ### 3. ETL and Data Preparation with Bold Data Hub
 
 - Data is collected from various input sources.
-- The Bold Data Hub processes the data by extracting, transforming and loading it.
+- The Bold Data Hub processes the data by extracting, transforming, and loading it.
 - Structured data is then loaded into the Data Warehouse, ready for analytics and visualization.
 Bold BI’s architecture ensures a seamless, secure, and efficient data analysis experience. By integrating various data sources, optimizing storage, and automating refresh cycles, the platform provides real-time analytics capabilities for users across different domains.
 
