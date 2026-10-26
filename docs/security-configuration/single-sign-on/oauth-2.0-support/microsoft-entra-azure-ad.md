@@ -116,4 +116,4 @@ The fields that need to be saved in Bold BI to enable Azure AD for authenticatio
 
 2. Please enter your username and password in the Azure AD SSO login screen and proceed to sign in.
 
-3. By following these steps, you can successfully configure Azure AD OAuth in Bold BI. This will enhance the security of your Bold BI applications and provide a seamless login experience for your users.
+3. By following these steps, you can successfully configure Azure AD OAuth in Bold BI. This will enhance the security of your Bold BI applications and provide a login experience for your users.
