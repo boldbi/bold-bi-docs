@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Embedded Analytics | Integrate BI into Your Applications
+title: Embedded Analytics | Integrate BI into Your Applications
 description: Enhance your apps with Bold BI's embedded analytics. Deliver interactive dashboards and reports within your platform for seamless data-driven experiences.
 canonical: "/overview/embedded-analytics/"
 platform: bold-bi
@@ -11,9 +11,9 @@ documentation: ug
 
 Embedded Analytics in Bold BI enables organizations to integrate dashboards directly into their applications, SaaS platforms, or web portals. This provides users with in-context insights, enhancing decision-making without switching between multiple tools.
 
-> **Note:** Refer to the [Embedding Options](/embedding-options/#embedding-dashboards-in-bold-bi) section for detailed explanation on the different embedding options available in the Bold BI dashboard.
+> **NOTE:** Refer to the [Embedding Options](/embedding-options/#embedding-dashboards-in-bold-bi) section for a detailed explanation of the different embedding options available in the Bold BI dashboard.
 
-## When to Choose Embedded Analytics?
+## When to Choose Embedded Analytics
 
 Choose Embedded Analytics if:
 
@@ -35,7 +35,7 @@ Bold BI offers two primary embedding methods: [**iFrame Embedding**](https://hel
 Quickly embed interactive dashboards into your web pages with minimal setup and configuration using [iFrame Embedding](/embedding-options/iframe-embedding/). Ideal for fast deployment without extensive coding efforts.
 
 ### JavaScript SDK
-Leverage our powerful [JavaScript SDK](https://help.boldbi.com/embedding-options/embedding-sdk/) to deeply integrate dashboards within your web applications. Gain full control over the embedded analytics experience, supporting frameworks like [Angular](/embedding-options/embedding-sdk/samples/angular-with-core/), [React](/embedding-options/embedding-sdk/samples/react-with-node-js/), [Vue.js](/embedding-options/embedding-sdk/samples/vuejs-with-go/), and more.
+Leverage our [JavaScript SDK](https://help.boldbi.com/embedding-options/embedding-sdk/) to deeply integrate dashboards within your web applications. Gain full control over the embedded analytics experience, supporting frameworks like [Angular](/embedding-options/embedding-sdk/samples/angular-with-core/), [React](/embedding-options/embedding-sdk/samples/react-with-node-js/), [Vue.js](/embedding-options/embedding-sdk/samples/vuejs-with-go/), and more.
 
 ### Comparison
 Explore the detailed comparison to determine which embedding method aligns best with your needs:
