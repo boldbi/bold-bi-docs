@@ -1,7 +1,7 @@
 ---
 layout: post
 title: SSO with Amazon Cognito Provider of OAuth 2.0 | Bold BI
-description: Learn how to configure Bold BI Embedded with Amazon Cognito identity provider for Single Sign-On authentication using OAuth 2.0.
+description: "Learn how to configure Amazon Cognito as an OAuth 2.0 identity provider for single sign-on in Bold BI, so users can sign in with their Cognito accounts."
 platform: bold-bi
 documentation: ug
 ---
