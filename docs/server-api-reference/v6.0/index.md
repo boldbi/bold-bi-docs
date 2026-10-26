@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Server API Reference - v6.0 | Bold BI Documentation
-description: Access the Bold BI server using v6.0 REST API endpoints. You can also test each API without writing any code using the Try It Now tool.
+description: "Explore the Bold BI server REST API v6.0 endpoints, and test each API without writing code using the built-in Try It Now tool in the interactive reference."
 canonical: "/server-api-reference/v6.0/"
 platform: bold-bi
 documentation: ug
