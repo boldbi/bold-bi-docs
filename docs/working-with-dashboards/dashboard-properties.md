@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Dashboard Properties – Embedded BI | Bold BI Learning
-description: Learn how to view the rows and columns of a selected widget, and assess the total number of rows and columns utilized in Bold BI Embedded.
+title: Dashboard Properties – Embedded BI | Bold BI Learning
+description: "Learn how to use dashboard properties in Bold BI to view the rows and columns used by a selected widget and the total rows and columns used by the dashboard."
 canonical: "/working-with-dashboards/dashboard-properties/"
 platform: bold-bi
 documentation: ug
@@ -14,7 +14,7 @@ documentation: ug
 
 ## Show Widget Cell Count
 
-This option allows you to display or hide the tooltip that shows the number of cells occupied by a widget in the design layout. The count represents the widgets size in terms of rows and columns (for example, 6 x 6 Cells).
+This option allows you to display or hide the tooltip that shows the number of cells occupied by a widget in the design layout. The count represents the widget's size in terms of rows and columns (for example, 6 x 6 Cells).
 
 Below is an example of how the cell count tooltip appears in the `Annual Dividends By Stock widget`:
 
@@ -39,11 +39,11 @@ When the dashboard loads, it first waits for all widgets on `Page 1` to finish r
 
 The `Batch Size` option specifies the number of widgets bundled into a single API request.
 
-Load widgets are not clubbed together. Any widget with row‑series configurations or multiple data fetch operations is treated as a load widget.
+Load widgets are not clubbed together. Any widget with row-series configurations or multiple data fetch operations is treated as a load widget.
 
 The following widgets are classified as load widgets. They are excluded from clubbed API requests and are processed individually through separate API calls.
 1. Grid Widget
 2. Pivot Grid
-3. Chart widgets with row‑series configurations
+3. Chart widgets with row-series configurations
 4. KPI and Number Card widgets with series configurations
-5. Bubble Scatter charts with row‑series configurations
+5. Bubble Scatter charts with row-series configurations
