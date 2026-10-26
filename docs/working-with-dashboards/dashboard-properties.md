@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dashboard Properties – Embedded BI | Bold BI Learning
-description: Learn how to view the rows and columns of a selected widget, and assess the total number of rows and columns utilized in Bold BI Embedded.
+description: "Learn how to use dashboard properties in Bold BI to view the rows and columns used by a selected widget and the total rows and columns used by the dashboard."
 canonical: "/working-with-dashboards/dashboard-properties/"
 platform: bold-bi
 documentation: ug
