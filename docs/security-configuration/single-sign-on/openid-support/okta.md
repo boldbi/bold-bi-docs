@@ -67,7 +67,7 @@ Please configure the settings in Bold BI, as shown in the following screenshot, 
 
 ![Okta settings](/static/assets/site-administration/openid-support/images/okta-sample-value.png#width=50%)
 
-The fields that need to be saved in Bold BI in order to enable Okta for authentication are explained as follows.
+The fields that need to be saved in Bold BI to enable Okta for authentication are explained as follows.
 
 <table>
 
