@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Multitenancy – Adding a new tenant – Embedded BI | Bold BI
+title: Multi-Tenancy – Adding a New Tenant – Embedded BI | Bold BI
 description: Learn how to add another site as part of multi-tenancy and configure separate database and data store with Bold BI Embedded.
 platform: bold-bi
 documentation: ug
@@ -11,7 +11,7 @@ documentation: ug
 
 This section briefly explains the steps involved in creating a new site in Bold BI Server multi-tenant application.
 
-## Site creation
+## Site Creation
 
 You can create another site in the Bold BI Server application by clicking the `Create Site` button in the site management module.
 
@@ -24,13 +24,13 @@ The site identifier is generated automatically when a site is created. It follow
 > **NOTE:** 
 > * The site identifier is unique within each product (Bold BI and Bold Reports).
 > * Numbering is determined per product based on the count of active sites.
-> * Example (Bold BI): If there are 3 active sites, the next identifier will be site4. The identifier appears in the site URL after creation.
+> * Example (Bold BI): If there are 3 active sites, the next identifier is site4. The identifier appears in the site URL after creation.
 
 ![Site Registration](/static/assets/multi-tenancy/images/site-Identifier-lock-url.png#max-width=45%)
 
 To inherit settings, simply click the drop-down menu and select the `Select all` option to access all global settings from UMS when creating a new site. If you prefer to inherit selected settings from UMS, choose the specific settings you require from the global settings in UMS.
 
-Based on the settings chosen, the following information will be copied to the tenant.
+Based on the settings chosen, the following information is copied to the tenant.
 * Date and Time format
 * Application Language
 * Branding Images
@@ -38,17 +38,17 @@ Based on the settings chosen, the following information will be copied to the te
 * Email Settings
 * Account Settings
 
- Otherwise, default branding images and values will be used for the tenant settings.
+ Otherwise, default branding images and values are used for the tenant settings.
 
 ![Inherit settings](/static/assets/multi-tenancy/images/select-inherit-settings.png)
 
 Please follow this [link](/multi-tenancy/manage-sites/#settings) to learn how to manage Inherit Global Settings for an existing site.
 
-## Select database 
+## Select Database 
 
 This step helps you configure a single or individual database for the Bold BI Server and Data Store.
 
-The dashboards, users, and access rights are all stored in the SQL Server Database.
+The dashboards, users, and access rights are all stored in the SQL Server database.
 
 The Data Store database gathers data from over 120 connectors and stores it locally so dashboards can quickly access it.
 
@@ -59,7 +59,7 @@ The following options can be used to connect to an existing SQL Server instance:
 * By choosing one of the databases from the `Select a Database` dropdown to create Bold BI Server tables in that database. 
 ![Select Database ExistingDb](/static/assets/multi-tenancy/images/select-database-existing.png#max-width=45%)
 
-> **NOTE:**  The credentials given to connect to the SQL Server instance must have permissions.
+> **NOTE:** The credentials given to connect to the SQL Server instance must have permissions.
 * Create Database 
 * Create Table
 * Insert
@@ -71,7 +71,7 @@ The following options can be used to connect to an existing SQL Server instance:
 
 Here, you can select either the simple or advanced mode for configuration.
 
-### Simple mode
+### Simple Mode
 
 Configure a single database for Bold BI and Data Store.
 
@@ -79,7 +79,7 @@ The site's details, dashboards, data store, users, and their access permissions 
 
 ![Simple Mode](/static/assets/multi-tenancy/images/simple-mode.png#max-width=45%)
 
-### Advanced mode
+### Advanced Mode
 
 Configure individual databases for Bold BI and Data Store.
 
@@ -89,17 +89,17 @@ The authentication information and data collected from SQL and REST data sources
 
 ![Advanced Mode](/static/assets/multi-tenancy/images/advanced-mode.png#max-width=45%)
 
-## Configure Isolation code and Custom Attribute in site 
+## Configure Isolation Code and Custom Attribute in Site 
 
 You can skip this configuration directly by clicking the `Next` button, or you can configure the isolation code, custom attribute, or both before proceeding with the Next.
 
 ![Skip configure Isolation code and Custom Attribute](/static/assets/multi-tenancy/images/configure-isolation-and-attribute.png#max-width=45%)
 
-### Isolation code
+### Isolation Code
 
-The isolation code feature is used to configure row-level security for the site to apply to all dashboards on the site. Users can set the filter value in a specific column of the data source. The UMS admin can apply the isolation code from the site settings of the UMS site details page. Dashboards will be filtered based on the applied isolation code. If the column in the code does not match the data source level, no data will be displayed in widgets. Learn more about [Isolation code](/working-with-data-sources/configuring-isolation-code/).
+The isolation code feature is used to configure row-level security for the site to apply to all dashboards on the site. Users can set the filter value in a specific column of the data source. The UMS admin can apply the isolation code from the site settings of the UMS site details page. Dashboards will be filtered based on the applied isolation code. If the column in the code does not match the data source level, no data is displayed in widgets. Learn more about [isolation code](/working-with-data-sources/configuring-isolation-code/).
 
-### Custom attribute
+### Custom Attribute
 
 This can be set by the UMS admin for a site on the site details page. Learn more about the [Configure Custom Attribute](/working-with-data-sources/configuring-custom-attribute/).
 
@@ -111,11 +111,11 @@ Name – Name of the attribute.
 
 Value – Value of the attribute.
 
-Description – Explaining the purpose for the attribute.
+Description – Explaining the purpose of the attribute.
 
-Encrypt – Store it as encrypted one in the database and the value will be shown as dots in the grid.
+Encrypt – Store it as an encrypted one in the database and the value is shown as dots in the grid.
 
-## Select administrator
+## Select Administrator
 
 This step is used to choose a user who will have full control over the site.
 
