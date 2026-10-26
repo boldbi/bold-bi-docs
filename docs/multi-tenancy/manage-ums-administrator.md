@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Assigning Admin Role to Users in User Management Server – Bold BI
-description: Learn how to add or remove admin role to the users in the User Management Server of Bold BI deployed in your servers.
+description: "Learn how to add or remove the administrator role for users in the User Management Server of Bold BI deployed on your servers, and what the role allows."
 platform: bold-bi
 documentation: ug
 ---
 
-# Manage Admin access to the users
+# Manage Admin Access to the Users
 
 This section explains how to add or remove admin access to users in the Bold ID Server.
 
@@ -20,7 +20,7 @@ Once you have selected the users, you can choose the `Make Admin` option.
 
 ![Select Users from User Management page](/static/assets/multi-tenancy/images/ums-user-management.png)
 
-After choosing the `Make Admin` option, a confirmation window will open. Click `Yes` to assign the admin role to the selected users.
+After choosing the `Make Admin` option, a confirmation window opens. Click `Yes` to assign the admin role to the selected users.
 
 ![Assign Admin Role Confirmation](/static/assets/multi-tenancy/images/admin-role-confirmation.png)
 
@@ -31,6 +31,6 @@ To remove the Admin Role, select any user with the admin credentials.
 
 ![Admin Users confirmation](/static/assets/multi-tenancy/images/remove-admin-option.png)
 
-After choosing the `Remove Admin` option, a confirmation window will open. Click `Yes` to remove the admin role for the selected users.
+After choosing the `Remove Admin` option, a confirmation window opens. Click `Yes` to remove the admin role for the selected users.
 
 ![Remove Admin Confirmation](/static/assets/multi-tenancy/images/remove-admin-confirmation.png) 
