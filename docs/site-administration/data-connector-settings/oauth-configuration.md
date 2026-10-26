@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Adding OAuth Connection for Application Access | Bold BI 
-description: Learn how to add OAuth connection for required data connectors for application access in Bold BI Embedded.
+title: Adding OAuth Connection for Application Access | Bold BI
+description: "Learn how to add OAuth configurations for data connectors in Bold BI, so users can securely authorize access to cloud data sources such as Google or Microsoft."
 platform: bold-bi
 documentation: ug
 
@@ -30,7 +30,7 @@ To configure OAuth for data sources in Bold BI, follow the steps below:
     
     ![save-success](/static/assets/oauth/images/save-success.png)
 
-### How to get Client ID and Client Secret
+### How to Get Client ID and Client Secret
 
 If you do not have an existing app with the service provider, you must register a new app with the service. 
 Depending on the service provider, the process of registering an app varies. We suggest you go through the developer documentation of the corresponding service provider beforehand.
@@ -53,7 +53,7 @@ For example:
 
 `https://testboldbi:12345/bi/designer/v1.0/oauth/agent`
 
-## Steps to configure OAuth for WordPress
+## Steps to Configure OAuth for WordPress
 
 If you have not configured OAuth for WordPress in Bold BI, follow the steps below and then proceed to connect to this data source.
 1.	Enable the WordPress service.
@@ -65,7 +65,7 @@ If you have not configured OAuth for WordPress in Bold BI, follow the steps belo
     
     ![wordpress-home](/static/assets/oauth/images/wordpress-home.png)
 
-4.	The Redirect URL for this app should be the Bold BI service. Get the host and port number of the Bold BI Application and replace it in the following URL: `http://[host:port]/bi/designer/v1.0/oauth/agent`
+4.	The Redirect URL for this app should be the Bold BI service. Get the host and port number of the Bold BI application and replace it in the following URL: `http://[host:port]/bi/designer/v1.0/oauth/agent`
 5.	Select the app you want to connect and get its corresponding OAuth information.
     
     ![wordpress-oauth](/static/assets/oauth/images/wordpress-oauth.png)
@@ -73,4 +73,4 @@ If you have not configured OAuth for WordPress in Bold BI, follow the steps belo
 6.	Use this Client ID and Client Secret in Bold BI. Click the Configure button and input these values, then click *OK*.
 7.	Click Save to update the settings. Upon confirmation, refresh the designer page and connect to the WordPress data source.
 
-> **NOTE:**  Only one Client ID and Client Secret can be maintained for a data source. Click **Reset Configuration** to delete the entry.
+> **NOTE:** Only one Client ID and Client Secret can be maintained for a data source. Click **Reset Configuration** to delete the entry.
