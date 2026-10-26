@@ -55,7 +55,7 @@ To add an IP address, click the `Add IP Address` button, which opens the `Add Ru
 
 ![Content Security Policy settings for font](/static/assets/security-configuration/images/save-changes-ip.png)
 
-> **Important:** When you activate this feature, please note that IP whitelisting will not take effect immediately. To ensure uninterrupted access, be sure to specify the IP addresses that need to be whitelisted. Make sure that changes have been saved in order to apply these configurations effectively. This proactive step helps prevent unintentional access restrictions and ensures smooth implementation of your security settings.
+> **Important:** When you activate this feature, IP whitelisting will not take effect immediately. To ensure uninterrupted access, be sure to specify the IP addresses that need to be whitelisted. Make sure that changes have been saved to apply these configurations effectively. This proactive step helps prevent unintentional access restrictions and ensures smooth implementation of your security settings.
 
 ## Edit Rule
 
