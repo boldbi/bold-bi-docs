@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Common widget Settings – Embedded BI | Bold BI Learning
-description: Learn how to customize widget settings, including applying widget colors based on data and index using the data color palette defined in theming, in Bold BI Embedded.
+title: Common Widget Settings – Embedded BI | Bold BI Learning
+description: "Learn how to customize common widget settings in Bold BI, including applying widget colors based on data or index using the data color palette from your theme."
 canonical: "/working-with-dashboards/common-widget-settings/"
 platform: bold-bi
 documentation: ug
@@ -14,4 +14,4 @@ The `Common Widget Settings` section in the dashboard property panel allows you 
 
 ![Common Widget Settings](/static/assets/working-with-dashboards/images/Use_Palette.png)
 
-> **Note**: For more details on theming and color palettes, please refer to the theming [documentation](https://help.boldbi.com/site-administration/look-and-feel-settings-in-cloud-bi/custom-theme-viewer/#data-color-palette).
+> **NOTE:** For more details on theming and color palettes, please refer to the theming [documentation](https://help.boldbi.com/site-administration/look-and-feel-settings-in-cloud-bi/custom-theme-viewer/#data-color-palette).
