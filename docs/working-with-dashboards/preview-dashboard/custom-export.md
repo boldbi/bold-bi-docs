@@ -53,11 +53,11 @@ After adding namespace, for Excel customization, you can use `CustomizeExcelAsyn
     ```csharp
     var exportDetails = new Dictionary<string, object>
     {
-        {"widgetUniqueName", “”},
-        {"hasExcelWithImage", “”}
-        {"extension", “” },
-        {"isFromViewData", “” },
-        {"tenantInfo", “” }
+        {"widgetUniqueName", ""},
+        {"hasExcelWithImage", ""},
+        {"extension", "" },
+        {"isFromViewData", "" },
+        {"tenantInfo", "" }
     };
     ```
 
@@ -82,10 +82,10 @@ After adding namespace, for CSV customization, you can use `CustomizeCsvAsync` m
     ```csharp
     var exportDetails = new Dictionary<string, object>
     {
-        {"widgetUniqueName", “” },
-        {"extension", “” },
-        {"isFromViewData", “” },
-        {"tenantInfo", “”}
+        {"widgetUniqueName", "" },
+        {"extension", "" },
+        {"isFromViewData", "" },
+        {"tenantInfo", ""}
     };
     ```
 
@@ -108,14 +108,14 @@ After adding namespace, for image customization, you can use `CustomizeImageAsyn
     ```csharp
     var exportDetails = new Dictionary<string, object>
     {
-        {"fileName", “” },
-        {"widgetDetails", “” },
-        {"isWidgetExport", “” },
-        {"dpi", “” },
-        {"extension", “” },
-        {"hasBingMapsConfigured", “” },
-        {"hasCustomWidgetConfigured", “” },
-        {"tenantInfo", “” }
+        {"fileName", "" },
+        {"widgetDetails", "" },
+        {"isWidgetExport", "" },
+        {"dpi", "" },
+        {"extension", "" },
+        {"hasBingMapsConfigured", "" },
+        {"hasCustomWidgetConfigured", "" },
+        {"tenantInfo", "" }
     };
     ```
 
@@ -146,17 +146,17 @@ After adding namespace, for Image customize you can use `CustomizePdfAsync` meth
     ```csharp
     var exportDetails = new Dictionary<string, object>
     {
-        {"fileName", “” },
-        {"widgetDetails", “” },
-        {"pageSize", “” },
-        {"pageLayout", “” },
-        {"numberOfPages", “” },
-        {"isWidgetExport", “” },
-        {"exportMode", “” },
-        {"isCurrentView", “” },
-        {"hasBingMapsConfigured", “” },
-        {"hasCustomWidgetConfigured", “” },
-        {"tenantInfo", “” }
+        {"fileName", "" },
+        {"widgetDetails", "" },
+        {"pageSize", "" },
+        {"pageLayout", "" },
+        {"numberOfPages", "" },
+        {"isWidgetExport", "" },
+        {"exportMode", "" },
+        {"isCurrentView", "" },
+        {"hasBingMapsConfigured", "" },
+        {"hasCustomWidgetConfigured", "" },
+        {"tenantInfo", "" }
     };
     ```
 
