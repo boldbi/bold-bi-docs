@@ -1,18 +1,18 @@
 ---
 layout: post
 title: Embed Settings – Embedded BI | Bold BI Documentation
-description: Learn how to enable the embed authentication and generate the secret code using the embed settings in the Bold BI server.
+description: "Learn how to enable embed authentication in Bold BI and generate the embed secret key in embed settings, so you can securely embed dashboards in your app."
 canonical: "/site-administration/embed-settings/"
 platform: bold-bi
 documentation: ug
 
 ---
 
-# Embed Settings to generate Embed Secret key
+# Embed Settings to Generate Embed Secret Key
 
 This section explains how to enable embed authentication and generate the secret code in the Bold BI Server.
 
-## Get embed secret code
+## Get Embed Secret Code
 
 1. Go to the settings page and click on `Embed`. Enable the `Enable embed authentication` option on that page.
 
@@ -22,7 +22,7 @@ This section explains how to enable embed authentication and generate the secret
 
     ![Generate secret code](/static/assets/site-administration/images/generate-secret-code.png)
 
-3. After clicking it, the secret code will be generated. Save the secret key securely, as it cannot be retrieved or restored once generated.               
+3. After clicking it, the secret code is generated. Save the secret key securely, as it cannot be retrieved or restored once generated.               
 
     ![Copy secret code](/static/assets/site-administration/images/copy-secret-code.png)
 
@@ -30,7 +30,7 @@ This section explains how to enable embed authentication and generate the secret
 
     ![Reset secret code](/static/assets/site-administration/images/reset-secret-code.png)
 
-> **Warning :** Resetting this code will disrupt the previously working embedded dashboards.
+> **WARNING:** Resetting this code will disrupt the previously working embedded dashboards.
 
 ## Get Embed Configuration File
 
@@ -40,13 +40,13 @@ This section explains how to enable embed authentication and generate the secret
 
     ![Embed Config file](/static/assets/site-administration/images/embedconfig_file.png#max-width=65%)
 
-3. After clicking the button, an Embed Configuration pop-up will appear. Select the category and appropriate dashboard name, then click on `Download Json File` at the bottom of the pop-up.
+3. After clicking the button, an Embed Configuration pop-up appears. Select the category and appropriate dashboard name, then click on `Download Json File` at the bottom of the pop-up.
 
     ![EmbedConfig popup](/static/assets/site-administration/images/embedconfig_popup.png#max-width=65%)
 
 4. Copy the downloaded `embedConfig.json file`, generated from the embed settings page of the Bold BI server, and paste it into the App_Data folder of a sample [application](https://github.com/boldbi/samples/tree/development/SDK%20Samples/C%23/ASP.NET%20Core).
 
-### Properties configured in sample
+### Properties Configured in Sample
 The following properties are used in the `embedConfig.json` file:
 
 <meta charset="utf-8"/>
@@ -54,11 +54,11 @@ The following properties are used in the `embedConfig.json` file:
         <tbody>
             <tr>
                 <td align="left">ServerUrl</td>
-                <td align="left">Dashboard Server URL (Eg: http://localhost:5000/bi, http://demo.boldbi.com/bi).</td>
+                <td align="left">Dashboard Server URL (for example, http://localhost:5000/bi, http://demo.boldbi.com/bi).</td>
             </tr>
             <tr>
                 <td align="left">SiteIdentifier</td>
-                <td align="left">For Bold BI On-Premise Edition, it should be like  <code>site/site1</code>.For Bold BI Cloud, it should be an empty string.</td>
+                <td align="left">For Bold BI On-Premise Edition, it should be like  <code>site/site1</code>. For Bold BI Cloud, it should be an empty string.</td>
             </tr>
             <tr>
             <td align="left">Environment</td>
@@ -66,15 +66,15 @@ The following properties are used in the `embedConfig.json` file:
             </tr>
             <tr>
                 <td align="left">UserEmail</td>
-                <td align="left">The email of the user. The dashboard will be rendered on behalf of this user.</td>
+                <td align="left">The email of the user. The dashboard is rendered on behalf of this user.</td>
             </tr>        
             <tr>
             <td align="left">EmbedSecret</td>
-                <td align="left">You can get your EmbedSecret key from embed tab by enabling<code>Enable embedauthentication</code> in same page</td>
+                <td align="left">You can get your EmbedSecret key from the Embed tab by enabling<code>Enable embedauthentication</code> on the same page</td>
             </tr> 
             <tr>
                 <td align="left">DashboardId</td>
-                <td align="left">Item id of the dashboard to be embedded in your application.</td>
+                <td align="left">Item ID of the dashboard to be embedded in your application.</td>
             </tr>  
             <tr>
                 <td align="left">EmbedType</td>
@@ -88,7 +88,7 @@ The following properties are used in the `embedConfig.json` file:
         </table>
 
 
-## Get common embed secret code from UMS
+## Get Common Embed Secret Code from UMS
 
 This common embed secret code will help you embed the dashboard from multiple sites using the same code. If you reset the common embed secret code, it will break the previously embedded dashboards on all sites.
 
@@ -104,7 +104,7 @@ This common embed secret code will help you embed the dashboard from multiple si
 
     ![Generate secret code](/static/assets/site-administration/images/ums-generate-secret-code.png)
 
-4. Once clicked, the secret code will be generated. Make sure to save the secret key securely as it cannot be retrieved or restored once generated.                   
+4. Once clicked, the secret code is generated. Make sure to save the secret key securely as it cannot be retrieved or restored once generated.                   
 
     ![Copy secret code](/static/assets/site-administration/images/ums-copy-secret-code.png)
 
@@ -112,4 +112,4 @@ This common embed secret code will help you embed the dashboard from multiple si
 
     ![Reset secret code](/static/assets/site-administration/images/ums-reset-secret-code.png)
 
-> **Warning:** Resetting this common embed code will break previously working embedded dashboards across multiple sites.
+> **WARNING:** Resetting this common embed code will break previously working embedded dashboards across multiple sites.
