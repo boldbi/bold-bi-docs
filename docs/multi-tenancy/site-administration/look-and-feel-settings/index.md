@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Look and Feel Settings in Site Administration | Bold BI Docs
+title: Look and Feel Settings in Site Administration | Bold BI Docs
 description: Learn how to customize and manage the look & feel settings for the Bold BI application's User Management Server site administration settings page.
 platform: bold-bi
 documentation: ug
