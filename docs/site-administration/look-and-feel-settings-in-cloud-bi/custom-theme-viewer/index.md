@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Custom Themes for Dashboards Using CSS3 Variable | Bold BI Docs
-description: Learn how to create a custom theme using CSS3 Variables and apply custom theme for your dashboards in the Bold BI application.
+description: "Learn how to create a custom theme with CSS3 variables in Bold BI Cloud and apply it to your dashboards, so charts and the viewer match your brand colors."
 platform: bold-bi
 documentation: ug
 ---
