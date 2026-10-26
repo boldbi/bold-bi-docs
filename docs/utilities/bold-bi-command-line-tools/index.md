@@ -44,6 +44,6 @@ cd /var/www/bold-services/application/utilities/adminutils/
 
 ## Available Commands
 
-Please find the following list of commands currently available in the admin utility: 
+Please find the following list of commands available in the admin utility: 
 * [**Reset Password**](/utilities/bold-bi-command-line-tools/reset-password/)
 * [**Update Application Database**](/utilities/bold-bi-command-line-tools/reset-application-database/)
