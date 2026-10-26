@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Exporting Options for Dashboard Widget | Bold BI Embedded
-description: Learn how to enable settings to export a dashboard widget at runtime to PDF, Image, PowerPoint, CSV, or Excel files in Bold BI Embedded.
+description: "Learn how to enable widget export settings in Bold BI, so users can export a widget at runtime to PDF, image, PowerPoint, CSV, or Excel files from the viewer."
 canonical: "/working-with-dashboards/preview-dashboard/exporting-reports-from-widgets/exporting-options/"
 platform: bold-bi
 documentation: ug
