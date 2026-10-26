@@ -1,16 +1,16 @@
 ---
 layout: post
 title: Dashboard Templates – Embedded BI | Bold BI Documentation
-description: Learn how to create dashboard from pre-defined dashboard templates by just connecting your data in Bold BI Embedded.
+description: Learn how to create a dashboard from pre-defined dashboard templates by just connecting your data in Bold BI Embedded.
 platform: bold-bi
 documentation: ug
 
 ---
-# Bold BI sample dashboard templates 
+# Bold BI Sample Dashboard Templates 
 
 Dashboard Templates are pre-built dashboards that allow you to quickly create your own awesome dashboards! Choose the template, enter the credentials, and your fully functional dashboard is created in mere seconds. Upon creation, you can modify the dashboard to further customize it based on your preferences.
 
-> **Note:** This feature is available in Syncfusion Managed Cloud Server but not in On-Premises Deployment.
+> **NOTE:** This feature is available in Syncfusion Managed Cloud Server but not in On-Premises Deployment.
 
 Follow these steps to quickly publish the dashboard with your data over the template you have selected:
 
@@ -22,11 +22,11 @@ Follow these steps to quickly publish the dashboard with your data over the temp
 
     ![Authentication Window](/static/assets/working-with-dashboards/images/jira-authentication-window.png)
 
-3. Once the authentication is successful, the dashboard will be prepared based on your data over the template. Click the link with the dashboard name to visualize the published dashboard!
+3. Once the authentication is successful, the dashboard is prepared based on your data over the template. Click the link with the dashboard name to visualize the published dashboard!
 
     ![Click Dashboard Link](/static/assets/working-with-dashboards/images/new-dashboard-link.png)
 
-    The newly created dashboard will now be displayed.
+    The newly created dashboard is now displayed.
 
     ![View New Dashboard](/static/assets/working-with-dashboards/images/new-dashboard.png)
 
@@ -45,7 +45,7 @@ Check out this <a href="https://www.boldbi.com/blog/monitoring-azure-devops-proj
 ## FreshBooks Dashboard
 
 Look at this <a href="https://www.boldbi.com/blog/key-metrics-for-your-business-growth-with-freshbooks" target="_blank">blog</a>
- blog post to learn how to view your business finances in a way that helps analyze your revenue and expenses, customer growth, and payment status.
+ post to learn how to view your business finances in a way that helps analyze your revenue and expenses, customer growth, and payment status.
 
 ![FreshBooks Dashboard](/static/assets/working-with-dashboards/images/freshbooks-dashboard.png)
 
@@ -61,7 +61,7 @@ Look at this <a href="https://www.boldbi.com/blog/key-metrics-for-your-business-
 
 ![GitHub Dashboard](/static/assets/working-with-dashboards/images/github-dashboard.png)
 
-Check out this<a href="https://www.boldbi.com/blog/analyze-and-visualize-your-github-repository-statistics-data" target="_blank">blog</a>
+Check out this <a href="https://www.boldbi.com/blog/analyze-and-visualize-your-github-repository-statistics-data" target="_blank">blog</a>
  article to learn how to analyze and visualize your GitHub repository activity in the Bold BI dashboard.
 
 ## Infusionsoft Sales Dashboard
@@ -77,7 +77,7 @@ Check out this<a href="https://www.boldbi.com/blog/analyze-and-visualize-your-gi
 ![Jira Dashboard](/static/assets/working-with-dashboards/images/jira-dashboard.png)
 
 Look at this <a href="https://www.boldbi.com/blog/jira-dashboard-example-with-bold-bi" target="_blank">blog</a>
- blog post to learn how to connect your Jira data with Bold BI Dashboard and visualize your project and team insights.
+ post to learn how to connect your Jira data with Bold BI Dashboard and visualize your project and team insights.
 
 ## MailChimp Dashboard
 
@@ -114,14 +114,14 @@ This <a href="https://www.boldbi.com/blog/twilio-dashboard-example-with-bold-bi"
 
 ![YouTube Dashboard](/static/assets/working-with-dashboards/images/youtube-dashboard.png)
 
-Look at this<a href="https://www.boldbi.com/blog/create-custom-youtube-dashboards-with-bold-bi" target="_blank">blog</a>
- blog post to learn how to build a simple analytics dashboard to show the key metrics of your YouTube channel all in one place using Bold BI.
+Look at this <a href="https://www.boldbi.com/blog/create-custom-youtube-dashboards-with-bold-bi" target="_blank">blog</a>
+ post to learn how to build a simple analytics dashboard to show the key metrics of your YouTube channel all in one place using Bold BI.
 
 ## Zendesk Dashboard
 
 ![Zendesk Dashboard](/static/assets/working-with-dashboards/images/zendesk-dashboard.png)
 
-Check out this<a href="https://www.boldbi.com/blog/zendesk-dashboard-example-for-monitoring-customer-service-performance-with-bold-bi" target="_blank">blog</a> article to learn how to build a support team performance monitoring dashboard with Zendesk data using Bold BI.
+Check out this <a href="https://www.boldbi.com/blog/zendesk-dashboard-example-for-monitoring-customer-service-performance-with-bold-bi" target="_blank">blog</a> article to learn how to build a support team performance monitoring dashboard with Zendesk data using Bold BI.
 
-## Related links
+## Related Links
  <a href="https://www.boldbi.com/blog/introduction-to-bold-bi-creating-dashboards-with-pre-defined-templates-webinar-qa" target="_blank">Blog Post</a> 
