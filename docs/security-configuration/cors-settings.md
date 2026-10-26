@@ -1,18 +1,18 @@
 ---
 layout: post
-title:  Configure Cross-Origin Resource Sharing (CORS) | Bold BI Docs
-description: Learn about how to configure CORS(Cross-Origin Resource Sharing) settings and how to customize it in Bold BI embedded application.
+title: Configure Cross-Origin Resource Sharing (CORS) | Bold BI Docs
+description: "Learn how to configure and customize CORS (Cross-Origin Resource Sharing) settings in Bold BI, so only trusted domains can call the application from browsers."
 platform: bold-bi
 documentation: ug
 ---
 
-# Cross Origin Resource Sharing Configuration
+# Cross-Origin Resource Sharing Configuration
 
 Think about a situation in which you want to update user information in Bold BI using a web app that is hosted in a different domain. To achieve this, you must make an API request from your web app, which is hosted in a different domain, to the Bold BI API domain. However, what if a fraudster uses an application interface that is identical to yours and utilizes this API to gain access to user data? The correct CORS configuration will prevent this type of attack and protect your application.
 
 CORS is a browser security feature known as cross-origin resource sharing (CORS), which restricts cross-origin HTTP requests made by a browser. When an HTTP request is sent to a domain, sub-domain, port, or protocol different from the one it originated from, it is considered a cross-origin request.
 
-## How its works?
+## How Its Works?
 
 Browsers limit cross-origin HTTP requests due to security concerns. For example, when a browser requests data from one site to another, it makes cross-origin requests. The browser sends a **pre-flight** HTTP request with the **OPTIONS** method to the resource on the other domain before sending the actual request. This is done to ensure the safety of submitting the actual request. In the pre-flight request, the server includes headers in the responses it provides.
 
@@ -39,9 +39,9 @@ Access-Control-Max-Age: 86400
 
 Based on the header values, the browser determines whether to send the actual request or not. Otherwise, the browser will throw a CORS error and will not send the actual request.
 
-> **Important:** Bold BI uses CORS for `XMLHttpRequest` or `Fetch` requests to avoid the risks of cross-origin HTTP requests. This will not affect the iFrame-based embedding since this request will be considered as a document request, not an `XMLHttpRequest` or `Fetch` request.
+> **IMPORTANT:** Bold BI uses CORS for `XMLHttpRequest` or `Fetch` requests to avoid the risks of cross-origin HTTP requests. This will not affect the iFrame-based embedding since this request will be considered as a document request, not an `XMLHttpRequest` or `Fetch` request.
 
-## Default CORS policy in Bold BI
+## Default CORS Policy in Bold BI
 
 The default CORS policy automatically allows all cross-origin requests from cross-domains with different origins, methods, and headers.
 
@@ -49,7 +49,7 @@ The default CORS policy automatically allows all cross-origin requests from cros
 
 The default CORS policy is used until you enable and customize the CORS settings in Bold BI. Please follow the steps below to enable CORS and customize it in Bold BI.
 
-### Steps to enable CORS
+### Steps to Enable CORS
 
 1. Please go to the administration page on the Bold BI site and click on the `CORS Policy` tab. Here, you can configure the CORS settings headers.
 
@@ -71,11 +71,11 @@ The default CORS policy is used until you enable and customize the CORS settings
 
     ![Allowed Headers](/static/assets/security-configuration/images/allowed-headers.png#width=45%)
 
-6. CORS automatically excludes cookies from cross-origin requests as a default behavior. This sets it apart from other cross-origin methods such as JSON-P, which always includes cookies in the request. This practice of including cookies in JSON-P requests exposes systems to a type of security vulnerabilities called cross-site request forgery (CSRF).<br/><br/>When we set "allow credentials" to true, the CORS response will be sent with the header `Access-Control-Allow-Credentials: true`. This informs the browser that both the server and the client must agree to include cookies in the request. As a result, cookies become a deliberate choice rather than an uncontrollable, passive event.
+6. CORS automatically excludes cookies from cross-origin requests as a default behavior. This sets it apart from other cross-origin methods such as JSON-P, which always includes cookies in the request. This practice of including cookies in JSON-P requests exposes systems to a type of security vulnerability called cross-site request forgery (CSRF).<br/><br/>When we set "allow credentials" to true, the CORS response will be sent with the header `Access-Control-Allow-Credentials: true`. This informs the browser that both the server and the client must agree to include cookies in the request. As a result, cookies become a deliberate choice rather than an uncontrollable, passive event.
 
     ![Allow Crdentials](/static/assets/security-configuration/images/allow-credentials.png#width=45%)
 
-7. Application will include the value from the `Expose Headers` field in the pre-flight response Access-Control-Expose-Headers header like `Access-Control-Expose-Headers: <header name>, <header name>`. If no value is updated in this field, then it will include a wildcard header value in the header like `Access-Control-Expose-Headers: *`.<br/><br/>If the `Access-Control-Expose-Headers` contains response headers or a wildcard value for the exposed header, the web browser is able to access and read the response header at the script level. By default, only the response headers that are deemed safe according to CORS guidelines are exposed, such as `Cache-Control` and `Content-Type`.
+7. The application will include the value from the `Expose Headers` field in the pre-flight response Access-Control-Expose-Headers header like `Access-Control-Expose-Headers: <header name>, <header name>`. If no value is updated in this field, then it will include a wildcard header value in the header like `Access-Control-Expose-Headers: *`.<br/><br/>If the `Access-Control-Expose-Headers` contains response headers or a wildcard value for the exposed header, the web browser is able to access and read the response header at the script level. By default, only the response headers that are deemed safe according to CORS guidelines are exposed, such as `Cache-Control` and `Content-Type`.
 
     ![Expose Headers](/static/assets/security-configuration/images/expose-headers.png#width=45%)
 
