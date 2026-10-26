@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Configure SSO with Keycloak using Open ID Connect | Bold BI Docs
-description: Learn how to configure Bold BI Embedded application with Keycloak identity provider for Single Sign-on authentication using OpenID Connect.
+title: Configure SSO with Keycloak using OpenID Connect | Bold BI Docs
+description: Learn how to configure Bold BI Embedded application with Keycloak identity provider for Single Sign-On authentication using OpenID Connect.
 platform: bold-bi
 documentation: ug
 ---
 
-# Keycloak support for SSO authentication
+# Keycloak Support for SSO Authentication
 
 Keycloak is an open-source identity and access management solution designed for modern applications and services.
 
@@ -14,18 +14,18 @@ This section explains how to perform Single Sign-On for users in Keycloak with t
 
 > **NOTE:** This feature is available in Bold BI Embedded Analytics, but not in Cloud Analytics Server.
 
-## How to register the Bold BI application in Keycloak
+## How to Register the Bold BI Application in Keycloak
 
-> **NOTE:**  This configuration needs to be done on the Keycloak website.
+> **NOTE:** This configuration needs to be done on the Keycloak website.
 
 #### Prerequisites
 
 * An admin account in Keycloak.
 * Install the Bold BI application.
 
-### Steps to register the Bold BI application
+### Steps to Register the Bold BI Application
 
-1. Login to the Keycloak website using an admin account.
+1. Log in to the Keycloak website using an admin account.
 
    ![Keycloak Admin console](/static/assets/site-administration/openid-support/images/Keycloak-adminconsole.png)
 
@@ -64,9 +64,9 @@ This section explains how to perform Single Sign-On for users in Keycloak with t
 
 After successfully registering with Keycloak, save these settings on the Bold BI settings page to enable this authentication.
 
-## Enable Keycloak authentication support in Bold BI
+## Enable Keycloak Authentication Support in Bold BI
 
-Configure the settings in Bold BI as shown in the following screenshot to enable authentication using Keycloak.
+Configure the settings in Bold BI, as shown in the following screenshot, to enable authentication using Keycloak.
 
 ![Keycloak Bi Settings](/static/assets/site-administration/openid-support/images/Keycloak-bi-settings.png)
 
@@ -91,22 +91,22 @@ The fields that need to be saved in Bold BI in order to enable Keycloak for auth
 
 <tr>
 <td>Authority</td>
-<td>It must be the URL of your Keycloak instance.<br><br>URL format: https://{host}/auth/realms/{realm}<br><br><strong>Note:</strong>The Authority URL only accepts HTTPS, and Keycloak should be configured in HTTPS.</td>
+<td>It must be the URL of your Keycloak instance.<br><br>URL format: https://{host}/auth/realms/{realm}<br><br><strong>Note:</strong> The Authority URL only accepts HTTPS, and Keycloak should be configured in HTTPS.</td>
 </tr>
 
 <tr>
 <td>Client ID</td>
-<td>The Client ID is the one you get after registering the Bold BI application on the Keycloak website.<br><br><strong>Note:  </strong> Client ID is available in the <strong>Clients</strong> page on the Keycloak website.</td>
+<td>The Client ID is the one you get after registering the Bold BI application on the Keycloak website.<br><br><strong>Note:</strong> Client ID is available in the <strong>Clients</strong> page on the Keycloak website.</td>
 </tr>
 
 <tr>
 <td>Client Secret</td>
-<td>The Client Secret is the one you get after registering the Bold BI application on the Keycloak website.<br><br><strong>Note:  </strong> Client Secret is available in the Credentials section of the Client details page.</td>
+<td>The Client Secret is the one you get after registering the Bold BI application on the Keycloak website.<br><br><strong>Note:</strong> Client Secret is available in the Credentials section of the Client details page.</td>
 </tr>
 
 <tr>
 <td>Identifier</td>
-<td>The Bold BI application requires an email address to login to the application.<br><br>So, please set the identifier as email.<br><br><strong>Note:</strong> All accounts in Keycloak should have a valid email address.</td>
+<td>The Bold BI application requires an email address to log in to the application.<br><br>So, please set the identifier as email.<br><br><strong>Note:</strong> All accounts in Keycloak should have a valid email address.</td>
 </tr>
 
 <tr>
