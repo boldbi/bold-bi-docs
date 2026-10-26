@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Anonymous Access to Dashboards – Embedded BI | Bold BI Docs
-description: Learn how to mark a dashboard as public for enabling anonymous access and restore to private access in Bold BI Embedded.
+description: Learn how to mark a dashboard as public for enabling anonymous access and restore it to private access in Bold BI Embedded.
 canonical: "/working-with-dashboards/share-dashboards/public-dashboards/"
 platform: bold-bi
 documentation: ug
@@ -15,7 +15,7 @@ Public Dashboards are accessible to anonymous users who have the Dashboard link.
 
 Private Dashboards are accessible to registered users in Bold BI who have appropriate permissions.
 
-## Make public
+## Make Public
 
 The `Make Public` option is available only to the owner of the Dashboard.
 
