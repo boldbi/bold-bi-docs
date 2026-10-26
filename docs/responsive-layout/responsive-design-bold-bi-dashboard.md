@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Responsive Dashboard – Embedded BI | Bold BI Documentation
-description: Know about the responsiveness of Bold BI Embedded dashboard and its widgets in desktop, mobile, and tablet devices.
+description: "Learn how Bold BI dashboards and their widgets respond to desktop, tablet, and mobile screens, and how to design dashboards that read well on every device."
 canonical: "/responsive-layout/responsive-design-bold-bi-dashboard/"
 platform: bold-bi
 documentation: ug
