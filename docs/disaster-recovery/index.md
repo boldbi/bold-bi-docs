@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Disaster Recovery - An Overview | Bold BI Learning
-description: Learn how to perform disaster recovery for Bold BI across various environments by ensuring backups of application data, metadata, and the IMDB database are in place.
+description: "Learn how to plan disaster recovery for Bold BI by backing up application data, metadata, and the IMDB database, and restoring them across environments."
 platform: bold-bi
 documentation: ug
 ---
