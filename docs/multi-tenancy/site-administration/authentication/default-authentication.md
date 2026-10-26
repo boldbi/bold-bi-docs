@@ -6,7 +6,7 @@ platform: bold-bi
 documentation: ug
 ---
 
-# Default Authentication option in User Management Server 
+# Default Authentication Option in User Management Server 
 
 This topic explains how to enable or disable default authentication in User Management Server. 
 
