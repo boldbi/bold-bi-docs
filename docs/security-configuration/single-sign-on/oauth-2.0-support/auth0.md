@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Single Sign-On with Auth0 Provider of OAuth 2.0 | Bold BI
-description: Learn how to configure Bold BI Embedded with Auth0 identity provider for Single Sign-On authentication using OAuth 2.0.
+description: "Learn how to configure Auth0 as an OAuth 2.0 identity provider for single sign-on in Bold BI, so users can sign in to dashboards with their Auth0 accounts."
 platform: bold-bi
 documentation: ug
 ---
