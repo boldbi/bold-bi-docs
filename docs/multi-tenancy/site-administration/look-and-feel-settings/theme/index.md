@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Application and Dashboard Theme – Bold ID | Bold BI Documentation
-description: Discover how to create a custom theme file and upload the created theme file in User Management Server.
+description: "Learn how to create a custom theme file and upload it in the Bold BI User Management Server to apply your brand colors to the application and its dashboards."
 platform: bold-bi
 documentation: ug
 ---
