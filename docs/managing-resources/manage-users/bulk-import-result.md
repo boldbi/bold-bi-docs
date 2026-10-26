@@ -5,13 +5,13 @@ platform: bold-bi
 documentation: ug
 ---
 
-# Bulk Import result
+# Bulk Import Result
 
-The Bulk Import Result page displays the list of all completed and ongoing bulk user import jobs. You can access the Bulk Import Result page by clicking on the `Bulk Import Result` button from the user management page, as shown below.
+The Bulk Import Result page displays the list of all completed and ongoing bulk user import jobs. You can access the Bulk Import Result page by clicking on the `Bulk Import Result` button from the user management page.
 
 ![User Listing Page](/static/assets/managing-resources/manage-users/images/user-listing-page.png#width=55%)
 
-After clicking the Bulk Import Result button, you will be directed to the Bulk Import Result page.
+After clicking the Bulk Import Result button, you are directed to the Bulk Import Result page.
 
 ![User Listing Page](/static/assets/managing-resources/manage-users/images/bulk-import-result-page.png#width=55%)
 
@@ -21,7 +21,7 @@ You can also view detailed information about the job, including total user impor
 
 ![View Bulk Import Job Details](/static/assets/managing-resources/manage-users/images/view-bulk-import-job-detail.png#width=55%)
 
-After clicking View, you will be taken to the Bulk Import Result page as shown below.
+After clicking View, you are taken to the Bulk Import Result page.
 
 ![Bulk User Import Job Details page](/static/assets/managing-resources/manage-users/images/import-job-details-page.png#width=70%)
 
@@ -35,7 +35,7 @@ You can delete a job from the bulk import grid listing by clicking on the contex
 
 ![Delete Bulk Import Job Details](/static/assets/managing-resources/manage-users/images/delete-bulk-import-job-details.png#width=55%)
 
-> **NOTE:**  You can only delete jobs with a status of Suspended or Completed.
+> **NOTE:** You can only delete jobs with a status of Suspended or Completed.
 
 ## Suspend Import Job
 
@@ -43,4 +43,4 @@ You can suspend an ongoing user import process from the bulk import grid listing
 
 ![suspend Bulk Import Job Details toast](/static/assets/managing-resources/manage-users/images/suspend-bulk-user-import.png#width=55%)
 
-> **NOTE:**  You can only suspend jobs with a status of In Progress or Yet to Start.
+> **NOTE:** You can only suspend jobs with a status of In Progress or Yet to Start.
