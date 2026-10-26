@@ -11,7 +11,7 @@ documentation: ug
 
 This section explains how to use our interactive API documentation.
 
-You need to obtain an access token to authenticate the API endpoints in order to receive responses.
+You need to obtain an access token to authenticate the API endpoints to receive responses.
 
 ## Get Access Token
 Each client has its own unique token to authenticate requests, which should be added to the header of the request.
