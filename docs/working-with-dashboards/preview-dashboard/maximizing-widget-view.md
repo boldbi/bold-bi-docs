@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Full-Screen View of Dashboard Visual – Embedded BI | Bold BI
-description: Learn how to configure and enable maximized view of a widget while previewing a dashboard in Bold BI Embedded.
+description: "Learn how to configure and enable the maximized view of a widget in Bold BI, so users can expand a single widget to full size while previewing the dashboard."
 canonical: "/working-with-dashboards/preview-dashboard/maximizing-widget-view/"
 platform: bold-bi
 documentation: ug
