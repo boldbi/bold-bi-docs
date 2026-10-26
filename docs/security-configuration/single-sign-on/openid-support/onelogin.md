@@ -1,31 +1,31 @@
 ---
 layout: post
 title: SSO with OneLogin Provider of OpenID Connect | Bold BI
-description: Learn how to configure Bold BI Embedded with OneLogin identity provider for Single Sign-on authentication using OpenID Connect.
+description: Learn how to configure Bold BI Embedded with OneLogin identity provider for Single Sign-On authentication using OpenID Connect.
 platform: bold-bi
 documentation: ug
 ---
 
-# OneLogin support for SSO authentication
+# OneLogin Support for SSO Authentication
 
 The Bold BI application supports adding users using the OneLogin provider. By importing them, you can share the dashboards and email exported dashboards with them.
 
 > **NOTE:** This feature is available in Bold BI Embedded Analytics, but it is not available in Cloud Analytics Server.
 
-## How to register the Bold BI application in OneLogin
+## How to Register the Bold BI Application in OneLogin
 
 This section explains how to perform Single Sign-On for users in OneLogin with the Bold BI application.
 
-> **NOTE:**  This configuration needs to be done on the OneLogin website.
+> **NOTE:** This configuration needs to be done on the OneLogin website.
 
 #### Prerequisites
 
 * An admin account in OneLogin.
 * Install Bold BI application.
 
-### Steps to register the Bold BI application
+### Steps to Register the Bold BI Application
 
-1. Login to the OneLogin website using an admin account.
+1. Log in to the OneLogin website using an admin account.
 
 2. Click `Applications` in the header menu.
 
@@ -63,9 +63,9 @@ This section explains how to perform Single Sign-On for users in OneLogin with t
 
 After successfully registering in OneLogin, save these settings on the Bold BI settings page to enable this authentication.
 
-## Enable OneLogin support for authentication in Bold BI
+## Enable OneLogin Support for Authentication in Bold BI
 
-Configure the settings in Bold BI as in the following screenshot to enable the authentication using the OneLogin.
+Configure the settings in Bold BI as in the following screenshot to enable the authentication using OneLogin.
 
 ![OneLogin settings](/static/assets/site-administration/openid-support/images/onelogin-sample-value.png#width=55%)
 
@@ -85,17 +85,17 @@ The fields that need to be saved in Bold BI in order to enable OneLogin for auth
 
 <tr>
 <td>Authority</td>
-<td>It must be in the form <span style="color:#0c9dd1">https://subdomain.onelogin.com/oidc</span>. Sub domain represents the OneLogin instance.</td>
+<td>It must be in the form <span style="color:#0c9dd1">https://subdomain.onelogin.com/oidc</span>. Subdomain represents the OneLogin instance.</td>
 </tr>
 
 <tr>
 <td>Client ID</td>
-<td>The Client ID you get after registered the Bold BI application in OneLogin website.</td>
+<td>The Client ID you get after registering the Bold BI application in OneLogin website.</td>
 </tr>
 
 <tr>
 <td>Client Secret</td>
-<td>The Client Secret you get after registered the Bold BI application in OneLogin website.</td>
+<td>The Client Secret you get after registering the Bold BI application in OneLogin website.</td>
 </tr>
 
 <tr>
