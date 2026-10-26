@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Account Settings – Embedded BI | Bold BI Documentation
-description: Learn how to activate user accounts in the Bold BI server. There are two account activation modes available - Automatic and Email.
+description: "Learn how to configure user account activation in the Bold BI server, choosing between automatic activation and email activation for newly added users."
 platform: bold-bi
 documentation: ug
 ---
