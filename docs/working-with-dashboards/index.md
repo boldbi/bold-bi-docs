@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Working with Dashboards - Embedded BI | Bold BI Docs
+title: Working with Dashboards – Embedded BI | Bold BI Docs
 description: Learn how to work with dashboards using templates, dashboard filters, commenting, and refresh in Bold BI deployed on your server.
 canonical: "/working-with-dashboards/"
 platform: bold-bi
