@@ -1,7 +1,7 @@
 ---
 layout: post
 title: REST API v2.0 – Embedded Server | Bold BI Documentation
-description: Explore the REST API v2.0 reference to know about the APIs on authentication, items, permissions in Bold BI deployed in your server.
+description: Explore the REST API v2.0 reference to know about the APIs on authentication, items, and permissions in Bold BI deployed in your server.
 canonical: "/server-api-reference/v2.0/"
 platform: bold-bi
 documentation: ug
