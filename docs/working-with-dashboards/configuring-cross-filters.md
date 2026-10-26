@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Creating Cross Filters for Dashboards – Embedded BI | Bold BI Docs
-description: Learn how to create cross filters to configure a master-listener relationship between widgets in a dashboard in Bold BI Embedded.
+description: "Learn how to configure cross filters in Bold BI to set up master and listener relationships between widgets, so one selection filters the related widgets."
 canonical: "/working-with-dashboards/configuring-cross-filters/"
 platform: bold-bi
 documentation: ug
