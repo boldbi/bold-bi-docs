@@ -75,7 +75,7 @@ The application startup screen helps you configure the admin account setup, data
 
 ## System Administrator Account
 
-A new user should be created in order to access the Bold BI sites and dashboards, using the details mentioned in the following image.
+A new user should be created to access the Bold BI sites and dashboards, using the details mentioned in the following image.
 
 ![Admin User Registration](/static/assets/application-startup/images/application-startup-admin.png)
 
