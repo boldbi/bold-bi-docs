@@ -8,7 +8,7 @@ documentation: ug
 
 # Azure AD Support for SSO Authentication
 
-Azure Active Directory (Azure AD) OAuth is a powerful tool for securing your Bold BI applications. This guide walks you through the process of configuring Azure AD OAuth in your Bold BI site.
+Azure Active Directory (Azure AD) OAuth is a tool for securing your Bold BI applications. This guide walks you through the process of configuring Azure AD OAuth in your Bold BI site.
 
 ## How to Register the Bold BI Application in Azure AD
 
