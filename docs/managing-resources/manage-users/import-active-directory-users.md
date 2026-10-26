@@ -9,7 +9,7 @@ documentation: ug
 
 This section explains how to search for and import users from Active Directory into the Bold BI application.
 
-> **NOTE:** An Active Directory connection must be configured in the [Active Directory Settings](/site-administration/user-directory-settings/active-directory/active-directory/) on the `General` page in order to import users. This feature is available in On-Premises Deployment but not in Syncfusion Managed Cloud Server.
+> **NOTE:** An Active Directory connection must be configured in the [Active Directory Settings](/site-administration/user-directory-settings/active-directory/active-directory/) on the `General` page to import users. This feature is available in On-Premises Deployment but not in Syncfusion Managed Cloud Server.
 
 Only users belonging to the `System Administrator` group can import Active Directory users into the Bold BI application.
 
