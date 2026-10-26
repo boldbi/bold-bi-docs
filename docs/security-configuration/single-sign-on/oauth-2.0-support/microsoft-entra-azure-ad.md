@@ -6,11 +6,11 @@ platform: bold-bi
 documentation: ug
 ---
 
-# Azure AD support for SSO authentication
+# Azure AD Support for SSO Authentication
 
-Azure Active Directory (Azure AD) OAuth is a powerful tool for securing your Bold BI applications. This guide will walk you through the process of configuring Azure AD OAuth in your Bold BI site.
+Azure Active Directory (Azure AD) OAuth is a powerful tool for securing your Bold BI applications. This guide walks you through the process of configuring Azure AD OAuth in your Bold BI site.
 
-## How to register the Bold BI application in Azure AD
+## How to Register the Bold BI Application in Azure AD
 
 This section explains how to perform Single Sign-On for users in Azure AD with the Bold BI application.
 
@@ -23,7 +23,7 @@ This section explains how to perform Single Sign-On for users in Azure AD with t
 3. Fill in the following details in the form and click Register:
 
 	*  Application Name
-	*  Supported account types -> Accounts in any organizational directory (Any Azure AD directory - Multitenant). If other Azure directory users don’t need to login, select Single tenant.
+	*  Supported account types -> Accounts in any organizational directory (Any Azure AD directory - Multitenant). If other Azure directory users don’t need to log in, select Single tenant.
 	*  Redirect URI -> https://{yourdomain}/signin-oauth
 
     ![Add Application](/static/assets/site-administration/oauth-support/images/azure-ad-form.png)
@@ -36,13 +36,13 @@ This section explains how to perform Single Sign-On for users in Azure AD with t
 
     ![Client ID](/static/assets/site-administration/oauth-support/images/azure-ad-client-id.png).
 
-## Enable Azure AD support for authentication in Bold BI
+## Enable Azure AD Support for Authentication in Bold BI
 
 Configure the settings in Bold BI, as shown in the following screenshot, to enable authentication using Azure AD.
 
 ![Azure AD settings](/static/assets/site-administration/oauth-support/images/azure-ad-configuration.png)
 
-The fields that need to be saved in Bold BI to enable Azure AD for authentication are explained as follows.
+The fields that need to be saved in Bold BI to enable Azure AD for authentication are explained as follows:
 
 <table>
 
@@ -53,7 +53,7 @@ The fields that need to be saved in Bold BI to enable Azure AD for authenticatio
 
 <tr>
 <td>Provider Logo</td>
-<td>It represents the logo of the authentication provider to be displayed in the login .</td>
+<td>It represents the logo of the authentication provider to be displayed in the login.</td>
 </tr>
 
 <tr>
@@ -83,12 +83,12 @@ The fields that need to be saved in Bold BI to enable Azure AD for authenticatio
 
 <tr>
 <td>Client ID</td>
-<td>The Client ID you get after registered the Bold BI application in Azure AD website.</td>
+<td>The Client ID you get after registering the Bold BI application in Azure AD website.</td>
 </tr>
 
 <tr>
 <td>Client Secret</td>
-<td>The Client Secret you get after registered the Bold BI application in Azure AD website.</td>
+<td>The Client Secret you get after registering the Bold BI application in Azure AD website.</td>
 </tr>
 
 <tr>
