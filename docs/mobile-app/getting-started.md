@@ -25,7 +25,7 @@ The Bold BI Embedded Analytics Server should be accessed from outside the machin
 
 ## Configure and Login in Bold BI Dashboard Mobile App
 
-If this is your first time logging in, type in the server URL as shown below and then enter your username and password to log in.
+If this is your first time logging in, type in the server URL and then enter your username and password to log in.
 <table>
  <tr>
     <td>
