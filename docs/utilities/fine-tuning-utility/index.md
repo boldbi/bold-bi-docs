@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Fine-Tuning Utility for Q&A Widget - Embedded BI | Bold BI Docs
-description: Learn and unlock the secrets to building a finely tuned model using OpenAI or Azure OpenAI, tailored specifically for seamless integration into Bold BI’s Q&A widget.
+description: "Learn how to build a fine-tuned model with OpenAI or Azure OpenAI using the Bold BI fine-tuning utility, so the Q&A widget gives better answers about your data."
 canonical: "/utilities/fine-tuning-utility/"
 platform: bold-bi
 documentation: ug
