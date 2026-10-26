@@ -48,7 +48,7 @@ Once the connection details are filled, click `Next` to retrieve the schema of t
 
 ## Map Database Columns
 
-The page will appear as shown below once the database has been connected.
+The page will appear once the database has been connected.
 
 ![Select Column](/static/assets/site-administration/images/database-select-columns-new.png)
 
