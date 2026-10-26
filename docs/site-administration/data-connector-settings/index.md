@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Connector Settings – Embedded BI | Bold BI Documentation
-description: Learn how to configure the account configurations in datasource such as OAuth configurations in the Bold BI Embedded.
+description: "Learn how to configure data connector account settings in Bold BI, such as OAuth configurations, so users can connect to data sources that need sign-in."
 platform: bold-bi
 documentation: ug
 ---
