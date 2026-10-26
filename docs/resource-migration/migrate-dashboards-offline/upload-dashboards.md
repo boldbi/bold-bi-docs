@@ -42,7 +42,7 @@ To upload the dashboard(s) from site(s), follow these steps:
 
 ## Updating the Dashboard Files for Uploading
 
-After successfully uploading the required dashboard files, a new user interface will be displayed to update the details of the uploaded dashboards. The updated interface will appear as shown below.
+After successfully uploading the required dashboard files, a new user interface will be displayed to update the details of the uploaded dashboards. The updated interface will appear.
 
 ![Upload Second](/static/assets/resource-migration/migrate-dashboards-offline/images/upload-second.png)
 
@@ -53,7 +53,7 @@ The following information can be updated in the uploaded dashboards:
 1. Updating the category.
 
     On clicking the `Category`, the category can be changed.
-    There is also an option to create a new category as shown below.
+    There is also an option to create a new category.
 
     ![Upload Category](/static/assets/resource-migration/migrate-dashboards-offline/images/upload-create-category.png)
 
@@ -75,7 +75,7 @@ The following are two data sources with different configuration states:
    
    > **NOTE:** Dashboards downloaded by enabling the `Include sensitive information` will have all data sources in the `Completed` state. If not, they will all be in the `Pending` state.
 
-2. To change the Pending state, you need to click the data source list as shown below.
+2. To change the Pending state, you need to click the data source list.
    ![Upload DsList](/static/assets/resource-migration/migrate-dashboards-offline/images/upload-ds-list.png)
 
 3. A dialog will render, which provides two options to update the configuration of the data source as follows:
@@ -86,7 +86,7 @@ The following are two data sources with different configuration states:
 
 ### Configure the Data Source
     
-This will provide an option to alter the details of the data source, as shown below.
+This will provide an option to alter the details of the data source.
 
 ![Upload DsConfig](/static/assets/resource-migration/migrate-dashboards-offline/images/upload-ds-config.png)
 
@@ -109,7 +109,7 @@ The data source configuration status will be updated as `Completed` as shown bel
 
 ### Map to an Existing Data Source
 
-This will provide the option to link the current data source to a data source that is already present in the same tenant, as shown below.
+This will provide the option to link the current data source to a data source that is already present in the same tenant.
 
 ![Upload DsConfigCompleted](/static/assets/resource-migration/migrate-dashboards-offline/images/upload-ds-existing.png)
 
@@ -121,7 +121,7 @@ The data source configuration status will be updated as `Completed` as shown bel
 
 ### User Interface Indications
 
-You may find that on the left side of the user interface within the `Dashboard List`, one of the dashboards is in the `Needs Attention` state and `Configuration Completed` state, as shown below.
+You may find that on the left side of the user interface within the `Dashboard List`, one of the dashboards is in the `Needs Attention` state and `Configuration Completed` state.
 
 ![Upload Second](/static/assets/resource-migration/migrate-dashboards-offline/images/upload-second.png)
 
@@ -129,11 +129,11 @@ After all of the data sources present in a dashboard are configured and updated 
 
 For example, in the above image, you have `HR Dashboard` in `Needs Attention` state, since the only data source present in the dashboard is still in pending state. If the dashboard has more than one data source, all of them should be in `Completed` state so that the dashboard will be updated as ` Configuration Completed`.
 
-Similarly, you will be updating the bottom of the page with the updated information regarding the dashboard status as shown below.
+Similarly, you will be updating the bottom of the page with the updated information regarding the dashboard status.
 
 ![Upload Bottom Footer](/static/assets/resource-migration/migrate-dashboards-offline/images/upload-bottom-footer.png)
 
-You have the option to filter the dashboards based on the Configuration State, as shown below.
+You have the option to filter the dashboards based on the Configuration State.
 
 ![Upload Listing Filter](/static/assets/resource-migration/migrate-dashboards-offline/images/upload-listing-filter.png)
 
@@ -149,7 +149,7 @@ Throughout this process, you can close the dialog box by clicking on the close b
 
 ![Upload Dialog Close](/static/assets/resource-migration/migrate-dashboards-offline/images/upload-dialog-close.png)
 
- After clicking, you will receive a message prompting you to close, along with an option to navigate to the **Upload Drafts** page as shown below.
+ After clicking, you will receive a message prompting you to close, along with an option to navigate to the **Upload Drafts** page.
 
 ![Upload Dialog Close Confirm](/static/assets/resource-migration/migrate-dashboards-offline/images/upload-dialog-closeconfirm.png)
 
@@ -157,7 +157,7 @@ The uploaded files will be visible on the Upload Drafts page. Once redirected to
 
 ![Upload Drafts Page](/static/assets/resource-migration/migrate-dashboards-offline/images/upload-drafts-page.png)
 
-You can select multiple dashboards from the Upload Drafts page to resume where you left off. To proceed, select the multiple dashboards and click the `Complete Upload` button, as shown below.
+You can select multiple dashboards from the Upload Drafts page to resume where you left off. To proceed, select the multiple dashboards and click the `Complete Upload` button.
 
 ![Upload Drafts Continue](/static/assets/resource-migration/migrate-dashboards-offline/images/upload-drafts-continue.png)
 
@@ -209,7 +209,7 @@ Click the `Browse` button to add a new data connection.
 
 ![Oauth drive button ](/static/assets/resource-migration/migrate-dashboards-offline/images/oauth-drivebrowse-button.png)
 
-After clicking the `Browse` button, the drive file browser dialog will appear as shown below.
+After clicking the `Browse` button, the drive file browser dialog will appear.
 
 ![Change connection](/static/assets/resource-migration/migrate-dashboards-offline/images/oauth-change-button.png)
 
@@ -247,7 +247,7 @@ Auto mapping of data sources can save you a lot of time and effort by eliminatin
 
  ### Bulk Category Update
 
-This feature enables you to update categories for selected dashboards seamlessly and perform bulk deletion.
+This feature enables you to update categories for selected dashboards and perform bulk deletion.
 
 **How to use bulk category update in Bold BI:**
 
