@@ -64,7 +64,7 @@ When you select a different language from the dropdown menu, the content will au
 
 ![Language Changed Dashboard](/static/assets/working-with-dashboards/images/after-language-change.png)
 
-With the Dynamic Translator, you can effortlessly handle multilingual content in your dashboards, providing users with a smooth experience in their preferred language.
+With the Dynamic Translator, you can handle multilingual content in your dashboards, providing users with a smooth experience in their preferred language.
 
 ## Dynamic Translator Support in Legend Customization
 
