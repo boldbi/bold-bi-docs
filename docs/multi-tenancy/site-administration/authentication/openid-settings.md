@@ -1,22 +1,22 @@
 ---
 layout: post
 title: SSO with OpenID Connect in User Management Server | Bold BI
-description: Learn how to configure User Management Server with an OpenID based identity provider for Single Sign-on authentication using OpenID Connect.
+description: Learn how to configure User Management Server with an OpenID based identity provider for Single Sign-On authentication using OpenID Connect.
 platform: bold-bi
 documentation: ug
 ---
 
-# OpenID Connect support in User Management Server
+# OpenID Connect Support in User Management Server
 
 The User Management Server can be configured to support OpenID Connect for Single Sign-On (SSO), allowing users to log in directly to the User Management Server after authenticating using OpenID Connect.
 
-## Configure OpenID Connect provider
+## Configure OpenID Connect Provider
 
 1. Create an account with an OpenID provider.
 
 2. Register the User Management Server in the OpenID Connect provider.
 
-## Steps to configure OpenID in User Management Server
+## Steps to Configure OpenID in User Management Server
 
 1. Log in to Bold ID with admin credentials.
 
@@ -45,7 +45,7 @@ The User Management Server can be configured to support OpenID Connect for Singl
 
     <tr>
     <td>Client ID</td>
-    <td>It is an unique identifier provided to each of the applications while registering in the providers.</td>
+    <td>It is a unique identifier provided to each of the applications while registering in the providers.</td>
     </tr>
 
     <tr>
@@ -74,7 +74,7 @@ The following list of OpenID Connect providers explains how to connect with the 
 * [Keycloak](/security-configuration/single-sign-on/openid-support/keycloak/)
 * [Red Hat SSO](/security-configuration/single-sign-on/openid-support/redhat/)
 
-## Set OpenID Connect as default authentication
+## Set OpenID Connect as Default Authentication
 
 OpenID Connect can be set as the default authentication when [OpenID Connect settings](/multi-tenancy/site-administration/authentication/openid-settings/#steps-to-configure-openid-in-user-management-server) are enabled.
 
@@ -86,7 +86,7 @@ Follow these steps to configure default authentication:
 
    ![Enable OpenID Default Authentication](/static/assets/multi-tenancy/images/openid-default-authentication.png)
 
-## Disabling OpenID connect settings
+## Disabling OpenID Connect Settings
 
 Disabling the Enable Default Authentication option and then clicking `Save` will disable the [OpenID Connect default authentication](/multi-tenancy/site-administration/authentication/openid-settings/#set-openid-connect-as-default-authentication).  
 
