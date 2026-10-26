@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Email Service Configuration – Self-Hosted BI | Bold BI Docs
-description: Learn about the different mail service options such as SMTP and Microsoft Office 365 that are supported in Bold BI.
+description: "Learn about the mail service options supported in Bold BI, including SMTP and Microsoft Office 365, and how to choose and configure one for email notifications."
 platform: bold-bi
 documentation: ug
 ---
