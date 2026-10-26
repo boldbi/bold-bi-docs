@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Extract Storage Settings – Embedded BI | Bold BI Docs
-description: Learn how to configure the data store settings for storing extracted data from data sources in Bold BI.
+description: "Learn how to configure the data store settings in Bold BI, which control where data extracted from your data sources is stored and refreshed for dashboards."
 platform: bold-bi
 documentation: UG
 ---
@@ -14,13 +14,13 @@ DataStore is an intermediate database used to store imported data from web data 
 
 > **NOTE:** This feature is available in On-Premises Deployment but not in Syncfusion Managed Cloud Server.
 
-## Database configuration
+## Database Configuration
 
-We can connect to the existing SQL Server instance with the following options:
+You can connect to the existing SQL Server instance with the following options:
 1. New Database
 2. Existing Database
 
-### New database
+### New Database
 
 * In this method, a new database is created to store the extracted data sources and files. 
 * Select server type, enter the server instance name, credentials, and choose the `New Database` option.
@@ -33,13 +33,13 @@ We can connect to the existing SQL Server instance with the following options:
 
 ![Oracle data store settings](/static/assets/site-administration/images/oracle-database-settings.png#width=65%)
 
-### Existing database
+### Existing Database
 * In this method, an existing database is used to store the extracted data sources and files.       
 * Select server type, enter the server instance name, credentials, and choose the `Existing Database` option.  
 * `Select a database` from the drop-down menu to create Data Store tables in that database, then click the `Save` button.  
 ![Datastore for existing database](/static/assets/site-administration/images/datastore-existing-db.png#width=65%)  
      
-> **NOTE:**  The credentials given to connect to the SQL Server instance must have permissions to:
+> **NOTE:** The credentials given to connect to the SQL Server instance must have permissions to:
 >  * Create Database
 >  * Create Table
 >  * Insert
@@ -52,7 +52,7 @@ We can connect to the existing SQL Server instance with the following options:
 ### Using Site-Level Custom Attributes to Configure Data Store Settings in Bold BI
 Use site-level custom attributes to drive Data Store settings (such as server name, username, maintenance database, and database name) across one or more Bold BI sites. This centralizes environment-specific values (e.g., server, database name) and makes updates scalable without hardcoding per site.
 
-* Before you begin First, create the required custom attributes in Bold BI. For instructions please refer in here:
+* Before you begin, first create the required custom attributes in Bold BI. For instructions, please refer to the link below:
     [Custom Attribute](/working-with-data-sources/configuring-custom-attribute/)
 * Configure the Data Store using custom attributes by inserting placeholders in the format {{AttributeName}}. For example, if your custom attribute is named server, reference it as {{server}} in the Data Store fields. Please refer to the images below.
 
