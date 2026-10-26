@@ -1,6 +1,6 @@
 ---
 title: Managing Users and Groups – Embedded BI | Bold BI Learning
-description: Learn how to add, edit, activate, deactivate, delete users, assign them to groups, and manage their permissions with Bold BI Embedded.
+description: "Learn how to add, edit, activate, deactivate, and delete users in Bold BI, assign them to groups, and manage their permissions to dashboards and resources."
 canonical: "/managing-resources/manage-users/"
 platform: bold-bi
 documentation: ug
