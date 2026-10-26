@@ -178,7 +178,7 @@ Here is a dashboard view illustrating the use of parameters with date and time f
 ![URLFilter Date Value](/static/assets/working-with-dashboards/preview-dashboards/images/urldate.png)
 
 ## Measure Parameters Support
-You can define parameters with measure-typed columns just as shown below:
+You can define parameters with measure-typed columns just:
 
 `http://<servername>/<culturename>/dashboards/<dashboardid>/<category>/<dashboardname>?MeasureTypeParameter=value`
 
@@ -276,7 +276,7 @@ Here is a dashboard view illustrating the use of parameters with measure paramet
 
 ## Special Characters Support
 
-You can also pass parameter values with special characters to filter. To use a value with special characters, you can pass the value inside square brackets as shown below:
+You can also pass parameter values with special characters to filter. To use a value with special characters, you can pass the value inside square brackets:
 
 **Syntax for a single value**
 
@@ -321,7 +321,7 @@ Here is a dashboard view illustrating the use of parameters with special charact
 
 ## Passing Keywords with URL
 
-The following keywords are used for our internal purposes. If you have any of these keywords as column names, you can specify them inside square brackets as shown below:
+The following keywords are used for our internal purposes. If you have any of these keywords as column names, you can specify them inside square brackets:
 
 `http://<servername>/<culturename>/dashboards/<dashboardid>/<category>/<dashboardname>?[Keywords]=value`
 
@@ -357,7 +357,7 @@ Here is a dashboard view illustrating the use of parameters with the mentioned k
 
 ## Passing Parameters with DataSource
 
-You can pass a parameter value along with the DataSource name to specifically filter the data. For this purpose, you can pass the URL as shown below:
+You can pass a parameter value along with the DataSource name to specifically filter the data. For this purpose, you can pass the URL:
 
 `http://<servername>/<culturename>/dashboards/<dashboardid>/<category>/<dashboardname>?DataSourceName.ParameterName=value`
 
@@ -379,7 +379,7 @@ Here is a dashboard view illustrating the same.
 
 ## Grouped URL Parameters
 
-The Grouped URL Parameters feature allows users to filter values using multiple conditions combined with AND/OR operators. This is achieved by enclosing the conditions within parentheses to define the logical grouping, as shown below:
+The Grouped URL Parameters feature allows users to filter values using multiple conditions combined with AND/OR operators. This is achieved by enclosing the conditions within parentheses to define the logical grouping:
 
 `http://<servername>/<culturename>/dashboards/<dashboardid>/<category>/<dashboardname>?(((CustomerID=ALFKI&OrderID=10643)&City=Berlin)|(ProductName=Aniseed Syrup&Country=Austria, USA))`
 
