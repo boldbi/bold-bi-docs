@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Enterprise Insights Dashboard – Embedded BI | Bold BI Docs
-description: Learn how to monitor dashboard activity and understand how users are interacting with dashboards in Bold BI Embedded.
+description: "Learn how to use the enterprise insights dashboard in Bold BI to monitor dashboard activity and understand how users view and interact with your dashboards."
 platform: bold-bi
 documentation: ug
 ---
@@ -16,7 +16,7 @@ The Enterprise Insights dashboards can be found in the `Enterprise Insights` cat
 
 You can choose to show or hide the Enterprise Insights category on the dashboard listing page by selecting the [Enterprise Insights](/site-administration/dashboard-settings/enterprise-insights/) option in the dashboard settings page.
 
-> **NOTE:**  The `Enterprise Insights` option is available only to admin users, and Enterprise Insights dashboards are read-only.
+> **NOTE:** The `Enterprise Insights` option is available only to admin users, and Enterprise Insights dashboards are read-only.
 
 ## Dashboard Usage Analytics
 
@@ -43,7 +43,7 @@ The following section explains the purpose of each widget in the dashboard.
                 Activity Date
             </td>
             <td>
-                Filter the dashboard values based on weekly, monthly or any custom values.
+                Filter the dashboard values based on weekly, monthly, or any custom values.
             </td>
         </tr>
         <tr>
@@ -67,7 +67,7 @@ The following section explains the purpose of each widget in the dashboard.
                 Dashboards Updated
             </td>
             <td>
-                The total number of times, the dashboard gets modified.
+                The total number of times the dashboard gets modified.
             </td>
         </tr>
         <tr>
@@ -75,7 +75,7 @@ The following section explains the purpose of each widget in the dashboard.
                 Total Shares
             </td>
             <td>
-                Number of times the dashboards was shared with another user or group.
+                Number of times the dashboards were shared with another user or group.
             </td>
         </tr>
         <tr>
@@ -91,7 +91,7 @@ The following section explains the purpose of each widget in the dashboard.
                 Dashboard Rollbacks
             </td>
             <td>
-                Total number of dashboards rollbacked to previous version.
+                Total number of dashboards rolled back to previous version.
             </td>
         </tr>
         <tr>
@@ -131,7 +131,7 @@ The following section explains the purpose of each widget in the dashboard.
                 Scheduled Exports Usage
             </td>
             <td>
-                Scheduled Exports Usage for excel, pdf and image format in percentage.
+                Scheduled Exports Usage for Excel, PDF, and image format in percentage.
             </td>
         </tr>
 		<tr>
@@ -139,7 +139,7 @@ The following section explains the purpose of each widget in the dashboard.
                 Scheduled Exports
             </td>
             <td>
-                Total number of times scheduled dashboard exports count for excel, pdf and image format and failed request count.
+                Total number of times scheduled dashboard exports count for Excel, PDF, and image format and failed request count.
             </td>
         </tr>
         <tr>
@@ -178,7 +178,7 @@ The following section explains the purpose of each widget in the dashboard.
 
 ## Performance Monitoring Dashboard
 
-The performance monitoring dashboard is predefined and allows you to monitor the performance of each dashboard in order to better understand which dashboard is affecting performance.
+The performance monitoring dashboard is predefined and allows you to monitor the performance of each dashboard to better understand which dashboard is affecting performance.
 
 ![Performance Monitoring Dashboard](/static/assets/site-administration/images/Performance_monitoring.png#width=60%)
 
@@ -222,7 +222,7 @@ The performance monitoring dashboard is predefined and allows you to monitor the
                 Query Status
             </td>
             <td>
-                Filter Data based on successful or failed query request.
+                Filter data based on successful or failed query request.
             </td>
         </tr>
         <tr>
@@ -262,7 +262,7 @@ The performance monitoring dashboard is predefined and allows you to monitor the
                 Slow Dashboard Based on Average Time
             </td>
             <td>
-                Shows which dashboard ran slow with Query execution time.
+                Shows which dashboard ran slow with query execution time.
             </td>
         </tr>
         <tr>
@@ -270,7 +270,7 @@ The performance monitoring dashboard is predefined and allows you to monitor the
                 Slow Widget based on Average Time
             </td>
             <td>
-                Shows which widget ran slow with Query execution time.
+                Shows which widget ran slow with query execution time.
             </td>
         </tr>
         <tr>
@@ -278,7 +278,7 @@ The performance monitoring dashboard is predefined and allows you to monitor the
                 Slow Data Source Based on Average Time
             </td>
             <td>
-                Shows which data source ran slow with Query execution time.
+                Shows which data source ran slow with query execution time.
             </td>
         </tr>
 </table>
@@ -321,7 +321,7 @@ The Query Performance Tracking is predefined and enables you to monitor the perf
                 Detailed Query Information
             </td>
             <td>
-                Tracking ID represents each instance of Dashboard / Widgets being rendered/invoked at a time. Provides information about Dashboard name, widget name, Datasource name, query start and end time, Query execution time, Query status, and Query type (Widget/Dashboard).
+                Tracking ID represents each instance of Dashboard / Widgets being rendered/invoked at a time. Provides information about dashboard name, widget name, Datasource name, query start and end time, query execution time, query status, and query type (Widget/Dashboard).
             </td>
         </tr>
         <tr>
@@ -361,7 +361,7 @@ The following section explains the purpose of each widget in the dashboard.
                 Activity Date
             </td>
             <td>
-                Filter the dashboard values based on weekly, monthly or any custom values.
+                Filter the dashboard values based on weekly, monthly, or any custom values.
             </td>
         </tr>
         <tr>
