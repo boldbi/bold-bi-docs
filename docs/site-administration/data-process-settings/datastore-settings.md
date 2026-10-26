@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Extract Storage Settings – Embedded BI | Bold BI Docs
-description: Learn how to configure the data store settings for storing extracted data from data sources in Bold BI.
+description: "Learn how to configure the data store settings in Bold BI, which control where data extracted from your data sources is stored and refreshed for dashboards."
 platform: bold-bi
 documentation: UG
 ---
