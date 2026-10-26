@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sharing Dashboards – Embedded BI | Bold BI Documentation
-description: Learn how to share dashboards with your team and collaborate with them through dashboard and widget-level commenting in Bold BI embedded in your application.
+description: Learn how to share dashboards with your team and collaborate with them through dashboard and widget-level commenting in Bold BI Embedded in your application.
 canonical: "/working-with-dashboards/share-dashboards/"
 platform: bold-bi
 documentation: ug
@@ -26,8 +26,8 @@ There are various methods available for sharing your dashboard with users on you
 
 * [Notifications](/working-with-dashboards/share-dashboards/notifications/)
 
-Continue learning how to manage [data sources](/managing-resources/manage-data-sources/), [schedules](/managing-resources/manage-schedules/), [users](/managing-resources/manage-users/), [groups](/managing-resources/manage-groups/), [administer the site](/site-administration/) and [connect with the Bold BI site programmatically](/server-api-reference/).
+Continue learning how to manage [data sources](/managing-resources/manage-data-sources/), [schedules](/managing-resources/manage-schedules/), [users](/managing-resources/manage-users/), [groups](/managing-resources/manage-groups/), [administer the site](/site-administration/), and [connect with the Bold BI site programmatically](/server-api-reference/).
 
-## Create a support incident
+## Create a Support Incident
 
 If you are still unable to find the information you are looking for in the self-help resources mentioned above, please <a href="https://www.boldbi.com/support" target="_blank">contact us</a> by creating a support ticket.
