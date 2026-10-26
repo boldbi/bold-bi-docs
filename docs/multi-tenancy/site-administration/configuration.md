@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Update the Configuration in Embedded BI Apps | Bold BI Docs
-description: Learn how to make your own configuration changes by following these guidelines to your embedded BI application.
+description: "Learn how to change the configuration settings of your Bold BI embedded analytics deployment, and follow the guidelines to apply your custom changes safely."
 platform: bold-bi
 documentation: ug
 ---
@@ -12,15 +12,15 @@ This guide explains how to modify the configuration files in Bold BI Embedded.
  
 > **NOTE:** This feature is available in On-Premises Deployment, but not in Syncfusion Managed Cloud Server.
  
-## Steps to change the configuration
+## Steps to Change the Configuration
  
 1. Go to the URL of your UMS application and sign in using the Site Administrator credentials.
  
-   Navigate to `Settings` page and click on the `Configuration` option.
+   Navigate to the `Settings` page and click on the `Configuration` option.
  
    ![Settings Configuration](/static/assets/multi-tenancy/images/settings-configuration.png)
  
-2. In Configuration, you can modify the files listed below. From the dropdown, Select any file that you want to make changes.
+2. In Configuration, you can modify the files listed below. From the dropdown, select any file that you want to make changes.
  
    ![Configuration Files](/static/assets/multi-tenancy/images/configuration-files.png)
  
@@ -46,13 +46,13 @@ This guide explains how to modify the configuration files in Bold BI Embedded.
  
    This file configures the Bold BI application user interface, custom menus, listing menu items, and dashboard previews etc.
  
-   To learn more about customizing the Bold BI application user interface, kindly refer this page -  [UI Customization](/site-administration/user-interface-customization/)
+   To learn more about customizing the Bold BI application user interface, kindly refer to this page - [UI Customization](/site-administration/user-interface-customization/)
  
    ![Custom UI file](/static/assets/multi-tenancy/images/custom-ui-file.png)
  
    ### bi/config.xml
  
-   This file contains the configuration variables that are specific to a internal service.
+   This file contains the configuration variables that are specific to an internal service.
  
    ![Config XML file](/static/assets/multi-tenancy/images/config-xml-file.png)
  
@@ -63,7 +63,7 @@ This guide explains how to modify the configuration files in Bold BI Embedded.
    ![Robots file](/static/assets/multi-tenancy/images/robots-file.png)
  
    
-3. Choose the variable that need to be modified in the configuration file. For instance, select AI Node and apply the required changes.
+3. Choose the variable that needs to be modified in the configuration file. For instance, select AI Node and apply the required changes.
  
    ![Select Variable](/static/assets/multi-tenancy/images/select-variable.png)
  
