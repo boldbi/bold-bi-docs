@@ -13,7 +13,7 @@ Bold BI is a comprehensive business intelligence platform designed to help organ
 
 ## System Architecture Overview
 
-The architecture consists of several core components that work together to provide seamless data integration, transformation, storage, and visualization. The major components include:
+The architecture consists of several core components that work together to provide data integration, transformation, storage, and visualization. The major components include:
 
 ![ Bold BI Architecture](/static/assets/overview/images/architecture-of-boldBI.png)
 
