@@ -7,7 +7,7 @@ documentation: ug
 
 # Bulk Import Result
 
-The bulk import result page displays the list of all completed and ongoing bulk group import jobs. You can access the bulk import result page by clicking on the `Bulk Import Result` button from the group management page, as shown below.
+The bulk import result page displays the list of all completed and ongoing bulk group import jobs. You can access the bulk import result page by clicking on the `Bulk Import Result` button from the group management page.
 
 ![Group Listing Page](/static/assets/managing-resources/manage-groups/images/bulk-import-result.png#width=55%)
 
@@ -21,7 +21,7 @@ You can also view detailed information about the job, including total group impo
 
 ![View Bulk Import Job Details](/static/assets/managing-resources/manage-groups/images/view-group-import-result.png#width=55%)
 
-After clicking View, you are taken to the bulk import result page as shown below.
+After clicking View, you are taken to the bulk import result page.
 
 ![Bulk User Import Job Details page](/static/assets/managing-resources/manage-groups/images/group-import-result-active-directory.png#width=70%)
 
