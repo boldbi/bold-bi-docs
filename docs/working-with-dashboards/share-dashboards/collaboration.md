@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dashboard Collaboration – Embedded BI | Bold BI Learning
-description: Learn how to collaborate with other users in Bold BI Embedded by commenting on dashboards using various options.
+description: "Learn how to collaborate with other users in Bold BI by commenting on dashboards and widgets, mentioning teammates, and replying to discussions in context."
 canonical: "/working-with-dashboards/share-dashboards/collaboration/"
 platform: bold-bi
 documentation: ug
@@ -28,7 +28,7 @@ Please type a comment in the text field and click `Post` to save the comment to 
 
 ![Save comment](/static/assets/working-with-dashboards/share-dashboards/images/comment-saved.png)
 
-> **NOTE:**  Clipboard images can also be added along with comments by simply copying an image and pasting it in the text area.
+> **NOTE:** Clipboard images can also be added along with comments by simply copying an image and pasting it in the text area.
 
 ## Reply to a comment
 
@@ -42,9 +42,9 @@ Type the reply in the text area and click `Reply` to save it in the dashboard.
 
 ![comment-reply-saved](/static/assets/working-with-dashboards/share-dashboards/images/comment-reply-saved.png)
 
-> **NOTE:**  You can also reply to a comment that has already been replied to. This can be done multiple times.
+> **NOTE:** You can also reply to a comment that has already been replied to. This can be done multiple times.
 
-## Edit a comment
+## Edit a Comment
 
 To edit a comment, click on `Actions` to see more options available for a comment or reply. Then, click on `Edit`, as shown in the following image.
 
@@ -56,17 +56,17 @@ Edit the comments and then click `Save` to save your changes.
 
 ![comment-edit-saved](/static/assets/working-with-dashboards/share-dashboards/images/comment-edit-saved.png)
 
-> **NOTE:**  Only the user who added the comments can update them.
+> **NOTE:** Only the user who added the comments can update them.
 
-## Delete a comment
+## Delete a Comment
 
 To delete a comment, click the `Actions` button to see more options available for a comment or a reply, and then click `Delete` as shown in the following image.
 
 ![comment-delete-button](/static/assets/working-with-dashboards/share-dashboards/images/comment-delete-button.png)
 
-> **NOTE:**  Only the admin and the comment owner can delete the comments.
+> **NOTE:** Only the admin and the comment owner can delete the comments.
 
-## Show parent comment of a reply
+## Show Parent Comment of a Reply
 
 To view the parent comment of a reply or to see which comment a reply has been posted to, click on `Actions` and then click on the `Show Parent` button as shown in the following image.
 
@@ -76,7 +76,7 @@ By clicking show parent, the parent comments of a reply are highlighted.
 
 ![comment-show-parent](/static/assets/working-with-dashboards/share-dashboards/images/comment-show-parent.png)
 
-## Mention Users in comments
+## Mention Users in Comments
 
 Users can be mentioned in comments to notify them about the comments by email.
 
@@ -84,7 +84,7 @@ To do this, type `@` followed by the user’s name, and then select the user fro
 
 ![Mention Users on comment](/static/assets/working-with-dashboards/share-dashboards/images/user-mention.png)
 
-> **NOTE:**  Users with dashboard access can mention other users with access to the dashboard.
+> **NOTE:** Users with dashboard access can mention other users with access to the dashboard.
 
 ![Mentioned Users](/static/assets/working-with-dashboards/share-dashboards/images/user-mentioned.png)
 
@@ -98,7 +98,7 @@ Whenever dashboards or widgets receive comments, users will be notified in two d
 
 Learn more about the [Notification](/working-with-dashboards/share-dashboards/notifications/).
 
-> **NOTE:**  An email setting is not necessary for collaboration. If email settings are not configured, then email notifications will not be sent.
+> **NOTE:** An email setting is not necessary for collaboration. If email settings are not configured, then email notifications will not be sent.
 
 ## Related links
 Blog Post - <a href="https://www.boldbi.com/blog/collaborate-with-business-dashboards-online-using-bold-bi" target="_blank">Collaborate with Business Dashboards Online Using Bold BI</a>
