@@ -11,7 +11,7 @@ documentation: ug
 
 This section explains how to use our interactive API documentation to play.
 
-You need to obtain the access token in order to authenticate with the API endpoints and retrieve the responses.
+You need to obtain the access token to authenticate with the API endpoints and retrieve the responses.
 
 ## Get Access Token
 Each user has their own unique token to authenticate the requests, which should be added in the header of the request.
@@ -36,7 +36,7 @@ To get the `User Token` follow the steps below:
      **password** - `<your-password>`
      
 ![Demo credential](/static/assets/rest-api-reference/images/demo-credential.png)
-4. Click `Execute` and you will receive the response as shown below. Obtain the `access_token` from the Response body.
+4. Click `Execute` and you will receive the response. Obtain the `access_token` from the Response body.
 ![Response](/static/assets/rest-api-reference/images/demo-response.png)
 5. Now you need to add the access token as the Authorization header for further API calls.
 6. Click the `Authorize` button, which is located in the top-right corner of the page.
