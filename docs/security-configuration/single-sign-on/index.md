@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Configuring SSO with different Identity Providers | Bold BI
-description: Learn how to configure SSO with different identity providers based on OAuth and OpenID in Bold BI deployed in your server.
+description: "Learn how to configure single sign-on in Bold BI deployed on your server, using identity providers that support OAuth 2.0 or OpenID Connect for user sign-in."
 platform: bold-bi
 documentation: ug
 ---
