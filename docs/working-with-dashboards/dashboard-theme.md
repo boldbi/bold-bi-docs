@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Color Themes for Dashboards – Embedded BI | Bold BI Docs
-description: Learn about the built-in color themes available in Bold BI Embedded. Also, know how to create a custom theme and apply to the dashboard.
+description: "Learn how to apply the built-in color themes to dashboards in Bold BI, and how to create and apply a custom theme that matches your application’s branding."
 platform: bold-bi
 documentation: ug
 
@@ -9,11 +9,11 @@ documentation: ug
 
 # Dashboard Themes in Bold BI Server
 
-The dashboard theme option is now available as a `preview feature` in the Bold BI Server. This feature allows you to apply a different theme for the dashboard. Currently, we have provided light and dark themes.
+The dashboard theme option is now available as a `preview feature` in the Bold BI Server. This feature allows you to apply a different theme for the dashboard. , we have provided light and dark themes.
 
-**NOTE:** You can customize themes for the BoldBI application using CSS variables. Refer to the [Custom Theme Viewer](/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/) section to learn more about creating and uploading customized themes in the BoldBI application. In the future, the dashboard theme using the JSON property will be deprecated. Instead of the JSON property, you can use theme variables to customize the BoldBI application. Refer to the [Theme Variable](/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/) section to find the equivalent theme variable for the JSON property.
+**NOTE:** You can customize themes for the Bold BI application using CSS variables. Refer to the [Custom Theme Viewer](/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/) section to learn more about creating and uploading customized themes in the Bold BI application. In the future, the dashboard theme using the JSON property will be deprecated. Instead of the JSON property, you can use theme variables to customize the Bold BI application. Refer to the [Theme Variable](/multi-tenancy/site-administration/look-and-feel-settings/theme/custom-theme-viewer/migrate-json-property-to-theme-variable/) section to find the equivalent theme variable for the JSON property.
 
-## How to switch dashboard themes
+## How to Switch Dashboard Themes
 
 By default, the dashboards are rendered in `light mode`, and the theme option is displayed in the header panel of the published dashboards, as shown in the following image.
 
@@ -31,9 +31,9 @@ The following image shows the dashboard view after applying the dark theme.
 
 > **NOTE:** Theming will not be applied in certain areas of the dashboard. Please check the [limitations](/working-with-dashboards/dashboard-theme/#limitations) section for details.
 
-The browser will remember the last applied theme and all dashboards will be rendered with that theme.
+The browser will remember the last applied theme and all dashboards are rendered with that theme.
 
-## How to enable or disable the dashboard theme option in the Bold BI Server
+## How to Enable or Disable the Dashboard Theme Option in the Bold BI Server
 
 By default, the dashboard theme is enabled in the Bold BI Enterprise dashboards.
 
@@ -50,11 +50,11 @@ However, you can turn off the feature by changing the settings in the Bold BI ve
 
 3.	Change the value for the key `dashboard:theme:enable` to **false**, and restart your server.
 
-4.	Now, the theme option will not be displayed in the view mode. *By default, the light mode will be applied*. 
+4.	Now, the theme option is not displayed in the view mode. *By default, the light mode is applied*. 
 
 ## Limitations
  
-The dashboard theme is currently a preview feature. The following items are not supported with the dark theme:
+The dashboard theme is a preview feature. The following items are not supported with the dark theme:
 
 1.	Dialogs (`Export, View, Info, Share and Comments, Dashboard parameter, and newly implemented dialogs`).
 
@@ -64,9 +64,9 @@ The dashboard theme is currently a preview feature. The following items are not 
 
 ## Custom Theme
 
-Custom theme allows you to customize the appearance of the Bold BI dashboard viewer. You can achieve this by customizing the JSON settings file. Granular level customization can also be done using these settings.
+Custom theme allows you to customize the appearance of the Bold BI dashboard viewer. You can achieve this by customizing the JSON settings file. Granular-level customization can also be done using these settings.
 
-## How to create and apply a new custom theme
+## How to Create and Apply a New Custom Theme
 
 Follow the steps to add a new custom theme in Bold BI Server:
 
@@ -77,7 +77,7 @@ Follow the steps to add a new custom theme in Bold BI Server:
     | Below 4.1.36          | **`{Deployed Location}`**\Dashboard Designer\DashboardThemes  |
     | 4.1.36 or above       | **`{Deployed Location}`**\bi\dataservice\dashboardthemes      |
 
-2. By default, light and dark theme files will be available at the location.
+2. By default, light and dark theme files are available at the location.
 
     *Dashboard themes folder:*
     
@@ -85,7 +85,7 @@ Follow the steps to add a new custom theme in Bold BI Server:
 
 3. Open the theme file in any text editor to view the template and the color code values. 
 
-    *Dashboard theme template json file:*
+    *Dashboard theme template JSON file:*
 
     ![Theme template](/static/assets/working-with-dashboards/images/light-theme-json.png)
 
@@ -100,20 +100,20 @@ Follow the steps to add a new custom theme in Bold BI Server:
 
     ![Save custom theme template](/static/assets/working-with-dashboards/images/adding-theme-file.png)
 
-6. Now open the dashboard in the browser and the theme will be listed in the theme drop-down.
+6. Now open the dashboard in the browser and the theme is listed in the theme drop-down.
 
     ![Applying custom theme](/static/assets/working-with-dashboards/images/applying-custom-theme.png)
 
-7. Select your custom theme and the theme will be applied to the dashboard. 
+7. Select your custom theme and the theme is applied to the dashboard. 
 
     The following image shows the dashboard view after applying the custom blue theme.
 
     ![Dashboard with applied custom theme](/static/assets/working-with-dashboards/images/custom-theme-blue.png)
 
 
-## Custom theme JSON file format
+## Custom Theme JSON File Format
 
-A valid JSON custom theme file needs at least the `name` property, as shown in the following code sample. 
+A valid JSON custom theme file needs at least the `name` property, as shown in the following code sample: 
 
 ```json
 
@@ -124,9 +124,9 @@ A valid JSON custom theme file needs at least the `name` property, as shown in t
 ```
 
 
-The other properties are optional and will be applied with the default color codes. 
+The other properties are optional and are applied with the default color codes. 
 
-For example, if you want to change the widget color palette codes alone and use the light theme for other color codes, you can create a new theme file with the following code. 
+For example, if you want to change the widget color palette codes alone and use the light theme for other color codes, you can create a new theme file with the following code: 
 
 ```json
 
@@ -180,9 +180,9 @@ This feature allows you to customize the color and background CSS properties for
 This feature allows you to customize the font property for the text elements in the dashboard banner, widgets, tooltips, menus, alerts, and filter overview dialog. It includes the following properties to customize the text elements in the dashboard:
 
 - `autoFontSettings` validates the customized value for the property overrides or not. 
-- `fontSize` customizes the `font-size` css property. 
-- `fontFamily` customizes the `font-family` css property.
-- `fontWeight` customizes the `font-weight` css property.
+- `fontSize` customizes the `font-size` CSS property. 
+- `fontFamily` customizes the `font-family` CSS property.
+- `fontWeight` customizes the `font-weight` CSS property.
 - `fontSrc` includes the new custom font, only as base64 string.
 
 The font source can be applied by converting the font file to a base64 string and using it as specified below. The value for the font source property can be applied once and referred to its `fontFamily` value given.
@@ -209,7 +209,7 @@ The font source can be applied by converting the font file to a base64 string an
 
 **Example:**
 
-Here is an example to show how the dashboard banner is color and font customized,
+Here is an example to show how the dashboard banner is color and font customized:
 
 ```json
 
@@ -257,7 +257,7 @@ Here is an example to show how the dashboard banner is color and font customized
 
 You can find the list of classes that you can customize in the following sections:
 
-### Theme name 
+### Theme Name 
 
 Defines the custom theme name. 
 
@@ -271,11 +271,11 @@ Defines the custom theme name.
 
 ```
 
-### Theme type
+### Theme Type
 
 The type should be either `light` or `dark`.
 
-**Note:** When any color value is `undefined`, the default color will be applied based on the type. 
+**Note:** When any color value is `undefined`, the default color is applied based on the type. 
 
 **Format:**
 
@@ -306,7 +306,7 @@ Allows you to customize the font size, family, and weight for the overall dashbo
 
 > **NOTE:** The customized font value is applied only when the `autoFontSettings` property is set to false; by default, it is set to true.
 
-### Data color palette
+### Data Color Palette
 
 Defines the color palette for the widgets.
 
@@ -329,7 +329,7 @@ Defines the color palette for the widgets.
 
 ```
 
-### Dashboard banner
+### Dashboard Banner
 
 You can customize the color and font of the dashboard header panel, the dashboard header text, and icons. 
 
@@ -382,13 +382,13 @@ You can customize the color and font of the dashboard header panel, the dashboar
 ```
 
 
-### Dashboard widgets
+### Dashboard Widgets
 
 The `widgets` section allows you to configure the widget container properties such as the container background, title or sub-title color and font, icon color and font, and the widget level properties such as the axis properties, legend properties, and data label properties.
 
-#### Widget common level properties
+#### Widget Common Level Properties
 
-The color codes and font settings defined in the `widgets` section will be applied to all applicable widgets unless they have been overridden at the widget specific level.
+The color codes and font settings defined in the `widgets` section are applied to all applicable widgets unless they have been overridden at the widget-specific level.
 
 ##### Background
 
@@ -407,7 +407,7 @@ Define the background of the widget container.
 
 ```
 
-##### Text style
+##### Text Style
 
 Defines the widget's text color and font styles.
 
@@ -553,7 +553,7 @@ Defines the widget's legend color codes and font settings.
 
 ```
 
-##### Data label
+##### Data Label
 
 Define the widget's data label color codes and font settings.
 
@@ -581,7 +581,7 @@ Define the widget's data label color codes and font settings.
 
 ```
 
-##### Data value
+##### Data Value
 
 The widget's data text, background colors, and fonts are defined.
 
@@ -623,7 +623,7 @@ The widget's data text, background colors, and fonts are defined.
 
 ```
 
-#### Widget specific level properties
+#### Widget-Specific Level Properties
 
 The `widgets.[widgetName]` section allows you to customize the properties of a specific widget.
 
@@ -808,7 +808,7 @@ The `widgets.[widgetName]` section allows you to customize the properties of a s
 
 ```
 
-###### Tree map
+###### Tree Map
 
 **Format:**
 
@@ -882,7 +882,7 @@ The `widgets.[widgetName]` section allows you to customize the properties of a s
 
 ```
 
-###### Heat map
+###### Heat Map
 
 **Format:**
 
@@ -1073,7 +1073,7 @@ The `widgets.[widgetName]` section allows you to customize the properties of a s
 
 ```
 
-###### Pivot grid
+###### Pivot Grid
 
 **Format:**
 
@@ -1316,7 +1316,7 @@ The `widgets.[widgetName]` section allows you to customize the properties of a s
 
 ```
 
-###### List box
+###### List Box
 
 **Format:**
 
@@ -1399,7 +1399,7 @@ The `widgets.[widgetName]` section allows you to customize the properties of a s
 
 ```
 
-###### Combo box
+###### Combo Box
 
 **Format:**
 
@@ -1482,7 +1482,7 @@ The `widgets.[widgetName]` section allows you to customize the properties of a s
 
 ```
 
-###### Date picker
+###### Date Picker
 
 **Format:**
 
@@ -1699,7 +1699,7 @@ The `widgets.[widgetName]` section allows you to customize the properties of a s
 
 ```
 
-###### KPI card
+###### KPI Card
 
 **Format:**
 
@@ -1791,7 +1791,7 @@ The `widgets.[widgetName]` section allows you to customize the properties of a s
 
 ```
 
-###### Number card
+###### Number Card
 
 **Format:**
 
@@ -1852,7 +1852,7 @@ The `widgets.[widgetName]` section allows you to customize the properties of a s
 
 ```
 
-###### Range slider
+###### Range Slider
 
 **Format:**
 
@@ -1956,7 +1956,7 @@ The `widgets.[widgetName]` section allows you to customize the properties of a s
 
 ```
 
-###### Circular gauge
+###### Circular Gauge
 
 **Format:**
 
@@ -2517,7 +2517,7 @@ The `widgets.[widgetName]` section allows you to customize the properties of a s
 
 ```
 
-### Dashboard tooltip
+### Dashboard Tooltip
 
 You can customize the appearance of the dashboard tooltip.
 
@@ -2545,7 +2545,7 @@ You can customize the appearance of the dashboard tooltip.
 
 ```
 
-### Dashboard menu
+### Dashboard Menu
 
 This feature allows you to customize the dashboard menu background, foreground, and font properties. 
 
@@ -2586,7 +2586,7 @@ This feature allows you to customize the dashboard menu background, foreground, 
 
 ```
 
-### Error alert dialog
+### Error Alert Dialog
 
 This feature allows you to customize the dashboard error dialog background, foreground, and font properties for the header, footer, and error content.
 
@@ -2706,7 +2706,7 @@ This feature allows you to customize the dashboard error dialog background, fore
 
 ```
 
-### Filter overview
+### Filter Overview
 
 This feature allows you to customize the filter overview dialog.
 
