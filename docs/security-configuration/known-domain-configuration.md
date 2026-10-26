@@ -1,24 +1,24 @@
 ---
 layout: post
-title:  Configure Allow Known Domain List & Avoid SSRF | Bold BI Docs
-description: Learn about how to configure the known domain list in Bold BI application to avoid Server-side request forgery (SSRF) attacks.
+title: Configure Allow Known Domain List & Avoid SSRF | Bold BI Docs
+description: Learn about how to configure the known domain list in the Bold BI application to avoid server-side request forgery (SSRF) attacks.
 platform: bold-bi
 documentation: ug
 ---
 
 # Block Sending Data to Unknown Domain
 
-The callback URL will be present throughout a certain workflow within the application, allowing the operation status and other data to be delivered back to the program via that URL (e.g., publishing dashboard from one server to another server). What if a scammer changes the URL and manages to regain access to the encrypted data? This is a type of Server-side request forgery (SSRF) attack.
+The callback URL is present throughout a certain workflow within the application, allowing the operation status and other data to be delivered back to the program via that URL (e.g., publishing a dashboard from one server to another server). What if a scammer changes the URL and manages to regain access to the encrypted data? This is a type of server-side request forgery (SSRF) attack.
 
 A server-side request forgery (SSRF) attack is an attack that misuses server functionality to access or modify resources. By modifying the request URL, the attacker induces a server-side application to make requests to an unintended destination.
 
 > **NOTE:** Domain Configuration support is available in Bold BI Embedded Analytics, but it is not available in Cloud Analytics Server.
 
-## Avoid SSRF attack in Bold BI
+## Avoid SSRF Attack in Bold BI
 
 This attack can be avoided by configuring known domains in Bold BI using a known domain JSON file.
 
-### Steps to configure the Known Domain's
+### Steps to Configure the Known Domain's
 
 1. Please go to the UMS Administration page in Bold BI and click on the `Configuration` tab. You can configure a list of known domains in a JSON file here.
 
@@ -40,10 +40,10 @@ This attack can be avoided by configuring known domains in Bold BI using a known
 
     ![Allowed Domains](/static/assets/security-configuration/images/allowed-domains.png#width=40%)
 
-> **Important:**  By default, internal Bold BI domains are allowed, meaning domains from Bold BI sites.
+> **Important:** By default, internal Bold BI domains are allowed, meaning domains from Bold BI sites.
 
 6. After configuring, click the `Save` button to update the Known Domain JSON file.
 
     ![Save Known Domain Json](/static/assets/security-configuration/images/save-known-domain-json.png#width=40%)
 
-> **Note:**  If you have configured the same domain in both the `Allow` and `Deny` lists, the domain will be denied as the denied list takes priority.
+> **Note:** If you have configured the same domain in both the `Allow` and `Deny` lists, the domain will be denied as the denied list takes priority.
