@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Export Dashboard to PDF, Image, PowerPoint & Excel | Bold BI Docs
-description: Learn how to enable settings to export a dashboard at runtime to PDF, Image, PowerPoint or Excel files in Bold BI Embedded.
+description: "Learn how to enable dashboard export settings in Bold BI, so users can export a dashboard at runtime to PDF, image, PowerPoint, or Excel files from the viewer."
 canonical: "/working-with-dashboards/preview-dashboard/dashboard-settings/"
 platform: bold-bi
 documentation: ug
 ---
-# Allow dashboard exporting options
+# Allow Dashboard Exporting Options
 
 The Dashboard allows you to enable or disable specific dashboard exporting options in the dashboard properties section. By default, all exporting options are enabled.
 
@@ -20,7 +20,7 @@ The selected export options can be seen when previewing or viewing the dashboard
 
 > **NOTE:** Exporting options have been provided in the dashboard properties section for Bold BI version 4.2.68 or later.
 
-## Exporting dashboard to Image
+## Exporting Dashboard to Image
 
    Exporting the dashboard to Image can be done by clicking the `Export to Image` option in the drop-down menu at the right corner of the title section.
     
@@ -48,11 +48,11 @@ The selected export options can be seen when previewing or viewing the dashboard
    
    Click `Reset` to restore the default values in the pop-up.
    
-   > **NOTE:**  In Windows, the Safari browser does not support the `Export to Image` functionality. However, Mac OS or iOS with Safari browser version 6+ do support this functionality.
+   > **NOTE:** In Windows, the Safari browser does not support the `Export to Image` functionality. However, Mac OS or iOS with Safari browser version 6+ do support this functionality.
    
-## Exporting dashboard to PDF
+## Exporting Dashboard to PDF
 
-   You can obtain the data showcased in the dashboard by exporting it as a PDF format. This can be achieved by clicking `Export to PDF` in the drop-down menu at the right corner of the title section.
+   You can obtain the data showcased in the dashboard by exporting it in PDF format. This can be achieved by clicking `Export to PDF` in the drop-down menu at the right corner of the title section.
    
    ![Export to PDF](/static/assets/working-with-dashboards/preview-dashboards/images/ExporttoPDF.png#max-width=70%)
    
@@ -68,13 +68,13 @@ The selected export options can be seen when previewing or viewing the dashboard
 
    ![Export PDF Filter Information](/static/assets/working-with-dashboards/preview-dashboards/images/dashboardPDFExportFilterToggle.png#max-width=70%)
 
-   ### Export all widgets on a single page as a PDF
+   ### Export All Widgets on a Single Page as a PDF
    
    The `Dashboard` option is selected by default, and all the widgets in the dashboard will be exported as a one-page PDF file.
    
    ![Export PDF in Dashboard option](/static/assets/working-with-dashboards/preview-dashboards/images/dashboardPDFExportDashboardOption.png#max-width=70%)
 
-   ### Export all widgets on a separate page as a PDF
+   ### Export All Widgets on a Separate Page as a PDF
 
    By choosing the `Widgets` option, the user can export all the widgets present in the dashboard on individual pages as a PDF.
 
@@ -84,11 +84,11 @@ The selected export options can be seen when previewing or viewing the dashboard
 
    ![Exported PDF file](/static/assets/working-with-dashboards/preview-dashboards/images/dashboardPDFExport.png)
 
-   >**NOTE:** If the dashboard has Grid and Card (with series) type widgets, it will export all the records in those widgets.
+   > **NOTE:** If the dashboard has Grid and Card (with series) type widgets, it will export all the records in those widgets.
 
    ![Series type Widget PDF file](/static/assets/working-with-dashboards/preview-dashboards/images/dashboardPDFExportSeriesWidget.png)
 
-   ### Export the user selected widgets as PDFs
+   ### Export the User-Selected Widgets as PDFs
 
    By choosing the widget option, the dropdown will be displayed on the right side of the popup.
 
@@ -100,7 +100,7 @@ The selected export options can be seen when previewing or viewing the dashboard
 
    The exported PDF will be downloaded with each widget on an individual page. 
    
-   Set the preferred `Page Size` of the PDF File.
+   Set the preferred `Page Size` of the PDF file.
    
    ![Export PDF Page Size](/static/assets/working-with-dashboards/preview-dashboards/images/dashboardPDFExportPageSize.png#max-width=70%)
    
@@ -108,7 +108,7 @@ The selected export options can be seen when previewing or viewing the dashboard
    
    ![Export PDF Orientation](/static/assets/working-with-dashboards/preview-dashboards/images/dashboardPDFExportOrientation.png#max-width=70%)
    
-   By clicking `Export`, the data in the dashboard will be displayed in PDF file format.
+   By clicking `Export`, the data in the dashboard is displayed in PDF file format.
    
    ![Export PDF Export](/static/assets/working-with-dashboards/preview-dashboards/images/dashboardPDFExportButton.png#max-width=70%)
    
@@ -116,7 +116,7 @@ The selected export options can be seen when previewing or viewing the dashboard
    
    ![Export PDF Reset](/static/assets/working-with-dashboards/preview-dashboards/images/dashboardPDFExportReset.png#max-width=70%)
 
-### Customizing the PDF Page Size and Orientation option in the PDF export
+### Customizing the PDF Page Size and Orientation Option in the PDF Export
 
 Bold BI dashboards offer a feature that allows users to customize the Page Size and Orientation while exporting a PDF file through the PDF export options to meet their specific needs. This customization can be done directly from the design mode of the dashboard. The customized design mode settings will be reflected in the dashboard viewer when exporting a dashboard or individual widgets.
 
@@ -134,7 +134,7 @@ The following steps explain how to customize the Page Size and Orientation in th
    4.	The selected Page Size options and Orientation can be seen when previewing or viewing the dashboard.
    ![enable output](/static/assets/working-with-dashboards/preview-dashboards/page-size/enableoutput.png)
 
-## Exporting dashboard to PowerPoint
+## Exporting Dashboard to PowerPoint
 
    Exporting the dashboard to PowerPoint can be done by clicking the `Export to PowerPoint` option in the drop-down menu at the right corner of the title section.
    
@@ -144,9 +144,9 @@ The following steps explain how to customize the Page Size and Orientation in th
    
    ![Export to PowerPoint Dialog](/static/assets/working-with-dashboards/preview-dashboards/images/exporttopowerpointdialog.png)
    
-   ### Export all widgets on a single slide as a PowerPoint
+   ### Export All Widgets on a Single Slide as a PowerPoint
    
-   The `Dashboard` option is selected by default, and all the widgets in the dashboard will be exported as a single slide PowerPoint file.
+   The `Dashboard` option is selected by default, and all the widgets in the dashboard will be exported as a single-slide PowerPoint file.
    
    ![PowerPoint Dashboard Option](/static/assets/working-with-dashboards/preview-dashboards/images/dashboardpowerpointexport.png)
 
@@ -160,13 +160,13 @@ The following steps explain how to customize the Page Size and Orientation in th
 
    ![PowerPoint Exported File](/static/assets/working-with-dashboards/preview-dashboards/images/exportedpptfile.png)
 
-   ### Export the user selected widgets as PowerPoint
+   ### Export the User-Selected Widgets as PowerPoint
 
    By choosing the `Widgets` option, the dropdown will be displayed on the right side of the popup. By clicking the dropdown, all widgets in the dashboard will be displayed (excluding Filter Widgets). Users can choose the widgets required and click on Export to export selected widgets into a PowerPoint presentation.
 
    ![PowerPoint Specific Widgets](/static/assets/working-with-dashboards/preview-dashboards/images/specificwidgetspowerpointexport.png)
    
-   By clicking `Export`, the data in the dashboard will be downloaded with each widget on an separate slide. 
+   By clicking `Export`, the data in the dashboard will be downloaded with each widget on a separate slide. 
    
    ![PowerPoint Export Option](/static/assets/working-with-dashboards/preview-dashboards/images/powerpointexportoption.png)
    
@@ -174,9 +174,9 @@ The following steps explain how to customize the Page Size and Orientation in th
 
    ![PowerPoint Reset](/static/assets/working-with-dashboards/preview-dashboards/images/powerpointexportreset.png)
 
-## Exporting dashboard to Excel
+## Exporting Dashboard to Excel
 
-   You can obtain the aggregated data showcased in the dashboard by exporting it as Excel format. This can be achieved by clicking `Export to Excel` in the drop-down menu at the right corner of the title section.
+   You can obtain the aggregated data showcased in the dashboard by exporting it in Excel format. This can be achieved by clicking `Export to Excel` in the drop-down menu at the right corner of the title section.
     
    ![Export to excel](/static/assets/working-with-dashboards/preview-dashboards/images/exporttoexcel.png#max-width=55%)
    
@@ -202,13 +202,13 @@ The following steps explain how to customize the Page Size and Orientation in th
 
    ![Excel reset](/static/assets/working-with-dashboards/preview-dashboards/images/Excelreset.png#max-width=55%)
 
-   ### Export the user selected widgets as Excel
+   ### Export the User-Selected Widgets as Excel
 
    By choosing the `Widgets` option, the dropdown will be displayed on the right side of the popup. By clicking the dropdown, all widgets in the dashboard will be displayed (excluding Filter Widgets). Users can choose the widgets required and click on Export to export selected widgets into Excel format.
 
    ![Excel Specific Widgets](/static/assets/working-with-dashboards/preview-dashboards/images/specificwidgetsexcelexport.png#max-width=55%)
    
-   By clicking `Export`, the data in the dashboard will be downloaded with each widget on an separate sheet. 
+   By clicking `Export`, the data in the dashboard will be downloaded with each widget on a separate sheet. 
    
    ![Excel Export Option](/static/assets/working-with-dashboards/preview-dashboards/images/excelexportoption.png#max-width=55%)
    
@@ -216,9 +216,9 @@ The following steps explain how to customize the Page Size and Orientation in th
 
    ![Excel Reset](/static/assets/working-with-dashboards/preview-dashboards/images/excelexportreset.png#max-width=55%)
 
-## Exporting dashboard to CSV
+## Exporting Dashboard to CSV
 
-   You can obtain the aggregated data showcased in the dashboard by exporting it as CSV format. This can be achieved by clicking `Export to CSV` in the drop-down menu at the right corner of the title section.
+   You can obtain the aggregated data showcased in the dashboard by exporting it in CSV format. This can be achieved by clicking `Export to CSV` in the drop-down menu at the right corner of the title section.
     
    ![Export to Csv](/static/assets/working-with-dashboards/preview-dashboards/images/ExportToCsv.png)
    
@@ -240,21 +240,21 @@ The following steps explain how to customize the Page Size and Orientation in th
    
    ![CSV export](/static/assets/working-with-dashboards/preview-dashboards/images/CsvExport.png)
 
-   Click `Reset` to restore the default File name values in the pop-up.
+   Click `Reset` to restore the default File Name values in the pop-up.
    
    ![CSV reset](/static/assets/working-with-dashboards/preview-dashboards/images/CsvReset.png)
 
-   >**NOTE:** When initiating a CSV export, a dashboard with a single widget will directly produce the data in CSV format. In contrast, dashboards with multiple widgets will generate a zip file, encompassing CSV files tailored to each widget item.
+   > **NOTE:** When initiating a CSV export, a dashboard with a single widget will directly produce the data in CSV format. In contrast, dashboards with multiple widgets will generate a zip file, encompassing CSV files tailored to each widget item.
 
-## Updating dashboard
+## Updating Dashboard
 
    You can update the dashboard manually by clicking `Update Dashboard` at the right corner of the title section.
     
    ![Update dashboard in viewer](/static/assets/working-with-dashboards/preview-dashboards/images/updatedashboardinviewer.png)
     
-   This updates the dashboard with the browser cached data view, which will remain for 10 minutes. After updating the dashboard, the updated data will be fetched from the data server and stored in the cache.
+   This updates the dashboard with the browser-cached data view, which will remain for 10 minutes. After updating the dashboard, the updated data will be fetched from the data server and stored in the cache.
 
-## Exporting restriction
+## Exporting Restriction
 
    We have limitations on exporting files of each format at a time when there are ongoing exports of the same format.
 
