@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with Mobile BI - Embedded | Bold BI Docs
-description: Learn how to get started with Mobile BI to list and view the Bold BI Embedded dashboards through the mobile app.
+description: "Learn how to get started with the Bold BI mobile app: install it, sign in to your Bold BI site, and browse and view your dashboards on a phone or tablet."
 canonical: "/accessing-through-mobile-app/getting-started/"
 platform: bold-bi
 documentation: ug
