@@ -1,24 +1,24 @@
 ---
 layout: post
-title: Accounts configuration – Embedded BI | Bold BI Documentation
-description: Learn how to activate User Management Server user accounts. There are two modes of account activation available - automatic and user email.
+title: Accounts Configuration – Embedded BI | Bold BI Documentation
+description: Learn how to activate User Management Server user accounts. There are two modes of account activation available – automatic and user email.
 platform: bold-bi
 documentation: ug
 ---
 
-# Accounts configuration in User Management Server
+# Accounts Configuration in User Management Server
 
 This section explains the configuration needed to activate user accounts and user emails in the User Management Server.
 
-## Account activation modes
+## Account Activation Modes
 
 There are two account activation modes available:
 
-### Automatic activation
+### Automatic Activation
 
 When user activation is set to `Automatic Activation` mode, user accounts will be activated automatically when adding users in the User Management Server.
 
-### Email activation
+### Email Activation
 
 When user activation is set to `Email Activation` mode, user accounts are not activated when adding users in the User Management Server. Instead, an account activation email with an activation link is sent to the email address to activate the user account.
 
@@ -28,17 +28,17 @@ The account will remain inactive until the user activates it from the activation
 
 ![Accounts Settings](/static/assets/multi-tenancy/images/account-automatic-settings.png)
 
-## User email
+## User Email
 
 This setting controls whether an email address is required for creating new users.
 
-### Email required
+### Email Required
 
 When the user email setting is set to `Required` mode, an email address is mandatory for adding users in the User Management Server.
 
 > **NOTE:** When the account activation preference is email, an email address is mandatory for activating the account.
 
-### Email not required
+### Email Not Required
 
 When the user email setting is set to `Not required` mode, an email address is not mandatory for adding users in the User Management Server.
 
