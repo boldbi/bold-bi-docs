@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to White-Label Bold BI | Bold BI Documentation
-description: Learn how to white-label Bold BI to match your application's branding, including logos, site name, copyright information, "powered by" information, themes, fonts, languages, date and time display formats, and domain.
+description: "Learn how to white-label Bold BI with your own logos, site name, copyright, themes, fonts, languages, date formats, and domain to match your application."
 platform: bold-bi
 documentation: ug
 ---
