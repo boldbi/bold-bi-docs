@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Manage Custom Theme for Dashboards using variables | Bold BI Docs
-description: Learn how to a generate custom theme file, upload the generated file and manage custom theme for dashboards in User Management Server of Bold BI application.
+title: Manage Custom Theme for Dashboards Using Variables | Bold BI Docs
+description: Learn how to generate a custom theme file, upload the generated file and manage custom theme for dashboards in the User Management Server of the Bold BI application.
 platform: bold-bi
 documentation: ug
 ---
 
-# How to create a custom theme using variables for dashboards
+# How to Create a Custom Theme Using Variables for Dashboards
 
-By using the given variables, we can customize the BoldBI dashboards to meet your requirements. Follow the steps below to create a custom theme file:
+By using the given variables, you can customize the Bold BI dashboards to meet your requirements. Follow the steps below to create a custom theme file:
 
 1. Download the default `light` and `dark` files from the [Github repository](https://github.com/boldbi/boldbi-themestudio/releases) and extract them.
 
