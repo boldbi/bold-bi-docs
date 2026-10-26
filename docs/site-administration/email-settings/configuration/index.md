@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Email Service Configuration – Self-Hosted BI | Bold BI Docs
-description: Learn about the different mail service options such as, SMTP and Microsoft Office 365 that are supported in Bold BI.
+description: Learn about the different mail service options such as SMTP and Microsoft Office 365 that are supported in Bold BI.
 platform: bold-bi
 documentation: ug
 ---
@@ -13,7 +13,7 @@ This section explains how to configure the email settings in the Bold BI Server 
 
 * [Microsoft Office 365 Account with OAuth authentication](/site-administration/email-settings/configuration/office-365-account/)
 
-### Email Settings are required to perform the following operations:
+### Email Settings Are Required to Perform the Following Operations
 <table>
 <tr>
     <td>Dashboard export</td>
@@ -37,7 +37,7 @@ This section explains how to configure the email settings in the Bold BI Server 
 </tr>
 <tr>
     <td>Comments</td>
-    <td>Sends email for comment addition, editing, replying, and deletion to end user.</td>
+    <td>Sends email for comment addition, editing, replying, and deletion to the end user.</td>
 </tr>
 <tr>
     <td>User activation & invitation</td>
