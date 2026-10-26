@@ -43,7 +43,7 @@ The default screen size for the tablet layout is `768 x 1024` pixels.
 
 Any overflowed content in the `Title` of the dashboard will be hidden and shown with an `ellipsis (…)`.
 
-The widget on the dashboard will be arranged in a stacked manner in `Portrait` orientation for the tablet layout as shown below.
+The widget on the dashboard will be arranged in a stacked manner in `Portrait` orientation for the tablet layout.
 ![Dashboard tablet view portrait](/static/assets/responsive-visualizations/images/dashboard_tablet_view-portrait.png)
 
 The sample view of the dashboard in `Landscape` orientation for tablet layout is also shown below.
