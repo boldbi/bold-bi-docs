@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Look and Feel Settings for Dashboards in Bold BI | Bold BI Docs
-description: Learn how to customize the appearance of your Bold BI dashboards like font preferences and create a custom theme file, upload the created file, and manage a custom theme in Bold BI. Also learn about the application's default theme.
+description: "Learn how to customize the look of Bold BI Cloud: set font preferences, create and upload a custom theme, manage themes, and use the default application theme."
 platform: bold-bi
 documentation: ug
 ---
