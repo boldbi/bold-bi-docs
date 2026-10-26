@@ -1,6 +1,6 @@
 ---
 title: Active Directory Settings – Embedded BI | Bold BI Learning
-description: Learn the required Active Directory details and how to configure Active Directory with Bold BI Server.
+description: "Learn which Active Directory details you need and how to configure Active Directory as a user directory in the Bold BI server to import users and groups."
 platform: bold-bi
 documentation: ug
 ---
@@ -25,20 +25,20 @@ You will need the following Active Directory details to configure Bold BI with y
 
 * Port Number - Default port for Non-SSL connections is 389 and for SSL connections is 636.
 
-## How to find FQDN
+## How to Find FQDN
 Follow the steps below to find out the Distinguished Name of your Active Directory.
 
-1. Go to Run(Win + R) and type `sysdm.cpl` in a machine which is connected to the Active Directory or in the Windows Server where you have Active Directory Domain Services enabled. 
+1. Go to Run (Win + R) and type `sysdm.cpl` in a machine that is connected to the Active Directory or in the Windows Server where you have Active Directory Domain Services enabled. 
 ![Run sysdm.cpl](/static/assets/site-administration/images/active-directory-settings-fqdn-1.png)
 
-2. The `System Properties` dialog will be opened and you can find the Distinguished Name labeled as `Domain`.    
+2. The `System Properties` dialog opens and you can find the Distinguished Name labeled as `Domain`.    
 ![Distinguished Name - Domain](/static/assets/site-administration/images/active-directory-settings-fqdn-2.png)
     
 You can search either all the users in the domain or users in the specific group that belongs to an organization in the specific domain.
 
 For example, if your Domain is www.example.com, then to search all the users of the domain you have to type in as `dc=www,dc=example,dc=com`.
 
-To search the users in a specific group (Eg:TestGroup) of an organization (Eg:Syncfusion) in the domain www.example.com, you can type in as `CN=TestGroup,OU=Syncfusion,DC=www,DC=example,DC=com`.
+To search the users in a specific group (for example, TestGroup) of an organization (for example, Syncfusion) in the domain www.example.com, you can type in as `CN=TestGroup,OU=Syncfusion,DC=www,DC=example,DC=com`.
 
  The following table lists the attribute types.
 
@@ -80,11 +80,11 @@ To search the users in a specific group (Eg:TestGroup) of an organization (Eg:Sy
   This filter will search and list the users in the group named TestGroup of an organization Syncfusion in the domain www.example.com.
   
 ## Set Windows Active Directory as Default Authentication
-Windows active directory can be set as default authentication when [Windows Active Directory](/site-administration/user-directory-settings/active-directory/active-directory/#active-directory-settings) is enabled and saved. Follow these steps:
+Windows Active Directory can be set as default authentication when [Windows Active Directory](/site-administration/user-directory-settings/active-directory/active-directory/#active-directory-settings) is enabled and saved. Follow these steps:
 
-1. In settings page, click **Authentication** tab and select **General**.
+1. In the settings page, click the **Authentication** tab and select **General**.
 
-2. Enable the **Enable Default Authentication** option and select the **Windows Active Directory** in default authentication provider as shown in the following screenshot.
+2. Enable the **Enable Default Authentication** option and select the **Windows Active Directory** in the default authentication provider as shown in the following screenshot.
 
     ![Enable  Windows Active Directory Default Authentication](/static/assets/site-administration/images/enable-windows-active-directory.png)
 
