@@ -1,6 +1,6 @@
 ---
 title: Manage Users in Multi-Tenancy of Embedded BI | Bold BI Docs
-description: Learn here how to add, update, activate, delete users, grant access to the site and more in User Management Server of Embedded Bold BI.
+description: "Learn how to add, update, activate, and delete users in the Bold BI User Management Server, and grant them access to one or more tenant sites in your setup."
 canonical: "/multi-tenancy/manage-users/"
 platform: bold-bi
 documentation: ug
