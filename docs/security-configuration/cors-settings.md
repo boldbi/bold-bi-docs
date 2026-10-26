@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Configure Cross-Origin Resource Sharing (CORS) | Bold BI Docs
-description: Learn about how to configure CORS (Cross-Origin Resource Sharing) settings and how to customize it in Bold BI Embedded application.
+description: "Learn how to configure and customize CORS (Cross-Origin Resource Sharing) settings in Bold BI, so only trusted domains can call the application from browsers."
 platform: bold-bi
 documentation: ug
 ---
