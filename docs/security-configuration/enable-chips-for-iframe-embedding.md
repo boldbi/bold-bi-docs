@@ -6,8 +6,8 @@ platform: bold-bi
 documentation: ug
 ---
 
-# What is Partitioned Cookies
-Cookies Having Independent Partitioned State (CHIPS) also known as partitioned cookies allow web developers to store cookies separately for each top-level site. This helps prevent third-party tracking by making cookies accessible only within the context of the site where they were created.
+# What Is Partitioned Cookies
+Cookies Having Independent Partitioned State (CHIPS), also known as partitioned cookies, allow web developers to store cookies separately for each top-level site. This helps prevent third-party tracking by making cookies accessible only within the context of the site where they were created.
 
 CHIPS maintain user experience for valid use cases like preserving the state of embedded maps or chat widgets across different host websites while still respecting privacy boundaries.
 
@@ -25,14 +25,14 @@ Host Key: source-example.com
 
 If the user then visits embed-example.com, which also embeds source-example.com, the cookie is not shared, since the partition key (embed-example.com) differs from the original (example.com).
 
-## How to enable CHIPS for Iframe-based Embedding in Bold BI
+## How to Enable CHIPS for Iframe-Based Embedding in Bold BI
 
 1. Please go to the UMS security page in Bold BI and click on the `Cookie Options` tab.
 
 ![Partitioned Cookies](/static/assets/security-configuration/images/partitioned-cookies.png#width=40%)
 
-2. 2. To enable CHIPS for iframe-based embedding, turn on the `Enable CHIPS for IFrame-based Embedding` toggle button and save the changes.
+2. To enable CHIPS for iframe-based embedding, turn on the `Enable CHIPS for IFrame-based Embedding` toggle button and save the changes.
 
 ![Partitioned Cookies](/static/assets/security-configuration/images/enable-chips.png#width=40%)
 
-3.  Once the changes are saved, the `SameSite attribute` will be set to `None`.
+3.  Once the changes are saved, the `SameSite attribute` is set to `None`.
