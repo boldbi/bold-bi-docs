@@ -1,7 +1,7 @@
 ---
 layout: post
-title: App Settings – Mobile - Embedded | Bold BI Documentation
-description: Learn how to explore app settings such as, user information, error logs of Bold BI Embedded and log out of mobile app.
+title: App Settings – Mobile – Embedded | Bold BI Documentation
+description: Learn how to explore app settings such as user information, error logs of Bold BI Embedded and log out of the mobile app.
 canonical: "/accessing-through-mobile-app/settings/"
 platform: bold-bi
 documentation: ug
