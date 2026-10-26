@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Creating Cross Filters for Dashboards– Embedded BI | Bold BI Docs
-description: Learn how to create cross filters to configure a master-listener relationship between widgets in a dashboard in Bold BI Embedded.
+title: Creating Cross Filters for Dashboards – Embedded BI | Bold BI Docs
+description: "Learn how to configure cross filters in Bold BI to set up master and listener relationships between widgets, so one selection filters the related widgets."
 canonical: "/working-with-dashboards/configuring-cross-filters/"
 platform: bold-bi
 documentation: ug
@@ -80,7 +80,7 @@ Consider the following scenario:
 
 The `Engineer Performance` widget is designated as the listener widget for the `Team Leader Performance`, `Managers`, and `Project` widgets. Similarly, the `Team Leader Performance` widget is designated as the listener widget for the `Managers` and `Project` widgets, while the `Managers` widget is designated as the listener widget for the `Project` widget.
 
-In this example, the `Engineer Performance` widget demonstrates Cross Filtering.
+In this example, the `Engineer Performance` widget demonstrates cross filtering.
 
 ![Engineers Performance](/static/assets/working-with-dashboards/images/Engineers-Performance.png)
 
@@ -108,5 +108,5 @@ Clicking `View saved filters` displays saved filters. Users can copy, share, or 
 
 ![Saved View](/static/assets/working-with-dashboards/images/Saved-view.png)
 
-> **NOTE:** We can remove the widget cross filter either by using the clear filter option in the widget or utilizing individual (cross marks) clear option in the Filter Overview.
+> **NOTE:** You can remove the widget cross filter either by using the clear filter option in the widget or utilizing individual (cross marks) clear option in the Filter Overview.
 >![Remove Widget Filter](/static/assets/working-with-dashboards/images/remove-widget-filter.png)
