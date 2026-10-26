@@ -33,7 +33,7 @@ To get the `User Token` follow the steps below:
 
      **grant_type** - `password`
 
-     **password** - `Demo759!`
+     **password** - `<your-password>`
      
 ![Demo credential](/static/assets/rest-api-reference/images/demo-credential.png)
 4. Click `Execute` and you will receive the response as shown below. Obtain the `access_token` from the Response body.
