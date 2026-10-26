@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Email Settings and Logs – Embedded BI | Bold BI Documentation
-description: Learn how to configure the SMTP details in the Bold BI server to send emails for account activation, scheduled dashboards, and view the email activity log details.
+description: "Learn how to configure SMTP email settings in the Bold BI server to send account activation and scheduled dashboard emails, and view email activity logs."
 platform: bold-bi
 documentation: ug
 ---
