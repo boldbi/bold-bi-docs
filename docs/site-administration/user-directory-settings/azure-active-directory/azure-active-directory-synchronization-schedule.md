@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Scheduling Azure AD Synchronization – Embedded BI | Bold BI
-description: Learn how to schedule the synchronization of users and groups from Azure Active Directory with the users and groups in Bold BI Embedded.
+description: "Learn how to set up a synchronization schedule for Azure Active Directory in Bold BI, so imported users and groups stay updated automatically on a schedule."
 canonical: "/site-administration/user-directory-settings/azure-active-directory/azure-active-directory-synchronization-schedule/"
 platform: bold-bi
 documentation: ug
