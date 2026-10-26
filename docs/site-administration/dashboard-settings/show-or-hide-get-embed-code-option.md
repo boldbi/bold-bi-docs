@@ -5,7 +5,7 @@ description: This page describes how to show or hide the Get Embed Code option a
 documentation: ug
 ---
 
-# Show/Hide the Get Embed Code option
+# Show/Hide the Get Embed Code Option
 
 This section describes how to show or hide the Get Embed Code option for dashboards and widgets in the dashboard settings on the administration page.
 
@@ -15,7 +15,7 @@ This section describes how to show or hide the Get Embed Code option for dashboa
 
     ![Embed code option for dashboard](/static/assets/site-administration/images/enable-embed-option-dashboard.png#width=60%)
 
-2. Based on the above settings, the `Get Embed Code` option will be displayed in the context menu of the dashboard on the listing page and also in the `Share` dialog of the dashboard.
+2. Based on the above settings, the `Get Embed Code` option is displayed in the context menu of the dashboard on the listing page and also in the `Share` dialog of the dashboard.
 
     ![Embed code option for dashboard](/static/assets/site-administration/images/embed-option-dashboard-listing-page.png#width=60%)
 
@@ -35,6 +35,6 @@ This section describes how to show or hide the Get Embed Code option for dashboa
 
     ![Embed code option for Widget](/static/assets/site-administration/images/enable-embed-option-widget.png#width=60%)
 
-2. Based on the above settings, the `Get Embed Code` option will be displayed in the context menu of the widget on the dashboard view page.
+2. Based on the above settings, the `Get Embed Code` option is displayed in the context menu of the widget on the dashboard view page.
 
     ![Embed code option for Widget](/static/assets/site-administration/images/embed-option-widget.png#width=60%)
