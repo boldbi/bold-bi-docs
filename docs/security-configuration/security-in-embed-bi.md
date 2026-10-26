@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Understanding Bold BI Security – Embedded BI | Bold BI
-description: Learn about the security of Bold BI Embedded in terms of authentication, authorization, data security, network security, and more.
+description: "Learn how Bold BI secures embedded analytics with authentication, authorization, data encryption, network controls, and other on-premises security features."
 platform: bold-bi
 documentation: ug
 ---
