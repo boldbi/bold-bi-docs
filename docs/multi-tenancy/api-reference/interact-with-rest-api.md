@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Working with API – Site Administration | Bold BI Documentation
-description: Work with Site Administration REST APIs through the interactive API documentation. Just get the access token to authenticate the API endpoint and get the response.
+description: "Learn how to use the interactive API documentation for Bold BI Site Administration REST APIs: get an access token, authenticate, and test endpoint responses."
 canonical: "/multi-tenancy/site-administration/api-reference/interact-with-rest-api/"
 platform: bold-bi
 documentation: ug
@@ -11,7 +11,7 @@ documentation: ug
 
 This section explains how to use our interactive API documentation.
 
-You need to obtain an access token to authenticate the API endpoints in order to receive responses.
+You need to obtain an access token to authenticate the API endpoints to receive responses.
 
 ## Get Access Token
 Each client has its own unique token to authenticate requests, which should be added to the header of the request.
@@ -37,8 +37,8 @@ To obtain the `Client Token`, follow these steps:
 5. Now, you need to add the `access_token` for further API calls as an Authorization header.<br/>
 6. Click the `Authorize` button, located in the top-right corner of the page.
 ![Authorize button](/static/assets/rest-api-reference/images/site-administration/authorize-button.png)
-7. A dialog will open; enter the access token in the `Value` box with this format: **'Bearer' + access_token**, then click the `Authorize` button.
+7. A dialog opens; enter the access token in the `Value` box with this format: **'Bearer' + access_token**, then click the `Authorize` button.
 ![Authorize dialog](/static/assets/rest-api-reference/images/site-administration/authorization-dialog.png)
 8. You can now interact with the other REST APIs using the necessary parameters specified in each API.
 
-> **NOTE:**  API responses and their code descriptions are mentioned in this interactive document.
+> **NOTE:** API responses and their code descriptions are mentioned in this interactive document.
