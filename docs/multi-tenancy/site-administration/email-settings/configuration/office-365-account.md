@@ -12,7 +12,7 @@ This section explains how to configure the Microsoft Office 365 account to send 
 
 To learn [how to register an Azure app with mail-sending API permissions](https://support.boldbi.com/kb/article/16770/how-to-register-an-azure-app-with-mail-sending-permissions) and restrict access to specific mailboxes.
 
-**The User Management Server requires the following Microsoft Office 365 account details in order to send email.**
+**The User Management Server requires the following Microsoft Office 365 account details to send email.**
 
 <table>
 <tr>
@@ -52,5 +52,5 @@ To learn [how to register an Azure app with mail-sending API permissions](https:
 ![Send Email](/static/assets/multi-tenancy/images/send-email.png#width=35%)
 
 ### What Happens If the Sender Email Address Does Not Have Application Access?
-If the sender email address used in the configuration does not have app access, the test email will fail, resulting in an `Access to OData disabled` error as shown below. Learn more about restricting app access to specific mailboxes [here](https://support.boldbi.com/kb/article/16770/how-to-register-an-azure-app-with-mail-sending-permissions#restricting-app-access-to-specific-mailboxes).
+If the sender email address used in the configuration does not have app access, the test email will fail, resulting in an `Access to OData disabled` error. Learn more about restricting app access to specific mailboxes [here](https://support.boldbi.com/kb/article/16770/how-to-register-an-azure-app-with-mail-sending-permissions#restricting-app-access-to-specific-mailboxes).
 ![Send Email failed](/static/assets/multi-tenancy/images/error-without-app-access.png#width=35%)
