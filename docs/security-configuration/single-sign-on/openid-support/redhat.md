@@ -70,7 +70,7 @@ Configure the settings in Bold BI, as shown in the following screenshot, to enab
 
 ![RedHat Bi Settings](/static/assets/site-administration/openid-support/images/Redhat-bi-settings.png)
 
-The fields that need to be saved in Bold BI in order to enable Red Hat for authentication are explained as follows.
+The fields that need to be saved in Bold BI to enable Red Hat for authentication are explained as follows.
 
 <table>
 
