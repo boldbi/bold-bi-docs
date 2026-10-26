@@ -85,7 +85,7 @@ testuser,testuser@gmail.com,TestUser,Admin@123
 
 	![Import from CSV - User detail in grid](/static/assets/multi-tenancy/images/csv-import-proceed.png#max-width=95%)
 
-4. After uploading the users in UMS, the results are displayed as shown below.
+4. After uploading the users in UMS, the results are displayed.
 
     ![Import from CSV - Success Message](/static/assets/multi-tenancy/images/csv-import-success-prompt.png#max-width=95%)
 	
