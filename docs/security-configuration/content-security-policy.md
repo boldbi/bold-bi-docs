@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Configure Content Security Policy to Secure Sites | Bold BI Docs
-description: Learn about how to configure Content Security Policy (CSP) settings to secure sites in the Bold BI embedded application.
+description: "Learn how to configure Content Security Policy (CSP) settings in Bold BI to control which sources can load content and protect your embedded analytics sites."
 platform: bold-bi
 documentation: ug
 ---
