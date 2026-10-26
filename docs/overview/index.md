@@ -75,7 +75,7 @@ Bold BI supports self-service and embedded analytics for teams across industries
 
 ### Enterprise-Grade Security & Access Control
 
-- **Robust Security and Governance** - Use [**multi-factor authentication**](/multi-tenancy/two-factor-authentication/), role-based access control, and [**single sign-on (SSO)**](/security-configuration/single-sign-on/) options, including Office 365, OpenID, OAuth 2.0, and [**Active Directory**](/site-administration/user-directory-settings/active-directory/). You can also use row-level security and a [**granular permission model**](/managing-resources/manage-permissions/).
+- ** Security and Governance** - Use [**multi-factor authentication**](/multi-tenancy/two-factor-authentication/), role-based access control, and [**single sign-on (SSO)**](/security-configuration/single-sign-on/) options, including Office 365, OpenID, OAuth 2.0, and [**Active Directory**](/site-administration/user-directory-settings/active-directory/). You can also use row-level security and a [**granular permission model**](/managing-resources/manage-permissions/).
 
 - [**Multi-Tenant Support**](/multi-tenancy/) - Use multi-tenant architecture to manage separate departments or clients from one portal while enforcing role-based access, data isolation, and compliance requirements.
 
