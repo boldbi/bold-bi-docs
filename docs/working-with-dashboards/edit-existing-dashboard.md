@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Editing a Dashboard – Embedded BI | Bold BI Documentation
-description: Learn how to edit an existing dashboard by opening it in the WYSIWYG designer from list of dashboards in Bold BI Embedded.
+description: "Learn how to edit an existing dashboard in Bold BI by opening it from the dashboard list in the designer, then updating its widgets, data, and layout as needed."
 canonical: "/working-with-dashboards/edit-existing-dashboard/"
 platform: bold-bi
 documentation: ug
 ---
 # Edit Existing Dashboard
    
-   > **NOTE:**  To edit the existing dashboard, you will need permission from the administrator.
+   > **NOTE:** To edit the existing dashboard, you will need permission from the administrator.
    
    Click on the `My Dashboards` button in the designer title pane.
 
@@ -28,7 +28,7 @@ documentation: ug
 
    ![Edit dashboard icon](/static/assets/working-with-dashboards/images/editdashboardicon.png#width=60%)
 
-   The selected dashboard will then be opened in the designer as shown below.
+   The selected dashboard will then be opened in the designer.
 
    ![Edit dashboard](/static/assets/working-with-dashboards/images/editdashboard.png)
        
