@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Manage Custom Theme for Dashboards Using Variables | Bold BI Docs
-description: Learn how to generate a custom theme file, upload the generated file and manage custom theme for dashboards in the User Management Server of the Bold BI application.
+description: "Learn how to generate a custom dashboard theme file, upload it, and manage custom themes in the Bold BI User Management Server to match your brand colors."
 platform: bold-bi
 documentation: ug
 ---
