@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Subscription Cancellation and Reactivation | Bold BI Docs
-description: Learn how to know your subscription plan details, cancel or reactivate the subscription for Bold BI Cloud.
+description: "Learn how to view your Bold BI Cloud subscription plan details, and how to cancel or reactivate your subscription from the site administration settings page."
 platform: bold-bi
 documentation: ug
 ---
