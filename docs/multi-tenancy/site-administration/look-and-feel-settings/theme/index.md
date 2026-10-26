@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Application and Dashboard Theme – Bold ID | Bold BI Documentation
-description: Discover how to create a custom theme file and upload the created theme file in User Management Server.
+description: "Learn how to create a custom theme file and upload it in the Bold BI User Management Server to apply your brand colors to the application and its dashboards."
 platform: bold-bi
 documentation: ug
 ---
@@ -18,7 +18,7 @@ In the default light mode, the application will have a light appearance with the
 
 ![Light mode](/static/assets/multi-tenancy/images/look-and-feel/light-mode.png)
 
-In dark default mode, the application will have a dark appearance with a blue variant as the branding color, as shown in the image below.
+In the default dark mode, the application will have a dark appearance with a blue variant as the branding color, as shown in the image below.
 
 ![Dark mode](/static/assets/multi-tenancy/images/look-and-feel/dark-mode.png)
 
@@ -56,17 +56,17 @@ Follow these steps to upload the generated custom theme file:
 1.  Click the `Manage` option next to `Dashboard Theme` under the `Theme` section.
 ![Manage-option-dashboard](/static/assets/multi-tenancy/images/look-and-feel/manage-option-dashboard.png)
 
-2.  A dialog will appear below. Choose the created custom theme file by clicking three dots and then click `Upload`. Please refer to the [Create dashboard custom theme](/multi-tenancy/site-administration/look-and-feel-settings/theme/create-custom-dashboard-theme/) section to learn how to create your preferred custom theme file for dashboards.
+2.  A dialog appears below. Choose the created custom theme file by clicking three dots and then click `Upload`. Please refer to the [Create dashboard custom theme](/multi-tenancy/site-administration/look-and-feel-settings/theme/create-custom-dashboard-theme/) section to learn how to create your preferred custom theme file for dashboards.
 ![Upload dashboard theme](/static/assets/multi-tenancy/images/look-and-feel/upload-dashboard-theme.png)
 
-3. The uploaded custom theme file will appear in the `Dashboard Theme` drop-down, as listed below. In the `Dashboard Theme` drop-down menu, choose the uploaded theme, then save the settings.
+3. The uploaded custom theme file appears in the `Dashboard Theme` drop-down, as listed below. In the `Dashboard Theme` drop-down menu, choose the uploaded theme, then save the settings.
 ![Select dashboard theme](/static/assets/multi-tenancy/images/look-and-feel/select-dashboard-theme.png)
 
-4. The dashboard will be rendered according to your customized theme file. For example, the `darkviolet` theme is rendered as shown below.
+4. The dashboard is rendered according to your customized theme file. For example, the `darkviolet` theme is rendered.
 ![Dashboard custom image](/static/assets/multi-tenancy/images/look-and-feel/dashboard-custom-image.png)
 
 
-## **Please find the links below to learn more about custom themes.**
+## **Please Find the Links Below to Learn More About Custom Themes**
 
 [How to create custom application theme](/multi-tenancy/site-administration/look-and-feel-settings/theme/create-custom-application-theme/)
 
