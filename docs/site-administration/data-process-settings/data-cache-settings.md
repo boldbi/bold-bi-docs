@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Configure Data Cache Settings – Embedded BI | Bold BI Docs
-description: Learn how to configure the data cache settings to improve dashboard performance by caching widget data during the interactions in a dashboard in the Bold BI application.
+description: "Learn how to configure data cache settings in Bold BI to improve dashboard performance by caching widget data while users interact with filters and dashboards."
 platform: bold-bi
 documentation: UG
 ---
