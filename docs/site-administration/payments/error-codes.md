@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Error Codes – Payment Failure – Cloud BI | Bold BI Docs
-description: Learn the error codes shown for any payment failure happened along with the step to proceed further in Bold BI.
+description: "Learn what each Bold BI Cloud payment error code means when a payment fails, and the steps to take to resolve the error and complete your subscription payment."
 platform: bold-bi
 documentation: ug
 ---
