@@ -1,29 +1,29 @@
 ---
 layout: post
 title: Single Sign-On with OneLogin Provider of OAuth 2.0 | Bold BI
-description: Learn how to configure Bold BI Embedded with OneLogin identity provider for Single Sign-on authentication using OAuth 2.0.
+description: Learn how to configure Bold BI Embedded with OneLogin identity provider for Single Sign-On authentication using OAuth 2.0.
 platform: bold-bi
 documentation: ug
 ---
 
-# OneLogin support for SSO authentication
+# OneLogin Support for SSO Authentication
 
 The Bold BI application supports adding users through the OneLogin provider. By importing them, you can share the dashboards and email exported dashboards with them.
 
 > **NOTE:** This feature is available in Bold BI Embedded Analytics but not in Cloud Analytics Server.
 
-## How to register the Bold BI application in OneLogin
+## How to Register the Bold BI Application in OneLogin
 
 This section explains how to perform Single Sign-On for users in OneLogin with the Bold BI application.
 
-> **NOTE:**  This configuration needs to be done on the OneLogin website.
+> **NOTE:** This configuration needs to be done on the OneLogin website.
 
 #### Prerequisites
 
 * An admin account in OneLogin.
 * Install Bold BI application.
 
-### Steps to register the Bold BI application
+### Steps to Register the Bold BI Application
 
 1. Please log in to the OneLogin website using the admin account.
 
@@ -63,7 +63,7 @@ This section explains how to perform Single Sign-On for users in OneLogin with t
 
 After successfully registering in OneLogin, save these settings on the Bold BI settings page to enable this authentication.
 
-## Enable OneLogin support for authentication in Bold BI
+## Enable OneLogin Support for Authentication in Bold BI
 
 Configure the settings in Bold BI as in the following snap to enable the authentication using OneLogin.
 
@@ -110,12 +110,12 @@ The fields that need to be saved in Bold BI in order to enable OneLogin for auth
 
 <tr>
 <td>Client ID</td>
-<td>The Client ID you get after registered the Bold BI application in OneLogin website.</td>
+<td>The Client ID you get after registering the Bold BI application in OneLogin website.</td>
 </tr>
 
 <tr>
 <td>Client Secret</td>
-<td>The Client Secret you get after registered the Bold BI application in OneLogin website.</td>
+<td>The Client Secret you get after registering the Bold BI application in OneLogin website.</td>
 </tr>
 
 <tr>
@@ -143,6 +143,6 @@ Configure the group import setting in Bold BI using OneLogin, as shown in the im
 
 To generate the API client credentials, please follow the link: [OneLogin API Credentials Guide](https://developers.onelogin.com/api-docs/1/getting-started/working-with-api-credentials)
 
-We use the client ID and client secret from the API client credentials to obtain a token for accessing the groups API. In order to access OneLogin APIs, we require the `Region` from the API Domain. Please refer to the image below for the region,
+We use the client ID and client secret from the API client credentials to obtain a token for accessing the groups API. In order to access OneLogin APIs, we require the `Region` from the API Domain. Please refer to the image below for the region.
 
 ![OneLogin Region](/static/assets/site-administration/oauth-support/images/OneLogin-region.png)
