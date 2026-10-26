@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Localization Support in Embedded Bold BI v5.1+ | Bold BI Docs
+title: Localization Support in Embedded Bold BI v5.1+ | Bold BI Docs
 description: Learn how to generate localization files for your (local) language, localize the Bold BI v5.1.55 or later versioned application deployed in your server.
 platform: bold-bi
 documentation: ug
@@ -13,8 +13,8 @@ By default, the Bold BI application is available in `English (en-US)` localizati
 
 Please refer to the following documentation to add a new localization or edit the existing localization:
 
-> **NOTE:** For applying localization files in Bold BI version 4.2.69 or earlier, Please refer to the Bold BI version [4.2.69 or earlier](/localization/v4.2.69-or-earlier/) guide.
-## Add a new localization
+> **NOTE:** For applying localization files in Bold BI version 4.2.69 or earlier, please refer to the Bold BI version [4.2.69 or earlier](/localization/v4.2.69-or-earlier/) guide.
+## Add a New Localization
 
 1. Create a folder named locale inside the app_data folder in the deployed location.
   ![locale folder location](/static/assets/localization/images/locale-folder-creation.png#width=65%)
@@ -39,7 +39,7 @@ Please refer to the following documentation to add a new localization or edit th
  6. To create a locale file `messages.po` from `default.po`, either use the manual edit option or an online tool for the `Designer` service. Refer to [this](/localization/latest/#how-to-generate-the-localization-file-for-another-language) for instructions.
 
 > **NOTE:** By default, Bold BI is deployed in` C:\BoldServices` for Windows and `/var/www/bold-services/application` for Linux.
-## How to add the default locale file in the application folder
+## How to Add the Default Locale File in the Application Folder
 
 1. BI Service
    * Copy the `messages.pot` file from the `bi\web\locale\` folder and paste it inside `app_data\locale\[language-folder]\bi\` folder.
@@ -60,21 +60,21 @@ Please refer to the following documentation to add a new localization or edit th
 
      ![locale js file](/static/assets/localization/images/locale-js.png)
 
-## How to generate the localization file for another language
+## How to Generate the Localization File for Another Language
 
 You can generate the localization file for the application in two ways:
 1. Manual edit
 2. Auto-generate using online tools
 
 > **NOTE:**<br>
-> •	After generating the `messages.po` file for `bi-dataservice` you need to run the locale utility. Refer to this [link](#how-to-generate-the-locale-js-file-for-bi-dataservice) to generate the locale js file.<br>
+> •	After generating the `messages.po` file for `bi-dataservice`, you need to run the locale utility. Refer to this [link](#how-to-generate-the-locale-js-file-for-bi-dataservice) to generate the locale js file.<br>
 > •	Restart the site to apply the generated language for the application.
 
-### Manual edit
+### Manual Edit
 
 1. `BI` or `UMS`
 
-   * Rename the `messages.pot` file to `messages.po`. This will generate the localization file for the `BI` service.
+   * Rename the `messages.pot` file to `messages.po`. This generates the localization file for the `BI` service.
 
      ![default localization file](/static/assets/localization/images/change-the-pot-file-to-po-file.png#width=65%)
 
@@ -97,7 +97,7 @@ Here, the sample converted locale file will appear as follows:
 
    ![change-message](/static/assets/localization/images/change-message-v5-1-55.png#width=65%)
 
-### Auto-generate using any tools
+### Auto-Generate Using Any Tools
 
 1. `BI` or `UMS`
 
@@ -173,7 +173,7 @@ Localization.exe
 - Generates translated locale files for all languages specified in `Translator.Culture`
 
 ### 5. Output Structure
-The generated files will be placed inside the `Translated_locale` folder.
+The generated files are placed inside the `Translated_locale` folder.
 
 **Example structure:**
 
@@ -210,19 +210,19 @@ Restart the Bold BI site/services to apply the new localization changes.
 > - Ensure `SubscriptionKey` and `Region` are set when using Azure Translator.
 > - The utility will generate locale files for every language in the `Translator.Culture` array.
 
-## Where to change the localization in the application
+## Where to Change the Localization in the Application
 
-### Global language settings
+### Global Language Settings
 
 After generating the localization file using the preceding steps, you can set the global language in the UMS application.
 
   ![global-language-setting](/static/assets/localization/images/global-language-setting-v5-1-55.png)
 
-This language is applied to `UMS, BI, and Designer Service` when there is no language is selected in [site settings](/localization/latest/#site-language-settings) or [user preference settings](/localization/latest/#user-preference-settings) and the Application language should be set to `Inherit from global settings` in site settings.  
+This language is applied to `UMS, BI, and Designer Service` when no language is selected in [site settings](/localization/latest/#site-language-settings) or [user preference settings](/localization/latest/#user-preference-settings) and the Application language should be set to `Inherit from global settings` in site settings.  
 
 ![site-language-inherit-setting](/static/assets/localization/images/site-language-inherit-setting.png)
 
-### Site language settings
+### Site Language Settings
 
 Change the localization on the site settings page. By default, the site language is selected as English. If you want to change the language, you can switch to the desired language after generating the localization file for the `BI` and `BI-DATASERVICE` services using the above steps.
 
@@ -230,7 +230,7 @@ Admins can enforce a language for all users on the site. If the admin enforces a
 
   ![site-language-setting](/static/assets/localization/images/site-language-setting-v5-1-55.png#width=65%)
 
-### User preference settings
+### User Preference Settings
 
 By clicking the `Update application language details through your account` link on the [profile page](/managing-resources/user-profile/#language-settings), the user will be redirected to the UMS profile page where **they can set their own** language preference.
 
