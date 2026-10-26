@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dashboard Templates – Embedded BI | Bold BI Documentation
-description: Learn how to create a dashboard from pre-defined dashboard templates by just connecting your data in Bold BI Embedded.
+description: "Learn how to create a dashboard from predefined templates in Bold BI by connecting your own data, so you can build a complete dashboard quickly without design."
 platform: bold-bi
 documentation: ug
 
