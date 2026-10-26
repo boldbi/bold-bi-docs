@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Keyboard Navigation in Bold BI Dashboard Viewer | Bold BI Docs
-description: Learn how to explore Bold BI dashboards with keyboard shortcuts in viewer mode for improved accessibility.
+description: "Learn how to navigate Bold BI dashboards in viewer mode with keyboard shortcuts, so users can explore widgets and filters without a mouse for accessibility."
 platform: bold-bi
 documentation: ug
 ---
@@ -18,9 +18,9 @@ Before you begin, ensure the following are in place:
 - A supported browser with accessibility features (Microsoft Edge, Google Chrome, or Mozilla Firefox).
 
 
-## Keyboard navigation
+## Keyboard Navigation
 
-You can navigate dashboard elements in viewer using the following keys:
+You can navigate dashboard elements in the viewer using the following keys:
 
 | Action | Shortcut |
 |--------|----------|
@@ -30,15 +30,15 @@ You can navigate dashboard elements in viewer using the following keys:
 | Activate the focused item | `Enter` or `Space` |
 | Close an open menu or dialog | `Esc` |
 
-### Working with pop-ups and dialog
+### Working with Pop-Ups and Dialog
 
 When a pop-up or dialog opens (for example, the **Export** window), focus moves to the first interactive element inside it. Continue using `Tab` or `Shift` + `Tab` to cycle through the available controls, and press `Enter` to confirm an action. Use `Esc` to close the dialog.
 
-### Working with widgets
+### Working with Widgets
 
 Widgets respond to the same keyboard patterns used elsewhere in the viewer:
 1. Press `Tab` until the widget is outlined, indicating that it has focus.
 2. Use `Shift` + `Tab` to return to the previous widget.
 
 
-> **Note:** Keyboard navigation is currently available only in dashboard viewer mode and covers a limited set of interactions.
+> **NOTE:** Keyboard navigation is currently available only in dashboard viewer mode and covers a limited set of interactions.
