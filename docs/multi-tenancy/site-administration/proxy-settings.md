@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Proxy Settings – On-Premises & Embedded | Bold BI Docs
-description: Learn how to configure proxy settings in Bold BI to route traffic securely and update domain and site configurations.
+description: "Learn how to configure proxy settings in Bold BI to route application traffic securely, and how to update the domain and site configuration after changes."
 platform: bold-bi
 documentation: ug
 ---
@@ -29,29 +29,29 @@ A **reverse proxy** is a server that sits between client devices and your backen
 
 ![Preview](/static/assets/multi-tenancy/images/Preview-Proxy-Settings.png#width=55%)
 
-### Detected current site URL (effective)
+### Detected Current Site URL (Effective)
 - This shows the URL automatically detected from incoming requests.
-- It helps confirm what the system currently identifies as the active site address.
+- It helps confirm what the system identifies as the active site address.
 
 ![Detected Current Site URL](/static/assets/multi-tenancy/images/Detected-Site-URL.png#width=55%)
 
-### Only sites that currently use this URL
+### Only Sites That Currently Use This URL
 
 - Enable this option if you want updates to apply only to sites already using the entered URL.
 - This prevents accidental URL changes for other sites in your environment.
 
 ![Only-Current-Site](/static/assets/multi-tenancy/images/Update-only-specified-sites.png#width=55%)
 
-### Force this URL for all sites
+### Force This URL for All Sites
 
 - If you want a single domain to be enforced across all sites, you can enable this option.
 - This forces all sites to use the same URL, so use it with caution as it overrides individual site configurations.
 
 ![Force-Change-URL](/static/assets/multi-tenancy/images/Update-all-sites.png#width=55%)
 
-### Lock site URLs and prevent automatic updates from reverse proxy requests
+### Lock Site URLs and Prevent Automatic Updates from Reverse Proxy Requests
 
-- Enable this option when your deployment uses a fixed domain configuration. When turned on, the system stops automatically updating the Site/Proxy URL based on incoming reverse‑proxy requests.
+- Enable this option when your deployment uses a fixed domain configuration. When turned on, the system stops automatically updating the Site/Proxy URL based on incoming reverse-proxy requests.
 
 - This ensures that the configured Site/Proxy URL remains stable and can only be changed manually through the administration settings. Even with this option enabled, the application can still be accessed using any valid proxy URL that has been configured in your reverse proxy server.
 
