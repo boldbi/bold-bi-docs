@@ -1,7 +1,7 @@
 ---
 layout: post
 title: SMTP Email Service Configuration – Self-Hosted BI | Bold BI Docs
-description: Learn how to use the SMTP mail service in Bold BI for email notifications on account activation, dashboard export, commenting, etc.
+description: "Learn how to configure an SMTP account in Bold BI to send email notifications for account activation, dashboard exports, schedules, and comment mentions."
 platform: bold-bi
 documentation: ug
 ---
@@ -12,15 +12,15 @@ This section explains how to configure the [SMTP](https://en.wikipedia.org/wiki/
 
 > **NOTE:** This email service configuration is only applicable for On-Premises Deployment.
 
-**The Bold BI Server requires the following SMTP details in order to send emails.**
+**The Bold BI Server requires the following SMTP details to send emails.**
 
 <table>
 <tr>
     <td>SMTP Server</td>
-    <td>The SMTP server specifies the public IP address or provider which delivers the emails to the end user mail box.</td>
+    <td>The SMTP server specifies the public IP address or provider that delivers the emails to the end user mailbox.</td>
 </tr>
 <tr>
-    <td>SMTP Port</td>
+    <td>SMTP port</td>
     <td>The port number of the SMTP server may vary depending on the SMTP server and the connection type (SSL/TLS).</td>
 </tr>
 <tr>
@@ -32,11 +32,11 @@ This section explains how to configure the [SMTP](https://en.wikipedia.org/wiki/
     <td>The email address, which is displayed as the "From" email address in the recipient's email.</td>
 </tr>
 <tr>
-<td>Authentication type</td>
+<td>Authentication Type</td>
 <td>
-We support two types of authentications:
+Bold BI supports two types of authentications:
 
-1. Basic Authentication: This is the default authentication type that requires a username and password.
+1. Basic authentication: This is the default authentication type that requires a username and password.
 2. Anonymous authentication: You can choose this option if you have disabled authentication on your SMTP server.
 </td>
 </tr>
@@ -50,11 +50,11 @@ We support two types of authentications:
 </tr>
 <tr>
     <td>Enable SSL</td>
-    <td>If SSL is enabled, it will be used to connect with your SMTP server. Otherwise, the connection will be made using TLS.</td>
+    <td>If SSL is enabled, it is used to connect with your SMTP server. Otherwise, the connection is made using TLS.</td>
 </tr>
 </table>
 
-## Steps to configure SMTP account settings in Bold BI:
+## Steps to Configure SMTP Account Settings in Bold BI
 
 1. Go to `http://{domain}/bi/site/site1/administration/e-mail-settings` and select `SMTP` from the `Email Account` drop-down menu.
 
