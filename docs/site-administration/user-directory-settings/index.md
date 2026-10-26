@@ -1,7 +1,7 @@
 ---
 layout: post
 title: User Directory Settings – Azure and AD Synchronization | Bold BI
-description: Learn how to manage user directory synchronization with Windows Active Directory and Azure in Bold BI deployed in your server.
+description: "Learn how to manage user directory synchronization in Bold BI with Windows Active Directory, Azure Active Directory, or an existing database on your server."
 documentation: ug
 ---
 
