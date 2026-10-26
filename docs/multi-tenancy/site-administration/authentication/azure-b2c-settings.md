@@ -1,7 +1,7 @@
 ---
 layout: post
 title: SSO with Azure AD B2C in User Management Server | Bold BI Docs
-description: Learn how to configure the Bold BI application with Azure Active Directory B2C Single Sign-on authentication in User Management Server.
+description: Learn how to configure the Bold BI application with Azure Active Directory B2C Single Sign-On authentication in User Management Server.
 platform: bold-bi
 documentation: ug
 ---
@@ -9,7 +9,7 @@ documentation: ug
 # Azure Active Directory B2C
 
 This section explains steps to configure Azure AD B2C Single Sign-On (SSO) in the Bold BI application.
-Before integrating Azure AD B2C with Bold BI, ensure the [Configure Azure AD B2C tenant in Azure portal](/multi-tenancy/site-administration/authentication/azure-b2c-settings/#configure-azure-ad-b2c-tenant-in-azure-portal) is done.
+Before integrating Azure AD B2C with Bold BI, ensure the [Configure Azure AD B2C Tenant in Azure Portal](/multi-tenancy/site-administration/authentication/azure-b2c-settings/#configure-azure-ad-b2c-tenant-in-azure-portal) is done.
  
 
 ## Configure Azure AD B2C in User Management Server
@@ -63,7 +63,7 @@ Before integrating Azure AD B2C with Bold BI, ensure the [Configure Azure AD B2C
 
     </table>  
 
-## Where to get Azure AD B2C settings
+## Where to Get Azure AD B2C Settings
 
 * In the Azure AD B2C tenant, under `Overview`, select the tenant's name from the domain name.
     ![Azure AD B2C setting tenant name](/static/assets/multi-tenancy/images/azure-ad-b2c-setting-tenant-name.png)
@@ -78,7 +78,7 @@ Before integrating Azure AD B2C with Bold BI, ensure the [Configure Azure AD B2C
 * Select the registered application, under `Manage`, click the `Certificates & secrets` and copy the value of `Client Secret`.
     ![Azure AD B2C settings client secret](/static/assets/multi-tenancy/images/azure-ad-b2c-setting-client-secret.png)
 
-## Set Azure AD B2C as default authentication
+## Set Azure AD B2C as Default Authentication
 
 Azure AD B2C can be set as the default authentication when the [Azure AD B2C settings](/multi-tenancy/site-administration/authentication/azure-b2c-settings/#configure-azure-ad-b2c-in-user-management-server) are enabled.
 Follow these steps to configure the default authentication.
@@ -89,15 +89,15 @@ Follow these steps to configure the default authentication.
 
    ![Enable Azure AD B2C Default Authentication](/static/assets/multi-tenancy/images/azure-ad-b2c-default-authentication.png)
 
-## Disabling Azure AD B2C connect settings
+## Disabling Azure AD B2C Connect Settings
 
 Disabling the Enable Default Authentication option and then clicking `Save` will disable the [Azure AD B2C default authentication](/multi-tenancy/site-administration/authentication/azure-b2c-settings/#set-azure-ad-b2c-as-default-authentication).  
 
 ![Disable Default Authentication](/static/assets/multi-tenancy/images/disable-azure-ad-b2c-settings.png)
 
-## Configure Azure AD B2C tenant in Azure portal
+## Configure Azure AD B2C Tenant in Azure Portal
 
-You have an Azure subscription for configuring the Azure AD B2C tenant in the Azure portal. If you don't have one, please create [free account](https://azure.microsoft.com/free/).
+You have an Azure subscription for configuring the Azure AD B2C tenant in the Azure portal. If you don't have one, please create a [free account](https://azure.microsoft.com/free/).
 
 > **NOTE:** For comprehensive information on configuring Azure AD B2C, refer to the [official B2C documentation](https://docs.microsoft.com/en-us/azure/active-directory-b2c/tutorial-create-tenant), which includes tutorials on creating a B2C tenant, registering applications, and more.
 
@@ -126,7 +126,7 @@ After creating an Azure AD B2C tenant, please follow these steps to register a n
 
 1. Go to `Policies`, select `User flows`, and then click `+ New user flow`.
 
-2. Select `Sign up and sign in` or `sign in` is `Recommended`, and click `Create`.
+2. Select `Sign up and sign in` or `sign in`, which is `Recommended`, and click `Create`.
 
     ![Create user flow](/static/assets/multi-tenancy/images/azure-b2c-create-user-flow.png)
 
@@ -191,7 +191,7 @@ After creating an Azure AD B2C tenant, please follow these steps to register a n
 
 5. After creation, **copy the Value immediately**. This is your **Client Secret**, which should be added to the Bold BI Azure B2C settings.
 
-   > ⚠️ **Important:** The client secret value is visible only once, immediately after creation. Save it securely in a password manager or secure vault.
+   > ⚠️ **IMPORTANT:** The client secret value is visible only once, immediately after creation. Save it securely in a password manager or secure vault.
 
    ![Azure B2C copy client secret](/static/assets/multi-tenancy/images/azure-ad-b2c-setting-client-secret-value.png)
 
@@ -210,14 +210,14 @@ Follow the steps below to add the `User.Read.All` permission in Azure AD B2C thr
 
 ![Azure B2C microsoft applicaiton permission](/static/assets/multi-tenancy/images/azure-ad-b2c-setting-microsoft-graph-application-permission.png)
 
-8. In the search box, type `user.read`.
-9. Expand the **User** section.
-10. Check the box for **User.Read.All** - "Read all users' full profiles".
-11. Click on **Add permissions**.
+6. In the search box, type `user.read`.
+7. Expand the **User** section.
+8. Check the box for **User.Read.All** – "Read all users' full profiles".
+9. Click on **Add permissions**.
 
 ![Azure B2C microsoft group](/static/assets/multi-tenancy/images/azure-ad-b2c-setting-microsoft-graph-user-read.png)
 
-12. After adding, click **Grant admin consent for your tenant name** and confirm to apply the permissions.
+10. After adding, click **Grant admin consent for your tenant name** and confirm to apply the permissions.
 
 ![Azure B2C microsoft group](/static/assets/multi-tenancy/images/azure-ad-b2c-setting-microsoft-graph-user-read-grant.png)
 
