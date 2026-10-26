@@ -1,31 +1,31 @@
 ---
 layout: post
 title: Single Sign-On with Okta Provider of OAuth 2.0 | Bold BI
-description: Learn how to configure Bold BI Embedded with Okta identity provider for Single Sign-on authentication using OAuth 2.0.
+description: "Learn how to configure Okta as an OAuth 2.0 identity provider for single sign-on in Bold BI, so users can sign in to dashboards with their Okta accounts."
 platform: bold-bi
 documentation: ug
 ---
 
-# Okta support for SSO authentication
+# Okta Support for SSO Authentication
 
 The Bold BI application supports the addition of users using the Okta provider. By importing them, you can share the dashboards and email exported dashboards with these users.
 
 > **NOTE:** This feature is available in Bold BI Embedded Analytics, but it is not available in Cloud Analytics Server.
 
-## How to register the Bold BI application in Okta
+## How to Register the Bold BI Application in Okta
 
 This section explains how to perform Single Sign-On for users in Okta with the Bold BI application.
 
-> **NOTE:**  This configuration needs to be done on the Okta website.
+> **NOTE:** This configuration needs to be done on the Okta website.
 
 #### Prerequisites
 
 * An admin account in Okta.
-* Install Bold BI application.
+* Install the Bold BI application.
 
-### Steps to register the Bold BI application
+### Steps to Register the Bold BI Application
 
-1. Login to the Okta website using an admin account.
+1. Log in to the Okta website using an admin account.
 
     ![Admin page](/static/assets/site-administration/oauth-support/images/adminlogin.png)
 
@@ -59,7 +59,7 @@ This section explains how to perform Single Sign-On for users in Okta with the B
 
 After successfully registering in Okta, save these settings on the Bold BI settings page to enable this authentication.
 
-## Enable Okta support for authentication in Bold BI
+## Enable Okta Support for Authentication in Bold BI
 
 Configure the settings in Bold BI, as shown in the following screenshot, to enable authentication using Okta.
 
@@ -76,7 +76,7 @@ The fields that need to be saved in Bold BI to enable Okta for authentication ar
 
 <tr>
 <td>Provider Logo</td>
-<td>It represents the logo of the authentication provider to be displayed in the login .</td>
+<td>It represents the logo of the authentication provider to be displayed in the login page.</td>
 </tr>
 
 <tr>
@@ -101,17 +101,17 @@ The fields that need to be saved in Bold BI to enable Okta for authentication ar
 
 <tr>
 <td>User Information Endpoint</td>
-<td>It should be in the format <span style="color:#0c9dd1">${baseUrl}/v1/token</span> <br>Please refer <a href="https://developer.okta.com/docs/reference/api/oidc/#userinfo">here</a> for more details.</td>
+<td>It should be in the format <span style="color:#0c9dd1">${baseUrl}/v1/userinfo</span> <br>Please refer <a href="https://developer.okta.com/docs/reference/api/oidc/#userinfo">here</a> for more details.</td>
 </tr>
 
 <tr>
 <td>Client ID</td>
-<td>The Client ID you get after registered the Bold BI application in Okta website.</td>
+<td>The Client ID you get after registering the Bold BI application in Okta website.</td>
 </tr>
 
 <tr>
 <td>Client Secret</td>
-<td>The Client Secret you get after registered the Bold BI application in Okta website.</td>
+<td>The Client Secret you get after registering the Bold BI application in Okta website.</td>
 </tr>
 
 <tr>
