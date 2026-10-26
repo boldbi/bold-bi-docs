@@ -7,7 +7,7 @@ platform: bold-bi
 documentation: ug
 ---
 
-# Interact with our REST API
+# Interact with Our REST API
 
 This section explains how to use our interactive API documentation to play.
 
@@ -16,7 +16,7 @@ You need to obtain the access token in order to authenticate with the API endpoi
 ## Get Access Token
 Each user has their own unique token to authenticate the requests, which should be added in the header of the request.
 
-To get the `User Token` follow the below steps:
+To get the `User Token` follow the steps below:
 
 1. Navigate to the appropriate interactive REST API documentation link.
      * [v1.0](/server-api-reference/v1.0/try-it-now/)
@@ -39,7 +39,7 @@ To get the `User Token` follow the below steps:
 4. Click `Execute` and you will receive the response as shown below. Obtain the `access_token` from the Response body.
 ![Response](/static/assets/rest-api-reference/images/demo-response.png)
 5. Now you need to add the access token as the Authorization header for further API calls.
-6. Click the `Authorize` button, which is located in the top right corner of the page.
+6. Click the `Authorize` button, which is located in the top-right corner of the page.
 ![Authorize button](/static/assets/rest-api-reference/images/authorize-button.png)
 7. A dialog box will open, in which you should enter the access token in the `Value` box using this format: **'Bearer' + access_token**. Then, click the `Authorize` button.
 ![Authorize dialog](/static/assets/rest-api-reference/images/authorization-dialog.png)
