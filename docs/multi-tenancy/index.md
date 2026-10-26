@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Multitenancy - Embedded BI | Bold BI Documentation
-description: Explore the multi-tenant support in Bold BI Server that lets you deploy multiple tenants on the same machine, isolated from each other.
+description: "Learn how multi-tenancy works in Bold BI, which lets you host multiple isolated tenant sites on the same server, each with its own users, data, and dashboards."
 platform: bold-bi
 documentation: ug
 
