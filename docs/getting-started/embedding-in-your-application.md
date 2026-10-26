@@ -254,7 +254,7 @@ To embed the multi-tabbed dashboard, you can use either the dashboard ID or the 
     public string GetSignatureUrl(string queryString)
     {
         // Get the embedSecret key from Bold BI.
-        var embedSecret = "8apLLNabQisvriG2W1nOI7XWkl2CsYY";
+        var embedSecret = "<your-embed-secret>";
         var encoding = new System.Text.UTF8Encoding();
         var keyBytes = encoding.GetBytes(embedSecret);
         var messageBytes = encoding.GetBytes(queryString);
