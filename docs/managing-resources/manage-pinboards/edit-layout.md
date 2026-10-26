@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Editing Pinboard Layout – Embedded BI | Bold BI Docs
-description: Learn how to edit the pinboard layout in Bold BI Embedded. Pinboard is a collection of widgets from various dashboards pinned to it.
+description: "Learn how to edit the layout of a pinboard in Bold BI and change how its widgets are arranged. A pinboard collects widgets pinned from many dashboards."
 canonical: "/managing-resources/manage-pinboards/edit-layout/"
 platform: bold-bi
 documentation: ug
