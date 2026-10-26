@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Application Startup – Embedded BI | Bold BI Documentation
-description: Read this guide to learn how to configure the installed Bold BI Embedded application with the admin account and data storage options to get started with Bold BI.
+description: "Learn how to complete the Bold BI application startup after installation by creating the admin account and choosing the database and data store settings."
 platform: bold-bi
 documentation: ug
 ---
