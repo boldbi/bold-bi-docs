@@ -11,7 +11,7 @@ documentation: ug
 
 By using the Site Administration REST API, you can programmatically manage and change resources in your site using HTTP. The API provides easy access to the functionality of the resources on your site, allowing you to create custom applications or script interactions with your site.
 
-For our application, the API path will be `https://{Domain}/api/{ApiEndpoint}`
+For our application, the API path is `https://{Domain}/api/{ApiEndpoint}`
 
 For example, `https://onpremise-demo.boldbi.com/api/token`
 
@@ -33,7 +33,7 @@ For Bold BI tenant site REST API references, refer to the following [API Referen
   </tr>
   <tr>
     <td>
-        <a href="/site-administration/api-reference/v1.0/api-reference/">Rest API-v1.0</a>
+        <a href="/site-administration/api-reference/v1.0/api-reference/">REST API-v1.0</a>
     </td>
     <td>
         <a href="/site-administration/api-reference/v1.0/try-it-now/">Try It Now-v1.0</a>
@@ -44,7 +44,7 @@ For Bold BI tenant site REST API references, refer to the following [API Referen
   </tr>
   <tr>
     <td>
-        <a href="/site-administration/api-reference/v2.0/api-reference/">Rest API-v2.0</a>
+        <a href="/site-administration/api-reference/v2.0/api-reference/">REST API-v2.0</a>
     </td>
     <td>
         <a href="/site-administration/api-reference/v2.0/try-it-now/">Try It Now-v2.0</a>
