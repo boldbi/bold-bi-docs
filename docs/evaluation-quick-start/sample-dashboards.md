@@ -9,7 +9,7 @@ documentation: ug
 
 # Sample Dashboards
 
-To help you get started with Bold BI, we have curated a collection of **sample dashboards** covering various industries and use cases. These dashboards provide insights into different domains and showcase the powerful visualization capabilities of Bold BI.
+To help you get started with Bold BI, we have curated a collection of **sample dashboards** covering various industries and use cases. These dashboards provide insights into different domains and showcase the visualization capabilities of Bold BI.
 
 Below is a categorized list of sample dashboards. Each category contains multiple dashboards tailored to specific business needs.
 
