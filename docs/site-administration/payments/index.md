@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Manage Subscription Payments – Cloud BI | Bold BI Docs
-description: Learn how to manage payment details like card information, billing address, retry payment on failure for your Bold BI Cloud subscriptions.
+description: "Learn how to manage payment details for your Bold BI Cloud subscription, including card information, billing address, and retrying a payment after it fails."
 platform: bold-bi
 documentation: ug
 ---
