@@ -35,7 +35,7 @@ Bold BI offers two primary embedding methods: [**iFrame Embedding**](https://hel
 Quickly embed interactive dashboards into your web pages with minimal setup and configuration using [iFrame Embedding](/embedding-options/iframe-embedding/). Ideal for fast deployment without extensive coding efforts.
 
 ### JavaScript SDK
-Leverage our powerful [JavaScript SDK](https://help.boldbi.com/embedding-options/embedding-sdk/) to deeply integrate dashboards within your web applications. Gain full control over the embedded analytics experience, supporting frameworks like [Angular](/embedding-options/embedding-sdk/samples/angular-with-core/), [React](/embedding-options/embedding-sdk/samples/react-with-node-js/), [Vue.js](/embedding-options/embedding-sdk/samples/vuejs-with-go/), and more.
+Leverage our [JavaScript SDK](https://help.boldbi.com/embedding-options/embedding-sdk/) to deeply integrate dashboards within your web applications. Gain full control over the embedded analytics experience, supporting frameworks like [Angular](/embedding-options/embedding-sdk/samples/angular-with-core/), [React](/embedding-options/embedding-sdk/samples/react-with-node-js/), [Vue.js](/embedding-options/embedding-sdk/samples/vuejs-with-go/), and more.
 
 ### Comparison
 Explore the detailed comparison to determine which embedding method aligns best with your needs:
