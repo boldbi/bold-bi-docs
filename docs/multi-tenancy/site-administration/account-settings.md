@@ -48,6 +48,6 @@ When the user email setting is set to `Not required` mode, an email address is n
 
 ## System User Authentication
 
-Enable the System User option to streamline authentication and enhance accessibility. This feature allows anonymous users to seamlessly view embedded dashboards and access REST APIs while generating global access tokens for secure and efficient system-wide authentication.
+Enable the System User option to streamline authentication and enhance accessibility. This feature allows anonymous users to view embedded dashboards and access REST APIs while generating global access tokens for secure and efficient system-wide authentication.
 
 ![System user](/static/assets/multi-tenancy/images/system-user.png)
