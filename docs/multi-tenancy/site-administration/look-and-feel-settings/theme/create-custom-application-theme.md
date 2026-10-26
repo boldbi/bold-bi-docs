@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Custom Theme Settings in Site Administration | Bold BI Docs
-description: Learn how to create a custom theme by modifying the CSS3 variable in the template in both the basic or advanced customization levels of Bold BI application.
+description: Learn how to create a custom theme by modifying the CSS3 variable in the template in both the basic or advanced customization levels of the Bold BI application.
 platform: bold-bi
 documentation: ug
 ---
 
-# How to create custom application theme
+# How to Create Custom Application Theme
 
 Once you have extracted the template file downloaded from the link in the `Manage Application Theme` dialog, you can manually edit the CSS variables and assign color codes in the template file to customize the theme.
 
@@ -14,7 +14,7 @@ Once you have extracted the template file downloaded from the link in the `Manag
 
 CSS3 variable syntax: `name:value;`
 
-Here `name` represents the variable name, and it should starts with two dashes `(--)`. For example, `--primary-branding-color`.
+Here `name` represents the variable name, and it should start with two dashes `(--)`. For example, `--primary-branding-color`.
 
 The value represents the hexadecimal representation of the color code that you want to assign to this variable. For example, `#ffffff`. You can either assign a hex color code or use the already defined CSS3 variable name like the one below.
 
@@ -29,11 +29,11 @@ The value represents the hexadecimal representation of the color code that you w
 
 ```
 
-### **Points to be noted while editing and uploading custom theme file.**
+### **Points to Be Noted While Editing and Uploading Custom Theme File**
 
 * To avoid errors in the color assignment, please check this [online color picker tool](https://www.google.com/search?si=AC1wQDAoyjQYg3jwXlqSN_ppczo9wBVbeISr-8vCGaPybowwliJXfryD9GkUWlNo3uTq29yH5Z2Khp5AXSpKSRTZXtkDq1HDAQ%3D%3D&hl=en-IN&kgs=4b27e3cf717a5fe4&shndl=21&source=sh/x/fbx/1&entrypoint=sh/x/fbx&fbxst=CgkKByM2ZTZhNjA) to get the hex value for the color you wish to use in the template file.
 
-* Make sure that you use appropriate color codes that will be suitable for the mode you prefer to customize. For example, use **light based colors** in **dark mode** and **dark based colors** in **light mode** so that the visibility will be clear.
+* Make sure that you use appropriate color codes that will be suitable for the mode you prefer to customize. For example, use **light-based colors** in **dark mode** and **dark-based colors** in **light mode** so that the visibility will be clear.
 
 * A custom theme can only be created for either the dark or light mode. A single custom theme will not work for both. Please choose a custom theme based on your current application mode. To reset the custom theme, please select the default value.
 
@@ -41,16 +41,16 @@ The value represents the hexadecimal representation of the color code that you w
 
 * Before uploading the custom theme file, please ensure your custom theme file is valid by uploading it into this [online validation helper](https://jigsaw.w3.org/css-validator/#validate_by_upload).
 
-## Assign color code to variables in template file
+## Assign Color Code to Variables in Template File
 
 ### **Simple Customization**
 
-You can customize the **branding color**, **primary text**, **secondary text**, **active text**, and **hyper link colors** by changing color codes for the below-mentioned variables. These minimal changes will be enough to customize all components and elements.
+You can customize the **branding color**, **primary text**, **secondary text**, **active text**, and **hyper link colors** by changing color codes for the variables mentioned below. These minimal changes will be enough to customize all components and elements.
 
 #### Branding Color
 
 You can customize the **branding color** by changing the `--primary-branding-color` variable.
-This will reflect in the areas and components shown in the below image.
+This will reflect in the areas and components shown in the image below.
 
 <table>
     <tr>
@@ -66,7 +66,7 @@ This will reflect in the areas and components shown in the below image.
 
 #### Typography
 
-You can customize **primary text**, **secondary text**, **hover text**, **active text**, and **hyperlink color** over the entire application by changing the color codes of the below variables.
+You can customize **primary text**, **secondary text**, **hover text**, **active text**, and **hyperlink color** over the entire application by changing the color codes of the variables below.
 
 <table>
 <tr>
@@ -90,7 +90,7 @@ You can customize **primary text**, **secondary text**, **hover text**, **active
 
 You can customize the **active** and **hover state colors**, as well as the **primary button**, **secondary button**, and **link button** by assigning color codes to their respective variables.
 
-#### State background
+#### State Background
 
 You can customize the **hover background** and **active background** color across the entire application by changing the color codes in the variables below.
 
