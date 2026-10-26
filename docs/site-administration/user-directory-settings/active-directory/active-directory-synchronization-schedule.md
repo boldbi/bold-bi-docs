@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Active Directory User Groups Synchronization | Bold BI Docs
-description: Learn how to schedule the synchronization of users and groups from Active Directory with the users and groups in the Bold BI Server.
+description: "Learn how to set up a synchronization schedule for Active Directory in Bold BI, so imported users and groups stay updated automatically at regular intervals."
 platform: bold-bi
 documentation: ug
 ---
