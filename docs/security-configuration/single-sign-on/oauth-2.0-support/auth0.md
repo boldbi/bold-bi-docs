@@ -1,31 +1,31 @@
 ---
 layout: post
 title: Single Sign-On with Auth0 Provider of OAuth 2.0 | Bold BI
-description: Learn how to configure Bold BI Embedded with Auth0 identity provider for Single Sign-on authentication using OAuth 2.0.
+description: Learn how to configure Bold BI Embedded with Auth0 identity provider for Single Sign-On authentication using OAuth 2.0.
 platform: bold-bi
 documentation: ug
 ---
 
-# Auth0 support for SSO authentication
+# Auth0 Support for SSO Authentication
 
 The Bold BI application supports the addition of users using the Auth0 provider. By importing them, you can share dashboards and email exported dashboards with them.
 
 > **NOTE:** This feature is available in Bold BI Embedded Analytics, but not in Cloud Analytics Server.
 
-## How to register the Bold BI application in Auth0
+## How to Register the Bold BI Application in Auth0
 
 This section explains how to perform Single Sign-On for users in Auth0 with the Bold BI application.
 
-> **NOTE:**  This configuration must be done on the Auth0 website.
+> **NOTE:** This configuration must be done on the Auth0 website.
 
 #### Prerequisites
 
 * An admin account in Auth0.
-* Install Bold BI application.
+* Install the Bold BI application.
 
-### Steps to register the Bold BI application
+### Steps to Register the Bold BI Application
 
-1. Login to the Auth0 website using an admin account.
+1. Log in to the Auth0 website using an admin account.
 
     ![Admin page](/static/assets/site-administration/oauth-support/images/Authadmin.png)
 
@@ -55,13 +55,13 @@ Please fill in the details and save the changes.
 
 After successfully registering with Auth0, save these settings on the Bold BI settings page in order to enable this authentication.
 
-## Enable Auth0 support for authentication in Bold BI
+## Enable Auth0 Support for Authentication in Bold BI
 
 Configure the settings in Bold BI, as shown in the following snapshot, to enable authentication using Auth0.
 
 ![Auth0 settings](/static/assets/site-administration/oauth-support/images/auth0-sample-value.png)
 
-The fields that need to be saved in Bold BI in order to enable Auth0 for authentication are explained as follows.
+The fields that need to be saved in Bold BI in order to enable Auth0 for authentication are explained as follows:
 
 <table>
 
@@ -102,12 +102,12 @@ The fields that need to be saved in Bold BI in order to enable Auth0 for authent
 
 <tr>
 <td>Client ID</td>
-<td>The Client ID you get after registered the Bold BI application in Auth0 website.</td>
+<td>The Client ID you get after registering the Bold BI application in Auth0 website.</td>
 </tr>
 
 <tr>
 <td>Client Secret</td>
-<td>The Client Secret you get after registered the Bold BI application in Auth0 website.</td>
+<td>The Client Secret you get after registering the Bold BI application in Auth0 website.</td>
 </tr>
 
 <tr>
@@ -133,6 +133,6 @@ Configure the group import setting in Bold BI using Auth0 as shown in the image 
 
 ![Auth0 Group](/static/assets/site-administration/oauth-support/images/Auth0-group.png)
 
-> **IMPORTANT:**  To manage groups in Auth0, it is necessary to install the `Authorization Extension`. For more details, please follow the link: [Auth0 Authorization Extension Documentation](https://auth0.com/docs/extensions/authorization-extension/v2).
+> **IMPORTANT:** To manage groups in Auth0, it is necessary to install the `Authorization Extension`. For more details, please follow the link: [Auth0 Authorization Extension Documentation](https://auth0.com/docs/extensions/authorization-extension/v2).
 
-To obtain information about the `Audience` and `Extension URL` , please refer to the following link: [Auth0 API Documentation - Get All Groups](https://auth0.com/docs/api/authorization-extension#get-all-groups).
+To obtain information about the `Audience` and `Extension URL`, please refer to the following link: [Auth0 API Documentation - Get All Groups](https://auth0.com/docs/api/authorization-extension#get-all-groups).
