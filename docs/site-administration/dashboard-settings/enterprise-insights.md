@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Handling Enterprise Insights – Embedded BI | Bold BI Docs
-description: Learn how to handle the enterprise insights at administrator level in Bold BI Embedded and users to monitor dashboard activities.
+description: "Learn how administrators enable and manage enterprise insights in Bold BI, so users can monitor dashboard activity and see how dashboards are being used."
 platform: bold-bi
 documentation: ug
 ---
@@ -10,9 +10,9 @@ documentation: ug
 
 This section describes how to enable or disable Enterprise Insights in the dashboard settings.
 
-You can enable or disable enterprise insights in the dashboard settings, and based on this, the `Enterprise Insights` option will be available on the dashboard listing page. Enterprise insights consists of `Performance Metrics` and `Query Metrics` options. By default, usage analytics, performance metrics and query metrics settings will be enabled.
+You can enable or disable enterprise insights in the dashboard settings, and based on this, the `Enterprise Insights` option is available on the dashboard listing page. Enterprise insights consists of `Performance Metrics` and `Query Metrics` options. By default, usage analytics, performance metrics, and query metrics settings are enabled.
 
->**NOTE:** If the enterprise insights settings are disabled, both performance metrics and query metrics will also be disabled. You will not be able to enable performance metrics and query metrics unless you enable the enterprise insights settings.
+> **NOTE:** If the enterprise insights settings are disabled, both performance metrics and query metrics are also disabled. You will not be able to enable performance metrics and query metrics unless you enable the enterprise insights settings.
 
 ![Usage Analytics](/static/assets/site-administration/images/usage-analytics.png#width=60%)
 
@@ -22,21 +22,21 @@ You can enable or disable enterprise insights in the dashboard settings, and bas
 
 > **NOTE:** This feature is available in On-Premises Deployment but not in Syncfusion Managed Cloud Server.
 
-## Performance metrics
+## Performance Metrics
 
 This section describes how to enable or disable performance metrics in the dashboard settings.
 
-You can enable or disable performance metrics in the dashboard settings, and based on this, the `Performance Metrics` dashboard will be available on the dashboard listing page.
+You can enable or disable performance metrics in the dashboard settings, and based on this, the `Performance Metrics` dashboard is available on the dashboard listing page.
 
 ![Usage Analytics](/static/assets/site-administration/images/performance-metrics.png#width=60%)
 
 ![Usage Analytics](/static/assets/site-administration/images/performance-metrics-dashboard.png#width=60%)
 
-## Query metrics
+## Query Metrics
 
 This section describes how to enable or disable query metrics in the dashboard settings.
 
-You can enable or disable performance metrics in the dashboard settings, and based on this, the `Query Metrics` dashboard will be available on the dashboard listing page.
+You can enable or disable performance metrics in the dashboard settings, and based on this, the `Query Metrics` dashboard is available on the dashboard listing page.
 
 ![Usage Analytics](/static/assets/site-administration/images/query-metrics.png#width=60%)
 
