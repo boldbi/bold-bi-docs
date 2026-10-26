@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Manage sites in Multi-tenancy of Embedded BI | Bold BI Docs
+title: Manage Sites in Multi-Tenancy of Embedded BI | Bold BI Docs
 description: Learn here how to manage the site information, isolation code, custom attribute, how to grant and revoke access to the site users and more in Embedded Bold BI. 
 platform: bold-bi
 documentation: ug
 ---
 
-# Manage sites
+# Manage Sites
 
 This section briefly explains how to manage the sites and provides information about the site.
 
@@ -16,7 +16,7 @@ You can suspend the site by clicking the `Suspend` option in the Action Menu.
 
 ![Suspend Site](/static/assets/multi-tenancy/images/suspend-site.png#max-width=95%)
 
-> **Warning :** If the site is suspended, users will not be able to access the site.
+> **WARNING:** If the site is suspended, users will not be able to access the site.
 
 ### Activate Site
 
@@ -38,7 +38,7 @@ You can edit the site by clicking the `Edit` option in the menu.
 
 ![Edit Site Button](/static/assets/multi-tenancy/images/edit-site-button.png#max-width=95%)
 
-After clicking the `Edit` option, the Edit Site dialog will open. Enter the site name, site domain, and site identifier in the next step and click the `Next` button to update the database user credential. If you want the site domain to remain fixed and prevent it from being automatically modified when the site is accessed through reverse proxy domains, enable the Lock Site URL and Prevent Automatic Updates from Reverse Proxy Requests option.
+After clicking the `Edit` option, the Edit Site dialog opens. Enter the site name, site domain, and site identifier in the next step and click the `Next` button to update the database user credential. If you want the site domain to remain fixed and prevent it from being automatically modified when the site is accessed through reverse proxy domains, enable the Lock Site URL and Prevent Automatic Updates from Reverse Proxy Requests option.
 
 ![Edit Site](/static/assets/multi-tenancy/images/edit-site-lock-url.png#max-width=45%)
 
@@ -52,7 +52,7 @@ You can delete the site and its database by clicking the `Delete` option.
 
 ![Delete Site](/static/assets/multi-tenancy/images/delete-site.png#max-width=95%)
 
-> **NOTE:** The database will not be deleted if there are any other tables present other than the Bold BI tables.
+> **NOTE:** The database is not deleted if there are any other tables present other than the Bold BI tables.
 
 ## Site Information
 
@@ -65,8 +65,8 @@ By clicking on the site name, you can view the site information.
 This section displays basic information about the site.
 
 * Site Name
-* Site Url
-* Client id
+* Site URL
+* Client Id
 * Client secret
 
 ![General Info](/static/assets/multi-tenancy/images/general-site-info.png#max-width=95%)
@@ -105,11 +105,11 @@ To grant access to a new user, click the `Add User` button.
 
 You can add the user by selecting [Add User](/multi-tenancy/manage-users/#add-individual-users).
 
-The user will be added and granted access to the site.
+The user is added and granted access to the site.
 
 ### Isolation Code
 
-To learn about how to configure the Isolation Code, click on the [Isolation code](/working-with-data-sources/configuring-isolation-code/).
+To learn about how to configure the isolation code, click on the [isolation code](/working-with-data-sources/configuring-isolation-code/).
 
 ### Custom Attribute 
 
