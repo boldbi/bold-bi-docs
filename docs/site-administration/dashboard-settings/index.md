@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Managing Dashboard Settings – Embedded BI | Bold BI Documentation
-description: Learn how to manage dashboard settings such as, public dashboards, auto-save filter, default views, theming, and usage analytics in the Bold BI Embedded.
+description: Learn how to manage dashboard settings such as public dashboards, auto-save filter, default views, theming, and usage analytics in the Bold BI Embedded.
 platform: bold-bi
 documentation: ug
 ---
