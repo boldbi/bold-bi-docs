@@ -1,7 +1,7 @@
 ---
 layout: post
 title: SMTP Email Service Configuration – Self-Hosted BI | Bold BI Docs
-description: Learn how to use the SMTP mail service in Bold BI for email notifications on account activation, dashboard export, commenting, etc.
+description: "Learn how to configure an SMTP account in Bold BI to send email notifications for account activation, dashboard exports, schedules, and comment mentions."
 platform: bold-bi
 documentation: ug
 ---
