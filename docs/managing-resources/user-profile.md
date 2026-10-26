@@ -1,7 +1,7 @@
 ---
 layout: post
 title: View Your Profile and Access Permissions | Bold BI Embedded
-description: Learn how to view and edit your profile, view your access permissions, and change your password in Bold BI.
+description: "Learn how to view and edit your Bold BI user profile, check the permissions assigned to your account, update profile details, and change your password."
 platform: bold-bi
 documentation: ug
 ---
