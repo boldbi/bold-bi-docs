@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Copying Dashboard URL – Embedded BI | Bold BI Documentation
-description: Learn how to copy a published dashboard URL in Bold BI Embedded from dashboard listing or dashboard itself to share with others.
+description: "Learn how to copy the link of a published dashboard in Bold BI, from the dashboard list or from the dashboard itself, so you can share it with other users."
 canonical: "/working-with-dashboards/share-dashboards/get-dashboard-link/"
 platform: bold-bi
 documentation: ug
@@ -28,7 +28,7 @@ Follow the steps below to get the Dashboard link:
 
 	![Get Link Menu](/static/assets/working-with-dashboards/share-dashboards/images/get-link-menu.png)
 
-2. The respective Dashboard link will be shown in the `Get Link` dialog box.
+2. The respective Dashboard link is shown in the `Get Link` dialog box.
 
     For Public Dashboards
 
