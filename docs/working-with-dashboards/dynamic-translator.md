@@ -26,7 +26,7 @@ The Dynamic Translator feature can be found in the toolbar of the design canvas,
 
 ![Dynamic Translator icon in Design Page](/static/assets/working-with-dashboards/images/translator-icon-design-mode.png)
 
-Click the icon to access the Dynamic Translator window. In this window, the default language content for the dashboard and widgets is displayed in English, as shown below.
+Click the icon to access the Dynamic Translator window. In this window, the default language content for the dashboard and widgets is displayed in English.
 
 ![Dynamic Translator UI](/static/assets/working-with-dashboards/images/dynamic-language-translator.png)
 
