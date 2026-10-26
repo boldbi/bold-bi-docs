@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Adding disclaimer text to login screen | Bold BI Docs
-description: Learn how to enable disclaimer in login screen and get user consent for every login in your cloud-hosted Bold BI site.
+title: Adding Disclaimer Text to Login Screen | Bold BI Docs
+description: "Learn how to enable a login disclaimer in your cloud-hosted Bold BI site, so users must read and accept your terms before they sign in each time they log in."
 platform: bold-bi
 documentation: ug
 ---
 
-# Configure Login disclaimer in Bold BI Cloud Analytics Server
+# Configure Login Disclaimer in Bold BI Cloud Analytics Server
 This section explains how to configure the login disclaimer message on the login page for the Cloud Analytics Server.
 
-## Customize login disclaimer
+## Customize Login Disclaimer
 To customize the login disclaimer, follow these steps:
 
 1. Click on the `gear` icon in the left panel to open the administration page, as shown in the image below.
@@ -20,7 +20,7 @@ To customize the login disclaimer, follow these steps:
 
     ![login disclaimer page](/static/assets/site-administration/images/enable-login-disclaimer.png)
 
-3. By enabling `Users must consent every time`, a checkbox will appear before the consent content, and the user must check the box to log in to the application.
+3. By enabling `Users must consent every time`, a checkbox appears before the consent content, and the user must check the box to log in to the application.
 
     ![Consent login disclaimer](/static/assets/site-administration/images/enable-consent-login-disclaimer.png)
  
@@ -28,15 +28,15 @@ To customize the login disclaimer, follow these steps:
 
     ![Save login disclaimer](/static/assets/site-administration/images/save-login-disclaimer.png)
 
-5. The login disclaimer will appear on the login page.
+5. The login disclaimer appears on the login page.
 
     ![login disclaimer in login page](/static/assets/site-administration/images/login-page-disclaimer.png)
 
-### Consent content 
+### Consent Content
 The text displayed on the login page for the login disclaimer.
 
-### Title 
+### Title
 The title to be shown in the consent dialog.
 
-### Message 
+### Message
 Provide detailed login disclaimer content here.
