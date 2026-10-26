@@ -181,7 +181,7 @@ Once configured:
 
 Example: 
 
-- `boldbi_docs_assistant` how to create dashboard 
+- `boldbi_docs_assistant` how to create a dashboard 
  
 
 The AI assistant retrieves contextual guidance directly from the Bold BI MCP documentation server and returns relevant implementation information within the development workflow. 
