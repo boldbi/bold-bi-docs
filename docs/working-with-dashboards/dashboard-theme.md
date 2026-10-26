@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Color Themes for Dashboards – Embedded BI | Bold BI Docs
-description: Learn about the built-in color themes available in Bold BI Embedded. Also, know how to create a custom theme and apply it to the dashboard.
+description: "Learn how to apply the built-in color themes to dashboards in Bold BI, and how to create and apply a custom theme that matches your application’s branding."
 platform: bold-bi
 documentation: ug
 
