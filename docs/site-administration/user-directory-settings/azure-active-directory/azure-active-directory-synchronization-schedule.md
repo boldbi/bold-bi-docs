@@ -18,7 +18,7 @@ This section explains how to schedule the synchronization of users and groups fr
 
 ![Active Directory Synchronization Schedule](/static/assets/site-administration/images/azure-active-directory-schedule-synchronization.png)
 
-Users and groups from Azure Active Directory can be synchronized as per schedule to get the latest details of them into Bold BI.
+Users and groups from Azure Active Directory can be synchronized as per the schedule to get the latest details of them into Bold BI.
 
 Please find more details about the synchronization of users and groups from Azure Active Directory with Bold BI in the following links:
 [Synchronize Active Directory Users](/managing-resources/manage-users/synchronize-azure-active-directory-users/)
@@ -26,7 +26,7 @@ Please find more details about the synchronization of users and groups from Azur
 
 ## Email Notifications
 
-Once a scheduled recurrence of synchronization is completed, the users in the `System Administrator` group will be notified by email about the synchronization status.
+Once a scheduled recurrence of synchronization is completed, the users in the `System Administrator` group are notified by email about the synchronization status.
 
-## Enable/Disable Synchronization schedule 
+## Enable/Disable Synchronization Schedule
 The synchronization schedule can be enabled or disabled at any time using the checkbox at the top.
