@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Opening a Pinboard – Embedded BI | Bold BI Documentation
-description: Learn how to open a different pinboard in Bold BI Embedded. Pinboard is a collection of widgets from various dashboards pinned to it.
+description: "Learn how to switch from one pinboard to another in Bold BI. A pinboard is a collection of widgets pinned from different dashboards for quick access."
 canonical: "/managing-resources/manage-pinboards/navigate-another-pinboard/"
 platform: bold-bi
 documentation: ug
