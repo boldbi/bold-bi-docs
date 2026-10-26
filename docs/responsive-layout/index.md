@@ -7,7 +7,7 @@ documentation: ug
 
 ---
 
-# Responsive behavior in Bold BI
+# Responsive Behavior in Bold BI
 
 Responsive design allows a website to adapt its layout based on the device screen size.
 
