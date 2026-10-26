@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  Webhook Payload for Dashboard Scheduled Events | Bold BI Docs
-description: Learn about what payload properties are used in time-driven and alert-driven export events for webhook notification for Bold BI dashboards.
+title: Webhook Payload for Dashboard Scheduled Events | Bold BI Docs
+description: Learn which payload properties are used in time-driven and alert-driven export events for webhook notifications for Bold BI dashboards.
 platform: bold-bi
 documentation: ug
 ---
 
-# Payload details for Dashboard Scheduling Events
+# Payload Details for Dashboard Scheduling Events
 
 Here is a list of payload property details used in `Time-Driven` and `Alert-Driven` export events.
 
@@ -28,12 +28,12 @@ Here is a list of payload property details used in `Time-Driven` and `Alert-Driv
 
 <tr>
 <td>Export Format</td>
-<td>The dashboard schedule export format. For example:pdf</td>
+<td>The dashboard schedule export format. For example: pdf</td>
 </tr>
 
 <tr>
 <td>File Content</td>
-<td>File content of the dashboard</td>
+<td>The file content of the dashboard</td>
 </tr>
 
 <tr>
@@ -43,17 +43,17 @@ Here is a list of payload property details used in `Time-Driven` and `Alert-Driv
 
 <tr>
 <td>Message</td>
-<td>Mail content of dashboard export</td>
+<td>The mail content of the dashboard export</td>
 </tr>
 
 <tr>
 <td>Schedule Id</td>
-<td>Id of the export schedule</td>
+<td>The ID of the export schedule</td>
 </tr>
 
 <tr>
 <td>Schedule Name</td>
-<td>Name of the export schedule</td>
+<td>The name of the export schedule</td>
 </tr>
 
 <tr>
@@ -66,18 +66,18 @@ Here is a list of payload property details used in `Time-Driven` and `Alert-Driv
 </tr>
 <tr>
 <td>WidgetName</td>
-<td>Name of the widget selected for the data alert</td>
+<td>The name of the widget selected for the data alert</td>
 </tr>
 <tr>
 <td>Condition</td>
-<td>The condition which you used for the data alert</td>
+<td>The condition that you used for the data alert</td>
 </tr>
 <tr>
 <td>FilterValues</td>
-<td>Details of the condition you configured for the data alert</td>
+<td>The details of the condition you configured for the data alert</td>
 </tr>
 </table></td>
 </tr>
 </table> 
 
-> **NOTE:**  The `Alert Info` payload property is only used in data alerts.
+> **NOTE:** The `Alert Info` payload property is only used in data alerts.
