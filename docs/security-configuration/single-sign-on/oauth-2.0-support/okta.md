@@ -101,7 +101,7 @@ The fields that need to be saved in Bold BI to enable Okta for authentication ar
 
 <tr>
 <td>User Information Endpoint</td>
-<td>It should be in the format <span style="color:#0c9dd1">${baseUrl}/v1/token</span> <br>Please refer <a href="https://developer.okta.com/docs/reference/api/oidc/#userinfo">here</a> for more details.</td>
+<td>It should be in the format <span style="color:#0c9dd1">${baseUrl}/v1/userinfo</span> <br>Please refer <a href="https://developer.okta.com/docs/reference/api/oidc/#userinfo">here</a> for more details.</td>
 </tr>
 
 <tr>
