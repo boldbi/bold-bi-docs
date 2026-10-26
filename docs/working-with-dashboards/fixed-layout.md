@@ -28,7 +28,7 @@ When the `Fixed` option is selected from the type dropdown menu, additional cell
 
 ### Default Dimensions
 
-Currently, we provide multiple default dimension values for the dashboard layout, each specifying its width and height. Users can select the appropriate dimension based on these default options.
+, we provide multiple default dimension values for the dashboard layout, each specifying its width and height. Users can select the appropriate dimension based on these default options.
 
 <table style="margin: 14px 0px; width: 30%;">
 <tr><td><b>Default dimensions</b></td></tr>
