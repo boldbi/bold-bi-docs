@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Alerts & Notifications | Bold BI Documentation
-description: Learn how to configure data alerts that helps to track threshold limit and notify to certain recipients when it was reached.
+description: Learn how to configure data alerts that help track threshold limits and notify certain recipients when it is reached.
 platform: bold-bi
 documentation: ug
 ---
@@ -13,8 +13,8 @@ Data Alert provides users with the ability to track specific conditions and send
 ## Add a Data Alert
 Follow these steps to create the new data alert with the desired dashboard.
 
-### Steps to create a schedule
-### Select dashboard
+### Steps to Create a Schedule
+### Select Dashboard
 Click `Actions` in the dashboard grid context menu and select `Create Schedule` to schedule the corresponding dashboard.
 
 ![Create Schedule Dashboard](/static/assets/visualizing-data/working-with-widgets/images/create-dashboard-schedule.png)  
@@ -53,13 +53,13 @@ The Data Alert screen allows you to add conditions for the desired dashboards. E
  
   If it is a single column, the user can be notified when there is a change in the column value compared to the previous value.
  
-   2.`Increases` - Checks whether the filtered value increases once.
+   2. `Increases` - Checks whether the filtered value increases once.
 
-   3.`Continuously Increases` - Checks whether the filtered value increases continuously.
+   3. `Continuously Increases` - Checks whether the filtered value increases continuously.
 
-   4.`Decreases` - Checks whether the filtered value decreases once.
+   4. `Decreases` - Checks whether the filtered value decreases once.
 
-   5.`Continuously Decreases` - Checks whether the filtered value decreases continuously.  
+   5. `Continuously Decreases` - Checks whether the filtered value decreases continuously.  
  
 2. To add more conditions, click on `Add Condition`.  
 
@@ -79,7 +79,7 @@ The Data Alert screen allows you to add conditions for the desired dashboards. E
 
 In the data alert, there is now an option to create expressions with combinations of unbounded data source columns of the selected widget and multiple functions, such as [Sum(Column1) - Sum(Column2)].
 
-### Steps to add a custom expression
+### Steps to Add a Custom Expression
 
 1. After selecting the widget, click on the `Create Expression Columns` label at the top of the filter in the data alerts screen. 
 
@@ -155,7 +155,7 @@ Dashboards can be scheduled on an `hourly, daily, weekly, monthly, and yearly` b
 
 #### Choose Subscribers
 
-Dashboards can be exported as an Image, PDF, CSV, and Excel. Exported dashboards can be sent to individual users, groups, or external recipients.
+Dashboards can be exported as an image, PDF, CSV, and Excel. Exported dashboards can be sent to individual users, groups, or external recipients.
 
 ![schedule-mail](/static/assets/visualizing-data/working-with-widgets/images/recipients.png)
 
