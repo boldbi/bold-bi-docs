@@ -9,13 +9,13 @@ documentation: ug
 
 # Previewing Dashboard
 
-  You can preview the currently opened dashboard by clicking the `Preview` button in the top right corner of the tools pane.
+  You can preview the currently opened dashboard by clicking the `Preview` button in the top-right corner of the tools pane.
   
   ![Preview](/static/assets/working-with-dashboards/preview-dashboards/images/preview.png)
   
   The preview button is visible across all window tab views in the Dashboard Designer, allowing you to preview the dashboard from anywhere within the application.
   
-## Previewing dashboard using dashboard viewer
+## Previewing Dashboard Using Dashboard Viewer
 
    The dashboard can be previewed using the built-in dashboard viewer, which opens in the default web browser.
    
@@ -52,6 +52,6 @@ documentation: ug
 
 [Learn how to save your designed dashboard](/working-with-dashboards/publish-dashboard/)
    
-## Post your message
+## Post Your Message
    
    If you are still unable to find the information you are looking for in the self-help resources mentioned above, please [contact us](https://www.boldbi.com/support) and send us your requirements.
