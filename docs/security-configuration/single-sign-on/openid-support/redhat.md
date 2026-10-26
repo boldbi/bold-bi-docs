@@ -1,31 +1,31 @@
 ---
 layout: post
-title: Configure SSO with Red Hat using Open ID Connect | Bold BI Docs
-description: Learn how to configure Bold BI Embedded application with Red Hat identity provider for Single Sign-on authentication (RH-SSO) using OpenID Connect.
+title: Configure SSO with Red Hat using OpenID Connect | Bold BI Docs
+description: Learn how to configure Bold BI Embedded application with Red Hat identity provider for Single Sign-On authentication (RH-SSO) using OpenID Connect.
 platform: bold-bi
 documentation: ug
 ---
 
-# Red Hat support for SSO authentication
+# Red Hat Support for SSO Authentication
 
-Red Hat Single Sign-On (RH-SSO) is based on the Keycloak project and allows you to secure your web applications by providing web single sign-on (SSO) capabilities based on popular standards like OpenID Connect, and OAuth 2.0.
+Red Hat Single Sign-On (RH-SSO) is based on the Keycloak project and allows you to secure your web applications by providing web single sign-on (SSO) capabilities based on popular standards like OpenID Connect and OAuth 2.0.
 
 > **NOTE:** This feature is available in Bold BI Embedded Analytics, but not in Cloud Analytics Server.
 
-This section explains how to perform Single Sign-On for users in Red Hat with the Bold BI application using Open ID Connect.
+This section explains how to perform Single Sign-On for users in Red Hat with the Bold BI application using OpenID Connect.
 
-## How to register the Bold BI application in Red Hat
+## How to Register the Bold BI Application in Red Hat
 
-> **NOTE:**  This configuration needs to be done on the Red Hat website.
+> **NOTE:** This configuration needs to be done on the Red Hat website.
 
 #### Prerequisites
 
 * An admin account in Red Hat.
 * Install the Bold BI application.
 
-### Steps to register the Bold BI application
+### Steps to Register the Bold BI Application
 
-1. Please login to the Red Hat website using an admin account.
+1. Please log in to the Red Hat website using an admin account.
 
     ![RedHat Admin console](/static/assets/site-administration/openid-support/images/Redhat-adminconsole.png)
 
@@ -64,13 +64,13 @@ This section explains how to perform Single Sign-On for users in Red Hat with th
 
 After successfully registering with Red Hat, save these settings on the Bold BI settings page to enable this authentication.
 
-## Enable Red Hat authentication support in Bold BI
+## Enable Red Hat Authentication Support in Bold BI
 
 Configure the settings in Bold BI, as shown in the following screenshot, to enable authentication using Red Hat.
 
 ![RedHat Bi Settings](/static/assets/site-administration/openid-support/images/Redhat-bi-settings.png)
 
-The fields that need to be saved in Bold BI in order to enable Red Hat for authentication are explained as follows.
+The fields that need to be saved in Bold BI to enable Red Hat for authentication are explained as follows.
 
 <table>
 
@@ -91,7 +91,7 @@ The fields that need to be saved in Bold BI in order to enable Red Hat for authe
 
 <tr>
 <td>Authority</td>
-<td>It must be the URL of your Red Hat instance.<br><br><strong>URL format:</strong> https://{host}/auth/realms/{realm}<br><br><strong>Note:</strong> The Authority URL only accepts HTTPS, and Red Hat should be configured in HTTPS..</td>
+<td>It must be the URL of your Red Hat instance.<br><br><strong>URL format:</strong> https://{host}/auth/realms/{realm}<br><br><strong>Note:</strong> The Authority URL only accepts HTTPS, and Red Hat should be configured in HTTPS.</td>
 </tr>
 
 <tr>
@@ -106,7 +106,7 @@ The fields that need to be saved in Bold BI in order to enable Red Hat for authe
 
 <tr>
 <td>Identifier</td>
-<td>The Bold BI application requires an email address to login to the application.<br><br>So, please set the identifier as email.<br><br><strong>Note:</strong> All accounts in Red Hat should have a valid email address.</td>
+<td>The Bold BI application requires an email address to log in to the application.<br><br>So, please set the identifier as email.<br><br><strong>Note:</strong> All accounts in Red Hat should have a valid email address.</td>
 </tr>
 
 <tr>
