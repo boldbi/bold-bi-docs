@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Manage Webhooks in Embedded BI Application | Bold BI Docs
-description: Learn how to add, edit, delete, and deactivate webhooks in Bold BI application. Also learn about webhook payloads, events, headers, and security features.
+description: Learn how to add, edit, delete, and deactivate webhooks in the Bold BI application. Also learn about webhook payloads, events, headers, and security features.
 platform: bold-bi
 documentation: ug
 ---
@@ -12,9 +12,9 @@ Webhooks are user-defined HTTP callbacks that deliver real-time data to other ap
 
 ## Create Webhook
 
-This section explains how to create a webhook in the Bold BI embedded application.
+This section explains how to create a webhook in the Bold BI Embedded application.
 
-### Steps to add a webhook
+### Steps to Add a Webhook
 
 1. Click the `Add Webhook` button at the top right of the Webhooks section of the profile page.
 
@@ -22,11 +22,11 @@ This section explains how to create a webhook in the Bold BI embedded applicatio
 	
 2. Provide the required webhook details on the `Add Webhook` page:
 
-   * Provide a suitable `Name` for the webhook and `Description`.
+   * Provide a suitable `Name` and `Description` for the webhook.
    * Select the event to trigger the webhook. For more details, see [Events](#events).
    * Select the content type in the format in which you want to send the data.
-   * Enter the webhook endpoints where the webhook data will be received.
-   * Enable authentication to verify the webhook sent by Bold BI. This is optional. For more details, see [Webhook authentication](#webhook-authentication).
+   * Enter the webhook endpoints where the webhook data is received.
+   * Enable authentication to verify the webhook sent by Bold BI. This is optional. For more details, see [Webhook Authentication](#webhook-authentication).
    * Enable signing to verify the integrity of the payload at the receiver end. This is optional. For more details, see [Webhook Signing](#webhook-signing).
    * Select the payload of an event to send in webhook data. For more details, see [Payload](#payload).
 
@@ -40,7 +40,7 @@ This section explains how to create a webhook in the Bold BI embedded applicatio
 
 You can edit created webhooks in the Webhooks section of the profile page, as well as in the `Integrations` section of the admin page.
 
-### Steps to edit a webhook
+### Steps to Edit a Webhook
 
 1. Click the `Actions` button in the webhook grid context menu and select `Edit` to edit the webhook.
 
@@ -93,7 +93,7 @@ A webhook for Alert-Driven Dashboard Export can only be configured for data aler
 
 System and custom headers are sent along with webhook data to the specified webhook endpoints. When creating a webhook, you have the option to include your own custom headers.
 
-#### System headers
+#### System Headers
 
 By default, the headers listed below are sent with each webhook request:
 
@@ -124,7 +124,7 @@ By default, the headers listed below are sent with each webhook request:
 </tr>
 </table>
 
-#### Custom headers
+#### Custom Headers
 
 Custom headers are used to send additional information to the destination URL. Follow the steps below to add a custom header:
 
@@ -135,13 +135,13 @@ Custom headers are used to send additional information to the destination URL. F
 
 ### Payload
 
-The data of the selected event will be sent as a payload. You can send all of it or only the required data by selecting the following options.
+The data of the selected event is sent as a payload. You can send all of it or only the required data by selecting the following options.
 
-When this option is enabled, all data will be sent in the payload.
+When this option is enabled, all data is sent in the payload.
 
 ![Webhook All Payload](/static/assets/webhook/images/webhook-payload-all.png)
 
-If you selected a specific payload, only the selected data will be sent in the payload.
+If you select a specific payload, only the selected data is sent in the payload.
 
 ![Webhook Selected Payload](/static/assets/webhook/images/webhook-selected-payload.png)
 
@@ -149,7 +149,7 @@ If you selected a specific payload, only the selected data will be sent in the p
 
 The URL for the webhook is publicly available and can be easily accessed by attackers. Therefore, it is crucial to ensure that the request comes from a known sender. An attacker could intercept the webhook request and tamper with the data if this verification is not performed. Several options are provided for securing webhook data.
 
-### Webhook authentication
+### Webhook Authentication
 
 Enable authentication when creating a webhook to securely send webhook data and verify whether it is sent from Bold BI. Although it is optional, it is recommended to enable authentication.
 
@@ -157,18 +157,18 @@ The following are the two methods for authenticating the webhook URL:
 
 ### Password
 
-When creating a webhook, you can use password authentication (**Basic Auth**) to provide the username and password. The credentials (**Username:Password**) will be Base64 encoded and sent in the Authorization header (**Authorization: Basic <Credential>**).
+When creating a webhook, you can use password authentication (**Basic Auth**) to provide the username and password. The credentials (**Username:Password**) are Base64 encoded and sent in the Authorization header (**Authorization: Basic <Credential>**).
 
 ![Webhook Password Authentication](/static/assets/webhook/images/webhook-password-authentication.png)
 
 ### API Key
 
-When creating a webhook, you can use API authentication (**Basic Auth**) to provide the API key. The API key will be Base64 encoded and sent in the Authorization header (**Authorization: Basic <API Key>**).
+When creating a webhook, you can use API authentication (**Basic Auth**) to provide the API key. The API key is Base64 encoded and sent in the Authorization header (**Authorization: Basic <API Key>**).
 
 ![Webhook API key Authentication](/static/assets/webhook/images/webhook-apikey-authentication.png)
 
 ### Webhook Signing
 
-When creating a webhook, you can use request signature authentication to provide the secret key. This secret key is used to sign the payload (**HMAC-SHA256**), generate a Base64 encoded signature, and send it in the header (**x-signature**). This can be used to validate the payload integrity at the receiver end (**X-Signature: <Signature>**).
+When creating a webhook, you can use request signature authentication to provide the secret key. This secret key is used to sign the payload (**HMAC-SHA256**), generate a Base64-encoded signature, and send it in the header (**x-signature**). This can be used to validate the payload integrity at the receiver end (**X-Signature: <Signature>**).
 
 ![Webhook Signing Security](/static/assets/webhook/images/webhook-signing-security.png)
