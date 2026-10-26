@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Reset Application Database – Utility for v3.3 | Bold BI Docs
-description: Learn how to reset the application database of the Bold BI server application of v3.3 or earlier through the command line interface.
+description: "Learn how to reset the application database of a Bold BI server running version 3.3 or older through the command line interface, with the commands to run."
 platform: bold-bi
 documentation: ug
 ---
