@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Custom Widget Settings – Embedded BI | Bold BI Docs
-description: Learn how to configure the widget settings for visualizing the data in Dashboard Designer of the embedded BI application.
+description: "Learn how to configure widget settings in Bold BI, controlling which widgets are available for visualizing data in the dashboard designer of your embedded site."
 platform: bold-bi
 documentation: ug
 ---
