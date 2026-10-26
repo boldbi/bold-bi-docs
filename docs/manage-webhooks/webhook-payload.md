@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Webhook Payload for Dashboard Scheduled Events | Bold BI Docs
-description: Learn which payload properties are used in time-driven and alert-driven export events for webhook notifications for Bold BI dashboards.
+description: "Learn which payload properties Bold BI sends in webhook notifications for time-driven and alert-driven dashboard export events, with an example of each one."
 platform: bold-bi
 documentation: ug
 ---
