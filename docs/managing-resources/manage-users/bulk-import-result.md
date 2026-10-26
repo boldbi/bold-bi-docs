@@ -7,7 +7,7 @@ documentation: ug
 
 # Bulk Import Result
 
-The Bulk Import Result page displays the list of all completed and ongoing bulk user import jobs. You can access the Bulk Import Result page by clicking on the `Bulk Import Result` button from the user management page, as shown below.
+The Bulk Import Result page displays the list of all completed and ongoing bulk user import jobs. You can access the Bulk Import Result page by clicking on the `Bulk Import Result` button from the user management page.
 
 ![User Listing Page](/static/assets/managing-resources/manage-users/images/user-listing-page.png#width=55%)
 
@@ -21,7 +21,7 @@ You can also view detailed information about the job, including total user impor
 
 ![View Bulk Import Job Details](/static/assets/managing-resources/manage-users/images/view-bulk-import-job-detail.png#width=55%)
 
-After clicking View, you are taken to the Bulk Import Result page as shown below.
+After clicking View, you are taken to the Bulk Import Result page.
 
 ![Bulk User Import Job Details page](/static/assets/managing-resources/manage-users/images/import-job-details-page.png#width=70%)
 
