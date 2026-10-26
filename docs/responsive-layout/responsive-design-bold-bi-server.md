@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Responsive Application – Embedded BI | Bold BI Documentation
-description: Know about the responsiveness of Bold BI Embedded server pages in desktop, mobile and tablet devices for different screen sizes and orientations.
+title: Responsive Application – Embedded BI | Bold BI Documentation
+description: Know about the responsiveness of Bold BI Embedded server pages in desktop, mobile, and tablet devices for different screen sizes and orientations.
 canonical: "/responsive-layout/responsive-design-bold-bi-server/"
 platform: bold-bi
 documentation: ug
