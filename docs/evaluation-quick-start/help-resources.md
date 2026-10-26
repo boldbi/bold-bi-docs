@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Help Resources for Bold BI – Learn, Explore, and Get Support
-description: Discover Bold BI’s help resources, including knowledge base articles, blogs, sample dashboards, product lifecycle details, and support options. Learn, explore, and get assistance to maximize your BI experience.
+description: "Find Bold BI help resources, including knowledge base articles, blogs, sample dashboards, product lifecycle details, and the support options you can contact."
 canonical: "/evaluation-quick-start/help-resources/"
 platform: bold-bi
 documentation: ug
