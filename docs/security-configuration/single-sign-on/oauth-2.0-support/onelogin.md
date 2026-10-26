@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Single Sign-On with OneLogin Provider of OAuth 2.0 | Bold BI
-description: Learn how to configure Bold BI Embedded with OneLogin identity provider for Single Sign-On authentication using OAuth 2.0.
+description: "Learn how to configure OneLogin as an OAuth 2.0 identity provider for single sign-on in Bold BI, so users can sign in with their OneLogin accounts easily."
 platform: bold-bi
 documentation: ug
 ---
