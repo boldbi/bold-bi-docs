@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Export Dashboard to PDF, Image, PowerPoint & Excel | Bold BI Docs
-description: Learn how to enable settings to export a dashboard at runtime to PDF, Image, PowerPoint or Excel files in Bold BI Embedded.
+description: "Learn how to enable dashboard export settings in Bold BI, so users can export a dashboard at runtime to PDF, image, PowerPoint, or Excel files from the viewer."
 canonical: "/working-with-dashboards/preview-dashboard/dashboard-settings/"
 platform: bold-bi
 documentation: ug
