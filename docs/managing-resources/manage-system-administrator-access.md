@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Guide to Managing System Admin Roles - Embedded BI | Bold BI
-description: Learn how to add or remove the system administrator role for users in the Bold BI Dashboard Server deployed on your servers.
+description: "Learn how to grant or remove the system administrator role for users in Bold BI deployed on your own servers, and what access the administrator role includes."
 platform: bold-bi
 documentation: ug
 ---
