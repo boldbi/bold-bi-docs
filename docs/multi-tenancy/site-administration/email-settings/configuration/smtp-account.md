@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Use the SMTP Email Service Configuration – UMS | Bold BI Doc
-description: Learn how to use the SMTP mail service in the User Management for email notifications on account activation, password reset, and forgotten passwords
+description: Learn how to use the SMTP mail service in the User Management Server for email notifications on account activation, password reset, and forgotten passwords.
 platform: bold-bi
 documentation: ug
 ---
@@ -10,12 +10,12 @@ documentation: ug
 
 This section explains how to configure the [SMTP](https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol) details in the User Management Server to send emails.
 
-**The User Management Server requires the following SMTP details in order to send emails.**
+**The User Management Server requires the following SMTP details to send emails.**
 
 <table>
 <tr>
     <td>SMTP Server</td>
-    <td>The SMTP server specifies the public IP address or provider which delivers the emails to the end user mail box.</td>
+    <td>The SMTP server specifies the public IP address or provider that delivers the emails to the end user mailbox.</td>
 </tr>
 <tr>
     <td>SMTP Port</td>
@@ -30,11 +30,11 @@ This section explains how to configure the [SMTP](https://en.wikipedia.org/wiki/
     <td>The email address, which is displayed as the "From" email address in the recipient's email.</td>
 </tr>
 <tr>
-<td>Authentication type</td>
+<td>Authentication Type</td>
 <td>
-We support two types of authentications:
+We support two types of authentication:
 
-1. Basic Authentication: This is the default authentication type that requires a username and password.
+1. Basic authentication: This is the default authentication type that requires a username and password.
 2. Anonymous authentication: You can choose this option if you have disabled authentication on your SMTP server.
 </td>
 </tr>
@@ -52,11 +52,11 @@ We support two types of authentications:
 </tr>
 </table>
 
-## Steps to configure SMTP account settings in User Management:
+## Steps to Configure SMTP Account Settings in User Management
 
 1. Go to `http://{domain}/ums/administration/e-mail-settings` and select `SMTP` from the `Email Account` drop-down menu.
 
-2. Fill in the respective fields with the SMTP Server, SMTP port, Sender Name, Sender Email Address, Authentication Type, Username, and Password.
+2. Fill in the respective fields with the SMTP Server, SMTP Port, Sender Name, Sender Email Address, Authentication Type, Username, and Password.
 
 3. After entering the email settings connection details, test the settings by using the `Test Connection` option and then save the settings.
 ![Email Settings](/static/assets/multi-tenancy/images/email-settings.png)
