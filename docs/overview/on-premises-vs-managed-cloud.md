@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Distinct Features - On-Premises vs. Managed Cloud | Bold BI
-description: This page explores the list of distinct features that set on-premises and managed cloud editions of Bold BI apart.
+description: "Compare the Bold BI On-Premises Edition and Managed Private Cloud, and see the features, hosting responsibilities, and differences that set the two apart."
 canonical: "/overview/on-premises-vs-managed-cloud/"
 platform: bold-bi
 documentation: ug
@@ -76,7 +76,7 @@ Explore the distinct features that set our on-premises and managed cloud edition
             <td>NA</td>
         </tr>
         <tr>
-            <td><a href="/working-with-data-sources/connection-settings/enable-disable-connections/">Enable and Disable the connections</a></td>
+            <td><a href="/working-with-data-sources/connection-settings/enable-disable-connections/">Enable and Disable the Connections</a></td>
             <td>Yes</td>
             <td>No</td>
         </tr>
@@ -106,7 +106,7 @@ Explore the distinct features that set our on-premises and managed cloud edition
             <td>No</td>
         </tr>
         <tr>
-            <td><a href="/working-with-data-sources/configuring-isolation-code/">Row-level Security with Isolation Code</a></td>
+            <td><a href="/working-with-data-sources/configuring-isolation-code/">Row-Level Security with Isolation Code</a></td>
             <td>Yes</td>
             <td>No</td>
         </tr>
