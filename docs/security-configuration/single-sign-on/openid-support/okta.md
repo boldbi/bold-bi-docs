@@ -1,31 +1,31 @@
 ---
 layout: post
 title: SSO with Okta Provider of OpenID Connect | Bold BI Embedded
-description: Learn how to configure Bold BI Embedded with Okta identity provider for Single Sign-on authentication using OpenID Connect.
+description: "Learn how to configure Okta as an OpenID Connect identity provider for single sign-on in Bold BI, so users can sign in to dashboards with Okta accounts."
 platform: bold-bi
 documentation: ug
 ---
 
-# Okta support for SSO authentication
+# Okta Support for SSO Authentication
 
 The Bold BI application supports the addition of users using the Okta provider. By importing them, you can share the dashboards and email exported dashboards with these users.
 
 > **NOTE:** This feature is available in Bold BI Embedded Analytics, but not in Cloud Analytics Server.
 
-## How to register the Bold BI application in Okta
+## How to Register the Bold BI Application in Okta
 
 This section explains how to perform Single Sign-On for users in Okta with the Bold BI application.
 
-> **NOTE:**  This configuration needs to be done on the Okta website.
+> **NOTE:** This configuration needs to be done on the Okta website.
 
 #### Prerequisites
 
 * An admin account in Okta.
-* Install Bold BI application.
+* Install the Bold BI application.
 
-### Steps to register the Bold BI application
+### Steps to Register the Bold BI Application
 
-1. Please login to the Okta website using an admin account.
+1. Please log in to the Okta website using an admin account.
 
     ![Admin page](/static/assets/site-administration/openid-support/images/adminlogin.png)
 
@@ -49,7 +49,7 @@ This section explains how to perform Single Sign-On for users in Okta with the B
 
     ![Application details](/static/assets/site-administration/openid-support/images/appdetails.png)   
 
-    > **NOTE:**  Choosing the `Grant type allowed` as `Implicit (Hybrid)` is a must in addition to the default.
+    > **NOTE:** Choosing the `Grant type allowed` as `Implicit (Hybrid)` is a must in addition to the default.
 
 6. The `Login redirect URIs` must be the URI specified in the settings of your Bold BI application, as shown in the snapshot below.
 
@@ -59,15 +59,15 @@ This section explains how to perform Single Sign-On for users in Okta with the B
 
     ![Client details](/static/assets/site-administration/openid-support/images/clientdetails.png)
 
-After successful registration in Okta, save these settings in Bold BI settings page to enable this authentication.
+After successful registration in Okta, save these settings in the Bold BI settings page to enable this authentication.
 
-## Enable Okta support for authentication in Bold BI
+## Enable Okta Support for Authentication in Bold BI
 
 Please configure the settings in Bold BI, as shown in the following screenshot, to enable authentication using Okta.
 
 ![Okta settings](/static/assets/site-administration/openid-support/images/okta-sample-value.png#width=50%)
 
-The fields that need to be saved in Bold BI in order to enable Okta for authentication are explained as follows.
+The fields that need to be saved in Bold BI to enable Okta for authentication are explained as follows.
 
 <table>
 
@@ -83,17 +83,17 @@ The fields that need to be saved in Bold BI in order to enable Okta for authenti
 
 <tr>
 <td>Authority</td>
-<td>The format is <span style="color:#0c9dd1">https://instancename.okta.com</span> It must be the URL of your Okta instance.</td>
+<td>The format is <span style="color:#0c9dd1">https://instancename.okta.com</span>. It must be the URL of your Okta instance.</td>
 </tr>
 
 <tr>
 <td>Client ID</td>
-<td>The Client ID you get after registered the Bold BI application in Okta website.</td>
+<td>The Client ID you get after registering the Bold BI application in Okta website.</td>
 </tr>
 
 <tr>
 <td>Client Secret</td>
-<td>The Client Secret you get after registered the Bold BI application in Okta website.</td>
+<td>The Client Secret you get after registering the Bold BI application in Okta website.</td>
 </tr>
 
 <tr>
