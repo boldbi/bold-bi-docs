@@ -24,7 +24,7 @@ Please follow these steps to upload a new font style:
 
    ![Upload-font-dialog](/static/assets/white-label/images/upload-font-dialog.png)
 
-3. The uploaded font file will be listed in the `Fonts` drop-down menu. Select the uploaded font and `save` the settings. The selected font style will be applied throughout your site.
+3. The uploaded font file is listed in the `Fonts` drop-down menu. Select the uploaded font and `save` the settings. The selected font style is applied throughout your site.
 
    ![Font-style-dropdown](/static/assets/white-label/images/font-style-dropdown.png)
 
@@ -65,7 +65,7 @@ Please follow the steps below to create and apply a custom theme for the applica
 4. Update the color code values according to your preference, and then upload the updated custom theme file into the application. Refer to the [Create application custom theme](/site-administration/look-and-feel-settings-in-cloud-bi/create-custom-application-theme/) section to learn more about customizing color codes to create your preferred custom theme.
 ![Manage app theme](/static/assets/site-administration/images/manage-app-theme-dialog.png)
 
-5. The uploaded theme will be listed in the `Custom Theme` drop-down. Select the uploaded theme in the custom theme drop-down and save the settings.
+5. The uploaded theme is listed in the `Custom Theme` drop-down. Select the uploaded theme in the custom theme drop-down and save the settings.
  ![Select app theme](/static/assets/site-administration/images/select-app-theme-cloud.png)
 
 Here is a sample image after applying the custom theme:
@@ -75,7 +75,7 @@ Here is a sample image after applying the custom theme:
 
 ## Dashboard Theme
 
-You can customize the dashboard theme that will be applied for dashboards in dashboard view mode. By default, the Default option will be selected.
+You can customize the dashboard theme that is applied for dashboards in dashboard view mode. By default, the Default option is selected.
 
 Follow the steps to upload the generated custom theme file:
 
@@ -88,11 +88,11 @@ Follow the steps to upload the generated custom theme file:
 3. The uploaded custom theme file will appear in the `Dashboard Theme` drop-down list. In the `Dashboard Theme` drop-down menu, select the uploaded theme, then save the settings.
 ![dashboardthemedarkviolet](/static/assets/site-administration/images/dashboardthemedarkviolet.png)
 
-4. Your dashboard will be rendered according to your customized theme file. For example, the `darkviolet` theme is rendered as shown below.
+4. Your dashboard is rendered according to your customized theme file. For example, the `darkviolet` theme is rendered as shown below.
 ![darkvioletthemedashboard](/static/assets/site-administration/images/darkvioletthemedashboard.png)
 
 
-## **Please find the links below to learn more about custom themes.**
+## **Please Find the Links Below to Learn More About Custom Themes**
 
 [How to create custom application theme](/site-administration/look-and-feel-settings-in-cloud-bi/create-custom-application-theme/)
 
