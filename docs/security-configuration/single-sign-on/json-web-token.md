@@ -6,13 +6,13 @@ platform: bold-bi
 documentation: ug
 ---
 
-# How to set up JWT for SSO authentication in Bold BI site
+# How to Set up JWT for SSO Authentication in Bold BI Site
 
 This section provides a step-by-step guide to configuring Single Sign-On (SSO) for users at the site level in the Bold BI application using Custom JSON Web Tokens (JWT).
 
-## Steps to configure JWT in Bold BI
+## Steps to Configure JWT in Bold BI
 
-1. Login with this URL `{domain}/bi/site/{site_identifier}/administration` using the admin credentials.
+1. Log in with this URL `{domain}/bi/site/{site_identifier}/administration` using the admin credentials.
 
 2. Click on `Authentication` and then `JWT`.
 
@@ -36,12 +36,12 @@ This section provides a step-by-step guide to configuring Single Sign-On (SSO) f
 
     <tr>
     <td>Remote Login URL</td>
-    <td>It is the endpoint of the JWT provider to send the authorization request from Bold BI application.</td>
+    <td>It is the endpoint of the JWT provider to send the authorization request from the Bold BI application.</td>
     </tr>
 
     <tr>
     <td>Remote Logout URL</td>
-    <td>It is the endpoint of the JWT provider to send the logout request once user logged out in the Bold BI application.</td>
+    <td>It is the endpoint of the JWT provider to send the logout request once the user logged out of the Bold BI application.</td>
     </tr>
 
     </table>
@@ -53,7 +53,7 @@ This section provides a step-by-step guide to configuring Single Sign-On (SSO) f
     ![Copy](/static/assets/site-administration/images/copy_edit_regenerate_token.png)
 
     
-7. You can enable JWT token encryption by selecting `Enable Encryption`. Once activated, a public key is generated, which is used to encrypt the JWT token. This enhances security by ensuring that token payloads remain confidential and protected from unauthorized access. By default, encryption remains disabled
+7. You can enable JWT token encryption by selecting `Enable Encryption`. Once activated, a public key is generated, which is used to encrypt the JWT token. This enhances security by ensuring that token payloads remain confidential and protected from unauthorized access. By default, encryption remains disabled.
 
     ![Enable Encryption](/static/assets/site-administration/images/enable-jwt-encryption.png)
 
@@ -67,7 +67,7 @@ For more details on how JWT works with Bold BI, [click here](/multi-tenancy/site
 
   The JWT callback URL will validate the JWT response from the configured application.
 
-  After a user successfully logs into your configured application, you can redirect them to the specific URL provided.
+  After a user successfully logs in to your configured application, you can redirect them to the specific URL provided.
 
  `{Bold BI URL}/sso/jwt/callback?jwt={token}&site_identifier={site identifier}&redirect_to={redirecturl}`
 
@@ -89,11 +89,11 @@ For more details on how JWT works with Bold BI, [click here](/multi-tenancy/site
    <td>Yes</td>
    <td>This parameter will be used to grant site access for the JWT user. 
 
-   If the JWT login accessed from the tenant, Bold BI login URL will redirect to your application with tenant site identifier in URL query string. You can use this identifier in JWT response URL.
+   If the JWT login is accessed from the tenant, Bold BI login URL will redirect to your application with tenant site identifier in the URL query string. You can use this identifier in JWT response URL.
 
-   Example Url`{Remote login URL}?site_identifier={site identifier}`
+   Example URL`{Remote login URL}?site_identifier={site identifier}`
 
-   > **NOTE:** Should pass one site identifier. More than one identifier not allowed. 
+   > **NOTE:** You should pass one site identifier. More than one identifier is not allowed. 
    </td>
    </tr>
    <tr>
@@ -105,14 +105,14 @@ For more details on how JWT works with Bold BI, [click here](/multi-tenancy/site
 
 ## Enable JWT Callback with HTTP GET (Optional)
 
-> **Note:** Enabling GET requests may increase the risk of token exposure because JWT values can be recorded in browser history, URLs, and various logging mechanisms. It is strongly recommended to use HTTP POST whenever possible and enable GET support only when required for legacy workflow compatibility.
+> **NOTE:** Enabling GET requests may increase the risk of token exposure because JWT values can be recorded in browser history, URLs, and various logging mechanisms. It is strongly recommended to use HTTP POST whenever possible and enable GET support only when required for legacy workflow compatibility.
 
 By default, the JWT callback endpoint accepts only HTTP POST requests to enhance security. Using POST helps prevent JWT tokens from being exposed in browser history, web server logs, proxy logs, and URL query parameters. 
 
 For backward compatibility, organizations that need to continue using the legacy (old) workflow can enable HTTP GET request support through the application configuration. When this option is enabled, the JWT callback endpoint will accept JWT tokens provided through URL parameters, allowing existing integrations to continue operating without modification.
 
 1. Go to {domain}/ums/administration
-2. Open [**Configuration**](https://help.boldbi.com/multi-tenancy/site-administration/configuration/) in settings page.
+2. Open [**Configuration**](https://help.boldbi.com/multi-tenancy/site-administration/configuration/) in the settings page.
 3. Select the dropdown and open `config.json` and then locate `PreferSecureHttpVerbs`.
 4. Set the `PreferSecureHttpVerbs` node to `false`. If the `PreferSecureHttpVerbs` node is not present, create it and configure it as `false`.
 
