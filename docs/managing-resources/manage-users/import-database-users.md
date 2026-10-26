@@ -41,6 +41,6 @@ You can view the status of the current import by clicking on the `View Status` b
 
 ## Modify Existing Database Connection
 
-To modify existing database configuration settings, click on the `Modify` link as shown below.
+To modify existing database configuration settings, click on the `Modify` link.
 
 ![Modify Database Configuration](/static/assets/managing-resources/manage-users/images/Modify-Database-settings-Configuration.png)
