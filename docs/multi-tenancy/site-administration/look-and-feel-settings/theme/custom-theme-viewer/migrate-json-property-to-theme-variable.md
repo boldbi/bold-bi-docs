@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Map CSS3 theme variables with JSON theme property | Embedded
-description: Know about the CSS3 theme variables and learn how to map corresponding theme variables for the JSON theme property in Bold BI Embedded.
+title: Map CSS3 Theme Variables with JSON Theme Property | Embedded
+description: "Learn how to migrate JSON theme properties to CSS3 theme variables in Bold BI, so your existing custom dashboard themes keep working with the new theme viewer."
 platform: bold-bi
 documentation: ug
 ---
 
-# Theme variables equivalent to the JSON property
+# Theme Variables Equivalent to the JSON Property
 
-Use theme variables to customize the Bold BI application. This document will help you locate the corresponding theme variable for the JSON property.
+Use theme variables to customize the Bold BI application. This document helps you locate the corresponding theme variable for the JSON property.
 
-### Dashboard banner
+### Dashboard Banner
 
 <table>
   <thead>
@@ -94,7 +94,7 @@ Use theme variables to customize the Bold BI application. This document will hel
 </tr>
 </table>
 
-### Data color palette
+### Data Color Palette
 
 <table>
  <thead>
@@ -140,9 +140,9 @@ Use theme variables to customize the Bold BI application. This document will hel
 </tbody>
 </table>
 
-### Dashboard widgets
+### Dashboard Widgets
 
-### widget common level properties
+### Widget Common Level Properties
 
 <table>
   <thead>
@@ -316,10 +316,10 @@ Use theme variables to customize the Bold BI application. This document will hel
 </tbody>
 </table>
 
-### Widget specific level properties
+### Widget Specific Level Properties
 The `widgets` section allows you to customize the properties of a specific widget.
 
-#### Chart widget
+#### Chart Widget
 
 <table>
   <thead>
@@ -478,7 +478,7 @@ The `widgets` section allows you to customize the properties of a specific widge
 </tbody>
 </table>
 
-#### Map widget
+#### Map Widget
 
 <table>
   <thead>
@@ -593,7 +593,7 @@ The `widgets` section allows you to customize the properties of a specific widge
 </tbody>
 </table>
 
-#### Tree Map widget
+#### Tree Map Widget
 
 <table>
   <thead>
@@ -707,7 +707,7 @@ The `widgets` section allows you to customize the properties of a specific widge
 </tbody>
 </table>
 
-#### HeatMap widget
+#### HeatMap Widget
 
 <table>
   <thead>
@@ -845,7 +845,7 @@ The `widgets` section allows you to customize the properties of a specific widge
 </tbody>
 </table>
 
-#### Grid widget
+#### Grid Widget
 
 <table>
   <thead>
@@ -1005,7 +1005,7 @@ The `widgets` section allows you to customize the properties of a specific widge
 </tbody>
 </table>
 
-#### Pivot Grid widget
+#### Pivot Grid Widget
 
 <table>
   <thead>
@@ -1369,7 +1369,7 @@ The `widgets` section allows you to customize the properties of a specific widge
 </tbody>
 </table>
 
-#### List box widget
+#### List Box Widget
 
 <table>
   <thead>
@@ -1505,7 +1505,7 @@ The `widgets` section allows you to customize the properties of a specific widge
 </tbody>
 </table>
 
-#### Combobox widget
+#### Combobox Widget
 
 <table>
   <thead>
@@ -1647,7 +1647,7 @@ The `widgets` section allows you to customize the properties of a specific widge
 </tbody>
 </table>
 
-#### Date Picker widget
+#### Date Picker Widget
 
 <table>
   <thead>
@@ -1977,7 +1977,7 @@ The `widgets` section allows you to customize the properties of a specific widge
 </tbody>
 </table>
 
-#### KPI Card widget
+#### KPI Card Widget
 
 <table>
   <thead>
@@ -2138,7 +2138,7 @@ The `widgets` section allows you to customize the properties of a specific widge
 </tbody>
 </table>
 
-#### Number Card widget
+#### Number Card Widget
 
 <table>
   <thead>
@@ -2238,7 +2238,7 @@ The `widgets` section allows you to customize the properties of a specific widge
 </tbody>
 </table>
 
-#### Range Slider widget
+#### Range Slider Widget
 
 <table>
   <thead>
@@ -2331,7 +2331,7 @@ The `widgets` section allows you to customize the properties of a specific widge
 </tbody>
 </table>
 
-#### Range Navigator widget
+#### Range Navigator Widget
 
 <table>
   <thead>
@@ -2412,7 +2412,7 @@ The `widgets` section allows you to customize the properties of a specific widge
 </tbody>
 </table>
 
-#### Circular Gauge widget
+#### Circular Gauge Widget
 
 <table>
   <thead>
@@ -2546,7 +2546,7 @@ The `widgets` section allows you to customize the properties of a specific widge
 </tbody>
 </table>
 
-#### Radar Polar widget
+#### Radar Polar Widget
 
 <table>
   <thead>
@@ -2674,7 +2674,7 @@ The `widgets` section allows you to customize the properties of a specific widge
 </tbody>
 </table>
 
-#### Combo Chart widget
+#### Combo Chart Widget
 
 <table>
   <thead>
@@ -2834,7 +2834,7 @@ The `widgets` section allows you to customize the properties of a specific widge
 </tbody>
 </table>
 
-#### Period Over Period widget 
+#### Period Over Period Widget 
 
 <table>
   <thead>
@@ -3275,7 +3275,7 @@ The `widgets` section allows you to customize the properties of a specific widge
 </tbody>
 </table>
 
-#### Tab widget
+#### Tab Widget
 
 <table>
   <thead>
@@ -3329,7 +3329,7 @@ The `widgets` section allows you to customize the properties of a specific widge
 </tbody>
 </table>
 
-#### RTE widget
+#### RTE Widget
 
 <table>
   <thead>
@@ -3377,7 +3377,7 @@ The `widgets` section allows you to customize the properties of a specific widge
 </tbody>
 </table>
 
-#### Scatter widget
+#### Scatter Widget
 
 <table>
   <thead>
@@ -3517,7 +3517,7 @@ The `widgets` section allows you to customize the properties of a specific widge
 </tbody>
 </table>
 
-#### Text Filter widget
+#### Text Filter Widget
 
 <table>
   <thead>
