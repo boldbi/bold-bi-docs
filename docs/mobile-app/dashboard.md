@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dashboard Interactivity in Mobile App | Bold BI Embedded
-description: Learn how to explore the options in dashboard listing page, view dashboards and save dashboard views in Bold BI Embedded through mobile app.
+description: Learn how to explore the options in the dashboard listing page, view dashboards, and save dashboard views in Bold BI Embedded through the mobile app.
 canonical: "/accessing-through-mobile-app/dashboard/"
 platform: bold-bi
 documentation: ug
@@ -15,7 +15,7 @@ After successfully logging in, you can see the dashboards listed in different ta
 
 ![Dashboard](/static/assets/accessing-through-mobile-app/images/dashboard.png)
 
-**Searching, Filtering and Sorting** - You can search and sort the dashboards based on owner name, modified date, and category to quickly view the dashboard.
+**Searching, Filtering, and Sorting** - You can search and sort the dashboards based on owner name, modified date, and category to quickly view the dashboard.
 
 ## View Dashboards
 
@@ -25,7 +25,7 @@ You can view and interact with the dashboards using the Bold BI Dashboard Mobile
 
 **Export Dashboards** - Dashboards can be exported to image, PDF, Excel, and CSV file formats.
 
-**Update Dashboard** - Dashboard data can be easily updated with real time data.
+**Update Dashboard** - Dashboard data can be easily updated with real-time data.
 
 **Filter Dashboard** - Dashboard data can be filtered and viewed easily.
 
@@ -43,7 +43,7 @@ Filters applied in the dashboards are summarized in the Filter Overview section 
 
 ![filter overview](/static/assets/accessing-through-mobile-app/images/filter-overview.png)
 
-To save the filters, click on the `Save` icon. A popup will open for you to type the name for the Dashboard View and submit it.
+To save the filters, click on the `Save` icon. A popup opens for you to type the name for the Dashboard View and submit it.
 
 ![save icon](/static/assets/accessing-through-mobile-app/images/save-icon.png)
 
@@ -74,7 +74,7 @@ You can apply the views to the current dashboard by selecting the view in the Da
 
 ![apply filter from list](/static/assets/accessing-through-mobile-app/images/apply-filter-list.png)
 
-or you can apply it by tabbing `Open` in the filter information.
+Or you can apply it by tabbing `Open` in the filter information.
 
 ![apply filter from info](/static/assets/accessing-through-mobile-app/images/apply-filter-info.png)
 
