@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Accounts Configuration – Embedded BI | Bold BI Documentation
-description: Learn how to activate User Management Server user accounts. There are two modes of account activation available – automatic and user email.
+description: "Learn how to set up account activation for users in the Bold BI User Management Server, using either automatic activation or activation through user email."
 platform: bold-bi
 documentation: ug
 ---
