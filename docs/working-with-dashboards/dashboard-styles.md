@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dashboard Styles – Embedded BI | Bold BI Learning
-description: Learn how to change the dashboard styles, like background color and background image, in the Bold BI Embedded.
+description: "Learn how to change dashboard styles in Bold BI, such as the background color and background image, to give your dashboards a consistent look for your brand."
 canonical: "/working-with-dashboards/dashboard-styles/"
 platform: bold-bi
 documentation: ug
