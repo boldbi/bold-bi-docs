@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data process settings to store and cache data | Bold BI Docs
+title: Data Process Settings to Store and Cache Data | Bold BI Docs
 description: Learn about the data process settings, which include the configuration of the data store to store extracted data & the data cache to manage the dashboard cache.
 platform: bold-bi
 documentation: ug
