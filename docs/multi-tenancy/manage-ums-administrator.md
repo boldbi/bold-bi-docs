@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Assigning Admin Role to Users in User Management Server – Bold BI
-description: Learn how to add or remove admin role to the users in the User Management Server of Bold BI deployed in your servers.
+description: "Learn how to add or remove the administrator role for users in the User Management Server of Bold BI deployed on your servers, and what the role allows."
 platform: bold-bi
 documentation: ug
 ---
