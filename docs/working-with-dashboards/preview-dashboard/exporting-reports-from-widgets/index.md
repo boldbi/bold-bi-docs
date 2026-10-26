@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Exporting Reports from Widgets – Embedded BI | Bold BI Docs
-description: Learn how to export reports in the form PDF, Excel, Image and CSV from widgets in Bold BI deployed in your server.
+description: "Learn how to export reports from dashboard widgets in Bold BI deployed on your server, in PDF, Excel, image, and CSV formats for sharing and offline analysis."
 canonical: "/working-with-dashboards/preview-dashboard/exporting-reports-from-widgets/"
 platform: bold-bi
 documentation: ug
