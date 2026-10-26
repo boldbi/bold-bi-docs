@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Screen Reader Support in Dashboard Viewer | Bold BI Docs
-description: Learn how to use screen readers like NVDA to navigate Bold BI dashboards in viewer mode for improved accessibility.
+description: "Learn how to use screen readers such as NVDA to navigate Bold BI dashboards in viewer mode, so users with visual impairments can read widgets and their data."
 platform: bold-bi
 documentation: ug
 ---
