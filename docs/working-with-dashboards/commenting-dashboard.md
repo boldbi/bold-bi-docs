@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Commenting on Dashboards – Embedded BI | Bold BI Learning
-description: Learn how to enable commenting in a dashboard to collaborate with your team through user mentions in Bold BI Embedded.
+description: "Learn how to enable commenting on dashboards in Bold BI, so your team can discuss insights, mention other users, and collaborate on dashboards and widgets."
 canonical: "/working-with-dashboards/commenting-dashboard/"
 platform: bold-bi
 documentation: ug
