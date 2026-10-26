@@ -1,29 +1,29 @@
 ---
 layout: post
 title: SSO with Fusion Auth (OpenID Connect) | Bold BI Documentation
-description: Learn how to configure Bold BI Embedded with the Fusion Auth identity provider for Single Sign-on authentication using Open ID Connect.
+description: Learn how to configure Bold BI Embedded with the Fusion Auth identity provider for Single Sign-On authentication using OpenID Connect.
 platform: bold-bi
 documentation: ug
 ---
 
-# Fusion Auth support for SSO authentication
+# Fusion Auth Support for SSO Authentication
 
 The Bold BI application supports adding users through the Fusion Auth provider. By importing them, you can share the dashboards and email exported dashboards with them.
 
 > **NOTE:** This feature is available in Bold BI Embedded Analytics but not in Cloud Analytics Server.
 
-## How to register the Bold BI application in Fusion Auth
+## How to Register the Bold BI Application in Fusion Auth
 
 This section explains how to register the Bold BI application in Fusion Auth to enable Single Sign-On (SSO) for users.
 
-> **NOTE:**  This configuration needs to be done on the Fusion Auth website.
+> **NOTE:** This configuration needs to be done on the Fusion Auth website.
 
 #### Prerequisites
 
 * An admin account in Fusion Auth.
 * Install Bold BI application.
 
-### Steps to register the Bold BI application
+### Steps to Register the Bold BI Application
 
 1. Please log in to the Fusion Auth website using the admin account.
 
@@ -39,7 +39,7 @@ This section explains how to register the Bold BI application in Fusion Auth to 
 
     ![Fusion Auth Name](/static/assets/site-administration/openid-support/images/fusion-auth-name.png)
 
-5. Go to `Oauth` tab and then fill the following fields. click on `Save` icon.
+5. Go to the `Oauth` tab and then fill the following fields. Click on `Save` icon.
     *  Enable grants
 	*  Login Redirect URIs
 
@@ -47,13 +47,13 @@ This section explains how to register the Bold BI application in Fusion Auth to 
  
    ![Fusion Auth Save](/static/assets/site-administration/openid-support/images/fusion-auth-save.png)
  
-6. The `Redirect URI` are found under the `Open ID Connect` settings of your Bold BI application, as shown in the following screenshot.
+6. The `Redirect URI` is found under the `Open ID Connect` settings of your Bold BI application, as shown in the following screenshot.
 
     ![Redirecturi in setting](/static/assets/site-administration/openid-support/images/redirecturi.png#width=65%)
 
 After successfully registering in Fusion Auth, save these settings on the Bold BI settings page to enable this authentication.
 
-## Enable Fusion Auth support for authentication in Bold BI
+## Enable Fusion Auth Support for Authentication in Bold BI
 
 Configure the settings in Bold BI as in the following snap to enable the authentication using Fusion Auth.
 
@@ -75,17 +75,17 @@ The fields that need to be saved in Bold BI in order to enable Fusion Auth for a
 
 <tr>
 <td>Authority</td>
-<td>It must be in the form <span style="color:#0c9dd1">https://subdomain.FusionAuth.com/oidc</span>. Sub domain represents the Fusion Auth instance.</td>
+<td>It must be in the form <span style="color:#0c9dd1">https://subdomain.FusionAuth.com/oidc</span>. Subdomain represents the Fusion Auth instance.</td>
 </tr>
 
 <tr>
 <td>Client ID</td>
-<td>The Client ID you get after registered the Bold BI application in Fusion Auth website.</td>
+<td>The Client ID you get after registering the Bold BI application in Fusion Auth website.</td>
 </tr>
 
 <tr>
 <td>Client Secret</td>
-<td>The Client Secret you get after registered the Bold BI application in Fusion Auth website.</td>
+<td>The Client Secret you get after registering the Bold BI application in Fusion Auth website.</td>
 </tr>
 
 <tr>
