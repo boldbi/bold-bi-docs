@@ -1,7 +1,7 @@
 ---
 layout: post
 title: SSO with OAuth 2.0 Identities in User Management Server | Bold BI
-description: Learn how to configure User Management Server with an OAuth 2.0 identity provider for Single Sign-On authentication using OAuth 2.0.
+description: "Learn how to configure the Bold BI User Management Server with an OAuth 2.0 identity provider so users can sign in to all tenant sites with single sign-on."
 platform: bold-bi
 documentation: ug
 ---
