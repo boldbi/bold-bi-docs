@@ -82,13 +82,13 @@ Follow the steps to upload the generated custom theme file:
 1.  Click on the `Manage` option next to `Dashboard Theme` under the `Look and Feel` settings.
 ![Manage-option-dashboard](/static/assets/site-administration/images/manage-option-dashboard.png)
 
-2.  A dialog will appear as shown below. Choose the created custom theme file by clicking on the three dots and then click Upload. Please refer to the [Create dashboard custom theme](/site-administration/look-and-feel-settings-in-cloud-bi/create-custom-dashboard-theme/) section to learn how to create your preferred custom theme file for dashboards.
+2.  A dialog will appear. Choose the created custom theme file by clicking on the three dots and then click Upload. Please refer to the [Create dashboard custom theme](/site-administration/look-and-feel-settings-in-cloud-bi/create-custom-dashboard-theme/) section to learn how to create your preferred custom theme file for dashboards.
 ![uploadthemefile](/static/assets/site-administration/images/uploadthemefile.png)
 
 3. The uploaded custom theme file will appear in the `Dashboard Theme` drop-down list. In the `Dashboard Theme` drop-down menu, select the uploaded theme, then save the settings.
 ![dashboardthemedarkviolet](/static/assets/site-administration/images/dashboardthemedarkviolet.png)
 
-4. Your dashboard is rendered according to your customized theme file. For example, the `darkviolet` theme is rendered as shown below.
+4. Your dashboard is rendered according to your customized theme file. For example, the `darkviolet` theme is rendered.
 ![darkvioletthemedashboard](/static/assets/site-administration/images/darkvioletthemedashboard.png)
 
 
