@@ -1,6 +1,6 @@
 ---
 layout: post
-title: User Profile Information – Bold ID | Bold BI Documentation
+title: User Profile Information – Bold BI | Bold BI Documentation
 description: Learn about editing the user's profile details including picture, updating the language preferences for the user account, and changing the password in Bold BI.
 platform: bold-bi
 documentation: ug
@@ -8,7 +8,7 @@ documentation: ug
 
 # User Profile
 
-This section explains how to edit profile information, upload profile pictures, change passwords, enable two-factor authentication (2FA), and update user preferences in your user profile.
+You can edit profile information, upload profile pictures, change passwords, enable two-factor authentication (2FA), and update user preferences in your user profile.
 
 > **NOTE:** User profile support is not available in Syncfusion Managed Cloud Server and is available in On-Premises Deployment.
 
