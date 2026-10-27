@@ -8,7 +8,7 @@ documentation: ug
 
 # User Profile in the Bold BI
 
-This section explains how to view the profile, edit the profile details, edit the profile settings, set user notification preferences, view my permissions, connect sites, connect accounts, generate the access token for the logged-in user, and change the password for the user profile in Bold BI.
+You can view your profile, edit profile details and settings, set notification preferences, view your permissions, connect sites and accounts, generate an access token for the logged-in user, and change your password in Bold BI.
 
 ## Profile Details
 
@@ -34,7 +34,7 @@ The Application language, Data language, Default pinboard, and AutoSave filter s
 ![Profile Settings](/static/assets/managing-resources/images/profile-settings.png#width=60%)
 
 ### Language Settings
-This section explains how to configure the language settings for the application language and data language.
+You can configure the language settings for the application language and data language.
 
 #### Application Language
 This language is used in the user interface of an application, such as menu items, dialog boxes, toolboxes, and so on. 
