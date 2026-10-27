@@ -14,7 +14,7 @@ You can add, edit, delete, and deactivate webhooks in the Bold BI embedded appli
 
 Follow these steps to add a webhook in the Bold BI embedded application.
 
-### Steps to add a webhook
+### Steps to Add a Webhook
 
 1. Click the `Add Webhook` button at the top right of the Webhooks section of the profile page.
 
@@ -22,11 +22,11 @@ Follow these steps to add a webhook in the Bold BI embedded application.
 	
 2. Provide the required webhook details on the `Add Webhook` page:
 
-   * Provide a suitable `Name` for the webhook and `Description`.
+   * Provide a suitable `Name` and `Description` for the webhook.
    * Select the event to trigger the webhook. For more details, see [Events](#events).
    * Select the content type in the format in which you want to send the data.
-   * Enter the webhook endpoints where the webhook data will be received.
-   * Enable authentication. This is optional. For more details, see [Webhook authentication](#webhook-authentication).
+   * Enter the webhook endpoints where the webhook data is received.
+   * Enable authentication. This is optional. For more details, see [Webhook Authentication](#webhook-authentication).
    * Enable signing. This is optional. For more details, see [Webhook Signing](#webhook-signing).
    * Select the payload of an event to send in webhook data. For more details, see [Payload](#payload).
 
@@ -40,7 +40,7 @@ Follow these steps to add a webhook in the Bold BI embedded application.
 
 You can edit created webhooks in the Webhooks section of the profile page, as well as in the `Integrations` section of the admin page.
 
-### Steps to edit a webhook
+### Steps to Edit a Webhook
 
 1. Click the `Actions` button in the webhook grid context menu and select `Edit` to edit the webhook.
 
@@ -93,11 +93,11 @@ Click the `Actions` button in the webhook grid context menu and select `Deactiva
 
 [NEEDS FACT: the system headers sent with each webhook request, and whether custom headers are supported]
 
-#### System headers
+#### System Headers
 
 [NEEDS FACT: default system header keys and values sent with each webhook request, including Host, AcceptEncoding, Accept-Charset, and User-Agent]
 
-#### Custom headers
+#### Custom Headers
 
 To add a custom header, follow these steps:
 
@@ -124,7 +124,7 @@ For the payload properties used in dashboard export events, see [Webhook payload
 
 [NEEDS FACT: why webhook URLs need authentication and signing, and which security settings Bold BI recommends]
 
-### Webhook authentication
+### Webhook Authentication
 
 [NEEDS FACT: the authentication methods Bold BI supports for webhooks, and whether enabling authentication is recommended]
 
