@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Manage Data sources – Embedded BI | Bold BI Documentation
-description: Learn how to manage version history, refresh data, share, copy and delete data sources in Bold BI Embedded.
+title: Manage Data Sources – Embedded BI | Bold BI Documentation
+description: Learn how to manage version history, refresh data, share, copy, and delete data sources in Bold BI Embedded.
 canonical: "/managing-resources/manage-data-sources/"
 platform: bold-bi
 documentation: ug
@@ -20,31 +20,31 @@ There are two connection types available in Data Source:
 * Live mode
 * Extract mode
 
-## Live mode connection
+## Live Mode Connection
 
-In this connection type, data sources are directly fetched from the source, examples include MySQL, Oracle, etc.
+In this connection type, data sources are directly fetched from the source. Examples include MySQL, Oracle, etc.
 
 ![Live Connection](/static/assets/managing-resources/images/live-connection-datasource.png#width=55%)
 
-## Extract mode connection 
+## Extract Mode Connection 
 
-In this connection type, data sources are fetched from the source periodically, examples include CSV, JSON, etc.
+In this connection type, data sources are fetched from the source periodically. Examples include CSV, JSON, etc.
 
 Within extract mode, users can choose between two methods of connecting to the data source:
 
 ![Extract Engine](/static/assets/working-with-datasource/images/Extract_Engine.png)
 	
-- **Bold BI Extract:** In Bold BI Extract, The data will be extracted in using Bold BI Engine and the data will be moved to configured datastore in Bold BI.
+- **Bold BI Extract:** In Bold BI Extract, the data is extracted using the Bold BI Engine and moved to the configured datastore in Bold BI.
  
-- **Data Hub:** When switching to Data Hub, Data extraction is handled through the Data Hub. An equivalent pipeline is created, utilizing the Data Hub’s Extract, Transform, Load (ETL) capabilities to filter, optimize, or transform the data, and to generate new tables.
+- **Data Hub:** When switching to Data Hub, data extraction is handled through the Data Hub. An equivalent pipeline is created, utilizing the Data Hub’s Extract, Transform, Load (ETL) capabilities to filter, optimize, or transform the data, and to generate new tables.
 
 - To view the equivalent pipeline created using **Data Hub** for data extraction, navigate to the Query Designer page and click on View Pipeline.
 
 ![View Pipeline](/static/assets/working-with-datasource/images/View_Pipeline.png)
 
-- When the data refresh is configured for data sources that uses the Data Hub Extract Engine, the refresh will be managed within the Data Hub.
+- When the data refresh is configured for data sources that use the Data Hub Extract Engine, the refresh is managed within the Data Hub.
 
- > **NOTE:**: Initially, The Data Hub extracts 1000 records for sql connectors, and additional records will be extracted in the next iteration based on the Refresh Settings.
+ > **NOTE:** Initially, the Data Hub extracts 1000 records for SQL connectors, and additional records will be extracted in the next iteration based on the Refresh Settings.
 
 - **Limitations:** The following options are not supported when using the Data Hub method:
 	1. Max rows
@@ -54,7 +54,7 @@ Within extract mode, users can choose between two methods of connecting to the d
  
 In summary, Bold BI provides users with two distinct modes for connecting to SQL data sources, each offering unique benefits depending on the nature of the analysis and the requirements of the user. Whether opting for real-time access through live mode or leveraging the efficiency of extract mode, users can access and analyze SQL data effectively to drive informed decision-making and achieve their analytical objectives.
 
-Users can see the data source refresh status and the number of occupied data rows count on this page.
+Users can see the data source refresh status and the number of occupied data rows on this page.
 
 ![Extract Connection](/static/assets/managing-resources/images/extract-connection-datasource.png#width=55%)
 
@@ -62,9 +62,9 @@ Check the [connectivity section](/working-with-data-sources/data-connectors/) fo
 
 ## Refresh Setting
 
-This section explains on how to configure the data source refresh setting.
+This section explains how to configure the data source refresh setting.
 
-### Steps to configure a data source refresh setting
+### Steps to Configure a Data Source Refresh Setting
 
 1. Click the `Actions` button in the Data sources grid context menu and select the `Refresh Setting` option.
 
@@ -72,14 +72,14 @@ This section explains on how to configure the data source refresh setting.
 
 2. Select the recurrence type, recurrence, start and end dates in the `Refresh Setting` dialog box.
 	* Data refresh can be scheduled hourly, daily, weekly, and monthly.
-	* The minimum data refresh interval time will be 5 minutes.
-	* Application Time Zone is displayed below the date picker. The start time of the schedule is converted to the client's Time Zone and shown on the right side for the user's convenience. After selecting, click on the `Schedule` button.
+	* The minimum data refresh interval time is 5 minutes.
+	* Application Time Zone is displayed below the date picker. The start time of the schedule is converted to the client's time zone and shown on the right side for the user's convenience. After selecting, click on the `Schedule` button.
 	* Data refresh failure notification can be sent to the owner of the data source with the error message and a link to the data source refresh history by enabling the 'send failure notification to owner' option.
-	* Bold BI application deactivates the data refresh after limited consecutive failures and sends the disable notification to the owner by mail.
+	* The Bold BI application deactivates the data refresh after limited consecutive failures and sends the disable notification to the owner by mail.
 
 	![Save Schedule](/static/assets/managing-resources/images/refresh-setting-schedule-datasource.png)
 
-> **NOTE:**  Only the data source created with extract mode will have this refresh setting option.
+> **NOTE:** Only the data source created with extract mode has this refresh setting option.
 
 ## Refresh Data
 Data refresh can be run on demand by using the `Refresh Data` option in the data source grid context menu.
@@ -96,27 +96,27 @@ You can also see failure information by clicking the failed link in the run hist
 
 ![Refresh Failure Info](/static/assets/managing-resources/images/refresh-failure-info.png#width=55%)
 
-If the data source refresh fails due to consecutive failures, a disabled status will be displayed on the listing page. You can check the history using the option below the status.
+If the data source refresh fails due to consecutive failures, a disabled status is displayed on the listing page. You can check the history using the option below the status.
 
 ![Disable Refresh Logs](/static/assets/managing-resources/images/disable-refresh-view-logs.png)
 
-> **NOTE:**  Only the data source created with extract mode will have this refresh history option.
+> **NOTE:** Only the data source created with extract mode has this refresh history option.
 
 ## Refresh Logs
 The refresh log provides a comprehensive overview of the refresh activities, including the corresponding timestamp of each event.
 
-To access the refresh logs, click the `View` option in the grid. This will open the refresh log in the New tab.
+To access the refresh logs, click the `View` option in the grid. This opens the refresh log in a new tab.
 
 ![Refresh Logs Info](/static/assets/managing-resources/images/refresh-view-logs.png)
 ![Success Logs Info](/static/assets/managing-resources/images/Success-logs.png)
 
 > **NOTE:**
-> * The refresh log will display tooltip information indicating whether it has been deleted after a certain period from its creation time or if it is unavailable due to being an older refresh request.
-> * The logs for each refresh will be automatically deleted after 15 days from their respective creation time.
+> * The refresh log displays tooltip information indicating whether it has been deleted after a certain period from its creation time or if it is unavailable due to being an older refresh request.
+> * The logs for each refresh are automatically deleted after 15 days from their respective creation time.
 
-## Row Level Security
+## Row-Level Security
 
-Row-level security for the data used to create dashboards allows us to restrict the data visible to each user. If row-level security is applied to a data source, it will be indicated in the listing grid. [Know More](/working-with-data-sources/user-filter/)
+Row-level security for the data used to create dashboards allows you to restrict the data visible to each user. If row-level security is applied to a data source, it is indicated in the listing grid. [Know More](/working-with-data-sources/user-filter/)
 
 ![Row-level Security](/static/assets/managing-resources/images/row-level-security.png)
 
@@ -131,13 +131,13 @@ You can also view the number of dashboards linked to the data source on the data
 
 ![Linked Dashboards Count](/static/assets/managing-resources/images/linked-dashboard-count.png)
 
-> **NOTE:** All the dashboards associated with the data source will be updated whenever the data source is updated.
+> **NOTE:** All the dashboards associated with the data source are updated whenever the data source is updated.
 
-## Share Data sources
+## Share Data Sources
 
 This section explains how to share data sources with other users in Bold BI.
 
-### Steps to share a data source
+### Steps to Share a Data Source
 
 1. Click the `Actions` button in the Data sources grid context menu and select the `Sharing Permissions` option.
 
@@ -151,7 +151,7 @@ This section explains how to share data sources with other users in Bold BI.
 
 	![Add Data source Permission](/static/assets/managing-resources/images/add-datasource-permission.png#width=55%)
 	
-> **NOTE:**  Only the user who created the data source and the Administrator can share the data source with other Bold BI users.
+> **NOTE:** Only the user who created the data source and the Administrator can share the data source with other Bold BI users.
 
 ### Remove Permission
 
@@ -170,7 +170,7 @@ The user who created the data source and the Administrator can remove the shared
 Versions and file logs for each data source are maintained in Bold BI for every change in the data source. Check the [Version History](/managing-resources/manage-dashboards/version-history-of-dashboards/) section for more details.
 
 ## Delete Data Sources
-Data Sources can also be deleted from Bold BI when they are no longer required.
+Data sources can also be deleted from Bold BI when they are no longer required.
 
 Click the `Actions` button in the data sources grid context menu and select `Delete` to delete the data source.
 
@@ -186,7 +186,7 @@ Click `Actions` in the data sources grid context menu and select `Preview Data` 
 
 ## Information of Data Source
 
-You can see the information of the respective Data Source in the dialog box. Click `Actions` in the grid context menu and select `Info`.
+You can see the information of the respective data source in the dialog box. Click `Actions` in the grid context menu and select `Info`.
 
 ![Data Sources Info](/static/assets/managing-resources/images/datasources-info.png#width=55%)
 
@@ -200,8 +200,8 @@ Click the `Actions` button in the data sources grid context menu and select `Cop
 ![Copy Data Source](/static/assets/managing-resources/images/copy-data-source.png#width=55%)  
 
 ## Draft Data Sources
-The **Data Source** will be automatically saved as a draft when the user did not publish the created data source.
+The **Data Source** is automatically saved as a draft when the user does not publish the created data source.
 
-You can view the unpublished draft data sources in the data source listing page tagged with `draft` label.
+You can view the unpublished draft data sources in the data source listing page tagged with the `draft` label.
 
 ![Draft Data Source](/static/assets/managing-resources/images/draft-data-source.png#width=55%)

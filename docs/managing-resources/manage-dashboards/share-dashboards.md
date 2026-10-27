@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sharing a Dashboard – Embedded BI | Bold BI Documentation
-description:  Learn how to share a dashboard from dashboard listing to selected recipients in same server and revoke the same when needed in Bold BI Embedded.
+description: Learn how to share a dashboard from the dashboard listing to selected recipients on the same server and revoke the same when needed in Bold BI Embedded.
 canonical: "/managing-resources/manage-dashboards/share-dashboards/" 
 platform: bold-bi
 documentation: ug
@@ -11,7 +11,7 @@ documentation: ug
 
 This section explains how to share dashboards with other users in Bold BI. 
 
-### Steps to share a Dashboard
+### Steps to Share a Dashboard
 
 1. Click the `Share Permissions` option in the Dashboards grid context menu.
 
@@ -25,7 +25,7 @@ This section explains how to share dashboards with other users in Bold BI.
 
 	![Add Permission](/static/assets/managing-resources/manage-dashboards/images/add-permission.png#width=55%)
 	
-> **NOTE:**  Only the user who created the dashboard and the Administrator can share the dashboard with other Bold BI users.
+> **NOTE:** Only the user who created the dashboard and the Administrator can share the dashboard with other Bold BI users.
 
 ### Remove Permission
 

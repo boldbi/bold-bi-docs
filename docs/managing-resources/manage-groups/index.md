@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Managing Groups – Embedded BI | Bold BI Documentation
-description: Learn how to add, edit, delete groups and know how to assign users and manage permissions to groups in Bold BI Embedded.
+description: Learn how to add, edit, and delete groups and know how to assign users and manage permissions to groups in Bold BI Embedded.
 canonical: "/managing-resources/manage-groups/"
 platform: bold-bi
 documentation: ug
@@ -9,63 +9,63 @@ documentation: ug
 
 # Manage Groups
 
-This section explains how to add, edit, delete groups, as well as how to assign users and manage permissions for groups in Bold BI Embedded.
+This section explains how to add, edit, and delete groups, as well as how to assign users and manage permissions for groups in Bold BI Embedded.
 
 Groups are collections of users to which permissions can be assigned.
 
 ![Manage Groups](/static/assets/managing-resources/manage-groups/images/manage-groups.png)
 
-## Add new group
+## Add New Group
 To add a new group, click on `New Group` in the groups management page of Bold BI.
  
-New groups can be added by providing a name and optional description for the group.
+New groups can be added by providing a name and an optional description for the group.
  
 ![Add Groups](/static/assets/managing-resources/manage-groups/images/add-group.png#width=55%)
 
-Fill out the form with the name and description, then click on `Add`. A new group will be created, and you can[add users](/managing-resources/manage-groups/#assign-users) or [manage permissions](/managing-resources/manage-groups/#manage-permissions) for it.
+Fill out the form with the name and description, then click on `Add`. A new group is created, and you can [add users](/managing-resources/manage-groups/#assign-users) or [manage permissions](/managing-resources/manage-groups/#manage-permissions) for it.
 
-## Edit group
-Group Information can be edited on the group's edit page.
+## Edit Group
+Group information can be edited on the group's edit page.
 ![Edit Group Page](/static/assets/managing-resources/manage-groups/images/edit-group-img.png)
 
 ![Edit Group](/static/assets/managing-resources/manage-groups/images/edit-group.png)
 
-The group name, profile picture of the group and description can be edited on the group edit page. Additionally, users can be assigned or removed from the group on this page.
+The group name, profile picture of the group, and description can be edited on the group edit page. Additionally, users can be assigned to or removed from the group on this page.
 
-You can update or delete the group’s profile picture. If no profile picture is provided, a default avatar will be automatically applied as the group’s logo.
+You can update or delete the group’s profile picture. If no profile picture is provided, a default avatar is automatically applied as the group’s logo.
 
 ![Edit Group Picture](/static/assets/managing-resources/manage-groups/images/edit-group-logo.png)
 
 ![Edit Group Picture Dialog](/static/assets/managing-resources/manage-groups/images/edit-group-logo-dialog.png)
 
 
-## Delete group
+## Delete Group
 Groups can be deleted if they are no longer needed. You cannot delete the `System Administrator` group.
 
-### From group management page
+### From Group Management Page
 
-Clicking `Delete` from the context menu will delete a single group.
+Clicking `Delete` from the context menu deletes a single group.
 ![Delete group from group management page](/static/assets/managing-resources/manage-groups/images/delete-group-1.png)
 
 Additionally, you have the option to remove multiple groups by marking the checkboxes next to the groups you wish to delete and then selecting `Delete Groups` in the group list.
 ![Delete multiple group from group management page](/static/assets/managing-resources/manage-groups/images/delete-multiple-group.png)
 
-### From group edit page
+### From Group Edit Page
 
 ![Delete group from group edit page](/static/assets/managing-resources/manage-groups/images/delete-group-2.png)
 
-## Assign users
+## Assign Users
 Users can be assigned to the selected group by assigning the permissions of the group to them.
 
 ![Assign Users](/static/assets/managing-resources/manage-groups/images/manage-groups-assign-users.png)
 
 ![Add Users](/static/assets/managing-resources/manage-groups/images/manage-groups-add-users.png)
 
-Click `Add user` to add a new user. It will add the user to both site and respective group.
+Click `Add user` to add a new user. It adds the user to both the site and the respective group.
 
 ![Add User](/static/assets/managing-resources/manage-groups/images/manage-add-user-third-party-group.png)
 
-You can also add other directory users, such as local, Azure AD, Windows AD, OAuth, and Open ID to any third-party groups. However, those changes will not synchronize with the original directory. They will only be applied in Bold BI groups.
+You can also add other directory users, such as local, Azure AD, Windows AD, OAuth, and OpenID, to any third-party groups. However, those changes do not synchronize with the original directory. They are only applied in Bold BI groups.
 
 ![Third Party User Restriction](/static/assets/managing-resources/manage-groups/images/manage-add-third-party-users.png)
 
@@ -75,7 +75,7 @@ You cannot remove users from a third-party group if they were added via the thir
 
 ![Assign Users](/static/assets/managing-resources/manage-groups/images/manage-groups-remove-users.png)
 
-## Manage permissions
+## Manage Permissions
 
 The `Manage Permissions` page for the group can be accessed from any of the following pages:
 
@@ -93,7 +93,7 @@ To add permissions to the group, click on `Add Permission`.
 
 ![Add Permission](/static/assets/working-with-dashboards/share-dashboards/images/add-permission-group.png#width=60%)
 
-### Steps to add permission to the group
+### Steps to Add Permission to the Group
 
 1. Select the entity.
 2. Choose the scope if the entity is not of the `All Resource` or `All Settings` item type.

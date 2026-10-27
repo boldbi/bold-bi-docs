@@ -20,7 +20,7 @@ Resource Permission lets you define access modes — such as Read, Write, and De
 
 Resource Feature Permission allows you to assign permissions for specific dashboard actions. These include exporting dashboards, viewing underlying data, using dashboard parameters, and more. Feature permissions give fine‑grained control over the actions available to each user or group.
 
-You can learn more about Manage permissions here:
+You can learn more about Manage Permissions here:
 
 [Manage Resource Permission](/managing-resources/manage-permissions/manage-resources-permission/)
 
