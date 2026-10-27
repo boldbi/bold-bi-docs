@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Azure AD Groups Synchronization – Embedded BI | Bold BI Docs
-description: Learn how to synchronize the imported Azure Active Directory group and its users with the Azure Active Directory in Bold BI Embedded.
+description: "Learn how to synchronize an imported Azure Active Directory group and its users with Azure Active Directory in Bold BI Embedded, step by step."
 canonical: "/managing-resources/manage-groups/synchronize-azure-active-directory-groups/"
 platform: bold-bi
 documentation: ug

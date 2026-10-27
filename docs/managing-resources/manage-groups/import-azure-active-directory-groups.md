@@ -1,7 +1,7 @@
 ---
 layout: post
 title: User Group Import from Azure AD – Embedded BI | Bold BI Docs
-description: Learn how to search and import user groups from Azure Active Directory into Bold BI Embedded. Only System Administrators can import Azure Active Directory groups.
+description: "Learn how to search for and import user groups from Azure Active Directory into Bold BI Embedded. Only System Administrators can import these groups."
 canonical: "/managing-resources/manage-groups/import-azure-active-directory-groups/"
 platform: bold-bi
 documentation: ug

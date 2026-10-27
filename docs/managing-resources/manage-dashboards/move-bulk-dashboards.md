@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Moving Bulk Dashboards – Manage Dashboards | Bold BI Docs
-description: Learn how to move multiple dashboards between categories, including required permissions, renaming rules, and bulk move error handling.
+description: "Learn how to move multiple dashboards between categories in Bold BI Embedded, including required permissions, renaming rules and bulk move error handling."
 canonical: "/managing-resources/manage-dashboards/move-bulk-dashboards/" 
 platform: bold-bi
 documentation: ug

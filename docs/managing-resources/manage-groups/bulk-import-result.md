@@ -1,6 +1,6 @@
 ---
 title: Bulk Import Group Job Result Page in Bold BI | Bold BI Docs
-description: Learn how the bulk import result page works in Bold BI Embedded. Also know how to view, suspend, and delete bulk import job details from the bulk import result page.
+description: "Learn how the bulk import result page in Bold BI Embedded lists group import jobs, and how to view, suspend and delete bulk import job details."
 platform: bold-bi
 documentation: ug
 ---

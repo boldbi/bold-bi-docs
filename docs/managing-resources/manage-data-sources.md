@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Manage Data Sources – Embedded BI | Bold BI Documentation
-description: Learn how to manage version history, refresh data, share, copy, and delete data sources in Bold BI Embedded.
+description: "Learn how to manage data sources in Bold BI Embedded, including version history, refreshing data, sharing, copying, and deleting data sources, step by step."
 canonical: "/managing-resources/manage-data-sources/"
 platform: bold-bi
 documentation: ug

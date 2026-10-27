@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Manage Permissions and Controls Full Overview | Bold BI Docs
-description: Learn how to manage resource and feature permissions for users and groups effectively in the Bold BI platform.
+description: "Learn how to manage resource and feature permissions for users and groups in Bold BI Embedded, including resource level and feature level permissions."
 platform: bold-bi
 documentation: ug
 ---

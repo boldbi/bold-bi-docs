@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Move or Copy Dashboard | Bold BI Embedded
-description: Learn how to move or copy a dashboard from one category to another category in the Bold BI Embedded application.
+description: "Learn how to move or copy a dashboard from one category to another in Bold BI Embedded, with step-by-step instructions for each of the two tasks."
 canonical: "/managing-resources/manage-dashboards/move-and-copy-dashboards/" 
 platform: bold-bi
 documentation: ug

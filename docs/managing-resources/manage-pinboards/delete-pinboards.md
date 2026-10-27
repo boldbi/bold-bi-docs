@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Deleting a Pinboard – Embedded BI | Bold BI Documentation
-description: Learn how to delete a pinboard in Bold BI Embedded. Pinboard is a collection of widgets from various dashboards pinned to it.
+description: "Learn how to delete a pinboard in Bold BI Embedded, step by step. A pinboard is a collection of widgets from various dashboards pinned to it."
 canonical: "/managing-resources/manage-pinboards/delete-pinboards/"
 platform: bold-bi
 documentation: ug

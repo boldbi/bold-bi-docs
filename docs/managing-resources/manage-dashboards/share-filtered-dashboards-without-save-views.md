@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sharing a Filtered Dashboard – Embedded BI | Bold BI Docs
-description: Learn how to share the current dashboard filtered view without saving it as a dashboard view in Bold BI Embedded.
+description: "Learn how to share the current filtered view of a dashboard in Bold BI Embedded without saving the filters as a dashboard view, step by step."
 canonical: "/managing-resources/manage-dashboards/share-filtered-dashboards-without-save-views/" 
 platform: bold-bi
 documentation: ug

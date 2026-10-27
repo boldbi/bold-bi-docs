@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Managing Multi-Tabbed Dashboard – Embedded BI | Bold BI Docs
-description: Learn how to create two or more dashboards on the same page, open, edit, share, and delete a multi-tabbed dashboard in Bold BI Embedded.
+description: "Learn how to create two or more dashboards on the same page, then open, edit, share, and delete a multi-tabbed dashboard in Bold BI Embedded, step by step."
 canonical: "/managing-resources/manage-dashboards/manage-multi-tabbed-dashboards/" 
 platform: bold-bi
 documentation: ug

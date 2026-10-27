@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Managing Groups – Embedded BI | Bold BI Documentation
-description: Learn how to add, edit, and delete groups and know how to assign users and manage permissions to groups in Bold BI Embedded.
+description: "Learn how to add, edit, and delete groups, assign users to groups, and manage group permissions in Bold BI Embedded, with step-by-step instructions."
 canonical: "/managing-resources/manage-groups/"
 platform: bold-bi
 documentation: ug

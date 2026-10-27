@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Restricted Access to Dashboard – Embedded BI | Bold BI Docs
-description: Learn how to enable restricted access to a dashboard in Bold BI Embedded through restricting websites, IP addresses, and applications.
+description: "Learn how to restrict access to a dashboard in Bold BI Embedded by limiting which websites, IP addresses and applications can access or embed it."
 canonical: "/managing-resources/manage-dashboards/advanced-dashboard-security/"
 platform: bold-bi
 documentation: ug
