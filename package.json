@@ -65,7 +65,6 @@
 	},
 	"overrides": {
 		"@parcel/reporter-dev-server": "2.16.4",
-		"@parcel/core": "2.16.4",
 		"markdown-it": "14.2.0",
 		"braces": "3.0.3",
 		"micromatch": "4.0.8",
