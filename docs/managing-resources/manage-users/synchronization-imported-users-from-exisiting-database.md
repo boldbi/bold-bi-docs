@@ -9,7 +9,7 @@ documentation: ug
 
 # Synchronization of Imported Users from the Existing Database
 
-This section explains how to synchronize the imported existing database users' details with the existing database.
+You can synchronize the imported existing database users' details with the existing database.
 
 You can navigate to the user synchronization page from the users page, as shown in the figure below.
 
