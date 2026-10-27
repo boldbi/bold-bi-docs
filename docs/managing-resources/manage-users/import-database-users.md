@@ -9,7 +9,7 @@ documentation: ug
 
 # User Import from a Database
 
-This section explains how to import users from a database into Bold BI Embedded.
+You can import users from a database into Bold BI Embedded.
 
 Only users belonging to the `System Administrator` group can import users from the database into Bold BI.
 
