@@ -8,7 +8,7 @@ documentation: ug
 
 # Manage Users in the Bold BI
 
-This section explains how to add, edit, activate, deactivate, delete users, and manage permissions and assign users to groups in Bold BI.
+You can add, edit, activate, deactivate, and delete users in Bold BI, assign them to groups, and manage their permissions.
 
 Users can only be added, edited, or deleted by users belonging to the `System Administrator` group.
 
@@ -78,7 +78,7 @@ Navigate to the user management page by clicking the `User Management` dropdown 
 
 ![Import from CSV - Navigation](/static/assets/managing-resources/manage-users/images/usermanagement.png#width=55%)
 
-> **NOTE:** This section explains how to import users from a CSV file, which can be downloaded from the following location in the Bold BI application. Users created with passwords in the Bold BI application will be considered local users.
+> **NOTE:** You can import users from a CSV file. Download the CSV template from the Bold BI application, add the users, and upload the file. Users created with passwords in the Bold BI application will be considered local users.
 
 #### Add Users from CSV File
 
