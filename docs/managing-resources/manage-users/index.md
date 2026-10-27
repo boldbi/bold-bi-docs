@@ -1,6 +1,6 @@
 ---
 title: Managing Users and Groups – Embedded BI | Bold BI Learning
-description: Learn how to add, edit, activate, deactivate, delete users, assigning to groups and manage their permissions with Bold BI Embedded.
+description: "Learn how to add, edit, activate, deactivate, and delete users in Bold BI, assign them to groups, and manage their permissions to dashboards and resources."
 canonical: "/managing-resources/manage-users/"
 platform: bold-bi
 documentation: ug
@@ -8,27 +8,27 @@ documentation: ug
 
 # Manage Users in the Bold BI
 
-This section explains how to add, edit, activate, deactivate, delete users, and manage permissions and assign users to groups in Bold BI.
+You can add, edit, activate, deactivate, and delete users in Bold BI, assign them to groups, and manage their permissions.
 
 Users can only be added, edited, or deleted by users belonging to the `System Administrator` group.
 
 ![Manage Users](/static/assets/managing-resources/manage-users/images/manage-users.png)
 
-## Add new users
+## Add New Users
 
 New users can be added to Bold BI individually or in bulk using CSV import.
 
-### Add individual users
+### Add Individual Users
 
 To add individual users, click on `New User` and then select `Add User` from the User Management page.
 
-The `Add User` dialog will be displayed as shown in the image below.
+The `Add User` dialog is displayed as shown in the image below.
 
 ![Add User](/static/assets/managing-resources/manage-users/images/add-user.png#width=60%)
 
 Fill out the form with the email address, username, first name, and last name (optional), then click on `Add`.
 
-> **NOTE:** An email address is mandatory only in the [Email required](/site-administration/account-settings/#email-required) mode.  Users created with passwords in the Bold BI application will be considered local users.
+> **NOTE:** An email address is mandatory only in the [Email required](/site-administration/account-settings/#email-required) mode. Users created with passwords in the Bold BI application will be considered local users.
 
 A new account will be created for the user, and an account activation email will be sent to the email address with an activation link to activate the Bold BI account.
 
@@ -36,7 +36,7 @@ The activation link sent to the user will be valid for 2 days. If the user has n
 
 The account will remain inactive until the user activates the account from the activation email.
 
-### Add individual users with password
+### Add Individual Users with Password
 
 To add users with a password, you must set the Account Activation Mode to `Automatic` in the `Accounts` settings page.
 
@@ -44,13 +44,13 @@ To add users with a password, you must set the Account Activation Mode to `Autom
 
 Next, click on `New User` and then `Add User` from the User Management page.
 
-The `Add User` dialog box will be displayed as shown in the following image.
+The `Add User` dialog box is displayed as shown in the following image.
 
 ![Add User with password](/static/assets/managing-resources/manage-users/images/add-user-password.png#width=45%)
 
 The password must meet the following requirements:
 
-It must contains,
+It must contain:
 
 * At least 6 characters
 * 1 uppercase
@@ -58,7 +58,7 @@ It must contains,
 * 1 numeric
 * 1 special character
 
-### Add existing UMS user
+### Add Existing UMS User
 
 Add an existing UMS user by using the `Add User` dialog to add them to the site.
 
@@ -68,9 +68,9 @@ Verify the user information and click `Add`.
 
 ![User from UMS](/static/assets/managing-resources/manage-users/images/add-user-from-ums.png#width=50%)
 
-To know how to add user in UMS refer [here](/multi-tenancy/manage-users/#add-new-users)
+To know how to add a user in UMS, refer [here](/multi-tenancy/manage-users/#add-new-users).
 
-### Import users from CSV
+### Import Users from CSV
 
 To automate the process of adding a large number of users to Bold BI, download the CSV template file and add the users to it, then import the file.
 
@@ -78,15 +78,15 @@ Navigate to the user management page by clicking the `User Management` dropdown 
 
 ![Import from CSV - Navigation](/static/assets/managing-resources/manage-users/images/usermanagement.png#width=55%)
 
-> **NOTE:**  This section will explain how to import users from a CSV file, which can be downloaded from the following location in the Bold BI application. Users created with passwords in the Bold BI application will be considered local users.
+> **NOTE:** You can import users from a CSV file. Download the CSV template from the Bold BI application, add the users, and upload the file. Users created with passwords in the Bold BI application will be considered local users.
 
-#### Add users from CSV file
+#### Add Users from CSV File
 
 In the `New User` section, click on `Import from CSV`.
 
 ![Import from CSV - Goto Import CSV users page](/static/assets/managing-resources/manage-users/images/goto-import-csv-users.png)
 
-### CSV file Requirements
+### CSV File Requirements
 
 The first row in the CSV template should represent the column headings. Bold BI assumes that the data from the second line in the file represents the user.
 
@@ -126,7 +126,7 @@ Follow the steps below to add users using the CSV template:
 
 	![Import from CSV - Upload CSV file](/static/assets/managing-resources/manage-users/images/csv-import-upload.png#width=60%)
 
-4. Once the file is uploaded, the user details will be displayed in the grid as shown in the image below.
+4. Once the file is uploaded, the user details are displayed in the grid as shown in the image below.
 
 	![Import from CSV - User detail in grid](/static/assets/managing-resources/manage-users/images/csv-import-grid.png)
 
@@ -134,7 +134,7 @@ Follow the steps below to add users using the CSV template:
 
 	![Import from CSV](/static/assets/managing-resources/manage-users/images/csv-import-users.png#width=60%)
     
-Bold BI will import the selected users in the background as a job, and a confirmation dialog will appear as shown in the figure below.
+Bold BI will import the selected users in the background as a job, and a confirmation dialog appears as shown in the figure below.
 
   ![Confirmation dialog after import users started](/static/assets/managing-resources/manage-users/images/confirmation-dialogue-on-import-click.png#width=70%)
 
@@ -144,7 +144,7 @@ Bold BI will import the selected users in the background as a job, and a confirm
 
 #### Adding Custom Attributes During CSV User Import
 
-When importing the users in addition to the standard user details such as Username, Email, Display Name, and Password, administrators can now include custom attributes for each user in the CSV template.
+When importing the users, in addition to the standard user details such as Username, Email, Display Name, and Password, administrators can now include custom attributes for each user in the CSV template.
 
 When adding attributes to the CSV template, please adhere to the following guidelines:
 
@@ -163,7 +163,7 @@ Here is an example of how the CSV format should look when including custom attri
 | testuser@boldbi.com | testuser@boldbi.com | Test User | Test@12345| role=Admin | department=sales |
 
 
-## Edit users
+## Edit Users
 User profile details can be edited from the user's edit page, as shown in the image below.
 
 ![Edit User](/static/assets/managing-resources/manage-users/images/edit-user.png)
@@ -173,24 +173,24 @@ The username, first name, last name, email, phone number, and login password for
 ## Remove User
 Users can be removed from the Bold BI site when they are no longer required. This can be done from the user management page or the edit user page. Even if a user is removed from the site, they will still be available in the UMS.
 
-### From user management page
+### From User Management Page
 Click on the `Remove User` icon to remove the user from the user management page.
 
 ![Delete user from user management page](/static/assets/managing-resources/manage-users/images/delete-user-1.png#width=60%)
 
-### From user edit page
+### From User Edit Page
 Click on `Remove User` from the menu as shown in the image to remove the user from the user management page.
 
 ![Delete user from user edit page](/static/assets/managing-resources/manage-users/images/delete-user-2.png)
 
-## Deactivate users
-Users can be deactivated at any time. Once deactivated, the user will not be able to log into Bold BI.
+## Deactivate Users
+Users can be deactivated at any time. Once deactivated, the user will not be able to log in to Bold BI.
 
 Click on `Deactivate User` from the menu as shown in the image.
 
 ![Deactivate user account](/static/assets/managing-resources/manage-users/images/deactivate-user.png)
 
-## Activate users
+## Activate Users
 Inactive users can be activated by clicking on the `Resend Activation Code` button on the user edit page.
 
 This will send an account activation email to the user with an activation link to activate the account. This activation link will only be valid for 2 days.
@@ -216,7 +216,7 @@ To change a password, the administrator can follow these steps on the Tenant man
 
    ![Change Password](/static/assets/managing-resources/manage-users/images/change-the-password.png)
 
-## Manage permissions
+## Manage Permissions
 
 The `Manage Permissions` page for the user can be accessed from any of the following pages:
 
@@ -234,7 +234,7 @@ Click on `Add Permission` to add permissions to the user.
 
 ![Add Permission](/static/assets/working-with-dashboards/share-dashboards/images/add-permission-user.png)
 
-### Steps to add permission to the user
+### Steps to Add Permission to the User
 
 1. Select the entity.
 2. Select the scope if the entity is not of the `All Resource` or `All Settings` item type.
@@ -243,7 +243,7 @@ Click on `Add Permission` to add permissions to the user.
 
 You can also select multiple scopes and entities to assign multiple permissions. For more information on how to add and manage permissions, please visit the [Manage Permissions](/managing-resources/manage-permissions/) page.
 	
-## Assign users to group
+## Assign Users to Group
 * Users can be assigned to one or multiple groups from the user management page.
 
   ![Assign group to selected users](/static/assets/managing-resources/manage-users/images/assign-group-to-users.png)
@@ -256,8 +256,8 @@ You can also select multiple scopes and entities to assign multiple permissions.
 
   ![Assign existing group to selected users](/static/assets/managing-resources/manage-users/images/assign-group-to-user.png#width=65%)
 
-* A new group can also be created at this time and the selected users can be assigned to the new group.
+* A new group can also be created at this time, and the selected users can be assigned to the new group.
 
   ![Assign new group to selected users](/static/assets/managing-resources/manage-users/images/assign-group-to-users-2.png#width=65%)
 
-> **NOTE:**  All users in the group will have the permissions assigned to the group.
+> **NOTE:** All users in the group will have the permissions assigned to the group.
