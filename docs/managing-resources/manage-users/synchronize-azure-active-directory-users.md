@@ -9,7 +9,7 @@ documentation: ug
 
 # Azure Active Directory User Synchronization
 
-This section explains how to synchronize the imported Azure Active Directory user details with the Azure Active Directory.
+You can synchronize the imported Azure Active Directory user details with Azure Active Directory.
 
 > **NOTE:** Before synchronizing the Azure Active Directory users, follow the given steps:
 > 1. Configure [Azure Active Directory Settings](/site-administration/user-directory-settings/azure-active-directory/).
