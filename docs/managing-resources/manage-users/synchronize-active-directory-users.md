@@ -8,7 +8,7 @@ documentation: ug
 
 # Active Directory User Synchronization
 
-This section explains how to synchronize the imported Active Directory user details with the Active Directory.
+You can synchronize the imported Active Directory user details with Active Directory.
 
 You can navigate to the user synchronization page from the users page.
 
