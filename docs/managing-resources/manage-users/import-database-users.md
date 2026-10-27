@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Import Users from Database – Embedded BI | Bold BI Learning
-description: Learn how to import users from database in Bold BI Embedded. Also know how to modify existing database connection.
+description: "Learn how to import users from an existing database into Bold BI, map the required user fields, and modify an existing database connection when it changes."
 canonical: "/managing-resources/manage-users/import-database-users/"
 platform: bold-bi
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # User Import from a Database
 
-This section explains how to import users from a database into Bold BI Embedded.
+You can import users from a database into Bold BI Embedded.
 
 Only users belonging to the `System Administrator` group can import users from the database into Bold BI.
 
@@ -26,12 +26,12 @@ The link will redirect to another page that will look like the following:
 
 ## Select Users and Import
 
-After selecting columns, the data retrieved from the database will be shown in the Grid. Select the users to be imported and click on `Import Selected Users` to import the selected users, or you can import all the users by clicking on the `Import All Users` button.
+After selecting columns, the data retrieved from the database is shown in the grid. Select the users to be imported and click on `Import Selected Users` to import the selected users, or you can import all the users by clicking on the `Import All Users` button.
 
 ![Import Database Users](/static/assets/managing-resources/manage-users/images/import-from-database-users.png)
 
 
-Bold BI will import the chosen users in the background as a job, and a confirmation dialog will be displayed as shown in the following figure.
+Bold BI will import the chosen users in the background as a job, and a confirmation dialog is displayed as shown in the following figure.
 
 ![Confirmation dialog after import users started](/static/assets/managing-resources/manage-users/images/confirmation-dialogue-on-import-click.png#width=70%)
 
@@ -41,6 +41,6 @@ You can view the status of the current import by clicking on the `View Status` b
 
 ## Modify Existing Database Connection
 
-To modify existing database configuration settings, click on the `Modify` link as shown below.
+To modify existing database configuration settings, click on the `Modify` link.
 
 ![Modify Database Configuration](/static/assets/managing-resources/manage-users/images/Modify-Database-settings-Configuration.png)
