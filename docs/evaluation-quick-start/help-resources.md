@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Help Resources for Bold BI – Learn, Explore, and Get Support
-description: Discover Bold BI’s help resources, including knowledge base articles, blogs, sample dashboards, product lifecycle details, and support options. Learn, explore, and get assistance to maximize your BI experience.
+title: Help Resources for Bold BI – Learn, Explore, and Get Support
+description: "Find Bold BI help resources, including knowledge base articles, blogs, sample dashboards, product lifecycle details, and the support options you can contact."
 canonical: "/evaluation-quick-start/help-resources/"
 platform: bold-bi
 documentation: ug
@@ -13,14 +13,14 @@ documentation: ug
 
 Bold BI empowers businesses with **seamless data visualization and embedded analytics**, helping decision-makers turn data into actionable insights. 
 
-Bold BI provides a comprehensive set of resources to help you explore, learn, and integrate powerful business intelligence solutions into your workflow. Whether you need guidance on best practices, want to stay updated on product developments, or explore real-world use cases, this guide organizes all available resources in one place.  Whether you are:  
+Bold BI provides a comprehensive set of resources to help you explore, learn, and integrate business intelligence solutions into your workflow. Whether you need guidance on best practices, want to stay updated on product developments, or explore real-world use cases, this guide organizes all available resources in one place. Whether you are:  
 
 - **A business leader** evaluating BI solutions,  
 - **A technical team** looking to embed analytics into your applications,  
 - **A new user** wanting to understand Bold BI’s capabilities, or  
 - **An existing user** seeking help through FAQs, best practices, and sample dashboards,  
 
-this guide will connect you to the right resources.  
+this guide connects you to the right resources.  
   
 
 ## Learning & Knowledge Resources
@@ -33,7 +33,7 @@ The **Bold BI Knowledge Base** provides detailed documentation on best practices
 
 ### Technical Blogs
  
-Stay informed about **latest product updates, capabilities, real-world use cases, and industry trends** through expert-written blog posts.  
+Stay informed about **the latest product updates, capabilities, real-world use cases, and industry trends** through expert-written blog posts.  
 
 - [**Read the Blog**](https://www.boldbi.com/blog/)  
 
@@ -60,7 +60,7 @@ Explore **pre-built dashboard templates** categorized by industry and department
 
 ### Embedding Showcase  
  
-Check out Bold BI’s **embedding capabilities** with live demos that show how analytics can be seamlessly integrated into your applications.  
+Check out Bold BI’s **embedding capabilities** with live demos that show how analytics can be integrated into your applications.  
 
 - [**View Embedding Showcase**](https://samples.boldbi.com/embed/)  
 
@@ -146,4 +146,4 @@ To ensure a **faster and more efficient resolution**, please provide:
     -  **Necessary log files** to help our team diagnose the problem efficiently.  
      [**Steps to Share Error Logs, Console Logs, and HAR Files**](https://support.boldbi.com/kb/article/585/steps-to-share-the-error-log-console-log-and-har-file)  
 
-By providing clear and complete details, our support team can **quickly analyze and resolve your issue improving your experience with Bold BI.**  
+By providing clear and complete details, our support team can **quickly analyze and resolve your issue, improving your experience with Bold BI.**  
