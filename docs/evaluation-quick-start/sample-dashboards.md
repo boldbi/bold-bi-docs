@@ -9,7 +9,7 @@ documentation: ug
 
 # Sample Dashboards
 
-To help you get started with Bold BI, we have curated a collection of **sample dashboards** covering various industries and use cases. These dashboards provide insights into different domains and showcase the powerful visualization capabilities of Bold BI.
+To help you get started with Bold BI, we have curated a collection of **sample dashboards** covering various industries and use cases. These dashboards provide insights into different domains and showcase the visualization capabilities of Bold BI.
 
 Below is a categorized list of sample dashboards. Each category contains multiple dashboards tailored to specific business needs.
 
@@ -98,7 +98,7 @@ Below is a categorized list of sample dashboards. Each category contains multipl
     </tr>
     <tr>
         <td>Portfolio Risk Management Dashboard</td>
-        <td>Navigate risk confidently with our Portfolio Risk Management Dashboard. Monitor key metrics, analyse trends, and optimize strategies to safeguard your portfolio's performance and resilience to facilitate informed decision-making by enabling effective risk identification, assessment, and optimizing risk-adjusted returns.</td>
+        <td>Navigate risk confidently with our Portfolio Risk Management Dashboard. Monitor key metrics, analyze trends, and optimize strategies to safeguard your portfolio's performance and resilience to facilitate informed decision-making by enabling effective risk identification, assessment, and optimizing risk-adjusted returns.</td>
         <td><a href="https://samples.boldbi.com/solutions/banking/portfolio-risk-management-dashboard">Portfolio Risk Management Demo – Banking Dashboards | Bold BI®</a></td>
     </tr>
 </table>
@@ -233,7 +233,7 @@ Below is a categorized list of sample dashboards. Each category contains multipl
     </tr>
     <tr>
         <td>FreshBooks Profit and Loss Dashboard</td>
-        <td>This profit and loss dashboard details revenue, expenses, and more. Use a Freshbooks dashboard to track your company's growth.</td>
+        <td>This profit and loss dashboard details revenue, expenses, and more. Use a FreshBooks dashboard to track your company's growth.</td>
         <td><a href="https://samples.boldbi.com/solutions/finance/profit-and-loss-dashboard">FreshBooks Profit and Loss Demo – Finance Dashboards | Bold BI®</a></td>
     </tr>
     <tr>
@@ -303,7 +303,7 @@ Below is a categorized list of sample dashboards. Each category contains multipl
     </tr>
     <tr>
         <td>Orthopaedic Clinical Variation Dashboard</td>
-        <td>The Orthopaedic Clinical Variations Dashboard provides key metrics and indicators to monitor orthopedic care. It includes average length of stay, readmission and mortality rates, compliance and infection rates, patient functional outcomes, implant failure rates, and more. The dashboard helps assess clinical variations, resource utilization, and patient outcomes to drive improvements in orthopaedic care delivery.</td>
+        <td>The Orthopaedic Clinical Variations Dashboard provides key metrics and indicators to monitor orthopedic care. It includes average length of stay, readmission and mortality rates, compliance and infection rates, patient functional outcomes, implant failure rates, and more. The dashboard helps assess clinical variations, resource utilization, and patient outcomes to drive improvements in orthopedic care delivery.</td>
         <td><a href="https://samples.boldbi.com/solutions/healthcare/clinical-variation-dashboard">Orthopaedic Clinical Variation – Healthcare Dashboards | Bold BI®</a></td>
     </tr>
     <tr>
@@ -488,7 +488,7 @@ Below is a categorized list of sample dashboards. Each category contains multipl
   </tr>
   <tr>
     <td>Law Firm Operations Dashboard</td>
-    <td>The Law Firm Operations Dashboard offers real-time insights into key metrics, enhancing strategic decision-making tracking case outcomes, billing efficiency, empowering law firms to optimize operations and deliver exceptional legal services.</td>
+    <td>The Law Firm Operations Dashboard offers real-time insights into key metrics, enhancing strategic decision-making by tracking case outcomes and billing efficiency, empowering law firms to optimize operations and deliver exceptional legal services.</td>
     <td><a href="https://samples.boldbi.com/solutions/legal/law-firm-operations-dashboard">Law Firm Operations Dashboard – Legal Dashboards | Bold BI®</a></td>
   </tr>
 </table>
@@ -553,7 +553,7 @@ Below is a categorized list of sample dashboards. Each category contains multipl
   </tr>
   <tr>
     <td>Google Ads Performance Dashboard</td>
-    <td>This Google Ads performance dashboard provides a comprehensive overview of key metrics to evaluate the effectiveness and ROI of your advertising campaigns. It includes essential data: impressions, clicks, click-through rate (CTR), conversions, conversion rate, cost, sessions, return on ad spent (ROAS), and revenue per click.</td>
+    <td>This Google Ads performance dashboard provides a comprehensive overview of key metrics to evaluate the effectiveness and ROI of your advertising campaigns. It includes essential data: impressions, clicks, click-through rate (CTR), conversions, conversion rate, cost, sessions, return on ad spend (ROAS), and revenue per click.</td>
     <td><a href="https://samples.boldbi.com/solutions/marketing/google-ads-performance-dashboard">Google Ads Performance Dashboard – Marketing Dashboards | Bold BI®</a></td>
   </tr>
   <tr>
