@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Bold BI High Level Architecture | Bold BI Documentation
-description: Study the overview of the system architecture, highlighting key components and their roles in the data flow process.
+title: Bold BI High-Level Architecture | Bold BI Documentation
+description: "Learn about the Bold BI system architecture, including its key components, the role each component plays, and how data flows from data sources to dashboards."
 canonical: "/overview/"
 platform: bold-bi
 documentation: ug
@@ -13,7 +13,7 @@ Bold BI is a comprehensive business intelligence platform designed to help organ
 
 ## System Architecture Overview
 
-The architecture consists of several core components that work together to provide seamless data integration, transformation, storage, and visualization. The major components include:
+The architecture consists of several core components that work together to provide data integration, transformation, storage, and visualization. The major components include:
 
 ![ Bold BI Architecture](/static/assets/overview/images/architecture-of-boldBI.png)
 
@@ -111,9 +111,9 @@ This section outlines the typical flow of user interaction, data processing, and
 ### 3. ETL and Data Preparation with Bold Data Hub
 
 - Data is collected from various input sources.
-- The Bold Data Hub processes the data by extracting, transforming and loading it.
+- The Bold Data Hub processes the data by extracting, transforming, and loading it.
 - Structured data is then loaded into the Data Warehouse, ready for analytics and visualization.
-Bold BI’s architecture ensures a seamless, secure, and efficient data analysis experience. By integrating various data sources, optimizing storage, and automating refresh cycles, the platform provides real-time analytics capabilities for users across different domains.
+Bold BI’s architecture ensures a , secure, and efficient data analysis experience. By integrating various data sources, optimizing storage, and automating refresh cycles, the platform provides real-time analytics capabilities for users across different domains.
 
 
 
