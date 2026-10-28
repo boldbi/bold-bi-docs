@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Managing Multi-tabbed Dashboard – Embedded BI | Bold BI Docs
-description: Learn how to create two or more dashboards in the same page, open, edit, share and delete a multi-tabbed dashboard in Bold BI Embedded.
+title: Managing Multi-Tabbed Dashboard – Embedded BI | Bold BI Docs
+description: "Learn how to create two or more dashboards on the same page, then open, edit, share, and delete a multi-tabbed dashboard in Bold BI Embedded, step by step."
 canonical: "/managing-resources/manage-dashboards/manage-multi-tabbed-dashboards/" 
 platform: bold-bi
 documentation: ug
@@ -12,11 +12,11 @@ documentation: ug
 
 The multi-tabbed dashboard feature enables the user to display two or more dashboards on the same page.
 
-## Manage a Multi-Tabbed dashboards
+## Manage a Multi-Tabbed Dashboards
 
 * This section explains how to create, edit, render, and delete a multi-tabbed dashboard in Bold BI.
 
-* Multi-tabbed dashboards that are accessible to the user, depending on their permissions, will be displayed on the dashboard listing page.
+* Multi-tabbed dashboards that are accessible to the user, depending on their permissions, are displayed on the dashboard listing page.
 
 ![Manage multi-tab](/static/assets/managing-resources/manage-dashboards/images/manage-multi-tab.png)
 
@@ -24,7 +24,7 @@ The multi-tabbed dashboard feature enables the user to display two or more dashb
 
 To create a multi-tabbed dashboard, the user must have access to dashboards. An admin user can utilize any dashboard to create a multi-tabbed dashboard, while other users can only use their own dashboards or shared dashboards with write permission.
 
-### Steps to create a multi-tabbed dashboard
+### Steps to Create a Multi-Tabbed Dashboard
 
 * Click the `+` icon on the left side of the menu area and select the `multi-tabbed dashboard` option.
 
@@ -34,21 +34,21 @@ To create a multi-tabbed dashboard, the user must have access to dashboards. An 
 
     ![Create Category](/static/assets/managing-resources/manage-dashboards/images/add-new-category.png)
 
-> **NOTE:**  The plus icon next to the `Select Category` drop-down will only appear if the user has permission to create categories.
+> **NOTE:** The plus icon next to the `Select Category` drop-down only appears if the user has permission to create categories.
 
 * After filling out the form, click `Add Dashboards` in the Create Multi-Tabbed Dashboard dialog box.
 
     ![Create multi-tab](/static/assets/managing-resources/manage-dashboards/images/multi-tab-create.png)
 
-* Select the category from the `Select Category` drop-down menu, and the corresponding dashboards under that category will be displayed in the `Select Dashboard` drop-down menu.
+* Select the category from the `Select Category` drop-down menu, and the corresponding dashboards under that category are displayed in the `Select Dashboard` drop-down menu.
 
 	![Add Dashboards in Category](/static/assets/managing-resources/manage-dashboards/images/add-dashboard-dropdown.png)
 
-* After selecting the dashboards from the Select Dashboard drop-down menu, the `Add` button will become enabled. Click the `Add` button.
+* After selecting the dashboards from the Select Dashboard drop-down menu, the `Add` button becomes enabled. Click the `Add` button.
 
     ![Add Button](/static/assets/managing-resources/manage-dashboards/images/add-button-multi-tab.png)
 
-* Add a minimum of two or more dashboards to create the multi-tabbed dashboard. The added dashboards will be displayed in the multi-tabbed dashboard. Edit the tab name of the multi-tabbed dashboards by clicking the edit icon.
+* Add a minimum of two or more dashboards to create the multi-tabbed dashboard. The added dashboards are displayed in the multi-tabbed dashboard. Edit the tab name of the multi-tabbed dashboards by clicking the edit icon.
     
 	![Display Added Dashboard](/static/assets/managing-resources/manage-dashboards/images/display-added-dashboard.png)
 
@@ -62,7 +62,7 @@ To create a multi-tabbed dashboard, the user must have access to dashboards. An 
 
 ## Open a Multi-Tabbed Dashboard
 
-Users can identify the created multi-tabbed dashboard with the `multi-tab` badge icon in the dashboard listing page.  
+Users can identify the created multi-tabbed dashboard with the `multi-tab` badge icon on the dashboard listing page.  
     ![Multi-tab Identifier](/static/assets/managing-resources/manage-dashboards/images/multi-tab-listing.png)
 
 1. Click on the respective multi-tabbed dashboard in the list to open it. 
@@ -84,13 +84,13 @@ Users can identify the created multi-tabbed dashboard with the `multi-tab` badge
     * Category
     * Tab name
     * Order of tab
-    * Add or Remove dashboards
+    * Add or remove dashboards
     
    Once edited, click `Save`.
 
     ![Multi-tab Update](/static/assets/managing-resources/manage-dashboards/images/multi-tab-update.png)
 
-## Share a Multi-tabbed Dashboard
+## Share a Multi-Tabbed Dashboard
 
 * The multi-tabbed dashboard must be shared with users or groups so that they can access it.
 
@@ -108,6 +108,6 @@ Users can identify the created multi-tabbed dashboard with the `multi-tab` badge
 
     ![Delete multi-tab](/static/assets/managing-resources/manage-dashboards/images/multi-tab-delete.png)
 
-> **NOTE:**  Limitations of Multi-Tabbed Dashboard
+> **NOTE:** Limitations of Multi-Tabbed Dashboard:
 > * The edit, share, favorite, and get link options in the viewer are hidden.
 > * Users are unable to share the dashboard views with others.

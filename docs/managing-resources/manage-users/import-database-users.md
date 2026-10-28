@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Import Users from Database – Embedded BI | Bold BI Learning
-description: Learn how to import users from database in Bold BI Embedded. Also know how to modify existing database connection.
+description: "Learn how to import users from a database into Bold BI Embedded, and how to modify an existing database connection, with step-by-step instructions."
 canonical: "/managing-resources/manage-users/import-database-users/"
 platform: bold-bi
 documentation: ug
@@ -26,12 +26,12 @@ The link will redirect to another page that will look like the following:
 
 ## Select Users and Import
 
-After selecting columns, the data retrieved from the database will be shown in the Grid. Select the users to be imported and click on `Import Selected Users` to import the selected users, or you can import all the users by clicking on the `Import All Users` button.
+After selecting columns, the data retrieved from the database is shown in the grid. Select the users to be imported and click on `Import Selected Users` to import the selected users, or you can import all the users by clicking on the `Import All Users` button.
 
 ![Import Database Users](/static/assets/managing-resources/manage-users/images/import-from-database-users.png)
 
 
-Bold BI will import the chosen users in the background as a job, and a confirmation dialog will be displayed as shown in the following figure.
+Bold BI will import the chosen users in the background as a job, and a confirmation dialog is displayed as shown in the following figure.
 
 ![Confirmation dialog after import users started](/static/assets/managing-resources/manage-users/images/confirmation-dialogue-on-import-click.png#width=70%)
 

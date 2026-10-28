@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Managing Users Permissions in Embedded BI | Bold BI Docs
-description: Learn how to manage the permissions of the users and groups with needed scope to the corresponding entities in Bold BI Embedded.
+title: Managing User Permissions in Embedded BI | Bold BI Docs
+description: "Learn how to manage the permissions of users and groups for the right scope and entities in Bold BI Embedded, including access modes and how to add permissions."
 canonical: "/managing-resources/manage-permissions/manage-resources-permission"
 platform: bold-bi
 documentation: ug
@@ -16,7 +16,7 @@ All permissions can be managed by users belonging to the `System administrator` 
 
 ![Add Permission Button](/static/assets/images/resources-feature-permission-add-permission.png)
 
-Click the [Add Permission](/managing-resources/manage-permissions/manage-resources-permission/#add-permissions) and choose Resource Feature Permission from the dropdown. Then configure the entity, scope, and access mode in the dialog and click Add to assign the feature permissions.
+Click the [Add Permission](/managing-resources/manage-permissions/manage-resources-permission/#add-permissions) button and choose Resource Feature Permission from the dropdown. Then configure the entity, scope, and access mode in the dialog and click Add to assign the feature permissions.
 
 ![Resources Permission Dropdown](/static/assets/images/resource-permission-dropdown.jpg)
 
@@ -62,12 +62,12 @@ Permissions are classified in the following structure:
 
 <tr>
 <td>All Groups</td>
-<td>Provides permission to create new groups except for import groups from third parties.</td>
+<td>Provides permission to create new groups except for importing groups from third parties.</td>
 </tr>
 
 <tr>
 <td>All Permissions</td>
-<td>Provides you to delegate permission for all resources on the users and groups manage permission page using the Manage access mode. The permission will only be available if the user has the Specific Group permission or the Create and Manage permission for Users and Groups.</td>
+<td>Allows you to delegate permission for all resources on the users and groups manage permission page using the Manage access mode. The permission will only be available if the user has the Specific Group permission or the Create and Manage permission for Users and Groups.</td>
 </tr>
 
 <tr>
@@ -82,7 +82,7 @@ Permissions are classified in the following structure:
 
 <tr>
 <td>Dashboards in Category</td>
-<td>Provides permission to access dashboards in a specific category</td>
+<td>Provides permission to access dashboards in a specific category.</td>
 </tr>
 
 <tr>
@@ -117,12 +117,12 @@ Permissions are classified in the following structure:
 
 <tr>
 <td>Specific Permissions</td>
-<td>Provides permission with the Manage access mode to delegate permission for specific resource on users and groups manage permission page. The permission will only be available if the user has the Specific Group permission or the Create and Manage permission for Users and Groups.</td>
+<td>Provides permission with the Manage access mode to delegate permission for specific resources on the users and groups manage permission page. The permission will only be available if the user has the Specific Group permission or the Create and Manage permission for Users and Groups.</td>
 </tr>
 
 <tr>
 <td>Specific Settings</td>
-<td>Provides permission to access specific settings page with the Manage access mode.</td>
+<td>Provides permission to access specific settings pages with the Manage access mode.</td>
 </tr>
 </table>
 
@@ -150,7 +150,7 @@ Scope selection is only available for `Specific Resources` and `Specific Setting
 
 <tr>
 <td>Read, Write and Delete</td>
-<td>Provides read, write and delete permission for the chosen entity.</td>
+<td>Provides read, write, and delete permission for the chosen entity.</td>
 </tr>
 
 <tr>
@@ -165,7 +165,7 @@ Scope selection is only available for `Specific Resources` and `Specific Setting
 
 <tr>
 <td>Create and Manage</td>
-<td>Provides permission to create and manage the users and groups entity</td>
+<td>Provides permission to create and manage the users and groups entity.</td>
 </tr>
 
 <tr>
@@ -174,7 +174,7 @@ Scope selection is only available for `Specific Resources` and `Specific Setting
 </tr>
 </table>
 
-## Add permissions
+## Add Permissions
 The Add Permission section is divided into four sections:
 1. All Resources
 2. Specific Resources
@@ -183,31 +183,31 @@ The Add Permission section is divided into four sections:
 
 > **NOTE:** It is not possible to select multiple access modes.
 
-### All resources
+### All Resources
 
 To assign multiple permissions, select multiple resource entities and one access mode.
 ![All Resources](/static/assets/images/add-permission-all-resources.png)
 
-### Specific resources
+### Specific Resources
 
 To assign multiple permissions for specific resources, select multiple scopes, one entity, and one access mode.
 ![Specific Resources](/static/assets/images/add-permission-specific-resources.png)
 
-### All settings
+### All Settings
 
 Multiple entities and access modes cannot be selected in all settings. 
 You can assign `Create` permission for All Groups, `Manage` permission for All Permissions or All Settings, and `Create and Manage` permission for Users and Groups.
 ![All Settings](/static/assets/images/add-permission-all-settings.png)
 
-### Specific settings
+### Specific Settings
 
 To assign multiple permissions, select multiple scopes, one entity, and one access mode for specific settings.
 ![Specific Settings](/static/assets/images/add-permission-specific-settings.png)
 
-## Manage permissions - Users
+## Manage Permissions - Users
 
 Please visit [Manage user permissions](/managing-resources/manage-users/) for more information on how to add and manage permissions for a user.
 
-## Manage permissions - Groups
+## Manage Permissions - Groups
 
 Please visit [Manage group permissions](/managing-resources/manage-groups/) for more information on how to add and manage permissions for a group.

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Manage Permissions and Controls Full Overview | Bold BI Docs
-description: Learn how to manage resource and feature permissions for users and groups effectively in the Bold BI platform.
+description: "Learn how to manage resource and feature permissions for users and groups in Bold BI Embedded, including resource level and feature level permissions."
 platform: bold-bi
 documentation: ug
 ---
@@ -20,7 +20,7 @@ Resource Permission lets you define access modes — such as Read, Write, and De
 
 Resource Feature Permission allows you to assign permissions for specific dashboard actions. These include exporting dashboards, viewing underlying data, using dashboard parameters, and more. Feature permissions give fine‑grained control over the actions available to each user or group.
 
-You can learn more about Manage permissions here:
+You can learn more about Manage Permissions here:
 
 [Manage Resource Permission](/managing-resources/manage-permissions/manage-resources-permission/)
 

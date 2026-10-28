@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Resources Feature Permissions in Embedded BI | Bold BI Docs
-description: Learn how to manage and control feature-level permissions for users and groups across all dashboards in Bold BI Embedded. 
+description: "Learn how to manage feature-level permissions for users and groups across all dashboards in Bold BI Embedded, including the supported actions for each feature."
 canonical: "/managing-resources/manage-permissions/manage-resources-feature-permission/"
 platform: bold-bi
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Manage Resources Feature Permission
 
-This section explains the feature-level permissions available for dashboards, including their purpose, supported actions, and how to assign them to user-level and group-level granular permission.
+This section explains the feature-level permissions available for dashboards, including their purpose, supported actions, and how to assign them to user-level and group-level granular permissions.
 
 Resource Feature Permission allows administrators to control specific dashboard-level actions such as exporting dashboards, viewing underlying data, and accessing dashboard parameters. These permissions can be applied at different levels, including all dashboards, dashboards within a specific category, or individual dashboards. This helps ensure that users and groups have access only to the required dashboard features based on business and security requirements. 
 
@@ -69,7 +69,7 @@ The following feature actions can be configured under Resource Feature Permissio
 
 <tr>
 <td><a href="/working-with-dashboards/preview-dashboard/dashboard-settings/">Export</a></td>
-<td>Allows users to export dashboard as Image, PDF, PPT, Excel, and CSV.</td>
+<td>Allows users to export dashboards as Image, PDF, PPT, Excel, and CSV.</td>
 </tr>
 
 <tr>
@@ -79,7 +79,7 @@ The following feature actions can be configured under Resource Feature Permissio
 
 <tr>
 <td><a href="/working-with-data-sources/dashboard-parameter/">Dashboard Parameters</a></td>
-<td>Allows users to access and modify dashboard parameters</td>
+<td>Allows users to access and modify dashboard parameters.</td>
 </tr>
 </table>
 
@@ -89,31 +89,31 @@ To assign feature permissions, select the required **Entity**, configure the **S
 
 ### All Dashboards
 
-When **All Dashboards** is selected, the configured feature actions will be applied to every dashboard in the site. Scope selection is not required. Users will be able to perform only the enabled feature actions across all dashboards.
+When **All Dashboards** is selected, the configured feature actions are applied to every dashboard in the site. Scope selection is not required. Users can perform only the enabled feature actions across all dashboards.
 
 ![All Dashboards](/static/assets/images/resources-features-permission-all-dashboards.png)
 
 ### Dashboards in Category
 
-When **Dashboards in Category** is selected, feature permissions will be applied to all dashboards under the chosen category. The Scope panel displays the list of available categories. Select one or more categories, and the enabled feature actions will apply to all dashboards within those categories.
+When **Dashboards in Category** is selected, feature permissions are applied to all dashboards under the chosen category. The Scope panel displays the list of available categories. Select one or more categories, and the enabled feature actions apply to all dashboards within those categories.
 
 ![Dashboards in Category](/static/assets/images/resources-features-permission-category.png)
 
 ### Specific Dashboard
 
-When **Specific Dashboard** is selected, feature permissions can be assigned at the individual dashboard level. The Scope panel displays the dashboards grouped by category. Select one or more dashboards, and the enabled feature actions will apply only to the selected dashboards.
+When **Specific Dashboard** is selected, feature permissions can be assigned at the individual dashboard level. The Scope panel displays the dashboards grouped by category. Select one or more dashboards, and the enabled feature actions apply only to the selected dashboards.
 
 ![Specific Dashboard](/static/assets/images/resources-feature-permission-specific-dashboard.png)
 
 ### Result of Applied Feature Permissions
 
-After applying feature permissions, only the allowed actions will be displayed in the dashboard options menu.
-For example, if actions such as **Export**, **View Underlying Data**, and **Get Embed Code** are enabled, only these options will be visible when accessing the dashboard. The image below shows the result of applying feature permissions under the **All Dashboards** entity.
+After applying feature permissions, only the allowed actions are displayed in the dashboard options menu.
+For example, if actions such as **Export**, **View Underlying Data**, and **Get Embed Code** are enabled, only these options are visible when accessing the dashboard. The image below shows the result of applying feature permissions under the **All Dashboards** entity.
 
 ![Result of Applied Feature Permissions](/static/assets/images/resources-feature-permission-result.jpg)
 
 
-> **NOTE:** If a feature permission is already assigned, attempting to add the same permission again will display an error message, as shown below.
+> **NOTE:** If a feature permission is already assigned, attempting to add the same permission again displays an error message, as shown below.
 ![Dashboards in Category](/static/assets/images/resources-feature-permission-error.png)
 
 ## Permission Precedence
@@ -131,7 +131,7 @@ Permissions are evaluated in the following order of priority:
 The system stops at the **first scope where a matching permission is found**.
 Lower scopes are not considered once a rule exists at a higher scope.
 
-### Principal Priority within the Same Scope
+### Principal Priority Within the Same Scope
 
 When multiple principals have permissions in the same scope, the following priority is applied:
 
@@ -179,11 +179,11 @@ When the user belongs to more than one Group and those Groups all define permiss
 
 This rule prevents access from being unintentionally granted if even one Group intends to block an action.
 
-## Manage permissions - Users
+## Manage Permissions - Users
 
 Please visit [Manage user permissions](/managing-resources/manage-users/) for more information on how to add and manage permissions for a user.
 
-## Manage permissions - Groups
+## Manage Permissions - Groups
 
 Please visit [Manage group permissions](/managing-resources/manage-groups/) for more information on how to add and manage permissions for a group.
 

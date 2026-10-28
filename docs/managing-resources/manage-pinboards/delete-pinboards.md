@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Deleting a Pinboard – Embedded BI | Bold BI Documentation
-description: Learn how to delete a pinboard in Bold BI Embedded. Pinboard is a collection of widgets from various dashboards pinned to it.
+description: "Learn how to delete a pinboard in Bold BI Embedded, step by step. A pinboard is a collection of widgets from various dashboards pinned to it."
 canonical: "/managing-resources/manage-pinboards/delete-pinboards/"
 platform: bold-bi
 documentation: ug
@@ -9,16 +9,16 @@ documentation: ug
 
 # How to Delete a Pinboard
 
-This section explains how to delete a Pinboard from the Bold BI application.
+This section explains how to delete a pinboard from the Bold BI application.
 
-### Steps to delete a Pinboard
+### Steps to Delete a Pinboard
 
 1. Click on the `Delete` option from the `gear` icon menu as shown in the following image.
 
     ![Delete Option](/static/assets/managing-resources/manage-pinboards/images/delete-option.png#width=50%)
 
-2. If you delete a default Pinboard, you will be navigated to the Pinboard homepage. After that, you will need to set a new Pinboard as default.
+2. If you delete a default pinboard, you are navigated to the pinboard homepage. After that, you need to set a new pinboard as default.
 
     ![Applied Default](/static/assets/managing-resources/manage-pinboards/images/applied-default.png#width=50%)
 
-3. If it is not a default Pinboard, it will load as the default Pinboard.
+3. If it is not a default pinboard, it loads as the default pinboard.

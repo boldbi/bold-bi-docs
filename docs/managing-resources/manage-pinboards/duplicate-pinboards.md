@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Duplicating a Pinboard – Embedded BI | Bold BI Documentation
-description: Learn how to duplicate a pinboard in the Bold BI Embedded. Pinboard is a collection of widgets from various dashboards pinned to it.
+description: "Learn how to duplicate a pinboard in Bold BI Embedded, step by step. A pinboard is a collection of widgets from various dashboards pinned to it."
 canonical: "/managing-resources/manage-pinboards/duplicate-pinboards/"
 platform: bold-bi
 documentation: ug
@@ -9,9 +9,9 @@ documentation: ug
 
 # Duplicate a Particular Pinboard
 
-This section explains how to duplicate a Pinboard in the Bold BI application.
+This section explains how to duplicate a pinboard in the Bold BI application.
 
-### Steps to duplicate a Pinboard
+### Steps to Duplicate a Pinboard
 
 1. Click the `Duplicate` option from the `gear` icon menu.
 
@@ -21,4 +21,4 @@ This section explains how to duplicate a Pinboard in the Bold BI application.
 
     ![Save Duplicate](/static/assets/managing-resources/manage-pinboards/images/save-duplicate.png#width=50%)
 
-3. The duplicated Pinboard has been saved and will be loaded automatically.
+3. The duplicated pinboard is saved and loaded automatically.
