@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Azure AD Users Synchronization – Embedded BI | Bold BI
-description: Learn how to synchronize imported user details such as, first name, last name, email address, and contact number from Azure Active Directory in Bold BI Embedded.
+description: Learn how to synchronize imported user details such as first name, last name, email address, and contact number from Azure Active Directory in Bold BI Embedded.
 canonical: "/managing-resources/manage-users/synchronize-azure-active-directory-users/"
 platform: bold-bi
 documentation: ug
@@ -9,9 +9,9 @@ documentation: ug
 
 # Azure Active Directory User Synchronization
 
-This section explains how to synchronize the imported Azure Active Directory user details with the Azure Active Directory.
+You can synchronize the imported Azure Active Directory user details with Azure Active Directory.
 
-> **NOTE:**  Before synchronizing the Azure Active Directory users, follow the given steps:
+> **NOTE:** Before synchronizing the Azure Active Directory users, follow the given steps:
 > 1. Configure [Azure Active Directory Settings](/site-administration/user-directory-settings/azure-active-directory/).
 > 2. Import users from the Azure Active Directory to Bold BI by referring to the following link: [Active Directory User Import](/managing-resources/manage-users/import-azure-active-directory-users/).
 
@@ -25,19 +25,19 @@ Bold BI will list the Azure Active Directory users that are already imported, as
 
 ![Azure Active Directory Imported user list](/static/assets/managing-resources/manage-users/images/imported-azure-user-list.png)
 
-> **NOTE:**  Only users imported from the Azure AD configured in this organization are listed here.
+> **NOTE:** Only users imported from the Azure AD configured in this organization are listed here.
 
 Choose the users you want to synchronize and click on `Synchronize` at the top.
 
 ![Synchronize button](/static/assets/managing-resources/manage-users/images/Azure-Synchronize-button.png)
 
-### Synchronization procedure
+### Synchronization Procedure
 
 * Bold BI will synchronize the user details - username, first name, last name, email address, and contact number with the Azure Active Directory Server.
 
 * Bold BI will delete the user if the user has been deleted from the Azure Active Directory Server.
 
-After synchronization completes, the number of users modified, deleted, duplicated will be shown in the success message box as shown in the figure below.
+After synchronization completes, the number of users modified, deleted, and duplicated is shown in the success message box as shown in the figure below.
 
 ![Synchronization confirmation window](/static/assets/managing-resources/manage-users/images/Azure-Synchronization-Confirmation-window.png#width=60%)
 
