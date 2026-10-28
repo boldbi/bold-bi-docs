@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Active Directory Users Synchronization | Bold BI Embedded
-description: Learn how to synchronize imported user details such as, first name, last name, email address, and contact number from Windows Active Directory in Bold BI Embedded.
+description: "Learn how to synchronize imported user details such as name, email address, and contact number from Windows Active Directory to Bold BI to keep them current."
 platform: bold-bi
 documentation: ug
 ---
 
 # Active Directory User Synchronization
 
-This section explains how to synchronize the imported Active Directory user details with the Active Directory.
+You can synchronize the imported Active Directory user details with Active Directory.
 
 You can navigate to the user synchronization page from the users page.
 
@@ -32,7 +32,7 @@ Choose the users you want to synchronize and click on `Synchronize` at the top.
 
 * Bold BI Server will delete the user if they have been deleted from the Active Directory Server.
 
-After synchronization is complete, the number of users modified, deleted, and duplicated will be shown in the success message box.
+After synchronization is complete, the number of users modified, deleted, and duplicated is shown in the success message box.
 
 ![Synchronization confirmation window](/static/assets/managing-resources/manage-users/images/Synchronization-Confirmation-window.png#width=65%)
 
