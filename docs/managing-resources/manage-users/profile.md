@@ -1,6 +1,6 @@
 ---
 layout: post
-title: User Profile Information – Bold ID | Bold BI Documentation
+title: User Profile Information – Bold BI | Bold BI Documentation
 description: Learn about editing the user's profile details including picture, updating the language preferences for the user account, and changing the password in Bold BI.
 platform: bold-bi
 documentation: ug
@@ -8,11 +8,11 @@ documentation: ug
 
 # User Profile
 
-This section will explain how to edit profile information, upload profile pictures, change passwords, enable 2FA, and update user preferences in your user profile.
+You can edit profile information, upload profile pictures, change passwords, enable two-factor authentication (2FA), and update user preferences in your user profile.
 
 > **NOTE:** User profile support is not available in Syncfusion Managed Cloud Server and is available in On-Premises Deployment.
 
-## My profile
+## My Profile
 
 In this section, you can view the profile information.
 
@@ -41,13 +41,13 @@ In the Security section, update your password and enable 2FA for your account.
 Go to the Change Password tab under the Security section and update the password.
     ![Change Password](/static/assets/images/change-password.png)
 
-### Two Factor Authentication
+### Two-Factor Authentication
 
-Please refer to this  [link](/multi-tenancy/two-factor-authentication/#two-factor-authentication) to learn about the 2FA implementation in Bold BI.
+Please refer to this [link](/multi-tenancy/two-factor-authentication/#two-factor-authentication) to learn about the 2FA implementation in Bold BI.
 
-#### Enable Two Factor Authentication
+#### Enable Two-Factor Authentication
 
-1. Go to the Two-Factor Authentication tab under the security section.
+1. Go to the Two-Factor Authentication tab under the Security section.
 
 2. Click on Enable Two-Factor Authentication.
     ![Two Factor Authentication tab](/static/assets/images/2fa-tab.png)
@@ -63,7 +63,7 @@ Please refer to this  [link](/multi-tenancy/two-factor-authentication/#two-facto
 
 > **NOTE:** Each recovery code can be used only once. Regenerate recovery codes using the `Regenerate Recovery Code` option from your profile.
 
-#### Disable Two Factor Authentication
+#### Disable Two-Factor Authentication
 
 1. To disable 2FA, click on Remove Two-Factor Authentication.
     ![Two Factor Authentication remove](/static/assets/images/2fa-remove-with-code.png)
