@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Exploring Bold BI - An Overview | Bold BI Documentation
-description: Study the overview of Bold BI and learn about its two embedding methods, JavaScript-based embedding and iframe-based embedding.
+description: "Get an overview of Bold BI embedded analytics and learn about its two embedding methods: JavaScript-based embedding with the SDK and iframe-based embedding."
 canonical: "/overview/"
 platform: bold-bi
 documentation: ug
@@ -75,7 +75,7 @@ Bold BI supports self-service and embedded analytics for teams across industries
 
 ### Enterprise-Grade Security & Access Control
 
-- **Robust Security and Governance** - Use [**multi-factor authentication**](/multi-tenancy/two-factor-authentication/), role-based access control, and [**single sign-on (SSO)**](/security-configuration/single-sign-on/) options, including Office 365, OpenID, OAuth 2.0, and [**Active Directory**](/site-administration/user-directory-settings/active-directory/). You can also use row-level security and a [**granular permission model**](/managing-resources/manage-permissions/).
+- ** Security and Governance** - Use [**multi-factor authentication**](/multi-tenancy/two-factor-authentication/), role-based access control, and [**single sign-on (SSO)**](/security-configuration/single-sign-on/) options, including Office 365, OpenID, OAuth 2.0, and [**Active Directory**](/site-administration/user-directory-settings/active-directory/). You can also use row-level security and a [**granular permission model**](/managing-resources/manage-permissions/).
 
 - [**Multi-Tenant Support**](/multi-tenancy/) - Use multi-tenant architecture to manage separate departments or clients from one portal while enforcing role-based access, data isolation, and compliance requirements.
 
@@ -83,9 +83,9 @@ Bold BI supports self-service and embedded analytics for teams across industries
 
 ### Seamless Embedding & API Integration
 
-- [**Embed SDK**](/embedding-options/embedding-sdk/) - Integrate dashboards into applications using [**iframe**](/embedding-options/iframe-embedding/), [**JavaScript**](/embedding-options/embedding-sdk/token-generation/), or [**full server-side embedding**](). Use the SDK to embed dashboard designers, viewers, or specific widgets into applications built with [**Angular**](/embedding-options/embedding-sdk/samples/angular-with-core/), [**React**](/embedding-options/embedding-sdk/samples/react-core/), [**.NET Core**](/embedding-options/embedding-sdk/samples/asp-net-core/), and other [popular frameworks](/embedding-options/embedding-sdk/samples/).
+- [**Embed SDK**](/embedding-options/embedding-sdk/) - Integrate dashboards into applications using [**iframe**](/embedding-options/iframe-embedding/), [**JavaScript**](/embedding-options/embedding-sdk/token-generation/), or [**full server-side embedding**](/embedding-options/embedding-sdk/getting-started/embed-token-authentication-for-the-dashboard-viewer/). Use the SDK to embed dashboard designers, viewers, or specific widgets into applications built with [**Angular**](/embedding-options/embedding-sdk/samples/angular-with-core/), [**React**](/embedding-options/embedding-sdk/samples/react-core/), [**.NET Core**](/embedding-options/embedding-sdk/samples/asp-net-core/), and other [popular frameworks](/embedding-options/embedding-sdk/samples/).
 
-- [**Powerful API Integration**](/server-api-reference/interact-with-rest-api/) - Use APIs, SDKs, and code samples for application integration.
+- [** API Integration**](/server-api-reference/interact-with-rest-api/) - Use APIs, SDKs, and code samples for application integration.
 
 ### Branding & Customization
 
